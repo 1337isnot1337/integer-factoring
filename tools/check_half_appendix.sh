@@ -20,7 +20,7 @@ fi
 cd "$source_dir/eth"
 lean --version | tee "$logs/toolchain.log"
 lake exe cache get > "$logs/cache.log" 2>&1
-lake build GeneralPieces.Main CountKSat.Host > "$logs/source-build.log" 2>&1
+lake build GeneralPieces.Main CountKSat.Host ToTuring.Poly.NetFun > "$logs/source-build.log" 2>&1
 
 # The stage is below the source project so Lean can set a separate root while
 # still finding the source project's built imports through `lake env`.
@@ -135,6 +135,10 @@ cp "$root/formal-appendix/RootFactors.lean" "$stage/RootFactors.lean"
 cp "$root/formal-appendix/GateVectors.lean" "$stage/GateVectors.lean"
 cp "$root/formal-appendix/GateTransforms.lean" "$stage/GateTransforms.lean"
 cp "$root/formal-appendix/GateMessage.lean" "$stage/GateMessage.lean"
+cp "$root/formal-appendix/GatePair.lean" "$stage/GatePair.lean"
+cp "$root/formal-appendix/PairOffset.lean" "$stage/PairOffset.lean"
+cp "$root/formal-appendix/FactorCheck.lean" "$stage/FactorCheck.lean"
+cp "$root/formal-appendix/WeightCheck.lean" "$stage/WeightCheck.lean"
 lake env bash -c '
   set -euo pipefail
   export LEAN_PATH="$1:$1/factoring/.lake/build/lib/lean:$LEAN_PATH"
@@ -214,7 +218,11 @@ lake env bash -c '
   lean --root="$1" -o "$1/RootFactors.olean" "$1/RootFactors.lean"
   lean --root="$1" -o "$1/GateVectors.olean" "$1/GateVectors.lean"
   lean --root="$1" -o "$1/GateTransforms.olean" "$1/GateTransforms.lean"
-  lean --root="$1" "$1/GateMessage.lean"
+  lean --root="$1" -o "$1/GateMessage.olean" "$1/GateMessage.lean"
+  lean --root="$1" "$1/GatePair.lean"
+  lean --root="$1" -o "$1/PairOffset.olean" "$1/PairOffset.lean"
+  lean --root="$1" -o "$1/FactorCheck.olean" "$1/FactorCheck.lean"
+  lean --root="$1" "$1/WeightCheck.lean"
 ' _ "$stage" > "$logs/bridge.log" 2>&1
 python3 - "$logs/bridge.log" <<'PY'
 import re
@@ -266,7 +274,10 @@ gate_weight = "IntegerFactoring.HalfAppendix.gateWeight_polyT"
 gate_weight_correct = "IntegerFactoring.HalfAppendix.selected_gateWeight_eq"
 gate_message = "IntegerFactoring.HalfAppendix.gateMessage_polyT"
 gate_message_correct = "IntegerFactoring.HalfAppendix.gateMessage_eq"
-if "error:" in text or "sorryAx" in text or not {expected, count_bridge, table, clique, top, selected, row, fast, width, states, state_rate, entry, explicit, pad_rate, pure_factor, level_rate, written_poly, prefix_steps, reference_spec, certified_prefix, search_poly, machine, group_search, group_cost, level_poly, machine_rate, size_poly, params_poly, master_cost, group_sizes, group_predicate, group_correct, selected_group_poly, selected_group_correct, row_bridge, digit_poly, gate_size, gate_code, gate_code_correct, gate_weight, gate_weight_correct, gate_message, gate_message_correct} <= {name for name, _ in reports}:
+gate_pair = "IntegerFactoring.HalfAppendix.gatePair_eq"
+factor_check = "IntegerFactoring.HalfAppendix.factorCheck_eq_left"
+weight_check = "IntegerFactoring.HalfAppendix.weightCheck_eq"
+if "error:" in text or "sorryAx" in text or not {expected, count_bridge, table, clique, top, selected, row, fast, width, states, state_rate, entry, explicit, pad_rate, pure_factor, level_rate, written_poly, prefix_steps, reference_spec, certified_prefix, search_poly, machine, group_search, group_cost, level_poly, machine_rate, size_poly, params_poly, master_cost, group_sizes, group_predicate, group_correct, selected_group_poly, selected_group_correct, row_bridge, digit_poly, gate_size, gate_code, gate_code_correct, gate_weight, gate_weight_correct, gate_message, gate_message_correct, gate_pair, factor_check, weight_check} <= {name for name, _ in reports}:
     raise SystemExit("Missing or failed Appendix bridge axiom reports")
 allowed = {"propext", "Classical.choice", "Quot.sound"}
 for name, axioms in reports:
