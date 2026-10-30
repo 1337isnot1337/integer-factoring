@@ -8,7 +8,7 @@ An open research effort on deterministic integer factoring, targeting the
 `n`-bit integer `N >= 2`, the task is to output its smallest prime factor. The time
 bound counts finite-alphabet Turing machine steps for every input.
 
-## Ordinary proof: exponent 1/2
+## Lean-checked proof: exponent 1/2
 
 The [written composition proof](research/half-rate-factoring.md) gives one
 deterministic machine with
@@ -25,12 +25,13 @@ arithmetic, recursion, and prefix-search costs. It gives score `alpha=1/2`
 under the published rule and the rate of the reference's square-root-logarithm
 conjecture.
 
-**Evidence level: complete ordinary mathematical argument, with source audit
-and finite checks.** The composition has not been formalized in Lean or
-reviewed independently outside this research session. No leaderboard
-acceptance or practical factoring speedup is claimed. The prior source
-theorems supply the evaluator and reduction; this repository does not claim
-to have discovered those constructions.
+**Evidence level: Lean kernel-checked composition and finite-alphabet machine.**
+[HalfTheorem.lean](formal-appendix/HalfTheorem.lean) proves the reference
+`Factoring.SqrtLogLogConjecture`, with only `propext`, `Classical.choice`, and
+`Quot.sound` in its axiom report. The proof has not received independent
+review outside this research session. No leaderboard acceptance or practical
+factoring speedup is claimed. The pinned source theorems supply the evaluator
+and reduction; this repository does not claim those constructions as new.
 
 [Complete proof](research/half-rate-factoring.md) ·
 [Top constructor and codec](research/half-top-constructor.md) ·
@@ -251,13 +252,13 @@ unproved in that source. The ordinary composition above supplies that rate.
 
 ## Research results
 
-The repository contains a written `1/2` composition theorem, the complete
+The repository contains a Lean-checked `1/2` composition theorem, the complete
 k6 Lean theorem, exact finite checks, and earlier research. The table
 identifies the evidence for each result.
 
 | Result | Value | Evidence and scope |
 | --- | --- | --- |
-| Appendix B factoring composition | `alpha = 1/2` | [Complete ordinary proof](research/half-rate-factoring.md), source and interface audit, finite adapter and arithmetic checks; no new Lean formalization |
+| Appendix B factoring composition | `alpha = 1/2` | [Complete ordinary proof](research/half-rate-factoring.md), source and interface audit, finite adapter and arithmetic checks. Lean proves the [reference square-root-log factoring statement](formal-appendix/HalfTheorem.lean), including the executable constructor, binary encoding, and finite-alphabet machine. |
 | **Complete k6 factoring theorem** | **`alpha = 1/30`** | **Lean verifies one modified machine, all runtime costs, the real-logarithm conversion, and the strict exponent comparison** |
 | Sharper rate for the same k6 machine | `beta_12 = log(12/11)/log12 = 0.0350159540... > 1/29` | [Complete ordinary derivation](research/k6-sharp-rate.md), using the existing machine bridge; new rate not Lean formalized |
 | Explicit analysis of the unchanged baseline | `alpha = log(12/11)/log(16) = 0.0313827205...` | Handwritten derivation from the pinned source's inequalities |
@@ -390,7 +391,31 @@ For the original local lemmas and unchanged reference envelope, run:
 make verify-formal
 ```
 
-The GitHub Actions workflow runs both formal targets and the Python checks.
+To rebuild the pinned Appendix B evaluator and factoring network dependencies
+with Lean 4.33.1 and check the explicit-pad and grouped top-network theorems,
+run:
+
+```sh
+make verify-half-appendix
+```
+
+The target compiles the unchanged factoring network and grouping source against
+Lean 4.33.1 and a different Mathlib revision from the reference's Lean 4.35.0
+build. It checks the explicit grouping search, mixed-radix decoder, gate and
+cluster factors, padded clique-row summand and table writer, and prefix search.
+A single master pad supplies these computations and the Appendix B evaluator.
+The resulting polynomial-time padded algorithm is proved correct for every
+natural input in the reference binary encoding. The machine bridge constructs
+one finite-alphabet factoring machine and proves the exact reference statement
+`Factoring.SqrtLogLogConjecture`, including the discrete square-root-log time
+bound and all small-input cases.
+
+The unmodified reference challenge file contains an unrelated placeholder;
+the axiom audit checks that the final theorem and the other audited bridge
+results do not depend on `sorryAx`.
+
+The GitHub Actions workflow runs the reference Lean checks, the k6 rate checks,
+the Python checks, and the pinned Appendix B composition and axiom audit.
 It pins the Lean archive hash and checkout action. It runs for pull requests,
 pushes to `main`, and manual dispatch. Branch pushes without a pull request
 do not start CI. No leaderboard submission accompanies this result.

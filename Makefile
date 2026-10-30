@@ -1,4 +1,4 @@
-.PHONY: verify verify-frontier verify-post-half verify-formal verify-k6
+.PHONY: verify verify-frontier verify-post-half verify-formal verify-k6 verify-half-appendix
 
 verify: verify-frontier
 	python3 -m unittest discover -s tests -v
@@ -34,3 +34,6 @@ verify-formal:
 
 verify-k6:
 	bash tools/check_k6.sh
+
+verify-half-appendix:
+	bash tools/check_half_appendix.sh
