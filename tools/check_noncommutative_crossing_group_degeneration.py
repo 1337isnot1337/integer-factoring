@@ -6,6 +6,7 @@ from itertools import product
 import argparse
 import hashlib
 import json
+import random
 from pathlib import Path
 
 from complement_shell_tensor import multiply as polynomial_multiply
@@ -29,7 +30,7 @@ def toggle(values, term):
 
 
 class BilinearGroup:
-    def __init__(self, horizontal, center, beta):
+    def __init__(self, horizontal, center, beta, central_weight=2):
         self.n, self.t = horizontal, center
         self.width = horizontal + center
         self.d = 1 << self.width
@@ -51,8 +52,9 @@ class BilinearGroup:
         for mask, value in enumerate(words):
             inverse[value] = mask
         self.word_index = tuple(inverse)
+        self.central_weight = central_weight
         self.weights = tuple((mask & ((1 << self.n) - 1)).bit_count()
-                             + 2 * (mask >> self.n).bit_count()
+                             + central_weight * (mask >> self.n).bit_count()
                              for mask in range(self.d))
         self.basis_words = tuple(tuple(i for i in range(self.width) if mask >> i & 1)
                                  for mask in range(self.d))
@@ -415,7 +417,63 @@ def cubic_scope_witness():
     return {"source_augmentation_monomial": source, "source_weight": 3,
             "lower_weight_output_monomials": decreasing,
             "central_output_weight": 2,
-            "conclusion": "A cubic control shear can violate the first filtration."}
+            "conclusion": "A cubic control shear violates the old central-weight-two filtration; "
+                          "the heavier direct filtration below covers it."}
+
+
+def check_direct(name, group, weights, order, terms):
+    """One-stage degeneration with central weight above every control degree."""
+    degree_f = max((mask.bit_count() for mask, value in terms if value), default=0)
+    assert group.central_weight > max(2, degree_f)
+    for left, right in product(range(group.d), repeat=2):
+        actual = group.augmentation_product(left, right)
+        weight = group.weights[left] + group.weights[right]
+        assert all(group.weights[a] >= weight for a in actual)
+        leading = tuple(a for a in actual if group.weights[a] == weight)
+        expected = () if left & right else (left | right,)
+        assert leading == expected, (left, right, leading, expected)
+    for source in range(group.d):
+        actual = group.augmentation_antipode(source)
+        assert all(group.weights[a] >= group.weights[source] for a in actual)
+        assert tuple(a for a in actual if group.weights[a] == group.weights[source]) == (source,)
+        transformed = group.to_augmentation(
+            group.words[a ^ (evaluate_shear(terms, a & ((1 << group.n) - 1)) << group.n)]
+            for a in submasks(source))
+        assert all(group.weights[a] >= group.weights[source] for a in transformed)
+        assert tuple(a for a in transformed if group.weights[a] == group.weights[source]) == (source,)
+    original = group_crossing(group, weights, order, terms)
+    augmented = augmentation_change(original, group.width)
+    grades = [group.weights[x] + group.weights[y]
+              for x, y in product(range(group.d), repeat=2)]
+    leading, positive = leading_cut(augmented, grades, True)
+    expected = abelian_crossing(group.width, weights)
+    assert leading == expected
+    ranks = []
+    for index, (source, target) in enumerate(zip(original, leading)):
+        actual, lower = both_ranks(source, group.width), both_ranks(target, group.width)
+        assert all(a >= b for a, b in zip(actual, lower))
+        ranks.append([index, *actual, *lower])
+    count = len(original)
+    masks = (range(1, 1 << count) if group.width <= 4 else
+             sorted({1, (1 << count) - 1, 3, 5}
+                    | {sum(1 << i for i in range(p, count, 2)) for p in (0, 1)}))
+    checked = 0
+    for mask in masks:
+        actual = both_ranks(combine(original, mask), group.width)
+        lower = both_ranks(combine(leading, mask), group.width)
+        assert all(a >= b for a, b in zip(actual, lower))
+        checked += 1
+    return {"name": name, "labels": group.d, "label_bits": group.width,
+            "central_filtration_weight": group.central_weight,
+            "control_Boolean_degree": degree_f,
+            "central_control_terms": [list(term) for term in terms],
+            "deformation_weights": list(weights), "factor_order": list(order),
+            "leading_multiplication_is_commutative_square_zero": True,
+            "leading_antipode_and_control_are_identity": True,
+            "complete_leading_tensor_equals_abelian": True,
+            "positive_filtration_entries": positive,
+            "coefficient_ranks_and_abelian_ranks": ranks,
+            "scalar_recombinations_checked": checked}
 
 
 def main():
@@ -438,9 +496,26 @@ def main():
         check("extraspecial_shared_center", h32, (1, 1, 1, 1, 2),
               (0, 1, 2, 3, 4), ((3, 1), (12, 1))),
     ]
-    result = {"status": "Exact two-stage group-to-abelian degeneration audits passed.",
-              "scope": "Full class-two bilinear group domains and degree-at-most-two central controls.",
-              "cases": cases, "cubic_shear_scope_witness": cubic_scope_witness(),
+    cubic = BilinearGroup(3, 1, ((0, 1, 0), (0, 0, 0), (0, 0, 0)), 4)
+    field4 = BilinearGroup(4, 2, ((0, 0, 1, 2), (0, 0, 2, 3),
+                                (0, 0, 0, 0), (0, 0, 0, 0)), 5)
+    rng = random.Random(20261030)
+    anf = [rng.randrange(4) for _ in range(16)]
+    anf[-1] = 3
+    lookup_terms = tuple((mask, value) for mask, value in enumerate(anf) if value)
+    direct = [
+        check_direct("cubic_control_weight_four", cubic, (1, 1, 1, 2),
+                     (2, 0, 1, 3), ((7, 1),)),
+        check_direct("full_degree_four_F4_lookup_weight_five", field4,
+                     (1, 1, 1, 1, 1, 1), (3, 0, 2, 1, 5, 4), lookup_terms),
+        check_direct("Q8_direct_weight_three",
+                     BilinearGroup(2, 1, ((1, 1), (0, 1)), 3),
+                     (1, 2, 3), (1, 0, 2), ((0, 1), (1, 1), (3, 1))),
+    ]
+    result = {"status": "Direct heavy-central and legacy two-stage degeneration audits passed.",
+              "scope": "Full class-two bilinear group domains and arbitrary central Boolean lookup controls.",
+              "legacy_two_stage_cases": cases, "old_weight_two_cubic_witness": cubic_scope_witness(),
+              "direct_one_stage_cases": direct,
               "source_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest()}
     encoded = json.dumps(result, indent=2) + "\n"
     if args.output:

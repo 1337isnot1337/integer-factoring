@@ -28,6 +28,9 @@ verify-constructions:
 	python3 tools/check_residue_folded_channels.py
 	python3 tools/check_noncommutative_crossing_pfaffian_boundaries.py
 	python3 tools/check_noncommutative_crossing_pfaffian_isotropic.py
+	python3 tools/check_noncommutative_crossing_optimal_retracts.py
+	python3 tools/check_noncommutative_crossing_finite_gates.py
+	python3 tools/check_double_endpoint_retracts.py --cases full:3:3
 	python3 tools/check_noncommutative_crossing_group_degeneration.py
 
 verify-native-crossings:
@@ -53,6 +56,7 @@ verify-post-half:
 	python3 tools/check_noncommutative_crossing_pbw.py
 	python3 tools/check_folded_gram_channels.py
 	python3 tools/check_folded_gram_aggregate.py
+	python3 tools/check_pfaffian_p6_boundary_orbit.py
 
 verify-frontier:
 	python3 tools/check_piece_transfer.py

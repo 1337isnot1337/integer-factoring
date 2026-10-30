@@ -27,6 +27,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Three-parameter Pfaffian crossings](pfaffian-ternary-edge-family.md): arbitrary fixed-length codes, a complete uniform edge space, exact label retracts, and binary/four-element-field seed exclusions.
 - [Pfaffian boundary sections](noncommutative-crossing-pfaffian-boundaries.md): all-size section and Gram formulas, the universal correction factor, and an all-field rank-cost certificate for four pairs.
 - [Sparse isotropic Pfaffian sections](noncommutative-crossing-pfaffian-isotropic.md): explicit endpoint cancellation at every size from six pairs, four-term lifts from seven pairs, exact active correction ranks, and a six-piece crossing curve.
+- [Optimal common Pfaffian retracts](noncommutative-crossing-optimal-retracts.md): the largest possible common label dimension for two canceled vertices, attaining triangular maps, and a sparsity tradeoff over every characteristic-two field.
+- [Complete retract rank profiles](pfaffian-retract-rank-profiles.md): exact binary and four-element-field exclusions for sparse and triangular maps, invariant-orbit maps, and all 512 orientations of the ten-label example.
 - [High-mode residue folding](residue-folded-channels.md): exact ambient dimensions, finite incoming and outgoing factors, both complete channel counts, and eventual energy periodicity.
 - [Complete folded Gram channels](folded-gram-channels.md): all-angle cancellation inside one Gram form and a constructive polynomial-time exact Johnson-rank algorithm.
 - [Weighted Gram aggregation](folded-gram-aggregation.md): exact energy-preserving multiplicities, Gaussian-binomial evaluation, and 542 complete finite energy-bound calculations.
@@ -43,10 +45,12 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Obstructions and work beyond 1/2
 
+- [Universal finite-size gates](noncommutative-crossing-finite-gates.md): all-field rank-sum bounds exclude every seed on at most five labels and every non-elementary group orbit family of order at most eight.
+- [Uniform six-pair boundary barrier](pfaffian-p6-boundary-orbit-barrier.md): the common active quotient and an invariant rank shift give an exact lower cost 834 for all cancelling sections with binary coefficients.
 - [Directions beyond half](post-half-directions.md): experiments, scope, and unresolved questions.
 - [Quadratic charges and label entropy](binary-quadratic-charge-shells.md): exact residue-syndrome characters and dimension bounds for joint eigenspaces of all low quadratic charges.
 - [PBW degeneration of Hopf crossings](noncommutative-crossing-pbw-degeneration.md): a common four-leg specialization proves a finite rank-sum obstruction for the full PBW-domain coefficient spaces, including field extensions and filtered local gauges.
-- [Two-stage group degeneration](noncommutative-crossing-group-degeneration.md): augmentation weight followed by ordinary PBW length excludes full-domain class-two word crossings with quadratic controls; cubic controls have an explicit failure of the first filtration.
+- [Arbitrary-central-control degeneration](noncommutative-crossing-group-degeneration.md): a common heavier central weight excludes full-domain class-two word crossings with every central lookup table, including mixed families; it also explains the scope limit of the earlier weight-two proof.
 - [Network tradeoff](half-top-structure.md): restriction for the current local-enumeration and wire-channel constructor.
 - [Restricted-label counterexample](half-restricted-labels.md): failure of a proposed low-mode dimension reduction.
 - [Restricted intermediate spans](half-restricted-span.md): quantitative obstruction, with precise selected-label conditions.
