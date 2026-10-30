@@ -173,6 +173,17 @@ the two operator orders, crossing sums, and small binary-label restrictions.
 The theorem does not settle the rank of the complete central piece.
 These results give no lower bound on factoring or on an evaluator's runtime.
 
+The [integral Schur construction](research/integral-schur-crossing.md)
+retains the full `p(h)`-dimensional state space in every characteristic.
+Translated Schur functions give multiplier-one crossings over the integers.
+At prime-power energies, the homogeneous vacuum pairing is invertible
+modulo that prime, and its angle sum has only two or three terms.
+A constructive capacity theorem fills every binary label length with
+`O(log lambda)` prime-power blocks. It retains every block index, giving
+piece entropy and width error `O(log^2 lambda)` without an energy overshoot.
+This supplies another exact half-rate family and makes a rank improvement
+on prime-power blocks alone sufficient for an improved exponent.
+
 The [homogeneous-dual construction](research/homogeneous-duals.md) gives a
 new effective crossing family. An explicit polynomial in two sparse
 derivations replaces a large matrix inverse. The proof bounds coefficient
