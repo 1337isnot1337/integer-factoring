@@ -1,4 +1,4 @@
-.PHONY: verify verify-docs verify-frontier verify-post-half verify-further verify-energy-full verify-search-native verify-witt-full verify-formal verify-k6 verify-half-appendix help
+.PHONY: verify verify-docs verify-frontier verify-post-half verify-further verify-energy-full verify-search-native verify-witt-full verify-weyl-orbit verify-formal verify-k6 verify-half-appendix help
 
 verify: verify-docs verify-frontier verify-further
 	python3 -m unittest discover -s tests -v
@@ -58,6 +58,10 @@ verify-search-native:
 	python3 tools/check_eight_feature_crossings.py
 	python3 tools/check_matrix_unit_monodromy.py
 	python3 tools/check_exterior_monodromy.py
+	python3 tools/check_weyl_rank_one_ideal.py --energy 8
+
+verify-weyl-orbit:
+	python3 tools/check_weyl_rank_one_ideal.py
 
 verify-witt-full:
 	python3 tools/witt_artin_hasse.py --h 32 --gram
@@ -98,6 +102,7 @@ help:
 	  'make verify-energy-full   - larger optional weighted-energy certificate' \
 	  'make verify-search-native - exact finite-state search engines (C++17 required)' \
 	  'make verify-witt-full     - larger optional Witt Gram and vacuum calculation' \
+	  'make verify-weyl-orbit    - regenerate the full energy-32 Weyl orbit certificate' \
 	  'make verify-docs          - check local Markdown file links' \
 	  'make verify-formal        - rebuild original Lean lemmas (Lean 4.35.0)' \
 	  'make verify-k6            - rebuild the certified 1/30 machine (Lean 4.35.0)' \

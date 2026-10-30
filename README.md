@@ -54,6 +54,7 @@ make verify-further       # New transfers, arithmetic bounds, and word certifica
 make verify-energy-full   # Optional larger weighted-energy certificate
 make verify-search-native # Optional exact finite-state engines; requires C++17
 make verify-witt-full     # Optional 202-dimensional Witt Gram calculation
+make verify-weyl-orbit    # Optional full energy-32 Weyl orbit regeneration
 make verify-docs          # Local Markdown-link check
 ```
 
@@ -112,6 +113,8 @@ The [weighted Weyl construction](research/weighted-weyl-and-multivariate-extract
 The [constant alternate-order Weyl algebra](research/weyl-alternate-order-algebra.md) permits arbitrary products of the two zero-parameter endpoint operators. An elementary all-block involution, a square-zero coproduct, and a protected diagonal row prove the asymptotic floor `rho >= 3/4` for this entire word algebra. Its exact spectral core is much smaller than the original row matrix; the energy-32 core has minimal-polynomial degree 352. The broader algebra involving nonconstant coefficients remains open. The compact algebra checker is part of `make verify-further`; optional native profile and core commands are in the note.
 
 The [exact coefficient multiplication laws](research/weighted-weyl-additive-row-law.md) simplify both single-orientation families. At power-of-two energy the original curve satisfies `P(z)P(w)=P(z+w+1)`. At every energy the opposite curve has the additive normalization `G(t)=C t^h Q(1/t)` and satisfies `Q(z)^2=z^(2h)I`. Integral Gauss coefficient identities prove these statements and give an elementary replacement for the original row-filtration argument. Mixed-orientation products remain a separate construction problem.
+
+At energy 32, the [full-symmetry orbit certificate](research/weighted-weyl-rank-one-ideal.md) reaches arbitrary words in all eight external-symmetry coefficient families. The top rank-one pairing generates a square-zero ideal; its transpose-closed orbit has dimension 2,051 inside a 4,154-dimensional block, leaving a 52-dimensional middle quotient. The full certificate was regenerated from the binomial entry formula. A separate parity argument excludes a natural affine family at every power-of-two energy. These statements do not exclude the rest of the generated algebra or establish an all-energy radical theorem.
 
 The [matrix-valued seed interface](research/commuting-halves-matrix-seed-transfer.md) allows noncommutativity within each factor half while retaining exact ordered amplification. A fixed auxiliary matrix dimension is paid once. Full tensor-factor halves collapse to an ordinary scalar seed when normalized trace is available; two-by-two halves in matrix order four collapse after a finite field extension in every characteristic. The remaining larger characteristic-dividing cases are constructive search targets. Exact ordered-product, field-extension, and negative interleaving checks are included in `make verify-further`.
 
