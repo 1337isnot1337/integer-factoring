@@ -8,7 +8,7 @@ An open research effort on deterministic integer factoring, targeting the
 `n`-bit integer `N >= 2`, the task is to output its smallest prime factor. The time
 bound counts finite-alphabet Turing machine steps for every input.
 
-## Ordinary proof: exponent 1/2
+## Lean-checked proof: exponent 1/2
 
 The [written composition proof](research/half-rate-factoring.md) gives one
 deterministic machine with
@@ -25,12 +25,13 @@ arithmetic, recursion, and prefix-search costs. It gives score `alpha=1/2`
 under the published rule and the rate of the reference's square-root-logarithm
 conjecture.
 
-**Evidence level: complete ordinary mathematical argument, with source audit
-and finite checks.** The complete composition has not been formalized in Lean or
-reviewed independently outside this research session. No leaderboard
-acceptance or practical factoring speedup is claimed. The prior source
-theorems supply the evaluator and reduction; this repository does not claim
-to have discovered those constructions.
+**Evidence level: Lean kernel-checked composition and finite-alphabet machine.**
+[HalfTheorem.lean](formal-appendix/HalfTheorem.lean) proves the reference
+`Factoring.SqrtLogLogConjecture`, with only `propext`, `Classical.choice`, and
+`Quot.sound` in its axiom report. The proof has not received independent
+review outside this research session. No leaderboard acceptance or practical
+factoring speedup is claimed. The pinned source theorems supply the evaluator
+and reduction; this repository does not claim those constructions as new.
 
 [Complete proof](research/half-rate-factoring.md) ·
 [Top constructor and codec](research/half-top-constructor.md) ·
@@ -176,13 +177,13 @@ unproved in that source. The ordinary composition above supplies that rate.
 
 ## Research results
 
-The repository contains a written `1/2` composition theorem, the complete
+The repository contains a Lean-checked `1/2` composition theorem, the complete
 k6 Lean theorem, exact finite checks, and earlier research. The table
 identifies the evidence for each result.
 
 | Result | Value | Evidence and scope |
 | --- | --- | --- |
-| Appendix B factoring composition | `alpha = 1/2` | [Complete ordinary proof](research/half-rate-factoring.md), source and interface audit, finite adapter and arithmetic checks. Lean checks the [value-level composition through `Nat.minFac`](formal-appendix/PureFactor.lean), with explicit grouping, tables and pads; the costed machine composition remains open. |
+| Appendix B factoring composition | `alpha = 1/2` | [Complete ordinary proof](research/half-rate-factoring.md), source and interface audit, finite adapter and arithmetic checks. Lean proves the [reference square-root-log factoring statement](formal-appendix/HalfTheorem.lean), including the executable constructor, binary encoding, and finite-alphabet machine. |
 | **Complete k6 factoring theorem** | **`alpha = 1/30`** | **Lean verifies one modified machine, all runtime costs, the real-logarithm conversion, and the strict exponent comparison** |
 | Sharper rate for the same k6 machine | `beta_12 = log(12/11)/log12 = 0.0350159540... > 1/29` | [Complete ordinary derivation](research/k6-sharp-rate.md), using the existing machine bridge; new rate not Lean formalized |
 | Explicit analysis of the unchanged baseline | `alpha = log(12/11)/log(16) = 0.0313827205...` | Handwritten derivation from the pinned source's inequalities |
@@ -297,47 +298,20 @@ run:
 make verify-half-appendix
 ```
 
-This compiles the unchanged factoring network and grouping source against a
-different Mathlib revision from the reference's Lean 4.35.0 build. The checked
-table codec preserves the value of any reference clique, and the reference's
-search supplies a valid top grouping. For `K^40 ≤ n`, Lean also proves that
-the selected width satisfies `K^2 * width ≤ 6000n`, and bounds the selected
-group's state count by an exponent whose size is at most `8000n/K`. Lean proves
-the grouped network's weights and factors are zero or one, obtains the entry
-bound, and supplies explicit table and evaluator pads. For a level satisfying
-the selection inequalities, Lean bounds the evaluator-pad exponent by a
-constant times `n / sqrt(log n)`, including for the explicitly selected level.
-The level selection, selected `K`, network-size parameter, table width,
-entry-bit bound, and pad exponents are polynomial-time in unary when the input
-width is supplied in unary. One combined pad covers the grouping scan, table
-writer, group-state enumeration, and evaluator and has an exponent on the same
-scale.
-Lean also bounds the evaluator fragment's steps on the already-written input
-on that scale. The composed mathematical function returns `Nat.minFac` on all
-natural inputs. The reference challenge file contains an unrelated placeholder
-theorem; the new theorem's axiom report does not depend on it. The costed
-constructor and complete 1/2 factoring machine remain open. A separate
-machine bridge constructs the reference finite-alphabet factoring machine
-from a correct polynomial-time padded algorithm, but leaves the factoring
-algorithm and its polynomial-time certificates as hypotheses. The prefix-search
-polynomial-time theorem likewise assumes a polynomial-time count query.
-The exhaustive grouping scan is polynomial-time given a polynomial-time
-predicate and sufficient unit padding; its padding exponent is bounded by
-`3n/r` for the selected schedule. Its factoring-specific grouping predicate
-and edge-width oracle are polynomial-time, agree with the reference, and
-produce the reference grouping code when given sufficient padding.
-The selected clique row is a polynomial-time padded sum over explicitly coded
-states and agrees with the reference query when sufficiently padded. Its gate
-codes can be decoded in polynomial time, and the numeric gate
-weights and messages agree with the reference. The corresponding cluster
-weight and cross-cluster pair checks are polynomial-time and agree with the
-reference on valid decoded states. The selected top-group weight and cluster
-factor sides also have executable checks matching the reference. The numeric
-top factor sides, their padding, and the selected state count are likewise
-certified; factor-side comparisons use distinct endpoints where required.
-The concrete table writer is also polynomial-time and agrees with the reference
-written table given the master pad. Connecting it to the prefix evaluator and
-the full factoring machine remains open.
+The target compiles the unchanged factoring network and grouping source against
+Lean 4.33.1 and a different Mathlib revision from the reference's Lean 4.35.0
+build. It checks the explicit grouping search, mixed-radix decoder, gate and
+cluster factors, padded clique-row summand and table writer, and prefix search.
+A single master pad supplies these computations and the Appendix B evaluator.
+The resulting polynomial-time padded algorithm is proved correct for every
+natural input in the reference binary encoding. The machine bridge constructs
+one finite-alphabet factoring machine and proves the exact reference statement
+`Factoring.SqrtLogLogConjecture`, including the discrete square-root-log time
+bound and all small-input cases.
+
+The unmodified reference challenge file contains an unrelated placeholder;
+the axiom audit checks that the final theorem and the other audited bridge
+results do not depend on `sorryAx`.
 
 The GitHub Actions workflow runs the reference Lean checks, the k6 rate checks,
 and the Python checks. The Appendix bridge target above is run separately.

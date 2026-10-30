@@ -322,26 +322,15 @@ make verify
 ```
 
 The checkers do not materialize the enormous evaluator or benchmark a
-practical factoring implementation. They test the new finite adapters,
-source-derived integer inequalities, prefix search, and negative controls.
-The infinite-input theorem is the written proof and its cited prior
-theorems, not an inference from successful small tests. No new Lean
-formalization of the full composition is claimed. The pinned Appendix B
-development has now been rebuilt, and [ExplicitPad.lean](../formal-appendix/ExplicitPad.lean)
-proves that its assembled evaluator works with the computable pad from the
-[Lean pad lemma](../formal/HalfPad.lean). The [explicit top evaluator theorem](../formal-appendix/BoundedTop.lean)
-combines the unchanged multiplication-network and first-good-grouping
-theorems with the checked written-table codec under the same Lean version.
-It uses direct clique-entry lookup, a proved entry bound and explicit pads; it
-does not construct these objects in the claimed running time. The separate
-[pure factor theorem](../formal-appendix/PureFactor.lean) connects this value
-to the reference prefix search and proves `Nat.minFac` correctness for every
-natural input, without a machine or runtime certificate.
-[HalfPrefix.lean](../formal/HalfPrefix.lean) verifies removal of the divisor 1
-against the factoring reference's `cntPre`. The [conditional machine bridge](../formal-appendix/PaddedWordMachine.lean)
-constructs the reference finite-alphabet machine when supplied a correct
-polynomial-time padded algorithm and size bounds. The factoring-specific
-algorithm and its polynomial-time certificates remain to be constructed.
+practical factoring implementation. They test finite adapters and arithmetic;
+the infinite-input result is proved by the pinned source theorems and the
+Lean composition. [HalfTheorem.lean](../formal-appendix/HalfTheorem.lean)
+proves the reference `Factoring.SqrtLogLogConjecture`, including the
+polynomial-time padded algorithm, its binary input and output, the
+finite-alphabet machine, and the discrete square-root-log bound. The final
+axiom report contains `propext`, `Classical.choice`, and `Quot.sound`, with
+no `sorryAx`. Run `make verify-half-appendix` to rebuild the pinned sources
+and audit the formal composition. Independent review is still outstanding.
 
 The existing half-pieces channel counts have a proved asymptotic barrier
 at `1/2` within that particular interface; see the evaluator audit.
