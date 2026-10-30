@@ -14,6 +14,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Scalar parity factoring transfer](parity-factor-transfer.md): an odd-witness family for every composite, exact proper-factor recovery, and an `O(n)`-width repeated-squaring constructor reduce factoring to polynomially many scalar `F2` clique evaluations.
 - [Partial transpose and crossing power ranks](partial-transpose-power-rank.md): a characteristic-free proof of the partial-transpose rank inequality, product bounds for all powers, and a Smith-profile exclusion for every regular rank-two source with at least five labels.
 - [Rank-one fixed pairs](rank-one-fixed-pairs.md): an all-field restriction on invertible rank-two channels, plus regular rank-two controlled-cycle examples at every binary label size.
 - [Full CNOT tensor coefficient space](cnot-full-tensor-span.md): exact small row blocks, all-field rank-one and column-rank-two classifications, and an all-field exclusion of the complete eight-label tensor span.

@@ -132,6 +132,7 @@ verify-post-half:
 	python3 tools/check_cubic_affordable_pool.py --input evidence/cubic-multirow-outputs.json --output /tmp/integer-factoring-cubic-affordable-pool.json
 
 verify-frontier:
+	python3 tools/check_parity_factor_transfer.py --output /tmp/integer-factoring-parity-factor-transfer.json
 	python3 tools/check_piece_transfer.py
 	python3 tools/check_boson_truncation.py
 	python3 tools/check_graded_space.py

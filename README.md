@@ -28,6 +28,7 @@ The composition uses the existing clique evaluator from [Anthropic's Appendix B]
 | Saving exponent `1/30` for the k6 machine | **Lean-verified** | [Proof](research/verified-k6.md), [machine theorem](variants/k6/FactoringK6/Certified.lean) |
 | Sharper k6 saving `log(12/11)/log(12) > 1/29` | Ordinary proof, not Lean-verified at this rate | [Rate derivation](research/k6-sharp-rate.md) |
 | Saving exponent above `1/2` | **Not established** | [Research index](research/INDEX.md) |
+| Scalar parity factoring transfer | Ordinary proof with polynomially many scalar `F2` queries and linear total multiplication width; no algebra-validity requirement | [Parity witness and quantitative constructor](research/parity-factor-transfer.md) |
 | Sparse modular transfer overhead | Improved from `exp(O(n/log n))` to `exp(O(sqrt n))`; conditional on an algebra-valid weighted evaluator | [Rough-input transfer](research/rough-sparse-transfer.md) |
 | Crossing paths from arbitrary nilpotent superoperators | Ordinary all-field construction with exact column Smith spectra; row cut remains a separate obligation | [Nilpotent crossing families](research/nilpotent-flag-crossings.md) |
 | Regular roots with a rank-two terminal power | Ordinary all-size construction in characteristic two; early-power ranks remain costly in recorded examples | [Paired-chain construction](research/modified-transpose-root-target.md) |
@@ -89,6 +90,8 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 | [`tools/`](tools/) and [`tests/`](tests/) | Exact checkers, reproduction scripts, and unit tests |
 
 ## Current research frontier
+
+The [scalar parity transfer](research/parity-factor-transfer.md) reduces complete factorization to polynomially many scalar characteristic-two clique evaluations. Every composite has an odd lower-half or power-root divisor family; parity descent recovers a proper divisor, and recursion recovers its prime factors. Repeated squaring retains total multiplication width `O(n)`. The resulting written-table bound is `poly(n)*(2^(O(n/P))+E(P,floor(32000n/P^2)))` for `P^40<=n`, with no cyclic-ring family or separate nonzeroness overhead. This strengthens the interface for a future evaluator; the achieved exponent remains `1/2`.
 
 [Partial transpose bounds](research/partial-transpose-power-rank.md) now give an all-field product inequality for the ranks of operator powers. They exclude every regular rank-two nilpotent source with at least five labels from the existing sufficient Smith criterion, directing the search toward larger channel ranks. A separate [fixed-pair theorem](research/rank-one-fixed-pairs.md) and all-size controlled-cycle construction show why nonunital regular roots remain a distinct class.
 
