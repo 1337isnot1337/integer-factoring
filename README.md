@@ -17,14 +17,22 @@ deterministic machine with
 T(n)\le C\exp\!\left(\frac{Cn}{\sqrt{\log n}}\right).
 ```
 
-The [linear-space refinement](research/linear-space-half-rate.md) now
-computes the least prime factor, complete factorization, and exact
-divisor-prefix counts within this time bound using **`O(n)` working
-bits**. [Compressed local factors](research/near-linear-factor-space.md)
-use scalar field evaluations and gap-coded partitions. The evaluator
-works over a fixed sixteen-element ring and recovers one witness bit
-at a time. The proof charges all recursion, query, and control storage.
-Exact counts follow from factorization and streamed divisor enumeration.
+The [sublinear-space refinement](research/sublinear-space-half-rate.md)
+computes the least prime factor, complete factorization, exact
+divisor-prefix counts, and sorted divisor output within this time bound
+using **`O(n/sqrt(log n))` working bits**. The input is read-only and
+the output is write-only. Short hash descriptors replace stored candidate
+integers; paired input tags regenerate both factors, and streamed
+multiplication verifies them with logarithmic arithmetic storage.
+
+[Compressed local factors](research/near-linear-factor-space.md) use
+scalar field evaluations and gap-coded partitions. The
+[streamed top queries](research/streamed-top-space.md) recompute their
+arithmetic messages in polynomial time. The evaluator works over a
+fixed sixteen-element ring. The proof charges every recursive counter,
+query argument, and recovery descriptor. The earlier
+[linear-space theorem](research/linear-space-half-rate.md) remains a
+simpler intermediate construction.
 
 The [blocked half-rate family](research/blocked-half-family.md) also
 reduces every local piece and factor query from `2^O(lambda)` time to
