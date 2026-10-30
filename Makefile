@@ -5,6 +5,7 @@ verify:
 	python3 -m unittest tools.check_crossing -v
 	python3 tools/check_coefficient_basis.py
 	python3 tools/parameters.py
+	python3 tools/check_k6_sharp_rate.py
 
 verify-formal:
 	bash tools/check_formal.sh

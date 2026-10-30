@@ -1,0 +1,10 @@
+{
+  "beta_gt_one_over_29": true,
+  "beta_lt_one_over_28_negative_control": true,
+  "integer_margin_above_one_over_29": "62137326438020969536606985605",
+  "integer_margin_below_one_over_28": "6839384139039855375089089873",
+  "one_step_cases": 918,
+  "product_cases": 702,
+  "schedule_levels": 4,
+  "scope": "finite exact arithmetic; ordinary asymptotic proof is separate"
+}

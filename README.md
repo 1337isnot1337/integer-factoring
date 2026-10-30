@@ -80,6 +80,24 @@ pinned reference. It rebuilds the modified `Solution` and every new module.
 Before compilation, it verifies all patched source hashes against the audit.
 It then verifies the final theorem's axioms in a fresh Lean invocation.
 
+## Further research without new Lean formalization
+
+The [sharper analysis of the existing k6 machine](research/k6-sharp-rate.md)
+proves the ordinary mathematical bound with exponent
+`beta_12 = log(12/11)/log12 = 0.0350159540186562...`, which is strictly
+larger than `1/29` and `1/30`. It retains the already certified program and
+machine bridge, and sums the per-level contraction errors instead of replacing
+them by a fixed slack. The new rate argument is handwritten; the Lean endpoint
+remains `1/30`. Run `python3 tools/check_k6_sharp_rate.py` for its finite exact
+arithmetic checks.
+
+Work is also underway on composing the existing Appendix B clique evaluator
+from `anthropics/formal-math` with the factoring reference's top network.
+That route targets exponent `1/2`; it is not a result of this checkpoint.
+The table constructor, codec, explicit runtime pad, and all costs are being
+checked as ordinary mathematics. No new Lean formalization is planned for
+this research phase.
+
 ## Stronger candidate: grouping and crossing compression
 
 The proposed combination of a stronger grouping construction and a 56-channel
@@ -125,6 +143,7 @@ the evidence for each result.
 | Result | Value | Evidence and scope |
 | --- | --- | --- |
 | **Complete k6 factoring theorem** | **`alpha = 1/30`** | **Lean verifies one modified machine, all runtime costs, the real-logarithm conversion, and the strict exponent comparison** |
+| Sharper rate for the same k6 machine | `beta_12 = log(12/11)/log12 = 0.0350159540... > 1/29` | [Complete ordinary derivation](research/k6-sharp-rate.md), using the existing machine bridge; new rate not Lean formalized |
 | Explicit analysis of the unchanged baseline | `alpha = log(12/11)/log(16) = 0.0313827205...` | Handwritten derivation from the pinned source's inequalities |
 | Explicit time bound for the reference machine | `C * 2^(C * (explicitZu(n) + 1))` | Lean-checked bound for one finite-alphabet factoring machine; logarithmic-power conversion remains handwritten |
 | Grouping with independent accuracy | `g = O(D^2 K^2 log K)` | Matching decomposition, Holder's inequality, and an explicit deterministic search |
