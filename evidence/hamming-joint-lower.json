@@ -1,0 +1,23 @@
+{
+  "status": "exact finite optimum 25 over F2 in the declared 33-dimensional joint span",
+  "separator": "0x686610c0",
+  "separator_tensor_entries": [
+    20,
+    24,
+    66
+  ],
+  "symmetry_checks": 264,
+  "encoding_satisfying_controls": 6,
+  "proof_negative_controls": 4,
+  "cnf_variables": 2357,
+  "cnf_clauses": 9802,
+  "cnf_sha256": "4857273848046eafd5d3e190af740e68b92af2de7ad670b816f5fdbaf1338281",
+  "rup_additions": 8532,
+  "rup_payload_sha256": "0ee8a79dd690c5d54c8ec432c4b6389678d4c77dcee9c9512df364b4ca432cdf",
+  "native_result": "VERIFIED UNSAT additions 8532 variables 2357 initial_clauses 9802",
+  "sha256": {
+    "tools/check_hamming_joint_lower.py": "d197c02648e538854f4815563ea1c9ac0a5121fef9bffc93e192f91dcceab0d6",
+    "tools/check_rup.c": "d717e4141a5f8c245e1ea332a0f8c68862eb4161dd61419eb7f94c21b75fb1c2",
+    "evidence/hamming-joint-rank4.rup.gz": "7b6404d505f92f69a31f4b7ed489e069a5a4c433dcc79a56fecba6625cd9776e"
+  }
+}

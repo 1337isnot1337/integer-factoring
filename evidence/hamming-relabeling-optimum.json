@@ -1,0 +1,153 @@
+{
+  "status": "exact F2 cutoff four in the 102-dimensional relabeling span",
+  "binary_width": 2,
+  "span_dimension": 102,
+  "exact_minimum_rank_product_cutoff": 4,
+  "exact_minimum_maximum_binary_width_sum": 2,
+  "witness_piece_count": 20,
+  "crossing_entries_checked": 256,
+  "lower_bound": {
+    "complete_slice_intersection_systems": 60,
+    "slice_kernel_basis_vectors_checked": 136,
+    "intersection_dimension_histogram": {
+      "0": 16,
+      "2": 40,
+      "14": 4
+    },
+    "slice_span_dimension": 60,
+    "separator_entry_positions": [
+      250,
+      251,
+      254,
+      255
+    ],
+    "separator_hex": "0xcc00000000000000000000000000000000000000000000000000000000000000",
+    "separator_on_crossing": 1
+  },
+  "witness": [
+    {
+      "tensor_hex": "0x120000000000120000",
+      "source_image_mask": "0x819010320000000040c8040c80207580000",
+      "row_rank": 1,
+      "column_rank": 4
+    },
+    {
+      "tensor_hex": "0x100020000000000100020",
+      "source_image_mask": "0x820010400000000041000410002079c0000",
+      "row_rank": 4,
+      "column_rank": 1
+    },
+    {
+      "tensor_hex": "0x48004800000000004800480048004800000048004800480048000000",
+      "source_image_mask": "0x67680000",
+      "row_rank": 1,
+      "column_rank": 4
+    },
+    {
+      "tensor_hex": "0x10401040104010400000104000001040104000001040104000001040000",
+      "source_image_mask": "0x1088b0000020000001000109e580204100e68",
+      "row_rank": 1,
+      "column_rank": 4
+    },
+    {
+      "tensor_hex": "0x7bde7bde7bde7bde7bde7bde7bde7bde7bde7bde7bde7bde7bde7bde7bde7bde",
+      "source_image_mask": "0x200002000000081538",
+      "row_rank": 1,
+      "column_rank": 4
+    },
+    {
+      "tensor_hex": "0x10400000000000000000000010400000000",
+      "source_image_mask": "0x81900000000000010000092c80204101724",
+      "row_rank": 1,
+      "column_rank": 4
+    },
+    {
+      "tensor_hex": "0x10000000400000000000000000000010000000400",
+      "source_image_mask": "0x820000000000000100000a2000204101702",
+      "row_rank": 4,
+      "column_rank": 1
+    },
+    {
+      "tensor_hex": "0x240000000000240000000000000000000000000",
+      "source_image_mask": "0x140c8092c800024b3904",
+      "row_rank": 1,
+      "column_rank": 4
+    },
+    {
+      "tensor_hex": "0x200040000000000200040000000000000000000000",
+      "source_image_mask": "0x141000a2000002881902",
+      "row_rank": 4,
+      "column_rank": 1
+    },
+    {
+      "tensor_hex": "0x20800000000000000000000020800000000000000000000000000000",
+      "source_image_mask": "0x1d2000000001900",
+      "row_rank": 1,
+      "column_rank": 4
+    },
+    {
+      "tensor_hex": "0x20000000800000000000000000000020000000800000000000000000000000",
+      "source_image_mask": "0x1e3000000001902",
+      "row_rank": 4,
+      "column_rank": 1
+    },
+    {
+      "tensor_hex": "0x208000002080208000002080208000002080000020802080208020800000",
+      "source_image_mask": "0x19da000000000000",
+      "row_rank": 1,
+      "column_rank": 4
+    },
+    {
+      "tensor_hex": "0x100810080000100800001008100810081008000010080000100810080000",
+      "source_image_mask": "0x2111628000000000119e580046796268",
+      "row_rank": 1,
+      "column_rank": 4
+    },
+    {
+      "tensor_hex": "0x480000000000480000000000000000000000000000000000000000000000",
+      "source_image_mask": "0x7481900",
+      "row_rank": 1,
+      "column_rank": 4
+    },
+    {
+      "tensor_hex": "0x400080000000000400080000000000000000000000000000000000000000000",
+      "source_image_mask": "0x78c1902",
+      "row_rank": 4,
+      "column_rank": 1
+    },
+    {
+      "tensor_hex": "0x1008000000000000000000000000000000001008000000000000",
+      "source_image_mask": "0x1032000000000000192c800064b3720",
+      "row_rank": 1,
+      "column_rank": 4
+    },
+    {
+      "tensor_hex": "0x1000000000008000000000000000000000000000000001000000000008000",
+      "source_image_mask": "0x10400000000000001a2000006881702",
+      "row_rank": 4,
+      "column_rank": 1
+    },
+    {
+      "tensor_hex": "0xffff0000000000000000ffff0000000000000000ffff0000000000000000ffff",
+      "source_image_mask": "0x39",
+      "row_rank": 1,
+      "column_rank": 4
+    },
+    {
+      "tensor_hex": "0x24002400240024000000000024002400000000002400240024002400000",
+      "source_image_mask": "0x9445909e580042796c40",
+      "row_rank": 1,
+      "column_rank": 4
+    },
+    {
+      "tensor_hex": "0x1200120012001200000012001200120012000000000012001200000000",
+      "source_image_mask": "0x1088b21116080000084658846580267700c40",
+      "row_rank": 1,
+      "column_rank": 4
+    }
+  ],
+  "source_sha256": {
+    "check_hamming_relabeling_optimum.py": "9a2350426ec9d60b6ee2dab829ba3d88212aa5b481068274678403b13263d58c",
+    "hamming_relabeling.py": "6bc3b614799db4831c0c21fb2aec7b36245f68cfb3d3df45908635103b30bd31"
+  }
+}

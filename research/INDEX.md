@@ -36,6 +36,21 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Top-channel rank](top-channel-rank.md): exact factor rank on the full partition domain.
 - [Coefficient basis](coefficient-basis.md): scoped minimax calculation for the chosen coefficient span.
 
+## Current post-half campaign
+
+The [frontier ledger](frontier-search-ledger.md) records scope and remaining obligations. These ordinary mathematical results await independent review; no saving exponent above `1/2` is established.
+
+- [Modular recombinations](modular-recombination.md): exact three-label span optimum four and finite structured-label searches.
+- [Bounded-weight Pfaffian families](hamming-pfaffian.md), [local tensor powers](hamming-tensor-power.md), and [higher sectors](hamming-sectors.md): effective degree, symmetry, and complement-division arguments.
+- [Sparse-width interpolation](sparse-width-interpolation.md) and [the modular half endpoint](modular-half-endpoint.md): effective parameter schedules and a matching half-rate estimate.
+- [Rational-function transfer](rational-family-transfer.md): explicit specialization and extension-field coordinate descent.
+- [Joint-sector optimum](hamming-joint-optimum.md): exact cutoff 25 and an independently replayed RUP lower-bound certificate.
+- [Relabeling tensors](hamming-relabeling.md) and [their exact optimum](hamming-relabeling-optimum.md): a six-piece cutoff-16 seed, a twenty-piece cutoff-four seed, and constant block models.
+- [SL2 coefficient ranks](sl2-coefficient-ranks.md): polynomial-size characteristic-two tilting blocks and a tight reciprocal-pencil obstruction.
+- [All-field pairing obstruction](all-field-pairing-barrier.md), [characteristic-two small seeds](pairing-small-seeds.md), [full pairing words](pairing-word-barrier.md), and [position symmetry](word-symmetry-barrier.md): restricted-family lower bounds, including arbitrary collective recombinations.
+- [Affine-code obstruction](affine-code-barrier.md) and the [finite-core leakage record](frontier-search-ledger.md): limitations of two domain-restriction approaches.
+- [Central ranks](modular-central-rank.md) and [particle-hole symmetry](modular-particle-hole.md): exact finite matrix and full coefficient-span identities.
+
 ## Earlier grouping and crossing research
 
 - [Integration notes](integration.md): earlier combined grouping/crossing proposal and open proof obligations.

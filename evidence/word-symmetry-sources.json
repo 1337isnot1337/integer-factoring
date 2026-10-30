@@ -1,0 +1,12 @@
+{
+  "title": "Introduction to Representation Theory",
+  "source_url": "https://math.mit.edu/~etingof/reprbook.pdf",
+  "sha256": "ff004d17471bbd344f6c33e6fb9964d49affbf5f111d65167935d7087ece1443",
+  "used_results": [
+    "Formula (5.17.1) and Theorem 5.17.1: Specht dimensions and hook formula",
+    "Lemma 5.18.3 and Theorem 5.18.4: pure-power span and Schur-Weyl decomposition",
+    "Corollary 5.19.2: symmetric/general linear group decomposition",
+    "Proposition 5.22.2: determinant twist of Schur modules"
+  ],
+  "scope": "Standard characteristic-zero representation results; the crossing-specific determinant functional and bound are derived in research/word-symmetry-barrier.md."
+}

@@ -71,6 +71,8 @@ No uniform factoring exponent above `1/2` is proved here. One open approach seek
 
 See the [research index](research/INDEX.md) for completed arguments, scoped obstructions, and older candidates. Active work can also appear in [open pull requests](https://github.com/1337isnot1337/integer-factoring/pulls); branch research is not automatically a result on `main`.
 
+This branch's [post-half campaign](research/frontier-search-ledger.md) adds effective polynomial families, [exact finite rank optima](research/hamming-relabeling-optimum.md), a [polynomial-size coefficient-rank engine](research/sl2-coefficient-ranks.md), and an [all-field obstruction for full pairing types](research/all-field-pairing-barrier.md). These ordinary arguments await independent review and establish no exponent above `1/2`. Their focused replays are included in `make verify-frontier`.
+
 ## Contribution and attribution
 
 Start with [CONTRIBUTING.md](CONTRIBUTING.md) and [autoresearch.md](autoresearch.md). Coordinate new research through [issue #8](https://github.com/1337isnot1337/integer-factoring/issues/8). Document source revisions, proof status, reproduction commands, and remaining gaps.

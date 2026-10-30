@@ -1,0 +1,71 @@
+{
+  "status": "finite exact complete-piece ranks; no asymptotic factoring improvement",
+  "full": true,
+  "cases": [
+    {
+      "weight": 8,
+      "label_count": 2,
+      "intermediate_channels": 5,
+      "augmented_channels": 6,
+      "processed_pairs": 4,
+      "left_rank": 3,
+      "right_rank": 3,
+      "kernel_left": 3,
+      "kernel_right": 3,
+      "kernel_pair_rank": 2,
+      "central_rank": 2,
+      "independent_source_coefficient_checks": 1208,
+      "input_sha256": "63c24c8aa0ab57c16e0c7c1ebe380a5ed30bcfb540e7b6ad63e4a2e455be5925"
+    },
+    {
+      "weight": 16,
+      "label_count": 5,
+      "intermediate_channels": 23,
+      "augmented_channels": 24,
+      "processed_pairs": 25,
+      "left_rank": 16,
+      "right_rank": 16,
+      "kernel_left": 8,
+      "kernel_right": 8,
+      "kernel_pair_rank": 4,
+      "central_rank": 12,
+      "independent_source_coefficient_checks": 1220,
+      "input_sha256": "7df4e780e54f81e007f99eef356ff431470a1f88ba5360cc0162d65a26155053"
+    },
+    {
+      "weight": 32,
+      "label_count": 23,
+      "intermediate_channels": 276,
+      "augmented_channels": 277,
+      "processed_pairs": 529,
+      "left_rank": 269,
+      "right_rank": 269,
+      "kernel_left": 8,
+      "kernel_right": 8,
+      "kernel_pair_rank": 0,
+      "central_rank": 261,
+      "independent_source_coefficient_checks": 1292,
+      "input_sha256": "fdb2942aafaf703ab80141be8728202a3492f67b39d8a8ae29f617c0a83223d2"
+    },
+    {
+      "weight": 64,
+      "label_count": 276,
+      "intermediate_channels": 11564,
+      "augmented_channels": 11565,
+      "processed_pairs": 76176,
+      "left_rank": 11564,
+      "right_rank": 11564,
+      "kernel_left": 1,
+      "kernel_right": 1,
+      "kernel_pair_rank": 0,
+      "central_rank": 11563,
+      "independent_source_coefficient_checks": 2304,
+      "input_sha256": "9e98fd9a44146700b5ae7003e3004a12358a5199e2cc36e64af311cc1c184bff"
+    }
+  ],
+  "sha256": {
+    "tools/modular_central_rank.c": "13193c876d6755828f634ca062f8376e8542e7d5e77df9c4815f20d39edaa6e2",
+    "tools/check_modular_central_rank.py": "b2ceddc0cfb5df172849492479da4b08581bb6c69f8b65ca348f141d69f2c91a",
+    "evidence/modular-crossing.json": "4560cd1a68e35dc85d8037163e4b0c319d573530a93030c03addace1d5dacaa1"
+  }
+}

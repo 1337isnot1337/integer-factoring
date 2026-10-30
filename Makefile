@@ -30,6 +30,29 @@ verify-frontier:
 	python3 tools/check_near_ones_channels.py
 	python3 tools/check_primary_central_gram.py
 	python3 tools/check_modular_crossing.py
+	python3 tools/check_modular_recombination.py
+	python3 tools/check_modular_particle_hole.py
+	python3 tools/check_hamming_pfaffian.py
+	python3 tools/check_hamming_tensor_power.py
+	python3 tools/check_sparse_width_interpolation.py
+	python3 tools/check_hamming_sectors.py
+	python3 tools/check_hamming_complement.py
+	python3 tools/check_hamming_joint.py
+	python3 tools/check_hamming_joint_lower.py
+	python3 tools/check_extension_descent.py
+	python3 tools/check_hamming_f4_probe.py
+	python3 tools/check_frozen_core_leak.py
+	python3 tools/check_word_symmetry_barrier.py
+	python3 tools/check_pairing_word_barrier.py
+	python3 tools/check_pairing_small_seeds.py
+	python3 tools/check_affine_code_barrier.py
+	python3 tools/check_hamming_relabeling.py
+	python3 tools/check_hamming_relabeling_optimum.py
+	python3 tools/check_sl2_boolean_rank.py
+	python3 tools/check_all_field_pairing.py
+	python3 tools/check_modular_central_rank.py
+	python3 tools/check_modular_binary_central_rank.py
+	python3 tools/check_three_label_span.py
 	python3 tools/check_sparse_divisor_nonzeroness.py
 
 verify-formal:

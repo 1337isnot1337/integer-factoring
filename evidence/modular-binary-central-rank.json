@@ -1,0 +1,123 @@
+{
+  "status": "finite complete ranks on explicit binary prefixes; no asymptotic bound",
+  "full": true,
+  "cases": [
+    {
+      "weight": 8,
+      "full_label_count": 2,
+      "binary_label_count": 2,
+      "binary_width": 1,
+      "augmented_channels": 6,
+      "factor_ranks_row_then_column": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "row_rank": 2,
+      "column_rank": 2,
+      "row_kernel_dimensions": [
+        3,
+        3
+      ],
+      "column_kernel_dimensions": [
+        3,
+        3
+      ],
+      "row_kernel_pair_rank": 2,
+      "column_kernel_pair_rank": 2,
+      "independent_source_coefficient_checks": 1208,
+      "direct_complete_matrix_checked": true,
+      "input_sha256": "dcb7c7f8ba04055b42180784c9f4083194628afd27ff9b231b12635eb976360b"
+    },
+    {
+      "weight": 16,
+      "full_label_count": 5,
+      "binary_label_count": 4,
+      "binary_width": 2,
+      "augmented_channels": 24,
+      "factor_ranks_row_then_column": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "row_rank": 8,
+      "column_rank": 8,
+      "row_kernel_dimensions": [
+        12,
+        12
+      ],
+      "column_kernel_dimensions": [
+        12,
+        12
+      ],
+      "row_kernel_pair_rank": 8,
+      "column_kernel_pair_rank": 8,
+      "independent_source_coefficient_checks": 1220,
+      "direct_complete_matrix_checked": true,
+      "input_sha256": "3cccf16812b35aab0a17b71e92516a33a74c8a6fe58521e378980420682d776d"
+    },
+    {
+      "weight": 32,
+      "full_label_count": 23,
+      "binary_label_count": 16,
+      "binary_width": 4,
+      "augmented_channels": 277,
+      "factor_ranks_row_then_column": [
+        211,
+        211,
+        212,
+        212
+      ],
+      "row_rank": 187,
+      "column_rank": 185,
+      "row_kernel_dimensions": [
+        66,
+        66
+      ],
+      "column_kernel_dimensions": [
+        65,
+        65
+      ],
+      "row_kernel_pair_rank": 42,
+      "column_kernel_pair_rank": 38,
+      "independent_source_coefficient_checks": 1292,
+      "direct_complete_matrix_checked": true,
+      "input_sha256": "53950442c920a4d11a4b9d70916b17e0454c3b69468f97ecf288b75bd22063f5"
+    },
+    {
+      "weight": 64,
+      "full_label_count": 276,
+      "binary_label_count": 256,
+      "binary_width": 8,
+      "augmented_channels": 11565,
+      "factor_ranks_row_then_column": [
+        11552,
+        11552,
+        11544,
+        11544
+      ],
+      "row_rank": 11540,
+      "column_rank": 11524,
+      "row_kernel_dimensions": [
+        13,
+        13
+      ],
+      "column_kernel_dimensions": [
+        21,
+        21
+      ],
+      "row_kernel_pair_rank": 1,
+      "column_kernel_pair_rank": 1,
+      "independent_source_coefficient_checks": 2304,
+      "direct_complete_matrix_checked": false,
+      "input_sha256": "17c1bff73b23fa0870fdbe8ff25ac021e5392d2ba0eb47f7057ace45492b4cd6"
+    }
+  ],
+  "sha256": {
+    "tools/modular_central_rank.c": "990eb3ef9af52b0e9d8f1bfafa2ea71f502b8afe008a8f75d6ec0208139de4f2",
+    "tools/check_modular_binary_central_rank.py": "83e4c450aae6f2a0c9672de82dc0cc7f29c2b1f91a0bb002bb1f0fe56dcb4b27",
+    "tools/check_modular_central_rank.py": "b2ceddc0cfb5df172849492479da4b08581bb6c69f8b65ca348f141d69f2c91a"
+  }
+}

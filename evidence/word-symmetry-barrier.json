@@ -1,0 +1,114 @@
+{
+  "status": "exact arithmetic for a characteristic-zero invariant-word obstruction",
+  "hook_formula_cases": 11084,
+  "position_class_truncations": 5784,
+  "checked_region_minima": [
+    {
+      "local_matrix_size": 4,
+      "k": 1,
+      "word_length": 8,
+      "minimum_specht_dimension_in_checked_region": 14
+    },
+    {
+      "local_matrix_size": 4,
+      "k": 2,
+      "word_length": 16,
+      "minimum_specht_dimension_in_checked_region": 23100
+    },
+    {
+      "local_matrix_size": 4,
+      "k": 3,
+      "word_length": 24,
+      "minimum_specht_dimension_in_checked_region": 30620590
+    },
+    {
+      "local_matrix_size": 4,
+      "k": 4,
+      "word_length": 32,
+      "minimum_specht_dimension_in_checked_region": 57076503120
+    },
+    {
+      "local_matrix_size": 4,
+      "k": 5,
+      "word_length": 40,
+      "minimum_specht_dimension_in_checked_region": 130604991172656
+    },
+    {
+      "local_matrix_size": 4,
+      "k": 6,
+      "word_length": 48,
+      "minimum_specht_dimension_in_checked_region": 342962519765708700
+    },
+    {
+      "local_matrix_size": 4,
+      "k": 7,
+      "word_length": 56,
+      "minimum_specht_dimension_in_checked_region": 994363370321090269500
+    },
+    {
+      "local_matrix_size": 4,
+      "k": 8,
+      "word_length": 64,
+      "minimum_specht_dimension_in_checked_region": 3106808854429521500859600
+    },
+    {
+      "local_matrix_size": 9,
+      "k": 1,
+      "word_length": 18,
+      "minimum_specht_dimension_in_checked_region": 4862
+    },
+    {
+      "local_matrix_size": 9,
+      "k": 2,
+      "word_length": 36,
+      "minimum_specht_dimension_in_checked_region": 5252774741500
+    },
+    {
+      "local_matrix_size": 9,
+      "k": 3,
+      "word_length": 54,
+      "minimum_specht_dimension_in_checked_region": 15777232142427965609400
+    },
+    {
+      "local_matrix_size": 16,
+      "k": 1,
+      "word_length": 32,
+      "minimum_specht_dimension_in_checked_region": 35357670
+    },
+    {
+      "local_matrix_size": 16,
+      "k": 2,
+      "word_length": 64,
+      "minimum_specht_dimension_in_checked_region": 7493567573885627794469580
+    }
+  ],
+  "rho_intervals": [
+    {
+      "seed_dimension": 2,
+      "rho_lower_decimal": "0.774397470347",
+      "rho_upper_decimal": "0.774397470348",
+      "strictly_above_half_threshold": true
+    },
+    {
+      "seed_dimension": 3,
+      "rho_lower_decimal": "0.733269522816",
+      "rho_upper_decimal": "0.733269522817",
+      "strictly_above_half_threshold": true
+    },
+    {
+      "seed_dimension": 4,
+      "rho_lower_decimal": "0.707133841396",
+      "rho_upper_decimal": "0.707133841397",
+      "strictly_above_half_threshold": true
+    },
+    {
+      "seed_dimension": 5,
+      "rho_lower_decimal": "0.689002287234",
+      "rho_upper_decimal": "0.689002287235",
+      "strictly_above_half_threshold": false
+    }
+  ],
+  "small_schur_block_rank": 2,
+  "small_functional_value": 6,
+  "source_sha256": "159803b0f2a1ab453c518c935d9d8c3a0cc0286ae35c927aa1f7b50987892a00"
+}
