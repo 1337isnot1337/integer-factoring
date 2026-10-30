@@ -11,8 +11,12 @@ constructible in `2^O(lambda)` bit time.
 
 This is a stronger local query interface for the quadratic-code candidate
 identified in [PR #24, affine-code-barrier.md](https://github.com/1337isnot1337/integer-factoring/blob/05d9c1b8aed4f8494ce230f0869f9048ef879474/research/affine-code-barrier.md).
-It supplies no uniform contraction estimate below `1/sqrt(2)`. The
-factoring score therefore remains `1/2`.
+The later [word-restriction theorem](word-restriction-barrier.md) proves
+that this template cannot supply the required contraction: one piece
+has both widths `2*lambda-O(sqrt(lambda))` in every decomposition from
+its complete coefficient symmetry span. This holds for arbitrary
+recombinations and any number of pieces. The coefficient oracle below
+remains valid, and the factoring score remains `1/2`.
 
 A second result identifies a restriction on the support of this candidate.
 If a Boolean quadratic has alternating rank at least six, its quadratic
@@ -20,7 +24,9 @@ annihilators are exactly zero and its complement. This forces the support
 of every local term, on an appropriate high-rank quadratic subspace, to
 depend only on the affine hull of a quartet's image. The numerical
 multiplicities in that image can still differ from the affine-code case;
-the existing affine-code rank obstruction cannot simply be imported.
+the earlier affine-code rank obstruction cannot simply be imported.
+The word-restriction theorem instead uses missing pair patterns in the
+local supports and a uniform constant-weight-fiber argument.
 
 All statements here are ordinary mathematics and exact computation, without
 new Lean work. The original crossing construction retains its Appendix B
@@ -291,8 +297,9 @@ The maximum literal coefficient rank product is `384400`. At degree 22,
 both cut ranks are 620. Its finite normalized value
 `log2(384400)/(4*5)=0.9276124405...` exceeds the target threshold.
 This rules out this literal finite profile as evidence of a new rate.
-It is not a lower bound for recombined coefficients, other quadratic
-codes, or an all-size family.
+This finite calculation alone is not a lower bound for recombined
+coefficients or an all-size family; the subsequent word-restriction
+proof supplies that broader obstruction separately.
 
 Adding the next monomial `t_1t_3` gives 64 labels on the same eight
 evaluation points. The maximum product is `6635776`; at degree 22 both

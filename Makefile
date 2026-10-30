@@ -28,7 +28,9 @@ verify-frontier:
 	python3 tools/check_weighted_cut_relaxation_limit.py
 	python3 tools/check_weighted_cut_border_stability.py
 	python3 tools/check_quadratic_crossing.py
+	python3 tools/check_word_restriction_barrier.py
 	python3 tools/check_code_sections.py
+	python3 tools/check_nonlinear_layer_probe.py
 	python3 tools/check_growing_number_field_transfer.py
 	python3 tools/check_characteristic_independent_recovery.py
 	python3 tools/check_piece_transfer.py

@@ -36,7 +36,9 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Limit of scalar cut budgets](weighted-cut-relaxation-limit.md): abstract dyadic rank profiles satisfy the current scalar constraints with cost `O(d log d)`; a tensor realization is not supplied.
 - [Formal-degeneration stability](weighted-cut-border-stability.md): saturated quotients extend the weighted budgets and the harmonic 41-label exclusion to Laurent-series pieces with poles.
 - [Quadratic Boolean-code oracle](quadratic-code-oracle.md): polynomial coefficient queries, a rank-six annihilator theorem, and finite raw-profile evidence; no improved contraction is proved.
+- [Arbitrary word restrictions](word-restriction-barrier.md): the full 23-term coefficient span on any injective binary-word labels of subexponential length has one piece with both widths `2*lambda-o(lambda)`, independently of the piece count.
 - [Dual code-section normal forms](code-section-normal-forms.md): exact reduction of arbitrary ambient lengths and complete finite screens through logical width five for coordinate sections and width three for general linear sections.
+- [Nonlinear crossing layers](nonlinear-layer-probe.md): an effective Toffoli-based polynomial family escapes the common linear convolution algebra; its complete thirteen-dimensional width-three coefficient span has the same finite optimum as the elementary pencil.
 - [Directions beyond half](post-half-directions.md): experiments, scope, and unresolved questions.
 - [Network tradeoff](half-top-structure.md): restriction for the current local-enumeration and wire-channel constructor.
 - [Restricted-label counterexample](half-restricted-labels.md): failure of a proposed low-mode dimension reduction.

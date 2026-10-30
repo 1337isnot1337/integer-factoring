@@ -102,9 +102,13 @@ The [quadratic Boolean-code oracle](research/quadratic-code-oracle.md)
 computes crossing coefficients in polynomial time without expanding
 the evaluation words. Its `2^O(sqrt(lambda))` coefficient count and
 effective factor construction meet a broader transfer interface, but
-the required rank contraction is still open. The note also proves a
-quadratic-annihilator theorem and reports the unsuccessful literal
-32- and 64-label rank profiles.
+the [word-restriction theorem](research/word-restriction-barrier.md)
+now excludes a contraction from this fixed 23-term coefficient template.
+For arbitrary distinct binary words of subexponential length, one piece
+in every coefficient-span decomposition has both widths
+`2*lambda-o(lambda)`, regardless of the number of pieces. The obstruction
+also covers coordinate weights and suitable unions of label embeddings.
+The oracle and its quadratic-annihilator theorem remain valid.
 
 The [dual code-section normal forms](research/code-section-normal-forms.md)
 reduce arbitrary ambient code lengths to finite affine-selector data.
