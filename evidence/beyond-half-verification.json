@@ -1,0 +1,79 @@
+{
+  "artifact_sha256": {
+    "evidence/binary-prefix-channel.json": "31e571d1ecdbb313d7f6c097fb8c5d1faf2f50511ef05d78940c50942c9f2cfc",
+    "evidence/boson-truncation.json": "b92383777bd2b9f364a46077c8956ded17c0ffa7cf20daa6334ee1dcc97a8a1c",
+    "evidence/graded-space.json": "7a9182f18910daf599677784b572412ea9a6b3e076d819cb90bbdf2afd4fd84d",
+    "evidence/homogeneous-duals.json": "0731ac46014bea8d59e85f6056be71df4417ac84b8198a36d65441c446cbd90a",
+    "evidence/modular-crossing.json": "4560cd1a68e35dc85d8037163e4b0c319d573530a93030c03addace1d5dacaa1",
+    "evidence/near-ones-channels.json": "596f0109bfb3f6afd380f8b21c6b4738095eb0a37fa1ad3d967dd752cda5eb6c",
+    "evidence/partition-channel-ranks.json": "9c8c82920a9d7da10d6257184693adac21b27712d7fb965578aecd19b26d575c",
+    "evidence/piece-transfer.json": "abd0257534bd8cedd809891fda52df9ffd5e0d1aa75c8c3885c3c0144336ac9f",
+    "evidence/primary-central-gram.json": "5695753f444fde2975941edb372f082e0f967cf0c3309da31f2bbc311a7ac51c",
+    "evidence/rectangular-profile.json": "5b8926c8d2ae8fab96aea2d2eb0477b937090a3394bbf5c6e5df2530f0ab788c",
+    "evidence/sparse-divisor-nonzeroness.json": "170b91e5fd6a405755a3d8c1ee27faac5c61bb67194872a4dd4c068696902cdc",
+    "research/binary-prefix-top-channel.md": "eca20d60e72afb900cc9a539fbf53ed77af9735b1858aa7f07469412b5bb94a7",
+    "research/graded-space-barrier.md": "e77b71d9c9b1e73e803deb27698c57750611e29ce2e7b8a8ad2ccf2251da5da7",
+    "research/half-piece-rank.md": "49ed802a1ec0d77a00bee8b6d194008a6ffe2ce0ddf4f9689a7e25d132313b72",
+    "research/half-recurrence-barrier.md": "2e939c7314d166a28e6ec5617474d9c159f1eac55076f73265a778bfa297edd0",
+    "research/homogeneous-duals.md": "9eec94780c3bf329d30a7aceb32f97487accb21475779a8a4ee623c8718d775a",
+    "research/modular-crossing.md": "ad59fb4e590bfe0b6bdd97b1332f3408ada7784188b92bca2ca627aee7990433",
+    "research/near-ones-labels.md": "03647ae01b972b808815e6ed3539d44f4fe967ddc540c3190ec5d75c4ddd38f4",
+    "research/pieces-to-factoring.md": "dc21ba3687d62fcfa196ff03d79d9edbe2665a2432c8ca6a054d65cb1d31e2c4",
+    "research/primary-central-gram.md": "ea3124404cab355dc19a43749a08993607d2531bad4bfa8972110cf81b1a4e1f",
+    "research/rectangular-grid-frontier.md": "c95fd0b9da368a857d21173725525f1fc72c3985c732bebc48edb3b557c73e7d",
+    "research/scale-one-modular-transfer.md": "6ba72a94117bb19fc40311ef2b6cc7c89a8dfaa0d95bea1e0acfd019cd459af6",
+    "research/sparse-divisor-nonzeroness.md": "75785000cd60eb490da15dbca27c2d83aabff4d1a127a0ad2efcf6059fdb7459",
+    "research/top-channel-rank.md": "4e409b79af086e6873eb29d7476add09f36b31d8f57bc5eca92a1a5d215e35dc",
+    "tools/check_binary_prefix_channel.py": "0cc6bfbae50bd03ff5b49dc856d36e4eb34d9f4b242c49c437adfbefa735cdba",
+    "tools/check_boson_truncation.py": "829abb13bd50033d8799429974d54b959a32c47382a16122d2aacf8e7b2a543b",
+    "tools/check_graded_space.py": "54ff2cf34b6da610e465ff2a5e3e61afbf9493a33f51ad9242d5140969d626c3",
+    "tools/check_homogeneous_duals.py": "40aeef1623b6140a1118570a8b65f54a3e1ba3dd8f9816c2a92fa4c906b3946a",
+    "tools/check_modular_crossing.py": "3422aa9dba53f475551943df76c7a2419c1eefa0b37cc67562a56c4b812cacae",
+    "tools/check_near_ones_channels.py": "2620709823b2e1bac75d4230f103a4f2ef031e9217791d2dfdfd3687155cf6b9",
+    "tools/check_partition_channels.py": "413c99d6d61e3c8ce11238b6a91fc00b00b061600cb8cab14caa3d73b3fd80ab",
+    "tools/check_piece_transfer.py": "441463cc9bf3b77cb1f7d0e1c99c9cc83a62d969633fd63f80d1af530dba55c5",
+    "tools/check_primary_central_gram.py": "744ef40f5aea23b0c1ec153a86bea7cf39c0461c8c2bac66f4204247c0b983bd",
+    "tools/check_rectangular_profile.py": "05065ad87ce4559eedb720f67d6bc3c4df8dd8817be042fe7e53bd0c1a9f2edb",
+    "tools/check_sparse_divisor_nonzeroness.py": "845ab52c5f2ec66256688ef8fccbc7c09db9fcd9f3d9f6b239d4baa2d8f25be7"
+  },
+  "claims": {
+    "binary_prefix_rank": "Highest-factor log2 rank is sqrt(2)*lambda+O(log lambda); complete-piece rank remains open.",
+    "fixed_field_transfer": "An effective scale-one family over one fixed finite field gives a complete factoring machine with alpha=log2(1/rho), including alpha=1 conditionally.",
+    "homogeneous_duals": "Explicit integer duals with controlled coefficient sizes retain rho=1/sqrt(2).",
+    "integer_transfer": "Effective rational-parameter integer crossings imply alpha=log2(1/rho).",
+    "modular_family": "A concrete normalized family meets every fixed rho strictly between 1/sqrt(2) and 1; no smaller rho is proved.",
+    "primitive_central_rank": "On primitive inputs, a row swap gives a positive Gram form; asymptotic fusion-image size remains open.",
+    "sparse_transfer": "Uniform weighted arithmetic circuits of cost A(n) imply factoring in exp(O(log(A(n)+2)+n/log n)) bit time."
+  },
+  "evidence_level": "ordinary mathematical proofs, independent review within this research session, and exact finite computation",
+  "exponent_above_one_half_proved": false,
+  "finite_check_limits": "The JSON certificates establish their finite cases. The all-input theorems are supplied by written proofs. The checkers are not implementations or benchmarks of the asymptotic factoring evaluator.",
+  "formal_sources_modified_from_merged_half_rate_baseline": false,
+  "merged_half_rate_baseline": {
+    "main_merge": "af1f41aa93ee6465901450f6b7b8637ecc32bad4",
+    "observed_jobs": {
+      "exact-certificates": "success",
+      "k6-rate": "success",
+      "lean-lemmas": "success"
+    },
+    "proof_commit": "579a2898dad5953ceffe58416c60eec40e085337",
+    "scope": "the existing baseline; these jobs do not formalize the new ordinary research",
+    "workflow_run": 41004687027
+  },
+  "new_lean_formalization": false,
+  "review_scope": "Independent mathematical reviews were performed by separate agents and the primary researcher within this session. No independent external peer review is claimed.",
+  "source_pins": {
+    "anthropic_eth": "16a5ce41304fcdaea4e0be7c132e1c361dc26da5",
+    "factoring_reference": "c91cc3f4947caca8977e81a5d14244f73b5ae2b1"
+  },
+  "strongest_complete_ordinary_factoring_exponent": "1/2",
+  "validation": {
+    "command": "make verify",
+    "exit_code": 0,
+    "frontier_checker_count": 11,
+    "git_diff_check": "passed",
+    "local_output_sha256": "0c71aa271ee1dcce3437fef64f0f9bbb515ee460379bc184b276845f0f8d7aa6",
+    "relative_markdown_links": "checked after excluding code fences",
+    "unittest_cases": 33
+  }
+}

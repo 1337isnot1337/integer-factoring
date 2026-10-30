@@ -78,6 +78,12 @@ the four images above are a factor block. Their independence alone is
 not a lower bound on the rank after composition with the other factor
 and summation over `i`.
 
+The separate [quantitative span argument](half-restricted-span.md) proves
+an almost full intermediate-dimension bound for the full restricted spaces
+in the proposed growing-parameter regime. It states the additional
+retained-label condition needed for a binary subset and keeps the same
+distinction between a factor block and a composed piece.
+
 The [exact checker](../tools/check_half_restricted_labels.py) constructs
 the input labels and the five weight-four output monomials, evaluates
 every coefficient using the previously audited `afam` and `opcoef`, and

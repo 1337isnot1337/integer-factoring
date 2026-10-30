@@ -1,0 +1,218 @@
+{
+  "binary_label_restrictions": [
+    {
+      "column_rank": 4,
+      "label_bits": 1,
+      "prime": 65521,
+      "row_rank": 4,
+      "weight": 2
+    },
+    {
+      "column_rank": 4,
+      "label_bits": 1,
+      "prime": 1000003,
+      "row_rank": 4,
+      "weight": 2
+    },
+    {
+      "column_rank": 16,
+      "label_bits": 2,
+      "prime": 65521,
+      "row_rank": 16,
+      "weight": 4
+    },
+    {
+      "column_rank": 16,
+      "label_bits": 2,
+      "prime": 1000003,
+      "row_rank": 16,
+      "weight": 4
+    },
+    {
+      "column_rank": 64,
+      "label_bits": 3,
+      "prime": 65521,
+      "row_rank": 64,
+      "weight": 6
+    },
+    {
+      "column_rank": 64,
+      "label_bits": 3,
+      "prime": 1000003,
+      "row_rank": 64,
+      "weight": 6
+    }
+  ],
+  "central_pieces": [
+    {
+      "declared_channels": 4,
+      "matrix_dimension": 1,
+      "modular_ranks": [
+        {
+          "column_rank": 1,
+          "prime": 65521,
+          "row_rank": 1
+        },
+        {
+          "column_rank": 1,
+          "prime": 1000003,
+          "row_rank": 1
+        }
+      ],
+      "partition_count": 1,
+      "splittable_partitions": 1,
+      "top_channel_dimension": 2,
+      "top_channel_rank_mod_1000003": 1,
+      "weight": 1
+    },
+    {
+      "declared_channels": 12,
+      "matrix_dimension": 4,
+      "modular_ranks": [
+        {
+          "column_rank": 4,
+          "prime": 65521,
+          "row_rank": 4
+        },
+        {
+          "column_rank": 4,
+          "prime": 1000003,
+          "row_rank": 4
+        }
+      ],
+      "partition_count": 2,
+      "splittable_partitions": 3,
+      "top_channel_dimension": 5,
+      "top_channel_rank_mod_1000003": 4,
+      "weight": 2
+    },
+    {
+      "declared_channels": 30,
+      "matrix_dimension": 9,
+      "modular_ranks": [
+        {
+          "column_rank": 9,
+          "prime": 65521,
+          "row_rank": 9
+        },
+        {
+          "column_rank": 9,
+          "prime": 1000003,
+          "row_rank": 9
+        }
+      ],
+      "partition_count": 3,
+      "splittable_partitions": 6,
+      "top_channel_dimension": 11,
+      "top_channel_rank_mod_1000003": 9,
+      "weight": 3
+    },
+    {
+      "declared_channels": 67,
+      "matrix_dimension": 25,
+      "modular_ranks": [
+        {
+          "column_rank": 25,
+          "prime": 65521,
+          "row_rank": 25
+        },
+        {
+          "column_rank": 25,
+          "prime": 1000003,
+          "row_rank": 25
+        }
+      ],
+      "partition_count": 5,
+      "splittable_partitions": 14,
+      "top_channel_dimension": 22,
+      "top_channel_rank_mod_1000003": 21,
+      "weight": 4
+    },
+    {
+      "declared_channels": 139,
+      "matrix_dimension": 49,
+      "modular_ranks": [
+        {
+          "column_rank": 49,
+          "prime": 65521,
+          "row_rank": 49
+        },
+        {
+          "column_rank": 49,
+          "prime": 1000003,
+          "row_rank": 49
+        }
+      ],
+      "partition_count": 7,
+      "splittable_partitions": 25,
+      "top_channel_dimension": 42,
+      "top_channel_rank_mod_1000003": 42,
+      "weight": 5
+    },
+    {
+      "declared_channels": 272,
+      "matrix_dimension": 121,
+      "modular_ranks": [
+        {
+          "column_rank": 121,
+          "prime": 65521,
+          "row_rank": 121
+        },
+        {
+          "column_rank": 121,
+          "prime": 1000003,
+          "row_rank": 121
+        }
+      ],
+      "partition_count": 11,
+      "splittable_partitions": 53,
+      "top_channel_dimension": 77,
+      "top_channel_rank_mod_1000003": 77,
+      "weight": 6
+    }
+  ],
+  "crossing_identity_entries": 98,
+  "first_declared_channel_saving": {
+    "channels": 28629,
+    "matrix_dimension": 30976,
+    "weight": 15
+  },
+  "natural_gram_counterexample": {
+    "determinant": -25920,
+    "matrix": [
+      [
+        70,
+        0,
+        0,
+        34
+      ],
+      [
+        0,
+        2,
+        -6,
+        0
+      ],
+      [
+        0,
+        -10,
+        -6,
+        0
+      ],
+      [
+        10,
+        0,
+        0,
+        10
+      ]
+    ],
+    "middle_principal_minor": -72,
+    "weight": 2
+  },
+  "negative_controls": [
+    "omitted alternating sign",
+    "omitted annihilation multiplicity"
+  ],
+  "operator_exchange_entries": 1202,
+  "scope": "finite integer identities and exact finite-field ranks; no asymptotic rank claim",
+  "source_commit": "16a5ce41304fcdaea4e0be7c132e1c361dc26da5"
+}
