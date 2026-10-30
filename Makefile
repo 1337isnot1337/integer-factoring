@@ -6,6 +6,7 @@ verify:
 	python3 tools/check_coefficient_basis.py
 	python3 tools/parameters.py
 	python3 tools/check_k6_sharp_rate.py
+	python3 tools/check_half_rate.py
 
 verify-formal:
 	bash tools/check_formal.sh

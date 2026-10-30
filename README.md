@@ -1,4 +1,4 @@
-# Integer factoring bounds: a verified exponent of 1/30
+# Integer factoring bounds
 
 [![Verify research certificates](https://github.com/1337isnot1337/integer-factoring/actions/workflows/verify.yml/badge.svg)](https://github.com/1337isnot1337/integer-factoring/actions/workflows/verify.yml)
 [![License: Apache 2.0](https://img.shields.io/badge/license-Apache%202.0-59636e)](LICENSE)
@@ -7,6 +7,41 @@ An open research effort on deterministic integer factoring, targeting the
 [Big O Speedrun problem](https://bigospeedrun.com/integer-factoring). For an
 `n`-bit integer `N >= 2`, the task is to output its smallest prime factor. The time
 bound counts finite-alphabet Turing machine steps for every input.
+
+## Ordinary proof: exponent 1/2
+
+The [written composition proof](research/half-rate-factoring.md) gives one
+deterministic machine with
+
+```math
+T(n)\le C\exp\!\left(\frac{Cn}{\sqrt{\log n}}\right).
+```
+
+It combines Claude (Anthropic)'s existing Appendix B clique evaluator with
+Isaac Rudich and Louis-Martin Rousseau's multiplication-network reduction.
+The new connection includes a deterministic written-table constructor, an
+exact value-preserving codec, a computable runtime pad, and all input,
+arithmetic, recursion, and prefix-search costs. It gives score `alpha=1/2`
+under the published rule and the rate of the reference's square-root-logarithm
+conjecture.
+
+**Evidence level: complete ordinary mathematical argument, with source audit
+and finite checks.** The composition has not been formalized in Lean or
+reviewed independently outside this research session. No leaderboard
+acceptance or practical factoring speedup is claimed. The prior source
+theorems supply the evaluator and reduction; this repository does not claim
+to have discovered those constructions.
+
+[Complete proof](research/half-rate-factoring.md) ·
+[Top constructor and codec](research/half-top-constructor.md) ·
+[Evaluator and encoding audit](research/half-evaluator-audit.md) ·
+[Exact arithmetic checks](evidence/half-rate-arithmetic.json)
+
+Run `make verify` for the finite checks, including the new table adapter,
+parameter bounds, computable pad, and prefix driver. These tests do not
+materialize the enormous evaluator or replace the infinite-input proof.
+
+## Lean theorem: exponent 1/30
 
 **The k6 variant has a complete Lean proof of a stronger quantitative bound:**
 
@@ -80,7 +115,7 @@ pinned reference. It rebuilds the modified `Solution` and every new module.
 Before compilation, it verifies all patched source hashes against the audit.
 It then verifies the final theorem's axioms in a fresh Lean invocation.
 
-## Further research without new Lean formalization
+## Sharper ordinary analysis of the k6 machine
 
 The [sharper analysis of the existing k6 machine](research/k6-sharp-rate.md)
 proves the ordinary mathematical bound with exponent
@@ -91,14 +126,10 @@ them by a fixed slack. The new rate argument is handwritten; the Lean endpoint
 remains `1/30`. Run `python3 tools/check_k6_sharp_rate.py` for its finite exact
 arithmetic checks.
 
-Work is also underway on composing the existing Appendix B clique evaluator
-from `anthropics/formal-math` with the factoring reference's top network.
-That route targets exponent `1/2`; it is not a result of this checkpoint.
-The table constructor, codec, explicit runtime pad, and all costs are being
-checked as ordinary mathematics. No new Lean formalization is planned for
-this research phase.
+The separate `1/2` composition above uses a different evaluator. It does not
+change the k6 program or extend its Lean theorem.
 
-## Stronger candidate: grouping and crossing compression
+## Earlier candidate: grouping and crossing compression
 
 The proposed combination of a stronger grouping construction and a 56-channel
 crossing factorization targets
@@ -109,9 +140,8 @@ T(n)=\exp\!\left(O\!\left(\frac{n}{(\log n)^\alpha}\right)\right),
 \quad \rho=\frac{8+\log_2 7}{12}.
 ```
 
-Larger `alpha` is better. The comparison is between asymptotic bounds, not a
-measured speedup. The target remains much weaker than the upstream conjecture
-`alpha = 1/2`.
+Larger `alpha` is better. This earlier route improves on k6 but is weaker
+than the ordinary `1/2` theorem above, which bypasses this proposed evaluator.
 
 **Status of this stronger target: research candidate.** The
 notes describe a uniform counting construction and its table-operation costs.
@@ -132,16 +162,18 @@ The starting point is Isaac Rudich and Louis-Martin Rousseau's
 [SubexponentialDeterministicFactoring](https://github.com/IsaacRudich/SubexponentialDeterministicFactoring),
 pinned to commit `c91cc3f4947caca8977e81a5d14244f73b5ae2b1`.
 Its published Lean theorem establishes one deterministic machine with time
-`2^{o(n)} = N^{o(1)}`. Its separate square-root-logarithm conjecture is unproved.
+`2^{o(n)} = N^{o(1)}`. Its separate square-root-logarithm conjecture is
+unproved in that source. The ordinary composition above supplies that rate.
 
 ## Research results
 
-The repository contains the complete k6 machine theorem, exact finite checks,
-local Lean lemmas, and research toward stronger rates. The table identifies
-the evidence for each result.
+The repository contains a written `1/2` composition theorem, the complete
+k6 Lean theorem, exact finite checks, and earlier research. The table
+identifies the evidence for each result.
 
 | Result | Value | Evidence and scope |
 | --- | --- | --- |
+| Appendix B factoring composition | `alpha = 1/2` | [Complete ordinary proof](research/half-rate-factoring.md), source and interface audit, finite adapter and arithmetic checks; no new Lean formalization |
 | **Complete k6 factoring theorem** | **`alpha = 1/30`** | **Lean verifies one modified machine, all runtime costs, the real-logarithm conversion, and the strict exponent comparison** |
 | Sharper rate for the same k6 machine | `beta_12 = log(12/11)/log12 = 0.0350159540... > 1/29` | [Complete ordinary derivation](research/k6-sharp-rate.md), using the existing machine bridge; new rate not Lean formalized |
 | Explicit analysis of the unchanged baseline | `alpha = log(12/11)/log(16) = 0.0313827205...` | Handwritten derivation from the pinned source's inequalities |
@@ -162,6 +194,16 @@ requires real-number approximation in the algorithm.
 
 ## Proofs and certificates
 
+- [Half-rate factoring theorem](research/half-rate-factoring.md): one uniform
+  machine, the complete written composition, all costs, and the score implication.
+- [Top constructor](research/half-top-constructor.md) and
+  [evaluator audit](research/half-evaluator-audit.md): source interfaces,
+  entry bounds, exact codec, computable pad, and actual encodings.
+- [Half-rate source manifest](evidence/half-rate-source-audit.json): pinned
+  source files inspected for the new composition, with Git and SHA-256 hashes.
+- [Half-rate arithmetic checks](evidence/half-rate-arithmetic.json) and
+  [table-adapter tests](tests/test_half_clique_codec.py): finite checks and
+  negative controls, separate from the infinite-input proof.
 - [Baseline audit](research/baseline-audit.md): exact depth recurrence,
   contraction, all-level cost bound, and machine-cost bridge.
 - [Verified k6 theorem](research/verified-k6.md): complete machine proof,
@@ -242,6 +284,9 @@ The factoring reduction and counting engine are due to the pinned upstream
 development. Its README credits Isaac Rudich and Louis-Martin Rousseau and
 describes its proof/code generation with Claude. Adapted source is identified
 in file headers. This repository uses the upstream-compatible Apache-2.0 license.
+The `1/2` proof additionally uses Claude (Anthropic)'s Appendix B pieces,
+grouping, recursive evaluator, and finite-symbol implementation in
+`anthropics/formal-math`; it credits those existing results explicitly.
 The k6 patch, proofs, and research notes used substantial OpenAI assistant
 support. Lean verification establishes the formal claims. It does not replace
 independent review of their mathematical significance.
