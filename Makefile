@@ -41,6 +41,7 @@ verify-further:
 	python3 tools/check_weighted_weyl_filtration.py
 	python3 tools/check_weighted_weyl_additive.py
 	python3 tools/check_weyl_alternate_algebra.py
+	python3 tools/check_eight_feature_monoid.py
 
 verify-energy-full:
 	python3 tools/check_weighted_energy.py --full
@@ -51,6 +52,7 @@ verify-search-native:
 	python3 tools/check_two_state_run_profile.py
 	python3 tools/check_parity_matrix_crossings.py
 	python3 tools/check_site_weight_crossings.py
+	python3 tools/check_eight_feature_crossings.py
 
 verify-witt-full:
 	python3 tools/witt_artin_hasse.py --h 32 --gram

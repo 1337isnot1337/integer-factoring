@@ -20,6 +20,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 - [Finite-state polynomial crossings](finite-state-pairing-crossings.md): explicit order-dependent identities, exact XOR-circulant rank reduction, and the complete 88,006-model finite screen.
 - [Four-feature matrix-product crossings](four-feature-parity-crossings.md): a larger local tensor space has constant auxiliary dimension and order witnesses at every length; a complete 131,072-model screen and independent full-tensor checks record the finite limits.
+- [Eight-feature parity crossings](eight-feature-parity-crossings.md): exact local bit dependence and delayed transitions enlarge the family; 365,482 screen records and 33 selected profiles are audited, and an all-length multiplicative law explains the exact `4^t` rank sum of one selected branch.
 - [Site-weighted pairing crossings](site-weighted-pairing-crossings.md): bivariate position weights give exact complementary rank profiles; symmetric weight multisets have the sharp leading floor `H_2(3/4)`, while seven asymmetric and comparison profiles through length sixteen retain every exact coefficient rank.
 - [Run-compressed crossing ranks](two-state-run-rank-compression.md): exact local Jordan decomposition, interval-type grouping, and quadratic-pivot rank reduction accelerate longer constructive searches.
 
