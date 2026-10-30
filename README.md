@@ -145,6 +145,13 @@ this is not a factoring lower bound. Replay
 The small-seed proof, exact block sums, direct Kronecker rank oracles, and
 finite complete-type-span optima are checked by
 `python3 tools/check_pairing_small_seeds.py`.
+An [all-field extension](research/all-field-pairing-barrier.md) now
+excludes the full three-pairing type route over every field, including
+odd characteristics and growing seed dimensions. Its universal leading
+floor is `0.707133841396...`, strictly above `1/sqrt(2)`. A five-term,
+four-position polynomial certificate handles the exceptional
+dimension-three/characteristic-three case. This is a restricted
+construction obstruction. Replay `python3 tools/check_all_field_pairing.py`.
 For explicit binary restrictions, an
 [affine-function code analysis](research/affine-code-barrier.md) gives a
 constant-piece, exponentially large-degree family but proves its complete

@@ -6,6 +6,8 @@ The [small-seed strengthening](pairing-small-seeds.md) now closes the three
 dimensions left unresolved by the bound in this note. Together the results
 exclude the full pairing-type route for every fixed seed dimension in
 characteristic two, including `o(t)` separate position classes.
+The [all-field extension](all-field-pairing-barrier.md) now closes the
+full pairing-type route in the other characteristics as well.
 
 Let `F` be any field of characteristic two and fix a local label dimension
 `d>=2`. Define the three matching tensors

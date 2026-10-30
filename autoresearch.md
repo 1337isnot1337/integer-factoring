@@ -6,7 +6,10 @@ revision in [upstream.lock.json](upstream.lock.json), and the
 [half-rate composition](research/half-rate-factoring.md) and
 [verified k6 result](research/verified-k6.md). The complete written composition
 gives exponent `1/2`, using prior source theorems and new table/encoding/cost
-arguments. It is not Lean formalized or externally reviewed. The k6 variant
+arguments. Its composition and finite-alphabet machine are now Lean
+kernel-checked in [HalfTheorem.lean](formal-appendix/HalfTheorem.lean),
+merged in PR #20; independent review remains pending. The new post-half
+research is ordinary mathematics with exact finite checks. The k6 variant
 retains its complete Lean theorem at exponent `1/30`; its sharper ordinary
 analysis reaches `log(12/11)/log12`. The older combined rate in the
 [integration note](research/integration.md) remains a separate candidate.

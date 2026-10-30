@@ -43,6 +43,11 @@ closes those three remaining dimensions, so the complete pairing-type route
 is now excluded for every fixed seed. It also permits `o(t)` separate
 position classes. New local tensors or a proved domain restriction are
 needed to escape this particular obstruction.
+The [all-field extension](all-field-pairing-barrier.md) also closes every
+odd characteristic and characteristic zero, with universal leading floor
+`0.707133841396...>1/sqrt(2)`. It includes a tensor-stable four-position
+certificate for dimension three in characteristic three. Switching fields
+or growing the seed cannot evade the full pairing-type obstruction.
 
 The [affine-code restriction](affine-code-barrier.md) has constant raw
 piece count despite exponential degree, but its full coefficient symmetry

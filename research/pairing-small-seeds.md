@@ -2,6 +2,10 @@
 
 ## Result and scope
 
+The [all-field extension](all-field-pairing-barrier.md) completes the
+three-pairing obstruction in every other characteristic. The stronger
+characteristic-two constants proved here remain unchanged.
+
 This strengthens the [pairing-type barrier](pairing-word-barrier.md).
 For every fixed seed dimension `d>=2`, the full coefficient span of
 
