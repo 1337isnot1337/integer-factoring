@@ -38,10 +38,10 @@ static int rank_cap(const uint16_t rows[9], int cap) {
     return rank;
 }
 
-static int low_product(Vector vector) {
+static int product_at_most_nine(Vector vector) {
     uint16_t rows[9], columns[9];
     for (int i = 0; i < 9; ++i) rows[i] = (vector >> (9*i)) & 511;
-    int row_rank = rank_cap(rows, 5);
+    int row_rank = rank_cap(rows, 9);
     if (!row_rank) return 0;
     for (int x = 0; x < 3; ++x) {
         for (int u = 0; u < 3; ++u) {
@@ -50,12 +50,10 @@ static int low_product(Vector vector) {
                 | (((rows[3*x+2] >> (3*u)) & 7) << 6);
         }
     }
-    /* A row rank >=5 permits only column rank 1; its actual row rank
-     * is at most 9. For row ranks 2,3,4 the first failing column ranks
-     * are 5,4,3. These caps classify product <=9 exactly. */
-    int cap = row_rank >= 5 ? 2 : row_rank == 4 ? 3
-            : row_rank == 3 ? 4 : row_rank == 2 ? 5 : 9;
-    return row_rank * rank_cap(columns, cap) <= 9;
+    int cap = 9 / row_rank + 1;
+    if (cap > 9) cap = 9;
+    int cost = row_rank * rank_cap(columns, cap);
+    return cost <= 9 ? cost : 0;
 }
 
 int main(int argc, char **argv) {
@@ -76,46 +74,47 @@ int main(int argc, char **argv) {
     uint64_t start = strtoull(argv[2], NULL, 0);
     uint64_t end = strtoull(argv[3], NULL, 0);
     if (start >= end || end > (UINT64_C(1) << dimension)) return 2;
-    Vector pivots[81] = {0};
-    int accepted_rank = 0;
+    Vector pivots[10][81] = {{0}};
+    int accepted_rank[10] = {0};
     Vector vector = 0;
     uint64_t gray = start ^ (start >> 1);
     for (int i = 0; i < dimension; ++i) {
         if ((gray >> i) & 1) vector ^= generators[i];
     }
-    uint64_t accepted = 0;
+    uint64_t accepted[10] = {0};
     clock_t begun = clock();
     printf("{\"dimension\":%d,\"start\":%" PRIu64 ",\"end\":%" PRIu64 "}\n",
            dimension, start, end);
     for (uint64_t index = start; index < end; ++index) {
         if (index != start) vector ^= generators[__builtin_ctzll(index)];
-        if (low_product(vector)) {
-            ++accepted;
+        int cost = product_at_most_nine(vector);
+        if (cost) for (int cutoff = cost; cutoff <= 9; ++cutoff) {
+            ++accepted[cutoff];
             Vector reduced = vector;
             while (reduced) {
                 int pivot = high_bit(reduced);
-                if (pivots[pivot]) {
-                    reduced ^= pivots[pivot];
-                } else {
-                    pivots[pivot] = reduced;
-                    ++accepted_rank;
-                    printf("{\"new_basis\":\"%" PRIx64 "%016" PRIx64
-                           "\",\"index\":%" PRIu64 "}\n",
+                if (pivots[cutoff][pivot]) reduced ^= pivots[cutoff][pivot];
+                else {
+                    pivots[cutoff][pivot] = reduced;
+                    ++accepted_rank[cutoff];
+                    printf("{\"cutoff\":%d,\"new_basis\":\"%" PRIx64 "%016" PRIx64
+                           "\",\"index\":%" PRIu64 "}\n", cutoff,
                            (uint64_t)(vector >> 64), (uint64_t)vector, index);
                     break;
                 }
             }
         }
         if (((index+1) & ((UINT64_C(1) << 28)-1)) == 0) {
-            printf("{\"checked_through\":%" PRIu64 ",\"low_product_count\":%" PRIu64
-                   ",\"span_rank\":%d,\"cpu_seconds\":%.2f}\n",
-                   index+1, accepted, accepted_rank,
-                   (double)(clock()-begun)/CLOCKS_PER_SEC);
+            printf("{\"checked_through\":%" PRIu64 ",\"span_ranks\":[",index+1);
+            for(int q=1;q<=9;q++)printf("%s%d",q>1?",":"",accepted_rank[q]);
+            printf("],\"cpu_seconds\":%.2f}\n",(double)(clock()-begun)/CLOCKS_PER_SEC);
             fflush(stdout);
         }
     }
-    printf("{\"complete\":true,\"checked\":%" PRIu64
-           ",\"low_product_count\":%" PRIu64 ",\"span_rank\":%d}\n",
-           end-start, accepted, accepted_rank);
+    printf("{\"complete\":true,\"checked\":%" PRIu64 ",\"counts\":[",end-start);
+    for(int q=1;q<=9;q++)printf("%s%" PRIu64,q>1?",":"",accepted[q]);
+    printf("],\"span_ranks\":[");
+    for(int q=1;q<=9;q++)printf("%s%d",q>1?",":"",accepted_rank[q]);
+    printf("]}\n");
     return 0;
 }

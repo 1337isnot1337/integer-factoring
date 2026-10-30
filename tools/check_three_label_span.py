@@ -3,7 +3,7 @@
 
 The default verifies the native rank classifier and Gray-code interval logic
 against independent Python elimination. --verify-log audits a completed full
-run; it does not independently repeat all 2^34 classifications.
+run; it does not independently repeat all 2^34 classifications. Every cutoff from one through nine is tracked.
 """
 
 import argparse
@@ -54,23 +54,27 @@ def verify_interval(binary, path, generators, start, end):
     assert records[0] == {'dimension': len(generators), 'start': start, 'end': end}
     summary = records[-1]
     assert summary['complete'] and summary['checked'] == end-start
-    count, basis = 0, {}
+    counts = [0]*9
+    bases = [{} for _ in range(9)]
     for index in range(start, end):
         gray = index ^ (index >> 1)
         vector = 0
         for i, generator in enumerate(generators):
             if (gray >> i) & 1:
                 vector ^= generator
-        if vector and independent_cost(vector) <= 9:
-            count += 1
-            insert(basis, vector, 0)
-    assert summary['low_product_count'] == count
-    assert summary['span_rank'] == len(basis)
+        cost = independent_cost(vector)
+        if vector and cost <= 9:
+            for cutoff in range(cost, 10):
+                counts[cutoff-1] += 1
+                insert(bases[cutoff-1], vector, 0)
+    assert summary['counts'] == counts
+    assert summary['span_ranks'] == [len(basis) for basis in bases]
     for record in records:
         if 'new_basis' in record:
             vector = int(record['new_basis'], 16)
-            assert vector and independent_cost(vector) <= 9
-            assert represent(basis, vector) is not None
+            cutoff = record['cutoff']
+            assert vector and independent_cost(vector) <= cutoff
+            assert represent(bases[cutoff-1], vector) is not None
     return end-start
 
 
@@ -96,9 +100,10 @@ def quick(binary, temporary):
     for vector in cases:
         write_basis(path, [vector])
         records = run_native(binary, path, 0, 2)
-        expected = int(vector != 0 and independent_cost(vector) <= 9)
-        assert records[-1]['low_product_count'] == expected
-        accepts += expected
+        cost = independent_cost(vector)
+        expected = [int(vector != 0 and cost <= cutoff) for cutoff in range(1, 10)]
+        assert records[-1]['counts'] == expected
+        accepts += expected[-1]
     assert 0 < accepts < len(cases)
     generators = full_basis()[:12]
     write_basis(path, generators)
@@ -117,24 +122,25 @@ def verify_log(path):
     assert records[0] == {'dimension': 34, 'start': 0, 'end': 1 << 34}
     summary = records[-1]
     assert summary['complete'] and summary['checked'] == 1 << 34
-    low_basis = {}
+    low_bases = [{} for _ in range(9)]
     for record in records:
         if 'new_basis' not in record:
             continue
         vector = int(record['new_basis'], 16)
+        cutoff = record['cutoff']
         assert represent(source_basis, vector) is not None
-        assert vector and independent_cost(vector) <= 9
+        assert vector and independent_cost(vector) <= cutoff
         gray = record['index'] ^ (record['index'] >> 1)
         expected = 0
         for i, generator in enumerate(generators):
             if (gray >> i) & 1:
                 expected ^= generator
         assert vector == expected
-        assert insert(low_basis, vector, 0)
-    assert len(low_basis) == summary['span_rank']
+        assert insert(low_bases[cutoff-1], vector, 0)
+    assert [len(basis) for basis in low_bases] == summary['span_ranks']
     summary = dict(summary)
-    summary['crossing_in_low_product_span'] = represent(
-        low_basis, encode(crossing(3), 3)) is not None
+    summary['crossing_in_cutoff_span'] = [represent(
+        basis, encode(crossing(3), 3)) is not None for basis in low_bases]
     return summary
 
 
