@@ -69,6 +69,7 @@ verify-native-crossings:
 	python3 tools/check_symplectic_mixed_grade_codes.py --native $(CURDIR)/build/native/pfaffian-span-screen --field4 --export-dir build/native/mixed-grade --output build/native/mixed-grade-audit.json
 
 verify-post-half:
+	python3 tools/check_common_character_compressions.py --output /tmp/integer-factoring-common-compressions.json
 	python3 tools/check_half_piece_ranks.py --full
 	python3 tools/check_half_projection.py
 	python3 tools/check_half_restricted_labels.py
