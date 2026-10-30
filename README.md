@@ -248,6 +248,17 @@ piece entropy and width error `O(log^2 lambda)` without an energy overshoot.
 This supplies another exact half-rate family and makes a rank improvement
 on prime-power blocks alone sufficient for an improved exponent.
 
+A stronger [prime-power Gram identity](research/prime-power-gram-involution.md)
+shows that the full Schur pairing is its own inverse modulo the prime.
+Streamed character and mode-coefficient algorithms compute its factors in
+`2^O(lambda)` time and polynomial space. This removes the large matrix
+inverse from the homogeneous construction.
+The [fusion Gram reduction](research/schur-fusion-gram.md) identifies both
+central ranks and the exact image question that controls them.
+The [dual-gauge classification](research/dual-gauge-filters.md) describes
+all bounded-weight dual freedom; higher-weight mode filters give explicit
+interval sums of crossing pieces. These results retain the half exponent.
+
 The [homogeneous-dual construction](research/homogeneous-duals.md) gives a
 new effective crossing family. An explicit polynomial in two sparse
 derivations replaces a large matrix inverse. The proof bounds coefficient

@@ -315,6 +315,11 @@ Schur basis, and `omega` is an invertible permutation. Equations
 (14)--(16) prove that `B_h` is invertible on the **full** space
 `Lambda_(F_p,h)`, of dimension `p(h)`.
 
+The later [integral square identity](prime-power-gram-involution.md)
+strengthens this conclusion to `B_h^2=I` modulo `p`, and supplies
+polynomial-space factor queries. The generic construction below also
+remains valid.
+
 Compute the inverse of this finite matrix over `F_p`. Its rows give
 homogeneous elements `a_mu`, with `b_nu=s_nu`, satisfying (9).
 Rows of the full inverse remain dual to any selected subset of Schur
