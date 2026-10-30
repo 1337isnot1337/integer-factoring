@@ -49,6 +49,7 @@ verify-constructions:
 	python3 tools/check_ward_fan_family.py --output /tmp/integer-factoring-ward-fan-family.json
 	python3 tools/check_ward_pfaffian_queries.py --output /tmp/integer-factoring-ward-pfaffian-queries.json
 	python3 tools/check_ward_fan_entry_queries.py --output /tmp/integer-factoring-ward-fan-entry-queries.json
+	python3 tools/check_ward_fan_leading_block.py --output /tmp/integer-factoring-ward-fan-leading-block.json
 	python3 tools/check_ward_operator_types.py --output /tmp/integer-factoring-ward-operator-types-check.json
 	python3 tools/check_overlapping_symplectic_profiles.py
 	python3 tools/check_cubic_radical_output_maps.py
