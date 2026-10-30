@@ -46,6 +46,11 @@ for all crossing constructions. It identifies a specific algebraic
 question governing the central piece of this particular full-label
 family.
 
+The later [regular fusion theorem](regular-fusion-rank.md) resolves
+the analogous image question in the smaller distinct-odd monomial
+quotient. It proves asymptotically full fusion rank there. The full
+Schur-space problem stated above remains separate.
+
 The mode definitions and crossing identity are from
 [Appendix B, pinned revision `16a5ce4`](https://github.com/anthropics/formal-math/blob/16a5ce41304fcdaea4e0be7c132e1c361dc26da5/eth/proof/statements/AppHalfPiecesStatement.lean).
 The integral lattice, divided translations, and prime-power duality

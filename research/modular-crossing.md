@@ -416,6 +416,13 @@ needed for a particular binary label width. Section 5's width statement
 belongs to the general normalized family; it is not a claim about this
 sparse choice of energies.
 
+For this full regular homogeneous domain, the later
+[regular fusion theorem](regular-fusion-rank.md) proves that the central
+piece actually has rank `(1-o(1))q_2(2h)` in both cuts along powers of
+two. Its width coefficient is therefore exactly `1/sqrt(2)` to leading
+order. That lower bound does not automatically survive an arbitrary
+prefix restriction of the labels.
+
 ## 7. Why the one-bit rank saving does not tensor into a better rate
 
 Over `F_2`, the one-bit crossing has an elementary two-piece identity.

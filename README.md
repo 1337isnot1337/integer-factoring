@@ -298,6 +298,14 @@ Streamed character and mode-coefficient algorithms compute its factors in
 inverse from the homogeneous construction.
 The [fusion Gram reduction](research/schur-fusion-gram.md) identifies both
 central ranks and the exact image question that controls them.
+For the smaller regular monomial quotient, the
+[regular fusion theorem](research/regular-fusion-rank.md) now resolves
+that question asymptotically on the full homogeneous label domain.
+Almost every distinct-odd partition splits into two equal-weight subsets.
+A length filtration then proves that the fusion image occupies almost
+the whole intermediate space. Its central crossing rank forces exactly
+the half-rate exponent. The proof does not cover further label restrictions
+or settle the corresponding full Schur-space question.
 The [dual-gauge classification](research/dual-gauge-filters.md) describes
 all bounded-weight dual freedom; higher-weight mode filters give explicit
 interval sums of crossing pieces. These results retain the half exponent.
