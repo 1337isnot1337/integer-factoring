@@ -46,6 +46,8 @@ make verify-post-half     # Larger optional rank tests
 make verify-docs          # Local Markdown-link check
 make verify-schur-fermion # Complete Schur entry formulas and exact comparisons
 make verify-cancellation-modules # Exact module states and word-rate certificates
+make verify-cancellation-crossing # Strict certificate gain for a complete crossing
+make verify-block-smith # Exact profiles for ordered crossing blocks
 make verify-cubic-full-images # Full cubic coefficient spaces and reduced ranks
 ```
 
@@ -87,7 +89,15 @@ the available construction tools; no stronger rank bound is claimed.
 retain cancellation between auxiliary paths. Their bounds improve monotonically
 with precision, dominate the corresponding capped entry-order bounds, and
 converge to the exact full-matrix word rate when both boundaries are free.
-The checked crossing controls do not yet meet the strict improvement threshold.
+An [explicit coupled crossing](research/cancellation-module-crossing-example.md)
+strictly improves its corresponding capped min-plus certificate, from at least
+`425/27` to `1625/108`. The same local factors and precision caps are used.
+The checked controls do not yet meet the strict improvement threshold.
+
+[Fixed block Smith profiles](research/block-smith-crossings.md) form a
+submultiplicative hierarchy. A three-position ordered-pairing block improves
+its normalized certificate from `16` to about `15.7138`; this remains weaker
+than the elementary scalar control and does not change the factoring bound.
 
 The [varying-image cubic construction](research/cubic-full-image-span.md)
 has an exact 786-dimensional rank-one-map coefficient space, with column ranks
