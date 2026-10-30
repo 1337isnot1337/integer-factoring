@@ -7,6 +7,7 @@ import unittest
 
 from tools.check_grid_level import make_channels, network_contraction, original_contraction, signed_tables
 from tools.coarsened_network import Edge, Network, clique_value, network_value
+from tools.grouping import WeightedGraph, verify_grouping
 
 
 def signed_network():
@@ -94,6 +95,21 @@ class CoarsenedNetworkTests(unittest.TestCase):
                      lambda: network_value(network, 1)):
             with self.assertRaises(ValueError):
                 call()
+
+    def test_verified_grouping_and_derived_common_width(self):
+        network = signed_network()
+        graph = WeightedGraph(len(network.states),
+                              tuple((e.first, e.second, e.bits) for e in network.edges))
+        grouping, groups, discrepancy = (0, 1, 1, 0), 2, 2
+        cert = verify_grouping(graph, groups, discrepancy, grouping)
+        self.assertTrue(cert.valid)
+        self.assertFalse(cert.sufficient_threshold_met)
+        width = ((discrepancy * graph.ordered_total + graph.vertex_count * graph.max_degree)
+                 // (discrepancy * groups ** 2))
+        self.assertEqual(width, 4)
+        self.assertEqual(cert.pair_weights, ((0, 1, width),))
+        self.assertEqual(clique_value(network, grouping, groups, width), -720)
+        self.assertEqual(clique_value(network, grouping, groups, width, 9), -720 % 9)
 
 
 if __name__ == "__main__":

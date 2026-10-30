@@ -24,6 +24,10 @@ verify that implementation.
   and 15; an insufficient common width is rejected.
   Its value is `-720`; reversing one original edge's factors changes it to
   `1440`, so this fixture can detect an orientation mistake.
+  A second grouping passes the repository's independent grouping-certificate
+  checker, and its crossing width equals the common width 4 computed from
+  `floor((D U + g P)/(D K^2))`; the resulting clique again evaluates to
+  `-720`.
 * Each signed width-one row-network piece from the existing 2-by-2 grid
   certificate, with both split and merged groups. It compares the row
   contraction, the original network value, and the grouped clique value,
@@ -31,9 +35,10 @@ verify that implementation.
   `-1084 + 700 = -384`, eight times the original clique contraction `-48`,
   as required by the multiplier.
 
-The tested groupings exercise value preservation independently of whether
-they satisfy the grouping theorem's width condition. The toy parameters do not
-meet the theorem's sufficient size hypothesis. These tests do not establish
+The first set of tested groupings exercises value preservation independently
+of the grouping theorem's width condition; the separately verified grouping
+satisfies that condition. The toy parameters do not meet the theorem's
+sufficient size hypothesis. These tests do not establish
 the general grouping theorem, a multi-level evaluator, the modular positivity
 test, or any asymptotic or machine-level factoring claim.
 
