@@ -16,8 +16,10 @@ Let `U_h` send a basis pair `(xi,eta)` of partitions of `h` to
 The domain here contains **all** partitions of `h`, at both input positions.
 This is the full-domain `i=2h` row channel map, up to nonzero row signs.
 The source algorithm instead restricts each label to its first `2^lambda`
-partitions at the selected weight. The proof below does not establish
-that its rank lower bound survives that restriction.
+partitions at the selected weight. The separate
+[binary-prefix extension](binary-prefix-top-channel.md) proves that the
+same leading rank bound survives this restriction. With the ordinary
+Hardy--Ramanujan asymptotic, its quantitative error is `O(log lambda)`.
 
 For the full domain, the identification follows directly from the formula.
 Indeed, `binom(w+h,2h)` vanishes for `w<h`.
@@ -112,6 +114,10 @@ This note leaves that argument open.
 The declared-count obstruction in the existing evaluator audit is a
 different statement. It concerns the source's chosen widths, without
 asserting that those widths equal the actual matrix ranks.
+
+The binary-prefix extension also bounds the rank of the actual row
+factor map. That stronger domain statement still leaves the product-rank
+problem open.
 
 ## Reproduction and attribution
 

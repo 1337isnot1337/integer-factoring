@@ -51,7 +51,8 @@ ranks. The results below further specify the mathematical frontier.
 The [network tradeoff](research/half-top-structure.md) rules out improving
 the explicit constructor through regrouping and separate wire compression
 alone. The [restricted-label counterexample](research/half-restricted-labels.md)
-shows why another proposed dimension reduction fails.
+and [quantitative span theorem](research/half-restricted-span.md) show why
+another proposed dimension reduction fails on the full restricted spaces.
 
 The [general transfer theorem](research/pieces-to-factoring.md) proves that
 an effective crossing family with rational parameter `rho` gives factoring
@@ -78,6 +79,10 @@ model. An analytic tail bound and 3,844 exact interval cases support it.
 
 The [highest-channel rank theorem](research/top-channel-rank.md) proves a
 sharp asymptotic rank for one factor on the full partition domain.
+Its [binary-label extension](research/binary-prefix-top-channel.md) proves
+`log2 rank(U_lambda)=sqrt(2) lambda+O(log lambda)` on the actual label set.
+Consequently, separate lossless compression of the existing factor vectors
+cannot improve their leading width sum. Joint refactorization remains open.
 An [independent finite checker](research/half-piece-rank.md) also checks
 the two operator orders, crossing sums, and small binary-label restrictions.
 The theorem does not settle the rank of the complete central piece.
@@ -269,6 +274,13 @@ requires real-number approximation in the algorithm.
 - [Effective homogeneous duals](research/homogeneous-duals.md): an explicit
   integer inverse polynomial, controlled coefficient sizes, and a complete
   alternative crossing family with the existing `1/sqrt(2)` parameter.
+- [Quantitative restricted-label spans](research/half-restricted-span.md):
+  an almost full intermediate-dimension bound, with exact constants and
+  explicit conditions on any selected binary subset. It does not bound the
+  ranks of the final composed pieces.
+- [Actual binary-label channel rank](research/binary-prefix-top-channel.md):
+  a sharp leading rank with logarithmic error, its lossless-compression
+  consequence, and [finite exact checks](evidence/binary-prefix-channel.json).
 - [Baseline audit](research/baseline-audit.md): exact depth recurrence,
   contraction, all-level cost bound, and machine-cost bridge.
 - [Verified k6 theorem](research/verified-k6.md): complete machine proof,

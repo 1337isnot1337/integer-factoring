@@ -1,0 +1,53 @@
+{
+  "binary_channel_cases": [
+    {
+      "binary_labels": 2,
+      "distinct_unions": 3,
+      "label_bits": 1,
+      "rank_mod_1000003": 4,
+      "rank_mod_65521": 4,
+      "top_channel_dimension": 5,
+      "weight": 2
+    },
+    {
+      "binary_labels": 4,
+      "distinct_unions": 9,
+      "label_bits": 2,
+      "rank_mod_1000003": 16,
+      "rank_mod_65521": 16,
+      "top_channel_dimension": 22,
+      "weight": 4
+    },
+    {
+      "binary_labels": 8,
+      "distinct_unions": 27,
+      "label_bits": 3,
+      "rank_mod_1000003": 64,
+      "rank_mod_65521": 64,
+      "top_channel_dimension": 77,
+      "weight": 6
+    },
+    {
+      "binary_labels": 16,
+      "distinct_unions": 78,
+      "label_bits": 4,
+      "rank_mod_1000003": 231,
+      "rank_mod_65521": 231,
+      "top_channel_dimension": 231,
+      "weight": 8
+    }
+  ],
+  "bounded_prefix_cases": 12,
+  "largest_part_class_cases": 189,
+  "negative_controls": [
+    "lexicographic suffix instead of prefix",
+    "omitted reserved ones"
+  ],
+  "no_ones_injection_inputs": 384,
+  "prefix_omission_bound_cases": 102,
+  "replacement_fiber_parameter_cases": 171,
+  "replacement_map_inputs": 24164,
+  "reserved_one_splits": 3496,
+  "scope": "finite combinatorial maps and actual binary-prefix channel ranks; no complete-piece rank claim",
+  "triangular_coefficient_cases": 15520
+}

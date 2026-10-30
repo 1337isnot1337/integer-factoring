@@ -99,6 +99,9 @@ The separate [top-channel proof](top-channel-rank.md) establishes
 `log2 rank(U_h)=kappa sqrt(2h)+o(sqrt h)` for the highest intermediate
 channel map. Its small rank checks use this same checker.
 That theorem concerns one factor, rather than the complete partition piece.
+The [binary-prefix extension](binary-prefix-top-channel.md) proves the
+corresponding rank bound on the source's actual binary labels.
+Neither theorem removes the possible cancellations in the full piece.
 
 ## A failed positive-Gram shortcut
 
