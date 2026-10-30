@@ -180,6 +180,10 @@ N_d\le(\rho_0+1/G_d+1/D_d)N_{d+1}+3G_d^4.
 
 Every arithmetic step in (8) is an integer addition, multiplication, or
 division with remainder. The rounding directions in (8) and (9) agree.
+These width and contraction inequalities are now checked in
+[`formal/CommonWidth.lean`](../formal/CommonWidth.lean), conditional on the
+network and grouping bounds above. An executable integer width schedule
+and its exact scope are described in [common-width.md](common-width.md).
 
 ## 4. Complete algorithm skeleton
 

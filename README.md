@@ -90,11 +90,15 @@ requires real-number approximation in the algorithm.
   formalization obligations.
 - [Finite grid step](research/grid-level-validation.md): actual row and column
   contractions, signed tables, composite moduli, and the required `8^t` multiplier.
+- [Common widths](research/common-width.md): Lean-checked padding and one-level
+  volume arithmetic, with an executable integer width schedule.
 - [Coefficient-basis obstruction](research/coefficient-basis.md): an exact minimax
   result ruling out further gains from linear recombinations in the same coefficient
   span, with an exact small-instance search.
 - [GroupingThreshold.lean](formal/GroupingThreshold.lean) and
   [CrossingComplement.lean](formal/CrossingComplement.lean): checked finite lemmas.
+- [CommonWidth.lean](formal/CommonWidth.lean): checked common padding and
+  one-level contraction arithmetic.
 - [ExplicitChain.lean](formal/ExplicitChain.lean): a checked bound on every
   chain exponent and a complete time bound for the unchanged reference machine.
   This formal envelope retains the source's `23/24` contraction; the sharper

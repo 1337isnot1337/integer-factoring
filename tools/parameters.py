@@ -56,6 +56,58 @@ def admissible_depth(input_bits: int) -> int:
         d, k = d + 1, next_k
 
 
+def _natural(name: str, value: int, minimum: int = 0) -> int:
+    if not isinstance(value, int) or isinstance(value, bool) or value < minimum:
+        raise ValueError(f"{name} must be an integer at least {minimum}")
+    return value
+
+
+@dataclass(frozen=True)
+class WidthStep:
+    level: Level
+    input_width: int
+    ordered_total_bound: int
+    output_width: int
+
+    @property
+    def input_volume(self) -> int:
+        return self.level.grid_side ** 4 * self.input_width
+
+    @property
+    def output_volume(self) -> int:
+        return self.level.k ** 2 * self.output_width
+
+
+def width_step(level: Level, width: int) -> WidthStep:
+    """One branch-independent padding step, using only integer arithmetic.
+
+    The input clique has G^2 vertices; the output has K vertices. This
+    computes equation (8), without constructing tables or a grouping.
+    """
+    _natural("width", width)
+    k = _natural("K", level.k, 1)
+    d = _natural("D", level.slack_denominator, 1)
+    g = _natural("G", level.grid_side, 1)
+    total = 281 * g ** 4 * width // 312 + g ** 3 * width + 3 * g ** 4
+    return WidthStep(level, width, total, (d * total + g ** 4 * width) // (d * k ** 2))
+
+
+def width_schedule(levels: list[Level], top_width: int) -> list[WidthStep]:
+    """Propagate common widths from the top level down to the base clique.
+
+    ``levels`` is in the bottom-up order returned by ``schedule``; the
+    returned steps are in evaluation order, from top to bottom.
+    """
+    _natural("top_width", top_width)
+    steps = []
+    width = top_width
+    for level in reversed(levels):
+        step = width_step(level, width)
+        steps.append(step)
+        width = step.output_width
+    return steps
+
+
 def summary(level_count: int = 5) -> dict:
     rho = (8 + log2(7)) / 12
     return {
