@@ -41,9 +41,15 @@ Run `make verify` for the finite checks, including the new table adapter,
 parameter bounds, computable pad, and prefix driver. These tests do not
 materialize the enormous evaluator or replace the infinite-input proof.
 
+The [work beyond `1/2`](research/post-half-directions.md) records the
+directions tested next. It proves restrictions for the existing grid and
+operator interfaces, gives an exact counterexample to projecting away high
+modes, and checks finite matrix ranks. It establishes no exponent above
+`1/2` and no general factoring lower bound.
+
 ## Lean theorem: exponent 1/30
 
-**The k6 variant has a complete Lean proof of a stronger quantitative bound:**
+**The k6 variant has a complete Lean proof of the `1/30` bound:**
 
 ```math
 \exists M\;\exists C>0\;\forall n\ge2,\qquad
@@ -143,7 +149,7 @@ T(n)=\exp\!\left(O\!\left(\frac{n}{(\log n)^\alpha}\right)\right),
 Larger `alpha` is better. This earlier route improves on k6 but is weaker
 than the ordinary `1/2` theorem above, which bypasses this proposed evaluator.
 
-**Status of this stronger target: research candidate.** The
+**Status of this earlier target: research candidate.** The
 notes describe a uniform counting construction and its table-operation costs.
 The generalized evaluator and complete Lean proof of this stronger factoring
 machine remain open. Exact finite certificates and
@@ -204,6 +210,9 @@ requires real-number approximation in the algorithm.
 - [Half-rate arithmetic checks](evidence/half-rate-arithmetic.json) and
   [table-adapter tests](tests/test_half_clique_codec.py): finite checks and
   negative controls, separate from the infinite-input proof.
+- [Directions beyond the half rate](research/post-half-directions.md):
+  scoped interface restrictions, [finite rank evidence](evidence/half-piece-ranks.json),
+  and an [exact low-mode projection counterexample](evidence/half-projection-counterexample.json).
 - [Baseline audit](research/baseline-audit.md): exact depth recurrence,
   contraction, all-level cost bound, and machine-cost bridge.
 - [Verified k6 theorem](research/verified-k6.md): complete machine proof,
@@ -246,6 +255,12 @@ make verify
 ```
 
 Without Make, run the commands in the `verify` target of the [Makefile](Makefile).
+
+The larger, optional rank suite is `make verify-post-half`. It checks 13
+finite cases over two primes, including the source's first three binary
+label domains. NumPy accelerates this suite when installed; the standard
+library suffices. These rank checks test attempted extensions and do not
+prove the asymptotic factoring result.
 
 With Lean 4.35.0 and Lake on the executable path, run:
 
