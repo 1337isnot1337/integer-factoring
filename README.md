@@ -68,7 +68,7 @@ of an improved factoring machine.
 | Explicit time bound for the reference machine | `C * 2^(C * (explicitZu(n) + 1))` | Lean-checked bound for one finite-alphabet factoring machine; logarithmic-power conversion remains handwritten |
 | Grouping with independent accuracy | `g = O(D^2 K^2 log K)` | Matching decomposition, Holder's inequality, and an explicit deterministic search |
 | Formally checked grouping improvement | `g > K^2 + 4D^2K^4`; original accuracy works at `g = 5K^6` | Lean kernel checked, including network value preservation |
-| Smaller crossing factorization | 56 integer channels instead of a trivial 64-channel factor | Explicit integer factors and exhaustive finite verification |
+| Smaller crossing factorization | 56 integer channels instead of a trivial 64-channel factor | Lean-checked integer block factorization with an explicit six-bit interface and eight zero labels |
 | Grouping-only rate target | `alpha = log(12/11)/log(4) = 0.0627654410...` | New parameter schedule and runtime analysis; modified machine not Lean verified |
 | Combined rate target | `alpha = log(1/rho)/log(4) = 0.0755104681...`, `rho = (8+log_2(7))/12` | Combined mathematical construction; full formal integration remains open |
 
@@ -100,7 +100,8 @@ requires real-number approximation in the algorithm.
   result ruling out further gains from linear recombinations in the same coefficient
   span, with an exact small-instance search.
 - [GroupingThreshold.lean](formal/GroupingThreshold.lean) and
-  [CrossingComplement.lean](formal/CrossingComplement.lean): checked finite lemmas.
+  [CrossingComplement.lean](formal/CrossingComplement.lean): checked grouping
+  lemmas and the explicit complement block factorization.
 - [ExplicitChain.lean](formal/ExplicitChain.lean): a checked bound on every
   chain exponent and a complete time bound for the unchanged reference machine.
   This formal envelope retains the source's `23/24` contraction; the sharper

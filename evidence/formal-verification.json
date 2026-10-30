@@ -17,9 +17,9 @@
     },
     {
       "path": "formal/CrossingComplement.lean",
-      "sha256": "da9cf40bdae86507b343fc10e28e6aac9c5a2adb39f830e0f7e27b26526130e0",
+      "sha256": "18930e65785da05db21ba23a9861e96c3be227cee1b339959b49fd1b72deb43e",
       "result": "passed",
-      "axiom_reports": 3,
+      "axiom_reports": 13,
       "log": "evidence/lean-crossing.log"
     },
     {
@@ -81,30 +81,6 @@
     },
     {
       "declaration": "Factoring.Improvements.network_grouping_of_threshold",
-      "axioms": [
-        "Classical.choice",
-        "Quot.sound",
-        "propext"
-      ]
-    },
-    {
-      "declaration": "Factoring.Improvements.signed_complement_factorization",
-      "axioms": [
-        "Classical.choice",
-        "Quot.sound",
-        "propext"
-      ]
-    },
-    {
-      "declaration": "Factoring.Improvements.crossing_complement_identity",
-      "axioms": [
-        "Classical.choice",
-        "Quot.sound",
-        "propext"
-      ]
-    },
-    {
-      "declaration": "Factoring.Improvements.seven_pow_26_lt_two_pow_73",
       "axioms": [
         "Classical.choice",
         "Quot.sound",
@@ -177,6 +153,108 @@
     },
     {
       "declaration": "Factoring.Improvements.factoring_explicit_exponential",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.Improvements.signed_complement_factorization",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.Improvements.crossing_complement_identity",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.Improvements.seven_pow_26_lt_two_pow_73",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.Improvements.blockOfFin_bijective",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.Improvements.blockOfFin_zero",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.Improvements.sign_zero_left",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.Improvements.bxor_solve",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.Improvements.class_factorization",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.Improvements.complement_56_factorization",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.Improvements.blockCode_blockOfFin",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.Improvements.blockOfFin_blockCode",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.Improvements.eval_complementFac",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.Improvements.eval_complementFac_linear",
       "axioms": [
         "Classical.choice",
         "Quot.sound",

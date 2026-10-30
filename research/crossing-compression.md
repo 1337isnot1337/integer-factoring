@@ -56,6 +56,13 @@ right factor and sum over all eight `k`. This proves the claimed
 56-channel factorization of `S` over the integers, and therefore over every
 commutative ring.
 
+`formal/CrossingComplement.lean` checks the full identity in the upstream
+three-bit definitions. Its computable `complementFac` uses six channel bits:
+three for the XOR class and three for a padded seven-way index. One index
+per class is zero on both sides, leaving 56 potentially active labels. Lean
+checks its value is `8E-R=3R+4C`. This local factorization does not implement
+the multi-block compressed coefficient decoder or the factoring evaluator.
+
 ## Compressing every coefficient
 
 Let `t=ceil(lambda/3)` and let `A_i` be upstream's coefficient of `T^i` in
