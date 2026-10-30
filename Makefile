@@ -32,6 +32,8 @@ verify-constructions:
 	python3 tools/check_noncommutative_crossing_finite_gates.py
 	python3 tools/check_noncommutative_crossing_abelian_midpoints.py
 	python3 tools/check_noncommutative_crossing_involution_support.py
+	python3 tools/check_noncommutative_crossing_symplectic_radicals.py
+	python3 tools/check_noncommutative_crossing_radical_ward.py
 	python3 tools/check_double_endpoint_retracts.py --cases full:3:3
 	python3 tools/check_noncommutative_crossing_group_degeneration.py
 
@@ -65,6 +67,7 @@ verify-post-half:
 	python3 tools/check_stable_boundary_envelope.py --maximum-pairs 128
 	python3 tools/check_stable_pfaffian_coordinates.py
 	python3 tools/check_additional_crossing_screens.py
+	python3 tools/explore_symplectic_boundary_codes.py --cases 4:4 --optimize
 
 verify-frontier:
 	python3 tools/check_piece_transfer.py
