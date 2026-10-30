@@ -276,6 +276,7 @@ profiles, verifies ranks by independent dense elimination, and checks all
 
 The maximum rounded binary width sum is still six, as for the earlier
 rank-product cutoff 36. This finite rank improvement is therefore not a
-new channel-width rate. Optimality within the 33-dimensional joint span
-is not claimed. The all-size joint-span optimizer is effective by Section 2;
-its uniform leading rank bound remains open.
+new channel-width rate. The [separating-functional and RUP certificate](hamming-joint-optimum.md)
+now proves 25 optimal in this complete 33-dimensional `F_2` span. It supplies
+no extension-field lower bound. The all-size joint-span optimizer is effective
+by Section 2; its uniform leading rank bound remains open.

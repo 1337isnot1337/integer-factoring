@@ -154,7 +154,10 @@ the same optimized rank cutoff. This also strengthens the earlier source
 particle-hole identity; individual coefficient ranks need not be monotone.
 A joint one- and two-pair witness reduces the two-bit rank-product cutoff
 from 36 to 25 with six pieces, independently replayed by
-`python3 tools/check_hamming_joint.py`; its rounded width sum is still six.
+`python3 tools/check_hamming_joint.py`. A [retained clause certificate](research/hamming-joint-optimum.md)
+proves 25 optimal in the complete 33-dimensional joint `F_2` span; replay
+`python3 tools/check_hamming_joint_lower.py` needs no SAT solver. Its rounded
+width sum is still six.
 Run `python3 tools/check_hamming_sectors.py` and
 `python3 tools/check_hamming_complement.py` (or add `--full`).
 
