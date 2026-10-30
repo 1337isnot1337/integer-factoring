@@ -164,6 +164,12 @@ constant block model reduces the aggregate family's rank calculation to
 smaller repeated blocks; its uniform contraction remains open. Replay
 `python3 tools/check_hamming_relabeling.py` and
 `python3 tools/check_hamming_relabeling_optimum.py`.
+A [modular representation rank engine](research/sl2-coefficient-ranks.md)
+now computes symmetric Boolean coefficient ranks on polynomial-size
+blocks. It exactly analyzes one reciprocal grading of the aggregate:
+its best possible leading contraction is `0.884638857886...`, even with
+arbitrary coefficient recombinations. That grading is closed; the other
+gradings remain open. Replay `python3 tools/check_sl2_boolean_rank.py`.
 
 A [complete-piece recombination search](research/modular-recombination.md)
 reduces the maximum rank product from 27 to 4 on the three-label modular

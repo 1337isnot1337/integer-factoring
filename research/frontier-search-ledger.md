@@ -12,6 +12,9 @@ which part of that target; it is not a list of new factoring bounds.
   linear-degree families with complete-span optimization in `2^O(lambda)`.
   A constant nilpotent block model computes exact ranks for a four-piece
   aggregate. The missing condition remains a uniform contraction theorem.
+  One [reciprocal grading](sl2-coefficient-ranks.md) is now completely
+  analyzed: its exact optimal leading `rho` is `0.884638857886...` over
+  every characteristic-two field. Other gradings are not covered.
 
 - [Bounded bit weights](hamming-pfaffian.md) and
   [fixed antipodal-pair sectors](hamming-sectors.md) have linear degree,

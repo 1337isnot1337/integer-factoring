@@ -152,6 +152,10 @@ they have additional local tensors. A uniform rank-product bound below
 the half threshold remains unproved. Tensoring a finite witness alone
 leaves exponentially many pieces; collecting words into coefficients can
 increase rank, so the finite cutoff 16 must not be extrapolated.
+The [reciprocal choice](sl2-coefficient-ranks.md)
+`r=1,c=z^2,a=z,h=1+z+z^2` has since been solved: full-span optimization
+has exact leading contraction `0.884638857886...`, so that particular
+choice does not supply an improvement. The other gradings remain open.
 
 ```sh
 python3 tools/check_hamming_relabeling.py
