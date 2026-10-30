@@ -50,6 +50,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 - [Weighted Weyl row filtration](weighted-weyl-row-filtration.md): an actual common module filtration proves a full-row-rank detecting summand at every power-of-two energy, excluding the original coefficient span.
 - [Weighted Weyl protected minor](weighted-weyl-protected-minor.md): an exact 1,821-pair witness excludes the entire coefficient and external-symmetry span on the 202 labels of energy 32.
+- [Constant alternate-order Weyl algebra](weyl-alternate-order-algebra.md): an elementary endpoint involution and square-zero coproduct give a central normal form, a smaller spectral core, and a `rho >= 3/4` obstruction for the entire constant-generator word algebra.
 - [All-field binary-energy shell symmetry](binary-energy-symmetry-barrier.md): an explicit balanced-layer embedding forces `rho >= 3/4` for every equal-weight-class-invariant crossing decomposition.
 - [Weighted-energy reciprocal pencil](weighted-energy-reciprocal-pencil.md): genuine projected tilting blocks prove the exact leading optimum `rho = 1` for the full characteristic-two coefficient/symmetry span.
 - [Lacunary kernel boundary](lacunary-kernel-boundary.md): binary-partition state growth, the exact scalar Artin--Schreier fixed field, and the limits of finite scalar locality; other exchange relations remain open.

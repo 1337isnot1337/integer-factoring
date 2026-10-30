@@ -1,0 +1,43 @@
+{
+  "source_sha256": "7593106a329d2dc53148b2ba1cf01f7fd858ace2cf3a3031b8017d7f7c43a9a2",
+  "checked_shells": [
+    {
+      "energy": 2,
+      "labels": 2,
+      "core_dimension": 1,
+      "rank_central_commutator": 0,
+      "rank_small_core": 0,
+      "word_algebra_dimension": 3,
+      "normal_form_word_checks": 254,
+      "affine_coset_and_quotient_budget_checks": 256,
+      "square_zero_and_involution": true,
+      "exact_core_factorizations": true
+    },
+    {
+      "energy": 4,
+      "labels": 4,
+      "core_dimension": 6,
+      "rank_central_commutator": 5,
+      "rank_small_core": 2,
+      "word_algebra_dimension": 12,
+      "normal_form_word_checks": 254,
+      "affine_coset_and_quotient_budget_checks": 256,
+      "square_zero_and_involution": true,
+      "exact_core_factorizations": true
+    },
+    {
+      "energy": 8,
+      "labels": 10,
+      "core_dimension": 31,
+      "rank_central_commutator": 33,
+      "rank_small_core": 13,
+      "word_algebra_dimension": 18,
+      "normal_form_word_checks": 254,
+      "affine_coset_and_quotient_budget_checks": 256,
+      "square_zero_and_involution": true,
+      "exact_core_factorizations": true
+    }
+  ],
+  "scope": "Finite exact replay of the written all-energy constant-generator word-algebra theorem. Parameterized coefficient algebras are outside that theorem.",
+  "elapsed_seconds": 0.158
+}

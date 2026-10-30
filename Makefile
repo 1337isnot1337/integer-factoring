@@ -35,6 +35,7 @@ verify-further:
 	python3 tools/check_weighted_weyl_interfaces.py
 	python3 tools/check_weighted_weyl_matching.py
 	python3 tools/check_weighted_weyl_filtration.py
+	python3 tools/check_weyl_alternate_algebra.py
 
 verify-energy-full:
 	python3 tools/check_weighted_energy.py --full
