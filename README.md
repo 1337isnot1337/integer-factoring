@@ -328,8 +328,10 @@ and edge-width oracle are polynomial-time, agree with the reference, and
 produce the reference grouping code when given sufficient padding.
 The selected clique row is expressed as a padded sum over explicitly coded
 states, its gate codes can be decoded in polynomial time, and the numeric gate
-weights and messages agree with the reference. Their composition into the row
-summand is still open.
+weights and messages agree with the reference. The corresponding cluster
+weight and cross-cluster pair checks are polynomial-time and agree with the
+reference on valid decoded states. Their composition into the row summand is
+still open.
 
 The GitHub Actions workflow runs the reference Lean checks, the k6 rate checks,
 and the Python checks. The Appendix bridge target above is run separately.

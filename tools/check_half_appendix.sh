@@ -139,6 +139,9 @@ cp "$root/formal-appendix/GatePair.lean" "$stage/GatePair.lean"
 cp "$root/formal-appendix/PairOffset.lean" "$stage/PairOffset.lean"
 cp "$root/formal-appendix/FactorCheck.lean" "$stage/FactorCheck.lean"
 cp "$root/formal-appendix/WeightCheck.lean" "$stage/WeightCheck.lean"
+cp "$root/formal-appendix/CrossCheck.lean" "$stage/CrossCheck.lean"
+cp "$root/formal-appendix/SelectedClusterWeight.lean" "$stage/SelectedClusterWeight.lean"
+cp "$root/formal-appendix/SelectedClusterPair.lean" "$stage/SelectedClusterPair.lean"
 lake env bash -c '
   set -euo pipefail
   export LEAN_PATH="$1:$1/factoring/.lake/build/lib/lean:$LEAN_PATH"
@@ -207,22 +210,25 @@ lake env bash -c '
   lean --root="$1" -o "$1/SelectedRadix.olean" "$1/SelectedRadix.lean"
   lean --root="$1" -o "$1/SelectedStateDigit.olean" "$1/SelectedStateDigit.lean"
   lean --root="$1" -o "$1/ClusterStateDigit.olean" "$1/ClusterStateDigit.lean"
-  lean --root="$1" "$1/SelectedGateCode.lean"
+  lean --root="$1" -o "$1/SelectedGateCode.olean" "$1/SelectedGateCode.lean"
   lean --root="$1" -o "$1/GateFields.olean" "$1/GateFields.lean"
   lean --root="$1" -o "$1/CodingBounds.olean" "$1/CodingBounds.lean"
   lean --root="$1" -o "$1/SelectedFieldBounds.olean" "$1/SelectedFieldBounds.lean"
   lean --root="$1" -o "$1/CarryCheck.olean" "$1/CarryCheck.lean"
   lean --root="$1" -o "$1/InputCheck.olean" "$1/InputCheck.lean"
-  lean --root="$1" "$1/GateWeight.lean"
+  lean --root="$1" -o "$1/GateWeight.olean" "$1/GateWeight.lean"
   lean --root="$1" -o "$1/NumericTransform.olean" "$1/NumericTransform.lean"
   lean --root="$1" -o "$1/RootFactors.olean" "$1/RootFactors.lean"
   lean --root="$1" -o "$1/GateVectors.olean" "$1/GateVectors.lean"
   lean --root="$1" -o "$1/GateTransforms.olean" "$1/GateTransforms.lean"
   lean --root="$1" -o "$1/GateMessage.olean" "$1/GateMessage.lean"
-  lean --root="$1" "$1/GatePair.lean"
+  lean --root="$1" -o "$1/GatePair.olean" "$1/GatePair.lean"
   lean --root="$1" -o "$1/PairOffset.olean" "$1/PairOffset.lean"
   lean --root="$1" -o "$1/FactorCheck.olean" "$1/FactorCheck.lean"
-  lean --root="$1" "$1/WeightCheck.lean"
+  lean --root="$1" -o "$1/WeightCheck.olean" "$1/WeightCheck.lean"
+  lean --root="$1" -o "$1/CrossCheck.olean" "$1/CrossCheck.lean"
+  lean --root="$1" "$1/SelectedClusterWeight.lean"
+  lean --root="$1" "$1/SelectedClusterPair.lean"
 ' _ "$stage" > "$logs/bridge.log" 2>&1
 python3 - "$logs/bridge.log" <<'PY'
 import re
@@ -277,7 +283,9 @@ gate_message_correct = "IntegerFactoring.HalfAppendix.gateMessage_eq"
 gate_pair = "IntegerFactoring.HalfAppendix.gatePair_eq"
 factor_check = "IntegerFactoring.HalfAppendix.factorCheck_eq_left"
 weight_check = "IntegerFactoring.HalfAppendix.weightCheck_eq"
-if "error:" in text or "sorryAx" in text or not {expected, count_bridge, table, clique, top, selected, row, fast, width, states, state_rate, entry, explicit, pad_rate, pure_factor, level_rate, written_poly, prefix_steps, reference_spec, certified_prefix, search_poly, machine, group_search, group_cost, level_poly, machine_rate, size_poly, params_poly, master_cost, group_sizes, group_predicate, group_correct, selected_group_poly, selected_group_correct, row_bridge, digit_poly, gate_size, gate_code, gate_code_correct, gate_weight, gate_weight_correct, gate_message, gate_message_correct, gate_pair, factor_check, weight_check} <= {name for name, _ in reports}:
+cluster_weight = "IntegerFactoring.HalfAppendix.selectedClusterWeight_eq"
+cluster_pair = "IntegerFactoring.HalfAppendix.selectedClusterPair_eq"
+if "error:" in text or "sorryAx" in text or not {expected, count_bridge, table, clique, top, selected, row, fast, width, states, state_rate, entry, explicit, pad_rate, pure_factor, level_rate, written_poly, prefix_steps, reference_spec, certified_prefix, search_poly, machine, group_search, group_cost, level_poly, machine_rate, size_poly, params_poly, master_cost, group_sizes, group_predicate, group_correct, selected_group_poly, selected_group_correct, row_bridge, digit_poly, gate_size, gate_code, gate_code_correct, gate_weight, gate_weight_correct, gate_message, gate_message_correct, gate_pair, factor_check, weight_check, cluster_weight, cluster_pair} <= {name for name, _ in reports}:
     raise SystemExit("Missing or failed Appendix bridge axiom reports")
 allowed = {"propext", "Classical.choice", "Quot.sound"}
 for name, axioms in reports:
