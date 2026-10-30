@@ -114,6 +114,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Obstructions and work beyond 1/2
 
+- [Mixed-cut rank budget](mixed-cut-rank-budget.md): an all-field inequality for arbitrary crossing decompositions excludes every seed on at most eleven labels from the strict rank-cost target.
 - [Universal finite-size gates](noncommutative-crossing-finite-gates.md): all-field rank-sum bounds exclude every seed on at most five labels and every non-elementary group orbit family of order at most eight.
 - [Abelian midpoint blocks](noncommutative-crossing-abelian-midpoints.md): exact doubling-map column multiplicities, a real rank-floor lemma, and an all-field exclusion of every cyclic group.
 - [Involution-free orbit minors](noncommutative-crossing-involution-support.md): a diagonal-minor theorem for arbitrary group kernels, excluding odd-order groups, odd-order index-two extensions, and unique-involution groups over every field.

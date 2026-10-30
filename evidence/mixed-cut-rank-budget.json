@@ -1,0 +1,121 @@
+{
+  "scope": "All-field theorem; finite binary controls and exact rational cutoff certificates.",
+  "binary_two_label_tensors": 65536,
+  "mixed_budget_histogram": {
+    "2": 6,
+    "4": 1432,
+    "5": 8382,
+    "6": 26804,
+    "7": 21840,
+    "8": 7072
+  },
+  "sum_of_cheaper_cuts_histogram": {
+    "2": 12,
+    "4": 2842,
+    "5": 15042,
+    "6": 33464,
+    "7": 11808,
+    "8": 2368
+  },
+  "negative_control_against_q_squared_budget": [
+    [
+      4,
+      1
+    ],
+    [
+      1,
+      4
+    ]
+  ],
+  "cutoff_certificates": [
+    {
+      "labels": 2,
+      "radicand": 3,
+      "lower_numerator": 3464100,
+      "upper_numerator": 3464102,
+      "denominator": 1000000,
+      "excluded_by_exact_power_comparison": true
+    },
+    {
+      "labels": 3,
+      "radicand": 7,
+      "lower_numerator": 6291502,
+      "upper_numerator": 6291504,
+      "denominator": 1000000,
+      "excluded_by_exact_power_comparison": true
+    },
+    {
+      "labels": 4,
+      "radicand": 13,
+      "lower_numerator": 9211102,
+      "upper_numerator": 9211104,
+      "denominator": 1000000,
+      "excluded_by_exact_power_comparison": true
+    },
+    {
+      "labels": 5,
+      "radicand": 21,
+      "lower_numerator": 12165150,
+      "upper_numerator": 12165152,
+      "denominator": 1000000,
+      "excluded_by_exact_power_comparison": true
+    },
+    {
+      "labels": 6,
+      "radicand": 31,
+      "lower_numerator": 15135528,
+      "upper_numerator": 15135530,
+      "denominator": 1000000,
+      "excluded_by_exact_power_comparison": true
+    },
+    {
+      "labels": 7,
+      "radicand": 43,
+      "lower_numerator": 18114876,
+      "upper_numerator": 18114878,
+      "denominator": 1000000,
+      "excluded_by_exact_power_comparison": true
+    },
+    {
+      "labels": 8,
+      "radicand": 57,
+      "lower_numerator": 21099668,
+      "upper_numerator": 21099670,
+      "denominator": 1000000,
+      "excluded_by_exact_power_comparison": true
+    },
+    {
+      "labels": 9,
+      "radicand": 73,
+      "lower_numerator": 24088006,
+      "upper_numerator": 24088008,
+      "denominator": 1000000,
+      "excluded_by_exact_power_comparison": true
+    },
+    {
+      "labels": 10,
+      "radicand": 91,
+      "lower_numerator": 27078784,
+      "upper_numerator": 27078786,
+      "denominator": 1000000,
+      "excluded_by_exact_power_comparison": true
+    },
+    {
+      "labels": 11,
+      "radicand": 111,
+      "lower_numerator": 30071306,
+      "upper_numerator": 30071308,
+      "denominator": 1000000,
+      "excluded_by_exact_power_comparison": true
+    },
+    {
+      "labels": 12,
+      "radicand": 133,
+      "lower_numerator": 33065124,
+      "upper_numerator": 33065126,
+      "denominator": 1000000,
+      "excluded_by_exact_power_comparison": false
+    }
+  ],
+  "checker_sha256": "5cdfe0da754d8dfade8a593397d8e5e40323bb72c54b6f7c77c75b584f2d32db"
+}

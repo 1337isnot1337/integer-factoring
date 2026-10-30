@@ -1,5 +1,7 @@
 # Finite rank-sum gates for crossing constructions
 
+The [mixed-cut successor](mixed-cut-rank-budget.md) strengthens the universal gate to every label size at most eleven. The group-specific results and their proofs below remain valid.
+
 This note gives three exact exclusions before any coefficient search:
 
 1. Every crossing decomposition on at most five labels misses the strict finite-seed target, over every field.
