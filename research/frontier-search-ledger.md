@@ -25,6 +25,12 @@ even with collective recombinations, including products of `o(t)` position
 classes. Its semisimple block argument is not a
 characteristic-two theorem.
 
+The [characteristic-two pairing-type barrier](pairing-word-barrier.md)
+closes the full universal three-pairing type span for all seed dimensions
+at least five, including collective recombinations. It uses explicit local
+nilpotent blocks and covers extension fields. Its bound leaves dimensions
+2, 3, and 4 open.
+
 ## Reliable finite checkpoints
 
 - [Three-label source span](modular-recombination.md): exact optimum four

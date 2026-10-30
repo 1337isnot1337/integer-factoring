@@ -131,6 +131,12 @@ and 4, even after arbitrary invariant recombinations. The leading bound also
 holds for permutations within `o(t)` position classes. It uses one determinant
 functional for both cuts and does not apply to characteristic two or arbitrary
 binary restrictions. Replay `python3 tools/check_word_symmetry_barrier.py`.
+A [characteristic-two pairing-type barrier](research/pairing-word-barrier.md)
+separately excludes the half threshold for the full tensor-power type span
+of the universal three-pairing seed at every seed dimension at least five.
+It includes arbitrary collective recombinations and extension fields; seed
+sizes 2, 3, and 4 remain open under that bound. Replay
+`python3 tools/check_pairing_word_barrier.py`.
 
 A [complete-piece recombination search](research/modular-recombination.md)
 reduces the maximum rank product from 27 to 4 on the three-label modular
