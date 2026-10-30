@@ -106,6 +106,9 @@ cp "$root/formal-appendix/SizeParamPoly.lean" "$stage/SizeParamPoly.lean"
 cp "$root/formal-appendix/TopParamsPoly.lean" "$stage/TopParamsPoly.lean"
 cp "$root/formal-appendix/MasterPad.lean" "$stage/MasterPad.lean"
 cp "$root/formal-appendix/GroupingCodePoly.lean" "$stage/GroupingCodePoly.lean"
+cp "$root/formal-appendix/CrossQueryPoly.lean" "$stage/CrossQueryPoly.lean"
+cp "$root/formal-appendix/CrossQueryCorrect.lean" "$stage/CrossQueryCorrect.lean"
+cp "$root/formal-appendix/GroupingPredicate.lean" "$stage/GroupingPredicate.lean"
 lake env bash -c '
   set -euo pipefail
   export LEAN_PATH="$1:$1/factoring/.lake/build/lib/lean:$LEAN_PATH"
@@ -156,7 +159,10 @@ lake env bash -c '
   lean --root="$1" -o "$1/SizeParamPoly.olean" "$1/SizeParamPoly.lean"
   lean --root="$1" -o "$1/TopParamsPoly.olean" "$1/TopParamsPoly.lean"
   lean --root="$1" "$1/MasterPad.lean"
-  lean --root="$1" "$1/GroupingCodePoly.lean"
+  lean --root="$1" -o "$1/GroupingCodePoly.olean" "$1/GroupingCodePoly.lean"
+  lean --root="$1" -o "$1/CrossQueryPoly.olean" "$1/CrossQueryPoly.lean"
+  lean --root="$1" -o "$1/CrossQueryCorrect.olean" "$1/CrossQueryCorrect.lean"
+  lean --root="$1" "$1/GroupingPredicate.lean"
 ' _ "$stage" > "$logs/bridge.log" 2>&1
 python3 - "$logs/bridge.log" <<'PY'
 import re
@@ -195,7 +201,9 @@ size_poly = "IntegerFactoring.HalfAppendix.sOf_unary"
 params_poly = "IntegerFactoring.HalfAppendix.selected_padExponent_unary"
 master_cost = "IntegerFactoring.HalfAppendix.masterExponent_sqrt_cost"
 group_sizes = "IntegerFactoring.HalfAppendix.groupSizesOK_eq"
-if "error:" in text or "sorryAx" in text or not {expected, count_bridge, table, clique, top, selected, row, fast, width, states, state_rate, entry, explicit, pad_rate, pure_factor, level_rate, written_poly, prefix_steps, reference_spec, certified_prefix, search_poly, machine, group_search, group_cost, level_poly, machine_rate, size_poly, params_poly, master_cost, group_sizes} <= {name for name, _ in reports}:
+group_predicate = "IntegerFactoring.HalfAppendix.goodCode_polyT"
+group_correct = "IntegerFactoring.HalfAppendix.goodCode_eq_okG"
+if "error:" in text or "sorryAx" in text or not {expected, count_bridge, table, clique, top, selected, row, fast, width, states, state_rate, entry, explicit, pad_rate, pure_factor, level_rate, written_poly, prefix_steps, reference_spec, certified_prefix, search_poly, machine, group_search, group_cost, level_poly, machine_rate, size_poly, params_poly, master_cost, group_sizes, group_predicate, group_correct} <= {name for name, _ in reports}:
     raise SystemExit("Missing or failed Appendix bridge axiom reports")
 allowed = {"propext", "Classical.choice", "Quot.sound"}
 for name, axioms in reports:
