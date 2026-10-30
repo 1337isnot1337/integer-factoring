@@ -18,9 +18,13 @@ The main reusable results are:
   bound for every complete column coefficient.
 - Parameter-dependent local changes that preserve the crossing endpoint.
 
-The finite examples improve some tested noncommutative profiles. The present
-bounds are still too loose in the middle to certify a better factoring
-exponent. No stronger factoring score is claimed.
+The finite examples improve some tested noncommutative profiles. A subsequent
+[PBW degeneration theorem](noncommutative-crossing-pbw-degeneration.md) proves
+that every complete decomposition on the full PBW label domain has rank sum
+at least \(d^{3/2}\), including scalar recombinations and the stated gauges.
+These full-domain families cannot meet the improved finite-seed criterion.
+The explicit constructions and factorizations below remain valid; no
+stronger factoring score is claimed.
 
 ## 1. The graded algebra
 
