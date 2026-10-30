@@ -37,6 +37,11 @@ exponent `1/2`.
 The theorem is a support obstruction for the specified kernels. It is
 not a lower bound for arbitrary crossing decompositions or factoring.
 
+The later [full conservation-space theorem](full-conservation-rank-sum-barrier.md)
+removes the support condition in characteristic two, proving the same
+decomposition bound throughout the entire kernel space. The present
+incidence theorem retains its broader coefficient-characteristic scope.
+
 ## 1. The two convolution cuts
 
 For a function `f:G→F`, let `C_f` be the matrix

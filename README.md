@@ -126,13 +126,22 @@ cut rank. A separate [diagonal-word theorem](research/diagonal-word-rank-sum-bar
 covers every unsymmetrized tensor-word combination in characteristic two:
 any crossing decomposition in that space has rank sum at least `d^(3/2)`,
 regardless of its number of pieces. Off-diagonal nonlinear selectors and
-nonlinear label maps remain separate construction routes.
+nonlinear label maps require separate analysis; the full conservation
+result below now closes the former whenever they retain that identity.
 
 The broader [Boolean-incidence bound](research/incidence-kernel-rank-sum-barrier.md)
 forces the same `d^(3/2)` cost over every field for all conservation
 kernels supported on `w subset S`, including arbitrary row controls.
 Every nonzero unrestricted conservation kernel still costs at least `d`,
 so a passing 128-label seed in that larger space has at most seven pieces.
+In characteristic two, the new
+[full conservation-space theorem](research/full-conservation-rank-sum-barrier.md)
+now closes that entire larger space at every size: arbitrary kernels,
+including off-incidence and nilpotent corrections, satisfy
+`sum sqrt(r_i*c_i)>=d^(3/2)`. The proof uses matched row and column
+bases from a double Cauchy–Binet expansion. It covers the full
+four-feature finite-state tensor space and supplied Laurent limits.
+Constructions using incompatible physical label bases remain outside it.
 A [fixed-target Feistel quotient](research/fixed-target-feistel-barrier.md)
 also excludes arbitrary controlled-translation coefficient spans with
 one common target set. Two nonlinear rounds with different target sets
