@@ -17,3 +17,6 @@ lemmas, complete proofs, and independent review; list unrun checks.
 
 State open obligations and the next question. Retain source and contributor
 credit and disclose substantial AI assistance.
+
+If this change affects a result, evidence, verification, or an open obligation,
+update the README's status, links, and reproduction instructions as appropriate.

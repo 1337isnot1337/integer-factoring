@@ -17,3 +17,7 @@ Run `make verify` and relevant focused checks. Use `make verify-formal` for
 formal changes when possible, and list any unrun checks. Include reproduction
 commands, actual outcomes, remaining obligations, and contributor credit in
 the pull request.
+
+Keep the README current with changes to results, evidence, verification commands,
+and open obligations. Update the relevant links and status in the same pull
+request; distinguish proposed improvements from completed and reviewed results.

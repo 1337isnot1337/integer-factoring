@@ -15,4 +15,9 @@ improved factoring machine. Run `make verify` and any relevant scoped checks;
 run `make verify-formal` for changes to formal proofs when the toolchain is
 available. Report checks that were not run.
 
+When a change affects a result, evidence, verification, or an open obligation,
+update the README's current status, relevant links, and reproduction guidance
+in the same change. Check claims against the actual source and evidence; do not
+promote an unreviewed or partial result merely because it was merged.
+
 Do not spawn subagents unless the user explicitly requests them.
