@@ -1,4 +1,4 @@
-.PHONY: verify verify-docs verify-frontier verify-post-half verify-formal verify-k6 verify-half-appendix help
+.PHONY: verify verify-docs verify-frontier verify-post-half verify-modular verify-formal verify-k6 verify-half-appendix help
 
 verify: verify-docs verify-frontier
 	python3 -m unittest discover -s tests -v
@@ -10,6 +10,20 @@ verify: verify-docs verify-frontier
 	python3 tools/check_half_piece_ranks.py --no-numpy
 	python3 tools/check_half_projection.py
 	python3 tools/check_half_restricted_labels.py
+	python3 tools/check_weighted_prefix.py
+	python3 tools/check_fixed_characteristic_transfer.py
+	python3 tools/check_modular_pieces.py
+	python3 tools/check_modular_pfaffian.py
+	python3 tools/check_fermi_sea_schur.py
+	python3 tools/check_sparse_grid_geometry.py
+
+verify-modular:
+	python3 tools/check_modular_pieces.py --full
+	python3 tools/check_modular_pfaffian.py --full
+	python3 tools/check_fermi_sea_schur.py
+	python3 tools/check_weighted_prefix.py
+	python3 tools/check_fixed_characteristic_transfer.py
+	python3 tools/check_sparse_grid_geometry.py
 
 verify-docs:
 	python3 tools/check_docs.py
@@ -44,6 +58,7 @@ verify-half-appendix:
 help:
 	@printf '%s\n' \
 	  'make verify               - unit tests, exact certificates, and local documentation links' \
+	  'make verify-modular       - extended fixed-field and Pfaffian checks' \
 	  'make verify-frontier      - focused frontier certificates' \
 	  'make verify-post-half     - larger optional matrix-rank checks' \
 	  'make verify-docs          - check local Markdown file links' \

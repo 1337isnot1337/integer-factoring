@@ -1,0 +1,284 @@
+{
+  "cases": [
+    {
+      "active_cardinality": 1,
+      "core_size": 2,
+      "dimension": 1,
+      "labels": [
+        [
+          1
+        ]
+      ],
+      "lifted_nonzero_pieces": 9,
+      "lifted_rank_pairs": [
+        [
+          1,
+          1
+        ]
+      ],
+      "lifted_weight": 9,
+      "low_nonzero_pieces": 3,
+      "low_rank_pairs": [
+        [
+          1,
+          1
+        ]
+      ],
+      "low_weight": 1,
+      "name": "small_core",
+      "overlapping_coefficient_positions": 0,
+      "profile_comparisons": 1,
+      "separation_condition": false
+    },
+    {
+      "active_cardinality": 3,
+      "core_size": 8,
+      "dimension": 3,
+      "labels": [
+        [
+          7,
+          5,
+          3
+        ],
+        [
+          9,
+          5,
+          1
+        ],
+        [
+          11,
+          3,
+          1
+        ]
+      ],
+      "lifted_nonzero_pieces": 246,
+      "lifted_rank_pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          8,
+          7
+        ]
+      ],
+      "lifted_weight": 127,
+      "low_nonzero_pieces": 30,
+      "low_rank_pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          8,
+          7
+        ]
+      ],
+      "low_weight": 15,
+      "name": "overlapping_supports",
+      "overlapping_coefficient_positions": 84,
+      "profile_comparisons": 81,
+      "separation_condition": false
+    },
+    {
+      "active_cardinality": 2,
+      "core_size": 32,
+      "dimension": 2,
+      "labels": [
+        [
+          5,
+          3
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "lifted_nonzero_pieces": 99,
+      "lifted_rank_pairs": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "lifted_weight": 1160,
+      "low_nonzero_pieces": 11,
+      "low_rank_pairs": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "low_weight": 8,
+      "name": "separated_supports",
+      "overlapping_coefficient_positions": 0,
+      "profile_comparisons": 16,
+      "separation_condition": true
+    }
+  ],
+  "checker_sha256": "1e6c47d92920989bbc620c0875a32d63e69777d051e4433a95beb6f27ea21932",
+  "implementation_sha256": "390e718fb0066401bbe72870b61272b0d0736a385602b487fa3f56a84abe0a61",
+  "profile_comparisons": 98,
+  "scope": "profile convolution and separated-support rank equality; no new factoring exponent",
+  "status": "all exact checks passed"
+}

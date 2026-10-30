@@ -18,6 +18,12 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Scale-one modular transfer](scale-one-modular-transfer.md): fixed-field transfer and machine costs.
 - [Sparse divisor nonzeroness](sparse-divisor-nonzeroness.md): detection of divisors in weighted polynomial counts.
 - [Modular crossing](modular-crossing.md): normalized finite-field pieces and quotient construction.
+- [Weighted fixed-characteristic transfer](fixed-characteristic-transfer.md): uniform factoring from a modular evaluator.
+- [Weighted prefix constructor](weighted-prefix-constructor.md): exact weighted tables and their construction cost.
+- [Modular crossing pieces](past-half-pieces.md): effective characteristic-two pieces and the half-rate bound.
+- [Polynomial Pfaffian formula](modular-pfaffian.md): polynomial-time computation of complete piece profiles.
+- [Shared-mode Schur reduction](fermi-sea-schur.md): exact common-block convolution and rank restrictions.
+- [Sparse-grid geometry](past-half-sparse-grids.md): limitations of regular-grid density changes.
 - [Homogeneous duals](homogeneous-duals.md): alternative algebraic pieces and their checked identities.
 - [Near-ones label families](near-ones-labels.md): label construction and rank experiments.
 - [Binary-prefix top channel](binary-prefix-top-channel.md): structural analysis of channel widths.
