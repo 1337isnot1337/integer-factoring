@@ -217,6 +217,15 @@ also fails at its capacity-maximizing density: one explicit coefficient
 has exact ranks giving `rho>=log(6)/(2log(3))`. These statements have
 different hypotheses; none rules out arbitrary linear label codes.
 
+Two further label spaces preserve exact crossing identities. The
+[odd cyclic orbit construction](research/cyclic-orbit-crossing.md)
+uses self-dual orbit sums; its first nontrivial space has eleven labels.
+The [nilpotent-cycle construction](research/nilpotent-cycle-labels.md)
+uses an explicit kernel basis with an involutory Gram matrix. Both have
+effective polynomial piece families. Explicit coefficients also prove
+that their growing full-domain families fail the required rate. Those
+proofs leave arbitrary subspaces and different recombinations open.
+
 The [matching-code lift](research/matching-code-lift.md) gives exact
 multigraded crossings on uniform set partitions. Independent variables
 reduce their piece count to `exp(O(lambda/log lambda))`, despite the large
@@ -235,6 +244,18 @@ gives every perfect matching a single monomial dual. It includes a scalar
 deformation and an explicit reduction to partial-matching coefficients.
 These families meet the relaxed piece-count and construction-cost interface;
 their joint rank bounds still need improvement.
+
+A [split permutation seed](research/split-permutation-seed.md) gives a
+six-label exact crossing with maximum rank product `150`, below the
+finite half threshold. Its coefficient formula has an independent
+Pfaffian check. The full growing permutation family has an explicit
+coefficient whose rate tends to one, so the finite gain does not
+amplify by that construction. The broader
+[balanced-partition construction](research/balanced-partition-crossings.md)
+gives unit duals for even uniform partitions and weighted multipartite
+partitions. It also gives a rank-one kernel deformation and reduces
+the rank problem to partial-partition coefficient tensors. Complete
+finite profiles record both the small gains and their later failures.
 
 Further exact analyses cover
 [far-reflected mode supports](research/reflected-support-reduction.md),

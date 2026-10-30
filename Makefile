@@ -17,6 +17,10 @@ verify-post-half:
 	python3 tools/check_half_restricted_labels.py
 
 verify-frontier:
+	python3 tools/check_cyclic_orbit_crossing.py
+	python3 tools/check_nilpotent_cycle_labels.py
+	python3 tools/check_split_permutation_seed.py
+	python3 tools/check_balanced_partition_crossings.py
 	python3 tools/check_schur_fusion_rank.py
 	python3 tools/check_regular_fusion_rank.py
 	python3 tools/check_permutation_homogeneous_labels.py
