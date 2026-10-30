@@ -33,6 +33,14 @@ grouping replaces the initial grouping search and allows the larger
 top schedule proved in that note. The tables remain available through
 queries; explicitly writing all their entries still takes exponential time.
 
+A second [multiplication-network construction](research/logarithmic-wire-network.md)
+uses `O(log n)`-bit messages and `O(n)` total information volume.
+Bivariate interpolation gives polynomial-time metadata and top queries.
+Its Fourier representation also contracts entire arithmetic blocks and
+carry segments in polynomial time, including the character-algebra cost.
+The largest top schedule still preserves the exact half exponent. Mixed
+blocks outside the proved classes need a further contraction argument.
+
 It combines Claude (Anthropic)'s existing Appendix B clique evaluator with
 Isaac Rudich and Louis-Martin Rousseau's multiplication-network reduction.
 The new connection includes a deterministic written-table constructor, an
@@ -77,6 +85,10 @@ prefix weights, composite-modulus bilinear sums, and all carry endpoints.
 A characteristic-two involution also reduces unit Kloosterman sums to
 quadratic roots. These are explicit local contraction primitives; a
 global evaluation method with a better rate is still missing.
+An [odd-characteristic extension](research/fourier-odd-characteristic.md)
+changes the arithmetic modulus while preserving the original topology.
+It proves the required character normalization and compact carry formulas
+over every fixed odd characteristic, including bit-tagged input weights.
 
 The [general transfer theorem](research/pieces-to-factoring.md) proves that
 an effective crossing family with rational parameter `rho` gives factoring
@@ -176,7 +188,7 @@ corresponding locality and finite support bounds. On the three labels
 both original operator orders verify every entry. This finite gain
 does not establish a better asymptotic factoring exponent. Separate
 recombination work in [PR #24](https://github.com/1337isnot1337/integer-factoring/pull/24)
-has since produced a rank-product-nine certificate on three labels;
+has since produced a twenty-piece, rank-product-four certificate on three labels;
 the reflected construction here is a different family, not the current
 best finite certificate.
 
