@@ -1,0 +1,81 @@
+{
+  "actual_one_part_family_cases": [
+    {
+      "cutoff": 1,
+      "expected_crossing_coefficient": "1",
+      "h": 1,
+      "truncated_crossing_coefficient": "0"
+    },
+    {
+      "cutoff": 2,
+      "expected_crossing_coefficient": "2",
+      "h": 2,
+      "truncated_crossing_coefficient": "0"
+    },
+    {
+      "cutoff": 3,
+      "expected_crossing_coefficient": "6",
+      "h": 3,
+      "truncated_crossing_coefficient": "0"
+    },
+    {
+      "cutoff": 4,
+      "expected_crossing_coefficient": "24",
+      "h": 4,
+      "truncated_crossing_coefficient": "0"
+    },
+    {
+      "cutoff": 5,
+      "expected_crossing_coefficient": "120",
+      "h": 5,
+      "truncated_crossing_coefficient": "0"
+    },
+    {
+      "cutoff": 6,
+      "expected_crossing_coefficient": "720",
+      "h": 6,
+      "truncated_crossing_coefficient": "0"
+    },
+    {
+      "cutoff": 7,
+      "expected_crossing_coefficient": "5040",
+      "h": 7,
+      "truncated_crossing_coefficient": "0"
+    },
+    {
+      "cutoff": 8,
+      "expected_crossing_coefficient": "40320",
+      "h": 8,
+      "truncated_crossing_coefficient": "0"
+    },
+    {
+      "cutoff": 9,
+      "expected_crossing_coefficient": "362880",
+      "h": 9,
+      "truncated_crossing_coefficient": "0"
+    },
+    {
+      "cutoff": 10,
+      "expected_crossing_coefficient": "3628800",
+      "h": 10,
+      "truncated_crossing_coefficient": "0"
+    },
+    {
+      "cutoff": 11,
+      "expected_crossing_coefficient": "39916800",
+      "h": 11,
+      "truncated_crossing_coefficient": "0"
+    },
+    {
+      "cutoff": 12,
+      "expected_crossing_coefficient": "479001600",
+      "h": 12,
+      "truncated_crossing_coefficient": "0"
+    }
+  ],
+  "asymptotic_or_factoring_runtime_test": false,
+  "full_operator_checks": "cutoff 3h contains every mode used in these linear-field tests",
+  "general_order_swap_cases": 96,
+  "repaired_order_swap_cases": 96,
+  "scope": "finite exact negative controls; the all-h obstruction has a written proof"
+}

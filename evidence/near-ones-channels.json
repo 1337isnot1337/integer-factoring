@@ -1,0 +1,168 @@
+{
+  "embedding_inputs": 276,
+  "escaping_all_ones_coefficients": [
+    {
+      "coefficient": 4,
+      "input_defects": [
+        0,
+        0
+      ],
+      "output_defect": 2,
+      "weight": 2
+    },
+    {
+      "coefficient": 18,
+      "input_defects": [
+        0,
+        0
+      ],
+      "output_defect": 4,
+      "weight": 3
+    },
+    {
+      "coefficient": 96,
+      "input_defects": [
+        0,
+        0
+      ],
+      "output_defect": 6,
+      "weight": 4
+    },
+    {
+      "coefficient": 600,
+      "input_defects": [
+        0,
+        0
+      ],
+      "output_defect": 8,
+      "weight": 5
+    },
+    {
+      "coefficient": 4320,
+      "input_defects": [
+        0,
+        0
+      ],
+      "output_defect": 10,
+      "weight": 6
+    },
+    {
+      "coefficient": 35280,
+      "input_defects": [
+        0,
+        0
+      ],
+      "output_defect": 12,
+      "weight": 7
+    },
+    {
+      "coefficient": 322560,
+      "input_defects": [
+        0,
+        0
+      ],
+      "output_defect": 14,
+      "weight": 8
+    },
+    {
+      "coefficient": 3265920,
+      "input_defects": [
+        0,
+        0
+      ],
+      "output_defect": 16,
+      "weight": 9
+    },
+    {
+      "coefficient": 36288000,
+      "input_defects": [
+        0,
+        0
+      ],
+      "output_defect": 18,
+      "weight": 10
+    },
+    {
+      "coefficient": 439084800,
+      "input_defects": [
+        0,
+        0
+      ],
+      "output_defect": 20,
+      "weight": 11
+    },
+    {
+      "coefficient": 5748019200,
+      "input_defects": [
+        0,
+        0
+      ],
+      "output_defect": 22,
+      "weight": 12
+    }
+  ],
+  "negative_control": "cutting output defect at the sum of the two input defects removes a nonzero all-ones coefficient",
+  "nonzero_defect_support_cases": 2349,
+  "one_two_label_cases": [
+    {
+      "distinct_unions": 3,
+      "labels": 2,
+      "pair_dimension": 4,
+      "rank_mod_1000003": 4,
+      "rank_mod_65521": 4,
+      "weight": 2
+    },
+    {
+      "distinct_unions": 3,
+      "labels": 2,
+      "pair_dimension": 4,
+      "rank_mod_1000003": 4,
+      "rank_mod_65521": 4,
+      "weight": 3
+    },
+    {
+      "distinct_unions": 5,
+      "labels": 3,
+      "pair_dimension": 9,
+      "rank_mod_1000003": 9,
+      "rank_mod_65521": 9,
+      "weight": 4
+    },
+    {
+      "distinct_unions": 5,
+      "labels": 3,
+      "pair_dimension": 9,
+      "rank_mod_1000003": 9,
+      "rank_mod_65521": 9,
+      "weight": 5
+    },
+    {
+      "distinct_unions": 7,
+      "labels": 4,
+      "pair_dimension": 16,
+      "rank_mod_1000003": 16,
+      "rank_mod_65521": 16,
+      "weight": 6
+    },
+    {
+      "distinct_unions": 7,
+      "labels": 4,
+      "pair_dimension": 16,
+      "rank_mod_1000003": 16,
+      "rank_mod_65521": 16,
+      "weight": 7
+    },
+    {
+      "distinct_unions": 9,
+      "labels": 5,
+      "pair_dimension": 25,
+      "rank_mod_1000003": 25,
+      "rank_mod_65521": 25,
+      "weight": 8
+    }
+  ],
+  "scope": "defect embeddings, exact support identities, and finite top-channel ranks; no new factoring rate",
+  "source_commit": "16a5ce41304fcdaea4e0be7c132e1c361dc26da5",
+  "triangular_coefficient_cases": 830,
+  "union_embedding_cases": 7164
+}

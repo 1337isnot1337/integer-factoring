@@ -1,0 +1,166 @@
+{
+  "covariance_and_ladder_vectors": 276,
+  "direct_central_entries": 291,
+  "negative_control": "omitting the row swap leaves a negative direction at h=4",
+  "new_factoring_exponent_claimed": false,
+  "scope": "exact finite primitive central-piece identities and ranks; no asymptotic image estimate",
+  "skew_symmetry_vectors": 303,
+  "weights": [
+    {
+      "central_primary_rank": 1,
+      "coefficient_magnitudes": [
+        "1",
+        "3/2",
+        "1"
+      ],
+      "h": 1,
+      "individual_primary_fusion_ranks": [
+        1,
+        0,
+        1
+      ],
+      "primitive_dimension": 1,
+      "stacked_fusion_rank": 1
+    },
+    {
+      "central_primary_rank": 1,
+      "coefficient_magnitudes": [
+        "1",
+        "25/12",
+        "29/10",
+        "5/2",
+        "1"
+      ],
+      "h": 2,
+      "individual_primary_fusion_ranks": [
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "primitive_dimension": 1,
+      "stacked_fusion_rank": 1
+    },
+    {
+      "central_primary_rank": 1,
+      "coefficient_magnitudes": [
+        "1",
+        "49/20",
+        "309/70",
+        "6",
+        "52/9",
+        "7/2",
+        "1"
+      ],
+      "h": 3,
+      "individual_primary_fusion_ranks": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "primitive_dimension": 1,
+      "stacked_fusion_rank": 1
+    },
+    {
+      "central_primary_rank": 4,
+      "coefficient_magnitudes": [
+        "1",
+        "761/280",
+        "2369/420",
+        "267/28",
+        "2539/198",
+        "579/44",
+        "251/26",
+        "9/2",
+        "1"
+      ],
+      "h": 4,
+      "individual_primary_fusion_ranks": [
+        1,
+        0,
+        1,
+        0,
+        2,
+        0,
+        3,
+        1,
+        3
+      ],
+      "primitive_dimension": 2,
+      "stacked_fusion_rank": 4
+    },
+    {
+      "central_primary_rank": 4,
+      "coefficient_magnitudes": [
+        "1",
+        "7381/2520",
+        "30791/4620",
+        "1081/84",
+        "53783/2574",
+        "1453/52",
+        "299/10",
+        "737/30",
+        "247/17",
+        "11/2",
+        "1"
+      ],
+      "h": 5,
+      "individual_primary_fusion_ranks": [
+        1,
+        0,
+        1,
+        0,
+        2,
+        0,
+        3,
+        1,
+        3,
+        1,
+        3
+      ],
+      "primitive_dimension": 2,
+      "stacked_fusion_rank": 4
+    },
+    {
+      "central_primary_rank": 16,
+      "coefficient_magnitudes": [
+        "1",
+        "86021/27720",
+        "452993/60060",
+        "14741/924",
+        "75473/2574",
+        "509/11",
+        "68162/1105",
+        "17342/255",
+        "19468/323",
+        "3133/76",
+        "857/42",
+        "13/2",
+        "1"
+      ],
+      "h": 6,
+      "individual_primary_fusion_ranks": [
+        1,
+        0,
+        1,
+        1,
+        2,
+        2,
+        4,
+        4,
+        7,
+        5,
+        10,
+        6,
+        10
+      ],
+      "primitive_dimension": 4,
+      "stacked_fusion_rank": 16
+    }
+  ]
+}

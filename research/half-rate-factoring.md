@@ -322,11 +322,15 @@ make verify
 ```
 
 The checkers do not materialize the enormous evaluator or benchmark a
-practical factoring implementation. They test the new finite adapters,
-source-derived integer inequalities, prefix search, and negative controls.
-The infinite-input theorem is the written proof and its cited prior
-theorems, not an inference from successful small tests. No new Lean
-formalization or fresh build of the Appendix B development is included.
+practical factoring implementation. They test finite adapters and arithmetic;
+the infinite-input result is proved by the pinned source theorems and the
+Lean composition. [HalfTheorem.lean](../formal-appendix/HalfTheorem.lean)
+proves the reference `Factoring.SqrtLogLogConjecture`, including the
+polynomial-time padded algorithm, its binary input and output, the
+finite-alphabet machine, and the discrete square-root-log bound. The final
+axiom report contains `propext`, `Classical.choice`, and `Quot.sound`, with
+no `sorryAx`. Run `make verify-half-appendix` to rebuild the pinned sources
+and audit the formal composition. Independent review is still outstanding.
 
 The existing half-pieces channel counts have a proved asymptotic barrier
 at `1/2` within that particular interface; see the evaluator audit.

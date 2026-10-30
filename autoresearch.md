@@ -3,11 +3,10 @@
 The goal is to improve deterministic integer factoring bounds with precise,
 reproducible evidence. Start with the [README](README.md), the pinned upstream
 revision in [upstream.lock.json](upstream.lock.json), and the
-[half-rate composition](research/half-rate-factoring.md) and
-[verified k6 result](research/verified-k6.md). The complete written composition
-gives exponent `1/2`, using prior source theorems and new table/encoding/cost
-arguments. It is not Lean formalized or externally reviewed. The k6 variant
-retains its complete Lean theorem at exponent `1/30`; its sharper ordinary
+[research index](research/INDEX.md). The [half-rate theorem](formal-appendix/HalfTheorem.lean)
+proves the exponent `1/2` in Lean, including the finite-alphabet machine.
+The theorem composes pinned source results and is not externally reviewed. The k6 variant
+retains its separate Lean theorem at exponent `1/30`; its sharper ordinary
 analysis reaches `log(12/11)/log12`. The older combined rate in the
 [integration note](research/integration.md) remains a separate candidate.
 Its generalized evaluator remains open and is not needed by the `1/2` proof.
@@ -70,10 +69,10 @@ its pinned source before duplicating those directions.
    a uniform factoring machine. Separate conditional or finite evidence from
    a complete asymptotic theorem.
 4. Run `make verify` and the relevant focused checks. Use `make verify-formal`
-   for the original local lemmas and reference envelope. Use `make verify-k6`
-   for the complete k6 machine and rate proof. Both formal targets require
-   Lean and download the pinned reference and its dependencies. Record actual
-   results and any checks that were not run.
+   for the original local lemmas, `make verify-k6` for the certified `1/30`
+   machine, and `make verify-half-appendix` for the certified `1/2` machine.
+   Each Lean target needs its pinned toolchain and upstream dependencies.
+   Record actual results and commands that did not run.
 5. Write a concise handoff with sources, contributor credit, limitations,
    and the next concrete question. A useful partial result or counterexample
    is welcome; do not describe it as a completed factoring improvement. Update
