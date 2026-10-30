@@ -139,6 +139,15 @@ many pieces still require `rho>=3/4`. The proof covers different fixed
 orientation masks in different pieces. Combining masks within a single
 piece can escape the support condition and remains a separate route.
 
+On the full binary cube, the [exact coefficient-rank formula](research/binary-coefficient-entropy.md)
+gives the elementary family the limiting rate `H_2(1/4)=0.811278...`.
+The [symmetric three-pairing theorem](research/symmetric-three-matching-barrier.md)
+extends this sharp lower bound to every decomposition in the complete
+permutation-symmetric span of the three local pairings. It permits
+arbitrary recombinations, any number of pieces, and controlled
+degenerations within that span. Coordinate-dependent constructions and
+restricted label sets are outside this theorem's scope.
+
 The [reflected monomial construction](research/fermionic-piece-polynomial.md)
 gives exact unit duals by complementing binary mode indices. Its dual
 operators may have larger weight than the labels; the note proves the

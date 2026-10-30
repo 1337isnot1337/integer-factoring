@@ -17,6 +17,8 @@ verify-post-half:
 	python3 tools/check_half_restricted_labels.py
 
 verify-frontier:
+	python3 tools/check_binary_coefficient_entropy.py
+	python3 tools/check_symmetric_three_matching.py
 	python3 tools/check_fourier_multiplication_gates.py
 	python3 tools/check_integral_schur_crossing.py
 	python3 tools/check_prime_power_capacities.py
