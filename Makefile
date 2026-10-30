@@ -30,6 +30,7 @@ verify-frontier:
 	python3 tools/check_modular_recombination.py
 	python3 tools/check_modular_particle_hole.py
 	python3 tools/check_hamming_pfaffian.py
+	python3 tools/check_hamming_tensor_power.py
 	python3 tools/check_modular_central_rank.py
 	python3 tools/check_modular_binary_central_rank.py
 	python3 tools/check_three_label_span.py

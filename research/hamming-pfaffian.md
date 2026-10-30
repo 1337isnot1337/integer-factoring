@@ -121,7 +121,10 @@ Increasing fixed constants absorbs finitely many small widths.
 
 For any fixed `B`, one can additionally enumerate all `B^(lambda+1)`
 weight assignments and select the best resulting decomposition. This
-still costs `2^O_B(lambda)`, with only `O_B(lambda)` output pieces. Allowing
+still costs `2^O_B(lambda)`, with only `O_B(lambda)` output pieces.
+The [bit-permutation lemma](hamming-tensor-power.md) further reduces this outer
+loop to `binom(lambda+B,B-1)` weight multisets, including permutations of the
+leading position. That note also gives an exact 23-term local tensor formula. Allowing
 unbounded weights such as `w_j=j` changes the degree bound; the full-span
 cost argument must not be applied to those experiments unchanged.
 

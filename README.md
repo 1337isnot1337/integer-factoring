@@ -137,6 +137,11 @@ be optimized in `2^O(lambda)` construction time, while selecting only
 `O(lambda)` pieces. The exact small all-one optima are rank products
 4, 36, and 256 at widths 1, 2, and 3. A uniform improved width bound remains
 open. Run `python3 tools/check_hamming_pfaffian.py` or add `--full`.
+An [exact local formula](research/hamming-tensor-power.md) expresses the whole
+profile using 23 fixed four-leg polynomial tensors. Permuting all non-low
+bit positions, including the leading position, proves that only polynomially
+many bounded-weight multisets need testing. This reduces the search without
+claiming a uniform rank saving. Run `python3 tools/check_hamming_tensor_power.py`.
 
 A [reflected particle-hole identity](research/modular-particle-hole.md)
 gives an exact compression rule at every binary mode-block size. Above half
