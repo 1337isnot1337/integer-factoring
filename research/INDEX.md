@@ -14,6 +14,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Polynomial exact divisor preprocessing](polynomial-divisor-preprocessing.md): an unconditional uniform `n^O(1)`-time, `O(log n)`-space corollary of Nicolas's exponent theorem, with exact threshold-center code; fixed global constants are not numerically instantiated.
 - [Quantum-spin arithmetic crossing paths](quantum-crossing-initial-forms.md): a rational deformation family, reduction at every prime, independent highest-weight controls, and 422 finite initial-form cases with exact local exclusions.
 - [Nilpotent-superoperator crossing families](nilpotent-flag-crossings.md): a basis-free all-field construction with exact Jordan-block column spectra, cyclic-vector invariance, explicit finite controls, and an exact single-transpose row theorem.
 - [Exact two-adic Cauchy channels](cauchy-two-adic-smith.md): explicit integral LDU factors, exact Smith exponents, and the remaining square-root mode-enumeration scale.

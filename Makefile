@@ -15,6 +15,7 @@ verify-docs:
 	python3 tools/check_docs.py
 
 verify-constructions:
+	python3 tools/check_nicolas_threshold_centers.py --output /tmp/integer-factoring-nicolas-threshold-centers.json
 	python3 tools/check_quantum_crossing.py --output /tmp/integer-factoring-quantum-crossing-audit.json
 	python3 tools/check_nilpotent_flag_crossings.py --output /tmp/integer-factoring-nilpotent-flag-crossings.json
 	python3 tools/check_cauchy_two_adic_smith.py --output /tmp/integer-factoring-cauchy-two-adic-smith.json

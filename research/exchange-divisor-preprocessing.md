@@ -2,6 +2,12 @@
 
 ## Result and evidence
 
+The later [polynomial preprocessing theorem](polynomial-divisor-preprocessing.md)
+strengthens the uniform existence bound to polynomial time and logarithmic
+workspace using Nicolas's classical exponent estimates. Its fixed global
+constants are not numerically instantiated. The concrete exchange oracle and
+its separate resource bounds remain the subject of this note.
+
 Let
 
 \[
