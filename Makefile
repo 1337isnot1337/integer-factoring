@@ -89,6 +89,7 @@ verify-post-half:
 	python3 tools/check_additional_crossing_screens.py
 	python3 tools/explore_symplectic_boundary_codes.py --cases 4:4 --optimize
 	python3 tools/explore_cubic_off_syndrome_outputs.py --output /tmp/integer-factoring-cubic-output-corrections.json
+	python3 tools/check_cubic_output_identity.py --multirow evidence/cubic-multirow-outputs.json --output /tmp/integer-factoring-cubic-output-identity.json
 
 verify-frontier:
 	python3 tools/check_piece_transfer.py
