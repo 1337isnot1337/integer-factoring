@@ -46,6 +46,7 @@ verify-frontier:
 	python3 tools/check_pauli_walsh_dictionary.py
 	python3 tools/check_pauli_walsh_pairs.py
 	python3 tools/check_growing_number_field_transfer.py
+	python3 tools/check_rank_sum_global_transfer.py
 	python3 tools/check_characteristic_independent_recovery.py
 	python3 tools/check_piece_transfer.py
 	python3 tools/check_boson_truncation.py

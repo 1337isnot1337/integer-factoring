@@ -19,6 +19,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Global-block field transfer](global-block-field-transfer.md): varying number fields, raw construction cost `2^O(t^h)`, and reciprocal-logarithmic width error preserve the exact simultaneous time and space exponent.
 - [Recovery in varying characteristic](characteristic-independent-recovery.md): short verified divisor descriptors extend the global-block transfer to varying finite fields, including characteristic two.
 - [Exact exterior crossing algebra](bi-exterior-crossing-algebra.md): an explicit characteristic-two representation makes both crossing cuts exact square-zero multiplication ranks, with arbitrary generator changes and a directly checked `(36,36)` direction.
+- [Quantitative raw rank-sum transfer](rank-sum-global-transfer.md): exponentially many raw pieces are permitted under a total channel-rank cost bound, preserving the exact time and space endpoint through one global block length.
 - [Sparse divisor nonzeroness](sparse-divisor-nonzeroness.md): detection of divisors in weighted polynomial counts.
 - [Modular crossing](modular-crossing.md): normalized finite-field pieces and quotient construction.
 - [Homogeneous duals](homogeneous-duals.md): alternative algebraic pieces and their checked identities.

@@ -162,6 +162,12 @@ covers finite fields of varying characteristic. These results broaden
 the admissible construction interface without supplying a stronger
 contraction.
 
+The [raw rank-sum extension](research/rank-sum-global-transfer.md)
+also permits exponentially many pieces when their total displayed
+cost satisfies `sum sqrt(r_i*c_i)<=2^(2*rho*t+O(t/log(t+2)))`.
+Keeping exact channel cardinalities until after type amplification
+preserves the same quantitative time and space endpoint.
+
 See the [research index](research/INDEX.md) for completed arguments, scoped obstructions, and older candidates. Active work can also appear in [open pull requests](https://github.com/1337isnot1337/integer-factoring/pulls); branch research is not automatically a result on `main`.
 
 ## Contribution and attribution
