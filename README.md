@@ -80,6 +80,14 @@ extend it through 52 labels. These restrictions concern that criterion;
 they leave other constructions open and do not change the factoring
 exponent. All three exact replays are included in `make verify-frontier`.
 
+The [two-product complement theorem](research/two-product-complement.md)
+proves `rank(E_d - P tensor Q - R tensor S) >= d*(d-1)/2` over every
+field, including singular matrix pencils. A separate
+[scalar-relaxation example](research/weighted-cut-relaxation-limit.md)
+shows why these rank budgets alone cannot settle every dimension:
+abstract rank lists attain `O(d log d)` cost while satisfying them.
+Realizing those lists by compatible tensor pieces remains unresolved.
+
 The [quadratic Boolean-code oracle](research/quadratic-code-oracle.md)
 computes crossing coefficients in polynomial time without expanding
 the evaluation words. Its `2^O(sqrt(lambda))` coefficient count and

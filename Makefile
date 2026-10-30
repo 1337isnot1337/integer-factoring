@@ -23,6 +23,8 @@ verify-frontier:
 	python3 tools/check_weighted_cut_rank_budget.py
 	python3 tools/check_weighted_cut_residual_budget.py
 	python3 tools/check_weighted_cut_dual_certificate.py
+	python3 tools/check_two_product_complement.py
+	python3 tools/check_weighted_cut_relaxation_limit.py
 	python3 tools/check_quadratic_crossing.py
 	python3 tools/check_growing_number_field_transfer.py
 	python3 tools/check_characteristic_independent_recovery.py

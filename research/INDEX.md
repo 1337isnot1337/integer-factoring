@@ -31,6 +31,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Weighted cut-rank budgets](weighted-cut-rank-budget.md): an all-field harmonic lower bound and an exact exclusion of finite rank-sum seeds through 46 labels.
 - [Residual cut-rank budgets](weighted-cut-residual-budget.md): a separate exact refinement excludes the same criterion through 50 labels.
 - [Positive cut duals](weighted-cut-dual-certificate.md): six exact rational witnesses extend the finite rank-sum exclusion through 52 labels.
+- [Two-product complement](two-product-complement.md): over every field, approximating the swap by two product operators leaves rank at least `d(d-1)/2`, including singular pencils.
+- [Limit of scalar cut budgets](weighted-cut-relaxation-limit.md): abstract dyadic rank profiles satisfy the current scalar constraints with cost `O(d log d)`; a tensor realization is not supplied.
 - [Quadratic Boolean-code oracle](quadratic-code-oracle.md): polynomial coefficient queries, a rank-six annihilator theorem, and finite raw-profile evidence; no improved contraction is proved.
 - [Directions beyond half](post-half-directions.md): experiments, scope, and unresolved questions.
 - [Network tradeoff](half-top-structure.md): restriction for the current local-enumeration and wire-channel constructor.

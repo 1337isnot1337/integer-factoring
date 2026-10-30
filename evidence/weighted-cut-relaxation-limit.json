@@ -1,0 +1,119 @@
+{
+  "status": "PASS",
+  "tensor_realization_asserted": false,
+  "scope": "limitation of scalar cut-budget obstructions only",
+  "checker_sha256": "e65726f64ce987ac028fb9b15c9afa93fd0c78855088e660ec99bfbd6b6fd149",
+  "weighted_inequalities": 16404,
+  "small_cut_subsets": 74,
+  "dimensions": [
+    {
+      "d": 2,
+      "pieces": 4,
+      "cost": 8,
+      "total_row_rank": 9,
+      "total_column_rank": 9,
+      "weighted_inequalities": 6,
+      "small_cut_subsets": 8
+    },
+    {
+      "d": 4,
+      "pieces": 6,
+      "cost": 24,
+      "total_row_rank": 35,
+      "total_column_rank": 35,
+      "weighted_inequalities": 10,
+      "small_cut_subsets": 6
+    },
+    {
+      "d": 8,
+      "pieces": 8,
+      "cost": 64,
+      "total_row_rank": 135,
+      "total_column_rank": 135,
+      "weighted_inequalities": 18,
+      "small_cut_subsets": 6
+    },
+    {
+      "d": 16,
+      "pieces": 10,
+      "cost": 160,
+      "total_row_rank": 527,
+      "total_column_rank": 527,
+      "weighted_inequalities": 34,
+      "small_cut_subsets": 6
+    },
+    {
+      "d": 32,
+      "pieces": 12,
+      "cost": 384,
+      "total_row_rank": 2079,
+      "total_column_rank": 2079,
+      "weighted_inequalities": 66,
+      "small_cut_subsets": 6
+    },
+    {
+      "d": 64,
+      "pieces": 14,
+      "cost": 896,
+      "total_row_rank": 8255,
+      "total_column_rank": 8255,
+      "weighted_inequalities": 130,
+      "small_cut_subsets": 6
+    },
+    {
+      "d": 128,
+      "pieces": 16,
+      "cost": 2048,
+      "total_row_rank": 32895,
+      "total_column_rank": 32895,
+      "weighted_inequalities": 258,
+      "small_cut_subsets": 6
+    },
+    {
+      "d": 256,
+      "pieces": 18,
+      "cost": 4608,
+      "total_row_rank": 131327,
+      "total_column_rank": 131327,
+      "weighted_inequalities": 514,
+      "small_cut_subsets": 6
+    },
+    {
+      "d": 512,
+      "pieces": 20,
+      "cost": 10240,
+      "total_row_rank": 524799,
+      "total_column_rank": 524799,
+      "weighted_inequalities": 1026,
+      "small_cut_subsets": 6
+    },
+    {
+      "d": 1024,
+      "pieces": 22,
+      "cost": 22528,
+      "total_row_rank": 2098175,
+      "total_column_rank": 2098175,
+      "weighted_inequalities": 2050,
+      "small_cut_subsets": 6
+    },
+    {
+      "d": 2048,
+      "pieces": 24,
+      "cost": 49152,
+      "total_row_rank": 8390655,
+      "total_column_rank": 8390655,
+      "weighted_inequalities": 4098,
+      "small_cut_subsets": 6
+    },
+    {
+      "d": 4096,
+      "pieces": 26,
+      "cost": 106496,
+      "total_row_rank": 33558527,
+      "total_column_rank": 33558527,
+      "weighted_inequalities": 8194,
+      "small_cut_subsets": 6
+    }
+  ],
+  "last_example_strictly_below_target": true
+}
