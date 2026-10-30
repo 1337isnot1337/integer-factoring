@@ -17,6 +17,8 @@ verify-post-half:
 	python3 tools/check_half_restricted_labels.py
 
 verify-frontier:
+	python3 tools/check_streamed_seed_transfer.py
+	python3 tools/check_six_label_rank_sum.py
 	python3 tools/check_cyclic_orbit_crossing.py
 	python3 tools/check_nilpotent_cycle_labels.py
 	python3 tools/check_split_permutation_seed.py

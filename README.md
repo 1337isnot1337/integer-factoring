@@ -203,8 +203,19 @@ The [finite-seed amplification theorem](research/finite-seed-amplification.md)
 gives a sufficient all-size criterion from any finite certificate:
 `sum_i sqrt(r_i c_i) < d^(sqrt(2))` would improve the half exponent.
 It also proves that this particular criterion cannot succeed on at most
-five labels. Better rank analysis of the grouped tensor coefficients
-remains a distinct possibility.
+five labels. A separate [six-label theorem](research/six-label-rank-sum-obstruction.md)
+extends that exclusion to six labels over every field. Thus a seed
+passing this criterion needs at least seven labels. Better rank analysis
+of the grouped tensor coefficients remains a distinct possibility.
+
+The [streamed seed transfer](research/streamed-seed-transfer.md) strengthens
+the amplification interface to polynomial-time factor queries and
+polynomial working space. It also gives an exact finite polynomial
+certificate: supplied two-cut factorizations and a rational tilt suffice
+to certify an all-size rate with integer arithmetic. The usual Smith
+estimate cannot pass the half threshold on at most four labels; an exact
+integer comparison resolves the close four-label case. These are
+constructive criteria and scoped exclusions, not a newly passing seed.
 
 Three all-size results explain why several attractive finite restrictions
 do not give the desired improvement. The

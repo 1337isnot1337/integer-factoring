@@ -47,6 +47,13 @@ better analysis of its tensor coefficients, a restriction of labels, or
 another construction. A second limitation below concerns only a common
 Smith-form estimate.
 
+The later [six-label argument](six-label-rank-sum-obstruction.md)
+extends the first exclusion to six labels. The
+[streamed refinement](streamed-seed-transfer.md) constructs polynomial-time
+factor queries for the amplified family and excludes the usual Smith
+estimate on four labels as well. The Gaussian-elimination construction
+below remains a valid, less space-efficient implementation.
+
 The final section records useful structure of the newer three-label
 certificate in [PR #24](https://github.com/1337isnot1337/integer-factoring/pull/24),
 pinned here to commit `e96ee50560284301428d72421330d8773155d25b`.
