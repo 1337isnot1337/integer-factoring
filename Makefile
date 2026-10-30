@@ -1,4 +1,4 @@
-.PHONY: verify verify-post-half verify-formal verify-k6
+.PHONY: verify verify-post-half verify-modular verify-formal verify-k6
 
 verify:
 	python3 -m unittest discover -s tests -v
@@ -10,6 +10,12 @@ verify:
 	python3 tools/check_half_piece_ranks.py --no-numpy
 	python3 tools/check_half_projection.py
 	python3 tools/check_half_restricted_labels.py
+	python3 tools/check_weighted_prefix.py
+	python3 tools/check_fixed_characteristic_transfer.py
+	python3 tools/check_modular_pieces.py
+
+verify-modular:
+	python3 tools/check_modular_pieces.py --full
 	python3 tools/check_weighted_prefix.py
 	python3 tools/check_fixed_characteristic_transfer.py
 

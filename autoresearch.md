@@ -23,7 +23,13 @@ and [weighted constructor](research/weighted-prefix-constructor.md) establish
 a separate route through cyclic polynomial algebras over one fixed prime
 field. They transfer a weighted evaluator at cost `F(n)poly(n,q)` to factoring
 at cost `F(n)2^{O(n/log n)}`. A faster modular evaluator remains the missing
-step; these notes do not improve the current exponent. Parallel
+step; these notes do not improve the current exponent. The
+[modular crossing construction](research/past-half-pieces.md) now closes
+the same half-rate bound over characteristic two, with scale one, an
+invariant quotient, and a direct ring-operation count. Its finite 17-piece
+recombination improves rank product `36` to `27` on three labels, without
+an asymptotic improvement. Inspect its exact hypotheses before extrapolating.
+Parallel
 [PR #21](https://github.com/1337isnot1337/integer-factoring/pull/21) develops
 homogeneous rational duals and further channel and schedule bounds. Inspect
 its pinned source before duplicating those directions.

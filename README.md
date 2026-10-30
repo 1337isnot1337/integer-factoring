@@ -70,11 +70,23 @@ cancellation. The proof charges the cyclic algebra dimension outside the
 recursive operation count; substituting it into the old integer pad would
 not establish the required cost.
 
+The [modular crossing construction](research/past-half-pieces.md) supplies
+an effective family over characteristic two. Its crossing multiplier is
+one, and a proved invariant quotient removes all even-index modes and
+squares. A classical distinct-odd-partition estimate proves its complete
+width bound at `rho=1/sqrt(2)`. An ordinary ring-operation argument,
+followed by the weighted transfer, therefore reproduces the full `1/2`
+factoring rate in a fixed characteristic.
+
+There is also a finite algebraic improvement: 17 explicitly listed
+recombined pieces reduce the maximum row-rank times column-rank from
+`36` to `27` on a three-label characteristic-two domain. This does not
+give a growing family with a better asymptotic width coefficient.
+
 These are complete ordinary construction and transfer arguments, with
-finite exact checks. The transfer remains conditional on a faster modular
-evaluator. It does not establish an exponent above `1/2`. Run
-`make verify` for the weighted-constructor and transfer checks alongside
-the existing certificates.
+finite exact checks. An exponent above `1/2` still requires a faster
+modular family or evaluator. Run `make verify` for the default checks
+and `make verify-modular` for the larger recorded modular-rank suite.
 
 ## Lean theorem: exponent 1/30
 
@@ -252,6 +264,15 @@ requires real-number approximation in the algorithm.
   an almost full intermediate-dimension bound, with exact constants and
   explicit conditions on any selected binary subset. It does not bound the
   ranks of the final composed pieces.
+- [Fixed-characteristic transfer](research/fixed-characteristic-transfer.md)
+  and [weighted divisor constructor](research/weighted-prefix-constructor.md):
+  a complete sparse-polynomial route from a modular evaluator to factoring,
+  including the coefficient-algebra representation and all query costs.
+- [Modular crossing family](research/past-half-pieces.md):
+  integral duality before reduction, invariant state and label quotients,
+  a unit crossing scale, a full characteristic-two half-rate bound, and
+  a finite 17-piece improvement. Its [exact evidence](evidence/modular-pieces.json)
+  does not establish a logarithmic saving exponent above `1/2`.
 - [Baseline audit](research/baseline-audit.md): exact depth recurrence,
   contraction, all-level cost bound, and machine-cost bridge.
 - [Verified k6 theorem](research/verified-k6.md): complete machine proof,
