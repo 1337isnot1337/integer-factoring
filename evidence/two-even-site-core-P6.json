@@ -1,0 +1,452 @@
+{
+  "pairs": 6,
+  "labels": 240,
+  "basis_dimension": 10,
+  "normalized_monomials_t_z": [
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      3,
+      0
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      5,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      3,
+      1
+    ]
+  ],
+  "syndromes": [
+    0,
+    3,
+    5,
+    6,
+    9,
+    10,
+    12,
+    15,
+    17,
+    18,
+    20,
+    23,
+    24,
+    27,
+    29,
+    30,
+    33,
+    34,
+    36,
+    39,
+    40,
+    43,
+    45,
+    46,
+    48,
+    51,
+    53,
+    54,
+    57,
+    58,
+    60
+  ],
+  "block_sizes": [
+    3840,
+    2048,
+    2048,
+    2048,
+    2048,
+    2048,
+    2048,
+    1536,
+    2048,
+    2048,
+    2048,
+    1536,
+    2048,
+    1536,
+    1536,
+    1536,
+    2048,
+    2048,
+    2048,
+    1536,
+    2048,
+    1536,
+    1536,
+    1536,
+    2048,
+    1536,
+    1536,
+    1536,
+    1536,
+    1536,
+    1536
+  ],
+  "independent_coordinate_witnesses": [
+    [
+      0,
+      0,
+      0,
+      17
+    ],
+    [
+      0,
+      1,
+      1,
+      15
+    ],
+    [
+      0,
+      1,
+      257,
+      1020
+    ],
+    [
+      0,
+      1,
+      1281,
+      990
+    ],
+    [
+      0,
+      5,
+      5,
+      5
+    ],
+    [
+      0,
+      5,
+      261,
+      340
+    ],
+    [
+      0,
+      21,
+      21,
+      3
+    ],
+    [
+      0,
+      21,
+      277,
+      204
+    ],
+    [
+      0,
+      85,
+      85,
+      1
+    ],
+    [
+      0,
+      85,
+      341,
+      68
+    ]
+  ],
+  "literal_polynomial_controls": [
+    {
+      "cut": 0,
+      "complete_polynomial_entries_checked": 173,
+      "exceptional_union_size_counts": {
+        "2": 3,
+        "3": 40,
+        "4": 130
+      }
+    },
+    {
+      "cut": 1,
+      "complete_polynomial_entries_checked": 173,
+      "exceptional_union_size_counts": {
+        "2": 3,
+        "3": 40,
+        "4": 130
+      }
+    }
+  ],
+  "binary_screen_audit": {
+    "field_size": 2,
+    "vectors_tested": 1023,
+    "integer_cost_gate": 2325,
+    "eligible_vectors": [
+      {
+        "event": "eligible",
+        "index": 32,
+        "code": 1024,
+        "row_rank": 38122,
+        "column_rank": 60,
+        "product": 2287320,
+        "eligible": true
+      },
+      {
+        "event": "eligible",
+        "index": 42,
+        "code": 1092,
+        "row_rank": 138,
+        "column_rank": 23494,
+        "product": 3242172,
+        "eligible": true
+      },
+      {
+        "event": "eligible",
+        "index": 63,
+        "code": 1365,
+        "row_rank": 1,
+        "column_rank": 57600,
+        "product": 57600,
+        "eligible": true
+      },
+      {
+        "event": "eligible",
+        "index": 512,
+        "code": 262144,
+        "row_rank": 25786,
+        "column_rank": 64,
+        "product": 1650304,
+        "eligible": true
+      },
+      {
+        "event": "eligible",
+        "index": 544,
+        "code": 263168,
+        "row_rank": 30218,
+        "column_rank": 40,
+        "product": 1208720,
+        "eligible": true
+      },
+      {
+        "event": "eligible",
+        "index": 960,
+        "code": 348160,
+        "row_rank": 64,
+        "column_rank": 25786,
+        "product": 1650304,
+        "eligible": true
+      },
+      {
+        "event": "eligible",
+        "index": 1002,
+        "code": 349252,
+        "row_rank": 134,
+        "column_rank": 26652,
+        "product": 3571368,
+        "eligible": true
+      },
+      {
+        "event": "eligible",
+        "index": 1023,
+        "code": 349525,
+        "row_rank": 65,
+        "column_rank": 57600,
+        "product": 3744000,
+        "eligible": true
+      }
+    ],
+    "eligible_span_dimension": 5,
+    "endpoint_remainder": 1,
+    "excluded_by_affordable_span": true,
+    "independent_rank_controls": [
+      {
+        "mask": 32,
+        "ranks": [
+          38122,
+          60
+        ],
+        "affordable": true
+      },
+      {
+        "mask": 40,
+        "ranks": [
+          41036,
+          7196
+        ],
+        "affordable": false
+      },
+      {
+        "mask": 42,
+        "ranks": [
+          138,
+          23494
+        ],
+        "affordable": true
+      },
+      {
+        "mask": 63,
+        "ranks": [
+          1,
+          57600
+        ],
+        "affordable": true
+      },
+      {
+        "mask": 120,
+        "ranks": [
+          44160,
+          26028
+        ],
+        "affordable": false
+      },
+      {
+        "mask": 260,
+        "ranks": [
+          25760,
+          23272
+        ],
+        "affordable": false
+      },
+      {
+        "mask": 270,
+        "ranks": [
+          38250,
+          28680
+        ],
+        "affordable": false
+      },
+      {
+        "mask": 330,
+        "ranks": [
+          38122,
+          26652
+        ],
+        "affordable": false
+      },
+      {
+        "mask": 403,
+        "ranks": [
+          38614,
+          57600
+        ],
+        "affordable": false
+      },
+      {
+        "mask": 512,
+        "ranks": [
+          25786,
+          64
+        ],
+        "affordable": true
+      },
+      {
+        "mask": 544,
+        "ranks": [
+          30218,
+          40
+        ],
+        "affordable": true
+      },
+      {
+        "mask": 587,
+        "ranks": [
+          45208,
+          57600
+        ],
+        "affordable": false
+      },
+      {
+        "mask": 602,
+        "ranks": [
+          45208,
+          26708
+        ],
+        "affordable": false
+      },
+      {
+        "mask": 674,
+        "ranks": [
+          15066,
+          23494
+        ],
+        "affordable": false
+      },
+      {
+        "mask": 752,
+        "ranks": [
+          44160,
+          25787
+        ],
+        "affordable": false
+      },
+      {
+        "mask": 770,
+        "ranks": [
+          41036,
+          23784
+        ],
+        "affordable": false
+      },
+      {
+        "mask": 831,
+        "ranks": [
+          7355,
+          57600
+        ],
+        "affordable": false
+      },
+      {
+        "mask": 960,
+        "ranks": [
+          64,
+          25786
+        ],
+        "affordable": true
+      },
+      {
+        "mask": 1002,
+        "ranks": [
+          134,
+          26652
+        ],
+        "affordable": true
+      },
+      {
+        "mask": 1023,
+        "ranks": [
+          65,
+          57600
+        ],
+        "affordable": true
+      }
+    ],
+    "screen_sha256": "44e3484c9f6002a3b582e815f51682d69ea4164b6db27e407fb7b1417ec2f18e",
+    "native_source_sha256": {
+      "screen_weighted_pfaffian_span.cpp": "ab1a12d27a3c7f5d571b7a6635a09e8bc7909d8eb04c8a627eb93c74852d326d",
+      "screen_pfaffian_span_f4.cpp": "40e44b6987e5f347e35dd524f082a6b966c8171f6cbe1b4c433abab18f50912a"
+    }
+  },
+  "native_input_sha256": "ddcdb122a204ff04d4466ffff05d04e9b8a145ce04e59be0903a094dcadfeaf4",
+  "elapsed_seconds": 27.29738327400264,
+  "source_sha256": {
+    "assemble_two_even_site_cores.py": "3b0ad33919e8d0c316203c1737d9762f1d10fb515f86a15372df375d667d4d00",
+    "explore_symplectic_boundary_codes.py": "33995930c5d2181dc13a9ac9da661be201c2f1cfbd6be07b1411c08f3f5d8720",
+    "explore_complement_edge_pencils.py": "730649e439a994ab7722e20faeeab3162ae7fad477c9530c5753e5862d7aaec0"
+  },
+  "four_site_basis_sha256": "46231666bc0466fab98b32fe3567df4b46ff7981cb890a7a72a0d2059955f900"
+}

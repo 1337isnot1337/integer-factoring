@@ -1,0 +1,5953 @@
+{
+  "affordable_span_dimension": 341,
+  "all_mixtures_of_recorded_binary_affordable_pieces_excluded": true,
+  "checker_sha256": "dcc96f249aa50f5a06e411509e07da01b8867a640c338a3c202e23e75e41a609",
+  "crossing_entry": 1,
+  "crossing_in_full_variable_span": true,
+  "every_pool_tensor_entry": 0,
+  "full_variable_span_dimension": 819,
+  "input_sha256": "a784ebeba08f7a1e2708e08dd6c7a3c9b01382be7480b2b5f818227c47d3460d",
+  "integer_cost_gate": 16,
+  "pieces": [
+    {
+      "case": 0,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        14
+      ],
+      "tensor_sha256": "289d4cb79eced1d6b1da16272909890a437c0d64cd3236143319e83dec8ff027"
+    },
+    {
+      "case": 0,
+      "mask": 10,
+      "rank_pair": [
+        49,
+        1
+      ],
+      "tensor_sha256": "bb2e8e2566fd8ecef40aedacf4488d1f1b1f79e16458a14bbc20358a43b51517"
+    },
+    {
+      "case": 168,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        9
+      ],
+      "tensor_sha256": "fc0ee70bde3dd0d0df41dcbad6628493dcbffa7240578901d985621eff974737"
+    },
+    {
+      "case": 169,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        9
+      ],
+      "tensor_sha256": "e84c13db6904e736c5ed9316d45d6d840b7ed1679175a98fa188cf3038599d21"
+    },
+    {
+      "case": 170,
+      "mask": 4,
+      "rank_pair": [
+        14,
+        14
+      ],
+      "tensor_sha256": "df7af50ddfe70f908aec3981046b6409ddd1ebf2ac02f0f6b84f4a75b675872a"
+    },
+    {
+      "case": 172,
+      "mask": 14,
+      "rank_pair": [
+        10,
+        9
+      ],
+      "tensor_sha256": "4291654003aa97d76c7eaa4a0614068e3221f7c24288067a316b8e1392bd3447"
+    },
+    {
+      "case": 173,
+      "mask": 4,
+      "rank_pair": [
+        31,
+        8
+      ],
+      "tensor_sha256": "17cb20417b1529fe15d5625eb8e8ed339c47c3d109342d32945cdb2c6e24244f"
+    },
+    {
+      "case": 173,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        16
+      ],
+      "tensor_sha256": "70ff42dc8627d11a442de112763641aa75d91b88a8754d336d96626556e78983"
+    },
+    {
+      "case": 173,
+      "mask": 14,
+      "rank_pair": [
+        19,
+        9
+      ],
+      "tensor_sha256": "bd499bbda2067e0ca6528a7621b5431c43dd33b22c9c698beb245379481f1c04"
+    },
+    {
+      "case": 174,
+      "mask": 4,
+      "rank_pair": [
+        28,
+        9
+      ],
+      "tensor_sha256": "8bd7b1be15de4a6f0d9087cfe32006baef18175935b3bf9a70027c1c66d16e81"
+    },
+    {
+      "case": 176,
+      "mask": 4,
+      "rank_pair": [
+        36,
+        6
+      ],
+      "tensor_sha256": "b5674eb704e0ae04cac86ad6831c2612f2a1eacdcb526b28cce7f32f638b252a"
+    },
+    {
+      "case": 176,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        6
+      ],
+      "tensor_sha256": "2b534fe5de6f4d7d391838e5e21464964d7d422c9006281734bb95ccef510c3e"
+    },
+    {
+      "case": 177,
+      "mask": 4,
+      "rank_pair": [
+        31,
+        6
+      ],
+      "tensor_sha256": "1f87a9300327945f7abebdd9433133f19c9c8337cf22ccd7298013297308a610"
+    },
+    {
+      "case": 177,
+      "mask": 14,
+      "rank_pair": [
+        19,
+        6
+      ],
+      "tensor_sha256": "5fad0bad6800d89b77eca670d9de3a455634978dba04e64c55033c8d24e5240a"
+    },
+    {
+      "case": 178,
+      "mask": 4,
+      "rank_pair": [
+        21,
+        7
+      ],
+      "tensor_sha256": "d8e5555a24885ff4aad9a227cfeb685c109f498997521ca69de163bb7712b2c2"
+    },
+    {
+      "case": 178,
+      "mask": 14,
+      "rank_pair": [
+        29,
+        8
+      ],
+      "tensor_sha256": "97c8b81511f3c779f40a6330466a36d4d3ed53f8314a9deba3be056be2fe64f0"
+    },
+    {
+      "case": 180,
+      "mask": 4,
+      "rank_pair": [
+        35,
+        7
+      ],
+      "tensor_sha256": "a6a470b640a479af0b6a53aa73573875de0fc26af5a1872b802be799d4834066"
+    },
+    {
+      "case": 180,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        8
+      ],
+      "tensor_sha256": "0a0661e1c33ed05e7315d3b686be59a029ab47217e2b51223e45811f42c6fe56"
+    },
+    {
+      "case": 181,
+      "mask": 4,
+      "rank_pair": [
+        30,
+        5
+      ],
+      "tensor_sha256": "08c3b7fecd902b8c29ec4ec472809c852be2419b3572d103f6d9f8bbbc6c1669"
+    },
+    {
+      "case": 181,
+      "mask": 14,
+      "rank_pair": [
+        19,
+        6
+      ],
+      "tensor_sha256": "1e3bf02bf10f4067cf6b94b2db0ff09f6a3afee660dd00c6470d4aa30d54650d"
+    },
+    {
+      "case": 182,
+      "mask": 4,
+      "rank_pair": [
+        24,
+        10
+      ],
+      "tensor_sha256": "0ba607a20f26f8103fcd3e9a4051aa099fe038400cd0ce79580cd2c2c6d986e7"
+    },
+    {
+      "case": 184,
+      "mask": 4,
+      "rank_pair": [
+        36,
+        6
+      ],
+      "tensor_sha256": "bd5fda6a1e55294e8db825bdb38ccf2028bf33e1039f7109ef4511e6bfceabbd"
+    },
+    {
+      "case": 184,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        18
+      ],
+      "tensor_sha256": "24e6a2b3d03168293677f8e094a153d59000bcbf3d7081ef4c20c2b27af7ae23"
+    },
+    {
+      "case": 184,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        7
+      ],
+      "tensor_sha256": "af01a668cb2a323fd739d0cc4731a0e1beba70429cf4d7aa54f0340cc1e9336a"
+    },
+    {
+      "case": 185,
+      "mask": 4,
+      "rank_pair": [
+        34,
+        6
+      ],
+      "tensor_sha256": "654d4f5106743d40a80e7ff70ef6bc77a37e8691ea3ba4c1a2fdd8e411673f75"
+    },
+    {
+      "case": 185,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        7
+      ],
+      "tensor_sha256": "50a8f8592959664fab5cbd55ba9fc508a8f348d6b5eb02979d793ed48a95f33d"
+    },
+    {
+      "case": 188,
+      "mask": 4,
+      "rank_pair": [
+        34,
+        6
+      ],
+      "tensor_sha256": "927f1ba09a4e43deb2086ab339f10e6c710dae469d488996c51f21dd013072a1"
+    },
+    {
+      "case": 188,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        7
+      ],
+      "tensor_sha256": "52cc5e5148043ff3b3904890e386e3415b3a5094cd2e905bc3bf8e9c80b3a09f"
+    },
+    {
+      "case": 189,
+      "mask": 4,
+      "rank_pair": [
+        35,
+        7
+      ],
+      "tensor_sha256": "a85c7130b9f7996b702c54b3dfde2a8216d9e9c88c10cdc1640d24aa015ba952"
+    },
+    {
+      "case": 189,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        16
+      ],
+      "tensor_sha256": "9cba831c6dfd89697651274470f6b8412921ad99cd845f037be3c86b08eabe91"
+    },
+    {
+      "case": 189,
+      "mask": 14,
+      "rank_pair": [
+        16,
+        8
+      ],
+      "tensor_sha256": "e051659e6244e02415d87dbac7499ecff472f76a07fe885182e5ceaa9ccefc46"
+    },
+    {
+      "case": 190,
+      "mask": 4,
+      "rank_pair": [
+        26,
+        6
+      ],
+      "tensor_sha256": "bdfab9aaecea0cfc26171f14f6c20e63de4ebf1e62f74085f18f5dc35ab70242"
+    },
+    {
+      "case": 190,
+      "mask": 14,
+      "rank_pair": [
+        23,
+        7
+      ],
+      "tensor_sha256": "6fc4489171d0425ab5010ad1d877ff51b40478723e6707bda13febd8705af9a4"
+    },
+    {
+      "case": 192,
+      "mask": 4,
+      "rank_pair": [
+        38,
+        5
+      ],
+      "tensor_sha256": "a5ce3ba49a34e2f14b39fcd0c93dad97c4475049ba7a80fc33f423c452cb61e2"
+    },
+    {
+      "case": 192,
+      "mask": 14,
+      "rank_pair": [
+        11,
+        5
+      ],
+      "tensor_sha256": "53befb7fb45638e2c4397316ec5036362864ad05e1ca2b5fc1470c31ecf63822"
+    },
+    {
+      "case": 193,
+      "mask": 4,
+      "rank_pair": [
+        31,
+        8
+      ],
+      "tensor_sha256": "51383b9535d2fa7e5ec4858a2bb0dae7cd3be73f561d739ba9902daa11666199"
+    },
+    {
+      "case": 193,
+      "mask": 8,
+      "rank_pair": [
+        16,
+        14
+      ],
+      "tensor_sha256": "ec8d0dd643130036f6ce44c79fd46cfa12c4434e125add95499e1f9162108502"
+    },
+    {
+      "case": 193,
+      "mask": 14,
+      "rank_pair": [
+        19,
+        8
+      ],
+      "tensor_sha256": "08d7a1b01af9980e334856f92111efc8fe2c7c9590f854dd5cb1e81f378fbb00"
+    },
+    {
+      "case": 194,
+      "mask": 4,
+      "rank_pair": [
+        20,
+        10
+      ],
+      "tensor_sha256": "14d3f3be16bf9cdbcc6edc6f1543ed2776220eb596c74f996b9a5dd5339c87b9"
+    },
+    {
+      "case": 196,
+      "mask": 4,
+      "rank_pair": [
+        36,
+        5
+      ],
+      "tensor_sha256": "3ec302269461fdf72702b07dbfb05a54c7f0edf980cda95eba440a704144db62"
+    },
+    {
+      "case": 196,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        6
+      ],
+      "tensor_sha256": "2815413a5e1d1e41f3619c6293ade5ffd63c9252e0680fa6747716fc84331184"
+    },
+    {
+      "case": 197,
+      "mask": 4,
+      "rank_pair": [
+        31,
+        6
+      ],
+      "tensor_sha256": "7ff0b662e521febb64c30a52c44652a16828a4f656587943ae922d283874f8c1"
+    },
+    {
+      "case": 197,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        15
+      ],
+      "tensor_sha256": "8dcf1a7dc010012c1a76eb34276e8886b23cc9a1a7e0d02d2b92ba867c74edeb"
+    },
+    {
+      "case": 197,
+      "mask": 14,
+      "rank_pair": [
+        19,
+        7
+      ],
+      "tensor_sha256": "1dd7ada6c982d7ac09e6bdbfe668ba718b62c1df564c6f59f854d60a6fce9487"
+    },
+    {
+      "case": 198,
+      "mask": 4,
+      "rank_pair": [
+        23,
+        9
+      ],
+      "tensor_sha256": "f1642a5d347f8f379ab258599357d0b504ed4d16093ca5b9191c4a19390c191b"
+    },
+    {
+      "case": 200,
+      "mask": 4,
+      "rank_pair": [
+        35,
+        7
+      ],
+      "tensor_sha256": "f18f897c3b729a388f265e097ec09816457811e274fc517cf5b6eeaffdf13f4f"
+    },
+    {
+      "case": 200,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        15
+      ],
+      "tensor_sha256": "607df3de3803ae084317e3f0c6f26ea161cc1a1264da5380593050e771d2f394"
+    },
+    {
+      "case": 200,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        7
+      ],
+      "tensor_sha256": "8bfaa4c286f01af5ff55c36794b66c894d8134c82900ade8006c14e3f4c07778"
+    },
+    {
+      "case": 201,
+      "mask": 4,
+      "rank_pair": [
+        36,
+        5
+      ],
+      "tensor_sha256": "087552cc8fd5d23361426999faa6cbec038e959baa89debe6db3ed21155b0ca9"
+    },
+    {
+      "case": 201,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        6
+      ],
+      "tensor_sha256": "679af29fb1ac8d68e7471e3cdccc7cccebf68f937ace18fd11c45c4dad5db559"
+    },
+    {
+      "case": 202,
+      "mask": 4,
+      "rank_pair": [
+        24,
+        10
+      ],
+      "tensor_sha256": "f8368187779730416db660864998f2a6736fc0223838e1277e45c259ea4c0a9f"
+    },
+    {
+      "case": 202,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        18
+      ],
+      "tensor_sha256": "8a8e486f83b0290c99c337baf2f86a068fd5af8ca9e144a80438fadb412e1f08"
+    },
+    {
+      "case": 204,
+      "mask": 4,
+      "rank_pair": [
+        36,
+        6
+      ],
+      "tensor_sha256": "ee5bcae0b266f2391940ee03d0519b492b0837d8a7e6ef4fcae29d7ea37440f1"
+    },
+    {
+      "case": 204,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        7
+      ],
+      "tensor_sha256": "fa09e8f4d36fc1e5350528700e75b46750b805ae3eb4edcf743f00f6c638875c"
+    },
+    {
+      "case": 205,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        16
+      ],
+      "tensor_sha256": "b37ee7a771c585e833e265467e63152217fc2100a3ddfae4854d70000eb3a236"
+    },
+    {
+      "case": 205,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        8
+      ],
+      "tensor_sha256": "12499bd06ec94d4feea9469cd0390e72dac792089d48bb2db41513b9fa9d7776"
+    },
+    {
+      "case": 206,
+      "mask": 4,
+      "rank_pair": [
+        20,
+        6
+      ],
+      "tensor_sha256": "a2245c50e34b574452a84d9ed32f1cd05864d90d8b995f3bc69aed26dfad5f1f"
+    },
+    {
+      "case": 206,
+      "mask": 14,
+      "rank_pair": [
+        29,
+        7
+      ],
+      "tensor_sha256": "81104868122b4586fc80a1b35515382563513df9437156946489f8c6104cbd7f"
+    },
+    {
+      "case": 208,
+      "mask": 4,
+      "rank_pair": [
+        36,
+        5
+      ],
+      "tensor_sha256": "9b0733e04596bcdd9d8e9ead563a4aef2665eb9ab026d9053d23c68db429552e"
+    },
+    {
+      "case": 208,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        6
+      ],
+      "tensor_sha256": "b2033d65e4084cffc84105a3a29067448a4e0c6ecbddf0729063aaef7d51a464"
+    },
+    {
+      "case": 209,
+      "mask": 8,
+      "rank_pair": [
+        16,
+        14
+      ],
+      "tensor_sha256": "14c90f6dd8615f9ccf2c7c998f5a76bf06350aa9693fe40feea1ce824c45f790"
+    },
+    {
+      "case": 209,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        8
+      ],
+      "tensor_sha256": "527b31d799ac6c396938a54875fe4be781317d075888f6749b8d288131d525b6"
+    },
+    {
+      "case": 212,
+      "mask": 4,
+      "rank_pair": [
+        38,
+        6
+      ],
+      "tensor_sha256": "37f654ba5a67c8bf79ccd37911a4453ba64fb846d240a9ddd751a4ecc735212c"
+    },
+    {
+      "case": 212,
+      "mask": 8,
+      "rank_pair": [
+        16,
+        14
+      ],
+      "tensor_sha256": "dbc8f72e61fe9de54bf2a036af4c3550ba2723ad01359d4c7c52bec6cbeea46e"
+    },
+    {
+      "case": 212,
+      "mask": 14,
+      "rank_pair": [
+        11,
+        6
+      ],
+      "tensor_sha256": "d494b09d8af6ca62a081b38bc89dcf11c82090c206873abb8a0be40df8c2cda2"
+    },
+    {
+      "case": 213,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        11
+      ],
+      "tensor_sha256": "0ad1421ac1287d92d259c13456d7938ffd8e77389e3358381fcda91d45b83601"
+    },
+    {
+      "case": 214,
+      "mask": 4,
+      "rank_pair": [
+        21,
+        12
+      ],
+      "tensor_sha256": "7690b52023305572dba837df300d21b6b5d8f2a3c4c9fb875643717d27fbb6c5"
+    },
+    {
+      "case": 216,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        18
+      ],
+      "tensor_sha256": "e45a038c821009157b64bf930d4aec588c93e3cdf88446315bd7aef50298a86a"
+    },
+    {
+      "case": 216,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        8
+      ],
+      "tensor_sha256": "1578df84b7d3b9dc0620ec6d7b2279b26f3642be441144a6e4ffc0bdc9bebbe3"
+    },
+    {
+      "case": 217,
+      "mask": 4,
+      "rank_pair": [
+        35,
+        7
+      ],
+      "tensor_sha256": "f329c5bb76ee86673d21ec98273be782ae3bc07a0b9190d907974d292dc548b6"
+    },
+    {
+      "case": 217,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        7
+      ],
+      "tensor_sha256": "d7c6ec6d124ccbb6a9b5ff470a2873167b7c3f653eedaedcb1778b8b2d1325a7"
+    },
+    {
+      "case": 218,
+      "mask": 4,
+      "rank_pair": [
+        23,
+        8
+      ],
+      "tensor_sha256": "3be4e45213715ab6603b1898a8265e63c9fdf4af16f3a88029186641c2e39ed2"
+    },
+    {
+      "case": 218,
+      "mask": 14,
+      "rank_pair": [
+        28,
+        8
+      ],
+      "tensor_sha256": "f1fc1407d5a1803d873e2fce4d62a860a26ad53a8ed709d0d6b03f34098195c6"
+    },
+    {
+      "case": 220,
+      "mask": 4,
+      "rank_pair": [
+        38,
+        6
+      ],
+      "tensor_sha256": "9835b61b4f620c765a3319e069712f7e2d765e21f82d749017716c7261422c70"
+    },
+    {
+      "case": 220,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        18
+      ],
+      "tensor_sha256": "a88c10e507880440a0a932f49e6908c863dd40661e77f41c6fd45b0ac6e13541"
+    },
+    {
+      "case": 220,
+      "mask": 14,
+      "rank_pair": [
+        11,
+        6
+      ],
+      "tensor_sha256": "200d2ce255122bb2479eaaec320ed566be1f832c36a6668ed832e4951f0f2b1b"
+    },
+    {
+      "case": 221,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        12
+      ],
+      "tensor_sha256": "84cbdf367247ed971164540f3dce836e1a2b1c1c6be1cb43e62ba7540eebac43"
+    },
+    {
+      "case": 222,
+      "mask": 4,
+      "rank_pair": [
+        22,
+        9
+      ],
+      "tensor_sha256": "ab3b17bbea65719d2836c8da33ed1fbb4dbb3d0c03b5d3013fd07016e1b030b5"
+    },
+    {
+      "case": 224,
+      "mask": 4,
+      "rank_pair": [
+        33,
+        7
+      ],
+      "tensor_sha256": "4e84bc3b050397e29e5941436ee8010418644c9e80dd2f7dae5a54f8700893db"
+    },
+    {
+      "case": 224,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        14
+      ],
+      "tensor_sha256": "36620a0e9a2e07c65f69fb3dcf37f668c135b993852e5f12abf9e4d735b8e16b"
+    },
+    {
+      "case": 224,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        8
+      ],
+      "tensor_sha256": "9eef2eca998a82ba87e386c7ad718d341dfa4559b36e7bc4458d3b88f117a746"
+    },
+    {
+      "case": 225,
+      "mask": 4,
+      "rank_pair": [
+        32,
+        6
+      ],
+      "tensor_sha256": "ad76a47d8f3e5132812ef61eeeda55564974c14b390a9f70743b8167b89de383"
+    },
+    {
+      "case": 225,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        7
+      ],
+      "tensor_sha256": "26f39214f5143d0125dffa81c4ad7847350b21cb2196a4b0e1c4d017474dfd95"
+    },
+    {
+      "case": 226,
+      "mask": 4,
+      "rank_pair": [
+        21,
+        12
+      ],
+      "tensor_sha256": "bbe680da4771816ce11fb794158c80ae3cb80ea97e31a4e226f660b3dcc268d4"
+    },
+    {
+      "case": 228,
+      "mask": 4,
+      "rank_pair": [
+        36,
+        6
+      ],
+      "tensor_sha256": "0567792daf187872fa86eb2254f8839fcdb8420a72359c973285eb0b092928fb"
+    },
+    {
+      "case": 228,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        7
+      ],
+      "tensor_sha256": "af573c55a1cfee8a41525f0da314cd3b0d93b75a88c8e100ac779a882f176062"
+    },
+    {
+      "case": 229,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        14
+      ],
+      "tensor_sha256": "bca1658e0d880e167ce8d8e7d05598536eaafb0f896a6185fe1e38ae16de1379"
+    },
+    {
+      "case": 229,
+      "mask": 14,
+      "rank_pair": [
+        19,
+        8
+      ],
+      "tensor_sha256": "5c259de5cd254c3ce8b257db102ba4c178fc6fb80cb4f169bb41ede6b3d5eb93"
+    },
+    {
+      "case": 230,
+      "mask": 4,
+      "rank_pair": [
+        23,
+        10
+      ],
+      "tensor_sha256": "16df2299e248fd07f1245acea2ee457aad1fbbc2b959d9ae39272cd4e4fb0af1"
+    },
+    {
+      "case": 230,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        18
+      ],
+      "tensor_sha256": "9b0485968e1fed9ecb7eee2e0923d03340296e98b08a7019005b3037e02be281"
+    },
+    {
+      "case": 232,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        14
+      ],
+      "tensor_sha256": "e37d097a28a80f3eeb5bfb4e7a0ee6ee2a851b42f4d893dc0eb5b8960fddca75"
+    },
+    {
+      "case": 232,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        9
+      ],
+      "tensor_sha256": "1af9af3fc991ca62c82142ccd1bac979e2c28b978cc32b9c0d6da15fd10d8479"
+    },
+    {
+      "case": 233,
+      "mask": 4,
+      "rank_pair": [
+        35,
+        7
+      ],
+      "tensor_sha256": "5d4b42836ea5913de4e3987e9e03cd1075a48bc40c21aca72ca874935dbb632c"
+    },
+    {
+      "case": 233,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        18
+      ],
+      "tensor_sha256": "cf53a5831e35393884b0919d6c92fe545ee22f4dc7cbd09122f6a9e18b1bb5fa"
+    },
+    {
+      "case": 233,
+      "mask": 14,
+      "rank_pair": [
+        16,
+        8
+      ],
+      "tensor_sha256": "0fc744bf5110fe6d159b29ff4fa581172d74a85a46f6dc4b4ce50a8e9b9f0fe7"
+    },
+    {
+      "case": 234,
+      "mask": 4,
+      "rank_pair": [
+        17,
+        10
+      ],
+      "tensor_sha256": "1421dfc334e028d2675834a877996a12a3872e4a1e6c30a4014a18b6349aa219"
+    },
+    {
+      "case": 234,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        15
+      ],
+      "tensor_sha256": "7682da09f81aea9459e131e514fcbe108806861b30213eee88ac231f33c35cb5"
+    },
+    {
+      "case": 236,
+      "mask": 4,
+      "rank_pair": [
+        34,
+        6
+      ],
+      "tensor_sha256": "62402cbb2b9833540c52b539239a393fa87bc4c94c36eb1122ff2af5ef486b7d"
+    },
+    {
+      "case": 236,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        7
+      ],
+      "tensor_sha256": "cdfe9711a354782fa5c75a4fed4213bfa7ce6aaf3e2fa9880059b8eea6cbc120"
+    },
+    {
+      "case": 237,
+      "mask": 4,
+      "rank_pair": [
+        33,
+        7
+      ],
+      "tensor_sha256": "f6eecab6d281a93c2ce6266ca0fdebe51943586388ebbb160fa0bffc2e59c85f"
+    },
+    {
+      "case": 237,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        8
+      ],
+      "tensor_sha256": "76c0eb64018ccdbeadb8c3215937f1598ba4eb0995d95558d615772bf4add9c3"
+    },
+    {
+      "case": 240,
+      "mask": 8,
+      "rank_pair": [
+        16,
+        14
+      ],
+      "tensor_sha256": "1d9665df111d4e6ad7cdf089235c796f9d8c2f75a76aa76049543c12ba34cb11"
+    },
+    {
+      "case": 240,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        9
+      ],
+      "tensor_sha256": "4be0a1b3c79d455124ac5dc607daa36087a6e50c8fb2ea0fe136eb3df070f445"
+    },
+    {
+      "case": 241,
+      "mask": 4,
+      "rank_pair": [
+        34,
+        5
+      ],
+      "tensor_sha256": "4d7d93de40da8eb4eb39c5eb6cca29ba5f3b6ecd293e83d058aaee4626d049d9"
+    },
+    {
+      "case": 241,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        6
+      ],
+      "tensor_sha256": "596d6919dc4993ccf872f584fb78850e6a141acecd817f1771a3e857d6fe7ef1"
+    },
+    {
+      "case": 244,
+      "mask": 8,
+      "rank_pair": [
+        16,
+        12
+      ],
+      "tensor_sha256": "e791b5a9cef763f2a7111aae5bd5156b7b815c1ae9d8c9c13d8c557649d463ab"
+    },
+    {
+      "case": 244,
+      "mask": 14,
+      "rank_pair": [
+        14,
+        9
+      ],
+      "tensor_sha256": "f4433bfdbaeed096be418f6dfafcf4633e4bde69912a555926dab76b07b980da"
+    },
+    {
+      "case": 245,
+      "mask": 4,
+      "rank_pair": [
+        32,
+        6
+      ],
+      "tensor_sha256": "9b02c7379d4382064ea99311ed3ce7f8041689d0adf856b093ce0931adc06b7e"
+    },
+    {
+      "case": 245,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        7
+      ],
+      "tensor_sha256": "f9ecfc5ecc0415c958a6c915159794c2fe08b6c218cbfc0ad631e92c02987355"
+    },
+    {
+      "case": 246,
+      "mask": 4,
+      "rank_pair": [
+        25,
+        7
+      ],
+      "tensor_sha256": "8ab93a1c17f54da7faee37d85068b1ec29e0afeb0ff6c433e966ea4acf2991f0"
+    },
+    {
+      "case": 246,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        16
+      ],
+      "tensor_sha256": "b866057e9bc16779b34fd5e038c0e0eea7bdff8e1156436377a93bd2e7cb1b4b"
+    },
+    {
+      "case": 246,
+      "mask": 14,
+      "rank_pair": [
+        26,
+        8
+      ],
+      "tensor_sha256": "ea6cae073a396f85c70bc8627bb2b713e824b4320b2436876c3435ecf5d64b88"
+    },
+    {
+      "case": 248,
+      "mask": 8,
+      "rank_pair": [
+        16,
+        15
+      ],
+      "tensor_sha256": "287e35a95f1d68e37133e70390f1e0ce2e0f18ef8454583afd300daf28a7eeec"
+    },
+    {
+      "case": 248,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        8
+      ],
+      "tensor_sha256": "0be8508f477c2cecb1eb51d846b89cfaadbf4d167c94d40ea84172606cfc996b"
+    },
+    {
+      "case": 249,
+      "mask": 4,
+      "rank_pair": [
+        33,
+        7
+      ],
+      "tensor_sha256": "d8f03b8bc134562bf3a6be27f5fb6de9e7b150b777127acbab8eecc89ab503de"
+    },
+    {
+      "case": 249,
+      "mask": 8,
+      "rank_pair": [
+        16,
+        14
+      ],
+      "tensor_sha256": "23936241e0bcd4633f2ad62273e1b2cdf974940d6fe90b7dcdc1ee0772a96a98"
+    },
+    {
+      "case": 249,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        8
+      ],
+      "tensor_sha256": "820cf73ca2a3a6e3fde3704cbfeb60b66c384abb6cc143b686af26a81877e141"
+    },
+    {
+      "case": 250,
+      "mask": 4,
+      "rank_pair": [
+        20,
+        5
+      ],
+      "tensor_sha256": "12d7b245ac4c9b151ea73d46dc17256d1ca51d4e7308729e5e2465d9e7cc2b52"
+    },
+    {
+      "case": 250,
+      "mask": 14,
+      "rank_pair": [
+        29,
+        6
+      ],
+      "tensor_sha256": "628b4c3bb2956e8714f9b5895b274160a2925c980a252edaf88bb2db13fed6f1"
+    },
+    {
+      "case": 252,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        8
+      ],
+      "tensor_sha256": "c58e17e062d6167fa8434057ef710a7180f48a4f0111a10202135d7d6456d005"
+    },
+    {
+      "case": 253,
+      "mask": 4,
+      "rank_pair": [
+        33,
+        7
+      ],
+      "tensor_sha256": "eadad6ecf77ede0848beaa268f754c269c0338533af5f566b7a280c862ac393b"
+    },
+    {
+      "case": 253,
+      "mask": 14,
+      "rank_pair": [
+        18,
+        8
+      ],
+      "tensor_sha256": "ba2eee00a5da1d9a900ed3dff7fb9e63892573581802a7fd20720082b3dc0494"
+    },
+    {
+      "case": 256,
+      "mask": 4,
+      "rank_pair": [
+        36,
+        5
+      ],
+      "tensor_sha256": "e5d5e582216c42813b4e07b5e568dfa27e217075dc1945f8ae68bc2d56059bc0"
+    },
+    {
+      "case": 256,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        6
+      ],
+      "tensor_sha256": "ba7269c5e5277352e61acb214973f66a2f8d8ddf0fb2ad12e9f3e17e0f55eb66"
+    },
+    {
+      "case": 257,
+      "mask": 4,
+      "rank_pair": [
+        33,
+        7
+      ],
+      "tensor_sha256": "9ddb07ea91c04b590650cd28edf0ed88a99dc8fe053411ecdab7d1320cee48bd"
+    },
+    {
+      "case": 257,
+      "mask": 14,
+      "rank_pair": [
+        18,
+        8
+      ],
+      "tensor_sha256": "44e8717de484fbcf19d10783e40157c02d53f9646bca9499d52fe2c48426bd5c"
+    },
+    {
+      "case": 260,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        16
+      ],
+      "tensor_sha256": "761da4e9af46aeb0d84016776c58a2f4512010e0e7c5a485c79851af2fabd15c"
+    },
+    {
+      "case": 260,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        9
+      ],
+      "tensor_sha256": "00771b8e654e9fe25df078c7a20af2f1dc2867d786b14717f8b8f289be96bac1"
+    },
+    {
+      "case": 261,
+      "mask": 8,
+      "rank_pair": [
+        16,
+        14
+      ],
+      "tensor_sha256": "f2d7a1ba49a853510ee53369439d8489f1b7dde748dc5850ae3eaad5a45af4e1"
+    },
+    {
+      "case": 261,
+      "mask": 14,
+      "rank_pair": [
+        16,
+        8
+      ],
+      "tensor_sha256": "983c98bf6b9b9160ae65cd61fb2d02701e37b33b60866616dcef0a3cbdda2823"
+    },
+    {
+      "case": 264,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        17
+      ],
+      "tensor_sha256": "89b3e7b9b2ab4e9c4510ff8ef5586d93fdf1ed191916d342d6d6e122e1b44ab0"
+    },
+    {
+      "case": 264,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        9
+      ],
+      "tensor_sha256": "10ef573bb1a408f49a55a4adb0947506b7a235615c0c3dbebd4e4bfa1f99b8e7"
+    },
+    {
+      "case": 265,
+      "mask": 4,
+      "rank_pair": [
+        35,
+        7
+      ],
+      "tensor_sha256": "fd0639da7732ca7b7ebfb848032e90e4dc90fa0b658eae0e89dce0cffa1d8ebb"
+    },
+    {
+      "case": 265,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        8
+      ],
+      "tensor_sha256": "b659b8a59c78d2fe7b5e3fb6b45e19dc57075ac002e0b2d5fe0a8069fc8057de"
+    },
+    {
+      "case": 266,
+      "mask": 4,
+      "rank_pair": [
+        22,
+        9
+      ],
+      "tensor_sha256": "e9408578a6808865f61db492c8a3ce3cc011d97b1c1c9b18cc3cca0c7cfed832"
+    },
+    {
+      "case": 268,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        16
+      ],
+      "tensor_sha256": "0515d0d5a5a4101e38bbdc30541e7db22f44309e55b754a165e384b61190c26d"
+    },
+    {
+      "case": 268,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        7
+      ],
+      "tensor_sha256": "3a8bda764f9b6654507e8d7d0f78422280e64741cb893cb3e50de4769cb56961"
+    },
+    {
+      "case": 269,
+      "mask": 4,
+      "rank_pair": [
+        32,
+        6
+      ],
+      "tensor_sha256": "c7fd0b09c65f444a75a61e64b442d4b7064a006b769558fb0c6c124aa885b38f"
+    },
+    {
+      "case": 269,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        6
+      ],
+      "tensor_sha256": "a491b8d935b3eb34544fa27a191af7c27c0bdf81673edbcc45fdd4f2ee5b2ca9"
+    },
+    {
+      "case": 270,
+      "mask": 4,
+      "rank_pair": [
+        25,
+        7
+      ],
+      "tensor_sha256": "47f3121feeffa1ba87d963ee561b90a669aef5b026d3ed55b293f5a876e21955"
+    },
+    {
+      "case": 270,
+      "mask": 14,
+      "rank_pair": [
+        25,
+        8
+      ],
+      "tensor_sha256": "970ca86f9b9a190cb09ff5d7b32378b6b5b51d98d5e62b6ea6ac113d0e3a557f"
+    },
+    {
+      "case": 272,
+      "mask": 14,
+      "rank_pair": [
+        12,
+        9
+      ],
+      "tensor_sha256": "d2dbf038b1ecf2a297acc3a030d61bc565882ba8a17a981dab8b7d775a5cb78d"
+    },
+    {
+      "case": 273,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        8
+      ],
+      "tensor_sha256": "b1cd144b83b8afd691911f109c4fd4dffe0b6b7ba9546a157233ba17f4e232be"
+    },
+    {
+      "case": 275,
+      "mask": 14,
+      "rank_pair": [
+        11,
+        15
+      ],
+      "tensor_sha256": "dc7e92acb741608850f30cfac5a7c060ab1cbeace2d55d73cd88d04175f980d6"
+    },
+    {
+      "case": 276,
+      "mask": 4,
+      "rank_pair": [
+        34,
+        5
+      ],
+      "tensor_sha256": "69a6caacd4fc5bdad588011d42a38e83dc48cadd5901aefba6bcf8953a77dd2f"
+    },
+    {
+      "case": 276,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        6
+      ],
+      "tensor_sha256": "4f9b5870e2d5a2f212abda8bd439737f6ef7932f7b31429135a26d0606868817"
+    },
+    {
+      "case": 277,
+      "mask": 4,
+      "rank_pair": [
+        30,
+        6
+      ],
+      "tensor_sha256": "3dec56f0fca25a9a0bf7697a71465506a1fa631267b3b23a4cb8c9f6ddc890cd"
+    },
+    {
+      "case": 277,
+      "mask": 14,
+      "rank_pair": [
+        19,
+        6
+      ],
+      "tensor_sha256": "0422b395a44d3b698ebfee4f16672089c4df3eb4fc2a73432f203d2b16658385"
+    },
+    {
+      "case": 278,
+      "mask": 4,
+      "rank_pair": [
+        23,
+        10
+      ],
+      "tensor_sha256": "41c76ae5162a5d3b4fcbf1cf62354c8e2a91eab20c2d7d8a51a95b24b6e945dd"
+    },
+    {
+      "case": 280,
+      "mask": 4,
+      "rank_pair": [
+        34,
+        6
+      ],
+      "tensor_sha256": "97f00c2fa7f354094ccc3715b96a3c605225f75a269607a64c246889211d3da5"
+    },
+    {
+      "case": 280,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        15
+      ],
+      "tensor_sha256": "fb0b32efbf2a5d2f2b0a91291ad94c3dbc1f326aeaf8a8adb3e0c09b8a0528cc"
+    },
+    {
+      "case": 280,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        7
+      ],
+      "tensor_sha256": "80ee800a94738baf4a0af51cac7f3a928d591422f50cf512ae1f49e0eb29e23c"
+    },
+    {
+      "case": 281,
+      "mask": 4,
+      "rank_pair": [
+        32,
+        5
+      ],
+      "tensor_sha256": "8dc8c9e71e660027808ca6bc1bc359a88b6e0a099836d9c3d276644b7ebc7f1d"
+    },
+    {
+      "case": 281,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        6
+      ],
+      "tensor_sha256": "3f45887e148837707ec745a76852bd752067db6f1bc545a9d749ec3460e19ddc"
+    },
+    {
+      "case": 282,
+      "mask": 4,
+      "rank_pair": [
+        19,
+        6
+      ],
+      "tensor_sha256": "08d758c7fd104054c110cb0ecb9a63a0a88283ca41478f890c38bc440851933b"
+    },
+    {
+      "case": 282,
+      "mask": 14,
+      "rank_pair": [
+        31,
+        6
+      ],
+      "tensor_sha256": "3f7ef6d5dfb3396254b93ddc00c57e9a61d186e56f711f1a18f249040a1ee993"
+    },
+    {
+      "case": 284,
+      "mask": 4,
+      "rank_pair": [
+        36,
+        6
+      ],
+      "tensor_sha256": "c1855746c0c16e47a4db2c9abd26934fe5de8b833a9b4f3b5bcecb525a5ea376"
+    },
+    {
+      "case": 284,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        16
+      ],
+      "tensor_sha256": "0945ab6dd239d444d7fe029636463a6d33f7684c13bbf6454a7d1e8a41db74e1"
+    },
+    {
+      "case": 284,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        7
+      ],
+      "tensor_sha256": "6bcf2510d400b5fb365a545954db54da459d699862469fef7b620ae0bf0f28b1"
+    },
+    {
+      "case": 285,
+      "mask": 4,
+      "rank_pair": [
+        34,
+        6
+      ],
+      "tensor_sha256": "21adff5bd2157117e87715a3d610ededb14b3152f4c7ed720daba42cc2313740"
+    },
+    {
+      "case": 285,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        6
+      ],
+      "tensor_sha256": "06b3716c2093417a9e3596278f3c2a6d3122761472502c0af810d3596171447f"
+    },
+    {
+      "case": 286,
+      "mask": 4,
+      "rank_pair": [
+        28,
+        6
+      ],
+      "tensor_sha256": "bcc1d0b2a2d083d49d99444ae9265590548cb6a9baf5c568cd9baa856c6a99ca"
+    },
+    {
+      "case": 286,
+      "mask": 14,
+      "rank_pair": [
+        27,
+        7
+      ],
+      "tensor_sha256": "1c242569015c509eb50ce07489605dc834e3e3178b260a5b918f5079afaebfe6"
+    },
+    {
+      "case": 287,
+      "mask": 5,
+      "rank_pair": [
+        16,
+        15
+      ],
+      "tensor_sha256": "194a057498394e23c03727ccafc7f0f379505d8caa2f8386b18e1709c9e9bbf5"
+    },
+    {
+      "case": 288,
+      "mask": 4,
+      "rank_pair": [
+        36,
+        6
+      ],
+      "tensor_sha256": "1ac7c5712d3da569c133a8d09e46a9b9df7559f4ff94eed76f73e8100332e087"
+    },
+    {
+      "case": 288,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        6
+      ],
+      "tensor_sha256": "110d4b3849e3ac896c7f45e123e83049619aba21fddbec891cc9e1adb0a2dc98"
+    },
+    {
+      "case": 289,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        9
+      ],
+      "tensor_sha256": "73e8d182d31c7a05a8ba9d2c423c55edfb47b08d4edf63138c6d9991db8e7166"
+    },
+    {
+      "case": 292,
+      "mask": 4,
+      "rank_pair": [
+        36,
+        5
+      ],
+      "tensor_sha256": "471f0770bb59e7f3f4e19396f8a45c1ce2edcaf64ee2a4e419c8df7532dadfa0"
+    },
+    {
+      "case": 292,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        16
+      ],
+      "tensor_sha256": "bb1c1122d703e9def9a9f12af22946265843d93a94a28043ab0e6c7e6d105148"
+    },
+    {
+      "case": 292,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        6
+      ],
+      "tensor_sha256": "55f251f9144ce024133115d42c5db5adb1012469f9a7f9086c24a8a3b189ceff"
+    },
+    {
+      "case": 293,
+      "mask": 4,
+      "rank_pair": [
+        33,
+        7
+      ],
+      "tensor_sha256": "190605606fb2b0a1f9a1efd7ce4077c0bf7282d9b655950ede0c53e6e8b3bdfd"
+    },
+    {
+      "case": 293,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        8
+      ],
+      "tensor_sha256": "c9f48c61bed537e3531c10d0973292d0c065018fb47d7cfd4f02bed9483397eb"
+    },
+    {
+      "case": 296,
+      "mask": 14,
+      "rank_pair": [
+        19,
+        9
+      ],
+      "tensor_sha256": "910a5dd11d1dba6708c97145cf61a9b149df62fd0bbce7b1e6c74b3f811b6547"
+    },
+    {
+      "case": 297,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        8
+      ],
+      "tensor_sha256": "503b801857a1e444ee333901f3a282620a0d7f0bc5dc863837e91f4827d272f9"
+    },
+    {
+      "case": 298,
+      "mask": 4,
+      "rank_pair": [
+        20,
+        9
+      ],
+      "tensor_sha256": "43a674962138a11b89f915cdcb66ead0d6d24a6d9aee28a08d75797ae5dae466"
+    },
+    {
+      "case": 298,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        15
+      ],
+      "tensor_sha256": "49f06a5a4275c915836dc9adb7782b0701d67b1610eea10b8dd93706e53f19b0"
+    },
+    {
+      "case": 300,
+      "mask": 4,
+      "rank_pair": [
+        38,
+        6
+      ],
+      "tensor_sha256": "51b4770ba5a7b288295c48cdf3603cdd1cfdba3da6b68d91c9ef0ef57ac8672b"
+    },
+    {
+      "case": 300,
+      "mask": 14,
+      "rank_pair": [
+        11,
+        7
+      ],
+      "tensor_sha256": "cad4e01bf3a25bdaf8b840ee0285004bf5dc33b3632450ce72c97805ffa191fc"
+    },
+    {
+      "case": 301,
+      "mask": 4,
+      "rank_pair": [
+        36,
+        6
+      ],
+      "tensor_sha256": "b8ddff3273086321d688f9292c2f07b3b4ec18de6019c2ea24c77dbe3796eea9"
+    },
+    {
+      "case": 301,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        7
+      ],
+      "tensor_sha256": "03a121c3f15a0ded449a948f0ec6b0b8b87a68fdce62916a6b6d50c5c1f6c349"
+    },
+    {
+      "case": 302,
+      "mask": 4,
+      "rank_pair": [
+        20,
+        10
+      ],
+      "tensor_sha256": "fd33f1c98286112121bf87c3bb9577bc5956461d56851b6f6ef4ab3e6035c6bb"
+    },
+    {
+      "case": 304,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        17
+      ],
+      "tensor_sha256": "53865531753ba3c76837fcc4bfa580b4df3fd4dfde943bb26d5cb380773935a0"
+    },
+    {
+      "case": 304,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        12
+      ],
+      "tensor_sha256": "b46d1d47769aacb42afda7220b11a31d3212a74fcbbc4c1e2cf8e405444bd2ca"
+    },
+    {
+      "case": 305,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        18
+      ],
+      "tensor_sha256": "51318fa7862706d747bf2caf1ce07c775699e435b607c62da7afc3b33196382f"
+    },
+    {
+      "case": 305,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        9
+      ],
+      "tensor_sha256": "6adb7eb828faedf7165fd54aeaf4e4e9ac67b39993dfcae42527954755080a63"
+    },
+    {
+      "case": 306,
+      "mask": 4,
+      "rank_pair": [
+        19,
+        11
+      ],
+      "tensor_sha256": "2f2fd8240fc8196342cb4ecc42816ec44b3122dc6a011aa80a4f27e1e50f6117"
+    },
+    {
+      "case": 308,
+      "mask": 4,
+      "rank_pair": [
+        36,
+        6
+      ],
+      "tensor_sha256": "1c17562155a52fc5c71440a21be0efa10421b5aafaa6a8a316a6e4db2567bfc2"
+    },
+    {
+      "case": 308,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        6
+      ],
+      "tensor_sha256": "efe704147f133cc7fc56402064b37ce34a0d49643cb8e93e5347f6fd4113e020"
+    },
+    {
+      "case": 309,
+      "mask": 4,
+      "rank_pair": [
+        34,
+        6
+      ],
+      "tensor_sha256": "14972f7b3e75878a624670cbb1657d46107564e4fb880bba6ccacc56ba2888e8"
+    },
+    {
+      "case": 309,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        6
+      ],
+      "tensor_sha256": "8fcb84f1c1d918fb88c429d21986346d55a93d86254981d80a6f3cf711ca3771"
+    },
+    {
+      "case": 312,
+      "mask": 4,
+      "rank_pair": [
+        38,
+        6
+      ],
+      "tensor_sha256": "9754c6385aa748c757341b2498df560ba54f25367fba0bceae8dc0c234a7f874"
+    },
+    {
+      "case": 312,
+      "mask": 14,
+      "rank_pair": [
+        11,
+        7
+      ],
+      "tensor_sha256": "ef6ac89e96564825f69dc854ebf0d7cdf63403af495ec35fd117042fe59ac2d2"
+    },
+    {
+      "case": 313,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        18
+      ],
+      "tensor_sha256": "626964e573b9549ac606b2a3e3f92ba028b0e94d46ac95450047ef0e96c8db38"
+    },
+    {
+      "case": 313,
+      "mask": 14,
+      "rank_pair": [
+        20,
+        10
+      ],
+      "tensor_sha256": "fe8c243c6d66ed2a07a8486fbd726c6ea708e12e6fda68270be13a94bad5ad4b"
+    },
+    {
+      "case": 314,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        18
+      ],
+      "tensor_sha256": "b2df0a53fd04690bbf199132febfb24a8b47e25a000e7afe3115bcb1d207f639"
+    },
+    {
+      "case": 316,
+      "mask": 14,
+      "rank_pair": [
+        18,
+        11
+      ],
+      "tensor_sha256": "c1abf0073137c1f08ab8be37ad378326f0a0639dbfa18ccb489ff408faad7bb6"
+    },
+    {
+      "case": 317,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        9
+      ],
+      "tensor_sha256": "5dfc20e4b193ab6e23148481f79ca3d62df22d8225a990a598c6e877a13c3ac3"
+    },
+    {
+      "case": 318,
+      "mask": 4,
+      "rank_pair": [
+        27,
+        8
+      ],
+      "tensor_sha256": "d1930dc3ed3ae1b5e85c4a3057db388ad9ffba35065656c1b3a12f9ba26c24f4"
+    },
+    {
+      "case": 318,
+      "mask": 14,
+      "rank_pair": [
+        28,
+        9
+      ],
+      "tensor_sha256": "a697855d2eb97215363728c931583974683096343ffb06068b0a9caa5751b609"
+    },
+    {
+      "case": 320,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        16
+      ],
+      "tensor_sha256": "7c7b18edd02311863b5901de794e3f072bebfa63c8ca772ce2eff13eb4176e0c"
+    },
+    {
+      "case": 320,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        9
+      ],
+      "tensor_sha256": "c1d6a928bf8d35ee036c5aa5331cb8508efe5e154de2a27e5eb5a79c2e583f5f"
+    },
+    {
+      "case": 321,
+      "mask": 4,
+      "rank_pair": [
+        34,
+        6
+      ],
+      "tensor_sha256": "5047f1aefbe0b7883e19902123e7064749ac1f498b25ee6708ce95f02a1c5143"
+    },
+    {
+      "case": 321,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        6
+      ],
+      "tensor_sha256": "539c3e4273e149a21b3af148e4f14e7afdd5cc4906fd80e4cb5de03257397542"
+    },
+    {
+      "case": 322,
+      "mask": 4,
+      "rank_pair": [
+        26,
+        8
+      ],
+      "tensor_sha256": "b59120d47aef8239a7fb2bf40219018af191b20b1f32a064168e9a65fbe54e18"
+    },
+    {
+      "case": 322,
+      "mask": 14,
+      "rank_pair": [
+        24,
+        9
+      ],
+      "tensor_sha256": "beb432b936afa78ed95580dbaa779306419908538e2feddcc9403197dc505432"
+    },
+    {
+      "case": 323,
+      "mask": 5,
+      "rank_pair": [
+        16,
+        15
+      ],
+      "tensor_sha256": "4db1e96eef269bae67c21e960feac0a42f632c41db15c9274282af03e1b0914e"
+    },
+    {
+      "case": 324,
+      "mask": 4,
+      "rank_pair": [
+        34,
+        6
+      ],
+      "tensor_sha256": "bf9bcf3d4485f835179a688ae05418f62940891559fd2b6b50e9bad78bcaa511"
+    },
+    {
+      "case": 324,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        7
+      ],
+      "tensor_sha256": "75bb937415dc4e700ab2a9a2e42ca6a4d90148aa7e2b9e2818bbdd8d14864454"
+    },
+    {
+      "case": 325,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        9
+      ],
+      "tensor_sha256": "effeb1b47a93491ffbb075cc61a8299ca1959044637358bbe02fca5dbfad8e20"
+    },
+    {
+      "case": 326,
+      "mask": 4,
+      "rank_pair": [
+        23,
+        11
+      ],
+      "tensor_sha256": "1cb0638ef4c8e9add2e17579fcfb7b5a7e30e9bb58abc4bcbe780655dbf485d4"
+    },
+    {
+      "case": 328,
+      "mask": 4,
+      "rank_pair": [
+        38,
+        6
+      ],
+      "tensor_sha256": "1bf734ba3e2340bd97daa17b25e3f2a0ff462a14aac4a5fc77e9cdb66955cd97"
+    },
+    {
+      "case": 328,
+      "mask": 14,
+      "rank_pair": [
+        11,
+        7
+      ],
+      "tensor_sha256": "d1f57679a46ad7fd6f3025c19f54aab0cd8a7864f30c6de3595b3b5f2781f5a5"
+    },
+    {
+      "case": 329,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        9
+      ],
+      "tensor_sha256": "c927770a405ef582a649d7efdaa13daa42ac7acb05fbf51ba01a35c767670dc7"
+    },
+    {
+      "case": 330,
+      "mask": 4,
+      "rank_pair": [
+        22,
+        8
+      ],
+      "tensor_sha256": "42b503da3330cfe12c36a978f8fa1a9f272fd8ebe743ca1d66ab2f7a1d1ffcab"
+    },
+    {
+      "case": 332,
+      "mask": 4,
+      "rank_pair": [
+        34,
+        5
+      ],
+      "tensor_sha256": "42ddf01c04c8637a072a8ec66924e67e824fcb20f2cd51ffdff046963e5b759f"
+    },
+    {
+      "case": 332,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        6
+      ],
+      "tensor_sha256": "c028acea29f90b6fd22e9efe88b1039b6114da47271c6efc69a62aed9b3ad55d"
+    },
+    {
+      "case": 336,
+      "mask": 14,
+      "rank_pair": [
+        16,
+        9
+      ],
+      "tensor_sha256": "58c1c162b0426025dc4c61be6f6ee0a033d54d5f03ee3d4c1e4c41e7a9f5fb18"
+    },
+    {
+      "case": 337,
+      "mask": 4,
+      "rank_pair": [
+        31,
+        7
+      ],
+      "tensor_sha256": "1c3c07172396d3890b53ba9a03b624b6d1654a2ee672e6a837347340fd6cde4d"
+    },
+    {
+      "case": 337,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        18
+      ],
+      "tensor_sha256": "f78f274bd8192ca588a6ae4f616a1c475516eeab1bfde4bea214bb7011890670"
+    },
+    {
+      "case": 337,
+      "mask": 14,
+      "rank_pair": [
+        19,
+        8
+      ],
+      "tensor_sha256": "011111b7abfd344995fb66d00afd7a6f52a1c46cb8a36f1d45b6fbbccee38c4f"
+    },
+    {
+      "case": 338,
+      "mask": 4,
+      "rank_pair": [
+        22,
+        6
+      ],
+      "tensor_sha256": "b1cf2c3702951758a0fa068ca173442a87925119ad40946b3902f9f1400f7e73"
+    },
+    {
+      "case": 338,
+      "mask": 14,
+      "rank_pair": [
+        27,
+        6
+      ],
+      "tensor_sha256": "25da173c646c55106451312e40485354898a3531cac6ba2fe1327ef9a9e3ef7b"
+    },
+    {
+      "case": 340,
+      "mask": 4,
+      "rank_pair": [
+        34,
+        6
+      ],
+      "tensor_sha256": "b6cb670fa1e08f31dea4280ebcaeaabfcb2a52c2b791f0a8eb7d7b27524404d9"
+    },
+    {
+      "case": 340,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        7
+      ],
+      "tensor_sha256": "d78344c1cfd12d28e881204550cde1bdf83503c826b8fa17bdc3def9a15c7ace"
+    },
+    {
+      "case": 341,
+      "mask": 4,
+      "rank_pair": [
+        32,
+        6
+      ],
+      "tensor_sha256": "6671537e179c8498b3a0e317c13cfb7f4cc2090411212fa64ec2185e20985ee5"
+    },
+    {
+      "case": 341,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        7
+      ],
+      "tensor_sha256": "363ce125ea0aadb37a8edfdac3a930804feef12516587aba2d5b4ca27760fb84"
+    },
+    {
+      "case": 342,
+      "mask": 4,
+      "rank_pair": [
+        26,
+        9
+      ],
+      "tensor_sha256": "b96048c88c4567d9054b821827c12015ff320077bf796d97c3d9f5de30bbfc80"
+    },
+    {
+      "case": 342,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        18
+      ],
+      "tensor_sha256": "eb47b4fe4ecbaddcdcafc787a49e731e20548677bd6a483a986a0c0f87746ef8"
+    },
+    {
+      "case": 342,
+      "mask": 14,
+      "rank_pair": [
+        26,
+        9
+      ],
+      "tensor_sha256": "e2a925ca345dea04128a621abac93fd92a5005d8e48fa2911f28c27cca871cff"
+    },
+    {
+      "case": 344,
+      "mask": 4,
+      "rank_pair": [
+        36,
+        6
+      ],
+      "tensor_sha256": "fbfb5c1a3d33fe9f75f4e54518f239ffb7a56ed466e6f0110a7ed08a0fdaa71e"
+    },
+    {
+      "case": 344,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        7
+      ],
+      "tensor_sha256": "9314a10cd692a102f50e3d25cf46a2a5fea3b189eb76b1e3a8cfadc550724944"
+    },
+    {
+      "case": 345,
+      "mask": 4,
+      "rank_pair": [
+        32,
+        6
+      ],
+      "tensor_sha256": "f1ab06aec6a1046abb91638bd10f65be6b265608c5f788f1945fd0f8e42e58b4"
+    },
+    {
+      "case": 345,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        6
+      ],
+      "tensor_sha256": "a04646db70134cb4a63e3739cb1aa25249bf22613ff3d5b35e29dffaa355ee0a"
+    },
+    {
+      "case": 346,
+      "mask": 4,
+      "rank_pair": [
+        23,
+        7
+      ],
+      "tensor_sha256": "10016d755e42cdf038fc0a58a67fcf2a363b60ce0db2cc39988fee9ab8257005"
+    },
+    {
+      "case": 346,
+      "mask": 14,
+      "rank_pair": [
+        28,
+        7
+      ],
+      "tensor_sha256": "6f0594d4808677ea26df8799a0c824d3921bed1aa48490aa96d9dbe031e056f0"
+    },
+    {
+      "case": 348,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        9
+      ],
+      "tensor_sha256": "174221259c63cc218330ea3c24f1730b4bdc12500f387c34bf280c6de5fef7c7"
+    },
+    {
+      "case": 349,
+      "mask": 4,
+      "rank_pair": [
+        32,
+        5
+      ],
+      "tensor_sha256": "7a28a966aba4392679106fcacd435b17aac27b27ead2bc437985da66f9958c33"
+    },
+    {
+      "case": 349,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        6
+      ],
+      "tensor_sha256": "9b33025a9895960792a780fce70380f20e60dbff4eb95fd01553acd37a9b8ce2"
+    },
+    {
+      "case": 350,
+      "mask": 4,
+      "rank_pair": [
+        21,
+        8
+      ],
+      "tensor_sha256": "fa496c31a03354479eaebe5ba116897f0f90ea40227fdbf048aa220a91ab370c"
+    },
+    {
+      "case": 352,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        18
+      ],
+      "tensor_sha256": "3f05ecca0f8a3a37a9114e712a21e76cbb7ce39af5586a080f0ed1b9a627bf7c"
+    },
+    {
+      "case": 352,
+      "mask": 14,
+      "rank_pair": [
+        14,
+        8
+      ],
+      "tensor_sha256": "0ecf77670974c1473d8f5752a5d0af42d92bbbdebbbc7ee335c0b00d41029968"
+    },
+    {
+      "case": 353,
+      "mask": 4,
+      "rank_pair": [
+        36,
+        6
+      ],
+      "tensor_sha256": "9de307d43dece8039f435594dbd563e102cbbf764077a36206b1fa7c9137f8cb"
+    },
+    {
+      "case": 353,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        6
+      ],
+      "tensor_sha256": "15f9900ff8124077b7b48e8e56618acd7204791ca63ecc40dad890a5e6a21b75"
+    },
+    {
+      "case": 354,
+      "mask": 4,
+      "rank_pair": [
+        25,
+        8
+      ],
+      "tensor_sha256": "eaf7e719b40070a363e0c57c411b629b5c474c7789beb71d0dd83cd529330b22"
+    },
+    {
+      "case": 354,
+      "mask": 14,
+      "rank_pair": [
+        26,
+        9
+      ],
+      "tensor_sha256": "7ec0cd8bf74546798e9b948adcb946b4d9a61657b3f954e2577949b43eaf80c0"
+    },
+    {
+      "case": 356,
+      "mask": 4,
+      "rank_pair": [
+        36,
+        6
+      ],
+      "tensor_sha256": "960bef4ea0b0cb45de261960590f38d81f8355fa75253ae37cb0e926cc1be463"
+    },
+    {
+      "case": 356,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        6
+      ],
+      "tensor_sha256": "463f2b45eb7850da86130f8eb619a399c75e8d22c95669a28a6dc54cd36e062d"
+    },
+    {
+      "case": 357,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        15
+      ],
+      "tensor_sha256": "3ffc61813db19f239063cf00b241d6ee8ac2cdacda9a13f1119be400241431c0"
+    },
+    {
+      "case": 357,
+      "mask": 14,
+      "rank_pair": [
+        21,
+        9
+      ],
+      "tensor_sha256": "83fb29946d15cd3462ceab90d46446ba890ce5ede35cf6985dec7e60d150cefc"
+    },
+    {
+      "case": 358,
+      "mask": 4,
+      "rank_pair": [
+        21,
+        8
+      ],
+      "tensor_sha256": "aea5e5b11a33d8afda3dce1dcca48a58609537c5fe4e049485623b3b432c5d2c"
+    },
+    {
+      "case": 360,
+      "mask": 4,
+      "rank_pair": [
+        38,
+        6
+      ],
+      "tensor_sha256": "ea71b29792733e77290d186e4112221f34706fa688f5f86e1a7a90b48dc8edc8"
+    },
+    {
+      "case": 360,
+      "mask": 14,
+      "rank_pair": [
+        11,
+        7
+      ],
+      "tensor_sha256": "70c4451a4f62cd974401acb0cc4ccdc7e221d11f9dc329a66d2928e819abf75a"
+    },
+    {
+      "case": 361,
+      "mask": 4,
+      "rank_pair": [
+        36,
+        6
+      ],
+      "tensor_sha256": "2c010516e9140fa8e10aea18538d3a1e5b89aa730fb83f595bf18032d849d0d2"
+    },
+    {
+      "case": 361,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        6
+      ],
+      "tensor_sha256": "e3e5606882fefcf26f840c95b6998492873739f812e588544d15176c24cf96f4"
+    },
+    {
+      "case": 362,
+      "mask": 4,
+      "rank_pair": [
+        19,
+        7
+      ],
+      "tensor_sha256": "cb0bc11fb6e6675915d2c05879976000faf49e2251aaaded341cfce2be78ac2b"
+    },
+    {
+      "case": 364,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        18
+      ],
+      "tensor_sha256": "4ef5599e23e15b34b5e6cbb42cdffa93446ce56247c2cf049f5af262e1f72546"
+    },
+    {
+      "case": 364,
+      "mask": 14,
+      "rank_pair": [
+        14,
+        8
+      ],
+      "tensor_sha256": "7b834db163bf93447de08dd6cd2e799bf1cea90823e7848f5cbe5526e68f6b67"
+    },
+    {
+      "case": 365,
+      "mask": 4,
+      "rank_pair": [
+        33,
+        7
+      ],
+      "tensor_sha256": "18d1e016fc09d85c929eb9e29411eecb15e58c5157c08cef245a1c91ae5bc734"
+    },
+    {
+      "case": 365,
+      "mask": 14,
+      "rank_pair": [
+        18,
+        8
+      ],
+      "tensor_sha256": "9c258bab457d75811893c06f1f2ac5f56a586b7e708a6d5c2282f467f46f7aba"
+    },
+    {
+      "case": 368,
+      "mask": 4,
+      "rank_pair": [
+        34,
+        6
+      ],
+      "tensor_sha256": "cf839c15d390ae9fb897d8008193c290f0d72c460cdf3300de2366518644ba46"
+    },
+    {
+      "case": 368,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        7
+      ],
+      "tensor_sha256": "4bcb121cb518f637fcc88bf4d09de71eb46bd1576c4a239d0106ded879842e10"
+    },
+    {
+      "case": 369,
+      "mask": 8,
+      "rank_pair": [
+        16,
+        14
+      ],
+      "tensor_sha256": "c177ccb234e5d559fc09ba6c806f920afc30904b2d190e9afcca8646640fa097"
+    },
+    {
+      "case": 369,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        10
+      ],
+      "tensor_sha256": "56cdc594470f5e36e1e0c258c66e2ae8499c6e3cd6db95ae8dc0f212e70c32fe"
+    },
+    {
+      "case": 370,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        18
+      ],
+      "tensor_sha256": "74c529bf53d636e3b277c57aae940454539cc005f80ceac015a3e0f1ee46d1e1"
+    },
+    {
+      "case": 372,
+      "mask": 4,
+      "rank_pair": [
+        36,
+        6
+      ],
+      "tensor_sha256": "b59eb7e3cd86db59f0b0245230afcb6cc317a54a68f55c14749c5ea393801ad0"
+    },
+    {
+      "case": 372,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        6
+      ],
+      "tensor_sha256": "7d344b16fff6cc8dc136438c944e63a1637137c11e61f2c4292f699263031763"
+    },
+    {
+      "case": 373,
+      "mask": 4,
+      "rank_pair": [
+        32,
+        6
+      ],
+      "tensor_sha256": "4390de6113194f7bfbf8d7f52b74f14ed9e3e1f12b552506802ed44dc556e8d6"
+    },
+    {
+      "case": 373,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        7
+      ],
+      "tensor_sha256": "7697aa87324d8b1f00a5a80d3341d6adb97c268701e9e61d401f06c9188eda8e"
+    },
+    {
+      "case": 374,
+      "mask": 4,
+      "rank_pair": [
+        23,
+        7
+      ],
+      "tensor_sha256": "93d1ed5dece14c855d93e8a45944d53498f7e4205f1cd151cb44ae35d92b33e8"
+    },
+    {
+      "case": 374,
+      "mask": 14,
+      "rank_pair": [
+        27,
+        7
+      ],
+      "tensor_sha256": "9821746a84e8a5de6eaa5e164fee94aa1ef69807d21a3854b8f8a0f1243609e6"
+    },
+    {
+      "case": 376,
+      "mask": 4,
+      "rank_pair": [
+        36,
+        6
+      ],
+      "tensor_sha256": "5cfd414ad91ee1d3086564560b8b5ef175b5ac6b4eda33b72d9971469f95c630"
+    },
+    {
+      "case": 376,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        7
+      ],
+      "tensor_sha256": "9316a01d621b20d8934e1554e0beb53f3ba5d4243ab3bc2466bdd94207aa9978"
+    },
+    {
+      "case": 377,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        8
+      ],
+      "tensor_sha256": "4b4dda6a73828ca58cc73e1d9fd21c98845659f7ced9626bfc9b54dea1d124c2"
+    },
+    {
+      "case": 378,
+      "mask": 4,
+      "rank_pair": [
+        23,
+        7
+      ],
+      "tensor_sha256": "2ad270cb3fe47eb7e43375e89ced8af1bca8a2daf676668f742325c46812218d"
+    },
+    {
+      "case": 378,
+      "mask": 14,
+      "rank_pair": [
+        28,
+        8
+      ],
+      "tensor_sha256": "816cf4cdfb66fd9a0090276a30c6e4f6da4c5c4ea7ac692838b181a76be0eccf"
+    },
+    {
+      "case": 380,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        16
+      ],
+      "tensor_sha256": "b66e60430d0a6634bd2aa3016de9f813f093a18997428deeb35648324e6047d9"
+    },
+    {
+      "case": 380,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        9
+      ],
+      "tensor_sha256": "7d31c0ddc9e92dbad820c29bb42d5869d88eb95669f28c2fbea63245ef002b13"
+    },
+    {
+      "case": 381,
+      "mask": 4,
+      "rank_pair": [
+        34,
+        5
+      ],
+      "tensor_sha256": "7028a906cc4db6a7295957360d81d0f29d02f796e3418f5f6433a3f11efeed89"
+    },
+    {
+      "case": 381,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        16
+      ],
+      "tensor_sha256": "973ba3d9f65a8e03de457dae8e62b8f85ac2b19a875ac20c8841dc74e14216fd"
+    },
+    {
+      "case": 381,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        6
+      ],
+      "tensor_sha256": "e357c305109c4446c22f388e81316dc384d2198a889a88bf3bd32b25c6221995"
+    },
+    {
+      "case": 384,
+      "mask": 4,
+      "rank_pair": [
+        35,
+        7
+      ],
+      "tensor_sha256": "86c93919ae5011326b9b7574709804bbaa6435f86773e8df90b250936a5eccc0"
+    },
+    {
+      "case": 384,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        8
+      ],
+      "tensor_sha256": "12ad15363fe1ea7783f8e74ba3bf7d84b9e11034d43a36477d126f62783eabc1"
+    },
+    {
+      "case": 385,
+      "mask": 4,
+      "rank_pair": [
+        31,
+        6
+      ],
+      "tensor_sha256": "cd49d82471f71de63c6bd3a57234579354014b7c45d7fc8b0b6e7a364f669526"
+    },
+    {
+      "case": 385,
+      "mask": 14,
+      "rank_pair": [
+        19,
+        7
+      ],
+      "tensor_sha256": "e18f4a2952fff6119ec6bbd6543338fdb222cd676c620f6185f1ff3dea8c9730"
+    },
+    {
+      "case": 388,
+      "mask": 14,
+      "rank_pair": [
+        16,
+        9
+      ],
+      "tensor_sha256": "02cca1581b0b30380b203051e2ac1ae8db9cd6384360d20fe28f1bf06b5cb067"
+    },
+    {
+      "case": 389,
+      "mask": 4,
+      "rank_pair": [
+        32,
+        5
+      ],
+      "tensor_sha256": "c814df5d787eaceeffa780e44b0d97f8001c81d9a0c07114b30df82f5597fed1"
+    },
+    {
+      "case": 389,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        6
+      ],
+      "tensor_sha256": "c4eeba03c6ab8ebd2d66e49cd368ccd914884be959466d0b6d550052b9f767c3"
+    },
+    {
+      "case": 392,
+      "mask": 4,
+      "rank_pair": [
+        38,
+        5
+      ],
+      "tensor_sha256": "3efa9ecb702a64a17bb0881d4d1e10a8861bdaee2a057344a982611b9d5369ea"
+    },
+    {
+      "case": 392,
+      "mask": 14,
+      "rank_pair": [
+        11,
+        5
+      ],
+      "tensor_sha256": "21a5ccab53cec950a88bdabc48c6d8a6b91ca0a9afa971ca8e2b1ab46a221dc5"
+    },
+    {
+      "case": 393,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        18
+      ],
+      "tensor_sha256": "a7c78c217e32f95e633100d4a0f835086851b541f063422e28652c8ccfb6ab61"
+    },
+    {
+      "case": 393,
+      "mask": 14,
+      "rank_pair": [
+        18,
+        10
+      ],
+      "tensor_sha256": "5bd92135820b71b673b48176d548df820d5d79cc68283a382b635a784a59f213"
+    },
+    {
+      "case": 394,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        17
+      ],
+      "tensor_sha256": "817819650f7ca6da13865e51e1c9d4b472709446555ea630c557069883ee827b"
+    },
+    {
+      "case": 396,
+      "mask": 4,
+      "rank_pair": [
+        38,
+        5
+      ],
+      "tensor_sha256": "31ac18369107ca8679faf1d61e9220c62acc9d09736205f65ea79d2e6b7eb11f"
+    },
+    {
+      "case": 396,
+      "mask": 14,
+      "rank_pair": [
+        11,
+        5
+      ],
+      "tensor_sha256": "63c1e732d79456a4c2cd1070ca22c5514eb9fa121350174014c5cb56fdca618f"
+    },
+    {
+      "case": 397,
+      "mask": 4,
+      "rank_pair": [
+        29,
+        6
+      ],
+      "tensor_sha256": "519132f9354ce2898d6b9949c6d5e1667e4ce9de3a23d26998688f2f65095a52"
+    },
+    {
+      "case": 397,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        15
+      ],
+      "tensor_sha256": "1edbd3e45ace648d8cb0a83de6b18941e509b6c54de04fce977e12aed52b4fb0"
+    },
+    {
+      "case": 397,
+      "mask": 14,
+      "rank_pair": [
+        21,
+        7
+      ],
+      "tensor_sha256": "68eaa87ac7d3d8ca4fac5e26429c11f8ed55741350561cc610a92fe3c43cc658"
+    },
+    {
+      "case": 398,
+      "mask": 4,
+      "rank_pair": [
+        22,
+        9
+      ],
+      "tensor_sha256": "0aa4512b8691d8952a58f8368cdb2feca1fccef64be67cf39adff0aa84e467f3"
+    },
+    {
+      "case": 400,
+      "mask": 4,
+      "rank_pair": [
+        34,
+        6
+      ],
+      "tensor_sha256": "10f8d51aae1e2562c3e934d25775b2ecc94d4a1468d6e8fb04bf9db5c0ce7c11"
+    },
+    {
+      "case": 400,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        7
+      ],
+      "tensor_sha256": "bb6a4a4fa8355fad37322984dc85a16fc2ecd0224da9a28a63640c3f0da25fc4"
+    },
+    {
+      "case": 401,
+      "mask": 4,
+      "rank_pair": [
+        31,
+        5
+      ],
+      "tensor_sha256": "9f3dcf19f0f96dc3671e5a984794d6812907149c2939902e9d2c96b6d079f085"
+    },
+    {
+      "case": 401,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        15
+      ],
+      "tensor_sha256": "189cb16df47ec5aafd7b12826b876d73b3b11f351517ebb511772235fafa8ca3"
+    },
+    {
+      "case": 401,
+      "mask": 14,
+      "rank_pair": [
+        19,
+        6
+      ],
+      "tensor_sha256": "5dd2e8deed991fa9ae4fbcadd06afb7b807845f292038577e1ffb8695b7954e2"
+    },
+    {
+      "case": 402,
+      "mask": 4,
+      "rank_pair": [
+        14,
+        9
+      ],
+      "tensor_sha256": "c3157443098f5614fe2a614e26a6039f74fe18b449300b08d268fb1a02fd25ed"
+    },
+    {
+      "case": 404,
+      "mask": 4,
+      "rank_pair": [
+        36,
+        6
+      ],
+      "tensor_sha256": "2f148bd1edec7f058d7b4f5cb7640b25c7edc2deb1b93f088525f1d9ed27f700"
+    },
+    {
+      "case": 404,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        15
+      ],
+      "tensor_sha256": "a8c08d8d1803516e80f483aa5df479f4e8fc3533f5dc08b6e0f4792769519364"
+    },
+    {
+      "case": 404,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        7
+      ],
+      "tensor_sha256": "bb6f41b550eca85fd0d375d8bf4d01cb8365af1f2c6bed641766f284f0d5669a"
+    },
+    {
+      "case": 405,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        18
+      ],
+      "tensor_sha256": "71c0ef6bea4b170d6edf3e44ef2779218097ae754103f0fde6eaac940d605301"
+    },
+    {
+      "case": 405,
+      "mask": 14,
+      "rank_pair": [
+        18,
+        9
+      ],
+      "tensor_sha256": "93d05199369d5be5ea1a9ebd1b1b2e88f6d44fee9b4e6b7a618a41aa55b42535"
+    },
+    {
+      "case": 406,
+      "mask": 4,
+      "rank_pair": [
+        18,
+        9
+      ],
+      "tensor_sha256": "b7fa14d979d618c03a35a21c4f32529d1b011488c172f85d6aa4346a8e954b83"
+    },
+    {
+      "case": 406,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        15
+      ],
+      "tensor_sha256": "044f7b869d94c25bfce59ca7105c24ffb1ba698dee50898e81cb75dae518e589"
+    },
+    {
+      "case": 408,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        16
+      ],
+      "tensor_sha256": "bc9815729d46701b8e866452ad805f60a85e10ce22345a87b78269a200cca226"
+    },
+    {
+      "case": 408,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        7
+      ],
+      "tensor_sha256": "7df59b23b6cec797e4ef6bc2e8e5501a0b8b1cf14b81740efa33d5383eb9326c"
+    },
+    {
+      "case": 409,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        10
+      ],
+      "tensor_sha256": "3bbffe9b3769ff962d99aa57366300e2926700556690718e712010e2c9c2889f"
+    },
+    {
+      "case": 410,
+      "mask": 4,
+      "rank_pair": [
+        21,
+        11
+      ],
+      "tensor_sha256": "e63c101cba4e82e61154e28e13883963acbf8f29d417c6ee23bafca10ba5982d"
+    },
+    {
+      "case": 412,
+      "mask": 4,
+      "rank_pair": [
+        38,
+        5
+      ],
+      "tensor_sha256": "6643ae5d03e9fa38a0b787f712dcb13ab66b841d6e6e84faa2344952e865f188"
+    },
+    {
+      "case": 412,
+      "mask": 14,
+      "rank_pair": [
+        11,
+        5
+      ],
+      "tensor_sha256": "219656871b054b51c40a2cb9980c48f110cb5b0efcf5047b6cc0cbe2b53f1f99"
+    },
+    {
+      "case": 413,
+      "mask": 4,
+      "rank_pair": [
+        36,
+        4
+      ],
+      "tensor_sha256": "bddbb541c2176f9c0b93d7ed3814afffa17422e1dfaae45c3afba873959db659"
+    },
+    {
+      "case": 413,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        4
+      ],
+      "tensor_sha256": "0995e1af7e2eb52aeeaf9ce9720df126a21c6ffb0cf4bdd7153bcab058e91577"
+    },
+    {
+      "case": 414,
+      "mask": 4,
+      "rank_pair": [
+        23,
+        8
+      ],
+      "tensor_sha256": "838f9c67bf452133af6e1194879f8899e998a16b9e533c1fd2e9a3dd9ab3efcc"
+    },
+    {
+      "case": 414,
+      "mask": 14,
+      "rank_pair": [
+        28,
+        9
+      ],
+      "tensor_sha256": "35e01a6a24eae6a6a457a4a21c4d07a7bbe509ca655dade382bae5bbbff66f03"
+    },
+    {
+      "case": 416,
+      "mask": 4,
+      "rank_pair": [
+        34,
+        6
+      ],
+      "tensor_sha256": "e8cbbb1c1f4846b0da798ea0570cb209042200562635ed4d2f5122e45c81be6e"
+    },
+    {
+      "case": 416,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        7
+      ],
+      "tensor_sha256": "d1959a0cc65dfbe69539c275c568e54fc853ebc1aa74dbc657715df20ec8243e"
+    },
+    {
+      "case": 417,
+      "mask": 4,
+      "rank_pair": [
+        36,
+        5
+      ],
+      "tensor_sha256": "c32cd093dcbbdb60dec1a24d346d1c5b34f0783ebf89e6478d1ce7c668842880"
+    },
+    {
+      "case": 417,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        5
+      ],
+      "tensor_sha256": "e7b63dc7e96bd8480e380b18bf1645158e5611e31304122eeb07f15a915a0498"
+    },
+    {
+      "case": 418,
+      "mask": 4,
+      "rank_pair": [
+        22,
+        8
+      ],
+      "tensor_sha256": "535b9a9d39e0282d00a810606f1b411159b33424b09d970c7acace9c76d7c7a8"
+    },
+    {
+      "case": 418,
+      "mask": 14,
+      "rank_pair": [
+        29,
+        8
+      ],
+      "tensor_sha256": "c645b542c91c4438b639c4dd6d07ddec973b9f3ea7d41f29f5c86a7f0d6750a8"
+    },
+    {
+      "case": 420,
+      "mask": 4,
+      "rank_pair": [
+        36,
+        6
+      ],
+      "tensor_sha256": "437d094a659fdad667d2a0130778766da5e8255e9c44fa200b09171d129347e4"
+    },
+    {
+      "case": 420,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        16
+      ],
+      "tensor_sha256": "b4cc02d9810c43e23ec754f3decbc4609e135dc519a504f5e723ab99c70713c5"
+    },
+    {
+      "case": 420,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        6
+      ],
+      "tensor_sha256": "c0cf046e06749cdc36229863303452df8edf558f8122efda0e13c101276e303b"
+    },
+    {
+      "case": 421,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        8
+      ],
+      "tensor_sha256": "4efb3c01b63f2c640b3d11a48b5c51de89b92782953318e48a2eab54355f5703"
+    },
+    {
+      "case": 422,
+      "mask": 4,
+      "rank_pair": [
+        18,
+        8
+      ],
+      "tensor_sha256": "a4b8d831e5869cc2c4924721daf53a0acd91fd82bb8f6ea20cac807859c10e2d"
+    },
+    {
+      "case": 422,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        17
+      ],
+      "tensor_sha256": "40496e6fe82f73a4bed4dff880f03ecf18582c240d80536ec415af828a7695e9"
+    },
+    {
+      "case": 424,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        18
+      ],
+      "tensor_sha256": "7e6c0be2f28436a87c42de951882b303d919bf2977b72da8b4c56d74bb4174e4"
+    },
+    {
+      "case": 424,
+      "mask": 14,
+      "rank_pair": [
+        12,
+        7
+      ],
+      "tensor_sha256": "a1dad3f0732d14c134e410a052c7f38feaedf180aae20fa5c30e719f1a0ad31b"
+    },
+    {
+      "case": 425,
+      "mask": 14,
+      "rank_pair": [
+        19,
+        10
+      ],
+      "tensor_sha256": "7387c371fc65709d485a1dcf2b0930aadaba64f470014b943a0dcc9a7cd70455"
+    },
+    {
+      "case": 426,
+      "mask": 4,
+      "rank_pair": [
+        20,
+        10
+      ],
+      "tensor_sha256": "bbf1e07bb2e1166cd6ba82c1eee823cec447dcf9b75dde469085c3bcd84b9ddd"
+    },
+    {
+      "case": 428,
+      "mask": 4,
+      "rank_pair": [
+        36,
+        6
+      ],
+      "tensor_sha256": "126e5de3d2a002814f78e1f1301a6ec5792cf2e89fdb6328aa4e2fdb61a55734"
+    },
+    {
+      "case": 428,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        6
+      ],
+      "tensor_sha256": "cf01394e8340e190e5b95a076e3a204cf08dbf47e5e51cdaec3458cb4fbae146"
+    },
+    {
+      "case": 429,
+      "mask": 14,
+      "rank_pair": [
+        20,
+        10
+      ],
+      "tensor_sha256": "81a2b901355918b0df19eec0f92f4ac7a7732e39ce8f7a077ea0847247725197"
+    },
+    {
+      "case": 430,
+      "mask": 4,
+      "rank_pair": [
+        20,
+        9
+      ],
+      "tensor_sha256": "a8bd2e4da8ea50e7a6832c1a09104efe441ef3fca98f2ed535dd08a54988e86a"
+    },
+    {
+      "case": 432,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        10
+      ],
+      "tensor_sha256": "c2971de2e2f1355cc5eb15ebce574074f5fb8e213170b426f369c8b9ec24f9aa"
+    },
+    {
+      "case": 433,
+      "mask": 4,
+      "rank_pair": [
+        34,
+        5
+      ],
+      "tensor_sha256": "bfb3e70e73ba43c8896b002c1edd5ba97244e75fa9147327b39953f63c6fb1d1"
+    },
+    {
+      "case": 433,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        6
+      ],
+      "tensor_sha256": "df14f46ce1f353b6dab1e203012d14aa003c70b349c67cea0f8463d13dbd11ae"
+    },
+    {
+      "case": 434,
+      "mask": 4,
+      "rank_pair": [
+        26,
+        9
+      ],
+      "tensor_sha256": "7edf392a5c104cda53a579e1fae4062f4694f5eeeb2324aaf61d9ceebb6a7a6d"
+    },
+    {
+      "case": 436,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        16
+      ],
+      "tensor_sha256": "c4058ad0526233338c2863c238ce0e992b4c4310c234b380f1d581664844f282"
+    },
+    {
+      "case": 436,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        8
+      ],
+      "tensor_sha256": "ebb5ee63c828769834a840fdd34be9d33e7d8916d27042eb15f4937c29261cee"
+    },
+    {
+      "case": 437,
+      "mask": 4,
+      "rank_pair": [
+        34,
+        6
+      ],
+      "tensor_sha256": "79177aaad035f58a4abdac886c64b33a156a7d755dafa689cae6ce8a2d58813a"
+    },
+    {
+      "case": 437,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        6
+      ],
+      "tensor_sha256": "ee22446da5b8b29d4f1a2158fe7652cb31fa8b259691be4756cacebd05cedfbb"
+    },
+    {
+      "case": 438,
+      "mask": 4,
+      "rank_pair": [
+        18,
+        7
+      ],
+      "tensor_sha256": "2e991399a52b3ab72247434923734ced90b1a39498e3e94b3a60454be30f7b8e"
+    },
+    {
+      "case": 440,
+      "mask": 4,
+      "rank_pair": [
+        35,
+        6
+      ],
+      "tensor_sha256": "dd9a9203bcba78d370fa93aa35bdd8a2643136190cda4f0df42951d5a25d094f"
+    },
+    {
+      "case": 440,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        15
+      ],
+      "tensor_sha256": "7dd969fb6d8610480cd9278de8ef3e769523b19f3122ddddd6804a791b4288e2"
+    },
+    {
+      "case": 440,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        6
+      ],
+      "tensor_sha256": "7e8dc3c9fbf4d3abe2f0892e15bf702ae1826a80da2f3e83bdd4a46b072b8c28"
+    },
+    {
+      "case": 441,
+      "mask": 14,
+      "rank_pair": [
+        19,
+        10
+      ],
+      "tensor_sha256": "3f9c805a28979bf50586f351407cb0686074f554d0d87c391cf884e592f6bb01"
+    },
+    {
+      "case": 442,
+      "mask": 4,
+      "rank_pair": [
+        20,
+        11
+      ],
+      "tensor_sha256": "fa7d07150cb35491c172589db58beca713c1664609a7892e90515c9745af9a7c"
+    },
+    {
+      "case": 442,
+      "mask": 8,
+      "rank_pair": [
+        16,
+        15
+      ],
+      "tensor_sha256": "6893997eedefa869e0ae056685cedb02f22f73971e0ea2d0b383f805ef7b0852"
+    },
+    {
+      "case": 444,
+      "mask": 4,
+      "rank_pair": [
+        36,
+        5
+      ],
+      "tensor_sha256": "c0c0486e2025a9e7ec5dfc238808d80e47c5ad26d3af00f0dcdbf4e2d903bd72"
+    },
+    {
+      "case": 444,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        6
+      ],
+      "tensor_sha256": "88b42de3ba830e87e220d64c9e2cadbd25dc7981d113d79f9f98fd68a4044d8c"
+    },
+    {
+      "case": 445,
+      "mask": 4,
+      "rank_pair": [
+        32,
+        6
+      ],
+      "tensor_sha256": "287a9263c961257d299136211eb3c565adc4193fed9cb93306107a911b27a7cc"
+    },
+    {
+      "case": 445,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        6
+      ],
+      "tensor_sha256": "6313a75371e393da5d14052867284b1384a4a36b019f68e939df2400640f206e"
+    },
+    {
+      "case": 446,
+      "mask": 4,
+      "rank_pair": [
+        25,
+        8
+      ],
+      "tensor_sha256": "e959068091fbe08b9133c046b7cd83f2c514dd9ccd70260ecd4c680522300d46"
+    },
+    {
+      "case": 446,
+      "mask": 14,
+      "rank_pair": [
+        26,
+        9
+      ],
+      "tensor_sha256": "4580e4b8846a66bfe32c7988ace8404e0c3163ce5056782dd671bd259c386213"
+    },
+    {
+      "case": 448,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        16
+      ],
+      "tensor_sha256": "aef9eaa2bd1b16d452ab776da3865584daa7c21f676f6554ee175e828da7b3a1"
+    },
+    {
+      "case": 448,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        9
+      ],
+      "tensor_sha256": "8d485532170421308561bcc54be27c1eb1ac6eb27bd38e677ed576f41b78ef6d"
+    },
+    {
+      "case": 449,
+      "mask": 4,
+      "rank_pair": [
+        34,
+        6
+      ],
+      "tensor_sha256": "ee46125019ae6affd6c16db29e4c9b63c658f06b982a984b239099185943c0dc"
+    },
+    {
+      "case": 449,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        7
+      ],
+      "tensor_sha256": "c000a5baad3a5807fe873611bf0a521acd0ddf90b2d72989b335612d3acf1092"
+    },
+    {
+      "case": 450,
+      "mask": 4,
+      "rank_pair": [
+        32,
+        6
+      ],
+      "tensor_sha256": "5be69247764fcdc85d074825cc95583506382b63229e2f659aa0fd96ffc350c5"
+    },
+    {
+      "case": 450,
+      "mask": 8,
+      "rank_pair": [
+        16,
+        14
+      ],
+      "tensor_sha256": "1c634eaed744049144e2e736dad70433b4b341c06db72ccbe45e3045a582f438"
+    },
+    {
+      "case": 450,
+      "mask": 14,
+      "rank_pair": [
+        23,
+        7
+      ],
+      "tensor_sha256": "71c95347c09ffb9aeea12f67e657b81e73690d3b67ad63b0b3af14705cc2d59f"
+    },
+    {
+      "case": 452,
+      "mask": 14,
+      "rank_pair": [
+        16,
+        10
+      ],
+      "tensor_sha256": "9a0bde3ab85e779b92102637816fb524df952b3583efd519b00b98131458aa20"
+    },
+    {
+      "case": 453,
+      "mask": 4,
+      "rank_pair": [
+        34,
+        5
+      ],
+      "tensor_sha256": "52d0427b5897936b602ca217d2b9ba15f42c00f979fe4587d72f6c48c0a4556d"
+    },
+    {
+      "case": 453,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        6
+      ],
+      "tensor_sha256": "d3ddae52c678accd3b29f33dd0536fef7942129a9ade58e28e5b23f9df8e7787"
+    },
+    {
+      "case": 456,
+      "mask": 4,
+      "rank_pair": [
+        36,
+        6
+      ],
+      "tensor_sha256": "388c8a253b5901307b21c90d2725d0afd06b4eed660fd20348427dea4c494414"
+    },
+    {
+      "case": 456,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        7
+      ],
+      "tensor_sha256": "caafb29e40048b3b106631d3d6c9b946dba87c2ec07922b6b6804f96a048393b"
+    },
+    {
+      "case": 457,
+      "mask": 4,
+      "rank_pair": [
+        35,
+        7
+      ],
+      "tensor_sha256": "2f1422c8fa68602d857b780a6145455ff9e9cb13d6d08257cf5c364d6dc5cb59"
+    },
+    {
+      "case": 457,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        18
+      ],
+      "tensor_sha256": "c97efbd89e0e7d18eb18013e4a0d0624c39dbf63a798e874f21ff415955274fc"
+    },
+    {
+      "case": 457,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        7
+      ],
+      "tensor_sha256": "2496d47be2284de5a84f54e6332f8f9e0f9fb2e95cf5fa9d5308100aceeb355d"
+    },
+    {
+      "case": 458,
+      "mask": 4,
+      "rank_pair": [
+        18,
+        8
+      ],
+      "tensor_sha256": "7a0ad62136e22cb745f245811f8afb689ba5580d3c75023209ee15753ade9442"
+    },
+    {
+      "case": 458,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        17
+      ],
+      "tensor_sha256": "ad221dc67f24ac8f75543cd197afde4d57104d5c065493f7bd0ac8c0953faf9a"
+    },
+    {
+      "case": 460,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        18
+      ],
+      "tensor_sha256": "1ad9ca8bd2b7f07ae7b5101a988464c30c650267a7bcb41cef1df85aee69f2e7"
+    },
+    {
+      "case": 460,
+      "mask": 14,
+      "rank_pair": [
+        14,
+        9
+      ],
+      "tensor_sha256": "4a9aecb07a7ad96cfde95718fec9eb14b70fc6856613c7eee47cbe17c39eb9e6"
+    },
+    {
+      "case": 461,
+      "mask": 4,
+      "rank_pair": [
+        33,
+        7
+      ],
+      "tensor_sha256": "35050977eaf79f7363b362d4b16ddaeaf2c0adb79f3e8c665373a7465849e82e"
+    },
+    {
+      "case": 461,
+      "mask": 14,
+      "rank_pair": [
+        18,
+        8
+      ],
+      "tensor_sha256": "72aada4bd953987c2bae40761f58545e3e99dc522eeee1ac8fcc064bbc77d02b"
+    },
+    {
+      "case": 464,
+      "mask": 4,
+      "rank_pair": [
+        38,
+        6
+      ],
+      "tensor_sha256": "79c842974c8cf6d30c768ce9d9be3bd4378e9fa18d93fa1531c2917db6054286"
+    },
+    {
+      "case": 464,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        18
+      ],
+      "tensor_sha256": "c4c18e87440bedb1ab77f96320b2d90ba19270b25b289f868bc56b6e6338460b"
+    },
+    {
+      "case": 464,
+      "mask": 14,
+      "rank_pair": [
+        11,
+        6
+      ],
+      "tensor_sha256": "4abbda10d6713e097cb139df57a44be17a4b8ba2110472bddd0550b858c54c43"
+    },
+    {
+      "case": 465,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        8
+      ],
+      "tensor_sha256": "557bf5ef0ad292b554c374e4a0aff0789969f66769366b5573acee75bbf89c91"
+    },
+    {
+      "case": 468,
+      "mask": 4,
+      "rank_pair": [
+        36,
+        6
+      ],
+      "tensor_sha256": "ca2e7d5e3a2a318b70be14f066d423e1a87848af276eddbb9f5cb43945464fcb"
+    },
+    {
+      "case": 468,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        7
+      ],
+      "tensor_sha256": "b73a2fbad8b997b833f9c004841d7862f2362ed1b369f9d9a673dea914426ac1"
+    },
+    {
+      "case": 469,
+      "mask": 4,
+      "rank_pair": [
+        36,
+        6
+      ],
+      "tensor_sha256": "2db4457310639f8f5b7bb1eb653e82af30904ff7f245e00773484a6ec5279eb4"
+    },
+    {
+      "case": 469,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        6
+      ],
+      "tensor_sha256": "1d185f0242742ae97ae6a93a4271a362fc15024c90d9b4029f241681e22dd85b"
+    },
+    {
+      "case": 472,
+      "mask": 4,
+      "rank_pair": [
+        36,
+        6
+      ],
+      "tensor_sha256": "a22f33ffc13be648259ec7584616036bfcc4c7538a625148ddcb238f53b86167"
+    },
+    {
+      "case": 472,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        6
+      ],
+      "tensor_sha256": "4fc9fc959c45e5cbd896aca3416704db7a7b176ccd664171942451270b6d58fa"
+    },
+    {
+      "case": 473,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        16
+      ],
+      "tensor_sha256": "35dfbaeb9bda6961d7c345c6b50b88b06b28352213196030580068687ad87eb8"
+    },
+    {
+      "case": 473,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        9
+      ],
+      "tensor_sha256": "e5fb68d67802b6b9fb8407ee0d2ad3b0aac3cffb7a1c305e70938ff35867e857"
+    },
+    {
+      "case": 474,
+      "mask": 14,
+      "rank_pair": [
+        25,
+        10
+      ],
+      "tensor_sha256": "8686f5c2d2107622af50f94ff42df12e66d392a286ab9086607d619f7e08fc3b"
+    },
+    {
+      "case": 476,
+      "mask": 4,
+      "rank_pair": [
+        38,
+        6
+      ],
+      "tensor_sha256": "0244f15fe2d939ea8fab59b625ebe992b9907e1119b08dc0e101c64dbbd819b4"
+    },
+    {
+      "case": 476,
+      "mask": 14,
+      "rank_pair": [
+        11,
+        6
+      ],
+      "tensor_sha256": "f1011065caff334fce40f154f49a0bee664c40cd90b1be8f662dc49487580059"
+    },
+    {
+      "case": 477,
+      "mask": 14,
+      "rank_pair": [
+        16,
+        10
+      ],
+      "tensor_sha256": "fbaad308736d69503a7cf1f94cd54ef3c500e9df18c1df9640d306a13f999420"
+    },
+    {
+      "case": 478,
+      "mask": 4,
+      "rank_pair": [
+        29,
+        8
+      ],
+      "tensor_sha256": "bdc7eca393977b1ed508aef921d5abcd308bc6f5f4003ff573dec8f8a58fb0f3"
+    },
+    {
+      "case": 478,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        18
+      ],
+      "tensor_sha256": "c4716089f1306bc59f514fad8d30277751a9f882372d6c1013c86bda1cc4bf58"
+    },
+    {
+      "case": 480,
+      "mask": 4,
+      "rank_pair": [
+        35,
+        7
+      ],
+      "tensor_sha256": "0b494d4c442fa3bedc0504b57402f83ee66085d4fd9a1dd5b56539e4b5f684ec"
+    },
+    {
+      "case": 480,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        8
+      ],
+      "tensor_sha256": "2b6ecfb64721d628d5626e5b3a9fb72da6f6bf1f7d183abee47b339dae913add"
+    },
+    {
+      "case": 481,
+      "mask": 14,
+      "rank_pair": [
+        18,
+        11
+      ],
+      "tensor_sha256": "42039aca1b587c6c3f564b787d1f8c153049adcb48ee931e12a036233a25fdf8"
+    },
+    {
+      "case": 482,
+      "mask": 8,
+      "rank_pair": [
+        16,
+        14
+      ],
+      "tensor_sha256": "88e2bab765eb731b0514d033f8c6f23e1b741582e838a773e4a8cdffa1d3a1e3"
+    },
+    {
+      "case": 484,
+      "mask": 8,
+      "rank_pair": [
+        16,
+        14
+      ],
+      "tensor_sha256": "24ce9721696fd4546253e8755431f6ef5b3bff21c87e761ce67de1feee29cc5d"
+    },
+    {
+      "case": 484,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        8
+      ],
+      "tensor_sha256": "e959fdb33baa5a1c8fd3b45752b11e48cc2dbf76b098339470dd3aba241ab79f"
+    },
+    {
+      "case": 485,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        16
+      ],
+      "tensor_sha256": "675842d33cd883e884ec550779cca504a8b3656978a3d895cd174ff944bf6c89"
+    },
+    {
+      "case": 485,
+      "mask": 14,
+      "rank_pair": [
+        18,
+        8
+      ],
+      "tensor_sha256": "77aa92ffca4a4931df452f80ab8d4521a965e65a6620530ebc718d043d315c73"
+    },
+    {
+      "case": 486,
+      "mask": 4,
+      "rank_pair": [
+        21,
+        7
+      ],
+      "tensor_sha256": "5de1be37647aab751db01e2ed4b7feb7035c8da119f17bf75d135c5c72161b27"
+    },
+    {
+      "case": 486,
+      "mask": 14,
+      "rank_pair": [
+        29,
+        7
+      ],
+      "tensor_sha256": "8de002270cd6ed83b6557412b2ef5a874c6fd023ccc04a6b6b30756c59386c9e"
+    },
+    {
+      "case": 488,
+      "mask": 4,
+      "rank_pair": [
+        34,
+        5
+      ],
+      "tensor_sha256": "fd165c24949e338c5e7667c9c648f7cffb2a0902e04e888e7aff180965c83b9f"
+    },
+    {
+      "case": 488,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        6
+      ],
+      "tensor_sha256": "1a003847a1ffa6082fdd0c7f9df241d636e528c77278ddc8a1c51a70ce9c1cea"
+    },
+    {
+      "case": 489,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        8
+      ],
+      "tensor_sha256": "dc2085c64c33bee20b61bfc750f7108f9c51a1a80c112459a9e015368e7c1589"
+    },
+    {
+      "case": 492,
+      "mask": 14,
+      "rank_pair": [
+        16,
+        9
+      ],
+      "tensor_sha256": "ed26d90927d4406a50a51c029a99cc60b7b7d70ee3c4f9e5c7ac897472229ed2"
+    },
+    {
+      "case": 493,
+      "mask": 4,
+      "rank_pair": [
+        32,
+        5
+      ],
+      "tensor_sha256": "8cc98e90e943eb219b622d2c2082865a9a4493b2803b81b2ee80b8656dcad4d5"
+    },
+    {
+      "case": 493,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        6
+      ],
+      "tensor_sha256": "a26909418310a9bc5d699037d16bb6d57b39fb2eb0b35306792218eaf3723fe2"
+    },
+    {
+      "case": 494,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        16
+      ],
+      "tensor_sha256": "1557e29dd72db8a1f25b11fd7d8b4a31f0593f050dc96fa21b91a2c1b90ef0da"
+    },
+    {
+      "case": 496,
+      "mask": 4,
+      "rank_pair": [
+        35,
+        7
+      ],
+      "tensor_sha256": "0294f4e9692b10b21fc8ef0dccce03109a75a28528c9c2469e3cf997c7970311"
+    },
+    {
+      "case": 496,
+      "mask": 8,
+      "rank_pair": [
+        16,
+        14
+      ],
+      "tensor_sha256": "cc55fbad34e9b8ca3fc50de15c5e66064ac6e3bcd342158a48f0a7e6c4e5c5fe"
+    },
+    {
+      "case": 496,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        8
+      ],
+      "tensor_sha256": "cb688ce34b6e9d3622f176d65fe5887ca4fa3356511ceca028b156ac383dbc5a"
+    },
+    {
+      "case": 497,
+      "mask": 4,
+      "rank_pair": [
+        33,
+        7
+      ],
+      "tensor_sha256": "9ab308d03ade97d8c579720169c3def5ee2bd8d10e0a14af39903f46d97464aa"
+    },
+    {
+      "case": 497,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        8
+      ],
+      "tensor_sha256": "1ac118e2b9b4d468f921fc2413efea71c7369880741ace9cf9fb7bf72b44858c"
+    },
+    {
+      "case": 500,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        8
+      ],
+      "tensor_sha256": "7a48889dc83229288894b48f64e95418b0039abbbd11e138b0a5357398f083ac"
+    },
+    {
+      "case": 501,
+      "mask": 4,
+      "rank_pair": [
+        32,
+        6
+      ],
+      "tensor_sha256": "a67327b0af9b63cc1412e6c0b160cefb8c3b0284158b6f6c57c015153aa52222"
+    },
+    {
+      "case": 501,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        6
+      ],
+      "tensor_sha256": "4fffe30ffc82489f8253ba43465eddf2c5e908b904bc41cbf3ec11d91bb7da7c"
+    },
+    {
+      "case": 504,
+      "mask": 4,
+      "rank_pair": [
+        33,
+        6
+      ],
+      "tensor_sha256": "8cdf75580fba1f6e835961f6bdbfd65d2a3ecc2911a3e57f8dbb9bec22dfc331"
+    },
+    {
+      "case": 504,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        15
+      ],
+      "tensor_sha256": "56afe72f48a0372234da53e9971f9a22067fb22a826dbd8df4bee9d53ac45a7f"
+    },
+    {
+      "case": 504,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        7
+      ],
+      "tensor_sha256": "0e86b8b715cb6b1a29a60341e90c3455dd9b9192d419d1044336ffc92ce02262"
+    },
+    {
+      "case": 505,
+      "mask": 4,
+      "rank_pair": [
+        35,
+        7
+      ],
+      "tensor_sha256": "41637eab244158956003dd1c3f33455bcbe9a0ad850a9d9ff5f376bbb851eb44"
+    },
+    {
+      "case": 505,
+      "mask": 8,
+      "rank_pair": [
+        16,
+        12
+      ],
+      "tensor_sha256": "d190f72ed4c7c4b8a9db20240c91398d77f4591b18d6b98afd6372506fd222f1"
+    },
+    {
+      "case": 505,
+      "mask": 14,
+      "rank_pair": [
+        16,
+        8
+      ],
+      "tensor_sha256": "8cd6ce1399507e677cadba571b001d2cf97472b1fffb38f5f8d79e0a519cefb8"
+    },
+    {
+      "case": 506,
+      "mask": 4,
+      "rank_pair": [
+        27,
+        6
+      ],
+      "tensor_sha256": "28ed2aa6ce441190ee5917b820529efd203ac50991a4ad90b4007d1e5b774d58"
+    },
+    {
+      "case": 506,
+      "mask": 14,
+      "rank_pair": [
+        29,
+        7
+      ],
+      "tensor_sha256": "328cdd230b6679e5b7512f2a6398b27344bd765dfd6aaffc39e8088eff59a0e1"
+    },
+    {
+      "case": 508,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        8
+      ],
+      "tensor_sha256": "82a3d54452cc7b7aff9bbb983acedbcd5505ae8888f639b57d60f55f6bd26c0a"
+    },
+    {
+      "case": 509,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        15
+      ],
+      "tensor_sha256": "8f9bdf1219426600a2c81de06669ed5efdb0aba916cf528b0c1310ae56f262a6"
+    },
+    {
+      "case": 509,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        9
+      ],
+      "tensor_sha256": "8139e7262862e660c833815322906644798a8697acafd743cc314c66d1b77569"
+    },
+    {
+      "case": 512,
+      "mask": 4,
+      "rank_pair": [
+        38,
+        6
+      ],
+      "tensor_sha256": "a1d1bad394ee2a8007ac05b4e9d4b825c633e8e2ba97ed4915ad8a6d7f8631a3"
+    },
+    {
+      "case": 512,
+      "mask": 14,
+      "rank_pair": [
+        11,
+        6
+      ],
+      "tensor_sha256": "7b7ad3d3cb0c24372d0337449ce6f67139bd10f6d28a509e52f473d57d9dbe3c"
+    },
+    {
+      "case": 513,
+      "mask": 4,
+      "rank_pair": [
+        35,
+        7
+      ],
+      "tensor_sha256": "cdee5a7d10e23d4e24e090baf0e5def1d849ed0209a799760aea2c9689fba4a0"
+    },
+    {
+      "case": 513,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        16
+      ],
+      "tensor_sha256": "eab2af7257c7b9466b71647391ac42d1fc83beb5b878a4acdd2b5fc0d3e00bd9"
+    },
+    {
+      "case": 513,
+      "mask": 14,
+      "rank_pair": [
+        16,
+        8
+      ],
+      "tensor_sha256": "e9940267570b789f62f59709f0f03ce007774810d8eed6a58fd624057fb34951"
+    },
+    {
+      "case": 514,
+      "mask": 4,
+      "rank_pair": [
+        22,
+        7
+      ],
+      "tensor_sha256": "f5481622ad80506912d9834584845baf216616b37121eacef997330e4b97c209"
+    },
+    {
+      "case": 514,
+      "mask": 14,
+      "rank_pair": [
+        28,
+        7
+      ],
+      "tensor_sha256": "edbd51d228487d8a195c7b641265c19db69e8de7b20e74d67595fedd068cc36d"
+    },
+    {
+      "case": 516,
+      "mask": 4,
+      "rank_pair": [
+        35,
+        6
+      ],
+      "tensor_sha256": "05969758d76064939f59c90a8682df7673565c83174fff51cc21a25293d6db30"
+    },
+    {
+      "case": 516,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        15
+      ],
+      "tensor_sha256": "b4abe381e60fd6fb82101cbde55fe697fc3872b9756e172352ab38fece6fe766"
+    },
+    {
+      "case": 516,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        6
+      ],
+      "tensor_sha256": "e9d8bf004fb2f7b5b528db31dfaa6a41377b3133ba7f0cec162273ae563586a5"
+    },
+    {
+      "case": 517,
+      "mask": 4,
+      "rank_pair": [
+        34,
+        5
+      ],
+      "tensor_sha256": "7b9e2dfb93c857428f10c457eae75bc996c1ba3c5e44e3a7531b671f7dc3135f"
+    },
+    {
+      "case": 517,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        5
+      ],
+      "tensor_sha256": "a7380a0d551a41cd5f92189286fef5d6cfaf0ba4978f12dda7218fb246d85891"
+    },
+    {
+      "case": 518,
+      "mask": 4,
+      "rank_pair": [
+        20,
+        12
+      ],
+      "tensor_sha256": "250f02665cdefb2a676f987d2eb3bb6f32c513c9160a2686431f12ce8d69c19d"
+    },
+    {
+      "case": 520,
+      "mask": 4,
+      "rank_pair": [
+        36,
+        6
+      ],
+      "tensor_sha256": "212625f96710936a805f43f95eb2800c68c5b0a83e1236445ffcbcfd605b6792"
+    },
+    {
+      "case": 520,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        7
+      ],
+      "tensor_sha256": "8a9346611a06ef832af490a0ec73ba8dcceeb28492e408316d07b48d5266fc06"
+    },
+    {
+      "case": 521,
+      "mask": 4,
+      "rank_pair": [
+        36,
+        6
+      ],
+      "tensor_sha256": "6a34f91b0a05400b3404355967140494eadc2c2d0c4fb468956940611f1cfce0"
+    },
+    {
+      "case": 521,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        6
+      ],
+      "tensor_sha256": "b826b60fc9dd3db5c499a38a7bf2b6f3fe9a8746f756fef57f81dbe07d587667"
+    },
+    {
+      "case": 522,
+      "mask": 4,
+      "rank_pair": [
+        29,
+        7
+      ],
+      "tensor_sha256": "52a8ec6958fc5211ba3d3c67b4d14cbaf4419e184651078a27a4e9772e2f5867"
+    },
+    {
+      "case": 522,
+      "mask": 14,
+      "rank_pair": [
+        28,
+        8
+      ],
+      "tensor_sha256": "8550711681ed4c7c39d0b647f9baf3886989adda2d703b2e512ef6a87e59db49"
+    },
+    {
+      "case": 524,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        16
+      ],
+      "tensor_sha256": "86638cd5eb9d5821ab168fdb9c60b8424f6db9adc96561dafbd0fd97ce42ad04"
+    },
+    {
+      "case": 524,
+      "mask": 14,
+      "rank_pair": [
+        14,
+        8
+      ],
+      "tensor_sha256": "e49a92bb5a433b7fbb9ea1e3500264892ab51f3ed7c277223d7bff6d5d1794ee"
+    },
+    {
+      "case": 525,
+      "mask": 4,
+      "rank_pair": [
+        32,
+        5
+      ],
+      "tensor_sha256": "50034699f44f1d120206efc564d94fde83b8a578a7b353b4e3b15d283e47d097"
+    },
+    {
+      "case": 525,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        6
+      ],
+      "tensor_sha256": "289b4f877ffed4d4a5559e8b46b6baa0cf6a91c9303ac0a091c4c50012f5c1a6"
+    },
+    {
+      "case": 526,
+      "mask": 4,
+      "rank_pair": [
+        23,
+        11
+      ],
+      "tensor_sha256": "37af103ec52daf53743dc4a620e3787aca4cc8404087805ad282fa36998c202b"
+    },
+    {
+      "case": 528,
+      "mask": 4,
+      "rank_pair": [
+        34,
+        5
+      ],
+      "tensor_sha256": "6283d47b5b6278ee5886b364b2b37836175d09dfeb9c67102ad4057c0d248494"
+    },
+    {
+      "case": 528,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        6
+      ],
+      "tensor_sha256": "d4807de404bb5e83910ef9e068e0a6b8d2e87257ab2259776ad4f6048d8ef788"
+    },
+    {
+      "case": 529,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        16
+      ],
+      "tensor_sha256": "48766489148d0d3d0f174af82bf7ed261c96ad8d4e596ced41d1a896ad4fa4e3"
+    },
+    {
+      "case": 529,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        10
+      ],
+      "tensor_sha256": "3f17e786a9e0eef060e3211dbaa152a08393889a7a2fcf5201a8ae8fb550e956"
+    },
+    {
+      "case": 530,
+      "mask": 4,
+      "rank_pair": [
+        23,
+        11
+      ],
+      "tensor_sha256": "d488acccd4f7c9773bf74da94907808749942e17dd65b892e0fb3248248106da"
+    },
+    {
+      "case": 532,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        16
+      ],
+      "tensor_sha256": "2096b2413dca4500ba54aeb11fe4dfb55c00898e46bb27ce4b7dd9e5bfc29a9b"
+    },
+    {
+      "case": 532,
+      "mask": 14,
+      "rank_pair": [
+        14,
+        9
+      ],
+      "tensor_sha256": "5c29f4b6e322c7250582b27486876b9bd76a6da38410f4fee862126d70544c14"
+    },
+    {
+      "case": 533,
+      "mask": 4,
+      "rank_pair": [
+        32,
+        5
+      ],
+      "tensor_sha256": "92b8205e244bbe645240e83b96d0eabd7f5af91ba38ff3cdd3fba288fb76c678"
+    },
+    {
+      "case": 533,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        6
+      ],
+      "tensor_sha256": "344764a7b5c6cd63e5175febb2269c8041f51c5947a154909518c5ee15a8610d"
+    },
+    {
+      "case": 534,
+      "mask": 4,
+      "rank_pair": [
+        23,
+        11
+      ],
+      "tensor_sha256": "8a96c4c1d6547804a3498cdec24ac1468520839e0b9ab4e1b1f428d28c7ea9ed"
+    },
+    {
+      "case": 534,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        16
+      ],
+      "tensor_sha256": "2168e2d5e06878b60ffcdb77aa17209c11e101be881281b52cd284fbab25b753"
+    },
+    {
+      "case": 536,
+      "mask": 4,
+      "rank_pair": [
+        34,
+        6
+      ],
+      "tensor_sha256": "1d90071fec4b4fdab49289bcdeb3c0ee4f4dd3361f9d1defb9207c71898db74c"
+    },
+    {
+      "case": 536,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        7
+      ],
+      "tensor_sha256": "39ae6d97a4a65d54a780b644d1d0449ca7f28bb655dbe5b3a587290cbbe48e58"
+    },
+    {
+      "case": 537,
+      "mask": 4,
+      "rank_pair": [
+        34,
+        5
+      ],
+      "tensor_sha256": "2c4b13cad537ad149133c4a6ebbc373a542f2f8bd9442f887923b811956c2842"
+    },
+    {
+      "case": 537,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        6
+      ],
+      "tensor_sha256": "1d2793a05bf5e6de50d2247e2932941d3e283d4ae4b230172c6d630c3dfa0ef3"
+    },
+    {
+      "case": 540,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        9
+      ],
+      "tensor_sha256": "c890ba8752688770e78c6bd87f7bcd7c778fb1545b9d661ee6e0db3ccd94fbca"
+    },
+    {
+      "case": 541,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        8
+      ],
+      "tensor_sha256": "724cd9208f5d549292c4beb6e8d44366551e17126c940166a5d9adfb5d63a1af"
+    },
+    {
+      "case": 542,
+      "mask": 4,
+      "rank_pair": [
+        26,
+        5
+      ],
+      "tensor_sha256": "281801b89ec1fc34217edf455cbfcb0a55dd74c8fb0a01fea51255cd66751db7"
+    },
+    {
+      "case": 542,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        18
+      ],
+      "tensor_sha256": "bd8961fa32836df7c4de06a70409b5c8defd3cd6293517177a7a5a0645c57d40"
+    },
+    {
+      "case": 542,
+      "mask": 14,
+      "rank_pair": [
+        23,
+        6
+      ],
+      "tensor_sha256": "4bc9053c89831c3c27d1044357c8155539de2773ff45e40fd942e1a43a84a2c9"
+    },
+    {
+      "case": 544,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        16
+      ],
+      "tensor_sha256": "5e5bc9ed55fbf1312dc06e454aaedca1f067ebeb52eaefdcb9954a1e66c4bb8d"
+    },
+    {
+      "case": 544,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        9
+      ],
+      "tensor_sha256": "315e28511232084477d75efaa844ccc51ee0ccc89bd2758c8f89e6d5712d3172"
+    },
+    {
+      "case": 545,
+      "mask": 14,
+      "rank_pair": [
+        18,
+        10
+      ],
+      "tensor_sha256": "8db3afe805a64de9d0c3cf934a3d3894078b90e43570148761db93073487a984"
+    },
+    {
+      "case": 546,
+      "mask": 4,
+      "rank_pair": [
+        24,
+        7
+      ],
+      "tensor_sha256": "536c98b54ef3e148213279c11292c41c5b50132a1d961fe792a657b623088efa"
+    },
+    {
+      "case": 546,
+      "mask": 8,
+      "rank_pair": [
+        18,
+        12
+      ],
+      "tensor_sha256": "5a53a1c08b6ab05279e9f3b8bee3aa50b8d90200ea2e426d8daa1182cfc22aae"
+    },
+    {
+      "case": 546,
+      "mask": 14,
+      "rank_pair": [
+        26,
+        8
+      ],
+      "tensor_sha256": "4fde03450946d88da6c9ca94d8b1326d3473fc0ce6568268962c3257a1e126bc"
+    },
+    {
+      "case": 548,
+      "mask": 4,
+      "rank_pair": [
+        38,
+        6
+      ],
+      "tensor_sha256": "4b2b3ac985f3c98c8ad1609435534c5f6fb3c71875c9db75afada196d03659aa"
+    },
+    {
+      "case": 548,
+      "mask": 14,
+      "rank_pair": [
+        11,
+        7
+      ],
+      "tensor_sha256": "9ff92e64017b97ad682c48eb1c0f33d5be635844e6d93f0f380b743ac15af9e9"
+    },
+    {
+      "case": 549,
+      "mask": 4,
+      "rank_pair": [
+        36,
+        6
+      ],
+      "tensor_sha256": "a8850996c5e569a44ac094147724a7f34698c644319bdd490e80b07c8d2fb66d"
+    },
+    {
+      "case": 549,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        6
+      ],
+      "tensor_sha256": "d85bdc783340f38c94254725c91e19906103d575773a682aa318c210f22a9825"
+    },
+    {
+      "case": 550,
+      "mask": 4,
+      "rank_pair": [
+        22,
+        11
+      ],
+      "tensor_sha256": "91f9b63b879ace4643c5b45682233a01684adb4cd5e88076c15f8f017303625a"
+    },
+    {
+      "case": 552,
+      "mask": 4,
+      "rank_pair": [
+        35,
+        7
+      ],
+      "tensor_sha256": "85c51dc05279efa3f68b6b783f00c58bd4cb08412514fc2316839fe7bce86092"
+    },
+    {
+      "case": 552,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        16
+      ],
+      "tensor_sha256": "9a87c59e4920734c579b0fce091825dbe5d7abf1c2e4c62fef8f0a496a655f3a"
+    },
+    {
+      "case": 552,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        8
+      ],
+      "tensor_sha256": "a274caf30899b4380292aaa34d8be9dc1404d0ce958291389ffd7b4a58df4255"
+    },
+    {
+      "case": 553,
+      "mask": 4,
+      "rank_pair": [
+        36,
+        6
+      ],
+      "tensor_sha256": "53ef6a96f3fdcbccd8d0d5784a5ae8469fdc21a53b4786619939c967ce7ad66c"
+    },
+    {
+      "case": 553,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        6
+      ],
+      "tensor_sha256": "a8e2241f29052cf2bc228cae4f5700bbf5cb7ace8e010011b7c8b401454c0c9c"
+    },
+    {
+      "case": 556,
+      "mask": 4,
+      "rank_pair": [
+        36,
+        6
+      ],
+      "tensor_sha256": "3b616649f1b2f7d0451bb8c17334c3ab12dc1176d121650baac6c91bd8979a8c"
+    },
+    {
+      "case": 556,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        6
+      ],
+      "tensor_sha256": "9b47c356047e720fc48e5678b7bf1445cef873939a652b1566febd12dcb25b7a"
+    },
+    {
+      "case": 557,
+      "mask": 14,
+      "rank_pair": [
+        14,
+        8
+      ],
+      "tensor_sha256": "963cedfccdd1b71e9f9706a74c5b053f60b00dcdf5af97c6487e44ddd339cb7a"
+    },
+    {
+      "case": 560,
+      "mask": 14,
+      "rank_pair": [
+        12,
+        8
+      ],
+      "tensor_sha256": "7ae7e885bfe349642e2b41eec9047e46d22402de776353f269bceb5d00ace7b7"
+    },
+    {
+      "case": 561,
+      "mask": 14,
+      "rank_pair": [
+        16,
+        9
+      ],
+      "tensor_sha256": "b0d9f4be67b36f5f7f96c88f101f98391a7d23f2bdbb69e190c848d7bd6eab7a"
+    },
+    {
+      "case": 562,
+      "mask": 4,
+      "rank_pair": [
+        24,
+        10
+      ],
+      "tensor_sha256": "ec5f0b6d9e90512e896ef2e26a8a4d792560a3e86aaee223209eaf75bfa82da5"
+    },
+    {
+      "case": 564,
+      "mask": 4,
+      "rank_pair": [
+        38,
+        5
+      ],
+      "tensor_sha256": "4207b551eb967ebc882f0863856c3c0736dfa6633657439b19a7f7be3f68f6bf"
+    },
+    {
+      "case": 564,
+      "mask": 14,
+      "rank_pair": [
+        11,
+        5
+      ],
+      "tensor_sha256": "2afb94f9351761e8c24d88dbb0123ad06ad4c695c99d5287b77efdeb165e322f"
+    },
+    {
+      "case": 565,
+      "mask": 4,
+      "rank_pair": [
+        32,
+        5
+      ],
+      "tensor_sha256": "d9d0b397d1d5d5a679279d2af42edaa9edb00d04702c15ac40202cdfca92f51d"
+    },
+    {
+      "case": 565,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        6
+      ],
+      "tensor_sha256": "c03b4be7b76c71f65a1f5feda0970073e560bff4b63c5e6e1626aef5956e420b"
+    },
+    {
+      "case": 566,
+      "mask": 4,
+      "rank_pair": [
+        27,
+        9
+      ],
+      "tensor_sha256": "27db1d94a7f44192531691bbea115d2cd62d9de6c57477dd7df612e6379316fc"
+    },
+    {
+      "case": 566,
+      "mask": 14,
+      "rank_pair": [
+        24,
+        9
+      ],
+      "tensor_sha256": "b2ff1a1904908e4cfebdeaea16366f33d750adfaec8803993471cdae2694e52a"
+    },
+    {
+      "case": 568,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        9
+      ],
+      "tensor_sha256": "3ebabf2232faff3ebf7a3289a452b940aba15e215eef6171df791af3dae3fb55"
+    },
+    {
+      "case": 569,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        8
+      ],
+      "tensor_sha256": "fa4796f1dd194a51cd7e6c25d42708d1c3be2347803d5c157a60add84b207eb9"
+    },
+    {
+      "case": 570,
+      "mask": 4,
+      "rank_pair": [
+        25,
+        9
+      ],
+      "tensor_sha256": "9f04843a84d696afee84a6f715b5253fad65e41fc64bb2059345e02fce391d22"
+    },
+    {
+      "case": 572,
+      "mask": 4,
+      "rank_pair": [
+        33,
+        7
+      ],
+      "tensor_sha256": "f4891ce675ae3d583213e7b97a5d28c337248db9bf5ce03bb8904d83482e86c8"
+    },
+    {
+      "case": 572,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        15
+      ],
+      "tensor_sha256": "53121e7318563e775917abb41e664388f66b8d35e154c01ff0d5cac14923878e"
+    },
+    {
+      "case": 572,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        8
+      ],
+      "tensor_sha256": "987af911f6f9ca826c83b9c6964e0ac042401ab3ed0c70a73b417608d0e18326"
+    },
+    {
+      "case": 573,
+      "mask": 4,
+      "rank_pair": [
+        31,
+        7
+      ],
+      "tensor_sha256": "6559f39790fb9f6383b732b5dfd5193ba30b1cdd81f974754cb6a374b3b2b178"
+    },
+    {
+      "case": 573,
+      "mask": 14,
+      "rank_pair": [
+        20,
+        8
+      ],
+      "tensor_sha256": "9e37428427060640f452f1d952bd2484dfa831e39e25a2af9801f9aa9ea40aba"
+    },
+    {
+      "case": 574,
+      "mask": 4,
+      "rank_pair": [
+        19,
+        11
+      ],
+      "tensor_sha256": "3c4d1f94c05332c54df30a740ab3ca4e36de51d7ca4c57822f0af276bfd26543"
+    },
+    {
+      "case": 576,
+      "mask": 4,
+      "rank_pair": [
+        38,
+        5
+      ],
+      "tensor_sha256": "f3571555766bc40a965fab49a9fe220ab0dcc197912fb92da4b3ddc64bcad267"
+    },
+    {
+      "case": 576,
+      "mask": 14,
+      "rank_pair": [
+        11,
+        5
+      ],
+      "tensor_sha256": "d0048a490d5b0e18cc66793ecc4e795e8ff8a56adeab292bedc3af86444c3e55"
+    },
+    {
+      "case": 577,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        15
+      ],
+      "tensor_sha256": "95c714f828e289847e3b7ba62c28b77431788b4575ef63a42cac8e799a103bd8"
+    },
+    {
+      "case": 577,
+      "mask": 14,
+      "rank_pair": [
+        18,
+        8
+      ],
+      "tensor_sha256": "cb2737998fac35d54b2a1d524b51d1501cb9c480432422eb09b388b018f81931"
+    },
+    {
+      "case": 578,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        17
+      ],
+      "tensor_sha256": "d7c314b6828c738de562fe5db93638da8ff2760098ca83c20264fea976de840b"
+    },
+    {
+      "case": 580,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        9
+      ],
+      "tensor_sha256": "5e272907791b140aba8305fca4ae31a0f52f110657c19fb0747c6c13965a34a0"
+    },
+    {
+      "case": 581,
+      "mask": 4,
+      "rank_pair": [
+        36,
+        5
+      ],
+      "tensor_sha256": "dd75db83fda24944cdae5a07f97e1fe4261b513e992cf4e41189bae71e3b9491"
+    },
+    {
+      "case": 581,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        16
+      ],
+      "tensor_sha256": "83ffd14a88e7fe88ce45b9a004a0bdb0ccf118bb974d3f6ac2a5c4761274c5c6"
+    },
+    {
+      "case": 581,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        5
+      ],
+      "tensor_sha256": "1b14f6f40d8019544fcc947cad309aedc7f7c04f9c795c03d164d3ee1a417c1e"
+    },
+    {
+      "case": 582,
+      "mask": 4,
+      "rank_pair": [
+        25,
+        8
+      ],
+      "tensor_sha256": "1bee8f758178e91a535c889e24a3e5ff3be51ebafc4e131d6df827bcf11693ac"
+    },
+    {
+      "case": 582,
+      "mask": 14,
+      "rank_pair": [
+        26,
+        8
+      ],
+      "tensor_sha256": "ecde47ed191795d74c7aad8937b95b406b3162d186791324566565d07368f250"
+    },
+    {
+      "case": 584,
+      "mask": 4,
+      "rank_pair": [
+        36,
+        6
+      ],
+      "tensor_sha256": "f6730e27712daecd56c3724eff97216244e4b972fd41c6ac52332dfb1f43595c"
+    },
+    {
+      "case": 584,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        7
+      ],
+      "tensor_sha256": "2ce68a370c46d6d2b46eaeb336200761af6b6c460c99e43475cefad4edd0ce37"
+    },
+    {
+      "case": 585,
+      "mask": 4,
+      "rank_pair": [
+        34,
+        6
+      ],
+      "tensor_sha256": "2b1840cf81ca3edbbb7b041d25bc471d0c3e225623dca74b8c77fa021c6d0547"
+    },
+    {
+      "case": 585,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        7
+      ],
+      "tensor_sha256": "361cf90d8afbc96be85c3737c5103911fbd0b8ecb35178bc9951e90e1a5710de"
+    },
+    {
+      "case": 586,
+      "mask": 4,
+      "rank_pair": [
+        32,
+        5
+      ],
+      "tensor_sha256": "772d181b31e8fdea53a210952396884b49cf3e637eee55e3a0f4ce524f963674"
+    },
+    {
+      "case": 586,
+      "mask": 14,
+      "rank_pair": [
+        23,
+        6
+      ],
+      "tensor_sha256": "6b2d634fed7c17e53244363f06bff631c6ad4b8e4b3a4494d42de52bda0ea446"
+    },
+    {
+      "case": 588,
+      "mask": 4,
+      "rank_pair": [
+        38,
+        6
+      ],
+      "tensor_sha256": "79cffd22914cb7991583319156385d667b07548405cb05c872ae38a64359192b"
+    },
+    {
+      "case": 588,
+      "mask": 14,
+      "rank_pair": [
+        11,
+        6
+      ],
+      "tensor_sha256": "0084dd750a0fb160f167f17de6ca04fc978191122483ba93d39d93753b15bb18"
+    },
+    {
+      "case": 589,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        8
+      ],
+      "tensor_sha256": "8581031805f85d5a98944ffba7b360cbe4983faa06b061c9859390901c0d524d"
+    },
+    {
+      "case": 590,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        18
+      ],
+      "tensor_sha256": "7d8ca28764cf2ca0e1bb73bb67abe08f52f2cfad9f263246e3cf00911f06f471"
+    },
+    {
+      "case": 592,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        18
+      ],
+      "tensor_sha256": "b9fd0d2a09f799e01097232782fd59de0e50a38227dc77e9efce716ec208cf21"
+    },
+    {
+      "case": 592,
+      "mask": 14,
+      "rank_pair": [
+        14,
+        8
+      ],
+      "tensor_sha256": "1490a350e02fe53550bec418600fdee2a260e41e730789e615bc991dc8078d48"
+    },
+    {
+      "case": 593,
+      "mask": 4,
+      "rank_pair": [
+        30,
+        8
+      ],
+      "tensor_sha256": "f3f842aa1cbdcfce5f65df643b92b18fc3a73328cfe60a62873202216e9cf711"
+    },
+    {
+      "case": 593,
+      "mask": 14,
+      "rank_pair": [
+        22,
+        9
+      ],
+      "tensor_sha256": "5069c7420551d93c7a5d7e7328ee399bfbd9835014bb551e61621be046f888f1"
+    },
+    {
+      "case": 594,
+      "mask": 4,
+      "rank_pair": [
+        20,
+        5
+      ],
+      "tensor_sha256": "a7627399f847b92f3434e6e422e6c202326b5be87727c653466f99b28d7748b1"
+    },
+    {
+      "case": 594,
+      "mask": 14,
+      "rank_pair": [
+        29,
+        6
+      ],
+      "tensor_sha256": "534b5fcfbc8cdb2d139212c8798034587c3a011fe19be999b50eb4d5888fcd6c"
+    },
+    {
+      "case": 596,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        16
+      ],
+      "tensor_sha256": "81b11b66ede7e88718a74ec3278885420180021eb66f5c7de7ce0f327c69acc1"
+    },
+    {
+      "case": 596,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        9
+      ],
+      "tensor_sha256": "522ffcfbe11ddee18c4c3af51a020f0a45c3ef7f47a715f36f0aa9c7bfa683d6"
+    },
+    {
+      "case": 597,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        16
+      ],
+      "tensor_sha256": "6efd7474a97bb7fe374c40639f12508d7533528462d03020d16151613fb98ba9"
+    },
+    {
+      "case": 597,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        8
+      ],
+      "tensor_sha256": "05dcbdc8a85947573c5c30e45e88030dfc0ae5751df677c731d25b570166f8e3"
+    },
+    {
+      "case": 598,
+      "mask": 4,
+      "rank_pair": [
+        17,
+        8
+      ],
+      "tensor_sha256": "41ceef7c711634ab04a7deb2c4b117851b68cfbb22ed4875d60cd10154836ad6"
+    },
+    {
+      "case": 598,
+      "mask": 8,
+      "rank_pair": [
+        16,
+        15
+      ],
+      "tensor_sha256": "c08a679b29437fc87c74acb869ff13d3062cbe0c45633d0add1d021db3df0a9b"
+    },
+    {
+      "case": 600,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        16
+      ],
+      "tensor_sha256": "9656e2b8a3a06ee4f5f596d8e48618e76950a9769026a46397ad7ee5b8eaabda"
+    },
+    {
+      "case": 600,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        8
+      ],
+      "tensor_sha256": "f408553ee38fb2f10d503a6fc7912fd3d3c3a72fe8cf46c72e7d58d997329d11"
+    },
+    {
+      "case": 601,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        17
+      ],
+      "tensor_sha256": "9d7360608338936802a07c88a2d6740604ce802d48cb754b9ad274b85d78e992"
+    },
+    {
+      "case": 601,
+      "mask": 14,
+      "rank_pair": [
+        18,
+        11
+      ],
+      "tensor_sha256": "81c2b2c1a7a2405c714e1302141d147f46436991d6677aa513eb36239cec192d"
+    },
+    {
+      "case": 602,
+      "mask": 4,
+      "rank_pair": [
+        25,
+        6
+      ],
+      "tensor_sha256": "0d848121b47afc255d2a9c52cf05014d70335b04bfdb912ab7d592e5929c7138"
+    },
+    {
+      "case": 602,
+      "mask": 14,
+      "rank_pair": [
+        29,
+        7
+      ],
+      "tensor_sha256": "654e0e4f615fe05bdaa63baaf3ebde272abb4517968ed793953d2d9c8de082a0"
+    },
+    {
+      "case": 604,
+      "mask": 8,
+      "rank_pair": [
+        16,
+        15
+      ],
+      "tensor_sha256": "a8844ab413c0468c6da690a1af81292992f2e62b7fc6ca6804a916b03b80fa00"
+    },
+    {
+      "case": 604,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        9
+      ],
+      "tensor_sha256": "6df7cd5cc75cdb88b1d1c0fc1a1e4889bfc37a84303d03391cf77ba77355847d"
+    },
+    {
+      "case": 605,
+      "mask": 4,
+      "rank_pair": [
+        34,
+        6
+      ],
+      "tensor_sha256": "b5211ab63f0363a1d82adeafbc3f861316e07751f72e655470734893272b7116"
+    },
+    {
+      "case": 605,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        6
+      ],
+      "tensor_sha256": "e59ec157a032e47e42f5b456acf7b0fb1ad6df8100b63209d92d1ac91e07b189"
+    },
+    {
+      "case": 606,
+      "mask": 4,
+      "rank_pair": [
+        21,
+        8
+      ],
+      "tensor_sha256": "40047f3b8edc26f60816b6147204433ef3c7737ab0381d030a93164581c71122"
+    },
+    {
+      "case": 606,
+      "mask": 14,
+      "rank_pair": [
+        30,
+        8
+      ],
+      "tensor_sha256": "175d69d78c627c52d3534c211ba62c20fc8b1243a157c66ccf4f395a6cbdd2e1"
+    },
+    {
+      "case": 608,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        16
+      ],
+      "tensor_sha256": "26a2f074fc64fd8bd4b36b5527f1957d017263ae477b78a9b950de1885ecca88"
+    },
+    {
+      "case": 608,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        9
+      ],
+      "tensor_sha256": "db43941d6c5ea9f26c5b656b09b1487653f50a4af0c6d1d1a40343fef8984015"
+    },
+    {
+      "case": 609,
+      "mask": 4,
+      "rank_pair": [
+        33,
+        6
+      ],
+      "tensor_sha256": "c1a09c6c56fd9e06099e26aeff895b9975de1f253ea71d06ce24a000293c13c1"
+    },
+    {
+      "case": 609,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        6
+      ],
+      "tensor_sha256": "43deeeb5cb7158a32a14261dac68a9c2c621e26c6076f83ffb1054e6dc007663"
+    },
+    {
+      "case": 612,
+      "mask": 4,
+      "rank_pair": [
+        36,
+        5
+      ],
+      "tensor_sha256": "208b6d9d506cf0dcad1aec4eccd7b3609e1a29002809fc0faeea4f66a485e119"
+    },
+    {
+      "case": 612,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        6
+      ],
+      "tensor_sha256": "3c03b503a14fe732e66923800e001927275015b83b83f195e45cc8340740e5a7"
+    },
+    {
+      "case": 613,
+      "mask": 4,
+      "rank_pair": [
+        33,
+        7
+      ],
+      "tensor_sha256": "6c3a0459edcb67daa641f8d649aed1936e05d9415edf98784093cc7061b1241a"
+    },
+    {
+      "case": 613,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        18
+      ],
+      "tensor_sha256": "2b2e4ff05cd32e1b9d8daf36db714ce92a42438b9b5c4efbba77737e39357377"
+    },
+    {
+      "case": 613,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        8
+      ],
+      "tensor_sha256": "4326791862b11ea07a4ef2c2446ea1fb515a7977e23e7c62fd86b8716e170afa"
+    },
+    {
+      "case": 614,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        17
+      ],
+      "tensor_sha256": "35eadc3248a451575e72b46d1e17b5fc489954dcefe46e40bdbc893cccc71281"
+    },
+    {
+      "case": 616,
+      "mask": 4,
+      "rank_pair": [
+        34,
+        5
+      ],
+      "tensor_sha256": "a3c04414c67bc718e9d9a1bc89464f8350de912988b16d5f605b674af1500c56"
+    },
+    {
+      "case": 616,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        6
+      ],
+      "tensor_sha256": "b7b9350cc090e69364785a1aef2d855f64c6af018feb05222577c533001ccbd6"
+    },
+    {
+      "case": 617,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        16
+      ],
+      "tensor_sha256": "2905bc3405bcf3ab3a48e9a6e40861f9d95ff351d5b8e5341dfc6d332b45b674"
+    },
+    {
+      "case": 617,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        9
+      ],
+      "tensor_sha256": "86525b7ed4accb5514828cd79884a12f51adb08184f0ad9124754a88dd9803b8"
+    },
+    {
+      "case": 618,
+      "mask": 4,
+      "rank_pair": [
+        17,
+        11
+      ],
+      "tensor_sha256": "fbfcadfb45cd6185542a86e28887d785b0ddde61900cf19eb7ccb3d0c2dd8d27"
+    },
+    {
+      "case": 620,
+      "mask": 4,
+      "rank_pair": [
+        36,
+        5
+      ],
+      "tensor_sha256": "0e2a195f630ea0ad435e3bc7940c5f11216b71e73787a7a1ef61ba62a089b135"
+    },
+    {
+      "case": 620,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        6
+      ],
+      "tensor_sha256": "99961a9657e004f27dce1f662e3791e8f820b2a015a9ca4c7bfe27600d0b2667"
+    },
+    {
+      "case": 621,
+      "mask": 4,
+      "rank_pair": [
+        32,
+        5
+      ],
+      "tensor_sha256": "1293d1bf502c3744f7690fef06161d70cfd253efe02ce19e55cc0c09cbd739b0"
+    },
+    {
+      "case": 621,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        6
+      ],
+      "tensor_sha256": "19a097a1f2fefbaaf269dbc73d1d9f172f4fb27146eddca896be80b1513686d9"
+    },
+    {
+      "case": 622,
+      "mask": 4,
+      "rank_pair": [
+        23,
+        8
+      ],
+      "tensor_sha256": "4ca01390c2efde77b7a193904f0584d280f0f8d6ca7499ee1d0a74c883c19b69"
+    },
+    {
+      "case": 622,
+      "mask": 14,
+      "rank_pair": [
+        28,
+        8
+      ],
+      "tensor_sha256": "1301714e071dd16314711e0f9de98a8a1f3ae33c0c799cb95c173a7537cb3108"
+    },
+    {
+      "case": 624,
+      "mask": 4,
+      "rank_pair": [
+        36,
+        6
+      ],
+      "tensor_sha256": "577deddf523125f0c36a7fe24c840ef82eb06328bea13640e40d888e4094a03b"
+    },
+    {
+      "case": 624,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        7
+      ],
+      "tensor_sha256": "4fc383990061a77bdb88f271fdf490c54b8fe9b11a0989466bac97407932a7f4"
+    },
+    {
+      "case": 625,
+      "mask": 4,
+      "rank_pair": [
+        36,
+        6
+      ],
+      "tensor_sha256": "0453f727ccb1e6f8f943abf536344b732f6f90fd1aa55bc1d33c3ef82001d770"
+    },
+    {
+      "case": 625,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        7
+      ],
+      "tensor_sha256": "6bf5b5c31c56273ce5cb405fc07cdb8f0d5f09109bbc7cebe7e74b5a90a885ee"
+    },
+    {
+      "case": 628,
+      "mask": 4,
+      "rank_pair": [
+        33,
+        6
+      ],
+      "tensor_sha256": "cf30bbe22227f184c42f8045bfb049328bedfb087a864deb4767de4337ebe3a7"
+    },
+    {
+      "case": 628,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        15
+      ],
+      "tensor_sha256": "7c916c6323ffab7fad1f915173a0c32835bd1f3bd2c349ac9ac7d8766041fcb3"
+    },
+    {
+      "case": 628,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        7
+      ],
+      "tensor_sha256": "a2a6c79a61e630669cc8376c29f0852e30aaf31c01c1a651748bb36bb67300d2"
+    },
+    {
+      "case": 629,
+      "mask": 4,
+      "rank_pair": [
+        34,
+        5
+      ],
+      "tensor_sha256": "862b0679074ec60c0aad56d817716ae77305e97a6588c5dfe0cd288f675eda42"
+    },
+    {
+      "case": 629,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        5
+      ],
+      "tensor_sha256": "e764a4d80dcbf665e040f31c43d57c6555efc591659421460ea194e944a37b45"
+    },
+    {
+      "case": 630,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        18
+      ],
+      "tensor_sha256": "662af96944b97e2e34d889a3b3f9d35042c3ee818288657aee04e7fdf8e185c6"
+    },
+    {
+      "case": 632,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        9
+      ],
+      "tensor_sha256": "8b1ec00361383eb0c3fde1f11bc1071676f039d3c2f419a393817e5b1694aa55"
+    },
+    {
+      "case": 633,
+      "mask": 4,
+      "rank_pair": [
+        32,
+        5
+      ],
+      "tensor_sha256": "f77a57c61eed85436f6e0a3e76c6b5cdb269ded77a6144e41851254cb64e1c37"
+    },
+    {
+      "case": 633,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        6
+      ],
+      "tensor_sha256": "d197d26a00c79f2b6791746bb089c563a410ebc4ab15cdb16efa98c41f80b4b5"
+    },
+    {
+      "case": 634,
+      "mask": 4,
+      "rank_pair": [
+        21,
+        8
+      ],
+      "tensor_sha256": "f046dafe4b42bea5e4e21e442961a6adf2f7353660a64c4217f77ffc73b229b7"
+    },
+    {
+      "case": 636,
+      "mask": 4,
+      "rank_pair": [
+        36,
+        6
+      ],
+      "tensor_sha256": "7a55d12dab4adb03533f099176de6d2477a129387b5d1ffb7d089b5170c38ce7"
+    },
+    {
+      "case": 636,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        16
+      ],
+      "tensor_sha256": "8699ab2bccee8e7a3914e7a47cfdf4fbfa5f2087b1a1d2494ce3df08fbeb32c3"
+    },
+    {
+      "case": 636,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        7
+      ],
+      "tensor_sha256": "8c34324033cfe9cdf4a97a2dd8bcb9e04a7ac79cbb6bfbc4c1693a942e71365a"
+    },
+    {
+      "case": 637,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        9
+      ],
+      "tensor_sha256": "a09f83b82fd527ba95bd71ad5bee911d9112c31e3909416a1d1ad9754e61ff56"
+    },
+    {
+      "case": 640,
+      "mask": 4,
+      "rank_pair": [
+        36,
+        6
+      ],
+      "tensor_sha256": "7189eeedf8b0b00c7aa2d1aec6693297d8f22bdfbce4b8cddafe72597803b68d"
+    },
+    {
+      "case": 640,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        7
+      ],
+      "tensor_sha256": "a0f58823a2e18fe4df21e69d9cb30338a439368ec3dbaa2e5e39a1e238d1650e"
+    },
+    {
+      "case": 641,
+      "mask": 4,
+      "rank_pair": [
+        36,
+        6
+      ],
+      "tensor_sha256": "5b442bf237d827ec395a8fb75c2a6a6466c2e3790a5cf21b11828e6daa322a9a"
+    },
+    {
+      "case": 641,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        7
+      ],
+      "tensor_sha256": "048ecd5ef15becf88ae42467ca6f33ca5556cb10150b8002a27b82d23a31261c"
+    },
+    {
+      "case": 642,
+      "mask": 4,
+      "rank_pair": [
+        18,
+        8
+      ],
+      "tensor_sha256": "8599868f814bde2d21d11e68864ff4ca83dc8e4ad76bd9f03d33dba568c10180"
+    },
+    {
+      "case": 644,
+      "mask": 4,
+      "rank_pair": [
+        36,
+        5
+      ],
+      "tensor_sha256": "c0cd6a5b85d5a6d28be4ebc661a949427d32709b083458e888c05a753160dbc7"
+    },
+    {
+      "case": 644,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        6
+      ],
+      "tensor_sha256": "796c551f29cf8ac5cffeedd53aaeeef99cbbaf19006212bb23664622bd2ee60f"
+    },
+    {
+      "case": 645,
+      "mask": 4,
+      "rank_pair": [
+        31,
+        8
+      ],
+      "tensor_sha256": "ffed811e45f7ba3df3e772e6d2aaee5243d46ed9bdc9b0f0ed039affa3128223"
+    },
+    {
+      "case": 645,
+      "mask": 14,
+      "rank_pair": [
+        19,
+        9
+      ],
+      "tensor_sha256": "7674c6899395fa201586df302da7c14aeaea2a37cab838dcd7392b434d0de642"
+    },
+    {
+      "case": 646,
+      "mask": 4,
+      "rank_pair": [
+        22,
+        10
+      ],
+      "tensor_sha256": "cfa3edf3df3bcebc28b0b13d9f32a6d8f53f790707bf43044c6c776f692c308f"
+    },
+    {
+      "case": 648,
+      "mask": 4,
+      "rank_pair": [
+        38,
+        6
+      ],
+      "tensor_sha256": "64fd5a17bb5c4c2eeaa487dbf8611c8f71064dbc86d726e2c54edd73e3c65f51"
+    },
+    {
+      "case": 648,
+      "mask": 14,
+      "rank_pair": [
+        11,
+        7
+      ],
+      "tensor_sha256": "02768908bc4e63d096278b6c6cc7235bf52a408a6607dca866d14fdc13a7e9f7"
+    },
+    {
+      "case": 649,
+      "mask": 4,
+      "rank_pair": [
+        33,
+        7
+      ],
+      "tensor_sha256": "e45d67de14251554cb6b34750db560c3d777b0c5eb4636a49c919c99c8f5c4e2"
+    },
+    {
+      "case": 649,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        8
+      ],
+      "tensor_sha256": "8b8645a33f8f9564d2d06a3bbbc2b5c0538bc721b98e37f366634fcf8317949e"
+    },
+    {
+      "case": 650,
+      "mask": 4,
+      "rank_pair": [
+        22,
+        6
+      ],
+      "tensor_sha256": "2697be1ca07d18df58a40ee5531bb34e783e8f04ec1421638ae4fb0eb5b6df69"
+    },
+    {
+      "case": 650,
+      "mask": 14,
+      "rank_pair": [
+        27,
+        7
+      ],
+      "tensor_sha256": "ef393a5d46132407c3eb90cdba99af3e17517a5784e4a0762228941755cac657"
+    },
+    {
+      "case": 651,
+      "mask": 5,
+      "rank_pair": [
+        16,
+        15
+      ],
+      "tensor_sha256": "85e6d00e6c1511bf5d314b625fec2038f3b4ef88460e9cf60e004f4971839590"
+    },
+    {
+      "case": 652,
+      "mask": 4,
+      "rank_pair": [
+        38,
+        6
+      ],
+      "tensor_sha256": "64cce8da79b7280117e8daecb5d2ab76ef9eb11cfe17722293829ae0f97c8a7a"
+    },
+    {
+      "case": 652,
+      "mask": 14,
+      "rank_pair": [
+        11,
+        6
+      ],
+      "tensor_sha256": "4aba89d9071e3dd29c3eacb6ec73a8f5b00236936646b77ee7488e996cc1decc"
+    },
+    {
+      "case": 653,
+      "mask": 4,
+      "rank_pair": [
+        34,
+        6
+      ],
+      "tensor_sha256": "8be8a939144368d1059c1abc9a3c5488ad08689b95b59e4c0598bc617fd6f520"
+    },
+    {
+      "case": 653,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        7
+      ],
+      "tensor_sha256": "2df4db4cae1a2c6fb502c3759315d38f6b2467ae001fc2827dd9d3a72d8f7005"
+    },
+    {
+      "case": 656,
+      "mask": 4,
+      "rank_pair": [
+        34,
+        6
+      ],
+      "tensor_sha256": "111269655a07091541bd0aac48ef8a2867dbf86ede67486f1dd157f60bc2d7f8"
+    },
+    {
+      "case": 656,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        7
+      ],
+      "tensor_sha256": "17958b689a3202dd3909c20fdd74a291fe2b8d14344ee7f8e573dbe6efbc4719"
+    },
+    {
+      "case": 657,
+      "mask": 4,
+      "rank_pair": [
+        28,
+        7
+      ],
+      "tensor_sha256": "02f316d29a367d37a6956acd0fa030c37426efe67087c2f7c5497346c0956b94"
+    },
+    {
+      "case": 657,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        14
+      ],
+      "tensor_sha256": "9ff001cf6ca90d1692ddf5eff60edd062f560decbe7046b940abc811b47687cf"
+    },
+    {
+      "case": 657,
+      "mask": 14,
+      "rank_pair": [
+        23,
+        8
+      ],
+      "tensor_sha256": "2ba0b9f37d681721001e746b13f9bcf8139ec19e85723057984186da2dfd0f01"
+    },
+    {
+      "case": 659,
+      "mask": 5,
+      "rank_pair": [
+        16,
+        15
+      ],
+      "tensor_sha256": "64baaab11fb06c7b2d6798ce8e12c0ad884201dc73c1934f5b9a13de11df228a"
+    },
+    {
+      "case": 660,
+      "mask": 4,
+      "rank_pair": [
+        36,
+        5
+      ],
+      "tensor_sha256": "7f828ebcd47f4b4a65ecd5535267872b13c9d8669bb896f163ce02ee0ccd6728"
+    },
+    {
+      "case": 660,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        6
+      ],
+      "tensor_sha256": "f555a0a03b5582cf181aca95582d9819c5843e682b090ef1aebf4f0a08d1098d"
+    },
+    {
+      "case": 661,
+      "mask": 4,
+      "rank_pair": [
+        36,
+        6
+      ],
+      "tensor_sha256": "2686d927661dd3a8de77b806b295de48e3ee76e84d4a2fe418568653f0e5aa27"
+    },
+    {
+      "case": 661,
+      "mask": 8,
+      "rank_pair": [
+        16,
+        14
+      ],
+      "tensor_sha256": "d6d1c0204dcad1522ced22da700d622bfaa12c52323158f538f20c162a09e567"
+    },
+    {
+      "case": 661,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        7
+      ],
+      "tensor_sha256": "bd8275620ce9d80e9c1f50466e3454f312e0e3237cc39f5dc6245edaf9f0a12d"
+    },
+    {
+      "case": 662,
+      "mask": 4,
+      "rank_pair": [
+        23,
+        7
+      ],
+      "tensor_sha256": "482bcb6576c906a29f806b82ee4ffc36ac22356bf448f8760e9a2847fb4346f2"
+    },
+    {
+      "case": 662,
+      "mask": 14,
+      "rank_pair": [
+        28,
+        8
+      ],
+      "tensor_sha256": "78cb1a5201b1285e7e25dcf6dcbf92ced9123aef796a50ca96a79336cd18ae20"
+    },
+    {
+      "case": 664,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        8
+      ],
+      "tensor_sha256": "0fb24fc664819ea1cd8079a1286d741b21d1c3811ef0eab1ebca59d0040965e5"
+    },
+    {
+      "case": 665,
+      "mask": 4,
+      "rank_pair": [
+        36,
+        6
+      ],
+      "tensor_sha256": "acd167b52635fff3e82a9513cce74c80d257dcaaf81071f6f8bf893e42a004fc"
+    },
+    {
+      "case": 665,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        18
+      ],
+      "tensor_sha256": "a11b15a2a12ca55800ccd89a166e3fa80f709947ced0cff68d896e62f1579800"
+    },
+    {
+      "case": 665,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        6
+      ],
+      "tensor_sha256": "336431b62a786233545c78cc904a925e8640772515ca23d427fa0917a2f23bc3"
+    },
+    {
+      "case": 666,
+      "mask": 4,
+      "rank_pair": [
+        19,
+        13
+      ],
+      "tensor_sha256": "44e1620e7e378fd596da72b0c57971f094ef914d7c5645b41ead32925aa6f8bc"
+    },
+    {
+      "case": 666,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        17
+      ],
+      "tensor_sha256": "c3c00224ea50a677955cabd3c2ac273da159b4ce586b311bbd26070ceda2bcf4"
+    },
+    {
+      "case": 668,
+      "mask": 4,
+      "rank_pair": [
+        36,
+        6
+      ],
+      "tensor_sha256": "332764ed52331379e739a5b7f7a0da2e43d0253b7b1d4acca0b1d45b72f3f8a7"
+    },
+    {
+      "case": 668,
+      "mask": 14,
+      "rank_pair": [
+        13,
+        7
+      ],
+      "tensor_sha256": "f75de21003c542db6e02faf2c02b6c55080644acccc61de98acbe9852756559c"
+    },
+    {
+      "case": 669,
+      "mask": 4,
+      "rank_pair": [
+        33,
+        7
+      ],
+      "tensor_sha256": "6468be912b24a80d02815f2941f0e9a47d07a168899ab82dda914b617e4fc375"
+    },
+    {
+      "case": 669,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        16
+      ],
+      "tensor_sha256": "d97ac302401e13d55c6bdb4e28de45e7368b2e07993ac31ae4cf8ee97fe5273b"
+    },
+    {
+      "case": 669,
+      "mask": 14,
+      "rank_pair": [
+        18,
+        8
+      ],
+      "tensor_sha256": "66ce536751f3df5c5572130cf453565087fb791484d93b71c4e7aedf8af71ec0"
+    },
+    {
+      "case": 670,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        18
+      ],
+      "tensor_sha256": "222d77c3c9bf264430aded54628d92819c70cf211dc12787bb2b359b53055223"
+    },
+    {
+      "case": 672,
+      "mask": 4,
+      "rank_pair": [
+        35,
+        7
+      ],
+      "tensor_sha256": "7b8c5c8f9f69c028f5c23f16b3727a08ea0e0fc291b4bd832d5075c6887f5c8d"
+    },
+    {
+      "case": 672,
+      "mask": 8,
+      "rank_pair": [
+        14,
+        15
+      ],
+      "tensor_sha256": "331dff1edd2facedf4e77bc3615c314e4b0d73d8794335ff779b303397269bb3"
+    },
+    {
+      "case": 672,
+      "mask": 14,
+      "rank_pair": [
+        15,
+        8
+      ],
+      "tensor_sha256": "c690219ee585e178da4a9a4159115fa465cb3503cdea1b4236b87767738b445d"
+    },
+    {
+      "case": 673,
+      "mask": 4,
+      "rank_pair": [
+        30,
+        4
+      ],
+      "tensor_sha256": "ce82cf30920ebee2c2efc3ce42995f124e67d9085b20f41ba1617b158ac21d7c"
+    },
+    {
+      "case": 673,
+      "mask": 14,
+      "rank_pair": [
+        19,
+        5
+      ],
+      "tensor_sha256": "5783351a14788d48122c12ab050785fa45ec5e2903954a24b34de6274c7cb0de"
+    },
+    {
+      "case": 674,
+      "mask": 4,
+      "rank_pair": [
+        20,
+        11
+      ],
+      "tensor_sha256": "eed05f1413951b8056e255a0a48cfa20f00b2219ec3ecd8133202c02f791467b"
+    },
+    {
+      "case": 675,
+      "mask": 14,
+      "rank_pair": [
+        11,
+        15
+      ],
+      "tensor_sha256": "e2df9435cf121e604770224edac7b7f702d81846e2447d8a72358d8d934b58d9"
+    },
+    {
+      "case": 676,
+      "mask": 14,
+      "rank_pair": [
+        17,
+        10
+      ],
+      "tensor_sha256": "c740d0ff8b1a46a3c8ea48250ba1a91ce3b315b34f051488e4b10e88cd289c4f"
+    },
+    {
+      "case": 677,
+      "mask": 14,
+      "rank_pair": [
+        20,
+        11
+      ],
+      "tensor_sha256": "173ab691b123a968a916af6170b677d3277963d1b2c51f55833f1cab57c1841d"
+    },
+    {
+      "case": 678,
+      "mask": 4,
+      "rank_pair": [
+        26,
+        6
+      ],
+      "tensor_sha256": "40eca337407bef22641b2ac5ab168e5d662b34d423696dd9d9b12ad4fff5547f"
+    },
+    {
+      "case": 678,
+      "mask": 14,
+      "rank_pair": [
+        29,
+        6
+      ],
+      "tensor_sha256": "fadc9a4f02c89d7877af0bab1b395bc223c4882fd16248a3ef5d20291ad777cd"
+    }
+  ],
+  "scope": "The recorded binary coefficient tensors, with arbitrary characteristic-two scalars; new cross-space recombinations and untested field coefficients remain open.",
+  "separating_logical_entry_x_y_v_u": [
+    0,
+    3,
+    0,
+    3
+  ],
+  "source_spaces": 680,
+  "unique_recorded_affordable_tensors": 659
+}

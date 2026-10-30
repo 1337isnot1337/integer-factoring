@@ -1,0 +1,13 @@
+{
+  "alternating_matrix_cases": 70,
+  "angle_triples": 1200,
+  "exact_polynomial_divisions": 300,
+  "negative_controls": [
+    "nonexact division",
+    "nonalternating matrix",
+    "omitted unchanged-state edge"
+  ],
+  "original_integral_reference_triples": 590,
+  "scope": "Exact polynomial angle-factor construction; no improved factoring exponent",
+  "script_sha256": "4a4f00206984edbcd9a73292b5b3c11ce626d78f0d8742154f58349592d22a1d"
+}

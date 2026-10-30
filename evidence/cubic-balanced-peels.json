@@ -1,0 +1,1879 @@
+{
+  "all_field_claim_scope": "Only the two stated peel families; the normal form holds over all characteristic-two extensions.",
+  "alternating_peel_cost_lower_bound": "10*sqrt(7), strictly greater than22",
+  "alternating_peel_operator_basis_columns_checked": 1078,
+  "alternating_peel_residual_column_rank_lower_bound": 21,
+  "alternating_peel_residual_row_rank_lower_bound": 27,
+  "general_cost_36_optimality_claim": false,
+  "normal_form": "Q154 + Sym(out) tensor I(input) + span(E,baseline_A)",
+  "normal_form_basis": [
+    [
+      "D_D",
+      0,
+      0
+    ],
+    [
+      "D_D",
+      0,
+      1
+    ],
+    [
+      "D_D",
+      0,
+      2
+    ],
+    [
+      "D_D",
+      0,
+      3
+    ],
+    [
+      "D_D",
+      0,
+      4
+    ],
+    [
+      "D_D",
+      0,
+      5
+    ],
+    [
+      "D_D",
+      0,
+      6
+    ],
+    [
+      "D_D",
+      1,
+      0
+    ],
+    [
+      "D_D",
+      1,
+      1
+    ],
+    [
+      "D_D",
+      1,
+      2
+    ],
+    [
+      "D_D",
+      1,
+      3
+    ],
+    [
+      "D_D",
+      1,
+      4
+    ],
+    [
+      "D_D",
+      1,
+      5
+    ],
+    [
+      "D_D",
+      1,
+      6
+    ],
+    [
+      "D_D",
+      2,
+      0
+    ],
+    [
+      "D_D",
+      2,
+      1
+    ],
+    [
+      "D_D",
+      2,
+      2
+    ],
+    [
+      "D_D",
+      2,
+      3
+    ],
+    [
+      "D_D",
+      2,
+      4
+    ],
+    [
+      "D_D",
+      2,
+      5
+    ],
+    [
+      "D_D",
+      2,
+      6
+    ],
+    [
+      "D_D",
+      3,
+      0
+    ],
+    [
+      "D_D",
+      3,
+      1
+    ],
+    [
+      "D_D",
+      3,
+      2
+    ],
+    [
+      "D_D",
+      3,
+      3
+    ],
+    [
+      "D_D",
+      3,
+      4
+    ],
+    [
+      "D_D",
+      3,
+      5
+    ],
+    [
+      "D_D",
+      3,
+      6
+    ],
+    [
+      "D_D",
+      4,
+      0
+    ],
+    [
+      "D_D",
+      4,
+      1
+    ],
+    [
+      "D_D",
+      4,
+      2
+    ],
+    [
+      "D_D",
+      4,
+      3
+    ],
+    [
+      "D_D",
+      4,
+      4
+    ],
+    [
+      "D_D",
+      4,
+      5
+    ],
+    [
+      "D_D",
+      4,
+      6
+    ],
+    [
+      "D_D",
+      5,
+      0
+    ],
+    [
+      "D_D",
+      5,
+      1
+    ],
+    [
+      "D_D",
+      5,
+      2
+    ],
+    [
+      "D_D",
+      5,
+      3
+    ],
+    [
+      "D_D",
+      5,
+      4
+    ],
+    [
+      "D_D",
+      5,
+      5
+    ],
+    [
+      "D_D",
+      5,
+      6
+    ],
+    [
+      "D_D",
+      6,
+      0
+    ],
+    [
+      "D_D",
+      6,
+      1
+    ],
+    [
+      "D_D",
+      6,
+      2
+    ],
+    [
+      "D_D",
+      6,
+      3
+    ],
+    [
+      "D_D",
+      6,
+      4
+    ],
+    [
+      "D_D",
+      6,
+      5
+    ],
+    [
+      "D_D",
+      6,
+      6
+    ],
+    [
+      "A_D",
+      0,
+      1,
+      0
+    ],
+    [
+      "D_A",
+      0,
+      0,
+      1
+    ],
+    [
+      "A_D",
+      0,
+      1,
+      1
+    ],
+    [
+      "D_A",
+      1,
+      0,
+      1
+    ],
+    [
+      "A_A",
+      0,
+      1
+    ],
+    [
+      "A_D",
+      0,
+      2,
+      0
+    ],
+    [
+      "D_A",
+      0,
+      0,
+      2
+    ],
+    [
+      "A_D",
+      0,
+      2,
+      2
+    ],
+    [
+      "D_A",
+      2,
+      0,
+      2
+    ],
+    [
+      "A_A",
+      0,
+      2
+    ],
+    [
+      "A_D",
+      0,
+      3,
+      0
+    ],
+    [
+      "D_A",
+      0,
+      0,
+      3
+    ],
+    [
+      "A_D",
+      0,
+      3,
+      3
+    ],
+    [
+      "D_A",
+      3,
+      0,
+      3
+    ],
+    [
+      "A_A",
+      0,
+      3
+    ],
+    [
+      "A_D",
+      0,
+      4,
+      0
+    ],
+    [
+      "D_A",
+      0,
+      0,
+      4
+    ],
+    [
+      "A_D",
+      0,
+      4,
+      4
+    ],
+    [
+      "D_A",
+      4,
+      0,
+      4
+    ],
+    [
+      "A_A",
+      0,
+      4
+    ],
+    [
+      "A_D",
+      0,
+      5,
+      0
+    ],
+    [
+      "D_A",
+      0,
+      0,
+      5
+    ],
+    [
+      "A_D",
+      0,
+      5,
+      5
+    ],
+    [
+      "D_A",
+      5,
+      0,
+      5
+    ],
+    [
+      "A_A",
+      0,
+      5
+    ],
+    [
+      "A_D",
+      0,
+      6,
+      0
+    ],
+    [
+      "D_A",
+      0,
+      0,
+      6
+    ],
+    [
+      "A_D",
+      0,
+      6,
+      6
+    ],
+    [
+      "D_A",
+      6,
+      0,
+      6
+    ],
+    [
+      "A_A",
+      0,
+      6
+    ],
+    [
+      "A_D",
+      1,
+      2,
+      1
+    ],
+    [
+      "D_A",
+      1,
+      1,
+      2
+    ],
+    [
+      "A_D",
+      1,
+      2,
+      2
+    ],
+    [
+      "D_A",
+      2,
+      1,
+      2
+    ],
+    [
+      "A_A",
+      1,
+      2
+    ],
+    [
+      "A_D",
+      1,
+      3,
+      1
+    ],
+    [
+      "D_A",
+      1,
+      1,
+      3
+    ],
+    [
+      "A_D",
+      1,
+      3,
+      3
+    ],
+    [
+      "D_A",
+      3,
+      1,
+      3
+    ],
+    [
+      "A_A",
+      1,
+      3
+    ],
+    [
+      "A_D",
+      1,
+      4,
+      1
+    ],
+    [
+      "D_A",
+      1,
+      1,
+      4
+    ],
+    [
+      "A_D",
+      1,
+      4,
+      4
+    ],
+    [
+      "D_A",
+      4,
+      1,
+      4
+    ],
+    [
+      "A_A",
+      1,
+      4
+    ],
+    [
+      "A_D",
+      1,
+      5,
+      1
+    ],
+    [
+      "D_A",
+      1,
+      1,
+      5
+    ],
+    [
+      "A_D",
+      1,
+      5,
+      5
+    ],
+    [
+      "D_A",
+      5,
+      1,
+      5
+    ],
+    [
+      "A_A",
+      1,
+      5
+    ],
+    [
+      "A_D",
+      1,
+      6,
+      1
+    ],
+    [
+      "D_A",
+      1,
+      1,
+      6
+    ],
+    [
+      "A_D",
+      1,
+      6,
+      6
+    ],
+    [
+      "D_A",
+      6,
+      1,
+      6
+    ],
+    [
+      "A_A",
+      1,
+      6
+    ],
+    [
+      "A_D",
+      2,
+      3,
+      2
+    ],
+    [
+      "D_A",
+      2,
+      2,
+      3
+    ],
+    [
+      "A_D",
+      2,
+      3,
+      3
+    ],
+    [
+      "D_A",
+      3,
+      2,
+      3
+    ],
+    [
+      "A_A",
+      2,
+      3
+    ],
+    [
+      "A_D",
+      2,
+      4,
+      2
+    ],
+    [
+      "D_A",
+      2,
+      2,
+      4
+    ],
+    [
+      "A_D",
+      2,
+      4,
+      4
+    ],
+    [
+      "D_A",
+      4,
+      2,
+      4
+    ],
+    [
+      "A_A",
+      2,
+      4
+    ],
+    [
+      "A_D",
+      2,
+      5,
+      2
+    ],
+    [
+      "D_A",
+      2,
+      2,
+      5
+    ],
+    [
+      "A_D",
+      2,
+      5,
+      5
+    ],
+    [
+      "D_A",
+      5,
+      2,
+      5
+    ],
+    [
+      "A_A",
+      2,
+      5
+    ],
+    [
+      "A_D",
+      2,
+      6,
+      2
+    ],
+    [
+      "D_A",
+      2,
+      2,
+      6
+    ],
+    [
+      "A_D",
+      2,
+      6,
+      6
+    ],
+    [
+      "D_A",
+      6,
+      2,
+      6
+    ],
+    [
+      "A_A",
+      2,
+      6
+    ],
+    [
+      "A_D",
+      3,
+      4,
+      3
+    ],
+    [
+      "D_A",
+      3,
+      3,
+      4
+    ],
+    [
+      "A_D",
+      3,
+      4,
+      4
+    ],
+    [
+      "D_A",
+      4,
+      3,
+      4
+    ],
+    [
+      "A_A",
+      3,
+      4
+    ],
+    [
+      "A_D",
+      3,
+      5,
+      3
+    ],
+    [
+      "D_A",
+      3,
+      3,
+      5
+    ],
+    [
+      "A_D",
+      3,
+      5,
+      5
+    ],
+    [
+      "D_A",
+      5,
+      3,
+      5
+    ],
+    [
+      "A_A",
+      3,
+      5
+    ],
+    [
+      "A_D",
+      3,
+      6,
+      3
+    ],
+    [
+      "D_A",
+      3,
+      3,
+      6
+    ],
+    [
+      "A_D",
+      3,
+      6,
+      6
+    ],
+    [
+      "D_A",
+      6,
+      3,
+      6
+    ],
+    [
+      "A_A",
+      3,
+      6
+    ],
+    [
+      "A_D",
+      4,
+      5,
+      4
+    ],
+    [
+      "D_A",
+      4,
+      4,
+      5
+    ],
+    [
+      "A_D",
+      4,
+      5,
+      5
+    ],
+    [
+      "D_A",
+      5,
+      4,
+      5
+    ],
+    [
+      "A_A",
+      4,
+      5
+    ],
+    [
+      "A_D",
+      4,
+      6,
+      4
+    ],
+    [
+      "D_A",
+      4,
+      4,
+      6
+    ],
+    [
+      "A_D",
+      4,
+      6,
+      6
+    ],
+    [
+      "D_A",
+      6,
+      4,
+      6
+    ],
+    [
+      "A_A",
+      4,
+      6
+    ],
+    [
+      "A_D",
+      5,
+      6,
+      5
+    ],
+    [
+      "D_A",
+      5,
+      5,
+      6
+    ],
+    [
+      "A_D",
+      5,
+      6,
+      6
+    ],
+    [
+      "D_A",
+      6,
+      5,
+      6
+    ],
+    [
+      "A_A",
+      5,
+      6
+    ],
+    [
+      "A_I",
+      0,
+      1
+    ],
+    [
+      "A_I",
+      0,
+      2
+    ],
+    [
+      "A_I",
+      0,
+      3
+    ],
+    [
+      "A_I",
+      0,
+      4
+    ],
+    [
+      "A_I",
+      0,
+      5
+    ],
+    [
+      "A_I",
+      0,
+      6
+    ],
+    [
+      "A_I",
+      1,
+      2
+    ],
+    [
+      "A_I",
+      1,
+      3
+    ],
+    [
+      "A_I",
+      1,
+      4
+    ],
+    [
+      "A_I",
+      1,
+      5
+    ],
+    [
+      "A_I",
+      1,
+      6
+    ],
+    [
+      "A_I",
+      2,
+      3
+    ],
+    [
+      "A_I",
+      2,
+      4
+    ],
+    [
+      "A_I",
+      2,
+      5
+    ],
+    [
+      "A_I",
+      2,
+      6
+    ],
+    [
+      "A_I",
+      3,
+      4
+    ],
+    [
+      "A_I",
+      3,
+      5
+    ],
+    [
+      "A_I",
+      3,
+      6
+    ],
+    [
+      "A_I",
+      4,
+      5
+    ],
+    [
+      "A_I",
+      4,
+      6
+    ],
+    [
+      "A_I",
+      5,
+      6
+    ],
+    [
+      "E"
+    ],
+    [
+      "baseline_A"
+    ]
+  ],
+  "normal_form_dimension": 177,
+  "physical_raw_directions_reconstructed_in_both_cuts": 770,
+  "single_edge_parameter_classes": {
+    "one": {
+      "peel": [
+        12,
+        1
+      ],
+      "residual": [
+        34,
+        21
+      ]
+    },
+    "other": {
+      "peel": [
+        14,
+        1
+      ],
+      "residual": [
+        35,
+        21
+      ]
+    },
+    "zero": {
+      "peel": [
+        4,
+        1
+      ],
+      "residual": [
+        25,
+        21
+      ]
+    }
+  },
+  "single_edge_rank_controls": [
+    {
+      "controls": [
+        {
+          "parameter": 0,
+          "peel_ranks": [
+            4,
+            1
+          ],
+          "residual_ranks": [
+            25,
+            21
+          ]
+        },
+        {
+          "parameter": 1,
+          "peel_ranks": [
+            12,
+            1
+          ],
+          "residual_ranks": [
+            34,
+            21
+          ]
+        },
+        {
+          "parameter": 2,
+          "peel_ranks": [
+            14,
+            1
+          ],
+          "residual_ranks": [
+            35,
+            21
+          ]
+        }
+      ],
+      "edge": [
+        0,
+        1
+      ]
+    },
+    {
+      "controls": [
+        {
+          "parameter": 0,
+          "peel_ranks": [
+            4,
+            1
+          ],
+          "residual_ranks": [
+            25,
+            21
+          ]
+        },
+        {
+          "parameter": 1,
+          "peel_ranks": [
+            12,
+            1
+          ],
+          "residual_ranks": [
+            34,
+            21
+          ]
+        },
+        {
+          "parameter": 2,
+          "peel_ranks": [
+            14,
+            1
+          ],
+          "residual_ranks": [
+            35,
+            21
+          ]
+        }
+      ],
+      "edge": [
+        0,
+        2
+      ]
+    },
+    {
+      "controls": [
+        {
+          "parameter": 0,
+          "peel_ranks": [
+            4,
+            1
+          ],
+          "residual_ranks": [
+            25,
+            21
+          ]
+        },
+        {
+          "parameter": 1,
+          "peel_ranks": [
+            12,
+            1
+          ],
+          "residual_ranks": [
+            34,
+            21
+          ]
+        },
+        {
+          "parameter": 2,
+          "peel_ranks": [
+            14,
+            1
+          ],
+          "residual_ranks": [
+            35,
+            21
+          ]
+        }
+      ],
+      "edge": [
+        0,
+        3
+      ]
+    },
+    {
+      "controls": [
+        {
+          "parameter": 0,
+          "peel_ranks": [
+            4,
+            1
+          ],
+          "residual_ranks": [
+            25,
+            21
+          ]
+        },
+        {
+          "parameter": 1,
+          "peel_ranks": [
+            12,
+            1
+          ],
+          "residual_ranks": [
+            34,
+            21
+          ]
+        },
+        {
+          "parameter": 2,
+          "peel_ranks": [
+            14,
+            1
+          ],
+          "residual_ranks": [
+            35,
+            21
+          ]
+        }
+      ],
+      "edge": [
+        0,
+        4
+      ]
+    },
+    {
+      "controls": [
+        {
+          "parameter": 0,
+          "peel_ranks": [
+            4,
+            1
+          ],
+          "residual_ranks": [
+            25,
+            21
+          ]
+        },
+        {
+          "parameter": 1,
+          "peel_ranks": [
+            12,
+            1
+          ],
+          "residual_ranks": [
+            34,
+            21
+          ]
+        },
+        {
+          "parameter": 2,
+          "peel_ranks": [
+            14,
+            1
+          ],
+          "residual_ranks": [
+            35,
+            21
+          ]
+        }
+      ],
+      "edge": [
+        0,
+        5
+      ]
+    },
+    {
+      "controls": [
+        {
+          "parameter": 0,
+          "peel_ranks": [
+            4,
+            1
+          ],
+          "residual_ranks": [
+            25,
+            21
+          ]
+        },
+        {
+          "parameter": 1,
+          "peel_ranks": [
+            12,
+            1
+          ],
+          "residual_ranks": [
+            34,
+            21
+          ]
+        },
+        {
+          "parameter": 2,
+          "peel_ranks": [
+            14,
+            1
+          ],
+          "residual_ranks": [
+            35,
+            21
+          ]
+        }
+      ],
+      "edge": [
+        0,
+        6
+      ]
+    },
+    {
+      "controls": [
+        {
+          "parameter": 0,
+          "peel_ranks": [
+            4,
+            1
+          ],
+          "residual_ranks": [
+            25,
+            21
+          ]
+        },
+        {
+          "parameter": 1,
+          "peel_ranks": [
+            12,
+            1
+          ],
+          "residual_ranks": [
+            34,
+            21
+          ]
+        },
+        {
+          "parameter": 2,
+          "peel_ranks": [
+            14,
+            1
+          ],
+          "residual_ranks": [
+            35,
+            21
+          ]
+        }
+      ],
+      "edge": [
+        1,
+        2
+      ]
+    },
+    {
+      "controls": [
+        {
+          "parameter": 0,
+          "peel_ranks": [
+            4,
+            1
+          ],
+          "residual_ranks": [
+            25,
+            21
+          ]
+        },
+        {
+          "parameter": 1,
+          "peel_ranks": [
+            12,
+            1
+          ],
+          "residual_ranks": [
+            34,
+            21
+          ]
+        },
+        {
+          "parameter": 2,
+          "peel_ranks": [
+            14,
+            1
+          ],
+          "residual_ranks": [
+            35,
+            21
+          ]
+        }
+      ],
+      "edge": [
+        1,
+        3
+      ]
+    },
+    {
+      "controls": [
+        {
+          "parameter": 0,
+          "peel_ranks": [
+            4,
+            1
+          ],
+          "residual_ranks": [
+            25,
+            21
+          ]
+        },
+        {
+          "parameter": 1,
+          "peel_ranks": [
+            12,
+            1
+          ],
+          "residual_ranks": [
+            34,
+            21
+          ]
+        },
+        {
+          "parameter": 2,
+          "peel_ranks": [
+            14,
+            1
+          ],
+          "residual_ranks": [
+            35,
+            21
+          ]
+        }
+      ],
+      "edge": [
+        1,
+        4
+      ]
+    },
+    {
+      "controls": [
+        {
+          "parameter": 0,
+          "peel_ranks": [
+            4,
+            1
+          ],
+          "residual_ranks": [
+            25,
+            21
+          ]
+        },
+        {
+          "parameter": 1,
+          "peel_ranks": [
+            12,
+            1
+          ],
+          "residual_ranks": [
+            34,
+            21
+          ]
+        },
+        {
+          "parameter": 2,
+          "peel_ranks": [
+            14,
+            1
+          ],
+          "residual_ranks": [
+            35,
+            21
+          ]
+        }
+      ],
+      "edge": [
+        1,
+        5
+      ]
+    },
+    {
+      "controls": [
+        {
+          "parameter": 0,
+          "peel_ranks": [
+            4,
+            1
+          ],
+          "residual_ranks": [
+            25,
+            21
+          ]
+        },
+        {
+          "parameter": 1,
+          "peel_ranks": [
+            12,
+            1
+          ],
+          "residual_ranks": [
+            34,
+            21
+          ]
+        },
+        {
+          "parameter": 2,
+          "peel_ranks": [
+            14,
+            1
+          ],
+          "residual_ranks": [
+            35,
+            21
+          ]
+        }
+      ],
+      "edge": [
+        1,
+        6
+      ]
+    },
+    {
+      "controls": [
+        {
+          "parameter": 0,
+          "peel_ranks": [
+            4,
+            1
+          ],
+          "residual_ranks": [
+            25,
+            21
+          ]
+        },
+        {
+          "parameter": 1,
+          "peel_ranks": [
+            12,
+            1
+          ],
+          "residual_ranks": [
+            34,
+            21
+          ]
+        },
+        {
+          "parameter": 2,
+          "peel_ranks": [
+            14,
+            1
+          ],
+          "residual_ranks": [
+            35,
+            21
+          ]
+        }
+      ],
+      "edge": [
+        2,
+        3
+      ]
+    },
+    {
+      "controls": [
+        {
+          "parameter": 0,
+          "peel_ranks": [
+            4,
+            1
+          ],
+          "residual_ranks": [
+            25,
+            21
+          ]
+        },
+        {
+          "parameter": 1,
+          "peel_ranks": [
+            12,
+            1
+          ],
+          "residual_ranks": [
+            34,
+            21
+          ]
+        },
+        {
+          "parameter": 2,
+          "peel_ranks": [
+            14,
+            1
+          ],
+          "residual_ranks": [
+            35,
+            21
+          ]
+        }
+      ],
+      "edge": [
+        2,
+        4
+      ]
+    },
+    {
+      "controls": [
+        {
+          "parameter": 0,
+          "peel_ranks": [
+            4,
+            1
+          ],
+          "residual_ranks": [
+            25,
+            21
+          ]
+        },
+        {
+          "parameter": 1,
+          "peel_ranks": [
+            12,
+            1
+          ],
+          "residual_ranks": [
+            34,
+            21
+          ]
+        },
+        {
+          "parameter": 2,
+          "peel_ranks": [
+            14,
+            1
+          ],
+          "residual_ranks": [
+            35,
+            21
+          ]
+        }
+      ],
+      "edge": [
+        2,
+        5
+      ]
+    },
+    {
+      "controls": [
+        {
+          "parameter": 0,
+          "peel_ranks": [
+            4,
+            1
+          ],
+          "residual_ranks": [
+            25,
+            21
+          ]
+        },
+        {
+          "parameter": 1,
+          "peel_ranks": [
+            12,
+            1
+          ],
+          "residual_ranks": [
+            34,
+            21
+          ]
+        },
+        {
+          "parameter": 2,
+          "peel_ranks": [
+            14,
+            1
+          ],
+          "residual_ranks": [
+            35,
+            21
+          ]
+        }
+      ],
+      "edge": [
+        2,
+        6
+      ]
+    },
+    {
+      "controls": [
+        {
+          "parameter": 0,
+          "peel_ranks": [
+            4,
+            1
+          ],
+          "residual_ranks": [
+            25,
+            21
+          ]
+        },
+        {
+          "parameter": 1,
+          "peel_ranks": [
+            12,
+            1
+          ],
+          "residual_ranks": [
+            34,
+            21
+          ]
+        },
+        {
+          "parameter": 2,
+          "peel_ranks": [
+            14,
+            1
+          ],
+          "residual_ranks": [
+            35,
+            21
+          ]
+        }
+      ],
+      "edge": [
+        3,
+        4
+      ]
+    },
+    {
+      "controls": [
+        {
+          "parameter": 0,
+          "peel_ranks": [
+            4,
+            1
+          ],
+          "residual_ranks": [
+            25,
+            21
+          ]
+        },
+        {
+          "parameter": 1,
+          "peel_ranks": [
+            12,
+            1
+          ],
+          "residual_ranks": [
+            34,
+            21
+          ]
+        },
+        {
+          "parameter": 2,
+          "peel_ranks": [
+            14,
+            1
+          ],
+          "residual_ranks": [
+            35,
+            21
+          ]
+        }
+      ],
+      "edge": [
+        3,
+        5
+      ]
+    },
+    {
+      "controls": [
+        {
+          "parameter": 0,
+          "peel_ranks": [
+            4,
+            1
+          ],
+          "residual_ranks": [
+            25,
+            21
+          ]
+        },
+        {
+          "parameter": 1,
+          "peel_ranks": [
+            12,
+            1
+          ],
+          "residual_ranks": [
+            34,
+            21
+          ]
+        },
+        {
+          "parameter": 2,
+          "peel_ranks": [
+            14,
+            1
+          ],
+          "residual_ranks": [
+            35,
+            21
+          ]
+        }
+      ],
+      "edge": [
+        3,
+        6
+      ]
+    },
+    {
+      "controls": [
+        {
+          "parameter": 0,
+          "peel_ranks": [
+            4,
+            1
+          ],
+          "residual_ranks": [
+            25,
+            21
+          ]
+        },
+        {
+          "parameter": 1,
+          "peel_ranks": [
+            12,
+            1
+          ],
+          "residual_ranks": [
+            34,
+            21
+          ]
+        },
+        {
+          "parameter": 2,
+          "peel_ranks": [
+            14,
+            1
+          ],
+          "residual_ranks": [
+            35,
+            21
+          ]
+        }
+      ],
+      "edge": [
+        4,
+        5
+      ]
+    },
+    {
+      "controls": [
+        {
+          "parameter": 0,
+          "peel_ranks": [
+            4,
+            1
+          ],
+          "residual_ranks": [
+            25,
+            21
+          ]
+        },
+        {
+          "parameter": 1,
+          "peel_ranks": [
+            12,
+            1
+          ],
+          "residual_ranks": [
+            34,
+            21
+          ]
+        },
+        {
+          "parameter": 2,
+          "peel_ranks": [
+            14,
+            1
+          ],
+          "residual_ranks": [
+            35,
+            21
+          ]
+        }
+      ],
+      "edge": [
+        4,
+        6
+      ]
+    },
+    {
+      "controls": [
+        {
+          "parameter": 0,
+          "peel_ranks": [
+            4,
+            1
+          ],
+          "residual_ranks": [
+            25,
+            21
+          ]
+        },
+        {
+          "parameter": 1,
+          "peel_ranks": [
+            12,
+            1
+          ],
+          "residual_ranks": [
+            34,
+            21
+          ]
+        },
+        {
+          "parameter": 2,
+          "peel_ranks": [
+            14,
+            1
+          ],
+          "residual_ranks": [
+            35,
+            21
+          ]
+        }
+      ],
+      "edge": [
+        5,
+        6
+      ]
+    }
+  ],
+  "source_sha256": {
+    "check_cubic_balanced_peels.py": "1fbf24c3711769ec88b13843e447ee14a77f2e604e75a1ee2b1b054a991790a6",
+    "check_cubic_varying_image_escape.py": "ee028bb29a3e5a4c4cfa747599e0f3965b53e930364c745deedbe344a3a0c680",
+    "explore_cubic_complement_fields.py": "3bfc2d23f2a29b0b0cb2a6ad3721bb0e906b09a7ca2c0c3d12a40408834857f3",
+    "explore_cubic_complement_outputs.py": "9254d7fbe1f3d3124f7549f3c1cbd742708d15776df4bf4b35acf1b5925e157c"
+  }
+}

@@ -1,0 +1,402 @@
+{
+  "cases": [
+    {
+      "all_F4_decompositions_fail_seed_criterion": true,
+      "basis_sha256": "dd4690fc8e62b9b7c687e576abb685e73fd9d7611fb063d10f303c887ad19f11",
+      "coefficient_dimension": 3,
+      "cost_denominator": 1000000000000,
+      "eligible_count": 1,
+      "eligible_span_basis": {
+        "2": 21
+      },
+      "eligible_span_dimension": 1,
+      "eligible_vectors": [
+        {
+          "code": 21,
+          "column_rank": 9,
+          "event": "eligible",
+          "product": 45,
+          "row_rank": 5
+        }
+      ],
+      "endpoint_remainder": 1,
+      "field": "F2[t]/(t^2+t+1)",
+      "independently_checked_vectors": 21,
+      "integer_cost_gate": 10,
+      "labels": 5,
+      "name": "double_endpoint_P3_L3_seed0",
+      "projective_vectors_tested": 21,
+      "restricted_shortest_cost_lower_numerator": null,
+      "scope": "the supplied finite coefficient space over F4; other fields and label retracts are not excluded",
+      "screen_sha256": "cfa4513462b2d22cc4ca23c6d93515f26a554ce6bd0cb5d2bb8316f0d8a05d1f",
+      "shortest_path_states": 0,
+      "source_sha256": {
+        "check_pfaffian_span_f4.py": "506fb9c0de8f722a0fec0ba32d60e081f165a62ea1e0b6c5cfdd5a3023118182",
+        "screen_pfaffian_span_f4.cpp": "40e44b6987e5f347e35dd524f082a6b966c8171f6cbe1b4c433abab18f50912a"
+      }
+    },
+    {
+      "all_F4_decompositions_fail_seed_criterion": true,
+      "basis_sha256": "481e049f0bda573b11b850723a1753f4d1bc8220d9641658076cb281c0c2bdf9",
+      "coefficient_dimension": 8,
+      "cost_denominator": 1000000000000,
+      "eligible_count": 2,
+      "eligible_span_basis": {
+        "2": 21,
+        "6": 4161
+      },
+      "eligible_span_dimension": 2,
+      "eligible_vectors": [
+        {
+          "code": 21,
+          "column_rank": 25,
+          "event": "eligible",
+          "product": 25,
+          "row_rank": 1
+        },
+        {
+          "code": 4161,
+          "column_rank": 1,
+          "event": "eligible",
+          "product": 25,
+          "row_rank": 25
+        }
+      ],
+      "endpoint_remainder": 1,
+      "field": "F2[t]/(t^2+t+1)",
+      "independently_checked_vectors": 42,
+      "integer_cost_gate": 23,
+      "labels": 9,
+      "name": "double_endpoint_P3_L3_seed0_triangular",
+      "projective_vectors_tested": 21845,
+      "restricted_shortest_cost_lower_numerator": null,
+      "scope": "the supplied finite coefficient space over F4; other fields and label retracts are not excluded",
+      "screen_sha256": "3504e16e9b271cf012109a1bc10001b71f1a477e47c8c612f297845f0787c0c9",
+      "shortest_path_states": 0,
+      "source_sha256": {
+        "check_pfaffian_span_f4.py": "506fb9c0de8f722a0fec0ba32d60e081f165a62ea1e0b6c5cfdd5a3023118182",
+        "screen_pfaffian_span_f4.cpp": "40e44b6987e5f347e35dd524f082a6b966c8171f6cbe1b4c433abab18f50912a"
+      }
+    },
+    {
+      "all_F4_decompositions_fail_seed_criterion": true,
+      "basis_sha256": "8faf0d4951aab905912bf03678ab8448f84e67dcdec44d4bbae6a3e5e340ce6a",
+      "coefficient_dimension": 11,
+      "cost_denominator": 1000000000000,
+      "eligible_count": 41,
+      "eligible_span_basis": {
+        "10": 1065025,
+        "5": 1365,
+        "6": 4117,
+        "8": 82960,
+        "9": 263184
+      },
+      "eligible_span_dimension": 5,
+      "eligible_vectors": [
+        {
+          "code": 4117,
+          "column_rank": 9,
+          "event": "eligible",
+          "product": 1188,
+          "row_rank": 132
+        },
+        {
+          "code": 5440,
+          "column_rank": 128,
+          "event": "eligible",
+          "product": 1024,
+          "row_rank": 8
+        },
+        {
+          "code": 263184,
+          "column_rank": 16,
+          "event": "eligible",
+          "product": 960,
+          "row_rank": 60
+        },
+        {
+          "code": 267269,
+          "column_rank": 17,
+          "event": "eligible",
+          "product": 2244,
+          "row_rank": 132
+        },
+        {
+          "code": 271418,
+          "column_rank": 17,
+          "event": "eligible",
+          "product": 2244,
+          "row_rank": 132
+        },
+        {
+          "code": 275503,
+          "column_rank": 17,
+          "event": "eligible",
+          "product": 2244,
+          "row_rank": 132
+        },
+        {
+          "code": 344064,
+          "column_rank": 56,
+          "event": "eligible",
+          "product": 896,
+          "row_rank": 16
+        },
+        {
+          "code": 349504,
+          "column_rank": 128,
+          "event": "eligible",
+          "product": 2048,
+          "row_rank": 16
+        },
+        {
+          "code": 354944,
+          "column_rank": 128,
+          "event": "eligible",
+          "product": 2304,
+          "row_rank": 18
+        },
+        {
+          "code": 360384,
+          "column_rank": 128,
+          "event": "eligible",
+          "product": 2304,
+          "row_rank": 18
+        },
+        {
+          "code": 1065025,
+          "column_rank": 128,
+          "event": "eligible",
+          "product": 1024,
+          "row_rank": 8
+        },
+        {
+          "code": 1070337,
+          "column_rank": 56,
+          "event": "eligible",
+          "product": 784,
+          "row_rank": 14
+        },
+        {
+          "code": 1075905,
+          "column_rank": 128,
+          "event": "eligible",
+          "product": 1920,
+          "row_rank": 15
+        },
+        {
+          "code": 1081217,
+          "column_rank": 128,
+          "event": "eligible",
+          "product": 1920,
+          "row_rank": 15
+        },
+        {
+          "code": 1114372,
+          "column_rank": 9,
+          "event": "eligible",
+          "product": 1188,
+          "row_rank": 132
+        },
+        {
+          "code": 1118481,
+          "column_rank": 14,
+          "event": "eligible",
+          "product": 840,
+          "row_rank": 60
+        },
+        {
+          "code": 1122606,
+          "column_rank": 14,
+          "event": "eligible",
+          "product": 1848,
+          "row_rank": 132
+        },
+        {
+          "code": 1126715,
+          "column_rank": 14,
+          "event": "eligible",
+          "product": 1848,
+          "row_rank": 132
+        },
+        {
+          "code": 1376321,
+          "column_rank": 128,
+          "event": "eligible",
+          "product": 2048,
+          "row_rank": 16
+        },
+        {
+          "code": 1377556,
+          "column_rank": 17,
+          "event": "eligible",
+          "product": 2244,
+          "row_rank": 132
+        },
+        {
+          "code": 1381633,
+          "column_rank": 8,
+          "event": "eligible",
+          "product": 64,
+          "row_rank": 8
+        },
+        {
+          "code": 1385790,
+          "column_rank": 17,
+          "event": "eligible",
+          "product": 2244,
+          "row_rank": 132
+        },
+        {
+          "code": 1387201,
+          "column_rank": 128,
+          "event": "eligible",
+          "product": 2048,
+          "row_rank": 16
+        },
+        {
+          "code": 1389867,
+          "column_rank": 17,
+          "event": "eligible",
+          "product": 2244,
+          "row_rank": 132
+        },
+        {
+          "code": 1392513,
+          "column_rank": 128,
+          "event": "eligible",
+          "product": 2048,
+          "row_rank": 16
+        },
+        {
+          "code": 1640740,
+          "column_rank": 17,
+          "event": "eligible",
+          "product": 2244,
+          "row_rank": 132
+        },
+        {
+          "code": 1644849,
+          "column_rank": 16,
+          "event": "eligible",
+          "product": 960,
+          "row_rank": 60
+        },
+        {
+          "code": 1648910,
+          "column_rank": 17,
+          "event": "eligible",
+          "product": 2244,
+          "row_rank": 132
+        },
+        {
+          "code": 1653019,
+          "column_rank": 17,
+          "event": "eligible",
+          "product": 2244,
+          "row_rank": 132
+        },
+        {
+          "code": 1753153,
+          "column_rank": 128,
+          "event": "eligible",
+          "product": 2304,
+          "row_rank": 18
+        },
+        {
+          "code": 1758465,
+          "column_rank": 56,
+          "event": "eligible",
+          "product": 896,
+          "row_rank": 16
+        },
+        {
+          "code": 1764033,
+          "column_rank": 128,
+          "event": "eligible",
+          "product": 2048,
+          "row_rank": 16
+        },
+        {
+          "code": 1769345,
+          "column_rank": 128,
+          "event": "eligible",
+          "product": 2048,
+          "row_rank": 16
+        },
+        {
+          "code": 1903924,
+          "column_rank": 17,
+          "event": "eligible",
+          "product": 2244,
+          "row_rank": 132
+        },
+        {
+          "code": 1908001,
+          "column_rank": 16,
+          "event": "eligible",
+          "product": 960,
+          "row_rank": 60
+        },
+        {
+          "code": 1912094,
+          "column_rank": 17,
+          "event": "eligible",
+          "product": 2244,
+          "row_rank": 132
+        },
+        {
+          "code": 1916171,
+          "column_rank": 17,
+          "event": "eligible",
+          "product": 2244,
+          "row_rank": 132
+        },
+        {
+          "code": 2064449,
+          "column_rank": 128,
+          "event": "eligible",
+          "product": 2304,
+          "row_rank": 18
+        },
+        {
+          "code": 2069761,
+          "column_rank": 56,
+          "event": "eligible",
+          "product": 896,
+          "row_rank": 16
+        },
+        {
+          "code": 2075329,
+          "column_rank": 128,
+          "event": "eligible",
+          "product": 2048,
+          "row_rank": 16
+        },
+        {
+          "code": 2080641,
+          "column_rank": 128,
+          "event": "eligible",
+          "product": 2048,
+          "row_rank": 16
+        }
+      ],
+      "endpoint_remainder": 1,
+      "field": "F2[t]/(t^2+t+1)",
+      "independently_checked_vectors": 81,
+      "integer_cost_gate": 51,
+      "labels": 16,
+      "name": "double_endpoint_P4_L4_seed0",
+      "projective_vectors_tested": 1398101,
+      "restricted_shortest_cost_lower_numerator": null,
+      "scope": "the supplied finite coefficient space over F4; other fields and label retracts are not excluded",
+      "screen_sha256": "d09ede715bebe5180a3b6e48f454bc0aa6f405987ff1d5facd391a81a5e9b094",
+      "shortest_path_states": 0,
+      "source_sha256": {
+        "check_pfaffian_span_f4.py": "506fb9c0de8f722a0fec0ba32d60e081f165a62ea1e0b6c5cfdd5a3023118182",
+        "screen_pfaffian_span_f4.cpp": "40e44b6987e5f347e35dd524f082a6b966c8171f6cbe1b4c433abab18f50912a"
+      }
+    }
+  ],
+  "status": "pass"
+}

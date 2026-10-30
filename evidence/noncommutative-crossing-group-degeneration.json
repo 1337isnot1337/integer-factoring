@@ -1,0 +1,819 @@
+{
+  "status": "Direct heavy-central and legacy two-stage degeneration audits passed.",
+  "scope": "Full class-two bilinear group domains and arbitrary central Boolean lookup controls.",
+  "legacy_two_stage_cases": [
+    {
+      "name": "D8_unweighted",
+      "label_bits": 3,
+      "labels": 8,
+      "beta": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "deformation_weights": [
+        1,
+        1,
+        1
+      ],
+      "factor_order": [
+        0,
+        1,
+        2
+      ],
+      "central_shear_terms": [],
+      "multiplication_pairs_audited": 64,
+      "orbit_equals_antipode_conjugated_hopf": true,
+      "first_leading_map_equals_independent_primitive_hopf": true,
+      "positive_first_valuation_entries": 528,
+      "positive_second_valuation_entries": 96,
+      "second_leading_family_equals_abelian": true,
+      "coefficient_ranks_and_abelian_ranks": [
+        [
+          0,
+          64,
+          5,
+          64,
+          1
+        ],
+        [
+          1,
+          32,
+          19,
+          28,
+          8
+        ],
+        [
+          2,
+          10,
+          32,
+          8,
+          28
+        ],
+        [
+          3,
+          1,
+          64,
+          1,
+          64
+        ]
+      ],
+      "scalar_recombinations_checked": 15
+    },
+    {
+      "name": "D8_affine_quadratic_control",
+      "label_bits": 3,
+      "labels": 8,
+      "beta": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "deformation_weights": [
+        1,
+        1,
+        2
+      ],
+      "factor_order": [
+        0,
+        1,
+        2
+      ],
+      "central_shear_terms": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "multiplication_pairs_audited": 64,
+      "orbit_equals_antipode_conjugated_hopf": true,
+      "first_leading_map_equals_independent_primitive_hopf": true,
+      "positive_first_valuation_entries": 720,
+      "positive_second_valuation_entries": 128,
+      "second_leading_family_equals_abelian": true,
+      "coefficient_ranks_and_abelian_ranks": [
+        [
+          0,
+          64,
+          5,
+          64,
+          1
+        ],
+        [
+          1,
+          28,
+          14,
+          24,
+          6
+        ],
+        [
+          2,
+          18,
+          24,
+          18,
+          18
+        ],
+        [
+          3,
+          6,
+          28,
+          6,
+          24
+        ],
+        [
+          4,
+          1,
+          64,
+          1,
+          64
+        ]
+      ],
+      "scalar_recombinations_checked": 31
+    },
+    {
+      "name": "D8_reordered_distinct_weights",
+      "label_bits": 3,
+      "labels": 8,
+      "beta": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "deformation_weights": [
+        1,
+        2,
+        3
+      ],
+      "factor_order": [
+        1,
+        0,
+        2
+      ],
+      "central_shear_terms": [
+        [
+          3,
+          1
+        ]
+      ],
+      "multiplication_pairs_audited": 64,
+      "orbit_equals_antipode_conjugated_hopf": true,
+      "first_leading_map_equals_independent_primitive_hopf": true,
+      "positive_first_valuation_entries": 736,
+      "positive_second_valuation_entries": 160,
+      "second_leading_family_equals_abelian": true,
+      "coefficient_ranks_and_abelian_ranks": [
+        [
+          0,
+          64,
+          5,
+          64,
+          1
+        ],
+        [
+          1,
+          16,
+          10,
+          16,
+          4
+        ],
+        [
+          2,
+          16,
+          10,
+          16,
+          4
+        ],
+        [
+          3,
+          18,
+          24,
+          18,
+          18
+        ],
+        [
+          4,
+          4,
+          16,
+          4,
+          16
+        ],
+        [
+          5,
+          4,
+          16,
+          4,
+          16
+        ],
+        [
+          6,
+          1,
+          64,
+          1,
+          64
+        ]
+      ],
+      "scalar_recombinations_checked": 127
+    },
+    {
+      "name": "Q8_nonzero_restricted_squares",
+      "label_bits": 3,
+      "labels": 8,
+      "beta": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "deformation_weights": [
+        1,
+        1,
+        1
+      ],
+      "factor_order": [
+        0,
+        1,
+        2
+      ],
+      "central_shear_terms": [
+        [
+          3,
+          1
+        ]
+      ],
+      "multiplication_pairs_audited": 64,
+      "orbit_equals_antipode_conjugated_hopf": true,
+      "first_leading_map_equals_independent_primitive_hopf": true,
+      "positive_first_valuation_entries": 562,
+      "positive_second_valuation_entries": 96,
+      "second_leading_family_equals_abelian": true,
+      "coefficient_ranks_and_abelian_ranks": [
+        [
+          0,
+          64,
+          4,
+          64,
+          1
+        ],
+        [
+          1,
+          40,
+          17,
+          28,
+          8
+        ],
+        [
+          2,
+          12,
+          32,
+          8,
+          28
+        ],
+        [
+          3,
+          1,
+          64,
+          1,
+          64
+        ]
+      ],
+      "scalar_recombinations_checked": 15
+    },
+    {
+      "name": "D8_times_C2_quadratic_control",
+      "label_bits": 4,
+      "labels": 16,
+      "beta": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "deformation_weights": [
+        1,
+        1,
+        1,
+        2
+      ],
+      "factor_order": [
+        2,
+        1,
+        0,
+        3
+      ],
+      "central_shear_terms": [
+        [
+          5,
+          1
+        ],
+        [
+          6,
+          1
+        ]
+      ],
+      "multiplication_pairs_audited": 256,
+      "orbit_equals_antipode_conjugated_hopf": true,
+      "first_leading_map_equals_independent_primitive_hopf": true,
+      "positive_first_valuation_entries": 6248,
+      "positive_second_valuation_entries": 2880,
+      "second_leading_family_equals_abelian": true,
+      "coefficient_ranks_and_abelian_ranks": [
+        [
+          0,
+          256,
+          8,
+          256,
+          1
+        ],
+        [
+          1,
+          128,
+          52,
+          112,
+          8
+        ],
+        [
+          2,
+          80,
+          64,
+          80,
+          30
+        ],
+        [
+          3,
+          32,
+          104,
+          30,
+          80
+        ],
+        [
+          4,
+          8,
+          128,
+          8,
+          112
+        ],
+        [
+          5,
+          1,
+          256,
+          1,
+          256
+        ]
+      ],
+      "scalar_recombinations_checked": 9
+    },
+    {
+      "name": "extraspecial_shared_center",
+      "label_bits": 5,
+      "labels": 32,
+      "beta": [
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "deformation_weights": [
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "factor_order": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "central_shear_terms": [
+        [
+          3,
+          1
+        ],
+        [
+          12,
+          1
+        ]
+      ],
+      "multiplication_pairs_audited": 1024,
+      "orbit_equals_antipode_conjugated_hopf": true,
+      "first_leading_map_equals_independent_primitive_hopf": true,
+      "positive_first_valuation_entries": 58808,
+      "positive_second_valuation_entries": 24704,
+      "second_leading_family_equals_abelian": true,
+      "coefficient_ranks_and_abelian_ranks": [
+        [
+          0,
+          1024,
+          12,
+          1024,
+          1
+        ],
+        [
+          1,
+          580,
+          93,
+          480,
+          10
+        ],
+        [
+          2,
+          352,
+          236,
+          348,
+          48
+        ],
+        [
+          3,
+          160,
+          328,
+          140,
+          140
+        ],
+        [
+          4,
+          50,
+          500,
+          48,
+          348
+        ],
+        [
+          5,
+          10,
+          580,
+          10,
+          480
+        ],
+        [
+          6,
+          1,
+          1024,
+          1,
+          1024
+        ]
+      ],
+      "scalar_recombinations_checked": 10
+    }
+  ],
+  "old_weight_two_cubic_witness": {
+    "source_augmentation_monomial": 7,
+    "source_weight": 3,
+    "lower_weight_output_monomials": [
+      8
+    ],
+    "central_output_weight": 2,
+    "conclusion": "A cubic control shear violates the old central-weight-two filtration; the heavier direct filtration below covers it."
+  },
+  "direct_one_stage_cases": [
+    {
+      "name": "cubic_control_weight_four",
+      "labels": 16,
+      "label_bits": 4,
+      "central_filtration_weight": 4,
+      "control_Boolean_degree": 3,
+      "central_control_terms": [
+        [
+          7,
+          1
+        ]
+      ],
+      "deformation_weights": [
+        1,
+        1,
+        1,
+        2
+      ],
+      "factor_order": [
+        2,
+        0,
+        1,
+        3
+      ],
+      "leading_multiplication_is_commutative_square_zero": true,
+      "leading_antipode_and_control_are_identity": true,
+      "complete_leading_tensor_equals_abelian": true,
+      "positive_filtration_entries": 8256,
+      "coefficient_ranks_and_abelian_ranks": [
+        [
+          0,
+          256,
+          16,
+          256,
+          1
+        ],
+        [
+          1,
+          128,
+          52,
+          112,
+          8
+        ],
+        [
+          2,
+          80,
+          76,
+          80,
+          30
+        ],
+        [
+          3,
+          32,
+          104,
+          30,
+          80
+        ],
+        [
+          4,
+          8,
+          128,
+          8,
+          112
+        ],
+        [
+          5,
+          1,
+          256,
+          1,
+          256
+        ]
+      ],
+      "scalar_recombinations_checked": 63
+    },
+    {
+      "name": "full_degree_four_F4_lookup_weight_five",
+      "labels": 64,
+      "label_bits": 6,
+      "central_filtration_weight": 5,
+      "control_Boolean_degree": 4,
+      "central_control_terms": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          3
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          12,
+          1
+        ],
+        [
+          15,
+          3
+        ]
+      ],
+      "deformation_weights": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "factor_order": [
+        3,
+        0,
+        2,
+        1,
+        5,
+        4
+      ],
+      "leading_multiplication_is_commutative_square_zero": true,
+      "leading_antipode_and_control_are_identity": true,
+      "complete_leading_tensor_equals_abelian": true,
+      "positive_filtration_entries": 1583440,
+      "coefficient_ranks_and_abelian_ranks": [
+        [
+          0,
+          4096,
+          64,
+          4096,
+          1
+        ],
+        [
+          1,
+          2592,
+          329,
+          2016,
+          14
+        ],
+        [
+          2,
+          1436,
+          857,
+          1092,
+          92
+        ],
+        [
+          3,
+          568,
+          1508,
+          364,
+          364
+        ],
+        [
+          4,
+          149,
+          2164,
+          92,
+          1092
+        ],
+        [
+          5,
+          21,
+          2592,
+          14,
+          2016
+        ],
+        [
+          6,
+          1,
+          4096,
+          1,
+          4096
+        ]
+      ],
+      "scalar_recombinations_checked": 6
+    },
+    {
+      "name": "Q8_direct_weight_three",
+      "labels": 8,
+      "label_bits": 3,
+      "central_filtration_weight": 3,
+      "control_Boolean_degree": 2,
+      "central_control_terms": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "deformation_weights": [
+        1,
+        2,
+        3
+      ],
+      "factor_order": [
+        1,
+        0,
+        2
+      ],
+      "leading_multiplication_is_commutative_square_zero": true,
+      "leading_antipode_and_control_are_identity": true,
+      "complete_leading_tensor_equals_abelian": true,
+      "positive_filtration_entries": 1172,
+      "coefficient_ranks_and_abelian_ranks": [
+        [
+          0,
+          64,
+          4,
+          64,
+          1
+        ],
+        [
+          1,
+          24,
+          8,
+          16,
+          4
+        ],
+        [
+          2,
+          24,
+          8,
+          16,
+          4
+        ],
+        [
+          3,
+          20,
+          24,
+          18,
+          18
+        ],
+        [
+          4,
+          4,
+          24,
+          4,
+          16
+        ],
+        [
+          5,
+          4,
+          24,
+          4,
+          16
+        ],
+        [
+          6,
+          1,
+          64,
+          1,
+          64
+        ]
+      ],
+      "scalar_recombinations_checked": 127
+    }
+  ],
+  "source_sha256": "68ac33561aefcd5852bc76426e3e3e8d50a5efd89bdd30c47f07c67d85753b07"
+}

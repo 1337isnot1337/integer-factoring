@@ -1,0 +1,6065 @@
+{
+  "certificate_sha256": "f2dca435678f3a3d623d34671fcdc5040c8963d63edcaf23f1798193dc65b85a",
+  "checker_sha256": "b9e0ab3e49e58e409a70b2f08ac3eb00bd854ac305c10d9ebbf80e945f3858fc",
+  "native_export": {
+    "cuts": {
+      "column": {
+        "omitted_weighted_dimension": 27325952,
+        "retained_blocks": [
+          {
+            "multiplicity": 17576,
+            "size": 1,
+            "types": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "multiplicity": 210912,
+            "size": 2,
+            "types": [
+              1,
+              1,
+              6
+            ]
+          },
+          {
+            "multiplicity": 81120,
+            "size": 2,
+            "types": [
+              1,
+              1,
+              9
+            ]
+          },
+          {
+            "multiplicity": 18252,
+            "size": 2,
+            "types": [
+              1,
+              1,
+              5
+            ]
+          },
+          {
+            "multiplicity": 843648,
+            "size": 4,
+            "types": [
+              1,
+              6,
+              6
+            ]
+          },
+          {
+            "multiplicity": 648960,
+            "size": 4,
+            "types": [
+              1,
+              6,
+              9
+            ]
+          },
+          {
+            "multiplicity": 146016,
+            "size": 4,
+            "types": [
+              1,
+              5,
+              6
+            ]
+          },
+          {
+            "multiplicity": 124800,
+            "size": 4,
+            "types": [
+              1,
+              9,
+              9
+            ]
+          },
+          {
+            "multiplicity": 56160,
+            "size": 4,
+            "types": [
+              1,
+              5,
+              9
+            ]
+          },
+          {
+            "multiplicity": 32448,
+            "size": 4,
+            "types": [
+              1,
+              1,
+              7
+            ]
+          },
+          {
+            "multiplicity": 16224,
+            "size": 4,
+            "types": [
+              1,
+              1,
+              12
+            ]
+          },
+          {
+            "multiplicity": 8112,
+            "size": 4,
+            "types": [
+              1,
+              1,
+              11
+            ]
+          },
+          {
+            "multiplicity": 8112,
+            "size": 4,
+            "types": [
+              1,
+              1,
+              13
+            ]
+          },
+          {
+            "multiplicity": 6318,
+            "size": 4,
+            "types": [
+              1,
+              5,
+              5
+            ]
+          },
+          {
+            "multiplicity": 2028,
+            "size": 4,
+            "types": [
+              1,
+              1,
+              3
+            ]
+          },
+          {
+            "multiplicity": 32448,
+            "size": 6,
+            "types": [
+              1,
+              1,
+              14
+            ]
+          },
+          {
+            "multiplicity": 16224,
+            "size": 6,
+            "types": [
+              1,
+              1,
+              8
+            ]
+          },
+          {
+            "multiplicity": 16224,
+            "size": 6,
+            "types": [
+              1,
+              1,
+              10
+            ]
+          },
+          {
+            "multiplicity": 2028,
+            "size": 6,
+            "types": [
+              1,
+              1,
+              2
+            ]
+          },
+          {
+            "multiplicity": 2028,
+            "size": 6,
+            "types": [
+              1,
+              1,
+              4
+            ]
+          },
+          {
+            "multiplicity": 1297920,
+            "size": 8,
+            "types": [
+              6,
+              6,
+              9
+            ]
+          },
+          {
+            "multiplicity": 1124864,
+            "size": 8,
+            "types": [
+              6,
+              6,
+              6
+            ]
+          },
+          {
+            "multiplicity": 499200,
+            "size": 8,
+            "types": [
+              6,
+              9,
+              9
+            ]
+          },
+          {
+            "multiplicity": 292032,
+            "size": 8,
+            "types": [
+              5,
+              6,
+              6
+            ]
+          },
+          {
+            "multiplicity": 259584,
+            "size": 8,
+            "types": [
+              1,
+              6,
+              7
+            ]
+          },
+          {
+            "multiplicity": 224640,
+            "size": 8,
+            "types": [
+              5,
+              6,
+              9
+            ]
+          },
+          {
+            "multiplicity": 129792,
+            "size": 8,
+            "types": [
+              1,
+              6,
+              12
+            ]
+          },
+          {
+            "multiplicity": 99840,
+            "size": 8,
+            "types": [
+              1,
+              7,
+              9
+            ]
+          },
+          {
+            "multiplicity": 64896,
+            "size": 8,
+            "types": [
+              1,
+              6,
+              11
+            ]
+          },
+          {
+            "multiplicity": 64896,
+            "size": 8,
+            "types": [
+              1,
+              6,
+              13
+            ]
+          },
+          {
+            "multiplicity": 64000,
+            "size": 8,
+            "types": [
+              9,
+              9,
+              9
+            ]
+          },
+          {
+            "multiplicity": 49920,
+            "size": 8,
+            "types": [
+              1,
+              9,
+              12
+            ]
+          },
+          {
+            "multiplicity": 43200,
+            "size": 8,
+            "types": [
+              5,
+              9,
+              9
+            ]
+          },
+          {
+            "multiplicity": 25272,
+            "size": 8,
+            "types": [
+              5,
+              5,
+              6
+            ]
+          },
+          {
+            "multiplicity": 24960,
+            "size": 8,
+            "types": [
+              1,
+              9,
+              11
+            ]
+          },
+          {
+            "multiplicity": 24960,
+            "size": 8,
+            "types": [
+              1,
+              9,
+              13
+            ]
+          },
+          {
+            "multiplicity": 22464,
+            "size": 8,
+            "types": [
+              1,
+              5,
+              7
+            ]
+          },
+          {
+            "multiplicity": 16224,
+            "size": 8,
+            "types": [
+              1,
+              3,
+              6
+            ]
+          },
+          {
+            "multiplicity": 11232,
+            "size": 8,
+            "types": [
+              1,
+              5,
+              12
+            ]
+          },
+          {
+            "multiplicity": 9720,
+            "size": 8,
+            "types": [
+              5,
+              5,
+              9
+            ]
+          },
+          {
+            "multiplicity": 6240,
+            "size": 8,
+            "types": [
+              1,
+              3,
+              9
+            ]
+          },
+          {
+            "multiplicity": 5616,
+            "size": 8,
+            "types": [
+              1,
+              5,
+              11
+            ]
+          },
+          {
+            "multiplicity": 5616,
+            "size": 8,
+            "types": [
+              1,
+              5,
+              13
+            ]
+          },
+          {
+            "multiplicity": 2028,
+            "size": 8,
+            "types": [
+              0,
+              1,
+              1
+            ]
+          },
+          {
+            "multiplicity": 1404,
+            "size": 8,
+            "types": [
+              1,
+              3,
+              5
+            ]
+          },
+          {
+            "multiplicity": 729,
+            "size": 8,
+            "types": [
+              5,
+              5,
+              5
+            ]
+          },
+          {
+            "multiplicity": 259584,
+            "size": 12,
+            "types": [
+              1,
+              6,
+              14
+            ]
+          },
+          {
+            "multiplicity": 129792,
+            "size": 12,
+            "types": [
+              1,
+              6,
+              8
+            ]
+          },
+          {
+            "multiplicity": 129792,
+            "size": 12,
+            "types": [
+              1,
+              6,
+              10
+            ]
+          },
+          {
+            "multiplicity": 99840,
+            "size": 12,
+            "types": [
+              1,
+              9,
+              14
+            ]
+          },
+          {
+            "multiplicity": 49920,
+            "size": 12,
+            "types": [
+              1,
+              8,
+              9
+            ]
+          },
+          {
+            "multiplicity": 49920,
+            "size": 12,
+            "types": [
+              1,
+              9,
+              10
+            ]
+          },
+          {
+            "multiplicity": 22464,
+            "size": 12,
+            "types": [
+              1,
+              5,
+              14
+            ]
+          },
+          {
+            "multiplicity": 16224,
+            "size": 12,
+            "types": [
+              1,
+              2,
+              6
+            ]
+          },
+          {
+            "multiplicity": 16224,
+            "size": 12,
+            "types": [
+              1,
+              4,
+              6
+            ]
+          },
+          {
+            "multiplicity": 11232,
+            "size": 12,
+            "types": [
+              1,
+              5,
+              8
+            ]
+          },
+          {
+            "multiplicity": 11232,
+            "size": 12,
+            "types": [
+              1,
+              5,
+              10
+            ]
+          },
+          {
+            "multiplicity": 6240,
+            "size": 12,
+            "types": [
+              1,
+              2,
+              9
+            ]
+          },
+          {
+            "multiplicity": 6240,
+            "size": 12,
+            "types": [
+              1,
+              4,
+              9
+            ]
+          },
+          {
+            "multiplicity": 1404,
+            "size": 12,
+            "types": [
+              1,
+              2,
+              5
+            ]
+          },
+          {
+            "multiplicity": 1404,
+            "size": 12,
+            "types": [
+              1,
+              4,
+              5
+            ]
+          },
+          {
+            "multiplicity": 519168,
+            "size": 16,
+            "types": [
+              6,
+              6,
+              7
+            ]
+          },
+          {
+            "multiplicity": 399360,
+            "size": 16,
+            "types": [
+              6,
+              7,
+              9
+            ]
+          },
+          {
+            "multiplicity": 259584,
+            "size": 16,
+            "types": [
+              6,
+              6,
+              12
+            ]
+          },
+          {
+            "multiplicity": 199680,
+            "size": 16,
+            "types": [
+              6,
+              9,
+              12
+            ]
+          },
+          {
+            "multiplicity": 129792,
+            "size": 16,
+            "types": [
+              6,
+              6,
+              11
+            ]
+          },
+          {
+            "multiplicity": 129792,
+            "size": 16,
+            "types": [
+              6,
+              6,
+              13
+            ]
+          },
+          {
+            "multiplicity": 99840,
+            "size": 16,
+            "types": [
+              6,
+              9,
+              11
+            ]
+          },
+          {
+            "multiplicity": 99840,
+            "size": 16,
+            "types": [
+              6,
+              9,
+              13
+            ]
+          },
+          {
+            "multiplicity": 89856,
+            "size": 16,
+            "types": [
+              5,
+              6,
+              7
+            ]
+          },
+          {
+            "multiplicity": 76800,
+            "size": 16,
+            "types": [
+              7,
+              9,
+              9
+            ]
+          },
+          {
+            "multiplicity": 44928,
+            "size": 16,
+            "types": [
+              5,
+              6,
+              12
+            ]
+          },
+          {
+            "multiplicity": 38400,
+            "size": 16,
+            "types": [
+              9,
+              9,
+              12
+            ]
+          },
+          {
+            "multiplicity": 34560,
+            "size": 16,
+            "types": [
+              5,
+              7,
+              9
+            ]
+          },
+          {
+            "multiplicity": 32448,
+            "size": 16,
+            "types": [
+              3,
+              6,
+              6
+            ]
+          },
+          {
+            "multiplicity": 24960,
+            "size": 16,
+            "types": [
+              3,
+              6,
+              9
+            ]
+          },
+          {
+            "multiplicity": 22464,
+            "size": 16,
+            "types": [
+              5,
+              6,
+              11
+            ]
+          },
+          {
+            "multiplicity": 22464,
+            "size": 16,
+            "types": [
+              5,
+              6,
+              13
+            ]
+          },
+          {
+            "multiplicity": 19968,
+            "size": 16,
+            "types": [
+              1,
+              7,
+              7
+            ]
+          },
+          {
+            "multiplicity": 19968,
+            "size": 16,
+            "types": [
+              1,
+              7,
+              12
+            ]
+          },
+          {
+            "multiplicity": 19200,
+            "size": 16,
+            "types": [
+              9,
+              9,
+              11
+            ]
+          },
+          {
+            "multiplicity": 19200,
+            "size": 16,
+            "types": [
+              9,
+              9,
+              13
+            ]
+          },
+          {
+            "multiplicity": 17280,
+            "size": 16,
+            "types": [
+              5,
+              9,
+              12
+            ]
+          },
+          {
+            "multiplicity": 16224,
+            "size": 16,
+            "types": [
+              0,
+              1,
+              6
+            ]
+          },
+          {
+            "multiplicity": 9984,
+            "size": 16,
+            "types": [
+              1,
+              7,
+              11
+            ]
+          },
+          {
+            "multiplicity": 9984,
+            "size": 16,
+            "types": [
+              1,
+              7,
+              13
+            ]
+          },
+          {
+            "multiplicity": 8640,
+            "size": 16,
+            "types": [
+              5,
+              9,
+              11
+            ]
+          },
+          {
+            "multiplicity": 8640,
+            "size": 16,
+            "types": [
+              5,
+              9,
+              13
+            ]
+          },
+          {
+            "multiplicity": 6240,
+            "size": 16,
+            "types": [
+              0,
+              1,
+              9
+            ]
+          },
+          {
+            "multiplicity": 5616,
+            "size": 16,
+            "types": [
+              3,
+              5,
+              6
+            ]
+          },
+          {
+            "multiplicity": 4992,
+            "size": 16,
+            "types": [
+              1,
+              11,
+              12
+            ]
+          },
+          {
+            "multiplicity": 4992,
+            "size": 16,
+            "types": [
+              1,
+              12,
+              12
+            ]
+          },
+          {
+            "multiplicity": 4992,
+            "size": 16,
+            "types": [
+              1,
+              12,
+              13
+            ]
+          },
+          {
+            "multiplicity": 4800,
+            "size": 16,
+            "types": [
+              3,
+              9,
+              9
+            ]
+          },
+          {
+            "multiplicity": 3888,
+            "size": 16,
+            "types": [
+              5,
+              5,
+              7
+            ]
+          },
+          {
+            "multiplicity": 2496,
+            "size": 16,
+            "types": [
+              1,
+              3,
+              7
+            ]
+          },
+          {
+            "multiplicity": 2496,
+            "size": 16,
+            "types": [
+              1,
+              11,
+              13
+            ]
+          },
+          {
+            "multiplicity": 2160,
+            "size": 16,
+            "types": [
+              3,
+              5,
+              9
+            ]
+          },
+          {
+            "multiplicity": 1944,
+            "size": 16,
+            "types": [
+              5,
+              5,
+              12
+            ]
+          },
+          {
+            "multiplicity": 1404,
+            "size": 16,
+            "types": [
+              0,
+              1,
+              5
+            ]
+          },
+          {
+            "multiplicity": 1248,
+            "size": 16,
+            "types": [
+              1,
+              3,
+              12
+            ]
+          },
+          {
+            "multiplicity": 1248,
+            "size": 16,
+            "types": [
+              1,
+              11,
+              11
+            ]
+          },
+          {
+            "multiplicity": 1248,
+            "size": 16,
+            "types": [
+              1,
+              13,
+              13
+            ]
+          },
+          {
+            "multiplicity": 972,
+            "size": 16,
+            "types": [
+              5,
+              5,
+              11
+            ]
+          },
+          {
+            "multiplicity": 972,
+            "size": 16,
+            "types": [
+              5,
+              5,
+              13
+            ]
+          },
+          {
+            "multiplicity": 624,
+            "size": 16,
+            "types": [
+              1,
+              3,
+              11
+            ]
+          },
+          {
+            "multiplicity": 624,
+            "size": 16,
+            "types": [
+              1,
+              3,
+              13
+            ]
+          },
+          {
+            "multiplicity": 243,
+            "size": 16,
+            "types": [
+              3,
+              5,
+              5
+            ]
+          },
+          {
+            "multiplicity": 78,
+            "size": 16,
+            "types": [
+              1,
+              3,
+              3
+            ]
+          },
+          {
+            "multiplicity": 519168,
+            "size": 24,
+            "types": [
+              6,
+              6,
+              14
+            ]
+          },
+          {
+            "multiplicity": 399360,
+            "size": 24,
+            "types": [
+              6,
+              9,
+              14
+            ]
+          },
+          {
+            "multiplicity": 259584,
+            "size": 24,
+            "types": [
+              6,
+              6,
+              8
+            ]
+          },
+          {
+            "multiplicity": 259584,
+            "size": 24,
+            "types": [
+              6,
+              6,
+              10
+            ]
+          },
+          {
+            "multiplicity": 199680,
+            "size": 24,
+            "types": [
+              6,
+              8,
+              9
+            ]
+          },
+          {
+            "multiplicity": 199680,
+            "size": 24,
+            "types": [
+              6,
+              9,
+              10
+            ]
+          },
+          {
+            "multiplicity": 89856,
+            "size": 24,
+            "types": [
+              5,
+              6,
+              14
+            ]
+          },
+          {
+            "multiplicity": 76800,
+            "size": 24,
+            "types": [
+              9,
+              9,
+              14
+            ]
+          },
+          {
+            "multiplicity": 44928,
+            "size": 24,
+            "types": [
+              5,
+              6,
+              8
+            ]
+          },
+          {
+            "multiplicity": 44928,
+            "size": 24,
+            "types": [
+              5,
+              6,
+              10
+            ]
+          },
+          {
+            "multiplicity": 39936,
+            "size": 24,
+            "types": [
+              1,
+              7,
+              14
+            ]
+          },
+          {
+            "multiplicity": 38400,
+            "size": 24,
+            "types": [
+              8,
+              9,
+              9
+            ]
+          },
+          {
+            "multiplicity": 38400,
+            "size": 24,
+            "types": [
+              9,
+              9,
+              10
+            ]
+          },
+          {
+            "multiplicity": 34560,
+            "size": 24,
+            "types": [
+              5,
+              9,
+              14
+            ]
+          },
+          {
+            "multiplicity": 32448,
+            "size": 24,
+            "types": [
+              2,
+              6,
+              6
+            ]
+          },
+          {
+            "multiplicity": 32448,
+            "size": 24,
+            "types": [
+              4,
+              6,
+              6
+            ]
+          },
+          {
+            "multiplicity": 24960,
+            "size": 24,
+            "types": [
+              2,
+              6,
+              9
+            ]
+          },
+          {
+            "multiplicity": 24960,
+            "size": 24,
+            "types": [
+              4,
+              6,
+              9
+            ]
+          },
+          {
+            "multiplicity": 19968,
+            "size": 24,
+            "types": [
+              1,
+              7,
+              8
+            ]
+          },
+          {
+            "multiplicity": 19968,
+            "size": 24,
+            "types": [
+              1,
+              7,
+              10
+            ]
+          },
+          {
+            "multiplicity": 19968,
+            "size": 24,
+            "types": [
+              1,
+              12,
+              14
+            ]
+          },
+          {
+            "multiplicity": 17280,
+            "size": 24,
+            "types": [
+              5,
+              8,
+              9
+            ]
+          },
+          {
+            "multiplicity": 17280,
+            "size": 24,
+            "types": [
+              5,
+              9,
+              10
+            ]
+          },
+          {
+            "multiplicity": 9984,
+            "size": 24,
+            "types": [
+              1,
+              8,
+              12
+            ]
+          },
+          {
+            "multiplicity": 9984,
+            "size": 24,
+            "types": [
+              1,
+              10,
+              12
+            ]
+          },
+          {
+            "multiplicity": 9984,
+            "size": 24,
+            "types": [
+              1,
+              11,
+              14
+            ]
+          },
+          {
+            "multiplicity": 9984,
+            "size": 24,
+            "types": [
+              1,
+              13,
+              14
+            ]
+          },
+          {
+            "multiplicity": 5616,
+            "size": 24,
+            "types": [
+              2,
+              5,
+              6
+            ]
+          },
+          {
+            "multiplicity": 5616,
+            "size": 24,
+            "types": [
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "multiplicity": 4992,
+            "size": 24,
+            "types": [
+              1,
+              8,
+              11
+            ]
+          },
+          {
+            "multiplicity": 4992,
+            "size": 24,
+            "types": [
+              1,
+              8,
+              13
+            ]
+          },
+          {
+            "multiplicity": 4992,
+            "size": 24,
+            "types": [
+              1,
+              10,
+              11
+            ]
+          },
+          {
+            "multiplicity": 4992,
+            "size": 24,
+            "types": [
+              1,
+              10,
+              13
+            ]
+          },
+          {
+            "multiplicity": 4800,
+            "size": 24,
+            "types": [
+              2,
+              9,
+              9
+            ]
+          },
+          {
+            "multiplicity": 4800,
+            "size": 24,
+            "types": [
+              4,
+              9,
+              9
+            ]
+          },
+          {
+            "multiplicity": 3888,
+            "size": 24,
+            "types": [
+              5,
+              5,
+              14
+            ]
+          },
+          {
+            "multiplicity": 2496,
+            "size": 24,
+            "types": [
+              1,
+              2,
+              7
+            ]
+          },
+          {
+            "multiplicity": 2496,
+            "size": 24,
+            "types": [
+              1,
+              3,
+              14
+            ]
+          },
+          {
+            "multiplicity": 2496,
+            "size": 24,
+            "types": [
+              1,
+              4,
+              7
+            ]
+          },
+          {
+            "multiplicity": 2160,
+            "size": 24,
+            "types": [
+              2,
+              5,
+              9
+            ]
+          },
+          {
+            "multiplicity": 2160,
+            "size": 24,
+            "types": [
+              4,
+              5,
+              9
+            ]
+          },
+          {
+            "multiplicity": 1944,
+            "size": 24,
+            "types": [
+              5,
+              5,
+              8
+            ]
+          },
+          {
+            "multiplicity": 1944,
+            "size": 24,
+            "types": [
+              5,
+              5,
+              10
+            ]
+          },
+          {
+            "multiplicity": 1248,
+            "size": 24,
+            "types": [
+              1,
+              2,
+              12
+            ]
+          },
+          {
+            "multiplicity": 1248,
+            "size": 24,
+            "types": [
+              1,
+              3,
+              8
+            ]
+          },
+          {
+            "multiplicity": 1248,
+            "size": 24,
+            "types": [
+              1,
+              3,
+              10
+            ]
+          },
+          {
+            "multiplicity": 1248,
+            "size": 24,
+            "types": [
+              1,
+              4,
+              12
+            ]
+          },
+          {
+            "multiplicity": 624,
+            "size": 24,
+            "types": [
+              1,
+              2,
+              11
+            ]
+          },
+          {
+            "multiplicity": 624,
+            "size": 24,
+            "types": [
+              1,
+              2,
+              13
+            ]
+          },
+          {
+            "multiplicity": 624,
+            "size": 24,
+            "types": [
+              1,
+              4,
+              11
+            ]
+          },
+          {
+            "multiplicity": 624,
+            "size": 24,
+            "types": [
+              1,
+              4,
+              13
+            ]
+          },
+          {
+            "multiplicity": 243,
+            "size": 24,
+            "types": [
+              2,
+              5,
+              5
+            ]
+          },
+          {
+            "multiplicity": 243,
+            "size": 24,
+            "types": [
+              4,
+              5,
+              5
+            ]
+          },
+          {
+            "multiplicity": 156,
+            "size": 24,
+            "types": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "multiplicity": 156,
+            "size": 24,
+            "types": [
+              1,
+              3,
+              4
+            ]
+          },
+          {
+            "multiplicity": 79872,
+            "size": 32,
+            "types": [
+              6,
+              7,
+              7
+            ]
+          },
+          {
+            "multiplicity": 79872,
+            "size": 32,
+            "types": [
+              6,
+              7,
+              12
+            ]
+          },
+          {
+            "multiplicity": 39936,
+            "size": 32,
+            "types": [
+              6,
+              7,
+              11
+            ]
+          },
+          {
+            "multiplicity": 39936,
+            "size": 32,
+            "types": [
+              6,
+              7,
+              13
+            ]
+          },
+          {
+            "multiplicity": 32448,
+            "size": 32,
+            "types": [
+              0,
+              6,
+              6
+            ]
+          },
+          {
+            "multiplicity": 30720,
+            "size": 32,
+            "types": [
+              7,
+              7,
+              9
+            ]
+          },
+          {
+            "multiplicity": 30720,
+            "size": 32,
+            "types": [
+              7,
+              9,
+              12
+            ]
+          },
+          {
+            "multiplicity": 24960,
+            "size": 32,
+            "types": [
+              0,
+              6,
+              9
+            ]
+          },
+          {
+            "multiplicity": 19968,
+            "size": 32,
+            "types": [
+              6,
+              11,
+              12
+            ]
+          },
+          {
+            "multiplicity": 19968,
+            "size": 32,
+            "types": [
+              6,
+              12,
+              12
+            ]
+          },
+          {
+            "multiplicity": 19968,
+            "size": 32,
+            "types": [
+              6,
+              12,
+              13
+            ]
+          },
+          {
+            "multiplicity": 15360,
+            "size": 32,
+            "types": [
+              7,
+              9,
+              11
+            ]
+          },
+          {
+            "multiplicity": 15360,
+            "size": 32,
+            "types": [
+              7,
+              9,
+              13
+            ]
+          },
+          {
+            "multiplicity": 9984,
+            "size": 32,
+            "types": [
+              3,
+              6,
+              7
+            ]
+          },
+          {
+            "multiplicity": 9984,
+            "size": 32,
+            "types": [
+              6,
+              11,
+              13
+            ]
+          },
+          {
+            "multiplicity": 7680,
+            "size": 32,
+            "types": [
+              9,
+              11,
+              12
+            ]
+          },
+          {
+            "multiplicity": 7680,
+            "size": 32,
+            "types": [
+              9,
+              12,
+              12
+            ]
+          },
+          {
+            "multiplicity": 7680,
+            "size": 32,
+            "types": [
+              9,
+              12,
+              13
+            ]
+          },
+          {
+            "multiplicity": 6912,
+            "size": 32,
+            "types": [
+              5,
+              7,
+              7
+            ]
+          },
+          {
+            "multiplicity": 6912,
+            "size": 32,
+            "types": [
+              5,
+              7,
+              12
+            ]
+          },
+          {
+            "multiplicity": 5616,
+            "size": 32,
+            "types": [
+              0,
+              5,
+              6
+            ]
+          },
+          {
+            "multiplicity": 4992,
+            "size": 32,
+            "types": [
+              3,
+              6,
+              12
+            ]
+          },
+          {
+            "multiplicity": 4992,
+            "size": 32,
+            "types": [
+              6,
+              11,
+              11
+            ]
+          },
+          {
+            "multiplicity": 4992,
+            "size": 32,
+            "types": [
+              6,
+              13,
+              13
+            ]
+          },
+          {
+            "multiplicity": 4800,
+            "size": 32,
+            "types": [
+              0,
+              9,
+              9
+            ]
+          },
+          {
+            "multiplicity": 3840,
+            "size": 32,
+            "types": [
+              3,
+              7,
+              9
+            ]
+          },
+          {
+            "multiplicity": 3840,
+            "size": 32,
+            "types": [
+              9,
+              11,
+              13
+            ]
+          },
+          {
+            "multiplicity": 3456,
+            "size": 32,
+            "types": [
+              5,
+              7,
+              11
+            ]
+          },
+          {
+            "multiplicity": 3456,
+            "size": 32,
+            "types": [
+              5,
+              7,
+              13
+            ]
+          },
+          {
+            "multiplicity": 2496,
+            "size": 32,
+            "types": [
+              0,
+              1,
+              7
+            ]
+          },
+          {
+            "multiplicity": 2496,
+            "size": 32,
+            "types": [
+              3,
+              6,
+              11
+            ]
+          },
+          {
+            "multiplicity": 2496,
+            "size": 32,
+            "types": [
+              3,
+              6,
+              13
+            ]
+          },
+          {
+            "multiplicity": 2160,
+            "size": 32,
+            "types": [
+              0,
+              5,
+              9
+            ]
+          },
+          {
+            "multiplicity": 1920,
+            "size": 32,
+            "types": [
+              3,
+              9,
+              12
+            ]
+          },
+          {
+            "multiplicity": 1920,
+            "size": 32,
+            "types": [
+              9,
+              11,
+              11
+            ]
+          },
+          {
+            "multiplicity": 1920,
+            "size": 32,
+            "types": [
+              9,
+              13,
+              13
+            ]
+          },
+          {
+            "multiplicity": 1728,
+            "size": 32,
+            "types": [
+              5,
+              11,
+              12
+            ]
+          },
+          {
+            "multiplicity": 1728,
+            "size": 32,
+            "types": [
+              5,
+              12,
+              12
+            ]
+          },
+          {
+            "multiplicity": 1728,
+            "size": 32,
+            "types": [
+              5,
+              12,
+              13
+            ]
+          },
+          {
+            "multiplicity": 1248,
+            "size": 32,
+            "types": [
+              0,
+              1,
+              12
+            ]
+          },
+          {
+            "multiplicity": 960,
+            "size": 32,
+            "types": [
+              3,
+              9,
+              11
+            ]
+          },
+          {
+            "multiplicity": 960,
+            "size": 32,
+            "types": [
+              3,
+              9,
+              13
+            ]
+          },
+          {
+            "multiplicity": 864,
+            "size": 32,
+            "types": [
+              3,
+              5,
+              7
+            ]
+          },
+          {
+            "multiplicity": 864,
+            "size": 32,
+            "types": [
+              5,
+              11,
+              13
+            ]
+          },
+          {
+            "multiplicity": 624,
+            "size": 32,
+            "types": [
+              0,
+              1,
+              11
+            ]
+          },
+          {
+            "multiplicity": 624,
+            "size": 32,
+            "types": [
+              0,
+              1,
+              13
+            ]
+          },
+          {
+            "multiplicity": 432,
+            "size": 32,
+            "types": [
+              3,
+              5,
+              12
+            ]
+          },
+          {
+            "multiplicity": 432,
+            "size": 32,
+            "types": [
+              5,
+              11,
+              11
+            ]
+          },
+          {
+            "multiplicity": 432,
+            "size": 32,
+            "types": [
+              5,
+              13,
+              13
+            ]
+          },
+          {
+            "multiplicity": 312,
+            "size": 32,
+            "types": [
+              3,
+              3,
+              6
+            ]
+          },
+          {
+            "multiplicity": 243,
+            "size": 32,
+            "types": [
+              0,
+              5,
+              5
+            ]
+          },
+          {
+            "multiplicity": 216,
+            "size": 32,
+            "types": [
+              3,
+              5,
+              11
+            ]
+          },
+          {
+            "multiplicity": 216,
+            "size": 32,
+            "types": [
+              3,
+              5,
+              13
+            ]
+          },
+          {
+            "multiplicity": 156,
+            "size": 32,
+            "types": [
+              0,
+              1,
+              3
+            ]
+          },
+          {
+            "multiplicity": 120,
+            "size": 32,
+            "types": [
+              3,
+              3,
+              9
+            ]
+          },
+          {
+            "multiplicity": 27,
+            "size": 32,
+            "types": [
+              3,
+              3,
+              5
+            ]
+          },
+          {
+            "multiplicity": 19968,
+            "size": 36,
+            "types": [
+              1,
+              8,
+              14
+            ]
+          },
+          {
+            "multiplicity": 19968,
+            "size": 36,
+            "types": [
+              1,
+              10,
+              14
+            ]
+          },
+          {
+            "multiplicity": 19968,
+            "size": 36,
+            "types": [
+              1,
+              14,
+              14
+            ]
+          },
+          {
+            "multiplicity": 9984,
+            "size": 36,
+            "types": [
+              1,
+              8,
+              10
+            ]
+          },
+          {
+            "multiplicity": 4992,
+            "size": 36,
+            "types": [
+              1,
+              8,
+              8
+            ]
+          },
+          {
+            "multiplicity": 4992,
+            "size": 36,
+            "types": [
+              1,
+              10,
+              10
+            ]
+          },
+          {
+            "multiplicity": 2496,
+            "size": 36,
+            "types": [
+              1,
+              2,
+              14
+            ]
+          },
+          {
+            "multiplicity": 2496,
+            "size": 36,
+            "types": [
+              1,
+              4,
+              14
+            ]
+          },
+          {
+            "multiplicity": 1248,
+            "size": 36,
+            "types": [
+              1,
+              2,
+              8
+            ]
+          },
+          {
+            "multiplicity": 1248,
+            "size": 36,
+            "types": [
+              1,
+              2,
+              10
+            ]
+          },
+          {
+            "multiplicity": 1248,
+            "size": 36,
+            "types": [
+              1,
+              4,
+              8
+            ]
+          },
+          {
+            "multiplicity": 1248,
+            "size": 36,
+            "types": [
+              1,
+              4,
+              10
+            ]
+          },
+          {
+            "multiplicity": 156,
+            "size": 36,
+            "types": [
+              1,
+              2,
+              4
+            ]
+          },
+          {
+            "multiplicity": 78,
+            "size": 36,
+            "types": [
+              1,
+              2,
+              2
+            ]
+          },
+          {
+            "multiplicity": 78,
+            "size": 36,
+            "types": [
+              1,
+              4,
+              4
+            ]
+          },
+          {
+            "multiplicity": 159744,
+            "size": 48,
+            "types": [
+              6,
+              7,
+              14
+            ]
+          },
+          {
+            "multiplicity": 79872,
+            "size": 48,
+            "types": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "multiplicity": 79872,
+            "size": 48,
+            "types": [
+              6,
+              7,
+              10
+            ]
+          },
+          {
+            "multiplicity": 79872,
+            "size": 48,
+            "types": [
+              6,
+              12,
+              14
+            ]
+          },
+          {
+            "multiplicity": 61440,
+            "size": 48,
+            "types": [
+              7,
+              9,
+              14
+            ]
+          },
+          {
+            "multiplicity": 39936,
+            "size": 48,
+            "types": [
+              6,
+              8,
+              12
+            ]
+          },
+          {
+            "multiplicity": 39936,
+            "size": 48,
+            "types": [
+              6,
+              10,
+              12
+            ]
+          },
+          {
+            "multiplicity": 39936,
+            "size": 48,
+            "types": [
+              6,
+              11,
+              14
+            ]
+          },
+          {
+            "multiplicity": 39936,
+            "size": 48,
+            "types": [
+              6,
+              13,
+              14
+            ]
+          },
+          {
+            "multiplicity": 30720,
+            "size": 48,
+            "types": [
+              7,
+              8,
+              9
+            ]
+          },
+          {
+            "multiplicity": 30720,
+            "size": 48,
+            "types": [
+              7,
+              9,
+              10
+            ]
+          },
+          {
+            "multiplicity": 30720,
+            "size": 48,
+            "types": [
+              9,
+              12,
+              14
+            ]
+          },
+          {
+            "multiplicity": 19968,
+            "size": 48,
+            "types": [
+              6,
+              8,
+              11
+            ]
+          },
+          {
+            "multiplicity": 19968,
+            "size": 48,
+            "types": [
+              6,
+              8,
+              13
+            ]
+          },
+          {
+            "multiplicity": 19968,
+            "size": 48,
+            "types": [
+              6,
+              10,
+              11
+            ]
+          },
+          {
+            "multiplicity": 19968,
+            "size": 48,
+            "types": [
+              6,
+              10,
+              13
+            ]
+          },
+          {
+            "multiplicity": 15360,
+            "size": 48,
+            "types": [
+              8,
+              9,
+              12
+            ]
+          },
+          {
+            "multiplicity": 15360,
+            "size": 48,
+            "types": [
+              9,
+              10,
+              12
+            ]
+          },
+          {
+            "multiplicity": 15360,
+            "size": 48,
+            "types": [
+              9,
+              11,
+              14
+            ]
+          },
+          {
+            "multiplicity": 15360,
+            "size": 48,
+            "types": [
+              9,
+              13,
+              14
+            ]
+          },
+          {
+            "multiplicity": 13824,
+            "size": 48,
+            "types": [
+              5,
+              7,
+              14
+            ]
+          },
+          {
+            "multiplicity": 9984,
+            "size": 48,
+            "types": [
+              2,
+              6,
+              7
+            ]
+          },
+          {
+            "multiplicity": 9984,
+            "size": 48,
+            "types": [
+              3,
+              6,
+              14
+            ]
+          },
+          {
+            "multiplicity": 9984,
+            "size": 48,
+            "types": [
+              4,
+              6,
+              7
+            ]
+          },
+          {
+            "multiplicity": 7680,
+            "size": 48,
+            "types": [
+              8,
+              9,
+              11
+            ]
+          },
+          {
+            "multiplicity": 7680,
+            "size": 48,
+            "types": [
+              8,
+              9,
+              13
+            ]
+          },
+          {
+            "multiplicity": 7680,
+            "size": 48,
+            "types": [
+              9,
+              10,
+              11
+            ]
+          },
+          {
+            "multiplicity": 7680,
+            "size": 48,
+            "types": [
+              9,
+              10,
+              13
+            ]
+          },
+          {
+            "multiplicity": 6912,
+            "size": 48,
+            "types": [
+              5,
+              7,
+              8
+            ]
+          },
+          {
+            "multiplicity": 6912,
+            "size": 48,
+            "types": [
+              5,
+              7,
+              10
+            ]
+          },
+          {
+            "multiplicity": 6912,
+            "size": 48,
+            "types": [
+              5,
+              12,
+              14
+            ]
+          },
+          {
+            "multiplicity": 4992,
+            "size": 48,
+            "types": [
+              2,
+              6,
+              12
+            ]
+          },
+          {
+            "multiplicity": 4992,
+            "size": 48,
+            "types": [
+              3,
+              6,
+              8
+            ]
+          },
+          {
+            "multiplicity": 4992,
+            "size": 48,
+            "types": [
+              3,
+              6,
+              10
+            ]
+          },
+          {
+            "multiplicity": 4992,
+            "size": 48,
+            "types": [
+              4,
+              6,
+              12
+            ]
+          },
+          {
+            "multiplicity": 3840,
+            "size": 48,
+            "types": [
+              2,
+              7,
+              9
+            ]
+          },
+          {
+            "multiplicity": 3840,
+            "size": 48,
+            "types": [
+              3,
+              9,
+              14
+            ]
+          },
+          {
+            "multiplicity": 3840,
+            "size": 48,
+            "types": [
+              4,
+              7,
+              9
+            ]
+          },
+          {
+            "multiplicity": 3456,
+            "size": 48,
+            "types": [
+              5,
+              8,
+              12
+            ]
+          },
+          {
+            "multiplicity": 3456,
+            "size": 48,
+            "types": [
+              5,
+              10,
+              12
+            ]
+          },
+          {
+            "multiplicity": 3456,
+            "size": 48,
+            "types": [
+              5,
+              11,
+              14
+            ]
+          },
+          {
+            "multiplicity": 3456,
+            "size": 48,
+            "types": [
+              5,
+              13,
+              14
+            ]
+          },
+          {
+            "multiplicity": 2496,
+            "size": 48,
+            "types": [
+              0,
+              1,
+              14
+            ]
+          },
+          {
+            "multiplicity": 2496,
+            "size": 48,
+            "types": [
+              2,
+              6,
+              11
+            ]
+          },
+          {
+            "multiplicity": 2496,
+            "size": 48,
+            "types": [
+              2,
+              6,
+              13
+            ]
+          },
+          {
+            "multiplicity": 2496,
+            "size": 48,
+            "types": [
+              4,
+              6,
+              11
+            ]
+          },
+          {
+            "multiplicity": 2496,
+            "size": 48,
+            "types": [
+              4,
+              6,
+              13
+            ]
+          },
+          {
+            "multiplicity": 1920,
+            "size": 48,
+            "types": [
+              2,
+              9,
+              12
+            ]
+          },
+          {
+            "multiplicity": 1920,
+            "size": 48,
+            "types": [
+              3,
+              8,
+              9
+            ]
+          },
+          {
+            "multiplicity": 1920,
+            "size": 48,
+            "types": [
+              3,
+              9,
+              10
+            ]
+          },
+          {
+            "multiplicity": 1920,
+            "size": 48,
+            "types": [
+              4,
+              9,
+              12
+            ]
+          },
+          {
+            "multiplicity": 1728,
+            "size": 48,
+            "types": [
+              5,
+              8,
+              11
+            ]
+          },
+          {
+            "multiplicity": 1728,
+            "size": 48,
+            "types": [
+              5,
+              8,
+              13
+            ]
+          },
+          {
+            "multiplicity": 1728,
+            "size": 48,
+            "types": [
+              5,
+              10,
+              11
+            ]
+          },
+          {
+            "multiplicity": 1728,
+            "size": 48,
+            "types": [
+              5,
+              10,
+              13
+            ]
+          },
+          {
+            "multiplicity": 1248,
+            "size": 48,
+            "types": [
+              0,
+              1,
+              8
+            ]
+          },
+          {
+            "multiplicity": 1248,
+            "size": 48,
+            "types": [
+              0,
+              1,
+              10
+            ]
+          },
+          {
+            "multiplicity": 960,
+            "size": 48,
+            "types": [
+              2,
+              9,
+              11
+            ]
+          },
+          {
+            "multiplicity": 960,
+            "size": 48,
+            "types": [
+              2,
+              9,
+              13
+            ]
+          },
+          {
+            "multiplicity": 960,
+            "size": 48,
+            "types": [
+              4,
+              9,
+              11
+            ]
+          },
+          {
+            "multiplicity": 960,
+            "size": 48,
+            "types": [
+              4,
+              9,
+              13
+            ]
+          },
+          {
+            "multiplicity": 864,
+            "size": 48,
+            "types": [
+              2,
+              5,
+              7
+            ]
+          },
+          {
+            "multiplicity": 864,
+            "size": 48,
+            "types": [
+              3,
+              5,
+              14
+            ]
+          },
+          {
+            "multiplicity": 864,
+            "size": 48,
+            "types": [
+              4,
+              5,
+              7
+            ]
+          },
+          {
+            "multiplicity": 624,
+            "size": 48,
+            "types": [
+              2,
+              3,
+              6
+            ]
+          },
+          {
+            "multiplicity": 624,
+            "size": 48,
+            "types": [
+              3,
+              4,
+              6
+            ]
+          },
+          {
+            "multiplicity": 432,
+            "size": 48,
+            "types": [
+              2,
+              5,
+              12
+            ]
+          },
+          {
+            "multiplicity": 432,
+            "size": 48,
+            "types": [
+              3,
+              5,
+              8
+            ]
+          },
+          {
+            "multiplicity": 432,
+            "size": 48,
+            "types": [
+              3,
+              5,
+              10
+            ]
+          },
+          {
+            "multiplicity": 432,
+            "size": 48,
+            "types": [
+              4,
+              5,
+              12
+            ]
+          },
+          {
+            "multiplicity": 240,
+            "size": 48,
+            "types": [
+              2,
+              3,
+              9
+            ]
+          },
+          {
+            "multiplicity": 240,
+            "size": 48,
+            "types": [
+              3,
+              4,
+              9
+            ]
+          },
+          {
+            "multiplicity": 216,
+            "size": 48,
+            "types": [
+              2,
+              5,
+              11
+            ]
+          },
+          {
+            "multiplicity": 216,
+            "size": 48,
+            "types": [
+              2,
+              5,
+              13
+            ]
+          },
+          {
+            "multiplicity": 216,
+            "size": 48,
+            "types": [
+              4,
+              5,
+              11
+            ]
+          },
+          {
+            "multiplicity": 216,
+            "size": 48,
+            "types": [
+              4,
+              5,
+              13
+            ]
+          },
+          {
+            "multiplicity": 156,
+            "size": 48,
+            "types": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "multiplicity": 156,
+            "size": 48,
+            "types": [
+              0,
+              1,
+              4
+            ]
+          },
+          {
+            "multiplicity": 54,
+            "size": 48,
+            "types": [
+              2,
+              3,
+              5
+            ]
+          },
+          {
+            "multiplicity": 54,
+            "size": 48,
+            "types": [
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "multiplicity": 9984,
+            "size": 64,
+            "types": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "multiplicity": 6144,
+            "size": 64,
+            "types": [
+              7,
+              7,
+              12
+            ]
+          },
+          {
+            "multiplicity": 4992,
+            "size": 64,
+            "types": [
+              0,
+              6,
+              12
+            ]
+          },
+          {
+            "multiplicity": 4096,
+            "size": 64,
+            "types": [
+              7,
+              7,
+              7
+            ]
+          },
+          {
+            "multiplicity": 3840,
+            "size": 64,
+            "types": [
+              0,
+              7,
+              9
+            ]
+          },
+          {
+            "multiplicity": 3072,
+            "size": 64,
+            "types": [
+              7,
+              7,
+              11
+            ]
+          },
+          {
+            "multiplicity": 3072,
+            "size": 64,
+            "types": [
+              7,
+              7,
+              13
+            ]
+          },
+          {
+            "multiplicity": 3072,
+            "size": 64,
+            "types": [
+              7,
+              11,
+              12
+            ]
+          },
+          {
+            "multiplicity": 3072,
+            "size": 64,
+            "types": [
+              7,
+              12,
+              12
+            ]
+          },
+          {
+            "multiplicity": 3072,
+            "size": 64,
+            "types": [
+              7,
+              12,
+              13
+            ]
+          },
+          {
+            "multiplicity": 2496,
+            "size": 64,
+            "types": [
+              0,
+              6,
+              11
+            ]
+          },
+          {
+            "multiplicity": 2496,
+            "size": 64,
+            "types": [
+              0,
+              6,
+              13
+            ]
+          },
+          {
+            "multiplicity": 1920,
+            "size": 64,
+            "types": [
+              0,
+              9,
+              12
+            ]
+          },
+          {
+            "multiplicity": 1536,
+            "size": 64,
+            "types": [
+              7,
+              11,
+              13
+            ]
+          },
+          {
+            "multiplicity": 960,
+            "size": 64,
+            "types": [
+              0,
+              9,
+              11
+            ]
+          },
+          {
+            "multiplicity": 960,
+            "size": 64,
+            "types": [
+              0,
+              9,
+              13
+            ]
+          },
+          {
+            "multiplicity": 864,
+            "size": 64,
+            "types": [
+              0,
+              5,
+              7
+            ]
+          },
+          {
+            "multiplicity": 768,
+            "size": 64,
+            "types": [
+              3,
+              7,
+              7
+            ]
+          },
+          {
+            "multiplicity": 768,
+            "size": 64,
+            "types": [
+              3,
+              7,
+              12
+            ]
+          },
+          {
+            "multiplicity": 768,
+            "size": 64,
+            "types": [
+              7,
+              11,
+              11
+            ]
+          },
+          {
+            "multiplicity": 768,
+            "size": 64,
+            "types": [
+              7,
+              13,
+              13
+            ]
+          },
+          {
+            "multiplicity": 768,
+            "size": 64,
+            "types": [
+              11,
+              12,
+              12
+            ]
+          },
+          {
+            "multiplicity": 768,
+            "size": 64,
+            "types": [
+              11,
+              12,
+              13
+            ]
+          },
+          {
+            "multiplicity": 768,
+            "size": 64,
+            "types": [
+              12,
+              12,
+              13
+            ]
+          },
+          {
+            "multiplicity": 624,
+            "size": 64,
+            "types": [
+              0,
+              3,
+              6
+            ]
+          },
+          {
+            "multiplicity": 512,
+            "size": 64,
+            "types": [
+              12,
+              12,
+              12
+            ]
+          },
+          {
+            "multiplicity": 432,
+            "size": 64,
+            "types": [
+              0,
+              5,
+              12
+            ]
+          },
+          {
+            "multiplicity": 384,
+            "size": 64,
+            "types": [
+              3,
+              7,
+              11
+            ]
+          },
+          {
+            "multiplicity": 384,
+            "size": 64,
+            "types": [
+              3,
+              7,
+              13
+            ]
+          },
+          {
+            "multiplicity": 384,
+            "size": 64,
+            "types": [
+              11,
+              11,
+              12
+            ]
+          },
+          {
+            "multiplicity": 384,
+            "size": 64,
+            "types": [
+              12,
+              13,
+              13
+            ]
+          },
+          {
+            "multiplicity": 240,
+            "size": 64,
+            "types": [
+              0,
+              3,
+              9
+            ]
+          },
+          {
+            "multiplicity": 216,
+            "size": 64,
+            "types": [
+              0,
+              5,
+              11
+            ]
+          },
+          {
+            "multiplicity": 216,
+            "size": 64,
+            "types": [
+              0,
+              5,
+              13
+            ]
+          },
+          {
+            "multiplicity": 192,
+            "size": 64,
+            "types": [
+              3,
+              11,
+              12
+            ]
+          },
+          {
+            "multiplicity": 192,
+            "size": 64,
+            "types": [
+              3,
+              12,
+              12
+            ]
+          },
+          {
+            "multiplicity": 192,
+            "size": 64,
+            "types": [
+              3,
+              12,
+              13
+            ]
+          },
+          {
+            "multiplicity": 192,
+            "size": 64,
+            "types": [
+              11,
+              11,
+              13
+            ]
+          },
+          {
+            "multiplicity": 192,
+            "size": 64,
+            "types": [
+              11,
+              13,
+              13
+            ]
+          },
+          {
+            "multiplicity": 96,
+            "size": 64,
+            "types": [
+              3,
+              11,
+              13
+            ]
+          },
+          {
+            "multiplicity": 78,
+            "size": 64,
+            "types": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "multiplicity": 64,
+            "size": 64,
+            "types": [
+              11,
+              11,
+              11
+            ]
+          },
+          {
+            "multiplicity": 64,
+            "size": 64,
+            "types": [
+              13,
+              13,
+              13
+            ]
+          },
+          {
+            "multiplicity": 54,
+            "size": 64,
+            "types": [
+              0,
+              3,
+              5
+            ]
+          },
+          {
+            "multiplicity": 48,
+            "size": 64,
+            "types": [
+              3,
+              3,
+              7
+            ]
+          },
+          {
+            "multiplicity": 48,
+            "size": 64,
+            "types": [
+              3,
+              11,
+              11
+            ]
+          },
+          {
+            "multiplicity": 48,
+            "size": 64,
+            "types": [
+              3,
+              13,
+              13
+            ]
+          },
+          {
+            "multiplicity": 24,
+            "size": 64,
+            "types": [
+              3,
+              3,
+              12
+            ]
+          },
+          {
+            "multiplicity": 12,
+            "size": 64,
+            "types": [
+              3,
+              3,
+              11
+            ]
+          },
+          {
+            "multiplicity": 12,
+            "size": 64,
+            "types": [
+              3,
+              3,
+              13
+            ]
+          },
+          {
+            "multiplicity": 1,
+            "size": 64,
+            "types": [
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "multiplicity": 79872,
+            "size": 72,
+            "types": [
+              6,
+              8,
+              14
+            ]
+          },
+          {
+            "multiplicity": 79872,
+            "size": 72,
+            "types": [
+              6,
+              10,
+              14
+            ]
+          },
+          {
+            "multiplicity": 79872,
+            "size": 72,
+            "types": [
+              6,
+              14,
+              14
+            ]
+          },
+          {
+            "multiplicity": 39936,
+            "size": 72,
+            "types": [
+              6,
+              8,
+              10
+            ]
+          },
+          {
+            "multiplicity": 30720,
+            "size": 72,
+            "types": [
+              8,
+              9,
+              14
+            ]
+          },
+          {
+            "multiplicity": 30720,
+            "size": 72,
+            "types": [
+              9,
+              10,
+              14
+            ]
+          },
+          {
+            "multiplicity": 30720,
+            "size": 72,
+            "types": [
+              9,
+              14,
+              14
+            ]
+          },
+          {
+            "multiplicity": 19968,
+            "size": 72,
+            "types": [
+              6,
+              8,
+              8
+            ]
+          },
+          {
+            "multiplicity": 19968,
+            "size": 72,
+            "types": [
+              6,
+              10,
+              10
+            ]
+          },
+          {
+            "multiplicity": 15360,
+            "size": 72,
+            "types": [
+              8,
+              9,
+              10
+            ]
+          },
+          {
+            "multiplicity": 9984,
+            "size": 72,
+            "types": [
+              2,
+              6,
+              14
+            ]
+          },
+          {
+            "multiplicity": 9984,
+            "size": 72,
+            "types": [
+              4,
+              6,
+              14
+            ]
+          },
+          {
+            "multiplicity": 7680,
+            "size": 72,
+            "types": [
+              8,
+              8,
+              9
+            ]
+          },
+          {
+            "multiplicity": 7680,
+            "size": 72,
+            "types": [
+              9,
+              10,
+              10
+            ]
+          },
+          {
+            "multiplicity": 6912,
+            "size": 72,
+            "types": [
+              5,
+              8,
+              14
+            ]
+          },
+          {
+            "multiplicity": 6912,
+            "size": 72,
+            "types": [
+              5,
+              10,
+              14
+            ]
+          },
+          {
+            "multiplicity": 6912,
+            "size": 72,
+            "types": [
+              5,
+              14,
+              14
+            ]
+          },
+          {
+            "multiplicity": 4992,
+            "size": 72,
+            "types": [
+              2,
+              6,
+              8
+            ]
+          },
+          {
+            "multiplicity": 4992,
+            "size": 72,
+            "types": [
+              2,
+              6,
+              10
+            ]
+          },
+          {
+            "multiplicity": 4992,
+            "size": 72,
+            "types": [
+              4,
+              6,
+              8
+            ]
+          },
+          {
+            "multiplicity": 4992,
+            "size": 72,
+            "types": [
+              4,
+              6,
+              10
+            ]
+          },
+          {
+            "multiplicity": 3840,
+            "size": 72,
+            "types": [
+              2,
+              9,
+              14
+            ]
+          },
+          {
+            "multiplicity": 3840,
+            "size": 72,
+            "types": [
+              4,
+              9,
+              14
+            ]
+          },
+          {
+            "multiplicity": 3456,
+            "size": 72,
+            "types": [
+              5,
+              8,
+              10
+            ]
+          },
+          {
+            "multiplicity": 1920,
+            "size": 72,
+            "types": [
+              2,
+              8,
+              9
+            ]
+          },
+          {
+            "multiplicity": 1920,
+            "size": 72,
+            "types": [
+              2,
+              9,
+              10
+            ]
+          },
+          {
+            "multiplicity": 1920,
+            "size": 72,
+            "types": [
+              4,
+              8,
+              9
+            ]
+          },
+          {
+            "multiplicity": 1920,
+            "size": 72,
+            "types": [
+              4,
+              9,
+              10
+            ]
+          },
+          {
+            "multiplicity": 1728,
+            "size": 72,
+            "types": [
+              5,
+              8,
+              8
+            ]
+          },
+          {
+            "multiplicity": 1728,
+            "size": 72,
+            "types": [
+              5,
+              10,
+              10
+            ]
+          },
+          {
+            "multiplicity": 864,
+            "size": 72,
+            "types": [
+              2,
+              5,
+              14
+            ]
+          },
+          {
+            "multiplicity": 864,
+            "size": 72,
+            "types": [
+              4,
+              5,
+              14
+            ]
+          },
+          {
+            "multiplicity": 624,
+            "size": 72,
+            "types": [
+              2,
+              4,
+              6
+            ]
+          },
+          {
+            "multiplicity": 432,
+            "size": 72,
+            "types": [
+              2,
+              5,
+              8
+            ]
+          },
+          {
+            "multiplicity": 432,
+            "size": 72,
+            "types": [
+              2,
+              5,
+              10
+            ]
+          },
+          {
+            "multiplicity": 432,
+            "size": 72,
+            "types": [
+              4,
+              5,
+              8
+            ]
+          },
+          {
+            "multiplicity": 432,
+            "size": 72,
+            "types": [
+              4,
+              5,
+              10
+            ]
+          },
+          {
+            "multiplicity": 312,
+            "size": 72,
+            "types": [
+              2,
+              2,
+              6
+            ]
+          },
+          {
+            "multiplicity": 312,
+            "size": 72,
+            "types": [
+              4,
+              4,
+              6
+            ]
+          },
+          {
+            "multiplicity": 240,
+            "size": 72,
+            "types": [
+              2,
+              4,
+              9
+            ]
+          },
+          {
+            "multiplicity": 120,
+            "size": 72,
+            "types": [
+              2,
+              2,
+              9
+            ]
+          },
+          {
+            "multiplicity": 120,
+            "size": 72,
+            "types": [
+              4,
+              4,
+              9
+            ]
+          },
+          {
+            "multiplicity": 54,
+            "size": 72,
+            "types": [
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "multiplicity": 27,
+            "size": 72,
+            "types": [
+              2,
+              2,
+              5
+            ]
+          },
+          {
+            "multiplicity": 27,
+            "size": 72,
+            "types": [
+              4,
+              4,
+              5
+            ]
+          },
+          {
+            "multiplicity": 12288,
+            "size": 96,
+            "types": [
+              7,
+              7,
+              14
+            ]
+          },
+          {
+            "multiplicity": 12288,
+            "size": 96,
+            "types": [
+              7,
+              12,
+              14
+            ]
+          },
+          {
+            "multiplicity": 9984,
+            "size": 96,
+            "types": [
+              0,
+              6,
+              14
+            ]
+          },
+          {
+            "multiplicity": 6144,
+            "size": 96,
+            "types": [
+              7,
+              7,
+              8
+            ]
+          },
+          {
+            "multiplicity": 6144,
+            "size": 96,
+            "types": [
+              7,
+              7,
+              10
+            ]
+          },
+          {
+            "multiplicity": 6144,
+            "size": 96,
+            "types": [
+              7,
+              8,
+              12
+            ]
+          },
+          {
+            "multiplicity": 6144,
+            "size": 96,
+            "types": [
+              7,
+              10,
+              12
+            ]
+          },
+          {
+            "multiplicity": 6144,
+            "size": 96,
+            "types": [
+              7,
+              11,
+              14
+            ]
+          },
+          {
+            "multiplicity": 6144,
+            "size": 96,
+            "types": [
+              7,
+              13,
+              14
+            ]
+          },
+          {
+            "multiplicity": 4992,
+            "size": 96,
+            "types": [
+              0,
+              6,
+              8
+            ]
+          },
+          {
+            "multiplicity": 4992,
+            "size": 96,
+            "types": [
+              0,
+              6,
+              10
+            ]
+          },
+          {
+            "multiplicity": 3840,
+            "size": 96,
+            "types": [
+              0,
+              9,
+              14
+            ]
+          },
+          {
+            "multiplicity": 3072,
+            "size": 96,
+            "types": [
+              7,
+              8,
+              11
+            ]
+          },
+          {
+            "multiplicity": 3072,
+            "size": 96,
+            "types": [
+              7,
+              8,
+              13
+            ]
+          },
+          {
+            "multiplicity": 3072,
+            "size": 96,
+            "types": [
+              7,
+              10,
+              11
+            ]
+          },
+          {
+            "multiplicity": 3072,
+            "size": 96,
+            "types": [
+              7,
+              10,
+              13
+            ]
+          },
+          {
+            "multiplicity": 3072,
+            "size": 96,
+            "types": [
+              11,
+              12,
+              14
+            ]
+          },
+          {
+            "multiplicity": 3072,
+            "size": 96,
+            "types": [
+              12,
+              12,
+              14
+            ]
+          },
+          {
+            "multiplicity": 3072,
+            "size": 96,
+            "types": [
+              12,
+              13,
+              14
+            ]
+          },
+          {
+            "multiplicity": 1920,
+            "size": 96,
+            "types": [
+              0,
+              8,
+              9
+            ]
+          },
+          {
+            "multiplicity": 1920,
+            "size": 96,
+            "types": [
+              0,
+              9,
+              10
+            ]
+          },
+          {
+            "multiplicity": 1536,
+            "size": 96,
+            "types": [
+              3,
+              7,
+              14
+            ]
+          },
+          {
+            "multiplicity": 1536,
+            "size": 96,
+            "types": [
+              8,
+              11,
+              12
+            ]
+          },
+          {
+            "multiplicity": 1536,
+            "size": 96,
+            "types": [
+              8,
+              12,
+              12
+            ]
+          },
+          {
+            "multiplicity": 1536,
+            "size": 96,
+            "types": [
+              8,
+              12,
+              13
+            ]
+          },
+          {
+            "multiplicity": 1536,
+            "size": 96,
+            "types": [
+              10,
+              11,
+              12
+            ]
+          },
+          {
+            "multiplicity": 1536,
+            "size": 96,
+            "types": [
+              10,
+              12,
+              12
+            ]
+          },
+          {
+            "multiplicity": 1536,
+            "size": 96,
+            "types": [
+              10,
+              12,
+              13
+            ]
+          },
+          {
+            "multiplicity": 1536,
+            "size": 96,
+            "types": [
+              11,
+              13,
+              14
+            ]
+          },
+          {
+            "multiplicity": 864,
+            "size": 96,
+            "types": [
+              0,
+              5,
+              14
+            ]
+          },
+          {
+            "multiplicity": 768,
+            "size": 96,
+            "types": [
+              2,
+              7,
+              7
+            ]
+          },
+          {
+            "multiplicity": 768,
+            "size": 96,
+            "types": [
+              2,
+              7,
+              12
+            ]
+          },
+          {
+            "multiplicity": 768,
+            "size": 96,
+            "types": [
+              3,
+              7,
+              8
+            ]
+          },
+          {
+            "multiplicity": 768,
+            "size": 96,
+            "types": [
+              3,
+              7,
+              10
+            ]
+          },
+          {
+            "multiplicity": 768,
+            "size": 96,
+            "types": [
+              3,
+              12,
+              14
+            ]
+          },
+          {
+            "multiplicity": 768,
+            "size": 96,
+            "types": [
+              4,
+              7,
+              7
+            ]
+          },
+          {
+            "multiplicity": 768,
+            "size": 96,
+            "types": [
+              4,
+              7,
+              12
+            ]
+          },
+          {
+            "multiplicity": 768,
+            "size": 96,
+            "types": [
+              8,
+              11,
+              13
+            ]
+          },
+          {
+            "multiplicity": 768,
+            "size": 96,
+            "types": [
+              10,
+              11,
+              13
+            ]
+          },
+          {
+            "multiplicity": 768,
+            "size": 96,
+            "types": [
+              11,
+              11,
+              14
+            ]
+          },
+          {
+            "multiplicity": 768,
+            "size": 96,
+            "types": [
+              13,
+              13,
+              14
+            ]
+          },
+          {
+            "multiplicity": 624,
+            "size": 96,
+            "types": [
+              0,
+              2,
+              6
+            ]
+          },
+          {
+            "multiplicity": 624,
+            "size": 96,
+            "types": [
+              0,
+              4,
+              6
+            ]
+          },
+          {
+            "multiplicity": 432,
+            "size": 96,
+            "types": [
+              0,
+              5,
+              8
+            ]
+          },
+          {
+            "multiplicity": 432,
+            "size": 96,
+            "types": [
+              0,
+              5,
+              10
+            ]
+          },
+          {
+            "multiplicity": 384,
+            "size": 96,
+            "types": [
+              2,
+              7,
+              11
+            ]
+          },
+          {
+            "multiplicity": 384,
+            "size": 96,
+            "types": [
+              2,
+              7,
+              13
+            ]
+          },
+          {
+            "multiplicity": 384,
+            "size": 96,
+            "types": [
+              3,
+              8,
+              12
+            ]
+          },
+          {
+            "multiplicity": 384,
+            "size": 96,
+            "types": [
+              3,
+              10,
+              12
+            ]
+          },
+          {
+            "multiplicity": 384,
+            "size": 96,
+            "types": [
+              3,
+              11,
+              14
+            ]
+          },
+          {
+            "multiplicity": 384,
+            "size": 96,
+            "types": [
+              3,
+              13,
+              14
+            ]
+          },
+          {
+            "multiplicity": 384,
+            "size": 96,
+            "types": [
+              4,
+              7,
+              11
+            ]
+          },
+          {
+            "multiplicity": 384,
+            "size": 96,
+            "types": [
+              4,
+              7,
+              13
+            ]
+          },
+          {
+            "multiplicity": 384,
+            "size": 96,
+            "types": [
+              8,
+              11,
+              11
+            ]
+          },
+          {
+            "multiplicity": 384,
+            "size": 96,
+            "types": [
+              8,
+              13,
+              13
+            ]
+          },
+          {
+            "multiplicity": 384,
+            "size": 96,
+            "types": [
+              10,
+              11,
+              11
+            ]
+          },
+          {
+            "multiplicity": 384,
+            "size": 96,
+            "types": [
+              10,
+              13,
+              13
+            ]
+          },
+          {
+            "multiplicity": 240,
+            "size": 96,
+            "types": [
+              0,
+              2,
+              9
+            ]
+          },
+          {
+            "multiplicity": 240,
+            "size": 96,
+            "types": [
+              0,
+              4,
+              9
+            ]
+          },
+          {
+            "multiplicity": 192,
+            "size": 96,
+            "types": [
+              2,
+              11,
+              12
+            ]
+          },
+          {
+            "multiplicity": 192,
+            "size": 96,
+            "types": [
+              2,
+              12,
+              12
+            ]
+          },
+          {
+            "multiplicity": 192,
+            "size": 96,
+            "types": [
+              2,
+              12,
+              13
+            ]
+          },
+          {
+            "multiplicity": 192,
+            "size": 96,
+            "types": [
+              3,
+              8,
+              11
+            ]
+          },
+          {
+            "multiplicity": 192,
+            "size": 96,
+            "types": [
+              3,
+              8,
+              13
+            ]
+          },
+          {
+            "multiplicity": 192,
+            "size": 96,
+            "types": [
+              3,
+              10,
+              11
+            ]
+          },
+          {
+            "multiplicity": 192,
+            "size": 96,
+            "types": [
+              3,
+              10,
+              13
+            ]
+          },
+          {
+            "multiplicity": 192,
+            "size": 96,
+            "types": [
+              4,
+              11,
+              12
+            ]
+          },
+          {
+            "multiplicity": 192,
+            "size": 96,
+            "types": [
+              4,
+              12,
+              12
+            ]
+          },
+          {
+            "multiplicity": 192,
+            "size": 96,
+            "types": [
+              4,
+              12,
+              13
+            ]
+          },
+          {
+            "multiplicity": 96,
+            "size": 96,
+            "types": [
+              2,
+              3,
+              7
+            ]
+          },
+          {
+            "multiplicity": 96,
+            "size": 96,
+            "types": [
+              2,
+              11,
+              13
+            ]
+          },
+          {
+            "multiplicity": 96,
+            "size": 96,
+            "types": [
+              3,
+              4,
+              7
+            ]
+          },
+          {
+            "multiplicity": 96,
+            "size": 96,
+            "types": [
+              4,
+              11,
+              13
+            ]
+          },
+          {
+            "multiplicity": 54,
+            "size": 96,
+            "types": [
+              0,
+              2,
+              5
+            ]
+          },
+          {
+            "multiplicity": 54,
+            "size": 96,
+            "types": [
+              0,
+              4,
+              5
+            ]
+          },
+          {
+            "multiplicity": 48,
+            "size": 96,
+            "types": [
+              2,
+              3,
+              12
+            ]
+          },
+          {
+            "multiplicity": 48,
+            "size": 96,
+            "types": [
+              2,
+              11,
+              11
+            ]
+          },
+          {
+            "multiplicity": 48,
+            "size": 96,
+            "types": [
+              2,
+              13,
+              13
+            ]
+          },
+          {
+            "multiplicity": 48,
+            "size": 96,
+            "types": [
+              3,
+              3,
+              14
+            ]
+          },
+          {
+            "multiplicity": 48,
+            "size": 96,
+            "types": [
+              3,
+              4,
+              12
+            ]
+          },
+          {
+            "multiplicity": 48,
+            "size": 96,
+            "types": [
+              4,
+              11,
+              11
+            ]
+          },
+          {
+            "multiplicity": 48,
+            "size": 96,
+            "types": [
+              4,
+              13,
+              13
+            ]
+          },
+          {
+            "multiplicity": 24,
+            "size": 96,
+            "types": [
+              2,
+              3,
+              11
+            ]
+          },
+          {
+            "multiplicity": 24,
+            "size": 96,
+            "types": [
+              2,
+              3,
+              13
+            ]
+          },
+          {
+            "multiplicity": 24,
+            "size": 96,
+            "types": [
+              3,
+              3,
+              8
+            ]
+          },
+          {
+            "multiplicity": 24,
+            "size": 96,
+            "types": [
+              3,
+              3,
+              10
+            ]
+          },
+          {
+            "multiplicity": 24,
+            "size": 96,
+            "types": [
+              3,
+              4,
+              11
+            ]
+          },
+          {
+            "multiplicity": 24,
+            "size": 96,
+            "types": [
+              3,
+              4,
+              13
+            ]
+          },
+          {
+            "multiplicity": 3,
+            "size": 96,
+            "types": [
+              2,
+              3,
+              3
+            ]
+          },
+          {
+            "multiplicity": 3,
+            "size": 96,
+            "types": [
+              3,
+              3,
+              4
+            ]
+          },
+          {
+            "multiplicity": 768,
+            "size": 128,
+            "types": [
+              0,
+              7,
+              7
+            ]
+          },
+          {
+            "multiplicity": 768,
+            "size": 128,
+            "types": [
+              0,
+              7,
+              12
+            ]
+          },
+          {
+            "multiplicity": 384,
+            "size": 128,
+            "types": [
+              0,
+              7,
+              11
+            ]
+          },
+          {
+            "multiplicity": 384,
+            "size": 128,
+            "types": [
+              0,
+              7,
+              13
+            ]
+          },
+          {
+            "multiplicity": 312,
+            "size": 128,
+            "types": [
+              0,
+              0,
+              6
+            ]
+          },
+          {
+            "multiplicity": 192,
+            "size": 128,
+            "types": [
+              0,
+              11,
+              12
+            ]
+          },
+          {
+            "multiplicity": 192,
+            "size": 128,
+            "types": [
+              0,
+              12,
+              12
+            ]
+          },
+          {
+            "multiplicity": 192,
+            "size": 128,
+            "types": [
+              0,
+              12,
+              13
+            ]
+          },
+          {
+            "multiplicity": 120,
+            "size": 128,
+            "types": [
+              0,
+              0,
+              9
+            ]
+          },
+          {
+            "multiplicity": 96,
+            "size": 128,
+            "types": [
+              0,
+              3,
+              7
+            ]
+          },
+          {
+            "multiplicity": 96,
+            "size": 128,
+            "types": [
+              0,
+              11,
+              13
+            ]
+          },
+          {
+            "multiplicity": 48,
+            "size": 128,
+            "types": [
+              0,
+              3,
+              12
+            ]
+          },
+          {
+            "multiplicity": 48,
+            "size": 128,
+            "types": [
+              0,
+              11,
+              11
+            ]
+          },
+          {
+            "multiplicity": 48,
+            "size": 128,
+            "types": [
+              0,
+              13,
+              13
+            ]
+          },
+          {
+            "multiplicity": 27,
+            "size": 128,
+            "types": [
+              0,
+              0,
+              5
+            ]
+          },
+          {
+            "multiplicity": 24,
+            "size": 128,
+            "types": [
+              0,
+              3,
+              11
+            ]
+          },
+          {
+            "multiplicity": 24,
+            "size": 128,
+            "types": [
+              0,
+              3,
+              13
+            ]
+          },
+          {
+            "multiplicity": 3,
+            "size": 128,
+            "types": [
+              0,
+              3,
+              3
+            ]
+          }
+        ]
+      },
+      "row": {
+        "omitted_weighted_dimension": 171968320,
+        "retained_blocks": [
+          {
+            "multiplicity": 13824,
+            "size": 1,
+            "types": [
+              2,
+              2,
+              2
+            ]
+          },
+          {
+            "multiplicity": 110592,
+            "size": 2,
+            "types": [
+              2,
+              2,
+              4
+            ]
+          },
+          {
+            "multiplicity": 55296,
+            "size": 2,
+            "types": [
+              2,
+              2,
+              6
+            ]
+          },
+          {
+            "multiplicity": 27648,
+            "size": 3,
+            "types": [
+              2,
+              2,
+              9
+            ]
+          },
+          {
+            "multiplicity": 27648,
+            "size": 3,
+            "types": [
+              2,
+              2,
+              10
+            ]
+          },
+          {
+            "multiplicity": 294912,
+            "size": 4,
+            "types": [
+              2,
+              4,
+              4
+            ]
+          },
+          {
+            "multiplicity": 294912,
+            "size": 4,
+            "types": [
+              2,
+              4,
+              6
+            ]
+          },
+          {
+            "multiplicity": 73728,
+            "size": 4,
+            "types": [
+              2,
+              6,
+              6
+            ]
+          },
+          {
+            "multiplicity": 147456,
+            "size": 6,
+            "types": [
+              2,
+              4,
+              9
+            ]
+          },
+          {
+            "multiplicity": 147456,
+            "size": 6,
+            "types": [
+              2,
+              4,
+              10
+            ]
+          },
+          {
+            "multiplicity": 73728,
+            "size": 6,
+            "types": [
+              2,
+              6,
+              9
+            ]
+          },
+          {
+            "multiplicity": 73728,
+            "size": 6,
+            "types": [
+              2,
+              6,
+              10
+            ]
+          },
+          {
+            "multiplicity": 13824,
+            "size": 6,
+            "types": [
+              1,
+              2,
+              2
+            ]
+          },
+          {
+            "multiplicity": 393216,
+            "size": 8,
+            "types": [
+              4,
+              4,
+              6
+            ]
+          },
+          {
+            "multiplicity": 262144,
+            "size": 8,
+            "types": [
+              4,
+              4,
+              4
+            ]
+          },
+          {
+            "multiplicity": 196608,
+            "size": 8,
+            "types": [
+              4,
+              6,
+              6
+            ]
+          },
+          {
+            "multiplicity": 32768,
+            "size": 8,
+            "types": [
+              6,
+              6,
+              6
+            ]
+          },
+          {
+            "multiplicity": 36864,
+            "size": 9,
+            "types": [
+              2,
+              9,
+              10
+            ]
+          },
+          {
+            "multiplicity": 18432,
+            "size": 9,
+            "types": [
+              2,
+              9,
+              9
+            ]
+          },
+          {
+            "multiplicity": 18432,
+            "size": 9,
+            "types": [
+              2,
+              10,
+              10
+            ]
+          },
+          {
+            "multiplicity": 196608,
+            "size": 12,
+            "types": [
+              4,
+              4,
+              9
+            ]
+          },
+          {
+            "multiplicity": 196608,
+            "size": 12,
+            "types": [
+              4,
+              4,
+              10
+            ]
+          },
+          {
+            "multiplicity": 196608,
+            "size": 12,
+            "types": [
+              4,
+              6,
+              9
+            ]
+          },
+          {
+            "multiplicity": 196608,
+            "size": 12,
+            "types": [
+              4,
+              6,
+              10
+            ]
+          },
+          {
+            "multiplicity": 73728,
+            "size": 12,
+            "types": [
+              1,
+              2,
+              4
+            ]
+          },
+          {
+            "multiplicity": 49152,
+            "size": 12,
+            "types": [
+              6,
+              6,
+              9
+            ]
+          },
+          {
+            "multiplicity": 49152,
+            "size": 12,
+            "types": [
+              6,
+              6,
+              10
+            ]
+          },
+          {
+            "multiplicity": 36864,
+            "size": 12,
+            "types": [
+              1,
+              2,
+              6
+            ]
+          },
+          {
+            "multiplicity": 13824,
+            "size": 12,
+            "types": [
+              2,
+              2,
+              3
+            ]
+          },
+          {
+            "multiplicity": 13824,
+            "size": 12,
+            "types": [
+              2,
+              2,
+              5
+            ]
+          },
+          {
+            "multiplicity": 6912,
+            "size": 12,
+            "types": [
+              2,
+              2,
+              7
+            ]
+          },
+          {
+            "multiplicity": 6912,
+            "size": 12,
+            "types": [
+              2,
+              2,
+              8
+            ]
+          },
+          {
+            "multiplicity": 98304,
+            "size": 18,
+            "types": [
+              4,
+              9,
+              10
+            ]
+          },
+          {
+            "multiplicity": 49152,
+            "size": 18,
+            "types": [
+              4,
+              9,
+              9
+            ]
+          },
+          {
+            "multiplicity": 49152,
+            "size": 18,
+            "types": [
+              4,
+              10,
+              10
+            ]
+          },
+          {
+            "multiplicity": 49152,
+            "size": 18,
+            "types": [
+              6,
+              9,
+              10
+            ]
+          },
+          {
+            "multiplicity": 24576,
+            "size": 18,
+            "types": [
+              6,
+              9,
+              9
+            ]
+          },
+          {
+            "multiplicity": 24576,
+            "size": 18,
+            "types": [
+              6,
+              10,
+              10
+            ]
+          },
+          {
+            "multiplicity": 18432,
+            "size": 18,
+            "types": [
+              1,
+              2,
+              9
+            ]
+          },
+          {
+            "multiplicity": 18432,
+            "size": 18,
+            "types": [
+              1,
+              2,
+              10
+            ]
+          },
+          {
+            "multiplicity": 98304,
+            "size": 24,
+            "types": [
+              1,
+              4,
+              4
+            ]
+          },
+          {
+            "multiplicity": 98304,
+            "size": 24,
+            "types": [
+              1,
+              4,
+              6
+            ]
+          },
+          {
+            "multiplicity": 73728,
+            "size": 24,
+            "types": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "multiplicity": 73728,
+            "size": 24,
+            "types": [
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "multiplicity": 36864,
+            "size": 24,
+            "types": [
+              2,
+              3,
+              6
+            ]
+          },
+          {
+            "multiplicity": 36864,
+            "size": 24,
+            "types": [
+              2,
+              4,
+              7
+            ]
+          },
+          {
+            "multiplicity": 36864,
+            "size": 24,
+            "types": [
+              2,
+              4,
+              8
+            ]
+          },
+          {
+            "multiplicity": 36864,
+            "size": 24,
+            "types": [
+              2,
+              5,
+              6
+            ]
+          },
+          {
+            "multiplicity": 24576,
+            "size": 24,
+            "types": [
+              1,
+              6,
+              6
+            ]
+          },
+          {
+            "multiplicity": 18432,
+            "size": 24,
+            "types": [
+              2,
+              6,
+              7
+            ]
+          },
+          {
+            "multiplicity": 18432,
+            "size": 24,
+            "types": [
+              2,
+              6,
+              8
+            ]
+          },
+          {
+            "multiplicity": 12288,
+            "size": 27,
+            "types": [
+              9,
+              9,
+              10
+            ]
+          },
+          {
+            "multiplicity": 12288,
+            "size": 27,
+            "types": [
+              9,
+              10,
+              10
+            ]
+          },
+          {
+            "multiplicity": 4096,
+            "size": 27,
+            "types": [
+              9,
+              9,
+              9
+            ]
+          },
+          {
+            "multiplicity": 4096,
+            "size": 27,
+            "types": [
+              10,
+              10,
+              10
+            ]
+          },
+          {
+            "multiplicity": 1728,
+            "size": 28,
+            "types": [
+              0,
+              2,
+              2
+            ]
+          },
+          {
+            "multiplicity": 49152,
+            "size": 36,
+            "types": [
+              1,
+              4,
+              9
+            ]
+          },
+          {
+            "multiplicity": 49152,
+            "size": 36,
+            "types": [
+              1,
+              4,
+              10
+            ]
+          },
+          {
+            "multiplicity": 24576,
+            "size": 36,
+            "types": [
+              1,
+              6,
+              9
+            ]
+          },
+          {
+            "multiplicity": 24576,
+            "size": 36,
+            "types": [
+              1,
+              6,
+              10
+            ]
+          },
+          {
+            "multiplicity": 18432,
+            "size": 36,
+            "types": [
+              2,
+              3,
+              9
+            ]
+          },
+          {
+            "multiplicity": 18432,
+            "size": 36,
+            "types": [
+              2,
+              3,
+              10
+            ]
+          },
+          {
+            "multiplicity": 18432,
+            "size": 36,
+            "types": [
+              2,
+              5,
+              9
+            ]
+          },
+          {
+            "multiplicity": 18432,
+            "size": 36,
+            "types": [
+              2,
+              5,
+              10
+            ]
+          },
+          {
+            "multiplicity": 9216,
+            "size": 36,
+            "types": [
+              2,
+              7,
+              9
+            ]
+          },
+          {
+            "multiplicity": 9216,
+            "size": 36,
+            "types": [
+              2,
+              7,
+              10
+            ]
+          },
+          {
+            "multiplicity": 9216,
+            "size": 36,
+            "types": [
+              2,
+              8,
+              9
+            ]
+          },
+          {
+            "multiplicity": 9216,
+            "size": 36,
+            "types": [
+              2,
+              8,
+              10
+            ]
+          },
+          {
+            "multiplicity": 4608,
+            "size": 36,
+            "types": [
+              1,
+              1,
+              2
+            ]
+          },
+          {
+            "multiplicity": 98304,
+            "size": 48,
+            "types": [
+              3,
+              4,
+              4
+            ]
+          },
+          {
+            "multiplicity": 98304,
+            "size": 48,
+            "types": [
+              3,
+              4,
+              6
+            ]
+          },
+          {
+            "multiplicity": 98304,
+            "size": 48,
+            "types": [
+              4,
+              4,
+              5
+            ]
+          },
+          {
+            "multiplicity": 98304,
+            "size": 48,
+            "types": [
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "multiplicity": 49152,
+            "size": 48,
+            "types": [
+              4,
+              4,
+              7
+            ]
+          },
+          {
+            "multiplicity": 49152,
+            "size": 48,
+            "types": [
+              4,
+              4,
+              8
+            ]
+          },
+          {
+            "multiplicity": 49152,
+            "size": 48,
+            "types": [
+              4,
+              6,
+              7
+            ]
+          },
+          {
+            "multiplicity": 49152,
+            "size": 48,
+            "types": [
+              4,
+              6,
+              8
+            ]
+          },
+          {
+            "multiplicity": 24576,
+            "size": 48,
+            "types": [
+              3,
+              6,
+              6
+            ]
+          },
+          {
+            "multiplicity": 24576,
+            "size": 48,
+            "types": [
+              5,
+              6,
+              6
+            ]
+          },
+          {
+            "multiplicity": 12288,
+            "size": 48,
+            "types": [
+              6,
+              6,
+              7
+            ]
+          },
+          {
+            "multiplicity": 12288,
+            "size": 48,
+            "types": [
+              6,
+              6,
+              8
+            ]
+          },
+          {
+            "multiplicity": 12288,
+            "size": 54,
+            "types": [
+              1,
+              9,
+              10
+            ]
+          },
+          {
+            "multiplicity": 6144,
+            "size": 54,
+            "types": [
+              1,
+              9,
+              9
+            ]
+          },
+          {
+            "multiplicity": 6144,
+            "size": 54,
+            "types": [
+              1,
+              10,
+              10
+            ]
+          },
+          {
+            "multiplicity": 9216,
+            "size": 56,
+            "types": [
+              0,
+              2,
+              4
+            ]
+          },
+          {
+            "multiplicity": 4608,
+            "size": 56,
+            "types": [
+              0,
+              2,
+              6
+            ]
+          },
+          {
+            "multiplicity": 49152,
+            "size": 72,
+            "types": [
+              3,
+              4,
+              9
+            ]
+          },
+          {
+            "multiplicity": 49152,
+            "size": 72,
+            "types": [
+              3,
+              4,
+              10
+            ]
+          },
+          {
+            "multiplicity": 49152,
+            "size": 72,
+            "types": [
+              4,
+              5,
+              9
+            ]
+          },
+          {
+            "multiplicity": 49152,
+            "size": 72,
+            "types": [
+              4,
+              5,
+              10
+            ]
+          },
+          {
+            "multiplicity": 24576,
+            "size": 72,
+            "types": [
+              3,
+              6,
+              9
+            ]
+          },
+          {
+            "multiplicity": 24576,
+            "size": 72,
+            "types": [
+              3,
+              6,
+              10
+            ]
+          },
+          {
+            "multiplicity": 24576,
+            "size": 72,
+            "types": [
+              4,
+              7,
+              9
+            ]
+          },
+          {
+            "multiplicity": 24576,
+            "size": 72,
+            "types": [
+              4,
+              7,
+              10
+            ]
+          },
+          {
+            "multiplicity": 24576,
+            "size": 72,
+            "types": [
+              4,
+              8,
+              9
+            ]
+          },
+          {
+            "multiplicity": 24576,
+            "size": 72,
+            "types": [
+              4,
+              8,
+              10
+            ]
+          },
+          {
+            "multiplicity": 24576,
+            "size": 72,
+            "types": [
+              5,
+              6,
+              9
+            ]
+          },
+          {
+            "multiplicity": 24576,
+            "size": 72,
+            "types": [
+              5,
+              6,
+              10
+            ]
+          },
+          {
+            "multiplicity": 12288,
+            "size": 72,
+            "types": [
+              1,
+              1,
+              4
+            ]
+          },
+          {
+            "multiplicity": 12288,
+            "size": 72,
+            "types": [
+              6,
+              7,
+              9
+            ]
+          },
+          {
+            "multiplicity": 12288,
+            "size": 72,
+            "types": [
+              6,
+              7,
+              10
+            ]
+          },
+          {
+            "multiplicity": 12288,
+            "size": 72,
+            "types": [
+              6,
+              8,
+              9
+            ]
+          },
+          {
+            "multiplicity": 12288,
+            "size": 72,
+            "types": [
+              6,
+              8,
+              10
+            ]
+          },
+          {
+            "multiplicity": 9216,
+            "size": 72,
+            "types": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "multiplicity": 9216,
+            "size": 72,
+            "types": [
+              1,
+              2,
+              5
+            ]
+          },
+          {
+            "multiplicity": 6144,
+            "size": 72,
+            "types": [
+              1,
+              1,
+              6
+            ]
+          },
+          {
+            "multiplicity": 4608,
+            "size": 72,
+            "types": [
+              1,
+              2,
+              7
+            ]
+          },
+          {
+            "multiplicity": 4608,
+            "size": 72,
+            "types": [
+              1,
+              2,
+              8
+            ]
+          },
+          {
+            "multiplicity": 2304,
+            "size": 84,
+            "types": [
+              0,
+              2,
+              9
+            ]
+          },
+          {
+            "multiplicity": 2304,
+            "size": 84,
+            "types": [
+              0,
+              2,
+              10
+            ]
+          },
+          {
+            "multiplicity": 12288,
+            "size": 108,
+            "types": [
+              3,
+              9,
+              10
+            ]
+          },
+          {
+            "multiplicity": 12288,
+            "size": 108,
+            "types": [
+              5,
+              9,
+              10
+            ]
+          },
+          {
+            "multiplicity": 6144,
+            "size": 108,
+            "types": [
+              3,
+              9,
+              9
+            ]
+          },
+          {
+            "multiplicity": 6144,
+            "size": 108,
+            "types": [
+              3,
+              10,
+              10
+            ]
+          },
+          {
+            "multiplicity": 6144,
+            "size": 108,
+            "types": [
+              5,
+              9,
+              9
+            ]
+          },
+          {
+            "multiplicity": 6144,
+            "size": 108,
+            "types": [
+              5,
+              10,
+              10
+            ]
+          },
+          {
+            "multiplicity": 6144,
+            "size": 108,
+            "types": [
+              7,
+              9,
+              10
+            ]
+          },
+          {
+            "multiplicity": 6144,
+            "size": 108,
+            "types": [
+              8,
+              9,
+              10
+            ]
+          },
+          {
+            "multiplicity": 3072,
+            "size": 108,
+            "types": [
+              1,
+              1,
+              9
+            ]
+          },
+          {
+            "multiplicity": 3072,
+            "size": 108,
+            "types": [
+              1,
+              1,
+              10
+            ]
+          },
+          {
+            "multiplicity": 3072,
+            "size": 108,
+            "types": [
+              7,
+              9,
+              9
+            ]
+          },
+          {
+            "multiplicity": 3072,
+            "size": 108,
+            "types": [
+              7,
+              10,
+              10
+            ]
+          },
+          {
+            "multiplicity": 3072,
+            "size": 108,
+            "types": [
+              8,
+              9,
+              9
+            ]
+          },
+          {
+            "multiplicity": 3072,
+            "size": 108,
+            "types": [
+              8,
+              10,
+              10
+            ]
+          },
+          {
+            "multiplicity": 12288,
+            "size": 112,
+            "types": [
+              0,
+              4,
+              4
+            ]
+          },
+          {
+            "multiplicity": 12288,
+            "size": 112,
+            "types": [
+              0,
+              4,
+              6
+            ]
+          },
+          {
+            "multiplicity": 3072,
+            "size": 112,
+            "types": [
+              0,
+              6,
+              6
+            ]
+          }
+        ]
+      }
+    },
+    "dimension": 28,
+    "gate": 1008161,
+    "input_sha256": "3f01f8d5bf9ec0689cf223219a0bd035fa3e917a739bee93d747d7253215c7aa",
+    "labels": 17576,
+    "maximum_block_size": 128,
+    "monomials_v_s": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        0
+      ],
+      [
+        7,
+        0
+      ],
+      [
+        8,
+        0
+      ],
+      [
+        9,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        6,
+        1
+      ],
+      [
+        7,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        3
+      ]
+    ],
+    "rank_bound": "lower"
+  },
+  "verification": {
+    "intertwining_column_checks": 8112,
+    "type_dimensions_and_multiplicities": {
+      "column": [
+        [
+          8,
+          1
+        ],
+        [
+          1,
+          26
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          2,
+          104
+        ],
+        [
+          4,
+          16
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          2,
+          40
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          6,
+          16
+        ]
+      ],
+      "row": [
+        [
+          28,
+          1
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          1,
+          24
+        ],
+        [
+          12,
+          8
+        ],
+        [
+          2,
+          64
+        ],
+        [
+          12,
+          8
+        ],
+        [
+          2,
+          32
+        ],
+        [
+          12,
+          4
+        ],
+        [
+          12,
+          4
+        ],
+        [
+          3,
+          16
+        ],
+        [
+          3,
+          16
+        ]
+      ]
+    }
+  }
+}

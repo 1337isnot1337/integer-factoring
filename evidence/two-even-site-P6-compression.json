@@ -1,0 +1,566 @@
+{
+  "certificate_sha256": "21085d436aa35eef944014feec99ee960897b4a387a51ccffbb9b977e04064b9",
+  "certified_cost_exponent": {
+    "denominator": 25,
+    "numerator": 37
+  },
+  "character": [
+    1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "character_scalar_polynomial": "(q+r)^2 (p+r)^4",
+  "coefficient_dimension": 10,
+  "cuts": {
+    "column": {
+      "all_generator_compression_entries_checked": 225160,
+      "blocks": [
+        {
+          "all_generator_compression_entries_checked": 1000,
+          "ambient_dimension": 3840,
+          "annihilated_span_dimension": 74,
+          "compression_dimension": 10,
+          "constructed_left_covectors_sha256": "b5e4bd623dec4eae49cf6d5f350511ce5dae40a2792888a4ee741154c1d5fb0b"
+        },
+        {
+          "all_generator_compression_entries_checked": 1440,
+          "ambient_dimension": 2048,
+          "annihilated_span_dimension": 88,
+          "compression_dimension": 12,
+          "constructed_left_covectors_sha256": "49fb5580fb8ace3504ecffdbbf5a6394670bc40b54b60271c5308108013a394d"
+        },
+        {
+          "all_generator_compression_entries_checked": 16000,
+          "ambient_dimension": 2048,
+          "annihilated_span_dimension": 288,
+          "compression_dimension": 40,
+          "constructed_left_covectors_sha256": "ac25a69aa133067e6cab03c92b6dba4198fe994b75f919a0672e8c0fd7850b4e"
+        },
+        {
+          "all_generator_compression_entries_checked": 1440,
+          "ambient_dimension": 2048,
+          "annihilated_span_dimension": 88,
+          "compression_dimension": 12,
+          "constructed_left_covectors_sha256": "a82612d0ec250d97fe72aeb709f8a8f4366f2ad428a3cc3c9c331779fb298a19"
+        },
+        {
+          "all_generator_compression_entries_checked": 27040,
+          "ambient_dimension": 2048,
+          "annihilated_span_dimension": 372,
+          "compression_dimension": 52,
+          "constructed_left_covectors_sha256": "0bc5fc6f75c895475246bb25c2644ee8f5390e9a7c8c2b300838dddff2936e5c"
+        },
+        {
+          "all_generator_compression_entries_checked": 16000,
+          "ambient_dimension": 2048,
+          "annihilated_span_dimension": 287,
+          "compression_dimension": 40,
+          "constructed_left_covectors_sha256": "3c73aefa0056777da05eee3f02e4968817cb632a1692cbf66d418cce52fae286"
+        },
+        {
+          "all_generator_compression_entries_checked": 1440,
+          "ambient_dimension": 2048,
+          "annihilated_span_dimension": 88,
+          "compression_dimension": 12,
+          "constructed_left_covectors_sha256": "39c7d69b150971e23335fa8286fa18fa3074492fba853fabacff7801b95682ca"
+        },
+        {
+          "all_generator_compression_entries_checked": 2560,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 112,
+          "compression_dimension": 16,
+          "constructed_left_covectors_sha256": "e5ae571b7c4c3f49ea525d7583a4142aa431a43956a650243c5b386e4409444f"
+        },
+        {
+          "all_generator_compression_entries_checked": 16000,
+          "ambient_dimension": 2048,
+          "annihilated_span_dimension": 288,
+          "compression_dimension": 40,
+          "constructed_left_covectors_sha256": "b9880d8334aeedc769d5a8049783d3ace8680eb61d9949bd8da9dfa6974e1634"
+        },
+        {
+          "all_generator_compression_entries_checked": 27040,
+          "ambient_dimension": 2048,
+          "annihilated_span_dimension": 372,
+          "compression_dimension": 52,
+          "constructed_left_covectors_sha256": "106a58a7d21abbd7c62b5b2e09f6ba52902d98858d5d8b86e622610f64c9df20"
+        },
+        {
+          "all_generator_compression_entries_checked": 16000,
+          "ambient_dimension": 2048,
+          "annihilated_span_dimension": 287,
+          "compression_dimension": 40,
+          "constructed_left_covectors_sha256": "7992f30b222ff955d2bdd1b12009d74b920c151005f448172748733b84124832"
+        },
+        {
+          "all_generator_compression_entries_checked": 2560,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 112,
+          "compression_dimension": 16,
+          "constructed_left_covectors_sha256": "59b9368539c7da56f65462d9eff9a216dbd415d4c26170126bf814eb61ed5164"
+        },
+        {
+          "all_generator_compression_entries_checked": 1440,
+          "ambient_dimension": 2048,
+          "annihilated_span_dimension": 88,
+          "compression_dimension": 12,
+          "constructed_left_covectors_sha256": "fa4ac014d19efad304cbc02356f14a69044c12727cdd59b1114356ba17d4f04d"
+        },
+        {
+          "all_generator_compression_entries_checked": 2560,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 112,
+          "compression_dimension": 16,
+          "constructed_left_covectors_sha256": "bd96dc024406e0db946d8c5621838c7ff76d3f5d7549835bb6833556c5468911"
+        },
+        {
+          "all_generator_compression_entries_checked": 2560,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 112,
+          "compression_dimension": 16,
+          "constructed_left_covectors_sha256": "04d3d49fcacc05719a1c7019da2b3f522c4e307a2c1c71a2990d510f5b4b6736"
+        },
+        {
+          "all_generator_compression_entries_checked": 2560,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 112,
+          "compression_dimension": 16,
+          "constructed_left_covectors_sha256": "52410fd9c2195f510f4b8a0c5ad60983150a4c84b77cbd6c9844b759c863d0f9"
+        },
+        {
+          "all_generator_compression_entries_checked": 1440,
+          "ambient_dimension": 2048,
+          "annihilated_span_dimension": 88,
+          "compression_dimension": 12,
+          "constructed_left_covectors_sha256": "f96b87bd998f4130ca8511357f77bd0622697f80c74f9d017a55dd3f28c8ea39"
+        },
+        {
+          "all_generator_compression_entries_checked": 16000,
+          "ambient_dimension": 2048,
+          "annihilated_span_dimension": 288,
+          "compression_dimension": 40,
+          "constructed_left_covectors_sha256": "2bd18394824a7b40ab90ab34029975d12888c120ba971dd58d231ad65e3cddff"
+        },
+        {
+          "all_generator_compression_entries_checked": 27040,
+          "ambient_dimension": 2048,
+          "annihilated_span_dimension": 371,
+          "compression_dimension": 52,
+          "constructed_left_covectors_sha256": "dca738ec253914a060f71d8dd0db28b47efd12b4aea0b8bd8483f4288e5cf6c6"
+        },
+        {
+          "all_generator_compression_entries_checked": 2560,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 112,
+          "compression_dimension": 16,
+          "constructed_left_covectors_sha256": "3e8e4d56ca623447cd61afab4d6d081933efc1115c3ad2bcd477a809c13ae2cc"
+        },
+        {
+          "all_generator_compression_entries_checked": 16000,
+          "ambient_dimension": 2048,
+          "annihilated_span_dimension": 288,
+          "compression_dimension": 40,
+          "constructed_left_covectors_sha256": "f0c340c29194210897f0860f60a9739a4053d20d5a8b1cb215454af416c408d2"
+        },
+        {
+          "all_generator_compression_entries_checked": 2560,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 112,
+          "compression_dimension": 16,
+          "constructed_left_covectors_sha256": "f3d88592cbccf88a2f6abe9521313ae69492a7dc960e33c6ee83448889fce271"
+        },
+        {
+          "all_generator_compression_entries_checked": 2560,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 112,
+          "compression_dimension": 16,
+          "constructed_left_covectors_sha256": "56a2a064a08b135008de2e341860bf867defc0bf1f77104b8c0c42cede9cf601"
+        },
+        {
+          "all_generator_compression_entries_checked": 2560,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 112,
+          "compression_dimension": 16,
+          "constructed_left_covectors_sha256": "fd98ca7c92bb90c4f8f50e72a26ecce63188bc1099074c1067e8768129cf5ff2"
+        },
+        {
+          "all_generator_compression_entries_checked": 1440,
+          "ambient_dimension": 2048,
+          "annihilated_span_dimension": 88,
+          "compression_dimension": 12,
+          "constructed_left_covectors_sha256": "ba03c1afa825e5efdc7754ca80aad61e5543838aec219b4f998a88266ab93b52"
+        },
+        {
+          "all_generator_compression_entries_checked": 2560,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 112,
+          "compression_dimension": 16,
+          "constructed_left_covectors_sha256": "1c9fd982718b038fe3903a7f14b4b3f0423d623bfc40569acc854fde600f5012"
+        },
+        {
+          "all_generator_compression_entries_checked": 2560,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 112,
+          "compression_dimension": 16,
+          "constructed_left_covectors_sha256": "5120b755522364e9201bd3fdd7c74e42d7fde25d73719fc4eb88f904b6272c9c"
+        },
+        {
+          "all_generator_compression_entries_checked": 2560,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 112,
+          "compression_dimension": 16,
+          "constructed_left_covectors_sha256": "4031285e68b87e6fa5ad3ad3a3bf59f6d853673443dd835956d6fdf94b3ab886"
+        },
+        {
+          "all_generator_compression_entries_checked": 2560,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 112,
+          "compression_dimension": 16,
+          "constructed_left_covectors_sha256": "fb1460281db3d0893d22111c86d7cc658924f52720c18dd4af4eb45232813d7d"
+        },
+        {
+          "all_generator_compression_entries_checked": 2560,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 112,
+          "compression_dimension": 16,
+          "constructed_left_covectors_sha256": "e37ff7335a699dc834afd9d5978ee520a19047c6b38abb081d4aff89bc7f99d9"
+        },
+        {
+          "all_generator_compression_entries_checked": 2560,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 112,
+          "compression_dimension": 16,
+          "constructed_left_covectors_sha256": "aca9a371cdc754b65e87e24f3baf82754e9131c6c2955f73e634dab89a2d76ca"
+        }
+      ],
+      "compression_dimension": 718
+    },
+    "row": {
+      "all_generator_compression_entries_checked": 89439480,
+      "blocks": [
+        {
+          "all_generator_compression_entries_checked": 19071610,
+          "ambient_dimension": 3840,
+          "annihilated_span_dimension": 2373,
+          "compression_dimension": 1381,
+          "constructed_left_covectors_sha256": "e857ed0516f1c432cbb3cccb26a481c5759a9a19e8eb1556141da83a28ca1927"
+        },
+        {
+          "all_generator_compression_entries_checked": 4816360,
+          "ambient_dimension": 2048,
+          "annihilated_span_dimension": 1295,
+          "compression_dimension": 694,
+          "constructed_left_covectors_sha256": "8190a1da9918fb03ad6a72dc68ac3fb7fdda6c6a400b54ad01e81ab517399df3"
+        },
+        {
+          "all_generator_compression_entries_checked": 3364000,
+          "ambient_dimension": 2048,
+          "annihilated_span_dimension": 1296,
+          "compression_dimension": 580,
+          "constructed_left_covectors_sha256": "2b4368623b1e12148452e87bda6001d90dd02cd144e67179231a2a63f7ecb958"
+        },
+        {
+          "all_generator_compression_entries_checked": 3469210,
+          "ambient_dimension": 2048,
+          "annihilated_span_dimension": 1369,
+          "compression_dimension": 589,
+          "constructed_left_covectors_sha256": "9d5825b330364ed6e306eb2ce1564c0ccf7d6d86bd501b160961279da7244e6b"
+        },
+        {
+          "all_generator_compression_entries_checked": 2520040,
+          "ambient_dimension": 2048,
+          "annihilated_span_dimension": 1295,
+          "compression_dimension": 502,
+          "constructed_left_covectors_sha256": "eb7efb490b28b1b85c8d0f6bf27fedc42edd8b29ecdb8d5882fa168f9b037538"
+        },
+        {
+          "all_generator_compression_entries_checked": 2641960,
+          "ambient_dimension": 2048,
+          "annihilated_span_dimension": 1353,
+          "compression_dimension": 514,
+          "constructed_left_covectors_sha256": "055e1b00c024b09633c8aa15159f7b707df3dd2531fa0f23fc82d6cdb2bb1713"
+        },
+        {
+          "all_generator_compression_entries_checked": 3102490,
+          "ambient_dimension": 2048,
+          "annihilated_span_dimension": 1402,
+          "compression_dimension": 557,
+          "constructed_left_covectors_sha256": "7099ce9749d1c39af3b63012cad9cde61736bbc2e9ea8307385a4e5222abb5cf"
+        },
+        {
+          "all_generator_compression_entries_checked": 1730560,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 1026,
+          "compression_dimension": 416,
+          "constructed_left_covectors_sha256": "70b88ac28b5ca6c29a370e226672bbb90dc3cc4aa8f2100105489ea116dadf32"
+        },
+        {
+          "all_generator_compression_entries_checked": 1980250,
+          "ambient_dimension": 2048,
+          "annihilated_span_dimension": 1259,
+          "compression_dimension": 445,
+          "constructed_left_covectors_sha256": "d9f381b80356d726a64a4fc7c00b4140d0a18bdcd6e8bae37edd78b8942c0e6d"
+        },
+        {
+          "all_generator_compression_entries_checked": 2134440,
+          "ambient_dimension": 2048,
+          "annihilated_span_dimension": 1314,
+          "compression_dimension": 462,
+          "constructed_left_covectors_sha256": "80aa15d6f7eb1ac1a28395df021fa62978cb0aacf81690590b92dba65534c98e"
+        },
+        {
+          "all_generator_compression_entries_checked": 2621440,
+          "ambient_dimension": 2048,
+          "annihilated_span_dimension": 1360,
+          "compression_dimension": 512,
+          "constructed_left_covectors_sha256": "ceb1ef0d2c92320ecfd4d34f63f3c29938c306c557b3512be5fcb3f8dd58a32e"
+        },
+        {
+          "all_generator_compression_entries_checked": 1730560,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 1036,
+          "compression_dimension": 416,
+          "constructed_left_covectors_sha256": "6ed0102aa3d489ccfd13e6d630d1438414e31f5e47292af3522457daf58af73d"
+        },
+        {
+          "all_generator_compression_entries_checked": 3516490,
+          "ambient_dimension": 2048,
+          "annihilated_span_dimension": 1358,
+          "compression_dimension": 593,
+          "constructed_left_covectors_sha256": "0030a258c9b6a3619fc527d35c83e1518d90818d327c25d4f765052ff4d1e7f8"
+        },
+        {
+          "all_generator_compression_entries_checked": 1730560,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 1034,
+          "compression_dimension": 416,
+          "constructed_left_covectors_sha256": "feb57391e4eac8e9229817429ae0086478dafb882e1a6559a0317ebc771e988c"
+        },
+        {
+          "all_generator_compression_entries_checked": 1730560,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 1028,
+          "compression_dimension": 416,
+          "constructed_left_covectors_sha256": "da023f9e2bbac9d4885e088cb8f23617a3dd3586907ef4776964e165b2fa49fd"
+        },
+        {
+          "all_generator_compression_entries_checked": 1722250,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 1027,
+          "compression_dimension": 415,
+          "constructed_left_covectors_sha256": "c98a601c796c63297b8b12ed4b4076ff2aa6b9b0530ac3f86839dcb4b032cfda"
+        },
+        {
+          "all_generator_compression_entries_checked": 1722250,
+          "ambient_dimension": 2048,
+          "annihilated_span_dimension": 1206,
+          "compression_dimension": 415,
+          "constructed_left_covectors_sha256": "ff5e5c3df01ec9e95817f43b662c8bf1218a9b13a6ddf71276768b25fd72bf5b"
+        },
+        {
+          "all_generator_compression_entries_checked": 1953640,
+          "ambient_dimension": 2048,
+          "annihilated_span_dimension": 1269,
+          "compression_dimension": 442,
+          "constructed_left_covectors_sha256": "73046923b17360e7006cb2406cf87522df02d39840f9eff43ed40e1377983bd1"
+        },
+        {
+          "all_generator_compression_entries_checked": 2490010,
+          "ambient_dimension": 2048,
+          "annihilated_span_dimension": 1299,
+          "compression_dimension": 499,
+          "constructed_left_covectors_sha256": "d16ef2cb7f7e6b4d191b37986d945c1d65d9efcceb93da2b2fa537665eadcca4"
+        },
+        {
+          "all_generator_compression_entries_checked": 1730560,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 1038,
+          "compression_dimension": 416,
+          "constructed_left_covectors_sha256": "679b52c089941e4334668714373d9a7c480364b519dbd5aa0e6f04ed29c07179"
+        },
+        {
+          "all_generator_compression_entries_checked": 3340840,
+          "ambient_dimension": 2048,
+          "annihilated_span_dimension": 1296,
+          "compression_dimension": 578,
+          "constructed_left_covectors_sha256": "126de2edf61567aa85a49aa88a514635d7b00ebc76e52ed880c533af72984ba7"
+        },
+        {
+          "all_generator_compression_entries_checked": 1730560,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 1028,
+          "compression_dimension": 416,
+          "constructed_left_covectors_sha256": "fb265811c2ab110bd9edb5c4c0d0fb4ba31739af9b44cdcfac1a86f24a0c5209"
+        },
+        {
+          "all_generator_compression_entries_checked": 1730560,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 1030,
+          "compression_dimension": 416,
+          "constructed_left_covectors_sha256": "63aab7215d3eb6aaf13add41ce498d64e936b6ab73adc25f7f878fd44f051df2"
+        },
+        {
+          "all_generator_compression_entries_checked": 1713960,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 1017,
+          "compression_dimension": 414,
+          "constructed_left_covectors_sha256": "6bc5ef4e1f326a9de291a4a5530875a8c9ea8ebeb5a3114cd3cf1df0ed9a12be"
+        },
+        {
+          "all_generator_compression_entries_checked": 4802490,
+          "ambient_dimension": 2048,
+          "annihilated_span_dimension": 1290,
+          "compression_dimension": 693,
+          "constructed_left_covectors_sha256": "c5d18260718665254408786591c5b42c5b80084f9e7484e057f83447cde1bcc4"
+        },
+        {
+          "all_generator_compression_entries_checked": 1730560,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 1031,
+          "compression_dimension": 416,
+          "constructed_left_covectors_sha256": "ed8f695a82cafd70be76a1826c119554f760545b86235d7e107b202e4591a679"
+        },
+        {
+          "all_generator_compression_entries_checked": 1713960,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 1025,
+          "compression_dimension": 414,
+          "constructed_left_covectors_sha256": "56c3538149829ee280c109af53df1a2689cc7dc4c9aa0daba1e5bafe1ce74614"
+        },
+        {
+          "all_generator_compression_entries_checked": 1722250,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 1028,
+          "compression_dimension": 415,
+          "constructed_left_covectors_sha256": "1f40b104e7aafd1447918ac61581ec10274b4dc69354eaaa9e57b0691e3ed98d"
+        },
+        {
+          "all_generator_compression_entries_checked": 1722250,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 1034,
+          "compression_dimension": 415,
+          "constructed_left_covectors_sha256": "6fd2c05ac59e3301c4ce0e5347dacff25eb9e67f6974fefd5a5a9e313623db8d"
+        },
+        {
+          "all_generator_compression_entries_checked": 1730560,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 1033,
+          "compression_dimension": 416,
+          "constructed_left_covectors_sha256": "a706639861557d4917748b3680e27f1228160e65c9262235640a0851040ad97c"
+        },
+        {
+          "all_generator_compression_entries_checked": 1722250,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 1023,
+          "compression_dimension": 415,
+          "constructed_left_covectors_sha256": "e73bc93c9ab40389f240114f7807878ffd5a160bfca753631528a50bb25162e8"
+        }
+      ],
+      "compression_dimension": 15688
+    }
+  },
+  "exact_margin": {
+    "difference": 59363105981530438176017613700651288170429279409129076291481860695767220818407525722254652280052624040573644508615002112340342074385171965354821788647681778788676112633114394624,
+    "label_power": 74,
+    "rank_product_power": 25
+  },
+  "independent_coordinate_witnesses": [
+    [
+      0,
+      0,
+      0,
+      17
+    ],
+    [
+      0,
+      1,
+      1,
+      15
+    ],
+    [
+      0,
+      1,
+      257,
+      1020
+    ],
+    [
+      0,
+      1,
+      1281,
+      990
+    ],
+    [
+      0,
+      5,
+      5,
+      5
+    ],
+    [
+      0,
+      5,
+      261,
+      340
+    ],
+    [
+      0,
+      21,
+      21,
+      3
+    ],
+    [
+      0,
+      21,
+      277,
+      204
+    ],
+    [
+      0,
+      85,
+      85,
+      1
+    ],
+    [
+      0,
+      85,
+      341,
+      68
+    ]
+  ],
+  "labels": 240,
+  "literal_polynomial_controls": [
+    {
+      "complete_polynomial_entries_checked": 173,
+      "cut": 0,
+      "exceptional_union_size_counts": {
+        "2": 3,
+        "3": 40,
+        "4": 130
+      }
+    },
+    {
+      "complete_polynomial_entries_checked": 173,
+      "cut": 1,
+      "exceptional_union_size_counts": {
+        "2": 3,
+        "3": 40,
+        "4": 130
+      }
+    }
+  ],
+  "rank_product": 11263984,
+  "scope": "Every characteristic-two field, every tensor power, arbitrary coefficient-space recombinations.",
+  "source_sha256": {
+    "assemble_two_even_site_cores.py": "3b0ad33919e8d0c316203c1737d9762f1d10fb515f86a15372df375d667d4d00",
+    "check_common_character_compressions.py": "ab56e9b53ce0710c7bd6f390547e503ac47c7534fe7091e4ad1b8cd014bb2d46",
+    "check_two_even_site_compressions.py": "345170484807c348b0ef782c2bd62ac59a0a19f3ad508f49ee519e6e76b3f2fe",
+    "find_tagged_common_character_compressions.py": "3f34d60ff8f52cabdc19ebffd95fe56bda3ddc09ab60978828f3bbd17097efa8"
+  },
+  "status": "pass"
+}

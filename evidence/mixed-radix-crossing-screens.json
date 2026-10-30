@@ -1,0 +1,421 @@
+{
+  "cases": [
+    {
+      "F4_audit": {
+        "all_F4_decompositions_fail_seed_criterion": true,
+        "basis_sha256": "5683ad189ca85b70087f9a2f2a65461f141982f5f7780ea3b989e9b53394a998",
+        "coefficient_dimension": 4,
+        "cost_denominator": 1000000000000,
+        "eligible_count": 1,
+        "eligible_span_basis": {
+          "3": 64
+        },
+        "eligible_span_dimension": 1,
+        "eligible_vectors": [
+          {
+            "code": 64,
+            "column_rank": 24,
+            "event": "eligible",
+            "product": 48,
+            "row_rank": 2
+          }
+        ],
+        "endpoint_remainder": 21,
+        "field": "F2[t]/(t^2+t+1)",
+        "independently_checked_vectors": 41,
+        "integer_cost_gate": 13,
+        "labels": 6,
+        "name": "mixed_radix_S3_w1_1_seed0",
+        "projective_vectors_tested": 85,
+        "restricted_shortest_cost_lower_numerator": null,
+        "scope": "the supplied finite coefficient space over F4; other fields and label retracts are not excluded",
+        "screen_sha256": "7c07917f431817876600e7fae96a0e3911affae85f5b6f2997fc130bb8deb50d",
+        "shortest_path_states": 0,
+        "source_sha256": {
+          "check_pfaffian_span_f4.py": "506fb9c0de8f722a0fec0ba32d60e081f165a62ea1e0b6c5cfdd5a3023118182",
+          "screen_pfaffian_span_f4.cpp": "40e44b6987e5f347e35dd524f082a6b966c8171f6cbe1b4c433abab18f50912a"
+        }
+      },
+      "basis_coefficient_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "basis_dimension": 4,
+      "basis_ranks": [
+        [
+          36,
+          9
+        ],
+        [
+          13,
+          22
+        ],
+        [
+          10,
+          26
+        ],
+        [
+          2,
+          24
+        ]
+      ],
+      "binary_search": {
+        "binary_exclusion_by_integer_comparison": true,
+        "found_cost": 35.49391694444691,
+        "integer_shortest_lower": 34,
+        "rank_table_sha256": "db8a92bf34edd47f5a9cf3fb2b693f943ff8e007dec71a0320fa40bb0f2d4fc9",
+        "witness": [
+          7,
+          8
+        ]
+      },
+      "block_sizes": [
+        36
+      ],
+      "control_word_permutation": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "endpoint_coordinates": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "group": "S3",
+      "group_table_sha256": "f3cf1d0dd49bc125f2a5b872b0110aad2b4bd59c22a9b5ea23ec41c39407486d",
+      "labels": 6,
+      "name": "mixed_radix_S3_w1_1_seed0",
+      "orbit_entry_checks": 90,
+      "radices": [
+        3,
+        2
+      ],
+      "source_sha256": "5eb99ee0efa48f1feb295efc3cf3e171145635f3eef78427d7a8820994e6b37a",
+      "weights": [
+        1,
+        1
+      ]
+    },
+    {
+      "F4_audit": {
+        "all_F4_decompositions_fail_seed_criterion": true,
+        "basis_sha256": "46231b9eeaa5eaa3afbb0e83f9d443667e453432175793ba9ae408f4d6e1e172",
+        "coefficient_dimension": 5,
+        "cost_denominator": 1000000000000,
+        "eligible_count": 5,
+        "eligible_span_basis": {
+          "3": 64,
+          "4": 256
+        },
+        "eligible_span_dimension": 2,
+        "eligible_vectors": [
+          {
+            "code": 64,
+            "column_rank": 36,
+            "event": "eligible",
+            "product": 288,
+            "row_rank": 8
+          },
+          {
+            "code": 256,
+            "column_rank": 36,
+            "event": "eligible",
+            "product": 144,
+            "row_rank": 4
+          },
+          {
+            "code": 320,
+            "column_rank": 36,
+            "event": "eligible",
+            "product": 432,
+            "row_rank": 12
+          },
+          {
+            "code": 384,
+            "column_rank": 36,
+            "event": "eligible",
+            "product": 432,
+            "row_rank": 12
+          },
+          {
+            "code": 448,
+            "column_rank": 36,
+            "event": "eligible",
+            "product": 432,
+            "row_rank": 12
+          }
+        ],
+        "endpoint_remainder": 21,
+        "field": "F2[t]/(t^2+t+1)",
+        "independently_checked_vectors": 45,
+        "integer_cost_gate": 23,
+        "labels": 9,
+        "name": "mixed_radix_C3xC3_w1_1_seed0",
+        "projective_vectors_tested": 341,
+        "restricted_shortest_cost_lower_numerator": null,
+        "scope": "the supplied finite coefficient space over F4; other fields and label retracts are not excluded",
+        "screen_sha256": "93507925c978ed8ac23c7ac7b0760ba4c342a529c5165e3a4aeec973fb5738f3",
+        "shortest_path_states": 0,
+        "source_sha256": {
+          "check_pfaffian_span_f4.py": "506fb9c0de8f722a0fec0ba32d60e081f165a62ea1e0b6c5cfdd5a3023118182",
+          "screen_pfaffian_span_f4.cpp": "40e44b6987e5f347e35dd524f082a6b966c8171f6cbe1b4c433abab18f50912a"
+        }
+      },
+      "basis_coefficient_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "basis_dimension": 5,
+      "basis_ranks": [
+        [
+          81,
+          9
+        ],
+        [
+          30,
+          27
+        ],
+        [
+          34,
+          54
+        ],
+        [
+          8,
+          36
+        ],
+        [
+          4,
+          36
+        ]
+      ],
+      "binary_search": {
+        "binary_exclusion_by_integer_comparison": true,
+        "found_cost": 81.0,
+        "integer_shortest_lower": 81,
+        "rank_table_sha256": "e5c887baaa2f4ab59a7e86a8fee8176469bda8a922b1c16f1145601008e6d952",
+        "witness": [
+          31
+        ]
+      },
+      "block_sizes": [
+        81
+      ],
+      "control_word_permutation": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "endpoint_coordinates": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "group": "C3xC3",
+      "group_table_sha256": "5866c28f92e87f668ad348eb1f1c33ee41934252a4db957f364ac04703ea69a9",
+      "labels": 9,
+      "name": "mixed_radix_C3xC3_w1_1_seed0",
+      "orbit_entry_checks": 225,
+      "radices": [
+        3,
+        3
+      ],
+      "source_sha256": "5eb99ee0efa48f1feb295efc3cf3e171145635f3eef78427d7a8820994e6b37a",
+      "weights": [
+        1,
+        1
+      ]
+    },
+    {
+      "F4_audit": {
+        "all_F4_decompositions_fail_seed_criterion": true,
+        "basis_sha256": "0fb97d340091a5d396a8e50839f3c65a6c38441bc9842f32dec21c79b1e6322c",
+        "coefficient_dimension": 7,
+        "cost_denominator": 1000000000000,
+        "eligible_count": 5,
+        "eligible_span_basis": {
+          "5": 1024,
+          "6": 4096
+        },
+        "eligible_span_dimension": 2,
+        "eligible_vectors": [
+          {
+            "code": 1024,
+            "column_rank": 216,
+            "event": "eligible",
+            "product": 5184,
+            "row_rank": 24
+          },
+          {
+            "code": 4096,
+            "column_rank": 216,
+            "event": "eligible",
+            "product": 1728,
+            "row_rank": 8
+          },
+          {
+            "code": 5120,
+            "column_rank": 216,
+            "event": "eligible",
+            "product": 6912,
+            "row_rank": 32
+          },
+          {
+            "code": 6144,
+            "column_rank": 216,
+            "event": "eligible",
+            "product": 6912,
+            "row_rank": 32
+          },
+          {
+            "code": 7168,
+            "column_rank": 216,
+            "event": "eligible",
+            "product": 6912,
+            "row_rank": 32
+          }
+        ],
+        "endpoint_remainder": 341,
+        "field": "F2[t]/(t^2+t+1)",
+        "independently_checked_vectors": 45,
+        "integer_cost_gate": 106,
+        "labels": 27,
+        "name": "mixed_radix_C3xC3xC3_w1_1_1_seed0",
+        "projective_vectors_tested": 5461,
+        "restricted_shortest_cost_lower_numerator": null,
+        "scope": "the supplied finite coefficient space over F4; other fields and label retracts are not excluded",
+        "screen_sha256": "742f1877e2a764b6f9ea8b8f23ee23c943d7b9df150d407734df77b7ad07dd51",
+        "shortest_path_states": 0,
+        "source_sha256": {
+          "check_pfaffian_span_f4.py": "506fb9c0de8f722a0fec0ba32d60e081f165a62ea1e0b6c5cfdd5a3023118182",
+          "screen_pfaffian_span_f4.cpp": "40e44b6987e5f347e35dd524f082a6b966c8171f6cbe1b4c433abab18f50912a"
+        }
+      },
+      "basis_coefficient_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "basis_dimension": 7,
+      "basis_ranks": [
+        [
+          729,
+          27
+        ],
+        [
+          344,
+          108
+        ],
+        [
+          406,
+          270
+        ],
+        [
+          152,
+          432
+        ],
+        [
+          116,
+          378
+        ],
+        [
+          24,
+          216
+        ],
+        [
+          8,
+          216
+        ]
+      ],
+      "binary_search": {
+        "binary_exclusion_by_integer_comparison": true,
+        "found_cost": 713.4767152243427,
+        "integer_shortest_lower": 713,
+        "rank_table_sha256": "cb8f7e7028b2f29fd2c73221e6acd3a00277b2f44c4293737ada770928cb4e13",
+        "witness": [
+          1,
+          126
+        ]
+      },
+      "block_sizes": [
+        729
+      ],
+      "control_word_permutation": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "endpoint_coordinates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "group": "C3xC3xC3",
+      "group_table_sha256": "9424705dbf791d76adb5a8be106c633925a97d0b41e2f3ec69809ab8d874059c",
+      "labels": 27,
+      "name": "mixed_radix_C3xC3xC3_w1_1_1_seed0",
+      "orbit_entry_checks": 3375,
+      "radices": [
+        3,
+        3,
+        3
+      ],
+      "source_sha256": "5eb99ee0efa48f1feb295efc3cf3e171145635f3eef78427d7a8820994e6b37a",
+      "weights": [
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "scope": "Listed exact binary spaces and complete F4 projective screens; no improved seed"
+}

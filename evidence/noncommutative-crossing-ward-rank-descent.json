@@ -1,0 +1,132 @@
+{
+  "status": "Literal complete coefficient ranks satisfy both graded Ward descent bounds.",
+  "scope": "Finite controls for the all-size ordinary factorization; no score improvement asserted.",
+  "cases": [
+    {
+      "name": "global_P2_L2",
+      "pairs": 2,
+      "grade": 2,
+      "forms": 1,
+      "logical_labels": 1,
+      "jets_actual_row_actual_column_descent_row_descent_column": [
+        [
+          0,
+          2,
+          1,
+          1,
+          2,
+          102
+        ]
+      ]
+    },
+    {
+      "name": "global_P3_L3",
+      "pairs": 3,
+      "grade": 3,
+      "forms": 1,
+      "logical_labels": 6,
+      "jets_actual_row_actual_column_descent_row_descent_column": [
+        [
+          0,
+          1,
+          14,
+          14,
+          45,
+          312
+        ],
+        [
+          0,
+          2,
+          14,
+          14,
+          28,
+          796
+        ],
+        [
+          0,
+          3,
+          1,
+          36,
+          2,
+          1920
+        ],
+        [
+          1,
+          2,
+          32,
+          5,
+          71,
+          519
+        ],
+        [
+          2,
+          1,
+          18,
+          10,
+          190,
+          36
+        ]
+      ]
+    },
+    {
+      "name": "global_P3_L3_half",
+      "pairs": 3,
+      "grade": 3,
+      "forms": 1,
+      "logical_labels": 3,
+      "jets_actual_row_actual_column_descent_row_descent_column": [
+        [
+          0,
+          1,
+          3,
+          8,
+          45,
+          312
+        ],
+        [
+          0,
+          2,
+          3,
+          8,
+          28,
+          796
+        ],
+        [
+          1,
+          2,
+          8,
+          3,
+          71,
+          519
+        ],
+        [
+          2,
+          1,
+          4,
+          6,
+          190,
+          36
+        ]
+      ]
+    },
+    {
+      "name": "partial_two_of_three_pairs",
+      "pairs": 3,
+      "grade": 2,
+      "forms": 1,
+      "logical_labels": 1,
+      "jets_actual_row_actual_column_descent_row_descent_column": [
+        [
+          0,
+          2,
+          1,
+          1,
+          2,
+          555
+        ]
+      ]
+    }
+  ],
+  "literal_rectangle_profiles_constructed": 18,
+  "source_sha256": "059e7ea9d0735d94d36edea526a0bc17ee3f1d722022dcf673246bdb76d92665"
+}

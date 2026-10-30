@@ -1,0 +1,105 @@
+{
+  "all_eligible_rank_pairs_independently_checked_in_F4": 15,
+  "coefficient_dimension_F4": 6,
+  "crossing_remainder": 1,
+  "eligible_projective_F4_classes": 5,
+  "eligible_span_dimension_F2": 8,
+  "eligible_span_dimension_F4": 4,
+  "eligible_vectors": [
+    {
+      "F4_coefficient_code": 64,
+      "column_rank": 22,
+      "row_rank": 348
+    },
+    {
+      "F4_coefficient_code": 85,
+      "column_rank": 576,
+      "row_rank": 1
+    },
+    {
+      "F4_coefficient_code": 128,
+      "column_rank": 22,
+      "row_rank": 348
+    },
+    {
+      "F4_coefficient_code": 170,
+      "column_rank": 576,
+      "row_rank": 1
+    },
+    {
+      "F4_coefficient_code": 192,
+      "column_rank": 22,
+      "row_rank": 348
+    },
+    {
+      "F4_coefficient_code": 255,
+      "column_rank": 576,
+      "row_rank": 1
+    },
+    {
+      "F4_coefficient_code": 1028,
+      "column_rank": 26,
+      "row_rank": 250
+    },
+    {
+      "F4_coefficient_code": 1092,
+      "column_rank": 12,
+      "row_rank": 234
+    },
+    {
+      "F4_coefficient_code": 1280,
+      "column_rank": 250,
+      "row_rank": 26
+    },
+    {
+      "F4_coefficient_code": 2056,
+      "column_rank": 26,
+      "row_rank": 250
+    },
+    {
+      "F4_coefficient_code": 2184,
+      "column_rank": 12,
+      "row_rank": 234
+    },
+    {
+      "F4_coefficient_code": 2560,
+      "column_rank": 250,
+      "row_rank": 26
+    },
+    {
+      "F4_coefficient_code": 3084,
+      "column_rank": 26,
+      "row_rank": 250
+    },
+    {
+      "F4_coefficient_code": 3276,
+      "column_rank": 12,
+      "row_rank": 234
+    },
+    {
+      "F4_coefficient_code": 3840,
+      "column_rank": 250,
+      "row_rank": 26
+    }
+  ],
+  "excluded_over_F4": true,
+  "field_size": 4,
+  "integer_cost_gate_over_F4": 90,
+  "labels": 24,
+  "literal_parent_entries_checked": 172032,
+  "native_input_sha256": "1a72312643619242f15bdb101b444dc5a817a11ff5bacf76f0f59d4eb3d8eef0",
+  "native_lift_rank_multiplier": 2,
+  "native_screen_sha256": "893ade21644a59d83a108e5004f618d8940f333433c0baa4061d21ead67e360c",
+  "native_zero_padding_dimension": 1152,
+  "nonzero_vectors_tested": 4095,
+  "output_section": "(1+omega) lower + omega upper at every logical label",
+  "projective_F4_classes_represented": 1365,
+  "restriction_of_scalars_dimension_F2": 12,
+  "section_parameter": "omega, omega^2=omega+1",
+  "source_sha256": {
+    "check_uniform_f4_two_even_sections.py": "da55e8ce48896a40d66391ee99f8d86376f80471e1d6a96f09ecdd27d9adaf1c",
+    "explore_two_even_site_sections.py": "4fcad5905294b5db83653e9309381662b6f2d96592d098cd5b57d088081252ca",
+    "screen_pfaffian_span_f4.cpp": "40e44b6987e5f347e35dd524f082a6b966c8171f6cbe1b4c433abab18f50912a",
+    "screen_weighted_pfaffian_span.cpp": "ab1a12d27a3c7f5d571b7a6635a09e8bc7909d8eb04c8a627eb93c74852d326d"
+  }
+}

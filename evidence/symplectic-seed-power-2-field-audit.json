@@ -1,0 +1,130 @@
+{
+  "F2_eligible_span_dimension": 2,
+  "F2_eligible_vectors": [
+    {
+      "code": 1092,
+      "column_rank": 190966,
+      "eligible": true,
+      "event": "rank",
+      "index": 42,
+      "product": 23679784,
+      "row_rank": 124
+    },
+    {
+      "code": 4369,
+      "column_rank": 449152,
+      "eligible": true,
+      "event": "rank",
+      "index": 85,
+      "product": 56144000,
+      "row_rank": 125
+    },
+    {
+      "code": 5461,
+      "column_rank": 456976,
+      "eligible": true,
+      "event": "rank",
+      "index": 127,
+      "product": 456976,
+      "row_rank": 1
+    }
+  ],
+  "F2_endpoint_remainder": 1,
+  "F2_excluded_by_span": true,
+  "F2_screen_sha256": "f1d40b8c43ab5bf7a5bddfb1b20be78cec8192de37fb0cbe991289e2b655b6f4",
+  "F4_eligible_span_dimension": 2,
+  "F4_eligible_vectors": [
+    {
+      "code": 1092,
+      "column_rank": 190966,
+      "eligible": true,
+      "event": "eligible",
+      "index": 1092,
+      "product": 23679784,
+      "row_rank": 124
+    },
+    {
+      "code": 4369,
+      "column_rank": 449152,
+      "eligible": true,
+      "event": "eligible",
+      "index": 4369,
+      "product": 56144000,
+      "row_rank": 125
+    },
+    {
+      "code": 5461,
+      "column_rank": 456976,
+      "eligible": true,
+      "event": "eligible",
+      "index": 5461,
+      "product": 456976,
+      "row_rank": 1
+    },
+    {
+      "code": 6553,
+      "column_rank": 456976,
+      "eligible": true,
+      "event": "eligible",
+      "index": 6553,
+      "product": 57122000,
+      "row_rank": 125
+    },
+    {
+      "code": 7645,
+      "column_rank": 456976,
+      "eligible": true,
+      "event": "eligible",
+      "index": 7645,
+      "product": 57122000,
+      "row_rank": 125
+    }
+  ],
+  "F4_excluded_by_span": true,
+  "F4_projective_vectors_tested": 5461,
+  "F4_screen_sha256": "db4995db4e8919be628776d3c5fedec1c011a4e5faca235714f14d9bda55ac38",
+  "binary_comparison_sha256": "b5ce33d94789ff3e8c12dbb8670772df32e421c1e2c0a0e655ac385566e3c864",
+  "binary_independent_table_compared": true,
+  "coefficient_dimension": 7,
+  "complete_binary_rank_replay": 127,
+  "direct_sum_certificate_check": {
+    "column_relation_ranks": {
+      "A2_complement": 16,
+      "AN": 22,
+      "A_complement": 179,
+      "N": 321,
+      "e": 8,
+      "eC": 4
+    },
+    "intertwining_column_checks": 5408
+  },
+  "endpoint_remainder": 1,
+  "independently_checked_F4_vectors": 45,
+  "independently_checked_binary_vectors": 43,
+  "integer_cost_gate": 10055,
+  "labels": 676,
+  "largest_blocks": {
+    "column": 36,
+    "row": 484
+  },
+  "maximum_block_requested": 0,
+  "native_input_sha256": "7fcf7078ab178266788490b32f2cfa805ef8ce7b22f1d16e11d09dbb7c51576b",
+  "omitted_direct_summand_dimensions": {
+    "column": 0,
+    "row": 0
+  },
+  "power": 2,
+  "rank_lower_bounds_only": false,
+  "source_sha256": {
+    "check_pfaffian_span_f4.py": "506fb9c0de8f722a0fec0ba32d60e081f165a62ea1e0b6c5cfdd5a3023118182",
+    "check_symplectic_seed_tensor_fields.py": "cfede95326457bb97ecfcba86884897934802e805a2091147235349921d46a79",
+    "check_symplectic_seed_tensor_modules.py": "5fb436ebe6d74838abca8aa381652d084056489fd0b046112f04e56e3594a9b3",
+    "screen_pfaffian_span_f4.cpp": "40e44b6987e5f347e35dd524f082a6b966c8171f6cbe1b4c433abab18f50912a",
+    "screen_weighted_pfaffian_span.cpp": "ab1a12d27a3c7f5d571b7a6635a09e8bc7909d8eb04c8a627eb93c74852d326d"
+  },
+  "types_sha256": "4602c7d79df905cf7ae1f3e39ce4ffe964055e3a0dc760026b7a73050958285f",
+  "weighted_block_counts": {
+    "column": 45,
+    "row": 55
+  }
+}
