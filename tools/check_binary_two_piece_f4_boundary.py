@@ -106,8 +106,7 @@ def pair_cost_at_least(p, q, target):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--output', type=Path,
-                        default=Path('binary-two-piece-f4-boundary.json'))
+    parser.add_argument('--output', type=Path)
     args = parser.parse_args()
     started = time.monotonic()
     rng = Random(20261030)
@@ -247,7 +246,8 @@ def main():
         'scope': 'Finite exact controls. The all-field lemma and universal F4 base>=4 are proved in the companion note.',
         'seconds': time.monotonic()-started,
     }
-    args.output.write_text(json.dumps(result, indent=2)+'\n')
+    if args.output:
+        args.output.write_text(json.dumps(result, indent=2)+'\n')
     print(json.dumps(result, indent=2))
 
 

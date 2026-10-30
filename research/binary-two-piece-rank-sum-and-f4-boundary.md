@@ -232,5 +232,6 @@ transitions
 ```
 
 and terminal projections `(P,Q,P+omega Q,P+omega^2 Q)`.
-It is not covered by the one-free-function argument in Section 3.
-Equation (11) is a research interface, not an improving certificate.
+The separate [four-piece pencil proof](four-piece-f4-boundary-pencil.md)
+extends the lower-vector argument and gives exact spectral minimum four
+for this family as well.
