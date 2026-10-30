@@ -46,7 +46,7 @@ two bits `p,q`. Its local polynomial in `Z` is:
 | Edge | Local factor `e(p,q;Z)` | Low-bit factor in `z` |
 | --- | --- | --- |
 | `UA` | `Z^(p OR q)` | `z(1+z)` |
-| `UB` | `[q<=p](1+Z)^q` | `1+z` |
+| `UB` | `indicator(q<=p)(1+Z)^q` | `1+z` |
 | `UY` | `[p=q] Z^q` | `z` |
 | `AB` | `[p<=q] Z^p` | `z` |
 | `AY` | `Z^(p AND q)` | `1+z` |
