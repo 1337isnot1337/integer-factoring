@@ -27,6 +27,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Three-parameter Pfaffian crossings](pfaffian-ternary-edge-family.md): arbitrary fixed-length codes, a complete uniform edge space, exact label retracts, and binary/four-element-field seed exclusions.
 - [Exact particle-hole reduction](pfaffian-particle-hole.md): a local exterior-power identity preserving all grades and energies, refined signed-charge blocks, and complete profiles through 252 full-grade labels.
 - [Stable Pfaffian modules](stable-pfaffian-modules.md): an explicit graded 24-dimensional intertwiner, an all-size two-factor decomposition, and polynomial-size bounds for complete source coefficients and bivariate jets.
+- [Complete stable coordinate searches](stable-pfaffian-coordinate-search.md): general pencil and affine-chart evaluators, monomial ancillary shifts, exact small controls, and complete grids in the stated coordinate spaces.
 - [Pfaffian boundary sections](noncommutative-crossing-pfaffian-boundaries.md): all-size section and Gram formulas, the universal correction factor, and an all-field rank-cost certificate for four pairs.
 - [Sparse isotropic Pfaffian sections](noncommutative-crossing-pfaffian-isotropic.md): explicit endpoint cancellation at every size from six pairs, four-term lifts from seven pairs, exact active correction ranks, and a six-piece crossing curve.
 - [Optimal common Pfaffian retracts](noncommutative-crossing-optimal-retracts.md): the largest possible common label dimension for two canceled vertices, attaining triangular maps, and a sparsity tradeoff over every characteristic-two field.
@@ -53,6 +54,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Abelian midpoint blocks](noncommutative-crossing-abelian-midpoints.md): exact doubling-map column multiplicities, a real rank-floor lemma, and an all-field exclusion of every cyclic group.
 - [Involution-free orbit minors](noncommutative-crossing-involution-support.md): a diagonal-minor theorem for arbitrary group kernels, excluding odd-order groups, odd-order index-two extensions, and unique-involution groups over every field.
 - [Uniform six-pair boundary barrier](pfaffian-p6-boundary-orbit-barrier.md): the common active quotient and an invariant rank shift give an exact lower cost 834 for all cancelling sections with binary coefficients.
+- [Stable-bound computation limitation](stable-boundary-envelope.md): an all-six-ancilla rank-one block and elementary fusion paths force computed `rho >= 29/40` for every fixed dense grade ratio; this is not a lower bound on actual ranks.
 - [Directions beyond half](post-half-directions.md): experiments, scope, and unresolved questions.
 - [Quadratic charges and label entropy](binary-quadratic-charge-shells.md): exact residue-syndrome characters and dimension bounds for joint eigenspaces of all low quadratic charges.
 - [PBW degeneration of Hopf crossings](noncommutative-crossing-pbw-degeneration.md): a common four-leg specialization proves a finite rank-sum obstruction for the full PBW-domain coefficient spaces, including field extensions and filtered local gauges.

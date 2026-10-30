@@ -62,6 +62,8 @@ verify-post-half:
 	python3 tools/check_unequal_grade_gram.py
 	python3 tools/check_pfaffian_particle_hole.py
 	python3 tools/check_stable_pfaffian_bounds.py
+	python3 tools/check_stable_boundary_envelope.py --maximum-pairs 128
+	python3 tools/check_stable_pfaffian_coordinates.py
 	python3 tools/check_additional_crossing_screens.py
 
 verify-frontier:
