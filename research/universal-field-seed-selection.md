@@ -119,6 +119,17 @@ a\le B(n),\qquad M\le B(n),\qquad
 \tag{5}
 ```
 
+Apply cheap size and length filters **before** primality, irreducibility,
+inversion, tensor allocation, or rank validation. First require `p>=2` and
+`e>=1`, and reject `p>2^B` or `e>B`. Compute `p^e` with arithmetic capped
+at `2^B`, rejecting it if the cap is exceeded. Compare the claimed width
+with `B`, and every remaining dimension and coefficient-list length with
+the actual available record length, before allocating the corresponding
+objects. This prevents even an invalid short record from requesting an
+exponential field search or an allocation based on a huge header. Once
+these preliminary checks pass, validate the field and entries, discard
+zero pieces, and enforce `M<=B` on the remaining pieces.
+
 Choose minimum rational quality, with a fixed tie rule, also considering
 the fallback. Denote the chosen seed, field, and quality by `S_n,F_n,Q_n`.
 Keep this choice for every prefix query and every recursive level on this

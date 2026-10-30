@@ -34,7 +34,7 @@ No characteristic-power assumption is used.  Formula (1) can likewise be
 written over any field, replacing `1+z` with `1-z`; the computations in this
 note use characteristic two.
 
-For `J={j,j+1}`, the normalized variable has degrees divisible by `3^j`.
+For `J={j,j+1}`, the shifted curve `P_J(1+z)` has degrees divisible by `3^j`.
 After writing `q=z^{3^j}`, the two active weights become 1 and 3.  Thus the
 commutator projector in `mismatched-commutator-projector.md` applies to
 coefficients `3^j` and `3^{j+1}` of `P_J(1+z)`.  The two labels can have
@@ -42,6 +42,10 @@ different energies on these two active modes; the occupation proof permits
 that difference.  This gives a clean second exchange on modes `(3,9)`.
 
 ## 2. A complete endpoint with only polynomially many coefficients
+
+For matrix products, use rows `(alpha,y)` and columns `(beta,u)`,
+so the crossing `E` is the identity matrix. This swaps the order of the
+two displayed input legs in (1), without changing either cut rank.
 
 There are `r=floor(log_3 h)+1` modes.  Choose any permutation
 `pi=(pi_1,...,pi_(r-1))` of the adjacent edges.  Here the listed order is

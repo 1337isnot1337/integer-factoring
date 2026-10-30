@@ -17,6 +17,7 @@ verify-docs:
 verify-further:
 	python3 tools/check_vanishing_slack_transfer.py
 	python3 tools/check_optimized_divisor_bound.py
+	python3 tools/check_exact_divisor_maximum.py
 	python3 tools/check_half_second_order.py
 	python3 tools/check_gap_free_seed_transfer.py
 	python3 tools/check_seed_field_selection.py
@@ -36,6 +37,9 @@ verify-further:
 	python3 tools/check_four_piece_f4_boundary.py
 	python3 tools/check_observable_transition_realization.py
 	python3 tools/check_observable_rank_detector.py
+	python3 tools/check_local_alphabet_spectral_barriers.py
+	python3 tools/check_finite_functional_detectors.py
+	python3 tools/check_overlapping_subalphabet_detectors.py
 	python3 tools/check_mismatched_commutator.py
 	python3 tools/check_twisted_channel_walks.py
 	python3 tools/check_channel_flow_duals.py
@@ -54,6 +58,7 @@ verify-further:
 	python3 tools/check_weyl_alternate_algebra.py
 	python3 tools/check_eight_feature_monoid.py
 	python3 tools/check_trace_bilinear_kernel.py
+	python3 tools/check_two_patch_trace.py --output /tmp/integer-factoring-two-patch-trace.json
 	python3 tools/check_polynomial_shear_probe.py --output /tmp/integer-factoring-polynomial-shear-verification.json
 
 verify-energy-full:
