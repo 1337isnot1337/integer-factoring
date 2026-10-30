@@ -14,6 +14,23 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Integral Schur crossing](integral-schur-crossing.md): the complete partition construction has multiplier one over every characteristic; full homogeneous duals exist at prime-power weights.
+- [Effective integral construction](effective-integral-schur-transfer.md): division-free Schur determinants, memoized modes, and polynomial coefficient sizes give a uniform `2^O(lambda)` construction.
+- [Finite min-plus channel automata](tropical-smith-channel-words.md): normalized capped cost vectors count each channel word once, with exact rational potential certificates.
+- [Ternary nilpotent resolvents](ternary-nilpotent-resolvents.md): exact characteristic-three endpoints, a small determinant nilpotence test, and independent Toeplitz verification of native profiles.
+- [Degree-sensitive auxiliary paths](degree-sensitive-smith-paths.md): entrywise series orders constrain channel walks; rational positive potentials certify a stronger finite criterion, with exact zero tests from bordered minors.
+- [General-characteristic trace-shear parameter](trace-shear-general-characteristic.md): extends the existing Fierz common-boundary identity, checks both cut signs, and distinguishes identity normalization from preservation of the endpoint. The profiles remain noncompetitive.
+- [Fixed-precision count lifting](fixed-precision-count-lifting.md): sorted witness tuples recover prime-power count digits; local nilpotent corrections preserve every fixed field seed and Smith-profile leading exponent asymptotically.
+- [High-order characteristic selection](high-order-characteristic-selection.md): an elementary polynomial prime bound prevents cancellation of the quadratic root detector, with an explicit uniform-evaluator requirement.
+- [Exhaustive auxiliary lattice gauges](auxiliary-lattice-gauge-search.md): canonical two-dimensional lattice representatives cover every rational gauge; neighbor inequalities certify global minima at a fixed evaluation point.
+- [Unitary-orbit factor recovery](unitary-orbit-factor-recovery.md): coprime tuples and perfect-power preprocessing give polynomial-overhead recovery in every fixed positive characteristic, with unique inverse witnesses.
+- [Quadratic-congruence parity recovery](quadratic-congruence-factor-recovery.md): a scalar square root of one yields a proper gcd factor; a fused quadratic-plus-linear verifier has the source's original graph shape.
+- [Balanced physical degree gauges](balanced-physical-gauge-transfer.md): independent four-leg weights become known coefficient shifts on a balanced label set of size `q^t/poly(t)`.
+- [Local Smith-profile crossing certificate](smith-profile-crossing-transfer.md): two exact local valuation spectra certify all-length rank bounds for ordered polynomial matrix products.
+- [Independent auxiliary rational gauges](auxiliary-gauge-smith-transfer.md): different telescoping basis changes in the two cuts enlarge the Smith search with constant boundary costs.
+- [Recovery in every fixed prime characteristic](fixed-characteristic-factor-recovery.md): higher exponent digits and unique cyclic-orbit representatives give complete factorization with polynomial query overhead and linear total arithmetic length.
+- [Parity and power-divisor recovery](parity-power-divisor-recovery.md): characteristic-two counts detect exponent bits and recover a complete factorization with polynomial query overhead, without a sparse-recovery square-root floor.
+- [General weighted network compiler](weighted-network-top-compiler.md): deterministic-message networks with linear total weight and sublinear maximum gate weight compile to linear-volume top cliques; variable multiplication output ports preserve unique witnesses.
 - [Pieces-to-factoring transfer](pieces-to-factoring.md): conditional crossing-parameter transfer, with full bit-cost accounting.
 - [Scale-one modular transfer](scale-one-modular-transfer.md): fixed-field transfer and machine costs.
 - [Sparse divisor nonzeroness](sparse-divisor-nonzeroness.md): detection of divisors in weighted polynomial counts.
@@ -26,6 +43,11 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Obstructions and work beyond 1/2
 
+- [Complete weight-four Schur spans](full-schur-span-recombination.md): exact integer shortest-path bounds cover every binary linear recombination with any number of summands; both spans remain above the needed finite-seed threshold.
+- [Sum-preserving conjugation Smith floor](sum-preserving-conjugation-smith-barrier.md): arbitrary constant exchange-commuting block conjugations have certificate parameter at least `log_2(64/9)/4`, just above the half-rate threshold; actual rank sums remain outside the claim.
+- [Explicit entanglers and scalarization controls](explicit-entanglers-and-density-scalarization.md): product-ket exclusions over algebraic closures, a surviving full-rank product functional, and a complete binary product-density screen.
+- [Coherent exterior-boundary reduction](coherent-exterior-boundary-reduction.md): a common histogram projection, all-width fixed-occupation lower bounds, and a complete four-position binary coefficient-span screen.
+- [Whole-root-interval parity counterexample](root-threshold-parity-counterexample.md): an exact non-perfect-power composite defeats every whole root-threshold parity count; general interval recovery remains unrestricted.
 - [Directions beyond half](post-half-directions.md): experiments, scope, and unresolved questions.
 - [Network tradeoff](half-top-structure.md): restriction for the current local-enumeration and wire-channel constructor.
 - [Restricted-label counterexample](half-restricted-labels.md): failure of a proposed low-mode dimension reduction.

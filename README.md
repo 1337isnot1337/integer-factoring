@@ -28,6 +28,16 @@ The composition uses the existing clique evaluator from [Anthropic's Appendix B]
 | Saving exponent `1/30` for the k6 machine | **Lean-verified** | [Proof](research/verified-k6.md), [machine theorem](variants/k6/FactoringK6/Certified.lean) |
 | Sharper k6 saving `log(12/11)/log(12) > 1/29` | Ordinary proof, not Lean-verified at this rate | [Rate derivation](research/k6-sharp-rate.md) |
 | Saving exponent above `1/2` | **Not established** | [Research index](research/INDEX.md) |
+| Factoring from counts in every fixed positive characteristic | Ordinary conditional reduction; no score change | [Unitary-orbit recovery](research/unitary-orbit-factor-recovery.md) uses coprime tuples and perfect-power preprocessing, including composite characteristic |
+| Factoring from quadratic parity counts | Ordinary conditional reduction; no score change | [Square roots of one](research/quadratic-congruence-factor-recovery.md) give a scalar witness and a fused quadratic-plus-linear arithmetic network |
+| Fixed-precision modular counts | Ordinary conditional reduction and algebraic lift; no score change | [Prime-power lifting](research/fixed-precision-count-lifting.md) preserves the leading crossing exponent; [characteristic selection](research/high-order-characteristic-selection.md) avoids quadratic-count cancellation |
+| Joined multiplication networks | Ordinary compiler theorem | [Weighted network compiler](research/weighted-network-top-compiler.md) preserves linear volume and exact witness counts |
+| Local polynomial crossing certificates | Ordinary conditional transfer; no improving certificate yet | [Smith profiles](research/smith-profile-crossing-transfer.md), [degree-sensitive paths](research/degree-sensitive-smith-paths.md), [auxiliary gauges](research/auxiliary-gauge-smith-transfer.md), [exact lattice enumeration](research/auxiliary-lattice-gauge-search.md), and [balanced physical gauges](research/balanced-physical-gauge-transfer.md) give exact finite construction criteria |
+| General-characteristic matrix-valued crossings | Ordinary exact extension; no score change | [Trace-shear parameters](research/trace-shear-general-characteristic.md) extend the prior Fierz construction and account for the different cut ranks in odd characteristic |
+| Complete integral partition crossings | Ordinary proof and uniform construction; no score change | [Schur lattice](research/integral-schur-crossing.md) gives multiplier one in every characteristic; [construction audit](research/effective-integral-schur-transfer.md) charges all conversion and bit costs |
+| Complete finite Schur recombination | Exact scoped exclusion | [Weight-four spans](research/full-schur-span-recombination.md) cannot reach the needed rank cost, even with an unrestricted number of summands |
+| Explicit auxiliary entanglers | Exact algebraic certificates; no score change | [Product-vector exclusion and its limits](research/explicit-entanglers-and-density-scalarization.md), including a complete base-field density screen |
+| Exterior crossing boundaries | Ordinary reduction and scoped lower bounds | [Common projection and fixed-occupation bounds](research/coherent-exterior-boundary-reduction.md); a complete binary screen at four positions |
 
 The result table distinguishes verified machine bounds from conditional constructions and finite experiments. A merged PR or a passing finite test does not imply independent mathematical review.
 
@@ -39,10 +49,15 @@ From the repository root, run:
 make verify               # Python unit tests, exact certificates, and local link check
 make verify-frontier      # Focused research certificates
 make verify-post-half     # Larger optional rank tests
+make verify-recovery      # Fixed-characteristic recovery and multiplication ports
+make verify-constructive  # Entanglers, local Smith profiles, and auxiliary gauges
+make verify-native        # Optional complete native screens (C++17/C++20)
+make verify-polynomial-native # Independent native Smith, ternary, and Schur replays
+make verify-schur-ranks   # Larger complete-state Schur ranks (NumPy)
 make verify-docs          # Local Markdown-link check
 ```
 
-The Python checks use Python 3 and its standard library. Some optional checks use NumPy for speed.
+The default checks use Python 3 and its standard library. Some optional checks use NumPy for speed. The optional `verify-native` target requires `g++`: it includes coherent-boundary and Smith-path replays, complete product-density enumeration, ternary polynomial probes, and complete finite Schur-span optimization. The product-density screen examines all `2^30` normalized product densities for the displayed binary matrix.
 
 For the Lean builds, install the stated Lean release, Lake, Git, and the prerequisites in the corresponding scripts. The scripts fetch pinned upstream revisions.
 
@@ -68,6 +83,18 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 ## Current research frontier
 
 No uniform factoring exponent above `1/2` is proved here. One open approach seeks effective crossing pieces with total rank width `4*rho*lambda + O(log lambda)` for `rho < 1/sqrt(2)`. A suitable family could improve the evaluator bound, but finite rank improvements alone do not establish that inequality.
+
+The [unitary-orbit reduction](research/unitary-orbit-factor-recovery.md) is the shortest general recovery interface here. Pairwise coprime tuples have a free cyclic action, and their nontrivial orbit count is `k^(omega(N)-1)-1`. Taking the fixed tuple length equal to the coefficient characteristic, with exact perfect-power preprocessing, gives complete factoring with polynomial query overhead. Unique bounded inverse witnesses compile coprimality without changing the count. The earlier [prime-characteristic construction](research/fixed-characteristic-factor-recovery.md) and [parity power-divisor construction](research/parity-power-divisor-recovery.md) remain valid alternatives.
+
+In characteristic two, [quadratic recovery](research/quadratic-congruence-factor-recovery.md) needs only roots of `z^2=1 mod N` in the canonical half interval. A recovered root gives a proper gcd factor. Its fused verifier uses one source-shaped network with pointwise map `hat(z)^2+hat(N)*hat(u)` and only a prefix restriction on `z`. The [weighted compiler](research/weighted-network-top-compiler.md) preserves linear total bit volume and charges construction costs. These reductions remove separate sparse-detector overhead, but do not supply a faster evaluator or higher unconditional exponent.
+
+The [local Smith-profile criterion](research/smith-profile-crossing-transfer.md) converts two finite valuation spectra into an all-length rank bound for ordered polynomial matrix products. [Independent rational auxiliary gauges](research/auxiliary-gauge-smith-transfer.md) change only a constant boundary cost. [Balanced physical gauges](research/balanced-physical-gauge-transfer.md) add independent weights on all four external legs, paying only a polynomial loss in label-set size and explicitly correcting mean shifts. The elementary binary control recovers `rho=H_2(1/4)`; no screened certificate reaches `rho<1/sqrt(2)`. A [sum-preserving conjugation bound](research/sum-preserving-conjugation-smith-barrier.md) excludes another unweighted Smith family, without asserting a lower bound for its actual ranks.
+
+[Degree-sensitive paths](research/degree-sensitive-smith-paths.md) retain entrywise orders inside the auxiliary factors. A [finite min-plus automaton](research/tropical-smith-channel-words.md) counts each channel word once and gives exact rational potential certificates. [Ternary nilpotent resolvents](research/ternary-nilpotent-resolvents.md) provide further exact endpoints and independent local-profile controls. Their recorded certificates remain noncompetitive.
+
+The [integral Schur construction](research/integral-schur-crossing.md) retains every partition state over small fields and removes the factorial normalization. Its [uniform construction audit](research/effective-integral-schur-transfer.md) proves the required `2^O(lambda)` bit cost. Complete characteristic-two checks reach homogeneous weight eight. At weight four, [exhaustive span recombination](research/full-schur-span-recombination.md) gives minimum rank cost in `[20.491933,20.491934]` for both tested families, above the required threshold. These finite restrictions leave larger weights and polynomial amplification open.
+
+The [explicit entangler certificates](research/explicit-entanglers-and-density-scalarization.md) separate product-vector exclusion from the stronger absence of a factorizing functional. The [exterior-boundary reduction](research/coherent-exterior-boundary-reduction.md) preserves the leading exponent under a common histogram projection and proves all-width restrictions for fixed occupations. Its remaining coherent family is open. An exact [131-bit counterexample](research/root-threshold-parity-counterexample.md) also shows why testing only whole root intervals cannot replace power-divisibility queries in parity recovery.
 
 See the [research index](research/INDEX.md) for completed arguments, scoped obstructions, and older candidates. Active work can also appear in [open pull requests](https://github.com/1337isnot1337/integer-factoring/pulls); branch research is not automatically a result on `main`.
 

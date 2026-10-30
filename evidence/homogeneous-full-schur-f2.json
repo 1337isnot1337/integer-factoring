@@ -1,0 +1,357 @@
+{
+  "records": [
+    {
+      "h": 2,
+      "field": 2,
+      "dimension": 2,
+      "scale": 1,
+      "angle_indices": [
+        0,
+        4
+      ],
+      "gram_rank": 2,
+      "integrality_checks": 144,
+      "pieces": [
+        {
+          "s": -4,
+          "row": 1,
+          "column": 4
+        },
+        {
+          "s": -3,
+          "row": 0,
+          "column": 0
+        },
+        {
+          "s": -2,
+          "row": 0,
+          "column": 0
+        },
+        {
+          "s": -1,
+          "row": 0,
+          "column": 0
+        },
+        {
+          "s": 0,
+          "row": 2,
+          "column": 2
+        },
+        {
+          "s": 1,
+          "row": 0,
+          "column": 0
+        },
+        {
+          "s": 2,
+          "row": 0,
+          "column": 0
+        },
+        {
+          "s": 3,
+          "row": 0,
+          "column": 0
+        },
+        {
+          "s": 4,
+          "row": 4,
+          "column": 1
+        }
+      ],
+      "rank_sum": 6.0,
+      "rho_rank_sum": 1.292481250360578,
+      "max_rank_product": 4,
+      "seconds": 0.004503230999034713,
+      "operator_cache": "CacheInfo(hits=247, misses=197, maxsize=None, currsize=197)"
+    },
+    {
+      "h": 4,
+      "field": 2,
+      "dimension": 5,
+      "scale": 1,
+      "angle_indices": [
+        0,
+        8
+      ],
+      "gram_rank": 5,
+      "integrality_checks": 10625,
+      "pieces": [
+        {
+          "s": -8,
+          "row": 1,
+          "column": 25
+        },
+        {
+          "s": -7,
+          "row": 0,
+          "column": 0
+        },
+        {
+          "s": -6,
+          "row": 2,
+          "column": 5
+        },
+        {
+          "s": -5,
+          "row": 0,
+          "column": 0
+        },
+        {
+          "s": -4,
+          "row": 1,
+          "column": 4
+        },
+        {
+          "s": -3,
+          "row": 0,
+          "column": 0
+        },
+        {
+          "s": -2,
+          "row": 6,
+          "column": 6
+        },
+        {
+          "s": -1,
+          "row": 0,
+          "column": 0
+        },
+        {
+          "s": 0,
+          "row": 12,
+          "column": 12
+        },
+        {
+          "s": 1,
+          "row": 0,
+          "column": 0
+        },
+        {
+          "s": 2,
+          "row": 6,
+          "column": 6
+        },
+        {
+          "s": 3,
+          "row": 0,
+          "column": 0
+        },
+        {
+          "s": 4,
+          "row": 4,
+          "column": 1
+        },
+        {
+          "s": 5,
+          "row": 0,
+          "column": 0
+        },
+        {
+          "s": 6,
+          "row": 5,
+          "column": 2
+        },
+        {
+          "s": 7,
+          "row": 0,
+          "column": 0
+        },
+        {
+          "s": 8,
+          "row": 25,
+          "column": 1
+        }
+      ],
+      "rank_sum": 44.324555320336756,
+      "rho_rank_sum": 1.1779077621955454,
+      "max_rank_product": 144,
+      "seconds": 0.08892663299957348,
+      "operator_cache": "CacheInfo(hits=17277, misses=8527, maxsize=None, currsize=8527)"
+    },
+    {
+      "h": 8,
+      "field": 2,
+      "dimension": 22,
+      "scale": 1,
+      "angle_indices": [
+        0,
+        16
+      ],
+      "gram_rank": 22,
+      "integrality_checks": 7730448,
+      "pieces": [
+        {
+          "s": -16,
+          "row": 1,
+          "column": 484
+        },
+        {
+          "s": -15,
+          "row": 1,
+          "column": 20
+        },
+        {
+          "s": -14,
+          "row": 2,
+          "column": 116
+        },
+        {
+          "s": -13,
+          "row": 3,
+          "column": 54
+        },
+        {
+          "s": -12,
+          "row": 5,
+          "column": 199
+        },
+        {
+          "s": -11,
+          "row": 7,
+          "column": 66
+        },
+        {
+          "s": -10,
+          "row": 11,
+          "column": 144
+        },
+        {
+          "s": -9,
+          "row": 14,
+          "column": 63
+        },
+        {
+          "s": -8,
+          "row": 20,
+          "column": 243
+        },
+        {
+          "s": -7,
+          "row": 27,
+          "column": 59
+        },
+        {
+          "s": -6,
+          "row": 40,
+          "column": 157
+        },
+        {
+          "s": -5,
+          "row": 42,
+          "column": 78
+        },
+        {
+          "s": -4,
+          "row": 70,
+          "column": 212
+        },
+        {
+          "s": -3,
+          "row": 56,
+          "column": 78
+        },
+        {
+          "s": -2,
+          "row": 95,
+          "column": 133
+        },
+        {
+          "s": -1,
+          "row": 48,
+          "column": 55
+        },
+        {
+          "s": 0,
+          "row": 228,
+          "column": 228
+        },
+        {
+          "s": 1,
+          "row": 55,
+          "column": 48
+        },
+        {
+          "s": 2,
+          "row": 133,
+          "column": 95
+        },
+        {
+          "s": 3,
+          "row": 78,
+          "column": 56
+        },
+        {
+          "s": 4,
+          "row": 212,
+          "column": 70
+        },
+        {
+          "s": 5,
+          "row": 78,
+          "column": 42
+        },
+        {
+          "s": 6,
+          "row": 157,
+          "column": 40
+        },
+        {
+          "s": 7,
+          "row": 59,
+          "column": 27
+        },
+        {
+          "s": 8,
+          "row": 243,
+          "column": 20
+        },
+        {
+          "s": 9,
+          "row": 63,
+          "column": 14
+        },
+        {
+          "s": 10,
+          "row": 144,
+          "column": 11
+        },
+        {
+          "s": 11,
+          "row": 66,
+          "column": 7
+        },
+        {
+          "s": 12,
+          "row": 199,
+          "column": 5
+        },
+        {
+          "s": 13,
+          "row": 54,
+          "column": 3
+        },
+        {
+          "s": 14,
+          "row": 116,
+          "column": 2
+        },
+        {
+          "s": 15,
+          "row": 20,
+          "column": 1
+        },
+        {
+          "s": 16,
+          "row": 484,
+          "column": 1
+        }
+      ],
+      "rank_sum": 1777.5462624512318,
+      "rho_rank_sum": 1.21043131903675,
+      "max_rank_product": 51984,
+      "seconds": 75.72838947200034,
+      "operator_cache": "CacheInfo(hits=8502829, misses=2731867, maxsize=None, currsize=2731867)"
+    }
+  ],
+  "scope": "Exact finite full-Schur homogeneous crossings in characteristic two; no stronger asymptotic rate claimed."
+}
