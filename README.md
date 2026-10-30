@@ -310,7 +310,8 @@ constant times `n / sqrt(log n)`, including for the explicitly selected level.
 The level selection, selected `K`, network-size parameter, table width,
 entry-bit bound, and pad exponents are polynomial-time in unary when the input
 width is supplied in unary. One combined pad covers the grouping scan, table
-writer, and evaluator and has an exponent on the same scale.
+writer, group-state enumeration, and evaluator and has an exponent on the same
+scale.
 Lean also bounds the evaluator fragment's steps on the already-written input
 on that scale. The composed mathematical function returns `Nat.minFac` on all
 natural inputs. The reference challenge file contains an unrelated placeholder
