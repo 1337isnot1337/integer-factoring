@@ -174,7 +174,7 @@ for an arbitrary polynomial `z(x)`. The row diagonal characters are
 `x,x²,x³`, with multiplicities 40, 436, and 200. Hence
 \[
  \operatorname{rank}_{\rm row}T_k
- \ \ge\ [X^k](40X+436X^2+200X^3)^n,
+ \ \ge\ [X^k]\bigl(40X+436X^2+200X^3\bigr)^n,
  \tag{6}
 \]
 where the coefficient on the right is an ordinary nonnegative integer.
