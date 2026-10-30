@@ -29,6 +29,18 @@ the same half-rate bound over characteristic two, with scale one, an
 invariant quotient, and a direct ring-operation count. Its finite 17-piece
 recombination improves rank product `36` to `27` on three labels, without
 an asymptotic improvement. Inspect its exact hypotheses before extrapolating.
+
+The [folded Pfaffian formula](research/modular-pfaffian.md) evaluates all
+final characteristic-two pieces in polynomial time in their label weight.
+For uniformly computable labels at any polynomial weight in `lambda`,
+actual rank factorizations now satisfy the required `2^{O(lambda)}`
+construction cost. A proved uniform rank-width bound below the half-rate
+coefficient remains open. Nine exact high-weight label tests found no
+improvement. The [sparse-grid analysis](research/past-half-sparse-grids.md)
+also rules out improving the declared central-channel coefficient by
+arbitrarily changing regular grid densities; it makes no general rank
+or factoring lower-bound claim.
+
 Parallel
 [PR #21](https://github.com/1337isnot1337/integer-factoring/pull/21) develops
 homogeneous rational duals and further channel and schedule bounds. Inspect

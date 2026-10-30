@@ -83,10 +83,29 @@ recombined pieces reduce the maximum row-rank times column-rank from
 `36` to `27` on a three-label characteristic-two domain. This does not
 give a growing family with a better asymptotic width coefficient.
 
+The [polynomial Pfaffian formula](research/modular-pfaffian.md) computes
+all final characteristic-two pieces for four labels of weight `h` in
+`O(h^4)` bit operations. It folds the dual polynomial directly into six
+explicit matrix blocks and avoids intermediate partition enumeration.
+For uniformly computable labels at any polynomial weight in `lambda`,
+the full matrices and their actual rank factorizations are consequently
+computable in `2^{O(lambda)}` time. This opens larger label families
+without an extra construction-cost assumption. A uniform rank-width
+bound remains necessary. The formula agrees with 45,122 entries from
+the original operator construction; nine tested high-weight families
+do not give a better asymptotic coefficient.
+
+A separate [sparse-grid proof](research/past-half-sparse-grids.md) shows
+that arbitrarily changing the density of regular grid supports does not
+improve the square-root logarithm coefficient under the existing declared
+channel recurrence. Its scope is that recurrence, not a lower bound on
+factoring or on the actual ranks of the pieces.
+
 These are complete ordinary construction and transfer arguments, with
 finite exact checks. An exponent above `1/2` still requires a faster
 modular family or evaluator. Run `make verify` for the default checks
-and `make verify-modular` for the larger recorded modular-rank suite.
+and `make verify-modular` for the larger recorded modular and Pfaffian
+suites. No new Lean proof is included.
 
 ## Lean theorem: exponent 1/30
 

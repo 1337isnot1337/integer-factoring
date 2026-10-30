@@ -287,15 +287,18 @@ every `lambda>=1`. Assume:
 2. It has at most `(2lambda)^c` pieces, two explicitly computable
    factorizations, and widths whose sum is at most
    `4rho lambda+c log2(2lambda)`.
-3. The widths, piece count, and multiplier are computable in polynomial
-   time in `lambda`; every factor or piece entry is computable in
-   `2^(c lambda)` prime-field operations and polynomially bounded
-   index arithmetic.
+3. The widths, piece count, multiplier, and every factor or piece entry
+   are uniformly computable in `2^(c lambda)` prime-field operations
+   and control bit operations, with polynomially bounded output index
+   lengths. The count and widths have their stated polynomial size bounds.
 
 These are the algebraic and effective parts of Appendix A's Definition 7.
 They do not require integer coefficient-height bounds because coefficient
 arithmetic is counted separately. Widths above `2lambda` can be replaced
 by the trivial full-input factorization exactly as in that definition.
+Unlike the stronger particular Lean program interface, the paper's
+Definition 7(c) permits the same exponential computation bound for the
+count and widths. This ordinary transfer uses that paper interface.
 
 **Ring-arithmetic transfer.** For any commutative `F_p`-algebra `R`,
 there is one deterministic algorithm evaluating an `R`-valued
@@ -357,7 +360,10 @@ The grouping search, local enumeration, and factor computations add at
 most `3N/K` to the exponential part. All remaining powers of `Xi`
 are absorbed by `Xi^(C_0 g^4)` with the same constant-choice argument
 as the source, since `(c+5)K^2<=g^4/2`. This is (8) at level `l+1`.
-All constructions are uniform, completing the induction.
+The term `(2|I|+2)2^(c lambda)` in the source's equation (44) also pays
+for computing the piece count, multiplier, and the two widths of every
+piece. Allowing those computations to take `2^(c lambda)` therefore
+does not change the induction. All constructions are uniform.
 
 For `R=F_p[Z]/(Z^q-1)`, store an element as `q` coefficients. Addition
 costs `O(q)` and schoolbook cyclic multiplication costs `O(q^2)` for
