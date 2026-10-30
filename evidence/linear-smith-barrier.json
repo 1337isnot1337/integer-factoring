@@ -1,0 +1,344 @@
+{
+  "binary_sharp_B": "256/27",
+  "catalogue": {
+    "minimizers": [
+      4680,
+      13050,
+      24396,
+      33825,
+      36015,
+      62769
+    ],
+    "pencils": 65536,
+    "profiles": [
+      {
+        "count": 7072,
+        "profile": "0000:0000",
+        "witness": 1632
+      },
+      {
+        "count": 5520,
+        "profile": "0000:0001",
+        "witness": 280
+      },
+      {
+        "count": 3024,
+        "profile": "0000:0002",
+        "witness": 299
+      },
+      {
+        "count": 1224,
+        "profile": "0000:0003",
+        "witness": 301
+      },
+      {
+        "count": 1152,
+        "profile": "0000:0004",
+        "witness": 296
+      },
+      {
+        "count": 832,
+        "profile": "0000:0011",
+        "witness": 21
+      },
+      {
+        "count": 360,
+        "profile": "0000:0012",
+        "witness": 293
+      },
+      {
+        "count": 720,
+        "profile": "0000:0013",
+        "witness": 6
+      },
+      {
+        "count": 174,
+        "profile": "0000:0022",
+        "witness": 40
+      },
+      {
+        "count": 81,
+        "profile": "0000:0112",
+        "witness": 2
+      },
+      {
+        "count": 1,
+        "profile": "0000:1111",
+        "witness": 0
+      },
+      {
+        "count": 5520,
+        "profile": "0001:0000",
+        "witness": 1633
+      },
+      {
+        "count": 7296,
+        "profile": "0001:0001",
+        "witness": 281
+      },
+      {
+        "count": 1224,
+        "profile": "0001:0002",
+        "witness": 4734
+      },
+      {
+        "count": 2808,
+        "profile": "0001:0003",
+        "witness": 297
+      },
+      {
+        "count": 720,
+        "profile": "0001:0004",
+        "witness": 300
+      },
+      {
+        "count": 432,
+        "profile": "0001:0011",
+        "witness": 4702
+      },
+      {
+        "count": 1764,
+        "profile": "0001:0012",
+        "witness": 7
+      },
+      {
+        "count": 288,
+        "profile": "0001:0013",
+        "witness": 292
+      },
+      {
+        "count": 108,
+        "profile": "0001:0111",
+        "witness": 1
+      },
+      {
+        "count": 3024,
+        "profile": "0002:0000",
+        "witness": 1654
+      },
+      {
+        "count": 1224,
+        "profile": "0002:0001",
+        "witness": 282
+      },
+      {
+        "count": 3888,
+        "profile": "0002:0002",
+        "witness": 298
+      },
+      {
+        "count": 684,
+        "profile": "0002:0003",
+        "witness": 4717
+      },
+      {
+        "count": 960,
+        "profile": "0002:0011",
+        "witness": 20
+      },
+      {
+        "count": 288,
+        "profile": "0002:0012",
+        "witness": 4699
+      },
+      {
+        "count": 12,
+        "profile": "0002:0111",
+        "witness": 4959
+      },
+      {
+        "count": 1224,
+        "profile": "0003:0000",
+        "witness": 1653
+      },
+      {
+        "count": 2808,
+        "profile": "0003:0001",
+        "witness": 317
+      },
+      {
+        "count": 684,
+        "profile": "0003:0002",
+        "witness": 303
+      },
+      {
+        "count": 324,
+        "profile": "0003:0011",
+        "witness": 295
+      },
+      {
+        "count": 1152,
+        "profile": "0004:0000",
+        "witness": 5162
+      },
+      {
+        "count": 720,
+        "profile": "0004:0001",
+        "witness": 4718
+      },
+      {
+        "count": 576,
+        "profile": "0004:0004",
+        "witness": 4716
+      },
+      {
+        "count": 36,
+        "profile": "0004:0013",
+        "witness": 4958
+      },
+      {
+        "count": 18,
+        "profile": "0004:0022",
+        "witness": 4730
+      },
+      {
+        "count": 18,
+        "profile": "0004:0112",
+        "witness": 4698
+      },
+      {
+        "count": 832,
+        "profile": "0011:0000",
+        "witness": 1937
+      },
+      {
+        "count": 432,
+        "profile": "0011:0001",
+        "witness": 377
+      },
+      {
+        "count": 960,
+        "profile": "0011:0002",
+        "witness": 369
+      },
+      {
+        "count": 324,
+        "profile": "0011:0003",
+        "witness": 4798
+      },
+      {
+        "count": 704,
+        "profile": "0011:0011",
+        "witness": 65
+      },
+      {
+        "count": 108,
+        "profile": "0011:0012",
+        "witness": 4681
+      },
+      {
+        "count": 360,
+        "profile": "0012:0000",
+        "witness": 1940
+      },
+      {
+        "count": 1764,
+        "profile": "0012:0001",
+        "witness": 322
+      },
+      {
+        "count": 288,
+        "profile": "0012:0002",
+        "witness": 378
+      },
+      {
+        "count": 108,
+        "profile": "0012:0011",
+        "witness": 506
+      },
+      {
+        "count": 720,
+        "profile": "0013:0000",
+        "witness": 5166
+      },
+      {
+        "count": 288,
+        "profile": "0013:0001",
+        "witness": 4686
+      },
+      {
+        "count": 36,
+        "profile": "0013:0004",
+        "witness": 6611
+      },
+      {
+        "count": 216,
+        "profile": "0013:0013",
+        "witness": 4682
+      },
+      {
+        "count": 174,
+        "profile": "0022:0000",
+        "witness": 5160
+      },
+      {
+        "count": 18,
+        "profile": "0022:0004",
+        "witness": 4856
+      },
+      {
+        "count": 18,
+        "profile": "0022:0022",
+        "witness": 4712
+      },
+      {
+        "count": 108,
+        "profile": "0111:0001",
+        "witness": 577
+      },
+      {
+        "count": 12,
+        "profile": "0111:0002",
+        "witness": 7121
+      },
+      {
+        "count": 81,
+        "profile": "0112:0000",
+        "witness": 7128
+      },
+      {
+        "count": 18,
+        "profile": "0112:0004",
+        "witness": 4824
+      },
+      {
+        "count": 6,
+        "profile": "0112:0112",
+        "witness": 4680
+      },
+      {
+        "count": 1,
+        "profile": "1111:0000",
+        "witness": 33345
+      }
+    ]
+  },
+  "checker_sha256": "2be1db3435b1e0284c1f59dd0536be2ce5bcba8d83c69bd5f10fb6bb95bc1563",
+  "degree_one_all_alphabet_lower_B": "q^3",
+  "enumerator_sha256": "50adf19f95ed405626acde21fc7c03c66de00950670ba46de09d9bf362389d56",
+  "independent_toeplitz_profile_checks": 1082,
+  "integral_budget_checks": 5120,
+  "odd_characteristic_scalar_sharp_B": "12",
+  "rank_lemma_controls": [
+    {
+      "matrix_pairs": 256,
+      "prime": 2,
+      "rank_counts": {
+        "1": 6,
+        "3": 138,
+        "4": 112
+      }
+    },
+    {
+      "matrix_pairs": 6561,
+      "prime": 3,
+      "rank_counts": {
+        "1": 48,
+        "3": 3120,
+        "4": 3393
+      }
+    }
+  ],
+  "scope": "Bare degree-one Smith certificates; no factoring lower bound or improved exponent.",
+  "status": "pass"
+}

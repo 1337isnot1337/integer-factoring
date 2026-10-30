@@ -49,9 +49,10 @@ make verify-cancellation-modules # Exact module states and word-rate certificate
 make verify-cancellation-crossing # Strict certificate gain for a complete crossing
 make verify-block-smith # Exact profiles for ordered crossing blocks
 make verify-cubic-full-images # Full cubic coefficient spaces and reduced ranks
+make verify-linear-smith # All binary scalar pencils and the uniform linear barrier
 ```
 
-The Python checks use Python 3 and its standard library. Some optional checks use NumPy for speed.
+The Python checks use Python 3 and its standard library. Some optional checks use NumPy for speed. The optional linear Smith catalogue also requires a C++17 compiler.
 
 For the Lean builds, install the stated Lean release, Lake, Git, and the prerequisites in the corresponding scripts. The scripts fetch pinned upstream revisions.
 
@@ -98,6 +99,12 @@ The checked controls do not yet meet the strict improvement threshold.
 submultiplicative hierarchy. A three-position ordered-pairing block improves
 its normalized certificate from `16` to about `15.7138`; this remains weaker
 than the elementary scalar control and does not change the factoring bound.
+
+The [degree-one Smith obstruction](research/linear-smith-barrier.md) proves
+`B >= q^3` for every alphabet, field, and auxiliary dimension in the bare
+linear certificate. The sharp binary bound is `256/27`; the scalar bound
+in odd characteristic is `12`. All 65,536 binary scalar pencils are catalogued.
+Higher degree, blocks, and cancellation refinements remain separate routes.
 
 The [varying-image cubic construction](research/cubic-full-image-span.md)
 has an exact 786-dimensional rank-one-map coefficient space, with column ranks
