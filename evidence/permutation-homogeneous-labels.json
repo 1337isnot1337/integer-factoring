@@ -1,0 +1,46 @@
+{
+  "balanced_content_parity_checks": 248,
+  "balanced_hook_shapes": 499,
+  "direct_disjointness_gram_checks": 46232,
+  "group_matching_count_constraints": 3411,
+  "independent_homogeneous_lift_checks": 52,
+  "integer_central_characters": 506,
+  "multigraded_monomials_checked": 6511,
+  "negative_controls": {
+    "a10_staircase_central_eigenvalue": -176,
+    "a8_square_coefficient_at_7_cycle": 1
+  },
+  "scope": "large effective homogeneous label space; no improved joint-width bound",
+  "small_gram_ranks": [
+    {
+      "a": 2,
+      "dimension": 2,
+      "odd_central_multiplicity": 2,
+      "rank": 2
+    },
+    {
+      "a": 3,
+      "dimension": 6,
+      "odd_central_multiplicity": 4,
+      "rank": 4
+    },
+    {
+      "a": 4,
+      "dimension": 24,
+      "odd_central_multiplicity": 24,
+      "rank": 24
+    },
+    {
+      "a": 5,
+      "dimension": 120,
+      "odd_central_multiplicity": 32,
+      "rank": 32
+    },
+    {
+      "a": 6,
+      "dimension": 720,
+      "odd_central_multiplicity": 720,
+      "rank": 720
+    }
+  ]
+}

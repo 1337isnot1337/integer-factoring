@@ -17,6 +17,11 @@ verify-post-half:
 	python3 tools/check_half_restricted_labels.py
 
 verify-frontier:
+	python3 tools/check_permutation_homogeneous_labels.py
+	python3 tools/check_intersection_matching_lift.py
+	python3 tools/check_reflected_support_reduction.py
+	python3 tools/check_paired_mode_johnson.py
+	python3 tools/check_sos_partial_transpose.py
 	python3 tools/check_finite_seed_amplification.py
 	python3 tools/check_fixed_defect_invariants.py
 	python3 tools/check_balanced_three_label_barrier.py

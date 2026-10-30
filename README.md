@@ -227,6 +227,22 @@ finite profiles show that the attractive three-label ranks do not persist
 in the next tested matching spaces; an improved asymptotic rank bound
 remains open.
 
+A [permutation-label theorem](research/permutation-homogeneous-labels.md)
+constructs homogeneous unit duals for factorial-size spaces, despite
+singularities of their full Gram matrices. A separate
+[intersection-kernel construction](research/intersection-matching-crossing.md)
+gives every perfect matching a single monomial dual. It includes a scalar
+deformation and an explicit reduction to partial-matching coefficients.
+These families meet the relaxed piece-count and construction-cost interface;
+their joint rank bounds still need improvement.
+
+Further exact analyses cover
+[far-reflected mode supports](research/reflected-support-reduction.md),
+[paired modes and Johnson-scheme blocks](research/paired-mode-johnson.md),
+and [sum-of-squares partial transposes](research/sos-partial-transpose-profile.md).
+They identify specific rank obstructions and provide complete finite profiles.
+No better factoring exponent follows from the tested families.
+
 A [partial-matching minor formula](research/partial-matching-minors.md)
 computes the disjointness determinants by paths and cycles in linear graph
 work. Its exact checks cover 257,664 exhaustive pairs. This accelerates

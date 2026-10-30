@@ -1,0 +1,127 @@
+{
+  "status": "passed",
+  "scope": "Exact paired-degeneration cases and finite determinant-orbit profiles; the all-size statements have separate proofs.",
+  "paired_identity_and_rank_cases": 36,
+  "orbit_factorization_entries": 1623600,
+  "crossing_sum_entries": 209712,
+  "transpose_entries": 824880,
+  "literal_rank_checks": 30,
+  "integer_rank_envelope_cases": 6240,
+  "negative_control": "Characteristic-two zero matrix satisfies the paired identity but violates the rank conclusion.",
+  "finite_profiles": [
+    {
+      "prime": 3,
+      "physical_positions": 1,
+      "row_ranks": [
+        4
+      ],
+      "maximum_rank_product": 16
+    },
+    {
+      "prime": 3,
+      "physical_positions": 2,
+      "row_ranks": [
+        4,
+        16
+      ],
+      "maximum_rank_product": 64
+    },
+    {
+      "prime": 3,
+      "physical_positions": 3,
+      "row_ranks": [
+        4,
+        28,
+        64
+      ],
+      "maximum_rank_product": 784
+    },
+    {
+      "prime": 3,
+      "physical_positions": 4,
+      "row_ranks": [
+        4,
+        36,
+        144,
+        256
+      ],
+      "maximum_rank_product": 5184
+    },
+    {
+      "prime": 5,
+      "physical_positions": 1,
+      "row_ranks": [
+        4
+      ],
+      "maximum_rank_product": 16
+    },
+    {
+      "prime": 5,
+      "physical_positions": 2,
+      "row_ranks": [
+        4,
+        16
+      ],
+      "maximum_rank_product": 64
+    },
+    {
+      "prime": 5,
+      "physical_positions": 3,
+      "row_ranks": [
+        4,
+        28,
+        64
+      ],
+      "maximum_rank_product": 784
+    },
+    {
+      "prime": 5,
+      "physical_positions": 4,
+      "row_ranks": [
+        4,
+        40,
+        148,
+        256
+      ],
+      "maximum_rank_product": 5920
+    },
+    {
+      "prime": 7,
+      "physical_positions": 1,
+      "row_ranks": [
+        4
+      ],
+      "maximum_rank_product": 16
+    },
+    {
+      "prime": 7,
+      "physical_positions": 2,
+      "row_ranks": [
+        4,
+        16
+      ],
+      "maximum_rank_product": 64
+    },
+    {
+      "prime": 7,
+      "physical_positions": 3,
+      "row_ranks": [
+        4,
+        28,
+        64
+      ],
+      "maximum_rank_product": 784
+    },
+    {
+      "prime": 7,
+      "physical_positions": 4,
+      "row_ranks": [
+        4,
+        40,
+        148,
+        256
+      ],
+      "maximum_rank_product": 5920
+    }
+  ]
+}
