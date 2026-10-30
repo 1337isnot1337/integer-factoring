@@ -29,7 +29,11 @@ The [characteristic-two pairing-type barrier](pairing-word-barrier.md)
 closes the full universal three-pairing type span for all seed dimensions
 at least five, including collective recombinations. It uses explicit local
 nilpotent blocks and covers extension fields. Its bound leaves dimensions
-2, 3, and 4 open.
+2, 3, and 4 open. The [compatible-block strengthening](pairing-small-seeds.md)
+closes those three remaining dimensions, so the complete pairing-type route
+is now excluded for every fixed seed. It also permits `o(t)` separate
+position classes. New local tensors or a proved domain restriction are
+needed to escape this particular obstruction.
 
 ## Reliable finite checkpoints
 

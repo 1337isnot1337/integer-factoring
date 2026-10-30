@@ -134,9 +134,16 @@ binary restrictions. Replay `python3 tools/check_word_symmetry_barrier.py`.
 A [characteristic-two pairing-type barrier](research/pairing-word-barrier.md)
 separately excludes the half threshold for the full tensor-power type span
 of the universal three-pairing seed at every seed dimension at least five.
-It includes arbitrary collective recombinations and extension fields; seed
-sizes 2, 3, and 4 remain open under that bound. Replay
+It includes arbitrary collective recombinations and extension fields. A
+[compatible-block strengthening](research/pairing-small-seeds.md) closes
+seeds 2, 3, and 4 as well, forcing respective leading contractions at least
+`0.75`, `0.788662...`, and `0.725919...`. Thus every fixed seed in this full
+pairing-type construction is excluded, also with `o(t)` position classes;
+this is not a factoring lower bound. Replay
 `python3 tools/check_pairing_word_barrier.py`.
+The small-seed proof, exact block sums, direct Kronecker rank oracles, and
+finite complete-type-span optima are checked by
+`python3 tools/check_pairing_small_seeds.py`.
 
 A [complete-piece recombination search](research/modular-recombination.md)
 reduces the maximum rank product from 27 to 4 on the three-label modular
