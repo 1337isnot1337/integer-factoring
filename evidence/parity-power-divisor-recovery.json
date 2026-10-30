@@ -1,0 +1,50 @@
+{
+  "arithmetic": {
+    "integers": 8191,
+    "interval_route_inputs": 3953,
+    "maximum_complete_factorization_queries": 60,
+    "power_divisor_cases": 24303,
+    "power_route_inputs": 3210,
+    "prime_declarations": 1028,
+    "squarefree_cases": 4981
+  },
+  "chain_budgets": {
+    "bit_lengths": 1032,
+    "chain_cases": 8428
+  },
+  "checker_sha256": "4a4b06244f3298673f4f50fa3788d5cbf0ac881c4495f6b2f7ff4ca40a44136a",
+  "negative_controls": {
+    "missing_output_link": {
+      "N": 6,
+      "cofactor": 2,
+      "d": 2,
+      "final_first_operand": 3,
+      "square_output": 4
+    },
+    "missing_square_copy_input": 6,
+    "missing_square_copy_witnesses": 5,
+    "parity_search_is_not_minimum": {
+      "returned": 5,
+      "set": [
+        2,
+        3,
+        5
+      ]
+    },
+    "unremoved_one_false_positive": 11
+  },
+  "ports": {
+    "arithmetic_chain_cases": 238,
+    "product_cases": 330,
+    "unequal_digit_layouts": 110,
+    "wired_bits": 9405
+  },
+  "prefixes": {
+    "blocks": 5121,
+    "endpoints": 1024,
+    "nonminimum_witness": 5,
+    "witness_queries": 3
+  },
+  "scope": "Finite exact recovery and port checks; no asymptotic evaluator is executed.",
+  "status": "PASS"
+}
