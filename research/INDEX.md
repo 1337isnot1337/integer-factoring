@@ -18,6 +18,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Schur hook residues and central ranks](schur-hook-residue-central.md): all-weight hook identities give rank at most `p(2h)-3`, attained at weights 8 and 16 by complete exact computations.
 - [Schur digit reduction and a fixed Gaussian seed](schur-gaussian-digit-reduction.md): exact local maps, retained energy projections, explicit finite coefficients, and a four-label occupation-sector crossing.
 - [Sparse singleton holonomy](sparse-holonomy-singleton-profile.md): a complete all-size Smith profile for zero-and-singleton indices, with a Gaussian encoding for general down-sets.
+- [Sparse down-set Schur crossings](schur-downset-crossing.md): an exact polynomial kernel, energy-slice endpoint proof, reciprocal identities, and rigorous aggregate profile limits.
+- [Offset interval reduction](schur-offset-interval-reduction.md): two independent interval scales reduce to a four-label Gaussian kernel with explicit finite coefficient pieces and polynomial overhead.
 - [Exact type-optimized pressure](type-optimized-crossing-pressure.md): arbitrary rational letter frequencies reduce to one rational certificate inequality; a Gaussian physical gauge gives `rho < 61/80`, still above the post-half target.
 - [Cancellation module automata](cancellation-module-smith-automata.md): finite-state certificates that retain auxiliary-product cancellation, a monotone precision hierarchy, and a complete certificate limit for free-boundary word rates.
 - [Minimal representations and boundary completeness](minimal-boundary-module-completeness.md): exact reachable and observable reduction makes the finite module hierarchy complete for fixed-boundary grouped-word rates.

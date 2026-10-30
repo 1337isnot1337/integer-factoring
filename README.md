@@ -47,6 +47,7 @@ make verify-docs          # Local Markdown-link check
 make verify-schur-fermion # Complete Schur entry formulas and exact comparisons
 make verify-schur-central # Hook-residue identities and full Schur ranks through weight 8
 make verify-schur-gaussian # Exact digit reduction and fixed Gaussian crossing seed
+make verify-schur-sparse # Sparse down-sets and two-scale offset interval reductions
 make verify-cancellation-modules # Exact module states and word-rate certificates
 make verify-minimal-modules # Exact boundary reduction and complete word-rate hierarchy
 make verify-cancellation-crossing # Strict certificate gain for a complete crossing
@@ -105,6 +106,11 @@ A [sparse-index calculation](research/sparse-holonomy-singleton-profile.md)
 gives every Smith order for the zero-and-singleton index set and an exact
 Gaussian encoding for all Boolean down-sets. It supplies formulas for
 larger constructions; it does not assert a better factoring exponent.
+[Boolean down-sets](research/schur-downset-crossing.md) give complete
+Schur crossings with matrix-valued holonomy and controlled profile limits.
+[Offset intervals](research/schur-offset-interval-reduction.md) reduce to
+an explicit two-scale four-label kernel, with polynomial projection and
+coefficient costs when the ambient offset grows polynomially.
 
 [Exact type optimization](research/type-optimized-crossing-pressure.md)
 reduces the best common letter frequencies to one rational pressure inequality.
