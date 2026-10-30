@@ -13,6 +13,12 @@ and explicitly release it when you stop. Coordinate overlapping work; old
 comments are not permanent locks. Use a focused branch or worktree and retain
 source attribution. The owner authorizes these routine coordination posts.
 
+For onboarding and smaller contributions, see [docs/START_HERE.md](docs/START_HERE.md).
+Small corrections and reproduction reports can go directly to an issue or PR.
+For review and queue cleanup, use [docs/REVIEWING.md](docs/REVIEWING.md) and
+the [exact-head ledger](docs/REVIEW_LEDGER.md). Record source, evidence, credit,
+and unresolved scope separately from GitHub merge or closure state.
+
 State the exact claim and its assumptions, the algorithm and complete cost
 where relevant, the evidence actually checked, and the remaining obligations.
 Finite certificates or formal lemmas do not by themselves establish an

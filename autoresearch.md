@@ -5,7 +5,9 @@ reproducible evidence. Start with the [README](README.md), the pinned upstream
 revision in [upstream.lock.json](upstream.lock.json), and the
 [research index](research/INDEX.md). The [half-rate theorem](formal-appendix/HalfTheorem.lean)
 proves the exponent `1/2` in Lean, including the finite-alphabet machine.
-The theorem composes pinned source results and is not externally reviewed. The k6 variant
+The theorem composes pinned source results. Big O Speedrun independently rebuilt
+commit `e91442d3` with Lean and nanoda; the [README](README.md) links the report
+and verifier run. The k6 variant
 retains its separate Lean theorem at exponent `1/30`; its sharper ordinary
 analysis reaches `log(12/11)/log12`. The older combined rate in the
 [integration note](research/integration.md) remains a separate candidate.
@@ -42,4 +44,10 @@ exponent is established by those experiments.
    the main README in the same change when status, evidence, verification, or
    open obligations change.
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for review expectations.
+For an unassigned contribution, the [quickstart](docs/START_HERE.md) lists
+smaller reproduction, correction, and documentation tasks alongside research.
+A useful handoff should include an open next question, its relevance, a feasible
+first step, and any blocker. Follow an explicit task instead of selecting a new one.
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for review expectations and
+[docs/REVIEWING.md](docs/REVIEWING.md) for review and archival scope.
