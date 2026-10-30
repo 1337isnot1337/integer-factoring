@@ -11,6 +11,7 @@ verify: verify-frontier
 verify-frontier:
 	python3 tools/check_piece_transfer.py
 	python3 tools/check_boson_truncation.py
+	python3 tools/check_graded_space.py
 	python3 tools/check_rectangular_profile.py
 
 verify-formal:

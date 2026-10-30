@@ -1,0 +1,108 @@
+{
+  "claims_new_factoring_exponent": false,
+  "dimension_growth_cases": [
+    {
+      "gamma": "1/4",
+      "left_integer": "4",
+      "passes_necessary_condition_only": false,
+      "right_integer": "16",
+      "window": 4
+    },
+    {
+      "gamma": "1/3",
+      "left_integer": "4",
+      "passes_necessary_condition_only": false,
+      "right_integer": "8",
+      "window": 4
+    },
+    {
+      "gamma": "2/5",
+      "left_integer": "16",
+      "passes_necessary_condition_only": false,
+      "right_integer": "32",
+      "window": 4
+    },
+    {
+      "gamma": "3/7",
+      "left_integer": "64",
+      "passes_necessary_condition_only": false,
+      "right_integer": "128",
+      "window": 4
+    },
+    {
+      "gamma": "49/100",
+      "left_integer": "316912650057057350374175801344",
+      "passes_necessary_condition_only": false,
+      "right_integer": "1267650600228229401496703205376",
+      "window": 4
+    },
+    {
+      "gamma": "1/2",
+      "left_integer": "4",
+      "passes_necessary_condition_only": true,
+      "right_integer": "4",
+      "window": 4
+    },
+    {
+      "gamma": "3/5",
+      "left_integer": "64",
+      "passes_necessary_condition_only": true,
+      "right_integer": "32",
+      "window": 4
+    },
+    {
+      "gamma": "1/3",
+      "left_integer": "8",
+      "passes_necessary_condition_only": true,
+      "right_integer": "8",
+      "window": 8
+    },
+    {
+      "gamma": "1/4",
+      "left_integer": "8",
+      "passes_necessary_condition_only": false,
+      "right_integer": "16",
+      "window": 8
+    },
+    {
+      "gamma": "1/3",
+      "left_integer": "9",
+      "passes_necessary_condition_only": true,
+      "right_integer": "8",
+      "window": 9
+    }
+  ],
+  "finite_polynomial_piece_budgets": [
+    {
+      "budget_rejected": true,
+      "channel_exponent": 487,
+      "lambda": 256,
+      "pieces": 263169,
+      "required_rank_exponent": 512
+    },
+    {
+      "budget_rejected": true,
+      "channel_exponent": 973,
+      "lambda": 512,
+      "pieces": 1050625,
+      "required_rank_exponent": 1024
+    },
+    {
+      "budget_rejected": true,
+      "channel_exponent": 1946,
+      "lambda": 1024,
+      "pieces": 4198401,
+      "required_rank_exponent": 2048
+    },
+    {
+      "budget_rejected": true,
+      "channel_exponent": 7783,
+      "lambda": 4096,
+      "pieces": 67125249,
+      "required_rank_exponent": 8192
+    }
+  ],
+  "nonzero_scaled_crossing_rank_cases": 27,
+  "scope": "finite rank and integer checks; the asymptotic restriction has a written proof",
+  "zero_scale_negative_control_cases": 9
+}

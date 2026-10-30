@@ -55,6 +55,12 @@ mode weights. Deleting higher modes breaks their identities, as exact
 negative controls demonstrate. The existing coefficient recurrence also
 has exactly the stated square-root decay.
 
+The [graded-space rank theorem](research/graded-space-barrier.md) gives a
+broader restriction. A polynomial number of crossing pieces cannot use
+slower-growing spaces within the same energy range, even with new operators.
+The proof uses the full rank of the crossing matrix. It identifies which
+assumptions a replacement construction must change.
+
 The [rectangular-grid analysis](research/rectangular-grid-frontier.md)
 proves a sharp minimax identity for the limiting declared width profile.
 It explains why unequal splits do not improve the exponent in that model.
