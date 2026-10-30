@@ -1,0 +1,114 @@
+{
+  "schur_span_records": [
+    {
+      "basis_original_shift_masks": [
+        1,
+        4,
+        20,
+        64,
+        257,
+        1088,
+        4353,
+        65537
+      ],
+      "best_two_piece_cost": 20.491933384829668,
+      "best_two_piece_split": 1,
+      "combinations": 256,
+      "dijkstra_popped": 230,
+      "half_threshold_approximation": 9.738517742335421,
+      "input_name": "homogeneous-h4-pieces.json",
+      "input_sha256": "9ac909479d12b52d987bd1ac01b57855b38931a6fb3b0746ff6ccd898477702d",
+      "integer_scale": 1000000,
+      "lower_bound_exceeds_q_to_three_halves": true,
+      "minimum_cost_lower_integer": 20491933,
+      "pieces": [
+        {
+          "column_rank": 10,
+          "mask": 198,
+          "original_shift_mask": 69904,
+          "row_rank": 24
+        },
+        {
+          "column_rank": 25,
+          "mask": 1,
+          "original_shift_mask": 1,
+          "row_rank": 1
+        }
+      ],
+      "q": 5,
+      "selected_cost": 20.491933384829668,
+      "selected_cost_upper_integer": 20491934,
+      "span_dimension": 8,
+      "status": "pass",
+      "target": 199,
+      "weight": 4
+    },
+    {
+      "basis_original_shift_masks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        48,
+        80,
+        240,
+        280,
+        544,
+        1088,
+        3544,
+        4368,
+        69352
+      ],
+      "best_two_piece_cost": 20.491933384829668,
+      "best_two_piece_split": 4097,
+      "combinations": 16384,
+      "dijkstra_popped": 11191,
+      "half_threshold_approximation": 9.738517742335421,
+      "input_name": "full-h4-pieces.json",
+      "input_sha256": "f341f989f74504c1e12896eb7cad476fc11a2733cf95d6bc51b9e19be00ec2bf",
+      "integer_scale": 1000000,
+      "lower_bound_exceeds_q_to_three_halves": true,
+      "minimum_cost_lower_integer": 20491933,
+      "pieces": [
+        {
+          "column_rank": 24,
+          "mask": 4097,
+          "original_shift_mask": 4369,
+          "row_rank": 10
+        },
+        {
+          "column_rank": 1,
+          "mask": 11016,
+          "original_shift_mask": 65536,
+          "row_rank": 25
+        }
+      ],
+      "q": 5,
+      "selected_cost": 20.491933384829668,
+      "selected_cost_upper_integer": 20491934,
+      "span_dimension": 14,
+      "status": "pass",
+      "target": 15113,
+      "weight": 4
+    }
+  ],
+  "scope": "Exact finite native replay and independent rational or dense-matrix controls; no improved exponent.",
+  "smith_crosscheck": {
+    "additional_bordered_minor_checks": 21600,
+    "native_edge_orders_compared": 2304,
+    "native_factors_compared": 144,
+    "native_model_gauge_instances": 18
+  },
+  "source_sha256": {
+    "schur_span_recombination.cpp": "4db962c52202cf42fbc4d7d253bb564dd9c07b3f4afce31a05db0f3ef7848f84",
+    "smith_mpo_search.cpp": "2b01f8ea13ca6e14f94379604b3a7736cc61b96b182ff9840098b84b18b44437",
+    "smith_walk_probe.cpp": "a3084f590a567860607fad4ec56cf165d55a98df140a58c99d21207f29ad9934",
+    "smith_walk_search.cpp": "69dc89d988adcf7b82d08298a24b425b2555a27f71e8a9320f45de765efb2e30",
+    "ternary_resolvent_probe.cpp": "e7279c57c681969d4eecdc537b82e3ab29cadbe598789b9fe4b025b56c8bac8c"
+  },
+  "status": "passed",
+  "ternary_records_match": true,
+  "ternary_toeplitz_checks": 50,
+  "wrapper_sha256": "2f35503231a9254ac36e65a71274b510281e1d10e6cdec5168c37719563246e4"
+}

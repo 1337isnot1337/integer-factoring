@@ -1,4 +1,4 @@
-.PHONY: verify verify-docs verify-frontier verify-parity verify-recovery verify-constructive verify-native verify-exterior verify-entangler-density verify-post-half verify-formal verify-k6 verify-half-appendix help
+.PHONY: verify verify-docs verify-frontier verify-parity verify-recovery verify-constructive verify-native verify-polynomial-native verify-schur-ranks verify-exterior verify-entangler-density verify-post-half verify-formal verify-k6 verify-half-appendix help
 
 verify: verify-docs verify-frontier verify-recovery verify-constructive
 	python3 -m unittest discover -s tests -v
@@ -31,13 +31,24 @@ verify-constructive:
 	python3 tools/check_explicit_entanglers.py --control evidence/binary-entangler-extension-control.json
 	python3 tools/check_smith_profile_transfer.py
 	python3 tools/check_degree_sensitive_smith_paths.py
+	python3 tools/check_tropical_smith_channel_words.py
+	python3 tools/check_integral_schur_modes.py
+	python3 tools/check_schur_construction.py
+	python3 tools/check_ternary_resolvent_probe.py
 	python3 tools/check_trace_shear_general.py
 	python3 tools/check_auxiliary_gauge_smith.py
 	python3 tools/check_auxiliary_lattice_gauges.py
 	python3 tools/check_balanced_physical_gauge.py
 	python3 tools/check_sum_preserving_smith_barrier.py
 
-verify-native: verify-exterior verify-entangler-density
+verify-native: verify-exterior verify-entangler-density verify-polynomial-native
+
+verify-polynomial-native:
+	python3 tools/check_native_polynomial_certificates.py
+
+verify-schur-ranks:
+	python3 tools/full_schur_crossing.py --weights 1 2 3 4 5 --prime 2 --output /tmp/full-schur-f2.json
+	python3 tools/homogeneous_full_schur.py --weights 2 4 8 --output /tmp/homogeneous-full-schur-f2.json
 
 verify-exterior:
 	python3 tools/check_coherent_exterior_boundaries.py
@@ -80,6 +91,8 @@ help:
 	  'make verify-recovery      - factor recovery in every fixed prime characteristic' \
 	  'make verify-constructive  - exact entangler, Smith-profile, and gauge certificates' \
 	  'make verify-native        - optional coherent-boundary and complete density screens (C++)' \
+	  'make verify-polynomial-native - compile and independently replay Smith, ternary, and Schur screens' \
+	  'make verify-schur-ranks   - larger integral Schur rank checks (NumPy)' \
 	  'make verify-post-half     - larger optional matrix-rank checks' \
 	  'make verify-docs          - check local Markdown file links' \
 	  'make verify-formal        - rebuild original Lean lemmas (Lean 4.35.0)' \

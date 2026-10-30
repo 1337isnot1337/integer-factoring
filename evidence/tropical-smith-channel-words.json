@@ -1,0 +1,1004 @@
+{
+  "cases": [
+    {
+      "automata_constructed": 32,
+      "auxiliary_dimension": 1,
+      "best_sampled_certificate": {
+        "B_det": "256/27",
+        "infinity": {
+          "beta": "16/3",
+          "boundary_constant": "16/3",
+          "cap": 0,
+          "local": {
+            "cut": 0,
+            "deltas": [
+              [
+                [
+                  0
+                ]
+              ],
+              [
+                [
+                  0
+                ]
+              ],
+              [
+                [
+                  0
+                ]
+              ],
+              [
+                [
+                  0
+                ]
+              ]
+            ],
+            "exponents": [
+              1,
+              0,
+              0,
+              -1
+            ],
+            "heights": [
+              0
+            ],
+            "infinity": true,
+            "precision": 5,
+            "side": 0
+          },
+          "potential": [
+            "1"
+          ],
+          "starts": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0
+            ]
+          ],
+          "states": [
+            [
+              0
+            ]
+          ],
+          "terminal_costs": [
+            0
+          ],
+          "transitions": [
+            [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                2,
+                0,
+                0
+              ],
+              [
+                3,
+                0,
+                0
+              ]
+            ]
+          ]
+        },
+        "s": "3",
+        "zero": {
+          "beta": "16/9",
+          "boundary_constant": "16/9",
+          "cap": 0,
+          "local": {
+            "cut": 1,
+            "deltas": [
+              [
+                [
+                  0
+                ]
+              ],
+              [
+                [
+                  0
+                ]
+              ],
+              [
+                [
+                  0
+                ]
+              ],
+              [
+                [
+                  0
+                ]
+              ]
+            ],
+            "exponents": [
+              0,
+              -1,
+              -1,
+              -2
+            ],
+            "heights": [
+              0
+            ],
+            "infinity": false,
+            "precision": 5,
+            "side": 0
+          },
+          "potential": [
+            "1"
+          ],
+          "starts": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0
+            ]
+          ],
+          "states": [
+            [
+              0
+            ]
+          ],
+          "terminal_costs": [
+            0
+          ],
+          "transitions": [
+            [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                2,
+                0,
+                0
+              ],
+              [
+                3,
+                0,
+                0
+              ]
+            ]
+          ]
+        }
+      },
+      "coefficient_rank_checks": 1152,
+      "degree": 1,
+      "literal_field_word_checks": 2688,
+      "maximum_reachable_states": 1,
+      "name": "scalar elementary",
+      "rational_word_and_potential_checks": 3456
+    },
+    {
+      "automata_constructed": 64,
+      "auxiliary_dimension": 2,
+      "best_sampled_certificate": {
+        "B_det": "256/27",
+        "infinity": {
+          "beta": "16/3",
+          "boundary_constant": "16/3",
+          "cap": 0,
+          "local": {
+            "cut": 0,
+            "deltas": [
+              [
+                [
+                  0,
+                  null
+                ],
+                [
+                  null,
+                  0
+                ]
+              ],
+              [
+                [
+                  0,
+                  null
+                ],
+                [
+                  null,
+                  0
+                ]
+              ],
+              [
+                [
+                  0,
+                  null
+                ],
+                [
+                  null,
+                  0
+                ]
+              ],
+              [
+                [
+                  0,
+                  null
+                ],
+                [
+                  null,
+                  0
+                ]
+              ]
+            ],
+            "exponents": [
+              1,
+              0,
+              0,
+              -1
+            ],
+            "heights": [
+              0,
+              0
+            ],
+            "infinity": true,
+            "precision": 5,
+            "side": 0
+          },
+          "potential": [
+            "1"
+          ],
+          "starts": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0
+            ]
+          ],
+          "states": [
+            [
+              0,
+              0
+            ]
+          ],
+          "terminal_costs": [
+            0
+          ],
+          "transitions": [
+            [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                2,
+                0,
+                0
+              ],
+              [
+                3,
+                0,
+                0
+              ]
+            ]
+          ]
+        },
+        "s": "3",
+        "zero": {
+          "beta": "16/9",
+          "boundary_constant": "16/9",
+          "cap": 0,
+          "local": {
+            "cut": 1,
+            "deltas": [
+              [
+                [
+                  0,
+                  null
+                ],
+                [
+                  null,
+                  0
+                ]
+              ],
+              [
+                [
+                  0,
+                  null
+                ],
+                [
+                  null,
+                  0
+                ]
+              ],
+              [
+                [
+                  0,
+                  null
+                ],
+                [
+                  null,
+                  0
+                ]
+              ],
+              [
+                [
+                  0,
+                  null
+                ],
+                [
+                  null,
+                  0
+                ]
+              ]
+            ],
+            "exponents": [
+              0,
+              -1,
+              -1,
+              -2
+            ],
+            "heights": [
+              0,
+              0
+            ],
+            "infinity": false,
+            "precision": 5,
+            "side": 0
+          },
+          "potential": [
+            "1"
+          ],
+          "starts": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0
+            ]
+          ],
+          "states": [
+            [
+              0,
+              0
+            ]
+          ],
+          "terminal_costs": [
+            0
+          ],
+          "transitions": [
+            [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                2,
+                0,
+                0
+              ],
+              [
+                3,
+                0,
+                0
+              ]
+            ]
+          ]
+        }
+      },
+      "coefficient_rank_checks": 2304,
+      "degree": 1,
+      "literal_field_word_checks": 5376,
+      "maximum_reachable_states": 1,
+      "name": "auxiliary elementary",
+      "rational_word_and_potential_checks": 6912
+    },
+    {
+      "automata_constructed": 64,
+      "auxiliary_dimension": 2,
+      "best_sampled_certificate": {
+        "B_det": "16",
+        "infinity": {
+          "beta": "4",
+          "boundary_constant": "4",
+          "cap": 0,
+          "local": {
+            "cut": 0,
+            "deltas": [
+              [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ]
+            ],
+            "exponents": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "heights": [
+              0,
+              0
+            ],
+            "infinity": true,
+            "precision": 9,
+            "side": 0
+          },
+          "potential": [
+            "1"
+          ],
+          "starts": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0
+            ]
+          ],
+          "states": [
+            [
+              0,
+              0
+            ]
+          ],
+          "terminal_costs": [
+            0
+          ],
+          "transitions": [
+            [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                2,
+                0,
+                0
+              ],
+              [
+                3,
+                0,
+                0
+              ]
+            ]
+          ]
+        },
+        "s": "1",
+        "zero": {
+          "beta": "4",
+          "boundary_constant": "4",
+          "cap": 0,
+          "local": {
+            "cut": 1,
+            "deltas": [
+              [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              [
+                [
+                  2,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              [
+                [
+                  2,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ]
+            ],
+            "exponents": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "heights": [
+              0,
+              0
+            ],
+            "infinity": false,
+            "precision": 9,
+            "side": 0
+          },
+          "potential": [
+            "1"
+          ],
+          "starts": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0
+            ]
+          ],
+          "states": [
+            [
+              0,
+              0
+            ]
+          ],
+          "terminal_costs": [
+            0
+          ],
+          "transitions": [
+            [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                2,
+                0,
+                0
+              ],
+              [
+                3,
+                0,
+                0
+              ]
+            ]
+          ]
+        }
+      },
+      "coefficient_rank_checks": 3840,
+      "degree": 2,
+      "literal_field_word_checks": 5376,
+      "maximum_reachable_states": 8,
+      "name": "ordered pairing",
+      "rational_word_and_potential_checks": 11520
+    },
+    {
+      "automata_constructed": 64,
+      "auxiliary_dimension": 2,
+      "best_sampled_certificate": {
+        "B_det": "16",
+        "infinity": {
+          "beta": "4",
+          "boundary_constant": "4",
+          "cap": 0,
+          "local": {
+            "cut": 0,
+            "deltas": [
+              [
+                [
+                  0,
+                  null
+                ],
+                [
+                  0,
+                  2
+                ]
+              ],
+              [
+                [
+                  2,
+                  0
+                ],
+                [
+                  2,
+                  0
+                ]
+              ],
+              [
+                [
+                  0,
+                  null
+                ],
+                [
+                  null,
+                  0
+                ]
+              ],
+              [
+                [
+                  0,
+                  null
+                ],
+                [
+                  null,
+                  0
+                ]
+              ]
+            ],
+            "exponents": [
+              3,
+              2,
+              0,
+              -1
+            ],
+            "heights": [
+              0,
+              0
+            ],
+            "infinity": true,
+            "precision": 13,
+            "side": 0
+          },
+          "potential": [
+            "1"
+          ],
+          "starts": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0
+            ]
+          ],
+          "states": [
+            [
+              0,
+              0
+            ]
+          ],
+          "terminal_costs": [
+            0
+          ],
+          "transitions": [
+            [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                2,
+                0,
+                0
+              ],
+              [
+                3,
+                0,
+                0
+              ]
+            ]
+          ]
+        },
+        "s": "1",
+        "zero": {
+          "beta": "4",
+          "boundary_constant": "4",
+          "cap": 0,
+          "local": {
+            "cut": 1,
+            "deltas": [
+              [
+                [
+                  0,
+                  1
+                ],
+                [
+                  null,
+                  0
+                ]
+              ],
+              [
+                [
+                  2,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              [
+                [
+                  0,
+                  null
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              [
+                [
+                  0,
+                  null
+                ],
+                [
+                  1,
+                  0
+                ]
+              ]
+            ],
+            "exponents": [
+              0,
+              -1,
+              -1,
+              -1
+            ],
+            "heights": [
+              0,
+              0
+            ],
+            "infinity": false,
+            "precision": 13,
+            "side": 0
+          },
+          "potential": [
+            "1"
+          ],
+          "starts": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0
+            ]
+          ],
+          "states": [
+            [
+              0,
+              0
+            ]
+          ],
+          "terminal_costs": [
+            0
+          ],
+          "transitions": [
+            [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                2,
+                0,
+                0
+              ],
+              [
+                3,
+                0,
+                0
+              ]
+            ]
+          ]
+        }
+      },
+      "coefficient_rank_checks": 5376,
+      "degree": 3,
+      "literal_field_word_checks": 5376,
+      "maximum_reachable_states": 7,
+      "name": "mixed nilpotent loop",
+      "rational_word_and_potential_checks": 16128
+    }
+  ],
+  "checker_sha256": "ff6f9674ac60fd88a04990744b9bde4a3f4f8e50d52e67db1f5f17dc684ade96",
+  "field": 2,
+  "maximum_word": 3,
+  "path_checker_sha256": "2ee866cdc4ad6b1ad7bd1cb60e9548faaf06535419833623362a21f994ed59c4",
+  "scope": "Exact deterministic automaton, finite coefficient-rank and rational-potential checks; no improving seed.",
+  "status": "pass",
+  "synthetic_checks_and_controls": {
+    "common_increment_control": 3,
+    "literal_synthetic_word_checks": 1080,
+    "strict_path_multiplicity_control": {
+      "path_count": 32,
+      "word_count": 1
+    },
+    "synthetic_weighted_identities": 144,
+    "terminal_offset_control": 2,
+    "uncapped_infinite_edges_can_give_unbounded_normalized_differences": [
+      0,
+      20
+    ]
+  }
+}

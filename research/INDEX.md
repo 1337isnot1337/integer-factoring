@@ -14,6 +14,10 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Integral Schur crossing](integral-schur-crossing.md): the complete partition construction has multiplier one over every characteristic; full homogeneous duals exist at prime-power weights.
+- [Effective integral construction](effective-integral-schur-transfer.md): division-free Schur determinants, memoized modes, and polynomial coefficient sizes give a uniform `2^O(lambda)` construction.
+- [Finite min-plus channel automata](tropical-smith-channel-words.md): normalized capped cost vectors count each channel word once, with exact rational potential certificates.
+- [Ternary nilpotent resolvents](ternary-nilpotent-resolvents.md): exact characteristic-three endpoints, a small determinant nilpotence test, and independent Toeplitz verification of native profiles.
 - [Degree-sensitive auxiliary paths](degree-sensitive-smith-paths.md): entrywise series orders constrain channel walks; rational positive potentials certify a stronger finite criterion, with exact zero tests from bordered minors.
 - [General-characteristic trace-shear parameter](trace-shear-general-characteristic.md): extends the existing Fierz common-boundary identity, checks both cut signs, and distinguishes identity normalization from preservation of the endpoint. The profiles remain noncompetitive.
 - [Fixed-precision count lifting](fixed-precision-count-lifting.md): sorted witness tuples recover prime-power count digits; local nilpotent corrections preserve every fixed field seed and Smith-profile leading exponent asymptotically.
@@ -39,6 +43,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Obstructions and work beyond 1/2
 
+- [Complete weight-four Schur spans](full-schur-span-recombination.md): exact integer shortest-path bounds cover every binary linear recombination with any number of summands; both spans remain above the needed finite-seed threshold.
 - [Sum-preserving conjugation Smith floor](sum-preserving-conjugation-smith-barrier.md): arbitrary constant exchange-commuting block conjugations have certificate parameter at least `log_2(64/9)/4`, just above the half-rate threshold; actual rank sums remain outside the claim.
 - [Explicit entanglers and scalarization controls](explicit-entanglers-and-density-scalarization.md): product-ket exclusions over algebraic closures, a surviving full-rank product functional, and a complete binary product-density screen.
 - [Coherent exterior-boundary reduction](coherent-exterior-boundary-reduction.md): a common histogram projection, all-width fixed-occupation lower bounds, and a complete four-position binary coefficient-span screen.

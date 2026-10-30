@@ -1,0 +1,405 @@
+{
+  "records": [
+    {
+      "h": 1,
+      "prime": 2,
+      "dimension": 1,
+      "common_scale": 1,
+      "internal_cancellation_modulus": 2,
+      "integral_divisibility_checks": 5,
+      "pieces": [
+        {
+          "s": -2,
+          "row": 1,
+          "column": 1
+        },
+        {
+          "s": -1,
+          "row": 0,
+          "column": 0
+        },
+        {
+          "s": 0,
+          "row": 1,
+          "column": 1
+        },
+        {
+          "s": 1,
+          "row": 0,
+          "column": 0
+        },
+        {
+          "s": 2,
+          "row": 1,
+          "column": 1
+        }
+      ],
+      "rank_sum": 3.0,
+      "rho_rank_sum": null,
+      "strict_rho_7_10_certificate": false,
+      "seconds": 0.006095933000324294,
+      "operator_cache": "CacheInfo(hits=39, misses=57, maxsize=None, currsize=57)"
+    },
+    {
+      "h": 2,
+      "prime": 2,
+      "dimension": 2,
+      "common_scale": 1,
+      "internal_cancellation_modulus": 16,
+      "integral_divisibility_checks": 144,
+      "pieces": [
+        {
+          "s": -4,
+          "row": 1,
+          "column": 4
+        },
+        {
+          "s": -3,
+          "row": 1,
+          "column": 2
+        },
+        {
+          "s": -2,
+          "row": 1,
+          "column": 2
+        },
+        {
+          "s": -1,
+          "row": 1,
+          "column": 2
+        },
+        {
+          "s": 0,
+          "row": 2,
+          "column": 1
+        },
+        {
+          "s": 1,
+          "row": 2,
+          "column": 1
+        },
+        {
+          "s": 2,
+          "row": 2,
+          "column": 1
+        },
+        {
+          "s": 3,
+          "row": 2,
+          "column": 1
+        },
+        {
+          "s": 4,
+          "row": 4,
+          "column": 1
+        }
+      ],
+      "rank_sum": 13.899494936611665,
+      "rho_rank_sum": 1.898480277922246,
+      "strict_rho_7_10_certificate": false,
+      "seconds": 0.015014848999271635,
+      "operator_cache": "CacheInfo(hits=2697, misses=1340, maxsize=None, currsize=1340)"
+    },
+    {
+      "h": 3,
+      "prime": 2,
+      "dimension": 3,
+      "common_scale": 1,
+      "internal_cancellation_modulus": 16,
+      "integral_divisibility_checks": 1053,
+      "pieces": [
+        {
+          "s": -6,
+          "row": 1,
+          "column": 6
+        },
+        {
+          "s": -5,
+          "row": 0,
+          "column": 0
+        },
+        {
+          "s": -4,
+          "row": 4,
+          "column": 9
+        },
+        {
+          "s": -3,
+          "row": 2,
+          "column": 2
+        },
+        {
+          "s": -2,
+          "row": 4,
+          "column": 6
+        },
+        {
+          "s": -1,
+          "row": 1,
+          "column": 1
+        },
+        {
+          "s": 0,
+          "row": 5,
+          "column": 6
+        },
+        {
+          "s": 1,
+          "row": 2,
+          "column": 2
+        },
+        {
+          "s": 2,
+          "row": 6,
+          "column": 4
+        },
+        {
+          "s": 3,
+          "row": 1,
+          "column": 1
+        },
+        {
+          "s": 4,
+          "row": 8,
+          "column": 3
+        },
+        {
+          "s": 5,
+          "row": 0,
+          "column": 0
+        },
+        {
+          "s": 6,
+          "row": 4,
+          "column": 1
+        }
+      ],
+      "rank_sum": 36.623653774533906,
+      "rho_rank_sum": 1.6387466018688102,
+      "strict_rho_7_10_certificate": false,
+      "seconds": 0.15742488100113405,
+      "operator_cache": "CacheInfo(hits=43489, misses=14756, maxsize=None, currsize=14756)"
+    },
+    {
+      "h": 4,
+      "prime": 2,
+      "dimension": 5,
+      "common_scale": 1,
+      "internal_cancellation_modulus": 1024,
+      "integral_divisibility_checks": 10625,
+      "pieces": [
+        {
+          "s": -8,
+          "row": 1,
+          "column": 25
+        },
+        {
+          "s": -7,
+          "row": 1,
+          "column": 10
+        },
+        {
+          "s": -6,
+          "row": 4,
+          "column": 14
+        },
+        {
+          "s": -5,
+          "row": 2,
+          "column": 10
+        },
+        {
+          "s": -4,
+          "row": 7,
+          "column": 13
+        },
+        {
+          "s": -3,
+          "row": 5,
+          "column": 10
+        },
+        {
+          "s": -2,
+          "row": 8,
+          "column": 14
+        },
+        {
+          "s": -1,
+          "row": 4,
+          "column": 10
+        },
+        {
+          "s": 0,
+          "row": 19,
+          "column": 15
+        },
+        {
+          "s": 1,
+          "row": 10,
+          "column": 6
+        },
+        {
+          "s": 2,
+          "row": 14,
+          "column": 8
+        },
+        {
+          "s": 3,
+          "row": 10,
+          "column": 5
+        },
+        {
+          "s": 4,
+          "row": 12,
+          "column": 4
+        },
+        {
+          "s": 5,
+          "row": 10,
+          "column": 2
+        },
+        {
+          "s": 6,
+          "row": 14,
+          "column": 3
+        },
+        {
+          "s": 7,
+          "row": 10,
+          "column": 1
+        },
+        {
+          "s": 8,
+          "row": 25,
+          "column": 1
+        }
+      ],
+      "rank_sum": 121.96108908787004,
+      "rho_rank_sum": 1.492353950048526,
+      "strict_rho_7_10_certificate": false,
+      "seconds": 2.0220397310004046,
+      "operator_cache": "CacheInfo(hits=551840, misses=141893, maxsize=None, currsize=141893)"
+    },
+    {
+      "h": 5,
+      "prime": 2,
+      "dimension": 7,
+      "common_scale": 1,
+      "internal_cancellation_modulus": 1024,
+      "integral_divisibility_checks": 50421,
+      "pieces": [
+        {
+          "s": -10,
+          "row": 1,
+          "column": 28
+        },
+        {
+          "s": -9,
+          "row": 1,
+          "column": 2
+        },
+        {
+          "s": -8,
+          "row": 4,
+          "column": 44
+        },
+        {
+          "s": -7,
+          "row": 4,
+          "column": 15
+        },
+        {
+          "s": -6,
+          "row": 10,
+          "column": 32
+        },
+        {
+          "s": -5,
+          "row": 6,
+          "column": 15
+        },
+        {
+          "s": -4,
+          "row": 21,
+          "column": 38
+        },
+        {
+          "s": -3,
+          "row": 14,
+          "column": 20
+        },
+        {
+          "s": -2,
+          "row": 29,
+          "column": 35
+        },
+        {
+          "s": -1,
+          "row": 15,
+          "column": 20
+        },
+        {
+          "s": 0,
+          "row": 39,
+          "column": 40
+        },
+        {
+          "s": 1,
+          "row": 19,
+          "column": 15
+        },
+        {
+          "s": 2,
+          "row": 34,
+          "column": 28
+        },
+        {
+          "s": 3,
+          "row": 19,
+          "column": 15
+        },
+        {
+          "s": 4,
+          "row": 40,
+          "column": 22
+        },
+        {
+          "s": 5,
+          "row": 18,
+          "column": 7
+        },
+        {
+          "s": 6,
+          "row": 30,
+          "column": 10
+        },
+        {
+          "s": 7,
+          "row": 18,
+          "column": 4
+        },
+        {
+          "s": 8,
+          "row": 38,
+          "column": 4
+        },
+        {
+          "s": 9,
+          "row": 4,
+          "column": 1
+        },
+        {
+          "s": 10,
+          "row": 16,
+          "column": 1
+        }
+      ],
+      "rank_sum": 338.39482802719556,
+      "rho_rank_sum": 1.4965267915466685,
+      "strict_rho_7_10_certificate": false,
+      "seconds": 15.42839350900067,
+      "operator_cache": "CacheInfo(hits=4435310, misses=944399, maxsize=None, currsize=944399)"
+    }
+  ],
+  "scope": "Finite full-state Schur crossing ranks; all integrality and endpoint assertions checked. No improved exponent unless an explicit certificate is separately verified."
+}
