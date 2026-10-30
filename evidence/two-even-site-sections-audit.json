@@ -1,0 +1,111 @@
+{
+  "checker_sha256": "0e2275026fc21c2ff7d067139fc1e73becc80999641128d437002c58d297773a",
+  "five_site": {
+    "F2": {
+      "basis_sha256": "3db35637386a5f4ede58934e8c9001e1324343b3ba91c2648f0983a306401f91",
+      "dimension": 8,
+      "eligible_span_dimension": 5,
+      "eligible_vectors": 6,
+      "endpoint_remainder": 1,
+      "integer_cost_gate": 492,
+      "labels": 80,
+      "screen_sha256": "3d70500c8f5d1f9a2a9f5f299d4cf15f998abff468305cc5cf1ed04eb6d6ea03",
+      "status": "excluded: affordable vectors do not span crossing",
+      "tested_vectors": 255
+    },
+    "F4": {
+      "all_F4_decompositions_fail_seed_criterion": true,
+      "basis_sha256": "3db35637386a5f4ede58934e8c9001e1324343b3ba91c2648f0983a306401f91",
+      "coefficient_dimension": 8,
+      "cost_denominator": 1000000000000,
+      "eligible_count": 8,
+      "eligible_span_basis": {
+        "2": 17,
+        "3": 68,
+        "4": 256,
+        "6": 5125,
+        "7": 16464
+      },
+      "eligible_span_dimension": 5,
+      "eligible_vectors": [
+        {
+          "code": 68,
+          "column_rank": 2230,
+          "event": "eligible",
+          "product": 214080,
+          "row_rank": 96
+        },
+        {
+          "code": 256,
+          "column_rank": 40,
+          "event": "eligible",
+          "product": 164640,
+          "row_rank": 4116
+        },
+        {
+          "code": 341,
+          "column_rank": 6400,
+          "event": "eligible",
+          "product": 6400,
+          "row_rank": 1
+        },
+        {
+          "code": 16464,
+          "column_rank": 44,
+          "event": "eligible",
+          "product": 125576,
+          "row_rank": 2854
+        },
+        {
+          "code": 16720,
+          "column_rank": 24,
+          "event": "eligible",
+          "product": 73584,
+          "row_rank": 3066
+        },
+        {
+          "code": 16976,
+          "column_rank": 44,
+          "event": "eligible",
+          "product": 182248,
+          "row_rank": 4142
+        },
+        {
+          "code": 17232,
+          "column_rank": 44,
+          "event": "eligible",
+          "product": 182248,
+          "row_rank": 4142
+        },
+        {
+          "code": 21589,
+          "column_rank": 2854,
+          "event": "eligible",
+          "product": 125576,
+          "row_rank": 44
+        }
+      ],
+      "endpoint_remainder": 1,
+      "field": "F2[t]/(t^2+t+1)",
+      "independently_checked_vectors": 24,
+      "integer_cost_gate": 492,
+      "labels": 80,
+      "name": "omega_two_even_P5",
+      "projective_vectors_tested": 21845,
+      "restricted_shortest_cost_lower_numerator": null,
+      "scope": "the supplied finite coefficient space over F4; other fields and label retracts are not excluded",
+      "screen_sha256": "2b528dc1730db3e4d3275300df12d61647c25994ac8c83930f23157e13579fd3",
+      "shortest_path_states": 0
+    }
+  },
+  "graphs": {
+    "affordable_rank_pairs_checked": 3942,
+    "cases": 728,
+    "every_affordable_span_misses_endpoint": true,
+    "literal_control_matrix_rows_checked": 15552,
+    "manifest_sha256": "2ed9831e962664293bbbca605bb85568149f20708494ee9e985eae9feb04a1fc",
+    "nonzero_binary_vectors_independently_checked": 42536,
+    "screens_sha256": "c9c3cb9fba5411caa1ab7814598150b72d0fa11bc0e2fe6962eb4fb1fda28105"
+  },
+  "scope": "all"
+}
