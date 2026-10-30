@@ -400,9 +400,42 @@ Combining (11)--(15), the abstract evaluator's cost is bounded by
 \tag{16}
 \]
 
-The real-width version of the rank bound would replace `rho_0` by
-`rho=(8+log_2 7)/12` and give exponent `0.07551046810477115`.
-The rational version above is easier to turn into exact integer code.
+The sharper constant `rho=(8+log_2 7)/12` and exponent
+`0.07551046810477115` also admit an integer-only width schedule. Define
+`b(j) = bit_length(7^j - 1)`, so `b(j)=ceil(j log_2 7)` for every
+nonnegative integer `j`, including `b(0)=0`. Replace (5) by
+
+\[
+c_r=\min(2\lambda,4t+b(i)),\qquad
+c_c=\min(2\lambda,4t+b(t-i)).
+\]
+
+The common, piece-independent integer upper bound in (8) can then be
+replaced by
+
+\[
+ U^{\max}_{\rm exact}=G^3\lambda+
+ \left\lfloor\frac{G^4(8t+b(t)+1)}4\right\rfloor.
+\]
+
+Indeed, `b(i)+b(t-i)<=b(t)+1`, including the endpoint cases. The grid
+edge count bounds the smaller ordered total by
+`G^3 lambda + G^4 (c_r+c_c)/4`; taking its floor is valid because that
+total is an integer. Further, `b(t)<=t log_2 7+1` and
+`t<=lambda/3+2/3`, so
+
+\[
+ U^{\max}_{\rm exact}
+ \le (\rho+1/G)G^4\lambda+3G^4.
+\]
+
+The same width formula as (8), now using `U_exact^max`, and the same
+cost argument yield the sharper *candidate* exponent under the stated
+integration obligations. Computing `7^t-1` and its bit length uses
+integers of `O(t)` bits and polynomial time in `t`; the real logarithm
+appears only in the analysis. The reference implementation and finite
+boundary checks are `tools/exact_widths.py` and `tests/test_exact_widths.py`.
+They do not implement the counting engine or prove its machine-level cost.
 
 ## 6. What is still missing
 
@@ -425,9 +458,9 @@ program. Its numerical cost exponents, such as the old fixed polynomial
 degree, cannot simply be copied into a new formal claim.
 
 This candidate is weaker than the benchmark's unproved square-root-log
-conjecture: `alpha_0 < 1/2`. It is a quantitative strengthening of the
-published `2^{o(n)}` type of bound if the stated integration obligations
-are completed.
+conjecture: both candidate exponents are below `1/2`. It is a quantitative
+strengthening of the published `2^{o(n)}` type of bound if the stated
+integration obligations are completed.
 
 ## Sources and local evidence
 
