@@ -120,6 +120,12 @@ rectangle, replacing upstream's `2^t`. Leaving that multiplier unchanged
 would give an incorrect algorithm. This replacement only changes a
 constant in the bit-length bounds; it creates no need for modular division.
 
+`formal/ScaledPieces.lean` checks that the coefficient of the complement
+polynomial equals `4^t A_i`, that the pieces sum to `8^t E`, and the stated
+absolute-value bound, using the pinned reference's coefficient and crossing
+lemmas. It does not construct the 56-channel block factor or a compressed
+coefficient decoder in Lean, and does not prove the evaluator or its cost.
+
 ## Improved contraction
 
 Set

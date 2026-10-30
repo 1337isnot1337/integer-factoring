@@ -1,0 +1,4 @@
+'Factoring.Improvements.coefV_scale' depends on axioms: [propext]
+'Factoring.Improvements.compressedPiece_eq_scaled' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Factoring.Improvements.sum_compressedPiece' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Factoring.Improvements.abs_compressedPiece_le' depends on axioms: [propext, Classical.choice, Quot.sound]

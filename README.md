@@ -95,6 +95,9 @@ requires real-number approximation in the algorithm.
   span, with an exact small-instance search.
 - [GroupingThreshold.lean](formal/GroupingThreshold.lean) and
   [CrossingComplement.lean](formal/CrossingComplement.lean): checked finite lemmas.
+- [ScaledPieces.lean](formal/ScaledPieces.lean): checked equality between the
+  complement polynomial's coefficients and the scaled reference pieces,
+  including their sum and absolute-value bound.
 - [ExplicitChain.lean](formal/ExplicitChain.lean): a checked bound on every
   chain exponent and a complete time bound for the unchanged reference machine.
   This formal envelope retains the source's `23/24` contraction; the sharper

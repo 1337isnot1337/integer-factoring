@@ -28,6 +28,13 @@
       "result": "passed",
       "axiom_reports": 9,
       "log": "evidence/lean-explicit-chain.log"
+    },
+    {
+      "path": "formal/ScaledPieces.lean",
+      "sha256": "8df2ff03228a24d14466f09b02a3fc85354658306c42e32bd101e8a7e24d39c6",
+      "result": "passed",
+      "axiom_reports": 4,
+      "log": "evidence/lean-scaled-pieces.log"
     }
   ],
   "checked_declarations": [
@@ -177,6 +184,36 @@
     },
     {
       "declaration": "Factoring.Improvements.factoring_explicit_exponential",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.Improvements.coefV_scale",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.Improvements.compressedPiece_eq_scaled",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.Improvements.sum_compressedPiece",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.Improvements.abs_compressedPiece_le",
       "axioms": [
         "Classical.choice",
         "Quot.sound",
