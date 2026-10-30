@@ -25,6 +25,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Complement-shell crossings](complement-shell-crossings.md): explicit identity-Gram labels, exact sparse support, a universal four-state tensor, and an all-size paired reciprocal-pencil identity.
 - [Complete shell rank blocks](complement-shell-rank-blocks.md): exact syndrome direct sums through 496 labels and protected central minors for fixed-length full shells.
 - [Three-parameter Pfaffian crossings](pfaffian-ternary-edge-family.md): arbitrary fixed-length codes, a complete uniform edge space, exact label retracts, and binary/four-element-field seed exclusions.
+- [Exact particle-hole reduction](pfaffian-particle-hole.md): a local exterior-power identity preserving all grades and energies, refined signed-charge blocks, and complete profiles through 252 full-grade labels.
+- [Stable Pfaffian modules](stable-pfaffian-modules.md): an explicit graded 24-dimensional intertwiner, an all-size two-factor decomposition, and polynomial-size bounds for complete source coefficients and bivariate jets.
 - [Pfaffian boundary sections](noncommutative-crossing-pfaffian-boundaries.md): all-size section and Gram formulas, the universal correction factor, and an all-field rank-cost certificate for four pairs.
 - [Sparse isotropic Pfaffian sections](noncommutative-crossing-pfaffian-isotropic.md): explicit endpoint cancellation at every size from six pairs, four-term lifts from seven pairs, exact active correction ranks, and a six-piece crossing curve.
 - [Optimal common Pfaffian retracts](noncommutative-crossing-optimal-retracts.md): the largest possible common label dimension for two canceled vertices, attaining triangular maps, and a sparsity tradeoff over every characteristic-two field.
@@ -32,6 +34,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [High-mode residue folding](residue-folded-channels.md): exact ambient dimensions, finite incoming and outgoing factors, both complete channel counts, and eventual energy periodicity.
 - [Complete folded Gram channels](folded-gram-channels.md): all-angle cancellation inside one Gram form and a constructive polynomial-time exact Johnson-rank algorithm.
 - [Weighted Gram aggregation](folded-gram-aggregation.md): exact energy-preserving multiplicities, Gaussian-binomial evaluation, and 542 complete finite energy-bound calculations.
+- [Unequal-grade folded Gram channels](unequal-grade-folded-gram.md): exact creator-annihilator offsets, odd-weight Frobenius slices, energy-preserving aggregation, and 217 complete finite cases.
 - [Homogeneous modular selection](homogeneous-central-selection.md): one operator weight at every label width, selected rectangular vacuum minors, and an effective uniform half-rate construction.
 - [Noncommutative group-word crossings](noncommutative-crossing-orbits.md): exact all-size construction, compressed constant cut, optimal rank-28 central shears on 64 labels, and complete-profile limitations.
 - [Coded central quotients](coded-central-crossings.md): binary-code group construction, exact constant-cut compression, matroid bounds, and an all-coefficient row filtration estimate.

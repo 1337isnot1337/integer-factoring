@@ -57,6 +57,9 @@ verify-post-half:
 	python3 tools/check_folded_gram_channels.py
 	python3 tools/check_folded_gram_aggregate.py
 	python3 tools/check_pfaffian_p6_boundary_orbit.py
+	python3 tools/check_unequal_grade_gram.py
+	python3 tools/check_pfaffian_particle_hole.py
+	python3 tools/check_stable_pfaffian_bounds.py
 
 verify-frontier:
 	python3 tools/check_piece_transfer.py
