@@ -1,0 +1,11 @@
+.lake/
+__pycache__/
+*.pyc
+*.olean
+*.ilean
+*.ir
+*.olean.private
+*.olean.server
+*.ir.sig
+build/
+upstream/

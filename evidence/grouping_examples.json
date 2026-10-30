@@ -1,0 +1,225 @@
+{
+  "examples": {
+    "duplicate_edges": {
+      "edges": [
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          2,
+          3,
+          4
+        ]
+      ],
+      "result": {
+        "candidate_cap": 100000,
+        "candidates_examined": 5,
+        "certificate": {
+          "colors": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "degree_bound": 5,
+          "discrepancy": 2,
+          "group_sizes": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "groups": 3,
+          "ordered_total": 18,
+          "pair_weights": [],
+          "sufficient_threshold_met": false,
+          "valid": true,
+          "vertex_count": 4,
+          "violations": []
+        },
+        "total_colorings": 81
+      }
+    },
+    "matching": {
+      "edges": [
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          2,
+          3,
+          5
+        ],
+        [
+          4,
+          5,
+          5
+        ]
+      ],
+      "result": {
+        "candidate_cap": 100000,
+        "candidates_examined": 5,
+        "certificate": {
+          "colors": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "degree_bound": 5,
+          "discrepancy": 2,
+          "group_sizes": [
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "groups": 3,
+          "ordered_total": 30,
+          "pair_weights": [],
+          "sufficient_threshold_met": false,
+          "valid": true,
+          "vertex_count": 6,
+          "violations": []
+        },
+        "total_colorings": 729
+      }
+    },
+    "nonexistence": {
+      "D": 2,
+      "K": 3,
+      "edges": [
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "result": "none of the 9 colorings satisfies the grouping inequalities",
+      "vertices": 2
+    },
+    "star": {
+      "edges": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          0,
+          3,
+          3
+        ],
+        [
+          0,
+          4,
+          4
+        ]
+      ],
+      "result": {
+        "candidate_cap": 100000,
+        "candidates_examined": 6,
+        "certificate": {
+          "colors": [
+            0,
+            0,
+            0,
+            1,
+            2
+          ],
+          "degree_bound": 10,
+          "discrepancy": 2,
+          "group_sizes": [
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "groups": 3,
+          "ordered_total": 20,
+          "pair_weights": [
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              2,
+              4
+            ]
+          ],
+          "sufficient_threshold_met": false,
+          "valid": true,
+          "vertex_count": 5,
+          "violations": []
+        },
+        "total_colorings": 243
+      }
+    },
+    "zero_graph": {
+      "edges": [],
+      "result": {
+        "candidate_cap": 100000,
+        "candidates_examined": 5,
+        "certificate": {
+          "colors": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "degree_bound": 0,
+          "discrepancy": 2,
+          "group_sizes": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "groups": 3,
+          "ordered_total": 0,
+          "pair_weights": [],
+          "sufficient_threshold_met": false,
+          "valid": true,
+          "vertex_count": 4,
+          "violations": []
+        },
+        "total_colorings": 81
+      }
+    }
+  },
+  "integer_sufficient_threshold_K3_D2": 864,
+  "purpose": "finite exact certificates; these examples do not prove the asymptotic theorem"
+}
