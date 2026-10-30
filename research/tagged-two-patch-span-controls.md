@@ -62,9 +62,9 @@ The result concerns only these binary spans with these field models and
 trace coordinates. It does not exclude larger widths, different weights,
 other trace bases, or recombinations with extension-field coefficients.
 
-## 3. A remaining synthesis target: keep the tag as a separate variable
+## 3. A bivariate extension and one finite control
 
-A concrete untested target is to retain two variables instead of merging
+A larger coefficient space retains two variables instead of merging
 the tagged coordinate into the scalar degree. Set
 
 ```math
@@ -75,7 +75,10 @@ H(z,u;S,w)=
 
 Its four-leg endpoint at `(z,u)=(1,1)` is exactly `E`. Its bidegree is at
 most `(2t-1,1)`, and the coefficient of `z^(2t-1)u` vanishes. Therefore
-there are at most `4t-1` nonzero coefficient tensors. Its span contains
+there are at most `4t-1` nonzero coefficient tensors. The
+[bivariate dimension proof](bivariate-two-patch-span-control.md) shows
+that these are independent, giving dimension exactly `4t-1` at every width.
+Its span contains
 both previous scalar spans: substitute `u=z` for the untagged curve and
 `u=z^2` for the tagged curve. The separate scalar-span certificates do
 not exclude decompositions mixing tensors from this larger space.
@@ -89,17 +92,17 @@ Q_i=\sum_j(a_{ij}A_j+b_{ij}B_j),\qquad
 \sum_i\sqrt{r(Q_i)c(Q_i)}<d^{\sqrt2}.
 ```
 
-This is an open target, not a claimed bound. It retains the higher Boolean
+The displayed rank budget is a target, not a claimed bound. It retains the higher Boolean
 degrees needed for the endpoint and uses no ordinary-kernel composition,
 so the earlier low-degree and composition-cancellation proofs do not by
 themselves exclude it. The coefficient count remains linear in `t`.
 
-A small exact diagnostic is `t=3` and tag `(0,0)`. After basis reduction
-there are at most `2^11=2048` binary span tensors. The same rank and
-potential procedure can determine whether its cost improves on `d^2=64`.
-Such an improvement would identify new cancellation; it would still need
-to meet the stronger displayed rank budget before supplying a better score.
-No bivariate-span experiment is claimed in this note.
+The [subsequent bivariate control](bivariate-two-patch-span-control.md)
+completes the small diagnostic `t=3`, tag `(0,0)`. Its dimension is exactly
+11, and all 2,048 binary span tensors have been checked. The exact optimum
+is again `d^2=64`. No other bivariate tag, width, or trace basis is excluded
+by that calculation. The stronger displayed rank budget remains the
+requirement for a successful larger construction.
 
 ## Reproduction and bounded completion
 

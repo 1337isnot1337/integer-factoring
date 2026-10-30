@@ -170,8 +170,12 @@ checked. This is specific to F2 coefficients and the specified field models and 
 A [tagged-coordinate follow-up](tagged-two-patch-span-controls.md) also
 completes every single weight-two tag at those widths: fourteen profiles,
 4,864 tensor evaluations, and 2,190,592 exact potential inequalities.
-Every optimum is again `d^2`. The note specifies an untested bivariate
-space containing both scalar families, with at most `4t-1` coefficients.
+Every optimum is again `d^2`. The [bivariate follow-up](bivariate-two-patch-span-control.md) proves
+that the containing coefficient span has dimension exactly `4t-1` at
+every width, over every characteristic-two coefficient field. Its
+complete `t=3`, tag `(0,0)` binary span also has exact optimum sixty-four:
+all 2,048 tensors, 4,096 dense cut comparisons, and 4,192,256 potential
+inequalities are checked. Other bivariate tags and widths remain open.
 
 The remaining constructive task is to synthesize the full crossing while
 controlling total rank cost, possibly using restrictions or different

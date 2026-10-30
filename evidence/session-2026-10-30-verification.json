@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "recorded_utc": "2026-10-30T19:32:07.522525+00:00",
+  "recorded_utc": "2026-10-30T19:36:37.387721+00:00",
   "scope": "Ordinary proofs and exact finite checkers; no new Lean source or local Lean build.",
   "integrated_runs": [
     {
@@ -70,9 +70,20 @@
       "status": "passed",
       "evidence": "tagged-two-patch-span-verification.json",
       "evidence_sha256": "4c7265ebac6a4297495cf66cd8c4c936fb38a2236e1c9003777bbef43d12d771"
+    },
+    {
+      "command": "python3 tools/check_bivariate_two_patch_span.py --output /tmp/root-bivariate-two-patch-span.json",
+      "exit_code": 0,
+      "seconds": 4.673788292000609,
+      "span_tensors": 2048,
+      "rank_and_potential_data_match": true,
+      "timeout_negative_control_exit_code": 2,
+      "status": "passed",
+      "evidence": "bivariate-two-patch-span-verification.json",
+      "evidence_sha256": "01f4660a8a654d58cf0a9818626f3d2a9aed5698c697e966bb696f1b542e0a33"
     }
   ],
-  "later_changes_scope": "Session documentation and separately replayed twisted-catalogue, dense-witness, small trace-span, and all fourteen tagged trace-span packages.",
+  "later_changes_scope": "Session documentation and separately replayed twisted-catalogue, dense-witness, small trace-span, fourteen tagged trace-span, and one complete bivariate trace-span packages.",
   "latest_observed_hosted_exact_certificates": {
     "head": "19944f6a8022389f97aaf2fc4fabe3d7389a4369",
     "run_id": 41114874104,

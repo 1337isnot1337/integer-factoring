@@ -63,6 +63,7 @@ verify-further:
 	python3 tools/check_two_patch_trace.py --output /tmp/integer-factoring-two-patch-trace.json
 	python3 tools/check_two_patch_span.py --output /tmp/integer-factoring-two-patch-span.json
 	python3 tools/check_tagged_two_patch_span.py --time-limit 300 --output /tmp/integer-factoring-tagged-two-patch-span.json
+	python3 tools/check_bivariate_two_patch_span.py --time-limit 300 --output /tmp/integer-factoring-bivariate-two-patch-span.json
 	python3 tools/check_polynomial_shear_probe.py --output /tmp/integer-factoring-polynomial-shear-verification.json
 
 verify-energy-full:
