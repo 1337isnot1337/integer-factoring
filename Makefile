@@ -24,6 +24,7 @@ verify-constructions:
 	python3 tools/check_noncommutative_crossing_coded.py
 	python3 tools/check_homogeneous_central_eighth_jet.py
 	python3 tools/check_binary_quadratic_charge_shells.py
+	python3 tools/check_noncommutative_crossing_hopf.py
 
 verify-native-crossings:
 	mkdir -p build/native
@@ -31,6 +32,10 @@ verify-native-crossings:
 	python3 tools/check_noncommutative_crossing_native.py --binary $(CURDIR)/build/native/group-correction-screen --lookup-summary evidence/noncommutative-crossing-lookup-complete.json
 	python3 tools/check_homogeneous_central_profiles.py
 	python3 tools/check_complement_shell_crossings.py
+	$(CXX) -O3 -std=c++17 -Wall -Wextra -Werror tools/explore_graded_hopf_crossings.cpp -o build/native/graded-hopf-screen
+	python3 tools/check_graded_hopf_crossings.py --binary $(CURDIR)/build/native/graded-hopf-screen
+	$(CXX) -O3 -std=c++17 -Wall -Wextra -Werror tools/explore_graded_hopf_gauges.cpp -o build/native/graded-hopf-gauges
+	python3 tools/check_graded_hopf_gauges.py --binary $(CURDIR)/build/native/graded-hopf-gauges
 
 verify-post-half:
 	python3 tools/check_half_piece_ranks.py --full

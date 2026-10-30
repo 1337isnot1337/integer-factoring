@@ -36,6 +36,7 @@ The composition uses the existing clique evaluator from [Anthropic's Appendix B]
 | Cumulative bosonic crossing profile | Ordinary exact identities and finite construction; no stronger exponent | [Moment pairing, exact rank, and both channel cuts](research/bosonic-hermite-profile.md) |
 | Crossing families from binary codes | Ordinary all-size construction and one-cut bounds; complete column profile open | [Coded central quotients](research/coded-central-crossings.md) |
 | Explicit complement-shell crossings | Ordinary all-size construction and exact four-state tensor reduction; tested seeds do not improve the score | [Identity Gram, sparse support, and local tensor](research/complement-shell-crossings.md) |
+| Graded noncommutative Hopf crossings | Ordinary all-size construction with explicit bounds for both cuts; no stronger exponent | [Generator substitution, scalar factorizations, and complete profiles](research/noncommutative-crossing-graded-hopf.md) |
 
 The result table distinguishes verified machine bounds from conditional constructions and finite experiments. A merged PR or a passing finite test does not imply independent mathematical review.
 

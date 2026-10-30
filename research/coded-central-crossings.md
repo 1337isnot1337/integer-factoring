@@ -331,3 +331,34 @@ bounds, and the finite row checks. Larger constant-cut cases can
 stop once every fiber spans the proved ambient monomial space;
 this is a complete rank certificate, rather than a partial-rank
 estimate.
+
+### Complete profiles of the small coded groups
+
+The separate checker
+[check_coded_crossing_profiles.py](../tools/check_coded_crossing_profiles.py)
+computes both scalar cuts of every coefficient. The column matrix splits
+by the horizontal abelianization value, so these are exact full ranks,
+not ranks of a selected submatrix. Dense matrices independently confirm
+the smallest cases.
+
+| Code columns | Labels | Maximum complete rank product |
+| --- | ---: | ---: |
+| \(1\) | 8 | 432 |
+| \(1,1\) | 32 | 69696 |
+| \(1,2\) | 64 | 565740 |
+| \(1,1,1\) | 128 | 7103040 |
+| \(1,1,2\) | 256 | 77506400 |
+| \(1,2,3\) | 256 | 91285173 |
+
+The evidence stores every coefficient rank, checks the complete crossing
+endpoint, and compares all row ranks with (19). Run:
+
+```sh
+python3 tools/check_coded_crossing_profiles.py --larger \
+  --output evidence/coded-central-full-profiles.json
+```
+
+The [graded Hopf construction](noncommutative-crossing-graded-hopf.md)
+replaces the group multiplication by its graded primitive algebra and
+improves these tested profiles. It supplies additional exact column
+factorizations, but neither set of finite profiles gives an improved seed.
