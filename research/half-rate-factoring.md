@@ -335,11 +335,13 @@ theorems with the checked written-table codec under the same Lean version.
 It uses direct clique-entry lookup, a proved entry bound and explicit pads; it
 does not construct these objects in the claimed running time. The separate
 [pure factor theorem](../formal-appendix/PureFactor.lean) connects this value
-to the reference prefix search and proves `Nat.minFac` correctness for
-`N >= 2`, without a machine or runtime certificate.
+to the reference prefix search and proves `Nat.minFac` correctness for every
+natural input, without a machine or runtime certificate.
 [HalfPrefix.lean](../formal/HalfPrefix.lean) verifies removal of the divisor 1
-against the factoring reference's `cntPre`. These lemmas do not construct the
-factoring machine.
+against the factoring reference's `cntPre`. The [conditional machine bridge](../formal-appendix/PaddedWordMachine.lean)
+constructs the reference finite-alphabet machine when supplied a correct
+polynomial-time padded algorithm and size bounds. The factoring-specific
+algorithm and its polynomial-time certificates remain to be constructed.
 
 The existing half-pieces channel counts have a proved asymptotic barrier
 at `1/2` within that particular interface; see the evaluator audit.

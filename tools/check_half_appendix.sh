@@ -20,7 +20,7 @@ fi
 cd "$source_dir/eth"
 lean --version | tee "$logs/toolchain.log"
 lake exe cache get > "$logs/cache.log" 2>&1
-lake build GeneralPieces.Main > "$logs/source-build.log" 2>&1
+lake build GeneralPieces.Main CountKSat.Host > "$logs/source-build.log" 2>&1
 
 # The stage is below the source project so Lean can set a separate root while
 # still finding the source project's built imports through `lake env`.
@@ -53,8 +53,11 @@ rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 [[lean_lib]]
 name = "FactoringAux"
 globs = ["FactoringAux.+"]
+
+[[lean_lib]]
+name = "Challenge"
 EOF
-(cd "$port" && lake build FactoringAux.MulCount FactoringAux.Cluster FactoringAux.EngineGroup FactoringAux.EngineCostRate FactoringAux.Search) > "$logs/factoring-build.log" 2>&1
+(cd "$port" && lake build FactoringAux.MulCount FactoringAux.Cluster FactoringAux.EngineGroup FactoringAux.EngineCostRate FactoringAux.Search Challenge) > "$logs/factoring-build.log" 2>&1
 cp "$root/formal/HalfPad.lean" "$stage/HalfPad.lean"
 cp "$root/formal-appendix/ExplicitPad.lean" "$stage/ExplicitPad.lean"
 cp "$root/formal-appendix/Tabulate.lean" "$stage/Tabulate.lean"
@@ -82,6 +85,21 @@ cp "$root/formal-appendix/SelectedPadCost.lean" "$stage/SelectedPadCost.lean"
 cp "$root/formal/HalfPrefix.lean" "$stage/HalfPrefix.lean"
 cp "$root/formal-appendix/PrefixEvaluator.lean" "$stage/PrefixEvaluator.lean"
 cp "$root/formal-appendix/PureFactor.lean" "$stage/PureFactor.lean"
+cp "$root/formal-appendix/LevelSelect.lean" "$stage/LevelSelect.lean"
+cp "$root/formal-appendix/SelectedRate.lean" "$stage/SelectedRate.lean"
+cp "$root/formal-appendix/WrittenPoly.lean" "$stage/WrittenPoly.lean"
+cp "$root/formal-appendix/InputSize.lean" "$stage/InputSize.lean"
+cp "$root/formal-appendix/FragmentCost.lean" "$stage/FragmentCost.lean"
+cp "$root/formal-appendix/EvaluatorSteps.lean" "$stage/EvaluatorSteps.lean"
+cp "$root/formal-appendix/BoundedLength.lean" "$stage/BoundedLength.lean"
+cp "$root/formal-appendix/PrefixSteps.lean" "$stage/PrefixSteps.lean"
+cp "$root/formal-appendix/EvaluatorRate.lean" "$stage/EvaluatorRate.lean"
+cp "$root/formal-appendix/ReferenceStatement.lean" "$stage/ReferenceStatement.lean"
+cp "$root/formal-appendix/CertifiedPrefix.lean" "$stage/CertifiedPrefix.lean"
+cp "$root/formal-appendix/SearchPoly.lean" "$stage/SearchPoly.lean"
+cp "$root/formal-appendix/PaddedWordMachine.lean" "$stage/PaddedWordMachine.lean"
+cp "$root/formal-appendix/GroupingSearchPoly.lean" "$stage/GroupingSearchPoly.lean"
+cp "$root/formal-appendix/GroupingSearchCost.lean" "$stage/GroupingSearchCost.lean"
 lake env bash -c '
   set -euo pipefail
   export LEAN_PATH="$1:$1/factoring/.lake/build/lib/lean:$LEAN_PATH"
@@ -108,10 +126,25 @@ lake env bash -c '
   lean --root="$1" -o "$1/BoundedTop.olean" "$1/BoundedTop.lean"
   lean --root="$1" -o "$1/HalfSchedule.olean" "$1/HalfSchedule.lean"
   lean --root="$1" -o "$1/PadCost.olean" "$1/PadCost.lean"
-  lean --root="$1" "$1/SelectedPadCost.lean"
+  lean --root="$1" -o "$1/SelectedPadCost.olean" "$1/SelectedPadCost.lean"
   lean --root="$1" -o "$1/HalfPrefix.olean" "$1/HalfPrefix.lean"
   lean --root="$1" -o "$1/PrefixEvaluator.olean" "$1/PrefixEvaluator.lean"
-  lean --root="$1" "$1/PureFactor.lean"
+  lean --root="$1" -o "$1/PureFactor.olean" "$1/PureFactor.lean"
+  lean --root="$1" -o "$1/LevelSelect.olean" "$1/LevelSelect.lean"
+  lean --root="$1" "$1/SelectedRate.lean"
+  lean --root="$1" -o "$1/WrittenPoly.olean" "$1/WrittenPoly.lean"
+  lean --root="$1" -o "$1/InputSize.olean" "$1/InputSize.lean"
+  lean --root="$1" -o "$1/FragmentCost.olean" "$1/FragmentCost.lean"
+  lean --root="$1" -o "$1/EvaluatorSteps.olean" "$1/EvaluatorSteps.lean"
+  lean --root="$1" -o "$1/BoundedLength.olean" "$1/BoundedLength.lean"
+  lean --root="$1" -o "$1/PrefixSteps.olean" "$1/PrefixSteps.lean"
+  lean --root="$1" -o "$1/EvaluatorRate.olean" "$1/EvaluatorRate.lean"
+  lean --root="$1" "$1/ReferenceStatement.lean"
+  lean --root="$1" "$1/CertifiedPrefix.lean"
+  lean --root="$1" "$1/SearchPoly.lean"
+  lean --root="$1" "$1/PaddedWordMachine.lean"
+  lean --root="$1" "$1/GroupingSearchPoly.lean"
+  lean --root="$1" "$1/GroupingSearchCost.lean"
 ' _ "$stage" > "$logs/bridge.log" 2>&1
 python3 - "$logs/bridge.log" <<'PY'
 import re
@@ -134,8 +167,17 @@ state_rate = "IntegerFactoring.HalfAppendix.selected_state_exponent_le"
 entry = "IntegerFactoring.HalfAppendix.clique_entry_le_card"
 explicit = "IntegerFactoring.HalfAppendix.evaluator_counts_explicit_top"
 pad_rate = "IntegerFactoring.HalfAppendix.scheduled_pad_sqrt_cost"
-pure_factor = "IntegerFactoring.HalfAppendix.pure_factor_correct"
-if "error:" in text or "sorryAx" in text or not {expected, count_bridge, table, clique, top, selected, row, fast, width, states, state_rate, entry, explicit, pad_rate, pure_factor} <= {name for name, _ in reports}:
+pure_factor = "IntegerFactoring.HalfAppendix.pure_factor_all"
+level_rate = "IntegerFactoring.HalfAppendix.selected_level_pad_sqrt_cost"
+written_poly = "IntegerFactoring.HalfAppendix.written_evaluator_polyT"
+prefix_steps = "IntegerFactoring.HalfAppendix.prefix_evaluator_correct_steps"
+reference_spec = "IntegerFactoring.HalfAppendix.pure_factor_reference_spec"
+certified_prefix = "IntegerFactoring.HalfAppendix.prefix_evaluator_sqrt_steps"
+search_poly = "IntegerFactoring.HalfAppendix.search_polyT"
+machine = "IntegerFactoring.HalfAppendix.padded_factoring_machine"
+group_search = "IntegerFactoring.HalfAppendix.padded_firstGood_of_count_polyT"
+group_cost = "IntegerFactoring.HalfAppendix.scheduled_grouping_pad_cost"
+if "error:" in text or "sorryAx" in text or not {expected, count_bridge, table, clique, top, selected, row, fast, width, states, state_rate, entry, explicit, pad_rate, pure_factor, level_rate, written_poly, prefix_steps, reference_spec, certified_prefix, search_poly, machine, group_search, group_cost} <= {name for name, _ in reports}:
     raise SystemExit("Missing or failed Appendix bridge axiom reports")
 allowed = {"propext", "Classical.choice", "Quot.sound"}
 for name, axioms in reports:

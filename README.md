@@ -306,9 +306,19 @@ group's state count by an exponent whose size is at most `8000n/K`. Lean proves
 the grouped network's weights and factors are zero or one, obtains the entry
 bound, and supplies explicit table and evaluator pads. For a level satisfying
 the selection inequalities, Lean bounds the evaluator-pad exponent by a
-constant times `n / sqrt(log n)`. The composed mathematical function returns
-`Nat.minFac` for inputs at least two. These are value and size theorems; the
-costed constructor and complete 1/2 factoring machine remain open.
+constant times `n / sqrt(log n)`, including for the explicitly selected level.
+Lean also bounds the evaluator fragment's steps on the already-written input
+on that scale. The composed mathematical function returns `Nat.minFac` on all
+natural inputs. The reference challenge file contains an unrelated placeholder
+theorem; the new theorem's axiom report does not depend on it. The costed
+constructor and complete 1/2 factoring machine remain open. A separate
+machine bridge constructs the reference finite-alphabet factoring machine
+from a correct polynomial-time padded algorithm, but leaves the factoring
+algorithm and its polynomial-time certificates as hypotheses. The prefix-search
+polynomial-time theorem likewise assumes a polynomial-time count query.
+The exhaustive grouping scan is polynomial-time given a polynomial-time
+predicate and sufficient unit padding; its padding exponent is bounded by
+`3n/r` for the selected schedule.
 
 The GitHub Actions workflow runs both formal targets and the Python checks.
 It pins the Lean archive hash and checkout action. It runs for pull requests,
