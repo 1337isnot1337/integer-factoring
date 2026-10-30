@@ -1,0 +1,83 @@
+{
+  "all_length_constant_rank": "3^(2*t-1) in both cuts",
+  "all_length_raw_rank_cost_lower_bound": "d^2/3, d=3^t",
+  "auxiliary_dimension": 3,
+  "boundary": [
+    1,
+    0,
+    0
+  ],
+  "excludes_arbitrary_coefficient_recombinations": false,
+  "literal_weyl_sum_entries_checked": 729,
+  "nonzero_physical_local_tuples": 33,
+  "physical_alphabet": 3,
+  "profiles": [
+    {
+      "coefficient_endpoint_entries_checked": 81,
+      "coefficient_rank_pairs": [
+        [
+          3,
+          3
+        ],
+        [
+          7,
+          7
+        ]
+      ],
+      "constant_closed_form_entries_checked_both_cuts": 162,
+      "constant_coefficient_rank": 3,
+      "labels": 3,
+      "length": 1
+    },
+    {
+      "coefficient_endpoint_entries_checked": 6561,
+      "coefficient_rank_pairs": [
+        [
+          27,
+          27
+        ],
+        [
+          40,
+          40
+        ],
+        [
+          46,
+          57
+        ]
+      ],
+      "constant_closed_form_entries_checked_both_cuts": 13122,
+      "constant_coefficient_rank": 27,
+      "labels": 9,
+      "length": 2
+    },
+    {
+      "coefficient_endpoint_entries_checked": 531441,
+      "coefficient_rank_pairs": [
+        [
+          243,
+          243
+        ],
+        [
+          391,
+          391
+        ],
+        [
+          428,
+          437
+        ],
+        [
+          310,
+          495
+        ]
+      ],
+      "constant_closed_form_entries_checked_both_cuts": 1062882,
+      "constant_coefficient_rank": 243,
+      "labels": 27,
+      "length": 3
+    }
+  ],
+  "scalar_field": "F2",
+  "scope": "This exact linear Weyl pencil with fixed e0 boundaries and raw monomial coefficient splitting only. No obstruction to different Weyl paths, boundary conditions, or factoring algorithms is claimed.",
+  "source_sha256": "c6a5ea18bd46daec359c8cd7ac919bf607267200affbb04bd24c0a4607e1e3ae",
+  "weyl_derivation_field": "F4 = F2[w]/(w^2+w+1)"
+}

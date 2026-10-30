@@ -1,0 +1,176 @@
+{
+  "checker_sha256": "85a58f5146ff4e5d7d8dac6b0b07021b12a3baaef21b7551b300d4bd7e55ccdd",
+  "controlled_transposition_records": [
+    {
+      "column_toeplitz_controls": [
+        {
+          "precision": 1,
+          "rank": 1
+        },
+        {
+          "precision": 2,
+          "rank": 2
+        },
+        {
+          "precision": 4,
+          "rank": 4
+        },
+        {
+          "precision": 5,
+          "rank": 8
+        }
+      ],
+      "complete_row_profile_through_order_2": true,
+      "control_span_rank": 1,
+      "cycle_length": 4,
+      "distinct_controls": 1,
+      "endpoint_entries": 16,
+      "maximum_fiber": 1,
+      "q": 2,
+      "row_infinity_order_multiplicities_0_1_2": [
+        1,
+        2,
+        1
+      ],
+      "second_reshuffling_rank": 4
+    },
+    {
+      "column_toeplitz_controls": [
+        {
+          "precision": 1,
+          "rank": 1
+        },
+        {
+          "precision": 2,
+          "rank": 2
+        },
+        {
+          "precision": 16,
+          "rank": 16
+        },
+        {
+          "precision": 17,
+          "rank": 32
+        }
+      ],
+      "complete_row_profile_through_order_2": true,
+      "control_span_rank": 2,
+      "cycle_length": 16,
+      "distinct_controls": 2,
+      "endpoint_entries": 256,
+      "maximum_fiber": 1,
+      "q": 4,
+      "row_infinity_order_multiplicities_0_1_2": [
+        2,
+        13,
+        1
+      ],
+      "second_reshuffling_rank": 16
+    },
+    {
+      "column_toeplitz_controls": [],
+      "complete_row_profile_through_order_2": true,
+      "control_span_rank": 2,
+      "cycle_length": 64,
+      "distinct_controls": 2,
+      "endpoint_entries": 4096,
+      "maximum_fiber": 1,
+      "q": 8,
+      "row_infinity_order_multiplicities_0_1_2": [
+        2,
+        61,
+        1
+      ],
+      "second_reshuffling_rank": 64
+    },
+    {
+      "column_toeplitz_controls": [],
+      "complete_row_profile_through_order_2": true,
+      "control_span_rank": 2,
+      "cycle_length": 256,
+      "distinct_controls": 2,
+      "endpoint_entries": 65536,
+      "maximum_fiber": 1,
+      "q": 16,
+      "row_infinity_order_multiplicities_0_1_2": [
+        2,
+        253,
+        1
+      ],
+      "second_reshuffling_rank": 256
+    }
+  ],
+  "dependent_four_control_record": {
+    "column_toeplitz_controls": [],
+    "complete_row_profile_through_order_2": true,
+    "control_span_rank": 3,
+    "cycle_length": 64,
+    "distinct_controls": 4,
+    "endpoint_entries": 4096,
+    "maximum_fiber": 1,
+    "q": 8,
+    "row_infinity_order_multiplicities_0_1_2": [
+      3,
+      59,
+      2
+    ],
+    "second_reshuffling_rank": 64
+  },
+  "field": "F2 and F4; proof over every characteristic-two field",
+  "noncommuting_two_control_record": {
+    "column_toeplitz_controls": [],
+    "complete_row_profile_through_order_2": false,
+    "control_span_rank": 2,
+    "cycle_length": 64,
+    "distinct_controls": 2,
+    "endpoint_entries": 4096,
+    "maximum_fiber": 2,
+    "q": 8,
+    "row_infinity_order_multiplicities_0_1_2": [
+      2,
+      44,
+      2
+    ],
+    "second_reshuffling_rank": 46
+  },
+  "proved_basic_Smith_floor": "B(s) >= q^3/sqrt(2); rho >= 17/24 for q>=8",
+  "rational_potential_checks": 380,
+  "scope": "Single-cycle controlled monomial nilpotent paths with total cycle weight one, and the bare two-spectrum Smith certificate. No factoring lower bound or improved factoring exponent.",
+  "small_exhaustive_scope": "q=4, cyclic L0, every permutation T and nontrivial binary control subset",
+  "small_order_one_histogram": {
+    "12": 16,
+    "13": 8
+  },
+  "small_regular_cases": 24,
+  "status": "pass",
+  "weighted_monomial_F4_records": [
+    {
+      "control_span_rank": 3,
+      "cycle_length": 16,
+      "cycle_weight": 1,
+      "field": "F4=F2[w]/(w^2+w+1)",
+      "literal_endpoint_and_three_jet_entries": 256,
+      "q": 4,
+      "row_infinity_order_multiplicities_0_1_2": [
+        3,
+        11,
+        2
+      ],
+      "second_reshuffling_rank": 16
+    },
+    {
+      "control_span_rank": 4,
+      "cycle_length": 64,
+      "cycle_weight": 1,
+      "field": "F4=F2[w]/(w^2+w+1)",
+      "literal_endpoint_and_three_jet_entries": 4096,
+      "q": 8,
+      "row_infinity_order_multiplicities_0_1_2": [
+        4,
+        42,
+        5
+      ],
+      "second_reshuffling_rank": 46
+    }
+  ]
+}

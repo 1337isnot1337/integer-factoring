@@ -37,6 +37,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Obstructions and work beyond 1/2
 
+- [Controlled monomial Smith floor](controlled-permutation-smith-floor.md): a fiber-span argument extends the nilpotent-path obstruction to dependent, noncommuting, and weighted monomial controls.
+- [Qutrit Weyl crossing](qutrit-weyl-crossing.md): a complete auxiliary crossing with an exact all-length constant-coefficient rank formula and a scoped raw-piece obstruction.
 - [Directions beyond half](post-half-directions.md): experiments, scope, and unresolved questions.
 - [Network tradeoff](half-top-structure.md): restriction for the current local-enumeration and wire-channel constructor.
 - [Restricted-label counterexample](half-restricted-labels.md): failure of a proposed low-mode dimension reduction.

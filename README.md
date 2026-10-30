@@ -54,6 +54,7 @@ make verify-block-smith # Exact profiles for ordered crossing blocks
 make verify-cubic-full-images # Full cubic coefficient spaces and reduced ranks
 make verify-linear-smith # All binary scalar pencils and the uniform linear barrier
 make verify-type-pressure # Exact common-type optimization and physical gauges
+make verify-controlled-smith # Controlled monomial crossings and the qutrit control
 ```
 
 The Python checks use Python 3 and its standard library. Some optional checks use NumPy for speed. The optional linear Smith catalogue and Schur central-rank checks also require a C++17 compiler.
@@ -129,6 +130,12 @@ The [degree-one Smith obstruction](research/linear-smith-barrier.md) proves
 linear certificate. The sharp binary bound is `256/27`; the scalar bound
 in odd characteristic is `12`. All 65,536 binary scalar pencils are catalogued.
 Higher degree, blocks, and cancellation refinements remain separate routes.
+
+For the nilpotent-path construction, a [controlled monomial obstruction](research/controlled-permutation-smith-floor.md)
+extends the existing permutation calculation to dependent and noncommuting
+controls. It gives `B >= q^3/sqrt(2)` in its stated scope. A separate
+[qutrit Weyl control](research/qutrit-weyl-crossing.md) has an exact all-length
+constant-coefficient rank formula; its raw pieces also fail to improve the bound.
 
 The [varying-image cubic construction](research/cubic-full-image-span.md)
 has an exact 786-dimensional rank-one-map coefficient space, with column ranks
