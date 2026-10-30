@@ -16,6 +16,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 - [Vanishing-slack score transfer](vanishing-slack-score-transfer.md): arbitrary `o(lambda)` width error preserves the leaderboard exponent under stated uniform algorithms and entropy bounds; no improved unconditional exponent.
 - [Gap-free finite-seed score transfer](gap-free-seed-score-transfer.md): bounded search attains an enumerable rank-sum infimum, with no seed-gap or generation-speed hypothesis.
+- [Input-wise field and seed selection](universal-field-seed-selection.md): one uniform machine attains the finite-certificate endpoint over all coefficient fields, retaining one selected field throughout each input's recursion.
+- [Finite-field rank specialization](finite-field-rank-specialization.md): every finite rank profile over an arbitrary field specializes exactly to a finite field; prime-field seeds approximate the same infimum, and ring factor-channel bounds specialize without increasing.
 - [Optimized divisor-count bound](optimized-divisor-count-bound.md): a computable `q_*(n)=(1+o(1))n/log2 n` replaces the earlier auxiliary leading coefficient nine by one.
 - [Pieces-to-factoring transfer](pieces-to-factoring.md): conditional crossing-parameter transfer, with full bit-cost accounting.
 - [Scale-one modular transfer](scale-one-modular-transfer.md): fixed-field transfer and machine costs.

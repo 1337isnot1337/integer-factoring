@@ -30,6 +30,7 @@ The composition uses the existing clique evaluator from [Anthropic's Appendix B]
 | Saving exponent above `1/2` | **Not established** | [Research index](research/INDEX.md) |
 | Score transfer with arbitrary vanishing width error | Ordinary conditional theorem | [Proof and effective hypotheses](research/vanishing-slack-score-transfer.md) |
 | Uniform endpoint from arbitrarily sparse finite seeds | Ordinary conditional theorem | [Bounded search and type amplification](research/gap-free-seed-score-transfer.md) |
+| One uniform finite-seed endpoint over all coefficient fields | Ordinary conditional theorem | [Input-wise selection](research/universal-field-seed-selection.md), [exact rank specialization](research/finite-field-rank-specialization.md) |
 | Auxiliary divisor-count exponent with leading coefficient one | Ordinary unconditional bound; overall score unchanged | [Exact integer parameter](research/optimized-divisor-count-bound.md) |
 
 The result table distinguishes verified machine bounds from conditional constructions and finite experiments. A merged PR or a passing finite test does not imply independent mathematical review.
@@ -73,7 +74,7 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 
 No uniform factoring exponent above `1/2` is proved here. One open approach seeks effective crossing pieces with total rank width `4*rho*lambda + o(lambda)` for `rho < 1/sqrt(2)`. The [score-transfer theorem](research/vanishing-slack-score-transfer.md) permits this arbitrary vanishing relative error, together with piece entropy `lambda/(log lambda)^(delta-o(1))`, and gives score `min(log2(1/rho), delta)`. Its uniform construction and factor-query hypotheses are part of the theorem. It supplies no new crossing family; finite rank improvements alone do not establish a stronger factoring bound.
 
-The [finite-seed endpoint theorem](research/gap-free-seed-score-transfer.md) removes any gap or generation-speed requirement from an enumerable improving sequence. Bounded search and type amplification give one machine attaining the limiting rank-sum score over a fixed field. Finding a better finite certificate remains the mathematical requirement.
+The [finite-seed endpoint theorem](research/gap-free-seed-score-transfer.md) removes any gap or generation-speed requirement from an enumerable improving sequence. Its [input-wise field extension](research/universal-field-seed-selection.md) gives one machine attaining the best finite rank-sum score over all coefficient fields. The [specialization proof](research/finite-field-rank-specialization.md) preserves every finite rank profile over a finite field, and type amplification makes prime fields sufficient for the same infimum. Finding a better finite certificate remains the mathematical requirement.
 
 See the [research index](research/INDEX.md) for completed arguments, scoped obstructions, and older candidates. Active work can also appear in [open pull requests](https://github.com/1337isnot1337/integer-factoring/pulls); branch research is not automatically a result on `main`.
 

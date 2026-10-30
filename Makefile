@@ -18,6 +18,7 @@ verify-further:
 	python3 tools/check_vanishing_slack_transfer.py
 	python3 tools/check_optimized_divisor_bound.py
 	python3 tools/check_gap_free_seed_transfer.py
+	python3 tools/check_seed_field_selection.py
 
 verify-post-half:
 	python3 tools/check_half_piece_ranks.py --full
