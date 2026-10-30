@@ -1,4 +1,4 @@
-.PHONY: verify verify-docs verify-frontier verify-post-half verify-further verify-formal verify-k6 verify-half-appendix help
+.PHONY: verify verify-docs verify-frontier verify-post-half verify-further verify-energy-full verify-formal verify-k6 verify-half-appendix help
 
 verify: verify-docs verify-frontier verify-further
 	python3 -m unittest discover -s tests -v
@@ -24,6 +24,12 @@ verify-further:
 	python3 tools/check_hankel_digit_box.py
 	python3 tools/check_padic_digit_carry.py
 	python3 tools/check_small_space_berkowitz.py
+	python3 tools/check_border_nonunit_transfer.py
+	python3 tools/check_binary_energy_symmetry.py
+	python3 tools/check_weighted_energy.py
+
+verify-energy-full:
+	python3 tools/check_weighted_energy.py --full
 
 verify-post-half:
 	python3 tools/check_half_piece_ranks.py --full
@@ -58,6 +64,7 @@ help:
 	  'make verify-frontier      - focused frontier certificates' \
 	  'make verify-post-half     - larger optional matrix-rank checks' \
 	  'make verify-further       - new transfers, arithmetic bounds, and word certificates' \
+	  'make verify-energy-full   - larger optional weighted-energy certificate' \
 	  'make verify-docs          - check local Markdown file links' \
 	  'make verify-formal        - rebuild original Lean lemmas (Lean 4.35.0)' \
 	  'make verify-k6            - rebuild the certified 1/30 machine (Lean 4.35.0)' \

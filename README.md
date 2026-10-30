@@ -34,6 +34,7 @@ The composition uses the existing clique evaluator from [Anthropic's Appendix B]
 | Auxiliary divisor-count exponent with leading coefficient one | Ordinary unconditional bound; overall score unchanged | [Exact integer parameter](research/optimized-divisor-count-bound.md) |
 | All-field binary-word and middle-layer obstruction | Ordinary theorem; restricted family only | [Uniform rank floor `rho >= 3/4`](research/all-field-binary-word-barrier.md) |
 | Matrix-entry-oracle rank queries | Quasipolynomial time and linear auxiliary space; local algorithm only | [Berkowitz queries and pivot masks](research/small-space-berkowitz-rank.md) |
+| Border and finite-precision seed extraction | Ordinary conditional theorem; no stronger seed supplied | [Coefficient extraction and nonunit budgets](research/border-and-nonunit-seed-transfer.md) |
 
 The result table distinguishes verified machine bounds from conditional constructions and finite experiments. A merged PR or a passing finite test does not imply independent mathematical review.
 
@@ -46,6 +47,7 @@ make verify               # Python unit tests, exact certificates, and local lin
 make verify-frontier      # Focused research certificates
 make verify-post-half     # Larger optional rank tests
 make verify-further       # New transfers, arithmetic bounds, and word certificates
+make verify-energy-full   # Optional larger weighted-energy certificate
 make verify-docs          # Local Markdown-link check
 ```
 
@@ -83,6 +85,8 @@ Existence of one machine attaining the supremum of achievable scores also follow
 The [all-field binary-word theorem](research/all-field-binary-word-barrier.md) rules out crossing pieces invariant under simultaneous permutation of all binary positions, and includes middle Hamming layers and products of such layers. One piece must have both ranks at least `2^(3t/2-O(log^2 t))`, uniformly in the field, so this family cannot reach the half-rate threshold. This does not restrict arbitrary crossing constructions or factoring algorithms.
 
 See the [research index](research/INDEX.md) for completed arguments, scoped obstructions, and older candidates. Active work can also appear in [open pull requests](https://github.com/1337isnot1337/integer-factoring/pulls); branch research is not automatically a result on `main`.
+
+The same word certificate applies to [symmetric binary-energy shells](research/binary-energy-symmetry-barrier.md), giving `rho >= 3/4` for all fields. For the [specific reciprocal pencil](research/weighted-energy-reciprocal-pencil.md), a separate exact block argument proves the sharper optimum `rho = 1`. Other constructions on these low-growth spaces remain open. The [border-transfer theorem](research/border-and-nonunit-seed-transfer.md) makes polynomial or sufficiently precise truncated-parameter identities usable as exact finite seeds, with their coefficient-extraction costs included.
 
 ## Contribution and attribution
 

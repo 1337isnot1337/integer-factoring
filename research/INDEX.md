@@ -14,6 +14,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Border and nonunit seed extraction](border-and-nonunit-seed-transfer.md): finite-jet and polynomial identities yield exact seeds with rank-sum loss at most `(kt+1)` after `k` copies; weighted budgets still hold over finite chain rings.
+
 - [Vanishing-slack score transfer](vanishing-slack-score-transfer.md): arbitrary `o(lambda)` width error preserves the leaderboard exponent under stated uniform algorithms and entropy bounds; no improved unconditional exponent.
 - [Gap-free finite-seed score transfer](gap-free-seed-score-transfer.md): bounded search attains an enumerable rank-sum infimum, with no seed-gap or generation-speed hypothesis.
 - [Input-wise field and seed selection](universal-field-seed-selection.md): one uniform machine attains the finite-certificate endpoint over all coefficient fields, retaining one selected field throughout each input's recursion.
@@ -34,6 +36,10 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Half-piece ranks](half-piece-rank.md): finite crossing-piece rank evidence.
 
 ## Obstructions and work beyond 1/2
+
+- [All-field binary-energy shell symmetry](binary-energy-symmetry-barrier.md): an explicit balanced-layer embedding forces `rho >= 3/4` for every equal-weight-class-invariant crossing decomposition.
+- [Weighted-energy reciprocal pencil](weighted-energy-reciprocal-pencil.md): genuine projected tilting blocks prove the exact leading optimum `rho = 1` for the full characteristic-two coefficient/symmetry span.
+- [Lacunary kernel boundary](lacunary-kernel-boundary.md): binary-partition state growth, the exact scalar Artin--Schreier fixed field, and the limits of finite scalar locality; other exchange relations remain open.
 
 - [All-field binary-word and layer barrier](all-field-binary-word-barrier.md): a common eight-monomial functional forces `rho >= 3/4` for the entire position-invariant space, uniformly in the field, with middle-layer and product-layer versions.
 - [Characteristic-two word proof](modular-binary-word-barrier.md): the modular simple-module certificate and a composition-series rank argument underlying the all-field extension.
