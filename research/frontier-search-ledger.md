@@ -56,9 +56,11 @@ their needed uniform rank estimate is open.
   at widths 1, 2, and 3.
 - [Joint one/two-pair family](hamming-joint-optimum.md): exact width-two
   optimum 25 over `F_2`; its rounded width sum is still six.
-- [Joint relabeling family](hamming-relabeling.md): width-two upper bound
-  16 in a larger 102-dimensional span, six pieces and rounded width sum
-  four. No lower-bound certificate for this larger span is claimed.
+- [Joint relabeling family](hamming-relabeling-optimum.md): exact width-two
+  cutoff four over `F_2` in the larger 102-dimensional span, 20 pieces and
+  rounded width sum two. A four-entry separator and 60 complete slice
+  intersections prove the lower bound. The six-piece product-16 seed
+  remains a separate piece-count tradeoff.
 - [Extension-field scope control](hamming-joint-optimum.md#a-strict-extension-field-scope-control):
   the separating row-rank lemma fails over `F_4`, with explicit ranks
   `(4,10)`. The product 40 is not an improvement.

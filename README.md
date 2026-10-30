@@ -153,13 +153,17 @@ equality terms and counts separate two-dimensional-subspace blocks. Replay
 have admissible subexponential piece counts; their uniform rank bound is
 still open.
 A [joint label-relabeling construction](research/hamming-relabeling.md)
-improves the width-two finite witness from product 25 to **16**, using six
-pieces with rounded width sum four. Its larger span has dimension 102;
-no optimum is claimed there. The new seed gives effective linear-degree
+enlarges the width-two span to dimension 102. Its
+[exact finite optimum](research/hamming-relabeling-optimum.md) over `F_2`
+is **four**, attained by 20 pieces with rounded width sum two. A four-entry
+separator and 60 complete linear slice intersections prove the lower
+bound without a SAT dependency. A six-piece product-16 witness is retained
+as a separate tradeoff. These seeds give effective linear-degree
 tensor-power families outside the three-pairing obstruction. An exact
 constant block model reduces the aggregate family's rank calculation to
 smaller repeated blocks; its uniform contraction remains open. Replay
-`python3 tools/check_hamming_relabeling.py`.
+`python3 tools/check_hamming_relabeling.py` and
+`python3 tools/check_hamming_relabeling_optimum.py`.
 
 A [complete-piece recombination search](research/modular-recombination.md)
 reduces the maximum rank product from 27 to 4 on the three-label modular

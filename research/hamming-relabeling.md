@@ -2,6 +2,11 @@
 
 ## Finite result
 
+The [subsequent complete lower-bound check](hamming-relabeling-optimum.md)
+proves exact cutoff four in this 102-dimensional span, with a 20-piece
+witness. The six-piece cutoff-16 seed below remains useful as a different
+piece-count tradeoff and for its smaller algebraic block model.
+
 The earlier [joint one/two-pair span](hamming-joint-optimum.md) has exact
 cutoff 25 over `F_2`, at binary width two. Applying the same label
 permutation to all four coordinates preserves the crossing and both

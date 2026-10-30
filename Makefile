@@ -44,6 +44,7 @@ verify-frontier:
 	python3 tools/check_pairing_small_seeds.py
 	python3 tools/check_affine_code_barrier.py
 	python3 tools/check_hamming_relabeling.py
+	python3 tools/check_hamming_relabeling_optimum.py
 	python3 tools/check_modular_central_rank.py
 	python3 tools/check_modular_binary_central_rank.py
 	python3 tools/check_three_label_span.py
