@@ -142,6 +142,11 @@ profile using 23 fixed four-leg polynomial tensors. Permuting all non-low
 bit positions, including the leading position, proves that only polynomially
 many bounded-weight multisets need testing. This reduces the search without
 claiming a uniform rank saving. Run `python3 tools/check_hamming_tensor_power.py`.
+A [sparse-width interpolation theorem](research/sparse-width-interpolation.md)
+shows that a future rank improvement on an unbounded sequence with polynomial
+gaps suffices, using the wider-piece transfer in PR #23. Its checker is
+`python3 tools/check_sparse_width_interpolation.py`; finite seeds alone do not
+meet its hypotheses.
 
 A [reflected particle-hole identity](research/modular-particle-hole.md)
 gives an exact compression rule at every binary mode-block size. Above half
@@ -363,6 +368,10 @@ requires real-number approximation in the algorithm.
   coefficient algebras. [Identity checks](evidence/modular-crossing.json)
   and [sparse-recovery checks](evidence/sparse-divisor-nonzeroness.json)
   cover their finite scope separately from the asymptotic proofs.
+  A [quantitative endpoint refinement](research/modular-half-endpoint.md) gives
+  width slack `O(sqrt(lambda))`; the wider-slack transfer at PR #23 / 6dd2901
+  then reaches exact exponent `1/2` for this modular family, without a new
+  improvement over the existing half-rate bound.
 - [Baseline audit](research/baseline-audit.md): exact depth recurrence,
   contraction, all-level cost bound, and machine-cost bridge.
 - [Verified k6 theorem](research/verified-k6.md): complete machine proof,
