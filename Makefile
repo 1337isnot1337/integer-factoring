@@ -30,6 +30,9 @@ verify-further:
 	python3 tools/check_border_nonunit_transfer.py
 	python3 tools/check_commuting_halves_matrix_seeds.py
 	python3 tools/check_boundary_stable_catalytic.py
+	python3 tools/check_reduction_map_fierz.py
+	python3 tools/check_binary_two_piece_f4_boundary.py
+	python3 tools/check_three_piece_binary_boundary.py
 	python3 tools/check_twisted_channel_walks.py
 	python3 tools/check_channel_flow_duals.py
 	python3 tools/check_component_channel_walks.py
@@ -60,6 +63,7 @@ verify-search-native:
 	python3 tools/check_matrix_unit_monodromy.py
 	python3 tools/check_exterior_monodromy.py
 	python3 tools/check_weyl_rank_one_ideal.py --energy 8
+	python3 tools/check_odd_weyl_spectrum.py
 
 verify-weyl-orbit:
 	python3 tools/check_weyl_rank_one_ideal.py

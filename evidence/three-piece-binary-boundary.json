@@ -1,0 +1,152 @@
+{
+  "all_nontrivial_terminal_matrices": [
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      2,
+      1,
+      2
+    ],
+    [
+      3,
+      1,
+      1
+    ],
+    [
+      4,
+      1,
+      2
+    ],
+    [
+      5,
+      1,
+      1
+    ],
+    [
+      6,
+      2,
+      1
+    ],
+    [
+      7,
+      2,
+      2
+    ],
+    [
+      8,
+      1,
+      1
+    ],
+    [
+      10,
+      1,
+      1
+    ],
+    [
+      11,
+      2,
+      1
+    ],
+    [
+      12,
+      1,
+      1
+    ],
+    [
+      13,
+      2,
+      1
+    ],
+    [
+      14,
+      2,
+      2
+    ],
+    [
+      15,
+      1,
+      2
+    ]
+  ],
+  "checker_sha256": "b3f4991b95236da057cf886ecd8561e6eaa7f7e9355da2c736d8ca684f7b67a6",
+  "exact_optimal_spectral_base": 4,
+  "exact_radical_inequalities": 131072,
+  "external_labels": 2,
+  "field": "F_2",
+  "frontiers": [
+    {
+      "frontier": [
+        {
+          "rank_products": [
+            0,
+            4
+          ],
+          "witness_tensor_mask": 513
+        },
+        {
+          "rank_products": [
+            1,
+            1
+          ],
+          "witness_tensor_mask": 1
+        },
+        {
+          "rank_products": [
+            4,
+            0
+          ],
+          "witness_tensor_mask": 0
+        }
+      ],
+      "target_matrix_rank": 1,
+      "target_tensor_mask": 513
+    },
+    {
+      "frontier": [
+        {
+          "rank_products": [
+            0,
+            16
+          ],
+          "witness_tensor_mask": 33345
+        },
+        {
+          "rank_products": [
+            1,
+            9
+          ],
+          "witness_tensor_mask": 577
+        },
+        {
+          "rank_products": [
+            4,
+            4
+          ],
+          "witness_tensor_mask": 65
+        },
+        {
+          "rank_products": [
+            9,
+            1
+          ],
+          "witness_tensor_mask": 1
+        },
+        {
+          "rank_products": [
+            16,
+            0
+          ],
+          "witness_tensor_mask": 0
+        }
+      ],
+      "target_matrix_rank": 2,
+      "target_tensor_mask": 33345
+    }
+  ],
+  "scope": "Specified three-piece right-boundary family and word-rank spectral bound only; no general tensor-rank or factoring lower bound.",
+  "status": "passed",
+  "tensors_per_target_rank": 65536
+}
