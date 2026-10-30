@@ -17,6 +17,7 @@ verify-post-half:
 	python3 tools/check_half_restricted_labels.py
 
 verify-frontier:
+	python3 tools/check_rational_height_transfer.py
 	python3 tools/check_subexponential_piece_transfer.py
 	python3 tools/check_piece_transfer.py
 	python3 tools/check_boson_truncation.py

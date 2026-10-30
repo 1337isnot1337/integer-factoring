@@ -78,6 +78,15 @@ the rate-derived exponent. The width sum can have error as large as
 sum, exact recurrence checks, and independent internal review support
 this conditional theorem. It supplies no new family with a smaller rate.
 
+The [rational-height extension](research/rational-height-transfer.md)
+also removes the old polynomial coefficient-height requirement. A uniform
+`2^O(lambda)` bit-time routine can output rational factors with exponentially
+many bits. The evaluator's degree is at most `P^6`, so exact rational
+arithmetic still fits the rate. As a consequence, uniformly computable
+piece entries and a proved asymptotic rank profile suffice: exact Gaussian
+elimination constructs the factors within the allowed cost. This result
+does not replace the missing rank profile with finite rank experiments.
+
 A [normalized modular construction](research/modular-crossing.md) supplies
 such a family for every fixed `1/sqrt(2)<rho<1`. It removes the vanishing
 factorial multiplier and permits rings with zero divisors. Its present

@@ -1,0 +1,155 @@
+{
+  "exact_rank_factorizations": 35,
+  "grouped_query_degree_cases": 63,
+  "label_envelope_cases": 39,
+  "negative_controls": [
+    "repeated squaring defeats a size-only or degree-zero-constant height estimate",
+    "perturbing a nonzero factor changes the reconstructed matrix"
+  ],
+  "new_factoring_exponent_claimed": false,
+  "rational_circuits": [
+    {
+      "input_bits": 4,
+      "largest_output_bits": 17,
+      "nodes": 28,
+      "proved_height_bound": 577,
+      "syntactic_degree": 4
+    },
+    {
+      "input_bits": 3,
+      "largest_output_bits": 15,
+      "nodes": 28,
+      "proved_height_bound": 691,
+      "syntactic_degree": 6
+    },
+    {
+      "input_bits": 4,
+      "largest_output_bits": 11,
+      "nodes": 28,
+      "proved_height_bound": 1297,
+      "syntactic_degree": 9
+    },
+    {
+      "input_bits": 4,
+      "largest_output_bits": 20,
+      "nodes": 28,
+      "proved_height_bound": 865,
+      "syntactic_degree": 6
+    },
+    {
+      "input_bits": 4,
+      "largest_output_bits": 24,
+      "nodes": 28,
+      "proved_height_bound": 1009,
+      "syntactic_degree": 7
+    },
+    {
+      "input_bits": 4,
+      "largest_output_bits": 11,
+      "nodes": 28,
+      "proved_height_bound": 1153,
+      "syntactic_degree": 8
+    },
+    {
+      "input_bits": 5,
+      "largest_output_bits": 29,
+      "nodes": 28,
+      "proved_height_bound": 1212,
+      "syntactic_degree": 7
+    },
+    {
+      "input_bits": 5,
+      "largest_output_bits": 58,
+      "nodes": 28,
+      "proved_height_bound": 2077,
+      "syntactic_degree": 12
+    },
+    {
+      "input_bits": 5,
+      "largest_output_bits": 5,
+      "nodes": 28,
+      "proved_height_bound": 1558,
+      "syntactic_degree": 9
+    },
+    {
+      "input_bits": 5,
+      "largest_output_bits": 21,
+      "nodes": 28,
+      "proved_height_bound": 1212,
+      "syntactic_degree": 7
+    },
+    {
+      "input_bits": 5,
+      "largest_output_bits": 23,
+      "nodes": 28,
+      "proved_height_bound": 1039,
+      "syntactic_degree": 6
+    },
+    {
+      "input_bits": 5,
+      "largest_output_bits": 32,
+      "nodes": 28,
+      "proved_height_bound": 1904,
+      "syntactic_degree": 11
+    },
+    {
+      "input_bits": 5,
+      "largest_output_bits": 65,
+      "nodes": 28,
+      "proved_height_bound": 1904,
+      "syntactic_degree": 11
+    },
+    {
+      "input_bits": 5,
+      "largest_output_bits": 22,
+      "nodes": 28,
+      "proved_height_bound": 1212,
+      "syntactic_degree": 7
+    },
+    {
+      "input_bits": 6,
+      "largest_output_bits": 26,
+      "nodes": 28,
+      "proved_height_bound": 1819,
+      "syntactic_degree": 9
+    },
+    {
+      "input_bits": 6,
+      "largest_output_bits": 27,
+      "nodes": 28,
+      "proved_height_bound": 1819,
+      "syntactic_degree": 9
+    },
+    {
+      "input_bits": 6,
+      "largest_output_bits": 31,
+      "nodes": 28,
+      "proved_height_bound": 2021,
+      "syntactic_degree": 10
+    },
+    {
+      "input_bits": 6,
+      "largest_output_bits": 15,
+      "nodes": 28,
+      "proved_height_bound": 809,
+      "syntactic_degree": 4
+    },
+    {
+      "input_bits": 5,
+      "largest_output_bits": 33,
+      "nodes": 33,
+      "proved_height_bound": 204,
+      "syntactic_degree": 1
+    },
+    {
+      "input_bits": 1,
+      "largest_output_bits": 4097,
+      "nodes": 14,
+      "proved_height_bound": 118785,
+      "syntactic_degree": 4096
+    }
+  ],
+  "reconstructed_matrix_entries": 924,
+  "schedule_stopping_cases": 273,
+  "scope": "finite exact degree, rational-height, and rank-factor checks; no improved crossing profile"
+}
