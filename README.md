@@ -144,6 +144,14 @@ this is not a factoring lower bound. Replay
 The small-seed proof, exact block sums, direct Kronecker rank oracles, and
 finite complete-type-span optima are checked by
 `python3 tools/check_pairing_small_seeds.py`.
+For explicit binary restrictions, an
+[affine-function code analysis](research/affine-code-barrier.md) gives a
+constant-piece, exponentially large-degree family but proves its complete
+coefficient symmetry span forces `rho>=1`. The argument corrects low-rank
+equality terms and counts separate two-dimensional-subspace blocks. Replay
+`python3 tools/check_affine_code_barrier.py`. Quadratic evaluation codes
+have admissible subexponential piece counts; their uniform rank bound is
+still open.
 
 A [complete-piece recombination search](research/modular-recombination.md)
 reduces the maximum rank product from 27 to 4 on the three-label modular

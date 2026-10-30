@@ -35,6 +35,13 @@ is now excluded for every fixed seed. It also permits `o(t)` separate
 position classes. New local tensors or a proved domain restriction are
 needed to escape this particular obstruction.
 
+The [affine-code restriction](affine-code-barrier.md) has constant raw
+piece count despite exponential degree, but its full coefficient symmetry
+span forces `rho>=1` after a low-rank correction. Quadratic Boolean
+evaluation codes give a different effective restricted-domain family
+with `2^O(sqrt(lambda))` raw pieces. They remain outside these obstructions;
+their needed uniform rank estimate is open.
+
 ## Reliable finite checkpoints
 
 - [Three-label source span](modular-recombination.md): exact optimum four
