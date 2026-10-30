@@ -128,6 +128,17 @@ any crossing decomposition in that space has rank sum at least `d^(3/2)`,
 regardless of its number of pieces. Off-diagonal nonlinear selectors and
 nonlinear label maps remain separate construction routes.
 
+The broader [Boolean-incidence bound](research/incidence-kernel-rank-sum-barrier.md)
+forces the same `d^(3/2)` cost over every field for all conservation
+kernels supported on `w subset S`, including arbitrary row controls.
+Every nonzero unrestricted conservation kernel still costs at least `d`,
+so a passing 128-label seed in that larger space has at most seven pieces.
+A [fixed-target Feistel quotient](research/fixed-target-feistel-barrier.md)
+also excludes arbitrary controlled-translation coefficient spans with
+one common target set. Two nonlinear rounds with different target sets
+escape this quotient: a checked sixteen-label tensor has ranks
+`(254,18)`, while the proposed quotient has ranks `(256,1)`.
+
 An [exact exterior-algebra construction](research/bi-exterior-crossing-algebra.md)
 now realizes both cut ranks as multiplication ranks in one square-zero
 algebra. This permits arbitrary position-dependent and mixed-degree

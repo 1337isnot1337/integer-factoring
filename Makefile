@@ -37,7 +37,9 @@ verify-frontier:
 	python3 tools/check_word_restriction_barrier.py
 	python3 tools/check_code_sections.py
 	python3 tools/check_frame_filtration.py
+	python3 tools/check_feistel_filtration.py
 	python3 tools/check_diagonal_word_rank_sum.py
+	python3 tools/check_incidence_kernel_rank_sum.py
 	python3 tools/check_bi_exterior_crossing_algebra.py
 	python3 tools/check_bi_exterior_degree_budget.py
 	python3 tools/check_nonlinear_layer_probe.py
