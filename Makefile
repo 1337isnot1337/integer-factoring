@@ -1,6 +1,6 @@
-.PHONY: verify verify-docs verify-frontier verify-post-half verify-formal verify-k6 verify-half-appendix help
+.PHONY: verify verify-docs verify-frontier verify-constructions verify-post-half verify-formal verify-k6 verify-half-appendix help
 
-verify: verify-docs verify-frontier
+verify: verify-docs verify-frontier verify-constructions
 	python3 -m unittest discover -s tests -v
 	python3 -m unittest tools.check_crossing -v
 	python3 tools/check_coefficient_basis.py
@@ -13,6 +13,9 @@ verify: verify-docs verify-frontier
 
 verify-docs:
 	python3 tools/check_docs.py
+
+verify-constructions:
+	python3 tools/check_simultaneous_seed_endpoint.py
 
 verify-post-half:
 	python3 tools/check_half_piece_ranks.py --full
@@ -45,6 +48,7 @@ help:
 	@printf '%s\n' \
 	  'make verify               - unit tests, exact certificates, and local documentation links' \
 	  'make verify-frontier      - focused frontier certificates' \
+	  'make verify-constructions - new crossing and resource-interface certificates' \
 	  'make verify-post-half     - larger optional matrix-rank checks' \
 	  'make verify-docs          - check local Markdown file links' \
 	  'make verify-formal        - rebuild original Lean lemmas (Lean 4.35.0)' \
