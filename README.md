@@ -63,6 +63,14 @@ alone. The [restricted-label counterexample](research/half-restricted-labels.md)
 and [quantitative span theorem](research/half-restricted-span.md) show why
 another proposed dimension reduction fails on the full restricted spaces.
 
+The [Fourier gate construction](research/fourier-multiplication-gates.md)
+gives polynomial-time point queries for every original multiplication
+gate after `exp(O(sqrt(n)))` character-field preprocessing. It includes
+prefix weights, composite-modulus bilinear sums, and all carry endpoints.
+A characteristic-two involution also reduces unit Kloosterman sums to
+quadratic roots. These are explicit local contraction primitives; a
+global evaluation method with a better rate is still missing.
+
 The [general transfer theorem](research/pieces-to-factoring.md) proves that
 an effective crossing family with rational parameter `rho` gives factoring
 exponent `log2(1/rho)`. It includes a computable pad and the complete bit-cost
