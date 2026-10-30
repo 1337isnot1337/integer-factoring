@@ -21,6 +21,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Run-compressed crossing ranks](two-state-run-rank-compression.md): exact local Jordan decomposition, interval-type grouping, and quadratic-pivot rank reduction accelerate longer constructive searches.
 
 - [Border and nonunit seed extraction](border-and-nonunit-seed-transfer.md): finite-jet and polynomial identities yield exact seeds with rank-sum loss at most `(kt+1)` after `k` copies; weighted budgets still hold over finite chain rings.
+- [Matrix-valued seeds with commuting halves](commuting-halves-matrix-seed-transfer.md): ordered type amplification pays a fixed matrix scalarization cost once; normalized trace and a common product-vector argument identify two cases that already collapse to scalar seeds.
 
 - [Vanishing-slack score transfer](vanishing-slack-score-transfer.md): arbitrary `o(lambda)` width error preserves the leaderboard exponent under stated uniform algorithms and entropy bounds; no improved unconditional exponent.
 - [Gap-free finite-seed score transfer](gap-free-seed-score-transfer.md): bounded search attains an enumerable rank-sum infimum, with no seed-gap or generation-speed hypothesis.

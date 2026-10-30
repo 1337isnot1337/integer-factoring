@@ -36,6 +36,7 @@ The composition uses the existing clique evaluator from [Anthropic's Appendix B]
 | Matrix-entry-oracle rank and affine queries | Quasipolynomial time and polylogarithmic auxiliary space; local algorithm only | [Polynomial weighting and recomputed bases](research/polylog-space-rank-recovery.md), [scalar Berkowitz foundation](research/small-space-berkowitz-rank.md) |
 | Minimum-channel matrix factors over truncated polynomial rings | Same local time-space form after coefficient linearization; includes nonunit factors | [Smith counts and virtual generator selection](research/polylog-space-jet-factorization.md) |
 | Border and finite-precision seed extraction | Ordinary conditional theorem; no stronger seed supplied | [Coefficient extraction and nonunit budgets](research/border-and-nonunit-seed-transfer.md) |
+| Ordered matrix-valued seed transfer | Ordinary conditional theorem with cross-half commutation; no improving seed supplied | [One scalarization after type amplification](research/commuting-halves-matrix-seed-transfer.md) |
 
 The result table distinguishes verified machine bounds from conditional constructions and finite experiments. A merged PR or a passing finite test does not imply independent mathematical review.
 
@@ -97,6 +98,8 @@ The [finite-state polynomial families](research/finite-state-pairing-crossings.m
 The [Witt state-space construction](research/witt-duality-and-vertex-jets.md) proves an exact odd Gram determinant and effective homogeneous duals at every energy. It restores the pairing on a space with binary-partition growth. A separate rank budget prevents a direct small-window substitution, and the tested scalar exchange interface fails; the duality result supplies no stronger factoring exponent.
 
 The [weighted Weyl construction](research/weighted-weyl-and-multivariate-extraction.md) gives a different exact crossing with ordinary occupation carries and explicit factor channels. Its original coefficient span has an [all-energy detecting row filtration](research/weighted-weyl-row-filtration.md), which prevents a half-rate improvement. At energy 32, an [exact protected minor](research/weighted-weyl-protected-minor.md) also excludes arbitrary recombinations of all external symmetry images. The same construction note extends finite-jet extraction to several parameters, with its coefficient cost included. The three standard-library checks are part of `make verify-further`.
+
+The [matrix-valued seed interface](research/commuting-halves-matrix-seed-transfer.md) allows noncommutativity within each factor half while retaining exact ordered amplification. A fixed auxiliary matrix dimension is paid once. Full tensor-factor halves collapse to an ordinary scalar seed when normalized trace is available; two-by-two halves in matrix order four collapse after a finite field extension in every characteristic. The remaining larger characteristic-dividing cases are constructive search targets. Exact ordered-product, field-extension, and negative interleaving checks are included in `make verify-further`.
 
 ## Contribution and attribution
 

@@ -27,6 +27,7 @@ verify-further:
 	python3 tools/check_polylog_space_rank.py
 	python3 tools/check_truncated_ring_factorization.py
 	python3 tools/check_border_nonunit_transfer.py
+	python3 tools/check_commuting_halves_matrix_seeds.py
 	python3 tools/check_binary_energy_symmetry.py
 	python3 tools/check_weighted_energy.py
 	python3 tools/check_witt_interfaces.py
