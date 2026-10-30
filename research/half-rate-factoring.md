@@ -326,7 +326,10 @@ practical factoring implementation. They test the new finite adapters,
 source-derived integer inequalities, prefix search, and negative controls.
 The infinite-input theorem is the written proof and its cited prior
 theorems, not an inference from successful small tests. No new Lean
-formalization or fresh build of the Appendix B development is included.
+formalization of the full composition or fresh build of the Appendix B
+development is claimed. The separate [Lean pad lemma](../formal/HalfPad.lean)
+checks the sufficient-pad arithmetic assuming the evaluator's stated bounds;
+it does not construct the factoring machine.
 
 The existing half-pieces channel counts have a proved asymptotic barrier
 at `1/2` within that particular interface; see the evaluator audit.

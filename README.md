@@ -26,7 +26,7 @@ under the published rule and the rate of the reference's square-root-logarithm
 conjecture.
 
 **Evidence level: complete ordinary mathematical argument, with source audit
-and finite checks.** The composition has not been formalized in Lean or
+and finite checks.** The complete composition has not been formalized in Lean or
 reviewed independently outside this research session. No leaderboard
 acceptance or practical factoring speedup is claimed. The prior source
 theorems supply the evaluator and reduction; this repository does not claim
@@ -182,7 +182,7 @@ identifies the evidence for each result.
 
 | Result | Value | Evidence and scope |
 | --- | --- | --- |
-| Appendix B factoring composition | `alpha = 1/2` | [Complete ordinary proof](research/half-rate-factoring.md), source and interface audit, finite adapter and arithmetic checks; no new Lean formalization |
+| Appendix B factoring composition | `alpha = 1/2` | [Complete ordinary proof](research/half-rate-factoring.md), source and interface audit, finite adapter and arithmetic checks. [Lean pad arithmetic](formal/HalfPad.lean) proves a supporting bound; the machine composition remains open. |
 | **Complete k6 factoring theorem** | **`alpha = 1/30`** | **Lean verifies one modified machine, all runtime costs, the real-logarithm conversion, and the strict exponent comparison** |
 | Sharper rate for the same k6 machine | `beta_12 = log(12/11)/log12 = 0.0350159540... > 1/29` | [Complete ordinary derivation](research/k6-sharp-rate.md), using the existing machine bridge; new rate not Lean formalized |
 | Explicit analysis of the unchanged baseline | `alpha = log(12/11)/log(16) = 0.0313827205...` | Handwritten derivation from the pinned source's inequalities |
