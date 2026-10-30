@@ -1,5 +1,11 @@
 # Weighted radical-seed powers and exact small modules
 
+The finite computations below are now subsumed by an
+[all-power common-character theorem](symplectic-seed-character-barrier.md)
+for the full 24- and 26-label coefficient spans. That theorem also covers
+extension fields and arbitrary independent local curves. The exact module
+decompositions and finite records here remain useful reproduction data.
+
 ## A larger common-parameter family
 
 For the 26-label radical seed, remove its known common scalar factor
