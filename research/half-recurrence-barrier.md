@@ -9,9 +9,10 @@ and its explicit operator identities.
 
 The evaluator source is `anthropics/formal-math` at
 [`16a5ce41304fcdaea4e0be7c132e1c361dc26da5`](https://github.com/anthropics/formal-math/tree/16a5ce41304fcdaea4e0be7c132e1c361dc26da5/eth).
-The active [factoring composition in PR #19](https://github.com/1337isnot1337/integer-factoring/pull/19)
-uses its exponent `1/2`. This note does not duplicate that composition or
-change the separate Lean-certified exponent `1/30`.
+The [factoring composition](half-rate-factoring.md) uses its exponent
+`1/2`; [`formal-appendix/HalfTheorem.lean`](../formal-appendix/HalfTheorem.lean)
+now proves the exact pinned machine statement in Lean. This note does
+not change that bound or the separate earlier `1/30` theorem.
 
 The arguments below are ordinary proofs. The accompanying Python program
 checks finite examples of the operator obstruction with exact integers.
