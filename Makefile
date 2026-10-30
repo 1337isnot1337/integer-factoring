@@ -34,6 +34,7 @@ verify-frontier:
 	python3 tools/check_sparse_width_interpolation.py
 	python3 tools/check_hamming_sectors.py
 	python3 tools/check_hamming_complement.py
+	python3 tools/check_hamming_joint.py
 	python3 tools/check_modular_central_rank.py
 	python3 tools/check_modular_binary_central_rank.py
 	python3 tools/check_three_label_span.py

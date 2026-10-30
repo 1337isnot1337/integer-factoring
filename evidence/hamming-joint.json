@@ -1,0 +1,212 @@
+{
+  "binary_width": 2,
+  "pair_counts": [
+    1,
+    2
+  ],
+  "span_dimension": 33,
+  "successive_span_dimensions": [
+    [
+      1,
+      13
+    ],
+    [
+      2,
+      33
+    ]
+  ],
+  "witness": [
+    {
+      "row_rank": 16,
+      "column_rank": 1,
+      "terms": [
+        {
+          "pair_count": 1,
+          "degree": 0,
+          "permutation": [
+            0,
+            2,
+            1,
+            3
+          ]
+        }
+      ],
+      "basis_coefficient_mask": "0x3"
+    },
+    {
+      "row_rank": 1,
+      "column_rank": 16,
+      "terms": [
+        {
+          "pair_count": 1,
+          "degree": 0,
+          "permutation": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "pair_count": 1,
+          "degree": 1,
+          "permutation": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      ],
+      "basis_coefficient_mask": "0x4"
+    },
+    {
+      "row_rank": 4,
+      "column_rank": 4,
+      "terms": [
+        {
+          "pair_count": 2,
+          "degree": 5,
+          "permutation": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "pair_count": 2,
+          "degree": 5,
+          "permutation": [
+            1,
+            0,
+            3,
+            2
+          ]
+        }
+      ],
+      "basis_coefficient_mask": "0x80000"
+    },
+    {
+      "row_rank": 4,
+      "column_rank": 4,
+      "terms": [
+        {
+          "pair_count": 1,
+          "degree": 6,
+          "permutation": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "pair_count": 1,
+          "degree": 6,
+          "permutation": [
+            1,
+            0,
+            3,
+            2
+          ]
+        },
+        {
+          "pair_count": 2,
+          "degree": 5,
+          "permutation": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "pair_count": 2,
+          "degree": 5,
+          "permutation": [
+            1,
+            0,
+            3,
+            2
+          ]
+        }
+      ],
+      "basis_coefficient_mask": "0x80200"
+    },
+    {
+      "row_rank": 3,
+      "column_rank": 4,
+      "terms": [
+        {
+          "pair_count": 1,
+          "degree": 1,
+          "permutation": [
+            0,
+            2,
+            1,
+            3
+          ]
+        },
+        {
+          "pair_count": 1,
+          "degree": 7,
+          "permutation": [
+            1,
+            0,
+            3,
+            2
+          ]
+        }
+      ],
+      "basis_coefficient_mask": "0x904"
+    },
+    {
+      "row_rank": 5,
+      "column_rank": 5,
+      "terms": [
+        {
+          "pair_count": 1,
+          "degree": 1,
+          "permutation": [
+            0,
+            2,
+            1,
+            3
+          ]
+        },
+        {
+          "pair_count": 1,
+          "degree": 6,
+          "permutation": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "pair_count": 1,
+          "degree": 9,
+          "permutation": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      ],
+      "basis_coefficient_mask": "0x1200"
+    }
+  ],
+  "maximum_rank_product": 25,
+  "witness_piece_count": 6,
+  "status": "positive joint-span witness; optimality not claimed",
+  "maximum_binary_width_sum": 6,
+  "crossing_entries_checked": 256,
+  "sha256": {
+    "tools/check_hamming_joint.py": "26894fca142db4c072b4241c81454b0abdf2f42e7964b4c240914a2113c73209",
+    "tools/hamming_sectors.py": "ec0b9d70f20904e6bab49870469ed5b442212bee8f50a2e12f6bfa67f1d136ab",
+    "tools/hamming_pfaffian.py": "1a402348caafc41b153bc67981469ca9ceb50a6f062eafe69f71daf8aeaa92c6"
+  }
+}

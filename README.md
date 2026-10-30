@@ -152,6 +152,9 @@ linear-degree construction budget. Their weighted complement identity proves
 that high-occupancy and complementary coefficient symmetry spans have exactly
 the same optimized rank cutoff. This also strengthens the earlier source
 particle-hole identity; individual coefficient ranks need not be monotone.
+A joint one- and two-pair witness reduces the two-bit rank-product cutoff
+from 36 to 25 with six pieces, independently replayed by
+`python3 tools/check_hamming_joint.py`; its rounded width sum is still six.
 Run `python3 tools/check_hamming_sectors.py` and
 `python3 tools/check_hamming_complement.py` (or add `--full`).
 

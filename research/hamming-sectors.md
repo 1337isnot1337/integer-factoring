@@ -18,7 +18,10 @@ by reflected complement, **the full coefficient symmetry spans and their
 optimized rank-product cutoffs are identical**. This concerns complete
 linear spans; it does not assert monotonicity for individual coefficients.
 
-The finite examples below do not improve the existing all-one families.
+The separate higher-sector examples below do not improve the existing all-one
+families. A joint one- and two-pair span does: at binary width two it has a
+six-piece crossing witness of maximum rank product 25, below the one-pair
+full-span optimum 36. This remains a finite gain.
 No uniform leading rank bound below the half threshold is proved. All
 statements are ordinary mathematics, with substantial OpenAI assistant
 support and no new Lean formalization. The underlying folded Pfaffian
@@ -252,3 +255,27 @@ exact division of complete profiles, coefficient-span equality, and an
 omitted-factor negative control. Each evidence file records the actual
 counts, parameters, and source hashes. The all-size theorems rely on the
 proofs above, not on extrapolating those finite checks.
+
+## Joint-sector finite gain
+
+The one-pair and two-pair binary families at width two have joint symmetry
+span dimension 33. Six explicitly stored tensors sum to the crossing and
+have rank pairs
+
+```text
+(16,1), (1,16), (4,4), (4,4), (3,4), (5,5).
+```
+
+Their maximum product is 25. Each tensor uses at most four original
+coefficient symmetry images, and the witness uses only 14 such images in
+total. The [evidence](../evidence/hamming-joint.json) records every sector,
+coefficient degree, coordinate permutation, and both ranks.
+`python3 tools/check_hamming_joint.py` reconstructs them from the polynomial
+profiles, verifies ranks by independent dense elimination, and checks all
+256 crossing entries. No heuristic-search program is needed for replay.
+
+The maximum rounded binary width sum is still six, as for the earlier
+rank-product cutoff 36. This finite rank improvement is therefore not a
+new channel-width rate. Optimality within the 33-dimensional joint span
+is not claimed. The all-size joint-span optimizer is effective by Section 2;
+its uniform leading rank bound remains open.
