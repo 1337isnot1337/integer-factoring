@@ -120,6 +120,12 @@ alternating terms cannot cancel its primitive fusion image. The size of
 that image still needs an asymptotic bound. This restricted identity does
 not establish optimality of the full central piece.
 
+The [frontier ledger](research/frontier-search-ledger.md) collects the
+current rank obligations and exact finite checkpoints. It also proves that
+a fixed finite active-mode sector with frozen outside occupancy is not
+preserved by the retained source pair operators;
+`python3 tools/check_frozen_core_leak.py` replays the explicit coefficients.
+
 A [complete-piece recombination search](research/modular-recombination.md)
 reduces the maximum rank product from 27 to 4 on the three-label modular
 example, with explicit decomposition witnesses and exact replay. An exhaustive
