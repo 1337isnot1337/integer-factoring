@@ -388,6 +388,20 @@ This refutes the literal dimension substitution. It does not exclude
 asymptotic compression, and independence of a factor block does not imply
 the same rank after multiplication by the other factor.
 
+The [quantitative intermediate-span argument](half-restricted-span.md)
+goes further for the full restricted label spaces. Write `D=p_L(h)`.
+For `L>=4` and `h>=2L^2`, some actual `i=2h` row-factor block has rank at
+least `D^2/(2^(8L) h (4h+1))`. In the proposed regime `h=lambda^c`,
+`c>2`, and `L=Theta(lambda/log lambda)`, this is `D^(2-o(1))`, while
+`p_L(2h)=D^(1+o(1))`. The proof uses an invertible normally ordered
+operator map and explicit lattice counts.
+
+For a chosen binary subset, the bound depends on how many short operator
+labels it retains. A set of `d` entirely short labels gives rank at least
+`d^2/(4h+1)` in some factor block. Encodings that omit those labels, and
+compression after the two factors are composed, remain open. The argument
+does not establish a lower bound for the final pieces or for factoring.
+
 ## 9. Other published evaluator and remaining mathematical target
 
 The

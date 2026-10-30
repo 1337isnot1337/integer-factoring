@@ -47,8 +47,10 @@ operator interfaces, gives an exact counterexample to projecting away high
 modes, and checks finite matrix ranks. A [network tradeoff](research/half-top-structure.md)
 rules out improving this explicit constructor by regrouping and separate
 wire compression alone. A [restricted-label counterexample](research/half-restricted-labels.md)
-shows why another proposed dimension reduction fails. These results establish
-no exponent above `1/2` and no general factoring lower bound.
+and a [quantitative intermediate-span proof](research/half-restricted-span.md)
+show why another proposed dimension reduction fails on the full restricted
+spaces. These results establish no exponent above `1/2` and no general
+factoring lower bound.
 
 ## Lean theorem: exponent 1/30
 
@@ -222,6 +224,10 @@ requires real-number approximation in the algorithm.
 - [Restricted-label counterexample](research/half-restricted-labels.md):
   an exact [nonzero minor](evidence/half-restricted-labels.json) disproves the
   literal low-mode product-span bound while preserving the crossing identity.
+- [Quantitative restricted-label spans](research/half-restricted-span.md):
+  an almost full intermediate-dimension bound, with exact constants and
+  explicit conditions on any selected binary subset. It does not bound the
+  ranks of the final composed pieces.
 - [Baseline audit](research/baseline-audit.md): exact depth recurrence,
   contraction, all-level cost bound, and machine-cost bridge.
 - [Verified k6 theorem](research/verified-k6.md): complete machine proof,
