@@ -21,6 +21,9 @@ verify-further:
 	python3 tools/check_seed_field_selection.py
 	python3 tools/check_modular_binary_word_barrier.py
 	python3 tools/check_all_field_binary_word_barrier.py
+	python3 tools/check_hankel_digit_box.py
+	python3 tools/check_padic_digit_carry.py
+	python3 tools/check_small_space_berkowitz.py
 
 verify-post-half:
 	python3 tools/check_half_piece_ranks.py --full
