@@ -49,6 +49,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 ## Obstructions and work beyond 1/2
 
 - [Universal finite-size gates](noncommutative-crossing-finite-gates.md): all-field rank-sum bounds exclude every seed on at most five labels and every non-elementary group orbit family of order at most eight.
+- [Abelian midpoint blocks](noncommutative-crossing-abelian-midpoints.md): exact doubling-map column multiplicities, a real rank-floor lemma, and an all-field exclusion of every cyclic group.
+- [Involution-free orbit minors](noncommutative-crossing-involution-support.md): a diagonal-minor theorem for arbitrary group kernels, excluding odd-order groups, odd-order index-two extensions, and unique-involution groups over every field.
 - [Uniform six-pair boundary barrier](pfaffian-p6-boundary-orbit-barrier.md): the common active quotient and an invariant rank shift give an exact lower cost 834 for all cancelling sections with binary coefficients.
 - [Directions beyond half](post-half-directions.md): experiments, scope, and unresolved questions.
 - [Quadratic charges and label entropy](binary-quadratic-charge-shells.md): exact residue-syndrome characters and dimension bounds for joint eigenspaces of all low quadratic charges.

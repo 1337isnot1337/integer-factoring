@@ -30,6 +30,8 @@ verify-constructions:
 	python3 tools/check_noncommutative_crossing_pfaffian_isotropic.py
 	python3 tools/check_noncommutative_crossing_optimal_retracts.py
 	python3 tools/check_noncommutative_crossing_finite_gates.py
+	python3 tools/check_noncommutative_crossing_abelian_midpoints.py
+	python3 tools/check_noncommutative_crossing_involution_support.py
 	python3 tools/check_double_endpoint_retracts.py --cases full:3:3
 	python3 tools/check_noncommutative_crossing_group_degeneration.py
 
