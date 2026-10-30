@@ -1,0 +1,69 @@
+{
+  "expected_crossing": 2,
+  "label_domain": [
+    [
+      1,
+      1
+    ],
+    [
+      2
+    ]
+  ],
+  "maximum_mode": 2,
+  "original_piece_values": [
+    2,
+    -8,
+    28,
+    -56,
+    70,
+    -56,
+    28,
+    -8,
+    2
+  ],
+  "original_sum": 2,
+  "projected_piece_values": [
+    -36,
+    80,
+    -64,
+    8,
+    46,
+    -56,
+    28,
+    -8,
+    2
+  ],
+  "projected_sum": 0,
+  "s": [
+    -4,
+    -3,
+    -2,
+    -1,
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "source_commit": "16a5ce41304fcdaea4e0be7c132e1c361dc26da5",
+  "status": "exact finite counterexample; not a general restriction theorem",
+  "weight": 2,
+  "x_y_u_v": [
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      1
+    ]
+  ]
+}

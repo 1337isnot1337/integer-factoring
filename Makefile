@@ -1,4 +1,4 @@
-.PHONY: verify verify-frontier verify-formal verify-k6
+.PHONY: verify verify-frontier verify-post-half verify-formal verify-k6
 
 verify: verify-frontier
 	python3 -m unittest discover -s tests -v
@@ -7,6 +7,12 @@ verify: verify-frontier
 	python3 tools/parameters.py
 	python3 tools/check_k6_sharp_rate.py
 	python3 tools/check_half_rate.py
+	python3 tools/check_half_piece_ranks.py --no-numpy
+	python3 tools/check_half_projection.py
+
+verify-post-half:
+	python3 tools/check_half_piece_ranks.py --full
+	python3 tools/check_half_projection.py
 
 verify-frontier:
 	python3 tools/check_piece_transfer.py

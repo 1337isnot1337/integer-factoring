@@ -12,6 +12,12 @@ analysis reaches `log(12/11)/log12`. The older combined rate in the
 [integration note](research/integration.md) remains a separate candidate.
 Its generalized evaluator remains open and is not needed by the `1/2` proof.
 
+Before revisiting sparse operators, rectangular layouts, or small crossing
+blocks, read [post-half-directions.md](research/post-half-directions.md).
+It records the proved restrictions and exact counterexamples found while
+trying to improve on `1/2`, with reproducible finite rank checks. No stronger
+exponent is established by those experiments.
+
 1. Check current `main`, the [coordination board](https://github.com/1337isnot1337/integer-factoring/issues/8),
    [open issues](https://github.com/1337isnot1337/integer-factoring/issues),
    [pull requests](https://github.com/1337isnot1337/integer-factoring/pulls),
