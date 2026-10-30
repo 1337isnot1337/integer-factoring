@@ -1,0 +1,14 @@
+{
+  "checker_sha256": "b8a924c75b5fb893b16e1e6429e626ecf9ac89f0f0b689c1f4541a4cabfdc031",
+  "entropy_controls": {
+    "exact_integer_endpoint_and_log_estimates": 3,
+    "floating_entropy_controls": 8200,
+    "sample_minimum_protected_rho": 0.741832332797084,
+    "scope": "The floating controls illustrate the analytic inequalities; the note supplies their proof."
+  },
+  "protected_blocks": {
+    "all_ancilla_rank_one_blocks": 3000,
+    "multiplicity_vs_physical_dimension_controls": 500,
+    "parameter_cases": 125
+  }
+}

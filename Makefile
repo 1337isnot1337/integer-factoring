@@ -41,6 +41,7 @@ verify-constructions:
 	python3 tools/check_ward_charge_filtration.py
 	python3 tools/check_ward_dual_incidence.py
 	python3 tools/check_ward_code_charge_entropy.py
+	python3 tools/check_ward_rectangular_envelope.py
 	python3 tools/check_overlapping_symplectic_profiles.py
 	python3 tools/check_cubic_radical_output_maps.py
 	python3 tools/check_noncommutative_crossing_seed_algebra_audit.py
