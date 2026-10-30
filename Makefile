@@ -15,6 +15,7 @@ verify-docs:
 	python3 tools/check_docs.py
 
 verify-constructions:
+	python3 tools/check_nilpotent_flag_crossings.py --output /tmp/integer-factoring-nilpotent-flag-crossings.json
 	python3 tools/check_cauchy_two_adic_smith.py --output /tmp/integer-factoring-cauchy-two-adic-smith.json
 	python3 tools/check_tapered_hermite_precision.py --output /tmp/integer-factoring-tapered-hermite-precision.json
 	python3 tools/check_arithmetic_crossing.py --output /tmp/integer-factoring-arithmetic-crossing-audit.json

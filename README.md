@@ -28,6 +28,7 @@ The composition uses the existing clique evaluator from [Anthropic's Appendix B]
 | Saving exponent `1/30` for the k6 machine | **Lean-verified** | [Proof](research/verified-k6.md), [machine theorem](variants/k6/FactoringK6/Certified.lean) |
 | Sharper k6 saving `log(12/11)/log(12) > 1/29` | Ordinary proof, not Lean-verified at this rate | [Rate derivation](research/k6-sharp-rate.md) |
 | Saving exponent above `1/2` | **Not established** | [Research index](research/INDEX.md) |
+| Crossing paths from arbitrary nilpotent superoperators | Ordinary all-field construction with exact column Smith spectra; row cut remains a separate obligation | [Nilpotent crossing families](research/nilpotent-flag-crossings.md) |
 | Exact two-adic Cauchy channels and Hermite precision witness | Ordinary exact theorems for the specified evaluator components; factoring score unchanged | [Cauchy factorization](research/cauchy-two-adic-smith.md), [precision witness](research/tapered-hermite-precision-witness.md) |
 | Rational crossing paths in every prime characteristic | Ordinary exact construction with rational valuation slopes; tested families do not improve the score | [Arithmetic initial forms](research/arithmetic-crossing-initial-forms.md) |
 | Exact maximum divisor-count preprocessing | Ordinary proof: `n^O(log log n)` time and `O(log n log log n)` workspace; factoring score unchanged | [Next-prime exchange algorithm](research/exchange-divisor-preprocessing.md), [complete-pattern count](research/primorial-weighted-divisor-preprocessing.md) |
@@ -85,6 +86,8 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 ## Current research frontier
 
 No uniform factoring exponent above `1/2` is proved here. One open approach seeks effective crossing pieces with total rank width `4*rho*lambda + O(log lambda)` for `rho < 1/sqrt(2)`. A suitable family could improve the evaluator bound, but finite rank improvements alone do not establish that inequality.
+
+[Nilpotent superoperators](research/nilpotent-flag-crossings.md) give exact crossing paths whose column Smith orders follow directly from their Jordan block sizes. A single full Jordan block attains the ideal column profile. The new two-symbol example is unimodular in the row cut, and a four-symbol example has a two-channel leading row coefficient. Complete exact profiles, a finite-root audit, and a first-order rank filter show why those examples still miss the score threshold. A separate theorem determines the entire row spectrum for a single transpose channel.
 
 The independent polynomial-separation route now has [explicit two-adic Cauchy channels](research/cauchy-two-adic-smith.md) with exact Smith exponents `4k-2 popcount(k)`. Complete same-tile blocks have this profile; it is not asserted for the entire crossing operator. A separate [tapered Hermite witness](research/tapered-hermite-precision-witness.md) proves that the source interpolation problem cannot uniformly reduce its `MD/u` precision scale while retaining the same general polynomial class and data. Exact channel compression still leaves a square-root weighted-partition scale. A stronger exponent needs additional contraction structure or a changed deformation.
 

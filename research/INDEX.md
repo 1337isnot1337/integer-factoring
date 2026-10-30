@@ -14,6 +14,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Nilpotent-superoperator crossing families](nilpotent-flag-crossings.md): a basis-free all-field construction with exact Jordan-block column spectra, cyclic-vector invariance, explicit finite controls, and an exact single-transpose row theorem.
 - [Exact two-adic Cauchy channels](cauchy-two-adic-smith.md): explicit integral LDU factors, exact Smith exponents, and the remaining square-root mode-enumeration scale.
 - [Tapered Hermite precision witness](tapered-hermite-precision-witness.md): one admissible polynomial proves the `MD/u` scale necessary for the source interpolation class and grid; special contraction polynomials remain outside the claim.
 - [Arithmetic initial forms of rational crossing paths](arithmetic-crossing-initial-forms.md): exact reductions in every prime characteristic with rational weights and fractional slopes; independent source and Smith-profile controls, with no stronger exponent.
