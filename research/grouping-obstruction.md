@@ -141,7 +141,46 @@ path example does not prove that those networks require the universal
 threshold. Exploiting their special structure, changing the grid relation,
 or changing the crossing decomposition lies outside this lower bound.
 
-The next concrete question is whether the grid networks admit a stronger
-grouping guarantee using properties that exclude these sparse paths. A
-universal theorem with a subquadratic vertex threshold is closed by this
+## A concrete way to change the hypotheses
+
+The formula for `rowNet.c` in the pinned `FactoringAux/Level.lean` is a sum
+of `G` straight widths and one channel width for every column pair. The
+proposed compressed widths from integration equation (5) satisfy
+
+\[
+\frac43\lambda\le c_r(\lambda,i),c_c(\lambda,i)\le2\lambda.
+\]
+
+Indeed, both arguments of each minimum are at least `4 lambda/3`, since
+`t=ceil(lambda/3)`, and the first argument is `2 lambda`. Consequently the
+intended row and column networks, on distinct vertices, satisfy
+
+\[
+\frac{2G^2+G}{3}\lambda
+\le w_{uv}=G\lambda+\sum_{q\in\binom{[G]}2}c(\lambda,i_q)
+\le G^2\lambda.
+\]
+
+For positive `lambda`, these weights are all positive and within a factor
+`3/2` of each other. A path therefore cannot occur as one of these intended
+width graphs. These are handwritten consequences of the proposed widths;
+the new Lean file proves only the path obstruction.
+
+A precise next question is whether this density hypothesis permits a smaller
+grouping threshold. Put `d_u=sum_v w_uv`. If one coloring simultaneously has
+
+\[
+\sum_{v:\chi(v)=b}w_{uv}\le(1+\eta)d_u/K
+\quad\text{for every }u,b,\qquad
+\sum_{u:\chi(u)=a}d_u\le(1+\eta)U/K
+\quad\text{for every }a,
+\]
+
+then summing the first inequality over color `a` and using the second gives
+`Y_ab <= (1+eta)^2 U/K^2`. For `eta=1/(4D)`, `D>=2`, this implies the required
+pair bound, because `(1+eta)^2 <= 1+1/D` and `U<=GP`.
+Proving those simultaneous inequalities and the class-size bounds under the
+density hypothesis, selecting integer parameters, and accounting for a changed
+schedule remain separate work. The path result does not obstruct that route.
+A universal theorem with a subquadratic vertex threshold is closed by the
 obstruction and should be reopened only with different hypotheses.
