@@ -73,6 +73,7 @@ verify-native-crossings:
 verify-post-half:
 	python3 tools/check_common_character_compressions.py --output /tmp/integer-factoring-common-compressions.json
 	python3 tools/check_two_even_site_sections.py --scope graphs --work-dir /tmp/integer-factoring-two-even-sections --output /tmp/integer-factoring-two-even-sections.json
+	python3 tools/assemble_two_even_site_cores.py --pairs 6 --screen evidence/two-even-site-core-P6-F2.jsonl --output /tmp/integer-factoring-two-even-P6.json
 	python3 tools/check_half_piece_ranks.py --full
 	python3 tools/check_half_projection.py
 	python3 tools/check_half_restricted_labels.py
