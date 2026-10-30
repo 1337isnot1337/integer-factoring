@@ -18,6 +18,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Witt duality and vertex jets](witt-duality-and-vertex-jets.md): an explicit odd Hall determinant and length-unitriangular vacuum maps give effective homogeneous duals at all weights; the crossing and rank-budget obligations remain distinct.
 
 - [Finite-state polynomial crossings](finite-state-pairing-crossings.md): explicit order-dependent identities, exact XOR-circulant rank reduction, and the complete 88,006-model finite screen.
+- [Four-feature matrix-product crossings](four-feature-parity-crossings.md): a larger local tensor space has constant auxiliary dimension and order witnesses at every length; a complete 131,072-model screen and independent full-tensor checks record the finite limits.
 - [Run-compressed crossing ranks](two-state-run-rank-compression.md): exact local Jordan decomposition, interval-type grouping, and quadratic-pivot rank reduction accelerate longer constructive searches.
 
 - [Border and nonunit seed extraction](border-and-nonunit-seed-transfer.md): finite-jet and polynomial identities yield exact seeds with rank-sum loss at most `(kt+1)` after `k` copies; weighted budgets still hold over finite chain rings.
