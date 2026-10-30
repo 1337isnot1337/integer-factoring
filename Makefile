@@ -9,10 +9,12 @@ verify:
 	python3 tools/check_half_rate.py
 	python3 tools/check_half_piece_ranks.py --no-numpy
 	python3 tools/check_half_projection.py
+	python3 tools/check_half_restricted_labels.py
 
 verify-post-half:
 	python3 tools/check_half_piece_ranks.py --full
 	python3 tools/check_half_projection.py
+	python3 tools/check_half_restricted_labels.py
 
 verify-formal:
 	bash tools/check_formal.sh

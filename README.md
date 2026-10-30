@@ -44,8 +44,11 @@ materialize the enormous evaluator or replace the infinite-input proof.
 The [work beyond `1/2`](research/post-half-directions.md) records the
 directions tested next. It proves restrictions for the existing grid and
 operator interfaces, gives an exact counterexample to projecting away high
-modes, and checks finite matrix ranks. It establishes no exponent above
-`1/2` and no general factoring lower bound.
+modes, and checks finite matrix ranks. A [network tradeoff](research/half-top-structure.md)
+rules out improving this explicit constructor by regrouping and separate
+wire compression alone. A [restricted-label counterexample](research/half-restricted-labels.md)
+shows why another proposed dimension reduction fails. These results establish
+no exponent above `1/2` and no general factoring lower bound.
 
 ## Lean theorem: exponent 1/30
 
@@ -213,6 +216,12 @@ requires real-number approximation in the algorithm.
 - [Directions beyond the half rate](research/post-half-directions.md):
   scoped interface restrictions, [finite rank evidence](evidence/half-piece-ranks.json),
   and an [exact low-mode projection counterexample](evidence/half-projection-counterexample.json).
+- [Multiplication-network tradeoff](research/half-top-structure.md): a lower
+  bound for the present local-enumeration, separate-wire, and explicit-pad
+  construction, with its scope stated explicitly.
+- [Restricted-label counterexample](research/half-restricted-labels.md):
+  an exact [nonzero minor](evidence/half-restricted-labels.json) disproves the
+  literal low-mode product-span bound while preserving the crossing identity.
 - [Baseline audit](research/baseline-audit.md): exact depth recurrence,
   contraction, all-level cost bound, and machine-cost bridge.
 - [Verified k6 theorem](research/verified-k6.md): complete machine proof,
