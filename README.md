@@ -46,6 +46,7 @@ make verify-post-half     # Larger optional rank tests
 make verify-docs          # Local Markdown-link check
 make verify-schur-fermion # Complete Schur entry formulas and exact comparisons
 make verify-cancellation-modules # Exact module states and word-rate certificates
+make verify-cubic-full-images # Full cubic coefficient spaces and reduced ranks
 ```
 
 The Python checks use Python 3 and its standard library. Some optional checks use NumPy for speed.
@@ -87,6 +88,13 @@ retain cancellation between auxiliary paths. Their bounds improve monotonically
 with precision, dominate the corresponding capped entry-order bounds, and
 converge to the exact full-matrix word rate when both boundaries are free.
 The checked crossing controls do not yet meet the strict improvement threshold.
+
+The [varying-image cubic construction](research/cubic-full-image-span.md)
+has an exact 786-dimensional rank-one-map coefficient space, with column ranks
+reduced from 49-by-49 matrices to matrices of size at most 28. Rank-two maps
+already span its full 1,225-dimensional major-symmetric space. These results
+define larger exact search spaces; an improving crossing decomposition is
+still needed.
 
 See the [research index](research/INDEX.md) for completed arguments, scoped obstructions, and older candidates. Active work can also appear in [open pull requests](https://github.com/1337isnot1337/integer-factoring/pulls); branch research is not automatically a result on `main`.
 

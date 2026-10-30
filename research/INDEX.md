@@ -16,6 +16,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 - [Complete Schur queries](schur-fermion-queries.md): division-free small determinant formulas for modes and complete crossing coefficients; polynomial query cost with exact independent checks, but no new rank bound.
 - [Cancellation module automata](cancellation-module-smith-automata.md): finite-state certificates that retain auxiliary-product cancellation, a monotone precision hierarchy, and a complete certificate limit for free-boundary word rates.
+- [Full varying-image cubic spaces](cubic-full-image-span.md): exact 786- and 1,225-dimensional coefficient spaces over characteristic two, and smaller matrices for exact column ranks; no strict seed is supplied.
 
 - [Pieces-to-factoring transfer](pieces-to-factoring.md): conditional crossing-parameter transfer, with full bit-cost accounting.
 - [Scale-one modular transfer](scale-one-modular-transfer.md): fixed-field transfer and machine costs.
