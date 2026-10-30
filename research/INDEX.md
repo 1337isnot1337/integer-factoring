@@ -24,6 +24,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Complete homogeneous profiles](homogeneous-central-profiles.md): exact larger cut ranks, Taylor coefficients, and independently checked native polynomial Pfaffians.
 - [Complement-shell crossings](complement-shell-crossings.md): explicit identity-Gram labels, exact sparse support, a universal four-state tensor, and an all-size paired reciprocal-pencil identity.
 - [Complete shell rank blocks](complement-shell-rank-blocks.md): exact syndrome direct sums through 496 labels and protected central minors for fixed-length full shells.
+- [Three-parameter Pfaffian crossings](pfaffian-ternary-edge-family.md): arbitrary fixed-length codes, a complete uniform edge space, exact label retracts, and binary/four-element-field seed exclusions.
+- [High-mode residue folding](residue-folded-channels.md): exact ambient dimensions, finite incoming and outgoing factors, both complete channel counts, and eventual energy periodicity.
 - [Homogeneous modular selection](homogeneous-central-selection.md): one operator weight at every label width, selected rectangular vacuum minors, and an effective uniform half-rate construction.
 - [Noncommutative group-word crossings](noncommutative-crossing-orbits.md): exact all-size construction, compressed constant cut, optimal rank-28 central shears on 64 labels, and complete-profile limitations.
 - [Coded central quotients](coded-central-crossings.md): binary-code group construction, exact constant-cut compression, matroid bounds, and an all-coefficient row filtration estimate.

@@ -25,6 +25,7 @@ verify-constructions:
 	python3 tools/check_homogeneous_central_eighth_jet.py
 	python3 tools/check_binary_quadratic_charge_shells.py
 	python3 tools/check_noncommutative_crossing_hopf.py
+	python3 tools/check_residue_folded_channels.py
 
 verify-native-crossings:
 	mkdir -p build/native
@@ -36,6 +37,10 @@ verify-native-crossings:
 	python3 tools/check_graded_hopf_crossings.py --binary $(CURDIR)/build/native/graded-hopf-screen
 	$(CXX) -O3 -std=c++17 -Wall -Wextra -Werror tools/explore_graded_hopf_gauges.cpp -o build/native/graded-hopf-gauges
 	python3 tools/check_graded_hopf_gauges.py --binary $(CURDIR)/build/native/graded-hopf-gauges
+	$(CXX) -O3 -std=c++17 -Wall -Wextra -Werror tools/screen_pfaffian_span_f4.cpp -o build/native/pfaffian-span-screen
+	python3 tools/export_pfaffian_span_native.py evidence/pfaffian-basis-all_P2_L2.json --output build/native/pfaffian-span-input.txt
+	build/native/pfaffian-span-screen < build/native/pfaffian-span-input.txt > build/native/pfaffian-span-F4.jsonl
+	python3 tools/check_pfaffian_span_f4.py --basis evidence/pfaffian-basis-all_P2_L2.json --screen build/native/pfaffian-span-F4.jsonl --output build/native/pfaffian-span-audit.json
 
 verify-post-half:
 	python3 tools/check_half_piece_ranks.py --full

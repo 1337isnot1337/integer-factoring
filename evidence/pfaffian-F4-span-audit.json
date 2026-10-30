@@ -1,0 +1,908 @@
+{
+  "cases": [
+    {
+      "all_F4_decompositions_fail_seed_criterion": true,
+      "basis_sha256": "fd1f7ed923dfdae090b53fd974ff4fedd86269384ead81ed99ae26816d58ebe3",
+      "coefficient_dimension": 7,
+      "cost_denominator": 1000000000000,
+      "eligible_count": 33,
+      "eligible_span_basis": {
+        "1": 5,
+        "2": 16,
+        "3": 64,
+        "4": 260,
+        "5": 1028,
+        "6": 4096
+      },
+      "eligible_span_dimension": 6,
+      "eligible_vectors": [
+        {
+          "code": 16,
+          "column_rank": 1,
+          "event": "eligible",
+          "product": 64,
+          "row_rank": 64
+        },
+        {
+          "code": 21,
+          "column_rank": 64,
+          "event": "eligible",
+          "product": 64,
+          "row_rank": 1
+        },
+        {
+          "code": 64,
+          "column_rank": 6,
+          "event": "eligible",
+          "product": 36,
+          "row_rank": 6
+        },
+        {
+          "code": 1028,
+          "column_rank": 12,
+          "event": "eligible",
+          "product": 360,
+          "row_rank": 30
+        },
+        {
+          "code": 1092,
+          "column_rank": 8,
+          "event": "eligible",
+          "product": 240,
+          "row_rank": 30
+        },
+        {
+          "code": 1156,
+          "column_rank": 12,
+          "event": "eligible",
+          "product": 360,
+          "row_rank": 30
+        },
+        {
+          "code": 1220,
+          "column_rank": 12,
+          "event": "eligible",
+          "product": 360,
+          "row_rank": 30
+        },
+        {
+          "code": 1280,
+          "column_rank": 30,
+          "event": "eligible",
+          "product": 360,
+          "row_rank": 12
+        },
+        {
+          "code": 1344,
+          "column_rank": 30,
+          "event": "eligible",
+          "product": 240,
+          "row_rank": 8
+        },
+        {
+          "code": 1408,
+          "column_rank": 30,
+          "event": "eligible",
+          "product": 360,
+          "row_rank": 12
+        },
+        {
+          "code": 1472,
+          "column_rank": 30,
+          "event": "eligible",
+          "product": 360,
+          "row_rank": 12
+        },
+        {
+          "code": 4096,
+          "column_rank": 64,
+          "event": "eligible",
+          "product": 64,
+          "row_rank": 1
+        },
+        {
+          "code": 4117,
+          "column_rank": 30,
+          "event": "eligible",
+          "product": 60,
+          "row_rank": 2
+        },
+        {
+          "code": 4138,
+          "column_rank": 64,
+          "event": "eligible",
+          "product": 128,
+          "row_rank": 2
+        },
+        {
+          "code": 4159,
+          "column_rank": 64,
+          "event": "eligible",
+          "product": 128,
+          "row_rank": 2
+        },
+        {
+          "code": 4181,
+          "column_rank": 30,
+          "event": "eligible",
+          "product": 240,
+          "row_rank": 8
+        },
+        {
+          "code": 4245,
+          "column_rank": 30,
+          "event": "eligible",
+          "product": 240,
+          "row_rank": 8
+        },
+        {
+          "code": 4309,
+          "column_rank": 30,
+          "event": "eligible",
+          "product": 240,
+          "row_rank": 8
+        },
+        {
+          "code": 4353,
+          "column_rank": 1,
+          "event": "eligible",
+          "product": 64,
+          "row_rank": 64
+        },
+        {
+          "code": 4369,
+          "column_rank": 2,
+          "event": "eligible",
+          "product": 60,
+          "row_rank": 30
+        },
+        {
+          "code": 4385,
+          "column_rank": 2,
+          "event": "eligible",
+          "product": 128,
+          "row_rank": 64
+        },
+        {
+          "code": 4401,
+          "column_rank": 2,
+          "event": "eligible",
+          "product": 128,
+          "row_rank": 64
+        },
+        {
+          "code": 4433,
+          "column_rank": 8,
+          "event": "eligible",
+          "product": 240,
+          "row_rank": 30
+        },
+        {
+          "code": 4497,
+          "column_rank": 8,
+          "event": "eligible",
+          "product": 240,
+          "row_rank": 30
+        },
+        {
+          "code": 4561,
+          "column_rank": 8,
+          "event": "eligible",
+          "product": 240,
+          "row_rank": 30
+        },
+        {
+          "code": 5397,
+          "column_rank": 14,
+          "event": "eligible",
+          "product": 196,
+          "row_rank": 14
+        },
+        {
+          "code": 5461,
+          "column_rank": 10,
+          "event": "eligible",
+          "product": 100,
+          "row_rank": 10
+        },
+        {
+          "code": 5525,
+          "column_rank": 14,
+          "event": "eligible",
+          "product": 196,
+          "row_rank": 14
+        },
+        {
+          "code": 5589,
+          "column_rank": 14,
+          "event": "eligible",
+          "product": 196,
+          "row_rank": 14
+        },
+        {
+          "code": 6553,
+          "column_rank": 10,
+          "event": "eligible",
+          "product": 300,
+          "row_rank": 30
+        },
+        {
+          "code": 6805,
+          "column_rank": 30,
+          "event": "eligible",
+          "product": 300,
+          "row_rank": 10
+        },
+        {
+          "code": 7645,
+          "column_rank": 10,
+          "event": "eligible",
+          "product": 300,
+          "row_rank": 30
+        },
+        {
+          "code": 8149,
+          "column_rank": 30,
+          "event": "eligible",
+          "product": 300,
+          "row_rank": 10
+        }
+      ],
+      "endpoint_remainder": 1,
+      "field": "F2[t]/(t^2+t+1)",
+      "independently_checked_vectors": 73,
+      "integer_cost_gate": 19,
+      "labels": 8,
+      "name": "shell16_L4_j32",
+      "projective_vectors_tested": 5461,
+      "restricted_shortest_cost_lower_numerator": null,
+      "scope": "the supplied finite coefficient space over F4; other fields and label retracts are not excluded",
+      "screen_sha256": "77bef2efb1fc8247360f95bfa9b242d3bac09d0a08687e401745ebec37d20915",
+      "shortest_path_states": 0,
+      "source_sha256": {
+        "check_pfaffian_span_f4.py": "b112b3a24e6a14fec6fa68bc28b1c30e62e391993bb38f9085e540273028062c",
+        "screen_pfaffian_span_f4.cpp": "40e44b6987e5f347e35dd524f082a6b966c8171f6cbe1b4c433abab18f50912a"
+      }
+    },
+    {
+      "all_F4_decompositions_fail_seed_criterion": true,
+      "basis_sha256": "92359576c167693971f096bdf2ee7828487592fb772c52fbb3de8ed6f27b772d",
+      "coefficient_dimension": 6,
+      "cost_denominator": 1000000000000,
+      "eligible_count": 29,
+      "eligible_span_basis": {
+        "1": 5,
+        "2": 16,
+        "3": 68,
+        "4": 260,
+        "5": 1024
+      },
+      "eligible_span_dimension": 5,
+      "eligible_vectors": [
+        {
+          "code": 16,
+          "column_rank": 1,
+          "event": "eligible",
+          "product": 36,
+          "row_rank": 36
+        },
+        {
+          "code": 21,
+          "column_rank": 36,
+          "event": "eligible",
+          "product": 36,
+          "row_rank": 1
+        },
+        {
+          "code": 68,
+          "column_rank": 10,
+          "event": "eligible",
+          "product": 100,
+          "row_rank": 10
+        },
+        {
+          "code": 260,
+          "column_rank": 4,
+          "event": "eligible",
+          "product": 40,
+          "row_rank": 10
+        },
+        {
+          "code": 320,
+          "column_rank": 10,
+          "event": "eligible",
+          "product": 40,
+          "row_rank": 4
+        },
+        {
+          "code": 396,
+          "column_rank": 10,
+          "event": "eligible",
+          "product": 100,
+          "row_rank": 10
+        },
+        {
+          "code": 456,
+          "column_rank": 10,
+          "event": "eligible",
+          "product": 100,
+          "row_rank": 10
+        },
+        {
+          "code": 1024,
+          "column_rank": 36,
+          "event": "eligible",
+          "product": 36,
+          "row_rank": 1
+        },
+        {
+          "code": 1045,
+          "column_rank": 10,
+          "event": "eligible",
+          "product": 20,
+          "row_rank": 2
+        },
+        {
+          "code": 1066,
+          "column_rank": 36,
+          "event": "eligible",
+          "product": 72,
+          "row_rank": 2
+        },
+        {
+          "code": 1087,
+          "column_rank": 36,
+          "event": "eligible",
+          "product": 72,
+          "row_rank": 2
+        },
+        {
+          "code": 1089,
+          "column_rank": 1,
+          "event": "eligible",
+          "product": 36,
+          "row_rank": 36
+        },
+        {
+          "code": 1105,
+          "column_rank": 2,
+          "event": "eligible",
+          "product": 20,
+          "row_rank": 10
+        },
+        {
+          "code": 1121,
+          "column_rank": 2,
+          "event": "eligible",
+          "product": 72,
+          "row_rank": 36
+        },
+        {
+          "code": 1137,
+          "column_rank": 2,
+          "event": "eligible",
+          "product": 72,
+          "row_rank": 36
+        },
+        {
+          "code": 1181,
+          "column_rank": 10,
+          "event": "eligible",
+          "product": 100,
+          "row_rank": 10
+        },
+        {
+          "code": 1241,
+          "column_rank": 10,
+          "event": "eligible",
+          "product": 100,
+          "row_rank": 10
+        },
+        {
+          "code": 1297,
+          "column_rank": 10,
+          "event": "eligible",
+          "product": 100,
+          "row_rank": 10
+        },
+        {
+          "code": 1365,
+          "column_rank": 6,
+          "event": "eligible",
+          "product": 36,
+          "row_rank": 6
+        },
+        {
+          "code": 1433,
+          "column_rank": 10,
+          "event": "eligible",
+          "product": 100,
+          "row_rank": 10
+        },
+        {
+          "code": 1501,
+          "column_rank": 10,
+          "event": "eligible",
+          "product": 100,
+          "row_rank": 10
+        },
+        {
+          "code": 1565,
+          "column_rank": 10,
+          "event": "eligible",
+          "product": 100,
+          "row_rank": 10
+        },
+        {
+          "code": 1625,
+          "column_rank": 6,
+          "event": "eligible",
+          "product": 60,
+          "row_rank": 10
+        },
+        {
+          "code": 1685,
+          "column_rank": 10,
+          "event": "eligible",
+          "product": 60,
+          "row_rank": 6
+        },
+        {
+          "code": 1745,
+          "column_rank": 10,
+          "event": "eligible",
+          "product": 100,
+          "row_rank": 10
+        },
+        {
+          "code": 1817,
+          "column_rank": 10,
+          "event": "eligible",
+          "product": 100,
+          "row_rank": 10
+        },
+        {
+          "code": 1885,
+          "column_rank": 6,
+          "event": "eligible",
+          "product": 60,
+          "row_rank": 10
+        },
+        {
+          "code": 1937,
+          "column_rank": 10,
+          "event": "eligible",
+          "product": 100,
+          "row_rank": 10
+        },
+        {
+          "code": 2005,
+          "column_rank": 10,
+          "event": "eligible",
+          "product": 60,
+          "row_rank": 6
+        }
+      ],
+      "endpoint_remainder": 1,
+      "field": "F2[t]/(t^2+t+1)",
+      "independently_checked_vectors": 69,
+      "integer_cost_gate": 13,
+      "labels": 6,
+      "name": "all_P2_L2",
+      "projective_vectors_tested": 1365,
+      "restricted_shortest_cost_lower_numerator": null,
+      "scope": "the supplied finite coefficient space over F4; other fields and label retracts are not excluded",
+      "screen_sha256": "58d891a5fa79f2ba5febdc601a734474b6dc50c69bebb02618e0678c2123a0bf",
+      "shortest_path_states": 0,
+      "source_sha256": {
+        "check_pfaffian_span_f4.py": "b112b3a24e6a14fec6fa68bc28b1c30e62e391993bb38f9085e540273028062c",
+        "screen_pfaffian_span_f4.cpp": "40e44b6987e5f347e35dd524f082a6b966c8171f6cbe1b4c433abab18f50912a"
+      }
+    },
+    {
+      "all_F4_decompositions_fail_seed_criterion": true,
+      "basis_sha256": "376aa4b719f8c3c0536766788802142d0eaa36edde2b00fafdb4728731f92f8c",
+      "coefficient_dimension": 6,
+      "cost_denominator": 1000000000000,
+      "eligible_count": 8,
+      "eligible_span_basis": {
+        "0": 1,
+        "1": 4,
+        "2": 16,
+        "3": 64,
+        "4": 256,
+        "5": 1024
+      },
+      "eligible_span_dimension": 6,
+      "eligible_vectors": [
+        {
+          "code": 16,
+          "column_rank": 1,
+          "event": "eligible",
+          "product": 225,
+          "row_rank": 225
+        },
+        {
+          "code": 256,
+          "column_rank": 34,
+          "event": "eligible",
+          "product": 1156,
+          "row_rank": 34
+        },
+        {
+          "code": 260,
+          "column_rank": 14,
+          "event": "eligible",
+          "product": 1260,
+          "row_rank": 90
+        },
+        {
+          "code": 320,
+          "column_rank": 90,
+          "event": "eligible",
+          "product": 1260,
+          "row_rank": 14
+        },
+        {
+          "code": 1024,
+          "column_rank": 225,
+          "event": "eligible",
+          "product": 225,
+          "row_rank": 1
+        },
+        {
+          "code": 1045,
+          "column_rank": 106,
+          "event": "eligible",
+          "product": 1696,
+          "row_rank": 16
+        },
+        {
+          "code": 1105,
+          "column_rank": 16,
+          "event": "eligible",
+          "product": 1696,
+          "row_rank": 106
+        },
+        {
+          "code": 1365,
+          "column_rank": 30,
+          "event": "eligible",
+          "product": 900,
+          "row_rank": 30
+        }
+      ],
+      "endpoint_remainder": 0,
+      "field": "F2[t]/(t^2+t+1)",
+      "independently_checked_vectors": 48,
+      "integer_cost_gate": 47,
+      "labels": 15,
+      "name": "all_P3_L2",
+      "projective_vectors_tested": 1365,
+      "restricted_shortest_cost_lower_numerator": 140678999262545,
+      "scope": "the supplied finite coefficient space over F4; other fields and label retracts are not excluded",
+      "screen_sha256": "7894c4b22eabaa537e4908cd7365463525a83b62a8b71cd1e2eeb5142294c618",
+      "shortest_path_states": 4096,
+      "source_sha256": {
+        "check_pfaffian_span_f4.py": "b112b3a24e6a14fec6fa68bc28b1c30e62e391993bb38f9085e540273028062c",
+        "screen_pfaffian_span_f4.cpp": "40e44b6987e5f347e35dd524f082a6b966c8171f6cbe1b4c433abab18f50912a"
+      }
+    },
+    {
+      "all_F4_decompositions_fail_seed_criterion": true,
+      "basis_sha256": "d0a316548a905f7337bf2256e5cdafee8b050e9c4f0468319877f3da4f4035a1",
+      "coefficient_dimension": 10,
+      "cost_denominator": 1000000000000,
+      "eligible_count": 40,
+      "eligible_span_basis": {
+        "2": 21,
+        "3": 64,
+        "4": 261,
+        "5": 1024,
+        "6": 4176,
+        "7": 16401,
+        "8": 65604,
+        "9": 262144
+      },
+      "eligible_span_dimension": 8,
+      "eligible_vectors": [
+        {
+          "code": 64,
+          "column_rank": 1,
+          "event": "eligible",
+          "product": 400,
+          "row_rank": 400
+        },
+        {
+          "code": 85,
+          "column_rank": 400,
+          "event": "eligible",
+          "product": 400,
+          "row_rank": 1
+        },
+        {
+          "code": 1024,
+          "column_rank": 50,
+          "event": "eligible",
+          "product": 2500,
+          "row_rank": 50
+        },
+        {
+          "code": 4176,
+          "column_rank": 14,
+          "event": "eligible",
+          "product": 2352,
+          "row_rank": 168
+        },
+        {
+          "code": 5461,
+          "column_rank": 168,
+          "event": "eligible",
+          "product": 2352,
+          "row_rank": 14
+        },
+        {
+          "code": 65604,
+          "column_rank": 64,
+          "event": "eligible",
+          "product": 4608,
+          "row_rank": 72
+        },
+        {
+          "code": 66628,
+          "column_rank": 16,
+          "event": "eligible",
+          "product": 1920,
+          "row_rank": 120
+        },
+        {
+          "code": 82005,
+          "column_rank": 120,
+          "event": "eligible",
+          "product": 1920,
+          "row_rank": 16
+        },
+        {
+          "code": 83029,
+          "column_rank": 72,
+          "event": "eligible",
+          "product": 4608,
+          "row_rank": 64
+        },
+        {
+          "code": 262144,
+          "column_rank": 400,
+          "event": "eligible",
+          "product": 400,
+          "row_rank": 1
+        },
+        {
+          "code": 262229,
+          "column_rank": 168,
+          "event": "eligible",
+          "product": 336,
+          "row_rank": 2
+        },
+        {
+          "code": 262314,
+          "column_rank": 400,
+          "event": "eligible",
+          "product": 800,
+          "row_rank": 2
+        },
+        {
+          "code": 262399,
+          "column_rank": 400,
+          "event": "eligible",
+          "product": 800,
+          "row_rank": 2
+        },
+        {
+          "code": 266496,
+          "column_rank": 72,
+          "event": "eligible",
+          "product": 4608,
+          "row_rank": 64
+        },
+        {
+          "code": 267520,
+          "column_rank": 120,
+          "event": "eligible",
+          "product": 1920,
+          "row_rank": 16
+        },
+        {
+          "code": 273151,
+          "column_rank": 168,
+          "event": "eligible",
+          "product": 2688,
+          "row_rank": 16
+        },
+        {
+          "code": 278442,
+          "column_rank": 168,
+          "event": "eligible",
+          "product": 2688,
+          "row_rank": 16
+        },
+        {
+          "code": 278785,
+          "column_rank": 1,
+          "event": "eligible",
+          "product": 400,
+          "row_rank": 400
+        },
+        {
+          "code": 278849,
+          "column_rank": 2,
+          "event": "eligible",
+          "product": 336,
+          "row_rank": 168
+        },
+        {
+          "code": 278913,
+          "column_rank": 2,
+          "event": "eligible",
+          "product": 800,
+          "row_rank": 400
+        },
+        {
+          "code": 278977,
+          "column_rank": 2,
+          "event": "eligible",
+          "product": 800,
+          "row_rank": 400
+        },
+        {
+          "code": 282897,
+          "column_rank": 16,
+          "event": "eligible",
+          "product": 1920,
+          "row_rank": 120
+        },
+        {
+          "code": 283921,
+          "column_rank": 64,
+          "event": "eligible",
+          "product": 4608,
+          "row_rank": 72
+        },
+        {
+          "code": 287201,
+          "column_rank": 16,
+          "event": "eligible",
+          "product": 2688,
+          "row_rank": 168
+        },
+        {
+          "code": 291249,
+          "column_rank": 16,
+          "event": "eligible",
+          "product": 2688,
+          "row_rank": 168
+        },
+        {
+          "code": 344064,
+          "column_rank": 168,
+          "event": "eligible",
+          "product": 2352,
+          "row_rank": 14
+        },
+        {
+          "code": 345349,
+          "column_rank": 14,
+          "event": "eligible",
+          "product": 2352,
+          "row_rank": 168
+        },
+        {
+          "code": 349525,
+          "column_rank": 28,
+          "event": "eligible",
+          "product": 784,
+          "row_rank": 28
+        },
+        {
+          "code": 353701,
+          "column_rank": 28,
+          "event": "eligible",
+          "product": 4704,
+          "row_rank": 168
+        },
+        {
+          "code": 354986,
+          "column_rank": 168,
+          "event": "eligible",
+          "product": 4704,
+          "row_rank": 28
+        },
+        {
+          "code": 357877,
+          "column_rank": 28,
+          "event": "eligible",
+          "product": 4704,
+          "row_rank": 168
+        },
+        {
+          "code": 360447,
+          "column_rank": 168,
+          "event": "eligible",
+          "product": 4704,
+          "row_rank": 28
+        },
+        {
+          "code": 412105,
+          "column_rank": 16,
+          "event": "eligible",
+          "product": 2688,
+          "row_rank": 168
+        },
+        {
+          "code": 416153,
+          "column_rank": 30,
+          "event": "eligible",
+          "product": 3600,
+          "row_rank": 120
+        },
+        {
+          "code": 426239,
+          "column_rank": 168,
+          "event": "eligible",
+          "product": 2688,
+          "row_rank": 16
+        },
+        {
+          "code": 431530,
+          "column_rank": 120,
+          "event": "eligible",
+          "product": 3600,
+          "row_rank": 30
+        },
+        {
+          "code": 478605,
+          "column_rank": 16,
+          "event": "eligible",
+          "product": 2688,
+          "row_rank": 168
+        },
+        {
+          "code": 482781,
+          "column_rank": 30,
+          "event": "eligible",
+          "product": 3600,
+          "row_rank": 120
+        },
+        {
+          "code": 508074,
+          "column_rank": 168,
+          "event": "eligible",
+          "product": 2688,
+          "row_rank": 16
+        },
+        {
+          "code": 513535,
+          "column_rank": 120,
+          "event": "eligible",
+          "product": 3600,
+          "row_rank": 30
+        }
+      ],
+      "endpoint_remainder": 1,
+      "field": "F2[t]/(t^2+t+1)",
+      "independently_checked_vectors": 80,
+      "integer_cost_gate": 70,
+      "labels": 20,
+      "name": "all_P3_L3",
+      "projective_vectors_tested": 349525,
+      "restricted_shortest_cost_lower_numerator": null,
+      "scope": "the supplied finite coefficient space over F4; other fields and label retracts are not excluded",
+      "screen_sha256": "211c6ff4fb737a8c59cc421c8a06f59a9def0d53924818e1c93b0940b458cd1e",
+      "shortest_path_states": 0,
+      "source_sha256": {
+        "check_pfaffian_span_f4.py": "b112b3a24e6a14fec6fa68bc28b1c30e62e391993bb38f9085e540273028062c",
+        "screen_pfaffian_span_f4.cpp": "40e44b6987e5f347e35dd524f082a6b966c8171f6cbe1b4c433abab18f50912a"
+      }
+    }
+  ],
+  "status": "all four F4 coefficient spaces fail the seed criterion"
+}
