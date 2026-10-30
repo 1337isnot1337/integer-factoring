@@ -1,0 +1,1901 @@
+{
+  "completed_cases": 32000000,
+  "completed_interval": [
+    13800000,
+    45800000
+  ],
+  "native_source_sha256": "16488ed69a2f5b98129909e9543d7aa1bfee6271d77b05a3be3183c3493cfd49",
+  "normalized_family_size": 67108864,
+  "records": [
+    {
+      "command": [
+        "/tmp/intfact-group-correction-screen",
+        "--k",
+        "3",
+        "--family",
+        "bilinear",
+        "--normalized",
+        "--start",
+        "13800000",
+        "--count",
+        "1000000"
+      ],
+      "events": [
+        {
+          "baseline_rank": 197,
+          "coefficient_bits": 27,
+          "count": 1000000,
+          "event": "start",
+          "exact_ranks": false,
+          "family": "bilinear",
+          "free_bits": 26,
+          "k": 3,
+          "matrix_order": 512,
+          "normalized": true,
+          "q": 8,
+          "random": false,
+          "seed": 20261030,
+          "start": 13800000
+        },
+        {
+          "best_coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "best_rank": 197,
+          "digest_fnv64": "3069690119833378405",
+          "event": "complete",
+          "histogram": [
+            [
+              197,
+              1000000
+            ]
+          ],
+          "milliseconds": 88002,
+          "tested": 1000000
+        }
+      ],
+      "exact_ranks": false,
+      "native_source_sha256": "16488ed69a2f5b98129909e9543d7aa1bfee6271d77b05a3be3183c3493cfd49",
+      "rank_semantics": "rank or certified lower bound at the current stopping threshold"
+    },
+    {
+      "command": [
+        "/tmp/intfact-group-correction-screen",
+        "--k",
+        "3",
+        "--family",
+        "bilinear",
+        "--normalized",
+        "--start",
+        "14800000",
+        "--count",
+        "1000000"
+      ],
+      "events": [
+        {
+          "baseline_rank": 197,
+          "coefficient_bits": 27,
+          "count": 1000000,
+          "event": "start",
+          "exact_ranks": false,
+          "family": "bilinear",
+          "free_bits": 26,
+          "k": 3,
+          "matrix_order": 512,
+          "normalized": true,
+          "q": 8,
+          "random": false,
+          "seed": 20261030,
+          "start": 14800000
+        },
+        {
+          "best_coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "best_rank": 197,
+          "digest_fnv64": "16296572562495200357",
+          "event": "complete",
+          "histogram": [
+            [
+              197,
+              1000000
+            ]
+          ],
+          "milliseconds": 85435,
+          "tested": 1000000
+        }
+      ],
+      "exact_ranks": false,
+      "native_source_sha256": "16488ed69a2f5b98129909e9543d7aa1bfee6271d77b05a3be3183c3493cfd49",
+      "rank_semantics": "rank or certified lower bound at the current stopping threshold"
+    },
+    {
+      "command": [
+        "/tmp/intfact-group-correction-screen",
+        "--k",
+        "3",
+        "--family",
+        "bilinear",
+        "--normalized",
+        "--start",
+        "15800000",
+        "--count",
+        "1000000"
+      ],
+      "events": [
+        {
+          "baseline_rank": 197,
+          "coefficient_bits": 27,
+          "count": 1000000,
+          "event": "start",
+          "exact_ranks": false,
+          "family": "bilinear",
+          "free_bits": 26,
+          "k": 3,
+          "matrix_order": 512,
+          "normalized": true,
+          "q": 8,
+          "random": false,
+          "seed": 20261030,
+          "start": 15800000
+        },
+        {
+          "best_coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "best_rank": 197,
+          "digest_fnv64": "13140153440354394981",
+          "event": "complete",
+          "histogram": [
+            [
+              197,
+              1000000
+            ]
+          ],
+          "milliseconds": 95388,
+          "tested": 1000000
+        }
+      ],
+      "exact_ranks": false,
+      "native_source_sha256": "16488ed69a2f5b98129909e9543d7aa1bfee6271d77b05a3be3183c3493cfd49",
+      "rank_semantics": "rank or certified lower bound at the current stopping threshold"
+    },
+    {
+      "command": [
+        "/tmp/intfact-group-correction-screen",
+        "--k",
+        "3",
+        "--family",
+        "bilinear",
+        "--normalized",
+        "--start",
+        "16800000",
+        "--count",
+        "1000000"
+      ],
+      "events": [
+        {
+          "baseline_rank": 197,
+          "coefficient_bits": 27,
+          "count": 1000000,
+          "event": "start",
+          "exact_ranks": false,
+          "family": "bilinear",
+          "free_bits": 26,
+          "k": 3,
+          "matrix_order": 512,
+          "normalized": true,
+          "q": 8,
+          "random": false,
+          "seed": 20261030,
+          "start": 16800000
+        },
+        {
+          "best_coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "best_rank": 197,
+          "digest_fnv64": "7821727825663970661",
+          "event": "complete",
+          "histogram": [
+            [
+              197,
+              1000000
+            ]
+          ],
+          "milliseconds": 87490,
+          "tested": 1000000
+        }
+      ],
+      "exact_ranks": false,
+      "native_source_sha256": "16488ed69a2f5b98129909e9543d7aa1bfee6271d77b05a3be3183c3493cfd49",
+      "rank_semantics": "rank or certified lower bound at the current stopping threshold"
+    },
+    {
+      "command": [
+        "/tmp/intfact-group-correction-screen",
+        "--k",
+        "3",
+        "--family",
+        "bilinear",
+        "--normalized",
+        "--start",
+        "17800000",
+        "--count",
+        "1000000"
+      ],
+      "events": [
+        {
+          "baseline_rank": 197,
+          "coefficient_bits": 27,
+          "count": 1000000,
+          "event": "start",
+          "exact_ranks": false,
+          "family": "bilinear",
+          "free_bits": 26,
+          "k": 3,
+          "matrix_order": 512,
+          "normalized": true,
+          "q": 8,
+          "random": false,
+          "seed": 20261030,
+          "start": 17800000
+        },
+        {
+          "best_coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "best_rank": 197,
+          "digest_fnv64": "11974560148563776101",
+          "event": "complete",
+          "histogram": [
+            [
+              197,
+              1000000
+            ]
+          ],
+          "milliseconds": 60971,
+          "tested": 1000000
+        }
+      ],
+      "exact_ranks": false,
+      "native_source_sha256": "16488ed69a2f5b98129909e9543d7aa1bfee6271d77b05a3be3183c3493cfd49",
+      "rank_semantics": "rank or certified lower bound at the current stopping threshold"
+    },
+    {
+      "command": [
+        "/tmp/intfact-group-correction-screen",
+        "--k",
+        "3",
+        "--family",
+        "bilinear",
+        "--normalized",
+        "--start",
+        "18800000",
+        "--count",
+        "1000000"
+      ],
+      "events": [
+        {
+          "baseline_rank": 197,
+          "coefficient_bits": 27,
+          "count": 1000000,
+          "event": "start",
+          "exact_ranks": false,
+          "family": "bilinear",
+          "free_bits": 26,
+          "k": 3,
+          "matrix_order": 512,
+          "normalized": true,
+          "q": 8,
+          "random": false,
+          "seed": 20261030,
+          "start": 18800000
+        },
+        {
+          "best_coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "best_rank": 197,
+          "digest_fnv64": "15788268337140445285",
+          "event": "complete",
+          "histogram": [
+            [
+              197,
+              1000000
+            ]
+          ],
+          "milliseconds": 76155,
+          "tested": 1000000
+        }
+      ],
+      "exact_ranks": false,
+      "native_source_sha256": "16488ed69a2f5b98129909e9543d7aa1bfee6271d77b05a3be3183c3493cfd49",
+      "rank_semantics": "rank or certified lower bound at the current stopping threshold"
+    },
+    {
+      "command": [
+        "/tmp/intfact-group-correction-screen",
+        "--k",
+        "3",
+        "--family",
+        "bilinear",
+        "--normalized",
+        "--start",
+        "19800000",
+        "--count",
+        "1000000"
+      ],
+      "events": [
+        {
+          "baseline_rank": 197,
+          "coefficient_bits": 27,
+          "count": 1000000,
+          "event": "start",
+          "exact_ranks": false,
+          "family": "bilinear",
+          "free_bits": 26,
+          "k": 3,
+          "matrix_order": 512,
+          "normalized": true,
+          "q": 8,
+          "random": false,
+          "seed": 20261030,
+          "start": 19800000
+        },
+        {
+          "best_coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "best_rank": 197,
+          "digest_fnv64": "4719661624940707173",
+          "event": "complete",
+          "histogram": [
+            [
+              197,
+              1000000
+            ]
+          ],
+          "milliseconds": 46589,
+          "tested": 1000000
+        }
+      ],
+      "exact_ranks": false,
+      "native_source_sha256": "16488ed69a2f5b98129909e9543d7aa1bfee6271d77b05a3be3183c3493cfd49",
+      "rank_semantics": "rank or certified lower bound at the current stopping threshold"
+    },
+    {
+      "command": [
+        "/tmp/intfact-group-correction-screen",
+        "--k",
+        "3",
+        "--family",
+        "bilinear",
+        "--normalized",
+        "--start",
+        "20800000",
+        "--count",
+        "1000000"
+      ],
+      "events": [
+        {
+          "baseline_rank": 197,
+          "coefficient_bits": 27,
+          "count": 1000000,
+          "event": "start",
+          "exact_ranks": false,
+          "family": "bilinear",
+          "free_bits": 26,
+          "k": 3,
+          "matrix_order": 512,
+          "normalized": true,
+          "q": 8,
+          "random": false,
+          "seed": 20261030,
+          "start": 20800000
+        },
+        {
+          "best_coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "best_rank": 197,
+          "digest_fnv64": "6263760452421306213",
+          "event": "complete",
+          "histogram": [
+            [
+              197,
+              1000000
+            ]
+          ],
+          "milliseconds": 59240,
+          "tested": 1000000
+        }
+      ],
+      "exact_ranks": false,
+      "native_source_sha256": "16488ed69a2f5b98129909e9543d7aa1bfee6271d77b05a3be3183c3493cfd49",
+      "rank_semantics": "rank or certified lower bound at the current stopping threshold"
+    },
+    {
+      "command": [
+        "/tmp/intfact-group-correction-screen",
+        "--k",
+        "3",
+        "--family",
+        "bilinear",
+        "--normalized",
+        "--start",
+        "21800000",
+        "--count",
+        "1000000"
+      ],
+      "events": [
+        {
+          "baseline_rank": 197,
+          "coefficient_bits": 27,
+          "count": 1000000,
+          "event": "start",
+          "exact_ranks": false,
+          "family": "bilinear",
+          "free_bits": 26,
+          "k": 3,
+          "matrix_order": 512,
+          "normalized": true,
+          "q": 8,
+          "random": false,
+          "seed": 20261030,
+          "start": 21800000
+        },
+        {
+          "best_coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "best_rank": 197,
+          "digest_fnv64": "15263509619961645669",
+          "event": "complete",
+          "histogram": [
+            [
+              197,
+              1000000
+            ]
+          ],
+          "milliseconds": 83180,
+          "tested": 1000000
+        }
+      ],
+      "exact_ranks": false,
+      "native_source_sha256": "16488ed69a2f5b98129909e9543d7aa1bfee6271d77b05a3be3183c3493cfd49",
+      "rank_semantics": "rank or certified lower bound at the current stopping threshold"
+    },
+    {
+      "command": [
+        "/tmp/intfact-group-correction-screen",
+        "--k",
+        "3",
+        "--family",
+        "bilinear",
+        "--normalized",
+        "--start",
+        "22800000",
+        "--count",
+        "1000000"
+      ],
+      "events": [
+        {
+          "baseline_rank": 197,
+          "coefficient_bits": 27,
+          "count": 1000000,
+          "event": "start",
+          "exact_ranks": false,
+          "family": "bilinear",
+          "free_bits": 26,
+          "k": 3,
+          "matrix_order": 512,
+          "normalized": true,
+          "q": 8,
+          "random": false,
+          "seed": 20261030,
+          "start": 22800000
+        },
+        {
+          "best_coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "best_rank": 197,
+          "digest_fnv64": "4475966173106008165",
+          "event": "complete",
+          "histogram": [
+            [
+              197,
+              1000000
+            ]
+          ],
+          "milliseconds": 68133,
+          "tested": 1000000
+        }
+      ],
+      "exact_ranks": false,
+      "native_source_sha256": "16488ed69a2f5b98129909e9543d7aa1bfee6271d77b05a3be3183c3493cfd49",
+      "rank_semantics": "rank or certified lower bound at the current stopping threshold"
+    },
+    {
+      "command": [
+        "/tmp/intfact-group-correction-screen",
+        "--k",
+        "3",
+        "--family",
+        "bilinear",
+        "--normalized",
+        "--start",
+        "23800000",
+        "--count",
+        "1000000"
+      ],
+      "events": [
+        {
+          "baseline_rank": 197,
+          "coefficient_bits": 27,
+          "count": 1000000,
+          "event": "start",
+          "exact_ranks": false,
+          "family": "bilinear",
+          "free_bits": 26,
+          "k": 3,
+          "matrix_order": 512,
+          "normalized": true,
+          "q": 8,
+          "random": false,
+          "seed": 20261030,
+          "start": 23800000
+        },
+        {
+          "best_coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "best_rank": 197,
+          "digest_fnv64": "12353276636051217253",
+          "event": "complete",
+          "histogram": [
+            [
+              197,
+              1000000
+            ]
+          ],
+          "milliseconds": 60574,
+          "tested": 1000000
+        }
+      ],
+      "exact_ranks": false,
+      "native_source_sha256": "16488ed69a2f5b98129909e9543d7aa1bfee6271d77b05a3be3183c3493cfd49",
+      "rank_semantics": "rank or certified lower bound at the current stopping threshold"
+    },
+    {
+      "command": [
+        "/tmp/intfact-group-correction-screen",
+        "--k",
+        "3",
+        "--family",
+        "bilinear",
+        "--normalized",
+        "--start",
+        "24800000",
+        "--count",
+        "1000000"
+      ],
+      "events": [
+        {
+          "baseline_rank": 197,
+          "coefficient_bits": 27,
+          "count": 1000000,
+          "event": "start",
+          "exact_ranks": false,
+          "family": "bilinear",
+          "free_bits": 26,
+          "k": 3,
+          "matrix_order": 512,
+          "normalized": true,
+          "q": 8,
+          "random": false,
+          "seed": 20261030,
+          "start": 24800000
+        },
+        {
+          "best_coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "best_rank": 197,
+          "digest_fnv64": "9568018780933461349",
+          "event": "complete",
+          "histogram": [
+            [
+              197,
+              1000000
+            ]
+          ],
+          "milliseconds": 26416,
+          "tested": 1000000
+        }
+      ],
+      "exact_ranks": false,
+      "native_source_sha256": "16488ed69a2f5b98129909e9543d7aa1bfee6271d77b05a3be3183c3493cfd49",
+      "rank_semantics": "rank or certified lower bound at the current stopping threshold"
+    },
+    {
+      "command": [
+        "/tmp/intfact-group-correction-screen",
+        "--k",
+        "3",
+        "--family",
+        "bilinear",
+        "--normalized",
+        "--start",
+        "25800000",
+        "--count",
+        "1000000"
+      ],
+      "events": [
+        {
+          "baseline_rank": 197,
+          "coefficient_bits": 27,
+          "count": 1000000,
+          "event": "start",
+          "exact_ranks": false,
+          "family": "bilinear",
+          "free_bits": 26,
+          "k": 3,
+          "matrix_order": 512,
+          "normalized": true,
+          "q": 8,
+          "random": false,
+          "seed": 20261030,
+          "start": 25800000
+        },
+        {
+          "best_coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "best_rank": 197,
+          "digest_fnv64": "16776072290340900453",
+          "event": "complete",
+          "histogram": [
+            [
+              197,
+              1000000
+            ]
+          ],
+          "milliseconds": 28567,
+          "tested": 1000000
+        }
+      ],
+      "exact_ranks": false,
+      "native_source_sha256": "16488ed69a2f5b98129909e9543d7aa1bfee6271d77b05a3be3183c3493cfd49",
+      "rank_semantics": "rank or certified lower bound at the current stopping threshold"
+    },
+    {
+      "command": [
+        "/tmp/intfact-group-correction-screen",
+        "--k",
+        "3",
+        "--family",
+        "bilinear",
+        "--normalized",
+        "--start",
+        "26800000",
+        "--count",
+        "1000000"
+      ],
+      "events": [
+        {
+          "baseline_rank": 197,
+          "coefficient_bits": 27,
+          "count": 1000000,
+          "event": "start",
+          "exact_ranks": false,
+          "family": "bilinear",
+          "free_bits": 26,
+          "k": 3,
+          "matrix_order": 512,
+          "normalized": true,
+          "q": 8,
+          "random": false,
+          "seed": 20261030,
+          "start": 26800000
+        },
+        {
+          "best_coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "best_rank": 197,
+          "digest_fnv64": "10753458116886535269",
+          "event": "complete",
+          "histogram": [
+            [
+              197,
+              1000000
+            ]
+          ],
+          "milliseconds": 35129,
+          "tested": 1000000
+        }
+      ],
+      "exact_ranks": false,
+      "native_source_sha256": "16488ed69a2f5b98129909e9543d7aa1bfee6271d77b05a3be3183c3493cfd49",
+      "rank_semantics": "rank or certified lower bound at the current stopping threshold"
+    },
+    {
+      "command": [
+        "/tmp/intfact-group-correction-screen",
+        "--k",
+        "3",
+        "--family",
+        "bilinear",
+        "--normalized",
+        "--start",
+        "27800000",
+        "--count",
+        "1000000"
+      ],
+      "events": [
+        {
+          "baseline_rank": 197,
+          "coefficient_bits": 27,
+          "count": 1000000,
+          "event": "start",
+          "exact_ranks": false,
+          "family": "bilinear",
+          "free_bits": 26,
+          "k": 3,
+          "matrix_order": 512,
+          "normalized": true,
+          "q": 8,
+          "random": false,
+          "seed": 20261030,
+          "start": 27800000
+        },
+        {
+          "best_coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "best_rank": 197,
+          "digest_fnv64": "15650795447313613157",
+          "event": "complete",
+          "histogram": [
+            [
+              197,
+              1000000
+            ]
+          ],
+          "milliseconds": 29198,
+          "tested": 1000000
+        }
+      ],
+      "exact_ranks": false,
+      "native_source_sha256": "16488ed69a2f5b98129909e9543d7aa1bfee6271d77b05a3be3183c3493cfd49",
+      "rank_semantics": "rank or certified lower bound at the current stopping threshold"
+    },
+    {
+      "command": [
+        "/tmp/intfact-group-correction-screen",
+        "--k",
+        "3",
+        "--family",
+        "bilinear",
+        "--normalized",
+        "--start",
+        "28800000",
+        "--count",
+        "1000000"
+      ],
+      "events": [
+        {
+          "baseline_rank": 197,
+          "coefficient_bits": 27,
+          "count": 1000000,
+          "event": "start",
+          "exact_ranks": false,
+          "family": "bilinear",
+          "free_bits": 26,
+          "k": 3,
+          "matrix_order": 512,
+          "normalized": true,
+          "q": 8,
+          "random": false,
+          "seed": 20261030,
+          "start": 28800000
+        },
+        {
+          "best_coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "best_rank": 197,
+          "digest_fnv64": "4749355752184916837",
+          "event": "complete",
+          "histogram": [
+            [
+              197,
+              1000000
+            ]
+          ],
+          "milliseconds": 19619,
+          "tested": 1000000
+        }
+      ],
+      "exact_ranks": false,
+      "native_source_sha256": "16488ed69a2f5b98129909e9543d7aa1bfee6271d77b05a3be3183c3493cfd49",
+      "rank_semantics": "rank or certified lower bound at the current stopping threshold"
+    },
+    {
+      "command": [
+        "/tmp/intfact-group-correction-screen",
+        "--k",
+        "3",
+        "--family",
+        "bilinear",
+        "--normalized",
+        "--start",
+        "29800000",
+        "--count",
+        "1000000"
+      ],
+      "events": [
+        {
+          "baseline_rank": 197,
+          "coefficient_bits": 27,
+          "count": 1000000,
+          "event": "start",
+          "exact_ranks": false,
+          "family": "bilinear",
+          "free_bits": 26,
+          "k": 3,
+          "matrix_order": 512,
+          "normalized": true,
+          "q": 8,
+          "random": false,
+          "seed": 20261030,
+          "start": 29800000
+        },
+        {
+          "best_coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "best_rank": 197,
+          "digest_fnv64": "2447484165718167141",
+          "event": "complete",
+          "histogram": [
+            [
+              197,
+              1000000
+            ]
+          ],
+          "milliseconds": 20418,
+          "tested": 1000000
+        }
+      ],
+      "exact_ranks": false,
+      "native_source_sha256": "16488ed69a2f5b98129909e9543d7aa1bfee6271d77b05a3be3183c3493cfd49",
+      "rank_semantics": "rank or certified lower bound at the current stopping threshold"
+    },
+    {
+      "command": [
+        "/tmp/intfact-group-correction-screen",
+        "--k",
+        "3",
+        "--family",
+        "bilinear",
+        "--normalized",
+        "--start",
+        "30800000",
+        "--count",
+        "1000000"
+      ],
+      "events": [
+        {
+          "baseline_rank": 197,
+          "coefficient_bits": 27,
+          "count": 1000000,
+          "event": "start",
+          "exact_ranks": false,
+          "family": "bilinear",
+          "free_bits": 26,
+          "k": 3,
+          "matrix_order": 512,
+          "normalized": true,
+          "q": 8,
+          "random": false,
+          "seed": 20261030,
+          "start": 30800000
+        },
+        {
+          "best_coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "best_rank": 197,
+          "digest_fnv64": "6935969662134574181",
+          "event": "complete",
+          "histogram": [
+            [
+              197,
+              1000000
+            ]
+          ],
+          "milliseconds": 24683,
+          "tested": 1000000
+        }
+      ],
+      "exact_ranks": false,
+      "native_source_sha256": "16488ed69a2f5b98129909e9543d7aa1bfee6271d77b05a3be3183c3493cfd49",
+      "rank_semantics": "rank or certified lower bound at the current stopping threshold"
+    },
+    {
+      "command": [
+        "/tmp/intfact-group-correction-screen",
+        "--k",
+        "3",
+        "--family",
+        "bilinear",
+        "--normalized",
+        "--start",
+        "31800000",
+        "--count",
+        "1000000"
+      ],
+      "events": [
+        {
+          "baseline_rank": 197,
+          "coefficient_bits": 27,
+          "count": 1000000,
+          "event": "start",
+          "exact_ranks": false,
+          "family": "bilinear",
+          "free_bits": 26,
+          "k": 3,
+          "matrix_order": 512,
+          "normalized": true,
+          "q": 8,
+          "random": false,
+          "seed": 20261030,
+          "start": 31800000
+        },
+        {
+          "best_coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "best_rank": 197,
+          "digest_fnv64": "16982453375642999653",
+          "event": "complete",
+          "histogram": [
+            [
+              197,
+              1000000
+            ]
+          ],
+          "milliseconds": 28386,
+          "tested": 1000000
+        }
+      ],
+      "exact_ranks": false,
+      "native_source_sha256": "16488ed69a2f5b98129909e9543d7aa1bfee6271d77b05a3be3183c3493cfd49",
+      "rank_semantics": "rank or certified lower bound at the current stopping threshold"
+    },
+    {
+      "command": [
+        "/tmp/intfact-group-correction-screen",
+        "--k",
+        "3",
+        "--family",
+        "bilinear",
+        "--normalized",
+        "--start",
+        "32800000",
+        "--count",
+        "1000000"
+      ],
+      "events": [
+        {
+          "baseline_rank": 197,
+          "coefficient_bits": 27,
+          "count": 1000000,
+          "event": "start",
+          "exact_ranks": false,
+          "family": "bilinear",
+          "free_bits": 26,
+          "k": 3,
+          "matrix_order": 512,
+          "normalized": true,
+          "q": 8,
+          "random": false,
+          "seed": 20261030,
+          "start": 32800000
+        },
+        {
+          "best_coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "best_rank": 197,
+          "digest_fnv64": "18177612344619044197",
+          "event": "complete",
+          "histogram": [
+            [
+              197,
+              1000000
+            ]
+          ],
+          "milliseconds": 28196,
+          "tested": 1000000
+        }
+      ],
+      "exact_ranks": false,
+      "native_source_sha256": "16488ed69a2f5b98129909e9543d7aa1bfee6271d77b05a3be3183c3493cfd49",
+      "rank_semantics": "rank or certified lower bound at the current stopping threshold"
+    },
+    {
+      "command": [
+        "/tmp/intfact-group-correction-screen",
+        "--k",
+        "3",
+        "--family",
+        "bilinear",
+        "--normalized",
+        "--start",
+        "33800000",
+        "--count",
+        "1000000"
+      ],
+      "events": [
+        {
+          "baseline_rank": 197,
+          "coefficient_bits": 27,
+          "count": 1000000,
+          "event": "start",
+          "exact_ranks": false,
+          "family": "bilinear",
+          "free_bits": 26,
+          "k": 3,
+          "matrix_order": 512,
+          "normalized": true,
+          "q": 8,
+          "random": false,
+          "seed": 20261030,
+          "start": 33800000
+        },
+        {
+          "best_coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "best_rank": 197,
+          "digest_fnv64": "9095132319451292261",
+          "event": "complete",
+          "histogram": [
+            [
+              197,
+              1000000
+            ]
+          ],
+          "milliseconds": 30236,
+          "tested": 1000000
+        }
+      ],
+      "exact_ranks": false,
+      "native_source_sha256": "16488ed69a2f5b98129909e9543d7aa1bfee6271d77b05a3be3183c3493cfd49",
+      "rank_semantics": "rank or certified lower bound at the current stopping threshold"
+    },
+    {
+      "command": [
+        "/tmp/intfact-group-correction-screen",
+        "--k",
+        "3",
+        "--family",
+        "bilinear",
+        "--normalized",
+        "--start",
+        "34800000",
+        "--count",
+        "1000000"
+      ],
+      "events": [
+        {
+          "baseline_rank": 197,
+          "coefficient_bits": 27,
+          "count": 1000000,
+          "event": "start",
+          "exact_ranks": false,
+          "family": "bilinear",
+          "free_bits": 26,
+          "k": 3,
+          "matrix_order": 512,
+          "normalized": true,
+          "q": 8,
+          "random": false,
+          "seed": 20261030,
+          "start": 34800000
+        },
+        {
+          "best_coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "best_rank": 197,
+          "digest_fnv64": "15059264350934628453",
+          "event": "complete",
+          "histogram": [
+            [
+              197,
+              1000000
+            ]
+          ],
+          "milliseconds": 28698,
+          "tested": 1000000
+        }
+      ],
+      "exact_ranks": false,
+      "native_source_sha256": "16488ed69a2f5b98129909e9543d7aa1bfee6271d77b05a3be3183c3493cfd49",
+      "rank_semantics": "rank or certified lower bound at the current stopping threshold"
+    },
+    {
+      "command": [
+        "/tmp/intfact-group-correction-screen",
+        "--k",
+        "3",
+        "--family",
+        "bilinear",
+        "--normalized",
+        "--start",
+        "35800000",
+        "--count",
+        "1000000"
+      ],
+      "events": [
+        {
+          "baseline_rank": 197,
+          "coefficient_bits": 27,
+          "count": 1000000,
+          "event": "start",
+          "exact_ranks": false,
+          "family": "bilinear",
+          "free_bits": 26,
+          "k": 3,
+          "matrix_order": 512,
+          "normalized": true,
+          "q": 8,
+          "random": false,
+          "seed": 20261030,
+          "start": 35800000
+        },
+        {
+          "best_coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "best_rank": 197,
+          "digest_fnv64": "12714648495047134565",
+          "event": "complete",
+          "histogram": [
+            [
+              197,
+              1000000
+            ]
+          ],
+          "milliseconds": 36514,
+          "tested": 1000000
+        }
+      ],
+      "exact_ranks": false,
+      "native_source_sha256": "16488ed69a2f5b98129909e9543d7aa1bfee6271d77b05a3be3183c3493cfd49",
+      "rank_semantics": "rank or certified lower bound at the current stopping threshold"
+    },
+    {
+      "command": [
+        "/tmp/intfact-group-correction-screen",
+        "--k",
+        "3",
+        "--family",
+        "bilinear",
+        "--normalized",
+        "--start",
+        "36800000",
+        "--count",
+        "1000000"
+      ],
+      "events": [
+        {
+          "baseline_rank": 197,
+          "coefficient_bits": 27,
+          "count": 1000000,
+          "event": "start",
+          "exact_ranks": false,
+          "family": "bilinear",
+          "free_bits": 26,
+          "k": 3,
+          "matrix_order": 512,
+          "normalized": true,
+          "q": 8,
+          "random": false,
+          "seed": 20261030,
+          "start": 36800000
+        },
+        {
+          "best_coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "best_rank": 197,
+          "digest_fnv64": "5325181906007953253",
+          "event": "complete",
+          "histogram": [
+            [
+              197,
+              1000000
+            ]
+          ],
+          "milliseconds": 26983,
+          "tested": 1000000
+        }
+      ],
+      "exact_ranks": false,
+      "native_source_sha256": "16488ed69a2f5b98129909e9543d7aa1bfee6271d77b05a3be3183c3493cfd49",
+      "rank_semantics": "rank or certified lower bound at the current stopping threshold"
+    },
+    {
+      "command": [
+        "/tmp/intfact-group-correction-screen",
+        "--k",
+        "3",
+        "--family",
+        "bilinear",
+        "--normalized",
+        "--start",
+        "37800000",
+        "--count",
+        "1000000"
+      ],
+      "events": [
+        {
+          "baseline_rank": 197,
+          "coefficient_bits": 27,
+          "count": 1000000,
+          "event": "start",
+          "exact_ranks": false,
+          "family": "bilinear",
+          "free_bits": 26,
+          "k": 3,
+          "matrix_order": 512,
+          "normalized": true,
+          "q": 8,
+          "random": false,
+          "seed": 20261030,
+          "start": 37800000
+        },
+        {
+          "best_coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "best_rank": 197,
+          "digest_fnv64": "9176748355037426277",
+          "event": "complete",
+          "histogram": [
+            [
+              197,
+              1000000
+            ]
+          ],
+          "milliseconds": 29935,
+          "tested": 1000000
+        }
+      ],
+      "exact_ranks": false,
+      "native_source_sha256": "16488ed69a2f5b98129909e9543d7aa1bfee6271d77b05a3be3183c3493cfd49",
+      "rank_semantics": "rank or certified lower bound at the current stopping threshold"
+    },
+    {
+      "command": [
+        "/tmp/intfact-group-correction-screen",
+        "--k",
+        "3",
+        "--family",
+        "bilinear",
+        "--normalized",
+        "--start",
+        "38800000",
+        "--count",
+        "1000000"
+      ],
+      "events": [
+        {
+          "baseline_rank": 197,
+          "coefficient_bits": 27,
+          "count": 1000000,
+          "event": "start",
+          "exact_ranks": false,
+          "family": "bilinear",
+          "free_bits": 26,
+          "k": 3,
+          "matrix_order": 512,
+          "normalized": true,
+          "q": 8,
+          "random": false,
+          "seed": 20261030,
+          "start": 38800000
+        },
+        {
+          "best_coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "best_rank": 197,
+          "digest_fnv64": "8084838934520625253",
+          "event": "complete",
+          "histogram": [
+            [
+              197,
+              1000000
+            ]
+          ],
+          "milliseconds": 33095,
+          "tested": 1000000
+        }
+      ],
+      "exact_ranks": false,
+      "native_source_sha256": "16488ed69a2f5b98129909e9543d7aa1bfee6271d77b05a3be3183c3493cfd49",
+      "rank_semantics": "rank or certified lower bound at the current stopping threshold"
+    },
+    {
+      "command": [
+        "/tmp/intfact-group-correction-screen",
+        "--k",
+        "3",
+        "--family",
+        "bilinear",
+        "--normalized",
+        "--start",
+        "39800000",
+        "--count",
+        "1000000"
+      ],
+      "events": [
+        {
+          "baseline_rank": 197,
+          "coefficient_bits": 27,
+          "count": 1000000,
+          "event": "start",
+          "exact_ranks": false,
+          "family": "bilinear",
+          "free_bits": 26,
+          "k": 3,
+          "matrix_order": 512,
+          "normalized": true,
+          "q": 8,
+          "random": false,
+          "seed": 20261030,
+          "start": 39800000
+        },
+        {
+          "best_coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "best_rank": 197,
+          "digest_fnv64": "1199973774208713573",
+          "event": "complete",
+          "histogram": [
+            [
+              197,
+              1000000
+            ]
+          ],
+          "milliseconds": 29186,
+          "tested": 1000000
+        }
+      ],
+      "exact_ranks": false,
+      "native_source_sha256": "16488ed69a2f5b98129909e9543d7aa1bfee6271d77b05a3be3183c3493cfd49",
+      "rank_semantics": "rank or certified lower bound at the current stopping threshold"
+    },
+    {
+      "command": [
+        "/tmp/intfact-group-correction-screen",
+        "--k",
+        "3",
+        "--family",
+        "bilinear",
+        "--normalized",
+        "--start",
+        "40800000",
+        "--count",
+        "1000000"
+      ],
+      "events": [
+        {
+          "baseline_rank": 197,
+          "coefficient_bits": 27,
+          "count": 1000000,
+          "event": "start",
+          "exact_ranks": false,
+          "family": "bilinear",
+          "free_bits": 26,
+          "k": 3,
+          "matrix_order": 512,
+          "normalized": true,
+          "q": 8,
+          "random": false,
+          "seed": 20261030,
+          "start": 40800000
+        },
+        {
+          "best_coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "best_rank": 197,
+          "digest_fnv64": "1948598142024435045",
+          "event": "complete",
+          "histogram": [
+            [
+              197,
+              1000000
+            ]
+          ],
+          "milliseconds": 38094,
+          "tested": 1000000
+        }
+      ],
+      "exact_ranks": false,
+      "native_source_sha256": "16488ed69a2f5b98129909e9543d7aa1bfee6271d77b05a3be3183c3493cfd49",
+      "rank_semantics": "rank or certified lower bound at the current stopping threshold"
+    },
+    {
+      "command": [
+        "/tmp/intfact-group-correction-screen",
+        "--k",
+        "3",
+        "--family",
+        "bilinear",
+        "--normalized",
+        "--start",
+        "41800000",
+        "--count",
+        "1000000"
+      ],
+      "events": [
+        {
+          "baseline_rank": 197,
+          "coefficient_bits": 27,
+          "count": 1000000,
+          "event": "start",
+          "exact_ranks": false,
+          "family": "bilinear",
+          "free_bits": 26,
+          "k": 3,
+          "matrix_order": 512,
+          "normalized": true,
+          "q": 8,
+          "random": false,
+          "seed": 20261030,
+          "start": 41800000
+        },
+        {
+          "best_coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "best_rank": 197,
+          "digest_fnv64": "7656230737044076133",
+          "event": "complete",
+          "histogram": [
+            [
+              197,
+              1000000
+            ]
+          ],
+          "milliseconds": 21592,
+          "tested": 1000000
+        }
+      ],
+      "exact_ranks": false,
+      "native_source_sha256": "16488ed69a2f5b98129909e9543d7aa1bfee6271d77b05a3be3183c3493cfd49",
+      "rank_semantics": "rank or certified lower bound at the current stopping threshold"
+    },
+    {
+      "command": [
+        "/tmp/intfact-group-correction-screen",
+        "--k",
+        "3",
+        "--family",
+        "bilinear",
+        "--normalized",
+        "--start",
+        "42800000",
+        "--count",
+        "1000000"
+      ],
+      "events": [
+        {
+          "baseline_rank": 197,
+          "coefficient_bits": 27,
+          "count": 1000000,
+          "event": "start",
+          "exact_ranks": false,
+          "family": "bilinear",
+          "free_bits": 26,
+          "k": 3,
+          "matrix_order": 512,
+          "normalized": true,
+          "q": 8,
+          "random": false,
+          "seed": 20261030,
+          "start": 42800000
+        },
+        {
+          "best_coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "best_rank": 197,
+          "digest_fnv64": "4725415140637830245",
+          "event": "complete",
+          "histogram": [
+            [
+              197,
+              1000000
+            ]
+          ],
+          "milliseconds": 24334,
+          "tested": 1000000
+        }
+      ],
+      "exact_ranks": false,
+      "native_source_sha256": "16488ed69a2f5b98129909e9543d7aa1bfee6271d77b05a3be3183c3493cfd49",
+      "rank_semantics": "rank or certified lower bound at the current stopping threshold"
+    },
+    {
+      "command": [
+        "/tmp/intfact-group-correction-screen",
+        "--k",
+        "3",
+        "--family",
+        "bilinear",
+        "--normalized",
+        "--start",
+        "43800000",
+        "--count",
+        "1000000"
+      ],
+      "events": [
+        {
+          "baseline_rank": 197,
+          "coefficient_bits": 27,
+          "count": 1000000,
+          "event": "start",
+          "exact_ranks": false,
+          "family": "bilinear",
+          "free_bits": 26,
+          "k": 3,
+          "matrix_order": 512,
+          "normalized": true,
+          "q": 8,
+          "random": false,
+          "seed": 20261030,
+          "start": 43800000
+        },
+        {
+          "best_coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "best_rank": 197,
+          "digest_fnv64": "3714107288555329893",
+          "event": "complete",
+          "histogram": [
+            [
+              197,
+              1000000
+            ]
+          ],
+          "milliseconds": 20925,
+          "tested": 1000000
+        }
+      ],
+      "exact_ranks": false,
+      "native_source_sha256": "16488ed69a2f5b98129909e9543d7aa1bfee6271d77b05a3be3183c3493cfd49",
+      "rank_semantics": "rank or certified lower bound at the current stopping threshold"
+    },
+    {
+      "command": [
+        "/tmp/intfact-group-correction-screen",
+        "--k",
+        "3",
+        "--family",
+        "bilinear",
+        "--normalized",
+        "--start",
+        "44800000",
+        "--count",
+        "1000000"
+      ],
+      "events": [
+        {
+          "baseline_rank": 197,
+          "coefficient_bits": 27,
+          "count": 1000000,
+          "event": "start",
+          "exact_ranks": false,
+          "family": "bilinear",
+          "free_bits": 26,
+          "k": 3,
+          "matrix_order": 512,
+          "normalized": true,
+          "q": 8,
+          "random": false,
+          "seed": 20261030,
+          "start": 44800000
+        },
+        {
+          "best_coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "best_rank": 197,
+          "digest_fnv64": "5222104599545756517",
+          "event": "complete",
+          "histogram": [
+            [
+              197,
+              1000000
+            ]
+          ],
+          "milliseconds": 20332,
+          "tested": 1000000
+        }
+      ],
+      "exact_ranks": false,
+      "native_source_sha256": "16488ed69a2f5b98129909e9543d7aa1bfee6271d77b05a3be3183c3493cfd49",
+      "rank_semantics": "rank or certified lower bound at the current stopping threshold"
+    }
+  ],
+  "scope": "Only normalized bilinear correction indices in [13800000,45800000); not an exhaustive screen of the 67108864-index family. Every screened rank is at least 197; ranks above this cap were not computed exactly. The zero correction has rank 197 and is the comparison baseline, independently of this interval.",
+  "status": "completed bounded screen; paused after structural obstruction was proved"
+}

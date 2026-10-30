@@ -25,6 +25,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Complement-shell crossings](complement-shell-crossings.md): explicit identity-Gram labels, exact sparse support, a universal four-state tensor, and an all-size paired reciprocal-pencil identity.
 - [Complete shell rank blocks](complement-shell-rank-blocks.md): exact syndrome direct sums through 496 labels and protected central minors for fixed-length full shells.
 - [Three-parameter Pfaffian crossings](pfaffian-ternary-edge-family.md): arbitrary fixed-length codes, a complete uniform edge space, exact label retracts, and binary/four-element-field seed exclusions.
+- [Pfaffian boundary sections](noncommutative-crossing-pfaffian-boundaries.md): all-size section and Gram formulas, the universal correction factor, and an all-field rank-cost certificate for four pairs.
+- [Sparse isotropic Pfaffian sections](noncommutative-crossing-pfaffian-isotropic.md): explicit endpoint cancellation at every size from six pairs, four-term lifts from seven pairs, exact active correction ranks, and a six-piece crossing curve.
 - [High-mode residue folding](residue-folded-channels.md): exact ambient dimensions, finite incoming and outgoing factors, both complete channel counts, and eventual energy periodicity.
 - [Homogeneous modular selection](homogeneous-central-selection.md): one operator weight at every label width, selected rectangular vacuum minors, and an effective uniform half-rate construction.
 - [Noncommutative group-word crossings](noncommutative-crossing-orbits.md): exact all-size construction, compressed constant cut, optimal rank-28 central shears on 64 labels, and complete-profile limitations.
@@ -42,6 +44,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Directions beyond half](post-half-directions.md): experiments, scope, and unresolved questions.
 - [Quadratic charges and label entropy](binary-quadratic-charge-shells.md): exact residue-syndrome characters and dimension bounds for joint eigenspaces of all low quadratic charges.
 - [PBW degeneration of Hopf crossings](noncommutative-crossing-pbw-degeneration.md): a common four-leg specialization proves a finite rank-sum obstruction for the full PBW-domain coefficient spaces, including field extensions and filtered local gauges.
+- [Two-stage group degeneration](noncommutative-crossing-group-degeneration.md): augmentation weight followed by ordinary PBW length excludes full-domain class-two word crossings with quadratic controls; cubic controls have an explicit failure of the first filtration.
 - [Network tradeoff](half-top-structure.md): restriction for the current local-enumeration and wire-channel constructor.
 - [Restricted-label counterexample](half-restricted-labels.md): failure of a proposed low-mode dimension reduction.
 - [Restricted intermediate spans](half-restricted-span.md): quantitative obstruction, with precise selected-label conditions.

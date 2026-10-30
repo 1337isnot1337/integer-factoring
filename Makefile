@@ -26,6 +26,9 @@ verify-constructions:
 	python3 tools/check_binary_quadratic_charge_shells.py
 	python3 tools/check_noncommutative_crossing_hopf.py
 	python3 tools/check_residue_folded_channels.py
+	python3 tools/check_noncommutative_crossing_pfaffian_boundaries.py
+	python3 tools/check_noncommutative_crossing_pfaffian_isotropic.py
+	python3 tools/check_noncommutative_crossing_group_degeneration.py
 
 verify-native-crossings:
 	mkdir -p build/native
