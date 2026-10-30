@@ -30,6 +30,9 @@ The composition uses the existing clique evaluator from [Anthropic's Appendix B]
 | Saving exponent above `1/2` | **Not established** | [Research index](research/INDEX.md) |
 | Factoring from counts in every fixed prime characteristic | Ordinary conditional reduction; no score change | [Cyclic-orbit recovery](research/fixed-characteristic-factor-recovery.md) removes the sparse-recovery square-root overhead; [parity case](research/parity-power-divisor-recovery.md) |
 | Joined multiplication networks | Ordinary compiler theorem | [Weighted network compiler](research/weighted-network-top-compiler.md) preserves linear volume and exact witness counts |
+| Local polynomial crossing certificates | Ordinary conditional transfer; no improving certificate yet | [Smith profiles](research/smith-profile-crossing-transfer.md) and [independent auxiliary gauges](research/auxiliary-gauge-smith-transfer.md) give exact finite construction criteria |
+| Explicit auxiliary entanglers | Exact algebraic certificates; no score change | [Product-vector exclusion and its limits](research/explicit-entanglers-and-density-scalarization.md), including a complete base-field density screen |
+| Exterior crossing boundaries | Ordinary reduction and scoped lower bounds | [Common projection and fixed-occupation bounds](research/coherent-exterior-boundary-reduction.md); a complete binary screen at four positions |
 
 The result table distinguishes verified machine bounds from conditional constructions and finite experiments. A merged PR or a passing finite test does not imply independent mathematical review.
 
@@ -42,10 +45,12 @@ make verify               # Python unit tests, exact certificates, and local lin
 make verify-frontier      # Focused research certificates
 make verify-post-half     # Larger optional rank tests
 make verify-recovery      # Fixed-characteristic recovery and multiplication ports
+make verify-constructive  # Entanglers, local Smith profiles, and auxiliary gauges
+make verify-native        # Optional complete native screens (C++17/C++20)
 make verify-docs          # Local Markdown-link check
 ```
 
-The Python checks use Python 3 and its standard library. Some optional checks use NumPy for speed.
+The default checks use Python 3 and its standard library. Some optional checks use NumPy for speed. The optional `verify-native` target requires `g++`: the coherent-boundary replay uses C++17, and the complete product-density screen uses C++20. The latter examines all `2^30` normalized product densities for the displayed binary matrix.
 
 For the Lean builds, install the stated Lean release, Lake, Git, and the prerequisites in the corresponding scripts. The scripts fetch pinned upstream revisions.
 
@@ -73,6 +78,10 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 No uniform factoring exponent above `1/2` is proved here. One open approach seeks effective crossing pieces with total rank width `4*rho*lambda + O(log lambda)` for `rho < 1/sqrt(2)`. A suitable family could improve the evaluator bound, but finite rank improvements alone do not establish that inequality.
 
 The [fixed-characteristic recovery reduction](research/fixed-characteristic-factor-recovery.md) uses power-divisibility counts to detect higher base-`p` digits of prime exponents, then counts least cyclic rotations of ordered factorizations. For every fixed prime `p`, its queries have total bit budget `O_p(n)` and unique arithmetic witnesses. An evaluator for those systems transfers to factoring with polynomial overhead, including hypothetical bounds `exp(O(n^beta))` for every fixed `beta>0`. The [parity case](research/parity-power-divisor-recovery.md) has a simpler squarefree divisor-interval step. The [weighted compiler](research/weighted-network-top-compiler.md) supplies the top-clique interface, whose construction cost remains charged. These are recovery theorems; they supply no faster evaluator or higher unconditional exponent.
+
+The [local Smith-profile criterion](research/smith-profile-crossing-transfer.md) converts two finite valuation spectra into an all-length rank bound for ordered polynomial matrix products. [Independent rational auxiliary gauges](research/auxiliary-gauge-smith-transfer.md) enlarge this search while changing only a constant boundary cost. The elementary binary control recovers `rho=H_2(1/4)`; no screened certificate reaches `rho<1/sqrt(2)`.
+
+The [explicit entangler certificates](research/explicit-entanglers-and-density-scalarization.md) separate product-vector exclusion from the stronger absence of a factorizing functional. The [exterior-boundary reduction](research/coherent-exterior-boundary-reduction.md) preserves the leading exponent under a common histogram projection and proves all-width restrictions for fixed occupations. Its remaining coherent family is open. An exact [131-bit counterexample](research/root-threshold-parity-counterexample.md) also shows why testing only whole root intervals cannot replace power-divisibility queries in parity recovery.
 
 See the [research index](research/INDEX.md) for completed arguments, scoped obstructions, and older candidates. Active work can also appear in [open pull requests](https://github.com/1337isnot1337/integer-factoring/pulls); branch research is not automatically a result on `main`.
 

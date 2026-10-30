@@ -14,6 +14,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Local Smith-profile crossing certificate](smith-profile-crossing-transfer.md): two exact local valuation spectra certify all-length rank bounds for ordered polynomial matrix products.
+- [Independent auxiliary rational gauges](auxiliary-gauge-smith-transfer.md): different telescoping basis changes in the two cuts enlarge the Smith search with constant boundary costs.
 - [Recovery in every fixed prime characteristic](fixed-characteristic-factor-recovery.md): higher exponent digits and unique cyclic-orbit representatives give complete factorization with polynomial query overhead and linear total arithmetic length.
 - [Parity and power-divisor recovery](parity-power-divisor-recovery.md): characteristic-two counts detect exponent bits and recover a complete factorization with polynomial query overhead, without a sparse-recovery square-root floor.
 - [General weighted network compiler](weighted-network-top-compiler.md): deterministic-message networks with linear total weight and sublinear maximum gate weight compile to linear-volume top cliques; variable multiplication output ports preserve unique witnesses.
@@ -29,6 +31,9 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Obstructions and work beyond 1/2
 
+- [Explicit entanglers and scalarization controls](explicit-entanglers-and-density-scalarization.md): product-ket exclusions over algebraic closures, a surviving full-rank product functional, and a complete binary product-density screen.
+- [Coherent exterior-boundary reduction](coherent-exterior-boundary-reduction.md): a common histogram projection, all-width fixed-occupation lower bounds, and a complete four-position binary coefficient-span screen.
+- [Whole-root-interval parity counterexample](root-threshold-parity-counterexample.md): an exact non-perfect-power composite defeats every whole root-threshold parity count; general interval recovery remains unrestricted.
 - [Directions beyond half](post-half-directions.md): experiments, scope, and unresolved questions.
 - [Network tradeoff](half-top-structure.md): restriction for the current local-enumeration and wire-channel constructor.
 - [Restricted-label counterexample](half-restricted-labels.md): failure of a proposed low-mode dimension reduction.

@@ -14,7 +14,7 @@ T(n)=\exp\!\left(O\!\left(\frac{n}{(\log n)^{\beta_{12}}}\right)\right),
 
 In particular it qualifies for score `1/29`, and for the exact exponent
 `beta_12`, under the site's logarithmic-saving convention. This note is an
-ordinary mathematical proof. The existing Lean endpoint remains `1/30`;
+ordinary mathematical proof. The existing k6 Lean endpoint remains `1/30`;
 no new Lean theorem or independent review is claimed. No program is changed.
 
 The source is the patched reference and machine bridge merged at

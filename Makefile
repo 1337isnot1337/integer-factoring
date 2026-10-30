@@ -1,6 +1,6 @@
-.PHONY: verify verify-docs verify-frontier verify-parity verify-recovery verify-post-half verify-formal verify-k6 verify-half-appendix help
+.PHONY: verify verify-docs verify-frontier verify-parity verify-recovery verify-constructive verify-native verify-exterior verify-entangler-density verify-post-half verify-formal verify-k6 verify-half-appendix help
 
-verify: verify-docs verify-frontier verify-recovery
+verify: verify-docs verify-frontier verify-recovery verify-constructive
 	python3 -m unittest discover -s tests -v
 	python3 -m unittest tools.check_crossing -v
 	python3 tools/check_coefficient_basis.py
@@ -20,6 +20,20 @@ verify-parity:
 
 verify-recovery: verify-parity
 	python3 tools/check_fixed_characteristic_recovery.py
+	python3 tools/check_root_threshold_counterexample.py
+
+verify-constructive:
+	python3 tools/check_explicit_entanglers.py
+	python3 tools/check_smith_profile_transfer.py
+	python3 tools/check_auxiliary_gauge_smith.py
+
+verify-native: verify-exterior verify-entangler-density
+
+verify-exterior:
+	python3 tools/check_coherent_exterior_boundaries.py
+
+verify-entangler-density:
+	python3 tools/check_density16_certificate.py
 
 verify-post-half:
 	python3 tools/check_half_piece_ranks.py --full
@@ -54,6 +68,8 @@ help:
 	  'make verify-frontier      - focused frontier certificates' \
 	  'make verify-parity        - parity recovery and variable-output multiplication ports' \
 	  'make verify-recovery      - factor recovery in every fixed prime characteristic' \
+	  'make verify-constructive  - exact entangler, Smith-profile, and gauge certificates' \
+	  'make verify-native        - optional coherent-boundary and complete density screens (C++)' \
 	  'make verify-post-half     - larger optional matrix-rank checks' \
 	  'make verify-docs          - check local Markdown file links' \
 	  'make verify-formal        - rebuild original Lean lemmas (Lean 4.35.0)' \
