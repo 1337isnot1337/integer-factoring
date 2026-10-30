@@ -7,6 +7,12 @@ which part of that target; it is not a list of new factoring bounds.
 
 ## Effective families with an open rank theorem
 
+- [Joint label relabelings](hamming-relabeling.md) give a six-piece
+  product-16 seed at width two. Fixed polynomial gradings produce new
+  linear-degree families with complete-span optimization in `2^O(lambda)`.
+  A constant nilpotent block model computes exact ranks for a four-piece
+  aggregate. The missing condition remains a uniform contraction theorem.
+
 - [Bounded bit weights](hamming-pfaffian.md) and
   [fixed antipodal-pair sectors](hamming-sectors.md) have linear degree,
   complete-span optimization cost `2^O(lambda)`, and scale-one crossing.
@@ -50,6 +56,9 @@ their needed uniform rank estimate is open.
   at widths 1, 2, and 3.
 - [Joint one/two-pair family](hamming-joint-optimum.md): exact width-two
   optimum 25 over `F_2`; its rounded width sum is still six.
+- [Joint relabeling family](hamming-relabeling.md): width-two upper bound
+  16 in a larger 102-dimensional span, six pieces and rounded width sum
+  four. No lower-bound certificate for this larger span is claimed.
 - [Extension-field scope control](hamming-joint-optimum.md#a-strict-extension-field-scope-control):
   the separating row-rank lemma fails over `F_4`, with explicit ranks
   `(4,10)`. The product 40 is not an improvement.

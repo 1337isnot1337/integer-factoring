@@ -152,6 +152,14 @@ equality terms and counts separate two-dimensional-subspace blocks. Replay
 `python3 tools/check_affine_code_barrier.py`. Quadratic evaluation codes
 have admissible subexponential piece counts; their uniform rank bound is
 still open.
+A [joint label-relabeling construction](research/hamming-relabeling.md)
+improves the width-two finite witness from product 25 to **16**, using six
+pieces with rounded width sum four. Its larger span has dimension 102;
+no optimum is claimed there. The new seed gives effective linear-degree
+tensor-power families outside the three-pairing obstruction. An exact
+constant block model reduces the aggregate family's rank calculation to
+smaller repeated blocks; its uniform contraction remains open. Replay
+`python3 tools/check_hamming_relabeling.py`.
 
 A [complete-piece recombination search](research/modular-recombination.md)
 reduces the maximum rank product from 27 to 4 on the three-label modular
