@@ -326,9 +326,10 @@ practical factoring implementation. They test the new finite adapters,
 source-derived integer inequalities, prefix search, and negative controls.
 The infinite-input theorem is the written proof and its cited prior
 theorems, not an inference from successful small tests. No new Lean
-formalization of the full composition or fresh build of the Appendix B
-development is claimed. The separate [Lean pad lemma](../formal/HalfPad.lean)
-checks the sufficient-pad arithmetic assuming the evaluator's stated bounds;
+formalization of the full composition is claimed. The pinned Appendix B
+development has now been rebuilt, and [ExplicitPad.lean](../formal-appendix/ExplicitPad.lean)
+proves that its assembled evaluator works with the computable pad from the
+[Lean pad lemma](../formal/HalfPad.lean);
 [HalfPrefix.lean](../formal/HalfPrefix.lean) verifies removal of the divisor 1
 against the factoring reference's `cntPre`. These lemmas do not construct the
 factoring machine.
