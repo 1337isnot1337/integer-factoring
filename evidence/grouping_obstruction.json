@@ -1,0 +1,300 @@
+{
+  "scope": "finite checks of the path obstruction and its sharp boundary; not a factoring bound",
+  "cases": [
+    {
+      "K": 3,
+      "D": 2,
+      "threshold": 4,
+      "excluded_vertices": 3,
+      "excluded_edges": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ],
+      "ordered_total": 4,
+      "degree_bound": 2,
+      "strict_obstruction_margin": 4,
+      "exhausted_colorings": 27,
+      "boundary_witness": {
+        "vertex_count": 4,
+        "groups": 3,
+        "discrepancy": 2,
+        "degree_bound": 2,
+        "ordered_total": 6,
+        "colors": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "group_sizes": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "pair_weights": [
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "sufficient_threshold_met": false,
+        "valid": true,
+        "violations": []
+      }
+    },
+    {
+      "K": 3,
+      "D": 3,
+      "threshold": 5,
+      "excluded_vertices": 4,
+      "excluded_edges": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ]
+      ],
+      "ordered_total": 6,
+      "degree_bound": 2,
+      "strict_obstruction_margin": 1,
+      "exhausted_colorings": 81,
+      "boundary_witness": {
+        "vertex_count": 5,
+        "groups": 3,
+        "discrepancy": 3,
+        "degree_bound": 2,
+        "ordered_total": 8,
+        "colors": [
+          0,
+          0,
+          1,
+          1,
+          2
+        ],
+        "group_sizes": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        "pair_weights": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            1
+          ]
+        ],
+        "sufficient_threshold_met": false,
+        "valid": true,
+        "violations": []
+      }
+    },
+    {
+      "K": 4,
+      "D": 2,
+      "threshold": 6,
+      "excluded_vertices": 5,
+      "excluded_edges": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          3,
+          4,
+          1
+        ]
+      ],
+      "ordered_total": 8,
+      "degree_bound": 2,
+      "strict_obstruction_margin": 6,
+      "exhausted_colorings": 1024,
+      "boundary_witness": {
+        "vertex_count": 6,
+        "groups": 4,
+        "discrepancy": 2,
+        "degree_bound": 2,
+        "ordered_total": 10,
+        "colors": [
+          0,
+          0,
+          1,
+          1,
+          2,
+          2
+        ],
+        "group_sizes": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "pair_weights": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            1
+          ]
+        ],
+        "sufficient_threshold_met": false,
+        "valid": true,
+        "violations": []
+      }
+    },
+    {
+      "K": 4,
+      "D": 10,
+      "threshold": 9,
+      "excluded_vertices": 8,
+      "excluded_edges": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          4,
+          5,
+          1
+        ],
+        [
+          5,
+          6,
+          1
+        ],
+        [
+          6,
+          7,
+          1
+        ]
+      ],
+      "ordered_total": 14,
+      "degree_bound": 2,
+      "strict_obstruction_margin": 4,
+      "exhausted_colorings": 65536,
+      "boundary_witness": {
+        "vertex_count": 9,
+        "groups": 4,
+        "discrepancy": 10,
+        "degree_bound": 2,
+        "ordered_total": 16,
+        "colors": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2
+        ],
+        "group_sizes": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "pair_weights": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            1
+          ]
+        ],
+        "sufficient_threshold_met": false,
+        "valid": true,
+        "violations": []
+      }
+    }
+  ]
+}

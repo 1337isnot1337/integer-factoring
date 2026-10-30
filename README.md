@@ -61,6 +61,7 @@ of an improved factoring machine.
 | Explicit analysis of the unchanged baseline | `alpha = log(12/11)/log(16) = 0.0313827205...` | Handwritten derivation from the pinned source's inequalities |
 | Explicit time bound for the reference machine | `C * 2^(C * (explicitZu(n) + 1))` | Lean-checked bound for one finite-alphabet factoring machine; logarithmic-power conversion remains handwritten |
 | Grouping with independent accuracy | `g = O(D^2 K^2 log K)` | Matching decomposition, Holder's inequality, and an explicit deterministic search |
+| Universal grouping obstruction | `g >= ceil(D(K^2+2)/(2(D+1)))` on unit paths | Exact path-family threshold; a universal grouping theorem needs `Omega(K^2)` vertices |
 | Formally checked grouping improvement | `g > K^2 + 4D^2K^4`; original accuracy works at `g = 5K^6` | Lean kernel checked, including network value preservation |
 | Smaller crossing factorization | 56 integer channels instead of a trivial 64-channel factor | Explicit integer factors and exhaustive finite verification |
 | Grouping-only rate target | `alpha = log(12/11)/log(4) = 0.0627654410...` | New parameter schedule and runtime analysis; modified machine not Lean verified |
@@ -80,6 +81,8 @@ requires real-number approximation in the algorithm.
   contraction, all-level cost bound, and machine-cost bridge.
 - [Grouping theorem](research/grouping-improvement.md): complete concentration
   proof, integer tests, deterministic construction, and integration obligations.
+- [Grouping obstruction](research/grouping-obstruction.md): a sharp path-family
+  threshold, exact boundary witnesses, and a Lean proof of the necessary bound.
 - [Crossing compression](research/crossing-compression.md): explicit factors,
   coefficient identities, changed multiplier, and a limitation of this coefficient
   family.
@@ -113,6 +116,8 @@ make verify
 ```
 
 Without Make, run the commands in the `verify` target of the [Makefile](Makefile).
+For the path obstruction's full finite receipts, run
+`python3 tools/check_grouping_obstruction.py`.
 
 With Lean 4.35.0 and Lake on the executable path, run:
 

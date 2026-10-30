@@ -28,6 +28,13 @@
       "result": "passed",
       "axiom_reports": 9,
       "log": "evidence/lean-explicit-chain.log"
+    },
+    {
+      "path": "formal/GroupingObstruction.lean",
+      "sha256": "187d2ade34d60881031939719a5f8fd52951e1ca3404cc043348367394113f86",
+      "result": "passed",
+      "axiom_reports": 6,
+      "log": "evidence/lean-grouping-obstruction.log"
     }
   ],
   "checked_declarations": [
@@ -182,7 +189,53 @@
         "Quot.sound",
         "propext"
       ]
+    },
+    {
+      "declaration": "Factoring.Improvements.connected_grouping_lower_bound",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.Improvements.pathWeight_diag",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.Improvements.pathWeight_symm",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.Improvements.pathWeight_row_le_two",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.Improvements.pathWeight_total",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.Improvements.path_grouping_lower_bound",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
     }
   ],
-  "scope": "Stronger finite grouping and signed complement lemmas; an explicit all-level envelope and complete time bound for the unchanged reference factoring machine. The sharper logarithmic-power asymptotics and modified factoring machine are not Lean verified."
+  "scope": "Stronger finite grouping and signed complement lemmas; an explicit all-level envelope and complete time bound for the unchanged reference factoring machine. The sharper logarithmic-power asymptotics and modified factoring machine are not Lean verified. The necessary universal-grouping bound is also Lean checked; sharpness on paths is handwritten and tested in Python."
 }

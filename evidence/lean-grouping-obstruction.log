@@ -1,0 +1,6 @@
+'Factoring.Improvements.connected_grouping_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Factoring.Improvements.pathWeight_diag' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Factoring.Improvements.pathWeight_symm' depends on axioms: [propext]
+'Factoring.Improvements.pathWeight_row_le_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Factoring.Improvements.pathWeight_total' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Factoring.Improvements.path_grouping_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
