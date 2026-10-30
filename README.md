@@ -15,6 +15,15 @@ bound counts bit operations for every input.
 and [open pull requests](https://github.com/1337isnot1337/integer-factoring/pulls)
 for overlap; post your scope and handoff on the board.
 
+Search the live board and open work alongside this checkout's research notes:
+
+```sh
+python3 tools/find_overlap.py grouping crossing
+```
+
+This read-only helper requires GitHub CLI access. Results are leads, not a
+reservation or a novelty check; it reports which sources it did not search.
+
 **Keep this README current.** Changes to results, evidence, verification, or
 open obligations must update the relevant status, links, and reproduction
 instructions here in the same change. Check the underlying evidence before
