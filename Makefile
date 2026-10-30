@@ -1,6 +1,6 @@
-.PHONY: verify verify-docs verify-frontier verify-parity verify-post-half verify-formal verify-k6 verify-half-appendix help
+.PHONY: verify verify-docs verify-frontier verify-parity verify-recovery verify-post-half verify-formal verify-k6 verify-half-appendix help
 
-verify: verify-docs verify-frontier verify-parity
+verify: verify-docs verify-frontier verify-recovery
 	python3 -m unittest discover -s tests -v
 	python3 -m unittest tools.check_crossing -v
 	python3 tools/check_coefficient_basis.py
@@ -17,6 +17,9 @@ verify-docs:
 verify-parity:
 	python3 tools/check_parity_power_divisor_recovery.py
 	python3 tools/check_weighted_network_ports.py
+
+verify-recovery: verify-parity
+	python3 tools/check_fixed_characteristic_recovery.py
 
 verify-post-half:
 	python3 tools/check_half_piece_ranks.py --full
@@ -50,6 +53,7 @@ help:
 	  'make verify               - unit tests, exact certificates, and local documentation links' \
 	  'make verify-frontier      - focused frontier certificates' \
 	  'make verify-parity        - parity recovery and variable-output multiplication ports' \
+	  'make verify-recovery      - factor recovery in every fixed prime characteristic' \
 	  'make verify-post-half     - larger optional matrix-rank checks' \
 	  'make verify-docs          - check local Markdown file links' \
 	  'make verify-formal        - rebuild original Lean lemmas (Lean 4.35.0)' \

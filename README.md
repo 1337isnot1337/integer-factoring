@@ -28,7 +28,7 @@ The composition uses the existing clique evaluator from [Anthropic's Appendix B]
 | Saving exponent `1/30` for the k6 machine | **Lean-verified** | [Proof](research/verified-k6.md), [machine theorem](variants/k6/FactoringK6/Certified.lean) |
 | Sharper k6 saving `log(12/11)/log(12) > 1/29` | Ordinary proof, not Lean-verified at this rate | [Rate derivation](research/k6-sharp-rate.md) |
 | Saving exponent above `1/2` | **Not established** | [Research index](research/INDEX.md) |
-| Factoring from characteristic-two parity counts | Ordinary conditional reduction; no score change | [Power-divisor recovery](research/parity-power-divisor-recovery.md) removes the sparse-recovery square-root overhead |
+| Factoring from counts in every fixed prime characteristic | Ordinary conditional reduction; no score change | [Cyclic-orbit recovery](research/fixed-characteristic-factor-recovery.md) removes the sparse-recovery square-root overhead; [parity case](research/parity-power-divisor-recovery.md) |
 | Joined multiplication networks | Ordinary compiler theorem | [Weighted network compiler](research/weighted-network-top-compiler.md) preserves linear volume and exact witness counts |
 
 The result table distinguishes verified machine bounds from conditional constructions and finite experiments. A merged PR or a passing finite test does not imply independent mathematical review.
@@ -41,7 +41,7 @@ From the repository root, run:
 make verify               # Python unit tests, exact certificates, and local link check
 make verify-frontier      # Focused research certificates
 make verify-post-half     # Larger optional rank tests
-make verify-parity        # Parity recovery and variable-output multiplication ports
+make verify-recovery      # Fixed-characteristic recovery and multiplication ports
 make verify-docs          # Local Markdown-link check
 ```
 
@@ -72,7 +72,7 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 
 No uniform factoring exponent above `1/2` is proved here. One open approach seeks effective crossing pieces with total rank width `4*rho*lambda + O(log lambda)` for `rho < 1/sqrt(2)`. A suitable family could improve the evaluator bound, but finite rank improvements alone do not establish that inequality.
 
-The [parity recovery reduction](research/parity-power-divisor-recovery.md) uses power-divisibility queries to detect repeated prime factors and ordinary divisor intervals for squarefree inputs. Each query compiles into multiplication gadgets with total bit budget `O(n)`. A characteristic-two evaluator for those systems transfers to factoring with polynomial overhead, including hypothetical bounds `exp(O(n^beta))` for every fixed `beta>0`. The [weighted compiler](research/weighted-network-top-compiler.md) supplies the top-clique interface. This improves the recovery theorem; it supplies no faster evaluator and changes no unconditional factoring exponent.
+The [fixed-characteristic recovery reduction](research/fixed-characteristic-factor-recovery.md) uses power-divisibility counts to detect higher base-`p` digits of prime exponents, then counts least cyclic rotations of ordered factorizations. For every fixed prime `p`, its queries have total bit budget `O_p(n)` and unique arithmetic witnesses. An evaluator for those systems transfers to factoring with polynomial overhead, including hypothetical bounds `exp(O(n^beta))` for every fixed `beta>0`. The [parity case](research/parity-power-divisor-recovery.md) has a simpler squarefree divisor-interval step. The [weighted compiler](research/weighted-network-top-compiler.md) supplies the top-clique interface, whose construction cost remains charged. These are recovery theorems; they supply no faster evaluator or higher unconditional exponent.
 
 See the [research index](research/INDEX.md) for completed arguments, scoped obstructions, and older candidates. Active work can also appear in [open pull requests](https://github.com/1337isnot1337/integer-factoring/pulls); branch research is not automatically a result on `main`.
 

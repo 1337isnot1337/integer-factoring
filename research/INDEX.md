@@ -14,6 +14,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Recovery in every fixed prime characteristic](fixed-characteristic-factor-recovery.md): higher exponent digits and unique cyclic-orbit representatives give complete factorization with polynomial query overhead and linear total arithmetic length.
 - [Parity and power-divisor recovery](parity-power-divisor-recovery.md): characteristic-two counts detect exponent bits and recover a complete factorization with polynomial query overhead, without a sparse-recovery square-root floor.
 - [General weighted network compiler](weighted-network-top-compiler.md): deterministic-message networks with linear total weight and sublinear maximum gate weight compile to linear-volume top cliques; variable multiplication output ports preserve unique witnesses.
 - [Pieces-to-factoring transfer](pieces-to-factoring.md): conditional crossing-parameter transfer, with full bit-cost accounting.
