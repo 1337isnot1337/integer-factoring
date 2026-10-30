@@ -57,6 +57,7 @@ verify-constructions:
 	python3 tools/check_cubic_fixed_image_rank_one.py --output /tmp/integer-factoring-cubic-fixed-image-rank-one.json
 	python3 tools/check_cubic_coordinate_image_mixtures.py --output /tmp/integer-factoring-cubic-coordinate-image-mixtures.json
 	python3 tools/check_cubic_varying_image_escape.py --output /tmp/integer-factoring-cubic-varying-image-escape.json
+	python3 tools/check_mixed_common_functional_barrier.py --output /tmp/integer-factoring-mixed-common-functional-barrier.json
 	python3 tools/check_noncommutative_crossing_seed_algebra_audit.py
 	python3 tools/check_symplectic_seed_tensor_modules.py
 	python3 tools/symplectic_seed_weighted_modules.py --output /tmp/integer-factoring-weighted-modules.json
@@ -97,6 +98,7 @@ verify-post-half:
 	python3 tools/check_two_even_site_jordan_compressions.py --output /tmp/integer-factoring-two-even-P7-compressions.json
 	python3 tools/check_two_even_site_P8_compressions.py --output /tmp/integer-factoring-two-even-P8-compressions.json
 	python3 tools/check_two_even_site_row_corners.py --output /tmp/integer-factoring-two-even-row-corners.json
+	python3 tools/check_two_even_site_frobenius_probe.py --output /tmp/integer-factoring-two-even-P10-frobenius.json
 	python3 tools/check_half_piece_ranks.py --full
 	python3 tools/check_half_projection.py
 	python3 tools/check_half_restricted_labels.py

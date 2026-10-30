@@ -1,0 +1,960 @@
+{
+  "certificate_sha256": "fecc2190bed585c61502b2365164c42ba79f26dfb11c4988d2c2220a28ab3f1b",
+  "character": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "character_scalar_polynomial": "(q+r)^2 (p+r)^8",
+  "exact_shortfall": {
+    "difference": 239357182036888433566752748248605102060072354146180703156488774328552115677238389285235301307014906697280388992106505206464977317158749060834851660463587552141953747634587534563999744,
+    "label_power": 45,
+    "rank_product_power": 16
+  },
+  "explicit_unipotent_direct_sums": [
+    {
+      "ambient_dimension": 1,
+      "blocks": [
+        {
+          "basis_columns": [
+            "0x1"
+          ],
+          "weights": []
+        }
+      ],
+      "complete_polynomial_intertwining_entries_checked": 1,
+      "natural_factors": 0
+    },
+    {
+      "ambient_dimension": 2,
+      "blocks": [
+        {
+          "basis_columns": [
+            "0x1",
+            "0x2"
+          ],
+          "weights": [
+            1
+          ]
+        }
+      ],
+      "complete_polynomial_intertwining_entries_checked": 8,
+      "natural_factors": 1
+    },
+    {
+      "ambient_dimension": 4,
+      "blocks": [
+        {
+          "basis_columns": [
+            "0x1",
+            "0x2",
+            "0x4",
+            "0x8"
+          ],
+          "weights": [
+            1,
+            1
+          ]
+        }
+      ],
+      "complete_polynomial_intertwining_entries_checked": 48,
+      "natural_factors": 2
+    },
+    {
+      "ambient_dimension": 8,
+      "blocks": [
+        {
+          "basis_columns": [
+            "0x14",
+            "0x28"
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "basis_columns": [
+            "0x6",
+            "0x60"
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "basis_columns": [
+            "0x1",
+            "0x68",
+            "0x16",
+            "0x80"
+          ],
+          "weights": [
+            1,
+            2
+          ]
+        }
+      ],
+      "complete_polynomial_intertwining_entries_checked": 256,
+      "natural_factors": 3
+    },
+    {
+      "ambient_dimension": 16,
+      "blocks": [
+        {
+          "basis_columns": [
+            "0x110",
+            "0x220",
+            "0x440",
+            "0x880"
+          ],
+          "weights": [
+            1,
+            1
+          ]
+        },
+        {
+          "basis_columns": [
+            "0x14",
+            "0x28",
+            "0x1400",
+            "0x2800"
+          ],
+          "weights": [
+            1,
+            1
+          ]
+        },
+        {
+          "basis_columns": [
+            "0x1",
+            "0x1440",
+            "0x2",
+            "0x2880",
+            "0x114",
+            "0x4000",
+            "0x228",
+            "0x8000"
+          ],
+          "weights": [
+            1,
+            1,
+            2
+          ]
+        }
+      ],
+      "complete_polynomial_intertwining_entries_checked": 1280,
+      "natural_factors": 4
+    },
+    {
+      "ambient_dimension": 32,
+      "blocks": [
+        {
+          "basis_columns": [
+            "0x141400",
+            "0x282800"
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "basis_columns": [
+            "0x60600",
+            "0x606000"
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "basis_columns": [
+            "0x10100",
+            "0x686800",
+            "0x161600",
+            "0x808000"
+          ],
+          "weights": [
+            1,
+            2
+          ]
+        },
+        {
+          "basis_columns": [
+            "0x1100440",
+            "0x2200880"
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "basis_columns": [
+            "0x660",
+            "0x6600000"
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "basis_columns": [
+            "0x110",
+            "0x6600880",
+            "0x1100660",
+            "0x8800000"
+          ],
+          "weights": [
+            1,
+            2
+          ]
+        },
+        {
+          "basis_columns": [
+            "0x10114",
+            "0x14404000",
+            "0x20228",
+            "0x28808000"
+          ],
+          "weights": [
+            1,
+            2
+          ]
+        },
+        {
+          "basis_columns": [
+            "0x6",
+            "0x6606000",
+            "0x60660",
+            "0x60000000"
+          ],
+          "weights": [
+            1,
+            2
+          ]
+        },
+        {
+          "basis_columns": [
+            "0x1",
+            "0x1101000",
+            "0x60668",
+            "0x68808000",
+            "0x10116",
+            "0x16606000",
+            "0x80880",
+            "0x80000000"
+          ],
+          "weights": [
+            1,
+            2,
+            2
+          ]
+        }
+      ],
+      "complete_polynomial_intertwining_entries_checked": 6144,
+      "natural_factors": 5
+    },
+    {
+      "ambient_dimension": 64,
+      "blocks": [
+        {
+          "basis_columns": [
+            "0x11001100000",
+            "0x22002200000",
+            "0x44004400000",
+            "0x88008800000"
+          ],
+          "weights": [
+            1,
+            1
+          ]
+        },
+        {
+          "basis_columns": [
+            "0x1400140000",
+            "0x2800280000",
+            "0x140014000000",
+            "0x280028000000"
+          ],
+          "weights": [
+            1,
+            1
+          ]
+        },
+        {
+          "basis_columns": [
+            "0x100010000",
+            "0x144014400000",
+            "0x200020000",
+            "0x288028800000",
+            "0x11401140000",
+            "0x400040000000",
+            "0x22802280000",
+            "0x800080000000"
+          ],
+          "weights": [
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "basis_columns": [
+            "0x1010000101000",
+            "0x2020000202000",
+            "0x4040000404000",
+            "0x8080000808000"
+          ],
+          "weights": [
+            1,
+            1
+          ]
+        },
+        {
+          "basis_columns": [
+            "0x141400",
+            "0x282800",
+            "0x14140000000000",
+            "0x28280000000000"
+          ],
+          "weights": [
+            1,
+            1
+          ]
+        },
+        {
+          "basis_columns": [
+            "0x10100",
+            "0x14140000404000",
+            "0x20200",
+            "0x28280000808000",
+            "0x1010000141400",
+            "0x40400000000000",
+            "0x2020000282800",
+            "0x80800000000000"
+          ],
+          "weights": [
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "basis_columns": [
+            "0x100010110",
+            "0x110100010000000",
+            "0x200020220",
+            "0x220200020000000",
+            "0x400040440",
+            "0x440400040000000",
+            "0x800080880",
+            "0x880800080000000"
+          ],
+          "weights": [
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "basis_columns": [
+            "0x14",
+            "0x14140014000000",
+            "0x28",
+            "0x28280028000000",
+            "0x1400141400",
+            "0x1400000000000000",
+            "0x2800282800",
+            "0x2800000000000000"
+          ],
+          "weights": [
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "basis_columns": [
+            "0x1",
+            "0x1010001000000",
+            "0x1400141440",
+            "0x1440400040000000",
+            "0x2",
+            "0x2020002000000",
+            "0x2800282880",
+            "0x2880800080000000",
+            "0x100010114",
+            "0x114140014000000",
+            "0x4000404000",
+            "0x4000000000000000",
+            "0x200020228",
+            "0x228280028000000",
+            "0x8000808000",
+            "0x8000000000000000"
+          ],
+          "weights": [
+            1,
+            1,
+            2,
+            2
+          ]
+        }
+      ],
+      "complete_polynomial_intertwining_entries_checked": 28672,
+      "natural_factors": 6
+    }
+  ],
+  "generic_natural_cube_intertwiner": {
+    "basis_rank": 8,
+    "constant_change_of_basis_columns": [
+      1,
+      22,
+      104,
+      128,
+      6,
+      96,
+      20,
+      40
+    ],
+    "generic_polynomial_intertwiner_entries": 64
+  },
+  "labels": 11520,
+  "largest_matrix_dimension": 5120,
+  "leading_coefficient_column_ceiling": 10638,
+  "literal_ten_site_embedding_controls": [
+    {
+      "complete_polynomial_entries_checked": 630,
+      "cut": 0,
+      "kind": "entire weight-four block"
+    },
+    {
+      "complete_polynomial_entries_checked": 630,
+      "cut": 1,
+      "kind": "entire weight-four block"
+    },
+    {
+      "complete_polynomial_entries_checked": 135,
+      "cut": 0,
+      "kind": "weight-two principal restriction"
+    },
+    {
+      "complete_polynomial_entries_checked": 135,
+      "cut": 1,
+      "kind": "weight-two principal restriction"
+    },
+    {
+      "complete_polynomial_entries_checked": 3,
+      "cut": 0,
+      "kind": "weight-zero principal restriction"
+    },
+    {
+      "complete_polynomial_entries_checked": 3,
+      "cut": 1,
+      "kind": "weight-zero principal restriction"
+    }
+  ],
+  "modules": [
+    {
+      "core_pairs": 4,
+      "core_syndrome": 15,
+      "leading_coefficient_rank_ceiling": 32,
+      "modules": [
+        {
+          "all_generator_compression_entries_checked": 4608,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 240,
+          "compression_dimension": 16,
+          "constructed_left_covectors_sha256": "566a23cbc15323f8c23ecfb89398e475133f73a51bb40c2ec1a173f35afd300a",
+          "highest": 6,
+          "leading_coefficient_rank": 32,
+          "multiplicity": 1,
+          "uniform_coefficient_rank": 32,
+          "weights": [
+            1,
+            1,
+            2,
+            2
+          ]
+        }
+      ],
+      "uniform_coefficient_rank_ceiling": 32,
+      "weighted_compression": 16
+    },
+    {
+      "core_pairs": 5,
+      "core_syndrome": 0,
+      "leading_coefficient_rank_ceiling": 78,
+      "modules": [
+        {
+          "all_generator_compression_entries_checked": 0,
+          "compression_dimension": 0,
+          "highest": 4,
+          "leading_coefficient_rank": 4,
+          "multiplicity": 10,
+          "uniform_coefficient_rank": 0,
+          "weights": [
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "all_generator_compression_entries_checked": 648,
+          "ambient_dimension": 5120,
+          "annihilated_span_dimension": 94,
+          "compression_dimension": 6,
+          "constructed_left_covectors_sha256": "8f11b93e199856d3325dfd3d8a9c44610211fe2b0282b32c01f2757de7ab32d7",
+          "highest": 5,
+          "leading_coefficient_rank": 38,
+          "multiplicity": 1,
+          "uniform_coefficient_rank": 6,
+          "weights": [
+            1,
+            2,
+            2
+          ]
+        }
+      ],
+      "uniform_coefficient_rank_ceiling": 6,
+      "weighted_compression": 6
+    },
+    {
+      "core_pairs": 5,
+      "core_syndrome": 3,
+      "leading_coefficient_rank_ceiling": 88,
+      "modules": [
+        {
+          "all_generator_compression_entries_checked": 0,
+          "compression_dimension": 0,
+          "highest": 4,
+          "leading_coefficient_rank": 4,
+          "multiplicity": 10,
+          "uniform_coefficient_rank": 0,
+          "weights": [
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "all_generator_compression_entries_checked": 1152,
+          "ambient_dimension": 3072,
+          "annihilated_span_dimension": 124,
+          "compression_dimension": 8,
+          "constructed_left_covectors_sha256": "13ef3c20984686e04dd81b9a783d13ac5b4ed1effe6910d6553f26c77a5915cd",
+          "highest": 5,
+          "leading_coefficient_rank": 48,
+          "multiplicity": 1,
+          "uniform_coefficient_rank": 8,
+          "weights": [
+            1,
+            2,
+            2
+          ]
+        }
+      ],
+      "uniform_coefficient_rank_ceiling": 8,
+      "weighted_compression": 8
+    },
+    {
+      "core_pairs": 5,
+      "core_syndrome": 5,
+      "leading_coefficient_rank_ceiling": 84,
+      "modules": [
+        {
+          "all_generator_compression_entries_checked": 288,
+          "ambient_dimension": 3072,
+          "annihilated_span_dimension": 60,
+          "compression_dimension": 4,
+          "constructed_left_covectors_sha256": "aa215bd1631185bfeedf9bf0e9332daf728c50e8d3184755eaaa1de278b44164",
+          "highest": 4,
+          "leading_coefficient_rank": 4,
+          "multiplicity": 10,
+          "uniform_coefficient_rank": 4,
+          "weights": [
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "all_generator_compression_entries_checked": 8712,
+          "ambient_dimension": 3072,
+          "annihilated_span_dimension": 332,
+          "compression_dimension": 22,
+          "constructed_left_covectors_sha256": "1d55d31940fc6e38b7341940e2b618e5920c6796466b91088879b5b8ea51a337",
+          "highest": 5,
+          "leading_coefficient_rank": 44,
+          "multiplicity": 1,
+          "uniform_coefficient_rank": 32,
+          "weights": [
+            1,
+            2,
+            2
+          ]
+        }
+      ],
+      "uniform_coefficient_rank_ceiling": 72,
+      "weighted_compression": 62
+    },
+    {
+      "core_pairs": 5,
+      "core_syndrome": 6,
+      "leading_coefficient_rank_ceiling": 88,
+      "modules": [
+        {
+          "all_generator_compression_entries_checked": 0,
+          "compression_dimension": 0,
+          "highest": 4,
+          "leading_coefficient_rank": 4,
+          "multiplicity": 10,
+          "uniform_coefficient_rank": 0,
+          "weights": [
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "all_generator_compression_entries_checked": 1152,
+          "ambient_dimension": 3072,
+          "annihilated_span_dimension": 124,
+          "compression_dimension": 8,
+          "constructed_left_covectors_sha256": "d76281b5d6aeba1e79c82832447243dc28f24158cc72bc19a0805216fdd0d5b4",
+          "highest": 5,
+          "leading_coefficient_rank": 48,
+          "multiplicity": 1,
+          "uniform_coefficient_rank": 8,
+          "weights": [
+            1,
+            2,
+            2
+          ]
+        }
+      ],
+      "uniform_coefficient_rank_ceiling": 8,
+      "weighted_compression": 8
+    },
+    {
+      "core_pairs": 5,
+      "core_syndrome": 9,
+      "leading_coefficient_rank_ceiling": 72,
+      "modules": [
+        {
+          "all_generator_compression_entries_checked": 288,
+          "ambient_dimension": 3072,
+          "annihilated_span_dimension": 60,
+          "compression_dimension": 4,
+          "constructed_left_covectors_sha256": "e8d7e657a4ac563c50029c508fc3ea01118a5587bfca1a0e8b28df88e4f002bb",
+          "highest": 4,
+          "leading_coefficient_rank": 4,
+          "multiplicity": 10,
+          "uniform_coefficient_rank": 4,
+          "weights": [
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "all_generator_compression_entries_checked": 10368,
+          "ambient_dimension": 3072,
+          "annihilated_span_dimension": 364,
+          "compression_dimension": 24,
+          "constructed_left_covectors_sha256": "aafc991211fdddac3fdc160047aca5d6508c6f41280b59e709e8fae06550cfdb",
+          "highest": 5,
+          "leading_coefficient_rank": 32,
+          "multiplicity": 1,
+          "uniform_coefficient_rank": 44,
+          "weights": [
+            1,
+            2,
+            2
+          ]
+        }
+      ],
+      "uniform_coefficient_rank_ceiling": 84,
+      "weighted_compression": 64
+    },
+    {
+      "core_pairs": 5,
+      "core_syndrome": 10,
+      "leading_coefficient_rank_ceiling": 84,
+      "modules": [
+        {
+          "all_generator_compression_entries_checked": 288,
+          "ambient_dimension": 3072,
+          "annihilated_span_dimension": 60,
+          "compression_dimension": 4,
+          "constructed_left_covectors_sha256": "5f166e5d9f3e207e84709776e27b6715e9a1bff99c34e0fdefb992b696a31bbb",
+          "highest": 4,
+          "leading_coefficient_rank": 4,
+          "multiplicity": 10,
+          "uniform_coefficient_rank": 4,
+          "weights": [
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "all_generator_compression_entries_checked": 12168,
+          "ambient_dimension": 3072,
+          "annihilated_span_dimension": 396,
+          "compression_dimension": 26,
+          "constructed_left_covectors_sha256": "e92eabd609c23f7994cea618e9a77158104be0e5cadaa129e5c9f1a4e8946759",
+          "highest": 5,
+          "leading_coefficient_rank": 44,
+          "multiplicity": 1,
+          "uniform_coefficient_rank": 32,
+          "weights": [
+            1,
+            2,
+            2
+          ]
+        }
+      ],
+      "uniform_coefficient_rank_ceiling": 72,
+      "weighted_compression": 66
+    },
+    {
+      "core_pairs": 5,
+      "core_syndrome": 12,
+      "leading_coefficient_rank_ceiling": 88,
+      "modules": [
+        {
+          "all_generator_compression_entries_checked": 0,
+          "compression_dimension": 0,
+          "highest": 4,
+          "leading_coefficient_rank": 4,
+          "multiplicity": 10,
+          "uniform_coefficient_rank": 0,
+          "weights": [
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "all_generator_compression_entries_checked": 1152,
+          "ambient_dimension": 3072,
+          "annihilated_span_dimension": 124,
+          "compression_dimension": 8,
+          "constructed_left_covectors_sha256": "1266ced015fd397c82cf8f2d618a05b4e65f936a9307cea4c5e44dd2b3e8b7dd",
+          "highest": 5,
+          "leading_coefficient_rank": 48,
+          "multiplicity": 1,
+          "uniform_coefficient_rank": 8,
+          "weights": [
+            1,
+            2,
+            2
+          ]
+        }
+      ],
+      "uniform_coefficient_rank_ceiling": 8,
+      "weighted_compression": 8
+    },
+    {
+      "core_pairs": 5,
+      "core_syndrome": 17,
+      "leading_coefficient_rank_ceiling": 12,
+      "modules": [
+        {
+          "all_generator_compression_entries_checked": 0,
+          "compression_dimension": 0,
+          "highest": 4,
+          "leading_coefficient_rank": 0,
+          "multiplicity": 10,
+          "uniform_coefficient_rank": 4,
+          "weights": [
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "all_generator_compression_entries_checked": 1152,
+          "ambient_dimension": 3072,
+          "annihilated_span_dimension": 124,
+          "compression_dimension": 8,
+          "constructed_left_covectors_sha256": "b4b8fb61294bb1af417fd315f88358d0fd34023417d64417957a60ae204f9a6e",
+          "highest": 5,
+          "leading_coefficient_rank": 12,
+          "multiplicity": 1,
+          "uniform_coefficient_rank": 48,
+          "weights": [
+            1,
+            2,
+            2
+          ]
+        }
+      ],
+      "uniform_coefficient_rank_ceiling": 88,
+      "weighted_compression": 8
+    },
+    {
+      "core_pairs": 5,
+      "core_syndrome": 18,
+      "leading_coefficient_rank_ceiling": 72,
+      "modules": [
+        {
+          "all_generator_compression_entries_checked": 288,
+          "ambient_dimension": 3072,
+          "annihilated_span_dimension": 60,
+          "compression_dimension": 4,
+          "constructed_left_covectors_sha256": "a299d50de94c47e431a5c321cb1d9bfc60ecde6306d7a0df79ef18b01d570f28",
+          "highest": 4,
+          "leading_coefficient_rank": 4,
+          "multiplicity": 10,
+          "uniform_coefficient_rank": 4,
+          "weights": [
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "all_generator_compression_entries_checked": 12168,
+          "ambient_dimension": 3072,
+          "annihilated_span_dimension": 396,
+          "compression_dimension": 26,
+          "constructed_left_covectors_sha256": "68e4d3ff3cafffe569ed8821866054993e7e1ce36760f9fd143b93b1654bd6d6",
+          "highest": 5,
+          "leading_coefficient_rank": 32,
+          "multiplicity": 1,
+          "uniform_coefficient_rank": 44,
+          "weights": [
+            1,
+            2,
+            2
+          ]
+        }
+      ],
+      "uniform_coefficient_rank_ceiling": 84,
+      "weighted_compression": 66
+    },
+    {
+      "core_pairs": 5,
+      "core_syndrome": 20,
+      "leading_coefficient_rank_ceiling": 84,
+      "modules": [
+        {
+          "all_generator_compression_entries_checked": 288,
+          "ambient_dimension": 3072,
+          "annihilated_span_dimension": 60,
+          "compression_dimension": 4,
+          "constructed_left_covectors_sha256": "1e8e7321c580c08ccd1b744a82b95087900c6644d49839dbb0419b6c510b8194",
+          "highest": 4,
+          "leading_coefficient_rank": 4,
+          "multiplicity": 10,
+          "uniform_coefficient_rank": 4,
+          "weights": [
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "all_generator_compression_entries_checked": 10368,
+          "ambient_dimension": 3072,
+          "annihilated_span_dimension": 364,
+          "compression_dimension": 24,
+          "constructed_left_covectors_sha256": "c3cf0748f47e28413b6981f56eb759465df7efb2400a78bdfde1ad906e171598",
+          "highest": 5,
+          "leading_coefficient_rank": 44,
+          "multiplicity": 1,
+          "uniform_coefficient_rank": 32,
+          "weights": [
+            1,
+            2,
+            2
+          ]
+        }
+      ],
+      "uniform_coefficient_rank_ceiling": 72,
+      "weighted_compression": 64
+    },
+    {
+      "core_pairs": 5,
+      "core_syndrome": 24,
+      "leading_coefficient_rank_ceiling": 88,
+      "modules": [
+        {
+          "all_generator_compression_entries_checked": 0,
+          "compression_dimension": 0,
+          "highest": 4,
+          "leading_coefficient_rank": 4,
+          "multiplicity": 10,
+          "uniform_coefficient_rank": 0,
+          "weights": [
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "all_generator_compression_entries_checked": 1152,
+          "ambient_dimension": 3072,
+          "annihilated_span_dimension": 124,
+          "compression_dimension": 8,
+          "constructed_left_covectors_sha256": "ddfa3a935690c14ad545d673046499680106a24b966d62da512833e37ff3b033",
+          "highest": 5,
+          "leading_coefficient_rank": 48,
+          "multiplicity": 1,
+          "uniform_coefficient_rank": 8,
+          "weights": [
+            1,
+            2,
+            2
+          ]
+        }
+      ],
+      "uniform_coefficient_rank_ceiling": 8,
+      "weighted_compression": 8
+    }
+  ],
+  "pairs": 10,
+  "rank_certificate_dimensions": [
+    44638912,
+    5738
+  ],
+  "rank_product": 256138077056,
+  "retained_module_uniform_column_ceiling": 9810,
+  "scalar_compression_entries_checked": 66240,
+  "scope": "An all-field, all-power rank-cost lower certificate for this seed; its value does not reach the target exponent.",
+  "source_certificate_sha256": {
+    "evidence/two-even-site-P7-jordan-compression-certificate.json": "660592bf565c92c99e1cd8f3c126054e2942a41920ae856462ed0d23cefcd078",
+    "evidence/two-even-site-P8-compression-certificate.json": "f3068a69c7ed580c954b3600cca332efab7619333a854cf47244c76a512f53ee",
+    "evidence/two-even-site-row-corner-certificate.json": "ea8c90da0e73de97137ad452c100dfa972ac5e2b217fd5e783c388d071b2df69"
+  },
+  "source_sha256": {
+    "assemble_two_even_site_cores.py": "3b0ad33919e8d0c316203c1737d9762f1d10fb515f86a15372df375d667d4d00",
+    "check_common_character_compressions.py": "ab56e9b53ce0710c7bd6f390547e503ac47c7534fe7091e4ad1b8cd014bb2d46",
+    "check_folded_gram_channels.py": "5b0ba2ad210e566203f72a598730d95d187a11703eeb32361dad02f6b871ae3b",
+    "check_two_even_site_P8_compressions.py": "6013b200899e045c8357c903f184a27dc4cd114121e89c71f1b763419b5cd9d7",
+    "check_two_even_site_frobenius_probe.py": "f096cb6110e7526f3b2aaaf6d8dcd88c42efa5a08ee89a2db0ac61d9a0a29389",
+    "check_two_even_site_jordan_compressions.py": "3f1c9d326ed0b42c0d9f188c53489c81757225393806d7d61da752c1a57b4fed",
+    "check_two_even_site_row_corners.py": "97e931f64bf5ce9d48664b988b29611cf16d37cc37a1b34b2c5629dabbce7995",
+    "find_tagged_common_character_compressions.py": "3f34d60ff8f52cabdc19ebffd95fe56bda3ddc09ab60978828f3bbd17097efa8",
+    "folded_gram_ranks.py": "91141bed23069abd66e3c464f97f5408152e8019a506687f4169fe475eac0042"
+  },
+  "status": "pass",
+  "strict_seed_excluded": false,
+  "uniform_ceiling_coefficient_mask": 65792,
+  "uniform_ceiling_scope": "The full selected core principal restrictions, including all free-factor summands, allowing the best physical anchor choice for each syndrome. This does not cover enlarging the selected cores or changing the functional."
+}
