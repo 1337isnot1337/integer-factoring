@@ -28,6 +28,7 @@ verify-further:
 	python3 tools/check_truncated_ring_factorization.py
 	python3 tools/check_border_nonunit_transfer.py
 	python3 tools/check_commuting_halves_matrix_seeds.py
+	python3 tools/check_boundary_stable_catalytic.py
 	python3 tools/check_twisted_channel_walks.py
 	python3 tools/check_channel_flow_duals.py
 	python3 tools/check_component_channel_walks.py
