@@ -100,6 +100,7 @@ verify-post-half:
 	python3 tools/check_two_even_site_P8_compressions.py --output /tmp/integer-factoring-two-even-P8-compressions.json
 	python3 tools/check_two_even_site_row_corners.py --output /tmp/integer-factoring-two-even-row-corners.json
 	python3 tools/check_two_even_site_frobenius_probe.py --output /tmp/integer-factoring-two-even-P10-frobenius.json
+	python3 tools/check_ward_fan_boundary.py --output /tmp/integer-factoring-ward-fan-boundary.json
 	python3 tools/check_half_piece_ranks.py --full
 	python3 tools/check_half_projection.py
 	python3 tools/check_half_restricted_labels.py
