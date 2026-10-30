@@ -45,6 +45,7 @@ make verify-frontier      # Focused research certificates
 make verify-post-half     # Larger optional rank tests
 make verify-docs          # Local Markdown-link check
 make verify-schur-fermion # Complete Schur entry formulas and exact comparisons
+make verify-cancellation-modules # Exact module states and word-rate certificates
 ```
 
 The Python checks use Python 3 and its standard library. Some optional checks use NumPy for speed.
@@ -80,6 +81,12 @@ crossing coefficients with determinants of order at most `4 sqrt(h)`. It works
 directly in finite characteristic and removes factorial-precision conversion
 from these queries. Its ordinary proof and independent exact checks improve
 the available construction tools; no stronger rank bound is claimed.
+
+[Finite module automata](research/cancellation-module-smith-automata.md)
+retain cancellation between auxiliary paths. Their bounds improve monotonically
+with precision, dominate the corresponding capped entry-order bounds, and
+converge to the exact full-matrix word rate when both boundaries are free.
+The checked crossing controls do not yet meet the strict improvement threshold.
 
 See the [research index](research/INDEX.md) for completed arguments, scoped obstructions, and older candidates. Active work can also appear in [open pull requests](https://github.com/1337isnot1337/integer-factoring/pulls); branch research is not automatically a result on `main`.
 

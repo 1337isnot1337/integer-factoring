@@ -1,4 +1,4 @@
-.PHONY: verify verify-docs verify-frontier verify-post-half verify-schur-fermion verify-formal verify-k6 verify-half-appendix help
+.PHONY: verify verify-docs verify-frontier verify-post-half verify-schur-fermion verify-cancellation-modules verify-formal verify-k6 verify-half-appendix help
 
 verify: verify-docs verify-frontier
 	python3 -m unittest discover -s tests -v
@@ -16,6 +16,9 @@ verify-docs:
 
 verify-schur-fermion:
 	python3 tools/check_schur_fermion.py
+
+verify-cancellation-modules:
+	python3 tools/check_cancellation_module_automata.py
 
 verify-post-half:
 	python3 tools/check_half_piece_ranks.py --full
@@ -51,6 +54,7 @@ help:
 	  'make verify-post-half     - larger optional matrix-rank checks' \
 	  'make verify-docs          - check local Markdown file links' \
 	  'make verify-schur-fermion - exact full Schur entry and crossing queries' \
+	  'make verify-cancellation-modules - exact finite module and word certificates' \
 	  'make verify-formal        - rebuild original Lean lemmas (Lean 4.35.0)' \
 	  'make verify-k6            - rebuild the certified 1/30 machine (Lean 4.35.0)' \
 	  'make verify-half-appendix - rebuild the certified 1/2 machine (Lean 4.33.1)'
