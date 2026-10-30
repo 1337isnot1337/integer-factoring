@@ -77,6 +77,7 @@ of an improved factoring machine.
 | Explicit time bound for the reference machine | `C * 2^(C * (explicitZu(n) + 1))` | Lean-checked bound for one finite-alphabet factoring machine; logarithmic-power conversion remains handwritten |
 | Grouping with independent accuracy | `g = O(D^2 K^2 log K)` | Matching decomposition, Holder's inequality, and an explicit deterministic search |
 | Formally checked grouping improvement | `g > K^2 + 4D^2K^4`; original accuracy works at `g = 5K^6` | Lean kernel checked, including network value preservation |
+| Sixth-power rate bridge | conditional saving exponent `1/30 > log(12/11)/log(16)` | Lean checks the cutoff, contracted-volume conversion, explicit padding interface, and real-valued time conversion; the candidate machine and its cost hypotheses remain open |
 | Smaller crossing factorization | 56 integer channels instead of a trivial 64-channel factor | Explicit integer factors and exhaustive finite verification |
 | Grouping-only rate target | `alpha = log(12/11)/log(4) = 0.0627654410...` | New parameter schedule and runtime analysis; modified machine not Lean verified |
 | Combined rate target | `alpha = log(1/rho)/log(4) = 0.0755104681...`, `rho = (8+log_2(7))/12` | Combined mathematical construction; full formal integration remains open |
@@ -116,6 +117,11 @@ requires real-number approximation in the algorithm.
   `11/12` analysis and the proposed modified machine are separate work.
   [Verification evidence](evidence/formal-verification.json) records source hashes
   and the allowed axiom list.
+- [SixthRate.lean](formal/SixthRate.lean) and [rate-bridge note](research/sixth-rate.md):
+  checked conditional conversion for the sixth-power schedule, covering bottom
+  counts up to 1024 and retaining explicit padding and complete-time hypotheses.
+  [Rate-bridge evidence](evidence/sixth-rate-verification.json) records its source
+  hash, axiom audit, and verification scope. Run `make verify-formal` to include it.
 
 ## Reproduce the checks
 
