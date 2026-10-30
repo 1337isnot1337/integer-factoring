@@ -1,0 +1,290 @@
+{
+  "status": "exact constant-cut identities and proven row upper bounds; no full profile improvement",
+  "records": [
+    {
+      "horizontal_pairs": 1,
+      "center_bits": 1,
+      "columns": [
+        1
+      ],
+      "label_bits": 3,
+      "constant_column_rank": 5,
+      "fiber_ranks": [
+        3,
+        2
+      ],
+      "independent_monomial_count": 3,
+      "matroid_upper_bound": 6,
+      "degree_upper_bound": 6,
+      "horizontal_rows_examined": 4,
+      "row_rank_upper_bounds_center_weight_two": [
+        64,
+        36,
+        20,
+        6,
+        1
+      ],
+      "exact_row_ranks_center_weight_two": [
+        64,
+        28,
+        18,
+        6,
+        1
+      ]
+    },
+    {
+      "horizontal_pairs": 2,
+      "center_bits": 1,
+      "columns": [
+        1,
+        1
+      ],
+      "label_bits": 5,
+      "constant_column_rank": 10,
+      "fiber_ranks": [
+        5,
+        5
+      ],
+      "independent_monomial_count": 5,
+      "matroid_upper_bound": 10,
+      "degree_upper_bound": 10,
+      "horizontal_rows_examined": 9,
+      "row_rank_upper_bounds_center_weight_two": [
+        1024,
+        672,
+        402,
+        180,
+        52,
+        10,
+        1
+      ],
+      "exact_row_ranks_center_weight_two": [
+        1024,
+        580,
+        352,
+        160,
+        50,
+        10,
+        1
+      ]
+    },
+    {
+      "horizontal_pairs": 3,
+      "center_bits": 1,
+      "columns": [
+        1,
+        1,
+        1
+      ],
+      "label_bits": 7,
+      "constant_column_rank": 14,
+      "fiber_ranks": [
+        7,
+        7
+      ],
+      "independent_monomial_count": 7,
+      "matroid_upper_bound": 14,
+      "degree_upper_bound": 14,
+      "horizontal_rows_examined": 13,
+      "row_rank_upper_bounds_center_weight_two": [
+        16384,
+        11484,
+        7288,
+        3924,
+        1628,
+        476,
+        100,
+        14,
+        1
+      ]
+    },
+    {
+      "horizontal_pairs": 2,
+      "center_bits": 2,
+      "columns": [
+        1,
+        2
+      ],
+      "label_bits": 6,
+      "constant_column_rank": 25,
+      "fiber_ranks": [
+        9,
+        6,
+        6,
+        4
+      ],
+      "independent_monomial_count": 9,
+      "matroid_upper_bound": 36,
+      "degree_upper_bound": 44,
+      "horizontal_rows_examined": 16,
+      "row_rank_upper_bounds_center_weight_two": [
+        4096,
+        2872,
+        1912,
+        1064,
+        520,
+        206,
+        58,
+        10,
+        1
+      ],
+      "exact_row_ranks_center_weight_two": [
+        4096,
+        2368,
+        1796,
+        922,
+        456,
+        180,
+        52,
+        10,
+        1
+      ]
+    },
+    {
+      "horizontal_pairs": 3,
+      "center_bits": 2,
+      "columns": [
+        1,
+        2,
+        3
+      ],
+      "label_bits": 8,
+      "constant_column_rank": 67,
+      "fiber_ranks": [
+        19,
+        16,
+        16,
+        16
+      ],
+      "independent_monomial_count": 19,
+      "matroid_upper_bound": 76,
+      "degree_upper_bound": 88,
+      "horizontal_rows_examined": 55
+    },
+    {
+      "horizontal_pairs": 4,
+      "center_bits": 2,
+      "columns": [
+        1,
+        1,
+        2,
+        3
+      ],
+      "label_bits": 10,
+      "constant_column_rank": 114,
+      "fiber_ranks": [
+        29,
+        29,
+        28,
+        28
+      ],
+      "independent_monomial_count": 29,
+      "matroid_upper_bound": 116,
+      "degree_upper_bound": 148,
+      "horizontal_rows_examined": 166
+    },
+    {
+      "horizontal_pairs": 4,
+      "center_bits": 2,
+      "columns": [
+        1,
+        2,
+        1,
+        2
+      ],
+      "label_bits": 10,
+      "constant_column_rank": 100,
+      "fiber_ranks": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "independent_monomial_count": 25,
+      "matroid_upper_bound": 100,
+      "degree_upper_bound": 148,
+      "horizontal_rows_examined": 130
+    },
+    {
+      "horizontal_pairs": 4,
+      "center_bits": 3,
+      "columns": [
+        1,
+        2,
+        4,
+        3
+      ],
+      "label_bits": 11,
+      "constant_column_rank": 335,
+      "fiber_ranks": [
+        57,
+        48,
+        48,
+        48,
+        38,
+        32,
+        32,
+        32
+      ],
+      "independent_monomial_count": 57,
+      "matroid_upper_bound": 456,
+      "degree_upper_bound": 744,
+      "horizontal_rows_examined": 237
+    },
+    {
+      "horizontal_pairs": 8,
+      "center_bits": 2,
+      "columns": [
+        1,
+        2,
+        3,
+        1,
+        2,
+        3,
+        1,
+        2
+      ],
+      "label_bits": 18,
+      "constant_column_rank": 404,
+      "fiber_ranks": [
+        101,
+        101,
+        101,
+        101
+      ],
+      "independent_monomial_count": 101,
+      "matroid_upper_bound": 404,
+      "degree_upper_bound": 548,
+      "horizontal_rows_examined": 814
+    },
+    {
+      "horizontal_pairs": 6,
+      "center_bits": 3,
+      "columns": [
+        1,
+        2,
+        4,
+        3,
+        6,
+        7
+      ],
+      "label_bits": 15,
+      "constant_column_rank": 1592,
+      "fiber_ranks": [
+        201,
+        199,
+        199,
+        199,
+        199,
+        197,
+        199,
+        199
+      ],
+      "independent_monomial_count": 201,
+      "matroid_upper_bound": 1608,
+      "degree_upper_bound": 2392,
+      "horizontal_rows_examined": 3465
+    }
+  ],
+  "source_sha256": "5d4d593d3629b43b21be37392cae9d5311350fa87e874eddfa525fcb9e641287"
+}

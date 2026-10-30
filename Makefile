@@ -21,6 +21,7 @@ verify-constructions:
 	python3 tools/check_homogeneous_central_selection.py
 	python3 tools/check_noncommutative_crossing_orbit.py
 	python3 tools/check_bosonic_hermite_profile.py
+	python3 tools/check_noncommutative_crossing_coded.py
 
 verify-native-crossings:
 	mkdir -p build/native

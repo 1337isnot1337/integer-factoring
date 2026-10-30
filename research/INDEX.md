@@ -22,6 +22,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Modular angle factors](homogeneous-central-modular-symbols.md): Boolean-zeta symbols, a three-block polynomial-time Pfaffian, reciprocal coefficients, and exact parity support.
 - [Homogeneous modular selection](homogeneous-central-selection.md): one operator weight at every label width, selected rectangular vacuum minors, and an effective uniform half-rate construction.
 - [Noncommutative group-word crossings](noncommutative-crossing-orbits.md): exact all-size construction, compressed constant cut, optimal rank-28 central shears on 64 labels, and complete-profile limitations.
+- [Coded central quotients](coded-central-crossings.md): binary-code group construction, exact constant-cut compression, matroid bounds, and an all-coefficient row filtration estimate.
 - [Cumulative bosonic crossing profile](bosonic-hermite-profile.md): exact moment identities, a Virasoro rank formula, and complete pieces with independently collapsed prefix and suffix channels.
 - [Homogeneous duals](homogeneous-duals.md): alternative algebraic pieces and their checked identities.
 - [Near-ones label families](near-ones-labels.md): label construction and rank experiments.

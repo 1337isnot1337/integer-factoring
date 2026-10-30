@@ -33,6 +33,7 @@ The composition uses the existing clique evaluator from [Anthropic's Appendix B]
 | Homogeneous modular duals at every label width | Ordinary uniform construction; retains exponent `1/2` | [Rectangular vacuum minor selection](research/homogeneous-central-selection.md) |
 | Noncommutative 64-label constant-cut rank reduced from 31 to 28 | Exact finite construction and exhaustive search; complete profile does not improve the score | [Group-word crossings and all central shears](research/noncommutative-crossing-orbits.md) |
 | Cumulative bosonic crossing profile | Ordinary exact identities and finite construction; no stronger exponent | [Moment pairing, exact rank, and both channel cuts](research/bosonic-hermite-profile.md) |
+| Crossing families from binary codes | Ordinary all-size construction and one-cut bounds; complete column profile open | [Coded central quotients](research/coded-central-crossings.md) |
 
 The result table distinguishes verified machine bounds from conditional constructions and finite experiments. A merged PR or a passing finite test does not imply independent mathematical review.
 
@@ -85,6 +86,8 @@ The [homogeneous selection theorem](research/homogeneous-central-selection.md) c
 [Noncommuting group words](research/noncommutative-crossing-orbits.md) give a different exact crossing family. An exhaustive screen of all `33554432` normalized functions on `F_4^2` finds the optimal constant-cut rank 28 in that central-shear family. The other pieces remain too expensive, including after all binary recombinations of the displayed winning profile. This is a finite rank improvement and a reproducible search result; the factoring score remains `1/2`.
 
 The [cumulative bosonic profile](research/bosonic-hermite-profile.md) uses a vanishing first moment and a scalar second moment to build new exact pieces. Its scalar parameter pairing has rank `p(h)-p(h-2)`, proved using an explicit Virasoro operator. Prefix and suffix formulas give both channel factorizations without dropping contact terms. These pieces retain the leading half-rate channel scale; their complete ranks are measured separately in the finite examples.
+
+[Coded central quotients](research/coded-central-crossings.md) let a binary code control the noncommuting group relations. A column-matroid formula bounds the constant cut, and a weighted filtration bounds every row coefficient. Some parameter ranges survive both the constant-cut test and the known quotient obstruction. A matching bound for the complete column profile is still needed.
 
 See the [research index](research/INDEX.md) for completed arguments, scoped obstructions, and older candidates. Active work can also appear in [open pull requests](https://github.com/1337isnot1337/integer-factoring/pulls); branch research is not automatically a result on `main`.
 
