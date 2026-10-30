@@ -27,6 +27,29 @@ theorem masterExponent_unary (x C : ℕ) (hx : 1 ≤ x) {α : Type} [Enc α] {n 
   have he := selected_padExponent_unary x C hx hn
   exact Unary.add (Unary.add hg ht) he
 
+theorem master_pad_suffices (x C n : ℕ) (pad : List Unit)
+    (hpad : 2 ^ masterExponent x C n ≤ pad.length) :
+    let l := selectedLevel x n
+    let P := K x l
+    let L := topWidth (sOf n) P + 1
+    let B := topEntryBits (sOf n) P
+    P ^ (3 * P ^ 8) ≤ pad.length ∧
+      2 ^ ((P - 1) * L) ≤ pad.length ∧
+      2 ^ padExponent P L B C (2 ^ (l / 2)) ≤ pad.length := by
+  dsimp only
+  have hgroup : 3 * (K x (selectedLevel x n)) ^ 9 ≤ masterExponent x C n := by
+    unfold masterExponent; dsimp; omega
+  have htable : (K x (selectedLevel x n) - 1) *
+      (topWidth (sOf n) (K x (selectedLevel x n)) + 1) ≤ masterExponent x C n := by
+    unfold masterExponent; dsimp; omega
+  have heval : padExponent (K x (selectedLevel x n))
+      (topWidth (sOf n) (K x (selectedLevel x n)) + 1)
+      (topEntryBits (sOf n) (K x (selectedLevel x n))) C (2 ^ (selectedLevel x n / 2)) ≤
+      masterExponent x C n := by simp [masterExponent]
+  exact ⟨(grouping_count_le_pad _).trans ((Nat.pow_le_pow_right (by norm_num) hgroup).trans hpad),
+    (Nat.pow_le_pow_right (by norm_num) htable).trans hpad,
+    (Nat.pow_le_pow_right (by norm_num) heval).trans hpad⟩
+
 theorem masterExponent_cost (ρ : ℝ) (x C n : ℕ) (hx : 1 ≤ x)
     (ha : AppRunningTime.PartA ρ x) (hn : (K x 0) ^ 40 ≤ n) :
     2 ^ (selectedLevel x n / 2) * masterExponent x C n ≤ (12004 + C * 500) * n := by
@@ -68,5 +91,6 @@ theorem masterExponent_sqrt_cost (ρ : ℝ) (x C n : ℕ) (hx : 1 ≤ x)
 end IntegerFactoring.HalfAppendix
 
 #print axioms IntegerFactoring.HalfAppendix.masterExponent_unary
+#print axioms IntegerFactoring.HalfAppendix.master_pad_suffices
 #print axioms IntegerFactoring.HalfAppendix.masterExponent_cost
 #print axioms IntegerFactoring.HalfAppendix.masterExponent_sqrt_cost

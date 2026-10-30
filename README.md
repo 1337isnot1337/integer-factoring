@@ -322,9 +322,11 @@ algorithm and its polynomial-time certificates as hypotheses. The prefix-search
 polynomial-time theorem likewise assumes a polynomial-time count query.
 The exhaustive grouping scan is polynomial-time given a polynomial-time
 predicate and sufficient unit padding; its padding exponent is bounded by
-`3n/r` for the selected schedule.
+`3n/r` for the selected schedule. Its group-size check is polynomial-time and
+agrees with the reference; the crossing-width check remains to be certified.
 
-The GitHub Actions workflow runs both formal targets and the Python checks.
+The GitHub Actions workflow runs the reference Lean checks, the k6 rate checks,
+and the Python checks. The Appendix bridge target above is run separately.
 It pins the Lean archive hash and checkout action. It runs for pull requests,
 pushes to `main`, and manual dispatch. Branch pushes without a pull request
 do not start CI. No leaderboard submission accompanies this result.

@@ -105,6 +105,7 @@ cp "$root/formal-appendix/PaddedMachineRate.lean" "$stage/PaddedMachineRate.lean
 cp "$root/formal-appendix/SizeParamPoly.lean" "$stage/SizeParamPoly.lean"
 cp "$root/formal-appendix/TopParamsPoly.lean" "$stage/TopParamsPoly.lean"
 cp "$root/formal-appendix/MasterPad.lean" "$stage/MasterPad.lean"
+cp "$root/formal-appendix/GroupingCodePoly.lean" "$stage/GroupingCodePoly.lean"
 lake env bash -c '
   set -euo pipefail
   export LEAN_PATH="$1:$1/factoring/.lake/build/lib/lean:$LEAN_PATH"
@@ -155,6 +156,7 @@ lake env bash -c '
   lean --root="$1" -o "$1/SizeParamPoly.olean" "$1/SizeParamPoly.lean"
   lean --root="$1" -o "$1/TopParamsPoly.olean" "$1/TopParamsPoly.lean"
   lean --root="$1" "$1/MasterPad.lean"
+  lean --root="$1" "$1/GroupingCodePoly.lean"
 ' _ "$stage" > "$logs/bridge.log" 2>&1
 python3 - "$logs/bridge.log" <<'PY'
 import re
@@ -192,7 +194,8 @@ machine_rate = "IntegerFactoring.HalfAppendix.padded_factoring_exp"
 size_poly = "IntegerFactoring.HalfAppendix.sOf_unary"
 params_poly = "IntegerFactoring.HalfAppendix.selected_padExponent_unary"
 master_cost = "IntegerFactoring.HalfAppendix.masterExponent_sqrt_cost"
-if "error:" in text or "sorryAx" in text or not {expected, count_bridge, table, clique, top, selected, row, fast, width, states, state_rate, entry, explicit, pad_rate, pure_factor, level_rate, written_poly, prefix_steps, reference_spec, certified_prefix, search_poly, machine, group_search, group_cost, level_poly, machine_rate, size_poly, params_poly, master_cost} <= {name for name, _ in reports}:
+group_sizes = "IntegerFactoring.HalfAppendix.groupSizesOK_eq"
+if "error:" in text or "sorryAx" in text or not {expected, count_bridge, table, clique, top, selected, row, fast, width, states, state_rate, entry, explicit, pad_rate, pure_factor, level_rate, written_poly, prefix_steps, reference_spec, certified_prefix, search_poly, machine, group_search, group_cost, level_poly, machine_rate, size_poly, params_poly, master_cost, group_sizes} <= {name for name, _ in reports}:
     raise SystemExit("Missing or failed Appendix bridge axiom reports")
 allowed = {"propext", "Classical.choice", "Quot.sound"}
 for name, axioms in reports:
