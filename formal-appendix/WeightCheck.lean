@@ -93,7 +93,7 @@ theorem weightCheck_eq (g K : ℕ) (hg : 0 < g) (χ : Fin g → Fin K) (γ : Fin
     (hm : ∀ a : Fin g, member a.val = decide (χ a = γ))
     (hn : ∀ (a : Fin g) (h : χ a = γ), (if node a.val then (1 : ℤ) else 0) = N.W a (z ⟨a, h⟩))
     (hu : ∀ a b : Fin g, used a.val b.val = decide (a < b ∧ χ a = γ ∧ χ b = γ))
-    (hp : ∀ (a b : Fin g) (ha : χ a = γ) (hb : χ b = γ),
+    (hp : ∀ (a b : Fin g) (hab : a < b) (ha : χ a = γ) (hb : χ b = γ),
       (if pair a.val b.val then (1 : ℤ) else 0) = N.Ψ a b (z ⟨a, ha⟩) (z ⟨b, hb⟩)) :
     weightCheck g member node used pair = true ↔ (N.coarsen χ).W γ z = 1 := by
   rw [weightCheck_true_iff g hg, Net.coarsen_W_code]
@@ -108,9 +108,9 @@ theorem weightCheck_eq (g K : ℕ) (hg : 0 < g) (χ : Fin g → Fin K) (γ : Fin
       cases hnode : node a.val <;> simp_all [f, h]
     · simp [f, h]
   have hp' : ∀ ab ∈ pairs g, p ab = 0 ∨ p ab = 1 := by
-    intro ab _
+    intro ab hab
     by_cases h : χ ab.1 = γ ∧ χ ab.2 = γ
-    · have hw := hp ab.1 ab.2 h.1 h.2
+    · have hw := hp ab.1 ab.2 (mem_pairs.mp hab) h.1 h.2
       cases hpair : pair ab.1.val ab.2.val <;> simp_all [p, h]
     · simp [p, h]
   have hfb := prod_binary (Finset.univ : Finset (Fin g)) f hf
@@ -135,7 +135,7 @@ theorem weightCheck_eq (g K : ℕ) (hg : 0 < g) (χ : Fin g → Fin K) (γ : Fin
       by_cases h : χ ab.1 = γ ∧ χ ab.2 = γ
       · have hu' : used ab.1.val ab.2.val = true := by simpa [hlt, h] using hu ab.1 ab.2
         have hv := hpair ab.1.val ab.1.isLt ab.2.val ab.2.isLt hu'
-        simp [p, h, ← hp ab.1 ab.2 h.1 h.2, hv]
+        simp [p, h, ← hp ab.1 ab.2 hlt h.1 h.2, hv]
       · simp [p, h]
   · rintro ⟨hnode, hpair⟩
     constructor
@@ -166,7 +166,7 @@ theorem weightCheck_eq (g K : ℕ) (hg : 0 < g) (χ : Fin g → Fin K) (γ : Fin
         · have hzprod : (∏ ab ∈ pairs g, p ab) = 0 := Finset.prod_eq_zero hab hz
           omega
         · exact ho
-      have heq := hp a b hcond.2.1 hcond.2.2
+      have heq := hp a b hcond.1 hcond.2.1 hcond.2.2
       have hw : N.Ψ a b (z ⟨a, hcond.2.1⟩) (z ⟨b, hcond.2.2⟩) = 1 := by
         simpa [p, hcond] using hpab
       have : (if pair i j then (1 : ℤ) else 0) = 1 := by simpa [a, b] using heq.trans hw

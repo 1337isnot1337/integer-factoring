@@ -159,11 +159,11 @@ theorem selectedClusterWeight_eq (x n N k y : ℕ) (hP : 2 ≤ K x (selectedLeve
     intro a b
     rw [hcolor, hcolor]
     simp only [Fin.val_inj, Fin.lt_def]
-  have hp : ∀ (a b : Fin (mulNodes s)) (ha : χ0 a = cluster.val) (hb : χ0 b = cluster.val),
+  have hp : ∀ (a b : Fin (mulNodes s)) (hab : a < b) (ha : χ0 a = cluster.val) (hb : χ0 b = cluster.val),
       (if gatePair s B a.val b.val (selectedGateCode x n pad γ.val c.val cluster.val.val a.val)
         (selectedGateCode x n pad γ.val c.val cluster.val.val b.val) then (1 : ℤ) else 0) =
         (mulNet s ℤ N k y).Ψ a b (z cluster ⟨a, ha⟩) (z cluster ⟨b, hb⟩) := by
-    intro a b ha hb
+    intro a b _ ha hb
     rw [hcode a ha, hcode b hb]
     exact gatePair_eq s B N k y a b (z cluster ⟨a, ha⟩) (z cluster ⟨b, hb⟩) hsize.1 hsize.2
   have hnodes : 0 < mulNodes s := by

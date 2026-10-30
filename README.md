@@ -330,8 +330,10 @@ The selected clique row is expressed as a padded sum over explicitly coded
 states, its gate codes can be decoded in polynomial time, and the numeric gate
 weights and messages agree with the reference. The corresponding cluster
 weight and cross-cluster pair checks are polynomial-time and agree with the
-reference on valid decoded states. Their composition into the row summand is
-still open.
+reference on valid decoded states. The selected top-group weight and cluster
+factor sides also have executable checks matching the reference; the latter
+uses distinct cluster endpoints for the right side. Their composition into
+the row summand is still open.
 
 The GitHub Actions workflow runs the reference Lean checks, the k6 rate checks,
 and the Python checks. The Appendix bridge target above is run separately.

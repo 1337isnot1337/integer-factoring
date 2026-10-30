@@ -204,8 +204,67 @@ theorem factorCheck_eq_right (g K : ℕ) (hg : 0 < g) (χ : Fin g → Fin K)
     rw [ho]
     cases hside : side a.val b.val (q / 2 ^ offR (fun p => N.c p.1 p.2) (Net.UsedP χ u v) (Net.pairOf g hg) t) <;> simp_all
 
+
+theorem factorCheck_eq_right_used (g K : ℕ) (hg : 0 < g) (χ : Fin g → Fin K)
+    (u v : Fin K) (N : Net ℤ g) (z : (N.coarsen χ).S v) (q : ℕ)
+    (width : ℕ → ℕ → ℕ) (used : ℕ → ℕ → Bool) (side : ℕ → ℕ → ℕ → Bool)
+    (hw : ∀ a b : Fin g, width a.val b.val = N.c a b)
+    (hu : ∀ a b : Fin g, used a.val b.val = decide (Net.UsedP χ u v (a, b)))
+    (hs : ∀ (a b : Fin g), Net.UsedP χ u v (a, b) → ∀ (q' : ℕ),
+      (if side a.val b.val q' then (1 : ℤ) else 0) = (N.orient χ u v (a, b)).r z (bdec _ q')) :
+    factorCheck g q width used side = true ↔ ((N.coarsen χ).F u v).r z (bdec _ q) = 1 := by
+  rw [factorCheck_true_iff, Net.coarsen_r_code N hg χ u v z q]
+  have hbinary : ∀ t ∈ Finset.range (g * g),
+      (if Net.UsedP χ u v (Net.pairOf g hg t) then
+        (N.orient χ u v (Net.pairOf g hg t)).r z
+          (bdec _ (q / 2 ^ offR (fun p => N.c p.1 p.2) (Net.UsedP χ u v) (Net.pairOf g hg) t)) else 1) = 0 ∨
+      (if Net.UsedP χ u v (Net.pairOf g hg t) then
+        (N.orient χ u v (Net.pairOf g hg t)).r z
+          (bdec _ (q / 2 ^ offR (fun p => N.c p.1 p.2) (Net.UsedP χ u v) (Net.pairOf g hg) t)) else 1) = 1 := by
+    intro t ht
+    by_cases h : Net.UsedP χ u v (Net.pairOf g hg t)
+    · rw [if_pos h, ← hs (Net.pairOf g hg t).1 (Net.pairOf g hg t).2 h]
+      split <;> simp
+    · simp [h]
+  rw [binary_prod_one _ _ hbinary]
+  constructor
+  · intro h t ht
+    have hlt := Finset.mem_range.mp ht
+    let a := (Net.pairOf g hg t).1
+    let b := (Net.pairOf g hg t).2
+    have ho := pairOffset_eq g K t hg (Nat.le_of_lt hlt) χ u v N width used hw hu
+    have hu' := hu a b
+    by_cases hU : Net.UsedP χ u v (a, b)
+    · have hs' := hs a b hU (q / 2 ^ offR (fun p => N.c p.1 p.2) (Net.UsedP χ u v) (Net.pairOf g hg) t)
+      have hcheck := h t hlt
+      change used a.val b.val = true → side a.val b.val (q / 2 ^ pairOffset g t width used) = true at hcheck
+      rw [ho] at hcheck
+      have hside : side a.val b.val (q / 2 ^ offR (fun p => N.c p.1 p.2) (Net.UsedP χ u v) (Net.pairOf g hg) t) = true :=
+        hcheck (by simpa [hU] using hu')
+      change (if Net.UsedP χ u v (a, b) then _ else 1) = 1
+      rw [if_pos hU, ← hs', hside]
+      rfl
+    · change (if Net.UsedP χ u v (a, b) then _ else 1) = 1
+      simp [hU]
+  · intro h t ht hused
+    let a := (Net.pairOf g hg t).1
+    let b := (Net.pairOf g hg t).2
+    have ho := pairOffset_eq g K t hg (Nat.le_of_lt ht) χ u v N width used hw hu
+    have hu' := hu a b
+    have hU : Net.UsedP χ u v (a, b) := by
+      have : decide (Net.UsedP χ u v (a, b)) = true := by simpa [a, b, Net.pairOf] using hu'.symm.trans hused
+      exact of_decide_eq_true this
+    have hprod := h t (Finset.mem_range.mpr ht)
+    change (if Net.UsedP χ u v (a, b) then _ else 1) = 1 at hprod
+    rw [if_pos hU, ← hs a b hU] at hprod
+    change side a.val b.val (q / 2 ^ pairOffset g t width used) = true
+    rw [ho]
+    cases hside : side a.val b.val (q / 2 ^ offR (fun p => N.c p.1 p.2) (Net.UsedP χ u v) (Net.pairOf g hg) t) <;> simp_all
+
 end IntegerFactoring.HalfAppendix
 
 #print axioms IntegerFactoring.HalfAppendix.factorCheck_polyT
 #print axioms IntegerFactoring.HalfAppendix.factorCheck_eq_left
 #print axioms IntegerFactoring.HalfAppendix.factorCheck_eq_right
+
+#print axioms IntegerFactoring.HalfAppendix.factorCheck_eq_right_used

@@ -142,6 +142,9 @@ cp "$root/formal-appendix/WeightCheck.lean" "$stage/WeightCheck.lean"
 cp "$root/formal-appendix/CrossCheck.lean" "$stage/CrossCheck.lean"
 cp "$root/formal-appendix/SelectedClusterWeight.lean" "$stage/SelectedClusterWeight.lean"
 cp "$root/formal-appendix/SelectedClusterPair.lean" "$stage/SelectedClusterPair.lean"
+cp "$root/formal-appendix/GateSide.lean" "$stage/GateSide.lean"
+cp "$root/formal-appendix/SelectedTopWeight.lean" "$stage/SelectedTopWeight.lean"
+cp "$root/formal-appendix/SelectedClusterSide.lean" "$stage/SelectedClusterSide.lean"
 lake env bash -c '
   set -euo pipefail
   export LEAN_PATH="$1:$1/factoring/.lake/build/lib/lean:$LEAN_PATH"
@@ -227,8 +230,11 @@ lake env bash -c '
   lean --root="$1" -o "$1/FactorCheck.olean" "$1/FactorCheck.lean"
   lean --root="$1" -o "$1/WeightCheck.olean" "$1/WeightCheck.lean"
   lean --root="$1" -o "$1/CrossCheck.olean" "$1/CrossCheck.lean"
-  lean --root="$1" "$1/SelectedClusterWeight.lean"
-  lean --root="$1" "$1/SelectedClusterPair.lean"
+  lean --root="$1" -o "$1/SelectedClusterWeight.olean" "$1/SelectedClusterWeight.lean"
+  lean --root="$1" -o "$1/SelectedClusterPair.olean" "$1/SelectedClusterPair.lean"
+  lean --root="$1" -o "$1/GateSide.olean" "$1/GateSide.lean"
+  lean --root="$1" "$1/SelectedTopWeight.lean"
+  lean --root="$1" "$1/SelectedClusterSide.lean"
 ' _ "$stage" > "$logs/bridge.log" 2>&1
 python3 - "$logs/bridge.log" <<'PY'
 import re
@@ -285,7 +291,10 @@ factor_check = "IntegerFactoring.HalfAppendix.factorCheck_eq_left"
 weight_check = "IntegerFactoring.HalfAppendix.weightCheck_eq"
 cluster_weight = "IntegerFactoring.HalfAppendix.selectedClusterWeight_eq"
 cluster_pair = "IntegerFactoring.HalfAppendix.selectedClusterPair_eq"
-if "error:" in text or "sorryAx" in text or not {expected, count_bridge, table, clique, top, selected, row, fast, width, states, state_rate, entry, explicit, pad_rate, pure_factor, level_rate, written_poly, prefix_steps, reference_spec, certified_prefix, search_poly, machine, group_search, group_cost, level_poly, machine_rate, size_poly, params_poly, master_cost, group_sizes, group_predicate, group_correct, selected_group_poly, selected_group_correct, row_bridge, digit_poly, gate_size, gate_code, gate_code_correct, gate_weight, gate_weight_correct, gate_message, gate_message_correct, gate_pair, factor_check, weight_check, cluster_weight, cluster_pair} <= {name for name, _ in reports}:
+top_weight = "IntegerFactoring.HalfAppendix.selectedTopWeight_eq"
+cluster_left = "IntegerFactoring.HalfAppendix.selectedClusterLeft_eq"
+cluster_right = "IntegerFactoring.HalfAppendix.selectedClusterRight_eq"
+if "error:" in text or "sorryAx" in text or not {expected, count_bridge, table, clique, top, selected, row, fast, width, states, state_rate, entry, explicit, pad_rate, pure_factor, level_rate, written_poly, prefix_steps, reference_spec, certified_prefix, search_poly, machine, group_search, group_cost, level_poly, machine_rate, size_poly, params_poly, master_cost, group_sizes, group_predicate, group_correct, selected_group_poly, selected_group_correct, row_bridge, digit_poly, gate_size, gate_code, gate_code_correct, gate_weight, gate_weight_correct, gate_message, gate_message_correct, gate_pair, factor_check, weight_check, cluster_weight, cluster_pair, top_weight, cluster_left, cluster_right} <= {name for name, _ in reports}:
     raise SystemExit("Missing or failed Appendix bridge axiom reports")
 allowed = {"propext", "Classical.choice", "Quot.sound"}
 for name, axioms in reports:
