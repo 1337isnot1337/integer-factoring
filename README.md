@@ -81,7 +81,10 @@ factoring rate in a fixed characteristic.
 There is also a finite algebraic improvement: 17 explicitly listed
 recombined pieces reduce the maximum row-rank times column-rank from
 `36` to `27` on a three-label characteristic-two domain. This does not
-give a growing family with a better asymptotic width coefficient.
+give a growing family with a better asymptotic width coefficient. Grouping
+tensor powers of this certificate by multiplicities retains a pure type
+with coefficient at least `3/4`, so that direct amplification does not
+beat the existing `1/sqrt(2)` family.
 
 The [polynomial Pfaffian formula](research/modular-pfaffian.md) computes
 all final characteristic-two pieces for four labels of weight `h` in
@@ -94,6 +97,14 @@ without an extra construction-cost assumption. A uniform rank-width
 bound remains necessary. The formula agrees with 45,122 entries from
 the original operator construction; nine tested high-weight families
 do not give a better asymptotic coefficient.
+
+An [exact common-mode reduction](research/fermi-sea-schur.md) explains
+one large class of high-weight labels. Adding a complete binary block
+of shared low modes multiplies the original profile by an explicit
+scalar polynomial. If its translated coefficient ranges are disjoint,
+every nonzero lifted piece is an original piece, with the same ranks.
+The proof leaves overlapping coefficient combinations and other label
+families open.
 
 A separate [sparse-grid proof](research/past-half-sparse-grids.md) shows
 that arbitrarily changing the density of regular grid supports does not

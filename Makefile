@@ -14,11 +14,13 @@ verify:
 	python3 tools/check_fixed_characteristic_transfer.py
 	python3 tools/check_modular_pieces.py
 	python3 tools/check_modular_pfaffian.py
+	python3 tools/check_fermi_sea_schur.py
 	python3 tools/check_sparse_grid_geometry.py
 
 verify-modular:
 	python3 tools/check_modular_pieces.py --full
 	python3 tools/check_modular_pfaffian.py --full
+	python3 tools/check_fermi_sea_schur.py
 	python3 tools/check_weighted_prefix.py
 	python3 tools/check_fixed_characteristic_transfer.py
 	python3 tools/check_sparse_grid_geometry.py

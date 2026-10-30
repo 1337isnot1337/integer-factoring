@@ -41,6 +41,15 @@ also rules out improving the declared central-channel coefficient by
 arbitrarily changing regular grid densities; it makes no general rank
 or factoring lower-bound claim.
 
+For labels with a shared complete binary block, the
+[exact Schur reduction](research/fermi-sea-schur.md) computes the effect
+of that background: a common scalar convolution of the original piece
+profile. Separated coefficient supports preserve every individual rank.
+Read its fixed-cardinality and active-mode restrictions before applying
+it to other families. The modular note also explains why type aggregation
+of the finite 17-piece certificate retains a pure type too large to beat
+the half-rate coefficient.
+
 Parallel
 [PR #21](https://github.com/1337isnot1337/integer-factoring/pull/21) develops
 homogeneous rational duals and further channel and schedule bounds. Inspect

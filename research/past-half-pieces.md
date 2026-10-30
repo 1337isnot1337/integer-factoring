@@ -264,6 +264,37 @@ The evidence records the full certificate. There is no extrapolation from
 these three labels to a growing family, and the integer ceiling costs of
 a complete recursive evaluator are not inferred from the rank product.
 
+### Why naive type aggregation does not amplify this certificate past half
+
+Take the tensor power of this 17-term identity on the full `3^t`-label
+domain. Group the ordered choices by their 17 multiplicities. There are
+`binom(t+16,16)` types, which is polynomial in `t`, so this grouping
+does repair the exponential number of separate words.
+
+However, the certificate contains
+`T(x,y,u,v)=A_(-16)(x,u,y,v)` with row rank nine and column rank three.
+The type that chooses `T` in every position contains exactly one word,
+namely `T` to the `t`th tensor power. Matrix rank is multiplicative
+under tensor products over `F_2`, so this type has ranks `9^t` and
+`3^t`. Its rank product is exactly `27^t`. There is no other summand
+inside that type to cancel in characteristic two.
+
+Measured against the full domain's label length `log2(3^t)`, the
+leading width coefficient of this type family is therefore at least
+
+```math
+\frac{\log_2(27^t)}{4\log_2(3^t)}=\frac34>
+\frac1{\sqrt2}.
+```
+
+Polynomial multiplicities, ceilings, and an `O(log t)` width allowance
+cannot change this leading obstruction. Thus merely collecting tensor
+words into types cannot turn this finite certificate into an improvement
+over the current half-rate family. This statement concerns the full
+ternary-word domain and these type pieces. Arbitrary restrictions to
+binary-label subsets, or new linear recombinations between types, may
+change ranks and require a separate argument; they are not excluded here.
+
 Run:
 
 ```sh
