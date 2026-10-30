@@ -30,6 +30,7 @@ verify-further:
 	python3 tools/check_commuting_halves_matrix_seeds.py
 	python3 tools/check_twisted_channel_walks.py
 	python3 tools/check_channel_flow_duals.py
+	python3 tools/check_component_channel_walks.py
 	python3 tools/check_binary_energy_symmetry.py
 	python3 tools/check_weighted_energy.py
 	python3 tools/check_witt_interfaces.py

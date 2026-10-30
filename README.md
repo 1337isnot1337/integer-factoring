@@ -111,6 +111,8 @@ The [channel-walk extension](research/twisted-channel-walk-transfer.md) permits 
 
 [Integer flow dual certificates](research/channel-flow-dual-certificates.md) give exact limits on this spectral optimization method. They prove that eight is already the best weighted-supervector base for the toy channel graph, and recover the ordinary rank-sum optimum in a complete-graph example. A disconnected-graph control demonstrates that these certificates do not lower-bound true matching-type counts or tensor ranks. The exact rational and integer checks are included in `make verify-further`.
 
+The [component-path refinement](research/component-channel-walk-transfer.md) covers walks by paths of strongly connected components and permits separate reciprocal weights for each row/column path pair. The actual amplified tensor pieces stay unchanged. An exact abstract graph example improves the optimal certified base from two to one; applying the refinement to a competitive crossing tensor remains open. Its checker includes rational certificates, matching integer lower bounds, and a control against improperly separating connected components.
+
 ## Contribution and attribution
 
 Start with [CONTRIBUTING.md](CONTRIBUTING.md) and [autoresearch.md](autoresearch.md). Coordinate new research through [issue #8](https://github.com/1337isnot1337/integer-factoring/issues/8). Document source revisions, proof status, reproduction commands, and remaining gaps.
