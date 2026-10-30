@@ -3,9 +3,10 @@
 The goal is to improve deterministic integer factoring bounds with precise,
 reproducible evidence. Start with the [README](README.md), the pinned upstream
 revision in [upstream.lock.json](upstream.lock.json), and the
-[integration note](research/integration.md). The proposed combined rate is a
-candidate: the modified factoring machine and its complete machine-level proof
-remain open.
+[verified k6 result](research/verified-k6.md). The k6 variant has a complete
+Lean proof of the logarithmic saving exponent `1/30`. The stronger combined
+rate in the [integration note](research/integration.md) remains a candidate.
+Its generalized evaluator and complete machine proof remain open.
 
 1. Check current `main`, the [coordination board](https://github.com/1337isnot1337/integer-factoring/issues/8),
    [open issues](https://github.com/1337isnot1337/integer-factoring/issues),
@@ -21,10 +22,11 @@ remain open.
    account for all levels, bit costs, parameter restrictions, and the link to
    a uniform factoring machine. Separate conditional or finite evidence from
    a complete asymptotic theorem.
-4. Run `make verify` and the relevant focused checks. Formal checking is a
-   separate `make verify-formal` target; it requires Lean and downloads the
-   pinned upstream reference and its dependencies. Record actual results and
-   any checks that were not run.
+4. Run `make verify` and the relevant focused checks. Use `make verify-formal`
+   for the original local lemmas and reference envelope. Use `make verify-k6`
+   for the complete k6 machine and rate proof. Both formal targets require
+   Lean and download the pinned reference and its dependencies. Record actual
+   results and any checks that were not run.
 5. Write a concise handoff with sources, contributor credit, limitations,
    and the next concrete question. A useful partial result or counterexample
    is welcome; do not describe it as a completed factoring improvement. Update

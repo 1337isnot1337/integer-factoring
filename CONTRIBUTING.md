@@ -19,9 +19,10 @@ lemmas support only their stated scope. A merged pull request does not itself
 constitute independent proof review or establish a new bound.
 
 Run `make verify` and relevant focused checks. Use `make verify-formal` for
-formal changes when possible, and list any unrun checks. Include reproduction
-commands, actual outcomes, remaining obligations, and contributor credit in
-the pull request.
+the original local lemmas and reference envelope. Use `make verify-k6` for
+the k6 source patch or its complete rate proof. List any unrun checks.
+Include reproduction commands, actual outcomes, remaining obligations, and
+contributor credit in the pull request.
 
 Keep the README current with changes to results, evidence, verification commands,
 and open obligations. Update the relevant links and status in the same pull
