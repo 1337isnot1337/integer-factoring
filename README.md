@@ -17,6 +17,15 @@ deterministic machine with
 T(n)\le C\exp\!\left(\frac{Cn}{\sqrt{\log n}}\right).
 ```
 
+The [modular time–space improvement](research/rough-input-transfer.md)
+now gives this same time bound with **polynomial space**, by removing
+small factors first and evaluating the grid through sequential table
+queries. The [local factor proof](research/modular-factor-space.md)
+uses streamed permanents and polynomial-size coefficient arrays. Both
+the repeated-query cost and the exact half-rate endpoint are included.
+This is an ordinary mathematical proof with finite checks, without new
+Lean formalization.
+
 It combines Claude (Anthropic)'s existing Appendix B clique evaluator with
 Isaac Rudich and Louis-Martin Rousseau's multiplication-network reduction.
 The new connection includes a deterministic written-table constructor, an
@@ -67,6 +76,15 @@ including `alpha=1`. A [sparse divisor-polynomial argument](research/sparse-divi
 detects permitted divisors using cyclic polynomial rings, with additional
 cost `exp(O(n/log n))`. The proof includes weighted input construction,
 circuit generation, ring arithmetic, and finite-alphabet machine costs.
+
+The [small-factor preprocessing extension](research/rough-input-transfer.md)
+reduces that extra time to `exp(O(sqrt(n)))`. If the weighted arithmetic
+evaluator costs `A(n)`, the resulting factoring bound is
+`exp(O(log(A(n)+2)+sqrt(n)))`; any fixed logarithmic saving exponent
+is preserved. A parameter tradeoff also gives polynomial-space recovery
+for every exponent at most one, provided the evaluator has sequential
+queries and polynomial-space local routines. The existing modular
+half-rate construction meets those requirements.
 
 The [extended transfer](research/subexponential-piece-transfer.md) permits
 more than polynomially many crossing pieces. Piece entropy

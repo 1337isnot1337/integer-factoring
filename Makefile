@@ -17,6 +17,8 @@ verify-post-half:
 	python3 tools/check_half_restricted_labels.py
 
 verify-frontier:
+	python3 tools/check_rough_input_transfer.py
+	python3 tools/check_modular_factor_space.py
 	python3 tools/check_fermionic_piece_polynomial.py
 	python3 tools/check_finite_order_crossing_transfer.py
 	python3 tools/check_coordinate_support_rank.py
