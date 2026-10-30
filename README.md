@@ -103,6 +103,8 @@ The [weighted Weyl construction](research/weighted-weyl-and-multivariate-extract
 
 The [matrix-valued seed interface](research/commuting-halves-matrix-seed-transfer.md) allows noncommutativity within each factor half while retaining exact ordered amplification. A fixed auxiliary matrix dimension is paid once. Full tensor-factor halves collapse to an ordinary scalar seed when normalized trace is available; two-by-two halves in matrix order four collapse after a finite field extension in every characteristic. The remaining larger characteristic-dividing cases are constructive search targets. Exact ordered-product, field-extension, and negative interleaving checks are included in `make verify-further`.
 
+The [channel-walk extension](research/twisted-channel-walk-transfer.md) permits input-independent scalar commutation phases and discards channel words containing certified zero products. Reciprocal piece weights give a spectral bound with exact rational certificates. A small noncommutative example reduces its supplied amplification base from 12 to 8; that example is still worse than the direct scalar crossing and establishes no score gain. The theorem gives a concrete additional condition to search for, with all-input identity and negative-phase checks in `make verify-further`.
+
 ## Contribution and attribution
 
 Start with [CONTRIBUTING.md](CONTRIBUTING.md) and [autoresearch.md](autoresearch.md). Coordinate new research through [issue #8](https://github.com/1337isnot1337/integer-factoring/issues/8). Document source revisions, proof status, reproduction commands, and remaining gaps.
