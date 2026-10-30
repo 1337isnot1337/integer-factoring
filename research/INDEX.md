@@ -14,6 +14,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Explicit adaptive divisor oracle](adaptive-benefit-divisor-preprocessing.md): computed benefit certificates remove unknown algorithmic constants, giving polynomial time and a logarithmic-workspace version; an independent exact search agrees through 2,048 bits.
+
 - [Regular roots with a rank-two terminal power](modified-transpose-root-target.md): an all-size paired-chain construction with the ideal column spectrum, plus an all-function Smith exclusion for full-cycle Feistel maps.
 - [Complete normalized rank-two channel form](rank-two-channel-normal-form.md): every invertible two-term matrix pencil is regular; after scalar extension, identity and trace normalization force a commuting-pair form.
 - [Geometric transpose channels and row inverses](geometric-transpose-crossings.md): exact row-unimodular instances through sixteen labels, complete finite polynomial-change screens, protected coefficient ranks, and column-degree certificates for constant twists.
