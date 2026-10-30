@@ -50,6 +50,7 @@ verify-constructions:
 	python3 tools/check_ward_pfaffian_queries.py --output /tmp/integer-factoring-ward-pfaffian-queries.json
 	python3 tools/check_ward_fan_entry_queries.py --output /tmp/integer-factoring-ward-fan-entry-queries.json
 	python3 tools/check_ward_fan_leading_block.py --output /tmp/integer-factoring-ward-fan-leading-block.json
+	python3 tools/check_ward_fan_jet_probe.py --output /tmp/integer-factoring-ward-fan-jet-probe.json
 	python3 tools/check_ward_operator_types.py --output /tmp/integer-factoring-ward-operator-types-check.json
 	python3 tools/check_overlapping_symplectic_profiles.py
 	python3 tools/check_cubic_radical_output_maps.py
@@ -58,6 +59,7 @@ verify-constructions:
 	python3 tools/check_cubic_fixed_image_rank_one.py --output /tmp/integer-factoring-cubic-fixed-image-rank-one.json
 	python3 tools/check_cubic_coordinate_image_mixtures.py --output /tmp/integer-factoring-cubic-coordinate-image-mixtures.json
 	python3 tools/check_cubic_varying_image_escape.py --output /tmp/integer-factoring-cubic-varying-image-escape.json
+	python3 tools/check_cubic_balanced_peels.py --output /tmp/integer-factoring-cubic-balanced-peels.json
 	python3 tools/check_mixed_common_functional_barrier.py --output /tmp/integer-factoring-mixed-common-functional-barrier.json
 	python3 tools/check_noncommutative_crossing_seed_algebra_audit.py
 	python3 tools/check_symplectic_seed_tensor_modules.py
@@ -90,6 +92,8 @@ verify-native-crossings:
 	python3 tools/check_cubic_complement_gf8.py --input evidence/cubic-complement-F8.json --native $(CURDIR)/build/native/cubic-gf8-screen --output build/native/cubic-complement-F8-audit.json
 	python3 tools/explore_cubic_mixed_gf8.py --replay evidence/cubic-mixed-F8.json --output build/native/cubic-mixed-F8-replay.json
 	python3 tools/check_cubic_mixed_gf8.py --native $(CURDIR)/build/native/cubic-gf8-screen --output build/native/cubic-mixed-F8-audit.json
+	$(CXX) -O3 -std=c++20 -Wall -Wextra -Werror tools/search_cubic_pairing_regroupings.cpp -o build/native/cubic-pairing-regroupings
+	python3 tools/explore_cubic_pairing_regroupings.py --native $(CURDIR)/build/native/cubic-pairing-regroupings --replay evidence/cubic-pairing-regroupings.json --output build/native/cubic-pairing-regroupings-audit.json
 
 verify-post-half:
 	python3 tools/check_common_character_compressions.py --output /tmp/integer-factoring-common-compressions.json

@@ -1,0 +1,308 @@
+{
+  "controls": {
+    "nonzero_ring_cases": 110,
+    "positive_crossing_jet_controls": [
+      {
+        "labels": [
+          6,
+          44,
+          44,
+          6
+        ],
+        "original_jet": "0x10001",
+        "quotient_jet": "0x1"
+      },
+      {
+        "labels": [
+          3,
+          12,
+          12,
+          3
+        ],
+        "original_jet": "0x10001",
+        "quotient_jet": "0x1"
+      },
+      {
+        "labels": [
+          51,
+          66,
+          66,
+          51
+        ],
+        "original_jet": "0x10001",
+        "quotient_jet": "0x1"
+      },
+      {
+        "labels": [
+          41,
+          3,
+          3,
+          41
+        ],
+        "original_jet": "0x10001",
+        "quotient_jet": "0x1"
+      },
+      {
+        "labels": [
+          8,
+          56,
+          56,
+          8
+        ],
+        "original_jet": "0x1",
+        "quotient_jet": "0x10001"
+      },
+      {
+        "labels": [
+          8,
+          73,
+          73,
+          8
+        ],
+        "original_jet": "0x10001",
+        "quotient_jet": "0x1"
+      },
+      {
+        "labels": [
+          57,
+          2,
+          2,
+          57
+        ],
+        "original_jet": "0x1",
+        "quotient_jet": "0x10001"
+      },
+      {
+        "labels": [
+          74,
+          21,
+          21,
+          74
+        ],
+        "original_jet": "0x10001",
+        "quotient_jet": "0x1"
+      }
+    ],
+    "ring_cases": 120
+  },
+  "independent_original_kernel_controls": [
+    {
+      "labels": [
+        71,
+        65,
+        71,
+        65
+      ],
+      "quotient_jet": "0x0"
+    },
+    {
+      "labels": [
+        79,
+        83,
+        77,
+        81
+      ],
+      "quotient_jet": "0x0"
+    },
+    {
+      "labels": [
+        71,
+        67,
+        71,
+        67
+      ],
+      "quotient_jet": "0x0"
+    },
+    {
+      "labels": [
+        67,
+        71,
+        65,
+        71
+      ],
+      "quotient_jet": "0x0"
+    },
+    {
+      "labels": [
+        77,
+        79,
+        71,
+        71
+      ],
+      "quotient_jet": "0x0"
+    },
+    {
+      "labels": [
+        75,
+        65,
+        73,
+        67
+      ],
+      "quotient_jet": "0x0"
+    },
+    {
+      "labels": [
+        69,
+        65,
+        71,
+        65
+      ],
+      "quotient_jet": "0x0"
+    },
+    {
+      "labels": [
+        81,
+        83,
+        69,
+        69
+      ],
+      "quotient_jet": "0x0"
+    },
+    {
+      "labels": [
+        69,
+        73,
+        73,
+        69
+      ],
+      "quotient_jet": "0x0"
+    },
+    {
+      "labels": [
+        65,
+        73,
+        75,
+        65
+      ],
+      "quotient_jet": "0x0"
+    },
+    {
+      "labels": [
+        69,
+        77,
+        77,
+        71
+      ],
+      "quotient_jet": "0x0"
+    },
+    {
+      "labels": [
+        71,
+        69,
+        75,
+        73
+      ],
+      "quotient_jet": "0x0"
+    },
+    {
+      "labels": [
+        79,
+        65,
+        79,
+        65
+      ],
+      "quotient_jet": "0x0"
+    },
+    {
+      "labels": [
+        67,
+        83,
+        65,
+        81
+      ],
+      "quotient_jet": "0x0"
+    },
+    {
+      "labels": [
+        75,
+        73,
+        83,
+        83
+      ],
+      "quotient_jet": "0x0"
+    },
+    {
+      "labels": [
+        79,
+        69,
+        71,
+        77
+      ],
+      "quotient_jet": "0x0"
+    },
+    {
+      "labels": [
+        71,
+        79,
+        79,
+        71
+      ],
+      "quotient_jet": "0x40000"
+    },
+    {
+      "labels": [
+        69,
+        77,
+        77,
+        69
+      ],
+      "quotient_jet": "0x40000"
+    },
+    {
+      "labels": [
+        71,
+        77,
+        77,
+        71
+      ],
+      "quotient_jet": "0x40000"
+    }
+  ],
+  "nonzero_next_boundary_entries": [
+    {
+      "Gamma_y1_univariate": "0x4",
+      "labels": [
+        71,
+        79,
+        79,
+        71
+      ]
+    },
+    {
+      "Gamma_y1_univariate": "0x4",
+      "labels": [
+        69,
+        77,
+        77,
+        69
+      ]
+    },
+    {
+      "Gamma_y1_univariate": "0x4",
+      "labels": [
+        71,
+        77,
+        77,
+        71
+      ]
+    }
+  ],
+  "query_counts": {
+    "distinct_physical_jets_computed": 145,
+    "local_valuation_zero_queries": 92253,
+    "physical_query_requests": 92712
+  },
+  "sampled_logical_entries": 2048,
+  "scope": "A bounded exact next-boundary probe; each displayed nonzero coefficient is exact, but no complete rank is inferred from sampling.",
+  "source_sha256": {
+    "check_ward_fan_entry_queries.py": "b658971ef1858f50a913fb1fb20444379304299afce1db4540ef3a5abf56dfba",
+    "check_ward_fan_jet_probe.py": "36c5c52847f38cebc117c3ef19da8d7094d3836d95c726f5e2b6feda9333b656",
+    "check_ward_fan_leading_block.py": "993e813bc354f50f88de418bb687956cbec1fd41ecc80f082aebc8155fa7a390",
+    "check_ward_pfaffian_queries.py": "3a8cae8e26d55ed8dac43b6c761d4690b90c9733e3c1ce8e6d07b1a2816dd1c3",
+    "check_ward_stable_operators.py": "62299105879afa4b9662ee7dcf7daa33c57852f563a0f1b9b72debbff7677794",
+    "complement_shell_tensor.py": "8a37f03f385c64aaac948d2d0754adc684b48786614b3380060004bb936deded",
+    "explore_complement_edge_pencils.py": "730649e439a994ab7722e20faeeab3162ae7fad477c9530c5753e5862d7aaec0",
+    "ward_fan_entry_queries.py": "5389755219e3d03f7aaebf92b0da453cd29c0192de686bc458999f07084dd7dd",
+    "ward_fan_jet_queries.py": "5c25fb5267be0e75d0c2ad50f31f92debd7376695f44ca81967bd165b70a9e2c"
+  }
+}
