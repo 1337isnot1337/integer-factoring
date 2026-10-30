@@ -1,0 +1,13 @@
+{
+  "explicit_pad_cases": 240,
+  "largest_tested_bit_length_parameter_bits": 126560,
+  "negative_controls": [
+    "missing floor-plus-one",
+    "input below top cutoff"
+  ],
+  "prefix_inputs": 1023,
+  "prefix_queries": 9227,
+  "schedule_and_top_boundary_cases": 60,
+  "scope": "finite arithmetic and prefix driver; no large evaluator or asymptotic test",
+  "small_input_convention_cases": 2
+}

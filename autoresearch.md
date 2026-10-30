@@ -3,10 +3,20 @@
 The goal is to improve deterministic integer factoring bounds with precise,
 reproducible evidence. Start with the [README](README.md), the pinned upstream
 revision in [upstream.lock.json](upstream.lock.json), and the
-[verified k6 result](research/verified-k6.md). The k6 variant has a complete
-Lean proof of the logarithmic saving exponent `1/30`. The stronger combined
-rate in the [integration note](research/integration.md) remains a candidate.
-Its generalized evaluator and complete machine proof remain open.
+[half-rate composition](research/half-rate-factoring.md) and
+[verified k6 result](research/verified-k6.md). The complete written composition
+gives exponent `1/2`, using prior source theorems and new table/encoding/cost
+arguments. It is not Lean formalized or externally reviewed. The k6 variant
+retains its complete Lean theorem at exponent `1/30`; its sharper ordinary
+analysis reaches `log(12/11)/log12`. The older combined rate in the
+[integration note](research/integration.md) remains a separate candidate.
+Its generalized evaluator remains open and is not needed by the `1/2` proof.
+
+Before revisiting sparse operators, rectangular layouts, or small crossing
+blocks, read [post-half-directions.md](research/post-half-directions.md).
+It records the proved restrictions and exact counterexamples found while
+trying to improve on `1/2`, with reproducible finite rank checks. No stronger
+exponent is established by those experiments.
 
 1. Check current `main`, the [coordination board](https://github.com/1337isnot1337/integer-factoring/issues/8),
    [open issues](https://github.com/1337isnot1337/integer-factoring/issues),

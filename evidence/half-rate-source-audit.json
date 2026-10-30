@@ -1,0 +1,154 @@
+{
+  "scope": "Pinned source and interface audit for an ordinary composition proof. Not a Lean replay or a full audit of every transitive source theorem.",
+  "new_lean_formalization": false,
+  "fresh_appendix_b_lean_build": false,
+  "sources": [
+    {
+      "repository": "IsaacRudich/SubexponentialDeterministicFactoring",
+      "commit": "c91cc3f4947caca8977e81a5d14244f73b5ae2b1",
+      "files": [
+        {
+          "path": "Challenge.lean",
+          "git_blob_sha": "6d9bf51d75a2b26e2031101b7c09063b4a987463",
+          "sha256": "c3adce9c7a04732442b615e69b3d33960ebc61dcacc5d281797c303d266ae12b"
+        },
+        {
+          "path": "FactoringAux/Gates.lean",
+          "git_blob_sha": "0d996224d908c38be28e9182194461bf534b6002",
+          "sha256": "c93e99043116c086748626882de1694635a3186f8545c713b0a5be80739a450c"
+        },
+        {
+          "path": "FactoringAux/MulNet.lean",
+          "git_blob_sha": "08d0526e5312aa69b90506629bee618cb0ef47e6",
+          "sha256": "5f01187574f1bc08a442a6c9f8fde654a15d25224f95f410f1c3cd85c9df0b67"
+        },
+        {
+          "path": "FactoringAux/MulCount.lean",
+          "git_blob_sha": "c1bab1827c192f745dfe9d98e000d12f66a29bfd",
+          "sha256": "e334f81b9c7558c36e3151287f1d9c3a883a86e35b411e6898a7ac4e18d1074f"
+        },
+        {
+          "path": "FactoringAux/Transform.lean",
+          "git_blob_sha": "c3b9a4568c852682631c3ded28e129708ea7dc77",
+          "sha256": "c62e78903c6ab7c9ca26e201dbcd5c5928a4d2128d0eb47af22c2be0629e7e68"
+        },
+        {
+          "path": "FactoringAux/Cluster.lean",
+          "git_blob_sha": "207969253f4c4592861ae70fde97cf150619f046",
+          "sha256": "71f41e01205b0323aaf7b5996f9ebe4648dcdda9136e2d054e3fc50f32ecc079"
+        },
+        {
+          "path": "FactoringAux/Grouping.lean",
+          "git_blob_sha": "1dad4ee09dae8c0fea9f8ae3eb28c1ec4f51dbc0",
+          "sha256": "0e1c032735c68f7afe5b118b03e678050e733f11b7b6e772aea7116689b1ef53"
+        },
+        {
+          "path": "FactoringAux/EngineGroup.lean",
+          "git_blob_sha": "c60e209f1bb267e624ef502c22db49572fa39e0d",
+          "sha256": "f190262f74b1e92dd2abab68c9d7c3fc48972e78c72cfac6baf2ceea13f83ebe"
+        },
+        {
+          "path": "FactoringAux/EngineTop.lean",
+          "git_blob_sha": "2b3fc772537b1c78774590d312850fa8c75369e2",
+          "sha256": "4060c002fc924a87ae9dbf98942c8bf98a6f315ab92c6b09ee35cd08b5942f8d"
+        },
+        {
+          "path": "FactoringAux/EngineCostTop.lean",
+          "git_blob_sha": "1a4d5e65ddaf2d121dce0e70be131f37934209cf",
+          "sha256": "d1bb268c32416b03950fc9919d69b6eeca086a2fce5a0db684bbcdc17f5d5641"
+        },
+        {
+          "path": "FactoringAux/EngineCostRate.lean",
+          "git_blob_sha": "c7818f725a41fedaa3715114a3b5f7e89eac1bf1",
+          "sha256": "078872b12d5501e6cca45c9bc9cccdd2e66049811faede128c9fe6f78d43f98d"
+        },
+        {
+          "path": "FactoringAux/Net.lean",
+          "git_blob_sha": "d634f2c1f1dc99f756f23c86cddcd90fc452803b",
+          "sha256": "4fc0003f2560e30f5998ac52f65058210a3df6d574382bf68078d7e7ab4b76e6"
+        },
+        {
+          "path": "FactoringAux/Clique.lean",
+          "git_blob_sha": "c6596311da61c28e50d7616dd787b792686d1a44",
+          "sha256": "4a951dc61b8a23418c4e07dfa2e05805fcce656b0dba071fa84cf799d0b79c59"
+        }
+      ]
+    },
+    {
+      "repository": "anthropics/formal-math",
+      "commit": "16a5ce41304fcdaea4e0be7c132e1c361dc26da5",
+      "files": [
+        {
+          "path": "eth/proof/statements/AppRunningTimeStatement.lean",
+          "git_blob_sha": "049fc019ed93b8735f6f001aaf2bf3ab7621480d",
+          "sha256": "07725ec86e202a1b23b7621f46cf6830d42bb9df6e000e1ae9ead7848c6c64ba"
+        },
+        {
+          "path": "eth/proof/statements/AppHalfPiecesStatement.lean",
+          "git_blob_sha": "a0d93a2a86c206325f2a01d58f26a6b7b18d7479",
+          "sha256": "92984acebeb2f2b82b38eadaebe733bb27583e00bb9ee9e11ba0dfe20b409514"
+        },
+        {
+          "path": "eth/proof/statements/LevelsStatement.lean",
+          "git_blob_sha": "54144a7f41ab0e2f88a6cdbd3c56118ee8b85fab",
+          "sha256": "f6cbcce0002470620e840884e097902ba6d70373be226977c329d2c34f1342db"
+        },
+        {
+          "path": "eth/proof/rates/GeneralPieces/Main.lean",
+          "git_blob_sha": "1d1b0911b9034f5295f8ca2c0ed64039f379c591",
+          "sha256": "6e3bc1a617e2a74445d280ddc4374d13d2c4fe5d9f396b812111ed08c586376c"
+        },
+        {
+          "path": "eth/proof/rates/GeneralPieces/ThmRunningTime.lean",
+          "git_blob_sha": "dbdd4893960e43bd3329f0d9ced3f633c9724e7c",
+          "sha256": "a8110b911f978e6de3db4e2711de6856443345ca57ce6109defa6b116b71748d"
+        },
+        {
+          "path": "eth/proof/rates/GeneralPieces/Rec/PartB.lean",
+          "git_blob_sha": "1c029c33b34dc6279d140d52cbcfb14197f6dc7e",
+          "sha256": "69aa82cd09d7ebaca0ee485c4f79b9c1f50f7a7ca196ac83d60fd254d2d4318d"
+        },
+        {
+          "path": "eth/proof/rates/GeneralPieces/Tied/Defs.lean",
+          "git_blob_sha": "27e7ecdd4e0683e79d792e13d458d7ac8eacfff0",
+          "sha256": "d9ab53c080452b07d4bb715c75b17231f6f6a449ed161f74bd7d658484710f36"
+        },
+        {
+          "path": "eth/proof/rates/PaddedDescent/F/Data.lean",
+          "git_blob_sha": "2fae8b07060930f2842b844d0c7754ae29dca76a",
+          "sha256": "08f9ef710e1229529285c9df75e5189efe935555b4f6c12ac1b1cea2497a9f9d"
+        },
+        {
+          "path": "eth/proof/rates/ClauseBound/Alg/Interfaces.lean",
+          "git_blob_sha": "6c1bfd687ffa5c5b9d578dadacbf06426bf19939",
+          "sha256": "e508ae8f484b36e39a8ab3d34ed9238798eb0ad22a72bab8ff3d3b30cf2a9b47"
+        },
+        {
+          "path": "eth/proof/machines/ToTuring/PolyT.lean",
+          "git_blob_sha": "930a8baf352cab6a466081b9bfb846172cbef832",
+          "sha256": "28925257b2c11e91b40c499deea5630b6613b4d8466d3954a09be15923cc67a7"
+        },
+        {
+          "path": "eth/proof/machines/ToTuring/Enc.lean",
+          "git_blob_sha": "79d5b5ee29919b667fbd9c4c13b7df7f1ac67e49",
+          "sha256": "66aa4b980b5c1d3191489a04f6fe5e2243c9a31e6c04c569e95b23ba2d45ba38"
+        },
+        {
+          "path": "eth/proof/machines/ToTuring/TM/Tree.lean",
+          "git_blob_sha": "83de5b643c92ae007a072696609a0ae6b0dc3a76",
+          "sha256": "8aa50f5ff3f0997dc95a30a4a9c0b5a60c020abad31a109d0531e848fdfc8cee"
+        },
+        {
+          "path": "eth/proof/machines/StepMachines/Prog/Chunks.lean",
+          "git_blob_sha": "2ab3e7e9d6bd0bf471d56e322e6cd4f2c800dd19",
+          "sha256": "46efc9425ad15f7043a54780a41c1ee57e283455cbeffa79c1d5b430a3a15863"
+        },
+        {
+          "path": "eth/proof/rates/ClauseBound/Part/Bounds.lean",
+          "git_blob_sha": "5c042a3997fed4f478beb00400d1a054f9529379",
+          "sha256": "292273a74d9897da78e530b95920a8f486b33d7c7f2422bf3d6c064b09c7278d"
+        }
+      ]
+    }
+  ]
+}

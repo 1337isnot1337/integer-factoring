@@ -1,0 +1,180 @@
+{
+  "angle_index": 4,
+  "central_piece_index": 0,
+  "claim": "The literal p_{<=L}(2h) intermediate-span bound fails.",
+  "intermediate_span_dimension": 4,
+  "labels": [
+    [
+      1,
+      1
+    ],
+    [
+      2
+    ]
+  ],
+  "low_mode_output_basis": [
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      2,
+      1,
+      1
+    ],
+    [
+      2,
+      2
+    ]
+  ],
+  "low_mode_output_dimension": 3,
+  "maximum_label_part": 2,
+  "minor": [
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      4,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      -1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      -1
+    ]
+  ],
+  "minor_columns": [
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      4
+    ],
+    [
+      2,
+      1,
+      1
+    ],
+    [
+      2,
+      2
+    ]
+  ],
+  "minor_determinant": 4,
+  "operator_shift": 2,
+  "operators": "Original unprojected Appendix B operators",
+  "program_sha256": "72a78d64a6939ac9bc76e58460fc7bc244db4b036fc04c88e24330f347c4f5e5",
+  "rows": [
+    {
+      "operator_label": [
+        1,
+        1
+      ],
+      "output_terms": [
+        {
+          "coefficient": 1,
+          "partition": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 4,
+          "partition": [
+            3,
+            1
+          ]
+        }
+      ],
+      "state_label": [
+        1,
+        1
+      ]
+    },
+    {
+      "operator_label": [
+        1,
+        1
+      ],
+      "output_terms": [
+        {
+          "coefficient": 1,
+          "partition": [
+            2,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 4,
+          "partition": [
+            4
+          ]
+        }
+      ],
+      "state_label": [
+        2
+      ]
+    },
+    {
+      "operator_label": [
+        2
+      ],
+      "output_terms": [
+        {
+          "coefficient": -1,
+          "partition": [
+            2,
+            1,
+            1
+          ]
+        }
+      ],
+      "state_label": [
+        1,
+        1
+      ]
+    },
+    {
+      "operator_label": [
+        2
+      ],
+      "output_terms": [
+        {
+          "coefficient": -1,
+          "partition": [
+            2,
+            2
+          ]
+        }
+      ],
+      "state_label": [
+        2
+      ]
+    }
+  ],
+  "scope": "Exact finite counterexample; no asymptotic rank lower bound.",
+  "shared_operator_checker_sha256": "915344728fe4208f9dae69d78aefcc75530e3d87cbd922f50b283e93f0fed9cd",
+  "source_commit": "16a5ce41304fcdaea4e0be7c132e1c361dc26da5",
+  "source_repository": "anthropics/formal-math",
+  "weight": 2
+}
