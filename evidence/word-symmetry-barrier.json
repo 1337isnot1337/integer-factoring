@@ -1,6 +1,7 @@
 {
   "status": "exact arithmetic for a characteristic-zero invariant-word obstruction",
   "hook_formula_cases": 11084,
+  "position_class_truncations": 5784,
   "checked_region_minima": [
     {
       "local_matrix_size": 4,
@@ -109,5 +110,5 @@
   ],
   "small_schur_block_rank": 2,
   "small_functional_value": 6,
-  "source_sha256": "d38cdb6f648aba671906ee09717af532c7dfe164552c163264825b7f2aaf2fb6"
+  "source_sha256": "159803b0f2a1ab453c518c935d9d8c3a0cc0286ae35c927aa1f7b50987892a00"
 }

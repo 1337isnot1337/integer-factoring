@@ -127,7 +127,8 @@ preserved by the retained source pair operators;
 `python3 tools/check_frozen_core_leak.py` replays the explicit coefficients.
 A [characteristic-zero word-symmetry barrier](research/word-symmetry-barrier.md)
 excludes the half threshold for full word domains over seeds of sizes 2, 3,
-and 4, even after arbitrary invariant recombinations. It uses one determinant
+and 4, even after arbitrary invariant recombinations. The leading bound also
+holds for permutations within `o(t)` position classes. It uses one determinant
 functional for both cuts and does not apply to characteristic two or arbitrary
 binary restrictions. Replay `python3 tools/check_word_symmetry_barrier.py`.
 

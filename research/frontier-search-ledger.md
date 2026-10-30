@@ -21,7 +21,8 @@ which part of that target; it is not a list of new factoring bounds.
 
 The [characteristic-zero word barrier](word-symmetry-barrier.md) rules out
 full position-invariant word constructions on fixed seeds of sizes 2, 3, and 4
-even with collective recombinations. Its semisimple block argument is not a
+even with collective recombinations, including products of `o(t)` position
+classes. Its semisimple block argument is not a
 characteristic-two theorem.
 
 ## Reliable finite checkpoints

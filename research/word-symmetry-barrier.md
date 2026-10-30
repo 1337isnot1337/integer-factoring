@@ -192,7 +192,42 @@ under permutations of the remaining positions, and neither matrix rank
 increases under restriction. This proves the general-length statement with
 the same leading coefficient.
 
-## 5. Scope relative to other current barriers
+## 5. Permutations within several position classes
+
+The same leading bound holds if the positions are partitioned into `b`
+classes of lengths `t_1,...,t_b` and every summand is invariant under
+`G=product_j S_(t_j)`. The class partition may depend on `t`. It is enough
+that `b=o(t)`; full symmetry across different classes is unnecessary.
+
+In class `j`, keep `m_j=2q floor(t_j/(2q))` positions and fix the rest to
+one common symbol. Fewer than `2qb` positions are lost. On the remaining
+classes, take the tensor product of the determinant functionals above.
+It has value one on the crossing. The representation of the direct product
+`G` decomposes into tensor products of the Schur-Weyl blocks, so any block
+seen by this one common functional has repeated dimension at least
+
+```math
+prod_(j:m_j>0) B_(q,m_j/(2q)).
+```
+
+A summand with nonzero functional therefore has both ranks at least that
+product. This argument uses the product functional on the whole invariant
+tensor; it does not choose potentially different summands class by class.
+
+Stirling's estimate in Section 4 gives the lower logarithmic rank
+
+```math
+H_q t-O_q(b+sum_j log2(t_j+1))
+>=H_q t-O_q(b log2(2+t/b)).
+```
+
+The last step is concavity of the logarithm. If `b=o(t)`, then
+`(b/t) log(2+t/b)` tends to zero, so the error is `o(t)` and the same
+leading restriction `rho>=rho_d` follows. Fixed bounded weight classes
+are one instance of this product symmetry, over characteristic zero.
+A number of classes comparable to `t` is outside this conclusion.
+
+## 6. Scope relative to other current barriers
 
 Type coefficients of a tensor power of any fixed seed are invariant under
 position permutations. The theorem therefore applies to arbitrary collective
@@ -213,7 +248,7 @@ therefore gives no half-threshold exclusion from seed five onward. It also
 makes no claim about restrictions to an arbitrary binary subset of `[d]^t`:
 such a restriction can destroy the required position symmetry.
 
-## 6. Exact arithmetic replay
+## 7. Exact arithmetic replay
 
 ```sh
 python3 tools/check_word_symmetry_barrier.py

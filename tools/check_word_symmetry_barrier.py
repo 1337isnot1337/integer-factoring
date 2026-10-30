@@ -113,8 +113,18 @@ def main():
                 matrix[x][y] = 2 if (x == y or x ^ y == 15) else -1
     functional = matrix[3][3]-2*matrix[3][5]+matrix[3][12]
     assert functional == 6 and exact_rank(matrix) == specht_dimension((2, 2)) == 2
+    class_cases = 0
+    for q in (4, 9, 16):
+        for total in range(1, 129):
+            for classes in range(1, min(total, 16)+1):
+                lengths = [total//classes+int(j < total%classes) for j in range(classes)]
+                kept = [2*q*(length//(2*q)) for length in lengths]
+                assert sum(lengths) == total
+                assert 0 <= total-sum(kept) < 2*q*classes
+                class_cases += 1
     result = {'status': 'exact arithmetic for a characteristic-zero invariant-word obstruction',
-              'hook_formula_cases': hook_cases, 'checked_region_minima': minima,
+              'hook_formula_cases': hook_cases, 'position_class_truncations': class_cases,
+              'checked_region_minima': minima,
               'rho_intervals': intervals, 'small_schur_block_rank': 2,
               'small_functional_value': functional,
               'source_sha256': sha256(Path(__file__).read_bytes()).hexdigest()}
