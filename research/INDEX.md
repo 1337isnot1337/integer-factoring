@@ -14,6 +14,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Exact divisor maxima by next-prime exchanges](exchange-divisor-preprocessing.md): `n^O(log log n)` time and `O(log n log log n)` workspace with cited uniform arithmetic; a practical oracle and separately bounded elementary streamed implementation.
+- [Primorial-weighted pattern enumeration](primorial-weighted-divisor-preprocessing.md): a tight `2^Theta(sqrt(n/log n))` count of all canonical patterns and a smaller-space enumeration; the exchange algorithm skips most patterns.
 - [Simultaneous finite-seed endpoint](simultaneous-seed-endpoint.md): one machine attains an enumerable seed family's limiting time and workspace exponent, with no generation-speed or field-uniformity assumption.
 - [Pieces-to-factoring transfer](pieces-to-factoring.md): conditional crossing-parameter transfer, with full bit-cost accounting.
 - [Scale-one modular transfer](scale-one-modular-transfer.md): fixed-field transfer and machine costs.

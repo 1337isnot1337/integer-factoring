@@ -15,6 +15,8 @@ verify-docs:
 	python3 tools/check_docs.py
 
 verify-constructions:
+	python3 tools/check_primorial_weighted_preprocessing.py
+	python3 tools/check_exchange_divisor_preprocessing.py
 	python3 tools/check_simultaneous_seed_endpoint.py
 	python3 tools/check_homogeneous_central_symbols.py --central 16
 	python3 tools/check_angle_pfaffian.py
