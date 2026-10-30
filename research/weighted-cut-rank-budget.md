@@ -35,6 +35,10 @@ target through **forty-six labels**, over every field. Therefore a
 finite seed passing that particular sufficient criterion needs at
 least forty-seven labels.
 
+The later [residual-budget refinement](weighted-cut-residual-budget.md)
+strengthens this to at least fifty-one labels. The certificate below
+retains its separate forty-six-label scope.
+
 These are restrictions on the finite rank-sum criterion from
 [finite-seed amplification](https://github.com/1337isnot1337/integer-factoring/blob/147652574e7ce1ff68b2c378712846cbf438da34/research/finite-seed-amplification.md). They
 do not prove a lower bound for factoring, exclude different ways of

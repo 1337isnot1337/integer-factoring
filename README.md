@@ -72,10 +72,13 @@ No uniform factoring exponent above `1/2` is proved here. One open approach seek
 The [weighted cut-rank theorem](research/weighted-cut-rank-budget.md) proves
 `sum_i sqrt(r_i*c_i) >= d*(2*H_(2d)-H_d-1)` for crossing decompositions over
 every field. An exact strengthened certificate excludes the finite rank-sum
-amplification criterion through 46 labels, improving the earlier 21-label
-cutoff. This restriction concerns that criterion; it leaves other
+amplification criterion through 46 labels. The
+[residual-budget refinement](research/weighted-cut-residual-budget.md)
+raises the exclusion to 50 labels, improving the earlier 21-label
+cutoff. These restrictions concern that criterion; they leave other
 constructions open and does not change the factoring exponent. Reproduce it
-with `python3 tools/check_weighted_cut_rank_budget.py`.
+with `python3 tools/check_weighted_cut_rank_budget.py` and
+`python3 tools/check_weighted_cut_residual_budget.py`.
 
 See the [research index](research/INDEX.md) for completed arguments, scoped obstructions, and older candidates. Active work can also appear in [open pull requests](https://github.com/1337isnot1337/integer-factoring/pulls); branch research is not automatically a result on `main`.
 
