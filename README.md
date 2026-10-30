@@ -326,6 +326,9 @@ predicate and sufficient unit padding; its padding exponent is bounded by
 `3n/r` for the selected schedule. Its factoring-specific grouping predicate
 and edge-width oracle are polynomial-time, agree with the reference, and
 produce the reference grouping code when given sufficient padding.
+The selected clique row is expressed as a padded sum over explicitly coded
+states, and its gate codes can be decoded in polynomial time. The gate-field
+checks and row summand are still open.
 
 The GitHub Actions workflow runs the reference Lean checks, the k6 rate checks,
 and the Python checks. The Appendix bridge target above is run separately.

@@ -119,6 +119,11 @@ cp "$root/formal-appendix/SelectedRowBridge.lean" "$stage/SelectedRowBridge.lean
 cp "$root/formal-appendix/ExplicitCoding.lean" "$stage/ExplicitCoding.lean"
 cp "$root/formal-appendix/CappedProducts.lean" "$stage/CappedProducts.lean"
 cp "$root/formal-appendix/GateSize.lean" "$stage/GateSize.lean"
+cp "$root/formal-appendix/ClusterSize.lean" "$stage/ClusterSize.lean"
+cp "$root/formal-appendix/SelectedRadix.lean" "$stage/SelectedRadix.lean"
+cp "$root/formal-appendix/SelectedStateDigit.lean" "$stage/SelectedStateDigit.lean"
+cp "$root/formal-appendix/ClusterStateDigit.lean" "$stage/ClusterStateDigit.lean"
+cp "$root/formal-appendix/SelectedGateCode.lean" "$stage/SelectedGateCode.lean"
 lake env bash -c '
   set -euo pipefail
   export LEAN_PATH="$1:$1/factoring/.lake/build/lib/lean:$LEAN_PATH"
@@ -180,9 +185,14 @@ lake env bash -c '
   lean --root="$1" -o "$1/PaddedRowSum.olean" "$1/PaddedRowSum.lean"
   lean --root="$1" -o "$1/RowSumBridge.olean" "$1/RowSumBridge.lean"
   lean --root="$1" -o "$1/SelectedRowBridge.olean" "$1/SelectedRowBridge.lean"
-  lean --root="$1" "$1/ExplicitCoding.lean"
-  lean --root="$1" "$1/CappedProducts.lean"
-  lean --root="$1" "$1/GateSize.lean"
+  lean --root="$1" -o "$1/ExplicitCoding.olean" "$1/ExplicitCoding.lean"
+  lean --root="$1" -o "$1/CappedProducts.olean" "$1/CappedProducts.lean"
+  lean --root="$1" -o "$1/GateSize.olean" "$1/GateSize.lean"
+  lean --root="$1" -o "$1/ClusterSize.olean" "$1/ClusterSize.lean"
+  lean --root="$1" -o "$1/SelectedRadix.olean" "$1/SelectedRadix.lean"
+  lean --root="$1" -o "$1/SelectedStateDigit.olean" "$1/SelectedStateDigit.lean"
+  lean --root="$1" -o "$1/ClusterStateDigit.olean" "$1/ClusterStateDigit.lean"
+  lean --root="$1" "$1/SelectedGateCode.lean"
 ' _ "$stage" > "$logs/bridge.log" 2>&1
 python3 - "$logs/bridge.log" <<'PY'
 import re
@@ -228,7 +238,9 @@ selected_group_correct = "IntegerFactoring.HalfAppendix.selectedCode_eq_topGroup
 row_bridge = "IntegerFactoring.HalfAppendix.selected_explicit_row_as_padded_sum"
 digit_poly = "IntegerFactoring.HalfAppendix.cappedDigit_polyT"
 gate_size = "IntegerFactoring.HalfAppendix.numericGateSize_eq"
-if "error:" in text or "sorryAx" in text or not {expected, count_bridge, table, clique, top, selected, row, fast, width, states, state_rate, entry, explicit, pad_rate, pure_factor, level_rate, written_poly, prefix_steps, reference_spec, certified_prefix, search_poly, machine, group_search, group_cost, level_poly, machine_rate, size_poly, params_poly, master_cost, group_sizes, group_predicate, group_correct, selected_group_poly, selected_group_correct, row_bridge, digit_poly, gate_size} <= {name for name, _ in reports}:
+gate_code = "IntegerFactoring.HalfAppendix.selectedGateCode_polyT"
+gate_code_correct = "IntegerFactoring.HalfAppendix.selectedGateCode_eq"
+if "error:" in text or "sorryAx" in text or not {expected, count_bridge, table, clique, top, selected, row, fast, width, states, state_rate, entry, explicit, pad_rate, pure_factor, level_rate, written_poly, prefix_steps, reference_spec, certified_prefix, search_poly, machine, group_search, group_cost, level_poly, machine_rate, size_poly, params_poly, master_cost, group_sizes, group_predicate, group_correct, selected_group_poly, selected_group_correct, row_bridge, digit_poly, gate_size, gate_code, gate_code_correct} <= {name for name, _ in reports}:
     raise SystemExit("Missing or failed Appendix bridge axiom reports")
 allowed = {"propext", "Classical.choice", "Quot.sound"}
 for name, axioms in reports:
