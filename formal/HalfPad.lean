@@ -54,8 +54,10 @@ theorem need_le_padExponent (P lam B C r need : ℕ) (hr : 0 < r)
   have hterm : e * (P : ℝ) ^ 2 * lam ≤ ((P ^ 2 * lam : ℕ) : ℝ) / r := by
     have h := mul_le_mul_of_nonneg_right he
       (mul_nonneg (sq_nonneg (P : ℝ)) (Nat.cast_nonneg lam))
-    push_cast
-    convert h using 1 <;> ring
+    calc
+      e * (P : ℝ) ^ 2 * lam = e * ((P : ℝ) ^ 2 * lam) := by ring
+      _ ≤ 1 / (r : ℝ) * ((P : ℝ) ^ 2 * lam) := h
+      _ = ((P ^ 2 * lam : ℕ) : ℝ) / r := by push_cast; ring
   have hterm2 : (C : ℝ) * (P : ℝ) ^ 2 * Real.logb 2 (P * (lam + B)) ≤
       (C : ℝ) * (P : ℝ) ^ 2 * (Nat.log 2 (P * (lam + B)) + 1 : ℕ) := by
     have hlog' : Real.logb 2 ((P : ℝ) * (lam + B)) ≤
