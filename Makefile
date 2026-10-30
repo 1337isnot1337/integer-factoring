@@ -54,6 +54,7 @@ verify-further:
 	python3 tools/check_weyl_alternate_algebra.py
 	python3 tools/check_eight_feature_monoid.py
 	python3 tools/check_trace_bilinear_kernel.py
+	python3 tools/check_polynomial_shear_probe.py --output /tmp/integer-factoring-polynomial-shear-verification.json
 
 verify-energy-full:
 	python3 tools/check_weighted_energy.py --full
@@ -71,6 +72,8 @@ verify-search-native:
 	python3 tools/check_odd_weyl_spectrum.py
 	python3 tools/check_mismatched_weyl_spectrum.py
 	python3 tools/check_trace_kernel_support.py
+	python3 tools/check_trace_weight_restriction.py --output /tmp/integer-factoring-trace-restriction.json
+	python3 tools/check_partial_mode_sweep.py
 
 verify-weyl-orbit:
 	python3 tools/check_weyl_rank_one_ideal.py
