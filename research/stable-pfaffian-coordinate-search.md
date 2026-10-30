@@ -92,6 +92,44 @@ None meets the sufficient finite-seed threshold. This bounded result does
 not exclude other fields, nonlinear pencils, different coefficient
 decompositions, or restricted codes.
 
+## Larger centered-grade records
+
+The standard centered chart was also evaluated at 29 completed grade
+choices across `P=16,32,64,128`. Every completed case includes the whole
+bivariate coefficient profile and all six ancillary estimates. The
+table gives the best upper bound among the completed grades at each size.
+
+| `P` | Completed grades | Best completed grade `L` | Labels | Upper `rho` | Largest explicit block |
+|---:|---:|---:|---:|---:|---:|
+| 16 | 5 | 8 | 10,518,300 | 0.82601382 | 8 |
+| 32 | 8 | 15 | 159,518,999,862,720 | 0.80010006 | 16 |
+| 64 | 9 | 30 | approximately `1.5422e29` | 0.78369392 | 56 |
+| 128 | 7 | 61 | approximately `6.5204e59` | 0.77380906 | 240 |
+
+The `P=128,L=61` record includes all 1,953 coefficient bounds. Exact
+integer label counts, costs, complete-profile digests, and source hashes
+are stored in
+[stable-pfaffian-dense-grade-screen.json](../evidence/stable-pfaffian-dense-grade-screen.json).
+Its status is explicitly `partial_grid`: the proposed cases `(128,77)`
+and `(128,83)` were not completed. No result is claimed for those cases.
+The completed values are upper bounds from the stable evaluator, not
+measurements of the actual restricted ranks or global optima over grades.
+
+The [grid driver](../tools/screen_stable_pfaffian_bounds.py) reproduces
+the specified grade schedule. The smaller completed grids can be run with:
+
+```sh
+python tools/screen_stable_pfaffian_bounds.py --pairs 16 32 64 \
+  --output /tmp/stable-pfaffian-dense-grades.json
+```
+
+Including `--pairs 128` requests all nine proposed grades at that size,
+including the two uncompleted cases. The
+[protected-block envelope](stable-boundary-envelope.md) describes the
+asymptotic limitation of this full-grade bound. The
+[operator-preserving Ward interface](ward-stable-operator-interface.md)
+retains information absent from these complete-rectangle calculations.
+
 ## Reproduce
 
 ~~~bash

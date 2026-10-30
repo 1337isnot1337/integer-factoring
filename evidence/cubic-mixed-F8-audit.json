@@ -1,0 +1,211 @@
+{
+  "affordable_projective_points": 10452,
+  "all_five_affordable_spans_are_the_E_coefficient_hyperplane": true,
+  "all_recorded_F8_spaces_fail_seed_criterion": true,
+  "configurations": [
+    {
+      "affordable_points": 99,
+      "affordable_span_dimension": 6,
+      "contains_all_scalar_multiples_over_extensions": true,
+      "contains_zero_section": true,
+      "dimension": 7,
+      "name": "cyclic_shift_1_and_z",
+      "projective_vectors": 299593,
+      "raw_directions_in_selected_basis": [
+        1,
+        8,
+        64,
+        512,
+        520,
+        1,
+        4096,
+        32768,
+        262144,
+        2080
+      ],
+      "separating_functional": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "zero_section_coordinates": [
+        1,
+        8216,
+        65728,
+        525824,
+        0
+      ]
+    },
+    {
+      "affordable_points": 99,
+      "affordable_span_dimension": 6,
+      "contains_all_scalar_multiples_over_extensions": true,
+      "contains_zero_section": true,
+      "dimension": 7,
+      "name": "cyclic_shift_z_and_z_squared",
+      "projective_vectors": 299593,
+      "raw_directions_in_selected_basis": [
+        1,
+        8,
+        64,
+        512,
+        4096,
+        1,
+        32768,
+        262144,
+        39464,
+        16384
+      ],
+      "separating_functional": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "zero_section_coordinates": [
+        1,
+        65560,
+        524480,
+        74760,
+        0
+      ]
+    },
+    {
+      "affordable_points": 283,
+      "affordable_span_dimension": 7,
+      "contains_all_scalar_multiples_over_extensions": true,
+      "contains_zero_section": true,
+      "dimension": 8,
+      "name": "jordan_shift_1_and_z",
+      "projective_vectors": 2396745,
+      "raw_directions_in_selected_basis": [
+        1,
+        8,
+        64,
+        512,
+        4096,
+        1,
+        32768,
+        262144,
+        2097152,
+        16384
+      ],
+      "separating_functional": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "zero_section_coordinates": [
+        1,
+        65560,
+        524480,
+        4195840,
+        0
+      ]
+    },
+    {
+      "affordable_points": 8786,
+      "affordable_span_dimension": 7,
+      "contains_all_scalar_multiples_over_extensions": true,
+      "contains_zero_section": true,
+      "dimension": 8,
+      "name": "dense_rank_one_1_and_z",
+      "projective_vectors": 2396745,
+      "raw_directions_in_selected_basis": [
+        1,
+        8,
+        64,
+        512,
+        4096,
+        1,
+        32768,
+        262144,
+        2097152,
+        16384
+      ],
+      "separating_functional": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "zero_section_coordinates": [
+        1,
+        65560,
+        524480,
+        4195840,
+        0
+      ]
+    },
+    {
+      "affordable_points": 1185,
+      "affordable_span_dimension": 6,
+      "contains_all_scalar_multiples_over_extensions": false,
+      "contains_zero_section": false,
+      "dimension": 7,
+      "name": "two_distinct_changed_output_rows",
+      "projective_vectors": 299593,
+      "raw_directions_in_selected_basis": [
+        1,
+        8,
+        64,
+        512,
+        4096,
+        1,
+        32768,
+        262144,
+        295496,
+        299080
+      ],
+      "separating_functional": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "zero_section_coordinates": [
+        1,
+        null,
+        null,
+        4608,
+        0
+      ]
+    }
+  ],
+  "cyclic_configurations_have_the_same_full_space": true,
+  "deterministic_native_control_replays": 1,
+  "input_sha256": "75727baea951ba74f493ea34b70286e7e377c718bbb5fddf9b8cad454b1c843d",
+  "literal_physical_coefficient_entries_checked": 24010,
+  "no_claim_about_ranks_over_field_extensions": true,
+  "projective_vectors_tested": 5692269,
+  "second_cyclic_basis_in_first": [
+    1,
+    4096,
+    32768,
+    262144,
+    2080,
+    20512,
+    164096
+  ],
+  "source_independent_rank_vectors": 10512,
+  "source_sha256": "443217b72b11e7afedff7583a0a3568ed3723d61a916b4565833caabc8abda97"
+}

@@ -79,6 +79,8 @@ verify-native-crossings:
 	$(CXX) -O3 -std=c++20 -Wall -Wextra -Werror tools/screen_cubic_gf8.cpp -o build/native/cubic-gf8-screen
 	python3 tools/explore_cubic_complement_gf8.py --replay evidence/cubic-complement-F8.json --output build/native/cubic-complement-F8-replay.json
 	python3 tools/check_cubic_complement_gf8.py --input evidence/cubic-complement-F8.json --native $(CURDIR)/build/native/cubic-gf8-screen --output build/native/cubic-complement-F8-audit.json
+	python3 tools/explore_cubic_mixed_gf8.py --replay evidence/cubic-mixed-F8.json --output build/native/cubic-mixed-F8-replay.json
+	python3 tools/check_cubic_mixed_gf8.py --native $(CURDIR)/build/native/cubic-gf8-screen --output build/native/cubic-mixed-F8-audit.json
 
 verify-post-half:
 	python3 tools/check_common_character_compressions.py --output /tmp/integer-factoring-common-compressions.json
@@ -86,6 +88,7 @@ verify-post-half:
 	python3 tools/assemble_two_even_site_cores.py --pairs 6 --screen evidence/two-even-site-core-P6-F2.jsonl --output /tmp/integer-factoring-two-even-P6.json
 	python3 tools/check_two_even_site_compressions.py --output /tmp/integer-factoring-two-even-P6-compressions.json
 	python3 tools/check_two_even_site_jordan_compressions.py --output /tmp/integer-factoring-two-even-P7-compressions.json
+	python3 tools/check_two_even_site_P8_compressions.py --output /tmp/integer-factoring-two-even-P8-compressions.json
 	python3 tools/check_half_piece_ranks.py --full
 	python3 tools/check_half_projection.py
 	python3 tools/check_half_restricted_labels.py
