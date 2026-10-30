@@ -44,6 +44,7 @@ make verify               # Python unit tests, exact certificates, and local lin
 make verify-frontier      # Focused research certificates
 make verify-post-half     # Larger optional rank tests
 make verify-docs          # Local Markdown-link check
+make verify-schur-fermion # Complete Schur entry formulas and exact comparisons
 ```
 
 The Python checks use Python 3 and its standard library. Some optional checks use NumPy for speed.
@@ -72,6 +73,13 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 ## Current research frontier
 
 No uniform factoring exponent above `1/2` is proved here. One open approach seeks effective crossing pieces with total rank width `4*rho*lambda + O(log lambda)` for `rho < 1/sqrt(2)`. A suitable family could improve the evaluator bound, but finite rank improvements alone do not establish that inequality.
+
+The [complete Schur entry algorithm](research/schur-fermion-queries.md) computes
+individual modes with determinants of order at most `3 sqrt(H)`, and full
+crossing coefficients with determinants of order at most `4 sqrt(h)`. It works
+directly in finite characteristic and removes factorial-precision conversion
+from these queries. Its ordinary proof and independent exact checks improve
+the available construction tools; no stronger rank bound is claimed.
 
 See the [research index](research/INDEX.md) for completed arguments, scoped obstructions, and older candidates. Active work can also appear in [open pull requests](https://github.com/1337isnot1337/integer-factoring/pulls); branch research is not automatically a result on `main`.
 
