@@ -107,6 +107,8 @@ The [matrix-valued seed interface](research/commuting-halves-matrix-seed-transfe
 
 The [channel-walk extension](research/twisted-channel-walk-transfer.md) permits input-independent scalar commutation phases and discards channel words containing certified zero products. Reciprocal piece weights give a spectral bound with exact rational certificates. A small noncommutative example reduces its supplied amplification base from 12 to 8; that example is still worse than the direct scalar crossing and establishes no score gain. The theorem gives a concrete additional condition to search for, with all-input identity and negative-phase checks in `make verify-further`.
 
+[Integer flow dual certificates](research/channel-flow-dual-certificates.md) give exact limits on this spectral optimization method. They prove that eight is already the best weighted-supervector base for the toy channel graph, and recover the ordinary rank-sum optimum in a complete-graph example. A disconnected-graph control demonstrates that these certificates do not lower-bound true matching-type counts or tensor ranks. The exact rational and integer checks are included in `make verify-further`.
+
 ## Contribution and attribution
 
 Start with [CONTRIBUTING.md](CONTRIBUTING.md) and [autoresearch.md](autoresearch.md). Coordinate new research through [issue #8](https://github.com/1337isnot1337/integer-factoring/issues/8). Document source revisions, proof status, reproduction commands, and remaining gaps.
