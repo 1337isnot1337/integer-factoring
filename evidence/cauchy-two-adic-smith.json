@@ -1,0 +1,154 @@
+{
+  "status": "PASS",
+  "exact_rational_identity_entries": 1281,
+  "exact_minors": 2769,
+  "minor_profiles": [
+    {
+      "odd_shift": -5,
+      "determinantal_valuations": [
+        0,
+        2,
+        8,
+        16,
+        30,
+        46
+      ]
+    },
+    {
+      "odd_shift": 1,
+      "determinantal_valuations": [
+        0,
+        2,
+        8,
+        16,
+        30,
+        46
+      ]
+    },
+    {
+      "odd_shift": 11,
+      "determinantal_valuations": [
+        0,
+        2,
+        8,
+        16,
+        30,
+        46
+      ]
+    }
+  ],
+  "independent_chain_ring_profiles": 126,
+  "modular_factorization_entries": 16590,
+  "literal_tuple_count_comparisons": 80,
+  "lower_entropy_box_checks": 1536,
+  "initial_smith_exponents": [
+    {
+      "index": 0,
+      "valuation": 0
+    },
+    {
+      "index": 1,
+      "valuation": 2
+    },
+    {
+      "index": 2,
+      "valuation": 6
+    },
+    {
+      "index": 3,
+      "valuation": 8
+    },
+    {
+      "index": 4,
+      "valuation": 14
+    },
+    {
+      "index": 5,
+      "valuation": 16
+    },
+    {
+      "index": 6,
+      "valuation": 20
+    },
+    {
+      "index": 7,
+      "valuation": 22
+    },
+    {
+      "index": 8,
+      "valuation": 30
+    },
+    {
+      "index": 9,
+      "valuation": 32
+    },
+    {
+      "index": 10,
+      "valuation": 36
+    },
+    {
+      "index": 11,
+      "valuation": 38
+    },
+    {
+      "index": 12,
+      "valuation": 44
+    },
+    {
+      "index": 13,
+      "valuation": 46
+    },
+    {
+      "index": 14,
+      "valuation": 50
+    },
+    {
+      "index": 15,
+      "valuation": 52
+    },
+    {
+      "index": 16,
+      "valuation": 62
+    }
+  ],
+  "entropy_examples": [
+    {
+      "dimension": 16,
+      "copies": 1,
+      "u": 4,
+      "base_valuation": 4,
+      "budget": 64,
+      "weighted_monomials": 1849,
+      "log2_weighted_monomials": 10.852529509404196
+    },
+    {
+      "dimension": 32,
+      "copies": 1,
+      "u": 4,
+      "base_valuation": 5,
+      "budget": 256,
+      "weighted_monomials": 22721854,
+      "log2_weighted_monomials": 24.43757722121429
+    },
+    {
+      "dimension": 64,
+      "copies": 1,
+      "u": 8,
+      "base_valuation": 6,
+      "budget": 512,
+      "weighted_monomials": 53544069899,
+      "log2_weighted_monomials": 35.64000775165408
+    },
+    {
+      "dimension": 64,
+      "copies": 2,
+      "u": 8,
+      "base_valuation": 6,
+      "budget": 1024,
+      "weighted_monomials": 26515454409556242450083,
+      "log2_weighted_monomials": 74.48925156045078
+    }
+  ],
+  "seconds": 0.822,
+  "scope": "Exact finite checks support the accompanying all-size proof; no factoring exponent improvement is claimed."
+}

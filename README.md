@@ -28,6 +28,7 @@ The composition uses the existing clique evaluator from [Anthropic's Appendix B]
 | Saving exponent `1/30` for the k6 machine | **Lean-verified** | [Proof](research/verified-k6.md), [machine theorem](variants/k6/FactoringK6/Certified.lean) |
 | Sharper k6 saving `log(12/11)/log(12) > 1/29` | Ordinary proof, not Lean-verified at this rate | [Rate derivation](research/k6-sharp-rate.md) |
 | Saving exponent above `1/2` | **Not established** | [Research index](research/INDEX.md) |
+| Exact two-adic Cauchy channels and Hermite precision witness | Ordinary exact theorems for the specified evaluator components; factoring score unchanged | [Cauchy factorization](research/cauchy-two-adic-smith.md), [precision witness](research/tapered-hermite-precision-witness.md) |
 | Rational crossing paths in every prime characteristic | Ordinary exact construction with rational valuation slopes; tested families do not improve the score | [Arithmetic initial forms](research/arithmetic-crossing-initial-forms.md) |
 | Exact maximum divisor-count preprocessing | Ordinary proof: `n^O(log log n)` time and `O(log n log log n)` workspace; factoring score unchanged | [Next-prime exchange algorithm](research/exchange-divisor-preprocessing.md), [complete-pattern count](research/primorial-weighted-divisor-preprocessing.md) |
 | Simultaneous time and workspace at an enumerable seed endpoint | Ordinary conditional theorem; no larger numerical exponent | [Bounded selection and direct type channels](research/simultaneous-seed-endpoint.md) |
@@ -84,6 +85,8 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 ## Current research frontier
 
 No uniform factoring exponent above `1/2` is proved here. One open approach seeks effective crossing pieces with total rank width `4*rho*lambda + O(log lambda)` for `rho < 1/sqrt(2)`. A suitable family could improve the evaluator bound, but finite rank improvements alone do not establish that inequality.
+
+The independent polynomial-separation route now has [explicit two-adic Cauchy channels](research/cauchy-two-adic-smith.md) with exact Smith exponents `4k-2 popcount(k)`. Complete same-tile blocks have this profile; it is not asserted for the entire crossing operator. A separate [tapered Hermite witness](research/tapered-hermite-precision-witness.md) proves that the source interpolation problem cannot uniformly reduce its `MD/u` precision scale while retaining the same general polynomial class and data. Exact channel compression still leaves a square-root weighted-partition scale. A stronger exponent needs additional contraction structure or a changed deformation.
 
 [Arithmetic initial forms](research/arithmetic-crossing-initial-forms.md) now convert rational crossing paths into finite-field paths even when their normalizing factorial vanishes modulo the chosen prime. Rational diagonal weights and fractional valuation slopes are handled exactly. Independent highest-weight and Toeplitz-rank controls verify the recorded examples. The tested higher-spin families miss the local Smith threshold; this is a new candidate generator, with no stronger factoring exponent.
 

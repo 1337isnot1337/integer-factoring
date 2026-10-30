@@ -14,6 +14,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Exact two-adic Cauchy channels](cauchy-two-adic-smith.md): explicit integral LDU factors, exact Smith exponents, and the remaining square-root mode-enumeration scale.
+- [Tapered Hermite precision witness](tapered-hermite-precision-witness.md): one admissible polynomial proves the `MD/u` scale necessary for the source interpolation class and grid; special contraction polynomials remain outside the claim.
 - [Arithmetic initial forms of rational crossing paths](arithmetic-crossing-initial-forms.md): exact reductions in every prime characteristic with rational weights and fractional slopes; independent source and Smith-profile controls, with no stronger exponent.
 - [Exact divisor maxima by next-prime exchanges](exchange-divisor-preprocessing.md): `n^O(log log n)` time and `O(log n log log n)` workspace with cited uniform arithmetic; a practical oracle and separately bounded elementary streamed implementation.
 - [Primorial-weighted pattern enumeration](primorial-weighted-divisor-preprocessing.md): a tight `2^Theta(sqrt(n/log n))` count of all canonical patterns and a smaller-space enumeration; the exchange algorithm skips most patterns.
