@@ -131,6 +131,13 @@ Structured binary-label tests and larger finite cases do not establish a
 better asymptotic coefficient. Run `python3 tools/check_modular_recombination.py`
 for the default checks, or add `--full` for the larger search.
 
+A [polynomial Pfaffian family](research/hamming-pfaffian.md) with bounded
+bit weights has degree `O(lambda)`. Its entire symmetry span can therefore
+be optimized in `2^O(lambda)` construction time, while selecting only
+`O(lambda)` pieces. The exact small all-one optima are rank products
+4, 36, and 256 at widths 1, 2, and 3. A uniform improved width bound remains
+open. Run `python3 tools/check_hamming_pfaffian.py` or add `--full`.
+
 A [reflected particle-hole identity](research/modular-particle-hole.md)
 gives an exact compression rule at every binary mode-block size. Above half
 occupancy, a known polynomial divides every complete profile; removing it
