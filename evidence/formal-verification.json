@@ -28,6 +28,13 @@
       "result": "passed",
       "axiom_reports": 9,
       "log": "evidence/lean-explicit-chain.log"
+    },
+    {
+      "path": "formal/ModularPositivity.lean",
+      "sha256": "d76acfc3dd732d6ad65489aa66305b6c212dafd96abc3357d93ca02ac8fbfbd8",
+      "result": "passed",
+      "axiom_reports": 3,
+      "log": "evidence/lean-modular-positivity.log"
     }
   ],
   "checked_declarations": [
@@ -182,7 +189,31 @@
         "Quot.sound",
         "propext"
       ]
+    },
+    {
+      "declaration": "Factoring.Improvements.scaled_positive_iff_residue_difference",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.Improvements.modular_budget_small",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.Improvements.scaled_positive_from_bit_budgets",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
     }
   ],
-  "scope": "Stronger finite grouping and signed complement lemmas; an explicit all-level envelope and complete time bound for the unchanged reference factoring machine. The sharper logarithmic-power asymptotics and modified factoring machine are not Lean verified."
+  "scope": "Stronger finite grouping and signed complement lemmas; an explicit all-level envelope and complete time bound for the unchanged reference factoring machine. The sharper logarithmic-power asymptotics and modified factoring machine are not Lean verified. The scaled modular positivity and bit-budget interface is kernel-checked under its stated hypotheses."
 }

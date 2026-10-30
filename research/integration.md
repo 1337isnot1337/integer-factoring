@@ -260,6 +260,11 @@ unknown divisor count nor construction of the enormous integer `H`.
 Since the moduli
 extend only to `2M`, this adds a polynomial factor, not `2^M` iterations.
 
+The [modular positivity lemma](modular-positivity.md) kernel-checks the
+residue comparison and the bit-budget implication without assuming `H` is
+invertible. Its hypotheses still need to be connected to the actual changed
+evaluator and its proved multiplier bound.
+
 ## 5. Cost accounting for the abstract evaluator
 
 The following estimates include the grouping search and choice enumeration.

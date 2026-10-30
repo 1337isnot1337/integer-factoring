@@ -1,0 +1,5 @@
+'Factoring.Improvements.scaled_positive_iff_residue_difference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Factoring.Improvements.modular_budget_small' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Factoring.Improvements.scaled_positive_from_bit_budgets' depends on axioms: [propext, Classical.choice, Quot.sound]

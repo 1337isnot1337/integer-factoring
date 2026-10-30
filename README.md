@@ -39,6 +39,7 @@ checked local lemmas establish only their stated scope.
 [Recurrence and costs](research/recurrence.md) ·
 [Grouping proof](research/grouping-improvement.md) ·
 [Crossing construction](research/crossing-compression.md) ·
+[Modular positivity](research/modular-positivity.md) ·
 [Formal verification evidence](evidence/formal-verification.json)
 
 ## Baseline
@@ -63,6 +64,7 @@ of an improved factoring machine.
 | Grouping with independent accuracy | `g = O(D^2 K^2 log K)` | Matching decomposition, Holder's inequality, and an explicit deterministic search |
 | Formally checked grouping improvement | `g > K^2 + 4D^2K^4`; original accuracy works at `g = 5K^6` | Lean kernel checked, including network value preservation |
 | Smaller crossing factorization | 56 integer channels instead of a trivial 64-channel factor | Explicit integer factors and exhaustive finite verification |
+| Scaled modular positivity | Compare residues up to `2(n+S+4)` when `H <= 2^S` and the desired count is at most `2^n` | Lean-checked interface; evaluator and multiplier bounds remain to be connected |
 | Grouping-only rate target | `alpha = log(12/11)/log(4) = 0.0627654410...` | New parameter schedule and runtime analysis; modified machine not Lean verified |
 | Combined rate target | `alpha = log(1/rho)/log(4) = 0.0755104681...`, `rho = (8+log_2(7))/12` | Combined mathematical construction; full formal integration remains open |
 
