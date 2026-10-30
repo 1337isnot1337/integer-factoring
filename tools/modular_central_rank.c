@@ -137,9 +137,82 @@ static int kernel_pair_rank(uint64_t **left, int nl, uint64_t **right, int nr, i
     }
     return rank;
 }
+static int binary_prefix_rank(FILE *f, Partition *labels, int d, Partition *states, int q) {
+    int selected;
+    fscanf(f, "%d", &selected);
+    int *counts = calloc(selected, sizeof(int));
+    int **dual = calloc(selected, sizeof(int *));
+    for (int i = 0; i < selected; i++) {
+        fscanf(f, "%d", &counts[i]);
+        dual[i] = calloc(counts[i], sizeof(int));
+        for (int j = 0; j < counts[i]; j++)
+            fscanf(f, "%d", &dual[i][j]);
+    }
+    int channels = q + 1, words = (channels + 63) / 64;
+    uint64_t *left = calloc(d * words, 8), *right = calloc(d * words, 8),
+             *scratch = calloc(words, 8);
+    uint64_t **basis[4];
+    int ranks[4] = {0};
+    for (int k = 0; k < 4; k++)
+        basis[k] = calloc(channels, sizeof(uint64_t *));
+    clock_t begun = clock();
+    Partition empty = {0};
+    for (int y = 0; y < selected; y++) {
+        memset(left, 0, d * words * 8);
+        memset(right, 0, d * words * 8);
+        for (int a = 0; a < d; a++) {
+            uint64_t *l = left + a * words, *r = right + a * words;
+            for (int j = 0; j < q; j++) {
+                l[j / 64] |= (uint64_t)coefficient_two(labels[a], states[j], labels[y])
+                             << (j % 64);
+                r[j / 64] |= (uint64_t)coefficient_two(labels[a], labels[y], states[j])
+                             << (j % 64);
+            }
+            l[q / 64] |= (uint64_t)coefficient_two(labels[a], empty, labels[y]) << (q % 64);
+            r[q / 64] |= (uint64_t)(a == y) << (q % 64);
+        }
+        for (int s = 0; s < selected; s++) {
+            memcpy(scratch, right + s * words, words * 8);
+            ranks[1] += insert_basis(scratch, basis[1], words);
+            memcpy(scratch, left + s * words, words * 8);
+            ranks[3] += insert_basis(scratch, basis[3], words);
+            memset(scratch, 0, words * 8);
+            for (int i = 0; i < counts[s]; i++) {
+                uint64_t *l = left + dual[s][i] * words;
+                for (int j = 0; j < words; j++)
+                    scratch[j] ^= l[j];
+            }
+            ranks[0] += insert_basis(scratch, basis[0], words);
+            memset(scratch, 0, words * 8);
+            for (int i = 0; i < counts[s]; i++) {
+                uint64_t *r = right + dual[s][i] * words;
+                for (int j = 0; j < words; j++)
+                    scratch[j] ^= r[j];
+            }
+            ranks[2] += insert_basis(scratch, basis[2], words);
+        }
+        if ((y + 1) % 16 == 0 || y + 1 == selected) {
+            printf("{\"states\":%d,\"selected\":%d,\"ranks\":[%d,%d,%d,%d],\"cpu_seconds\":%."
+                   "2f}\n",
+                   y + 1, selected, ranks[0], ranks[1], ranks[2], ranks[3],
+                   (double)(clock() - begun) / CLOCKS_PER_SEC);
+            fflush(stdout);
+        }
+    }
+    for (int orientation = 0; orientation < 2; orientation++) {
+        int a = 2 * orientation, b = a + 1, ka, kb;
+        uint64_t **k1 = orthogonal_complement(basis[a], channels, words, &ka),
+                 **k2 = orthogonal_complement(basis[b], channels, words, &kb);
+        int r = kernel_pair_rank(k1, ka, k2, kb, words);
+        printf("{\"orientation\":%d,\"kernel_dimensions\":[%d,%d],\"kernel_pair_rank\":%d,"
+               "\"complete_rank\":%d}\n",
+               orientation, ka, kb, r, ranks[a] + ranks[b] - channels + r);
+    }
+    return 0;
+}
 int main(int argc, char **argv) {
     if (argc < 2 || argc > 3) {
-        fprintf(stderr, "usage: %s INPUT [--coefficients]\n", argv[0]);
+        fprintf(stderr, "usage: %s INPUT [--coefficients|--binary-prefix]\n", argv[0]);
         return 2;
     }
     FILE *f = fopen(argv[1], "r");
@@ -148,6 +221,11 @@ int main(int argc, char **argv) {
     int d, q;
     Partition *lab = read_parts(f, &d);
     Partition *mid = read_parts(f, &q);
+    if (argc == 3 && !strcmp(argv[2], "--binary-prefix")) {
+        int status = binary_prefix_rank(f, lab, d, mid, q);
+        fclose(f);
+        return status;
+    }
     fclose(f);
     if (argc == 3) {
         if (strcmp(argv[2], "--coefficients"))

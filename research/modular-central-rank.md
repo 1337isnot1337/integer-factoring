@@ -149,3 +149,50 @@ finite table alone does not answer it. A construction with a better profile
 can also use different homogeneous duals, different labels, or complete
 piece recombinations, as the [recombination search](modular-recombination.md)
 illustrates on a different family.
+
+## 5. Exact binary label restrictions with the actual duals
+
+The full-domain ranks do not imply ranks on a smaller binary domain.
+For an explicit restriction, enumerate `L_h` as ascending part tuples in
+lexicographic order and retain the first `B=2^floor(log2 D)` labels.
+Use the corresponding rows of the **full** homogeneous Gram inverse for
+the operator duals. This is a uniform, explicit choice of a modular binary
+label family; it is not the original characteristic-zero source's separate
+label convention. Inverting only the selected Gram submatrix would give a
+different family and is not done here.
+
+Write `J` for the selected labels and `T` for those rows of the full inverse.
+For each state in `J`, compute the raw factors for all operator labels and
+then apply `T` to their operator coordinate. The row flattening uses the
+transformed `U` factor and the raw `V` factor restricted to `J`. The column
+flattening uses the transformed `V` factor and the restricted raw `U` factor,
+by the exchanged-order identity. Include the transformed vacuum coordinates
+in both computations. Formula (1) then applies to each product separately.
+The invertible-change argument on the full domain no longer identifies
+the ranks of the two restricted products.
+
+| Weight | Full labels | Binary labels | Binary width | Row rank | Column rank |
+| ---: | ---: | ---: | ---: | ---: | ---: |
+| 8 | 2 | 2 | 1 | 2 | 2 |
+| 16 | 5 | 4 | 2 | 8 | 8 |
+| 32 | 23 | 16 | 4 | 187 | 185 |
+| 64 | 276 | 256 | 8 | 11540 | 11524 |
+
+Run:
+
+```sh
+python3 tools/check_modular_binary_central_rank.py
+python3 tools/check_modular_binary_central_rank.py --full --output evidence/modular-binary-central-rank.json
+```
+
+The first three cases are additionally compared with explicitly constructed
+complete matrices and their reshaped column flattenings. The full suite
+checks both weight-64 products with their actual duals, as well as 6,024
+source-recursion coefficients across the four weights. The input hashes
+include the exact dual support lists. Neither these finite binary-prefix
+ranks nor the full-domain ranks prove a growing rank profile.
+
+The original full-domain weight-64 evidence is pinned by its source hashes
+to commit `539c14c`. The later native source adds a binary-prefix entry point;
+the default suite continues to check its unchanged full-domain calculation
+at weights 8, 16, and 32. The binary evidence pins the extended source.

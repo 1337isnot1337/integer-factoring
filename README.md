@@ -133,8 +133,10 @@ The [kernel-pairing calculation](research/modular-central-rank.md) extends
 the exact complete homogeneous central rank to 11,563 at weight 64 on all
 276 regular labels. It includes the vacuum term and computes the full
 product rank from the small kernels of its factors. This finite result
-supplies no asymptotic lower bound. Run
-`python3 tools/check_modular_central_rank.py --full` for the larger replay.
+supplies no asymptotic lower bound. The explicit 256-label binary restriction
+has row/column ranks 11,540 and 11,524 with its actual homogeneous duals.
+Run `python3 tools/check_modular_central_rank.py --full` or
+`python3 tools/check_modular_binary_central_rank.py --full` for the larger replays.
 
 Run `make verify-frontier` for these exact checks. The strongest complete
 ordinary factoring argument here remains exponent `1/2`.
