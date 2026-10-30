@@ -32,10 +32,10 @@ exponent is established by those experiments.
    a uniform factoring machine. Separate conditional or finite evidence from
    a complete asymptotic theorem.
 4. Run `make verify` and the relevant focused checks. Use `make verify-formal`
-   for the original local lemmas and reference envelope. Use `make verify-k6`
-   for the complete k6 machine and rate proof. Both formal targets require
-   Lean and download the pinned reference and its dependencies. Record actual
-   results and any checks that were not run.
+   for the original local lemmas, `make verify-k6` for the certified `1/30`
+   machine, and `make verify-half-appendix` for the certified `1/2` machine.
+   Each Lean target needs its pinned toolchain and upstream dependencies.
+   Record actual results and commands that did not run.
 5. Write a concise handoff with sources, contributor credit, limitations,
    and the next concrete question. A useful partial result or counterexample
    is welcome; do not describe it as a completed factoring improvement. Update
