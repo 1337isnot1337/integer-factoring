@@ -41,6 +41,29 @@ Run `make verify` for the finite checks, including the new table adapter,
 parameter bounds, computable pad, and prefix driver. These tests do not
 materialize the enormous evaluator or replace the infinite-input proof.
 
+## Research beyond exponent 1/2
+
+The [general transfer theorem](research/pieces-to-factoring.md) proves that
+an effective crossing family with rational parameter `rho` gives factoring
+exponent `log2(1/rho)`. It includes a computable pad and the complete bit-cost
+connection. For example, a family with `rho=7/10` would give exponent
+`0.514573...`. This is a conditional target; that family is not constructed.
+
+Two [operator restrictions](research/half-recurrence-barrier.md) rule out
+direct shortcuts. The current operators permit only linear changes of the
+mode weights. Deleting higher modes breaks their identities, as exact
+negative controls demonstrate. The existing coefficient recurrence also
+has exactly the stated square-root decay.
+
+The [rectangular-grid analysis](research/rectangular-grid-frontier.md)
+proves a sharp minimax identity for the limiting declared width profile.
+It explains why unequal splits do not improve the exponent in that model.
+The note identifies its finite-grid limitation explicitly.
+None of these restrictions is a lower bound on factoring or on tensor rank.
+
+Run `make verify-frontier` for these exact checks. The strongest complete
+ordinary factoring argument here remains exponent `1/2`.
+
 ## Lean theorem: exponent 1/30
 
 **The k6 variant has a complete Lean proof of a stronger quantitative bound:**

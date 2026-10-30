@@ -1,0 +1,37 @@
+{
+  "arithmetic": "integer and Fraction only",
+  "conditional_targets": [
+    {
+      "family_supplied": false,
+      "rho_denominator": 10,
+      "rho_numerator": 7,
+      "strict_half_exponent_margin": 2
+    },
+    {
+      "family_supplied": false,
+      "rho_denominator": 3,
+      "rho_numerator": 2,
+      "strict_half_exponent_margin": 1
+    },
+    {
+      "family_supplied": false,
+      "rho_denominator": 5,
+      "rho_numerator": 3,
+      "strict_half_exponent_margin": 7
+    },
+    {
+      "family_supplied": false,
+      "rho_denominator": 2,
+      "rho_numerator": 1,
+      "strict_half_exponent_margin": 2
+    }
+  ],
+  "invalid_parameter_negative_controls": 6,
+  "other_negative_controls": [
+    "rho=3/4 does not beat one half",
+    "floor without plus one"
+  ],
+  "pad_cases": 600,
+  "schedule_boundary_cases": 30,
+  "scope": "finite pad and cutoff arithmetic; conditional transfer theorem is separate"
+}

@@ -1,0 +1,14 @@
+{
+  "alpha_one_negative_controls": 4096,
+  "alpha_three_quarters_negative_controls": 4096,
+  "arithmetic": "integer and Fraction only",
+  "disk_interior_cases": 16384,
+  "finite_two_row_product_and_iteration_cases": 64,
+  "finite_two_row_profile_cases": 3168,
+  "half_exponent_and_profile_cases": 4096,
+  "invalid_cost_negative_controls": 2,
+  "ordered_tree_cases": 2056,
+  "scope": "declared channel-profile minimax model; no runtime or rank lower bound",
+  "two_row_extremizer_and_recurrence_cases": 528,
+  "uniform_leaf_cases": 100
+}
