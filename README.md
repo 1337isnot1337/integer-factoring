@@ -87,6 +87,15 @@ piece entries and a proved asymptotic rank profile suffice: exact Gaussian
 elimination constructs the factors within the allowed cost. This result
 does not replace the missing rank profile with finite rank experiments.
 
+The [finite-order transfer](research/finite-order-crossing-transfer.md)
+also admits algebraic approximations to the crossing. If the crossing is
+the coefficient of order `kappa`, extracting that coefficient multiplies
+each generic matrix rank by at most `kappa+1`. Approximation orders with
+`log(kappa+1)=O(lambda/loglog lambda)` preserve the leading width rate.
+The proof includes regular factorization over formal power series and
+exact effectivity after coefficient extraction. It supplies a target for
+degeneration constructions; no better-rate approximation is asserted.
+
 A [normalized modular construction](research/modular-crossing.md) supplies
 such a family for every fixed `1/sqrt(2)<rho<1`. It removes the vanishing
 factorial multiplier and permits rings with zero divisors. Its present
