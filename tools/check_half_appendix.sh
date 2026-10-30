@@ -155,6 +155,11 @@ cp "$root/formal-appendix/CliqueTermCheck.lean" "$stage/CliqueTermCheck.lean"
 cp "$root/formal-appendix/SelectedSummand.lean" "$stage/SelectedSummand.lean"
 cp "$root/formal-appendix/SelectedRow.lean" "$stage/SelectedRow.lean"
 cp "$root/formal-appendix/SelectedTable.lean" "$stage/SelectedTable.lean"
+cp "$root/formal-appendix/SelectedPrefix.lean" "$stage/SelectedPrefix.lean"
+cp "$root/formal-appendix/WordEncoding.lean" "$stage/WordEncoding.lean"
+cp "$root/formal-appendix/SelectedFactor.lean" "$stage/SelectedFactor.lean"
+cp "$root/formal-appendix/DiscreteRate.lean" "$stage/DiscreteRate.lean"
+cp "$root/formal-appendix/HalfTheorem.lean" "$stage/HalfTheorem.lean"
 lake env bash -c '
   set -euo pipefail
   export LEAN_PATH="$1:$1/factoring/.lake/build/lib/lean:$LEAN_PATH"
@@ -194,14 +199,14 @@ lake env bash -c '
   lean --root="$1" -o "$1/BoundedLength.olean" "$1/BoundedLength.lean"
   lean --root="$1" -o "$1/PrefixSteps.olean" "$1/PrefixSteps.lean"
   lean --root="$1" -o "$1/EvaluatorRate.olean" "$1/EvaluatorRate.lean"
-  lean --root="$1" "$1/ReferenceStatement.lean"
+  lean --root="$1" -o "$1/ReferenceStatement.olean" "$1/ReferenceStatement.lean"
   lean --root="$1" "$1/CertifiedPrefix.lean"
-  lean --root="$1" "$1/SearchPoly.lean"
+  lean --root="$1" -o "$1/SearchPoly.olean" "$1/SearchPoly.lean"
   lean --root="$1" -o "$1/PaddedWordMachine.olean" "$1/PaddedWordMachine.lean"
   lean --root="$1" -o "$1/GroupingSearchPoly.olean" "$1/GroupingSearchPoly.lean"
   lean --root="$1" -o "$1/GroupingSearchCost.olean" "$1/GroupingSearchCost.lean"
   lean --root="$1" -o "$1/LevelPoly.olean" "$1/LevelPoly.lean"
-  lean --root="$1" "$1/PaddedMachineRate.lean"
+  lean --root="$1" -o "$1/PaddedMachineRate.olean" "$1/PaddedMachineRate.lean"
   lean --root="$1" -o "$1/SizeParamPoly.olean" "$1/SizeParamPoly.lean"
   lean --root="$1" -o "$1/TopParamsPoly.olean" "$1/TopParamsPoly.lean"
   lean --root="$1" -o "$1/MasterPad.olean" "$1/MasterPad.lean"
@@ -255,6 +260,11 @@ lake env bash -c '
   lean --root="$1" -o "$1/SelectedSummand.olean" "$1/SelectedSummand.lean"
   lean --root="$1" -o "$1/SelectedRow.olean" "$1/SelectedRow.lean"
   lean --root="$1" -o "$1/SelectedTable.olean" "$1/SelectedTable.lean"
+  lean --root="$1" -o "$1/SelectedPrefix.olean" "$1/SelectedPrefix.lean"
+  lean --root="$1" -o "$1/WordEncoding.olean" "$1/WordEncoding.lean"
+  lean --root="$1" -o "$1/SelectedFactor.olean" "$1/SelectedFactor.lean"
+  lean --root="$1" -o "$1/DiscreteRate.olean" "$1/DiscreteRate.lean"
+  lean --root="$1" -o "$1/HalfTheorem.olean" "$1/HalfTheorem.lean"
 ' _ "$stage" > "$logs/bridge.log" 2>&1
 python3 - "$logs/bridge.log" <<'PY'
 import re
@@ -325,7 +335,11 @@ row_poly = "IntegerFactoring.HalfAppendix.selectedRow_polyT"
 row_eq = "IntegerFactoring.HalfAppendix.selectedRow_eq"
 table_poly = "IntegerFactoring.HalfAppendix.selectedTable_polyT"
 table_eq = "IntegerFactoring.HalfAppendix.selectedTable_eq"
-if "error:" in text or "sorryAx" in text or not {expected, count_bridge, table, clique, top, selected, row, fast, width, states, state_rate, entry, explicit, pad_rate, pure_factor, level_rate, written_poly, prefix_steps, reference_spec, certified_prefix, search_poly, machine, group_search, group_cost, level_poly, machine_rate, size_poly, params_poly, master_cost, group_sizes, group_predicate, group_correct, selected_group_poly, selected_group_correct, row_bridge, digit_poly, gate_size, gate_code, gate_code_correct, gate_weight, gate_weight_correct, gate_message, gate_message_correct, gate_pair, factor_check, weight_check, cluster_weight, cluster_pair, top_weight, cluster_left, cluster_right, top_left, top_right, pad_left, pad_right, state_count, word_code, summand, row_poly, row_eq, table_poly, table_eq} <= {name for name, _ in reports}:
+prefix = "IntegerFactoring.HalfAppendix.selectedPrefix_eq"
+factor = "IntegerFactoring.HalfAppendix.selectedFactor_correct"
+rate = "IntegerFactoring.HalfAppendix.masterExponent_le_rateQuot"
+full_theorem = "IntegerFactoring.HalfAppendix.sqrtLogLog_factoring"
+if "error:" in text or "sorryAx" in text or not {expected, count_bridge, table, clique, top, selected, row, fast, width, states, state_rate, entry, explicit, pad_rate, pure_factor, level_rate, written_poly, prefix_steps, reference_spec, certified_prefix, search_poly, machine, group_search, group_cost, level_poly, machine_rate, size_poly, params_poly, master_cost, group_sizes, group_predicate, group_correct, selected_group_poly, selected_group_correct, row_bridge, digit_poly, gate_size, gate_code, gate_code_correct, gate_weight, gate_weight_correct, gate_message, gate_message_correct, gate_pair, factor_check, weight_check, cluster_weight, cluster_pair, top_weight, cluster_left, cluster_right, top_left, top_right, pad_left, pad_right, state_count, word_code, summand, row_poly, row_eq, table_poly, table_eq, prefix, factor, rate, full_theorem} <= {name for name, _ in reports}:
     raise SystemExit("Missing or failed Appendix bridge axiom reports")
 allowed = {"propext", "Classical.choice", "Quot.sound"}
 for name, axioms in reports:

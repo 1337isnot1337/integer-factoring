@@ -314,7 +314,7 @@ the axiom audit checks that the final theorem and the other audited bridge
 results do not depend on `sorryAx`.
 
 The GitHub Actions workflow runs the reference Lean checks, the k6 rate checks,
-and the Python checks. The Appendix bridge target above is run separately.
+the Python checks, and the pinned Appendix B composition and axiom audit.
 It pins the Lean archive hash and checkout action. It runs for pull requests,
 pushes to `main`, and manual dispatch. Branch pushes without a pull request
 do not start CI. No leaderboard submission accompanies this result.
