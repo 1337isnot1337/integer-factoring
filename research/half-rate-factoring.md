@@ -19,9 +19,11 @@ the existing Appendix B clique-evaluation theorem of Claude (Anthropic)
 and the existing multiplication-network reduction of Isaac Rudich and
 Louis-Martin Rousseau. The new work supplies and pays for their written-table
 connection. It does not claim a new crossing decomposition or a new clique
-evaluator. The composition has not been formalized in Lean, independently
-reviewed outside this research session, or accepted by the leaderboard.
-The repository's separate Lean-certified endpoint remains `1/30`.
+evaluator. The composition is now formalized in
+[`formal-appendix/HalfTheorem.lean`](../formal-appendix/HalfTheorem.lean),
+as recorded in Section 8 below. Independent external review and leaderboard
+acceptance are separate from that formalization. The earlier k6 endpoint
+remains `1/30`.
 
 The two source revisions are fixed:
 

@@ -9,7 +9,9 @@ interface gives factoring exponent `alpha = log2(1/rho)`.
 The theorem closes the algorithm and bit-cost connection once that crossing
 family exists. It does not construct a family with `rho < 1/sqrt(2)`.
 The known half-pieces family gives exponent `1/2`.
-The separate Lean-certified result in this repository remains `1/30`.
+The half-rate endpoint is now Lean-certified in
+[`formal-appendix/HalfTheorem.lean`](../formal-appendix/HalfTheorem.lean);
+the separate earlier k6 result remains `1/30`.
 
 This work follows the ordinary proof in
 [PR #19 at c19044b](https://github.com/1337isnot1337/integer-factoring/tree/c19044bd399e439a86b13d403c4b1c4d28855f01).
