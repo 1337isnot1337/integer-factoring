@@ -1,0 +1,163 @@
+{
+  "counterexample": {
+    "entropy_fraction": "1/256",
+    "ratio_to_target": "16777216",
+    "target_exponent": "1/8"
+  },
+  "early_cutoff_paths": 32,
+  "explicit_label_lower_bound_checks": 172,
+  "geometric_entropy_sum_checks": 136,
+  "label_lower_bound": "lambda > n^(9/20) at every grid step",
+  "local_query_series_bound": "1/(2^17-1)",
+  "product_envelopes": [
+    {
+      "envelope_denominator": 400,
+      "envelope_numerator": 879,
+      "level": 1,
+      "rho": "1/2"
+    },
+    {
+      "envelope_denominator": 1600,
+      "envelope_numerator": 3037,
+      "level": 1,
+      "rho": "2/3"
+    },
+    {
+      "envelope_denominator": 600,
+      "envelope_numerator": 1079,
+      "level": 1,
+      "rho": "3/4"
+    },
+    {
+      "envelope_denominator": 700,
+      "envelope_numerator": 1179,
+      "level": 1,
+      "rho": "7/8"
+    },
+    {
+      "envelope_denominator": 2880000,
+      "envelope_numerator": 9470153,
+      "level": 2,
+      "rho": "1/2"
+    },
+    {
+      "envelope_denominator": 5120000,
+      "envelope_numerator": 13272953,
+      "level": 2,
+      "rho": "2/3"
+    },
+    {
+      "envelope_denominator": 6480000,
+      "envelope_numerator": 15414353,
+      "level": 2,
+      "rho": "3/4"
+    },
+    {
+      "envelope_denominator": 1260000,
+      "envelope_numerator": 2703779,
+      "level": 2,
+      "rho": "7/8"
+    },
+    {
+      "envelope_denominator": 512000000,
+      "envelope_numerator": 2149987489,
+      "level": 3,
+      "rho": "1/2"
+    },
+    {
+      "envelope_denominator": 32768000000,
+      "envelope_numerator": 102005277803,
+      "level": 3,
+      "rho": "2/3"
+    },
+    {
+      "envelope_denominator": 1728000000,
+      "envelope_numerator": 4834161689,
+      "level": 3,
+      "rho": "3/4"
+    },
+    {
+      "envelope_denominator": 2744000000,
+      "envelope_numerator": 6761188789,
+      "level": 3,
+      "rho": "7/8"
+    },
+    {
+      "envelope_denominator": 1024000000000000,
+      "envelope_numerator": 5055138131409369,
+      "level": 4,
+      "rho": "1/2"
+    },
+    {
+      "envelope_denominator": 262144000000000000,
+      "envelope_numerator": 918405794684196889,
+      "level": 4,
+      "rho": "2/3"
+    },
+    {
+      "envelope_denominator": 5184000000000000,
+      "envelope_numerator": 16088246529706369,
+      "level": 4,
+      "rho": "3/4"
+    },
+    {
+      "envelope_denominator": 28000000000000,
+      "envelope_numerator": 75298977764883,
+      "level": 4,
+      "rho": "7/8"
+    },
+    {
+      "envelope_denominator": 2548039680000000000,
+      "envelope_numerator": 14095473478542447101,
+      "level": 5,
+      "rho": "1/2"
+    },
+    {
+      "envelope_denominator": 10737418240000000000,
+      "envelope_numerator": 40816264143416245101,
+      "level": 5,
+      "rho": "2/3"
+    },
+    {
+      "envelope_denominator": 19349176320000000000,
+      "envelope_numerator": 64477552679314344101,
+      "level": 5,
+      "rho": "3/4"
+    },
+    {
+      "envelope_denominator": 853493760000000000,
+      "envelope_numerator": 2435915240711999849,
+      "level": 5,
+      "rho": "7/8"
+    },
+    {
+      "envelope_denominator": 15790581481472000000000000,
+      "envelope_numerator": 95016038720868915540102017,
+      "level": 6,
+      "rho": "1/2"
+    },
+    {
+      "envelope_denominator": 64678221748109312000000000000,
+      "envelope_numerator": 260909569811793800467604417993,
+      "level": 6,
+      "rho": "2/3"
+    },
+    {
+      "envelope_denominator": 179864592187392000000000000,
+      "envelope_numerator": 631052981218521724100448617,
+      "level": 6,
+      "rho": "3/4"
+    },
+    {
+      "envelope_denominator": 453551299002368000000000000,
+      "envelope_numerator": 1351036918142555660335521917,
+      "level": 6,
+      "rho": "7/8"
+    }
+  ],
+  "rational_schedule_paths": 68,
+  "rounded_grid_steps": 172,
+  "scope": "exact declared-volume recurrence and cost-envelope checks; no new crossing family or factoring exponent",
+  "subexponential_entropy_counterexample_cases": 232,
+  "uniform_finite_envelope_bound": "27"
+}

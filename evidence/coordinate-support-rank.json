@@ -1,0 +1,302 @@
+{
+  "asymptotic_restriction": "rho >= 3/4 when log M=o(log m)",
+  "direct_product_coefficient_entries": 574293,
+  "families": [
+    {
+      "distance_multiplicities": {
+        "0": 2,
+        "1": 2
+      },
+      "labels": [
+        0,
+        1
+      ],
+      "length": 1,
+      "maximum_rank_product": 4,
+      "nonzero_pieces": 2,
+      "profile": [
+        [
+          1,
+          4
+        ],
+        [
+          4,
+          1
+        ]
+      ]
+    },
+    {
+      "distance_multiplicities": {
+        "0": 4,
+        "1": 8,
+        "2": 4
+      },
+      "labels": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "length": 2,
+      "maximum_rank_product": 36,
+      "nonzero_pieces": 3,
+      "profile": [
+        [
+          1,
+          16
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          16,
+          1
+        ]
+      ]
+    },
+    {
+      "distance_multiplicities": {
+        "0": 4,
+        "1": 4,
+        "2": 6,
+        "3": 2
+      },
+      "labels": [
+        0,
+        1,
+        3,
+        6
+      ],
+      "length": 3,
+      "maximum_rank_product": 50,
+      "nonzero_pieces": 4,
+      "profile": [
+        [
+          1,
+          16
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          4,
+          1
+        ]
+      ]
+    },
+    {
+      "distance_multiplicities": {
+        "0": 5,
+        "2": 18,
+        "4": 2
+      },
+      "labels": [
+        0,
+        3,
+        5,
+        6,
+        9
+      ],
+      "length": 4,
+      "maximum_rank_product": 198,
+      "nonzero_pieces": 3,
+      "profile": [
+        [
+          1,
+          25
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          22,
+          9
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          4,
+          1
+        ]
+      ]
+    },
+    {
+      "distance_multiplicities": {
+        "0": 8,
+        "1": 24,
+        "2": 24,
+        "3": 8
+      },
+      "labels": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "length": 3,
+      "maximum_rank_product": 224,
+      "nonzero_pieces": 4,
+      "profile": [
+        [
+          1,
+          64
+        ],
+        [
+          8,
+          28
+        ],
+        [
+          28,
+          8
+        ],
+        [
+          64,
+          1
+        ]
+      ]
+    },
+    {
+      "distance_multiplicities": {
+        "0": 8,
+        "2": 24,
+        "4": 24,
+        "6": 8
+      },
+      "labels": [
+        0,
+        3,
+        12,
+        15,
+        48,
+        51,
+        60,
+        63
+      ],
+      "length": 6,
+      "maximum_rank_product": 224,
+      "nonzero_pieces": 4,
+      "profile": [
+        [
+          1,
+          64
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          8,
+          28
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          28,
+          8
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          64,
+          1
+        ]
+      ]
+    },
+    {
+      "distance_multiplicities": {
+        "0": 16,
+        "1": 16,
+        "2": 48,
+        "3": 48,
+        "4": 48,
+        "5": 48,
+        "6": 16,
+        "7": 16
+      },
+      "labels": [
+        0,
+        3,
+        12,
+        15,
+        48,
+        51,
+        60,
+        63,
+        64,
+        67,
+        76,
+        79,
+        112,
+        115,
+        124,
+        127
+      ],
+      "length": 7,
+      "maximum_rank_product": 896,
+      "nonzero_pieces": 8,
+      "profile": [
+        [
+          1,
+          256
+        ],
+        [
+          4,
+          64
+        ],
+        [
+          8,
+          112
+        ],
+        [
+          32,
+          28
+        ],
+        [
+          28,
+          32
+        ],
+        [
+          112,
+          8
+        ],
+        [
+          64,
+          4
+        ],
+        [
+          256,
+          1
+        ]
+      ]
+    }
+  ],
+  "general_bound": "max rank_row*rank_col >= m^3/M^2",
+  "mixed_support_negative_control": {
+    "diagonal_entries": 4,
+    "ranks": [
+      2,
+      2
+    ]
+  },
+  "new_factoring_exponent_claimed": false,
+  "scope": "exact finite support/rank and coefficient checks; the note proves the all-size bound",
+  "supported_tensors": 90,
+  "within_support_recombinations": 48
+}

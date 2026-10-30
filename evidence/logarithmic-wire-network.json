@@ -1,0 +1,67 @@
+{
+  "arbitrary_half_evaluation_recoveries": 156,
+  "bilinear_gauss_cases": 576,
+  "character_algebra_identities": 128,
+  "complete_arithmetic_core_contractions": 8,
+  "complete_small_divisor_bijections": 14,
+  "constructed_arithmetic_primes": [
+    {
+      "A": 2,
+      "M": 29,
+      "d": 2,
+      "n": 2,
+      "wire_bits": 5
+    },
+    {
+      "A": 2,
+      "M": 107,
+      "d": 3,
+      "n": 3,
+      "wire_bits": 7
+    },
+    {
+      "A": 4,
+      "M": 1811,
+      "d": 4,
+      "n": 9,
+      "wire_bits": 11
+    },
+    {
+      "A": 4,
+      "M": 31769,
+      "d": 6,
+      "n": 32,
+      "wire_bits": 15
+    },
+    {
+      "A": 8,
+      "M": 516151,
+      "d": 7,
+      "n": 64,
+      "wire_bits": 19
+    },
+    {
+      "A": 8,
+      "M": 8355917,
+      "d": 9,
+      "n": 257,
+      "wire_bits": 23
+    }
+  ],
+  "exact_intergroup_edge_counts": 86,
+  "grouping_volume_cases": 12,
+  "independent_cluster_enumerations": 2000,
+  "malformed_boundary_cases": 440,
+  "negative_controls": {
+    "coefficient_zero_divisors_are_permitted": true,
+    "composite_all_ones_quotient_fails_orthogonality": true
+  },
+  "ordinary_vs_bivariate_pipelines": 72,
+  "parameter_information_bounds": 99999,
+  "prefix_cases": 1536,
+  "rectangular_gauss_cases": 192,
+  "scope": "exact bivariate network and restricted bilinear contraction checks; no improved logarithmic saving exponent",
+  "singular_gauss_cases": 192,
+  "streamed_carry_block_contractions": 240,
+  "weighted_unique_extensions": 1584
+}

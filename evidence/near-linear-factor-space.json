@@ -1,0 +1,28 @@
+{
+  "both_order_piece_entries": 550,
+  "bottom_factor_entries": 1210,
+  "channel_unrankings": 8234,
+  "complete_crossing_entries": 18,
+  "compressed_partition_unrankings": 3733,
+  "independent_coefficient_extractions": 4288,
+  "least_label_weights": {
+    "1": 8,
+    "2": 15,
+    "3": 21,
+    "4": 28,
+    "5": 36,
+    "6": 45
+  },
+  "maximum_partition_code_bits_through_weight_64": 26,
+  "negative_controls": [
+    "field size aliases the top degree",
+    "omitted common angle factor"
+  ],
+  "nonzero_field_elements_checked": 502,
+  "partition_unrankings": 3733,
+  "regular_partitions_checked": 3733,
+  "scope": "exact local factors and streamed indexing; space bounds are proved in the accompanying note",
+  "source_revision": "16a5ce41304fcdaea4e0be7c132e1c361dc26da5",
+  "status": "pass",
+  "top_angle_entries": 15862
+}

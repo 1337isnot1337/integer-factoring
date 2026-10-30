@@ -1,0 +1,184 @@
+{
+  "cancelled_crossing_entries": 16,
+  "coefficient_rank_cases": 360,
+  "exact_coefficient_piece_ranks": [
+    [
+      1,
+      4
+    ],
+    [
+      4,
+      1
+    ]
+  ],
+  "negative_controls": [
+    "single-point rank is not a generic-rank upper bound",
+    "entry truncation can raise generic rank"
+  ],
+  "new_factoring_exponent_claimed": false,
+  "scope": "exact finite coefficient-rank checks; no improved degeneration constructed",
+  "sharp_examples": [
+    {
+      "coefficient_rank": 1,
+      "generic_rank": 1,
+      "order": 0,
+      "prime": 2
+    },
+    {
+      "coefficient_rank": 2,
+      "generic_rank": 1,
+      "order": 1,
+      "prime": 2
+    },
+    {
+      "coefficient_rank": 3,
+      "generic_rank": 1,
+      "order": 2,
+      "prime": 2
+    },
+    {
+      "coefficient_rank": 4,
+      "generic_rank": 1,
+      "order": 3,
+      "prime": 2
+    },
+    {
+      "coefficient_rank": 5,
+      "generic_rank": 1,
+      "order": 4,
+      "prime": 2
+    },
+    {
+      "coefficient_rank": 6,
+      "generic_rank": 1,
+      "order": 5,
+      "prime": 2
+    },
+    {
+      "coefficient_rank": 7,
+      "generic_rank": 1,
+      "order": 6,
+      "prime": 2
+    },
+    {
+      "coefficient_rank": 8,
+      "generic_rank": 1,
+      "order": 7,
+      "prime": 2
+    },
+    {
+      "coefficient_rank": 9,
+      "generic_rank": 1,
+      "order": 8,
+      "prime": 2
+    },
+    {
+      "coefficient_rank": 1,
+      "generic_rank": 1,
+      "order": 0,
+      "prime": 3
+    },
+    {
+      "coefficient_rank": 2,
+      "generic_rank": 1,
+      "order": 1,
+      "prime": 3
+    },
+    {
+      "coefficient_rank": 3,
+      "generic_rank": 1,
+      "order": 2,
+      "prime": 3
+    },
+    {
+      "coefficient_rank": 4,
+      "generic_rank": 1,
+      "order": 3,
+      "prime": 3
+    },
+    {
+      "coefficient_rank": 5,
+      "generic_rank": 1,
+      "order": 4,
+      "prime": 3
+    },
+    {
+      "coefficient_rank": 6,
+      "generic_rank": 1,
+      "order": 5,
+      "prime": 3
+    },
+    {
+      "coefficient_rank": 7,
+      "generic_rank": 1,
+      "order": 6,
+      "prime": 3
+    },
+    {
+      "coefficient_rank": 8,
+      "generic_rank": 1,
+      "order": 7,
+      "prime": 3
+    },
+    {
+      "coefficient_rank": 9,
+      "generic_rank": 1,
+      "order": 8,
+      "prime": 3
+    },
+    {
+      "coefficient_rank": 1,
+      "generic_rank": 1,
+      "order": 0,
+      "prime": 101
+    },
+    {
+      "coefficient_rank": 2,
+      "generic_rank": 1,
+      "order": 1,
+      "prime": 101
+    },
+    {
+      "coefficient_rank": 3,
+      "generic_rank": 1,
+      "order": 2,
+      "prime": 101
+    },
+    {
+      "coefficient_rank": 4,
+      "generic_rank": 1,
+      "order": 3,
+      "prime": 101
+    },
+    {
+      "coefficient_rank": 5,
+      "generic_rank": 1,
+      "order": 4,
+      "prime": 101
+    },
+    {
+      "coefficient_rank": 6,
+      "generic_rank": 1,
+      "order": 5,
+      "prime": 101
+    },
+    {
+      "coefficient_rank": 7,
+      "generic_rank": 1,
+      "order": 6,
+      "prime": 101
+    },
+    {
+      "coefficient_rank": 8,
+      "generic_rank": 1,
+      "order": 7,
+      "prime": 101
+    },
+    {
+      "coefficient_rank": 9,
+      "generic_rank": 1,
+      "order": 8,
+      "prime": 101
+    }
+  ]
+}

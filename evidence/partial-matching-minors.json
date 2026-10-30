@@ -1,0 +1,90 @@
+{
+  "component_cases": [
+    {
+      "case": "balanced_paths_only",
+      "count": 27297,
+      "determinant": 0
+    },
+    {
+      "case": "balanced_paths_only",
+      "count": 127050,
+      "determinant": 1
+    },
+    {
+      "case": "nullity_at_least_two",
+      "count": 4714,
+      "determinant": 0
+    },
+    {
+      "case": "one_cycle",
+      "count": 21679,
+      "determinant": 0
+    },
+    {
+      "case": "one_cycle",
+      "count": 7716,
+      "determinant": 1
+    },
+    {
+      "case": "one_unbalanced_pair",
+      "count": 33222,
+      "determinant": 0
+    },
+    {
+      "case": "one_unbalanced_pair",
+      "count": 36986,
+      "determinant": 1
+    }
+  ],
+  "deterministic_random_pairs": 1000,
+  "exhaustive_pairs": 257664,
+  "exhaustive_profiles": [
+    {
+      "equal_size_pairs_checked": 1,
+      "partial_matchings": 1,
+      "vertices": 0
+    },
+    {
+      "equal_size_pairs_checked": 1,
+      "partial_matchings": 1,
+      "vertices": 1
+    },
+    {
+      "equal_size_pairs_checked": 2,
+      "partial_matchings": 2,
+      "vertices": 2
+    },
+    {
+      "equal_size_pairs_checked": 10,
+      "partial_matchings": 4,
+      "vertices": 3
+    },
+    {
+      "equal_size_pairs_checked": 46,
+      "partial_matchings": 10,
+      "vertices": 4
+    },
+    {
+      "equal_size_pairs_checked": 326,
+      "partial_matchings": 26,
+      "vertices": 5
+    },
+    {
+      "equal_size_pairs_checked": 2476,
+      "partial_matchings": 76,
+      "vertices": 6
+    },
+    {
+      "equal_size_pairs_checked": 22492,
+      "partial_matchings": 232,
+      "vertices": 7
+    },
+    {
+      "equal_size_pairs_checked": 232310,
+      "partial_matchings": 764,
+      "vertices": 8
+    }
+  ],
+  "invalid_input_controls": 4,
+  "scope": "exact partial-matching determinant queries; no crossing rank bound"
+}

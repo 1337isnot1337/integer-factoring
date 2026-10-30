@@ -17,6 +17,89 @@ deterministic machine with
 T(n)\le C\exp\!\left(\frac{Cn}{\sqrt{\log n}}\right).
 ```
 
+The [sublinear-space refinement](research/sublinear-space-half-rate.md)
+computes the least prime factor, complete factorization, exact
+divisor-prefix counts, and sorted divisor output within this time bound
+using **`O(n/sqrt(log n))` working bits**. The input is read-only and
+the output is write-only. Short hash descriptors replace stored candidate
+integers; paired input tags regenerate both factors, and streamed
+multiplication verifies them with logarithmic arithmetic storage.
+
+[Compressed local factors](research/near-linear-factor-space.md) use
+scalar field evaluations and gap-coded partitions. The
+[streamed top queries](research/streamed-top-space.md) recompute their
+arithmetic messages in polynomial time. The evaluator works over a
+fixed sixteen-element ring. The proof charges every recursive counter,
+query argument, and recovery descriptor. The earlier
+[linear-space theorem](research/linear-space-half-rate.md) remains a
+simpler intermediate construction.
+
+The [blocked half-rate family](research/blocked-half-family.md) also
+reduces every local piece and factor query from `2^O(lambda)` time to
+`lambda^(1+o(1))` bit time. It tensors blocks of about
+`sqrt(log lambda) loglog lambda` bits and keeps their full piece tuples.
+The piece entropy is `O(lambda/sqrt(log lambda))`, so the proved
+endpoint transfer preserves the exact half exponent. The construction
+has linear local space and retains the global sublinear workspace
+bound above. It does not assume a new rank-profile gain.
+
+The [simultaneous transfer](research/simultaneous-time-space-transfer.md)
+extends the packed time and workspace argument to every supplied
+contraction exponent `0<alpha<=1`. A new type-grouped block construction
+also turns a time-only local interface into linear local workspace,
+provided the original family has polynomially many pieces and a
+power-saving width error. Its piece entropy is polylogarithmic and
+its scalar queries take quasipolynomial time. This includes the
+conditional endpoint `alpha=1`; it supplies no better crossing rate.
+
+The [rational simultaneous transfer](research/rational-simultaneous-transfer.md)
+extends this conclusion to rational factors and fixed number fields,
+with polynomially many pieces, a power-saving width error, and the
+stated exponential bit-time local interface.
+An explicit odd composite modulus makes all required denominators
+invertible; no prime selection or factorization is needed. Logarithmic
+type blocking bounds the local workspace. The pinned source half-rate
+family supplies a second proof of the unconditional sublinear-space result.
+
+The [direct counting refinement](research/direct-sublinear-divisor-counts.md)
+computes an exact divisor-prefix count from **one weighted evaluator
+query**, with the same half-rate time and sublinear workspace. It uses
+the [integral Schur factors](research/integral-counting-transfer.md) and
+a modulus of `2^(q+1)`, where the uniform divisor bound gives
+`q=O(n/log n)`. The canonical residue is the integer count. Read-only
+interval endpoints need at most `2n+1` such queries. This counting method
+needs no preliminary factoring or witness isolation. The separate short
+descriptor method supplies least-factor and full-factorization outputs
+within sublinear space.
+For rational or fixed-number-field families at a supplied exponent,
+sequential generalized Chinese remainder reconstruction also gives
+direct counts with matched time and space through the conditional
+endpoint `alpha=1`. It uses polynomially many small-modulus queries.
+
+The [fixed-characteristic time–space route](research/rough-input-transfer.md)
+also gives polynomial space. Its [streamed local factors](research/modular-factor-space.md)
+and the later bit-tagged isolation theorem apply when only a fixed-field
+crossing family is available. These are ordinary mathematical proofs
+with finite checks, without new Lean formalization.
+
+The [explicit interpolation constructor](research/polynomial-top-queries.md)
+now computes every top-table entry in polynomial time and space. Each
+prescribed boundary admits at most one internal setting. An explicit
+grouping replaces the initial grouping search and allows the larger
+top schedule proved in that note. The tables remain available through
+queries; explicitly writing all their entries still takes exponential time.
+
+A second [multiplication-network construction](research/logarithmic-wire-network.md)
+uses `O(log n)`-bit messages and `O(n)` total information volume.
+Bivariate interpolation gives polynomial-time metadata and top queries.
+Its Fourier representation also contracts entire arithmetic blocks and
+carry segments in polynomial time, including the character-algebra cost.
+The largest top schedule still preserves the exact half exponent. A further
+[linear-and-carry closure theorem](research/linear-carry-blocks.md) includes
+arbitrary interpolation, addition, and carry subsets in one polynomial-time
+query. Blocks that also contain middle multiplication gates need a further
+contraction argument.
+
 It combines Claude (Anthropic)'s existing Appendix B clique evaluator with
 Isaac Rudich and Louis-Martin Rousseau's multiplication-network reduction.
 The new connection includes a deterministic written-table constructor, an
@@ -43,16 +126,42 @@ materialize the enormous evaluator or replace the infinite-input proof.
 
 ## Research beyond exponent 1/2
 
+The [30 October research report](research/oct30-progress.md) collects
+the current time-space results, exact counting methods, and scoped
+obstructions. Its [verification ledger](evidence/beyond-half-verification.json)
+records the source pins, checked files, and evidence limits.
+
 The [directions note](research/post-half-directions.md) records the initial
 search beyond `1/2`. It includes restrictions on the operator interfaces,
 an exact counterexample to projecting away high modes, and finite matrix
 ranks. The results below further specify the mathematical frontier.
+
+The [faster clique baselines](research/fast-matrix-clique.md) improve
+the initial exhaustive coefficient from `1/2` to `1/3` by balanced
+conditioning, with linear assignment space. A separate matrix-product
+construction lowers the arithmetic/table-query coefficient further,
+to about `0.310064` for an explicit rectangular split, using exponential
+storage. The note charges all boundary dimensions and table formation.
+Both variants retain the existing logarithmic exponent; the dense
+variant does not assert that arithmetic constant for finite-tape bit time.
 
 The [network tradeoff](research/half-top-structure.md) rules out improving
 the explicit constructor through regrouping and separate wire compression
 alone. The [restricted-label counterexample](research/half-restricted-labels.md)
 and [quantitative span theorem](research/half-restricted-span.md) show why
 another proposed dimension reduction fails on the full restricted spaces.
+
+The [Fourier gate construction](research/fourier-multiplication-gates.md)
+gives polynomial-time point queries for every original multiplication
+gate after `exp(O(sqrt(n)))` character-field preprocessing. It includes
+prefix weights, composite-modulus bilinear sums, and all carry endpoints.
+A characteristic-two involution also reduces unit Kloosterman sums to
+quadratic roots. These are explicit local contraction primitives; a
+global evaluation method with a better rate is still missing.
+An [odd-characteristic extension](research/fourier-odd-characteristic.md)
+changes the arithmetic modulus while preserving the original topology.
+It proves the required character normalization and compact carry formulas
+over every fixed odd characteristic, including bit-tagged input weights.
 
 The [general transfer theorem](research/pieces-to-factoring.md) proves that
 an effective crossing family with rational parameter `rho` gives factoring
@@ -63,17 +172,216 @@ connection. For example, a family with `rho=7/10` would give exponent
 The [fixed-characteristic transfer](research/scale-one-modular-transfer.md)
 opens another route. An effective scale-one crossing family over one fixed
 finite field gives the same factoring exponent `log2(1/rho)`, up to and
-including `alpha=1`. A [sparse divisor-polynomial argument](research/sparse-divisor-nonzeroness.md)
+including `alpha=1`. Its original [sparse divisor-polynomial argument](research/sparse-divisor-nonzeroness.md)
 detects permitted divisors using cyclic polynomial rings, with additional
 cost `exp(O(n/log n))`. The proof includes weighted input construction,
 circuit generation, ring arithmetic, and finite-alphabet machine costs.
 
+The [small-factor preprocessing extension](research/rough-input-transfer.md)
+reduces that extra time to `exp(O(sqrt(n)))`. If the weighted arithmetic
+evaluator costs `A(n)`, the resulting factoring bound is
+`exp(O(log(A(n)+2)+sqrt(n)))`; any fixed logarithmic saving exponent
+is preserved. A parameter tradeoff also gives polynomial-space recovery
+for every exponent at most one, provided the evaluator has sequential
+queries and polynomial-space local routines. The existing modular
+half-rate construction meets those requirements.
+
+The stronger [bit-tagged recovery theorem](research/bit-tagged-witness-recovery.md)
+now achieves `exp(O(sqrt(n)))` recovery overhead with polynomial space
+over **every fixed characteristic**, preserving any fixed logarithmic
+saving exponent of a streamed evaluator. A different control field
+provides deterministic isolation and additive-character projections;
+square-zero tags return the isolated witness's bits. The proof includes
+candidate verification, complete factorization, and uniform field
+construction. [Streamed local factors](research/modular-factor-space-odd.md)
+are also available in every fixed characteristic.
+
+The [extended transfer](research/subexponential-piece-transfer.md) permits
+more than polynomially many crossing pieces. Piece entropy
+`log |I_lambda| = O(lambda/(log lambda)^delta)` gives factoring exponent
+`min(log2(1/rho),delta,1)`, without an extra depth factor at the endpoint.
+In particular, `2^(O(lambda^beta))` pieces, for fixed `beta<1`, preserve
+the rate-derived exponent. The width sum can have error as large as
+`O(lambda/loglog lambda)`. An explicit volume cutoff, a geometric cost
+sum, exact recurrence checks, and independent internal review support
+this conditional theorem. It supplies no new family with a smaller rate.
+
+The [rational-height extension](research/rational-height-transfer.md)
+also removes the old polynomial coefficient-height requirement. A uniform
+`2^O(lambda)` bit-time routine can output rational factors with exponentially
+many bits. The evaluator's degree is at most `P^6`, so exact rational
+arithmetic still fits the rate. As a consequence, uniformly computable
+piece entries and a proved asymptotic rank profile suffice: exact Gaussian
+elimination constructs the factors within the allowed cost. This result
+does not replace the missing rank profile with finite rank experiments.
+
+The [finite-order transfer](research/finite-order-crossing-transfer.md)
+also admits algebraic approximations to the crossing. If the crossing is
+the coefficient of order `kappa`, extracting that coefficient multiplies
+each generic matrix rank by at most `kappa+1`. Approximation orders with
+`log(kappa+1)=O(lambda/loglog lambda)` preserve the leading width rate.
+The proof includes regular factorization over formal power series and
+exact effectivity after coefficient extraction. It supplies a target for
+degeneration constructions; no better-rate approximation is asserted.
+
 A [normalized modular construction](research/modular-crossing.md) supplies
 such a family for every fixed `1/sqrt(2)<rho<1`. It removes the vanishing
-factorial multiplier and permits rings with zero divisors. Its present
-width bound approaches the half exponent from below. It supplies no family
+factorial multiplier and permits rings with zero divisors. The endpoint
+estimates in the time-space notes give the exact half exponent with
+sublinear width slack. It supplies no family
 with `rho<1/sqrt(2)`. A local one-bit improvement also fails to tensor into
 a better asymptotic profile, as the note's exact rank argument shows.
+
+The [coordinate-support theorem](research/coordinate-support-rank.md)
+extends that last restriction to arbitrary binary label subsets, including
+nonlinear codes. A tensor with the stated two-pairing support satisfies
+`rank_row(B) rank_col(B) >= d(B)^2/m`, where `d(B)` counts its nonzero
+crossing-diagonal entries. Any `M` such pieces that sum to the crossing
+therefore have maximum rank product at least `m^3/M^2`. Subexponentially
+many pieces still require `rho>=3/4`. The proof covers different fixed
+orientation masks in different pieces. Combining masks within a single
+piece can escape the support condition and remains a separate route.
+
+On the full binary cube, the [exact coefficient-rank formula](research/binary-coefficient-entropy.md)
+gives the elementary family the limiting rate `H_2(1/4)=0.811278...`.
+The [symmetric three-pairing theorem](research/symmetric-three-matching-barrier.md)
+extends this sharp lower bound to every decomposition in the complete
+permutation-symmetric span of the three local pairings. It permits
+arbitrary recombinations, any number of pieces, and controlled
+degenerations within that span. Coordinate-dependent constructions and
+restricted label sets are outside this theorem's scope.
+
+The [reflected monomial construction](research/fermionic-piece-polynomial.md)
+gives exact unit duals by complementing binary mode indices. Its dual
+operators may have larger weight than the labels; the note proves the
+corresponding locality and finite support bounds. On the three labels
+`(1,11),(3,9),(5,7)`, four nonzero pieces have rank products
+`9,8,20,12`. The maximum `20` improves the previous finite certificate's
+`27` on that domain. An independent polynomial matching formula and
+both original operator orders verify every entry. This finite gain
+does not establish a better asymptotic factoring exponent. Separate
+recombination work in [PR #24](https://github.com/1337isnot1337/integer-factoring/pull/24)
+has since produced a twenty-piece, rank-product-four certificate on three labels;
+the reflected construction here is a different family, not the current
+best finite certificate.
+
+The [finite-seed amplification theorem](research/finite-seed-amplification.md)
+gives a sufficient all-size criterion from any finite certificate:
+`sum_i sqrt(r_i c_i) < d^(sqrt(2))` would improve the half exponent.
+It also proves that this particular criterion cannot succeed on at most
+five labels. The [swap/product rank theorem](research/swap-product-rank-sum.md)
+first extends the exclusion through twelve labels over every field.
+Its proof gives `rank(Swap-P tensor Q)>=binom(d,2)`, with a sharper
+bound from the invertible part of `QP`. The stronger
+[minimum-cut rank budget](research/minimum-cut-rank-budget.md) now
+excludes **every seed on two through twenty-one labels**, over every
+field. It combines `sum_i min(r_i,c_i)>=d`, higher-cut complement
+bounds, and exact rational certificates. A separate
+[two-piece theorem](research/two-piece-rank-sum-obstruction.md)
+excludes all decompositions with at most two nonzero pieces, in every
+dimension. A passing seed for this sufficient criterion therefore
+needs **at least twenty-two labels and three pieces**. These are
+constraints on that criterion; better rank analysis of grouped tensor
+coefficients remains a distinct possibility.
+
+The [streamed seed transfer](research/streamed-seed-transfer.md) strengthens
+the amplification interface to polynomial-time factor queries and
+polynomial working space. It also gives an exact finite polynomial
+certificate: supplied two-cut factorizations and a rational tilt suffice
+to certify an all-size rate with integer arithmetic. The usual Smith
+estimate cannot pass the half threshold on at most four labels; an exact
+integer comparison resolves the close four-label case. These are
+constructive criteria and scoped exclusions, not a newly passing seed.
+
+The [conserved-convolution theorem](research/conserved-convolution-crossings.md)
+gives another exact crossing constructor and a full-domain rank obstruction.
+On a finite abelian group `G`, every nonzero kernel in its stated class
+occupies at least `|2G|` separate column blocks. Exact Smith-envelope
+certificates also exclude the small cyclic powers of two in that route.
+The [ideal Hankel endpoint theorem](research/ideal-hankel-endpoint.md)
+separately proves that its extremal row valuation profile cannot have
+a rank-one opposite endpoint under constant normalization when `d>=3`.
+Neither result excludes arbitrary label restrictions or general Smith profiles.
+
+Three all-size results explain why several attractive finite restrictions
+do not give the desired improvement. The
+[permutation-invariant defect theorem](research/fixed-defect-invariant-barrier.md)
+forces `rho>=1-o(1)` for sparse defects, including arbitrary invariant
+recombinations. The [original constant-weight restriction](research/balanced-three-label-barrier.md)
+of the twenty-piece seed requires `rho>=0.72` along all growing label
+domains of that form. An [isotropic basis change](research/isotropic-three-label-barrier.md)
+also fails at its capacity-maximizing density: one explicit coefficient
+has exact ranks giving `rho>=log(6)/(2log(3))`. These statements have
+different hypotheses; none rules out arbitrary linear label codes.
+
+Two further label spaces preserve exact crossing identities. The
+[odd cyclic orbit construction](research/cyclic-orbit-crossing.md)
+uses self-dual orbit sums; its first nontrivial space has eleven labels.
+The [nilpotent-cycle construction](research/nilpotent-cycle-labels.md)
+uses an explicit kernel basis with an involutory Gram matrix. Both have
+effective polynomial piece families. Explicit coefficients also prove
+that their growing full-domain families fail the required rate. Those
+proofs leave arbitrary subspaces and different recombinations open.
+
+The [matching-code lift](research/matching-code-lift.md) gives exact
+multigraded crossings on uniform set partitions. Independent variables
+reduce their piece count to `exp(O(lambda/log lambda))`, despite the large
+numerical mode weights. [Jack-polynomial integrality](research/matching-gram-unipotence.md)
+proves that the homogeneous matching pairing is invertible at every even
+particle count. This yields a second uniform dual construction. Complete
+finite profiles show that the attractive three-label ranks do not persist
+in the next tested matching spaces; an improved asymptotic rank bound
+remains open.
+
+A [permutation-label theorem](research/permutation-homogeneous-labels.md)
+constructs homogeneous unit duals for factorial-size spaces, despite
+singularities of their full Gram matrices. A separate
+[intersection-kernel construction](research/intersection-matching-crossing.md)
+gives every perfect matching a single monomial dual. It includes a scalar
+deformation and an explicit reduction to partial-matching coefficients.
+These families meet the relaxed piece-count and construction-cost interface;
+their joint rank bounds still need improvement.
+
+A [split permutation seed](research/split-permutation-seed.md) gives a
+six-label exact crossing with maximum rank product `150`, below the
+finite half threshold. Its coefficient formula has an independent
+Pfaffian check. The full growing permutation family has an explicit
+coefficient whose rate tends to one, so the finite gain does not
+amplify by that construction. The broader
+[balanced-partition construction](research/balanced-partition-crossings.md)
+gives unit duals for even uniform partitions and weighted multipartite
+partitions. It also gives a rank-one kernel deformation and reduces
+the rank problem to partial-partition coefficient tensors. Complete
+finite profiles record both the small gains and their later failures.
+
+The [full permutation-span obstruction](research/permutation-span-cycle-obstruction.md)
+works over fields of characteristic two and goes beyond the original
+pieces: one common cycle-block functional
+forces a large rank in both cuts of some summand in every linear
+recombination. It excludes the finite rank-sum target throughout the
+141-dimensional coefficient span of the 24-label identity-kernel seed.
+The [sharp distinguished-piece budget](research/distinguished-piece-rank-budget.md)
+raises its lower bound to `72+2sqrt(503)>116`.
+An [exact coefficient-span optimizer](research/seed-subspace-recombination.md)
+also certifies optimum `325` in the six-dimensional uniform span and
+several declared extensions. A further
+[coordinate-restriction theorem](research/permutation-coordinate-restrictions.md)
+excludes every simultaneous coordinate subset of the 24-label
+identity-kernel seed in characteristic two, allowing arbitrary recombinations of its
+restricted coefficient span. The scope leaves arbitrary dual label maps,
+different kernels, and collective tensor-power recombinations open.
+
+Further exact analyses cover
+[far-reflected mode supports](research/reflected-support-reduction.md),
+[paired modes and Johnson-scheme blocks](research/paired-mode-johnson.md),
+and [sum-of-squares partial transposes](research/sos-partial-transpose-profile.md).
+They identify specific rank obstructions and provide complete finite profiles.
+No better factoring exponent follows from the tested families.
+
+A [partial-matching minor formula](research/partial-matching-minors.md)
+computes the disjointness determinants by paths and cycles in linear graph
+work. Its exact checks cover 257,664 exhaustive pairs. This accelerates
+a local query; it does not bound a complete crossing flattening.
 
 Two [operator restrictions](research/half-recurrence-barrier.md) rule out
 direct shortcuts. The current operators permit only linear changes of the
@@ -107,12 +415,49 @@ the two operator orders, crossing sums, and small binary-label restrictions.
 The theorem does not settle the rank of the complete central piece.
 These results give no lower bound on factoring or on an evaluator's runtime.
 
+The [integral Schur construction](research/integral-schur-crossing.md)
+retains the full `p(h)`-dimensional state space in every characteristic.
+Translated Schur functions give multiplier-one crossings over the integers.
+At prime-power energies, the homogeneous vacuum pairing is invertible
+modulo that prime, and its angle sum has only two or three terms.
+A constructive capacity theorem fills every binary label length with
+`O(log lambda)` prime-power blocks. It retains every block index, giving
+piece entropy and width error `O(log^2 lambda)` without an energy overshoot.
+This supplies another exact half-rate family and makes a rank improvement
+on prime-power blocks alone sufficient for an improved exponent.
+
+A stronger [prime-power Gram identity](research/prime-power-gram-involution.md)
+shows that the full Schur pairing is its own inverse modulo the prime.
+Streamed character and mode-coefficient algorithms compute its factors in
+`2^O(lambda)` time and polynomial space. This removes the large matrix
+inverse from the homogeneous construction.
+The [fusion Gram reduction](research/schur-fusion-gram.md) identifies both
+central ranks and the exact image question that controls them.
+For the smaller regular monomial quotient, the
+[regular fusion theorem](research/regular-fusion-rank.md) now resolves
+that question asymptotically on the full regular homogeneous label domain.
+Almost every distinct-odd partition splits into two equal-weight subsets.
+A length filtration then proves that the fusion image occupies almost
+the whole intermediate space. Its central crossing rank forces exactly
+the half-rate exponent. A stronger
+[integral-filtration theorem](research/schur-fusion-rank.md) now proves
+asymptotically full fusion rank for the full Schur space as well.
+It uses carry-free splits of binary multiplicity digits and accounts
+for exact-weight conditioning. The homogeneous central piece therefore
+has the half-rate exponent in characteristic two and over the rationals
+along powers of two. Further label restrictions and recombinations
+are outside these rank obstructions.
+The [dual-gauge classification](research/dual-gauge-filters.md) describes
+all bounded-weight dual freedom; higher-weight mode filters give explicit
+interval sums of crossing pieces. These results retain the half exponent.
+
 The [homogeneous-dual construction](research/homogeneous-duals.md) gives a
 new effective crossing family. An explicit polynomial in two sparse
 derivations replaces a large matrix inverse. The proof bounds coefficient
 sizes and generation costs, and verifies the complete crossing interface.
-It retains `rho=1/sqrt(2)` and exponent `1/2`; smaller ranks for its complete
-pieces remain an open route. Its [exact checks](evidence/homogeneous-duals.json)
+It retains `rho=1/sqrt(2)` and exponent `1/2`; further label restrictions
+and different coefficient pieces remain open routes.
+Its [exact checks](evidence/homogeneous-duals.json)
 cover the dual pairing, operator identities, and complete crossing sums.
 On primitive inputs, a [central-piece rank identity](research/primary-central-gram.md)
 goes further: an invertible row swap gives a positive Gram form, so

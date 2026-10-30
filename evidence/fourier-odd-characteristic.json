@@ -1,0 +1,29 @@
+{
+  "bilinear_gauss_sum_cases": 669,
+  "carry_settings_summed": 92826,
+  "coefficient_field": {
+    "degree": 8,
+    "modulus_polynomial_encoding": 6572,
+    "prime": 3,
+    "primitive_element": 38,
+    "verified_cycle_length": 6560
+  },
+  "general_carry_cases": 1056,
+  "integer_transform_digit_bits": [
+    2,
+    8,
+    32
+  ],
+  "inverse_gate_cases_with_nontrivial_scalar": 24,
+  "missing_normalization_negative_control": {
+    "modulus": 41,
+    "raw_scalar": 2,
+    "required_scalar": 1
+  },
+  "modified_integer_transform_cases": 536,
+  "nonunit_bilinear_cases": 282,
+  "normalized_character_orthogonality_cases": 16,
+  "scope": "exact odd-characteristic gate and modified integer-transform identities; no faster block contraction",
+  "walsh_tagged_digit_cases": 1984,
+  "zero_factor_digit_cases": 155
+}

@@ -1,0 +1,128 @@
+{
+  "status": "PASS",
+  "polynomial_certificate": {
+    "polynomial_identities": 2,
+    "factor_entry_checks": 34368,
+    "tilt": [
+      1,
+      3
+    ],
+    "bound_B": [
+      256,
+      27
+    ],
+    "strict_seven_tenths_test": false,
+    "profiles": [
+      {
+        "copies": 1,
+        "channel_counts": [
+          [
+            1,
+            4
+          ],
+          [
+            4,
+            1
+          ]
+        ]
+      },
+      {
+        "copies": 2,
+        "channel_counts": [
+          [
+            1,
+            17
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            17,
+            1
+          ]
+        ]
+      },
+      {
+        "copies": 3,
+        "channel_counts": [
+          [
+            1,
+            72
+          ],
+          [
+            8,
+            30
+          ],
+          [
+            30,
+            8
+          ],
+          [
+            72,
+            1
+          ]
+        ]
+      }
+    ]
+  },
+  "type_certificate": {
+    "seed_labels": 3,
+    "copies": 2,
+    "restricted_labels": 8,
+    "seed_rank_pairs": [
+      [
+        1,
+        9
+      ],
+      [
+        8,
+        3
+      ]
+    ],
+    "factor_entry_checks": 24576,
+    "identity_caps": 1,
+    "crossing_entries": 4096,
+    "profiles": [
+      {
+        "type": [
+          2,
+          0
+        ],
+        "uncapped_channels": [
+          1,
+          81
+        ]
+      },
+      {
+        "type": [
+          1,
+          1
+        ],
+        "uncapped_channels": [
+          16,
+          54
+        ]
+      },
+      {
+        "type": [
+          0,
+          2
+        ],
+        "uncapped_channels": [
+          64,
+          9
+        ]
+      }
+    ]
+  },
+  "four_label_smith_exclusion": {
+    "rational_separation": [
+      577,
+      816
+    ],
+    "power_inequality": "2^3544 > 17^867",
+    "scope": "usual cumulative Smith envelope only"
+  },
+  "scope": "Finite exact controls; no improved time exponent claimed."
+}

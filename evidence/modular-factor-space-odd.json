@@ -1,0 +1,19 @@
+{
+  "bottom_factor_entries_including_normalization": 22244,
+  "complete_piece_entries": 301,
+  "largest_tested_operator_particle_count": 4,
+  "negative_controls": [
+    "repeated-column division",
+    "derivative multiplicity",
+    "annihilator sign",
+    "dual sign"
+  ],
+  "primes": [
+    3,
+    5
+  ],
+  "scope": "finite source comparisons for the proved polynomial-space fixed-prime factor interface",
+  "source_revision": "16a5ce41304fcdaea4e0be7c132e1c361dc26da5",
+  "status": "pass",
+  "top_angle_entries": 108038
+}

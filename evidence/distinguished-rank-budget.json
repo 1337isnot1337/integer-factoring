@@ -1,0 +1,9 @@
+{
+  "status": "pass",
+  "exhaustive_parameters": 44,
+  "integer_rank_vector_pairs": 24050,
+  "attainment_parameters": 4851,
+  "permutation_b4_lower_bound": "72 + 2*sqrt(503)",
+  "permutation_b4_lower_bound_strictly_exceeds": 116,
+  "scope": "Sharp numerical rank-budget relaxation, not tensor-rank realization."
+}

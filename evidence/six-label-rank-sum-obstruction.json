@@ -1,0 +1,70 @@
+{
+  "scope": "universal six-label exclusion for the rank-sum criterion",
+  "all_field_matrix_argument": "rank(Swap-P tensor Q)>=d-1 for invertible P,Q",
+  "exact_threshold_certificates": {
+    "sqrt2_less_than_99_over_70": true,
+    "six_to_sqrt2_less_than_1261_over_100": true,
+    "one_plus_two_sqrt34_greater_than_1261_over_100": true
+  },
+  "integer_rank_quadruples_checked": 491401,
+  "rank_patterns_surviving_relaxed_threshold_13": [
+    [
+      1,
+      35,
+      35,
+      1
+    ],
+    [
+      1,
+      36,
+      35,
+      1
+    ],
+    [
+      1,
+      35,
+      36,
+      1
+    ],
+    [
+      1,
+      36,
+      36,
+      1
+    ],
+    [
+      35,
+      1,
+      1,
+      35
+    ],
+    [
+      35,
+      1,
+      1,
+      36
+    ],
+    [
+      36,
+      1,
+      1,
+      35
+    ],
+    [
+      36,
+      1,
+      1,
+      36
+    ]
+  ],
+  "rank_products_at_least_35": [
+    [
+      6,
+      6,
+      36
+    ]
+  ],
+  "finite_field_swap_controls": 180,
+  "minimum_possible_seed_dimension_for_this_criterion": 7,
+  "does_not_exclude_other_amplification_methods": true
+}
