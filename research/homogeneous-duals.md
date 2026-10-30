@@ -378,6 +378,11 @@ The effective-pieces interface is defined in
 The complete pieces differ from the original ones. No claim identifies
 their matrix ranks with their declared channel counts. A better rank
 analysis of this homogeneous family remains open.
+The later [primitive central-rank theorem](primary-central-gram.md) proves
+that alternating cancellation disappears on primitive input pairs after
+an invertible row swap. It identifies that restricted rank with the
+joint primitive fusion image. An asymptotic bound for that image, and
+the full central-piece rank, remain separate questions.
 
 ## 7. Exact checks and reproduction
 

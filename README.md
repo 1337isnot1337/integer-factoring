@@ -83,6 +83,10 @@ Its [binary-label extension](research/binary-prefix-top-channel.md) proves
 `log2 rank(U_lambda)=sqrt(2) lambda+O(log lambda)` on the actual label set.
 Consequently, separate lossless compression of the existing factor vectors
 cannot improve their leading width sum. Joint refactorization remains open.
+The [fixed-defect extension](research/near-ones-labels.md) gives the same
+restriction for the natural family of partitions padded with many ones.
+Its exact support calculation also shows why annihilation terms prevent
+a direct cutoff by partition defect.
 An [independent finite checker](research/half-piece-rank.md) also checks
 the two operator orders, crossing sums, and small binary-label restrictions.
 The theorem does not settle the rank of the complete central piece.
@@ -95,6 +99,11 @@ sizes and generation costs, and verifies the complete crossing interface.
 It retains `rho=1/sqrt(2)` and exponent `1/2`; smaller ranks for its complete
 pieces remain an open route. Its [exact checks](evidence/homogeneous-duals.json)
 cover the dual pairing, operator identities, and complete crossing sums.
+On primitive inputs, a [central-piece rank identity](research/primary-central-gram.md)
+goes further: an invertible row swap gives a positive Gram form, so
+alternating terms cannot cancel its primitive fusion image. The size of
+that image still needs an asymptotic bound. This restricted identity does
+not establish optimality of the full central piece.
 
 Run `make verify-frontier` for these exact checks. The strongest complete
 ordinary factoring argument here remains exponent `1/2`.
@@ -281,6 +290,13 @@ requires real-number approximation in the algorithm.
 - [Actual binary-label channel rank](research/binary-prefix-top-channel.md):
   a sharp leading rank with logarithmic error, its lossless-compression
   consequence, and [finite exact checks](evidence/binary-prefix-channel.json).
+- [Near-all-ones labels](research/near-ones-labels.md): the fixed-defect
+  embedding, its factor-rank restriction, and exact support and small-rank
+  [checks](evidence/near-ones-channels.json).
+- [Primitive central-piece rank](research/primary-central-gram.md): an
+  all-weight Gram identity after a row swap, with
+  [exact rational checks](evidence/primary-central-gram.json). A large-image
+  asymptotic theorem remains open.
 - [Baseline audit](research/baseline-audit.md): exact depth recurrence,
   contraction, all-level cost bound, and machine-cost bridge.
 - [Verified k6 theorem](research/verified-k6.md): complete machine proof,
