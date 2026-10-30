@@ -55,7 +55,7 @@ make verify-post-half     # Larger optional rank tests
 make verify-docs          # Local Markdown-link check
 ```
 
-The Python checks use Python 3 and its standard library. Some optional checks use NumPy for speed. Native crossing checks also require a C++17 compiler.
+The Python checks use Python 3 and its standard library. Some optional checks use NumPy for speed. Native crossing checks also require a C++20 compiler.
 
 For the Lean builds, install the stated Lean release, Lake, Git, and the prerequisites in the corresponding scripts. The scripts fetch pinned upstream revisions.
 
@@ -111,6 +111,8 @@ The [26-label coefficient algebras](research/symplectic-radical-seed-algebra.md)
 The [graded Ward factorization](research/noncommutative-crossing-ward-rank-descent.md) bounds restricted coefficients through smaller exterior-grade rectangles. Its [exact rectangular evaluator](research/ward-code-rank-bounds.md) handles full codes with more than `4e14` labels using explicit blocks of size at most 80 in the recorded example. The resulting upper bound still misses the target. Two actual overlapping-form codes on 6 and 34 labels also have complete binary exclusions, with all centered jets checked against the Ward bounds.
 
 For odd-dimensional cubic radical codes, an [all-field output-map theorem](research/cubic-radical-output-maps.md) gives `S >= d(d-1)/sqrt(2)` for every syndrome-preserving left inverse and even for mixtures of such output maps. This closes that output family while leaving arbitrary left inverses open. Exact cyclic and circulant profiles, including cyclic examples through 1,023 labels, accompany the proof.
+
+An [untouched-output gate](research/cubic-output-perturbations.md) also excludes every single-output-row perturbation of the seven-label cubic construction over all characteristic-two fields. The corresponding 1,960 triple-monomial corrections were checked literally. [Mixed-grade radical codes](research/symplectic-mixed-grade-codes.md) require a separate endpoint repair; constant row normalization and grade balancing both give exact 28-label crossings, but their recorded finite coefficient spaces do not pass the seed threshold.
 
 The [uniform six-pair certificate](research/pfaffian-p6-boundary-orbit-barrier.md) now excludes every boundary section that cancels `p^6`, with binary coefficient recombinations: its rank sum is at least 834. This covers all active isometries and radical additions. Separate [finite-size gates](research/noncommutative-crossing-finite-gates.md) exclude every crossing seed on at most five labels, over every field, and every orbit-kernel seed on a non-elementary group of order at most eight.
 

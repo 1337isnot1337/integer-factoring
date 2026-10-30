@@ -60,6 +60,7 @@ verify-native-crossings:
 	python3 tools/check_pfaffian_span_f4.py --basis evidence/pfaffian-basis-all_P2_L2.json --screen build/native/pfaffian-span-F4.jsonl --output build/native/pfaffian-span-audit.json
 	$(CXX) -O3 -std=c++20 -Wall -Wextra -Werror tools/screen_weighted_pfaffian_span.cpp -o build/native/weighted-pfaffian-screen
 	python3 tools/check_symplectic_seed_tensor_fields.py --types evidence/symplectic-seed-tensor-modules-certificate.json --power 2 --native $(CURDIR)/build/native/weighted-pfaffian-screen --compare-binary evidence/symplectic-seed-tensor-modules.json --export-dir build/native/seed-power-2 --output build/native/seed-power-2-audit.json
+	python3 tools/check_symplectic_mixed_grade_codes.py --native $(CURDIR)/build/native/pfaffian-span-screen --field4 --export-dir build/native/mixed-grade --output build/native/mixed-grade-audit.json
 
 verify-post-half:
 	python3 tools/check_half_piece_ranks.py --full
@@ -77,6 +78,7 @@ verify-post-half:
 	python3 tools/check_stable_pfaffian_coordinates.py
 	python3 tools/check_additional_crossing_screens.py
 	python3 tools/explore_symplectic_boundary_codes.py --cases 4:4 --optimize
+	python3 tools/explore_cubic_off_syndrome_outputs.py --output /tmp/integer-factoring-cubic-output-corrections.json
 
 verify-frontier:
 	python3 tools/check_piece_transfer.py
