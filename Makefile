@@ -29,6 +29,9 @@ verify-further:
 	python3 tools/check_binary_energy_symmetry.py
 	python3 tools/check_weighted_energy.py
 	python3 tools/check_witt_interfaces.py
+	python3 tools/check_weighted_weyl_interfaces.py
+	python3 tools/check_weighted_weyl_matching.py
+	python3 tools/check_weighted_weyl_filtration.py
 
 verify-energy-full:
 	python3 tools/check_weighted_energy.py --full

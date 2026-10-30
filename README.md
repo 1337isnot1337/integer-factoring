@@ -95,6 +95,8 @@ The [finite-state polynomial families](research/finite-state-pairing-crossings.m
 
 The [Witt state-space construction](research/witt-duality-and-vertex-jets.md) proves an exact odd Gram determinant and effective homogeneous duals at every energy. It restores the pairing on a space with binary-partition growth. A separate rank budget prevents a direct small-window substitution, and the tested scalar exchange interface fails; the duality result supplies no stronger factoring exponent.
 
+The [weighted Weyl construction](research/weighted-weyl-and-multivariate-extraction.md) gives a different exact crossing with ordinary occupation carries and explicit factor channels. Its original coefficient span has an [all-energy detecting row filtration](research/weighted-weyl-row-filtration.md), which prevents a half-rate improvement. At energy 32, an [exact protected minor](research/weighted-weyl-protected-minor.md) also excludes arbitrary recombinations of all external symmetry images. The same construction note extends finite-jet extraction to several parameters, with its coefficient cost included. The three standard-library checks are part of `make verify-further`.
+
 ## Contribution and attribution
 
 Start with [CONTRIBUTING.md](CONTRIBUTING.md) and [autoresearch.md](autoresearch.md). Coordinate new research through [issue #8](https://github.com/1337isnot1337/integer-factoring/issues/8). Document source revisions, proof status, reproduction commands, and remaining gaps.

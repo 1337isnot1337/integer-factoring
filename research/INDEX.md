@@ -14,6 +14,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Weighted Weyl and multivariate extraction](weighted-weyl-and-multivariate-extraction.md): an exact occupation crossing, both supplied channel factorizations, and charged multivariate coefficient extraction; the direct profiles do not improve the score.
 - [Witt duality and vertex jets](witt-duality-and-vertex-jets.md): an explicit odd Hall determinant and length-unitriangular vacuum maps give effective homogeneous duals at all weights; the crossing and rank-budget obligations remain distinct.
 
 - [Finite-state polynomial crossings](finite-state-pairing-crossings.md): explicit order-dependent identities, exact XOR-circulant rank reduction, and the complete 88,006-model finite screen.
@@ -43,6 +44,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Obstructions and work beyond 1/2
 
+- [Weighted Weyl row filtration](weighted-weyl-row-filtration.md): an actual common module filtration proves a full-row-rank detecting summand at every power-of-two energy, excluding the original coefficient span.
+- [Weighted Weyl protected minor](weighted-weyl-protected-minor.md): an exact 1,821-pair witness excludes the entire coefficient and external-symmetry span on the 202 labels of energy 32.
 - [All-field binary-energy shell symmetry](binary-energy-symmetry-barrier.md): an explicit balanced-layer embedding forces `rho >= 3/4` for every equal-weight-class-invariant crossing decomposition.
 - [Weighted-energy reciprocal pencil](weighted-energy-reciprocal-pencil.md): genuine projected tilting blocks prove the exact leading optimum `rho = 1` for the full characteristic-two coefficient/symmetry span.
 - [Lacunary kernel boundary](lacunary-kernel-boundary.md): binary-partition state growth, the exact scalar Artin--Schreier fixed field, and the limits of finite scalar locality; other exchange relations remain open.
