@@ -46,6 +46,7 @@ verify-search-native:
 	python3 tools/check_square_zero_rank_reduction.py
 	python3 tools/check_two_state_run_profile.py
 	python3 tools/check_parity_matrix_crossings.py
+	python3 tools/check_site_weight_crossings.py
 
 verify-witt-full:
 	python3 tools/witt_artin_hasse.py --h 32 --gram
