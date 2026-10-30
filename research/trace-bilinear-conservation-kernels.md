@@ -13,7 +13,9 @@ r(T_K)c(T_K)\ge d\,\operatorname{rank}(K)^2
 
 even when the coefficient field is `F_2`.
 
-The first concrete parameters used here are `t=33`, `k=11`, and `d=2^33`.
+A [smaller exact coefficient certificate](trace-kernel-small-certificate.md)
+subsequently gives `t=19,k=7`, the first possible extension degree in this
+trace-product family. The symbolic parameters proved here are `t=33`, `k=11`, and `d=2^33`.
 The kernel is binary and has
 
 ```math

@@ -34,6 +34,9 @@ verify-further:
 	python3 tools/check_binary_two_piece_f4_boundary.py
 	python3 tools/check_three_piece_binary_boundary.py
 	python3 tools/check_four_piece_f4_boundary.py
+	python3 tools/check_observable_transition_realization.py
+	python3 tools/check_observable_rank_detector.py
+	python3 tools/check_mismatched_commutator.py
 	python3 tools/check_twisted_channel_walks.py
 	python3 tools/check_channel_flow_duals.py
 	python3 tools/check_component_channel_walks.py
@@ -67,6 +70,7 @@ verify-search-native:
 	python3 tools/check_weyl_rank_one_ideal.py --energy 8
 	python3 tools/check_odd_weyl_spectrum.py
 	python3 tools/check_mismatched_weyl_spectrum.py
+	python3 tools/check_trace_kernel_support.py
 
 verify-weyl-orbit:
 	python3 tools/check_weyl_rank_one_ideal.py
