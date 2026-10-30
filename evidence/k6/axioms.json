@@ -1,0 +1,34 @@
+{
+  "protected_reference_files_unchanged": [
+    "Challenge.lean",
+    "FactoringAux/Definitions.lean",
+    "lake-manifest.json",
+    "lean-toolchain"
+  ],
+  "checked_declarations": [
+    {
+      "declaration": "Factoring.K6.certified_improvement",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.K6.factoring_real_rate",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.K6.factoring_root_rate",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  ]
+}

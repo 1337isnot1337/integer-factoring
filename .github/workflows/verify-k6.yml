@@ -3,8 +3,10 @@ name: Verify complete k6 factoring theorem
 on:
   push:
     paths:
-      - 'variants/k6/**'
+      - 'variants/k6/FactoringK6/**'
+      - 'variants/k6/reference.patch'
       - 'tools/check_k6.sh'
+      - 'tools/check_k6_receipt.py'
       - 'upstream.lock.json'
       - '.github/workflows/verify-k6.yml'
   workflow_dispatch:

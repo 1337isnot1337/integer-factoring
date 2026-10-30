@@ -1,6 +1,7 @@
 # Integer factoring bounds
 
 [![Verify research certificates](https://github.com/1337isnot1337/integer-factoring/actions/workflows/verify.yml/badge.svg)](https://github.com/1337isnot1337/integer-factoring/actions/workflows/verify.yml)
+[![Verify complete k6 theorem](https://github.com/1337isnot1337/integer-factoring/actions/workflows/verify-k6.yml/badge.svg)](https://github.com/1337isnot1337/integer-factoring/actions/workflows/verify-k6.yml)
 [![License: Apache 2.0](https://img.shields.io/badge/license-Apache%202.0-59636e)](LICENSE)
 
 An open research effort on deterministic integer factoring, targeting the
@@ -14,6 +15,15 @@ bound counts bit operations for every input.
 [coordination board](https://github.com/1337isnot1337/integer-factoring/issues/8)
 and [open pull requests](https://github.com/1337isnot1337/integer-factoring/pulls)
 for overlap; post your scope and handoff on the board.
+
+Search the live board and open work alongside this checkout's research notes:
+
+```sh
+python3 tools/find_overlap.py grouping crossing
+```
+
+This read-only helper requires GitHub CLI access. Results are leads, not a
+reservation or a novelty check; it reports which sources it did not search.
 
 **Keep this README current.** Changes to results, evidence, verification, or
 open obligations must update the relevant status, links, and reproduction
@@ -34,11 +44,19 @@ input/output and machine-time definitions. The actual grouping program changes
 from `G = 3K^8`, `K_next = 9K^16` to `G = 5K^6`, `K_next = 25K^12`.
 The starting group count remains 48.
 
-**Verification checkpoint:** all eight proof modules and the closed endpoint
-passed an isolated local Lean 4.35.0 build. The final axiom reports contain only
-`propext`, `Classical.choice`, and `Quot.sound`. A fresh-source rebuild and
-hosted reproducibility check are underway; the final verification record is
-not yet published.
+**Verified:** a fresh-source Lean 4.35.0 build completed all 2,252 jobs,
+including the modified `Solution` and all eight new proof modules. A separate
+[GitHub Actions rebuild](https://github.com/1337isnot1337/integer-factoring/actions/runs/41000040607)
+also passed all 2,252 jobs. The three final axiom reports contain only
+`propext`, `Classical.choice`, and `Quot.sound`.
+The [verification record](evidence/k6/README.md) includes source hashes,
+the complete compressed local build log, and the fresh endpoint reports.
+
+This meets the official scoring criterion for `alpha = 1/30`, above the
+reference's listed score 0. The same machine works for every positive scoring
+tolerance; only the eventual input threshold changes. The
+[rate and score proof](research/certified-k6.md) gives the exact statement.
+No leaderboard submission or acceptance is claimed.
 
 The exact comparison `log(12/11)/log(16) < 1/30` is also kernel checked.
 This compares asymptotic upper-bound exponents, not measured runtimes or a
@@ -46,14 +64,18 @@ lower bound on the reference machine. The square-root-logarithm conjecture
 remains open here.
 
 [Closed theorem](variants/k6/FactoringK6/Certified.lean) ·
+[Proof and score](research/certified-k6.md) ·
+[Semantic and source audit](research/k6-proof-audit.md) ·
 [Variant and reproduction](variants/k6/README.md) ·
 [Fresh-source verifier](tools/check_k6.sh)
 
 Run `make verify-k6` with Lean 4.35.0 and Lake on `PATH`. The verifier rebuilds
 the modified reference program and the complete rate proof in a new source
 tree, checks protected definitions and pinned dependencies, and prints the
-endpoint axioms again. The separate [k6 workflow](.github/workflows/verify-k6.yml)
-runs on relevant pushes without duplicating pull-request builds.
+endpoint axioms again. It rehashes the copied sources before issuing a success
+receipt; a failed rerun invalidates old receipts. The separate
+[k6 workflow](.github/workflows/verify-k6.yml) runs on proof, patch, verifier,
+and lock-file pushes without duplicating pull-request builds.
 
 ## Stronger candidate: grouping and crossing compression
 
@@ -82,6 +104,18 @@ checked local lemmas establish only their stated scope.
 [Crossing construction](research/crossing-compression.md) ·
 [Formal verification evidence](evidence/formal-verification.json)
 
+Two further directions have separate scope:
+
+- [Bounded-edge grouping](research/bounded-edge-grouping.md), based on the
+  [dense-grouping argument](research/dense-grouping.md), gives smaller ordinary
+  mathematical grouping bounds and exact finite checks. Its degree-two
+  schedule still needs a uniform evaluator and a complete machine-time proof.
+- [Appendix B integration](research/appendix-b-factoring-route.md) identifies
+  a source-pinned route toward exponent `1/2`. The compatible dependencies,
+  table adapters, top constructor, and factoring-machine composition remain open.
+
+Neither direction is included in the verified `1/30` result.
+
 ## Baseline
 
 The starting point is Isaac Rudich and Louis-Martin Rousseau's
@@ -94,13 +128,13 @@ Its published Lean theorem establishes one deterministic machine with time
 
 The repository contains ordinary mathematical proofs, exact finite checks,
 Lean-checked local improvements, a quantitative bound for the unchanged reference
-machine, and the new k6 machine theorem above. The k6 clean-source verification
-is pending at this checkpoint. The stronger compressed candidate still lacks
+machine, and the new k6 machine theorem above. The k6 theorem has passed local
+and hosted fresh-source builds. The stronger compressed candidates still lack
 a complete machine theorem.
 
 | Result | Value | Evidence and scope |
 | --- | --- | --- |
-| Degree-twelve modified factoring machine | `alpha = 1/30 = 0.033333...` | Closed endpoint passed local Lean compilation; fresh-source and hosted verification pending |
+| Degree-twelve modified factoring machine | `alpha = 1/30 = 0.033333...` | Closed machine and real-rate theorem; fresh-source local and hosted builds passed |
 | Explicit analysis of the unchanged baseline | `alpha = log(12/11)/log(16) = 0.0313827205...` | Handwritten derivation from the pinned source's inequalities |
 | Explicit time bound for the reference machine | `C * 2^(C * (explicitZu(n) + 1))` | Lean-checked bound for one finite-alphabet factoring machine; logarithmic-power conversion remains handwritten |
 | Grouping with independent accuracy | `g = O(D^2 K^2 log K)` | Matching decomposition, Holder's inequality, and an explicit deterministic search |
@@ -119,6 +153,11 @@ requires real-number approximation in the algorithm.
 
 ## Proofs and certificates
 
+- [Certified k6 bound](research/certified-k6.md): the complete theorem, exact
+  exponent comparison, official score implication, and machine-cost proof.
+- [K6 audit](research/k6-proof-audit.md) and [build evidence](evidence/k6/README.md):
+  preserved problem definitions, actual changed program, source checks, and
+  completed verification results.
 - [Baseline audit](research/baseline-audit.md): exact depth recurrence,
   contraction, all-level cost bound, and machine-cost bridge.
 - [Grouping theorem](research/grouping-improvement.md): complete concentration
@@ -141,7 +180,8 @@ requires real-number approximation in the algorithm.
 - [ExplicitChain.lean](formal/ExplicitChain.lean): a checked bound on every
   chain exponent and a complete time bound for the unchanged reference machine.
   This formal envelope retains the source's `23/24` contraction; the sharper
-  `11/12` analysis and the proposed modified machine are separate work.
+  `11/12` baseline analysis remains handwritten. The k6 machine has the separate
+  closed proof described above.
   [Verification evidence](evidence/formal-verification.json) records source hashes
   and the allowed axiom list.
 
@@ -166,8 +206,9 @@ make verify-formal
 The script fetches the pinned public reference, rebuilds its `Solution`, and
 checks every new formal file. It rejects axiom reports containing anything
 outside `propext`, `Classical.choice`, and `Quot.sound`. The GitHub Actions workflow
-specifies the same checks with a pinned Lean archive and checkout action. No leaderboard
-submission has been made.
+specifies the same checks with a pinned Lean archive and checkout action. It runs
+for pull requests, pushes to `main`, and manual dispatch; branch pushes without a
+pull request do not start CI. No leaderboard submission has been made.
 
 The [workflow badge](https://github.com/1337isnot1337/integer-factoring/actions/workflows/verify.yml)
 shows current GitHub Actions results. For the recorded local reference build and

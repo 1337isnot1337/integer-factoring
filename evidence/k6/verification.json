@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "status": "success",
+  "verified_at_utc": "2026-10-30T04:04:21.868615+00:00",
+  "reference_commit": "c91cc3f4947caca8977e81a5d14244f73b5ae2b1",
+  "build_id": "build.UAZKv1E8",
+  "source_manifest_sha256": "8523161194d43ff499dee16d2b9e4325630fecfd88d9256f704d6b301949e15a",
+  "patch_sha256": "cc098155c5505cb3e04212c673ab1cc86e3a6639b6b870389c25e20f8ae22e6e",
+  "build_source_sha256": {
+    "FactoringAux/EngineCostDeep.lean": "9116193944d06e64cb21735739d350210bd2fc891214555dae70f1458de573d2",
+    "FactoringAux/EngineCostRate.lean": "5bbe792f550f476dd3cd4e656ef0d279f4f98c2630cab05ae467fed093ee7ddc",
+    "FactoringAux/EngineCostReq.lean": "244fd1770dc888cde919b9c67a5a24cfbe94c1a0d1d84fd4291f68d2272d1299",
+    "FactoringAux/EngineCostTop.lean": "6e5f10038ce523dd7e24d8b3c504867aeb2c166af7e7e96221e6d33441741637",
+    "FactoringAux/EngineGroup.lean": "3c355916ef5aabdb96a0cbdddab5f20fee9c880b4565f685c0c11a1ff2e70bd4",
+    "FactoringAux/EngineLevelEx.lean": "f387e71c04940e3ffaa708639a3a010366408b35c9ae1ef6ed10b7b9fd052bc0",
+    "FactoringAux/EngineTop.lean": "3eace2f77db37069ba1dc53c4789d4493e1f25f5969a21dc762ca7eb38b8ba64",
+    "FactoringAux/GroupingThreshold.lean": "d2f0f2e60e365841a409abc72f1afefc11ccfc7df2686a071ce6af3d302779ff",
+    "FactoringAux/UniCostDm.lean": "db8edb560235980e90e000992c01b13ada30d5726831afdf4735c4b7afdca9d4",
+    "FactoringAux/UniCostExp.lean": "c2a8f73b11d1ba14fddce3d5e9c4d2085913e201afe371b5d91c6a1c49a5e24a",
+    "FactoringAux/UniCostLvl.lean": "b15f249e43a26bce3ab450a8eb1bf8bcf0f5772f54a2958b596546b6dee03e17",
+    "FactoringAux/UniCostPath.lean": "9064f1f6951a03e4b9700e41db13b906fdc72de3828789c453d662c3e9667093",
+    "FactoringAux/UniCostSetup.lean": "d72a905bc78783f4172ac882378cea9d4767255ef1401af050d08fde9639fa28",
+    "FactoringAux/UniCostTop.lean": "71a2f707bb1ec0dbb54068e60c9d00ff195ae580c5fbcdf7e11975929eb47c4e",
+    "FactoringAux/UniDmSpec.lean": "a115f6ae3be888dcc88488c1cd1499cbe84d7a1aa4481cd94390a1266fd28114",
+    "FactoringAux/UniEngine.lean": "45b059b53f1de447b630ed30d5abebcdfa5c8f4700ffe63172ea64067e183df9",
+    "FactoringAux/UniExp.lean": "155f4e273890804a6c693edebf2f25763aca94a236091d5e7f7dd4feb4c98ffe",
+    "FactoringAux/UniExpChain.lean": "bf346e1ea1d33bdfe720776fcad6cdf4e05ed37a2d274edfe5bb6c50d1fb9641",
+    "FactoringAux/UniInst.lean": "8f5f782586b2878554d9b0aa9b1b5374857f5cc12ea0ea21fc7970d022977aca",
+    "FactoringAux/UniLevelSpec.lean": "e234a2fadff0fd08d8c1300959802bd00344c94aa0aaa9d74449e04da0afd8bc",
+    "FactoringAux/UniLevelV.lean": "e05a38369ae31faabcbff41503e9abfe4f57b84d4812634b1b3075fff7b77124",
+    "FactoringAux/UniMain.lean": "22d91c4f3dfc2f5ba27b3e371d81ff5445df5accbdcfbc3c9ab932fae95230c0",
+    "FactoringAux/UniParams.lean": "6e38e689694a5fd84fd1fd6f726736134b52c619d75816085911b2bf39f10b47",
+    "FactoringAux/UniSet.lean": "b5fcc5472da3cf106ab9cf6f1da2fe27fe01561d61f374c33d4d3857a5292129",
+    "FactoringAux/UniTopSpec.lean": "47f0570ce1e68d8b1af2a8c3217cf8d6b7097aaea29d34f94087b6a88413841a",
+    "FactoringAux/UniTopV.lean": "ba39a304999b14f8035360663cb0f3ff7efa0c2511d1939580a062f5472c1e0e",
+    "Challenge.lean": "c3adce9c7a04732442b615e69b3d33960ebc61dcacc5d281797c303d266ae12b",
+    "FactoringAux/Definitions.lean": "13b188fc63a27dd7ea4766abd5d66a5b78adb5793d4c1d25196bf844fc63df49",
+    "lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lake-manifest.json": "f880552a4dd7731a54cad0ce02658a42082cbc439d04146b178df42fd15f1ecc",
+    "FactoringK6/BottomException.lean": "0281d6f0cf0baa133fff6963a33c07593da9d113099089ce53348c2c7caf4570",
+    "FactoringK6/BudgetBounds.lean": "b07d26f7207938aab116a6e89a1800699b3acbd3eddc4ab473dd61b0bfaf738a",
+    "FactoringK6/Certified.lean": "cb91ec426823aeb852ad07160a5779b068ac42b7a6acb28e02c45c63eedbc27c",
+    "FactoringK6/ChainEnvelope.lean": "b72d9c44b731bf70d1b2d5e244dd6b5a29fb48a15b583451485bd1e59e283259",
+    "FactoringK6/MachineBridge.lean": "f0421b61c1487428865f08e7a888d7a54aada4c13e60bb7373dad51467193201",
+    "FactoringK6/Quantitative.lean": "447ff59e91d3b4f2a202473eb97e9c0689a73d4184a440e17084c584e978b0b8",
+    "FactoringK6/RateArithmetic.lean": "9c2e31e121b977f115e75eb072ea70caaf11837ee3b893a911dfb2425af304da",
+    "FactoringK6/RateInterpretation.lean": "283d47609bcaf7decc109a8f746d72ec772c8b8f0ae317c03b0fcec920382310"
+  },
+  "root_proof_sha256": {
+    "variants/k6/FactoringK6/BottomException.lean": "0281d6f0cf0baa133fff6963a33c07593da9d113099089ce53348c2c7caf4570",
+    "variants/k6/FactoringK6/BudgetBounds.lean": "b07d26f7207938aab116a6e89a1800699b3acbd3eddc4ab473dd61b0bfaf738a",
+    "variants/k6/FactoringK6/Certified.lean": "cb91ec426823aeb852ad07160a5779b068ac42b7a6acb28e02c45c63eedbc27c",
+    "variants/k6/FactoringK6/ChainEnvelope.lean": "b72d9c44b731bf70d1b2d5e244dd6b5a29fb48a15b583451485bd1e59e283259",
+    "variants/k6/FactoringK6/MachineBridge.lean": "f0421b61c1487428865f08e7a888d7a54aada4c13e60bb7373dad51467193201",
+    "variants/k6/FactoringK6/Quantitative.lean": "447ff59e91d3b4f2a202473eb97e9c0689a73d4184a440e17084c584e978b0b8",
+    "variants/k6/FactoringK6/RateArithmetic.lean": "9c2e31e121b977f115e75eb072ea70caaf11837ee3b893a911dfb2425af304da",
+    "variants/k6/FactoringK6/RateInterpretation.lean": "283d47609bcaf7decc109a8f746d72ec772c8b8f0ae317c03b0fcec920382310"
+  },
+  "log_sha256": {
+    "patch-check.log": "9e8fcee9b09aaff1a1bb47abc705353d1975247f8e9611d934fae4b1650a5a48",
+    "patch-apply.log": "3d1e63cbb68acf0bc5f0d95b85b927d6e2d8a2ec747a94ea5330f5aa8b1b4608",
+    "toolchain.log": "eb22144228dd41cd51a0c84af4f976cd0cef473102dcf99b60be756b11f2b95a",
+    "cache.log": "5d8ed8e576d6bbe678a48e0d0fa65fda9ffcb00ce9e332845ce6ed31da64dbc7",
+    "build.log": "c4180556c35b723daccde217b24d3087d6364a8cc33694dbb77dcf39a7cbf66d",
+    "Certified.log": "ee7fb20cd65890b3def07e8291beb2c53feae8c89b7b8becc457c5c627eec91f"
+  },
+  "axioms_receipt_sha256": "5ee968807d56c76ac015e1b2457c386829da1cc5f4f48e070e66c01980eef81a",
+  "checker_sha256": "5028de560d58543a6eb6b47eff939232a65581d117a31e3c37e973b85cb00f7e",
+  "checked_declarations": [
+    {
+      "declaration": "Factoring.K6.certified_improvement",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.K6.factoring_real_rate",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.K6.factoring_root_rate",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  ]
+}

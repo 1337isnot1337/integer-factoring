@@ -1,0 +1,8 @@
+2026-10-30T04:04:24.6014997Z info: FactoringK6/Certified.lean:60:0: 'Factoring.K6.factoring_root_rate' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T04:04:24.6017673Z info: FactoringK6/Certified.lean:61:0: 'Factoring.K6.factoring_real_rate' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T04:04:24.6019682Z info: FactoringK6/Certified.lean:62:0: 'Factoring.K6.certified_improvement' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T04:04:24.6064775Z Build completed successfully (2252 jobs).
+2026-10-30T04:04:26.5732894Z 'Factoring.K6.factoring_root_rate' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T04:04:26.5742200Z 'Factoring.K6.factoring_real_rate' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T04:04:26.5743078Z 'Factoring.K6.certified_improvement' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T04:04:26.7934140Z Verified k6 machine and rate. Logs: /home/runner/work/integer-factoring/integer-factoring/build/k6

@@ -19,6 +19,16 @@ if ! flock --nonblock "$factoring_lock_fd"; then
   exit 1
 fi
 
+# A failed rerun must not leave an earlier success receipt in this log folder.
+python3 - "$factoring_logs" <<'PY'
+from pathlib import Path
+import sys
+
+logs = Path(sys.argv[1])
+for name in ("axioms.json", "verification.json"):
+    (logs / name).unlink(missing_ok=True)
+PY
+
 factoring_cleanup() {
   factoring_status=$?
   if [[ -n "$factoring_build" ]]; then
@@ -128,7 +138,7 @@ for relative in sources:
     target = build / "FactoringK6" / relative.relative_to(prefix)
     target.parent.mkdir(parents=True, exist_ok=True)
     shutil.copy2(source, target)
-    hashes[str(relative)] = hashlib.sha256(source.read_bytes()).hexdigest()
+    hashes[str(relative)] = hashlib.sha256(target.read_bytes()).hexdigest()
 config = build / "lakefile.toml"
 parsed = tomllib.loads(config.read_text())
 if any(lib.get("name") == "FactoringK6" for lib in parsed.get("lean_lib", [])):
@@ -208,41 +218,7 @@ lake env lean FactoringK6/Certified.lean 2>&1 | tee "$factoring_logs/Certified.l
 factoring_check_fixed_inputs
 factoring_check_packages complete
 
-python3 - "$factoring_build/FactoringK6/Certified.lean" "$factoring_logs" <<'PY'
-import json
-from pathlib import Path
-import re
-import sys
-
-source = Path(sys.argv[1]).read_text()
-logs = Path(sys.argv[2])
-text = (logs / "Certified.log").read_text()
-build = (logs / "build.log").read_text()
-allowed = {"propext", "Classical.choice", "Quot.sound"}
-expected = set(re.findall(r"^\s*#print\s+axioms\s+([A-Za-z0-9_.']+)\s*$", source, re.MULTILINE))
-if not expected:
-    raise SystemExit("Certified.lean must print the axioms of its final theorem")
-if any(marker in text + build for marker in ("sorryAx", "uses 'sorry'", "error:")):
-    raise SystemExit("An incomplete or failed proof appears in the verification logs")
-reports = re.findall(r"'([^']+)' depends on axioms:\s*\[([^\]]*)\]", text, re.MULTILINE)
-reports += [(name, "") for name in re.findall(r"'([^']+)' does not depend on any axioms", text)]
-found = {}
-for declaration, values in reports:
-    axioms = {name.strip() for name in values.split(",") if name.strip()}
-    if axioms - allowed:
-        raise SystemExit(f"Unexpected axioms for {declaration}: {sorted(axioms)}")
-    found[declaration] = sorted(axioms)
-if expected - found.keys():
-    raise SystemExit(f"Missing fresh axiom reports: {sorted(expected - found.keys())}")
-summary = {
-    "protected_reference_files_unchanged": ["Challenge.lean", "FactoringAux/Definitions.lean"],
-    "checked_declarations": [
-        {"declaration": name, "axioms": found[name]} for name in sorted(expected)
-    ],
-}
-rendered = json.dumps(summary, indent=2) + "\n"
-(logs / "axioms.json").write_text(rendered)
-print(rendered, end="")
-PY
+python3 "$factoring_root/tools/check_k6_receipt.py" \
+  "$factoring_root" "$factoring_build" "$factoring_logs"
 
 echo "Verified k6 machine and rate. Logs: $factoring_logs"
