@@ -18,5 +18,6 @@ lemmas, complete proofs, and independent review; list unrun checks.
 State open obligations and the next question. Retain source and contributor
 credit and disclose substantial AI assistance.
 
-If this change affects a result, evidence, verification, or an open obligation,
-update the README's status, links, and reproduction instructions as appropriate.
+The main README must stay current. If this change affects a result, evidence,
+verification, or an open obligation, update its status, links, and reproduction
+instructions in this change. Link the coordination-board handoff when relevant.
