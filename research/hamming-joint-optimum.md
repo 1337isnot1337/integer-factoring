@@ -175,3 +175,14 @@ Fixed extension-field optimization remains a separate direction. The
 all-size joint-family construction remains effective, but a uniform rank
 saving is open. This exact finite optimum provides a reliable test case
 for that further analysis.
+
+## A strict extension-field scope control
+
+The row-rank lemma itself fails over `F_4`. An explicit tensor in the
+same 33-generator span has `ell=1`, row rank four, and column rank ten.
+The [stored coefficients](../evidence/hamming-joint-f4-probe.json) are
+reconstructed and checked by independent dense field elimination in
+`python3 tools/check_hamming_f4_probe.py`. Its product 40 does not improve
+the cutoff 25. This counterexample prevents extending the row-rank lower
+argument to larger fields; the optimized product cutoff over those fields
+remains a separate question.

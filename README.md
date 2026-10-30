@@ -158,6 +158,9 @@ from 36 to 25 with six pieces, independently replayed by
 proves 25 optimal in the complete 33-dimensional joint `F_2` span; replay
 `python3 tools/check_hamming_joint_lower.py` needs no SAT solver. Its rounded
 width sum is still six.
+An [explicit `F_4` scope control](research/hamming-joint-optimum.md#a-strict-extension-field-scope-control)
+shows that its row-rank lemma fails over extensions, without improving the
+rank-product cutoff; replay `python3 tools/check_hamming_f4_probe.py`.
 Run `python3 tools/check_hamming_sectors.py` and
 `python3 tools/check_hamming_complement.py` (or add `--full`).
 
