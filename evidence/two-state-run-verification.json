@@ -1,0 +1,11 @@
+{
+  "checker_sha256": "ddf78dd3214748d6dac1d7ab23076ab020ed3b6183f5b3ca6fa33b665d857a06",
+  "exhaustive_four_variable_polynomials": 65536,
+  "independent_full_tensor_cases": 12,
+  "independent_six_position_kernel_cases": 12,
+  "maximum_independent_comparison_length": 12,
+  "scope": "Exact compression and rank checks; no asymptotic contraction claim.",
+  "source_sha256": "408a3b7c6c5094bac92b5b37ba90dcc2a3c668e04de96b4cbdcf8aa70113e2f6",
+  "status": "passed",
+  "stored_independent_larger_profiles": 3
+}

@@ -48,10 +48,12 @@ make verify-frontier      # Focused research certificates
 make verify-post-half     # Larger optional rank tests
 make verify-further       # New transfers, arithmetic bounds, and word certificates
 make verify-energy-full   # Optional larger weighted-energy certificate
+make verify-search-native # Optional exact finite-state engines; requires C++17
 make verify-docs          # Local Markdown-link check
 ```
 
 The Python checks use Python 3 and its standard library. Some optional checks use NumPy for speed.
+The finite-state search-engine checks also require a C++17 compiler.
 
 For the Lean builds, install the stated Lean release, Lake, Git, and the prerequisites in the corresponding scripts. The scripts fetch pinned upstream revisions.
 
@@ -87,6 +89,8 @@ The [all-field binary-word theorem](research/all-field-binary-word-barrier.md) r
 See the [research index](research/INDEX.md) for completed arguments, scoped obstructions, and older candidates. Active work can also appear in [open pull requests](https://github.com/1337isnot1337/integer-factoring/pulls); branch research is not automatically a result on `main`.
 
 The same word certificate applies to [symmetric binary-energy shells](research/binary-energy-symmetry-barrier.md), giving `rho >= 3/4` for all fields. For the [specific reciprocal pencil](research/weighted-energy-reciprocal-pencil.md), a separate exact block argument proves the sharper optimum `rho = 1`. Other constructions on these low-growth spaces remain open. The [border-transfer theorem](research/border-and-nonunit-seed-transfer.md) makes polynomial or sufficiently precise truncated-parameter identities usable as exact finite seeds, with their coefficient-extraction costs included.
+
+The [finite-state polynomial families](research/finite-state-pairing-crossings.md) give exact order-dependent crossings outside the position-invariance assumption. An exhaustive screen covers 88,006 finite models and retains both maximum rank product and total rank sum. The [run-compressed rank algorithm](research/two-state-run-rank-compression.md) combines a local Jordan decomposition, interval types, and an exact quadratic-pivot identity to reach longer profiles. These algorithms and endpoint identities are proved; the finite profiles do not establish an improved asymptotic contraction.
 
 ## Contribution and attribution
 
