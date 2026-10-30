@@ -2,6 +2,7 @@
 
 Describe the change and its exact scope. For research, identify the claim as a
 bound, conditional result, finite certificate, obstruction, or partial result.
+Small corrections, reproductions, documentation, and scoped reviews are welcome.
 
 ## Sources and cost
 
@@ -21,3 +22,7 @@ credit and disclose substantial AI assistance.
 The main README must stay current. If this change affects a result, evidence,
 verification, or an open obligation, update its status, links, and reproduction
 instructions in this change. Link the coordination-board handoff when relevant.
+
+For a reviewer, identify one claim or command that can be checked independently.
+See [the review guide](../docs/REVIEWING.md). Maintainers record exact reviewed
+heads, retained sources, and dispositions in the review ledger.

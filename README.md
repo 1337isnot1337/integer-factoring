@@ -5,6 +5,10 @@
 
 This repository studies worst-case deterministic factoring. Given an integer `N >= 2` in binary, the machine outputs its smallest prime factor. Runtime is measured in finite-alphabet Turing-machine steps, with `n` equal to the input bit length.
 
+**Want to contribute?** [Start here](docs/START_HERE.md) for setup, a reading path,
+and small tasks. Reproductions, mathematical corrections, documentation, independent
+review, and scoped negative results are welcome.
+
 ## Main theorem: logarithmic saving exponent 1/2
 
 **Lean proves the exact pinned `Factoring.SqrtLogLogConjecture`:** one deterministic finite-alphabet machine computes the smallest prime factor for every input in time
@@ -14,7 +18,7 @@ T(n) <= C * 2^(C * n / (Nat.sqrt (Nat.log 2 n) + 1))
      = exp(O(n / sqrt(log n))).
 ```
 
-The constant `C` does not depend on the input. This gives score **`alpha = 1/2`** under the [Big O Speedrun rule](https://bigospeedrun.com/integer-factoring). The bound is asymptotic. It is not a practical factoring speedup, and independent review remains pending.
+The constant `C` does not depend on the input. This gives score **`alpha = 1/2`** under the [Big O Speedrun rule](https://bigospeedrun.com/integer-factoring). The bound is asymptotic and does not provide a practical factoring speedup. Big O Speedrun independently rebuilt commit `e91442d3` and accepted the theorem with both Lean and nanoda; see the [reviewer's report](https://github.com/1337isnot1337/integer-factoring/issues/28#issuecomment-6533697488) and [successful verifier run](https://github.com/bigospeedrun/verifier/actions/runs/41108289491). Broader mathematical review is welcome.
 
 The complete Lean endpoint is [`IntegerFactoring.HalfAppendix.sqrtLogLog_factoring`](formal-appendix/HalfTheorem.lean). It proves the source statement `Factoring.SqrtLogLogConjecture` and depends only on `propext`, `Classical.choice`, and `Quot.sound`. The proof covers the factoring-table constructor, deterministic grouping, value preservation, padding, prefix recovery, and the finite-alphabet machine bound.
 
@@ -73,6 +77,17 @@ See the [research index](research/INDEX.md) for completed arguments, scoped obst
 
 ## Contribution and attribution
 
-Start with [CONTRIBUTING.md](CONTRIBUTING.md) and [autoresearch.md](autoresearch.md). Coordinate new research through [issue #8](https://github.com/1337isnot1337/integer-factoring/issues/8). Document source revisions, proof status, reproduction commands, and remaining gaps.
+Start with the [contributor quickstart](docs/START_HERE.md) and
+[CONTRIBUTING.md](CONTRIBUTING.md). You can report a correction or reproduction
+without proposing a new bound. [Open a focused issue](https://github.com/1337isnot1337/integer-factoring/issues/new/choose)
+or choose an [available starter task](https://github.com/1337isnot1337/integer-factoring/issues?q=is%3Aissue%20is%3Aopen%20label%3A%22good%20first%20issue%22).
+
+For substantial research, read [autoresearch.md](autoresearch.md) and coordinate
+through [issue #8](https://github.com/1337isnot1337/integer-factoring/issues/8).
+Reviewers can use the [review guide](docs/REVIEWING.md) and
+[exact-head review ledger](docs/REVIEW_LEDGER.md). Document source revisions,
+proof status, reproduction commands, and remaining gaps. The
+[contribution record](CONTRIBUTORS.md) retains credit for useful partial and
+superseded work as well as incorporated results.
 
 The source factoring reduction and counting infrastructure are credited to Rudich and Rousseau. The Appendix B evaluator is credited to Anthropic. This repository's new integration and proof files used substantial OpenAI assistant support. The source-compatible license is [Apache-2.0](LICENSE).

@@ -19,9 +19,12 @@ the existing Appendix B clique-evaluation theorem of Claude (Anthropic)
 and the existing multiplication-network reduction of Isaac Rudich and
 Louis-Martin Rousseau. The new work supplies and pays for their written-table
 connection. It does not claim a new crossing decomposition or a new clique
-evaluator. The composition has not been formalized in Lean, independently
-reviewed outside this research session, or accepted by the leaderboard.
-The repository's separate Lean-certified endpoint remains `1/30`.
+evaluator. The composition is formalized in
+[HalfTheorem.lean](../formal-appendix/HalfTheorem.lean). Big O Speedrun
+independently rebuilt commit `e91442d3` with both Lean and nanoda and lists
+exponent `1/2` as Lean Verified; see the [reviewer's report](https://github.com/1337isnot1337/integer-factoring/issues/28)
+and [verifier run](https://github.com/bigospeedrun/verifier/actions/runs/41108289491).
+The earlier `1/30` k6 endpoint remains a separate Lean theorem.
 
 The two source revisions are fixed:
 
@@ -330,7 +333,8 @@ polynomial-time padded algorithm, its binary input and output, the
 finite-alphabet machine, and the discrete square-root-log bound. The final
 axiom report contains `propext`, `Classical.choice`, and `Quot.sound`, with
 no `sorryAx`. Run `make verify-half-appendix` to rebuild the pinned sources
-and audit the formal composition. Independent review is still outstanding.
+and audit the formal composition. The external rerun above checks this pinned
+endpoint; broader mathematical review of the written argument remains welcome.
 
 The existing half-pieces channel counts have a proved asymptotic barrier
 at `1/2` within that particular interface; see the evaluator audit.
