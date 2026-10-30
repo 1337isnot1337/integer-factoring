@@ -39,6 +39,7 @@ verify-frontier:
 	python3 tools/check_extension_descent.py
 	python3 tools/check_hamming_f4_probe.py
 	python3 tools/check_frozen_core_leak.py
+	python3 tools/check_word_symmetry_barrier.py
 	python3 tools/check_modular_central_rank.py
 	python3 tools/check_modular_binary_central_rank.py
 	python3 tools/check_three_label_span.py
