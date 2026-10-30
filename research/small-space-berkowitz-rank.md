@@ -2,6 +2,12 @@
 
 ## Result and use
 
+The later [polynomial-weighting construction](polylog-space-rank-recovery.md)
+removes the linear pivot-mask term below. It retains quasipolynomial time
+and gives `O(log m (log m+log q))` auxiliary bits for rank and requested
+affine coordinates. The scalar Berkowitz identities and the simpler
+mask-based algorithm in this note remain valid.
+
 An entry oracle for a matrix over a prime field is enough to compute its
 rank, retain a nonsingular pivot minor, test affine consistency, and
 recover requested solution coordinates in quasipolynomial time and

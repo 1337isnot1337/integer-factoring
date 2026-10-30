@@ -24,6 +24,7 @@ verify-further:
 	python3 tools/check_hankel_digit_box.py
 	python3 tools/check_padic_digit_carry.py
 	python3 tools/check_small_space_berkowitz.py
+	python3 tools/check_polylog_space_rank.py
 	python3 tools/check_border_nonunit_transfer.py
 	python3 tools/check_binary_energy_symmetry.py
 	python3 tools/check_weighted_energy.py

@@ -22,7 +22,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Finite-field rank specialization](finite-field-rank-specialization.md): every finite rank profile over an arbitrary field specializes exactly to a finite field; prime-field seeds approximate the same infimum, and ring factor-channel bounds specialize without increasing.
 - [Universal verified factoring search](universal-verified-factoring-search.md): the standard verified-search principle already gives one machine attaining the supremum score; direct constructions retain additional resource information.
 - [Optimized divisor-count bound](optimized-divisor-count-bound.md): a computable `q_*(n)=(1+o(1))n/log2 n` replaces the earlier auxiliary leading coefficient nine by one.
-- [Small-space Berkowitz rank queries](small-space-berkowitz-rank.md): `m^O(log m)` time and `O(m+log m log(mq))` auxiliary bits for rank, pivot minors, and affine recovery from an entry oracle.
+- [Polylogarithmic-space rank and affine recovery](polylog-space-rank-recovery.md): polynomial weighting and recomputed prefix bases give `m^O(log m)` time and `O(log m (log m+log q))` auxiliary bits over every prime field.
+- [Small-space Berkowitz foundation](small-space-berkowitz-rank.md): scalar characteristic-coefficient queries, division-free identities, and the earlier linear-space pivot-mask algorithm.
 - [Rank-sensitive digit-box Fourier contraction](hankel-digit-box-contraction.md): one restricted digit family reduces to an affine box sum; explicit outer traversal still has exponentially many full-rank frequencies.
 - [Base-prime carry lifts](padic-digit-carry-transfer.md): exact lifting, digit-pivot enumeration, dense Fourier support, and independent small-characteristic determinant accounting.
 - [Pieces-to-factoring transfer](pieces-to-factoring.md): conditional crossing-parameter transfer, with full bit-cost accounting.
