@@ -19,6 +19,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Scale-one modular transfer](scale-one-modular-transfer.md): fixed-field transfer and machine costs.
 - [Sparse divisor nonzeroness](sparse-divisor-nonzeroness.md): detection of divisors in weighted polynomial counts.
 - [Modular crossing](modular-crossing.md): normalized finite-field pieces and quotient construction.
+- [Modular angle factors](homogeneous-central-modular-symbols.md): Boolean-zeta symbols, a three-block polynomial-time Pfaffian, reciprocal coefficients, and exact parity support.
 - [Homogeneous duals](homogeneous-duals.md): alternative algebraic pieces and their checked identities.
 - [Near-ones label families](near-ones-labels.md): label construction and rank experiments.
 - [Binary-prefix top channel](binary-prefix-top-channel.md): structural analysis of channel widths.

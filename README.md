@@ -29,6 +29,7 @@ The composition uses the existing clique evaluator from [Anthropic's Appendix B]
 | Sharper k6 saving `log(12/11)/log(12) > 1/29` | Ordinary proof, not Lean-verified at this rate | [Rate derivation](research/k6-sharp-rate.md) |
 | Saving exponent above `1/2` | **Not established** | [Research index](research/INDEX.md) |
 | Simultaneous time and workspace at an enumerable seed endpoint | Ordinary conditional theorem; no larger numerical exponent | [Bounded selection and direct type channels](research/simultaneous-seed-endpoint.md) |
+| Polynomial-time modular angle-factor queries | Ordinary exact construction; channel ranks unchanged | [Three-block Pfaffian and transpose identity](research/homogeneous-central-modular-symbols.md) |
 
 The result table distinguishes verified machine bounds from conditional constructions and finite experiments. A merged PR or a passing finite test does not imply independent mathematical review.
 
@@ -72,6 +73,8 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 No uniform factoring exponent above `1/2` is proved here. One open approach seeks effective crossing pieces with total rank width `4*rho*lambda + O(log lambda)` for `rho < 1/sqrt(2)`. A suitable family could improve the evaluator bound, but finite rank improvements alone do not establish that inequality.
 
 The [simultaneous endpoint theorem](research/simultaneous-seed-endpoint.md) preserves the limiting seed score in both logarithmic running time and working space, even when useful certificates have arbitrary gaps, take arbitrarily long to generate, or use different coefficient fields. It uses bounded certificate selection and explicit amplified factor channels. It does not supply a better seed or an exact constant-factor bound at an endpoint approached without a convergence rate.
+
+A [three-block Pfaffian formula](research/homogeneous-central-modular-symbols.md) evaluates the existing characteristic-two angle factors in `O(h^4)` bit operations at partition weight `h`. An independent determinant-sum formula gives their exact reciprocal relation and shows that all odd angle and crossing-shift indices vanish. This complements the earlier four-block formula for complete pieces; it does not decrease their ranks or improve the factoring score.
 
 See the [research index](research/INDEX.md) for completed arguments, scoped obstructions, and older candidates. Active work can also appear in [open pull requests](https://github.com/1337isnot1337/integer-factoring/pulls); branch research is not automatically a result on `main`.
 
