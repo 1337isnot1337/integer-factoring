@@ -11,6 +11,16 @@ open Factoring.Aux
 
 namespace IntegerFactoring.HalfAppendix
 
+theorem selected_base_sizes_bound (s N k y P : ℕ) (hP : 2 ≤ P) :
+    pD s ≤ 2 ^ topEntryBits s P ∧ pZ s ≤ 2 ^ topEntryBits s P := by
+  let r : Fin (pA s) := ⟨0, pA_pos s⟩
+  let χ := selectedTopGrouping s N k y P hP
+  let cP := clMG s (3 * P ^ 8) (by positivity) (.faP r)
+  let cI := clMG s (3 * P ^ 8) (by positivity) (.ib r)
+  have hP' := selected_gate_kind_size_bound s N k y P hP (χ cP) cP (.faP r) rfl rfl
+  have hI := selected_gate_kind_size_bound s N k y P hP (χ cI) cI (.ib r) rfl rfl
+  exact ⟨by simpa [gsz] using hP', by simpa [gsz] using hI⟩
+
 theorem selected_faP_field (s N k y P : ℕ) (hP : 2 ≤ P) (γ : Fin P)
     (cluster : Fin (3 * P ^ 8)) (r : Fin (pA s))
     (hc : selectedTopGrouping s N k y P hP cluster = γ)
@@ -58,3 +68,4 @@ end IntegerFactoring.HalfAppendix
 #print axioms IntegerFactoring.HalfAppendix.selected_faQ_field
 #print axioms IntegerFactoring.HalfAppendix.selected_ib_field
 #print axioms IntegerFactoring.HalfAppendix.selected_mid_field
+#print axioms IntegerFactoring.HalfAppendix.selected_base_sizes_bound
