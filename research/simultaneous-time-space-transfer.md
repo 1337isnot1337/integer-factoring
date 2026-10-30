@@ -195,6 +195,34 @@ is absorbed by `F_beta(n)`, proving (1). The same fixed-ring algebra
 and odd-characteristic projection are established in
 [bit-tagged-witness-recovery.md](bit-tagged-witness-recovery.md).
 
+### An independent time consequence of the space bound
+
+After all uniform query routines are inlined, the construction is a
+halting deterministic finite-alphabet transducer. Use the standard
+space convention that counts visited work-tape cells, with a fixed
+number of tapes and heads. The read-only input tapes have `O(n)`
+cells and endmarkers; their heads stay within those endmarkers.
+The output is one-way write-only: its contents and current position
+cannot be inspected by the machine.
+
+An internal configuration consists of the control state, work-tape
+contents and head positions, and input-head positions. With `S`
+working bits there are at most `poly(n,S)c^S` such configurations
+for a fixed constant `c`. Output contents and its head position do
+not affect future transitions and can be omitted. A repeated internal
+configuration would therefore repeat forever, contradicting termination.
+Consequently the proved `S=O(F_beta(n))` bound also implies
+
+```math
+T\le\operatorname{poly}(n,S)c^S=\exp(O(F_\beta(n))).
+```
+
+Here `F_beta(n)` dominates `log(n+2)`. This supplies an independent
+time corollary for the actual uniform finite-tape implementation.
+It does not apply to an oracle machine before the oracle routines
+and their storage have been included. The explicit operation
+accounting above remains a direct verification of the construction.
+
 ## 3. What the local-space assumption covers
 
 The enumerator in assumption 3 must itself be a streamed algorithm.

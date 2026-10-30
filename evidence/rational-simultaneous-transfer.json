@@ -1,0 +1,49 @@
+{
+  "status": "pass",
+  "odd_modulus": {
+    "safe_modulus_cases": 1500,
+    "composite_moduli": 1070,
+    "homomorphism_identities": 2400,
+    "nonzero_rationals_reducing_to_zero": 1200
+  },
+  "rational_type_reduction": {
+    "enumerated_scalar_factors": 256,
+    "type_factorization_entries": 36864,
+    "type_channels": 128,
+    "crossing_entries": 544,
+    "vanishing_pieces_preserving_crossing": 4,
+    "fixture_rings": [
+      {
+        "modulus": 131073,
+        "denominator_product_bits": 17
+      },
+      {
+        "modulus": 131073,
+        "denominator_product_bits": 17
+      }
+    ]
+  },
+  "integer_bounds": {
+    "cutoff_and_height_bounds": 9012,
+    "block_coverage_cases": 36048,
+    "crude_volume_envelopes": 17
+  },
+  "composite_character_projection": {
+    "binary_character_orthogonality": 2046,
+    "paired_tag_bucket_projections": 1056,
+    "moduli": [
+      3,
+      9,
+      15,
+      21,
+      35,
+      131073
+    ]
+  },
+  "fixed_number_field": {
+    "rational_coordinate_identities": 1200,
+    "split_polynomial_zero_divisor_examples": 2,
+    "quotient_ring_character_identities": 32
+  },
+  "scope": "Finite interface checks; the contracting rational family remains a theorem hypothesis."
+}

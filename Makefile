@@ -17,6 +17,11 @@ verify-post-half:
 	python3 tools/check_half_restricted_labels.py
 
 verify-frontier:
+	python3 tools/check_direct_sublinear_counts.py
+	python3 tools/check_rational_simultaneous_transfer.py
+	python3 tools/check_minimum_cut_rank_budget.py
+	python3 tools/check_two_piece_rank_sum.py
+	python3 tools/check_permutation_coordinate_restrictions.py
 	python3 tools/check_swap_product_rank_sum.py
 	python3 tools/check_conserved_convolution.py
 	python3 tools/check_ideal_hankel_endpoint.py

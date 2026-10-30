@@ -37,8 +37,8 @@ in both cuts. The
 [relaxed transfer](subexponential-piece-transfer.md) applies at
 `rho=1/sqrt(2)` and at its piece-entropy endpoint `delta=1/2`.
 Consequently it retains the established half-rate factoring time.
-It also fits the packed linear-space evaluator in
-[linear-space-half-rate.md](linear-space-half-rate.md).
+It also fits the packed sublinear-space evaluator in
+[sublinear-space-half-rate.md](sublinear-space-half-rate.md).
 Neither conclusion improves the time exponent beyond one half.
 
 The improvement is in the local interface. The original large
@@ -209,11 +209,22 @@ validation fit (9). Enumerating the complete index set costs at most
 `|I_lambda|` times that bound, which is still `2^O(lambda)` as required
 by the relaxed interface.
 
-In the global grid recursion the larger piece descriptor costs
-`O(K_j^2 log|I_(lambda_j)|)<=O(K_j^2 lambda_j)=O(V_j)`
-bits at a level. Thus the geometric ancestor-volume argument for
-linear space remains valid. The top constructor and witness recovery
-are unchanged.
+In the global grid recursion, every active label length is at least
+`n^(1/4)/8`. The larger piece descriptors therefore occupy
+
+```math
+\sum_j O\!\left(K_j^2\log|I_{\lambda_j}|\right)
+ =O\!\left(\frac{\sum_j V_j}{\sqrt{\log(n+2)}}\right)
+ =O\!\left(\frac n{\sqrt{\log(n+2)}}\right).
+```
+
+All local workspaces remain linear in their label length. The packed
+assignment counters, streamed top queries, and paired-descriptor
+recovery consequently retain the same sublinear workspace bound.
+Equivalently, apply the
+[simultaneous transfer](simultaneous-time-space-transfer.md) with
+`alpha=delta=1/2`. Thus the nearly linear local queries and the
+global `O(n/sqrt(log n))` workspace can hold in the same construction.
 
 ## 5. Conditional regularization at every fixed exponent below one
 

@@ -40,7 +40,8 @@ reduces every local piece and factor query from `2^O(lambda)` time to
 `sqrt(log lambda) loglog lambda` bits and keeps their full piece tuples.
 The piece entropy is `O(lambda/sqrt(log lambda))`, so the proved
 endpoint transfer preserves the exact half exponent. The construction
-has linear local space and does not assume a new rank-profile gain.
+has linear local space and retains the global sublinear workspace
+bound above. It does not assume a new rank-profile gain.
 
 The [simultaneous transfer](research/simultaneous-time-space-transfer.md)
 extends the packed time and workspace argument to every supplied
@@ -51,12 +52,29 @@ power-saving width error. Its piece entropy is polylogarithmic and
 its scalar queries take quasipolynomial time. This includes the
 conditional endpoint `alpha=1`; it supplies no better crossing rate.
 
-The [integral counting transfer](research/integral-counting-transfer.md)
-gives a separate direct method for exact divisor-prefix counts in
-polynomial space at this time bound. Streamed integral Schur factors let the evaluator work
-directly modulo `2^(n+1)`. The residue is the exact count, so `n` prefix
-queries recover the least prime factor with polynomial recovery overhead.
-The proof includes every local query, ring operation, and recomputation.
+The [rational simultaneous transfer](research/rational-simultaneous-transfer.md)
+extends this conclusion to rational factors and fixed number fields,
+with polynomially many pieces, a power-saving width error, and the
+stated exponential bit-time local interface.
+An explicit odd composite modulus makes all required denominators
+invertible; no prime selection or factorization is needed. Logarithmic
+type blocking bounds the local workspace. The pinned source half-rate
+family supplies a second proof of the unconditional sublinear-space result.
+
+The [direct counting refinement](research/direct-sublinear-divisor-counts.md)
+computes an exact divisor-prefix count from **one weighted evaluator
+query**, with the same half-rate time and sublinear workspace. It uses
+the [integral Schur factors](research/integral-counting-transfer.md) and
+a modulus of `2^(q+1)`, where the uniform divisor bound gives
+`q=O(n/log n)`. The canonical residue is the integer count. Read-only
+interval endpoints need at most `2n+1` such queries. This counting method
+needs no preliminary factoring or witness isolation. The separate short
+descriptor method supplies least-factor and full-factorization outputs
+within sublinear space.
+For rational or fixed-number-field families at a supplied exponent,
+sequential generalized Chinese remainder reconstruction also gives
+direct counts with matched time and space through the conditional
+endpoint `alpha=1`. It uses polynomially many small-modulus queries.
 
 The [fixed-characteristic time–space route](research/rough-input-transfer.md)
 also gives polynomial space. Its [streamed local factors](research/modular-factor-space.md)
@@ -107,6 +125,11 @@ parameter bounds, computable pad, and prefix driver. These tests do not
 materialize the enormous evaluator or replace the infinite-input proof.
 
 ## Research beyond exponent 1/2
+
+The [30 October research report](research/oct30-progress.md) collects
+the current time-space results, exact counting methods, and scoped
+obstructions. Its [verification ledger](evidence/beyond-half-verification.json)
+records the source pins, checked files, and evidence limits.
 
 The [directions note](research/post-half-directions.md) records the initial
 search beyond `1/2`. It includes restrictions on the operator interfaces,
@@ -247,11 +270,19 @@ gives a sufficient all-size criterion from any finite certificate:
 `sum_i sqrt(r_i c_i) < d^(sqrt(2))` would improve the half exponent.
 It also proves that this particular criterion cannot succeed on at most
 five labels. The [swap/product rank theorem](research/swap-product-rank-sum.md)
-extends the exclusion through **twelve labels over every field**.
+first extends the exclusion through twelve labels over every field.
 Its proof gives `rank(Swap-P tensor Q)>=binom(d,2)`, with a sharper
-bound from the invertible part of `QP`. Exact rational rank-budget
-certificates then give a minimum seed size of thirteen. Better rank analysis
-of the grouped tensor coefficients remains a distinct possibility.
+bound from the invertible part of `QP`. The stronger
+[minimum-cut rank budget](research/minimum-cut-rank-budget.md) now
+excludes **every seed on two through twenty-one labels**, over every
+field. It combines `sum_i min(r_i,c_i)>=d`, higher-cut complement
+bounds, and exact rational certificates. A separate
+[two-piece theorem](research/two-piece-rank-sum-obstruction.md)
+excludes all decompositions with at most two nonzero pieces, in every
+dimension. A passing seed for this sufficient criterion therefore
+needs **at least twenty-two labels and three pieces**. These are
+constraints on that criterion; better rank analysis of grouped tensor
+coefficients remains a distinct possibility.
 
 The [streamed seed transfer](research/streamed-seed-transfer.md) strengthens
 the amplification interface to polynomial-time factor queries and
@@ -324,7 +355,8 @@ the rank problem to partial-partition coefficient tensors. Complete
 finite profiles record both the small gains and their later failures.
 
 The [full permutation-span obstruction](research/permutation-span-cycle-obstruction.md)
-goes beyond the original pieces: one common cycle-block functional
+works over fields of characteristic two and goes beyond the original
+pieces: one common cycle-block functional
 forces a large rank in both cuts of some summand in every linear
 recombination. It excludes the finite rank-sum target throughout the
 141-dimensional coefficient span of the 24-label identity-kernel seed.
@@ -332,7 +364,11 @@ The [sharp distinguished-piece budget](research/distinguished-piece-rank-budget.
 raises its lower bound to `72+2sqrt(503)>116`.
 An [exact coefficient-span optimizer](research/seed-subspace-recombination.md)
 also certifies optimum `325` in the six-dimensional uniform span and
-several declared extensions. The scope leaves arbitrary dual label maps,
+several declared extensions. A further
+[coordinate-restriction theorem](research/permutation-coordinate-restrictions.md)
+excludes every simultaneous coordinate subset of the 24-label
+identity-kernel seed in characteristic two, allowing arbitrary recombinations of its
+restricted coefficient span. The scope leaves arbitrary dual label maps,
 different kernels, and collective tensor-power recombinations open.
 
 Further exact analyses cover
