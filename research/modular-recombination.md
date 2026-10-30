@@ -3,9 +3,9 @@
 ## Result and scope
 
 On the three-label characteristic-two domain at weight 12, there is an
-explicit 15-piece crossing decomposition whose maximum row-rank times
-column-rank is **10**. This improves the maximum 27 in PR #22's earlier
-17-piece decomposition. The new pieces are sums of at most four symmetry
+explicit 17-piece crossing decomposition whose maximum row-rank times
+column-rank is **9**. This improves the maximum 27 in PR #22's earlier
+17-piece decomposition. The new pieces are sums of at most sixteen symmetry
 images of the original pieces. The exact coefficient lists and both ranks
 are recorded in [modular-higher-witnesses.json](../evidence/modular-higher-witnesses.json).
 Every listed piece is reconstructed, both ranks are checked by independent
@@ -15,7 +15,8 @@ This is a finite algebraic improvement, **not a factoring exponent above
 1/2**. The labels number three, rather than `2^lambda`, and there is no
 proved favorable profile as the label dimension grows. The five-label
 case improves from 210 to 154 using pairs and to 121 using triples.
-The latter witness has just three pieces, of rank products 25, 25, and 121. The eight-label case
+The latter witness has just three pieces, of rank products 25, 25, and 121.
+The eight-label case
 in the larger suite improves from 2703 to 1935; even this is too large
 to suggest a better leading coefficient on its own.
 
@@ -140,7 +141,7 @@ python3 tools/check_modular_recombination.py --full --output evidence/modular-re
 make verify
 ```
 
-The default suite replays the four-term three-label and three-term
+The default suite replays the sixteen-term three-label and three-term
 five-label witnesses and independently compares 528 complete-piece entries with
 the original normal-order recurrence at weight eight, replays the crossing
 identities, checks the single-image and pair candidate cutoffs at weights
@@ -160,7 +161,11 @@ uniform rank-width proof. Neither is answered by the finite witnesses.
 ## 6. Higher-order gains and an exhaustive finite question
 
 The pair screen at weight 12 has cutoff 18; allowing triples found cutoff
-12, and a four-term search found the explicit cutoff-10 witness above.
+12, and a four-term search found a cutoff-10 witness. A subsequent search
+of the entire 34-dimensional symmetry span found low-product tensors
+spanning the whole space, including the crossing. The resulting explicit
+17-piece witness above has cutoff nine. Every constituent uses at most
+sixteen source symmetry images; the default checker reconstructs all of them.
 At weight 16, the three-piece witness is especially concise: its large
 piece is `A_-16+A_0+A_16`; its other two pieces are coordinate symmetry
 images of `A_32`. The JSON gives the exact permutations.
@@ -176,15 +181,18 @@ and the default suite recomputes them.
 The full symmetry span at weight 12 has dimension 34. A separate native
 screen, [search_three_label_span.c](../tools/search_three_label_span.c),
 enumerates an exact Gray-code interval of this binary span and retains
-all tensors whose rank product is at most nine. If its completed low-product
-span excludes the crossing, the cutoff-10 witness is optimal over this
-entire symmetry span, including unrestricted linear recombinations. This
-would still be a finite restricted-model theorem.
+all tensors whose rank product is at most nine. Its accepted tensors
+already spanned the entire source space after reaching indices beyond
+`2^33`. The positive search was then stopped; exhaustive completion was
+unnecessary for the new witness and is not claimed. The decomposition's
+exact replay is independent of trusting the enumeration's completeness.
+Whether products below nine suffice in this span remains open.
 
-The exhaustive run is not yet claimed complete. Its preflight checker
-compares 243 classifier cases and 6,742 Gray-code interval vectors against
-independent exact Python elimination, including acceptance and rejection
-cases and a nonzero interval start. Run:
+The native preflight checker compares 243 classifier cases and 6,742
+Gray-code interval vectors against independent exact Python elimination,
+including acceptance and rejection cases and a nonzero interval start.
+The commands below reproduce the entire optional search; replaying the
+stored positive witness only requires the default recombination checker.
 
 ```sh
 python3 tools/check_three_label_span.py

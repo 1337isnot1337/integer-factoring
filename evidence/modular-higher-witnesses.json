@@ -2,7 +2,7 @@
   "status": "finite witnesses only; no asymptotic exponent gain",
   "cases": [
     {
-      "description": "finite three-label four-term witness; no asymptotic bound",
+      "description": "three-label positive witness extracted from the native span search; exhaustive completion unnecessary",
       "weight": 12,
       "dimension": 3,
       "labels": [
@@ -19,12 +19,66 @@
           7
         ]
       ],
-      "max_rank_product": 10,
-      "witness_piece_count": 15,
+      "max_rank_product": 9,
+      "witness_piece_count": 17,
       "witness": [
         {
+          "row_rank": 6,
+          "column_rank": 1,
+          "terms": [
+            {
+              "shift": -24,
+              "permutation": [
+                1,
+                3,
+                0,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "row_rank": 1,
+          "column_rank": 6,
+          "terms": [
+            {
+              "shift": -24,
+              "permutation": [
+                2,
+                3,
+                0,
+                1
+              ]
+            }
+          ]
+        },
+        {
           "row_rank": 4,
           "column_rank": 2,
+          "terms": [
+            {
+              "shift": -22,
+              "permutation": [
+                0,
+                2,
+                1,
+                3
+              ]
+            },
+            {
+              "shift": -22,
+              "permutation": [
+                1,
+                3,
+                0,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "row_rank": 3,
+          "column_rank": 3,
           "terms": [
             {
               "shift": -22,
@@ -38,12 +92,120 @@
             {
               "shift": -22,
               "permutation": [
+                2,
+                3,
+                0,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "row_rank": 3,
+          "column_rank": 3,
+          "terms": [
+            {
+              "shift": -22,
+              "permutation": [
                 0,
                 2,
                 1,
                 3
               ]
             },
+            {
+              "shift": -16,
+              "permutation": [
+                0,
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "shift": -16,
+              "permutation": [
+                0,
+                2,
+                1,
+                3
+              ]
+            },
+            {
+              "shift": -16,
+              "permutation": [
+                1,
+                3,
+                0,
+                2
+              ]
+            },
+            {
+              "shift": -16,
+              "permutation": [
+                2,
+                3,
+                0,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "row_rank": 3,
+          "column_rank": 3,
+          "terms": [
+            {
+              "shift": -22,
+              "permutation": [
+                2,
+                3,
+                0,
+                1
+              ]
+            },
+            {
+              "shift": -16,
+              "permutation": [
+                0,
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "shift": -16,
+              "permutation": [
+                2,
+                0,
+                3,
+                1
+              ]
+            },
+            {
+              "shift": -16,
+              "permutation": [
+                2,
+                3,
+                0,
+                1
+              ]
+            },
+            {
+              "shift": -16,
+              "permutation": [
+                3,
+                1,
+                2,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "row_rank": 3,
+          "column_rank": 3,
+          "terms": [
             {
               "shift": -24,
               "permutation": [
@@ -56,21 +218,6 @@
             {
               "shift": -24,
               "permutation": [
-                0,
-                2,
-                1,
-                3
-              ]
-            }
-          ]
-        },
-        {
-          "row_rank": 2,
-          "column_rank": 4,
-          "terms": [
-            {
-              "shift": -22,
-              "permutation": [
                 2,
                 3,
                 0,
@@ -78,7 +225,7 @@
               ]
             },
             {
-              "shift": -22,
+              "shift": -16,
               "permutation": [
                 0,
                 1,
@@ -87,7 +234,25 @@
               ]
             },
             {
-              "shift": -24,
+              "shift": -16,
+              "permutation": [
+                0,
+                2,
+                1,
+                3
+              ]
+            },
+            {
+              "shift": -16,
+              "permutation": [
+                1,
+                3,
+                0,
+                2
+              ]
+            },
+            {
+              "shift": -16,
               "permutation": [
                 2,
                 3,
@@ -95,21 +260,6 @@
                 1
               ]
             },
-            {
-              "shift": -24,
-              "permutation": [
-                0,
-                1,
-                2,
-                3
-              ]
-            }
-          ]
-        },
-        {
-          "row_rank": 4,
-          "column_rank": 2,
-          "terms": [
             {
               "shift": -16,
               "permutation": [
@@ -122,9 +272,129 @@
             {
               "shift": -16,
               "permutation": [
+                3,
+                2,
+                1,
+                0
+              ]
+            },
+            {
+              "shift": -14,
+              "permutation": [
+                0,
+                1,
+                2,
+                3
+              ]
+            }
+          ]
+        },
+        {
+          "row_rank": 3,
+          "column_rank": 3,
+          "terms": [
+            {
+              "shift": -24,
+              "permutation": [
+                0,
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "shift": -24,
+              "permutation": [
+                1,
+                3,
+                0,
+                2
+              ]
+            },
+            {
+              "shift": -16,
+              "permutation": [
+                0,
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "shift": -16,
+              "permutation": [
+                1,
+                0,
+                3,
+                2
+              ]
+            },
+            {
+              "shift": -16,
+              "permutation": [
+                1,
+                3,
+                0,
+                2
+              ]
+            },
+            {
+              "shift": -16,
+              "permutation": [
+                2,
+                0,
+                3,
+                1
+              ]
+            },
+            {
+              "shift": -16,
+              "permutation": [
+                2,
+                3,
+                0,
+                1
+              ]
+            },
+            {
+              "shift": -16,
+              "permutation": [
+                3,
+                1,
+                2,
+                0
+              ]
+            },
+            {
+              "shift": -14,
+              "permutation": [
                 0,
                 2,
                 1,
+                3
+              ]
+            },
+            {
+              "shift": -14,
+              "permutation": [
+                1,
+                0,
+                3,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "row_rank": 4,
+          "column_rank": 2,
+          "terms": [
+            {
+              "shift": -24,
+              "permutation": [
+                0,
+                1,
+                2,
                 3
               ]
             },
@@ -138,82 +408,49 @@
               ]
             },
             {
-              "shift": -24,
+              "shift": -16,
               "permutation": [
                 0,
+                2,
+                1,
+                3
+              ]
+            },
+            {
+              "shift": -16,
+              "permutation": [
+                3,
                 1,
                 2,
-                3
+                0
+              ]
+            },
+            {
+              "shift": -14,
+              "permutation": [
+                1,
+                0,
+                3,
+                2
+              ]
+            },
+            {
+              "shift": -14,
+              "permutation": [
+                1,
+                3,
+                0,
+                2
               ]
             }
           ]
         },
         {
-          "row_rank": 3,
-          "column_rank": 3,
+          "row_rank": 2,
+          "column_rank": 2,
           "terms": [
             {
               "shift": -14,
-              "permutation": [
-                0,
-                2,
-                1,
-                3
-              ]
-            },
-            {
-              "shift": -14,
-              "permutation": [
-                0,
-                1,
-                2,
-                3
-              ]
-            },
-            {
-              "shift": -22,
-              "permutation": [
-                0,
-                2,
-                1,
-                3
-              ]
-            },
-            {
-              "shift": -22,
-              "permutation": [
-                0,
-                1,
-                2,
-                3
-              ]
-            }
-          ]
-        },
-        {
-          "row_rank": 3,
-          "column_rank": 3,
-          "terms": [
-            {
-              "shift": -14,
-              "permutation": [
-                0,
-                2,
-                1,
-                3
-              ]
-            },
-            {
-              "shift": -14,
-              "permutation": [
-                0,
-                1,
-                2,
-                3
-              ]
-            },
-            {
-              "shift": -22,
               "permutation": [
                 1,
                 3,
@@ -222,7 +459,7 @@
               ]
             },
             {
-              "shift": -22,
+              "shift": -12,
               "permutation": [
                 0,
                 1,
@@ -233,8 +470,8 @@
           ]
         },
         {
-          "row_rank": 3,
-          "column_rank": 3,
+          "row_rank": 2,
+          "column_rank": 2,
           "terms": [
             {
               "shift": -12,
@@ -246,166 +483,103 @@
               ]
             },
             {
+              "shift": -12,
+              "permutation": [
+                1,
+                0,
+                3,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "row_rank": 3,
+          "column_rank": 3,
+          "terms": [
+            {
+              "shift": -24,
+              "permutation": [
+                0,
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "shift": -24,
+              "permutation": [
+                2,
+                3,
+                0,
+                1
+              ]
+            },
+            {
+              "shift": -22,
+              "permutation": [
+                0,
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "shift": -22,
+              "permutation": [
+                1,
+                3,
+                0,
+                2
+              ]
+            },
+            {
+              "shift": -22,
+              "permutation": [
+                2,
+                3,
+                0,
+                1
+              ]
+            },
+            {
+              "shift": -16,
+              "permutation": [
+                1,
+                0,
+                3,
+                2
+              ]
+            },
+            {
+              "shift": -16,
+              "permutation": [
+                2,
+                3,
+                0,
+                1
+              ]
+            },
+            {
+              "shift": -16,
+              "permutation": [
+                3,
+                2,
+                1,
+                0
+              ]
+            },
+            {
               "shift": -14,
               "permutation": [
                 0,
-                1,
-                2,
-                3
-              ]
-            },
-            {
-              "shift": -22,
-              "permutation": [
-                0,
                 2,
                 1,
                 3
               ]
             },
             {
-              "shift": -22,
-              "permutation": [
-                0,
-                1,
-                2,
-                3
-              ]
-            }
-          ]
-        },
-        {
-          "row_rank": 3,
-          "column_rank": 3,
-          "terms": [
-            {
-              "shift": -6,
-              "permutation": [
-                0,
-                1,
-                2,
-                3
-              ]
-            },
-            {
-              "shift": -22,
-              "permutation": [
-                2,
-                3,
-                0,
-                1
-              ]
-            },
-            {
-              "shift": -22,
-              "permutation": [
-                1,
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "shift": -22,
-              "permutation": [
-                0,
-                1,
-                2,
-                3
-              ]
-            }
-          ]
-        },
-        {
-          "row_rank": 3,
-          "column_rank": 3,
-          "terms": [
-            {
-              "shift": -6,
-              "permutation": [
-                0,
-                2,
-                1,
-                3
-              ]
-            },
-            {
-              "shift": -22,
-              "permutation": [
-                2,
-                3,
-                0,
-                1
-              ]
-            },
-            {
-              "shift": -22,
-              "permutation": [
-                1,
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "shift": -22,
-              "permutation": [
-                0,
-                2,
-                1,
-                3
-              ]
-            }
-          ]
-        },
-        {
-          "row_rank": 3,
-          "column_rank": 3,
-          "terms": [
-            {
-              "shift": 2,
-              "permutation": [
-                0,
-                1,
-                2,
-                3
-              ]
-            },
-            {
-              "shift": -22,
-              "permutation": [
-                2,
-                3,
-                0,
-                1
-              ]
-            },
-            {
-              "shift": -22,
-              "permutation": [
-                1,
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "shift": -22,
-              "permutation": [
-                0,
-                2,
-                1,
-                3
-              ]
-            }
-          ]
-        },
-        {
-          "row_rank": 2,
-          "column_rank": 5,
-          "terms": [
-            {
-              "shift": 8,
+              "shift": -10,
               "permutation": [
                 0,
                 1,
@@ -417,24 +591,6 @@
               "shift": -8,
               "permutation": [
                 0,
-                2,
-                1,
-                3
-              ]
-            },
-            {
-              "shift": -22,
-              "permutation": [
-                0,
-                1,
-                2,
-                3
-              ]
-            },
-            {
-              "shift": -24,
-              "permutation": [
-                0,
                 1,
                 2,
                 3
@@ -443,25 +599,43 @@
           ]
         },
         {
-          "row_rank": 5,
-          "column_rank": 2,
+          "row_rank": 3,
+          "column_rank": 3,
           "terms": [
             {
-              "shift": 8,
+              "shift": -24,
               "permutation": [
                 0,
-                1,
                 2,
+                1,
                 3
               ]
             },
             {
-              "shift": -4,
+              "shift": -16,
               "permutation": [
-                0,
                 1,
+                3,
+                0,
+                2
+              ]
+            },
+            {
+              "shift": -16,
+              "permutation": [
                 2,
-                3
+                0,
+                3,
+                1
+              ]
+            },
+            {
+              "shift": -16,
+              "permutation": [
+                2,
+                3,
+                0,
+                1
               ]
             },
             {
@@ -474,7 +648,157 @@
               ]
             },
             {
+              "shift": -14,
+              "permutation": [
+                1,
+                0,
+                3,
+                2
+              ]
+            },
+            {
+              "shift": -12,
+              "permutation": [
+                0,
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "shift": -10,
+              "permutation": [
+                0,
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "shift": -8,
+              "permutation": [
+                0,
+                1,
+                2,
+                3
+              ]
+            }
+          ]
+        },
+        {
+          "row_rank": 3,
+          "column_rank": 3,
+          "terms": [
+            {
+              "shift": -24,
+              "permutation": [
+                0,
+                2,
+                1,
+                3
+              ]
+            },
+            {
+              "shift": -24,
+              "permutation": [
+                2,
+                3,
+                0,
+                1
+              ]
+            },
+            {
               "shift": -22,
+              "permutation": [
+                0,
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "shift": -22,
+              "permutation": [
+                1,
+                3,
+                0,
+                2
+              ]
+            },
+            {
+              "shift": -22,
+              "permutation": [
+                2,
+                3,
+                0,
+                1
+              ]
+            },
+            {
+              "shift": -16,
+              "permutation": [
+                0,
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "shift": -16,
+              "permutation": [
+                0,
+                2,
+                1,
+                3
+              ]
+            },
+            {
+              "shift": -16,
+              "permutation": [
+                1,
+                3,
+                0,
+                2
+              ]
+            },
+            {
+              "shift": -16,
+              "permutation": [
+                2,
+                3,
+                0,
+                1
+              ]
+            },
+            {
+              "shift": -16,
+              "permutation": [
+                3,
+                2,
+                1,
+                0
+              ]
+            },
+            {
+              "shift": -14,
+              "permutation": [
+                0,
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "shift": -14,
+              "permutation": [
+                0,
+                2,
+                1,
+                3
+              ]
+            },
+            {
+              "shift": -8,
               "permutation": [
                 0,
                 2,
@@ -485,16 +809,262 @@
           ]
         },
         {
-          "row_rank": 5,
-          "column_rank": 2,
+          "row_rank": 1,
+          "column_rank": 6,
           "terms": [
             {
-              "shift": 8,
+              "shift": -24,
+              "permutation": [
+                0,
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "shift": -24,
               "permutation": [
                 0,
                 2,
                 1,
                 3
+              ]
+            },
+            {
+              "shift": -24,
+              "permutation": [
+                1,
+                3,
+                0,
+                2
+              ]
+            },
+            {
+              "shift": -24,
+              "permutation": [
+                2,
+                3,
+                0,
+                1
+              ]
+            },
+            {
+              "shift": -22,
+              "permutation": [
+                0,
+                2,
+                1,
+                3
+              ]
+            },
+            {
+              "shift": -16,
+              "permutation": [
+                0,
+                2,
+                1,
+                3
+              ]
+            },
+            {
+              "shift": -16,
+              "permutation": [
+                1,
+                3,
+                0,
+                2
+              ]
+            },
+            {
+              "shift": -16,
+              "permutation": [
+                2,
+                0,
+                3,
+                1
+              ]
+            },
+            {
+              "shift": -14,
+              "permutation": [
+                0,
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "shift": -10,
+              "permutation": [
+                0,
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "shift": -8,
+              "permutation": [
+                3,
+                1,
+                2,
+                0
+              ]
+            },
+            {
+              "shift": -6,
+              "permutation": [
+                0,
+                1,
+                2,
+                3
+              ]
+            }
+          ]
+        },
+        {
+          "row_rank": 2,
+          "column_rank": 1,
+          "terms": [
+            {
+              "shift": -14,
+              "permutation": [
+                0,
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "shift": -10,
+              "permutation": [
+                0,
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "shift": -6,
+              "permutation": [
+                1,
+                0,
+                3,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "row_rank": 3,
+          "column_rank": 3,
+          "terms": [
+            {
+              "shift": -24,
+              "permutation": [
+                0,
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "shift": -24,
+              "permutation": [
+                0,
+                2,
+                1,
+                3
+              ]
+            },
+            {
+              "shift": -22,
+              "permutation": [
+                0,
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "shift": -22,
+              "permutation": [
+                1,
+                3,
+                0,
+                2
+              ]
+            },
+            {
+              "shift": -22,
+              "permutation": [
+                2,
+                3,
+                0,
+                1
+              ]
+            },
+            {
+              "shift": -16,
+              "permutation": [
+                0,
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "shift": -16,
+              "permutation": [
+                1,
+                0,
+                3,
+                2
+              ]
+            },
+            {
+              "shift": -16,
+              "permutation": [
+                1,
+                3,
+                0,
+                2
+              ]
+            },
+            {
+              "shift": -16,
+              "permutation": [
+                2,
+                0,
+                3,
+                1
+              ]
+            },
+            {
+              "shift": -14,
+              "permutation": [
+                0,
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "shift": -14,
+              "permutation": [
+                0,
+                2,
+                1,
+                3
+              ]
+            },
+            {
+              "shift": -14,
+              "permutation": [
+                1,
+                3,
+                0,
+                2
               ]
             },
             {
@@ -507,29 +1077,23 @@
               ]
             },
             {
-              "shift": -22,
+              "shift": -8,
               "permutation": [
-                0,
-                2,
+                3,
                 1,
-                3
+                2,
+                0
               ]
             },
             {
-              "shift": -24,
+              "shift": 8,
               "permutation": [
                 0,
-                2,
                 1,
+                2,
                 3
               ]
-            }
-          ]
-        },
-        {
-          "row_rank": 4,
-          "column_rank": 2,
-          "terms": [
+            },
             {
               "shift": 16,
               "permutation": [
@@ -537,117 +1101,6 @@
                 1,
                 2,
                 3
-              ]
-            },
-            {
-              "shift": -16,
-              "permutation": [
-                2,
-                0,
-                3,
-                1
-              ]
-            },
-            {
-              "shift": -16,
-              "permutation": [
-                0,
-                2,
-                1,
-                3
-              ]
-            },
-            {
-              "shift": -24,
-              "permutation": [
-                1,
-                3,
-                0,
-                2
-              ]
-            }
-          ]
-        },
-        {
-          "row_rank": 3,
-          "column_rank": 3,
-          "terms": [
-            {
-              "shift": 16,
-              "permutation": [
-                0,
-                1,
-                2,
-                3
-              ]
-            },
-            {
-              "shift": 12,
-              "permutation": [
-                0,
-                1,
-                2,
-                3
-              ]
-            },
-            {
-              "shift": -16,
-              "permutation": [
-                2,
-                0,
-                3,
-                1
-              ]
-            },
-            {
-              "shift": -22,
-              "permutation": [
-                1,
-                3,
-                0,
-                2
-              ]
-            }
-          ]
-        },
-        {
-          "row_rank": 3,
-          "column_rank": 3,
-          "terms": [
-            {
-              "shift": 16,
-              "permutation": [
-                0,
-                1,
-                2,
-                3
-              ]
-            },
-            {
-              "shift": 12,
-              "permutation": [
-                2,
-                3,
-                0,
-                1
-              ]
-            },
-            {
-              "shift": -16,
-              "permutation": [
-                0,
-                2,
-                1,
-                3
-              ]
-            },
-            {
-              "shift": -22,
-              "permutation": [
-                1,
-                3,
-                0,
-                2
               ]
             }
           ]
@@ -787,5 +1240,13 @@
     "cyclic_remainder_hex": "0x55555555",
     "selected_coefficient_sum": 1,
     "crossing": 0
+  },
+  "positive_search_provenance": {
+    "native_source_commit": "7763602ea6e9657b354046090b2888aec7d42945",
+    "input_span_dimension": 34,
+    "rank_product_cutoff": 9,
+    "accepted_span_dimension": 34,
+    "exhaustive_completion": false,
+    "note": "Search stopped after a positive construction; exact recorded witness is independently replayed."
   }
 }
