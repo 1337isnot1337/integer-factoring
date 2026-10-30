@@ -14,6 +14,9 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Unitary-orbit factor recovery](unitary-orbit-factor-recovery.md): coprime tuples and perfect-power preprocessing give polynomial-overhead recovery in every fixed positive characteristic, with unique inverse witnesses.
+- [Quadratic-congruence parity recovery](quadratic-congruence-factor-recovery.md): a scalar square root of one yields a proper gcd factor; a fused quadratic-plus-linear verifier has the source's original graph shape.
+- [Balanced physical degree gauges](balanced-physical-gauge-transfer.md): independent four-leg weights become known coefficient shifts on a balanced label set of size `q^t/poly(t)`.
 - [Local Smith-profile crossing certificate](smith-profile-crossing-transfer.md): two exact local valuation spectra certify all-length rank bounds for ordered polynomial matrix products.
 - [Independent auxiliary rational gauges](auxiliary-gauge-smith-transfer.md): different telescoping basis changes in the two cuts enlarge the Smith search with constant boundary costs.
 - [Recovery in every fixed prime characteristic](fixed-characteristic-factor-recovery.md): higher exponent digits and unique cyclic-orbit representatives give complete factorization with polynomial query overhead and linear total arithmetic length.
@@ -31,6 +34,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Obstructions and work beyond 1/2
 
+- [Sum-preserving conjugation Smith floor](sum-preserving-conjugation-smith-barrier.md): arbitrary constant exchange-commuting block conjugations have certificate parameter at least `log_2(64/9)/4`, just above the half-rate threshold; actual rank sums remain outside the claim.
 - [Explicit entanglers and scalarization controls](explicit-entanglers-and-density-scalarization.md): product-ket exclusions over algebraic closures, a surviving full-rank product functional, and a complete binary product-density screen.
 - [Coherent exterior-boundary reduction](coherent-exterior-boundary-reduction.md): a common histogram projection, all-width fixed-occupation lower bounds, and a complete four-position binary coefficient-span screen.
 - [Whole-root-interval parity counterexample](root-threshold-parity-counterexample.md): an exact non-perfect-power composite defeats every whole root-threshold parity count; general interval recovery remains unrestricted.

@@ -1,0 +1,268 @@
+{
+  "status": "passed",
+  "field": 2,
+  "cases": [
+    {
+      "width": 1,
+      "labels": 2,
+      "mode": "general linear centralizer",
+      "endpoint_entry_checks": 16,
+      "forced_entry_and_minimum_order_checks": 6,
+      "complement_entries_changed_by_conjugation": 0,
+      "independent_toeplitz_checks": 10,
+      "exact_rational_inequality_checks": 45
+    },
+    {
+      "width": 1,
+      "labels": 2,
+      "mode": "permutation",
+      "endpoint_entry_checks": 16,
+      "forced_entry_and_minimum_order_checks": 6,
+      "complement_entries_changed_by_conjugation": 0,
+      "independent_toeplitz_checks": 10,
+      "exact_rational_inequality_checks": 45
+    },
+    {
+      "width": 1,
+      "labels": 2,
+      "mode": "general linear centralizer",
+      "endpoint_entry_checks": 16,
+      "forced_entry_and_minimum_order_checks": 6,
+      "complement_entries_changed_by_conjugation": 0,
+      "independent_toeplitz_checks": 10,
+      "exact_rational_inequality_checks": 45
+    },
+    {
+      "width": 1,
+      "labels": 2,
+      "mode": "permutation",
+      "endpoint_entry_checks": 16,
+      "forced_entry_and_minimum_order_checks": 6,
+      "complement_entries_changed_by_conjugation": 0,
+      "independent_toeplitz_checks": 10,
+      "exact_rational_inequality_checks": 45
+    },
+    {
+      "width": 1,
+      "labels": 2,
+      "mode": "general linear centralizer",
+      "endpoint_entry_checks": 16,
+      "forced_entry_and_minimum_order_checks": 6,
+      "complement_entries_changed_by_conjugation": 0,
+      "independent_toeplitz_checks": 10,
+      "exact_rational_inequality_checks": 45
+    },
+    {
+      "width": 1,
+      "labels": 2,
+      "mode": "permutation",
+      "endpoint_entry_checks": 16,
+      "forced_entry_and_minimum_order_checks": 6,
+      "complement_entries_changed_by_conjugation": 0,
+      "independent_toeplitz_checks": 10,
+      "exact_rational_inequality_checks": 45
+    },
+    {
+      "width": 1,
+      "labels": 2,
+      "mode": "general linear centralizer",
+      "endpoint_entry_checks": 16,
+      "forced_entry_and_minimum_order_checks": 6,
+      "complement_entries_changed_by_conjugation": 0,
+      "independent_toeplitz_checks": 10,
+      "exact_rational_inequality_checks": 45
+    },
+    {
+      "width": 1,
+      "labels": 2,
+      "mode": "permutation",
+      "endpoint_entry_checks": 16,
+      "forced_entry_and_minimum_order_checks": 6,
+      "complement_entries_changed_by_conjugation": 0,
+      "independent_toeplitz_checks": 10,
+      "exact_rational_inequality_checks": 45
+    },
+    {
+      "width": 2,
+      "labels": 4,
+      "mode": "general linear centralizer",
+      "endpoint_entry_checks": 128,
+      "forced_entry_and_minimum_order_checks": 20,
+      "complement_entries_changed_by_conjugation": 4,
+      "independent_toeplitz_checks": 10,
+      "exact_rational_inequality_checks": 45
+    },
+    {
+      "width": 2,
+      "labels": 4,
+      "mode": "permutation",
+      "endpoint_entry_checks": 128,
+      "forced_entry_and_minimum_order_checks": 20,
+      "complement_entries_changed_by_conjugation": 0,
+      "independent_toeplitz_checks": 10,
+      "exact_rational_inequality_checks": 45
+    },
+    {
+      "width": 2,
+      "labels": 4,
+      "mode": "general linear centralizer",
+      "endpoint_entry_checks": 128,
+      "forced_entry_and_minimum_order_checks": 20,
+      "complement_entries_changed_by_conjugation": 0,
+      "independent_toeplitz_checks": 10,
+      "exact_rational_inequality_checks": 45
+    },
+    {
+      "width": 2,
+      "labels": 4,
+      "mode": "permutation",
+      "endpoint_entry_checks": 128,
+      "forced_entry_and_minimum_order_checks": 20,
+      "complement_entries_changed_by_conjugation": 0,
+      "independent_toeplitz_checks": 10,
+      "exact_rational_inequality_checks": 45
+    },
+    {
+      "width": 2,
+      "labels": 4,
+      "mode": "general linear centralizer",
+      "endpoint_entry_checks": 128,
+      "forced_entry_and_minimum_order_checks": 20,
+      "complement_entries_changed_by_conjugation": 0,
+      "independent_toeplitz_checks": 10,
+      "exact_rational_inequality_checks": 45
+    },
+    {
+      "width": 2,
+      "labels": 4,
+      "mode": "permutation",
+      "endpoint_entry_checks": 128,
+      "forced_entry_and_minimum_order_checks": 20,
+      "complement_entries_changed_by_conjugation": 0,
+      "independent_toeplitz_checks": 10,
+      "exact_rational_inequality_checks": 45
+    },
+    {
+      "width": 2,
+      "labels": 4,
+      "mode": "general linear centralizer",
+      "endpoint_entry_checks": 128,
+      "forced_entry_and_minimum_order_checks": 20,
+      "complement_entries_changed_by_conjugation": 0,
+      "independent_toeplitz_checks": 10,
+      "exact_rational_inequality_checks": 45
+    },
+    {
+      "width": 2,
+      "labels": 4,
+      "mode": "permutation",
+      "endpoint_entry_checks": 128,
+      "forced_entry_and_minimum_order_checks": 20,
+      "complement_entries_changed_by_conjugation": 0,
+      "independent_toeplitz_checks": 10,
+      "exact_rational_inequality_checks": 45
+    },
+    {
+      "width": 3,
+      "labels": 8,
+      "mode": "general linear centralizer",
+      "endpoint_entry_checks": 1024,
+      "forced_entry_and_minimum_order_checks": 72,
+      "complement_entries_changed_by_conjugation": 16,
+      "independent_toeplitz_checks": 10,
+      "exact_rational_inequality_checks": 45
+    },
+    {
+      "width": 3,
+      "labels": 8,
+      "mode": "permutation",
+      "endpoint_entry_checks": 1024,
+      "forced_entry_and_minimum_order_checks": 72,
+      "complement_entries_changed_by_conjugation": 0,
+      "independent_toeplitz_checks": 10,
+      "exact_rational_inequality_checks": 45
+    },
+    {
+      "width": 3,
+      "labels": 8,
+      "mode": "general linear centralizer",
+      "endpoint_entry_checks": 1024,
+      "forced_entry_and_minimum_order_checks": 72,
+      "complement_entries_changed_by_conjugation": 18,
+      "independent_toeplitz_checks": 10,
+      "exact_rational_inequality_checks": 45
+    },
+    {
+      "width": 3,
+      "labels": 8,
+      "mode": "permutation",
+      "endpoint_entry_checks": 1024,
+      "forced_entry_and_minimum_order_checks": 72,
+      "complement_entries_changed_by_conjugation": 0,
+      "independent_toeplitz_checks": 10,
+      "exact_rational_inequality_checks": 45
+    },
+    {
+      "width": 3,
+      "labels": 8,
+      "mode": "general linear centralizer",
+      "endpoint_entry_checks": 1024,
+      "forced_entry_and_minimum_order_checks": 72,
+      "complement_entries_changed_by_conjugation": 20,
+      "independent_toeplitz_checks": 10,
+      "exact_rational_inequality_checks": 45
+    },
+    {
+      "width": 3,
+      "labels": 8,
+      "mode": "permutation",
+      "endpoint_entry_checks": 1024,
+      "forced_entry_and_minimum_order_checks": 72,
+      "complement_entries_changed_by_conjugation": 0,
+      "independent_toeplitz_checks": 10,
+      "exact_rational_inequality_checks": 45
+    },
+    {
+      "width": 3,
+      "labels": 8,
+      "mode": "general linear centralizer",
+      "endpoint_entry_checks": 1024,
+      "forced_entry_and_minimum_order_checks": 72,
+      "complement_entries_changed_by_conjugation": 28,
+      "independent_toeplitz_checks": 10,
+      "exact_rational_inequality_checks": 45
+    },
+    {
+      "width": 3,
+      "labels": 8,
+      "mode": "permutation",
+      "endpoint_entry_checks": 1024,
+      "forced_entry_and_minimum_order_checks": 72,
+      "complement_entries_changed_by_conjugation": 0,
+      "independent_toeplitz_checks": 10,
+      "exact_rational_inequality_checks": 45
+    }
+  ],
+  "strict_threshold_certificate": {
+    "2^317 > 3^200": true,
+    "2*283^2 > 400^2": true
+  },
+  "spike_negative_control": {
+    "width": 3,
+    "spiked_block": 7,
+    "orders": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "old_degree_cap_fails": true
+  },
+  "checker_sha256": "13ed8f71d91f962e9880af3698fbd5f3829f3248cb96424ead8cd44586fb55f0",
+  "base_checker_sha256": "d939fc8e01e6e152041871358ce839999732d1d28306a6cf88832801fa7b46fb",
+  "scope": "Finite controls for an all-width Smith-envelope obstruction; no actual-rank or factoring lower bound."
+}

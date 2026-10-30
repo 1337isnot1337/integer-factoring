@@ -21,11 +21,15 @@ verify-parity:
 verify-recovery: verify-parity
 	python3 tools/check_fixed_characteristic_recovery.py
 	python3 tools/check_root_threshold_counterexample.py
+	python3 tools/check_unitary_orbit_recovery.py
+	python3 tools/check_quadratic_congruence_recovery.py
 
 verify-constructive:
 	python3 tools/check_explicit_entanglers.py
 	python3 tools/check_smith_profile_transfer.py
 	python3 tools/check_auxiliary_gauge_smith.py
+	python3 tools/check_balanced_physical_gauge.py
+	python3 tools/check_sum_preserving_smith_barrier.py
 
 verify-native: verify-exterior verify-entangler-density
 
