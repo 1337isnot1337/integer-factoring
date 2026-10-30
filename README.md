@@ -47,6 +47,7 @@ make verify-docs          # Local Markdown-link check
 make verify-schur-fermion # Complete Schur entry formulas and exact comparisons
 make verify-schur-central # Hook-residue identities and full Schur ranks through weight 8
 make verify-cancellation-modules # Exact module states and word-rate certificates
+make verify-minimal-modules # Exact boundary reduction and complete word-rate hierarchy
 make verify-cancellation-crossing # Strict certificate gain for a complete crossing
 make verify-block-smith # Exact profiles for ordered crossing blocks
 make verify-cubic-full-images # Full cubic coefficient spaces and reduced ranks
@@ -95,6 +96,10 @@ no stronger factoring bound is claimed.
 retain cancellation between auxiliary paths. Their bounds improve monotonically
 with precision, dominate the corresponding capped entry-order bounds, and
 converge to the exact full-matrix word rate when both boundaries are free.
+[Reachable and observable reduction](research/minimal-boundary-module-completeness.md)
+extends this completeness result to fixed scalar boundaries, while keeping
+physical choices grouped by channel. This is a statement about word bounds,
+not a characterization of actual coefficient ranks.
 An [explicit coupled crossing](research/cancellation-module-crossing-example.md)
 strictly improves its corresponding capped min-plus certificate, from at least
 `425/27` to `1625/108`. The same local factors and precision caps are used.
