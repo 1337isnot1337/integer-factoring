@@ -199,6 +199,24 @@ has since produced a twenty-piece, rank-product-four certificate on three labels
 the reflected construction here is a different family, not the current
 best finite certificate.
 
+The [finite-seed amplification theorem](research/finite-seed-amplification.md)
+gives a sufficient all-size criterion from any finite certificate:
+`sum_i sqrt(r_i c_i) < d^(sqrt(2))` would improve the half exponent.
+It also proves that this particular criterion cannot succeed on at most
+five labels. Better rank analysis of the grouped tensor coefficients
+remains a distinct possibility.
+
+Three all-size results explain why several attractive finite restrictions
+do not give the desired improvement. The
+[permutation-invariant defect theorem](research/fixed-defect-invariant-barrier.md)
+forces `rho>=1-o(1)` for sparse defects, including arbitrary invariant
+recombinations. The [original constant-weight restriction](research/balanced-three-label-barrier.md)
+of the twenty-piece seed requires `rho>=0.72` along all growing label
+domains of that form. An [isotropic basis change](research/isotropic-three-label-barrier.md)
+also fails at its capacity-maximizing density: one explicit coefficient
+has exact ranks giving `rho>=log(6)/(2log(3))`. These statements have
+different hypotheses; none rules out arbitrary linear label codes.
+
 The [matching-code lift](research/matching-code-lift.md) gives exact
 multigraded crossings on uniform set partitions. Independent variables
 reduce their piece count to `exp(O(lambda/log lambda))`, despite the large
