@@ -34,6 +34,7 @@ The composition uses the existing clique evaluator from [Anthropic's Appendix B]
 | Auxiliary divisor-count exponent with leading coefficient one | Ordinary unconditional bound; overall score unchanged | [Exact integer parameter](research/optimized-divisor-count-bound.md) |
 | All-field binary-word and middle-layer obstruction | Ordinary theorem; restricted family only | [Uniform rank floor `rho >= 3/4`](research/all-field-binary-word-barrier.md) |
 | Matrix-entry-oracle rank and affine queries | Quasipolynomial time and polylogarithmic auxiliary space; local algorithm only | [Polynomial weighting and recomputed bases](research/polylog-space-rank-recovery.md), [scalar Berkowitz foundation](research/small-space-berkowitz-rank.md) |
+| Minimum-channel matrix factors over truncated polynomial rings | Same local time-space form after coefficient linearization; includes nonunit factors | [Smith counts and virtual generator selection](research/polylog-space-jet-factorization.md) |
 | Border and finite-precision seed extraction | Ordinary conditional theorem; no stronger seed supplied | [Coefficient extraction and nonunit budgets](research/border-and-nonunit-seed-transfer.md) |
 
 The result table distinguishes verified machine bounds from conditional constructions and finite experiments. A merged PR or a passing finite test does not imply independent mathematical review.
