@@ -50,6 +50,7 @@ verify-further:
 	python3 tools/check_weighted_weyl_additive.py
 	python3 tools/check_weyl_alternate_algebra.py
 	python3 tools/check_eight_feature_monoid.py
+	python3 tools/check_trace_bilinear_kernel.py
 
 verify-energy-full:
 	python3 tools/check_weighted_energy.py --full
