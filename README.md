@@ -83,6 +83,14 @@ the two operator orders, crossing sums, and small binary-label restrictions.
 The theorem does not settle the rank of the complete central piece.
 These results give no lower bound on factoring or on an evaluator's runtime.
 
+The [homogeneous-dual construction](research/homogeneous-duals.md) gives a
+new effective crossing family. An explicit polynomial in two sparse
+derivations replaces a large matrix inverse. The proof bounds coefficient
+sizes and generation costs, and verifies the complete crossing interface.
+It retains `rho=1/sqrt(2)` and exponent `1/2`; smaller ranks for its complete
+pieces remain an open route. Its [exact checks](evidence/homogeneous-duals.json)
+cover the dual pairing, operator identities, and complete crossing sums.
+
 Run `make verify-frontier` for these exact checks. The strongest complete
 ordinary factoring argument here remains exponent `1/2`.
 
@@ -258,6 +266,9 @@ requires real-number approximation in the algorithm.
 - [Restricted-label counterexample](research/half-restricted-labels.md):
   an exact [nonzero minor](evidence/half-restricted-labels.json) disproves the
   literal low-mode product-span bound while preserving the crossing identity.
+- [Effective homogeneous duals](research/homogeneous-duals.md): an explicit
+  integer inverse polynomial, controlled coefficient sizes, and a complete
+  alternative crossing family with the existing `1/sqrt(2)` parameter.
 - [Baseline audit](research/baseline-audit.md): exact depth recurrence,
   contraction, all-level cost bound, and machine-cost bridge.
 - [Verified k6 theorem](research/verified-k6.md): complete machine proof,

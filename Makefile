@@ -22,6 +22,7 @@ verify-frontier:
 	python3 tools/check_graded_space.py
 	python3 tools/check_rectangular_profile.py
 	python3 tools/check_partition_channels.py --max-weight 6
+	python3 tools/check_homogeneous_duals.py
 
 verify-formal:
 	bash tools/check_formal.sh
