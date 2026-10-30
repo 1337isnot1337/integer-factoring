@@ -18,6 +18,7 @@ verify-constructions:
 	python3 tools/check_simultaneous_seed_endpoint.py
 	python3 tools/check_homogeneous_central_symbols.py --central 16
 	python3 tools/check_angle_pfaffian.py
+	python3 tools/check_homogeneous_central_selection.py
 
 verify-post-half:
 	python3 tools/check_half_piece_ranks.py --full
