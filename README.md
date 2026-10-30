@@ -26,6 +26,14 @@ works over a fixed sixteen-element ring and recovers one witness bit
 at a time. The proof charges all recursion, query, and control storage.
 Exact counts follow from factorization and streamed divisor enumeration.
 
+The [blocked half-rate family](research/blocked-half-family.md) also
+reduces every local piece and factor query from `2^O(lambda)` time to
+`lambda^(1+o(1))` bit time. It tensors blocks of about
+`sqrt(log lambda) loglog lambda` bits and keeps their full piece tuples.
+The piece entropy is `O(lambda/sqrt(log lambda))`, so the proved
+endpoint transfer preserves the exact half exponent. The construction
+has linear local space and does not assume a new rank-profile gain.
+
 The [integral counting transfer](research/integral-counting-transfer.md)
 gives a separate direct method for exact divisor-prefix counts in
 polynomial space at this time bound. Streamed integral Schur factors let the evaluator work
