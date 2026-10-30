@@ -100,6 +100,11 @@ cp "$root/formal-appendix/SearchPoly.lean" "$stage/SearchPoly.lean"
 cp "$root/formal-appendix/PaddedWordMachine.lean" "$stage/PaddedWordMachine.lean"
 cp "$root/formal-appendix/GroupingSearchPoly.lean" "$stage/GroupingSearchPoly.lean"
 cp "$root/formal-appendix/GroupingSearchCost.lean" "$stage/GroupingSearchCost.lean"
+cp "$root/formal-appendix/LevelPoly.lean" "$stage/LevelPoly.lean"
+cp "$root/formal-appendix/PaddedMachineRate.lean" "$stage/PaddedMachineRate.lean"
+cp "$root/formal-appendix/SizeParamPoly.lean" "$stage/SizeParamPoly.lean"
+cp "$root/formal-appendix/TopParamsPoly.lean" "$stage/TopParamsPoly.lean"
+cp "$root/formal-appendix/MasterPad.lean" "$stage/MasterPad.lean"
 lake env bash -c '
   set -euo pipefail
   export LEAN_PATH="$1:$1/factoring/.lake/build/lib/lean:$LEAN_PATH"
@@ -142,9 +147,14 @@ lake env bash -c '
   lean --root="$1" "$1/ReferenceStatement.lean"
   lean --root="$1" "$1/CertifiedPrefix.lean"
   lean --root="$1" "$1/SearchPoly.lean"
-  lean --root="$1" "$1/PaddedWordMachine.lean"
+  lean --root="$1" -o "$1/PaddedWordMachine.olean" "$1/PaddedWordMachine.lean"
   lean --root="$1" "$1/GroupingSearchPoly.lean"
-  lean --root="$1" "$1/GroupingSearchCost.lean"
+  lean --root="$1" -o "$1/GroupingSearchCost.olean" "$1/GroupingSearchCost.lean"
+  lean --root="$1" -o "$1/LevelPoly.olean" "$1/LevelPoly.lean"
+  lean --root="$1" "$1/PaddedMachineRate.lean"
+  lean --root="$1" -o "$1/SizeParamPoly.olean" "$1/SizeParamPoly.lean"
+  lean --root="$1" -o "$1/TopParamsPoly.olean" "$1/TopParamsPoly.lean"
+  lean --root="$1" "$1/MasterPad.lean"
 ' _ "$stage" > "$logs/bridge.log" 2>&1
 python3 - "$logs/bridge.log" <<'PY'
 import re
@@ -177,7 +187,12 @@ search_poly = "IntegerFactoring.HalfAppendix.search_polyT"
 machine = "IntegerFactoring.HalfAppendix.padded_factoring_machine"
 group_search = "IntegerFactoring.HalfAppendix.padded_firstGood_of_count_polyT"
 group_cost = "IntegerFactoring.HalfAppendix.scheduled_grouping_pad_cost"
-if "error:" in text or "sorryAx" in text or not {expected, count_bridge, table, clique, top, selected, row, fast, width, states, state_rate, entry, explicit, pad_rate, pure_factor, level_rate, written_poly, prefix_steps, reference_spec, certified_prefix, search_poly, machine, group_search, group_cost} <= {name for name, _ in reports}:
+level_poly = "IntegerFactoring.HalfAppendix.selectedLevel_polyT"
+machine_rate = "IntegerFactoring.HalfAppendix.padded_factoring_exp"
+size_poly = "IntegerFactoring.HalfAppendix.sOf_unary"
+params_poly = "IntegerFactoring.HalfAppendix.selected_padExponent_unary"
+master_cost = "IntegerFactoring.HalfAppendix.masterExponent_sqrt_cost"
+if "error:" in text or "sorryAx" in text or not {expected, count_bridge, table, clique, top, selected, row, fast, width, states, state_rate, entry, explicit, pad_rate, pure_factor, level_rate, written_poly, prefix_steps, reference_spec, certified_prefix, search_poly, machine, group_search, group_cost, level_poly, machine_rate, size_poly, params_poly, master_cost} <= {name for name, _ in reports}:
     raise SystemExit("Missing or failed Appendix bridge axiom reports")
 allowed = {"propext", "Classical.choice", "Quot.sound"}
 for name, axioms in reports:

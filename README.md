@@ -307,6 +307,10 @@ the grouped network's weights and factors are zero or one, obtains the entry
 bound, and supplies explicit table and evaluator pads. For a level satisfying
 the selection inequalities, Lean bounds the evaluator-pad exponent by a
 constant times `n / sqrt(log n)`, including for the explicitly selected level.
+The level selection, selected `K`, network-size parameter, table width,
+entry-bit bound, and pad exponents are polynomial-time in unary when the input
+width is supplied in unary. One combined pad covers the grouping scan, table
+writer, and evaluator and has an exponent on the same scale.
 Lean also bounds the evaluator fragment's steps on the already-written input
 on that scale. The composed mathematical function returns `Nat.minFac` on all
 natural inputs. The reference challenge file contains an unrelated placeholder
