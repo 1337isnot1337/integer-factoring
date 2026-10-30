@@ -2,8 +2,8 @@
 
 ## Proposition
 
-The weighted quotient budgets, ordinary rank totals, and the rank-one
-and rank-two complement bounds do **not**, on their own, force the
+The weighted quotient budgets, ordinary rank totals, and the rank-one,
+rank-two, and general flag complement bounds do **not**, on their own, force the
 finite rank-sum score above `d^sqrt(2)` in all dimensions. Their scalar
 relaxation admits integer profiles with cost `O(d log d)`.
 
@@ -89,7 +89,7 @@ subset removes at most `d^2` from `R`, so its complement has row total
                          \ge\frac{d(d-1)}2.        \tag{7}
 ```
 
-This satisfies the [all-field rank-two complement theorem](two-product-complement.md). For the
+This satisfies the all-field rank-two complement theorem. For the
 only possible rank-one subset, the selected abstract pair is
 `(d^2,1)`. Every product/Fitting lower bound
 `d^2-h(h+1)/2`, for `0<=h<=d`, is at most `d^2`, whereas the remaining
@@ -103,17 +103,69 @@ exceeds two. The abstract profile provides no information about such
 cancellation and makes no claim that those extra tensor constraints
 can be met.
 
+## The stronger general flag budgets also hold
+
+The [two-map flag argument](flagged-cut-rank-budget.md) strengthens the general complement lower
+bound to the following function of a subset's summed column ranks:
+
+```math
+F_d(0)=d^2,\quad F_d(1)=F_d(2)=\frac{d(d-1)}2,
+\quad F_d(m)=\max_{0\le t\le d}t\bigl(d-(m-1)t\bigr)\ (m\ge3).
+                                                               \tag{8}
+```
+
+The maximum is over integers. The profile (1) meets every resulting
+subset constraint, not merely the cases with summed small cut at most
+two already discussed.
+
+To prove this, let a subset have summed column rank `m`. The cases
+`m=0,1,2` follow from the preceding section. If `3<=m<d`, take the
+smallest power of two `c>m`. The forward list contains the pair
+`(d^2/c,c)`. This piece cannot belong to the subset. Since `c<=2m`,
+its row rank alone gives
+
+```math
+\sum_{i\notin J}r_i\ge\frac{d^2}{c}
+ \ge\frac{d^2}{2m}
+ \ge\frac{d^2}{4(m-1)}
+ \ge F_d(m).                                        \tag{9}
+```
+
+For `m=d>=3`, the integer maximum in (8) is one. The complement is
+nonempty because the total column sum exceeds `d`, so its row total
+is at least one. For `m>=d+1`, the maximum is zero. This exhausts
+all subsets and all budgets. Symmetry supplies the other cut.
+
+Consequently every stronger termwise-minimum budget also holds:
+
+```math
+\sum_i\min(r_i,s^2c_i)\ge G_d(s),\qquad
+G_d(s)=\min_{0\le m\le d+1}\bigl(F_d(m)+s^2m\bigr), \tag{10}
+```
+
+and likewise after exchanging cuts. Values `m>d+1` cannot decrease
+this minimum: `F_d(m)=0` there and `s^2m` is nondecreasing.
+
+The checker independently verifies these statements by a finite
+knapsack calculation. For each exact summed column budget through
+`d+1`, it computes the largest row total removable by **any** subset
+of the listed pieces. Descending updates retain each piece at most
+once, including both distinct center occurrences. The calculation
+is repeated after exchanging cuts. This verifies every potentially
+nontrivial subset budget without enumerating exponentially many
+subsets.
+
 ## Consequence and stop criterion
 
 For powers of two, (2) gives
 
 ```math
-S=2d(\log_2d+1)=O(d\log d)=o(d^{\sqrt2}).            \tag{8}
+S=2d(\log_2d+1)=O(d\log d)=o(d^{\sqrt2}).            \tag{11}
 ```
 
 The previously proved harmonic budget supplies a lower bound of order
 `d log d` for the same relaxation. Along powers of two, its asymptotic
-order is `Theta(d log d)`, even after the rank-one and rank-two complement
+order is `Theta(d log d)`, even after the rank-one, rank-two, and general flag complement
 constraints above are imposed. Improving constants or finite cutoffs
 inside this relaxation cannot by itself prove a universal exclusion.
 
@@ -141,7 +193,8 @@ python tools/check_weighted_cut_relaxation_limit.py \
 
 The checker includes both center occurrences, every integer `s`, both
 orientations, and every subset whose relevant summed cut rank is at
-most two, for powers of two through `4096`. The proposition itself is
+most two, for powers of two through `4096`. It also verifies all new
+`G_d(s)` budgets and every exact subset budget through `d+1` using the
+knapsack calculation above. The proposition itself is
 the general proof above; the finite calculation is an arithmetic
-control and does not assert tensor realizability. The proof and checker
-were developed with substantial OpenAI assistant support.
+control and does not assert tensor realizability.

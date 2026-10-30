@@ -2,9 +2,11 @@
   "status": "PASS",
   "tensor_realization_asserted": false,
   "scope": "limitation of scalar cut-budget obstructions only",
-  "checker_sha256": "e65726f64ce987ac028fb9b15c9afa93fd0c78855088e660ec99bfbd6b6fd149",
+  "checker_sha256": "48e2ad351a71d871bd9d47858d74e474645d102841c830650118751774ee8eea",
   "weighted_inequalities": 16404,
   "small_cut_subsets": 74,
+  "flagged_weighted_inequalities": 16404,
+  "flagged_subset_budget_classes": 16428,
   "dimensions": [
     {
       "d": 2,
@@ -13,7 +15,9 @@
       "total_row_rank": 9,
       "total_column_rank": 9,
       "weighted_inequalities": 6,
-      "small_cut_subsets": 8
+      "small_cut_subsets": 8,
+      "flagged_weighted_inequalities": 6,
+      "flagged_subset_budget_classes": 8
     },
     {
       "d": 4,
@@ -22,7 +26,9 @@
       "total_row_rank": 35,
       "total_column_rank": 35,
       "weighted_inequalities": 10,
-      "small_cut_subsets": 6
+      "small_cut_subsets": 6,
+      "flagged_weighted_inequalities": 10,
+      "flagged_subset_budget_classes": 12
     },
     {
       "d": 8,
@@ -31,7 +37,9 @@
       "total_row_rank": 135,
       "total_column_rank": 135,
       "weighted_inequalities": 18,
-      "small_cut_subsets": 6
+      "small_cut_subsets": 6,
+      "flagged_weighted_inequalities": 18,
+      "flagged_subset_budget_classes": 20
     },
     {
       "d": 16,
@@ -40,7 +48,9 @@
       "total_row_rank": 527,
       "total_column_rank": 527,
       "weighted_inequalities": 34,
-      "small_cut_subsets": 6
+      "small_cut_subsets": 6,
+      "flagged_weighted_inequalities": 34,
+      "flagged_subset_budget_classes": 36
     },
     {
       "d": 32,
@@ -49,7 +59,9 @@
       "total_row_rank": 2079,
       "total_column_rank": 2079,
       "weighted_inequalities": 66,
-      "small_cut_subsets": 6
+      "small_cut_subsets": 6,
+      "flagged_weighted_inequalities": 66,
+      "flagged_subset_budget_classes": 68
     },
     {
       "d": 64,
@@ -58,7 +70,9 @@
       "total_row_rank": 8255,
       "total_column_rank": 8255,
       "weighted_inequalities": 130,
-      "small_cut_subsets": 6
+      "small_cut_subsets": 6,
+      "flagged_weighted_inequalities": 130,
+      "flagged_subset_budget_classes": 132
     },
     {
       "d": 128,
@@ -67,7 +81,9 @@
       "total_row_rank": 32895,
       "total_column_rank": 32895,
       "weighted_inequalities": 258,
-      "small_cut_subsets": 6
+      "small_cut_subsets": 6,
+      "flagged_weighted_inequalities": 258,
+      "flagged_subset_budget_classes": 260
     },
     {
       "d": 256,
@@ -76,7 +92,9 @@
       "total_row_rank": 131327,
       "total_column_rank": 131327,
       "weighted_inequalities": 514,
-      "small_cut_subsets": 6
+      "small_cut_subsets": 6,
+      "flagged_weighted_inequalities": 514,
+      "flagged_subset_budget_classes": 516
     },
     {
       "d": 512,
@@ -85,7 +103,9 @@
       "total_row_rank": 524799,
       "total_column_rank": 524799,
       "weighted_inequalities": 1026,
-      "small_cut_subsets": 6
+      "small_cut_subsets": 6,
+      "flagged_weighted_inequalities": 1026,
+      "flagged_subset_budget_classes": 1028
     },
     {
       "d": 1024,
@@ -94,7 +114,9 @@
       "total_row_rank": 2098175,
       "total_column_rank": 2098175,
       "weighted_inequalities": 2050,
-      "small_cut_subsets": 6
+      "small_cut_subsets": 6,
+      "flagged_weighted_inequalities": 2050,
+      "flagged_subset_budget_classes": 2052
     },
     {
       "d": 2048,
@@ -103,7 +125,9 @@
       "total_row_rank": 8390655,
       "total_column_rank": 8390655,
       "weighted_inequalities": 4098,
-      "small_cut_subsets": 6
+      "small_cut_subsets": 6,
+      "flagged_weighted_inequalities": 4098,
+      "flagged_subset_budget_classes": 4100
     },
     {
       "d": 4096,
@@ -112,7 +136,9 @@
       "total_row_rank": 33558527,
       "total_column_rank": 33558527,
       "weighted_inequalities": 8194,
-      "small_cut_subsets": 6
+      "small_cut_subsets": 6,
+      "flagged_weighted_inequalities": 8194,
+      "flagged_subset_budget_classes": 8196
     }
   ],
   "last_example_strictly_below_target": true

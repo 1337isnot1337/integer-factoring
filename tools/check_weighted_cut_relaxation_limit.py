@@ -20,6 +20,36 @@ def profile(d: int) -> list[tuple[int, int]]:
     return result
 
 
+def flagged_complement(d: int, m: int) -> int:
+    if m == 0:
+        return d * d
+    if m <= 2:
+        return d * (d - 1) // 2
+    slope = m - 1
+    s = d // (2 * slope)
+    return max(0, s * (d - slope * s), (s + 1) * (d - slope * (s + 1)))
+
+
+def flagged_subset_checks(d: int, pairs: list[tuple[int, int]]) -> int:
+    """Exact knapsack: every subset with summed small cut at most d+1."""
+    cap = d + 1
+    checked = 0
+    for exchange in (False, True):
+        oriented = [(c, r) if exchange else (r, c) for r, c in pairs]
+        total = sum(r for r, _ in oriented)
+        removed = [-1] * (cap + 1)
+        removed[0] = 0
+        for r, c in oriented:
+            for budget in range(cap, c - 1, -1):
+                if removed[budget - c] >= 0:
+                    removed[budget] = max(removed[budget], removed[budget - c] + r)
+        assert min(removed) >= 0
+        for m, maximum in enumerate(removed):
+            assert total - maximum >= flagged_complement(d, m)
+            checked += 1
+    return checked
+
+
 def check_dimension(d: int) -> dict[str, int]:
     pairs = profile(d)
     m, n = d.bit_length() - 1, d * d
@@ -40,6 +70,12 @@ def check_dimension(d: int) -> dict[str, int]:
             assert d * t + min(2 * d * t, d * s * s // (2 * t)) >= d * s
         elif s == d:
             assert (n, 1) in pairs and min(n, s * s) == s * d
+    complement_values = [flagged_complement(d, m) for m in range(d + 2)]
+    for s in range(d + 1):
+        budget = min(f + s * s * m for m, f in enumerate(complement_values))
+        assert sum(min(r, s * s * c) for r, c in pairs) >= budget
+        assert sum(min(s * s * r, c) for r, c in pairs) >= budget
+    flagged_subsets = flagged_subset_checks(d, pairs)
     eligible = 0
     for exchange in (False, True):
         oriented = [(c, r) if exchange else (r, c) for r, c in pairs]
@@ -63,7 +99,9 @@ def check_dimension(d: int) -> dict[str, int]:
     return {"d": d, "pieces": len(pairs), "cost": cost,
             "total_row_rank": r_total, "total_column_rank": c_total,
             "weighted_inequalities": 2 * (d + 1),
-            "small_cut_subsets": eligible}
+            "small_cut_subsets": eligible,
+            "flagged_weighted_inequalities": 2 * (d + 1),
+            "flagged_subset_budget_classes": flagged_subsets}
 
 
 def main() -> None:
@@ -81,6 +119,8 @@ def main() -> None:
         "checker_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
         "weighted_inequalities": sum(row["weighted_inequalities"] for row in dimensions),
         "small_cut_subsets": sum(row["small_cut_subsets"] for row in dimensions),
+        "flagged_weighted_inequalities": sum(row["flagged_weighted_inequalities"] for row in dimensions),
+        "flagged_subset_budget_classes": sum(row["flagged_subset_budget_classes"] for row in dimensions),
         "dimensions": dimensions,
         "last_example_strictly_below_target": True,
     }

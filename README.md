@@ -71,16 +71,14 @@ No uniform factoring exponent above `1/2` is proved here. One open approach seek
 
 The [weighted cut-rank theorem](research/weighted-cut-rank-budget.md) proves
 `sum_i sqrt(r_i*c_i) >= d*(2*H_(2d)-H_d-1)` for crossing decompositions over
-every field. An exact strengthened certificate excludes the finite rank-sum
-amplification criterion through 46 labels. The
-[residual-budget refinement](research/weighted-cut-residual-budget.md)
-raises the exclusion to 50 labels, and six
-[positive rational duals](research/weighted-cut-dual-certificate.md)
-extend it through 52 labels. These restrictions concern that criterion;
-the [two-product refinement](research/two-product-seed-cutoff.md)
-extends it further through **54 labels**. These restrictions leave other
-constructions open and do not change the factoring exponent. The exact
-replays are included in `make verify-frontier`.
+every field. The stronger [flag quotients](research/flagged-cut-rank-budget.md)
+now exclude the finite rank-sum amplification criterion through **82 labels**.
+They save one product in every general complement quotient and condition
+the weighted budgets on an actual piece of largest imbalance. The proof
+uses the earlier residual and two-product bounds, with exact rational
+verification of every required class. These restrictions concern that
+criterion and do not change the factoring exponent. Their replays are
+included in `make verify-frontier`.
 
 The [two-product complement theorem](research/two-product-complement.md)
 proves `rank(E_d - P tensor Q - R tensor S) >= d*(d-1)/2` over every
@@ -115,7 +113,12 @@ reduce arbitrary ambient code lengths to finite affine-selector data.
 Complete screens cover all 67,108,864 coordinate-section classes at
 logical width five and all 65,536 general-section classes at width three.
 Neither screen improves the elementary pencil's maximum rank product;
-these finite results do not exclude larger widths or other families.
+the subsequent [frame-filtration theorem](research/frame-filtration-barrier.md)
+now proves the sharp leading obstruction `rho >= H_2(1/4)` for all
+affine-selector frames and arbitrary mixtures of their coefficient spans.
+Its common projection preserves the crossing and never increases either
+cut rank. Nonlinear selectors and nonlinear label maps remain separate
+construction routes.
 
 The [global-block transfer](research/global-block-field-transfer.md)
 permits coefficient fields to vary with the raw block length, with

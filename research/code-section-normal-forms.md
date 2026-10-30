@@ -32,9 +32,11 @@ For arbitrary linear sections, the finite normal form has
 minima 4, 36, and 224 at widths one, two, and three, respectively. The
 width-three screen covers all 65,536 classes, of which 28 attain 224.
 
-These are finite statements for this explicit elementary-pencil family.
-They are neither all-size lower bounds nor obstructions to general crossing
-decompositions, quadratic Boolean codes, or other dual embeddings. No new
+These screens are finite statements for this explicit elementary-pencil
+family. The subsequent [frame-filtration theorem](frame-filtration-barrier.md)
+proves an all-size obstruction for every affine-selector frame, including
+arbitrary mixtures and recombinations of their coefficients. General crossing
+decompositions and nonlinear selectors remain outside that theorem. No new
 Lean claims are made, and the factoring score remains `1/2`.
 
 The starting crossing is the elementary pencil already studied in the
