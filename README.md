@@ -67,6 +67,9 @@ requires real-number approximation in the algorithm.
   span, with an exact small-instance search.
 - [GroupingThreshold.lean](formal/GroupingThreshold.lean) and
   [CrossingComplement.lean](formal/CrossingComplement.lean): checked finite lemmas.
+- [MultiplierBound.lean](formal/MultiplierBound.lean): checked multiplier
+  bounds and the corresponding modular detection cutoff, conditional on
+  explicit count and rectangle bounds.
 - [ExplicitChain.lean](formal/ExplicitChain.lean): a checked bound on every
   chain exponent and a complete time bound for the unchanged reference machine.
   This formal envelope retains the source's `23/24` contraction; the sharper

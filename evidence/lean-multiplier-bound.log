@@ -1,0 +1,7 @@
+'Factoring.Improvements.levelMultiplier_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Factoring.Improvements.multipliers_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Factoring.Improvements.levelMultiplier_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Factoring.Improvements.multipliers_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Factoring.Improvements.scaled_count_detected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Factoring.Improvements.scaled_count_detected_explicit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Factoring.Improvements.multiplier_product_detected' depends on axioms: [propext, Classical.choice, Quot.sound]

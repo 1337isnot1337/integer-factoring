@@ -28,6 +28,13 @@
       "result": "passed",
       "axiom_reports": 9,
       "log": "evidence/lean-explicit-chain.log"
+    },
+    {
+      "path": "formal/MultiplierBound.lean",
+      "sha256": "2e8991931e1d632eec31bed2e21d1aa80a2a6961b30df85f0fd9c54f6ef56827",
+      "result": "passed",
+      "axiom_reports": 7,
+      "log": "evidence/lean-multiplier-bound.log"
     }
   ],
   "checked_declarations": [
@@ -177,6 +184,62 @@
     },
     {
       "declaration": "Factoring.Improvements.factoring_explicit_exponential",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.Improvements.levelMultiplier_le",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.Improvements.multipliers_le",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.Improvements.levelMultiplier_pos",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.Improvements.multipliers_pos",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.Improvements.scaled_count_detected",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.Improvements.scaled_count_detected_explicit",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.Improvements.multiplier_product_detected",
       "axioms": [
         "Classical.choice",
         "Quot.sound",

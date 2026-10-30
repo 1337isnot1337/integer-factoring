@@ -260,6 +260,14 @@ unknown divisor count nor construction of the enormous integer `H`.
 Since the moduli
 extend only to `2M`, this adds a polynomial factor, not `2^M` iterations.
 
+`formal/MultiplierBound.lean` checks the level and product multiplier
+envelopes, positivity of the product, and the resulting finite modulus
+cutoff, using the reference's modular zero theorem. The theorem assumes the
+rectangle count is at most `G^4` at each level and the unscaled count is
+below `2^n`. It does not establish that the proposed evaluator computes the
+scaled count or that the schedule and top construction satisfy those
+assumptions; those remain integration obligations.
+
 ## 5. Cost accounting for the abstract evaluator
 
 The following estimates include the grouping search and choice enumeration.
