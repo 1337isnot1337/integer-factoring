@@ -1,0 +1,78 @@
+{
+  "divisor_bound_controls": {
+    "large_integer_controls": [
+      {
+        "bound_bits": "208",
+        "log2_bit_length": 8,
+        "three_n_over_log_n": false
+      },
+      {
+        "bound_bits": "12544",
+        "log2_bit_length": 16,
+        "three_n_over_log_n": false
+      },
+      {
+        "bound_bits": "270598144",
+        "log2_bit_length": 32,
+        "three_n_over_log_n": true
+      },
+      {
+        "bound_bits": "576461031476297728",
+        "log2_bit_length": 64,
+        "three_n_over_log_n": true
+      },
+      {
+        "bound_bits": "5316911983139665871245213749653536768",
+        "log2_bit_length": 128,
+        "three_n_over_log_n": true
+      },
+      {
+        "bound_bits": "904625697166532776746648320380374367556240053881502016645536485026251669504",
+        "log2_bit_length": 256,
+        "three_n_over_log_n": true
+      }
+    ],
+    "sieved_integers": 9999
+  },
+  "field_controls": {
+    "character_orthogonality": 120,
+    "missing_normalization_control": true,
+    "nonzero_control_inverses": 105,
+    "split_quadratic_zero_divisor_control": true,
+    "trivial_character_control": true
+  },
+  "recovery_controls": {
+    "accepted_descriptors": 7654,
+    "cancelled_nonempty_buckets": 169,
+    "descriptors": 72836,
+    "false_singletons_rejected": 24,
+    "fourier_buckets": 600,
+    "integers": 40,
+    "isolation_checks": 188,
+    "negative_control_examples": {
+      "cancellation": {
+        "N": 2,
+        "bucket": 1,
+        "characteristic": 2,
+        "members": [
+          1,
+          2
+        ],
+        "point": 1
+      },
+      "false_singleton": {
+        "N": 4,
+        "bucket": 1,
+        "characteristic": 2,
+        "members": [
+          1,
+          2,
+          4
+        ],
+        "point": 1
+      }
+    }
+  },
+  "scope": "Finite exact recovery identities; literal divisor oracle only.",
+  "status": "PASS"
+}

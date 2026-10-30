@@ -24,6 +24,8 @@ verify-frontier:
 	python3 tools/check_weighted_cut_residual_budget.py
 	python3 tools/check_weighted_cut_dual_certificate.py
 	python3 tools/check_quadratic_crossing.py
+	python3 tools/check_growing_number_field_transfer.py
+	python3 tools/check_characteristic_independent_recovery.py
 	python3 tools/check_piece_transfer.py
 	python3 tools/check_boson_truncation.py
 	python3 tools/check_graded_space.py

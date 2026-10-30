@@ -88,6 +88,17 @@ the required rank contraction is still open. The note also proves a
 quadratic-annihilator theorem and reports the unsuccessful literal
 32- and 64-label rank profiles.
 
+The [global-block transfer](research/global-block-field-transfer.md)
+permits coefficient fields to vary with the raw block length, with
+explicit construction cost `2^O(t^h)` for any fixed `h>=1` and width
+error `O(t/log(t+2))`. It retains the exact simultaneous time and space
+bound `exp(O(n/log(n)^alpha))` and `O(n/log(n)^alpha)`, respectively,
+conditional on the supplied contraction. A
+[verified recovery extension](research/characteristic-independent-recovery.md)
+covers finite fields of varying characteristic. These results broaden
+the admissible construction interface without supplying a stronger
+contraction.
+
 See the [research index](research/INDEX.md) for completed arguments, scoped obstructions, and older candidates. Active work can also appear in [open pull requests](https://github.com/1337isnot1337/integer-factoring/pulls); branch research is not automatically a result on `main`.
 
 ## Contribution and attribution

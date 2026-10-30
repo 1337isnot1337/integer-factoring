@@ -16,6 +16,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 - [Pieces-to-factoring transfer](pieces-to-factoring.md): conditional crossing-parameter transfer, with full bit-cost accounting.
 - [Scale-one modular transfer](scale-one-modular-transfer.md): fixed-field transfer and machine costs.
+- [Global-block field transfer](global-block-field-transfer.md): varying number fields, raw construction cost `2^O(t^h)`, and reciprocal-logarithmic width error preserve the exact simultaneous time and space exponent.
+- [Recovery in varying characteristic](characteristic-independent-recovery.md): short verified divisor descriptors extend the global-block transfer to varying finite fields, including characteristic two.
 - [Sparse divisor nonzeroness](sparse-divisor-nonzeroness.md): detection of divisors in weighted polynomial counts.
 - [Modular crossing](modular-crossing.md): normalized finite-field pieces and quotient construction.
 - [Homogeneous duals](homogeneous-duals.md): alternative algebraic pieces and their checked identities.
