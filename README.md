@@ -45,6 +45,7 @@ make verify-frontier      # Focused research certificates
 make verify-post-half     # Larger optional rank tests
 make verify-docs          # Local Markdown-link check
 make verify-schur-fermion # Complete Schur entry formulas and exact comparisons
+make verify-schur-central # Hook-residue identities and full Schur ranks through weight 8
 make verify-cancellation-modules # Exact module states and word-rate certificates
 make verify-cancellation-crossing # Strict certificate gain for a complete crossing
 make verify-block-smith # Exact profiles for ordered crossing blocks
@@ -52,7 +53,7 @@ make verify-cubic-full-images # Full cubic coefficient spaces and reduced ranks
 make verify-linear-smith # All binary scalar pencils and the uniform linear barrier
 ```
 
-The Python checks use Python 3 and its standard library. Some optional checks use NumPy for speed. The optional linear Smith catalogue also requires a C++17 compiler.
+The Python checks use Python 3 and its standard library. Some optional checks use NumPy for speed. The optional linear Smith catalogue and Schur central-rank checks also require a C++17 compiler.
 
 For the Lean builds, install the stated Lean release, Lake, Git, and the prerequisites in the corresponding scripts. The scripts fetch pinned upstream revisions.
 
@@ -84,7 +85,11 @@ individual modes with determinants of order at most `3 sqrt(H)`, and full
 crossing coefficients with determinants of order at most `4 sqrt(h)`. It works
 directly in finite characteristic and removes factorial-precision conversion
 from these queries. Its ordinary proof and independent exact checks improve
-the available construction tools; no stronger rank bound is claimed.
+the available construction tools. [Hook-residue identities](research/schur-hook-residue-central.md)
+give central rank at most `p(2h)-3` at every power-of-two weight. Full exact
+calculations attain this bound at weights 8 and 16, with ranks `228` and
+`8,346`. These central pieces exclude the corresponding raw finite seeds;
+no stronger factoring bound is claimed.
 
 [Finite module automata](research/cancellation-module-smith-automata.md)
 retain cancellation between auxiliary paths. Their bounds improve monotonically

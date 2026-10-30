@@ -1,0 +1,415 @@
+{
+  "compile_flags": [
+    "-std=c++17",
+    "-O3"
+  ],
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+  "mode_cross_checks": {
+    "all_weights_through_five": 6859,
+    "larger_deterministic_samples": 256,
+    "total": 7115
+  },
+  "negative_control": {
+    "external_label": [
+      2,
+      2
+    ],
+    "modulus": 4,
+    "nonzero_hook_sum": 1,
+    "residue": 0,
+    "weight": 4
+  },
+  "profiles": [
+    {
+      "all_pairs": true,
+      "all_weight_hook_parity_upper_bound": 2,
+      "central_alone_exceeds_seed_threshold_by_rank_squared_gt_d_cubed": false,
+      "central_rank": 2,
+      "certified_full_central_rank": 2,
+      "channels": 6,
+      "creation_identity_entries": 4,
+      "dimension": 2,
+      "h": 2,
+      "hook_parity_supports": [
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "hook_residue_identities_checked": 16,
+      "left_perpendicular_supports": [
+        [
+          0,
+          3,
+          5
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "left_rank": 3,
+      "pair_multiplier": 65537,
+      "pair_offset": 1,
+      "pairs": 4,
+      "right_perpendicular_supports": [
+        [
+          0,
+          3,
+          5
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "right_rank": 3,
+      "seconds": 1.4585e-05,
+      "vacuum_gram_rank": 2
+    },
+    {
+      "all_pairs": true,
+      "all_weight_hook_parity_upper_bound": 19,
+      "central_alone_exceeds_seed_threshold_by_rank_squared_gt_d_cubed": true,
+      "central_rank": 12,
+      "certified_full_central_rank": 12,
+      "channels": 23,
+      "creation_identity_entries": 25,
+      "dimension": 5,
+      "h": 4,
+      "hook_parity_supports": [
+        [
+          1,
+          3,
+          7,
+          15
+        ],
+        [
+          2,
+          5,
+          11,
+          22
+        ]
+      ],
+      "hook_residue_identities_checked": 300,
+      "left_perpendicular_supports": [
+        [
+          0,
+          5,
+          7,
+          11,
+          15
+        ],
+        [
+          1,
+          5,
+          7,
+          22
+        ],
+        [
+          2,
+          5,
+          11,
+          22
+        ],
+        [
+          3,
+          5,
+          15,
+          22
+        ],
+        [
+          6
+        ],
+        [
+          10,
+          17
+        ],
+        [
+          13
+        ]
+      ],
+      "left_rank": 16,
+      "pair_multiplier": 65537,
+      "pair_offset": 4,
+      "pairs": 25,
+      "right_perpendicular_supports": [
+        [
+          0,
+          5,
+          7,
+          11,
+          15
+        ],
+        [
+          1,
+          5,
+          7,
+          22
+        ],
+        [
+          2,
+          5,
+          11,
+          22
+        ],
+        [
+          3,
+          5,
+          15,
+          22
+        ],
+        [
+          6
+        ],
+        [
+          10,
+          17
+        ],
+        [
+          13
+        ]
+      ],
+      "right_rank": 16,
+      "seconds": 0.000145072,
+      "vacuum_gram_rank": 5
+    },
+    {
+      "all_pairs": true,
+      "all_weight_hook_parity_upper_bound": 228,
+      "central_alone_exceeds_seed_threshold_by_rank_squared_gt_d_cubed": true,
+      "central_rank": 228,
+      "certified_full_central_rank": 228,
+      "channels": 232,
+      "creation_identity_entries": 484,
+      "dimension": 22,
+      "h": 8,
+      "hook_parity_supports": [
+        [
+          1,
+          3,
+          7,
+          15,
+          30,
+          56,
+          101,
+          176
+        ],
+        [
+          2,
+          5,
+          11,
+          22,
+          42,
+          77,
+          135,
+          231
+        ]
+      ],
+      "hook_residue_identities_checked": 13552,
+      "left_perpendicular_supports": [
+        [
+          1,
+          3,
+          7,
+          15,
+          30,
+          56,
+          101,
+          176
+        ],
+        [
+          2,
+          5,
+          11,
+          22,
+          42,
+          77,
+          135,
+          231
+        ]
+      ],
+      "left_rank": 230,
+      "pair_multiplier": 65537,
+      "pair_offset": 277,
+      "pairs": 484,
+      "right_perpendicular_supports": [
+        [
+          1,
+          3,
+          7,
+          15,
+          30,
+          56,
+          101,
+          176
+        ],
+        [
+          2,
+          5,
+          11,
+          22,
+          42,
+          77,
+          135,
+          231
+        ]
+      ],
+      "right_rank": 230,
+      "seconds": 0.0197473,
+      "vacuum_gram_rank": 22
+    },
+    {
+      "all_pairs": true,
+      "all_weight_hook_parity_upper_bound": 8346,
+      "central_alone_exceeds_seed_threshold_by_rank_squared_gt_d_cubed": true,
+      "central_rank": 8346,
+      "certified_full_central_rank": 8346,
+      "channels": 8350,
+      "creation_identity_entries": 53361,
+      "dimension": 231,
+      "h": 16,
+      "hook_parity_supports": [
+        [
+          1,
+          3,
+          7,
+          15,
+          30,
+          56,
+          101,
+          176,
+          297,
+          490,
+          792,
+          1255,
+          1958,
+          3010,
+          4565,
+          6842
+        ],
+        [
+          2,
+          5,
+          11,
+          22,
+          42,
+          77,
+          135,
+          231,
+          385,
+          627,
+          1002,
+          1575,
+          2436,
+          3718,
+          5604,
+          8349
+        ]
+      ],
+      "hook_residue_identities_checked": 3201660,
+      "left_perpendicular_supports": [
+        [
+          1,
+          3,
+          7,
+          15,
+          30,
+          56,
+          101,
+          176,
+          297,
+          490,
+          792,
+          1255,
+          1958,
+          3010,
+          4565,
+          6842
+        ],
+        [
+          2,
+          5,
+          11,
+          22,
+          42,
+          77,
+          135,
+          231,
+          385,
+          627,
+          1002,
+          1575,
+          2436,
+          3718,
+          5604,
+          8349
+        ]
+      ],
+      "left_rank": 8348,
+      "pair_multiplier": 65537,
+      "pair_offset": 1729,
+      "pairs": 53361,
+      "right_perpendicular_supports": [
+        [
+          1,
+          3,
+          7,
+          15,
+          30,
+          56,
+          101,
+          176,
+          297,
+          490,
+          792,
+          1255,
+          1958,
+          3010,
+          4565,
+          6842
+        ],
+        [
+          2,
+          5,
+          11,
+          22,
+          42,
+          77,
+          135,
+          231,
+          385,
+          627,
+          1002,
+          1575,
+          2436,
+          3718,
+          5604,
+          8349
+        ]
+      ],
+      "right_rank": 8348,
+      "seconds": 166.112,
+      "vacuum_gram_rank": 231
+    }
+  ],
+  "source_sha256": {
+    "tools/check_schur_homogeneous_central.py": "85629a3ed9eb2542521e94f244669c7f1da75f7170e531df06b685be546b8d10",
+    "tools/schur_fermion.py": "03b19a8df3793b12b4516b8d19435a308976e721a960608090b99158b3877614",
+    "tools/schur_fermion_core.hpp": "3e59ce12aac34a89668be51c5e5ad61ab7b90b2db8a661e13492678810c70ec5",
+    "tools/schur_homogeneous_central.cpp": "cd910f09fbca0671b113c9f4420c8d498c14617e4237238ca2d5da5a3d0fd78f"
+  },
+  "status": "exact finite ranks and all-weight hook-residue theorem; no new factoring exponent"
+}

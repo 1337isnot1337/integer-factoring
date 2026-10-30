@@ -15,6 +15,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 ## Transfers and proposed stronger evaluators
 
 - [Complete Schur queries](schur-fermion-queries.md): division-free small determinant formulas for modes and complete crossing coefficients; polynomial query cost with exact independent checks, but no new rank bound.
+- [Schur hook residues and central ranks](schur-hook-residue-central.md): all-weight hook identities give rank at most `p(2h)-3`, attained at weights 8 and 16 by complete exact computations.
 - [Cancellation module automata](cancellation-module-smith-automata.md): finite-state certificates that retain auxiliary-product cancellation, a monotone precision hierarchy, and a complete certificate limit for free-boundary word rates.
 - [A complete crossing with a strict module gain](cancellation-module-crossing-example.md): exact rational upper and lower potentials separate the module certificate from its matching capped min-plus certificate.
 - [Fixed block Smith profiles](block-smith-crossings.md): submultiplicative profile bounds and an exact three-position improvement for the ordered-pairing control.
