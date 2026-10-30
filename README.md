@@ -1,9 +1,15 @@
 # Integer factoring bounds
 
+[![Verify research certificates](https://github.com/1337isnot1337/integer-factoring/actions/workflows/verify.yml/badge.svg)](https://github.com/1337isnot1337/integer-factoring/actions/workflows/verify.yml)
+[![License: Apache 2.0](https://img.shields.io/badge/license-Apache%202.0-59636e)](LICENSE)
+
 Research on deterministic integer factoring, targeting the [Big O Speedrun
 integer-factoring problem](https://bigospeedrun.com/integer-factoring).
 The input is an integer `N` written in `n` bits; the output is its smallest
 prime factor. Running time counts bit operations for every input.
+
+[Start contributing](autoresearch.md) · [Contribution guide](CONTRIBUTING.md) ·
+[Integration status](research/integration.md) · [Pinned source](upstream.lock.json)
 
 ## Baseline
 
@@ -65,19 +71,18 @@ benchmarks. The combined target remains much weaker than the upstream conjecture
 
 ## Reproduce the checks
 
-The Python checks require only the standard library:
+The Python checks require only Python 3 and the standard library:
 
 ```sh
-python3 -m unittest discover -s tests -v
-python3 -m unittest tools.check_crossing -v
-python3 tools/check_coefficient_basis.py
-python3 tools/parameters.py
+make verify
 ```
+
+Without Make, run the commands in the `verify` target of the [Makefile](Makefile).
 
 With Lean 4.35.0 and Lake on the executable path, run:
 
 ```sh
-bash tools/check_formal.sh
+make verify-formal
 ```
 
 The script fetches the pinned public reference, rebuilds its `Solution`, and
