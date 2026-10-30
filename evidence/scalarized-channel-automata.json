@@ -1,0 +1,119 @@
+{
+  "checker_sha256": "32f1b89905ac2adebc0fd4220ae2d65c5f4cc6bfbbf462795a8c3ef851e8d34f",
+  "direct_word_checks": 312,
+  "functional_summaries": [
+    {
+      "counts_k1_through_k6": [
+        4,
+        48,
+        320,
+        2816,
+        21504,
+        176128
+      ],
+      "functional_mask": 1,
+      "live_states": 7,
+      "nonzero_terminal_states": 5
+    },
+    {
+      "counts_k1_through_k6": [
+        4,
+        48,
+        320,
+        2816,
+        21504,
+        176128
+      ],
+      "functional_mask": 3,
+      "live_states": 7,
+      "nonzero_terminal_states": 5
+    },
+    {
+      "counts_k1_through_k6": [
+        4,
+        48,
+        320,
+        2816,
+        21504,
+        176128
+      ],
+      "functional_mask": 5,
+      "live_states": 7,
+      "nonzero_terminal_states": 5
+    },
+    {
+      "counts_k1_through_k6": [
+        12,
+        48,
+        576,
+        3840,
+        33792,
+        258048
+      ],
+      "functional_mask": 7,
+      "live_states": 10,
+      "nonzero_terminal_states": 7
+    },
+    {
+      "counts_k1_through_k6": [
+        4,
+        48,
+        320,
+        2816,
+        21504,
+        176128
+      ],
+      "functional_mask": 8,
+      "live_states": 7,
+      "nonzero_terminal_states": 5
+    },
+    {
+      "counts_k1_through_k6": [
+        4,
+        48,
+        320,
+        2816,
+        21504,
+        176128
+      ],
+      "functional_mask": 10,
+      "live_states": 7,
+      "nonzero_terminal_states": 5
+    },
+    {
+      "counts_k1_through_k6": [
+        4,
+        48,
+        320,
+        2816,
+        21504,
+        176128
+      ],
+      "functional_mask": 12,
+      "live_states": 7,
+      "nonzero_terminal_states": 5
+    },
+    {
+      "counts_k1_through_k6": [
+        12,
+        48,
+        576,
+        3840,
+        33792,
+        258048
+      ],
+      "functional_mask": 14,
+      "live_states": 10,
+      "nonzero_terminal_states": 7
+    }
+  ],
+  "normalized_functionals_checked": 8,
+  "rational_supervector_checks": 62,
+  "reachable_product_space_states": 11,
+  "scope": "Exact scalarized automaton and terminal-rank checks; this toy still has base8 and no score improvement.",
+  "seconds": 0.028080865999982052,
+  "status": "passed",
+  "terminal_bilinear_rank_checks": 88,
+  "transition_space_identities": 132,
+  "zero_terminal_prefix_requires_retention": true
+}

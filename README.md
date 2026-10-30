@@ -113,6 +113,10 @@ The [channel-walk extension](research/twisted-channel-walk-transfer.md) permits 
 
 The [component-path refinement](research/component-channel-walk-transfer.md) covers walks by paths of strongly connected components and permits separate reciprocal weights for each row/column path pair. The actual amplified tensor pieces stay unchanged. An exact abstract graph example improves the optimal certified base from two to one; applying the refinement to a competitive crossing tensor remains open. Its checker includes rational certificates, matching integer lower bounds, and a control against improperly separating connected components.
 
+[Product-subspace automata](research/scalarized-channel-automata.md) track longer ordered matrix products and their actual scalarized bilinear ranks. They can discard entire components that cannot reach a nonzero terminal form. A zero value at a prefix alone does not justify discarding it. The finite toy verifies these distinctions but retains exponential base eight.
+
+The [generic nonscalarization theorem](research/generic-full-factor-nonscalarization.md) proves a complementary existence result: two generic full factor structures in matrix orders twelve or sixteen over characteristic two need not admit any common normalized product functional, even after extending the field. This shows that the order-four scalarization argument does not settle those larger cases. It does not supply an improving crossing identity; actual factors may still span smaller subspaces that do admit scalarization.
+
 ## Contribution and attribution
 
 Start with [CONTRIBUTING.md](CONTRIBUTING.md) and [autoresearch.md](autoresearch.md). Coordinate new research through [issue #8](https://github.com/1337isnot1337/integer-factoring/issues/8). Document source revisions, proof status, reproduction commands, and remaining gaps.

@@ -31,6 +31,8 @@ verify-further:
 	python3 tools/check_twisted_channel_walks.py
 	python3 tools/check_channel_flow_duals.py
 	python3 tools/check_component_channel_walks.py
+	python3 tools/check_scalarized_channel_automata.py
+	python3 tools/check_generic_factor_nonscalarization.py
 	python3 tools/check_binary_energy_symmetry.py
 	python3 tools/check_weighted_energy.py
 	python3 tools/check_witt_interfaces.py

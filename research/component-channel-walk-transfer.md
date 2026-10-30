@@ -17,8 +17,8 @@ the finite seed, so it contributes only a constant factor.
 The actual tensor pieces remain the original piece-type sums. This is
 a refinement of their rank-count bound; it does not require a new
 tensor identity or a simultaneous row/column decomposition by paths.
-It also applies to the terminal-rank automata obtained by scalarizing
-ordered product spaces.
+It also applies to the [terminal-rank automata](scalarized-channel-automata.md)
+obtained by scalarizing ordered product spaces.
 
 An exact abstract graph example improves the certified base from two
 to one. No improving crossing tensor is supplied by that example.
