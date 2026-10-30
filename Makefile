@@ -50,9 +50,15 @@ verify-constructions:
 	python3 tools/check_ward_rectangular_envelope.py
 	python3 tools/check_ward_stable_operators.py --output /tmp/integer-factoring-ward-stable-operators.json
 	python3 tools/check_ward_form_operator_transport.py --output /tmp/integer-factoring-ward-form-operator-transport.json
+	python3 tools/check_ward_disjoint_transport.py --output /tmp/integer-factoring-ward-disjoint-transport.json
+	python3 tools/check_ward_interval_transport.py --output /tmp/integer-factoring-ward-interval-transport.json
+	python3 tools/check_ward_fan_family.py --output /tmp/integer-factoring-ward-fan-family.json
+	python3 tools/check_ward_pfaffian_queries.py --output /tmp/integer-factoring-ward-pfaffian-queries.json
 	python3 tools/check_ward_operator_types.py --output /tmp/integer-factoring-ward-operator-types-check.json
 	python3 tools/check_overlapping_symplectic_profiles.py
 	python3 tools/check_cubic_radical_output_maps.py
+	python3 tools/check_cubic_cyclic_fourier_bound.py --output /tmp/integer-factoring-cubic-cyclic-fourier-bound.json
+	python3 tools/check_cubic_jordan_filtration.py --output /tmp/integer-factoring-cubic-jordan-filtration.json
 	python3 tools/check_noncommutative_crossing_seed_algebra_audit.py
 	python3 tools/check_symplectic_seed_tensor_modules.py
 	python3 tools/symplectic_seed_weighted_modules.py --output /tmp/integer-factoring-weighted-modules.json
@@ -79,12 +85,20 @@ verify-native-crossings:
 	python3 tools/check_uniform_f4_two_even_sections.py --native $(CURDIR)/build/native/weighted-pfaffian-screen --screen-output build/native/uniform-f4-section-lift.jsonl --output build/native/uniform-f4-section.json
 	python3 tools/check_symplectic_seed_tensor_fields.py --types evidence/symplectic-seed-tensor-modules-certificate.json --power 2 --native $(CURDIR)/build/native/weighted-pfaffian-screen --compare-binary evidence/symplectic-seed-tensor-modules.json --export-dir build/native/seed-power-2 --output build/native/seed-power-2-audit.json
 	python3 tools/check_symplectic_mixed_grade_codes.py --native $(CURDIR)/build/native/pfaffian-span-screen --field4 --export-dir build/native/mixed-grade --output build/native/mixed-grade-audit.json
+	$(CXX) -O3 -std=c++20 -Wall -Wextra -Werror tools/screen_cubic_gf8.cpp -o build/native/cubic-gf8-screen
+	python3 tools/explore_cubic_complement_gf8.py --replay evidence/cubic-complement-F8.json --output build/native/cubic-complement-F8-replay.json
+	python3 tools/check_cubic_complement_gf8.py --input evidence/cubic-complement-F8.json --native $(CURDIR)/build/native/cubic-gf8-screen --output build/native/cubic-complement-F8-audit.json
+	python3 tools/explore_cubic_mixed_gf8.py --replay evidence/cubic-mixed-F8.json --output build/native/cubic-mixed-F8-replay.json
+	python3 tools/check_cubic_mixed_gf8.py --native $(CURDIR)/build/native/cubic-gf8-screen --output build/native/cubic-mixed-F8-audit.json
 
 verify-post-half:
 	python3 tools/check_common_character_compressions.py --output /tmp/integer-factoring-common-compressions.json
 	python3 tools/check_two_even_site_sections.py --scope graphs --work-dir /tmp/integer-factoring-two-even-sections --output /tmp/integer-factoring-two-even-sections.json
 	python3 tools/assemble_two_even_site_cores.py --pairs 6 --screen evidence/two-even-site-core-P6-F2.jsonl --output /tmp/integer-factoring-two-even-P6.json
 	python3 tools/check_two_even_site_compressions.py --output /tmp/integer-factoring-two-even-P6-compressions.json
+	python3 tools/check_two_even_site_jordan_compressions.py --output /tmp/integer-factoring-two-even-P7-compressions.json
+	python3 tools/check_two_even_site_P8_compressions.py --output /tmp/integer-factoring-two-even-P8-compressions.json
+	python3 tools/check_two_even_site_row_corners.py --output /tmp/integer-factoring-two-even-row-corners.json
 	python3 tools/check_half_piece_ranks.py --full
 	python3 tools/check_half_projection.py
 	python3 tools/check_half_restricted_labels.py

@@ -1,0 +1,1249 @@
+{
+  "cases": [
+    {
+      "ancillary_entries": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "complement_pairs": 16,
+      "complete_coefficient_count": 28,
+      "complete_profile_sha256": "60c0b969824370e3958430201d4ddf92490038f8aeb93d7e10c078ec6a71d2a9",
+      "integer_rank_sum_upper_bound": 7731180293,
+      "labels": 906192,
+      "largest_explicit_block": 6,
+      "length": 6,
+      "rho_of_upper_bound": 0.829937909770849
+    },
+    {
+      "ancillary_entries": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "complement_pairs": 16,
+      "complete_coefficient_count": 36,
+      "complete_profile_sha256": "7d1f8ab1c23bcbd215e6f3a3bc82cad507b1892f0cf1eb39906f39a2366d2d75",
+      "integer_rank_sum_upper_bound": 61693286735,
+      "labels": 3365856,
+      "largest_explicit_block": 8,
+      "length": 7,
+      "rho_of_upper_bound": 0.8265726965008422
+    },
+    {
+      "ancillary_entries": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "complement_pairs": 16,
+      "complete_coefficient_count": 45,
+      "complete_profile_sha256": "d87044ba44b2817d93772b56a8394722df7e5a8ff7456dd2e38679d6b93742ab",
+      "integer_rank_sum_upper_bound": 398518127559,
+      "labels": 10518300,
+      "largest_explicit_block": 8,
+      "length": 8,
+      "rho_of_upper_bound": 0.8260138157412964
+    },
+    {
+      "ancillary_entries": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "complement_pairs": 16,
+      "complete_coefficient_count": 55,
+      "complete_profile_sha256": "44fe5035b65bbf9d791194e5ee6b67e9041b440230115d3af1c2c89ef605bebd",
+      "integer_rank_sum_upper_bound": 2159899622852,
+      "labels": 28048800,
+      "largest_explicit_block": 12,
+      "length": 9,
+      "rho_of_upper_bound": 0.8280461546276305
+    },
+    {
+      "ancillary_entries": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "complement_pairs": 16,
+      "complete_coefficient_count": 66,
+      "complete_profile_sha256": "eda1d07ce7ac3a568b9ef93860b71685178c98814aa26e04a3faf232cb288aa9",
+      "integer_rank_sum_upper_bound": 10083432624761,
+      "labels": 64512240,
+      "largest_explicit_block": 12,
+      "length": 10,
+      "rho_of_upper_bound": 0.8325354861354356
+    },
+    {
+      "ancillary_entries": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "complement_pairs": 32,
+      "complete_coefficient_count": 78,
+      "complete_profile_sha256": "d3572ff72d53ab7e60404cf138de249755f74f89a969f35b15f40957e9c6f7e3",
+      "integer_rank_sum_upper_bound": 14712813857844532107,
+      "labels": 743595781824,
+      "largest_explicit_block": 16,
+      "length": 11,
+      "rho_of_upper_bound": 0.8073099042531449
+    },
+    {
+      "ancillary_entries": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "complement_pairs": 32,
+      "complete_coefficient_count": 105,
+      "complete_profile_sha256": "0f208d37ef93909bbc27338093211c98427c0cbda7c17da78c515a8655e13853",
+      "integer_rank_sum_upper_bound": 1110621656125331801542,
+      "labels": 13136858812224,
+      "largest_explicit_block": 16,
+      "length": 13,
+      "rho_of_upper_bound": 0.8021336174829985
+    },
+    {
+      "ancillary_entries": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "complement_pairs": 32,
+      "complete_coefficient_count": 120,
+      "complete_profile_sha256": "f0013c2c9c2d6c6f474bf02580dee35d2e7c2039213ca201a15f718c5d6cf5d4",
+      "integer_rank_sum_upper_bound": 8096875277086545791655,
+      "labels": 47855699958816,
+      "largest_explicit_block": 16,
+      "length": 14,
+      "rho_of_upper_bound": 0.800746479242572
+    },
+    {
+      "ancillary_entries": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "complement_pairs": 32,
+      "complete_coefficient_count": 136,
+      "complete_profile_sha256": "a15efc1bc8f6979963ef407edf60d64ac13f1dc9b6c0aaf222a19b22283c6294",
+      "integer_rank_sum_upper_bound": 53375530745121977105365,
+      "labels": 159518999862720,
+      "largest_explicit_block": 16,
+      "length": 15,
+      "rho_of_upper_bound": 0.8001000624911269
+    },
+    {
+      "ancillary_entries": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "complement_pairs": 32,
+      "complete_coefficient_count": 153,
+      "complete_profile_sha256": "a858dd63174967e11be4fae6950e6bebb6a295de1606f218dea0f159ab3276a4",
+      "integer_rank_sum_upper_bound": 321245012195081992789455,
+      "labels": 488526937079580,
+      "largest_explicit_block": 16,
+      "length": 16,
+      "rho_of_upper_bound": 0.8001570836554993
+    },
+    {
+      "ancillary_entries": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "complement_pairs": 32,
+      "complete_coefficient_count": 190,
+      "complete_profile_sha256": "14c34c8a75eac201c6138b0dc272d37abb36a74bb163a3c027a989633e45568f",
+      "integer_rank_sum_upper_bound": 9127798395694693201170419,
+      "labels": 3601688791018080,
+      "largest_explicit_block": 24,
+      "length": 18,
+      "rho_of_upper_bound": 0.8022484529509201
+    },
+    {
+      "ancillary_entries": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "complement_pairs": 32,
+      "complete_coefficient_count": 210,
+      "complete_profile_sha256": "23e90b3b435822cc20191f79d1d0f926961b2ab1639215c2e7495f4ce0fcd942",
+      "integer_rank_sum_upper_bound": 43613583996782055089400551,
+      "labels": 8719878125622720,
+      "largest_explicit_block": 32,
+      "length": 19,
+      "rho_of_upper_bound": 0.8042283813149339
+    },
+    {
+      "ancillary_entries": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "complement_pairs": 32,
+      "complete_coefficient_count": 253,
+      "complete_profile_sha256": "ff3590b503ccc73830eee62a40c52e7ec0be1e930a936b38f9f230a59be44d2f",
+      "integer_rank_sum_upper_bound": 819952663011583106318004792,
+      "labels": 41107996877935680,
+      "largest_explicit_block": 32,
+      "length": 21,
+      "rho_of_upper_bound": 0.8099767710117164
+    },
+    {
+      "ancillary_entries": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "complement_pairs": 64,
+      "complete_coefficient_count": 276,
+      "complete_profile_sha256": "be6d3e400ea604eabfa95ee80d15681af0e6664d205887d906e3ff052a593a3d",
+      "integer_rank_sum_upper_bound": 482624819415880919438603806998284868527,
+      "labels": 2992971438910355567227200,
+      "largest_explicit_block": 32,
+      "length": 22,
+      "rho_of_upper_bound": 0.7902322180897406
+    },
+    {
+      "ancillary_entries": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "complement_pairs": 64,
+      "complete_coefficient_count": 378,
+      "complete_profile_sha256": "c0da1f1dd2ace3bf662b5a8f2c35b030431c19fc29bd984c59afe51e29288cd6",
+      "integer_rank_sum_upper_bound": 2545018961199301871163520310207322685547267,
+      "labels": 994525370392012324264808640,
+      "largest_explicit_block": 40,
+      "length": 26,
+      "rho_of_upper_bound": 0.7853599227436561
+    },
+    {
+      "ancillary_entries": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "complement_pairs": 64,
+      "complete_coefficient_count": 406,
+      "complete_profile_sha256": "4e8a3b24800cd17d8d9b307c9fbe4b4be98fa6bcb9526294e4128e94a5006243",
+      "integer_rank_sum_upper_bound": 18787216256968164259562988822213820017849493,
+      "labels": 3757095843703157669444832640,
+      "largest_explicit_block": 48,
+      "length": 27,
+      "rho_of_upper_bound": 0.7846617273663636
+    },
+    {
+      "ancillary_entries": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "complement_pairs": 64,
+      "complete_coefficient_count": 465,
+      "complete_profile_sha256": "0430ff8e61c99f5502e892f2e36b66efbd0dbc861445a6a40352f7d75089379e",
+      "integer_rank_sum_upper_bound": 880064898936418833988074745239236402565690910,
+      "labels": 46732349780051591701222672000,
+      "largest_explicit_block": 56,
+      "length": 29,
+      "rho_of_upper_bound": 0.7838352659170463
+    },
+    {
+      "ancillary_entries": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "complement_pairs": 64,
+      "complete_coefficient_count": 496,
+      "complete_profile_sha256": "3ee86b48db035c0c728d709bd81ec723c9e5bf083d19c42ad8ac959973230fe4",
+      "integer_rank_sum_upper_bound": 5612064031956449181254485543898339600208290177,
+      "labels": 154216754274170252614034817600,
+      "largest_explicit_block": 56,
+      "length": 30,
+      "rho_of_upper_bound": 0.7836939224058314
+    },
+    {
+      "ancillary_entries": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "complement_pairs": 64,
+      "complete_coefficient_count": 561,
+      "complete_profile_sha256": "ad90601b607d6b9e424c48f8cc0fd16e27becb28ff08064a6d4faa7465a0307a",
+      "integer_rank_sum_upper_bound": 200179663906890902474039445955497634629731825429,
+      "labels": 1477806921502280666682474774300,
+      "largest_explicit_block": 64,
+      "length": 32,
+      "rho_of_upper_bound": 0.7839247489296091
+    },
+    {
+      "ancillary_entries": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "complement_pairs": 64,
+      "complete_coefficient_count": 666,
+      "complete_profile_sha256": "1db9db2b3535ff7d57850fa1f56ed419a1354a0fb16f70f540de112c915585c0",
+      "integer_rank_sum_upper_bound": 31560090126591067709223594917883927933395135090073,
+      "labels": 32261123444498985738058364515200,
+      "largest_explicit_block": 80,
+      "length": 35,
+      "rho_of_upper_bound": 0.7854841751658451
+    },
+    {
+      "ancillary_entries": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "complement_pairs": 64,
+      "complete_coefficient_count": 780,
+      "complete_profile_sha256": "7a80ebad72192bb26115f541f0cb402905efb89444acd0562f9045139626f1f1",
+      "integer_rank_sum_upper_bound": 3593187931788241165828923111033746717430415777696147,
+      "labels": 496253786735283947757809593371200,
+      "largest_explicit_block": 88,
+      "length": 38,
+      "rho_of_upper_bound": 0.7884136734684412
+    },
+    {
+      "ancillary_entries": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "complement_pairs": 64,
+      "complete_coefficient_count": 946,
+      "complete_profile_sha256": "028543c56b49cf0665c6b3ccba0e2b71a2dc22584c982ab7ada02d2f28d6555f",
+      "integer_rank_sum_upper_bound": 1261316893474860208330276366336704473334651208860331019,
+      "labels": 11328711813884840440197243767409600,
+      "largest_explicit_block": 104,
+      "length": 42,
+      "rho_of_upper_bound": 0.7943345482393219
+    },
+    {
+      "ancillary_entries": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "complement_pairs": 128,
+      "complete_coefficient_count": 1081,
+      "complete_profile_sha256": "eb9c3c2af23c2e017744fd17ccadd315933839185fce131603628196252c0594",
+      "integer_rank_sum_upper_bound": 4602596973877842595884987341229593508972508211537545346088001782320785588295248,
+      "labels": 321157530583771600869087289822625334662377849785600,
+      "largest_explicit_block": 120,
+      "length": 45,
+      "rho_of_upper_bound": 0.7787380163604716
+    },
+    {
+      "ancillary_entries": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "complement_pairs": 128,
+      "complete_coefficient_count": 1378,
+      "complete_profile_sha256": "27af747f2b056da3890ecd9249cfaa6280f73d861c66003606f4bb7ec2fbd3b9",
+      "integer_rank_sum_upper_bound": 1675518305783886017785462489973801098189013309660857342272619613733634697022113796101,
+      "labels": 2034388346356360055496437029939135124686947920770302720,
+      "largest_explicit_block": 160,
+      "length": 51,
+      "rho_of_upper_bound": 0.7754242130708205
+    },
+    {
+      "ancillary_entries": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "complement_pairs": 128,
+      "complete_coefficient_count": 1540,
+      "complete_profile_sha256": "c7cef63c13282a457cfc8fedee7789d6f8f45696a4c56febe8b98ae060879001",
+      "integer_rank_sum_upper_bound": 691120621287333497340435702227561172267968740361642028524462736329721121849545108031507,
+      "labels": 116048879823539647077989990244766234448911848192916828800,
+      "largest_explicit_block": 176,
+      "length": 54,
+      "rho_of_upper_bound": 0.7744591990219492
+    },
+    {
+      "ancillary_entries": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "complement_pairs": 128,
+      "complete_coefficient_count": 1770,
+      "complete_profile_sha256": "b0e00a4ff33894c6883b980a84c0ec50bb3ee0478b235cb2bf6a00f879542332",
+      "integer_rank_sum_upper_bound": 1493512072447000081747577684225131201300576570786546736108423474990457672660656302570341631,
+      "labels": 18416957501521750956180603687896892143521991758499560176000,
+      "largest_explicit_block": 208,
+      "length": 58,
+      "rho_of_upper_bound": 0.773825379954837
+    },
+    {
+      "ancillary_entries": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "complement_pairs": 128,
+      "complete_coefficient_count": 1953,
+      "complete_profile_sha256": "9bdbdf6f6cb9faa097eb527d19b5c1fc24efc0e3fe152d385797cc7821a56cdf",
+      "integer_rank_sum_upper_bound": 371237308558712579023073206427202886086698070349024906153084114366228095272632528091766155428,
+      "labels": 652037054198638760248999735946192508522010219803087123590400,
+      "largest_explicit_block": 240,
+      "length": 61,
+      "rho_of_upper_bound": 0.7738090600452247
+    },
+    {
+      "ancillary_entries": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "complement_pairs": 128,
+      "complete_coefficient_count": 2145,
+      "complete_profile_sha256": "82a4a5b6e04ba2f22acc513fb25b4014de032ebfed46f8f1ea64b079a90106be",
+      "integer_rank_sum_upper_bound": 76075468843600301786518113546824911254237540314776592155843236474114018246531240086618343983321,
+      "labels": 19043804482465115087135154178239332442459580600054810211401500,
+      "largest_explicit_block": 256,
+      "length": 64,
+      "rho_of_upper_bound": 0.7741647027523741
+    },
+    {
+      "ancillary_entries": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "complement_pairs": 128,
+      "complete_coefficient_count": 2556,
+      "complete_profile_sha256": "0e0a2d28b584e6b4f548884b79dc7a74599868133de8e83454eb4dd395ff5960",
+      "integer_rank_sum_upper_bound": 1873384371343257573458237871929362105847770031038544701920685303308147164287839146854644497469597069,
+      "labels": 9339315190890000082731748524990507210127002769585172416484150400,
+      "largest_explicit_block": 304,
+      "length": 70,
+      "rho_of_upper_bound": 0.7759272941071574
+    }
+  ],
+  "completed_case_count": 29,
+  "expected_case_count": 31,
+  "length_ratios_to_complement_pairs": [
+    [
+      7,
+      20
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      17,
+      40
+    ],
+    [
+      9,
+      20
+    ],
+    [
+      19,
+      40
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      11,
+      20
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      13,
+      20
+    ]
+  ],
+  "minimum_by_pair_count": [
+    {
+      "ancillary_entries": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "complement_pairs": 16,
+      "complete_coefficient_count": 45,
+      "complete_profile_sha256": "d87044ba44b2817d93772b56a8394722df7e5a8ff7456dd2e38679d6b93742ab",
+      "integer_rank_sum_upper_bound": 398518127559,
+      "labels": 10518300,
+      "largest_explicit_block": 8,
+      "length": 8,
+      "rho_of_upper_bound": 0.8260138157412964
+    },
+    {
+      "ancillary_entries": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "complement_pairs": 32,
+      "complete_coefficient_count": 136,
+      "complete_profile_sha256": "a15efc1bc8f6979963ef407edf60d64ac13f1dc9b6c0aaf222a19b22283c6294",
+      "integer_rank_sum_upper_bound": 53375530745121977105365,
+      "labels": 159518999862720,
+      "largest_explicit_block": 16,
+      "length": 15,
+      "rho_of_upper_bound": 0.8001000624911269
+    },
+    {
+      "ancillary_entries": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "complement_pairs": 64,
+      "complete_coefficient_count": 496,
+      "complete_profile_sha256": "3ee86b48db035c0c728d709bd81ec723c9e5bf083d19c42ad8ac959973230fe4",
+      "integer_rank_sum_upper_bound": 5612064031956449181254485543898339600208290177,
+      "labels": 154216754274170252614034817600,
+      "largest_explicit_block": 56,
+      "length": 30,
+      "rho_of_upper_bound": 0.7836939224058314
+    },
+    {
+      "ancillary_entries": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "complement_pairs": 128,
+      "complete_coefficient_count": 1953,
+      "complete_profile_sha256": "9bdbdf6f6cb9faa097eb527d19b5c1fc24efc0e3fe152d385797cc7821a56cdf",
+      "integer_rank_sum_upper_bound": 371237308558712579023073206427202886086698070349024906153084114366228095272632528091766155428,
+      "labels": 652037054198638760248999735946192508522010219803087123590400,
+      "largest_explicit_block": 240,
+      "length": 61,
+      "rho_of_upper_bound": 0.7738090600452247
+    }
+  ],
+  "module_sha256": "ac0a828879a790ed23492ceb5b6894ae46ca97dc8dd4735bd1e1d16c25dd44f5",
+  "pending_cases": [
+    [
+      128,
+      77
+    ],
+    [
+      128,
+      83
+    ]
+  ],
+  "scope": "complete six-ancilla centered-jet upper-cost grid; no improved factoring exponent",
+  "script_sha256": "5ca7e542a7376ef977211b01c13af217c4f89838e2fad2a639efa5965c0d9311",
+  "status": "partial_grid",
+  "stop_reason": "The final two dense-grade cases were not completed; the 29 finished cases are retained while research proceeds with operator-preserving rank methods."
+}

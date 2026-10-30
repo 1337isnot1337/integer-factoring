@@ -102,6 +102,48 @@ python tools/ward_channel_free_bounds.py \
   --output /tmp/ward-channel-free-full-bounds.jsonl
 ```
 
+### Larger maximal-shift controls
+
+An additional eight-case grid uses the same exact maximal-shift evaluator
+and the full homogeneous code. These cases test whether larger supports
+compensate for the loss of labels from several forms.
+
+| `P` | Forms `k` | Support size `b` | Grade `L` | `rho` of the upper bound |
+|---:|---:|---:|---:|---:|
+| 32 | 2 | 16 | 18 | 0.91427930 |
+| 32 | 2 | 16 | 20 | 0.90252703 |
+| 32 | 4 | 8 | 16 | 1.08793213 |
+| 32 | 4 | 8 | 20 | 1.05169589 |
+| 32 | 4 | 8 | 24 | 1.01427075 |
+| 32 | 8 | 4 | 20 | 1.19726414 |
+| 48 | 4 | 12 | 24 | 0.99726057 |
+| 64 | 4 | 16 | 36 | 0.90368950 |
+
+For the last case, the code has
+`930770758657154707251990936` labels and the largest explicit matrix
+has dimension 252. Its integer coefficient-cost bound is
+`5532479458812095108513474861125109071838986298120`, a reduction by
+more than a factor of 27 from the previous generic estimate. Its
+normalized exponent still misses the strict seed threshold. The rows
+with `rho>1` are also worse than the independent one-piece bound.
+
+The complete integer profiles are in
+[ward-maximal-shift-grid.jsonl](../evidence/ward-maximal-shift-grid.jsonl).
+Reproduce the full grid with:
+
+```sh
+python tools/ward_channel_free_bounds.py \
+  --case 16:2:18 --case 16:2:20 --case 8:4:16 --case 8:4:20 \
+  --case 8:4:24 --case 4:8:20 --case 12:4:24 --case 16:4:36 \
+  --output /tmp/ward-maximal-shift-grid.jsonl
+```
+
+The [computed-bound envelope](ward-rectangular-bound-envelope.md)
+explains why this particular complete-rectangle estimate cannot reach
+the target in its fixed-ratio regime. Retaining the actual
+[Ward operators](ward-stable-operator-interface.md) is a separate
+route to sharper ranks.
+
 ## Independent exact controls
 
 [The determinant checker](../tools/check_ward_charge_filtration.py) does
