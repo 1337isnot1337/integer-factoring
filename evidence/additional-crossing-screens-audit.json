@@ -1,0 +1,80 @@
+{
+  "D8_square_action_checks": [
+    {
+      "best_cost": 50.33202097703345,
+      "dimension": 4,
+      "independent_dense_combinations": 16,
+      "integer_lower": 50,
+      "native_log_sha256": "8af1e0d61e2e41a9be3ae234da8b503980b779c615978de6a14f9167b896c519",
+      "weights": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "best_cost": 50.33202097703345,
+      "dimension": 5,
+      "independent_dense_combinations": 32,
+      "integer_lower": 50,
+      "native_log_sha256": "f6e70c69f19be06f1a9f66d5f69192adc92d3a6951ab2c93f2d9edfab2787d1c",
+      "weights": [
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "best_cost": 50.33202097703345,
+      "dimension": 8,
+      "independent_dense_combinations": 256,
+      "integer_lower": 50,
+      "native_log_sha256": "b461ff083e00cd5789e105f100807bde7e8a5323ec15972b2a17b9048e4ac549",
+      "weights": [
+        1,
+        2,
+        4
+      ]
+    }
+  ],
+  "bipartite_exterior_dense_checks": [
+    {
+      "all_binary_combinations": 8,
+      "independent_dense_entries": 81,
+      "integer_lower": 9,
+      "labels": 3,
+      "length": 2,
+      "pairs": 2,
+      "partition_index": 0,
+      "partitions_available": 2
+    },
+    {
+      "all_binary_combinations": 8,
+      "independent_dense_entries": 81,
+      "integer_lower": 9,
+      "labels": 3,
+      "length": 2,
+      "pairs": 2,
+      "partition_index": 1,
+      "partitions_available": 2
+    },
+    {
+      "all_binary_combinations": 256,
+      "independent_dense_entries": 10000,
+      "integer_lower": 86,
+      "labels": 10,
+      "length": 3,
+      "pairs": 3,
+      "partition_index": 18,
+      "partitions_available": 126
+    }
+  ],
+  "checker_sha256": "b72102504d970b97addb6c35129ce3c16596264d644e39395298485581ff9755",
+  "scope": "independent winning-profile and small dense audits; native exhaustive ranges recorded separately",
+  "source_sha256": {
+    "explore_arbitrary_group_controls.cpp": "0db3566b93f20c3f572332c4180d2fe0295866c13aa5ea19d9ba7906664dae3f",
+    "explore_bipartite_pfaffian_codes.py": "01385c4b1ea718eb3be98097441692f51ff1f5ace29dec4a42a65fe167cc50ac",
+    "explore_mixed_radix_group_crossings.py": "5eb99ee0efa48f1feb295efc3cf3e171145635f3eef78427d7a8820994e6b37a"
+  },
+  "status": "pass"
+}
