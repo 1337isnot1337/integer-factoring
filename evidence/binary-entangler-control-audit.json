@@ -1,0 +1,11 @@
+{
+  "bilinear_scalarization_checks": 512,
+  "checker_sha256": "84641443f5ffaab713d3004e54ef4b98248e2be195adc7f3f9e0f0bfe1392481",
+  "field2_certificate_sha256": "9f193722532f19d3e2be8a9998e15a4d463412fdb03a02909b774eab989a24cf",
+  "field2_macaulay_rank": 400,
+  "field4_control_sha256": "f5489502def3c7f580cd22a851908cddfc0362c4d6b99ab8367dcc17cfa2980a",
+  "field4_macaulay_rank": 400,
+  "scope": "Explicit product-ket exclusions over algebraic closures, and an explicit product-density scalarization surviving such an exclusion. No crossing improvement.",
+  "seconds": 5.562322237001354,
+  "status": "passed"
+}

@@ -5,7 +5,7 @@
 The matrix-valued seed transfer motivates changes between two full tensor-factor structures on an auxiliary space. The earlier [generic nonscalarization argument](https://github.com/1337isnot1337/integer-factoring/blob/bb3bf763ed054f6fdaf882649c037ad810e16b97/research/generic-full-factor-nonscalarization.md) proves existence of structures without a normalized common product functional. The concrete certificates here address two different tests that must not be identified.
 
 1. An explicit matrix `W_2 in GL_16(F_2)` has **no nonzero product vector whose image is a product vector**, over any extension of `F_2`. A `400`-by-`400` full-rank minor of a degree-`(3,3)` polynomial coefficient matrix proves this.
-2. A different explicit matrix `W_4 in GL_16(F_4)` has the same product-vector exclusion over every extension, but admits an explicit normalized functional factorizing across both full factor structures. Thus the first property does **not** establish the generic note's stronger nonscalarization conclusion.
+2. Two further explicit matrices have the same product-vector exclusion over every extension, but admit normalized functionals factorizing across both full factor structures over `F_4`. One of these changes of basis is itself binary. Thus the first property does **not** establish the generic note's stronger nonscalarization conclusion.
 
 Both are finite constructive algebraic results. Neither matrix comes with an improving crossing identity or rank-sum profile. The factoring exponent remains `1/2`.
 
@@ -109,15 +109,64 @@ and conjugation by `W_4` leaves the same expression unchanged. This is a complet
 
 The replay checks (2), all `512` matrix-unit factorization identities for the two structures, and the product-ket exclusion independently. Thus no implication from absence of a common product ket to absence of every normalized product functional is available, even in dimension sixteen and characteristic two.
 
-## 5. Reproduction and remaining construction problem
+## 5. A binary change of basis with an extension-field density
 
-The standard-library replay of both algebraic certificates is:
+The explicit density control can be strengthened so that the change of
+basis itself has entries in `F_2`. The normalized product density still uses
+`F_4`. The following matrix has no product ket over any field extension, yet a
+normalized product functional exists over `F_4`.
+
+Let `W` be the binary matrix with row masks
+
+```
+32801, 35, 14400, 17160, 1042, 1026, 4100, 128,
+16776, 17280, 33841, 6212, 10244, 14404, 256, 33793.
+```
+
+The basis order is `(i,j) -> 4i+j`, and bit `j` of a row mask is column `j`.
+The record [`../evidence/binary-entangler-extension-control.json`](../evidence/binary-entangler-extension-control.json) contains the full matrix,
+its 400 selected degree-(3,3) Macaulay rows, and the following density factors.
+In `F_4 = F_2[ω]/(ω²+ω+1)`, set
+
+```math
+A=\operatorname{diag}(\omega,\omega,\omega^2,1),\qquad
+B=\operatorname{diag}(\omega^2,\omega^2,\omega,1).
+```
+
+Then `Tr(A)=ω`, `Tr(B)=ω²`, and `Tr(A⊗B)=1`. Direct computation gives
+`W⁻¹(A⊗B)W=A⊗B`. Thus `ell(T)=Tr((A⊗B)T)` factorizes across both full tensor
+factor structures. This was checked on all 256 matrix-unit pairs in each
+structure, giving 512 exact identities.
+
+The 400 selected rows have rank 400 over `F_2`. As in the original explicit
+entangler argument, they span every bidegree-(3,3) monomial, so the product-ket
+exclusion holds over the algebraic closure and every extension field. The
+certificate is independently replayed by the existing checker with this file
+supplied through `--control`.
+
+This record makes no assertion about the existence or absence of normalized
+product densities over the base field `F_2`. It provides no improving crossing
+seed. Its purpose is to separate product-ket exclusion from product-functional
+exclusion even when the change of factor structures is binary.
+
+## 6. Reproduction and remaining construction problem
+
+The standard-library replay of the first two algebraic certificates is:
 
 ```sh
 python3 tools/check_explicit_entanglers.py \
   --binary evidence/universal-entangler16.json \
   --control evidence/entangler-density-control.json \
   --output evidence/explicit-entangler-audit.json
+```
+
+Replay the binary extension-field control with:
+
+```sh
+python3 tools/check_explicit_entanglers.py \
+  --binary evidence/universal-entangler16.json \
+  --control evidence/binary-entangler-extension-control.json \
+  --output evidence/binary-entangler-control-audit.json
 ```
 
 The optional complete base-field density screen requires C++20:

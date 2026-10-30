@@ -14,6 +14,9 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Fixed-precision count lifting](fixed-precision-count-lifting.md): sorted witness tuples recover prime-power count digits; local nilpotent corrections preserve every fixed field seed and Smith-profile leading exponent asymptotically.
+- [High-order characteristic selection](high-order-characteristic-selection.md): an elementary polynomial prime bound prevents cancellation of the quadratic root detector, with an explicit uniform-evaluator requirement.
+- [Exhaustive auxiliary lattice gauges](auxiliary-lattice-gauge-search.md): canonical two-dimensional lattice representatives cover every rational gauge; neighbor inequalities certify global minima at a fixed evaluation point.
 - [Unitary-orbit factor recovery](unitary-orbit-factor-recovery.md): coprime tuples and perfect-power preprocessing give polynomial-overhead recovery in every fixed positive characteristic, with unique inverse witnesses.
 - [Quadratic-congruence parity recovery](quadratic-congruence-factor-recovery.md): a scalar square root of one yields a proper gcd factor; a fused quadratic-plus-linear verifier has the source's original graph shape.
 - [Balanced physical degree gauges](balanced-physical-gauge-transfer.md): independent four-leg weights become known coefficient shifts on a balanced label set of size `q^t/poly(t)`.
