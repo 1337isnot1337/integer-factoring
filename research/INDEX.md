@@ -14,6 +14,9 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Regular roots with a rank-two terminal power](modified-transpose-root-target.md): an all-size paired-chain construction with the ideal column spectrum, plus an all-function Smith exclusion for full-cycle Feistel maps.
+- [Complete normalized rank-two channel form](rank-two-channel-normal-form.md): every invertible two-term matrix pencil is regular; after scalar extension, identity and trace normalization force a commuting-pair form.
+- [Geometric transpose channels and row inverses](geometric-transpose-crossings.md): exact row-unimodular instances through sixteen labels, complete finite polynomial-change screens, protected coefficient ranks, and column-degree certificates for constant twists.
 - [Polynomial exact divisor preprocessing](polynomial-divisor-preprocessing.md): an unconditional uniform `n^O(1)`-time, `O(log n)`-space corollary of Nicolas's exponent theorem, with exact threshold-center code; fixed global constants are not numerically instantiated.
 - [Quantum-spin arithmetic crossing paths](quantum-crossing-initial-forms.md): a rational deformation family, reduction at every prime, independent highest-weight controls, and 422 finite initial-form cases with exact local exclusions.
 - [Nilpotent-superoperator crossing families](nilpotent-flag-crossings.md): a basis-free all-field construction with exact Jordan-block column spectra, cyclic-vector invariance, explicit finite controls, and an exact single-transpose row theorem.

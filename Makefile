@@ -15,6 +15,10 @@ verify-docs:
 	python3 tools/check_docs.py
 
 verify-constructions:
+	python3 tools/check_modified_transpose_roots.py --output /tmp/integer-factoring-modified-transpose-roots.json
+	python3 tools/check_rank_two_channel_normal_form.py --output /tmp/integer-factoring-rank-two-channel-normal-form.json
+	python3 tools/check_geometric_transpose_crossings.py --polynomial-screen --output /tmp/integer-factoring-geometric-transpose-audit.json
+	python3 tools/check_geometric_row_inverses.py --output /tmp/integer-factoring-geometric-row-inverse-audit.json
 	python3 tools/check_nicolas_threshold_centers.py --output /tmp/integer-factoring-nicolas-threshold-centers.json
 	python3 tools/check_quantum_crossing.py --output /tmp/integer-factoring-quantum-crossing-audit.json
 	python3 tools/check_nilpotent_flag_crossings.py --output /tmp/integer-factoring-nilpotent-flag-crossings.json
