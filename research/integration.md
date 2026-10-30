@@ -337,6 +337,14 @@ the finite checker's `expanded_coefficient` here would instead enumerate
 polynomial decoder. Even such a loop has exponent `O(lambda)<=O(N/K)`,
 but a formal implementation must charge it if retained.
 
+`tools/channel_decoder.py` models both factor choices in Python. It computes
+the compressed binomial weight with Pascal's recurrence modulo `m`, and the
+fallback coefficient by truncated polynomial multiplication modulo `m`.
+Neither uses modular division. Tests compare small channel sums with independent
+polynomial coefficients, including column orientation and composite moduli.
+This is not an implementation in the source expression language or a
+machine-level cost proof; the recursive evaluator also remains to be built.
+
 Thus a conservative tabulation bound includes the exponent
 `(2N+N')/K + N/G^2 + O(lambda)` and has cost
 

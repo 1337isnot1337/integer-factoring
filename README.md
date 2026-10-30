@@ -50,6 +50,8 @@ benchmarks. The combined target remains much weaker than the upstream conjecture
   family.
 - [Exact crossing checker](tools/check_crossing.py): finite identities, channel
   encodings, and rank/width comparisons.
+- [Modular channel model](tools/channel_decoder.py): individual compressed
+  and fallback factors, tested over composite moduli; not a factoring machine.
 - [Combined integration](research/integration.md) and [recurrence proof](research/recurrence.md):
   explicit integer parameters, common widths, all-level costs, and remaining
   formalization obligations.
