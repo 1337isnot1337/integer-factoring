@@ -15,6 +15,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 ## Transfers and proposed stronger evaluators
 
 - [Weighted Weyl and multivariate extraction](weighted-weyl-and-multivariate-extraction.md): an exact occupation crossing, both supplied channel factorizations, and charged multivariate coefficient extraction; the direct profiles do not improve the score.
+- [Exact weighted Weyl multiplication laws](weighted-weyl-additive-row-law.md): integral Gauss identities prove coefficient-algebra closure at every energy, an additive original curve at power-of-two energies, and an additive reciprocal normalization of the opposite curve at every energy.
 - [Witt duality and vertex jets](witt-duality-and-vertex-jets.md): an explicit odd Hall determinant and length-unitriangular vacuum maps give effective homogeneous duals at all weights; the crossing and rank-budget obligations remain distinct.
 
 - [Finite-state polynomial crossings](finite-state-pairing-crossings.md): explicit order-dependent identities, exact XOR-circulant rank reduction, and the complete 88,006-model finite screen.

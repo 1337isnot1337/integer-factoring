@@ -51,6 +51,12 @@ symmetry images. The separate
 that larger symmetry span at energy 32. Neither result changes the
 best factoring exponent.
 
+The later [exact multiplication law](weighted-weyl-additive-row-law.md)
+gives an elementary alternative proof of (2): at power-of-two energy,
+every coefficient-span tensor satisfies `T^2=L(1)^2 I`. The module
+argument below remains useful for its structural interpretation, and
+the column minor and arbitrary-energy restriction remain unchanged.
+
 ## 1. Realizing each row block as a group-module quotient
 
 The row matrix has blocks indexed by the integer vector
