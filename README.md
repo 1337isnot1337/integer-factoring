@@ -28,7 +28,7 @@ The composition uses the existing clique evaluator from [Anthropic's Appendix B]
 | Saving exponent `1/30` for the k6 machine | **Lean-verified** | [Proof](research/verified-k6.md), [machine theorem](variants/k6/FactoringK6/Certified.lean) |
 | Sharper k6 saving `log(12/11)/log(12) > 1/29` | Ordinary proof, not Lean-verified at this rate | [Rate derivation](research/k6-sharp-rate.md) |
 | Saving exponent above `1/2` | **Not established** | [Research index](research/INDEX.md) |
-| Scalar parity factoring transfer | Ordinary proof with polynomially many scalar `F2` queries and linear total multiplication width; no algebra-validity requirement | [Parity witness and quantitative constructor](research/parity-factor-transfer.md) |
+| Scalar factoring transfer in every fixed prime characteristic | Ordinary proof with polynomially many scalar `Fp` queries and `O_p(n)` network mass; no algebra-validity requirement | [Fixed-prime transfer](research/fixed-prime-factor-transfer.md), [smaller parity construction](research/parity-factor-transfer.md) |
 | Sparse modular transfer overhead | Improved from `exp(O(n/log n))` to `exp(O(sqrt n))`; conditional on an algebra-valid weighted evaluator | [Rough-input transfer](research/rough-sparse-transfer.md) |
 | Universal small-seed restriction | Every crossing decomposition on at most eleven labels misses the strict rank-cost target, over every field | [Mixed-cut rank budget](research/mixed-cut-rank-budget.md) |
 | Crossing paths from arbitrary nilpotent superoperators | Ordinary all-field construction with exact column Smith spectra; row cut remains a separate obligation | [Nilpotent crossing families](research/nilpotent-flag-crossings.md) |
@@ -93,6 +93,8 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 ## Current research frontier
 
 A [mixed-cut rank budget](research/mixed-cut-rank-budget.md) now excludes every crossing seed on at most eleven labels, over every field: `sum min(r_i,c_i)>=q` implies `sum sqrt(r_i*c_i)>=q-2+2sqrt(q^2-q+1)`. The result applies to arbitrary tensors, so searches for a strict seed now start at twelve labels. It concerns the finite-seed rank-cost criterion; it is not a factoring lower bound.
+
+The [fixed-prime successor](research/fixed-prime-factor-transfer.md) extends the scalar reduction to every fixed prime `p`. Power-root tuples detect large prime exponents; cyclic representatives of ordered factor tuples detect the remaining composites. Their arithmetic and comparison networks have mass `O_p(n)`, giving `poly_p(n)*(2^(O_p(n/P))+E_p(P,floor(20000p^2n/P^2)))`. The evaluator only needs to work over scalar `Fp`; its implementation need not extend to other algebras.
 
 The [scalar parity transfer](research/parity-factor-transfer.md) reduces complete factorization to polynomially many scalar characteristic-two clique evaluations. Every composite has an odd lower-half or power-root divisor family; parity descent recovers a proper divisor, and recursion recovers its prime factors. Repeated squaring retains total multiplication width `O(n)`. The resulting written-table bound is `poly(n)*(2^(O(n/P))+E(P,floor(32000n/P^2)))` for `P^40<=n`, with no cyclic-ring family or separate nonzeroness overhead. This strengthens the interface for a future evaluator; the achieved exponent remains `1/2`.
 

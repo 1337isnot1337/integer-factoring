@@ -2,7 +2,7 @@
 
 ## Result and scope
 
-The [scalar parity successor](parity-factor-transfer.md) gives a stronger reduction in characteristic two: it needs only scalar clique evaluations and polynomially many queries. The weighted-polynomial construction below remains a separate valid transfer with its stated hypotheses.
+The [fixed-prime scalar successor](fixed-prime-factor-transfer.md) gives a stronger reduction in every fixed prime characteristic: it needs only scalar clique evaluations and polynomially many queries. The weighted-polynomial construction below remains a separate valid transfer with its stated hypotheses.
 
 The fixed-characteristic divisor-polynomial transfer can use a preliminary
 trial-division step to reduce its additional cost from

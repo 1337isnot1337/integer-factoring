@@ -2,6 +2,8 @@
 
 ## Result and scope
 
+The [fixed-prime successor](fixed-prime-factor-transfer.md) extends this scalar reduction to every fixed prime characteristic. The characteristic-two construction below has smaller constants and avoids comparison gadgets by using lower-half divisor intervals.
+
 Integer factorization reduces deterministically to a polynomial number
 of **scalar characteristic-two counts** of explicitly specified
 multiplication predicates. The predicates include repeated squaring,
