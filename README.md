@@ -121,9 +121,10 @@ that image still needs an asymptotic bound. This restricted identity does
 not establish optimality of the full central piece.
 
 A [complete-piece recombination search](research/modular-recombination.md)
-reduces the maximum rank product from 27 to 18 on the three-label modular
+reduces the maximum rank product from 27 to 10 on the three-label modular
 example, with explicit decomposition witnesses and exact replay. Its uniform
-construction-cost argument also covers polynomially many pair recombinations.
+construction-cost argument covers bounded-size recombinations. A three-piece
+five-label witness also reduces the rank-product cutoff from 210 to 121.
 Structured binary-label tests and larger finite cases do not establish a
 better asymptotic coefficient. Run `python3 tools/check_modular_recombination.py`
 for the default checks, or add `--full` for the larger search.

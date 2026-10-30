@@ -234,6 +234,23 @@ def main():
         for x, y, u, v in product(range(2), repeat=4):
             assert source[x*2+y][v*2+u] == ((rows[x*2+y] >> (u*2+v)) & 1)
             source_entries += 1
+    higher_path = Path(__file__).resolve().parents[1]/'evidence/modular-higher-witnesses.json'
+    higher = json.loads(higher_path.read_text())
+    for record in higher['cases']:
+        matrices = profile(tuple(tuple(label) for label in record['labels']))
+        replay(record, matrices, record['dimension'])
+        assert record['max_rank_product'] == max(
+            piece['row_rank']*piece['column_rank'] for piece in record['witness'])
+    negative = higher['decimation_negative_control']
+    x, y, u, v = (tuple(label) for label in negative['labels_xyuv'])
+    polynomial = final_piece_profile(x, v, u, y)
+    assert hex(polynomial) == negative['profile_hex']
+    remainder = 0
+    while polynomial:
+        remainder ^= polynomial & ((1 << negative['weight'])-1)
+        polynomial >>= negative['weight']
+    assert hex(remainder) == negative['cyclic_remainder_hex']
+    assert (remainder & 1) != int(x == v and y == u)
     regular = [regular_case(h) for h in (8, 12, 16)]
     if args.full:
         regular += [regular_case(20), regular_case(24, 8)]
@@ -247,6 +264,7 @@ def main():
         'profile_source_commit': '735b3ddb37d2e63dc469cf833687355e42097dd4',
         'sha256': {name: sha256((Path(__file__).parent/name).read_bytes()).hexdigest()
                    for name in ('modular_pfaffian.py', Path(__file__).name)},
+        'higher_witnesses_sha256': sha256(higher_path.read_bytes()).hexdigest(),
         'regular_cases': regular, 'structured_cases': structured,
     }
     if args.output:

@@ -3,18 +3,19 @@
 ## Result and scope
 
 On the three-label characteristic-two domain at weight 12, there is an
-explicit 17-piece crossing decomposition whose maximum row-rank times
-column-rank is **18**. This improves the maximum 27 in PR #22's earlier
-17-piece decomposition. The new pieces are sums of at most two symmetry
+explicit 15-piece crossing decomposition whose maximum row-rank times
+column-rank is **10**. This improves the maximum 27 in PR #22's earlier
+17-piece decomposition. The new pieces are sums of at most four symmetry
 images of the original pieces. The exact coefficient lists and both ranks
-are recorded in [modular-recombination.json](../evidence/modular-recombination.json).
+are recorded in [modular-higher-witnesses.json](../evidence/modular-higher-witnesses.json).
 Every listed piece is reconstructed, both ranks are checked by independent
 elimination, and the complete crossing sum is replayed.
 
 This is a finite algebraic improvement, **not a factoring exponent above
 1/2**. The labels number three, rather than `2^lambda`, and there is no
 proved favorable profile as the label dimension grows. The five-label
-case improves from 210 to 154 in the same search. The eight-label case
+case improves from 210 to 154 using pairs and to 121 using triples.
+The latter witness has just three pieces, of rank products 25, 25, and 121. The eight-label case
 in the larger suite improves from 2703 to 1935; even this is too large
 to suggest a better leading coefficient on its own.
 
@@ -49,7 +50,8 @@ the Pfaffian profiles. Flatten them in row order `(x,y)` and column order
 `(u,v)`. The column flattening exchanges coordinates `y,u`.
 Take all eight symmetry images of every nonzero piece, discard zeroes
 and duplicate tensors, then optionally add every sum of two distinct
-images. All sums and ranks are over `F_2`.
+images. All sums and ranks are over `F_2`. The higher-order witnesses
+are replayed separately; their discovery search is not repeated by default.
 
 The original decomposition is included in the candidate list, so the
 crossing is in its span. A selected subset of candidates need not be a
@@ -86,7 +88,9 @@ Suppose that `h(lambda)=poly(lambda)` and a fixed algorithm produces
 `D=2^lambda` distinct-odd-part labels of that common weight within
 `2^O(lambda)` time. There are `O(h)` source pieces. The profile formula
 computes all their matrices using `D^4 poly(h)=2^O(lambda)` bit operations.
-There are `O(h)` single-image and `O(h^2)` pair candidates. Each tensor
+There are `O(h)` single-image and `O(h^2)` pair candidates. More generally,
+combinations of at most any fixed `k` images give `O(h^k)` candidates;
+`k` is an absolute constant, independent of the label length. Each tensor
 has `D^4` coefficient bits. Forming them, computing both matrix ranks,
 sorting, solving the span problem, and obtaining rank factorizations all
 have fixed polynomial cost in `D` and `h`, hence `2^O(lambda)`.
@@ -136,15 +140,61 @@ python3 tools/check_modular_recombination.py --full --output evidence/modular-re
 make verify
 ```
 
-The default suite independently compares 528 complete-piece entries with
+The default suite replays the four-term three-label and three-term
+five-label witnesses and independently compares 528 complete-piece entries with
 the original normal-order recurrence at weight eight, replays the crossing
 identities, checks the single-image and pair candidate cutoffs at weights
 8, 12, and 16, and checks ten structured-label cases. The full suite adds
 weights 20 and 24 and five three-bit structured cases. Removing a nonzero
 selected piece is a negative control. Source hashes bind the evidence to
-the profile evaluator and checker used.
+the profile evaluator and checker used. The recorded full pair suite was
+run using the checker at `e767eba`; its hashes retain that provenance.
+The later higher-order additions were verified by the updated default suite.
 
 The ordinary bound established by the repository remains `alpha=1/2`.
 The next constructive questions are whether larger recombinations improve
 the growing-domain profiles and whether an explicit family admits a
 uniform rank-width proof. Neither is answered by the finite witnesses.
+
+
+## 6. Higher-order gains and an exhaustive finite question
+
+The pair screen at weight 12 has cutoff 18; allowing triples found cutoff
+12, and a four-term search found the explicit cutoff-10 witness above.
+At weight 16, the three-piece witness is especially concise: its large
+piece is `A_-16+A_0+A_16`; its other two pieces are coordinate symmetry
+images of `A_32`. The JSON gives the exact permutations.
+
+These small identities cannot be extrapolated by discarding most shifts
+at every power-of-two weight. At weights 8 and 16, summing just the five
+pieces indexed by `-2h,-h,0,h,2h` happens to give the crossing. At weight
+32 it fails: the four explicit labels in the recorded negative control
+have crossing entry zero, while that five-coefficient sum is one.
+The complete polynomial profile and its cyclic remainder are recorded,
+and the default suite recomputes them.
+
+The full symmetry span at weight 12 has dimension 34. A separate native
+screen, [search_three_label_span.c](../tools/search_three_label_span.c),
+enumerates an exact Gray-code interval of this binary span and retains
+all tensors whose rank product is at most nine. If its completed low-product
+span excludes the crossing, the cutoff-10 witness is optimal over this
+entire symmetry span, including unrestricted linear recombinations. This
+would still be a finite restricted-model theorem.
+
+The exhaustive run is not yet claimed complete. Its preflight checker
+compares 243 classifier cases and 6,742 Gray-code interval vectors against
+independent exact Python elimination, including acceptance and rejection
+cases and a nonzero interval start. Run:
+
+```sh
+python3 tools/check_three_label_span.py
+python3 tools/check_three_label_span.py --prepare /tmp/three-label-basis.txt
+cc -O3 -std=c11 -o /tmp/three-label-screen tools/search_three_label_span.c
+/tmp/three-label-screen /tmp/three-label-basis.txt 0 17179869184 > /tmp/three-label-full.jsonl
+python3 tools/check_three_label_span.py --verify-log /tmp/three-label-full.jsonl
+```
+
+The final command independently checks every retained basis tensor,
+its membership in the source span, its Gray-code index, its two ranks,
+and whether its span contains the crossing. It audits a completed native
+run; it is not an independent repetition of all `2^34` classifications.
