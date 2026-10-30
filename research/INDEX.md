@@ -115,7 +115,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Obstructions and work beyond 1/2
 
-- [Mixed-cut rank budget](mixed-cut-rank-budget.md): an all-field inequality for arbitrary crossing decompositions excludes every seed on at most eleven labels from the strict rank-cost target.
+- [Elementary mixed-cut budget](strict-mixed-cut-gate.md): a short all-field strict budget gives an independent cutoff through twelve labels; the [prior PR #27 geometric theorem](https://github.com/1337isnot1337/integer-factoring/blob/b49b9e19480c65d139ef15beecacb92064c1a960/research/geometric-cut-rank-budget.md) has the stronger exact cutoff through 95.
+- [Sixteen-label CNOT companion](cnot-sixteen-label-span.md): the mixed budget and rank-one classification give a short all-field certificate for the full fourth coefficient tensor power.
 - [Universal finite-size gates](noncommutative-crossing-finite-gates.md): all-field rank-sum bounds exclude every seed on at most five labels and every non-elementary group orbit family of order at most eight.
 - [Abelian midpoint blocks](noncommutative-crossing-abelian-midpoints.md): exact doubling-map column multiplicities, a real rank-floor lemma, and an all-field exclusion of every cyclic group.
 - [Involution-free orbit minors](noncommutative-crossing-involution-support.md): a diagonal-minor theorem for arbitrary group kernels, excluding odd-order groups, odd-order index-two extensions, and unique-involution groups over every field.

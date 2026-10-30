@@ -10,8 +10,10 @@ arbitrary nonsymmetric recombinations and extension fields.
 The note also gives an explicit rank-one conic and exact ranks for all
 coefficients of its tensor powers. These formulas provide structured
 candidate pieces for larger searches. None of these statements improves
-the integer-factoring exponent. The full coefficient tensor spaces at
-larger powers remain open here.
+the integer-factoring exponent. The companion handles the fourth tensor power. Higher powers and
+changed coefficient spaces require separate arguments.
+
+A [sixteen-label companion proof](cnot-sixteen-label-span.md) now combines these rank-one classifications with a mixed-cut budget. The prior geometric theorem already gives a stronger universal finite-size cutoff; the companion isolates the CNOT structure in a short argument.
 
 ## 1. Conventions and the local spaces
 

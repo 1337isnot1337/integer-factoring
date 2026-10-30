@@ -1,6 +1,6 @@
 # Finite rank-sum gates for crossing constructions
 
-The [mixed-cut successor](mixed-cut-rank-budget.md) strengthens the universal gate to every label size at most eleven. The group-specific results and their proofs below remain valid.
+The [strict mixed-cut companion](strict-mixed-cut-gate.md) gives an elementary all-field gate through twelve labels. The [prior PR #27 geometric proof](https://github.com/1337isnot1337/integer-factoring/blob/b49b9e19480c65d139ef15beecacb92064c1a960/research/geometric-cut-rank-budget.md) has the stronger cutoff through 95. The group-specific results and their proofs below remain valid.
 
 This note gives three exact exclusions before any coefficient search:
 

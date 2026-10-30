@@ -2,6 +2,8 @@
 
 ## Result and scope
 
+The existing [geometric cut-budget theorem in PR #27](https://github.com/1337isnot1337/integer-factoring/blob/b49b9e19480c65d139ef15beecacb92064c1a960/research/geometric-cut-rank-budget.md) already excludes exact finite seeds through 95 labels. This note gives a shorter independent argument for a smaller range; it does not extend that cutoff. A native finite-size exclusion does not by itself exclude asymptotic constructions obtained from tensor powers of a small polynomial source.
+
 Every exact crossing decomposition on `q` labels, over every field,
 satisfies
 
@@ -231,8 +233,9 @@ L_q^{70}>q^{99},\qquad 2\le q\le11.
 Thus (1) exceeds `q^sqrt(2)` throughout that range, without any
 floating-point decision. At twelve labels the same lower bound is
 strictly below `12^(140/99)`, also verified using integer powers.
-The bound therefore first leaves room for a strict seed at twelve
-labels. This is permission to search, not an existence statement.
+This particular bound first leaves numerical room at twelve labels.
+The [strict elementary refinement](strict-mixed-cut-gate.md) also excludes
+twelve, while the prior geometric theorem excludes all sizes through 95.
 
 For example, at eight labels (1) is `6+2 sqrt(57)`, greater than
 21.09; the target is below 18.94. At eleven labels it is
