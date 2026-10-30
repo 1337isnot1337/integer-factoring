@@ -1,0 +1,17 @@
+{
+  "central_binomial_cases": 128,
+  "checker_sha256": "fea31db00b1786299f44e26b7393baa8b1019770bda2cc07357e3b25193b542a",
+  "divisor_bound_integer_cases": 3021,
+  "monomial_product_reductions": 3468,
+  "negative_controls": [
+    "unweighted parity of two terms is zero",
+    "one bad exponent modulus misses two terms",
+    "all base-field values miss a nonzero polynomial"
+  ],
+  "nonzero_sparse_polynomials": 2505,
+  "prefix_inputs": 1022,
+  "prime_bound_cases": 256,
+  "status": "all finite exact checks passed; no faster evaluator tested",
+  "support_isolation_checks": 518,
+  "weighted_quotient_calls": 541617
+}

@@ -10,6 +10,8 @@ verify:
 	python3 tools/check_half_piece_ranks.py --no-numpy
 	python3 tools/check_half_projection.py
 	python3 tools/check_half_restricted_labels.py
+	python3 tools/check_weighted_prefix.py
+	python3 tools/check_fixed_characteristic_transfer.py
 
 verify-post-half:
 	python3 tools/check_half_piece_ranks.py --full

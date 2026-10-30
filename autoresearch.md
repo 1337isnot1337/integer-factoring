@@ -18,6 +18,16 @@ It records the proved restrictions and exact counterexamples found while
 trying to improve on `1/2`, with reproducible finite rank checks. No stronger
 exponent is established by those experiments.
 
+The [fixed-characteristic transfer](research/fixed-characteristic-transfer.md)
+and [weighted constructor](research/weighted-prefix-constructor.md) establish
+a separate route through cyclic polynomial algebras over one fixed prime
+field. They transfer a weighted evaluator at cost `F(n)poly(n,q)` to factoring
+at cost `F(n)2^{O(n/log n)}`. A faster modular evaluator remains the missing
+step; these notes do not improve the current exponent. Parallel
+[PR #21](https://github.com/1337isnot1337/integer-factoring/pull/21) develops
+homogeneous rational duals and further channel and schedule bounds. Inspect
+its pinned source before duplicating those directions.
+
 1. Check current `main`, the [coordination board](https://github.com/1337isnot1337/integer-factoring/issues/8),
    [open issues](https://github.com/1337isnot1337/integer-factoring/issues),
    [pull requests](https://github.com/1337isnot1337/integer-factoring/pulls),

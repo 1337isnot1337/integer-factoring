@@ -52,6 +52,30 @@ show why another proposed dimension reduction fails on the full restricted
 spaces. These results establish no exponent above `1/2` and no general
 factoring lower bound.
 
+### A fixed-characteristic route beyond the half rate
+
+The [fixed-characteristic transfer](research/fixed-characteristic-transfer.md)
+opens a separate route: a weighted divisor-prefix evaluator over one fixed
+prime field, with cost `F(n)poly(n,q)` in
+`F_p[Z]/(Z^q-1)`, gives deterministic factoring in
+`F(n)2^{O(n/log n)}`. Thus an evaluator saving exponent between `1/2` and
+`1` would transfer without reconstructing integer counts or changing the
+characteristic.
+
+The [weighted constructor](research/weighted-prefix-constructor.md) writes
+the required clique tables in `2^{O(n/P)}poly(n,q)` time, with the same
+channel widths as the completed half-rate proof. A deterministic sparse
+polynomial test detects nonempty divisor prefixes despite modular
+cancellation. The proof charges the cyclic algebra dimension outside the
+recursive operation count; substituting it into the old integer pad would
+not establish the required cost.
+
+These are complete ordinary construction and transfer arguments, with
+finite exact checks. The transfer remains conditional on a faster modular
+evaluator. It does not establish an exponent above `1/2`. Run
+`make verify` for the weighted-constructor and transfer checks alongside
+the existing certificates.
+
 ## Lean theorem: exponent 1/30
 
 **The k6 variant has a complete Lean proof of the `1/30` bound:**
