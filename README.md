@@ -182,7 +182,7 @@ identifies the evidence for each result.
 
 | Result | Value | Evidence and scope |
 | --- | --- | --- |
-| Appendix B factoring composition | `alpha = 1/2` | [Complete ordinary proof](research/half-rate-factoring.md), source and interface audit, finite adapter and arithmetic checks. [Lean pad arithmetic](formal/HalfPad.lean) proves a supporting bound; the machine composition remains open. |
+| Appendix B factoring composition | `alpha = 1/2` | [Complete ordinary proof](research/half-rate-factoring.md), source and interface audit, finite adapter and arithmetic checks. Lean checks the [pad arithmetic](formal/HalfPad.lean) and [divisor-one correction](formal/HalfPrefix.lean); the machine composition remains open. |
 | **Complete k6 factoring theorem** | **`alpha = 1/30`** | **Lean verifies one modified machine, all runtime costs, the real-logarithm conversion, and the strict exponent comparison** |
 | Sharper rate for the same k6 machine | `beta_12 = log(12/11)/log12 = 0.0350159540... > 1/29` | [Complete ordinary derivation](research/k6-sharp-rate.md), using the existing machine bridge; new rate not Lean formalized |
 | Explicit analysis of the unchanged baseline | `alpha = log(12/11)/log(16) = 0.0313827205...` | Handwritten derivation from the pinned source's inequalities |

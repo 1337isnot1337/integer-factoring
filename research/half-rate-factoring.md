@@ -329,7 +329,9 @@ theorems, not an inference from successful small tests. No new Lean
 formalization of the full composition or fresh build of the Appendix B
 development is claimed. The separate [Lean pad lemma](../formal/HalfPad.lean)
 checks the sufficient-pad arithmetic assuming the evaluator's stated bounds;
-it does not construct the factoring machine.
+[HalfPrefix.lean](../formal/HalfPrefix.lean) verifies removal of the divisor 1
+against the factoring reference's `cntPre`. These lemmas do not construct the
+factoring machine.
 
 The existing half-pieces channel counts have a proved asymptotic barrier
 at `1/2` within that particular interface; see the evaluator audit.
