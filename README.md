@@ -69,6 +69,14 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 
 No uniform factoring exponent above `1/2` is proved here. One open approach seeks effective crossing pieces with total rank width `4*rho*lambda + O(log lambda)` for `rho < 1/sqrt(2)`. A suitable family could improve the evaluator bound, but finite rank improvements alone do not establish that inequality.
 
+The [weighted cut-rank theorem](research/weighted-cut-rank-budget.md) proves
+`sum_i sqrt(r_i*c_i) >= d*(2*H_(2d)-H_d-1)` for crossing decompositions over
+every field. An exact strengthened certificate excludes the finite rank-sum
+amplification criterion through 46 labels, improving the earlier 21-label
+cutoff. This restriction concerns that criterion; it leaves other
+constructions open and does not change the factoring exponent. Reproduce it
+with `python3 tools/check_weighted_cut_rank_budget.py`.
+
 See the [research index](research/INDEX.md) for completed arguments, scoped obstructions, and older candidates. Active work can also appear in [open pull requests](https://github.com/1337isnot1337/integer-factoring/pulls); branch research is not automatically a result on `main`.
 
 ## Contribution and attribution

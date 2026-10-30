@@ -26,6 +26,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Obstructions and work beyond 1/2
 
+- [Weighted cut-rank budgets](weighted-cut-rank-budget.md): an all-field harmonic lower bound and an exact exclusion of finite rank-sum seeds through 46 labels.
 - [Directions beyond half](post-half-directions.md): experiments, scope, and unresolved questions.
 - [Network tradeoff](half-top-structure.md): restriction for the current local-enumeration and wire-channel constructor.
 - [Restricted-label counterexample](half-restricted-labels.md): failure of a proposed low-mode dimension reduction.
