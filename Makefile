@@ -34,6 +34,8 @@ verify-constructions:
 	python3 tools/check_noncommutative_crossing_involution_support.py
 	python3 tools/check_noncommutative_crossing_symplectic_radicals.py
 	python3 tools/check_noncommutative_crossing_radical_ward.py
+	python3 tools/check_noncommutative_crossing_seed_algebra_audit.py
+	python3 tools/check_symplectic_seed_coefficient_barrier.py --output /tmp/integer-factoring-seed-coefficient-barrier.json
 	python3 tools/check_double_endpoint_retracts.py --cases full:3:3
 	python3 tools/check_noncommutative_crossing_group_degeneration.py
 
