@@ -1,0 +1,446 @@
+{
+  "checker_sha256": "41d0cd3f46c4c0d56faaf03bfebdbd46d96a8e514b67c1ff4d643deb460d6fc6",
+  "exact_D_squared_K_checks": 271,
+  "exact_Hall_pairing_entries": 1818,
+  "exact_Hermite_reconstruction_entries": 11827,
+  "exact_Virasoro_commutator_checks": 1345,
+  "exact_complete_profile_moment_entries": 723,
+  "exact_two_cut_collapsed_channel_entries": 2208,
+  "moment_operator_records": [
+    {
+      "dimension": 1,
+      "eigenspace_dimensions_mod_prime": {
+        "0": 0,
+        "1": 1
+      },
+      "h": 1,
+      "rank_mod_prime": 1
+    },
+    {
+      "dimension": 2,
+      "eigenspace_dimensions_mod_prime": {
+        "0": 1,
+        "2": 1
+      },
+      "h": 2,
+      "rank_mod_prime": 1
+    },
+    {
+      "dimension": 3,
+      "eigenspace_dimensions_mod_prime": {
+        "-1": 1,
+        "0": 1,
+        "3": 1
+      },
+      "h": 3,
+      "rank_mod_prime": 2
+    },
+    {
+      "dimension": 5,
+      "eigenspace_dimensions_mod_prime": {
+        "-2": 1,
+        "0": 2,
+        "4": 2
+      },
+      "h": 4,
+      "rank_mod_prime": 3
+    },
+    {
+      "dimension": 7,
+      "eigenspace_dimensions_mod_prime": {
+        "-3": 2,
+        "0": 3,
+        "5": 2
+      },
+      "h": 5,
+      "rank_mod_prime": 4
+    },
+    {
+      "dimension": 11,
+      "eigenspace_dimensions_mod_prime": {
+        "-4": 2,
+        "0": 5,
+        "6": 4
+      },
+      "h": 6,
+      "rank_mod_prime": 6
+    },
+    {
+      "dimension": 15,
+      "eigenspace_dimensions_mod_prime": {
+        "-5": 4,
+        "0": 7,
+        "7": 4
+      },
+      "h": 7,
+      "rank_mod_prime": 8
+    },
+    {
+      "dimension": 22,
+      "eigenspace_dimensions_mod_prime": {
+        "-6": 4,
+        "0": 11,
+        "8": 7
+      },
+      "h": 8,
+      "rank_mod_prime": 11
+    },
+    {
+      "dimension": 30,
+      "eigenspace_dimensions_mod_prime": {
+        "-7": 7,
+        "0": 15,
+        "9": 8
+      },
+      "h": 9,
+      "rank_mod_prime": 15
+    },
+    {
+      "dimension": 42,
+      "eigenspace_dimensions_mod_prime": {
+        "-8": 8,
+        "0": 22,
+        "10": 12
+      },
+      "h": 10,
+      "rank_mod_prime": 20
+    },
+    {
+      "dimension": 56,
+      "eigenspace_dimensions_mod_prime": {
+        "-9": 12,
+        "0": 30,
+        "11": 14
+      },
+      "h": 11,
+      "rank_mod_prime": 26
+    },
+    {
+      "dimension": 77,
+      "eigenspace_dimensions_mod_prime": {
+        "-10": 14,
+        "0": 42,
+        "12": 21
+      },
+      "h": 12,
+      "rank_mod_prime": 35
+    }
+  ],
+  "negative_controls": [
+    "truncated Virasoro telescoping sum",
+    "false second-moment zero relation",
+    "omitted unmatched-on-one-side contractions"
+  ],
+  "new_factoring_exponent_claimed": false,
+  "normalized_active_crossing_profiles": [
+    {
+      "crossing_entries_checked": 1,
+      "dimension": 1,
+      "h": 1,
+      "normalization": "left inverse of exact Gamma_2 minor, then scalar -1/(4h)",
+      "operator_columns": [
+        0
+      ],
+      "operator_rows": [
+        0
+      ],
+      "pieces": [
+        {
+          "column_rank_Q": 1,
+          "row_rank_Q": 1,
+          "s": -2
+        },
+        {
+          "column_rank_Q": 0,
+          "row_rank_Q": 0,
+          "s": -1
+        },
+        {
+          "column_rank_Q": 0,
+          "row_rank_Q": 0,
+          "s": 0
+        },
+        {
+          "column_rank_Q": 1,
+          "row_rank_Q": 1,
+          "s": 1
+        }
+      ],
+      "state_labels": [
+        0
+      ]
+    },
+    {
+      "crossing_entries_checked": 1,
+      "dimension": 1,
+      "h": 2,
+      "normalization": "left inverse of exact Gamma_2 minor, then scalar -1/(4h)",
+      "operator_columns": [
+        0
+      ],
+      "operator_rows": [
+        0
+      ],
+      "pieces": [
+        {
+          "column_rank_Q": 1,
+          "row_rank_Q": 1,
+          "s": -4
+        },
+        {
+          "column_rank_Q": 1,
+          "row_rank_Q": 1,
+          "s": -3
+        },
+        {
+          "column_rank_Q": 1,
+          "row_rank_Q": 1,
+          "s": -2
+        },
+        {
+          "column_rank_Q": 1,
+          "row_rank_Q": 1,
+          "s": -1
+        },
+        {
+          "column_rank_Q": 1,
+          "row_rank_Q": 1,
+          "s": 0
+        },
+        {
+          "column_rank_Q": 1,
+          "row_rank_Q": 1,
+          "s": 1
+        },
+        {
+          "column_rank_Q": 1,
+          "row_rank_Q": 1,
+          "s": 2
+        },
+        {
+          "column_rank_Q": 1,
+          "row_rank_Q": 1,
+          "s": 3
+        }
+      ],
+      "state_labels": [
+        0
+      ]
+    },
+    {
+      "crossing_entries_checked": 16,
+      "dimension": 2,
+      "h": 3,
+      "normalization": "left inverse of exact Gamma_2 minor, then scalar -1/(4h)",
+      "operator_columns": [
+        0,
+        1
+      ],
+      "operator_rows": [
+        0,
+        1
+      ],
+      "pieces": [
+        {
+          "column_rank_Q": 4,
+          "row_rank_Q": 1,
+          "s": -6
+        },
+        {
+          "column_rank_Q": 4,
+          "row_rank_Q": 2,
+          "s": -5
+        },
+        {
+          "column_rank_Q": 4,
+          "row_rank_Q": 3,
+          "s": -4
+        },
+        {
+          "column_rank_Q": 4,
+          "row_rank_Q": 4,
+          "s": -3
+        },
+        {
+          "column_rank_Q": 4,
+          "row_rank_Q": 4,
+          "s": -2
+        },
+        {
+          "column_rank_Q": 2,
+          "row_rank_Q": 2,
+          "s": -1
+        },
+        {
+          "column_rank_Q": 2,
+          "row_rank_Q": 2,
+          "s": 0
+        },
+        {
+          "column_rank_Q": 4,
+          "row_rank_Q": 4,
+          "s": 1
+        },
+        {
+          "column_rank_Q": 4,
+          "row_rank_Q": 4,
+          "s": 2
+        },
+        {
+          "column_rank_Q": 4,
+          "row_rank_Q": 4,
+          "s": 3
+        },
+        {
+          "column_rank_Q": 2,
+          "row_rank_Q": 4,
+          "s": 4
+        },
+        {
+          "column_rank_Q": 1,
+          "row_rank_Q": 4,
+          "s": 5
+        }
+      ],
+      "state_labels": [
+        0,
+        1
+      ]
+    },
+    {
+      "crossing_entries_checked": 81,
+      "dimension": 3,
+      "h": 4,
+      "normalization": "left inverse of exact Gamma_2 minor, then scalar -1/(4h)",
+      "operator_columns": [
+        0,
+        1,
+        2
+      ],
+      "operator_rows": [
+        0,
+        1,
+        2
+      ],
+      "pieces": [
+        {
+          "column_rank_Q": 9,
+          "row_rank_Q": 1,
+          "s": -8
+        },
+        {
+          "column_rank_Q": 9,
+          "row_rank_Q": 2,
+          "s": -7
+        },
+        {
+          "column_rank_Q": 9,
+          "row_rank_Q": 4,
+          "s": -6
+        },
+        {
+          "column_rank_Q": 9,
+          "row_rank_Q": 6,
+          "s": -5
+        },
+        {
+          "column_rank_Q": 9,
+          "row_rank_Q": 9,
+          "s": -4
+        },
+        {
+          "column_rank_Q": 9,
+          "row_rank_Q": 9,
+          "s": -3
+        },
+        {
+          "column_rank_Q": 9,
+          "row_rank_Q": 9,
+          "s": -2
+        },
+        {
+          "column_rank_Q": 6,
+          "row_rank_Q": 6,
+          "s": -1
+        },
+        {
+          "column_rank_Q": 6,
+          "row_rank_Q": 6,
+          "s": 0
+        },
+        {
+          "column_rank_Q": 9,
+          "row_rank_Q": 9,
+          "s": 1
+        },
+        {
+          "column_rank_Q": 9,
+          "row_rank_Q": 9,
+          "s": 2
+        },
+        {
+          "column_rank_Q": 9,
+          "row_rank_Q": 9,
+          "s": 3
+        },
+        {
+          "column_rank_Q": 6,
+          "row_rank_Q": 9,
+          "s": 4
+        },
+        {
+          "column_rank_Q": 4,
+          "row_rank_Q": 9,
+          "s": 5
+        },
+        {
+          "column_rank_Q": 2,
+          "row_rank_Q": 9,
+          "s": 6
+        },
+        {
+          "column_rank_Q": 1,
+          "row_rank_Q": 9,
+          "s": 7
+        }
+      ],
+      "state_labels": [
+        0,
+        1,
+        2
+      ]
+    }
+  ],
+  "original_label_central_cumulatives": [
+    {
+      "central_column_rank_Q": 0,
+      "central_declared_channel_dimension": 1,
+      "central_row_rank_Q": 0,
+      "dimension": 1,
+      "h": 1
+    },
+    {
+      "central_column_rank_Q": 2,
+      "central_declared_channel_dimension": 6,
+      "central_row_rank_Q": 1,
+      "dimension": 2,
+      "h": 2
+    },
+    {
+      "central_column_rank_Q": 3,
+      "central_declared_channel_dimension": 18,
+      "central_row_rank_Q": 2,
+      "dimension": 3,
+      "h": 3
+    },
+    {
+      "central_column_rank_Q": 10,
+      "central_declared_channel_dimension": 44,
+      "central_row_rank_Q": 8,
+      "dimension": 5,
+      "h": 4
+    }
+  ],
+  "prime_for_large_moment_matrices": 1000003,
+  "scope": "exact finite verification supporting separate all-weight ordinary proofs"
+}

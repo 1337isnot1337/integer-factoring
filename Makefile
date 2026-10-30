@@ -20,6 +20,7 @@ verify-constructions:
 	python3 tools/check_angle_pfaffian.py
 	python3 tools/check_homogeneous_central_selection.py
 	python3 tools/check_noncommutative_crossing_orbit.py
+	python3 tools/check_bosonic_hermite_profile.py
 
 verify-native-crossings:
 	mkdir -p build/native

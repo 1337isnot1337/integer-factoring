@@ -32,6 +32,7 @@ The composition uses the existing clique evaluator from [Anthropic's Appendix B]
 | Polynomial-time modular angle-factor queries | Ordinary exact construction; channel ranks unchanged | [Three-block Pfaffian and transpose identity](research/homogeneous-central-modular-symbols.md) |
 | Homogeneous modular duals at every label width | Ordinary uniform construction; retains exponent `1/2` | [Rectangular vacuum minor selection](research/homogeneous-central-selection.md) |
 | Noncommutative 64-label constant-cut rank reduced from 31 to 28 | Exact finite construction and exhaustive search; complete profile does not improve the score | [Group-word crossings and all central shears](research/noncommutative-crossing-orbits.md) |
+| Cumulative bosonic crossing profile | Ordinary exact identities and finite construction; no stronger exponent | [Moment pairing, exact rank, and both channel cuts](research/bosonic-hermite-profile.md) |
 
 The result table distinguishes verified machine bounds from conditional constructions and finite experiments. A merged PR or a passing finite test does not imply independent mathematical review.
 
@@ -82,6 +83,8 @@ A [three-block Pfaffian formula](research/homogeneous-central-modular-symbols.md
 The [homogeneous selection theorem](research/homogeneous-central-selection.md) constructs duals of one weight at every binary label width. A large nonsingular minor exists in a homogeneous block of the proved source pairing, even when the same-weight Gram matrix is singular. The selected operator and state weights differ by `O(sqrt(h) log h)`, so the construction retains the uniform half-rate bound. Its raw-parameter Pfaffian makes complete finite profiles accessible without listing intermediate partition spaces.
 
 [Noncommuting group words](research/noncommutative-crossing-orbits.md) give a different exact crossing family. An exhaustive screen of all `33554432` normalized functions on `F_4^2` finds the optimal constant-cut rank 28 in that central-shear family. The other pieces remain too expensive, including after all binary recombinations of the displayed winning profile. This is a finite rank improvement and a reproducible search result; the factoring score remains `1/2`.
+
+The [cumulative bosonic profile](research/bosonic-hermite-profile.md) uses a vanishing first moment and a scalar second moment to build new exact pieces. Its scalar parameter pairing has rank `p(h)-p(h-2)`, proved using an explicit Virasoro operator. Prefix and suffix formulas give both channel factorizations without dropping contact terms. These pieces retain the leading half-rate channel scale; their complete ranks are measured separately in the finite examples.
 
 See the [research index](research/INDEX.md) for completed arguments, scoped obstructions, and older candidates. Active work can also appear in [open pull requests](https://github.com/1337isnot1337/integer-factoring/pulls); branch research is not automatically a result on `main`.
 
