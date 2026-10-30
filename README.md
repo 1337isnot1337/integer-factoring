@@ -147,6 +147,13 @@ shows that a future rank improvement on an unbounded sequence with polynomial
 gaps suffices, using the wider-piece transfer in PR #23. Its checker is
 `python3 tools/check_sparse_width_interpolation.py`; finite seeds alone do not
 meet its hypotheses.
+[Higher antipodal-pair sectors](research/hamming-sectors.md) retain the same
+linear-degree construction budget. Their weighted complement identity proves
+that high-occupancy and complementary coefficient symmetry spans have exactly
+the same optimized rank cutoff. This also strengthens the earlier source
+particle-hole identity; individual coefficient ranks need not be monotone.
+Run `python3 tools/check_hamming_sectors.py` and
+`python3 tools/check_hamming_complement.py` (or add `--full`).
 
 A [reflected particle-hole identity](research/modular-particle-hole.md)
 gives an exact compression rule at every binary mode-block size. Above half

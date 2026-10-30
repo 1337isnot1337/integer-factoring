@@ -28,28 +28,30 @@ def folded_matrix(x, v, u, y, weights=None):
             if (n >> j) & 1:
                 answer = polynomial_product(answer, 1 | (1 << weight))
         return answer
-    matrix = [[0]*8 for _ in range(8)]
+    size = len(x)
+    assert len(v) == len(u) == len(y) == size
+    matrix = [[0]*(4*size) for _ in range(4*size)]
     def put(i, j, value):
         matrix[i][j] = matrix[j][i] = value
     for i, t in enumerate(u):
         for j, n in enumerate(x):
-            put(i, 2+j, 3 << degree(n | t))
+            put(i, size+j, 3 << degree(n | t))
         for j, m in enumerate(v):
             if ((m-1) & ~(t-1)) == 0:
-                put(i, 4+j, oneplus(m))
+                put(i, 2*size+j, oneplus(m))
         for j, other in enumerate(y):
             if t == other:
-                put(i, 6+j, 1 << degree(t))
+                put(i, 3*size+j, 1 << degree(t))
     for i, n in enumerate(x):
         for j, m in enumerate(v):
             if ((n-1) & ~(m-1)) == 0:
-                put(2+i, 4+j, 1 << degree(n))
+                put(size+i, 2*size+j, 1 << degree(n))
         for j, t in enumerate(y):
-            put(2+i, 6+j, 3 << (degree(n & t)-1))
+            put(size+i, 3*size+j, 3 << (degree(n & t)-1))
     for i, m in enumerate(v):
         for j, t in enumerate(y):
             if (m & t) == 1:
-                put(4+i, 6+j, oneplus(m) << degree(t))
+                put(2*size+i, 3*size+j, oneplus(m) << degree(t))
     return matrix
 
 
@@ -61,12 +63,15 @@ def matrices(width, weights=None):
     if weights is not None:
         assert len(weights) == width+2 and weights[0] == 1 and all(w >= 1 for w in weights)
     bound = 4*(width+3) if weights is None else 4*(2+sum(weights[1:]))
-    domain = labels(width)
+    return coefficient_matrices(labels(width), bound, weights)
+
+
+def coefficient_matrices(domain, degree_bound, weights=None):
     dimension = len(domain)
     result = {}
     for x, y, u, v in product(range(dimension), repeat=4):
         polynomial = profile(domain[x], domain[v], domain[u], domain[y], weights)
-        assert polynomial.bit_length() <= bound+1
+        assert polynomial.bit_length() <= degree_bound+1
         assert polynomial.bit_count() % 2 == int(x == v and y == u)
         while polynomial:
             bit = polynomial & -polynomial

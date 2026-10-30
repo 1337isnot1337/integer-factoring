@@ -227,3 +227,13 @@ factor, or omitting the reflection when the two weights differ, supplies
 negative controls. The recorded hashes pin the checker and folded matrix
 implementation. These finite calculations support the ordinary all-size
 proof above; they do not replace it or certify an asymptotic rank gain.
+
+## Full-span strengthening
+
+The [coefficient-span lemma](hamming-sectors.md#4-reflected-complement-and-coefficient-span-invariance)
+shows that multiplication or exact division by the common nonzero scalar
+polynomial preserves the entire coefficient symmetry span. Therefore reflected
+complement preserves its optimized maximum rank-product cutoff exactly. This
+strengthens the compression statement without asserting monotonicity of any
+individual coefficient rank. The linked note also extends the inverse identity
+to bounded bit weights with scalar `TQ+Q+T`.
