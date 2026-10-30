@@ -67,6 +67,65 @@ def matrix_vector(rows, vector):
                for i, row in enumerate(rows))
 
 
+def dilate_polynomial(value):
+    result = 0
+    while value:
+        bit = value & -value
+        result |= 1 << (2 * (bit.bit_length()-1))
+        value ^= bit
+    return result
+
+
+def parity_sector_checks():
+    local_count = 0
+    for alpha in range(10):
+        for yy in range(10):
+            for beta in range(10):
+                for parity in (0, 1):
+                    actual = entry((2*alpha+parity,), (2*yy+parity,),
+                                   (2*beta+parity,))
+                    expected = dilate_polynomial(entry((alpha,), (yy,), (beta,))) << parity
+                    assert actual == expected
+                    local_count += 1
+
+    entries = shells = 0
+    for h in range(2, 32):
+        smaller = 1 << ((h//2).bit_length()-1)
+        remainder = h-2*smaller
+        variables = h.bit_length()
+        parity = tuple((remainder >> j) & 1 for j in range(variables))
+        labels = labels_at(smaller, variables)
+        embedded = {a: tuple(p+2*v for p, v in zip(parity, a)) for a in labels}
+        assert all(sum(v << j for j, v in enumerate(a)) == h
+                   for a in embedded.values())
+        for alpha in labels:
+            for yy in labels:
+                for beta in labels:
+                    uu = tuple(b+y-a for a, y, b in zip(alpha, yy, beta))
+                    if min(uu) < 0:
+                        continue
+                    assert uu in embedded
+                    actual = entry(embedded[alpha], embedded[yy], embedded[beta])
+                    expected = dilate_polynomial(entry(alpha, yy, beta)) << remainder
+                    assert actual == expected
+                    assert all(a+u == b+y for a, y, u, b in
+                               zip(embedded[alpha], embedded[yy], embedded[uu], embedded[beta]))
+                    entries += 1
+        shells += 1
+
+    counts = [1]
+    for n in range(1, 2049):
+        counts.append(counts[n-1] + (counts[n//2] if n % 2 == 0 else 0))
+    for h in range(2, 1025):
+        smaller = 1 << ((h//2).bit_length()-1)
+        assert 2*smaller <= h < 4*smaller
+        assert counts[h] <= (2*smaller+1)*(smaller+1)*counts[smaller]
+    return {"local_odd_even_coefficients": local_count,
+            "embedded_supported_entries": entries,
+            "complete_embedded_shells": shells,
+            "dimension_comparisons": 1023}
+
+
 def finite_filtration(h):
     labels = labels_at(h, h.bit_length())
     blocks = defaultdict(list)
@@ -176,6 +235,7 @@ def main():
                        "all_common_nilpotent_filtrations": True})
     negative, _, _ = finite_filtration(6)
     assert not negative
+    parity_checks = parity_sector_checks()
 
     report = {
         "source_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
@@ -185,7 +245,8 @@ def main():
         "column_block_no_carry_witnesses": column_witnesses,
         "finite_row_filtrations": finite,
         "non_prime_power_energy_six_negative_control": True,
-        "scope": "Structural finite checks supplement the written all-energy quotient and composition-series proof; no asymptotic claim is inferred from a finite matrix table.",
+        "all_energy_parity_sector_checks": parity_checks,
+        "scope": "Structural finite checks supplement the written power-of-two quotient proof and all-energy parity restriction; no asymptotic claim is inferred from a finite matrix table.",
         "elapsed_seconds": round(monotonic()-started, 3),
     }
     if args.output:
