@@ -68,6 +68,16 @@ detects permitted divisors using cyclic polynomial rings, with additional
 cost `exp(O(n/log n))`. The proof includes weighted input construction,
 circuit generation, ring arithmetic, and finite-alphabet machine costs.
 
+The [extended transfer](research/subexponential-piece-transfer.md) permits
+more than polynomially many crossing pieces. Piece entropy
+`log |I_lambda| = O(lambda/(log lambda)^delta)` gives factoring exponent
+`min(log2(1/rho),delta,1)`, without an extra depth factor at the endpoint.
+In particular, `2^(O(lambda^beta))` pieces, for fixed `beta<1`, preserve
+the rate-derived exponent. The width sum can have error as large as
+`O(lambda/loglog lambda)`. An explicit volume cutoff, a geometric cost
+sum, exact recurrence checks, and independent internal review support
+this conditional theorem. It supplies no new family with a smaller rate.
+
 A [normalized modular construction](research/modular-crossing.md) supplies
 such a family for every fixed `1/sqrt(2)<rho<1`. It removes the vanishing
 factorial multiplier and permits rings with zero divisors. Its present
