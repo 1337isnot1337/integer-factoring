@@ -336,7 +336,9 @@ polynomial-time padded algorithm, its binary input and output, the
 finite-alphabet machine, and the discrete square-root-log bound. The final
 axiom report contains `propext`, `Classical.choice`, and `Quot.sound`, with
 no `sorryAx`. Run `make verify-half-appendix` to rebuild the pinned sources
-and audit the formal composition. Independent review is still outstanding.
+and audit the formal composition. Big O Speedrun independently rebuilt the
+pinned proof with the Lean kernel and nanoda; see the
+[verification record](https://github.com/1337isnot1337/integer-factoring/issues/28#issuecomment-6533697488).
 
 The existing half-pieces channel counts have a proved asymptotic barrier
 at `1/2` within that particular interface; see the evaluator audit.

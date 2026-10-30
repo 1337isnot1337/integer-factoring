@@ -28,6 +28,7 @@ The composition uses the existing clique evaluator from [Anthropic's Appendix B]
 | Saving exponent `1/30` for the k6 machine | **Lean-verified** | [Proof](research/verified-k6.md), [machine theorem](variants/k6/FactoringK6/Certified.lean) |
 | Sharper k6 saving `log(12/11)/log(12) > 1/29` | Ordinary proof, not Lean-verified at this rate | [Rate derivation](research/k6-sharp-rate.md) |
 | Saving exponent above `1/2` | **Not established** | [Research index](research/INDEX.md) |
+| Rational crossing paths in every prime characteristic | Ordinary exact construction with rational valuation slopes; tested families do not improve the score | [Arithmetic initial forms](research/arithmetic-crossing-initial-forms.md) |
 | Exact maximum divisor-count preprocessing | Ordinary proof: `n^O(log log n)` time and `O(log n log log n)` workspace; factoring score unchanged | [Next-prime exchange algorithm](research/exchange-divisor-preprocessing.md), [complete-pattern count](research/primorial-weighted-divisor-preprocessing.md) |
 | Simultaneous time and workspace at an enumerable seed endpoint | Ordinary conditional theorem; no larger numerical exponent | [Bounded selection and direct type channels](research/simultaneous-seed-endpoint.md) |
 | Polynomial-time modular angle-factor queries | Ordinary exact construction; channel ranks unchanged | [Three-block Pfaffian and transpose identity](research/homogeneous-central-modular-symbols.md) |
@@ -83,6 +84,8 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 ## Current research frontier
 
 No uniform factoring exponent above `1/2` is proved here. One open approach seeks effective crossing pieces with total rank width `4*rho*lambda + O(log lambda)` for `rho < 1/sqrt(2)`. A suitable family could improve the evaluator bound, but finite rank improvements alone do not establish that inequality.
+
+[Arithmetic initial forms](research/arithmetic-crossing-initial-forms.md) now convert rational crossing paths into finite-field paths even when their normalizing factorial vanishes modulo the chosen prime. Rational diagonal weights and fractional valuation slopes are handled exactly. Independent highest-weight and Toeplitz-rank controls verify the recorded examples. The tested higher-spin families miss the local Smith threshold; this is a new candidate generator, with no stronger factoring exponent.
 
 The [exact divisor-count preprocessor](research/exchange-divisor-preprocessing.md) now avoids most canonical prime-exponent patterns using necessary inequalities for a least maximizer. The proof gives `n^O(log log n)` bit time and `O(log n log log n)` working bits; the smaller-space proof uses uniform iterated integer multiplication. The shipped ordinary-integer oracle meets the time bound with polynomial workspace, while its elementary streamed mode has `2^O(log^2 n)` time and `O(log^2 n)` workspace. At 128 bits, the independently checked search visits 14,956 feasible profiles instead of 4,333,170 and returns the same exact maximum 318,504,960. Run `python3 tools/check_exchange_divisor_preprocessing.py --large` to replay this comparison. This improves preprocessing, not the factoring exponent.
 
