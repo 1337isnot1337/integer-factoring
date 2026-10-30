@@ -28,6 +28,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 - [Weighted cut-rank budgets](weighted-cut-rank-budget.md): an all-field harmonic lower bound and an exact exclusion of finite rank-sum seeds through 46 labels.
 - [Residual cut-rank budgets](weighted-cut-residual-budget.md): a separate exact refinement excludes the same criterion through 50 labels.
+- [Positive cut duals](weighted-cut-dual-certificate.md): six exact rational witnesses extend the finite rank-sum exclusion through 52 labels.
+- [Quadratic Boolean-code oracle](quadratic-code-oracle.md): polynomial coefficient queries, a rank-six annihilator theorem, and finite raw-profile evidence; no improved contraction is proved.
 - [Directions beyond half](post-half-directions.md): experiments, scope, and unresolved questions.
 - [Network tradeoff](half-top-structure.md): restriction for the current local-enumeration and wire-channel constructor.
 - [Restricted-label counterexample](half-restricted-labels.md): failure of a proposed low-mode dimension reduction.

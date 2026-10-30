@@ -74,11 +74,19 @@ The [weighted cut-rank theorem](research/weighted-cut-rank-budget.md) proves
 every field. An exact strengthened certificate excludes the finite rank-sum
 amplification criterion through 46 labels. The
 [residual-budget refinement](research/weighted-cut-residual-budget.md)
-raises the exclusion to 50 labels, improving the earlier 21-label
-cutoff. These restrictions concern that criterion; they leave other
-constructions open and does not change the factoring exponent. Reproduce it
-with `python3 tools/check_weighted_cut_rank_budget.py` and
-`python3 tools/check_weighted_cut_residual_budget.py`.
+raises the exclusion to 50 labels, and six
+[positive rational duals](research/weighted-cut-dual-certificate.md)
+extend it through 52 labels. These restrictions concern that criterion;
+they leave other constructions open and do not change the factoring
+exponent. All three exact replays are included in `make verify-frontier`.
+
+The [quadratic Boolean-code oracle](research/quadratic-code-oracle.md)
+computes crossing coefficients in polynomial time without expanding
+the evaluation words. Its `2^O(sqrt(lambda))` coefficient count and
+effective factor construction meet a broader transfer interface, but
+the required rank contraction is still open. The note also proves a
+quadratic-annihilator theorem and reports the unsuccessful literal
+32- and 64-label rank profiles.
 
 See the [research index](research/INDEX.md) for completed arguments, scoped obstructions, and older candidates. Active work can also appear in [open pull requests](https://github.com/1337isnot1337/integer-factoring/pulls); branch research is not automatically a result on `main`.
 
