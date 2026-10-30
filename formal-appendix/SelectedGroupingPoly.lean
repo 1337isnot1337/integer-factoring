@@ -51,7 +51,33 @@ theorem selectedCode_eq_topGroupingCode (x n N k y : ℕ) (hP : 2 ≤ K x (selec
     exact propext (selectedGood_eq_okG x n code N k y hP)
   simp only [hp]
 
+def selectedGroupDigit (x n : ℕ) (pad : List Unit) (i : ℕ) : ℕ :=
+  let P := K x (selectedLevel x n)
+  cappedGroupingDigit P (3 * P ^ 8) (selectedCode x n pad) i
+
+theorem selectedGroupDigit_polyT (x : ℕ) (hx : 1 ≤ x) {α : Type} [Enc α] {n : α → ℕ}
+    (hn : Unary n) : PolyT fun p : (α × List Unit) × ℕ => selectedGroupDigit x (n p.1.1) p.1.2 p.2 := by
+  let β := α × List Unit
+  let P : β → ℕ := fun p => K x (selectedLevel x (n p.1))
+  let g : β → ℕ := fun p => 3 * P p ^ 8
+  let code : β → ℕ := fun p => selectedCode x (n p.1) p.2
+  have hP : Unary P := Unary.comp (selected_K_unary x hx hn) PolyT.id'.fst
+  have hg : Unary g := Unary.mul (Unary.const 3) (unary_pow_const hP 8)
+  have hc : PolyT code := selectedCode_polyT x hx hn
+  exact cappedGroupingDigit_polyT (K := P) (g := g) (code := code) hP.poly hg hc
+
+theorem selectedGroupDigit_eq (x n N k y : ℕ) (hP : 2 ≤ K x (selectedLevel x n))
+    (pad : List Unit) (hpad : (K x (selectedLevel x n)) ^ (3 * (K x (selectedLevel x n)) ^ 8) ≤ pad.length)
+    (i : Fin (3 * (K x (selectedLevel x n)) ^ 8)) :
+    selectedGroupDigit x n pad i.val = (selectedTopGrouping (sOf n) N k y (K x (selectedLevel x n)) hP i).val := by
+  unfold selectedGroupDigit selectedTopGrouping
+  dsimp only
+  rw [selectedCode_eq_topGroupingCode x n N k y hP pad hpad]
+  exact cappedGroupingDigit_chiOf _ _ _ (by omega) i
+
 end IntegerFactoring.HalfAppendix
 
 #print axioms IntegerFactoring.HalfAppendix.selectedCode_polyT
 #print axioms IntegerFactoring.HalfAppendix.selectedCode_eq_topGroupingCode
+#print axioms IntegerFactoring.HalfAppendix.selectedGroupDigit_polyT
+#print axioms IntegerFactoring.HalfAppendix.selectedGroupDigit_eq
