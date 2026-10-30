@@ -1,4 +1,4 @@
-# Integer factoring bounds: a candidate improvement
+# Integer factoring bounds
 
 [![Verify research certificates](https://github.com/1337isnot1337/integer-factoring/actions/workflows/verify.yml/badge.svg)](https://github.com/1337isnot1337/integer-factoring/actions/workflows/verify.yml)
 [![License: Apache 2.0](https://img.shields.io/badge/license-Apache%202.0-59636e)](LICENSE)
@@ -20,7 +20,42 @@ open obligations must update the relevant status, links, and reproduction
 instructions here in the same change. Check the underlying evidence before
 promoting a claim.
 
-## Current candidate: grouping and crossing compression
+## Closed machine theorem: exponent 1/30
+
+The degree-twelve variant has a closed Lean theorem asserting one deterministic,
+finite-alphabet factoring machine with
+
+```math
+T(n)\le C\exp\!\left(\frac{Cn}{(\log n)^{1/30}}\right)\qquad(n\ge2).
+```
+
+It computes the smallest prime factor using the reference's original binary
+input/output and machine-time definitions. The actual grouping program changes
+from `G = 3K^8`, `K_next = 9K^16` to `G = 5K^6`, `K_next = 25K^12`.
+The starting group count remains 48.
+
+**Verification checkpoint:** all eight proof modules and the closed endpoint
+passed an isolated local Lean 4.35.0 build. The final axiom reports contain only
+`propext`, `Classical.choice`, and `Quot.sound`. A fresh-source rebuild and
+hosted reproducibility check are underway; the final verification record is
+not yet published.
+
+The exact comparison `log(12/11)/log(16) < 1/30` is also kernel checked.
+This compares asymptotic upper-bound exponents, not measured runtimes or a
+lower bound on the reference machine. The square-root-logarithm conjecture
+remains open here.
+
+[Closed theorem](variants/k6/FactoringK6/Certified.lean) ·
+[Variant and reproduction](variants/k6/README.md) ·
+[Fresh-source verifier](tools/check_k6.sh)
+
+Run `make verify-k6` with Lean 4.35.0 and Lake on `PATH`. The verifier rebuilds
+the modified reference program and the complete rate proof in a new source
+tree, checks protected definitions and pinned dependencies, and prints the
+endpoint axioms again. The separate [k6 workflow](.github/workflows/verify-k6.yml)
+runs on relevant pushes without duplicating pull-request builds.
+
+## Stronger candidate: grouping and crossing compression
 
 The proposed combination of a stronger grouping construction and a 56-channel
 crossing factorization targets
@@ -58,12 +93,14 @@ Its published Lean theorem establishes one deterministic machine with time
 ## Research results
 
 The repository contains ordinary mathematical proofs, exact finite checks,
-Lean-checked local improvements, and a checked quantitative bound for the
-unchanged reference machine. It does **not** yet contain a Lean verification
-of an improved factoring machine.
+Lean-checked local improvements, a quantitative bound for the unchanged reference
+machine, and the new k6 machine theorem above. The k6 clean-source verification
+is pending at this checkpoint. The stronger compressed candidate still lacks
+a complete machine theorem.
 
 | Result | Value | Evidence and scope |
 | --- | --- | --- |
+| Degree-twelve modified factoring machine | `alpha = 1/30 = 0.033333...` | Closed endpoint passed local Lean compilation; fresh-source and hosted verification pending |
 | Explicit analysis of the unchanged baseline | `alpha = log(12/11)/log(16) = 0.0313827205...` | Handwritten derivation from the pinned source's inequalities |
 | Explicit time bound for the reference machine | `C * 2^(C * (explicitZu(n) + 1))` | Lean-checked bound for one finite-alphabet factoring machine; logarithmic-power conversion remains handwritten |
 | Grouping with independent accuracy | `g = O(D^2 K^2 log K)` | Matching decomposition, Holder's inequality, and an explicit deterministic search |
