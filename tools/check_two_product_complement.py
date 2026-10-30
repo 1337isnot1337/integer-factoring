@@ -252,6 +252,61 @@ def negative_three_product_controls():
     return controls
 
 
+def compositions(d):
+    if d == 0:
+        yield ()
+    for first in range(1, d + 1):
+        for tail in compositions(d - first):
+            yield (first,) + tail
+
+
+def block_flag_controls():
+    rng = random.Random(821629)
+    bounds = sharpness = profiles = largest_blocks = 0
+    for p in (2, 3, 5):
+        for d in range(1, 7):
+            for blocks in compositions(d):
+                labels = [i for i, size in enumerate(blocks) for _ in range(size)]
+                threshold = (d * d - sum(size * size for size in blocks)) // 2
+                assert threshold == sum(a * b for i, a in enumerate(blocks)
+                                        for b in blocks[i + 1:])
+                for _ in range(3):
+                    products = []
+                    for _ in range(3):
+                        first = [[rng.randrange(p) if labels[i] <= labels[j] else 0
+                                  for j in range(d)] for i in range(d)]
+                        products.append(kronecker(first, random_matrix(d, p, rng), p))
+                    approximation = add_matrices(products, p)
+                    assert rank(subtract(swap(d), approximation, p), p) >= threshold
+                    bounds += 1
+                # Swap within each same-block input sector, identity otherwise.
+                approximation = [[0] * (d * d) for _ in range(d * d)]
+                for i in range(d):
+                    for j in range(d):
+                        out_i, out_j = (j, i) if labels[i] == labels[j] else (i, j)
+                        assert labels[out_i] == labels[i]
+                        approximation[out_i * d + out_j][i * d + j] = 1
+                assert rank(subtract(swap(d), approximation, p), p) == threshold
+                sharpness += 1
+    for exponent in range(3, 13):
+        d = 1 << exponent
+        residual_row_total = sum(d // (1 << j) for j in range(exponent + 1))
+        assert residual_row_total == 2 * d - 1 < d * (d - 1) // 2
+        required_squares = d * d - 4 * d + 2
+        for maximum_block in range(1, d + 1):
+            possible_squares = min(maximum_block * d,
+                                   maximum_block ** 2 + (d - maximum_block) ** 2)
+            if possible_squares >= required_squares:
+                assert maximum_block >= d - 3
+                if d >= 16:
+                    assert maximum_block >= d - 2
+            largest_blocks += 1
+        profiles += 1
+    return dict(block_upper_triangular_cases=bounds, sharp_block_partitions=sharpness,
+                dyadic_profile_obstructions=profiles,
+                largest_block_necessary_conditions=largest_blocks)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path)
@@ -262,6 +317,7 @@ def main():
                   exhaustive_singular_pencil=exhaustive_singular_pencil(),
                   random_and_structural=random_checks(),
                   three_product_negative_controls=negative_three_product_controls(),
+                  common_block_flags=block_flag_controls(),
                   source_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest())
     if args.output:
         args.output.write_text(json.dumps(result, indent=2) + '\n')

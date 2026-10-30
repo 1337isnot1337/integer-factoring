@@ -197,12 +197,88 @@ The triangular-first-factor lemma still applies to any number of
 terms when a common input/output flag is actually available; such
 flags cannot be assumed for arbitrary triples.
 
+## 6. A common block flag limits multiscale constructions
+
+The kernel argument has a quantitative block version. Suppose all first
+factors `P_j` admit common input and output flags with matching block
+dimensions `b_1,...,b_l`, where `sum b_i=d`. After independent changes
+of the two bases, every `P_j` is upper block triangular. Then
+
+```math
+\operatorname{rank}\left(E_d-\sum_jP_j\otimes Q_j\right)
+\ge\frac{d^2-\sum_i b_i^2}{2}
+=\sum_{i<j}b_i b_j.                                   \tag{10}
+```
+
+To prove this, project the kernel onto its last `b_l` rows, an image
+of dimension at most `db_l`. If those rows vanish, the last `b_l`
+columns vanish by the same coordinate equation (6). Restriction
+injects into the smaller problem. Induction gives kernel dimension at
+most `(d^2+sum b_i^2)/2`, proving (10). The swap-preserving basis
+changes are exactly (3).
+
+This block bound is sharp for every partition and every field. Let
+`B` act as swap when both input indices belong to the same block,
+and as identity when they belong to distinct blocks. Its first-factor
+matrix space is block diagonal. The complement `E_d-B` has one
+rank-one two-dimensional block for each unordered pair of indices in
+distinct blocks, giving equality in (10).
+
+Apply this to the abstract dyadic profile from
+[the scalar-relaxation limit](weighted-cut-relaxation-limit.md).
+Let `d=2^m`, and call the pairs `(d2^j,d/2^j)` the forward pieces;
+the reversed pairs are the backward pieces. If an actual crossing
+decomposition had these cut ranks, and `B` were the sum of its
+forward pieces, then rank subadditivity for the backward pieces would
+give
+
+```math
+r(E_d-B)\le\sum_{j=0}^m d/2^j=2d-1.                  \tag{11}
+```
+
+Thus all product first factors of the forward pieces cannot share
+a complete input/output flag when `d>=8`: (5) would contradict
+`d(d-1)/2>2d-1`. In particular, a construction from jointly
+triangularizable first factors, including commuting projections,
+cannot realize this profile.
+
+More generally a common block flag would have to satisfy
+
+```math
+\sum_i b_i^2\ge d^2-4d+2.                            \tag{12}
+```
+
+If its largest block has size `b`, then `sum b_i^2<=bd`, so
+`b>=d-3`. For `d>=9`, write `d-b=s<=3` and use
+`sum b_i^2<=b^2+s^2`. Equation (12) implies `bs<=2d-1`;
+the case `s=3` would give `3d-9<=2d-1`, impossible for `d>8`.
+Consequently `b>=d-2` for dyadic `d>=16`.
+
+This is a restriction on compatible first-factor subspaces that the
+scalar profile alone does not capture. Any realization of that
+profile would require first-factor structure that does not split
+under a common flag into substantially smaller blocks.
+
+Small-rank perturbations of a flag construction have a quantitative
+cost as well. If `B=T+C`, where `T` has the block-flag structure in
+(10), rank subadditivity applied to `E_d-T=(E_d-B)+C` gives
+
+```math
+\operatorname{rank} C\ge
+\frac{d^2-\sum_i b_i^2}{2}-\operatorname{rank}(E_d-B). \tag{13}
+```
+
+For a complete flag and the dyadic forward sum, this is at least
+`d(d-1)/2-(2d-1)`. Thus a perturbation with row rank of lower order
+than `d^2` cannot repair that common-flag construction.
+
 ## Verification and provenance
 
 The companion exact checker tests small exhaustive examples, random
 examples over several prime fields, swap-preserving basis changes,
 and equality for `E_d-I`. It also checks the three-product
-counterexample (9). These finite checks support the algebraic
+counterexample (9), block-flag inequalities and their sharpness,
+and the dyadic-profile obstruction. These finite checks support the algebraic
 interfaces; Sections 1–3 prove the theorem for all dimensions and
 all fields. No numerical optimizer or Lean proof is required.
 

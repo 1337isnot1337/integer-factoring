@@ -77,8 +77,10 @@ amplification criterion through 46 labels. The
 raises the exclusion to 50 labels, and six
 [positive rational duals](research/weighted-cut-dual-certificate.md)
 extend it through 52 labels. These restrictions concern that criterion;
-they leave other constructions open and do not change the factoring
-exponent. All three exact replays are included in `make verify-frontier`.
+the [two-product refinement](research/two-product-seed-cutoff.md)
+extends it further through **54 labels**. These restrictions leave other
+constructions open and do not change the factoring exponent. The exact
+replays are included in `make verify-frontier`.
 
 The [two-product complement theorem](research/two-product-complement.md)
 proves `rank(E_d - P tensor Q - R tensor S) >= d*(d-1)/2` over every
@@ -87,6 +89,14 @@ field, including singular matrix pencils. A separate
 shows why these rank budgets alone cannot settle every dimension:
 abstract rank lists attain `O(d log d)` cost while satisfying them.
 Realizing those lists by compatible tensor pieces remains unresolved.
+The same theorem gives a sharp common-block-flag bound, ruling out
+nested projection realizations of the dyadic rank lists and quantifying
+the rank cost of a perturbation.
+The [formal-degeneration lemma](research/weighted-cut-border-stability.md)
+also preserves the weighted quotient budgets when individual pieces
+have Laurent-series poles; the harmonic exclusion through 41 labels
+survives that operation. The stronger finite cutoffs require separate
+complement arguments and are not asserted for degenerations.
 
 The [quadratic Boolean-code oracle](research/quadratic-code-oracle.md)
 computes crossing coefficients in polynomial time without expanding
@@ -95,6 +105,13 @@ effective factor construction meet a broader transfer interface, but
 the required rank contraction is still open. The note also proves a
 quadratic-annihilator theorem and reports the unsuccessful literal
 32- and 64-label rank profiles.
+
+The [dual code-section normal forms](research/code-section-normal-forms.md)
+reduce arbitrary ambient code lengths to finite affine-selector data.
+Complete screens cover all 67,108,864 coordinate-section classes at
+logical width five and all 65,536 general-section classes at width three.
+Neither screen improves the elementary pencil's maximum rank product;
+these finite results do not exclude larger widths or other families.
 
 The [global-block transfer](research/global-block-field-transfer.md)
 permits coefficient fields to vary with the raw block length, with

@@ -112,5 +112,11 @@
       "proposed_unrestricted_three_product_bound_fails": true
     }
   ],
-  "source_sha256": "8530b850e347ee972bfe332cf328b87107103243535181b44b1662e12b8e461d"
+  "common_block_flags": {
+    "block_upper_triangular_cases": 567,
+    "sharp_block_partitions": 189,
+    "dyadic_profile_obstructions": 10,
+    "largest_block_necessary_conditions": 8184
+  },
+  "source_sha256": "47498508e1bdea42cd61d88df700c6e7d5475f9c25fd293fc1e7cc304c9c5be0"
 }

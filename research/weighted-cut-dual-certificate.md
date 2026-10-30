@@ -178,3 +178,5 @@ separate from this exact proof replay.
 The all-field argument is (2)–(7), together with the previously proved
 quotient and rank-one complement theorems. No new Lean proof or
 improvement to the factoring-time exponent is asserted.
+The proofs and exact certificate replay were developed with substantial
+OpenAI assistant support.
