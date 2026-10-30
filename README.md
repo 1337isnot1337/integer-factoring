@@ -138,8 +138,9 @@ make verify-formal
 The script fetches the pinned public reference, rebuilds its `Solution`, and
 checks every new formal file. It rejects axiom reports containing anything
 outside `propext`, `Classical.choice`, and `Quot.sound`. The GitHub Actions workflow
-specifies the same checks with a pinned Lean archive and checkout action. No leaderboard
-submission has been made.
+specifies the same checks with a pinned Lean archive and checkout action. It runs
+for pull requests, pushes to `main`, and manual dispatch; branch pushes without a
+pull request do not start CI. No leaderboard submission has been made.
 
 The [workflow badge](https://github.com/1337isnot1337/integer-factoring/actions/workflows/verify.yml)
 shows current GitHub Actions results. For the recorded local reference build and
