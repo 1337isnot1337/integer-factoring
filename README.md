@@ -26,6 +26,13 @@ the repeated-query cost and the exact half-rate endpoint are included.
 This is an ordinary mathematical proof with finite checks, without new
 Lean formalization.
 
+The [explicit interpolation constructor](research/polynomial-top-queries.md)
+now computes every top-table entry in polynomial time and space. Each
+prescribed boundary admits at most one internal setting. An explicit
+grouping replaces the initial grouping search and allows the larger
+top schedule proved in that note. The tables remain available through
+queries; explicitly writing all their entries still takes exponential time.
+
 It combines Claude (Anthropic)'s existing Appendix B clique evaluator with
 Isaac Rudich and Louis-Martin Rousseau's multiplication-network reduction.
 The new connection includes a deterministic written-table constructor, an
@@ -80,7 +87,7 @@ connection. For example, a family with `rho=7/10` would give exponent
 The [fixed-characteristic transfer](research/scale-one-modular-transfer.md)
 opens another route. An effective scale-one crossing family over one fixed
 finite field gives the same factoring exponent `log2(1/rho)`, up to and
-including `alpha=1`. A [sparse divisor-polynomial argument](research/sparse-divisor-nonzeroness.md)
+including `alpha=1`. Its original [sparse divisor-polynomial argument](research/sparse-divisor-nonzeroness.md)
 detects permitted divisors using cyclic polynomial rings, with additional
 cost `exp(O(n/log n))`. The proof includes weighted input construction,
 circuit generation, ring arithmetic, and finite-alphabet machine costs.
@@ -93,6 +100,16 @@ is preserved. A parameter tradeoff also gives polynomial-space recovery
 for every exponent at most one, provided the evaluator has sequential
 queries and polynomial-space local routines. The existing modular
 half-rate construction meets those requirements.
+
+The stronger [bit-tagged recovery theorem](research/bit-tagged-witness-recovery.md)
+now achieves `exp(O(sqrt(n)))` recovery overhead with polynomial space
+over **every fixed characteristic**, preserving any fixed logarithmic
+saving exponent of a streamed evaluator. A different control field
+provides deterministic isolation and additive-character projections;
+square-zero tags return the isolated witness's bits. The proof includes
+candidate verification, complete factorization, and uniform field
+construction. [Streamed local factors](research/modular-factor-space-odd.md)
+are also available in every fixed characteristic.
 
 The [extended transfer](research/subexponential-piece-transfer.md) permits
 more than polynomially many crossing pieces. Piece entropy
@@ -124,8 +141,9 @@ degeneration constructions; no better-rate approximation is asserted.
 
 A [normalized modular construction](research/modular-crossing.md) supplies
 such a family for every fixed `1/sqrt(2)<rho<1`. It removes the vanishing
-factorial multiplier and permits rings with zero divisors. Its present
-width bound approaches the half exponent from below. It supplies no family
+factorial multiplier and permits rings with zero divisors. The endpoint
+estimates in the time-space notes give the exact half exponent with
+sublinear width slack. It supplies no family
 with `rho<1/sqrt(2)`. A local one-bit improvement also fails to tensor into
 a better asymptotic profile, as the note's exact rank argument shows.
 
@@ -156,7 +174,11 @@ corresponding locality and finite support bounds. On the three labels
 `9,8,20,12`. The maximum `20` improves the previous finite certificate's
 `27` on that domain. An independent polynomial matching formula and
 both original operator orders verify every entry. This finite gain
-does not establish a better asymptotic factoring exponent.
+does not establish a better asymptotic factoring exponent. Separate
+recombination work in [PR #24](https://github.com/1337isnot1337/integer-factoring/pull/24)
+has since produced a rank-product-nine certificate on three labels;
+the reflected construction here is a different family, not the current
+best finite certificate.
 
 Two [operator restrictions](research/half-recurrence-barrier.md) rule out
 direct shortcuts. The current operators permit only linear changes of the
