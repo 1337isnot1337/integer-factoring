@@ -113,6 +113,16 @@ many pieces still require `rho>=3/4`. The proof covers different fixed
 orientation masks in different pieces. Combining masks within a single
 piece can escape the support condition and remains a separate route.
 
+The [reflected monomial construction](research/fermionic-piece-polynomial.md)
+gives exact unit duals by complementing binary mode indices. Its dual
+operators may have larger weight than the labels; the note proves the
+corresponding locality and finite support bounds. On the three labels
+`(1,11),(3,9),(5,7)`, four nonzero pieces have rank products
+`9,8,20,12`. The maximum `20` improves the previous finite certificate's
+`27` on that domain. An independent polynomial matching formula and
+both original operator orders verify every entry. This finite gain
+does not establish a better asymptotic factoring exponent.
+
 Two [operator restrictions](research/half-recurrence-barrier.md) rule out
 direct shortcuts. The current operators permit only linear changes of the
 mode weights. Deleting higher modes breaks their identities, as exact
