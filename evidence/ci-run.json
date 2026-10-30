@@ -1,0 +1,24 @@
+{
+  "repository": "1337isnot1337/integer-factoring",
+  "commit": "c2848b79b048aa766c337f711bc000b2523efb9d",
+  "run_id": 40997276190,
+  "url": "https://github.com/1337isnot1337/integer-factoring/actions/runs/40997276190",
+  "conclusion": "failure",
+  "jobs": [
+    {
+      "name": "exact-certificates",
+      "id": 123873210040,
+      "conclusion": "failure",
+      "runner_name": "",
+      "steps": []
+    },
+    {
+      "name": "lean-lemmas",
+      "id": 123873210301,
+      "conclusion": "failure",
+      "runner_name": "",
+      "steps": []
+    }
+  ],
+  "interpretation": "Neither job was assigned a runner or executed a test step. This run does not validate or invalidate the certificates. The precise runner failure reason was not available through the connected API; no cause is inferred. Local verification is recorded separately."
+}

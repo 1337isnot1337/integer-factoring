@@ -1,0 +1,11 @@
+'Factoring.Improvements.group_count_dominates_backwards_ratio' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Factoring.Improvements.level_divided_volume_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Factoring.Improvements.chainMax_le_explicit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Factoring.Improvements.zC_le_explicit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Factoring.Improvements.uniform_chain_explicit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Factoring.Improvements.Zu_le_explicit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Factoring.Improvements.explicit_value_requirements' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Factoring.Improvements.factoring_explicit_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Factoring.Improvements.factoring_explicit_exponential' depends on axioms: [propext, Classical.choice, Quot.sound]

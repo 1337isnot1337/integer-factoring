@@ -1,0 +1,37 @@
+{
+  "upstream_commit": "c91cc3f4947caca8977e81a5d14244f73b5ae2b1",
+  "command": "lake build Solution",
+  "lean_version": "4.35.0",
+  "result": "passed",
+  "jobs": 1947,
+  "axiom_reports": [
+    "info: FactoringAux/Copied/PlibCore.lean:1182:0: 'Factoring.Aux.Copied.PLib.Cmd.run_bnd' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "info: FactoringAux/Copied/PlibCore.lean:1183:0: 'Factoring.Aux.Copied.PLib.run_relocA' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "info: FactoringAux/Copied/PlibCore.lean:1184:0: 'Factoring.Aux.Copied.PLib.cost_relocA' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "info: FactoringAux/Copied/PlibCore.lean:1185:0: 'Factoring.Aux.Copied.PLib.comp_ok' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "info: FactoringAux/Copied/PlibTop.lean:960:0: 'Factoring.Aux.Copied.PLib.run_pro' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "info: FactoringAux/Copied/PlibTop.lean:961:0: 'Factoring.Aux.Copied.PLib.run_epiFn' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "info: FactoringAux/Copied/PlibTop.lean:962:0: 'Factoring.Aux.Copied.PLib.acceptedStrings_wrapDec' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "info: FactoringAux/Copied/PlibTop.lean:963:0: 'Factoring.Aux.Copied.PLib.runsInPolyTime_wrapDec' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "info: FactoringAux/Copied/PlibTop.lean:964:0: 'Factoring.Aux.Copied.PLib.outOf_wrapFn' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "info: FactoringAux/Copied/PlibTop.lean:965:0: 'Factoring.Aux.Copied.PLib.runsInPolyTime_wrapFn' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "info: FactoringAux/Copied/PlibLogic.lean:254:0: 'Factoring.Aux.Copied.PLib.Cmd.loop_inv' depends on axioms: [propext, Quot.sound]",
+    "info: FactoringAux/Copied/PlibLogic.lean:255:0: 'Factoring.Aux.Copied.PLib.Cmd.run_sc_frame' depends on axioms: [propext, Quot.sound]",
+    "info: FactoringAux/Copied/PlibLogic.lean:256:0: 'Factoring.Aux.Copied.PLib.Cmd.run_ar_frame' depends on axioms: [propext, Quot.sound]",
+    "info: FactoringAux/Copied/PlibLogic.lean:257:0: 'Factoring.Aux.Copied.PLib.acceptedStrings_anyOne' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "info: FactoringAux/Copied/PlibLogic.lean:258:0: 'Factoring.Aux.Copied.PLib.runsInPolyTime_anyOne' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "info: FactoringAux/Copied/PlibFn.lean:359:0: 'Factoring.Aux.Copied.PLib.polyFun_comp' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "info: FactoringAux/Copied/PlibFn.lean:360:0: 'Factoring.Aux.Copied.PLib.polyFun_append' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "info: FactoringAux/Copied/PlibFn.lean:361:0: 'Factoring.Aux.Copied.PLib.polyFun_id' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "info: FactoringAux/Copied/PlibFn.lean:362:0: 'Factoring.Aux.Copied.PLib.polyFun_const' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "info: FactoringAux/Copied/PlibMul.lean:662:0: 'Factoring.Aux.Copied.PLib.run_mulSeg' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "info: FactoringAux/Copied/PlibMul.lean:663:0: 'Factoring.Aux.Copied.PLib.run_divmodSeg' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "info: Solution.lean:30:0: 'Factoring.subexponentialRate' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "build_log_sha256": "69be4c78920fa91b3f4e23775c89ccb655747b62da412dfb8d4fc524e93068a9",
+  "source_comparison": {
+    "compared_against_detached_git_checkout": true,
+    "compared_text_files": 154,
+    "differences": "An additional final newline in each fetched text file; no other differences from the pinned Git tree."
+  }
+}

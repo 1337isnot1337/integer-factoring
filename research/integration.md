@@ -437,6 +437,9 @@ appears only in the analysis. The reference implementation and finite
 boundary checks are `tools/exact_widths.py` and `tests/test_exact_widths.py`.
 They do not implement the counting engine or prove its machine-level cost.
 
+The rational envelope in (5) avoids these extra powers and may be simpler
+to formalize; it is not required for effective computation of the sharper rate.
+
 ## 6. What is still missing
 
 The mathematics above fixes the algorithms behind the asymptotic
@@ -470,5 +473,6 @@ integration obligations are completed.
 - [Upstream grid/value identities](https://github.com/IsaacRudich/SubexponentialDeterministicFactoring/blob/c91cc3f4947caca8977e81a5d14244f73b5ae2b1/FactoringAux/Level.lean).
 - [Upstream piece construction](https://github.com/IsaacRudich/SubexponentialDeterministicFactoring/blob/c91cc3f4947caca8977e81a5d14244f73b5ae2b1/FactoringAux/Pieces.lean).
 - [Upstream cost requirements](https://github.com/IsaacRudich/SubexponentialDeterministicFactoring/blob/c91cc3f4947caca8977e81a5d14244f73b5ae2b1/FactoringAux/EngineCostReq.lean).
+- [Upstream coarsening expressions and internal-channel loops](https://github.com/IsaacRudich/SubexponentialDeterministicFactoring/blob/c91cc3f4947caca8977e81a5d14244f73b5ae2b1/FactoringAux/EngineCoarsenEx.lean).
 - [Upstream modular zero test](https://github.com/IsaacRudich/SubexponentialDeterministicFactoring/blob/c91cc3f4947caca8977e81a5d14244f73b5ae2b1/FactoringAux/Moduli.lean).
 - [Upstream recovery of the smallest prime factor](https://github.com/IsaacRudich/SubexponentialDeterministicFactoring/blob/c91cc3f4947caca8977e81a5d14244f73b5ae2b1/FactoringAux/Search.lean).
