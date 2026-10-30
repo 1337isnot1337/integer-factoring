@@ -22,12 +22,14 @@ Its published Lean theorem establishes one deterministic machine with time
 ## Research results
 
 The repository contains ordinary mathematical proofs, exact finite checks,
-and Lean-checked finite lemmas. It does **not** yet contain a Lean verification
+Lean-checked local improvements, and a checked quantitative bound for the
+unchanged reference machine. It does **not** yet contain a Lean verification
 of an improved factoring machine.
 
 | Result | Value | Evidence and scope |
 | --- | --- | --- |
 | Explicit analysis of the unchanged baseline | `alpha = log(12/11)/log(16) = 0.0313827205...` | Handwritten derivation from the pinned source's inequalities |
+| Explicit time bound for the reference machine | `C * 2^(C * (explicitZu(n) + 1))` | Lean-checked bound for one finite-alphabet factoring machine; logarithmic-power conversion remains handwritten |
 | Grouping with independent accuracy | `g = O(D^2 K^2 log K)` | Matching decomposition, Holder's inequality, and an explicit deterministic search |
 | Formally checked grouping improvement | `g > K^2 + 4D^2K^4`; original accuracy works at `g = 5K^6` | Lean kernel checked, including network value preservation |
 | Smaller crossing factorization | 56 integer channels instead of a trivial 64-channel factor | Explicit integer factors and exhaustive finite verification |
@@ -44,6 +46,11 @@ Larger `alpha` is better. These are asymptotic bounds with very large constants;
 the finite checkers are not practical factoring implementations or runtime
 benchmarks. The combined target remains much weaker than the upstream conjecture
 `alpha = 1/2`.
+
+The combined target uses exact integer widths: `ceil(log_2(7^i))` is
+`(7^i - 1).bit_length()`. A simpler rational width formula gives the slightly
+weaker target `alpha = log(312/281)/log(4) = 0.0754879493...`. Neither formula
+requires real-number approximation in the algorithm.
 
 ## Proofs and certificates
 
@@ -66,6 +73,10 @@ benchmarks. The combined target remains much weaker than the upstream conjecture
   span, with an exact small-instance search.
 - [GroupingThreshold.lean](formal/GroupingThreshold.lean) and
   [CrossingComplement.lean](formal/CrossingComplement.lean): checked finite lemmas.
+- [ExplicitChain.lean](formal/ExplicitChain.lean): a checked bound on every
+  chain exponent and a complete time bound for the unchanged reference machine.
+  This formal envelope retains the source's `23/24` contraction; the sharper
+  `11/12` analysis and the proposed modified machine are separate work.
   [Verification evidence](evidence/formal-verification.json) records source hashes
   and the allowed axiom list.
 
@@ -89,9 +100,15 @@ make verify-formal
 
 The script fetches the pinned public reference, rebuilds its `Solution`, and
 checks every new formal file. It rejects axiom reports containing anything
-outside `propext`, `Classical.choice`, and `Quot.sound`. GitHub Actions runs the
-same checks with a pinned Lean archive and checkout action. No leaderboard
+outside `propext`, `Classical.choice`, and `Quot.sound`. The GitHub Actions workflow
+specifies the same checks with a pinned Lean archive and checkout action. No leaderboard
 submission has been made.
+
+The [first remote CI run](evidence/ci-run.json) failed before either job received
+a runner; no test steps ran. The checked proof logs record local verification.
+The full reference `Solution` build passed locally, with 1,947 build jobs and
+only the allowed axioms in its final factoring theorem; see the
+[build record](evidence/upstream-build.json).
 
 ## Attribution
 

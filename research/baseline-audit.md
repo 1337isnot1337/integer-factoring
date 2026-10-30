@@ -3,10 +3,11 @@
 Date: 2026-10-29 (America/Chicago). Audited source commit:
 [`c91cc3f4947caca8977e81a5d14244f73b5ae2b1`](https://github.com/IsaacRudich/SubexponentialDeterministicFactoring/tree/c91cc3f4947caca8977e81a5d14244f73b5ae2b1).
 
-This note derives rates from the source's explicit inequalities. The additional
-derivations in this note have not been checked by Lean. They must not be described
-as a new Lean-verified factoring theorem. The baseline's build status also needs
-to be recorded separately from this source audit.
+This note derives rates from the source's explicit inequalities. The asymptotic
+rate derivations below have not been checked by Lean. Section 10 records a
+separate kernel-checked explicit envelope and its end-to-end machine bound for
+the unchanged program. That theorem does not yet formalize the logarithmic-power
+asymptotic conversion or a changed factoring algorithm.
 
 ## 1. What the source actually states
 
@@ -529,6 +530,82 @@ Therefore any universal sufficient node threshold for this interface must be
 at least of order `K^2`, even for simple unweighted graphs. The explicit
 Chernoff construction is within the additional accuracy and logarithmic
 factors of this necessary growth exponent.
+
+## 10. Kernel-checked explicit envelope for the unchanged program
+
+[`formal/ExplicitChain.lean`](../formal/ExplicitChain.lean) was checked locally
+with Lean 4.35.0 against the pinned upstream source on 2026-10-30. The complete
+file compiled with exit status zero. All nine printed key declarations,
+including the final factoring-machine theorem, depend only on `propext`,
+`Classical.choice`, and `Quot.sound`. No `sorryAx` or additional axioms occur.
+The complete pinned upstream `Solution` also built successfully.
+
+For the source's chain hypotheses, the checked theorem
+`chainMax_le_explicit` gives
+
+\[
+\operatorname{chainMax}(mb,48,d,L)
+\le W_0+G^4+7+(G^4+9)B+2B_0,
+\tag{30}
+\]
+
+where
+
+\[
+B=\lfloor\log_2(W+mb+2G+64)\rfloor+1,
+\qquad
+B_0=\lfloor\log_2(mb+48+64)\rfloor+1.
+\]
+
+The proof uses `Kb48_ge` to establish
+`14*24^(d+1) <= Kb(48,d)*23^(d+1)`. It then bounds every level's main
+volume cost by `W0` and the padding cost by `G^4`. This handles every level
+at once and requires no depth cutoff depending on a requested exponential
+rate. The theorem `uniform_chain_explicit` applies (30) at the actual runtime
+depth `ellOf n`.
+
+The file defines the explicit integer function
+
+\[
+E(n)=z_T(\ell,n)
+ +W_0+G^4+7+(G^4+9)B+2B_0
+ +z_P(\ell,n),\qquad \ell=\operatorname{ellOf}(n),
+\tag{31}
+\]
+
+using the source values `Wn`, `W0n`, `mbn`, and `Gs` at that depth. Its Lean
+name is `explicitZu`. The checked theorem `explicit_value_requirements`
+shows that `2^(16*E(n)+127)` satisfies every requirement of the source's
+uniform counting cost bound. The compiler's quadratic overhead and the
+simulator's cubic overhead are included in
+`factoring_explicit_exponential`:
+
+\[
+\exists M\;\exists C\in\mathbb N\;\forall n,\qquad
+T_M(n)\le C\,2^{C(E(n)+1)}.
+\tag{32}
+\]
+
+Here `M` factors all inputs with the source's binary encoding and finite
+stack alphabets. It comes from the unchanged uniform counting program,
+factor-recovery driver, compiler, and simulator. All exponent quantities in
+(31) are explicitly defined; the hidden maximum over recursive levels has
+been removed.
+
+The checked envelope uses the source's original bottom-volume budget
+
+\[
+W_0=
+\left\lfloor\frac{23^\ell N_{\rm tn}}{24^\ell}\right\rfloor
++1+2\ell G^4.
+\]
+
+Its contraction is therefore `23/24`. The sharper `11/12` contraction and
+the rate `log(12/11)/log(16)` derived earlier in this note remain handwritten
+analysis. Neither that sharper conversion nor the modified parameter
+schedule is asserted by (32). The checked theorem supplies a complete
+machine-level bridge for the explicit original-program envelope; a formal
+logarithmic-power bound is the next separate proof obligation.
 
 With the retained relation `K_(d+1)=G_d^2`, the limiting growth base is
 therefore at least `4` for a proof that treats all networks through this same
