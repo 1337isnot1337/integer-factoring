@@ -2,9 +2,10 @@
 
 ## Result and scope
 
-The limiting Appendix B channel profile has an exact exponent frontier at
-`1/2`. The theorem permits unequal splits chosen separately at each
-recursion node within the stated limiting model.
+The Appendix B channel-profile model has an exponent frontier at `1/2`.
+The result permits unequal splits chosen separately at each recursion node.
+Section 5 includes finite grid geometry through an exact arithmetic
+certificate and an analytic bound for all larger dimensions.
 
 The result is a minimax theorem about a specified analysis model. It is
 **not** a lower bound for factoring, matrix rank, or the existing evaluator.
@@ -230,7 +231,8 @@ termination and forbids parameter-one splits, which contain no rectangles.
 
 This is a barrier for proofs that replace the declared profile by its
 unit-circle limit and charge only these recursive choices.
-It does not cover arbitrary recursions through bounded grid dimensions.
+By itself, this argument does not cover bounded grid dimensions.
+Section 5 treats the finite affine-profile game separately.
 It also makes no claim that one nonzero factoring instance realizes
 all adversarial choices simultaneously.
 
@@ -322,7 +324,163 @@ B_j\ge\frac{A}{4\sqrt{x_0+3j}}.
 This closes the fixed-side-two loophole for this finite affine-profile
 game. It still supplies no runtime lower bound for the factoring machine.
 
-## 5. What can evade the barrier
+## 5. All finite rectangular dimensions
+
+This section closes the geometric gap for the affine-profile game in (2a).
+It still uses the limiting channel profile as `lambda` grows. It does
+not assert lower bounds for the pieces' actual matrix ranks.
+
+**Finite geometry theorem.** Let `p,d>=2` be integers. Set
+
+```math
+\delta=\frac23,\quad L=\ln(pd)-\delta,\quad
+x=\frac{p-1}{pd},\quad y=\frac{d-1}{pd},\quad
+q=\frac{(p-1)(d-1)}{pd}.
+```
+
+There are nonnegative `r,c` with `r^2+c^2<=1` such that
+
+```math
+x+qr\ge\sqrt{\frac{\ln p-\delta}{L}},\qquad
+y+qc\ge\sqrt{\frac{\ln d-\delta}{L}}.
+\tag{14}
+```
+
+All logarithms here are natural. The denominators are positive because
+`ln 2 > 2/3`.
+
+Put `a=sqrt((ln p-delta)/L)` and `b=sqrt((ln d-delta)/L)`.
+It suffices to prove
+
+```math
+(a-x)^2+(b-y)^2\le q^2.
+```
+
+Then `r=max(0,a-x)/q`, `c=max(0,b-y)/q` prove (14).
+Removing a negative coordinate decreases its squared contribution.
+If needed, increase coordinates until their squared norm equals one.
+Both inequalities persist, so a boundary profile also suffices.
+
+The identity
+
+```math
+1+x^2+y^2-q^2=2x+2y+\frac1{p^2d^2}
+```
+
+reduces the required inequality to
+
+```math
+\mathcal R(p,d)=
+\frac{2x\ln d}{1+\sqrt{(\ln p-\delta)/L}}
++\frac{2y\ln p}{1+\sqrt{(\ln d-\delta)/L}}
++\frac{L}{p^2d^2}
+\le\delta.
+\tag{15}
+```
+
+For completeness, `L(1-a)=ln d/(1+a)` gives the first term.
+The second follows in the same way.
+
+### The analytic bound outside a finite square
+
+By symmetry, assume `p>=d`. If `p>=64`, then `ln p>4` and
+
+```math
+\frac{\ln p-2/3}{L}
+\ge\frac{\ln p-2/3}{2\ln p-2/3}
+\ge\frac5{11}>\frac49.
+```
+
+Thus the first denominator in (15) exceeds `5/3`.
+The second is at least one. Also `x<=1/d`, `y<=1/p`, and `d>=2`.
+Consequently
+
+```math
+\mathcal R(p,d)
+\le\frac65\frac{\ln d}{d}
+   +2\frac{\ln p}{p}
+   +\frac{\ln p}{2p^2}
+<\frac9{20}+\frac5{32}+\frac5{8192}
+=\frac{24857}{40960}<\frac23.
+\tag{16}
+```
+
+The elementary function `ln t/t` is at most `1/e`.
+Both `ln t/t` and `ln t/t^2` decrease for `t>=64`.
+The estimates `8/3<e<11/4` imply `4<ln 64<5` and `1/e<3/8`.
+These estimates follow directly from the series for `e`.
+For the upper bound, sum through `1/4!` and bound the remaining tail
+by `(1/5!)/(1-1/6)`.
+
+### The finite certificate
+
+The remaining `62^2=3844` pairs have `2<=p,d<=63`.
+The checker proves (15) for each pair with rational interval arithmetic.
+It proves the stronger uniform margin
+
+```math
+\mathcal R(p,d)\le\frac23-\frac1{500}.
+\tag{17}
+```
+
+The following series supplies rigorous logarithm intervals:
+
+```math
+\ln\frac{1+z}{1-z}
+=2\sum_{j=0}^{19}\frac{z^{2j+1}}{2j+1}+R,
+\qquad
+0\le R\le\frac{2z^{41}}{41(1-z^2)}.
+```
+
+Write `n=2^m u`, with `1<=u<2`. Apply the series to
+`z=(u-1)/(u+1)` and to `z=1/3` for `ln 2`.
+All resulting bounds are rational. Lower bounds for square roots use
+integer square roots on a denominator `10^10`.
+
+The upper endpoint in every numerator and the lower endpoint in every
+denominator bound (15) from above. The certificate checks these directions
+explicitly. It also rejects `delta=33/50` at `p=d=4`, using a lower
+bound for (15). This negative control checks the comparison direction.
+Equations (16) and (17) prove the finite geometry theorem.
+
+### Consequence for arbitrary finite split trees
+
+Define
+
+```math
+f(K)=\frac1{32\sqrt{\ln K-2/3}}\qquad(K\ge2).
+```
+
+In the affine-profile game, every terminating algorithm with brute-force
+leaves has worst coefficient at least `f(K)`.
+The algorithm can choose any factorization `K=pd`, separately at each node.
+It can choose the cheaper row or column orientation after it sees the profile.
+
+**Proof.** At a leaf, the coefficient is at least `1/4`.
+The logarithm series gives `ln 2-2/3>=2/81`, so
+`f(K)^2<=81/2048<1/16`. Hence the claim holds at every leaf.
+
+For a split, induction gives child coefficients at least `f(p)` and `f(d)`.
+Use the profile from (14). The row cost is at least
+
+```math
+f(p)(x+qr)
+\ge\frac1{32\sqrt{\ln p-2/3}}
+       \sqrt{\frac{\ln p-2/3}{\ln(pd)-2/3}}
+=f(pd).
+```
+
+The column cost is at least the same quantity. Choosing an orientation
+therefore cannot lower the worst coefficient below `f(pd)`.
+The induction is independent of the factorization selected at this node.
+Smaller destination parameters only strengthen the bound because `f` decreases.
+
+Thus this model cannot yield an exponent greater than `1/2`, even with
+arbitrary finite aspect ratios. The theorem concerns its supplied width
+profile and recursive choices. A better algebraic factorization or a new
+evaluation operation remains outside the model.
+
+## 6. What can evade the barrier
 
 A stronger rate needs information absent from this model. Concrete
 possibilities include smaller factors for the same pieces, a narrower
@@ -330,18 +488,37 @@ joint profile, or a method that combines several terms before recursion.
 Another possibility is a third evaluation method whose cost is lower
 on the equalizing profiles.
 
-The theorem also identifies the useful quantity for a new construction.
-If its normalized width vectors lie in a smaller disk of radius `eta<1`,
-then (3) gains the factor `eta`. Repeated square steps then target
+A smaller disk of radius strictly below one cannot contain every profile
+of a polynomial-size exact crossing decomposition. Rank subadditivity
+forces some row width to approach `2lambda`, and some column width does
+the same. The [graded-space obstruction](graded-space-barrier.md) gives
+the precise rank budget.
+
+A possible new profile must therefore retain its extreme directions.
+For a proposed exponent `1/2<alpha<=1`, one sufficient condition for
+the leading rectangular recursion is
 
 ```math
-\alpha=\frac12+\log_2(1/\eta).
+r^{1/\alpha}+c^{1/\alpha}\le1.
+\tag{18}
 ```
 
-This last formula is conditional on a uniform construction with the
-required size and operation bounds. No such smaller disk is proved here.
+This region retains `(1,0)` and `(0,1)` while reducing its middle.
+For example, `alpha=2/3` asks for
+`r^(3/2)+c^(3/2)<=1`, with balanced value `r=c=2^(-2/3)`.
 
-## 6. Reproduction
+To verify the sufficient condition, set `a=ln p`, `b=ln d`.
+If both `r/a^alpha` and `c/b^alpha` exceed `1/(a+b)^alpha`,
+then raising both inequalities to `1/alpha` contradicts (18).
+Thus one orientation meets the proposed parent coefficient.
+The region in (18) is convex for this range of `alpha`, so averages
+of rectangle profiles also remain inside it.
+
+Condition (18) controls the leading recurrence only. A complete bound
+also requires uniform factors, term counts, integer sizes, and every
+construction cost. No new crossing family satisfying (18) is proved here.
+
+## 7. Reproduction
 
 Run the exact arithmetic checker:
 
@@ -350,8 +527,9 @@ python3 tools/check_rectangular_profile.py
 ```
 
 It verifies rational extremizers, the square-root potential, the tree
-identity, and the two-row recurrence. Its negative controls use
-exponents `3/4` and `1`.
+identity, the two-row recurrence, and all finite cases in (17).
+Its negative controls use exponents `3/4` and `1`, and the failed
+finite-geometry shift `33/50`.
 All comparisons use integers or rational numbers. The checker supports
 the ordinary proofs above and does not test an asymptotic factoring claim.
 

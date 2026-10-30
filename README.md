@@ -48,6 +48,11 @@ search beyond `1/2`. It includes restrictions on the operator interfaces,
 an exact counterexample to projecting away high modes, and finite matrix
 ranks. The results below further specify the mathematical frontier.
 
+The [network tradeoff](research/half-top-structure.md) rules out improving
+the explicit constructor through regrouping and separate wire compression
+alone. The [restricted-label counterexample](research/half-restricted-labels.md)
+shows why another proposed dimension reduction fails.
+
 The [general transfer theorem](research/pieces-to-factoring.md) proves that
 an effective crossing family with rational parameter `rho` gives factoring
 exponent `log2(1/rho)`. It includes a computable pad and the complete bit-cost
@@ -66,11 +71,17 @@ slower-growing spaces within the same energy range, even with new operators.
 The proof uses the full rank of the crossing matrix. It identifies which
 assumptions a replacement construction must change.
 
-The [rectangular-grid analysis](research/rectangular-grid-frontier.md)
-proves a sharp minimax identity for the limiting declared width profile.
-It explains why unequal splits do not improve the exponent in that model.
-The note identifies its finite-grid limitation explicitly.
-None of these restrictions is a lower bound on factoring or on tensor rank.
+The [rectangular-grid theorem](research/rectangular-grid-frontier.md)
+retains the geometry of every finite grid. It proves that unequal, adaptive
+splits cannot improve exponent `1/2` within the declared-profile recursion
+model. An analytic tail bound and 3,844 exact interval cases support it.
+
+The [highest-channel rank theorem](research/top-channel-rank.md) proves a
+sharp asymptotic rank for one factor on the full partition domain.
+An [independent finite checker](research/half-piece-rank.md) also checks
+the two operator orders, crossing sums, and small binary-label restrictions.
+The theorem does not settle the rank of the complete central piece.
+These results give no lower bound on factoring or on an evaluator's runtime.
 
 Run `make verify-frontier` for these exact checks. The strongest complete
 ordinary factoring argument here remains exponent `1/2`.
@@ -241,6 +252,12 @@ requires real-number approximation in the algorithm.
 - [Directions beyond the half rate](research/post-half-directions.md):
   scoped interface restrictions, [finite rank evidence](evidence/half-piece-ranks.json),
   and an [exact low-mode projection counterexample](evidence/half-projection-counterexample.json).
+- [Multiplication-network tradeoff](research/half-top-structure.md): a lower
+  bound for the present local-enumeration, separate-wire, and explicit-pad
+  construction, with its scope stated explicitly.
+- [Restricted-label counterexample](research/half-restricted-labels.md):
+  an exact [nonzero minor](evidence/half-restricted-labels.json) disproves the
+  literal low-mode product-span bound while preserving the crossing identity.
 - [Baseline audit](research/baseline-audit.md): exact depth recurrence,
   contraction, all-level cost bound, and machine-cost bridge.
 - [Verified k6 theorem](research/verified-k6.md): complete machine proof,

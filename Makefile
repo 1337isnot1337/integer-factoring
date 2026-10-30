@@ -9,16 +9,19 @@ verify: verify-frontier
 	python3 tools/check_half_rate.py
 	python3 tools/check_half_piece_ranks.py --no-numpy
 	python3 tools/check_half_projection.py
+	python3 tools/check_half_restricted_labels.py
 
 verify-post-half:
 	python3 tools/check_half_piece_ranks.py --full
 	python3 tools/check_half_projection.py
+	python3 tools/check_half_restricted_labels.py
 
 verify-frontier:
 	python3 tools/check_piece_transfer.py
 	python3 tools/check_boson_truncation.py
 	python3 tools/check_graded_space.py
 	python3 tools/check_rectangular_profile.py
+	python3 tools/check_partition_channels.py --max-weight 6
 
 verify-formal:
 	bash tools/check_formal.sh

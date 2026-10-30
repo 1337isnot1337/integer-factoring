@@ -357,7 +357,38 @@ Searching for a useful rank reduction remains a valid direction, but
 small full-rank cases cannot establish that the large cases are full
 rank or asymptotically attain the declared channel counts.
 
-## 7. Other published evaluator and remaining mathematical target
+## 7. Special structure of the factoring tables
+
+The [multiplication-network structure note](half-top-structure.md) proves
+a quantitative restriction for the completed constructor. If `H` is the
+number of free `faQ` bits in its largest group and `V=P^2 lambda` is the
+channel volume, then every grouping with separate original-wire channels
+satisfies `H+V/4>=n`. Literal local enumeration costs at least `2^H`, and
+the specific explicit pad used here costs at least `2^(V/r)`.
+The resulting complete construction costs
+`2^Omega(n/sqrt(log n))` for the fixed Appendix B schedule.
+
+The proof permits arbitrary adaptive grouping and separate rational
+factorizations of the original wires. It does not apply to joint boundary
+compression, a local solver that avoids Cartesian enumeration, or a
+smaller sufficient pad proved for special inputs. It is not a lower bound
+on factoring or on every use of the evaluator.
+
+## 8. Restricting the labels without changing the operators
+
+Keeping the original operators and encoding labels by partitions with
+parts at most `L` preserves the crossing identity. This differs from the
+projection tested in Section 3. However, the [restricted-label note](half-restricted-labels.md)
+gives an exact counterexample to the proposed intermediate-span bound
+`p_{<=L}(2h)`: at `h=L=2`, four input pairs have four independent images,
+while the proposed low-mode product space has dimension three. A
+four-by-four integer minor has determinant four.
+
+This refutes the literal dimension substitution. It does not exclude
+asymptotic compression, and independence of a factor block does not imply
+the same rank after multiplication by the other factor.
+
+## 9. Other published evaluator and remaining mathematical target
 
 The
 [OpenAI ETH manuscript](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/build/main_full_version.tex)

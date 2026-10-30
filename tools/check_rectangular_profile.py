@@ -8,6 +8,55 @@ No floating-point logarithms, square roots, or powers are used.
 from fractions import Fraction
 from functools import lru_cache
 import json
+from math import isqrt
+
+
+def log_interval(n: int) -> tuple[Fraction, Fraction]:
+    """Rational enclosure of natural log(n), using a positive atanh series."""
+    if n < 1:
+        raise ValueError("positive integer required")
+
+    def series(z: Fraction) -> tuple[Fraction, Fraction]:
+        assert 0 <= z <= Fraction(1, 3)
+        lower = 2 * sum((z ** (2 * j + 1) / (2 * j + 1)
+                         for j in range(20)), start=Fraction(0))
+        tail = 2 * z**41 / (41 * (1 - z*z))
+        return lower, lower + tail
+
+    power = n.bit_length() - 1
+    two_lower, two_upper = series(Fraction(1, 3))
+    z = Fraction(n - (1 << power), n + (1 << power))
+    lower, upper = series(z)
+    return power * two_lower + lower, power * two_upper + upper
+
+
+def sqrt_interval(value: Fraction) -> tuple[Fraction, Fraction]:
+    """Enclose a nonnegative rational square root using integers only."""
+    if value < 0:
+        raise ValueError("nonnegative rational required")
+    scale = 10**10
+    root = isqrt(value.numerator * scale * scale // value.denominator)
+    lower, upper = Fraction(root, scale), Fraction(root + 1, scale)
+    assert lower * lower <= value < upper * upper
+    return lower, upper
+
+
+def geometry_interval(p: int, d: int, delta: Fraction,
+                      logs: dict[int, tuple[Fraction, Fraction]]) -> tuple[Fraction, Fraction]:
+    """Enclose R(p,d) from equation (15) with the correct endpoint directions."""
+    pl, ph = logs[p]
+    dl, dh = logs[d]
+    low_l, high_l = pl + dl - delta, ph + dh - delta
+    assert min(pl, dl) > delta and low_l > 0
+    x, y = Fraction(p - 1, p * d), Fraction(d - 1, p * d)
+    row_lower = sqrt_interval((pl - delta) / high_l)[0]
+    row_upper = sqrt_interval((ph - delta) / low_l)[1]
+    col_lower = sqrt_interval((dl - delta) / high_l)[0]
+    col_upper = sqrt_interval((dh - delta) / low_l)[1]
+    lower = 2*x*dl/(1 + row_upper) + 2*y*pl/(1 + col_upper) + low_l/(p*p*d*d)
+    upper = 2*x*dh/(1 + row_lower) + 2*y*ph/(1 + col_lower) + high_l/(p*p*d*d)
+    assert lower <= upper
+    return lower, upper
 
 
 def combine_squared(a: Fraction, b: Fraction) -> Fraction:
@@ -115,6 +164,32 @@ def verify() -> dict:
         else:
             raise AssertionError("nonpositive coefficient accepted")
 
+    delta = Fraction(2, 3)
+    logs = {n: log_interval(n) for n in range(2, 64)}
+    geometry_cases = 0
+    worst_upper = Fraction(0)
+    worst_pair = None
+    for p in range(2, 64):
+        for d in range(2, 64):
+            lower, upper = geometry_interval(p, d, delta, logs)
+            assert upper <= delta - Fraction(1, 500)
+            x, y = Fraction(p - 1, p * d), Fraction(d - 1, p * d)
+            q = Fraction((p - 1) * (d - 1), p * d)
+            assert 1 + x*x + y*y - q*q == 2*x + 2*y + Fraction(1, p*p*d*d)
+            if upper > worst_upper:
+                worst_upper, worst_pair = upper, [p, d]
+            geometry_cases += 1
+    # Analytic tail for max(p,d)>=64. The transcendental facts are proved
+    # in the note; these comparisons are its exact rational arithmetic.
+    assert Fraction(11, 4)**4 < 64 < Fraction(8, 3)**5
+    assert Fraction(5, 11) > Fraction(4, 9)
+    tail = Fraction(9, 20) + Fraction(5, 32) + Fraction(5, 8192)
+    assert tail == Fraction(24857, 40960) < delta
+    assert logs[2][0] - delta >= Fraction(2, 81)
+    assert Fraction(81, 2048) < Fraction(1, 16)
+    failed_shift = Fraction(33, 50)
+    assert geometry_interval(4, 4, failed_shift, logs)[0] > failed_shift
+
     return {
         "scope": "declared channel-profile minimax model; no runtime or rank lower bound",
         "half_exponent_and_profile_cases": half_cases,
@@ -126,6 +201,11 @@ def verify() -> dict:
         "two_row_extremizer_and_recurrence_cases": thin_cases,
         "finite_two_row_profile_cases": finite_thin_cases,
         "finite_two_row_product_and_iteration_cases": 64,
+        "all_finite_geometry_certificate_cases": geometry_cases,
+        "finite_geometry_worst_upper_pair": worst_pair,
+        "finite_geometry_uniform_margin": "1/500",
+        "finite_geometry_tail_bound": "24857/40960 < 2/3",
+        "finite_geometry_failed_shift_control": "33/50 at p=d=4",
         "invalid_cost_negative_controls": 2,
         "arithmetic": "integer and Fraction only",
     }
