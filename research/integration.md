@@ -400,9 +400,15 @@ Combining (11)--(15), the abstract evaluator's cost is bounded by
 \tag{16}
 \]
 
-The real-width version of the rank bound would replace `rho_0` by
-`rho=(8+log_2 7)/12` and give exponent `0.07551046810477115`.
-The rational version above is easier to turn into exact integer code.
+There is also an exact integer-width version with the sharper constant:
+replace the two rational ceilings in (5) by
+`ceil(log_2(7^i))` and `ceil(log_2(7^(t-i)))`. For a positive integer `z`,
+`ceil(log_2 z)` is the bit length of `z-1`, so these widths require no
+real-number approximation. The integers `7^i` have `O(t)` bits and can be
+computed in polynomial bit complexity. All preceding estimates then hold
+with `rho=(8+log_2 7)/12`, giving exponent `0.07551046810477115`.
+The rational envelope (5) avoids these extra powers and may be simpler to
+formalize; it is not required for effective computation of the sharper rate.
 
 ## 6. What is still missing
 
@@ -437,5 +443,6 @@ are completed.
 - [Upstream grid/value identities](https://github.com/IsaacRudich/SubexponentialDeterministicFactoring/blob/c91cc3f4947caca8977e81a5d14244f73b5ae2b1/FactoringAux/Level.lean).
 - [Upstream piece construction](https://github.com/IsaacRudich/SubexponentialDeterministicFactoring/blob/c91cc3f4947caca8977e81a5d14244f73b5ae2b1/FactoringAux/Pieces.lean).
 - [Upstream cost requirements](https://github.com/IsaacRudich/SubexponentialDeterministicFactoring/blob/c91cc3f4947caca8977e81a5d14244f73b5ae2b1/FactoringAux/EngineCostReq.lean).
+- [Upstream coarsening expressions and internal-channel loops](https://github.com/IsaacRudich/SubexponentialDeterministicFactoring/blob/c91cc3f4947caca8977e81a5d14244f73b5ae2b1/FactoringAux/EngineCoarsenEx.lean).
 - [Upstream modular zero test](https://github.com/IsaacRudich/SubexponentialDeterministicFactoring/blob/c91cc3f4947caca8977e81a5d14244f73b5ae2b1/FactoringAux/Moduli.lean).
 - [Upstream recovery of the smallest prime factor](https://github.com/IsaacRudich/SubexponentialDeterministicFactoring/blob/c91cc3f4947caca8977e81a5d14244f73b5ae2b1/FactoringAux/Search.lean).
