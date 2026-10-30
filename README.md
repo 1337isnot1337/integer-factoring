@@ -17,9 +17,18 @@ deterministic machine with
 T(n)\le C\exp\!\left(\frac{Cn}{\sqrt{\log n}}\right).
 ```
 
+The [linear-space refinement](research/linear-space-half-rate.md) now
+computes the least prime factor, complete factorization, and exact
+divisor-prefix counts within this time bound using **`O(n)` working
+bits**. [Compressed local factors](research/near-linear-factor-space.md)
+use scalar field evaluations and gap-coded partitions. The evaluator
+works over a fixed sixteen-element ring and recovers one witness bit
+at a time. The proof charges all recursion, query, and control storage.
+Exact counts follow from factorization and streamed divisor enumeration.
+
 The [integral counting transfer](research/integral-counting-transfer.md)
-now gives **exact divisor-prefix counts in polynomial space** at this
-same time bound. Streamed integral Schur factors let the evaluator work
+gives a separate direct method for exact divisor-prefix counts in
+polynomial space at this time bound. Streamed integral Schur factors let the evaluator work
 directly modulo `2^(n+1)`. The residue is the exact count, so `n` prefix
 queries recover the least prime factor with polynomial recovery overhead.
 The proof includes every local query, ring operation, and recomputation.
