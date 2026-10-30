@@ -155,9 +155,11 @@ Every tested radical and half-radical tensor has exact common factor
 [Ward identity](noncommutative-crossing-radical-ward.md) proves the first
 factor for all sizes before the output projection is applied. Further
 nesting of the same global-pivot construction adds only a scalar factor,
-as proved in that note. The six-generator family in (3) remains a live
-source for common-parameter tensor powers: the finite coefficient-space
-exclusions above do not settle their asymptotic merged rank costs.
+as proved in that note. The finite exclusions here alone do not settle
+asymptotic merged rank costs. The later
+[common-character theorem](symplectic-seed-character-barrier.md) now
+excludes the full six-generator family in (3) at every tensor power,
+including extension fields and independent local parameter curves.
 
 ## 5. Reproduction and evidence
 

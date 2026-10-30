@@ -12,6 +12,11 @@ The obstruction concerns the stated coefficient expansions. It does not
 exclude arbitrary recombinations in the coefficient space of a tensor
 power, scalar-weighted rational parameter curves, or other label codes.
 
+The later [common-character theorem](symplectic-seed-character-barrier.md)
+settles the first two extensions for this seed: the entire six-generator
+span is excluded over every characteristic-two field at every tensor
+power. The algebra calculations here supply part of that stronger proof.
+
 ## 1. Normalization and matrix convention
 
 Use the seed and coefficient basis in
@@ -266,7 +271,8 @@ recombination can annihilate the scalar character blocks while leaving
 a nonzero radical operator. It also does not settle expansions with a
 nonconstant scalar prefactor, as in the homogeneous rational
 parametrization `u(x)⁴R(v(x)/u(x),s(x)/u(x)²)`. Those operations require
-separate two-cut rank analysis.
+separate two-cut rank analysis. That analysis is now supplied by the
+[all-power common-character theorem](symplectic-seed-character-barrier.md).
 
 ## 6. Reproduction
 

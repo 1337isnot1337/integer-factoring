@@ -39,6 +39,7 @@ verify-constructions:
 	python3 tools/check_noncommutative_crossing_ward_euler.py
 	python3 tools/check_pfaffian_charge_gauges.py
 	python3 tools/check_ward_charge_filtration.py
+	python3 tools/check_ward_dual_incidence.py
 	python3 tools/check_overlapping_symplectic_profiles.py
 	python3 tools/check_cubic_radical_output_maps.py
 	python3 tools/check_noncommutative_crossing_seed_algebra_audit.py

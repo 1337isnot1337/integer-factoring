@@ -27,10 +27,11 @@ minimum binary decomposition cost lies in the certified interval
 250528\leq S_{\min}\leq250530,
 \]
 
-whereas the required threshold for \(d=676\) is approximately 10049.61. The
-module decomposition remains useful for testing new coefficient extractions,
-extension fields, and common-parameter tensor powers without constructing the
-large ambient matrices.
+whereas the required threshold for \(d=676\) is approximately 10049.61.
+The later [common-character theorem](symplectic-seed-character-barrier.md)
+excludes the complete six-generator span at all powers over every
+characteristic-two field. The module decomposition remains useful for
+exact rank calculations without constructing the large ambient matrices.
 
 ## Seed conventions
 
@@ -252,7 +253,9 @@ pairs. The one-copy table is also checked against the independently computed
 
 These exclusions concern the binary coefficient span of the stated one-copy
 and two-copy \(z=0\) family. They do not exclude different codes, larger tensor
-powers, or extra directions involving \(D,F\).
+powers, or extra directions involving \(D,F\). Those latter two extensions
+are covered by the separate common-character theorem; different codes
+still require their own analysis.
 
 ## Reproduction
 

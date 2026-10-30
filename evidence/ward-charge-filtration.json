@@ -33,7 +33,7 @@
   ],
   "literal_code_controls": [
     {
-      "channel_free_cost_upper": 159,
+      "channel_free_cost_upper": 147,
       "differential_cost_upper": 110,
       "exact_jets": [
         [
@@ -107,7 +107,7 @@
       "pairs": 3
     },
     {
-      "channel_free_cost_upper": 2786,
+      "channel_free_cost_upper": 2471,
       "differential_cost_upper": 1696,
       "exact_jets": [
         [
@@ -165,7 +165,7 @@
       "pairs": 4
     },
     {
-      "channel_free_cost_upper": 957,
+      "channel_free_cost_upper": 913,
       "differential_cost_upper": 690,
       "exact_jets": [
         [
@@ -239,7 +239,7 @@
       "pairs": 6
     },
     {
-      "channel_free_cost_upper": 20410,
+      "channel_free_cost_upper": 20330,
       "exact_jets": [
         [
           0,
@@ -355,7 +355,7 @@
   "rank_one_bordered_determinant_checks": 800,
   "source_sha256": {
     "check_ward_charge_filtration.py": "9a1779ce79185c9d956b3ef03ecf1767cbfc162cefc96a3a43a2dd5019f587e3",
-    "ward_channel_free_bounds.py": "049a62806f9225734531cd6fb9f4d79d5d331b0b6f47102e56cc03732f1dc3eb",
+    "ward_channel_free_bounds.py": "059353e7d33b7415815221a2df5c8e32e43bdf502958b0733f9edb8a77590bef",
     "ward_differential_bounds.py": "4fadd47bd8a22f657a5f4def57e55ad27c1ee5c106c4bfaa3f07968246aa55fe",
     "ward_rectangular_bounds.py": "2e17f2f1f8f900b27b5a685218a2129205b5beab089c084978e838bdfaa35883"
   }

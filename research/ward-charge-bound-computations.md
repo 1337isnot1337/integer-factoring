@@ -66,11 +66,14 @@ python tools/ward_differential_bounds.py \
 
 ## Several forms without charge-channel multiplicities
 
-For `k` binary forms, the charge gauge moves the full charge dependence
-to a constant map on one side of each cut. An augmentation-ideal argument
-limits the allowed grade shifts. The resulting estimate uses at most
-`binom(k+3,3)` grade rectangles, with no factor for the number of charge
-values, selected creation operators, or physical sites.
+For `k` forms, the dual-incidence identity moves the complete Ward
+operator to one side of either cut. It works with arbitrary form weights
+in characteristic two. The resulting estimate uses at most
+`binom(k+2,2)` grade rectangles, with no factor for the number of charge
+values, selected creation operators, or physical sites. For binary forms,
+the independent charge-gauge proof shows that only the maximal permitted
+grade shift survives; each constant interface entry is one `k` by `k`
+minor.
 
 The recorded examples use `k` disjoint indicator forms, each on `b`
 physical pairs, with `P=b*k`. Their output maps preserve the admissible
@@ -79,10 +82,10 @@ vanishes, and the joint vanishing order is at least `2*k`.
 
 | `b` | `k` | `L` | Labels `d` | Previous generic coefficient-cost bound | New coefficient-cost bound |
 |---:|---:|---:|---:|---:|---:|
-| 4 | 2 | 8 | 678 | 7,254,199 | 5,677,978 |
-| 4 | 3 | 10 | 2,031 | 113,969,022 | 89,123,283 |
-| 8 | 2 | 12 | 3,623,919 | 76,519,828,278,838 | 41,252,472,750,278 |
-| 8 | 3 | 18 | 9,409,503,908 | 918,232,013,534,284,889,596 | 339,260,114,063,129,262,363 |
+| 4 | 2 | 8 | 678 | 7,254,199 | 5,230,575 |
+| 4 | 3 | 10 | 2,031 | 113,969,022 | 85,783,992 |
+| 8 | 2 | 12 | 3,623,919 | 76,519,828,278,838 | 28,948,403,307,646 |
+| 8 | 3 | 18 | 9,409,503,908 | 918,232,013,534,284,889,596 | 212,607,881,453,648,885,777 |
 
 Here “previous generic” means the earlier Ward bound without a
 disjoint-block-specific improvement to its channel count. All four new
@@ -124,6 +127,10 @@ output maps in small controls, and 1,096 typed Gram/minor identities.
 The [local gauge checker](../tools/check_pfaffian_charge_gauges.py) checks
 all 256 entries of each of the one-sided and two-sided polynomial
 identities, together with 1,201 augmentation pairing ranks.
+The [dual-incidence checker](../tools/check_ward_dual_incidence.py) adds
+512 first-order identities, 256 incidence/derivative identities, 2,560
+multisite product controls, 1,320 maximal-shift finite differences, and
+2,240 combined-minor identities.
 
 Run the inexpensive proof controls with:
 
@@ -131,12 +138,15 @@ Run the inexpensive proof controls with:
 python tools/check_noncommutative_crossing_ward_euler.py
 python tools/check_pfaffian_charge_gauges.py
 python tools/check_ward_charge_filtration.py
+python tools/check_ward_dual_incidence.py
 ```
 
 The corresponding records are
 [Euler evidence](../evidence/noncommutative-crossing-ward-euler.json),
 [gauge evidence](../evidence/pfaffian-charge-gauges.json), and
 [charge-filtration evidence](../evidence/ward-charge-filtration.json).
+The sharper descent is also checked in
+[dual-incidence evidence](../evidence/ward-dual-incidence.json).
 
 The remaining issue is the rank after imposing the actual label maps.
 The full-rectangle bounds retain directions that a particular code can

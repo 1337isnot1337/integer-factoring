@@ -2,12 +2,16 @@
 
 This note combines the determinant interface from
 [the Euler Ward refinement](noncommutative-crossing-ward-euler.md)
-with a constant Pfaffian charge gauge. The resulting rank bound has
-only \(\binom{k+3}{3}\) rectangular terms per cut. It has no factor
+with a constant Pfaffian charge gauge. The initial rank bound has
+only \(\binom{k+3}{3}\) rectangular terms per cut. Section 6 sharpens
+this to \(\binom{k+2}{2}\) terms by an exact descent through either
+state leg. Both bounds have no factor
 \(P^k\), no independent Clifford-channel count, and no dependence on
 the dimension of the quadratic-charge space.
 
-All forms are binary, and all scalar fields have characteristic two.
+The charge arguments use binary forms over characteristic-two fields.
+The direct descent in Section 6 permits arbitrary form weights in
+any characteristic-two field.
 The code is homogeneous of exterior grade \(L\), with
 \(I=Q_1\cdots Q_kW\) and \(\deg W=L-2k\). The output map may be any
 grade-\(L\) linear map. Syndrome-preserving outputs are needed only for
@@ -320,4 +324,134 @@ require that the code is preserved by a stable-module intertwiner.
 Their use with an explicit rectangular rank engine is a separate,
 checkable step. No score improvement follows until those resulting
 bounds meet the seed criterion.
+
+## 6. Exact descent through either state leg
+
+The smaller grade shifts in (12)--(13) vanish identically. There are
+two independent ways to prove this refinement. The first does not
+need binary weights or charge coordinates.
+
+### Direct dual-incidence identity
+
+Let \(c_i^U=a_i^U+b_{\bar i}^U\) be the same creation/annihilation
+Clifford operator, acting on the \(U\) leg. Its first-order identity is
+\[
+ c_i^U\mathscr M
+   =(U_i+p_iA_{\bar i}+Y_{\bar i}+V_i)\mathscr M.
+ \tag{17}
+\]
+Therefore the dual incidence operator
+\[
+ \widetilde{\mathcal L}_a
+   =\sum_i w_{ai}(A_ic_i^U+A_{\bar i}c_{\bar i}^U)
+\]
+satisfies
+\[
+ \boxed{\quad
+ \widetilde{\mathcal L}_a\mathscr M
+   =D_a\mathscr M=\mathcal L_a\mathscr M.
+ \quad}
+ \tag{18}
+\]
+Indeed, multiplying the two instances of (17) by the corresponding
+external variables cancels the two \(p_iA_iA_{\bar i}\) terms. The
+remaining insertion is precisely
+\(\partial_{p_i}+\partial_{q_i}+\partial_{r_i}\).
+
+Both incidence operators are parameter-independent and commute with
+all parameter derivatives. Induction thus gives, for every ordered
+list of form indices,
+\[
+ \mathcal L_{a_1}\cdots\mathcal L_{a_m}\mathscr M
+ =D_{a_1}\cdots D_{a_m}\mathscr M
+ =\widetilde{\mathcal L}_{a_1}\cdots
+    \widetilde{\mathcal L}_{a_m}\mathscr M.
+ \tag{19}
+\]
+This argument does not assume that the incidence operators commute
+as abstract operators. Their commutation with the derivatives is
+sufficient. The external creation operators \(\mathcal O_a\) commute
+with these transfers and stay on the external leg.
+
+Use the original incidence operators for the row cut and the dual
+operators for the column cut. Both act entirely on one side of their
+respective cut. In the \(j\)-th Ward term, exactly \(k-j\) incidence
+operators raise the external grade by one, while \(j\) full-pair
+insertions raise it by two. Put \(\ell=k-j\).
+
+**Exact descent theorem.** For arbitrary form weights in a
+characteristic-two field, homogeneous product-image inputs, and any
+grade-\(L\) output map,
+\[
+ \boxed{
+ \begin{aligned}
+ r(G[a,b])\le{}&
+ \sum_{j=0}^{\min(k,b-k)}
+ \sum_{\substack{-\ell\le t\le\ell\\t\equiv\ell\ (2)}}
+ r\!\left(M_P(L-k-j,L-2k-t;L,L)[a,b-k-j]\right),\\
+ c(G[a,b])\le{}&
+ \sum_{j=0}^{\min(k,b-k)}
+ \sum_{\substack{-\ell\le t\le\ell\\t\equiv\ell\ (2)}}
+ r\!\left(M_P(L-k-j,L-t;L,L-2k)[b-k-j,a]\right).
+ \end{aligned}}
+ \tag{20}
+\]
+The second line uses the same grade-preserving \(p\leftrightarrow q\)
+reshape as (13). Its preimage leg remains of grade \(L-2k\) on the
+opposite side. There is no channel multiplier. The total number of
+rectangles per cut is at most
+\(\sum_{j=0}^k(k-j+1)=\binom{k+2}{2}\).
+
+### Independent charge proof and explicit minors
+
+For binary weights, the gauge gives an independent explanation. Its
+diagonal entry is \(e\) exactly when the external occupation is
+single, and is \(1\) when it is empty or full. This statement is
+independent of the state occupation.
+
+Fix a gauge entry with positive-shift site set \(S\), of size \(s\).
+The product of its diagonal unit charges agrees with \(C_A\) outside
+\(S\). Consequently every matrix tested by its Ward filter is a sum
+of at most \(s\) rank-one charges from these sites. If \(s<\ell\),
+every principal minor of order \(\ell\) vanishes by rank. If
+\(s>\ell\), the augmentation argument already gives zero.
+Thus only \(s=\ell\) survives.
+
+For a surviving row subset \(J^c\), the finite difference is exactly
+\[
+ \sum_{\delta\in\mathbf F_2^{S}}
+ \det\!\left(
+ A_{J^c,S}\operatorname{diag}(\epsilon+\delta)
+ A_{J^c,S}^{\mathsf T}\right)
+ =\det(A_{J^c,S})^2
+ =\det(A_{J^c,S}).
+ \tag{21}
+\]
+The equality is independent of the affine parity vector
+\(\epsilon\). The last equality uses binary entries.
+
+Let \(T\) be the \(j\) full-pair insertion sites. The sites of \(T\)
+and \(S\) are disjoint, since a positive gauge shift followed by a
+full-pair insertion would exceed the local external grade two.
+Summing the creation coefficient \(\det A_{J,T}\) against (21) is
+the Laplace expansion
+\[
+ \sum_{|J|=j}\det(A_{J,T})\det(A_{J^c,S})
+     =\det(A_{[k],T\cup S}).
+ \tag{22}
+\]
+Thus each fixed entry of the combined constant interface is given by
+one \(k\times k\) minor. The prescribed source and target occupations
+determine the insertion and shift sites; no enumeration of charge
+values or subsets of form rows is needed to evaluate that entry.
+
+The independent
+[dual-incidence checker](../tools/check_ward_dual_incidence.py)
+verifies all 512 generic first-order identities, all 256 local
+dual-incidence derivative identities, 2,560 multisite product
+identities, the complete gauge support, 1,320 maximal-shift finite
+differences, and 2,240 combined-minor identities. The exact evidence is
+[ward-dual-incidence.json](../evidence/ward-dual-incidence.json).
+The literal code checks in the charge-filtration checker also use
+the strengthened bound (20).
 

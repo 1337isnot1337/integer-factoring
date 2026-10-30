@@ -18,16 +18,18 @@ def channel_free_score(pairs, length, forms, labels, total_gram_rank=None):
     column = {}
     largest = old['largest_explicit_block']
     for j in range(forms + 1):
-        for shift in range(forms - j + 1):
-            for state_shift in range(-shift, shift + 1, 2):
-                grades = (length - 2 * j - shift, length - state_shift,
-                          length, length - 2 * forms)
-                profile, size = rectangular_bounds(pairs, *grades)
-                largest = max(largest, size)
-                for (b, a), rank in profile.items():
-                    target = a, b + forms + j
-                    if sum(target) <= length:
-                        column[target] = column.get(target, 0) + rank
+        # The charge filter kills both lower and higher shifts: only
+        # shift = forms - j survives the determinant finite difference.
+        shift = forms - j
+        for state_shift in range(-shift, shift + 1, 2):
+            grades = (length - 2 * j - shift, length - state_shift,
+                      length, length - 2 * forms)
+            profile, size = rectangular_bounds(pairs, *grades)
+            largest = max(largest, size)
+            for (b, a), rank in profile.items():
+                target = a, b + forms + j
+                if sum(target) <= length:
+                    column[target] = column.get(target, 0) + rank
     order = forms if total_gram_rank is None else max(forms, 2 * forms - total_gram_rank)
     total, result = 0, []
     for (a, b), (row, old_column) in sorted(previous.items()):

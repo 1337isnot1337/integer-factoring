@@ -20,6 +20,11 @@ These are finite exclusions for shared-parameter powers of this curve.
 They do not exclude other codes, nonzero second-parameter curves, or
 different curves at different tensor factors.
 
+The later [common-character theorem](symplectic-seed-character-barrier.md)
+does exclude all of those parameter variations within the full six-generator
+24- and 26-label spaces, at every tensor power and over every characteristic-two
+field. Different codes remain outside that theorem.
+
 ## 1. Exact weighted blocks
 
 In one cut, write the certified constant decomposition as
