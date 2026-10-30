@@ -44,6 +44,7 @@ verify-constructions:
 	python3 tools/check_ward_rectangular_envelope.py
 	python3 tools/check_ward_stable_operators.py --output /tmp/integer-factoring-ward-stable-operators.json
 	python3 tools/check_ward_form_operator_transport.py --output /tmp/integer-factoring-ward-form-operator-transport.json
+	python3 tools/check_ward_disjoint_transport.py --output /tmp/integer-factoring-ward-disjoint-transport.json
 	python3 tools/check_ward_operator_types.py --output /tmp/integer-factoring-ward-operator-types-check.json
 	python3 tools/check_overlapping_symplectic_profiles.py
 	python3 tools/check_cubic_radical_output_maps.py
