@@ -1,4 +1,4 @@
-.PHONY: verify verify-docs verify-frontier verify-post-half verify-schur-fermion verify-schur-central verify-cancellation-modules verify-minimal-modules verify-cancellation-crossing verify-block-smith verify-linear-smith verify-cubic-full-images verify-formal verify-k6 verify-half-appendix help
+.PHONY: verify verify-docs verify-frontier verify-post-half verify-schur-fermion verify-schur-central verify-schur-gaussian verify-cancellation-modules verify-minimal-modules verify-cancellation-crossing verify-block-smith verify-linear-smith verify-cubic-full-images verify-formal verify-k6 verify-half-appendix help
 
 verify: verify-docs verify-frontier
 	python3 -m unittest discover -s tests -v
@@ -19,6 +19,9 @@ verify-schur-fermion:
 
 verify-schur-central:
 	python3 tools/check_schur_homogeneous_central.py
+
+verify-schur-gaussian:
+	python3 tools/check_schur_gaussian_reduction.py
 
 verify-cancellation-modules:
 	python3 tools/check_cancellation_module_automata.py
@@ -73,6 +76,7 @@ help:
 	  'make verify-docs          - check local Markdown file links' \
 	  'make verify-schur-fermion - exact full Schur entry and crossing queries' \
 	  'make verify-schur-central - hook identities and exact Schur central ranks' \
+	  'make verify-schur-gaussian - exact Schur digit reduction and Gaussian seed' \
 	  'make verify-cancellation-modules - exact finite module and word certificates' \
 	  'make verify-minimal-modules - exact boundary reduction and complete word rates' \
 	  'make verify-cancellation-crossing - strict module improvement on a complete crossing' \

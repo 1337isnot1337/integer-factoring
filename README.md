@@ -46,6 +46,7 @@ make verify-post-half     # Larger optional rank tests
 make verify-docs          # Local Markdown-link check
 make verify-schur-fermion # Complete Schur entry formulas and exact comparisons
 make verify-schur-central # Hook-residue identities and full Schur ranks through weight 8
+make verify-schur-gaussian # Exact digit reduction and fixed Gaussian crossing seed
 make verify-cancellation-modules # Exact module states and word-rate certificates
 make verify-minimal-modules # Exact boundary reduction and complete word-rate hierarchy
 make verify-cancellation-crossing # Strict certificate gain for a complete crossing
@@ -86,11 +87,17 @@ individual modes with determinants of order at most `3 sqrt(H)`, and full
 crossing coefficients with determinants of order at most `4 sqrt(h)`. It works
 directly in finite characteristic and removes factorial-precision conversion
 from these queries. Its ordinary proof and independent exact checks improve
-the available construction tools. [Hook-residue identities](research/schur-hook-residue-central.md)
+the available construction tools. For the homogeneous Schur family, [hook-residue identities](research/schur-hook-residue-central.md)
 give central rank at most `p(2h)-3` at every power-of-two weight. Full exact
 calculations attain this bound at weights 8 and 16, with ranks `228` and
 `8,346`. These central pieces exclude the corresponding raw finite seeds;
 no stronger factoring bound is claimed.
+
+The [complete inhomogeneous Schur kernel](research/schur-gaussian-digit-reduction.md)
+has an exact binary-digit reduction to a four-label Gaussian crossing.
+The proof retains its exterior maps and energy projection and gives an
+explicit finite coefficient decomposition. Fixed-occupation sectors of
+the seed are complete crossings in their own right.
 
 [Finite module automata](research/cancellation-module-smith-automata.md)
 retain cancellation between auxiliary paths. Their bounds improve monotonically
