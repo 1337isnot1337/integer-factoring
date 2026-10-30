@@ -18,9 +18,10 @@ implemented, formally checked, or still conditional. Finite tests and checked
 lemmas support only their stated scope. A merged pull request does not itself
 constitute independent proof review or establish a new bound.
 
-Run `make verify` and relevant focused checks. Use `make verify-formal` for
-the original local lemmas and reference envelope. Use `make verify-k6` for
-the k6 source patch or its complete rate proof. List any unrun checks.
+Run `make verify` and relevant focused checks. Use `make verify-formal` for the original local lemmas and reference envelope.
+Use `make verify-k6` for the k6 proof and `make verify-half-appendix` for
+the full `1/2` theorem. Use `make verify-docs` for documentation changes.
+List any unrun checks.
 Include reproduction commands, actual outcomes, remaining obligations, and
 contributor credit in the pull request.
 

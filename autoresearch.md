@@ -3,11 +3,10 @@
 The goal is to improve deterministic integer factoring bounds with precise,
 reproducible evidence. Start with the [README](README.md), the pinned upstream
 revision in [upstream.lock.json](upstream.lock.json), and the
-[half-rate composition](research/half-rate-factoring.md) and
-[verified k6 result](research/verified-k6.md). The complete written composition
-gives exponent `1/2`, using prior source theorems and new table/encoding/cost
-arguments. It is not Lean formalized or externally reviewed. The k6 variant
-retains its complete Lean theorem at exponent `1/30`; its sharper ordinary
+[research index](research/INDEX.md). The [half-rate theorem](formal-appendix/HalfTheorem.lean)
+proves the exponent `1/2` in Lean, including the finite-alphabet machine.
+The theorem composes pinned source results and is not externally reviewed. The k6 variant
+retains its separate Lean theorem at exponent `1/30`; its sharper ordinary
 analysis reaches `log(12/11)/log12`. The older combined rate in the
 [integration note](research/integration.md) remains a separate candidate.
 Its generalized evaluator remains open and is not needed by the `1/2` proof.
