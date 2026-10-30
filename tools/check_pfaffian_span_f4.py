@@ -110,6 +110,8 @@ def shortest_lower_bound(records, dimension, target, scale):
 
 
 def verify(basis_path, screen_path, samples):
+    if samples < 0:
+        raise ValueError("the independent sample count must be nonnegative")
     data = json.loads(basis_path.read_text())
     events = [json.loads(line) for line in screen_path.read_text().splitlines()]
     start, complete = events[0], events[-1]
@@ -132,7 +134,12 @@ def verify(basis_path, screen_path, samples):
         assert (record["code"] >> (2 * ((record["code"].bit_length() - 1) // 2))) == 1
     rng = random.Random(8675309)
     selected = set(records)
-    while len(selected) < len(records) + samples:
+    total = (4 ** dimension - 1) // 3
+    target_count = min(total, len(records) + samples)
+    if target_count == total:
+        for pivot in range(dimension):
+            selected.update((1 << (2 * pivot)) | tail for tail in range(4 ** pivot))
+    while len(selected) < target_count:
         code = rng.randrange(1, 4 ** dimension)
         pivot = (code.bit_length() - 1) // 2
         selected.add(scale_vector(code, INVERSE[(code >> (2 * pivot)) & 3], dimension))

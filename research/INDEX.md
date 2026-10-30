@@ -28,6 +28,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Pfaffian boundary sections](noncommutative-crossing-pfaffian-boundaries.md): all-size section and Gram formulas, the universal correction factor, and an all-field rank-cost certificate for four pairs.
 - [Sparse isotropic Pfaffian sections](noncommutative-crossing-pfaffian-isotropic.md): explicit endpoint cancellation at every size from six pairs, four-term lifts from seven pairs, exact active correction ranks, and a six-piece crossing curve.
 - [High-mode residue folding](residue-folded-channels.md): exact ambient dimensions, finite incoming and outgoing factors, both complete channel counts, and eventual energy periodicity.
+- [Complete folded Gram channels](folded-gram-channels.md): all-angle cancellation inside one Gram form and a constructive polynomial-time exact Johnson-rank algorithm.
+- [Weighted Gram aggregation](folded-gram-aggregation.md): exact energy-preserving multiplicities, Gaussian-binomial evaluation, and 542 complete finite energy-bound calculations.
 - [Homogeneous modular selection](homogeneous-central-selection.md): one operator weight at every label width, selected rectangular vacuum minors, and an effective uniform half-rate construction.
 - [Noncommutative group-word crossings](noncommutative-crossing-orbits.md): exact all-size construction, compressed constant cut, optimal rank-28 central shears on 64 labels, and complete-profile limitations.
 - [Coded central quotients](coded-central-crossings.md): binary-code group construction, exact constant-cut compression, matroid bounds, and an all-coefficient row filtration estimate.

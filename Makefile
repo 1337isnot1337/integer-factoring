@@ -51,6 +51,8 @@ verify-post-half:
 	python3 tools/check_half_restricted_labels.py
 	python3 tools/check_complement_shell_ranks.py
 	python3 tools/check_noncommutative_crossing_pbw.py
+	python3 tools/check_folded_gram_channels.py
+	python3 tools/check_folded_gram_aggregate.py
 
 verify-frontier:
 	python3 tools/check_piece_transfer.py
