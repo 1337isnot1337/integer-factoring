@@ -55,6 +55,8 @@ benchmarks. The combined target remains much weaker than the upstream conjecture
   formalization obligations.
 - [Finite grid step](research/grid-level-validation.md): actual row and column
   contractions, signed tables, composite moduli, and the required `8^t` multiplier.
+- [Coarsened grid check](research/coarsened-grid-validation.md): a finite
+  signed network-to-padded-clique check, including internal edges and grouping.
 - [Coefficient-basis obstruction](research/coefficient-basis.md): an exact minimax
   result ruling out further gains from linear recombinations in the same coefficient
   span, with an exact small-instance search.
