@@ -1,0 +1,1408 @@
+diff --git a/FactoringAux/EngineCostDeep.lean b/FactoringAux/EngineCostDeep.lean
+--- a/FactoringAux/EngineCostDeep.lean
++++ b/FactoringAux/EngineCostDeep.lean
+@@ -363,7 +363,7 @@
+           hvm := hvm, hγ := hγ, hΘ := hΘ, hγΘ := hγΘ, hlγ := hlγ, hBT := hBT, hl := hl, hγb := hγb, hΘb := hΘb }
+       have hTB' : TBdd V BT σ A vγ vΘ TE (P.G * P.G) := hTB.congr (hσ.mono hBT)
+       have hK0 : 0 < P.K := by have := H.hK; omega
+-      have hg : 0 < P.G := by show 0 < 3 * Kb K0 d ^ 8; have := H.hK; positivity
++      have hg : 0 < P.G := by show 0 < 5 * Kb K0 d ^ 6; have := H.hK; positivity
+       have hmV : m ≤ V := R.dec.mV
+       have GH0 := R.grid (cc := 0) (Nat.zero_le _) (LevelEx.gp P) rfl
+       obtain ⟨hGG, -, -, h64, -, hl2, hGV⟩ := GH0.facts hg
+diff --git a/FactoringAux/EngineCostRate.lean b/FactoringAux/EngineCostRate.lean
+--- a/FactoringAux/EngineCostRate.lean
++++ b/FactoringAux/EngineCostRate.lean
+@@ -132,8 +132,8 @@
+   set s := sOf n
+   have hK2 : 2 ≤ K := Kb_ge K0 hK ℓ
+   have hKg : K ≤ g := by
+-    show K ≤ 3 * K ^ 8
+-    have : K ≤ K ^ 8 := Nat.le_self_pow (by norm_num) K
++    show K ≤ 5 * K ^ 6
++    have : K ≤ K ^ 6 := Nat.le_self_pow (by norm_num) K
+     omega
+   have a1 := A2fw_le s
+   have a2 := Afw_le s
+@@ -183,10 +183,10 @@
+   have h1 : 1 ≤ Kb K0 d := by
+     induction d with
+     | zero => exact hK
+-    | succ d ih => show 1 ≤ (3 * Kb K0 d ^ 8) * (3 * Kb K0 d ^ 8); have := Nat.one_le_pow 8 _ ih; nlinarith
+-  show Kb K0 d ≤ (3 * Kb K0 d ^ 8) * (3 * Kb K0 d ^ 8)
+-  have : Kb K0 d ≤ Kb K0 d ^ 8 := Nat.le_self_pow (by norm_num) _
+-  have := Nat.one_le_pow 8 _ h1
++    | succ d ih => show 1 ≤ (5 * Kb K0 d ^ 6) * (5 * Kb K0 d ^ 6); have := Nat.one_le_pow 6 _ ih; nlinarith
++  show Kb K0 d ≤ (5 * Kb K0 d ^ 6) * (5 * Kb K0 d ^ 6)
++  have : Kb K0 d ≤ Kb K0 d ^ 6 := Nat.le_self_pow (by norm_num) _
++  have := Nat.one_le_pow 6 _ h1
+   nlinarith
+ 
+ theorem Kb_mono (K0 : ℕ) (hK : 1 ≤ K0) {d d' : ℕ} (h : d ≤ d') : Kb K0 d ≤ Kb K0 d' := by
+@@ -195,13 +195,22 @@
+   | step _ ih => exact le_trans ih (Kb_le_succ K0 hK _)
+ 
+ theorem Gs_mono (K0 : ℕ) (hK : 1 ≤ K0) {d d' : ℕ} (h : d ≤ d') : Gs K0 d ≤ Gs K0 d' := by
+-  unfold Gs; exact Nat.mul_le_mul_left _ (Nat.pow_le_pow_left (Kb_mono K0 hK h) 8)
+-
+-theorem K_le_G (K : ℕ) : K ≤ 3 * K ^ 8 := by
++  unfold Gs; exact Nat.mul_le_mul_left _ (Nat.pow_le_pow_left (Kb_mono K0 hK h) 6)
++
++theorem K_le_G (K : ℕ) : K ≤ 5 * K ^ 6 := by
+   rcases Nat.eq_zero_or_pos K with h | h
+   · simp [h]
+-  · have : K ≤ K ^ 8 := Nat.le_self_pow (by norm_num) K
+-    omega
++  · have : K ≤ K ^ 6 := Nat.le_self_pow (by norm_num) K
++    omega
++
++/-- The new grouping size fits the original conservative cost budgets. -/
++theorem Gs_le_eighth (K0 d : ℕ) (hK : 2 ≤ K0) : Gs K0 d ≤ 3 * Kb K0 d ^ 8 := by
++  have h2 : 4 ≤ Kb K0 d ^ 2 :=
++    le_trans (by norm_num : 4 ≤ 2 ^ 2) (Nat.pow_le_pow_left (Kb_ge K0 hK d) 2)
++  show 5 * Kb K0 d ^ 6 ≤ 3 * Kb K0 d ^ 8
++  calc 5 * Kb K0 d ^ 6 ≤ (3 * Kb K0 d ^ 2) * Kb K0 d ^ 6 :=
++      Nat.mul_le_mul_right _ (by omega)
++    _ = 3 * Kb K0 d ^ 8 := by ring
+ 
+ /-- **One level's decay**: `24 N' ≤ 23 N + 48 G⁴` when `K ≥ 48`. -/
+ theorem N_step (K G lam : ℕ) (hK : 48 ≤ K) (hGK : K ≤ G) :
+diff --git a/FactoringAux/EngineCostReq.lean b/FactoringAux/EngineCostReq.lean
+--- a/FactoringAux/EngineCostReq.lean
++++ b/FactoringAux/EngineCostReq.lean
+@@ -146,7 +146,7 @@
+ theorem deepReq_of {V m mb K0 Z : ℕ} (hm : 1 < m) (hmb : m ≤ mb) (hK : 2 ≤ K0) (hV : 2 ^ Z ≤ V) :
+     ∀ d L, DeepE Z mb K0 d L → DeepReq V m K0 d L
+   | 0, L, h => bruteReq_of hm hmb (by show 1 ≤ K0; omega) h hV
+-  | d + 1, L, h => ⟨levelReq_of hm hmb (by show 1 ≤ 3 * Kb K0 d ^ 8; have := Nat.pow_pos (n := 8) (show 0 < Kb K0 d by have := Kb_ge K0 hK d; omega); omega) h.1 hV,
++  | d + 1, L, h => ⟨levelReq_of hm hmb (by show 1 ≤ 5 * Kb K0 d ^ 6; have := Nat.pow_pos (n := 6) (show 0 < Kb K0 d by have := Kb_ge K0 hK d; omega); omega) h.1 hV,
+       deepReq_of hm hmb hK hV d _ h.2⟩
+ 
+ /-! ### The top -/
+@@ -170,7 +170,7 @@
+   set B := mb + 16 * n + K + g + mulNodes s + 64
+   have hB1 : 1 ≤ B := by omega
+   have hK2 : 2 ≤ K := Kb_ge K0 hK ℓ
+-  have hg : 1 ≤ g := by show 1 ≤ 3 * K ^ 8; have := Nat.pow_pos (n := 8) (show 0 < K by omega); omega
++  have hg : 1 ≤ g := by show 1 ≤ 5 * K ^ 6; have := Nat.pow_pos (n := 6) (show 0 < K by omega); omega
+   have h2 : ∀ a, a ≤ eTop K0 ℓ n mb → 2 ^ a ≤ V := fun a ha =>
+     le_trans (Nat.pow_le_pow_right (by norm_num) (le_trans ha hZ)) hV
+   have hPV : B ^ (g + 4) * 2 ^ (7 * pL s) ≤ V := by
+@@ -228,7 +228,7 @@
+   hM := by
+     refine le_trans ?_ (le_trans (Nat.pow_le_pow_right (by norm_num) hZ) hV)
+     have hg : 1 ≤ Gs K0 ℓ := by
+-      show 1 ≤ 3 * Kb K0 ℓ ^ 8; have := Nat.pow_pos (n := 8) (show 0 < Kb K0 ℓ by have := Kb_ge K0 hK ℓ; omega); omega
++      show 1 ≤ 5 * Kb K0 ℓ ^ 6; have := Nat.pow_pos (n := 6) (show 0 < Kb K0 ℓ by have := Kb_ge K0 hK ℓ; omega); omega
+     refine le_trans (le_two_pow_log (2 * Mof K0 ℓ n + 1 + 16 * n + Kb K0 ℓ + Gs K0 ℓ + mulNodes (sOf n) + 64)).le
+       (Nat.pow_le_pow_right (by norm_num) ?_) |>.trans' (by omega)
+     unfold eTop ePolyT
+diff --git a/FactoringAux/EngineCostTop.lean b/FactoringAux/EngineCostTop.lean
+--- a/FactoringAux/EngineCostTop.lean
++++ b/FactoringAux/EngineCostTop.lean
+@@ -286,7 +286,7 @@
+   have hm := R.hm
+   have hK2 : 2 ≤ K := Kb_ge K0 hK ℓ
+   have hK0 : 0 < K := by omega
+-  have hg : 0 < g := by show 0 < 3 * K ^ 8; positivity
++  have hg : 0 < g := by show 0 < 5 * K ^ 6; positivity
+   have hV := R.mul
+   have hL1 : L + 1 ≤ V := le_trans Nat.lt_two_pow_self (two_pow_le_of (Nat.le_mul_of_pos_right _ hK0) R.hLK)
+   have hLK1 : 2 ^ L ≤ V := two_pow_le_of (Nat.le_mul_of_pos_right _ hK0) R.hLK
+diff --git a/FactoringAux/EngineGroup.lean b/FactoringAux/EngineGroup.lean
+--- a/FactoringAux/EngineGroup.lean
++++ b/FactoringAux/EngineGroup.lean
+@@ -6,7 +6,7 @@
+   (Lemma 1); `okG_value`: a good grouping keeps the value.
+ * One level: `Umax`, `Lnext`, **`nextT`** (the smaller of the row and column networks, grouped by its first good
+   code, written out), **`value_nextT`**, **`sum_nextT`** (`∑_c value = mult · value`).
+-* The chain: `Kb` (group counts from the bottom, `Kb (d+1) = (3 Kb(d)^8)²`), **`deepVal`** (the nested sums),
++* The chain: `Kb` (group counts from the bottom, `Kb (d+1) = (5 Kb(d)^6)²`), **`deepVal`** (the nested sums),
+   **`deepVal_eq`**: `deepVal d L T = deepMult d L · T.value`.
+ 
+ Not an audit surface.
+@@ -14,7 +14,7 @@
+ module
+ 
+ public import FactoringAux.EngineGrid
+-public import FactoringAux.Lemma1
++public import FactoringAux.GroupingThreshold
+ 
+ @[expose] public section
+ 
+@@ -76,8 +76,8 @@
+ 
+ /-- **Lemma 1 by codes**: a good code exists. -/
+ theorem good_exists (N : Net R g) (P0 U0 : ℕ) (hfit : N.Fits P0) (htot : N.total ≤ U0) (hK : 2 ≤ K)
+-    (hg : g = 3 * K ^ 8) : ∃ x < K ^ g, okG N K ((K * U0 + g * P0) / K ^ 3) (by omega) x := by
+-  obtain ⟨χ, h1, h2, -⟩ := Net.lemma1 N P0 hfit hK hg
++    (hg : g = 5 * K ^ 6) : ∃ x < K ^ g, okG N K ((K * U0 + g * P0) / K ^ 3) (by omega) x := by
++  obtain ⟨χ, h1, h2, -⟩ := Factoring.Improvements.network_grouping_five_sixth N P0 hfit hK hg
+   refine ⟨finFunctionFinEquiv χ, (finFunctionFinEquiv χ).2, ?_, ?_⟩
+   · intro γ; rw [chiOf_code]; exact h1 γ
+   · intro γ γ' hlt
+@@ -127,7 +127,7 @@
+   rw [Nat.le_div_iff_mul_le (by norm_num)]
+   linarith
+ 
+-theorem value_nextT {G lam : ℕ} (K : ℕ) (hK2 : 2 ≤ K) (hG : G = 3 * K ^ 8) (T : Clique (ZMod m) (G * G) lam)
++theorem value_nextT {G lam : ℕ} (K : ℕ) (hK2 : 2 ≤ K) (hG : G = 5 * K ^ 6) (T : Clique (ZMod m) (G * G) lam)
+     (c : Fin ((tB lam + 1) ^ (G * G * (G * G)))) :
+     (nextT K (by omega) T c).value = Zι (toGrid T) (restrictC ((phiEquiv G (tB lam)).symm c)) := by
+   set ι := restrictC ((phiEquiv G (tB lam)).symm c)
+@@ -145,7 +145,7 @@
+     rw [okG_value _ _ this.2, value_colNet]
+ 
+ /-- **One level**: summing the next cliques over all choice codes. -/
+-theorem sum_nextT {G lam : ℕ} (K : ℕ) (hK2 : 2 ≤ K) (hG : G = 3 * K ^ 8) (T : Clique (ZMod m) (G * G) lam) :
++theorem sum_nextT {G lam : ℕ} (K : ℕ) (hK2 : 2 ≤ K) (hG : G = 5 * K ^ 6) (T : Clique (ZMod m) (G * G) lam) :
+     ∑ c, (nextT K (by omega) T c).value = (mult G lam : ZMod m) * T.value := by
+   simp only [value_nextT K hK2 hG T]
+   rw [Fintype.sum_equiv (phiEquiv G (tB lam)).symm _ (fun φ => Zι (toGrid T) (restrictC φ)) (fun _ => rfl),
+@@ -154,20 +154,20 @@
+ 
+ /-! ### The chain -/
+ 
+-/-- Group counts from the bottom: `Kb 0 = K0`, `Kb (d+1) = G_d²` with `G_d = 3 Kb(d)^8`. -/
++/-- Group counts from the bottom: `Kb 0 = K0`, `Kb (d+1) = G_d²` with `G_d = 5 Kb(d)^6`. -/
+ def Kb (K0 : ℕ) : ℕ → ℕ
+   | 0 => K0
+-  | d + 1 => (3 * Kb K0 d ^ 8) * (3 * Kb K0 d ^ 8)
++  | d + 1 => (5 * Kb K0 d ^ 6) * (5 * Kb K0 d ^ 6)
+ 
+ /-- The grid side of the step from depth `d + 1` to depth `d`. -/
+-def Gs (K0 d : ℕ) : ℕ := 3 * Kb K0 d ^ 8
++def Gs (K0 d : ℕ) : ℕ := 5 * Kb K0 d ^ 6
+ 
+ theorem Kb_ge (K0 : ℕ) (hK : 2 ≤ K0) : ∀ d, 2 ≤ Kb K0 d
+   | 0 => hK
+   | d + 1 => by
+       have := Kb_ge K0 hK d
+-      show 2 ≤ (3 * Kb K0 d ^ 8) * (3 * Kb K0 d ^ 8)
+-      have : 1 ≤ Kb K0 d ^ 8 := Nat.one_le_pow _ _ (by omega)
++      show 2 ≤ (5 * Kb K0 d ^ 6) * (5 * Kb K0 d ^ 6)
++      have : 1 ≤ Kb K0 d ^ 6 := Nat.one_le_pow _ _ (by omega)
+       nlinarith
+ 
+ /-- The nested sums of the chain, from a clique at depth `d`. -/
+diff --git a/FactoringAux/EngineLevelEx.lean b/FactoringAux/EngineLevelEx.lean
+--- a/FactoringAux/EngineLevelEx.lean
++++ b/FactoringAux/EngineLevelEx.lean
+@@ -31,7 +31,7 @@
+   /-- The table's arguments. -/
+   vγ : ℕ
+   vΘ : ℕ
+-  /-- Groups and grid side (`G = 3K^8`). -/
++  /-- Groups and grid side (`G = 5K^6`). -/
+   K : ℕ
+   G : ℕ
+   /-- The table. -/
+@@ -71,7 +71,7 @@
+     (Tab : Clique (ZMod m) (P.G * P.G) lam) : Prop where
+   hm : 1 < m
+   hK : 2 ≤ P.K
+-  hG : P.G = 3 * P.K ^ 8
++  hG : P.G = 5 * P.K ^ 6
+   rep : TRep m BT σ₀ A P.vγ P.vΘ P.TE Tab
+   vm : σ₀ P.vm = m
+   vl : σ₀ P.vl = lam
+diff --git a/FactoringAux/EngineTop.lean b/FactoringAux/EngineTop.lean
+--- a/FactoringAux/EngineTop.lean
++++ b/FactoringAux/EngineTop.lean
+@@ -184,7 +184,7 @@
+   set x := numCells (A 1) k (n - k)
+   have hK2 : 2 ≤ K := Kb_ge K0 hK ℓ
+   have hK0 : 0 < K := by omega
+-  have hg : 0 < g := by show 0 < 3 * K ^ 8; positivity
++  have hg : 0 < g := by show 0 < 5 * K ^ 6; positivity
+   have hnL : n ≤ pL s * pL s := sOf_spec n
+   rw [topE, eval_lett, eval_sE, hn]
+   set σ1 := Function.update σ 11 s
+diff --git a/FactoringAux/GroupingThreshold.lean b/FactoringAux/GroupingThreshold.lean
+new file mode 100644
+--- /dev/null
++++ b/FactoringAux/GroupingThreshold.lean
+@@ -0,0 +1,265 @@
++/-
++SPDX-License-Identifier: Apache-2.0
++
++Adapted from FactoringAux/Grouping.lean and FactoringAux/Lemma1.lean in
++https://github.com/IsaacRudich/SubexponentialDeterministicFactoring
++at commit c91cc3f4947caca8977e81a5d14244f73b5ae2b1.
++Source authors: Isaac Rudich and Louis-Martin Rousseau; source proof and code
++generated with Claude, as described in the upstream README.
++
++The original moments argument proves more than its published hypothesis
++`g = 3 * K^8`: the final union bound needs only `K^2 + 4*K^6 < g`.
++More generally, an independent accuracy parameter D needs only
++`K^2 + 4*D^2*K^4 < g`. This file reuses the original moment lemmas, rescales
++the deviation by D, and adapts the union-bound threshold. No stronger
++probabilistic tail bound is assumed here.
++
++This proves a finite grouping lemma. It does not by itself change or prove
++a running-time bound for a factoring machine.
++-/
++module
++
++public import FactoringAux.Lemma1
++
++@[expose] public section
++
++namespace Factoring.Improvements
++
++open Finset Factoring.Aux
++
++variable {g K : ℕ}
++
++/-- A grouping with discrepancy controlled by the independent parameter D.
++All inequalities are integral and contain no division. -/
++def GoodAccuracy (c : Fin g → Fin g → ℕ) (P D : ℕ)
++    (χ : Fin g → Fin K) : Prop :=
++  (∀ γ, (K : ℤ) * grpSize χ γ ≤ 2 * g) ∧
++    ∀ γ γ', γ ≠ γ' → (D : ℤ) * (K : ℤ) ^ 2 * grpY c χ γ γ' ≤
++      D * totU c + g * P
++
++/-- Independent accuracy D costs `O(D^2 K^4)` vertices by the original
++second-moment estimates. No concentration inequality is assumed. -/
++theorem exists_good_accuracy_of_threshold (hK : 2 ≤ K) (c : Fin g → Fin g → ℕ) (hdiag : ∀ a, c a a = 0)
++    (hsym : ∀ a b, c a b = c b a) (P D : ℕ) (hrow : ∀ a, ∑ b, c a b ≤ P) (hg : K ^ 2 + 4 * D ^ 2 * K ^ 4 < g) :
++    ∃ χ : Fin g → Fin K, GoodAccuracy c P D χ := by
++  have hKsq : 4 ≤ K ^ 2 := by
++    calc 4 = 2 ^ 2 := by norm_num
++      _ ≤ K ^ 2 := Nat.pow_le_pow_left hK 2
++  have hg4 : 4 ≤ g := by omega
++  have hgpos : (0 : ℤ) < g := by exact_mod_cast (by omega : 0 < g)
++  have hKpos : (0 : ℤ) < K := by exact_mod_cast (by omega : 0 < K)
++  set B1 : Fin K → Finset (Fin g → Fin K) :=
++    fun γ => univ.filter (fun χ => 2 * (g : ℤ) < K * grpSize χ γ) with hB1def
++  set B2 : Fin K × Fin K → Finset (Fin g → Fin K) :=
++    fun q => univ.filter (fun χ => (D : ℤ) * totU c + g * P < (D : ℤ) * (K : ℤ) ^ 2 * grpY c χ q.1 q.2) with hB2def
++  -- the group-size bound
++  have hB1 : ∀ γ, ((B1 γ).card : ℤ) * g ≤ (K : ℤ) ^ (g + 1) := by
++    intro γ
++    have h1 := card_mul_le_sum_sq (fun χ => (K : ℤ) * grpSize χ γ - g) g (B1 γ) (fun χ hχ => by
++      have := (Finset.mem_filter.mp hχ).2
++      exact pow_le_pow_left₀ hgpos.le (by linarith) 2)
++    have h2 := sum_size_dev_sq (K := K) (by omega : 2 ≤ g) γ
++    have h3 : ((B1 γ).card : ℤ) * g * g ≤ (K : ℤ) ^ (g + 1) * g := by nlinarith
++    exact le_of_mul_le_mul_right h3 hgpos
++  -- the shared-bits bound
++  have hB2 : ∀ q : Fin K × Fin K, ((B2 q).card : ℤ) * g ≤ 4 * (D : ℤ) ^ 2 * (K : ℤ) ^ (g + 2) := by
++    intro q
++    have hU := totU_le c P hrow
++    have hU0 := totU_nonneg c
++    have hP0 : (0 : ℤ) ≤ P := by positivity
++    have h1 := card_mul_le_sum_sq (fun χ => (D : ℤ) * ((K : ℤ) ^ 2 * grpY c χ q.1 q.2 - totU c))
++      ((g : ℤ) * P + 1) (B2 q) (fun χ hχ => by
++        have := (Finset.mem_filter.mp hχ).2
++        have h' : (g : ℤ) * P + 1 ≤ (D : ℤ) * ((K : ℤ) ^ 2 * grpY c χ q.1 q.2 - totU c) := by
++          have : (D : ℤ) * ((K : ℤ) ^ 2 * grpY c χ q.1 q.2 - totU c) =
++              (D : ℤ) * (K : ℤ) ^ 2 * grpY c χ q.1 q.2 - D * totU c := by ring
++          rw [this]; linarith
++        exact pow_le_pow_left₀ (by positivity) h' 2)
++    have h2 := sum_dev_sq_le c hdiag hsym P hrow hg4 q.1 q.2
++    have h3 : ∑ χ : Fin g → Fin K, ((D : ℤ) * ((K : ℤ) ^ 2 * grpY c χ q.1 q.2 - totU c)) ^ 2 =
++        (D : ℤ) ^ 2 * ∑ χ : Fin g → Fin K, ((K : ℤ) ^ 2 * grpY c χ q.1 q.2 - totU c) ^ 2 := by
++      rw [Finset.mul_sum]; exact Finset.sum_congr rfl fun χ _ => by ring
++    have hK4 : (0 : ℤ) ≤ (D : ℤ) ^ 2 * (K : ℤ) ^ (g + 2) := by positivity
++    have h4 : ((B2 q).card : ℤ) * ((g : ℤ) * P + 1) ^ 2 ≤ (D : ℤ) ^ 2 * (K : ℤ) ^ (g + 2) * (4 * P * (g * P)) := by
++      rw [h3] at h1
++      calc _ ≤ _ := h1
++        _ ≤ (D : ℤ) ^ 2 * ((K : ℤ) ^ (g + 2) * (4 * P * totU c)) :=
++            mul_le_mul_of_nonneg_left h2 (by positivity)
++        _ = (D : ℤ) ^ 2 * (K : ℤ) ^ (g + 2) * (4 * P * totU c) := by ring
++        _ ≤ _ := mul_le_mul_of_nonneg_left (mul_le_mul_of_nonneg_left hU (by positivity)) hK4
++    have hc0 : (0 : ℤ) ≤ (B2 q).card := by positivity
++    have h5 : ((B2 q).card : ℤ) * g * ((g : ℤ) * P + 1) ^ 2 ≤ 4 * (D : ℤ) ^ 2 * (K : ℤ) ^ (g + 2) * ((g : ℤ) * P + 1) ^ 2 := by
++      have hgP : ((g : ℤ) * P) ^ 2 ≤ ((g : ℤ) * P + 1) ^ 2 := by nlinarith
++      calc ((B2 q).card : ℤ) * g * ((g : ℤ) * P + 1) ^ 2 = g * (((B2 q).card : ℤ) * ((g : ℤ) * P + 1) ^ 2) := by
++            ring
++        _ ≤ g * ((D : ℤ) ^ 2 * (K : ℤ) ^ (g + 2) * (4 * P * (g * P))) := mul_le_mul_of_nonneg_left h4 hgpos.le
++        _ = 4 * (D : ℤ) ^ 2 * (K : ℤ) ^ (g + 2) * ((g : ℤ) * P) ^ 2 := by ring
++        _ ≤ _ := mul_le_mul_of_nonneg_left hgP (by positivity)
++    exact le_of_mul_le_mul_right h5 (by positivity)
++  -- every grouping is bad, if none is good
++  by_contra hno
++  push Not at hno
++  have hcover : (univ : Finset (Fin g → Fin K)) ⊆ (univ.biUnion B1) ∪ (univ.biUnion B2) := by
++    intro χ _
++    have hχ := hno χ
++    unfold GoodAccuracy at hχ
++    simp only [not_and_or, not_forall, not_le, exists_prop] at hχ
++    rcases hχ with ⟨γ, hγ⟩ | ⟨γ, γ', _, hγ⟩
++    · exact Finset.mem_union_left _ (Finset.mem_biUnion.mpr ⟨γ, mem_univ _, by simp [hB1def, hγ]⟩)
++    · exact Finset.mem_union_right _ (Finset.mem_biUnion.mpr ⟨(γ, γ'), mem_univ _, by simp [hB2def, hγ]⟩)
++  have hcard : (K : ℤ) ^ g ≤ ∑ γ, ((B1 γ).card : ℤ) + ∑ q, ((B2 q).card : ℤ) := by
++    have := Finset.card_le_card hcover
++    have h2 := (Finset.card_union_le _ _).trans (add_le_add (Finset.card_biUnion_le (s := univ) (t := B1))
++      (Finset.card_biUnion_le (s := univ) (t := B2)))
++    rw [Finset.card_univ, Fintype.card_fun, Fintype.card_fin, Fintype.card_fin] at this
++    have := this.trans h2
++    exact_mod_cast this
++  have hsum : (g : ℤ) * (K : ℤ) ^ g ≤ (K : ℤ) * (K : ℤ) ^ (g + 1) + (K : ℤ) ^ 2 * (4 * (D : ℤ) ^ 2 * (K : ℤ) ^ (g + 2)) := by
++    calc (g : ℤ) * (K : ℤ) ^ g ≤ (g : ℤ) * (∑ γ, ((B1 γ).card : ℤ) + ∑ q, ((B2 q).card : ℤ)) :=
++          mul_le_mul_of_nonneg_left hcard hgpos.le
++      _ = ∑ γ, ((B1 γ).card : ℤ) * g + ∑ q, ((B2 q).card : ℤ) * g := by
++          rw [mul_add, Finset.mul_sum, Finset.mul_sum]
++          congr 1 <;> exact Finset.sum_congr rfl fun _ _ => mul_comm _ _
++      _ ≤ ∑ _γ : Fin K, (K : ℤ) ^ (g + 1) + ∑ _q : Fin K × Fin K, 4 * (D : ℤ) ^ 2 * (K : ℤ) ^ (g + 2) :=
++          add_le_add (Finset.sum_le_sum fun γ _ => hB1 γ) (Finset.sum_le_sum fun q _ => hB2 q)
++      _ = _ := by
++          rw [Finset.sum_const, Finset.sum_const, card_univ, card_univ, Fintype.card_prod, Fintype.card_fin,
++            nsmul_eq_mul, nsmul_eq_mul]
++          push_cast; ring
++  have hA : (0 : ℤ) < (K : ℤ) ^ g := by positivity
++  have e1 : (K : ℤ) * (K : ℤ) ^ (g + 1) = (K : ℤ) ^ 2 * (K : ℤ) ^ g := by ring
++  have e2 : (K : ℤ) ^ 2 * (4 * (D : ℤ) ^ 2 * (K : ℤ) ^ (g + 2)) = 4 * (D : ℤ) ^ 2 * (K : ℤ) ^ 4 * (K : ℤ) ^ g := by ring
++  rw [e1, e2] at hsum
++  have hsum' : (g : ℤ) * (K : ℤ) ^ g ≤
++      ((K : ℤ) ^ 2 + 4 * (D : ℤ) ^ 2 * (K : ℤ) ^ 4) * (K : ℤ) ^ g := by
++    linarith
++  have hbound := le_of_mul_le_mul_right hsum' hA
++  have hthreshold : (K : ℤ) ^ 2 + 4 * (D : ℤ) ^ 2 * (K : ℤ) ^ 4 < g := by exact_mod_cast hg
++  linarith
++
++/-- A simple explicit size for the independent-accuracy guarantee. -/
++theorem exists_good_accuracy_five_fourth (hK : 2 ≤ K)
++    (c : Fin g → Fin g → ℕ) (hdiag : ∀ a, c a a = 0)
++    (hsym : ∀ a b, c a b = c b a) (P D : ℕ) (hD : 1 ≤ D)
++    (hrow : ∀ a, ∑ b, c a b ≤ P) (hg : g = 5 * D ^ 2 * K ^ 4) :
++    ∃ χ : Fin g → Fin K, GoodAccuracy c P D χ := by
++  apply exists_good_accuracy_of_threshold hK c hdiag hsym P D hrow
++  have hK2 : 4 ≤ K ^ 2 :=
++    le_trans (by norm_num : 4 ≤ 2 ^ 2) (Nat.pow_le_pow_left hK 2)
++  have hK24 : K ^ 2 < K ^ 4 := by
++    calc K ^ 2 < K ^ 2 * 2 := by omega
++      _ ≤ K ^ 2 * K ^ 2 := Nat.mul_le_mul_left _ (by omega)
++      _ = K ^ 4 := by ring
++  have hD2 : 1 ≤ D ^ 2 := Nat.one_le_pow _ _ hD
++  have hsmall : K ^ 2 < D ^ 2 * K ^ 4 :=
++    lt_of_lt_of_le hK24 (Nat.le_mul_of_pos_left _ hD2)
++  rw [hg]
++  calc K ^ 2 + 4 * D ^ 2 * K ^ 4 < D ^ 2 * K ^ 4 + 4 * D ^ 2 * K ^ 4 :=
++      Nat.add_lt_add_right hsmall _
++    _ = 5 * D ^ 2 * K ^ 4 := by ring
++
++/-- The original grouping guarantee at the sharper threshold. -/
++theorem exists_good_of_threshold (hK : 2 ≤ K)
++    (c : Fin g → Fin g → ℕ) (hdiag : ∀ a, c a a = 0)
++    (hsym : ∀ a b, c a b = c b a) (P : ℕ)
++    (hrow : ∀ a, ∑ b, c a b ≤ P) (hg : K ^ 2 + 4 * K ^ 6 < g) :
++    ∃ χ : Fin g → Fin K, Good c P χ := by
++  have hsize : K ^ 2 + 4 * K ^ 2 * K ^ 4 < g := by
++    calc K ^ 2 + 4 * K ^ 2 * K ^ 4 = K ^ 2 + 4 * K ^ 6 := by ring
++      _ < g := hg
++  obtain ⟨χ, hχ⟩ := exists_good_accuracy_of_threshold hK c hdiag hsym P K hrow hsize
++  refine ⟨χ, hχ.1, fun γ γ' hne => ?_⟩
++  have h := hχ.2 γ γ' hne
++  have he : (K : ℤ) * (K : ℤ) ^ 2 = (K : ℤ) ^ 3 := by ring
++  simpa only [he] using h
++
++/-- A simple sixth-power replacement for the original eighth-power size. -/
++theorem exists_good_five_sixth (hK : 2 ≤ K)
++    (c : Fin g → Fin g → ℕ) (hdiag : ∀ a, c a a = 0)
++    (hsym : ∀ a b, c a b = c b a) (P : ℕ)
++    (hrow : ∀ a, ∑ b, c a b ≤ P) (hg : g = 5 * K ^ 6) :
++    ∃ χ : Fin g → Fin K, Good c P χ := by
++  apply exists_good_of_threshold hK c hdiag hsym P hrow
++  have hK4 : 2 ≤ K ^ 4 :=
++    le_trans (by norm_num : 2 ≤ 2 ^ 4) (Nat.pow_le_pow_left hK 4)
++  have hK2pos : 0 < K ^ 2 := by positivity
++  have hK2lt : K ^ 2 < K ^ 6 := by
++    calc K ^ 2 < K ^ 2 * 2 := by omega
++      _ ≤ K ^ 2 * K ^ 4 := Nat.mul_le_mul_left _ hK4
++      _ = K ^ 6 := by ring
++  rw [hg]
++  omega
++
++/-- The smallest integer node count admitted by this union-bound certificate. -/
++theorem exists_good_exact_threshold (hK : 2 ≤ K)
++    (c : Fin g → Fin g → ℕ) (hdiag : ∀ a, c a a = 0)
++    (hsym : ∀ a b, c a b = c b a) (P : ℕ)
++    (hrow : ∀ a, ∑ b, c a b ≤ P)
++    (hg : g = K ^ 2 + 4 * K ^ 6 + 1) :
++    ∃ χ : Fin g → Fin K, Good c P χ := by
++  apply exists_good_of_threshold hK c hdiag hsym P hrow
++  omega
++
++/-- Independent accuracy preserves the network coarsening interface, including
++the equality of network values. -/
++theorem network_grouping_accuracy_of_threshold {R : Type*} [CommRing R]
++    (N : Net R g) (P D : ℕ) (hfit : N.Fits P) (hK : 2 ≤ K)
++    (hg : K ^ 2 + 4 * D ^ 2 * K ^ 4 < g) :
++    ∃ χ : Fin g → Fin K,
++      (∀ γ, K * (univ.filter (χ · = γ)).card ≤ 2 * g) ∧
++      (∀ γ γ', γ ≠ γ' → D * K ^ 2 * (N.coarsen χ).c γ γ' ≤ D * N.total + g * P) ∧
++      ∀ L, (∀ γ γ', γ < γ' → (N.coarsen χ).c γ γ' ≤ L) →
++        ((N.coarsen χ).toClique L).value = N.value := by
++  obtain ⟨χ, h1, h2⟩ := exists_good_accuracy_of_threshold hK N.cc N.cc_self N.cc_symm P D hfit hg
++  refine ⟨χ, fun γ => ?_, fun γ γ' hne => ?_, fun L hL => Net.value_group N χ L hL⟩
++  · have := h1 γ
++    have hs : grpSize χ γ = ((univ.filter (χ · = γ)).card : ℤ) := by
++      simp [grpSize, Finset.sum_boole]
++    rw [hs] at this
++    exact_mod_cast this
++  · have := h2 γ γ' hne
++    rw [← Net.coarsen_c_eq N χ hne, Net.totU_cc] at this
++    exact_mod_cast this
++
++/-- The improved node threshold preserves the complete interface needed by
++network coarsening: group sizes, pair widths, and equality of values. -/
++theorem network_grouping_of_threshold {R : Type*} [CommRing R]
++    (N : Net R g) (P : ℕ) (hfit : N.Fits P) (hK : 2 ≤ K)
++    (hg : K ^ 2 + 4 * K ^ 6 < g) :
++    ∃ χ : Fin g → Fin K,
++      (∀ γ, K * (univ.filter (χ · = γ)).card ≤ 2 * g) ∧
++      (∀ γ γ', γ ≠ γ' → K ^ 3 * (N.coarsen χ).c γ γ' ≤ K * N.total + g * P) ∧
++      ∀ L, (∀ γ γ', γ < γ' → (N.coarsen χ).c γ γ' ≤ L) →
++        ((N.coarsen χ).toClique L).value = N.value := by
++  obtain ⟨χ, h1, h2⟩ := exists_good_of_threshold hK N.cc N.cc_self N.cc_symm P hfit hg
++  refine ⟨χ, fun γ => ?_, fun γ γ' hne => ?_, fun L hL => Net.value_group N χ L hL⟩
++  · have := h1 γ
++    have hs : grpSize χ γ = ((univ.filter (χ · = γ)).card : ℤ) := by
++      simp [grpSize, Finset.sum_boole]
++    rw [hs] at this
++    exact_mod_cast this
++  · have := h2 γ γ' hne
++    rw [← Net.coarsen_c_eq N χ hne, Net.totU_cc] at this
++    exact_mod_cast this
++
++/-- The sixth-power size supplies the complete original network interface. -/
++theorem network_grouping_five_sixth {R : Type*} [CommRing R]
++    (N : Net R g) (P : ℕ) (hfit : N.Fits P) (hK : 2 ≤ K)
++    (hg : g = 5 * K ^ 6) :
++    ∃ χ : Fin g → Fin K,
++      (∀ γ, K * (univ.filter (χ · = γ)).card ≤ 2 * g) ∧
++      (∀ γ γ', γ ≠ γ' → K ^ 3 * (N.coarsen χ).c γ γ' ≤ K * N.total + g * P) ∧
++      ∀ L, (∀ γ γ', γ < γ' → (N.coarsen χ).c γ γ' ≤ L) →
++        ((N.coarsen χ).toClique L).value = N.value := by
++  obtain ⟨χ, h1, h2⟩ := exists_good_five_sixth hK N.cc N.cc_self N.cc_symm P hfit hg
++  refine ⟨χ, fun γ => ?_, fun γ γ' hne => ?_, fun L hL => Net.value_group N χ L hL⟩
++  · have := h1 γ
++    have hs : grpSize χ γ = ((univ.filter (χ · = γ)).card : ℤ) := by
++      simp [grpSize, Finset.sum_boole]
++    rw [hs] at this
++    exact_mod_cast this
++  · have := h2 γ γ' hne
++    rw [← Net.coarsen_c_eq N χ hne, Net.totU_cc] at this
++    exact_mod_cast this
++
++end Factoring.Improvements
+diff --git a/FactoringAux/UniCostDm.lean b/FactoringAux/UniCostDm.lean
+--- a/FactoringAux/UniCostDm.lean
++++ b/FactoringAux/UniCostDm.lean
+@@ -19,13 +19,13 @@
+ 
+ namespace UCost
+ 
+-/-- `mult (3 K^8) λ` modulo `m` (`K` in `43`, `λ` in `40`, `m` in `10`). -/
++/-- `mult (5 K^6) λ` modulo `m` (`K` in `43`, `λ` in `40`, `m` in `10`). -/
+ theorem multVm_bdd {V K lam m : ℕ} {σ : ℕ → ℕ} {A : ℕ → ℕ → ℕ} (hK : σ 43 = K) (hl : σ 40 = lam)
+     (hm10 : σ 10 = m) (hm : 1 < m) (hmm : m * m ≤ V)
+-    (hG4 : (3 * K ^ 8) * (3 * K ^ 8) * ((3 * K ^ 8) * (3 * K ^ 8)) ≤ V)
+-    (hT : (3 * K ^ 8) * (3 * K ^ 8) * ((3 * K ^ 8) * (3 * K ^ 8)) * (lam + 1) ≤ V) (hl2 : lam + 2 ≤ V)
++    (hG4 : (5 * K ^ 6) * (5 * K ^ 6) * ((5 * K ^ 6) * (5 * K ^ 6)) ≤ V)
++    (hT : (5 * K ^ 6) * (5 * K ^ 6) * ((5 * K ^ 6) * (5 * K ^ 6)) * (lam + 1) ≤ V) (hl2 : lam + 2 ≤ V)
+     (h64 : 64 ≤ V) : Bdd V σ A (multVm 43 40 10) := by
+-  set G := 3 * K ^ 8
++  set G := 5 * K ^ 6
+   have hG4' : G ^ 4 ≤ V := by rw [show G ^ 4 = G * G * (G * G) by ring]; exact hG4
+   have hGG4 : G ≤ G ^ 4 := by
+     rcases Nat.eq_zero_or_pos G with h | h
+@@ -45,7 +45,7 @@
+   unfold multVm
+   refine B_lett (gE_bdd (by norm_num) hK hGV (by omega)) ?_
+   rw [eval_gE (by norm_num), hK]
+-  set σ1 := Function.update σ 910 (3 * K ^ 8)
++  set σ1 := Function.update σ 910 (5 * K ^ 6)
+   have e910 : σ1 910 = G := by simp [σ1, G]
+   have hG2 : G * G ≤ V := by
+     rcases Nat.eq_zero_or_pos G with h | h
+diff --git a/FactoringAux/UniCostExp.lean b/FactoringAux/UniCostExp.lean
+--- a/FactoringAux/UniCostExp.lean
++++ b/FactoringAux/UniCostExp.lean
+@@ -82,49 +82,49 @@
+   have h48 : 48 ≤ V := le_trans (Kb_le (Nat.zero_le _)) hK
+   refine ⟨hd, h48, fun j hj => ?_⟩
+   have hF : (fun j s => eval (Function.update (Function.update σ 900 j) 901 s) A
+-      (.mul (.lit 9) (powE 902 (.var 901) 16))) = fun _ s => 9 * s ^ 16 := by
++      (.mul (.lit 25) (powE 902 (.var 901) 12))) = fun _ s => 25 * s ^ 12 := by
+     funext j s
+     simp only [Ex.eval]
+-    rw [eval_powE 902 _ 16 (fun i => by simp [Ex.eval])]
++    rw [eval_powE 902 _ 12 (fun i => by simp [Ex.eval])]
+     simp [Ex.eval]
+   change Bdd V (Function.update (Function.update σ 900 j) 901 (iterF (fun j s => eval (Function.update
+-    (Function.update σ 900 j) 901 s) A (.mul (.lit 9) (powE 902 (.var 901) 16))) K0u j)) A _
++    (Function.update σ 900 j) 901 s) A (.mul (.lit 25) (powE 902 (.var 901) 12))) K0u j)) A _
+   rw [hF, iterF_Kb]
+   replace hj : j < σ vd := hj
+   set σ' := Function.update (Function.update σ 900 j) 901 (Kb K0u j)
+   have e1 : σ' 901 = Kb K0u j := by simp [σ']
+-  have hS : 9 * Kb K0u j ^ 16 ≤ V := by rw [← Kb_succ]; exact le_trans (Kb_le (by omega)) hK
+-  have hP : ∀ i ≤ 16, Kb K0u j ^ i ≤ V := fun i hi =>
++  have hS : 25 * Kb K0u j ^ 12 ≤ V := by rw [← Kb_succ]; exact le_trans (Kb_le (by omega)) hK
++  have hP : ∀ i ≤ 12, Kb K0u j ^ i ≤ V := fun i hi =>
+     le_trans (Nat.pow_le_pow_right (by have := Kb_pos j; omega) hi) (by omega)
+-  have ep : eval σ' A (powE 902 (.var 901) 16) = Kb K0u j ^ 16 := by
+-    rw [eval_powE 902 _ 16 (fun i => by simp [Ex.eval])]; simp [Ex.eval, e1]
++  have ep : eval σ' A (powE 902 (.var 901) 12) = Kb K0u j ^ 12 := by
++    rw [eval_powE 902 _ 12 (fun i => by simp [Ex.eval])]; simp [Ex.eval, e1]
+   refine B_mul (B_lit (by omega)) ?_ (by rw [ep]; simp only [Ex.eval]; exact hS)
+-  exact bdd_nprod_const (x := 902) (n := .lit 16) (b := .var 901) (c := Kb K0u j) (B_lit (by omega))
++  exact bdd_nprod_const (x := 902) (n := .lit 12) (b := .var 901) (c := Kb K0u j) (B_lit (by omega))
+     (fun i => show _ ≤ V by simp only [Function.update_of_ne (show (901 : ℕ) ≠ 902 by norm_num), e1]; simpa using hP 1 (by omega))
+     (fun i => by simp only [Ex.eval, Function.update_of_ne (show (901 : ℕ) ≠ 902 by norm_num), e1])
+     (fun i hi => hP i (by simpa [Ex.eval] using hi))
+ 
+-/-- `3 K^8` (`K` in `vK`). -/
+-theorem gE_bdd {V vK K : ℕ} {σ : ℕ → ℕ} {A : ℕ → ℕ → ℕ} (hv : vK ≠ 906) (hK : σ vK = K) (hG : 3 * K ^ 8 ≤ V)
++/-- `5 K^6` (`K` in `vK`). -/
++theorem gE_bdd {V vK K : ℕ} {σ : ℕ → ℕ} {A : ℕ → ℕ → ℕ} (hv : vK ≠ 906) (hK : σ vK = K) (hG : 5 * K ^ 6 ≤ V)
+     (h8 : 8 ≤ V) : Bdd V σ A (gE vK) := by
+-  have hP : ∀ i ≤ 8, K ^ i ≤ V := fun i hi => by
++  have hP : ∀ i ≤ 6, K ^ i ≤ V := fun i hi => by
+     rcases Nat.eq_zero_or_pos K with h0 | h0
+     · subst h0; rcases Nat.eq_zero_or_pos i with h | h
+       · subst h; simp; omega
+       · rw [zero_pow (by omega)]; omega
+     · exact le_trans (Nat.pow_le_pow_right h0 hi) (by omega)
+-  refine B_mul (B_lit (by omega)) (bdd_nprod_const (x := 906) (n := .lit 8) (b := .var vK) (c := K) (B_lit h8)
++  refine B_mul (B_lit (by omega)) (bdd_nprod_const (x := 906) (n := .lit 6) (b := .var vK) (c := K) (B_lit (by omega))
+     (fun i => show _ ≤ V by rw [Function.update_of_ne hv, hK]; simpa using hP 1 (by omega))
+     (fun i => by simp only [Ex.eval, Function.update_of_ne hv, hK])
+     (fun i hi => hP i (by simpa [Ex.eval] using hi))) ?_
+-  show 3 * eval σ A (powE 906 (.var vK) 8) ≤ V
+-  rw [eval_powE 906 _ 8 (fun i => by simp [Ex.eval, Function.update_of_ne hv])]
++  show 5 * eval σ A (powE 906 (.var vK) 6) ≤ V
++  rw [eval_powE 906 _ 6 (fun i => by simp [Ex.eval, Function.update_of_ne hv])]
+   simp only [Ex.eval, hK]; exact hG
+ 
+-/-- `(3 K^8)^4`. -/
++/-- `(5 K^6)^4`. -/
+ theorem g4E_bdd {V vK K : ℕ} {σ : ℕ → ℕ} {A : ℕ → ℕ → ℕ} (hv : vK ≠ 906) (hv' : vK ≠ 907) (hK : σ vK = K)
+-    (hG : (3 * K ^ 8) * (3 * K ^ 8) * ((3 * K ^ 8) * (3 * K ^ 8)) ≤ V) (h8 : 8 ≤ V) : Bdd V σ A (g4E vK) := by
+-  set G := 3 * K ^ 8
++    (hG : (5 * K ^ 6) * (5 * K ^ 6) * ((5 * K ^ 6) * (5 * K ^ 6)) ≤ V) (h8 : 8 ≤ V) : Bdd V σ A (g4E vK) := by
++  set G := 5 * K ^ 6
+   have hG4 : G ^ 4 ≤ V := by rw [show G ^ 4 = G * G * (G * G) by ring]; exact hG
+   have hP : ∀ i ≤ 4, G ^ i ≤ V := fun i hi => by
+     rcases Nat.eq_zero_or_pos G with h0 | h0
+@@ -139,10 +139,10 @@
+ 
+ /-- The number of choice codes `Nc` of a level. -/
+ theorem NcE_bdd {V K lam : ℕ} {σ : ℕ → ℕ} {A : ℕ → ℕ → ℕ} (hK : σ 43 = K) (hl : σ 40 = lam)
+-    (hG : (3 * K ^ 8) * (3 * K ^ 8) * ((3 * K ^ 8) * (3 * K ^ 8)) ≤ V)
+-    (hC : (tB lam + 1) ^ ((3 * K ^ 8) * (3 * K ^ 8) * ((3 * K ^ 8) * (3 * K ^ 8))) ≤ V) (hl2 : lam + 2 ≤ V)
++    (hG : (5 * K ^ 6) * (5 * K ^ 6) * ((5 * K ^ 6) * (5 * K ^ 6)) ≤ V)
++    (hC : (tB lam + 1) ^ ((5 * K ^ 6) * (5 * K ^ 6) * ((5 * K ^ 6) * (5 * K ^ 6))) ≤ V) (hl2 : lam + 2 ≤ V)
+     (h8 : 8 ≤ V) : Bdd V σ A (NcE 43 40) := by
+-  set G := 3 * K ^ 8
++  set G := 5 * K ^ 6
+   have eg : eval σ A (g4E 43) = G * G * (G * G) := by rw [eval_g4E (by norm_num) (by norm_num), hK]; ring
+   have hl' : ∀ i, Function.update σ 908 i 40 = lam := fun i => by rw [Function.update_of_ne (by norm_num), hl]
+   have ht : tB lam + 1 ≤ V := by unfold tB; have := Nat.div_le_self (lam + 2) 3; omega
+diff --git a/FactoringAux/UniCostLvl.lean b/FactoringAux/UniCostLvl.lean
+--- a/FactoringAux/UniCostLvl.lean
++++ b/FactoringAux/UniCostLvl.lean
+@@ -40,7 +40,7 @@
+   have RW : LevelReq W m (Kb K0u d) (Gs K0u d) L := LevelReq.mono hR hVW
+   set j := st.sc 306
+   set K := Kb K0u d
+-  set G := 3 * K ^ 8
++  set G := 5 * K ^ 6
+   set N := Nc K0u d L
+   set R := st.sc 305
+   set c := R % N
+@@ -50,7 +50,7 @@
+   have hK2 : 2 ≤ K := Kb_ge K0u (by norm_num) d
+   have h64 : 64 ≤ V := hR.dec.h64
+   have hmV : m ≤ V := hR.dec.mV
+-  have hG1 : 1 ≤ G := by show 1 ≤ 3 * K ^ 8; have := Nat.pow_pos (n := 8) (show 0 < K by omega); omega
++  have hG1 : 1 ≤ G := by show 1 ≤ 5 * K ^ 6; have := Nat.pow_pos (n := 6) (show 0 < K by omega); omega
+   have hG4 : G * G * (G * G) ≤ V := hR.hg4
+   have hGG : G * G ≤ V := le_trans (Nat.le_mul_of_pos_right _ (Nat.mul_pos (by omega) (by omega))) hG4
+   have hKV : K ≤ V := le_trans (Nat.le_mul_of_pos_right _ (show 0 < Gs K0u d from hG1)) hR.hKG
+diff --git a/FactoringAux/UniCostPath.lean b/FactoringAux/UniCostPath.lean
+--- a/FactoringAux/UniCostPath.lean
++++ b/FactoringAux/UniCostPath.lean
+@@ -21,7 +21,7 @@
+ theorem lvlV_mono {K K' : ℕ} (h : K ≤ K') : lvlV K ≤ lvlV K' := by
+   unfold lvlV
+   exact le_trans (Nat.pow_le_pow_left (by omega) _)
+-    (Nat.pow_le_pow_right (by omega) (by have := Nat.pow_le_pow_left h 8; omega))
++    (Nat.pow_le_pow_right (by omega) (by have := Nat.pow_le_pow_left h 6; omega))
+ 
+ /-- The invariant of the level loop (costs). -/
+ def CI (V m ℓ : ℕ) (j : ℕ) (s : St) : Prop :=
+diff --git a/FactoringAux/UniCostSetup.lean b/FactoringAux/UniCostSetup.lean
+--- a/FactoringAux/UniCostSetup.lean
++++ b/FactoringAux/UniCostSetup.lean
+@@ -74,11 +74,11 @@
+ 
+ /-! ### The multiplier of one level -/
+ 
+-/-- `mult (3 K^8) λ` (`K` in `43`, `λ` in `40`). -/
++/-- `mult (5 K^6) λ` (`K` in `43`, `λ` in `40`). -/
+ theorem multV_bdd {V K lam : ℕ} {σ : ℕ → ℕ} {A : ℕ → ℕ → ℕ} (hK : σ 43 = K) (hl : σ 40 = lam)
+-    (hG4 : (3 * K ^ 8) * (3 * K ^ 8) * ((3 * K ^ 8) * (3 * K ^ 8)) ≤ V) (hl2 : lam + 2 ≤ V) (h64 : 64 ≤ V)
+-    (hM : mult (3 * K ^ 8) lam ≤ V) : Bdd V σ A (multV 43 40) := by
+-  set G := 3 * K ^ 8
++    (hG4 : (5 * K ^ 6) * (5 * K ^ 6) * ((5 * K ^ 6) * (5 * K ^ 6)) ≤ V) (hl2 : lam + 2 ≤ V) (h64 : 64 ≤ V)
++    (hM : mult (5 * K ^ 6) lam ≤ V) : Bdd V σ A (multV 43 40) := by
++  set G := 5 * K ^ 6
+   have hG4' : G ^ 4 ≤ V := by rw [show G ^ 4 = G * G * (G * G) by ring]; exact hG4
+   have hGG4 : G ≤ G ^ 4 := by
+     rcases Nat.eq_zero_or_pos G with h | h
+@@ -97,7 +97,7 @@
+   unfold multV
+   refine B_lett (gE_bdd (by norm_num) hK hGV (by omega)) ?_
+   rw [eval_gE (by norm_num), hK]
+-  set σ1 := Function.update σ 910 (3 * K ^ 8)
++  set σ1 := Function.update σ 910 (5 * K ^ 6)
+   have e910 : σ1 910 = G := by simp [σ1, G]
+   have hG2 : G * G ≤ V := by
+     rcases Nat.eq_zero_or_pos G with h | h
+@@ -173,10 +173,10 @@
+   have hVW : V ≤ W := le_Wv
+   have RW := LevelReq.mono hR hVW
+   set K := Kb K0u d
+-  set G := 3 * K ^ 8
++  set G := 5 * K ^ 6
+   have hK2 : 2 ≤ K := Kb_ge K0u (by norm_num) d
+   have h64 : 64 ≤ V := hR.dec.h64
+-  have hG1 : 1 ≤ G := by show 1 ≤ 3 * K ^ 8; have := Nat.pow_pos (n := 8) (show 0 < K by omega); omega
++  have hG1 : 1 ≤ G := by show 1 ≤ 5 * K ^ 6; have := Nat.pow_pos (n := 6) (show 0 < K by omega); omega
+   have hG4 : G * G * (G * G) ≤ V := hR.hg4
+   have hKV : K ≤ V := le_trans (Nat.le_mul_of_pos_right _ (show 0 < Gs K0u d from hG1)) hR.hKG
+   have hN1 : 1 ≤ Nc K0u d lam := Nc_pos _ _ _
+diff --git a/FactoringAux/UniCostTop.lean b/FactoringAux/UniCostTop.lean
+--- a/FactoringAux/UniCostTop.lean
++++ b/FactoringAux/UniCostTop.lean
+@@ -39,7 +39,7 @@
+   have hm := R.hm
+   have hK2 : 2 ≤ K := Kb_ge K0u (by norm_num) ℓ
+   have hK0 : 0 < K := by omega
+-  have hg : 0 < g := by show 0 < 3 * K ^ 8; positivity
++  have hg : 0 < g := by show 0 < 5 * K ^ 6; positivity
+   have hV := R.mul
+   have hL1 : L + 1 ≤ V := le_trans Nat.lt_two_pow_self (two_pow_le_of (Nat.le_mul_of_pos_right _ hK0) R.hLK)
+   have htot : 10 * (pA s * pA s) * fw s ≤ V := by
+@@ -117,23 +117,23 @@
+   have hPB := PB_le_YB V
+   have hY3 : YB V ≤ YB V ^ 3 := Nat.le_self_pow (by norm_num) _
+   set K := Kb K0u ℓ
+-  set L := Ltop K (3 * K ^ 8) (sOf n)
++  set L := Ltop K (5 * K ^ 6) (sOf n)
+   have hK : 2 ≤ K := Kb_ge K0u (by norm_num) ℓ
+   have hK0 : 0 < K := by omega
+-  have hg : 0 < 3 * K ^ 8 := Nat.mul_pos (by norm_num) (Nat.pow_pos hK0)
++  have hg : 0 < 5 * K ^ 6 := Nat.mul_pos (by norm_num) (Nat.pow_pos hK0)
+   have hKV : K ≤ V := le_trans (Nat.le_mul_of_pos_right _ (show 0 < Gs K0u ℓ from hg)) R.hKG
+   have hLK : 2 ^ (L * K) ≤ V := R.hLK
+   have hLKV : L * K ≤ V := le_trans Nat.lt_two_pow_self.le hLK
+   set N := numCells (st.ar 0) 1 n
+   set x := numCells (st.ar 1) k (n - k)
+-  set CN := clusterNet (sOf n) (ZMod m) N k x (3 * K ^ 8) hg
+-  set xf := firstGood (okG CN K L (by omega)) (K ^ (3 * K ^ 8)) (K ^ (3 * K ^ 8))
+-  set Tt := (CN.coarsen (chiOf K (3 * K ^ 8) xf (by omega))).toClique L
++  set CN := clusterNet (sOf n) (ZMod m) N k x (5 * K ^ 6) hg
++  set xf := firstGood (okG CN K L (by omega)) (K ^ (5 * K ^ 6)) (K ^ (5 * K ^ 6))
++  set Tt := (CN.coarsen (chiOf K (5 * K ^ 6) xf (by omega))).toClique L
+   set CNn := clusterNet (sOf n) (ZMod m) (numCells (normA st.ar 0) 1 n) k (numCells (normA st.ar 1) k (n - k))
+-    (3 * K ^ 8) hg
+-  set xfn := firstGood (okG CNn K L (by omega)) (K ^ (3 * K ^ 8)) (K ^ (3 * K ^ 8))
+-  have hS := group_search_rdn (S := gsTop K (3 * K ^ 8)) (top_rd _) 13 14
+-  have hTb := group_tab_rdn (S := gsTop K (3 * K ^ 8)) (top_rd (3 * K ^ 8))
++    (5 * K ^ 6) hg
++  set xfn := firstGood (okG CNn K L (by omega)) (K ^ (5 * K ^ 6)) (K ^ (5 * K ^ 6))
++  have hS := group_search_rdn (S := gsTop K (5 * K ^ 6)) (top_rd _) 13 14
++  have hTb := group_tab_rdn (S := gsTop K (5 * K ^ 6)) (top_rd (5 * K ^ 6))
+   -- c1: 15 := xf
+   obtain ⟨v1, a1, k1⟩ := vw_cset UP_ok.vtsE (show 15 < 1000 by norm_num) st
+   set c1 := (Cmd.run (cset UP.tsE 15) st).1
+diff --git a/FactoringAux/UniDmSpec.lean b/FactoringAux/UniDmSpec.lean
+--- a/FactoringAux/UniDmSpec.lean
++++ b/FactoringAux/UniDmSpec.lean
+@@ -28,7 +28,7 @@
+     (hK : σ vK = Kb K0u d) (hl : σ vl = L) (hσm : σ vm = m) :
+     eval σ A (multVm vK vl vm) = mult (Gs K0u d) L % m := by
+   rw [multVm, eval_lett, eval_gE h1, hK]
+-  set G := 3 * Kb K0u d ^ 8
++  set G := 5 * Kb K0u d ^ 6
+   set σ1 := Function.update σ 910 G
+   rw [eval_lett]
+   have e2 : eval σ1 A (.div (.mul (.var 910) (.sub (.var 910) (.lit 1))) (.lit 2)) = G * (G - 1) / 2 := by
+diff --git a/FactoringAux/UniEngine.lean b/FactoringAux/UniEngine.lean
+--- a/FactoringAux/UniEngine.lean
++++ b/FactoringAux/UniEngine.lean
+@@ -49,7 +49,7 @@
+ /-- The table read by a level or by the brute force. -/
+ def rdT : Ex := rdTE 42 40 41 60 61 59
+ 
+-/-- `mult (3 K^8) λ` modulo `m` (`K` in `vK`, `λ` in `vl`, `m` in `vm`), every product reduced. -/
++/-- `mult (5 K^6) λ` modulo `m` (`K` in `vK`, `λ` in `vl`, `m` in `vm`), every product reduced. -/
+ def multVm (vK vl vm : ℕ) : Ex :=
+   .lett 910 (gE vK) (.lett 911 (.div (.mul (.var 910) (.sub (.var 910) (.lit 1))) (.lit 2))
+     (.lett 912 (.mul (.var 911) (.var 911))
+@@ -58,7 +58,7 @@
+         (.prod 913 (.mul (tBE vl) (.var 912)) (.var vm) (.mod (.lit 2) (.var vm)))) (.var vm))))
+ 
+ /-- The level data for group count `K`. -/
+-def lvP (K : ℕ) : LP := ⟨100, 10, 40, 60, 61, K, 3 * K ^ 8, rdT⟩
++def lvP (K : ℕ) : LP := ⟨100, 10, 40, 60, 61, K, 5 * K ^ 6, rdT⟩
+ 
+ /-- The brute force. -/
+ def bruteU : Ex := bruteE 100 10 40 60 61 K0u rdT
+diff --git a/FactoringAux/UniExp.lean b/FactoringAux/UniExp.lean
+--- a/FactoringAux/UniExp.lean
++++ b/FactoringAux/UniExp.lean
+@@ -90,11 +90,12 @@
+   have hl := (lt_Kb48 ℓ).le
+   have hS := S_le_n n
+   generalize Kb K0u ℓ = P at h2 h3 hP hl ⊢
+-  have h9 : (9 : ℕ) ^ 40 ≤ P ^ 60 := le_trans (by norm_num) (Nat.pow_le_pow_left hP 60)
+-  have hn : n ≤ P ^ 700 := calc n ≤ (9 * P ^ 16) ^ 40 := h3.le
+-      _ = 9 ^ 40 * P ^ 640 := by ring
+-      _ ≤ P ^ 60 * P ^ 640 := Nat.mul_le_mul_right _ h9
+-      _ = P ^ 700 := by ring
++  have h9 : (25 : ℕ) ^ 40 ≤ P ^ 60 := le_trans (by norm_num) (Nat.pow_le_pow_left hP 60)
++  have hn : n ≤ P ^ 700 := calc n ≤ (25 * P ^ 12) ^ 40 := h3.le
++      _ = 25 ^ 40 * P ^ 480 := by ring
++      _ ≤ P ^ 60 * P ^ 480 := Nat.mul_le_mul_right _ h9
++      _ = P ^ 540 := by ring
++      _ ≤ P ^ 700 := Nat.pow_le_pow_right (by omega) (by norm_num)
+   have hn1 : 1 ≤ n := le_trans (Nat.one_le_pow _ _ (by omega)) h2
+   refine ⟨hP, hl, hn1, hn, ?_⟩
+   calc (2 ^ sOf n) ^ 4 ≤ 8 * P ^ 700 := by omega
+@@ -111,7 +112,7 @@
+   have hcW : cWn K0u ℓ = 721 + 306 * Gs K0u ℓ + 2 * ℓ * Gm4 K0u ℓ := rfl
+   have hcm : cmbn K0u ℓ = 17 + 4 * ℓ * Gm4 K0u ℓ * cWn K0u ℓ := rfl
+   have hG4 : Gm4 K0u ℓ = Gs K0u ℓ * Gs K0u ℓ * (Gs K0u ℓ * Gs K0u ℓ) := rfl
+-  have hg : Gs K0u ℓ = 3 * Kb K0u ℓ ^ 8 := rfl
++  have hg : Gs K0u ℓ = 5 * Kb K0u ℓ ^ 6 := rfl
+   generalize (2 ^ sOf n) ^ 4 = S4 at hmb hW hmN hS
+   generalize mbn K0u ℓ n = mb at hmb ⊢
+   generalize Wn K0u ℓ n = W at hW ⊢
+@@ -125,8 +126,9 @@
+   have hP2 : 2304 ≤ P ^ 2 := by rw [pow_two]; exact Nat.mul_le_mul hP hP
+   have hg9 : g ≤ P ^ 9 := by
+     rw [hg]
+-    calc 3 * P ^ 8 ≤ P * P ^ 8 := Nat.mul_le_mul_right _ (by omega)
+-      _ = P ^ 9 := by ring
++    calc 5 * P ^ 6 ≤ P * P ^ 6 := Nat.mul_le_mul_right _ (by omega)
++      _ = P ^ 7 := by ring
++      _ ≤ P ^ 9 := hpw 7 9 (by norm_num)
+   have h36 : G4 ≤ P ^ 36 := by
+     rw [hG4]
+     calc g * g * (g * g) ≤ P ^ 9 * P ^ 9 * (P ^ 9 * P ^ 9) :=
+@@ -205,7 +207,7 @@
+     (1662 * (Gs K0u ℓ * (2 ^ sOf n) ^ 3) + ePolyT (Kb K0u ℓ) (Gs K0u ℓ) (sOf n) n mb) := by
+   have h := eTop_le K0u ℓ n mb (by norm_num)
+   have hK1 : 0 < Kb K0u ℓ := by have := Kb48_ge48 ℓ; omega
+-  have hg0 : 0 < Gs K0u ℓ := by show 0 < 3 * Kb K0u ℓ ^ 8; positivity
++  have hg0 : 0 < Gs K0u ℓ := by show 0 < 5 * Kb K0u ℓ ^ 6; positivity
+   have h3 : 78 * (2 ^ sOf n) ^ 3 ≤ 78 * (Gs K0u ℓ * (2 ^ sOf n) ^ 3) :=
+     Nat.mul_le_mul_left _ (Nat.le_mul_of_pos_left _ hg0)
+   set R := 1584 * (Gs K0u ℓ * (2 ^ sOf n) ^ 3) + 78 * (2 ^ sOf n) ^ 3 +
+@@ -241,8 +243,13 @@
+   have hS := S_le_n n
+   have hab := absorb_cube (3324 * k * Gs K0u ℓ) (2 ^ sOf n)
+   have hP1 : 1 ≤ Kb K0u ℓ ^ 32 := Nat.one_le_pow _ _ (by have := Kb48_ge48 ℓ; omega)
+-  have e1 : 3324 * k * Gs K0u ℓ * (4 * (3324 * k * Gs K0u ℓ)) ^ 3 = M * Kb K0u ℓ ^ 32 := by
+-    rw [hM]; show 3324 * k * (3 * Kb K0u ℓ ^ 8) * (4 * (3324 * k * (3 * Kb K0u ℓ ^ 8))) ^ 3 = _; ring
++  have e1 : 3324 * k * Gs K0u ℓ * (4 * (3324 * k * Gs K0u ℓ)) ^ 3 ≤ M * Kb K0u ℓ ^ 32 := by
++    have hA := Nat.mul_le_mul_left (3324 * k) (Gs_le_eighth K0u ℓ (by norm_num))
++    calc
++      3324 * k * Gs K0u ℓ * (4 * (3324 * k * Gs K0u ℓ)) ^ 3 ≤
++          3324 * k * (3 * Kb K0u ℓ ^ 8) * (4 * (3324 * k * (3 * Kb K0u ℓ ^ 8))) ^ 3 :=
++        Nat.mul_le_mul hA (Nat.pow_le_pow_left (Nat.mul_le_mul_left 4 hA) 3)
++      _ = M * Kb K0u ℓ ^ 32 := by rw [hM]; ring
+   have e2 : 2 * (k * (1662 * (Gs K0u ℓ * (2 ^ sOf n) ^ 3))) = 3324 * k * Gs K0u ℓ * (2 ^ sOf n) ^ 3 := by ring
+   have e3 : (1 + M) * Kb K0u ℓ ^ 32 = Kb K0u ℓ ^ 32 + M * Kb K0u ℓ ^ 32 := by ring
+   show k * (1662 * (Gs K0u ℓ * (2 ^ sOf n) ^ 3)) ≤ n
+@@ -254,7 +261,8 @@
+   obtain ⟨-, -, -, hA, -⟩ := good_logs h
+   unfold ePolyT
+   have hg : Gs K0u ℓ + 4 ≤ Kb K0u ℓ ^ 9 := by
+-    show 3 * Kb K0u ℓ ^ 8 + 4 ≤ _
++    show 5 * Kb K0u ℓ ^ 6 + 4 ≤ _
++    have h68 : Kb K0u ℓ ^ 6 ≤ Kb K0u ℓ ^ 8 := Nat.pow_le_pow_right (by omega) (by norm_num)
+     have h1 : 1 ≤ Kb K0u ℓ ^ 8 := Nat.one_le_pow _ _ (by omega)
+     have h2 : 48 * Kb K0u ℓ ^ 8 ≤ Kb K0u ℓ * Kb K0u ℓ ^ 8 := Nat.mul_le_mul_right _ hP
+     have e : Kb K0u ℓ * Kb K0u ℓ ^ 8 = Kb K0u ℓ ^ 9 := by ring
+@@ -274,8 +282,13 @@
+   have hab := absorb_cube (306 * Gs K0u ℓ) (2 ^ sOf n)
+   have hW : Wn K0u ℓ n = 720 * (2 ^ sOf n) ^ 4 + 306 * (Gs K0u ℓ * (2 ^ sOf n) ^ 3) + 2 * ℓ * Gm4 K0u ℓ := rfl
+   have e1 : 306 * (Gs K0u ℓ * (2 ^ sOf n) ^ 3) = 306 * Gs K0u ℓ * (2 ^ sOf n) ^ 3 := by ring
+-  have e2 : 306 * Gs K0u ℓ * (4 * (306 * Gs K0u ℓ)) ^ 3 = 45451759371264 * Kb K0u ℓ ^ 32 := by
+-    show 306 * (3 * Kb K0u ℓ ^ 8) * (4 * (306 * (3 * Kb K0u ℓ ^ 8))) ^ 3 = _; ring
++  have e2 : 306 * Gs K0u ℓ * (4 * (306 * Gs K0u ℓ)) ^ 3 ≤ 45451759371264 * Kb K0u ℓ ^ 32 := by
++    have hA := Nat.mul_le_mul_left 306 (Gs_le_eighth K0u ℓ (by norm_num))
++    calc
++      306 * Gs K0u ℓ * (4 * (306 * Gs K0u ℓ)) ^ 3 ≤
++          306 * (3 * Kb K0u ℓ ^ 8) * (4 * (306 * (3 * Kb K0u ℓ ^ 8))) ^ 3 :=
++        Nat.mul_le_mul hA (Nat.pow_le_pow_left (Nat.mul_le_mul_left 4 hA) 3)
++      _ = 45451759371264 * Kb K0u ℓ ^ 32 := by ring
+   have e3 : 2 * ℓ * Gm4 K0u ℓ = 2 * (ℓ * Gm4 K0u ℓ) := by ring
+   have p1 : Kb K0u ℓ ^ 32 ≤ Kb K0u ℓ ^ 37 := Nat.pow_le_pow_right (by omega) (by norm_num)
+   have p0 : 1 ≤ Kb K0u ℓ ^ 37 := Nat.one_le_pow _ _ (by omega)
+@@ -421,7 +434,7 @@
+ /-- The polynomial items: the paths, the modulus, `n + ℓ + 64`, `Kb^40`, the level's value bound `lvlV`. -/
+ def zP (ℓ n : ℕ) : ℕ := ℓ * Gm4 K0u ℓ * (Nat.log 2 (Wn K0u ℓ n + 1) + 1) + (Nat.log 2 (mbn K0u ℓ n) + 1) +
+   (Nat.log 2 (n + ℓ + 64) + 1) + 40 * (Nat.log 2 (Kb K0u ℓ) + 1) +
+-  (3 * Kb K0u ℓ ^ 8 + 50) * (Nat.log 2 (Kb K0u ℓ + 2) + 1)
++  (5 * Kb K0u ℓ ^ 6 + 50) * (Nat.log 2 (Kb K0u ℓ + 2) + 1)
+ 
+ theorem small_zP : USmall zP := by
+   refine small_poly 36000 38 (by norm_num) fun ℓ n h => ?_
+@@ -437,16 +450,17 @@
+   have t1 : ℓ * Gm4 K0u ℓ * (Nat.log 2 (Wn K0u ℓ n + 1) + 1) ≤ 801 * P ^ 38 :=
+     calc _ ≤ P ^ 37 * (801 * P) := Nat.mul_le_mul h37 a2
+       _ = 801 * P ^ 38 := by ring
+-  have t5 : (3 * P ^ 8 + 50) * (Nat.log 2 (P + 2) + 1) ≤ 801 * P ^ 38 := by
++  have t5 : (5 * P ^ 6 + 50) * (Nat.log 2 (P + 2) + 1) ≤ 801 * P ^ 38 := by
+     have h1 : 48 ≤ P ^ 8 := le_trans hP (by simpa using hpw 1 8 (by norm_num))
+     have h2 : 48 * P ^ 8 ≤ P * P ^ 8 := Nat.mul_le_mul_right _ hP
+-    have h3 : 3 * P ^ 8 + 50 ≤ P ^ 9 := by
++    have h68 : P ^ 6 ≤ P ^ 8 := hpw 6 8 (by norm_num)
++    have h3 : 5 * P ^ 6 + 50 ≤ P ^ 9 := by
+       have e : P * P ^ 8 = P ^ 9 := by ring
+       omega
+     calc _ ≤ P ^ 9 * (801 * P) := Nat.mul_le_mul h3 a7
+       _ = 801 * P ^ 10 := by ring
+       _ ≤ 801 * P ^ 38 := Nat.mul_le_mul_left _ (hpw _ _ (by norm_num))
+-  generalize (3 * P ^ 8 + 50) * (Nat.log 2 (P + 2) + 1) = T5 at t5 ⊢
++  generalize (5 * P ^ 6 + 50) * (Nat.log 2 (P + 2) + 1) = T5 at t5 ⊢
+   omega
+ 
+ /-- The top's exponents. -/
+diff --git a/FactoringAux/UniExpChain.lean b/FactoringAux/UniExpChain.lean
+--- a/FactoringAux/UniExpChain.lean
++++ b/FactoringAux/UniExpChain.lean
+@@ -27,7 +27,7 @@
+   | zero => show 48 * 1 ≤ 48; norm_num
+   | succ d ih =>
+       rw [Kb_succ]
+-      have h : Kb K0u d ≤ Kb K0u d ^ 16 := Nat.le_self_pow (by norm_num) _
++      have h : Kb K0u d ≤ Kb K0u d ^ 12 := Nat.le_self_pow (by norm_num) _
+       rw [pow_succ]
+       omega
+ 
+diff --git a/FactoringAux/UniInst.lean b/FactoringAux/UniInst.lean
+--- a/FactoringAux/UniInst.lean
++++ b/FactoringAux/UniInst.lean
+@@ -37,9 +37,9 @@
+   ttE := TopV.tab
+ 
+ /-- Level literal variables. -/
+-def lokU (K : ℕ) : ℕ → ℕ → Prop := lvlOk 20 K (3 * K ^ 8)
++def lokU (K : ℕ) : ℕ → ℕ → Prop := lvlOk 20 K (5 * K ^ 6)
+ /-- Top literal variables. -/
+-def tokU (K : ℕ) : ℕ → ℕ → Prop := topOk K (3 * K ^ 8)
++def tokU (K : ℕ) : ℕ → ℕ → Prop := topOk K (5 * K ^ 6)
+ 
+ theorem bge_rdT : Ex.BGe 32 rdT := by simp [Ex.BGe, rdT, rdTE, pow2]
+ 
+@@ -93,9 +93,9 @@
+     have := LevelV.nextTE_LS (P := lvP K) (p := 20) (TE' := rdT) (rdT_LS K) (by simp [lvP]) (by simp [lvP])
+       (by simp [lvP])
+     exact LS.eval_cost this h
+-  l0E K σ A h := LS.eval_cost (TopV.L0E_LS (K := K) (g := 3 * K ^ 8)) h
+-  tsE K σ A h := LS.eval_cost (TopV.searchE_LS (K := K) (g := 3 * K ^ 8)) h
+-  ttE K σ A h := LS.eval_cost (TopV.tab_LS (K := K) (g := 3 * K ^ 8)) h
++  l0E K σ A h := LS.eval_cost (TopV.L0E_LS (K := K) (g := 5 * K ^ 6)) h
++  tsE K σ A h := LS.eval_cost (TopV.searchE_LS (K := K) (g := 5 * K ^ 6)) h
++  ttE K σ A h := LS.eval_cost (TopV.tab_LS (K := K) (g := 5 * K ^ 6)) h
+   vlnE := LevelV.LnE_vb lvQ (by simp [lvQ]) (by simp [lvQ])
+   vsrE tr := LevelV.searchE_vb lvQ (VB_mono (by norm_num) _ vb_rdT990) (by simp [lvQ]) (by simp [lvQ])
+     (by simp [lvQ]) (by simp [lvQ]) (by simp [lvQ]) (by simp [lvQ]) tr (by norm_num) (by norm_num)
+diff --git a/FactoringAux/UniLevelSpec.lean b/FactoringAux/UniLevelSpec.lean
+--- a/FactoringAux/UniLevelSpec.lean
++++ b/FactoringAux/UniLevelSpec.lean
+@@ -34,13 +34,13 @@
+   nxE : ∀ K σ A, (∀ v k, lok K v k → σ v = k) →
+     eval σ A U.nxE = eval σ A (LevelEx.nextTE (lvP K)) ∧ cost σ A U.nxE = cost σ A (LevelEx.nextTE (lvP K))
+   l0E : ∀ K σ A, (∀ v k, tok K v k → σ v = k) →
+-    eval σ A U.l0E = eval σ A (L0E K (3 * K ^ 8)) ∧ cost σ A U.l0E = cost σ A (L0E K (3 * K ^ 8))
++    eval σ A U.l0E = eval σ A (L0E K (5 * K ^ 6)) ∧ cost σ A U.l0E = cost σ A (L0E K (5 * K ^ 6))
+   tsE : ∀ K σ A, (∀ v k, tok K v k → σ v = k) →
+-    eval σ A U.tsE = eval σ A (GroupEx.searchE (gsTop K (3 * K ^ 8)) 13 14) ∧
+-      cost σ A U.tsE = cost σ A (GroupEx.searchE (gsTop K (3 * K ^ 8)) 13 14)
++    eval σ A U.tsE = eval σ A (GroupEx.searchE (gsTop K (5 * K ^ 6)) 13 14) ∧
++      cost σ A U.tsE = cost σ A (GroupEx.searchE (gsTop K (5 * K ^ 6)) 13 14)
+   ttE : ∀ K σ A, (∀ v k, tok K v k → σ v = k) →
+-    eval σ A U.ttE = eval σ A (GroupEx.tab (gsTop K (3 * K ^ 8))) ∧
+-      cost σ A U.ttE = cost σ A (GroupEx.tab (gsTop K (3 * K ^ 8)))
++    eval σ A U.ttE = eval σ A (GroupEx.tab (gsTop K (5 * K ^ 6))) ∧
++      cost σ A U.ttE = cost σ A (GroupEx.tab (gsTop K (5 * K ^ 6)))
+   vlnE : VB 1000 U.lnE
+   vsrE : ∀ tr, VB 1000 (U.srE tr)
+   vnxE : VB 990 U.nxE
+@@ -133,7 +133,7 @@
+       ∀ y < 990, ¬ WL y → (Cmd.run (lvlBody U) st).1.sc y = st.sc y := by
+   set j := st.sc 306
+   set K := Kb K0u d
+-  set G := 3 * K ^ 8
++  set G := 5 * K ^ 6
+   set N := Nc K0u d L
+   set c := R % N
+   set L' := Lnext K G L
+diff --git a/FactoringAux/UniLevelV.lean b/FactoringAux/UniLevelV.lean
+--- a/FactoringAux/UniLevelV.lean
++++ b/FactoringAux/UniLevelV.lean
+@@ -56,7 +56,7 @@
+   obtain ⟨hi, h2⟩ := h2
+   rw [e, h _ hi, h2]
+ 
+-/-- The values of a level's literal variables (`G = 3 K^8` in the engine). -/
++/-- The values of a level's literal variables (`G = 5 K^6` in the engine). -/
+ def lvlVals (K G : ℕ) : List ℕ :=
+   [K, G, G * G, G * (G * G), 2 * G + 1, K ^ G, 12 * G ^ 3, 11 * G ^ 4, 24 * G ^ 4, G * G ^ 3, K ^ 3, G * G * (G * G)]
+ 
+diff --git a/FactoringAux/UniMain.lean b/FactoringAux/UniMain.lean
+--- a/FactoringAux/UniMain.lean
++++ b/FactoringAux/UniMain.lean
+@@ -1,5 +1,5 @@
+ /-
+-The assembly: the value bound `V = 2^(16 Z + 127)` (`Z` from `uni_exp`) meets every requirement of
++The assembly: the value bound `V = 2^(12 Z + 186)` (`Z` from `uni_exp`) meets every requirement of
+ `uniC_cost` (`UniReq`), and `subexp_of_poly` gives **`Aux.subexponentialRate`**.
+ 
+ Not an audit surface.
+@@ -18,25 +18,25 @@
+   top m h1 h2 := UCost.TopReq.mono (h.top m h1 h2) hVW
+   hM := le_trans h.hM hVW
+ 
+-theorem Kb_succ_pow (K0 ℓ : ℕ) : Kb K0 (ℓ + 1) ^ 40 = 9 ^ 40 * (Kb K0 ℓ ^ 40) ^ 16 := by
++theorem Kb_succ_pow (K0 ℓ : ℕ) : Kb K0 (ℓ + 1) ^ 40 = 25 ^ 40 * (Kb K0 ℓ ^ 40) ^ 12 := by
+   rw [Kb_succ]; ring
+ 
+-/-- **The requirements are met** by `V = 2^(16 Z + 127)`. -/
++/-- **The requirements are met** by `V = 2^(12 Z + 186)`. -/
+ theorem uniReq_exp : ∃ Z : ℕ → ℕ, (∀ n, UniReq (2 ^ Z n) n) ∧ ∀ k : ℕ, 1 ≤ k → ∃ C : ℕ, ∀ n, Z n ≤ n / k + C := by
+   obtain ⟨Z, hT, hD, hNP, hM, hS, hK, hL, hZ⟩ := uni_exp
+-  refine ⟨fun n => 16 * Z n + 127, fun n => ?_, fun k hk => ?_⟩
+-  · have hmono : 2 ^ Z n ≤ 2 ^ (16 * Z n + 127) := Nat.pow_le_pow_right (by norm_num) (by omega)
++  refine ⟨fun n => 12 * Z n + 186, fun n => ?_, fun k hk => ?_⟩
++  · have hmono : 2 ^ Z n ≤ 2 ^ (12 * Z n + 186) := Nat.pow_le_pow_right (by norm_num) (by omega)
+     have hmain : MainReq (2 ^ Z n) K0u (ellOf n) n :=
+       mainReq_of (by norm_num) (hT n) (hD n) le_rfl
+     refine ⟨hmain.mono hmono, le_trans (hNP n) hmono, le_trans (hL n) hmono, le_trans (hS n) hmono, ?_⟩
+     rw [Kb_succ_pow]
+-    calc 9 ^ 40 * (Kb K0u (ellOf n) ^ 40) ^ 16 ≤ 2 ^ 127 * (2 ^ Z n) ^ 16 :=
+-          Nat.mul_le_mul (by norm_num) (Nat.pow_le_pow_left (hK n) 16)
+-      _ = 2 ^ (16 * Z n + 127) := by rw [← pow_mul, ← pow_add]; ring_nf
+-  · obtain ⟨C, hC⟩ := hZ (16 * k) (by omega)
+-    refine ⟨16 * C + 127, fun n => ?_⟩
+-    show 16 * Z n + 127 ≤ n / k + (16 * C + 127)
+-    have := mul_div_mul_le 16 k n
++    calc 25 ^ 40 * (Kb K0u (ellOf n) ^ 40) ^ 12 ≤ 2 ^ 186 * (2 ^ Z n) ^ 12 :=
++          Nat.mul_le_mul (by norm_num) (Nat.pow_le_pow_left (hK n) 12)
++      _ = 2 ^ (12 * Z n + 186) := by rw [← pow_mul, ← pow_add]; ring_nf
++  · obtain ⟨C, hC⟩ := hZ (12 * k) (by omega)
++    refine ⟨12 * C + 186, fun n => ?_⟩
++    show 12 * Z n + 186 ≤ n / k + (12 * C + 186)
++    have := mul_div_mul_le 12 k n
+     have := hC n
+     omega
+ 
+diff --git a/FactoringAux/UniParams.lean b/FactoringAux/UniParams.lean
+--- a/FactoringAux/UniParams.lean
++++ b/FactoringAux/UniParams.lean
+@@ -5,7 +5,7 @@
+ step by step) with `Kb 48 ℓ ^ 40 ≤ n`; the group count at height `d` is `Kb 48 d`.  Internal binders of these
+ expressions are `900 …`.
+ 
+-* `powE` (`e^k`), `kbE` (`Kb 48 d`), `ellOf`, `ellE`, `gE` (`3 K^8`), `g4E`, `NcE` (`Nc`), `rcN`, `multV` (`mult`);
++* `powE` (`e^k`), `kbE` (`Kb 48 d`), `ellOf`, `ellE`, `gE` (`5 K^6`), `g4E`, `NcE` (`Nc`), `rcN`, `multV` (`mult`);
+   their `eval_*` lemmas; `card_rects`, `nonRects_eq`.
+ 
+ Not an audit surface.
+@@ -39,12 +39,12 @@
+   exact foldProd_zero_pow _ _ hx k
+ 
+ /-- `Kb 48 (var vd)`. -/
+-def kbE (vd : ℕ) : Ex := .iter 900 901 (.var vd) (.lit K0u) (.mul (.lit 9) (powE 902 (.var 901) 16))
++def kbE (vd : ℕ) : Ex := .iter 900 901 (.var vd) (.lit K0u) (.mul (.lit 25) (powE 902 (.var 901) 12))
+ 
+-theorem Kb_succ (K0 d : ℕ) : Kb K0 (d + 1) = 9 * Kb K0 d ^ 16 := by
+-  show (3 * Kb K0 d ^ 8) * (3 * Kb K0 d ^ 8) = _; ring
++theorem Kb_succ (K0 d : ℕ) : Kb K0 (d + 1) = 25 * Kb K0 d ^ 12 := by
++  show (5 * Kb K0 d ^ 6) * (5 * Kb K0 d ^ 6) = _; ring
+ 
+-theorem iterF_Kb (K0 : ℕ) : ∀ d, iterF (fun _ s => 9 * s ^ 16) K0 d = Kb K0 d
++theorem iterF_Kb (K0 : ℕ) : ∀ d, iterF (fun _ s => 25 * s ^ 12) K0 d = Kb K0 d
+   | 0 => rfl
+   | d + 1 => by rw [iterF, iterF_Kb K0 d, Kb_succ]
+ 
+@@ -55,7 +55,7 @@
+   congr 1
+   funext j s
+   simp only [Ex.eval]
+-  rw [eval_powE 902 _ 16 (fun i => by simp [Ex.eval])]
++  rw [eval_powE 902 _ 12 (fun i => by simp [Ex.eval])]
+   simp [Ex.eval]
+ 
+ /-- One step of the search for `ℓ`. -/
+@@ -83,22 +83,22 @@
+   rw [eval_kbE]
+   simp [Ex.eval, ellStep]
+ 
+-/-- `3 K^8` (`K` in `vK`). -/
+-def gE (vK : ℕ) : Ex := .mul (.lit 3) (powE 906 (.var vK) 8)
++/-- `5 K^6` (`K` in `vK`). -/
++def gE (vK : ℕ) : Ex := .mul (.lit 5) (powE 906 (.var vK) 6)
+ 
+-theorem eval_gE {vK : ℕ} (h : vK ≠ 906) : eval σ A (gE vK) = 3 * σ vK ^ 8 := by
++theorem eval_gE {vK : ℕ} (h : vK ≠ 906) : eval σ A (gE vK) = 5 * σ vK ^ 6 := by
+   simp only [gE, Ex.eval]
+-  rw [eval_powE 906 _ 8 (fun i => by simp [Ex.eval, Function.update_of_ne h])]
++  rw [eval_powE 906 _ 6 (fun i => by simp [Ex.eval, Function.update_of_ne h])]
+   rfl
+ 
+-/-- `(3 K^8)^4`. -/
++/-- `(5 K^6)^4`. -/
+ def g4E (vK : ℕ) : Ex := powE 907 (gE vK) 4
+ 
+-theorem eval_g4E {vK : ℕ} (h : vK ≠ 906) (h' : vK ≠ 907) : eval σ A (g4E vK) = (3 * σ vK ^ 8) ^ 4 := by
++theorem eval_g4E {vK : ℕ} (h : vK ≠ 906) (h' : vK ≠ 907) : eval σ A (g4E vK) = (5 * σ vK ^ 6) ^ 4 := by
+   rw [g4E, eval_powE 907 _ 4 (fun i => by rw [eval_gE h, eval_gE h, Function.update_of_ne h'])]
+   rw [eval_gE h]
+ 
+-theorem Gs_eq (K0 d : ℕ) : Gs K0 d = 3 * Kb K0 d ^ 8 := rfl
++theorem Gs_eq (K0 d : ℕ) : Gs K0 d = 5 * Kb K0 d ^ 6 := rfl
+ 
+ /-- `Nc 48 d λ` (`Kb 48 d` in `vK`, `λ` in `vl`). -/
+ def NcE (vK vl : ℕ) : Ex := .prod 908 (g4E vK) (.lit 0) (.add (tBE vl) (.lit 1))
+@@ -122,7 +122,7 @@
+   rw [filter_not, card_sdiff, filter_mem_eq_inter, univ_inter]
+   simp [Fintype.card_prod]; ring_nf
+ 
+-/-- `mult (3 K^8) λ` (`K` in `vK`, `λ` in `vl`). -/
++/-- `mult (5 K^6) λ` (`K` in `vK`, `λ` in `vl`). -/
+ def multV (vK vl : ℕ) : Ex :=
+   .lett 910 (gE vK) (.lett 911 (.div (.mul (.var 910) (.sub (.var 910) (.lit 1))) (.lit 2))
+     (.lett 912 (.mul (.var 911) (.var 911))
+@@ -132,7 +132,7 @@
+ theorem eval_multV {vK vl d L : ℕ} (h1 : vK ≠ 906) (h3 : vl < 910) (hK : σ vK = Kb K0u d) (hl : σ vl = L) :
+     eval σ A (multV vK vl) = mult (Gs K0u d) L := by
+   rw [multV, eval_lett, eval_gE h1, hK]
+-  set G := 3 * Kb K0u d ^ 8
++  set G := 5 * Kb K0u d ^ 6
+   set σ1 := Function.update σ 910 G
+   rw [eval_lett]
+   have e2 : eval σ1 A (.div (.mul (.var 910) (.sub (.var 910) (.lit 1))) (.lit 2)) = G * (G - 1) / 2 := by
+diff --git a/FactoringAux/UniSet.lean b/FactoringAux/UniSet.lean
+--- a/FactoringAux/UniSet.lean
++++ b/FactoringAux/UniSet.lean
+@@ -5,10 +5,10 @@
+   `Ex.comp _ _ 1000`). **`setBlock_spec`**: if every expression's value is fixed by the scalar `q` (outside the block),
+   the block holds the values, every other scalar below `1000` and every array is kept, and the cost is at most
+   `length · (C + 2) + 1` for a per-expression cost bound `C`.
+-* `GEx q` (`3 K^8` for `K` in `q`), `lvlExs q`, **`lvlSet p q := setBlock p (lvlExs q)`**; **`lvlSet_spec`**: with `K` in
+-  scalar `q`, the block `p … p+11` holds `lvlVals K (3 K^8)` (so every literal variable of `lvlOk p K (3 K^8)` holds its
++* `GEx q` (`5 K^6` for `K` in `q`), `lvlExs q`, **`lvlSet p q := setBlock p (lvlExs q)`**; **`lvlSet_spec`**: with `K` in
++  scalar `q`, the block `p … p+11` holds `lvlVals K (5 K^6)` (so every literal variable of `lvlOk p K (5 K^6)` holds its
+   literal), the other scalars below `1000` and the arrays are kept, and the cost is at most
+-  `12 · ((64 (V+1)^3)^5 + 2) + 1` for `V = lvlV K = (K+2)^(3K^8+50)`.
++  `12 · ((64 (V+1)^3)^5 + 2) + 1` for `V = lvlV K = (K+2)^(5K^6+50)`.
+ 
+ Values are bounded with `Bdd` and the cost with `cost_le_of_Bdd` (`EngineBound.lean`).
+ 
+@@ -105,10 +105,10 @@
+ 
+ /-! ### The level's values from `K` -/
+ 
+-/-- `3 K^8` for `K` in scalar `q` (product variable `999`). -/
+-def GEx (q : ℕ) : Ex := .mul (.lit 3) (nprod 999 (.lit 8) (.var q))
+-
+-/-- The expressions of `lvlVals K (3 K^8)` from `K` in scalar `q`. -/
++/-- `5 K^6` for `K` in scalar `q` (product variable `999`). -/
++def GEx (q : ℕ) : Ex := .mul (.lit 5) (nprod 999 (.lit 6) (.var q))
++
++/-- The expressions of `lvlVals K (5 K^6)` from `K` in scalar `q`. -/
+ def lvlExs (q : ℕ) : List Ex :=
+   [.var q, GEx q, .mul (GEx q) (GEx q), .mul (GEx q) (.mul (GEx q) (GEx q)), .add (.mul (.lit 2) (GEx q)) (.lit 1),
+     nprod 999 (GEx q) (.var q), .mul (.lit 12) (nprod 999 (.lit 3) (GEx q)), .mul (.lit 11) (nprod 999 (.lit 4) (GEx q)),
+@@ -119,7 +119,7 @@
+ def lvlSet (p q : ℕ) : Cmd := setBlock p (lvlExs q)
+ 
+ /-- The value bound of `lvlSet`. -/
+-def lvlV (K : ℕ) : ℕ := (K + 2) ^ (3 * K ^ 8 + 50)
++def lvlV (K : ℕ) : ℕ := (K + 2) ^ (5 * K ^ 6 + 50)
+ 
+ section Vals
+ 
+@@ -128,21 +128,21 @@
+ theorem upd_q (hq : q ≠ 999) (hσ : σ q = K) (j : ℕ) : Function.update σ 999 j q = K := by
+   rw [Function.update_of_ne hq, hσ]
+ 
+-theorem eval_GEx (hq : q ≠ 999) (hσ : σ q = K) : eval σ A (GEx q) = 3 * K ^ 8 := by
++theorem eval_GEx (hq : q ≠ 999) (hσ : σ q = K) : eval σ A (GEx q) = 5 * K ^ 6 := by
+   simp only [GEx, eval]
+   rw [eval_nprod_const (c := K) (fun j => by simp only [eval]; exact upd_q hq hσ j)]
+   rfl
+ 
+ /-- The facts on `V` used by the value bounds. -/
+ structure VFacts (K V : ℕ) : Prop where
+-  pK : ∀ j ≤ 3 * K ^ 8 + 50, K ^ j ≤ V
+-  pG : 24 * (3 * K ^ 8 + 1) ^ 4 ≤ V
++  pK : ∀ j ≤ 5 * K ^ 6 + 50, K ^ j ≤ V
++  pG : 24 * (5 * K ^ 6 + 1) ^ 4 ≤ V
+ 
+ theorem VFacts.one {K V : ℕ} (h : VFacts K V) : 1 ≤ V := by have := h.pK 0 (by omega); simpa using this
+ 
+-theorem VFacts.cG {K V : ℕ} (h : VFacts K V) {c k : ℕ} (hc : c ≤ 24) (hk : k ≤ 4) : c * (3 * K ^ 8) ^ k ≤ V := by
++theorem VFacts.cG {K V : ℕ} (h : VFacts K V) {c k : ℕ} (hc : c ≤ 24) (hk : k ≤ 4) : c * (5 * K ^ 6) ^ k ≤ V := by
+   refine le_trans ?_ h.pG
+-  have h1 : (3 * K ^ 8) ^ k ≤ (3 * K ^ 8 + 1) ^ 4 :=
++  have h1 : (5 * K ^ 6) ^ k ≤ (5 * K ^ 6 + 1) ^ 4 :=
+     (Nat.pow_le_pow_left (by omega) k).trans (Nat.pow_le_pow_right (by omega) hk)
+   exact Nat.mul_le_mul hc h1
+ 
+@@ -151,42 +151,42 @@
+   pG := by
+     unfold lvlV
+     have h2 : 2 ≤ K + 2 := by omega
+-    have hG : 3 * K ^ 8 + 1 ≤ (K + 2) ^ 10 := by
+-      have a : K ^ 8 ≤ (K + 2) ^ 8 := Nat.pow_le_pow_left (by omega) 8
+-      have b : 4 ≤ (K + 2) ^ 2 := by nlinarith
+-      have c : 1 ≤ (K + 2) ^ 8 := Nat.one_le_pow _ _ (by omega)
+-      have : (K + 2) ^ 10 = (K + 2) ^ 2 * (K + 2) ^ 8 := by ring
++    have hG : 5 * K ^ 6 + 1 ≤ (K + 2) ^ 10 := by
++      have a : K ^ 6 ≤ (K + 2) ^ 6 := Nat.pow_le_pow_left (by omega) 6
++      have b : 6 ≤ (K + 2) ^ 4 := le_trans (by norm_num) (Nat.pow_le_pow_left h2 4)
++      have c : 1 ≤ (K + 2) ^ 6 := Nat.one_le_pow _ _ (by omega)
++      have : (K + 2) ^ 10 = (K + 2) ^ 4 * (K + 2) ^ 6 := by ring
+       nlinarith
+     have h24 : 24 ≤ (K + 2) ^ 5 := le_trans (by norm_num) (Nat.pow_le_pow_left h2 5)
+-    calc 24 * (3 * K ^ 8 + 1) ^ 4 ≤ (K + 2) ^ 5 * ((K + 2) ^ 10) ^ 4 :=
++    calc 24 * (5 * K ^ 6 + 1) ^ 4 ≤ (K + 2) ^ 5 * ((K + 2) ^ 10) ^ 4 :=
+           Nat.mul_le_mul h24 (Nat.pow_le_pow_left hG 4)
+       _ = (K + 2) ^ 45 := by ring
+-      _ ≤ (K + 2) ^ (3 * K ^ 8 + 50) := Nat.pow_le_pow_right (by omega) (by omega)
++      _ ≤ (K + 2) ^ (5 * K ^ 6 + 50) := Nat.pow_le_pow_right (by omega) (by omega)
+ 
+ variable {V : ℕ}
+ 
+ theorem bdd_GEx (hV : VFacts K V) (hq : q ≠ 999) (hσ : σ q = K) : Bdd V σ A (GEx q) := by
+   have l : ∀ c ≤ 24, c ≤ V := fun c hc => by simpa using hV.cG (c := c) (k := 0) hc (by omega)
+   have hK1 : K ≤ V := by simpa using hV.pK 1 (by omega)
+-  have hn : Bdd V σ A (nprod 999 (.lit 8) (.var q)) :=
+-    bdd_nprod_const (c := K) (l 8 (by omega)) (fun j => by show _ ≤ V; rw [upd_q hq hσ j]; exact hK1)
++  have hn : Bdd V σ A (nprod 999 (.lit 6) (.var q)) :=
++    bdd_nprod_const (c := K) (l 6 (by omega)) (fun j => by show _ ≤ V; rw [upd_q hq hσ j]; exact hK1)
+       (fun j => by simp only [eval]; exact upd_q hq hσ j) (fun j hj => hV.pK j (by simp only [eval] at hj; omega))
+-  refine ⟨l 3 (by omega), hn, ?_⟩
+-  show 3 * eval σ A (nprod 999 (.lit 8) (.var q)) ≤ V
++  refine ⟨l 5 (by omega), hn, ?_⟩
++  show 5 * eval σ A (nprod 999 (.lit 6) (.var q)) ≤ V
+   rw [eval_nprod_const (c := K) (fun j => by simp only [eval]; exact upd_q hq hσ j)]
+   simp only [eval]
+   simpa using hV.cG (c := 1) (k := 1) (by omega) (by omega)
+ 
+-/-- Products of constants `G = 3 K^8`. -/
++/-- Products of constants `G = 5 K^6`. -/
+ theorem bdd_nprodG (hV : VFacts K V) (hq : q ≠ 999) (hσ : σ q = K) (k : ℕ) (hk : k ≤ 4) :
+     Bdd V σ A (nprod 999 (.lit k) (GEx q)) :=
+-  bdd_nprod_const (c := 3 * K ^ 8) (show k ≤ V by simpa using hV.cG (c := k) (k := 0) (by omega) (by omega))
++  bdd_nprod_const (c := 5 * K ^ 6) (show k ≤ V by simpa using hV.cG (c := k) (k := 0) (by omega) (by omega))
+     (fun j => bdd_GEx hV hq (upd_q hq hσ j)) (fun j => eval_GEx hq (upd_q hq hσ j))
+     (fun j hj => by simpa using hV.cG (c := 1) (k := j) (by omega) (by simp only [eval] at hj; omega))
+ 
+ theorem eval_nprodG (hq : q ≠ 999) (hσ : σ q = K) (k : ℕ) :
+-    eval σ A (nprod 999 (.lit k) (GEx q)) = (3 * K ^ 8) ^ k := by
+-  rw [eval_nprod_const (c := 3 * K ^ 8) (fun j => eval_GEx hq (upd_q hq hσ j))]; rfl
++    eval σ A (nprod 999 (.lit k) (GEx q)) = (5 * K ^ 6) ^ k := by
++  rw [eval_nprod_const (c := 5 * K ^ 6) (fun j => eval_GEx hq (upd_q hq hσ j))]; rfl
+ 
+ theorem eval_nprodVq (hq : q ≠ 999) (hσ : σ q = K) (n : Ex) :
+     eval σ A (nprod 999 n (.var q)) = K ^ eval σ A n :=
+@@ -196,8 +196,8 @@
+ 
+ /-- The value and the value bound of each of `lvlExs`. -/
+ theorem lvlExs_spec {q K V : ℕ} (hV : VFacts K V) (hq : q ≠ 999) :
+-    ∀ i (hi : i < (lvlExs q).length) (hi' : i < (lvlVals K (3 * K ^ 8)).length) (σ : ℕ → ℕ) (A : ℕ → ℕ → ℕ),
+-      σ q = K → eval σ A (lvlExs q)[i] = (lvlVals K (3 * K ^ 8))[i] ∧ Bdd V σ A (lvlExs q)[i] := by
++    ∀ i (hi : i < (lvlExs q).length) (hi' : i < (lvlVals K (5 * K ^ 6)).length) (σ : ℕ → ℕ) (A : ℕ → ℕ → ℕ),
++      σ q = K → eval σ A (lvlExs q)[i] = (lvlVals K (5 * K ^ 6))[i] ∧ Bdd V σ A (lvlExs q)[i] := by
+   intro i hi _ σ A hσ
+   have eG := eval_GEx (A := A) hq hσ
+   have bG := bdd_GEx (A := A) hV hq hσ
+@@ -213,7 +213,7 @@
+   have g3 := hV.cG (c := 3) (k := 1) (by omega) (by omega)
+   simp only [one_mul, pow_one] at c2 c3 c4 g3
+   have one := hV.one
+-  set G := 3 * K ^ 8 with hG
++  set G := 5 * K ^ 6 with hG
+   have sq : G * G = G ^ 2 := by ring
+   have cu : G * (G * G) = G ^ 3 := by ring
+   have qu : G * G * (G * G) = G ^ 4 := by ring
+@@ -269,17 +269,17 @@
+   (cost_le_of_Bdd A e σ hb).trans (Nat.pow_le_pow_right (by have := Nat.one_le_pow 3 (V + 1) (by omega); omega) hd)
+ 
+ /-- **`lvlSet`**: with `K` in scalar `q` (outside the block, below `999`), the block `p … p+11` holds
+-`lvlVals K (3 K^8)`, every other scalar below `1000` and every array is kept, and the cost is at most
++`lvlVals K (5 K^6)`, every other scalar below `1000` and every array is kept, and the cost is at most
+ `12 · ((64 (lvlV K + 1)^3)^5 + 2) + 1`. -/
+ theorem lvlSet_spec {p q K : ℕ} (st : St) (hK : st.sc q = K) (hp : p + 12 ≤ 1000) (hq : q < p ∨ p + 12 ≤ q)
+     (hq9 : q < 999) :
+-    (∀ i (hi : i < 12), (Cmd.run (lvlSet p q) st).1.sc (p + i) = (lvlVals K (3 * K ^ 8))[i]) ∧
+-      (∀ v k, lvlOk p K (3 * K ^ 8) v k → (Cmd.run (lvlSet p q) st).1.sc v = k) ∧
++    (∀ i (hi : i < 12), (Cmd.run (lvlSet p q) st).1.sc (p + i) = (lvlVals K (5 * K ^ 6))[i]) ∧
++      (∀ v k, lvlOk p K (5 * K ^ 6) v k → (Cmd.run (lvlSet p q) st).1.sc v = k) ∧
+       (∀ y < 1000, (y < p ∨ p + 12 ≤ y) → (Cmd.run (lvlSet p q) st).1.sc y = st.sc y) ∧
+       (Cmd.run (lvlSet p q) st).1.ar = st.ar ∧
+       (Cmd.run (lvlSet p q) st).2 ≤ 12 * ((64 * (lvlV K + 1) ^ 3) ^ 5 + 2) + 1 := by
+   have hV := lvlV_facts K
+-  have h := setBlock_spec q K ((64 * (lvlV K + 1) ^ 3) ^ 5) (lvlExs q) (lvlVals K (3 * K ^ 8)) p st rfl hp hq (by omega) hK
++  have h := setBlock_spec q K ((64 * (lvlV K + 1) ^ 3) ^ 5) (lvlExs q) (lvlVals K (5 * K ^ 6)) p st rfl hp hq (by omega) hK
+     (fun i hi hi' => ⟨lvlExs_vb q hq9 _ (List.getElem_mem hi), fun σ A hσ => by
+       obtain ⟨e1, b1⟩ := lvlExs_spec hV (by omega) i hi hi' σ A hσ
+       exact ⟨e1, cost_le5 b1 (lvlExs_dp q _ (List.getElem_mem hi))⟩⟩)
+diff --git a/FactoringAux/UniTopSpec.lean b/FactoringAux/UniTopSpec.lean
+--- a/FactoringAux/UniTopSpec.lean
++++ b/FactoringAux/UniTopSpec.lean
+@@ -22,39 +22,39 @@
+ variable {σ : ℕ → ℕ} {A : ℕ → ℕ → ℕ} {m n k K : ℕ}
+ 
+ theorem top_search (hK : 2 ≤ K) (hm : 1 < m) (h10 : σ 10 = m) (h11 : σ 11 = sOf n) (h0 : σ 0 = n) (h2 : σ 2 = k)
+-    (hkn : k ≤ n) (h12 : σ 12 = Ltop K (3 * K ^ 8) (sOf n)) :
+-    eval σ A (GroupEx.searchE (gsTop K (3 * K ^ 8)) 13 14) =
+-      firstGood (okG (clusterNet (sOf n) (ZMod m) (numCells (A 0) 1 n) k (numCells (A 1) k (n - k)) (3 * K ^ 8)
+-        (by positivity)) K (Ltop K (3 * K ^ 8) (sOf n)) (by omega)) (K ^ (3 * K ^ 8)) (K ^ (3 * K ^ 8)) := by
+-  have hg : 0 < 3 * K ^ 8 := by positivity
++    (hkn : k ≤ n) (h12 : σ 12 = Ltop K (5 * K ^ 6) (sOf n)) :
++    eval σ A (GroupEx.searchE (gsTop K (5 * K ^ 6)) 13 14) =
++      firstGood (okG (clusterNet (sOf n) (ZMod m) (numCells (A 0) 1 n) k (numCells (A 1) k (n - k)) (5 * K ^ 6)
++        (by positivity)) K (Ltop K (5 * K ^ 6) (sOf n)) (by omega)) (K ^ (5 * K ^ 6)) (K ^ (5 * K ^ 6)) := by
++  have hg : 0 < 5 * K ^ 6 := by positivity
+   have H2 := clusterHyp (A := A) (σ₀ := σ) hm hg h10 h11 h0 h2 hkn (sOf_spec n)
+   have hr2 := coarsen_rep H2 (show 10 < 13 by norm_num)
+-  exact GroupEx.eval_searchE (S := gsTop K (3 * K ^ 8)) (L := Ltop K (3 * K ^ 8) (sOf n)) (show 0 < K by omega) hg hm hr2
++  exact GroupEx.eval_searchE (S := gsTop K (5 * K ^ 6)) (L := Ltop K (5 * K ^ 6) (sOf n)) (show 0 < K by omega) hg hm hr2
+     (show 10 < 13 by norm_num) (show 12 < 13 by norm_num) (show 13 ≤ 13 by norm_num) (show 13 ≤ 14 by norm_num)
+     (show 13 ≤ 15 by norm_num) (show (13 : ℕ) ≠ 14 by norm_num) (show (13 : ℕ) ≠ 15 by norm_num)
+     (show (14 : ℕ) ≠ 15 by norm_num) (show 13 < 26 by norm_num) (show 14 < 26 by norm_num)
+     (show 15 < 26 by norm_num) h12 (Ag.refl _ _)
+ 
+ theorem top_tab_rep (hK : 2 ≤ K) (hm : 1 < m) (h10 : σ 10 = m) (h11 : σ 11 = sOf n) (h0 : σ 0 = n) (h2 : σ 2 = k)
+-    (hkn : k ≤ n) (h12 : σ 12 = Ltop K (3 * K ^ 8) (sOf n)) {xf : ℕ} (h15 : σ 15 = xf) :
+-    TRep m 16 σ A 82 83 (GroupEx.tab (gsTop K (3 * K ^ 8)))
+-      (((clusterNet (sOf n) (ZMod m) (numCells (A 0) 1 n) k (numCells (A 1) k (n - k)) (3 * K ^ 8)
+-        (by positivity)).coarsen (chiOf K (3 * K ^ 8) xf (by omega))).toClique (Ltop K (3 * K ^ 8) (sOf n))) := by
+-  have hg : 0 < 3 * K ^ 8 := by positivity
++    (hkn : k ≤ n) (h12 : σ 12 = Ltop K (5 * K ^ 6) (sOf n)) {xf : ℕ} (h15 : σ 15 = xf) :
++    TRep m 16 σ A 82 83 (GroupEx.tab (gsTop K (5 * K ^ 6)))
++      (((clusterNet (sOf n) (ZMod m) (numCells (A 0) 1 n) k (numCells (A 1) k (n - k)) (5 * K ^ 6)
++        (by positivity)).coarsen (chiOf K (5 * K ^ 6) xf (by omega))).toClique (Ltop K (5 * K ^ 6) (sOf n))) := by
++  have hg : 0 < 5 * K ^ 6 := by positivity
+   have H3 := clusterHyp (A := A) (σ₀ := σ) hm hg h10 h11 h0 h2 hkn (sOf_spec n)
+   have hr3 := (coarsen_rep H3 (show 10 < 13 by norm_num)).mono (show 13 ≤ 16 by norm_num)
+-  exact GroupEx.group_rep (S := gsTop K (3 * K ^ 8)) (x := xf) (L := Ltop K (3 * K ^ 8) (sOf n)) (show 0 < K by omega) hg hm
++  exact GroupEx.group_rep (S := gsTop K (5 * K ^ 6)) (x := xf) (L := Ltop K (5 * K ^ 6) (sOf n)) (show 0 < K by omega) hg hm
+     hr3 (show 10 < 16 by norm_num) (show 15 < 16 by norm_num) (show 12 < 16 by norm_num)
+     (show 16 ≤ 26 by norm_num) h15 h12
+ 
+ theorem top_value (hK : 2 ≤ K) (m : ℕ) (N : ℕ) (hN1 : 1 ≤ N) (hNn : N < 2 ^ n) (x : ℕ) :
+-    (((clusterNet (sOf n) (ZMod m) N k x (3 * K ^ 8) (by positivity)).coarsen
+-      (chiOf K (3 * K ^ 8) (firstGood (okG (clusterNet (sOf n) (ZMod m) N k x (3 * K ^ 8) (by positivity)) K
+-        (Ltop K (3 * K ^ 8) (sOf n)) (by omega)) (K ^ (3 * K ^ 8)) (K ^ (3 * K ^ 8))) (by omega))).toClique
+-          (Ltop K (3 * K ^ 8) (sOf n))).value =
++    (((clusterNet (sOf n) (ZMod m) N k x (5 * K ^ 6) (by positivity)).coarsen
++      (chiOf K (5 * K ^ 6) (firstGood (okG (clusterNet (sOf n) (ZMod m) N k x (5 * K ^ 6) (by positivity)) K
++        (Ltop K (5 * K ^ 6) (sOf n)) (by omega)) (K ^ (5 * K ^ 6)) (K ^ (5 * K ^ 6))) (by omega))).toClique
++          (Ltop K (5 * K ^ 6) (sOf n))).value =
+       ((N.divisors.filter (fun d => d / 2 ^ k = x)).card : ZMod m) := by
+   set s := sOf n
+-  set g := 3 * K ^ 8
++  set g := 5 * K ^ 6
+   have hg : 0 < g := by positivity
+   set CN := clusterNet s (ZMod m) N k x g hg
+   obtain ⟨x0, hx0, hok⟩ := good_exists CN (clP s g) (10 * (pA s * pA s) * fw s) (clusterNet_fits s _ N k x g hg)
+@@ -90,14 +90,14 @@
+       (∀ a, a ≠ 3 → (Cmd.run (countM UP) st).1.ar a = st.ar a) := by
+   have : NeZero m := ⟨by omega⟩
+   set K := Kb K0u ℓ
+-  set L := Ltop K (3 * K ^ 8) (sOf n)
++  set L := Ltop K (5 * K ^ 6) (sOf n)
+   have hK : 2 ≤ K := Kb_ge K0u (by norm_num) ℓ
+   set N := numCells (st.ar 0) 1 n
+   set x := numCells (st.ar 1) k (n - k)
+-  have hg : 0 < 3 * K ^ 8 := by positivity
+-  set CN := clusterNet (sOf n) (ZMod m) N k x (3 * K ^ 8) hg
+-  set xf := firstGood (okG CN K L (by omega)) (K ^ (3 * K ^ 8)) (K ^ (3 * K ^ 8))
+-  set Tt := (CN.coarsen (chiOf K (3 * K ^ 8) xf (by omega))).toClique L
++  have hg : 0 < 5 * K ^ 6 := by positivity
++  set CN := clusterNet (sOf n) (ZMod m) N k x (5 * K ^ 6) hg
++  set xf := firstGood (okG CN K L (by omega)) (K ^ (5 * K ^ 6)) (K ^ (5 * K ^ 6))
++  set Tt := (CN.coarsen (chiOf K (5 * K ^ 6) xf (by omega))).toClique L
+   rw [countM]
+   repeat rw [Cmd.run_seq]
+   -- c1: 15 := xf
+diff --git a/FactoringAux/UniTopV.lean b/FactoringAux/UniTopV.lean
+--- a/FactoringAux/UniTopV.lean
++++ b/FactoringAux/UniTopV.lean
+@@ -15,7 +15,7 @@
+   `TopV.clχE_LS`, `TopV.coarsen_LS`.
+ * **`TopV.L0E_vb`**, **`TopV.searchE_vb`**, **`TopV.tab_vb`**: every variable below `1000`.
+ * `topExs q`, **`topSet q := setBlock 5 (topExs q)`**; **`topSet_spec`**: with `K` in scalar `q` (`q < 5` or `10 ≤ q`,
+-  `q < 999`), the scalars `5 … 9` hold `topVals K (3 K^8)`, every other scalar below `1000` and every array is kept,
++  `q < 999`), the scalars `5 … 9` hold `topVals K (5 K^6)`, every other scalar below `1000` and every array is kept,
+   and the cost is at most `5 · ((64 (lvlV K + 1)^3)^5 + 2) + 1`.
+ 
+ Not an audit surface.
+@@ -31,7 +31,7 @@
+ 
+ open Ex MulEx Factoring.Aux.Copied Factoring.Aux.Copied.PLib
+ 
+-/-- The values of the top's literal variables `5 … 9` (`g = 3 K^8` in the engine). -/
++/-- The values of the top's literal variables `5 … 9` (`g = 5 K^6` in the engine). -/
+ def topVals (K g : ℕ) : List ℕ := [K, g, K ^ 3, 2 * g + 1, K ^ g]
+ 
+ /-- The top's literal variables `5 … 9`. -/
+@@ -165,7 +165,7 @@
+ 
+ /-! ### Setting the top's literal variables -/
+ 
+-/-- The expressions of `topVals K (3 K^8)` from `K` in scalar `q` (entries `0, 1, 10, 4, 5` of `lvlExs q`). -/
++/-- The expressions of `topVals K (5 K^6)` from `K` in scalar `q` (entries `0, 1, 10, 4, 5` of `lvlExs q`). -/
+ def topExs (q : ℕ) : List Ex :=
+   [.var q, GEx q, nprod 999 (.lit 3) (.var q), .add (.mul (.lit 2) (GEx q)) (.lit 1), nprod 999 (GEx q) (.var q)]
+ 
+@@ -173,8 +173,8 @@
+ def topSet (q : ℕ) : Cmd := setBlock 5 (topExs q)
+ 
+ theorem topExs_spec {q K V : ℕ} (hV : VFacts K V) (hq : q ≠ 999) :
+-    ∀ i (hi : i < (topExs q).length) (hi' : i < (topVals K (3 * K ^ 8)).length) (σ : ℕ → ℕ) (A : ℕ → ℕ → ℕ),
+-      σ q = K → eval σ A (topExs q)[i] = (topVals K (3 * K ^ 8))[i] ∧ Bdd V σ A (topExs q)[i] := by
++    ∀ i (hi : i < (topExs q).length) (hi' : i < (topVals K (5 * K ^ 6)).length) (σ : ℕ → ℕ) (A : ℕ → ℕ → ℕ),
++      σ q = K → eval σ A (topExs q)[i] = (topVals K (5 * K ^ 6))[i] ∧ Bdd V σ A (topExs q)[i] := by
+   intro i hi _ σ A hσ
+   rcases i with _ | _ | _ | _ | _ | i
+   · exact lvlExs_spec hV hq 0 (by simp [lvlExs]) (by simp [lvlVals]) σ A hσ
+@@ -185,11 +185,11 @@
+   · exact absurd hi (by simp [topExs])
+ 
+ /-- **`topSet`**: with `K` in scalar `q` (`q < 5` or `10 ≤ q`, `q < 999`), the scalars `5 … 9` hold
+-`topVals K (3 K^8)`, every other scalar below `1000` and every array is kept, and the cost is at most
++`topVals K (5 K^6)`, every other scalar below `1000` and every array is kept, and the cost is at most
+ `5 · ((64 (lvlV K + 1)^3)^5 + 2) + 1`. -/
+ theorem topSet_spec {q K : ℕ} (st : St) (hK : st.sc q = K) (hq : q < 5 ∨ 10 ≤ q) (hq9 : q < 999) :
+-    (∀ i (hi : i < 5), (Cmd.run (topSet q) st).1.sc (5 + i) = (topVals K (3 * K ^ 8))[i]) ∧
+-      (∀ v k, topOk K (3 * K ^ 8) v k → (Cmd.run (topSet q) st).1.sc v = k) ∧
++    (∀ i (hi : i < 5), (Cmd.run (topSet q) st).1.sc (5 + i) = (topVals K (5 * K ^ 6))[i]) ∧
++      (∀ v k, topOk K (5 * K ^ 6) v k → (Cmd.run (topSet q) st).1.sc v = k) ∧
+       (∀ y < 1000, (y < 5 ∨ 10 ≤ y) → (Cmd.run (topSet q) st).1.sc y = st.sc y) ∧
+       (Cmd.run (topSet q) st).1.ar = st.ar ∧
+       (Cmd.run (topSet q) st).2 ≤ 5 * ((64 * (lvlV K + 1) ^ 3) ^ 5 + 2) + 1 := by
+@@ -199,7 +199,7 @@
+     have hl : ∀ e ∈ topExs q, e ∈ lvlExs q := by
+       intro e he; simp only [topExs, lvlExs, List.mem_cons, List.not_mem_nil, or_false] at he ⊢; tauto
+     exact ⟨lvlExs_vb q hq9 e (hl e he), lvlExs_dp q e (hl e he)⟩
+-  have h := setBlock_spec q K ((64 * (lvlV K + 1) ^ 3) ^ 5) (topExs q) (topVals K (3 * K ^ 8)) 5 st rfl
++  have h := setBlock_spec q K ((64 * (lvlV K + 1) ^ 3) ^ 5) (topExs q) (topVals K (5 * K ^ 6)) 5 st rfl
+     (by simp [topExs]) (by simpa [topExs] using hq) (by omega) hK
+     (fun i hi hi' => ⟨(hvb _ (List.getElem_mem hi)).1, fun σ A hσ => by
+       obtain ⟨e1, b1⟩ := topExs_spec hV (by omega) i hi hi' σ A hσ

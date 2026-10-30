@@ -1,0 +1,511 @@
+{
+  "reference_commit": "c91cc3f4947caca8977e81a5d14244f73b5ae2b1",
+  "status": "final source audit; patched Solution build and closed Certified endpoint completed successfully",
+  "description": "Final comparison of the actual degree-twelve grouping implementation with the pinned clean reference; base group count48 and protected machine definitions are preserved.",
+  "reference_patch": {
+    "path": "variants/k6/reference.patch",
+    "sha256": "cc098155c5505cb3e04212c673ab1cc86e3a6639b6b870389c25e20f8ae22e6e",
+    "changed_file_count": 26
+  },
+  "bottom_group_count_48": true,
+  "protected_file_count": 43,
+  "protected_files": [
+    {
+      "path": "Challenge.lean",
+      "reference_sha256": "c3adce9c7a04732442b615e69b3d33960ebc61dcacc5d281797c303d266ae12b",
+      "variant_sha256": "c3adce9c7a04732442b615e69b3d33960ebc61dcacc5d281797c303d266ae12b",
+      "equal": true
+    },
+    {
+      "path": "FactoringAux/Definitions.lean",
+      "reference_sha256": "13b188fc63a27dd7ea4766abd5d66a5b78adb5793d4c1d25196bf844fc63df49",
+      "variant_sha256": "13b188fc63a27dd7ea4766abd5d66a5b78adb5793d4c1d25196bf844fc63df49",
+      "equal": true
+    },
+    {
+      "path": "Solution.lean",
+      "reference_sha256": "7065c25bf9687d914cdaafa58f4cfafef8d13508d95a4c1dd03c1b65ac31a3c9",
+      "variant_sha256": "7065c25bf9687d914cdaafa58f4cfafef8d13508d95a4c1dd03c1b65ac31a3c9",
+      "equal": true
+    },
+    {
+      "path": "FactoringAux/Ex.lean",
+      "reference_sha256": "1bbc4cc1815c1c91e9aa22551fa54fa29b400d85736a2b37804bab17ea92be4b",
+      "variant_sha256": "1bbc4cc1815c1c91e9aa22551fa54fa29b400d85736a2b37804bab17ea92be4b",
+      "equal": true
+    },
+    {
+      "path": "FactoringAux/ExCmd.lean",
+      "reference_sha256": "4bb3fef407529f387cf446e9ebf82d52d6023270d2fd79578ce4fd78bf72678f",
+      "variant_sha256": "4bb3fef407529f387cf446e9ebf82d52d6023270d2fd79578ce4fd78bf72678f",
+      "equal": true
+    },
+    {
+      "path": "FactoringAux/UniDrv.lean",
+      "reference_sha256": "21710f7477dc052c1aadd6e4297e1ae04514e98d09a1a7c92767f0ed6f939803",
+      "variant_sha256": "21710f7477dc052c1aadd6e4297e1ae04514e98d09a1a7c92767f0ed6f939803",
+      "equal": true
+    },
+    {
+      "path": "FactoringAux/UniDrvSpec.lean",
+      "reference_sha256": "6850f695eabe6ef4bcebb13e42dbea97ac9677b8d50a0a83945c1bf314a7beb6",
+      "variant_sha256": "6850f695eabe6ef4bcebb13e42dbea97ac9677b8d50a0a83945c1bf314a7beb6",
+      "equal": true
+    },
+    {
+      "path": "FactoringAux/UniFinal.lean",
+      "reference_sha256": "be3f61f770fdfc65528dac2d0e5960c7367fefeeda648b163d82643ea34128a8",
+      "variant_sha256": "be3f61f770fdfc65528dac2d0e5960c7367fefeeda648b163d82643ea34128a8",
+      "equal": true
+    },
+    {
+      "path": "FactoringAux/UniGlue.lean",
+      "reference_sha256": "57b9553462cd0df6b42012dfa40824195ee6ea1c5e3f18331f40cacb06cb565e",
+      "variant_sha256": "57b9553462cd0df6b42012dfa40824195ee6ea1c5e3f18331f40cacb06cb565e",
+      "equal": true
+    },
+    {
+      "path": "FactoringAux/UniPathSpec.lean",
+      "reference_sha256": "65bb0030f779a1f0b0517f5163d3677451c1bd4e4a4106c40073ffc33d86fe66",
+      "variant_sha256": "65bb0030f779a1f0b0517f5163d3677451c1bd4e4a4106c40073ffc33d86fe66",
+      "equal": true
+    },
+    {
+      "path": "FactoringAux/EngineDeepEx.lean",
+      "reference_sha256": "d4b13f48aa485b12ab432bf9069ade72cdf4434ed90f3f03ef7f75e107fe8d89",
+      "variant_sha256": "d4b13f48aa485b12ab432bf9069ade72cdf4434ed90f3f03ef7f75e107fe8d89",
+      "equal": true
+    },
+    {
+      "path": "FactoringAux/Moduli.lean",
+      "reference_sha256": "1e4d2ff696803f3f67a6b81ad1c8d100c5479f62262f4c00698e7da738e9ae1f",
+      "variant_sha256": "1e4d2ff696803f3f67a6b81ad1c8d100c5479f62262f4c00698e7da738e9ae1f",
+      "equal": true
+    },
+    {
+      "path": "FactoringAux/Search.lean",
+      "reference_sha256": "e7796b4a89ec2f877d307f892bcf7f4c6e0686d64ba9ca8e2941e35f8f3a5ea2",
+      "variant_sha256": "e7796b4a89ec2f877d307f892bcf7f4c6e0686d64ba9ca8e2941e35f8f3a5ea2",
+      "equal": true
+    },
+    {
+      "path": "FactoringAux/Driver.lean",
+      "reference_sha256": "8801ef26aaee6b2a17de1783a08265609a13e032dac13c11d16e7797d9c4a5fa",
+      "variant_sha256": "8801ef26aaee6b2a17de1783a08265609a13e032dac13c11d16e7797d9c4a5fa",
+      "equal": true
+    },
+    {
+      "path": "FactoringAux/DriverMath.lean",
+      "reference_sha256": "5d699fb99ad3defd8e6264a42fb8cd7306a56cde270ba338f7c74bfcc52c4d5f",
+      "variant_sha256": "5d699fb99ad3defd8e6264a42fb8cd7306a56cde270ba338f7c74bfcc52c4d5f",
+      "equal": true
+    },
+    {
+      "path": "FactoringAux/DriverSpec.lean",
+      "reference_sha256": "72cdaa662aadcb26daaaef3229096c624dab92345d38cdf6d0a937be68c25e27",
+      "variant_sha256": "72cdaa662aadcb26daaaef3229096c624dab92345d38cdf6d0a937be68c25e27",
+      "equal": true
+    },
+    {
+      "path": "FactoringAux/DriverOut.lean",
+      "reference_sha256": "0933c3dc57b63feba6ad6e3d8de88b3c24363c2a832f842b517af0ed74702065",
+      "variant_sha256": "0933c3dc57b63feba6ad6e3d8de88b3c24363c2a832f842b517af0ed74702065",
+      "equal": true
+    },
+    {
+      "path": "FactoringAux/Copied/Machine.lean",
+      "reference_sha256": "a1cfe39fe90d31d9c98facd8de45a61cc725a4ea50930480c7b4d39e8cd3568e",
+      "variant_sha256": "a1cfe39fe90d31d9c98facd8de45a61cc725a4ea50930480c7b4d39e8cd3568e",
+      "equal": true
+    },
+    {
+      "path": "FactoringAux/Copied/MachineLemmas.lean",
+      "reference_sha256": "65ea70542e98cb93b6e63257367438eea2f7d0a94c564807c4e5a1a01b2c32b5",
+      "variant_sha256": "65ea70542e98cb93b6e63257367438eea2f7d0a94c564807c4e5a1a01b2c32b5",
+      "equal": true
+    },
+    {
+      "path": "FactoringAux/Copied/PlibArr.lean",
+      "reference_sha256": "e67650e71dce56c2a9659cde29813c3a795411e2a8c40e974ac9b7c2de537e60",
+      "variant_sha256": "e67650e71dce56c2a9659cde29813c3a795411e2a8c40e974ac9b7c2de537e60",
+      "equal": true
+    },
+    {
+      "path": "FactoringAux/Copied/PlibCore.lean",
+      "reference_sha256": "861abe5d37aac4633a09b8ef09162eb9e1e88a29a8795d721031cdb751daea5a",
+      "variant_sha256": "861abe5d37aac4633a09b8ef09162eb9e1e88a29a8795d721031cdb751daea5a",
+      "equal": true
+    },
+    {
+      "path": "FactoringAux/Copied/PlibFn.lean",
+      "reference_sha256": "c96b1af593b9d95fdb52004b0b87dc667a99b4f66881019149b26da02e64e21b",
+      "variant_sha256": "c96b1af593b9d95fdb52004b0b87dc667a99b4f66881019149b26da02e64e21b",
+      "equal": true
+    },
+    {
+      "path": "FactoringAux/Copied/PlibLogic.lean",
+      "reference_sha256": "da94a8b5b1e9c75f665547a42b3f07541dedcd037844e1e4a174e615bd943e99",
+      "variant_sha256": "da94a8b5b1e9c75f665547a42b3f07541dedcd037844e1e4a174e615bd943e99",
+      "equal": true
+    },
+    {
+      "path": "FactoringAux/Copied/PlibMul.lean",
+      "reference_sha256": "292916fafc57b10d3de017ae49e258f2db4f5d5f116006e3bf97f4af56061777",
+      "variant_sha256": "292916fafc57b10d3de017ae49e258f2db4f5d5f116006e3bf97f4af56061777",
+      "equal": true
+    },
+    {
+      "path": "FactoringAux/Copied/PlibTop.lean",
+      "reference_sha256": "0b91b5a1cc353dc6c54bdb01758292dc8a6386cb841c70353a2b022ab60fc0b1",
+      "variant_sha256": "0b91b5a1cc353dc6c54bdb01758292dc8a6386cb841c70353a2b022ab60fc0b1",
+      "equal": true
+    },
+    {
+      "path": "FactoringAux/Copied/PrimeBits.lean",
+      "reference_sha256": "76d6116ffd87a7ea3863684d29f4d87e0a8d33a4c7503523d94098b515b6b8d2",
+      "variant_sha256": "76d6116ffd87a7ea3863684d29f4d87e0a8d33a4c7503523d94098b515b6b8d2",
+      "equal": true
+    },
+    {
+      "path": "FactoringAux/Copied/PrimeCyc.lean",
+      "reference_sha256": "f1398383e8596f11e410355c0283c71119d4e7f6d5b4f454b3f86eff82fb87e9",
+      "variant_sha256": "f1398383e8596f11e410355c0283c71119d4e7f6d5b4f454b3f86eff82fb87e9",
+      "equal": true
+    },
+    {
+      "path": "FactoringAux/Copied/PrimeMod.lean",
+      "reference_sha256": "c84f5802426cc8e9cfbefc0d49988ab89adebf0e73de80f16ab88d0b177986e3",
+      "variant_sha256": "c84f5802426cc8e9cfbefc0d49988ab89adebf0e73de80f16ab88d0b177986e3",
+      "equal": true
+    },
+    {
+      "path": "FactoringAux/SProg/Basic.lean",
+      "reference_sha256": "9bb88b6de967d94e707c2db2f603f242bcc0c6f5022caada2e56f9456ffc6f0c",
+      "variant_sha256": "9bb88b6de967d94e707c2db2f603f242bcc0c6f5022caada2e56f9456ffc6f0c",
+      "equal": true
+    },
+    {
+      "path": "FactoringAux/SProg/Compile.lean",
+      "reference_sha256": "93cbc98f5d8dd1a12970109519a7b21fd83f59d50d434ce64def615b9e8b329a",
+      "variant_sha256": "93cbc98f5d8dd1a12970109519a7b21fd83f59d50d434ce64def615b9e8b329a",
+      "equal": true
+    },
+    {
+      "path": "FactoringAux/SProg/Lang.lean",
+      "reference_sha256": "d7bd0ad07d5086b9b07edca1bdd7949b0216eaba420a43e5d30a1d09d0980429",
+      "variant_sha256": "d7bd0ad07d5086b9b07edca1bdd7949b0216eaba420a43e5d30a1d09d0980429",
+      "equal": true
+    },
+    {
+      "path": "FactoringAux/SProg/Lib.lean",
+      "reference_sha256": "d16ab9bc309160a3dcf698df174b2d37b23ad666d8e56f2209666f59030f8c13",
+      "variant_sha256": "d16ab9bc309160a3dcf698df174b2d37b23ad666d8e56f2209666f59030f8c13",
+      "equal": true
+    },
+    {
+      "path": "FactoringAux/SProg/Local.lean",
+      "reference_sha256": "d0f5e23aff62bdf04b783e92dc2edc53f6d7d03010041d1c82158f177e15b03a",
+      "variant_sha256": "d0f5e23aff62bdf04b783e92dc2edc53f6d7d03010041d1c82158f177e15b03a",
+      "equal": true
+    },
+    {
+      "path": "FactoringAux/SProg/Machine.lean",
+      "reference_sha256": "b5c63005ac841b73edee027b4425cca7f29a3b21583c18db87bc149f8205fa58",
+      "variant_sha256": "b5c63005ac841b73edee027b4425cca7f29a3b21583c18db87bc149f8205fa58",
+      "equal": true
+    },
+    {
+      "path": "FactoringAux/Simulate/Branch.lean",
+      "reference_sha256": "cbbc12deed61b3d41062a939f521f5a685547ddf4c10f2cf8230e31519c9c182",
+      "variant_sha256": "cbbc12deed61b3d41062a939f521f5a685547ddf4c10f2cf8230e31519c9c182",
+      "equal": true
+    },
+    {
+      "path": "FactoringAux/Simulate/Correct.lean",
+      "reference_sha256": "d6a42ff5de5b168bb0f00328669b9f770fbda99246a00d8cdffbb0d3b1009095",
+      "variant_sha256": "d6a42ff5de5b168bb0f00328669b9f770fbda99246a00d8cdffbb0d3b1009095",
+      "equal": true
+    },
+    {
+      "path": "FactoringAux/Simulate/Defs.lean",
+      "reference_sha256": "56fd0c23fbbf2f5509956d502b6c429bb3565de99f7cc0902d2bdd1747a2df3e",
+      "variant_sha256": "56fd0c23fbbf2f5509956d502b6c429bb3565de99f7cc0902d2bdd1747a2df3e",
+      "equal": true
+    },
+    {
+      "path": "FactoringAux/Simulate/IO.lean",
+      "reference_sha256": "2a1b7964a81729acfba0d636b16391249c2d263323f08d253e27221b7d897391",
+      "variant_sha256": "2a1b7964a81729acfba0d636b16391249c2d263323f08d253e27221b7d897391",
+      "equal": true
+    },
+    {
+      "path": "FactoringAux/Simulate/Instr.lean",
+      "reference_sha256": "784e9b6ef143d52e7944e7ec00953ce518ce6742750163543dd717891326c47c",
+      "variant_sha256": "784e9b6ef143d52e7944e7ec00953ce518ce6742750163543dd717891326c47c",
+      "equal": true
+    },
+    {
+      "path": "FactoringAux/Simulate/Loop.lean",
+      "reference_sha256": "0a4bcdb2c1f09178865c507cae8c1ff78cc3adc779809e347766c9d5ed7b01f8",
+      "variant_sha256": "0a4bcdb2c1f09178865c507cae8c1ff78cc3adc779809e347766c9d5ed7b01f8",
+      "equal": true
+    },
+    {
+      "path": "FactoringAux/Simulate/Main.lean",
+      "reference_sha256": "b07d6784bc233ea2e6e952e3d8b7838b2a46b63ddc1bc7824b39a2f8b3ccb4d1",
+      "variant_sha256": "b07d6784bc233ea2e6e952e3d8b7838b2a46b63ddc1bc7824b39a2f8b3ccb4d1",
+      "equal": true
+    },
+    {
+      "path": "FactoringAux/Simulate/Ops.lean",
+      "reference_sha256": "4abd5a9ef3687f7a04353b64ec6976cba119c9e4b3f394dac9ac4525715c25ee",
+      "variant_sha256": "4abd5a9ef3687f7a04353b64ec6976cba119c9e4b3f394dac9ac4525715c25ee",
+      "equal": true
+    },
+    {
+      "path": "FactoringAux/Simulate/Swap.lean",
+      "reference_sha256": "444f91911f34c39ced0a27f455a353a0c64114ae91c02a4b9e7fc63283826ef0",
+      "variant_sha256": "444f91911f34c39ced0a27f455a353a0c64114ae91c02a4b9e7fc63283826ef0",
+      "equal": true
+    }
+  ],
+  "changed_existing_lean_file_count": 25,
+  "changed_existing_lean_files": [
+    {
+      "path": "FactoringAux/EngineCostDeep.lean",
+      "reference_sha256": "1c641e656fcacc02d549c00a18b7a1dfec86e7e3e324367363037c73553707f7",
+      "variant_sha256": "9116193944d06e64cb21735739d350210bd2fc891214555dae70f1458de573d2"
+    },
+    {
+      "path": "FactoringAux/EngineCostRate.lean",
+      "reference_sha256": "078872b12d5501e6cca45c9bc9cccdd2e66049811faede128c9fe6f78d43f98d",
+      "variant_sha256": "5bbe792f550f476dd3cd4e656ef0d279f4f98c2630cab05ae467fed093ee7ddc"
+    },
+    {
+      "path": "FactoringAux/EngineCostReq.lean",
+      "reference_sha256": "656064ecbd49b607ca156c6a9e2c1648d27e9a784ca4450b7d60a83d4ad664b0",
+      "variant_sha256": "244fd1770dc888cde919b9c67a5a24cfbe94c1a0d1d84fd4291f68d2272d1299"
+    },
+    {
+      "path": "FactoringAux/EngineCostTop.lean",
+      "reference_sha256": "d1bb268c32416b03950fc9919d69b6eeca086a2fce5a0db684bbcdc17f5d5641",
+      "variant_sha256": "6e5f10038ce523dd7e24d8b3c504867aeb2c166af7e7e96221e6d33441741637"
+    },
+    {
+      "path": "FactoringAux/EngineGroup.lean",
+      "reference_sha256": "f190262f74b1e92dd2abab68c9d7c3fc48972e78c72cfac6baf2ceea13f83ebe",
+      "variant_sha256": "3c355916ef5aabdb96a0cbdddab5f20fee9c880b4565f685c0c11a1ff2e70bd4"
+    },
+    {
+      "path": "FactoringAux/EngineLevelEx.lean",
+      "reference_sha256": "0aa63b5306c1029b9c6af6cf150508bd1fc20d2c5343b0da0c1240bdecabd6a4",
+      "variant_sha256": "f387e71c04940e3ffaa708639a3a010366408b35c9ae1ef6ed10b7b9fd052bc0"
+    },
+    {
+      "path": "FactoringAux/EngineTop.lean",
+      "reference_sha256": "4060c002fc924a87ae9dbf98942c8bf98a6f315ab92c6b09ee35cd08b5942f8d",
+      "variant_sha256": "3eace2f77db37069ba1dc53c4789d4493e1f25f5969a21dc762ca7eb38b8ba64"
+    },
+    {
+      "path": "FactoringAux/UniCostDm.lean",
+      "reference_sha256": "dadc21afa5cd5d283a9461bde4e5a2d48c08d3d40b749ac8f8d4bc60ccd81284",
+      "variant_sha256": "db8edb560235980e90e000992c01b13ada30d5726831afdf4735c4b7afdca9d4"
+    },
+    {
+      "path": "FactoringAux/UniCostExp.lean",
+      "reference_sha256": "e9351eb8a3c7c9a7e9d878c990788a850540ddcdd6fa113ead185dbe56b02f47",
+      "variant_sha256": "c2a8f73b11d1ba14fddce3d5e9c4d2085913e201afe371b5d91c6a1c49a5e24a"
+    },
+    {
+      "path": "FactoringAux/UniCostLvl.lean",
+      "reference_sha256": "de28ebd4f1c1be22910fb188cccb011617bc434d1ac82ded458b781798ffab10",
+      "variant_sha256": "b15f249e43a26bce3ab450a8eb1bf8bcf0f5772f54a2958b596546b6dee03e17"
+    },
+    {
+      "path": "FactoringAux/UniCostPath.lean",
+      "reference_sha256": "3920ae08103248e10f09c6f63e16d16c3bb09e0e14380ba06933c7ff7aabf15b",
+      "variant_sha256": "9064f1f6951a03e4b9700e41db13b906fdc72de3828789c453d662c3e9667093"
+    },
+    {
+      "path": "FactoringAux/UniCostSetup.lean",
+      "reference_sha256": "e81fa0b9afa0d676cfc81de6ca8f0e43684a1dd75d9ca8838616d38a332b20ba",
+      "variant_sha256": "d72a905bc78783f4172ac882378cea9d4767255ef1401af050d08fde9639fa28"
+    },
+    {
+      "path": "FactoringAux/UniCostTop.lean",
+      "reference_sha256": "67176391eb8bbf8b952728a173f027fd7d5634e08904394917f4802191ac9e4d",
+      "variant_sha256": "71a2f707bb1ec0dbb54068e60c9d00ff195ae580c5fbcdf7e11975929eb47c4e"
+    },
+    {
+      "path": "FactoringAux/UniDmSpec.lean",
+      "reference_sha256": "2ddbd60e5089566512407a27f40efe26ac2aa8ade55d0e16dbcbdfddc5599fc6",
+      "variant_sha256": "a115f6ae3be888dcc88488c1cd1499cbe84d7a1aa4481cd94390a1266fd28114"
+    },
+    {
+      "path": "FactoringAux/UniEngine.lean",
+      "reference_sha256": "69a58ee2aa843c3c9a2c7abb76029136662805a49a646755166f5f376b3126e4",
+      "variant_sha256": "45b059b53f1de447b630ed30d5abebcdfa5c8f4700ffe63172ea64067e183df9"
+    },
+    {
+      "path": "FactoringAux/UniExp.lean",
+      "reference_sha256": "3c53b201923df36ff5de417c4b8a02f69ced3ba0fe1792217cd9c2a388938fa9",
+      "variant_sha256": "155f4e273890804a6c693edebf2f25763aca94a236091d5e7f7dd4feb4c98ffe"
+    },
+    {
+      "path": "FactoringAux/UniExpChain.lean",
+      "reference_sha256": "29e49f6af399016174c6393dfa1b83a8df4a65ad98cb79049c8443a683592033",
+      "variant_sha256": "bf346e1ea1d33bdfe720776fcad6cdf4e05ed37a2d274edfe5bb6c50d1fb9641"
+    },
+    {
+      "path": "FactoringAux/UniInst.lean",
+      "reference_sha256": "eb82bedfe58f1367a70162e682b5535cb240ba1d8126b24c464232a925fe7d93",
+      "variant_sha256": "8f5f782586b2878554d9b0aa9b1b5374857f5cc12ea0ea21fc7970d022977aca"
+    },
+    {
+      "path": "FactoringAux/UniLevelSpec.lean",
+      "reference_sha256": "9d4d86b4a9d5f8d49e9c5d317a8566a40c6a443e7cb155884d0b05897993d07d",
+      "variant_sha256": "e234a2fadff0fd08d8c1300959802bd00344c94aa0aaa9d74449e04da0afd8bc"
+    },
+    {
+      "path": "FactoringAux/UniLevelV.lean",
+      "reference_sha256": "788f0bb07c7c80c5cc00aabadcc54c8a2f34ace6b892150871e611f512d46a6e",
+      "variant_sha256": "e05a38369ae31faabcbff41503e9abfe4f57b84d4812634b1b3075fff7b77124"
+    },
+    {
+      "path": "FactoringAux/UniMain.lean",
+      "reference_sha256": "7654d4b59fcb724eba4941d20675372c53a965c9f6c603a4c675f03e418787f9",
+      "variant_sha256": "22d91c4f3dfc2f5ba27b3e371d81ff5445df5accbdcfbc3c9ab932fae95230c0"
+    },
+    {
+      "path": "FactoringAux/UniParams.lean",
+      "reference_sha256": "f9e9fb5978d1168b8eb8d356d0e2a6c768cc03564a0b358b85047187d4763736",
+      "variant_sha256": "6e38e689694a5fd84fd1fd6f726736134b52c619d75816085911b2bf39f10b47"
+    },
+    {
+      "path": "FactoringAux/UniSet.lean",
+      "reference_sha256": "2fe23a3f6842b3f06df2987fdc9b1d5331f41aa100dff3eee231b490f113c129",
+      "variant_sha256": "b5fcc5472da3cf106ab9cf6f1da2fe27fe01561d61f374c33d4d3857a5292129"
+    },
+    {
+      "path": "FactoringAux/UniTopSpec.lean",
+      "reference_sha256": "490bb6e3a55a7467aa993b4afb9ab8e147cece39a733faf7d50f0ff5d66e4555",
+      "variant_sha256": "47f0570ce1e68d8b1af2a8c3217cf8d6b7097aaea29d34f94087b6a88413841a"
+    },
+    {
+      "path": "FactoringAux/UniTopV.lean",
+      "reference_sha256": "d1d2a6aadb236f5c1d8666cd032eec9b0aa02681cc6350832fff48bce5025485",
+      "variant_sha256": "ba39a304999b14f8035360663cb0f3ff7efa0c2511d1939580a062f5472c1e0e"
+    }
+  ],
+  "added_reference_lean_file_count": 1,
+  "added_reference_lean_files": [
+    {
+      "path": "FactoringAux/GroupingThreshold.lean",
+      "variant_sha256": "d2f0f2e60e365841a409abc72f1afefc11ccfc7df2686a071ce6af3d302779ff"
+    }
+  ],
+  "unchanged_existing_lean_file_count": 121,
+  "missing_reference_lean_files": [],
+  "imports_of_placeholder_challenge": [],
+  "late_fix": {
+    "path": "FactoringAux/UniCostPath.lean",
+    "declaration": "Factoring.Aux.UCost.lvlV_mono",
+    "change": "The monotonicity witness uses exponent6 instead of8, matching lvlV(K)=(K+2)^(5*K^6+50).",
+    "semantic_effect": "Updates a proof of the existing bound; no program, target, or machine-semantics definition changes."
+  },
+  "verification": {
+    "patched_source": {
+      "target": "Solution",
+      "status": "completed",
+      "exit_code": 0,
+      "jobs": 1948,
+      "log_sha256": "86aab35ea583b3f9717358df3c5b2d39dd01ebd426f1f397fdc04d9ef172b4d6",
+      "completion_marker": "Build completed successfully (1948 jobs).",
+      "checked_declaration": "Factoring.subexponentialRate",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "closed_endpoint": {
+      "target": "FactoringK6.Certified",
+      "status": "completed against final actual48-base variant",
+      "exit_code": 0,
+      "log_path": "build/variant-formal/Certified.log",
+      "log_sha256": "ee7fb20cd65890b3def07e8291beb2c53feae8c89b7b8becc457c5c627eec91f",
+      "checked_declarations": [
+        {
+          "declaration": "Factoring.K6.factoring_root_rate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Factoring.K6.factoring_real_rate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Factoring.K6.certified_improvement",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    "quantitative_proof_sources": [
+      {
+        "path": "variants/k6/FactoringK6/BottomException.lean",
+        "sha256": "0281d6f0cf0baa133fff6963a33c07593da9d113099089ce53348c2c7caf4570"
+      },
+      {
+        "path": "variants/k6/FactoringK6/BudgetBounds.lean",
+        "sha256": "b07d26f7207938aab116a6e89a1800699b3acbd3eddc4ab473dd61b0bfaf738a"
+      },
+      {
+        "path": "variants/k6/FactoringK6/Certified.lean",
+        "sha256": "cb91ec426823aeb852ad07160a5779b068ac42b7a6acb28e02c45c63eedbc27c"
+      },
+      {
+        "path": "variants/k6/FactoringK6/ChainEnvelope.lean",
+        "sha256": "b72d9c44b731bf70d1b2d5e244dd6b5a29fb48a15b583451485bd1e59e283259"
+      },
+      {
+        "path": "variants/k6/FactoringK6/MachineBridge.lean",
+        "sha256": "f0421b61c1487428865f08e7a888d7a54aada4c13e60bb7373dad51467193201"
+      },
+      {
+        "path": "variants/k6/FactoringK6/Quantitative.lean",
+        "sha256": "447ff59e91d3b4f2a202473eb97e9c0689a73d4184a440e17084c584e978b0b8"
+      },
+      {
+        "path": "variants/k6/FactoringK6/RateArithmetic.lean",
+        "sha256": "9c2e31e121b977f115e75eb072ea70caaf11837ee3b893a911dfb2425af304da"
+      },
+      {
+        "path": "variants/k6/FactoringK6/RateInterpretation.lean",
+        "sha256": "283d47609bcaf7decc109a8f746d72ec772c8b8f0ae317c03b0fcec920382310"
+      }
+    ],
+    "reproduction_command": "bash tools/check_k6.sh"
+  },
+  "comparison_interpretation": {
+    "certified_saving_exponent": "1/30",
+    "reference_analysis_limit": "log(12/11)/log(16)",
+    "strict_comparison": "log(12/11)/log(16)<1/30",
+    "claim": "A stronger proved upper-bound exponent than the limiting exponent from the pinned reference contraction/growth analysis.",
+    "does_not_claim": [
+      "A lower bound on the reference machine actual running time",
+      "Measured practical speedup at specified input sizes",
+      "Universal novelty or superiority to every integer-factoring algorithm"
+    ]
+  }
+}

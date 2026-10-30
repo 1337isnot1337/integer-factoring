@@ -1,0 +1,39 @@
+# Successful local build markers for the actual patched Solution.
+# Deprecation and unused-variable warnings are omitted. The full log SHA-256
+# appears in k6-verification.json. This is the local incremental build,
+# not the separate clean archive reproduction performed by the k6-rate CI job.
+
+✔ [1939/1948] Built FactoringAux.UniCostPath (9.3s)
+⚠ [1940/1948] Built FactoringAux.UniCostTop (5.6s)
+✔ [1941/1948] Built FactoringAux.UniCostSetup (5.6s)
+✔ [1942/1948] Built FactoringAux.UniCostDm (3.6s)
+✔ [1943/1948] Built FactoringAux.UniCostKeep (7.3s)
+⚠ [1944/1948] Built FactoringAux.UniCost (6.2s)
+✔ [1945/1948] Built FactoringAux.UniMain (1.8s)
+✔ [1946/1948] Built Factoring_aux (2.0s)
+ℹ [1947/1948] Built Solution (1.7s)
+Build completed successfully (1948 jobs).
+
+# Axiom reports (wrapped whitespace normalized).
+'Factoring.Aux.Copied.PLib.Cmd.run_bnd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Factoring.Aux.Copied.PLib.run_relocA' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Factoring.Aux.Copied.PLib.cost_relocA' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Factoring.Aux.Copied.PLib.comp_ok' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Factoring.Aux.Copied.PLib.run_pro' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Factoring.Aux.Copied.PLib.run_epiFn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Factoring.Aux.Copied.PLib.acceptedStrings_wrapDec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Factoring.Aux.Copied.PLib.runsInPolyTime_wrapDec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Factoring.Aux.Copied.PLib.outOf_wrapFn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Factoring.Aux.Copied.PLib.runsInPolyTime_wrapFn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Factoring.Aux.Copied.PLib.Cmd.loop_inv' depends on axioms: [propext, Quot.sound]
+'Factoring.Aux.Copied.PLib.Cmd.run_sc_frame' depends on axioms: [propext, Quot.sound]
+'Factoring.Aux.Copied.PLib.Cmd.run_ar_frame' depends on axioms: [propext, Quot.sound]
+'Factoring.Aux.Copied.PLib.acceptedStrings_anyOne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Factoring.Aux.Copied.PLib.runsInPolyTime_anyOne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Factoring.Aux.Copied.PLib.polyFun_comp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Factoring.Aux.Copied.PLib.polyFun_append' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Factoring.Aux.Copied.PLib.polyFun_id' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Factoring.Aux.Copied.PLib.polyFun_const' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Factoring.Aux.Copied.PLib.run_mulSeg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Factoring.Aux.Copied.PLib.run_divmodSeg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Factoring.subexponentialRate' depends on axioms: [propext, Classical.choice, Quot.sound]
