@@ -1,0 +1,362 @@
+{
+  "formal_symmetric_determinant_translation": [
+    {
+      "independent_scalar_variables": 2,
+      "size": 1,
+      "surviving_formal_monomials": 2
+    },
+    {
+      "independent_scalar_variables": 6,
+      "size": 2,
+      "surviving_formal_monomials": 6
+    },
+    {
+      "independent_scalar_variables": 12,
+      "size": 3,
+      "surviving_formal_monomials": 20
+    },
+    {
+      "independent_scalar_variables": 20,
+      "size": 4,
+      "surviving_formal_monomials": 76
+    },
+    {
+      "independent_scalar_variables": 30,
+      "size": 5,
+      "surviving_formal_monomials": 312
+    },
+    {
+      "independent_scalar_variables": 42,
+      "size": 6,
+      "surviving_formal_monomials": 1384
+    }
+  ],
+  "literal_code_controls": [
+    {
+      "channel_free_cost_upper": 159,
+      "differential_cost_upper": 110,
+      "exact_jets": [
+        [
+          0,
+          1,
+          14,
+          14
+        ],
+        [
+          0,
+          2,
+          14,
+          14
+        ],
+        [
+          0,
+          3,
+          1,
+          36
+        ],
+        [
+          1,
+          2,
+          32,
+          5
+        ],
+        [
+          2,
+          1,
+          18,
+          10
+        ]
+      ],
+      "half": false,
+      "labels": 6,
+      "length": 3,
+      "pairs": 3
+    },
+    {
+      "channel_free_cost_upper": 48,
+      "differential_cost_upper": 39,
+      "exact_jets": [
+        [
+          0,
+          1,
+          3,
+          8
+        ],
+        [
+          0,
+          2,
+          3,
+          8
+        ],
+        [
+          1,
+          2,
+          8,
+          3
+        ],
+        [
+          2,
+          1,
+          4,
+          6
+        ]
+      ],
+      "half": true,
+      "labels": 3,
+      "length": 3,
+      "pairs": 3
+    },
+    {
+      "channel_free_cost_upper": 2786,
+      "differential_cost_upper": 1696,
+      "exact_jets": [
+        [
+          0,
+          2,
+          26,
+          298
+        ],
+        [
+          0,
+          3,
+          26,
+          298
+        ],
+        [
+          0,
+          4,
+          1,
+          676
+        ],
+        [
+          1,
+          1,
+          298,
+          26
+        ],
+        [
+          1,
+          2,
+          298,
+          26
+        ],
+        [
+          1,
+          3,
+          62,
+          187
+        ],
+        [
+          2,
+          2,
+          560,
+          243
+        ],
+        [
+          3,
+          1,
+          396,
+          26
+        ]
+      ],
+      "half": false,
+      "labels": 26,
+      "length": 4,
+      "pairs": 4
+    },
+    {
+      "channel_free_cost_upper": 957,
+      "differential_cost_upper": 690,
+      "exact_jets": [
+        [
+          0,
+          2,
+          8,
+          104
+        ],
+        [
+          0,
+          3,
+          8,
+          104
+        ],
+        [
+          1,
+          1,
+          64,
+          24
+        ],
+        [
+          1,
+          2,
+          64,
+          24
+        ],
+        [
+          1,
+          3,
+          17,
+          60
+        ],
+        [
+          2,
+          2,
+          128,
+          104
+        ],
+        [
+          3,
+          1,
+          80,
+          20
+        ]
+      ],
+      "half": true,
+      "labels": 12,
+      "length": 4,
+      "pairs": 4
+    },
+    {
+      "channel_free_cost_upper": 402,
+      "exact_jets": [
+        [
+          1,
+          5,
+          3,
+          12
+        ],
+        [
+          2,
+          4,
+          36,
+          27
+        ]
+      ],
+      "forms": 2,
+      "joint_order": 4,
+      "labels": 6,
+      "length": 6,
+      "pairs": 6
+    },
+    {
+      "channel_free_cost_upper": 20410,
+      "exact_jets": [
+        [
+          0,
+          3,
+          36,
+          152
+        ],
+        [
+          0,
+          4,
+          6,
+          144
+        ],
+        [
+          0,
+          5,
+          35,
+          812
+        ],
+        [
+          0,
+          6,
+          5,
+          818
+        ],
+        [
+          1,
+          2,
+          54,
+          64
+        ],
+        [
+          1,
+          3,
+          54,
+          64
+        ],
+        [
+          1,
+          4,
+          140,
+          302
+        ],
+        [
+          1,
+          5,
+          122,
+          270
+        ],
+        [
+          1,
+          6,
+          13,
+          523
+        ],
+        [
+          2,
+          3,
+          292,
+          248
+        ],
+        [
+          2,
+          4,
+          374,
+          302
+        ],
+        [
+          2,
+          5,
+          342,
+          823
+        ],
+        [
+          3,
+          2,
+          54,
+          48
+        ],
+        [
+          3,
+          3,
+          54,
+          64
+        ],
+        [
+          3,
+          4,
+          961,
+          381
+        ],
+        [
+          4,
+          3,
+          432,
+          246
+        ],
+        [
+          5,
+          2,
+          72,
+          64
+        ]
+      ],
+      "forms": 2,
+      "joint_order": 3,
+      "labels": 34,
+      "length": 7,
+      "pairs": 7
+    }
+  ],
+  "operator_coefficient_augmentation_rank_checks": 830,
+  "rank_one_bordered_determinant_checks": 800,
+  "source_sha256": {
+    "check_ward_charge_filtration.py": "9a1779ce79185c9d956b3ef03ecf1767cbfc162cefc96a3a43a2dd5019f587e3",
+    "ward_channel_free_bounds.py": "049a62806f9225734531cd6fb9f4d79d5d331b0b6f47102e56cc03732f1dc3eb",
+    "ward_differential_bounds.py": "4fadd47bd8a22f657a5f4def57e55ad27c1ee5c106c4bfaa3f07968246aa55fe",
+    "ward_rectangular_bounds.py": "2e17f2f1f8f900b27b5a685218a2129205b5beab089c084978e838bdfaa35883"
+  }
+}
