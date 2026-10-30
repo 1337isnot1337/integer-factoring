@@ -36,9 +36,9 @@ of an improved factoring machine.
 
 Here `alpha` denotes the bound
 
-\[
+```math
 T(n)=\exp\!\left(O\!\left(\frac{n}{(\log n)^\alpha}\right)\right).
-\]
+```
 
 Larger `alpha` is better. These are asymptotic bounds with very large constants;
 the finite checkers are not practical factoring implementations or runtime
@@ -74,6 +74,8 @@ benchmarks. The combined target remains much weaker than the upstream conjecture
 The Python checks require only Python 3 and the standard library:
 
 ```sh
+git clone https://github.com/1337isnot1337/integer-factoring.git
+cd integer-factoring
 make verify
 ```
 
