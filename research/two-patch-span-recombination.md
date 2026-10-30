@@ -79,10 +79,10 @@ Recombination can reduce those costs to the trivial one-piece values, but
 cannot improve on those values within these two binary spans. No larger
 width or other trace basis is excluded by this calculation.
 
-## 3. A concrete next synthesis target
+## 3. A tagged-coordinate family
 
-The next target should change the coefficient space while retaining an
-exact endpoint and only linearly many coefficients. One inexpensive candidate is to
+One way to change the coefficient space while retaining an exact endpoint
+and only linearly many coefficients is to
 assign weight two to one trace coordinate. Choose a patch `ell in {0,1}`
 and a coordinate `j_0`. Replace its factor
 
@@ -106,12 +106,11 @@ for a crossing, and it uses no ordinary-kernel multiplication, so neither
 the low-degree span barrier nor the full-cube composition cancellation
 excludes it.
 
-A bounded next experiment at `t=4` has at most 512 span tensors for each
-choice of tagged coordinate. The same complete XOR-potential calculation
-can test whether the optimum drops strictly below `d^2=256`. That is a
-diagnostic for useful new cancellation, not a claim that the factoring
-threshold has been reached. Any larger-width or asymptotic conclusion
-would still need its own identity, exact ranks, and resource accounting.
+The [subsequent tagged-coordinate control](tagged-two-patch-span-controls.md)
+completes all six tagged choices at `t=3` and all eight at `t=4`.
+Every binary-span optimum is again exactly `d^2`. This excludes those
+specific finite enrichments; larger widths and other coefficient spaces
+still require their own identities, ranks, and resource accounting.
 
 ## Reproduction
 

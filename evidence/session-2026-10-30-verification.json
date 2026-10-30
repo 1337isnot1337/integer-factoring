@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "recorded_utc": "2026-10-30T19:29:50.083284+00:00",
+  "recorded_utc": "2026-10-30T19:32:07.522525+00:00",
   "scope": "Ordinary proofs and exact finite checkers; no new Lean source or local Lean build.",
   "integrated_runs": [
     {
@@ -59,9 +59,20 @@
       "source_hash_refreshed_for_optional_output_dependency": true,
       "evidence": "two-patch-span-verification.json",
       "evidence_sha256": "091ac598bcd785937c0d81554d5a64524334e983c6c23e112c1e96cbd0642ef3"
+    },
+    {
+      "command": "python3 tools/check_tagged_two_patch_span.py --output /tmp/root-tagged-two-patch-span.json",
+      "exit_code": 0,
+      "seconds": 10.414429103999282,
+      "profiles": 14,
+      "rank_and_potential_data_match": true,
+      "timeout_negative_control_exit_code": 2,
+      "status": "passed",
+      "evidence": "tagged-two-patch-span-verification.json",
+      "evidence_sha256": "4c7265ebac6a4297495cf66cd8c4c936fb38a2236e1c9003777bbef43d12d771"
     }
   ],
-  "later_changes_scope": "Session documentation and the separately checked twisted-catalogue, dense-witness, and small trace-span packages.",
+  "later_changes_scope": "Session documentation and separately replayed twisted-catalogue, dense-witness, small trace-span, and all fourteen tagged trace-span packages.",
   "latest_observed_hosted_exact_certificates": {
     "head": "19944f6a8022389f97aaf2fc4fabe3d7389a4369",
     "run_id": 41114874104,

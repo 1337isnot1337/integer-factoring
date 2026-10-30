@@ -167,6 +167,12 @@ and any number of pieces cannot improve the one-piece crossing in those
 two spans. All 320 span tensors and 69,312 potential inequalities are
 checked. This is specific to F2 coefficients and the specified field models and trace bases.
 
+A [tagged-coordinate follow-up](tagged-two-patch-span-controls.md) also
+completes every single weight-two tag at those widths: fourteen profiles,
+4,864 tensor evaluations, and 2,190,592 exact potential inequalities.
+Every optimum is again `d^2`. The note specifies an untested bivariate
+space containing both scalar families, with at most `4t-1` coefficients.
+
 The remaining constructive task is to synthesize the full crossing while
 controlling total rank cost, possibly using restrictions or different
 trace bases. A large ordinary kernel rank alone does not accomplish this.
