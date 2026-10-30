@@ -1,5 +1,9 @@
 # Flag quotients exclude finite rank-sum seeds through eighty-two labels
 
+The later [geometric refinement](geometric-cut-rank-budget.md) extends
+this exact cutoff to ninety-five labels. This note retains the preceding
+flag theorem and its independent replay.
+
 ## Result and scope
 
 Every exact decomposition of the `d`-label crossing over every field satisfies

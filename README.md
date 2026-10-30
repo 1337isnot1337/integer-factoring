@@ -71,12 +71,13 @@ No uniform factoring exponent above `1/2` is proved here. One open approach seek
 
 The [weighted cut-rank theorem](research/weighted-cut-rank-budget.md) proves
 `sum_i sqrt(r_i*c_i) >= d*(2*H_(2d)-H_d-1)` for crossing decompositions over
-every field. The stronger [flag quotients](research/flagged-cut-rank-budget.md)
-now exclude the finite rank-sum amplification criterion through **82 labels**.
-They save one product in every general complement quotient and condition
-the weighted budgets on an actual piece of largest imbalance. The proof
-uses the earlier residual and two-product bounds, with exact rational
-verification of every required class. These restrictions concern that
+every field. The stronger [geometric cut budgets](research/geometric-cut-rank-budget.md)
+now exclude the finite rank-sum amplification criterion through **95 labels**.
+[Explicit integer Jacobian certificates](research/geometric-subspace-compression.md)
+force common input and output subspaces for arbitrary matrix tuples.
+They strengthen the earlier flag quotients, and the weighted budgets are
+conditioned on an actual piece of largest imbalance. Exact rational
+verification covers every required class. These restrictions concern that
 criterion and do not change the factoring exponent. Their replays are
 included in `make verify-frontier`.
 
@@ -87,14 +88,18 @@ field, including singular matrix pencils. A separate
 shows why these rank budgets alone cannot settle every dimension:
 abstract rank lists attain `O(d log d)` cost while satisfying them.
 Realizing those lists by compatible tensor pieces remains unresolved.
+The [geometric extension](research/geometric-cut-relaxation-limit.md)
+proves that the same lists also satisfy every new geometric subset budget.
 The same theorem gives a sharp common-block-flag bound, ruling out
 nested projection realizations of the dyadic rank lists and quantifying
 the rank cost of a perturbation.
 The [formal-degeneration lemma](research/weighted-cut-border-stability.md)
 also preserves the weighted quotient budgets when individual pieces
-have Laurent-series poles; the harmonic exclusion through 41 labels
-survives that operation. The stronger finite cutoffs require separate
-complement arguments and are not asserted for degenerations.
+have Laurent-series poles. Moving geometric subspaces and a
+[factor-kernel refinement](research/rank-one-formal-cutoff.md)
+now exclude formal rank-sum seeds through **71 labels**. The exact
+95-label cutoff uses stronger small-product arguments and remains a
+separate theorem.
 
 The [quadratic Boolean-code oracle](research/quadratic-code-oracle.md)
 computes crossing coefficients in polynomial time without expanding
@@ -117,8 +122,11 @@ the subsequent [frame-filtration theorem](research/frame-filtration-barrier.md)
 now proves the sharp leading obstruction `rho >= H_2(1/4)` for all
 affine-selector frames and arbitrary mixtures of their coefficient spans.
 Its common projection preserves the crossing and never increases either
-cut rank. Nonlinear selectors and nonlinear label maps remain separate
-construction routes.
+cut rank. A separate [diagonal-word theorem](research/diagonal-word-rank-sum-barrier.md)
+covers every unsymmetrized tensor-word combination in characteristic two:
+any crossing decomposition in that space has rank sum at least `d^(3/2)`,
+regardless of its number of pieces. Off-diagonal nonlinear selectors and
+nonlinear label maps remain separate construction routes.
 
 The [global-block transfer](research/global-block-field-transfer.md)
 permits coefficient fields to vary with the raw block length, with

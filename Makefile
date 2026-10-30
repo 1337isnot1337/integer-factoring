@@ -26,12 +26,18 @@ verify-frontier:
 	python3 tools/check_two_product_complement.py
 	python3 tools/check_two_product_seed_cutoff.py
 	python3 tools/check_flagged_cut_rank_budget.py
+	python3 tools/check_geometric_subspace_compression.py
+	python3 tools/check_geometric_cut_rank_budget.py
 	python3 tools/check_weighted_cut_relaxation_limit.py
+	python3 tools/check_geometric_cut_relaxation_limit.py
 	python3 tools/check_weighted_cut_border_stability.py
+	python3 tools/check_geometric_border_cutoff.py
+	python3 tools/check_rank_one_formal_cutoff.py
 	python3 tools/check_quadratic_crossing.py
 	python3 tools/check_word_restriction_barrier.py
 	python3 tools/check_code_sections.py
 	python3 tools/check_frame_filtration.py
+	python3 tools/check_diagonal_word_rank_sum.py
 	python3 tools/check_nonlinear_layer_probe.py
 	python3 tools/check_pauli_walsh_dictionary.py
 	python3 tools/check_pauli_walsh_pairs.py
