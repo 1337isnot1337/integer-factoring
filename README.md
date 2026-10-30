@@ -55,6 +55,7 @@ make verify-cubic-full-images # Full cubic coefficient spaces and reduced ranks
 make verify-linear-smith # All binary scalar pencils and the uniform linear barrier
 make verify-type-pressure # Exact common-type optimization and physical gauges
 make verify-controlled-smith # Controlled monomial crossings and the qutrit control
+make verify-sparse-holonomy # Exact singleton profiles and Gaussian entry identities
 ```
 
 The Python checks use Python 3 and its standard library. Some optional checks use NumPy for speed. The optional linear Smith catalogue and Schur central-rank checks also require a C++17 compiler.
@@ -100,6 +101,10 @@ has an exact binary-digit reduction to a four-label Gaussian crossing.
 The proof retains its exterior maps and energy projection and gives an
 explicit finite coefficient decomposition. Fixed-occupation sectors of
 the seed are complete crossings in their own right.
+A [sparse-index calculation](research/sparse-holonomy-singleton-profile.md)
+gives every Smith order for the zero-and-singleton index set and an exact
+Gaussian encoding for all Boolean down-sets. It supplies formulas for
+larger constructions; it does not assert a better factoring exponent.
 
 [Exact type optimization](research/type-optimized-crossing-pressure.md)
 reduces the best common letter frequencies to one rational pressure inequality.
