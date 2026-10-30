@@ -66,6 +66,13 @@ same pinned weighted factoring and sparse-nonzeroness reductions cited
 there. This note supplies the uniform selection and cost analysis when
 the coefficient field changes with input length.
 
+For the existential endpoint alone, [universal verified factoring
+search](universal-verified-factoring-search.md) is a shorter alternative:
+every fixed finite seed gives a program, and polynomially verified
+universal simulation preserves its score. The explicit selection below
+also describes the field, local decomposition, and recursive resource
+bounds of a machine within the tensor method.
+
 ## 1. Finite fields and exact records
 
 A field record consists of a prime `p`, a positive integer `e`, and a monic

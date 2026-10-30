@@ -1,0 +1,105 @@
+{
+  "balanced_leg_support_checks": 32,
+  "checker_sha256": "18a242de12116efcc1d26c90e0cca8a742de66f6eec3fd2f7dc7b7bd6b0bce99",
+  "dominated_partition_integer_bounds": 3572,
+  "integral_witness": [
+    {
+      "coefficient": 1,
+      "variables": [
+        0,
+        6,
+        9,
+        15
+      ]
+    },
+    {
+      "coefficient": -1,
+      "variables": [
+        0,
+        6,
+        11,
+        13
+      ]
+    },
+    {
+      "coefficient": -1,
+      "variables": [
+        1,
+        7,
+        8,
+        14
+      ]
+    },
+    {
+      "coefficient": 1,
+      "variables": [
+        1,
+        7,
+        10,
+        12
+      ]
+    },
+    {
+      "coefficient": -1,
+      "variables": [
+        2,
+        4,
+        9,
+        15
+      ]
+    },
+    {
+      "coefficient": 1,
+      "variables": [
+        2,
+        4,
+        11,
+        13
+      ]
+    },
+    {
+      "coefficient": 1,
+      "variables": [
+        3,
+        5,
+        8,
+        14
+      ]
+    },
+    {
+      "coefficient": -1,
+      "variables": [
+        3,
+        5,
+        10,
+        12
+      ]
+    }
+  ],
+  "odd_characteristic_coefficient_dimensions": {
+    "101": 225,
+    "11": 225,
+    "3": 225,
+    "5": 225,
+    "7": 225
+  },
+  "sample_characteristics_including_zero": [
+    0,
+    2,
+    3,
+    5,
+    7,
+    11,
+    13,
+    17,
+    19,
+    31,
+    61,
+    127,
+    257,
+    65537
+  ],
+  "scope": "Exact certificates for the uniform all-field binary-word and middle-layer barrier; no improved factoring exponent.",
+  "status": "passed",
+  "uniform_characteristic_block_cases": 57358
+}

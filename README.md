@@ -32,6 +32,7 @@ The composition uses the existing clique evaluator from [Anthropic's Appendix B]
 | Uniform endpoint from arbitrarily sparse finite seeds | Ordinary conditional theorem | [Bounded search and type amplification](research/gap-free-seed-score-transfer.md) |
 | One uniform finite-seed endpoint over all coefficient fields | Ordinary conditional theorem | [Input-wise selection](research/universal-field-seed-selection.md), [exact rank specialization](research/finite-field-rank-specialization.md) |
 | Auxiliary divisor-count exponent with leading coefficient one | Ordinary unconditional bound; overall score unchanged | [Exact integer parameter](research/optimized-divisor-count-bound.md) |
+| All-field binary-word and middle-layer obstruction | Ordinary theorem; restricted family only | [Uniform rank floor `rho >= 3/4`](research/all-field-binary-word-barrier.md) |
 
 The result table distinguishes verified machine bounds from conditional constructions and finite experiments. A merged PR or a passing finite test does not imply independent mathematical review.
 
@@ -43,7 +44,7 @@ From the repository root, run:
 make verify               # Python unit tests, exact certificates, and local link check
 make verify-frontier      # Focused research certificates
 make verify-post-half     # Larger optional rank tests
-make verify-further       # Score transfers, seed amplification, and divisor bounds
+make verify-further       # New transfers, arithmetic bounds, and word certificates
 make verify-docs          # Local Markdown-link check
 ```
 
@@ -75,6 +76,10 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 No uniform factoring exponent above `1/2` is proved here. One open approach seeks effective crossing pieces with total rank width `4*rho*lambda + o(lambda)` for `rho < 1/sqrt(2)`. The [score-transfer theorem](research/vanishing-slack-score-transfer.md) permits this arbitrary vanishing relative error, together with piece entropy `lambda/(log lambda)^(delta-o(1))`, and gives score `min(log2(1/rho), delta)`. Its uniform construction and factor-query hypotheses are part of the theorem. It supplies no new crossing family; finite rank improvements alone do not establish a stronger factoring bound.
 
 The [finite-seed endpoint theorem](research/gap-free-seed-score-transfer.md) removes any gap or generation-speed requirement from an enumerable improving sequence. Its [input-wise field extension](research/universal-field-seed-selection.md) gives one machine attaining the best finite rank-sum score over all coefficient fields. The [specialization proof](research/finite-field-rank-specialization.md) preserves every finite rank profile over a finite field, and type amplification makes prime fields sufficient for the same infimum. Finding a better finite certificate remains the mathematical requirement.
+
+Existence of one machine attaining the supremum of achievable scores also follows from [universal verified search](research/universal-verified-factoring-search.md), using polynomial-time primality testing. That is a standard search principle; the explicit tensor selector additionally describes the construction and its local resource costs.
+
+The [all-field binary-word theorem](research/all-field-binary-word-barrier.md) rules out crossing pieces invariant under simultaneous permutation of all binary positions, and includes middle Hamming layers and products of such layers. One piece must have both ranks at least `2^(3t/2-O(log^2 t))`, uniformly in the field, so this family cannot reach the half-rate threshold. This does not restrict arbitrary crossing constructions or factoring algorithms.
 
 See the [research index](research/INDEX.md) for completed arguments, scoped obstructions, and older candidates. Active work can also appear in [open pull requests](https://github.com/1337isnot1337/integer-factoring/pulls); branch research is not automatically a result on `main`.
 

@@ -18,6 +18,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Gap-free finite-seed score transfer](gap-free-seed-score-transfer.md): bounded search attains an enumerable rank-sum infimum, with no seed-gap or generation-speed hypothesis.
 - [Input-wise field and seed selection](universal-field-seed-selection.md): one uniform machine attains the finite-certificate endpoint over all coefficient fields, retaining one selected field throughout each input's recursion.
 - [Finite-field rank specialization](finite-field-rank-specialization.md): every finite rank profile over an arbitrary field specializes exactly to a finite field; prime-field seeds approximate the same infimum, and ring factor-channel bounds specialize without increasing.
+- [Universal verified factoring search](universal-verified-factoring-search.md): the standard verified-search principle already gives one machine attaining the supremum score; direct constructions retain additional resource information.
 - [Optimized divisor-count bound](optimized-divisor-count-bound.md): a computable `q_*(n)=(1+o(1))n/log2 n` replaces the earlier auxiliary leading coefficient nine by one.
 - [Pieces-to-factoring transfer](pieces-to-factoring.md): conditional crossing-parameter transfer, with full bit-cost accounting.
 - [Scale-one modular transfer](scale-one-modular-transfer.md): fixed-field transfer and machine costs.
@@ -31,6 +32,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Obstructions and work beyond 1/2
 
+- [All-field binary-word and layer barrier](all-field-binary-word-barrier.md): a common eight-monomial functional forces `rho >= 3/4` for the entire position-invariant space, uniformly in the field, with middle-layer and product-layer versions.
+- [Characteristic-two word proof](modular-binary-word-barrier.md): the modular simple-module certificate and a composition-series rank argument underlying the all-field extension.
 - [Directions beyond half](post-half-directions.md): experiments, scope, and unresolved questions.
 - [Network tradeoff](half-top-structure.md): restriction for the current local-enumeration and wire-channel constructor.
 - [Restricted-label counterexample](half-restricted-labels.md): failure of a proposed low-mode dimension reduction.

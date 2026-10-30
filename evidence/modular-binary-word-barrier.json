@@ -1,0 +1,64 @@
+{
+  "binary_position_class_cases": 16381,
+  "checker_sha256": "72e2d19c3b5283a9bcf7ed8a709f501c1a5fb50cef4e7296dafa4fbe6a63ea03",
+  "combined_common_dimension": 18,
+  "exact_upper_unipotent_distribution_checks": 444,
+  "field_characteristic": 2,
+  "frobenius_powers_checked": 7,
+  "independent_hook_formula_and_integer_bounds": 256,
+  "independent_standard_tableau_vectors": 74,
+  "scope": "Exact finite certificates supporting the written modular all-length rank proof; no new factoring exponent.",
+  "simple_adjoint_coefficient_dimension": 196,
+  "simple_adjoint_common_dimension": 17,
+  "status": "passed",
+  "witness_monomials": [
+    [
+      0,
+      6,
+      9,
+      15
+    ],
+    [
+      0,
+      6,
+      11,
+      13
+    ],
+    [
+      1,
+      7,
+      8,
+      14
+    ],
+    [
+      1,
+      7,
+      10,
+      12
+    ],
+    [
+      2,
+      4,
+      9,
+      15
+    ],
+    [
+      2,
+      4,
+      11,
+      13
+    ],
+    [
+      3,
+      5,
+      8,
+      14
+    ],
+    [
+      3,
+      5,
+      10,
+      12
+    ]
+  ]
+}
