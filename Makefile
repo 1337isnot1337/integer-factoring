@@ -26,6 +26,8 @@ verify-frontier:
 	python3 tools/check_binary_prefix_channel.py
 	python3 tools/check_near_ones_channels.py
 	python3 tools/check_primary_central_gram.py
+	python3 tools/check_modular_crossing.py
+	python3 tools/check_sparse_divisor_nonzeroness.py
 
 verify-formal:
 	bash tools/check_formal.sh

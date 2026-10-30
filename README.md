@@ -60,6 +60,21 @@ exponent `log2(1/rho)`. It includes a computable pad and the complete bit-cost
 connection. For example, a family with `rho=7/10` would give exponent
 `0.514573...`. This is a conditional target; that family is not constructed.
 
+The [fixed-characteristic transfer](research/scale-one-modular-transfer.md)
+opens another route. An effective scale-one crossing family over one fixed
+finite field gives the same factoring exponent `log2(1/rho)`, up to and
+including `alpha=1`. A [sparse divisor-polynomial argument](research/sparse-divisor-nonzeroness.md)
+detects permitted divisors using cyclic polynomial rings, with additional
+cost `exp(O(n/log n))`. The proof includes weighted input construction,
+circuit generation, ring arithmetic, and finite-alphabet machine costs.
+
+A [normalized modular construction](research/modular-crossing.md) supplies
+such a family for every fixed `1/sqrt(2)<rho<1`. It removes the vanishing
+factorial multiplier and permits rings with zero divisors. Its present
+width bound approaches the half exponent from below. It supplies no family
+with `rho<1/sqrt(2)`. A local one-bit improvement also fails to tensor into
+a better asymptotic profile, as the note's exact rank argument shows.
+
 Two [operator restrictions](research/half-recurrence-barrier.md) rule out
 direct shortcuts. The current operators permit only linear changes of the
 mode weights. Deleting higher modes breaks their identities, as exact
@@ -107,6 +122,8 @@ not establish optimality of the full central piece.
 
 Run `make verify-frontier` for these exact checks. The strongest complete
 ordinary factoring argument here remains exponent `1/2`.
+The [research verification record](evidence/beyond-half-verification.json)
+lists the proof scope, reviewed claims, checks, and artifact hashes.
 
 ## Lean theorem: exponent 1/30
 
@@ -297,6 +314,15 @@ requires real-number approximation in the algorithm.
   all-weight Gram identity after a row swap, with
   [exact rational checks](evidence/primary-central-gram.json). A large-image
   asymptotic theorem remains open.
+- [Fixed-characteristic factoring transfer](research/scale-one-modular-transfer.md)
+  and [sparse divisor nonzeroness](research/sparse-divisor-nonzeroness.md):
+  a complete conditional route from effective modular crossings to one
+  factoring machine, including every ring and divisor-recovery cost.
+- [Normalized modular crossings](research/modular-crossing.md): exact
+  scale-one pieces over a fixed finite field and all its commutative
+  coefficient algebras. [Identity checks](evidence/modular-crossing.json)
+  and [sparse-recovery checks](evidence/sparse-divisor-nonzeroness.json)
+  cover their finite scope separately from the asymptotic proofs.
 - [Baseline audit](research/baseline-audit.md): exact depth recurrence,
   contraction, all-level cost bound, and machine-cost bridge.
 - [Verified k6 theorem](research/verified-k6.md): complete machine proof,

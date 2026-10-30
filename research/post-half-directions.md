@@ -417,6 +417,50 @@ An improvement beyond the square-root rate still needs one concrete
 new result. Examples are a uniform crossing decomposition with polynomially
 many pieces and `rho < 1/sqrt(2)`, a useful rank compression of the actual
 Appendix B tensors, or a different recursion that avoids the grid
-growth restriction proved above. Each must include the sizes of its
-integers, an effective construction, and its complete evaluation cost.
+growth restriction proved above. Each must include its coefficient
+representation, an effective construction, and its complete evaluation cost.
 No such result is established here.
+
+## 10. Subsequent constructive results and sharper restrictions
+
+The later [homogeneous-dual construction](homogeneous-duals.md) gives an
+alternative effective family over the integers. A polynomial of degree
+at most `h-1` in the sparse operator `UD` supplies the inverse pairing,
+with polynomial coefficient bit lengths. It retains `rho=1/sqrt(2)`.
+On primitive input pairs, the [central-rank identity](primary-central-gram.md)
+expresses the complete central piece as a positive Gram form after a row
+swap. Its rank equals the joint primitive fusion image. Bounding that
+image asymptotically remains open.
+
+The [normalized modular family](modular-crossing.md) removes the factorial
+multiplier in a fixed characteristic. The quotient state space is valid
+under every source operator, and its crossing scalar is one. The proven
+width condition holds for each fixed `1/sqrt(2)<rho<1`. Prime-power
+homogeneous variants have fewer angle terms, but their finite ranks do
+not establish a better contraction. A tempting symmetrized one-bit
+construction has a separate rank obstruction of `rho>=3/4`.
+
+The [fixed-field transfer](scale-one-modular-transfer.md) and
+[sparse divisor-polynomial theorem](sparse-divisor-nonzeroness.md) close
+the factoring connection for any effective scale-one modular family.
+They use cyclic polynomial rings and a sparse nonzeroness test, with
+additional bit cost `exp(O(n/log n))`. The transfer preserves every
+exponent through `alpha=1`; integer-count reconstruction is unnecessary.
+Thus a suitable improved family in one fixed characteristic would be
+enough. No such improved family is supplied by these results.
+
+The new restrictions are also more precise than the original finite
+experiments. The [actual binary-prefix theorem](binary-prefix-top-channel.md)
+proves top-factor rank `2^(sqrt(2)lambda+O(log lambda))`. The
+[near-all-ones extension](near-ones-labels.md) retains the corresponding
+lower bound under arbitrary common padding. These results concern
+separate lossless factor compression. The [finite rectangular-grid theorem](rectangular-grid-frontier.md)
+concerns the declared-profile recursion. The [graded-space theorem](graded-space-barrier.md)
+concerns replacing the ambient growth law within a fixed energy window.
+None is a general lower bound for factoring or for joint refactorizations.
+
+The strongest complete ordinary factoring theorem remains `alpha=1/2`.
+The immediate constructive target is an effective characteristic-zero or
+fixed-characteristic family with `rho<1/sqrt(2)`, with a proved profile
+for its complete pieces. The transfer and cost obligations are now
+available for either coefficient setting.

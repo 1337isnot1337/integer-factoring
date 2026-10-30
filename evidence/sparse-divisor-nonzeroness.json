@@ -1,0 +1,48 @@
+{
+  "central_binomial_prime_supply_cases": 64,
+  "complete_prime_factorization_cases": 126,
+  "constructed_prime_factorization_cases": 1024,
+  "cyclic_monomial_multiplication_cases": 373,
+  "cyclic_ring_queries": 1158077,
+  "digit_weight_substitution_cases": 2550,
+  "explicit_bound_examples": [
+    {
+      "input_bit_bound": 64,
+      "log2_K": 56
+    },
+    {
+      "input_bit_bound": 256,
+      "log2_K": 150
+    },
+    {
+      "input_bit_bound": 1024,
+      "log2_K": 416
+    },
+    {
+      "input_bit_bound": 4096,
+      "log2_K": 1204
+    },
+    {
+      "input_bit_bound": 16384,
+      "log2_K": 3627
+    },
+    {
+      "input_bit_bound": 65536,
+      "log2_K": 11411
+    }
+  ],
+  "finite_divisor_bound_cases": 4094,
+  "negative_controls": [
+    "single modulus three misses X^3+X^9 over F2",
+    "unweighted parity misses two permitted divisors",
+    "omitting subtraction of X returns divisor one",
+    "duplicate witnesses cancel all F2 coefficients"
+  ],
+  "prefix_queries": 4359,
+  "prime_input_endpoint_cases": 90,
+  "prime_supply_cutoff_cases": 2041,
+  "scope": "exact sparse-ring identities and finite prefix recovery with an exhaustive divisor oracle; no fast evaluator implementation or improved crossing family",
+  "smallest_prime_factor_recovery_cases": 378,
+  "sparse_support_characteristic_cases": 8079,
+  "vanishing_reductions_checked_against_anchor_product": 768
+}
