@@ -56,3 +56,22 @@ jobs:
           echo "$RUNNER_TEMP/lean-4.35.0-linux/bin" >> "$GITHUB_PATH"
       - name: Rebuild and check the certified k6 rate
         run: bash tools/check_k6.sh
+
+  half-rate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    env:
+      LEAN_NUM_THREADS: 2
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - name: Install pinned Appendix Lean release
+        run: |
+          curl --fail --location --retry 3 --silent --show-error \
+            https://github.com/leanprover/lean4/releases/download/v4.33.1/lean-4.33.1-linux.tar.zst \
+            --output "$RUNNER_TEMP/lean-half.tar.zst"
+          echo "890afd185370f85666025b883914ab4f4b339136f8c96167b69cfb62aecaf235  $RUNNER_TEMP/lean-half.tar.zst" | sha256sum --check
+          tar --no-same-owner --zstd -xf "$RUNNER_TEMP/lean-half.tar.zst" -C "$RUNNER_TEMP"
+          rm "$RUNNER_TEMP/lean-half.tar.zst"
+          echo "$RUNNER_TEMP/lean-4.33.1-linux/bin" >> "$GITHUB_PATH"
+      - name: Rebuild and check the half-rate factoring theorem
+        run: make verify-half-appendix

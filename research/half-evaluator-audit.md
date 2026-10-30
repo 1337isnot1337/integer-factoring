@@ -14,10 +14,12 @@ oracle that evaluates arbitrary functions. Its input contains all clique
 tables in a fixed binary encoding. The fragment and all constants can be
 chosen once, independently of the factoring input and recursion depth.
 
-The new composition and width-limitation arguments below are handwritten.
-The pinned source was inspected, but no fresh Lean build of that project was
-performed for this note. Compatibility between two Lean versions is a
-formalization task; it is not a premise of an ordinary composition proof.
+The composition and width-limitation arguments below are handwritten. The
+pinned source was subsequently rebuilt, and
+[ExplicitPad.lean](../formal-appendix/ExplicitPad.lean) checks the assembled
+evaluator with an explicit pad under Lean 4.33.1. Compatibility with the
+factoring reference's Lean 4.35.0 development and the complete machine
+composition remain formalization tasks.
 
 ## 1. The theorem that is actually available
 
@@ -396,8 +398,9 @@ the uniform asymptotic construction.
 
 This audit traced the assembled theorem, the named recursion, the machine
 and data definitions, and the top-constructor properties above. The new
-composition is an ordinary written mathematical proof. No fresh Lean
-certificate for the composition or factoring endpoint is asserted.
+composition is an ordinary written mathematical proof. The later Lean check
+certifies the evaluator and explicit pad, not the composition or factoring
+endpoint.
 
 The following are SHA-256 hashes of the inspected source files at the
 pinned commit. Paths are relative to `eth/proof/`.
