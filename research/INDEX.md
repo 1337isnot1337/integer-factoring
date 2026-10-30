@@ -22,6 +22,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Modular angle factors](homogeneous-central-modular-symbols.md): Boolean-zeta symbols, a three-block polynomial-time Pfaffian, reciprocal coefficients, and exact parity support.
 - [Eighth-order modular residual](homogeneous-central-eighth-jet.md): an all-size even-energy identity, explicit determinant-minor pairing, diagonal state charge, and a sharp weight-32 witness.
 - [Complete homogeneous profiles](homogeneous-central-profiles.md): exact larger cut ranks, Taylor coefficients, and independently checked native polynomial Pfaffians.
+- [Complement-shell crossings](complement-shell-crossings.md): explicit identity-Gram labels, exact sparse support, a universal four-state tensor, and an all-size paired reciprocal-pencil identity.
 - [Homogeneous modular selection](homogeneous-central-selection.md): one operator weight at every label width, selected rectangular vacuum minors, and an effective uniform half-rate construction.
 - [Noncommutative group-word crossings](noncommutative-crossing-orbits.md): exact all-size construction, compressed constant cut, optimal rank-28 central shears on 64 labels, and complete-profile limitations.
 - [Coded central quotients](coded-central-crossings.md): binary-code group construction, exact constant-cut compression, matroid bounds, and an all-coefficient row filtration estimate.
@@ -35,6 +36,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 ## Obstructions and work beyond 1/2
 
 - [Directions beyond half](post-half-directions.md): experiments, scope, and unresolved questions.
+- [Quadratic charges and label entropy](binary-quadratic-charge-shells.md): exact residue-syndrome characters and dimension bounds for joint eigenspaces of all low quadratic charges.
 - [Network tradeoff](half-top-structure.md): restriction for the current local-enumeration and wire-channel constructor.
 - [Restricted-label counterexample](half-restricted-labels.md): failure of a proposed low-mode dimension reduction.
 - [Restricted intermediate spans](half-restricted-span.md): quantitative obstruction, with precise selected-label conditions.

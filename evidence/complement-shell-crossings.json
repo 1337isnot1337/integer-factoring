@@ -1,0 +1,1115 @@
+{
+  "canonical_all_width_construction_checks": [
+    {
+      "available_in_selected_shell": 1667,
+      "label_bits": 1,
+      "labels": 2,
+      "length": 9,
+      "mode_cutoff": 128,
+      "operator_weight": 161,
+      "partner_weight": 991,
+      "vacuum_gram_entries_checked": 4
+    },
+    {
+      "available_in_selected_shell": 5448,
+      "label_bits": 2,
+      "labels": 4,
+      "length": 10,
+      "mode_cutoff": 128,
+      "operator_weight": 200,
+      "partner_weight": 1080,
+      "vacuum_gram_entries_checked": 16
+    },
+    {
+      "available_in_selected_shell": 18084,
+      "label_bits": 3,
+      "labels": 8,
+      "length": 11,
+      "mode_cutoff": 128,
+      "operator_weight": 241,
+      "partner_weight": 1167,
+      "vacuum_gram_entries_checked": 64
+    },
+    {
+      "available_in_selected_shell": 61108,
+      "label_bits": 4,
+      "labels": 16,
+      "length": 12,
+      "mode_cutoff": 128,
+      "operator_weight": 288,
+      "partner_weight": 1248,
+      "vacuum_gram_entries_checked": 256
+    },
+    {
+      "available_in_selected_shell": 208960,
+      "label_bits": 5,
+      "labels": 32,
+      "length": 13,
+      "mode_cutoff": 128,
+      "operator_weight": 337,
+      "partner_weight": 1327,
+      "vacuum_gram_entries_checked": 1024
+    }
+  ],
+  "cases": [
+    {
+      "abstract_mode_XOR_violation": {
+        "indices_x_y_u_v": [
+          0,
+          0,
+          4,
+          3
+        ],
+        "labels": [
+          [
+            1,
+            3,
+            13,
+            15
+          ],
+          [
+            1,
+            3,
+            13,
+            15
+          ],
+          [
+            3,
+            5,
+            9,
+            15
+          ],
+          [
+            1,
+            7,
+            11,
+            13
+          ]
+        ],
+        "shift_support": [
+          -64,
+          32
+        ]
+      },
+      "complete_crossing_entries": 4096,
+      "complete_profile_sha256": "3e036ea0e071783e922a70419dc56f21df1fb81f3b29f66654eb4932abb8127d",
+      "finite_seed_threshold": 18.930500992570288,
+      "independent_Python_Pfaffian_entries": 64,
+      "independent_universal_local_tensor_entries": 4096,
+      "labels": 8,
+      "length": 4,
+      "maximum_rank_product": 841,
+      "minimum_residual_taylor_valuation": 32,
+      "mode_cutoff": 16,
+      "nonzero_profile": [
+        [
+          -64,
+          1,
+          64
+        ],
+        [
+          -32,
+          8,
+          30
+        ],
+        [
+          -16,
+          6,
+          6
+        ],
+        [
+          0,
+          29,
+          29
+        ],
+        [
+          16,
+          6,
+          6
+        ],
+        [
+          32,
+          30,
+          8
+        ],
+        [
+          64,
+          64,
+          1
+        ]
+      ],
+      "operator_partitions": [
+        [
+          1,
+          3,
+          13,
+          15
+        ],
+        [
+          1,
+          5,
+          11,
+          15
+        ],
+        [
+          1,
+          7,
+          9,
+          15
+        ],
+        [
+          3,
+          5,
+          9,
+          15
+        ],
+        [
+          1,
+          7,
+          11,
+          13
+        ],
+        [
+          3,
+          5,
+          11,
+          13
+        ],
+        [
+          3,
+          7,
+          9,
+          13
+        ],
+        [
+          5,
+          7,
+          9,
+          11
+        ]
+      ],
+      "operator_weight": 32,
+      "partner_partitions": [
+        [
+          1,
+          3,
+          13,
+          15
+        ],
+        [
+          1,
+          5,
+          11,
+          15
+        ],
+        [
+          1,
+          7,
+          9,
+          15
+        ],
+        [
+          1,
+          7,
+          11,
+          13
+        ],
+        [
+          3,
+          5,
+          9,
+          15
+        ],
+        [
+          3,
+          5,
+          11,
+          13
+        ],
+        [
+          3,
+          7,
+          9,
+          13
+        ],
+        [
+          5,
+          7,
+          9,
+          11
+        ]
+      ],
+      "partner_weight": 32,
+      "power_two_residual_jet_ranks": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          4,
+          0,
+          0
+        ],
+        [
+          8,
+          0,
+          0
+        ],
+        [
+          16,
+          0,
+          0
+        ],
+        [
+          32,
+          30,
+          30
+        ],
+        [
+          64,
+          64,
+          64
+        ],
+        [
+          128,
+          64,
+          1
+        ]
+      ],
+      "rank_sum": 87.98386676965933,
+      "seconds": 0.128108109,
+      "state_energy": 32,
+      "state_partitions": [
+        [
+          1,
+          3,
+          13,
+          15
+        ],
+        [
+          1,
+          5,
+          11,
+          15
+        ],
+        [
+          1,
+          7,
+          9,
+          15
+        ],
+        [
+          3,
+          5,
+          9,
+          15
+        ],
+        [
+          1,
+          7,
+          11,
+          13
+        ],
+        [
+          3,
+          5,
+          11,
+          13
+        ],
+        [
+          3,
+          7,
+          9,
+          13
+        ],
+        [
+          5,
+          7,
+          9,
+          11
+        ]
+      ],
+      "vacuum_gram_entries_checked": 64
+    },
+    {
+      "abstract_mode_XOR_violation": {
+        "indices_x_y_u_v": [
+          0,
+          1,
+          3,
+          1
+        ],
+        "labels": [
+          [
+            1,
+            9,
+            15
+          ],
+          [
+            1,
+            11,
+            13
+          ],
+          [
+            3,
+            9,
+            13
+          ],
+          [
+            1,
+            11,
+            13
+          ]
+        ],
+        "shift_support": [
+          -16,
+          16
+        ]
+      },
+      "complete_crossing_entries": 1296,
+      "complete_profile_sha256": "96c2969667d16ec7cd95fb4e0cea17a04581c4e41c4ee72992ebafde4bf1160c",
+      "finite_seed_threshold": 12.602945316172725,
+      "independent_Python_Pfaffian_entries": 64,
+      "independent_universal_local_tensor_entries": 1296,
+      "labels": 6,
+      "length": 3,
+      "maximum_rank_product": 250,
+      "minimum_residual_taylor_valuation": 16,
+      "mode_cutoff": 16,
+      "nonzero_profile": [
+        [
+          -32,
+          3,
+          10
+        ],
+        [
+          -16,
+          10,
+          25
+        ],
+        [
+          0,
+          7,
+          20
+        ],
+        [
+          16,
+          18,
+          11
+        ],
+        [
+          32,
+          12,
+          4
+        ],
+        [
+          48,
+          36,
+          1
+        ]
+      ],
+      "operator_partitions": [
+        [
+          1,
+          7,
+          15
+        ],
+        [
+          3,
+          5,
+          15
+        ],
+        [
+          1,
+          9,
+          13
+        ],
+        [
+          3,
+          7,
+          13
+        ],
+        [
+          3,
+          9,
+          11
+        ],
+        [
+          5,
+          7,
+          11
+        ]
+      ],
+      "operator_weight": 23,
+      "partner_partitions": [
+        [
+          1,
+          9,
+          15
+        ],
+        [
+          1,
+          11,
+          13
+        ],
+        [
+          3,
+          7,
+          15
+        ],
+        [
+          3,
+          9,
+          13
+        ],
+        [
+          5,
+          7,
+          13
+        ],
+        [
+          5,
+          9,
+          11
+        ]
+      ],
+      "partner_weight": 25,
+      "power_two_residual_jet_ranks": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          4,
+          0,
+          0
+        ],
+        [
+          8,
+          0,
+          0
+        ],
+        [
+          16,
+          24,
+          24
+        ],
+        [
+          32,
+          26,
+          28
+        ],
+        [
+          64,
+          24,
+          4
+        ]
+      ],
+      "rank_sum": 60.12022395183859,
+      "seconds": 0.013784955,
+      "state_energy": 23,
+      "state_partitions": [
+        [
+          1,
+          7,
+          15
+        ],
+        [
+          3,
+          5,
+          15
+        ],
+        [
+          1,
+          9,
+          13
+        ],
+        [
+          3,
+          7,
+          13
+        ],
+        [
+          3,
+          9,
+          11
+        ],
+        [
+          5,
+          7,
+          11
+        ]
+      ],
+      "vacuum_gram_entries_checked": 36
+    },
+    {
+      "abstract_mode_XOR_violation": {
+        "indices_x_y_u_v": [
+          0,
+          1,
+          5,
+          1
+        ],
+        "labels": [
+          [
+            1,
+            17,
+            31
+          ],
+          [
+            1,
+            19,
+            29
+          ],
+          [
+            3,
+            17,
+            29
+          ],
+          [
+            1,
+            19,
+            29
+          ]
+        ],
+        "shift_support": [
+          -32,
+          32
+        ]
+      },
+      "complete_crossing_entries": 614656,
+      "complete_profile_sha256": "509a1c418d8219ee80474786b14ae467cdd7c5c6f0686d1cace6edfe863503e7",
+      "finite_seed_threshold": 111.32443888810221,
+      "independent_Python_Pfaffian_entries": 64,
+      "independent_universal_local_tensor_entries": 614656,
+      "labels": 28,
+      "length": 3,
+      "maximum_rank_product": 76048,
+      "minimum_residual_taylor_valuation": 32,
+      "mode_cutoff": 32,
+      "nonzero_profile": [
+        [
+          -64,
+          7,
+          346
+        ],
+        [
+          -32,
+          95,
+          422
+        ],
+        [
+          0,
+          194,
+          392
+        ],
+        [
+          32,
+          524,
+          99
+        ],
+        [
+          64,
+          378,
+          8
+        ],
+        [
+          96,
+          784,
+          1
+        ]
+      ],
+      "operator_partitions": [
+        [
+          1,
+          15,
+          31
+        ],
+        [
+          3,
+          13,
+          31
+        ],
+        [
+          5,
+          11,
+          31
+        ],
+        [
+          7,
+          9,
+          31
+        ],
+        [
+          1,
+          17,
+          29
+        ],
+        [
+          3,
+          15,
+          29
+        ],
+        [
+          5,
+          13,
+          29
+        ],
+        [
+          7,
+          11,
+          29
+        ],
+        [
+          1,
+          19,
+          27
+        ],
+        [
+          3,
+          17,
+          27
+        ],
+        [
+          5,
+          15,
+          27
+        ],
+        [
+          7,
+          13,
+          27
+        ],
+        [
+          9,
+          11,
+          27
+        ],
+        [
+          1,
+          21,
+          25
+        ],
+        [
+          3,
+          19,
+          25
+        ],
+        [
+          5,
+          17,
+          25
+        ],
+        [
+          7,
+          15,
+          25
+        ],
+        [
+          9,
+          13,
+          25
+        ],
+        [
+          3,
+          21,
+          23
+        ],
+        [
+          5,
+          19,
+          23
+        ],
+        [
+          7,
+          17,
+          23
+        ],
+        [
+          9,
+          15,
+          23
+        ],
+        [
+          11,
+          13,
+          23
+        ],
+        [
+          7,
+          19,
+          21
+        ],
+        [
+          9,
+          17,
+          21
+        ],
+        [
+          11,
+          15,
+          21
+        ],
+        [
+          11,
+          17,
+          19
+        ],
+        [
+          13,
+          15,
+          19
+        ]
+      ],
+      "operator_weight": 47,
+      "partner_partitions": [
+        [
+          1,
+          17,
+          31
+        ],
+        [
+          1,
+          19,
+          29
+        ],
+        [
+          1,
+          21,
+          27
+        ],
+        [
+          1,
+          23,
+          25
+        ],
+        [
+          3,
+          15,
+          31
+        ],
+        [
+          3,
+          17,
+          29
+        ],
+        [
+          3,
+          19,
+          27
+        ],
+        [
+          3,
+          21,
+          25
+        ],
+        [
+          5,
+          13,
+          31
+        ],
+        [
+          5,
+          15,
+          29
+        ],
+        [
+          5,
+          17,
+          27
+        ],
+        [
+          5,
+          19,
+          25
+        ],
+        [
+          5,
+          21,
+          23
+        ],
+        [
+          7,
+          11,
+          31
+        ],
+        [
+          7,
+          13,
+          29
+        ],
+        [
+          7,
+          15,
+          27
+        ],
+        [
+          7,
+          17,
+          25
+        ],
+        [
+          7,
+          19,
+          23
+        ],
+        [
+          9,
+          11,
+          29
+        ],
+        [
+          9,
+          13,
+          27
+        ],
+        [
+          9,
+          15,
+          25
+        ],
+        [
+          9,
+          17,
+          23
+        ],
+        [
+          9,
+          19,
+          21
+        ],
+        [
+          11,
+          13,
+          25
+        ],
+        [
+          11,
+          15,
+          23
+        ],
+        [
+          11,
+          17,
+          21
+        ],
+        [
+          13,
+          15,
+          21
+        ],
+        [
+          13,
+          17,
+          19
+        ]
+      ],
+      "partner_weight": 49,
+      "power_two_residual_jet_ranks": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          4,
+          0,
+          0
+        ],
+        [
+          8,
+          0,
+          0
+        ],
+        [
+          16,
+          0,
+          0
+        ],
+        [
+          32,
+          406,
+          406
+        ],
+        [
+          64,
+          444,
+          597
+        ],
+        [
+          128,
+          406,
+          8
+        ]
+      ],
+      "rank_sum": 835.9606543201287,
+      "seconds": 5.468662452,
+      "state_energy": 47,
+      "state_partitions": [
+        [
+          1,
+          15,
+          31
+        ],
+        [
+          3,
+          13,
+          31
+        ],
+        [
+          5,
+          11,
+          31
+        ],
+        [
+          7,
+          9,
+          31
+        ],
+        [
+          1,
+          17,
+          29
+        ],
+        [
+          3,
+          15,
+          29
+        ],
+        [
+          5,
+          13,
+          29
+        ],
+        [
+          7,
+          11,
+          29
+        ],
+        [
+          1,
+          19,
+          27
+        ],
+        [
+          3,
+          17,
+          27
+        ],
+        [
+          5,
+          15,
+          27
+        ],
+        [
+          7,
+          13,
+          27
+        ],
+        [
+          9,
+          11,
+          27
+        ],
+        [
+          1,
+          21,
+          25
+        ],
+        [
+          3,
+          19,
+          25
+        ],
+        [
+          5,
+          17,
+          25
+        ],
+        [
+          7,
+          15,
+          25
+        ],
+        [
+          9,
+          13,
+          25
+        ],
+        [
+          3,
+          21,
+          23
+        ],
+        [
+          5,
+          19,
+          23
+        ],
+        [
+          7,
+          17,
+          23
+        ],
+        [
+          9,
+          15,
+          23
+        ],
+        [
+          11,
+          13,
+          23
+        ],
+        [
+          7,
+          19,
+          21
+        ],
+        [
+          9,
+          17,
+          21
+        ],
+        [
+          11,
+          15,
+          21
+        ],
+        [
+          11,
+          17,
+          19
+        ],
+        [
+          13,
+          15,
+          19
+        ]
+      ],
+      "vacuum_gram_entries_checked": 784
+    }
+  ],
+  "checker_sha256": "6c891ab21ce1bafda722e37f50ec1a88960f5f6afe2c7658177e4aa43c12c496",
+  "local_tensor_sha256": "8a37f03f385c64aaac948d2d0754adc684b48786614b3380060004bb936deded",
+  "native_profile_sha256": "b4cc84cd360a1bf5699e7272aceb85643f757d83bfab3caa51865af22ae23991",
+  "paired_reciprocal_reduction_entries": 5664,
+  "scope": "exact complement-shell vacuum duality and finite full-profile ranks; no stronger factoring exponent"
+}

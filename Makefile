@@ -23,12 +23,14 @@ verify-constructions:
 	python3 tools/check_bosonic_hermite_profile.py
 	python3 tools/check_noncommutative_crossing_coded.py
 	python3 tools/check_homogeneous_central_eighth_jet.py
+	python3 tools/check_binary_quadratic_charge_shells.py
 
 verify-native-crossings:
 	mkdir -p build/native
 	$(CXX) -O3 -std=c++17 -Wall -Wextra -Werror tools/explore_group_correction_rank.cpp -o build/native/group-correction-screen
 	python3 tools/check_noncommutative_crossing_native.py --binary $(CURDIR)/build/native/group-correction-screen --lookup-summary evidence/noncommutative-crossing-lookup-complete.json
 	python3 tools/check_homogeneous_central_profiles.py
+	python3 tools/check_complement_shell_crossings.py
 
 verify-post-half:
 	python3 tools/check_half_piece_ranks.py --full
