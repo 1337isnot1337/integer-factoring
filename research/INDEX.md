@@ -14,6 +14,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Degree-sensitive auxiliary paths](degree-sensitive-smith-paths.md): entrywise series orders constrain channel walks; rational positive potentials certify a stronger finite criterion, with exact zero tests from bordered minors.
+- [General-characteristic trace-shear parameter](trace-shear-general-characteristic.md): extends the existing Fierz common-boundary identity, checks both cut signs, and distinguishes identity normalization from preservation of the endpoint. The profiles remain noncompetitive.
 - [Fixed-precision count lifting](fixed-precision-count-lifting.md): sorted witness tuples recover prime-power count digits; local nilpotent corrections preserve every fixed field seed and Smith-profile leading exponent asymptotically.
 - [High-order characteristic selection](high-order-characteristic-selection.md): an elementary polynomial prime bound prevents cancellation of the quadratic root detector, with an explicit uniform-evaluator requirement.
 - [Exhaustive auxiliary lattice gauges](auxiliary-lattice-gauge-search.md): canonical two-dimensional lattice representatives cover every rational gauge; neighbor inequalities certify global minima at a fixed evaluation point.

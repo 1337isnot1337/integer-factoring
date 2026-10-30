@@ -30,6 +30,8 @@ verify-constructive:
 	python3 tools/check_explicit_entanglers.py
 	python3 tools/check_explicit_entanglers.py --control evidence/binary-entangler-extension-control.json
 	python3 tools/check_smith_profile_transfer.py
+	python3 tools/check_degree_sensitive_smith_paths.py
+	python3 tools/check_trace_shear_general.py
 	python3 tools/check_auxiliary_gauge_smith.py
 	python3 tools/check_auxiliary_lattice_gauges.py
 	python3 tools/check_balanced_physical_gauge.py
