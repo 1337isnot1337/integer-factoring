@@ -329,7 +329,14 @@ theorems, not an inference from successful small tests. No new Lean
 formalization of the full composition is claimed. The pinned Appendix B
 development has now been rebuilt, and [ExplicitPad.lean](../formal-appendix/ExplicitPad.lean)
 proves that its assembled evaluator works with the computable pad from the
-[Lean pad lemma](../formal/HalfPad.lean);
+[Lean pad lemma](../formal/HalfPad.lean). The [explicit top evaluator theorem](../formal-appendix/BoundedTop.lean)
+combines the unchanged multiplication-network and first-good-grouping
+theorems with the checked written-table codec under the same Lean version.
+It uses direct clique-entry lookup, a proved entry bound and explicit pads; it
+does not construct these objects in the claimed running time. The separate
+[pure factor theorem](../formal-appendix/PureFactor.lean) connects this value
+to the reference prefix search and proves `Nat.minFac` correctness for
+`N >= 2`, without a machine or runtime certificate.
 [HalfPrefix.lean](../formal/HalfPrefix.lean) verifies removal of the divisor 1
 against the factoring reference's `cntPre`. These lemmas do not construct the
 factoring machine.

@@ -25,13 +25,93 @@ lake build GeneralPieces.Main > "$logs/source-build.log" 2>&1
 # The stage is below the source project so Lean can set a separate root while
 # still finding the source project's built imports through `lake env`.
 stage="$(mktemp -d "$source_dir/eth/.lake/half-bridge.XXXXXXXX")"
+reference="$root/.lake/upstream-reference"
+reference_revision="c91cc3f4947caca8977e81a5d14244f73b5ae2b1"
+if [[ ! -d "$reference" ]]; then
+  git clone --filter=blob:none --no-checkout https://github.com/IsaacRudich/SubexponentialDeterministicFactoring.git "$reference"
+  git -C "$reference" checkout --detach "$reference_revision"
+fi
+if [[ "$(git -C "$reference" rev-parse HEAD)" != "$reference_revision" ]] ||
+   [[ -n "$(git -C "$reference" status --porcelain --untracked-files=no)" ]]; then
+  echo "Factoring source is not the clean pinned revision" >&2
+  exit 1
+fi
+port="$stage/factoring"
+mkdir -p "$port/.lake"
+git -C "$reference" archive "$reference_revision" | tar -x -C "$port"
+cp "$source_dir/eth/lean-toolchain" "$port/lean-toolchain"
+cp "$source_dir/eth/lake-manifest.json" "$port/lake-manifest.json"
+ln -s "$source_dir/eth/.lake/packages" "$port/.lake/packages"
+cat > "$port/lakefile.toml" <<'EOF'
+name = "factoring_port"
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+[[lean_lib]]
+name = "FactoringAux"
+globs = ["FactoringAux.+"]
+EOF
+(cd "$port" && lake build FactoringAux.MulCount FactoringAux.Cluster FactoringAux.EngineGroup FactoringAux.EngineCostRate FactoringAux.Search) > "$logs/factoring-build.log" 2>&1
 cp "$root/formal/HalfPad.lean" "$stage/HalfPad.lean"
 cp "$root/formal-appendix/ExplicitPad.lean" "$stage/ExplicitPad.lean"
+cp "$root/formal-appendix/Tabulate.lean" "$stage/Tabulate.lean"
+cp "$root/formal-appendix/CountBridge.lean" "$stage/CountBridge.lean"
+cp "$root/formal-appendix/CliqueNetwork.lean" "$stage/CliqueNetwork.lean"
+cp "$root/formal-appendix/CliqueRows.lean" "$stage/CliqueRows.lean"
+cp "$root/formal-appendix/RowSimplify.lean" "$stage/RowSimplify.lean"
+cp "$root/formal-appendix/TopValue.lean" "$stage/TopValue.lean"
+cp "$root/formal-appendix/TopEvaluator.lean" "$stage/TopEvaluator.lean"
+cp "$root/formal-appendix/TopGrouping.lean" "$stage/TopGrouping.lean"
+cp "$root/formal-appendix/SelectedTop.lean" "$stage/SelectedTop.lean"
+cp "$root/formal-appendix/FastTop.lean" "$stage/FastTop.lean"
+cp "$root/formal-appendix/TopArithmetic.lean" "$stage/TopArithmetic.lean"
+cp "$root/formal-appendix/TopStates.lean" "$stage/TopStates.lean"
+cp "$root/formal-appendix/TopStateArithmetic.lean" "$stage/TopStateArithmetic.lean"
+cp "$root/formal-appendix/EntryBound.lean" "$stage/EntryBound.lean"
+cp "$root/formal-appendix/BinaryFac.lean" "$stage/BinaryFac.lean"
+cp "$root/formal-appendix/BinaryNet.lean" "$stage/BinaryNet.lean"
+cp "$root/formal-appendix/BinaryCoarsen.lean" "$stage/BinaryCoarsen.lean"
+cp "$root/formal-appendix/SelectedEntry.lean" "$stage/SelectedEntry.lean"
+cp "$root/formal-appendix/BoundedTop.lean" "$stage/BoundedTop.lean"
+cp "$root/formal-appendix/HalfSchedule.lean" "$stage/HalfSchedule.lean"
+cp "$root/formal-appendix/PadCost.lean" "$stage/PadCost.lean"
+cp "$root/formal-appendix/SelectedPadCost.lean" "$stage/SelectedPadCost.lean"
+cp "$root/formal/HalfPrefix.lean" "$stage/HalfPrefix.lean"
+cp "$root/formal-appendix/PrefixEvaluator.lean" "$stage/PrefixEvaluator.lean"
+cp "$root/formal-appendix/PureFactor.lean" "$stage/PureFactor.lean"
 lake env bash -c '
   set -euo pipefail
-  export LEAN_PATH="$1:$LEAN_PATH"
+  export LEAN_PATH="$1:$1/factoring/.lake/build/lib/lean:$LEAN_PATH"
   lean --root="$1" -o "$1/HalfPad.olean" "$1/HalfPad.lean"
-  lean --root="$1" "$1/ExplicitPad.lean"
+  lean --root="$1" -o "$1/ExplicitPad.olean" "$1/ExplicitPad.lean"
+  lean --root="$1" -o "$1/Tabulate.olean" "$1/Tabulate.lean"
+  lean --root="$1" "$1/CountBridge.lean"
+  lean --root="$1" -o "$1/CliqueNetwork.olean" "$1/CliqueNetwork.lean"
+  lean --root="$1" -o "$1/CliqueRows.olean" "$1/CliqueRows.lean"
+  lean --root="$1" -o "$1/RowSimplify.olean" "$1/RowSimplify.lean"
+  lean --root="$1" -o "$1/TopValue.olean" "$1/TopValue.lean"
+  lean --root="$1" -o "$1/TopEvaluator.olean" "$1/TopEvaluator.lean"
+  lean --root="$1" -o "$1/TopGrouping.olean" "$1/TopGrouping.lean"
+  lean --root="$1" -o "$1/SelectedTop.olean" "$1/SelectedTop.lean"
+  lean --root="$1" -o "$1/FastTop.olean" "$1/FastTop.lean"
+  lean --root="$1" -o "$1/TopArithmetic.olean" "$1/TopArithmetic.lean"
+  lean --root="$1" -o "$1/TopStates.olean" "$1/TopStates.lean"
+  lean --root="$1" -o "$1/TopStateArithmetic.olean" "$1/TopStateArithmetic.lean"
+  lean --root="$1" -o "$1/EntryBound.olean" "$1/EntryBound.lean"
+  lean --root="$1" -o "$1/BinaryFac.olean" "$1/BinaryFac.lean"
+  lean --root="$1" -o "$1/BinaryNet.olean" "$1/BinaryNet.lean"
+  lean --root="$1" -o "$1/BinaryCoarsen.olean" "$1/BinaryCoarsen.lean"
+  lean --root="$1" -o "$1/SelectedEntry.olean" "$1/SelectedEntry.lean"
+  lean --root="$1" -o "$1/BoundedTop.olean" "$1/BoundedTop.lean"
+  lean --root="$1" -o "$1/HalfSchedule.olean" "$1/HalfSchedule.lean"
+  lean --root="$1" -o "$1/PadCost.olean" "$1/PadCost.lean"
+  lean --root="$1" "$1/SelectedPadCost.lean"
+  lean --root="$1" -o "$1/HalfPrefix.olean" "$1/HalfPrefix.lean"
+  lean --root="$1" -o "$1/PrefixEvaluator.olean" "$1/PrefixEvaluator.lean"
+  lean --root="$1" "$1/PureFactor.lean"
 ' _ "$stage" > "$logs/bridge.log" 2>&1
 python3 - "$logs/bridge.log" <<'PY'
 import re
@@ -41,8 +121,22 @@ from pathlib import Path
 text = Path(sys.argv[1]).read_text()
 reports = re.findall(r"'([^']+)' depends on axioms:\s*\[([^\]]*)\]", text, re.S)
 expected = "IntegerFactoring.HalfAppendix.exists_explicit_padded_evaluator"
-if "error:" in text or "sorryAx" in text or not any(name == expected for name, _ in reports):
-    raise SystemExit("Missing or failed Appendix bridge axiom report")
+count_bridge = "IntegerFactoring.HalfAppendix.evaluator_counts_of_value_bridge"
+table = "IntegerFactoring.HalfAppendix.evaluator_counts_tabulated_of_value_bridge"
+clique = "IntegerFactoring.HalfAppendix.cliqueNetwork_value"
+top = "IntegerFactoring.HalfAppendix.evaluator_counts_top"
+selected = "IntegerFactoring.HalfAppendix.evaluator_counts_selected_top"
+row = "IntegerFactoring.HalfAppendix.cliqueQuery_bound"
+fast = "IntegerFactoring.HalfAppendix.evaluator_counts_selected_fast"
+width = "IntegerFactoring.HalfAppendix.selected_width_le"
+states = "IntegerFactoring.HalfAppendix.selectedTop_state_card"
+state_rate = "IntegerFactoring.HalfAppendix.selected_state_exponent_le"
+entry = "IntegerFactoring.HalfAppendix.clique_entry_le_card"
+explicit = "IntegerFactoring.HalfAppendix.evaluator_counts_explicit_top"
+pad_rate = "IntegerFactoring.HalfAppendix.scheduled_pad_sqrt_cost"
+pure_factor = "IntegerFactoring.HalfAppendix.pure_factor_correct"
+if "error:" in text or "sorryAx" in text or not {expected, count_bridge, table, clique, top, selected, row, fast, width, states, state_rate, entry, explicit, pad_rate, pure_factor} <= {name for name, _ in reports}:
+    raise SystemExit("Missing or failed Appendix bridge axiom reports")
 allowed = {"propext", "Classical.choice", "Quot.sound"}
 for name, axioms in reports:
     actual = {a.strip() for a in axioms.split(",") if a.strip()}

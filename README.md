@@ -182,7 +182,7 @@ identifies the evidence for each result.
 
 | Result | Value | Evidence and scope |
 | --- | --- | --- |
-| Appendix B factoring composition | `alpha = 1/2` | [Complete ordinary proof](research/half-rate-factoring.md), source and interface audit, finite adapter and arithmetic checks. Lean checks the [explicit-pad evaluator](formal-appendix/ExplicitPad.lean) and [divisor-one correction](formal/HalfPrefix.lean); the machine composition remains open. |
+| Appendix B factoring composition | `alpha = 1/2` | [Complete ordinary proof](research/half-rate-factoring.md), source and interface audit, finite adapter and arithmetic checks. Lean checks the [value-level composition through `Nat.minFac`](formal-appendix/PureFactor.lean), with explicit grouping, tables and pads; the costed machine composition remains open. |
 | **Complete k6 factoring theorem** | **`alpha = 1/30`** | **Lean verifies one modified machine, all runtime costs, the real-logarithm conversion, and the strict exponent comparison** |
 | Sharper rate for the same k6 machine | `beta_12 = log(12/11)/log12 = 0.0350159540... > 1/29` | [Complete ordinary derivation](research/k6-sharp-rate.md), using the existing machine bridge; new rate not Lean formalized |
 | Explicit analysis of the unchanged baseline | `alpha = log(12/11)/log(16) = 0.0313827205...` | Handwritten derivation from the pinned source's inequalities |
@@ -289,16 +289,26 @@ For the original local lemmas and unchanged reference envelope, run:
 make verify-formal
 ```
 
-To rebuild the pinned Appendix B evaluator with its own Lean 4.33.1 toolchain
-and check the explicit-pad evaluator theorem and its axioms, run:
+To rebuild the pinned Appendix B evaluator and factoring network dependencies
+with Lean 4.33.1 and check the explicit-pad and grouped top-network theorems,
+run:
 
 ```sh
 make verify-half-appendix
 ```
 
-This uses a separate Mathlib revision from the Lean 4.35.0 factoring
-reference. It verifies the evaluator and pad bridge, not the table codec,
-constructor, or a complete 1/2 factoring machine.
+This compiles the unchanged factoring network and grouping source against a
+different Mathlib revision from the reference's Lean 4.35.0 build. The checked
+table codec preserves the value of any reference clique, and the reference's
+search supplies a valid top grouping. For `K^40 ≤ n`, Lean also proves that
+the selected width satisfies `K^2 * width ≤ 6000n`, and bounds the selected
+group's state count by an exponent whose size is at most `8000n/K`. Lean proves
+the grouped network's weights and factors are zero or one, obtains the entry
+bound, and supplies explicit table and evaluator pads. For a level satisfying
+the selection inequalities, Lean bounds the evaluator-pad exponent by a
+constant times `n / sqrt(log n)`. The composed mathematical function returns
+`Nat.minFac` for inputs at least two. These are value and size theorems; the
+costed constructor and complete 1/2 factoring machine remain open.
 
 The GitHub Actions workflow runs both formal targets and the Python checks.
 It pins the Lean archive hash and checkout action. It runs for pull requests,
