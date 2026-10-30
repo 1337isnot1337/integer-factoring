@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "recorded_utc": "2026-10-30T19:29:50.083284+00:00",
+  "scope": "Ordinary proofs and exact finite checkers; no new Lean source or local Lean build.",
+  "integrated_runs": [
+    {
+      "command": "make verify",
+      "tested_local_head": "f9a3e2a63774e1d1a9c457d0af9633651ffde718",
+      "started_utc": "2026-10-30T19:23:29.007559+00:00",
+      "exit_code": 0,
+      "seconds": 298.2886345930001,
+      "tested_remote_commit": "19944f6a8022389f97aaf2fc4fabe3d7389a4369",
+      "tested_tree": "ad01ed86572b3fb89759f34c585aa3952b59d53e",
+      "log": "session-2026-10-30-verify.log",
+      "log_sha256": "de4da9e9cc8f2c2fec650cfa51bdc20a20d2f2f8583b74c35c9b6d3c5ada8521"
+    },
+    {
+      "command": "make verify-search-native",
+      "tested_local_head": "f9a3e2a63774e1d1a9c457d0af9633651ffde718",
+      "started_utc": "2026-10-30T19:23:29.075103+00:00",
+      "exit_code": 0,
+      "seconds": 239.67353389900018,
+      "tested_remote_commit": "19944f6a8022389f97aaf2fc4fabe3d7389a4369",
+      "tested_tree": "ad01ed86572b3fb89759f34c585aa3952b59d53e",
+      "log": "session-2026-10-30-native.log",
+      "log_sha256": "50a291a7ddf7f2c98d3185a4ab1e9ac549c14888d4e0f1f2ccfe6b98cb330d17"
+    }
+  ],
+  "additional_focused_checks": [
+    {
+      "command": "python3 tools/check_exact_divisor_maximum.py --large",
+      "status": "passed",
+      "evidence": "exact-divisor-maximum-certificate.json",
+      "evidence_sha256": "9c0f17a3c033cf722ec70f8b309dae0c518a19cce39dc53027cf8bab499a0c41"
+    },
+    {
+      "command": "python3 tools/check_trace_weight_restriction.py --full --output /tmp/trace-restriction.json",
+      "status": "passed",
+      "evidence": "trace-weight-restriction-verification.json",
+      "evidence_sha256": "fabc94757f8cad8052a931e0abfd86ff28f0c68b3c1e19259435aacd8dd2d295"
+    },
+    {
+      "command": "python3 tools/check_twisted_pairing_catalogue.py --output /tmp/root-twisted-catalogue.json",
+      "status": "passed",
+      "deterministic_evidence_match": true,
+      "evidence": "twisted-pairing-catalogue-certificate.json",
+      "evidence_sha256": "ccbfa9694a4943fc407ec07ae5ae7742233b6407630ff87ccad17ebd68ab7b42"
+    },
+    {
+      "command": "python3 tools/check_twisted_witnesses_dense.py --output evidence/twisted-witnesses-dense.json",
+      "status": "passed",
+      "evidence": "twisted-witnesses-dense.json",
+      "evidence_sha256": "7a00eecffd7923c41737dc4c826e4e7783569697f2cd8b19922f42ede793b98b"
+    },
+    {
+      "command": "python3 tools/check_two_patch_span.py --output /tmp/root-two-patch-span.json",
+      "status": "passed",
+      "rank_and_potential_data_match": true,
+      "source_hash_refreshed_for_optional_output_dependency": true,
+      "evidence": "two-patch-span-verification.json",
+      "evidence_sha256": "091ac598bcd785937c0d81554d5a64524334e983c6c23e112c1e96cbd0642ef3"
+    }
+  ],
+  "later_changes_scope": "Session documentation and the separately checked twisted-catalogue, dense-witness, and small trace-span packages.",
+  "latest_observed_hosted_exact_certificates": {
+    "head": "19944f6a8022389f97aaf2fc4fabe3d7389a4369",
+    "run_id": 41114874104,
+    "job_id": 124266651946,
+    "conclusion": "success",
+    "other_hosted_jobs": "in progress at observation; not reported as passed"
+  },
+  "partial_computation": {
+    "name": "width-18 run-count profile",
+    "completed_types": 3367,
+    "total_types": 4583,
+    "status": "incomplete; no final profile",
+    "checkpoint": "two-state-run-count-bigrading-t18.json.checkpoint"
+  },
+  "factoring_exponent": "1/2",
+  "new_higher_factoring_exponent_proved": false
+}

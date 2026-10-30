@@ -2,6 +2,8 @@
 
 This index covers the research notes in this checkout. Open PRs can contain work beyond `main`. Each note states its own assumptions, proof scope, and evidence. An obstruction to a specific construction is not a factoring lower bound.
 
+[Session report: 30 October 2026](session-2026-10-30-further-bounds.md) summarizes the strongest new results, the unchanged score, and the remaining synthesis obligations.
+
 ## Proved machine bounds and their foundations
 
 - [Half-rate factoring composition](half-rate-factoring.md): ordinary proof of the `1/2` machine bound; its final Lean theorem is in [`formal-appendix/HalfTheorem.lean`](../formal-appendix/HalfTheorem.lean).
@@ -23,6 +25,7 @@ This index covers the research notes in this checkout. Open PRs can contain work
 - [Small trace-kernel certificate](trace-kernel-small-certificate.md): complete multiplicative coefficient support gives the exact ordinary rank 94,183 at `t=19,k=7`; nineteen is the first possible extension degree for a counterexample in this trace-product family.
 - [Restricted trace kernels and composition](trace-kernel-restriction-and-composition.md): exact syndrome-image intersections compute both cut ranks on arbitrary label subsets; low-degree full-cube kernel compositions vanish, including controlled versions.
 - [Complete two-patch trace crossing](two-patch-trace-crossing.md): two complementary trace patches give an exact crossing of degree `2t-1`; five complete finite profiles and independent dense checks record the raw-rank limits.
+- [Exact small trace-span optima](two-patch-span-recombination.md): every F2 recombination and every number of pieces in the two-patch spans at widths three and four has total rank cost at least `d^2`, certified by all-edge integer potentials and independent dense ranks.
 - [Finite-state polynomial crossings](finite-state-pairing-crossings.md): explicit order-dependent identities, exact XOR-circulant rank reduction, and the complete 88,006-model finite screen.
 - [Four-feature matrix-product crossings](four-feature-parity-crossings.md): a larger local tensor space has constant auxiliary dimension and order witnesses at every length; a complete 131,072-model screen and independent full-tensor checks record the finite limits.
 - [Eight-feature parity crossings](eight-feature-parity-crossings.md): exact local bit dependence and delayed transitions enlarge the family; 365,482 screen records and 33 selected profiles are audited, and an all-length multiplicative law explains the exact `4^t` rank sum of one selected branch.
@@ -41,6 +44,7 @@ This index covers the research notes in this checkout. Open PRs can contain work
 - [Local alphabet and pairing spectral bounds](local-alphabet-and-pairing-spectral-barriers.md): a universal detector requires at least five local labels for an improving word-rank spectral transfer; the three-pairing scalar space is excluded in characteristic two at every alphabet and auxiliary size.
 - [Finite functional detector certificates](finite-functional-rank-detector-certificates.md): exact projective inequalities certify an entire scalar entry space before auxiliary search, with separate F2, F3, and F4 certificates and an explicit extension-field negative control.
 - [Overlapping subalphabet certificates](overlapping-subalphabet-spectral-certificates.md): all six orbits of two or three three-label corrections on five labels have exact F2 spectral lower bounds at least thirteen, uniformly in auxiliary dimension.
+- [Twisted-pairing catalogue](twisted-pairing-observable-preflight.md): 7,500 indexed F2 choices, allowing repeated underlying spaces, each have crossing-coefficient detector weight eleven; 225,000 exact cut-rank evaluations exclude them before auxiliary search.
 - [Reduction-map Fierz crossing](reduction-map-fierz-crossing.md): an explicit boundary identity improves its supplied amplification base from `2d sqrt(d(d-1)/2)` to `d(1+sqrt(d(d-1)/2))`, still above the score threshold.
 - [All-field binary two-piece inequality](binary-two-piece-rank-sum-and-f4-boundary.md): every two-piece binary crossing has rank sum at least four; a three-piece F4 boundary pencil has exact spectral minimum four over every extension.
 - [Four-piece F4 boundary pencil](four-piece-f4-boundary-pencil.md): two independent free ket functions still have exact spectral minimum four over every extension; the proof treats zero transitions and all admissible binary rank profiles.

@@ -40,6 +40,8 @@ verify-further:
 	python3 tools/check_local_alphabet_spectral_barriers.py
 	python3 tools/check_finite_functional_detectors.py
 	python3 tools/check_overlapping_subalphabet_detectors.py
+	python3 tools/check_twisted_pairing_catalogue.py
+	python3 tools/check_twisted_witnesses_dense.py
 	python3 tools/check_mismatched_commutator.py
 	python3 tools/check_twisted_channel_walks.py
 	python3 tools/check_channel_flow_duals.py
@@ -59,6 +61,7 @@ verify-further:
 	python3 tools/check_eight_feature_monoid.py
 	python3 tools/check_trace_bilinear_kernel.py
 	python3 tools/check_two_patch_trace.py --output /tmp/integer-factoring-two-patch-trace.json
+	python3 tools/check_two_patch_span.py --output /tmp/integer-factoring-two-patch-span.json
 	python3 tools/check_polynomial_shear_probe.py --output /tmp/integer-factoring-polynomial-shear-verification.json
 
 verify-energy-full:
