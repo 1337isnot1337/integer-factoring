@@ -48,11 +48,15 @@ verify-constructions:
 	python3 tools/check_ward_interval_transport.py --output /tmp/integer-factoring-ward-interval-transport.json
 	python3 tools/check_ward_fan_family.py --output /tmp/integer-factoring-ward-fan-family.json
 	python3 tools/check_ward_pfaffian_queries.py --output /tmp/integer-factoring-ward-pfaffian-queries.json
+	python3 tools/check_ward_fan_entry_queries.py --output /tmp/integer-factoring-ward-fan-entry-queries.json
 	python3 tools/check_ward_operator_types.py --output /tmp/integer-factoring-ward-operator-types-check.json
 	python3 tools/check_overlapping_symplectic_profiles.py
 	python3 tools/check_cubic_radical_output_maps.py
 	python3 tools/check_cubic_cyclic_fourier_bound.py --output /tmp/integer-factoring-cubic-cyclic-fourier-bound.json
 	python3 tools/check_cubic_jordan_filtration.py --output /tmp/integer-factoring-cubic-jordan-filtration.json
+	python3 tools/check_cubic_fixed_image_rank_one.py --output /tmp/integer-factoring-cubic-fixed-image-rank-one.json
+	python3 tools/check_cubic_coordinate_image_mixtures.py --output /tmp/integer-factoring-cubic-coordinate-image-mixtures.json
+	python3 tools/check_cubic_varying_image_escape.py --output /tmp/integer-factoring-cubic-varying-image-escape.json
 	python3 tools/check_noncommutative_crossing_seed_algebra_audit.py
 	python3 tools/check_symplectic_seed_tensor_modules.py
 	python3 tools/symplectic_seed_weighted_modules.py --output /tmp/integer-factoring-weighted-modules.json
