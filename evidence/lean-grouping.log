@@ -1,0 +1,9 @@
+'Factoring.Improvements.exists_good_accuracy_of_threshold' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Factoring.Improvements.exists_good_accuracy_five_fourth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Factoring.Improvements.network_grouping_accuracy_of_threshold' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Factoring.Improvements.exists_good_of_threshold' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Factoring.Improvements.exists_good_five_sixth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Factoring.Improvements.exists_good_exact_threshold' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Factoring.Improvements.network_grouping_of_threshold' depends on axioms: [propext, Classical.choice, Quot.sound]

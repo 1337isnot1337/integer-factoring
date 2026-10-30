@@ -1,0 +1,23 @@
+{
+  "upstream_commit": "c91cc3f4947caca8977e81a5d14244f73b5ae2b1",
+  "lean_version": "4.35.0",
+  "lean_commit": "eb6cafb7290e8bd5f2937522d8d804f58f02bafc",
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "proofs": [
+    {
+      "path": "formal/GroupingThreshold.lean",
+      "sha256": "c6427ab2c593e51ce4b06ffbf1c558c10c394867c46453e0a17f22ac3c411c93",
+      "result": "passed"
+    },
+    {
+      "path": "formal/CrossingComplement.lean",
+      "sha256": "da9cf40bdae86507b343fc10e28e6aac9c5a2adb39f830e0f7e27b26526130e0",
+      "result": "passed"
+    }
+  ],
+  "scope": "Finite grouping and signed complement lemmas. This is not a formal improved factoring time theorem."
+}

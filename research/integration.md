@@ -205,7 +205,7 @@ factor(N):
 
 positive_prefix_count(N, k, x, schedule):
     derive all padded widths lambda_d from the initial top width
-    compute a polynomial bound M on bit_length(H * divisor_count)
+    M = n + 4*sum(G_d^4 * ceil(lambda_(d+1)/3), d=0,...,ell-1) + 4
     for m from 2 through 2*M:
         T = top_clique(N, k, x, P, g_top=3*P^8, modulus=m)
         value = evaluate_chain(T, ell, modulus=m)
@@ -250,8 +250,14 @@ the divisor `1` is subtracted after multiplying by the same `H`.
 
 The modular zero test reuses the logic of `Moduli.lean`: the least common
 multiple of `1,...,2M` is large enough to exclude a nonzero integer in the
-proved range. Taking `M` a few bits above `n+log_2 H` suffices. A larger
-explicit polynomial upper bound is also acceptable. Since the moduli
+proved range. For the explicit `M` in the pseudocode,
+`log_2 H <= 4 sum_d G_d^4 ceil(lambda_(d+1)/3)` follows from
+`log_2(t+1)<=t` and (10). Hence the nonnegative integer
+`V=H*cntPre(N,k,x)` is less than `2^(M-4)`, and
+`(2M+1)V<4^M` holds for `M>=4`, as required by the source theorem.
+This computes `M` from the known width schedule; it requires neither the
+unknown divisor count nor construction of the enormous integer `H`.
+Since the moduli
 extend only to `2M`, this adds a polynomial factor, not `2^M` iterations.
 
 ## 5. Cost accounting for the abstract evaluator
@@ -311,8 +317,28 @@ for a fixed constant `C`. Since `K_d>=48*2^d` and `2rho_0>1`,
 A group contains at most `2G/K` row or column nodes. Each node has a state
 of `G^3 lambda` bits. Enumerating the local states for one group costs at
 most `2^(2N/K)`. Writing its entire new table adds at most `2^(N'/K)`
-entries. The scaled-piece decoders require only polynomial work per
-entry. Hence direct tabulation has cost
+entries.
+
+There is another exponential loop in the source that must be counted:
+`CoarsenEx.W` sums over the factor channels of every edge internal to a
+group. A row/column pair has at most `G^2 lambda=N/G^2` channel bits, so
+an internal pair can require `2^(N/G^2)` operations. There are polynomially
+many such pairs, and their sums are computed separately and multiplied;
+one does not need to enumerate their joint Cartesian product. Since
+`G>=K`, this extra exponent is at most `N/K`.
+
+For one fixed channel index, the new factor decoder requires polynomial
+work in the string lengths: scan the subset and its mixed-radix digits,
+compute the binomial coefficient by a polynomial dynamic program, and
+multiply the block factors modulo `m`. In the trivial-width fallback,
+evaluate `4^t A_i` by polynomial coefficient dynamic programming. Calling
+the finite checker's `expanded_coefficient` here would instead enumerate
+`2^t` subsets; that routine is a tiny-instance verifier, not the proposed
+polynomial decoder. Even such a loop has exponent `O(lambda)<=O(N/K)`,
+but a formal implementation must charge it if retained.
+
+Thus a conservative tabulation bound includes the exponent
+`(2N+N')/K + N/G^2 + O(lambda)` and has cost
 
 \[
 \operatorname{poly}(n)2^{O((N+N')/K)}.

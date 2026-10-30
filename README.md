@@ -15,13 +15,15 @@ Its published Lean theorem establishes one deterministic machine with time
 
 ## Research results
 
-The notes contain ordinary mathematical proofs and exact finite checks.
-They do **not** constitute a Lean verification of an improved factoring machine.
+The repository contains ordinary mathematical proofs, exact finite checks,
+and Lean-checked finite lemmas. It does **not** yet contain a Lean verification
+of an improved factoring machine.
 
 | Result | Value | Evidence and scope |
 | --- | --- | --- |
 | Explicit analysis of the unchanged baseline | `alpha = log(12/11)/log(16) = 0.0313827205...` | Handwritten derivation from the pinned source's inequalities |
 | Grouping with independent accuracy | `g = O(D^2 K^2 log K)` | Matching decomposition, Holder's inequality, and an explicit deterministic search |
+| Formally checked grouping improvement | `g > K^2 + 4D^2K^4`; original accuracy works at `g = 5K^6` | Lean kernel checked, including network value preservation |
 | Smaller crossing factorization | 56 integer channels instead of a trivial 64-channel factor | Explicit integer factors and exhaustive finite verification |
 | Grouping-only rate target | `alpha = log(12/11)/log(4) = 0.0627654410...` | New parameter schedule and runtime analysis; modified machine not Lean verified |
 | Combined rate target | `alpha = log(1/rho)/log(4) = 0.0755104681...`, `rho = (8+log_2(7))/12` | Combined mathematical construction; full formal integration remains open |
@@ -48,10 +50,41 @@ benchmarks. The combined target remains much weaker than the upstream conjecture
   family.
 - [Exact crossing checker](tools/check_crossing.py): finite identities, channel
   encodings, and rank/width comparisons.
+- [Combined integration](research/integration.md) and [recurrence proof](research/recurrence.md):
+  explicit integer parameters, common widths, all-level costs, and remaining
+  formalization obligations.
+- [Finite grid step](research/grid-level-validation.md): actual row and column
+  contractions, signed tables, composite moduli, and the required `8^t` multiplier.
+- [Coefficient-basis obstruction](research/coefficient-basis.md): an exact minimax
+  result ruling out further gains from linear recombinations in the same coefficient
+  span, with an exact small-instance search.
+- [GroupingThreshold.lean](formal/GroupingThreshold.lean) and
+  [CrossingComplement.lean](formal/CrossingComplement.lean): checked finite lemmas.
+  [Verification evidence](evidence/formal-verification.json) records source hashes
+  and the allowed axiom list.
 
-Further executable certificates, recurrence analysis, and checked Lean lemmas
-are being added alongside these notes. No external leaderboard submission is
-part of this repository update.
+## Reproduce the checks
+
+The Python checks require only the standard library:
+
+```sh
+python3 -m unittest discover -s tests -v
+python3 -m unittest tools.check_crossing -v
+python3 tools/check_coefficient_basis.py
+python3 tools/parameters.py
+```
+
+With Lean 4.35.0 and Lake on the executable path, run:
+
+```sh
+bash tools/check_formal.sh
+```
+
+The script fetches the pinned public reference, rebuilds its `Solution`, and
+checks every new formal file. It rejects axiom reports containing anything
+outside `propext`, `Classical.choice`, and `Quot.sound`. GitHub Actions runs the
+same checks with a pinned Lean archive and checkout action. No leaderboard
+submission has been made.
 
 ## Attribution
 
