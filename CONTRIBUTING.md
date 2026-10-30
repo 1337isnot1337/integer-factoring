@@ -6,6 +6,11 @@ its predecessor, source revision, assumptions, proof or construction, and
 precise scope. Preserve attribution and the upstream-compatible Apache-2.0
 license; disclose substantial AI assistance.
 
+Before substantial research, check and post your intended scope on the
+[coordination board](https://github.com/1337isnot1337/integer-factoring/issues/8).
+Link your branch or worktree and base commit, report meaningful changes and
+handoffs, and release your claim when finished. Coordinate overlapping lanes.
+
 For an asymptotic factoring claim, give a uniform algorithm and account for
 the full bit-operation cost, including parameter choices, recursion, reduction,
 precision, and finite exceptions as applicable. Explain which parts are proved,

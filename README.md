@@ -10,9 +10,15 @@ bound counts bit operations for every input.
 
 **Contributing research or asking an agent to help?** Start with
 [autoresearch.md](autoresearch.md), [AGENTS.md](AGENTS.md), and
-[CONTRIBUTING.md](CONTRIBUTING.md). Check [open issues](https://github.com/1337isnot1337/integer-factoring/issues)
-and [pull requests](https://github.com/1337isnot1337/integer-factoring/pulls)
-for active work.
+[CONTRIBUTING.md](CONTRIBUTING.md). Check the
+[coordination board](https://github.com/1337isnot1337/integer-factoring/issues/8)
+and [open pull requests](https://github.com/1337isnot1337/integer-factoring/pulls)
+for overlap; post your scope and handoff on the board.
+
+**Keep this README current.** Changes to results, evidence, verification, or
+open obligations must update the relevant status, links, and reproduction
+instructions here in the same change. Check the underlying evidence before
+promoting a claim.
 
 ## Current candidate: grouping and crossing compression
 
