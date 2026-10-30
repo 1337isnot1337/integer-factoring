@@ -70,6 +70,7 @@ verify-native-crossings:
 	build/native/pfaffian-span-screen < build/native/pfaffian-span-input.txt > build/native/pfaffian-span-F4.jsonl
 	python3 tools/check_pfaffian_span_f4.py --basis evidence/pfaffian-basis-all_P2_L2.json --screen build/native/pfaffian-span-F4.jsonl --output build/native/pfaffian-span-audit.json
 	$(CXX) -O3 -std=c++20 -Wall -Wextra -Werror tools/screen_weighted_pfaffian_span.cpp -o build/native/weighted-pfaffian-screen
+	python3 tools/check_uniform_f4_two_even_sections.py --native $(CURDIR)/build/native/weighted-pfaffian-screen --screen-output build/native/uniform-f4-section-lift.jsonl --output build/native/uniform-f4-section.json
 	python3 tools/check_symplectic_seed_tensor_fields.py --types evidence/symplectic-seed-tensor-modules-certificate.json --power 2 --native $(CURDIR)/build/native/weighted-pfaffian-screen --compare-binary evidence/symplectic-seed-tensor-modules.json --export-dir build/native/seed-power-2 --output build/native/seed-power-2-audit.json
 	python3 tools/check_symplectic_mixed_grade_codes.py --native $(CURDIR)/build/native/pfaffian-span-screen --field4 --export-dir build/native/mixed-grade --output build/native/mixed-grade-audit.json
 
@@ -95,6 +96,8 @@ verify-post-half:
 	python3 tools/explore_symplectic_boundary_codes.py --cases 4:4 --optimize
 	python3 tools/explore_cubic_off_syndrome_outputs.py --output /tmp/integer-factoring-cubic-output-corrections.json
 	python3 tools/check_cubic_output_identity.py --multirow evidence/cubic-multirow-outputs.json --output /tmp/integer-factoring-cubic-output-identity.json
+	python3 tools/check_cubic_complement_outputs.py --binary evidence/cubic-complement-outputs.json --field4 evidence/cubic-complement-fields.json --output /tmp/integer-factoring-cubic-complement-audit.json
+	python3 tools/check_cubic_affordable_pool.py --input evidence/cubic-multirow-outputs.json --output /tmp/integer-factoring-cubic-affordable-pool.json
 
 verify-frontier:
 	python3 tools/check_piece_transfer.py

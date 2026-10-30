@@ -1,0 +1,21 @@
+{
+  "binary": {
+    "all_recorded_binary_spaces_fail": true,
+    "cases": 1195,
+    "direct_physical_coefficient_entries_checked": 60025,
+    "independent_binary_rank_pairs": 36909,
+    "manifest_sha256": "7b819ebce6e82168914d82201cc828a48d583d78850b4c8206fd9c92e94ce314",
+    "minimum_integer_cost_lower_bound": 38
+  },
+  "checker_sha256": "ad3f02fa7d7b13f56d4268c59b9abd2f8be9d556f1fbe4132c6cea5b19bc1173",
+  "field4": {
+    "all_affordable_spans_miss_endpoint": true,
+    "cases": 56,
+    "complete_projective_points": 18520,
+    "direct_physical_coefficient_entries_checked": 60025,
+    "exact_integer_shortest_path_potentials_checked": 2,
+    "manifest_sha256": "171ca33602f78ba4d68ea7b18635abf4efbe850aee2a733805660260ff2e8015",
+    "scalar_F4_elimination_controls": 648,
+    "scalar_omega_identity_exact_cost": 36
+  }
+}
