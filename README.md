@@ -94,6 +94,16 @@ width bound approaches the half exponent from below. It supplies no family
 with `rho<1/sqrt(2)`. A local one-bit improvement also fails to tensor into
 a better asymptotic profile, as the note's exact rank argument shows.
 
+The [coordinate-support theorem](research/coordinate-support-rank.md)
+extends that last restriction to arbitrary binary label subsets, including
+nonlinear codes. A tensor with the stated two-pairing support satisfies
+`rank_row(B) rank_col(B) >= d(B)^2/m`, where `d(B)` counts its nonzero
+crossing-diagonal entries. Any `M` such pieces that sum to the crossing
+therefore have maximum rank product at least `m^3/M^2`. Subexponentially
+many pieces still require `rho>=3/4`. The proof covers different fixed
+orientation masks in different pieces. Combining masks within a single
+piece can escape the support condition and remains a separate route.
+
 Two [operator restrictions](research/half-recurrence-barrier.md) rule out
 direct shortcuts. The current operators permit only linear changes of the
 mode weights. Deleting higher modes breaks their identities, as exact
