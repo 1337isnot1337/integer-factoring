@@ -38,6 +38,8 @@ verify-frontier:
 	python3 tools/check_code_sections.py
 	python3 tools/check_frame_filtration.py
 	python3 tools/check_diagonal_word_rank_sum.py
+	python3 tools/check_bi_exterior_crossing_algebra.py
+	python3 tools/check_bi_exterior_degree_budget.py
 	python3 tools/check_nonlinear_layer_probe.py
 	python3 tools/check_pauli_walsh_dictionary.py
 	python3 tools/check_pauli_walsh_pairs.py

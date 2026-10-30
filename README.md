@@ -128,6 +128,18 @@ any crossing decomposition in that space has rank sum at least `d^(3/2)`,
 regardless of its number of pieces. Off-diagonal nonlinear selectors and
 nonlinear label maps remain separate construction routes.
 
+An [exact exterior-algebra construction](research/bi-exterior-crossing-algebra.md)
+now realizes both cut ranks as multiplication ranks in one square-zero
+algebra. This permits arbitrary position-dependent and mixed-degree
+polynomials, with an explicit crossing endpoint and exact rank invariance
+under all invertible linear changes of the generators. One sixteen-label
+direction has actual ranks `(36,36)`, compared with `(46,46)` for the
+earlier Boolean-selector realization. It is not a crossing decomposition.
+The accompanying [degree and quadratic-rank budgets](research/bi-exterior-degree-budget.md)
+exclude every seed in this entire model through **256 labels**, including
+supplied formal limits. A binary seed in this model must therefore have
+at least 512 labels to pass the rank-sum criterion.
+
 The [global-block transfer](research/global-block-field-transfer.md)
 permits coefficient fields to vary with the raw block length, with
 explicit construction cost `2^O(t^h)` for any fixed `h>=1` and width
