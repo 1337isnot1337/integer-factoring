@@ -49,6 +49,7 @@ make verify-post-half     # Larger optional rank tests
 make verify-further       # New transfers, arithmetic bounds, and word certificates
 make verify-energy-full   # Optional larger weighted-energy certificate
 make verify-search-native # Optional exact finite-state engines; requires C++17
+make verify-witt-full     # Optional 202-dimensional Witt Gram calculation
 make verify-docs          # Local Markdown-link check
 ```
 
@@ -91,6 +92,8 @@ See the [research index](research/INDEX.md) for completed arguments, scoped obst
 The same word certificate applies to [symmetric binary-energy shells](research/binary-energy-symmetry-barrier.md), giving `rho >= 3/4` for all fields. For the [specific reciprocal pencil](research/weighted-energy-reciprocal-pencil.md), a separate exact block argument proves the sharper optimum `rho = 1`. Other constructions on these low-growth spaces remain open. The [border-transfer theorem](research/border-and-nonunit-seed-transfer.md) makes polynomial or sufficiently precise truncated-parameter identities usable as exact finite seeds, with their coefficient-extraction costs included.
 
 The [finite-state polynomial families](research/finite-state-pairing-crossings.md) give exact order-dependent crossings outside the position-invariance assumption. An exhaustive screen covers 88,006 finite models and retains both maximum rank product and total rank sum. The [run-compressed rank algorithm](research/two-state-run-rank-compression.md) combines a local Jordan decomposition, interval types, and an exact quadratic-pivot identity to reach longer profiles. These algorithms and endpoint identities are proved; the finite profiles do not establish an improved asymptotic contraction.
+
+The [Witt state-space construction](research/witt-duality-and-vertex-jets.md) proves an exact odd Gram determinant and effective homogeneous duals at every energy. It restores the pairing on a space with binary-partition growth. A separate rank budget prevents a direct small-window substitution, and the tested scalar exchange interface fails; the duality result supplies no stronger factoring exponent.
 
 ## Contribution and attribution
 

@@ -1,4 +1,4 @@
-.PHONY: verify verify-docs verify-frontier verify-post-half verify-further verify-energy-full verify-search-native verify-formal verify-k6 verify-half-appendix help
+.PHONY: verify verify-docs verify-frontier verify-post-half verify-further verify-energy-full verify-search-native verify-witt-full verify-formal verify-k6 verify-half-appendix help
 
 verify: verify-docs verify-frontier verify-further
 	python3 -m unittest discover -s tests -v
@@ -28,6 +28,7 @@ verify-further:
 	python3 tools/check_border_nonunit_transfer.py
 	python3 tools/check_binary_energy_symmetry.py
 	python3 tools/check_weighted_energy.py
+	python3 tools/check_witt_interfaces.py
 
 verify-energy-full:
 	python3 tools/check_weighted_energy.py --full
@@ -36,6 +37,9 @@ verify-search-native:
 	python3 tools/check_markov_pairing_transfer.py
 	python3 tools/check_square_zero_rank_reduction.py
 	python3 tools/check_two_state_run_profile.py
+
+verify-witt-full:
+	python3 tools/witt_artin_hasse.py --h 32 --gram
 
 verify-post-half:
 	python3 tools/check_half_piece_ranks.py --full
@@ -72,6 +76,7 @@ help:
 	  'make verify-further       - new transfers, arithmetic bounds, and word certificates' \
 	  'make verify-energy-full   - larger optional weighted-energy certificate' \
 	  'make verify-search-native - exact finite-state search engines (C++17 required)' \
+	  'make verify-witt-full     - larger optional Witt Gram and vacuum calculation' \
 	  'make verify-docs          - check local Markdown file links' \
 	  'make verify-formal        - rebuild original Lean lemmas (Lean 4.35.0)' \
 	  'make verify-k6            - rebuild the certified 1/30 machine (Lean 4.35.0)' \

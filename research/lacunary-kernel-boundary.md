@@ -136,6 +136,14 @@ dropping it from a global exchange identity is not justified.
 
 ## 4. Remaining constructive target
 
+A later [Witt-lattice construction](witt-duality-and-vertex-jets.md)
+supplies a perfect characteristic-two Hall pairing and effective
+homogeneous vertex duals at every weight. It also records why these
+positive algebraic facts do not justify a small-window crossing:
+for `d=b(h)`, polynomially many copies of the state space through
+`H=h^(c+o(1))` require `c>=sqrt(2)` just to meet the total row-rank
+budget. The tested scalar exchange systems also fail at weight two.
+
 A useful positive result would supply explicit operators on the
 divided-power state space from Section 1, prove their crossing/exchange
 identity, and bound the actual two-cut factors of its restricted
