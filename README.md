@@ -53,6 +53,7 @@ make verify-cancellation-crossing # Strict certificate gain for a complete cross
 make verify-block-smith # Exact profiles for ordered crossing blocks
 make verify-cubic-full-images # Full cubic coefficient spaces and reduced ranks
 make verify-linear-smith # All binary scalar pencils and the uniform linear barrier
+make verify-type-pressure # Exact common-type optimization and physical gauges
 ```
 
 The Python checks use Python 3 and its standard library. Some optional checks use NumPy for speed. The optional linear Smith catalogue and Schur central-rank checks also require a C++17 compiler.
@@ -98,6 +99,12 @@ has an exact binary-digit reduction to a four-label Gaussian crossing.
 The proof retains its exterior maps and energy projection and gives an
 explicit finite coefficient decomposition. Fixed-occupation sectors of
 the seed are complete crossings in their own right.
+
+[Exact type optimization](research/type-optimized-crossing-pressure.md)
+reduces the best common letter frequencies to one rational pressure inequality.
+It applies to Smith and module certificates. A checked physical gauge gives
+`rho < 61/80` for the Gaussian seed; this is an improvement of that seed
+certificate and remains weaker than the known half-rate construction.
 
 [Finite module automata](research/cancellation-module-smith-automata.md)
 retain cancellation between auxiliary paths. Their bounds improve monotonically

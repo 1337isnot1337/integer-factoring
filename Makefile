@@ -1,4 +1,4 @@
-.PHONY: verify verify-docs verify-frontier verify-post-half verify-schur-fermion verify-schur-central verify-schur-gaussian verify-cancellation-modules verify-minimal-modules verify-cancellation-crossing verify-block-smith verify-linear-smith verify-cubic-full-images verify-formal verify-k6 verify-half-appendix help
+.PHONY: verify verify-docs verify-frontier verify-post-half verify-schur-fermion verify-schur-central verify-schur-gaussian verify-cancellation-modules verify-minimal-modules verify-cancellation-crossing verify-block-smith verify-linear-smith verify-type-pressure verify-cubic-full-images verify-formal verify-k6 verify-half-appendix help
 
 verify: verify-docs verify-frontier
 	python3 -m unittest discover -s tests -v
@@ -37,6 +37,9 @@ verify-block-smith:
 
 verify-linear-smith:
 	python3 tools/check_linear_smith_barrier.py
+
+verify-type-pressure:
+	python3 tools/check_type_optimized_pressure.py
 
 verify-cubic-full-images:
 	python3 tools/check_cubic_full_image_span.py --output /tmp/cubic-full-image-span.json
@@ -82,6 +85,7 @@ help:
 	  'make verify-cancellation-crossing - strict module improvement on a complete crossing' \
 	  'make verify-block-smith - ordered block profiles and submultiplicativity' \
 	  'make verify-linear-smith - uniform degree-one obstruction and binary catalogue' \
+	  'make verify-type-pressure - rational type and physical-gauge certificates' \
 	  'make verify-cubic-full-images - complete varying-image cubic spaces and ranks' \
 	  'make verify-formal        - rebuild original Lean lemmas (Lean 4.35.0)' \
 	  'make verify-k6            - rebuild the certified 1/30 machine (Lean 4.35.0)' \
