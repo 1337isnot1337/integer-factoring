@@ -145,6 +145,12 @@ cp "$root/formal-appendix/SelectedClusterPair.lean" "$stage/SelectedClusterPair.
 cp "$root/formal-appendix/GateSide.lean" "$stage/GateSide.lean"
 cp "$root/formal-appendix/SelectedTopWeight.lean" "$stage/SelectedTopWeight.lean"
 cp "$root/formal-appendix/SelectedClusterSide.lean" "$stage/SelectedClusterSide.lean"
+cp "$root/formal-appendix/CrossWidthBound.lean" "$stage/CrossWidthBound.lean"
+cp "$root/formal-appendix/SelectedTopSide.lean" "$stage/SelectedTopSide.lean"
+cp "$root/formal-appendix/SelectedTopEdge.lean" "$stage/SelectedTopEdge.lean"
+cp "$root/formal-appendix/SelectedPadSide.lean" "$stage/SelectedPadSide.lean"
+cp "$root/formal-appendix/SelectedStateCount.lean" "$stage/SelectedStateCount.lean"
+cp "$root/formal-appendix/WordCode.lean" "$stage/WordCode.lean"
 lake env bash -c '
   set -euo pipefail
   export LEAN_PATH="$1:$1/factoring/.lake/build/lib/lean:$LEAN_PATH"
@@ -233,8 +239,14 @@ lake env bash -c '
   lean --root="$1" -o "$1/SelectedClusterWeight.olean" "$1/SelectedClusterWeight.lean"
   lean --root="$1" -o "$1/SelectedClusterPair.olean" "$1/SelectedClusterPair.lean"
   lean --root="$1" -o "$1/GateSide.olean" "$1/GateSide.lean"
-  lean --root="$1" "$1/SelectedTopWeight.lean"
-  lean --root="$1" "$1/SelectedClusterSide.lean"
+  lean --root="$1" -o "$1/SelectedTopWeight.olean" "$1/SelectedTopWeight.lean"
+  lean --root="$1" -o "$1/SelectedClusterSide.olean" "$1/SelectedClusterSide.lean"
+  lean --root="$1" -o "$1/CrossWidthBound.olean" "$1/CrossWidthBound.lean"
+  lean --root="$1" -o "$1/SelectedTopSide.olean" "$1/SelectedTopSide.lean"
+  lean --root="$1" -o "$1/SelectedTopEdge.olean" "$1/SelectedTopEdge.lean"
+  lean --root="$1" -o "$1/SelectedPadSide.olean" "$1/SelectedPadSide.lean"
+  lean --root="$1" -o "$1/SelectedStateCount.olean" "$1/SelectedStateCount.lean"
+  lean --root="$1" -o "$1/WordCode.olean" "$1/WordCode.lean"
 ' _ "$stage" > "$logs/bridge.log" 2>&1
 python3 - "$logs/bridge.log" <<'PY'
 import re
@@ -294,7 +306,13 @@ cluster_pair = "IntegerFactoring.HalfAppendix.selectedClusterPair_eq"
 top_weight = "IntegerFactoring.HalfAppendix.selectedTopWeight_eq"
 cluster_left = "IntegerFactoring.HalfAppendix.selectedClusterLeft_eq"
 cluster_right = "IntegerFactoring.HalfAppendix.selectedClusterRight_eq"
-if "error:" in text or "sorryAx" in text or not {expected, count_bridge, table, clique, top, selected, row, fast, width, states, state_rate, entry, explicit, pad_rate, pure_factor, level_rate, written_poly, prefix_steps, reference_spec, certified_prefix, search_poly, machine, group_search, group_cost, level_poly, machine_rate, size_poly, params_poly, master_cost, group_sizes, group_predicate, group_correct, selected_group_poly, selected_group_correct, row_bridge, digit_poly, gate_size, gate_code, gate_code_correct, gate_weight, gate_weight_correct, gate_message, gate_message_correct, gate_pair, factor_check, weight_check, cluster_weight, cluster_pair, top_weight, cluster_left, cluster_right} <= {name for name, _ in reports}:
+top_left = "IntegerFactoring.HalfAppendix.selectedTopLeft_eq"
+top_right = "IntegerFactoring.HalfAppendix.selectedTopRight_eq"
+pad_left = "IntegerFactoring.HalfAppendix.selectedPadSide_eq_left"
+pad_right = "IntegerFactoring.HalfAppendix.selectedPadSide_eq_right"
+state_count = "IntegerFactoring.HalfAppendix.selectedStateCount_eq"
+word_code = "IntegerFactoring.HalfAppendix.bitsOf_wordCode"
+if "error:" in text or "sorryAx" in text or not {expected, count_bridge, table, clique, top, selected, row, fast, width, states, state_rate, entry, explicit, pad_rate, pure_factor, level_rate, written_poly, prefix_steps, reference_spec, certified_prefix, search_poly, machine, group_search, group_cost, level_poly, machine_rate, size_poly, params_poly, master_cost, group_sizes, group_predicate, group_correct, selected_group_poly, selected_group_correct, row_bridge, digit_poly, gate_size, gate_code, gate_code_correct, gate_weight, gate_weight_correct, gate_message, gate_message_correct, gate_pair, factor_check, weight_check, cluster_weight, cluster_pair, top_weight, cluster_left, cluster_right, top_left, top_right, pad_left, pad_right, state_count, word_code} <= {name for name, _ in reports}:
     raise SystemExit("Missing or failed Appendix bridge axiom reports")
 allowed = {"propext", "Classical.choice", "Quot.sound"}
 for name, axioms in reports:
