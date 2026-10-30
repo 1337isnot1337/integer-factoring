@@ -7,6 +7,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Half-rate factoring composition](half-rate-factoring.md): ordinary proof of the `1/2` machine bound; its final Lean theorem is in [`formal-appendix/HalfTheorem.lean`](../formal-appendix/HalfTheorem.lean).
 - [Top constructor and codec](half-top-constructor.md): deterministic table construction and exact input translation.
 - [Evaluator and encoding audit](half-evaluator-audit.md): recursive evaluator, computable pad, and charged bit costs.
+- [Sharp logarithmic channel correction](half-rate-second-order-audit.md): the minimal partition energy gives central width `sqrt(2) lambda+(2sqrt(2)-1)log2(lambda)+O(1)` per cut; the positive correction does not hide a further saving.
 - [Verified k6 machine](verified-k6.md): Lean proof of the earlier `1/30` bound.
 - [Sharper k6 rate](k6-sharp-rate.md): ordinary rate derivation above `1/29` for the k6 program; this sharper exponent is not Lean-certified.
 - [k6 source audit](k6-source-audit.md): hashes, modified source scope, and compiler preservation.

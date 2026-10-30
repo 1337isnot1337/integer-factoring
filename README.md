@@ -40,6 +40,8 @@ The composition uses the existing clique evaluator from [Anthropic's Appendix B]
 
 The result table distinguishes verified machine bounds from conditional constructions and finite experiments. A merged PR or a passing finite test does not imply independent mathematical review.
 
+An ordinary [second-order audit](research/half-rate-second-order-audit.md) determines the logarithmic term in the existing central channel width: `sqrt(2) lambda+(2sqrt(2)-1)log2(lambda)+O(1)` per cut. It uses the classical partition asymptotic and exact minimal-energy selection. The correction is positive, so sharpening that partition prefactor alone does not improve the achieved rate.
+
 ## Verification
 
 From the repository root, run:

@@ -17,6 +17,7 @@ verify-docs:
 verify-further:
 	python3 tools/check_vanishing_slack_transfer.py
 	python3 tools/check_optimized_divisor_bound.py
+	python3 tools/check_half_second_order.py
 	python3 tools/check_gap_free_seed_transfer.py
 	python3 tools/check_seed_field_selection.py
 	python3 tools/check_modular_binary_word_barrier.py
