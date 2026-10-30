@@ -26,6 +26,7 @@ verify-schur-gaussian:
 verify-schur-sparse:
 	python3 tools/check_schur_downset_crossing.py
 	python3 tools/check_schur_offset_interval.py
+	python3 tools/check_schur_two_block_holonomy.py
 
 verify-cancellation-modules:
 	python3 tools/check_cancellation_module_automata.py

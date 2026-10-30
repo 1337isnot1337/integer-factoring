@@ -111,6 +111,9 @@ Schur crossings with matrix-valued holonomy and controlled profile limits.
 [Offset intervals](research/schur-offset-interval-reduction.md) reduce to
 an explicit two-scale four-label kernel, with polynomial projection and
 coefficient costs when the ambient offset grows polynomially.
+[Two unequal intervals](research/schur-two-block-holonomy.md) split exactly
+into scalar sectors; the resulting direct kernels also allow interval
+parameters that are not powers of two.
 
 [Exact type optimization](research/type-optimized-crossing-pressure.md)
 reduces the best common letter frequencies to one rational pressure inequality.
