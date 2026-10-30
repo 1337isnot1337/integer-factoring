@@ -151,6 +151,10 @@ cp "$root/formal-appendix/SelectedTopEdge.lean" "$stage/SelectedTopEdge.lean"
 cp "$root/formal-appendix/SelectedPadSide.lean" "$stage/SelectedPadSide.lean"
 cp "$root/formal-appendix/SelectedStateCount.lean" "$stage/SelectedStateCount.lean"
 cp "$root/formal-appendix/WordCode.lean" "$stage/WordCode.lean"
+cp "$root/formal-appendix/CliqueTermCheck.lean" "$stage/CliqueTermCheck.lean"
+cp "$root/formal-appendix/SelectedSummand.lean" "$stage/SelectedSummand.lean"
+cp "$root/formal-appendix/SelectedRow.lean" "$stage/SelectedRow.lean"
+cp "$root/formal-appendix/SelectedTable.lean" "$stage/SelectedTable.lean"
 lake env bash -c '
   set -euo pipefail
   export LEAN_PATH="$1:$1/factoring/.lake/build/lib/lean:$LEAN_PATH"
@@ -247,6 +251,10 @@ lake env bash -c '
   lean --root="$1" -o "$1/SelectedPadSide.olean" "$1/SelectedPadSide.lean"
   lean --root="$1" -o "$1/SelectedStateCount.olean" "$1/SelectedStateCount.lean"
   lean --root="$1" -o "$1/WordCode.olean" "$1/WordCode.lean"
+  lean --root="$1" -o "$1/CliqueTermCheck.olean" "$1/CliqueTermCheck.lean"
+  lean --root="$1" -o "$1/SelectedSummand.olean" "$1/SelectedSummand.lean"
+  lean --root="$1" -o "$1/SelectedRow.olean" "$1/SelectedRow.lean"
+  lean --root="$1" -o "$1/SelectedTable.olean" "$1/SelectedTable.lean"
 ' _ "$stage" > "$logs/bridge.log" 2>&1
 python3 - "$logs/bridge.log" <<'PY'
 import re
@@ -312,7 +320,12 @@ pad_left = "IntegerFactoring.HalfAppendix.selectedPadSide_eq_left"
 pad_right = "IntegerFactoring.HalfAppendix.selectedPadSide_eq_right"
 state_count = "IntegerFactoring.HalfAppendix.selectedStateCount_eq"
 word_code = "IntegerFactoring.HalfAppendix.bitsOf_wordCode"
-if "error:" in text or "sorryAx" in text or not {expected, count_bridge, table, clique, top, selected, row, fast, width, states, state_rate, entry, explicit, pad_rate, pure_factor, level_rate, written_poly, prefix_steps, reference_spec, certified_prefix, search_poly, machine, group_search, group_cost, level_poly, machine_rate, size_poly, params_poly, master_cost, group_sizes, group_predicate, group_correct, selected_group_poly, selected_group_correct, row_bridge, digit_poly, gate_size, gate_code, gate_code_correct, gate_weight, gate_weight_correct, gate_message, gate_message_correct, gate_pair, factor_check, weight_check, cluster_weight, cluster_pair, top_weight, cluster_left, cluster_right, top_left, top_right, pad_left, pad_right, state_count, word_code} <= {name for name, _ in reports}:
+summand = "IntegerFactoring.HalfAppendix.selectedSummand_eq"
+row_poly = "IntegerFactoring.HalfAppendix.selectedRow_polyT"
+row_eq = "IntegerFactoring.HalfAppendix.selectedRow_eq"
+table_poly = "IntegerFactoring.HalfAppendix.selectedTable_polyT"
+table_eq = "IntegerFactoring.HalfAppendix.selectedTable_eq"
+if "error:" in text or "sorryAx" in text or not {expected, count_bridge, table, clique, top, selected, row, fast, width, states, state_rate, entry, explicit, pad_rate, pure_factor, level_rate, written_poly, prefix_steps, reference_spec, certified_prefix, search_poly, machine, group_search, group_cost, level_poly, machine_rate, size_poly, params_poly, master_cost, group_sizes, group_predicate, group_correct, selected_group_poly, selected_group_correct, row_bridge, digit_poly, gate_size, gate_code, gate_code_correct, gate_weight, gate_weight_correct, gate_message, gate_message_correct, gate_pair, factor_check, weight_check, cluster_weight, cluster_pair, top_weight, cluster_left, cluster_right, top_left, top_right, pad_left, pad_right, state_count, word_code, summand, row_poly, row_eq, table_poly, table_eq} <= {name for name, _ in reports}:
     raise SystemExit("Missing or failed Appendix bridge axiom reports")
 allowed = {"propext", "Classical.choice", "Quot.sound"}
 for name, axioms in reports:

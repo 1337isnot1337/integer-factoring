@@ -326,15 +326,18 @@ predicate and sufficient unit padding; its padding exponent is bounded by
 `3n/r` for the selected schedule. Its factoring-specific grouping predicate
 and edge-width oracle are polynomial-time, agree with the reference, and
 produce the reference grouping code when given sufficient padding.
-The selected clique row is expressed as a padded sum over explicitly coded
-states, its gate codes can be decoded in polynomial time, and the numeric gate
+The selected clique row is a polynomial-time padded sum over explicitly coded
+states and agrees with the reference query when sufficiently padded. Its gate
+codes can be decoded in polynomial time, and the numeric gate
 weights and messages agree with the reference. The corresponding cluster
 weight and cross-cluster pair checks are polynomial-time and agree with the
 reference on valid decoded states. The selected top-group weight and cluster
 factor sides also have executable checks matching the reference. The numeric
 top factor sides, their padding, and the selected state count are likewise
 certified; factor-side comparisons use distinct endpoints where required.
-Their composition into the row summand is still open.
+The concrete table writer is also polynomial-time and agrees with the reference
+written table given the master pad. Connecting it to the prefix evaluator and
+the full factoring machine remains open.
 
 The GitHub Actions workflow runs the reference Lean checks, the k6 rate checks,
 and the Python checks. The Appendix bridge target above is run separately.
