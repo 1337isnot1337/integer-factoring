@@ -246,9 +246,11 @@ The [finite-seed amplification theorem](research/finite-seed-amplification.md)
 gives a sufficient all-size criterion from any finite certificate:
 `sum_i sqrt(r_i c_i) < d^(sqrt(2))` would improve the half exponent.
 It also proves that this particular criterion cannot succeed on at most
-five labels. A separate [six-label theorem](research/six-label-rank-sum-obstruction.md)
-extends that exclusion to six labels over every field. Thus a seed
-passing this criterion needs at least seven labels. Better rank analysis
+five labels. The [swap/product rank theorem](research/swap-product-rank-sum.md)
+extends the exclusion through **twelve labels over every field**.
+Its proof gives `rank(Swap-P tensor Q)>=binom(d,2)`, with a sharper
+bound from the invertible part of `QP`. Exact rational rank-budget
+certificates then give a minimum seed size of thirteen. Better rank analysis
 of the grouped tensor coefficients remains a distinct possibility.
 
 The [streamed seed transfer](research/streamed-seed-transfer.md) strengthens
@@ -259,6 +261,16 @@ to certify an all-size rate with integer arithmetic. The usual Smith
 estimate cannot pass the half threshold on at most four labels; an exact
 integer comparison resolves the close four-label case. These are
 constructive criteria and scoped exclusions, not a newly passing seed.
+
+The [conserved-convolution theorem](research/conserved-convolution-crossings.md)
+gives another exact crossing constructor and a full-domain rank obstruction.
+On a finite abelian group `G`, every nonzero kernel in its stated class
+occupies at least `|2G|` separate column blocks. Exact Smith-envelope
+certificates also exclude the small cyclic powers of two in that route.
+The [ideal Hankel endpoint theorem](research/ideal-hankel-endpoint.md)
+separately proves that its extremal row valuation profile cannot have
+a rank-one opposite endpoint under constant normalization when `d>=3`.
+Neither result excludes arbitrary label restrictions or general Smith profiles.
 
 Three all-size results explain why several attractive finite restrictions
 do not give the desired improvement. The
@@ -310,6 +322,18 @@ gives unit duals for even uniform partitions and weighted multipartite
 partitions. It also gives a rank-one kernel deformation and reduces
 the rank problem to partial-partition coefficient tensors. Complete
 finite profiles record both the small gains and their later failures.
+
+The [full permutation-span obstruction](research/permutation-span-cycle-obstruction.md)
+goes beyond the original pieces: one common cycle-block functional
+forces a large rank in both cuts of some summand in every linear
+recombination. It excludes the finite rank-sum target throughout the
+141-dimensional coefficient span of the 24-label identity-kernel seed.
+The [sharp distinguished-piece budget](research/distinguished-piece-rank-budget.md)
+raises its lower bound to `72+2sqrt(503)>116`.
+An [exact coefficient-span optimizer](research/seed-subspace-recombination.md)
+also certifies optimum `325` in the six-dimensional uniform span and
+several declared extensions. The scope leaves arbitrary dual label maps,
+different kernels, and collective tensor-power recombinations open.
 
 Further exact analyses cover
 [far-reflected mode supports](research/reflected-support-reduction.md),
