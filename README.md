@@ -28,6 +28,7 @@ The composition uses the existing clique evaluator from [Anthropic's Appendix B]
 | Saving exponent `1/30` for the k6 machine | **Lean-verified** | [Proof](research/verified-k6.md), [machine theorem](variants/k6/FactoringK6/Certified.lean) |
 | Sharper k6 saving `log(12/11)/log(12) > 1/29` | Ordinary proof, not Lean-verified at this rate | [Rate derivation](research/k6-sharp-rate.md) |
 | Saving exponent above `1/2` | **Not established** | [Research index](research/INDEX.md) |
+| Sparse modular transfer overhead | Improved from `exp(O(n/log n))` to `exp(O(sqrt n))`; conditional on an algebra-valid weighted evaluator | [Rough-input transfer](research/rough-sparse-transfer.md) |
 | Crossing paths from arbitrary nilpotent superoperators | Ordinary all-field construction with exact column Smith spectra; row cut remains a separate obligation | [Nilpotent crossing families](research/nilpotent-flag-crossings.md) |
 | Regular roots with a rank-two terminal power | Ordinary all-size construction in characteristic two; early-power ranks remain costly in recorded examples | [Paired-chain construction](research/modified-transpose-root-target.md) |
 | Geometric transpose channels and row inverses | Exact finite row-unimodular paths and rank obstructions; no larger score | [Geometric constructions](research/geometric-transpose-crossings.md), [rank-two normal form](research/rank-two-channel-normal-form.md) |
@@ -88,6 +89,8 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 | [`tools/`](tools/) and [`tests/`](tests/) | Exact checkers, reproduction scripts, and unit tests |
 
 ## Current research frontier
+
+The [rough-input transfer](research/rough-sparse-transfer.md) first tests small factors, then uses the smaller divisor support of the remaining input. It reduces the extra cost of the fixed-characteristic weighted-polynomial transfer to `exp(O(sqrt n))`, so that step preserves any fixed logarithmic saving exponent supplied by a future evaluator. It does not improve the current evaluator itself.
 
 No uniform factoring exponent above `1/2` is proved here. One open approach seeks effective crossing pieces with total rank width `4*rho*lambda + O(log lambda)` for `rho < 1/sqrt(2)`. A suitable family could improve the evaluator bound, but finite rank improvements alone do not establish that inequality.
 

@@ -14,6 +14,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Rough-input sparse transfer](rough-sparse-transfer.md): deterministic small-factor removal reduces the conditional transfer overhead to `exp(O(sqrt n))`, preserving every fixed logarithmic saving exponent supplied by an algebra-valid weighted evaluator.
+
 - [Arbitrary-bound divisor maxima and logspace membership](certified-divisor-oracle.md): an explicit polynomial oracle for every binary bound, strict highly-composite membership in `L`, certified prefix pruning, and independent exact outputs through 8,192 bits.
 
 - [Explicit adaptive divisor oracle](adaptive-benefit-divisor-preprocessing.md): computed benefit certificates remove unknown algorithmic constants, giving polynomial time and a logarithmic-workspace version; an independent exact search agrees through 2,048 bits.

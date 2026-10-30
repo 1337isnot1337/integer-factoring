@@ -139,6 +139,7 @@ verify-frontier:
 	python3 tools/check_primary_central_gram.py
 	python3 tools/check_modular_crossing.py
 	python3 tools/check_sparse_divisor_nonzeroness.py
+	python3 tools/check_rough_sparse_transfer.py --output /tmp/integer-factoring-rough-sparse-transfer.json
 
 verify-formal:
 	bash tools/check_formal.sh
