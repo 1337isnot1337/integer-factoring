@@ -42,6 +42,15 @@ The piece entropy is `O(lambda/sqrt(log lambda))`, so the proved
 endpoint transfer preserves the exact half exponent. The construction
 has linear local space and does not assume a new rank-profile gain.
 
+The [simultaneous transfer](research/simultaneous-time-space-transfer.md)
+extends the packed time and workspace argument to every supplied
+contraction exponent `0<alpha<=1`. A new type-grouped block construction
+also turns a time-only local interface into linear local workspace,
+provided the original family has polynomially many pieces and a
+power-saving width error. Its piece entropy is polylogarithmic and
+its scalar queries take quasipolynomial time. This includes the
+conditional endpoint `alpha=1`; it supplies no better crossing rate.
+
 The [integral counting transfer](research/integral-counting-transfer.md)
 gives a separate direct method for exact divisor-prefix counts in
 polynomial space at this time bound. Streamed integral Schur factors let the evaluator work
@@ -103,6 +112,15 @@ The [directions note](research/post-half-directions.md) records the initial
 search beyond `1/2`. It includes restrictions on the operator interfaces,
 an exact counterexample to projecting away high modes, and finite matrix
 ranks. The results below further specify the mathematical frontier.
+
+The [faster clique baselines](research/fast-matrix-clique.md) improve
+the initial exhaustive coefficient from `1/2` to `1/3` by balanced
+conditioning, with linear assignment space. A separate matrix-product
+construction lowers the arithmetic/table-query coefficient further,
+to about `0.310064` for an explicit rectangular split, using exponential
+storage. The note charges all boundary dimensions and table formation.
+Both variants retain the existing logarithmic exponent; the dense
+variant does not assert that arithmetic constant for finite-tape bit time.
 
 The [network tradeoff](research/half-top-structure.md) rules out improving
 the explicit constructor through regrouping and separate wire compression

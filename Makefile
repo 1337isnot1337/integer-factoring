@@ -17,6 +17,8 @@ verify-post-half:
 	python3 tools/check_half_restricted_labels.py
 
 verify-frontier:
+	python3 tools/check_simultaneous_time_space_transfer.py
+	python3 tools/check_fast_matrix_clique.py
 	python3 tools/check_sublinear_space_recovery.py
 	python3 tools/check_streamed_top_space.py
 	python3 tools/check_blocked_half_family.py
