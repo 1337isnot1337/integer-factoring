@@ -412,3 +412,12 @@ edge-count classes, verifies the exact queue and entropy inequalities,
 checks integer base/flow certificates, and includes disconnected and
 parity controls. The all-size equality (4) follows from the proof,
 not from these bounded computations.
+
+## Effective support decisions
+
+The [finite carry feasibility theorem](finite-carry-channel-feasibility.md)
+decides the positive integer base condition for every exact support and
+endpoint pair. Its finite positive or negative certificates combine with
+the lower entropy certificates and Section 8 reciprocal-weight certificates
+to compute the displayed rate to any requested rational precision. This
+effectiveness result makes no polynomial-time or tensor-rank claim.

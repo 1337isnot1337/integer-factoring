@@ -34,6 +34,7 @@ verify-further:
 	python3 tools/check_channel_flow_duals.py
 	python3 tools/check_component_channel_walks.py
 	python3 tools/check_exact_channel_growth.py
+	python3 tools/check_channel_support_feasibility.py
 	python3 tools/check_scalarized_channel_automata.py
 	python3 tools/check_generic_factor_nonscalarization.py
 	python3 tools/check_binary_energy_symmetry.py
