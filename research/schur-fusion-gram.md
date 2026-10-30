@@ -40,16 +40,14 @@ Exact finite calculations give:
 | 4 | 5 | 22 | 16 | 12 | 12 |
 | 8 | 22 | 231 | 229 | 227 | 228 |
 
-The asymptotic size of `q_h` along powers of two remains open in this
-note. The table does not prove a new factoring exponent or a barrier
-for all crossing constructions. It identifies a specific algebraic
-question governing the central piece of this particular full-label
-family.
-
-The later [regular fusion theorem](regular-fusion-rank.md) resolves
-the analogous image question in the smaller distinct-odd monomial
-quotient. It proves asymptotically full fusion rank there. The full
-Schur-space problem stated above remains separate.
+The later [Schur fusion rank theorem](schur-fusion-rank.md) proves
+`q_h=(1-O(exp(-c h^(1/4))))p(2h)`. Combined with (1), it shows
+that the full homogeneous central piece has the half-rate exponent
+in both cuts. Its proof uses a saturated integral filtration and
+carry-free multiplicity splits, rather than extrapolating this table.
+The [regular quotient theorem](regular-fusion-rank.md) gives the
+analogous statement for distinct-odd monomials. Neither result covers
+arbitrary label restrictions or all crossing constructions.
 
 The mode definitions and crossing identity are from
 [Appendix B, pinned revision `16a5ce4`](https://github.com/anthropics/formal-math/blob/16a5ce41304fcdaea4e0be7c132e1c361dc26da5/eth/proof/statements/AppHalfPiecesStatement.lean).
@@ -279,23 +277,23 @@ L^{-1}A_0(R^{\mathsf T})^{-1}
 Here `B_h`, its inverse, and `K_h` are symmetric. Thus the central
 row and column ranks agree exactly, and (1) bounds both of them.
 
-## 4. What an asymptotic image theorem would imply
+## 4. Consequence of the asymptotic image theorem
 
-For example, if an independent argument proves
+The separate [integral-filtration proof](schur-fusion-rank.md) establishes
 
 ```math
 q_h=(1-o(1))p(2h)\qquad(h=2^r\longrightarrow\infty),
 \tag{14}
 ```
 
-then (1) implies `rank A_0=(1-o(1))p(2h)`. Its logarithm would have
-the ambient leading term `sqrt(2) log2 p(h)`. This would show that
+Hence (1) implies `rank A_0=(1-o(1))p(2h)`. Its logarithm has
+the ambient leading term `sqrt(2) log2 p(h)`. This shows that
 the central piece of the full homogeneous Schur family retains the
-ambient exponent in both flattenings. Their rank product would have
+ambient exponent in both flattenings. Their rank product has
 logarithm `2sqrt(2) log2 p(h)+o(log p(h))`. Thus this specific full-label
-construction would require `rho>=1/sqrt(2)`, even when actual matrix
-ranks replace declared channel counts. Equation (14) is an explicit
-open input, not a consequence of the four finite cases above. Label
+construction requires `rho>=1/sqrt(2)`, even when actual matrix
+ranks replace declared channel counts. Equation (14) follows from
+the separate proof, not from the four finite cases above. Label
 subspaces or different piece constructions require separate analysis.
 
 Ordinary multiplication cannot simply replace fusion in (14). Already
@@ -321,7 +319,9 @@ Thus `Lambda_h Lambda_h` is not contained in `im mu_h`, even at a
 prime-power weight. A characteristic-zero triangular argument in the
 power-sum basis does not repair this: that basis is not an integral
 Schur basis, and relations such as `p_1^2=p_2` appear modulo two.
-An integral image comparison would require a separate proof.
+The later proof instead uses the integral monomial symmetric basis
+and its associated graded multiplication. It obtains independent
+fusion vectors from carry-free splits without claiming image containment.
 
 ## 5. Reproducible checks
 

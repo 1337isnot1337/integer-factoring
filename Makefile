@@ -17,6 +17,7 @@ verify-post-half:
 	python3 tools/check_half_restricted_labels.py
 
 verify-frontier:
+	python3 tools/check_schur_fusion_rank.py
 	python3 tools/check_regular_fusion_rank.py
 	python3 tools/check_permutation_homogeneous_labels.py
 	python3 tools/check_intersection_matching_lift.py

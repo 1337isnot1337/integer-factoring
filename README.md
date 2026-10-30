@@ -300,12 +300,18 @@ The [fusion Gram reduction](research/schur-fusion-gram.md) identifies both
 central ranks and the exact image question that controls them.
 For the smaller regular monomial quotient, the
 [regular fusion theorem](research/regular-fusion-rank.md) now resolves
-that question asymptotically on the full homogeneous label domain.
+that question asymptotically on the full regular homogeneous label domain.
 Almost every distinct-odd partition splits into two equal-weight subsets.
 A length filtration then proves that the fusion image occupies almost
 the whole intermediate space. Its central crossing rank forces exactly
-the half-rate exponent. The proof does not cover further label restrictions
-or settle the corresponding full Schur-space question.
+the half-rate exponent. A stronger
+[integral-filtration theorem](research/schur-fusion-rank.md) now proves
+asymptotically full fusion rank for the full Schur space as well.
+It uses carry-free splits of binary multiplicity digits and accounts
+for exact-weight conditioning. The homogeneous central piece therefore
+has the half-rate exponent in characteristic two and over the rationals
+along powers of two. Further label restrictions and recombinations
+are outside these rank obstructions.
 The [dual-gauge classification](research/dual-gauge-filters.md) describes
 all bounded-weight dual freedom; higher-weight mode filters give explicit
 interval sums of crossing pieces. These results retain the half exponent.
@@ -314,8 +320,9 @@ The [homogeneous-dual construction](research/homogeneous-duals.md) gives a
 new effective crossing family. An explicit polynomial in two sparse
 derivations replaces a large matrix inverse. The proof bounds coefficient
 sizes and generation costs, and verifies the complete crossing interface.
-It retains `rho=1/sqrt(2)` and exponent `1/2`; smaller ranks for its complete
-pieces remain an open route. Its [exact checks](evidence/homogeneous-duals.json)
+It retains `rho=1/sqrt(2)` and exponent `1/2`; further label restrictions
+and different coefficient pieces remain open routes.
+Its [exact checks](evidence/homogeneous-duals.json)
 cover the dual pairing, operator identities, and complete crossing sums.
 On primitive inputs, a [central-piece rank identity](research/primary-central-gram.md)
 goes further: an invertible row swap gives a positive Gram form, so
