@@ -17,6 +17,8 @@ verify-post-half:
 	python3 tools/check_half_restricted_labels.py
 
 verify-frontier:
+	python3 tools/check_integral_counting_transfer.py
+	python3 tools/check_partial_matching_minors.py
 	python3 tools/check_prime_power_gram_involution.py
 	python3 tools/check_schur_fusion_gram.py
 	python3 tools/check_dual_gauge_filters.py

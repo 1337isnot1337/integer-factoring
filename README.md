@@ -17,14 +17,18 @@ deterministic machine with
 T(n)\le C\exp\!\left(\frac{Cn}{\sqrt{\log n}}\right).
 ```
 
-The [modular time–space improvement](research/rough-input-transfer.md)
-now gives this same time bound with **polynomial space**, by removing
-small factors first and evaluating the grid through sequential table
-queries. The [local factor proof](research/modular-factor-space.md)
-uses streamed permanents and polynomial-size coefficient arrays. Both
-the repeated-query cost and the exact half-rate endpoint are included.
-This is an ordinary mathematical proof with finite checks, without new
-Lean formalization.
+The [integral counting transfer](research/integral-counting-transfer.md)
+now gives **exact divisor-prefix counts in polynomial space** at this
+same time bound. Streamed integral Schur factors let the evaluator work
+directly modulo `2^(n+1)`. The residue is the exact count, so `n` prefix
+queries recover the least prime factor with polynomial recovery overhead.
+The proof includes every local query, ring operation, and recomputation.
+
+The [fixed-characteristic time–space route](research/rough-input-transfer.md)
+also gives polynomial space. Its [streamed local factors](research/modular-factor-space.md)
+and the later bit-tagged isolation theorem apply when only a fixed-field
+crossing family is available. These are ordinary mathematical proofs
+with finite checks, without new Lean formalization.
 
 The [explicit interpolation constructor](research/polynomial-top-queries.md)
 now computes every top-table entry in polynomial time and space. Each
@@ -204,6 +208,11 @@ particle count. This yields a second uniform dual construction. Complete
 finite profiles show that the attractive three-label ranks do not persist
 in the next tested matching spaces; an improved asymptotic rank bound
 remains open.
+
+A [partial-matching minor formula](research/partial-matching-minors.md)
+computes the disjointness determinants by paths and cycles in linear graph
+work. Its exact checks cover 257,664 exhaustive pairs. This accelerates
+a local query; it does not bound a complete crossing flattening.
 
 Two [operator restrictions](research/half-recurrence-barrier.md) rule out
 direct shortcuts. The current operators permit only linear changes of the
