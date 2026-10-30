@@ -29,6 +29,8 @@ The composition uses the existing clique evaluator from [Anthropic's Appendix B]
 | Sharper k6 saving `log(12/11)/log(12) > 1/29` | Ordinary proof, not Lean-verified at this rate | [Rate derivation](research/k6-sharp-rate.md) |
 | Saving exponent above `1/2` | **Not established** | [Research index](research/INDEX.md) |
 | Score transfer with arbitrary vanishing width error | Ordinary conditional theorem | [Proof and effective hypotheses](research/vanishing-slack-score-transfer.md) |
+| Uniform endpoint from arbitrarily sparse finite seeds | Ordinary conditional theorem | [Bounded search and type amplification](research/gap-free-seed-score-transfer.md) |
+| Auxiliary divisor-count exponent with leading coefficient one | Ordinary unconditional bound; overall score unchanged | [Exact integer parameter](research/optimized-divisor-count-bound.md) |
 
 The result table distinguishes verified machine bounds from conditional constructions and finite experiments. A merged PR or a passing finite test does not imply independent mathematical review.
 
@@ -40,7 +42,7 @@ From the repository root, run:
 make verify               # Python unit tests, exact certificates, and local link check
 make verify-frontier      # Focused research certificates
 make verify-post-half     # Larger optional rank tests
-make verify-further       # New score-transfer recurrence certificates
+make verify-further       # Score transfers, seed amplification, and divisor bounds
 make verify-docs          # Local Markdown-link check
 ```
 
@@ -70,6 +72,8 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 ## Current research frontier
 
 No uniform factoring exponent above `1/2` is proved here. One open approach seeks effective crossing pieces with total rank width `4*rho*lambda + o(lambda)` for `rho < 1/sqrt(2)`. The [score-transfer theorem](research/vanishing-slack-score-transfer.md) permits this arbitrary vanishing relative error, together with piece entropy `lambda/(log lambda)^(delta-o(1))`, and gives score `min(log2(1/rho), delta)`. Its uniform construction and factor-query hypotheses are part of the theorem. It supplies no new crossing family; finite rank improvements alone do not establish a stronger factoring bound.
+
+The [finite-seed endpoint theorem](research/gap-free-seed-score-transfer.md) removes any gap or generation-speed requirement from an enumerable improving sequence. Bounded search and type amplification give one machine attaining the limiting rank-sum score over a fixed field. Finding a better finite certificate remains the mathematical requirement.
 
 See the [research index](research/INDEX.md) for completed arguments, scoped obstructions, and older candidates. Active work can also appear in [open pull requests](https://github.com/1337isnot1337/integer-factoring/pulls); branch research is not automatically a result on `main`.
 

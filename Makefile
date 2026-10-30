@@ -16,6 +16,8 @@ verify-docs:
 
 verify-further:
 	python3 tools/check_vanishing_slack_transfer.py
+	python3 tools/check_optimized_divisor_bound.py
+	python3 tools/check_gap_free_seed_transfer.py
 
 verify-post-half:
 	python3 tools/check_half_piece_ranks.py --full
@@ -49,7 +51,7 @@ help:
 	  'make verify               - unit tests, exact certificates, and local documentation links' \
 	  'make verify-frontier      - focused frontier certificates' \
 	  'make verify-post-half     - larger optional matrix-rank checks' \
-	  'make verify-further       - score-transfer recurrence certificates' \
+	  'make verify-further       - score transfers, seed amplification, and divisor bounds' \
 	  'make verify-docs          - check local Markdown file links' \
 	  'make verify-formal        - rebuild original Lean lemmas (Lean 4.35.0)' \
 	  'make verify-k6            - rebuild the certified 1/30 machine (Lean 4.35.0)' \
