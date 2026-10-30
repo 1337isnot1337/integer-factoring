@@ -391,7 +391,10 @@ requires real-number approximation in the algorithm.
 
 ## Reproduce the checks
 
-The Python checks require only Python 3 and the standard library:
+The finite checks require Python 3 with its standard library and a C11
+compiler available as `cc` for the native helper replays. Native input
+reads are checked, including builds with fortified libc headers and strict
+compiler warnings:
 
 ```sh
 git clone https://github.com/1337isnot1337/integer-factoring.git

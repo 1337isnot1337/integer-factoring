@@ -70,7 +70,8 @@ int main(int argc, char **argv) {
     FILE *f = fopen(argv[1], "r");
     if (!f)
         return 2;
-    fscanf(f, "%d %d", &d, &n);
+    if (fscanf(f, "%d %d", &d, &n) != 2)
+        return 2;
     rows = d * d;
     if (d < 2 || d > 8 || n < 1 || n > 31)
         return 2;
@@ -78,7 +79,8 @@ int main(int argc, char **argv) {
     for (int i = 0; i < n; i++)
         for (int j = 0; j < rows; j++) {
             unsigned long long v;
-            fscanf(f, "%llx", &v);
+            if (fscanf(f, "%llx", &v) != 1)
+                return 2;
             gen[i][j] = v;
         }
     fclose(f);

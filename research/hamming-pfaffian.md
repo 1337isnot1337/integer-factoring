@@ -187,3 +187,10 @@ Python span generator; its asymptotic cost does not imply that larger
 finite enumerations are practical. Neither threshold clipping in the
 small searches nor a positive result at a few widths proves the missing
 uniform width bound.
+
+
+The recorded full Hamming replay is pinned by its source hashes to
+`fec4ef1`. A later portability fix checks formatted input reads for fortified
+C headers; the default suite rechecks the native oracle and small complete
+searches with those guards. The preserved full-run hashes identify the
+original calculation rather than a newly asserted large rerun.

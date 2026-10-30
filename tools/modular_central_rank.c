@@ -73,12 +73,15 @@ static int coefficient_two(Partition a, Partition out, Partition in) {
     return result;
 }
 static Partition *read_parts(FILE *f, int *n) {
-    fscanf(f, "%d", n);
+    if (fscanf(f, "%d", n) != 1 || *n < 1)
+        exit(2);
     Partition *p = calloc(*n, sizeof(Partition));
     for (int i = 0; i < *n; i++) {
-        fscanf(f, "%d", &p[i].length);
+        if (fscanf(f, "%d", &p[i].length) != 1 || p[i].length < 0 || p[i].length > 16)
+            exit(2);
         for (int j = 0; j < p[i].length; j++)
-            fscanf(f, "%d", &p[i].parts[j]);
+            if (fscanf(f, "%d", &p[i].parts[j]) != 1)
+                exit(2);
     }
     return p;
 }
@@ -139,14 +142,17 @@ static int kernel_pair_rank(uint64_t **left, int nl, uint64_t **right, int nr, i
 }
 static int binary_prefix_rank(FILE *f, Partition *labels, int d, Partition *states, int q) {
     int selected;
-    fscanf(f, "%d", &selected);
+    if (fscanf(f, "%d", &selected) != 1 || selected < 1 || selected > d)
+        return 2;
     int *counts = calloc(selected, sizeof(int));
     int **dual = calloc(selected, sizeof(int *));
     for (int i = 0; i < selected; i++) {
-        fscanf(f, "%d", &counts[i]);
+        if (fscanf(f, "%d", &counts[i]) != 1 || counts[i] < 1 || counts[i] > d)
+            return 2;
         dual[i] = calloc(counts[i], sizeof(int));
         for (int j = 0; j < counts[i]; j++)
-            fscanf(f, "%d", &dual[i][j]);
+            if (fscanf(f, "%d", &dual[i][j]) != 1 || dual[i][j] < 0 || dual[i][j] >= d)
+                return 2;
     }
     int channels = q + 1, words = (channels + 63) / 64;
     uint64_t *left = calloc(d * words, 8), *right = calloc(d * words, 8),

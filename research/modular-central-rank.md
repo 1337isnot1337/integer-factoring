@@ -196,3 +196,10 @@ The original full-domain weight-64 evidence is pinned by its source hashes
 to commit `539c14c`. The later native source adds a binary-prefix entry point;
 the default suite continues to check its unchanged full-domain calculation
 at weights 8, 16, and 32. The binary evidence pins the extended source.
+
+
+The binary full-run hashes identify the source at `67e2091`. Later formatted
+input checks make the same native helpers compile with fortified libc
+headers and `-Werror`; the default full-domain and binary suites exercise
+those guards on their recorded small cases. The larger evidence retains
+its original computation provenance.
