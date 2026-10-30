@@ -90,6 +90,10 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 
 ## Current research frontier
 
+[Partial transpose bounds](research/partial-transpose-power-rank.md) now give an all-field product inequality for the ranks of operator powers. They exclude every regular rank-two nilpotent source with at least five labels from the existing sufficient Smith criterion, directing the search toward larger channel ranks. A separate [fixed-pair theorem](research/rank-one-fixed-pairs.md) and all-size controlled-cycle construction show why nonunital regular roots remain a distinct class.
+
+The [full CNOT coefficient-space analysis](research/cnot-full-tensor-span.md) provides exact tensor block formulas and classifies every rank-one and column-rank-two tensor at every power. Its eight-label exclusion covers arbitrary coefficient recombinations over all characteristic-two fields. Larger coefficient tensor spaces remain open.
+
 The [rough-input transfer](research/rough-sparse-transfer.md) first tests small factors, then uses the smaller divisor support of the remaining input. It reduces the extra cost of the fixed-characteristic weighted-polynomial transfer to `exp(O(sqrt n))`, so that step preserves any fixed logarithmic saving exponent supplied by a future evaluator. It does not improve the current evaluator itself.
 
 No uniform factoring exponent above `1/2` is proved here. One open approach seeks effective crossing pieces with total rank width `4*rho*lambda + O(log lambda)` for `rho < 1/sqrt(2)`. A suitable family could improve the evaluator bound, but finite rank improvements alone do not establish that inequality.

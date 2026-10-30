@@ -14,6 +14,11 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Partial transpose and crossing power ranks](partial-transpose-power-rank.md): a characteristic-free proof of the partial-transpose rank inequality, product bounds for all powers, and a Smith-profile exclusion for every regular rank-two source with at least five labels.
+- [Rank-one fixed pairs](rank-one-fixed-pairs.md): an all-field restriction on invertible rank-two channels, plus regular rank-two controlled-cycle examples at every binary label size.
+- [Full CNOT tensor coefficient space](cnot-full-tensor-span.md): exact small row blocks, all-field rank-one and column-rank-two classifications, and an all-field exclusion of the complete eight-label tensor span.
+- [Three-CNOT row-involutive paths](cnot-crossing-modules.md): an all-size construction, exact local modules, and an all-power obstruction for ordinary univariate coefficient grouping.
+
 - [Rough-input sparse transfer](rough-sparse-transfer.md): deterministic small-factor removal reduces the conditional transfer overhead to `exp(O(sqrt n))`, preserving every fixed logarithmic saving exponent supplied by an algebra-valid weighted evaluator.
 
 - [Arbitrary-bound divisor maxima and logspace membership](certified-divisor-oracle.md): an explicit polynomial oracle for every binary bound, strict highly-composite membership in `L`, certified prefix pruning, and independent exact outputs through 8,192 bits.

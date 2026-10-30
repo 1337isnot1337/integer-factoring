@@ -1,0 +1,225 @@
+{
+  "status": "arbitrary-field structural bound; finite controls only; no exponent improvement",
+  "binary_q2": {
+    "all_binary_operators": 65536,
+    "rank_triples": 19,
+    "invertible_power_bounds_checked": 20160,
+    "regular_unipotent_controls": 2520
+  },
+  "finite_fields": [
+    {
+      "prime": 2,
+      "q": 3,
+      "matrices": 300,
+      "invertible_power_controls": 82
+    },
+    {
+      "prime": 2,
+      "q": 4,
+      "matrices": 200,
+      "invertible_power_controls": 59
+    },
+    {
+      "prime": 3,
+      "q": 2,
+      "matrices": 300,
+      "invertible_power_controls": 166
+    },
+    {
+      "prime": 3,
+      "q": 3,
+      "matrices": 300,
+      "invertible_power_controls": 177
+    },
+    {
+      "prime": 5,
+      "q": 3,
+      "matrices": 100,
+      "invertible_power_controls": 78
+    }
+  ],
+  "sharp_square_control": {
+    "q": 4,
+    "first_choi_rank": 4,
+    "second_choi_rank": 1,
+    "square_bound_is_equality": true,
+    "stronger_product_r_times_r2_bound_is_false": true
+  },
+  "regular_rank_two_threshold": {
+    "all_q_at_least": 5,
+    "base_integer_comparison": {
+      "left": 131593177923584,
+      "right": 95367431640625
+    },
+    "finite_threshold_controls": [
+      {
+        "q": 5,
+        "zero_order_count": 2,
+        "one_order_count_floor": 3,
+        "smith_cost_floor": 122
+      },
+      {
+        "q": 6,
+        "zero_order_count": 2,
+        "one_order_count_floor": 5,
+        "smith_cost_floor": 247
+      },
+      {
+        "q": 7,
+        "zero_order_count": 2,
+        "one_order_count_floor": 9,
+        "smith_cost_floor": 530
+      },
+      {
+        "q": 8,
+        "zero_order_count": 2,
+        "one_order_count_floor": 12,
+        "smith_cost_floor": 884
+      },
+      {
+        "q": 9,
+        "zero_order_count": 2,
+        "one_order_count_floor": 17,
+        "smith_cost_floor": 1522
+      },
+      {
+        "q": 10,
+        "zero_order_count": 2,
+        "one_order_count_floor": 21,
+        "smith_cost_floor": 2279
+      },
+      {
+        "q": 11,
+        "zero_order_count": 2,
+        "one_order_count_floor": 27,
+        "smith_cost_floor": 3482
+      },
+      {
+        "q": 12,
+        "zero_order_count": 2,
+        "one_order_count_floor": 32,
+        "smith_cost_floor": 4864
+      },
+      {
+        "q": 13,
+        "zero_order_count": 2,
+        "one_order_count_floor": 39,
+        "smith_cost_floor": 6890
+      },
+      {
+        "q": 14,
+        "zero_order_count": 2,
+        "one_order_count_floor": 45,
+        "smith_cost_floor": 9167
+      },
+      {
+        "q": 15,
+        "zero_order_count": 2,
+        "one_order_count_floor": 53,
+        "smith_cost_floor": 12322
+      },
+      {
+        "q": 16,
+        "zero_order_count": 2,
+        "one_order_count_floor": 60,
+        "smith_cost_floor": 15812
+      },
+      {
+        "q": 17,
+        "zero_order_count": 2,
+        "one_order_count_floor": 69,
+        "smith_cost_floor": 20450
+      },
+      {
+        "q": 18,
+        "zero_order_count": 2,
+        "one_order_count_floor": 77,
+        "smith_cost_floor": 25519
+      },
+      {
+        "q": 19,
+        "zero_order_count": 2,
+        "one_order_count_floor": 87,
+        "smith_cost_floor": 32042
+      },
+      {
+        "q": 20,
+        "zero_order_count": 2,
+        "one_order_count_floor": 96,
+        "smith_cost_floor": 39104
+      },
+      {
+        "q": 21,
+        "zero_order_count": 2,
+        "one_order_count_floor": 107,
+        "smith_cost_floor": 47962
+      },
+      {
+        "q": 22,
+        "zero_order_count": 2,
+        "one_order_count_floor": 117,
+        "smith_cost_floor": 57479
+      },
+      {
+        "q": 23,
+        "zero_order_count": 2,
+        "one_order_count_floor": 129,
+        "smith_cost_floor": 69170
+      },
+      {
+        "q": 24,
+        "zero_order_count": 2,
+        "one_order_count_floor": 140,
+        "smith_cost_floor": 81652
+      },
+      {
+        "q": 25,
+        "zero_order_count": 2,
+        "one_order_count_floor": 153,
+        "smith_cost_floor": 96722
+      },
+      {
+        "q": 26,
+        "zero_order_count": 2,
+        "one_order_count_floor": 165,
+        "smith_cost_floor": 112727
+      },
+      {
+        "q": 27,
+        "zero_order_count": 2,
+        "one_order_count_floor": 179,
+        "smith_cost_floor": 131770
+      },
+      {
+        "q": 28,
+        "zero_order_count": 2,
+        "one_order_count_floor": 192,
+        "smith_cost_floor": 151904
+      },
+      {
+        "q": 29,
+        "zero_order_count": 2,
+        "one_order_count_floor": 207,
+        "smith_cost_floor": 175562
+      },
+      {
+        "q": 30,
+        "zero_order_count": 2,
+        "one_order_count_floor": 221,
+        "smith_cost_floor": 200479
+      },
+      {
+        "q": 31,
+        "zero_order_count": 2,
+        "one_order_count_floor": 237,
+        "smith_cost_floor": 229442
+      },
+      {
+        "q": 32,
+        "zero_order_count": 2,
+        "one_order_count_floor": 252,
+        "smith_cost_floor": 259844
+      }
+    ]
+  }
+}

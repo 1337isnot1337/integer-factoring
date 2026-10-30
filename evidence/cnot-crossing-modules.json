@@ -1,0 +1,508 @@
+{
+  "local_polynomial": [
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      9,
+      4,
+      12
+    ],
+    [
+      0,
+      4,
+      3,
+      6
+    ],
+    [
+      0,
+      12,
+      6,
+      11
+    ]
+  ],
+  "row_basis_columns": [
+    1,
+    14,
+    12,
+    10
+  ],
+  "row_normal_form": [
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      5,
+      2
+    ],
+    [
+      0,
+      0,
+      8,
+      5
+    ]
+  ],
+  "column_basis_columns": [
+    6,
+    9,
+    1,
+    2
+  ],
+  "column_triangular_form": [
+    [
+      4,
+      12,
+      0,
+      4
+    ],
+    [
+      0,
+      8,
+      3,
+      6
+    ],
+    [
+      0,
+      0,
+      2,
+      6
+    ],
+    [
+      0,
+      0,
+      0,
+      4
+    ]
+  ],
+  "row_infinity_orders": [
+    0,
+    3,
+    3,
+    6
+  ],
+  "column_zero_orders": [
+    0,
+    1,
+    2,
+    5
+  ],
+  "finite_tensor_lower_bounds": [
+    {
+      "tensor_exponent": 1,
+      "integer_cost_lower_bound": 3
+    },
+    {
+      "tensor_exponent": 2,
+      "integer_cost_lower_bound": 9
+    },
+    {
+      "tensor_exponent": 3,
+      "integer_cost_lower_bound": 22
+    },
+    {
+      "tensor_exponent": 4,
+      "integer_cost_lower_bound": 63
+    },
+    {
+      "tensor_exponent": 5,
+      "integer_cost_lower_bound": 186
+    },
+    {
+      "tensor_exponent": 6,
+      "integer_cost_lower_bound": 553
+    },
+    {
+      "tensor_exponent": 7,
+      "integer_cost_lower_bound": 1675
+    },
+    {
+      "tensor_exponent": 8,
+      "integer_cost_lower_bound": 5157
+    },
+    {
+      "tensor_exponent": 9,
+      "integer_cost_lower_bound": 15986
+    },
+    {
+      "tensor_exponent": 10,
+      "integer_cost_lower_bound": 49865
+    },
+    {
+      "tensor_exponent": 11,
+      "integer_cost_lower_bound": 156220
+    },
+    {
+      "tensor_exponent": 12,
+      "integer_cost_lower_bound": 490522
+    },
+    {
+      "tensor_exponent": 13,
+      "integer_cost_lower_bound": 1542721
+    },
+    {
+      "tensor_exponent": 14,
+      "integer_cost_lower_bound": 4857166
+    },
+    {
+      "tensor_exponent": 15,
+      "integer_cost_lower_bound": 15301609
+    },
+    {
+      "tensor_exponent": 16,
+      "integer_cost_lower_bound": 48223823
+    },
+    {
+      "tensor_exponent": 17,
+      "integer_cost_lower_bound": 152017363
+    },
+    {
+      "tensor_exponent": 18,
+      "integer_cost_lower_bound": 479274237
+    },
+    {
+      "tensor_exponent": 19,
+      "integer_cost_lower_bound": 1511161129
+    },
+    {
+      "tensor_exponent": 20,
+      "integer_cost_lower_bound": 4764942990
+    },
+    {
+      "tensor_exponent": 21,
+      "integer_cost_lower_bound": 15024991132
+    },
+    {
+      "tensor_exponent": 22,
+      "integer_cost_lower_bound": 47377786559
+    },
+    {
+      "tensor_exponent": 23,
+      "integer_cost_lower_bound": 149394955181
+    },
+    {
+      "tensor_exponent": 24,
+      "integer_cost_lower_bound": 471081033201
+    },
+    {
+      "tensor_exponent": 25,
+      "integer_cost_lower_bound": 1485432155490
+    },
+    {
+      "tensor_exponent": 26,
+      "integer_cost_lower_bound": 4683893889091
+    },
+    {
+      "tensor_exponent": 27,
+      "integer_cost_lower_bound": 14769238676153
+    },
+    {
+      "tensor_exponent": 28,
+      "integer_cost_lower_bound": 46569977654921
+    },
+    {
+      "tensor_exponent": 29,
+      "integer_cost_lower_bound": 146842217191799
+    },
+    {
+      "tensor_exponent": 30,
+      "integer_cost_lower_bound": 463012794168515
+    },
+    {
+      "tensor_exponent": 31,
+      "integer_cost_lower_bound": 1459931239835572
+    },
+    {
+      "tensor_exponent": 32,
+      "integer_cost_lower_bound": 4603300888772252
+    },
+    {
+      "tensor_exponent": 33,
+      "integer_cost_lower_bound": 14514566446997238
+    },
+    {
+      "tensor_exponent": 34,
+      "integer_cost_lower_bound": 45765340568294303
+    },
+    {
+      "tensor_exponent": 35,
+      "integer_cost_lower_bound": 144300362790371346
+    },
+    {
+      "tensor_exponent": 36,
+      "integer_cost_lower_bound": 454984283199809729
+    },
+    {
+      "tensor_exponent": 37,
+      "integer_cost_lower_bound": 1434576637681989011
+    },
+    {
+      "tensor_exponent": 38,
+      "integer_cost_lower_bound": 4523239954043869138
+    },
+    {
+      "tensor_exponent": 39,
+      "integer_cost_lower_bound": 14261793026762055241
+    },
+    {
+      "tensor_exponent": 40,
+      "integer_cost_lower_bound": 44967357219629211241
+    },
+    {
+      "tensor_exponent": 41,
+      "integer_cost_lower_bound": 141781454023046130825
+    },
+    {
+      "tensor_exponent": 42,
+      "integer_cost_lower_bound": 447033839200156036501
+    },
+    {
+      "tensor_exponent": 43,
+      "integer_cost_lower_bound": 1409484686085793406371
+    },
+    {
+      "tensor_exponent": 44,
+      "integer_cost_lower_bound": 4444054572387797037321
+    },
+    {
+      "tensor_exponent": 45,
+      "integer_cost_lower_bound": 14011916103324005336043
+    },
+    {
+      "tensor_exponent": 46,
+      "integer_cost_lower_bound": 44178895571861307970329
+    },
+    {
+      "tensor_exponent": 47,
+      "integer_cost_lower_bound": 139293681218849570296573
+    },
+    {
+      "tensor_exponent": 48,
+      "integer_cost_lower_bound": 439184759318507847688570
+    },
+    {
+      "tensor_exponent": 49,
+      "integer_cost_lower_bound": 1384721494811384119290273
+    },
+    {
+      "tensor_exponent": 50,
+      "integer_cost_lower_bound": 4365932089009710851323793
+    },
+    {
+      "tensor_exponent": 51,
+      "integer_cost_lower_bound": 13765466236836322724140493
+    },
+    {
+      "tensor_exponent": 52,
+      "integer_cost_lower_bound": 43401457781400860006627365
+    },
+    {
+      "tensor_exponent": 53,
+      "integer_cost_lower_bound": 136841297215658310861693211
+    },
+    {
+      "tensor_exponent": 54,
+      "integer_cost_lower_bound": 431449084629422718079236670
+    },
+    {
+      "tensor_exponent": 55,
+      "integer_cost_lower_bound": 1360321157131697870077571491
+    },
+    {
+      "tensor_exponent": 56,
+      "integer_cost_lower_bound": 4288969031543144179460215993
+    },
+    {
+      "tensor_exponent": 57,
+      "integer_cost_lower_bound": 13522716672020864449932901217
+    },
+    {
+      "tensor_exponent": 58,
+      "integer_cost_lower_bound": 42635817035647107753533173394
+    },
+    {
+      "tensor_exponent": 59,
+      "integer_cost_lower_bound": 134426488501549716561733959154
+    },
+    {
+      "tensor_exponent": 60,
+      "integer_cost_lower_bound": 423832992686715645243009027476
+    },
+    {
+      "tensor_exponent": 61,
+      "integer_cost_lower_bound": 1336301105182835973353733021072
+    },
+    {
+      "tensor_exponent": 62,
+      "integer_cost_lower_bound": 4213214511612031556436030139656
+    },
+    {
+      "tensor_exponent": 63,
+      "integer_cost_lower_bound": 13283805487279968096058344831434
+    },
+    {
+      "tensor_exponent": 64,
+      "integer_cost_lower_bound": 41882360547716713828093852463481
+    },
+    {
+      "tensor_exponent": 65,
+      "integer_cost_lower_bound": 132050337483133683240782863462963
+    },
+    {
+      "tensor_exponent": 66,
+      "integer_cost_lower_bound": 416339497369409418500688401555071
+    },
+    {
+      "tensor_exponent": 67,
+      "integer_cost_lower_bound": 1312669690439003185933202407900423
+    },
+    {
+      "tensor_exponent": 68,
+      "integer_cost_lower_bound": 4138691533657841510917851859701276
+    },
+    {
+      "tensor_exponent": 69,
+      "integer_cost_lower_bound": 13048795581766210454045044880184459
+    },
+    {
+      "tensor_exponent": 70,
+      "integer_cost_lower_bound": 41141258706342367681872071011531169
+    },
+    {
+      "tensor_exponent": 71,
+      "integer_cost_lower_bound": 129713300290602057544359555137999185
+    },
+    {
+      "tensor_exponent": 72,
+      "integer_cost_lower_bound": 408969801020101001784344570526095156
+    },
+    {
+      "tensor_exponent": 73,
+      "integer_cost_lower_bound": 1289430017188594986361965729722239129
+    },
+    {
+      "tensor_exponent": 74,
+      "integer_cost_lower_bound": 4065407883344724627055572228559050495
+    },
+    {
+      "tensor_exponent": 75,
+      "integer_cost_lower_bound": 12817705658619728674471633490283565745
+    },
+    {
+      "tensor_exponent": 76,
+      "integer_cost_lower_bound": 40412553397323118533206097286795752394
+    },
+    {
+      "tensor_exponent": 77,
+      "integer_cost_lower_bound": 127415458989322013271111329987297949353
+    },
+    {
+      "tensor_exponent": 78,
+      "integer_cost_lower_bound": 401724015891154345202603248736465827524
+    },
+    {
+      "tensor_exponent": 79,
+      "integer_cost_lower_bound": 1266582009638333506227982397043324128410
+    },
+    {
+      "tensor_exponent": 80,
+      "integer_cost_lower_bound": 3993362059807210623953561993724838284294
+    },
+    {
+      "tensor_exponent": 81,
+      "integer_cost_lower_bound": 12590527276118530775868722897485518520776
+    },
+    {
+      "tensor_exponent": 82,
+      "integer_cost_lower_bound": 39696207088073779074866106130356564557252
+    },
+    {
+      "tensor_exponent": 83,
+      "integer_cost_lower_bound": 125156663085017564667449938708604976640260
+    },
+    {
+      "tensor_exponent": 84,
+      "integer_cost_lower_bound": 394601572667737147720484101201969851480277
+    },
+    {
+      "tensor_exponent": 85,
+      "integer_cost_lower_bound": 1244123592936240488394515197390322158992905
+    },
+    {
+      "tensor_exponent": 86,
+      "integer_cost_lower_bound": 3922546694494454249917982263038472656298404
+    },
+    {
+      "tensor_exponent": 87,
+      "integer_cost_lower_bound": 12367234757406772610898091381207954827544881
+    },
+    {
+      "tensor_exponent": 88,
+      "integer_cost_lower_bound": 38992131587606778972768193194226615660388282
+    },
+    {
+      "tensor_exponent": 89,
+      "integer_cost_lower_bound": 122936613092449607774067226667168632456874435
+    },
+    {
+      "tensor_exponent": 90,
+      "integer_cost_lower_bound": 387601463582310790116944804307261815569666752
+    },
+    {
+      "tensor_exponent": 91,
+      "integer_cost_lower_bound": 1222051401240390925477937053797962232528687379
+    },
+    {
+      "tensor_exponent": 92,
+      "integer_cost_lower_bound": 3852950615707917413128428896143819189042408765
+    },
+    {
+      "tensor_exponent": 93,
+      "integer_cost_lower_bound": 12147791216632848748945558444386157673090347538
+    },
+    {
+      "tensor_exponent": 94,
+      "integer_cost_lower_bound": 38300205654565364903229558383829302491212800173
+    },
+    {
+      "tensor_exponent": 95,
+      "integer_cost_lower_bound": 120754912037553579979921391211526104959815234027
+    },
+    {
+      "tensor_exponent": 96,
+      "integer_cost_lower_bound": 380722393203720122181597824796048542611478045138
+    },
+    {
+      "tensor_exponent": 97,
+      "integer_cost_lower_bound": 1200361219627987864333798894015626772600687265577
+    },
+    {
+      "tensor_exponent": 98,
+      "integer_cost_lower_bound": 3784560144893157779470338283242802016325729207376
+    },
+    {
+      "tensor_exponent": 99,
+      "integer_cost_lower_bound": 11932152364945976830543066473907590749554618471756
+    },
+    {
+      "tensor_exponent": 100,
+      "integer_cost_lower_bound": 37620286181788837116971696645389857746854233472235
+    }
+  ],
+  "large_t_threshold": 100,
+  "claim_scope": "all ordinary univariate tensor-power coefficient decompositions; broader recombinations not covered"
+}
