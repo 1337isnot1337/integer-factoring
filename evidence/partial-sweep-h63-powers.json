@@ -1,0 +1,49 @@
+{
+  "energy": 63,
+  "labels": 132,
+  "application_order": [
+    0,
+    1,
+    2
+  ],
+  "powers": [
+    {
+      "power": 1,
+      "row_rank": 5195,
+      "column_rank": 2400,
+      "rank_product": 12468000
+    },
+    {
+      "power": 2,
+      "row_rank": 2568,
+      "column_rank": 2771,
+      "rank_product": 7115928
+    },
+    {
+      "power": 4,
+      "row_rank": 1844,
+      "column_rank": 2646,
+      "rank_product": 4879224
+    },
+    {
+      "power": 8,
+      "row_rank": 1782,
+      "column_rank": 3375,
+      "rank_product": 6014250
+    },
+    {
+      "power": 16,
+      "row_rank": 1782,
+      "column_rank": 3618,
+      "rank_product": 6447276
+    }
+  ],
+  "row_rank_stabilized": true,
+  "finite_rank_sum_target": 997.5723737831224,
+  "seconds": 8.969,
+  "source_sha256": {
+    "explore_partial_sweep_powers.py": "352ecda3270bbe4d9e0907b005bb5335492323bbd93ef69437e5f43768ad43b9",
+    "check_partial_mode_sweep.py": "b7ecbe3351eca07abb539783399d2800008282da8448a7fdee9330209d046c5f",
+    "check_mismatched_weyl_spectrum.py": "738b8a6f2a35a4cc0b51299478a92b09179963bbf308a21e01e424bce737eb9d"
+  }
+}

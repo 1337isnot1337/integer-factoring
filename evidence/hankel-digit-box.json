@@ -1,0 +1,240 @@
+{
+  "affine_cases": 192,
+  "bilinear_cases": 144,
+  "carry_support_cases": [
+    {
+      "N": 1,
+      "chosen_nonzero_frequency": [
+        0,
+        1
+      ],
+      "full_rank_extensions": 3,
+      "legal_lower_coefficients": 1,
+      "m": 2,
+      "proved_lower_bound": 1,
+      "q": 3
+    },
+    {
+      "N": 2,
+      "chosen_nonzero_frequency": [
+        0,
+        1
+      ],
+      "full_rank_extensions": 3,
+      "legal_lower_coefficients": 2,
+      "m": 2,
+      "proved_lower_bound": 1,
+      "q": 3
+    },
+    {
+      "N": 3,
+      "chosen_nonzero_frequency": [
+        0,
+        1
+      ],
+      "full_rank_extensions": 3,
+      "legal_lower_coefficients": 1,
+      "m": 2,
+      "proved_lower_bound": 1,
+      "q": 3
+    },
+    {
+      "N": 1,
+      "chosen_nonzero_frequency": [
+        0,
+        1
+      ],
+      "full_rank_extensions": 5,
+      "legal_lower_coefficients": 1,
+      "m": 2,
+      "proved_lower_bound": 3,
+      "q": 5
+    },
+    {
+      "N": 2,
+      "chosen_nonzero_frequency": [
+        0,
+        1
+      ],
+      "full_rank_extensions": 5,
+      "legal_lower_coefficients": 2,
+      "m": 2,
+      "proved_lower_bound": 3,
+      "q": 5
+    },
+    {
+      "N": 3,
+      "chosen_nonzero_frequency": [
+        0,
+        1
+      ],
+      "full_rank_extensions": 5,
+      "legal_lower_coefficients": 2,
+      "m": 2,
+      "proved_lower_bound": 3,
+      "q": 5
+    },
+    {
+      "N": 1,
+      "chosen_nonzero_frequency": [
+        0,
+        0,
+        1
+      ],
+      "full_rank_extensions": 25,
+      "legal_lower_coefficients": 1,
+      "m": 3,
+      "proved_lower_bound": 10,
+      "q": 5
+    },
+    {
+      "N": 2,
+      "chosen_nonzero_frequency": [
+        0,
+        1,
+        0
+      ],
+      "full_rank_extensions": 20,
+      "legal_lower_coefficients": 2,
+      "m": 3,
+      "proved_lower_bound": 10,
+      "q": 5
+    },
+    {
+      "N": 3,
+      "chosen_nonzero_frequency": [
+        0,
+        1,
+        0
+      ],
+      "full_rank_extensions": 20,
+      "legal_lower_coefficients": 2,
+      "m": 3,
+      "proved_lower_bound": 10,
+      "q": 5
+    },
+    {
+      "N": 4,
+      "chosen_nonzero_frequency": [
+        0,
+        0,
+        1
+      ],
+      "full_rank_extensions": 25,
+      "legal_lower_coefficients": 4,
+      "m": 3,
+      "proved_lower_bound": 10,
+      "q": 5
+    },
+    {
+      "N": 5,
+      "chosen_nonzero_frequency": [
+        0,
+        0,
+        1
+      ],
+      "full_rank_extensions": 25,
+      "legal_lower_coefficients": 3,
+      "m": 3,
+      "proved_lower_bound": 10,
+      "q": 5
+    },
+    {
+      "N": 6,
+      "chosen_nonzero_frequency": [
+        0,
+        0,
+        1
+      ],
+      "full_rank_extensions": 25,
+      "legal_lower_coefficients": 5,
+      "m": 3,
+      "proved_lower_bound": 10,
+      "q": 5
+    },
+    {
+      "N": 7,
+      "chosen_nonzero_frequency": [
+        0,
+        1,
+        0
+      ],
+      "full_rank_extensions": 20,
+      "legal_lower_coefficients": 4,
+      "m": 3,
+      "proved_lower_bound": 10,
+      "q": 5
+    },
+    {
+      "N": 1,
+      "chosen_nonzero_frequency": [
+        0,
+        1
+      ],
+      "full_rank_extensions": 7,
+      "legal_lower_coefficients": 1,
+      "m": 2,
+      "proved_lower_bound": 5,
+      "q": 7
+    },
+    {
+      "N": 2,
+      "chosen_nonzero_frequency": [
+        0,
+        1
+      ],
+      "full_rank_extensions": 7,
+      "legal_lower_coefficients": 2,
+      "m": 2,
+      "proved_lower_bound": 5,
+      "q": 7
+    },
+    {
+      "N": 3,
+      "chosen_nonzero_frequency": [
+        0,
+        1
+      ],
+      "full_rank_extensions": 7,
+      "legal_lower_coefficients": 2,
+      "m": 2,
+      "proved_lower_bound": 5,
+      "q": 7
+    }
+  ],
+  "determinant_cases": 3253,
+  "hankel_cases": [
+    {
+      "full_rank": 18,
+      "m": 2,
+      "proved_lower_bound": 9,
+      "q": 3,
+      "total": 27
+    },
+    {
+      "full_rank": 100,
+      "m": 2,
+      "proved_lower_bound": 75,
+      "q": 5,
+      "total": 125
+    },
+    {
+      "full_rank": 2500,
+      "m": 3,
+      "proved_lower_bound": 1250,
+      "q": 5,
+      "total": 3125
+    },
+    {
+      "full_rank": 294,
+      "m": 2,
+      "proved_lower_bound": 245,
+      "q": 7,
+      "total": 343
+    }
+  ],
+  "nonzero_initial_completion_cases": 204,
+  "prefix_formula_cases": 154,
+  "scope": "Exact finite transcription checks; no new factoring exponent or Lean proof.",
+  "status": "passed"
+}

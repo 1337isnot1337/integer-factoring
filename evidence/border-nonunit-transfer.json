@@ -1,0 +1,114 @@
+{
+  "status": "passed",
+  "scope": "Finite identity and rank checks; no improved seed or measured asymptotic space bound.",
+  "border_cases": [
+    {
+      "p": 2,
+      "k": 1,
+      "labels": 2,
+      "types": 3,
+      "nonzero_pieces": 2,
+      "required_precision": 2
+    },
+    {
+      "p": 2,
+      "k": 2,
+      "labels": 4,
+      "types": 6,
+      "nonzero_pieces": 5,
+      "required_precision": 3
+    },
+    {
+      "p": 2,
+      "k": 3,
+      "labels": 8,
+      "types": 10,
+      "nonzero_pieces": 6,
+      "required_precision": 4
+    },
+    {
+      "p": 3,
+      "k": 1,
+      "labels": 2,
+      "types": 3,
+      "nonzero_pieces": 2,
+      "required_precision": 2
+    },
+    {
+      "p": 3,
+      "k": 2,
+      "labels": 4,
+      "types": 6,
+      "nonzero_pieces": 4,
+      "required_precision": 3
+    },
+    {
+      "p": 5,
+      "k": 1,
+      "labels": 2,
+      "types": 3,
+      "nonzero_pieces": 2,
+      "required_precision": 2
+    },
+    {
+      "p": 5,
+      "k": 2,
+      "labels": 4,
+      "types": 6,
+      "nonzero_pieces": 5,
+      "required_precision": 3
+    }
+  ],
+  "chain_weighted_budget_inequalities": 1800,
+  "digit_rank_cases": [
+    {
+      "p": 2,
+      "precision_digit": 1,
+      "labels": 2,
+      "ring_channels": 2,
+      "digit_rank": 1
+    },
+    {
+      "p": 2,
+      "precision_digit": 2,
+      "labels": 4,
+      "ring_channels": 2,
+      "digit_rank": 3
+    },
+    {
+      "p": 2,
+      "precision_digit": 3,
+      "labels": 8,
+      "ring_channels": 2,
+      "digit_rank": 7
+    },
+    {
+      "p": 2,
+      "precision_digit": 4,
+      "labels": 16,
+      "ring_channels": 2,
+      "digit_rank": 15
+    },
+    {
+      "p": 3,
+      "precision_digit": 1,
+      "labels": 3,
+      "ring_channels": 2,
+      "digit_rank": 2
+    },
+    {
+      "p": 3,
+      "precision_digit": 2,
+      "labels": 9,
+      "ring_channels": 2,
+      "digit_rank": 8
+    },
+    {
+      "p": 5,
+      "precision_digit": 1,
+      "labels": 5,
+      "ring_channels": 2,
+      "digit_rank": 4
+    }
+  ]
+}

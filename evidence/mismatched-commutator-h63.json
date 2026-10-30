@@ -1,0 +1,52 @@
+{
+  "local_energy_bound": 24,
+  "independent_energy_spaces": 625,
+  "local_entries": 480249,
+  "source": {
+    "energy": 63,
+    "labels": 132,
+    "sector_labels": 19,
+    "source_entries_checked": 632732,
+    "rank_H": 2380,
+    "rank_projector": 722,
+    "pairing_row_rank": 361,
+    "pairing_column_rank_by_verified_permutation": 1444,
+    "noncommutation_witness": {
+      "row_pair": [
+        [
+          57,
+          2,
+          0,
+          0
+        ],
+        [
+          57,
+          2,
+          0,
+          0
+        ]
+      ],
+      "column_pair": [
+        [
+          3,
+          20,
+          0,
+          0
+        ],
+        [
+          3,
+          20,
+          0,
+          0
+        ]
+      ],
+      "AR": 1,
+      "RA": 0
+    }
+  },
+  "source_sha256": {
+    "check_mismatched_commutator.py": "38d582190e60e627f111317f173133825b01f6d6b77dc79d247191246702ccba",
+    "check_mismatched_weyl_spectrum.py": "738b8a6f2a35a4cc0b51299478a92b09179963bbf308a21e01e424bce737eb9d"
+  },
+  "seconds": 1.601
+}

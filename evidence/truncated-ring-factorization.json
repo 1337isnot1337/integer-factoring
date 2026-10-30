@@ -1,0 +1,33 @@
+{
+  "cases": 380,
+  "checker_sha256": "b2e99eb77bb5851faeec8fc228bf7977a14bdc925c0720ea84d343fea0d0191a",
+  "exhaustive_minimum_channel_checks": 256,
+  "f2_t2_2x2_smith_profiles": {
+    "()": 1,
+    "(0, 0)": 96,
+    "(0, 1)": 72,
+    "(0,)": 72,
+    "(1, 1)": 6,
+    "(1,)": 9
+  },
+  "factor_entry_checks": 1476,
+  "full_image_radical_generator_control": true,
+  "generator_prefix_checks": 380,
+  "nonzero_nilpotent_rank_control": true,
+  "one_channel_matrices_over_f2_t2": 82,
+  "oracle_counters": {
+    "base_entry_queries": 1099972,
+    "coefficient_calls": 26835,
+    "extension_presentations": 1292,
+    "field_presentations": 1292,
+    "rank_calls": 1304
+  },
+  "oracle_generator_checks": 4,
+  "oracle_u_coefficient_checks": 7,
+  "oracle_v_coefficient_checks": 4,
+  "ring_channel_count_consistency_negative_control": true,
+  "scope": "Finite exact identities; Python memory is not the workspace proof.",
+  "seconds": 3.5795739400000457,
+  "status": "passed",
+  "toeplitz_smith_rank_identities": 854
+}

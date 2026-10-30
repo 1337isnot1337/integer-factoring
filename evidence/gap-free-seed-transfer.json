@@ -1,0 +1,14 @@
+{
+  "checker_sha256": "e14da5c323bbee49e013f7b81b4382a2daf7ff5068c57e4ad4331ba86a5001f8",
+  "exact_integer_entropy_envelopes": 65536,
+  "exact_rank_sum_type_certificates": 21,
+  "fields": [
+    2,
+    3
+  ],
+  "independent_word_vs_coefficient_entries": 393216,
+  "nonzero_type_rank_pairs_checked": 21,
+  "scope": "Finite type identities and resource envelopes; no new strong seed or factoring exponent.",
+  "seed_amplification_cases": 5,
+  "status": "passed"
+}

@@ -1,0 +1,94 @@
+{
+  "connected_integer_base_repetitions": 7,
+  "exact_edge_count_classes": 1164,
+  "integer_growth_certificates": [
+    {
+      "base": "sqrt(6)",
+      "entropy_product": "46656",
+      "flow_total": 6
+    },
+    {
+      "base": "2",
+      "entropy_product": "256",
+      "flow_total": 4,
+      "positive_base_bridge_has_zero_stationary_flow": true
+    }
+  ],
+  "invalid_base_rejections": 4,
+  "parity_controls": [
+    {
+      "closed_count": 0,
+      "length": 1,
+      "open_count": 1
+    },
+    {
+      "closed_count": 1,
+      "length": 2,
+      "open_count": 0
+    },
+    {
+      "closed_count": 0,
+      "length": 3,
+      "open_count": 1
+    },
+    {
+      "closed_count": 1,
+      "length": 4,
+      "open_count": 0
+    },
+    {
+      "closed_count": 0,
+      "length": 5,
+      "open_count": 1
+    },
+    {
+      "closed_count": 1,
+      "length": 6,
+      "open_count": 0
+    },
+    {
+      "closed_count": 0,
+      "length": 7,
+      "open_count": 1
+    },
+    {
+      "closed_count": 1,
+      "length": 8,
+      "open_count": 0
+    },
+    {
+      "closed_count": 0,
+      "length": 9,
+      "open_count": 1
+    },
+    {
+      "closed_count": 1,
+      "length": 10,
+      "open_count": 0
+    },
+    {
+      "closed_count": 0,
+      "length": 11,
+      "open_count": 1
+    },
+    {
+      "closed_count": 1,
+      "length": 12,
+      "open_count": 0
+    },
+    {
+      "closed_count": 0,
+      "length": 13,
+      "open_count": 1
+    },
+    {
+      "closed_count": 1,
+      "length": 14,
+      "open_count": 0
+    }
+  ],
+  "queue_and_entropy_inequalities_per_class": 4,
+  "scope": "Finite exact counting checks for a proved limsup theorem; no tensor-rank lower bound or factoring improvement.",
+  "source_sha256": "dab68ffc6703e9fcf74c185f9e48734507716ed8d355f7cfd2e9061238cd6d01",
+  "status": "passed"
+}

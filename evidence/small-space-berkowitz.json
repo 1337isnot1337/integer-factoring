@@ -1,0 +1,12 @@
+{
+  "affine_consistency_comparisons": 120,
+  "characteristic_coefficients_vs_principal_minors": 420,
+  "checker_sha256": "8c91c2b5afd792042c1cd9b0156b67d56a0f23e881f9a411f9d595470bcc446d",
+  "cramer_coordinate_recoveries": 111,
+  "field_determinants_vs_elimination": 105,
+  "greedy_mask_ranks_vs_elimination": 145,
+  "nonfield_ring_determinants_vs_leibniz": 60,
+  "scope": "Finite identities and oracle/mask algorithms; packed workspace follows from the written analysis, not Python memory measurements.",
+  "status": "passed",
+  "uncached_input_entry_queries_in_coefficient_checks": 1560645
+}

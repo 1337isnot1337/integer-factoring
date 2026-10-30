@@ -1,0 +1,342 @@
+{
+  "independently_sieved_integers": 262143,
+  "exact_bit_ranges_compared": 18,
+  "prime_bound_cases": 64,
+  "streamed_product_bits_compared": 90,
+  "invalid_inputs_rejected": 4,
+  "small_oracles": [
+    {
+      "input_bits": 1,
+      "maximum_divisors": 1,
+      "optimal_count_bits": 0,
+      "least_witness": 1,
+      "exponents": [],
+      "canonical_patterns_checked": 1
+    },
+    {
+      "input_bits": 2,
+      "maximum_divisors": 2,
+      "optimal_count_bits": 1,
+      "least_witness": 2,
+      "exponents": [
+        1
+      ],
+      "canonical_patterns_checked": 2
+    },
+    {
+      "input_bits": 3,
+      "maximum_divisors": 4,
+      "optimal_count_bits": 2,
+      "least_witness": 6,
+      "exponents": [
+        1,
+        1
+      ],
+      "canonical_patterns_checked": 4
+    },
+    {
+      "input_bits": 4,
+      "maximum_divisors": 6,
+      "optimal_count_bits": 3,
+      "least_witness": 12,
+      "exponents": [
+        2,
+        1
+      ],
+      "canonical_patterns_checked": 6
+    },
+    {
+      "input_bits": 5,
+      "maximum_divisors": 8,
+      "optimal_count_bits": 3,
+      "least_witness": 24,
+      "exponents": [
+        3,
+        1
+      ],
+      "canonical_patterns_checked": 9
+    },
+    {
+      "input_bits": 6,
+      "maximum_divisors": 12,
+      "optimal_count_bits": 4,
+      "least_witness": 60,
+      "exponents": [
+        2,
+        1,
+        1
+      ],
+      "canonical_patterns_checked": 13
+    },
+    {
+      "input_bits": 7,
+      "maximum_divisors": 16,
+      "optimal_count_bits": 4,
+      "least_witness": 120,
+      "exponents": [
+        3,
+        1,
+        1
+      ],
+      "canonical_patterns_checked": 17
+    },
+    {
+      "input_bits": 8,
+      "maximum_divisors": 20,
+      "optimal_count_bits": 5,
+      "least_witness": 240,
+      "exponents": [
+        4,
+        1,
+        1
+      ],
+      "canonical_patterns_checked": 24
+    },
+    {
+      "input_bits": 9,
+      "maximum_divisors": 24,
+      "optimal_count_bits": 5,
+      "least_witness": 360,
+      "exponents": [
+        3,
+        2,
+        1
+      ],
+      "canonical_patterns_checked": 31
+    },
+    {
+      "input_bits": 10,
+      "maximum_divisors": 32,
+      "optimal_count_bits": 5,
+      "least_witness": 840,
+      "exponents": [
+        3,
+        1,
+        1,
+        1
+      ],
+      "canonical_patterns_checked": 39
+    },
+    {
+      "input_bits": 11,
+      "maximum_divisors": 40,
+      "optimal_count_bits": 6,
+      "least_witness": 1680,
+      "exponents": [
+        4,
+        1,
+        1,
+        1
+      ],
+      "canonical_patterns_checked": 50
+    },
+    {
+      "input_bits": 12,
+      "maximum_divisors": 48,
+      "optimal_count_bits": 6,
+      "least_witness": 2520,
+      "exponents": [
+        3,
+        2,
+        1,
+        1
+      ],
+      "canonical_patterns_checked": 62
+    },
+    {
+      "input_bits": 13,
+      "maximum_divisors": 64,
+      "optimal_count_bits": 6,
+      "least_witness": 7560,
+      "exponents": [
+        3,
+        3,
+        1,
+        1
+      ],
+      "canonical_patterns_checked": 79
+    },
+    {
+      "input_bits": 14,
+      "maximum_divisors": 80,
+      "optimal_count_bits": 7,
+      "least_witness": 15120,
+      "exponents": [
+        4,
+        3,
+        1,
+        1
+      ],
+      "canonical_patterns_checked": 97
+    },
+    {
+      "input_bits": 15,
+      "maximum_divisors": 96,
+      "optimal_count_bits": 7,
+      "least_witness": 27720,
+      "exponents": [
+        3,
+        2,
+        1,
+        1,
+        1
+      ],
+      "canonical_patterns_checked": 118
+    },
+    {
+      "input_bits": 16,
+      "maximum_divisors": 120,
+      "optimal_count_bits": 7,
+      "least_witness": 55440,
+      "exponents": [
+        4,
+        2,
+        1,
+        1,
+        1
+      ],
+      "canonical_patterns_checked": 144
+    },
+    {
+      "input_bits": 17,
+      "maximum_divisors": 144,
+      "optimal_count_bits": 8,
+      "least_witness": 110880,
+      "exponents": [
+        5,
+        2,
+        1,
+        1,
+        1
+      ],
+      "canonical_patterns_checked": 172
+    },
+    {
+      "input_bits": 18,
+      "maximum_divisors": 168,
+      "optimal_count_bits": 8,
+      "least_witness": 221760,
+      "exponents": [
+        6,
+        2,
+        1,
+        1,
+        1
+      ],
+      "canonical_patterns_checked": 206
+    }
+  ],
+  "comparison_table": [
+    {
+      "input_bits": 8,
+      "maximum_divisors": 20,
+      "optimal_count_bits": 5,
+      "least_witness": 240,
+      "exponents": [
+        4,
+        1,
+        1
+      ],
+      "canonical_patterns_checked": 24,
+      "previous_split_count_bits": 5,
+      "least_strict_power_two_modulus_bits": 5
+    },
+    {
+      "input_bits": 16,
+      "maximum_divisors": 120,
+      "optimal_count_bits": 7,
+      "least_witness": 55440,
+      "exponents": [
+        4,
+        2,
+        1,
+        1,
+        1
+      ],
+      "canonical_patterns_checked": 144,
+      "previous_split_count_bits": 9,
+      "least_strict_power_two_modulus_bits": 7
+    },
+    {
+      "input_bits": 32,
+      "maximum_divisors": 1920,
+      "optimal_count_bits": 11,
+      "least_witness": 3491888400,
+      "exponents": [
+        4,
+        3,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "canonical_patterns_checked": 1680,
+      "previous_split_count_bits": 17,
+      "least_strict_power_two_modulus_bits": 11
+    },
+    {
+      "input_bits": 64,
+      "maximum_divisors": 184320,
+      "optimal_count_bits": 18,
+      "least_witness": 18401055938125660800,
+      "exponents": [
+        7,
+        4,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "canonical_patterns_checked": 47616,
+      "previous_split_count_bits": 33,
+      "least_strict_power_two_modulus_bits": 18
+    },
+    {
+      "input_bits": 128,
+      "maximum_divisors": 318504960,
+      "optimal_count_bits": 29,
+      "least_witness": 278282512406132373381723386382308832000,
+      "exponents": [
+        8,
+        4,
+        3,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "canonical_patterns_checked": 4333170,
+      "previous_split_count_bits": 65,
+      "least_strict_power_two_modulus_bits": 29
+    }
+  ],
+  "source_sha256": {
+    "check_exact_divisor_maximum.py": "a9f90d7a953ebf1e93b4f98e669fd8d04eeb357b0e2caa4001610a519bb90064",
+    "exact_divisor_maximum.py": "b4174e1dc354ed2bbfaaf51ea0091518a4a9f85485d1fe0065e5ce3d27a78ceb"
+  },
+  "seconds": 8.082
+}

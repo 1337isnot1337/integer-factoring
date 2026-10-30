@@ -1,0 +1,94 @@
+{
+  "field": "F2",
+  "states": 3,
+  "lift_auxiliary_dimension": 13,
+  "right_E_eigenvector_constraint_rank": 3,
+  "left_E_eigenvector_constraint_rank": 3,
+  "augmented_reachable_dimension": 2,
+  "all_matrix_words_through_length3": 4369,
+  "entry_cut_rank_pairs": [
+    [
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        4,
+        1
+      ]
+    ],
+    [
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        4,
+        1
+      ]
+    ],
+    [
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        4,
+        4
+      ]
+    ]
+  ],
+  "transition_cost_matrix": [
+    [
+      2,
+      2,
+      2
+    ],
+    [
+      2,
+      2,
+      2
+    ],
+    [
+      2,
+      2,
+      4
+    ]
+  ],
+  "exact_spectral_base": "4+2sqrt(2)",
+  "rational_upper_certificate": {
+    "beta": 7,
+    "twice_positive_vector": [
+      2,
+      2,
+      3
+    ]
+  },
+  "lift_transition_entry_checks": 144,
+  "lift_word_endpoint_checks": 528,
+  "initial_boundary_ranks": [
+    2,
+    2,
+    2
+  ],
+  "terminal_boundary_ranks": [
+    2,
+    2,
+    2
+  ],
+  "protected_diagonal_matrix_units_checked": 6,
+  "scope": "Exact diagnostic construction outside common E eigenvectors; not an improving seed.",
+  "seconds": 0.1057170389995008
+}
