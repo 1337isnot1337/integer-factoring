@@ -17,6 +17,9 @@ verify-post-half:
 	python3 tools/check_half_restricted_labels.py
 
 verify-frontier:
+	python3 tools/check_linear_carry_blocks.py
+	python3 tools/check_matching_code_lift.py
+	python3 tools/check_matching_gram_unipotence.py
 	python3 tools/check_logarithmic_wire_network.py
 	python3 tools/check_fourier_odd_characteristic.py
 	python3 tools/check_polynomial_top_queries.py

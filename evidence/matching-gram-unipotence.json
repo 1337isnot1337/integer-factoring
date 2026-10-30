@@ -1,0 +1,121 @@
+{
+  "scope": "finite exact checks; all-size unipotence is proved in the companion note",
+  "gram_profiles": [
+    {
+      "particles": 1,
+      "dimension": 1,
+      "gram_rank": 0,
+      "nilpotence_bound": 1
+    },
+    {
+      "particles": 2,
+      "dimension": 3,
+      "gram_rank": 3,
+      "nilpotence_bound": 2
+    },
+    {
+      "particles": 3,
+      "dimension": 15,
+      "gram_rank": 4,
+      "nilpotence_bound": 3
+    },
+    {
+      "particles": 4,
+      "dimension": 105,
+      "gram_rank": 105,
+      "nilpotence_bound": 5
+    },
+    {
+      "particles": 5,
+      "dimension": 945,
+      "gram_rank": 358,
+      "nilpotence_bound": 7
+    }
+  ],
+  "determinant_checks": 11260,
+  "homogeneous_wick_checks": 81,
+  "negative_controls": {
+    "A2_is_nonzero_idempotent": true,
+    "G6_squared_off_diagonal_cycle_type_1_5": 1
+  },
+  "collapsed_profiles": [
+    {
+      "vertices": 4,
+      "dimension": 3,
+      "stabilizer_orbits": 14,
+      "profile": [
+        [
+          0,
+          1,
+          9
+        ],
+        [
+          2,
+          4,
+          4
+        ],
+        [
+          4,
+          9,
+          1
+        ]
+      ],
+      "maximum_rank_product": 16,
+      "direct_entries": 243
+    },
+    {
+      "vertices": 8,
+      "dimension": 105,
+      "stabilizer_orbits": 4154,
+      "profile": [
+        [
+          0,
+          1,
+          11025
+        ],
+        [
+          1,
+          14,
+          2730
+        ],
+        [
+          2,
+          453,
+          6174
+        ],
+        [
+          3,
+          3105,
+          3463
+        ],
+        [
+          4,
+          7328,
+          7328
+        ],
+        [
+          5,
+          3463,
+          3105
+        ],
+        [
+          6,
+          6174,
+          453
+        ],
+        [
+          7,
+          2730,
+          14
+        ],
+        [
+          8,
+          11025,
+          1
+        ]
+      ],
+      "maximum_rank_product": 53699584,
+      "direct_entries": 0
+    }
+  ]
+}

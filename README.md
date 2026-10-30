@@ -38,8 +38,11 @@ uses `O(log n)`-bit messages and `O(n)` total information volume.
 Bivariate interpolation gives polynomial-time metadata and top queries.
 Its Fourier representation also contracts entire arithmetic blocks and
 carry segments in polynomial time, including the character-algebra cost.
-The largest top schedule still preserves the exact half exponent. Mixed
-blocks outside the proved classes need a further contraction argument.
+The largest top schedule still preserves the exact half exponent. A further
+[linear-and-carry closure theorem](research/linear-carry-blocks.md) includes
+arbitrary interpolation, addition, and carry subsets in one polynomial-time
+query. Blocks that also contain middle multiplication gates need a further
+contraction argument.
 
 It combines Claude (Anthropic)'s existing Appendix B clique evaluator with
 Isaac Rudich and Louis-Martin Rousseau's multiplication-network reduction.
@@ -191,6 +194,16 @@ recombination work in [PR #24](https://github.com/1337isnot1337/integer-factorin
 has since produced a twenty-piece, rank-product-four certificate on three labels;
 the reflected construction here is a different family, not the current
 best finite certificate.
+
+The [matching-code lift](research/matching-code-lift.md) gives exact
+multigraded crossings on uniform set partitions. Independent variables
+reduce their piece count to `exp(O(lambda/log lambda))`, despite the large
+numerical mode weights. [Jack-polynomial integrality](research/matching-gram-unipotence.md)
+proves that the homogeneous matching pairing is invertible at every even
+particle count. This yields a second uniform dual construction. Complete
+finite profiles show that the attractive three-label ranks do not persist
+in the next tested matching spaces; an improved asymptotic rank bound
+remains open.
 
 Two [operator restrictions](research/half-recurrence-barrier.md) rule out
 direct shortcuts. The current operators permit only linear changes of the
