@@ -129,6 +129,14 @@ Structured binary-label tests and larger finite cases do not establish a
 better asymptotic coefficient. Run `python3 tools/check_modular_recombination.py`
 for the default checks, or add `--full` for the larger search.
 
+A [reflected particle-hole identity](research/modular-particle-hole.md)
+gives an exact compression rule at every binary mode-block size. Above half
+occupancy, a known polynomial divides every complete profile; removing it
+produces the reflected-complement family and preserves crossing scale one.
+The ordinary proof and exact checks provide an effective normalization,
+without a better asymptotic width coefficient. Run
+`python3 tools/check_modular_particle_hole.py` (or add `--full`).
+
 The [kernel-pairing calculation](research/modular-central-rank.md) extends
 the exact complete homogeneous central rank to 11,563 at weight 64 on all
 276 regular labels. It includes the vacuum term and computes the full
