@@ -10,8 +10,11 @@ The implementation reaches **six sites and 240 logical labels**. Its
 complete ten-dimensional binary coefficient space fails the finite-seed
 criterion: all 1,023 nonzero combinations were tested, and the eight
 affordable combinations span a five-dimensional space that misses the
-crossing. This is a finite binary exclusion. No all-field or all-power
-claim is made for the 240-label seed.
+crossing. A separate
+[constant-compression certificate](two-even-site-P6-character-barrier.md)
+extends the exclusion for this seed to every characteristic-two field
+and every tensor power. That extension uses explicit constant maps,
+not an extrapolation from the finite scan.
 
 The construction itself and the four-site factorization hold at every
 size. This advances the available exact evaluator beyond the fixed
@@ -289,6 +292,8 @@ many copies of a fixed core cannot make this particular local
 certificate into an all-size \(d_P^{3/2}\) obstruction.
 
 Shared-parameter coefficient collisions and the assembled interactions
-between marked-site submatrices remain available. The finite
-240-label exclusion does not decide those effects over extension
-fields or across tensor powers.
+between marked-site submatrices remain available. The finite binary
+scan alone does not decide those effects over extension fields or
+across tensor powers. The separate compression certificate now
+settles this specific 240-label span; larger two-even-site
+constructions remain outside that theorem.

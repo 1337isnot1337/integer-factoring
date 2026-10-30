@@ -42,6 +42,9 @@ verify-constructions:
 	python3 tools/check_ward_dual_incidence.py
 	python3 tools/check_ward_code_charge_entropy.py
 	python3 tools/check_ward_rectangular_envelope.py
+	python3 tools/check_ward_stable_operators.py --output /tmp/integer-factoring-ward-stable-operators.json
+	python3 tools/check_ward_form_operator_transport.py --output /tmp/integer-factoring-ward-form-operator-transport.json
+	python3 tools/check_ward_operator_types.py --output /tmp/integer-factoring-ward-operator-types-check.json
 	python3 tools/check_overlapping_symplectic_profiles.py
 	python3 tools/check_cubic_radical_output_maps.py
 	python3 tools/check_noncommutative_crossing_seed_algebra_audit.py
@@ -74,6 +77,7 @@ verify-post-half:
 	python3 tools/check_common_character_compressions.py --output /tmp/integer-factoring-common-compressions.json
 	python3 tools/check_two_even_site_sections.py --scope graphs --work-dir /tmp/integer-factoring-two-even-sections --output /tmp/integer-factoring-two-even-sections.json
 	python3 tools/assemble_two_even_site_cores.py --pairs 6 --screen evidence/two-even-site-core-P6-F2.jsonl --output /tmp/integer-factoring-two-even-P6.json
+	python3 tools/check_two_even_site_compressions.py --output /tmp/integer-factoring-two-even-P6-compressions.json
 	python3 tools/check_half_piece_ranks.py --full
 	python3 tools/check_half_projection.py
 	python3 tools/check_half_restricted_labels.py
