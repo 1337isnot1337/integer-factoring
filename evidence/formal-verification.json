@@ -11,13 +11,178 @@
     {
       "path": "formal/GroupingThreshold.lean",
       "sha256": "c6427ab2c593e51ce4b06ffbf1c558c10c394867c46453e0a17f22ac3c411c93",
-      "result": "passed"
+      "result": "passed",
+      "axiom_reports": 7,
+      "log": "evidence/lean-grouping.log"
     },
     {
       "path": "formal/CrossingComplement.lean",
       "sha256": "da9cf40bdae86507b343fc10e28e6aac9c5a2adb39f830e0f7e27b26526130e0",
-      "result": "passed"
+      "result": "passed",
+      "axiom_reports": 3,
+      "log": "evidence/lean-crossing.log"
+    },
+    {
+      "path": "formal/ExplicitChain.lean",
+      "sha256": "d3d46383a88a5431d3ebeec9fbf17b265c889c487c89a1557f16f3e36769caf6",
+      "result": "passed",
+      "axiom_reports": 9,
+      "log": "evidence/lean-explicit-chain.log"
     }
   ],
-  "scope": "Finite grouping and signed complement lemmas. This is not a formal improved factoring time theorem."
+  "checked_declarations": [
+    {
+      "declaration": "Factoring.Improvements.exists_good_accuracy_of_threshold",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.Improvements.exists_good_accuracy_five_fourth",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.Improvements.network_grouping_accuracy_of_threshold",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.Improvements.exists_good_of_threshold",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.Improvements.exists_good_five_sixth",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.Improvements.exists_good_exact_threshold",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.Improvements.network_grouping_of_threshold",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.Improvements.signed_complement_factorization",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.Improvements.crossing_complement_identity",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.Improvements.seven_pow_26_lt_two_pow_73",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.Improvements.group_count_dominates_backwards_ratio",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.Improvements.level_divided_volume_le",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.Improvements.chainMax_le_explicit",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.Improvements.zC_le_explicit",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.Improvements.uniform_chain_explicit",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.Improvements.Zu_le_explicit",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.Improvements.explicit_value_requirements",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.Improvements.factoring_explicit_polynomial",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Factoring.Improvements.factoring_explicit_exponential",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  ],
+  "scope": "Stronger finite grouping and signed complement lemmas; an explicit all-level envelope and complete time bound for the unchanged reference factoring machine. The sharper logarithmic-power asymptotics and modified factoring machine are not Lean verified."
 }
