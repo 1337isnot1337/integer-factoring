@@ -14,7 +14,7 @@ T(n) <= C * 2^(C * n / (Nat.sqrt (Nat.log 2 n) + 1))
      = exp(O(n / sqrt(log n))).
 ```
 
-The constant `C` does not depend on the input. This gives score **`alpha = 1/2`** under the [Big O Speedrun rule](https://bigospeedrun.com/integer-factoring). The bound is asymptotic. It is not a practical factoring speedup, and independent review remains pending.
+The constant `C` does not depend on the input. This gives score **`alpha = 1/2`** under the [Big O Speedrun rule](https://bigospeedrun.com/integer-factoring). The bound is asymptotic; no practical factoring speedup is claimed. Big O Speedrun independently rebuilt the proof at `e91442d3` and accepted it with both the Lean kernel and nanoda. See the [verification record](https://github.com/1337isnot1337/integer-factoring/issues/28#issuecomment-6533697488) and [verifier run](https://github.com/bigospeedrun/verifier/actions/runs/41108289491).
 
 The complete Lean endpoint is [`IntegerFactoring.HalfAppendix.sqrtLogLog_factoring`](formal-appendix/HalfTheorem.lean). It proves the source statement `Factoring.SqrtLogLogConjecture` and depends only on `propext`, `Classical.choice`, and `Quot.sound`. The proof covers the factoring-table constructor, deterministic grouping, value preservation, padding, prefix recovery, and the finite-alphabet machine bound.
 
@@ -24,7 +24,7 @@ The composition uses the existing clique evaluator from [Anthropic's Appendix B]
 
 | Claim | Status | Details |
 | --- | --- | --- |
-| Saving exponent `1/2` | **Lean-verified** | [Final theorem](formal-appendix/HalfTheorem.lean), [proof modules](formal-appendix/README.md) |
+| Saving exponent `1/2` | **Lean-verified by Big O Speedrun** | [Final theorem](formal-appendix/HalfTheorem.lean), [external two-kernel verification](https://github.com/1337isnot1337/integer-factoring/issues/28#issuecomment-6533697488), [proof modules](formal-appendix/README.md) |
 | Saving exponent `1/30` for the k6 machine | **Lean-verified** | [Proof](research/verified-k6.md), [machine theorem](variants/k6/FactoringK6/Certified.lean) |
 | Sharper k6 saving `log(12/11)/log(12) > 1/29` | Ordinary proof, not Lean-verified at this rate | [Rate derivation](research/k6-sharp-rate.md) |
 | Saving exponent above `1/2` | **Not established** | [Research index](research/INDEX.md) |
