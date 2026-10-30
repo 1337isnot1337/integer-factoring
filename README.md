@@ -122,7 +122,9 @@ not establish optimality of the full central piece.
 
 A [complete-piece recombination search](research/modular-recombination.md)
 reduces the maximum rank product from 27 to 4 on the three-label modular
-example, with explicit decomposition witnesses and exact replay. Its uniform
+example, with explicit decomposition witnesses and exact replay. An exhaustive
+`2^34`-tensor audit proves four optimal within that finite symmetry span
+over `F_2`, with a short independent rank-one classification replay. Its uniform
 construction-cost argument covers bounded-size recombinations. A three-piece
 five-label witness also reduces the rank-product cutoff from 210 to 121.
 Structured binary-label tests and larger finite cases do not establish a

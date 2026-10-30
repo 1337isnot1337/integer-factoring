@@ -71,9 +71,10 @@ from the original profiles and check their sum entry by entry.
 
 This gives the **minimum feasible maximum rank product within the declared
 candidate list**. The checker separately inserts every candidate of strictly
-smaller cost and verifies that their span does not contain `E`. This does
-not establish minimality over all combinations of three or more images,
-all elements of the full span, or arbitrary tensor decompositions.
+smaller cost and verifies that their span does not contain `E`. This establishes
+minimality only in that candidate list. Section 6 separately gives the
+completed exhaustive minimum over the full three-label symmetry span.
+Neither result establishes minimality over arbitrary tensor decompositions.
 
 A nonzero binary matrix of rank `r` has an effective rank-`r` factorization.
 Select independent columns `J` and rows `I` with invertible
@@ -166,8 +167,8 @@ The pair screen at weight 12 has cutoff 18; allowing triples found cutoff
 scan tracking every product cutoff from one through nine found a cutoff-four
 witness. This is the explicit 20-piece result above. Every constituent uses
 at most twenty source images and is independently reconstructed by the
-default checker. Products below four are not yet known to suffice or fail
-in the complete span.
+default checker. The exhaustive audit below proves that products below four do not suffice
+in this complete finite span.
 At weight 16, the three-piece witness is especially concise: its large
 piece is `A_-16+A_0+A_16`; its other two pieces are coordinate symmetry
 images of `A_32`. The JSON gives the exact permutations.
@@ -183,15 +184,31 @@ and the default suite recomputes them.
 The full symmetry span at weight 12 has dimension 34. A separate native
 screen, [search_three_label_span.c](../tools/search_three_label_span.c),
 enumerates an exact Gray-code interval of this binary span and tracks
-all rank-product cutoffs from one through nine. The cutoff-four accepted
-tensors already span the entire source space. The stored positive witness
-does not depend on trusting exhaustive completion, which is not claimed.
-The scan remains active to test products below four.
+all rank-product cutoffs from one through nine. The complete enumeration checks all `2^34=17,179,869,184` tensors. The
+cutoff-three tensors number 489 and span dimension 27; their span excludes
+the crossing. Cutoff-four tensors number 5,191 and span the entire
+34-dimensional source space. Together with the stored positive witness,
+this proves that **four is the minimum feasible rank-product cutoff in this
+entire finite symmetry span over F_2**, without restricting the number of
+source images per piece or the number of output pieces.
+
+This does not cover extension-field recombinations or tensors outside the
+source span. It remains a finite restricted-model optimum, not a factoring
+lower bound or an asymptotic upper-bound improvement.
+
+The completed native log is [three-label-span-full.jsonl](../evidence/three-label-span-full.jsonl).
+The [independent log audit](../evidence/three-label-span-audit.json) verifies
+every retained basis vector, its source-span membership and Gray-code index,
+its two ranks, the cutoff span dimensions, and crossing membership. It also
+records a separating linear functional for the cutoff-three span. The
+source hash is identical to the source compiled for the completed run.
+This audit checks retained tensors and the full-run metadata; it is not
+an independent second enumeration of all 17 billion matrices.
 
 The native preflight checker compares 243 classifier cases and 6,742
 Gray-code interval vectors against independent exact Python elimination,
 including acceptance and rejection cases and a nonzero interval start.
-The commands below reproduce the entire optional search; replaying the
+The commands below reproduce the entire search; replaying the
 stored positive witness only requires the default recombination checker.
 
 ```sh
@@ -204,5 +221,36 @@ python3 tools/check_three_label_span.py --verify-log /tmp/three-label-full.jsonl
 
 The final command independently checks every retained basis tensor,
 its membership in the source span, its Gray-code index, its two ranks,
-and whether its span contains the crossing. It audits a completed native
+and whether its span contains the crossing. It audits the completed native
 run; it is not an independent repetition of all `2^34` classifications.
+
+### A short independent lower-bound replay
+
+The lower bound can be independently verified without repeating the native
+`2^34` enumeration. Every nonzero tensor of rank product at most three has
+rank one in at least one of the two flattenings. If its row matrix has
+rank one, write it as `a b^T`, for nonzero nine-bit vectors `a,b`. Reshape
+these vectors into three-by-three matrices `A,B`. Its column matrix is a
+Kronecker product, so its column rank is `rank(A) rank(B)`.
+
+Enumerate all pairs of nonzero three-by-three binary matrices whose rank
+product is at most three, form their outer tensors, and test membership
+in the source span. There are only 47,677 pairs. Also exchange the middle
+two coordinates to cover the column-rank-one case. This independently
+finds exactly the same 489 low-product tensors and their 27-dimensional
+span.
+
+All of them are annihilated by the linear functional
+
+```math
+L(F)=F(2,1,0,2)+F(2,1,1,2),
+```
+
+where labels are numbered zero through two in the recorded order.
+The crossing has `L(E)=1`. Thus no sum of those tensors can equal it.
+The default `check_three_label_span.py` performs this complete independent
+classification and checks the separating functional, as well as the native
+classifier preflight. Together with the positive rank-product-four witness,
+it replays the exact finite optimum without relying on completeness of
+the billion-scale run. The native log remains a corroborating enumeration
+of all cutoffs through nine.

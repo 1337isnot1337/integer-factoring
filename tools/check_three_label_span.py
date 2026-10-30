@@ -139,9 +139,68 @@ def verify_log(path):
         assert insert(low_bases[cutoff-1], vector, 0)
     assert [len(basis) for basis in low_bases] == summary['span_ranks']
     summary = dict(summary)
+    target = encode(crossing(3), 3)
     summary['crossing_in_cutoff_span'] = [represent(
-        basis, encode(crossing(3), 3)) is not None for basis in low_bases]
+        basis, target) is not None for basis in low_bases]
+    minimum = summary['crossing_in_cutoff_span'].index(True)+1
+    summary['minimum_cutoff'] = minimum
+    if minimum > 1:
+        basis = low_bases[minimum-2]
+        def reduced(vector):
+            for pivot in sorted(basis, reverse=True):
+                if (vector >> pivot) & 1:
+                    vector ^= basis[pivot][0]
+            return vector
+        residual = reduced(target)
+        assert residual
+        free = residual.bit_length()-1
+        functional = sum(((reduced(1 << j) >> free) & 1) << j for j in range(81))
+        assert (functional & target).bit_count() % 2 == 1
+        assert all((functional & vector).bit_count() % 2 == 0
+                   for vector, mask in basis.values())
+        summary['separating_functional_below_minimum'] = hex(functional)
+    summary['log_sha256'] = sha256(path.read_bytes()).hexdigest()
+    summary['audit_checker_sha256'] = sha256(Path(__file__).read_bytes()).hexdigest()
     return summary
+
+
+def verify_small_products():
+    """Independent complete classification below four via rank-one realignment."""
+    source = {}
+    for generator in full_basis():
+        insert(source, generator, 0)
+    small_ranks = {vector: rank_mod(
+        [[(vector >> (3*i+j)) & 1 for j in range(3)] for i in range(3)], 2)
+        for vector in range(1, 512)}
+    accepted = set()
+    tested = 0
+    from check_modular_recombination import permute
+    for left, left_rank in small_ranks.items():
+        for right, right_rank in small_ranks.items():
+            if left_rank*right_rank > 3:
+                continue
+            tested += 1
+            vector = sum(right << (9*i) for i in range(9) if (left >> i) & 1)
+            if represent(source, vector) is None:
+                continue
+            accepted.add(vector)
+            exchanged = encode(permute(decode(vector, 3), 3, (0, 2, 1, 3)), 3)
+            assert represent(source, exchanged) is not None
+            accepted.add(exchanged)
+    basis = {}
+    functional = 0x120000000000000000
+    for vector in accepted:
+        assert independent_cost(vector) <= 3
+        assert (functional & vector).bit_count() % 2 == 0
+        insert(basis, vector, 0)
+    target = encode(crossing(3), 3)
+    assert (functional & target).bit_count() % 2 == 1
+    assert represent(basis, target) is None
+    assert tested == 47677 and len(accepted) == 489 and len(basis) == 27
+    return {'rank_one_outer_products_tested': tested,
+            'all_product_below_four_tensors': len(accepted),
+            'low_product_span_rank': len(basis),
+            'separating_functional': hex(functional)}
 
 
 def main():
@@ -165,6 +224,7 @@ def main():
             subprocess.run(['cc', '-O3', '-std=c11', '-Wall', '-Wextra', '-Werror',
                             '-o', str(binary), str(source)], check=True)
             result = quick(binary, temporary)
+    result['independent_low_product_classification'] = verify_small_products()
     result['source_sha256'] = sha256(source.read_bytes()).hexdigest()
     if args.output:
         args.output.write_text(json.dumps(result, indent=2)+'\n')
