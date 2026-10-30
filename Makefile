@@ -36,6 +36,7 @@ verify-frontier:
 	python3 tools/check_hamming_complement.py
 	python3 tools/check_hamming_joint.py
 	python3 tools/check_hamming_joint_lower.py
+	python3 tools/check_extension_descent.py
 	python3 tools/check_modular_central_rank.py
 	python3 tools/check_modular_binary_central_rank.py
 	python3 tools/check_three_label_span.py

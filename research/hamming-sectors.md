@@ -227,6 +227,10 @@ Use a coordinate projection with `L(1)=1`; the ordinary field trace need
 not have that value when the characteristic divides `k`. This explains
 why fixed extension fields are a legitimate asymptotic search direction,
 without claiming that a finite extension search has passed the target.
+The [rational-family transfer](rational-family-transfer.md) extends this to
+explicitly generated polynomial-degree extensions, and to a fixed number of
+rational parameters with bounded degrees. It includes specialization and
+field construction in the full generation budget.
 
 ## 6. Finite evidence
 

@@ -376,6 +376,11 @@ requires real-number approximation in the algorithm.
   and [sparse divisor nonzeroness](research/sparse-divisor-nonzeroness.md):
   a complete conditional route from effective modular crossings to one
   factoring machine, including every ring and divisor-recovery cost.
+  A [rational-family transfer](research/rational-family-transfer.md) also accepts
+  a fixed number of auxiliary rational parameters with explicit exponential
+  degree/generation bounds, then specializes and descends to the fixed prime
+  field with only logarithmic width loss. It is a conditional interface,
+  with [finite extension arithmetic checks](evidence/extension-descent.json).
 - [Normalized modular crossings](research/modular-crossing.md): exact
   scale-one pieces over a fixed finite field and all its commutative
   coefficient algebras. [Identity checks](evidence/modular-crossing.json)
