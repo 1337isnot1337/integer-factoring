@@ -41,16 +41,89 @@ Run `make verify` for the finite checks, including the new table adapter,
 parameter bounds, computable pad, and prefix driver. These tests do not
 materialize the enormous evaluator or replace the infinite-input proof.
 
-The [work beyond `1/2`](research/post-half-directions.md) records the
-directions tested next. It proves restrictions for the existing grid and
-operator interfaces, gives an exact counterexample to projecting away high
-modes, and checks finite matrix ranks. A [network tradeoff](research/half-top-structure.md)
-rules out improving this explicit constructor by regrouping and separate
-wire compression alone. A [restricted-label counterexample](research/half-restricted-labels.md)
-and a [quantitative intermediate-span proof](research/half-restricted-span.md)
-show why another proposed dimension reduction fails on the full restricted
-spaces. These results establish no exponent above `1/2` and no general
-factoring lower bound.
+## Research beyond exponent 1/2
+
+The [directions note](research/post-half-directions.md) records the initial
+search beyond `1/2`. It includes restrictions on the operator interfaces,
+an exact counterexample to projecting away high modes, and finite matrix
+ranks. The results below further specify the mathematical frontier.
+
+The [network tradeoff](research/half-top-structure.md) rules out improving
+the explicit constructor through regrouping and separate wire compression
+alone. The [restricted-label counterexample](research/half-restricted-labels.md)
+and [quantitative span theorem](research/half-restricted-span.md) show why
+another proposed dimension reduction fails on the full restricted spaces.
+
+The [general transfer theorem](research/pieces-to-factoring.md) proves that
+an effective crossing family with rational parameter `rho` gives factoring
+exponent `log2(1/rho)`. It includes a computable pad and the complete bit-cost
+connection. For example, a family with `rho=7/10` would give exponent
+`0.514573...`. This is a conditional target; that family is not constructed.
+
+The [fixed-characteristic transfer](research/scale-one-modular-transfer.md)
+opens another route. An effective scale-one crossing family over one fixed
+finite field gives the same factoring exponent `log2(1/rho)`, up to and
+including `alpha=1`. A [sparse divisor-polynomial argument](research/sparse-divisor-nonzeroness.md)
+detects permitted divisors using cyclic polynomial rings, with additional
+cost `exp(O(n/log n))`. The proof includes weighted input construction,
+circuit generation, ring arithmetic, and finite-alphabet machine costs.
+
+A [normalized modular construction](research/modular-crossing.md) supplies
+such a family for every fixed `1/sqrt(2)<rho<1`. It removes the vanishing
+factorial multiplier and permits rings with zero divisors. Its present
+width bound approaches the half exponent from below. It supplies no family
+with `rho<1/sqrt(2)`. A local one-bit improvement also fails to tensor into
+a better asymptotic profile, as the note's exact rank argument shows.
+
+Two [operator restrictions](research/half-recurrence-barrier.md) rule out
+direct shortcuts. The current operators permit only linear changes of the
+mode weights. Deleting higher modes breaks their identities, as exact
+negative controls demonstrate. The existing coefficient recurrence also
+has exactly the stated square-root decay.
+
+The [graded-space rank theorem](research/graded-space-barrier.md) gives a
+broader restriction. A polynomial number of crossing pieces cannot use
+slower-growing spaces within the same energy range, even with new operators.
+The proof uses the full rank of the crossing matrix. It identifies which
+assumptions a replacement construction must change.
+
+The [rectangular-grid theorem](research/rectangular-grid-frontier.md)
+retains the geometry of every finite grid. It proves that unequal, adaptive
+splits cannot improve exponent `1/2` within the declared-profile recursion
+model. An analytic tail bound and 3,844 exact interval cases support it.
+
+The [highest-channel rank theorem](research/top-channel-rank.md) proves a
+sharp asymptotic rank for one factor on the full partition domain.
+Its [binary-label extension](research/binary-prefix-top-channel.md) proves
+`log2 rank(U_lambda)=sqrt(2) lambda+O(log lambda)` on the actual label set.
+Consequently, separate lossless compression of the existing factor vectors
+cannot improve their leading width sum. Joint refactorization remains open.
+The [fixed-defect extension](research/near-ones-labels.md) gives the same
+restriction for the natural family of partitions padded with many ones.
+Its exact support calculation also shows why annihilation terms prevent
+a direct cutoff by partition defect.
+An [independent finite checker](research/half-piece-rank.md) also checks
+the two operator orders, crossing sums, and small binary-label restrictions.
+The theorem does not settle the rank of the complete central piece.
+These results give no lower bound on factoring or on an evaluator's runtime.
+
+The [homogeneous-dual construction](research/homogeneous-duals.md) gives a
+new effective crossing family. An explicit polynomial in two sparse
+derivations replaces a large matrix inverse. The proof bounds coefficient
+sizes and generation costs, and verifies the complete crossing interface.
+It retains `rho=1/sqrt(2)` and exponent `1/2`; smaller ranks for its complete
+pieces remain an open route. Its [exact checks](evidence/homogeneous-duals.json)
+cover the dual pairing, operator identities, and complete crossing sums.
+On primitive inputs, a [central-piece rank identity](research/primary-central-gram.md)
+goes further: an invertible row swap gives a positive Gram form, so
+alternating terms cannot cancel its primitive fusion image. The size of
+that image still needs an asymptotic bound. This restricted identity does
+not establish optimality of the full central piece.
+
+Run `make verify-frontier` for these exact checks. The strongest complete
+ordinary factoring argument here remains exponent `1/2`.
+The [research verification record](evidence/beyond-half-verification.json)
+lists the proof scope, reviewed claims, checks, and artifact hashes.
 
 ## Lean theorem: exponent 1/30
 
@@ -224,10 +297,32 @@ requires real-number approximation in the algorithm.
 - [Restricted-label counterexample](research/half-restricted-labels.md):
   an exact [nonzero minor](evidence/half-restricted-labels.json) disproves the
   literal low-mode product-span bound while preserving the crossing identity.
+- [Effective homogeneous duals](research/homogeneous-duals.md): an explicit
+  integer inverse polynomial, controlled coefficient sizes, and a complete
+  alternative crossing family with the existing `1/sqrt(2)` parameter.
 - [Quantitative restricted-label spans](research/half-restricted-span.md):
   an almost full intermediate-dimension bound, with exact constants and
   explicit conditions on any selected binary subset. It does not bound the
   ranks of the final composed pieces.
+- [Actual binary-label channel rank](research/binary-prefix-top-channel.md):
+  a sharp leading rank with logarithmic error, its lossless-compression
+  consequence, and [finite exact checks](evidence/binary-prefix-channel.json).
+- [Near-all-ones labels](research/near-ones-labels.md): the fixed-defect
+  embedding, its factor-rank restriction, and exact support and small-rank
+  [checks](evidence/near-ones-channels.json).
+- [Primitive central-piece rank](research/primary-central-gram.md): an
+  all-weight Gram identity after a row swap, with
+  [exact rational checks](evidence/primary-central-gram.json). A large-image
+  asymptotic theorem remains open.
+- [Fixed-characteristic factoring transfer](research/scale-one-modular-transfer.md)
+  and [sparse divisor nonzeroness](research/sparse-divisor-nonzeroness.md):
+  a complete conditional route from effective modular crossings to one
+  factoring machine, including every ring and divisor-recovery cost.
+- [Normalized modular crossings](research/modular-crossing.md): exact
+  scale-one pieces over a fixed finite field and all its commutative
+  coefficient algebras. [Identity checks](evidence/modular-crossing.json)
+  and [sparse-recovery checks](evidence/sparse-divisor-nonzeroness.json)
+  cover their finite scope separately from the asymptotic proofs.
 - [Baseline audit](research/baseline-audit.md): exact depth recurrence,
   contraction, all-level cost bound, and machine-cost bridge.
 - [Verified k6 theorem](research/verified-k6.md): complete machine proof,

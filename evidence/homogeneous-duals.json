@@ -1,0 +1,78 @@
+{
+  "crossing_sum_entries": 98,
+  "duality_entries": 918,
+  "negative_controls": [
+    "omitted grading sign",
+    "omitted Gram inverse"
+  ],
+  "new_factoring_exponent_claimed": false,
+  "order_exchange_entries": 1202,
+  "scope": "exact finite duality and crossing checks; all-weight and cost proofs are separate",
+  "sl2_commutator_basis_cases": 66,
+  "weights": [
+    {
+      "dimension": 1,
+      "h": 1,
+      "inverse_polynomial_degree": 0,
+      "largest_dual_coefficient_bits": 1,
+      "scale": "1",
+      "scale_bits": 1
+    },
+    {
+      "dimension": 2,
+      "h": 2,
+      "inverse_polynomial_degree": 1,
+      "largest_dual_coefficient_bits": 3,
+      "scale": "6",
+      "scale_bits": 3
+    },
+    {
+      "dimension": 3,
+      "h": 3,
+      "inverse_polynomial_degree": 2,
+      "largest_dual_coefficient_bits": 12,
+      "scale": "2400",
+      "scale_bits": 12
+    },
+    {
+      "dimension": 5,
+      "h": 4,
+      "inverse_polynomial_degree": 3,
+      "largest_dual_coefficient_bits": 28,
+      "scale": "177811200",
+      "scale_bits": 28
+    },
+    {
+      "dimension": 7,
+      "h": 5,
+      "inverse_polynomial_degree": 4,
+      "largest_dual_coefficient_bits": 53,
+      "scale": "4778472583987200",
+      "scale_bits": 53
+    },
+    {
+      "dimension": 11,
+      "h": 6,
+      "inverse_polynomial_degree": 5,
+      "largest_dual_coefficient_bits": 87,
+      "scale": "76957778812372254720000000",
+      "scale_bits": 86
+    },
+    {
+      "dimension": 15,
+      "h": 7,
+      "inverse_polynomial_degree": 6,
+      "largest_dual_coefficient_bits": 130,
+      "scale": "1109175107815230918268939476664320000000",
+      "scale_bits": 130
+    },
+    {
+      "dimension": 22,
+      "h": 8,
+      "inverse_polynomial_degree": 7,
+      "largest_dual_coefficient_bits": 185,
+      "scale": "19977225766484519521630944476426436555571200000000000000",
+      "scale_bits": 184
+    }
+  ]
+}
