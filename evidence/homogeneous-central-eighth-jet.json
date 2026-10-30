@@ -1,0 +1,81 @@
+{
+  "checker_sha256": "6801a0da998831a993ef98c76c935fcb1aed9b2aa834a939b5c37cafbee7f324",
+  "complete_T8_rank_records": [
+    {
+      "complete_T8_rank_in_either_cut": 0,
+      "gamma_eight_rank": 0,
+      "labels": 2,
+      "state_charge_rank": 0,
+      "weight": 8
+    },
+    {
+      "complete_T8_rank_in_either_cut": 0,
+      "gamma_eight_rank": 2,
+      "labels": 5,
+      "state_charge_rank": 0,
+      "weight": 16
+    },
+    {
+      "complete_T8_rank_in_either_cut": 0,
+      "gamma_eight_rank": 4,
+      "labels": 11,
+      "state_charge_rank": 0,
+      "weight": 24
+    },
+    {
+      "complete_T8_rank_in_either_cut": 10,
+      "gamma_eight_rank": 10,
+      "labels": 23,
+      "state_charge_rank": 1,
+      "weight": 32
+    },
+    {
+      "complete_T8_rank_in_either_cut": 64,
+      "gamma_eight_rank": 16,
+      "labels": 46,
+      "state_charge_rank": 4,
+      "weight": 40
+    }
+  ],
+  "complete_small_entry_checks": 1843,
+  "odd_energy_negative_control": {
+    "low_residual_jet_bits": 16,
+    "operator": [
+      1
+    ],
+    "partner": [
+      1
+    ],
+    "state": [
+      1
+    ]
+  },
+  "order_eight_witness": {
+    "charge_eight": 1,
+    "gamma_eight": 1,
+    "operator": [
+      1,
+      3,
+      5,
+      23
+    ],
+    "partner": [
+      1,
+      3,
+      13,
+      15
+    ],
+    "residual_order": 8,
+    "state": [
+      1,
+      5,
+      9,
+      17
+    ]
+  },
+  "original_integer_operator_checks": 10,
+  "quadratic_zero_mode_checks": 1652,
+  "sampled_larger_entry_checks": 200,
+  "scope": "all-size eighth-jet formula supported by exact finite checks; no improved factoring exponent",
+  "status": "pass"
+}

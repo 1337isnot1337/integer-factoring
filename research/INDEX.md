@@ -20,6 +20,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Sparse divisor nonzeroness](sparse-divisor-nonzeroness.md): detection of divisors in weighted polynomial counts.
 - [Modular crossing](modular-crossing.md): normalized finite-field pieces and quotient construction.
 - [Modular angle factors](homogeneous-central-modular-symbols.md): Boolean-zeta symbols, a three-block polynomial-time Pfaffian, reciprocal coefficients, and exact parity support.
+- [Eighth-order modular residual](homogeneous-central-eighth-jet.md): an all-size even-energy identity, explicit determinant-minor pairing, diagonal state charge, and a sharp weight-32 witness.
+- [Complete homogeneous profiles](homogeneous-central-profiles.md): exact larger cut ranks, Taylor coefficients, and independently checked native polynomial Pfaffians.
 - [Homogeneous modular selection](homogeneous-central-selection.md): one operator weight at every label width, selected rectangular vacuum minors, and an effective uniform half-rate construction.
 - [Noncommutative group-word crossings](noncommutative-crossing-orbits.md): exact all-size construction, compressed constant cut, optimal rank-28 central shears on 64 labels, and complete-profile limitations.
 - [Coded central quotients](coded-central-crossings.md): binary-code group construction, exact constant-cut compression, matroid bounds, and an all-coefficient row filtration estimate.

@@ -30,6 +30,7 @@ The composition uses the existing clique evaluator from [Anthropic's Appendix B]
 | Saving exponent above `1/2` | **Not established** | [Research index](research/INDEX.md) |
 | Simultaneous time and workspace at an enumerable seed endpoint | Ordinary conditional theorem; no larger numerical exponent | [Bounded selection and direct type channels](research/simultaneous-seed-endpoint.md) |
 | Polynomial-time modular angle-factor queries | Ordinary exact construction; channel ranks unchanged | [Three-block Pfaffian and transpose identity](research/homogeneous-central-modular-symbols.md) |
+| Uniform eighth-order residual identity at even state energy | Ordinary exact theorem; first contact term identified | [Determinant-minor pairing and residue charge](research/homogeneous-central-eighth-jet.md) |
 | Homogeneous modular duals at every label width | Ordinary uniform construction; retains exponent `1/2` | [Rectangular vacuum minor selection](research/homogeneous-central-selection.md) |
 | Noncommutative 64-label constant-cut rank reduced from 31 to 28 | Exact finite construction and exhaustive search; complete profile does not improve the score | [Group-word crossings and all central shears](research/noncommutative-crossing-orbits.md) |
 | Cumulative bosonic crossing profile | Ordinary exact identities and finite construction; no stronger exponent | [Moment pairing, exact rank, and both channel cuts](research/bosonic-hermite-profile.md) |
@@ -50,7 +51,7 @@ make verify-post-half     # Larger optional rank tests
 make verify-docs          # Local Markdown-link check
 ```
 
-The Python checks use Python 3 and its standard library. Some optional checks use NumPy for speed.
+The Python checks use Python 3 and its standard library. Some optional checks use NumPy for speed. Native crossing checks also require a C++17 compiler.
 
 For the Lean builds, install the stated Lean release, Lake, Git, and the prerequisites in the corresponding scripts. The scripts fetch pinned upstream revisions.
 
@@ -80,6 +81,8 @@ No uniform factoring exponent above `1/2` is proved here. One open approach seek
 The [simultaneous endpoint theorem](research/simultaneous-seed-endpoint.md) preserves the limiting seed score in both logarithmic running time and working space, even when useful certificates have arbitrary gaps, take arbitrarily long to generate, or use different coefficient fields. It uses bounded certificate selection and explicit amplified factor channels. It does not supply a better seed or an exact constant-factor bound at an endpoint approached without a convergence rate.
 
 A [three-block Pfaffian formula](research/homogeneous-central-modular-symbols.md) evaluates the existing characteristic-two angle factors in `O(h^4)` bit operations at partition weight `h`. An independent determinant-sum formula gives their exact reciprocal relation and shows that all odd angle and crossing-shift indices vanish. This complements the earlier four-block formula for complete pieces; it does not decrease their ranks or improve the factoring score.
+
+The [eighth-order residual theorem](research/homogeneous-central-eighth-jet.md) identifies the first possible nonconstant Taylor coefficient of the homogeneous modular profile at even state energy. It factors into an explicit parameter pairing and a diagonal residue charge. A complete weight-32 example makes this coefficient nonzero, so the order-16 behavior of smaller examples does not extend uniformly. [Complete native profiles](research/homogeneous-central-profiles.md) record both cut ranks and independent operator comparisons.
 
 The [homogeneous selection theorem](research/homogeneous-central-selection.md) constructs duals of one weight at every binary label width. A large nonsingular minor exists in a homogeneous block of the proved source pairing, even when the same-weight Gram matrix is singular. The selected operator and state weights differ by `O(sqrt(h) log h)`, so the construction retains the uniform half-rate bound. Its raw-parameter Pfaffian makes complete finite profiles accessible without listing intermediate partition spaces.
 
