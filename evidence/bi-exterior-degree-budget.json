@@ -1,0 +1,103 @@
+{
+  "status": "PASS",
+  "scope": "Full characteristic-two bi-exterior space; exact and supplied formal limits",
+  "universal_bound": "S >= d*(lambda+1), d=2^lambda",
+  "last_certified_binary_width": 8,
+  "last_certified_labels": 256,
+  "improved_factoring_exponent": false,
+  "controls": {
+    "all_nonzero_small_polynomials": 65550,
+    "quadratic_normal_forms": 15,
+    "degree_count_inequalities": 256
+  },
+  "degree_only_dimensions": [
+    {
+      "width": 1,
+      "labels": 2,
+      "bound": 4
+    },
+    {
+      "width": 2,
+      "labels": 4,
+      "bound": 12
+    },
+    {
+      "width": 3,
+      "labels": 8,
+      "bound": 32
+    },
+    {
+      "width": 4,
+      "labels": 16,
+      "bound": 80
+    },
+    {
+      "width": 5,
+      "labels": 32,
+      "bound": 192
+    },
+    {
+      "width": 6,
+      "labels": 64,
+      "bound": 448
+    },
+    {
+      "width": 7,
+      "labels": 128,
+      "bound": 1024
+    }
+  ],
+  "dimension_256_certificate": {
+    "width": 8,
+    "labels": 256,
+    "scalar_classes": 1368,
+    "grade_weights": [
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1
+    ],
+    "quadratic_half_rank_weight": "1/5",
+    "bound": {
+      "numerator": "13056",
+      "denominator": "5",
+      "decimal": 2611.2
+    },
+    "minimum_squared_slack": 0
+  },
+  "dimension_512_control": {
+    "width": 9,
+    "labels": 512,
+    "scalar_classes": 1746,
+    "grade_weights": [
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1
+    ],
+    "quadratic_half_rank_weight": "1/5",
+    "bound": {
+      "numerator": "29696",
+      "denominator": "5",
+      "decimal": 5939.2
+    },
+    "minimum_squared_slack": 0,
+    "meaning": "This scalar certificate is below target; no realizable seed is asserted"
+  },
+  "source_sha256": {
+    "check_bi_exterior_degree_budget.py": "6b8e0816b94645c34dbf5503587cb64d0c839dbede99af6b3527370712f6ac9d",
+    "check_diagonal_word_rank_sum.py": "225b7a2a11654fef10fbd2fa3afbb71e27ad3ff4e2391811a9b62b97b7a9145e",
+    "check_weighted_cut_rank_budget.py": "a369e633f974a5c013de3fc998908d61946ccf3741c42b63e4508df56048ea82"
+  }
+}

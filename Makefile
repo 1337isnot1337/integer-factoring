@@ -1,4 +1,4 @@
-.PHONY: verify verify-docs verify-frontier verify-post-half verify-formal verify-k6 verify-half-appendix help
+.PHONY: verify verify-docs verify-frontier verify-code-width5 verify-post-half verify-formal verify-k6 verify-half-appendix help
 
 verify: verify-docs verify-frontier
 	python3 -m unittest discover -s tests -v
@@ -20,6 +20,36 @@ verify-post-half:
 	python3 tools/check_half_restricted_labels.py
 
 verify-frontier:
+	python3 tools/check_weighted_cut_rank_budget.py
+	python3 tools/check_weighted_cut_residual_budget.py
+	python3 tools/check_weighted_cut_dual_certificate.py
+	python3 tools/check_two_product_complement.py
+	python3 tools/check_two_product_seed_cutoff.py
+	python3 tools/check_flagged_cut_rank_budget.py
+	python3 tools/check_geometric_subspace_compression.py
+	python3 tools/check_geometric_cut_rank_budget.py
+	python3 tools/check_weighted_cut_relaxation_limit.py
+	python3 tools/check_geometric_cut_relaxation_limit.py
+	python3 tools/check_weighted_cut_border_stability.py
+	python3 tools/check_geometric_border_cutoff.py
+	python3 tools/check_rank_one_formal_cutoff.py
+	python3 tools/check_quadratic_crossing.py
+	python3 tools/check_word_restriction_barrier.py
+	python3 tools/check_code_sections.py
+	python3 tools/check_frame_filtration.py
+	python3 tools/check_feistel_filtration.py
+	python3 tools/check_diagonal_word_rank_sum.py
+	python3 tools/check_incidence_kernel_rank_sum.py
+	python3 tools/check_full_conservation_rank_sum.py
+	python3 tools/check_p_group_convolution_degree.py
+	python3 tools/check_bi_exterior_crossing_algebra.py
+	python3 tools/check_bi_exterior_degree_budget.py
+	python3 tools/check_nonlinear_layer_probe.py
+	python3 tools/check_pauli_walsh_dictionary.py
+	python3 tools/check_pauli_walsh_pairs.py
+	python3 tools/check_growing_number_field_transfer.py
+	python3 tools/check_rank_sum_global_transfer.py
+	python3 tools/check_characteristic_independent_recovery.py
 	python3 tools/check_piece_transfer.py
 	python3 tools/check_boson_truncation.py
 	python3 tools/check_graded_space.py
@@ -35,6 +65,11 @@ verify-frontier:
 verify-formal:
 	bash tools/check_formal.sh
 
+verify-code-width5:
+	g++ -O3 -std=c++20 -fopenmp tools/check_code_kernel_width5.cpp -o /tmp/integer-factoring-code-width5
+	/tmp/integer-factoring-code-width5 0 64 4 /tmp/integer-factoring-code-width5
+	python3 tools/check_code_sections.py --full-classifier --native-prefix /tmp/integer-factoring-code-width5
+
 verify-k6:
 	bash tools/check_k6.sh
 
@@ -45,6 +80,7 @@ help:
 	@printf '%s\n' \
 	  'make verify               - unit tests, exact certificates, and local documentation links' \
 	  'make verify-frontier      - focused frontier certificates' \
+	  'make verify-code-width5   - regenerate every width-five coordinate-section class' \
 	  'make verify-post-half     - larger optional matrix-rank checks' \
 	  'make verify-docs          - check local Markdown file links' \
 	  'make verify-formal        - rebuild original Lean lemmas (Lean 4.35.0)' \

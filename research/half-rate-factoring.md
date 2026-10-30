@@ -19,9 +19,14 @@ the existing Appendix B clique-evaluation theorem of Claude (Anthropic)
 and the existing multiplication-network reduction of Isaac Rudich and
 Louis-Martin Rousseau. The new work supplies and pays for their written-table
 connection. It does not claim a new crossing decomposition or a new clique
-evaluator. The composition has not been formalized in Lean, independently
-reviewed outside this research session, or accepted by the leaderboard.
-The repository's separate Lean-certified endpoint remains `1/30`.
+evaluator. The composition is now formalized in
+[`formal-appendix/HalfTheorem.lean`](../formal-appendix/HalfTheorem.lean):
+`IntegerFactoring.HalfAppendix.sqrtLogLog_factoring` proves the pinned
+`Factoring.SqrtLogLogConjecture`, including the finite-alphabet machine.
+Its reported dependencies are `propext`, `Classical.choice`, and `Quot.sound`.
+The earlier `1/30` theorem remains a separate verified result. Independent
+review outside this research session and leaderboard acceptance are not
+established by the repository's Lean check.
 
 The two source revisions are fixed:
 
@@ -281,7 +286,9 @@ of `sqrt(log n)` for large `n`. Choose an integer `C` large enough to
 absorb the fixed runtime constants and a factor two for rounding the
 exponent down. Increase `C` again to cover the finite fallback and every
 small input length. Thus the ordinary argument also proves that exact
-integer-bound form. It has not produced a Lean term of that proposition.
+integer-bound form. The final theorem
+[`IntegerFactoring.HalfAppendix.sqrtLogLog_factoring`](../formal-appendix/HalfTheorem.lean)
+also supplies a Lean term of that exact proposition.
 
 For the leaderboard, for every fixed `epsilon>0`, (1) is eventually at
 most

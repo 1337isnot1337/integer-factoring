@@ -1,0 +1,230 @@
+{
+  "identities": {
+    "augmentation_and_determinant_profiles": 36,
+    "literal_section_quartets": 1152,
+    "dense_rank_profiles": 36,
+    "translation_gauges": 168,
+    "coordinate_toggle_profiles": 96,
+    "arbitrary_slope_profiles": 96
+  },
+  "classifier": {
+    "random_width_five": 10000,
+    "complete_quadratic_pattern_0_rank_0": 65536,
+    "complete_quadratic_pattern_1_rank_2": 65536,
+    "complete_quadratic_pattern_3_rank_2": 65536,
+    "complete_quadratic_pattern_11_rank_2": 65536,
+    "complete_quadratic_pattern_129_rank_4": 65536,
+    "embedded_width_four": 65536
+  },
+  "coordinate_sections": [
+    {
+      "width": 1,
+      "cases": 1,
+      "optimum": 4,
+      "baseline": [
+        [
+          1,
+          4
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "coefficient_dominance_failures": 0,
+      "maximum_product_histogram": {
+        "4": 1
+      },
+      "profile_digest": "0242d7a8e4abe3a147f0f5fbc27731b78b0695d55ae0f5b361d8d04aedbb717d"
+    },
+    {
+      "width": 2,
+      "cases": 2,
+      "optimum": 36,
+      "baseline": [
+        [
+          1,
+          16
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          16,
+          1
+        ]
+      ],
+      "coefficient_dominance_failures": 0,
+      "maximum_product_histogram": {
+        "36": 1,
+        "49": 1
+      },
+      "profile_digest": "4c58fe789b2d72e9076da126ae6500b22e939482dd10324ae98a940ff9eef144"
+    },
+    {
+      "width": 3,
+      "cases": 16,
+      "optimum": 224,
+      "baseline": [
+        [
+          1,
+          64
+        ],
+        [
+          8,
+          28
+        ],
+        [
+          28,
+          8
+        ],
+        [
+          64,
+          1
+        ]
+      ],
+      "coefficient_dominance_failures": 0,
+      "maximum_product_histogram": {
+        "224": 1,
+        "348": 1,
+        "420": 4,
+        "450": 4,
+        "480": 6
+      },
+      "profile_digest": "a0798e7346cbf4a2c8f65127cba2b34e66eee95a4d16c3a46015dc924112eca8"
+    },
+    {
+      "width": 4,
+      "cases": 2048,
+      "optimum": 2116,
+      "baseline": [
+        [
+          1,
+          256
+        ],
+        [
+          10,
+          120
+        ],
+        [
+          46,
+          46
+        ],
+        [
+          120,
+          10
+        ],
+        [
+          256,
+          1
+        ]
+      ],
+      "coefficient_dominance_failures": 0,
+      "maximum_product_histogram": {
+        "2116": 1,
+        "2601": 1,
+        "3136": 30,
+        "3300": 10,
+        "3551": 10,
+        "3672": 20,
+        "3740": 20,
+        "3808": 260,
+        "3848": 30,
+        "3888": 5,
+        "3920": 1,
+        "3960": 5,
+        "3976": 1,
+        "3996": 45,
+        "4032": 20,
+        "4056": 10,
+        "4070": 15,
+        "4144": 390,
+        "4212": 40,
+        "4290": 30,
+        "4368": 240,
+        "4428": 75,
+        "4510": 75,
+        "4592": 330,
+        "4644": 60,
+        "4730": 60,
+        "4816": 264
+      },
+      "profile_digest": "dced466fcb43813d3effb2ec35d5af0de35be6294056606941a42a67f7d7d589"
+    }
+  ],
+  "general_sections": [
+    {
+      "width": 1,
+      "cases": 1,
+      "optimum": 4,
+      "maximum_product_histogram": {
+        "4": 1
+      },
+      "profile_digest": "0242d7a8e4abe3a147f0f5fbc27731b78b0695d55ae0f5b361d8d04aedbb717d"
+    },
+    {
+      "width": 2,
+      "cases": 8,
+      "optimum": 36,
+      "maximum_product_histogram": {
+        "36": 3,
+        "48": 1,
+        "49": 4
+      },
+      "profile_digest": "8cf179f65c93aadc278c6baf941a585f5eb053442d0f9f2e9c4ba4a1da1e51eb"
+    },
+    {
+      "width": 3,
+      "cases": 65536,
+      "optimum": 224,
+      "maximum_product_histogram": {
+        "224": 28,
+        "270": 28,
+        "300": 140,
+        "330": 84,
+        "336": 392,
+        "348": 56,
+        "360": 1008,
+        "390": 1456,
+        "392": 980,
+        "406": 588,
+        "420": 11340,
+        "435": 1148,
+        "448": 2284,
+        "450": 11676,
+        "464": 2296,
+        "480": 32032
+      },
+      "profile_digest": "add97cf868fe725b252ee33d1a525baaf484d8b111915ed85139495561a9d923"
+    }
+  ],
+  "native_width_five": {
+    "width": 5,
+    "scope": "coordinate sections; all ambient lengths",
+    "chunks": 64,
+    "classes": 67108864,
+    "optimum": 15312,
+    "violations": 0,
+    "witness_degree_counts": [
+      0,
+      0,
+      67108864,
+      0,
+      0,
+      0
+    ],
+    "checksum_mod_2_64": 4522111209704524624,
+    "elapsed_seconds": 26.5429,
+    "checkpoint_note": "Coverage audit; native source regenerates every state."
+  },
+  "source_sha256": {
+    "code_compressed_crossing.py": "60920379796081580c22c04e3f654cde0d6ff452ead807255cafaaa55873986d",
+    "code_kernel_crossing.py": "0387af9d540d2f48f8b6945eb915ec054c06440bf364ffe4724727f8078d44da",
+    "general_section_crossing.py": "e9594235c5338b56f67ada0af0049dadb8e4968a569496601424500fe511edc2",
+    "convolution_rank5.py": "abb17b8546110b25c706ef5b55019403a3fd67a888f332ae5f6d4f20c499fbc8",
+    "check_code_sections.py": "264976a2211ef4d7a3c4d4c8dd5a01852902384e5035a5837318e5544fcc5dad",
+    "check_code_kernel_width5.cpp": "dae5d631ee1cb4eb85363020b85f2618015dc2d9b7675ca74b85ee2500ccccf5"
+  },
+  "seconds": 44.17645295000011
+}

@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "scope": "Exact characteristic-two bi-exterior algebra; no improved factoring exponent",
+  "dense_random_tensor_controls": 30,
+  "invertible_substitution_controls": 30,
+  "cheap_direction": {
+    "labels": 16,
+    "row_rank": 36,
+    "column_rank": 36,
+    "coefficient_rank": 6
+  },
+  "boolean_selector_lift_of_same_polynomial": {
+    "row_rank": 46,
+    "column_rank": 46,
+    "row_block_ranks": [
+      0,
+      0,
+      0,
+      4,
+      0,
+      4,
+      4,
+      4,
+      0,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      6
+    ],
+    "column_block_ranks": [
+      6,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      0,
+      4,
+      4,
+      4,
+      0,
+      4,
+      0,
+      0,
+      0
+    ]
+  },
+  "endpoint_dimensions": [
+    2,
+    4,
+    8
+  ],
+  "checker_sha256": "467c1d419d382ffc10b5eac0391306909f389e873558739b1dd33b494fc2f52e"
+}
