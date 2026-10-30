@@ -1,4 +1,4 @@
-.PHONY: verify verify-docs verify-frontier verify-constructions verify-post-half verify-formal verify-k6 verify-half-appendix help
+.PHONY: verify verify-docs verify-frontier verify-constructions verify-native-crossings verify-post-half verify-formal verify-k6 verify-half-appendix help
 
 verify: verify-docs verify-frontier verify-constructions
 	python3 -m unittest discover -s tests -v
@@ -19,6 +19,12 @@ verify-constructions:
 	python3 tools/check_homogeneous_central_symbols.py --central 16
 	python3 tools/check_angle_pfaffian.py
 	python3 tools/check_homogeneous_central_selection.py
+	python3 tools/check_noncommutative_crossing_orbit.py
+
+verify-native-crossings:
+	mkdir -p build/native
+	$(CXX) -O3 -std=c++17 -Wall -Wextra -Werror tools/explore_group_correction_rank.cpp -o build/native/group-correction-screen
+	python3 tools/check_noncommutative_crossing_native.py --binary $(CURDIR)/build/native/group-correction-screen --lookup-summary evidence/noncommutative-crossing-lookup-complete.json
 
 verify-post-half:
 	python3 tools/check_half_piece_ranks.py --full
@@ -52,6 +58,7 @@ help:
 	  'make verify               - unit tests, exact certificates, and local documentation links' \
 	  'make verify-frontier      - focused frontier certificates' \
 	  'make verify-constructions - new crossing and resource-interface certificates' \
+	  'make verify-native-crossings - compile and independently audit the native group screen' \
 	  'make verify-post-half     - larger optional matrix-rank checks' \
 	  'make verify-docs          - check local Markdown file links' \
 	  'make verify-formal        - rebuild original Lean lemmas (Lean 4.35.0)' \
