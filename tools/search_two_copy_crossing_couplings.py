@@ -25,13 +25,23 @@ def main():
     parser.add_argument('--seconds', type=float, default=3600.)
     parser.add_argument('--maximum-cases', type=int)
     parser.add_argument('--precision', type=int, choices=(128, 256, 512, 1024), default=128)
+    parser.add_argument('--slab-source', choices=('module-constants', 'pure-coefficients', 'pure-and-vacuum'), default='module-constants')
+    parser.add_argument('--entry-floor-slack', type=int, default=0)
     parser.add_argument('--random-seed', type=int, default=31102691)
     parser.add_argument('--output', type=Path, required=True)
     args = parser.parse_args()
+    if args.entry_floor_slack < 0:
+        parser.error('The entry-floor slack must be nonnegative.')
     start = time.monotonic(); deadline = start+args.seconds
     directions = json.loads(args.directions.read_text())
-    generators = [row for row in directions['minimal_basis']['generators'] if max(row) <= 1]
-    assert len(generators) == 3
+    if args.slab_source == 'module-constants':
+        generators = [row for row in directions['minimal_basis']['generators'] if max(row) <= 1]
+        assert len(generators) == 3
+    else:
+        original = directions['minimal_basis']['generators']
+        generators = [[(entry >> 8) & 1 for entry in original[index]] for index in (5, 9)]
+        if args.slab_source == 'pure-and-vacuum':
+            generators.append([1]+[0]*124)
     supports = constant_slab_tensors(generators, 5)
     values, heights, ex, ey = five_letter_source()
     compiler = CoupledCopies(5, values, 18, heights, precision=args.precision)
@@ -44,8 +54,8 @@ def main():
     main_cases, extra_cases, seen = [], [], set()
     for i, j in combinations_with_replacement(range(len(supports)), 2):
         a, b = (bounds[i][side]+bounds[j][side] for side in (0, 1))
-        lower = max(0, minimum[1]-b)
-        top = min(36, a-minimum[0])
+        lower = max(0, minimum[1]-b-args.entry_floor_slack)
+        top = min(36, a-minimum[0]+args.entry_floor_slack)
         span = top-lower
         if span <= 0:
             continue
