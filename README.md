@@ -161,6 +161,11 @@ a monotonicity argument reduces arbitrary weights to a certified compact
 inequality. This closes the binary higher-degree and row-frame search
 route without changing the achieved factoring score. Run
 `make verify-binary-smith-floor` for the exact certificate and full-minor controls.
+The [auxiliary extension](research/auxiliary-binary-gauge-floor.md) carries
+the same floor to matrix-valued binary seeds of every fixed auxiliary
+dimension, including independent rational auxiliary gauges at the two
+places; block certificates and module word-rate bounds remain outside it.
+Run `make verify-auxiliary-binary-floor`.
 
 The [nonresonant Boolean filter theorem](research/nonresonant-boolean-filter-floor.md)
 excludes arbitrary nonhomogeneous Boolean supports in the stated two-power

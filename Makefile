@@ -59,6 +59,10 @@ verify-binary-smith-floor:
 	python3 tools/check_binary_fixed_ray_floor.py --output /tmp/integer-factoring-binary-fixed-ray-replay.json
 	python3 tools/check_binary_all_gauge_floor.py --output /tmp/integer-factoring-binary-all-gauge-replay.json
 
+.PHONY: verify-auxiliary-binary-floor
+verify-auxiliary-binary-floor:
+	python3 tools/check_auxiliary_binary_gauge_floor.py --output /tmp/integer-factoring-auxiliary-binary-floor-replay.json
+
 .PHONY: verify-symmetric-prime-filters verify-symmetric-filter-catalogues
 verify-symmetric-prime-filters:
 	python3 tools/check_symmetric_prime_filter_synthesis.py --output /tmp/integer-factoring-symmetric-prime-replay.json
