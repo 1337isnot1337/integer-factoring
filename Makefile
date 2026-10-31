@@ -34,6 +34,10 @@ verify-transpose-intertwiner:
 verify-joint-determinant:
 	python3 tools/check_joint_determinant_barrier.py
 
+.PHONY: verify-auxiliary-coefficient-span
+verify-auxiliary-coefficient-span:
+	python3 tools/search_auxiliary_coefficient_span.py --verify evidence/auxiliary-coefficient-span.json
+
 .PHONY: verify-binary-site-symmetry verify-matching-curve-controls verify-matching-curve-jets
 verify-binary-site-symmetry:
 	python3 tools/check_binary_site_symmetry_barrier.py

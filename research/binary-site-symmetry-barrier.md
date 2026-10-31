@@ -29,6 +29,9 @@ site symmetry. It is an actual-rank obstruction, stronger in scope than
 the [bare Smith criterion](multipoint-smith-floor.md). It does not rule
 out arbitrary factoring algorithms, genuinely coupled larger alphabets,
 physical code restrictions, or pieces that break the stated symmetry.
+Section 8 extends the same obstruction to any common partition into
+`o(m)` position classes; merely using a slowly growing menu of scalar
+local seeds is therefore insufficient.
 The established factoring saving exponent remains **1/2**. There is no
 new Lean formalization or independent mathematical review of this proof.
 
@@ -270,3 +273,61 @@ of position-dependent local operators, or a genuinely coupled larger
 alphabet. Any such construction still needs a uniform rank **upper**
 bound, a complete crossing identity, and full evaluator cost accounting
 before it can improve the factoring exponent.
+
+## 8. Sublinearly many position classes still do not suffice
+
+Suppose there is a common partition of the `m` positions into `k`
+nonempty classes of sizes `m_1,...,m_k`, and every piece is invariant
+under permutations **within** each class. No invariance between
+different classes is assumed. The pieces need not factor across
+classes: arbitrary joint coefficient functionals are allowed.
+
+Replace the single universal tensor by independent universal tensors
+`T_1,...,T_k`. Each piece has a representation
+
+```math
+A_i=L_i\left(\bigotimes_{b=1}^k T_b^{\otimes m_b}\right).
+```
+
+For each class set `t_b=floor(m_b/4)`, `s_b=m_b-4t_b`, and use the
+common witness
+
+```math
+Q=\prod_{b=1}^k P(T_b)^{t_b}\ell(T_b)^{s_b}.
+```
+
+It again has value one at `E_m`. Tensoring the separate class
+filtrations gives the exact positive-characteristic bound
+
+```math
+\max_i r(A_i)c(A_i)\ge
+ \left(\prod_{b=1}^k B_p(t_b)\right)^2.             \tag{12}
+```
+
+The same summand is detected in both cuts, as before. With constants
+depending only on the fixed characteristic, the logarithm of (12) is
+at least
+
+```math
+3m-O_p\left(\sum_b\log^2(m_b+2)\right)
+\ge3m-O_p\left(k\log^2(m/k+2)\right).              \tag{13}
+```
+
+For the last step, `log^2(x+2)` is concave for `x>=1`, since its
+second derivative has the sign of `1-log(x+2)<0`; apply Jensen's
+inequality. In characteristic zero, (11) gives the still smaller
+loss `O(k log(m/k+4))`.
+
+If `k=o(m)`, put `L=m/k`. The loss divided by `m` is
+`O_p(log^2(L+2)/L)=o(1)`. Thus the leading floor remains **3/4**
+even for a growing number of classes. This includes periodic scalar
+seeds with a fixed period, bounded menus of local polynomials with
+arbitrary position assignments, and sublinearly growing menus. Their
+degrees and the joint coefficient recombinations may vary freely.
+
+The conclusion concerns one common position partition for all pieces.
+It does not cover unrelated piece-dependent partitions, or a
+noncommuting auxiliary product whose value changes when positions
+of the same nominal local type are exchanged. Nor does a linear
+number of classes by itself provide a useful upper bound: it only
+removes this particular asymptotic obstruction.

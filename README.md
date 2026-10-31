@@ -98,11 +98,19 @@ positions. It covers scalar seeds of every degree, arbitrary coefficient
 recombinations and mixtures of scalar curves, over any fixed field,
 including characteristic two. A universal degree-four polynomial and
 Weyl filtrations supply the obstruction at every tensor length.
+It extends to a common partition into any sublinear number of position
+classes, with arbitrary coupled coefficient functionals between classes.
 Run `make verify-binary-site-symmetry` for exact algebra and finite controls.
 The [matching-curve controls](research/matching-curve-controls.md) show
 why escaping common-minor tests does not escape this broader theorem.
 New physical code restrictions and constructions that break the stated
 site symmetry remain open; no stronger factoring exponent is established.
+
+The [full auxiliary coefficient-span experiment](research/auxiliary-coefficient-span.md)
+tests ordered noncommuting constructions outside that symmetry hypothesis.
+Complete finite recombination improves several raw rank maxima, but exact
+rank-sum lower certificates leave the tested finite-block envelope above
+the half-rate threshold. Run `make verify-auxiliary-coefficient-span`.
 
 The [common-cofactor barrier](research/common-cofactor-barrier.md) closes
 the asymmetric ternary quadratic family for actual coefficient ranks.
