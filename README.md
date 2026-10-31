@@ -189,6 +189,11 @@ retain a filled low-mode state and give a second arbitrary-mode family
 on the same alphabet sizes. Its local entries can have genuine poles;
 a common-type regularity proof cancels them globally and justifies the
 restored rational Smith profiles.
+[Even-core postselection](research/even-core-postselection.md) gives a
+four-letter polynomial family `A + lambda B + lambda^2 C` with a strict
+crossing endpoint. Two exact Wick identities prove that every nonzero
+rational parameter path is non-Gaussian. Monomial parameter paths are
+available for pressure searches; no improved rate has been certified.
 For this Gaussian seed, [generic mode blocks](research/typed-gaussian-generic-blocks.md)
 force cost `Omega(D^2)` when all nonvacuum occupations stay fixed, even
 after arbitrary coefficient recombinations. Growing occupation densities
