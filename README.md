@@ -78,6 +78,9 @@ gives exact two-cut transforms and excludes its complete symmetric
 coefficient spans at local dimensions two and four. Dimension eight
 remains open under that argument. Replay its physical tensors and pencil
 ranks with `make verify-bell`; no stronger factoring exponent is claimed.
+The [linear-pencil search](research/bell-linear-search.md) includes two
+complete small-domain calibrations and explicit larger finite searches,
+with no improvement in the recorded schedules.
 
 See the [research index](research/INDEX.md) for completed arguments, scoped obstructions, and older candidates. Active work can also appear in [open pull requests](https://github.com/1337isnot1337/integer-factoring/pulls); branch research is not automatically a result on `main`.
 

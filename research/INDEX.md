@@ -15,6 +15,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 ## Transfers and proposed stronger evaluators
 
 - [Bell-diagonal crossings](bell-diagonal-crossings.md): exact two-cut transforms, effective polynomial paths, and a complete symmetric-span restriction at local dimensions two and four; dimension eight remains open.
+- [Bell linear-pencil search](bell-linear-search.md): exact coefficient ranks, complete small-domain calibrations, and retained higher-dimension finite schedules.
 
 - [Pieces-to-factoring transfer](pieces-to-factoring.md): conditional crossing-parameter transfer, with full bit-cost accounting.
 - [Scale-one modular transfer](scale-one-modular-transfer.md): fixed-field transfer and machine costs.

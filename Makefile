@@ -16,6 +16,7 @@ verify-docs:
 
 verify-bell:
 	python3 tools/check_bell_crossing.py
+	python3 tools/check_bell_pencils.py
 
 verify-post-half:
 	python3 tools/check_half_piece_ranks.py --full
