@@ -81,6 +81,12 @@ ranks with `make verify-bell`; no stronger factoring exponent is claimed.
 The [linear-pencil search](research/bell-linear-search.md) includes two
 complete small-domain calibrations and explicit larger finite searches,
 with no improvement in the recorded schedules.
+The [polynomial synthesis engine](research/bell-polynomial-synthesis.md)
+certifies uniform rational rank bounds and led to an explicit
+[folded-cube crossing family](research/folded-bell-crossings.md).
+Its optimal leading contraction within its complete coefficient span
+is `H_2(1/4)=0.811278...`, above the critical threshold. The factoring
+score is unchanged.
 
 See the [research index](research/INDEX.md) for completed arguments, scoped obstructions, and older candidates. Active work can also appear in [open pull requests](https://github.com/1337isnot1337/integer-factoring/pulls); branch research is not automatically a result on `main`.
 

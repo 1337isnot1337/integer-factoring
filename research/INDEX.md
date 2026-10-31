@@ -16,6 +16,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 - [Bell-diagonal crossings](bell-diagonal-crossings.md): exact two-cut transforms, effective polynomial paths, and a complete symmetric-span restriction at local dimensions two and four; dimension eight remains open.
 - [Bell linear-pencil search](bell-linear-search.md): exact coefficient ranks, complete small-domain calibrations, and retained higher-dimension finite schedules.
+- [Bell polynomial synthesis](bell-polynomial-synthesis.md): exact affine two-cut construction and rational pressure bounds uniform in tensor length.
+- [Folded-cube Bell family](folded-bell-crossings.md): explicit all-dimension crossing in every odd characteristic, with optimal coefficient-span limit `H_2(1/4)`.
 
 - [Pieces-to-factoring transfer](pieces-to-factoring.md): conditional crossing-parameter transfer, with full bit-cost accounting.
 - [Scale-one modular transfer](scale-one-modular-transfer.md): fixed-field transfer and machine costs.

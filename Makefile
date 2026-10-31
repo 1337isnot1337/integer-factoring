@@ -17,13 +17,15 @@ verify-docs:
 verify-bell:
 	python3 tools/check_bell_crossing.py
 	python3 tools/check_bell_pencils.py
+	python3 tools/check_bell_profiles.py evidence/bell-synthesis-d4h4.json evidence/bell-synthesis-d8h3.json
+	python3 tools/check_folded_bell.py
 
 verify-post-half:
 	python3 tools/check_half_piece_ranks.py --full
 	python3 tools/check_half_projection.py
 	python3 tools/check_half_restricted_labels.py
 
-verify-frontier:
+verify-frontier: verify-bell
 	python3 tools/check_piece_transfer.py
 	python3 tools/check_boson_truncation.py
 	python3 tools/check_graded_space.py
