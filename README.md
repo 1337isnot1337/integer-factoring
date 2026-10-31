@@ -60,9 +60,29 @@ make verify-frontier      # Focused research certificates
 make verify-post-half     # Larger optional rank tests
 make verify-docs          # Local Markdown-link check
 make verify-arithmetic    # All arithmetic-framework checkers
+make verify-schur-fermion # Complete Schur entry formulas and exact comparisons
+make verify-schur-central # Hook-residue identities and full Schur ranks through weight 8
+make verify-schur-gaussian # Exact digit reduction and fixed Gaussian crossing seed
+make verify-schur-sparse # Sparse down-sets and two-scale offset interval reductions
+make verify-fixed-modes # Arbitrary mode sets, independent occupations, and exact endpoints
+make verify-cancellation-modules # Exact module states and word-rate certificates
+make verify-minimal-modules # Exact boundary reduction and complete word-rate hierarchy
+make verify-exact-modules # Complete rational lattice orbits and exact pressures
+make verify-cancellation-crossing # Strict certificate gain for a complete crossing
+make verify-block-smith # Exact profiles for ordered crossing blocks
+make verify-cubic-full-images # Full cubic coefficient spaces and reduced ranks
+make verify-linear-smith # All binary scalar pencils and the uniform linear barrier
+make verify-type-pressure # Exact common-type optimization and physical gauges
+make verify-crossing-interpolation # Exact synthesis with prescribed local row lattices
+make verify-smith-oracle # Exact weighted profiles and the scoped sparse entropy dual
+make verify-native-smith # Optional compiled F4 search controls; needs a C++17 compiler
+make verify-native-rectangular # Optional rectangular paired-type search controls
+make verify-controlled-smith # Controlled monomial crossings and the qutrit control
+make verify-sparse-holonomy # Exact singleton profiles and Gaussian entry identities
+make verify-charge-pruning # One-sided charge changes and typed Gaussian block bounds
 ```
 
-The Python checks use Python 3 and its standard library. Some optional checks use NumPy for speed.
+The Python checks use Python 3 and its standard library. Some optional checks use NumPy for speed. The exploratory mode-pressure search uses NumPy and SciPy. The optional linear Smith catalogue and Schur central-rank checks also require a C++17 compiler.
 
 For the Lean builds, install the stated Lean release, Lake, Git, and the prerequisites in the corresponding scripts. The scripts fetch pinned upstream revisions.
 
@@ -87,7 +107,217 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 
 ## Current research frontier
 
+The [31 October research checkpoint](research/constructive-frontier-checkpoint.md)
+collects the latest exact bounds, new construction families, reproducible
+search starts, and the remaining obligations for a score improvement.
+
 No uniform factoring exponent above `1/2` is proved here. One open approach seeks effective crossing pieces with total rank width `4*rho*lambda + O(log lambda)` for `rho < 1/sqrt(2)`. A suitable family could improve the evaluator bound, but finite rank improvements alone do not establish that inequality.
+
+The [complete Schur entry algorithm](research/schur-fermion-queries.md) computes
+individual modes with determinants of order at most `3 sqrt(H)`, and full
+crossing coefficients with determinants of order at most `4 sqrt(h)`. It works
+directly in finite characteristic and removes factorial-precision conversion
+from these queries. Its ordinary proof and independent exact checks improve
+the available construction tools. For the homogeneous Schur family, [hook-residue identities](research/schur-hook-residue-central.md)
+give central rank at most `p(2h)-3` at every power-of-two weight. Full exact
+calculations attain this bound at weights 8 and 16, with ranks `228` and
+`8,346`. These central pieces exclude the corresponding raw finite seeds;
+no stronger factoring bound is claimed.
+
+The [complete inhomogeneous Schur kernel](research/schur-gaussian-digit-reduction.md)
+has an exact binary-digit reduction to a four-label Gaussian crossing.
+The proof retains its exterior maps and energy projection and gives an
+explicit finite coefficient decomposition. Fixed-occupation sectors of
+the seed are complete crossings in their own right.
+A [sparse-index calculation](research/sparse-holonomy-singleton-profile.md)
+gives every Smith order for the zero-and-singleton index set and an exact
+Gaussian encoding for all Boolean down-sets. It supplies formulas for
+larger constructions; it does not assert a better factoring exponent.
+[Boolean down-sets](research/schur-downset-crossing.md) give complete
+Schur crossings with matrix-valued holonomy and controlled profile limits.
+[Offset intervals](research/schur-offset-interval-reduction.md) reduce to
+an explicit two-scale four-label kernel, with polynomial projection and
+coefficient costs when the ambient offset grows polynomially.
+[Two unequal intervals](research/schur-two-block-holonomy.md) split exactly
+into scalar sectors; the resulting direct kernels also allow interval
+parameters that are not powers of two.
+[Fixed mode counts](research/fixed-mode-crossings.md) extend the direct
+crossing to arbitrary index sets, unequal species occupations, and
+independent mode heights. Their product-type criterion is exact; an
+[exploratory search driver](tools/search_schur_mode_pressure.py) uses the
+weighted Smith oracle to search this larger family.
+An [exact three-mode certificate](research/three-mode-pressure-improvement.md)
+uses independent occupations of the two species to prove `rho < 741/1000`.
+It improves the previous Gaussian pressure control but remains above
+`1/sqrt(2)`, so the best factoring exponent is unchanged.
+The [one-species interval family](research/schur-one-species-interval.md)
+has an exact all-size spectrum and finite product pressure. Checked
+rational witnesses reach `rho < 3363/4756` at 16,383 modes. This particular
+formula approaches `1/sqrt(2)` from above; an analytic proof excludes
+crossing that threshold within the displayed gauges.
+The [quantitative interval theorem](research/quantitative-interval-frontier.md)
+gives the sharp gap asymptotic `(log n)^2 / (sqrt(2) pi^2 n^2)` and
+exact large witnesses using outward integer intervals.
+The [greedy Pascal-complement theorem](research/schur-pascal-complement.md)
+computes the same normalized spectrum for every finite mode set using
+binary linear algebra. It proves the interval formula at every length
+and skips large gaps by a traversal of binary intervals.
+[Constant matrix flags](research/constant-flag-crossings.md) extend the
+polynomial construction beyond Pascal matrices while preserving its
+determinant and typed endpoint. An exact four-mode screen over the
+four-element field covers 4,096 flags; all remain at or above the Pascal
+pressure at the displayed gauge.
+[Positive-energy perturbations](research/positive-energy-quartic-endpoints.md)
+also preserve the typed crossing when they do not vanish locally at the
+endpoint. A strict index-sum condition even permits rational local kernels
+whose endpoint denominators cancel in every fixed-type tensor power.
+For [localized quartic changes](research/localized-quartic-profiles.md),
+exact determinant and complete zero-profile formulas quantify the cost
+of the resulting spread in Smith orders. A rank-deficient limiting
+endpoint is explicitly checked and requires a further restriction.
+[A polynomial physical code](research/residual-quartic-codes.md) repairs
+that endpoint and cancels its denominators term by term. It gives an
+explicit eight-letter, degree-32 candidate whose quartic correction
+survives common types. Its endpoint is proved; a pressure improvement
+has not been established.
+[Arbitrary-mode codes](research/coded-quartic-mode-families.md) extend this
+construction to noninterval sets and independent Laurent coefficients on
+the four physical maps, with a reusable exact constructor.
+[Conjugate phase codes](research/conjugate-residual-phase-codes.md) pair
+two four-element-field tensors to cancel their endpoint phases. Three
+checked eight-letter, degree-48 crossings descend to binary coefficients
+through an explicit constant change of basis.
+[Fixed field descent](research/fixed-field-descent.md) also transfers any
+coefficient certificate over a fixed extension to its base field without
+enlarging the physical alphabet. Projecting after each complete tensor
+power costs only the extension degree in the coefficient-cost sum.
+An [all-field residual obstruction](research/residual-quartic-three-letter-obstruction.md)
+excludes three-letter restrictions by four constant physical maps over
+every characteristic-two field. When both crossing pairs use the same
+code, the resulting three-letter operator is always singular. Larger
+blocks and bulk-dependent codes remain outside this obstruction.
+A [signed exterior model](research/signed-residual-codes.md) extends the
+single-copy obstruction to every field. Exact identities over the
+27-element field also give a three-conjugate residual phase repair;
+its full polynomial factoring construction remains an open obligation.
+[An asymmetric three-letter core](research/involutive-core-crossings.md)
+gives polynomial candidates on `3 * 2^(n-2)` letters for arbitrary finite
+mode sets. A cancellation identity removes the local denominators, and
+the remaining endpoint error vanishes on every common word type.
+Exact six-letter and twelve-letter examples, monomial code parameters,
+and sparse output corrections are supplied for pressure searches.
+[Coordinate core restrictions](research/coordinate-core-crossings.md)
+retain a filled low-mode state and give a second arbitrary-mode family
+on the same alphabet sizes. Its local entries can have genuine poles;
+matching word types on each crossing pair cancel them globally and
+justify the restored rational Smith profiles. The two pairs may have
+different types, and pairing with an exchanged copy restores equal
+external dimensions.
+[Independent paired-type pressure](research/paired-type-crossing-pressure.md)
+gives the exact entropy optimization for different types and rectangular
+alphabets. Tensoring with the pair-exchanged copy produces an equal-alphabet
+crossing; keeping the two coefficient indices separate makes the costs
+multiply exactly.
+[Rectangular residual repair](research/rectangular-residual-repair.md)
+retains four extreme states on one crossing pair and three on the other.
+An explicit two-parameter inverse and a smaller height-triangular repair
+give valid paired-type families. Finite mixed examples are locally
+polynomial, and the smallest partial repair has an exact non-Gaussian
+Wick witness. Their pressure remains a search problem.
+[Even-core postselection](research/even-core-postselection.md) gives a
+four-letter polynomial family `A + lambda B + lambda^2 C` with a strict
+crossing endpoint. Two exact Wick identities prove that every nonzero
+rational parameter path is non-Gaussian. Monomial parameter paths are
+available for pressure searches; no improved rate has been certified.
+The [two-output extension](research/two-parameter-even-core.md) classifies
+its Gaussian members exactly: the coordinate axes and one exceptional
+parameter point. An explicit eight-edge factorization identifies that
+point, so numerical improvements near it can be interpreted correctly.
+The [four-boundary extension](research/four-parameter-even-core.md)
+classifies the larger Gaussian set as well. Every Gaussian member with
+all four parameters nonzero is a scalar multiple of that same exceptional
+tensor; non-Gaussian parameter searches can exclude this repeated family.
+The [optional native F4 search engine](research/native-weighted-smith-f4.md)
+provides exact field arithmetic, support-block decomposition, weighted
+profiles, and pressure gradients. Its finite controls use an independent
+rational oracle. Floating search results still require exact certificates.
+An [optional rectangular engine](research/native-rectangular-smith-search.md)
+handles unequal alphabets and independent paired types with the same
+explicit denominator bookkeeping and exact rational controls.
+For this Gaussian seed, [generic mode blocks](research/typed-gaussian-generic-blocks.md)
+force cost `Omega(D^2)` when all nonvacuum occupations stay fixed, even
+after arbitrary coefficient recombinations. Growing occupation densities
+remain a separate regime.
+[Charge-block compression](research/typed-gaussian-charge-blocks.md)
+computes the actual coefficient ranks and recombinations at larger types.
+For 1,260 labels it replaces the full 1,587,600-dimensional flattening by
+38 orbit blocks, each of size at most 1,260. The checked decompositions
+remain above the improvement threshold.
+
+[Exact type optimization](research/type-optimized-crossing-pressure.md)
+reduces the best common letter frequencies to one rational pressure inequality.
+It applies to Smith and module certificates. A checked physical gauge gives
+`rho < 61/80` for the four-label Gaussian seed; the three-mode certificate
+above improves this local pressure bound. Both remain weaker than the
+known half-rate construction.
+[Polynomial interpolation](research/polynomial-crossing-interpolation.md)
+constructs crossings from prescribed local row lattices by exact linear
+algebra. The complete fixed-lattice fiber consists of 64 local changes, and a
+relaxed system constructs a non-Gaussian control.
+An [explicit tensorized family](research/tensorized-smith-sections.md)
+adds 40 new directions to a 180-dimensional inherited space. A common
+nilpotent residue certificate proves that all `2^220` crossings preserve
+the two specified profiles; changes of gauges remain a separate question.
+An [exact weighted Smith oracle](research/weighted-smith-separation-oracle.md)
+finds all determinantal minima without listing every minor. It supports
+continuous gauge searches with exact rational replay.
+[One-sided charge changes](research/one-sided-charge-pruning.md) disappear
+exactly under common-type restriction and cannot improve either convex
+Smith-profile sum. Neutral interactions and opposite-charge combinations
+remain available to the constructive search.
+
+[Finite module automata](research/cancellation-module-smith-automata.md)
+retain cancellation between auxiliary paths. Their bounds improve monotonically
+with precision, dominate the corresponding capped entry-order bounds, and
+converge to the exact full-matrix word rate when both boundaries are free.
+[Reachable and observable reduction](research/minimal-boundary-module-completeness.md)
+extends this completeness result to fixed scalar boundaries, while keeping
+physical choices grouped by channel. This is a statement about word bounds,
+not a characterization of actual coefficient ranks.
+[Exact rational lattice orbits](research/exact-rational-module-orbits.md)
+can retain identically missing directions and compute the full word rate
+when the orbit closes. A companion example has explicit two- and seven-state
+orbits and a proved certificate floor.
+An [explicit coupled crossing](research/cancellation-module-crossing-example.md)
+strictly improves its corresponding capped min-plus certificate, from at least
+`425/27` to `1625/108`. The same local factors and precision caps are used.
+The checked controls do not yet meet the strict improvement threshold.
+
+[Fixed block Smith profiles](research/block-smith-crossings.md) form a
+submultiplicative hierarchy. A three-position ordered-pairing block improves
+its normalized certificate from `16` to about `15.7138`; this remains weaker
+than the elementary scalar control and does not change the factoring bound.
+
+The [degree-one Smith obstruction](research/linear-smith-barrier.md) proves
+`B >= q^3` for every alphabet, field, and auxiliary dimension in the bare
+linear certificate. The sharp binary bound is `256/27`; the scalar bound
+in odd characteristic is `12`. All 65,536 binary scalar pencils are catalogued.
+Higher degree, blocks, and cancellation refinements remain separate routes.
+
+For the nilpotent-path construction, a [controlled monomial obstruction](research/controlled-permutation-smith-floor.md)
+extends the existing permutation calculation to dependent and noncommuting
+controls. It gives `B >= q^3/sqrt(2)` in its stated scope. A separate
+[qutrit Weyl control](research/qutrit-weyl-crossing.md) has an exact all-length
+constant-coefficient rank formula; its raw pieces also fail to improve the bound.
+
+The [varying-image cubic construction](research/cubic-full-image-span.md)
+has an exact 786-dimensional rank-one-map coefficient space, with column ranks
+reduced from 49-by-49 matrices to matrices of size at most 28. Rank-two maps
+already span its full 1,225-dimensional major-symmetric space. These results
+define larger exact search spaces; an improving crossing decomposition is
+still needed.
+
+See the [research index](research/INDEX.md) for completed arguments, scoped obstructions, and older candidates. Active work can also appear in [open pull requests](https://github.com/1337isnot1337/integer-factoring/pulls); branch research is not automatically a result on `main`.
 
 See the [research index](research/INDEX.md) for completed arguments, scoped obstructions, and older candidates. Active work is committed directly to `main` by default; useful partial research can be integrated as a checkpoint without being promoted to a stronger theorem.
 

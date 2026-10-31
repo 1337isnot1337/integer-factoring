@@ -1,0 +1,39 @@
+{
+  "checker_sha256": "bcb537316363cab06bb51ba5366c54146a2a5b89eccd4de3ce604555afbff631",
+  "dual_identity_coefficients": {
+    "delta_B": "1/2",
+    "delta_V": "1",
+    "delta_X": "1/2",
+    "delta_Y": "1",
+    "ell": "-5/2",
+    "gamma_B": "1",
+    "gamma_V": "1/2",
+    "gamma_X": "1",
+    "gamma_Y": "1/2",
+    "k3": "-1"
+  },
+  "dual_inequality_weights": [
+    "1/2",
+    "1/2",
+    "1/2",
+    "1/2",
+    "1/2",
+    "1/2"
+  ],
+  "entropy_lower_bound": "5 H(p) + 2 H(p/2) >= 6 H(p)",
+  "entropy_occupancies_divided_by_p": [
+    "1",
+    "1",
+    "1",
+    "1",
+    "1",
+    "0",
+    "1/2",
+    "1/2"
+  ],
+  "exceeds_half_threshold_squared": "1/16",
+  "model": "constant-species sparse Gaussian bulk only",
+  "rho_lower_bound": "3/4",
+  "scope": "No claim for unbounded index slopes, arbitrary physical-letter gauges, or energy projection.",
+  "status": "pass"
+}

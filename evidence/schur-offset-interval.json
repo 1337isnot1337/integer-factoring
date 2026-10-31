@@ -1,0 +1,99 @@
+{
+  "finite_field_one_particle_identity_entries": 17976,
+  "polynomial_holonomy_identity_entries": 1712,
+  "projected_schur_checks": [
+    {
+      "M": 4,
+      "N": 2,
+      "complete_projected_schur_checks": 16,
+      "energy_dimension": 2,
+      "full_occupation_dimension": 4,
+      "h": 4,
+      "r": 1
+    },
+    {
+      "M": 8,
+      "N": 4,
+      "complete_projected_schur_checks": 256,
+      "energy_dimension": 4,
+      "full_occupation_dimension": 16,
+      "h": 8,
+      "r": 1
+    },
+    {
+      "M": 8,
+      "N": 4,
+      "complete_projected_schur_checks": 256,
+      "energy_dimension": 4,
+      "full_occupation_dimension": 16,
+      "h": 24,
+      "r": 3
+    },
+    {
+      "M": 16,
+      "N": 4,
+      "complete_projected_schur_checks": 256,
+      "energy_dimension": 4,
+      "full_occupation_dimension": 16,
+      "h": 16,
+      "r": 1
+    }
+  ],
+  "seed_checks": [
+    {
+      "M": 2,
+      "N": 2,
+      "degree": 8,
+      "endpoint_entries": 256
+    },
+    {
+      "M": 4,
+      "N": 2,
+      "degree": 14,
+      "endpoint_entries": 256
+    },
+    {
+      "M": 8,
+      "N": 2,
+      "degree": 26,
+      "endpoint_entries": 256
+    },
+    {
+      "M": 8,
+      "N": 4,
+      "degree": 28,
+      "endpoint_entries": 256
+    },
+    {
+      "M": 16,
+      "N": 4,
+      "degree": 52,
+      "endpoint_entries": 256
+    },
+    {
+      "M": 32,
+      "N": 8,
+      "degree": 104,
+      "endpoint_entries": 256
+    },
+    {
+      "M": 64,
+      "N": 8,
+      "degree": 200,
+      "endpoint_entries": 256
+    },
+    {
+      "M": 256,
+      "N": 16,
+      "degree": 784,
+      "endpoint_entries": 256
+    }
+  ],
+  "source_sha256": {
+    "tools/check_schur_downset_crossing.py": "c39c307f0dff1d478577490f4c9cb65254decfe8843e65b28a8d2cdc55955b4c",
+    "tools/check_schur_gaussian_reduction.py": "724d15fc83fad5bebade19ded5c6be49744f89aabbe52058c52089edcefd244c",
+    "tools/check_schur_offset_interval.py": "02765c907a2b86e82fdda87e1ac94e762863740d5fc98cf07a1161ba2eb94293",
+    "tools/schur_fermion.py": "03b19a8df3793b12b4516b8d19435a308976e721a960608090b99158b3877614"
+  },
+  "status": "exact offset-interval construction and projection identity; no improved factoring exponent"
+}

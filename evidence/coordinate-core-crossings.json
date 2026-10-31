@@ -1,0 +1,207 @@
+{
+  "status": "exact algebra and endpoint checks passed; no exponent improvement claimed",
+  "residual_rows_pair_index_v_plus_3y": [
+    33,
+    2,
+    4,
+    136,
+    16,
+    32,
+    64,
+    128,
+    256
+  ],
+  "cases": [
+    {
+      "indices": [
+        0,
+        1
+      ],
+      "ambient": 2,
+      "q": 3,
+      "degree": 10,
+      "denominator_degree": 2,
+      "nonzero_entries": 19,
+      "minimum_common_c_order": 2,
+      "strictly_polar_entries": 0,
+      "numerator_c_order_histogram": {
+        "2": 9,
+        "3": 8,
+        "4": 2
+      },
+      "ramified_endpoint_entries": 81,
+      "two_copy_independent_type_pairs": 36,
+      "two_copy_independent_type_entries": 225,
+      "independent_exterior_entries": 81,
+      "coefficient_sha256": "fa922c8f6aeebf3d0c84c96d329221fffdfe5fa7a36bfb03ded61c2a773fbba1"
+    },
+    {
+      "indices": [
+        0,
+        1,
+        2
+      ],
+      "ambient": 4,
+      "q": 6,
+      "degree": 26,
+      "denominator_degree": 2,
+      "nonzero_entries": 234,
+      "minimum_common_c_order": 1,
+      "strictly_polar_entries": 2,
+      "numerator_c_order_histogram": {
+        "1": 2,
+        "2": 45,
+        "3": 91,
+        "4": 47,
+        "5": 7,
+        "6": 18,
+        "7": 9,
+        "8": 6,
+        "9": 7,
+        "12": 2
+      },
+      "ramified_endpoint_entries": 1296,
+      "two_copy_independent_type_pairs": 441,
+      "two_copy_independent_type_entries": 4356,
+      "independent_exterior_entries": 1296,
+      "coefficient_sha256": "ff45cf41a131a7c1f98f38fb6f0460acfdbedc7e1cf3328a3b6442ef71542667"
+    },
+    {
+      "indices": [
+        0,
+        1,
+        3
+      ],
+      "ambient": 4,
+      "q": 6,
+      "degree": 26,
+      "denominator_degree": 2,
+      "nonzero_entries": 233,
+      "minimum_common_c_order": 1,
+      "strictly_polar_entries": 2,
+      "numerator_c_order_histogram": {
+        "1": 2,
+        "2": 51,
+        "3": 84,
+        "4": 30,
+        "5": 12,
+        "6": 28,
+        "7": 10,
+        "8": 5,
+        "9": 3,
+        "10": 4,
+        "11": 4
+      },
+      "ramified_endpoint_entries": 1296,
+      "two_copy_independent_type_pairs": 441,
+      "two_copy_independent_type_entries": 4356,
+      "independent_exterior_entries": 1296,
+      "coefficient_sha256": "282a1448a27dfa7a2f4cec0b6dac8a80c43a89a787fae91b3877a132dc9eeee2"
+    },
+    {
+      "indices": [
+        0,
+        2,
+        3
+      ],
+      "ambient": 4,
+      "q": 6,
+      "degree": 26,
+      "denominator_degree": 2,
+      "nonzero_entries": 233,
+      "minimum_common_c_order": 1,
+      "strictly_polar_entries": 2,
+      "numerator_c_order_histogram": {
+        "1": 2,
+        "2": 51,
+        "3": 84,
+        "4": 30,
+        "5": 5,
+        "6": 8,
+        "7": 13,
+        "8": 25,
+        "9": 5,
+        "10": 4,
+        "11": 4,
+        "13": 2
+      },
+      "ramified_endpoint_entries": 1296,
+      "two_copy_independent_type_pairs": 441,
+      "two_copy_independent_type_entries": 4356,
+      "independent_exterior_entries": 1296,
+      "coefficient_sha256": "521300471cd3fea82949c0226d7298147f6a32f06d10938800052858675e8a3c"
+    },
+    {
+      "indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "ambient": 4,
+      "q": 12,
+      "degree": 34,
+      "denominator_degree": 2,
+      "nonzero_entries": 2906,
+      "minimum_common_c_order": 1,
+      "strictly_polar_entries": 16,
+      "numerator_c_order_histogram": {
+        "1": 16,
+        "2": 272,
+        "3": 800,
+        "4": 424,
+        "5": 92,
+        "6": 354,
+        "7": 218,
+        "8": 295,
+        "9": 144,
+        "10": 54,
+        "11": 156,
+        "12": 23,
+        "13": 22,
+        "14": 20,
+        "15": 2,
+        "16": 14
+      },
+      "ramified_endpoint_entries": 20736,
+      "two_copy_independent_type_pairs": 6084,
+      "two_copy_independent_type_entries": 76176,
+      "independent_exterior_entries": 20736,
+      "coefficient_sha256": "1b87cb2bb0332b84fad08ef0b6ae9cb91545d0fcbac918c6085d87276c6c96d4"
+    },
+    {
+      "indices": [
+        0,
+        2,
+        5
+      ],
+      "ambient": 8,
+      "q": 6,
+      "degree": 50,
+      "denominator_degree": 2,
+      "nonzero_entries": 238,
+      "minimum_common_c_order": 1,
+      "strictly_polar_entries": 2,
+      "numerator_c_order_histogram": {
+        "1": 2,
+        "2": 45,
+        "3": 91,
+        "4": 47,
+        "6": 9,
+        "7": 9,
+        "8": 17,
+        "9": 9,
+        "11": 2,
+        "12": 1,
+        "14": 2,
+        "15": 4
+      },
+      "ramified_endpoint_entries": 1296,
+      "two_copy_independent_type_pairs": 441,
+      "two_copy_independent_type_entries": 4356,
+      "independent_exterior_entries": 1296,
+      "coefficient_sha256": "5a746e2097c941b6c328bfaa5cbcae669df71f99a66087b923c946f42052395b"
+    }
+  ],
+  "independent_supplied_seed_comparisons": []
+}

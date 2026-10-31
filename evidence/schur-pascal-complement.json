@@ -1,0 +1,7568 @@
+{
+  "initial_intervals": [
+    {
+      "complement_end": 1,
+      "complement_start": 1,
+      "modes": 1
+    },
+    {
+      "complement_end": 3,
+      "complement_start": 2,
+      "modes": 2
+    },
+    {
+      "complement_end": 5,
+      "complement_start": 3,
+      "modes": 3
+    },
+    {
+      "complement_end": 7,
+      "complement_start": 4,
+      "modes": 4
+    },
+    {
+      "complement_end": 9,
+      "complement_start": 5,
+      "modes": 5
+    },
+    {
+      "complement_end": 11,
+      "complement_start": 6,
+      "modes": 6
+    },
+    {
+      "complement_end": 13,
+      "complement_start": 7,
+      "modes": 7
+    },
+    {
+      "complement_end": 15,
+      "complement_start": 8,
+      "modes": 8
+    },
+    {
+      "complement_end": 17,
+      "complement_start": 9,
+      "modes": 9
+    },
+    {
+      "complement_end": 19,
+      "complement_start": 10,
+      "modes": 10
+    },
+    {
+      "complement_end": 21,
+      "complement_start": 11,
+      "modes": 11
+    },
+    {
+      "complement_end": 23,
+      "complement_start": 12,
+      "modes": 12
+    },
+    {
+      "complement_end": 25,
+      "complement_start": 13,
+      "modes": 13
+    },
+    {
+      "complement_end": 27,
+      "complement_start": 14,
+      "modes": 14
+    },
+    {
+      "complement_end": 29,
+      "complement_start": 15,
+      "modes": 15
+    },
+    {
+      "complement_end": 31,
+      "complement_start": 16,
+      "modes": 16
+    },
+    {
+      "complement_end": 33,
+      "complement_start": 17,
+      "modes": 17
+    },
+    {
+      "complement_end": 35,
+      "complement_start": 18,
+      "modes": 18
+    },
+    {
+      "complement_end": 37,
+      "complement_start": 19,
+      "modes": 19
+    },
+    {
+      "complement_end": 39,
+      "complement_start": 20,
+      "modes": 20
+    },
+    {
+      "complement_end": 41,
+      "complement_start": 21,
+      "modes": 21
+    },
+    {
+      "complement_end": 43,
+      "complement_start": 22,
+      "modes": 22
+    },
+    {
+      "complement_end": 45,
+      "complement_start": 23,
+      "modes": 23
+    },
+    {
+      "complement_end": 47,
+      "complement_start": 24,
+      "modes": 24
+    },
+    {
+      "complement_end": 49,
+      "complement_start": 25,
+      "modes": 25
+    },
+    {
+      "complement_end": 51,
+      "complement_start": 26,
+      "modes": 26
+    },
+    {
+      "complement_end": 53,
+      "complement_start": 27,
+      "modes": 27
+    },
+    {
+      "complement_end": 55,
+      "complement_start": 28,
+      "modes": 28
+    },
+    {
+      "complement_end": 57,
+      "complement_start": 29,
+      "modes": 29
+    },
+    {
+      "complement_end": 59,
+      "complement_start": 30,
+      "modes": 30
+    },
+    {
+      "complement_end": 61,
+      "complement_start": 31,
+      "modes": 31
+    },
+    {
+      "complement_end": 63,
+      "complement_start": 32,
+      "modes": 32
+    },
+    {
+      "complement_end": 65,
+      "complement_start": 33,
+      "modes": 33
+    },
+    {
+      "complement_end": 67,
+      "complement_start": 34,
+      "modes": 34
+    },
+    {
+      "complement_end": 69,
+      "complement_start": 35,
+      "modes": 35
+    },
+    {
+      "complement_end": 71,
+      "complement_start": 36,
+      "modes": 36
+    },
+    {
+      "complement_end": 73,
+      "complement_start": 37,
+      "modes": 37
+    },
+    {
+      "complement_end": 75,
+      "complement_start": 38,
+      "modes": 38
+    },
+    {
+      "complement_end": 77,
+      "complement_start": 39,
+      "modes": 39
+    },
+    {
+      "complement_end": 79,
+      "complement_start": 40,
+      "modes": 40
+    },
+    {
+      "complement_end": 81,
+      "complement_start": 41,
+      "modes": 41
+    },
+    {
+      "complement_end": 83,
+      "complement_start": 42,
+      "modes": 42
+    },
+    {
+      "complement_end": 85,
+      "complement_start": 43,
+      "modes": 43
+    },
+    {
+      "complement_end": 87,
+      "complement_start": 44,
+      "modes": 44
+    },
+    {
+      "complement_end": 89,
+      "complement_start": 45,
+      "modes": 45
+    },
+    {
+      "complement_end": 91,
+      "complement_start": 46,
+      "modes": 46
+    },
+    {
+      "complement_end": 93,
+      "complement_start": 47,
+      "modes": 47
+    },
+    {
+      "complement_end": 95,
+      "complement_start": 48,
+      "modes": 48
+    },
+    {
+      "complement_end": 97,
+      "complement_start": 49,
+      "modes": 49
+    },
+    {
+      "complement_end": 99,
+      "complement_start": 50,
+      "modes": 50
+    },
+    {
+      "complement_end": 101,
+      "complement_start": 51,
+      "modes": 51
+    },
+    {
+      "complement_end": 103,
+      "complement_start": 52,
+      "modes": 52
+    },
+    {
+      "complement_end": 105,
+      "complement_start": 53,
+      "modes": 53
+    },
+    {
+      "complement_end": 107,
+      "complement_start": 54,
+      "modes": 54
+    },
+    {
+      "complement_end": 109,
+      "complement_start": 55,
+      "modes": 55
+    },
+    {
+      "complement_end": 111,
+      "complement_start": 56,
+      "modes": 56
+    },
+    {
+      "complement_end": 113,
+      "complement_start": 57,
+      "modes": 57
+    },
+    {
+      "complement_end": 115,
+      "complement_start": 58,
+      "modes": 58
+    },
+    {
+      "complement_end": 117,
+      "complement_start": 59,
+      "modes": 59
+    },
+    {
+      "complement_end": 119,
+      "complement_start": 60,
+      "modes": 60
+    },
+    {
+      "complement_end": 121,
+      "complement_start": 61,
+      "modes": 61
+    },
+    {
+      "complement_end": 123,
+      "complement_start": 62,
+      "modes": 62
+    },
+    {
+      "complement_end": 125,
+      "complement_start": 63,
+      "modes": 63
+    },
+    {
+      "complement_end": 127,
+      "complement_start": 64,
+      "modes": 64
+    }
+  ],
+  "large_index_binary_traversal_controls": [
+    {
+      "complement": [
+        2097151
+      ],
+      "index_bits": 20,
+      "indices": [
+        1048575
+      ]
+    },
+    {
+      "complement": [
+        1,
+        1048577
+      ],
+      "index_bits": 20,
+      "indices": [
+        0,
+        1048576
+      ]
+    },
+    {
+      "complement": [
+        1048589,
+        1048590,
+        1048591,
+        1048592,
+        1048593,
+        1048594,
+        1048595,
+        1048596,
+        1048597,
+        1048598,
+        1048599,
+        1048600,
+        1048601
+      ],
+      "index_bits": 20,
+      "indices": [
+        1048576,
+        1048577,
+        1048578,
+        1048579,
+        1048580,
+        1048581,
+        1048582,
+        1048583,
+        1048584,
+        1048585,
+        1048586,
+        1048587,
+        1048588
+      ]
+    },
+    {
+      "complement": [
+        36893488147419103231
+      ],
+      "index_bits": 64,
+      "indices": [
+        18446744073709551615
+      ]
+    },
+    {
+      "complement": [
+        1,
+        18446744073709551617
+      ],
+      "index_bits": 64,
+      "indices": [
+        0,
+        18446744073709551616
+      ]
+    },
+    {
+      "complement": [
+        18446744073709551629,
+        18446744073709551630,
+        18446744073709551631,
+        18446744073709551632,
+        18446744073709551633,
+        18446744073709551634,
+        18446744073709551635,
+        18446744073709551636,
+        18446744073709551637,
+        18446744073709551638,
+        18446744073709551639,
+        18446744073709551640,
+        18446744073709551641
+      ],
+      "index_bits": 64,
+      "indices": [
+        18446744073709551616,
+        18446744073709551617,
+        18446744073709551618,
+        18446744073709551619,
+        18446744073709551620,
+        18446744073709551621,
+        18446744073709551622,
+        18446744073709551623,
+        18446744073709551624,
+        18446744073709551625,
+        18446744073709551626,
+        18446744073709551627,
+        18446744073709551628
+      ]
+    },
+    {
+      "complement": [
+        680564733841876926926749214863536422911
+      ],
+      "index_bits": 128,
+      "indices": [
+        340282366920938463463374607431768211455
+      ]
+    },
+    {
+      "complement": [
+        1,
+        340282366920938463463374607431768211457
+      ],
+      "index_bits": 128,
+      "indices": [
+        0,
+        340282366920938463463374607431768211456
+      ]
+    },
+    {
+      "complement": [
+        340282366920938463463374607431768211469,
+        340282366920938463463374607431768211470,
+        340282366920938463463374607431768211471,
+        340282366920938463463374607431768211472,
+        340282366920938463463374607431768211473,
+        340282366920938463463374607431768211474,
+        340282366920938463463374607431768211475,
+        340282366920938463463374607431768211476,
+        340282366920938463463374607431768211477,
+        340282366920938463463374607431768211478,
+        340282366920938463463374607431768211479,
+        340282366920938463463374607431768211480,
+        340282366920938463463374607431768211481
+      ],
+      "index_bits": 128,
+      "indices": [
+        340282366920938463463374607431768211456,
+        340282366920938463463374607431768211457,
+        340282366920938463463374607431768211458,
+        340282366920938463463374607431768211459,
+        340282366920938463463374607431768211460,
+        340282366920938463463374607431768211461,
+        340282366920938463463374607431768211462,
+        340282366920938463463374607431768211463,
+        340282366920938463463374607431768211464,
+        340282366920938463463374607431768211465,
+        340282366920938463463374607431768211466,
+        340282366920938463463374607431768211467,
+        340282366920938463463374607431768211468
+      ]
+    },
+    {
+      "complement": [
+        231584178474632390847141970017375815706539969331281128078915168015826259279871
+      ],
+      "index_bits": 256,
+      "indices": [
+        115792089237316195423570985008687907853269984665640564039457584007913129639935
+      ]
+    },
+    {
+      "complement": [
+        1,
+        115792089237316195423570985008687907853269984665640564039457584007913129639937
+      ],
+      "index_bits": 256,
+      "indices": [
+        0,
+        115792089237316195423570985008687907853269984665640564039457584007913129639936
+      ]
+    },
+    {
+      "complement": [
+        115792089237316195423570985008687907853269984665640564039457584007913129639949,
+        115792089237316195423570985008687907853269984665640564039457584007913129639950,
+        115792089237316195423570985008687907853269984665640564039457584007913129639951,
+        115792089237316195423570985008687907853269984665640564039457584007913129639952,
+        115792089237316195423570985008687907853269984665640564039457584007913129639953,
+        115792089237316195423570985008687907853269984665640564039457584007913129639954,
+        115792089237316195423570985008687907853269984665640564039457584007913129639955,
+        115792089237316195423570985008687907853269984665640564039457584007913129639956,
+        115792089237316195423570985008687907853269984665640564039457584007913129639957,
+        115792089237316195423570985008687907853269984665640564039457584007913129639958,
+        115792089237316195423570985008687907853269984665640564039457584007913129639959,
+        115792089237316195423570985008687907853269984665640564039457584007913129639960,
+        115792089237316195423570985008687907853269984665640564039457584007913129639961
+      ],
+      "index_bits": 256,
+      "indices": [
+        115792089237316195423570985008687907853269984665640564039457584007913129639936,
+        115792089237316195423570985008687907853269984665640564039457584007913129639937,
+        115792089237316195423570985008687907853269984665640564039457584007913129639938,
+        115792089237316195423570985008687907853269984665640564039457584007913129639939,
+        115792089237316195423570985008687907853269984665640564039457584007913129639940,
+        115792089237316195423570985008687907853269984665640564039457584007913129639941,
+        115792089237316195423570985008687907853269984665640564039457584007913129639942,
+        115792089237316195423570985008687907853269984665640564039457584007913129639943,
+        115792089237316195423570985008687907853269984665640564039457584007913129639944,
+        115792089237316195423570985008687907853269984665640564039457584007913129639945,
+        115792089237316195423570985008687907853269984665640564039457584007913129639946,
+        115792089237316195423570985008687907853269984665640564039457584007913129639947,
+        115792089237316195423570985008687907853269984665640564039457584007913129639948
+      ]
+    }
+  ],
+  "scope": "all finite nonempty sets of nonnegative mode indices; displayed normalized matrix",
+  "sets": [
+    {
+      "exact_smith_precision": 3,
+      "formal_series_checked_through": 2,
+      "greedy_complement": [
+        1
+      ],
+      "independent_toeplitz_ranks": 2,
+      "indices": [
+        0
+      ],
+      "normalized_t_orders": [
+        0,
+        1
+      ]
+    },
+    {
+      "exact_smith_precision": 5,
+      "formal_series_checked_through": 4,
+      "greedy_complement": [
+        3
+      ],
+      "independent_toeplitz_ranks": 4,
+      "indices": [
+        1
+      ],
+      "normalized_t_orders": [
+        1,
+        3
+      ]
+    },
+    {
+      "exact_smith_precision": 6,
+      "formal_series_checked_through": 4,
+      "greedy_complement": [
+        2,
+        3
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "exact_smith_precision": 9,
+      "formal_series_checked_through": 4,
+      "greedy_complement": [
+        3
+      ],
+      "independent_toeplitz_ranks": 4,
+      "indices": [
+        2
+      ],
+      "normalized_t_orders": [
+        2,
+        3
+      ]
+    },
+    {
+      "exact_smith_precision": 10,
+      "formal_series_checked_through": 4,
+      "greedy_complement": [
+        1,
+        3
+      ],
+      "independent_toeplitz_ranks": 4,
+      "indices": [
+        0,
+        2
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "exact_smith_precision": 10,
+      "formal_series_checked_through": 6,
+      "greedy_complement": [
+        3,
+        5
+      ],
+      "independent_toeplitz_ranks": 6,
+      "indices": [
+        1,
+        2
+      ],
+      "normalized_t_orders": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "exact_smith_precision": 10,
+      "formal_series_checked_through": 6,
+      "greedy_complement": [
+        3,
+        4,
+        5
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        2
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "exact_smith_precision": 13,
+      "formal_series_checked_through": 8,
+      "greedy_complement": [
+        7
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        3
+      ],
+      "normalized_t_orders": [
+        3,
+        7
+      ]
+    },
+    {
+      "exact_smith_precision": 14,
+      "formal_series_checked_through": 8,
+      "greedy_complement": [
+        1,
+        7
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        3
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        3,
+        7
+      ]
+    },
+    {
+      "exact_smith_precision": 14,
+      "formal_series_checked_through": 8,
+      "greedy_complement": [
+        5,
+        7
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        3
+      ],
+      "normalized_t_orders": [
+        1,
+        3,
+        5,
+        7
+      ]
+    },
+    {
+      "exact_smith_precision": 14,
+      "formal_series_checked_through": 8,
+      "greedy_complement": [
+        2,
+        5,
+        7
+      ],
+      "independent_toeplitz_ranks": 8,
+      "indices": [
+        0,
+        1,
+        3
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        7
+      ]
+    },
+    {
+      "exact_smith_precision": 14,
+      "formal_series_checked_through": 8,
+      "greedy_complement": [
+        6,
+        7
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        2,
+        3
+      ],
+      "normalized_t_orders": [
+        2,
+        3,
+        6,
+        7
+      ]
+    },
+    {
+      "exact_smith_precision": 14,
+      "formal_series_checked_through": 8,
+      "greedy_complement": [
+        1,
+        6,
+        7
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        2,
+        3
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        7
+      ]
+    },
+    {
+      "exact_smith_precision": 14,
+      "formal_series_checked_through": 8,
+      "greedy_complement": [
+        5,
+        6,
+        7
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        2,
+        3
+      ],
+      "normalized_t_orders": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "exact_smith_precision": 14,
+      "formal_series_checked_through": 8,
+      "greedy_complement": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "exact_smith_precision": 17,
+      "formal_series_checked_through": 6,
+      "greedy_complement": [
+        5
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        4
+      ],
+      "normalized_t_orders": [
+        4,
+        5
+      ]
+    },
+    {
+      "exact_smith_precision": 18,
+      "formal_series_checked_through": 6,
+      "greedy_complement": [
+        1,
+        5
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        4
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        4,
+        5
+      ]
+    },
+    {
+      "exact_smith_precision": 18,
+      "formal_series_checked_through": 6,
+      "greedy_complement": [
+        3,
+        5
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        4
+      ],
+      "normalized_t_orders": [
+        1,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "exact_smith_precision": 18,
+      "formal_series_checked_through": 6,
+      "greedy_complement": [
+        2,
+        3,
+        5
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        4
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "exact_smith_precision": 18,
+      "formal_series_checked_through": 6,
+      "greedy_complement": [
+        3,
+        5
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        2,
+        4
+      ],
+      "normalized_t_orders": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "exact_smith_precision": 18,
+      "formal_series_checked_through": 6,
+      "greedy_complement": [
+        1,
+        3,
+        5
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        2,
+        4
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "exact_smith_precision": 18,
+      "formal_series_checked_through": 8,
+      "greedy_complement": [
+        3,
+        5,
+        7
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        2,
+        4
+      ],
+      "normalized_t_orders": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ]
+    },
+    {
+      "exact_smith_precision": 18,
+      "formal_series_checked_through": 8,
+      "greedy_complement": [
+        3,
+        5,
+        6,
+        7
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "exact_smith_precision": 18,
+      "formal_series_checked_through": 8,
+      "greedy_complement": [
+        5,
+        7
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        3,
+        4
+      ],
+      "normalized_t_orders": [
+        3,
+        4,
+        5,
+        7
+      ]
+    },
+    {
+      "exact_smith_precision": 18,
+      "formal_series_checked_through": 8,
+      "greedy_complement": [
+        1,
+        5,
+        7
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        3,
+        4
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        7
+      ]
+    },
+    {
+      "exact_smith_precision": 18,
+      "formal_series_checked_through": 8,
+      "greedy_complement": [
+        5,
+        6,
+        7
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        3,
+        4
+      ],
+      "normalized_t_orders": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "exact_smith_precision": 18,
+      "formal_series_checked_through": 8,
+      "greedy_complement": [
+        2,
+        5,
+        6,
+        7
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "exact_smith_precision": 18,
+      "formal_series_checked_through": 8,
+      "greedy_complement": [
+        5,
+        6,
+        7
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        2,
+        3,
+        4
+      ],
+      "normalized_t_orders": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "exact_smith_precision": 18,
+      "formal_series_checked_through": 8,
+      "greedy_complement": [
+        1,
+        5,
+        6,
+        7
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "exact_smith_precision": 18,
+      "formal_series_checked_through": 10,
+      "greedy_complement": [
+        5,
+        6,
+        7,
+        9
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "normalized_t_orders": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ]
+    },
+    {
+      "exact_smith_precision": 18,
+      "formal_series_checked_through": 10,
+      "greedy_complement": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "exact_smith_precision": 21,
+      "formal_series_checked_through": 8,
+      "greedy_complement": [
+        7
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        5
+      ],
+      "normalized_t_orders": [
+        5,
+        7
+      ]
+    },
+    {
+      "exact_smith_precision": 22,
+      "formal_series_checked_through": 8,
+      "greedy_complement": [
+        1,
+        7
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        5
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        5,
+        7
+      ]
+    },
+    {
+      "exact_smith_precision": 22,
+      "formal_series_checked_through": 8,
+      "greedy_complement": [
+        3,
+        7
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        5
+      ],
+      "normalized_t_orders": [
+        1,
+        3,
+        5,
+        7
+      ]
+    },
+    {
+      "exact_smith_precision": 22,
+      "formal_series_checked_through": 8,
+      "greedy_complement": [
+        2,
+        3,
+        7
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        5
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        7
+      ]
+    },
+    {
+      "exact_smith_precision": 22,
+      "formal_series_checked_through": 8,
+      "greedy_complement": [
+        3,
+        7
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        2,
+        5
+      ],
+      "normalized_t_orders": [
+        2,
+        3,
+        5,
+        7
+      ]
+    },
+    {
+      "exact_smith_precision": 22,
+      "formal_series_checked_through": 8,
+      "greedy_complement": [
+        1,
+        3,
+        7
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        2,
+        5
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        7
+      ]
+    },
+    {
+      "exact_smith_precision": 22,
+      "formal_series_checked_through": 8,
+      "greedy_complement": [
+        3,
+        6,
+        7
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        2,
+        5
+      ],
+      "normalized_t_orders": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "exact_smith_precision": 22,
+      "formal_series_checked_through": 8,
+      "greedy_complement": [
+        3,
+        4,
+        6,
+        7
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "exact_smith_precision": 22,
+      "formal_series_checked_through": 12,
+      "greedy_complement": [
+        7,
+        11
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        3,
+        5
+      ],
+      "normalized_t_orders": [
+        3,
+        5,
+        7,
+        11
+      ]
+    },
+    {
+      "exact_smith_precision": 22,
+      "formal_series_checked_through": 12,
+      "greedy_complement": [
+        1,
+        7,
+        11
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        3,
+        5
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        3,
+        5,
+        7,
+        11
+      ]
+    },
+    {
+      "exact_smith_precision": 22,
+      "formal_series_checked_through": 12,
+      "greedy_complement": [
+        7,
+        9,
+        11
+      ],
+      "independent_toeplitz_ranks": 12,
+      "indices": [
+        1,
+        3,
+        5
+      ],
+      "normalized_t_orders": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11
+      ]
+    },
+    {
+      "exact_smith_precision": 22,
+      "formal_series_checked_through": 12,
+      "greedy_complement": [
+        2,
+        7,
+        9,
+        11
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        3,
+        5
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        7,
+        9,
+        11
+      ]
+    },
+    {
+      "exact_smith_precision": 22,
+      "formal_series_checked_through": 12,
+      "greedy_complement": [
+        6,
+        7,
+        11
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        2,
+        3,
+        5
+      ],
+      "normalized_t_orders": [
+        2,
+        3,
+        5,
+        6,
+        7,
+        11
+      ]
+    },
+    {
+      "exact_smith_precision": 22,
+      "formal_series_checked_through": 12,
+      "greedy_complement": [
+        1,
+        6,
+        7,
+        11
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        11
+      ]
+    },
+    {
+      "exact_smith_precision": 22,
+      "formal_series_checked_through": 12,
+      "greedy_complement": [
+        6,
+        7,
+        9,
+        11
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "normalized_t_orders": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        9,
+        11
+      ]
+    },
+    {
+      "exact_smith_precision": 22,
+      "formal_series_checked_through": 12,
+      "greedy_complement": [
+        4,
+        6,
+        7,
+        9,
+        11
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        5
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        11
+      ]
+    },
+    {
+      "exact_smith_precision": 22,
+      "formal_series_checked_through": 8,
+      "greedy_complement": [
+        6,
+        7
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        4,
+        5
+      ],
+      "normalized_t_orders": [
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "exact_smith_precision": 22,
+      "formal_series_checked_through": 8,
+      "greedy_complement": [
+        1,
+        6,
+        7
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        4,
+        5
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "exact_smith_precision": 22,
+      "formal_series_checked_through": 8,
+      "greedy_complement": [
+        3,
+        6,
+        7
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        4,
+        5
+      ],
+      "normalized_t_orders": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "exact_smith_precision": 22,
+      "formal_series_checked_through": 8,
+      "greedy_complement": [
+        2,
+        3,
+        6,
+        7
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "exact_smith_precision": 22,
+      "formal_series_checked_through": 8,
+      "greedy_complement": [
+        3,
+        6,
+        7
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        2,
+        4,
+        5
+      ],
+      "normalized_t_orders": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "exact_smith_precision": 22,
+      "formal_series_checked_through": 8,
+      "greedy_complement": [
+        1,
+        3,
+        6,
+        7
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "exact_smith_precision": 22,
+      "formal_series_checked_through": 10,
+      "greedy_complement": [
+        3,
+        6,
+        7,
+        9
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "normalized_t_orders": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ]
+    },
+    {
+      "exact_smith_precision": 22,
+      "formal_series_checked_through": 10,
+      "greedy_complement": [
+        3,
+        6,
+        7,
+        8,
+        9
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        2,
+        4,
+        5
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "exact_smith_precision": 22,
+      "formal_series_checked_through": 12,
+      "greedy_complement": [
+        6,
+        7,
+        11
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        3,
+        4,
+        5
+      ],
+      "normalized_t_orders": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        11
+      ]
+    },
+    {
+      "exact_smith_precision": 22,
+      "formal_series_checked_through": 12,
+      "greedy_complement": [
+        1,
+        6,
+        7,
+        11
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11
+      ]
+    },
+    {
+      "exact_smith_precision": 22,
+      "formal_series_checked_through": 12,
+      "greedy_complement": [
+        6,
+        7,
+        9,
+        11
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "normalized_t_orders": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        11
+      ]
+    },
+    {
+      "exact_smith_precision": 22,
+      "formal_series_checked_through": 12,
+      "greedy_complement": [
+        2,
+        6,
+        7,
+        9,
+        11
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        3,
+        4,
+        5
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        11
+      ]
+    },
+    {
+      "exact_smith_precision": 22,
+      "formal_series_checked_through": 12,
+      "greedy_complement": [
+        6,
+        7,
+        10,
+        11
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "normalized_t_orders": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        10,
+        11
+      ]
+    },
+    {
+      "exact_smith_precision": 22,
+      "formal_series_checked_through": 12,
+      "greedy_complement": [
+        1,
+        6,
+        7,
+        10,
+        11
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        10,
+        11
+      ]
+    },
+    {
+      "exact_smith_precision": 22,
+      "formal_series_checked_through": 12,
+      "greedy_complement": [
+        6,
+        7,
+        9,
+        10,
+        11
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "normalized_t_orders": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "exact_smith_precision": 22,
+      "formal_series_checked_through": 12,
+      "greedy_complement": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "exact_smith_precision": 25,
+      "formal_series_checked_through": 8,
+      "greedy_complement": [
+        7
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        6
+      ],
+      "normalized_t_orders": [
+        6,
+        7
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 8,
+      "greedy_complement": [
+        1,
+        7
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        6
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        6,
+        7
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 8,
+      "greedy_complement": [
+        3,
+        7
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        6
+      ],
+      "normalized_t_orders": [
+        1,
+        3,
+        6,
+        7
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 8,
+      "greedy_complement": [
+        2,
+        3,
+        7
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        6
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        7
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 8,
+      "greedy_complement": [
+        3,
+        7
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        2,
+        6
+      ],
+      "normalized_t_orders": [
+        2,
+        3,
+        6,
+        7
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 8,
+      "greedy_complement": [
+        1,
+        3,
+        7
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        2,
+        6
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        7
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 8,
+      "greedy_complement": [
+        3,
+        5,
+        7
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        2,
+        6
+      ],
+      "normalized_t_orders": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 8,
+      "greedy_complement": [
+        3,
+        4,
+        5,
+        7
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        2,
+        6
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 12,
+      "greedy_complement": [
+        7,
+        11
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        3,
+        6
+      ],
+      "normalized_t_orders": [
+        3,
+        6,
+        7,
+        11
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 12,
+      "greedy_complement": [
+        1,
+        7,
+        11
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        3,
+        6
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        3,
+        6,
+        7,
+        11
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 12,
+      "greedy_complement": [
+        5,
+        7,
+        11
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        3,
+        6
+      ],
+      "normalized_t_orders": [
+        1,
+        3,
+        5,
+        6,
+        7,
+        11
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 12,
+      "greedy_complement": [
+        2,
+        5,
+        7,
+        11
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        3,
+        6
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        11
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 12,
+      "greedy_complement": [
+        7,
+        10,
+        11
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        2,
+        3,
+        6
+      ],
+      "normalized_t_orders": [
+        2,
+        3,
+        6,
+        7,
+        10,
+        11
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 12,
+      "greedy_complement": [
+        1,
+        7,
+        10,
+        11
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        2,
+        3,
+        6
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        7,
+        10,
+        11
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 12,
+      "greedy_complement": [
+        5,
+        7,
+        10,
+        11
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        2,
+        3,
+        6
+      ],
+      "normalized_t_orders": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        10,
+        11
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 12,
+      "greedy_complement": [
+        4,
+        5,
+        7,
+        10,
+        11
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        6
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        10,
+        11
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 8,
+      "greedy_complement": [
+        5,
+        7
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        4,
+        6
+      ],
+      "normalized_t_orders": [
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 8,
+      "greedy_complement": [
+        1,
+        5,
+        7
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        4,
+        6
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 8,
+      "greedy_complement": [
+        3,
+        5,
+        7
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        4,
+        6
+      ],
+      "normalized_t_orders": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 8,
+      "greedy_complement": [
+        2,
+        3,
+        5,
+        7
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        4,
+        6
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 8,
+      "greedy_complement": [
+        3,
+        5,
+        7
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        2,
+        4,
+        6
+      ],
+      "normalized_t_orders": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 8,
+      "greedy_complement": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        2,
+        4,
+        6
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 10,
+      "greedy_complement": [
+        3,
+        5,
+        7,
+        9
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        2,
+        4,
+        6
+      ],
+      "normalized_t_orders": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 10,
+      "greedy_complement": [
+        3,
+        5,
+        7,
+        8,
+        9
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        2,
+        4,
+        6
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 12,
+      "greedy_complement": [
+        5,
+        7,
+        11
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        3,
+        4,
+        6
+      ],
+      "normalized_t_orders": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        11
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 12,
+      "greedy_complement": [
+        1,
+        5,
+        7,
+        11
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        3,
+        4,
+        6
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 12,
+      "greedy_complement": [
+        5,
+        7,
+        9,
+        11
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        3,
+        4,
+        6
+      ],
+      "normalized_t_orders": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        11
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 12,
+      "greedy_complement": [
+        2,
+        5,
+        7,
+        9,
+        11
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        3,
+        4,
+        6
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        11
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 12,
+      "greedy_complement": [
+        5,
+        7,
+        10,
+        11
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        2,
+        3,
+        4,
+        6
+      ],
+      "normalized_t_orders": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        10,
+        11
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 12,
+      "greedy_complement": [
+        1,
+        5,
+        7,
+        10,
+        11
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        2,
+        3,
+        4,
+        6
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        10,
+        11
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 12,
+      "greedy_complement": [
+        5,
+        7,
+        9,
+        10,
+        11
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "normalized_t_orders": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 12,
+      "greedy_complement": [
+        5,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 14,
+      "greedy_complement": [
+        7,
+        13
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        5,
+        6
+      ],
+      "normalized_t_orders": [
+        5,
+        6,
+        7,
+        13
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 14,
+      "greedy_complement": [
+        1,
+        7,
+        13
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        5,
+        6
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        5,
+        6,
+        7,
+        13
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 14,
+      "greedy_complement": [
+        3,
+        7,
+        13
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        5,
+        6
+      ],
+      "normalized_t_orders": [
+        1,
+        3,
+        5,
+        6,
+        7,
+        13
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 14,
+      "greedy_complement": [
+        2,
+        3,
+        7,
+        13
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        5,
+        6
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        13
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 14,
+      "greedy_complement": [
+        3,
+        7,
+        13
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        2,
+        5,
+        6
+      ],
+      "normalized_t_orders": [
+        2,
+        3,
+        5,
+        6,
+        7,
+        13
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 14,
+      "greedy_complement": [
+        1,
+        3,
+        7,
+        13
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        2,
+        5,
+        6
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        13
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 14,
+      "greedy_complement": [
+        3,
+        7,
+        9,
+        13
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        2,
+        5,
+        6
+      ],
+      "normalized_t_orders": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        9,
+        13
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 14,
+      "greedy_complement": [
+        3,
+        4,
+        7,
+        9,
+        13
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        2,
+        5,
+        6
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        13
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 14,
+      "greedy_complement": [
+        7,
+        11,
+        13
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        3,
+        5,
+        6
+      ],
+      "normalized_t_orders": [
+        3,
+        5,
+        6,
+        7,
+        11,
+        13
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 14,
+      "greedy_complement": [
+        1,
+        7,
+        11,
+        13
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        3,
+        5,
+        6
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        3,
+        5,
+        6,
+        7,
+        11,
+        13
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 14,
+      "greedy_complement": [
+        7,
+        9,
+        11,
+        13
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        3,
+        5,
+        6
+      ],
+      "normalized_t_orders": [
+        1,
+        3,
+        5,
+        6,
+        7,
+        9,
+        11,
+        13
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 14,
+      "greedy_complement": [
+        2,
+        7,
+        9,
+        11,
+        13
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        3,
+        5,
+        6
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        9,
+        11,
+        13
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 14,
+      "greedy_complement": [
+        7,
+        10,
+        11,
+        13
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        2,
+        3,
+        5,
+        6
+      ],
+      "normalized_t_orders": [
+        2,
+        3,
+        5,
+        6,
+        7,
+        10,
+        11,
+        13
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 14,
+      "greedy_complement": [
+        1,
+        7,
+        10,
+        11,
+        13
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        2,
+        3,
+        5,
+        6
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        10,
+        11,
+        13
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 14,
+      "greedy_complement": [
+        7,
+        9,
+        10,
+        11,
+        13
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        2,
+        3,
+        5,
+        6
+      ],
+      "normalized_t_orders": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        13
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 14,
+      "greedy_complement": [
+        4,
+        7,
+        9,
+        10,
+        11,
+        13
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        13
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 14,
+      "greedy_complement": [
+        7,
+        12,
+        13
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        4,
+        5,
+        6
+      ],
+      "normalized_t_orders": [
+        4,
+        5,
+        6,
+        7,
+        12,
+        13
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 14,
+      "greedy_complement": [
+        1,
+        7,
+        12,
+        13
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        4,
+        5,
+        6
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7,
+        12,
+        13
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 14,
+      "greedy_complement": [
+        3,
+        7,
+        12,
+        13
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        4,
+        5,
+        6
+      ],
+      "normalized_t_orders": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        12,
+        13
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 14,
+      "greedy_complement": [
+        2,
+        3,
+        7,
+        12,
+        13
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        4,
+        5,
+        6
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        12,
+        13
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 14,
+      "greedy_complement": [
+        3,
+        7,
+        12,
+        13
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        2,
+        4,
+        5,
+        6
+      ],
+      "normalized_t_orders": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        12,
+        13
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 14,
+      "greedy_complement": [
+        1,
+        3,
+        7,
+        12,
+        13
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        2,
+        4,
+        5,
+        6
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        12,
+        13
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 14,
+      "greedy_complement": [
+        3,
+        7,
+        9,
+        12,
+        13
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      "normalized_t_orders": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        12,
+        13
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 14,
+      "greedy_complement": [
+        3,
+        7,
+        8,
+        9,
+        12,
+        13
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12,
+        13
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 14,
+      "greedy_complement": [
+        7,
+        11,
+        12,
+        13
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "normalized_t_orders": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 14,
+      "greedy_complement": [
+        1,
+        7,
+        11,
+        12,
+        13
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        3,
+        4,
+        5,
+        6
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 14,
+      "greedy_complement": [
+        7,
+        9,
+        11,
+        12,
+        13
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        3,
+        4,
+        5,
+        6
+      ],
+      "normalized_t_orders": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 14,
+      "greedy_complement": [
+        2,
+        7,
+        9,
+        11,
+        12,
+        13
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 14,
+      "greedy_complement": [
+        7,
+        10,
+        11,
+        12,
+        13
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "normalized_t_orders": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 14,
+      "greedy_complement": [
+        1,
+        7,
+        10,
+        11,
+        12,
+        13
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 14,
+      "greedy_complement": [
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "normalized_t_orders": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "exact_smith_precision": 26,
+      "formal_series_checked_through": 14,
+      "greedy_complement": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "exact_smith_precision": 29,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        7
+      ],
+      "normalized_t_orders": [
+        7,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        1,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        7,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        3,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        7
+      ],
+      "normalized_t_orders": [
+        1,
+        3,
+        7,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        2,
+        3,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        7,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        3,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        2,
+        7
+      ],
+      "normalized_t_orders": [
+        2,
+        3,
+        7,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        1,
+        3,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        2,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        7,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        3,
+        5,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        2,
+        7
+      ],
+      "normalized_t_orders": [
+        1,
+        2,
+        3,
+        5,
+        7,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        3,
+        4,
+        5,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        2,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        11,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        3,
+        7
+      ],
+      "normalized_t_orders": [
+        3,
+        7,
+        11,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        1,
+        11,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        3,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        3,
+        7,
+        11,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        5,
+        11,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        3,
+        7
+      ],
+      "normalized_t_orders": [
+        1,
+        3,
+        5,
+        7,
+        11,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        2,
+        5,
+        11,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        3,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        7,
+        11,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        6,
+        11,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        2,
+        3,
+        7
+      ],
+      "normalized_t_orders": [
+        2,
+        3,
+        6,
+        7,
+        11,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        1,
+        6,
+        11,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        2,
+        3,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        7,
+        11,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        5,
+        6,
+        11,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        2,
+        3,
+        7
+      ],
+      "normalized_t_orders": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        11,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        4,
+        5,
+        6,
+        11,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        5,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        4,
+        7
+      ],
+      "normalized_t_orders": [
+        4,
+        5,
+        7,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        1,
+        5,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        4,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        4,
+        5,
+        7,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        3,
+        5,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        4,
+        7
+      ],
+      "normalized_t_orders": [
+        1,
+        3,
+        4,
+        5,
+        7,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        2,
+        3,
+        5,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        4,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        3,
+        5,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        2,
+        4,
+        7
+      ],
+      "normalized_t_orders": [
+        2,
+        3,
+        4,
+        5,
+        7,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        1,
+        3,
+        5,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        2,
+        4,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        3,
+        5,
+        9,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        2,
+        4,
+        7
+      ],
+      "normalized_t_orders": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        9,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        3,
+        5,
+        6,
+        9,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        2,
+        4,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        5,
+        11,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        3,
+        4,
+        7
+      ],
+      "normalized_t_orders": [
+        3,
+        4,
+        5,
+        7,
+        11,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        1,
+        5,
+        11,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        3,
+        4,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        7,
+        11,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        5,
+        6,
+        11,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        3,
+        4,
+        7
+      ],
+      "normalized_t_orders": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        2,
+        5,
+        6,
+        11,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        3,
+        4,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        5,
+        6,
+        11,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        2,
+        3,
+        4,
+        7
+      ],
+      "normalized_t_orders": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        1,
+        5,
+        6,
+        11,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        2,
+        3,
+        4,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        5,
+        6,
+        9,
+        11,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        2,
+        3,
+        4,
+        7
+      ],
+      "normalized_t_orders": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        11,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        5,
+        6,
+        8,
+        9,
+        11,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        11,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        13,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        5,
+        7
+      ],
+      "normalized_t_orders": [
+        5,
+        7,
+        13,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        1,
+        13,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        5,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        5,
+        7,
+        13,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        3,
+        13,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        5,
+        7
+      ],
+      "normalized_t_orders": [
+        1,
+        3,
+        5,
+        7,
+        13,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        2,
+        3,
+        13,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        5,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        7,
+        13,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        3,
+        13,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        2,
+        5,
+        7
+      ],
+      "normalized_t_orders": [
+        2,
+        3,
+        5,
+        7,
+        13,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        1,
+        3,
+        13,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        2,
+        5,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        7,
+        13,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        3,
+        6,
+        13,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        2,
+        5,
+        7
+      ],
+      "normalized_t_orders": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        13,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        3,
+        4,
+        6,
+        13,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        2,
+        5,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        13,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        11,
+        13,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        3,
+        5,
+        7
+      ],
+      "normalized_t_orders": [
+        3,
+        5,
+        7,
+        11,
+        13,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        1,
+        11,
+        13,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        3,
+        5,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        3,
+        5,
+        7,
+        11,
+        13,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        9,
+        11,
+        13,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "normalized_t_orders": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        2,
+        9,
+        11,
+        13,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        3,
+        5,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        6,
+        11,
+        13,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        2,
+        3,
+        5,
+        7
+      ],
+      "normalized_t_orders": [
+        2,
+        3,
+        5,
+        6,
+        7,
+        11,
+        13,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        1,
+        6,
+        11,
+        13,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        2,
+        3,
+        5,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        11,
+        13,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        6,
+        9,
+        11,
+        13,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        2,
+        3,
+        5,
+        7
+      ],
+      "normalized_t_orders": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        9,
+        11,
+        13,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        4,
+        6,
+        9,
+        11,
+        13,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        11,
+        13,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        6,
+        13,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        4,
+        5,
+        7
+      ],
+      "normalized_t_orders": [
+        4,
+        5,
+        6,
+        7,
+        13,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        1,
+        6,
+        13,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        4,
+        5,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7,
+        13,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        3,
+        6,
+        13,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        4,
+        5,
+        7
+      ],
+      "normalized_t_orders": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        13,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        2,
+        3,
+        6,
+        13,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        4,
+        5,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        13,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        3,
+        6,
+        13,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        2,
+        4,
+        5,
+        7
+      ],
+      "normalized_t_orders": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        13,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        1,
+        3,
+        6,
+        13,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        2,
+        4,
+        5,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        13,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        3,
+        6,
+        9,
+        13,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        2,
+        4,
+        5,
+        7
+      ],
+      "normalized_t_orders": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        13,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        3,
+        6,
+        8,
+        9,
+        13,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        13,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        6,
+        11,
+        13,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        3,
+        4,
+        5,
+        7
+      ],
+      "normalized_t_orders": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        13,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        1,
+        6,
+        11,
+        13,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        3,
+        4,
+        5,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        13,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        6,
+        9,
+        11,
+        13,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        3,
+        4,
+        5,
+        7
+      ],
+      "normalized_t_orders": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        11,
+        13,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        2,
+        6,
+        9,
+        11,
+        13,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        11,
+        13,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        6,
+        10,
+        11,
+        13,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "normalized_t_orders": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        10,
+        11,
+        13,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        1,
+        6,
+        10,
+        11,
+        13,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        10,
+        11,
+        13,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        6,
+        9,
+        10,
+        11,
+        13,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "normalized_t_orders": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        13,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        6,
+        8,
+        9,
+        10,
+        11,
+        13,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        13,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        6,
+        7,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        1,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        6,
+        7,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        3,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        1,
+        3,
+        6,
+        7,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        2,
+        3,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        7,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        3,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        2,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        2,
+        3,
+        6,
+        7,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        1,
+        3,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        2,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        7,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        3,
+        5,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        2,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        3,
+        4,
+        5,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        2,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        11,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        3,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        3,
+        6,
+        7,
+        11,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        1,
+        11,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        3,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        3,
+        6,
+        7,
+        11,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        5,
+        11,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        3,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        1,
+        3,
+        5,
+        6,
+        7,
+        11,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        2,
+        5,
+        11,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        3,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        11,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        10,
+        11,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        2,
+        3,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        2,
+        3,
+        6,
+        7,
+        10,
+        11,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        1,
+        10,
+        11,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        2,
+        3,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        7,
+        10,
+        11,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        5,
+        10,
+        11,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        2,
+        3,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        10,
+        11,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        4,
+        5,
+        10,
+        11,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        10,
+        11,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        5,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        4,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        4,
+        5,
+        6,
+        7,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        1,
+        5,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        4,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        3,
+        5,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        4,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        2,
+        3,
+        5,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        4,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        3,
+        5,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        2,
+        4,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        1,
+        3,
+        5,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        2,
+        4,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        3,
+        5,
+        9,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        2,
+        4,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        3,
+        5,
+        8,
+        9,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        5,
+        11,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        3,
+        4,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        1,
+        5,
+        11,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        3,
+        4,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        5,
+        9,
+        11,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        3,
+        4,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        11,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        2,
+        5,
+        9,
+        11,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        11,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        5,
+        10,
+        11,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        2,
+        3,
+        4,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        10,
+        11,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        1,
+        5,
+        10,
+        11,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        2,
+        3,
+        4,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        10,
+        11,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        5,
+        9,
+        10,
+        11,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        5,
+        8,
+        9,
+        10,
+        11,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        13,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        5,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        5,
+        6,
+        7,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        1,
+        13,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        5,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        5,
+        6,
+        7,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        3,
+        13,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        5,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        1,
+        3,
+        5,
+        6,
+        7,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        2,
+        3,
+        13,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        5,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        3,
+        13,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        2,
+        5,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        2,
+        3,
+        5,
+        6,
+        7,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        1,
+        3,
+        13,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        2,
+        5,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        3,
+        9,
+        13,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        2,
+        5,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        9,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        3,
+        4,
+        9,
+        13,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        2,
+        5,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        11,
+        13,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        3,
+        5,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        3,
+        5,
+        6,
+        7,
+        11,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        1,
+        11,
+        13,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        3,
+        5,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        3,
+        5,
+        6,
+        7,
+        11,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        9,
+        11,
+        13,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        3,
+        5,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        1,
+        3,
+        5,
+        6,
+        7,
+        9,
+        11,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        2,
+        9,
+        11,
+        13,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        3,
+        5,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        9,
+        11,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        10,
+        11,
+        13,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        2,
+        3,
+        5,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        2,
+        3,
+        5,
+        6,
+        7,
+        10,
+        11,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        1,
+        10,
+        11,
+        13,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        2,
+        3,
+        5,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        10,
+        11,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        9,
+        10,
+        11,
+        13,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        4,
+        9,
+        10,
+        11,
+        13,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        4,
+        5,
+        6,
+        7,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        1,
+        12,
+        13,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        4,
+        5,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        3,
+        12,
+        13,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        4,
+        5,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        2,
+        3,
+        12,
+        13,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        3,
+        12,
+        13,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        1,
+        3,
+        12,
+        13,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        3,
+        9,
+        12,
+        13,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        3,
+        8,
+        9,
+        12,
+        13,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        1,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        9,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        2,
+        9,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        1,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 30,
+      "formal_series_checked_through": 16,
+      "greedy_complement": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "exact_smith_precision": 50,
+      "formal_series_checked_through": 14,
+      "greedy_complement": [
+        1,
+        7,
+        9,
+        11,
+        13
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        3,
+        5,
+        8,
+        12
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        3,
+        5,
+        7,
+        8,
+        9,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "exact_smith_precision": 34,
+      "formal_series_checked_through": 10,
+      "greedy_complement": [
+        3,
+        5,
+        7,
+        9
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "normalized_t_orders": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "exact_smith_precision": 58,
+      "formal_series_checked_through": 30,
+      "greedy_complement": [
+        15,
+        23,
+        27,
+        29
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        7,
+        11,
+        13,
+        14
+      ],
+      "normalized_t_orders": [
+        7,
+        11,
+        13,
+        14,
+        15,
+        23,
+        27,
+        29
+      ]
+    },
+    {
+      "exact_smith_precision": 66,
+      "formal_series_checked_through": 18,
+      "greedy_complement": [
+        3,
+        5,
+        6,
+        7,
+        9,
+        17
+      ],
+      "independent_toeplitz_ranks": 0,
+      "indices": [
+        0,
+        1,
+        2,
+        4,
+        8,
+        16
+      ],
+      "normalized_t_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        16,
+        17
+      ]
+    }
+  ],
+  "source_sha256": {
+    "tools/check_block_smith_crossings.py": "6fd6e1d3fb8ad5ee08ed716101caa27b5d8b20529318927c14ed09106e3889a7",
+    "tools/check_schur_one_species_interval.py": "b146a38eebf411ede5056a315e6d92e29a60d016c3983c27e50618eb1b14b06d",
+    "tools/check_schur_pascal_complement.py": "dd56991382dcef17f870d70a41dcb251adf9e8f8ee61b4ed57a42e1e289c90fa"
+  },
+  "status": "exact arbitrary-mode Pascal-complement Smith formula; no stronger factoring exponent"
+}

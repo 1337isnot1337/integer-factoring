@@ -1,0 +1,227 @@
+{
+  "B_min_plus_lower": "425/27",
+  "B_module": "1625/108",
+  "checker_sha256": "a094e19a780e58aec484b430f4d11b1e254dfda870b34442479c2d0ccfb102fc",
+  "column_automaton": {
+    "dimension": 2,
+    "free_boundaries": false,
+    "precision": 1,
+    "states": [
+      [
+        1
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "terminal_costs": [
+      0,
+      0
+    ],
+    "transitions": [
+      [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    ]
+  },
+  "column_beta": "25/9",
+  "column_transfer": [
+    [
+      "19/9",
+      "2/3"
+    ],
+    [
+      "0",
+      "25/9"
+    ]
+  ],
+  "field": 2,
+  "literal_coefficient_rank_inequalities": 75,
+  "literal_endpoint_entries": 4368,
+  "literal_rational_word_orders": 40,
+  "local_formula": "P(z)I2+z(1+z)([v=0]E01+[x=y=1,u=v=0]E10)",
+  "maximum_word": 3,
+  "min_plus_word_comparisons": 168,
+  "module_checker_sha256": "f2d7f72ac524ee5ab6d4617a595b072e5ce5a3071f86e88bace71b3bfb36e08e",
+  "old_row_positive_lower_potential": [
+    "4/5",
+    "1",
+    "4/5"
+  ],
+  "old_row_rate_lower": "17/3",
+  "old_row_transfer": [
+    [
+      "13/6",
+      "1",
+      "9/4"
+    ],
+    [
+      "9/4",
+      "13/6",
+      "9/4"
+    ],
+    [
+      "9/4",
+      "1",
+      "13/6"
+    ]
+  ],
+  "rank_records": [
+    {
+      "column": [
+        1,
+        4,
+        0
+      ],
+      "length": 1,
+      "row": [
+        4,
+        1,
+        0
+      ]
+    },
+    {
+      "column": [
+        1,
+        6,
+        16,
+        0,
+        1
+      ],
+      "length": 2,
+      "row": [
+        16,
+        6,
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "column": [
+        1,
+        8,
+        28,
+        64,
+        3,
+        9,
+        0
+      ],
+      "length": 3,
+      "row": [
+        64,
+        28,
+        17,
+        4,
+        9,
+        3,
+        0
+      ]
+    }
+  ],
+  "row_automaton": {
+    "dimension": 2,
+    "free_boundaries": false,
+    "precision": 2,
+    "states": [
+      [
+        2,
+        1
+      ],
+      [
+        8,
+        4
+      ]
+    ],
+    "terminal_costs": [
+      0,
+      2
+    ],
+    "transitions": [
+      [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    ]
+  },
+  "row_beta": "65/12",
+  "row_transfer": [
+    [
+      "19/6",
+      "9/4"
+    ],
+    [
+      "9/4",
+      "19/6"
+    ]
+  ],
+  "s": "3/2",
+  "scope": "Strict same-factorization, same-cap word-certificate improvement for one explicit crossing; no factoring exponent improvement.",
+  "status": "pass"
+}

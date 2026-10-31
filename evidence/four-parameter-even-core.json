@@ -1,0 +1,59 @@
+{
+  "basis_sha256": "42b13f381a51302c0918a9643e91c2ba2af17ffcb48ea8e1b16e5508706d4f5e",
+  "cleared_gaussian_surface_coefficients": 2048,
+  "coefficient_divisions": 4096,
+  "endpoint_coefficient_checks": 4096,
+  "nonzero_endpoint_parameter_masks": [
+    0,
+    6,
+    9
+  ],
+  "parameter_order": [
+    "p_x",
+    "L_y",
+    "r_u",
+    "M_v"
+  ],
+  "status": "exact four-parameter endpoint and complete Gaussian-locus classification; no pressure improvement claimed",
+  "two_parameter_recombination_coefficients": 1024,
+  "wick_mask_23": [
+    {
+      "polynomial_bits": 17408,
+      "powers": [
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "polynomial_bits": 68,
+      "powers": [
+        1,
+        2,
+        2,
+        2
+      ]
+    }
+  ],
+  "wick_mask_83": [
+    {
+      "polynomial_bits": 1020,
+      "powers": [
+        1,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "polynomial_bits": 1020,
+      "powers": [
+        1,
+        2,
+        2,
+        2
+      ]
+    }
+  ]
+}

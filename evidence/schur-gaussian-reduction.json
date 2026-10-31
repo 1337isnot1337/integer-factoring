@@ -1,0 +1,283 @@
+{
+  "dimension_checks": [
+    {
+      "M": 2,
+      "energy_dimension": 2,
+      "h": 2,
+      "occupation_dimension": 4,
+      "possible_subset_sums": 2,
+      "r": 1
+    },
+    {
+      "M": 4,
+      "energy_dimension": 8,
+      "h": 8,
+      "occupation_dimension": 36,
+      "possible_subset_sums": 5,
+      "r": 2
+    },
+    {
+      "M": 8,
+      "energy_dimension": 390,
+      "h": 32,
+      "occupation_dimension": 4900,
+      "possible_subset_sums": 17,
+      "r": 4
+    },
+    {
+      "M": 16,
+      "energy_dimension": 4836452,
+      "h": 128,
+      "occupation_dimension": 165636900,
+      "possible_subset_sums": 65,
+      "r": 8
+    }
+  ],
+  "field_modulus_bits": 131,
+  "non_prime_power_weight_check": {
+    "M": 4,
+    "h": 12,
+    "r": 3
+  },
+  "one_particle_field_entry_checks": 15345,
+  "projected_schur_identity_checks": 544,
+  "seed_endpoint_entries": 256,
+  "seed_nonzero_polynomial_entries": 62,
+  "smith_profiles": [
+    {
+      "cut": 0,
+      "infinity_degrees": [
+        8,
+        7,
+        7,
+        6,
+        5,
+        5,
+        4,
+        4,
+        4,
+        4,
+        3,
+        3,
+        2,
+        1,
+        1,
+        0
+      ],
+      "infinity_toeplitz_checks": [
+        {
+          "precision": 1,
+          "rank": 1
+        },
+        {
+          "precision": 2,
+          "rank": 4
+        },
+        {
+          "precision": 3,
+          "rank": 8
+        },
+        {
+          "precision": 4,
+          "rank": 14
+        },
+        {
+          "precision": 5,
+          "rank": 24
+        },
+        {
+          "precision": 6,
+          "rank": 36
+        },
+        {
+          "precision": 7,
+          "rank": 49
+        },
+        {
+          "precision": 8,
+          "rank": 64
+        },
+        {
+          "precision": 9,
+          "rank": 80
+        }
+      ],
+      "zero_orders": [
+        0,
+        0,
+        0,
+        0,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        8,
+        8,
+        8,
+        8
+      ],
+      "zero_toeplitz_checks": [
+        {
+          "precision": 1,
+          "rank": 4
+        },
+        {
+          "precision": 2,
+          "rank": 8
+        },
+        {
+          "precision": 3,
+          "rank": 12
+        },
+        {
+          "precision": 4,
+          "rank": 16
+        },
+        {
+          "precision": 5,
+          "rank": 28
+        },
+        {
+          "precision": 6,
+          "rank": 40
+        },
+        {
+          "precision": 7,
+          "rank": 52
+        },
+        {
+          "precision": 8,
+          "rank": 64
+        },
+        {
+          "precision": 9,
+          "rank": 80
+        }
+      ]
+    },
+    {
+      "cut": 1,
+      "infinity_degrees": [
+        8,
+        6,
+        6,
+        4,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        -2,
+        -2,
+        -4,
+        -6,
+        -6,
+        -8
+      ],
+      "infinity_toeplitz_checks": [
+        {
+          "precision": 1,
+          "rank": 1
+        },
+        {
+          "precision": 2,
+          "rank": 2
+        },
+        {
+          "precision": 3,
+          "rank": 5
+        },
+        {
+          "precision": 4,
+          "rank": 8
+        },
+        {
+          "precision": 5,
+          "rank": 12
+        },
+        {
+          "precision": 6,
+          "rank": 16
+        },
+        {
+          "precision": 7,
+          "rank": 22
+        },
+        {
+          "precision": 8,
+          "rank": 28
+        },
+        {
+          "precision": 9,
+          "rank": 38
+        },
+        {
+          "precision": 10,
+          "rank": 48
+        },
+        {
+          "precision": 11,
+          "rank": 60
+        },
+        {
+          "precision": 12,
+          "rank": 72
+        },
+        {
+          "precision": 13,
+          "rank": 85
+        },
+        {
+          "precision": 14,
+          "rank": 98
+        },
+        {
+          "precision": 15,
+          "rank": 113
+        },
+        {
+          "precision": 16,
+          "rank": 128
+        },
+        {
+          "precision": 17,
+          "rank": 144
+        }
+      ],
+      "zero_orders": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "zero_toeplitz_checks": [
+        {
+          "precision": 1,
+          "rank": 16
+        }
+      ]
+    }
+  ],
+  "source_sha256": {
+    "tools/check_schur_gaussian_reduction.py": "724d15fc83fad5bebade19ded5c6be49744f89aabbe52058c52089edcefd244c",
+    "tools/schur_fermion.py": "03b19a8df3793b12b4516b8d19435a308976e721a960608090b99158b3877614"
+  },
+  "status": "exact Gaussian reduction and finite profiles; no stronger factoring bound"
+}

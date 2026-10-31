@@ -1,0 +1,63 @@
+{
+  "claim": "A+lambda*B+lambda^2*C is a strict q4 polynomial crossing",
+  "coefficient_endpoint_checks": 768,
+  "constant_specializations": [
+    {
+      "coefficient_sha256": "dcd887528b679af9fcfec91f8ebe792b811ec9639f43d4c6c268168e50240fa4",
+      "degree": 17,
+      "endpoint_entries_checked": 256,
+      "parameter": 0
+    },
+    {
+      "coefficient_sha256": "1bf4a6a0106ed9452ef5ad4f707419ffa13c1ca399a0d4146e4c62e12d26e66a",
+      "degree": 32,
+      "endpoint_entries_checked": 256,
+      "parameter": 1
+    },
+    {
+      "coefficient_sha256": "66ead763887e7ba66510aacfea158c8f4bdab61bf3e0f48b9d1955905f0ce92e",
+      "degree": 32,
+      "endpoint_entries_checked": 256,
+      "parameter": 2
+    },
+    {
+      "coefficient_sha256": "07ee8576fff10150f9fed44b36d441e7373683b8277e0ef00ef2393626e0d86d",
+      "degree": 32,
+      "endpoint_entries_checked": 256,
+      "parameter": 3
+    }
+  ],
+  "exact_c_squared_divisions": 768,
+  "field": "every characteristic-two field",
+  "gaussian_control_lambda0_failures": 0,
+  "gaussian_control_lambda0_relations_checked": 99,
+  "lambda1_relation_failures": 68,
+  "lambda1_relations_checked": 99,
+  "odd_parity_zeros_checked": 384,
+  "parameter_coefficient_degrees": [
+    17,
+    32,
+    14
+  ],
+  "parameter_coefficients_sha256": "81d0b26b3ceb8f1c27eb3204f15d53bef790963e08f60d632b08c4f92791db87",
+  "scope": "No pressure or factoring-exponent improvement is asserted.",
+  "wick_relations": {
+    "lambda1_mask23_factor": "w^2*(1+w)^12",
+    "mask23_factor": "lambda^3*w^2*(1+w)^4*(w^8+lambda)",
+    "mask23_lambda_coefficients": [
+      0,
+      0,
+      0,
+      17408,
+      68
+    ],
+    "mask83_factor": "lambda^3*w^2*(1+w)^7*(1+lambda)",
+    "mask83_lambda_coefficients": [
+      0,
+      0,
+      0,
+      1020,
+      1020
+    ]
+  }
+}
