@@ -381,3 +381,7 @@ verify-weyl-lattice-synthesis:
 .PHONY: verify-reflection-hot-state-gauges
 verify-reflection-hot-state-gauges:
 	python3 tools/check_reflection_hot_state_gauges.py --extended
+
+.PHONY: verify-operator-lattice-synthesis
+verify-operator-lattice-synthesis:
+	python3 tools/check_weyl_operator_lattice_synthesis.py

@@ -14,6 +14,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Two-cut synthesis for occupation-transfer kernels](identity-operator-lattice-synthesis.md): all operator coefficients are solved together under independent zero and infinity row constraints, with explicit Laurent support and an exact repaired-endpoint test.
+
 - [Physical state gauges on reflection hot cores](reflection-hot-state-gauges.md): a regular reduction supports arbitrary state heights and endpoint-preserving masks on at most eleven modes per hot bit; monotone exterior-defect heights require only four.
 
 - [Polynomial synthesis through reduced Smith lattices](weyl-lattice-filter-synthesis.md): linear coefficient constraints certify every occupation-block Smith prefix, with complete infinity costs and an exact eight-state endpoint-cover test over `F4`.
