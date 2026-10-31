@@ -158,6 +158,14 @@ constructive targets. `make verify-state-filters` checks the exact finite
 identities; its extended target also replays the original characteristic-five
 matrices of order 625.
 
+The [polynomial filter synthesis algorithm](research/polynomial-state-filter-synthesis.md)
+goes beyond monomial weights. Prescribed degree bounds, zero orders, and
+endpoint values form an exact finite-field feasibility problem. Residue
+compression uses at most `2*p+1` small systems and constructs explicit
+polynomials even at mode scales with hundreds of bits. Full infinity
+degrees and any denominator clearing remain charged. This supplies a
+concrete route for testing coordinated cancellations at both cuts.
+
 The [Walsh permanent calculation](research/walsh-principal-permanents.md)
 gives all-size scalar valuation formulas beyond the determinant model.
 It also proves that exponentially many grouped modes survive the current

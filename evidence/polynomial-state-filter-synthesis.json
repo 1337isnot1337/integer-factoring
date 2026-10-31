@@ -1,0 +1,296 @@
+{
+  "status": "Exact endpoint-constrained synthesis and profile controls; no pressure claim.",
+  "uncompressed_coefficient_systems": {
+    "full_affine_system_comparisons": 800,
+    "feasible_controls": 68,
+    "characteristics": [
+      2,
+      3,
+      5,
+      7
+    ]
+  },
+  "brute_force_polynomials": {
+    "enumerated_endpoint_polynomial_vectors": 2916,
+    "brute_force_feasibility_comparisons": 8964,
+    "maximum_individual_degree": 2,
+    "characteristic": 3
+  },
+  "large_integer_scales": {
+    "scaled_instances": [
+      {
+        "m_bits": 210,
+        "feasible": true,
+        "residue_patterns": 2
+      },
+      {
+        "m_bits": 211,
+        "feasible": true,
+        "residue_patterns": 4
+      },
+      {
+        "m_bits": 212,
+        "feasible": true,
+        "residue_patterns": 3
+      },
+      {
+        "m_bits": 211,
+        "feasible": false,
+        "residue_patterns": 4
+      }
+    ],
+    "very_large_impossible_order_bit_length": 419
+  },
+  "prime_five_independent_enumeration": [
+    {
+      "m": 1,
+      "endpoint_one_vectors_enumerated": 3125,
+      "distinct_degree_order_pairs": 274,
+      "feasibility_cases": 2556,
+      "feasible_cases": 1028
+    },
+    {
+      "m": 2,
+      "endpoint_one_vectors_enumerated": 3125,
+      "distinct_degree_order_pairs": 274,
+      "feasibility_cases": 2948,
+      "feasible_cases": 1380
+    },
+    {
+      "m": 7,
+      "endpoint_one_vectors_enumerated": 3125,
+      "distinct_degree_order_pairs": 274,
+      "feasibility_cases": 2947,
+      "feasible_cases": 1373
+    }
+  ],
+  "literal_polynomial_tensors": {
+    "endpoint_coefficient_equalities": 6885,
+    "complete_two_cut_controls": [
+      {
+        "n": 1,
+        "ramification": 1,
+        "charge": 0,
+        "alpha": [
+          {
+            "0": 1,
+            "2": 1,
+            "3": 2
+          },
+          {
+            "0": 1,
+            "1": 2,
+            "3": 1
+          },
+          {
+            "0": 1,
+            "2": 1,
+            "3": 2
+          }
+        ],
+        "matrix_order": 9,
+        "maximum_series_precision": 8
+      },
+      {
+        "n": 1,
+        "ramification": 1,
+        "charge": 2,
+        "alpha": [
+          {
+            "0": 1,
+            "2": 1,
+            "3": 2
+          },
+          {
+            "0": 1,
+            "1": 2,
+            "3": 1
+          },
+          {
+            "0": 1,
+            "2": 1,
+            "3": 2
+          }
+        ],
+        "matrix_order": 9,
+        "maximum_series_precision": 8
+      },
+      {
+        "n": 1,
+        "ramification": 1,
+        "charge": 0,
+        "alpha": [
+          {
+            "0": 1,
+            "1": 1,
+            "2": 2
+          },
+          {
+            "0": 2,
+            "1": 1,
+            "2": 1
+          },
+          {
+            "0": 2,
+            "1": 2,
+            "2": 1,
+            "3": 2
+          }
+        ],
+        "matrix_order": 9,
+        "maximum_series_precision": 8
+      },
+      {
+        "n": 1,
+        "ramification": 1,
+        "charge": 2,
+        "alpha": [
+          {
+            "0": 1,
+            "1": 1,
+            "2": 2
+          },
+          {
+            "0": 2,
+            "1": 1,
+            "2": 1
+          },
+          {
+            "0": 2,
+            "1": 2,
+            "2": 1,
+            "3": 2
+          }
+        ],
+        "matrix_order": 9,
+        "maximum_series_precision": 8
+      },
+      {
+        "n": 1,
+        "ramification": 3,
+        "charge": 0,
+        "alpha": [
+          {
+            "1": 2,
+            "2": 2
+          },
+          {
+            "0": 2,
+            "1": 1,
+            "2": 1
+          },
+          {
+            "3": 1
+          }
+        ],
+        "matrix_order": 9,
+        "maximum_series_precision": 16
+      },
+      {
+        "n": 1,
+        "ramification": 3,
+        "charge": 2,
+        "alpha": [
+          {
+            "1": 2,
+            "2": 2
+          },
+          {
+            "0": 2,
+            "1": 1,
+            "2": 1
+          },
+          {
+            "3": 1
+          }
+        ],
+        "matrix_order": 9,
+        "maximum_series_precision": 16
+      },
+      {
+        "n": 1,
+        "ramification": 3,
+        "charge": 0,
+        "alpha": [
+          {
+            "1": 2,
+            "3": 2
+          },
+          {
+            "2": 2,
+            "3": 2
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "3": 2
+          }
+        ],
+        "matrix_order": 9,
+        "maximum_series_precision": 16
+      },
+      {
+        "n": 1,
+        "ramification": 3,
+        "charge": 2,
+        "alpha": [
+          {
+            "1": 2,
+            "3": 2
+          },
+          {
+            "2": 2,
+            "3": 2
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "3": 2
+          }
+        ],
+        "matrix_order": 9,
+        "maximum_series_precision": 16
+      },
+      {
+        "n": 2,
+        "ramification": 1,
+        "charge": 0,
+        "alpha": [
+          {
+            "1": 1
+          },
+          {
+            "0": 2,
+            "2": 2
+          },
+          {
+            "1": 2,
+            "3": 2
+          }
+        ],
+        "matrix_order": 81,
+        "maximum_series_precision": 32
+      },
+      {
+        "n": 2,
+        "ramification": 1,
+        "charge": 2,
+        "alpha": [
+          {
+            "1": 1
+          },
+          {
+            "0": 2,
+            "2": 2
+          },
+          {
+            "1": 2,
+            "3": 2
+          }
+        ],
+        "matrix_order": 81,
+        "maximum_series_precision": 32
+      }
+    ]
+  }
+}

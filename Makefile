@@ -295,3 +295,7 @@ verify-state-filters:
 
 verify-state-filters-extended:
 	python3 tools/check_prime_state_filter_profiles.py --extended
+
+.PHONY: verify-polynomial-state-filters
+verify-polynomial-state-filters:
+	python3 tools/check_polynomial_state_filter_synthesis.py
