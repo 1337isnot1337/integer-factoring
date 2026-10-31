@@ -1,4 +1,4 @@
-.PHONY: verify verify-docs verify-frontier verify-post-half verify-schur-fermion verify-schur-central verify-schur-gaussian verify-schur-sparse verify-cancellation-modules verify-minimal-modules verify-exact-modules verify-cancellation-crossing verify-block-smith verify-linear-smith verify-type-pressure verify-crossing-interpolation verify-smith-oracle verify-controlled-smith verify-sparse-holonomy verify-cubic-full-images verify-formal verify-k6 verify-half-appendix help
+.PHONY: verify verify-docs verify-frontier verify-post-half verify-schur-fermion verify-schur-central verify-schur-gaussian verify-schur-sparse verify-fixed-modes verify-cancellation-modules verify-minimal-modules verify-exact-modules verify-cancellation-crossing verify-block-smith verify-linear-smith verify-type-pressure verify-crossing-interpolation verify-smith-oracle verify-controlled-smith verify-sparse-holonomy verify-cubic-full-images verify-formal verify-k6 verify-half-appendix help
 
 verify: verify-docs verify-frontier
 	python3 -m unittest discover -s tests -v
@@ -27,6 +27,9 @@ verify-schur-sparse:
 	python3 tools/check_schur_downset_crossing.py
 	python3 tools/check_schur_offset_interval.py
 	python3 tools/check_schur_two_block_holonomy.py
+
+verify-fixed-modes:
+	python3 tools/check_fixed_mode_crossings.py
 
 verify-cancellation-modules:
 	python3 tools/check_cancellation_module_automata.py
@@ -103,6 +106,7 @@ help:
 	  'make verify-schur-central - hook identities and exact Schur central ranks' \
 	  'make verify-schur-gaussian - exact Schur digit reduction and Gaussian seed' \
 	  'make verify-schur-sparse - exact down-set and offset interval reductions' \
+	  'make verify-fixed-modes - arbitrary mode sets and independent occupations' \
 	  'make verify-cancellation-modules - exact finite module and word certificates' \
 	  'make verify-minimal-modules - exact boundary reduction and complete word rates' \
 	  'make verify-exact-modules - complete rational lattice orbits and pressures' \

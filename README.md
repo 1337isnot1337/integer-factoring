@@ -48,6 +48,7 @@ make verify-schur-fermion # Complete Schur entry formulas and exact comparisons
 make verify-schur-central # Hook-residue identities and full Schur ranks through weight 8
 make verify-schur-gaussian # Exact digit reduction and fixed Gaussian crossing seed
 make verify-schur-sparse # Sparse down-sets and two-scale offset interval reductions
+make verify-fixed-modes # Arbitrary mode sets, independent occupations, and exact endpoints
 make verify-cancellation-modules # Exact module states and word-rate certificates
 make verify-minimal-modules # Exact boundary reduction and complete word-rate hierarchy
 make verify-exact-modules # Complete rational lattice orbits and exact pressures
@@ -62,7 +63,7 @@ make verify-controlled-smith # Controlled monomial crossings and the qutrit cont
 make verify-sparse-holonomy # Exact singleton profiles and Gaussian entry identities
 ```
 
-The Python checks use Python 3 and its standard library. Some optional checks use NumPy for speed. The optional linear Smith catalogue and Schur central-rank checks also require a C++17 compiler.
+The Python checks use Python 3 and its standard library. Some optional checks use NumPy for speed. The exploratory mode-pressure search uses NumPy and SciPy. The optional linear Smith catalogue and Schur central-rank checks also require a C++17 compiler.
 
 For the Lean builds, install the stated Lean release, Lake, Git, and the prerequisites in the corresponding scripts. The scripts fetch pinned upstream revisions.
 
@@ -117,6 +118,11 @@ coefficient costs when the ambient offset grows polynomially.
 [Two unequal intervals](research/schur-two-block-holonomy.md) split exactly
 into scalar sectors; the resulting direct kernels also allow interval
 parameters that are not powers of two.
+[Fixed mode counts](research/fixed-mode-crossings.md) extend the direct
+crossing to arbitrary index sets, unequal species occupations, and
+independent mode heights. Their product-type criterion is exact; an
+[exploratory search driver](tools/search_schur_mode_pressure.py) uses the
+weighted Smith oracle to search this larger family.
 
 [Exact type optimization](research/type-optimized-crossing-pressure.md)
 reduces the best common letter frequencies to one rational pressure inequality.
