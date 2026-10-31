@@ -31,6 +31,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Explicit fused row formula](explicit-fused-row-formula.md): a degree-one divided row and eight formal identities prove the symmetric-block recurrence at every block size.
 - [Complete-block spectator theorem](fused-frobenius-spectators.md): exact period identities at root orders 3, 5, and 15 give an all-multiple tensor factorization and the complete profile costs of its full-crossing spectator.
 - [Carry Fourier elimination](carry-fourier-elimination.md): constant-state fixed-frequency queries, exact frequency-labelled interface ranks, and an explicit reduction of the coupled problem to incomplete bilinear character sums.
+- [Asymmetric supporting-line pressure](asymmetric-support-line-crossings.md): coefficient cancellation with unequal cut weights, common paired types, exact integer-power certificates, and the optimal rectangular aspect ratio.
+- [Complete asymmetric modular transfer](asymmetric-modular-transfer.md): an effective all-width weighted rank bound gives a uniform unequal-child recursion and deterministic factoring machine, with explicit grouping, padding, circuit and ring costs; the needed strict crossing certificate remains open.
 
 - [Joint residues reduce to finite templates and convex offsets](joint-syndrome-residue-retiming.md): at fixed normalized degree, arbitrary coefficient fields and ramification reduce exactly to finitely many binary endpoint covers and compact convex offset programs; a transport certificate bounds the entire offset box, with exact color and Hall controls.
 

@@ -707,6 +707,11 @@ verify-joint-residue-retiming:
 	OPENBLAS_NUM_THREADS=1 python3 tools/check_joint_syndrome_residue_retiming.py --output /tmp/integer-factoring-joint-residue-retiming-replay.json
 
 .PHONY: verify-explicit-fusion verify-carry-fourier
+.PHONY: verify-asymmetric-crossings
+verify-asymmetric-crossings:
+	python3 tools/check_asymmetric_support_line.py --output /tmp/integer-factoring-asymmetric-support-replay.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_asymmetric_pressure_oracle.py --output /tmp/integer-factoring-asymmetric-oracle-replay.json
+
 verify-explicit-fusion:
 	python3 tools/check_explicit_fused_row.py --output /tmp/integer-factoring-explicit-fused-row-replay.json
 	python3 tools/check_fused_frobenius_spectators.py --output /tmp/integer-factoring-fused-spectators-replay.json

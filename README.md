@@ -89,6 +89,15 @@ It also proves that retaining the frequency as a tensor coordinate
 restores the large interface rank, and reduces the remaining coupled
 arithmetic problem to explicit incomplete bilinear character sums.
 
+[Asymmetric supporting lines](research/asymmetric-support-line-crossings.md)
+allow the two cut ranks to have unequal weights. The
+[complete rectangular transfer](research/asymmetric-modular-transfer.md)
+proves that an effective crossing family below the corresponding unit
+quarter-circle support line would yield some saving exponent above `1/2`.
+It includes unequal child sizes, grouping, exact padding, circuit costs,
+and fixed-field divisor recovery. No seed meeting that hypothesis has
+been certified.
+
 ## Verification
 
 From the repository root, run:
@@ -108,6 +117,7 @@ make verify-fused-weights # Complete weighted local profiles and type-shift cont
 make verify-compressed-fusion # Compressed/literal identities and root-of-unity endpoints
 make verify-explicit-fusion # All-degree row identities and complete-block spectator theorem
 make verify-carry-fourier  # Exact carry elimination and frequency-labelled rank controls
+make verify-asymmetric-crossings # Supporting-line algebra and numerical-oracle controls
 make verify-schur-fermion # Complete Schur entry formulas and exact comparisons
 make verify-schur-central # Hook-residue identities and full Schur ranks through weight 8
 make verify-schur-gaussian # Exact digit reduction and fixed Gaussian crossing seed
