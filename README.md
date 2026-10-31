@@ -1111,6 +1111,14 @@ now specifies the required short-box theorem and its conditional complete
 cost. The localized smoothness statement and splitting coverage are both
 unproved; the existing class-group density theorem supplies neither for free.
 
+The [known-root conic parametrization](research/class-square-conic.md)
+constructs all rational square-norm points with an integral matrix of
+determinant `|Delta|`. Its exact cancellation bound gives direct gcd splitting
+certificates and rewrites prescribed-square search as a smooth denominator
+problem. Finding that denominator remains open. Run
+`make verify-class-square-conic` for independent conic-point and large-certificate
+controls; the factoring score remains `1/2`.
+
 The [Bell-diagonal seed construction](research/bell-diagonal-crossings.md)
 gives exact two-cut transforms and excludes its complete symmetric
 coefficient spans at local dimensions two and four. Dimension eight

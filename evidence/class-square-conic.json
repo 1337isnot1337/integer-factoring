@@ -1,0 +1,188 @@
+{
+  "scope": "Exact conic transport and supplied-point extraction; no search bound",
+  "small_forms": {
+    "absolute_discriminant_maximum": 1000,
+    "discriminants": 500,
+    "forms_and_coefficient_identities": 4449,
+    "independent_composition_comparisons": 4449,
+    "primitive_parameter_evaluations": 213552,
+    "nontrivial_content_evaluations": 57906,
+    "distinct_contents_observed": 498,
+    "independently_enumerated_conic_points": 170208,
+    "divisible_denominator_scalings": 11239
+  },
+  "splitting": {
+    "odd_integer_maximum": 999,
+    "ambiguous_roots": 1382,
+    "roots_giving_a_proper_factor": 634,
+    "kernel_roots": 748,
+    "independent_boundary_formula_comparisons": 1382,
+    "examples": [
+      {
+        "integer": 15,
+        "root": [
+          3,
+          0,
+          5
+        ],
+        "unit_point_contents": [
+          3,
+          5
+        ],
+        "proper_factors": [
+          3,
+          5
+        ]
+      },
+      {
+        "integer": 21,
+        "root": [
+          2,
+          2,
+          11
+        ],
+        "unit_point_contents": [
+          2,
+          42
+        ],
+        "proper_factors": []
+      },
+      {
+        "integer": 21,
+        "root": [
+          3,
+          0,
+          7
+        ],
+        "unit_point_contents": [
+          3,
+          7
+        ],
+        "proper_factors": [
+          3,
+          7
+        ]
+      },
+      {
+        "integer": 21,
+        "root": [
+          5,
+          4,
+          5
+        ],
+        "unit_point_contents": [
+          14,
+          6
+        ],
+        "proper_factors": [
+          7,
+          3
+        ]
+      },
+      {
+        "integer": 65,
+        "root": [
+          2,
+          2,
+          33
+        ],
+        "unit_point_contents": [
+          2,
+          130
+        ],
+        "proper_factors": []
+      },
+      {
+        "integer": 65,
+        "root": [
+          5,
+          0,
+          13
+        ],
+        "unit_point_contents": [
+          5,
+          13
+        ],
+        "proper_factors": [
+          5,
+          13
+        ]
+      },
+      {
+        "integer": 65,
+        "root": [
+          9,
+          8,
+          9
+        ],
+        "unit_point_contents": [
+          26,
+          10
+        ],
+        "proper_factors": [
+          13,
+          5
+        ]
+      }
+    ]
+  },
+  "large_and_unreduced": {
+    "large_certificate_unit_points": [
+      {
+        "integer_bits": 60,
+        "root": [
+          1000000007,
+          0,
+          1000000009
+        ],
+        "unit_point_contents": [
+          1000000007,
+          1000000009
+        ],
+        "proper_factors": [
+          1000000007,
+          1000000009
+        ]
+      },
+      {
+        "integer_bits": 80,
+        "root": [
+          2,
+          2,
+          453347175525182270354449
+        ],
+        "unit_point_contents": [
+          2,
+          1813388702100729081417794
+        ],
+        "proper_factors": []
+      },
+      {
+        "integer_bits": 80,
+        "root": [
+          962072668081,
+          274877919216,
+          962072668081
+        ],
+        "unit_point_contents": [
+          2199023255378,
+          1649267416946
+        ],
+        "proper_factors": [
+          824633708473,
+          1099511627689
+        ]
+      }
+    ],
+    "unreduced_root_evaluations": 48,
+    "known_root_rough_denominator": {
+      "root": [
+        703135247427,
+        -646306737026,
+        1867853905160
+      ],
+      "denominator": 703135247427,
+      "smooth_bound_rejected": 1000
+    }
+  }
+}
