@@ -110,6 +110,36 @@ The strongest complete factoring score remains `1/2`.
 
 ## Maintaining this record
 
+### 31 October actual-rank and supervisor continuation: PR 42
+
+PR [#42](https://github.com/1337isnot1337/integer-factoring/pull/42) merged
+at `1aa090a560998ccf4bdca86de792def642700eb5`, with exact source head
+`236fd85832c8d7c8cc9f705e9fea4500cab33cb5`. Its earlier mathematical
+checkpoint `6440212` had already been integrated through `65823ce`.
+The incremental work retains the paired-downset normal form, the source-
+pinned updated receipts, and the owner-requested Astra supervisor prompt
+with current Discussions/main-first instructions. Cinna Davis /
+1337isnot1337 and substantial Codex AI assistance retain their source
+credits. This is an integration record, not independent proof review.
+
+The broad `make verify` gate passed on integrated candidate `39deedf`:
+50 unit tests, five crossing tests, default exact certificates, and links
+in 291 Markdown files. The binary-site-symmetry, downset and regular-code
+focused gates passed on the unchanged research sources. The new paired
+receipt covers all 361 ordered three-bit downset pairs, 160,000 literal
+polynomial entries and 4,670 actual rank queries. Later reconciliation
+retained the incoming new standalone research files and all incoming
+README/index link targets; the final local link gate checked 296 files.
+The later optional arithmetic, flag and matching searches were not rerun
+as part of this integration. No Lean source changed or Lean gate ran.
+
+The integration retained the other frontier agent's byte-for-byte tool
+restoration and full research-note/index restoration. The resulting diff
+against the reconciled main source contained only the intended nine-file
+PR delta. A Markdown coefficient-extraction ambiguity was reconciled to
+the restored source's `operatorname` notation. A merge or passing gate
+does not establish a new factoring bound; the complete exponent is `1/2`.
+
 For each later decision, record the exact reviewed head, changed-file coverage,
 checks actually run or reused, accepted scope, exclusions, source attribution,
 retaining commit or archive tag, and actual GitHub disposition. A snapshot or

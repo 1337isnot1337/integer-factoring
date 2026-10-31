@@ -236,8 +236,17 @@ have sizes eight and 34 and optimal rank sums approximately 50.2492
 and 772.2361. These are worse than the simple repeated-block target.
 The [normal-form artifact](../evidence/downset-crossing-normal-form.json)
 and [complete finite optimization](../evidence/regular-code-crossings.json)
-state the exact tested scopes. No asymptotic exclusion of all nonlinear
-codes, or all tensor lengths of this language, is asserted.
+state the exact tested finite scopes. The uniform exclusion below comes
+from a subsequent block theorem, rather than those experiments.
+
+**Subsequent result.** The [weighted block theorem](difference-support-rank-floor.md)
+now excludes the entire elementary crossing coefficient span on **every
+coordinate-code pair `A,B`, over every field**, with arbitrary
+multivariate coefficient recombinations. It gives rank-sum floor
+`(|A||B|)^(3/4)`, so all equal-size coordinate-code restrictions have
+leading `rho>=3/4`. This includes the no-adjacent-ones language, its
+prefixes, and unequal paired encodings. Coherent physical maps, different
+local tensors, and new auxiliary dynamics are outside that theorem.
 
 The open structural question is whether a different downset, a
 different nonlinear language, or a new local polynomial can exploit
@@ -283,7 +292,10 @@ This paired formulation permits different nonlinear encodings for the
 two crossing pairs, without replacing actual ranks by separately
 optimized fiber bounds. For example, forbidding `11` on disjoint even
 pairs in `A` and on shifted pairs in `B` gives explicit staggered codes.
-Their actual asymptotic rank cost is a new construction question, not
-settled by the normal form.
+Their actual asymptotic rank cost is not settled by the normal form
+alone. The subsequent weighted block theorem above rules out improvement
+from their full elementary coefficient span, without further finite
+enumeration. A constructive pivot must change the local kernel or use
+coherent physical encodings that remove the coordinate-block hypothesis.
 
 This construction and its proof used substantial Codex AI assistance.

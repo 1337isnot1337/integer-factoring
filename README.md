@@ -181,7 +181,9 @@ ranks to be checked without inferring them from a Smith bound.
 The formulas also permit different downsets on the two crossing pairs;
 all 361 ordered three-bit downset pairs are checked exactly.
 Complete small no-adjacent-ones code experiments give no new rank-sum
-threshold. Run `make verify-downset-crossings verify-regular-code-crossings`.
+threshold; the [weighted block theorem](research/difference-support-rank-floor.md)
+subsequently closes every coordinate-code pair for the elementary seed.
+Run `make verify-downset-crossings verify-regular-code-crossings`.
 
 The [exact nonlinear charge theorem](research/nonlinear-symbol-charge-lattices.md)
 characterizes every admissible pair of full-symbol potentials for the
