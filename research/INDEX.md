@@ -16,6 +16,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [All extreme charges are cube height functions](cube-charge-extreme-points.md): a connected-tight-graph proof classifies every charge vertex at every complete alphabet; exact catalogues give 1,980 vertices at sixteen symbols, and independent odd-parity signs give 2^(q/2) vertices with common endpoint pole at most three.
+
 - [Amplified removable poles in growing quartic words](reflection-paired-quartic-poles.md): simultaneous Pfaffian row congruences permit M/4 disjoint gates with pole M+7 each, unchanged effective degree in the stated numerator window, and actual common pole at most M-1; an exact three-copy counterexample checks the first excluded boundary.
 
 - [Exact nonlinear symbol-charge domain](nonlinear-symbol-charge-lattices.md): arbitrary physical-symbol potentials satisfy the full reflection coefficient inequalities exactly when their Hamming-cube Lipschitz constants sum to at most two; the four-symbol polytope has twelve vertices and sixty-four facets, including nonlinear parity charges.

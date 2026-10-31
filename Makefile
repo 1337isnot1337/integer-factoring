@@ -649,3 +649,7 @@ verify-nonlinear-symbol-charges:
 verify-paired-quartic-poles:
 	OPENBLAS_NUM_THREADS=1 python3 tools/check_reflection_paired_quartic_words.py --output /tmp/integer-factoring-paired-quartic-poles-replay.json
 
+.PHONY: verify-cube-charge-vertices
+verify-cube-charge-vertices:
+	python3 tools/check_cube_charge_vertices.py --output /tmp/integer-factoring-cube-charge-vertices-replay.json
+
