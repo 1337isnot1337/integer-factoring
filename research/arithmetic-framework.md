@@ -108,7 +108,12 @@ classes and orders; they do not implement fast generator/relation search.
 Next work is to express the pair-extraction primitive as a bounded smooth
 norm problem for a binary quadratic form and investigate deterministic
 arithmetic extraction. The prime-form generator requirement remains a
-separate obligation. Repeating a crossing seed search is not part of this
+separate obligation for complete two-torsion recovery. The
+[density/index transfer](arithmetic-density-lift.md) gives an alternative:
+relations on the possibly proper small factor-base subgroup suffice for a
+global class-number multiple. That removes full generation from this
+intermediate stage, but still needs deterministic splitting or coverage of
+the missing ambiguous directions. Repeating a crossing seed search is not part of this
 branch's active scope.
 
 This work uses substantial OpenAI Codex assistance. It adds ordinary

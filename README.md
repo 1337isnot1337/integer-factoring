@@ -86,6 +86,10 @@ current exact controls with `make verify-arithmetic-framework`.
 The [actual quadratic-form controls](research/arithmetic-class-group-controls.md)
 also recover proper factors for 18 finite targets and check complete
 two-torsion recovery; their generator and order searches enumerate classes.
+A [density/index transfer](research/arithmetic-density-lift.md) also turns
+relations on a possibly proper small-prime subgroup into a global
+class-number multiple. Fast pair extraction and deterministic coverage of
+the missing ambiguous directions remain unresolved.
 
 ## Contribution and attribution
 

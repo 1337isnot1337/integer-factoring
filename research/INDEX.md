@@ -19,6 +19,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Positive relation kernel](positive-relation-kernel.md): a Fourier-positive smooth-pair hitting lemma and diagonally dominant relation construction; efficient arithmetic pair extraction is open.
 - [Biased words without coordinates](arithmetic-biased-words.md): a powering seed and published derandomized squaring supply biased samples from generators and a group-size upper bound.
 - [Actual class-group controls](arithmetic-class-group-controls.md): exact composition, smooth prime-form words, unsaturated relations and complete two-torsion recovery; exhaustive searches produce factors for 18 finite targets.
+- [Density/index transfer](arithmetic-density-lift.md): dense smooth forms and relations on a possibly proper factor-base subgroup give a global class-number multiple; missing ambiguous directions remain an explicit obligation.
 - [Pieces-to-factoring transfer](pieces-to-factoring.md): conditional crossing-parameter transfer, with full bit-cost accounting.
 - [Scale-one modular transfer](scale-one-modular-transfer.md): fixed-field transfer and machine costs.
 - [Sparse divisor nonzeroness](sparse-divisor-nonzeroness.md): detection of divisors in weighted polynomial counts.
