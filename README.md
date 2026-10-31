@@ -184,6 +184,11 @@ mode sets. A cancellation identity removes the local denominators, and
 the remaining endpoint error vanishes on every common word type.
 Exact six-letter and twelve-letter examples, monomial code parameters,
 and sparse output corrections are supplied for pressure searches.
+[Coordinate core restrictions](research/coordinate-core-crossings.md)
+retain a filled low-mode state and give a second arbitrary-mode family
+on the same alphabet sizes. Its local entries can have genuine poles;
+a common-type regularity proof cancels them globally and justifies the
+restored rational Smith profiles.
 For this Gaussian seed, [generic mode blocks](research/typed-gaussian-generic-blocks.md)
 force cost `Omega(D^2)` when all nonvacuum occupations stay fixed, even
 after arbitrary coefficient recombinations. Growing occupation densities

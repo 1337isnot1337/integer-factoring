@@ -69,6 +69,7 @@ verify-crossing-interpolation:
 	python3 tools/check_signed_residual_codes.py
 	python3 tools/check_fixed_field_descent.py
 	python3 tools/check_involutive_core_crossings.py
+	python3 tools/check_coordinate_core_crossings.py
 
 verify-smith-oracle:
 	python3 tools/check_weighted_smith_oracle.py
