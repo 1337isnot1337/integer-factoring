@@ -234,6 +234,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 - [Convex fixed-type Smith capacity](fixed-type-smith-capacity.md): global entropy-weighted minor-flag supports, a rational dual-certificate criterion, exact convexity controls, and a bounded numerical paired-type solver with separate primal and LP estimates.
 
+- [Matrix-vacuum boundary barrier](matrix-vacuum-boundary-barrier.md): arbitrary polynomial matrix vacua retain a square-basis determinant; an all-field boundary difference bounds the zero-cut rank, and the complete 7,350-case binary rank-two affine catalogue forces bare parameter above `7/8`.
+
 - [All-degree homogeneous Boolean charge bands](homogeneous-boolean-charge-bands.md): a degree-independent loss cap and stronger Gaussian floors exclude all exterior charges and a linearly growing interior band, including overlapping monomials.
 
 - [All-digit charged Gaussian floor](all-digit-charged-gaussian-floor.md): strict monotonicity in every real digit parameter and positive full critical pressure for all `q>1`, charges, scales, and interval lengths; exact compact certificates plus analytic tails.

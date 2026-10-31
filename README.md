@@ -129,6 +129,15 @@ polynomial diagonal vacua. Physical word-type restrictions remain outside
 that proof. Run `make verify-quantum-pascal` for exact endpoints through
 fifteen letters, direct trace controls, and polynomial determinant checks.
 
+The [matrix-vacuum extension](research/matrix-vacuum-boundary-barrier.md)
+allows arbitrary polynomial matrix vacua in the same ladder construction.
+A boundary-difference identity filters the zero-cut rank; the complete
+7,350-case self-dual rank-two affine catalogue has minimum rank 24 and
+bare parameter strictly above `7/8`. This excludes every interpolation
+path with those initial vacua. Run `make verify-matrix-vacuum`; the note
+also gives the optional complete NumPy catalogue. A larger internal space
+with fewer physical ladder powers remains outside the square-basis proof.
+
 The [fixed-type capacity argument](research/fixed-type-smith-capacity.md)
 makes physical gauge optimization convex once the two paired types are
 fixed. Entropy-weighted minor flags give global affine supports and an

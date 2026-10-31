@@ -33,6 +33,10 @@ verify-quadratic-register:
 verify-quantum-pascal:
 	python3 tools/check_quantum_pascal_crossings.py
 
+.PHONY: verify-matrix-vacuum
+verify-matrix-vacuum:
+	python3 tools/check_matrix_vacuum_barrier.py
+
 .PHONY: verify-smith-capacity
 verify-smith-capacity:
 	python3 tools/check_smith_pressure_convexity.py

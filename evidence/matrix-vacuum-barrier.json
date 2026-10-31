@@ -1,0 +1,61 @@
+{
+  "boundary_difference_entries": 17604,
+  "rank_product_controls": 72,
+  "boundary_minor_ranks": 72,
+  "literal_operator_traces": 1746,
+  "full_polynomial_row_determinants": 10,
+  "fields": [
+    2,
+    3,
+    5
+  ],
+  "factoring_exponent": "1/2; unchanged",
+  "affine_rank_two": {
+    "coefficient_matrices": 7350,
+    "rank_histogram": {
+      "24": 1,
+      "28": 10,
+      "32": 9,
+      "33": 4,
+      "35": 2,
+      "36": 392,
+      "37": 2,
+      "38": 2,
+      "39": 4,
+      "40": 17,
+      "41": 22,
+      "42": 7,
+      "43": 18,
+      "44": 61,
+      "45": 60,
+      "46": 64,
+      "47": 133,
+      "48": 238,
+      "49": 1760,
+      "50": 8,
+      "51": 36,
+      "52": 44,
+      "53": 12,
+      "54": 34,
+      "55": 36,
+      "56": 446,
+      "57": 68,
+      "58": 70,
+      "59": 156,
+      "60": 363,
+      "61": 346,
+      "62": 1059,
+      "63": 868,
+      "64": 998
+    },
+    "minimum": {
+      "code": 19456,
+      "packed_matrix": 17361601741069221888,
+      "zero_cut_rank": 24
+    },
+    "exact_bare_cost_floor": 1536,
+    "bare_rho_lower_bound": "strictly greater than 7/8",
+    "scope": "Every polynomial matrix-vacuum path with P(0)=Q(0)=F C F^T and rank(C)=2; F(s)=(1,s0,s1,s2)."
+  },
+  "source_sha256": "0cf7e89be86a4c23f9b8d98f4928c87f8123a754ead570f5a040b3e2766259d8"
+}
