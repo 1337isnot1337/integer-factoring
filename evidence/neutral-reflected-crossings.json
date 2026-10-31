@@ -1,0 +1,232 @@
+{
+  "status": "exact controls passed; no factoring improvement",
+  "reflected_duality_entries": 7592,
+  "reflected_duality_ranges": [
+    {
+      "prime": 2,
+      "period": 8,
+      "length": 2,
+      "weight": 8,
+      "labels": 2
+    },
+    {
+      "prime": 2,
+      "period": 16,
+      "length": 2,
+      "weight": 16,
+      "labels": 4
+    },
+    {
+      "prime": 2,
+      "period": 16,
+      "length": 4,
+      "weight": 32,
+      "labels": 8
+    },
+    {
+      "prime": 2,
+      "period": 32,
+      "length": 4,
+      "weight": 64,
+      "labels": 86
+    },
+    {
+      "prime": 3,
+      "period": 3,
+      "length": 2,
+      "weight": 3,
+      "labels": 1
+    },
+    {
+      "prime": 3,
+      "period": 9,
+      "length": 2,
+      "weight": 9,
+      "labels": 3
+    },
+    {
+      "prime": 3,
+      "period": 9,
+      "length": 4,
+      "weight": 18,
+      "labels": 8
+    },
+    {
+      "prime": 5,
+      "period": 5,
+      "length": 2,
+      "weight": 5,
+      "labels": 2
+    },
+    {
+      "prime": 5,
+      "period": 5,
+      "length": 4,
+      "weight": 10,
+      "labels": 5
+    },
+    {
+      "prime": 7,
+      "period": 7,
+      "length": 2,
+      "weight": 7,
+      "labels": 3
+    }
+  ],
+  "periodic_contraction_coefficients": 37440,
+  "literal_source_piece_entries": 58128,
+  "complete_endpoint_entries": 9089,
+  "complete_profiles": [
+    {
+      "period": 8,
+      "length": 2,
+      "weight": 8,
+      "labels": 2,
+      "row_column_profile": [
+        [
+          -16,
+          1,
+          4
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          16,
+          4,
+          1
+        ]
+      ]
+    },
+    {
+      "period": 16,
+      "length": 2,
+      "weight": 16,
+      "labels": 4,
+      "row_column_profile": [
+        [
+          -32,
+          1,
+          16
+        ],
+        [
+          0,
+          7,
+          7
+        ],
+        [
+          32,
+          16,
+          1
+        ]
+      ]
+    },
+    {
+      "period": 32,
+      "length": 2,
+      "weight": 32,
+      "labels": 8,
+      "row_column_profile": [
+        [
+          -64,
+          1,
+          64
+        ],
+        [
+          0,
+          29,
+          29
+        ],
+        [
+          64,
+          64,
+          1
+        ]
+      ]
+    },
+    {
+      "period": 16,
+      "length": 4,
+      "weight": 32,
+      "labels": 8,
+      "row_column_profile": [
+        [
+          -64,
+          1,
+          64
+        ],
+        [
+          -32,
+          8,
+          30
+        ],
+        [
+          -16,
+          6,
+          6
+        ],
+        [
+          0,
+          29,
+          29
+        ],
+        [
+          16,
+          6,
+          6
+        ],
+        [
+          32,
+          30,
+          8
+        ],
+        [
+          64,
+          64,
+          1
+        ]
+      ]
+    },
+    {
+      "period": 16,
+      "length": 4,
+      "weight": 24,
+      "labels": 5,
+      "row_column_profile": [
+        [
+          -64,
+          1,
+          25
+        ],
+        [
+          -32,
+          4,
+          12
+        ],
+        [
+          -16,
+          12,
+          4
+        ],
+        [
+          0,
+          24,
+          10
+        ],
+        [
+          16,
+          12,
+          4
+        ],
+        [
+          32,
+          4,
+          1
+        ]
+      ]
+    }
+  ],
+  "source_revision": "16a5ce41304fcdaea4e0be7c132e1c361dc26da5"
+}
