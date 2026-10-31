@@ -278,3 +278,7 @@ verify-retained-profile-precision:
 .PHONY: verify-cauchy-powers
 verify-cauchy-powers:
 	python3 tools/check_arithmetic_cauchy_powers.py
+
+.PHONY: verify-strict-gaussian
+verify-strict-gaussian:
+	python3 tools/check_strict_gaussian_crossings.py

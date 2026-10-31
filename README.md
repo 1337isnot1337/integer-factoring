@@ -124,6 +124,14 @@ the Gaussian background and a full-inverse restriction with an exact
 non-Gaussian coefficient witness. This changes the background excluded by
 the fixed-repair obstruction, while a useful pressure remains to be found.
 
+A [strict Pascal repair](research/strict-gaussian-relabeling-crossings.md)
+preserves the inherited Gaussian profiles and makes the local endpoint an
+exact crossing on the full alphabet. It permits affine relabeling sums,
+binary charge projections, and nonseparable entrywise monomial changes.
+The charge projections split both cuts into explicit square blocks with
+no degree increase. Full-letter gauge searches are recorded separately
+from exact endpoint and profile controls; no threshold witness is claimed.
+
 The [Walsh permanent calculation](research/walsh-principal-permanents.md)
 gives all-size scalar valuation formulas beyond the determinant model.
 It also proves that exponentially many grouped modes survive the current
