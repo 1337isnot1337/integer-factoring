@@ -18,6 +18,11 @@ verify-docs:
 verify-mixed-place:
 	python3 tools/check_weighted_multipoint_hermite.py
 	python3 tools/check_mixed_place_hermite.py
+	python3 tools/check_ternary_basis_mixed.py
+
+.PHONY: verify-adaptive-mixed-place
+verify-adaptive-mixed-place:
+	python3 tools/check_adaptive_mixed_place.py --certificate evidence/fused-q4-adaptive-certificate.json
 
 verify-network-codecs:
 	python3 tools/check_factoring_network_structure.py
@@ -32,6 +37,10 @@ verify-adaptive-transform:
 verify-fused-places:
 	python3 tools/check_fused_multipoint_profiles.py
 	python3 tools/check_fused_closed_profiles.py
+
+.PHONY: verify-fused-weights
+verify-fused-weights:
+	python3 tools/check_fused_weighted_places.py
 
 .PHONY: verify-multilevel-packet
 verify-multilevel-packet:

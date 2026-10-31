@@ -37,8 +37,9 @@ The result table distinguishes verified machine bounds from conditional construc
 
 The [mixed-place Hermite construction](research/mixed-place-hermite-crossings.md)
 allows the two ranks of each piece to use different sets of interpolation
-points. An exact ternary example improves this family's contraction parameter
-to `rho < 9/10`, while remaining above the post-half target. The
+points. An [exact basis and gauge witness](research/ternary-basis-mixed-crossing.md)
+improves the ternary construction's contraction parameter to `rho < 821/1000`,
+while remaining above the post-half target. The
 [Fourier fan-out analysis](research/factoring-network-structure.md) gives exact
 joint-message ranks and optimal codecs for the source's coset bundles. These
 ordinary results do not establish a factoring exponent above `1/2`.
@@ -59,6 +60,14 @@ the written top-instance bounds to `P^2 lambda <= 99n` and
 `B_tab <= 117n/P`; their large-`P` constants tend to 36 and 40.
 The complete construction still costs `2^O(n/P)` bit operations.
 
+[Adaptive opposite flags](research/adaptive-mixed-place-crossings.md) choose
+the cheapest available jet at each step. A complete rational interval
+certificate gives `rho < 31/32` for a four-letter fused seed at every label
+width. The [weighted fused oracle](research/fused-weighted-place-profiles.md)
+also accounts for arbitrary physical-symbol heights at every singular
+place. These constructions provide additional search tools; neither
+certificate passes the post-half threshold.
+
 ## Verification
 
 From the repository root, run:
@@ -69,9 +78,11 @@ make verify-frontier      # Focused research certificates
 make verify-post-half     # Larger optional rank tests
 make verify-docs          # Local Markdown-link check
 make verify-mixed-place   # Mixed-place reconstruction and exact rank controls
+make verify-adaptive-mixed-place # Greedy flags and the full rational interval certificate
 make verify-network-codecs # Exact Fourier-coset images and optimal codecs
 make verify-adaptive-transform # Exact convolution, carry bijection, and smaller top bounds
 make verify-fused-places  # All finite and closed-place fused profiles; needs NumPy/SciPy
+make verify-fused-weights # Complete weighted local profiles and type-shift controls
 make verify-schur-fermion # Complete Schur entry formulas and exact comparisons
 make verify-schur-central # Hook-residue identities and full Schur ranks through weight 8
 make verify-schur-gaussian # Exact digit reduction and fixed Gaussian crossing seed

@@ -19,6 +19,11 @@ The improved seed parameter is still much larger than `1/sqrt(2)`.
 It does not improve the established factoring score `1/2`. The result
 is a new sufficient construction and a precise mechanism to search.
 
+The [later basis/gauge witness](ternary-basis-mixed-crossing.md) improves
+the same ternary seed to `rho < 821/1000`, with uniform physical types
+and three exact complete local profiles. The separation from the older
+unweighted same-place criterion below remains valid on its stated scope.
+
 ## 1. Polynomial seed and disjoint place sets
 
 Let `F` be a fixed finite field and `q>=2`. Let the fixed tensor
