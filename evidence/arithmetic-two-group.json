@@ -1,0 +1,32 @@
+{
+  "scope": "Exact generic 2-part basis extraction; no factoring runtime claim",
+  "product_groups_checked": 703,
+  "maximum_product_group_size": 4348654387200,
+  "maximum_basis_rank": 6,
+  "maximum_group_operations": 946,
+  "mixed_generator_control": {
+    "moduli": [
+      8,
+      2
+    ],
+    "basis_order_logs": [
+      1,
+      3
+    ],
+    "group_operations": 53,
+    "annihilator": 64
+  },
+  "order_swap_control": {
+    "moduli": [
+      8,
+      2
+    ],
+    "basis_order_logs": [
+      1,
+      3
+    ],
+    "group_operations": 34,
+    "annihilator": 64
+  },
+  "odd_group_control": "passed"
+}

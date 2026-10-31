@@ -1,4 +1,4 @@
-.PHONY: verify verify-docs verify-frontier verify-arithmetic verify-post-half verify-formal verify-k6 verify-half-appendix help
+.PHONY: verify verify-docs verify-frontier verify-arithmetic verify-arithmetic-framework verify-post-half verify-formal verify-k6 verify-half-appendix help
 
 verify: verify-docs verify-frontier verify-arithmetic
 	python3 -m unittest discover -s tests -v
@@ -22,12 +22,26 @@ verify-arithmetic:
 	python3 tools/check_interval_packet_circuits.py
 	python3 tools/check_normalized_interval_jets.py
 
+verify-arithmetic-framework:
+	python3 tools/check_arithmetic_two_group.py
+	python3 tools/check_positive_relation_kernel.py
+	python3 tools/check_arithmetic_bias_seed.py
+	python3 tools/check_arithmetic_class_groups.py
+	python3 tools/check_arithmetic_density_lift.py
+	python3 tools/check_bounded_smooth_norm.py
+
 verify-post-half:
 	python3 tools/check_half_piece_ranks.py --full
 	python3 tools/check_half_projection.py
 	python3 tools/check_half_restricted_labels.py
 
 verify-frontier:
+	python3 tools/check_arithmetic_two_group.py
+	python3 tools/check_positive_relation_kernel.py
+	python3 tools/check_arithmetic_bias_seed.py
+	python3 tools/check_arithmetic_class_groups.py
+	python3 tools/check_arithmetic_density_lift.py
+	python3 tools/check_bounded_smooth_norm.py
 	python3 tools/check_piece_transfer.py
 	python3 tools/check_boson_truncation.py
 	python3 tools/check_graded_space.py

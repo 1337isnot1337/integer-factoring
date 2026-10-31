@@ -1,0 +1,55 @@
+{
+  "scope": "Exact finite calibration; pair witnesses are obtained by exhaustive finite search",
+  "group": "(Z/2Z)^4",
+  "smooth_set_control": [
+    0,
+    1,
+    2,
+    4,
+    5
+  ],
+  "sample": [
+    3,
+    7,
+    11,
+    12,
+    13,
+    14
+  ],
+  "sample_bias": "1/3",
+  "density": "5/16",
+  "correlation_lower_bound": "5/192",
+  "actual_minimum_sampled_correlation": "1/24",
+  "translated_pair_witnesses": 16,
+  "original_set_missed_by_sample": true,
+  "relation_matrix": [
+    [
+      8,
+      2,
+      0,
+      0
+    ],
+    [
+      0,
+      10,
+      0,
+      0
+    ],
+    [
+      0,
+      2,
+      8,
+      0
+    ],
+    [
+      0,
+      2,
+      0,
+      8
+    ]
+  ],
+  "relation_determinant": 5120,
+  "quotient_index_exceeds_group_size": true,
+  "halved_relation_image_size": 2,
+  "extracted_two_torsion_rank": 4
+}

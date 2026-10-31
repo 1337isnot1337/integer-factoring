@@ -88,6 +88,26 @@ No uniform factoring exponent above `1/2` is proved here. One open approach seek
 
 See the [research index](research/INDEX.md) for completed arguments, scoped obstructions, and older candidates. Active work is committed directly to `main` by default; useful partial research can be integrated as a checkpoint without being promoted to a stronger theorem.
 
+An [arithmetic framework program](research/arithmetic-framework.md) studies
+deterministic class-group relation generation outside the crossing evaluator.
+It proves a positive Fourier hitting lemma and deterministic extraction of
+two-torsion from unsaturated relation data. A powering seed with published
+expander amplification supplies biased words from generators without a group
+decomposition. The fast generator and smooth-pair
+construction steps remain open, so the score is still `1/2`. Reproduce the
+current exact controls with `make verify-arithmetic-framework`.
+The [actual quadratic-form controls](research/arithmetic-class-group-controls.md)
+also recover proper factors for 18 finite targets and check complete
+two-torsion recovery; their generator and order searches enumerate classes.
+A [density/index transfer](research/arithmetic-density-lift.md) also turns
+relations on a possibly proper small-prime subgroup into a global
+class-number multiple. Fast pair extraction and deterministic coverage of
+the missing ambiguous directions remain unresolved.
+The [bounded smooth-norm interface](research/bounded-smooth-norm.md)
+characterizes the required pairs and converts supplied representations at
+`2^O(b/log b)` divisor-search cost; locating those representations efficiently
+is still open.
+
 ## Contribution and attribution
 
 Start with the [contributor quickstart](docs/START_HERE.md) and
