@@ -1,0 +1,33 @@
+{
+  "status": "Exact energy-conjugated endpoint and complete original two-cut controls.",
+  "qutrit_endpoint_and_inverse_conjugation_controls": 4516,
+  "distinct_kernels_per_selection_and_twist": 1129,
+  "original_physical_controls": [
+    {
+      "selected": [
+        0,
+        2
+      ],
+      "energy_twist": -1,
+      "ramification": 1,
+      "aggregate_charge": 0,
+      "matrix_order": 64,
+      "common_clearing": 3,
+      "physical_polynomial_degree": 21,
+      "endpoint_coefficients": 784
+    },
+    {
+      "selected": [
+        0,
+        2
+      ],
+      "energy_twist": 1,
+      "ramification": 3,
+      "aggregate_charge": -2,
+      "matrix_order": 64,
+      "common_clearing": 7,
+      "physical_polynomial_degree": 64,
+      "endpoint_coefficients": 785
+    }
+  ]
+}

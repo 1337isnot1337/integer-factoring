@@ -41,6 +41,15 @@ verify-arithmetic-framework:
 	python3 tools/check_arithmetic_density_lift.py
 	python3 tools/check_bounded_smooth_norm.py
 
+.PHONY: verify-frontier-extensions
+verify-frontier-extensions:
+	python3 tools/check_all_scale_balanced_obstruction.py
+	python3 tools/check_truncated_symmetric_interval_frontier.py
+
+.PHONY: verify-cauchy-factorial
+verify-cauchy-factorial:
+	python3 tools/check_arithmetic_cauchy_factorial.py
+
 verify-schur-fermion:
 	python3 tools/check_schur_fermion.py
 
@@ -286,3 +295,259 @@ help:
 	  'make verify-formal        - rebuild original Lean lemmas (Lean 4.35.0)' \
 	  'make verify-k6            - rebuild the certified 1/30 machine (Lean 4.35.0)' \
 	  'make verify-half-appendix - rebuild the certified 1/2 machine (Lean 4.33.1)'
+
+.PHONY: verify-weighted-pascal
+verify-weighted-pascal:
+	python3 tools/check_lucas_weighted_pascal.py
+
+.PHONY: verify-frozen-core
+verify-frozen-core:
+	python3 tools/check_rectangular_frozen_core_rows.py
+	python3 tools/check_frozen_core_row_profiles.py
+
+.PHONY: verify-retained-profile-precision
+verify-retained-profile-precision:
+	python3 tools/check_retained_profile_precision.py
+
+.PHONY: verify-cauchy-powers
+verify-cauchy-powers:
+	python3 tools/check_arithmetic_cauchy_powers.py
+
+.PHONY: verify-strict-gaussian
+verify-strict-gaussian:
+	python3 tools/check_strict_gaussian_crossings.py
+
+.PHONY: verify-slow-ramification
+verify-slow-ramification:
+	python3 tools/check_slow_ramification_crossings.py
+
+.PHONY: verify-state-filters verify-state-filters-extended
+verify-state-filters:
+	python3 tools/check_truncated_symmetric_identity_filters.py
+	python3 tools/check_prime_state_filter_profiles.py
+
+verify-state-filters-extended:
+	python3 tools/check_prime_state_filter_profiles.py --extended
+
+.PHONY: verify-polynomial-state-filters
+verify-polynomial-state-filters:
+	python3 tools/check_polynomial_state_filter_synthesis.py
+
+.PHONY: verify-coupled-filters
+verify-coupled-filters:
+	python3 tools/check_coupled_identity_mode_filters.py
+	python3 tools/check_coupled_identity_extreme_filters.py
+	python3 tools/check_binary_coupled_filter_profiles.py
+	python3 tools/check_coupled_filter_pressure.py
+
+.PHONY: verify-prime-filter-pressure
+verify-prime-filter-pressure:
+	python3 tools/check_prime_state_filter_pressure.py
+
+.PHONY: verify-core-charge-projections
+verify-core-charge-projections:
+	python3 tools/check_strict_core_charge_profiles.py
+	python3 tools/check_strict_core_charge_gauges.py
+	python3 tools/check_raw_extreme_charge_projections.py
+
+.PHONY: verify-frozen-core-complete
+verify-frozen-core-complete:
+	python3 tools/check_frozen_core_complete_search.py
+
+.PHONY: verify-reflection-compression
+verify-reflection-compression:
+	python3 tools/check_reflection_dual_rail_compression.py
+
+.PHONY: verify-coupled-synthesis
+verify-coupled-synthesis:
+	python3 tools/check_coupled_filter_linear_synthesis.py
+
+.PHONY: verify-coupled-operators
+verify-coupled-operators:
+	python3 tools/check_coupled_identity_operator_filters.py --extended
+
+.PHONY: verify-reflection-hot-cores
+verify-reflection-hot-cores:
+	python3 tools/check_reflection_hot_core_profiles.py --extended
+
+.PHONY: verify-coupled-weyl
+verify-coupled-weyl:
+	python3 tools/check_coupled_identity_weyl_profiles.py --extended --screen evidence/coupled-identity-operator-screens.json
+
+.PHONY: verify-repaired-state-filters
+verify-repaired-state-filters:
+	python3 tools/check_repaired_endpoint_state_filters.py
+	python3 tools/check_repaired_endpoint_polynomial_synthesis.py
+	python3 tools/check_f4_repaired_identity_filters.py
+	python3 tools/check_f4_weyl_filter_compiler.py
+
+.PHONY: verify-raw-core-masks
+verify-raw-core-masks:
+	python3 tools/check_raw_core_mask_profiles.py
+
+.PHONY: verify-f4-filter-catalogue
+verify-f4-filter-catalogue:
+	python3 tools/check_f4_filter_catalogue.py
+
+.PHONY: verify-reflection-hot-grid verify-reflection-hot-grid-exhaustive
+verify-reflection-hot-grid:
+	python3 tools/check_reflection_hot_core_grid.py
+	python3 tools/reflection_hot_core_uniform.py
+
+verify-reflection-hot-grid-exhaustive:
+	python3 tools/check_reflection_hot_core_grid.py --exhaustive
+	python3 tools/reflection_hot_core_uniform.py
+
+.PHONY: verify-split-identity-modes verify-f4-identity-operators
+verify-split-identity-modes:
+	python3 tools/check_split_identity_mode_filters.py --extended
+
+verify-f4-identity-operators:
+	python3 tools/check_f4_identity_operator_filters.py
+	python3 tools/check_compiled_f4_identity_operators.py
+
+.PHONY: verify-weyl-lattice-synthesis
+verify-weyl-lattice-synthesis:
+	python3 tools/check_weyl_lattice_filter_synthesis.py
+	python3 tools/check_weyl_lattice_endpoint_cover.py
+
+.PHONY: verify-reflection-hot-state-gauges
+verify-reflection-hot-state-gauges:
+	python3 tools/check_reflection_hot_state_gauges.py --extended
+
+.PHONY: verify-operator-lattice-synthesis
+verify-operator-lattice-synthesis:
+	python3 tools/check_weyl_operator_lattice_synthesis.py
+
+.PHONY: verify-f4-operator-catalogues
+verify-f4-operator-catalogues:
+	python3 tools/check_f4_operator_catalogues.py
+
+.PHONY: verify-field-lattice-lifts
+verify-field-lattice-lifts:
+	python3 tools/check_f4_lattice_linear.py
+
+.PHONY: verify-f16-identity-operators
+verify-f16-identity-operators:
+	python3 tools/check_f16_identity_operator_profiles.py --extended
+
+.PHONY: verify-reflection-compensated-gauges
+verify-reflection-compensated-gauges:
+	python3 tools/check_reflection_hot_compensated_gauges.py --extended
+
+.PHONY: verify-prime-power-filters verify-prime-power-filters-extended
+verify-prime-power-filters:
+	python3 tools/check_prime_power_identity_filters.py
+	python3 tools/check_joint_identity_filter_pressure.py
+	python3 tools/check_selected_identity_operators.py --extended
+
+verify-prime-power-filters-extended:
+	python3 tools/check_prime_power_identity_filters.py --include-qutrit
+	python3 tools/check_joint_identity_filter_pressure.py
+	python3 tools/check_selected_identity_operators.py --extended
+
+.PHONY: verify-operator-field-flags
+verify-operator-field-flags:
+	python3 tools/check_f4_operator_lattice_flags.py
+	python3 tools/check_identity_operator_minimum_tradeoff.py
+
+.PHONY: verify-resonant-operators
+verify-resonant-operators:
+	python3 tools/check_resonant_identity_operators.py
+	python3 tools/check_resonant_laurent_catalogue.py
+
+.PHONY: verify-reflection-leg-bulks
+verify-reflection-leg-bulks:
+	python3 tools/check_reflection_hot_leg_bulk_gauges.py --extended
+
+.PHONY: verify-reflection-all-bulks
+verify-reflection-all-bulks:
+	python3 tools/check_reflection_hot_all_bulk_gauges.py --extended
+	python3 tools/check_reflection_hot_state_gauges.py --extended
+
+.PHONY: verify-near-power-operators
+verify-near-power-operators:
+	python3 tools/check_near_power_terminal_operators.py --extended
+
+.PHONY: verify-joint-polynomial-synthesis verify-weyl-filter-flags
+verify-joint-polynomial-synthesis:
+	python3 tools/check_joint_binary_filter_synthesis.py
+	python3 tools/check_joint_prime_filter_synthesis.py
+	python3 tools/check_joint_filter_catalogues.py
+
+verify-weyl-filter-flags:
+	python3 tools/check_weyl_flag_filter_synthesis.py
+	python3 tools/check_unit_reduced_lattice_basis.py
+
+.PHONY: verify-binary-two-cut-lattices
+verify-binary-two-cut-lattices:
+	python3 tools/check_binary_two_cut_lattices.py
+
+.PHONY: verify-deficit-identity-geometry
+verify-deficit-identity-geometry:
+	python3 tools/check_deficit_identity_mode_geometry.py
+
+.PHONY: verify-above-power-operators
+verify-above-power-operators:
+	python3 tools/check_above_power_terminal_operators.py --extended
+
+.PHONY: verify-homogeneous-boolean-filters
+verify-homogeneous-boolean-filters:
+	python3 tools/check_homogeneous_boolean_filter_bounds.py
+
+.PHONY: verify-prime-deficit-operators
+verify-prime-deficit-operators:
+	python3 tools/check_prime_deficit_identity_operators.py --extended
+
+.PHONY: verify-selected-deficit-geometry verify-surplus-identity-geometry
+verify-selected-deficit-geometry:
+	python3 tools/check_selected_one_deficit_geometry.py
+
+verify-surplus-identity-geometry:
+	python3 tools/check_surplus_identity_mode_geometry.py
+
+.PHONY: verify-bulk-search-records
+verify-bulk-search-records:
+	python3 tools/check_reflection_hot_bulk_search_records.py
+
+.PHONY: verify-charged-gaussian-floor verify-one-mode-laurent-filters
+verify-charged-gaussian-floor:
+	python3 tools/check_charged_gaussian_floor.py
+
+verify-one-mode-laurent-filters:
+	python3 tools/check_one_mode_binary_laurent_filters.py
+
+.PHONY: verify-selected-deficit-operators verify-deficit-energy-conjugation
+verify-selected-deficit-operators:
+	python3 tools/check_selected_deficit_operators.py --extended
+
+verify-deficit-energy-conjugation:
+	python3 tools/check_deficit_energy_conjugation.py
+
+.PHONY: verify-exterior-gaussian-floor verify-charged-one-mode-filters
+verify-exterior-gaussian-floor:
+	python3 tools/check_exterior_charged_gaussian_floor.py
+
+verify-charged-one-mode-filters:
+	python3 tools/check_charged_one_mode_filters.py
+
+.PHONY: verify-folded-gaussian-floor verify-small-gaussian-bases
+verify-folded-gaussian-floor:
+	python3 tools/check_folded_charged_gaussian_floor.py
+
+verify-small-gaussian-bases:
+	python3 tools/check_small_charged_gaussian_bases.py
+
+.PHONY: verify-global-gaussian-floor verify-global-one-mode-filters
+verify-global-gaussian-floor: verify-charged-gaussian-floor verify-exterior-gaussian-floor verify-folded-gaussian-floor verify-small-gaussian-bases
+	python3 tools/check_global_charged_gaussian_floor.py
+
+verify-global-one-mode-filters: verify-global-gaussian-floor verify-one-mode-laurent-filters verify-charged-one-mode-filters
+
+.PHONY: verify-prime-deficit-affine-synthesis
+verify-prime-deficit-affine-synthesis:
+	python3 tools/check_prime_deficit_operator_synthesis.py
+
+.PHONY: verify-binary-target-box
+verify-binary-target-box:
+	python3 tools/check_binary_target_box.py --output /tmp/integer-factoring-binary-target-box-replay.json

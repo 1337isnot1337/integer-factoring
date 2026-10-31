@@ -1,0 +1,2897 @@
+{
+  "status": "Exact sufficient-certificate synthesis; no pressure witness or global exclusion.",
+  "literal_polynomial_enumeration": {
+    "literal_endpoint_polynomial_vectors": 512,
+    "exact_brute_force_feasibility_comparisons": 1458,
+    "maximum_individual_degree": 2
+  },
+  "finite_scalar_only_regions": {
+    "scope": "Only the displayed finite degree boxes and sufficient energy-split certificate.",
+    "exact_scalar_only_boxes": [
+      {
+        "prime": 2,
+        "n": 8,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "initial",
+        "common_zero_shift": 0,
+        "degree_bounds": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "balance": "0",
+        "coefficient_variables": 4,
+        "coefficient_constraints": 404,
+        "homogeneous_rank": 3,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 16,
+          "verified_regular_entry_targets": 66
+        },
+        "actual_degrees": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "initial",
+        "common_zero_shift": 0,
+        "degree_bounds": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "balance": "1/2",
+        "coefficient_variables": 4,
+        "coefficient_constraints": 360,
+        "homogeneous_rank": 3,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 16,
+          "verified_regular_entry_targets": 66
+        },
+        "actual_degrees": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "initial",
+        "common_zero_shift": 1,
+        "degree_bounds": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "balance": "0",
+        "coefficient_variables": 8,
+        "coefficient_constraints": 482,
+        "homogeneous_rank": 7,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 16,
+          "verified_regular_entry_targets": 66
+        },
+        "actual_degrees": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "initial",
+        "common_zero_shift": 1,
+        "degree_bounds": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "balance": "1/2",
+        "coefficient_variables": 8,
+        "coefficient_constraints": 442,
+        "homogeneous_rank": 7,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 16,
+          "verified_regular_entry_targets": 66
+        },
+        "actual_degrees": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "initial",
+        "common_zero_shift": 2,
+        "degree_bounds": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "balance": "0",
+        "coefficient_variables": 12,
+        "coefficient_constraints": 564,
+        "homogeneous_rank": 11,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 16,
+          "verified_regular_entry_targets": 66
+        },
+        "actual_degrees": [
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "initial",
+        "common_zero_shift": 2,
+        "degree_bounds": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "balance": "1/2",
+        "coefficient_variables": 12,
+        "coefficient_constraints": 524,
+        "homogeneous_rank": 11,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 16,
+          "verified_regular_entry_targets": 66
+        },
+        "actual_degrees": [
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "initial",
+        "common_zero_shift": 4,
+        "degree_bounds": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "balance": "0",
+        "coefficient_variables": 20,
+        "coefficient_constraints": 728,
+        "homogeneous_rank": 19,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 16,
+          "verified_regular_entry_targets": 66
+        },
+        "actual_degrees": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "initial",
+        "common_zero_shift": 4,
+        "degree_bounds": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "balance": "1/2",
+        "coefficient_variables": 20,
+        "coefficient_constraints": 688,
+        "homogeneous_rank": 19,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 16,
+          "verified_regular_entry_targets": 66
+        },
+        "actual_degrees": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "initial",
+        "common_zero_shift": 8,
+        "degree_bounds": [
+          8,
+          8,
+          8,
+          8
+        ],
+        "balance": "0",
+        "coefficient_variables": 36,
+        "coefficient_constraints": 1040,
+        "homogeneous_rank": 35,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 16,
+          "verified_regular_entry_targets": 66
+        },
+        "actual_degrees": [
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "initial",
+        "common_zero_shift": 8,
+        "degree_bounds": [
+          8,
+          8,
+          8,
+          8
+        ],
+        "balance": "1/2",
+        "coefficient_variables": 36,
+        "coefficient_constraints": 1000,
+        "homogeneous_rank": 35,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 16,
+          "verified_regular_entry_targets": 66
+        },
+        "actual_degrees": [
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "terminal",
+        "common_zero_shift": 0,
+        "degree_bounds": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "balance": "0",
+        "coefficient_variables": 4,
+        "coefficient_constraints": 404,
+        "homogeneous_rank": 3,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 16,
+          "verified_regular_entry_targets": 66
+        },
+        "actual_degrees": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "terminal",
+        "common_zero_shift": 0,
+        "degree_bounds": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "balance": "1/2",
+        "coefficient_variables": 4,
+        "coefficient_constraints": 360,
+        "homogeneous_rank": 3,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 16,
+          "verified_regular_entry_targets": 66
+        },
+        "actual_degrees": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "terminal",
+        "common_zero_shift": 1,
+        "degree_bounds": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "balance": "0",
+        "coefficient_variables": 8,
+        "coefficient_constraints": 482,
+        "homogeneous_rank": 7,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 16,
+          "verified_regular_entry_targets": 66
+        },
+        "actual_degrees": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "terminal",
+        "common_zero_shift": 1,
+        "degree_bounds": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "balance": "1/2",
+        "coefficient_variables": 8,
+        "coefficient_constraints": 442,
+        "homogeneous_rank": 7,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 16,
+          "verified_regular_entry_targets": 66
+        },
+        "actual_degrees": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "terminal",
+        "common_zero_shift": 2,
+        "degree_bounds": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "balance": "0",
+        "coefficient_variables": 12,
+        "coefficient_constraints": 564,
+        "homogeneous_rank": 11,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 16,
+          "verified_regular_entry_targets": 66
+        },
+        "actual_degrees": [
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "terminal",
+        "common_zero_shift": 2,
+        "degree_bounds": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "balance": "1/2",
+        "coefficient_variables": 12,
+        "coefficient_constraints": 524,
+        "homogeneous_rank": 11,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 16,
+          "verified_regular_entry_targets": 66
+        },
+        "actual_degrees": [
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "terminal",
+        "common_zero_shift": 4,
+        "degree_bounds": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "balance": "0",
+        "coefficient_variables": 20,
+        "coefficient_constraints": 728,
+        "homogeneous_rank": 19,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 16,
+          "verified_regular_entry_targets": 66
+        },
+        "actual_degrees": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "terminal",
+        "common_zero_shift": 4,
+        "degree_bounds": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "balance": "1/2",
+        "coefficient_variables": 20,
+        "coefficient_constraints": 688,
+        "homogeneous_rank": 19,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 16,
+          "verified_regular_entry_targets": 66
+        },
+        "actual_degrees": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "terminal",
+        "common_zero_shift": 8,
+        "degree_bounds": [
+          8,
+          8,
+          8,
+          8
+        ],
+        "balance": "0",
+        "coefficient_variables": 36,
+        "coefficient_constraints": 1040,
+        "homogeneous_rank": 35,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 16,
+          "verified_regular_entry_targets": 66
+        },
+        "actual_degrees": [
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "terminal",
+        "common_zero_shift": 8,
+        "degree_bounds": [
+          8,
+          8,
+          8,
+          8
+        ],
+        "balance": "1/2",
+        "coefficient_variables": 36,
+        "coefficient_constraints": 1000,
+        "homogeneous_rank": 35,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 16,
+          "verified_regular_entry_targets": 66
+        },
+        "actual_degrees": [
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "mixed",
+        "common_zero_shift": 0,
+        "degree_bounds": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "balance": "0",
+        "coefficient_variables": 4,
+        "coefficient_constraints": 97,
+        "homogeneous_rank": 3,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 16,
+          "verified_regular_entry_targets": 66
+        },
+        "actual_degrees": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "mixed",
+        "common_zero_shift": 0,
+        "degree_bounds": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "balance": "1/2",
+        "coefficient_variables": 4,
+        "coefficient_constraints": 112,
+        "homogeneous_rank": 3,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 16,
+          "verified_regular_entry_targets": 66
+        },
+        "actual_degrees": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "mixed",
+        "common_zero_shift": 1,
+        "degree_bounds": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "balance": "0",
+        "coefficient_variables": 8,
+        "coefficient_constraints": 217,
+        "homogeneous_rank": 7,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 16,
+          "verified_regular_entry_targets": 66
+        },
+        "actual_degrees": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "mixed",
+        "common_zero_shift": 1,
+        "degree_bounds": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "balance": "1/2",
+        "coefficient_variables": 8,
+        "coefficient_constraints": 218,
+        "homogeneous_rank": 7,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 16,
+          "verified_regular_entry_targets": 66
+        },
+        "actual_degrees": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "mixed",
+        "common_zero_shift": 2,
+        "degree_bounds": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "balance": "0",
+        "coefficient_variables": 12,
+        "coefficient_constraints": 333,
+        "homogeneous_rank": 11,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 16,
+          "verified_regular_entry_targets": 66
+        },
+        "actual_degrees": [
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "mixed",
+        "common_zero_shift": 2,
+        "degree_bounds": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "balance": "1/2",
+        "coefficient_variables": 12,
+        "coefficient_constraints": 320,
+        "homogeneous_rank": 11,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 16,
+          "verified_regular_entry_targets": 66
+        },
+        "actual_degrees": [
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "mixed",
+        "common_zero_shift": 4,
+        "degree_bounds": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "balance": "0",
+        "coefficient_variables": 20,
+        "coefficient_constraints": 565,
+        "homogeneous_rank": 19,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 16,
+          "verified_regular_entry_targets": 66
+        },
+        "actual_degrees": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "mixed",
+        "common_zero_shift": 4,
+        "degree_bounds": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "balance": "1/2",
+        "coefficient_variables": 20,
+        "coefficient_constraints": 544,
+        "homogeneous_rank": 19,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 16,
+          "verified_regular_entry_targets": 66
+        },
+        "actual_degrees": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "mixed",
+        "common_zero_shift": 8,
+        "degree_bounds": [
+          8,
+          8,
+          8,
+          8
+        ],
+        "balance": "0",
+        "coefficient_variables": 36,
+        "coefficient_constraints": 944,
+        "homogeneous_rank": 35,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 16,
+          "verified_regular_entry_targets": 66
+        },
+        "actual_degrees": [
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "mixed",
+        "common_zero_shift": 8,
+        "degree_bounds": [
+          8,
+          8,
+          8,
+          8
+        ],
+        "balance": "1/2",
+        "coefficient_variables": 36,
+        "coefficient_constraints": 946,
+        "homogeneous_rank": 35,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 16,
+          "verified_regular_entry_targets": 66
+        },
+        "actual_degrees": [
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "prime": 3,
+        "n": 3,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "initial",
+        "common_zero_shift": 0,
+        "degree_bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "balance": "0",
+        "coefficient_variables": 9,
+        "coefficient_constraints": 4901,
+        "homogeneous_rank": 8,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 81,
+          "verified_regular_entry_targets": 1039
+        },
+        "actual_degrees": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "prime": 3,
+        "n": 3,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "initial",
+        "common_zero_shift": 0,
+        "degree_bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "balance": "1/2",
+        "coefficient_variables": 9,
+        "coefficient_constraints": 4961,
+        "homogeneous_rank": 8,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 81,
+          "verified_regular_entry_targets": 1039
+        },
+        "actual_degrees": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "prime": 3,
+        "n": 3,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "initial",
+        "common_zero_shift": 1,
+        "degree_bounds": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "balance": "0",
+        "coefficient_variables": 18,
+        "coefficient_constraints": 6561,
+        "homogeneous_rank": 17,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 81,
+          "verified_regular_entry_targets": 1039
+        },
+        "actual_degrees": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "prime": 3,
+        "n": 3,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "initial",
+        "common_zero_shift": 1,
+        "degree_bounds": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "balance": "1/2",
+        "coefficient_variables": 18,
+        "coefficient_constraints": 6624,
+        "homogeneous_rank": 17,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 81,
+          "verified_regular_entry_targets": 1039
+        },
+        "actual_degrees": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "prime": 3,
+        "n": 3,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "initial",
+        "common_zero_shift": 2,
+        "degree_bounds": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "balance": "0",
+        "coefficient_variables": 27,
+        "coefficient_constraints": 7750,
+        "homogeneous_rank": 26,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 81,
+          "verified_regular_entry_targets": 1039
+        },
+        "actual_degrees": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "prime": 3,
+        "n": 3,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "initial",
+        "common_zero_shift": 2,
+        "degree_bounds": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "balance": "1/2",
+        "coefficient_variables": 27,
+        "coefficient_constraints": 7821,
+        "homogeneous_rank": 26,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 81,
+          "verified_regular_entry_targets": 1039
+        },
+        "actual_degrees": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "prime": 3,
+        "n": 3,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "initial",
+        "common_zero_shift": 3,
+        "degree_bounds": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "balance": "0",
+        "coefficient_variables": 36,
+        "coefficient_constraints": 8799,
+        "homogeneous_rank": 35,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 81,
+          "verified_regular_entry_targets": 1039
+        },
+        "actual_degrees": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      {
+        "prime": 3,
+        "n": 3,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "initial",
+        "common_zero_shift": 3,
+        "degree_bounds": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "balance": "1/2",
+        "coefficient_variables": 36,
+        "coefficient_constraints": 8869,
+        "homogeneous_rank": 35,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 81,
+          "verified_regular_entry_targets": 1039
+        },
+        "actual_degrees": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      {
+        "prime": 3,
+        "n": 3,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "terminal",
+        "common_zero_shift": 0,
+        "degree_bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "balance": "0",
+        "coefficient_variables": 9,
+        "coefficient_constraints": 4895,
+        "homogeneous_rank": 8,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 81,
+          "verified_regular_entry_targets": 1039
+        },
+        "actual_degrees": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "prime": 3,
+        "n": 3,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "terminal",
+        "common_zero_shift": 0,
+        "degree_bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "balance": "1/2",
+        "coefficient_variables": 9,
+        "coefficient_constraints": 4961,
+        "homogeneous_rank": 8,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 81,
+          "verified_regular_entry_targets": 1039
+        },
+        "actual_degrees": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "prime": 3,
+        "n": 3,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "terminal",
+        "common_zero_shift": 1,
+        "degree_bounds": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "balance": "0",
+        "coefficient_variables": 18,
+        "coefficient_constraints": 6547,
+        "homogeneous_rank": 17,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 81,
+          "verified_regular_entry_targets": 1039
+        },
+        "actual_degrees": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "prime": 3,
+        "n": 3,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "terminal",
+        "common_zero_shift": 1,
+        "degree_bounds": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "balance": "1/2",
+        "coefficient_variables": 18,
+        "coefficient_constraints": 6624,
+        "homogeneous_rank": 17,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 81,
+          "verified_regular_entry_targets": 1039
+        },
+        "actual_degrees": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "prime": 3,
+        "n": 3,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "terminal",
+        "common_zero_shift": 2,
+        "degree_bounds": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "balance": "0",
+        "coefficient_variables": 27,
+        "coefficient_constraints": 7736,
+        "homogeneous_rank": 26,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 81,
+          "verified_regular_entry_targets": 1039
+        },
+        "actual_degrees": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "prime": 3,
+        "n": 3,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "terminal",
+        "common_zero_shift": 2,
+        "degree_bounds": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "balance": "1/2",
+        "coefficient_variables": 27,
+        "coefficient_constraints": 7821,
+        "homogeneous_rank": 26,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 81,
+          "verified_regular_entry_targets": 1039
+        },
+        "actual_degrees": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "prime": 3,
+        "n": 3,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "terminal",
+        "common_zero_shift": 3,
+        "degree_bounds": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "balance": "0",
+        "coefficient_variables": 36,
+        "coefficient_constraints": 8785,
+        "homogeneous_rank": 35,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 81,
+          "verified_regular_entry_targets": 1039
+        },
+        "actual_degrees": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      {
+        "prime": 3,
+        "n": 3,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "terminal",
+        "common_zero_shift": 3,
+        "degree_bounds": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "balance": "1/2",
+        "coefficient_variables": 36,
+        "coefficient_constraints": 8869,
+        "homogeneous_rank": 35,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 81,
+          "verified_regular_entry_targets": 1039
+        },
+        "actual_degrees": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      {
+        "prime": 3,
+        "n": 3,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "mixed",
+        "common_zero_shift": 0,
+        "degree_bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "balance": "0",
+        "coefficient_variables": 9,
+        "coefficient_constraints": 3587,
+        "homogeneous_rank": 8,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 81,
+          "verified_regular_entry_targets": 1039
+        },
+        "actual_degrees": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "prime": 3,
+        "n": 3,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "mixed",
+        "common_zero_shift": 0,
+        "degree_bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "balance": "1/2",
+        "coefficient_variables": 9,
+        "coefficient_constraints": 3789,
+        "homogeneous_rank": 8,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 81,
+          "verified_regular_entry_targets": 1039
+        },
+        "actual_degrees": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "prime": 3,
+        "n": 3,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "mixed",
+        "common_zero_shift": 1,
+        "degree_bounds": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "balance": "0",
+        "coefficient_variables": 18,
+        "coefficient_constraints": 5937,
+        "homogeneous_rank": 17,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 81,
+          "verified_regular_entry_targets": 1039
+        },
+        "actual_degrees": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "prime": 3,
+        "n": 3,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "mixed",
+        "common_zero_shift": 1,
+        "degree_bounds": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "balance": "1/2",
+        "coefficient_variables": 18,
+        "coefficient_constraints": 6142,
+        "homogeneous_rank": 17,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 81,
+          "verified_regular_entry_targets": 1039
+        },
+        "actual_degrees": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "prime": 3,
+        "n": 3,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "mixed",
+        "common_zero_shift": 2,
+        "degree_bounds": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "balance": "0",
+        "coefficient_variables": 27,
+        "coefficient_constraints": 7376,
+        "homogeneous_rank": 26,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 81,
+          "verified_regular_entry_targets": 1039
+        },
+        "actual_degrees": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "prime": 3,
+        "n": 3,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "mixed",
+        "common_zero_shift": 2,
+        "degree_bounds": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "balance": "1/2",
+        "coefficient_variables": 27,
+        "coefficient_constraints": 7589,
+        "homogeneous_rank": 26,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 81,
+          "verified_regular_entry_targets": 1039
+        },
+        "actual_degrees": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "prime": 3,
+        "n": 3,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "mixed",
+        "common_zero_shift": 3,
+        "degree_bounds": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "balance": "0",
+        "coefficient_variables": 36,
+        "coefficient_constraints": 8418,
+        "homogeneous_rank": 35,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 81,
+          "verified_regular_entry_targets": 1039
+        },
+        "actual_degrees": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      {
+        "prime": 3,
+        "n": 3,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "mixed",
+        "common_zero_shift": 3,
+        "degree_bounds": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "balance": "1/2",
+        "coefficient_variables": 36,
+        "coefficient_constraints": 8628,
+        "homogeneous_rank": 35,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 81,
+          "verified_regular_entry_targets": 1039
+        },
+        "actual_degrees": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      {
+        "prime": 3,
+        "n": 9,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "mixed",
+        "common_zero_shift": 0,
+        "degree_bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "balance": "0",
+        "coefficient_variables": 9,
+        "coefficient_constraints": 3691,
+        "homogeneous_rank": 8,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 81,
+          "verified_regular_entry_targets": 1039
+        },
+        "actual_degrees": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "prime": 3,
+        "n": 9,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "mixed",
+        "common_zero_shift": 0,
+        "degree_bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "balance": "1/2",
+        "coefficient_variables": 9,
+        "coefficient_constraints": 3732,
+        "homogeneous_rank": 8,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 81,
+          "verified_regular_entry_targets": 1039
+        },
+        "actual_degrees": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "prime": 3,
+        "n": 9,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "mixed",
+        "common_zero_shift": 1,
+        "degree_bounds": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "balance": "0",
+        "coefficient_variables": 18,
+        "coefficient_constraints": 6453,
+        "homogeneous_rank": 17,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 81,
+          "verified_regular_entry_targets": 1039
+        },
+        "actual_degrees": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "prime": 3,
+        "n": 9,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "mixed",
+        "common_zero_shift": 1,
+        "degree_bounds": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "balance": "1/2",
+        "coefficient_variables": 18,
+        "coefficient_constraints": 6209,
+        "homogeneous_rank": 17,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 81,
+          "verified_regular_entry_targets": 1039
+        },
+        "actual_degrees": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "prime": 3,
+        "n": 9,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "mixed",
+        "common_zero_shift": 2,
+        "degree_bounds": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "balance": "0",
+        "coefficient_variables": 27,
+        "coefficient_constraints": 9172,
+        "homogeneous_rank": 26,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 81,
+          "verified_regular_entry_targets": 1039
+        },
+        "actual_degrees": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "prime": 3,
+        "n": 9,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "mixed",
+        "common_zero_shift": 2,
+        "degree_bounds": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "balance": "1/2",
+        "coefficient_variables": 27,
+        "coefficient_constraints": 8684,
+        "homogeneous_rank": 26,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 81,
+          "verified_regular_entry_targets": 1039
+        },
+        "actual_degrees": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "prime": 3,
+        "n": 9,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "mixed",
+        "common_zero_shift": 4,
+        "degree_bounds": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "balance": "0",
+        "coefficient_variables": 45,
+        "coefficient_constraints": 14490,
+        "homogeneous_rank": 44,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 81,
+          "verified_regular_entry_targets": 1039
+        },
+        "actual_degrees": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "prime": 3,
+        "n": 9,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "mixed",
+        "common_zero_shift": 4,
+        "degree_bounds": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "balance": "1/2",
+        "coefficient_variables": 45,
+        "coefficient_constraints": 14062,
+        "homogeneous_rank": 44,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 81,
+          "verified_regular_entry_targets": 1039
+        },
+        "actual_degrees": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "prime": 3,
+        "n": 9,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "mixed",
+        "common_zero_shift": 9,
+        "degree_bounds": [
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "balance": "0",
+        "coefficient_variables": 90,
+        "coefficient_constraints": 24371,
+        "homogeneous_rank": 89,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 81,
+          "verified_regular_entry_targets": 1039
+        },
+        "actual_degrees": [
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9
+        ]
+      },
+      {
+        "prime": 3,
+        "n": 9,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "mixed",
+        "common_zero_shift": 9,
+        "degree_bounds": [
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "balance": "1/2",
+        "coefficient_variables": 90,
+        "coefficient_constraints": 24444,
+        "homogeneous_rank": 89,
+        "homogeneous_nullity": 1,
+        "endpoint_image_dimension": 1,
+        "feasible": true,
+        "witness_verification": {
+          "nonzero_literal_entries": 81,
+          "verified_regular_entry_targets": 1039
+        },
+        "actual_degrees": [
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9
+        ]
+      }
+    ]
+  },
+  "finite_compensation_regions": {
+    "scope": "The specified degree caps; arbitrary polynomial filters are not excluded.",
+    "infeasible_occupied_state_improvement_boxes": [
+      {
+        "prime": 2,
+        "n": 8,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "initial",
+        "common_zero_shift": 1,
+        "degree_bounds": [
+          8,
+          8,
+          0,
+          1
+        ],
+        "balance": "0",
+        "coefficient_variables": 21,
+        "coefficient_constraints": 578,
+        "homogeneous_rank": 21,
+        "homogeneous_nullity": 0,
+        "endpoint_image_dimension": 0,
+        "feasible": false
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "initial",
+        "common_zero_shift": 1,
+        "degree_bounds": [
+          8,
+          8,
+          0,
+          1
+        ],
+        "balance": "1/2",
+        "coefficient_variables": 21,
+        "coefficient_constraints": 580,
+        "homogeneous_rank": 21,
+        "homogeneous_nullity": 0,
+        "endpoint_image_dimension": 0,
+        "feasible": false
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "initial",
+        "common_zero_shift": 1,
+        "degree_bounds": [
+          16,
+          16,
+          0,
+          1
+        ],
+        "balance": "0",
+        "coefficient_variables": 37,
+        "coefficient_constraints": 578,
+        "homogeneous_rank": 29,
+        "homogeneous_nullity": 8,
+        "endpoint_image_dimension": 1,
+        "feasible": false
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "initial",
+        "common_zero_shift": 1,
+        "degree_bounds": [
+          16,
+          16,
+          0,
+          1
+        ],
+        "balance": "1/2",
+        "coefficient_variables": 37,
+        "coefficient_constraints": 586,
+        "homogeneous_rank": 29,
+        "homogeneous_nullity": 8,
+        "endpoint_image_dimension": 1,
+        "feasible": false
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "initial",
+        "common_zero_shift": 2,
+        "degree_bounds": [
+          8,
+          8,
+          1,
+          2
+        ],
+        "balance": "0",
+        "coefficient_variables": 23,
+        "coefficient_constraints": 644,
+        "homogeneous_rank": 23,
+        "homogeneous_nullity": 0,
+        "endpoint_image_dimension": 0,
+        "feasible": false
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "initial",
+        "common_zero_shift": 2,
+        "degree_bounds": [
+          8,
+          8,
+          1,
+          2
+        ],
+        "balance": "1/2",
+        "coefficient_variables": 23,
+        "coefficient_constraints": 646,
+        "homogeneous_rank": 23,
+        "homogeneous_nullity": 0,
+        "endpoint_image_dimension": 0,
+        "feasible": false
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "initial",
+        "common_zero_shift": 2,
+        "degree_bounds": [
+          16,
+          16,
+          1,
+          2
+        ],
+        "balance": "0",
+        "coefficient_variables": 39,
+        "coefficient_constraints": 644,
+        "homogeneous_rank": 32,
+        "homogeneous_nullity": 7,
+        "endpoint_image_dimension": 1,
+        "feasible": false
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "initial",
+        "common_zero_shift": 2,
+        "degree_bounds": [
+          16,
+          16,
+          1,
+          2
+        ],
+        "balance": "1/2",
+        "coefficient_variables": 39,
+        "coefficient_constraints": 652,
+        "homogeneous_rank": 32,
+        "homogeneous_nullity": 7,
+        "endpoint_image_dimension": 1,
+        "feasible": false
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "mixed",
+        "common_zero_shift": 1,
+        "degree_bounds": [
+          8,
+          8,
+          0,
+          1
+        ],
+        "balance": "0",
+        "coefficient_variables": 21,
+        "coefficient_constraints": 477,
+        "homogeneous_rank": 21,
+        "homogeneous_nullity": 0,
+        "endpoint_image_dimension": 0,
+        "feasible": false
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "mixed",
+        "common_zero_shift": 1,
+        "degree_bounds": [
+          8,
+          8,
+          0,
+          1
+        ],
+        "balance": "1/2",
+        "coefficient_variables": 21,
+        "coefficient_constraints": 480,
+        "homogeneous_rank": 21,
+        "homogeneous_nullity": 0,
+        "endpoint_image_dimension": 0,
+        "feasible": false
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "mixed",
+        "common_zero_shift": 1,
+        "degree_bounds": [
+          16,
+          16,
+          0,
+          1
+        ],
+        "balance": "0",
+        "coefficient_variables": 37,
+        "coefficient_constraints": 477,
+        "homogeneous_rank": 29,
+        "homogeneous_nullity": 8,
+        "endpoint_image_dimension": 1,
+        "feasible": false
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "mixed",
+        "common_zero_shift": 1,
+        "degree_bounds": [
+          16,
+          16,
+          0,
+          1
+        ],
+        "balance": "1/2",
+        "coefficient_variables": 37,
+        "coefficient_constraints": 480,
+        "homogeneous_rank": 29,
+        "homogeneous_nullity": 8,
+        "endpoint_image_dimension": 1,
+        "feasible": false
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "mixed",
+        "common_zero_shift": 2,
+        "degree_bounds": [
+          8,
+          8,
+          1,
+          2
+        ],
+        "balance": "0",
+        "coefficient_variables": 23,
+        "coefficient_constraints": 544,
+        "homogeneous_rank": 23,
+        "homogeneous_nullity": 0,
+        "endpoint_image_dimension": 0,
+        "feasible": false
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "mixed",
+        "common_zero_shift": 2,
+        "degree_bounds": [
+          8,
+          8,
+          1,
+          2
+        ],
+        "balance": "1/2",
+        "coefficient_variables": 23,
+        "coefficient_constraints": 548,
+        "homogeneous_rank": 23,
+        "homogeneous_nullity": 0,
+        "endpoint_image_dimension": 0,
+        "feasible": false
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "mixed",
+        "common_zero_shift": 2,
+        "degree_bounds": [
+          16,
+          16,
+          1,
+          2
+        ],
+        "balance": "0",
+        "coefficient_variables": 39,
+        "coefficient_constraints": 544,
+        "homogeneous_rank": 32,
+        "homogeneous_nullity": 7,
+        "endpoint_image_dimension": 1,
+        "feasible": false
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "mixed",
+        "common_zero_shift": 2,
+        "degree_bounds": [
+          16,
+          16,
+          1,
+          2
+        ],
+        "balance": "1/2",
+        "coefficient_variables": 39,
+        "coefficient_constraints": 548,
+        "homogeneous_rank": 32,
+        "homogeneous_nullity": 7,
+        "endpoint_image_dimension": 1,
+        "feasible": false
+      },
+      {
+        "prime": 3,
+        "n": 3,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "mixed",
+        "common_zero_shift": 1,
+        "degree_bounds": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          0,
+          0,
+          1
+        ],
+        "balance": "0",
+        "coefficient_variables": 28,
+        "coefficient_constraints": 6355,
+        "homogeneous_rank": 28,
+        "homogeneous_nullity": 0,
+        "endpoint_image_dimension": 0,
+        "feasible": false
+      },
+      {
+        "prime": 3,
+        "n": 3,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "mixed",
+        "common_zero_shift": 1,
+        "degree_bounds": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          0,
+          0,
+          1
+        ],
+        "balance": "1/2",
+        "coefficient_variables": 28,
+        "coefficient_constraints": 6603,
+        "homogeneous_rank": 28,
+        "homogeneous_nullity": 0,
+        "endpoint_image_dimension": 0,
+        "feasible": false
+      },
+      {
+        "prime": 3,
+        "n": 3,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "mixed",
+        "common_zero_shift": 1,
+        "degree_bounds": [
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          0,
+          0,
+          1
+        ],
+        "balance": "0",
+        "coefficient_variables": 46,
+        "coefficient_constraints": 6377,
+        "homogeneous_rank": 43,
+        "homogeneous_nullity": 3,
+        "endpoint_image_dimension": 1,
+        "feasible": false
+      },
+      {
+        "prime": 3,
+        "n": 3,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "mixed",
+        "common_zero_shift": 1,
+        "degree_bounds": [
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          0,
+          0,
+          1
+        ],
+        "balance": "1/2",
+        "coefficient_variables": 46,
+        "coefficient_constraints": 6603,
+        "homogeneous_rank": 43,
+        "homogeneous_nullity": 3,
+        "endpoint_image_dimension": 1,
+        "feasible": false
+      },
+      {
+        "prime": 3,
+        "n": 3,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "mixed",
+        "common_zero_shift": 2,
+        "degree_bounds": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          1,
+          1,
+          2
+        ],
+        "balance": "0",
+        "coefficient_variables": 31,
+        "coefficient_constraints": 7382,
+        "homogeneous_rank": 31,
+        "homogeneous_nullity": 0,
+        "endpoint_image_dimension": 0,
+        "feasible": false
+      },
+      {
+        "prime": 3,
+        "n": 3,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "mixed",
+        "common_zero_shift": 2,
+        "degree_bounds": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          1,
+          1,
+          2
+        ],
+        "balance": "1/2",
+        "coefficient_variables": 31,
+        "coefficient_constraints": 7634,
+        "homogeneous_rank": 31,
+        "homogeneous_nullity": 0,
+        "endpoint_image_dimension": 0,
+        "feasible": false
+      },
+      {
+        "prime": 3,
+        "n": 3,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "mixed",
+        "common_zero_shift": 2,
+        "degree_bounds": [
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          1,
+          1,
+          2
+        ],
+        "balance": "0",
+        "coefficient_variables": 49,
+        "coefficient_constraints": 7406,
+        "homogeneous_rank": 47,
+        "homogeneous_nullity": 2,
+        "endpoint_image_dimension": 1,
+        "feasible": false
+      },
+      {
+        "prime": 3,
+        "n": 3,
+        "ramification": 1,
+        "modes": 2,
+        "geometry": "mixed",
+        "common_zero_shift": 2,
+        "degree_bounds": [
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          1,
+          1,
+          2
+        ],
+        "balance": "1/2",
+        "coefficient_variables": 49,
+        "coefficient_constraints": 7647,
+        "homogeneous_rank": 47,
+        "homogeneous_nullity": 2,
+        "endpoint_image_dimension": 1,
+        "feasible": false
+      }
+    ]
+  },
+  "nonidentity_regular_control": {
+    "prime": 2,
+    "n": 4,
+    "geometry": "mixed",
+    "full_extra_polynomial_degree": 33,
+    "verification": {
+      "nonzero_literal_entries": 54,
+      "verified_regular_entry_targets": 66
+    },
+    "pressure_improvement_claimed": false
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "status": "Exact finite controls; all-size floor and fixed-digit asymptotic are proved in the note.",
+  "source_predecessor": "18cec06deac47c8f142ea67a60e2278ac2234d67",
+  "rational_product_equalities": 216,
+  "periodic_partial_sum_checks": 66040,
+  "derivative_coefficients_checked_through_degree": 48,
+  "two_mode_rational_kernel_certificate": true,
+  "one_mode_small_digits": [
+    {
+      "digits": 2,
+      "weights": [
+        3,
+        1
+      ],
+      "strict_entropy_comparison": true
+    },
+    {
+      "digits": 3,
+      "weights": [
+        6,
+        3,
+        1
+      ],
+      "strict_entropy_comparison": true
+    },
+    {
+      "digits": 4,
+      "weights": [
+        10,
+        6,
+        3,
+        1
+      ],
+      "strict_entropy_comparison": true
+    },
+    {
+      "digits": 5,
+      "weights": [
+        15,
+        10,
+        6,
+        3,
+        1
+      ],
+      "strict_entropy_comparison": true
+    }
+  ],
+  "renyi_polynomial_at_q_equal_6_plus_x": [
+    1073259375,
+    4174471000,
+    4107759900,
+    1981211960,
+    562838544,
+    101036769,
+    11655804,
+    841334,
+    34689,
+    625
+  ],
+  "checker_sha256": "380e83c25a49198527db338c1b27d50a3289a61c972282e7d0794d0660ad6920"
+}

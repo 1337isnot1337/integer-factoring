@@ -1,0 +1,97 @@
+{
+  "status": "Exact nonzero-endpoint synthesis with diagonal repair; no pressure gain claimed.",
+  "uncompressed_linear_systems": {
+    "independent_full_affine_coordinate_systems": 1700,
+    "joint_bound_queries": 400,
+    "feasible_queries": 31
+  },
+  "brute_force_polynomials": {
+    "nonzero_endpoint_polynomial_vectors_enumerated": 17496,
+    "brute_force_bound_comparisons": 5103,
+    "individual_polynomial_degree_bound": 2
+  },
+  "strict_endpoint_comparison": {
+    "strictly_broader_feasibility_example": "alpha=(1,-1,x)",
+    "degrees": [
+      0,
+      0,
+      1
+    ],
+    "zero_orders": [
+      1,
+      0,
+      1
+    ],
+    "mode_scales_tested": [
+      2,
+      3,
+      16,
+      "3213876088517980551083924184682325205044405987565585670602753"
+    ]
+  },
+  "literal_repaired_polynomial_witnesses": {
+    "physical_endpoint_equalities": 6642,
+    "complete_polynomial_witness_cut_replays": [
+      {
+        "n": 2,
+        "ramification": 1,
+        "degree_bounds": [
+          0,
+          0,
+          1
+        ],
+        "order_bounds": [
+          1,
+          0,
+          1
+        ],
+        "alpha": [
+          {
+            "0": 1
+          },
+          {
+            "0": 2
+          },
+          {
+            "1": 1
+          }
+        ],
+        "full_matrix_order": 81,
+        "maximum_exact_jet_precision": 32
+      },
+      {
+        "n": 1,
+        "ramification": 3,
+        "degree_bounds": [
+          7,
+          4,
+          0
+        ],
+        "order_bounds": [
+          0,
+          4,
+          7
+        ],
+        "alpha": [
+          {
+            "0": 1,
+            "3": 1,
+            "6": 1,
+            "7": 2,
+            "4": 2
+          },
+          {
+            "0": 1,
+            "3": 2,
+            "4": 1
+          },
+          {
+            "0": 1
+          }
+        ],
+        "full_matrix_order": 9,
+        "maximum_exact_jet_precision": 16
+      }
+    ]
+  }
+}

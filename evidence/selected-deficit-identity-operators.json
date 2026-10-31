@@ -1,0 +1,160 @@
+{
+  "status": "Arbitrary one-deficit selections with independent full physical and rectangular controls; no improved bound claim.",
+  "original_physical_controls": [
+    {
+      "prime": 2,
+      "parent": 4,
+      "selected": [
+        0,
+        1
+      ],
+      "ramification": 1,
+      "charge": 0,
+      "endpoint": "identity",
+      "original_matrix_order": 64,
+      "endpoint_coefficients_checked": 781,
+      "polynomial_degree": 19
+    },
+    {
+      "prime": 2,
+      "parent": 4,
+      "selected": [
+        0,
+        2
+      ],
+      "ramification": 3,
+      "charge": -1,
+      "endpoint": "identity",
+      "original_matrix_order": 64,
+      "endpoint_coefficients_checked": 781,
+      "polynomial_degree": 55
+    },
+    {
+      "prime": 2,
+      "parent": 4,
+      "selected": [
+        1,
+        2
+      ],
+      "ramification": 1,
+      "charge": 2,
+      "endpoint": "filtered",
+      "original_matrix_order": 64,
+      "endpoint_coefficients_checked": 808,
+      "polynomial_degree": 19
+    },
+    {
+      "prime": 3,
+      "parent": 3,
+      "selected": [
+        0
+      ],
+      "ramification": 1,
+      "charge": -2,
+      "endpoint": "filtered",
+      "original_matrix_order": 81,
+      "endpoint_coefficients_checked": 980,
+      "polynomial_degree": 16
+    },
+    {
+      "prime": 3,
+      "parent": 3,
+      "selected": [
+        1
+      ],
+      "ramification": 3,
+      "charge": 1,
+      "endpoint": "identity",
+      "original_matrix_order": 81,
+      "endpoint_coefficients_checked": 978,
+      "polynomial_degree": 48
+    }
+  ],
+  "full_rectangular_controls": [
+    {
+      "prime": 2,
+      "parent": 8,
+      "selected": [
+        1,
+        4
+      ],
+      "ramification": 1,
+      "full_active_matrix_order": 32,
+      "reduced_matrix_order": 8
+    },
+    {
+      "prime": 2,
+      "parent": 8,
+      "selected": [
+        0,
+        1
+      ],
+      "ramification": 3,
+      "full_active_matrix_order": 32,
+      "reduced_matrix_order": 8
+    },
+    {
+      "prime": 3,
+      "parent": 9,
+      "selected": [
+        2,
+        5
+      ],
+      "ramification": 1,
+      "full_active_matrix_order": 243,
+      "reduced_matrix_order": 27
+    }
+  ],
+  "backward_compatible_end_selections": [
+    {
+      "prime": 2,
+      "parent": 4,
+      "selected": [
+        0,
+        1
+      ],
+      "ramification": 1
+    },
+    {
+      "prime": 2,
+      "parent": 8,
+      "selected": [
+        5,
+        6
+      ],
+      "ramification": 3
+    },
+    {
+      "prime": 2,
+      "parent": 8,
+      "selected": [
+        0,
+        6
+      ],
+      "ramification": 1
+    },
+    {
+      "prime": 3,
+      "parent": 9,
+      "selected": [
+        6,
+        7
+      ],
+      "ramification": 1
+    },
+    {
+      "prime": 3,
+      "parent": 9,
+      "selected": [
+        0,
+        7
+      ],
+      "ramification": 3
+    }
+  ],
+  "n26_Gaussian_recovery_controls": 4,
+  "complete_profile_pressure_controls": 36,
+  "maximum_pressure_replay_error": 2.984279490192421e-13,
+  "invalid_selection_rejections": 5,
+  "extended": true
+}

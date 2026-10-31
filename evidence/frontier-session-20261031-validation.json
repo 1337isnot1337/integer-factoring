@@ -1,0 +1,50 @@
+{
+  "status": "Passed final Python integration and focused exact-certificate gates; no new factoring exponent.",
+  "local_starting_snapshot": "664ae5cb48c1ee97522904e3892cf3a470c5c5c1",
+  "remote_stacked_base": "18cec06deac47c8f142ea67a60e2278ac2234d67",
+  "base_gate": {
+    "command": "OPENBLAS_NUM_THREADS=1 make verify",
+    "exit_code": 0,
+    "python_commands": 21,
+    "repository_unit_tests": 50,
+    "crossing_unit_tests": 5,
+    "log": "frontier-session-20261031-verify.log"
+  },
+  "global_one_mode_gate": {
+    "command": "OPENBLAS_NUM_THREADS=1 make verify-global-one-mode-filters",
+    "exit_code": 0,
+    "dependency_checkers": 7,
+    "positive_outward_rectangles": 1917,
+    "positive_outward_scalar_intervals": 320,
+    "log": "frontier-session-20261031-global-verify.log"
+  },
+  "additional_final_replays": {
+    "qutrit_affine_complete_runs": 4,
+    "qutrit_affine_paths": 242,
+    "qutrit_affine_queries": 4985,
+    "qutrit_saved_profile_records": 27,
+    "qutrit_saved_cut_profiles": 54,
+    "qutrit_saved_coefficient_equations": 16721,
+    "binary_target_box_targets": 7079,
+    "binary_target_box_flags_per_cut": 129,
+    "binary_target_box_all_minor_cut_profiles": 50,
+    "binary_target_box_endpoint_coefficients": 400
+  },
+  "lean_preservation": {
+    "tracked_lean_files_unchanged": 113,
+    "lean_toolchain_unchanged": true,
+    "new_lean_formalization": false,
+    "local_lean_builds_run": false
+  },
+  "log_sha256": {
+    "frontier-session-20261031-verify.log": "57def584862d5c6adee1bc6ef2f045db31fc2cd101e56b6bb2054944d2aae6d2",
+    "frontier-session-20261031-global-verify.log": "a816860c4f03f490b762ea379ec4e711cb27358fcbbca9e2754ba8c78d4dbeb2"
+  },
+  "scope": "The integration log predates the final documentation-only summary. The final staged Markdown link and whitespace checks are performed separately. Focused mathematics checkers and search replay records retain their exact individual scopes.",
+  "final_documentation_gate": {
+    "command": "python3 tools/check_docs.py",
+    "exit_code": 0,
+    "tracked_or_staged_markdown_files": 197,
+    "staged_whitespace_check_passed": true
+  }
+}
