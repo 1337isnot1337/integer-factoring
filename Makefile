@@ -41,6 +41,45 @@ verify-arithmetic-framework:
 	python3 tools/check_arithmetic_density_lift.py
 	python3 tools/check_bounded_smooth_norm.py
 
+.PHONY: verify-cyclic-algebra
+verify-cyclic-algebra:
+	python3 tools/check_cyclic_algebra_crossings.py
+
+.PHONY: verify-shift-register
+verify-shift-register:
+	python3 tools/check_shift_register_crossings.py
+
+.PHONY: verify-register-barrier verify-quadratic-register
+verify-register-barrier:
+	python3 tools/check_shift_register_copy_wire_barrier.py
+
+verify-quadratic-register:
+	python3 tools/check_quadratic_register_crossings.py
+
+.PHONY: verify-quantum-pascal
+verify-quantum-pascal:
+	python3 tools/check_quantum_pascal_crossings.py
+
+.PHONY: verify-matrix-vacuum
+verify-matrix-vacuum:
+	python3 tools/check_matrix_vacuum_barrier.py
+
+.PHONY: verify-steiner-cubic
+verify-steiner-cubic:
+	python3 tools/check_steiner_cubic_crossings.py
+
+.PHONY: verify-steiner-coefficients
+verify-steiner-coefficients:
+	python3 tools/check_steiner_coefficient_barrier.py
+
+.PHONY: verify-group-shears
+verify-group-shears:
+	python3 tools/check_group_shear_crossings.py
+
+.PHONY: verify-smith-capacity
+verify-smith-capacity:
+	python3 tools/check_smith_pressure_convexity.py
+
 .PHONY: verify-multilevel-packet
 verify-multilevel-packet:
 	python3 tools/check_multilevel_thue_morse_packet.py

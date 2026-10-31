@@ -1,0 +1,58 @@
+{
+  "alphabet": 3,
+  "degree": 6,
+  "probability_x": 0.75,
+  "probability_y": 0.75,
+  "types": [
+    [
+      0.0625,
+      0.375,
+      0.5625
+    ],
+    [
+      0.0625,
+      0.375,
+      0.5625
+    ]
+  ],
+  "entropy_sum": 1.7294801930552743,
+  "best_rho": 0.9009316482803293,
+  "numerical_domain_lower_rho": 0.9009314580845733,
+  "numerical_gap": 1.901957561167844e-07,
+  "best_parameters": [
+    0.2966276238852622,
+    -1.4403574606067222,
+    -2.0,
+    -0.033612708382487776,
+    -0.3638532637252355,
+    -1.4406474876315947,
+    -2.0,
+    -0.03504221178995664,
+    -0.3655723688825356,
+    -1.352134720476712,
+    -0.9090167634208556,
+    -1.9999987878769343,
+    -1.9999988618244595,
+    -1.3521339577017708,
+    -0.9090159620648194,
+    -2.0,
+    -2.0
+  ],
+  "iterations": 373,
+  "maximum_iterations": 500,
+  "pressure_calls": 373,
+  "maximum_native_precision": 8192,
+  "scale_bounds": [
+    0.002,
+    1.0
+  ],
+  "physical_energy_bounds": [
+    -2.0,
+    2.0
+  ],
+  "letter_zero_energy": 0,
+  "numerical_only": true,
+  "scope": "Only the stated fixed paired binomial types and compact parameter box; no rational LP certification.",
+  "factoring_exponent": "1/2; unchanged",
+  "source_sha256": "d1a79e31807669eaf41ab1d623120fab232ee27ea29f77d3cbb44178195bf9ed"
+}

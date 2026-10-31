@@ -308,6 +308,26 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Obstructions and work beyond 1/2
 
+- [Regular cyclic-algebra transforms](cyclic-algebra-crossings.md): polynomial changes preserve ideal column orders, with exact dense-operator controls; 1,024 eight-letter transforms are excluded for the bare two-place criterion.
+
+- [Locally joined shift registers](shift-register-crossings.md): full-cycle seeds from maximal feedback rules, exact linear cut-rank formulas, and complete bare-profile exclusions through thirty-two physical letters.
+
+- [Copied-wire register barrier](shift-register-copy-wire-barrier.md): a colour-correlation argument forces limiting bare parameter at least `3/4` for every prime-power digit full-cycle register, including arbitrary nonlinear feedback; a full-cycle counterexample separates two-power and three-power rank inequalities.
+
+- [Complete six-bit nonlinear catalogue](quadratic-register-crossings.md): all 65,536 quadratic-plus-zero-indicator feedback rules, their 1,952 full cycles, and all 19,520 physical partitions fail the bare criterion by exact certificates.
+
+- [Quantum-Pascal trace crossings](quantum-pascal-trace-crossings.md): divided-power polynomial endpoints through fifteen letters, an exact degree formula, and a unitriangular trace-basis obstruction at `rho>=3/4` for bare and unweighted multipoint profiles; physical word types remain separate.
+
+- [Convex fixed-type Smith capacity](fixed-type-smith-capacity.md): global entropy-weighted minor-flag supports, a rational dual-certificate criterion, exact convexity controls, and a bounded numerical paired-type solver with separate primal and LP estimates.
+
+- [Matrix-vacuum boundary barrier](matrix-vacuum-boundary-barrier.md): arbitrary polynomial matrix vacua retain a square-basis determinant; an all-field boundary difference bounds the zero-cut rank, and the complete 7,350-case binary rank-two affine catalogue forces bare parameter above `7/8`.
+
+- [Steiner cubic crossings](steiner-cubic-crossings.md): three controlled involutions give determinant-one crossing paths for every Steiner quasigroup; exact design-independent profiles exclude the bare criterion at every size, with a six-dimensional orbit calculation and full-cut controls.
+
+- [Steiner coefficient barrier](steiner-coefficient-barrier.md): shared coefficients force actual ranks at every word length; the complete multivariate span has `rho>=3/4` for `q>=7`, and the three-letter univariate span has asymptotic floor `0.8065306485`, also with a sublinear number of independent position classes.
+
+- [Group-shear crossings](group-shear-crossings.md): multiplication/division shears give cubic swap paths over every finite `p`-group in characteristic `p`; exact early-jet certificates exclude six displayed binary seeds, without an all-group claim.
+
 - [All-degree homogeneous Boolean charge bands](homogeneous-boolean-charge-bands.md): a degree-independent loss cap and stronger Gaussian floors exclude all exterior charges and a linearly growing interior band, including overlapping monomials.
 
 - [All-digit charged Gaussian floor](all-digit-charged-gaussian-floor.md): strict monotonicity in every real digit parameter and positive full critical pressure for all `q>1`, charges, scales, and interval lengths; exact compact certificates plus analytic tails.
