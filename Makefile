@@ -18,6 +18,10 @@ verify-docs:
 verify-cyclic-algebra:
 	python3 tools/check_cyclic_algebra_crossings.py
 
+.PHONY: verify-shift-register
+verify-shift-register:
+	python3 tools/check_shift_register_crossings.py
+
 .PHONY: verify-multilevel-packet
 verify-multilevel-packet:
 	python3 tools/check_multilevel_thue_morse_packet.py

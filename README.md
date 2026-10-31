@@ -99,6 +99,14 @@ for the bare two-place criterion. The factoring exponent remains `1/2`.
 Run `make verify-cyclic-algebra` for independent literal matrix controls;
 the linked note gives the optional complete search replay.
 
+The [shift-register construction](research/shift-register-crossings.md) gives
+further full-cycle seeds with arbitrary balanced bit partitions. All 8,186
+systems through thirty-two physical letters fail the bare two-place test by
+exact integer certificates; a separate selected 64-letter schedule also fails.
+These finite exclusions leave the score at `1/2` and do not cover arbitrary
+word-type gauges or nonlinear feedback. Run `make verify-shift-register` for
+the small exact replay; the note gives the complete catalogue commands.
+
 The [exact Gaussian fixed-type certificates](research/reflection-gaussian-fixed-type-duals.md)
 prove global minima over every independent mode gauge and positive scale
 for four explicit rational physical types, through interval length 32.
