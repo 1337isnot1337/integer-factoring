@@ -153,6 +153,10 @@ known half-rate construction.
 constructs crossings from prescribed local row lattices by exact linear
 algebra. The complete fixed-lattice fiber consists of 64 local changes, and a
 relaxed system constructs a non-Gaussian control.
+An [explicit tensorized family](research/tensorized-smith-sections.md)
+adds 40 new directions to a 180-dimensional inherited space. A common
+nilpotent residue certificate proves that all `2^220` crossings preserve
+the two specified profiles; changes of gauges remain a separate question.
 An [exact weighted Smith oracle](research/weighted-smith-separation-oracle.md)
 finds all determinantal minima without listing every minor. It supports
 continuous gauge searches with exact rational replay.
