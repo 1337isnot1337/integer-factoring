@@ -59,6 +59,7 @@ verify-type-pressure:
 verify-crossing-interpolation:
 	python3 tools/check_polynomial_crossing_interpolation.py
 	python3 tools/check_tensorized_smith_sections.py
+	python3 tools/check_positive_energy_quartic_endpoints.py
 
 verify-smith-oracle:
 	python3 tools/check_weighted_smith_oracle.py
