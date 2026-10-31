@@ -100,6 +100,14 @@ inequality. This closes the binary higher-degree and row-frame search
 route without changing the achieved factoring score. Run
 `make verify-binary-smith-floor` for the exact certificate and full-minor controls.
 
+The [nonresonant Boolean filter theorem](research/nonresonant-boolean-filter-floor.md)
+excludes arbitrary nonhomogeneous Boolean supports in the stated two-power
+family outside a finite resonant window. A separate [affine tile construction](research/affine-boolean-filter-tiles.md)
+recomputes full transformed polynomials after Boolean relabeling; its complete
+124,080-case catalogue contains 65,475 retained profiles, with no gain in the
+eight recorded full-cost searches. Run `make verify-nonresonant-filters
+verify-affine-filter-tiles`.
+
 The [prime-characteristic symmetric transform](research/symmetric-prime-multilevel-filters.md)
 retains all digit multiplicities and endpoint signs while compressing a
 correlated block to occupation weights. Four [completed tile catalogues](research/symmetric-tiled-filter-searches.md)
@@ -189,8 +197,8 @@ now excludes every homogeneous one-level Boolean occupation filter at
 every real aggregate charge and positive scale. It permits arbitrary
 overlapping patterns and every degree through the selected-mode count.
 The proof extends the earlier charge bands using a uniform edge estimate
-and 13,323 exact positive cover leaves. Multilevel and nonhomogeneous
-filters remain open. Run `make verify-global-homogeneous-filters`.
+and 13,323 exact positive cover leaves. General multilevel and resonant
+nonhomogeneous filters remain open. Run `make verify-global-homogeneous-filters`.
 
 The latest [research checkpoint](research/frontier-session-20261031.md)
 keeps the proved score at `1/2`. An

@@ -80,6 +80,13 @@ verify-physical-splits:
 verify-reflection-code-alphabets:
 	python3 tools/check_reflection_code_alphabets.py --output /tmp/integer-factoring-reflection-code-alphabets-replay.json
 
+.PHONY: verify-nonresonant-filters verify-affine-filter-tiles
+verify-nonresonant-filters:
+	python3 tools/check_nonresonant_boolean_filter_floor.py --output /tmp/integer-factoring-nonresonant-filter-replay.json
+
+verify-affine-filter-tiles:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_affine_symmetric_tiles.py --output /tmp/integer-factoring-affine-filter-tile-replay.json
+
 .PHONY: verify-frontier-extensions
 verify-frontier-extensions:
 	python3 tools/check_all_scale_balanced_obstruction.py

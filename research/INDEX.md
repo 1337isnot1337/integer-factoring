@@ -16,6 +16,10 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Nonresonant filters for arbitrary Boolean supports](nonresonant-boolean-filter-floor.md): the complete pressure floor extends to every Boolean pattern in a two-power family outside a finite resonant window; an exact counterexample preserves the excluded resonance.
+
+- [Affine Boolean filter tiles](affine-boolean-filter-tiles.md): literal coefficient relabeling and exact monomial normalization leave the symmetric family; all 124,080 specified maps and witnesses regenerate 65,475 retained full-state profiles, with eight complete root replays.
+
 - [Coherent physical split projections](physical-split-crossings.md): constant left/right splittings preserve strict endpoints and permit unequal alphabets; full profiles and actual new-symbol heights are recomputed, with 5,480 completed finite projections and independent F4 restriction-of-scalars controls.
 
 - [Reflection coordinate-code alphabets](reflection-code-alphabets.md): non-Cartesian physical state restrictions leave the Gaussian class while keeping the endpoint; a 236-alphabet natural-gauge screen and exact original-tensor checks retain the full physical entropy cost.
