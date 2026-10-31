@@ -1,0 +1,1602 @@
+{
+  "scope": "Independent finite polynomial frame identities, physical coefficient controls, and original-matrix profile replay.",
+  "checks": {
+    "independent_full_precision_polynomial_sandwich_entries": 206,
+    "complete_original_matrix_profile_comparisons": 24,
+    "independent_literal_weighted_entries": 70936
+  },
+  "cases": [
+    {
+      "source_alphabet": 2,
+      "vectors": [
+        [
+          3,
+          2,
+          3,
+          0
+        ],
+        [
+          3,
+          2,
+          2,
+          2
+        ],
+        [
+          1,
+          0,
+          3,
+          1
+        ],
+        [
+          0,
+          0,
+          2,
+          0
+        ]
+      ],
+      "polynomial": 3,
+      "F4_coefficient": 1,
+      "physical_vector_matrix_ranks": [
+        2,
+        2,
+        2,
+        1
+      ],
+      "profiles": [
+        {
+          "-8": 16
+        },
+        {
+          "-8": 1,
+          "-7": 4,
+          "-6": 6,
+          "-5": 4,
+          "-4": 1
+        }
+      ],
+      "structured_pivot_counts": [
+        {
+          "diagonal_update": 16,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        },
+        {
+          "diagonal_update": 16,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        }
+      ],
+      "structured_seconds": 0.001985155999136623,
+      "complete_matrix_seconds": 0.0011898690008820267
+    },
+    {
+      "source_alphabet": 2,
+      "vectors": [
+        [
+          2,
+          3,
+          2,
+          0
+        ],
+        [
+          0,
+          1,
+          2,
+          2
+        ],
+        [
+          2,
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          3,
+          1,
+          2
+        ]
+      ],
+      "polynomial": 5,
+      "F4_coefficient": 2,
+      "physical_vector_matrix_ranks": [
+        2,
+        2,
+        2,
+        1
+      ],
+      "profiles": [
+        {
+          "-10": 1,
+          "-8": 14,
+          "-6": 1
+        },
+        {
+          "-8": 1,
+          "-7": 4,
+          "-6": 6,
+          "-5": 3,
+          "-4": 2
+        }
+      ],
+      "structured_pivot_counts": [
+        {
+          "diagonal_update": 0,
+          "offdiagonal_to_arrow": 1,
+          "arrow_center": 1,
+          "arrow_leaf_diagonal": 14,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        },
+        {
+          "diagonal_update": 14,
+          "offdiagonal_to_arrow": 1,
+          "arrow_center": 1,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        }
+      ],
+      "structured_seconds": 0.000993343999653007,
+      "complete_matrix_seconds": 0.0011445009986346122
+    },
+    {
+      "source_alphabet": 2,
+      "vectors": [
+        [
+          0,
+          0,
+          1,
+          2
+        ],
+        [
+          2,
+          2,
+          1,
+          3
+        ],
+        [
+          0,
+          3,
+          2,
+          3
+        ],
+        [
+          1,
+          0,
+          2,
+          0
+        ]
+      ],
+      "polynomial": 6,
+      "F4_coefficient": 3,
+      "physical_vector_matrix_ranks": [
+        1,
+        2,
+        2,
+        1
+      ],
+      "profiles": [
+        {
+          "-9": 1,
+          "-8": 14,
+          "-6": 1
+        },
+        {
+          "-8": 1,
+          "-7": 4,
+          "-6": 6,
+          "-5": 4,
+          "-4": 1
+        }
+      ],
+      "structured_pivot_counts": [
+        {
+          "diagonal_update": 16,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        },
+        {
+          "diagonal_update": 16,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        }
+      ],
+      "structured_seconds": 0.0008422070004598936,
+      "complete_matrix_seconds": 0.0011770910004997859
+    },
+    {
+      "source_alphabet": 2,
+      "vectors": [
+        [
+          0,
+          3,
+          1,
+          2
+        ],
+        [
+          2,
+          0,
+          2,
+          3
+        ],
+        [
+          3,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          3,
+          0,
+          1
+        ]
+      ],
+      "polynomial": 3,
+      "F4_coefficient": 2,
+      "physical_vector_matrix_ranks": [
+        2,
+        2,
+        1,
+        2
+      ],
+      "profiles": [
+        {
+          "-9": 1,
+          "-8": 14,
+          "-7": 1
+        },
+        {
+          "-8": 1,
+          "-7": 4,
+          "-6": 6,
+          "-5": 3,
+          "-4": 2
+        }
+      ],
+      "structured_pivot_counts": [
+        {
+          "diagonal_update": 0,
+          "offdiagonal_to_arrow": 1,
+          "arrow_center": 1,
+          "arrow_leaf_diagonal": 14,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        },
+        {
+          "diagonal_update": 16,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        }
+      ],
+      "structured_seconds": 0.0008210649993998231,
+      "complete_matrix_seconds": 0.0010591930004011374
+    },
+    {
+      "source_alphabet": 3,
+      "vectors": [
+        [
+          2,
+          1,
+          3,
+          1,
+          1,
+          0,
+          1,
+          3,
+          2
+        ],
+        [
+          2,
+          1,
+          3,
+          3,
+          0,
+          0,
+          0,
+          2,
+          2
+        ],
+        [
+          3,
+          2,
+          2,
+          1,
+          2,
+          0,
+          2,
+          1,
+          3
+        ],
+        [
+          2,
+          2,
+          3,
+          2,
+          2,
+          2,
+          0,
+          3,
+          1
+        ]
+      ],
+      "polynomial": 3,
+      "F4_coefficient": 1,
+      "physical_vector_matrix_ranks": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "profiles": [
+        {
+          "-13": 1,
+          "-12": 16,
+          "-11": 16,
+          "-10": 18,
+          "-9": 8,
+          "-8": 14,
+          "-7": 2,
+          "-6": 4,
+          "-5": 2
+        },
+        {
+          "-12": 1,
+          "-11": 4,
+          "-10": 10,
+          "-9": 16,
+          "-8": 19,
+          "-7": 16,
+          "-6": 10,
+          "-5": 4,
+          "-1": 1
+        }
+      ],
+      "structured_pivot_counts": [
+        {
+          "diagonal_update": 24,
+          "offdiagonal_to_arrow": 2,
+          "arrow_center": 2,
+          "arrow_leaf_diagonal": 50,
+          "arrow_leaf_column": 2,
+          "arrow_leaf_row": 1
+        },
+        {
+          "diagonal_update": 77,
+          "offdiagonal_to_arrow": 1,
+          "arrow_center": 1,
+          "arrow_leaf_diagonal": 2,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        }
+      ],
+      "structured_seconds": 0.008878442999048275,
+      "complete_matrix_seconds": 0.04049545700036106
+    },
+    {
+      "source_alphabet": 3,
+      "vectors": [
+        [
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          0,
+          3,
+          3
+        ],
+        [
+          1,
+          1,
+          0,
+          3,
+          2,
+          1,
+          0,
+          2,
+          0
+        ],
+        [
+          1,
+          2,
+          3,
+          1,
+          3,
+          1,
+          1,
+          0,
+          3
+        ],
+        [
+          1,
+          2,
+          1,
+          1,
+          1,
+          3,
+          0,
+          1,
+          1
+        ]
+      ],
+      "polynomial": 5,
+      "F4_coefficient": 2,
+      "physical_vector_matrix_ranks": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "profiles": [
+        {
+          "-14": 1,
+          "-12": 16,
+          "-11": 15,
+          "-10": 19,
+          "-9": 9,
+          "-8": 13,
+          "-7": 2,
+          "-6": 4,
+          "-5": 2
+        },
+        {
+          "-12": 1,
+          "-11": 4,
+          "-10": 10,
+          "-9": 16,
+          "-8": 19,
+          "-7": 16,
+          "-6": 10,
+          "-5": 4,
+          "-4": 1
+        }
+      ],
+      "structured_pivot_counts": [
+        {
+          "diagonal_update": 24,
+          "offdiagonal_to_arrow": 2,
+          "arrow_center": 2,
+          "arrow_leaf_diagonal": 49,
+          "arrow_leaf_column": 3,
+          "arrow_leaf_row": 1
+        },
+        {
+          "diagonal_update": 70,
+          "offdiagonal_to_arrow": 4,
+          "arrow_center": 4,
+          "arrow_leaf_diagonal": 3,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        }
+      ],
+      "structured_seconds": 0.008949850998760667,
+      "complete_matrix_seconds": 0.03890837899962207
+    },
+    {
+      "source_alphabet": 3,
+      "vectors": [
+        [
+          3,
+          0,
+          0,
+          0,
+          3,
+          0,
+          2,
+          3,
+          0
+        ],
+        [
+          2,
+          0,
+          3,
+          1,
+          0,
+          3,
+          2,
+          0,
+          2
+        ],
+        [
+          0,
+          3,
+          0,
+          0,
+          1,
+          2,
+          3,
+          1,
+          2
+        ],
+        [
+          3,
+          2,
+          1,
+          3,
+          2,
+          3,
+          3,
+          3,
+          2
+        ]
+      ],
+      "polynomial": 6,
+      "F4_coefficient": 3,
+      "physical_vector_matrix_ranks": [
+        2,
+        2,
+        3,
+        3
+      ],
+      "profiles": [
+        {
+          "-13": 1,
+          "-12": 16,
+          "-11": 15,
+          "-10": 20,
+          "-9": 8,
+          "-8": 13,
+          "-7": 2,
+          "-6": 4,
+          "-5": 2
+        },
+        {
+          "-12": 1,
+          "-11": 4,
+          "-10": 10,
+          "-9": 16,
+          "-8": 19,
+          "-7": 16,
+          "-6": 10,
+          "-5": 4,
+          "-4": 1
+        }
+      ],
+      "structured_pivot_counts": [
+        {
+          "diagonal_update": 3,
+          "offdiagonal_to_arrow": 2,
+          "arrow_center": 2,
+          "arrow_leaf_diagonal": 70,
+          "arrow_leaf_column": 2,
+          "arrow_leaf_row": 2
+        },
+        {
+          "diagonal_update": 81,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        }
+      ],
+      "structured_seconds": 0.007287780999831739,
+      "complete_matrix_seconds": 0.03271122899968759
+    },
+    {
+      "source_alphabet": 3,
+      "vectors": [
+        [
+          0,
+          3,
+          2,
+          1,
+          2,
+          2,
+          3,
+          3,
+          2
+        ],
+        [
+          2,
+          2,
+          1,
+          0,
+          0,
+          0,
+          3,
+          3,
+          3
+        ],
+        [
+          2,
+          2,
+          2,
+          2,
+          0,
+          1,
+          3,
+          2,
+          3
+        ],
+        [
+          3,
+          2,
+          0,
+          0,
+          3,
+          1,
+          3,
+          3,
+          3
+        ]
+      ],
+      "polynomial": 3,
+      "F4_coefficient": 2,
+      "physical_vector_matrix_ranks": [
+        3,
+        2,
+        3,
+        3
+      ],
+      "profiles": [
+        {
+          "-13": 1,
+          "-12": 16,
+          "-11": 16,
+          "-10": 18,
+          "-9": 8,
+          "-8": 14,
+          "-7": 2,
+          "-6": 4,
+          "-5": 1,
+          "-4": 1
+        },
+        {
+          "-12": 1,
+          "-11": 4,
+          "-10": 10,
+          "-9": 16,
+          "-8": 19,
+          "-7": 16,
+          "-6": 10,
+          "-5": 4,
+          "-4": 1
+        }
+      ],
+      "structured_pivot_counts": [
+        {
+          "diagonal_update": 11,
+          "offdiagonal_to_arrow": 2,
+          "arrow_center": 2,
+          "arrow_leaf_diagonal": 61,
+          "arrow_leaf_column": 3,
+          "arrow_leaf_row": 2
+        },
+        {
+          "diagonal_update": 76,
+          "offdiagonal_to_arrow": 2,
+          "arrow_center": 2,
+          "arrow_leaf_diagonal": 1,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        }
+      ],
+      "structured_seconds": 0.010272911000356544,
+      "complete_matrix_seconds": 0.07029078000050504
+    },
+    {
+      "source_alphabet": 5,
+      "vectors": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "polynomial": 163840,
+      "F4_coefficient": 1,
+      "physical_vector_matrix_ranks": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "profiles": [
+        {
+          "-17": 1,
+          "-16": 1,
+          "-15": 2,
+          "-14": 1,
+          "-13": 2,
+          "-12": 4,
+          "-11": 4,
+          "-10": 5,
+          "-9": 6,
+          "-8": 9,
+          "-7": 12,
+          "-6": 13,
+          "-5": 16,
+          "-4": 21,
+          "-3": 24,
+          "-2": 23,
+          "-1": 28,
+          "0": 32,
+          "1": 30,
+          "2": 32,
+          "3": 34,
+          "4": 38,
+          "5": 38,
+          "6": 34,
+          "7": 36,
+          "8": 35,
+          "9": 30,
+          "10": 24,
+          "11": 22,
+          "12": 19,
+          "13": 12,
+          "14": 10,
+          "15": 8,
+          "16": 7,
+          "17": 4,
+          "18": 2,
+          "19": 4,
+          "20": 2
+        },
+        {
+          "15": 1,
+          "16": 1,
+          "17": 2,
+          "18": 1,
+          "19": 2,
+          "20": 4,
+          "21": 4,
+          "22": 5,
+          "23": 6,
+          "24": 9,
+          "25": 12,
+          "26": 13,
+          "27": 16,
+          "28": 21,
+          "29": 24,
+          "30": 23,
+          "31": 28,
+          "32": 32,
+          "33": 30,
+          "34": 32,
+          "35": 34,
+          "36": 38,
+          "37": 38,
+          "38": 34,
+          "39": 36,
+          "40": 35,
+          "41": 30,
+          "42": 24,
+          "43": 22,
+          "44": 19,
+          "45": 12,
+          "46": 10,
+          "47": 8,
+          "48": 6,
+          "49": 4,
+          "50": 2,
+          "51": 4,
+          "52": 2,
+          "56": 1
+        }
+      ],
+      "structured_pivot_counts": [
+        {
+          "diagonal_update": 625,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        },
+        {
+          "diagonal_update": 623,
+          "offdiagonal_to_arrow": 1,
+          "arrow_center": 1,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        }
+      ],
+      "structured_seconds": 0.33204905499951565,
+      "complete_matrix_seconds": 5.645543822998661
+    },
+    {
+      "source_alphabet": 5,
+      "vectors": [
+        [
+          1,
+          3,
+          3,
+          1,
+          2,
+          1,
+          1,
+          3,
+          3,
+          2,
+          0,
+          0,
+          0,
+          0,
+          1,
+          2,
+          3,
+          2,
+          0,
+          3,
+          2,
+          0,
+          0,
+          3,
+          1
+        ],
+        [
+          1,
+          2,
+          0,
+          1,
+          0,
+          0,
+          1,
+          3,
+          1,
+          0,
+          0,
+          3,
+          1,
+          1,
+          3,
+          2,
+          2,
+          1,
+          2,
+          3,
+          2,
+          1,
+          2,
+          2,
+          2
+        ],
+        [
+          1,
+          3,
+          3,
+          1,
+          3,
+          2,
+          3,
+          0,
+          3,
+          3,
+          1,
+          2,
+          1,
+          1,
+          2,
+          2,
+          0,
+          1,
+          3,
+          1,
+          2,
+          0,
+          3,
+          1,
+          3
+        ],
+        [
+          3,
+          2,
+          0,
+          2,
+          0,
+          0,
+          2,
+          0,
+          2,
+          1,
+          3,
+          0,
+          0,
+          2,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          3,
+          1,
+          1,
+          3,
+          0
+        ]
+      ],
+      "polynomial": 272,
+      "F4_coefficient": 2,
+      "physical_vector_matrix_ranks": [
+        4,
+        4,
+        5,
+        4
+      ],
+      "profiles": [
+        {
+          "-16": 1,
+          "-15": 2,
+          "-14": 1,
+          "-13": 2,
+          "-12": 4,
+          "-11": 4,
+          "-10": 5,
+          "-9": 6,
+          "-8": 10,
+          "-7": 12,
+          "-6": 13,
+          "-5": 16,
+          "-4": 21,
+          "-3": 24,
+          "-2": 23,
+          "-1": 28,
+          "0": 32,
+          "1": 30,
+          "2": 32,
+          "3": 34,
+          "4": 38,
+          "5": 38,
+          "6": 34,
+          "7": 36,
+          "8": 35,
+          "9": 30,
+          "10": 24,
+          "11": 22,
+          "12": 19,
+          "13": 12,
+          "14": 10,
+          "15": 8,
+          "16": 7,
+          "17": 4,
+          "18": 2,
+          "19": 4,
+          "20": 2
+        },
+        {
+          "4": 1,
+          "16": 1,
+          "17": 2,
+          "18": 1,
+          "19": 2,
+          "20": 4,
+          "21": 4,
+          "22": 5,
+          "23": 6,
+          "24": 9,
+          "25": 12,
+          "26": 13,
+          "27": 16,
+          "28": 21,
+          "29": 24,
+          "30": 23,
+          "31": 28,
+          "32": 32,
+          "33": 30,
+          "34": 32,
+          "35": 34,
+          "36": 38,
+          "37": 38,
+          "38": 34,
+          "39": 36,
+          "40": 35,
+          "41": 30,
+          "42": 24,
+          "43": 22,
+          "44": 19,
+          "45": 12,
+          "46": 10,
+          "47": 8,
+          "48": 6,
+          "49": 4,
+          "50": 2,
+          "51": 4,
+          "52": 2,
+          "57": 1
+        }
+      ],
+      "structured_pivot_counts": [
+        {
+          "diagonal_update": 625,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        },
+        {
+          "diagonal_update": 625,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        }
+      ],
+      "structured_seconds": 0.7547762060003151,
+      "complete_matrix_seconds": 17.34505105200151
+    },
+    {
+      "source_alphabet": 5,
+      "vectors": [
+        [
+          0,
+          2,
+          1,
+          1,
+          3,
+          3,
+          3,
+          1,
+          2,
+          3,
+          0,
+          3,
+          0,
+          2,
+          2,
+          2,
+          0,
+          3,
+          0,
+          1,
+          3,
+          1,
+          2,
+          1,
+          2
+        ],
+        [
+          2,
+          2,
+          2,
+          2,
+          0,
+          0,
+          1,
+          1,
+          2,
+          1,
+          1,
+          2,
+          3,
+          1,
+          0,
+          2,
+          3,
+          2,
+          2,
+          3,
+          2,
+          3,
+          1,
+          2,
+          0
+        ],
+        [
+          1,
+          2,
+          1,
+          2,
+          2,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          2,
+          3,
+          3,
+          2,
+          2,
+          0,
+          1,
+          1,
+          2,
+          1,
+          0,
+          0,
+          2,
+          1
+        ],
+        [
+          1,
+          3,
+          0,
+          0,
+          1,
+          2,
+          3,
+          0,
+          2,
+          2,
+          2,
+          3,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          2,
+          2,
+          1,
+          2,
+          0,
+          3
+        ]
+      ],
+      "polynomial": 4112,
+      "F4_coefficient": 3,
+      "physical_vector_matrix_ranks": [
+        5,
+        4,
+        5,
+        4
+      ],
+      "profiles": [
+        {
+          "-16": 1,
+          "-15": 2,
+          "-14": 1,
+          "-13": 2,
+          "-12": 5,
+          "-11": 4,
+          "-10": 5,
+          "-9": 6,
+          "-8": 9,
+          "-7": 12,
+          "-6": 13,
+          "-5": 16,
+          "-4": 21,
+          "-3": 24,
+          "-2": 23,
+          "-1": 28,
+          "0": 32,
+          "1": 30,
+          "2": 32,
+          "3": 34,
+          "4": 38,
+          "5": 38,
+          "6": 34,
+          "7": 36,
+          "8": 35,
+          "9": 30,
+          "10": 24,
+          "11": 22,
+          "12": 19,
+          "13": 12,
+          "14": 10,
+          "15": 8,
+          "16": 7,
+          "17": 4,
+          "18": 2,
+          "19": 4,
+          "20": 1,
+          "22": 1
+        },
+        {
+          "5": 1,
+          "16": 1,
+          "17": 2,
+          "18": 1,
+          "19": 2,
+          "20": 4,
+          "21": 4,
+          "22": 5,
+          "23": 6,
+          "24": 9,
+          "25": 12,
+          "26": 13,
+          "27": 16,
+          "28": 21,
+          "29": 24,
+          "30": 23,
+          "31": 28,
+          "32": 32,
+          "33": 30,
+          "34": 32,
+          "35": 34,
+          "36": 38,
+          "37": 38,
+          "38": 34,
+          "39": 36,
+          "40": 35,
+          "41": 30,
+          "42": 24,
+          "43": 22,
+          "44": 19,
+          "45": 11,
+          "46": 10,
+          "47": 8,
+          "48": 8,
+          "49": 4,
+          "50": 2,
+          "51": 4,
+          "52": 1,
+          "56": 1
+        }
+      ],
+      "structured_pivot_counts": [
+        {
+          "diagonal_update": 625,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        },
+        {
+          "diagonal_update": 610,
+          "offdiagonal_to_arrow": 1,
+          "arrow_center": 1,
+          "arrow_leaf_diagonal": 12,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 1
+        }
+      ],
+      "structured_seconds": 0.8011122279986012,
+      "complete_matrix_seconds": 11.896285041999363
+    },
+    {
+      "source_alphabet": 5,
+      "vectors": [
+        [
+          1,
+          2,
+          2,
+          0,
+          3,
+          3,
+          3,
+          1,
+          2,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          2,
+          0,
+          3,
+          3,
+          0,
+          3,
+          1,
+          3,
+          3
+        ],
+        [
+          1,
+          0,
+          2,
+          0,
+          0,
+          2,
+          3,
+          3,
+          2,
+          2,
+          1,
+          3,
+          2,
+          1,
+          3,
+          2,
+          0,
+          1,
+          3,
+          3,
+          0,
+          3,
+          3,
+          3,
+          3
+        ],
+        [
+          1,
+          0,
+          2,
+          2,
+          0,
+          1,
+          3,
+          1,
+          3,
+          0,
+          0,
+          2,
+          3,
+          2,
+          2,
+          1,
+          2,
+          2,
+          1,
+          2,
+          3,
+          1,
+          3,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          0,
+          2,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1,
+          1,
+          0,
+          2,
+          3,
+          0,
+          0,
+          1,
+          1,
+          1,
+          3,
+          1,
+          3,
+          3,
+          2,
+          2
+        ]
+      ],
+      "polynomial": 1048592,
+      "F4_coefficient": 2,
+      "physical_vector_matrix_ranks": [
+        4,
+        4,
+        5,
+        4
+      ],
+      "profiles": [
+        {
+          "-20": 1,
+          "-16": 1,
+          "-15": 2,
+          "-14": 1,
+          "-13": 2,
+          "-12": 4,
+          "-11": 4,
+          "-10": 5,
+          "-9": 6,
+          "-8": 9,
+          "-7": 12,
+          "-6": 13,
+          "-5": 16,
+          "-4": 21,
+          "-3": 24,
+          "-2": 23,
+          "-1": 28,
+          "0": 32,
+          "1": 30,
+          "2": 32,
+          "3": 34,
+          "4": 38,
+          "5": 38,
+          "6": 34,
+          "7": 36,
+          "8": 35,
+          "9": 30,
+          "10": 24,
+          "11": 22,
+          "12": 19,
+          "13": 12,
+          "14": 10,
+          "15": 8,
+          "16": 7,
+          "17": 4,
+          "18": 2,
+          "19": 4,
+          "20": 2
+        },
+        {
+          "4": 1,
+          "16": 1,
+          "17": 2,
+          "18": 1,
+          "19": 2,
+          "20": 4,
+          "21": 4,
+          "22": 5,
+          "23": 6,
+          "24": 9,
+          "25": 12,
+          "26": 13,
+          "27": 16,
+          "28": 21,
+          "29": 24,
+          "30": 23,
+          "31": 28,
+          "32": 32,
+          "33": 30,
+          "34": 32,
+          "35": 34,
+          "36": 38,
+          "37": 38,
+          "38": 34,
+          "39": 36,
+          "40": 35,
+          "41": 30,
+          "42": 24,
+          "43": 22,
+          "44": 19,
+          "45": 12,
+          "46": 10,
+          "47": 8,
+          "48": 6,
+          "49": 4,
+          "50": 2,
+          "51": 4,
+          "52": 2,
+          "58": 1
+        }
+      ],
+      "structured_pivot_counts": [
+        {
+          "diagonal_update": 625,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        },
+        {
+          "diagonal_update": 625,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        }
+      ],
+      "structured_seconds": 0.823156659000233,
+      "complete_matrix_seconds": 12.175271574000362
+    }
+  ],
+  "source_sha256": {
+    "check_entangled_two_copy_frames.py": "74a032394218beb5406731eab7b0fcdee3d5fff4d713ae32bdd3fecd7175aa2b",
+    "entangled_two_copy_frames.py": "8c3e754de5f497c1e4a2bf3a1eb6cc97cc4c141e4cb3a94a17d74aad59e9cb20",
+    "native_tensor_frame_f4.py": "cb8a37627af570c18a06c1319abbebfaf2a0fe3cff75f14e2c37a28aa2b379b5",
+    "native_tensor_frame_f4.cpp": "cd540ab94c5e807aa1d332f7d93b2facc3264350b2a36f81357ed0628f9e04fe",
+    "pure_two_copy_frames.py": "17c478a4333c0b12fa049b60c1a6c1438a0f80d4ab8d57603a3cee233d0ece2a",
+    "native_rank_one_smith_f4.py": "f4ab4a1fe764e255849a83a54672018fb91e98503e759c663ad4d963fbd21fcf",
+    "native_rank_one_smith_f4.cpp": "92f37ba7b46e82a6bb3d00874a73a42f4e49b002f967f05056cb42ed77baa9e9",
+    "native_rectangular_smith_f4.cpp": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6"
+  }
+}
