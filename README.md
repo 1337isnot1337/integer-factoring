@@ -75,6 +75,8 @@ No uniform factoring exponent above `1/2` is proved here. One open approach seek
 
 See the [research index](research/INDEX.md) for completed arguments, scoped obstructions, and older candidates. Active work can also appear in [open pull requests](https://github.com/1337isnot1337/integer-factoring/pulls); branch research is not automatically a result on `main`.
 
+The [binary quadratic catalogue](research/binary-quadratic-catalogue.md) checks all 65,536 scalar binary interpolations with the stated identity and crossing endpoints. Their ungauged Smith pressure has sharp all-scale minimum `256/27`; this supplies no stronger factoring exponent. Reproduce with `python3 tools/check_quadratic_crossings.py --full`; the default command checks representatives and an additional sample.
+
 ## Contribution and attribution
 
 Start with the [contributor quickstart](docs/START_HERE.md) and
