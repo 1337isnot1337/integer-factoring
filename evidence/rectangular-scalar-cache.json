@@ -1,0 +1,117 @@
+{
+  "status": "exact affine quartic cache and conservative cutoff controls",
+  "cases": [
+    {
+      "place": "infinity",
+      "M": 4,
+      "quartic_P": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "quartic_Q": [
+        [
+          2,
+          -1
+        ]
+      ],
+      "exact_rational_entries_checked": 9216,
+      "truncated_entries_checked": 9216,
+      "truncated_known_below": -1,
+      "combination_seconds": 0.021599978000267583
+    },
+    {
+      "place": "infinity",
+      "M": 4,
+      "quartic_P": [
+        [
+          1,
+          3
+        ]
+      ],
+      "quartic_Q": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "exact_rational_entries_checked": 9216,
+      "truncated_entries_checked": 9216,
+      "truncated_known_below": -3,
+      "combination_seconds": 0.0060299489996396005
+    },
+    {
+      "place": "zero",
+      "M": 4,
+      "quartic_P": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "quartic_Q": [
+        [
+          2,
+          -1
+        ]
+      ],
+      "exact_rational_entries_checked": 36864,
+      "truncated_entries_checked": 36864,
+      "truncated_known_below": 10,
+      "combination_seconds": 0.03310635200023171
+    },
+    {
+      "place": "zero",
+      "M": 4,
+      "quartic_P": [
+        [
+          1,
+          3
+        ]
+      ],
+      "quartic_Q": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "exact_rational_entries_checked": 36864,
+      "truncated_entries_checked": 36864,
+      "truncated_known_below": 12,
+      "combination_seconds": 0.03360240099982548
+    }
+  ]
+}

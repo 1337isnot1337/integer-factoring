@@ -1,0 +1,125 @@
+{
+  "status": "exact cached coordinate updates agree with independently rebuilt CAR matrices",
+  "cases": [
+    {
+      "place": "infinity",
+      "M": 4,
+      "case": "common_flag",
+      "exact_rational_entries_checked": 36864,
+      "truncated_entries_checked": 36864,
+      "truncated_known_below": -6,
+      "transform_seconds": 0.07244933599986325,
+      "precision_certificate": {
+        "input_exact": false,
+        "input_uniform_known_below": -4,
+        "steps": [
+          {
+            "side": "output",
+            "nonidentity_entries": 1,
+            "unit_denominator_padding": 0,
+            "minimum_laurent_shift": -2,
+            "known_below_after_stage": -6
+          },
+          {
+            "side": "input",
+            "nonidentity_entries": 1,
+            "unit_denominator_padding": 0,
+            "minimum_laurent_shift": 0,
+            "known_below_after_stage": -6
+          }
+        ],
+        "output_uniform_known_below": -6
+      }
+    },
+    {
+      "place": "infinity",
+      "M": 4,
+      "case": "arbitrary_identity_transport",
+      "exact_rational_entries_checked": 36864,
+      "truncated_entries_checked": 36864,
+      "truncated_known_below": -20,
+      "transform_seconds": 0.1864411999999902,
+      "precision_certificate": {
+        "input_exact": false,
+        "input_uniform_known_below": -12,
+        "steps": [
+          {
+            "side": "output",
+            "nonidentity_entries": 2,
+            "unit_denominator_padding": 2,
+            "minimum_laurent_shift": 0,
+            "known_below_after_stage": -12
+          },
+          {
+            "side": "input",
+            "nonidentity_entries": 2,
+            "unit_denominator_padding": 2,
+            "minimum_laurent_shift": -8,
+            "known_below_after_stage": -20
+          }
+        ],
+        "output_uniform_known_below": -20
+      }
+    },
+    {
+      "place": "zero",
+      "M": 4,
+      "case": "common_flag",
+      "exact_rational_entries_checked": 36864,
+      "truncated_entries_checked": 36864,
+      "truncated_known_below": 5,
+      "transform_seconds": 0.06962867399988681,
+      "precision_certificate": {
+        "input_exact": false,
+        "input_uniform_known_below": 11,
+        "steps": [
+          {
+            "side": "output",
+            "nonidentity_entries": 1,
+            "unit_denominator_padding": 0,
+            "minimum_laurent_shift": -6,
+            "known_below_after_stage": 5
+          },
+          {
+            "side": "input",
+            "nonidentity_entries": 1,
+            "unit_denominator_padding": 0,
+            "minimum_laurent_shift": 0,
+            "known_below_after_stage": 5
+          }
+        ],
+        "output_uniform_known_below": 5
+      }
+    },
+    {
+      "place": "zero",
+      "M": 4,
+      "case": "arbitrary_identity_transport",
+      "exact_rational_entries_checked": 36864,
+      "truncated_entries_checked": 36864,
+      "truncated_known_below": 4,
+      "transform_seconds": 0.1830616709999049,
+      "precision_certificate": {
+        "input_exact": false,
+        "input_uniform_known_below": 4,
+        "steps": [
+          {
+            "side": "output",
+            "nonidentity_entries": 2,
+            "unit_denominator_padding": 2,
+            "minimum_laurent_shift": 0,
+            "known_below_after_stage": 4
+          },
+          {
+            "side": "input",
+            "nonidentity_entries": 2,
+            "unit_denominator_padding": 2,
+            "minimum_laurent_shift": 0,
+            "known_below_after_stage": 4
+          }
+        ],
+        "output_uniform_known_below": 4
+      }
+    }
+  ]
+}

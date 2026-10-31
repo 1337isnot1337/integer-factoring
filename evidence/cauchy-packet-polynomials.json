@@ -1,0 +1,48 @@
+{
+  "status": "pass",
+  "affine_realizations": 28,
+  "global_identity_coefficients": 420,
+  "literal_boolean_sums": 2,
+  "odd_root_local_contents": 60,
+  "binary_packet_centers": [
+    -3,
+    -1,
+    1,
+    3
+  ],
+  "binary_packet_contents": [
+    12,
+    14,
+    13,
+    11
+  ],
+  "binary_packet_coefficients_checked": 116,
+  "eight_wire_centers": [
+    -7,
+    -6,
+    -5,
+    -4,
+    -3,
+    -2,
+    -1,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "eight_wire_coefficients_checked": 1694,
+  "eight_wire_required_content": 33,
+  "eight_wire_creation_precision": 33,
+  "eight_wire_origin_value": 494022085,
+  "canonical_lift_negative_control_value": 6,
+  "negative_controls": 5,
+  "source_sha256": {
+    "check_cauchy_packet_polynomials.py": "d44f781f04d4cd401410fb3f3b039d23f90ce7fe8eac1741d7ab6bdb6e9a44de",
+    "cauchy_packet_polynomials.py": "92d102c11cc42db9caadd028b5552b068ae9d734c46a4c4f5791662cc5be83cc",
+    "cauchy-packet-witness.json": "137b06c77faf12b2674c12de9875fea4394ebca7f0b8d5fea423b33716d744a9"
+  },
+  "scope": "The affine realization has an all-size proof. The two packet witnesses are finite exact certificates. Neither yields an asymptotic precision lower bound or an improved factoring score. The 33-bit witness uses 33-bit input representatives and does not prove a 33-bit added loss."
+}

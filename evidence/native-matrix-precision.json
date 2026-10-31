@@ -1,0 +1,53 @@
+{
+  "status": "pass",
+  "exact_minors": 38,
+  "wide_cases": [
+    {
+      "infinity": false,
+      "precision": 4096,
+      "orders": [
+        0.0,
+        700.0,
+        1500.0
+      ]
+    },
+    {
+      "infinity": false,
+      "precision": 8192,
+      "orders": [
+        0.0,
+        700.0,
+        1500.0
+      ]
+    },
+    {
+      "infinity": true,
+      "precision": 4096,
+      "orders": [
+        -1500.0,
+        -1000.0,
+        300.0
+      ]
+    },
+    {
+      "infinity": true,
+      "precision": 8192,
+      "orders": [
+        -1500.0,
+        -1000.0,
+        300.0
+      ]
+    }
+  ],
+  "narrow_window_missing_pivot_rejected": true,
+  "expanded_window_orders": [
+    0,
+    600
+  ],
+  "source_sha256": {
+    "native_matrix_smith_f4.py": "c08da20f1938a371b438e32fbc6a8f6766b48c2cfee5bcd1c956ce137dc70203",
+    "native_matrix_smith_f4.cpp": "5ec995cd04563c2fa99b69afd71bf476d5ca885f1f90377490c30e5a1a55f330",
+    "native_rectangular_smith_f4.cpp": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6",
+    "check_native_matrix_precision.py": "63d7e4955a162281167472b0404f237c5dff16df6164e2648346cc17686a38da"
+  }
+}

@@ -1,0 +1,445 @@
+{
+  "status": "independent original-tensor weighted profiles of refined repairs",
+  "cases": [
+    {
+      "place": "infinity",
+      "M": 4,
+      "cases": [
+        {
+          "case": 0,
+          "orders_checked": 192,
+          "maximum_error": 0.0,
+          "lambda": 0,
+          "mu": 0,
+          "v": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "y": [
+            0,
+            0,
+            0
+          ],
+          "u": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "case": 1,
+          "orders_checked": 192,
+          "maximum_error": 0.0,
+          "lambda": 0.75,
+          "mu": -2.0,
+          "v": [
+            1.75,
+            -0.25,
+            -1.0,
+            0.75
+          ],
+          "y": [
+            1.5,
+            -0.5,
+            -0.5
+          ],
+          "u": [
+            0.25,
+            1.5,
+            -0.75
+          ]
+        }
+      ],
+      "row": 3,
+      "column": 8,
+      "coefficient": 2
+    },
+    {
+      "place": "zero",
+      "M": 4,
+      "cases": [
+        {
+          "case": 0,
+          "orders_checked": 192,
+          "maximum_error": 0.0,
+          "lambda": 0,
+          "mu": 0,
+          "v": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "y": [
+            0,
+            0,
+            0
+          ],
+          "u": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "case": 1,
+          "orders_checked": 192,
+          "maximum_error": 0.0,
+          "lambda": -0.5,
+          "mu": 0.75,
+          "v": [
+            1.25,
+            0.25,
+            1.5,
+            1.0
+          ],
+          "y": [
+            0.0,
+            1.25,
+            -0.75
+          ],
+          "u": [
+            -0.75,
+            1.25,
+            -1.75
+          ]
+        }
+      ],
+      "row": 3,
+      "column": 8,
+      "coefficient": 2
+    },
+    {
+      "place": "infinity",
+      "M": 4,
+      "cases": [
+        {
+          "case": 0,
+          "orders_checked": 192,
+          "maximum_error": 0.0,
+          "lambda": 0,
+          "mu": 0,
+          "v": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "y": [
+            0,
+            0,
+            0
+          ],
+          "u": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "case": 1,
+          "orders_checked": 192,
+          "maximum_error": 0.0,
+          "lambda": 0.75,
+          "mu": -2.0,
+          "v": [
+            1.75,
+            -0.25,
+            -1.0,
+            0.75
+          ],
+          "y": [
+            1.5,
+            -0.5,
+            -0.5
+          ],
+          "u": [
+            0.25,
+            1.5,
+            -0.75
+          ]
+        }
+      ],
+      "row": 8,
+      "column": 3,
+      "coefficient": 2
+    },
+    {
+      "place": "zero",
+      "M": 4,
+      "cases": [
+        {
+          "case": 0,
+          "orders_checked": 192,
+          "maximum_error": 0.0,
+          "lambda": 0,
+          "mu": 0,
+          "v": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "y": [
+            0,
+            0,
+            0
+          ],
+          "u": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "case": 1,
+          "orders_checked": 192,
+          "maximum_error": 0.0,
+          "lambda": -0.5,
+          "mu": 0.75,
+          "v": [
+            1.25,
+            0.25,
+            1.5,
+            1.0
+          ],
+          "y": [
+            0.0,
+            1.25,
+            -0.75
+          ],
+          "u": [
+            -0.75,
+            1.25,
+            -1.75
+          ]
+        }
+      ],
+      "row": 8,
+      "column": 3,
+      "coefficient": 2
+    },
+    {
+      "place": "infinity",
+      "M": 4,
+      "cases": [
+        {
+          "case": 0,
+          "orders_checked": 192,
+          "maximum_error": 0.0,
+          "lambda": 0,
+          "mu": 0,
+          "v": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "y": [
+            0,
+            0,
+            0
+          ],
+          "u": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "case": 1,
+          "orders_checked": 192,
+          "maximum_error": 0.0,
+          "lambda": 0.75,
+          "mu": -2.0,
+          "v": [
+            1.75,
+            -0.25,
+            -1.0,
+            0.75
+          ],
+          "y": [
+            1.5,
+            -0.5,
+            -0.5
+          ],
+          "u": [
+            0.25,
+            1.5,
+            -0.75
+          ]
+        }
+      ],
+      "row": 10,
+      "column": 11,
+      "coefficient": 2
+    },
+    {
+      "place": "zero",
+      "M": 4,
+      "cases": [
+        {
+          "case": 0,
+          "orders_checked": 192,
+          "maximum_error": 0.0,
+          "lambda": 0,
+          "mu": 0,
+          "v": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "y": [
+            0,
+            0,
+            0
+          ],
+          "u": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "case": 1,
+          "orders_checked": 192,
+          "maximum_error": 0.0,
+          "lambda": -0.5,
+          "mu": 0.75,
+          "v": [
+            1.25,
+            0.25,
+            1.5,
+            1.0
+          ],
+          "y": [
+            0.0,
+            1.25,
+            -0.75
+          ],
+          "u": [
+            -0.75,
+            1.25,
+            -1.75
+          ]
+        }
+      ],
+      "row": 10,
+      "column": 11,
+      "coefficient": 2
+    },
+    {
+      "place": "infinity",
+      "M": 4,
+      "cases": [
+        {
+          "case": 0,
+          "orders_checked": 192,
+          "maximum_error": 0.0,
+          "lambda": 0,
+          "mu": 0,
+          "v": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "y": [
+            0,
+            0,
+            0
+          ],
+          "u": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "case": 1,
+          "orders_checked": 192,
+          "maximum_error": 0.0,
+          "lambda": 0.75,
+          "mu": -2.0,
+          "v": [
+            1.75,
+            -0.25,
+            -1.0,
+            0.75
+          ],
+          "y": [
+            1.5,
+            -0.5,
+            -0.5
+          ],
+          "u": [
+            0.25,
+            1.5,
+            -0.75
+          ]
+        }
+      ],
+      "row": 1,
+      "column": 11,
+      "coefficient": 2
+    },
+    {
+      "place": "zero",
+      "M": 4,
+      "cases": [
+        {
+          "case": 0,
+          "orders_checked": 192,
+          "maximum_error": 0.0,
+          "lambda": 0,
+          "mu": 0,
+          "v": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "y": [
+            0,
+            0,
+            0
+          ],
+          "u": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "case": 1,
+          "orders_checked": 192,
+          "maximum_error": 0.0,
+          "lambda": -0.5,
+          "mu": 0.75,
+          "v": [
+            1.25,
+            0.25,
+            1.5,
+            1.0
+          ],
+          "y": [
+            0.0,
+            1.25,
+            -0.75
+          ],
+          "u": [
+            -0.75,
+            1.25,
+            -1.75
+          ]
+        }
+      ],
+      "row": 1,
+      "column": 11,
+      "coefficient": 2
+    }
+  ]
+}

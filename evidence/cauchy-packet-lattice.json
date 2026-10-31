@@ -1,0 +1,66 @@
+{
+  "status": "pass",
+  "L": 8,
+  "fixed_row_state": 0,
+  "polynomial_degree_limit": 120,
+  "matrix_shape": [
+    128,
+    256
+  ],
+  "jet_order_per_center": 8,
+  "modular_precision": 32,
+  "proved_rational_rank": 121,
+  "maximum_pivot_valuation": 26,
+  "pivot_valuation_multiplicities": {
+    "0": 16,
+    "1": 16,
+    "2": 16,
+    "3": 10,
+    "5": 6,
+    "6": 13,
+    "7": 1,
+    "8": 2,
+    "9": 11,
+    "10": 2,
+    "11": 3,
+    "12": 1,
+    "13": 8,
+    "16": 7,
+    "22": 2,
+    "23": 1,
+    "24": 5,
+    "26": 1
+  },
+  "integral_monomials_realized": 121,
+  "wire_scale_tapered_witnesses_realized": [
+    {
+      "M": 8,
+      "u": 1,
+      "degree": 64
+    },
+    {
+      "M": 8,
+      "u": 2,
+      "degree": 80
+    },
+    {
+      "M": 8,
+      "u": 3,
+      "degree": 68
+    }
+  ],
+  "proper_lattice_negative_control": {
+    "pivot": 48,
+    "pivot_valuation": 3,
+    "right_valuation": 0
+  },
+  "negative_control_leading_denominator_exponent": 112,
+  "maximum_packet_leading_denominator_exponent": 88,
+  "scaled_negative_control_realized": 26,
+  "source_sha256": {
+    "tools/check_cauchy_packet_lattice.py": "36d40090476edb502c3d3427c3f9a20657ff0cb153232ce0fd3eefc76187830d",
+    "tools/cauchy_packet_polynomials.py": "92d102c11cc42db9caadd028b5552b068ae9d734c46a4c4f5791662cc5be83cc",
+    "research/eight-wire-cauchy-lattice.md": "baaa2339fb070197938700399b1798a2efbf65d2e4cb4afc2b2078a9937bde80"
+  },
+  "scope": "An exact finite eight-wire realization theorem over rationals with odd denominators. It provides no all-size construction, no canonical low-precision realization, and no factoring exponent improvement."
+}

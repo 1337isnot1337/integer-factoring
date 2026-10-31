@@ -1,0 +1,941 @@
+{
+  "status": "independent dense CAR and gauge controls for odd core perturbations",
+  "cases": [
+    {
+      "case": "mixed_single",
+      "place": "infinity",
+      "M": 4,
+      "full_core": false,
+      "full_alphabet_gamma": null,
+      "extra_monomials": [
+        [
+          0,
+          3,
+          0,
+          null,
+          [
+            [
+              2,
+              -1
+            ]
+          ],
+          0
+        ]
+      ],
+      "global_w_power": 1,
+      "entrywise_checks": [
+        {
+          "place": "infinity",
+          "M": 4,
+          "z": 2,
+          "entries_checked": 9216,
+          "zero_rows_checked": 32,
+          "zero_columns_checked": 32
+        },
+        {
+          "place": "infinity",
+          "M": 4,
+          "z": 3,
+          "entries_checked": 9216,
+          "zero_rows_checked": 32,
+          "zero_columns_checked": 32
+        }
+      ],
+      "weighted_profiles": [
+        {
+          "case": 0,
+          "orders_checked": 192,
+          "maximum_error": 0.0,
+          "lambda": 0,
+          "mu": 0,
+          "v": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "y": [
+            0,
+            0,
+            0
+          ],
+          "u": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "case": 1,
+          "orders_checked": 192,
+          "maximum_error": 0.0,
+          "lambda": 0.75,
+          "mu": -2.0,
+          "v": [
+            1.75,
+            -0.25,
+            -1.0,
+            0.75
+          ],
+          "y": [
+            1.5,
+            -0.5,
+            -0.5
+          ],
+          "u": [
+            0.25,
+            1.5,
+            -0.75
+          ]
+        }
+      ]
+    },
+    {
+      "case": "mixed_pair_and_pole",
+      "place": "infinity",
+      "M": 4,
+      "full_core": false,
+      "full_alphabet_gamma": null,
+      "extra_monomials": [
+        [
+          0,
+          3,
+          0,
+          null,
+          [
+            [
+              1,
+              0
+            ]
+          ],
+          0
+        ],
+        [
+          0,
+          0,
+          null,
+          3,
+          [
+            [
+              2,
+              -2
+            ]
+          ],
+          0
+        ],
+        [
+          null,
+          3,
+          0,
+          3,
+          [
+            [
+              3,
+              1
+            ]
+          ],
+          1
+        ]
+      ],
+      "global_w_power": 2,
+      "entrywise_checks": [
+        {
+          "place": "infinity",
+          "M": 4,
+          "z": 2,
+          "entries_checked": 9216,
+          "zero_rows_checked": 32,
+          "zero_columns_checked": 32
+        },
+        {
+          "place": "infinity",
+          "M": 4,
+          "z": 3,
+          "entries_checked": 9216,
+          "zero_rows_checked": 32,
+          "zero_columns_checked": 32
+        }
+      ],
+      "weighted_profiles": [
+        {
+          "case": 0,
+          "orders_checked": 192,
+          "maximum_error": 0.0,
+          "lambda": 0,
+          "mu": 0,
+          "v": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "y": [
+            0,
+            0,
+            0
+          ],
+          "u": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "case": 1,
+          "orders_checked": 192,
+          "maximum_error": 0.0,
+          "lambda": 0.75,
+          "mu": -2.0,
+          "v": [
+            1.75,
+            -0.25,
+            -1.0,
+            0.75
+          ],
+          "y": [
+            1.5,
+            -0.5,
+            -0.5
+          ],
+          "u": [
+            0.25,
+            1.5,
+            -0.75
+          ]
+        }
+      ]
+    },
+    {
+      "case": "full_gaussian_pair",
+      "place": "infinity",
+      "M": 4,
+      "full_core": false,
+      "full_alphabet_gamma": 0,
+      "extra_monomials": [
+        [
+          0,
+          3,
+          0,
+          null,
+          [
+            [
+              1,
+              0
+            ]
+          ],
+          0
+        ],
+        [
+          0,
+          0,
+          null,
+          3,
+          [
+            [
+              2,
+              -2
+            ]
+          ],
+          0
+        ]
+      ],
+      "global_w_power": 2,
+      "entrywise_checks": [
+        {
+          "place": "infinity",
+          "M": 4,
+          "z": 2,
+          "entries_checked": 16384,
+          "zero_rows_checked": 0,
+          "zero_columns_checked": 0
+        },
+        {
+          "place": "infinity",
+          "M": 4,
+          "z": 3,
+          "entries_checked": 16384,
+          "zero_rows_checked": 0,
+          "zero_columns_checked": 0
+        }
+      ],
+      "weighted_profiles": [
+        {
+          "case": 0,
+          "orders_checked": 256,
+          "maximum_error": 0.0
+        },
+        {
+          "case": 1,
+          "orders_checked": 256,
+          "maximum_error": 0.0
+        }
+      ]
+    },
+    {
+      "case": "full_gamma2_single",
+      "place": "infinity",
+      "M": 4,
+      "full_core": false,
+      "full_alphabet_gamma": 2,
+      "extra_monomials": [
+        [
+          0,
+          3,
+          0,
+          null,
+          [
+            [
+              2,
+              -1
+            ]
+          ],
+          0
+        ]
+      ],
+      "global_w_power": 1,
+      "entrywise_checks": [
+        {
+          "place": "infinity",
+          "M": 4,
+          "z": 2,
+          "entries_checked": 16384,
+          "zero_rows_checked": 0,
+          "zero_columns_checked": 0
+        },
+        {
+          "place": "infinity",
+          "M": 4,
+          "z": 3,
+          "entries_checked": 16384,
+          "zero_rows_checked": 0,
+          "zero_columns_checked": 0
+        }
+      ],
+      "weighted_profiles": [
+        {
+          "case": 0,
+          "orders_checked": 256,
+          "maximum_error": 0.0
+        },
+        {
+          "case": 1,
+          "orders_checked": 256,
+          "maximum_error": 0.0
+        }
+      ]
+    },
+    {
+      "case": "full_gamma2_pair_and_pole",
+      "place": "infinity",
+      "M": 4,
+      "full_core": false,
+      "full_alphabet_gamma": 2,
+      "extra_monomials": [
+        [
+          0,
+          3,
+          0,
+          null,
+          [
+            [
+              1,
+              0
+            ]
+          ],
+          0
+        ],
+        [
+          0,
+          0,
+          null,
+          3,
+          [
+            [
+              2,
+              -2
+            ]
+          ],
+          0
+        ],
+        [
+          null,
+          3,
+          0,
+          3,
+          [
+            [
+              3,
+              1
+            ]
+          ],
+          1
+        ]
+      ],
+      "global_w_power": 2,
+      "entrywise_checks": [
+        {
+          "place": "infinity",
+          "M": 4,
+          "z": 2,
+          "entries_checked": 16384,
+          "zero_rows_checked": 0,
+          "zero_columns_checked": 0
+        },
+        {
+          "place": "infinity",
+          "M": 4,
+          "z": 3,
+          "entries_checked": 16384,
+          "zero_rows_checked": 0,
+          "zero_columns_checked": 0
+        }
+      ],
+      "weighted_profiles": [
+        {
+          "case": 0,
+          "orders_checked": 256,
+          "maximum_error": 0.0
+        },
+        {
+          "case": 1,
+          "orders_checked": 256,
+          "maximum_error": 0.0
+        }
+      ]
+    },
+    {
+      "case": "full_gamma2_xT_pair",
+      "place": "infinity",
+      "M": 4,
+      "full_core": true,
+      "full_alphabet_gamma": 2,
+      "extra_monomials": [
+        [
+          0,
+          null,
+          0,
+          3,
+          [
+            [
+              1,
+              0
+            ]
+          ],
+          0
+        ],
+        [
+          3,
+          3,
+          null,
+          3,
+          [
+            [
+              2,
+              2
+            ]
+          ],
+          0
+        ]
+      ],
+      "global_w_power": 0,
+      "entrywise_checks": [
+        {
+          "place": "infinity",
+          "M": 4,
+          "z": 2,
+          "entries_checked": 65536,
+          "zero_rows_checked": 0,
+          "zero_columns_checked": 0
+        },
+        {
+          "place": "infinity",
+          "M": 4,
+          "z": 3,
+          "entries_checked": 65536,
+          "zero_rows_checked": 0,
+          "zero_columns_checked": 0
+        }
+      ],
+      "weighted_profiles": [
+        {
+          "case": 0,
+          "orders_checked": 256,
+          "maximum_error": 0.0
+        },
+        {
+          "case": 1,
+          "orders_checked": 256,
+          "maximum_error": 0.0
+        }
+      ]
+    },
+    {
+      "case": "mixed_single",
+      "place": "zero",
+      "M": 4,
+      "full_core": false,
+      "full_alphabet_gamma": null,
+      "extra_monomials": [
+        [
+          0,
+          3,
+          0,
+          null,
+          [
+            [
+              2,
+              -1
+            ]
+          ],
+          0
+        ]
+      ],
+      "global_w_power": 1,
+      "entrywise_checks": [
+        {
+          "place": "zero",
+          "M": 4,
+          "z": 2,
+          "entries_checked": 36864,
+          "zero_rows_checked": 64,
+          "zero_columns_checked": 64
+        },
+        {
+          "place": "zero",
+          "M": 4,
+          "z": 3,
+          "entries_checked": 36864,
+          "zero_rows_checked": 64,
+          "zero_columns_checked": 64
+        }
+      ],
+      "weighted_profiles": [
+        {
+          "case": 0,
+          "orders_checked": 192,
+          "maximum_error": 0.0,
+          "lambda": 0,
+          "mu": 0,
+          "v": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "y": [
+            0,
+            0,
+            0
+          ],
+          "u": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "case": 1,
+          "orders_checked": 192,
+          "maximum_error": 0.0,
+          "lambda": -0.5,
+          "mu": 0.75,
+          "v": [
+            1.25,
+            0.25,
+            1.5,
+            1.0
+          ],
+          "y": [
+            0.0,
+            1.25,
+            -0.75
+          ],
+          "u": [
+            -0.75,
+            1.25,
+            -1.75
+          ]
+        }
+      ]
+    },
+    {
+      "case": "mixed_pair_and_pole",
+      "place": "zero",
+      "M": 4,
+      "full_core": false,
+      "full_alphabet_gamma": null,
+      "extra_monomials": [
+        [
+          0,
+          3,
+          0,
+          null,
+          [
+            [
+              1,
+              0
+            ]
+          ],
+          0
+        ],
+        [
+          0,
+          0,
+          null,
+          3,
+          [
+            [
+              2,
+              -2
+            ]
+          ],
+          0
+        ],
+        [
+          null,
+          3,
+          0,
+          3,
+          [
+            [
+              3,
+              1
+            ]
+          ],
+          1
+        ]
+      ],
+      "global_w_power": 2,
+      "entrywise_checks": [
+        {
+          "place": "zero",
+          "M": 4,
+          "z": 2,
+          "entries_checked": 36864,
+          "zero_rows_checked": 64,
+          "zero_columns_checked": 64
+        },
+        {
+          "place": "zero",
+          "M": 4,
+          "z": 3,
+          "entries_checked": 36864,
+          "zero_rows_checked": 64,
+          "zero_columns_checked": 64
+        }
+      ],
+      "weighted_profiles": [
+        {
+          "case": 0,
+          "orders_checked": 192,
+          "maximum_error": 0.0,
+          "lambda": 0,
+          "mu": 0,
+          "v": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "y": [
+            0,
+            0,
+            0
+          ],
+          "u": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "case": 1,
+          "orders_checked": 192,
+          "maximum_error": 0.0,
+          "lambda": -0.5,
+          "mu": 0.75,
+          "v": [
+            1.25,
+            0.25,
+            1.5,
+            1.0
+          ],
+          "y": [
+            0.0,
+            1.25,
+            -0.75
+          ],
+          "u": [
+            -0.75,
+            1.25,
+            -1.75
+          ]
+        }
+      ]
+    },
+    {
+      "case": "full_gaussian_pair",
+      "place": "zero",
+      "M": 4,
+      "full_core": false,
+      "full_alphabet_gamma": 0,
+      "extra_monomials": [
+        [
+          0,
+          3,
+          0,
+          null,
+          [
+            [
+              1,
+              0
+            ]
+          ],
+          0
+        ],
+        [
+          0,
+          0,
+          null,
+          3,
+          [
+            [
+              2,
+              -2
+            ]
+          ],
+          0
+        ]
+      ],
+      "global_w_power": 2,
+      "entrywise_checks": [
+        {
+          "place": "zero",
+          "M": 4,
+          "z": 2,
+          "entries_checked": 65536,
+          "zero_rows_checked": 0,
+          "zero_columns_checked": 0
+        },
+        {
+          "place": "zero",
+          "M": 4,
+          "z": 3,
+          "entries_checked": 65536,
+          "zero_rows_checked": 0,
+          "zero_columns_checked": 0
+        }
+      ],
+      "weighted_profiles": [
+        {
+          "case": 0,
+          "orders_checked": 256,
+          "maximum_error": 0.0
+        },
+        {
+          "case": 1,
+          "orders_checked": 256,
+          "maximum_error": 0.0
+        }
+      ]
+    },
+    {
+      "case": "full_gamma2_single",
+      "place": "zero",
+      "M": 4,
+      "full_core": false,
+      "full_alphabet_gamma": 2,
+      "extra_monomials": [
+        [
+          0,
+          3,
+          0,
+          null,
+          [
+            [
+              2,
+              -1
+            ]
+          ],
+          0
+        ]
+      ],
+      "global_w_power": 1,
+      "entrywise_checks": [
+        {
+          "place": "zero",
+          "M": 4,
+          "z": 2,
+          "entries_checked": 65536,
+          "zero_rows_checked": 0,
+          "zero_columns_checked": 0
+        },
+        {
+          "place": "zero",
+          "M": 4,
+          "z": 3,
+          "entries_checked": 65536,
+          "zero_rows_checked": 0,
+          "zero_columns_checked": 0
+        }
+      ],
+      "weighted_profiles": [
+        {
+          "case": 0,
+          "orders_checked": 256,
+          "maximum_error": 0.0
+        },
+        {
+          "case": 1,
+          "orders_checked": 256,
+          "maximum_error": 0.0
+        }
+      ]
+    },
+    {
+      "case": "full_gamma2_pair_and_pole",
+      "place": "zero",
+      "M": 4,
+      "full_core": false,
+      "full_alphabet_gamma": 2,
+      "extra_monomials": [
+        [
+          0,
+          3,
+          0,
+          null,
+          [
+            [
+              1,
+              0
+            ]
+          ],
+          0
+        ],
+        [
+          0,
+          0,
+          null,
+          3,
+          [
+            [
+              2,
+              -2
+            ]
+          ],
+          0
+        ],
+        [
+          null,
+          3,
+          0,
+          3,
+          [
+            [
+              3,
+              1
+            ]
+          ],
+          1
+        ]
+      ],
+      "global_w_power": 2,
+      "entrywise_checks": [
+        {
+          "place": "zero",
+          "M": 4,
+          "z": 2,
+          "entries_checked": 65536,
+          "zero_rows_checked": 0,
+          "zero_columns_checked": 0
+        },
+        {
+          "place": "zero",
+          "M": 4,
+          "z": 3,
+          "entries_checked": 65536,
+          "zero_rows_checked": 0,
+          "zero_columns_checked": 0
+        }
+      ],
+      "weighted_profiles": [
+        {
+          "case": 0,
+          "orders_checked": 256,
+          "maximum_error": 0.0
+        },
+        {
+          "case": 1,
+          "orders_checked": 256,
+          "maximum_error": 0.0
+        }
+      ]
+    },
+    {
+      "case": "full_gamma2_xT_pair",
+      "place": "zero",
+      "M": 4,
+      "full_core": true,
+      "full_alphabet_gamma": 2,
+      "extra_monomials": [
+        [
+          0,
+          null,
+          0,
+          3,
+          [
+            [
+              1,
+              0
+            ]
+          ],
+          0
+        ],
+        [
+          3,
+          3,
+          null,
+          3,
+          [
+            [
+              2,
+              2
+            ]
+          ],
+          0
+        ]
+      ],
+      "global_w_power": 0,
+      "entrywise_checks": [
+        {
+          "place": "zero",
+          "M": 4,
+          "z": 2,
+          "entries_checked": 65536,
+          "zero_rows_checked": 0,
+          "zero_columns_checked": 0
+        },
+        {
+          "place": "zero",
+          "M": 4,
+          "z": 3,
+          "entries_checked": 65536,
+          "zero_rows_checked": 0,
+          "zero_columns_checked": 0
+        }
+      ],
+      "weighted_profiles": [
+        {
+          "case": 0,
+          "orders_checked": 256,
+          "maximum_error": 0.0
+        },
+        {
+          "case": 1,
+          "orders_checked": 256,
+          "maximum_error": 0.0
+        }
+      ]
+    }
+  ]
+}

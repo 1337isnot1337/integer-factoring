@@ -1,0 +1,48 @@
+{
+  "status": "pass",
+  "creation_precision": 1,
+  "length_two_odd_pairs": 120,
+  "length_two_maximum_content": 2,
+  "length_four_maximum_content": 11,
+  "length_four_coefficient_matrices": 116,
+  "adaptive_positive_endpoint_checks": 128,
+  "translated_endpoint_moment_checks": 4624,
+  "length_four_all_binary_pairs": 4294967296,
+  "runs": [
+    {
+      "found": false,
+      "precision": 12,
+      "column_tensors_tested": 65535,
+      "odd_original_pairs_covered": 2147450880,
+      "right_subset_queries": 16776960,
+      "projection_survivors": 131,
+      "projection_seed": 123456789123
+    },
+    {
+      "found": false,
+      "precision": 12,
+      "column_tensors_tested": 65535,
+      "odd_original_pairs_covered": 2147450880,
+      "right_subset_queries": 16776960,
+      "projection_survivors": 250,
+      "projection_seed": 808005192913
+    },
+    {
+      "found": true,
+      "precision": 11,
+      "row_tensor_mask": 160,
+      "column_tensor_mask": 33,
+      "column_tensors_tested": 62,
+      "right_subset_queries": 15617,
+      "projection_survivors": 3,
+      "projection_seed": 123456789123
+    }
+  ],
+  "source_sha256": {
+    "tools/canonical_packet_exhaustive.cpp": "2be3eaeebd6ea90e84c6246fe042fa5a79c0ce68f1833f4c518f7420b7274730",
+    "tools/check_canonical_packet_exhaustive.py": "c3fbbf725a75de41e2f55e010247f1e5075a328020f551ca600d1d62b81ef403",
+    "tools/cauchy_packet_polynomials.py": "92d102c11cc42db9caadd028b5552b068ae9d734c46a4c4f5791662cc5be83cc",
+    "research/canonical-packet-upper-frontier.md": "289923bf11e11f533d20c65ece6f080eba1db45e3567bff577a342e3e61be8cb"
+  },
+  "scope": "Exact finite upper and lower bounds on odd-center visibility for canonical binary tensors. This does not prove an all-size upper bound or construct a decoder of original parity from the local data."
+}

@@ -101,6 +101,7 @@ verify-crossing-interpolation:
 	python3 tools/check_paired_type_crossing_pressure.py
 	python3 tools/check_two_parameter_even_core.py
 	python3 tools/check_rectangular_residual_repair.py
+	python3 tools/check_rectangular_f4_repair.py
 	python3 tools/check_four_parameter_even_core.py
 
 verify-smith-oracle:
@@ -114,6 +115,99 @@ verify-native-smith:
 .PHONY: verify-native-rectangular
 verify-native-rectangular:
 	python3 tools/check_native_rectangular_smith.py
+	python3 tools/check_native_rectangular_smith_f4.py
+
+.PHONY: verify-frontier-reductions verify-native-rectangular-search
+verify-frontier-reductions:
+	python3 tools/check_rectangular_f4_repair.py
+	python3 tools/check_rectangular_defect_support.py
+	python3 tools/check_one_species_dyadic_affine.py
+	python3 tools/check_pascal_complement_convolution.py
+	python3 tools/check_prime_power_vacuum.py
+	python3 tools/check_cauchy_packet_polynomials.py
+	python3 tools/check_canonical_alternating_packet.py
+	python3 tools/check_cauchy_packet_lattice.py
+
+.PHONY: verify-bounded-defect
+verify-bounded-defect:
+	python3 tools/check_rectangular_defect_core_basis.py
+	python3 tools/check_rectangular_defect_fock.py --compare-active
+	python3 tools/check_rectangular_defect_coordinates.py
+	python3 tools/check_rectangular_quartic_perturbations.py
+	python3 tools/check_rectangular_core_pressure.py
+	python3 tools/check_rectangular_refined_repairs.py
+
+verify-native-rectangular-search:
+	python3 tools/check_native_rectangular_smith_f4.py
+	python3 tools/check_native_matrix_smith_f4.py
+	python3 tools/check_matrix_f4_entry_shifts.py
+	python3 tools/check_rectangular_f4_optimizer.py
+	python3 tools/check_native_matrix_precision.py
+
+.PHONY: verify-full-core verify-canonical-packets verify-all-field-crossings
+verify-full-core:
+	python3 tools/check_rectangular_full_core_support.py
+	python3 tools/check_rectangular_defect_core_basis.py --full-core
+	python3 tools/check_rectangular_full_core_coordinates.py
+	python3 tools/check_rectangular_core_pressure.py --full-core
+	python3 tools/check_rectangular_input_repairs.py
+
+verify-canonical-packets:
+	python3 tools/check_canonical_alternating_packet.py
+	python3 tools/check_canonical_packet_exhaustive.py
+	python3 tools/check_canonical_packet_decoder.py
+
+verify-all-field-crossings:
+	python3 tools/check_all_field_pascal_crossings.py
+	python3 tools/check_graded_even_power.py
+	python3 tools/check_truncated_symmetric_crossings.py
+
+.PHONY: verify-core-transports verify-boolean-cauchy
+verify-core-transports:
+	python3 tools/check_rectangular_identity_transports.py
+	python3 tools/check_rectangular_input_coordinates.py
+	python3 tools/check_rectangular_coordinate_transforms.py
+	python3 tools/check_rectangular_scalar_cache.py
+
+verify-boolean-cauchy:
+	python3 tools/check_boolean_cauchy_smith.py
+	python3 tools/check_grouped_cauchy_inverse.py
+
+.PHONY: verify-full-alphabet verify-core-polynomials verify-leading-core
+verify-full-alphabet:
+	python3 tools/check_full_alphabet_quartic_repair.py --full
+	python3 tools/check_full_alphabet_quartic_profiles.py
+
+verify-core-polynomials:
+	python3 tools/check_rectangular_polynomial_shears.py --dense
+	python3 tools/check_rectangular_extra_quartics.py
+	python3 tools/check_rectangular_extra_coordinates.py
+
+verify-leading-core:
+	python3 tools/check_rectangular_low_background.py
+	python3 tools/check_rectangular_leading_face_lp.py
+	python3 tools/check_rectangular_leading_face_lp.py --input evidence/rectangular-full-leading-face-lp.json
+
+verify-uniform-core:
+	python3 tools/check_rectangular_uniform_entry_bounds.py
+	python3 tools/check_rectangular_balanced_dual_gaps.py
+	python3 tools/check_full_alphabet_leading_obstruction.py
+
+verify-core-monomials:
+	python3 tools/check_rectangular_core_monomials.py
+	python3 tools/check_rectangular_monomial_coordinates.py
+	python3 tools/check_rectangular_monomial_charges.py
+
+verify-critical-cubics:
+	python3 tools/check_full_alphabet_monomial_residual.py
+	python3 tools/check_full_alphabet_monomial_profiles.py
+
+verify-accelerated-interval:
+	python3 tools/check_accelerated_interval_pressure.py
+
+verify-walsh-permanents:
+	python3 tools/check_walsh_cauchy_permanents.py
+	python3 tools/check_walsh_twirl_group.py
 
 verify-controlled-smith:
 	python3 tools/check_controlled_permutation_smith.py
