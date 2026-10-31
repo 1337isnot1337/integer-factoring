@@ -88,6 +88,26 @@ merged without conflicts; its smooth-norm relation and gap checkers passed,
 as did the final documentation gate. Those later files did not modify the
 frontier sources covered by the ten focused replays.
 
+## 2026-10-31 integrated Bell and arithmetic checkpoints
+
+These are author integration records for work by Cinna Davis with substantial
+OpenAI Codex assistance. They preserve the ordinary mathematical and finite
+evidence scope; they are not independent mathematical acceptance.
+
+| PR and inspected head | Integration | Evidence and remaining scope |
+| --- | --- | --- |
+| [#41](https://github.com/1337isnot1337/integer-factoring/pull/41), `8c95d717cc30d1826f64ea2bfa93fc87a924ee50`; mathematical checkpoint `dbbd7b14d52f4ded9a85e694ce2f10573d9f3564` | Merged at `3a1cd6758393c70ee2e844ec343ecb077c16cf6f` | Bell transforms, folded/code constructions, scoped rank and pressure floors, rigidity interface, and completed finite searches. All 40 research/tool/evidence files from the checked mathematical checkpoint were compared with integrated main and retained byte for byte. `make verify`, focused Bell checks, and independent profile readbacks passed at the recorded source. The lane is released; no stronger factoring bound is claimed. |
+| [#47](https://github.com/1337isnot1337/integer-factoring/pull/47), `80d3af0602476648d13601f28ff721822aec1187`; mathematical checkpoint `2aef203c88ae8de0fa19d103bc1d70f3723c402c` | Merged at `a24247394438492dc8d1689dbfb15cdf295774e8` | Arithmetic inverse sections, complete-orbit aggregation, global modular product circuits, and valuation-separated local jets. `make verify` and the class-group integration gate passed before merge; no new Lean source or local Lean build. Global rational-factor extraction remains unresolved. The later exact rational-part identity, specialization caveat, and 192 pole controls are retained at `4f752e4c2301c899d9af51415cc2e7a844e880e6`. |
+
+The combined local default gate passed before the final documentation-only
+rebase for the rational-part checkpoint; its final documentation gate passed
+on `4f752e4` across 289 Markdown files. The intervening missing-tool restoration
+was coordinated with its source owner in
+[Discussion #51](https://github.com/1337isnot1337/integer-factoring/discussions/51).
+The active global elimination question is
+[Discussion #53](https://github.com/1337isnot1337/integer-factoring/discussions/53).
+The strongest complete factoring score remains `1/2`.
+
 ## Maintaining this record
 
 For each later decision, record the exact reviewed head, changed-file coverage,
