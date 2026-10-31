@@ -1,0 +1,829 @@
+{
+  "status": "pass",
+  "precision": 48,
+  "weighted_boolean_entry_inequalities": 66560,
+  "grouped_smith_profiles": 67,
+  "outer_charge_and_ordering_controls": 544,
+  "records": [
+    {
+      "kind": "Cauchy",
+      "L": 2,
+      "t": -1,
+      "zeta": 1,
+      "orders": {
+        "0": 2,
+        "1": 2
+      }
+    },
+    {
+      "kind": "Cauchy",
+      "L": 2,
+      "t": -1,
+      "zeta": 3,
+      "orders": {
+        "0": 2,
+        "1": 2
+      }
+    },
+    {
+      "kind": "Cauchy",
+      "L": 2,
+      "t": 1,
+      "zeta": 1,
+      "orders": {
+        "0": 2,
+        "1": 2
+      }
+    },
+    {
+      "kind": "Cauchy",
+      "L": 2,
+      "t": 1,
+      "zeta": 3,
+      "orders": {
+        "0": 2,
+        "1": 2
+      }
+    },
+    {
+      "kind": "Cauchy",
+      "L": 4,
+      "t": -3,
+      "zeta": 1,
+      "orders": {
+        "0": 2,
+        "1": 6,
+        "2": 6,
+        "3": 2
+      }
+    },
+    {
+      "kind": "Cauchy",
+      "L": 4,
+      "t": -3,
+      "zeta": 3,
+      "orders": {
+        "0": 2,
+        "1": 6,
+        "2": 6,
+        "3": 2
+      }
+    },
+    {
+      "kind": "Cauchy",
+      "L": 4,
+      "t": -2,
+      "zeta": 1,
+      "orders": {
+        "0": 4,
+        "1": 8,
+        "2": 4
+      }
+    },
+    {
+      "kind": "Cauchy",
+      "L": 4,
+      "t": -2,
+      "zeta": 3,
+      "orders": {
+        "0": 4,
+        "1": 8,
+        "2": 4
+      }
+    },
+    {
+      "kind": "Cauchy",
+      "L": 4,
+      "t": -1,
+      "zeta": 1,
+      "orders": {
+        "0": 8,
+        "1": 8
+      }
+    },
+    {
+      "kind": "Cauchy",
+      "L": 4,
+      "t": -1,
+      "zeta": 3,
+      "orders": {
+        "0": 8,
+        "1": 8
+      }
+    },
+    {
+      "kind": "Cauchy",
+      "L": 4,
+      "t": 1,
+      "zeta": 1,
+      "orders": {
+        "0": 8,
+        "1": 8
+      }
+    },
+    {
+      "kind": "Cauchy",
+      "L": 4,
+      "t": 1,
+      "zeta": 3,
+      "orders": {
+        "0": 8,
+        "1": 8
+      }
+    },
+    {
+      "kind": "Cauchy",
+      "L": 4,
+      "t": 2,
+      "zeta": 1,
+      "orders": {
+        "0": 4,
+        "1": 8,
+        "2": 4
+      }
+    },
+    {
+      "kind": "Cauchy",
+      "L": 4,
+      "t": 2,
+      "zeta": 3,
+      "orders": {
+        "0": 4,
+        "1": 8,
+        "2": 4
+      }
+    },
+    {
+      "kind": "Cauchy",
+      "L": 4,
+      "t": 3,
+      "zeta": 1,
+      "orders": {
+        "0": 2,
+        "1": 6,
+        "2": 6,
+        "3": 2
+      }
+    },
+    {
+      "kind": "Cauchy",
+      "L": 4,
+      "t": 3,
+      "zeta": 3,
+      "orders": {
+        "0": 2,
+        "1": 6,
+        "2": 6,
+        "3": 2
+      }
+    },
+    {
+      "kind": "Cauchy",
+      "L": 2,
+      "t": -1,
+      "zeta": 0,
+      "orders": {
+        "0": 2,
+        "None": 2
+      }
+    },
+    {
+      "kind": "Cauchy",
+      "L": 2,
+      "t": -1,
+      "zeta": 2,
+      "orders": {
+        "0": 2,
+        "2": 2
+      }
+    },
+    {
+      "kind": "Cauchy",
+      "L": 2,
+      "t": -1,
+      "zeta": 16,
+      "orders": {
+        "0": 2,
+        "5": 2
+      }
+    },
+    {
+      "kind": "Cauchy",
+      "L": 2,
+      "t": 1,
+      "zeta": 0,
+      "orders": {
+        "0": 2,
+        "None": 2
+      }
+    },
+    {
+      "kind": "Cauchy",
+      "L": 2,
+      "t": 1,
+      "zeta": 2,
+      "orders": {
+        "0": 2,
+        "2": 2
+      }
+    },
+    {
+      "kind": "Cauchy",
+      "L": 2,
+      "t": 1,
+      "zeta": 16,
+      "orders": {
+        "0": 2,
+        "5": 2
+      }
+    },
+    {
+      "kind": "Cauchy",
+      "L": 4,
+      "t": -3,
+      "zeta": 0,
+      "orders": {
+        "0": 2,
+        "None": 14
+      }
+    },
+    {
+      "kind": "Cauchy",
+      "L": 4,
+      "t": -3,
+      "zeta": 2,
+      "orders": {
+        "0": 2,
+        "2": 6,
+        "4": 6,
+        "6": 2
+      }
+    },
+    {
+      "kind": "Cauchy",
+      "L": 4,
+      "t": -3,
+      "zeta": 16,
+      "orders": {
+        "0": 2,
+        "5": 6,
+        "10": 6,
+        "15": 2
+      }
+    },
+    {
+      "kind": "Cauchy",
+      "L": 4,
+      "t": 3,
+      "zeta": 0,
+      "orders": {
+        "0": 2,
+        "None": 14
+      }
+    },
+    {
+      "kind": "Cauchy",
+      "L": 4,
+      "t": 3,
+      "zeta": 2,
+      "orders": {
+        "0": 2,
+        "2": 6,
+        "4": 6,
+        "6": 2
+      }
+    },
+    {
+      "kind": "Cauchy",
+      "L": 4,
+      "t": 3,
+      "zeta": 16,
+      "orders": {
+        "0": 2,
+        "5": 6,
+        "10": 6,
+        "15": 2
+      }
+    },
+    {
+      "kind": "Cauchy",
+      "L": 8,
+      "t": -7,
+      "zeta": 0,
+      "orders": {
+        "0": 2,
+        "None": 254
+      }
+    },
+    {
+      "kind": "Cauchy",
+      "L": 8,
+      "t": -7,
+      "zeta": 2,
+      "orders": {
+        "0": 2,
+        "2": 14,
+        "4": 42,
+        "6": 70,
+        "8": 70,
+        "10": 42,
+        "12": 14,
+        "14": 2
+      }
+    },
+    {
+      "kind": "Cauchy",
+      "L": 8,
+      "t": -3,
+      "zeta": 1,
+      "orders": {
+        "0": 32,
+        "1": 96,
+        "2": 96,
+        "3": 32
+      }
+    },
+    {
+      "kind": "Cauchy",
+      "L": 8,
+      "t": 1,
+      "zeta": 3,
+      "orders": {
+        "0": 128,
+        "1": 128
+      }
+    },
+    {
+      "kind": "Cauchy",
+      "L": 8,
+      "t": 5,
+      "zeta": 1,
+      "orders": {
+        "0": 8,
+        "1": 40,
+        "2": 80,
+        "3": 80,
+        "4": 40,
+        "5": 8
+      }
+    },
+    {
+      "kind": "Cauchy",
+      "L": 8,
+      "t": 7,
+      "zeta": 1,
+      "orders": {
+        "0": 2,
+        "1": 14,
+        "2": 42,
+        "3": 70,
+        "4": 70,
+        "5": 42,
+        "6": 14,
+        "7": 2
+      }
+    },
+    {
+      "kind": "Cauchy",
+      "L": 8,
+      "t": 7,
+      "zeta": 16,
+      "orders": {
+        "0": 2,
+        "5": 14,
+        "10": 42,
+        "15": 70,
+        "20": 70,
+        "25": 42,
+        "30": 14,
+        "35": 2
+      }
+    },
+    {
+      "kind": "general_physical",
+      "L": 2,
+      "t": 1,
+      "trial": 0,
+      "scalar": 0,
+      "orders": {
+        "0": 2,
+        "None": 2
+      }
+    },
+    {
+      "kind": "general_physical",
+      "L": 2,
+      "t": 1,
+      "trial": 0,
+      "scalar": 2,
+      "orders": {
+        "0": 2,
+        "1": 2
+      }
+    },
+    {
+      "kind": "general_physical",
+      "L": 2,
+      "t": 1,
+      "trial": 0,
+      "scalar": 8,
+      "orders": {
+        "0": 2,
+        "3": 2
+      }
+    },
+    {
+      "kind": "general_physical",
+      "L": 2,
+      "t": 1,
+      "trial": 1,
+      "scalar": 0,
+      "orders": {
+        "0": 2,
+        "None": 2
+      }
+    },
+    {
+      "kind": "general_physical",
+      "L": 2,
+      "t": 1,
+      "trial": 1,
+      "scalar": 2,
+      "orders": {
+        "0": 2,
+        "1": 2
+      }
+    },
+    {
+      "kind": "general_physical",
+      "L": 2,
+      "t": 1,
+      "trial": 1,
+      "scalar": 8,
+      "orders": {
+        "0": 2,
+        "3": 2
+      }
+    },
+    {
+      "kind": "general_physical",
+      "L": 2,
+      "t": 1,
+      "trial": 2,
+      "scalar": 0,
+      "orders": {
+        "0": 2,
+        "None": 2
+      }
+    },
+    {
+      "kind": "general_physical",
+      "L": 2,
+      "t": 1,
+      "trial": 2,
+      "scalar": 2,
+      "orders": {
+        "0": 2,
+        "1": 2
+      }
+    },
+    {
+      "kind": "general_physical",
+      "L": 2,
+      "t": 1,
+      "trial": 2,
+      "scalar": 8,
+      "orders": {
+        "0": 2,
+        "3": 2
+      }
+    },
+    {
+      "kind": "general_physical",
+      "L": 2,
+      "t": 1,
+      "trial": 3,
+      "scalar": 0,
+      "orders": {
+        "0": 2,
+        "None": 2
+      }
+    },
+    {
+      "kind": "general_physical",
+      "L": 2,
+      "t": 1,
+      "trial": 3,
+      "scalar": 2,
+      "orders": {
+        "0": 2,
+        "1": 2
+      }
+    },
+    {
+      "kind": "general_physical",
+      "L": 2,
+      "t": 1,
+      "trial": 3,
+      "scalar": 8,
+      "orders": {
+        "0": 2,
+        "3": 2
+      }
+    },
+    {
+      "kind": "general_physical",
+      "L": 4,
+      "t": 1,
+      "trial": 0,
+      "scalar": 2,
+      "orders": {
+        "0": 8,
+        "1": 8
+      }
+    },
+    {
+      "kind": "general_physical",
+      "L": 4,
+      "t": 1,
+      "trial": 1,
+      "scalar": 2,
+      "orders": {
+        "0": 8,
+        "1": 8
+      }
+    },
+    {
+      "kind": "general_physical",
+      "L": 4,
+      "t": 1,
+      "trial": 2,
+      "scalar": 2,
+      "orders": {
+        "0": 8,
+        "1": 8
+      }
+    },
+    {
+      "kind": "general_physical",
+      "L": 4,
+      "t": 1,
+      "trial": 3,
+      "scalar": 2,
+      "orders": {
+        "0": 8,
+        "1": 8
+      }
+    },
+    {
+      "kind": "general_physical",
+      "L": 4,
+      "t": 2,
+      "trial": 0,
+      "scalar": 2,
+      "orders": {
+        "0": 4,
+        "1": 8,
+        "2": 4
+      }
+    },
+    {
+      "kind": "general_physical",
+      "L": 4,
+      "t": 2,
+      "trial": 1,
+      "scalar": 2,
+      "orders": {
+        "0": 4,
+        "1": 8,
+        "2": 4
+      }
+    },
+    {
+      "kind": "general_physical",
+      "L": 4,
+      "t": 2,
+      "trial": 2,
+      "scalar": 2,
+      "orders": {
+        "0": 4,
+        "1": 8,
+        "2": 4
+      }
+    },
+    {
+      "kind": "general_physical",
+      "L": 4,
+      "t": 2,
+      "trial": 3,
+      "scalar": 2,
+      "orders": {
+        "0": 4,
+        "1": 8,
+        "2": 4
+      }
+    },
+    {
+      "kind": "general_physical",
+      "L": 4,
+      "t": 3,
+      "trial": 0,
+      "scalar": 0,
+      "orders": {
+        "0": 2,
+        "None": 14
+      }
+    },
+    {
+      "kind": "general_physical",
+      "L": 4,
+      "t": 3,
+      "trial": 0,
+      "scalar": 2,
+      "orders": {
+        "0": 2,
+        "1": 6,
+        "2": 6,
+        "3": 2
+      }
+    },
+    {
+      "kind": "general_physical",
+      "L": 4,
+      "t": 3,
+      "trial": 0,
+      "scalar": 8,
+      "orders": {
+        "0": 2,
+        "3": 6,
+        "6": 6,
+        "9": 2
+      }
+    },
+    {
+      "kind": "general_physical",
+      "L": 4,
+      "t": 3,
+      "trial": 1,
+      "scalar": 0,
+      "orders": {
+        "0": 2,
+        "None": 14
+      }
+    },
+    {
+      "kind": "general_physical",
+      "L": 4,
+      "t": 3,
+      "trial": 1,
+      "scalar": 2,
+      "orders": {
+        "0": 2,
+        "1": 6,
+        "2": 6,
+        "3": 2
+      }
+    },
+    {
+      "kind": "general_physical",
+      "L": 4,
+      "t": 3,
+      "trial": 1,
+      "scalar": 8,
+      "orders": {
+        "0": 2,
+        "3": 6,
+        "6": 6,
+        "9": 2
+      }
+    },
+    {
+      "kind": "general_physical",
+      "L": 4,
+      "t": 3,
+      "trial": 2,
+      "scalar": 0,
+      "orders": {
+        "0": 2,
+        "None": 14
+      }
+    },
+    {
+      "kind": "general_physical",
+      "L": 4,
+      "t": 3,
+      "trial": 2,
+      "scalar": 2,
+      "orders": {
+        "0": 2,
+        "1": 6,
+        "2": 6,
+        "3": 2
+      }
+    },
+    {
+      "kind": "general_physical",
+      "L": 4,
+      "t": 3,
+      "trial": 2,
+      "scalar": 8,
+      "orders": {
+        "0": 2,
+        "3": 6,
+        "6": 6,
+        "9": 2
+      }
+    },
+    {
+      "kind": "general_physical",
+      "L": 4,
+      "t": 3,
+      "trial": 3,
+      "scalar": 0,
+      "orders": {
+        "0": 2,
+        "None": 14
+      }
+    },
+    {
+      "kind": "general_physical",
+      "L": 4,
+      "t": 3,
+      "trial": 3,
+      "scalar": 2,
+      "orders": {
+        "0": 2,
+        "1": 6,
+        "2": 6,
+        "3": 2
+      }
+    },
+    {
+      "kind": "general_physical",
+      "L": 4,
+      "t": 3,
+      "trial": 3,
+      "scalar": 8,
+      "orders": {
+        "0": 2,
+        "3": 6,
+        "6": 6,
+        "9": 2
+      }
+    }
+  ],
+  "tensor_products": [
+    {
+      "centers": [
+        1,
+        1
+      ],
+      "slots": 4,
+      "normalization_valuation": 2,
+      "tested_precision": 3,
+      "nonzero_factors": 16,
+      "orders": {
+        "0": 4,
+        "1": 8,
+        "2": 4
+      }
+    },
+    {
+      "centers": [
+        -1,
+        1
+      ],
+      "slots": 4,
+      "normalization_valuation": 2,
+      "tested_precision": 3,
+      "nonzero_factors": 16,
+      "orders": {
+        "0": 4,
+        "1": 8,
+        "2": 4
+      }
+    },
+    {
+      "centers": [
+        1,
+        -1
+      ],
+      "slots": 4,
+      "normalization_valuation": 2,
+      "tested_precision": 3,
+      "nonzero_factors": 16,
+      "orders": {
+        "0": 4,
+        "1": 8,
+        "2": 4
+      }
+    }
+  ],
+  "source_sha256": {
+    "tools/check_grouped_cauchy_inverse.py": "874929e3876ecf4dfbafeff3f588ae116674f577f02a79f03e2ebbe6ade8e3a3",
+    "tools/boolean_cauchy_operator.py": "1d9c4c2993f977e02c3a742ffa388e893ab95f3c99d1de13aa25e038ef0bcb30",
+    "tools/cauchy_packet_polynomials.py": "92d102c11cc42db9caadd028b5552b068ae9d734c46a4c4f5791662cc5be83cc",
+    "research/grouped-cauchy-inverse-profile.md": "3d4143e5c284fe6ad00cf973363ff5a29ee4b2fd982ab181cdb5e9a92b3812e8"
+  },
+  "scope": "Exact finite controls for all-size grouped inverse Smith theorems. The tensor-product obstruction concerns full packet operators and direct groupwise sums of products, not arbitrary factoring algorithms."
+}

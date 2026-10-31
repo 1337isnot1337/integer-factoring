@@ -75,10 +75,11 @@ def point_control(data, compiled, z, seed=None):
     left, right = [core_basis_data(data, side) for side in ('left', 'right')]
     transformed = matrix_product(matrix_product(point_basis(left, z, 'left'), active), point_basis(right, z, 'right'))
     infinity = place == 'infinity'
+    full_alphabet = compiled[2].get('full_alphabet_gamma') is not None
     rows = [i for i in range(len(active))
-            if ((i//left['multiplicity'] >> 2)&3 if infinity else (i//left['multiplicity'])&3) != 3]
+            if full_alphabet or ((i//left['multiplicity'] >> 2)&3 if infinity else (i//left['multiplicity'])&3) != 3]
     columns = [j for j in range(len(active))
-               if ((j//right['multiplicity'])&3 if infinity else (j//right['multiplicity'] >> 2)&3) != 3]
+               if full_alphabet or ((j//right['multiplicity'])&3 if infinity else (j//right['multiplicity'] >> 2)&3) != 3]
     dropped_rows = sorted(set(range(len(active)))-set(rows))
     dropped_columns = sorted(set(range(len(active)))-set(columns))
     assert not np.any(transformed[dropped_rows])

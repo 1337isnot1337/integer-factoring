@@ -20,10 +20,12 @@ from rectangular_defect_coordinates import coordinate_matrix
 from search_rectangular_defect_pressure import entropy
 
 class CoreDefectPressure:
-    def __init__(self,M=8,alpha=1,beta=2,quartic_terms=None,repair_spec=None,full_core=False,input_spec=None,repair_kind='partial',identity_spec=None,compiled=None,source_data=None):
-        self.M=M;self.full_core=full_core;self.core_stride=10 if full_core else 7;self.parameters=2*self.core_stride+5
-        self.leg_slices={'v':(0,3),'y':(3,2),'u':(5,2)}
-        if full_core:self.leg_slices['x']=(7,3)
+    def __init__(self,M=8,alpha=1,beta=2,quartic_terms=None,repair_spec=None,full_core=False,input_spec=None,repair_kind='partial',identity_spec=None,compiled=None,source_data=None,full_alphabet_gamma=None):
+        self.M=M;self.full_core=full_core;self.full_alphabet_gamma=full_alphabet_gamma
+        y_states=3 if full_alphabet_gamma is not None else 2
+        self.core_stride=3+2*y_states+(3 if full_core else 0);self.parameters=2*self.core_stride+5
+        self.leg_slices={'v':(0,3),'y':(3,y_states),'u':(3+y_states,y_states)}
+        if full_core:self.leg_slices['x']=(3+2*y_states,3)
         self.data=source_data if source_data is not None else [data_for(place,M,full_core=full_core) for place in ('infinity','zero')]
         if len(self.data)!=2 or (compiled is not None and len(compiled)!=2):raise ValueError('Supply both ordered valuation places.')
         self.oracles=[];self.metadata=[];self.row_features=[];self.column_features=[];self.spectator_signs=[]
@@ -31,8 +33,9 @@ class CoreDefectPressure:
         self.base_heights=4*np.arange(M)-2*M+2
         for side,data in enumerate(self.data):
             if data['M']!=M or data['place']!=('infinity','zero')[side] or data.get('full_core',False)!=full_core:raise ValueError('Support data do not match the requested construction.')
-            matrix,shifts,meta=compiled[side] if compiled is not None else coordinate_matrix(data,alpha,beta,self.quartic_terms,repair_spec,input_spec=input_spec,repair_kind=repair_kind,identity_spec=identity_spec)
+            matrix,shifts,meta=compiled[side] if compiled is not None else coordinate_matrix(data,alpha,beta,self.quartic_terms,repair_spec,input_spec=input_spec,repair_kind=repair_kind,identity_spec=identity_spec,full_alphabet_gamma=full_alphabet_gamma)
             if meta['M']!=M or meta['place']!=('infinity','zero')[side] or meta.get('full_core',False)!=full_core:raise ValueError('Compiled coordinates have inconsistent mode or basis metadata.')
+            if meta.get('full_alphabet_gamma')!=full_alphabet_gamma:raise ValueError('Compiled coordinates do not match the physical alphabet and quartic coefficient.')
             n=len(matrix)
             self.oracles.append(MatrixOracle(matrix,n,shifts,precision=meta['profile_precision']));self.metadata.append(meta)
             rf=np.zeros((n,self.parameters));cf=np.zeros((n,self.parameters));rf[:,2*side]=meta['row_charges'];cf[:,2*side+1]=meta['column_charges'];o=4+self.core_stride*side
@@ -72,7 +75,7 @@ class CoreDefectPressure:
         vx=core_total('v');uy=core_total('y')+core_total('u')
         if self.full_core:vx+=core_total('x')
         coreX=np.array([0.,gx[0]+vx[0],gx[-1]+vx[1],gx[0]+gx[-1]+vx[2]])
-        coreY=np.array([0.,gy[0]+uy[0],gy[-1]+uy[1]])
+        coreY=np.array([0.,gy[0]+uy[0],gy[-1]+uy[1]]+([gy[0]+gy[-1]+uy[2]] if self.full_alphabet_gamma is not None else []))
         def partitions(R):
             return float(np.sum(np.logaddexp(0,-gx[1:-1]/R))+np.sum(np.logaddexp(0,-gy[1:-1]/R))+logsumexp(-coreX/R)+logsumexp(-coreY/R))
         def equation(R):return logB-R*partitions(R)
@@ -88,6 +91,7 @@ class CoreDefectPressure:
         R=(low+high)/2;px=expit(-gx/R);py=expit(-gy/R)
         cx=np.exp(-coreX/R-logsumexp(-coreX/R));cy=np.exp(-coreY/R-logsumexp(-coreY/R))
         px[0],px[-1]=cx[1]+cx[3],cx[2]+cx[3];py[0],py[-1]=cy[1],cy[2]
+        if self.full_alphabet_gamma is not None:py[0]+=cy[3];py[-1]+=cy[3]
         H=sum(entropy([p,1-p]) for p in px[1:-1])+sum(entropy([p,1-p]) for p in py[1:-1])+entropy(cx)+entropy(cy)
         physical=np.zeros(self.parameters);physical[:2]=np.sum(px)+np.sum(py);physical[2:4]=np.sum(px)-np.sum(py);physical[-1]=self.base_heights@(px+py)
         for side in range(2):
@@ -95,20 +99,21 @@ class CoreDefectPressure:
             for letter,(off,count) in self.leg_slices.items():physical[o+off:o+off+count]=cx[1:] if letter in ('x','v') else cy[1:]
         gradient=(dB+physical)/(2*H)
         if not np.all(np.isfinite(gradient)):raise ArithmeticError('Nonfinite derivative.')
-        return R/2,gradient,{'full_core':self.full_core,'core_stride':self.core_stride,'type_x_core':cx.tolist(),'type_y_core':cy.tolist(),'type_x_occupations':px.tolist(),'type_y_occupations':py.tolist(),'entropy':H,'log_profile_product':logB,'active_orders_times_log_s':profiles}
+        return R/2,gradient,{'full_core':self.full_core,'full_alphabet_gamma':self.full_alphabet_gamma,'core_stride':self.core_stride,'type_x_core':cx.tolist(),'type_y_core':cy.tolist(),'type_x_occupations':px.tolist(),'type_y_occupations':py.tolist(),'entropy':H,'log_profile_product':logB,'active_orders_times_log_s':profiles}
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--M',type=int,default=8);parser.add_argument('--alpha',type=int,default=1);parser.add_argument('--beta',type=int,default=2);parser.add_argument('--quartic-power',type=int,default=0);parser.add_argument('--restarts',type=int,default=12);parser.add_argument('--maxfun',type=int,default=300);parser.add_argument('--seconds',type=float,default=1800);parser.add_argument('--seed',type=int,default=91378);parser.add_argument('--height-bound',type=float,default=24);parser.add_argument('--starts',type=Path);parser.add_argument('--output',type=Path,required=True)
     parser.add_argument('--full-core',action='store_true')
+    parser.add_argument('--full-alphabet-gamma',type=int,choices=(0,2,3))
     parser.add_argument('--repair',choices=('partial','inverse'),default='partial')
     parser.add_argument('--transport-spec','--identity-spec',dest='identity_spec',type=Path)
     args=parser.parse_args();identity_spec=None
     if args.identity_spec:
         supplied=json.loads(args.identity_spec.read_text());identity_spec=(supplied['C'],supplied['W'],supplied['target']) if isinstance(supplied,dict) and 'target' in supplied else (supplied['C'],supplied['W']) if isinstance(supplied,dict) else supplied;args.full_core=True
-    started=time.monotonic();oracle=CoreDefectPressure(args.M,args.alpha,args.beta,[(1,args.quartic_power)],full_core=args.full_core,repair_kind=args.repair,identity_spec=identity_spec);best=None;records=[];rng=np.random.default_rng(args.seed);dimension=oracle.parameters
+    started=time.monotonic();oracle=CoreDefectPressure(args.M,args.alpha,args.beta,[(1,args.quartic_power)],full_core=args.full_core,repair_kind=args.repair,identity_spec=identity_spec,full_alphabet_gamma=args.full_alphabet_gamma);best=None;records=[];rng=np.random.default_rng(args.seed);dimension=oracle.parameters
     def save():
         metadata=[{k:v for k,v in m.items() if k not in ('row_core_states','column_core_states','row_charges','column_charges')} for m in oracle.metadata]
-        result={'status':'exploratory floating search; no exact rate claimed','M':args.M,'alpha':args.alpha,'beta':args.beta,'repair_kind':args.repair,'identity_spec':identity_spec,'quartic_terms':oracle.quartic_terms,'full_core':args.full_core,'queries':oracle.queries,'failures':oracle.failures,'elapsed_seconds':time.monotonic()-started,'best':best,'restarts':records,'builder_metadata':metadata,'random_seed':args.seed,'normalized_height_bound':args.height_bound,'parameter_layout':'four charges; each place v_low,v_top,v_both,y_low,y_top,u_low,u_top, then optional x_low,x_top,x_both; log_s; weights multiplied by log_s'}
+        result={'status':'exploratory floating search; no exact rate claimed','M':args.M,'alpha':args.alpha,'beta':args.beta,'repair_kind':args.repair,'identity_spec':identity_spec,'quartic_terms':oracle.quartic_terms,'full_core':args.full_core,'full_alphabet_gamma':args.full_alphabet_gamma,'queries':oracle.queries,'failures':oracle.failures,'elapsed_seconds':time.monotonic()-started,'best':best,'restarts':records,'builder_metadata':metadata,'random_seed':args.seed,'normalized_height_bound':args.height_bound,'parameter_layout':'four charges; each place v_low,v_top,v_both,y_low,y_top,[y_both],u_low,u_top,[u_both], then optional x_low,x_top,x_both; log_s; weights multiplied by log_s; bracketed states only for full alphabet'}
         temporary=args.output.with_suffix(args.output.suffix+'.tmp');temporary.write_text(json.dumps(result,indent=2)+'\n');temporary.replace(args.output)
     def objective(x):
         nonlocal best
@@ -125,7 +130,7 @@ def main():
         supplied=json.loads(args.starts.read_text());supplied=supplied if isinstance(supplied,list) else [supplied['best']['parameters']]
         for p in supplied:
             if len(p)==5:p=list(p[:4])+[0.]*(dimension-5)+[p[-1]]
-            elif len(p)==19 and args.full_core:p=list(p[:11])+[0.]*3+list(p[11:18])+[0.]*3+[p[-1]]
+            elif len(p)==19 and args.full_core and args.full_alphabet_gamma is None:p=list(p[:11])+[0.]*3+list(p[11:18])+[0.]*3+[p[-1]]
             if len(p)!=dimension:raise ValueError('Wrong number of start parameters.')
             starts.append(np.r_[np.array(p[:-1])/p[-1],p[-1]])
     starts.extend([np.r_[np.zeros(dimension-1),t/args.M] for t in (.3,1.,3.)])

@@ -1,0 +1,57 @@
+{
+  "status": "Exact rational primal-dual verification for the finite fitted model.",
+  "full_core": false,
+  "leading_C_optima": [
+    [
+      "2",
+      "2",
+      "4"
+    ],
+    [
+      "2",
+      "0",
+      "4"
+    ],
+    [
+      "4",
+      "4",
+      "8"
+    ],
+    [
+      "4",
+      "2",
+      "4"
+    ]
+  ],
+  "C0_physical_gaps": [
+    {
+      "letter": "X",
+      "state": 0,
+      "minimum_gap": "2"
+    },
+    {
+      "letter": "X",
+      "state": 2,
+      "minimum_gap": "4"
+    },
+    {
+      "letter": "X",
+      "state": 3,
+      "minimum_gap": "2"
+    },
+    {
+      "letter": "Y",
+      "state": 0,
+      "minimum_gap": "2"
+    },
+    {
+      "letter": "Y",
+      "state": 2,
+      "minimum_gap": "4"
+    }
+  ],
+  "certificates_checked": 17,
+  "entry_constraints_used": 28,
+  "input_sha256": "195ed55949939e29d4df289ad0ba9468b1207b54ed645121a0c62d6a6c71be28",
+  "checker_sha256": "30379d0e8e8f043d48d612259b17416f2aef5344b1b6d2380f082a640047d01a"
+}

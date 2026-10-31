@@ -15,11 +15,16 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 ## Transfers and proposed stronger evaluators
 
 - [Mixed-field rectangular repair](rectangular-f4-repair.md): an explicit two-parameter height-triangular correction over every characteristic-two field, a uniform simple-pole bound, and four exact mixed-F4 constructors.
+- [Full-alphabet quartic repair](full-alphabet-quartic-repair.md): a rank-four projector identifies every invertible coefficient, a sparse correction retains all four states on both pairs, and fixed-size profiles support 23 or 29 parameters.
 - [Bounded rectangular defect blocks](rectangular-defect-factorization.md): full-interval repairs reduce to seven and nine active fermion modes at the stated Gaussian gauges, with structurally proved generic ranks and exact rational support checks.
 - [All four extreme cores](rectangular-full-core-factorization.md): ten active modes at both places give fixed 768-order blocks and 25 continuous search parameters, with exact regular-basis and full-matrix controls.
 - [Coupled core transports](rectangular-core-transports.md): arbitrary invertible constant core changes preserve a certified endpoint through an exact matrix identity; cached coordinate updates and two-base scalar interpolation avoid rebuilding the Fock program.
 - [Critical rectangular pressure](rectangular-critical-pressure.md): a target-sign discriminator, explicit Gaussian control, frozen-boundary limit, and reproducible starts that activate the extreme core states.
 - [Bivariate core limits](bivariate-core-pressure-limit.md): eventual affine Smith orders for fixed rational two-variable matrices and a finite limiting pressure problem; four-size profile fits remain separate from an exported symbolic certificate.
+- [Exact leading-face LP certificates](rectangular-leading-face-lp.md): unbounded rational primal/dual certificates isolate the all-low face in fitted 19- and 25-parameter models; uniform entry bounds remain a separate obligation.
+- [All-low Gaussian background](rectangular-low-background.md): a uniform two-cut calculation identifies the preserved conditional tensor with the interval of length M-2, including bulk charges and scalar cancellation.
+- [Polynomial core shears](rectangular-polynomial-shears.md): Laurent core changes equal to the identity at the endpoint permit every height direction, with exact cached updates and original-tensor controls.
+- [Four additional quartics](rectangular-extra-quartics.md): positive-energy extreme monomials preserve the existing repair, with exact Laurent constructors and seven/nine- or ten-mode support.
 - [Secondary-height repairs](rectangular-refined-repairs.md): 231 individually admissible F4 shears, dense additive flags, and Laurent quartic freedom preserve the all-length crossing and bounded support.
 - [Rectangular convex pressure search](rectangular-convex-pressure.md): paired Gibbs derivatives, attaining-minor separation, generic-rank interfaces, and independent exact and numerical implementation controls.
 - [Cauchy packet polynomial realization](cauchy-packet-realization.md): every degree-at-most-wire-count polynomial integral on the interpolation grid has an explicit affine packet realization, with separate canonical-lift controls.
@@ -27,11 +32,13 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Canonical packet upper bounds](canonical-packet-upper-frontier.md): exact exhaustive four-wire visibility, adaptive positive endpoint bounds, and an all-size limitation of low-order endpoint jets.
 - [Finite canonical decoder thresholds](canonical-packet-decoder-frontier.md): exact parity and full-count separation for two and four wires, with an all-size binary full-count collision.
 - [Full Boolean Cauchy operator](boolean-cauchy-smith-profile.md): an all-size binomial Smith profile, a one-bit inverse at the nearest centers, uniform implicit inverse entries, and an exact grouping cost for direct insertion.
+- [Grouped Cauchy inverse profile](grouped-cauchy-inverse-profile.md): a weighted Boolean substitution lemma and graded elimination give the exact grouped Smith orders and normalization cost of the direct inverse.
 - [Eight-wire polynomial lattice](eight-wire-cauchy-lattice.md): an exact finite module certificate realizes every integral degree-at-most-120 polynomial and three full wire-scale tapered examples, with canonical precision still separate.
 - [Dyadic affine mode reduction](one-species-dyadic-affine-reduction.md): appending common trailing binary ones gives exactly the smaller typed one-species tensor after ramification, including independent-gauge transport.
 - [Pascal complement convolution](pascal-complement-convolution.md): characteristic-independent complement-order inequalities and a field-free pressure envelope for arbitrary mode sets.
 - [All-field Pascal crossings](all-field-pascal-crossings.md): signed global Gaussian endpoints and Pascal-complement profiles over every field, including independent matching types.
 - [Graded even tensor powers](graded-even-power-transfer.md): both cut profiles tensorize with explicit signs, admitting non-Gaussian endpoint-vanishing perturbations in odd characteristic.
+- [Truncated symmetric Pascal crossings](truncated-symmetric-pascal-crossings.md): p-state modes in characteristic p give ordinary tensor powers, exact digit-sum spectra, and arbitrary-degree endpoint-vanishing perturbations.
 - [Fixed-prime recovery source audit](fixed-prime-transfer-source-audit.md): pinned scalar factoring recovery, direct primary-source network accounting, and a byte-identical finite replay of the external dependency.
 
 - [31 October constructive frontier checkpoint](constructive-frontier-checkpoint.md): exact finite bounds, proved construction families, reproducible floating starts, and the remaining threshold obligation after a three-hour research session.

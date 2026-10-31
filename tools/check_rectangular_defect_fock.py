@@ -134,7 +134,7 @@ def original_matrix(z, place, seed=None):
     denominator = power(1 ^ w, seed['denominator_degree'])
     bulk, top = 1 << (M-2), 1 << (M-1)
     mx = [((a % bulk) << 1)|(1, 0, top, top|1)[a // bulk] for a in range(seed['q_x'])]
-    mu = [((a % bulk) << 1)|(1, 0, top)[a // bulk] for a in range(seed['q_u'])]
+    mu = [((a % bulk) << 1)|(1, 0, top, top|1)[a // bulk] for a in range(seed['q_u'])]
     K = np.zeros((1 << (2*M), 1 << (2*M)), dtype=np.uint8)
     if place == 'infinity':
         hx, hy = [M]*M, [-M]*M

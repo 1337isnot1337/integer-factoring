@@ -133,6 +133,7 @@ verify-canonical-packets:
 verify-all-field-crossings:
 	python3 tools/check_all_field_pascal_crossings.py
 	python3 tools/check_graded_even_power.py
+	python3 tools/check_truncated_symmetric_crossings.py
 
 .PHONY: verify-core-transports verify-boolean-cauchy
 verify-core-transports:
@@ -143,6 +144,22 @@ verify-core-transports:
 
 verify-boolean-cauchy:
 	python3 tools/check_boolean_cauchy_smith.py
+	python3 tools/check_grouped_cauchy_inverse.py
+
+.PHONY: verify-full-alphabet verify-core-polynomials verify-leading-core
+verify-full-alphabet:
+	python3 tools/check_full_alphabet_quartic_repair.py --full
+	python3 tools/check_full_alphabet_quartic_profiles.py
+
+verify-core-polynomials:
+	python3 tools/check_rectangular_polynomial_shears.py --dense
+	python3 tools/check_rectangular_extra_quartics.py
+	python3 tools/check_rectangular_extra_coordinates.py
+
+verify-leading-core:
+	python3 tools/check_rectangular_low_background.py
+	python3 tools/check_rectangular_leading_face_lp.py
+	python3 tools/check_rectangular_leading_face_lp.py --input evidence/rectangular-full-leading-face-lp.json
 
 verify-controlled-smith:
 	python3 tools/check_controlled_permutation_smith.py

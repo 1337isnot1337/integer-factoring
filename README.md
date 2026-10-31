@@ -118,6 +118,12 @@ physical cores. Its 25-parameter pressure calculation has dimensions
 independent of the interval length. Adaptive exact series windows permit
 larger intervals while rejecting unresolved pivots.
 
+The [full-alphabet quartic repair](research/full-alphabet-quartic-repair.md)
+retains all four extreme states on both crossing pairs. Its residual is
+invertible for every quartic coefficient other than one, and a sparse
+partial correction gives non-Gaussian examples over F4. Fixed-size profile
+matrices support 23 or 29 continuous parameters for this family.
+
 [Coupled core transports](research/rectangular-core-transports.md) now
 permit arbitrary invertible core changes, including height-raising
 directions, when an exact left/right product preserves the endpoint.
@@ -126,6 +132,12 @@ Their matrices can be updated from cached coordinates. The
 separates genuine defect gains from interval convergence, while a
 [bivariate limit](research/bivariate-core-pressure-limit.md) reduces the
 large-interval question to a finite leading matrix and its weighted ranks.
+The [leading-face certificates](research/rectangular-leading-face-lp.md)
+give exact rational LP bounds for the fitted rectangular model. Its
+[all-low background](research/rectangular-low-background.md) is exactly a
+shorter Gaussian interval. Separate [polynomial shears](research/rectangular-polynomial-shears.md)
+and [four extra quartics](research/rectangular-extra-quartics.md) preserve
+the endpoint and provide additional admissible search directions.
 
 The [all-field Pascal construction](research/all-field-pascal-crossings.md)
 retains the required global signs in odd characteristic. The
@@ -133,6 +145,9 @@ retains the required global signs in odd characteristic. The
 permits even perturbations that vanish at the crossing endpoint. The
 scalar factoring dependency is pinned in a separate
 [source audit](research/fixed-prime-transfer-source-audit.md).
+A [truncated symmetric construction](research/truncated-symmetric-pascal-crossings.md)
+also gives ordinary tensor powers with p states per mode in characteristic
+p, including non-Gaussian perturbations of odd degree.
 
 For the original evaluator's precision question,
 [canonical packet bounds](research/canonical-packet-upper-frontier.md)
@@ -143,6 +158,8 @@ The [full Boolean operator](research/boolean-cauchy-smith-profile.md)
 has an exact all-size Smith profile and a one-bit inverse at either
 nearest center. Direct insertion of that inverse reconnects the source
 groups, so this operator theorem alone does not improve the evaluator.
+The [grouped inverse profile](research/grouped-cauchy-inverse-profile.md)
+determines the exact precision cost of a direct grouped factorization.
 
 The [31 October research checkpoint](research/constructive-frontier-checkpoint.md)
 collects the latest exact bounds, new construction families, reproducible

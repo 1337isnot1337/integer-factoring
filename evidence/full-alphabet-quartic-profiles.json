@@ -1,0 +1,343 @@
+{
+  "status": "pass; exact finite matrix/profile controls and floating Gibbs derivative controls; no pressure certificate",
+  "entrywise_cases": [
+    {
+      "full_core": false,
+      "gamma": 0,
+      "place": "infinity",
+      "M": 4,
+      "z": 2,
+      "entries_checked": 16384,
+      "zero_rows_checked": 0,
+      "zero_columns_checked": 0
+    },
+    {
+      "full_core": false,
+      "gamma": 0,
+      "place": "infinity",
+      "M": 4,
+      "z": 3,
+      "entries_checked": 16384,
+      "zero_rows_checked": 0,
+      "zero_columns_checked": 0
+    },
+    {
+      "full_core": false,
+      "gamma": 0,
+      "place": "zero",
+      "M": 4,
+      "z": 2,
+      "entries_checked": 65536,
+      "zero_rows_checked": 0,
+      "zero_columns_checked": 0
+    },
+    {
+      "full_core": false,
+      "gamma": 0,
+      "place": "zero",
+      "M": 4,
+      "z": 3,
+      "entries_checked": 65536,
+      "zero_rows_checked": 0,
+      "zero_columns_checked": 0
+    },
+    {
+      "full_core": false,
+      "gamma": 2,
+      "place": "infinity",
+      "M": 4,
+      "z": 2,
+      "entries_checked": 16384,
+      "zero_rows_checked": 0,
+      "zero_columns_checked": 0
+    },
+    {
+      "full_core": false,
+      "gamma": 2,
+      "place": "infinity",
+      "M": 4,
+      "z": 3,
+      "entries_checked": 16384,
+      "zero_rows_checked": 0,
+      "zero_columns_checked": 0
+    },
+    {
+      "full_core": false,
+      "gamma": 2,
+      "place": "zero",
+      "M": 4,
+      "z": 2,
+      "entries_checked": 65536,
+      "zero_rows_checked": 0,
+      "zero_columns_checked": 0
+    },
+    {
+      "full_core": false,
+      "gamma": 2,
+      "place": "zero",
+      "M": 4,
+      "z": 3,
+      "entries_checked": 65536,
+      "zero_rows_checked": 0,
+      "zero_columns_checked": 0
+    },
+    {
+      "full_core": true,
+      "gamma": 2,
+      "place": "infinity",
+      "M": 4,
+      "z": 2,
+      "entries_checked": 65536,
+      "zero_rows_checked": 0,
+      "zero_columns_checked": 0
+    },
+    {
+      "full_core": true,
+      "gamma": 2,
+      "place": "infinity",
+      "M": 4,
+      "z": 3,
+      "entries_checked": 65536,
+      "zero_rows_checked": 0,
+      "zero_columns_checked": 0
+    },
+    {
+      "full_core": true,
+      "gamma": 2,
+      "place": "zero",
+      "M": 4,
+      "z": 2,
+      "entries_checked": 65536,
+      "zero_rows_checked": 0,
+      "zero_columns_checked": 0
+    },
+    {
+      "full_core": true,
+      "gamma": 2,
+      "place": "zero",
+      "M": 4,
+      "z": 3,
+      "entries_checked": 65536,
+      "zero_rows_checked": 0,
+      "zero_columns_checked": 0
+    }
+  ],
+  "weighted_profiles": [
+    {
+      "full_core": false,
+      "gamma": 0,
+      "place": "infinity",
+      "cases": [
+        {
+          "case": 0,
+          "orders_checked": 256,
+          "maximum_error": 0.0
+        },
+        {
+          "case": 1,
+          "orders_checked": 256,
+          "maximum_error": 0.0
+        },
+        {
+          "case": 2,
+          "orders_checked": 256,
+          "maximum_error": 0.0
+        }
+      ]
+    },
+    {
+      "full_core": false,
+      "gamma": 0,
+      "place": "zero",
+      "cases": [
+        {
+          "case": 0,
+          "orders_checked": 256,
+          "maximum_error": 0.0
+        },
+        {
+          "case": 1,
+          "orders_checked": 256,
+          "maximum_error": 0.0
+        },
+        {
+          "case": 2,
+          "orders_checked": 256,
+          "maximum_error": 0.0
+        }
+      ]
+    },
+    {
+      "full_core": false,
+      "gamma": 2,
+      "place": "infinity",
+      "cases": [
+        {
+          "case": 0,
+          "orders_checked": 256,
+          "maximum_error": 0.0
+        },
+        {
+          "case": 1,
+          "orders_checked": 256,
+          "maximum_error": 0.0
+        },
+        {
+          "case": 2,
+          "orders_checked": 256,
+          "maximum_error": 0.0
+        }
+      ]
+    },
+    {
+      "full_core": false,
+      "gamma": 2,
+      "place": "zero",
+      "cases": [
+        {
+          "case": 0,
+          "orders_checked": 256,
+          "maximum_error": 0.0
+        },
+        {
+          "case": 1,
+          "orders_checked": 256,
+          "maximum_error": 0.0
+        },
+        {
+          "case": 2,
+          "orders_checked": 256,
+          "maximum_error": 0.0
+        }
+      ]
+    },
+    {
+      "full_core": true,
+      "gamma": 2,
+      "place": "infinity",
+      "cases": [
+        {
+          "case": 0,
+          "orders_checked": 256,
+          "maximum_error": 0.0
+        },
+        {
+          "case": 1,
+          "orders_checked": 256,
+          "maximum_error": 0.0
+        },
+        {
+          "case": 2,
+          "orders_checked": 256,
+          "maximum_error": 0.0
+        }
+      ]
+    },
+    {
+      "full_core": true,
+      "gamma": 2,
+      "place": "zero",
+      "cases": [
+        {
+          "case": 0,
+          "orders_checked": 256,
+          "maximum_error": 0.0
+        },
+        {
+          "case": 1,
+          "orders_checked": 256,
+          "maximum_error": 0.0
+        },
+        {
+          "case": 2,
+          "orders_checked": 256,
+          "maximum_error": 0.0
+        }
+      ]
+    }
+  ],
+  "pressure_controls": [
+    {
+      "full_core": false,
+      "parameters": [
+        -0.13662134400576892,
+        -0.0510891671583216,
+        0.0913852607548391,
+        -0.09986469424879559,
+        0.015545070968503133,
+        0.018307536961634174,
+        0.11065535626179768,
+        -0.0807392515521979,
+        -0.04106884479947617,
+        0.15895076011194265,
+        0.02625345433647011,
+        -0.17039206786381547,
+        -0.06810724299515139,
+        -0.1194998198502821,
+        0.07202004675024348,
+        -0.17748743861124655,
+        -0.1897586343094295,
+        0.07237116145876443,
+        0.028368150441467177,
+        0.17628606781331324,
+        -0.14729798731385826,
+        -0.17730890026182367,
+        0.171
+      ],
+      "rho": 0.8891992108991509,
+      "direct_rho": 0.8891992108991511,
+      "pressure_error": 2.220446049250313e-16,
+      "derivative_coordinates": 23,
+      "maximum_derivative_error": 2.2260026070683447e-10,
+      "entropy": 5.3518554926464645
+    },
+    {
+      "full_core": true,
+      "parameters": [
+        0.0179612725333316,
+        0.17956994703535706,
+        -0.08420041072191486,
+        0.14856605857668326,
+        -0.007371830158135834,
+        -0.1318165898105947,
+        -0.05267288393083189,
+        0.06111254654874504,
+        0.005781857585577144,
+        -0.1631424519378123,
+        0.05040043364334951,
+        0.12341994535720952,
+        -0.11166157696099946,
+        0.12005260005468416,
+        0.1204090014460028,
+        0.11173318036012014,
+        0.025741123945774852,
+        0.039048121004649106,
+        -0.08765792108191091,
+        0.005229773744630822,
+        0.055197952991304505,
+        0.0023144341563705317,
+        0.08120009582831927,
+        -0.1514806404458951,
+        -0.049639611766923275,
+        0.10214966015002003,
+        -0.0025059077662247797,
+        -0.15354487761904625,
+        0.171
+      ],
+      "rho": 0.8937194987620756,
+      "direct_rho": 0.8937194987620756,
+      "pressure_error": 0.0,
+      "derivative_coordinates": 29,
+      "maximum_derivative_error": 3.1640118563353026e-10,
+      "entropy": 5.399536129555141
+    }
+  ],
+  "source_sha256": {
+    "check_full_alphabet_quartic_repair.py": "2f63b45a5f5eb6e5913d12c70301f8d665631d0d62ccb5413293a52d06ba5976",
+    "full_alphabet_quartic_profiles.py": "546035cce1b9f3aec54e5d734b305411d75b045605ecc3a2561cfeb345956d46",
+    "rectangular_defect_coordinates.py": "5266eb2ca017ad4e3c138954246d56ee051f39430e32cd06962b9bf6c18641b9",
+    "search_rectangular_core_pressure.py": "43082c2404a69566a21b2160d10f816c15e614ca496b08c9aa8002c20a6fe0ae",
+    "check_full_alphabet_quartic_profiles.py": "1be30d6d326fc239ddce50a311bce3b427f14cb881be2330d44f77cb35d37d21"
+  },
+  "source_note": "Only prose/error-message spacing changed after the recorded controls; this fingerprint includes that nonsemantic edit."
+}

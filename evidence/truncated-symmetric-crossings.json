@@ -1,0 +1,695 @@
+{
+  "status": "Exact finite controls for truncated symmetric crossings; no pressure improvement claimed.",
+  "functoriality": [
+    {
+      "prime": 2,
+      "one_particle_size": 2,
+      "composition_entries_checked": 96
+    },
+    {
+      "prime": 3,
+      "one_particle_size": 2,
+      "composition_entries_checked": 486
+    },
+    {
+      "prime": 5,
+      "one_particle_size": 2,
+      "composition_entries_checked": 3750
+    },
+    {
+      "prime": 3,
+      "one_particle_size": 3,
+      "composition_entries_checked": 4374
+    }
+  ],
+  "kernel_and_smith_controls": [
+    {
+      "prime": 2,
+      "kernel_entries_checked": 16,
+      "one_particle_orders": [
+        0,
+        0
+      ],
+      "induced_orders": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "precision": 4
+    },
+    {
+      "prime": 3,
+      "kernel_entries_checked": 81,
+      "one_particle_orders": [
+        0,
+        0
+      ],
+      "induced_orders": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "precision": 4
+    },
+    {
+      "prime": 5,
+      "kernel_entries_checked": 625,
+      "one_particle_orders": [
+        0,
+        0
+      ],
+      "induced_orders": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "precision": 4
+    }
+  ],
+  "typed_endpoints": [
+    {
+      "prime": 2,
+      "indices": [
+        0
+      ],
+      "copies": 3,
+      "independent_type_endpoint_entries": 400
+    },
+    {
+      "prime": 3,
+      "indices": [
+        0
+      ],
+      "copies": 3,
+      "independent_type_endpoint_entries": 19881
+    },
+    {
+      "prime": 5,
+      "indices": [
+        0
+      ],
+      "copies": 2,
+      "independent_type_endpoint_entries": 7225
+    },
+    {
+      "prime": 3,
+      "indices": [
+        0,
+        1
+      ],
+      "copies": 2,
+      "independent_type_endpoint_entries": 130321
+    },
+    {
+      "prime": 3,
+      "indices": [
+        0,
+        2
+      ],
+      "copies": 2,
+      "independent_type_endpoint_entries": 130321
+    }
+  ],
+  "actual_cut_profiles": [
+    {
+      "prime": 2,
+      "indices": [
+        0
+      ],
+      "cut_profiles": [
+        {
+          "place": "zero",
+          "one_particle_orders": [
+            1,
+            1
+          ],
+          "induced_orders": [
+            0,
+            1,
+            1,
+            2
+          ],
+          "maximum_precision": 4
+        },
+        {
+          "place": "infinity",
+          "one_particle_orders": [
+            -1,
+            1
+          ],
+          "induced_orders": [
+            -1,
+            0,
+            0,
+            1
+          ],
+          "maximum_precision": 4
+        }
+      ]
+    },
+    {
+      "prime": 3,
+      "indices": [
+        0
+      ],
+      "cut_profiles": [
+        {
+          "place": "zero",
+          "one_particle_orders": [
+            1,
+            1
+          ],
+          "induced_orders": [
+            0,
+            1,
+            1,
+            2,
+            2,
+            2,
+            3,
+            3,
+            4
+          ],
+          "maximum_precision": 8
+        },
+        {
+          "place": "infinity",
+          "one_particle_orders": [
+            -1,
+            1
+          ],
+          "induced_orders": [
+            -2,
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            2
+          ],
+          "maximum_precision": 8
+        }
+      ]
+    },
+    {
+      "prime": 5,
+      "indices": [
+        0
+      ],
+      "cut_profiles": [
+        {
+          "place": "zero",
+          "one_particle_orders": [
+            1,
+            1
+          ],
+          "induced_orders": [
+            0,
+            1,
+            1,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            3,
+            4,
+            4,
+            4,
+            4,
+            4,
+            5,
+            5,
+            5,
+            5,
+            6,
+            6,
+            6,
+            7,
+            7,
+            8
+          ],
+          "maximum_precision": 16
+        },
+        {
+          "place": "infinity",
+          "one_particle_orders": [
+            -1,
+            1
+          ],
+          "induced_orders": [
+            -4,
+            -3,
+            -3,
+            -2,
+            -2,
+            -2,
+            -1,
+            -1,
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            2,
+            2,
+            2,
+            3,
+            3,
+            4
+          ],
+          "maximum_precision": 16
+        }
+      ]
+    },
+    {
+      "prime": 3,
+      "indices": [
+        0,
+        1
+      ],
+      "cut_profiles": [
+        {
+          "place": "zero",
+          "one_particle_orders": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "induced_orders": [
+            0,
+            1,
+            1,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            3,
+            4,
+            4,
+            4,
+            4,
+            4,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            11,
+            11,
+            11,
+            11,
+            11,
+            11,
+            12,
+            12,
+            12,
+            12,
+            12,
+            13,
+            13,
+            13,
+            13,
+            14,
+            14,
+            14,
+            15,
+            15,
+            16
+          ],
+          "maximum_precision": 32
+        },
+        {
+          "place": "infinity",
+          "one_particle_orders": [
+            -3,
+            -1,
+            1,
+            3
+          ],
+          "induced_orders": [
+            -8,
+            -7,
+            -7,
+            -6,
+            -6,
+            -6,
+            -5,
+            -5,
+            -5,
+            -5,
+            -4,
+            -4,
+            -4,
+            -4,
+            -4,
+            -3,
+            -3,
+            -3,
+            -3,
+            -3,
+            -3,
+            -2,
+            -2,
+            -2,
+            -2,
+            -2,
+            -2,
+            -2,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            4,
+            4,
+            4,
+            4,
+            4,
+            5,
+            5,
+            5,
+            5,
+            6,
+            6,
+            6,
+            7,
+            7,
+            8
+          ],
+          "maximum_precision": 32
+        }
+      ]
+    },
+    {
+      "prime": 3,
+      "indices": [
+        0,
+        2
+      ],
+      "cut_profiles": [
+        {
+          "place": "zero",
+          "one_particle_orders": [
+            1,
+            1,
+            5,
+            5
+          ],
+          "induced_orders": [
+            0,
+            1,
+            1,
+            2,
+            2,
+            2,
+            3,
+            3,
+            4,
+            5,
+            5,
+            6,
+            6,
+            6,
+            6,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            8,
+            8,
+            8,
+            8,
+            9,
+            9,
+            10,
+            10,
+            10,
+            11,
+            11,
+            11,
+            11,
+            11,
+            11,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            13,
+            13,
+            13,
+            13,
+            13,
+            13,
+            14,
+            14,
+            14,
+            15,
+            15,
+            16,
+            16,
+            16,
+            16,
+            17,
+            17,
+            17,
+            17,
+            17,
+            17,
+            18,
+            18,
+            18,
+            18,
+            19,
+            19,
+            20,
+            21,
+            21,
+            22,
+            22,
+            22,
+            23,
+            23,
+            24
+          ],
+          "maximum_precision": 32
+        },
+        {
+          "place": "infinity",
+          "one_particle_orders": [
+            -3,
+            -1,
+            1,
+            7
+          ],
+          "induced_orders": [
+            -8,
+            -7,
+            -7,
+            -6,
+            -6,
+            -6,
+            -5,
+            -5,
+            -5,
+            -4,
+            -4,
+            -4,
+            -3,
+            -3,
+            -3,
+            -2,
+            -2,
+            -2,
+            -1,
+            -1,
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4,
+            4,
+            5,
+            5,
+            5,
+            6,
+            6,
+            6,
+            6,
+            7,
+            7,
+            7,
+            7,
+            7,
+            8,
+            8,
+            8,
+            8,
+            8,
+            9,
+            9,
+            9,
+            9,
+            10,
+            10,
+            10,
+            11,
+            11,
+            11,
+            12,
+            12,
+            12,
+            13,
+            13,
+            13,
+            14,
+            14,
+            14,
+            15,
+            15,
+            16
+          ],
+          "maximum_precision": 32
+        }
+      ]
+    }
+  ],
+  "checker_sha256": "cf629b295e14b82702c58719efdf4b634abffa37ed6608415c04de283f73c8f2"
+}

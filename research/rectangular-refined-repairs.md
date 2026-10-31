@@ -357,3 +357,25 @@ replay separately includes all `33` extra row-zero variants and
 also totals `134,640` paired-type checks. These larger families
 preserve the crossing theorem, but their all-low core blocks need
 not remain unchanged.
+
+## 6. Finite pressure screen
+
+The [pressure screen](../tools/screen_rectangular_refined_pressure.py)
+now supports exact cached coordinate updates. It builds the base
+seven-/nine-mode matrices once and applies each proved output
+change in physical core coordinates. The cache retains exact
+polynomial numerators and their source fingerprint.
+
+The completed [four-mode screen](../evidence/rectangular-refined-pressure-M4.json)
+evaluates all `264` elementary output shears at five prescribed
+nineteen-parameter points. It includes the `33` directions that
+change output row zero. All `1,320` candidate queries completed
+without arithmetic failures. The unchanged seed has pressure
+`0.8019184880568317` at the best supplied point; the best changed
+candidate has `0.8019209564995993`, so none improves that baseline
+at these points.
+
+This is a finite numerical result. The five points were held fixed,
+and no separate optimization was performed for an individual
+shear. It does not exclude improvements at other parameters,
+larger intervals, or products of several admissible changes.

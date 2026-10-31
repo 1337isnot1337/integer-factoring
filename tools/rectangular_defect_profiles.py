@@ -176,7 +176,7 @@ class Program:
             else:a=self.car(a,name+('_create' if r else '_annihilate'))
         return a
 
-    def build(self,alpha=1,beta=2,quartic_terms=None,initial=None,repair_spec=None,input_spec=None,repair_kind='partial',identity_spec=None):
+    def build(self,alpha=1,beta=2,quartic_terms=None,initial=None,repair_spec=None,input_spec=None,repair_kind='partial',identity_spec=None,extra_quartics=None):
         data=self.data;M=data['M'];T=M-1;infinity=data['place']=='infinity'
         if quartic_terms is None:quartic_terms=[(1,0)]
         endpoint=0
@@ -184,6 +184,13 @@ class Program:
             if coefficient not in (0,1,2,3) or not isinstance(exponent,int):raise ValueError('Invalid quartic Laurent term.')
             endpoint^=coefficient
         if endpoint!=1:raise ValueError('The quartic numerator must equal one at w=1.')
+        from check_rectangular_extra_quartics import validate_extra_quartics
+        extras=validate_extra_quartics(T,extra_quartics or [])
+        for xa,yb,uc,vd,terms,pole in extras:
+            needed=([f'out_v{vd}_create',f'out_y{yb}_create',f'in_u{uc}_annihilate',f'in_x{xa}_annihilate']
+                    if infinity else [f'left_x{xa}_create',f'left_y{yb}_create',f'right_u{uc}_annihilate',f'right_v{vd}_annihilate'])
+            if any(name not in self.car_meta for name in needed):
+                raise ValueError('This extra quartic needs the full-core support; a required CAR image is absent.')
         u0=('in_' if infinity else 'right_')+'u0';uT=('in_' if infinity else 'right_')+f'u{T}'
         y0=('out_' if infinity else 'left_')+'y0';yT=('out_' if infinity else 'left_')+f'y{T}'
         v0=('out_' if infinity else 'right_')+'v0';vT=('out_' if infinity else 'right_')+f'v{T}'
@@ -216,10 +223,21 @@ class Program:
                 a=self.add(a,self.scale(b,alpha,z=M-1 if infinity else 0))
             if infinity:word=[vT+'_create',yT+'_create',u0+'_annihilate','in_x0_annihilate']
             else:word=['left_x0_create',yT+'_create',u0+'_annihilate',vT+'_annihilate']
+            gaussian=a
             quartic=self.word(a,word);parts=[]
             for coefficient,exponent in quartic_terms:
                 if coefficient:parts.append(self.scale(quartic,coefficient,z=2-exponent if infinity else exponent,u=-2))
             for part in parts:a=self.add(a,part)
+            for xa,yb,uc,vd,terms,pole in extras:
+                if infinity:
+                    extra_word=[f'out_v{vd}_create',f'out_y{yb}_create',f'in_u{uc}_annihilate',f'in_x{xa}_annihilate']
+                    gauge=2*(uc+vd-T)
+                else:
+                    extra_word=[f'left_x{xa}_create',f'left_y{yb}_create',f'right_u{uc}_annihilate',f'right_v{vd}_annihilate']
+                    gauge=2*(xa+yb-T)
+                quartic=self.word(gaussian,extra_word)
+                for coefficient,exponent in terms:
+                    if coefficient:a=self.add(a,self.scale(quartic,coefficient,z=gauge+pole-exponent if infinity else gauge+exponent,u=-pole))
             if beta:
                 b=self.car(self.number(a,yT),y0+'_annihilate')
                 a=self.add(a,self.scale(b,beta,z=M if infinity else -1))
@@ -293,8 +311,8 @@ def library(precision=1024):
     lib.fock_f4_evaluate_v2.argtypes=[ctypes.c_int,ctypes.c_int,I,ctypes.c_int,U,ctypes.c_int,I,I,ctypes.c_int,I,ctypes.c_int,ctypes.c_int,U,L,L]
     lib.fock_f4_evaluate_v2.restype=ctypes.c_int;return lib
 
-def active_matrix(data,alpha=1,beta=2,quartic_terms=None,repair_spec=None,profile_precision=None,input_spec=None,repair_kind='partial',identity_spec=None):
-    program=Program(data);last=program.build(alpha,beta,quartic_terms,repair_spec=repair_spec,input_spec=input_spec,repair_kind=repair_kind,identity_spec=identity_spec);n=1<<program.k
+def active_matrix(data,alpha=1,beta=2,quartic_terms=None,repair_spec=None,profile_precision=None,input_spec=None,repair_kind='partial',identity_spec=None,extra_quartics=None):
+    program=Program(data);last=program.build(alpha,beta,quartic_terms,repair_spec=repair_spec,input_spec=input_spec,repair_kind=repair_kind,identity_spec=identity_spec,extra_quartics=extra_quartics);n=1<<program.k
     diagonal=[sum(s for j,s in enumerate(data['active_orders']) if mask>>j&1) for mask in range(n)]
     window,builder=precision_sizes(program,last.base+min(diagonal),data['M'],profile_precision);words=builder//64;output_words=window//64
     instructions=(ctypes.c_int*(5*len(program.instructions)))(*(v for row in program.instructions for v in row))
