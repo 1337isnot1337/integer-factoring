@@ -72,6 +72,7 @@ verify-crossing-interpolation:
 	python3 tools/check_coordinate_core_crossings.py
 	python3 tools/check_even_core_postselection.py
 	python3 tools/check_paired_type_crossing_pressure.py
+	python3 tools/check_two_parameter_even_core.py
 
 verify-smith-oracle:
 	python3 tools/check_weighted_smith_oracle.py

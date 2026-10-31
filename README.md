@@ -202,6 +202,10 @@ four-letter polynomial family `A + lambda B + lambda^2 C` with a strict
 crossing endpoint. Two exact Wick identities prove that every nonzero
 rational parameter path is non-Gaussian. Monomial parameter paths are
 available for pressure searches; no improved rate has been certified.
+The [two-output extension](research/two-parameter-even-core.md) classifies
+its Gaussian members exactly: the coordinate axes and one exceptional
+parameter point. An explicit eight-edge factorization identifies that
+point, so numerical improvements near it can be interpreted correctly.
 The [optional native F4 search engine](research/native-weighted-smith-f4.md)
 provides exact field arithmetic, support-block decomposition, weighted
 profiles, and pressure gradients. Its finite controls use an independent

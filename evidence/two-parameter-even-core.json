@@ -1,0 +1,53 @@
+{
+  "axis_formal_pfaffian_checks": 198,
+  "basis_sha256": "0d63fd19f54483085f4a2d048f1b77189c5e726987645e06db01f835579bfe41",
+  "coefficient_divisions": 1024,
+  "degrees_A_By_Bv_C": [
+    17,
+    24,
+    32,
+    14
+  ],
+  "endpoint_coefficient_checks": 1024,
+  "equal_parameter_recombination_checks": 768,
+  "exceptional_point_degree": 24,
+  "exceptional_point_exterior_coefficients": 256,
+  "exceptional_point_pfaffian_checks": 99,
+  "exceptional_point_sha256": "4b1657275627b5279a0f6627ca519365c6b8555dcb9eb2dc76dc0eef77d660ef",
+  "exceptional_point_vacuum_polynomial_bits": 256,
+  "status": "exact two-parameter endpoint and complete Gaussian-locus classification; no pressure improvement claimed",
+  "wick_mask_23_coefficients_L_then_M": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      17408
+    ],
+    [
+      0,
+      0,
+      68
+    ]
+  ],
+  "wick_mask_83_coefficients_L_then_M": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1020,
+      1020
+    ]
+  ]
+}
