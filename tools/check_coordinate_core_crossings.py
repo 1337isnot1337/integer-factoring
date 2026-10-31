@@ -128,7 +128,7 @@ def build(indices=(0, 1, 2), ambient=4):
     return {'q': q, 'indices': list(indices), 'ambient': ambient,
             'degree': max(p.bit_length() - 1 for p in values),
             'denominator_degree': 2, 'strict_endpoint': False,
-            'typed_endpoint': 'one common full physical word type on all four legs',
+            'typed_endpoint': 'independent common X/V and U/Y full physical word types',
             'core_size': 3, 'bulk_size': 1 << (n - 2),
             'core_maps': maps, 'logical_heights': height, 'values': values}, corrections
 
@@ -239,9 +239,10 @@ def check_two_copy_types(data):
     values = data['values']
     checks = 0
     denominator = power(3, 4)
-    for pair in combinations_with_replacement(range(q), 2):
-        words = sorted(set(permutations(pair)))
-        for x, y, u, v in product(words, repeat=4):
+    types = [sorted(set(permutations(pair)))
+             for pair in combinations_with_replacement(range(q), 2)]
+    for x_words, u_words in product(types, repeat=2):
+        for x, v, y, u in product(x_words, x_words, u_words, u_words):
             numerator = 1
             for site in range(2):
                 position = x[site] + q*y[site] + q*q*u[site] + q*q*q*v[site]
@@ -296,7 +297,8 @@ def main():
                         'strictly_polar_entries': pole_entries,
                         'numerator_c_order_histogram': dict(sorted(Counter(orders).items())),
                         'ramified_endpoint_entries': ramified,
-                        'two_copy_common_type_entries': typed,
+                        'two_copy_independent_type_pairs': (q * (q + 1) // 2)**2,
+                        'two_copy_independent_type_entries': typed,
                         'independent_exterior_entries': q**4,
                         'coefficient_sha256': digest(data['values'])})
         cached[(indices, ambient)] = data

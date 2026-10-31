@@ -2,8 +2,9 @@
 
 ## Status
 
-This note constructs rational local tensors whose restriction to any common
-physical word type is polynomial and has the exact crossing endpoint. The
+This note constructs rational local tensors whose restriction to matching
+physical word types on each crossing pair is polynomial and has the exact
+crossing endpoint. The
 construction keeps the low mode occupied in a distinguished core state.
 It applies to arbitrary finite mode sets, including sets that are not
 downward closed. It provides an admissible family for the two-place Smith
@@ -13,7 +14,7 @@ The two separately constructed search inputs with mode sets
 \(\{0,1,2\}\) and \(\{0,1,2,3\}\), both with ambient parameter \(M=4\),
 agree coefficient by coefficient with the checker accompanying this note.
 The local tensors have genuine poles at the crossing point. Their validity
-depends on the common-type restriction proved below.
+depends on the paired-type restriction proved below.
 
 ## 1. The rational tensor and its coordinate maps
 
@@ -138,15 +139,18 @@ Each strictly lowers the total height by \(T\). All diagonal transitions
 preserve height. Equation (6) can be verified directly from the seven
 exterior factors in (5) and the crossing.
 
-## 3. Every common-type tensor power is polynomial and crosses
+## 3. Independent types on the two crossing pairs
 
-Fix a word length \(m\) and any one physical word type \(\pi\). Restrict
-each of the four boundary words of \(K^{\otimes m}\) to this same type.
+Fix a word length \(m\) and arbitrary physical word types
+\(\pi_X,\pi_U\). Restrict the \(x,v\) boundary words of
+\(K^{\otimes m}\) to \(\pi_X\), and restrict its \(u,y\) boundary
+words to \(\pi_U\). The two types may differ.
 Every coefficient of this restriction is a polynomial in \(w\), and at
-\(w=1\) the tensor is the exact crossing on the type class.
+\(w=1\) the tensor is the exact rectangular crossing on the two type classes.
 
 Indeed, the total height \(\sum h(a)\) depends only on the word type.
-Hence the product of the ramified coefficient gauges is exactly one on
+The \(x,v\) heights cancel as one pair, and the \(u,y\) heights cancel
+as the other. Hence the product of the ramified coefficient gauges is exactly one on
 every restricted entry. The rational restricted entry, after substitution
 \(w=1+t^T\), is therefore regular at \(t=0\) by Section 2. Its only
 possible finite pole in the original variable is \(w=1\), because (4)
@@ -157,7 +161,7 @@ entry has no pole, so it is a polynomial in \(w\).
 Its value at \(w=1\) is computed by the constant tensor (5). A term using
 any transition in (7) strictly lowers total height. Since all other
 constant transitions preserve height, such a term cannot survive the
-common-type restriction. Only the diagonal part of \(F^{\otimes m}\)
+paired-type restriction. Only the diagonal part of \(F^{\otimes m}\)
 remains, together with the bulk crossing. This proves the stated
 endpoint.
 
@@ -166,6 +170,16 @@ set \(S\) in Section 1. Neither \(P^2=I\) nor a down-set identity is used.
 The polynomial degree of a restricted entry is at most \(m\deg N\), so
 the number of coefficient tensors grows only linearly with \(m\) for a
 fixed seed.
+
+If equal physical dimensions are required, take a second copy with the
+crossing pairs exchanged: swap \(x,u\) and \(y,v\). Its type-class
+dimensions are exchanged, so their tensor product has the same dimension
+\(D_XD_U\) on all four boundaries. The swap preserves each of the two
+flattening ranks, up to permutations and transposition. Keep the two
+coefficient indices separate when taking tensor products of the pieces.
+Their coefficient-cost sums then multiply, while the external dimensions
+multiply to \(D_XD_U\). The special case
+\(\pi_X=\pi_U\) recovers the original common-four-leg-type statement.
 
 ## 4. Local pole control and Smith normalization
 
@@ -229,7 +243,7 @@ parameters. It verifies all of the following exactly over \(\mathbf F_2\):
 - Equality of the minors constructor and a literal exterior expansion.
 - Every local ramified coefficient is polynomial, with the predicted
   constant term.
-- Every entry of every two-copy common full-letter type is divisible by
+- Every entry of every pair of independent two-copy full-letter types is divisible by
   the complete denominator and has the crossing endpoint.
 - The common \(c\)-factor, the stronger \(x\)-core-2 divisibility, and
   the vanishing no-bulk correction.

@@ -59,6 +59,7 @@ make verify-linear-smith # All binary scalar pencils and the uniform linear barr
 make verify-type-pressure # Exact common-type optimization and physical gauges
 make verify-crossing-interpolation # Exact synthesis with prescribed local row lattices
 make verify-smith-oracle # Exact weighted profiles and the scoped sparse entropy dual
+make verify-native-smith # Optional compiled F4 search controls; needs a C++17 compiler
 make verify-controlled-smith # Controlled monomial crossings and the qutrit control
 make verify-sparse-holonomy # Exact singleton profiles and Gaussian entry identities
 make verify-charge-pruning # One-sided charge changes and typed Gaussian block bounds
@@ -187,13 +188,19 @@ and sparse output corrections are supplied for pressure searches.
 [Coordinate core restrictions](research/coordinate-core-crossings.md)
 retain a filled low-mode state and give a second arbitrary-mode family
 on the same alphabet sizes. Its local entries can have genuine poles;
-a common-type regularity proof cancels them globally and justifies the
-restored rational Smith profiles.
+matching word types on each crossing pair cancel them globally and
+justify the restored rational Smith profiles. The two pairs may have
+different types, and pairing with an exchanged copy restores equal
+external dimensions.
 [Even-core postselection](research/even-core-postselection.md) gives a
 four-letter polynomial family `A + lambda B + lambda^2 C` with a strict
 crossing endpoint. Two exact Wick identities prove that every nonzero
 rational parameter path is non-Gaussian. Monomial parameter paths are
 available for pressure searches; no improved rate has been certified.
+The [optional native F4 search engine](research/native-weighted-smith-f4.md)
+provides exact field arithmetic, support-block decomposition, weighted
+profiles, and pressure gradients. Its finite controls use an independent
+rational oracle. Floating search results still require exact certificates.
 For this Gaussian seed, [generic mode blocks](research/typed-gaussian-generic-blocks.md)
 force cost `Omega(D^2)` when all nonvacuum occupations stay fixed, even
 after arbitrary coefficient recombinations. Growing occupation densities

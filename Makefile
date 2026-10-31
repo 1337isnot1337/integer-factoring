@@ -76,6 +76,10 @@ verify-smith-oracle:
 	python3 tools/check_weighted_smith_oracle.py
 	python3 tools/check_sparse_bulk_species_floor.py
 
+.PHONY: verify-native-smith
+verify-native-smith:
+	python3 tools/check_native_weighted_smith_f4.py
+
 verify-controlled-smith:
 	python3 tools/check_controlled_permutation_smith.py
 	python3 tools/check_qutrit_weyl_crossing.py
@@ -138,6 +142,7 @@ help:
 	  'make verify-type-pressure - rational type and physical-gauge certificates' \
 	  'make verify-crossing-interpolation - exact polynomial synthesis from local flags' \
 	  'make verify-smith-oracle - exact weighted Smith minima and sparse entropy dual' \
+	  'make verify-native-smith - optional compiled F4 search controls (C++17)' \
 	  'make verify-controlled-smith - controlled monomial and qutrit crossings' \
 	  'make verify-sparse-holonomy - sparse Smith profiles and Gaussian identities' \
 	  'make verify-charge-pruning - one-sided charges and typed Gaussian block bounds' \
