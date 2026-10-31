@@ -52,6 +52,13 @@ The [complete fused-place catalogue](research/fused-all-place-profiles.md)
 supplies all singular-place profiles on three through six letters, including
 the extension-field places omitted by the earlier rational-point screens.
 
+The [adaptive transform constructor](research/adaptive-transform-constructor.md)
+chooses its digit count from the clique size and its digit width from the
+input length. It preserves the exact divisor-prefix count while reducing
+the written top-instance bounds to `P^2 lambda <= 99n` and
+`B_tab <= 117n/P`; their large-`P` constants tend to 36 and 40.
+The complete construction still costs `2^O(n/P)` bit operations.
+
 ## Verification
 
 From the repository root, run:
@@ -63,6 +70,7 @@ make verify-post-half     # Larger optional rank tests
 make verify-docs          # Local Markdown-link check
 make verify-mixed-place   # Mixed-place reconstruction and exact rank controls
 make verify-network-codecs # Exact Fourier-coset images and optimal codecs
+make verify-adaptive-transform # Exact convolution, carry bijection, and smaller top bounds
 make verify-fused-places  # All finite and closed-place fused profiles; needs NumPy/SciPy
 make verify-schur-fermion # Complete Schur entry formulas and exact comparisons
 make verify-schur-central # Hook-residue identities and full Schur ranks through weight 8

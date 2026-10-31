@@ -24,6 +24,10 @@ verify-network-codecs:
 	python3 tools/check_factoring_primitive_recipients.py
 	python3 tools/check_factoring_recipient_rank_envelope.py
 
+.PHONY: verify-adaptive-transform
+verify-adaptive-transform:
+	python3 tools/check_adaptive_transform_constructor.py
+
 .PHONY: verify-fused-places
 verify-fused-places:
 	python3 tools/check_fused_multipoint_profiles.py
