@@ -16,6 +16,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Auxiliary binary gauge floor](auxiliary-binary-gauge-floor.md): the gauged binary floor extends to matrix-valued Laurent seeds of every fixed auxiliary dimension with independent rational auxiliary conjugation gauges at the two places, by dominating the rectangular Smith orders coordinatewise with a twisted scalar boundary contraction; an explicit seed shows that no constant contraction dominates at both places and that a boundary contraction `f^T K e` can have strictly larger pressure.
+
 - [Cell-set minor caps](cell-minor-caps.md): every k-cell endpoint minor bounds each normalized Smith profile prefix by kd plus the k smallest cell energies; this exactly excludes the four-symbol shared-minor target, leaves certified sharper negative relaxation targets at five and six symbols, and proves a compact ternary region; the finite floating searches found no negative four-symbol value, but global four-symbol closure remains open. No realizing tensor or factoring improvement.
 
 - [Joint determinant actual-rank barrier](joint-determinant-barrier.md): all-field Weyl filtrations close every binary pure-value quadratic and cubic at leading `rho>=4/5`; the weaker rank-two determinant floor is `2/3`, and the common-cofactor result above closes the ternary quadratic class.

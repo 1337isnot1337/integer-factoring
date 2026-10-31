@@ -111,6 +111,12 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs five groups on 
 
 ## Current research frontier
 
+The [auxiliary extension](research/auxiliary-binary-gauge-floor.md) carries
+the same floor to matrix-valued binary seeds of every fixed auxiliary
+dimension, including independent rational auxiliary gauges at the two
+places; block certificates and module word-rate bounds remain outside it.
+Run `make verify-auxiliary-binary-floor`.
+
 For larger alphabets, [cell-set minor caps](research/cell-minor-caps.md)
 strengthen the [shared-minor relaxation](research/shared-minor-profile-relaxation.md):
 every set of k cells gives an endpoint minor that bounds each Smith-profile

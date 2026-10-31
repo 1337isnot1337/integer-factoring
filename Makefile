@@ -878,3 +878,7 @@ verify-joint-residue-retiming:
 .PHONY: verify-cell-minor-caps
 verify-cell-minor-caps:
 	python3 tools/check_cell_minor_caps.py --output /tmp/integer-factoring-cell-minor-caps-replay.json
+
+.PHONY: verify-auxiliary-binary-floor
+verify-auxiliary-binary-floor:
+	python3 tools/check_auxiliary_binary_gauge_floor.py --output /tmp/integer-factoring-auxiliary-binary-floor-replay.json
