@@ -114,6 +114,20 @@ Fourier weights at every frequency. A charged roughness pretest and
 radix rounding preserve any proposed saving exponent below one; the
 remaining task is a faster evaluator for those coupled arithmetic queries.
 
+[Coupled rational physical frames](research/coupled-rational-physical-frames.md)
+cancel poles across both paired alphabets while preserving the exact
+crossing endpoint and polynomial degree. Complete finite catalogues contain
+34 four-letter and 688 sixteen-letter frames in the stated pole ranges,
+including tensors with both odd and even coefficients. Independent
+[polynomial-frame controls](research/physical-polynomial-frames.md) verify
+the full coefficients and weighted local profiles used by the searches.
+
+For two fixed ternary bases with uniform paired types, an
+[exact minor certificate](research/ternary-uniform-gauge-majorization.md)
+proves that the known gauges minimize every local Chernoff profile sum.
+This closes that gauge-only search within its stated scope; different
+bases, common types, and polynomial frames remain available.
+
 ## Verification
 
 From the repository root, run:
@@ -137,6 +151,8 @@ make verify-asymmetric-crossings # Supporting-line algebra and numerical-oracle 
 make verify-weighted-adaptive # Exact local-gauge catalogues and typed reconstructions
 make verify-basis-searches # Completed ternary/fused winner replays and basis-oracle controls
 make verify-frobenius-recovery # Punctured sparse recovery, unit boxes, and radix costs
+make verify-physical-frames # Exact polynomial and coupled rational physical frames
+make verify-ternary-majorization # Sharp uniform-type gauge certificates for two bases
 make verify-schur-fermion # Complete Schur entry formulas and exact comparisons
 make verify-schur-central # Hook-residue identities and full Schur ranks through weight 8
 make verify-schur-gaussian # Exact digit reduction and fixed Gaussian crossing seed

@@ -710,6 +710,15 @@ verify-joint-residue-retiming:
 .PHONY: verify-asymmetric-crossings
 .PHONY: verify-weighted-adaptive verify-basis-searches
 .PHONY: verify-frobenius-recovery
+.PHONY: verify-physical-frames verify-ternary-majorization
+verify-physical-frames:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_physical_polynomial_frames.py --output /tmp/integer-factoring-polynomial-frames-replay.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_reflection_laurent_frames.py --output /tmp/integer-factoring-laurent-frames-replay.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_reflection_coupled_frames.py --output /tmp/integer-factoring-coupled-frames-replay.json
+
+verify-ternary-majorization:
+	python3 tools/check_ternary_gauge_majorization.py --output /tmp/integer-factoring-ternary-majorization-replay.json
+
 verify-frobenius-recovery:
 	python3 tools/check_frobenius_sparse_recovery.py --output /tmp/integer-factoring-frobenius-recovery-replay.json
 

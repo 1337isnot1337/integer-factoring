@@ -37,6 +37,9 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Completed ternary physical-basis search](ternary-physical-basis-search.md): 316 bases and 2,528 completed optimizations retain the known exact-family candidate; both stage winners independently replay and no global optimum is claimed.
 - [Completed fused gauge search and basis controls](fused-weighted-search-checkpoint.md): 1,294 completed trials retain full-cost candidates on three through six letters, with exact rational profile replays and a separately checked physical-basis oracle.
 - [Frobenius-compatible sparse recovery](frobenius-compatible-sparse-recovery.md): punctured extension-field grids and a support-universal collision argument permit degree-dependent divisor weights; explicit radix rounding supplies everywhere-unit operand boxes without a large compositum search.
+- [Coupled rational physical frames](coupled-rational-physical-frames.md): simultaneous paired-alphabet actions cancel poles without adding degree, with complete four- and sixteen-letter coefficient checks and explicit odd-parity witnesses.
+- [Polynomial physical frames](physical-polynomial-frames.md): exact complete-letter transvections preserve the crossing endpoint, with full degree accounting, local-unimodular invariance, and independent weighted-profile controls.
+- [Sharp uniform ternary gauges](ternary-uniform-gauge-majorization.md): 54 exact balanced-minor certificates prove optimal local Chernoff profiles for all rational gauges of two fixed bases with uniform types.
 
 - [Joint residues reduce to finite templates and convex offsets](joint-syndrome-residue-retiming.md): at fixed normalized degree, arbitrary coefficient fields and ramification reduce exactly to finitely many binary endpoint covers and compact convex offset programs; a transport certificate bounds the entire offset box, with exact color and Hall controls.
 

@@ -201,8 +201,7 @@ Hence
 The bound is deliberately conservative. It gives
 
 ```math
-L=O\!\left(\sqrt{nK}\,\log(nK+2)
-ight).         \tag{11}
+L=O\!\left(\sqrt{nK}\,\log(nK+2)\right).         \tag{11}
 ```
 
 Enumerate prime degrees by trial division. For each degree, construct
