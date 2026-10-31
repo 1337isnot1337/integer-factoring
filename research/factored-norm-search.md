@@ -22,6 +22,17 @@ repository contribution is an explicit integer algorithm, polynomial
 composition without a search for coprime leading coefficients, complete
 bit-cost accounting, and independent exact controls.
 
+The square-free orientation reduction and its meet-in-the-middle algorithm
+appear explicitly in Maher Mamah, [*Enhanced Algorithms for the Representation
+of integers by Binary Quadratic forms: Reduction to Subset Sum*, version 2](https://arxiv.org/html/2502.11402v2),
+Theorems 5.2 and 5.4. The present implementation retains prime powers,
+primitive/nonprimitive distinctions, explicit two-adic root precision, and
+deterministic sorting and splitting-root costs. It does not claim the
+underlying subset-product reduction as new. The paper's small-discriminant
+regime requires the numerical discriminant to be polynomial in the logarithm
+of the norm; that hypothesis does not hold for the universal-square
+parameters studied here.
+
 Selecting a suitable candidate `n` from a short deterministic list remains
 open. No improved complete factoring score follows; the score remains
 `1/2`.
