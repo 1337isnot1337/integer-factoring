@@ -638,3 +638,118 @@ verify-prime-deficit-affine-synthesis:
 .PHONY: verify-binary-target-box
 verify-binary-target-box:
 	python3 tools/check_binary_target_box.py --output /tmp/integer-factoring-binary-target-box-replay.json
+
+.PHONY: verify-full-alphabet-affine
+verify-full-alphabet-affine:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_full_alphabet_two_cut_lattices.py --output /tmp/integer-factoring-full-alphabet-affine-replay.json --search-records evidence/full-alphabet-q4-natural-affine-search.json evidence/full-alphabet-q4-degenerate-affine-search.json
+
+.PHONY: verify-symmetric-binary-filters
+verify-symmetric-binary-filters:
+	python3 tools/check_symmetric_binary_filter_synthesis.py --output /tmp/integer-factoring-symmetric-binary-replay.json
+
+.PHONY: verify-binary-smith-floor
+verify-binary-smith-floor:
+	python3 tools/check_binary_fixed_ray_floor.py --output /tmp/integer-factoring-binary-fixed-ray-replay.json
+	python3 tools/check_binary_all_gauge_floor.py --output /tmp/integer-factoring-binary-all-gauge-replay.json
+
+.PHONY: verify-symmetric-prime-filters verify-symmetric-filter-catalogues
+verify-symmetric-prime-filters:
+	python3 tools/check_symmetric_prime_filter_synthesis.py --output /tmp/integer-factoring-symmetric-prime-replay.json
+
+verify-symmetric-filter-catalogues:
+	python3 tools/check_symmetric_filter_catalogues.py --output /tmp/integer-factoring-symmetric-catalogue-replay.json
+
+.PHONY: verify-gaussian-physical-frames verify-gaussian-coupled-gates
+verify-gaussian-physical-frames:
+	python3 tools/check_reflection_gaussian_physical_frames.py --output /tmp/integer-factoring-gaussian-physical-frames-replay.json
+
+verify-gaussian-coupled-gates:
+	python3 tools/check_reflection_gaussian_coupled_gates.py --output /tmp/integer-factoring-gaussian-coupled-gates-replay.json
+
+.PHONY: verify-physical-splits verify-reflection-code-alphabets
+verify-physical-splits:
+	python3 tools/check_physical_split_crossings.py --output /tmp/integer-factoring-physical-split-replay.json
+
+verify-reflection-code-alphabets:
+	python3 tools/check_reflection_code_alphabets.py --output /tmp/integer-factoring-reflection-code-alphabets-replay.json
+
+.PHONY: verify-nonresonant-filters verify-affine-filter-tiles
+verify-nonresonant-filters:
+	python3 tools/check_nonresonant_boolean_filter_floor.py --output /tmp/integer-factoring-nonresonant-filter-replay.json
+
+verify-affine-filter-tiles:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_affine_symmetric_tiles.py --output /tmp/integer-factoring-affine-filter-tile-replay.json
+
+.PHONY: verify-multiplier-automata verify-global-code-multipliers
+verify-multiplier-automata:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_boolean_multiplier_automata.py --output /tmp/integer-factoring-multiplier-automata-replay.json
+
+verify-global-code-multipliers:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_global_code_multipliers.py --output /tmp/integer-factoring-global-code-multipliers-replay.json
+
+.PHONY: verify-quartic-tiles
+verify-quartic-tiles:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_reflection_quartic_tiles.py --output /tmp/integer-factoring-quartic-tiles-replay.json
+
+.PHONY: verify-shared-minor-targets
+verify-shared-minor-targets:
+	python3 tools/check_shared_minor_profile_targets.py --output /tmp/integer-factoring-shared-minor-targets-replay.json
+
+.PHONY: verify-regular-frame-cells verify-finite-smith-frames
+verify-regular-frame-cells:
+	python3 tools/check_formal_row_flags.py --output /tmp/integer-factoring-formal-row-flags-replay.json
+
+verify-finite-smith-frames:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_finite_precision_smith_frames.py --output /tmp/integer-factoring-finite-smith-frames-replay.json
+
+.PHONY: verify-odd-fiber-codes
+verify-odd-fiber-codes:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_odd_fiber_crossings.py --output /tmp/integer-factoring-odd-fiber-codes-replay.json
+
+.PHONY: verify-joint-syndrome-filters
+verify-joint-syndrome-filters:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_joint_syndrome_filter_synthesis.py --output /tmp/integer-factoring-joint-syndrome-filters-replay.json
+
+.PHONY: verify-typed-charge-lattices
+verify-typed-charge-lattices:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_typed_charge_lattice_synthesis.py --output /tmp/integer-factoring-typed-charge-lattice-replay.json
+
+.PHONY: verify-joint-multiplier-separation
+verify-joint-multiplier-separation:
+	python3 tools/check_joint_boolean_multiplier_separation.py --output /tmp/integer-factoring-joint-multiplier-separation-replay.json
+
+.PHONY: verify-colored-row-fibers
+verify-colored-row-fibers:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_colored_row_fibers.py --output /tmp/integer-factoring-colored-row-fibers-replay.json
+
+.PHONY: verify-fused-six-vertex
+verify-fused-six-vertex:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_fused_six_vertex_crossings.py --output /tmp/integer-factoring-fused-six-vertex-replay.json --search-records evidence/fused-six-vertex-gauges-m2-theta2.json evidence/fused-six-vertex-gauges-m3-theta4.json
+
+.PHONY: verify-nonlinear-symbol-charges
+verify-nonlinear-symbol-charges:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_nonlinear_symbol_charges.py --output /tmp/integer-factoring-nonlinear-symbol-charges-replay.json
+
+.PHONY: verify-paired-quartic-poles
+verify-paired-quartic-poles:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_reflection_paired_quartic_words.py --output /tmp/integer-factoring-paired-quartic-poles-replay.json
+
+.PHONY: verify-cube-charge-vertices
+verify-cube-charge-vertices:
+	python3 tools/check_cube_charge_vertices.py --output /tmp/integer-factoring-cube-charge-vertices-replay.json
+
+.PHONY: verify-coefficient-height-walks
+verify-coefficient-height-walks:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_full_alphabet_walk_records.py --records evidence/full-alphabet-alternating-walk-0.json evidence/full-alphabet-alternating-walk-1.json --output /tmp/integer-factoring-coefficient-height-walks-replay.json
+
+.PHONY: verify-mixed-quartic-poles
+verify-mixed-quartic-poles:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_reflection_mixed_paired_words.py --output /tmp/integer-factoring-mixed-quartic-poles-replay.json
+
+.PHONY: verify-binary-typed-endpoints
+verify-binary-typed-endpoints:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_binary_typed_endpoint_gauges.py --output /tmp/integer-factoring-binary-typed-endpoints-replay.json
+
+.PHONY: verify-joint-residue-retiming
+verify-joint-residue-retiming:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_joint_syndrome_residue_retiming.py --output /tmp/integer-factoring-joint-residue-retiming-replay.json

@@ -107,6 +107,81 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 
 ## Current research frontier
 
+The [binary site-symmetry barrier](research/binary-site-symmetry-barrier.md)
+gives an ordinary actual-rank proof of `rho >= 3/4` for every decomposition
+whose binary pieces are invariant under all simultaneous permutations of
+tensor positions. It covers scalar seeds of every degree, arbitrary coefficient
+recombinations and mixtures of scalar curves, over any fixed field,
+including characteristic two. A universal degree-four polynomial and
+Weyl filtrations supply the obstruction at every tensor length.
+It extends to a common partition into any sublinear number of position
+classes, with arbitrary coupled coefficient functionals between classes.
+Run `make verify-binary-site-symmetry` for exact algebra and finite controls.
+The [matching-curve controls](research/matching-curve-controls.md) show
+why escaping common-minor tests does not escape this broader theorem.
+New physical code restrictions and constructions that break the stated
+site symmetry remain open; no stronger factoring exponent is established.
+
+The [full auxiliary coefficient-span experiment](research/auxiliary-coefficient-span.md)
+tests ordered noncommuting constructions outside that symmetry hypothesis.
+Complete finite recombination improves several raw rank maxima, but exact
+rank-sum lower certificates leave the tested finite-block envelope above
+the half-rate threshold. Run `make verify-auxiliary-coefficient-span`.
+Nine full extension-field controls over `F_4` retain the same finite
+minmax thresholds; run `make verify-auxiliary-extension-span`.
+
+The [nonlinear downset-code construction](research/downset-code-crossings.md)
+preserves the crossing on a restricted physical alphabet. Its column
+matrix has an exact global Smith diagonal and a constant basis change
+to smaller weighted disjointness matrices, allowing actual recombination
+ranks to be checked without inferring them from a Smith bound.
+Complete small no-adjacent-ones code experiments give no new rank-sum
+threshold. Run `make verify-downset-crossings verify-regular-code-crossings`.
+
+The [common-cofactor barrier](research/common-cofactor-barrier.md) closes
+the asymmetric ternary quadratic family for actual coefficient ranks.
+All 32,265 normalized seeds, covering 12,852,225 actual coefficient seeds,
+have a shared projected minor that forces
+`rho >= log(3)/(2 log(2)) = 0.792481...` at every tensor length.
+The exact full certificate replay is `make verify-common-cofactor`.
+The binary site-symmetry theorem above additionally covers seeds without
+this certificate at its weaker, but still post-half-excluding, floor.
+The factoring exponent is still one half.
+
+The [joint determinant barrier](research/joint-determinant-barrier.md)
+uses Weyl filtrations in every characteristic to bound actual coefficient
+ranks. It rules out `rho < 4/5` for binary quadratics with two pure
+interpolation values and cubics with three, including the entire
+135,005,697-seed ternary cubic class. Equal determinants give floor one.
+The asymmetric rank-two values have a weaker determinant floor of `2/3`;
+the common-cofactor result above now closes the full ternary quadratic
+class with a stronger certificate. Run `make verify-joint-determinant`.
+
+The [constant transpose-intertwiner obstruction](research/transpose-intertwiner-barrier.md)
+applies to actual tensor-power coefficient ranks: a common invertible
+intertwiner forces both cut ranks to agree, ruling out leading contraction
+for polynomially many pieces. It excludes 32,454,657 ternary cubic seeds.
+Actual jets of 200 retained witnesses are checked through three copies;
+the favorable two-copy values do not persist in that finite comparison.
+Run `make verify-transpose-intertwiner` for complete finite coverage counts
+and independent matrix controls. No stronger factoring exponent is claimed.
+
+The [universal multipoint Smith floor](research/multipoint-smith-floor.md)
+shows that the local-jet pressure criterion needs `rho > 3/4` over every
+field, alphabet size, polynomial degree, allocation, and permitted cut scale.
+It therefore cannot improve the existing `1/sqrt(2)` crossing. A completed
+1,579,014-seed cubic catalogue supplies independent literal controls.
+Sharper actual-jet bounds and physical type constructions remain outside
+this obstruction. Run `make verify-multipoint-smith-floor`.
+
+The [complete low-rank ternary quadratic catalogue](research/multipoint-low-rank-seeds.md)
+excludes binary seeds with cut-rank product at most three at both finite
+interpolation points: all 32,265 representatives satisfy the exact multipoint
+pressure floor `rho >= 3/4`, over every degree allocation and two-cut scale.
+The [pure-value subfamily](research/multipoint-rank-one-seeds.md) has its
+own smaller replay. Larger local ranks and additional field points remain
+open. Run `make verify-multipoint-rank-two` for the broader catalogue.
+
 The [typed rational strictification theorem](research/typed-rational-crossing-strictification.md)
 extends the binary pressure floor to scalar rational kernels with only
 zero/endpoint denominators and crossing endpoints at every paired type
