@@ -1,0 +1,11 @@
+{
+  "status": "Exact energy/ground identities supporting an analytic all-digit exterior-charge floor; numerical controls are not sign certificates.",
+  "exact_thermal_and_ground_identities": 2240,
+  "exact_midpoint_and_monotonicity_relations": 29120,
+  "independent_full_pressure_comparisons": 640,
+  "maximum_floating_identity_error": 1.8637869025894815e-14,
+  "analytic_scope": "Every integer q\u22652,n\u22651, every t>0, and every real |J|\u22652n.",
+  "source_sha256": {
+    "tools/check_exterior_charged_gaussian_floor.py": "17138c2609cce940913119f82a41c90c537b0585d37c9a1277d57748bae242bc"
+  }
+}

@@ -490,3 +490,10 @@ verify-selected-deficit-operators:
 
 verify-deficit-energy-conjugation:
 	python3 tools/check_deficit_energy_conjugation.py
+
+.PHONY: verify-exterior-gaussian-floor verify-charged-one-mode-filters
+verify-exterior-gaussian-floor:
+	python3 tools/check_exterior_charged_gaussian_floor.py
+
+verify-charged-one-mode-filters:
+	python3 tools/check_charged_one_mode_filters.py

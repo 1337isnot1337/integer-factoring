@@ -208,6 +208,10 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Obstructions and work beyond 1/2
 
+- [Exterior Gaussian charge floor](exterior-charged-gaussian-floor.md): exact ground cancellation and convexity prove positive full pressure for every digit count at every real charge with absolute value at least twice the interval length.
+
+- [Charged one-mode Laurent filters](charged-one-mode-binary-laurent-filters.md): a coefficient barrier proves Gaussian domination throughout the full interior charge interval, while a sharp universal loss cap and 70-interval certificate exclude every exterior critical witness.
+
 - [Charged Gaussian pressure floor](charged-gaussian-pressure-floor.md): an integer interval certificate and analytic tails prove all-scale positivity on a linearly growing real-charge band; an exact identity treats every even charge in the physical range for all digit counts.
 
 - [All one-mode binary Laurent filters](one-mode-binary-laurent-filter-floor.md): a complete degree/order dichotomy proves Gaussian domination at zero charge for arbitrary degree and every characteristic-two coefficient field, with exact equality classification.

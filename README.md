@@ -219,6 +219,12 @@ The [one-mode Laurent theorem](research/one-mode-binary-laurent-filter-floor.md)
 also excludes every single-mode binary Laurent filter at zero charge,
 over any fixed characteristic-two field and without a degree cutoff.
 Only a common scalar Laurent monomial has the Gaussian cost.
+The [charged extension](research/charged-one-mode-binary-laurent-filters.md)
+proves the same relative domination for every `|J| <= 2n`. Outside that
+interval, relative gains are possible, but a sharp loss cap and an exact
+70-interval certificate prove that the full critical pressure stays
+positive. The [exterior Gaussian theorem](research/exterior-charged-gaussian-floor.md)
+separately covers every digit count at all real `|J| >= 2n`.
 `make verify-charged-gaussian-floor verify-one-mode-laurent-filters`
 replays these additional certificates.
 
