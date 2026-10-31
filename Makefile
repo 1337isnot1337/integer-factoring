@@ -18,6 +18,7 @@ verify-arithmetic:
 	python3 tools/check_dyadic_hyperbola.py
 	python3 tools/check_dyadic_orbit_aggregation.py
 	python3 tools/check_interval_orbit_gcd.py
+	python3 tools/check_interval_unit_jets.py
 
 verify-post-half:
 	python3 tools/check_half_piece_ranks.py --full

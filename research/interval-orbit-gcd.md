@@ -102,6 +102,10 @@ actions are an additive translation and its conjugate by inversion.
 The open constructive question is whether their common finite orbit
 factor can be eliminated from these boundary recurrences while paying
 for the small output rather than the long input products.
+The [unit-jet algorithm](interval-unit-jets.md) now provides all local
+Taylor data at a suitable quadratic 2-adic point with polynomial bit
+cost in the endpoint length, precision, and jet degree. Extracting the
+global common factor from this data and the recurrences remains open.
 
 Equations (3)--(4) specify a new elimination problem. They do not
 authorize treating a long product, a shifted evaluation, or a large

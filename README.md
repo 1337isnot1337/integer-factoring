@@ -46,6 +46,9 @@ in [PR #41](https://github.com/1337isnot1337/integer-factoring/pull/41).
 The [interval orbit-gcd interface](research/interval-orbit-gcd.md) retains
 the correlated root relation and specifies the unresolved elimination
 algorithm; its stronger factoring consequence is conditional.
+[Local jets of those products](research/interval-unit-jets.md) now have
+a polynomial bit-cost evaluator in their binary endpoint size,
+precision, and Taylor degree; global gcd extraction remains open.
 
 The result table distinguishes verified machine bounds from conditional constructions and finite experiments. A merged PR or a passing finite test does not imply independent mathematical review.
 
@@ -60,7 +63,7 @@ make verify-post-half     # Larger optional rank tests
 make verify-docs          # Local Markdown-link check
 python3 tools/check_dyadic_hyperbola.py # Exact arithmetic-framework controls
 python3 tools/check_dyadic_orbit_aggregation.py # Complete cyclic-family controls
-make verify-arithmetic    # All three arithmetic-framework checkers
+make verify-arithmetic    # All arithmetic-framework checkers
 ```
 
 The Python checks use Python 3 and its standard library. Some optional checks use NumPy for speed.
