@@ -165,6 +165,11 @@ the four physical maps, with a reusable exact constructor.
 two four-element-field tensors to cancel their endpoint phases. Three
 checked eight-letter, degree-48 crossings descend to binary coefficients
 through an explicit constant change of basis.
+An [all-field residual obstruction](research/residual-quartic-three-letter-obstruction.md)
+excludes three-letter restrictions by four constant physical maps over
+every characteristic-two field. When both crossing pairs use the same
+code, the resulting three-letter operator is always singular. Larger
+blocks and bulk-dependent codes remain outside this obstruction.
 For this Gaussian seed, [generic mode blocks](research/typed-gaussian-generic-blocks.md)
 force cost `Omega(D^2)` when all nonvacuum occupations stay fixed, even
 after arbitrary coefficient recombinations. Growing occupation densities

@@ -65,6 +65,7 @@ verify-crossing-interpolation:
 	python3 tools/check_residual_quartic_codes.py
 	python3 tools/check_coded_quartic_mode_families.py
 	python3 tools/check_conjugate_residual_phase_codes.py
+	python3 tools/check_residual_three_letter_obstruction.py
 
 verify-smith-oracle:
 	python3 tools/check_weighted_smith_oracle.py
