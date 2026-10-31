@@ -261,6 +261,15 @@ profile through order `p^(r+d)`, and bounds the departure from the
 scalar prime-power contraction by rank `d`. Its general gate checks
 exact polynomial geometry and Gaussian-factor division; further complete
 physical operator replays are stated separately.
+The [arbitrary-selection operator API](research/arbitrary-one-deficit-operator-search.md)
+now handles every selected set one below a prime power, with original
+physical controls and exact Gaussian-factor division. Four parent-length
+qutrit catalogues and four
+[energy-conjugated catalogues](research/deficit-energy-conjugated-operators.md)
+completed at interval 26, including interior selections. Their 9,032
+kernel/geometry cases retain the Gaussian best value in the recorded
+finite grids and refinements.
+
 The complementary [above-power construction](research/above-power-identity-operator-reduction.md)
 handles terminal directions at `n=2^k+1` by retaining the existing,
 unchanged identity direction zero. Its local core and Weyl matrix are

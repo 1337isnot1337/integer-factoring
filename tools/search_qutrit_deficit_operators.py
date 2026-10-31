@@ -13,9 +13,9 @@ import time
 import numpy as np
 from scipy.optimize import minimize
 
-from coupled_identity_mode_filters import add
+from coupled_identity_mode_filters import add, shift
 from coupled_identity_operator_filters import identity_kernel, states
-from prime_deficit_identity_operators import zero_profiles, infinity_profiles, Pressure
+from prime_deficit_identity_operators import operator_geometry, zero_profiles, infinity_profiles, Pressure
 
 
 @lru_cache(maxsize=2)
@@ -63,7 +63,8 @@ def paired_catalogue(height=1):
     return tuple(result.values())
 
 
-def rank_one_catalogue(n, P):
+def rank_one_catalogue(n, P, exponent_length=None):
+    length = n if exponent_length is None else exponent_length
     alphabet = states(3, 2)
     result = [identity_kernel(3, 2)]
     counts = {}
@@ -72,7 +73,7 @@ def rank_one_catalogue(n, P):
         rank_one = tuple(matrix for matrix in projectors(len(labels))
                          if sum(matrix[i][i] for i in range(len(labels))) % 3 == 1)
         counts[occupation] = len(rank_one)
-        for matrix, coefficient, exponent in product(rank_one, (1, 2), (-n*P, -1, 1, n*P)):
+        for matrix, coefficient, exponent in product(rank_one, (1, 2), (-length*P, -1, 1, length*P)):
             kernel = identity_kernel(3, 2)
             for i, row in enumerate(labels):
                 for j, column in enumerate(labels):
@@ -93,6 +94,12 @@ def encode(kernel):
             for (row, column), value in sorted(kernel.items())]
 
 
+def energy_conjugate(kernel, selected, P, twist, prime=3):
+    """Conjugate by q^(twist P energy); this equals the identity basis at q=1."""
+    return {(row, column): shift(value, twist*P*sum(j*(a-b) for j, a, b in zip(selected, row, column)), prime)
+            for (row, column), value in kernel.items()}
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--parent', type=int, default=27)
@@ -100,27 +107,35 @@ def main():
     parser.add_argument('--P', type=int, default=1)
     parser.add_argument('--height', type=int, default=1)
     parser.add_argument('--family', choices=('rank-one', 'paired'), default='rank-one')
+    parser.add_argument('--exponent-length', choices=('actual', 'parent'), default='actual')
+    parser.add_argument('--selected', help='Two increasing actual indices, for example 7,18.')
+    parser.add_argument('--energy-twist', type=int, choices=(-1, 0, 1), default=0)
     parser.add_argument('--output', type=Path, required=True)
     args = parser.parse_args()
     if args.height < 1:
         raise ValueError('Use a positive Laurent pole height.')
     n, initial, terminal = args.parent-1, args.initial_modes, 2-args.initial_modes
+    selected = None if args.selected is None else tuple(int(value) for value in args.selected.split(','))
+    options = {'selected_indices': selected}
     geometry = (3, args.parent, 1, initial, terminal, args.P)
+    data = operator_geometry(*geometry[:-1], selected_indices=selected)
     start = time.monotonic()
     grid = tuple(product(math.log(2*n)/n*np.array((.25, .5, .75, 1., 1.5, 2.)),
                          sorted(set((-2*n, -n, -4, -2, -1, 0, 1, 2, 4, n/2, n, 2*n)))))
     scales = np.array([value[0] for value in grid])
     charges = np.array([value[1] for value in grid])
     classes, best = {}, math.inf
-    candidates = rank_one_catalogue(n, args.P) if args.family == 'rank-one' else paired_catalogue(args.height)
+    length = n if args.exponent_length == 'actual' else args.parent
+    candidates = rank_one_catalogue(n, args.P, length) if args.family == 'rank-one' else paired_catalogue(args.height)
     for completed, kernel in enumerate(candidates, 1):
-        blocks = zero_profiles(*geometry, kernel)
-        infinity = infinity_profiles(*geometry, kernel)
+        kernel = energy_conjugate(kernel, data['selected'], args.P, args.energy_twist)
+        blocks = zero_profiles(*geometry, kernel, **options)
+        infinity = infinity_profiles(*geometry, kernel, **options)
         key = (tuple((block['charge'], block['orders']) for block in blocks), infinity)
         if key in classes:
             classes[key]['count'] += 1
         else:
-            pressure = Pressure(*geometry, blocks, infinity)
+            pressure = Pressure(*geometry, blocks, infinity, **options)
             value, relative = pressure.grid(scales, charges), pressure.grid(scales, charges, True)
             i, j = int(np.argmin(value)), int(np.argmin(relative))
             record = {'count': 1, 'kernel': encode(kernel), 'zero_blocks': blocks, 'infinity_active': infinity,
@@ -142,7 +157,7 @@ def main():
                               'seconds': time.monotonic()-start}), flush=True)
     records = sorted(classes.values(), key=lambda row: row['critical_grid']['pressure'])
     for row in records[:30]:
-        pressure = Pressure(*geometry, row['zero_blocks'], row['infinity_active'])
+        pressure = Pressure(*geometry, row['zero_blocks'], row['infinity_active'], **options)
         point = row['critical_grid']
         fit = minimize(lambda value: float(pressure.grid([math.exp(float(value[0]))], [float(value[1])])[0]),
                        [math.log(point['scale']), point['charge']], method='Nelder-Mead',
@@ -155,8 +170,11 @@ def main():
     result = {'status': 'Complete bounded F3 projector family; exact profiles and numerical pressure search, no global obstruction or improved bound claim.',
               'prime': 3, 'parent': args.parent, 'n': n, 'deficit': 1,
               'initial_modes': initial, 'terminal_modes': terminal, 'ramification': args.P, 'height': args.height,
+              'selected_indices': data['selected'], 'retained_auxiliary_indices': data['retained'],
               'family': args.family, 'rank_one_projectors_by_occupation': {1: 12, 2: 117, 3: 12},
-              'rank_one_coefficients': (1, 2), 'rank_one_exponents': (-n*args.P, -1, 1, n*args.P),
+              'rank_one_coefficients': (1, 2), 'exponent_length': args.exponent_length,
+              'selected_energy_conjugation': args.energy_twist,
+              'rank_one_exponents': (-length*args.P, -1, 1, length*args.P),
               'completed_candidates': completed, 'complete': True, 'profile_classes': len(records),
               'grid_size': len(grid),
               'best_critical_pressure': min(row.get('refined', row['critical_grid'])['pressure'] for row in records),

@@ -18,6 +18,10 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 - [Completed above-power operator catalogue](above-power-operator-searches.md): all 42,560 specified interval-33 projector kernels yield 1,111 exact profile classes, with complete numerical grid and refinement records.
 
+- [Operators on arbitrary one-deficit selections](arbitrary-one-deficit-operator-search.md): a compatible selected-index API with full original controls and four complete parent-exponent qutrit catalogues.
+
+- [Energy-conjugated one-deficit operators](deficit-energy-conjugated-operators.md): selected-index monomial conjugation preserves the strict endpoint and charges its complete Laurent support; four further qutrit catalogues completed.
+
 - [Arbitrary selections one below a prime power](arbitrary-one-deficit-identity-cores.md): weighted principal minors retain only 2r+1 actual modes for every selection, with one explicit local eigenchannel and its endpoint restriction.
 
 - [Arbitrary selections above a prime power](surplus-identity-cores.md): adding unchanged actual identity directions produces a square core with at most 2(r+2d) modes in every prime characteristic; terminal selections use 2(r+d).

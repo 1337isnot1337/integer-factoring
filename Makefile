@@ -483,3 +483,10 @@ verify-charged-gaussian-floor:
 
 verify-one-mode-laurent-filters:
 	python3 tools/check_one_mode_binary_laurent_filters.py
+
+.PHONY: verify-selected-deficit-operators verify-deficit-energy-conjugation
+verify-selected-deficit-operators:
+	python3 tools/check_selected_deficit_operators.py --extended
+
+verify-deficit-energy-conjugation:
+	python3 tools/check_deficit_energy_conjugation.py

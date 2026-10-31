@@ -24,11 +24,31 @@ from prime_state_filter_pressure import gaussian_pressure
 from prime_state_filter_profiles import validate
 
 
+def operator_geometry(prime, parent, deficit, initial_modes, terminal_modes, selected_indices=None):
+    """Use the end geometry by default, or arbitrary actual indices for d=1.
+
+    With an explicit tuple, the two end counts specify only the total number
+    of selected modes. All physical weights use the supplied indices.
+    """
+    if selected_indices is None:
+        return geometry_data(prime, parent, deficit, initial_modes, terminal_modes)
+    if deficit != 1 or not isinstance(selected_indices, tuple):
+        raise ValueError('Explicit selected indices require deficit one and an increasing tuple.')
+    if initial_modes < 0 or terminal_modes < 0 or len(selected_indices) != initial_modes+terminal_modes:
+        raise ValueError('The selected tuple must contain exactly initial_modes+terminal_modes indices.')
+    from selected_one_deficit_geometry import geometry_data as selected_geometry
+    return selected_geometry(prime, parent, selected_indices)
+
+
 @lru_cache(maxsize=32)
-def parameter(prime, parent, deficit, initial_modes, terminal_modes):
-    data = geometry_data(prime, parent, deficit, initial_modes, terminal_modes)
-    actual = weyl_data(prime, parent, deficit, initial_modes, terminal_modes)
-    if deficit != 1 or initial_modes not in (0, 1):
+def parameter(prime, parent, deficit, initial_modes, terminal_modes, selected_indices=None):
+    data = operator_geometry(prime, parent, deficit, initial_modes, terminal_modes, selected_indices)
+    if selected_indices is None:
+        actual = weyl_data(prime, parent, deficit, initial_modes, terminal_modes)
+    else:
+        from selected_one_deficit_geometry import adjugate_parameter
+        actual = adjugate_parameter(data)
+    if deficit != 1 or (selected_indices is None and initial_modes not in (0, 1)):
         return actual
     c, d = {0: 1, 1: prime-1}, {0: 1, parent: prime-1}
     e = add(d, multiply(c, {j: 1 for j in data['augmented']}, prime), prime, -1)
@@ -47,9 +67,9 @@ def parameter(prime, parent, deficit, initial_modes, terminal_modes):
 
 
 @lru_cache(maxsize=16)
-def reduced_components(prime, parent, deficit, initial_modes, terminal_modes):
-    data = geometry_data(prime, parent, deficit, initial_modes, terminal_modes)
-    local = parameter(prime, parent, deficit, initial_modes, terminal_modes)
+def reduced_components(prime, parent, deficit, initial_modes, terminal_modes, selected_indices=None):
+    data = operator_geometry(prime, parent, deficit, initial_modes, terminal_modes, selected_indices)
+    local = parameter(prime, parent, deficit, initial_modes, terminal_modes, selected_indices)
     modes, size = data['modes'], data['augmented_modes']
     alphabet, actual_states = states(prime, size), states(prime, modes)
     lookup = {state: i for i, state in enumerate(alphabet)}
@@ -110,13 +130,13 @@ def reduced_components(prime, parent, deficit, initial_modes, terminal_modes):
     return result
 
 
-def reduced_matrix(prime, parent, deficit, initial_modes, terminal_modes, P, kernel, endpoint='identity'):
-    data = geometry_data(prime, parent, deficit, initial_modes, terminal_modes)
+def reduced_matrix(prime, parent, deficit, initial_modes, terminal_modes, P, kernel, endpoint='identity', selected_indices=None):
+    data = operator_geometry(prime, parent, deficit, initial_modes, terminal_modes, selected_indices)
     validate(prime, data['n'], P, (0,)*prime)
     kernel = normalized_kernel(prime, data['modes'], kernel, endpoint, data['selected'])
     alphabet = states(prime, data['augmented_modes'])
     matrix = [[{} for _ in alphabet] for _ in alphabet]
-    components = reduced_components(prime, parent, deficit, initial_modes, terminal_modes)
+    components = reduced_components(prime, parent, deficit, initial_modes, terminal_modes, selected_indices)
     for index, scalar in kernel.items():
         for (row, column), polynomial in components[index].items():
             weight = P*sum(j*digit for j, digit in zip(data['augmented'], alphabet[row]))
@@ -125,11 +145,11 @@ def reduced_matrix(prime, parent, deficit, initial_modes, terminal_modes, P, ker
     return matrix
 
 
-def zero_profiles(prime, parent, deficit, initial_modes, terminal_modes, P, kernel, endpoint='identity'):
-    data = geometry_data(prime, parent, deficit, initial_modes, terminal_modes)
+def zero_profiles(prime, parent, deficit, initial_modes, terminal_modes, P, kernel, endpoint='identity', selected_indices=None):
+    data = operator_geometry(prime, parent, deficit, initial_modes, terminal_modes, selected_indices)
     size, modes = data['augmented_modes'], data['modes']
     alphabet = states(prime, size)
-    matrix = reduced_matrix(prime, parent, deficit, initial_modes, terminal_modes, P, kernel, endpoint)
+    matrix = reduced_matrix(prime, parent, deficit, initial_modes, terminal_modes, P, kernel, endpoint, selected_indices)
     result = defaultdict(list)
     for occupation in range(size*(prime-1)+1):
         indices = [i for i, state in enumerate(alphabet) if sum(state) == occupation]
@@ -145,8 +165,8 @@ def zero_profiles(prime, parent, deficit, initial_modes, terminal_modes, P, kern
                  for charge, values in sorted(result.items()))
 
 
-def infinity_profiles(prime, parent, deficit, initial_modes, terminal_modes, P, kernel, endpoint='identity'):
-    data = geometry_data(prime, parent, deficit, initial_modes, terminal_modes)
+def infinity_profiles(prime, parent, deficit, initial_modes, terminal_modes, P, kernel, endpoint='identity', selected_indices=None):
+    data = operator_geometry(prime, parent, deficit, initial_modes, terminal_modes, selected_indices)
     validate(prime, data['n'], P, (0,)*prime)
     kernel = normalized_kernel(prime, data['modes'], kernel, endpoint, data['selected'])
     alphabet = states(prime, data['modes'])
@@ -161,8 +181,8 @@ def infinity_profiles(prime, parent, deficit, initial_modes, terminal_modes, P, 
 
 
 @lru_cache(maxsize=8)
-def active_components(prime, parent, deficit, initial_modes, terminal_modes, P):
-    data = geometry_data(prime, parent, deficit, initial_modes, terminal_modes)
+def active_components(prime, parent, deficit, initial_modes, terminal_modes, P, selected_indices=None):
+    data = operator_geometry(prime, parent, deficit, initial_modes, terminal_modes, selected_indices)
     modes, size = data['modes'], data['augmented_modes']
     zero = (0,)*(2*(modes+size))
     gaussian = {zero: {0: 1}}
@@ -204,12 +224,12 @@ def active_components(prime, parent, deficit, initial_modes, terminal_modes, P):
     return _components(gaussian, left, right, prime)
 
 
-def full_zero_profiles(prime, parent, deficit, initial_modes, terminal_modes, P, kernel, endpoint='identity'):
-    data = geometry_data(prime, parent, deficit, initial_modes, terminal_modes)
+def full_zero_profiles(prime, parent, deficit, initial_modes, terminal_modes, P, kernel, endpoint='identity', selected_indices=None):
+    data = operator_geometry(prime, parent, deficit, initial_modes, terminal_modes, selected_indices)
     validate(prime, data['n'], P, (0,)*prime)
     modes, size = data['modes'], data['augmented_modes']
     kernel = normalized_kernel(prime, modes, kernel, endpoint, data['selected'])
-    components = active_components(prime, parent, deficit, initial_modes, terminal_modes, P)
+    components = active_components(prime, parent, deficit, initial_modes, terminal_modes, P, selected_indices)
     tensor = {}
     for index, scalar in kernel.items():
         scalar = {2*degree: value for degree, value in scalar.items()}
@@ -248,8 +268,8 @@ def original_components(prime, n, selected):
     return _components(gaussian, left, right, prime), gaussian
 
 
-def polynomial_seed(prime, parent, deficit, initial_modes, terminal_modes, P, kernel, endpoint='identity'):
-    data = geometry_data(prime, parent, deficit, initial_modes, terminal_modes)
+def polynomial_seed(prime, parent, deficit, initial_modes, terminal_modes, P, kernel, endpoint='identity', selected_indices=None):
+    data = operator_geometry(prime, parent, deficit, initial_modes, terminal_modes, selected_indices)
     validate(prime, data['n'], P, (0,)*prime)
     modes, n, selected = data['modes'], data['n'], data['selected']
     kernel = normalized_kernel(prime, modes, kernel, endpoint, selected)
@@ -286,15 +306,15 @@ def polynomial_seed(prime, parent, deficit, initial_modes, terminal_modes, P, ke
     return tensor, clearing, gaussian
 
 
-def profile_data(prime, parent, deficit, initial_modes, terminal_modes, P, J, kernel, blocks=None, endpoint='identity'):
-    data = geometry_data(prime, parent, deficit, initial_modes, terminal_modes)
+def profile_data(prime, parent, deficit, initial_modes, terminal_modes, P, J, kernel, blocks=None, endpoint='identity', selected_indices=None):
+    data = operator_geometry(prime, parent, deficit, initial_modes, terminal_modes, selected_indices)
     if not isinstance(J, (int, Fraction)):
         raise ValueError('Use an exact rational aggregate charge for physical profile data.')
     if blocks is None:
-        blocks = zero_profiles(prime, parent, deficit, initial_modes, terminal_modes, P, kernel, endpoint)
+        blocks = zero_profiles(prime, parent, deficit, initial_modes, terminal_modes, P, kernel, endpoint, selected_indices)
     n, selected, retained = data['n'], data['selected'], data['retained']
     return {'zero_active': tuple(sorted(value+P*(1-J)*block['charge'] for block in blocks for value in block['orders'])),
-            'infinity_active': infinity_profiles(prime, parent, deficit, initial_modes, terminal_modes, P, kernel, endpoint),
+            'infinity_active': infinity_profiles(prime, parent, deficit, initial_modes, terminal_modes, P, kernel, endpoint, selected_indices),
             'zero_spectators': tuple(P*(2*i+1-J) for i in range(n) if i not in selected)
                 +tuple(P*(2*i+1+J) for i in range(n) if i not in retained),
             'infinity_spectators': tuple(P*(2*i+1-2*n) for i in range(2*n) if i not in selected),
@@ -303,8 +323,8 @@ def profile_data(prime, parent, deficit, initial_modes, terminal_modes, P, J, ke
 
 
 class Pressure:
-    def __init__(self, prime, parent, deficit, initial_modes, terminal_modes, P, blocks, infinity):
-        data = geometry_data(prime, parent, deficit, initial_modes, terminal_modes)
+    def __init__(self, prime, parent, deficit, initial_modes, terminal_modes, P, blocks, infinity, selected_indices=None):
+        data = operator_geometry(prime, parent, deficit, initial_modes, terminal_modes, selected_indices)
         self.prime, self.n, self.P = prime, data['n'], P
         self.selected, self.retained = data['selected'], data['retained']
         self.zero = np.array([value/P for block in blocks for value in block['orders']])
