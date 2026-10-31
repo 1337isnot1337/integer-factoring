@@ -336,3 +336,7 @@ verify-coupled-operators:
 .PHONY: verify-reflection-hot-cores
 verify-reflection-hot-cores:
 	python3 tools/check_reflection_hot_core_profiles.py --extended
+
+.PHONY: verify-coupled-weyl
+verify-coupled-weyl:
+	python3 tools/check_coupled_identity_weyl_profiles.py --extended --screen evidence/coupled-identity-operator-screens.json

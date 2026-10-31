@@ -14,6 +14,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Weighted Weyl reduction of coupled operators](identity-operator-weyl-reduction.md): an exact differential-operator identity reduces the active matrix order from `p^(2r)` to `p^r`, with explicit auxiliary shifts, weighted regularity, and complete polynomial coefficient arithmetic.
+
 - [Bounded hot cores after reflection compression](reflection-hot-core-defects.md): arbitrary even polynomial defects on the hottest logical modes reduce to three active modes per selected mode, with complete Laurent coefficients and all Gaussian spectators retained.
 
 - [Coupled occupation-transfer operators](coupled-identity-operator-filters.md): exact bounded active matrices extend the joint diagonal filters to occupation-preserving kernels, with polynomial degree costs and a larger energy-filtered endpoint class.
