@@ -610,3 +610,10 @@ verify-quartic-tiles:
 verify-shared-minor-targets:
 	python3 tools/check_shared_minor_profile_targets.py --output /tmp/integer-factoring-shared-minor-targets-replay.json
 
+.PHONY: verify-regular-frame-cells verify-finite-smith-frames
+verify-regular-frame-cells:
+	python3 tools/check_formal_row_flags.py --output /tmp/integer-factoring-formal-row-flags-replay.json
+
+verify-finite-smith-frames:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_finite_precision_smith_frames.py --output /tmp/integer-factoring-finite-smith-frames-replay.json
+

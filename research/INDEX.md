@@ -16,6 +16,10 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Complete regular row-frame cells](formal-row-flag-cells.md): every formal frame with a fixed constant flag has a unique bounded lower polynomial representative; the degree-gap formula covers all jets over every field.
+
+- [Finite-precision regular Smith frames](finite-precision-smith-frames.md): actual polynomial unit frames retain all coefficient equations below explicit row caps, avoiding irrelevant fraction-free tails; full products, independent profiles, and 316 Toeplitz ranks verify the implementation.
+
 - [Fast matrix multiplication and the current recursion](fast-matrix-multiplication-recursion-audit.md): pinned source accounting isolates the child-volume term; changes to a fixed terminal solver or summable construction overhead do not change the certified logarithmic saving exponent, while a new multi-output primitive remains outside the audit.
 
 - [Larger-alphabet shared-minor targets](shared-minor-profile-relaxation.md): all shared-line and rectangular-subalphabet prefix constraints admit explicitly certified negative relaxed pressure at four and five symbols; these are construction targets, not realizing tensors or factoring improvements.
