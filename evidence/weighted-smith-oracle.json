@@ -1,0 +1,16 @@
+{
+  "independent_exhaustive_prefix_minima": 1696,
+  "matrices": 24,
+  "places": [
+    "zero",
+    "infinity"
+  ],
+  "scope": "Exact weighted Smith oracle and determinantal separation; no improved factoring exponent.",
+  "singular_negative_control": true,
+  "source_sha256": {
+    "check_weighted_smith_oracle.py": "1fd23272dd755e42fd752e6468f185b35c3544f4bfce9a442a631d006421257d",
+    "weighted_smith_oracle.py": "9a6cbace2bb1fea210d1bea784f4a55fdfd5e7bb69b23d0d956861e00263204f"
+  },
+  "status": "pass",
+  "weights": "integer and rational row/column weights; zero and positive rational scales"
+}

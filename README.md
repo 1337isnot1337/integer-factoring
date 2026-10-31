@@ -57,6 +57,7 @@ make verify-cubic-full-images # Full cubic coefficient spaces and reduced ranks
 make verify-linear-smith # All binary scalar pencils and the uniform linear barrier
 make verify-type-pressure # Exact common-type optimization and physical gauges
 make verify-crossing-interpolation # Exact synthesis with prescribed local row lattices
+make verify-smith-oracle # Exact weighted profiles and the scoped sparse entropy dual
 make verify-controlled-smith # Controlled monomial crossings and the qutrit control
 make verify-sparse-holonomy # Exact singleton profiles and Gaussian entry identities
 ```
@@ -126,6 +127,9 @@ certificate and remains weaker than the known half-rate construction.
 constructs crossings from prescribed local row lattices by exact linear
 algebra. The complete fixed-lattice Gaussian fiber is classified, and a
 relaxed system constructs a non-Gaussian control.
+An [exact weighted Smith oracle](research/weighted-smith-separation-oracle.md)
+finds all determinantal minima without listing every minor. It supports
+continuous gauge searches with exact rational replay.
 
 [Finite module automata](research/cancellation-module-smith-automata.md)
 retain cancellation between auxiliary paths. Their bounds improve monotonically

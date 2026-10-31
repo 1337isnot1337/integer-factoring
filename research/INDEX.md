@@ -23,6 +23,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Two-block holonomy decomposition](schur-two-block-holonomy.md): two unequal Boolean intervals split into scalar Gaussian sectors, with direct polynomial seeds beyond power-of-two parameters.
 - [Exact type-optimized pressure](type-optimized-crossing-pressure.md): arbitrary rational letter frequencies reduce to one rational certificate inequality; a Gaussian physical gauge gives `rho < 61/80`, still above the post-half target.
 - [Polynomial crossing interpolation](polynomial-crossing-interpolation.md): prescribed local row lattices give a complete finite linear synthesis problem, including a classified Gaussian fiber and a non-Gaussian control.
+- [Weighted Smith separation oracle](weighted-smith-separation-oracle.md): exact minimum-valuation pivoting finds every determinantal minimum and supplies the constraints for convex fixed-type gauge optimization.
 - [Cancellation module automata](cancellation-module-smith-automata.md): finite-state certificates that retain auxiliary-product cancellation, a monotone precision hierarchy, and a complete certificate limit for free-boundary word rates.
 - [Minimal representations and boundary completeness](minimal-boundary-module-completeness.md): exact reachable and observable reduction makes the finite module hierarchy complete for fixed-boundary grouped-word rates.
 - [Exact rational module orbits](exact-rational-module-orbits.md): finite exact lattice orbits compute grouped-channel word pressure, including rank-deficient states; a companion example has explicit small transition matrices.
@@ -43,6 +44,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Obstructions and work beyond 1/2
 
+- [Sparse bulk species-gauge floor](sparse-bulk-species-gauge-floor.md): an exact entropy dual proves `rho >= 3/4` in the stated common-density limit model; no exclusion of general sparse families or unbounded energy slopes is claimed.
 - [Controlled monomial Smith floor](controlled-permutation-smith-floor.md): a fiber-span argument extends the nilpotent-path obstruction to dependent, noncommuting, and weighted monomial controls.
 - [Qutrit Weyl crossing](qutrit-weyl-crossing.md): a complete auxiliary crossing with an exact all-length constant-coefficient rank formula and a scoped raw-piece obstruction.
 - [Directions beyond half](post-half-directions.md): experiments, scope, and unresolved questions.

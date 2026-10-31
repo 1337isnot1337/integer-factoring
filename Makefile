@@ -1,4 +1,4 @@
-.PHONY: verify verify-docs verify-frontier verify-post-half verify-schur-fermion verify-schur-central verify-schur-gaussian verify-schur-sparse verify-cancellation-modules verify-minimal-modules verify-exact-modules verify-cancellation-crossing verify-block-smith verify-linear-smith verify-type-pressure verify-crossing-interpolation verify-controlled-smith verify-sparse-holonomy verify-cubic-full-images verify-formal verify-k6 verify-half-appendix help
+.PHONY: verify verify-docs verify-frontier verify-post-half verify-schur-fermion verify-schur-central verify-schur-gaussian verify-schur-sparse verify-cancellation-modules verify-minimal-modules verify-exact-modules verify-cancellation-crossing verify-block-smith verify-linear-smith verify-type-pressure verify-crossing-interpolation verify-smith-oracle verify-controlled-smith verify-sparse-holonomy verify-cubic-full-images verify-formal verify-k6 verify-half-appendix help
 
 verify: verify-docs verify-frontier
 	python3 -m unittest discover -s tests -v
@@ -51,6 +51,10 @@ verify-type-pressure:
 
 verify-crossing-interpolation:
 	python3 tools/check_polynomial_crossing_interpolation.py
+
+verify-smith-oracle:
+	python3 tools/check_weighted_smith_oracle.py
+	python3 tools/check_sparse_bulk_species_floor.py
 
 verify-controlled-smith:
 	python3 tools/check_controlled_permutation_smith.py
@@ -107,6 +111,7 @@ help:
 	  'make verify-linear-smith - uniform degree-one obstruction and binary catalogue' \
 	  'make verify-type-pressure - rational type and physical-gauge certificates' \
 	  'make verify-crossing-interpolation - exact polynomial synthesis from local flags' \
+	  'make verify-smith-oracle - exact weighted Smith minima and sparse entropy dual' \
 	  'make verify-controlled-smith - controlled monomial and qutrit crossings' \
 	  'make verify-sparse-holonomy - sparse Smith profiles and Gaussian identities' \
 	  'make verify-cubic-full-images - complete varying-image cubic spaces and ranks' \
