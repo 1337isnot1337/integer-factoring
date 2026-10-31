@@ -16,6 +16,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Finite fused six-vertex crossings](finite-fused-six-vertex-crossings.md): literal three- and four-symbol F16 fusion, exact common-factor cancellation, 24 independent binary profiles, and 144 replayed full-gauge starts; the completed finite searches remain uncompetitive.
+
 - [Exact F4 regular row fibers](colored-regular-row-fibers.md): nonbinary polynomial row operations preserve a common binary affine floor, allowing exact compressed F4 synthesis with complete coefficient windows and literal untruncated tensor replays.
 
 - [Joint filters beyond the complete scalar multiplier family](joint-boolean-multiplier-separation.md): a literal three-parity polynomial filter beats every scalar Boolean support and arbitrary-degree multiplier on that quotient; 10,668 exact envelope certificates give a uniform separation at every balanced physical length at least sixteen, with positive full critical pressure.

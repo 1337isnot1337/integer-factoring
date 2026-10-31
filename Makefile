@@ -637,3 +637,7 @@ verify-joint-multiplier-separation:
 verify-colored-row-fibers:
 	OPENBLAS_NUM_THREADS=1 python3 tools/check_colored_row_fibers.py --output /tmp/integer-factoring-colored-row-fibers-replay.json
 
+.PHONY: verify-fused-six-vertex
+verify-fused-six-vertex:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_fused_six_vertex_crossings.py --output /tmp/integer-factoring-fused-six-vertex-replay.json --search-records evidence/fused-six-vertex-gauges-m2-theta2.json evidence/fused-six-vertex-gauges-m3-theta4.json
+
