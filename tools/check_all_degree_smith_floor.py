@@ -18,6 +18,7 @@ def check_profile(row, regularization_degree):
     assert sum(infinity_degrees) >= 0
     assert min(zero_orders) == 0
     assert sum(zero_orders) <= 4*normalized_degree
+    assert sum(mu[:2])+sum(nu[:2]) <= 2*regularization_degree
 
 
 def main():
