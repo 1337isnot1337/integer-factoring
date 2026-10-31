@@ -16,6 +16,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Global homogeneous one-level filter floor](global-homogeneous-boolean-filter-floor.md): all overlapping homogeneous Boolean occupation filters have positive complete pressure at every charge and scale, with unrestricted admissible degree and an exact compact cover for the remaining nine lengths.
+
 - [Complete Gaussian profiles from Clifford matrices](clifford-gaussian-smith-profiles.md): an elementary characteristic-two Cartan argument recovers all Fock Smith orders from a matrix of twice the mode count, with closed reflection matrices and no internal regularity restriction on physical mode gauges.
 
 - [Nonconstant regular binary flags](nonconstant-binary-row-flags.md): arbitrary regular polynomial row frames keep complete two-cut synthesis affine, finite jets suffice for fixed targets, and the full first-jet F4 catalogue retains only the reference line.

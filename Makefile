@@ -38,6 +38,10 @@ verify-polynomial-flags:
 verify-unrestricted-gaussian:
 	python3 tools/check_reflection_unrestricted_gaussian.py --output /tmp/integer-factoring-unrestricted-gaussian-replay.json
 
+.PHONY: verify-global-homogeneous-filters
+verify-global-homogeneous-filters:
+	python3 tools/check_global_homogeneous_boolean_filter_floor.py --output /tmp/integer-factoring-global-homogeneous-replay.json
+
 .PHONY: verify-frontier-extensions
 verify-frontier-extensions:
 	python3 tools/check_all_scale_balanced_obstruction.py
