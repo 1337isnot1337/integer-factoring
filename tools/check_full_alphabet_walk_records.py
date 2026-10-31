@@ -22,8 +22,15 @@ def replay(path, independent_reference=True):
     reference_path = Path(args['reference'])
     if not reference_path.is_absolute():
         reference_path = Path(__file__).resolve().parents[1]/reference_path
-    assert sha256(reference_path.read_bytes()).hexdigest() == data['reference_sha256']
-    assert json.loads(reference_path.read_text()) == data['reference']
+    if reference_path.exists():
+        assert sha256(reference_path.read_bytes()).hexdigest() == data['reference_sha256']
+        assert json.loads(reference_path.read_text()) == data['reference']
+    else:
+        # The stored reference path points into the original author's scratch
+        # space. The record embeds that file, whose bytes are its indent-2 JSON
+        # serialization, so the same hash check runs on the embedded copy.
+        embedded = (json.dumps(data['reference'], indent=2) + '\n').encode()
+        assert sha256(embedded).hexdigest() == data['reference_sha256']
     assert len(data['classes']) == data['distinct_profile_classes']
     assert sum(row['samples'] for row in data['classes']) == data['complete_profile_queries']
     assert data['complete_profile_queries'] <= args['samples']*data['distinct_target_vectors']

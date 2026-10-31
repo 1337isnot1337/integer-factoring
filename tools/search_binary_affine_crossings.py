@@ -15,7 +15,6 @@ from pathlib import Path
 import time
 
 import numpy as np
-from scipy.optimize import brentq, minimize_scalar
 
 from native_rectangular_smith_f4 import RectangularOracle
 from screen_full_alphabet_monomial_pressure import optimize
@@ -50,6 +49,8 @@ def critical(orders, energies, scale):
 
 
 def rate(orders, energies, scale):
+    # SciPy is optional for the exact checkers that import this module.
+    from scipy.optimize import brentq
     ground = sum(min(profile) for profile in orders)
     physical_ground = sum(min(0, value) for value in energies)
     profiles = [[value - min(profile) for value in profile] for profile in orders]
@@ -69,6 +70,8 @@ def rate(orders, energies, scale):
 
 
 def main():
+    # SciPy is optional for the exact checkers that import this module.
+    from scipy.optimize import minimize_scalar
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--start', type=int, default=0)
     parser.add_argument('--count', type=int, default=65536)

@@ -16,6 +16,16 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Joint determinant actual-rank barrier](joint-determinant-barrier.md): all-field Weyl filtrations close every binary pure-value quadratic and cubic at leading `rho>=4/5`; the weaker rank-two determinant floor is `2/3`, and the common-cofactor result above closes the ternary quadratic class.
+
+- [Constant transpose-intertwiner barrier](transpose-intertwiner-barrier.md): equal actual cut ranks at every tensor length preclude contraction for polynomially many coefficient pieces; complete tests exclude 32,454,657 ternary cubic coefficient seeds, with actual-jet witnesses checked through three copies.
+
+- [Universal multipoint Smith floor](multipoint-smith-floor.md): determinant budgets and equal local minimum orders force `rho > 3/4` for the unweighted local-jet criterion over every field, alphabet and degree; a complete 1,579,014-seed cubic catalogue provides independent controls.
+
+- [Low-rank ternary quadratic multipoint catalogue](multipoint-low-rank-seeds.md): all binary seeds with cut-rank product at most three at both finite places have an exact `rho >= 3/4` pressure floor; nine stabilizer representatives, 32,265 seeds, 321 signatures, complete local-rank coverage and independent tensor controls.
+
+- [Complete ternary quadratic multipoint catalogue](multipoint-rank-one-seeds.md): all binary seeds with pure values at both finite places have an exact `rho >= 3/4` pressure floor, with 3,078 representatives, 23 signatures, independent Toeplitz profiles and full tensor-power reconstructions.
+
 - [All-code elementary coefficient-span barrier](difference-support-rank-floor.md): weighted difference/orientation blocks give rank-sum at least (|A||B|)^(3/4) for arbitrary paired binary codes over every field; equal alphabets force rho >= 3/4, without symmetry or downset assumptions.
 
 - [Difference-unique code rank obstruction](sidon-code-rank-obstruction.md): a literal two-cut block proof excludes the elementary crossing on all cubic binary-field graphs; 16 exact finite controls distinguish the separate multiplication-graph candidate.

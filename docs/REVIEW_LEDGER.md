@@ -148,3 +148,18 @@ checks actually run or reused, accepted scope, exclusions, source attribution,
 retaining commit or archive tag, and actual GitHub disposition. A snapshot or
 successful finite replay alone must not be recorded as mathematical acceptance.
 When a PR changes, retain the historical checkpoint and review the delta.
+
+## 2026-10-31: PR #50 integration by research director
+
+- Inspected PR head `e5ba011e5264c6e78086f9b57da7a5be60048dc6` against
+  main `38030d3` in an isolated checkout. Contributor: orda-aska / Claude Code.
+- Preserved main's already-restored tools and subsequent research. Resolved
+  additive README/index conflicts by retaining current content and restoring
+  missing predecessor paragraphs/entries. Retained the 30 missing Make targets.
+- The incremental code changes are lazy SciPy imports and a source-hash-checked
+  embedded-reference fallback for saved walk records. No research claims changed.
+- Passed `make verify`, the five exact binary/flag/target checks with SciPy
+  available and with all SciPy imports deliberately blocked, and
+  `make verify-coefficient-height-walks` (both embedded-reference records).
+- This is source inspection and integration testing, not independent acceptance
+  of the mathematical claims. No Lean rebuild or PR approval was performed.
