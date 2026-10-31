@@ -1015,6 +1015,9 @@ constructs dominant relation certificates for 60-bit and 80-bit inputs and
 recovers proper factors without class enumeration. Replay both certificates
 and two smaller-box exhaustion controls with `make verify-arithmetic-sieve`;
 success in a larger finite box is not a uniform factoring-time bound.
+The direct-word certificates use the polynomial ideal-lattice composer and
+a diagonal fixed by the word bound, reducing the two determinant encodings
+to 520 and 500 bits. The original pair-form certificates remain replayable.
 The [quantitative localization target](research/smooth-norm-localization.md)
 now specifies the required short-box theorem and its conditional complete
 cost. The localized smoothness statement and splitting coverage are both
