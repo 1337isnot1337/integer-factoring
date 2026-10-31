@@ -18,6 +18,10 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 - [Completed above-power operator catalogue](above-power-operator-searches.md): all 42,560 specified interval-33 projector kernels yield 1,111 exact profile classes, with complete numerical grid and refinement records.
 
+- [Arbitrary selections one below a prime power](arbitrary-one-deficit-identity-cores.md): weighted principal minors retain only 2r+1 actual modes for every selection, with one explicit local eigenchannel and its endpoint restriction.
+
+- [Arbitrary selections above a prime power](surplus-identity-cores.md): adding unchanged actual identity directions produces a square core with at most 2(r+2d) modes in every prime characteristic; terminal selections use 2(r+d).
+
 - [Fixed deficits below prime powers](fixed-deficit-identity-cores.md): mixed initial and terminal directions have a uniformly bounded rectangular core, exact Gaussian-digit division, and a rank-at-most-deficit contraction correction in every prime characteristic.
 
 - [Complete-entry binary crossing synthesis](binary-two-cut-affine-synthesis.md): exact affine systems at both cuts cover free Laurent entries, a support lemma bounds the required degree for specified targets, and complete constant F4 flag searches decide those targets.

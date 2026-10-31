@@ -465,3 +465,10 @@ verify-homogeneous-boolean-filters:
 .PHONY: verify-prime-deficit-operators
 verify-prime-deficit-operators:
 	python3 tools/check_prime_deficit_identity_operators.py --extended
+
+.PHONY: verify-selected-deficit-geometry verify-surplus-identity-geometry
+verify-selected-deficit-geometry:
+	python3 tools/check_selected_one_deficit_geometry.py
+
+verify-surplus-identity-geometry:
+	python3 tools/check_surplus_identity_mode_geometry.py

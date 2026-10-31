@@ -1,0 +1,493 @@
+{
+  "status": "Exact arbitrary-selection surplus geometry, unit blocks, Gram identities, and weighted Weyl parameters; no new full-tensor or pressure-search claim.",
+  "geometries": [
+    {
+      "prime": 2,
+      "parent": 4,
+      "surplus": 1,
+      "n": 5,
+      "selected": [
+        3,
+        4
+      ],
+      "augmented": [
+        3,
+        4,
+        0
+      ],
+      "unchanged_actual_identities": [
+        0
+      ],
+      "retained": [
+        0,
+        3,
+        4
+      ],
+      "Weyl_matrix_order": 8,
+      "actual_zero_active_modes": 6
+    },
+    {
+      "prime": 2,
+      "parent": 8,
+      "surplus": 2,
+      "n": 10,
+      "selected": [
+        7,
+        8,
+        9
+      ],
+      "augmented": [
+        7,
+        8,
+        9,
+        0,
+        1
+      ],
+      "unchanged_actual_identities": [
+        0,
+        1
+      ],
+      "retained": [
+        0,
+        6,
+        7,
+        8,
+        9
+      ],
+      "Weyl_matrix_order": 32,
+      "actual_zero_active_modes": 10
+    },
+    {
+      "prime": 2,
+      "parent": 8,
+      "surplus": 3,
+      "n": 11,
+      "selected": [
+        8,
+        9,
+        10
+      ],
+      "augmented": [
+        8,
+        9,
+        10,
+        0,
+        1,
+        2
+      ],
+      "unchanged_actual_identities": [
+        0,
+        1,
+        2
+      ],
+      "retained": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "Weyl_matrix_order": 64,
+      "actual_zero_active_modes": 12
+    },
+    {
+      "prime": 2,
+      "parent": 32,
+      "surplus": 2,
+      "n": 34,
+      "selected": [
+        30,
+        31,
+        32,
+        33
+      ],
+      "augmented": [
+        30,
+        31,
+        32,
+        33,
+        0,
+        1
+      ],
+      "unchanged_actual_identities": [
+        0,
+        1
+      ],
+      "retained": [
+        0,
+        1,
+        30,
+        31,
+        32,
+        33
+      ],
+      "Weyl_matrix_order": 64,
+      "actual_zero_active_modes": 12
+    },
+    {
+      "prime": 3,
+      "parent": 3,
+      "surplus": 1,
+      "n": 4,
+      "selected": [
+        3
+      ],
+      "augmented": [
+        3,
+        0
+      ],
+      "unchanged_actual_identities": [
+        0
+      ],
+      "retained": [
+        2,
+        3
+      ],
+      "Weyl_matrix_order": 9,
+      "actual_zero_active_modes": 4
+    },
+    {
+      "prime": 3,
+      "parent": 9,
+      "surplus": 2,
+      "n": 11,
+      "selected": [
+        8,
+        9,
+        10
+      ],
+      "augmented": [
+        8,
+        9,
+        10,
+        0,
+        1
+      ],
+      "unchanged_actual_identities": [
+        0,
+        1
+      ],
+      "retained": [
+        0,
+        7,
+        8,
+        9,
+        10
+      ],
+      "Weyl_matrix_order": 243,
+      "actual_zero_active_modes": 10
+    },
+    {
+      "prime": 3,
+      "parent": 27,
+      "surplus": 1,
+      "n": 28,
+      "selected": [
+        26,
+        27
+      ],
+      "augmented": [
+        26,
+        27,
+        0
+      ],
+      "unchanged_actual_identities": [
+        0
+      ],
+      "retained": [
+        0,
+        26,
+        27
+      ],
+      "Weyl_matrix_order": 27,
+      "actual_zero_active_modes": 6
+    },
+    {
+      "prime": 3,
+      "parent": 9,
+      "surplus": 3,
+      "n": 12,
+      "selected": [
+        9,
+        10,
+        11
+      ],
+      "augmented": [
+        9,
+        10,
+        11,
+        0,
+        1,
+        2
+      ],
+      "unchanged_actual_identities": [
+        0,
+        1,
+        2
+      ],
+      "retained": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "Weyl_matrix_order": 729,
+      "actual_zero_active_modes": 12
+    },
+    {
+      "prime": 5,
+      "parent": 5,
+      "surplus": 1,
+      "n": 6,
+      "selected": [
+        4,
+        5
+      ],
+      "augmented": [
+        4,
+        5,
+        0
+      ],
+      "unchanged_actual_identities": [
+        0
+      ],
+      "retained": [
+        0,
+        4,
+        5
+      ],
+      "Weyl_matrix_order": 125,
+      "actual_zero_active_modes": 6
+    },
+    {
+      "prime": 5,
+      "parent": 5,
+      "surplus": 2,
+      "n": 7,
+      "selected": [
+        5,
+        6
+      ],
+      "augmented": [
+        5,
+        6,
+        0,
+        1
+      ],
+      "unchanged_actual_identities": [
+        0,
+        1
+      ],
+      "retained": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "Weyl_matrix_order": 625,
+      "actual_zero_active_modes": 8
+    },
+    {
+      "prime": 5,
+      "parent": 25,
+      "surplus": 2,
+      "n": 27,
+      "selected": [
+        24,
+        25,
+        26
+      ],
+      "augmented": [
+        24,
+        25,
+        26,
+        0,
+        1
+      ],
+      "unchanged_actual_identities": [
+        0,
+        1
+      ],
+      "retained": [
+        0,
+        23,
+        24,
+        25,
+        26
+      ],
+      "Weyl_matrix_order": 3125,
+      "actual_zero_active_modes": 10
+    },
+    {
+      "prime": 5,
+      "parent": 5,
+      "surplus": 3,
+      "n": 8,
+      "selected": [
+        5,
+        6,
+        7
+      ],
+      "augmented": [
+        5,
+        6,
+        7,
+        0,
+        1,
+        2
+      ],
+      "unchanged_actual_identities": [
+        0,
+        1,
+        2
+      ],
+      "retained": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "Weyl_matrix_order": 15625,
+      "actual_zero_active_modes": 12
+    },
+    {
+      "prime": 2,
+      "parent": 8,
+      "surplus": 2,
+      "n": 10,
+      "selected": [
+        2,
+        6
+      ],
+      "augmented": [
+        2,
+        6,
+        0,
+        1,
+        8,
+        9
+      ],
+      "unchanged_actual_identities": [
+        0,
+        1,
+        8,
+        9
+      ],
+      "retained": [
+        1,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "Weyl_matrix_order": 64,
+      "actual_zero_active_modes": 12
+    },
+    {
+      "prime": 2,
+      "parent": 16,
+      "surplus": 1,
+      "n": 17,
+      "selected": [
+        5,
+        11
+      ],
+      "augmented": [
+        5,
+        11,
+        0,
+        16
+      ],
+      "unchanged_actual_identities": [
+        0,
+        16
+      ],
+      "retained": [
+        4,
+        10,
+        15,
+        16
+      ],
+      "Weyl_matrix_order": 16,
+      "actual_zero_active_modes": 8
+    },
+    {
+      "prime": 3,
+      "parent": 9,
+      "surplus": 2,
+      "n": 11,
+      "selected": [
+        2,
+        6,
+        10
+      ],
+      "augmented": [
+        2,
+        6,
+        10,
+        0,
+        1,
+        9
+      ],
+      "unchanged_actual_identities": [
+        0,
+        1,
+        9
+      ],
+      "retained": [
+        2,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "Weyl_matrix_order": 729,
+      "actual_zero_active_modes": 12
+    },
+    {
+      "prime": 5,
+      "parent": 5,
+      "surplus": 1,
+      "n": 6,
+      "selected": [
+        1,
+        3
+      ],
+      "augmented": [
+        1,
+        3,
+        0,
+        5
+      ],
+      "unchanged_actual_identities": [
+        0,
+        5
+      ],
+      "retained": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "Weyl_matrix_order": 625,
+      "actual_zero_active_modes": 8
+    }
+  ],
+  "Lucas_block_identities": 465,
+  "unit_determinant_identities": 48,
+  "full_vs_reduced_Gram_entries": 370,
+  "inverse_contraction_identities": 370,
+  "weighted_regularity_entries": 740,
+  "binary_one_surplus_regressions": 5,
+  "source_sha256": {
+    "tools/surplus_identity_mode_geometry.py": "de8b6294e60c2623364bfb301e495bc29adc80a958118aa81cc42ecac327193b",
+    "tools/check_surplus_identity_mode_geometry.py": "f34216d088d822b8aa637323186e3b8c22e308d037f035d600379c53c1335dd6"
+  }
+}
