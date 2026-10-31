@@ -200,6 +200,14 @@ grids found no improvement. A separate
 preserves exact constraints while reducing an interval-31 source from
 degree 2,221 to 124. `make verify-joint-polynomial-synthesis` and
 `make verify-weyl-filter-flags` reproduce these gates.
+For a correlated [homogeneous Boolean filter family](research/homogeneous-boolean-filter-bounds.md),
+the full cost is strictly worse than the same natural-charge Gaussian
+at every scale. A biased-support bound extends the relative comparison
+to every charge above an explicit scale threshold; a positive finite-tail
+bound treats the small-scale branch at bounded charge and large interval.
+The note keeps the remaining charged-Gaussian question explicit.
+`make verify-homogeneous-boolean-filters` replays the polynomial identities
+and exact support inequalities.
 
 [Extension-field operator lattices](research/identity-operator-field-flags.md)
 now permit constant F4 row bases and constructive F16 endpoint lifts.

@@ -1,0 +1,48 @@
+{
+  "status": "All exact Boolean support and polynomial transform controls passed.",
+  "exact_biased_support_inequalities": 68031,
+  "complete_polynomial_transform_identities": 8892,
+  "endpoint_equalities": 276520,
+  "independent_full_profile_cost_comparisons": 80,
+  "maximum_formula_discrepancy": 7.105427357601002e-15,
+  "small_scale_relative_gain_example": {
+    "n": 32,
+    "ramification": 1,
+    "selected": [
+      0
+    ],
+    "charge": -1000,
+    "scale": 0.01,
+    "Boolean_degree": 1,
+    "final_polynomial_degree": 266,
+    "relative_log_cost": -0.39875603911780433,
+    "critical_pressure": 34.7273252036838,
+    "interpretation": "A genuine relative gain at a very costly charged Gaussian, not a threshold witness."
+  },
+  "bounded_charge_examples": [
+    {
+      "n": 64,
+      "Boolean_degree": 1,
+      "charge_bound": 1,
+      "proved_expression_evaluated_numerically": 0.10020231346577926
+    },
+    {
+      "n": 128,
+      "Boolean_degree": 1,
+      "charge_bound": 3,
+      "proved_expression_evaluated_numerically": 0.17348615028722947
+    },
+    {
+      "n": 1024,
+      "Boolean_degree": 2,
+      "charge_bound": 3,
+      "proved_expression_evaluated_numerically": 0.09217946546248253
+    },
+    {
+      "n": 8192,
+      "Boolean_degree": 3,
+      "charge_bound": 3,
+      "proved_expression_evaluated_numerically": 0.22062086713898754
+    }
+  ]
+}

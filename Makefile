@@ -457,3 +457,7 @@ verify-deficit-identity-geometry:
 .PHONY: verify-above-power-operators
 verify-above-power-operators:
 	python3 tools/check_above_power_terminal_operators.py --extended
+
+.PHONY: verify-homogeneous-boolean-filters
+verify-homogeneous-boolean-filters:
+	python3 tools/check_homogeneous_boolean_filter_bounds.py

@@ -194,6 +194,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Obstructions and work beyond 1/2
 
+- [Homogeneous Boolean occupation filters](homogeneous-boolean-filter-bounds.md): an exact two-probability cost formula proves all-scale natural-charge domination, a uniform large-scale comparison at every charge, and a bounded-charge small-scale critical-pressure bound.
+
 - [Prime-power vacuum locality](prime-power-vacuum-locality.md): Artin--Hasse transcendence excludes the stated scalar finite-locality replacement, with independent finite coefficient controls and no factoring lower-bound claim.
 - [One-sided charge pruning](one-sided-charge-pruning.md): common-type restriction removes every strictly one-directional charge perturbation; both-cut Smith majorization gives a matching untyped obstruction.
 - [Typed Gaussian generic blocks](typed-gaussian-generic-blocks.md): arbitrary coefficient recombinations have cost `Omega(D^2)` at fixed nonvacuum occupations, with exact finite controls and a separate growing-density bound.
