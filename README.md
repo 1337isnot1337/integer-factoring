@@ -127,6 +127,13 @@ crossing endpoint and polynomial degree. Complete finite catalogues contain
 including tensors with both odd and even coefficients. Independent
 [polynomial-frame controls](research/physical-polynomial-frames.md) verify
 the full coefficients and weighted local profiles used by the searches.
+An [all-size first-jet theorem](research/square-zero-first-jet-frames.md)
+extends pole-one cancellation to every square-zero matrix on every
+power-of-two reflection alphabet. The
+[exact pole-two criterion](research/square-zero-pole-two-criterion.md)
+also handles arbitrary ranks on the four- and sixteen-letter seeds.
+The complete [dense rank-one catalogue](research/dense-rank-one-coupled-frames.md)
+contains 5,355 generators and 7,176 distinct polynomial tensors over `F4`.
 
 For two fixed ternary bases with uniform paired types, an
 [exact minor certificate](research/ternary-uniform-gauge-majorization.md)
@@ -160,6 +167,8 @@ make verify-frobenius-recovery # Punctured sparse recovery, unit boxes, and radi
 make verify-weighted-carries # Exact padded carries, joint quotient, and aligned recovery
 make verify-physical-frames # Exact polynomial and coupled rational physical frames
 make verify-ternary-majorization # Sharp uniform-type gauge certificates for two bases
+make verify-square-zero-frames # All-size first-jet controls and exact pole-two criterion
+make verify-dense-coupled-frames # Complete rank-one catalogue and independent Laurent replay
 make verify-schur-fermion # Complete Schur entry formulas and exact comparisons
 make verify-schur-central # Hook-residue identities and full Schur ranks through weight 8
 make verify-schur-gaussian # Exact digit reduction and fixed Gaussian crossing seed

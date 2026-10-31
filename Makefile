@@ -712,6 +712,14 @@ verify-joint-residue-retiming:
 .PHONY: verify-frobenius-recovery
 .PHONY: verify-physical-frames verify-ternary-majorization
 .PHONY: verify-weighted-carries
+.PHONY: verify-square-zero-frames verify-dense-coupled-frames
+verify-square-zero-frames:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_square_zero_coupled_frames.py --output /tmp/integer-factoring-square-zero-first-jet-replay.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_square_zero_second_jet.py --output /tmp/integer-factoring-square-zero-second-jet-replay.json
+
+verify-dense-coupled-frames:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_dense_coupled_reflection_frames.py --catalogue evidence/dense-rank-one-coupled-frames.json --output /tmp/integer-factoring-dense-coupled-frames-replay.json
+
 verify-weighted-carries:
 	python3 tools/check_weighted_dyadic_carry.py --output /tmp/integer-factoring-weighted-carries-replay.json
 
