@@ -1,0 +1,224 @@
+{
+  "status": "Exact nonzero-endpoint diagonal repairs and signed profiles; no pressure gain claimed.",
+  "scalar_profile_controls": {
+    "signed_scalar_against_literal_active_matrix_profiles": 60
+  },
+  "original_polynomial_tensor_controls": {
+    "raw_label_factor_and_repaired_endpoint_equalities": 94076,
+    "complete_both_cut_replays": [
+      {
+        "prime": 3,
+        "n": 1,
+        "modes": 1,
+        "endpoint_values": [
+          1,
+          2,
+          1
+        ],
+        "matrix_order": 9,
+        "clearing_order": 1,
+        "maximum_exact_jet_precision": 8
+      },
+      {
+        "prime": 3,
+        "n": 1,
+        "modes": 1,
+        "endpoint_values": [
+          1,
+          2,
+          1
+        ],
+        "matrix_order": 9,
+        "clearing_order": 2,
+        "maximum_exact_jet_precision": 8
+      },
+      {
+        "prime": 3,
+        "n": 1,
+        "modes": 1,
+        "endpoint_values": [
+          1,
+          1,
+          2
+        ],
+        "matrix_order": 9,
+        "clearing_order": 1,
+        "maximum_exact_jet_precision": 4
+      },
+      {
+        "prime": 3,
+        "n": 1,
+        "modes": 1,
+        "endpoint_values": [
+          1,
+          1,
+          2
+        ],
+        "matrix_order": 9,
+        "clearing_order": 2,
+        "maximum_exact_jet_precision": 8
+      },
+      {
+        "prime": 3,
+        "n": 1,
+        "modes": 1,
+        "endpoint_values": [
+          1,
+          2,
+          2
+        ],
+        "matrix_order": 9,
+        "clearing_order": 1,
+        "maximum_exact_jet_precision": 4
+      },
+      {
+        "prime": 3,
+        "n": 1,
+        "modes": 1,
+        "endpoint_values": [
+          1,
+          2,
+          2
+        ],
+        "matrix_order": 9,
+        "clearing_order": 2,
+        "maximum_exact_jet_precision": 8
+      },
+      {
+        "prime": 3,
+        "n": 2,
+        "modes": 1,
+        "endpoint_values": [
+          1,
+          2,
+          1
+        ],
+        "matrix_order": 81,
+        "clearing_order": 1,
+        "maximum_exact_jet_precision": 16
+      },
+      {
+        "prime": 3,
+        "n": 2,
+        "modes": 1,
+        "endpoint_values": [
+          1,
+          2,
+          1
+        ],
+        "matrix_order": 81,
+        "clearing_order": 2,
+        "maximum_exact_jet_precision": 16
+      },
+      {
+        "prime": 3,
+        "n": 2,
+        "modes": 1,
+        "endpoint_values": [
+          1,
+          1,
+          2
+        ],
+        "matrix_order": 81,
+        "clearing_order": 1,
+        "maximum_exact_jet_precision": 16
+      },
+      {
+        "prime": 3,
+        "n": 2,
+        "modes": 1,
+        "endpoint_values": [
+          1,
+          1,
+          2
+        ],
+        "matrix_order": 81,
+        "clearing_order": 2,
+        "maximum_exact_jet_precision": 16
+      },
+      {
+        "prime": 3,
+        "n": 2,
+        "modes": 1,
+        "endpoint_values": [
+          1,
+          2,
+          2
+        ],
+        "matrix_order": 81,
+        "clearing_order": 1,
+        "maximum_exact_jet_precision": 16
+      },
+      {
+        "prime": 3,
+        "n": 2,
+        "modes": 1,
+        "endpoint_values": [
+          1,
+          2,
+          2
+        ],
+        "matrix_order": 81,
+        "clearing_order": 2,
+        "maximum_exact_jet_precision": 16
+      },
+      {
+        "prime": 5,
+        "n": 1,
+        "modes": 1,
+        "endpoint_values": [
+          1,
+          2,
+          3,
+          4,
+          1
+        ],
+        "matrix_order": 25,
+        "clearing_order": 2,
+        "maximum_exact_jet_precision": 16
+      },
+      {
+        "prime": 3,
+        "n": 2,
+        "modes": 2,
+        "endpoint_values": [
+          1,
+          1,
+          1,
+          1,
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "matrix_order": 81,
+        "clearing_order": 1,
+        "maximum_exact_jet_precision": 32
+      }
+    ]
+  },
+  "typed_normalization": {
+    "fixed_mode_total_crossings": [
+      {
+        "prime": 3,
+        "n": 1,
+        "copies": 3,
+        "raw_and_repaired_fixed_mode_total_entries": 19881
+      },
+      {
+        "prime": 5,
+        "n": 1,
+        "copies": 2,
+        "raw_and_repaired_fixed_mode_total_entries": 7225
+      },
+      {
+        "prime": 3,
+        "n": 2,
+        "copies": 2,
+        "raw_and_repaired_fixed_mode_total_entries": 130321
+      }
+    ],
+    "mode_totals_do_not_determine_nonlinear_type_scalar": true
+  }
+}

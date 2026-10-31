@@ -1,0 +1,47 @@
+{
+  "status": "Every retained joint-filter witness and catalogue hash replayed exactly.",
+  "catalogues": [
+    {
+      "catalogue": "joint-binary-polynomial-n32-r3.json",
+      "literal_witnesses": 1478,
+      "catalogue_sha256": "ffc4e53f00aa73e39529be199a92e39629a9d95cc5d93eefe36fd30741649ba3"
+    },
+    {
+      "catalogue": "joint-binary-polynomial-n32-r4.json",
+      "literal_witnesses": 302,
+      "catalogue_sha256": "c873dd11969798156018f0df2eb04370da43092773e8648dde8dde4f3ab23e40"
+    },
+    {
+      "catalogue": "joint-binary-polynomial-n32-p3-r3.json",
+      "literal_witnesses": 841,
+      "catalogue_sha256": "afcfe2561adc9c2a4d621c63542a9bbfff353537cd6230038405e1bd265b67ce"
+    },
+    {
+      "catalogue": "joint-binary-polynomial-n32-r3-offset64.json",
+      "literal_witnesses": 705,
+      "catalogue_sha256": "423f57fb7df0547eb92c0285392befdbe9bf0eba7c9b5bd4ece48b2eee3bd28b"
+    },
+    {
+      "catalogue": "joint-binary-polynomial-n32-r4-offset32.json",
+      "literal_witnesses": 471,
+      "catalogue_sha256": "27b66d71850c959a10383cb4e66b0c49bed314c705b7deb88c099708f2157d2a"
+    },
+    {
+      "catalogue": "joint-binary-polynomial-n32-r3-individual-offset32.json",
+      "literal_witnesses": 2361,
+      "catalogue_sha256": "c5e8564dd3afde55fbbf0a95263361858cf9fa139ebbb64a65115b58697c1541"
+    },
+    {
+      "catalogue": "joint-qutrit-polynomial-n27-r2.json",
+      "literal_witnesses": 350,
+      "catalogue_sha256": "b95a6c4969f7e1b5adcbe58e1b4cacc9eae7de164ecea2d864c8139811a74f41"
+    },
+    {
+      "catalogue": "joint-qutrit-polynomial-n27-r2-offset27.json",
+      "literal_witnesses": 391,
+      "catalogue_sha256": "104a219bb82a3c15cb96c5fd8853ce1c73929eaec2b9e7ca1e2277a5d28d7d84"
+    }
+  ],
+  "literal_polynomial_witnesses": 6899,
+  "nonzero_endpoint_values": 62117
+}

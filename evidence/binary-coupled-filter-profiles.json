@@ -1,0 +1,1170 @@
+{
+  "status": "Exact finite-field backend comparisons; no pressure claim.",
+  "profile_comparisons": 12,
+  "cases": [
+    {
+      "n": 2,
+      "ramification": 1,
+      "modes": 2,
+      "polynomial_joint_weight": false,
+      "matrix_size": 16,
+      "charge_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            6
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 1
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -4,
+            -2,
+            6,
+            8
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 5
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -4,
+            -2,
+            -2,
+            0,
+            0,
+            8
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 7
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -2,
+            0,
+            0,
+            2
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 5
+        },
+        {
+          "charge": 2,
+          "orders": [
+            2
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 1
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "ramification": 1,
+      "modes": 2,
+      "polynomial_joint_weight": true,
+      "matrix_size": 16,
+      "charge_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            0
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 11
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -4,
+            -2,
+            0,
+            2
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 7
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -4,
+            -2,
+            -2,
+            0,
+            0,
+            2
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 11
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -2,
+            0,
+            0,
+            2
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 9
+        },
+        {
+          "charge": 2,
+          "orders": [
+            2
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 5
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "ramification": 1,
+      "modes": 2,
+      "polynomial_joint_weight": false,
+      "matrix_size": 16,
+      "charge_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            4
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 15
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -4,
+            -2,
+            4,
+            6
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 13
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -4,
+            -2,
+            -2,
+            0,
+            0,
+            6
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 15
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -2,
+            0,
+            0,
+            2
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 13
+        },
+        {
+          "charge": 2,
+          "orders": [
+            2
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 1
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "ramification": 1,
+      "modes": 2,
+      "polynomial_joint_weight": true,
+      "matrix_size": 16,
+      "charge_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            0
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 23
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -4,
+            -2,
+            0,
+            2
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 21
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -4,
+            -2,
+            -2,
+            0,
+            0,
+            2
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 21
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -2,
+            0,
+            0,
+            2
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 17
+        },
+        {
+          "charge": 2,
+          "orders": [
+            2
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 5
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "ramification": 3,
+      "modes": 2,
+      "polynomial_joint_weight": false,
+      "matrix_size": 16,
+      "charge_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            16
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 39
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -8,
+            -2,
+            16,
+            22
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 37
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -8,
+            -2,
+            -2,
+            0,
+            4,
+            22
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 39
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -2,
+            0,
+            4,
+            6
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 37
+        },
+        {
+          "charge": 2,
+          "orders": [
+            6
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 1
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "ramification": 3,
+      "modes": 2,
+      "polynomial_joint_weight": true,
+      "matrix_size": 16,
+      "charge_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            -4
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 63
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -8,
+            -4,
+            -2,
+            2
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 57
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -8,
+            -2,
+            -2,
+            0,
+            2,
+            4
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 59
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -2,
+            0,
+            4,
+            6
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 37
+        },
+        {
+          "charge": 2,
+          "orders": [
+            6
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 5
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "ramification": 1,
+      "modes": 3,
+      "polynomial_joint_weight": false,
+      "matrix_size": 64,
+      "charge_blocks": [
+        {
+          "charge": -3,
+          "orders": [
+            -10
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 21
+        },
+        {
+          "charge": -2,
+          "orders": [
+            -10,
+            -8,
+            -6,
+            -6,
+            -4,
+            8
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 21
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -8,
+            -8,
+            -6,
+            -6,
+            -6,
+            -4,
+            -4,
+            -4,
+            -4,
+            -2,
+            -2,
+            0,
+            8,
+            10,
+            12
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 21
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -8,
+            -6,
+            -6,
+            -4,
+            -4,
+            -4,
+            -4,
+            -4,
+            -2,
+            -2,
+            -2,
+            -2,
+            -2,
+            0,
+            0,
+            0,
+            2,
+            10,
+            12,
+            14
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 23
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -6,
+            -4,
+            -4,
+            -2,
+            -2,
+            -2,
+            -2,
+            0,
+            0,
+            0,
+            0,
+            2,
+            2,
+            2,
+            14
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 11
+        },
+        {
+          "charge": 2,
+          "orders": [
+            -2,
+            0,
+            0,
+            2,
+            2,
+            4
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 9
+        },
+        {
+          "charge": 3,
+          "orders": [
+            4
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 1
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "ramification": 1,
+      "modes": 3,
+      "polynomial_joint_weight": true,
+      "matrix_size": 64,
+      "charge_blocks": [
+        {
+          "charge": -3,
+          "orders": [
+            -10
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 27
+        },
+        {
+          "charge": -2,
+          "orders": [
+            -10,
+            -8,
+            -8,
+            -6,
+            -4,
+            -2
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 27
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -8,
+            -8,
+            -8,
+            -6,
+            -6,
+            -6,
+            -4,
+            -4,
+            -4,
+            -4,
+            -2,
+            -2,
+            0,
+            0,
+            2
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 25
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -8,
+            -6,
+            -6,
+            -6,
+            -4,
+            -4,
+            -4,
+            -4,
+            -4,
+            -2,
+            -2,
+            -2,
+            -2,
+            0,
+            0,
+            0,
+            0,
+            2,
+            2,
+            4
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 23
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -6,
+            -4,
+            -4,
+            -2,
+            -2,
+            -2,
+            -2,
+            0,
+            0,
+            0,
+            2,
+            2,
+            2,
+            4,
+            4
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 17
+        },
+        {
+          "charge": 2,
+          "orders": [
+            -2,
+            0,
+            2,
+            2,
+            4,
+            6
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 15
+        },
+        {
+          "charge": 3,
+          "orders": [
+            6
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 5
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "ramification": 1,
+      "modes": 3,
+      "polynomial_joint_weight": false,
+      "matrix_size": 64,
+      "charge_blocks": [
+        {
+          "charge": -3,
+          "orders": [
+            -10
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 33
+        },
+        {
+          "charge": -2,
+          "orders": [
+            -10,
+            -8,
+            -6,
+            -2,
+            0,
+            12
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 31
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -8,
+            -8,
+            -6,
+            -6,
+            -4,
+            -4,
+            -2,
+            0,
+            0,
+            2,
+            2,
+            4,
+            12,
+            14,
+            16
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 33
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -8,
+            -6,
+            -6,
+            -4,
+            -4,
+            -4,
+            -4,
+            -2,
+            -2,
+            -2,
+            0,
+            0,
+            2,
+            2,
+            4,
+            4,
+            6,
+            14,
+            16,
+            18
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 35
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -6,
+            -4,
+            -4,
+            -2,
+            -2,
+            -2,
+            -2,
+            0,
+            0,
+            0,
+            2,
+            2,
+            4,
+            6,
+            18
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 17
+        },
+        {
+          "charge": 2,
+          "orders": [
+            -2,
+            0,
+            0,
+            2,
+            2,
+            4
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 15
+        },
+        {
+          "charge": 3,
+          "orders": [
+            4
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 1
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "ramification": 1,
+      "modes": 3,
+      "polynomial_joint_weight": true,
+      "matrix_size": 64,
+      "charge_blocks": [
+        {
+          "charge": -3,
+          "orders": [
+            -10
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 39
+        },
+        {
+          "charge": -2,
+          "orders": [
+            -10,
+            -8,
+            -8,
+            -6,
+            -6,
+            -4
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 37
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -8,
+            -8,
+            -8,
+            -6,
+            -6,
+            -6,
+            -6,
+            -4,
+            -4,
+            -4,
+            -4,
+            -4,
+            -2,
+            -2,
+            0
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 33
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -8,
+            -6,
+            -6,
+            -6,
+            -4,
+            -4,
+            -4,
+            -4,
+            -4,
+            -4,
+            -2,
+            -2,
+            -2,
+            -2,
+            -2,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 35
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -6,
+            -4,
+            -4,
+            -2,
+            -2,
+            -2,
+            -2,
+            0,
+            0,
+            0,
+            0,
+            2,
+            2,
+            2,
+            4
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 25
+        },
+        {
+          "charge": 2,
+          "orders": [
+            -2,
+            0,
+            2,
+            2,
+            4,
+            6
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 19
+        },
+        {
+          "charge": 3,
+          "orders": [
+            6
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 5
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "ramification": 3,
+      "modes": 3,
+      "polynomial_joint_weight": false,
+      "matrix_size": 64,
+      "charge_blocks": [
+        {
+          "charge": -3,
+          "orders": [
+            -22
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 93
+        },
+        {
+          "charge": -2,
+          "orders": [
+            -22,
+            -16,
+            -10,
+            2,
+            8,
+            40
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 91
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -16,
+            -16,
+            -10,
+            -10,
+            -4,
+            -4,
+            2,
+            8,
+            8,
+            14,
+            14,
+            20,
+            40,
+            46,
+            52
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 93
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -16,
+            -10,
+            -10,
+            -4,
+            -4,
+            -4,
+            -4,
+            -2,
+            2,
+            2,
+            8,
+            8,
+            14,
+            14,
+            20,
+            20,
+            26,
+            46,
+            52,
+            58
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 95
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -10,
+            -4,
+            -4,
+            -2,
+            2,
+            2,
+            2,
+            4,
+            8,
+            8,
+            10,
+            14,
+            20,
+            26,
+            58
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 45
+        },
+        {
+          "charge": 2,
+          "orders": [
+            2,
+            4,
+            8,
+            10,
+            14,
+            16
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 43
+        },
+        {
+          "charge": 3,
+          "orders": [
+            16
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 1
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "ramification": 3,
+      "modes": 3,
+      "polynomial_joint_weight": true,
+      "matrix_size": 64,
+      "charge_blocks": [
+        {
+          "charge": -3,
+          "orders": [
+            -22
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 99
+        },
+        {
+          "charge": -2,
+          "orders": [
+            -22,
+            -20,
+            -16,
+            -14,
+            -10,
+            -8
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 93
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -20,
+            -16,
+            -16,
+            -14,
+            -14,
+            -10,
+            -10,
+            -8,
+            -8,
+            -8,
+            -4,
+            -4,
+            -2,
+            -2,
+            4
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 93
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -16,
+            -14,
+            -10,
+            -10,
+            -8,
+            -8,
+            -4,
+            -4,
+            -4,
+            -4,
+            -2,
+            -2,
+            -2,
+            0,
+            2,
+            2,
+            4,
+            4,
+            8,
+            10
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 95
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -10,
+            -4,
+            -4,
+            -2,
+            0,
+            2,
+            2,
+            2,
+            4,
+            6,
+            8,
+            8,
+            10,
+            12,
+            14
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 67
+        },
+        {
+          "charge": 2,
+          "orders": [
+            2,
+            6,
+            8,
+            12,
+            14,
+            18
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 43
+        },
+        {
+          "charge": 3,
+          "orders": [
+            18
+          ],
+          "exact_jet_precision": 512,
+          "backend": "native F4 oracle on complete F2 coefficients",
+          "maximum_coefficient_bits": 5
+        }
+      ]
+    }
+  ]
+}

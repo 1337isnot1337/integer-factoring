@@ -1,0 +1,263 @@
+{
+  "canonical_reductions": [
+    {
+      "ambient": 8,
+      "indices": [
+        0,
+        2,
+        5
+      ],
+      "reduced_ambient": 8,
+      "reduced_indices": [
+        0,
+        2,
+        5
+      ],
+      "scale": 1
+    },
+    {
+      "ambient": 8,
+      "indices": [
+        1,
+        3,
+        5
+      ],
+      "reduced_ambient": 4,
+      "reduced_indices": [
+        0,
+        1,
+        2
+      ],
+      "scale": 2
+    },
+    {
+      "ambient": 32,
+      "indices": [
+        3,
+        11,
+        23
+      ],
+      "reduced_ambient": 8,
+      "reduced_indices": [
+        0,
+        2,
+        5
+      ],
+      "scale": 4
+    },
+    {
+      "ambient": 340282366920938463463374607431768211456,
+      "indices": [
+        340282366920938463463374607431768211455
+      ],
+      "reduced_ambient": 1,
+      "reduced_indices": [
+        0
+      ],
+      "scale": 340282366920938463463374607431768211456
+    }
+  ],
+  "checker_sha256": "f50bf8587216fbd5016a03f8372e39d2ffe6aa34e7068392a7e66167619e84ec",
+  "gauge_transport": [
+    {
+      "ambient": 1,
+      "exact_weighted_profile_transports": 9,
+      "independent_height_perturbations": 3,
+      "indices": [
+        0
+      ],
+      "scale": 4
+    },
+    {
+      "ambient": 4,
+      "exact_weighted_profile_transports": 9,
+      "independent_height_perturbations": 3,
+      "indices": [
+        0,
+        2
+      ],
+      "scale": 4
+    },
+    {
+      "ambient": 4,
+      "exact_weighted_profile_transports": 9,
+      "independent_height_perturbations": 3,
+      "indices": [
+        0,
+        1,
+        2
+      ],
+      "scale": 2
+    }
+  ],
+  "minor_checks": [
+    {
+      "all_minors_checked": 6,
+      "ambient": 1,
+      "indices": [
+        0
+      ],
+      "minors_retaining_nontrivial_boundary_factor": 2,
+      "scale": 2,
+      "unequal_charge_minors": 2
+    },
+    {
+      "all_minors_checked": 70,
+      "ambient": 4,
+      "indices": [
+        0,
+        2
+      ],
+      "minors_retaining_nontrivial_boundary_factor": 30,
+      "scale": 4,
+      "unequal_charge_minors": 34
+    },
+    {
+      "all_minors_checked": 70,
+      "ambient": 4,
+      "indices": [
+        1,
+        3
+      ],
+      "minors_retaining_nontrivial_boundary_factor": 30,
+      "scale": 2,
+      "unequal_charge_minors": 34
+    },
+    {
+      "all_minors_checked": 924,
+      "ambient": 4,
+      "indices": [
+        0,
+        1,
+        2
+      ],
+      "minors_retaining_nontrivial_boundary_factor": 404,
+      "scale": 2,
+      "unequal_charge_minors": 524
+    }
+  ],
+  "polynomial_block_cases": 18,
+  "status": "exact finite replay of an all-size polynomial tensor identity; no improved exponent",
+  "two_species_defect": {
+    "ambient": 4,
+    "entries_failing_if_scalar_defect_is_omitted": 8,
+    "full_kernel_entries_checked": 64,
+    "indices": [
+      0,
+      2
+    ],
+    "scale": 4
+  },
+  "typed_checks": [
+    {
+      "ambient": 2,
+      "copies": 2,
+      "counts": [
+        1,
+        1
+      ],
+      "indices": [
+        0,
+        1
+      ],
+      "labels": 4,
+      "larger_nonzero_coefficient_degrees": [
+        0,
+        8,
+        16,
+        24,
+        32
+      ],
+      "scale": 4,
+      "smaller_nonzero_coefficient_ranks": {
+        "0": [
+          1,
+          16
+        ],
+        "2": [
+          1,
+          4
+        ],
+        "4": [
+          10,
+          6
+        ],
+        "6": [
+          4,
+          1
+        ],
+        "8": [
+          16,
+          1
+        ]
+      },
+      "typed_entries_checked": 256,
+      "words_with_varying_local_occupation_count": 2
+    },
+    {
+      "ambient": 4,
+      "copies": 3,
+      "counts": [
+        1,
+        2
+      ],
+      "indices": [
+        0,
+        2
+      ],
+      "labels": 9,
+      "larger_nonzero_coefficient_degrees": [
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44
+      ],
+      "scale": 2,
+      "smaller_nonzero_coefficient_ranks": {
+        "6": [
+          1,
+          72
+        ],
+        "8": [
+          1,
+          72
+        ],
+        "10": [
+          1,
+          9
+        ],
+        "12": [
+          26,
+          80
+        ],
+        "14": [
+          1,
+          9
+        ],
+        "16": [
+          17,
+          72
+        ],
+        "18": [
+          65,
+          73
+        ],
+        "20": [
+          80,
+          36
+        ],
+        "22": [
+          64,
+          9
+        ]
+      },
+      "typed_entries_checked": 6561,
+      "words_with_varying_local_occupation_count": 6
+    }
+  ]
+}

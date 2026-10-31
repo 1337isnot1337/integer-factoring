@@ -1,0 +1,19 @@
+{
+  "status": "Exact compiled beta and full partition controls passed.",
+  "complete_partition_comparisons": 60,
+  "compiled_beta_comparisons": 60,
+  "index_derivative_controls": 180,
+  "maximum_pressure_discrepancy": 7.105427357601002e-15,
+  "three_mode_exponent_family_permutation_closure": [
+    {
+      "n": 16,
+      "exponent_tables": 169,
+      "complete_mode_permutations": 6
+    },
+    {
+      "n": 32,
+      "exponent_tables": 169,
+      "complete_mode_permutations": 6
+    }
+  ]
+}

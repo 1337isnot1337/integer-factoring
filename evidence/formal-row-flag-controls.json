@@ -1,0 +1,13 @@
+{
+  "status": "Formal row-frame classification controls passed.",
+  "random_polynomial_stabilizer_normalizations": 100,
+  "literal_row_condition_equivalences": 200,
+  "complete_first_jet_inputs": 4096,
+  "distinct_canonical_classes": 4,
+  "uniform_class_multiplicity": 1024,
+  "complete_small_cell_representatives": 256,
+  "source_sha256": {
+    "formal_row_flags.py": "beec8e2f59622076d4aedc3056d1409340e4c1d3c1492fef75caf8b103d8bc86",
+    "check_formal_row_flags.py": "f9108539db911fb4a0adc5701c92929b97829564bd8f0eddbcd2722b74bdc978"
+  }
+}

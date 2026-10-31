@@ -1,0 +1,23 @@
+{
+  "status": "pass",
+  "word_bits": 4,
+  "complete_nonempty_downsets": 167,
+  "literal_entry_polynomials": 1322030,
+  "constant_basis_rank_comparisons": 3866,
+  "local_polynomial_identities": 24604,
+  "smith_orders_checked": 12302,
+  "distinct_downset_fibers_checked": 167,
+  "non_downset_counterexample": {
+    "code": [
+      1
+    ],
+    "actual_determinant": 1,
+    "invalid_predicted_order": 2
+  },
+  "scope": "Exact algebra controls for the all-downset characteristic-two normal-form proof; not a factoring gain or an all-field claim.",
+  "source_sha256": {
+    "downset_crossing.py": "58a5fc784831c079ee30689a48f3610095a32dfeb5bb5975c148def153907da7",
+    "check_downset_crossing_normal_form.py": "0117ebb2644622ef51ad8e2345e3122b435c3a36ca11757359bca92a8c6d5acd",
+    "search_auxiliary_coefficient_span.py": "a98015fd873fbe5fea07c8d2b5c678ea4f13cb6b3c3aea343203c64d420b52e1"
+  }
+}

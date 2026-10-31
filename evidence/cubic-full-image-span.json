@@ -1,0 +1,202 @@
+{
+  "all_complement_span_dimension": 1225,
+  "column_rank_control_profiles": [
+    {
+      "a": 0,
+      "e": 0,
+      "field": 2,
+      "rank": 1,
+      "residual_matrix_dimension": 28
+    },
+    {
+      "a": 1,
+      "e": 0,
+      "field": 2,
+      "rank": 15,
+      "residual_matrix_dimension": 21
+    },
+    {
+      "a": 0,
+      "e": 1,
+      "field": 2,
+      "rank": 48,
+      "residual_matrix_dimension": 7
+    },
+    {
+      "a": 1,
+      "e": 1,
+      "field": 2,
+      "rank": 36,
+      "residual_matrix_dimension": 14
+    },
+    {
+      "a": 0,
+      "e": 0,
+      "field": 4,
+      "rank": 1,
+      "residual_matrix_dimension": 28
+    },
+    {
+      "a": 1,
+      "e": 0,
+      "field": 4,
+      "rank": 15,
+      "residual_matrix_dimension": 21
+    },
+    {
+      "a": 2,
+      "e": 0,
+      "field": 4,
+      "rank": 15,
+      "residual_matrix_dimension": 21
+    },
+    {
+      "a": 3,
+      "e": 0,
+      "field": 4,
+      "rank": 15,
+      "residual_matrix_dimension": 21
+    },
+    {
+      "a": 0,
+      "e": 1,
+      "field": 4,
+      "rank": 48,
+      "residual_matrix_dimension": 7
+    },
+    {
+      "a": 1,
+      "e": 1,
+      "field": 4,
+      "rank": 36,
+      "residual_matrix_dimension": 14
+    },
+    {
+      "a": 2,
+      "e": 1,
+      "field": 4,
+      "rank": 48,
+      "residual_matrix_dimension": 7
+    },
+    {
+      "a": 3,
+      "e": 1,
+      "field": 4,
+      "rank": 49,
+      "residual_matrix_dimension": 7
+    },
+    {
+      "a": 0,
+      "e": 2,
+      "field": 4,
+      "rank": 49,
+      "residual_matrix_dimension": 7
+    },
+    {
+      "a": 1,
+      "e": 2,
+      "field": 4,
+      "rank": 49,
+      "residual_matrix_dimension": 7
+    },
+    {
+      "a": 2,
+      "e": 2,
+      "field": 4,
+      "rank": 36,
+      "residual_matrix_dimension": 14
+    },
+    {
+      "a": 3,
+      "e": 2,
+      "field": 4,
+      "rank": 49,
+      "residual_matrix_dimension": 7
+    },
+    {
+      "a": 0,
+      "e": 3,
+      "field": 4,
+      "rank": 48,
+      "residual_matrix_dimension": 7
+    },
+    {
+      "a": 1,
+      "e": 3,
+      "field": 4,
+      "rank": 48,
+      "residual_matrix_dimension": 7
+    },
+    {
+      "a": 2,
+      "e": 3,
+      "field": 4,
+      "rank": 49,
+      "residual_matrix_dimension": 7
+    },
+    {
+      "a": 3,
+      "e": 3,
+      "field": 4,
+      "rank": 36,
+      "residual_matrix_dimension": 14
+    }
+  ],
+  "complete_five_polynomial_parent_entries_checked": 9604,
+  "complete_raw_span_dimension": 786,
+  "endpoint_entries_checked": 1884785,
+  "exact_column_rank_controls": 120,
+  "field_scope": "Every field of characteristic two",
+  "labels": 7,
+  "normal_form_entries_checked_both_cuts": 18847850,
+  "optimality_claim": false,
+  "parent_major_symmetry_entries_checked": 48020,
+  "parent_mixed_zero_entries_checked": 24010,
+  "parent_swap_symmetry_entries_checked": 12005,
+  "physical_raw_matrices_regenerated": 3925,
+  "prior_packages": [
+    "cubic-varying-image-affordable-escape.md",
+    "cubic-varying-image-normal-form-and-peels.md",
+    "cubic-fixed-image-rank-one-barrier.md"
+  ],
+  "prior_source": "1337isnot1337/integer-factoring@7154cec09b982b54a0fcc0bb7a303318fc1f90da",
+  "q3_parent_formula_entries_checked": 9604,
+  "rank_at_most_two_maps_suffice": 1225,
+  "rank_formula": "2 times nonzero off-diagonal graph weights plus rank of Q restricted to diagonals and zero-weight pairs, with e added to its diagonal-label diagonal",
+  "rank_one_maps": 784,
+  "scope": "All rank-one complementary maps give the 786-dimensional normal form; all complementary maps give the 1225-dimensional major-symmetric space and rank-at-most-two maps already span it. The fixed seven-label cubic input/output selector is retained. Both descriptions hold over every characteristic-two field. No factoring exponent improvement is claimed.",
+  "source_sha256": "6ca5b4f367a85472482bbd4614dcc5561120c2f01ef9de9453aeba07d17f4e8b",
+  "square_vector_masks": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64,
+    3,
+    5,
+    9,
+    17,
+    33,
+    65,
+    6,
+    10,
+    18,
+    34,
+    66,
+    12,
+    20,
+    36,
+    68,
+    24,
+    40,
+    72,
+    48,
+    80,
+    96
+  ],
+  "strict_seed_obtained": false,
+  "symmetric_update_dimension": 784,
+  "zero_map_included": true
+}

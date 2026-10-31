@@ -1,0 +1,159 @@
+{
+  "binary_crossing_coefficients": 11827,
+  "boson_reference_sha256": "413c99d6d61e3c8ce11238b6a91fc00b00b061600cb8cab14caa3d73b3fd80ab",
+  "checker_sha256": "6d82e7f9188596d08fcb2b3658dd79307121fe2771db287a7da2c52dd6e0bf37",
+  "crossings": [
+    {
+      "dimension": 1,
+      "extension_degree": 3,
+      "h": 1,
+      "irreducible_polynomial_bits": 11,
+      "nonzero_shift_support": [
+        -2,
+        0,
+        2
+      ],
+      "pieces": 5
+    },
+    {
+      "dimension": 2,
+      "extension_degree": 4,
+      "h": 2,
+      "irreducible_polynomial_bits": 19,
+      "nonzero_shift_support": [
+        -4,
+        -3,
+        -2,
+        -1,
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "pieces": 9
+    },
+    {
+      "dimension": 3,
+      "extension_degree": 4,
+      "h": 3,
+      "irreducible_polynomial_bits": 19,
+      "nonzero_shift_support": [
+        -6,
+        -4,
+        -3,
+        -2,
+        -1,
+        0,
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "pieces": 13
+    },
+    {
+      "dimension": 5,
+      "extension_degree": 5,
+      "h": 4,
+      "irreducible_polynomial_bits": 37,
+      "nonzero_shift_support": [
+        -8,
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "pieces": 17
+    }
+  ],
+  "exact_rational_crossing_values": 196,
+  "integer_mode_entries": 3960,
+  "integral_schur_predecessor": "28105165edb8e9a0427468dc833f3c09bc0a7fb7",
+  "larger_entry_queries": [
+    {
+      "extra_evaluation_point": 127,
+      "h": 16,
+      "nonzero_shifts": [
+        -20,
+        -16,
+        -4,
+        0,
+        4,
+        16,
+        20
+      ],
+      "sum": 1,
+      "x": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "y": [
+        1,
+        15
+      ]
+    },
+    {
+      "extra_evaluation_point": 255,
+      "h": 32,
+      "nonzero_shifts": [
+        -20,
+        -16,
+        -12,
+        -8,
+        -4,
+        0,
+        4,
+        16,
+        20,
+        36,
+        40
+      ],
+      "sum": 1,
+      "x": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "y": [
+        1,
+        1,
+        2,
+        3,
+        5,
+        8,
+        12
+      ]
+    }
+  ],
+  "maximum_integer_mode_bits": 6,
+  "negative_controls": {
+    "unsigned_homogeneous_self_pairing": "actual integer value is -1",
+    "wrong_label_conjugation": "endpoint changes from one to zero"
+  },
+  "prime_field_mode_entries": 11880,
+  "query_sha256": "03b19a8df3793b12b4516b8d19435a308976e721a960608090b99158b3877614",
+  "scope": "Exact finite identities and polynomial query construction; no stronger factoring exponent.",
+  "source_revision": "16a5ce41304fcdaea4e0be7c132e1c361dc26da5",
+  "status": "pass"
+}

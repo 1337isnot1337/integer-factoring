@@ -1,0 +1,489 @@
+{
+  "status": "Exact prime-power extreme-mode cores and polynomial endpoints; no pressure gain claimed.",
+  "regular_interpolation": {
+    "direct_Lucas_polynomial_identities": 560,
+    "exact_interpolation_and_active_form_identities": 560,
+    "weighted_regular_unit_controls": [
+      {
+        "prime": 2,
+        "n": 4,
+        "modes": 1,
+        "geometry": "terminal",
+        "selected": [
+          3
+        ],
+        "retained": [
+          0
+        ],
+        "zero_unit_degree": 0
+      },
+      {
+        "prime": 2,
+        "n": 4,
+        "modes": 2,
+        "geometry": "terminal",
+        "selected": [
+          2,
+          3
+        ],
+        "retained": [
+          0,
+          1
+        ],
+        "zero_unit_degree": 0
+      },
+      {
+        "prime": 2,
+        "n": 4,
+        "modes": 3,
+        "geometry": "terminal",
+        "selected": [
+          1,
+          2,
+          3
+        ],
+        "retained": [
+          0,
+          1,
+          2
+        ],
+        "zero_unit_degree": 0
+      },
+      {
+        "prime": 2,
+        "n": 4,
+        "modes": 2,
+        "geometry": "mixed",
+        "selected": [
+          0,
+          3
+        ],
+        "retained": [
+          0,
+          3
+        ],
+        "zero_unit_degree": 3
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "modes": 1,
+        "geometry": "terminal",
+        "selected": [
+          7
+        ],
+        "retained": [
+          0
+        ],
+        "zero_unit_degree": 0
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "modes": 2,
+        "geometry": "terminal",
+        "selected": [
+          6,
+          7
+        ],
+        "retained": [
+          0,
+          1
+        ],
+        "zero_unit_degree": 0
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "modes": 3,
+        "geometry": "terminal",
+        "selected": [
+          5,
+          6,
+          7
+        ],
+        "retained": [
+          0,
+          1,
+          2
+        ],
+        "zero_unit_degree": 0
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "modes": 2,
+        "geometry": "mixed",
+        "selected": [
+          0,
+          7
+        ],
+        "retained": [
+          0,
+          7
+        ],
+        "zero_unit_degree": 7
+      },
+      {
+        "prime": 2,
+        "n": 16,
+        "modes": 1,
+        "geometry": "terminal",
+        "selected": [
+          15
+        ],
+        "retained": [
+          0
+        ],
+        "zero_unit_degree": 0
+      },
+      {
+        "prime": 2,
+        "n": 16,
+        "modes": 2,
+        "geometry": "terminal",
+        "selected": [
+          14,
+          15
+        ],
+        "retained": [
+          0,
+          1
+        ],
+        "zero_unit_degree": 0
+      },
+      {
+        "prime": 2,
+        "n": 16,
+        "modes": 3,
+        "geometry": "terminal",
+        "selected": [
+          13,
+          14,
+          15
+        ],
+        "retained": [
+          0,
+          1,
+          2
+        ],
+        "zero_unit_degree": 0
+      },
+      {
+        "prime": 2,
+        "n": 16,
+        "modes": 2,
+        "geometry": "mixed",
+        "selected": [
+          0,
+          15
+        ],
+        "retained": [
+          0,
+          15
+        ],
+        "zero_unit_degree": 15
+      },
+      {
+        "prime": 3,
+        "n": 3,
+        "modes": 1,
+        "geometry": "terminal",
+        "selected": [
+          2
+        ],
+        "retained": [
+          0
+        ],
+        "zero_unit_degree": 0
+      },
+      {
+        "prime": 3,
+        "n": 3,
+        "modes": 2,
+        "geometry": "terminal",
+        "selected": [
+          1,
+          2
+        ],
+        "retained": [
+          0,
+          1
+        ],
+        "zero_unit_degree": 0
+      },
+      {
+        "prime": 3,
+        "n": 3,
+        "modes": 3,
+        "geometry": "terminal",
+        "selected": [
+          0,
+          1,
+          2
+        ],
+        "retained": [
+          0,
+          1,
+          2
+        ],
+        "zero_unit_degree": 0
+      },
+      {
+        "prime": 3,
+        "n": 3,
+        "modes": 2,
+        "geometry": "mixed",
+        "selected": [
+          0,
+          2
+        ],
+        "retained": [
+          0,
+          2
+        ],
+        "zero_unit_degree": 2
+      },
+      {
+        "prime": 3,
+        "n": 9,
+        "modes": 1,
+        "geometry": "terminal",
+        "selected": [
+          8
+        ],
+        "retained": [
+          0
+        ],
+        "zero_unit_degree": 0
+      },
+      {
+        "prime": 3,
+        "n": 9,
+        "modes": 2,
+        "geometry": "terminal",
+        "selected": [
+          7,
+          8
+        ],
+        "retained": [
+          0,
+          1
+        ],
+        "zero_unit_degree": 0
+      },
+      {
+        "prime": 3,
+        "n": 9,
+        "modes": 3,
+        "geometry": "terminal",
+        "selected": [
+          6,
+          7,
+          8
+        ],
+        "retained": [
+          0,
+          1,
+          2
+        ],
+        "zero_unit_degree": 0
+      },
+      {
+        "prime": 3,
+        "n": 9,
+        "modes": 2,
+        "geometry": "mixed",
+        "selected": [
+          0,
+          8
+        ],
+        "retained": [
+          0,
+          8
+        ],
+        "zero_unit_degree": 8
+      },
+      {
+        "prime": 5,
+        "n": 5,
+        "modes": 1,
+        "geometry": "terminal",
+        "selected": [
+          4
+        ],
+        "retained": [
+          0
+        ],
+        "zero_unit_degree": 0
+      },
+      {
+        "prime": 5,
+        "n": 5,
+        "modes": 2,
+        "geometry": "terminal",
+        "selected": [
+          3,
+          4
+        ],
+        "retained": [
+          0,
+          1
+        ],
+        "zero_unit_degree": 0
+      },
+      {
+        "prime": 5,
+        "n": 5,
+        "modes": 3,
+        "geometry": "terminal",
+        "selected": [
+          2,
+          3,
+          4
+        ],
+        "retained": [
+          0,
+          1,
+          2
+        ],
+        "zero_unit_degree": 0
+      },
+      {
+        "prime": 5,
+        "n": 5,
+        "modes": 2,
+        "geometry": "mixed",
+        "selected": [
+          0,
+          4
+        ],
+        "retained": [
+          0,
+          4
+        ],
+        "zero_unit_degree": 4
+      },
+      {
+        "prime": 5,
+        "n": 25,
+        "modes": 1,
+        "geometry": "terminal",
+        "selected": [
+          24
+        ],
+        "retained": [
+          0
+        ],
+        "zero_unit_degree": 0
+      },
+      {
+        "prime": 5,
+        "n": 25,
+        "modes": 2,
+        "geometry": "terminal",
+        "selected": [
+          23,
+          24
+        ],
+        "retained": [
+          0,
+          1
+        ],
+        "zero_unit_degree": 0
+      },
+      {
+        "prime": 5,
+        "n": 25,
+        "modes": 3,
+        "geometry": "terminal",
+        "selected": [
+          22,
+          23,
+          24
+        ],
+        "retained": [
+          0,
+          1,
+          2
+        ],
+        "zero_unit_degree": 0
+      },
+      {
+        "prime": 5,
+        "n": 25,
+        "modes": 2,
+        "geometry": "mixed",
+        "selected": [
+          0,
+          24
+        ],
+        "retained": [
+          0,
+          24
+        ],
+        "zero_unit_degree": 24
+      }
+    ]
+  },
+  "single_terminal_mode": {
+    "independent_prime_scalar_profile_controls": 20
+  },
+  "full_polynomial_tensor_replays": {
+    "physical_endpoint_coefficient_equalities": 131584,
+    "complete_both_cut_replays": [
+      {
+        "geometry": "terminal",
+        "n": 2,
+        "exponents": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "clearing_order": 1,
+        "full_matrix_order": 16,
+        "maximum_exact_jet_precision": 8
+      },
+      {
+        "geometry": "mixed",
+        "n": 2,
+        "exponents": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "clearing_order": 1,
+        "full_matrix_order": 16,
+        "maximum_exact_jet_precision": 16
+      },
+      {
+        "geometry": "terminal",
+        "n": 4,
+        "exponents": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "clearing_order": 1,
+        "full_matrix_order": 256,
+        "maximum_exact_jet_precision": 64
+      },
+      {
+        "geometry": "mixed",
+        "n": 4,
+        "exponents": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "clearing_order": 1,
+        "full_matrix_order": 256,
+        "maximum_exact_jet_precision": 32
+      }
+    ]
+  }
+}

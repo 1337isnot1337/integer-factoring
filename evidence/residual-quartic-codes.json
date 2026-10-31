@@ -1,0 +1,177 @@
+{
+  "direct_code_controls": [
+    {
+      "alphabet": 2,
+      "degree": 8,
+      "independent_exterior_coefficients_checked": 16,
+      "local_entries": 16,
+      "nonzero_quartic_entries": 0,
+      "nonzero_termwise_polynomial_divisions": 4,
+      "quartic_nonzero_diagonal_labels": [],
+      "strictly_positive_endpoint_entries": 0,
+      "two_copy_endpoint_checks": 18,
+      "two_copy_fixed_mode_types": 3
+    },
+    {
+      "alphabet": 8,
+      "degree": 32,
+      "independent_exterior_coefficients_checked": 4096,
+      "local_entries": 4096,
+      "nonzero_quartic_entries": 186,
+      "nonzero_termwise_polynomial_divisions": 622,
+      "quartic_nonzero_diagonal_labels": [
+        5,
+        6,
+        7
+      ],
+      "strictly_positive_endpoint_entries": 64,
+      "two_copy_endpoint_checks": 5832,
+      "two_copy_fixed_mode_types": 27
+    }
+  ],
+  "field": 2,
+  "residual_classification": {
+    "operator_rank": 12,
+    "three_letter_binary_restrictions": 0,
+    "three_letter_four_subspace_checks": 50625,
+    "two_letter_same_dual_checks": 560,
+    "two_letter_same_dual_codes": [
+      {
+        "input_columns": [
+          1,
+          2
+        ],
+        "output_rows": [
+          1,
+          2
+        ]
+      },
+      {
+        "input_columns": [
+          1,
+          2
+        ],
+        "output_rows": [
+          1,
+          10
+        ]
+      },
+      {
+        "input_columns": [
+          1,
+          2
+        ],
+        "output_rows": [
+          9,
+          2
+        ]
+      },
+      {
+        "input_columns": [
+          1,
+          2
+        ],
+        "output_rows": [
+          9,
+          10
+        ]
+      },
+      {
+        "input_columns": [
+          1,
+          4
+        ],
+        "output_rows": [
+          1,
+          4
+        ]
+      },
+      {
+        "input_columns": [
+          1,
+          4
+        ],
+        "output_rows": [
+          9,
+          4
+        ]
+      },
+      {
+        "input_columns": [
+          1,
+          10
+        ],
+        "output_rows": [
+          1,
+          12
+        ]
+      },
+      {
+        "input_columns": [
+          1,
+          12
+        ],
+        "output_rows": [
+          1,
+          4
+        ]
+      },
+      {
+        "input_columns": [
+          1,
+          12
+        ],
+        "output_rows": [
+          15,
+          4
+        ]
+      },
+      {
+        "input_columns": [
+          2,
+          9
+        ],
+        "output_rows": [
+          2,
+          1
+        ]
+      },
+      {
+        "input_columns": [
+          2,
+          13
+        ],
+        "output_rows": [
+          11,
+          1
+        ]
+      },
+      {
+        "input_columns": [
+          4,
+          9
+        ],
+        "output_rows": [
+          4,
+          1
+        ]
+      },
+      {
+        "input_columns": [
+          5,
+          9
+        ],
+        "output_rows": [
+          4,
+          5
+        ]
+      }
+    ]
+  },
+  "source_sha256": {
+    "tools/check_residual_quartic_codes.py": "918a68af3acf3081b34eb7a216b5738440356f904354845d57e1379cd7b9ef20",
+    "tools/check_schur_downset_crossing.py": "c39c307f0dff1d478577490f4c9cb65254decfe8843e65b28a8d2cdc55955b4c",
+    "tools/weighted_smith_oracle.py": "9a6cbace2bb1fea210d1bea784f4a55fdfd5e7bb69b23d0d956861e00263204f"
+  },
+  "status": "exact polynomial and typed-endpoint certificates; candidate only"
+}

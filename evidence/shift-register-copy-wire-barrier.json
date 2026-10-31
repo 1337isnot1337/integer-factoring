@@ -1,0 +1,78 @@
+{
+  "colour_window_cases": 28828,
+  "registers": {
+    "copied_wire_power_cases": 736,
+    "orthogonal_triples": 3608,
+    "coefficient_channel_cases": 23,
+    "controls_by_class": {
+      "linear_binary": 66,
+      "nonlinear_binary": 80,
+      "ternary": 3,
+      "quaternary": 3
+    }
+  },
+  "counterexample": {
+    "bits": 12,
+    "taps": 2100,
+    "first": [
+      0,
+      1,
+      3,
+      6,
+      7,
+      10
+    ],
+    "full_cycle": 4096,
+    "rank_one_power": 17,
+    "rank_two_power": 18,
+    "order_one_pivots": 17,
+    "false_two_rank_product": 306,
+    "valid_triple_product": 5202
+  },
+  "pressure": {
+    "scalar_cases": 444,
+    "complete_finite_cutoff": {
+      "first_even_bits": 576,
+      "last_even_bits": 1294,
+      "comparisons": 360
+    },
+    "large_size_checks": [
+      {
+        "bits": 1296,
+        "J": 36,
+        "E": 594,
+        "rational_rho_lower_bound": "17/24",
+        "integer_comparison": true
+      },
+      {
+        "bits": 2048,
+        "J": 45,
+        "E": 956,
+        "rational_rho_lower_bound": "17/24",
+        "integer_comparison": true
+      },
+      {
+        "bits": 4096,
+        "J": 64,
+        "E": 1952,
+        "rational_rho_lower_bound": "17/24",
+        "integer_comparison": true
+      },
+      {
+        "bits": 16384,
+        "J": 128,
+        "E": 8000,
+        "rational_rho_lower_bound": "17/24",
+        "integer_comparison": true
+      }
+    ]
+  },
+  "asymptotic_bare_rho_lower_bound": "3/4",
+  "explicit_cutoff": {
+    "even_register_digits_at_least": 576,
+    "rho_lower_bound": "17/24"
+  },
+  "source_sha256": "cfc99e3e73a46d93f84c18e8b214887a87578cb632cfef29aa3515670a697899",
+  "scope": "Every prime-power digit full-cycle shift register, arbitrary nonlinear feedback, coordinate partitions; bare two-place Smith criterion.",
+  "factoring_exponent": "1/2; unchanged"
+}

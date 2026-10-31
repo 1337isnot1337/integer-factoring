@@ -1,0 +1,14 @@
+{
+  "constant_crossing_type_pressure": 1.0,
+  "denominator_restoration": true,
+  "exact_fraction_profile_orders": 192,
+  "gradient_coordinates": 9,
+  "inactive_seed_rejected": true,
+  "maximum_gradient_error": 5.509644962486959e-10,
+  "maximum_profile_error": 8.881784197001252e-16,
+  "paired_entries_checked": 4096,
+  "paired_generic_orders_compared": 128,
+  "prefix_masks_checked": 192,
+  "scope": "finite implementation controls; floating search still requires exact replay",
+  "unresolved_precision_rejected": true
+}

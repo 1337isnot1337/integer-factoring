@@ -1,0 +1,441 @@
+{
+  "status": "exact finite certificates and explicit limited-query collisions",
+  "records": [
+    {
+      "certified": true,
+      "precision": 4,
+      "division_loss": 3,
+      "nonzero_smith_orders": [
+        0,
+        1,
+        3
+      ],
+      "dual": [
+        {
+          "center": -1,
+          "order": 0,
+          "coefficient": 8
+        },
+        {
+          "center": -1,
+          "order": 1,
+          "coefficient": 5
+        },
+        {
+          "center": 1,
+          "order": 1,
+          "coefficient": 1
+        }
+      ],
+      "L": 2,
+      "features": [
+        [
+          -1,
+          0
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "certified": true,
+      "precision": 5,
+      "division_loss": 4,
+      "nonzero_smith_orders": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "dual": [
+        {
+          "center": -1,
+          "order": 0,
+          "coefficient": 16
+        },
+        {
+          "center": -1,
+          "order": 1,
+          "coefficient": 5
+        },
+        {
+          "center": -1,
+          "order": 2,
+          "coefficient": 2
+        },
+        {
+          "center": 1,
+          "order": 1,
+          "coefficient": 1
+        }
+      ],
+      "L": 4,
+      "features": [
+        [
+          -1,
+          0
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -3,
+          3
+        ],
+        [
+          -1,
+          3
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "certified": true,
+      "precision": 6,
+      "division_loss": 5,
+      "nonzero_smith_orders": [
+        0,
+        1,
+        3,
+        5,
+        5
+      ],
+      "dual": [
+        {
+          "center": -1,
+          "order": 0,
+          "coefficient": 32
+        },
+        {
+          "center": -1,
+          "order": 1,
+          "coefficient": 57
+        },
+        {
+          "center": -1,
+          "order": 2,
+          "coefficient": 18
+        },
+        {
+          "center": -1,
+          "order": 3,
+          "coefficient": 1
+        },
+        {
+          "center": 1,
+          "order": 1,
+          "coefficient": 1
+        }
+      ],
+      "L": 8,
+      "features": [
+        [
+          -1,
+          0
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -3,
+          3
+        ],
+        [
+          -1,
+          3
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "certified": true,
+      "precision": 7,
+      "division_loss": 6,
+      "nonzero_smith_orders": [
+        0,
+        1,
+        3,
+        6,
+        6,
+        6
+      ],
+      "dual": [
+        {
+          "center": -1,
+          "order": 0,
+          "coefficient": 64
+        },
+        {
+          "center": -1,
+          "order": 1,
+          "coefficient": 17
+        },
+        {
+          "center": -1,
+          "order": 2,
+          "coefficient": 92
+        },
+        {
+          "center": -3,
+          "order": 3,
+          "coefficient": 1
+        },
+        {
+          "center": -1,
+          "order": 3,
+          "coefficient": 1
+        },
+        {
+          "center": 1,
+          "order": 1,
+          "coefficient": 1
+        }
+      ],
+      "L": 16,
+      "features": [
+        [
+          -1,
+          0
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -3,
+          3
+        ],
+        [
+          -1,
+          3
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "certified": true,
+      "precision": 8,
+      "division_loss": 7,
+      "nonzero_smith_orders": [
+        0,
+        1,
+        3,
+        6,
+        7,
+        7
+      ],
+      "dual": [
+        {
+          "center": -1,
+          "order": 0,
+          "coefficient": 128
+        },
+        {
+          "center": -1,
+          "order": 1,
+          "coefficient": 97
+        },
+        {
+          "center": -1,
+          "order": 2,
+          "coefficient": 136
+        },
+        {
+          "center": -3,
+          "order": 3,
+          "coefficient": 255
+        },
+        {
+          "center": -1,
+          "order": 3,
+          "coefficient": 1
+        },
+        {
+          "center": 1,
+          "order": 1,
+          "coefficient": 1
+        }
+      ],
+      "L": 32,
+      "features": [
+        [
+          -1,
+          0
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -3,
+          3
+        ],
+        [
+          -1,
+          3
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "certified": true,
+      "precision": 9,
+      "division_loss": 8,
+      "nonzero_smith_orders": [
+        0,
+        1,
+        3,
+        6,
+        8,
+        8
+      ],
+      "dual": [
+        {
+          "center": -1,
+          "order": 0,
+          "coefficient": 256
+        },
+        {
+          "center": -1,
+          "order": 1,
+          "coefficient": 449
+        },
+        {
+          "center": -1,
+          "order": 2,
+          "coefficient": 208
+        },
+        {
+          "center": -3,
+          "order": 3,
+          "coefficient": 307
+        },
+        {
+          "center": -1,
+          "order": 3,
+          "coefficient": 1
+        },
+        {
+          "center": 1,
+          "order": 1,
+          "coefficient": 1
+        }
+      ],
+      "L": 64,
+      "features": [
+        [
+          -1,
+          0
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -3,
+          3
+        ],
+        [
+          -1,
+          3
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "certified": false,
+      "precision": 10,
+      "nonzero_smith_orders": [
+        0,
+        1,
+        3,
+        6,
+        9,
+        9
+      ],
+      "collision": {
+        "4": 1023,
+        "32": 1023,
+        "64": 44,
+        "96": 1,
+        "128": 800
+      },
+      "target_parity": 1,
+      "L": 128,
+      "features": [
+        [
+          -1,
+          0
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -3,
+          3
+        ],
+        [
+          -1,
+          3
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  ],
+  "source_sha256": {
+    "tools/search_interval_permanent_decoder.py": "84fc41d8ec71dca099c7b51da4191cb557676b7b1bc0c6aa35d96ed45a2e277a",
+    "tools/walsh_cauchy_permanents.py": "c48a7574cd723dceba39f16c2c5cdef78dadd118be039aad74ebe49b750de5b0"
+  },
+  "scope": "Positive records decode the entire interval principal-permanent span. Negative records concern only the specified six functionals. No all-size precision theorem or general packet representation is claimed."
+}

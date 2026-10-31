@@ -1,0 +1,122 @@
+{
+  "scope": "Exact finite controls for graded even tensor powers and their actual cut matrices.",
+  "cases": [
+    {
+      "prime": 2,
+      "parity": [
+        0,
+        1
+      ],
+      "copies": 2,
+      "polynomial_entry_equalities": 512,
+      "typed_endpoint_entries": 18,
+      "paired_endpoint_entries": 36
+    },
+    {
+      "prime": 2,
+      "parity": [
+        0,
+        1
+      ],
+      "copies": 3,
+      "polynomial_entry_equalities": 8192,
+      "typed_endpoint_entries": 164,
+      "paired_endpoint_entries": 400
+    },
+    {
+      "prime": 2,
+      "parity": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "copies": 2,
+      "polynomial_entry_equalities": 131072,
+      "typed_endpoint_entries": 100,
+      "paired_endpoint_entries": 784
+    },
+    {
+      "prime": 3,
+      "parity": [
+        0,
+        1
+      ],
+      "copies": 2,
+      "polynomial_entry_equalities": 512,
+      "typed_endpoint_entries": 18,
+      "paired_endpoint_entries": 36
+    },
+    {
+      "prime": 3,
+      "parity": [
+        0,
+        1
+      ],
+      "copies": 3,
+      "polynomial_entry_equalities": 8192,
+      "typed_endpoint_entries": 164,
+      "paired_endpoint_entries": 400
+    },
+    {
+      "prime": 3,
+      "parity": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "copies": 2,
+      "polynomial_entry_equalities": 131072,
+      "typed_endpoint_entries": 100,
+      "paired_endpoint_entries": 784
+    },
+    {
+      "prime": 5,
+      "parity": [
+        0,
+        1
+      ],
+      "copies": 2,
+      "polynomial_entry_equalities": 512,
+      "typed_endpoint_entries": 18,
+      "paired_endpoint_entries": 36
+    },
+    {
+      "prime": 5,
+      "parity": [
+        0,
+        1
+      ],
+      "copies": 3,
+      "polynomial_entry_equalities": 8192,
+      "typed_endpoint_entries": 164,
+      "paired_endpoint_entries": 400
+    },
+    {
+      "prime": 5,
+      "parity": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "copies": 2,
+      "polynomial_entry_equalities": 131072,
+      "typed_endpoint_entries": 100,
+      "paired_endpoint_entries": 784
+    }
+  ],
+  "odd_seed_negative_control": {
+    "ordinary_power_rank": 1,
+    "graded_power_rank": 2,
+    "field": 3
+  },
+  "signed_residual_control": {
+    "field": 3,
+    "ordinary_residual_row_rank": 15,
+    "contiguous_Grassmann_row_rank": 16,
+    "essential_sign": "(-1)^(parity(v)*parity(y))"
+  },
+  "checker_sha256": "829abbbb5ce80030b659f6e8c7b9161ec049e9dae211b41f4db55b76769078f7"
+}

@@ -1,0 +1,248 @@
+{
+  "residual_phase_checks": 256,
+  "seeds": [
+    {
+      "F2_coefficients_sha256": "71230a8ec280be0759a6fa7a6ac7d81f754f6ec5198f4a702aa995717f78de63",
+      "F4_coefficients_sha256": "6e52fe644ad8c60fdfc7ac8c5f2ee5318305e61d3037e92e4f5e7780aef336b3",
+      "alphabet": 8,
+      "ambient": 4,
+      "coefficient_rank_checks": [
+        {
+          "cut": 0,
+          "degree": 0,
+          "rank": 12
+        },
+        {
+          "cut": 1,
+          "degree": 0,
+          "rank": 16
+        },
+        {
+          "cut": 0,
+          "degree": 1,
+          "rank": 14
+        },
+        {
+          "cut": 1,
+          "degree": 1,
+          "rank": 16
+        },
+        {
+          "cut": 0,
+          "degree": 2,
+          "rank": 15
+        },
+        {
+          "cut": 1,
+          "degree": 2,
+          "rank": 30
+        },
+        {
+          "cut": 0,
+          "degree": 12,
+          "rank": 50
+        },
+        {
+          "cut": 1,
+          "degree": 12,
+          "rank": 60
+        },
+        {
+          "cut": 0,
+          "degree": 24,
+          "rank": 40
+        },
+        {
+          "cut": 1,
+          "degree": 24,
+          "rank": 50
+        },
+        {
+          "cut": 0,
+          "degree": 48,
+          "rank": 1
+        },
+        {
+          "cut": 1,
+          "degree": 48,
+          "rank": 1
+        }
+      ],
+      "degree_F2": 48,
+      "degree_F4": 48,
+      "exact_polynomial_divisions": 4096,
+      "indices": [
+        0,
+        1,
+        2
+      ],
+      "nonzero_F2_entries": 1178,
+      "nonzero_F4_entries": 766,
+      "strict_endpoint_checks": 8192
+    },
+    {
+      "F2_coefficients_sha256": "954cb45309c23f87c127231cc881dc0e5308f39529f3ca67aea2b697b3f86068",
+      "F4_coefficients_sha256": "cb6121cf964600cfc14e792ebe5c8c973493839e77de061df7cde1269c819ea2",
+      "alphabet": 8,
+      "ambient": 4,
+      "coefficient_rank_checks": [
+        {
+          "cut": 0,
+          "degree": 0,
+          "rank": 16
+        },
+        {
+          "cut": 1,
+          "degree": 0,
+          "rank": 32
+        },
+        {
+          "cut": 0,
+          "degree": 1,
+          "rank": 20
+        },
+        {
+          "cut": 1,
+          "degree": 1,
+          "rank": 35
+        },
+        {
+          "cut": 0,
+          "degree": 2,
+          "rank": 19
+        },
+        {
+          "cut": 1,
+          "degree": 2,
+          "rank": 32
+        },
+        {
+          "cut": 0,
+          "degree": 12,
+          "rank": 54
+        },
+        {
+          "cut": 1,
+          "degree": 12,
+          "rank": 57
+        },
+        {
+          "cut": 0,
+          "degree": 24,
+          "rank": 43
+        },
+        {
+          "cut": 1,
+          "degree": 24,
+          "rank": 46
+        },
+        {
+          "cut": 0,
+          "degree": 48,
+          "rank": 1
+        },
+        {
+          "cut": 1,
+          "degree": 48,
+          "rank": 1
+        }
+      ],
+      "degree_F2": 48,
+      "degree_F4": 48,
+      "exact_polynomial_divisions": 4096,
+      "indices": [
+        0,
+        1,
+        3
+      ],
+      "nonzero_F2_entries": 1355,
+      "nonzero_F4_entries": 858,
+      "strict_endpoint_checks": 8192
+    },
+    {
+      "F2_coefficients_sha256": "9368bd942294d993eb6865b3543234996e96b3105bf47f497b3660bf2b8c6728",
+      "F4_coefficients_sha256": "2fd315198068565908d6062e614b9f15b840387f22db43322dab6f3cac50a5b9",
+      "alphabet": 8,
+      "ambient": 4,
+      "coefficient_rank_checks": [
+        {
+          "cut": 0,
+          "degree": 0,
+          "rank": 16
+        },
+        {
+          "cut": 1,
+          "degree": 0,
+          "rank": 32
+        },
+        {
+          "cut": 0,
+          "degree": 1,
+          "rank": 20
+        },
+        {
+          "cut": 1,
+          "degree": 1,
+          "rank": 35
+        },
+        {
+          "cut": 0,
+          "degree": 2,
+          "rank": 34
+        },
+        {
+          "cut": 1,
+          "degree": 2,
+          "rank": 47
+        },
+        {
+          "cut": 0,
+          "degree": 12,
+          "rank": 55
+        },
+        {
+          "cut": 1,
+          "degree": 12,
+          "rank": 63
+        },
+        {
+          "cut": 0,
+          "degree": 24,
+          "rank": 47
+        },
+        {
+          "cut": 1,
+          "degree": 24,
+          "rank": 48
+        },
+        {
+          "cut": 0,
+          "degree": 48,
+          "rank": 1
+        },
+        {
+          "cut": 1,
+          "degree": 48,
+          "rank": 1
+        }
+      ],
+      "degree_F2": 48,
+      "degree_F4": 48,
+      "exact_polynomial_divisions": 4096,
+      "indices": [
+        0,
+        2,
+        3
+      ],
+      "nonzero_F2_entries": 1361,
+      "nonzero_F4_entries": 858,
+      "strict_endpoint_checks": 8192
+    }
+  ],
+  "source_sha256": {
+    "tools/check_conjugate_residual_phase_codes.py": "4489fd536007eef5f2443f0e254a6931ba9560dcb3a2ee71b72b7e518bd50add",
+    "tools/check_schur_downset_crossing.py": "c39c307f0dff1d478577490f4c9cb65254decfe8843e65b28a8d2cdc55955b4c"
+  },
+  "status": "exact polynomial crossings and fixed-field descent; no improved factoring bound",
+  "wrong_gauge_sign_failed_divisions": 29
+}

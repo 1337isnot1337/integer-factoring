@@ -1,0 +1,42 @@
+{
+  "status": "Every control passed with exact rational, radical, and Boolean arithmetic.",
+  "source_baseline": "c2e951fa1f391edd97ba587d15ec13d3d6c8892d",
+  "scope": "Ordinary all-degree homogeneous one-level filter obstruction: all exterior charges, and the finite-tail charge band for n>=17. No improved factoring exponent.",
+  "enumerated_homogeneous_patterns": [
+    {
+      "modes": 1,
+      "homogeneous_polynomials": 1
+    },
+    {
+      "modes": 2,
+      "homogeneous_polynomials": 4
+    },
+    {
+      "modes": 3,
+      "homogeneous_polynomials": 15
+    },
+    {
+      "modes": 4,
+      "homogeneous_polynomials": 94
+    }
+  ],
+  "exact_biased_support_controls": 456,
+  "exact_loss_cap_controls": 456,
+  "exact_relative_ratio_controls": 3192,
+  "exact_charge_band_derivative_orders": 127512,
+  "exact_exterior_convexity_argument_orders": 8320,
+  "exact_physical_energy_means": 128,
+  "sharp_integer_threshold_controls": 128,
+  "threshold_certificate": {
+    "n": 17,
+    "left_square": 2601,
+    "right_square": 2592
+  },
+  "proof_dependencies": [
+    "homogeneous-boolean-filter-bounds.md: exact ratio and biased support lemma",
+    "charged-one-mode-binary-laurent-filters.md Section 5: rigorous all-scale scalar inequality",
+    "charged-gaussian-pressure-floor.md: positive periodic continuation",
+    "folded-charged-gaussian-floor.md equation (10): full finite-tail integral lower bound"
+  ],
+  "not_claimed": "No sign certificate for the two remaining fixed-width interior charge bands for overlapping polynomials; no result for arbitrary multilevel filters."
+}

@@ -1,85 +1,92 @@
-# Contributions and review
+# Contributions
 
-New here? Use the [quickstart](docs/START_HERE.md). Contributions include proof
-corrections, independent replays, small checkers, documentation, source attribution,
-and well-scoped negative results. A stronger factoring exponent is not required.
-You may open an issue or share a partial finding before preparing a PR.
+Contributions include proof corrections, independent replays, small checkers,
+documentation, source attribution, maintenance, and well-scoped negative or
+partial research results. A stronger factoring exponent is not required.
 
-For research, read [autoresearch.md](autoresearch.md), the relevant notes in
-[research](research/INDEX.md), and [AGENTS.md](AGENTS.md) when using an agent.
+## Default workflow: work directly on main
+
+Clone the repository and work on `main`:
+
+```sh
+git clone https://github.com/1337isnot1337/integer-factoring.git
+cd integer-factoring
+git switch main
+git pull --ff-only
+```
+
+Make focused changes, run the relevant checks, and commit and push useful
+checkpoints frequently. Do not create a fork, branch, or pull request just to
+hold work for review. Use a short-lived branch or worktree only when isolation,
+parallel work, a risky experiment, or lack of push access makes it useful.
+External contributors without push access can submit a PR.
+
+For substantial research, read [autoresearch.md](autoresearch.md), the relevant
+notes in [research](research/INDEX.md), and [AGENTS.md](AGENTS.md) when using an
+agent. Check the [discussion board](https://github.com/1337isnot1337/integer-factoring/discussions)
+for overlap, record the base commit and scope, and update or release the claim
+when the work changes or stops. Coordination claims are advisory, not locks.
+Use Discussions for agent-to-agent research conversation, starting with the
+[coordination thread](https://github.com/1337isnot1337/integer-factoring/discussions/51).
+Issue #8 remains a historical archive; use issues for concrete bugs and tasks.
+
+## Pull requests: merge every useful contribution
+
+Pull requests are an integration mechanism, not a waiting room. Every useful
+PR should be merged by default, including ongoing research, partial arguments,
+negative results, finite experiments, documentation, tests, and maintenance.
+Do not defer or reject a PR merely because it does not improve the factoring
+exponent, is not fully complete, lacks Lean formalization, or has not received
+independent mathematical review. Merge a useful checkpoint and continue
+research on `main`.
+
+Before merging, inspect the exact head and base, preserve source attribution
+and contributor credit, resolve conflicts, and run relevant checks when
+feasible. Fix regressions introduced by the PR. State failed and unrun checks
+plainly. If the PR is stacked, merge its prerequisite first and then integrate
+the incremental change. Do not leave useful PRs open indefinitely; do not
+close useful work as superseded without incorporating its unique material or
+a clear record of it.
+
+A merge records integration only. It is not mathematical acceptance,
+independent review, Lean verification, or evidence of a stronger factoring
+bound. Keep claims, finite evidence, formal verification, and review status
+separate in the README, research notes, and review ledger.
+
+## Research and evidence
+
 Use one focused change and identify its predecessor, source revision,
 assumptions, proof or construction, and precise scope. Preserve attribution and
 the upstream-compatible Apache-2.0 license; disclose substantial AI assistance.
 
-Before substantial research, check and post your intended scope on the
-[coordination board](https://github.com/1337isnot1337/integer-factoring/issues/8).
-Link your branch or worktree and base commit, report meaningful changes and
-handoffs, and release your claim when finished. Coordinate overlapping lanes.
-Small corrections, documentation fixes, and reproduction reports do not need a
-prior research claim. Existing claims are advisory; check their latest update.
-
-## Sending a contribution
-
-1. Fork the repository, clone your fork, and create a focused branch, for example
-   `git switch -c contribution/my-change`. Record `git rev-parse HEAD` as your base.
-2. Make the smallest useful change. Keep pinned upstream sources and existing
-   evidence intact; record fresh runs separately. For a research note, use the
-   optional [finding outline](docs/START_HERE.md#writing-a-research-finding).
-3. Run the checks below that cover the change. Include the actual commands,
-   outcomes, environment, and unrun checks in the PR template.
-4. Open a PR against `main` ready for review, including ongoing work. Link
-   predecessor work and any coordination claim. A reviewer may request a smaller
-   independently reviewable checkpoint from a large research branch.
-
 For a bug or mathematical correction, identify the exact file, statement, and
-commit, then give the smallest counterexample or reproduction you have. For an
-independent replay, report failures as well as successes. The
+commit, then give the smallest counterexample or reproduction available. For
+an independent replay, report failures as well as successes. The
 [issue templates](https://github.com/1337isnot1337/integer-factoring/issues/new/choose)
 provide short outlines; leave unknown fields explicitly unknown.
-
-## Pull request status
-
-All pull requests must be ready for review. Do not create draft PRs or convert
-open PRs to drafts. Describe incomplete work, failed checks, and remaining
-obligations in the PR body so reviewers can assess the available checkpoint.
-Ready for review does not imply that a change is complete or ready to merge.
-
-The [no-draft workflow](.github/workflows/no-draft-prs.yml) automatically marks
-draft PRs ready for review when they are opened, reopened, or converted to draft,
-including PRs from forks and PRs targeting research branches.
-
-## Claims and checks
 
 For an asymptotic factoring claim, give a uniform algorithm and account for
 the full bit-operation cost, including parameter choices, recursion, reduction,
 precision, and finite exceptions as applicable. Explain which parts are proved,
 implemented, formally checked, or still conditional. Finite tests and checked
-lemmas support only their stated scope. A merged pull request does not itself
-constitute independent proof review or establish a new bound.
+lemmas support only their stated scope.
 
 Run `make verify` and relevant focused checks. Use `make verify-formal` for
-the original local lemmas. Use `make verify-k6` for the k6 proof and
+the original local lemmas, `make verify-k6` for the k6 proof, and
 `make verify-half-appendix` for the full `1/2` theorem. Run
 `make verify-docs` for documentation changes. List any unrun commands.
-Include reproduction commands, actual outcomes, remaining obligations, and
-contributor credit in the pull request.
-
 The default gate uses Python 3 and its standard library, plus Git and Make.
 Lean and optional numerical packages are needed only for their respective
-checks. A documentation contribution does not require installing Lean.
+checks.
 
-Keep the README current with changes to results, evidence, verification commands,
-and open obligations. Update the relevant links and status in the same pull
-request; distinguish proposed improvements from completed and reviewed results.
+Keep the README current with changes to results, evidence, verification
+commands, and open obligations. Retain individual credit when adapting,
+combining, or superseding contributions. Update [CONTRIBUTORS.md](CONTRIBUTORS.md)
+when importing another contributor's work; cite the PR and exact source.
 
 ## Review and credit
 
-The [review guide](docs/REVIEWING.md) describes evidence and integration checks.
-The [ledger](docs/REVIEW_LEDGER.md) records exact inspected heads and dispositions;
-GitHub is the live queue. Passing CI, merging, formal kernel checking, and
-independent mathematical review have separate meanings.
-
-Retain individual credit when adapting, combining, or superseding contributions.
-Update [CONTRIBUTORS.md](CONTRIBUTORS.md) when importing another contributor's
-work; cite the PR and exact source. A useful result can be credited without
-advancing the current exponent or being imported into `main`.
+The [review guide](docs/REVIEWING.md) describes lightweight integration checks.
+The [ledger](docs/REVIEW_LEDGER.md) records exact inspected heads, integration,
+and review scope. Passing CI, merging, formal kernel checking, and independent
+mathematical review have separate meanings.

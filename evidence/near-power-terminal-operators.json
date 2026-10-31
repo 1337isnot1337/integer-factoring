@@ -1,0 +1,1382 @@
+{
+  "status": "Exact near-power terminal reduction, dummy Weyl division, complete compiler, and original physical cuts; no improved bound claim.",
+  "direct_Pascal_reversal_identities": 1039,
+  "exact_interpolation_identities": 878,
+  "weighted_geometries": [
+    {
+      "n": 3,
+      "initial_modes": 0,
+      "selected": [
+        2
+      ],
+      "retained": [
+        0,
+        1
+      ],
+      "weighted_order_margins_nonnegative": true
+    },
+    {
+      "n": 3,
+      "initial_modes": 0,
+      "selected": [
+        1,
+        2
+      ],
+      "retained": [
+        0,
+        1,
+        2
+      ],
+      "weighted_order_margins_nonnegative": true
+    },
+    {
+      "n": 7,
+      "initial_modes": 0,
+      "selected": [
+        5,
+        6
+      ],
+      "retained": [
+        0,
+        1,
+        2
+      ],
+      "weighted_order_margins_nonnegative": true
+    },
+    {
+      "n": 7,
+      "initial_modes": 0,
+      "selected": [
+        4,
+        5,
+        6
+      ],
+      "retained": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "weighted_order_margins_nonnegative": true
+    },
+    {
+      "n": 15,
+      "initial_modes": 0,
+      "selected": [
+        12,
+        13,
+        14
+      ],
+      "retained": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "weighted_order_margins_nonnegative": true
+    },
+    {
+      "n": 31,
+      "initial_modes": 0,
+      "selected": [
+        28,
+        29,
+        30
+      ],
+      "retained": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "weighted_order_margins_nonnegative": true
+    },
+    {
+      "n": 63,
+      "initial_modes": 0,
+      "selected": [
+        59,
+        60,
+        61,
+        62
+      ],
+      "retained": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "weighted_order_margins_nonnegative": true
+    },
+    {
+      "n": 3,
+      "initial_modes": 1,
+      "selected": [
+        0,
+        2
+      ],
+      "retained": [
+        0,
+        1,
+        2
+      ],
+      "weighted_order_margins_nonnegative": true
+    },
+    {
+      "n": 7,
+      "initial_modes": 1,
+      "selected": [
+        0,
+        5,
+        6
+      ],
+      "retained": [
+        0,
+        1,
+        2,
+        6
+      ],
+      "weighted_order_margins_nonnegative": true
+    },
+    {
+      "n": 31,
+      "initial_modes": 1,
+      "selected": [
+        0,
+        29,
+        30
+      ],
+      "retained": [
+        0,
+        1,
+        2,
+        30
+      ],
+      "weighted_order_margins_nonnegative": true
+    },
+    {
+      "n": 63,
+      "initial_modes": 1,
+      "selected": [
+        0,
+        60,
+        61,
+        62
+      ],
+      "retained": [
+        0,
+        1,
+        2,
+        3,
+        62
+      ],
+      "weighted_order_margins_nonnegative": true
+    }
+  ],
+  "closed_rank_one_parameter_geometries": 31,
+  "closed_rank_one_parameter_entry_identities": 438,
+  "full_rectangular_vs_reduced": [
+    {
+      "n": 3,
+      "ramification": 1,
+      "initial_modes": 0,
+      "modes": 1,
+      "rectangular_matrix_order": 8,
+      "Weyl_matrix_order": 4,
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            -2
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -4,
+            2,
+            4
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            0,
+            2,
+            8
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "ramification": 1,
+      "initial_modes": 0,
+      "modes": 2,
+      "rectangular_matrix_order": 32,
+      "Weyl_matrix_order": 8,
+      "zero_blocks": [
+        {
+          "charge": -3,
+          "orders": [
+            -2
+          ]
+        },
+        {
+          "charge": -2,
+          "orders": [
+            -4,
+            -4,
+            -2,
+            0,
+            2
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -6,
+            -4,
+            -2,
+            -2,
+            0,
+            0,
+            0,
+            2,
+            2,
+            4
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -4,
+            -2,
+            -2,
+            0,
+            0,
+            2,
+            2,
+            4,
+            4,
+            6
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            0,
+            2,
+            2,
+            4,
+            8
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "n": 7,
+      "ramification": 3,
+      "initial_modes": 0,
+      "modes": 2,
+      "rectangular_matrix_order": 32,
+      "Weyl_matrix_order": 8,
+      "zero_blocks": [
+        {
+          "charge": -3,
+          "orders": [
+            -58
+          ]
+        },
+        {
+          "charge": -2,
+          "orders": [
+            -64,
+            -32,
+            -28,
+            -26,
+            -22
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -38,
+            -34,
+            -32,
+            -28,
+            -2,
+            4,
+            4,
+            6,
+            8,
+            10
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -8,
+            -2,
+            -2,
+            0,
+            2,
+            4,
+            34,
+            36,
+            40,
+            42
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            28,
+            30,
+            34,
+            36,
+            72
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "n": 7,
+      "ramification": 1,
+      "initial_modes": 0,
+      "modes": 3,
+      "rectangular_matrix_order": 128,
+      "Weyl_matrix_order": 16,
+      "zero_blocks": [
+        {
+          "charge": -4,
+          "orders": [
+            -34
+          ]
+        },
+        {
+          "charge": -3,
+          "orders": [
+            -36,
+            -26,
+            -26,
+            -24,
+            -24,
+            -22,
+            -22
+          ]
+        },
+        {
+          "charge": -2,
+          "orders": [
+            -28,
+            -28,
+            -26,
+            -26,
+            -24,
+            -24,
+            -18,
+            -16,
+            -16,
+            -16,
+            -16,
+            -14,
+            -14,
+            -14,
+            -14,
+            -14,
+            -12,
+            -12,
+            -12,
+            -12,
+            -10
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -20,
+            -18,
+            -18,
+            -18,
+            -18,
+            -16,
+            -16,
+            -16,
+            -16,
+            -16,
+            -14,
+            -14,
+            -14,
+            -14,
+            -12,
+            -8,
+            -8,
+            -6,
+            -6,
+            -6,
+            -6,
+            -4,
+            -4,
+            -4,
+            -4,
+            -4,
+            -4,
+            -4,
+            -4,
+            -2,
+            -2,
+            -2,
+            -2,
+            0,
+            0
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -10,
+            -10,
+            -8,
+            -8,
+            -8,
+            -8,
+            -6,
+            -6,
+            -6,
+            -6,
+            -6,
+            -6,
+            -6,
+            -6,
+            -4,
+            -4,
+            -4,
+            -4,
+            -2,
+            -2,
+            2,
+            4,
+            4,
+            4,
+            4,
+            6,
+            6,
+            6,
+            6,
+            6,
+            8,
+            8,
+            8,
+            8,
+            10
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            0,
+            2,
+            2,
+            2,
+            2,
+            4,
+            4,
+            4,
+            4,
+            4,
+            6,
+            6,
+            6,
+            6,
+            8,
+            14,
+            14,
+            16,
+            16,
+            18,
+            18
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            12,
+            12,
+            14,
+            14,
+            16,
+            16,
+            26
+          ]
+        },
+        {
+          "charge": 3,
+          "orders": [
+            24
+          ]
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "ramification": 1,
+      "initial_modes": 1,
+      "modes": 2,
+      "rectangular_matrix_order": 32,
+      "Weyl_matrix_order": 8,
+      "zero_blocks": [
+        {
+          "charge": -3,
+          "orders": [
+            0
+          ]
+        },
+        {
+          "charge": -2,
+          "orders": [
+            -4,
+            -2,
+            0,
+            0,
+            4
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -6,
+            -4,
+            -2,
+            -2,
+            0,
+            0,
+            2,
+            2,
+            4,
+            4
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -6,
+            -2,
+            -2,
+            0,
+            0,
+            2,
+            2,
+            2,
+            4,
+            6
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -2,
+            0,
+            2,
+            4,
+            6
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "n": 7,
+      "ramification": 1,
+      "initial_modes": 1,
+      "modes": 3,
+      "rectangular_matrix_order": 128,
+      "Weyl_matrix_order": 16,
+      "zero_blocks": [
+        {
+          "charge": -4,
+          "orders": [
+            -26
+          ]
+        },
+        {
+          "charge": -3,
+          "orders": [
+            -28,
+            -26,
+            -26,
+            -16,
+            -16,
+            -14,
+            -14
+          ]
+        },
+        {
+          "charge": -2,
+          "orders": [
+            -28,
+            -28,
+            -26,
+            -18,
+            -18,
+            -16,
+            -16,
+            -16,
+            -16,
+            -16,
+            -16,
+            -14,
+            -14,
+            -14,
+            -14,
+            -6,
+            -4,
+            -4,
+            -4,
+            -4,
+            -2
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -28,
+            -18,
+            -18,
+            -18,
+            -18,
+            -16,
+            -16,
+            -16,
+            -16,
+            -16,
+            -16,
+            -14,
+            -14,
+            -8,
+            -6,
+            -6,
+            -6,
+            -6,
+            -6,
+            -6,
+            -4,
+            -4,
+            -4,
+            -4,
+            -4,
+            -4,
+            -4,
+            -4,
+            -4,
+            -2,
+            -2,
+            6,
+            6,
+            8,
+            8
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -18,
+            -18,
+            -16,
+            -16,
+            -8,
+            -8,
+            -6,
+            -6,
+            -6,
+            -6,
+            -6,
+            -6,
+            -6,
+            -6,
+            -6,
+            -4,
+            -4,
+            -4,
+            -4,
+            -4,
+            -4,
+            -2,
+            4,
+            4,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            8,
+            8,
+            8,
+            8,
+            18
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -8,
+            -6,
+            -6,
+            -6,
+            -6,
+            -4,
+            4,
+            4,
+            4,
+            4,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            8,
+            8,
+            16,
+            18,
+            18
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            4,
+            4,
+            6,
+            6,
+            16,
+            16,
+            18
+          ]
+        },
+        {
+          "charge": 3,
+          "orders": [
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "n": 15,
+      "ramification": 3,
+      "initial_modes": 0,
+      "modes": 3,
+      "rectangular_matrix_order": 128,
+      "Weyl_matrix_order": 16,
+      "zero_blocks": [
+        {
+          "charge": -4,
+          "orders": [
+            -234
+          ]
+        },
+        {
+          "charge": -3,
+          "orders": [
+            -240,
+            -162,
+            -162,
+            -156,
+            -156,
+            -150,
+            -150
+          ]
+        },
+        {
+          "charge": -2,
+          "orders": [
+            -168,
+            -168,
+            -162,
+            -162,
+            -156,
+            -156,
+            -90,
+            -84,
+            -84,
+            -84,
+            -84,
+            -78,
+            -78,
+            -78,
+            -78,
+            -78,
+            -72,
+            -72,
+            -72,
+            -72,
+            -66
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -96,
+            -90,
+            -90,
+            -90,
+            -90,
+            -84,
+            -84,
+            -84,
+            -84,
+            -84,
+            -78,
+            -78,
+            -78,
+            -78,
+            -72,
+            -12,
+            -12,
+            -6,
+            -6,
+            -6,
+            -6,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            6,
+            6,
+            6,
+            6,
+            12,
+            12
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -18,
+            -18,
+            -12,
+            -12,
+            -12,
+            -12,
+            -6,
+            -6,
+            -6,
+            -6,
+            -6,
+            -6,
+            -6,
+            -6,
+            0,
+            0,
+            0,
+            0,
+            6,
+            6,
+            66,
+            72,
+            72,
+            72,
+            72,
+            78,
+            78,
+            78,
+            78,
+            78,
+            84,
+            84,
+            84,
+            84,
+            90
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            60,
+            66,
+            66,
+            66,
+            66,
+            72,
+            72,
+            72,
+            72,
+            72,
+            78,
+            78,
+            78,
+            78,
+            84,
+            150,
+            150,
+            156,
+            156,
+            162,
+            162
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            144,
+            144,
+            150,
+            150,
+            156,
+            156,
+            234
+          ]
+        },
+        {
+          "charge": 3,
+          "orders": [
+            228
+          ]
+        }
+      ]
+    },
+    {
+      "n": 31,
+      "ramification": 1,
+      "initial_modes": 0,
+      "modes": 3,
+      "rectangular_matrix_order": 128,
+      "Weyl_matrix_order": 16,
+      "zero_blocks": [
+        {
+          "charge": -4,
+          "orders": [
+            -178
+          ]
+        },
+        {
+          "charge": -3,
+          "orders": [
+            -180,
+            -122,
+            -122,
+            -120,
+            -120,
+            -118,
+            -118
+          ]
+        },
+        {
+          "charge": -2,
+          "orders": [
+            -124,
+            -124,
+            -122,
+            -122,
+            -120,
+            -120,
+            -66,
+            -64,
+            -64,
+            -64,
+            -64,
+            -62,
+            -62,
+            -62,
+            -62,
+            -62,
+            -60,
+            -60,
+            -60,
+            -60,
+            -58
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -68,
+            -66,
+            -66,
+            -66,
+            -66,
+            -64,
+            -64,
+            -64,
+            -64,
+            -64,
+            -62,
+            -62,
+            -62,
+            -62,
+            -60,
+            -8,
+            -8,
+            -6,
+            -6,
+            -6,
+            -6,
+            -4,
+            -4,
+            -4,
+            -4,
+            -4,
+            -4,
+            -4,
+            -4,
+            -2,
+            -2,
+            -2,
+            -2,
+            0,
+            0
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -10,
+            -10,
+            -8,
+            -8,
+            -8,
+            -8,
+            -6,
+            -6,
+            -6,
+            -6,
+            -6,
+            -6,
+            -6,
+            -6,
+            -4,
+            -4,
+            -4,
+            -4,
+            -2,
+            -2,
+            50,
+            52,
+            52,
+            52,
+            52,
+            54,
+            54,
+            54,
+            54,
+            54,
+            56,
+            56,
+            56,
+            56,
+            58
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            48,
+            50,
+            50,
+            50,
+            50,
+            52,
+            52,
+            52,
+            52,
+            52,
+            54,
+            54,
+            54,
+            54,
+            56,
+            110,
+            110,
+            112,
+            112,
+            114,
+            114
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            108,
+            108,
+            110,
+            110,
+            112,
+            112,
+            170
+          ]
+        },
+        {
+          "charge": 3,
+          "orders": [
+            168
+          ]
+        }
+      ]
+    },
+    {
+      "n": 31,
+      "ramification": 1,
+      "initial_modes": 1,
+      "modes": 3,
+      "rectangular_matrix_order": 128,
+      "Weyl_matrix_order": 16,
+      "zero_blocks": [
+        {
+          "charge": -4,
+          "orders": [
+            -122
+          ]
+        },
+        {
+          "charge": -3,
+          "orders": [
+            -124,
+            -122,
+            -122,
+            -64,
+            -64,
+            -62,
+            -62
+          ]
+        },
+        {
+          "charge": -2,
+          "orders": [
+            -124,
+            -124,
+            -122,
+            -66,
+            -66,
+            -64,
+            -64,
+            -64,
+            -64,
+            -64,
+            -64,
+            -62,
+            -62,
+            -62,
+            -62,
+            -6,
+            -4,
+            -4,
+            -4,
+            -4,
+            -2
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -124,
+            -66,
+            -66,
+            -66,
+            -66,
+            -64,
+            -64,
+            -64,
+            -64,
+            -64,
+            -64,
+            -62,
+            -62,
+            -8,
+            -6,
+            -6,
+            -6,
+            -6,
+            -6,
+            -6,
+            -4,
+            -4,
+            -4,
+            -4,
+            -4,
+            -4,
+            -4,
+            -4,
+            -4,
+            -2,
+            -2,
+            54,
+            54,
+            56,
+            56
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -66,
+            -66,
+            -64,
+            -64,
+            -8,
+            -8,
+            -6,
+            -6,
+            -6,
+            -6,
+            -6,
+            -6,
+            -6,
+            -6,
+            -6,
+            -4,
+            -4,
+            -4,
+            -4,
+            -4,
+            -4,
+            -2,
+            52,
+            52,
+            54,
+            54,
+            54,
+            54,
+            54,
+            54,
+            56,
+            56,
+            56,
+            56,
+            114
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -8,
+            -6,
+            -6,
+            -6,
+            -6,
+            -4,
+            52,
+            52,
+            52,
+            52,
+            54,
+            54,
+            54,
+            54,
+            54,
+            54,
+            56,
+            56,
+            112,
+            114,
+            114
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            52,
+            52,
+            54,
+            54,
+            112,
+            112,
+            114
+          ]
+        },
+        {
+          "charge": 3,
+          "orders": [
+            112
+          ]
+        }
+      ]
+    }
+  ],
+  "compiled_two_cut_controls": 68,
+  "complete_profile_physical_partition_pressure_controls": 81,
+  "original_two_cut_cases": [
+    {
+      "n": 3,
+      "ramification": 3,
+      "initial_modes": 0,
+      "modes": 1,
+      "charge": -1,
+      "original_matrix_order": 64,
+      "endpoint_coefficients_checked": 714,
+      "maximum_native_precision": 512
+    },
+    {
+      "n": 3,
+      "ramification": 1,
+      "initial_modes": 0,
+      "modes": 2,
+      "charge": 0,
+      "original_matrix_order": 64,
+      "endpoint_coefficients_checked": 817,
+      "maximum_native_precision": 512
+    },
+    {
+      "n": 3,
+      "ramification": 3,
+      "initial_modes": 0,
+      "modes": 2,
+      "charge": 2,
+      "original_matrix_order": 64,
+      "endpoint_coefficients_checked": 817,
+      "maximum_native_precision": 512
+    },
+    {
+      "n": 3,
+      "ramification": 1,
+      "initial_modes": 1,
+      "modes": 2,
+      "charge": -2,
+      "original_matrix_order": 64,
+      "endpoint_coefficients_checked": 808,
+      "maximum_native_precision": 512
+    },
+    {
+      "n": 3,
+      "ramification": 3,
+      "initial_modes": 1,
+      "modes": 2,
+      "charge": 1,
+      "original_matrix_order": 64,
+      "endpoint_coefficients_checked": 808,
+      "maximum_native_precision": 512
+    }
+  ],
+  "degree_600_second_plane_control": true,
+  "invalid_geometry_or_dummy_rejections": 4,
+  "extended": true
+}

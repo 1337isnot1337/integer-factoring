@@ -1,0 +1,2254 @@
+{
+  "status": "Exact coefficient profiles and complete stated subset/grid screen; floating pressure is exploratory.",
+  "n": 32,
+  "ramification": 1,
+  "modes": 3,
+  "family": "transported polynomial row certificates",
+  "source_lattice_record": "evidence/weyl-lattice-three-mode-initial-n32-screen.json",
+  "coefficient_cases": 4270,
+  "distinct_ordered_beta_degree_profiles": 2044,
+  "catalogue_sha256": "0733fe93ce2435e3c3e85a2ff1cccd99a0be41cc27e7ff3171bd315c20e9f6c6",
+  "selected_subsets": 4960,
+  "subset_stride": 1,
+  "scale_grid": [
+    0.0625,
+    0.125,
+    0.15625,
+    0.1875,
+    0.25
+  ],
+  "charge_grid": [
+    -1.0,
+    0.0,
+    1.0
+  ],
+  "gain_detection_tolerance": 1e-09,
+  "total_profile_subset_grid_evaluations": 152073600,
+  "minimum_relative_log_cost": -6.66133814775094e-16,
+  "minimum_critical_pressure": 0.03336164503723471,
+  "same_gauge_gain_found": false,
+  "negative_critical_pressure_found": false,
+  "grid_summaries": [
+    {
+      "scale": 0.0625,
+      "charge": -1.0,
+      "Gaussian_pressure": 1.2903563644930465,
+      "minimum_relative_log_cost": -5.551115123125783e-16,
+      "minimum_critical_pressure": 1.290356364493046
+    },
+    {
+      "scale": 0.0625,
+      "charge": 0.0,
+      "Gaussian_pressure": 1.2891759509342116,
+      "minimum_relative_log_cost": -6.66133814775094e-16,
+      "minimum_critical_pressure": 1.289175950934211
+    },
+    {
+      "scale": 0.0625,
+      "charge": 1.0,
+      "Gaussian_pressure": 1.2903563644930465,
+      "minimum_relative_log_cost": -5.551115123125783e-16,
+      "minimum_critical_pressure": 1.290356364493046
+    },
+    {
+      "scale": 0.125,
+      "charge": -1.0,
+      "Gaussian_pressure": 0.07123402063588635,
+      "minimum_relative_log_cost": -4.440892098500626e-16,
+      "minimum_critical_pressure": 0.07123402063588591
+    },
+    {
+      "scale": 0.125,
+      "charge": 0.0,
+      "Gaussian_pressure": 0.07103834785392138,
+      "minimum_relative_log_cost": -6.66133814775094e-16,
+      "minimum_critical_pressure": 0.07103834785392071
+    },
+    {
+      "scale": 0.125,
+      "charge": 1.0,
+      "Gaussian_pressure": 0.07123402063588635,
+      "minimum_relative_log_cost": -5.551115123125783e-16,
+      "minimum_critical_pressure": 0.0712340206358858
+    },
+    {
+      "scale": 0.15625,
+      "charge": -1.0,
+      "Gaussian_pressure": 0.036306366228759046,
+      "minimum_relative_log_cost": -5.551115123125783e-16,
+      "minimum_critical_pressure": 0.03630636622875849
+    },
+    {
+      "scale": 0.15625,
+      "charge": 0.0,
+      "Gaussian_pressure": 0.036244076856041474,
+      "minimum_relative_log_cost": -6.66133814775094e-16,
+      "minimum_critical_pressure": 0.03624407685604081
+    },
+    {
+      "scale": 0.15625,
+      "charge": 1.0,
+      "Gaussian_pressure": 0.036306366228759046,
+      "minimum_relative_log_cost": -4.440892098500626e-16,
+      "minimum_critical_pressure": 0.0363063662287586
+    },
+    {
+      "scale": 0.1875,
+      "charge": -1.0,
+      "Gaussian_pressure": 0.03338022790012474,
+      "minimum_relative_log_cost": -5.551115123125783e-16,
+      "minimum_critical_pressure": 0.03338022790012418
+    },
+    {
+      "scale": 0.1875,
+      "charge": 0.0,
+      "Gaussian_pressure": 0.03336164503723538,
+      "minimum_relative_log_cost": -6.66133814775094e-16,
+      "minimum_critical_pressure": 0.03336164503723471
+    },
+    {
+      "scale": 0.1875,
+      "charge": 1.0,
+      "Gaussian_pressure": 0.03338022790012474,
+      "minimum_relative_log_cost": -5.551115123125783e-16,
+      "minimum_critical_pressure": 0.03338022790012418
+    },
+    {
+      "scale": 0.25,
+      "charge": -1.0,
+      "Gaussian_pressure": 0.041762890476452874,
+      "minimum_relative_log_cost": -4.440892098500626e-16,
+      "minimum_critical_pressure": 0.04176289047645243
+    },
+    {
+      "scale": 0.25,
+      "charge": 0.0,
+      "Gaussian_pressure": 0.04176140635491343,
+      "minimum_relative_log_cost": -6.66133814775094e-16,
+      "minimum_critical_pressure": 0.04176140635491277
+    },
+    {
+      "scale": 0.25,
+      "charge": 1.0,
+      "Gaussian_pressure": 0.041762890476452874,
+      "minimum_relative_log_cost": -5.551115123125783e-16,
+      "minimum_critical_pressure": 0.04176289047645232
+    }
+  ],
+  "selected_profile_records": [
+    {
+      "beta_orders": [
+        0,
+        32,
+        32,
+        64,
+        32,
+        64,
+        64,
+        96
+      ],
+      "degrees": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "source_row": 0,
+      "source_degree_bounds": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "source_row_targets": [
+        96,
+        64,
+        65,
+        66,
+        33,
+        34,
+        35,
+        3
+      ],
+      "witness_polynomial_sha256": "343805698f40e6931752dedba763e97734aff926059a1ac7be43e3c4dc587179",
+      "multiplicity": 108,
+      "catalogue_index": 0,
+      "minimum_relative_log_cost": -6.66133814775094e-16,
+      "relative_point": [
+        0.0625,
+        0.0,
+        [
+          0,
+          12,
+          17
+        ]
+      ],
+      "minimum_critical_pressure": 0.03336164503723471,
+      "critical_point": [
+        0.1875,
+        0.0,
+        [
+          0,
+          16,
+          31
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        0,
+        33,
+        33,
+        64,
+        33,
+        64,
+        64,
+        32
+      ],
+      "degrees": [
+        0,
+        0,
+        0,
+        33,
+        0,
+        33,
+        33,
+        0
+      ],
+      "source_row": 4,
+      "source_degree_bounds": [
+        0,
+        0,
+        0,
+        33,
+        0,
+        33,
+        33,
+        0
+      ],
+      "source_row_targets": [
+        32,
+        64,
+        65,
+        66,
+        34,
+        35,
+        36,
+        3
+      ],
+      "witness_polynomial_sha256": "2064a12c3d19b7d622a1c762326fe7f6753173edfc446761ac68fd045cd5c5f8",
+      "multiplicity": 12,
+      "catalogue_index": 1,
+      "minimum_relative_log_cost": 1.5858919812625913,
+      "relative_point": [
+        0.0625,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "minimum_critical_pressure": 1.9755597656848867,
+      "critical_point": [
+        0.125,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        0,
+        32,
+        33,
+        32,
+        33,
+        32,
+        64,
+        96
+      ],
+      "degrees": [
+        0,
+        0,
+        0,
+        33,
+        0,
+        33,
+        0,
+        0
+      ],
+      "source_row": 5,
+      "source_degree_bounds": [
+        0,
+        0,
+        0,
+        33,
+        0,
+        33,
+        33,
+        0
+      ],
+      "source_row_targets": [
+        96,
+        32,
+        33,
+        66,
+        33,
+        35,
+        36,
+        3
+      ],
+      "witness_polynomial_sha256": "959e19efe57c3df7254180dc10d87088f9f568f50f413d8e153238970b04e8f7",
+      "multiplicity": 5,
+      "catalogue_index": 2,
+      "minimum_relative_log_cost": 1.2560488407589006,
+      "relative_point": [
+        0.0625,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "minimum_critical_pressure": 1.534980410035983,
+      "critical_point": [
+        0.125,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        0,
+        33,
+        32,
+        32,
+        33,
+        64,
+        32,
+        96
+      ],
+      "degrees": [
+        0,
+        0,
+        0,
+        33,
+        0,
+        0,
+        33,
+        0
+      ],
+      "source_row": 6,
+      "source_degree_bounds": [
+        0,
+        0,
+        0,
+        33,
+        0,
+        33,
+        33,
+        0
+      ],
+      "source_row_targets": [
+        96,
+        32,
+        65,
+        34,
+        34,
+        34,
+        36,
+        3
+      ],
+      "witness_polynomial_sha256": "bce0c99208810bf2c3f5fdf2f4a4fe314b8916eed3bece8b9d8c625f5af093fd",
+      "multiplicity": 4,
+      "catalogue_index": 3,
+      "minimum_relative_log_cost": 1.301849476678223,
+      "relative_point": [
+        0.0625,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "minimum_critical_pressure": 1.6505581073749447,
+      "critical_point": [
+        0.125,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        0,
+        33,
+        33,
+        64,
+        32,
+        32,
+        32,
+        96
+      ],
+      "degrees": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        33,
+        33,
+        0
+      ],
+      "source_row": 7,
+      "source_degree_bounds": [
+        0,
+        0,
+        0,
+        33,
+        0,
+        33,
+        33,
+        0
+      ],
+      "source_row_targets": [
+        96,
+        64,
+        33,
+        34,
+        34,
+        35,
+        35,
+        3
+      ],
+      "witness_polynomial_sha256": "9e3dc209f203f17fbdb755231b90dc6e9e6b20a5bb314d7ddb834662e5d72e7b",
+      "multiplicity": 3,
+      "catalogue_index": 4,
+      "minimum_relative_log_cost": 1.3397714665860345,
+      "relative_point": [
+        0.0625,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "minimum_critical_pressure": 1.7320602979089,
+      "critical_point": [
+        0.125,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        0,
+        32,
+        0,
+        65,
+        0,
+        65,
+        64,
+        96
+      ],
+      "degrees": [
+        0,
+        0,
+        1,
+        33,
+        1,
+        33,
+        0,
+        0
+      ],
+      "source_row": 76,
+      "source_degree_bounds": [
+        0,
+        1,
+        1,
+        33,
+        1,
+        33,
+        33,
+        0
+      ],
+      "source_row_targets": [
+        96,
+        65,
+        66,
+        66,
+        33,
+        2,
+        3,
+        3
+      ],
+      "witness_polynomial_sha256": "aa1ccd8913bc9d4a143e2b9f05e933f19aee3148c4628d1be1a4ed58ad24c6d4",
+      "multiplicity": 2,
+      "catalogue_index": 66,
+      "minimum_relative_log_cost": 1.5398794632852635,
+      "relative_point": [
+        0.0625,
+        1.0,
+        [
+          0,
+          1,
+          31
+        ]
+      ],
+      "minimum_critical_pressure": 1.9130045594222693,
+      "critical_point": [
+        0.125,
+        1.0,
+        [
+          0,
+          1,
+          31
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        0,
+        32,
+        33,
+        65,
+        33,
+        65,
+        64,
+        96
+      ],
+      "degrees": [
+        0,
+        0,
+        33,
+        33,
+        33,
+        33,
+        0,
+        0
+      ],
+      "source_row": 266,
+      "source_degree_bounds": [
+        0,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        0
+      ],
+      "source_row_targets": [
+        96,
+        65,
+        66,
+        66,
+        33,
+        35,
+        36,
+        3
+      ],
+      "witness_polynomial_sha256": "304d180ee3f33f0434c881dd4d5ef7e1d5e632334639974bcc1ba60d49344510",
+      "multiplicity": 3,
+      "catalogue_index": 204,
+      "minimum_relative_log_cost": 1.227391903438091,
+      "relative_point": [
+        0.0625,
+        -1.0,
+        [
+          0,
+          1,
+          7
+        ]
+      ],
+      "minimum_critical_pressure": 1.5339829688685995,
+      "critical_point": [
+        0.125,
+        0.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        0,
+        33,
+        32,
+        65,
+        32,
+        65,
+        64,
+        32
+      ],
+      "degrees": [
+        0,
+        0,
+        33,
+        0,
+        33,
+        0,
+        33,
+        0
+      ],
+      "source_row": 267,
+      "source_degree_bounds": [
+        0,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        0
+      ],
+      "source_row_targets": [
+        32,
+        65,
+        66,
+        66,
+        34,
+        34,
+        35,
+        3
+      ],
+      "witness_polynomial_sha256": "188a4854ddbde92e0e449c100785d4061fd4fb85e58812fd60101a4f114be696",
+      "multiplicity": 3,
+      "catalogue_index": 205,
+      "minimum_relative_log_cost": 0.9327564686482752,
+      "relative_point": [
+        0.0625,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "minimum_critical_pressure": 1.294638732285991,
+      "critical_point": [
+        0.125,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        0,
+        33,
+        33,
+        64,
+        32,
+        65,
+        65,
+        96
+      ],
+      "degrees": [
+        0,
+        33,
+        33,
+        0,
+        0,
+        33,
+        33,
+        0
+      ],
+      "source_row": 268,
+      "source_degree_bounds": [
+        0,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        0
+      ],
+      "source_row_targets": [
+        96,
+        64,
+        66,
+        67,
+        34,
+        35,
+        35,
+        3
+      ],
+      "witness_polynomial_sha256": "2ff0f429f6c9099faabc0aa1bc52a782b9351af8c20fb24e7f8e72ea059e8eb6",
+      "multiplicity": 6,
+      "catalogue_index": 206,
+      "minimum_relative_log_cost": 1.3129229835783565,
+      "relative_point": [
+        0.0625,
+        -1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "minimum_critical_pressure": 1.731161507176009,
+      "critical_point": [
+        0.125,
+        0.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        0,
+        33,
+        33,
+        64,
+        33,
+        64,
+        32,
+        64
+      ],
+      "degrees": [
+        0,
+        33,
+        0,
+        33,
+        0,
+        33,
+        33,
+        0
+      ],
+      "source_row": 269,
+      "source_degree_bounds": [
+        0,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        0
+      ],
+      "source_row_targets": [
+        64,
+        64,
+        65,
+        34,
+        34,
+        35,
+        36,
+        3
+      ],
+      "witness_polynomial_sha256": "a11fb16b5a95ba27161a48919bd8c3d45fc8ae59805a149bf4a979ffee05af4c",
+      "multiplicity": 1,
+      "catalogue_index": 207,
+      "minimum_relative_log_cost": 1.5856395993611763,
+      "relative_point": [
+        0.0625,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "minimum_critical_pressure": 1.9752742037038011,
+      "critical_point": [
+        0.125,
+        0.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        0,
+        33,
+        32,
+        65,
+        33,
+        64,
+        65,
+        96
+      ],
+      "degrees": [
+        0,
+        33,
+        0,
+        33,
+        33,
+        0,
+        33,
+        0
+      ],
+      "source_row": 271,
+      "source_degree_bounds": [
+        0,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        0
+      ],
+      "source_row_targets": [
+        96,
+        65,
+        65,
+        67,
+        34,
+        34,
+        36,
+        3
+      ],
+      "witness_polynomial_sha256": "ab32be23641401b8314a0f4c2ecd523859e778d88f92dc83e209b9191ed329d1",
+      "multiplicity": 3,
+      "catalogue_index": 208,
+      "minimum_relative_log_cost": 1.2738695077870044,
+      "relative_point": [
+        0.0625,
+        -1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "minimum_critical_pressure": 1.6495849402626153,
+      "critical_point": [
+        0.125,
+        0.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        0,
+        32,
+        32,
+        64,
+        33,
+        65,
+        65,
+        32
+      ],
+      "degrees": [
+        0,
+        33,
+        33,
+        33,
+        0,
+        0,
+        0,
+        0
+      ],
+      "source_row": 272,
+      "source_degree_bounds": [
+        0,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        0
+      ],
+      "source_row_targets": [
+        32,
+        64,
+        66,
+        67,
+        33,
+        34,
+        36,
+        3
+      ],
+      "witness_polynomial_sha256": "7626350e9c43687cd62c18e787275fec5b98ac3ebe96af590834011ace9a32ff",
+      "multiplicity": 3,
+      "catalogue_index": 209,
+      "minimum_relative_log_cost": 0.7943608768751886,
+      "relative_point": [
+        0.0625,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "minimum_critical_pressure": 0.9696119044817184,
+      "critical_point": [
+        0.125,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        0,
+        33,
+        32,
+        65,
+        32,
+        65,
+        32,
+        64
+      ],
+      "degrees": [
+        0,
+        33,
+        33,
+        0,
+        33,
+        0,
+        33,
+        0
+      ],
+      "source_row": 273,
+      "source_degree_bounds": [
+        0,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        0
+      ],
+      "source_row_targets": [
+        64,
+        65,
+        66,
+        34,
+        34,
+        34,
+        35,
+        3
+      ],
+      "witness_polynomial_sha256": "379a3c7706d3d9a636a4930150da6fb9d6e0164f69021454d0387d26c7bda96c",
+      "multiplicity": 1,
+      "catalogue_index": 210,
+      "minimum_relative_log_cost": 0.9372475062807766,
+      "relative_point": [
+        0.0625,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "minimum_critical_pressure": 1.2944787429078488,
+      "critical_point": [
+        0.125,
+        0.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        0,
+        32,
+        32,
+        65,
+        32,
+        65,
+        64,
+        96
+      ],
+      "degrees": [
+        0,
+        0,
+        65,
+        0,
+        65,
+        0,
+        0,
+        0
+      ],
+      "source_row": 448,
+      "source_degree_bounds": [
+        0,
+        65,
+        65,
+        0,
+        65,
+        0,
+        0,
+        0
+      ],
+      "source_row_targets": [
+        96,
+        65,
+        66,
+        66,
+        33,
+        34,
+        35,
+        3
+      ],
+      "witness_polynomial_sha256": "19ad7e1768e5208dd4afbf4e3f6dc84027a5a4d2dc5334418ff7529a7c90ed62",
+      "multiplicity": 3,
+      "catalogue_index": 357,
+      "minimum_relative_log_cost": 1.4565620175259726,
+      "relative_point": [
+        0.0625,
+        -1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "minimum_critical_pressure": 2.04502924834914,
+      "critical_point": [
+        0.125,
+        0.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        0,
+        32,
+        32,
+        64,
+        32,
+        65,
+        65,
+        96
+      ],
+      "degrees": [
+        0,
+        65,
+        65,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "source_row": 450,
+      "source_degree_bounds": [
+        0,
+        65,
+        65,
+        0,
+        65,
+        0,
+        0,
+        0
+      ],
+      "source_row_targets": [
+        96,
+        64,
+        66,
+        67,
+        33,
+        34,
+        35,
+        3
+      ],
+      "witness_polynomial_sha256": "1bc8ad9ac995e532ae12a46a6309902bfa265ac2b368423742edb93876c4ee09",
+      "multiplicity": 3,
+      "catalogue_index": 359,
+      "minimum_relative_log_cost": 1.3621300603027136,
+      "relative_point": [
+        0.0625,
+        -1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "minimum_critical_pressure": 1.8337224693851493,
+      "critical_point": [
+        0.125,
+        0.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        0,
+        32,
+        32,
+        65,
+        32,
+        64,
+        65,
+        96
+      ],
+      "degrees": [
+        0,
+        65,
+        0,
+        0,
+        65,
+        0,
+        0,
+        0
+      ],
+      "source_row": 451,
+      "source_degree_bounds": [
+        0,
+        65,
+        65,
+        0,
+        65,
+        0,
+        0,
+        0
+      ],
+      "source_row_targets": [
+        96,
+        65,
+        65,
+        67,
+        33,
+        34,
+        35,
+        3
+      ],
+      "witness_polynomial_sha256": "38e02501f588dc577a7da4e6d9b1f301032b15eab030a3788e6859acd2fa627a",
+      "multiplicity": 3,
+      "catalogue_index": 360,
+      "minimum_relative_log_cost": 1.4134013013752007,
+      "relative_point": [
+        0.0625,
+        -1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "minimum_critical_pressure": 1.9579515449039118,
+      "critical_point": [
+        0.125,
+        0.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        0,
+        32,
+        33,
+        65,
+        33,
+        65,
+        65,
+        64
+      ],
+      "degrees": [
+        0,
+        65,
+        33,
+        33,
+        33,
+        33,
+        0,
+        0
+      ],
+      "source_row": 469,
+      "source_degree_bounds": [
+        0,
+        65,
+        65,
+        33,
+        65,
+        33,
+        33,
+        0
+      ],
+      "source_row_targets": [
+        64,
+        65,
+        66,
+        67,
+        33,
+        35,
+        36,
+        3
+      ],
+      "witness_polynomial_sha256": "4c00cffa08fcaa11617385a218257ae8d62c25749659b53ea8c14dbaa81104b6",
+      "multiplicity": 1,
+      "catalogue_index": 369,
+      "minimum_relative_log_cost": 1.4276415491729608,
+      "relative_point": [
+        0.0625,
+        1.0,
+        [
+          0,
+          1,
+          31
+        ]
+      ],
+      "minimum_critical_pressure": 1.7654506488896935,
+      "critical_point": [
+        0.125,
+        0.0,
+        [
+          0,
+          1,
+          31
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        0,
+        33,
+        32,
+        65,
+        0,
+        65,
+        32,
+        97
+      ],
+      "degrees": [
+        1,
+        1,
+        1,
+        1,
+        33,
+        0,
+        33,
+        0
+      ],
+      "source_row": 973,
+      "source_degree_bounds": [
+        1,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        0
+      ],
+      "source_row_targets": [
+        97,
+        65,
+        66,
+        34,
+        34,
+        34,
+        3,
+        3
+      ],
+      "witness_polynomial_sha256": "ad28bd3aba9669080d92be60bafc21f2d6cb094d33a93662688ad072adaf56bb",
+      "multiplicity": 1,
+      "catalogue_index": 662,
+      "minimum_relative_log_cost": 1.5627081862358967,
+      "relative_point": [
+        0.0625,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "minimum_critical_pressure": 1.98628996215926,
+      "critical_point": [
+        0.125,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        0,
+        32,
+        0,
+        64,
+        33,
+        65,
+        32,
+        97
+      ],
+      "degrees": [
+        1,
+        33,
+        33,
+        33,
+        33,
+        1,
+        0,
+        0
+      ],
+      "source_row": 978,
+      "source_degree_bounds": [
+        1,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        0
+      ],
+      "source_row_targets": [
+        97,
+        64,
+        66,
+        34,
+        33,
+        2,
+        36,
+        3
+      ],
+      "witness_polynomial_sha256": "463030fea5d4e7c1bdf3f5fd4a6ae81167e89d55d5c3d9eee63421dc9da54352",
+      "multiplicity": 1,
+      "catalogue_index": 664,
+      "minimum_relative_log_cost": 1.4772904458912084,
+      "relative_point": [
+        0.0625,
+        1.0,
+        [
+          0,
+          1,
+          31
+        ]
+      ],
+      "minimum_critical_pressure": 1.794675173146894,
+      "critical_point": [
+        0.125,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        0,
+        32,
+        0,
+        64,
+        33,
+        32,
+        65,
+        97
+      ],
+      "degrees": [
+        1,
+        1,
+        0,
+        33,
+        33,
+        1,
+        0,
+        0
+      ],
+      "source_row": 983,
+      "source_degree_bounds": [
+        1,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        0
+      ],
+      "source_row_targets": [
+        97,
+        64,
+        33,
+        67,
+        33,
+        2,
+        36,
+        3
+      ],
+      "witness_polynomial_sha256": "5295354804532dc00eeaa67e8c0e07a0d62bdcd5126da399a2687aad3e2251b3",
+      "multiplicity": 1,
+      "catalogue_index": 667,
+      "minimum_relative_log_cost": 1.4885581621140922,
+      "relative_point": [
+        0.0625,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "minimum_critical_pressure": 1.7940690383967652,
+      "critical_point": [
+        0.125,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        0,
+        33,
+        32,
+        65,
+        1,
+        65,
+        33,
+        97
+      ],
+      "degrees": [
+        32,
+        1,
+        32,
+        1,
+        33,
+        0,
+        33,
+        0
+      ],
+      "source_row": 1701,
+      "source_degree_bounds": [
+        32,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        0
+      ],
+      "source_row_targets": [
+        97,
+        65,
+        66,
+        35,
+        34,
+        34,
+        4,
+        3
+      ],
+      "witness_polynomial_sha256": "99a66e9e36c674173d6981beb74b9986c3932c4067703a3053e9c1148169b306",
+      "multiplicity": 1,
+      "catalogue_index": 1021,
+      "minimum_relative_log_cost": 1.5129096377777858,
+      "relative_point": [
+        0.0625,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "minimum_critical_pressure": 1.8693177885264394,
+      "critical_point": [
+        0.125,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        0,
+        32,
+        33,
+        65,
+        32,
+        1,
+        65,
+        97
+      ],
+      "degrees": [
+        32,
+        33,
+        1,
+        0,
+        33,
+        33,
+        0,
+        0
+      ],
+      "source_row": 1709,
+      "source_degree_bounds": [
+        32,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        0
+      ],
+      "source_row_targets": [
+        97,
+        65,
+        2,
+        67,
+        33,
+        35,
+        35,
+        3
+      ],
+      "witness_polynomial_sha256": "48837904013ca188bcb40e8f5291af4c2e67b2cbec4f7767a9c22a5323881899",
+      "multiplicity": 1,
+      "catalogue_index": 1025,
+      "minimum_relative_log_cost": 1.5635187669568271,
+      "relative_point": [
+        0.0625,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "minimum_critical_pressure": 1.9496030313540036,
+      "critical_point": [
+        0.125,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        0,
+        1,
+        33,
+        65,
+        32,
+        33,
+        65,
+        97
+      ],
+      "degrees": [
+        32,
+        33,
+        1,
+        0,
+        32,
+        33,
+        1,
+        0
+      ],
+      "source_row": 1715,
+      "source_degree_bounds": [
+        32,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        0
+      ],
+      "source_row_targets": [
+        97,
+        65,
+        34,
+        67,
+        2,
+        35,
+        35,
+        3
+      ],
+      "witness_polynomial_sha256": "c64d446e269d2760e592d8ceea66a3fe8e0cd454518e59d0e82311bdb485dfd3",
+      "multiplicity": 1,
+      "catalogue_index": 1029,
+      "minimum_relative_log_cost": 1.5619805149496049,
+      "relative_point": [
+        0.0625,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "minimum_critical_pressure": 1.9495212852624793,
+      "critical_point": [
+        0.125,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        0,
+        32,
+        32,
+        1,
+        33,
+        65,
+        65,
+        97
+      ],
+      "degrees": [
+        32,
+        33,
+        33,
+        33,
+        1,
+        0,
+        0,
+        0
+      ],
+      "source_row": 1716,
+      "source_degree_bounds": [
+        32,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        0
+      ],
+      "source_row_targets": [
+        97,
+        1,
+        66,
+        67,
+        33,
+        34,
+        36,
+        3
+      ],
+      "witness_polynomial_sha256": "43ee5b91ad78618a423d9dca5c689614a2ae3e118366253cf23d852abbb85e50",
+      "multiplicity": 1,
+      "catalogue_index": 1030,
+      "minimum_relative_log_cost": 1.5624007416266323,
+      "relative_point": [
+        0.0625,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "minimum_critical_pressure": 1.9422052768460052,
+      "critical_point": [
+        0.125,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        0,
+        33,
+        33,
+        64,
+        33,
+        64,
+        64,
+        97
+      ],
+      "degrees": [
+        33,
+        0,
+        0,
+        33,
+        0,
+        33,
+        33,
+        0
+      ],
+      "source_row": 2124,
+      "source_degree_bounds": [
+        33,
+        0,
+        0,
+        33,
+        0,
+        33,
+        33,
+        0
+      ],
+      "source_row_targets": [
+        97,
+        64,
+        65,
+        66,
+        34,
+        35,
+        36,
+        3
+      ],
+      "witness_polynomial_sha256": "d28b1c5b176f51af76843b50ab58cc31d51b21ef10be2d45876ff18b257b0d72",
+      "multiplicity": 20,
+      "catalogue_index": 1209,
+      "minimum_relative_log_cost": 1.5602536411084533,
+      "relative_point": [
+        0.0625,
+        -1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "minimum_critical_pressure": 1.974616206625095,
+      "critical_point": [
+        0.125,
+        0.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        0,
+        33,
+        32,
+        65,
+        32,
+        65,
+        64,
+        97
+      ],
+      "degrees": [
+        33,
+        0,
+        33,
+        0,
+        33,
+        0,
+        33,
+        0
+      ],
+      "source_row": 2338,
+      "source_degree_bounds": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        0
+      ],
+      "source_row_targets": [
+        97,
+        65,
+        66,
+        66,
+        34,
+        34,
+        35,
+        3
+      ],
+      "witness_polynomial_sha256": "5f69513c4408987aee50d300311feb6f97e0a655bccb503298c91cbcea25911e",
+      "multiplicity": 5,
+      "catalogue_index": 1273,
+      "minimum_relative_log_cost": 0.9078535362373374,
+      "relative_point": [
+        0.0625,
+        -1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "minimum_critical_pressure": 1.2937178442481851,
+      "critical_point": [
+        0.125,
+        0.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        0,
+        32,
+        32,
+        64,
+        33,
+        65,
+        65,
+        97
+      ],
+      "degrees": [
+        33,
+        33,
+        33,
+        33,
+        0,
+        0,
+        0,
+        0
+      ],
+      "source_row": 2341,
+      "source_degree_bounds": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        0
+      ],
+      "source_row_targets": [
+        97,
+        64,
+        66,
+        67,
+        33,
+        34,
+        36,
+        3
+      ],
+      "witness_polynomial_sha256": "9c70c81da3f52957c5ea8154e01e126e7456877de0a35608b838328794820a26",
+      "multiplicity": 5,
+      "catalogue_index": 1274,
+      "minimum_relative_log_cost": 0.7695840500677682,
+      "relative_point": [
+        0.0625,
+        -1.0,
+        [
+          0,
+          1,
+          17
+        ]
+      ],
+      "minimum_critical_pressure": 0.9686974994569004,
+      "critical_point": [
+        0.125,
+        0.0,
+        [
+          0,
+          1,
+          24
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        0,
+        32,
+        33,
+        65,
+        32,
+        64,
+        65,
+        97
+      ],
+      "degrees": [
+        33,
+        33,
+        0,
+        0,
+        33,
+        33,
+        0,
+        0
+      ],
+      "source_row": 2342,
+      "source_degree_bounds": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        0
+      ],
+      "source_row_targets": [
+        97,
+        65,
+        65,
+        67,
+        33,
+        35,
+        35,
+        3
+      ],
+      "witness_polynomial_sha256": "08163669396dbb50c7b77d668fc78b713faf1158b7952534b3b7c683f0ebc23f",
+      "multiplicity": 5,
+      "catalogue_index": 1275,
+      "minimum_relative_log_cost": 0.8369989328054648,
+      "relative_point": [
+        0.0625,
+        -1.0,
+        [
+          0,
+          1,
+          17
+        ]
+      ],
+      "minimum_critical_pressure": 1.1241431305300278,
+      "critical_point": [
+        0.125,
+        0.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        0,
+        32,
+        33,
+        65,
+        33,
+        65,
+        65,
+        97
+      ],
+      "degrees": [
+        64,
+        64,
+        33,
+        33,
+        33,
+        33,
+        0,
+        0
+      ],
+      "source_row": 2971,
+      "source_degree_bounds": [
+        64,
+        64,
+        64,
+        33,
+        64,
+        33,
+        33,
+        0
+      ],
+      "source_row_targets": [
+        97,
+        65,
+        66,
+        67,
+        33,
+        35,
+        36,
+        3
+      ],
+      "witness_polynomial_sha256": "188c8af7966c5ace0bad6310b3086c7b36086dcb3dcaaede2f6832acddf97c11",
+      "multiplicity": 4,
+      "catalogue_index": 1534,
+      "minimum_relative_log_cost": 1.5342317583462552,
+      "relative_point": [
+        0.0625,
+        -1.0,
+        [
+          0,
+          1,
+          4
+        ]
+      ],
+      "minimum_critical_pressure": 1.8570533261183897,
+      "critical_point": [
+        0.125,
+        0.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        0,
+        32,
+        0,
+        65,
+        32,
+        64,
+        65,
+        97
+      ],
+      "degrees": [
+        65,
+        1,
+        0,
+        0,
+        1,
+        33,
+        0,
+        0
+      ],
+      "source_row": 3277,
+      "source_degree_bounds": [
+        65,
+        1,
+        1,
+        33,
+        1,
+        33,
+        33,
+        0
+      ],
+      "source_row_targets": [
+        97,
+        65,
+        65,
+        67,
+        33,
+        2,
+        35,
+        3
+      ],
+      "witness_polynomial_sha256": "eb224c08f7328f73a213315b5d38db71246e010507efae524c70b792e322d9fa",
+      "multiplicity": 1,
+      "catalogue_index": 1676,
+      "minimum_relative_log_cost": 1.300797909060572,
+      "relative_point": [
+        0.0625,
+        1.0,
+        [
+          0,
+          1,
+          31
+        ]
+      ],
+      "minimum_critical_pressure": 1.7070572362847134,
+      "critical_point": [
+        0.125,
+        1.0,
+        [
+          0,
+          1,
+          31
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        0,
+        32,
+        33,
+        65,
+        33,
+        65,
+        65,
+        97
+      ],
+      "degrees": [
+        65,
+        65,
+        33,
+        33,
+        33,
+        33,
+        0,
+        0
+      ],
+      "source_row": 3495,
+      "source_degree_bounds": [
+        65,
+        65,
+        65,
+        33,
+        65,
+        33,
+        33,
+        0
+      ],
+      "source_row_targets": [
+        97,
+        65,
+        66,
+        67,
+        33,
+        35,
+        36,
+        3
+      ],
+      "witness_polynomial_sha256": "f0e55495e6615781e9560f6c7dd9a557cb99da4175a575f73b192a5c5f03dc7e",
+      "multiplicity": 1,
+      "catalogue_index": 1752,
+      "minimum_relative_log_cost": 1.5688256678281967,
+      "relative_point": [
+        0.0625,
+        -1.0,
+        [
+          0,
+          1,
+          3
+        ]
+      ],
+      "minimum_critical_pressure": 1.9325437726884367,
+      "critical_point": [
+        0.125,
+        0.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        0,
+        32,
+        32,
+        64,
+        32,
+        64,
+        64,
+        97
+      ],
+      "degrees": [
+        97,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "source_row": 3982,
+      "source_degree_bounds": [
+        97,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "source_row_targets": [
+        97,
+        64,
+        65,
+        66,
+        33,
+        34,
+        35,
+        3
+      ],
+      "witness_polynomial_sha256": "7cad2700d0eadc5a5211adfbceae82f32c9a8e85c3671bc6859ffd3ee7e1b543",
+      "multiplicity": 15,
+      "catalogue_index": 1924,
+      "minimum_relative_log_cost": 1.0514902958223669,
+      "relative_point": [
+        0.0625,
+        -1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "minimum_critical_pressure": 1.6702582387216438,
+      "critical_point": [
+        0.125,
+        0.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    }
+  ],
+  "elapsed_seconds": 4.5433449780002775,
+  "total_elapsed_seconds": 4.757164602000557
+}

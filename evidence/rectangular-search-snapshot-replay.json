@@ -1,0 +1,101 @@
+{
+  "status": "pass",
+  "scope": "Independent rerun of frozen floating points and all active orders. Exact field arithmetic and proved ranks are used; these are not rational pressure certificates or claims of global optimality.",
+  "cases": [
+    {
+      "M": 8,
+      "replayed_rho": 0.7201918203308846,
+      "rho_discrepancy": 0.0,
+      "maximum_profile_discrepancy": 0.0,
+      "entropy": 4.478711658961895,
+      "gradient_maximum": 0.0028045885558593527,
+      "active_matrix_orders": [
+        96,
+        384
+      ],
+      "profile_windows": [
+        512,
+        512
+      ],
+      "builder_windows": [
+        1024,
+        1024
+      ],
+      "known_below": [
+        939,
+        884
+      ],
+      "complete_numerators": [
+        true,
+        true
+      ]
+    },
+    {
+      "M": 16,
+      "replayed_rho": 0.7111834959686545,
+      "rho_discrepancy": 0.0,
+      "maximum_profile_discrepancy": 0.0,
+      "entropy": 7.9621126051896285,
+      "gradient_maximum": 0.00017144989576198326,
+      "active_matrix_orders": [
+        96,
+        384
+      ],
+      "profile_windows": [
+        512,
+        512
+      ],
+      "builder_windows": [
+        1024,
+        1024
+      ],
+      "known_below": [
+        851,
+        740
+      ],
+      "complete_numerators": [
+        true,
+        false
+      ]
+    },
+    {
+      "M": 32,
+      "replayed_rho": 0.708427390905704,
+      "rho_discrepancy": 0.0,
+      "maximum_profile_discrepancy": 0.0,
+      "entropy": 13.694301054953087,
+      "gradient_maximum": 0.0005509956132666321,
+      "active_matrix_orders": [
+        96,
+        384
+      ],
+      "profile_windows": [
+        512,
+        512
+      ],
+      "builder_windows": [
+        1024,
+        2048
+      ],
+      "known_below": [
+        675,
+        1476
+      ],
+      "complete_numerators": [
+        false,
+        false
+      ]
+    }
+  ],
+  "input_sha256": "e4029ae10a0042d538224833da7bccf95e3d71b99623d65486db7ecd372fc35d",
+  "source_sha256": {
+    "rectangular_defect_profiles.py": "68136bc784384843000e34fc247fb92d7f1ab590f1e4b6ffbfc87a66cc6016f7",
+    "rectangular_defect_coordinates.py": "38a5865aa7ce4d8fe38eb043ad744439c7288dd4cdd0190008ed1e307ff6f258",
+    "native_fock_f4.cpp": "e9c8a554b976a611e6f92b216eb309fd2dcb2bd2b1a7484500e0facccc24e197",
+    "native_matrix_smith_f4.py": "c08da20f1938a371b438e32fbc6a8f6766b48c2cfee5bcd1c956ce137dc70203",
+    "native_matrix_smith_f4.cpp": "5ec995cd04563c2fa99b69afd71bf476d5ca885f1f90377490c30e5a1a55f330",
+    "native_rectangular_smith_f4.cpp": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6",
+    "search_rectangular_core_pressure.py": "141ba3d1e57e02693dbce993d454037e57ae5a454e58854ee817d1b5a1c2d180",
+    "check_rectangular_search_snapshot.py": "134a226290602fb2b1d1b8eac301094275577abdf44d9089b78bd27567da38f3"
+  }
+}

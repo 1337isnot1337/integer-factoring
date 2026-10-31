@@ -1,0 +1,62 @@
+{
+  "status": "All controls passed using exact rational and binary-polynomial arithmetic.",
+  "source_baseline": "c2e951fa1f391edd97ba587d15ec13d3d6c8892d",
+  "scope": {
+    "uniform_proof": "Every homogeneous read-once XOR/AND filter is strictly worse than its Gaussian at |J|<=2n; every homogeneous degree-one filter has positive full pressure at all charges.",
+    "not_claimed": "No factoring exponent improvement; no general non-read-once degree bound; no all-charge degree>=2 obstruction."
+  },
+  "rational_gate_jacobian_controls": 784,
+  "enumerated_homogeneous_read_once_families": [
+    {
+      "modes": 1,
+      "distinct_polynomials": 1
+    },
+    {
+      "modes": 2,
+      "distinct_polynomials": 2
+    },
+    {
+      "modes": 3,
+      "distinct_polynomials": 5
+    },
+    {
+      "modes": 4,
+      "distinct_polynomials": 18
+    },
+    {
+      "modes": 5,
+      "distinct_polynomials": 97
+    }
+  ],
+  "recursive_vs_truth_probability_controls": 615,
+  "rational_common_shift_derivative_controls": 615,
+  "rational_interior_odds_controls": 2583,
+  "rational_interior_ratio_controls": 5166,
+  "complete_polynomial_transform_controls": 78,
+  "exact_filter_endpoint_equalities": 1014,
+  "independent_profile_ratio_controls": 78,
+  "exact_parity_product_controls": 225,
+  "rational_exterior_loss_cap_controls": 1800,
+  "strict_exterior_relative_gain": {
+    "n": 4,
+    "base_exp_t": [
+      17,
+      16
+    ],
+    "selected": [
+      0,
+      1,
+      2
+    ],
+    "charge": -100,
+    "Boolean_monomials": [
+      1,
+      2,
+      4
+    ],
+    "final_degree": 24,
+    "ratio_numerator": "24670735314125107595921312762953952813969719278133080728574588883723320487892860066474109106709265157752015312481742511887848184783497923834019547263806130514349182869847703425848646170999991218446346067630101579583934234793867325119013073796296614107802371746757416067881385841709205207921409704170376998739894160377722653444484274424448366199823668805234430828693",
+    "ratio_denominator": "26329720378516978891242246761993443956145254565551590696873425348068156533827095626687377741599166333496916126392902855070667861534559414467836978305888598524517923110480885118703720532810591169299790917378030084923446965394756212691654536324993449527586279681381062442899897160219253597486522733420567841910878129689158795602462529616261610856474041001596056240128",
+    "exact_comparison": "1/(1+exp(-t)) < ratio < 1; the exterior Gaussian floor makes the full pressure positive."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "exact_log_convexity_comparisons": 600,
+  "global_weighted_flag_comparisons": 600,
+  "prefix_minor_comparisons": 1800,
+  "rational_entropy_supports": 1800,
+  "sharp_elementary_control": {
+    "row_infinity_orders": [
+      -1,
+      0,
+      0,
+      1
+    ],
+    "column_zero_orders": [
+      0,
+      1,
+      1,
+      2
+    ],
+    "flag_probabilities": [
+      "9/16",
+      "3/16",
+      "3/16",
+      "1/16"
+    ],
+    "exact_global_product_floor": "256/27",
+    "equality_scale": 3
+  },
+  "scope": "Square full-rank polynomial matrices; positive valuation scale and arbitrary diagonal physical-energy maps.",
+  "factoring_exponent": "1/2; unchanged",
+  "source_sha256": "46d693d6365cff31901fe09eec929c4ca7abb68f29f4fa1a534fdbbdef85a3c1"
+}

@@ -1,0 +1,702 @@
+{
+  "status": "Exact complete affine operator compilation controls; no pressure claim.",
+  "two_cut_controls": [
+    {
+      "n": 3,
+      "ramification": 1,
+      "modes": 2,
+      "geometry": "initial",
+      "colors": [
+        1,
+        3,
+        0,
+        1
+      ]
+    },
+    {
+      "n": 3,
+      "ramification": 1,
+      "modes": 2,
+      "geometry": "initial",
+      "colors": [
+        2,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "n": 3,
+      "ramification": 1,
+      "modes": 2,
+      "geometry": "initial",
+      "colors": [
+        3,
+        0,
+        2,
+        2
+      ]
+    },
+    {
+      "n": 3,
+      "ramification": 1,
+      "modes": 2,
+      "geometry": "initial",
+      "colors": [
+        1,
+        0,
+        2,
+        2
+      ]
+    },
+    {
+      "n": 3,
+      "ramification": 1,
+      "modes": 2,
+      "geometry": "initial",
+      "colors": [
+        1,
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "n": 3,
+      "ramification": 1,
+      "modes": 2,
+      "geometry": "initial",
+      "colors": [
+        2,
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "n": 3,
+      "ramification": 1,
+      "modes": 2,
+      "geometry": "initial",
+      "colors": [
+        0,
+        1,
+        3,
+        1
+      ]
+    },
+    {
+      "n": 3,
+      "ramification": 1,
+      "modes": 2,
+      "geometry": "initial",
+      "colors": [
+        1,
+        0,
+        0,
+        3
+      ]
+    },
+    {
+      "n": 3,
+      "ramification": 1,
+      "modes": 2,
+      "geometry": "initial",
+      "colors": [
+        1,
+        2,
+        1,
+        3
+      ]
+    },
+    {
+      "n": 3,
+      "ramification": 1,
+      "modes": 2,
+      "geometry": "initial",
+      "colors": [
+        2,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "n": 3,
+      "ramification": 1,
+      "modes": 2,
+      "geometry": "initial",
+      "colors": [
+        1,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "n": 3,
+      "ramification": 1,
+      "modes": 2,
+      "geometry": "initial",
+      "colors": [
+        3,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "n": 8,
+      "ramification": 3,
+      "modes": 2,
+      "geometry": "mixed",
+      "colors": [
+        2,
+        1,
+        3,
+        3
+      ]
+    },
+    {
+      "n": 8,
+      "ramification": 3,
+      "modes": 2,
+      "geometry": "mixed",
+      "colors": [
+        0,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "n": 8,
+      "ramification": 3,
+      "modes": 2,
+      "geometry": "mixed",
+      "colors": [
+        0,
+        3,
+        1,
+        2
+      ]
+    },
+    {
+      "n": 8,
+      "ramification": 3,
+      "modes": 2,
+      "geometry": "mixed",
+      "colors": [
+        0,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "n": 8,
+      "ramification": 3,
+      "modes": 2,
+      "geometry": "mixed",
+      "colors": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "n": 8,
+      "ramification": 3,
+      "modes": 2,
+      "geometry": "mixed",
+      "colors": [
+        2,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "n": 8,
+      "ramification": 3,
+      "modes": 2,
+      "geometry": "mixed",
+      "colors": [
+        0,
+        2,
+        1,
+        3
+      ]
+    },
+    {
+      "n": 8,
+      "ramification": 3,
+      "modes": 2,
+      "geometry": "mixed",
+      "colors": [
+        2,
+        0,
+        3,
+        3
+      ]
+    },
+    {
+      "n": 8,
+      "ramification": 3,
+      "modes": 2,
+      "geometry": "mixed",
+      "colors": [
+        0,
+        0,
+        3,
+        1
+      ]
+    },
+    {
+      "n": 8,
+      "ramification": 3,
+      "modes": 2,
+      "geometry": "mixed",
+      "colors": [
+        1,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "n": 8,
+      "ramification": 3,
+      "modes": 2,
+      "geometry": "mixed",
+      "colors": [
+        2,
+        3,
+        0,
+        3
+      ]
+    },
+    {
+      "n": 8,
+      "ramification": 3,
+      "modes": 2,
+      "geometry": "mixed",
+      "colors": [
+        1,
+        1,
+        3,
+        3
+      ]
+    },
+    {
+      "n": 4,
+      "ramification": 1,
+      "modes": 3,
+      "geometry": "terminal",
+      "colors": [
+        3,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "n": 4,
+      "ramification": 1,
+      "modes": 3,
+      "geometry": "terminal",
+      "colors": [
+        0,
+        3,
+        2,
+        2,
+        2,
+        0,
+        3,
+        1,
+        2
+      ]
+    },
+    {
+      "n": 4,
+      "ramification": 1,
+      "modes": 3,
+      "geometry": "terminal",
+      "colors": [
+        2,
+        2,
+        1,
+        2,
+        2,
+        0,
+        3,
+        2,
+        2
+      ]
+    },
+    {
+      "n": 4,
+      "ramification": 1,
+      "modes": 3,
+      "geometry": "terminal",
+      "colors": [
+        3,
+        2,
+        1,
+        3,
+        0,
+        2,
+        0,
+        0,
+        3
+      ]
+    },
+    {
+      "n": 4,
+      "ramification": 1,
+      "modes": 3,
+      "geometry": "terminal",
+      "colors": [
+        3,
+        1,
+        1,
+        3,
+        2,
+        0,
+        3,
+        1,
+        2
+      ]
+    },
+    {
+      "n": 4,
+      "ramification": 1,
+      "modes": 3,
+      "geometry": "terminal",
+      "colors": [
+        0,
+        2,
+        2,
+        3,
+        3,
+        0,
+        2,
+        2,
+        3
+      ]
+    },
+    {
+      "n": 4,
+      "ramification": 1,
+      "modes": 3,
+      "geometry": "terminal",
+      "colors": [
+        3,
+        2,
+        2,
+        1,
+        2,
+        1,
+        1,
+        3,
+        3
+      ]
+    },
+    {
+      "n": 4,
+      "ramification": 1,
+      "modes": 3,
+      "geometry": "terminal",
+      "colors": [
+        1,
+        0,
+        1,
+        3,
+        1,
+        2,
+        3,
+        2,
+        2
+      ]
+    },
+    {
+      "n": 4,
+      "ramification": 1,
+      "modes": 3,
+      "geometry": "terminal",
+      "colors": [
+        3,
+        0,
+        2,
+        1,
+        2,
+        0,
+        3,
+        1,
+        2
+      ]
+    },
+    {
+      "n": 4,
+      "ramification": 1,
+      "modes": 3,
+      "geometry": "terminal",
+      "colors": [
+        0,
+        1,
+        2,
+        1,
+        1,
+        2,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "n": 4,
+      "ramification": 1,
+      "modes": 3,
+      "geometry": "terminal",
+      "colors": [
+        3,
+        2,
+        3,
+        2,
+        3,
+        3,
+        3,
+        0,
+        0
+      ]
+    },
+    {
+      "n": 4,
+      "ramification": 1,
+      "modes": 3,
+      "geometry": "terminal",
+      "colors": [
+        3,
+        3,
+        1,
+        1,
+        1,
+        0,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "n": 8,
+      "ramification": 1,
+      "modes": 3,
+      "geometry": "initial",
+      "colors": [
+        1,
+        0,
+        3,
+        3,
+        2,
+        1,
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "n": 8,
+      "ramification": 1,
+      "modes": 3,
+      "geometry": "initial",
+      "colors": [
+        3,
+        1,
+        2,
+        0,
+        2,
+        2,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "n": 8,
+      "ramification": 1,
+      "modes": 3,
+      "geometry": "initial",
+      "colors": [
+        1,
+        0,
+        2,
+        3,
+        0,
+        0,
+        3,
+        0,
+        0
+      ]
+    },
+    {
+      "n": 8,
+      "ramification": 1,
+      "modes": 3,
+      "geometry": "initial",
+      "colors": [
+        0,
+        2,
+        0,
+        0,
+        1,
+        3,
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "n": 8,
+      "ramification": 1,
+      "modes": 3,
+      "geometry": "initial",
+      "colors": [
+        2,
+        0,
+        2,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "n": 8,
+      "ramification": 1,
+      "modes": 3,
+      "geometry": "initial",
+      "colors": [
+        2,
+        0,
+        0,
+        3,
+        3,
+        3,
+        1,
+        3,
+        3
+      ]
+    },
+    {
+      "n": 8,
+      "ramification": 1,
+      "modes": 3,
+      "geometry": "initial",
+      "colors": [
+        3,
+        0,
+        3,
+        1,
+        3,
+        3,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "n": 8,
+      "ramification": 1,
+      "modes": 3,
+      "geometry": "initial",
+      "colors": [
+        2,
+        1,
+        2,
+        1,
+        2,
+        3,
+        2,
+        2,
+        3
+      ]
+    },
+    {
+      "n": 8,
+      "ramification": 1,
+      "modes": 3,
+      "geometry": "initial",
+      "colors": [
+        2,
+        3,
+        1,
+        0,
+        1,
+        0,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "n": 8,
+      "ramification": 1,
+      "modes": 3,
+      "geometry": "initial",
+      "colors": [
+        3,
+        3,
+        0,
+        2,
+        3,
+        0,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "n": 8,
+      "ramification": 1,
+      "modes": 3,
+      "geometry": "initial",
+      "colors": [
+        2,
+        0,
+        0,
+        2,
+        3,
+        3,
+        3,
+        3,
+        2
+      ]
+    },
+    {
+      "n": 8,
+      "ramification": 1,
+      "modes": 3,
+      "geometry": "initial",
+      "colors": [
+        0,
+        3,
+        0,
+        2,
+        0,
+        3,
+        1,
+        0,
+        2
+      ]
+    }
+  ],
+  "late_second_plane_degree": 600
+}

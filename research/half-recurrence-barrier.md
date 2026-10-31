@@ -9,9 +9,9 @@ and its explicit operator identities.
 
 The evaluator source is `anthropics/formal-math` at
 [`16a5ce41304fcdaea4e0be7c132e1c361dc26da5`](https://github.com/anthropics/formal-math/tree/16a5ce41304fcdaea4e0be7c132e1c361dc26da5/eth).
-The active [factoring composition in PR #19](https://github.com/1337isnot1337/integer-factoring/pull/19)
-uses its exponent `1/2`. This note does not duplicate that composition or
-change the separate Lean-certified exponent `1/30`.
+The [complete factoring composition](half-rate-factoring.md) uses its
+exponent `1/2`, now certified by the [Lean endpoint](../formal-appendix/HalfTheorem.lean).
+This note gives restrictions on modifications of that evaluator.
 
 The arguments below are ordinary proofs. The accompanying Python program
 checks finite examples of the operator obstruction with exact integers.

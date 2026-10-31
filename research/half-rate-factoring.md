@@ -282,7 +282,9 @@ of `sqrt(log n)` for large `n`. Choose an integer `C` large enough to
 absorb the fixed runtime constants and a factor two for rounding the
 exponent down. Increase `C` again to cover the finite fallback and every
 small input length. Thus the ordinary argument also proves that exact
-integer-bound form. It has not produced a Lean term of that proposition.
+integer-bound form. The complete Lean term is
+[`IntegerFactoring.HalfAppendix.sqrtLogLog_factoring`](../formal-appendix/HalfTheorem.lean),
+which proves the exact pinned source proposition.
 
 For the leaderboard, for every fixed `epsilon>0`, (1) is eventually at
 most

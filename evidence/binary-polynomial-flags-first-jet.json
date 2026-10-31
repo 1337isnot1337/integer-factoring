@@ -1,0 +1,2106 @@
+{
+  "status": "Finite exact nonconstant regular-flag synthesis; no factoring improvement claimed.",
+  "source_sha256": "75ca2a7954fe42c409707560265c3c50fbef7c1d2ae6a732aa99cacb10080b75",
+  "degree": 12,
+  "baseline_shift": 4,
+  "height_ray": [
+    0,
+    0,
+    -1,
+    -1,
+    -1,
+    -1,
+    0,
+    0
+  ],
+  "jet_power": 1,
+  "field_order": 4,
+  "frames_per_cut": 4096,
+  "catalogue": "I + z^jet_power N, all strictly lower triangular N",
+  "target_count": 59,
+  "targets": [
+    [
+      5,
+      8,
+      10,
+      13,
+      5,
+      8,
+      10,
+      13
+    ],
+    [
+      5,
+      5,
+      10,
+      13,
+      8,
+      8,
+      10,
+      13
+    ],
+    [
+      5,
+      6,
+      10,
+      13,
+      7,
+      8,
+      10,
+      13
+    ],
+    [
+      5,
+      7,
+      10,
+      13,
+      6,
+      8,
+      10,
+      13
+    ],
+    [
+      5,
+      8,
+      8,
+      13,
+      5,
+      10,
+      10,
+      13
+    ],
+    [
+      5,
+      8,
+      8,
+      13,
+      7,
+      8,
+      10,
+      13
+    ],
+    [
+      5,
+      8,
+      9,
+      13,
+      5,
+      9,
+      10,
+      13
+    ],
+    [
+      5,
+      8,
+      9,
+      13,
+      6,
+      8,
+      10,
+      13
+    ],
+    [
+      5,
+      8,
+      10,
+      10,
+      5,
+      8,
+      13,
+      13
+    ],
+    [
+      5,
+      8,
+      10,
+      10,
+      8,
+      8,
+      10,
+      13
+    ],
+    [
+      5,
+      8,
+      10,
+      11,
+      5,
+      8,
+      12,
+      13
+    ],
+    [
+      5,
+      8,
+      10,
+      11,
+      5,
+      10,
+      10,
+      13
+    ],
+    [
+      5,
+      8,
+      10,
+      11,
+      7,
+      8,
+      10,
+      13
+    ],
+    [
+      5,
+      8,
+      10,
+      12,
+      5,
+      8,
+      11,
+      13
+    ],
+    [
+      5,
+      8,
+      10,
+      12,
+      5,
+      9,
+      10,
+      13
+    ],
+    [
+      5,
+      8,
+      10,
+      12,
+      6,
+      8,
+      10,
+      13
+    ],
+    [
+      5,
+      8,
+      10,
+      13,
+      5,
+      8,
+      10,
+      14
+    ],
+    [
+      5,
+      8,
+      10,
+      13,
+      5,
+      8,
+      11,
+      12
+    ],
+    [
+      5,
+      8,
+      10,
+      13,
+      5,
+      8,
+      11,
+      13
+    ],
+    [
+      5,
+      8,
+      10,
+      13,
+      5,
+      9,
+      9,
+      13
+    ],
+    [
+      5,
+      8,
+      10,
+      13,
+      5,
+      9,
+      10,
+      12
+    ],
+    [
+      5,
+      8,
+      10,
+      13,
+      5,
+      9,
+      10,
+      13
+    ],
+    [
+      5,
+      8,
+      10,
+      13,
+      5,
+      10,
+      10,
+      11
+    ],
+    [
+      5,
+      8,
+      10,
+      13,
+      6,
+      7,
+      10,
+      13
+    ],
+    [
+      5,
+      8,
+      10,
+      13,
+      6,
+      8,
+      9,
+      13
+    ],
+    [
+      5,
+      8,
+      10,
+      13,
+      6,
+      8,
+      10,
+      12
+    ],
+    [
+      5,
+      8,
+      10,
+      13,
+      6,
+      8,
+      10,
+      13
+    ],
+    [
+      5,
+      8,
+      10,
+      13,
+      7,
+      8,
+      8,
+      13
+    ],
+    [
+      5,
+      8,
+      10,
+      13,
+      7,
+      8,
+      10,
+      11
+    ],
+    [
+      5,
+      8,
+      10,
+      13,
+      8,
+      8,
+      10,
+      10
+    ],
+    [
+      5,
+      8,
+      10,
+      14,
+      5,
+      8,
+      10,
+      13
+    ],
+    [
+      5,
+      8,
+      11,
+      12,
+      5,
+      8,
+      10,
+      13
+    ],
+    [
+      5,
+      8,
+      11,
+      13,
+      5,
+      8,
+      10,
+      12
+    ],
+    [
+      5,
+      8,
+      11,
+      13,
+      5,
+      8,
+      10,
+      13
+    ],
+    [
+      5,
+      8,
+      12,
+      13,
+      5,
+      8,
+      10,
+      11
+    ],
+    [
+      5,
+      8,
+      13,
+      13,
+      5,
+      8,
+      10,
+      10
+    ],
+    [
+      5,
+      9,
+      9,
+      13,
+      5,
+      8,
+      10,
+      13
+    ],
+    [
+      5,
+      9,
+      10,
+      12,
+      5,
+      8,
+      10,
+      13
+    ],
+    [
+      5,
+      9,
+      10,
+      13,
+      5,
+      8,
+      9,
+      13
+    ],
+    [
+      5,
+      9,
+      10,
+      13,
+      5,
+      8,
+      10,
+      12
+    ],
+    [
+      5,
+      9,
+      10,
+      13,
+      5,
+      8,
+      10,
+      13
+    ],
+    [
+      5,
+      10,
+      10,
+      11,
+      5,
+      8,
+      10,
+      13
+    ],
+    [
+      5,
+      10,
+      10,
+      13,
+      5,
+      8,
+      8,
+      13
+    ],
+    [
+      5,
+      10,
+      10,
+      13,
+      5,
+      8,
+      10,
+      11
+    ],
+    [
+      6,
+      7,
+      10,
+      13,
+      5,
+      8,
+      10,
+      13
+    ],
+    [
+      6,
+      8,
+      9,
+      13,
+      5,
+      8,
+      10,
+      13
+    ],
+    [
+      6,
+      8,
+      10,
+      12,
+      5,
+      8,
+      10,
+      13
+    ],
+    [
+      6,
+      8,
+      10,
+      13,
+      5,
+      7,
+      10,
+      13
+    ],
+    [
+      6,
+      8,
+      10,
+      13,
+      5,
+      8,
+      9,
+      13
+    ],
+    [
+      6,
+      8,
+      10,
+      13,
+      5,
+      8,
+      10,
+      12
+    ],
+    [
+      6,
+      8,
+      10,
+      13,
+      5,
+      8,
+      10,
+      13
+    ],
+    [
+      7,
+      8,
+      8,
+      13,
+      5,
+      8,
+      10,
+      13
+    ],
+    [
+      7,
+      8,
+      10,
+      11,
+      5,
+      8,
+      10,
+      13
+    ],
+    [
+      7,
+      8,
+      10,
+      13,
+      5,
+      6,
+      10,
+      13
+    ],
+    [
+      7,
+      8,
+      10,
+      13,
+      5,
+      8,
+      8,
+      13
+    ],
+    [
+      7,
+      8,
+      10,
+      13,
+      5,
+      8,
+      10,
+      11
+    ],
+    [
+      8,
+      8,
+      10,
+      10,
+      5,
+      8,
+      10,
+      13
+    ],
+    [
+      8,
+      8,
+      10,
+      13,
+      5,
+      5,
+      10,
+      13
+    ],
+    [
+      8,
+      8,
+      10,
+      13,
+      5,
+      8,
+      10,
+      10
+    ]
+  ],
+  "variants": [
+    {
+      "target": [
+        5,
+        8,
+        10,
+        13,
+        5,
+        8,
+        10,
+        13
+      ],
+      "common_rank": 128,
+      "single_cut_survivors": [
+        21,
+        21
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 441,
+      "feasible_pairs": 1,
+      "samples_checked": 4
+    },
+    {
+      "target": [
+        5,
+        5,
+        10,
+        13,
+        8,
+        8,
+        10,
+        13
+      ],
+      "common_rank": null,
+      "single_cut_survivors": [
+        0,
+        0
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        5,
+        6,
+        10,
+        13,
+        7,
+        8,
+        10,
+        13
+      ],
+      "common_rank": 160,
+      "single_cut_survivors": [
+        0,
+        0
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        5,
+        7,
+        10,
+        13,
+        6,
+        8,
+        10,
+        13
+      ],
+      "common_rank": 144,
+      "single_cut_survivors": [
+        0,
+        0
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        5,
+        8,
+        8,
+        13,
+        5,
+        10,
+        10,
+        13
+      ],
+      "common_rank": 128,
+      "single_cut_survivors": [
+        506,
+        0
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        5,
+        8,
+        8,
+        13,
+        7,
+        8,
+        10,
+        13
+      ],
+      "common_rank": 160,
+      "single_cut_survivors": [
+        0,
+        0
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        5,
+        8,
+        9,
+        13,
+        5,
+        9,
+        10,
+        13
+      ],
+      "common_rank": 128,
+      "single_cut_survivors": [
+        208,
+        0
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        5,
+        8,
+        9,
+        13,
+        6,
+        8,
+        10,
+        13
+      ],
+      "common_rank": 144,
+      "single_cut_survivors": [
+        0,
+        0
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        5,
+        8,
+        10,
+        10,
+        5,
+        8,
+        13,
+        13
+      ],
+      "common_rank": 128,
+      "single_cut_survivors": [
+        1232,
+        0
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        5,
+        8,
+        10,
+        10,
+        8,
+        8,
+        10,
+        13
+      ],
+      "common_rank": null,
+      "single_cut_survivors": [
+        0,
+        0
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        5,
+        8,
+        10,
+        11,
+        5,
+        8,
+        12,
+        13
+      ],
+      "common_rank": 128,
+      "single_cut_survivors": [
+        328,
+        0
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        5,
+        8,
+        10,
+        11,
+        5,
+        10,
+        10,
+        13
+      ],
+      "common_rank": 128,
+      "single_cut_survivors": [
+        328,
+        0
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        5,
+        8,
+        10,
+        11,
+        7,
+        8,
+        10,
+        13
+      ],
+      "common_rank": 160,
+      "single_cut_survivors": [
+        0,
+        0
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        5,
+        8,
+        10,
+        12,
+        5,
+        8,
+        11,
+        13
+      ],
+      "common_rank": 128,
+      "single_cut_survivors": [
+        96,
+        0
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        5,
+        8,
+        10,
+        12,
+        5,
+        9,
+        10,
+        13
+      ],
+      "common_rank": 128,
+      "single_cut_survivors": [
+        96,
+        0
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        5,
+        8,
+        10,
+        12,
+        6,
+        8,
+        10,
+        13
+      ],
+      "common_rank": 144,
+      "single_cut_survivors": [
+        0,
+        0
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        5,
+        8,
+        10,
+        13,
+        5,
+        8,
+        10,
+        14
+      ],
+      "common_rank": 128,
+      "single_cut_survivors": [
+        21,
+        0
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        5,
+        8,
+        10,
+        13,
+        5,
+        8,
+        11,
+        12
+      ],
+      "common_rank": 128,
+      "single_cut_survivors": [
+        21,
+        5
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 105,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        5,
+        8,
+        10,
+        13,
+        5,
+        8,
+        11,
+        13
+      ],
+      "common_rank": 128,
+      "single_cut_survivors": [
+        21,
+        0
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        5,
+        8,
+        10,
+        13,
+        5,
+        9,
+        9,
+        13
+      ],
+      "common_rank": 128,
+      "single_cut_survivors": [
+        21,
+        7
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 147,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        5,
+        8,
+        10,
+        13,
+        5,
+        9,
+        10,
+        12
+      ],
+      "common_rank": 128,
+      "single_cut_survivors": [
+        21,
+        0
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        5,
+        8,
+        10,
+        13,
+        5,
+        9,
+        10,
+        13
+      ],
+      "common_rank": 128,
+      "single_cut_survivors": [
+        21,
+        0
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        5,
+        8,
+        10,
+        13,
+        5,
+        10,
+        10,
+        11
+      ],
+      "common_rank": 128,
+      "single_cut_survivors": [
+        21,
+        0
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        5,
+        8,
+        10,
+        13,
+        6,
+        7,
+        10,
+        13
+      ],
+      "common_rank": 144,
+      "single_cut_survivors": [
+        0,
+        20
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        5,
+        8,
+        10,
+        13,
+        6,
+        8,
+        9,
+        13
+      ],
+      "common_rank": 144,
+      "single_cut_survivors": [
+        0,
+        12
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        5,
+        8,
+        10,
+        13,
+        6,
+        8,
+        10,
+        12
+      ],
+      "common_rank": 144,
+      "single_cut_survivors": [
+        0,
+        0
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        5,
+        8,
+        10,
+        13,
+        6,
+        8,
+        10,
+        13
+      ],
+      "common_rank": 144,
+      "single_cut_survivors": [
+        0,
+        0
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        5,
+        8,
+        10,
+        13,
+        7,
+        8,
+        8,
+        13
+      ],
+      "common_rank": 160,
+      "single_cut_survivors": [
+        0,
+        0
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        5,
+        8,
+        10,
+        13,
+        7,
+        8,
+        10,
+        11
+      ],
+      "common_rank": 160,
+      "single_cut_survivors": [
+        0,
+        0
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        5,
+        8,
+        10,
+        13,
+        8,
+        8,
+        10,
+        10
+      ],
+      "common_rank": null,
+      "single_cut_survivors": [
+        0,
+        0
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        5,
+        8,
+        10,
+        14,
+        5,
+        8,
+        10,
+        13
+      ],
+      "common_rank": 128,
+      "single_cut_survivors": [
+        0,
+        21
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        5,
+        8,
+        11,
+        12,
+        5,
+        8,
+        10,
+        13
+      ],
+      "common_rank": 128,
+      "single_cut_survivors": [
+        5,
+        21
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 105,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        5,
+        8,
+        11,
+        13,
+        5,
+        8,
+        10,
+        12
+      ],
+      "common_rank": 128,
+      "single_cut_survivors": [
+        0,
+        96
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        5,
+        8,
+        11,
+        13,
+        5,
+        8,
+        10,
+        13
+      ],
+      "common_rank": 128,
+      "single_cut_survivors": [
+        0,
+        21
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        5,
+        8,
+        12,
+        13,
+        5,
+        8,
+        10,
+        11
+      ],
+      "common_rank": 128,
+      "single_cut_survivors": [
+        0,
+        328
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        5,
+        8,
+        13,
+        13,
+        5,
+        8,
+        10,
+        10
+      ],
+      "common_rank": 128,
+      "single_cut_survivors": [
+        0,
+        1232
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        5,
+        9,
+        9,
+        13,
+        5,
+        8,
+        10,
+        13
+      ],
+      "common_rank": 128,
+      "single_cut_survivors": [
+        7,
+        21
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 147,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        5,
+        9,
+        10,
+        12,
+        5,
+        8,
+        10,
+        13
+      ],
+      "common_rank": 128,
+      "single_cut_survivors": [
+        0,
+        21
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        5,
+        9,
+        10,
+        13,
+        5,
+        8,
+        9,
+        13
+      ],
+      "common_rank": 128,
+      "single_cut_survivors": [
+        0,
+        208
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        5,
+        9,
+        10,
+        13,
+        5,
+        8,
+        10,
+        12
+      ],
+      "common_rank": 128,
+      "single_cut_survivors": [
+        0,
+        96
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        5,
+        9,
+        10,
+        13,
+        5,
+        8,
+        10,
+        13
+      ],
+      "common_rank": 128,
+      "single_cut_survivors": [
+        0,
+        21
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        5,
+        10,
+        10,
+        11,
+        5,
+        8,
+        10,
+        13
+      ],
+      "common_rank": 128,
+      "single_cut_survivors": [
+        0,
+        21
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        5,
+        10,
+        10,
+        13,
+        5,
+        8,
+        8,
+        13
+      ],
+      "common_rank": 128,
+      "single_cut_survivors": [
+        0,
+        506
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        5,
+        10,
+        10,
+        13,
+        5,
+        8,
+        10,
+        11
+      ],
+      "common_rank": 128,
+      "single_cut_survivors": [
+        0,
+        328
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        6,
+        7,
+        10,
+        13,
+        5,
+        8,
+        10,
+        13
+      ],
+      "common_rank": 144,
+      "single_cut_survivors": [
+        20,
+        0
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        6,
+        8,
+        9,
+        13,
+        5,
+        8,
+        10,
+        13
+      ],
+      "common_rank": 144,
+      "single_cut_survivors": [
+        12,
+        0
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        6,
+        8,
+        10,
+        12,
+        5,
+        8,
+        10,
+        13
+      ],
+      "common_rank": 144,
+      "single_cut_survivors": [
+        0,
+        0
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        6,
+        8,
+        10,
+        13,
+        5,
+        7,
+        10,
+        13
+      ],
+      "common_rank": 144,
+      "single_cut_survivors": [
+        0,
+        0
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        6,
+        8,
+        10,
+        13,
+        5,
+        8,
+        9,
+        13
+      ],
+      "common_rank": 144,
+      "single_cut_survivors": [
+        0,
+        0
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        6,
+        8,
+        10,
+        13,
+        5,
+        8,
+        10,
+        12
+      ],
+      "common_rank": 144,
+      "single_cut_survivors": [
+        0,
+        0
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        6,
+        8,
+        10,
+        13,
+        5,
+        8,
+        10,
+        13
+      ],
+      "common_rank": 144,
+      "single_cut_survivors": [
+        0,
+        0
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        7,
+        8,
+        8,
+        13,
+        5,
+        8,
+        10,
+        13
+      ],
+      "common_rank": 160,
+      "single_cut_survivors": [
+        0,
+        0
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        7,
+        8,
+        10,
+        11,
+        5,
+        8,
+        10,
+        13
+      ],
+      "common_rank": 160,
+      "single_cut_survivors": [
+        0,
+        0
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        7,
+        8,
+        10,
+        13,
+        5,
+        6,
+        10,
+        13
+      ],
+      "common_rank": 160,
+      "single_cut_survivors": [
+        0,
+        0
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        7,
+        8,
+        10,
+        13,
+        5,
+        8,
+        8,
+        13
+      ],
+      "common_rank": 160,
+      "single_cut_survivors": [
+        0,
+        0
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        7,
+        8,
+        10,
+        13,
+        5,
+        8,
+        10,
+        11
+      ],
+      "common_rank": 160,
+      "single_cut_survivors": [
+        0,
+        0
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        8,
+        8,
+        10,
+        10,
+        5,
+        8,
+        10,
+        13
+      ],
+      "common_rank": null,
+      "single_cut_survivors": [
+        0,
+        0
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        8,
+        8,
+        10,
+        13,
+        5,
+        5,
+        10,
+        13
+      ],
+      "common_rank": null,
+      "single_cut_survivors": [
+        0,
+        0
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    },
+    {
+      "target": [
+        8,
+        8,
+        10,
+        13,
+        5,
+        8,
+        10,
+        10
+      ],
+      "common_rank": null,
+      "single_cut_survivors": [
+        0,
+        0
+      ],
+      "pairs_decided": 16777216,
+      "pair_intersections": 0,
+      "feasible_pairs": 0,
+      "samples_checked": 0
+    }
+  ],
+  "witnesses": [
+    {
+      "values": [
+        [
+          496,
+          272
+        ],
+        [
+          1008,
+          528
+        ],
+        [
+          240,
+          272
+        ],
+        [
+          480,
+          544
+        ],
+        [
+          480,
+          272
+        ],
+        [
+          480,
+          272
+        ],
+        [
+          224,
+          272
+        ],
+        [
+          192,
+          288
+        ],
+        [
+          240,
+          0
+        ],
+        [
+          496,
+          0
+        ],
+        [
+          240,
+          0
+        ],
+        [
+          480,
+          0
+        ],
+        [
+          240,
+          0
+        ],
+        [
+          240,
+          0
+        ],
+        [
+          240,
+          0
+        ],
+        [
+          224,
+          0
+        ]
+      ],
+      "profiles": [
+        [
+          -9,
+          -6,
+          -4,
+          -1
+        ],
+        [
+          3,
+          6,
+          8,
+          11
+        ]
+      ],
+      "target": [
+        5,
+        8,
+        10,
+        13,
+        5,
+        8,
+        10,
+        13
+      ],
+      "frames": [
+        [
+          [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        ]
+      ],
+      "frame_indices": [
+        0,
+        0
+      ],
+      "affine_dimension": 1,
+      "fixed_ray_rho": 0.8040228106511368
+    }
+  ],
+  "completed": true,
+  "elapsed_seconds": 166.7997769929998
+}

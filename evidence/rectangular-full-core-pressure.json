@@ -1,0 +1,50 @@
+{
+  "status": "pass",
+  "scope": "1 generic M4 points; independent full-tensor Gibbs roots and all 25 core/charge derivatives. Floating controls do not certify a new bound or a global optimum.",
+  "full_core": true,
+  "cases": [
+    {
+      "parameters": [
+        0.1866726508976257,
+        -0.1410799951880749,
+        -0.099891301304075,
+        0.14372875351691533,
+        0.18430610672314668,
+        0.03308970324727217,
+        -0.0011724051546418424,
+        -0.1627878051252654,
+        -0.1563449420349575,
+        -0.11963382572631041,
+        -0.09268380649511922,
+        -0.02606328411436981,
+        -0.13372403064106264,
+        0.0067262686397267235,
+        -0.18857191850637822,
+        -0.017906443054550636,
+        -0.01980482520352647,
+        0.08981420948194019,
+        0.13199842856662164,
+        -0.18306292938391389,
+        0.05361015359773591,
+        -0.12468904970148692,
+        -0.1780449940228942,
+        0.15959322210195898,
+        0.13
+      ],
+      "reduced_rho": 0.9181985077189803,
+      "full_rho": 0.9181985077189805,
+      "pressure_error": 2.220446049250313e-16,
+      "derivative_coordinates": 25,
+      "maximum_derivative_error": 1.4413635779711442e-10,
+      "entropy": 5.111209004824697
+    }
+  ],
+  "source_sha256": {
+    "rectangular_defect_profiles.py": "4031487611bda7aff420588ec0764b4807eb81cf088f3256fbc3ccc448beb9d0",
+    "rectangular_defect_coordinates.py": "6d59daa96e4fc806e295e5ffcedb09bccffed1f0d4dc9989c68a25a0253b8758",
+    "native_fock_f4.cpp": "e9c8a554b976a611e6f92b216eb309fd2dcb2bd2b1a7484500e0facccc24e197",
+    "search_rectangular_defect_pressure.py": "eac1476dfeaf50f6fa2a28249b772e3276337bd22a6317d499ffc8538abe216e",
+    "search_rectangular_core_pressure.py": "c01f50ee0aa8298b0720b58700e866f06cfb3128716eed6a7db3541d75f4c684",
+    "check_rectangular_core_pressure.py": "385ba1453d75b398c6f453aa5bb3ec7461294283efe9f094049d51f2a2db57aa"
+  }
+}

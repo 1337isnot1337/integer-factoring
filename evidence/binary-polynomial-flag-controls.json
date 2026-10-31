@@ -1,0 +1,20 @@
+{
+  "status": "Literal polynomial, endpoint, complete minor and finite-manifest controls passed.",
+  "literal_transformed_rows": 480,
+  "constant_frame_equation_controls": 256,
+  "literal_endpoint_coefficients": 1024,
+  "all_minor_cut_profiles": 34,
+  "full_affine_line_points": 4,
+  "irrelevant_tail_jet_controls": 20,
+  "finite_search": {
+    "targets": 59,
+    "nonconstant_frames_per_cut": 4096,
+    "feasible_targets": 1,
+    "feasible_frame_pairs": 1,
+    "scope": "Complete I+zN catalogue with strictly lower triangular N; other jets and constant flags remain open."
+  },
+  "source_sha256": {
+    "search_binary_polynomial_flags.py": "75ca2a7954fe42c409707560265c3c50fbef7c1d2ae6a732aa99cacb10080b75",
+    "check_binary_polynomial_flags.py": "85a40f99bb333691403e84007cc4ed76f0601751650c745a81c4f1599e22a6ce"
+  }
+}

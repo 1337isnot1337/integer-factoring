@@ -1,0 +1,78 @@
+{
+  "status": "Complete affine family regenerated, literal original-state controls and full roots replayed.",
+  "scope": "The stated finite affine family only; no all-affine or all-filter exclusion.",
+  "coefficient_cases": 124080,
+  "retained_profiles": 65475,
+  "baseline_dominated_cases": 39012,
+  "independent_original_polynomial_state_controls": 1024,
+  "old_beta_permutation_negative_control": {
+    "actual_state_zero_order": 0,
+    "incorrect_permuted_order": 4
+  },
+  "complete_root_replays": [
+    {
+      "n": 64,
+      "partition": "contiguous",
+      "rho": 0.7075072433080506,
+      "root_residual": 9.142195990656395e-11,
+      "physical_entropy": 24.362348437030143,
+      "nonbaseline_blocks": 0
+    },
+    {
+      "n": 64,
+      "partition": "interleaved",
+      "rho": 0.7075072433080506,
+      "root_residual": 9.142195990656395e-11,
+      "physical_entropy": 24.362348437030143,
+      "nonbaseline_blocks": 0
+    },
+    {
+      "n": 64,
+      "partition": "reflected",
+      "rho": 0.7075072433080506,
+      "root_residual": 9.142195990656395e-11,
+      "physical_entropy": 24.362348437030143,
+      "nonbaseline_blocks": 0
+    },
+    {
+      "n": 64,
+      "partition": "shuffled",
+      "rho": 0.7075072433080506,
+      "root_residual": 9.142195990656395e-11,
+      "physical_entropy": 24.362348437030143,
+      "nonbaseline_blocks": 0
+    },
+    {
+      "n": 128,
+      "partition": "contiguous",
+      "rho": 0.707235146747923,
+      "root_residual": 2.0612489493032626e-10,
+      "physical_entropy": 42.67374419568418,
+      "nonbaseline_blocks": 0
+    },
+    {
+      "n": 128,
+      "partition": "interleaved",
+      "rho": 0.707235146747923,
+      "root_residual": 2.0612489493032626e-10,
+      "physical_entropy": 42.67374419568418,
+      "nonbaseline_blocks": 0
+    },
+    {
+      "n": 128,
+      "partition": "reflected",
+      "rho": 0.707235146747923,
+      "root_residual": 2.0612489493032626e-10,
+      "physical_entropy": 42.67374419568418,
+      "nonbaseline_blocks": 0
+    },
+    {
+      "n": 128,
+      "partition": "shuffled",
+      "rho": 0.707235146747923,
+      "root_residual": 2.0612489493032626e-10,
+      "physical_entropy": 42.67374419568418,
+      "nonbaseline_blocks": 0
+    }
+  ]
+}

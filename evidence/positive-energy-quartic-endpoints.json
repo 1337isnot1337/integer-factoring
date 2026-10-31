@@ -1,0 +1,127 @@
+{
+  "ambient": 4,
+  "bare_w_minus_two_controls": [
+    {
+      "index_energy_increase": 4,
+      "local_entries_checked": 65536,
+      "quartic": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "strictly_positive_endpoint_entries": 348,
+      "two_copy_type_count": 81,
+      "typed_entries_checked": 104976
+    },
+    {
+      "index_energy_increase": 3,
+      "local_entries_checked": 65536,
+      "quartic": [
+        1,
+        2,
+        1,
+        3
+      ],
+      "strictly_positive_endpoint_entries": 348,
+      "two_copy_type_count": 81,
+      "typed_entries_checked": 104976
+    },
+    {
+      "index_energy_increase": 2,
+      "local_entries_checked": 65536,
+      "quartic": [
+        1,
+        2,
+        2,
+        3
+      ],
+      "strictly_positive_endpoint_entries": 280,
+      "two_copy_type_count": 81,
+      "typed_entries_checked": 104976
+    },
+    {
+      "index_energy_increase": 1,
+      "local_entries_checked": 65536,
+      "quartic": [
+        1,
+        2,
+        3,
+        3
+      ],
+      "strictly_positive_endpoint_entries": 348,
+      "two_copy_type_count": 81,
+      "typed_entries_checked": 104976
+    },
+    {
+      "index_energy_increase": 3,
+      "local_entries_checked": 65536,
+      "quartic": [
+        0,
+        0,
+        0,
+        3
+      ],
+      "strictly_positive_endpoint_entries": 320,
+      "two_copy_type_count": 81,
+      "typed_entries_checked": 104976
+    },
+    {
+      "index_energy_increase": 4,
+      "local_entries_checked": 65536,
+      "quartic": [
+        0,
+        1,
+        0,
+        3
+      ],
+      "strictly_positive_endpoint_entries": 336,
+      "two_copy_type_count": 81,
+      "typed_entries_checked": 104976
+    }
+  ],
+  "field": 2,
+  "modes": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "rational_control": {
+    "all_perturbed_endpoint_terms_vanish": true,
+    "coefficient": "1/[w(1+w)]",
+    "index_energy_increase": 4,
+    "nonzero_one_quartic_terms_checked": 1744,
+    "nonzero_two_quartic_terms_checked": 6,
+    "quartic": [
+      0,
+      1,
+      0,
+      3
+    ],
+    "termwise_denominator_cancellation": true,
+    "typed_entries_checked": 104976
+  },
+  "source_sha256": {
+    "tools/check_positive_energy_quartic_endpoints.py": "5e504456b3fa1bad4bd42003ab104cab1d7095301aeadb4c755ac7464b913f10",
+    "tools/check_schur_downset_crossing.py": "c39c307f0dff1d478577490f4c9cb65254decfe8843e65b28a8d2cdc55955b4c",
+    "tools/weighted_smith_oracle.py": "9a6cbace2bb1fea210d1bea784f4a55fdfd5e7bb69b23d0d956861e00263204f"
+  },
+  "status": "exact projected-endpoint and rational-cancellation controls; no claimed exponent",
+  "zero_energy_negative_control": {
+    "actual_endpoint": 0,
+    "labels": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "quartic": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "required_endpoint": 1
+  }
+}

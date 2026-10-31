@@ -1,0 +1,107 @@
+{
+  "status": "exact finite controls passed; ordinary proof in note",
+  "parameter_ideal_entries": 24602,
+  "parameter_ranges": [
+    {
+      "prime": 2,
+      "max_parameter_weight": 8,
+      "max_state_weight": 6,
+      "nonregular_parameters": 58,
+      "regular_states": 6
+    },
+    {
+      "prime": 3,
+      "max_parameter_weight": 8,
+      "max_state_weight": 6,
+      "nonregular_parameters": 42,
+      "regular_states": 15
+    },
+    {
+      "prime": 5,
+      "max_parameter_weight": 8,
+      "max_state_weight": 6,
+      "nonregular_parameters": 14,
+      "regular_states": 26
+    },
+    {
+      "prime": 7,
+      "max_parameter_weight": 8,
+      "max_state_weight": 6,
+      "nonregular_parameters": 4,
+      "regular_states": 30
+    }
+  ],
+  "dual_angle_entries": 184416,
+  "dual_ranges_and_term_counts": [
+    {
+      "prime": 2,
+      "max_label_weight": 9,
+      "max_state_weight": 4,
+      "labels": 10,
+      "full_integer_dual_terms": 64,
+      "nonzero_reduced_dual_terms": 20
+    },
+    {
+      "prime": 3,
+      "max_label_weight": 9,
+      "max_state_weight": 4,
+      "labels": 32,
+      "full_integer_dual_terms": 209,
+      "nonzero_reduced_dual_terms": 105
+    },
+    {
+      "prime": 5,
+      "max_label_weight": 9,
+      "max_state_weight": 4,
+      "labels": 72,
+      "full_integer_dual_terms": 426,
+      "nonzero_reduced_dual_terms": 339
+    }
+  ],
+  "unchanged_piece_entries": 816,
+  "complete_crossing_entries": 48,
+  "crossing_examples": [
+    {
+      "prime": 2,
+      "weight": 8,
+      "labels": [
+        [
+          1,
+          7
+        ],
+        [
+          3,
+          5
+        ]
+      ]
+    },
+    {
+      "prime": 3,
+      "weight": 2,
+      "labels": [
+        [
+          1,
+          1
+        ],
+        [
+          2
+        ]
+      ]
+    },
+    {
+      "prime": 5,
+      "weight": 2,
+      "labels": [
+        [
+          1,
+          1
+        ],
+        [
+          2
+        ]
+      ]
+    }
+  ],
+  "negative_controls": 2,
+  "factoring_score_improvement": false
+}

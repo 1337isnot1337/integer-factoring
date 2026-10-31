@@ -1,0 +1,204 @@
+{
+  "status": "pass",
+  "typed_endpoint_entries": 3888,
+  "original_weighted_cut_profiles": [
+    {
+      "interval": 2,
+      "mask": 0,
+      "trial": 0,
+      "place": 0,
+      "rank": 16,
+      "largest_active_charge_block": 6
+    },
+    {
+      "interval": 2,
+      "mask": 0,
+      "trial": 0,
+      "place": 1,
+      "rank": 16,
+      "largest_active_charge_block": 6
+    },
+    {
+      "interval": 2,
+      "mask": 0,
+      "trial": 1,
+      "place": 0,
+      "rank": 16,
+      "largest_active_charge_block": 6
+    },
+    {
+      "interval": 2,
+      "mask": 0,
+      "trial": 1,
+      "place": 1,
+      "rank": 16,
+      "largest_active_charge_block": 6
+    },
+    {
+      "interval": 2,
+      "mask": 1,
+      "trial": 0,
+      "place": 0,
+      "rank": 16,
+      "largest_active_charge_block": 6
+    },
+    {
+      "interval": 2,
+      "mask": 1,
+      "trial": 0,
+      "place": 1,
+      "rank": 16,
+      "largest_active_charge_block": 6
+    },
+    {
+      "interval": 2,
+      "mask": 1,
+      "trial": 1,
+      "place": 0,
+      "rank": 16,
+      "largest_active_charge_block": 6
+    },
+    {
+      "interval": 2,
+      "mask": 1,
+      "trial": 1,
+      "place": 1,
+      "rank": 16,
+      "largest_active_charge_block": 6
+    },
+    {
+      "interval": 2,
+      "mask": 2,
+      "trial": 0,
+      "place": 0,
+      "rank": 16,
+      "largest_active_charge_block": 6
+    },
+    {
+      "interval": 2,
+      "mask": 2,
+      "trial": 0,
+      "place": 1,
+      "rank": 16,
+      "largest_active_charge_block": 6
+    },
+    {
+      "interval": 2,
+      "mask": 2,
+      "trial": 1,
+      "place": 0,
+      "rank": 16,
+      "largest_active_charge_block": 6
+    },
+    {
+      "interval": 2,
+      "mask": 2,
+      "trial": 1,
+      "place": 1,
+      "rank": 16,
+      "largest_active_charge_block": 6
+    },
+    {
+      "interval": 4,
+      "mask": 0,
+      "trial": 0,
+      "place": 0,
+      "rank": 256,
+      "largest_active_charge_block": 70
+    },
+    {
+      "interval": 4,
+      "mask": 0,
+      "trial": 0,
+      "place": 1,
+      "rank": 256,
+      "largest_active_charge_block": 70
+    },
+    {
+      "interval": 4,
+      "mask": 0,
+      "trial": 1,
+      "place": 0,
+      "rank": 256,
+      "largest_active_charge_block": 70
+    },
+    {
+      "interval": 4,
+      "mask": 0,
+      "trial": 1,
+      "place": 1,
+      "rank": 256,
+      "largest_active_charge_block": 70
+    },
+    {
+      "interval": 4,
+      "mask": 1,
+      "trial": 0,
+      "place": 0,
+      "rank": 256,
+      "largest_active_charge_block": 70
+    },
+    {
+      "interval": 4,
+      "mask": 1,
+      "trial": 0,
+      "place": 1,
+      "rank": 256,
+      "largest_active_charge_block": 70
+    },
+    {
+      "interval": 4,
+      "mask": 1,
+      "trial": 1,
+      "place": 0,
+      "rank": 256,
+      "largest_active_charge_block": 70
+    },
+    {
+      "interval": 4,
+      "mask": 1,
+      "trial": 1,
+      "place": 1,
+      "rank": 256,
+      "largest_active_charge_block": 70
+    },
+    {
+      "interval": 4,
+      "mask": 2,
+      "trial": 0,
+      "place": 0,
+      "rank": 256,
+      "largest_active_charge_block": 70
+    },
+    {
+      "interval": 4,
+      "mask": 2,
+      "trial": 0,
+      "place": 1,
+      "rank": 256,
+      "largest_active_charge_block": 70
+    },
+    {
+      "interval": 4,
+      "mask": 2,
+      "trial": 1,
+      "place": 0,
+      "rank": 256,
+      "largest_active_charge_block": 70
+    },
+    {
+      "interval": 4,
+      "mask": 2,
+      "trial": 1,
+      "place": 1,
+      "rank": 256,
+      "largest_active_charge_block": 70
+    }
+  ],
+  "source_sha256": {
+    "tools/blocked_core_charge_pressure.py": "4f9227b1467ade374360fe0d472085348ffe49221f01cfbb186bc67f6bfe24ef",
+    "tools/raw_core_mask_profiles.py": "9ce4fde20ff7478572f28b4d9006e4ecd4d85b3a1df97416691477c6b4426385",
+    "tools/check_raw_core_mask_profiles.py": "4255af20814eea1104c1c4298c751fec939187649d80da2f86e88f0c4bbb364e",
+    "research/raw-core-transition-masks.md": "572404fd9f1c1b21b873a0694fec8e7503afc1397edf94a14d0a07cb1ada5384"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "crossing_cut_rank": 8,
+  "factor_exchange_commutation": true,
+  "invariant_alternating_quotient_matrix": [
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "invariant_alternating_quotient_rank": 2,
+  "matrix_space_dimension": 8,
+  "minimum_compressed_crossing_cut_rank": 2,
+  "projective_equation_checks": [
+    {
+      "equation_rank_distribution": {
+        "4": 20,
+        "5": 68,
+        "6": 57,
+        "7": 80
+      },
+      "field": 2,
+      "minimum_compression_dimension": 5,
+      "ordered_pairs_checked": 225,
+      "projective_vectors": 15
+    },
+    {
+      "equation_rank_distribution": {
+        "4": 44,
+        "5": 812,
+        "6": 1025,
+        "7": 5344
+      },
+      "field": 4,
+      "minimum_compression_dimension": 5,
+      "ordered_pairs_checked": 7225,
+      "projective_vectors": 85
+    }
+  ],
+  "source_sha256": {
+    "tools/check_residual_quartic_codes.py": "918a68af3acf3081b34eb7a216b5738440356f904354845d57e1379cd7b9ef20",
+    "tools/check_residual_three_letter_obstruction.py": "f35107af4f54c863b4a93c0c50047842da601173f7ef6972e578f79abf17baaf"
+  },
+  "status": "exact controls for an all-characteristic-two-field theorem"
+}

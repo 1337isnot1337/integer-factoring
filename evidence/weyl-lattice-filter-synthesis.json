@@ -1,0 +1,504 @@
+{
+  "status": "Exact reduced Smith-basis synthesis and complete finite controls; no pressure claim.",
+  "regular_polynomial_bases": [
+    {
+      "n": 2,
+      "ramification": 1,
+      "geometry": "initial",
+      "gaussian_row_orders": [
+        4,
+        2,
+        3,
+        1
+      ],
+      "exact_unit_basis_blocks": 3
+    },
+    {
+      "n": 3,
+      "ramification": 3,
+      "geometry": "initial",
+      "gaussian_row_orders": [
+        18,
+        9,
+        12,
+        3
+      ],
+      "exact_unit_basis_blocks": 3
+    },
+    {
+      "n": 8,
+      "ramification": 1,
+      "geometry": "initial",
+      "gaussian_row_orders": [
+        16,
+        8,
+        9,
+        1
+      ],
+      "exact_unit_basis_blocks": 3
+    },
+    {
+      "n": 8,
+      "ramification": 3,
+      "geometry": "terminal",
+      "gaussian_row_orders": [
+        48,
+        42,
+        45,
+        39
+      ],
+      "exact_unit_basis_blocks": 3
+    },
+    {
+      "n": 8,
+      "ramification": 1,
+      "geometry": "mixed",
+      "gaussian_row_orders": [
+        16,
+        8,
+        15,
+        7
+      ],
+      "exact_unit_basis_blocks": 3
+    },
+    {
+      "n": 32,
+      "ramification": 3,
+      "geometry": "mixed",
+      "gaussian_row_orders": [
+        192,
+        96,
+        189,
+        93
+      ],
+      "exact_unit_basis_blocks": 3
+    }
+  ],
+  "complete_small_coefficient_search": {
+    "complete_F4_polynomial_vectors_enumerated": 41472,
+    "individual_degree_bound": 1,
+    "exact_bound_queries_against_full_catalog": 4864,
+    "nonzero_endpoint_feasible_but_endpoint_one_impossible_examples": [
+      {
+        "n": 2,
+        "ramification": 1,
+        "geometry": "initial",
+        "coefficient_field": "F4",
+        "modes": 2,
+        "degree_bounds": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "row_targets": [
+          1,
+          0,
+          1,
+          2
+        ],
+        "gaussian_row_orders": [
+          4,
+          2,
+          3,
+          1
+        ],
+        "coefficient_variables": 5,
+        "coefficient_constraints": 2,
+        "homogeneous_rank": 2,
+        "endpoint_image_dimension": 3,
+        "endpoint_values": [
+          3,
+          2,
+          1,
+          1
+        ],
+        "alpha": [
+          {
+            "state": [
+              0,
+              0
+            ],
+            "polynomial": [
+              [
+                0,
+                3
+              ]
+            ]
+          },
+          {
+            "state": [
+              0,
+              1
+            ],
+            "polynomial": [
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "state": [
+              1,
+              0
+            ],
+            "polynomial": [
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "state": [
+              1,
+              1
+            ],
+            "polynomial": [
+              [
+                1,
+                1
+              ]
+            ]
+          }
+        ],
+        "actual_degrees": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "witness_verification": {
+          "checked_transformed_entries": 4,
+          "nonzero_transformed_entries": 4
+        }
+      },
+      {
+        "n": 4,
+        "ramification": 1,
+        "geometry": "mixed",
+        "coefficient_field": "F4",
+        "modes": 2,
+        "degree_bounds": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "row_targets": [
+          1,
+          0,
+          3,
+          4
+        ],
+        "gaussian_row_orders": [
+          8,
+          4,
+          7,
+          3
+        ],
+        "coefficient_variables": 5,
+        "coefficient_constraints": 2,
+        "homogeneous_rank": 2,
+        "endpoint_image_dimension": 3,
+        "endpoint_values": [
+          3,
+          2,
+          1,
+          1
+        ],
+        "alpha": [
+          {
+            "state": [
+              0,
+              0
+            ],
+            "polynomial": [
+              [
+                0,
+                3
+              ]
+            ]
+          },
+          {
+            "state": [
+              0,
+              1
+            ],
+            "polynomial": [
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "state": [
+              1,
+              0
+            ],
+            "polynomial": [
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "state": [
+              1,
+              1
+            ],
+            "polynomial": [
+              [
+                1,
+                1
+              ]
+            ]
+          }
+        ],
+        "actual_degrees": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "witness_verification": {
+          "checked_transformed_entries": 4,
+          "nonzero_transformed_entries": 4
+        }
+      }
+    ]
+  },
+  "literal_repaired_witnesses": {
+    "complete_physical_witnesses": [
+      {
+        "degree_bounds": [
+          3,
+          3,
+          3,
+          3
+        ],
+        "row_targets": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "endpoint_values": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "endpoint_image_dimension": 4,
+        "actual_degrees": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "maximum_exact_jet_precision": 512
+      },
+      {
+        "degree_bounds": [
+          2,
+          3,
+          3,
+          3
+        ],
+        "row_targets": [
+          0,
+          2,
+          1,
+          1
+        ],
+        "endpoint_values": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "endpoint_image_dimension": 4,
+        "actual_degrees": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "maximum_exact_jet_precision": 512
+      },
+      {
+        "degree_bounds": [
+          2,
+          3,
+          2,
+          3
+        ],
+        "row_targets": [
+          0,
+          0,
+          1,
+          2
+        ],
+        "endpoint_values": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "endpoint_image_dimension": 4,
+        "actual_degrees": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "maximum_exact_jet_precision": 512
+      },
+      {
+        "degree_bounds": [
+          3,
+          2,
+          3,
+          2
+        ],
+        "row_targets": [
+          0,
+          0,
+          2,
+          1
+        ],
+        "endpoint_values": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "endpoint_image_dimension": 4,
+        "actual_degrees": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "maximum_exact_jet_precision": 512
+      },
+      {
+        "degree_bounds": [
+          3,
+          3,
+          3,
+          3
+        ],
+        "row_targets": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "endpoint_values": [
+          2,
+          2,
+          1,
+          1
+        ],
+        "endpoint_image_dimension": 4,
+        "actual_degrees": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "maximum_exact_jet_precision": 512
+      },
+      {
+        "degree_bounds": [
+          2,
+          3,
+          3,
+          3
+        ],
+        "row_targets": [
+          0,
+          2,
+          1,
+          2
+        ],
+        "endpoint_values": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "endpoint_image_dimension": 4,
+        "actual_degrees": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "maximum_exact_jet_precision": 512
+      },
+      {
+        "degree_bounds": [
+          3,
+          3,
+          3,
+          0
+        ],
+        "row_targets": [
+          0,
+          0,
+          2,
+          1
+        ],
+        "endpoint_values": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "endpoint_image_dimension": 4,
+        "actual_degrees": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "maximum_exact_jet_precision": 512
+      },
+      {
+        "degree_bounds": [
+          3,
+          2,
+          3,
+          3
+        ],
+        "row_targets": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "endpoint_values": [
+          2,
+          2,
+          1,
+          1
+        ],
+        "endpoint_image_dimension": 4,
+        "actual_degrees": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "maximum_exact_jet_precision": 512
+      }
+    ],
+    "physical_endpoint_coefficients_checked": 2048,
+    "full_matrix_order": 16
+  }
+}

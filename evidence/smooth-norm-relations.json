@@ -1,0 +1,805 @@
+{
+  "scope": "Exact supplied smooth-norm words and diagonally dominant relation matrices; all witness and class enumeration is finite control only",
+  "discriminants_checked": 11,
+  "representations_checked": 2942,
+  "unbalanced_norms_accepted": 368,
+  "relation_rows_checked": 22,
+  "relations_using_unbalanced_norms": 19,
+  "strictly_weaker_oracle_control": {
+    "form": [
+      24,
+      1,
+      50
+    ],
+    "discriminant": -4799,
+    "radius": 5,
+    "smooth_bound": 3,
+    "norm": 24,
+    "word": [
+      {
+        "prime": 2,
+        "root": 1,
+        "exponent": 3,
+        "form": [
+          2,
+          1,
+          600
+        ]
+      },
+      {
+        "prime": 3,
+        "root": 1,
+        "exponent": 1,
+        "form": [
+          3,
+          1,
+          400
+        ]
+      }
+    ],
+    "no_balanced_norm_at_most_radius_squared": true
+  },
+  "records": [
+    {
+      "discriminant": -348,
+      "radius": 9,
+      "smooth_bound": 7,
+      "class_number": 6,
+      "factor_base_primes": [
+        7
+      ],
+      "factor_base_subgroup_size": 3,
+      "smooth_set_size": 3,
+      "quotient_set_size": 3,
+      "norm_word_target_classes": 3,
+      "norm_word_classes_outside_smooth_quotient": 0,
+      "uniform_sample_size": 3,
+      "sample_word_bound": 2,
+      "norm_word_bound": 6,
+      "diagonal": 9,
+      "relation_rows": [
+        [
+          9
+        ]
+      ],
+      "relation_determinant": 9,
+      "global_class_number_multiple": 18,
+      "recovered_subgroup_two_torsion_size": 1,
+      "relation_witnesses": [
+        {
+          "generator_prime": 7,
+          "sample": [
+            1,
+            0,
+            87
+          ],
+          "target_after_sample": [
+            1,
+            0,
+            87
+          ],
+          "norm": 1,
+          "balanced_at_radius": true
+        }
+      ],
+      "representations_checked": 10,
+      "negative_orientation_controls": 4,
+      "unbalanced_norms_accepted": 0,
+      "nonprimitive_scaled_controls": 10
+    },
+    {
+      "discriminant": -420,
+      "radius": 10,
+      "smooth_bound": 7,
+      "class_number": 8,
+      "factor_base_primes": [],
+      "factor_base_subgroup_size": 1,
+      "smooth_set_size": 1,
+      "quotient_set_size": 1,
+      "norm_word_target_classes": 1,
+      "norm_word_classes_outside_smooth_quotient": 0,
+      "uniform_sample_size": 1,
+      "sample_word_bound": 0,
+      "norm_word_bound": 6,
+      "diagonal": 7,
+      "relation_rows": [],
+      "relation_determinant": 1,
+      "global_class_number_multiple": 840,
+      "recovered_subgroup_two_torsion_size": 1,
+      "relation_witnesses": [],
+      "representations_checked": 2,
+      "negative_orientation_controls": 0,
+      "unbalanced_norms_accepted": 0,
+      "nonprimitive_scaled_controls": 2
+    },
+    {
+      "discriminant": -999,
+      "radius": 15,
+      "smooth_bound": 7,
+      "class_number": 24,
+      "factor_base_primes": [
+        2,
+        5,
+        7
+      ],
+      "factor_base_subgroup_size": 24,
+      "smooth_set_size": 19,
+      "quotient_set_size": 24,
+      "norm_word_target_classes": 24,
+      "norm_word_classes_outside_smooth_quotient": 0,
+      "uniform_sample_size": 24,
+      "sample_word_bound": 4,
+      "norm_word_bound": 7,
+      "diagonal": 12,
+      "relation_rows": [
+        [
+          15,
+          -3,
+          0
+        ],
+        [
+          3,
+          9,
+          0
+        ],
+        [
+          0,
+          0,
+          12
+        ]
+      ],
+      "relation_determinant": 1728,
+      "global_class_number_multiple": 3456,
+      "recovered_subgroup_two_torsion_size": 2,
+      "relation_witnesses": [
+        {
+          "generator_prime": 2,
+          "sample": [
+            8,
+            5,
+            32
+          ],
+          "target_after_sample": [
+            2,
+            -1,
+            125
+          ],
+          "norm": 125,
+          "balanced_at_radius": false
+        },
+        {
+          "generator_prime": 5,
+          "sample": [
+            8,
+            5,
+            32
+          ],
+          "target_after_sample": [
+            2,
+            -1,
+            125
+          ],
+          "norm": 125,
+          "balanced_at_radius": false
+        },
+        {
+          "generator_prime": 7,
+          "sample": [
+            2,
+            -1,
+            125
+          ],
+          "target_after_sample": [
+            2,
+            -1,
+            125
+          ],
+          "norm": 125,
+          "balanced_at_radius": false
+        }
+      ],
+      "representations_checked": 218,
+      "negative_orientation_controls": 154,
+      "unbalanced_norms_accepted": 40,
+      "nonprimitive_scaled_controls": 218
+    },
+    {
+      "discriminant": -1679,
+      "radius": 20,
+      "smooth_bound": 7,
+      "class_number": 52,
+      "factor_base_primes": [
+        2,
+        3,
+        5,
+        7
+      ],
+      "factor_base_subgroup_size": 52,
+      "smooth_set_size": 45,
+      "quotient_set_size": 52,
+      "norm_word_target_classes": 52,
+      "norm_word_classes_outside_smooth_quotient": 0,
+      "uniform_sample_size": 52,
+      "sample_word_bound": 5,
+      "norm_word_bound": 8,
+      "diagonal": 14,
+      "relation_rows": [
+        [
+          14,
+          0,
+          -2,
+          2
+        ],
+        [
+          1,
+          15,
+          -2,
+          0
+        ],
+        [
+          1,
+          1,
+          11,
+          1
+        ],
+        [
+          0,
+          1,
+          -1,
+          15
+        ]
+      ],
+      "relation_determinant": 35672,
+      "global_class_number_multiple": 71344,
+      "recovered_subgroup_two_torsion_size": 2,
+      "relation_witnesses": [
+        {
+          "generator_prime": 2,
+          "sample": [
+            20,
+            9,
+            22
+          ],
+          "target_after_sample": [
+            15,
+            -1,
+            28
+          ],
+          "norm": 125,
+          "balanced_at_radius": false
+        },
+        {
+          "generator_prime": 3,
+          "sample": [
+            14,
+            -1,
+            30
+          ],
+          "target_after_sample": [
+            15,
+            -1,
+            28
+          ],
+          "norm": 125,
+          "balanced_at_radius": false
+        },
+        {
+          "generator_prime": 5,
+          "sample": [
+            10,
+            -1,
+            42
+          ],
+          "target_after_sample": [
+            15,
+            -1,
+            28
+          ],
+          "norm": 125,
+          "balanced_at_radius": false
+        },
+        {
+          "generator_prime": 7,
+          "sample": [
+            20,
+            -9,
+            22
+          ],
+          "target_after_sample": [
+            15,
+            -1,
+            28
+          ],
+          "norm": 125,
+          "balanced_at_radius": false
+        }
+      ],
+      "representations_checked": 886,
+      "negative_orientation_controls": 698,
+      "unbalanced_norms_accepted": 156,
+      "nonprimitive_scaled_controls": 886
+    },
+    {
+      "discriminant": -2639,
+      "radius": 25,
+      "smooth_bound": 7,
+      "class_number": 64,
+      "factor_base_primes": [
+        2,
+        3,
+        5
+      ],
+      "factor_base_subgroup_size": 64,
+      "smooth_set_size": 45,
+      "quotient_set_size": 64,
+      "norm_word_target_classes": 64,
+      "norm_word_classes_outside_smooth_quotient": 0,
+      "uniform_sample_size": 64,
+      "sample_word_bound": 7,
+      "norm_word_bound": 9,
+      "diagonal": 17,
+      "relation_rows": [
+        [
+          20,
+          -4,
+          0
+        ],
+        [
+          4,
+          12,
+          0
+        ],
+        [
+          3,
+          -3,
+          17
+        ]
+      ],
+      "relation_determinant": 4352,
+      "global_class_number_multiple": 8704,
+      "recovered_subgroup_two_torsion_size": 4,
+      "relation_witnesses": [
+        {
+          "generator_prime": 2,
+          "sample": [
+            24,
+            -23,
+            33
+          ],
+          "target_after_sample": [
+            12,
+            -1,
+            55
+          ],
+          "norm": 243,
+          "balanced_at_radius": false
+        },
+        {
+          "generator_prime": 3,
+          "sample": [
+            16,
+            -7,
+            42
+          ],
+          "target_after_sample": [
+            12,
+            -1,
+            55
+          ],
+          "norm": 243,
+          "balanced_at_radius": false
+        },
+        {
+          "generator_prime": 5,
+          "sample": [
+            11,
+            1,
+            60
+          ],
+          "target_after_sample": [
+            12,
+            -1,
+            55
+          ],
+          "norm": 243,
+          "balanced_at_radius": false
+        }
+      ],
+      "representations_checked": 610,
+      "negative_orientation_controls": 466,
+      "unbalanced_norms_accepted": 40,
+      "nonprimitive_scaled_controls": 610
+    },
+    {
+      "discriminant": -9679,
+      "radius": 49,
+      "smooth_bound": 7,
+      "class_number": 71,
+      "factor_base_primes": [
+        2,
+        5,
+        7
+      ],
+      "factor_base_subgroup_size": 71,
+      "smooth_set_size": 43,
+      "quotient_set_size": 71,
+      "norm_word_target_classes": 71,
+      "norm_word_classes_outside_smooth_quotient": 0,
+      "uniform_sample_size": 71,
+      "sample_word_bound": 8,
+      "norm_word_bound": 11,
+      "diagonal": 20,
+      "relation_rows": [
+        [
+          23,
+          -2,
+          1
+        ],
+        [
+          2,
+          22,
+          0
+        ],
+        [
+          5,
+          -4,
+          20
+        ]
+      ],
+      "relation_determinant": 10082,
+      "global_class_number_multiple": 20164,
+      "recovered_subgroup_two_torsion_size": 1,
+      "relation_witnesses": [
+        {
+          "generator_prime": 2,
+          "sample": [
+            4,
+            -1,
+            605
+          ],
+          "target_after_sample": [
+            23,
+            -21,
+            110
+          ],
+          "norm": 1250,
+          "balanced_at_radius": false
+        },
+        {
+          "generator_prime": 5,
+          "sample": [
+            38,
+            -7,
+            64
+          ],
+          "target_after_sample": [
+            23,
+            -21,
+            110
+          ],
+          "norm": 1250,
+          "balanced_at_radius": false
+        },
+        {
+          "generator_prime": 7,
+          "sample": [
+            16,
+            -7,
+            152
+          ],
+          "target_after_sample": [
+            23,
+            -21,
+            110
+          ],
+          "norm": 1250,
+          "balanced_at_radius": false
+        }
+      ],
+      "representations_checked": 606,
+      "negative_orientation_controls": 460,
+      "unbalanced_norms_accepted": 60,
+      "nonprimitive_scaled_controls": 606
+    },
+    {
+      "discriminant": -10007,
+      "radius": 50,
+      "smooth_bound": 7,
+      "class_number": 77,
+      "factor_base_primes": [
+        2,
+        3
+      ],
+      "factor_base_subgroup_size": 77,
+      "smooth_set_size": 41,
+      "quotient_set_size": 77,
+      "norm_word_target_classes": 77,
+      "norm_word_classes_outside_smooth_quotient": 0,
+      "uniform_sample_size": 77,
+      "sample_word_bound": 18,
+      "norm_word_bound": 11,
+      "diagonal": 30,
+      "relation_rows": [
+        [
+          31,
+          6
+        ],
+        [
+          1,
+          30
+        ]
+      ],
+      "relation_determinant": 924,
+      "global_class_number_multiple": 1848,
+      "recovered_subgroup_two_torsion_size": 1,
+      "relation_witnesses": [
+        {
+          "generator_prime": 2,
+          "sample": [
+            24,
+            -13,
+            106
+          ],
+          "target_after_sample": [
+            38,
+            -33,
+            73
+          ],
+          "norm": 1458,
+          "balanced_at_radius": false
+        },
+        {
+          "generator_prime": 3,
+          "sample": [
+            19,
+            5,
+            132
+          ],
+          "target_after_sample": [
+            38,
+            -33,
+            73
+          ],
+          "norm": 1458,
+          "balanced_at_radius": false
+        }
+      ],
+      "representations_checked": 322,
+      "negative_orientation_controls": 222,
+      "unbalanced_norms_accepted": 24,
+      "nonprimitive_scaled_controls": 322
+    },
+    {
+      "discriminant": -41612,
+      "radius": 101,
+      "smooth_bound": 7,
+      "class_number": 90,
+      "factor_base_primes": [
+        3
+      ],
+      "factor_base_subgroup_size": 30,
+      "smooth_set_size": 9,
+      "quotient_set_size": 17,
+      "norm_word_target_classes": 17,
+      "norm_word_classes_outside_smooth_quotient": 0,
+      "uniform_sample_size": 30,
+      "sample_word_bound": 29,
+      "norm_word_bound": 13,
+      "diagonal": 43,
+      "relation_rows": [
+        [
+          60
+        ]
+      ],
+      "relation_determinant": 60,
+      "global_class_number_multiple": 151200,
+      "recovered_subgroup_two_torsion_size": 2,
+      "relation_witnesses": [
+        {
+          "generator_prime": 3,
+          "sample": [
+            57,
+            -44,
+            191
+          ],
+          "target_after_sample": [
+            1,
+            0,
+            10403
+          ],
+          "norm": 1,
+          "balanced_at_radius": true
+        }
+      ],
+      "representations_checked": 34,
+      "negative_orientation_controls": 16,
+      "unbalanced_norms_accepted": 0,
+      "nonprimitive_scaled_controls": 34
+    },
+    {
+      "discriminant": -43228,
+      "radius": 103,
+      "smooth_bound": 7,
+      "class_number": 48,
+      "factor_base_primes": [
+        7
+      ],
+      "factor_base_subgroup_size": 48,
+      "smooth_set_size": 5,
+      "quotient_set_size": 9,
+      "norm_word_target_classes": 9,
+      "norm_word_classes_outside_smooth_quotient": 0,
+      "uniform_sample_size": 48,
+      "sample_word_bound": 47,
+      "norm_word_bound": 13,
+      "diagonal": 61,
+      "relation_rows": [
+        [
+          96
+        ]
+      ],
+      "relation_determinant": 96,
+      "global_class_number_multiple": 241920,
+      "recovered_subgroup_two_torsion_size": 2,
+      "relation_witnesses": [
+        {
+          "generator_prime": 7,
+          "sample": [
+            103,
+            54,
+            112
+          ],
+          "target_after_sample": [
+            1,
+            0,
+            10807
+          ],
+          "norm": 1,
+          "balanced_at_radius": true
+        }
+      ],
+      "representations_checked": 18,
+      "negative_orientation_controls": 8,
+      "unbalanced_norms_accepted": 0,
+      "nonprimitive_scaled_controls": 18
+    },
+    {
+      "discriminant": -66548,
+      "radius": 128,
+      "smooth_bound": 7,
+      "class_number": 128,
+      "factor_base_primes": [
+        3,
+        7
+      ],
+      "factor_base_subgroup_size": 64,
+      "smooth_set_size": 21,
+      "quotient_set_size": 64,
+      "norm_word_target_classes": 64,
+      "norm_word_classes_outside_smooth_quotient": 0,
+      "uniform_sample_size": 64,
+      "sample_word_bound": 13,
+      "norm_word_bound": 14,
+      "diagonal": 28,
+      "relation_rows": [
+        [
+          34,
+          6
+        ],
+        [
+          2,
+          38
+        ]
+      ],
+      "relation_determinant": 1280,
+      "global_class_number_multiple": 537600,
+      "recovered_subgroup_two_torsion_size": 2,
+      "relation_witnesses": [
+        {
+          "generator_prime": 3,
+          "sample": [
+            91,
+            -8,
+            183
+          ],
+          "target_after_sample": [
+            39,
+            -34,
+            434
+          ],
+          "norm": 7203,
+          "balanced_at_radius": false
+        },
+        {
+          "generator_prime": 7,
+          "sample": [
+            43,
+            -4,
+            387
+          ],
+          "target_after_sample": [
+            39,
+            -34,
+            434
+          ],
+          "norm": 7203,
+          "balanced_at_radius": false
+        }
+      ],
+      "representations_checked": 178,
+      "negative_orientation_controls": 120,
+      "unbalanced_norms_accepted": 32,
+      "nonprimitive_scaled_controls": 178
+    },
+    {
+      "discriminant": -4799,
+      "radius": 5,
+      "smooth_bound": 3,
+      "class_number": 63,
+      "factor_base_primes": [
+        2,
+        3
+      ],
+      "factor_base_subgroup_size": 63,
+      "smooth_set_size": 7,
+      "quotient_set_size": 21,
+      "norm_word_target_classes": 29,
+      "norm_word_classes_outside_smooth_quotient": 8,
+      "uniform_sample_size": 63,
+      "sample_word_bound": 14,
+      "norm_word_bound": 4,
+      "diagonal": 19,
+      "relation_rows": [
+        [
+          21,
+          9
+        ],
+        [
+          7,
+          21
+        ]
+      ],
+      "relation_determinant": 378,
+      "global_class_number_multiple": 952560,
+      "recovered_subgroup_two_torsion_size": 1,
+      "relation_witnesses": [
+        {
+          "generator_prime": 2,
+          "sample": [
+            18,
+            5,
+            67
+          ],
+          "target_after_sample": [
+            18,
+            -13,
+            69
+          ],
+          "norm": 18,
+          "balanced_at_radius": false
+        },
+        {
+          "generator_prime": 3,
+          "sample": [
+            23,
+            13,
+            54
+          ],
+          "target_after_sample": [
+            18,
+            -13,
+            69
+          ],
+          "norm": 18,
+          "balanced_at_radius": false
+        }
+      ],
+      "representations_checked": 58,
+      "negative_orientation_controls": 36,
+      "unbalanced_norms_accepted": 16,
+      "nonprimitive_scaled_controls": 58
+    }
+  ],
+  "fast_witness_search_supplied": false,
+  "global_two_torsion_coverage_supplied": false
+}

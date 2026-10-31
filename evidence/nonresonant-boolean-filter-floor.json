@@ -1,0 +1,60 @@
+{
+  "status": "Every nonresonant exact order, full degree, endpoint, and rational loss control passed.",
+  "scope": "Arbitrary Boolean g in the stated two-power family outside the finite resonant window; no factoring exponent improvement.",
+  "pattern_families": [
+    {
+      "modes": 1,
+      "patterns": 2,
+      "exhaustive": true
+    },
+    {
+      "modes": 2,
+      "patterns": 14,
+      "exhaustive": true
+    },
+    {
+      "modes": 3,
+      "patterns": 254,
+      "exhaustive": true
+    },
+    {
+      "modes": 4,
+      "patterns": 128,
+      "exhaustive": false
+    }
+  ],
+  "literal_polynomial_cases": 4660,
+  "complete_state_order_degree_endpoint_controls": 49020,
+  "exact_near_power_top_component_orders": 16496,
+  "rational_loss_and_large_scale_controls": 1056,
+  "resonant_negative_control": {
+    "n": 2,
+    "P": 1,
+    "m": 2,
+    "degree": 2,
+    "L": 6,
+    "g_anf_monomial_masks": [
+      1,
+      3
+    ],
+    "full_degrees": [
+      0,
+      6,
+      0,
+      0
+    ],
+    "beta_orders": [
+      0,
+      2,
+      2,
+      8
+    ],
+    "state_11_beta": "x^8",
+    "false_order_upper_bound": 6,
+    "scope": "The generic upper order cap fails; no negative full pressure is claimed."
+  },
+  "proof_dependencies": [
+    "homogeneous-boolean-filter-bounds.md: biased support lemma and threshold",
+    "global-homogeneous-boolean-filter-floor.md: Gaussian support floor"
+  ]
+}

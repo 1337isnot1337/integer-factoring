@@ -1,0 +1,33 @@
+{
+  "status": "pass",
+  "independent_coefficient_minimum_checks": 480,
+  "exact_rational_comparison_checks": 100,
+  "complete_M4_runs": [
+    {
+      "total_affine_rows": 4194304,
+      "distinct_tensor_rows": 65536,
+      "parameter_fiber_multiplicity": 64,
+      "certifiably_pruned": 4190144,
+      "profile_queries": 65,
+      "profile_covered_rows": 4160,
+      "unresolved_rows": 0,
+      "equal_to_gaussian": 64,
+      "strictly_larger_than_gaussian": 4096,
+      "profile_digest_sha256": "cf7adeeae3b61703b00d4d8bf92619477af7ef1ada9b12d4cefe1c1ba735dd38",
+      "beta": 0
+    },
+    {
+      "total_affine_rows": 4194304,
+      "distinct_tensor_rows": 262144,
+      "parameter_fiber_multiplicity": 16,
+      "certifiably_pruned": 4193280,
+      "profile_queries": 64,
+      "profile_covered_rows": 1024,
+      "unresolved_rows": 0,
+      "equal_to_gaussian": 16,
+      "strictly_larger_than_gaussian": 1008,
+      "profile_digest_sha256": "5756a3ef9f66a30977f807cb60c41a20ea9c80a3de7245c64497c397fc8a028f",
+      "beta": 1
+    }
+  ]
+}

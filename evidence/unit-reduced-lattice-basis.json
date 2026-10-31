@@ -1,0 +1,63 @@
+{
+  "status": "Exact common-unit removal preserves every tested constraint rowspace and literal witness.",
+  "complete_source_polynomial_identities": 225,
+  "full_constraint_rowspace_comparisons": 40,
+  "identical_literal_witnesses": 16,
+  "cases": [
+    {
+      "n": 3,
+      "ramification": 1,
+      "geometry": "initial",
+      "modes": 2,
+      "removed_zero_units": 5,
+      "maximum_source_degree_before": 26,
+      "maximum_source_degree_after": 7,
+      "source_terms_before": 120,
+      "source_terms_after": 44
+    },
+    {
+      "n": 5,
+      "ramification": 1,
+      "geometry": "initial",
+      "modes": 3,
+      "removed_zero_units": 12,
+      "maximum_source_degree_before": 320,
+      "maximum_source_degree_after": 22,
+      "source_terms_before": 5268,
+      "source_terms_after": 477
+    },
+    {
+      "n": 31,
+      "ramification": 1,
+      "geometry": "initial",
+      "modes": 3,
+      "removed_zero_units": 12,
+      "maximum_source_degree_before": 2221,
+      "maximum_source_degree_after": 124,
+      "source_terms_before": 27706,
+      "source_terms_after": 2580
+    },
+    {
+      "n": 32,
+      "ramification": 1,
+      "geometry": "initial",
+      "modes": 3,
+      "removed_zero_units": 8,
+      "maximum_source_degree_before": 285,
+      "maximum_source_degree_after": 96,
+      "source_terms_before": 1120,
+      "source_terms_after": 48
+    },
+    {
+      "n": 4,
+      "ramification": 3,
+      "geometry": "mixed",
+      "modes": 2,
+      "removed_zero_units": 4,
+      "maximum_source_degree_before": 87,
+      "maximum_source_degree_after": 24,
+      "source_terms_before": 88,
+      "source_terms_after": 14
+    }
+  ]
+}

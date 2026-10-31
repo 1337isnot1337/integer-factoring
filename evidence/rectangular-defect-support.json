@@ -1,0 +1,175 @@
+{
+  "status": "exact rational Gaussian transforms and bounded defect supports; no Smith pressure claim",
+  "infinity_diagonalizations": [
+    {
+      "M": 2,
+      "matrix_size": 4,
+      "two_sided_inverse_and_diagonalization": true,
+      "regular_transformations_and_inverses": true,
+      "transported_core_generators_match": true
+    },
+    {
+      "M": 4,
+      "matrix_size": 8,
+      "two_sided_inverse_and_diagonalization": true,
+      "regular_transformations_and_inverses": true,
+      "transported_core_generators_match": true
+    },
+    {
+      "M": 8,
+      "matrix_size": 16,
+      "two_sided_inverse_and_diagonalization": true,
+      "regular_transformations_and_inverses": true,
+      "transported_core_generators_match": true
+    },
+    {
+      "M": 16,
+      "matrix_size": 32,
+      "two_sided_inverse_and_diagonalization": true,
+      "regular_transformations_and_inverses": true,
+      "transported_core_generators_match": true
+    }
+  ],
+  "cases": [
+    {
+      "place": "infinity",
+      "M": 2,
+      "active_modes": 4,
+      "spectator_modes": 0,
+      "regular_shears": 0,
+      "canonical_pairings_checked": 160,
+      "all_cross_pairings_checked": 169,
+      "coefficient_sha256": "078a60ab1b5963f600832956e1d4cab72b3d1a05793f99c21e5a208efde2d3fa"
+    },
+    {
+      "place": "zero",
+      "M": 2,
+      "active_modes": 4,
+      "spectator_modes": 0,
+      "regular_shears": 0,
+      "canonical_pairings_checked": 160,
+      "all_cross_pairings_checked": 169,
+      "coefficient_sha256": "e96b1683a1293d21a618248502bce6d9b471396f1ce97d9513e601e5ca9c5ca9"
+    },
+    {
+      "place": "infinity",
+      "M": 4,
+      "active_modes": 7,
+      "spectator_modes": 1,
+      "regular_shears": 1,
+      "canonical_pairings_checked": 160,
+      "all_cross_pairings_checked": 169,
+      "coefficient_sha256": "c608bb9a5c1e6a105f02516a26fa45081912399baaebd6e10a3fd97f0a753cf1"
+    },
+    {
+      "place": "zero",
+      "M": 4,
+      "active_modes": 8,
+      "spectator_modes": 0,
+      "regular_shears": 0,
+      "canonical_pairings_checked": 160,
+      "all_cross_pairings_checked": 169,
+      "coefficient_sha256": "23671ce0ddada075d6ebe10d508f7e43ecba7e407d0ca0077ab696ab0259858f"
+    },
+    {
+      "place": "infinity",
+      "M": 8,
+      "active_modes": 7,
+      "spectator_modes": 9,
+      "regular_shears": 13,
+      "canonical_pairings_checked": 160,
+      "all_cross_pairings_checked": 169,
+      "coefficient_sha256": "54c2a1186d6f49665d09ae89d8ed7459d108cfb5d5d6dd65d0e7e85102bda6ff"
+    },
+    {
+      "place": "zero",
+      "M": 8,
+      "active_modes": 9,
+      "spectator_modes": 7,
+      "regular_shears": 15,
+      "canonical_pairings_checked": 160,
+      "all_cross_pairings_checked": 169,
+      "coefficient_sha256": "38cb6945fb422f629a1488844ae8e6942931a832390748b49dd8af1ef0ea4339"
+    },
+    {
+      "place": "infinity",
+      "M": 16,
+      "active_modes": 7,
+      "spectator_modes": 25,
+      "regular_shears": 37,
+      "canonical_pairings_checked": 160,
+      "all_cross_pairings_checked": 169,
+      "coefficient_sha256": "8bac326f44bb67d80bcd6ba36cae7c6f62bae26f1ebffb07ca686fa78f0d9eaf"
+    },
+    {
+      "place": "zero",
+      "M": 16,
+      "active_modes": 9,
+      "spectator_modes": 23,
+      "regular_shears": 55,
+      "canonical_pairings_checked": 160,
+      "all_cross_pairings_checked": 169,
+      "coefficient_sha256": "a8e19759b3cca8ec45f7344ef79215b5457a7c8b26cbfc21a8817d8c1df8579a"
+    },
+    {
+      "place": "infinity",
+      "M": 32,
+      "active_modes": 7,
+      "spectator_modes": 57,
+      "regular_shears": 85,
+      "canonical_pairings_checked": 160,
+      "all_cross_pairings_checked": 169,
+      "coefficient_sha256": "a6e91c0d8d3baece6a14c6b77868b960640e9fe300d34086842cc7b988ff4cc7"
+    },
+    {
+      "place": "zero",
+      "M": 32,
+      "active_modes": 9,
+      "spectator_modes": 55,
+      "regular_shears": 135,
+      "canonical_pairings_checked": 160,
+      "all_cross_pairings_checked": 169,
+      "coefficient_sha256": "50033a6634ec497efb446735947911839bbdfcf580d6db9a1a7e65ccb1e9a6ae"
+    },
+    {
+      "place": "infinity",
+      "M": 64,
+      "active_modes": 7,
+      "spectator_modes": 121,
+      "regular_shears": 181,
+      "canonical_pairings_checked": 160,
+      "all_cross_pairings_checked": 169,
+      "coefficient_sha256": "85e2bd00db48f4b01e267c3d5379aa785c656b85dc6d7a22bebfd2e4099fb03d"
+    },
+    {
+      "place": "zero",
+      "M": 64,
+      "active_modes": 9,
+      "spectator_modes": 119,
+      "regular_shears": 295,
+      "canonical_pairings_checked": 160,
+      "all_cross_pairings_checked": 169,
+      "coefficient_sha256": "b361e976103e0cec8b17510e453a5750d23c20116b55b6e787058822ecd55afa"
+    },
+    {
+      "place": "infinity",
+      "M": 128,
+      "active_modes": 7,
+      "spectator_modes": 249,
+      "regular_shears": 373,
+      "canonical_pairings_checked": 160,
+      "all_cross_pairings_checked": 169,
+      "coefficient_sha256": "db734e9ff87102da83ff8d66afcbde38e703ebed6af12dbf20080282dbff51ec"
+    },
+    {
+      "place": "zero",
+      "M": 128,
+      "active_modes": 9,
+      "spectator_modes": 247,
+      "regular_shears": 615,
+      "canonical_pairings_checked": 160,
+      "all_cross_pairings_checked": 169,
+      "coefficient_sha256": "9d55269a3af9f66a5c0705ec9a8bc0c9579886f125b281efd9513ebc0c30af98"
+    }
+  ]
+}

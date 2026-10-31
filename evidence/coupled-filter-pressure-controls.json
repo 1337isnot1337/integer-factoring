@@ -1,0 +1,79 @@
+{
+  "status": "Floating formula regression only; not a strict pressure certificate.",
+  "full_expanded_profile_comparisons": 108,
+  "maximum_absolute_difference": 7.105427357601002e-15,
+  "controls": [
+    {
+      "prime": 2,
+      "n": 2,
+      "geometry": "initial",
+      "ramification": 1
+    },
+    {
+      "prime": 2,
+      "n": 2,
+      "geometry": "initial",
+      "ramification": 3
+    },
+    {
+      "prime": 2,
+      "n": 4,
+      "geometry": "terminal",
+      "ramification": 1
+    },
+    {
+      "prime": 2,
+      "n": 4,
+      "geometry": "terminal",
+      "ramification": 3
+    },
+    {
+      "prime": 2,
+      "n": 4,
+      "geometry": "mixed",
+      "ramification": 1
+    },
+    {
+      "prime": 2,
+      "n": 4,
+      "geometry": "mixed",
+      "ramification": 3
+    },
+    {
+      "prime": 3,
+      "n": 2,
+      "geometry": "initial",
+      "ramification": 1
+    },
+    {
+      "prime": 3,
+      "n": 2,
+      "geometry": "initial",
+      "ramification": 3
+    },
+    {
+      "prime": 3,
+      "n": 3,
+      "geometry": "terminal",
+      "ramification": 1
+    },
+    {
+      "prime": 3,
+      "n": 3,
+      "geometry": "terminal",
+      "ramification": 3
+    },
+    {
+      "prime": 3,
+      "n": 3,
+      "geometry": "mixed",
+      "ramification": 1
+    },
+    {
+      "prime": 3,
+      "n": 3,
+      "geometry": "mixed",
+      "ramification": 3
+    }
+  ]
+}

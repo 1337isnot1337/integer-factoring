@@ -1,0 +1,354 @@
+{
+  "matrix_controls": {
+    "complete_weighted_profile_equalities": 192,
+    "maximum_series_precision": 256,
+    "random_matrices": 48,
+    "seed": 1337,
+    "separated_minor_equalities": 4500,
+    "strict_threshold_negative_control": true
+  },
+  "qutrit_controls": {
+    "affine_threshold": 18,
+    "beyond_threshold_interpolation_values": [
+      19,
+      21
+    ],
+    "cost_certificate": {
+      "P": 3,
+      "evaluation": "11/10",
+      "ratio_denominator": 101096444552703336598632100,
+      "ratio_numerator": 99612598272277477054122841,
+      "strictly_less_than_one": true
+    },
+    "endpoint_coefficient_equalities": 891,
+    "factoring_exponent_improvement_claimed": false,
+    "gaussian_optimum_secondary_expectation": "-1/2",
+    "profiles": [
+      {
+        "P": 1,
+        "infinity": [
+          -4,
+          -3,
+          -3,
+          -2,
+          -2,
+          -1,
+          0,
+          1,
+          2
+        ],
+        "series_precisions": [
+          16,
+          8
+        ],
+        "zero": [
+          0,
+          3,
+          3,
+          4,
+          4,
+          4,
+          5,
+          5,
+          8
+        ]
+      },
+      {
+        "P": 3,
+        "infinity": [
+          -8,
+          -5,
+          -5,
+          -2,
+          -2,
+          0,
+          1,
+          3,
+          6
+        ],
+        "series_precisions": [
+          32,
+          16
+        ],
+        "zero": [
+          0,
+          5,
+          5,
+          8,
+          8,
+          8,
+          11,
+          11,
+          16
+        ]
+      },
+      {
+        "P": 5,
+        "infinity": [
+          -12,
+          -7,
+          -7,
+          -2,
+          -2,
+          0,
+          3,
+          5,
+          10
+        ],
+        "series_precisions": [
+          32,
+          32
+        ],
+        "zero": [
+          0,
+          7,
+          7,
+          12,
+          12,
+          12,
+          17,
+          17,
+          24
+        ]
+      },
+      {
+        "P": 7,
+        "infinity": [
+          -16,
+          -9,
+          -9,
+          -2,
+          -2,
+          0,
+          5,
+          7,
+          14
+        ],
+        "series_precisions": [
+          64,
+          32
+        ],
+        "zero": [
+          0,
+          9,
+          9,
+          16,
+          16,
+          16,
+          23,
+          23,
+          32
+        ]
+      },
+      {
+        "P": 9,
+        "infinity": [
+          -20,
+          -11,
+          -11,
+          -2,
+          -2,
+          0,
+          7,
+          9,
+          18
+        ],
+        "series_precisions": [
+          64,
+          64
+        ],
+        "zero": [
+          0,
+          11,
+          11,
+          20,
+          20,
+          20,
+          29,
+          29,
+          40
+        ]
+      },
+      {
+        "P": 11,
+        "infinity": [
+          -24,
+          -13,
+          -13,
+          -2,
+          -2,
+          0,
+          9,
+          11,
+          22
+        ],
+        "series_precisions": [
+          64,
+          64
+        ],
+        "zero": [
+          0,
+          13,
+          13,
+          24,
+          24,
+          24,
+          35,
+          35,
+          48
+        ]
+      },
+      {
+        "P": 13,
+        "infinity": [
+          -28,
+          -15,
+          -15,
+          -2,
+          -2,
+          0,
+          11,
+          13,
+          26
+        ],
+        "series_precisions": [
+          64,
+          64
+        ],
+        "zero": [
+          0,
+          15,
+          15,
+          28,
+          28,
+          28,
+          41,
+          41,
+          56
+        ]
+      },
+      {
+        "P": 15,
+        "infinity": [
+          -32,
+          -17,
+          -17,
+          -2,
+          -2,
+          0,
+          13,
+          15,
+          30
+        ],
+        "series_precisions": [
+          128,
+          64
+        ],
+        "zero": [
+          0,
+          17,
+          17,
+          32,
+          32,
+          32,
+          47,
+          47,
+          64
+        ]
+      },
+      {
+        "P": 17,
+        "infinity": [
+          -36,
+          -19,
+          -19,
+          -2,
+          -2,
+          0,
+          15,
+          17,
+          34
+        ],
+        "series_precisions": [
+          128,
+          128
+        ],
+        "zero": [
+          0,
+          19,
+          19,
+          36,
+          36,
+          36,
+          53,
+          53,
+          72
+        ]
+      },
+      {
+        "P": 19,
+        "infinity": [
+          -40,
+          -21,
+          -21,
+          -2,
+          -2,
+          0,
+          17,
+          19,
+          38
+        ],
+        "series_precisions": [
+          128,
+          128
+        ],
+        "zero": [
+          0,
+          21,
+          21,
+          40,
+          40,
+          40,
+          59,
+          59,
+          80
+        ]
+      },
+      {
+        "P": 21,
+        "infinity": [
+          -44,
+          -23,
+          -23,
+          -2,
+          -2,
+          0,
+          19,
+          21,
+          42
+        ],
+        "series_precisions": [
+          128,
+          128
+        ],
+        "zero": [
+          0,
+          23,
+          23,
+          44,
+          44,
+          44,
+          65,
+          65,
+          88
+        ]
+      }
+    ],
+    "secondary_expectation_identity_controls": 4,
+    "small_scale_secondary_expectation": [
+      "2/3",
+      "-14/9"
+    ]
+  },
+  "status": "pass"
+}
