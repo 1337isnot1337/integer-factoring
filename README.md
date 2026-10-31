@@ -199,6 +199,18 @@ It applies when the top coefficient is a monomial, over every fixed
 coefficient extension. Deeper blocks and nonmonomial top coefficients
 remain open. `make verify-operator-field-flags` checks both results.
 
+The [four-mode resonance reduction](research/binary-four-mode-resonance.md)
+does reach a deeper occupation block: two equal-energy two-particle
+states admit an arbitrary invertible endpoint matrix. Both complete
+profiles reduce to five scalar factors and one two-by-two matrix.
+An exact polynomial-degree obstruction excludes one subfamily;
+[complete Laurent catalogues](research/resonant-laurent-catalogues.md)
+then cover 11,796,480 admissible kernels in each of two stated coefficient
+windows. Their exact signatures were searched over all 2,360 resonant
+quadruples at interval 32, with no numerical gain. The windows overlap,
+and the pressure conclusions concern the recorded finite grids and
+refinements. `make verify-resonant-operators` replays the exact controls.
+
 The [reflection-pair compression](research/reflection-dual-rail-compression.md)
 retains one occupied mode from every reflected pair. A characteristic-two
 homology calculation gives an explicit polynomial Gaussian on the

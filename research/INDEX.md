@@ -14,6 +14,10 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Four-mode resonant occupation transfers](binary-four-mode-resonance.md): complementary equal-energy states reduce to five scalar factors and a two-by-two block, with exact profiles and an all-scale obstruction for polynomial blocks of degree at most twice the interval scale.
+
+- [Complete Laurent resonance catalogues](resonant-laurent-catalogues.md): exact multiplicities and profile signatures cover every invertible-endpoint F4 matrix in two specified three-power windows; numerical searches over all resonant interval-32 quadruples found no gain.
+
 - [Operator lattices over fixed extension fields](identity-operator-field-flags.md): nonbinary row bases and F16 endpoint lifts combine with a small scalar-Pascal source formula for every selected subset.
 
 - [One-hole minimum-order tradeoff](identity-operator-minimum-tradeoff.md): with a monomial top coefficient, any positive infinity-minimum gain forces a quantified zero-minimum loss over every fixed coefficient extension and arbitrary selected indices.

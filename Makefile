@@ -417,3 +417,8 @@ verify-prime-power-filters-extended:
 verify-operator-field-flags:
 	python3 tools/check_f4_operator_lattice_flags.py
 	python3 tools/check_identity_operator_minimum_tradeoff.py
+
+.PHONY: verify-resonant-operators
+verify-resonant-operators:
+	python3 tools/check_resonant_identity_operators.py
+	python3 tools/check_resonant_laurent_catalogue.py
