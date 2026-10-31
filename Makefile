@@ -602,3 +602,7 @@ verify-multiplier-automata:
 verify-global-code-multipliers:
 	OPENBLAS_NUM_THREADS=1 python3 tools/check_global_code_multipliers.py --output /tmp/integer-factoring-global-code-multipliers-replay.json
 
+.PHONY: verify-quartic-tiles
+verify-quartic-tiles:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_reflection_quartic_tiles.py --output /tmp/integer-factoring-quartic-tiles-replay.json
+

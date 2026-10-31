@@ -91,6 +91,13 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 
 ## Current research frontier
 
+The [growing quartic construction](research/reflection-charged-quartic-tiles.md)
+adds nonquadratic occupation gates on a growing fraction of physical modes.
+An exact charge budget also permits specified endpoint poles: they cancel in
+every retained coefficient after paired type restriction. The construction
+includes its effective degree and restored local profiles; it supplies new
+search families, without an improved rate yet. Run `make verify-quartic-tiles`.
+
 The [one-support multiplier reduction](research/boolean-multiplier-automata.md)
 removes polynomial-degree and coefficient-field cutoffs from a growing global
 Boolean-filter family. Its finite automaton retains continuous ramified
