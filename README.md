@@ -77,6 +77,8 @@ See the [research index](research/INDEX.md) for completed arguments, scoped obst
 
 The [binary quadratic catalogue](research/binary-quadratic-catalogue.md) checks all 65,536 scalar binary interpolations with the stated identity and crossing endpoints. Their ungauged Smith pressure has sharp all-scale minimum `256/27`; this supplies no stronger factoring exponent. Reproduce with `python3 tools/check_quadratic_crossings.py --full`; the default command checks representatives and an additional sample.
 
+The [extended catalogues](research/extended-binary-polynomial-catalogues.md) cover every column-rank-one binary constant tensor in quadratic paths, and all parity-preserving binary cubics and quartics. Their same sharp pressure floor is certified exactly. The quartic catalogue has 16,777,216 tensors; its independent replay checks representatives and a separate sample. Run `python3 tools/check_extended_binary_crossings.py` for the focused checks and `--full` for complete independent replay of the smaller structured catalogues.
+
 ## Contribution and attribution
 
 Start with the [contributor quickstart](docs/START_HERE.md) and

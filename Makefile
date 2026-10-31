@@ -1,4 +1,4 @@
-.PHONY: verify verify-docs verify-frontier verify-post-half verify-formal verify-k6 verify-half-appendix help
+.PHONY: verify verify-docs verify-frontier verify-polynomial-crossings verify-post-half verify-formal verify-k6 verify-half-appendix help
 
 verify: verify-docs verify-frontier
 	python3 -m unittest discover -s tests -v
@@ -13,6 +13,10 @@ verify: verify-docs verify-frontier
 
 verify-docs:
 	python3 tools/check_docs.py
+
+verify-polynomial-crossings:
+	python3 tools/check_quadratic_crossings.py
+	python3 tools/check_extended_binary_crossings.py
 
 verify-post-half:
 	python3 tools/check_half_piece_ranks.py --full

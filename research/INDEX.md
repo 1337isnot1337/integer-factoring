@@ -27,6 +27,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 ## Obstructions and work beyond 1/2
 
 - [Complete binary quadratic catalogue](binary-quadratic-catalogue.md): all 65,536 fixed-endpoint scalar binary quadratics, 162 paired profiles, and an exact all-scale pressure floor of 256/27 for the stated ungauged cuts.
+- [Extended binary polynomial catalogues](extended-binary-polynomial-catalogues.md): all nonzero rank-one column constants in quadratics, complete parity cubics and quartics, and a separately marked million-path unrestricted cubic sample; no improved pressure.
 
 - [Directions beyond half](post-half-directions.md): experiments, scope, and unresolved questions.
 - [Network tradeoff](half-top-structure.md): restriction for the current local-enumeration and wire-channel constructor.

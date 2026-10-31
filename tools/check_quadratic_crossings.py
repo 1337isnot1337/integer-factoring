@@ -12,14 +12,17 @@ import random
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def matrices(mask):
+def matrices(mask, degree=2, constants=(9, 9)):
     infinity, zero = [[0] * 4 for _ in range(4)], [[0] * 4 for _ in range(4)]
     for x, y, u, v in product(range(2), repeat=4):
-        identity, crossing = int(x == u and y == v), int(x == v and y == u)
-        middle = mask >> (8*x + 4*y + 2*u + v) & 1
-        leading = identity ^ crossing ^ middle
-        infinity[2*x+y][2*u+v] = leading | middle << 1 | identity << 2
-        zero[2*x+u][2*y+v] = identity | middle << 1 | leading << 2
+        a, b = constants
+        identity = (a >> (2*x+u) & 1) * (b >> (2*y+v) & 1)
+        crossing = int(x == v and y == u)
+        coefficients = [identity] + [mask >> (16*(j-1) + 8*x + 4*y + 2*u + v) & 1
+                                     for j in range(1, degree)]
+        coefficients.append(crossing ^ sum(coefficients) % 2)
+        infinity[2*x+y][2*u+v] = sum(value << j for j, value in enumerate(reversed(coefficients)))
+        zero[2*x+u][2*y+v] = sum(value << j for j, value in enumerate(coefficients))
     return infinity, zero
 
 
@@ -39,12 +42,13 @@ def orders(matrix):
     """Smith orders from F2 ranks of block Toeplitz maps modulo t^k."""
     previous_rank = previous_count = 0
     result = []
-    for precision in range(1, 10):
+    degree = max(entry.bit_length() - 1 for row in matrix for entry in row)
+    for precision in range(1, 4*degree+2):
         rows = []
         for output_degree in range(precision):
             for row in matrix:
                 packed = 0
-                for input_degree in range(max(0, output_degree - 2), output_degree + 1):
+                for input_degree in range(max(0, output_degree - degree), output_degree + 1):
                     for j, entry in enumerate(row):
                         if entry >> (output_degree - input_degree) & 1:
                             packed |= 1 << (4*input_degree + j)
@@ -55,7 +59,7 @@ def orders(matrix):
         if count == 4:
             return tuple(result)
         previous_count, previous_rank = count, rank
-    raise AssertionError("endpoint implies determinant degree at most eight")
+    raise AssertionError("endpoint implies determinant degree at most four times the degree")
 
 
 def convolution(a, b):
@@ -111,7 +115,7 @@ def bernstein_certificate(poly):
     return {"leaves": leaves, "max_depth": max_depth}
 
 
-def certify(catalogue):
+def certify(catalogue, degree=2):
     keys = [tuple(tuple(row[side]) for side in ("infinity", "zero")) for row in catalogue]
     pareto = [key for key in keys if not any(
         other != key and all(a >= b for a, b in zip(sum(other, ()), sum(key, ())))
@@ -119,15 +123,21 @@ def certify(catalogue):
     certificates = []
     for key in pareto:
         poly = [27 * value for value in profile_polynomial(key)]
-        poly[2] -= 256
+        poly[degree] -= 256
         # Exact equality cases are the elementary pencil and its z -> z^2 pullback.
         equality = None
-        if key == ((1, 2, 2, 3), (0, 1, 1, 2)):
-            poly = divide_exact(poly, [1, -6, 9])
-            equality = "x=1/3"
-        elif key == ((0, 2, 2, 4), (0, 2, 2, 4)):
-            poly = divide_exact(poly, [1, 0, -6, 0, 9])
-            equality = "x^2=1/3"
+        for ramification in range(1, degree+1):
+            factor = [0] * (2*ramification+1)
+            factor[0], factor[ramification], factor[-1] = 1, -6, 9
+            if len(poly) < len(factor):
+                continue
+            try:
+                quotient = divide_exact(poly, factor)
+            except AssertionError:
+                continue
+            poly = quotient
+            equality = "x=1/3" if ramification == 1 else f"x^{ramification}=1/3"
+            break
         certificates.append({"profile": key, "equality": equality,
                              **bernstein_certificate(poly)})
     return certificates
@@ -141,7 +151,9 @@ def main():
     catalogue = data["profiles"]
     assert sum(row["count"] for row in catalogue) == 65536
     expected = {(tuple(row["infinity"]), tuple(row["zero"])): row for row in catalogue}
+    witnesses = {row["first_mask"]: key for key, row in expected.items()}
     assert len(expected) == len(catalogue) == 162
+    assert len(witnesses) == len(expected)
     rng = random.Random(6546458276)
     masks = range(65536) if args.full else sorted(
         {row["first_mask"] for row in catalogue} | {rng.randrange(65536) for _ in range(256)})
@@ -151,8 +163,8 @@ def main():
         assert key in expected, (mask, key)
         counts[key] += 1
         first.setdefault(key, mask)
-        if mask == expected[key]["first_mask"]:
-            assert key == (tuple(expected[key]["infinity"]), tuple(expected[key]["zero"]))
+        if mask in witnesses:
+            assert key == witnesses[mask]
     if args.full:
         assert all(counts[key] == row["count"] and first[key] == row["first_mask"]
                    for key, row in expected.items())
