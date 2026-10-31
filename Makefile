@@ -33,6 +33,10 @@ verify-quadratic-register:
 verify-quantum-pascal:
 	python3 tools/check_quantum_pascal_crossings.py
 
+.PHONY: verify-smith-capacity
+verify-smith-capacity:
+	python3 tools/check_smith_pressure_convexity.py
+
 .PHONY: verify-multilevel-packet
 verify-multilevel-packet:
 	python3 tools/check_multilevel_thue_morse_packet.py

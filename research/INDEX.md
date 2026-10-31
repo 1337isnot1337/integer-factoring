@@ -232,6 +232,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 - [Quantum-Pascal trace crossings](quantum-pascal-trace-crossings.md): divided-power polynomial endpoints through fifteen letters, an exact degree formula, and a unitriangular trace-basis obstruction at `rho>=3/4` for bare and unweighted multipoint profiles; physical word types remain separate.
 
+- [Convex fixed-type Smith capacity](fixed-type-smith-capacity.md): global entropy-weighted minor-flag supports, a rational dual-certificate criterion, exact convexity controls, and a bounded numerical paired-type solver with separate primal and LP estimates.
+
 - [All-degree homogeneous Boolean charge bands](homogeneous-boolean-charge-bands.md): a degree-independent loss cap and stronger Gaussian floors exclude all exterior charges and a linearly growing interior band, including overlapping monomials.
 
 - [All-digit charged Gaussian floor](all-digit-charged-gaussian-floor.md): strict monotonicity in every real digit parameter and positive full critical pressure for all `q>1`, charges, scales, and interval lengths; exact compact certificates plus analytic tails.

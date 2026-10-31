@@ -129,6 +129,14 @@ polynomial diagonal vacua. Physical word-type restrictions remain outside
 that proof. Run `make verify-quantum-pascal` for exact endpoints through
 fifteen letters, direct trace controls, and polynomial determinant checks.
 
+The [fixed-type capacity argument](research/fixed-type-smith-capacity.md)
+makes physical gauge optimization convex once the two paired types are
+fixed. Entropy-weighted minor flags give global affine supports and an
+exact rational certificate criterion. `make verify-smith-capacity` runs
+the exact controls. The optional numerical solver reports its parameter
+box, primal value, LP estimate, and gap; its current quantum-Pascal example
+does not improve the score.
+
 The [exact Gaussian fixed-type certificates](research/reflection-gaussian-fixed-type-duals.md)
 prove global minima over every independent mode gauge and positive scale
 for four explicit rational physical types, through interval length 32.
