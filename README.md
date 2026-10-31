@@ -175,6 +175,14 @@ both profiles, including the auxiliary zero units in the mixed case.
 These constructions permit correlations between modes; no rate gain is
 claimed. `make verify-coupled-filters` replays the controls.
 
+The [reflection-pair compression](research/reflection-dual-rail-compression.md)
+retains one occupied mode from every reflected pair. A characteristic-two
+homology calculation gives an explicit polynomial Gaussian on the
+square root of the original alphabet, with complete profiles at both
+cuts. Its natural pressure equals half the original pressure at twice
+the scale, so the rate is unchanged. The smaller seed makes further
+logical-core perturbations and independent-gauge searches accessible.
+
 The [Walsh permanent calculation](research/walsh-principal-permanents.md)
 gives all-size scalar valuation formulas beyond the determinant model.
 It also proves that exponentially many grouped modes survive the current

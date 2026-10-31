@@ -14,6 +14,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Reflection-pair Gaussian compression](reflection-dual-rail-compression.md): an explicit characteristic-two homology calculation reduces the physical alphabet from `2^M` to `2^(M/2)`, with a polynomial endpoint, complete two-cut profiles, and the identical natural rate at twice the scale.
+
 - [Complete finite frozen-row searches](frozen-core-complete-search.md): exact coefficient flags, affine cell counts, and rational-scale profile comparisons cover all 4,194,304 rows in each of 86 stated gauge/scale/orbit cases, with no same-gauge Gaussian improvement.
 
 - [Strict fixed-core charge projections](strict-core-charge-projection.md): regular support on at most four times the physical core size, exact physical-core gauges, and complete fourteen-class screens at intervals eight and sixteen.

@@ -320,3 +320,7 @@ verify-core-charge-projections:
 .PHONY: verify-frozen-core-complete
 verify-frozen-core-complete:
 	python3 tools/check_frozen_core_complete_search.py
+
+.PHONY: verify-reflection-compression
+verify-reflection-compression:
+	python3 tools/check_reflection_dual_rail_compression.py
