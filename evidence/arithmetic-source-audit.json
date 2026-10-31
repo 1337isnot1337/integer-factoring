@@ -4,13 +4,14 @@
   "retrieved_url": "https://www.cs.umd.edu/~gasarch/TOPICS/factoring/rigorous.pdf",
   "pdf_sha256": "ebf5d89ed9c89f0e4c51abbc2b49be8e52d2c9326dc8d2b347f533ceaef51e14",
   "pdf_pages": 34,
-  "visually_inspected_pdf_pages": [1, 6, 13, 24, 25, 27],
+  "visually_inspected_pdf_pages": [1, 6, 13, 21, 22, 24, 25, 27],
   "extraction": "Scanned PDF; local OCR used for navigation, critical formulas checked against rendered pages",
   "checked_source_facts": {
     "generator_prime_range": "z > exp(c4 (log |Delta|)^2), Theorem 4.1",
     "relation_sampling": "uniform exponent vectors in {1,...,|Delta|}^m, Algorithm 10.1",
     "torsion_coverage": "hidden lattice cosets modulo 2L, proof of Theorem 10.3",
-    "two_rank_bound": "|C_Delta[2]| <= 2^omega(Delta), Theorem 2.5"
+    "two_rank_bound": "|C_Delta[2]| <= 2^omega(Delta), Theorem 2.5",
+    "smooth_density_radius": "Theorem 8.1 proof counts a <= x = (1/2) sqrt(|Delta|/d), 1 <= d <= 12, before applying Lemma 2.10"
   },
   "scope": "Source audit, not a proof of deterministic generator construction or a stronger factoring bound"
 }

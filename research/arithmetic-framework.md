@@ -105,9 +105,11 @@ check 40 discriminants, all associative triples, smooth prime-form words,
 and proper-factor extraction for 18 targets. Those controls enumerate
 classes and orders; they do not implement fast generator/relation search.
 
-Next work is to express the pair-extraction primitive as a bounded smooth
-norm problem for a binary quadratic form and investigate deterministic
-arithmetic extraction. The prime-form generator requirement remains a
+The [bounded smooth-norm interface](bounded-smooth-norm.md) now proves the
+exact arithmetic characterization and implements conversion of supplied
+witnesses. Its exact divisor step costs 2^O(b/log b); locating a witness
+quickly remains open. The next work is deterministic arithmetic search
+within that interface. The prime-form generator requirement remains a
 separate obligation for complete two-torsion recovery. The
 [density/index transfer](arithmetic-density-lift.md) gives an alternative:
 relations on the possibly proper small factor-base subgroup suffice for a

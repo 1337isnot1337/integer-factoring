@@ -90,6 +90,10 @@ A [density/index transfer](research/arithmetic-density-lift.md) also turns
 relations on a possibly proper small-prime subgroup into a global
 class-number multiple. Fast pair extraction and deterministic coverage of
 the missing ambiguous directions remain unresolved.
+The [bounded smooth-norm interface](research/bounded-smooth-norm.md)
+characterizes the required pairs and converts supplied representations at
+`2^O(b/log b)` divisor-search cost; locating those representations efficiently
+is still open.
 
 ## Contribution and attribution
 
