@@ -113,6 +113,12 @@ extension fields and tensor algebras. Both operand boxes have invertible
 Fourier weights at every frequency. A charged roughness pretest and
 radix rounding preserve any proposed saving exponent below one; the
 remaining task is a faster evaluator for those coupled arithmetic queries.
+The [weighted dyadic carry extension](research/weighted-dyadic-carry-contraction.md)
+also makes the entire carry transform invertible. With a fixed second
+operand weight, inverse-Frobenius alignment reduces recovery to a
+univariate field scan and combines every large carry and operand box
+into one common Frobenius quotient. Its remaining operand sum and cyclic
+coefficient extraction still need an improved algorithm.
 
 [Coupled rational physical frames](research/coupled-rational-physical-frames.md)
 cancel poles across both paired alphabets while preserving the exact
@@ -151,6 +157,7 @@ make verify-asymmetric-crossings # Supporting-line algebra and numerical-oracle 
 make verify-weighted-adaptive # Exact local-gauge catalogues and typed reconstructions
 make verify-basis-searches # Completed ternary/fused winner replays and basis-oracle controls
 make verify-frobenius-recovery # Punctured sparse recovery, unit boxes, and radix costs
+make verify-weighted-carries # Exact padded carries, joint quotient, and aligned recovery
 make verify-physical-frames # Exact polynomial and coupled rational physical frames
 make verify-ternary-majorization # Sharp uniform-type gauge certificates for two bases
 make verify-schur-fermion # Complete Schur entry formulas and exact comparisons
