@@ -19,6 +19,7 @@ verify-bell:
 	python3 tools/check_bell_pencils.py
 	python3 tools/check_bell_profiles.py evidence/bell-synthesis-d4h4.json evidence/bell-synthesis-d8h3.json
 	python3 tools/check_folded_bell.py
+	python3 tools/check_code_folded_bell.py
 
 verify-post-half:
 	python3 tools/check_half_piece_ranks.py --full
