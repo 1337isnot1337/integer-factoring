@@ -14,13 +14,32 @@ def sign(value: int) -> int:
     return -1 if value.bit_count() % 2 else 1
 
 
-def transform(values: tuple[int, ...], bits: int, prime: int) -> tuple[int, ...]:
+def direct_transform(values: tuple[int, ...], bits: int, prime: int) -> tuple[int, ...]:
     d = 1 << bits
     if prime == 2 or len(values) != d * d:
         raise ValueError("requires odd characteristic and d squared entries")
     inverse = pow(d, -1, prime)
     return tuple(inverse * sum(sign((a ^ c) & (b ^ e)) * values[a * d + b]
                                for a in range(d) for b in range(d)) % prime
+                 for c in range(d) for e in range(d))
+
+
+def transform(values: tuple[int, ...], bits: int, prime: int) -> tuple[int, ...]:
+    """The same signed transform in O(d^2 log d) field operations."""
+    d = 1 << bits
+    if prime == 2 or len(values) != d * d:
+        raise ValueError("requires odd characteristic and d squared entries")
+    work = [sign(a & b) * values[a * d + b] % prime
+            for a in range(d) for b in range(d)]
+    step = 1
+    while step < len(work):
+        for block in range(0, len(work), 2 * step):
+            for j in range(block, block + step):
+                a, b = work[j], work[j + step]
+                work[j], work[j + step] = (a + b) % prime, (a - b) % prime
+        step *= 2
+    inverse = pow(d, -1, prime)
+    return tuple(sign(c & e) * inverse * work[e * d + c] % prime
                  for c in range(d) for e in range(d))
 
 

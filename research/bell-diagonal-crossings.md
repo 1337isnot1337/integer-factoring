@@ -77,6 +77,12 @@ in every field of characteristic different from two; no square roots or
 roots of unity beyond `-1` are required. In particular the construction
 is valid over `F_3` without descent or a scalar decoder.
 
+The implementation factors (3) into a chirp, a Walsh transform, an index
+swap and a final chirp. This uses `O(d^2 log d)` field operations. The
+literal quadratic-time formula is retained as an independent oracle;
+15 exact comparisons through physical dimension 32 augment the physical
+tensor checks below.
+
 ## 2. Complete tensor-power span and effective polynomial paths
 
 Write `q=d^2` and

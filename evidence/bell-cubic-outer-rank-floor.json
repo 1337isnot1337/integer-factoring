@@ -3,12 +3,81 @@
   "random_seed": 20261101,
   "exact_endpoint_cases": 216,
   "exact_pressure_comparisons": 864,
+  "exact_quartic_endpoint_cases": 216,
+  "exact_quartic_pressure_comparisons": 864,
+  "quartic_certificates": [
+    {
+      "physical_dimension": 8,
+      "M": 27,
+      "remaining": 36,
+      "sqrt_pressure_floor": 20,
+      "compact_interval": [
+        2,
+        4
+      ],
+      "positive_bernstein_coefficients": [
+        [
+          26,
+          1
+        ],
+        [
+          31,
+          2
+        ],
+        [
+          23,
+          3
+        ],
+        [
+          37,
+          2
+        ],
+        [
+          80,
+          1
+        ]
+      ]
+    },
+    {
+      "physical_dimension": 16,
+      "M": 119,
+      "remaining": 136,
+      "sqrt_pressure_floor": 53,
+      "compact_interval": [
+        4,
+        5
+      ],
+      "positive_bernstein_coefficients": [
+        [
+          20,
+          1
+        ],
+        [
+          31,
+          4
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          35,
+          4
+        ],
+        [
+          31,
+          1
+        ]
+      ]
+    }
+  ],
+  "dimension_32_relaxation": "At x=7, necessary sqrt-pressure is 6394/49 with rho<12/17<1/sqrt(2); no path supplied",
   "dimension_inequality_powers": [
     3,
     32
   ],
   "dimension_eight_pressure_floor": 432,
   "uniform_rho_floor": "strictly greater than 5/7 > 1/sqrt(2)",
-  "scope": "Cubic order/degree pressure with rank-one constant row and leading column coefficients; not an actual-rank exclusion",
+  "scope": "Outer-rank-one cubic pressure at all d>=8, and quartic pressure at d=8,16; not actual-rank exclusions",
   "factoring_score": "1/2; unchanged"
 }

@@ -142,6 +142,10 @@ bound in (1) can exceed `d` and be vacuous. Also, tensor-powering a fixed
 quartic seed increases its degree; (4) is not a necessary growing-matrix
 condition for every possible fixed-seed factoring improvement.
 
+The [refined endpoint floor](bell-cubic-outer-rank-floor.md) separately
+excludes the stated rank-one outer quartics at `d=8,16`. Its first
+unexcluded power-of-two alphabet at least eight is 32.
+
 ## 4. What existing non-rigidity results do and do not supply
 
 [Alman and Williams, Theorem 1.1](https://arxiv.org/abs/1611.05558)
@@ -173,10 +177,10 @@ This uses one free vector rather than five independent coefficient
 vectors. Its pressure must still be checked; matrix rank alone does
 not give the needed coordinate sparsity.
 
-The next constructive target is therefore a sparse self-dual modification
-with this stronger decomposition, or a non-self-reciprocal/other-degree
-family outside the reduction. The strongest proved factoring score stays
-`1/2`.
+The sparse self-dual modification is a precise remaining mathematical
+question, not an active search claim. This Bell lane is checkpointed and
+released while the campaign shifts to factoring-specific arithmetic.
+The strongest proved factoring score stays `1/2`.
 
 ## 5. Exact replay
 
@@ -190,3 +194,27 @@ dimensions `2,4,8,16`. They verify the chirped transform identity, its
 rank preservation under translations, the endpoint matrix decomposition,
 and 240 exact rational pressure-to-rigidity comparisons. These controls
 support the displayed algebra; they are not a global quartic search.
+
+## 6. Completed sparse-half searches
+
+The optional driver [search_bell_quartic_halves.py](../tools/search_bell_quartic_halves.py)
+searches the one-vector construction above over `F_3`. Coordinate moves
+are mixed with exact affine-subspace Fourier moves whose two support
+sizes multiply to `d^2`. Each run checks eight moves against the full
+transform and saves atomic prefix checkpoints. The completed schedules
+are finite heuristics, not catalogues or optimality certificates.
+
+```sh
+python3 tools/search_bell_quartic_halves.py --bits 4 --steps 131072 --fourier-moves --output /tmp/quartic-d16.json
+python3 tools/search_bell_quartic_halves.py --bits 5 --steps 65536 --fourier-moves --output /tmp/quartic-d32.json
+python3 tools/check_bell_profiles.py evidence/bell-quartic-fourier-d16.json evidence/bell-quartic-fourier-d32.json
+```
+
+The [dimension-16 run](../evidence/bell-quartic-fourier-d16.json) visited
+24,719 valuation profiles and retained pressure exponent `0.853455...`.
+The [dimension-32 run](../evidence/bell-quartic-fourier-d32.json) visited
+43,780 profiles and retained `0.858673...`. Neither improved its starting
+path. Exact endpoint, transformed coefficients, and rational pressure
+receipts were read back independently; the checker also passed 2,448
+dense affine controls and 36 literal coefficient-rank bounds. Interrupted
+prototype schedules are excluded from these counts.

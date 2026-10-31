@@ -95,8 +95,9 @@ The [signed-boundary extension](research/signed-boundary-crossings.md)
 preserves duality under more general intertwiners and isotropic reductions,
 with exact common-factor costs; its strict rank improvement remains open.
 An [endpoint pressure theorem](research/bell-cubic-outer-rank-floor.md)
-also excludes cubic Bell paths with the stated two outer rank-one
-coefficients in every odd characteristic, while leaving quartic targets open.
+excludes the stated outer-rank-one cubics in every odd characteristic,
+and quartics at local dimensions 8 and 16. Its first open power-of-two
+quartic alphabet at least eight is 32.
 For [self-reciprocal quartics](research/bell-quartic-rigidity.md), an exact
 matrix identity relates a pressure witness to sparse Hadamard rank reduction;
 it is a necessary condition and supplies no improved factoring bound.

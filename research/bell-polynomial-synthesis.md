@@ -127,6 +127,7 @@ Both a live partial receipt and the completed records passed the same
 coefficient and rational-bound readback.
 
 The [cubic endpoint theorem](bell-cubic-outer-rank-floor.md) independently
-closes the outer-rank-one cubic pressure targets over every odd field.
-Quartic paths, cubic outer ranks outside that theorem, and actual-rank
-compression remain constructive targets.
+closes the outer-rank-one cubic pressure targets over every odd field,
+and its full channel count closes quartic local dimensions eight and
+sixteen. Larger quartics, other outer ranks, and actual-rank compression
+remain constructive targets.

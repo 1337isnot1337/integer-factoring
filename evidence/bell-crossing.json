@@ -4,6 +4,7 @@
   "physical_eigenbasis_checks": 594,
   "independent_elimination_ranks": 192,
   "literal_tensor_word_profile_checks": 324,
+  "fast_against_direct_transform_checks": 15,
   "small_seed_determinant_floors": [
     {
       "symbols": 4,

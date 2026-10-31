@@ -8,7 +8,7 @@ from math import log2
 import random
 
 from bell_crossing import (
-    bell_basis, common_determinant_floor, direct_pencil_profiles,
+    bell_basis, common_determinant_floor, direct_pencil_profiles, direct_transform,
     entropy_exceeds, matmul, pencil_profiles, physical_matrix, rank_mod, transform,
 )
 
@@ -50,6 +50,12 @@ def check() -> dict:
         for length in range(1, 5):
             assert pencil_profiles(values, 1, length) == direct_pencil_profiles(values, 1, length)
             literal_profiles += 1
+    direct_transform_checks = 0
+    for bits in range(1, 6):
+        for prime in (3, 5, 7):
+            values = tuple(rng.randrange(prime) for _ in range(1 << (2 * bits)))
+            assert transform(values, bits, prime) == direct_transform(values, bits, prime)
+            direct_transform_checks += 1
     # Negative control: reducing integer word multiplicities mod p is wrong.
     assert pencil_profiles((1, 1, 1, 1), 1, 3)[0] == (0, 0, 0, 64)
     assert pencil_profiles((0, 0, 0, 0), 1, 3)[0] == (64, 0, 0, 0)
@@ -67,6 +73,7 @@ def check() -> dict:
             "physical_eigenbasis_checks": physical_checks,
             "independent_elimination_ranks": rank_checks,
             "literal_tensor_word_profile_checks": literal_profiles,
+            "fast_against_direct_transform_checks": direct_transform_checks,
             "small_seed_determinant_floors": floors,
             "factoring_exponent": "1/2; no improvement established"}
 

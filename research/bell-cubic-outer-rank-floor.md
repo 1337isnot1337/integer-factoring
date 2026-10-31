@@ -1,4 +1,4 @@
-# A uniform cubic pressure floor from the endpoint alone
+# Endpoint pressure floors for cubics and small quartics
 
 ## Claim and scope
 
@@ -7,13 +7,15 @@ in the [Bell local space](bell-diagonal-crossings.md) have the exact
 crossing endpoint. Suppose its constant coefficient has **row rank one**
 and its leading coefficient has **column rank one**. At every physical
 dimension `d=2^k>=8`, its order/degree pressure parameter is strictly
-greater than `5/7>1/sqrt(2)`.
+greater than `5/7>1/sqrt(2)`. Keeping every remaining channel also
+excludes the analogous quartic targets at `d=8` and `d=16`; the first
+power-of-two dimension at least eight left open by this bound is 32.
 
 This excludes the displayed sufficient criterion for those cubic targets,
 without requiring self-reciprocity, prescribed middle coefficients, or
 a finite search. It does not lower-bound actual tensor-power coefficient
-ranks or arbitrary coefficient recombinations. Quartics, different outer
-ranks, and sharper actual-rank estimates remain open. The supported
+ranks or arbitrary coefficient recombinations. Larger-alphabet quartics,
+different outer ranks, and sharper actual-rank estimates remain open. The supported
 factoring exponent stays `1/2`.
 
 The argument uses the exact Bell cut transform and the complete
@@ -125,19 +127,72 @@ Its optimized leading contraction floor as `d` grows is
 value is below the critical threshold, so this argument does not close
 that target. It supplies no quartic construction and no stronger bound.
 
-The restarted synthesis therefore keeps quartic targets and cubics that
-escape the stated outer-rank conditions in scope. Improving cubic middle
-coefficients while retaining these two outer ranks cannot succeed under
-this pressure criterion.
+The leading limit alone leaves quartics open, but the finite remainder
+below closes two additional local dimensions. Cubics that escape the
+stated outer ranks also remain in scope.
 
-## 4. Reproduction
+## 4. Complete channel counts exclude quartics at dimensions eight and sixteen
+
+For degree four, every row order is at most four and every column degree
+is nonnegative. In addition to the forced singleton and `M` channels,
+there are `N=d^2-M-1` remaining channels. Retain them at their most
+favorable allowed orders to obtain
+
+```math
+A(x)\ge1+M/x^3+N/x^4,\qquad
+B(x)\ge x^4+Mx+N,
+\quad\sqrt{Q(x)}\ge F_d(x):=x^2+M/x+N/x^2.
+\tag{4}
+```
+
+The following exact certificates hold for every `x>=1`:
+
+| d | M | N | Strict floor for F_d | Compact interval |
+| --- | ---: | ---: | ---: | --- |
+| 8 | 27 | 36 | 20 | [2,4] |
+| 16 | 119 | 136 | 53 | [4,5] |
+
+To verify the compact intervals multiply `F_d-T` by `x^2` and write
+`x=L+(R-L)t`. The five Bernstein coefficients of the resulting quartic
+on `0<=t<=1` are respectively
+
+```math
+(26,31/2,23/3,37/2,80),\qquad
+(20,31/4,8/3,35/4,31).
+```
+
+All are strictly positive. For the left tail, multiplying `F_d'` by
+`x^3` gives `2x^4-Mx-2N`. On `1<=x<=L` use `x^4<=L^3x` to prove
+that this is negative in both table rows. On `x>=R`, the reverse bound
+`x^4>=R^3x` proves it positive. The endpoint values `F_d(L),F_d(R)`
+exceed their table thresholds, so no scale interval is omitted.
+
+Finally `20^7>8^10` and `53^7>16^10`. Thus `Q>T^2>d^(20/7)` and
+again `rho>5/7`, uniformly over all coefficient fields covered above.
+The opposite cut orientation is still dense and has pressure at least
+`d^4`, as in Section 1.
+
+At `d=32`, the same necessary bound instead has, at `x=7`,
+
+```math
+F_{32}(7)=49+495/7+528/49=6394/49,
+\qquad (6394/49)^{17}<32^{24}.
+```
+
+Its relaxed parameter is below `12/17<1/sqrt(2)`. This is **not** a
+crossing witness: it shows only that this endpoint bound stops excluding
+the target at 32. Actual coefficient compatibility and a strict upper
+bound remain necessary. The same rank-one outer endpoints may now be
+searched at dimension 32, or changed outer ranks at smaller dimensions.
+
+## 5. Reproduction
 
 ```sh
 python3 tools/check_bell_cubic_floor.py --output evidence/bell-cubic-outer-rank-floor.json
 ```
 
 The [exact replay](../evidence/bell-cubic-outer-rank-floor.json) constructs
-216 literal endpoint-valid cubic paths in characteristics `3,5,7`, checks
-both forced support counts and 864 rational pressure comparisons, and
-checks the dimension inequality through `d=2^32`. The infinite-dimensional
+216 literal endpoint-valid cubic paths and 216 quartics in characteristics
+`3,5,7`, checks 1,728 rational pressure comparisons, both complete quartic
+certificates, and the cubic dimension inequality through `d=2^32`. The infinite-dimensional
 and all-field assertions are the proof above, not a finite extrapolation.
