@@ -40,6 +40,8 @@ and [global modular input circuits](research/interval-packet-circuits.md)
 with `O(n+p)` arithmetic nodes and polynomial generation cost.
 Recovering the genuine rational common factor within the desired time
 bound remains open; these results do not improve the factoring score.
+[Normalized integer-center jets](research/normalized-interval-jets.md)
+also separate huge local powers of two from polynomial-cost unit data.
 The [research index](research/INDEX.md) links proofs, exact evidence, and replay commands.
 
 The result table distinguishes verified machine bounds from conditional constructions and finite experiments. A merged PR or a passing finite test does not imply independent mathematical review.

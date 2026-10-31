@@ -20,6 +20,7 @@ verify-arithmetic:
 	python3 tools/check_interval_orbit_gcd.py
 	python3 tools/check_interval_unit_jets.py
 	python3 tools/check_interval_packet_circuits.py
+	python3 tools/check_normalized_interval_jets.py
 
 verify-post-half:
 	python3 tools/check_half_piece_ranks.py --full

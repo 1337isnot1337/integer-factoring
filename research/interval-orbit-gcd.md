@@ -111,6 +111,10 @@ small ordinary circuits for both input polynomials modulo `2^p`, with
 polynomial generation cost. Large artificial modular common factors
 persist in an explicit family, so a rational-factor certificate or
 effective multiplicity removal is still required.
+The [normalized integer-center evaluator](normalized-interval-jets.md)
+now separates an enormous local content exponent from a short unit
+jet with polynomial bit cost. It does not select a common root or
+provide the missing global factor certificate.
 
 Equations (3)--(4) specify a new elimination problem. They do not
 authorize treating a long product, a shifted evaluation, or a large

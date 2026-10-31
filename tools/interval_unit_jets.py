@@ -95,6 +95,21 @@ def interval_elementaries(lower, upper, degree):
     return tuple(elementary)
 
 
+def unit_progression_jet(ring, interval, unit, step):
+    """Product (unit+t*step) for an even jet step and a unit base."""
+    start, stop = interval
+    assert 0 <= start <= stop and all(a % 2 == b % 2 == 0 for a, b in step)
+    length = stop - start
+    increment = ring.multiply(step, ring.inverse(unit))
+    degree = min(ring.precision - 1, length)
+    elementary = interval_elementaries(start, stop, degree)
+    series, power = ring.constant(1), ring.constant(1)
+    for k in range(1, degree + 1):
+        power = ring.multiply(power, increment)
+        series = ring.add(series, ring.scale(power, elementary[k]))
+    return ring.multiply(ring.power(unit, length), series)
+
+
 def interval_product_jet(ring, interval, argument=None, number=None):
     """Product (X-a) or (number-a*X), without visiting the interval."""
     lower, upper = interval
@@ -116,12 +131,6 @@ def interval_product_jet(ring, interval, argument=None, number=None):
         else:
             unit = ring.add(ring.constant(number), ring.scale(argument, -parity))
             variable = argument
-        increment = ring.scale(ring.multiply(variable, ring.inverse(unit)), -2)
-        degree = min(ring.precision - 1, length)
-        elementary = interval_elementaries(start, stop, degree)
-        series, power = ring.constant(1), ring.constant(1)
-        for k in range(1, degree + 1):
-            power = ring.multiply(power, increment)
-            series = ring.add(series, ring.scale(power, elementary[k]))
-        result = ring.multiply(result, ring.multiply(ring.power(unit, length), series))
+        result = ring.multiply(result, unit_progression_jet(
+            ring, (start, stop), unit, ring.scale(variable, -2)))
     return result
