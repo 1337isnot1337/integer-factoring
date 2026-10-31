@@ -28,6 +28,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Obstructions and work beyond 1/2
 
+- [Bare criterion through twelve letters](bare-seven-to-twelve-letters.md): proved box-minor Kronecker budgets couple the two cuts; exact entropy-dual certificates give rho_bare>1/sqrt(2) for 7<=q<=12 at every degree and field, with fixed auxiliaries; an exact thirteen-letter profile satisfies every box budget and adjugate inequality and is the remaining construction target.
 - [Inverse-degree aspect bounds](inverse-degree-aspect-bounds.md): entropy slack gives degree/inverse-degree limits, stronger quadratic caps 14,20,35,91, and an abstract two-case exclusion for all 2^31 binary level weights on the fixed nine-letter flag.
 - [Leading-rank entropy floor](leading-rank-entropy-floor.md): rational entropy duals exclude a repeated minimum Smith order on 7 through 10 letters, and close every positive kernel-level weighting of the displayed seven-letter transpose channel.
 - [Shared-minor floor through six letters](shared-minor-smith-floor.md): common q-by-q minors couple both cuts and give an all-degree, all-field bare-profile exclusion for q<=6, including fixed auxiliary states; seven letters are the first case left open by this relaxation.

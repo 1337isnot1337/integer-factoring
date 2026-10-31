@@ -1,4 +1,4 @@
-.PHONY: verify verify-docs verify-frontier verify-polynomial-crossings verify-polynomial-native verify-nine-letter-all verify-post-half verify-formal verify-k6 verify-half-appendix help
+.PHONY: verify verify-docs verify-frontier verify-bare-seven-to-twelve-letters verify-polynomial-crossings verify-polynomial-native verify-nine-letter-all verify-post-half verify-formal verify-k6 verify-half-appendix help
 
 verify: verify-docs verify-frontier
 	python3 -m unittest discover -s tests -v
@@ -15,6 +15,7 @@ verify-docs:
 	python3 tools/check_docs.py
 
 verify-polynomial-crossings:
+	python3 tools/check_bare_seven_to_twelve_letters.py
 	python3 tools/check_quadratic_inverse_degree_caps.py
 	python3 tools/check_quadratic_inverse_paths.py --alphabet 9
 	python3 tools/check_leading_rank_entropy_floor.py
@@ -23,6 +24,9 @@ verify-polynomial-crossings:
 	python3 tools/check_all_degree_smith_floor.py
 	python3 tools/check_quadratic_crossings.py
 	python3 tools/check_extended_binary_crossings.py
+
+verify-bare-seven-to-twelve-letters:
+	python3 tools/check_bare_seven_to_twelve_letters.py
 
 verify-polynomial-native:
 	python3 tools/check_polynomial_local_smith.py --nine-letter
@@ -36,6 +40,7 @@ verify-post-half:
 	python3 tools/check_half_restricted_labels.py
 
 verify-frontier:
+	python3 tools/check_bare_seven_to_twelve_letters.py > /dev/null
 	python3 tools/check_quadratic_inverse_degree_caps.py > /dev/null
 	python3 tools/check_quadratic_inverse_paths.py --alphabet 9 > /dev/null
 	python3 tools/check_leading_rank_entropy_floor.py > /dev/null
