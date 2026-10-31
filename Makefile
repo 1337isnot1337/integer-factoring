@@ -18,6 +18,10 @@ verify-docs:
 verify-multipoint-rank-one:
 	python3 tools/check_multipoint_rank_one_seeds.py
 
+.PHONY: verify-multipoint-rank-two
+verify-multipoint-rank-two:
+	python3 tools/check_multipoint_rank_two_seeds.py
+
 .PHONY: verify-multilevel-packet
 verify-multilevel-packet:
 	python3 tools/check_multilevel_thue_morse_packet.py
