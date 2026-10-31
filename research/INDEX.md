@@ -204,6 +204,10 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Obstructions and work beyond 1/2
 
+- [Charged Gaussian pressure floor](charged-gaussian-pressure-floor.md): an integer interval certificate and analytic tails prove all-scale positivity on a linearly growing real-charge band; an exact identity treats every even charge in the physical range for all digit counts.
+
+- [All one-mode binary Laurent filters](one-mode-binary-laurent-filter-floor.md): a complete degree/order dichotomy proves Gaussian domination at zero charge for arbitrary degree and every characteristic-two coefficient field, with exact equality classification.
+
 - [Homogeneous Boolean occupation filters](homogeneous-boolean-filter-bounds.md): an exact two-probability cost formula proves all-scale natural-charge domination, a uniform large-scale comparison at every charge, and a bounded-charge small-scale critical-pressure bound.
 
 - [Prime-power vacuum locality](prime-power-vacuum-locality.md): Artin--Hasse transcendence excludes the stated scalar finite-locality replacement, with independent finite coefficient controls and no factoring lower-bound claim.

@@ -296,6 +296,11 @@ already has negative critical pressure. This is a relative reduction
 to the charged Gaussian question. It is not a proof of an absolute
 charged-Gaussian floor.
 
+The subsequent [charged Gaussian floor](charged-gaussian-pressure-floor.md)
+closes that gap for bounded charge. For fixed Boolean degree and a fixed
+charge bound, this entire family has positive full critical pressure at
+every scale for all sufficiently large binary prime-power lengths.
+
 ## 6. Exact replay
 
 The [implementation](../tools/homogeneous_boolean_filter_bounds.py)

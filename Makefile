@@ -476,3 +476,10 @@ verify-surplus-identity-geometry:
 .PHONY: verify-bulk-search-records
 verify-bulk-search-records:
 	python3 tools/check_reflection_hot_bulk_search_records.py
+
+.PHONY: verify-charged-gaussian-floor verify-one-mode-laurent-filters
+verify-charged-gaussian-floor:
+	python3 tools/check_charged_gaussian_floor.py
+
+verify-one-mode-laurent-filters:
+	python3 tools/check_one_mode_binary_laurent_filters.py

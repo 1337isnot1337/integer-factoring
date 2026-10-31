@@ -205,9 +205,22 @@ the full cost is strictly worse than the same natural-charge Gaussian
 at every scale. A biased-support bound extends the relative comparison
 to every charge above an explicit scale threshold; a positive finite-tail
 bound treats the small-scale branch at bounded charge and large interval.
-The note keeps the remaining charged-Gaussian question explicit.
+The [charged Gaussian floor](research/charged-gaussian-pressure-floor.md)
+now closes that gap: fixed degree and bounded charge give positive full
+critical pressure at every scale for all sufficiently large binary
+prime-power intervals. The floor covers real charges
+`|J| <= (6-4sqrt(2))n+2-2sqrt(2)` for every integer `n >= 3`, using
+analytic tails and 290 outward-rational rectangles. A separate exact
+identity treats all even integer charges in `[-2n,2n]` for every digit
+count.
 `make verify-homogeneous-boolean-filters` replays the polynomial identities
 and exact support inequalities.
+The [one-mode Laurent theorem](research/one-mode-binary-laurent-filter-floor.md)
+also excludes every single-mode binary Laurent filter at zero charge,
+over any fixed characteristic-two field and without a degree cutoff.
+Only a common scalar Laurent monomial has the Gaussian cost.
+`make verify-charged-gaussian-floor verify-one-mode-laurent-filters`
+replays these additional certificates.
 
 [Extension-field operator lattices](research/identity-operator-field-flags.md)
 now permit constant F4 row bases and constructive F16 endpoint lifts.
