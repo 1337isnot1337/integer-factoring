@@ -377,3 +377,7 @@ verify-f4-identity-operators:
 verify-weyl-lattice-synthesis:
 	python3 tools/check_weyl_lattice_filter_synthesis.py
 	python3 tools/check_weyl_lattice_endpoint_cover.py
+
+.PHONY: verify-reflection-hot-state-gauges
+verify-reflection-hot-state-gauges:
+	python3 tools/check_reflection_hot_state_gauges.py --extended

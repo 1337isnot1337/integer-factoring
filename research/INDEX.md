@@ -14,6 +14,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Physical state gauges on reflection hot cores](reflection-hot-state-gauges.md): a regular reduction supports arbitrary state heights and endpoint-preserving masks on at most eleven modes per hot bit; monotone exterior-defect heights require only four.
+
 - [Polynomial synthesis through reduced Smith lattices](weyl-lattice-filter-synthesis.md): linear coefficient constraints certify every occupation-block Smith prefix, with complete infinity costs and an exact eight-state endpoint-cover test over `F4`.
 
 - [Mixed initial and terminal identity modes](split-identity-mode-reduction.md): a weighted interpolation proof concentrates any split of selected endpoint modes into a bounded core, including three-mode operator kernels and exact original-tensor controls.

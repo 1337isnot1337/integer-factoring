@@ -1,0 +1,730 @@
+{
+  "status": "pass",
+  "extended": true,
+  "support_controls": [
+    {
+      "interval": 4,
+      "ramification": 1,
+      "core": 1,
+      "internal_gaussians_removed": false,
+      "active_modes": 4,
+      "spectator_modes": 0,
+      "regular_shears": 0,
+      "canonical_pairings": 64,
+      "all_cross_pairings": 64
+    },
+    {
+      "interval": 8,
+      "ramification": 1,
+      "core": 1,
+      "internal_gaussians_removed": false,
+      "active_modes": 8,
+      "spectator_modes": 0,
+      "regular_shears": 0,
+      "canonical_pairings": 64,
+      "all_cross_pairings": 64
+    },
+    {
+      "interval": 16,
+      "ramification": 1,
+      "core": 1,
+      "internal_gaussians_removed": false,
+      "active_modes": 11,
+      "spectator_modes": 5,
+      "regular_shears": 32,
+      "canonical_pairings": 64,
+      "all_cross_pairings": 64
+    },
+    {
+      "interval": 32,
+      "ramification": 1,
+      "core": 1,
+      "internal_gaussians_removed": false,
+      "active_modes": 11,
+      "spectator_modes": 21,
+      "regular_shears": 96,
+      "canonical_pairings": 64,
+      "all_cross_pairings": 64
+    },
+    {
+      "interval": 64,
+      "ramification": 1,
+      "core": 1,
+      "internal_gaussians_removed": false,
+      "active_modes": 11,
+      "spectator_modes": 53,
+      "regular_shears": 224,
+      "canonical_pairings": 64,
+      "all_cross_pairings": 64
+    },
+    {
+      "interval": 16,
+      "ramification": 3,
+      "core": 1,
+      "internal_gaussians_removed": false,
+      "active_modes": 11,
+      "spectator_modes": 5,
+      "regular_shears": 32,
+      "canonical_pairings": 64,
+      "all_cross_pairings": 64
+    },
+    {
+      "interval": 32,
+      "ramification": 1,
+      "core": 2,
+      "internal_gaussians_removed": false,
+      "active_modes": 22,
+      "spectator_modes": 10,
+      "regular_shears": 64,
+      "canonical_pairings": 256,
+      "all_cross_pairings": 256
+    },
+    {
+      "interval": 64,
+      "ramification": 1,
+      "core": 2,
+      "internal_gaussians_removed": false,
+      "active_modes": 22,
+      "spectator_modes": 42,
+      "regular_shears": 192,
+      "canonical_pairings": 256,
+      "all_cross_pairings": 256
+    },
+    {
+      "interval": 4,
+      "ramification": 1,
+      "core": 1,
+      "internal_gaussians_removed": true,
+      "active_modes": 4,
+      "spectator_modes": 0,
+      "regular_shears": 0,
+      "canonical_pairings": 64,
+      "all_cross_pairings": 64
+    },
+    {
+      "interval": 8,
+      "ramification": 1,
+      "core": 1,
+      "internal_gaussians_removed": true,
+      "active_modes": 4,
+      "spectator_modes": 4,
+      "regular_shears": 8,
+      "canonical_pairings": 64,
+      "all_cross_pairings": 64
+    },
+    {
+      "interval": 16,
+      "ramification": 1,
+      "core": 1,
+      "internal_gaussians_removed": true,
+      "active_modes": 4,
+      "spectator_modes": 12,
+      "regular_shears": 24,
+      "canonical_pairings": 64,
+      "all_cross_pairings": 64
+    },
+    {
+      "interval": 32,
+      "ramification": 1,
+      "core": 1,
+      "internal_gaussians_removed": true,
+      "active_modes": 4,
+      "spectator_modes": 28,
+      "regular_shears": 56,
+      "canonical_pairings": 64,
+      "all_cross_pairings": 64
+    },
+    {
+      "interval": 64,
+      "ramification": 1,
+      "core": 1,
+      "internal_gaussians_removed": true,
+      "active_modes": 4,
+      "spectator_modes": 60,
+      "regular_shears": 120,
+      "canonical_pairings": 64,
+      "all_cross_pairings": 64
+    },
+    {
+      "interval": 32,
+      "ramification": 3,
+      "core": 2,
+      "internal_gaussians_removed": true,
+      "active_modes": 8,
+      "spectator_modes": 24,
+      "regular_shears": 48,
+      "canonical_pairings": 256,
+      "all_cross_pairings": 256
+    }
+  ],
+  "transport_controls": [
+    {
+      "interval": 4,
+      "ramification": 1,
+      "core": 1,
+      "original_kernel_operator_identities": 128
+    },
+    {
+      "interval": 8,
+      "ramification": 1,
+      "core": 1,
+      "original_kernel_operator_identities": 256
+    },
+    {
+      "interval": 8,
+      "ramification": 3,
+      "core": 2,
+      "original_kernel_operator_identities": 512
+    },
+    {
+      "interval": 16,
+      "ramification": 1,
+      "core": 2,
+      "original_kernel_operator_identities": 1024
+    },
+    {
+      "interval": 32,
+      "ramification": 1,
+      "core": 1,
+      "original_kernel_operator_identities": 1024
+    }
+  ],
+  "original_polynomial_controls": [
+    {
+      "interval": 4,
+      "ramification": 1,
+      "core": 1,
+      "internal_gaussians_removed": false,
+      "nonconstant_masks": [],
+      "coefficient_mask": false,
+      "weighted_complete_cut_profiles": 6,
+      "endpoint_coefficients": 256,
+      "maximum_pressure_error": 4.440892098500626e-16,
+      "metadata": [
+        {
+          "matrix_order": 16,
+          "parity_block_order": 8,
+          "active_modes": 4,
+          "registers": 114,
+          "profile_precision": 512,
+          "builder_precision": 1024,
+          "unit_denominator_degree": 0,
+          "program_degree_bound": 92,
+          "maximum_entry_coefficient_degree": 20,
+          "minimum_entry_laurent_shift": 0,
+          "builder_known_below": 1024,
+          "exact_polynomial_matrix": true,
+          "known_below": 512,
+          "matrix_seconds": 0.014660586999525549,
+          "defect_source_maximum_bits": 21
+        },
+        {
+          "matrix_order": 16,
+          "parity_block_order": 8,
+          "active_modes": 4,
+          "registers": 114,
+          "profile_precision": 512,
+          "builder_precision": 1024,
+          "unit_denominator_degree": 0,
+          "program_degree_bound": 92,
+          "maximum_entry_coefficient_degree": 20,
+          "minimum_entry_laurent_shift": 0,
+          "builder_known_below": 1024,
+          "exact_polynomial_matrix": true,
+          "known_below": 512,
+          "matrix_seconds": 0.014660586999525549,
+          "defect_source_maximum_bits": 19
+        }
+      ]
+    },
+    {
+      "interval": 4,
+      "ramification": 1,
+      "core": 1,
+      "internal_gaussians_removed": false,
+      "nonconstant_masks": [
+        15
+      ],
+      "coefficient_mask": false,
+      "weighted_complete_cut_profiles": 6,
+      "endpoint_coefficients": 256,
+      "maximum_pressure_error": 4.440892098500626e-16,
+      "metadata": [
+        {
+          "matrix_order": 16,
+          "parity_block_order": 8,
+          "active_modes": 4,
+          "registers": 114,
+          "profile_precision": 512,
+          "builder_precision": 1024,
+          "unit_denominator_degree": 0,
+          "program_degree_bound": 92,
+          "maximum_entry_coefficient_degree": 20,
+          "minimum_entry_laurent_shift": 0,
+          "builder_known_below": 1024,
+          "exact_polynomial_matrix": true,
+          "known_below": 512,
+          "matrix_seconds": 0.014660586999525549,
+          "defect_source_maximum_bits": 25
+        },
+        {
+          "matrix_order": 16,
+          "parity_block_order": 8,
+          "active_modes": 4,
+          "registers": 114,
+          "profile_precision": 512,
+          "builder_precision": 1024,
+          "unit_denominator_degree": 0,
+          "program_degree_bound": 92,
+          "maximum_entry_coefficient_degree": 20,
+          "minimum_entry_laurent_shift": 0,
+          "builder_known_below": 1024,
+          "exact_polynomial_matrix": true,
+          "known_below": 512,
+          "matrix_seconds": 0.014660586999525549,
+          "defect_source_maximum_bits": 19
+        }
+      ]
+    },
+    {
+      "interval": 4,
+      "ramification": 1,
+      "core": 1,
+      "internal_gaussians_removed": false,
+      "nonconstant_masks": [
+        3,
+        10
+      ],
+      "coefficient_mask": false,
+      "weighted_complete_cut_profiles": 6,
+      "endpoint_coefficients": 256,
+      "maximum_pressure_error": 2.220446049250313e-16,
+      "metadata": [
+        {
+          "matrix_order": 16,
+          "parity_block_order": 8,
+          "active_modes": 4,
+          "registers": 114,
+          "profile_precision": 512,
+          "builder_precision": 1024,
+          "unit_denominator_degree": 0,
+          "program_degree_bound": 92,
+          "maximum_entry_coefficient_degree": 20,
+          "minimum_entry_laurent_shift": 0,
+          "builder_known_below": 1024,
+          "exact_polynomial_matrix": true,
+          "known_below": 512,
+          "matrix_seconds": 0.014660586999525549,
+          "defect_source_maximum_bits": 23
+        },
+        {
+          "matrix_order": 16,
+          "parity_block_order": 8,
+          "active_modes": 4,
+          "registers": 114,
+          "profile_precision": 512,
+          "builder_precision": 1024,
+          "unit_denominator_degree": 0,
+          "program_degree_bound": 92,
+          "maximum_entry_coefficient_degree": 20,
+          "minimum_entry_laurent_shift": 0,
+          "builder_known_below": 1024,
+          "exact_polynomial_matrix": true,
+          "known_below": 512,
+          "matrix_seconds": 0.014660586999525549,
+          "defect_source_maximum_bits": 23
+        }
+      ]
+    },
+    {
+      "interval": 4,
+      "ramification": 3,
+      "core": 1,
+      "internal_gaussians_removed": false,
+      "nonconstant_masks": [
+        3,
+        10
+      ],
+      "coefficient_mask": true,
+      "weighted_complete_cut_profiles": 6,
+      "endpoint_coefficients": 256,
+      "maximum_pressure_error": 8.881784197001252e-16,
+      "metadata": [
+        {
+          "matrix_order": 16,
+          "parity_block_order": 8,
+          "active_modes": 4,
+          "registers": 114,
+          "profile_precision": 512,
+          "builder_precision": 1024,
+          "unit_denominator_degree": 0,
+          "program_degree_bound": 276,
+          "maximum_entry_coefficient_degree": 60,
+          "minimum_entry_laurent_shift": 0,
+          "builder_known_below": 1024,
+          "exact_polynomial_matrix": true,
+          "known_below": 512,
+          "matrix_seconds": 0.0009878199998638593,
+          "defect_source_maximum_bits": 63
+        },
+        {
+          "matrix_order": 16,
+          "parity_block_order": 8,
+          "active_modes": 4,
+          "registers": 114,
+          "profile_precision": 512,
+          "builder_precision": 1024,
+          "unit_denominator_degree": 0,
+          "program_degree_bound": 276,
+          "maximum_entry_coefficient_degree": 60,
+          "minimum_entry_laurent_shift": 0,
+          "builder_known_below": 1024,
+          "exact_polynomial_matrix": true,
+          "known_below": 512,
+          "matrix_seconds": 0.0009878199998638593,
+          "defect_source_maximum_bits": 67
+        }
+      ]
+    },
+    {
+      "interval": 8,
+      "ramification": 1,
+      "core": 1,
+      "internal_gaussians_removed": false,
+      "nonconstant_masks": [
+        3,
+        10
+      ],
+      "coefficient_mask": false,
+      "weighted_complete_cut_profiles": 6,
+      "endpoint_coefficients": 65536,
+      "maximum_pressure_error": 8.881784197001252e-16,
+      "metadata": [
+        {
+          "matrix_order": 256,
+          "parity_block_order": 128,
+          "active_modes": 8,
+          "registers": 114,
+          "profile_precision": 512,
+          "builder_precision": 1024,
+          "unit_denominator_degree": 0,
+          "program_degree_bound": 236,
+          "maximum_entry_coefficient_degree": 64,
+          "minimum_entry_laurent_shift": 0,
+          "builder_known_below": 1024,
+          "exact_polynomial_matrix": true,
+          "known_below": 512,
+          "matrix_seconds": 1.386011112000233,
+          "defect_source_maximum_bits": 65
+        },
+        {
+          "matrix_order": 256,
+          "parity_block_order": 128,
+          "active_modes": 8,
+          "registers": 114,
+          "profile_precision": 512,
+          "builder_precision": 1024,
+          "unit_denominator_degree": 0,
+          "program_degree_bound": 236,
+          "maximum_entry_coefficient_degree": 64,
+          "minimum_entry_laurent_shift": 0,
+          "builder_known_below": 1024,
+          "exact_polynomial_matrix": true,
+          "known_below": 512,
+          "matrix_seconds": 1.386011112000233,
+          "defect_source_maximum_bits": 65
+        }
+      ]
+    },
+    {
+      "interval": 8,
+      "ramification": 1,
+      "core": 1,
+      "internal_gaussians_removed": false,
+      "nonconstant_masks": [
+        15
+      ],
+      "coefficient_mask": true,
+      "weighted_complete_cut_profiles": 6,
+      "endpoint_coefficients": 65536,
+      "maximum_pressure_error": 4.440892098500626e-16,
+      "metadata": [
+        {
+          "matrix_order": 256,
+          "parity_block_order": 128,
+          "active_modes": 8,
+          "registers": 114,
+          "profile_precision": 512,
+          "builder_precision": 1024,
+          "unit_denominator_degree": 0,
+          "program_degree_bound": 236,
+          "maximum_entry_coefficient_degree": 64,
+          "minimum_entry_laurent_shift": 0,
+          "builder_known_below": 1024,
+          "exact_polynomial_matrix": true,
+          "known_below": 512,
+          "matrix_seconds": 1.386011112000233,
+          "defect_source_maximum_bits": 65
+        },
+        {
+          "matrix_order": 256,
+          "parity_block_order": 128,
+          "active_modes": 8,
+          "registers": 114,
+          "profile_precision": 512,
+          "builder_precision": 1024,
+          "unit_denominator_degree": 0,
+          "program_degree_bound": 236,
+          "maximum_entry_coefficient_degree": 64,
+          "minimum_entry_laurent_shift": 0,
+          "builder_known_below": 1024,
+          "exact_polynomial_matrix": true,
+          "known_below": 512,
+          "matrix_seconds": 1.386011112000233,
+          "defect_source_maximum_bits": 65
+        }
+      ]
+    },
+    {
+      "interval": 4,
+      "ramification": 1,
+      "core": 1,
+      "internal_gaussians_removed": true,
+      "nonconstant_masks": [
+        3,
+        10
+      ],
+      "coefficient_mask": false,
+      "weighted_complete_cut_profiles": 6,
+      "endpoint_coefficients": 256,
+      "maximum_pressure_error": 4.884981308350689e-15,
+      "metadata": [
+        {
+          "matrix_order": 16,
+          "parity_block_order": 8,
+          "active_modes": 4,
+          "registers": 114,
+          "profile_precision": 512,
+          "builder_precision": 1024,
+          "unit_denominator_degree": 0,
+          "program_degree_bound": 52,
+          "maximum_entry_coefficient_degree": 8,
+          "minimum_entry_laurent_shift": 0,
+          "builder_known_below": 1024,
+          "exact_polynomial_matrix": true,
+          "known_below": 512,
+          "matrix_seconds": 0.0012210120003146585,
+          "defect_source_maximum_bits": 9
+        },
+        {
+          "matrix_order": 16,
+          "parity_block_order": 8,
+          "active_modes": 4,
+          "registers": 114,
+          "profile_precision": 512,
+          "builder_precision": 1024,
+          "unit_denominator_degree": 0,
+          "program_degree_bound": 52,
+          "maximum_entry_coefficient_degree": 8,
+          "minimum_entry_laurent_shift": 0,
+          "builder_known_below": 1024,
+          "exact_polynomial_matrix": true,
+          "known_below": 512,
+          "matrix_seconds": 0.0012210120003146585,
+          "defect_source_maximum_bits": 11
+        }
+      ]
+    },
+    {
+      "interval": 8,
+      "ramification": 1,
+      "core": 1,
+      "internal_gaussians_removed": true,
+      "nonconstant_masks": [
+        3,
+        10
+      ],
+      "coefficient_mask": false,
+      "weighted_complete_cut_profiles": 6,
+      "endpoint_coefficients": 65536,
+      "maximum_pressure_error": 1.7763568394002505e-15,
+      "metadata": [
+        {
+          "matrix_order": 16,
+          "parity_block_order": 8,
+          "active_modes": 4,
+          "registers": 114,
+          "profile_precision": 512,
+          "builder_precision": 1024,
+          "unit_denominator_degree": 0,
+          "program_degree_bound": 92,
+          "maximum_entry_coefficient_degree": 20,
+          "minimum_entry_laurent_shift": 0,
+          "builder_known_below": 1024,
+          "exact_polynomial_matrix": true,
+          "known_below": 512,
+          "matrix_seconds": 0.0007773030001771986,
+          "defect_source_maximum_bits": 21
+        },
+        {
+          "matrix_order": 16,
+          "parity_block_order": 8,
+          "active_modes": 4,
+          "registers": 114,
+          "profile_precision": 512,
+          "builder_precision": 1024,
+          "unit_denominator_degree": 0,
+          "program_degree_bound": 92,
+          "maximum_entry_coefficient_degree": 20,
+          "minimum_entry_laurent_shift": 0,
+          "builder_known_below": 1024,
+          "exact_polynomial_matrix": true,
+          "known_below": 512,
+          "matrix_seconds": 0.0007773030001771986,
+          "defect_source_maximum_bits": 27
+        }
+      ]
+    },
+    {
+      "interval": 8,
+      "ramification": 1,
+      "core": 2,
+      "internal_gaussians_removed": false,
+      "nonconstant_masks": [
+        5,
+        85,
+        255
+      ],
+      "coefficient_mask": false,
+      "weighted_complete_cut_profiles": 4,
+      "endpoint_coefficients": 65536,
+      "maximum_pressure_error": 8.881784197001252e-16,
+      "metadata": [
+        {
+          "matrix_order": 256,
+          "parity_block_order": 128,
+          "active_modes": 8,
+          "registers": 3228,
+          "profile_precision": 512,
+          "builder_precision": 1024,
+          "unit_denominator_degree": 0,
+          "program_degree_bound": 368,
+          "maximum_entry_coefficient_degree": 80,
+          "minimum_entry_laurent_shift": 0,
+          "builder_known_below": 1024,
+          "exact_polynomial_matrix": true,
+          "known_below": 512,
+          "matrix_seconds": 14.46219639499941,
+          "defect_source_maximum_bits": 96
+        },
+        {
+          "matrix_order": 256,
+          "parity_block_order": 128,
+          "active_modes": 8,
+          "registers": 3228,
+          "profile_precision": 512,
+          "builder_precision": 1024,
+          "unit_denominator_degree": 0,
+          "program_degree_bound": 368,
+          "maximum_entry_coefficient_degree": 80,
+          "minimum_entry_laurent_shift": 0,
+          "builder_known_below": 1024,
+          "exact_polynomial_matrix": true,
+          "known_below": 512,
+          "matrix_seconds": 14.46219639499941,
+          "defect_source_maximum_bits": 84
+        }
+      ]
+    },
+    {
+      "interval": 8,
+      "ramification": 1,
+      "core": 2,
+      "internal_gaussians_removed": true,
+      "nonconstant_masks": [
+        5,
+        85,
+        255
+      ],
+      "coefficient_mask": false,
+      "weighted_complete_cut_profiles": 4,
+      "endpoint_coefficients": 65536,
+      "maximum_pressure_error": 7.993605777301127e-15,
+      "metadata": [
+        {
+          "matrix_order": 256,
+          "parity_block_order": 128,
+          "active_modes": 8,
+          "registers": 3228,
+          "profile_precision": 512,
+          "builder_precision": 1024,
+          "unit_denominator_degree": 0,
+          "program_degree_bound": 208,
+          "maximum_entry_coefficient_degree": 32,
+          "minimum_entry_laurent_shift": 0,
+          "builder_known_below": 1024,
+          "exact_polynomial_matrix": true,
+          "known_below": 512,
+          "matrix_seconds": 8.133288007999909,
+          "defect_source_maximum_bits": 48
+        },
+        {
+          "matrix_order": 256,
+          "parity_block_order": 128,
+          "active_modes": 8,
+          "registers": 3228,
+          "profile_precision": 512,
+          "builder_precision": 1024,
+          "unit_denominator_degree": 0,
+          "program_degree_bound": 208,
+          "maximum_entry_coefficient_degree": 32,
+          "minimum_entry_laurent_shift": 0,
+          "builder_known_below": 1024,
+          "exact_polynomial_matrix": true,
+          "known_below": 512,
+          "matrix_seconds": 8.133288007999909,
+          "defect_source_maximum_bits": 40
+        }
+      ]
+    }
+  ],
+  "derivative_controls": [
+    {
+      "derivatives": 9,
+      "maximum_error": 1.1758009496598554e-10
+    },
+    {
+      "derivatives": 9,
+      "maximum_error": 1.0032696375061878e-10
+    },
+    {
+      "derivatives": 9,
+      "maximum_error": 1.6075463356302055e-10
+    }
+  ],
+  "original_complete_weighted_cut_profiles": 56,
+  "endpoint_coefficient_equalities": 328960,
+  "source_sha256": {
+    "research/reflection-hot-state-gauges.md": "56573ab38297fe7c6288640d879d4583387544e94326a304dc9460c991b5dc4e",
+    "tools/reflection_hot_state_support.py": "452e8448cc14783e6333be3ed0f7ccf25f10f650254c8bd705080f447652f40a",
+    "tools/reflection_hot_state_coordinates.py": "261551541d837b5695f24388f41d402ca70d4550d023d3e534d94eb85ccf13d9",
+    "tools/reflection_hot_state_gauges.py": "eae7981b520209aead4258e294b5c14efbd73640130c017c8ce93e3d2a220e84",
+    "tools/native_fock_f4_parity.cpp": "d796f245f13b44e6cc65a226b9ae5fb59bac0cedc565c0b0f73e791cb722c7e3",
+    "tools/check_reflection_hot_state_gauges.py": "4261e5e5f3ad82cea31ccf605db59cc09402361ffad68587aa6cffe0221a501f"
+  },
+  "scope": "Exact regular support and original weighted profiles; floating pressure and derivative controls; no improved exponent claim.",
+  "adaptive_elimination_control": {
+    "initial_elimination_precision": 512,
+    "final_elimination_precisions": [
+      4096,
+      4096,
+      4096,
+      4096
+    ],
+    "maximum_complete_source_bits": 14,
+    "literal_cut_profiles": 2,
+    "maximum_height": 1000,
+    "pressure_error": 0.0
+  },
+  "verification_assembly": "Extended original-tensor replay plus a scoped replay of adaptive elimination after that isolated change."
+}
