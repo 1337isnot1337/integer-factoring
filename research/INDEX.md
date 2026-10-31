@@ -14,6 +14,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Completed reflection hot-state screens](reflection-hot-state-searches.md): complete positive-height coefficient grids, scoped unrestricted heights, and nonlinear two-bit penalties retain full type costs and report no improvement within their recorded scopes.
+
 - [Four-mode resonant occupation transfers](binary-four-mode-resonance.md): complementary equal-energy states reduce to five scalar factors and a two-by-two block, with exact profiles and an all-scale obstruction for polynomial blocks of degree at most twice the interval scale.
 
 - [Complete Laurent resonance catalogues](resonant-laurent-catalogues.md): exact multiplicities and profile signatures cover every invertible-endpoint F4 matrix in two specified three-power windows; numerical searches over all resonant interval-32 quadruples found no gain.

@@ -118,3 +118,22 @@ are in
 ```sh
 python tools/check_raw_core_mask_profiles.py --output evidence/raw-core-mask-profiles.json
 ```
+
+## Finite M8 pressure prefix
+
+The search driver
+[`search_raw_core_pair_masks.py`](../tools/search_raw_core_pair_masks.py)
+deduplicates the finite additive family and the binary pair partitions
+into 615 masks. The saved
+[M8 record](../evidence/raw-core-pair-mask-screen-M8.json)
+contains the first 167 candidates. The remaining 448 candidates were
+not searched in this record; the worker was stopped to prioritize the
+faster reflection-core state-gauge family.
+
+The Gaussian control gives \(\rho\approx0.7166536597\).
+The best nonconstant mask in this prefix gives
+\(\rho\approx0.7321930052\), after optimizing the logarithmic
+scale and two aggregate charge heights. These are exploratory
+floating minima with exact active profiles. This prefix supplies
+no improvement and no exclusion of untested masks or arbitrary
+physical state gauges.

@@ -219,6 +219,14 @@ cuts. Its natural pressure equals half the original pressure at twice
 the scale, so the rate is unchanged. The smaller seed makes further
 logical-core perturbations and independent-gauge searches accessible.
 
+The [physical hot-state search checkpoint](research/reflection-hot-state-searches.md)
+records completed positive and unrestricted height screens, all 65,536
+coefficient rows at five fixed positive-height rays, and nonlinear
+two-bit state penalties. None improves its Gaussian control in the
+recorded scope. The [raw transition-mask screen](research/raw-core-transition-masks.md)
+also retains its interrupted 167-of-615-candidate prefix explicitly;
+the remaining masks are not counted as searched.
+
 The [Walsh permanent calculation](research/walsh-principal-permanents.md)
 gives all-size scalar valuation formulas beyond the determinant model.
 It also proves that exponentially many grouped modes survive the current
