@@ -14,6 +14,14 @@ verify: verify-docs verify-frontier
 verify-docs:
 	python3 tools/check_docs.py
 
+.PHONY: verify-mixed-place verify-network-codecs
+verify-mixed-place:
+	python3 tools/check_weighted_multipoint_hermite.py
+	python3 tools/check_mixed_place_hermite.py
+
+verify-network-codecs:
+	python3 tools/check_factoring_network_structure.py
+
 .PHONY: verify-multilevel-packet
 verify-multilevel-packet:
 	python3 tools/check_multilevel_thue_morse_packet.py

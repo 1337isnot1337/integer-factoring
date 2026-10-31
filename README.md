@@ -35,6 +35,14 @@ The composition uses the existing clique evaluator from [Anthropic's Appendix B]
 
 The result table distinguishes verified machine bounds from conditional constructions and finite experiments. A merged PR or a passing finite test does not imply independent mathematical review.
 
+The [mixed-place Hermite construction](research/mixed-place-hermite-crossings.md)
+allows the two ranks of each piece to use different sets of interpolation
+points. An exact ternary example improves this family's contraction parameter
+to `rho < 9/10`, while remaining above the post-half target. The
+[Fourier fan-out analysis](research/factoring-network-structure.md) gives exact
+joint-message ranks and optimal codecs for the source's coset bundles. These
+ordinary results do not establish a factoring exponent above `1/2`.
+
 ## Verification
 
 From the repository root, run:
@@ -44,6 +52,8 @@ make verify               # Python unit tests, exact certificates, and local lin
 make verify-frontier      # Focused research certificates
 make verify-post-half     # Larger optional rank tests
 make verify-docs          # Local Markdown-link check
+make verify-mixed-place   # Mixed-place reconstruction and exact rank controls
+make verify-network-codecs # Exact Fourier-coset images and optimal codecs
 make verify-schur-fermion # Complete Schur entry formulas and exact comparisons
 make verify-schur-central # Hook-residue identities and full Schur ranks through weight 8
 make verify-schur-gaussian # Exact digit reduction and fixed Gaussian crossing seed

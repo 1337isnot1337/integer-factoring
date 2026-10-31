@@ -16,6 +16,10 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Mixed-place Hermite crossings](mixed-place-hermite-crossings.md): opposite jet flags give two representations of every piece using disjoint point sets, with a strict exact improvement over the older unweighted same-place criterion for a ternary seed.
+- [Weighted same-place Hermite crossings](weighted-multipoint-hermite-crossings.md): exact paired-type accounting and a uniform three-quarter floor for this sufficient criterion.
+- [Fourier fan-out structure](factoring-network-structure.md): exact joint ranks and polynomial-time optimal codecs for source Fourier-coset bundles over the composite modulus; most bundles in a many-group split remain surjective.
+
 - [Joint residues reduce to finite templates and convex offsets](joint-syndrome-residue-retiming.md): at fixed normalized degree, arbitrary coefficient fields and ramification reduce exactly to finitely many binary endpoint covers and compact convex offset programs; a transport certificate bounds the entire offset box, with exact color and Hall controls.
 
 - [Typed rational kernels have pressure-preserving strict forms](typed-rational-crossing-strictification.md): balanced valuation circuits yield paired potentials and positive-characteristic strictification; the scalar binary floor extends to all stated rational endpoints, with a sharp four-copy endpoint test and uniform eighth-power gauge in characteristic two.
