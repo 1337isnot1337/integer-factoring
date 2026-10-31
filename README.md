@@ -188,6 +188,17 @@ on their stated finite grids. `make verify-prime-power-filters` replays
 the exact identities, full-pressure controls, and original physical cuts;
 its extended target also checks the original qutrit matrices of order 729.
 
+[Extension-field operator lattices](research/identity-operator-field-flags.md)
+now permit constant F4 row bases and constructive F16 endpoint lifts.
+The scalar Pascal contraction also gives small exact sources for every
+selected subset. A separate
+[one-hole minimum tradeoff](research/identity-operator-minimum-tradeoff.md)
+proves that improving that block's infinity minimum by `2*g`, for `g > 0`,
+forces a zero-order loss of at least `n*P+g` powers of the local variable.
+It applies when the top coefficient is a monomial, over every fixed
+coefficient extension. Deeper blocks and nonmonomial top coefficients
+remain open. `make verify-operator-field-flags` checks both results.
+
 The [reflection-pair compression](research/reflection-dual-rail-compression.md)
 retains one occupied mode from every reflected pair. A characteristic-two
 homology calculation gives an explicit polynomial Gaussian on the

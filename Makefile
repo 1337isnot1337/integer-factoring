@@ -412,3 +412,8 @@ verify-prime-power-filters-extended:
 	python3 tools/check_prime_power_identity_filters.py --include-qutrit
 	python3 tools/check_joint_identity_filter_pressure.py
 	python3 tools/check_selected_identity_operators.py --extended
+
+.PHONY: verify-operator-field-flags
+verify-operator-field-flags:
+	python3 tools/check_f4_operator_lattice_flags.py
+	python3 tools/check_identity_operator_minimum_tradeoff.py

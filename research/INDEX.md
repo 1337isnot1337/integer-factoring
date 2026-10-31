@@ -14,6 +14,10 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Operator lattices over fixed extension fields](identity-operator-field-flags.md): nonbinary row bases and F16 endpoint lifts combine with a small scalar-Pascal source formula for every selected subset.
+
+- [One-hole minimum-order tradeoff](identity-operator-minimum-tradeoff.md): with a monomial top coefficient, any positive infinity-minimum gain forces a quantified zero-minimum loss over every fixed coefficient extension and arbitrary selected indices.
+
 - [All identity directions at prime-power lengths](prime-power-joint-identity-filters.md): a single regular reflected-Pascal change separates arbitrary selected indices, gives exact joint finite-difference profiles, and reuses one coefficient catalogue across every selected subset.
 
 - [Negative hot-state heights with cold-bit compensation](reflection-hot-compensated-gauges.md): retaining only the internal hot-core factors permits negative selected-state heights, with every compensating cold height and both independent boundary bulks included in the exact cost.
