@@ -1,0 +1,77 @@
+{
+  "status": "passed",
+  "rational_radial_identities": 324,
+  "maximum_radial_bits": 24,
+  "full_Bell_coefficient_checks": 4776,
+  "physical_dimensions": [
+    2,
+    4,
+    8,
+    16
+  ],
+  "coefficient_primes": [
+    3,
+    5,
+    7
+  ],
+  "rank_samples": [
+    {
+      "bits": 2,
+      "coefficient_prime": 3,
+      "maximum_rank_product": 36,
+      "central_rank_floor": 5,
+      "finite_rho": 0.646240625180289
+    },
+    {
+      "bits": 4,
+      "coefficient_prime": 3,
+      "maximum_rank_product": 2025,
+      "central_rank_floor": 36,
+      "finite_rho": 0.6864816370412093
+    },
+    {
+      "bits": 8,
+      "coefficient_prime": 3,
+      "maximum_rank_product": 10323369,
+      "central_rank_floor": 2380,
+      "finite_rho": 0.7281065790919633
+    },
+    {
+      "bits": 16,
+      "coefficient_prime": 3,
+      "maximum_rank_product": 329647743689616,
+      "central_rank_floor": 13884156,
+      "finite_rho": 0.7535612271114235
+    },
+    {
+      "bits": 32,
+      "coefficient_prime": 3,
+      "maximum_rank_product": 870179773514338832194443624336,
+      "central_rank_floor": 648045936942300,
+      "finite_rho": 0.7770095955855733
+    },
+    {
+      "bits": 64,
+      "coefficient_prime": 3,
+      "maximum_rank_product": 7957945681808594037405113737100685500408749627684423928736000,
+      "central_rank_floor": 1965330854369012433010713875100,
+      "finite_rho": 0.7902659443162829
+    },
+    {
+      "bits": 128,
+      "coefficient_prime": 3,
+      "maximum_rank_product": 1392455032190983519683287545366220194251664123504368998153752375068189175650874925549757611542786423626407262268951048323600,
+      "central_rank_floor": 25358848455925049623801733802111442682446177275720654012073500,
+      "finite_rho": 0.7989741922054846
+    },
+    {
+      "bits": 256,
+      "coefficient_prime": 3,
+      "maximum_rank_product": 77138832512255457384569477879660855820526438428114501104500017662695834943260840164110479484616487938525933275768565771631345804216092076051265018676026106906477193508443515246093379125335230406077254872218568927552274662219513657860421015112518784,
+      "central_rank_floor": 5946734198805517160691368364369008784577569932310121185810397258577698241112471878889858507283525378559917464963798786166044,
+      "finite_rho": 0.8041637663557418
+    }
+  ],
+  "optimal_leading_rho_in_displayed_coefficient_span": "H_2(1/4)=2-(3/4)log2(3)=0.811278124459...",
+  "factoring_score": "1/2; unchanged"
+}

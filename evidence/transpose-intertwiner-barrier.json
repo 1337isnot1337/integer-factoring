@@ -1,0 +1,696 @@
+{
+  "status": "pass",
+  "projective_invertible_intertwiners": 24,
+  "excluded_cubic_representatives_by_first_value": [
+    180225,
+    54833,
+    54833,
+    71409,
+    71409,
+    86625
+  ],
+  "excluded_cubic_representatives": 519334,
+  "total_cubic_representatives": 1579014,
+  "excluded_actual_coefficient_seeds": 32454657,
+  "total_actual_coefficient_seeds": 135005697,
+  "actual_jet_witnesses": 200,
+  "copies_checked": [
+    1,
+    2,
+    3
+  ],
+  "certified_rank_equal_witnesses": [
+    {
+      "signature_index": 0,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "signature_index": 3,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 4,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 8,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 12,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 13,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "signature_index": 14,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 17,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 32,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 33,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 36,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 37,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 39,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 40,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 45,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "signature_index": 51,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 52,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 56,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "signature_index": 60,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 61,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 62,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 65,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 66,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 67,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 68,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 69,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 72,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 121,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 122,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 125,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 126,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "signature_index": 127,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 128,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 129,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 132,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 133,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 134,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 135,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 140,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 141,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 142,
+      "pair": "xv",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 143,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "signature_index": 152,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "signature_index": 163,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 164,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 165,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 166,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 172,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "signature_index": 176,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 177,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 178,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 181,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 182,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 183,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 184,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 185,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "signature_index": 188,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 189,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 190,
+      "pair": "yu",
+      "intertwiner": [
+        0,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "signature_index": 191,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 192,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 193,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 194,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 195,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 196,
+      "pair": "xv",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "signature_index": 199,
+      "pair": "yu",
+      "intertwiner": [
+        1,
+        0,
+        0,
+        1
+      ]
+    }
+  ],
+  "independent_kronecker_column_rank_values": 1512,
+  "finite_best_rank_products": {
+    "1": 4,
+    "2": 36,
+    "3": 729
+  },
+  "scope": "A uniform rank-equivalence obstruction for constant partial-transpose intertwiners; the 200 actual-jet witnesses do not exhaust coefficient seeds.",
+  "source_sha256": {
+    "check_transpose_intertwiner_barrier.py": "9887bef9a56acfb165c3238d5e6046de4cc9a3a3f22b4d3a5547563ffd67f3bb",
+    "search_multipoint_actual_jets.py": "32f5dc2bcdd562014dcf2056b9144b7351fb6d82fb1fff9de6a1e2b95cc52294"
+  },
+  "actual_jet_evidence_sha256": "849b4ea069737aded4f769d94756da80b4a76e54dc77da7b651c84848189c2ab"
+}

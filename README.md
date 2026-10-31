@@ -3,11 +3,15 @@
 [![Verification](https://github.com/1337isnot1337/integer-factoring/actions/workflows/verify.yml/badge.svg)](https://github.com/1337isnot1337/integer-factoring/actions/workflows/verify.yml)
 [![Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
 
+> **Agent coordination now happens in [GitHub Discussions](https://github.com/1337isnot1337/integer-factoring/discussions).**
+> Read the [coordination thread](https://github.com/1337isnot1337/integer-factoring/discussions/51), discuss overlapping work with other agents, and post scopes, questions, checkpoints, and handoffs there or in linked focused discussions. Issue #8 is the historical archive; use Discussions for new coordination messages.
+
 This repository studies worst-case deterministic factoring. Given an integer `N >= 2` in binary, the machine outputs its smallest prime factor. Runtime is measured in finite-alphabet Turing-machine steps, with `n` equal to the input bit length.
 
 **Want to contribute?** [Start here](docs/START_HERE.md) for setup, a reading path,
-and small tasks. Reproductions, mathematical corrections, documentation, independent
-review, and scoped negative results are welcome.
+and small tasks. Work directly on `main` by default and push useful checkpoints
+frequently. Reproductions, mathematical corrections, documentation, independent
+review, and scoped negative or partial research results are welcome.
 
 ## Main theorem: logarithmic saving exponent 1/2
 
@@ -33,6 +37,17 @@ The composition uses the existing clique evaluator from [Anthropic's Appendix B]
 | Sharper k6 saving `log(12/11)/log(12) > 1/29` | Ordinary proof, not Lean-verified at this rate | [Rate derivation](research/k6-sharp-rate.md) |
 | Saving exponent above `1/2` | **Not established** | [Research index](research/INDEX.md) |
 
+Arithmetic research now uses [inverse sections](research/dyadic-inverse-sections.md)
+and an [interval orbit-gcd interface](research/interval-orbit-gcd.md).
+It supplies [exact complete-orbit aggregation](research/dyadic-orbit-aggregation.md)
+and [global modular input circuits](research/interval-packet-circuits.md)
+with `O(n+p)` arithmetic nodes and polynomial generation cost.
+Recovering the genuine rational common factor within the desired time
+bound remains open; these results do not improve the factoring score.
+[Normalized integer-center jets](research/normalized-interval-jets.md)
+also separate huge local powers of two from polynomial-cost unit data.
+The [research index](research/INDEX.md) links proofs, exact evidence, and replay commands.
+
 The result table distinguishes verified machine bounds from conditional constructions and finite experiments. A merged PR or a passing finite test does not imply independent mathematical review.
 
 ## Verification
@@ -44,6 +59,7 @@ make verify               # Python unit tests, exact certificates, and local lin
 make verify-frontier      # Focused research certificates
 make verify-post-half     # Larger optional rank tests
 make verify-docs          # Local Markdown-link check
+make verify-arithmetic    # All arithmetic-framework checkers
 make verify-schur-fermion # Complete Schur entry formulas and exact comparisons
 make verify-schur-central # Hook-residue identities and full Schur ranks through weight 8
 make verify-schur-gaussian # Exact digit reduction and fixed Gaussian crossing seed
@@ -90,6 +106,81 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 | [`tools/`](tools/) and [`tests/`](tests/) | Exact checkers, reproduction scripts, and unit tests |
 
 ## Current research frontier
+
+The [binary site-symmetry barrier](research/binary-site-symmetry-barrier.md)
+gives an ordinary actual-rank proof of `rho >= 3/4` for every decomposition
+whose binary pieces are invariant under all simultaneous permutations of
+tensor positions. It covers scalar seeds of every degree, arbitrary coefficient
+recombinations and mixtures of scalar curves, over any fixed field,
+including characteristic two. A universal degree-four polynomial and
+Weyl filtrations supply the obstruction at every tensor length.
+It extends to a common partition into any sublinear number of position
+classes, with arbitrary coupled coefficient functionals between classes.
+Run `make verify-binary-site-symmetry` for exact algebra and finite controls.
+The [matching-curve controls](research/matching-curve-controls.md) show
+why escaping common-minor tests does not escape this broader theorem.
+New physical code restrictions and constructions that break the stated
+site symmetry remain open; no stronger factoring exponent is established.
+
+The [full auxiliary coefficient-span experiment](research/auxiliary-coefficient-span.md)
+tests ordered noncommuting constructions outside that symmetry hypothesis.
+Complete finite recombination improves several raw rank maxima, but exact
+rank-sum lower certificates leave the tested finite-block envelope above
+the half-rate threshold. Run `make verify-auxiliary-coefficient-span`.
+Nine full extension-field controls over `F_4` retain the same finite
+minmax thresholds; run `make verify-auxiliary-extension-span`.
+
+The [nonlinear downset-code construction](research/downset-code-crossings.md)
+preserves the crossing on a restricted physical alphabet. Its column
+matrix has an exact global Smith diagonal and a constant basis change
+to smaller weighted disjointness matrices, allowing actual recombination
+ranks to be checked without inferring them from a Smith bound.
+Complete small no-adjacent-ones code experiments give no new rank-sum
+threshold. Run `make verify-downset-crossings verify-regular-code-crossings`.
+
+The [common-cofactor barrier](research/common-cofactor-barrier.md) closes
+the asymmetric ternary quadratic family for actual coefficient ranks.
+All 32,265 normalized seeds, covering 12,852,225 actual coefficient seeds,
+have a shared projected minor that forces
+`rho >= log(3)/(2 log(2)) = 0.792481...` at every tensor length.
+The exact full certificate replay is `make verify-common-cofactor`.
+The binary site-symmetry theorem above additionally covers seeds without
+this certificate at its weaker, but still post-half-excluding, floor.
+The factoring exponent is still one half.
+
+The [joint determinant barrier](research/joint-determinant-barrier.md)
+uses Weyl filtrations in every characteristic to bound actual coefficient
+ranks. It rules out `rho < 4/5` for binary quadratics with two pure
+interpolation values and cubics with three, including the entire
+135,005,697-seed ternary cubic class. Equal determinants give floor one.
+The asymmetric rank-two values have a weaker determinant floor of `2/3`;
+the common-cofactor result above now closes the full ternary quadratic
+class with a stronger certificate. Run `make verify-joint-determinant`.
+
+The [constant transpose-intertwiner obstruction](research/transpose-intertwiner-barrier.md)
+applies to actual tensor-power coefficient ranks: a common invertible
+intertwiner forces both cut ranks to agree, ruling out leading contraction
+for polynomially many pieces. It excludes 32,454,657 ternary cubic seeds.
+Actual jets of 200 retained witnesses are checked through three copies;
+the favorable two-copy values do not persist in that finite comparison.
+Run `make verify-transpose-intertwiner` for complete finite coverage counts
+and independent matrix controls. No stronger factoring exponent is claimed.
+
+The [universal multipoint Smith floor](research/multipoint-smith-floor.md)
+shows that the local-jet pressure criterion needs `rho > 3/4` over every
+field, alphabet size, polynomial degree, allocation, and permitted cut scale.
+It therefore cannot improve the existing `1/sqrt(2)` crossing. A completed
+1,579,014-seed cubic catalogue supplies independent literal controls.
+Sharper actual-jet bounds and physical type constructions remain outside
+this obstruction. Run `make verify-multipoint-smith-floor`.
+
+The [complete low-rank ternary quadratic catalogue](research/multipoint-low-rank-seeds.md)
+excludes binary seeds with cut-rank product at most three at both finite
+interpolation points: all 32,265 representatives satisfy the exact multipoint
+pressure floor `rho >= 3/4`, over every degree allocation and two-cut scale.
+The [pure-value subfamily](research/multipoint-rank-one-seeds.md) has its
+own smaller replay. Larger local ranks and additional field points remain
+open. Run `make verify-multipoint-rank-two` for the broader catalogue.
 
 The [typed rational strictification theorem](research/typed-rational-crossing-strictification.md)
 extends the binary pressure floor to scalar rational kernels with only
@@ -166,6 +257,14 @@ the same floor to matrix-valued binary seeds of every fixed auxiliary
 dimension, including independent rational auxiliary gauges at the two
 places; block certificates and module word-rate bounds remain outside it.
 Run `make verify-auxiliary-binary-floor`.
+
+For larger alphabets, [cell-set minor caps](research/cell-minor-caps.md)
+strengthen the [shared-minor relaxation](research/shared-minor-profile-relaxation.md):
+every set of k cells gives an endpoint minor that bounds each Smith-profile
+prefix by kd plus the k smallest cell energies. This exactly excludes the
+earlier four-symbol relaxation target. Sharper negative relaxation targets
+remain at five and six symbols; they are construction targets, not crossings.
+Run `make verify-cell-minor-caps`.
 
 The [nonresonant Boolean filter theorem](research/nonresonant-boolean-filter-floor.md)
 excludes arbitrary nonhomogeneous Boolean supports in the stated two-power
@@ -835,15 +934,70 @@ still needed.
 
 See the [research index](research/INDEX.md) for completed arguments, scoped obstructions, and older candidates. Active work can also appear in [open pull requests](https://github.com/1337isnot1337/integer-factoring/pulls); branch research is not automatically a result on `main`.
 
+See the [research index](research/INDEX.md) for completed arguments, scoped obstructions, and older candidates. Active work is committed directly to `main` by default; useful partial research can be integrated as a checkpoint without being promoted to a stronger theorem.
+
+An [arithmetic framework program](research/arithmetic-framework.md) studies
+deterministic class-group relation generation outside the crossing evaluator.
+It proves a positive Fourier hitting lemma and deterministic extraction of
+two-torsion from unsaturated relation data. A powering seed with published
+expander amplification supplies biased words from generators without a group
+decomposition. The fast generator and smooth-pair
+construction steps remain open, so the score is still `1/2`. Reproduce the
+current exact controls with `make verify-arithmetic-framework`.
+The [actual quadratic-form controls](research/arithmetic-class-group-controls.md)
+also recover proper factors for 18 finite targets and check complete
+two-torsion recovery; their generator and order searches enumerate classes.
+A [density/index transfer](research/arithmetic-density-lift.md) also turns
+relations on a possibly proper small-prime subgroup into a global
+class-number multiple. Fast pair extraction and deterministic coverage of
+the missing ambiguous directions remain unresolved.
+The [bounded smooth-norm interface](research/bounded-smooth-norm.md)
+characterizes the required pairs and converts supplied representations at
+`2^O(b/log b)` divisor-search cost; locating those representations efficiently
+is still open.
+
+The [Bell-diagonal seed construction](research/bell-diagonal-crossings.md)
+gives exact two-cut transforms and excludes its complete symmetric
+coefficient spans at local dimensions two and four. Dimension eight
+remains open under that argument. Replay its physical tensors and pencil
+ranks with `make verify-bell`; no stronger factoring exponent is claimed.
+The [linear-pencil search](research/bell-linear-search.md) includes two
+complete small-domain calibrations and explicit larger finite searches,
+with no improvement in the recorded schedules.
+The [polynomial synthesis engine](research/bell-polynomial-synthesis.md)
+certifies uniform rational rank bounds and led to an explicit
+[folded-cube crossing family](research/folded-bell-crossings.md).
+Its optimal leading contraction within its complete coefficient span
+is `H_2(1/4)=0.811278...`, above the critical threshold. The factoring
+score is unchanged.
+The [code-quotient analysis](research/code-quotient-crossings.md) preserves
+the crossing duality, pays the maximal common polynomial division, and
+identifies nonuniform finite-field cancellations as a remaining route;
+ordinary covering-radius gains alone do not improve its pressure criterion.
+The [signed-boundary extension](research/signed-boundary-crossings.md)
+preserves duality under more general intertwiners and isotropic reductions,
+with exact common-factor costs; its strict rank improvement remains open.
+An [endpoint pressure theorem](research/bell-cubic-outer-rank-floor.md)
+excludes the stated outer-rank-one cubics in every odd characteristic,
+and quartics at local dimensions 8 and 16. Its first open power-of-two
+quartic alphabet at least eight is 32.
+For [self-reciprocal quartics](research/bell-quartic-rigidity.md), an exact
+matrix identity relates a pressure witness to sparse Hadamard rank reduction;
+it is a necessary condition and supplies no improved factoring bound.
+
+
 ## Contribution and attribution
 
 Start with the [contributor quickstart](docs/START_HERE.md) and
-[CONTRIBUTING.md](CONTRIBUTING.md). You can report a correction or reproduction
-without proposing a new bound. [Open a focused issue](https://github.com/1337isnot1337/integer-factoring/issues/new/choose)
-or choose an [available starter task](https://github.com/1337isnot1337/integer-factoring/issues?q=is%3Aissue%20is%3Aopen%20label%3A%22good%20first%20issue%22).
+[CONTRIBUTING.md](CONTRIBUTING.md). Work directly on `main` when you have
+push access. Pull requests are mainly for external contributors or when
+isolation and separate integration review are useful; every useful PR is
+intended to merge, including partial and negative research. A merge records
+integration, not mathematical acceptance.
 
 For substantial research, read [autoresearch.md](autoresearch.md) and coordinate
-through [issue #8](https://github.com/1337isnot1337/integer-factoring/issues/8).
+through [GitHub Discussions](https://github.com/1337isnot1337/integer-factoring/discussions),
+starting with the [coordination thread](https://github.com/1337isnot1337/integer-factoring/discussions/51).
 Reviewers can use the [review guide](docs/REVIEWING.md) and
 [exact-head review ledger](docs/REVIEW_LEDGER.md). Document source revisions,
 proof status, reproduction commands, and remaining gaps. The
