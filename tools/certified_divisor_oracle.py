@@ -10,6 +10,7 @@ from __future__ import annotations
 import argparse
 from dataclasses import asdict, dataclass
 import json
+import sys
 from pathlib import Path
 
 from adaptive_divisor_preprocessing import AdaptiveMaximum, BenefitSearch
@@ -207,6 +208,9 @@ def is_highly_composite(value: int) -> bool:
 
 
 def main():
+    # This CLI intentionally accepts and emits arbitrary-size exact integers.
+    if hasattr(sys, "set_int_max_str_digits"):
+        sys.set_int_max_str_digits(0)
     parser = argparse.ArgumentParser(description=__doc__)
     group = parser.add_mutually_exclusive_group(required=True)
     group.add_argument('--bits', type=int, help='use the exclusive bound 2^n')

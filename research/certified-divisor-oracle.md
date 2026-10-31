@@ -2,6 +2,8 @@
 
 ## Result and verified implementation
 
+The [larger checkpoint follow-up](large-divisor-checkpoints.md) records independent exact agreement through 32,768 bits and fixes the CLI decimal-conversion limit. The mathematical search and certificate algorithm below are unchanged.
+
 For an integer bound `X>=2`, define
 
 \[
