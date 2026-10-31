@@ -453,3 +453,7 @@ verify-binary-two-cut-lattices:
 .PHONY: verify-deficit-identity-geometry
 verify-deficit-identity-geometry:
 	python3 tools/check_deficit_identity_mode_geometry.py
+
+.PHONY: verify-above-power-operators
+verify-above-power-operators:
+	python3 tools/check_above_power_terminal_operators.py --extended

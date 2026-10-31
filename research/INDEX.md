@@ -14,6 +14,10 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Terminal operators above a power of two](above-power-identity-operator-reduction.md): an existing unfiltered low identity direction closes a small square Weyl core while keeping its physical spectator and degree accounting explicit.
+
+- [Completed above-power operator catalogue](above-power-operator-searches.md): all 42,560 specified interval-33 projector kernels yield 1,111 exact profile classes, with complete numerical grid and refinement records.
+
 - [Fixed deficits below prime powers](fixed-deficit-identity-cores.md): mixed initial and terminal directions have a uniformly bounded rectangular core, exact Gaussian-digit division, and a rank-at-most-deficit contraction correction in every prime characteristic.
 
 - [Complete-entry binary crossing synthesis](binary-two-cut-affine-synthesis.md): exact affine systems at both cuts cover free Laurent entries, a support lemma bounds the required degree for specified targets, and complete constant F4 flag searches decide those targets.

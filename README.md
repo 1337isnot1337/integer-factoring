@@ -240,6 +240,14 @@ profile through order `p^(r+d)`, and bounds the departure from the
 scalar prime-power contraction by rank `d`. Its general gate checks
 exact polynomial geometry and Gaussian-factor division; further complete
 physical operator replays are stated separately.
+The complementary [above-power construction](research/above-power-identity-operator-reduction.md)
+handles terminal directions at `n=2^k+1` by retaining the existing,
+unchanged identity direction zero. Its local core and Weyl matrix are
+bounded independently of the interval, with no formal physical mode
+added. The [interval-33 catalogue](research/above-power-operator-searches.md)
+completed all 42,560 specified projector kernels and 1,111 exact profile
+classes, with no gain on the recorded grid and refinements.
+`make verify-above-power-operators` checks the complete construction.
 
 The [reflection-pair compression](research/reflection-dual-rail-compression.md)
 retains one occupied mode from every reflected pair. A characteristic-two
