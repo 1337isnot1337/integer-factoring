@@ -645,3 +645,7 @@ verify-fused-six-vertex:
 verify-nonlinear-symbol-charges:
 	OPENBLAS_NUM_THREADS=1 python3 tools/check_nonlinear_symbol_charges.py --output /tmp/integer-factoring-nonlinear-symbol-charges-replay.json
 
+.PHONY: verify-paired-quartic-poles
+verify-paired-quartic-poles:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_reflection_paired_quartic_words.py --output /tmp/integer-factoring-paired-quartic-poles-replay.json
+

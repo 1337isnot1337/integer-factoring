@@ -91,6 +91,14 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 
 ## Current research frontier
 
+The [amplified quartic pole theorem](research/reflection-paired-quartic-poles.md)
+permits a growing word of disjoint gates with poles of order M+7 per gate.
+Simultaneous Pfaffian row factors prove every typed endpoint, and exact
+common-factor cancellation reduces the actual local pole to at most M-1.
+The stated numerator window keeps the original effective degree. The
+construction still needs a negative full-pressure witness. Run
+`make verify-paired-quartic-poles`.
+
 The [exact nonlinear charge theorem](research/nonlinear-symbol-charge-lattices.md)
 characterizes every admissible pair of full-symbol potentials for the
 reflection tensor: their Hamming-cube Lipschitz constants must sum to at
