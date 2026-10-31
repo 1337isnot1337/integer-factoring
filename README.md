@@ -137,6 +137,11 @@ For this Gaussian seed, [generic mode blocks](research/typed-gaussian-generic-bl
 force cost `Omega(D^2)` when all nonvacuum occupations stay fixed, even
 after arbitrary coefficient recombinations. Growing occupation densities
 remain a separate regime.
+[Charge-block compression](research/typed-gaussian-charge-blocks.md)
+computes the actual coefficient ranks and recombinations at larger types.
+For 1,260 labels it replaces the full 1,587,600-dimensional flattening by
+38 orbit blocks, each of size at most 1,260. The checked decompositions
+remain above the improvement threshold.
 
 [Exact type optimization](research/type-optimized-crossing-pressure.md)
 reduces the best common letter frequencies to one rational pressure inequality.

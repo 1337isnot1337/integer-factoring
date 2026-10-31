@@ -71,6 +71,7 @@ verify-sparse-holonomy:
 verify-charge-pruning:
 	python3 tools/check_one_sided_charge_pruning.py
 	python3 tools/check_typed_gaussian_generic_blocks.py
+	python3 tools/check_typed_gaussian_charge_blocks.py
 
 verify-cubic-full-images:
 	python3 tools/check_cubic_full_image_span.py --output /tmp/cubic-full-image-span.json
