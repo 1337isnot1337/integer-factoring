@@ -1,0 +1,40 @@
+{
+  "alphabet": 3,
+  "dimension": 9,
+  "kernel_level_counts": {
+    "1": 2,
+    "2": 1,
+    "3": 1,
+    "4": 1,
+    "5": 1,
+    "6": 1,
+    "7": 1,
+    "8": 1
+  },
+  "paths_screened": 35,
+  "order_one_histogram": {
+    "2": 2,
+    "3": 2,
+    "4": 18,
+    "5": 12,
+    "8": 1
+  },
+  "minimum_order_one_multiplicity": 2,
+  "best_one_weight_levels": [
+    2,
+    4,
+    8
+  ],
+  "actual_degree": 11,
+  "row_constant_rank": 1,
+  "inverse_degree_at_most": 2,
+  "original_polynomial_resolvent_identity": "passed",
+  "physical_endpoint_and_constant": "passed",
+  "independent_best_first_jet_toeplitz": "passed",
+  "physical_polynomial_sha256": "0c1421e43425d3a68e8566b468e6bdac757b281194bb76360eb731c811d2d81f",
+  "prior_catalogue_inverse_compatibility_controls": 52,
+  "complete_first_jet_exclusion": false,
+  "small_scale_B_lower_bound": "28/3",
+  "large_scale_B_lower_bound": "177147/2048",
+  "scope": "This weighted kernel-flag family only; no factoring improvement"
+}

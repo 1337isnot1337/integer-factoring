@@ -1,0 +1,257 @@
+{
+  "constant_orbits": [
+    [
+      1,
+      1,
+      36
+    ],
+    [
+      1,
+      2,
+      18
+    ],
+    [
+      1,
+      4,
+      18
+    ],
+    [
+      1,
+      6,
+      18
+    ],
+    [
+      1,
+      7,
+      36
+    ],
+    [
+      1,
+      8,
+      9
+    ],
+    [
+      6,
+      1,
+      18
+    ],
+    [
+      6,
+      2,
+      36
+    ],
+    [
+      6,
+      6,
+      6
+    ],
+    [
+      6,
+      7,
+      18
+    ],
+    [
+      6,
+      11,
+      12
+    ]
+  ],
+  "structured": [
+    {
+      "degree": 2,
+      "constant_factors": [
+        1,
+        1
+      ],
+      "catalogued_tensors": 65536,
+      "independently_checked_tensors": 370,
+      "paired_profiles": 126,
+      "maximal_profiles": 25,
+      "pressure_floor": "256/27",
+      "bernstein_leaves": 25,
+      "max_bernstein_depth": 0
+    },
+    {
+      "degree": 2,
+      "constant_factors": [
+        1,
+        2
+      ],
+      "catalogued_tensors": 65536,
+      "independently_checked_tensors": 357,
+      "paired_profiles": 111,
+      "maximal_profiles": 23,
+      "pressure_floor": "256/27",
+      "bernstein_leaves": 23,
+      "max_bernstein_depth": 0
+    },
+    {
+      "degree": 2,
+      "constant_factors": [
+        1,
+        4
+      ],
+      "catalogued_tensors": 65536,
+      "independently_checked_tensors": 356,
+      "paired_profiles": 111,
+      "maximal_profiles": 23,
+      "pressure_floor": "256/27",
+      "bernstein_leaves": 23,
+      "max_bernstein_depth": 0
+    },
+    {
+      "degree": 2,
+      "constant_factors": [
+        1,
+        6
+      ],
+      "catalogued_tensors": 65536,
+      "independently_checked_tensors": 412,
+      "paired_profiles": 167,
+      "maximal_profiles": 33,
+      "pressure_floor": "256/27",
+      "bernstein_leaves": 33,
+      "max_bernstein_depth": 0
+    },
+    {
+      "degree": 2,
+      "constant_factors": [
+        1,
+        7
+      ],
+      "catalogued_tensors": 65536,
+      "independently_checked_tensors": 420,
+      "paired_profiles": 176,
+      "maximal_profiles": 35,
+      "pressure_floor": "256/27",
+      "bernstein_leaves": 35,
+      "max_bernstein_depth": 0
+    },
+    {
+      "degree": 2,
+      "constant_factors": [
+        1,
+        8
+      ],
+      "catalogued_tensors": 65536,
+      "independently_checked_tensors": 350,
+      "paired_profiles": 104,
+      "maximal_profiles": 22,
+      "pressure_floor": "256/27",
+      "bernstein_leaves": 22,
+      "max_bernstein_depth": 0
+    },
+    {
+      "degree": 2,
+      "constant_factors": [
+        6,
+        1
+      ],
+      "catalogued_tensors": 65536,
+      "independently_checked_tensors": 382,
+      "paired_profiles": 167,
+      "maximal_profiles": 33,
+      "pressure_floor": "256/27",
+      "bernstein_leaves": 33,
+      "max_bernstein_depth": 0
+    },
+    {
+      "degree": 2,
+      "constant_factors": [
+        6,
+        2
+      ],
+      "catalogued_tensors": 65536,
+      "independently_checked_tensors": 420,
+      "paired_profiles": 176,
+      "maximal_profiles": 35,
+      "pressure_floor": "256/27",
+      "bernstein_leaves": 35,
+      "max_bernstein_depth": 0
+    },
+    {
+      "degree": 2,
+      "constant_factors": [
+        6,
+        6
+      ],
+      "catalogued_tensors": 65536,
+      "independently_checked_tensors": 370,
+      "paired_profiles": 162,
+      "maximal_profiles": 18,
+      "pressure_floor": "256/27",
+      "bernstein_leaves": 19,
+      "max_bernstein_depth": 1
+    },
+    {
+      "degree": 2,
+      "constant_factors": [
+        6,
+        7
+      ],
+      "catalogued_tensors": 65536,
+      "independently_checked_tensors": 384,
+      "paired_profiles": 191,
+      "maximal_profiles": 17,
+      "pressure_floor": "256/27",
+      "bernstein_leaves": 17,
+      "max_bernstein_depth": 0
+    },
+    {
+      "degree": 2,
+      "constant_factors": [
+        6,
+        11
+      ],
+      "catalogued_tensors": 65536,
+      "independently_checked_tensors": 382,
+      "paired_profiles": 177,
+      "maximal_profiles": 19,
+      "pressure_floor": "256/27",
+      "bernstein_leaves": 20,
+      "max_bernstein_depth": 1
+    },
+    {
+      "degree": 3,
+      "constant_factors": [
+        9,
+        9
+      ],
+      "catalogued_tensors": 65536,
+      "independently_checked_tensors": 871,
+      "paired_profiles": 671,
+      "maximal_profiles": 10,
+      "pressure_floor": "256/27",
+      "bernstein_leaves": 13,
+      "max_bernstein_depth": 1
+    }
+  ],
+  "unstructured_cubic_sample": {
+    "degree": 3,
+    "constant_factors": [
+      9,
+      9
+    ],
+    "catalogued_tensors": 1000000,
+    "independently_checked_tensors": 1255,
+    "paired_profiles": 1061,
+    "maximal_profiles": 61,
+    "pressure_floor": "256/27",
+    "bernstein_leaves": 61,
+    "max_bernstein_depth": 0
+  },
+  "quartic_catalogue_sampled_replay": {
+    "degree": 4,
+    "constant_factors": [
+      9,
+      9
+    ],
+    "catalogued_tensors": 16777216,
+    "independently_checked_tensors": 8092,
+    "paired_profiles": 3999,
+    "maximal_profiles": 20,
+    "pressure_floor": "256/27",
+    "bernstein_leaves": 26,
+    "max_bernstein_depth": 1
+  }
+}

@@ -14,7 +14,13 @@
         "703135247427",
         "-646306737026",
         "1867853905160"
-      ]
+      ],
+      "outside_box_witness_vector": [
+        225,
+        89
+      ],
+      "outside_box_primitive_norm": "37449200274818585",
+      "outside_box_word_length": 9
     },
     {
       "status": "search_exhausted",
@@ -29,7 +35,13 @@
         "871731309586",
         "-598242644502",
         "1142746515493"
-      ]
+      ],
+      "outside_box_witness_vector": [
+        204,
+        359
+      ],
+      "outside_box_primitive_norm": "139743385530235837",
+      "outside_box_word_length": 9
     }
   ]
 }

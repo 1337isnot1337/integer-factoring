@@ -1,0 +1,19 @@
+{
+  "scope": "Exact polynomial normalization, independent direction rank, and literal complete-profile controls.",
+  "records": [
+    {
+      "record": "evidence/saturated-dual-kernel-directions-h16.json",
+      "record_sha256": "2c4d91b8d3ada62fb91cffdd9f94687b95da3e1c5616924249acf49f1f8b101c",
+      "status": "passed",
+      "exact_polynomial_normalization_identities": 1250,
+      "endpoint_zero_directions": 150,
+      "direction_entries_checked": 93750,
+      "independent_binary_rank": 150,
+      "dimension_after_F4_scalar_extension": 150,
+      "literal_affine_endpoint_entries": 1875,
+      "complete_profiles_certified_by_polynomial_frames": 12,
+      "Frobenius_profile_comparisons": 12
+    }
+  ],
+  "checker_sha256": "b331643bf208c47cd5396c3f5bf15bd14acc26fd742adad6c3c37a5cb6932ca1"
+}

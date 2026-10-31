@@ -236,13 +236,66 @@ have sizes eight and 34 and optimal rank sums approximately 50.2492
 and 772.2361. These are worse than the simple repeated-block target.
 The [normal-form artifact](../evidence/downset-crossing-normal-form.json)
 and [complete finite optimization](../evidence/regular-code-crossings.json)
-state the exact tested scopes. No asymptotic exclusion of all nonlinear
-codes, or all tensor lengths of this language, is asserted.
+state the exact tested finite scopes. The uniform exclusion below comes
+from a subsequent block theorem, rather than those experiments.
+
+**Subsequent result.** The [weighted block theorem](difference-support-rank-floor.md)
+now excludes the entire elementary crossing coefficient span on **every
+coordinate-code pair `A,B`, over every field**, with arbitrary
+multivariate coefficient recombinations. It gives rank-sum floor
+`(|A||B|)^(3/4)`, so all equal-size coordinate-code restrictions have
+leading `rho>=3/4`. This includes the no-adjacent-ones language, its
+prefixes, and unequal paired encodings. Coherent physical maps, different
+local tensors, and new auxiliary dynamics are outside that theorem.
 
 The open structural question is whether a different downset, a
 different nonlinear language, or a new local polynomial can exploit
 the disjointness-block formula to obtain a uniform rank **upper**
 bound below the required threshold. A smaller Smith profile alone is
 insufficient, by the [universal bare criterion floor](multipoint-smith-floor.md).
+
+## 7. Different downsets on the two crossing pairs
+
+The same normal form holds for two nonempty downsets `A,B`, with
+`x,v in A` and `y,u in B`. The cut matrices both have order `|A||B|`.
+For fixed `D=x triangle u` and `a=x intersection D`, replace the fiber by
+
+```math
+L_a^{A,B}(D)=\{b\subseteq[m]\setminus D:
+ a\cup b\in A,\ (D\setminus a)\cup b\in B\}.
+```
+
+This is a downset. Columns have inside orientation `D\a` but the
+opposite code assignment `(y,v) in B cross A`; their outside fiber is
+therefore exactly the same `L_a^(A,B)(D)`. There is no assertion that
+the two row fibers at `a` and `D\a` are equal when `A!=B`.
+
+After permuting the column blocks, (2)--(4) apply unchanged. The global
+Smith orders are `|x|+|u|` for `(x,u) in A cross B`, and hence
+
+```math
+\det\operatorname{Col}(G_{A,B}(z))
+ =z^{|B|\sum_{x\in A}|x|+|A|\sum_{u\in B}|u|}.
+```
+
+Formula (6) for actual coefficient ranks also holds with these paired
+fibers. The degree is `max_(x in A,y in B)|x triangle y|`, and the
+endpoint is the rectangular crossing on `A,B,B,A`.
+
+The checker now additionally covers **all 361 ordered pairs** of
+nonempty three-bit downsets. It compares 160,000 literal entry
+polynomials, 4,670 full coefficient-rank queries, and 6,400 Smith orders.
+The earlier same-code and regular-code receipts were regenerated from
+the extended source; their numerical results are unchanged.
+
+This paired formulation permits different nonlinear encodings for the
+two crossing pairs, without replacing actual ranks by separately
+optimized fiber bounds. For example, forbidding `11` on disjoint even
+pairs in `A` and on shifted pairs in `B` gives explicit staggered codes.
+Their actual asymptotic rank cost is not settled by the normal form
+alone. The subsequent weighted block theorem above rules out improvement
+from their full elementary coefficient span, without further finite
+enumeration. A constructive pivot must change the local kernel or use
+coherent physical encodings that remove the coordinate-block hypothesis.
 
 This construction and its proof used substantial Codex AI assistance.

@@ -16,7 +16,6 @@ from pathlib import Path
 import random
 import time
 
-from scipy.optimize import minimize_scalar
 
 from f4_lattice_linear import MUL, INV, add, coefficient, dot, eliminate, encode, scale
 from search_binary_two_cut_lattices import TwoCutLattice, BASE
@@ -146,6 +145,8 @@ class FlagSearch:
 
 
 def main():
+    # SciPy is optional for the exact checkers that import this module.
+    from scipy.optimize import minimize_scalar
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--degree', type=int, default=5)
     parser.add_argument('--baseline-shift', type=int, default=0)

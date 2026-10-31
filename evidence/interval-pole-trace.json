@@ -1,0 +1,46 @@
+{
+  "scope": "Exact global pole filter and enumerative bilinear closure; no improved factoring bound.",
+  "seed": 20261039,
+  "literal_quadratic_filter_controls": 43037,
+  "weighted_logarithmic_derivative_controls": 384,
+  "positive_random_rectangles": 5,
+  "additional_positive_weighted_controls": 69,
+  "global_count_controls": 684,
+  "literal_child_pair_controls": 9216,
+  "boundary_translation_controls": 256,
+  "random_max_tree_nodes": 23,
+  "random_max_coefficient_bits": 10,
+  "huge_artificial_factor_controls": [
+    {
+      "factor_bit_scale": 12,
+      "number_bits": 26,
+      "raw_modular_fake_factor_order_at_least": 2017,
+      "true_pair_count": 0,
+      "displacement_bits": 58,
+      "tree_nodes": 1,
+      "included_corner_pair_count": 1,
+      "included_corner_tree_nodes": 1
+    },
+    {
+      "factor_bit_scale": 80,
+      "number_bits": 162,
+      "raw_modular_fake_factor_order_at_least": 604462909807314587353057,
+      "true_pair_count": 0,
+      "displacement_bits": 194,
+      "tree_nodes": 1,
+      "included_corner_pair_count": 1,
+      "included_corner_tree_nodes": 1
+    },
+    {
+      "factor_bit_scale": 200,
+      "number_bits": 402,
+      "raw_modular_fake_factor_order_at_least": 803469022129495137770981046170581301261101496891396417650657,
+      "true_pair_count": 0,
+      "displacement_bits": 434,
+      "tree_nodes": 1,
+      "included_corner_pair_count": 1,
+      "included_corner_tree_nodes": 1
+    }
+  ],
+  "unresolved": "Evaluate or merge the normalized global resolvent states without the enumerative tree cost."
+}
