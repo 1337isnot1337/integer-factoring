@@ -91,6 +91,14 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 
 ## Current research frontier
 
+The [symmetric multilevel filter construction](research/symmetric-multilevel-filter-synthesis.md)
+compresses a correlated binary block to one polynomial per occupation weight.
+Its exact tensor rule permits different filters on disjoint physical blocks.
+A literal four-mode filter gives a strict natural-charge improvement over the
+Gaussian cost, including a gain proportional to interval length when tiled;
+its complete pressure remains above the required threshold. Run
+`make verify-symmetric-binary-filters` for full-state and exact cost controls.
+
 The [exact Gaussian fixed-type certificates](research/reflection-gaussian-fixed-type-duals.md)
 prove global minima over every independent mode gauge and positive scale
 for four explicit rational physical types, through interval length 32.

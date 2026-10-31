@@ -50,6 +50,10 @@ verify-multipoint-hermite:
 verify-gaussian-fixed-types:
 	python3 tools/check_reflection_gaussian_fixed_type_duals.py --output /tmp/integer-factoring-gaussian-fixed-types-replay.json
 
+.PHONY: verify-symmetric-binary-filters
+verify-symmetric-binary-filters:
+	python3 tools/check_symmetric_binary_filter_synthesis.py --output /tmp/integer-factoring-symmetric-binary-replay.json
+
 .PHONY: verify-frontier-extensions
 verify-frontier-extensions:
 	python3 tools/check_all_scale_balanced_obstruction.py
