@@ -91,6 +91,9 @@ The [code-quotient analysis](research/code-quotient-crossings.md) preserves
 the crossing duality, pays the maximal common polynomial division, and
 identifies nonuniform finite-field cancellations as a remaining route;
 ordinary covering-radius gains alone do not improve its pressure criterion.
+The [signed-boundary extension](research/signed-boundary-crossings.md)
+preserves duality under more general intertwiners and isotropic reductions,
+with exact common-factor costs; its strict rank improvement remains open.
 
 See the [research index](research/INDEX.md) for completed arguments, scoped obstructions, and older candidates. Active work can also appear in [open pull requests](https://github.com/1337isnot1337/integer-factoring/pulls); branch research is not automatically a result on `main`.
 

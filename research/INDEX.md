@@ -19,6 +19,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Bell polynomial synthesis](bell-polynomial-synthesis.md): exact affine two-cut construction and rational pressure bounds uniform in tensor length.
 - [Folded-cube Bell family](folded-bell-crossings.md): explicit all-dimension crossing in every odd characteristic, with optimal coefficient-span limit `H_2(1/4)`.
 - [Code-quotient crossings](code-quotient-crossings.md): exact projection and maximal common division, a characteristic-zero pressure restriction, and a precise modular-cancellation target.
+- [Signed boundary crossings](signed-boundary-crossings.md): exact intertwiners and isotropic code reduction, with complete common-factor normalization and retained explicit paths.
 
 - [Pieces-to-factoring transfer](pieces-to-factoring.md): conditional crossing-parameter transfer, with full bit-cost accounting.
 - [Scale-one modular transfer](scale-one-modular-transfer.md): fixed-field transfer and machine costs.
