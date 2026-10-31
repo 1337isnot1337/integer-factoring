@@ -148,6 +148,11 @@ charges for the long input degrees. A fast algorithm for these
 implicitly described inputs is the new question in
 [Discussion #53](https://github.com/1337isnot1337/integer-factoring/discussions/53).
 Equation (5) is an identity, not an algorithm for that projection.
+The [global pole-trace continuation](interval-pole-trace.md) moves the pole
+to a separate product parameter, proves a polynomial-precision normalized
+filter, and closes both boundary translations in a bilinear state family.
+Its exact dyadic reference still has an enumerative state count; a compact
+state description is not an improved elimination bound.
 
 Treating `N` as an indeterminate does not solve the problem. Over
 `Q(N)`, none of the two root families coincide, so the rational part

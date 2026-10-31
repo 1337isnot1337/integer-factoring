@@ -41,6 +41,11 @@ verify-arithmetic:
 	python3 tools/check_interval_unit_jets.py
 	python3 tools/check_interval_packet_circuits.py
 	python3 tools/check_normalized_interval_jets.py
+	python3 tools/check_interval_pole_trace.py
+
+.PHONY: verify-interval-pole-trace
+verify-interval-pole-trace:
+	python3 tools/check_interval_pole_trace.py
 
 verify-bell:
 	python3 tools/check_bell_crossing.py

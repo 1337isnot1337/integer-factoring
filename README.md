@@ -46,6 +46,10 @@ Recovering the genuine rational common factor within the desired time
 bound remains open; these results do not improve the factoring score.
 [Normalized integer-center jets](research/normalized-interval-jets.md)
 also separate huge local powers of two from polynomial-cost unit data.
+The [global pole trace](research/interval-pole-trace.md) gives an exact
+polynomial-precision factor-pair filter and closed bilinear reduction rules.
+Its current implementation still enumerates the dyadic state tree; efficient
+global state reduction remains open.
 The [research index](research/INDEX.md) links proofs, exact evidence, and replay commands.
 
 The result table distinguishes verified machine bounds from conditional constructions and finite experiments. A merged PR or a passing finite test does not imply independent mathematical review.
