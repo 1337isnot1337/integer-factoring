@@ -33,6 +33,7 @@ verify-fixed-modes:
 	python3 tools/check_three_mode_pressure_certificate.py --certificate evidence/three-mode-pressure-refinement.json
 	python3 tools/check_schur_one_species_interval.py
 	python3 tools/check_schur_pascal_complement.py
+	python3 tools/check_constant_flag_crossings.py
 
 verify-cancellation-modules:
 	python3 tools/check_cancellation_module_automata.py

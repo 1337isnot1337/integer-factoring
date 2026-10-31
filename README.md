@@ -137,6 +137,11 @@ The [greedy Pascal-complement theorem](research/schur-pascal-complement.md)
 computes the same normalized spectrum for every finite mode set using
 binary linear algebra. It proves the interval formula at every length
 and skips large gaps by a traversal of binary intervals.
+[Constant matrix flags](research/constant-flag-crossings.md) extend the
+polynomial construction beyond Pascal matrices while preserving its
+determinant and typed endpoint. An exact four-mode screen over the
+four-element field covers 4,096 flags; all remain at or above the Pascal
+pressure at the displayed gauge.
 For this Gaussian seed, [generic mode blocks](research/typed-gaussian-generic-blocks.md)
 force cost `Omega(D^2)` when all nonvacuum occupations stay fixed, even
 after arbitrary coefficient recombinations. Growing occupation densities
