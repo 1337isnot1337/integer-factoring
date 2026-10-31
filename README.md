@@ -111,6 +111,12 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs five groups on 
 
 ## Current research frontier
 
+The [auxiliary extension](research/auxiliary-binary-gauge-floor.md) carries
+the same floor to matrix-valued binary seeds of every fixed auxiliary
+dimension, including independent rational auxiliary gauges at the two
+places; block certificates and module word-rate bounds remain outside it.
+Run `make verify-auxiliary-binary-floor`.
+
 For larger alphabets, [cell-set minor caps](research/cell-minor-caps.md)
 strengthen the [shared-minor relaxation](research/shared-minor-profile-relaxation.md):
 every set of k cells gives an endpoint minor that bounds each Smith-profile
@@ -418,6 +424,13 @@ matrices and polynomially many coefficients. Exact integer dual potentials
 reject all 216 cases of a stated two-dimensional binary control under the
 finite-block rank-sum envelope. Other auxiliaries and a uniform subcritical
 rank bound remain open. Run `make verify-ordered-steiner-gauges`.
+
+The [ordered Weyl construction](research/weyl-ordered-boundaries.md) writes
+the auxiliary word as an explicit quadratic phase. A Fourier argument
+classifies boundaries retaining the rank-one zero cut at every length.
+All 4,096 normalized F4 choices fail the two-position bare criterion by
+an exact four-jet floor `738>9^3`; longer ordered words remain open.
+Run `make verify-weyl-ordered-boundaries` for the standard-library replay.
 
 The [group-shear extension](research/group-shear-crossings.md) implements
 the swap through three multiplication/division shears over any finite

@@ -25,27 +25,48 @@ def main():
     parser.add_argument('--seconds', type=float, default=3600.)
     parser.add_argument('--maximum-cases', type=int)
     parser.add_argument('--precision', type=int, choices=(128, 256, 512, 1024), default=128)
+    parser.add_argument('--slab-source', choices=('module-constants', 'pure-coefficients', 'pure-and-vacuum'), default='module-constants')
+    parser.add_argument('--entry-floor-slack', type=int, default=0)
+    parser.add_argument('--engine', choices=('complete', 'structured'), default='complete')
+    parser.add_argument('--replay-every', type=int, default=100)
     parser.add_argument('--random-seed', type=int, default=31102691)
     parser.add_argument('--output', type=Path, required=True)
     args = parser.parse_args()
+    if args.entry_floor_slack < 0:
+        parser.error('The entry-floor slack must be nonnegative.')
+    if args.engine == 'structured' and args.slab_source == 'module-constants':
+        parser.error('The structured adapter requires a pure slab source.')
+    if args.replay_every < 1:
+        parser.error('Use a positive complete-matrix replay interval.')
     start = time.monotonic(); deadline = start+args.seconds
     directions = json.loads(args.directions.read_text())
-    generators = [row for row in directions['minimal_basis']['generators'] if max(row) <= 1]
-    assert len(generators) == 3
+    if args.slab_source == 'module-constants':
+        generators = [row for row in directions['minimal_basis']['generators'] if max(row) <= 1]
+        assert len(generators) == 3
+    else:
+        original = directions['minimal_basis']['generators']
+        generators = [[(entry >> 8) & 1 for entry in original[index]] for index in (5, 9)]
+        if args.slab_source == 'pure-and-vacuum':
+            generators.append([1]+[0]*124)
     supports = constant_slab_tensors(generators, 5)
     values, heights, ex, ey = five_letter_source()
     compiler = CoupledCopies(5, values, 18, heights, precision=args.precision)
     energies = ([a+b for a in ex for b in ex], [a+b for a in ey for b in ey])
     baseline_profiles = compiler.baseline_control()
     baseline = root_for_profiles(baseline_profiles, *energies)
+    frames = None
+    if args.engine == 'structured':
+        from pure_two_copy_frames import PureTwoCopyFrames
+        frames = PureTwoCopyFrames(compiler, jet_precision=args.precision,
+                                  work_precision=max(512, 2*args.precision))
     minimum = [min(side) for side in baseline_profiles]
     bounds = [[min(item[2] for item in compiler.weighted_support(row['support'], side))
                for side in (0, 1)] for row in supports]
     main_cases, extra_cases, seen = [], [], set()
     for i, j in combinations_with_replacement(range(len(supports)), 2):
         a, b = (bounds[i][side]+bounds[j][side] for side in (0, 1))
-        lower = max(0, minimum[1]-b)
-        top = min(36, a-minimum[0])
+        lower = max(0, minimum[1]-b-args.entry_floor_slack)
+        top = min(36, a-minimum[0]+args.entry_floor_slack)
         span = top-lower
         if span <= 0:
             continue
@@ -67,6 +88,9 @@ def main():
     source_names = (Path(__file__).name, 'two_copy_crossing_couplings.py',
                     'search_f4_recentered_crossings.py', 'native_matrix_smith_f4.py',
                     'native_matrix_smith_f4.cpp', 'native_rectangular_smith_f4.cpp')
+    if frames is not None:
+        source_names += ('pure_two_copy_frames.py', 'native_rank_one_smith_f4.py',
+                         'native_rank_one_smith_f4.cpp', 'f4_recentered_lattices.py')
     report = {'scope': 'Finite exact-coefficient integer-gauge two-copy profiles and exploratory floating pressures; no factoring improvement certified.',
               'arguments': vars(args) | {'directions': str(args.directions), 'output': str(args.output)},
               'source_sha256': {name: sha256((source_root/name).read_bytes()).hexdigest() for name in source_names},
@@ -78,6 +102,12 @@ def main():
               'baseline_profiles': compact(baseline_profiles), 'catalogue_size': len(cases),
               'maximal_endpoint_power_cases': len(main_cases), 'completed_cases': [],
               'profile_classes': [], 'unresolved_cases': [], 'completed_requested_schedule': False}
+    report.update(structured_profile_queries=0, complete_matrix_profile_queries=2,
+                  complete_matrix_replayed_cases=[], structured_replay_disagreements=[])
+    if frames is not None:
+        report['scope'] = ('Finite structured profile predictions and exploratory floating pressures, '
+                           'with separately counted original complete-matrix replays; '
+                           'no untested prediction or factoring improvement is certified.')
     signatures = {}; best = {'kind': 'uncoupled reference', **baseline, 'profiles': compact(baseline_profiles)}
 
     def save():
@@ -96,8 +126,22 @@ def main():
         recipe = {'first_support': i, 'second_support': j, 'monomial_shift': shift,
                   'endpoint_power': power, 'F4_coefficient': coefficient}
         polynomial = endpoint_power(power) << shift
+        replayed = frames is None
         try:
-            profiles = compiler.profiles(supports[i]['support'], supports[j]['support'], polynomial, coefficient)
+            if frames is None:
+                profiles = compiler.profiles(supports[i]['support'], supports[j]['support'], polynomial, coefficient)
+                report['complete_matrix_profile_queries'] += 2
+            else:
+                profiles, _ = frames.profiles(supports[i]['support'], supports[j]['support'], polynomial, coefficient)
+                report['structured_profile_queries'] += 2
+                if index % args.replay_every == 0:
+                    original = compiler.profiles(supports[i]['support'], supports[j]['support'], polynomial, coefficient)
+                    report['complete_matrix_profile_queries'] += 2
+                    if original != profiles:
+                        report['structured_replay_disagreements'].append({'index': index, **recipe,
+                            'predicted': compact(profiles), 'original': compact(original)})
+                        raise ArithmeticError('Structured profile disagrees with original matrix.')
+                    replayed = True
         except (ArithmeticError, ValueError, OverflowError) as error:
             report['unresolved_cases'].append({'index': index, **recipe, 'reason': str(error)})
             save()
@@ -109,8 +153,22 @@ def main():
             report['profile_classes'].append({'first_case': index, **recipe, **cost, 'profiles': compact(profiles)})
         profile_class = signatures[signature]
         cost = report['profile_classes'][profile_class]
+        if frames is not None and not replayed and cost['rho'] < best['rho']-1e-11:
+            original = compiler.profiles(supports[i]['support'], supports[j]['support'], polynomial, coefficient)
+            report['complete_matrix_profile_queries'] += 2
+            if original != profiles:
+                report['structured_replay_disagreements'].append({'index': index, **recipe,
+                    'predicted': compact(profiles), 'original': compact(original)})
+                report['unresolved_cases'].append({'index': index, **recipe,
+                    'reason': 'Improving prediction failed complete-matrix replay.'})
+                save()
+                continue
+            replayed = True
+        if replayed:
+            report['complete_matrix_replayed_cases'].append(index)
         report['completed_cases'].append({'index': index, **recipe, 'profile_class': profile_class,
-                                          'rho': cost['rho'], 'critical_pressure': cost['critical_pressure']})
+                                          'rho': cost['rho'], 'critical_pressure': cost['critical_pressure'],
+                                          'original_complete_matrix_replayed': replayed})
         if cost['rho'] < best['rho']-1e-11:
             best = {'kind': 'coupled candidate', 'case': index, **cost}
         if index % 5 == 0:
