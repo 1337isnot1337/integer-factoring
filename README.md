@@ -149,6 +149,10 @@ pressure at the displayed gauge.
 also preserve the typed crossing when they do not vanish locally at the
 endpoint. A strict index-sum condition even permits rational local kernels
 whose endpoint denominators cancel in every fixed-type tensor power.
+For [localized quartic changes](research/localized-quartic-profiles.md),
+exact determinant and complete zero-profile formulas quantify the cost
+of the resulting spread in Smith orders. A rank-deficient limiting
+endpoint is explicitly checked and requires a further restriction.
 For this Gaussian seed, [generic mode blocks](research/typed-gaussian-generic-blocks.md)
 force cost `Omega(D^2)` when all nonvacuum occupations stay fixed, even
 after arbitrary coefficient recombinations. Growing occupation densities
