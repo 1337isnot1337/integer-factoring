@@ -136,8 +136,12 @@ even-spacing arithmetic block, with no power-of-two size restriction.
 It also proves every invariant-factor order of the squared Cauchy matrix:
 `2*r*v_p(d) + 2*v_p(r!) + v_p(r+1)` when `p` divides the spacing `d`.
 An integral orthogonal-polynomial basis supplies the full Smith proof.
-These settle two earlier finite observations; scalar recovery and the
-grouped operator cost remain separate obligations.
+The [all-power extension](research/arithmetic-cauchy-powers.md) now gives
+`2*r*v_p(d) + v_p(r!) + v_p((m)_r)` for every positive Hadamard power `m`,
+where `(m)_r` is the rising factorial. A factorial-normalized alternant
+bound makes the leading Cauchy--Binet term unique modulo `p`. These are
+complete spectral formulas; scalar recovery and grouped operator cost
+remain separate obligations.
 
 The [digit-count interval theorem](research/truncated-symmetric-interval-frontier.md)
 also proves that the displayed truncated-symmetric interval pressure stays

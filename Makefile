@@ -274,3 +274,7 @@ verify-frozen-core:
 .PHONY: verify-retained-profile-precision
 verify-retained-profile-precision:
 	python3 tools/check_retained_profile_precision.py
+
+.PHONY: verify-cauchy-powers
+verify-cauchy-powers:
+	python3 tools/check_arithmetic_cauchy_powers.py
