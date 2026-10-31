@@ -1,0 +1,108 @@
+{
+  "scope": "Polynomial ideal arithmetic and exact supplied-candidate norm representation; candidate selection is not provided",
+  "arithmetic_controls": {
+    "discriminant_absolute_value_below": 1000,
+    "independent_composition_pairs": 58131,
+    "composition_pairs_with_nontrivial_content": 15625,
+    "exact_reduction_transform_controls": 22195
+  },
+  "candidate_norm_controls": {
+    "discriminants_checked": 132,
+    "norm_cutoff": 128,
+    "smooth_bound": 7,
+    "exact_candidate_decisions": 26196,
+    "positive_decisions": 3042,
+    "negative_decisions": 23154,
+    "inert_prime_rejections": 11109,
+    "nonreduced_target_controls": 500,
+    "selected_records": [
+      {
+        "discriminant": -4,
+        "classes": 1,
+        "candidate_decisions": 17,
+        "positive": 4
+      },
+      {
+        "discriminant": -23,
+        "classes": 3,
+        "candidate_decisions": 159,
+        "positive": 46
+      },
+      {
+        "discriminant": -999,
+        "classes": 24,
+        "candidate_decisions": 624,
+        "positive": 75
+      },
+      {
+        "discriminant": -1679,
+        "classes": 52,
+        "candidate_decisions": 2756,
+        "positive": 209
+      },
+      {
+        "discriminant": -4799,
+        "classes": 63,
+        "candidate_decisions": 3339,
+        "positive": 137
+      },
+      {
+        "discriminant": -10007,
+        "classes": 77,
+        "candidate_decisions": 4081,
+        "positive": 63
+      }
+    ],
+    "inert_square_control": {
+      "form": [
+        1,
+        0,
+        1
+      ],
+      "norm": 9,
+      "nonprimitive_vector": [
+        3,
+        0
+      ],
+      "primitive_representation_exists": false
+    }
+  },
+  "large_integer_controls": [
+    {
+      "discriminant_bits": 629,
+      "norm_bits": 115,
+      "omega": 24,
+      "total_prime_occurrences": 24,
+      "all_orientation_count": 16777216,
+      "half_state_counts": [
+        4096,
+        4096
+      ],
+      "composition_calls": 18445,
+      "primitive_vector": [
+        "1",
+        "0"
+      ],
+      "direct_norm_identity_checked": true
+    },
+    {
+      "discriminant_bits": 2074,
+      "norm_bits": 312,
+      "omega": 8,
+      "total_prime_occurrences": 150,
+      "all_orientation_count": 256,
+      "half_state_counts": [
+        16,
+        16
+      ],
+      "composition_calls": 76,
+      "primitive_vector": [
+        "1",
+        "0"
+      ],
+      "direct_norm_identity_checked": true
+    }
+  ],
+  "candidate_norm_selection_supplied": false,
+  "improved_complete_factoring_bound_claimed": false
+}
