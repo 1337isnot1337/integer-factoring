@@ -107,6 +107,20 @@ These finite exclusions leave the score at `1/2` and do not cover arbitrary
 word-type gauges or nonlinear feedback. Run `make verify-shift-register` for
 the small exact replay; the note gives the complete catalogue commands.
 
+The [copied-wire argument](research/shift-register-copy-wire-barrier.md)
+explains a structural limitation of growing register seeds: colour
+correlations force enough early Smith channels to give limiting bare
+parameter at least `3/4`. It covers every full-cycle register over a
+prime-power digit alphabet, with arbitrary nonlinear feedback and coordinate
+partitions. Its explicit large-size cutoff leaves a gap above the completed
+small catalogues; it does not cover physical gauges or arbitrary bases.
+Run `make verify-register-barrier`.
+
+A separate [six-bit nonlinear catalogue](research/quadratic-register-crossings.md)
+tests all quadratic lower-tail functions plus the zero-tail indicator:
+1,952 full cycles and all 19,520 balanced partitions fail the bare test.
+Run `make verify-quadratic-register` to replay the complete finite result.
+
 The [exact Gaussian fixed-type certificates](research/reflection-gaussian-fixed-type-duals.md)
 prove global minima over every independent mode gauge and positive scale
 for four explicit rational physical types, through interval length 32.

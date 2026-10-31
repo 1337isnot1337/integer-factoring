@@ -226,6 +226,10 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 - [Locally joined shift registers](shift-register-crossings.md): full-cycle seeds from maximal feedback rules, exact linear cut-rank formulas, and complete bare-profile exclusions through thirty-two physical letters.
 
+- [Copied-wire register barrier](shift-register-copy-wire-barrier.md): a colour-correlation argument forces limiting bare parameter at least `3/4` for every prime-power digit full-cycle register, including arbitrary nonlinear feedback; a full-cycle counterexample separates two-power and three-power rank inequalities.
+
+- [Complete six-bit nonlinear catalogue](quadratic-register-crossings.md): all 65,536 quadratic-plus-zero-indicator feedback rules, their 1,952 full cycles, and all 19,520 physical partitions fail the bare criterion by exact certificates.
+
 - [All-degree homogeneous Boolean charge bands](homogeneous-boolean-charge-bands.md): a degree-independent loss cap and stronger Gaussian floors exclude all exterior charges and a linearly growing interior band, including overlapping monomials.
 
 - [All-digit charged Gaussian floor](all-digit-charged-gaussian-floor.md): strict monotonicity in every real digit parameter and positive full critical pressure for all `q>1`, charges, scales, and interval lengths; exact compact certificates plus analytic tails.

@@ -22,6 +22,13 @@ verify-cyclic-algebra:
 verify-shift-register:
 	python3 tools/check_shift_register_crossings.py
 
+.PHONY: verify-register-barrier verify-quadratic-register
+verify-register-barrier:
+	python3 tools/check_shift_register_copy_wire_barrier.py
+
+verify-quadratic-register:
+	python3 tools/check_quadratic_register_crossings.py
+
 .PHONY: verify-multilevel-packet
 verify-multilevel-packet:
 	python3 tools/check_multilevel_thue_morse_packet.py
