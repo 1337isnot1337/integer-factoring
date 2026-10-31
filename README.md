@@ -50,6 +50,9 @@ The [global pole trace](research/interval-pole-trace.md) gives an exact
 polynomial-precision factor-pair filter and closed bilinear reduction rules.
 Its current implementation still enumerates the dyadic state tree; efficient
 global state reduction remains open.
+The [Cauchy content-slope reduction](research/pole-cauchy-content.md) gives
+a second global target using two implicit determinant contents, with cheap
+padding and explicit Vandermonde normalization.
 The [research index](research/INDEX.md) links proofs, exact evidence, and replay commands.
 
 The result table distinguishes verified machine bounds from conditional constructions and finite experiments. A merged PR or a passing finite test does not imply independent mathematical review.
