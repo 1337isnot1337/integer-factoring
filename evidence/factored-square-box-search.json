@@ -1,0 +1,1342 @@
+{
+  "balanced_rectangle_controls": [
+    {
+      "radices": [
+        1
+      ],
+      "rectangles": [
+        {
+          "left": [],
+          "left_domain": 1,
+          "offset": [
+            0
+          ],
+          "right": [],
+          "right_domain": 1
+        }
+      ]
+    },
+    {
+      "radices": [
+        2000001
+      ],
+      "rectangles": [
+        {
+          "left": [
+            [
+              0,
+              1,
+              1414
+            ]
+          ],
+          "left_domain": 1414,
+          "offset": [
+            0
+          ],
+          "right": [
+            [
+              0,
+              1414,
+              1414
+            ]
+          ],
+          "right_domain": 1414
+        },
+        {
+          "left": [
+            [
+              0,
+              1,
+              605
+            ]
+          ],
+          "left_domain": 605,
+          "offset": [
+            1999396
+          ],
+          "right": [],
+          "right_domain": 1
+        }
+      ]
+    },
+    {
+      "radices": [
+        3,
+        101
+      ],
+      "rectangles": [
+        {
+          "left": [
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              1,
+              1,
+              5
+            ]
+          ],
+          "left_domain": 15,
+          "offset": [
+            0,
+            0
+          ],
+          "right": [
+            [
+              1,
+              5,
+              20
+            ]
+          ],
+          "right_domain": 20
+        },
+        {
+          "left": [
+            [
+              0,
+              1,
+              3
+            ]
+          ],
+          "left_domain": 3,
+          "offset": [
+            0,
+            100
+          ],
+          "right": [],
+          "right_domain": 1
+        }
+      ]
+    },
+    {
+      "radices": [
+        1,
+        3,
+        101,
+        1
+      ],
+      "rectangles": [
+        {
+          "left": [
+            [
+              1,
+              1,
+              3
+            ],
+            [
+              2,
+              1,
+              5
+            ]
+          ],
+          "left_domain": 15,
+          "offset": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "right": [
+            [
+              2,
+              5,
+              20
+            ]
+          ],
+          "right_domain": 20
+        },
+        {
+          "left": [
+            [
+              1,
+              1,
+              3
+            ]
+          ],
+          "left_domain": 3,
+          "offset": [
+            0,
+            0,
+            100,
+            0
+          ],
+          "right": [],
+          "right_domain": 1
+        }
+      ]
+    },
+    {
+      "radices": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "rectangles": [
+        {
+          "left": [
+            [
+              0,
+              1,
+              9
+            ],
+            [
+              1,
+              1,
+              9
+            ],
+            [
+              2,
+              1,
+              9
+            ],
+            [
+              3,
+              1,
+              9
+            ],
+            [
+              4,
+              1,
+              3
+            ]
+          ],
+          "left_domain": 19683,
+          "offset": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "right": [
+            [
+              4,
+              3,
+              3
+            ],
+            [
+              5,
+              1,
+              9
+            ],
+            [
+              6,
+              1,
+              9
+            ],
+            [
+              7,
+              1,
+              9
+            ],
+            [
+              8,
+              1,
+              9
+            ]
+          ],
+          "right_domain": 19683
+        }
+      ]
+    },
+    {
+      "radices": [
+        7,
+        11,
+        13
+      ],
+      "rectangles": [
+        {
+          "left": [
+            [
+              0,
+              1,
+              7
+            ],
+            [
+              1,
+              1,
+              4
+            ]
+          ],
+          "left_domain": 28,
+          "offset": [
+            0,
+            0,
+            0
+          ],
+          "right": [
+            [
+              1,
+              4,
+              2
+            ],
+            [
+              2,
+              1,
+              13
+            ]
+          ],
+          "right_domain": 26
+        },
+        {
+          "left": [
+            [
+              0,
+              1,
+              7
+            ],
+            [
+              1,
+              1,
+              3
+            ]
+          ],
+          "left_domain": 21,
+          "offset": [
+            0,
+            8,
+            0
+          ],
+          "right": [
+            [
+              2,
+              1,
+              13
+            ]
+          ],
+          "right_domain": 13
+        }
+      ]
+    }
+  ],
+  "improved_complete_factoring_bound_claimed": false,
+  "large_controls": [
+    {
+      "caps": [
+        1000000
+      ],
+      "coordinates_requested": false,
+      "discriminant_bits": 260,
+      "query_group_multiplications": 782,
+      "recovered_half_word": [
+        123456
+      ],
+      "statistics": {
+        "box_size": 2000001,
+        "index_group_multiplications": 3427,
+        "multiplication_count_scope": "Index/lookup loops; polynomial binary-power setup and coordinate construction are excluded",
+        "rectangles": [
+          {
+            "left_classes": 1414,
+            "left_domain": 1414,
+            "offset": [
+              0
+            ],
+            "right_classes": 1414,
+            "right_domain": 1414
+          },
+          {
+            "left_classes": 605,
+            "left_domain": 605,
+            "offset": [
+              1999396
+            ],
+            "right_classes": 1,
+            "right_domain": 1
+          }
+        ]
+      }
+    },
+    {
+      "caps": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "discriminant_bits": 131,
+      "fixed_norm_bits": 130,
+      "nonprimitive_content": 835791,
+      "prime_support_size": 16,
+      "query_group_multiplications": 4366,
+      "recovered_half_word": [
+        -1,
+        0,
+        1,
+        -1,
+        0,
+        1,
+        -1,
+        0,
+        1,
+        -1,
+        0,
+        1,
+        -1,
+        0,
+        1,
+        -1
+      ],
+      "statistics": {
+        "box_size": 43046721,
+        "index_group_multiplications": 13119,
+        "multiplication_count_scope": "Index/lookup loops; polynomial binary-power setup and coordinate construction are excluded",
+        "rectangles": [
+          {
+            "left_classes": 6561,
+            "left_domain": 6561,
+            "offset": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "right_classes": 6561,
+            "right_domain": 6561
+          }
+        ]
+      },
+      "vector": [
+        6788294502,
+        -2656979589
+      ]
+    }
+  ],
+  "polynomial_representation_oracle_claimed": false,
+  "scope": "Exact deterministic variable-cap smooth-square MITM search, with square-root exponent-box cost fully charged",
+  "small_coordinate_controls": {
+    "exact_decisions": 3277,
+    "negative_decisions": 1326,
+    "nonprimitive_returned_witnesses": 1062,
+    "nonreduced_target_controls": 100,
+    "positive_decisions": 1951,
+    "records": [
+      {
+        "classes": 1,
+        "decisions": 3,
+        "discriminant": -3,
+        "factor_base_primes": [
+          7
+        ],
+        "positive_decisions": 3
+      },
+      {
+        "classes": 1,
+        "decisions": 3,
+        "discriminant": -4,
+        "factor_base_primes": [
+          5
+        ],
+        "positive_decisions": 3
+      },
+      {
+        "classes": 1,
+        "decisions": 4,
+        "discriminant": -7,
+        "factor_base_primes": [
+          2
+        ],
+        "positive_decisions": 4
+      },
+      {
+        "classes": 1,
+        "decisions": 4,
+        "discriminant": -8,
+        "factor_base_primes": [
+          3
+        ],
+        "positive_decisions": 4
+      },
+      {
+        "classes": 1,
+        "decisions": 8,
+        "discriminant": -11,
+        "factor_base_primes": [
+          3,
+          5
+        ],
+        "positive_decisions": 8
+      },
+      {
+        "classes": 1,
+        "decisions": 3,
+        "discriminant": -12,
+        "factor_base_primes": [
+          7
+        ],
+        "positive_decisions": 3
+      },
+      {
+        "classes": 2,
+        "decisions": 8,
+        "discriminant": -15,
+        "factor_base_primes": [
+          2
+        ],
+        "positive_decisions": 4
+      },
+      {
+        "classes": 1,
+        "decisions": 3,
+        "discriminant": -16,
+        "factor_base_primes": [
+          5
+        ],
+        "positive_decisions": 3
+      },
+      {
+        "classes": 1,
+        "decisions": 6,
+        "discriminant": -19,
+        "factor_base_primes": [
+          5,
+          7
+        ],
+        "positive_decisions": 6
+      },
+      {
+        "classes": 2,
+        "decisions": 16,
+        "discriminant": -20,
+        "factor_base_primes": [
+          3,
+          7
+        ],
+        "positive_decisions": 8
+      },
+      {
+        "classes": 3,
+        "decisions": 39,
+        "discriminant": -23,
+        "factor_base_primes": [
+          2,
+          3
+        ],
+        "positive_decisions": 37
+      },
+      {
+        "classes": 2,
+        "decisions": 12,
+        "discriminant": -24,
+        "factor_base_primes": [
+          5,
+          7
+        ],
+        "positive_decisions": 6
+      },
+      {
+        "classes": 1,
+        "decisions": 3,
+        "discriminant": -27,
+        "factor_base_primes": [
+          7
+        ],
+        "positive_decisions": 3
+      },
+      {
+        "classes": 1,
+        "decisions": 1,
+        "discriminant": -28,
+        "factor_base_primes": [],
+        "positive_decisions": 1
+      },
+      {
+        "classes": 3,
+        "decisions": 48,
+        "discriminant": -31,
+        "factor_base_primes": [
+          2,
+          5,
+          7
+        ],
+        "positive_decisions": 46
+      },
+      {
+        "classes": 2,
+        "decisions": 8,
+        "discriminant": -32,
+        "factor_base_primes": [
+          3
+        ],
+        "positive_decisions": 4
+      },
+      {
+        "classes": 2,
+        "decisions": 8,
+        "discriminant": -35,
+        "factor_base_primes": [
+          3
+        ],
+        "positive_decisions": 4
+      },
+      {
+        "classes": 2,
+        "decisions": 6,
+        "discriminant": -36,
+        "factor_base_primes": [
+          5
+        ],
+        "positive_decisions": 3
+      },
+      {
+        "classes": 4,
+        "decisions": 40,
+        "discriminant": -39,
+        "factor_base_primes": [
+          2,
+          5
+        ],
+        "positive_decisions": 19
+      },
+      {
+        "classes": 2,
+        "decisions": 6,
+        "discriminant": -40,
+        "factor_base_primes": [
+          7
+        ],
+        "positive_decisions": 3
+      },
+      {
+        "classes": 1,
+        "decisions": 1,
+        "discriminant": -43,
+        "factor_base_primes": [],
+        "positive_decisions": 1
+      },
+      {
+        "classes": 3,
+        "decisions": 24,
+        "discriminant": -44,
+        "factor_base_primes": [
+          3,
+          5
+        ],
+        "positive_decisions": 22
+      },
+      {
+        "classes": 5,
+        "decisions": 105,
+        "discriminant": -47,
+        "factor_base_primes": [
+          2,
+          3,
+          7
+        ],
+        "positive_decisions": 95
+      },
+      {
+        "classes": 2,
+        "decisions": 6,
+        "discriminant": -48,
+        "factor_base_primes": [
+          7
+        ],
+        "positive_decisions": 3
+      },
+      {
+        "classes": 2,
+        "decisions": 6,
+        "discriminant": -51,
+        "factor_base_primes": [
+          5
+        ],
+        "positive_decisions": 3
+      },
+      {
+        "classes": 2,
+        "decisions": 6,
+        "discriminant": -52,
+        "factor_base_primes": [
+          7
+        ],
+        "positive_decisions": 3
+      },
+      {
+        "classes": 4,
+        "decisions": 36,
+        "discriminant": -55,
+        "factor_base_primes": [
+          2,
+          7
+        ],
+        "positive_decisions": 17
+      },
+      {
+        "classes": 4,
+        "decisions": 32,
+        "discriminant": -56,
+        "factor_base_primes": [
+          3,
+          5
+        ],
+        "positive_decisions": 15
+      },
+      {
+        "classes": 3,
+        "decisions": 39,
+        "discriminant": -59,
+        "factor_base_primes": [
+          3,
+          5,
+          7
+        ],
+        "positive_decisions": 37
+      },
+      {
+        "classes": 2,
+        "decisions": 2,
+        "discriminant": -60,
+        "factor_base_primes": [],
+        "positive_decisions": 1
+      },
+      {
+        "classes": 4,
+        "decisions": 16,
+        "discriminant": -63,
+        "factor_base_primes": [
+          2
+        ],
+        "positive_decisions": 7
+      },
+      {
+        "classes": 2,
+        "decisions": 6,
+        "discriminant": -64,
+        "factor_base_primes": [
+          5
+        ],
+        "positive_decisions": 3
+      },
+      {
+        "classes": 1,
+        "decisions": 1,
+        "discriminant": -67,
+        "factor_base_primes": [],
+        "positive_decisions": 1
+      },
+      {
+        "classes": 4,
+        "decisions": 32,
+        "discriminant": -68,
+        "factor_base_primes": [
+          3,
+          7
+        ],
+        "positive_decisions": 15
+      },
+      {
+        "classes": 7,
+        "decisions": 161,
+        "discriminant": -71,
+        "factor_base_primes": [
+          2,
+          3,
+          5
+        ],
+        "positive_decisions": 137
+      },
+      {
+        "classes": 2,
+        "decisions": 2,
+        "discriminant": -72,
+        "factor_base_primes": [],
+        "positive_decisions": 1
+      },
+      {
+        "classes": 2,
+        "decisions": 6,
+        "discriminant": -75,
+        "factor_base_primes": [
+          7
+        ],
+        "positive_decisions": 3
+      },
+      {
+        "classes": 3,
+        "decisions": 18,
+        "discriminant": -76,
+        "factor_base_primes": [
+          5,
+          7
+        ],
+        "positive_decisions": 16
+      },
+      {
+        "classes": 5,
+        "decisions": 50,
+        "discriminant": -79,
+        "factor_base_primes": [
+          2,
+          5
+        ],
+        "positive_decisions": 42
+      },
+      {
+        "classes": 4,
+        "decisions": 32,
+        "discriminant": -80,
+        "factor_base_primes": [
+          3,
+          7
+        ],
+        "positive_decisions": 15
+      },
+      {
+        "classes": 3,
+        "decisions": 24,
+        "discriminant": -83,
+        "factor_base_primes": [
+          3,
+          7
+        ],
+        "positive_decisions": 22
+      },
+      {
+        "classes": 4,
+        "decisions": 12,
+        "discriminant": -84,
+        "factor_base_primes": [
+          5
+        ],
+        "positive_decisions": 3
+      },
+      {
+        "classes": 6,
+        "decisions": 54,
+        "discriminant": -87,
+        "factor_base_primes": [
+          2,
+          7
+        ],
+        "positive_decisions": 25
+      },
+      {
+        "classes": 2,
+        "decisions": 2,
+        "discriminant": -88,
+        "factor_base_primes": [],
+        "positive_decisions": 1
+      },
+      {
+        "classes": 2,
+        "decisions": 6,
+        "discriminant": -91,
+        "factor_base_primes": [
+          5
+        ],
+        "positive_decisions": 3
+      },
+      {
+        "classes": 3,
+        "decisions": 12,
+        "discriminant": -92,
+        "factor_base_primes": [
+          3
+        ],
+        "positive_decisions": 10
+      },
+      {
+        "classes": 8,
+        "decisions": 104,
+        "discriminant": -95,
+        "factor_base_primes": [
+          2,
+          3
+        ],
+        "positive_decisions": 47
+      },
+      {
+        "classes": 4,
+        "decisions": 24,
+        "discriminant": -96,
+        "factor_base_primes": [
+          5,
+          7
+        ],
+        "positive_decisions": 6
+      },
+      {
+        "classes": 2,
+        "decisions": 6,
+        "discriminant": -99,
+        "factor_base_primes": [
+          5
+        ],
+        "positive_decisions": 3
+      },
+      {
+        "classes": 2,
+        "decisions": 2,
+        "discriminant": -100,
+        "factor_base_primes": [],
+        "positive_decisions": 1
+      },
+      {
+        "classes": 5,
+        "decisions": 45,
+        "discriminant": -103,
+        "factor_base_primes": [
+          2,
+          7
+        ],
+        "positive_decisions": 37
+      },
+      {
+        "classes": 6,
+        "decisions": 78,
+        "discriminant": -104,
+        "factor_base_primes": [
+          3,
+          5,
+          7
+        ],
+        "positive_decisions": 37
+      },
+      {
+        "classes": 3,
+        "decisions": 12,
+        "discriminant": -107,
+        "factor_base_primes": [
+          3
+        ],
+        "positive_decisions": 10
+      },
+      {
+        "classes": 3,
+        "decisions": 9,
+        "discriminant": -108,
+        "factor_base_primes": [
+          7
+        ],
+        "positive_decisions": 7
+      },
+      {
+        "classes": 8,
+        "decisions": 128,
+        "discriminant": -111,
+        "factor_base_primes": [
+          2,
+          5,
+          7
+        ],
+        "positive_decisions": 55
+      },
+      {
+        "classes": 2,
+        "decisions": 2,
+        "discriminant": -112,
+        "factor_base_primes": [],
+        "positive_decisions": 1
+      },
+      {
+        "classes": 2,
+        "decisions": 6,
+        "discriminant": -115,
+        "factor_base_primes": [
+          7
+        ],
+        "positive_decisions": 3
+      },
+      {
+        "classes": 6,
+        "decisions": 48,
+        "discriminant": -116,
+        "factor_base_primes": [
+          3,
+          5
+        ],
+        "positive_decisions": 22
+      },
+      {
+        "classes": 10,
+        "decisions": 230,
+        "discriminant": -119,
+        "factor_base_primes": [
+          2,
+          3,
+          5
+        ],
+        "positive_decisions": 105
+      },
+      {
+        "classes": 4,
+        "decisions": 4,
+        "discriminant": -120,
+        "factor_base_primes": [],
+        "positive_decisions": 1
+      },
+      {
+        "classes": 2,
+        "decisions": 2,
+        "discriminant": -123,
+        "factor_base_primes": [],
+        "positive_decisions": 1
+      },
+      {
+        "classes": 3,
+        "decisions": 18,
+        "discriminant": -124,
+        "factor_base_primes": [
+          5,
+          7
+        ],
+        "positive_decisions": 16
+      },
+      {
+        "classes": 5,
+        "decisions": 20,
+        "discriminant": -127,
+        "factor_base_primes": [
+          2
+        ],
+        "positive_decisions": 14
+      },
+      {
+        "classes": 4,
+        "decisions": 16,
+        "discriminant": -128,
+        "factor_base_primes": [
+          3
+        ],
+        "positive_decisions": 7
+      },
+      {
+        "classes": 5,
+        "decisions": 65,
+        "discriminant": -131,
+        "factor_base_primes": [
+          3,
+          5,
+          7
+        ],
+        "positive_decisions": 55
+      },
+      {
+        "classes": 4,
+        "decisions": 12,
+        "discriminant": -132,
+        "factor_base_primes": [
+          7
+        ],
+        "positive_decisions": 3
+      },
+      {
+        "classes": 6,
+        "decisions": 24,
+        "discriminant": -135,
+        "factor_base_primes": [
+          2
+        ],
+        "positive_decisions": 10
+      },
+      {
+        "classes": 4,
+        "decisions": 24,
+        "discriminant": -136,
+        "factor_base_primes": [
+          5,
+          7
+        ],
+        "positive_decisions": 11
+      },
+      {
+        "classes": 3,
+        "decisions": 18,
+        "discriminant": -139,
+        "factor_base_primes": [
+          5,
+          7
+        ],
+        "positive_decisions": 16
+      },
+      {
+        "classes": 6,
+        "decisions": 24,
+        "discriminant": -140,
+        "factor_base_primes": [
+          3
+        ],
+        "positive_decisions": 10
+      },
+      {
+        "classes": 10,
+        "decisions": 210,
+        "discriminant": -143,
+        "factor_base_primes": [
+          2,
+          3,
+          7
+        ],
+        "positive_decisions": 95
+      },
+      {
+        "classes": 4,
+        "decisions": 12,
+        "discriminant": -144,
+        "factor_base_primes": [
+          5
+        ],
+        "positive_decisions": 5
+      },
+      {
+        "classes": 2,
+        "decisions": 2,
+        "discriminant": -147,
+        "factor_base_primes": [],
+        "positive_decisions": 1
+      },
+      {
+        "classes": 2,
+        "decisions": 2,
+        "discriminant": -148,
+        "factor_base_primes": [],
+        "positive_decisions": 1
+      },
+      {
+        "classes": 7,
+        "decisions": 70,
+        "discriminant": -151,
+        "factor_base_primes": [
+          2,
+          5
+        ],
+        "positive_decisions": 52
+      },
+      {
+        "classes": 6,
+        "decisions": 48,
+        "discriminant": -152,
+        "factor_base_primes": [
+          3,
+          7
+        ],
+        "positive_decisions": 22
+      },
+      {
+        "classes": 4,
+        "decisions": 16,
+        "discriminant": -155,
+        "factor_base_primes": [
+          3
+        ],
+        "positive_decisions": 7
+      },
+      {
+        "classes": 4,
+        "decisions": 12,
+        "discriminant": -156,
+        "factor_base_primes": [
+          5
+        ],
+        "positive_decisions": 5
+      },
+      {
+        "classes": 10,
+        "decisions": 160,
+        "discriminant": -159,
+        "factor_base_primes": [
+          2,
+          5,
+          7
+        ],
+        "positive_decisions": 70
+      },
+      {
+        "classes": 4,
+        "decisions": 12,
+        "discriminant": -160,
+        "factor_base_primes": [
+          7
+        ],
+        "positive_decisions": 3
+      },
+      {
+        "classes": 1,
+        "decisions": 1,
+        "discriminant": -163,
+        "factor_base_primes": [],
+        "positive_decisions": 1
+      },
+      {
+        "classes": 8,
+        "decisions": 104,
+        "discriminant": -164,
+        "factor_base_primes": [
+          3,
+          5,
+          7
+        ],
+        "positive_decisions": 43
+      },
+      {
+        "classes": 11,
+        "decisions": 231,
+        "discriminant": -167,
+        "factor_base_primes": [
+          2,
+          3,
+          7
+        ],
+        "positive_decisions": 163
+      },
+      {
+        "classes": 4,
+        "decisions": 4,
+        "discriminant": -168,
+        "factor_base_primes": [],
+        "positive_decisions": 1
+      },
+      {
+        "classes": 4,
+        "decisions": 24,
+        "discriminant": -171,
+        "factor_base_primes": [
+          5,
+          7
+        ],
+        "positive_decisions": 9
+      },
+      {
+        "classes": 3,
+        "decisions": 3,
+        "discriminant": -172,
+        "factor_base_primes": [],
+        "positive_decisions": 1
+      },
+      {
+        "classes": 6,
+        "decisions": 24,
+        "discriminant": -175,
+        "factor_base_primes": [
+          2
+        ],
+        "positive_decisions": 10
+      },
+      {
+        "classes": 6,
+        "decisions": 48,
+        "discriminant": -176,
+        "factor_base_primes": [
+          3,
+          5
+        ],
+        "positive_decisions": 22
+      },
+      {
+        "classes": 5,
+        "decisions": 40,
+        "discriminant": -179,
+        "factor_base_primes": [
+          3,
+          5
+        ],
+        "positive_decisions": 32
+      },
+      {
+        "classes": 4,
+        "decisions": 12,
+        "discriminant": -180,
+        "factor_base_primes": [
+          7
+        ],
+        "positive_decisions": 3
+      },
+      {
+        "classes": 8,
+        "decisions": 32,
+        "discriminant": -183,
+        "factor_base_primes": [
+          2
+        ],
+        "positive_decisions": 12
+      },
+      {
+        "classes": 4,
+        "decisions": 12,
+        "discriminant": -184,
+        "factor_base_primes": [
+          5
+        ],
+        "positive_decisions": 5
+      },
+      {
+        "classes": 2,
+        "decisions": 6,
+        "discriminant": -187,
+        "factor_base_primes": [
+          7
+        ],
+        "positive_decisions": 3
+      },
+      {
+        "classes": 5,
+        "decisions": 40,
+        "discriminant": -188,
+        "factor_base_primes": [
+          3,
+          7
+        ],
+        "positive_decisions": 32
+      },
+      {
+        "classes": 13,
+        "decisions": 299,
+        "discriminant": -191,
+        "factor_base_primes": [
+          2,
+          3,
+          5
+        ],
+        "positive_decisions": 199
+      },
+      {
+        "classes": 4,
+        "decisions": 12,
+        "discriminant": -192,
+        "factor_base_primes": [
+          7
+        ],
+        "positive_decisions": 3
+      }
+    ],
+    "remainder_rectangle_hits": 69
+  }
+}
