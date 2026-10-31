@@ -199,6 +199,77 @@ def shifted(value, shift):
     return value << shift if shift >= 0 else value >> (-shift)
 
 
+class AffineCoordinateMap:
+    """Literal free-coordinate substitution, with eight-column XOR tables.
+
+    Each original variable is expressed in the free variables by triangular
+    back substitution.  Tables only cache sums of those expressions.  They
+    change neither the coefficient field nor the affine equation space.
+    """
+    def __init__(self, variables, pivots):
+        self.free = tuple(i for i in range(variables) if i not in pivots)
+        self.variables = len(self.free)
+        self.width = self.variables+1  # Last coordinate is the affine constant.
+        self.mask = (1 << self.width)-1
+        self.expressions = []
+        self.tables = []
+        self.input_bytes = (variables+7)//8
+        positions = {value: i for i, value in enumerate(self.free)}
+        for variable in range(variables):
+            if variable in positions:
+                value = 1 << positions[variable]
+            else:
+                low, high, rhs = pivots[variable]
+                assert (low >> variable) == 1 and (high >> variable) == 0
+                value = self.combine(low ^ (1 << variable), high)
+                value ^= ((rhs & 1) << self.variables) | ((rhs >> 1) << (self.width+self.variables))
+            self.expressions.append(value)
+            if len(self.expressions) % 8 == 0:
+                self.append_table(self.expressions[-8:])
+        if len(self.expressions) % 8:
+            self.append_table(self.expressions[8*len(self.tables):])
+
+    def append_table(self, expressions):
+        table = [0]*(1 << len(expressions))
+        for index in range(1, len(table)):
+            bit = index & -index
+            table[index] = table[index ^ bit] ^ expressions[bit.bit_length()-1]
+        self.tables.append(table)
+
+    def combine(self, low, high):
+        """Substitute variables in a linear form, retaining its affine constant."""
+        size = (max(low.bit_length(), high.bit_length())+7)//8
+        lows, highs = low.to_bytes(size, 'little'), high.to_bytes(size, 'little')
+        a = b = 0
+        complete = min(size, len(self.tables))
+        for i in range(complete):
+            table = self.tables[i]
+            a ^= table[lows[i]]
+            b ^= table[highs[i]]
+        if size > complete:
+            # During triangular construction the last block is incomplete.
+            assert size == complete+1
+            first = 8*complete
+            lo, hi = lows[-1], highs[-1]
+            while lo:
+                bit = lo & -lo
+                lo ^= bit
+                a ^= self.expressions[first+bit.bit_length()-1]
+            while hi:
+                bit = hi & -hi
+                hi ^= bit
+                b ^= self.expressions[first+bit.bit_length()-1]
+        low_b, high_b = b & self.mask, b >> self.width
+        return a ^ high_b ^ ((low_b ^ high_b) << self.width)
+
+    def reduce(self, low, high, rhs):
+        value = self.combine(low, high)
+        a, b = value & self.mask, value >> self.width
+        constant = (a >> self.variables) | ((b >> self.variables) << 1)
+        variable_mask = (1 << self.variables)-1
+        return a & variable_mask, b & variable_mask, rhs ^ constant
+
+
 class RecenteredCrossingLattice:
     """All degree-bounded F4 coefficients around an arbitrary F4 crossing."""
     def __init__(self, values, q, degree_bound, heights, raise_cap=4):
@@ -379,7 +450,9 @@ class RecenteredCrossingLattice:
 
 class RecenteredFiber:
     """Exact F4 coordinates on a shared affine floor fiber."""
-    def __init__(self, lattice, floors):
+    def __init__(self, lattice, floors, compression='auto'):
+        if compression not in ('auto', 'direct', 'tables'):
+            raise ValueError('Compression must be auto, direct, or tables.')
         self.lattice = lattice
         self.floors = tuple(floors)
         self.base_pivots = lattice.solve(floors)
@@ -388,10 +461,19 @@ class RecenteredFiber:
         self.free = tuple(i for i in range(lattice.variables) if i not in self.base_pivots)
         self.variables = len(self.free)
         positions = {value: i for i, value in enumerate(self.free)}
+        table_bytes = ((lattice.variables+7)//8)*256*(2*(self.variables+1)//8+48)
+        use_tables = compression == 'tables' or (compression == 'auto' and lattice.variables >= 256 and table_bytes < 256_000_000)
+        coordinate_map = AffineCoordinateMap(lattice.variables, self.base_pivots) if use_tables else None
+        self.compression = 'tables' if use_tables else 'direct'
         self.equations = []
         for row in lattice.equations:
             reduced_rows = []
             for exponent, low, high, rhs in row:
+                if coordinate_map is not None:
+                    a, b, rhs = coordinate_map.reduce(low, high, rhs)
+                    if a or b or rhs:
+                        reduced_rows.append((exponent, a, b, rhs))
+                    continue
                 a = b = 0
                 while low | high:
                     pivot = (low | high).bit_length()-1
