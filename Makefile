@@ -26,6 +26,10 @@ verify-multipoint-rank-two:
 verify-multipoint-smith-floor:
 	python3 tools/check_multipoint_smith_floor.py
 
+.PHONY: verify-transpose-intertwiner
+verify-transpose-intertwiner:
+	python3 tools/check_transpose_intertwiner_barrier.py
+
 .PHONY: verify-multilevel-packet
 verify-multilevel-packet:
 	python3 tools/check_multilevel_thue_morse_packet.py

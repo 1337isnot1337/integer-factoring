@@ -91,6 +91,15 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 
 ## Current research frontier
 
+The [constant transpose-intertwiner obstruction](research/transpose-intertwiner-barrier.md)
+applies to actual tensor-power coefficient ranks: a common invertible
+intertwiner forces both cut ranks to agree, ruling out leading contraction
+for polynomially many pieces. It excludes 32,454,657 ternary cubic seeds.
+Actual jets of 200 retained witnesses are checked through three copies;
+the favorable two-copy values do not persist in that finite comparison.
+Run `make verify-transpose-intertwiner` for complete finite coverage counts
+and independent matrix controls. No stronger factoring exponent is claimed.
+
 The [universal multipoint Smith floor](research/multipoint-smith-floor.md)
 shows that the local-jet pressure criterion needs `rho > 3/4` over every
 field, alphabet size, polynomial degree, allocation, and permitted cut scale.
