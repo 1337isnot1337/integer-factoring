@@ -4,6 +4,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Proved machine bounds and their foundations
 
+- [Exterior majority-state precision witness](exterior-majority-precision-witness.md): an explicit single Cauchy minor, realized by rank-one `0/1` tables, forces `Omega(MD/u)` local precision for the proposed exterior lift. The original Boolean deformation and divisor tensors remain separate questions.
 - [Rational cut meshes](rational-cut-mesh-budget.md): complete exact certificates extend the prior finite-seed cutoff from 95 to 96 over all fields, and to 97 in characteristic two. Small polynomial sources and their tensor powers remain separate candidates.
 - [Interior Jacobian rank budgets](interior-jacobian-budget.md): explicit full-row-rank binary Jacobians and a proper-projection argument give stronger complementary rank bounds; the initial 96-label characteristic-two certificate is strengthened by the rational-mesh successor.
 - [Half-rate factoring composition](half-rate-factoring.md): ordinary proof of the `1/2` machine bound; its final Lean theorem is in [`formal-appendix/HalfTheorem.lean`](../formal-appendix/HalfTheorem.lean).
