@@ -16,6 +16,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Larger-alphabet shared-minor targets](shared-minor-profile-relaxation.md): all shared-line and rectangular-subalphabet prefix constraints admit explicitly certified negative relaxed pressure at four and five symbols; these are construction targets, not realizing tensors or factoring improvements.
+
 - [Growing quartic words and removable endpoint poles](reflection-charged-quartic-tiles.md): ordered creation/annihilation gates leave the Gaussian class; an explicit charge budget proves exact pole cancellation and crossing endpoints after paired type restriction, with complete degree costs and original-tensor checks.
 
 - [Complete one-support multiplier automata](boolean-multiplier-automata.md): arbitrary degree, characteristic-two coefficient extensions, and ramification reduce exactly to finitely many continuous cutoff functions and periodic binary tails; global code supports retain every actual physical mode energy.

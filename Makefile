@@ -606,3 +606,7 @@ verify-global-code-multipliers:
 verify-quartic-tiles:
 	OPENBLAS_NUM_THREADS=1 python3 tools/check_reflection_quartic_tiles.py --output /tmp/integer-factoring-quartic-tiles-replay.json
 
+.PHONY: verify-shared-minor-targets
+verify-shared-minor-targets:
+	python3 tools/check_shared_minor_profile_targets.py --output /tmp/integer-factoring-shared-minor-targets-replay.json
+
