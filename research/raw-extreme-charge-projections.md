@@ -120,3 +120,11 @@ quarter-integer core and bulk gauges. Its
 [evidence](../evidence/raw-extreme-charge-projections.json) records the
 endpoint and full-matrix comparisons separately from the exploratory
 long-interval pressure screen.
+
+The [completed eight-mode screen](../evidence/raw-extreme-charge-screen-M8.json)
+records all fourteen charge representatives. Its best observed result is
+the constant-mask Gaussian, approximately `0.7166536597282`. Every
+recorded nonconstant result is worse, with the smallest approximately
+`0.7700735840572`. The latter optimizer did not report convergence; these
+are bounded floating searches of exact profiles and do not establish
+global minima.

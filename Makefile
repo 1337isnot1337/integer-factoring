@@ -347,3 +347,7 @@ verify-repaired-state-filters:
 	python3 tools/check_repaired_endpoint_polynomial_synthesis.py
 	python3 tools/check_f4_repaired_identity_filters.py
 	python3 tools/check_f4_weyl_filter_compiler.py
+
+.PHONY: verify-raw-core-masks
+verify-raw-core-masks:
+	python3 tools/check_raw_core_mask_profiles.py

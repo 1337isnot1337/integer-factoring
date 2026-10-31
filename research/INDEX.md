@@ -14,6 +14,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [General extreme-core transition masks](raw-core-transition-masks.md): arbitrary binary or `F4` masks preserving every diagonal transition keep the typed endpoint and admit exact charge-block profiles with arbitrary physical core gauges.
+
 - [State filters with nonzero endpoint repair](repaired-endpoint-state-filters.md): a free diagonal physical repair enlarges scalar and joint polynomial synthesis, including a strict feasibility example, signed prime-field filters, and colored binary filters over `F4`.
 
 - [Weighted Weyl reduction of coupled operators](identity-operator-weyl-reduction.md): an exact differential-operator identity reduces the active matrix order from `p^(2r)` to `p^r`, with explicit auxiliary shifts, weighted regularity, and complete polynomial coefficient arithmetic.

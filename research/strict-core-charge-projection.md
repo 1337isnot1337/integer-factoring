@@ -289,3 +289,13 @@ The coordinate bases intertwine each physical core number operator, so
 all charge classes can be obtained by exact entry masks of one cached
 Gaussian matrix in those coordinates. The implementation uses this
 identity to avoid rebuilding a fermionic program for every charge.
+
+The [completed sixteen-mode gauge screen](../evidence/strict-core-all-gauges-M16.json)
+uses all fourteen charge classes, two starts per class, and at most one
+hundred function evaluations per start. Its best nonconstant result is
+approximately `0.7113727019998`, compared with the full sixteen-mode
+Gaussian value `0.7106044045202`. The nonconstant searches concentrate
+their two selected low modes on core state three. Their best value is
+within `4e-10` of the shorter fourteen-mode Gaussian value
+`0.7113727016408`. This is a finite search approaching a frozen-core
+boundary, with no new pressure witness or global optimality claim.
