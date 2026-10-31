@@ -1,0 +1,375 @@
+{
+  "status": "Exact F4 off-diagonal operator and physical endpoint controls; no pressure claim.",
+  "original_physical_cases": [
+    {
+      "n": 2,
+      "ramification": 1,
+      "charge": 0,
+      "modes": 2,
+      "geometry": "initial",
+      "physical_matrix_order": 16,
+      "endpoint_coefficients_checked": 68,
+      "clearing": 1,
+      "maximum_native_precision": 512,
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            0
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -4,
+            -2,
+            0,
+            2
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -4,
+            -2,
+            -2,
+            0,
+            0,
+            2
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -2,
+            0,
+            0,
+            2
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            2
+          ]
+        }
+      ],
+      "infinity_active": [
+        -5,
+        -4,
+        -3,
+        0
+      ],
+      "seconds": 0.07803454199984117
+    },
+    {
+      "n": 2,
+      "ramification": 3,
+      "charge": 2,
+      "modes": 2,
+      "geometry": "terminal",
+      "physical_matrix_order": 16,
+      "endpoint_coefficients_checked": 68,
+      "clearing": 1,
+      "maximum_native_precision": 512,
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            -4
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -8,
+            -4,
+            -2,
+            2
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -8,
+            -2,
+            -2,
+            0,
+            2,
+            4
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -2,
+            0,
+            4,
+            6
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            6
+          ]
+        }
+      ],
+      "infinity_active": [
+        -12,
+        -11,
+        -5,
+        0
+      ],
+      "seconds": 0.05537534300037805
+    },
+    {
+      "n": 3,
+      "ramification": 1,
+      "charge": -1,
+      "modes": 2,
+      "geometry": "initial",
+      "physical_matrix_order": 64,
+      "endpoint_coefficients_checked": 804,
+      "clearing": 1,
+      "maximum_native_precision": 512,
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            0
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -4,
+            -2,
+            0,
+            2
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -4,
+            -2,
+            -2,
+            0,
+            0,
+            2
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -2,
+            0,
+            0,
+            2
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            2
+          ]
+        }
+      ],
+      "infinity_active": [
+        -8,
+        -7,
+        -5,
+        0
+      ],
+      "seconds": 0.2938689870006783
+    },
+    {
+      "n": 3,
+      "ramification": 1,
+      "charge": 1,
+      "modes": 3,
+      "geometry": "initial",
+      "physical_matrix_order": 64,
+      "endpoint_coefficients_checked": 825,
+      "clearing": 3,
+      "maximum_native_precision": 512,
+      "zero_blocks": [
+        {
+          "charge": -3,
+          "orders": [
+            -12
+          ]
+        },
+        {
+          "charge": -2,
+          "orders": [
+            -12,
+            -12,
+            -10,
+            -10,
+            -8,
+            -8
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -12,
+            -10,
+            -10,
+            -10,
+            -10,
+            -8,
+            -8,
+            -8,
+            -8,
+            -8,
+            -6,
+            -6,
+            -6,
+            -6,
+            -4
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -10,
+            -10,
+            -8,
+            -8,
+            -8,
+            -8,
+            -6,
+            -6,
+            -6,
+            -6,
+            -6,
+            -6,
+            -6,
+            -6,
+            -4,
+            -4,
+            -4,
+            -4,
+            -2,
+            -2
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -8,
+            -6,
+            -6,
+            -6,
+            -6,
+            -4,
+            -4,
+            -4,
+            -4,
+            -4,
+            -2,
+            -2,
+            -2,
+            -2,
+            0
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            -4,
+            -4,
+            -2,
+            -2,
+            0,
+            0
+          ]
+        },
+        {
+          "charge": 3,
+          "orders": [
+            0
+          ]
+        }
+      ],
+      "infinity_active": [
+        -8,
+        -7,
+        -6,
+        -5,
+        -3,
+        -3,
+        -2,
+        0
+      ],
+      "seconds": 0.9527111229999718
+    },
+    {
+      "n": 4,
+      "ramification": 1,
+      "charge": 2,
+      "modes": 2,
+      "geometry": "mixed",
+      "physical_matrix_order": 256,
+      "endpoint_coefficients_checked": 9731,
+      "clearing": 1,
+      "maximum_native_precision": 512,
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            -4
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -8,
+            -4,
+            -2,
+            2
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -8,
+            -2,
+            -2,
+            0,
+            2,
+            4
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -2,
+            0,
+            4,
+            6
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            6
+          ]
+        }
+      ],
+      "infinity_active": [
+        -9,
+        -8,
+        -3,
+        0
+      ],
+      "seconds": 5.697104122999917
+    }
+  ],
+  "binary_regressions": 4,
+  "invalid_filtered_endpoint_rejected": true,
+  "extended": true
+}

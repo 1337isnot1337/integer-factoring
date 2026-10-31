@@ -14,6 +14,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Mixed initial and terminal identity modes](split-identity-mode-reduction.md): a weighted interpolation proof concentrates any split of selected endpoint modes into a bounded core, including three-mode operator kernels and exact original-tensor controls.
+
 - [Uniform eight-parameter hot-core comparison](reflection-hot-core-finite-grids.md): exact enumeration of all 65,536 F4 coefficient rows and a bivariate minor-degree argument prove no natural-gauge gain at any scale or any power-of-two interval.
 
 - [Nonlinear three-direction filters over F4](f4-weyl-filter-screen.md): complete polynomial compilation and a portable catalogue cover 369,603 colored monomial filters, with every distinct exact profile retained and independently replayable.

@@ -9,6 +9,7 @@ All scalar coefficients are Laurent polynomials in q=-v.
 from __future__ import annotations
 
 from functools import lru_cache
+from fractions import Fraction
 from itertools import product
 from math import factorial
 
@@ -91,6 +92,12 @@ def _geometry(prime, n, modes, geometry):
         data = concentration_data(prime, n, modes)
         return {'selected': tuple(range(modes)), 'retained': data['top'],
                 'active_x': data['active_x'], 'active_v': data['active_v']}
+    if geometry.startswith('split:'):
+        from split_identity_mode_filters import geometry_data
+        counts = tuple(map(int, geometry.split(':')[1:]))
+        if len(counts) != 2 or sum(counts) != modes:
+            raise ValueError('A split geometry requires its initial and terminal mode counts.')
+        return geometry_data(prime, n, *counts)
     from coupled_identity_extreme_filters import geometry_data
     return geometry_data(prime, n, modes, geometry)
 
@@ -157,6 +164,9 @@ def active_components(prime, n, ramification=1, modes=2, geometry='initial'):
     data = _geometry(prime, n, modes, geometry)
     if geometry == 'initial':
         gaussian = active_power_kernels(prime, n, ramification, modes)[(0,) * modes]
+    elif geometry.startswith('split:'):
+        from split_identity_mode_filters import active_gaussian
+        gaussian = active_gaussian(prime, n, ramification, modes, geometry)
     else:
         from coupled_identity_extreme_filters import active_power_kernels as extreme_kernels
         gaussian = extreme_kernels(prime, n, ramification, modes, geometry)[(0,) * modes]
@@ -254,6 +264,24 @@ def profile_data(prime, n, ramification, charge, modes, kernel, geometry='initia
     diagonal = {state: {0: 1} for state in states(prime, modes)}
     if geometry == 'initial':
         data = diagonal_profile_data(prime, n, ramification, charge, modes, diagonal, blocks)
+    elif geometry.startswith('split:'):
+        if not isinstance(charge, (int, Fraction)):
+            raise ValueError('Use an integer or Fraction for an exact physical charge.')
+        geometry_data = _geometry(prime, n, modes, geometry)
+        selected, retained = geometry_data['selected'], geometry_data['retained']
+        data = {
+            'prime': prime, 'n': n, 'ramification': ramification, 'modes': modes,
+            'charge': charge, 'geometry': geometry,
+            'identity_indices': selected, 'retained_xv_indices': retained,
+            'zero_active': tuple(sorted(value + ramification*(1-charge)*block['charge']
+                                        for block in blocks for value in block['orders'])),
+            'zero_charge_blocks_at_J1': blocks,
+            'zero_spectators': tuple(ramification*(2*i+1-charge) for i in range(n) if i not in selected)
+                + tuple(ramification*(2*i+1+charge) for i in range(n) if i not in retained),
+            'infinity_spectators': tuple(ramification*(2*i+1-2*n) for i in range(2*n) if i not in selected),
+            'paired_physical_first': tuple(ramification*(4*i-2*(n-1)+charge) for i in range(n)),
+            'paired_physical_second': tuple(ramification*(4*i-2*(n-1)-charge) for i in range(n)),
+        }
     else:
         from coupled_identity_extreme_filters import profile_data as extreme_data
         data = extreme_data(prime, n, ramification, charge, modes, diagonal, geometry, blocks)

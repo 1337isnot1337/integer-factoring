@@ -1,0 +1,3787 @@
+{
+  "status": "Complete finite F4 operator catalogue with exact profiles and numerical pressure screen; not a global obstruction.",
+  "n": 32,
+  "ramification": 1,
+  "geometry": "mixed",
+  "slow_degree": 1,
+  "endpoint_policy": "filtered",
+  "vacuum_color": 1,
+  "top_exponent": 0,
+  "completed_candidates": 9216,
+  "complete": true,
+  "profile_class_count": 46,
+  "grid_size": 66,
+  "best_critical_pressure": 0.03306796250844775,
+  "best_grid_relative_change": -1.4862243380431295e-15,
+  "profile_classes": [
+    {
+      "rows": 1,
+      "endpoint": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "colors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            66
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            2,
+            64,
+            66,
+            128
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            0,
+            2,
+            64,
+            64,
+            126,
+            128
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            0,
+            62,
+            64,
+            126
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            62
+          ]
+        }
+      ],
+      "infinity_active": [
+        -64,
+        -63,
+        -1,
+        0
+      ],
+      "critical_grid": {
+        "pressure": 0.033945600545062085,
+        "scale": 0.1949476445324846,
+        "charge": 0.0
+      },
+      "relative_grid": {
+        "change": -1.4862243380431295e-15,
+        "scale": 0.1949476445324846,
+        "charge": -32.0
+      },
+      "refined": {
+        "pressure": 0.03306796250844775,
+        "scale": 0.17852138428142975,
+        "charge": -4.083919525146487e-05,
+        "success": true
+      }
+    },
+    {
+      "rows": 3,
+      "endpoint": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "colors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            66
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            0,
+            66,
+            66,
+            128
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            0,
+            0,
+            62,
+            66,
+            128,
+            128
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            0,
+            62,
+            62,
+            128
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            62
+          ]
+        }
+      ],
+      "infinity_active": [
+        -64,
+        -63,
+        -1,
+        0
+      ],
+      "critical_grid": {
+        "pressure": 0.05195430181760603,
+        "scale": 0.25993019270997947,
+        "charge": 16.0
+      },
+      "relative_grid": {
+        "change": 3.133620228282492e-08,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "refined": {
+        "pressure": 0.045621602662778246,
+        "scale": 0.2367915487946079,
+        "charge": 22.097436758550742,
+        "success": true
+      }
+    },
+    {
+      "rows": 12,
+      "endpoint": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "colors": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            66
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -2,
+            66,
+            68,
+            128
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -2,
+            0,
+            60,
+            68,
+            128,
+            130
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            0,
+            60,
+            62,
+            130
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            62
+          ]
+        }
+      ],
+      "infinity_active": [
+        -64,
+        -63,
+        -1,
+        0
+      ],
+      "critical_grid": {
+        "pressure": 0.05369184938208274,
+        "scale": 0.25993019270997947,
+        "charge": 32.0
+      },
+      "relative_grid": {
+        "change": 8.403718541586099e-08,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "refined": {
+        "pressure": 0.04809413426775267,
+        "scale": 0.25089017891753473,
+        "charge": 24.915242466797743,
+        "success": true
+      }
+    },
+    {
+      "rows": 8,
+      "endpoint": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "colors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            -62
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -62,
+            0,
+            0,
+            2
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            0,
+            0,
+            0,
+            2,
+            62,
+            64
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            0,
+            62,
+            62,
+            64
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            62
+          ]
+        }
+      ],
+      "infinity_active": [
+        -64,
+        -63,
+        -1,
+        0
+      ],
+      "critical_grid": {
+        "pressure": 0.7465591000028687,
+        "scale": 0.25993019270997947,
+        "charge": 32.0
+      },
+      "relative_grid": {
+        "change": 1.369022897100029e-07,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "refined": {
+        "pressure": 0.06861605341659821,
+        "scale": 0.35828809982088816,
+        "charge": 40.48015074338999,
+        "success": true
+      }
+    },
+    {
+      "rows": 24,
+      "endpoint": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "colors": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            -62
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -62,
+            -2,
+            0,
+            4
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -2,
+            0,
+            0,
+            4,
+            60,
+            66
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            0,
+            60,
+            62,
+            66
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            62
+          ]
+        }
+      ],
+      "infinity_active": [
+        -64,
+        -63,
+        -1,
+        0
+      ],
+      "critical_grid": {
+        "pressure": 0.7466288519977865,
+        "scale": 0.25993019270997947,
+        "charge": 32.0
+      },
+      "relative_grid": {
+        "change": 1.7097066094521035e-07,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "refined": {
+        "pressure": 0.06861662553878775,
+        "scale": 0.3582944809992338,
+        "charge": 40.48031887289905,
+        "success": true
+      }
+    },
+    {
+      "rows": 48,
+      "endpoint": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "colors": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            -64
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -64,
+            -2,
+            -2,
+            2
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -2,
+            -2,
+            0,
+            2,
+            60,
+            64
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            0,
+            60,
+            62,
+            64
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            62
+          ]
+        }
+      ],
+      "infinity_active": [
+        -64,
+        -63,
+        0,
+        1
+      ],
+      "critical_grid": {
+        "pressure": 0.9962564320066911,
+        "scale": 0.1949476445324846,
+        "charge": 32.0
+      },
+      "relative_grid": {
+        "change": 2.1254826097475127e-07,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "refined": {
+        "pressure": 0.07030248642655429,
+        "scale": 0.3667463590559771,
+        "charge": 41.24330719675338,
+        "success": true
+      }
+    },
+    {
+      "rows": 96,
+      "endpoint": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "colors": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            -64
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -64,
+            -2,
+            -2,
+            2
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -2,
+            -2,
+            0,
+            2,
+            60,
+            64
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            0,
+            60,
+            62,
+            64
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            62
+          ]
+        }
+      ],
+      "infinity_active": [
+        -64,
+        -63,
+        -1,
+        0
+      ],
+      "critical_grid": {
+        "pressure": 0.9962572531067395,
+        "scale": 0.1949476445324846,
+        "charge": 32.0
+      },
+      "relative_grid": {
+        "change": 2.3024127958052015e-07,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "refined": {
+        "pressure": 0.07030248645491916,
+        "scale": 0.3667463590559771,
+        "charge": 41.24330719675338,
+        "success": true
+      }
+    },
+    {
+      "rows": 32,
+      "endpoint": [
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "colors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            -62
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -62,
+            -62,
+            0,
+            64
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -62,
+            0,
+            0,
+            0,
+            64,
+            126
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            0,
+            0,
+            62,
+            126
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            62
+          ]
+        }
+      ],
+      "infinity_active": [
+        -64,
+        -63,
+        -1,
+        0
+      ],
+      "critical_grid": {
+        "pressure": 2.1645262116845547,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "relative_grid": {
+        "change": 0.5716038662938019,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "refined": {
+        "pressure": 0.5153813708904489,
+        "scale": 1.5,
+        "charge": 64.0,
+        "success": true
+      }
+    },
+    {
+      "rows": 32,
+      "endpoint": [
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "colors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            66
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -62,
+            0,
+            66,
+            128
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -62,
+            0,
+            0,
+            0,
+            62,
+            128
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            0,
+            0,
+            62,
+            62
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            62
+          ]
+        }
+      ],
+      "infinity_active": [
+        -64,
+        -63,
+        -1,
+        0
+      ],
+      "critical_grid": {
+        "pressure": 2.1645262216743593,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "relative_grid": {
+        "change": 0.5716038762836064,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "refined": {
+        "pressure": 0.5153813708904489,
+        "scale": 1.5,
+        "charge": 64.0,
+        "success": true
+      }
+    },
+    {
+      "rows": 32,
+      "endpoint": [
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "colors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            -62
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -62,
+            -62,
+            0,
+            0
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -62,
+            0,
+            0,
+            0,
+            0,
+            62
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            0,
+            0,
+            62,
+            62
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            62
+          ]
+        }
+      ],
+      "infinity_active": [
+        -64,
+        -63,
+        -1,
+        0
+      ],
+      "critical_grid": {
+        "pressure": 2.164526255328285,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "relative_grid": {
+        "change": 0.5716039099375323,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "refined": {
+        "pressure": 0.5153813708904489,
+        "scale": 1.5,
+        "charge": 64.0,
+        "success": true
+      }
+    },
+    {
+      "rows": 96,
+      "endpoint": [
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "colors": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            -64
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -64,
+            -62,
+            -2,
+            -2
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -62,
+            -2,
+            -2,
+            0,
+            0,
+            60
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            0,
+            0,
+            60,
+            62
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            62
+          ]
+        }
+      ],
+      "infinity_active": [
+        -64,
+        -63,
+        0,
+        1
+      ],
+      "critical_grid": {
+        "pressure": 2.1645262903362497,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "relative_grid": {
+        "change": 0.5716039449454968,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "refined": {
+        "pressure": 0.5153813708904489,
+        "scale": 1.5,
+        "charge": 64.0,
+        "success": true
+      }
+    },
+    {
+      "rows": 192,
+      "endpoint": [
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "colors": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            -64
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -64,
+            -62,
+            -2,
+            -2
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -62,
+            -2,
+            -2,
+            0,
+            0,
+            60
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            0,
+            0,
+            60,
+            62
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            62
+          ]
+        }
+      ],
+      "infinity_active": [
+        -64,
+        -63,
+        -1,
+        0
+      ],
+      "critical_grid": {
+        "pressure": 2.1645263080292683,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "relative_grid": {
+        "change": 0.5716039626385154,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "refined": {
+        "pressure": 0.5153813708904489,
+        "scale": 1.5,
+        "charge": 64.0,
+        "success": true
+      }
+    },
+    {
+      "rows": 9,
+      "endpoint": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "colors": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            66
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -64,
+            0,
+            66,
+            128
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -64,
+            -2,
+            0,
+            0,
+            62,
+            128
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -2,
+            0,
+            62,
+            62
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            62
+          ]
+        }
+      ],
+      "infinity_active": [
+        -64,
+        -61,
+        -1,
+        0
+      ],
+      "critical_grid": {
+        "pressure": 2.230262438768415,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "relative_grid": {
+        "change": 0.6139801253445641,
+        "scale": 0.032491274088747434,
+        "charge": 64.0
+      },
+      "refined": {
+        "pressure": 1.429431974727232,
+        "scale": 0.7421530723871859,
+        "charge": 64.0,
+        "success": true
+      }
+    },
+    {
+      "rows": 21,
+      "endpoint": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "colors": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            66
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -64,
+            -2,
+            66,
+            128
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -64,
+            -2,
+            -2,
+            0,
+            60,
+            128
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -2,
+            0,
+            60,
+            62
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            62
+          ]
+        }
+      ],
+      "infinity_active": [
+        -64,
+        -61,
+        0,
+        1
+      ],
+      "critical_grid": {
+        "pressure": 2.230262440228225,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "relative_grid": {
+        "change": 0.6142121364719267,
+        "scale": 0.032491274088747434,
+        "charge": 64.0
+      },
+      "refined": {
+        "pressure": 1.429431974727232,
+        "scale": 0.7421530723871859,
+        "charge": 64.0,
+        "success": true
+      }
+    },
+    {
+      "rows": 27,
+      "endpoint": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "colors": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            -64
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -64,
+            -64,
+            -2,
+            64
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -64,
+            -2,
+            -2,
+            0,
+            64,
+            126
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -2,
+            0,
+            62,
+            126
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            62
+          ]
+        }
+      ],
+      "infinity_active": [
+        -64,
+        -61,
+        -1,
+        0
+      ],
+      "critical_grid": {
+        "pressure": 2.230262448758234,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "relative_grid": {
+        "change": 0.6224705158718263,
+        "scale": 0.032491274088747434,
+        "charge": 64.0
+      },
+      "refined": {
+        "pressure": 1.429431974727232,
+        "scale": 0.7421530723871859,
+        "charge": 64.0,
+        "success": true
+      }
+    },
+    {
+      "rows": 18,
+      "endpoint": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "colors": [
+        1,
+        2,
+        1,
+        1
+      ],
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            66
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -64,
+            -2,
+            66,
+            128
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -64,
+            -2,
+            -2,
+            0,
+            60,
+            128
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -2,
+            0,
+            60,
+            62
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            62
+          ]
+        }
+      ],
+      "infinity_active": [
+        -64,
+        -61,
+        -1,
+        0
+      ],
+      "critical_grid": {
+        "pressure": 2.2302624617134175,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "relative_grid": {
+        "change": 0.6179782625790823,
+        "scale": 0.032491274088747434,
+        "charge": 64.0
+      },
+      "refined": {
+        "pressure": 1.429431974727232,
+        "scale": 0.7421530723871859,
+        "charge": 64.0,
+        "success": true
+      }
+    },
+    {
+      "rows": 18,
+      "endpoint": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "colors": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            -62
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -64,
+            -62,
+            0,
+            0
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -64,
+            -2,
+            0,
+            0,
+            0,
+            62
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -2,
+            0,
+            62,
+            62
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            62
+          ]
+        }
+      ],
+      "infinity_active": [
+        -64,
+        -61,
+        -1,
+        0
+      ],
+      "critical_grid": {
+        "pressure": 2.230262464719134,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "relative_grid": {
+        "change": 0.6373401193283812,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "refined": {
+        "pressure": 1.429431974727232,
+        "scale": 0.7421530723871859,
+        "charge": 64.0,
+        "success": true
+      }
+    },
+    {
+      "rows": 18,
+      "endpoint": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "colors": [
+        1,
+        3,
+        1,
+        1
+      ],
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            -62
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -64,
+            -62,
+            -2,
+            0
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -64,
+            -2,
+            -2,
+            0,
+            0,
+            60
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -2,
+            0,
+            60,
+            62
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            62
+          ]
+        }
+      ],
+      "infinity_active": [
+        -64,
+        -61,
+        0,
+        1
+      ],
+      "critical_grid": {
+        "pressure": 2.230262466178937,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "relative_grid": {
+        "change": 0.6373401207881841,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "refined": {
+        "pressure": 1.429431974727232,
+        "scale": 0.7421530723871859,
+        "charge": 64.0,
+        "success": true
+      }
+    },
+    {
+      "rows": 12,
+      "endpoint": [
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "colors": [
+        2,
+        2,
+        1,
+        1
+      ],
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            -64
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -64,
+            -64,
+            -2,
+            2
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -64,
+            -2,
+            -2,
+            0,
+            2,
+            64
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -2,
+            0,
+            62,
+            64
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            62
+          ]
+        }
+      ],
+      "infinity_active": [
+        -64,
+        -61,
+        -1,
+        0
+      ],
+      "critical_grid": {
+        "pressure": 2.2302624687689647,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "relative_grid": {
+        "change": 0.6373401233782119,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "refined": {
+        "pressure": 1.429431974727232,
+        "scale": 0.7421530723871859,
+        "charge": 64.0,
+        "success": true
+      }
+    },
+    {
+      "rows": 78,
+      "endpoint": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "colors": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            -64
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -64,
+            -64,
+            -2,
+            0
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -64,
+            -2,
+            -2,
+            0,
+            0,
+            62
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -2,
+            0,
+            62,
+            62
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            62
+          ]
+        }
+      ],
+      "infinity_active": [
+        -64,
+        -61,
+        -1,
+        0
+      ],
+      "critical_grid": {
+        "pressure": 2.2302624824121455,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "relative_grid": {
+        "change": 0.6373401370213927,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "refined": {
+        "pressure": 1.429431974727232,
+        "scale": 0.7421530723871859,
+        "charge": 64.0,
+        "success": true
+      }
+    },
+    {
+      "rows": 105,
+      "endpoint": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "colors": [
+        1,
+        0,
+        0,
+        2
+      ],
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            -64
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -64,
+            -64,
+            -2,
+            -2
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -64,
+            -2,
+            -2,
+            -2,
+            0,
+            60
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -2,
+            0,
+            60,
+            62
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            62
+          ]
+        }
+      ],
+      "infinity_active": [
+        -64,
+        -61,
+        0,
+        1
+      ],
+      "critical_grid": {
+        "pressure": 2.2302624838719556,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "relative_grid": {
+        "change": 0.6373401384812027,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "refined": {
+        "pressure": 1.429431974727232,
+        "scale": 0.7421530723871859,
+        "charge": 64.0,
+        "success": true
+      }
+    },
+    {
+      "rows": 60,
+      "endpoint": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "colors": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            -62
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -64,
+            -62,
+            -2,
+            0
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -64,
+            -2,
+            -2,
+            0,
+            0,
+            60
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -2,
+            0,
+            60,
+            62
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            62
+          ]
+        }
+      ],
+      "infinity_active": [
+        -64,
+        -61,
+        -1,
+        0
+      ],
+      "critical_grid": {
+        "pressure": 2.2302624876641293,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "relative_grid": {
+        "change": 0.6373401422733764,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "refined": {
+        "pressure": 1.429431974727232,
+        "scale": 0.7421530723871859,
+        "charge": 64.0,
+        "success": true
+      }
+    },
+    {
+      "rows": 210,
+      "endpoint": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "colors": [
+        1,
+        0,
+        0,
+        2
+      ],
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            -64
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -64,
+            -64,
+            -2,
+            -2
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -64,
+            -2,
+            -2,
+            -2,
+            0,
+            60
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -2,
+            0,
+            60,
+            62
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            62
+          ]
+        }
+      ],
+      "infinity_active": [
+        -64,
+        -61,
+        -1,
+        0
+      ],
+      "critical_grid": {
+        "pressure": 2.230262505357148,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "relative_grid": {
+        "change": 0.637340159966395,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "refined": {
+        "pressure": 1.429431974727232,
+        "scale": 0.7421530723871859,
+        "charge": 64.0,
+        "success": true
+      }
+    },
+    {
+      "rows": 12,
+      "endpoint": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "colors": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            66
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -64,
+            66,
+            128,
+            130
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -64,
+            -2,
+            0,
+            128,
+            130,
+            192
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -2,
+            0,
+            62,
+            192
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            62
+          ]
+        }
+      ],
+      "infinity_active": [
+        -64,
+        -63,
+        -1,
+        0
+      ],
+      "critical_grid": {
+        "pressure": 2.424456370740609,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "relative_grid": {
+        "change": 0.5811769505340999,
+        "scale": 0.032491274088747434,
+        "charge": 64.0
+      },
+      "refined": {
+        "pressure": 1.7161390327082167,
+        "scale": 0.7563045814386907,
+        "charge": 64.0,
+        "success": true
+      }
+    },
+    {
+      "rows": 27,
+      "endpoint": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "colors": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            66
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -64,
+            0,
+            66,
+            128
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -64,
+            -2,
+            0,
+            0,
+            62,
+            128
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -2,
+            0,
+            62,
+            62
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            62
+          ]
+        }
+      ],
+      "infinity_active": [
+        -64,
+        -63,
+        0,
+        1
+      ],
+      "critical_grid": {
+        "pressure": 2.4244563867015163,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "relative_grid": {
+        "change": 0.6381079588381707,
+        "scale": 0.032491274088747434,
+        "charge": 64.0
+      },
+      "refined": {
+        "pressure": 1.7161390327082167,
+        "scale": 0.7563045814386907,
+        "charge": 64.0,
+        "success": true
+      }
+    },
+    {
+      "rows": 24,
+      "endpoint": [
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "colors": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            66
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -64,
+            2,
+            66,
+            128
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -64,
+            -2,
+            0,
+            2,
+            64,
+            128
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -2,
+            0,
+            62,
+            64
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            62
+          ]
+        }
+      ],
+      "infinity_active": [
+        -64,
+        -63,
+        -1,
+        0
+      ],
+      "critical_grid": {
+        "pressure": 2.424456390751347,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "relative_grid": {
+        "change": 0.6380095202413324,
+        "scale": 0.032491274088747434,
+        "charge": 64.0
+      },
+      "refined": {
+        "pressure": 1.7161390327082167,
+        "scale": 0.7563045814386907,
+        "charge": 64.0,
+        "success": true
+      }
+    },
+    {
+      "rows": 48,
+      "endpoint": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "colors": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            -62
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -64,
+            -62,
+            0,
+            66
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -64,
+            -2,
+            0,
+            0,
+            66,
+            128
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -2,
+            0,
+            62,
+            128
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            62
+          ]
+        }
+      ],
+      "infinity_active": [
+        -64,
+        -63,
+        -1,
+        0
+      ],
+      "critical_grid": {
+        "pressure": 2.424456396691328,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "relative_grid": {
+        "change": 0.6459411724856702,
+        "scale": 0.032491274088747434,
+        "charge": 64.0
+      },
+      "refined": {
+        "pressure": 1.7161390327082167,
+        "scale": 0.7563045814386907,
+        "charge": 64.0,
+        "success": true
+      }
+    },
+    {
+      "rows": 81,
+      "endpoint": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "colors": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            -64
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -64,
+            -64,
+            -2,
+            64
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -64,
+            -2,
+            -2,
+            0,
+            64,
+            126
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -2,
+            0,
+            62,
+            126
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            62
+          ]
+        }
+      ],
+      "infinity_active": [
+        -64,
+        -63,
+        0,
+        1
+      ],
+      "critical_grid": {
+        "pressure": 2.424456396691335,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "relative_grid": {
+        "change": 0.6465983493654329,
+        "scale": 0.032491274088747434,
+        "charge": 64.0
+      },
+      "refined": {
+        "pressure": 1.7161390327082167,
+        "scale": 0.7563045814386907,
+        "charge": 64.0,
+        "success": true
+      }
+    },
+    {
+      "rows": 63,
+      "endpoint": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "colors": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            66
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -64,
+            -2,
+            66,
+            128
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -64,
+            -2,
+            -2,
+            0,
+            60,
+            128
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -2,
+            0,
+            60,
+            62
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            62
+          ]
+        }
+      ],
+      "infinity_active": [
+        -64,
+        -63,
+        0,
+        3
+      ],
+      "critical_grid": {
+        "pressure": 2.4244563991261803,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "relative_grid": {
+        "change": 0.6386616062127167,
+        "scale": 0.032491274088747434,
+        "charge": 64.0
+      },
+      "refined": {
+        "pressure": 1.7161390327082167,
+        "scale": 0.7563045814386907,
+        "charge": 64.0,
+        "success": true
+      }
+    },
+    {
+      "rows": 72,
+      "endpoint": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "colors": [
+        0,
+        2,
+        0,
+        0
+      ],
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            66
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -64,
+            0,
+            66,
+            128
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -64,
+            -2,
+            0,
+            0,
+            62,
+            128
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -2,
+            0,
+            62,
+            62
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            62
+          ]
+        }
+      ],
+      "infinity_active": [
+        -64,
+        -63,
+        -1,
+        0
+      ],
+      "critical_grid": {
+        "pressure": 2.424456404394528,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "relative_grid": {
+        "change": 0.6417706739026888,
+        "scale": 0.032491274088747434,
+        "charge": 64.0
+      },
+      "refined": {
+        "pressure": 1.7161390327082167,
+        "scale": 0.7563045814386907,
+        "charge": 64.0,
+        "success": true
+      }
+    },
+    {
+      "rows": 54,
+      "endpoint": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "colors": [
+        0,
+        2,
+        2,
+        0
+      ],
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            66
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -64,
+            -2,
+            66,
+            128
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -64,
+            -2,
+            -2,
+            0,
+            60,
+            128
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -2,
+            0,
+            60,
+            62
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            62
+          ]
+        }
+      ],
+      "infinity_active": [
+        -64,
+        -63,
+        0,
+        1
+      ],
+      "critical_grid": {
+        "pressure": 2.4244564096465187,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "relative_grid": {
+        "change": 0.6421060960726889,
+        "scale": 0.032491274088747434,
+        "charge": 64.0
+      }
+    },
+    {
+      "rows": 54,
+      "endpoint": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "colors": [
+        3,
+        1,
+        2,
+        3
+      ],
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            -62
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -64,
+            -62,
+            0,
+            0
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -64,
+            -2,
+            0,
+            0,
+            0,
+            62
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -2,
+            0,
+            62,
+            62
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            62
+          ]
+        }
+      ],
+      "infinity_active": [
+        -64,
+        -63,
+        0,
+        1
+      ],
+      "critical_grid": {
+        "pressure": 2.424456412652235,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "relative_grid": {
+        "change": 0.6934083708766131,
+        "scale": 0.032491274088747434,
+        "charge": 64.0
+      }
+    },
+    {
+      "rows": 216,
+      "endpoint": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "colors": [
+        0,
+        1,
+        0,
+        2
+      ],
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            -64
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -64,
+            -64,
+            -2,
+            64
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -64,
+            -2,
+            -2,
+            0,
+            64,
+            126
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -2,
+            0,
+            62,
+            126
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            62
+          ]
+        }
+      ],
+      "infinity_active": [
+        -64,
+        -63,
+        -1,
+        0
+      ],
+      "critical_grid": {
+        "pressure": 2.4244564143843466,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "relative_grid": {
+        "change": 0.650261064429951,
+        "scale": 0.032491274088747434,
+        "charge": 64.0
+      }
+    },
+    {
+      "rows": 24,
+      "endpoint": [
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "colors": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            -62
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -64,
+            -62,
+            0,
+            2
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -64,
+            -2,
+            0,
+            0,
+            2,
+            64
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -2,
+            0,
+            62,
+            64
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            62
+          ]
+        }
+      ],
+      "infinity_active": [
+        -64,
+        -63,
+        -1,
+        0
+      ],
+      "critical_grid": {
+        "pressure": 2.424456416702066,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "relative_grid": {
+        "change": 0.6935126395903065,
+        "scale": 0.032491274088747434,
+        "charge": 64.0
+      }
+    },
+    {
+      "rows": 36,
+      "endpoint": [
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "colors": [
+        3,
+        1,
+        1,
+        2
+      ],
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            -64
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -64,
+            -64,
+            -2,
+            2
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -64,
+            -2,
+            -2,
+            0,
+            2,
+            64
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -2,
+            0,
+            62,
+            64
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            62
+          ]
+        }
+      ],
+      "infinity_active": [
+        -64,
+        -63,
+        0,
+        1
+      ],
+      "critical_grid": {
+        "pressure": 2.424456416702066,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "relative_grid": {
+        "change": 0.6935256724151161,
+        "scale": 0.032491274088747434,
+        "charge": 64.0
+      }
+    },
+    {
+      "rows": 54,
+      "endpoint": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "colors": [
+        0,
+        1,
+        2,
+        0
+      ],
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            -62
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -64,
+            -62,
+            -2,
+            0
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -64,
+            -2,
+            -2,
+            0,
+            0,
+            60
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -2,
+            0,
+            60,
+            62
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            62
+          ]
+        }
+      ],
+      "infinity_active": [
+        -64,
+        -63,
+        0,
+        3
+      ],
+      "critical_grid": {
+        "pressure": 2.4244564250769063,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "relative_grid": {
+        "change": 0.6937473282625118,
+        "scale": 0.032491274088747434,
+        "charge": 64.0
+      }
+    },
+    {
+      "rows": 420,
+      "endpoint": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "colors": [
+        0,
+        1,
+        2,
+        0
+      ],
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            66
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -64,
+            -2,
+            66,
+            128
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -64,
+            -2,
+            -2,
+            0,
+            60,
+            128
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -2,
+            0,
+            60,
+            62
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            62
+          ]
+        }
+      ],
+      "infinity_active": [
+        -64,
+        -63,
+        -1,
+        0
+      ],
+      "critical_grid": {
+        "pressure": 2.42445642733953,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "relative_grid": {
+        "change": 0.645768811137207,
+        "scale": 0.032491274088747434,
+        "charge": 64.0
+      }
+    },
+    {
+      "rows": 234,
+      "endpoint": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "colors": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            -64
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -64,
+            -64,
+            -2,
+            0
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -64,
+            -2,
+            -2,
+            0,
+            0,
+            62
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -2,
+            0,
+            62,
+            62
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            62
+          ]
+        }
+      ],
+      "infinity_active": [
+        -64,
+        -63,
+        0,
+        1
+      ],
+      "critical_grid": {
+        "pressure": 2.4244564303452467,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "relative_grid": {
+        "change": 0.6970710859411303,
+        "scale": 0.032491274088747434,
+        "charge": 64.0
+      }
+    },
+    {
+      "rows": 144,
+      "endpoint": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "colors": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            -62
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -64,
+            -62,
+            0,
+            0
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -64,
+            -2,
+            0,
+            0,
+            0,
+            62
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -2,
+            0,
+            62,
+            62
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            62
+          ]
+        }
+      ],
+      "infinity_active": [
+        -64,
+        -63,
+        -1,
+        0
+      ],
+      "critical_grid": {
+        "pressure": 2.424456430345254,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "relative_grid": {
+        "change": 0.6970710859411312,
+        "scale": 0.032491274088747434,
+        "charge": 64.0
+      }
+    },
+    {
+      "rows": 96,
+      "endpoint": [
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "colors": [
+        1,
+        1,
+        3,
+        3
+      ],
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            -64
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -64,
+            -64,
+            -2,
+            2
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -64,
+            -2,
+            -2,
+            0,
+            2,
+            64
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -2,
+            0,
+            62,
+            64
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            62
+          ]
+        }
+      ],
+      "infinity_active": [
+        -64,
+        -63,
+        -1,
+        0
+      ],
+      "critical_grid": {
+        "pressure": 2.4244564343950845,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "relative_grid": {
+        "change": 0.6971883874796342,
+        "scale": 0.032491274088747434,
+        "charge": 64.0
+      }
+    },
+    {
+      "rows": 276,
+      "endpoint": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "colors": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            -62
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -64,
+            -62,
+            -2,
+            0
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -64,
+            -2,
+            -2,
+            0,
+            0,
+            60
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -2,
+            0,
+            60,
+            62
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            62
+          ]
+        }
+      ],
+      "infinity_active": [
+        -64,
+        -63,
+        0,
+        1
+      ],
+      "critical_grid": {
+        "pressure": 2.4244564355972305,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "relative_grid": {
+        "change": 0.697191818122484,
+        "scale": 0.032491274088747434,
+        "charge": 64.0
+      }
+    },
+    {
+      "rows": 315,
+      "endpoint": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "colors": [
+        1,
+        0,
+        1,
+        2
+      ],
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            -64
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -64,
+            -64,
+            -2,
+            -2
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -64,
+            -2,
+            -2,
+            -2,
+            0,
+            60
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -2,
+            0,
+            60,
+            62
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            62
+          ]
+        }
+      ],
+      "infinity_active": [
+        -64,
+        -63,
+        0,
+        3
+      ],
+      "critical_grid": {
+        "pressure": 2.424456442769918,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "relative_grid": {
+        "change": 0.6973962370239265,
+        "scale": 0.032491274088747434,
+        "charge": 64.0
+      }
+    },
+    {
+      "rows": 948,
+      "endpoint": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "colors": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            -64
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -64,
+            -64,
+            -2,
+            0
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -64,
+            -2,
+            -2,
+            0,
+            0,
+            62
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -2,
+            0,
+            62,
+            62
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            62
+          ]
+        }
+      ],
+      "infinity_active": [
+        -64,
+        -63,
+        -1,
+        0
+      ],
+      "critical_grid": {
+        "pressure": 2.4244564480382653,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "relative_grid": {
+        "change": 0.7007338010056484,
+        "scale": 0.032491274088747434,
+        "charge": 64.0
+      }
+    },
+    {
+      "rows": 822,
+      "endpoint": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "colors": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            -64
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -64,
+            -64,
+            -2,
+            -2
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -64,
+            -2,
+            -2,
+            -2,
+            0,
+            60
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -2,
+            0,
+            60,
+            62
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            62
+          ]
+        }
+      ],
+      "infinity_active": [
+        -64,
+        -63,
+        0,
+        1
+      ],
+      "critical_grid": {
+        "pressure": 2.424456453290249,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "relative_grid": {
+        "change": 0.7008407268838978,
+        "scale": 0.032491274088747434,
+        "charge": 64.0
+      }
+    },
+    {
+      "rows": 744,
+      "endpoint": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "colors": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            -62
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -64,
+            -62,
+            -2,
+            0
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -64,
+            -2,
+            -2,
+            0,
+            0,
+            60
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -2,
+            0,
+            60,
+            62
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            62
+          ]
+        }
+      ],
+      "infinity_active": [
+        -64,
+        -63,
+        -1,
+        0
+      ],
+      "critical_grid": {
+        "pressure": 2.424456453290249,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "relative_grid": {
+        "change": 0.7008545331870021,
+        "scale": 0.032491274088747434,
+        "charge": 64.0
+      }
+    },
+    {
+      "rows": 3300,
+      "endpoint": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "colors": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "zero_blocks": [
+        {
+          "charge": -2,
+          "orders": [
+            -64
+          ]
+        },
+        {
+          "charge": -1,
+          "orders": [
+            -64,
+            -64,
+            -2,
+            -2
+          ]
+        },
+        {
+          "charge": 0,
+          "orders": [
+            -64,
+            -2,
+            -2,
+            -2,
+            0,
+            60
+          ]
+        },
+        {
+          "charge": 1,
+          "orders": [
+            -2,
+            0,
+            60,
+            62
+          ]
+        },
+        {
+          "charge": 2,
+          "orders": [
+            62
+          ]
+        }
+      ],
+      "infinity_active": [
+        -64,
+        -63,
+        -1,
+        0
+      ],
+      "critical_grid": {
+        "pressure": 2.4244564709832677,
+        "scale": 0.25993019270997947,
+        "charge": 64.0
+      },
+      "relative_grid": {
+        "change": 0.7045034419484159,
+        "scale": 0.032491274088747434,
+        "charge": 64.0
+      }
+    }
+  ],
+  "seconds": 15.42653731900009
+}

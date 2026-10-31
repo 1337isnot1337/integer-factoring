@@ -350,3 +350,45 @@ It is not an obstruction for all operator kernels, nor a proof that
 their zero Smith profiles must deteriorate by a particular amount.
 Searches allowing explicitly charged zero losses remain outside
 this argument.
+
+## 8. Extension-field compilation and finite operator searches
+
+In characteristic two, the same formulas hold over `F4`. The
+occupation factorials are all one, and the regular basis changes
+used above have binary coefficients. Extending the coefficient
+field therefore preserves the proved reduction. The energy-filtered
+endpoint condition is still required for a free physical repair.
+
+The implementation
+[f4_identity_operator_filters.py](../tools/f4_identity_operator_filters.py)
+retains every Laurent coefficient in both field components. Its
+[independent checker](../tools/check_f4_identity_operator_filters.py)
+compares twenty original cut profiles, including repaired endpoints
+and matrices of order 256, and checks 11,496 literal endpoint
+coefficients. It also compares five complete Weyl reductions and
+four binary specializations; see the
+[saved controls](../evidence/f4-identity-operator-filters.json).
+
+The [compiled operator evaluator](../tools/compiled_f4_identity_operators.py)
+forms every affine combination before exact elimination. Its
+[independent replay](../tools/check_compiled_f4_identity_operators.py)
+checks 49 complete two-cut comparisons, including a coefficient at
+degree 600; the [record](../evidence/compiled-f4-identity-operators.json)
+retains the construction parameters. A small starting elimination
+window cannot discard a high-degree source coefficient.
+
+The [finite search driver](../tools/search_f4_identity_operators.py)
+enumerates polynomial occupation transfers with filtered endpoints.
+At interval 32, the complete specified degree-one mixed-mode family
+contains 9,216 kernels and 46 distinct exact profile classes. The
+[catalogue](../evidence/f4-operator-degree1-mixed-n32.json)
+records each class and its multiplicity. Numerical scale and charge
+optimization found no improvement over the Gaussian critical
+pressure, approximately `0.0330679625084`. Profile enumeration is
+exact; the continuous optimization is exploratory and proves no
+global obstruction.
+
+The [mixed-end mode theorem](split-identity-mode-reduction.md)
+also permits independent initial and terminal blocks of selected
+directions. The operator and Weyl constructions apply to that
+geometry without changing their endpoint or degree obligations.

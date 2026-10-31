@@ -364,3 +364,11 @@ verify-reflection-hot-grid:
 verify-reflection-hot-grid-exhaustive:
 	python3 tools/check_reflection_hot_core_grid.py --exhaustive
 	python3 tools/reflection_hot_core_uniform.py
+
+.PHONY: verify-split-identity-modes verify-f4-identity-operators
+verify-split-identity-modes:
+	python3 tools/check_split_identity_mode_filters.py --extended
+
+verify-f4-identity-operators:
+	python3 tools/check_f4_identity_operator_filters.py
+	python3 tools/check_compiled_f4_identity_operators.py
