@@ -617,3 +617,7 @@ verify-regular-frame-cells:
 verify-finite-smith-frames:
 	OPENBLAS_NUM_THREADS=1 python3 tools/check_finite_precision_smith_frames.py --output /tmp/integer-factoring-finite-smith-frames-replay.json
 
+.PHONY: verify-odd-fiber-codes
+verify-odd-fiber-codes:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_odd_fiber_crossings.py --output /tmp/integer-factoring-odd-fiber-codes-replay.json
+
