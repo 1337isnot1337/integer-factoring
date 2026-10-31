@@ -16,7 +16,6 @@ from pathlib import Path
 import time
 
 import numpy as np
-from scipy.optimize import minimize
 
 from check_full_alphabet_monomial_residual import cubic_pair, full_residual_monomial_seed
 from native_rectangular_smith_f4 import RectangularOracle
@@ -29,6 +28,8 @@ def entropy(probabilities):
 
 
 def optimize(seed, *, cut, rng, restarts, maxfun, height_bound, deadline, starts=()):
+    # SciPy is optional for the exact checkers that import this module.
+    from scipy.optimize import minimize
     oracle = RectangularOracle(seed["values"], seed["q_x"], seed["q_u"],
                                seed["denominator_degree"], endpoint_check=False)
     dimension = oracle.parameters
