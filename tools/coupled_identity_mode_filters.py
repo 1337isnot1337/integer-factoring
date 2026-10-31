@@ -162,7 +162,7 @@ def active_power_kernels(prime, n, ramification=1, modes=2):
     return kernels
 
 
-def normalized_filters(prime, modes, alpha):
+def normalized_filters(prime, modes, alpha, strict_endpoint=True):
     states = tuple(product(range(prime), repeat=modes))
     if set(alpha) != set(states):
         raise ValueError('Supply a scalar filter for every joint occupation state.')
@@ -172,14 +172,16 @@ def normalized_filters(prime, modes, alpha):
                  if coefficient % prime}
         if any(not isinstance(power, int) for power in value):
             raise ValueError('Scalar Laurent powers in x=-v must be integers.')
-        if not value or sum(value.values()) % prime != 1:
-            raise ValueError('Every joint occupation filter must equal one at x=1.')
+        endpoint = sum(value.values()) % prime
+        if not value or not endpoint or (strict_endpoint and endpoint != 1):
+            description = 'equal one' if strict_endpoint else 'be nonzero'
+            raise ValueError(f'Every joint occupation filter must {description} at x=1.')
         result[state] = value
     return result
 
 
-def multiplier_coefficients(prime, modes, alpha):
-    alpha = normalized_filters(prime, modes, alpha)
+def multiplier_coefficients(prime, modes, alpha, strict_endpoint=True):
+    alpha = normalized_filters(prime, modes, alpha, strict_endpoint)
     result = {}
     for powers in product(range(prime), repeat=modes):
         value = {}
@@ -193,9 +195,9 @@ def multiplier_coefficients(prime, modes, alpha):
     return result
 
 
-def active_tensor(prime, n, ramification, modes, alpha):
+def active_tensor(prime, n, ramification, modes, alpha, strict_endpoint=True):
     kernels = active_power_kernels(prime, n, ramification, modes)
-    scalar = multiplier_coefficients(prime, modes, alpha)
+    scalar = multiplier_coefficients(prime, modes, alpha, strict_endpoint)
     result = {}
     for powers, coefficient in scalar.items():
         coefficient = {2 * degree: value for degree, value in coefficient.items()}
@@ -221,11 +223,11 @@ def zero_charge_blocks(prime, modes, tensor):
     return result
 
 
-def zero_profiles(prime, n, ramification, modes, alpha):
+def zero_profiles(prime, n, ramification, modes, alpha, strict_endpoint=True):
     """Exact complete active profile, organized by common charge at J=1."""
     from check_all_field_pascal_crossings import smith_orders
 
-    tensor = active_tensor(prime, n, ramification, modes, alpha)
+    tensor = active_tensor(prime, n, ramification, modes, alpha, strict_endpoint)
     result = []
     for charge, matrix in zero_charge_blocks(prime, modes, tensor):
         minimum = min(power for row in matrix for value in row for power in value)
@@ -240,13 +242,13 @@ def zero_profiles(prime, n, ramification, modes, alpha):
     return tuple(result)
 
 
-def profile_data(prime, n, ramification, charge, modes, alpha, blocks=None):
+def profile_data(prime, n, ramification, charge, modes, alpha, blocks=None, strict_endpoint=True):
     validate(prime, n, ramification, (0,) * prime)
     if not isinstance(charge, (int, Fraction)):
         raise ValueError('Use an integer or Fraction for an exact physical charge.')
-    alpha = normalized_filters(prime, modes, alpha)
+    alpha = normalized_filters(prime, modes, alpha, strict_endpoint)
     if blocks is None:
-        blocks = zero_profiles(prime, n, ramification, modes, alpha)
+        blocks = zero_profiles(prime, n, ramification, modes, alpha, strict_endpoint)
     kappa = tuple(ramification * (2 * j + 1 - 2 * n) for j in range(modes))
     result = {
         'prime': prime, 'n': n, 'ramification': ramification,
@@ -275,12 +277,17 @@ def monomial_filters(prime, modes, exponents):
     return {state: {-exponent: 1} for state, exponent in zip(states, exponents)}
 
 
-def polynomial_seed(prime, n, ramification, modes, alpha, identity_indices=None):
+def polynomial_seed(prime, n, ramification, modes, alpha, identity_indices=None,
+                    strict_endpoint=True, repair_endpoint=False):
     """Construct and monomial-clear the actual original polynomial tensor.
 
     This reference path uses every physical mode and is exponential in n.
     Return (tensor, clearing), with raw coefficient normalization. The
     clearing x^h adds +2h at zero and -2h at infinity, and is one at x=1.
+    With strict_endpoint=False, nonzero endpoint values are permitted.
+    Set repair_endpoint=True to divide each physical Y label by its
+    endpoint value; this restores the original endpoint pointwise and
+    changes neither weighted profile nor ordinary polynomial degree.
     """
     from check_all_field_pascal_crossings import pascal_kernel
     from check_truncated_symmetric_crossings import direct_kernel
@@ -293,7 +300,7 @@ def polynomial_seed(prime, n, ramification, modes, alpha, identity_indices=None)
     if (len(identity_indices) != modes or len(set(identity_indices)) != modes
             or any(not isinstance(index, int) or not 0 <= index < n for index in identity_indices)):
         raise ValueError('Select distinct physical identity-mode indices.')
-    alpha = normalized_filters(prime, modes, alpha)
+    alpha = normalized_filters(prime, modes, alpha, strict_endpoint)
     clearing = max(0, -min(power for value in alpha.values() for power in value))
     matrix = pascal_kernel(tuple(range(n)), 2 * n, prime)
     gaussian = {powers: {degree: value for degree, value in enumerate(polynomial) if value}
@@ -321,7 +328,7 @@ def polynomial_seed(prime, n, ramification, modes, alpha, identity_indices=None)
             if value:
                 right[tuple(powers)] = value
         q_modes.append(algebra_multiply(left, right, prime))
-    scalar = multiplier_coefficients(prime, modes, alpha)
+    scalar = multiplier_coefficients(prime, modes, alpha, strict_endpoint)
     kernels = {(0,) * modes: gaussian}
     for state in product(range(prime), repeat=modes):
         if not any(state):
@@ -339,6 +346,13 @@ def polynomial_seed(prime, n, ramification, modes, alpha, identity_indices=None)
             tensor[powers] = add(tensor.get(powers, {}), multiply(value, coefficient, prime), prime)
     tensor = {powers: tuple(value.get(degree, 0) for degree in range(max(value) + 1))
               for powers, value in tensor.items() if value}
+    if repair_endpoint:
+        endpoints = {state: sum(value.values()) % prime for state, value in alpha.items()}
+        tensor = {
+            powers: tuple(value * pow(endpoints[tuple(powers[n + j] for j in identity_indices)], -1, prime)
+                          % prime for value in polynomial)
+            for powers, polynomial in tensor.items()
+        }
     return tensor, clearing
 
 

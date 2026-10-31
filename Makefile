@@ -340,3 +340,10 @@ verify-reflection-hot-cores:
 .PHONY: verify-coupled-weyl
 verify-coupled-weyl:
 	python3 tools/check_coupled_identity_weyl_profiles.py --extended --screen evidence/coupled-identity-operator-screens.json
+
+.PHONY: verify-repaired-state-filters
+verify-repaired-state-filters:
+	python3 tools/check_repaired_endpoint_state_filters.py
+	python3 tools/check_repaired_endpoint_polynomial_synthesis.py
+	python3 tools/check_f4_repaired_identity_filters.py
+	python3 tools/check_f4_weyl_filter_compiler.py

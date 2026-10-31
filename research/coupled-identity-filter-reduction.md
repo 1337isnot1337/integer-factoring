@@ -437,3 +437,79 @@ matrix; this operation does not assert an unchanged monomial Gaussian
 formula. The original global tensor still uses the polynomial
 summands (2), so the local auxiliary denominator does not introduce
 an endpoint pole into the construction.
+
+## 7. Nonzero endpoint weights have a constant diagonal repair
+
+The condition \(\alpha_{\mathbf d}(-1)=1\) in Section 1 can
+be relaxed to
+
+~~~math
+a_{\mathbf d}:=\alpha_{\mathbf d}(-1)\ne0
+\qquad\text{for every selected occupation state }\mathbf d.
+\tag{30}
+~~~
+
+The weights must still be regular at the endpoint. When they are
+written as functions of \(q=-v\), condition (30) means that their
+values at \(q=1\) are nonzero. This relaxation applies to the
+initial, terminal, and mixed selections, and to arbitrary joint
+occupation weights rather than only products of scalar weights.
+
+Let \(\mathbf d(y)\) be the occupations of the selected modes in
+the physical \(Y\) letter. If \(T_\alpha\) is the Gaussian
+multiplied by (3), then its endpoint coefficients satisfy
+
+~~~math
+(T_\alpha)_{x,y,u,v}(-1)
+=a_{\mathbf d(y)}G_{x,y,u,v}(-1).
+\tag{31}
+~~~
+
+Indeed, \(A(-1)=0\), so the selected form in (2) becomes
+\(Q_j=Y_j(U_j+\sum_i C_{ji}(-1)X_i)\). Removing its
+factor \(E(Q_j)\) from the Gaussian leaves no dependence on
+that selected \(Y_j\). In the remaining filtered sum, the
+actual selected \(Y\) occupation therefore determines exactly
+one joint index \(\mathbf d\), whose coefficient is
+\(a_{\mathbf d}\). This proves (31) coefficient by coefficient.
+
+Define the repaired tensor by the constant physical diagonal map
+
+~~~math
+(\widehat T_\alpha)_{x,y,u,v}(\zeta)
+=a_{\mathbf d(y)}^{-1}(T_\alpha)_{x,y,u,v}(\zeta).
+\tag{32}
+~~~
+
+Here \(\zeta\) denotes the polynomial parameter. Equation (31)
+shows that (32) has exactly the original Gaussian endpoint.
+The map is invertible over the constant field. It is consequently
+a regular diagonal unit at both places and commutes with every
+physical monomial gauge. Both complete Smith profiles are unchanged.
+The repair also preserves the entry degrees, the physical alphabet,
+and its type partitions. It introduces no additional polynomial
+degree or scalar-recovery cost.
+
+Equivalently, without applying (32) locally, a tensor power on a
+fixed full physical \(Y\) type has endpoint scalar
+\(\prod_{\mathbf d}a_{\mathbf d}^{N_{\mathbf d}}\).
+The full type determines each projected count
+\(N_{\mathbf d}\), and the scalar is known and nonzero, so it
+can be divided out. The local diagonal repair makes this
+normalization explicit before taking tensor powers.
+
+For example, signed monomial weights in odd characteristic are
+admissible whenever their signs are nonzero. They can change the
+finite-difference cancellations in the zero profile, even though
+their constant endpoint signs themselves have no valuation cost.
+The earlier common-denominator and degree accounting still applies
+to the weights before this constant repair.
+
+The [repaired-endpoint implementation](../tools/repaired_endpoint_state_filters.py)
+and [independent checker](../tools/check_repaired_endpoint_state_filters.py)
+record literal endpoint repairs and both original physical profiles in
+[the saved evidence](../evidence/repaired-endpoint-state-filters.json).
+The accompanying
+[synthesis note](repaired-endpoint-state-filters.md)
+explains the larger endpoint-image search space and gives an explicit
+family that the all-one endpoint constraint excludes.

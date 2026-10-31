@@ -154,9 +154,9 @@ def active_power_kernels(prime, n, ramification=1, modes=2, geometry='mixed'):
     return kernels
 
 
-def active_tensor(prime, n, ramification, modes, alpha, geometry='mixed'):
+def active_tensor(prime, n, ramification, modes, alpha, geometry='mixed', strict_endpoint=True):
     kernels = active_power_kernels(prime, n, ramification, modes, geometry)
-    scalar = multiplier_coefficients(prime, modes, alpha)
+    scalar = multiplier_coefficients(prime, modes, alpha, strict_endpoint)
     result = {}
     for powers, coefficient in scalar.items():
         coefficient = {2 * degree: value for degree, value in coefficient.items()}
@@ -166,10 +166,10 @@ def active_tensor(prime, n, ramification, modes, alpha, geometry='mixed'):
     return {powers: value for powers, value in result.items() if value}
 
 
-def zero_profiles(prime, n, ramification, modes, alpha, geometry='mixed'):
+def zero_profiles(prime, n, ramification, modes, alpha, geometry='mixed', strict_endpoint=True):
     from check_all_field_pascal_crossings import smith_orders
 
-    tensor = active_tensor(prime, n, ramification, modes, alpha, geometry)
+    tensor = active_tensor(prime, n, ramification, modes, alpha, geometry, strict_endpoint)
     result = []
     for charge, matrix in zero_charge_blocks(prime, modes, tensor):
         minimum = min(power for row in matrix for value in row for power in value)
@@ -184,14 +184,15 @@ def zero_profiles(prime, n, ramification, modes, alpha, geometry='mixed'):
     return tuple(result)
 
 
-def profile_data(prime, n, ramification, charge, modes, alpha, geometry='mixed', blocks=None):
+def profile_data(prime, n, ramification, charge, modes, alpha, geometry='mixed', blocks=None,
+                 strict_endpoint=True):
     validate(prime, n, ramification, (0,) * prime)
     if not isinstance(charge, (int, Fraction)):
         raise ValueError('Use an integer or Fraction for an exact physical charge.')
     data = geometry_data(prime, n, modes, geometry)
-    alpha = normalized_filters(prime, modes, alpha)
+    alpha = normalized_filters(prime, modes, alpha, strict_endpoint)
     if blocks is None:
-        blocks = zero_profiles(prime, n, ramification, modes, alpha, geometry)
+        blocks = zero_profiles(prime, n, ramification, modes, alpha, geometry, strict_endpoint)
     kappa = tuple(ramification * (2 * j + 1 - 2 * n) for j in data['selected'])
     return {
         'prime': prime, 'n': n, 'ramification': ramification,

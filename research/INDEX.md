@@ -14,6 +14,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [State filters with nonzero endpoint repair](repaired-endpoint-state-filters.md): a free diagonal physical repair enlarges scalar and joint polynomial synthesis, including a strict feasibility example, signed prime-field filters, and colored binary filters over `F4`.
+
 - [Weighted Weyl reduction of coupled operators](identity-operator-weyl-reduction.md): an exact differential-operator identity reduces the active matrix order from `p^(2r)` to `p^r`, with explicit auxiliary shifts, weighted regularity, and complete polynomial coefficient arithmetic.
 
 - [Bounded hot cores after reflection compression](reflection-hot-core-defects.md): arbitrary even polynomial defects on the hottest logical modes reduce to three active modes per selected mode, with complete Laurent coefficients and all Gaussian spectators retained.
