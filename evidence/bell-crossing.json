@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "local_transform_checks": 297,
+  "physical_eigenbasis_checks": 594,
+  "independent_elimination_ranks": 192,
+  "literal_tensor_word_profile_checks": 324,
+  "small_seed_determinant_floors": [
+    {
+      "symbols": 4,
+      "leading_rho_floor_approx": 0.7743974703476993,
+      "exceeds_169_over_239_exactly": true,
+      "length_2N_floor": 336
+    },
+    {
+      "symbols": 16,
+      "leading_rho_floor_approx": 0.7071338413964393,
+      "exceeds_169_over_239_exactly": true,
+      "length_2N_floor": 739781100339240960000
+    },
+    {
+      "symbols": 64,
+      "leading_rho_floor_approx": 0.6569610574910814,
+      "exceeds_169_over_239_exactly": false,
+      "length_2N_floor": 46755191439943639397673388834369649229867592646563882699609440053045064973346369707417763636973859075554017280000000000000000
+    }
+  ],
+  "factoring_exponent": "1/2; no improvement established"
+}

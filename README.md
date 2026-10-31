@@ -73,6 +73,12 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 
 No uniform factoring exponent above `1/2` is proved here. One open approach seeks effective crossing pieces with total rank width `4*rho*lambda + O(log lambda)` for `rho < 1/sqrt(2)`. A suitable family could improve the evaluator bound, but finite rank improvements alone do not establish that inequality.
 
+The [Bell-diagonal seed construction](research/bell-diagonal-crossings.md)
+gives exact two-cut transforms and excludes its complete symmetric
+coefficient spans at local dimensions two and four. Dimension eight
+remains open under that argument. Replay its physical tensors and pencil
+ranks with `make verify-bell`; no stronger factoring exponent is claimed.
+
 See the [research index](research/INDEX.md) for completed arguments, scoped obstructions, and older candidates. Active work can also appear in [open pull requests](https://github.com/1337isnot1337/integer-factoring/pulls); branch research is not automatically a result on `main`.
 
 ## Contribution and attribution
