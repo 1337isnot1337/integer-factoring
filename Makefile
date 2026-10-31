@@ -709,6 +709,10 @@ verify-joint-residue-retiming:
 .PHONY: verify-explicit-fusion verify-carry-fourier
 .PHONY: verify-asymmetric-crossings
 .PHONY: verify-weighted-adaptive verify-basis-searches
+.PHONY: verify-frobenius-recovery
+verify-frobenius-recovery:
+	python3 tools/check_frobenius_sparse_recovery.py --output /tmp/integer-factoring-frobenius-recovery-replay.json
+
 verify-weighted-adaptive:
 	python3 tools/check_weighted_adaptive_catalogues.py --output /tmp/integer-factoring-weighted-adaptive-replay.json
 

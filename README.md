@@ -107,6 +107,13 @@ and [fused gauge search](research/fused-weighted-search-checkpoint.md)
 retain every trial outcome and independently replay their winners.
 Neither completed search found a post-half crossing.
 
+[Frobenius-compatible sparse recovery](research/frobenius-compatible-sparse-recovery.md)
+reduces the required weighted evaluations to an explicit family of small
+extension fields and tensor algebras. Both operand boxes have invertible
+Fourier weights at every frequency. A charged roughness pretest and
+radix rounding preserve any proposed saving exponent below one; the
+remaining task is a faster evaluator for those coupled arithmetic queries.
+
 ## Verification
 
 From the repository root, run:
@@ -129,6 +136,7 @@ make verify-carry-fourier  # Exact carry elimination and frequency-labelled rank
 make verify-asymmetric-crossings # Supporting-line algebra and numerical-oracle controls
 make verify-weighted-adaptive # Exact local-gauge catalogues and typed reconstructions
 make verify-basis-searches # Completed ternary/fused winner replays and basis-oracle controls
+make verify-frobenius-recovery # Punctured sparse recovery, unit boxes, and radix costs
 make verify-schur-fermion # Complete Schur entry formulas and exact comparisons
 make verify-schur-central # Hook-residue identities and full Schur ranks through weight 8
 make verify-schur-gaussian # Exact digit reduction and fixed Gaussian crossing seed
