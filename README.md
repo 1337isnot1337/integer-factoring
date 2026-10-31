@@ -253,6 +253,14 @@ inequality. This closes the binary higher-degree and row-frame search
 route without changing the achieved factoring score. Run
 `make verify-binary-smith-floor` for the exact certificate and full-minor controls.
 
+For larger alphabets, [cell-set minor caps](research/cell-minor-caps.md)
+strengthen the [shared-minor relaxation](research/shared-minor-profile-relaxation.md):
+every set of k cells gives an endpoint minor that bounds each Smith-profile
+prefix by kd plus the k smallest cell energies. This exactly excludes the
+earlier four-symbol relaxation target. Sharper negative relaxation targets
+remain at five and six symbols; they are construction targets, not crossings.
+Run `make verify-cell-minor-caps`.
+
 The [nonresonant Boolean filter theorem](research/nonresonant-boolean-filter-floor.md)
 excludes arbitrary nonhomogeneous Boolean supports in the stated two-power
 family outside a finite resonant window. A separate [affine tile construction](research/affine-boolean-filter-tiles.md)
