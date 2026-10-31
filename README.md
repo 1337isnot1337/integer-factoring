@@ -1161,7 +1161,7 @@ The current ordinary-proof campaign establishes these scoped results:
 | Scope | Result and evidence |
 | --- | --- |
 | Bare ungauged local Smith profiles, every field and degree, fixed auxiliaries | [Degree budgets](research/all-degree-small-alphabet-smith-floor.md) and [shared minors](research/shared-minor-smith-floor.md) exclude a half-rate improvement through six letters. |
-| The same certificate on 7 through 10 letters | An [exact entropy dual](research/leading-rank-entropy-floor.md) forces exactly one minimum-order channel in each cut for any potential improvement. |
+| The same certificate on 7 through 12 letters | [Box-minor Kronecker budgets](research/bare-seven-to-twelve-letters.md) exclude a half-rate improvement through twelve letters; at 13 letters an exact profile satisfies every box budget and adjugate inequality proved there, so the criterion remains open. |
 | Scalar paths with a monomial column determinant | [Inverse-degree compatibility](research/inverse-degree-crossing-compatibility.md) rules out the formal seven-letter optimum at every integer ramification. |
 | Polynomial inverse paths on 7 through 10 letters | [Inverse-degree aspect bounds](research/inverse-degree-aspect-bounds.md) cap the useful degree; they also exclude all `2^31` binary level-weight assignments of the fixed nine-letter flag. |
 | Noncommuting quadratic-inverse constructions | A [general two-jet tradeoff and complete nine-letter schedule](research/nine-letter-quadratic-inverse-probe.md) show why suppressing order one alone fails; all 31 tested level choices are excluded at every scale. Other pencils remain open. |
