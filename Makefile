@@ -324,3 +324,7 @@ verify-frozen-core-complete:
 .PHONY: verify-reflection-compression
 verify-reflection-compression:
 	python3 tools/check_reflection_dual_rail_compression.py
+
+.PHONY: verify-coupled-synthesis
+verify-coupled-synthesis:
+	python3 tools/check_coupled_filter_linear_synthesis.py

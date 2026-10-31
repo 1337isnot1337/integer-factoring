@@ -125,6 +125,9 @@ def main():
         'prime': p, 'n': n, 'ramification': ramification, 'geometry': args.geometry,
         'rho': '1/sqrt(2)', 'evaluation_scale': 't=P*log(s)',
         'candidate_count': len(candidates), 'scale_grid': scales, 'charge_grid': charges,
+        'refinement_bounds': {'log_scale': [-log(n) - 5, log(4)],
+                              'charge': [1 - 2 * n, 2 * n]},
+        'gain_detection_tolerance': 1e-9,
         'rows': rows,
     }
     best = float('inf')
@@ -158,13 +161,23 @@ def main():
                              bounds=[(-log(n) - 5, log(4)), (1 - 2 * n, 2 * n)],
                              options={'maxiter': 250, 'xatol': 1e-8, 'fatol': 1e-10})
         row['refined'] = {'critical_pressure': float(optimized.fun),
-                          'scale': exp(float(optimized.x[0])), 'charge': float(optimized.x[1])}
+                          'scale': exp(float(optimized.x[0])), 'charge': float(optimized.x[1]),
+                          'relative_log_cost': evaluate(*optimized.x, relative=True),
+                          'scale_at_search_boundary': bool(
+                              abs(optimized.x[0] - log(4)) < 1e-6
+                              or abs(optimized.x[0] + log(n) + 5) < 1e-6)}
         print('REFINED', row['exponents'], row['refined'], flush=True)
     result['elapsed_seconds'] = monotonic() - started
     result['completed_count'] = len(rows)
     result['minimum_sampled_relative_log_cost'] = min(row['relative_grid'][0] for row in rows)
     result['minimum_refined_critical_pressure'] = min(
         (row['refined']['critical_pressure'] for row in rows if 'refined' in row), default=None)
+    result['same_gauge_gain_below_tolerance'] = any(
+        row['relative_grid'][0] < -1e-9
+        or row.get('refined', {}).get('relative_log_cost', 0) < -1e-9 for row in rows)
+    result['negative_critical_pressure_found'] = any(
+        row['critical_grid'][0] < -1e-9
+        or row.get('refined', {}).get('critical_pressure', 0) < -1e-9 for row in rows)
     args.output.write_text(json.dumps(result, indent=2) + '\n')
     print('DONE', len(rows), result['elapsed_seconds'], flush=True)
 
