@@ -60,6 +60,7 @@ make verify-type-pressure # Exact common-type optimization and physical gauges
 make verify-crossing-interpolation # Exact synthesis with prescribed local row lattices
 make verify-smith-oracle # Exact weighted profiles and the scoped sparse entropy dual
 make verify-native-smith # Optional compiled F4 search controls; needs a C++17 compiler
+make verify-native-rectangular # Optional rectangular paired-type search controls
 make verify-controlled-smith # Controlled monomial crossings and the qutrit control
 make verify-sparse-holonomy # Exact singleton profiles and Gaussian entry identities
 make verify-charge-pruning # One-sided charge changes and typed Gaussian block bounds
@@ -212,10 +213,17 @@ The [two-output extension](research/two-parameter-even-core.md) classifies
 its Gaussian members exactly: the coordinate axes and one exceptional
 parameter point. An explicit eight-edge factorization identifies that
 point, so numerical improvements near it can be interpreted correctly.
+The [four-boundary extension](research/four-parameter-even-core.md)
+classifies the larger Gaussian set as well. Every Gaussian member with
+all four parameters nonzero is a scalar multiple of that same exceptional
+tensor; non-Gaussian parameter searches can exclude this repeated family.
 The [optional native F4 search engine](research/native-weighted-smith-f4.md)
 provides exact field arithmetic, support-block decomposition, weighted
 profiles, and pressure gradients. Its finite controls use an independent
 rational oracle. Floating search results still require exact certificates.
+An [optional rectangular engine](research/native-rectangular-smith-search.md)
+handles unequal alphabets and independent paired types with the same
+explicit denominator bookkeeping and exact rational controls.
 For this Gaussian seed, [generic mode blocks](research/typed-gaussian-generic-blocks.md)
 force cost `Omega(D^2)` when all nonvacuum occupations stay fixed, even
 after arbitrary coefficient recombinations. Growing occupation densities

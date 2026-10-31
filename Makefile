@@ -74,6 +74,7 @@ verify-crossing-interpolation:
 	python3 tools/check_paired_type_crossing_pressure.py
 	python3 tools/check_two_parameter_even_core.py
 	python3 tools/check_rectangular_residual_repair.py
+	python3 tools/check_four_parameter_even_core.py
 
 verify-smith-oracle:
 	python3 tools/check_weighted_smith_oracle.py
@@ -82,6 +83,10 @@ verify-smith-oracle:
 .PHONY: verify-native-smith
 verify-native-smith:
 	python3 tools/check_native_weighted_smith_f4.py
+
+.PHONY: verify-native-rectangular
+verify-native-rectangular:
+	python3 tools/check_native_rectangular_smith.py
 
 verify-controlled-smith:
 	python3 tools/check_controlled_permutation_smith.py
@@ -146,6 +151,7 @@ help:
 	  'make verify-crossing-interpolation - exact polynomial synthesis from local flags' \
 	  'make verify-smith-oracle - exact weighted Smith minima and sparse entropy dual' \
 	  'make verify-native-smith - optional compiled F4 search controls (C++17)' \
+	  'make verify-native-rectangular - optional rectangular paired-type controls (C++17)' \
 	  'make verify-controlled-smith - controlled monomial and qutrit crossings' \
 	  'make verify-sparse-holonomy - sparse Smith profiles and Gaussian identities' \
 	  'make verify-charge-pruning - one-sided charges and typed Gaussian block bounds' \
