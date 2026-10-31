@@ -1,0 +1,18 @@
+{
+  "scope": "Exact rational gcd identity and dense finite reference; no compressed gcd algorithm.",
+  "seed": 20261033,
+  "random_rectangle_checks": 1024,
+  "complete_input_range": [
+    2,
+    256
+  ],
+  "dyadic_factor_boxes": 688,
+  "orbit_boundary_recurrence_controls": 256,
+  "small_prime_false_common_root_control": {
+    "number": 35,
+    "prime": 3,
+    "x": 2,
+    "y": 4
+  },
+  "unresolved": "Uniform deterministic elimination from binary interval endpoints without expanding input products."
+}

@@ -142,6 +142,53 @@ reciprocal coordinate `1/L_k(z)=1/z+2^s*k`; the interval condition on
 the output then returns to an incomplete inverse-graph intersection.
 The complete-group identity proves no bound for that restriction.
 
+### Direct grouping fails at shallow depths
+
+There is a precise restriction on grouping the actual sections by
+membership in the uniform families above. Put `B=2^s` and let the
+remaining precision be `Q=2^r`, with `r>=s+2`. For distinct odd low
+roots `0<a,b<B`, the formal derivatives of their section maps at a common
+input `t` satisfy
+
+```math
+v_2(F'_a(t)-F'_b(t))
+=v_2(a-b)+v_2(a+b+2Bt)
+=v_2(a-b)+v_2(a+b)\le s+1<r.                    \tag{6}
+```
+
+Here `F'_a(t)=-N/(a+Bt)^2 mod Q`. The denominators and `N` are odd.
+Since `0<a+b<2B` and `2Bt` is divisible by `2^(s+1)`, the second
+valuation is unchanged by `t`. Of `a-b,a+b`, exactly one has valuation
+one and the other has valuation at most `s`; this proves the bound.
+Thus the formal derivatives differ at **every** common input.
+
+In contrast, all maps `alpha*L_k(beta*t+gamma)+delta` with the same
+odd affine parameters agree in value and derivative at
+`t=-gamma/beta mod Q`: the value is `delta` and the derivative is
+`alpha*beta`, independently of `k`. Consequently no two actual
+sections can belong to one such family as rational transformations
+modulo `Q` when `r>=s+2`.
+
+There is a small distinction if membership means only equality of the
+induced permutation functions. Different rational transformations can
+induce the same function modulo `2^r`. A transformation inducing the
+identity, normalized as `(At+H)/(Ct+1)`, has `H=0` from input zero,
+`A=1+C` from input one, and `2C=0 mod 2^r` from input two. Its
+derivative is therefore one modulo `2^(r-1)`. Composing with an
+inverse shows that equal permutation functions have derivatives
+congruent modulo `2^(r-1)`. Thus the functional membership exclusion
+holds with the safe threshold **`r>=s+3`**, because (6) then has
+valuation strictly smaller than `r-1`. No functional exclusion at
+the boundary `r=s+2` is asserted.
+
+This excludes direct membership grouping at these depths. It does
+not exclude linear combinations of orbit sums with cancellation,
+nonuniform weights, or other aggregation operators. The next search
+therefore retains the correlated root relation rather than replacing
+it by a complete uniform family. The companion inverse checker now
+tests (6) literally over complete small input ranges and all root
+pairs in its recorded cases.
+
 ## 5. Exact evidence and replay
 
 ```sh

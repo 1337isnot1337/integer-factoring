@@ -16,7 +16,8 @@ from dyadic_hyperbola import (affine_interval_count, divisor_count, floor_sum,
 def check():
     counts = dict(floor_sums=0, affine_intervals=0, inverse_fibre_entries=0,
                   rectangles=0, recursive_rectangles=0, mobius_section_entries=0,
-                  polynomial_fibre_entries=0, divisor_prefixes=0, factorizations=0)
+                  polynomial_fibre_entries=0, shallow_derivative_pairs=0,
+                  divisor_prefixes=0, factorizations=0)
     rng = random.Random(20261031)
     for modulus in range(1, 33):
         for length in range(17):
@@ -89,6 +90,23 @@ def check():
                             value = (value * t + coefficient) % high_modulus
                         assert (root + base * t) * (b + base * value) % modulus == number
                         counts['polynomial_fibre_entries'] += 1
+    for low_bits in range(2, 6):
+        base = 1 << low_bits
+        for remaining in (low_bits + 2, low_bits + 3):
+            modulus = 1 << remaining
+            for number in (1, 3, 5, 17, 31):
+                roots = list(range(1, base, 2))
+                for t in range(modulus):
+                    derivatives = [-number * pow(a + base * t, -2, modulus) % modulus
+                                   for a in roots]
+                    assert len(set(derivatives)) == len(roots)
+                    for i, a in enumerate(roots):
+                        for j in range(i):
+                            b = roots[j]
+                            difference = (derivatives[i] - derivatives[j]) % modulus
+                            expected = abs((a - b) * (a + b))
+                            assert (difference & -difference) == (expected & -expected)
+                            counts['shallow_derivative_pairs'] += 1
     for number in range(3, 1024, 2):
         for upper in range(2, isqrt(number) + 2):
             expected = sum(number % d == 0 for d in range(2, upper))
