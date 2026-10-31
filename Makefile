@@ -14,6 +14,10 @@ verify: verify-docs verify-frontier
 verify-docs:
 	python3 tools/check_docs.py
 
+.PHONY: verify-cyclic-algebra
+verify-cyclic-algebra:
+	python3 tools/check_cyclic_algebra_crossings.py
+
 .PHONY: verify-multilevel-packet
 verify-multilevel-packet:
 	python3 tools/check_multilevel_thue_morse_packet.py

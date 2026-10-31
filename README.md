@@ -91,6 +91,14 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 
 ## Current research frontier
 
+The [cyclic-algebra constructor](research/cyclic-algebra-crossings.md) permits
+dense polynomial transforms of a regular full-cycle operator, with a complete
+crossing endpoint and unchanged ideal column orders. An exact two-jet
+certificate excludes all 1,024 transforms in the first eight-letter schedule
+for the bare two-place criterion. The factoring exponent remains `1/2`.
+Run `make verify-cyclic-algebra` for independent literal matrix controls;
+the linked note gives the optional complete search replay.
+
 The [exact Gaussian fixed-type certificates](research/reflection-gaussian-fixed-type-duals.md)
 prove global minima over every independent mode gauge and positive scale
 for four explicit rational physical types, through interval length 32.
