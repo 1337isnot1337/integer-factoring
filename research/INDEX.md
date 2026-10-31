@@ -26,6 +26,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Obstructions and work beyond 1/2
 
+- [All-degree small-alphabet Smith floor](all-degree-small-alphabet-smith-floor.md): over every field and arbitrary fixed auxiliaries, bare ungauged local profiles on 2, 3 or 4 physical labels cannot improve the half-rate threshold; a sharper scalar binary parity floor holds at every degree.
 - [Complete binary quadratic catalogue](binary-quadratic-catalogue.md): all 65,536 fixed-endpoint scalar binary quadratics, 162 paired profiles, and an exact all-scale pressure floor of 256/27 for the stated ungauged cuts.
 - [Extended binary polynomial catalogues](extended-binary-polynomial-catalogues.md): all nonzero rank-one column constants in quadratics, complete parity cubics and quartics, and a separately marked million-path unrestricted cubic sample; no improved pressure.
 

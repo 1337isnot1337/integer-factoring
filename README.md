@@ -79,6 +79,8 @@ The [binary quadratic catalogue](research/binary-quadratic-catalogue.md) checks 
 
 The [extended catalogues](research/extended-binary-polynomial-catalogues.md) cover every column-rank-one binary constant tensor in quadratic paths, and all parity-preserving binary cubics and quartics. Their same sharp pressure floor is certified exactly. The quartic catalogue has 16,777,216 tensors; its independent replay checks representatives and a separate sample. Run `python3 tools/check_extended_binary_crossings.py` for the focused checks and `--full` for complete independent replay of the smaller structured catalogues.
 
+An [all-degree theorem](research/all-degree-small-alphabet-smith-floor.md) now rules out a half-rate improvement by **bare ungauged Smith profiles** for local alphabets of size 2, 3, or 4, over any field and with fixed auxiliary dimension. Its scalar binary parity specialization proves the `256/27` floor at every degree. This is a scoped certificate obstruction; larger alphabets, independent gauges and actual coefficient-rank improvements remain open. Run `python3 tools/check_all_degree_smith_floor.py` for exact threshold comparisons and finite controls.
+
 ## Contribution and attribution
 
 Start with the [contributor quickstart](docs/START_HERE.md) and
