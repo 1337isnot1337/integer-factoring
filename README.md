@@ -119,6 +119,8 @@ preserves the crossing on a restricted physical alphabet. Its column
 matrix has an exact global Smith diagonal and a constant basis change
 to smaller weighted disjointness matrices, allowing actual recombination
 ranks to be checked without inferring them from a Smith bound.
+The formulas also permit different downsets on the two crossing pairs;
+all 361 ordered three-bit downset pairs are checked exactly.
 Complete small no-adjacent-ones code experiments give no new rank-sum
 threshold. Run `make verify-downset-crossings verify-regular-code-crossings`.
 

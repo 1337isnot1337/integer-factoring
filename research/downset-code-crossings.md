@@ -245,4 +245,45 @@ the disjointness-block formula to obtain a uniform rank **upper**
 bound below the required threshold. A smaller Smith profile alone is
 insufficient, by the [universal bare criterion floor](multipoint-smith-floor.md).
 
+## 7. Different downsets on the two crossing pairs
+
+The same normal form holds for two nonempty downsets `A,B`, with
+`x,v in A` and `y,u in B`. The cut matrices both have order `|A||B|`.
+For fixed `D=x triangle u` and `a=x intersection D`, replace the fiber by
+
+```math
+L_a^{A,B}(D)=\{b\subseteq[m]\setminus D:
+ a\cup b\in A,\ (D\setminus a)\cup b\in B\}.
+```
+
+This is a downset. Columns have inside orientation `D\a` but the
+opposite code assignment `(y,v) in B cross A`; their outside fiber is
+therefore exactly the same `L_a^(A,B)(D)`. There is no assertion that
+the two row fibers at `a` and `D\a` are equal when `A!=B`.
+
+After permuting the column blocks, (2)--(4) apply unchanged. The global
+Smith orders are `|x|+|u|` for `(x,u) in A cross B`, and hence
+
+```math
+\det\operatorname{Col}(G_{A,B}(z))
+ =z^{|B|\sum_{x\in A}|x|+|A|\sum_{u\in B}|u|}.
+```
+
+Formula (6) for actual coefficient ranks also holds with these paired
+fibers. The degree is `max_(x in A,y in B)|x triangle y|`, and the
+endpoint is the rectangular crossing on `A,B,B,A`.
+
+The checker now additionally covers **all 361 ordered pairs** of
+nonempty three-bit downsets. It compares 160,000 literal entry
+polynomials, 4,670 full coefficient-rank queries, and 6,400 Smith orders.
+The earlier same-code and regular-code receipts were regenerated from
+the extended source; their numerical results are unchanged.
+
+This paired formulation permits different nonlinear encodings for the
+two crossing pairs, without replacing actual ranks by separately
+optimized fiber bounds. For example, forbidding `11` on disjoint even
+pairs in `A` and on shifted pairs in `B` gives explicit staggered codes.
+Their actual asymptotic rank cost is a new construction question, not
+settled by the normal form.
+
 This construction and its proof used substantial Codex AI assistance.
