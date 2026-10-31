@@ -1,0 +1,173 @@
+{
+  "certificates": [
+    {
+      "R": [
+        17,
+        6
+      ],
+      "mantissa_precision": 256,
+      "modes": 63,
+      "post_half_target_reached": false,
+      "pressure_ratio_interval": {
+        "binary_exponent": -256,
+        "lower_mantissa": "91411798720554672843271716610411371002252379126944061852376244181883561121192",
+        "upper_mantissa": "91411798720554672843271716610411371002252379126944061852376244181883561246311"
+      },
+      "rational_mode_probabilities": {
+        "b": 6,
+        "formula": "r^(-b*(8*i-4*(n-1))) / (1+r^(-b*(8*i-4*(n-1))))",
+        "mode_range": [
+          0,
+          62
+        ],
+        "r": [
+          177,
+          176
+        ]
+      },
+      "rho_upper": [
+        17,
+        24
+      ],
+      "root": [
+        177,
+        176
+      ],
+      "s_root_power": 17,
+      "strict_gap_lower_bound": [
+        "24380290516761522580299268398276536851017605538696502187081339826029568393625",
+        "115792089237316195423570985008687907853269984665640564039457584007913129639936"
+      ],
+      "strict_pressure_inequality": true
+    },
+    {
+      "R": [
+        99,
+        35
+      ],
+      "mantissa_precision": 256,
+      "modes": 511,
+      "post_half_target_reached": false,
+      "pressure_ratio_interval": {
+        "binary_exponent": -256,
+        "lower_mantissa": "92459539267791077138255742336599262992479138349377423934430386852049697809714",
+        "upper_mantissa": "92459539267791077138255742336599262992479138349377423934430386852049820264386"
+      },
+      "rational_mode_probabilities": {
+        "b": 35,
+        "formula": "r^(-b*(8*i-4*(n-1))) / (1+r^(-b*(8*i-4*(n-1))))",
+        "mode_range": [
+          0,
+          510
+        ],
+        "r": [
+          5756,
+          5755
+        ]
+      },
+      "rho_upper": [
+        99,
+        140
+      ],
+      "root": [
+        5756,
+        5755
+      ],
+      "s_root_power": 99,
+      "strict_gap_lower_bound": [
+        "11666274984762559142657621336044322430395423158131570052513598577931654687775",
+        "57896044618658097711785492504343953926634992332820282019728792003956564819968"
+      ],
+      "strict_pressure_inequality": true
+    },
+    {
+      "R": [
+        577,
+        204
+      ],
+      "mantissa_precision": 256,
+      "modes": 4095,
+      "post_half_target_reached": false,
+      "pressure_ratio_interval": {
+        "binary_exponent": -256,
+        "lower_mantissa": "90183605256176372723875707203610463119005035317973558425780408387994804937765",
+        "upper_mantissa": "90183605256176372723875707203610463119005035317973558425780408388146427761784"
+      },
+      "rational_mode_probabilities": {
+        "b": 204,
+        "formula": "r^(-b*(8*i-4*(n-1))) / (1+r^(-b*(8*i-4*(n-1))))",
+        "mode_range": [
+          0,
+          4094
+        ],
+        "r": [
+          204681,
+          204680
+        ]
+      },
+      "rho_upper": [
+        577,
+        816
+      ],
+      "root": [
+        204681,
+        204680
+      ],
+      "s_root_power": 577,
+      "strict_gap_lower_bound": [
+        "3201060497642477837461909725634680591783118668458375701709646952470837734769",
+        "14474011154664524427946373126085988481658748083205070504932198000989141204992"
+      ],
+      "strict_pressure_inequality": true
+    },
+    {
+      "R": [
+        3363,
+        1189
+      ],
+      "mantissa_precision": 256,
+      "modes": 16383,
+      "post_half_target_reached": false,
+      "pressure_ratio_interval": {
+        "binary_exponent": -256,
+        "lower_mantissa": "112119129685359266504209595311406165482821970962327922477073117008288196123047",
+        "upper_mantissa": "112119129685359266504209595311406165482821970962327922477073117084461552046722"
+      },
+      "rational_mode_probabilities": {
+        "b": 1189,
+        "formula": "r^(-b*(8*i-4*(n-1))) / (1+r^(-b*(8*i-4*(n-1))))",
+        "mode_range": [
+          0,
+          16382
+        ],
+        "r": [
+          4111597,
+          4111596
+        ]
+      },
+      "rho_upper": [
+        3363,
+        4756
+      ],
+      "root": [
+        4111597,
+        4111596
+      ],
+      "s_root_power": 3363,
+      "strict_gap_lower_bound": [
+        "1836479775978464459680694848640871185224006851656320781192233461725788796607",
+        "57896044618658097711785492504343953926634992332820282019728792003956564819968"
+      ],
+      "strict_pressure_inequality": true
+    }
+  ],
+  "independent_fraction_arithmetic_controls": 158,
+  "independent_unfactored_pressure_controls": 6,
+  "scope": "displayed one-species interval gauges; no improved factoring exponent",
+  "source_sha256": {
+    "tools/check_large_interval_pressure.py": "c0b4065a615f500778d0de8132f3737167fd0a11bfb70254e4fcaeb6219d4f6d",
+    "tools/check_schur_one_species_interval.py": "b146a38eebf411ede5056a315e6d92e29a60d016c3983c27e50618eb1b14b06d",
+    "tools/check_schur_pascal_complement.py": "dd56991382dcef17f870d70a41dcb251adf9e8f8ee61b4ed57a42e1e289c90fa"
+  },
+  "status": "exact finite pressure witnesses approaching one over sqrt(2) from above"
+}

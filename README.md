@@ -130,9 +130,12 @@ It improves the previous Gaussian pressure control but remains above
 `1/sqrt(2)`, so the best factoring exponent is unchanged.
 The [one-species interval family](research/schur-one-species-interval.md)
 has an exact all-size spectrum and finite product pressure. Checked
-rational witnesses reach `rho < 17/24` at 63 modes. This particular
+rational witnesses reach `rho < 3363/4756` at 16,383 modes. This particular
 formula approaches `1/sqrt(2)` from above; an analytic proof excludes
 crossing that threshold within the displayed gauges.
+The [quantitative interval theorem](research/quantitative-interval-frontier.md)
+gives the sharp gap asymptotic `(log n)^2 / (sqrt(2) pi^2 n^2)` and
+exact large witnesses using outward integer intervals.
 The [greedy Pascal-complement theorem](research/schur-pascal-complement.md)
 computes the same normalized spectrum for every finite mode set using
 binary linear algebra. It proves the interval formula at every length
