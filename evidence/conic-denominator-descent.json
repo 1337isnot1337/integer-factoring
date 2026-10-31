@@ -1,0 +1,1487 @@
+{
+  "composite_no_factor_branch_obstruction": {
+    "class_number": 24,
+    "discriminant": -1196,
+    "factoring_parameter": {
+      "content": 13,
+      "denominator": 15,
+      "linear_gcd_with_N": 13,
+      "linear_value": 13,
+      "parameter": [
+        -3,
+        2
+      ],
+      "parity_factor": 1,
+      "proper_factor": 13,
+      "raw_point": [
+        39,
+        52,
+        195
+      ],
+      "vector": [
+        3,
+        4
+      ]
+    },
+    "first_supported_denominator_in_same_root_class": 45,
+    "initial_denominator": 7,
+    "odd_n": 299,
+    "prepared_target": [
+      49,
+      -34,
+      12
+    ],
+    "recovered_other_root": [
+      15,
+      -2,
+      20
+    ],
+    "reduced_target": [
+      12,
+      10,
+      27
+    ],
+    "root": [
+      7,
+      -6,
+      44
+    ],
+    "root_difference": [
+      13,
+      0,
+      23
+    ],
+    "root_minimum_represented_value": 7,
+    "split_support": [
+      3,
+      5
+    ],
+    "support_generates_full_group": true,
+    "supported_parameter": {
+      "content": 1,
+      "denominator": 45,
+      "linear_gcd_with_N": 1,
+      "linear_value": -4,
+      "parameter": [
+        -3,
+        1
+      ],
+      "parity_factor": 1,
+      "proper_factor": null,
+      "raw_point": [
+        3,
+        -8,
+        45
+      ],
+      "recovered_root": [
+        7,
+        -6,
+        44
+      ],
+      "residual_norm_form": [
+        7,
+        34,
+        84
+      ],
+      "residual_norm_form_primitive": true,
+      "residual_norm_parameter": [
+        -3,
+        1
+      ],
+      "root_difference": [
+        1,
+        0,
+        299
+      ],
+      "vector": [
+        3,
+        -8
+      ]
+    }
+  },
+  "content_case_examples": {
+    "1": {
+      "odd_n": 3,
+      "point": {
+        "content": 1,
+        "denominator": 37,
+        "linear_gcd_with_N": 1,
+        "linear_value": -5,
+        "parameter": [
+          -5,
+          2
+        ],
+        "parity_factor": 1,
+        "proper_factor": null,
+        "raw_point": [
+          -13,
+          -20,
+          37
+        ],
+        "recovered_root": [
+          1,
+          0,
+          3
+        ],
+        "residual_norm_form": [
+          1,
+          0,
+          3
+        ],
+        "residual_norm_form_primitive": true,
+        "residual_norm_parameter": [
+          -5,
+          2
+        ],
+        "root_difference": [
+          1,
+          0,
+          3
+        ],
+        "vector": [
+          -13,
+          -20
+        ]
+      },
+      "root": [
+        1,
+        0,
+        3
+      ],
+      "target": [
+        1,
+        0,
+        3
+      ]
+    },
+    "2*1": {
+      "odd_n": 3,
+      "point": {
+        "content": 2,
+        "denominator": 14,
+        "linear_gcd_with_N": 1,
+        "linear_value": -5,
+        "parameter": [
+          -5,
+          1
+        ],
+        "parity_factor": 2,
+        "proper_factor": null,
+        "raw_point": [
+          -22,
+          -10,
+          28
+        ],
+        "residual_norm_form": [
+          2,
+          2,
+          2
+        ],
+        "residual_norm_form_primitive": false,
+        "residual_norm_parameter": [
+          -3,
+          1
+        ],
+        "vector": [
+          -11,
+          -5
+        ]
+      },
+      "root": [
+        1,
+        0,
+        3
+      ],
+      "target": [
+        1,
+        0,
+        3
+      ]
+    },
+    "2*N": {
+      "odd_n": 3,
+      "point": {
+        "content": 6,
+        "denominator": 2,
+        "linear_gcd_with_N": 3,
+        "linear_value": -3,
+        "parameter": [
+          -3,
+          1
+        ],
+        "parity_factor": 2,
+        "proper_factor": null,
+        "raw_point": [
+          -6,
+          -6,
+          12
+        ],
+        "residual_norm_form": [
+          6,
+          6,
+          2
+        ],
+        "residual_norm_form_primitive": false,
+        "residual_norm_parameter": [
+          -1,
+          1
+        ],
+        "vector": [
+          -1,
+          -1
+        ]
+      },
+      "root": [
+        1,
+        0,
+        3
+      ],
+      "target": [
+        1,
+        0,
+        3
+      ]
+    },
+    "N": {
+      "odd_n": 3,
+      "point": {
+        "content": 3,
+        "denominator": 7,
+        "linear_gcd_with_N": 3,
+        "linear_value": -3,
+        "parameter": [
+          -3,
+          2
+        ],
+        "parity_factor": 1,
+        "proper_factor": null,
+        "raw_point": [
+          3,
+          -12,
+          21
+        ],
+        "recovered_root": [
+          1,
+          0,
+          3
+        ],
+        "residual_norm_form": [
+          3,
+          0,
+          1
+        ],
+        "residual_norm_form_primitive": true,
+        "residual_norm_parameter": [
+          -1,
+          2
+        ],
+        "root_difference": [
+          1,
+          0,
+          3
+        ],
+        "vector": [
+          1,
+          -4
+        ]
+      },
+      "root": [
+        1,
+        0,
+        3
+      ],
+      "target": [
+        1,
+        0,
+        3
+      ]
+    }
+  },
+  "content_cases": {
+    "1": 20833,
+    "2*1": 10313,
+    "2*N": 225,
+    "N": 289,
+    "proper_factor": 4092
+  },
+  "monotone_descent_obstruction": {
+    "class_number": 5,
+    "discriminant": -188,
+    "first_supported_denominator": 9,
+    "initial_denominator": 7,
+    "odd_n": 47,
+    "prepared_target": [
+      49,
+      20,
+      3
+    ],
+    "reduced_supported_vector": [
+      5,
+      1
+    ],
+    "reduced_target": [
+      3,
+      -2,
+      16
+    ],
+    "root": [
+      7,
+      6,
+      8
+    ],
+    "root_minimum_represented_value": 7,
+    "split_support": [
+      3
+    ],
+    "support_generates_full_group": true,
+    "supported_parameter": {
+      "content": 1,
+      "denominator": 9,
+      "linear_gcd_with_N": 1,
+      "linear_value": 4,
+      "parameter": [
+        2,
+        1
+      ],
+      "parity_factor": 1,
+      "proper_factor": null,
+      "raw_point": [
+        -1,
+        8,
+        9
+      ],
+      "recovered_root": [
+        7,
+        6,
+        8
+      ],
+      "residual_norm_form": [
+        7,
+        -20,
+        21
+      ],
+      "residual_norm_form_primitive": true,
+      "residual_norm_parameter": [
+        2,
+        1
+      ],
+      "root_difference": [
+        1,
+        0,
+        47
+      ],
+      "vector": [
+        -1,
+        8
+      ]
+    }
+  },
+  "odd_discriminants_checked": 127,
+  "parameter_stencil_size": 41,
+  "records": [
+    {
+      "even_imprimitive_residuals": 14,
+      "odd_n": 3,
+      "parameter_points": 41,
+      "prepared_roots": 1,
+      "root_forms": 1,
+      "unramified_root_recoveries": 27
+    },
+    {
+      "odd_n": 5,
+      "parameter_points": 82,
+      "prepared_roots": 2,
+      "root_forms": 2,
+      "unramified_root_recoveries": 82
+    },
+    {
+      "even_imprimitive_residuals": 14,
+      "odd_n": 7,
+      "parameter_points": 41,
+      "prepared_roots": 1,
+      "root_forms": 1,
+      "unramified_root_recoveries": 27
+    },
+    {
+      "linear_gcd_factors": 16,
+      "odd_n": 9,
+      "parameter_points": 82,
+      "prepared_roots": 2,
+      "root_forms": 2,
+      "unramified_root_recoveries": 66
+    },
+    {
+      "even_imprimitive_residuals": 42,
+      "odd_n": 11,
+      "parameter_points": 123,
+      "prepared_roots": 3,
+      "root_forms": 3,
+      "unramified_root_recoveries": 81
+    },
+    {
+      "odd_n": 13,
+      "parameter_points": 82,
+      "prepared_roots": 2,
+      "root_forms": 2,
+      "unramified_root_recoveries": 82
+    },
+    {
+      "even_imprimitive_residuals": 6,
+      "initial_gcd_factors": 1,
+      "linear_gcd_factors": 16,
+      "odd_n": 15,
+      "parameter_points": 41,
+      "prepared_roots": 1,
+      "root_forms": 2,
+      "unramified_root_recoveries": 19
+    },
+    {
+      "odd_n": 17,
+      "parameter_points": 164,
+      "prepared_roots": 4,
+      "root_forms": 4,
+      "unramified_root_recoveries": 164
+    },
+    {
+      "even_imprimitive_residuals": 40,
+      "odd_n": 19,
+      "parameter_points": 123,
+      "prepared_roots": 3,
+      "root_forms": 3,
+      "unramified_root_recoveries": 83
+    },
+    {
+      "initial_gcd_factors": 1,
+      "linear_gcd_factors": 34,
+      "odd_n": 21,
+      "parameter_points": 123,
+      "prepared_roots": 3,
+      "root_forms": 4,
+      "unramified_root_recoveries": 89
+    },
+    {
+      "even_imprimitive_residuals": 42,
+      "odd_n": 23,
+      "parameter_points": 123,
+      "prepared_roots": 3,
+      "root_forms": 3,
+      "unramified_root_recoveries": 81
+    },
+    {
+      "linear_gcd_factors": 12,
+      "odd_n": 25,
+      "parameter_points": 82,
+      "prepared_roots": 2,
+      "root_forms": 2,
+      "unramified_root_recoveries": 70
+    },
+    {
+      "even_imprimitive_residuals": 30,
+      "linear_gcd_factors": 28,
+      "odd_n": 27,
+      "parameter_points": 123,
+      "prepared_roots": 3,
+      "root_forms": 3,
+      "unramified_root_recoveries": 65
+    },
+    {
+      "odd_n": 29,
+      "parameter_points": 246,
+      "prepared_roots": 6,
+      "root_forms": 6,
+      "unramified_root_recoveries": 246
+    },
+    {
+      "even_imprimitive_residuals": 42,
+      "odd_n": 31,
+      "parameter_points": 123,
+      "prepared_roots": 3,
+      "root_forms": 3,
+      "unramified_root_recoveries": 81
+    },
+    {
+      "initial_gcd_factors": 1,
+      "linear_gcd_factors": 30,
+      "odd_n": 33,
+      "parameter_points": 123,
+      "prepared_roots": 3,
+      "root_forms": 4,
+      "unramified_root_recoveries": 93
+    },
+    {
+      "even_imprimitive_residuals": 50,
+      "initial_gcd_factors": 1,
+      "linear_gcd_factors": 52,
+      "odd_n": 35,
+      "parameter_points": 205,
+      "prepared_roots": 5,
+      "root_forms": 6,
+      "unramified_root_recoveries": 103
+    },
+    {
+      "odd_n": 37,
+      "parameter_points": 82,
+      "prepared_roots": 2,
+      "root_forms": 2,
+      "unramified_root_recoveries": 82
+    },
+    {
+      "even_imprimitive_residuals": 28,
+      "initial_gcd_factors": 1,
+      "linear_gcd_factors": 30,
+      "odd_n": 39,
+      "parameter_points": 123,
+      "prepared_roots": 3,
+      "root_forms": 4,
+      "unramified_root_recoveries": 65
+    },
+    {
+      "odd_n": 41,
+      "parameter_points": 328,
+      "prepared_roots": 8,
+      "root_forms": 8,
+      "unramified_root_recoveries": 328
+    },
+    {
+      "even_imprimitive_residuals": 40,
+      "odd_n": 43,
+      "parameter_points": 123,
+      "prepared_roots": 3,
+      "root_forms": 3,
+      "unramified_root_recoveries": 83
+    },
+    {
+      "initial_gcd_factors": 1,
+      "linear_gcd_factors": 44,
+      "odd_n": 45,
+      "parameter_points": 123,
+      "prepared_roots": 3,
+      "root_forms": 4,
+      "unramified_root_recoveries": 79
+    },
+    {
+      "even_imprimitive_residuals": 70,
+      "odd_n": 47,
+      "parameter_points": 205,
+      "prepared_roots": 5,
+      "root_forms": 5,
+      "unramified_root_recoveries": 135
+    },
+    {
+      "linear_gcd_factors": 16,
+      "odd_n": 49,
+      "parameter_points": 164,
+      "prepared_roots": 4,
+      "root_forms": 4,
+      "unramified_root_recoveries": 148
+    },
+    {
+      "even_imprimitive_residuals": 46,
+      "initial_gcd_factors": 1,
+      "linear_gcd_factors": 52,
+      "odd_n": 51,
+      "parameter_points": 205,
+      "prepared_roots": 5,
+      "root_forms": 6,
+      "unramified_root_recoveries": 107
+    },
+    {
+      "odd_n": 53,
+      "parameter_points": 246,
+      "prepared_roots": 6,
+      "root_forms": 6,
+      "unramified_root_recoveries": 246
+    },
+    {
+      "even_imprimitive_residuals": 36,
+      "initial_gcd_factors": 1,
+      "linear_gcd_factors": 20,
+      "odd_n": 55,
+      "parameter_points": 123,
+      "prepared_roots": 3,
+      "root_forms": 4,
+      "unramified_root_recoveries": 67
+    },
+    {
+      "initial_gcd_factors": 1,
+      "linear_gcd_factors": 30,
+      "odd_n": 57,
+      "parameter_points": 123,
+      "prepared_roots": 3,
+      "root_forms": 4,
+      "unramified_root_recoveries": 93
+    },
+    {
+      "even_imprimitive_residuals": 122,
+      "odd_n": 59,
+      "parameter_points": 369,
+      "prepared_roots": 9,
+      "root_forms": 9,
+      "unramified_root_recoveries": 247
+    },
+    {
+      "odd_n": 61,
+      "parameter_points": 246,
+      "prepared_roots": 6,
+      "root_forms": 6,
+      "unramified_root_recoveries": 246
+    },
+    {
+      "even_imprimitive_residuals": 10,
+      "initial_gcd_factors": 3,
+      "linear_gcd_factors": 8,
+      "odd_n": 63,
+      "parameter_points": 41,
+      "prepared_roots": 1,
+      "root_forms": 4,
+      "unramified_root_recoveries": 23
+    },
+    {
+      "initial_gcd_factors": 1,
+      "linear_gcd_factors": 50,
+      "odd_n": 65,
+      "parameter_points": 287,
+      "prepared_roots": 7,
+      "root_forms": 8,
+      "unramified_root_recoveries": 237
+    },
+    {
+      "even_imprimitive_residuals": 40,
+      "odd_n": 67,
+      "parameter_points": 123,
+      "prepared_roots": 3,
+      "root_forms": 3,
+      "unramified_root_recoveries": 83
+    },
+    {
+      "initial_gcd_factors": 1,
+      "linear_gcd_factors": 70,
+      "odd_n": 69,
+      "parameter_points": 287,
+      "prepared_roots": 7,
+      "root_forms": 8,
+      "unramified_root_recoveries": 217
+    },
+    {
+      "even_imprimitive_residuals": 94,
+      "odd_n": 71,
+      "parameter_points": 287,
+      "prepared_roots": 7,
+      "root_forms": 7,
+      "unramified_root_recoveries": 193
+    },
+    {
+      "odd_n": 73,
+      "parameter_points": 164,
+      "prepared_roots": 4,
+      "root_forms": 4,
+      "unramified_root_recoveries": 164
+    },
+    {
+      "even_imprimitive_residuals": 38,
+      "initial_gcd_factors": 1,
+      "linear_gcd_factors": 78,
+      "odd_n": 75,
+      "parameter_points": 205,
+      "prepared_roots": 5,
+      "root_forms": 6,
+      "unramified_root_recoveries": 89
+    },
+    {
+      "initial_gcd_factors": 1,
+      "linear_gcd_factors": 50,
+      "odd_n": 77,
+      "parameter_points": 287,
+      "prepared_roots": 7,
+      "root_forms": 8,
+      "unramified_root_recoveries": 237
+    },
+    {
+      "even_imprimitive_residuals": 68,
+      "odd_n": 79,
+      "parameter_points": 205,
+      "prepared_roots": 5,
+      "root_forms": 5,
+      "unramified_root_recoveries": 137
+    },
+    {
+      "initial_gcd_factors": 2,
+      "linear_gcd_factors": 36,
+      "odd_n": 81,
+      "parameter_points": 164,
+      "prepared_roots": 4,
+      "root_forms": 6,
+      "unramified_root_recoveries": 128
+    },
+    {
+      "even_imprimitive_residuals": 124,
+      "odd_n": 83,
+      "parameter_points": 369,
+      "prepared_roots": 9,
+      "root_forms": 9,
+      "unramified_root_recoveries": 245
+    },
+    {
+      "initial_gcd_factors": 1,
+      "linear_gcd_factors": 18,
+      "odd_n": 85,
+      "parameter_points": 123,
+      "prepared_roots": 3,
+      "root_forms": 4,
+      "unramified_root_recoveries": 105
+    },
+    {
+      "even_imprimitive_residuals": 54,
+      "initial_gcd_factors": 1,
+      "linear_gcd_factors": 50,
+      "odd_n": 87,
+      "parameter_points": 205,
+      "prepared_roots": 5,
+      "root_forms": 6,
+      "unramified_root_recoveries": 101
+    },
+    {
+      "odd_n": 89,
+      "parameter_points": 492,
+      "prepared_roots": 12,
+      "root_forms": 12,
+      "unramified_root_recoveries": 492
+    },
+    {
+      "even_imprimitive_residuals": 58,
+      "initial_gcd_factors": 1,
+      "linear_gcd_factors": 32,
+      "odd_n": 91,
+      "parameter_points": 205,
+      "prepared_roots": 5,
+      "root_forms": 6,
+      "unramified_root_recoveries": 115
+    },
+    {
+      "initial_gcd_factors": 1,
+      "linear_gcd_factors": 30,
+      "odd_n": 93,
+      "parameter_points": 123,
+      "prepared_roots": 3,
+      "root_forms": 4,
+      "unramified_root_recoveries": 93
+    },
+    {
+      "even_imprimitive_residuals": 82,
+      "initial_gcd_factors": 1,
+      "linear_gcd_factors": 50,
+      "odd_n": 95,
+      "parameter_points": 287,
+      "prepared_roots": 7,
+      "root_forms": 8,
+      "unramified_root_recoveries": 155
+    },
+    {
+      "odd_n": 97,
+      "parameter_points": 164,
+      "prepared_roots": 4,
+      "root_forms": 4,
+      "unramified_root_recoveries": 164
+    },
+    {
+      "even_imprimitive_residuals": 46,
+      "initial_gcd_factors": 1,
+      "linear_gcd_factors": 60,
+      "odd_n": 99,
+      "parameter_points": 205,
+      "prepared_roots": 5,
+      "root_forms": 6,
+      "unramified_root_recoveries": 99
+    },
+    {
+      "odd_n": 101,
+      "parameter_points": 574,
+      "prepared_roots": 14,
+      "root_forms": 14,
+      "unramified_root_recoveries": 574
+    },
+    {
+      "even_imprimitive_residuals": 66,
+      "odd_n": 103,
+      "parameter_points": 205,
+      "prepared_roots": 5,
+      "root_forms": 5,
+      "unramified_root_recoveries": 139
+    },
+    {
+      "initial_gcd_factors": 3,
+      "linear_gcd_factors": 86,
+      "odd_n": 105,
+      "parameter_points": 205,
+      "prepared_roots": 5,
+      "root_forms": 8,
+      "unramified_root_recoveries": 119
+    },
+    {
+      "even_imprimitive_residuals": 122,
+      "odd_n": 107,
+      "parameter_points": 369,
+      "prepared_roots": 9,
+      "root_forms": 9,
+      "unramified_root_recoveries": 247
+    },
+    {
+      "odd_n": 109,
+      "parameter_points": 246,
+      "prepared_roots": 6,
+      "root_forms": 6,
+      "unramified_root_recoveries": 246
+    },
+    {
+      "even_imprimitive_residuals": 50,
+      "initial_gcd_factors": 3,
+      "linear_gcd_factors": 52,
+      "odd_n": 111,
+      "parameter_points": 205,
+      "prepared_roots": 5,
+      "root_forms": 8,
+      "unramified_root_recoveries": 103
+    },
+    {
+      "odd_n": 113,
+      "parameter_points": 328,
+      "prepared_roots": 8,
+      "root_forms": 8,
+      "unramified_root_recoveries": 328
+    },
+    {
+      "even_imprimitive_residuals": 54,
+      "initial_gcd_factors": 1,
+      "linear_gcd_factors": 32,
+      "odd_n": 115,
+      "parameter_points": 205,
+      "prepared_roots": 5,
+      "root_forms": 6,
+      "unramified_root_recoveries": 119
+    },
+    {
+      "initial_gcd_factors": 3,
+      "linear_gcd_factors": 54,
+      "odd_n": 117,
+      "parameter_points": 205,
+      "prepared_roots": 5,
+      "root_forms": 8,
+      "unramified_root_recoveries": 151
+    },
+    {
+      "even_imprimitive_residuals": 102,
+      "initial_gcd_factors": 1,
+      "linear_gcd_factors": 58,
+      "odd_n": 119,
+      "parameter_points": 369,
+      "prepared_roots": 9,
+      "root_forms": 10,
+      "unramified_root_recoveries": 209
+    },
+    {
+      "linear_gcd_factors": 10,
+      "odd_n": 121,
+      "parameter_points": 246,
+      "prepared_roots": 6,
+      "root_forms": 6,
+      "unramified_root_recoveries": 236
+    },
+    {
+      "even_imprimitive_residuals": 46,
+      "initial_gcd_factors": 1,
+      "linear_gcd_factors": 52,
+      "odd_n": 123,
+      "parameter_points": 205,
+      "prepared_roots": 5,
+      "root_forms": 6,
+      "unramified_root_recoveries": 107
+    },
+    {
+      "linear_gcd_factors": 52,
+      "odd_n": 125,
+      "parameter_points": 410,
+      "prepared_roots": 10,
+      "root_forms": 10,
+      "unramified_root_recoveries": 358
+    },
+    {
+      "even_imprimitive_residuals": 68,
+      "odd_n": 127,
+      "parameter_points": 205,
+      "prepared_roots": 5,
+      "root_forms": 5,
+      "unramified_root_recoveries": 137
+    },
+    {
+      "initial_gcd_factors": 1,
+      "linear_gcd_factors": 122,
+      "odd_n": 129,
+      "parameter_points": 451,
+      "prepared_roots": 11,
+      "root_forms": 12,
+      "unramified_root_recoveries": 329
+    },
+    {
+      "even_imprimitive_residuals": 204,
+      "odd_n": 131,
+      "parameter_points": 615,
+      "prepared_roots": 15,
+      "root_forms": 15,
+      "unramified_root_recoveries": 411
+    },
+    {
+      "initial_gcd_factors": 1,
+      "linear_gcd_factors": 10,
+      "odd_n": 133,
+      "parameter_points": 123,
+      "prepared_roots": 3,
+      "root_forms": 4,
+      "unramified_root_recoveries": 113
+    },
+    {
+      "even_imprimitive_residuals": 24,
+      "initial_gcd_factors": 3,
+      "linear_gcd_factors": 42,
+      "odd_n": 135,
+      "parameter_points": 123,
+      "prepared_roots": 3,
+      "root_forms": 6,
+      "unramified_root_recoveries": 57
+    },
+    {
+      "odd_n": 137,
+      "parameter_points": 328,
+      "prepared_roots": 8,
+      "root_forms": 8,
+      "unramified_root_recoveries": 328
+    },
+    {
+      "even_imprimitive_residuals": 122,
+      "odd_n": 139,
+      "parameter_points": 369,
+      "prepared_roots": 9,
+      "root_forms": 9,
+      "unramified_root_recoveries": 247
+    },
+    {
+      "initial_gcd_factors": 3,
+      "linear_gcd_factors": 46,
+      "odd_n": 141,
+      "parameter_points": 205,
+      "prepared_roots": 5,
+      "root_forms": 8,
+      "unramified_root_recoveries": 159
+    },
+    {
+      "even_imprimitive_residuals": 102,
+      "initial_gcd_factors": 1,
+      "linear_gcd_factors": 58,
+      "odd_n": 143,
+      "parameter_points": 369,
+      "prepared_roots": 9,
+      "root_forms": 10,
+      "unramified_root_recoveries": 209
+    },
+    {
+      "initial_gcd_factors": 1,
+      "linear_gcd_factors": 54,
+      "odd_n": 145,
+      "parameter_points": 287,
+      "prepared_roots": 7,
+      "root_forms": 8,
+      "unramified_root_recoveries": 233
+    },
+    {
+      "even_imprimitive_residuals": 44,
+      "initial_gcd_factors": 1,
+      "linear_gcd_factors": 70,
+      "odd_n": 147,
+      "parameter_points": 205,
+      "prepared_roots": 5,
+      "root_forms": 6,
+      "unramified_root_recoveries": 91
+    },
+    {
+      "odd_n": 149,
+      "parameter_points": 574,
+      "prepared_roots": 14,
+      "root_forms": 14,
+      "unramified_root_recoveries": 574
+    },
+    {
+      "even_imprimitive_residuals": 94,
+      "odd_n": 151,
+      "parameter_points": 287,
+      "prepared_roots": 7,
+      "root_forms": 7,
+      "unramified_root_recoveries": 193
+    },
+    {
+      "initial_gcd_factors": 1,
+      "linear_gcd_factors": 72,
+      "odd_n": 153,
+      "parameter_points": 287,
+      "prepared_roots": 7,
+      "root_forms": 8,
+      "unramified_root_recoveries": 215
+    },
+    {
+      "even_imprimitive_residuals": 100,
+      "initial_gcd_factors": 3,
+      "linear_gcd_factors": 56,
+      "odd_n": 155,
+      "parameter_points": 369,
+      "prepared_roots": 9,
+      "root_forms": 12,
+      "unramified_root_recoveries": 213
+    },
+    {
+      "odd_n": 157,
+      "parameter_points": 246,
+      "prepared_roots": 6,
+      "root_forms": 6,
+      "unramified_root_recoveries": 246
+    },
+    {
+      "even_imprimitive_residuals": 74,
+      "initial_gcd_factors": 3,
+      "linear_gcd_factors": 72,
+      "odd_n": 159,
+      "parameter_points": 287,
+      "prepared_roots": 7,
+      "root_forms": 10,
+      "unramified_root_recoveries": 141
+    },
+    {
+      "initial_gcd_factors": 1,
+      "linear_gcd_factors": 106,
+      "odd_n": 161,
+      "parameter_points": 615,
+      "prepared_roots": 15,
+      "root_forms": 16,
+      "unramified_root_recoveries": 509
+    },
+    {
+      "even_imprimitive_residuals": 40,
+      "odd_n": 163,
+      "parameter_points": 123,
+      "prepared_roots": 3,
+      "root_forms": 3,
+      "unramified_root_recoveries": 83
+    },
+    {
+      "initial_gcd_factors": 3,
+      "linear_gcd_factors": 74,
+      "odd_n": 165,
+      "parameter_points": 205,
+      "prepared_roots": 5,
+      "root_forms": 8,
+      "unramified_root_recoveries": 131
+    },
+    {
+      "even_imprimitive_residuals": 150,
+      "odd_n": 167,
+      "parameter_points": 451,
+      "prepared_roots": 11,
+      "root_forms": 11,
+      "unramified_root_recoveries": 301
+    },
+    {
+      "linear_gcd_factors": 12,
+      "odd_n": 169,
+      "parameter_points": 246,
+      "prepared_roots": 6,
+      "root_forms": 6,
+      "unramified_root_recoveries": 234
+    },
+    {
+      "even_imprimitive_residuals": 86,
+      "initial_gcd_factors": 3,
+      "linear_gcd_factors": 104,
+      "odd_n": 171,
+      "parameter_points": 369,
+      "prepared_roots": 9,
+      "root_forms": 12,
+      "unramified_root_recoveries": 179
+    },
+    {
+      "odd_n": 173,
+      "parameter_points": 574,
+      "prepared_roots": 14,
+      "root_forms": 14,
+      "unramified_root_recoveries": 574
+    },
+    {
+      "even_imprimitive_residuals": 48,
+      "initial_gcd_factors": 1,
+      "linear_gcd_factors": 54,
+      "odd_n": 175,
+      "parameter_points": 205,
+      "prepared_roots": 5,
+      "root_forms": 6,
+      "unramified_root_recoveries": 103
+    },
+    {
+      "initial_gcd_factors": 1,
+      "linear_gcd_factors": 30,
+      "odd_n": 177,
+      "parameter_points": 123,
+      "prepared_roots": 3,
+      "root_forms": 4,
+      "unramified_root_recoveries": 93
+    },
+    {
+      "even_imprimitive_residuals": 198,
+      "odd_n": 179,
+      "parameter_points": 615,
+      "prepared_roots": 15,
+      "root_forms": 15,
+      "unramified_root_recoveries": 417
+    },
+    {
+      "odd_n": 181,
+      "parameter_points": 410,
+      "prepared_roots": 10,
+      "root_forms": 10,
+      "unramified_root_recoveries": 410
+    },
+    {
+      "even_imprimitive_residuals": 72,
+      "initial_gcd_factors": 1,
+      "linear_gcd_factors": 68,
+      "odd_n": 183,
+      "parameter_points": 287,
+      "prepared_roots": 7,
+      "root_forms": 8,
+      "unramified_root_recoveries": 147
+    },
+    {
+      "initial_gcd_factors": 3,
+      "linear_gcd_factors": 82,
+      "odd_n": 185,
+      "parameter_points": 533,
+      "prepared_roots": 13,
+      "root_forms": 16,
+      "unramified_root_recoveries": 451
+    },
+    {
+      "even_imprimitive_residuals": 62,
+      "initial_gcd_factors": 1,
+      "linear_gcd_factors": 16,
+      "odd_n": 187,
+      "parameter_points": 205,
+      "prepared_roots": 5,
+      "root_forms": 6,
+      "unramified_root_recoveries": 127
+    },
+    {
+      "initial_gcd_factors": 3,
+      "linear_gcd_factors": 124,
+      "odd_n": 189,
+      "parameter_points": 369,
+      "prepared_roots": 9,
+      "root_forms": 12,
+      "unramified_root_recoveries": 245
+    },
+    {
+      "even_imprimitive_residuals": 180,
+      "odd_n": 191,
+      "parameter_points": 533,
+      "prepared_roots": 13,
+      "root_forms": 13,
+      "unramified_root_recoveries": 353
+    },
+    {
+      "odd_n": 193,
+      "parameter_points": 164,
+      "prepared_roots": 4,
+      "root_forms": 4,
+      "unramified_root_recoveries": 164
+    },
+    {
+      "even_imprimitive_residuals": 66,
+      "initial_gcd_factors": 3,
+      "linear_gcd_factors": 156,
+      "odd_n": 195,
+      "parameter_points": 369,
+      "prepared_roots": 9,
+      "root_forms": 12,
+      "unramified_root_recoveries": 147
+    },
+    {
+      "odd_n": 197,
+      "parameter_points": 410,
+      "prepared_roots": 10,
+      "root_forms": 10,
+      "unramified_root_recoveries": 410
+    },
+    {
+      "even_imprimitive_residuals": 120,
+      "odd_n": 199,
+      "parameter_points": 369,
+      "prepared_roots": 9,
+      "root_forms": 9,
+      "unramified_root_recoveries": 249
+    },
+    {
+      "initial_gcd_factors": 5,
+      "linear_gcd_factors": 74,
+      "odd_n": 201,
+      "parameter_points": 287,
+      "prepared_roots": 7,
+      "root_forms": 12,
+      "unramified_root_recoveries": 213
+    },
+    {
+      "even_imprimitive_residuals": 124,
+      "initial_gcd_factors": 1,
+      "linear_gcd_factors": 70,
+      "odd_n": 203,
+      "parameter_points": 451,
+      "prepared_roots": 11,
+      "root_forms": 12,
+      "unramified_root_recoveries": 257
+    },
+    {
+      "initial_gcd_factors": 1,
+      "linear_gcd_factors": 50,
+      "odd_n": 205,
+      "parameter_points": 287,
+      "prepared_roots": 7,
+      "root_forms": 8,
+      "unramified_root_recoveries": 237
+    },
+    {
+      "even_imprimitive_residuals": 30,
+      "initial_gcd_factors": 3,
+      "linear_gcd_factors": 28,
+      "odd_n": 207,
+      "parameter_points": 123,
+      "prepared_roots": 3,
+      "root_forms": 6,
+      "unramified_root_recoveries": 65
+    },
+    {
+      "initial_gcd_factors": 1,
+      "linear_gcd_factors": 94,
+      "odd_n": 209,
+      "parameter_points": 779,
+      "prepared_roots": 19,
+      "root_forms": 20,
+      "unramified_root_recoveries": 685
+    },
+    {
+      "even_imprimitive_residuals": 122,
+      "odd_n": 211,
+      "parameter_points": 369,
+      "prepared_roots": 9,
+      "root_forms": 9,
+      "unramified_root_recoveries": 247
+    },
+    {
+      "initial_gcd_factors": 1,
+      "linear_gcd_factors": 70,
+      "odd_n": 213,
+      "parameter_points": 287,
+      "prepared_roots": 7,
+      "root_forms": 8,
+      "unramified_root_recoveries": 217
+    },
+    {
+      "even_imprimitive_residuals": 128,
+      "initial_gcd_factors": 3,
+      "linear_gcd_factors": 66,
+      "odd_n": 215,
+      "parameter_points": 451,
+      "prepared_roots": 11,
+      "root_forms": 14,
+      "unramified_root_recoveries": 257
+    },
+    {
+      "initial_gcd_factors": 1,
+      "linear_gcd_factors": 42,
+      "odd_n": 217,
+      "parameter_points": 287,
+      "prepared_roots": 7,
+      "root_forms": 8,
+      "unramified_root_recoveries": 245
+    },
+    {
+      "even_imprimitive_residuals": 90,
+      "initial_gcd_factors": 3,
+      "linear_gcd_factors": 88,
+      "odd_n": 219,
+      "parameter_points": 369,
+      "prepared_roots": 9,
+      "root_forms": 12,
+      "unramified_root_recoveries": 191
+    },
+    {
+      "initial_gcd_factors": 1,
+      "linear_gcd_factors": 54,
+      "odd_n": 221,
+      "parameter_points": 615,
+      "prepared_roots": 15,
+      "root_forms": 16,
+      "unramified_root_recoveries": 561
+    },
+    {
+      "even_imprimitive_residuals": 94,
+      "odd_n": 223,
+      "parameter_points": 287,
+      "prepared_roots": 7,
+      "root_forms": 7,
+      "unramified_root_recoveries": 193
+    },
+    {
+      "initial_gcd_factors": 3,
+      "linear_gcd_factors": 70,
+      "odd_n": 225,
+      "parameter_points": 205,
+      "prepared_roots": 5,
+      "root_forms": 8,
+      "unramified_root_recoveries": 135
+    },
+    {
+      "even_imprimitive_residuals": 202,
+      "odd_n": 227,
+      "parameter_points": 615,
+      "prepared_roots": 15,
+      "root_forms": 15,
+      "unramified_root_recoveries": 413
+    },
+    {
+      "odd_n": 229,
+      "parameter_points": 410,
+      "prepared_roots": 10,
+      "root_forms": 10,
+      "unramified_root_recoveries": 410
+    },
+    {
+      "even_imprimitive_residuals": 54,
+      "initial_gcd_factors": 5,
+      "linear_gcd_factors": 106,
+      "odd_n": 231,
+      "parameter_points": 287,
+      "prepared_roots": 7,
+      "root_forms": 12,
+      "unramified_root_recoveries": 127
+    },
+    {
+      "odd_n": 233,
+      "parameter_points": 492,
+      "prepared_roots": 12,
+      "root_forms": 12,
+      "unramified_root_recoveries": 492
+    },
+    {
+      "even_imprimitive_residuals": 54,
+      "initial_gcd_factors": 1,
+      "linear_gcd_factors": 32,
+      "odd_n": 235,
+      "parameter_points": 205,
+      "prepared_roots": 5,
+      "root_forms": 6,
+      "unramified_root_recoveries": 119
+    },
+    {
+      "initial_gcd_factors": 1,
+      "linear_gcd_factors": 118,
+      "odd_n": 237,
+      "parameter_points": 451,
+      "prepared_roots": 11,
+      "root_forms": 12,
+      "unramified_root_recoveries": 333
+    },
+    {
+      "even_imprimitive_residuals": 208,
+      "odd_n": 239,
+      "parameter_points": 615,
+      "prepared_roots": 15,
+      "root_forms": 15,
+      "unramified_root_recoveries": 407
+    },
+    {
+      "odd_n": 241,
+      "parameter_points": 492,
+      "prepared_roots": 12,
+      "root_forms": 12,
+      "unramified_root_recoveries": 492
+    },
+    {
+      "even_imprimitive_residuals": 70,
+      "initial_gcd_factors": 2,
+      "linear_gcd_factors": 72,
+      "odd_n": 243,
+      "parameter_points": 287,
+      "prepared_roots": 7,
+      "root_forms": 9,
+      "unramified_root_recoveries": 145
+    },
+    {
+      "initial_gcd_factors": 3,
+      "linear_gcd_factors": 90,
+      "odd_n": 245,
+      "parameter_points": 369,
+      "prepared_roots": 9,
+      "root_forms": 12,
+      "unramified_root_recoveries": 279
+    },
+    {
+      "even_imprimitive_residuals": 66,
+      "initial_gcd_factors": 1,
+      "linear_gcd_factors": 18,
+      "odd_n": 247,
+      "parameter_points": 205,
+      "prepared_roots": 5,
+      "root_forms": 6,
+      "unramified_root_recoveries": 121
+    },
+    {
+      "initial_gcd_factors": 3,
+      "linear_gcd_factors": 94,
+      "odd_n": 249,
+      "parameter_points": 369,
+      "prepared_roots": 9,
+      "root_forms": 12,
+      "unramified_root_recoveries": 275
+    },
+    {
+      "even_imprimitive_residuals": 280,
+      "odd_n": 251,
+      "parameter_points": 861,
+      "prepared_roots": 21,
+      "root_forms": 21,
+      "unramified_root_recoveries": 581
+    },
+    {
+      "initial_gcd_factors": 1,
+      "linear_gcd_factors": 2,
+      "odd_n": 253,
+      "parameter_points": 123,
+      "prepared_roots": 3,
+      "root_forms": 4,
+      "unramified_root_recoveries": 121
+    },
+    {
+      "even_imprimitive_residuals": 50,
+      "initial_gcd_factors": 5,
+      "linear_gcd_factors": 118,
+      "odd_n": 255,
+      "parameter_points": 287,
+      "prepared_roots": 7,
+      "root_forms": 12,
+      "unramified_root_recoveries": 119
+    }
+  ],
+  "scope": "Exact rational-conic denominator cancellation and its reduction to root-form smooth values; no smooth-value search algorithm is asserted",
+  "totals": {
+    "even_imprimitive_residuals": 5102,
+    "initial_gcd_factors": 119,
+    "linear_gcd_factors": 4092,
+    "parameter_points": 35752,
+    "prepared_roots": 872,
+    "root_forms": 991,
+    "unramified_root_recoveries": 26558
+  }
+}
