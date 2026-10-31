@@ -1,0 +1,184 @@
+{
+  "status": "Complete stated F2 flag pairs in two fixed polynomial frames; no global exclusion.",
+  "degree": 12,
+  "baseline_laurent_clearing": 4,
+  "flags_per_cut": 315,
+  "base_row_orders": [
+    5,
+    8,
+    10,
+    13,
+    5,
+    8,
+    10,
+    13
+  ],
+  "height_ray": [
+    0,
+    0,
+    -1,
+    -1,
+    -1,
+    -1,
+    0,
+    0
+  ],
+  "variants": [
+    {
+      "improved_row": -1,
+      "flag_pairs_decided": 99225,
+      "feasible_pairs": 1,
+      "exact_profile_queries": 12
+    },
+    {
+      "improved_row": 0,
+      "flag_pairs_decided": 99225,
+      "feasible_pairs": 0,
+      "exact_profile_queries": 0
+    },
+    {
+      "improved_row": 1,
+      "flag_pairs_decided": 99225,
+      "feasible_pairs": 0,
+      "exact_profile_queries": 0
+    },
+    {
+      "improved_row": 2,
+      "flag_pairs_decided": 99225,
+      "feasible_pairs": 0,
+      "exact_profile_queries": 0
+    },
+    {
+      "improved_row": 3,
+      "flag_pairs_decided": 99225,
+      "feasible_pairs": 0,
+      "exact_profile_queries": 0
+    },
+    {
+      "improved_row": 4,
+      "flag_pairs_decided": 99225,
+      "feasible_pairs": 0,
+      "exact_profile_queries": 0
+    },
+    {
+      "improved_row": 5,
+      "flag_pairs_decided": 99225,
+      "feasible_pairs": 0,
+      "exact_profile_queries": 0
+    },
+    {
+      "improved_row": 6,
+      "flag_pairs_decided": 99225,
+      "feasible_pairs": 0,
+      "exact_profile_queries": 0
+    },
+    {
+      "improved_row": 7,
+      "flag_pairs_decided": 99225,
+      "feasible_pairs": 0,
+      "exact_profile_queries": 0
+    }
+  ],
+  "profile_representatives": [
+    {
+      "values": [
+        [
+          224,
+          0
+        ],
+        [
+          480,
+          0
+        ],
+        [
+          480,
+          0
+        ],
+        [
+          960,
+          0
+        ],
+        [
+          240,
+          0
+        ],
+        [
+          240,
+          0
+        ],
+        [
+          496,
+          0
+        ],
+        [
+          480,
+          0
+        ],
+        [
+          240,
+          0
+        ],
+        [
+          496,
+          0
+        ],
+        [
+          240,
+          0
+        ],
+        [
+          480,
+          0
+        ],
+        [
+          240,
+          0
+        ],
+        [
+          240,
+          0
+        ],
+        [
+          240,
+          0
+        ],
+        [
+          224,
+          0
+        ]
+      ],
+      "profiles": [
+        [
+          -9,
+          -6,
+          -4,
+          -1
+        ],
+        [
+          3,
+          6,
+          8,
+          11
+        ]
+      ],
+      "flags": [
+        [
+          1,
+          2,
+          4,
+          8
+        ],
+        [
+          1,
+          2,
+          4,
+          8
+        ]
+      ],
+      "improved_row": -1,
+      "dimension": 1,
+      "minimum_sampled_critical_pressure": 0.2614500548164562
+    }
+  ],
+  "seconds": 36.57683560199996
+}

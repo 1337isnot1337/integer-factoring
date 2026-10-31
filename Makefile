@@ -445,3 +445,7 @@ verify-joint-polynomial-synthesis:
 verify-weyl-filter-flags:
 	python3 tools/check_weyl_flag_filter_synthesis.py
 	python3 tools/check_unit_reduced_lattice_basis.py
+
+.PHONY: verify-binary-two-cut-lattices
+verify-binary-two-cut-lattices:
+	python3 tools/check_binary_two_cut_lattices.py

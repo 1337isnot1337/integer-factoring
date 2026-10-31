@@ -14,6 +14,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Complete-entry binary crossing synthesis](binary-two-cut-affine-synthesis.md): exact affine systems at both cuts cover free Laurent entries, a support lemma bounds the required degree for specified targets, and complete constant F4 flag searches decide those targets.
+
 - [Joint residue-compressed polynomial synthesis](joint-binary-filter-synthesis.md): at most twice the number of digit states plus one residue patterns give exact degree/order feasibility in every prime characteristic, with a constructive fixed-field endpoint lift.
 
 - [Completed joint-filter catalogues](joint-filter-search-records.md): every retained literal witness is reconstructed, and finite all-index grids keep mode-assignment coverage and interruption limits explicit.

@@ -268,6 +268,16 @@ Smith elimination, including the large local-unit denominators of this
 second pivot. `make verify-reflection-all-bulks` replays the new construction
 and the shared hot-state regression.
 
+An independent [binary crossing synthesis](research/binary-two-cut-affine-synthesis.md)
+assigns free Laurent coefficients to every tensor entry while fixing the
+strict permutation endpoint. For its selected row targets, a support
+bound makes degree 12 after common clearing exhaustive, and all 8,925
+constant F4 flags at each cut are covered. All fifty nonreference targets
+are infeasible; this is an exact result for those fixed frames and gauges.
+It does not exclude other target orders or other regular frames.
+`make verify-binary-two-cut-lattices` checks literal minors, endpoint
+coefficients, flag enumeration, and the pruning used by the complete run.
+
 The [Walsh permanent calculation](research/walsh-principal-permanents.md)
 gives all-size scalar valuation formulas beyond the determinant model.
 It also proves that exponentially many grouped modes survive the current
