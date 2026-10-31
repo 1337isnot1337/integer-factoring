@@ -6,6 +6,7 @@ import argparse
 from hashlib import sha256
 from itertools import product
 import json
+from math import comb
 from pathlib import Path
 
 from check_controlled_permutation_smith import binary_rank
@@ -26,6 +27,64 @@ def two_word_coefficients(matrix):
                 result[term.bit_length()-1][n*r+s] ^= bit
                 polynomial ^= term
     return result
+
+
+def sparse_word_coefficients(matrix, length):
+    local = [{j: value for j, value in enumerate(row) if value} for row in matrix]
+    rows = [{0: 1}]
+    for _ in range(length):
+        rows = [{len(local)*i+j: polynomial_multiply(first, second)
+                 for (i, first), (j, second) in product(left.items(), right.items())}
+                for left, right in product(rows, local)]
+    result = [[0]*len(rows) for _ in range(3*length+1)]
+    for i, row in enumerate(rows):
+        for j, polynomial in row.items():
+            while polynomial:
+                term = polynomial & -polynomial
+                result[term.bit_length()-1][i] ^= 1 << j
+                polynomial ^= term
+    return result
+
+
+def middle_three_letter_controls():
+    q, length = 3, 3
+    matrix = curve(table(q, 'affine'))
+    column = [[matrix[q*x+y][q*u+v] for y, v in product(range(q), repeat=2)]
+              for x, u in product(range(q), repeat=2)]
+    sides = [sparse_word_coefficients(side, length) for side in (matrix, column)]
+    size, dimension = len(sides[0][0]), 3*length+1
+    current, previous = [[0]*size for _ in range(2)], 0
+    minimum_row, minimum_column, minimum_product, detected = size+1, size+1, size*size+1, 0
+    for index in range(1, 1 << dimension):
+        code = index ^ (index >> 1)
+        changed = (code ^ previous).bit_length()-1
+        previous = code
+        current = [[a ^ b for a, b in zip(rows, side[changed])] for rows, side in zip(current, sides)]
+        if not (code >> (2*length) & 1):
+            continue
+        r, c = map(binary_rank, current)
+        assert r >= comb(3, 2)*2**2*3 and c >= 2**3*comb(6, 3)
+        minimum_row, minimum_column = min(minimum_row, r), min(minimum_column, c)
+        minimum_product = min(minimum_product, r*c)
+        detected += 1
+    assert detected == 512 and (minimum_row, minimum_column, minimum_product) == (92, 344, 31648)
+    binomial_controls = 0
+    for m in range(3, 301, 3):
+        a = 2*m//3
+        row = comb(m, a)*2**a*3**(m-a)
+        column = 2**m*comb(2*m, m)
+        assert row*(m+1) >= 3**(4*m//3)
+        assert column*(2*m+1) >= 8**m
+        binomial_controls += 1
+    assert 2**9 > 3**5
+    return dict(alphabet=q, word_length=length, complete_middle_detected_binary_recombinations=detected,
+                middle_degree=2*length, theorem_row_bound=36, theorem_column_bound=160,
+                minimum_actual_detected_row_rank=minimum_row,
+                minimum_actual_detected_column_rank=minimum_column,
+                minimum_actual_detected_product=minimum_product,
+                exact_binomial_bound_controls=binomial_controls,
+                asymptotic_rho_floor='1/3 + 3 log(2)/(4 log(3))',
+                exact_comparison_above_three_quarters='2^9 > 3^5')
 
 
 def check():
@@ -88,7 +147,8 @@ def check():
                             minimum_detected_product=minimum_product,
                             exact_univariate_spanning_threshold_squared=threshold))
     assert 8*t*t > q**3
-    return dict(records=records, exact_seven_letter_comparison={'8T_squared': 8*t*t, 'q_cubed': q**3},
+    return dict(records=records, three_letter_middle=middle_three_letter_controls(),
+                exact_seven_letter_comparison={'8T_squared': 8*t*t, 'q_cubed': q**3},
                 scope='Finite complete binary univariate controls; the written block proof covers arbitrary multivariate recombinations and characteristic-two extensions.',
                 factoring_exponent='1/2; unchanged')
 

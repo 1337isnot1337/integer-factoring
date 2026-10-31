@@ -175,6 +175,8 @@ make verify
 
 The [common-coefficient argument](steiner-coefficient-barrier.md) now also
 excludes arbitrary coefficient recombinations on full words at every
-`q>=7`, using constant blocks in the two cuts. The remaining three-letter
-coefficient question and restricted physical types are separate from the
-bare calculation above. No new Lean work was used.
+`q>=7`, using constant blocks in the two cuts. A middle-coefficient
+argument also excludes the three-letter univariate coefficient span,
+including a sublinear number of independent position classes. Restricted
+physical types and the fully multivariate three-letter word space remain
+outside those proofs. No new Lean work was used.

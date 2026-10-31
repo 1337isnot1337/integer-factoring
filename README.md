@@ -145,9 +145,12 @@ are independent of the design and force `rho>=3/4` at every size. This
 closes the cubic bare-profile search. A stronger
 [common-coefficient proof](research/steiner-coefficient-barrier.md) also
 excludes arbitrary coefficient recombinations across full words at every
-`q>=7`, with no piece-count or position-symmetry restriction. The
-three-letter coefficient question and restricted physical types remain
-open. Run `make verify-steiner-cubic` and `make verify-steiner-coefficients`.
+`q>=7`, with no piece-count or position-symmetry restriction. At `q=3`,
+a middle-coefficient proof gives asymptotic floor `rho>=0.8065306485`
+for the univariate span and a sublinear number of position classes.
+Restricted physical types and the fully multivariate three-letter space
+remain outside those proofs. Run `make verify-steiner-cubic` and
+`make verify-steiner-coefficients`.
 
 The [group-shear extension](research/group-shear-crossings.md) implements
 the swap through three multiplication/division shears over any finite

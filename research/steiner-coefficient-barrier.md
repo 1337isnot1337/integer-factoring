@@ -1,4 +1,4 @@
-# A common coefficient excludes full Steiner words at size at least seven
+# Full-word coefficient obstructions for Steiner cubics
 
 For the [Steiner cubic crossing](steiner-cubic-crossings.md), the bare
 profile obstruction can be strengthened to actual matrix ranks. At every
@@ -6,6 +6,9 @@ word length, any crossing decomposition into arbitrary local coefficient
 recombinations has one piece whose two ranks are at least `(2T)^m` and
 `(4T)^m`, where `T=q(q-1)/6`. Thus every nontrivial Steiner alphabet
 `q>=7` is excluded at contraction parameter below `3/4` by this route.
+For the remaining alphabet `q=3`, a middle-coefficient argument excludes
+the univariate coefficient span at the stronger asymptotic floor
+`1/3+3 log(2)/(4 log(3))=0.8065306485...`.
 
 The statement allows any number of pieces, arbitrary coefficient mixtures
 across positions, independent polynomial variables at every position, and
@@ -128,7 +131,7 @@ and even varying sizes `q_i>=7`: replace the two rank bounds by
 `product_i(2T_i)` and `product_i(4T_i)`. It does not permit changing the
 local coefficient space separately for each piece.
 
-## 5. Exact controls and the remaining three-letter case
+## 5. Exact seven-letter controls
 
 [The checker](../tools/check_steiner_coefficient_barrier.py) exhausts every
 nonzero binary combination of the univariate coefficient tensors at
@@ -147,9 +150,85 @@ make verify-steiner-coefficients
 make verify
 ```
 
-At `q=3`, the same rank theorem holds with `T=1`, but its rate alone does
-not exclude an improvement. The [bare cubic profiles](steiner-cubic-crossings.md)
-already fail at that size; arbitrary coefficient recombinations on the
-complete three-letter domain remain a distinct question. Restricted
-physical types at any size also remain outside the full-word argument.
-The complete factoring exponent remains `1/2`.
+## 6. The middle coefficient closes the three-letter univariate span
+
+At `q=3`, the bound (8) alone is insufficient. Now let all positions use
+the same polynomial variable and let `m` be divisible by three. Use the
+common polynomial `p=t^(2m)`, whose endpoint value is one.
+
+In the first cut, select exactly `a=2m/3` natural blocks (3), and fixed
+scalar blocks on the remaining positions. There are two copies of each
+natural block and three fixed scalar blocks per position. The upper-right
+entry at every natural position and the scalar entry elsewhere produce
+`t^(3a)=p`. Summing all compatible position choices gives, for `L(p)!=0`,
+
+```math
+\operatorname{rank}_{xy\mid uv}A_L
+ \ge {m\choose 2m/3}2^{2m/3}3^{m/3}
+ \ge \frac{3^{4m/3}}{m+1}.                               \tag{10}
+```
+
+The last inequality is the elementary binomial probability bound at its
+mode with success probability `2/3`.
+
+For the second cut, constant bases make the entire local matrix upper
+triangular with monomial diagonal counts
+
+```math
+V(z)=1+2z+4z^2+2z^3.                                    \tag{11}
+```
+
+Indeed the diagonal physical part splits into a scalar `1` and two scalars
+`t`; the off-diagonal part has two scalar `t^3` blocks and two copies of
+(6). The coupling between the parts is above the diagonal. Tensor powers
+remain upper triangular, and applying `L` to their entries preserves
+that property. Exactly `[z^(2m)]V(z)^m` diagonal entries are equal to
+the same nonzero value `L(p)`. Their principal minor is triangular and
+nonsingular. Counting diagonal positions as integers, with no summation
+of their values in the coefficient field, gives
+
+```math
+\begin{aligned}
+\operatorname{rank}_{xu\mid yv}A_L
+ &\ge [z^{2m}]V(z)^m\\
+ &\ge [z^{2m}]\bigl(2z(1+z)^2\bigr)^m
+ =2^m{2m\choose m}\ge\frac{8^m}{2m+1}.                  \tag{12}
+\end{aligned}
+```
+
+The same piece is detected in (10) and (12). Thus its full-word cost
+forces the asymptotic contraction floor
+
+```math
+\rho\ge\frac{\log8+\tfrac43\log3}{4\log3}
+ =\frac13+\frac{3\log2}{4\log3}
+ =0.8065306485\ldots>\frac34.                            \tag{13}
+```
+
+The strict comparison is the integer inequality `2^9>3^5`. The explicit
+finite cost loss is the square root of `(m+1)(2m+1)`; (13) is a limiting
+rate statement, not a claim that this exact exponent holds at short
+length without the loss.
+
+There is no subsequence loophole. If the length is not divisible by three,
+fix at most two positions' four physical coordinates to a single common
+letter. That local polynomial entry is identically one, since every
+Steiner shear fixes a diagonal pair. Restriction preserves the crossing,
+does not increase either rank, and leaves a length divisible by three
+in exactly the same univariate coefficient span. The loss is bounded.
+
+The argument also permits `b=o(m)` independently parameterized position
+classes. Fix at most two coordinates per class, and take the product of
+their middle-coefficient functionals. Compatible block counts factorize;
+the logarithmic losses are
+`O(b+sum_j log(m_j+1))=o(m)`. This does not cover one independent parameter
+at every three-letter position.
+
+The checker additionally exhausts all 512 binary univariate functionals at
+length three with nonzero middle coefficient. Their minimum actual ranks
+are 92 and 344, above the respective theorem bounds 36 and 160. It checks
+100 exact binomial bounds through length 300. Those finite controls support
+the proof's algebra and integer comparisons; the uniform statement is
+the block argument above. Restricted physical types at every alphabet,
+other local paths, and the fully multivariate three-letter word space
+remain separate questions. The complete factoring exponent remains `1/2`.

@@ -238,7 +238,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 - [Steiner cubic crossings](steiner-cubic-crossings.md): three controlled involutions give determinant-one crossing paths for every Steiner quasigroup; exact design-independent profiles exclude the bare criterion at every size, with a six-dimensional orbit calculation and full-cut controls.
 
-- [Steiner coefficient barrier](steiner-coefficient-barrier.md): one shared coefficient forces actual two-cut ranks at every word length; arbitrary coefficient recombinations on complete words cannot beat `rho=3/4` for any `q>=7`, even with independent variables and designs across positions.
+- [Steiner coefficient barrier](steiner-coefficient-barrier.md): shared coefficients force actual ranks at every word length; the complete multivariate span has `rho>=3/4` for `q>=7`, and the three-letter univariate span has asymptotic floor `0.8065306485`, also with a sublinear number of independent position classes.
 
 - [Group-shear crossings](group-shear-crossings.md): multiplication/division shears give cubic swap paths over every finite `p`-group in characteristic `p`; exact early-jet certificates exclude six displayed binary seeds, without an all-group claim.
 

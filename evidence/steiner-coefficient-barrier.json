@@ -21,11 +21,25 @@
       "exact_univariate_spanning_threshold_squared": 921200
     }
   ],
+  "three_letter_middle": {
+    "alphabet": 3,
+    "word_length": 3,
+    "complete_middle_detected_binary_recombinations": 512,
+    "middle_degree": 6,
+    "theorem_row_bound": 36,
+    "theorem_column_bound": 160,
+    "minimum_actual_detected_row_rank": 92,
+    "minimum_actual_detected_column_rank": 344,
+    "minimum_actual_detected_product": 31648,
+    "exact_binomial_bound_controls": 100,
+    "asymptotic_rho_floor": "1/3 + 3 log(2)/(4 log(3))",
+    "exact_comparison_above_three_quarters": "2^9 > 3^5"
+  },
   "exact_seven_letter_comparison": {
     "8T_squared": 392,
     "q_cubed": 343
   },
   "scope": "Finite complete binary univariate controls; the written block proof covers arbitrary multivariate recombinations and characteristic-two extensions.",
   "factoring_exponent": "1/2; unchanged",
-  "source_sha256": "2d9efee56feb2192028fbe4d1d43d5b400e421ebc6a9d3b014d195cf389d60e0"
+  "source_sha256": "94bee9d894c81abb891ced2d01e5dc7e6f8baabf20c9fbce906ee53b83207bc2"
 }
