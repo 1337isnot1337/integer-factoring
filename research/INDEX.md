@@ -16,6 +16,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Joint determinant actual-rank barrier](joint-determinant-barrier.md): all-field Weyl filtrations give a common rank witness for both cuts, closing every binary pure-value quadratic and cubic at leading `rho>=4/5`; asymmetric rank-two values leave the interval between `2/3` and `1/sqrt(2)` open.
+
 - [Constant transpose-intertwiner barrier](transpose-intertwiner-barrier.md): equal actual cut ranks at every tensor length preclude contraction for polynomially many coefficient pieces; complete tests exclude 32,454,657 ternary cubic coefficient seeds, with actual-jet witnesses checked through three copies.
 
 - [Universal multipoint Smith floor](multipoint-smith-floor.md): determinant budgets and equal local minimum orders force `rho > 3/4` for the unweighted local-jet criterion over every field, alphabet and degree; a complete 1,579,014-seed cubic catalogue provides independent controls.

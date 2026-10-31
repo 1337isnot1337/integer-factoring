@@ -91,6 +91,14 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 
 ## Current research frontier
 
+The [joint determinant barrier](research/joint-determinant-barrier.md)
+uses Weyl filtrations in every characteristic to bound actual coefficient
+ranks. It rules out `rho < 4/5` for binary quadratics with two pure
+interpolation values and cubics with three, including the entire
+135,005,697-seed ternary cubic class. Equal determinants give floor one.
+Asymmetric rank-two values remain a constructive direction, with a weaker
+determinant floor of `2/3`. Run `make verify-joint-determinant`.
+
 The [constant transpose-intertwiner obstruction](research/transpose-intertwiner-barrier.md)
 applies to actual tensor-power coefficient ranks: a common invertible
 intertwiner forces both cut ranks to agree, ruling out leading contraction

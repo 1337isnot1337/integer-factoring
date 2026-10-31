@@ -30,6 +30,10 @@ verify-multipoint-smith-floor:
 verify-transpose-intertwiner:
 	python3 tools/check_transpose_intertwiner_barrier.py
 
+.PHONY: verify-joint-determinant
+verify-joint-determinant:
+	python3 tools/check_joint_determinant_barrier.py
+
 .PHONY: verify-multilevel-packet
 verify-multilevel-packet:
 	python3 tools/check_multilevel_thue_morse_packet.py
