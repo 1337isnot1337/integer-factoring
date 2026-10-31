@@ -230,6 +230,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 - [Complete six-bit nonlinear catalogue](quadratic-register-crossings.md): all 65,536 quadratic-plus-zero-indicator feedback rules, their 1,952 full cycles, and all 19,520 physical partitions fail the bare criterion by exact certificates.
 
+- [Quantum-Pascal trace crossings](quantum-pascal-trace-crossings.md): divided-power polynomial endpoints through fifteen letters, an exact degree formula, and a unitriangular trace-basis obstruction at `rho>=3/4` for bare and unweighted multipoint profiles; physical word types remain separate.
+
 - [All-degree homogeneous Boolean charge bands](homogeneous-boolean-charge-bands.md): a degree-independent loss cap and stronger Gaussian floors exclude all exterior charges and a linearly growing interior band, including overlapping monomials.
 
 - [All-digit charged Gaussian floor](all-digit-charged-gaussian-floor.md): strict monotonicity in every real digit parameter and positive full critical pressure for all `q>1`, charges, scales, and interval lengths; exact compact certificates plus analytic tails.

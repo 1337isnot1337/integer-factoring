@@ -29,6 +29,10 @@ verify-register-barrier:
 verify-quadratic-register:
 	python3 tools/check_quadratic_register_crossings.py
 
+.PHONY: verify-quantum-pascal
+verify-quantum-pascal:
+	python3 tools/check_quantum_pascal_crossings.py
+
 .PHONY: verify-multilevel-packet
 verify-multilevel-packet:
 	python3 tools/check_multilevel_thue_morse_packet.py

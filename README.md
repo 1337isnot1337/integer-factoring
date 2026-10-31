@@ -121,6 +121,14 @@ tests all quadratic lower-tail functions plus the zero-tail indicator:
 1,952 full cycles and all 19,520 balanced partitions fail the bare test.
 Run `make verify-quadratic-register` to replay the complete finite result.
 
+The [quantum-Pascal construction](research/quantum-pascal-trace-crossings.md)
+provides polynomial trace crossings with exact degree `d(d-1)` at odd
+alphabet size `d`. A unitriangular-basis argument forces `rho>=3/4` for
+its bare and unweighted multipoint profile criteria, including arbitrary
+polynomial diagonal vacua. Physical word-type restrictions remain outside
+that proof. Run `make verify-quantum-pascal` for exact endpoints through
+fifteen letters, direct trace controls, and polynomial determinant checks.
+
 The [exact Gaussian fixed-type certificates](research/reflection-gaussian-fixed-type-duals.md)
 prove global minima over every independent mode gauge and positive scale
 for four explicit rational physical types, through interval length 32.
