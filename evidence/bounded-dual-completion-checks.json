@@ -1,0 +1,119 @@
+{
+  "status": "exact bounded-source compiler and dual-completion controls passed",
+  "literal_source_coefficients": 2376,
+  "kernel_vacuum_entries": 154,
+  "F4_endpoint_entries": 5128,
+  "integral_duals_recovered": true,
+  "cases": [
+    {
+      "weight": 8,
+      "alphabet": 2,
+      "parameter_dimension": 9,
+      "formal_dual_direction_dimension": 14,
+      "kernel_slab_rank": 2,
+      "actual_tensor_direction_dimension": 4,
+      "independent_kernel_indices": [
+        3,
+        5
+      ],
+      "coefficientwise_relations": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ],
+        [
+          6
+        ]
+      ],
+      "common_laurent_shift": -16,
+      "verified_exponent_step": 2
+    },
+    {
+      "weight": 16,
+      "alphabet": 5,
+      "parameter_dimension": 33,
+      "formal_dual_direction_dimension": 140,
+      "kernel_slab_rank": 10,
+      "actual_tensor_direction_dimension": 50,
+      "independent_kernel_indices": [
+        0,
+        3,
+        5,
+        7,
+        8,
+        11,
+        15,
+        16,
+        21,
+        23
+      ],
+      "coefficientwise_relations": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ],
+        [
+          6
+        ],
+        [
+          9
+        ],
+        [
+          10
+        ],
+        [
+          12
+        ],
+        [
+          13
+        ],
+        [
+          14
+        ],
+        [
+          17
+        ],
+        [
+          18
+        ],
+        [
+          19
+        ],
+        [
+          20
+        ],
+        [
+          22
+        ],
+        [
+          24
+        ],
+        [
+          25
+        ],
+        [
+          26
+        ],
+        [
+          27
+        ]
+      ],
+      "common_laurent_shift": -32,
+      "verified_exponent_step": 2
+    }
+  ],
+  "factoring_bound_improved": false
+}
