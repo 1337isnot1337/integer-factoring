@@ -17,7 +17,7 @@ from rectangular_defect_coordinates import coordinate_matrix
 
 SOURCES=['rectangular_defect_profiles.py','rectangular_defect_coordinates.py','native_fock_f4.cpp','check_rectangular_defect_core_basis.py','check_rectangular_defect_support.py','check_rectangular_full_core_support.py','check_rectangular_f4_repair.py','check_rectangular_refined_repairs.py','check_rectangular_identity_transports.py']
 
-def cached_coordinates(directory,M=8,alpha=1,beta=2,quartic_terms=None,full_core=False,repair_kind='partial',profile_precision=None,extra_quartics=None):
+def cached_coordinates(directory,M=8,alpha=1,beta=2,quartic_terms=None,full_core=False,repair_kind='partial',profile_precision=None,extra_quartics=None,extra_monomials=None,full_alphabet_gamma=None,residual_monomials=None):
     directory=Path(directory);directory.mkdir(parents=True,exist_ok=True)
     terms=[tuple(term) for term in (quartic_terms or [(1,0)])]
     source_hashes={name:hashlib.sha256(Path(__file__).with_name(name).read_bytes()).hexdigest() for name in SOURCES}
@@ -28,6 +28,23 @@ def cached_coordinates(directory,M=8,alpha=1,beta=2,quartic_terms=None,full_core
         inputs['extra_quartics']=extra_quartics
         name='check_rectangular_extra_quartics.py'
         source_hashes[name]=hashlib.sha256(Path(__file__).with_name(name).read_bytes()).hexdigest()
+    if extra_quartics or extra_monomials or residual_monomials is not None:
+        name='check_rectangular_core_monomials.py'
+        source_hashes[name]=hashlib.sha256(Path(__file__).with_name(name).read_bytes()).hexdigest()
+    if extra_monomials:
+        from check_rectangular_core_monomials import validate_extra_monomials
+        extra_monomials=validate_extra_monomials(M-1,extra_monomials)
+        inputs['extra_monomials']=extra_monomials
+    if residual_monomials is not None:
+        from check_rectangular_core_monomials import validate_extra_monomials
+        residual_monomials=validate_extra_monomials(M-1,residual_monomials,allow_marginal=True)
+        inputs['residual_monomials']=residual_monomials
+        name='check_full_alphabet_monomial_residual.py'
+        source_hashes[name]=hashlib.sha256(Path(__file__).with_name(name).read_bytes()).hexdigest()
+    if full_alphabet_gamma is not None:
+        inputs['full_alphabet_gamma']=full_alphabet_gamma
+        for name in ('full_alphabet_quartic_profiles.py','check_full_alphabet_quartic_repair.py'):
+            source_hashes[name]=hashlib.sha256(Path(__file__).with_name(name).read_bytes()).hexdigest()
     digest=hashlib.sha256(json.dumps(inputs,sort_keys=True).encode()).hexdigest()
     filename=directory/(digest+'.pickle.gz')
     if filename.exists():
@@ -35,7 +52,7 @@ def cached_coordinates(directory,M=8,alpha=1,beta=2,quartic_terms=None,full_core
         if result['digest']!=digest or result['inputs']!=inputs:raise ValueError('Coordinate cache provenance mismatch.')
         return result['data'],result['compiled'],{'digest':digest,'cache_hit':True,'path':str(filename),'inputs':inputs}
     data=[data_for(place,M,full_core=full_core) for place in ('infinity','zero')]
-    compiled=[coordinate_matrix(d,alpha,beta,terms,repair_kind=repair_kind,profile_precision=profile_precision,extra_quartics=extra_quartics) for d in data]
+    compiled=[coordinate_matrix(d,alpha,beta,terms,repair_kind=repair_kind,profile_precision=profile_precision,extra_quartics=extra_quartics,extra_monomials=extra_monomials,full_alphabet_gamma=full_alphabet_gamma,residual_monomials=residual_monomials) for d in data]
     result={'digest':digest,'inputs':inputs,'data':data,'compiled':compiled}
     fd,temporary=tempfile.mkstemp(prefix=digest+'-',suffix='.tmp',dir=directory);os.close(fd)
     try:
@@ -92,3 +109,7 @@ def extra_quartics_from_bases(base,basis_terms):
             base_terms.extend(local);terms.append((variation[side],local))
         results.append(linear_combination_coordinate_matrices([(original,base_terms)]+terms))
     return results
+
+def extra_monomials_from_bases(base,basis_terms):
+    """Affine core-monomial combination; each basis is base plus one unit term."""
+    return extra_quartics_from_bases(base,basis_terms)

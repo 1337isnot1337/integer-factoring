@@ -46,8 +46,12 @@ none is being presented as a strict pressure certificate.
   [bivariate limit](bivariate-core-pressure-limit.md) separate an actual
   defect gain from ordinary interval convergence. Exact rational LP
   certificates for the [fitted leading models](rectangular-leading-face-lp.md)
-  isolate an all-low face; continuing the required entry bounds uniformly
-  is a separate symbolic task. The preserved
+  isolate an all-low face. The required
+  [uniform symbolic entry bounds](rectangular-uniform-ray-obstruction.md)
+  are now proved and independently checked. They imply a
+  [moving balanced-gauge obstruction](rectangular-balanced-gauge-obstruction.md),
+  also extended to the [full alphabet](full-alphabet-leading-obstruction.md),
+  above the logarithmic profile scale. The preserved
   [all-low background](rectangular-low-background.md) is proved to be
   precisely the shorter interval of length \(M-2\).
 - [All-field Gaussian endpoints](all-field-pascal-crossings.md),
@@ -61,6 +65,22 @@ none is being presented as a strict pressure certificate.
   nearest center. The [grouped inverse theorem](grouped-cauchy-inverse-profile.md)
   accounts for the normalization precision and shows why directly
   inserting that inverse does not provide a cheaper grouped factorization.
+- [Opposite-charge core cubics](rectangular-core-monomials.md) give
+  admissible endpoint-preserving terms beyond quartics. A uniform
+  single-sign obstruction narrows the full-alphabet search to pairs of
+  opposite particle changes. The sixteen such extreme-mode pairs have
+  nonzero two-copy typed effects in exact controls.
+  Four [critical cubic pairs](full-alphabet-monomial-residuals.md) go
+  further: they restore the singular sixteen-state residual, with
+  symbolic determinant `(1+gamma+ab)^4` and a canonical height-block
+  correction. Their all-length endpoints are proved; their pressure
+  is being investigated separately.
+- [Principal Cauchy permanents](walsh-principal-permanents.md) have
+  exact all-size balanced-discrepancy valuations and a proved factorial
+  law on even-spacing power-of-two subsets. Their valuations can differ
+  quadratically from the determinant values. The source-oriented forward
+  twirl nevertheless retains exponentially many grouped modes at the
+  existing precision schedule, leaving scalar recovery as a separate task.
 
 Three [frozen rectangular search states](../evidence/rectangular-search-snapshots.json)
 replayed with zero discrepancy in both complete profiles and the pressure
@@ -77,8 +97,8 @@ finite screen excludes only its stated candidates and starts.
 
 ## Quantitative progress with exact certificates
 
-The [interval frontier](quantitative-interval-frontier.md) now has the
-following exact rational upper bounds. They all remain above the target.
+The [interval frontier](quantitative-interval-frontier.md) initially gave
+the following exact rational upper bounds. They all remain above the target.
 
 | Number of modes | Certified upper bound for \(\rho\) |
 |---:|---:|
@@ -103,6 +123,23 @@ This explains the positive leading gap
 result, not a lower bound for every Gaussian construction or every crossing.
 The [Pascal-complement theorem](schur-pascal-complement.md) also gives an
 exact spectrum algorithm for every finite mode set, including large gaps.
+
+The follow-through adds an
+[accelerated interval checker](accelerated-interval-certificates.md) based
+on a finite Euler-series identity with a positive exact remainder. It
+encloses geometric logarithmic products with polynomially many integer
+operations in the logarithm of the number of modes. Eight exact witnesses
+include `2^209-1` modes, with upper bound
+
+\[
+\rho<\frac{8771616955900347725453582478444206703138404016040525014107137}
+{12404939662976074530083669466978070217253381205037089626615744}.
+\]
+
+This rational number lies less than `5e-123` above `1/sqrt(2)`.
+Its strict pressure inequality is certified by outward integer intervals;
+it does not cross the threshold or improve the score. The same routine
+is available for the Gaussian spectators of a future finite-defect witness.
 
 ## New admissible construction families
 

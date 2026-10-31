@@ -17,13 +17,15 @@ from check_rectangular_defect_core_basis import core_basis_data,data_for
 from rectangular_defect_profiles import Program,Expr,library,lcm2,quotient2,MASK,precision_sizes
 from native_matrix_smith_f4 import MatrixOracle
 
-def coordinate_matrix(data,alpha=1,beta=2,quartic_terms=None,repair_spec=None,profile_precision=None,input_spec=None,repair_kind='partial',identity_spec=None,extra_quartics=None,full_alphabet_gamma=None):
+def coordinate_matrix(data,alpha=1,beta=2,quartic_terms=None,repair_spec=None,profile_precision=None,input_spec=None,repair_kind='partial',identity_spec=None,extra_quartics=None,full_alphabet_gamma=None,extra_monomials=None,residual_monomials=None):
     start=time.monotonic();bases=[core_basis_data(data,side) for side in ('left','right')]
     extended=dict(data);extended['active_images']=dict(data['active_images']);names=[]
     for side,basis in zip(('left','right'),bases):
         prefix='basis_'+side+'_';names.append([prefix+name for name in basis['core_names']])
         extended['active_images'].update({prefix+name:value for name,value in basis['regular_images'].items()})
-    if full_alphabet_gamma is None:program=Program(extended)
+    if full_alphabet_gamma is None:
+        if residual_monomials is not None:raise ValueError('A general residual correction requires the full physical alphabet.')
+        program=Program(extended)
     else:
         from full_alphabet_quartic_profiles import FullAlphabetProgram
         program=FullAlphabetProgram(extended,full_alphabet_gamma)
@@ -40,7 +42,8 @@ def coordinate_matrix(data,alpha=1,beta=2,quartic_terms=None,repair_spec=None,pr
             bit=state&-state;index=bit.bit_length()-1
             right_vectors[state]=program.car(right_vectors[state^bit],right_names[index]+'_create')
         initial=program.diagonal(right_vectors[state],diagonal)
-        value=program.build(alpha,beta,quartic_terms,initial,repair_spec,input_spec,repair_kind,identity_spec,extra_quartics)
+        arguments=(alpha,beta,quartic_terms,initial,repair_spec,input_spec,repair_kind,identity_spec,extra_quartics,extra_monomials)
+        value=program.build(*arguments,residual_monomials=residual_monomials) if residual_monomials is not None else program.build(*arguments)
         annihilated={0:value}
         for mask in range(left_states):
             if mask:
@@ -90,6 +93,7 @@ def coordinate_matrix(data,alpha=1,beta=2,quartic_terms=None,repair_spec=None,pr
     metadata={'place':data['place'],'M':data['M'],'matrix_order':len(matrix),'padded_matrix_order':n,'registers':len(program.instructions),'coefficient_count':len(program.coefficients),'unit_denominator_degree':denominator.bit_length()-1,'unit_denominator_hex':hex(denominator),'program_degree_bound':bound,'maximum_normalized_degree':int(meta[3]),'exact_polynomial_matrix':bound<builder and int(meta[3])<window,'minimum_valuation':int(meta[0]),'known_below':int(meta[1]),'builder_precision':builder,'profile_precision':window,'matrix_seconds':time.monotonic()-start,'row_core_states':[row_states[i] for i in kept_rows],'column_core_states':[column_states[j] for j in kept_columns],'row_charges':[left['coordinate_row_charges'][i] for i in kept_rows],'column_charges':[right['coordinate_column_charges'][j] for j in kept_columns]}
     metadata['row_core_letters']=left['core_letters'];metadata['column_core_letters']=right['core_letters'];metadata['full_core']=bool(data.get('full_core',False))
     metadata['full_alphabet_gamma']=full_alphabet_gamma
+    if residual_monomials is not None:metadata['residual_monomials']=residual_monomials
     return matrix,shift_matrix,metadata
 
 def main():

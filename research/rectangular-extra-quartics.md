@@ -164,6 +164,7 @@ with the complete original four-mode tensor. It includes all
 four extra terms, negative Laurent powers, their simultaneous
 sum, and an explicitly canceled `c` denominator. The
 [coordinate evidence](../evidence/rectangular-extra-coordinates.json)
-records every tested field entry and complete weighted profile.
+contains `571,392` field-entry comparisons and twenty complete
+weighted profiles, each with `192` orders. All comparisons agree.
 These finite controls audit the constructor and natural gauge
 formulas; Sections 1 and 2 provide the uniform proof.

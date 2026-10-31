@@ -161,6 +161,27 @@ verify-leading-core:
 	python3 tools/check_rectangular_leading_face_lp.py
 	python3 tools/check_rectangular_leading_face_lp.py --input evidence/rectangular-full-leading-face-lp.json
 
+verify-uniform-core:
+	python3 tools/check_rectangular_uniform_entry_bounds.py
+	python3 tools/check_rectangular_balanced_dual_gaps.py
+	python3 tools/check_full_alphabet_leading_obstruction.py
+
+verify-core-monomials:
+	python3 tools/check_rectangular_core_monomials.py
+	python3 tools/check_rectangular_monomial_coordinates.py
+	python3 tools/check_rectangular_monomial_charges.py
+
+verify-critical-cubics:
+	python3 tools/check_full_alphabet_monomial_residual.py
+	python3 tools/check_full_alphabet_monomial_profiles.py
+
+verify-accelerated-interval:
+	python3 tools/check_accelerated_interval_pressure.py
+
+verify-walsh-permanents:
+	python3 tools/check_walsh_cauchy_permanents.py
+	python3 tools/check_walsh_twirl_group.py
+
 verify-controlled-smith:
 	python3 tools/check_controlled_permutation_smith.py
 	python3 tools/check_qutrit_weyl_crossing.py

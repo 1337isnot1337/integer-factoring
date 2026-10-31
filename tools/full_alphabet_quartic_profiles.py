@@ -18,9 +18,10 @@ class FullAlphabetProgram(Program):
 
     def build(self, alpha=1, beta=2, quartic_terms=None, initial=None,
               repair_spec=None, input_spec=None, repair_kind='partial',
-              identity_spec=None, extra_quartics=None):
+              identity_spec=None, extra_quartics=None, extra_monomials=None,
+              residual_monomials=None):
         if any(value is not None for value in
-               (repair_spec, input_spec, identity_spec, extra_quartics)):
+               (repair_spec, input_spec, identity_spec)):
             raise ValueError('Full-alphabet coordinates currently use their explicit repair only.')
         if quartic_terms is None:
             quartic_terms = [(1, 0)]
@@ -31,15 +32,27 @@ class FullAlphabetProgram(Program):
             endpoint ^= coefficient
         if endpoint != 1:
             raise ValueError('The scalar quartic numerator must equal one at w=1.')
-        if repair_kind == 'partial':
+        M = self.data['M']
+        top = M-1
+        if residual_monomials is not None:
+            from check_full_alphabet_monomial_residual import prepare_residual_repair
+            endpoint_data = prepare_residual_repair(self.gamma, residual_monomials, top, repair_kind)
+            correction = endpoint_data['repair_matrix']
+        elif repair_kind == 'partial':
             correction = partial_repair(self.gamma)[0]
         elif repair_kind == 'inverse':
             correction = inverse(residual(self.gamma))[0]
         else:
             raise ValueError('Use partial or inverse repair.')
-        M = self.data['M']
-        top = M-1
         infinity = self.data['place'] == 'infinity'
+        from check_rectangular_extra_quartics import validate_extra_quartics
+        from check_rectangular_core_monomials import monomial_program_terms
+        extras = validate_extra_quartics(top, extra_quartics or [])
+        extra_operations = monomial_program_terms(M, self.data['place'], extras+list(extra_monomials or []))
+        extra_operations += monomial_program_terms(M, self.data['place'], residual_monomials or [], allow_marginal=True)
+        for word, _, _, _ in extra_operations:
+            if any(name not in self.car_meta for name in word):
+                raise ValueError('This monomial needs the full-core support; a required CAR image is absent.')
         v0 = ('out_' if infinity else 'right_')+'v0'
         vT = ('out_' if infinity else 'right_')+f'v{top}'
         y0 = ('out_' if infinity else 'left_')+'y0'
@@ -48,7 +61,7 @@ class FullAlphabetProgram(Program):
         core, heights = (1, 0, 2, 3), (0, 0, 1, 1)
 
         def middle(source):
-            if not self.gamma:
+            if not self.gamma and not extra_operations:
                 return source
             if infinity:
                 word = [vT+'_create', yT+'_create', u0+'_annihilate',
@@ -65,6 +78,13 @@ class FullAlphabetProgram(Program):
                     result = self.add(result, self.scale(
                         quartic, coefficient,
                         z=2-exponent if infinity else exponent, u=-2))
+            for extra_word, gauge, terms, pole in extra_operations:
+                monomial = self.word(source, extra_word)
+                for coefficient, exponent in terms:
+                    if coefficient:
+                        result = self.add(result, self.scale(
+                            monomial, coefficient,
+                            z=gauge+pole-exponent if infinity else gauge+exponent, u=-pole))
             return result
 
         def physical(v, y):

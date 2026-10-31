@@ -1,5 +1,11 @@
 # How the interval family approaches the half-rate threshold
 
+The [accelerated certificate extension](accelerated-interval-certificates.md)
+now checks geometric pressure products without enumerating their modes.
+Its largest recorded interval has `2^209-1` modes and an exact rational
+upper bound less than `5e-123` above `1/sqrt(2)`. The certificates and
+asymptotic analysis below remain valid; the score is unchanged.
+
 The explicit one-species interval family has exact finite certificates
 very close to the half-rate boundary. It also has a sharp asymptotic
 description of the remaining gap. Both statements concern the displayed
