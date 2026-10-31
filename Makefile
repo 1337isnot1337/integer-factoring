@@ -422,3 +422,7 @@ verify-operator-field-flags:
 verify-resonant-operators:
 	python3 tools/check_resonant_identity_operators.py
 	python3 tools/check_resonant_laurent_catalogue.py
+
+.PHONY: verify-reflection-leg-bulks
+verify-reflection-leg-bulks:
+	python3 tools/check_reflection_hot_leg_bulk_gauges.py --extended

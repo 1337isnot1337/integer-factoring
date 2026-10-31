@@ -14,6 +14,10 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Separate physical-leg bulk heights](reflection-hot-leg-bulk-gauges.md): explicit ordering and hot-cold inequalities preserve a bounded reflection core, with distinct physical type costs and exact original-tensor controls.
+
+- [Completed cold-compensated searches](reflection-hot-compensated-searches.md): full coefficient grids on negative-height rays, scoped continuous searches through interval 64, and nonlinear OR-state penalties include every compensating cold cost.
+
 - [Completed reflection hot-state screens](reflection-hot-state-searches.md): complete positive-height coefficient grids, scoped unrestricted heights, and nonlinear two-bit penalties retain full type costs and report no improvement within their recorded scopes.
 
 - [Four-mode resonant occupation transfers](binary-four-mode-resonance.md): complementary equal-energy states reduce to five scalar factors and a two-by-two block, with exact profiles and an all-scale obstruction for polynomial blocks of degree at most twice the interval scale.

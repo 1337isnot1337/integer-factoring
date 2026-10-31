@@ -227,6 +227,17 @@ recorded scope. The [raw transition-mask screen](research/raw-core-transition-ma
 also retains its interrupted 167-of-615-candidate prefix explicitly;
 the remaining masks are not counted as searched.
 
+[Cold-compensated hot-state searches](research/reflection-hot-compensated-searches.md)
+allow negative selected-state heights while charging every compensating
+cold-bit height. The saved runs include all 65,536 coefficient rows at
+seven fixed negative-height rays, 234 natural-class representatives at
+interval 16, sampled rows through interval 64, and nonlinear two-bit
+OR-state penalties. None supplies a gain in its stated scope. The
+[separate physical-leg bulk theorem](research/reflection-hot-leg-bulk-gauges.md)
+also permits different bulk heights on the four legs within an explicit
+regularity cone, retaining the same bounded active core and both physical
+type costs. `make verify-reflection-leg-bulks` checks its original tensors.
+
 The [Walsh permanent calculation](research/walsh-principal-permanents.md)
 gives all-size scalar valuation formulas beyond the determinant model.
 It also proves that exponentially many grouped modes survive the current

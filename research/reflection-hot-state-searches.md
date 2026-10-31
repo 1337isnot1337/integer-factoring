@@ -110,5 +110,5 @@ starting the finite screen. An independent complete-alphabet
 pressure calculation agrees with those controls.
 
 The newer cold-compensated negative-height construction is a
-separate family. Its ongoing searches are not included in the
-completed counts or conclusions above.
+separate family. Its [completed searches](reflection-hot-compensated-searches.md)
+are not included in the counts or conclusions above.
