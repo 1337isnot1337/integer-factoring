@@ -21,6 +21,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Nonlinear downset-code crossings](downset-code-crossings.md): exact global characteristic-two Smith factors and a constant basis normal form for actual coefficient ranks on every downset and every paired-downset encoding, with complete small-domain controls and nonlinear regular-code searches.
 - [Matching-value curve controls](matching-curve-controls.md): degree-five Nullstellensatz certificate rules out common projected cofactors over all extensions; a degree-eleven inverse certificate proves disjoint cofactor spans. Both remain subject to the broader site-symmetry barrier.
 - [Common projected-cofactor actual-rank barrier](common-cofactor-barrier.md): exact certificates for every one of 32,265 normalized ternary rank-product-two quadratics cover all 12,852,225 coefficient seeds and force `rho>=log(3)/(2log(2))` at every tensor length.
+- [Active-difference two-cut rank floor](difference-support-rank-floor.md): a same-monomial witness uniformly excludes hard-core words, their exact-size prefixes, and multiplication graph codes within the elementary full coefficient span; unequal paired alphabets have a separate weaker sumset bound.
+
 - [Difference-unique code rank obstruction](sidon-code-rank-obstruction.md): a literal two-cut block proof excludes the elementary crossing on all cubic binary-field graphs; 16 exact finite controls distinguish the separate multiplication-graph candidate.
 
 - [Dyadic inverse sections](dyadic-inverse-sections.md): exact arithmetic interval recursion, affine-fibre floor sums, integer-factor recovery, and the unresolved aggregation cost.

@@ -2,6 +2,10 @@
 
 ## Result and scope
 
+A subsequent [active-difference theorem](difference-support-rank-floor.md)
+extends this argument to arbitrary codes and uniformly excludes the
+multiplication graph family left open by this note.
+
 Let C be a binary word code of size q such that each nonzero xor difference
 comes from at most one unordered pair of distinct codewords. For the
 elementary crossing restricted to C, every decomposition of its endpoint

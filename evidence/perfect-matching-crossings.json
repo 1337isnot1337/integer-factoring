@@ -1,0 +1,85 @@
+{
+  "status": "exact source, endpoint, reciprocal, and complete profile controls passed",
+  "source_coefficient_entries": 50625,
+  "source_cases": [
+    {
+      "pairs": 3,
+      "period": 128,
+      "state_weight": 255,
+      "dual_weight": 129,
+      "alphabet": 15
+    }
+  ],
+  "strict_endpoint_entries": 50706,
+  "reciprocal_block_entries": 11261,
+  "partial_matching_incidence_entries": 11261,
+  "independent_block_toeplitz_ranks": 48,
+  "profiles": [
+    {
+      "pairs": 2,
+      "alphabet": 3,
+      "row_zero": {
+        "0": 8,
+        "2": 1
+      },
+      "row_infinity": {
+        "0": 8,
+        "-2": 1
+      },
+      "column_zero": {
+        "0": 3,
+        "2": 3,
+        "4": 3
+      },
+      "column_infinity": {
+        "-2": 9
+      }
+    },
+    {
+      "pairs": 3,
+      "alphabet": 15,
+      "row_zero": {
+        "0": 124,
+        "1": 96,
+        "2": 4,
+        "3": 1
+      },
+      "row_infinity": {
+        "0": 124,
+        "-1": 96,
+        "-2": 4,
+        "-3": 1
+      },
+      "column_zero": {
+        "0": 60,
+        "1": 45,
+        "2": 60,
+        "3": 15,
+        "5": 45
+      },
+      "column_infinity": {
+        "-3": 225
+      }
+    }
+  ],
+  "four_pair_profiles": {
+    "row_zero": {
+      "0": 7168,
+      "1": 3374,
+      "2": 468,
+      "3": 14,
+      "4": 1
+    },
+    "column_zero": {
+      "0": 2835,
+      "1": 1680,
+      "2": 630,
+      "3": 1680,
+      "4": 735,
+      "6": 630,
+      "8": 2835
+    }
+  },
+  "negative_controls": 1,
+  "factoring_bound_improved": false
+}
