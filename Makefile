@@ -629,3 +629,7 @@ verify-joint-syndrome-filters:
 verify-typed-charge-lattices:
 	OPENBLAS_NUM_THREADS=1 python3 tools/check_typed_charge_lattice_synthesis.py --output /tmp/integer-factoring-typed-charge-lattice-replay.json
 
+.PHONY: verify-joint-multiplier-separation
+verify-joint-multiplier-separation:
+	python3 tools/check_joint_boolean_multiplier_separation.py --output /tmp/integer-factoring-joint-multiplier-separation-replay.json
+

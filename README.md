@@ -91,6 +91,14 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 
 ## Current research frontier
 
+An [exact joint-filter separation](research/joint-boolean-multiplier-separation.md)
+strictly improves every scalar Boolean multiplier on three balanced parity
+groups, uniformly for physical lengths at least sixteen. The certificate
+covers all 254 nonconstant supports and unbounded multiplier degree, field
+extensions, and ramification. Its complete critical pressure stays positive;
+this is a stronger construction family, with no score increase. Run
+`make verify-joint-multiplier-separation`.
+
 The [typed rational coefficient lattice](research/typed-charge-lattice-synthesis.md)
 frees every entry under an exact charge condition at the endpoint. Local poles
 cancel in every paired-type tensor power; a negative-charge boundary extension

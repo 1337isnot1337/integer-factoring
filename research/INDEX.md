@@ -16,6 +16,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Joint filters beyond the complete scalar multiplier family](joint-boolean-multiplier-separation.md): a literal three-parity polynomial filter beats every scalar Boolean support and arbitrary-degree multiplier on that quotient; 10,668 exact envelope certificates give a uniform separation at every balanced physical length at least sixteen, with positive full critical pressure.
+
 - [Complete-entry typed rational coefficient lattices](typed-charge-lattice-synthesis.md): explicit entrywise endpoint valuations give full affine spaces with local poles and all-length polynomial type restrictions; four-symbol families have 6,144 or 6,237 coefficients at effective degree 24, with complete two-cut synthesis and independent coefficient controls.
 
 - [Joint global-syndrome polynomial synthesis](joint-syndrome-polynomial-filters.md): independent syndrome polynomials retain all endpoint colors and full zero/infinity costs; exact residue compression removes ramification-size growth, and coefficient-space releases escape a demonstrated greedy-search trap.
