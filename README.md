@@ -107,12 +107,39 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 
 ## Current research frontier
 
-The [difference-unique code obstruction](research/sidon-code-rank-obstruction.md)
-shows why sparse additive graph codes do not rescue the elementary crossing:
-its full multivariate coefficient span has rank-sum at least q(q-1)/sqrt(2).
-This includes every binary cubic field graph, but not general nonlinear codes
-or new auxiliary mechanisms. Sixteen finite controls replay with
-`python3 tools/check_sidon_code_crossings.py`; the factoring score is unchanged.
+The [smooth-norm relation reduction](research/smooth-norm-relations.md)
+accepts primitive smooth represented norms without a balanced-factor
+requirement. A [gap extractor](research/smooth-norm-gap.md) handles the
+older balanced interface in polynomial time with explicit slack.
+For one supplied factored norm, the [exact representation search](research/factored-norm-search.md)
+returns primitive coordinates or proves that candidate impossible in
+`Y poly(b) + 2^O(b/log b)` bit time. Selecting a guaranteed short list of
+candidate norms remains open. Run `make verify-smooth-norms`.
+
+The [reflected neutral construction](research/neutral-reflected-crossings.md)
+gives explicit homogeneous duals and complete Pfaffian crossing tensors,
+including unbalanced fixed-weight sectors. All homogeneous completions of
+an eight-letter weight-32 sector form an [88-dimensional tensor family](research/homogeneous-dual-completion.md)
+with a literal endpoint. Run `make verify-neutral-duals`.
+
+The [F4 frame-recentering solver](research/f4-recentered-crossing-lattices.md)
+allows a nonbinary tensor to provide the regular frames for another exact
+full-coefficient search. Complete untruncated profiles are certified by
+finite polynomial identities and independently checked binary jets.
+Run `make verify-f4-recentered`.
+
+The [odd-cyclic matrix normal form](research/odd-cyclic-matrix-crossings.md)
+reduces its two cuts to repeated matrix blocks and scalar Fourier symbols.
+Its unweighted profile certificate has an all-degree floor `rho >= 3/4`;
+the recorded weighted finite search also gives no strict witness. Run
+`make verify-odd-cyclic`. These new constructions and reductions leave
+the achieved factoring exponent at `1/2`.
+
+The [modular parameter-descent theorem](research/modular-parameter-descent.md)
+allows nonregular monomials to be removed from both the state and operator
+parameter. Its exact reduced-dual compiler preserves every crossing piece;
+it does not improve the factoring exponent. Run `make verify-modular-descent`
+to compare it with the original unreduced recursion.
 
 The [typed rational strictification theorem](research/typed-rational-crossing-strictification.md)
 extends the binary pressure floor to scalar rational kernels with only

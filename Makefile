@@ -14,6 +14,26 @@ verify: verify-docs verify-frontier verify-arithmetic
 verify-docs:
 	python3 tools/check_docs.py
 
+.PHONY: verify-modular-descent
+verify-modular-descent:
+	python3 tools/check_modular_parameter_descent.py
+
+.PHONY: verify-smooth-norms verify-neutral-duals verify-f4-recentered verify-odd-cyclic
+verify-smooth-norms:
+	python3 tools/check_smooth_norm_gap.py
+	python3 tools/check_smooth_norm_relation.py
+	python3 tools/check_factored_norm_search.py
+
+verify-neutral-duals:
+	python3 tools/check_neutral_reflected_crossings.py
+	python3 tools/check_homogeneous_dual_completion.py
+
+verify-f4-recentered:
+	python3 tools/check_f4_recentered_lattices.py
+
+verify-odd-cyclic:
+	python3 tools/check_odd_cyclic_crossing.py
+
 verify-arithmetic:
 	python3 tools/check_dyadic_hyperbola.py
 	python3 tools/check_dyadic_orbit_aggregation.py
