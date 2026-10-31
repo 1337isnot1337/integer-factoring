@@ -91,7 +91,7 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 
 ## Current research frontier
 
-The latest [research checkpoint](research/constructive-frontier-checkpoint.md)
+The latest [research checkpoint](research/frontier-session-20261031.md)
 keeps the proved score at `1/2`. An
 [accelerated exact certificate](research/accelerated-interval-certificates.md)
 now treats `2^1636-1` modes with a rational upper bound less than `2e-980`
@@ -440,7 +440,7 @@ groups, so this operator theorem alone does not improve the evaluator.
 The [grouped inverse profile](research/grouped-cauchy-inverse-profile.md)
 determines the exact precision cost of a direct grouped factorization.
 
-The [31 October research checkpoint](research/constructive-frontier-checkpoint.md)
+The [earlier 31 October research checkpoint](research/constructive-frontier-checkpoint.md)
 collects the latest exact bounds, new construction families, reproducible
 search starts, and the remaining obligations for a score improvement.
 

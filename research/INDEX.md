@@ -1,5 +1,7 @@
 # Research index
 
+Latest: [31 October ordinary-proof research session](frontier-session-20261031.md) — complete score unchanged at 1/2; exact constructors, global charge obstructions, completed finite searches, and final validation.
+
 This index covers research notes on `main`. Open PRs can contain later work. Each note states its own assumptions, proof scope, and evidence. An obstruction to a specific construction is not a factoring lower bound.
 
 ## Proved machine bounds and their foundations

@@ -1,0 +1,1821 @@
+python3 tools/check_docs.py
+Checked local links in 195 Markdown files.
+python3 tools/check_piece_transfer.py
+{
+  "arithmetic": "integer and Fraction only",
+  "conditional_targets": [
+    {
+      "family_supplied": false,
+      "rho_denominator": 10,
+      "rho_numerator": 7,
+      "strict_half_exponent_margin": 2
+    },
+    {
+      "family_supplied": false,
+      "rho_denominator": 3,
+      "rho_numerator": 2,
+      "strict_half_exponent_margin": 1
+    },
+    {
+      "family_supplied": false,
+      "rho_denominator": 5,
+      "rho_numerator": 3,
+      "strict_half_exponent_margin": 7
+    },
+    {
+      "family_supplied": false,
+      "rho_denominator": 2,
+      "rho_numerator": 1,
+      "strict_half_exponent_margin": 2
+    }
+  ],
+  "invalid_parameter_negative_controls": 6,
+  "other_negative_controls": [
+    "rho=3/4 does not beat one half",
+    "floor without plus one"
+  ],
+  "pad_cases": 600,
+  "schedule_boundary_cases": 30,
+  "scope": "finite pad and cutoff arithmetic; conditional transfer theorem is separate"
+}
+python3 tools/check_boson_truncation.py
+{
+  "actual_one_part_family_cases": [
+    {
+      "cutoff": 1,
+      "expected_crossing_coefficient": "1",
+      "h": 1,
+      "truncated_crossing_coefficient": "0"
+    },
+    {
+      "cutoff": 2,
+      "expected_crossing_coefficient": "2",
+      "h": 2,
+      "truncated_crossing_coefficient": "0"
+    },
+    {
+      "cutoff": 3,
+      "expected_crossing_coefficient": "6",
+      "h": 3,
+      "truncated_crossing_coefficient": "0"
+    },
+    {
+      "cutoff": 4,
+      "expected_crossing_coefficient": "24",
+      "h": 4,
+      "truncated_crossing_coefficient": "0"
+    },
+    {
+      "cutoff": 5,
+      "expected_crossing_coefficient": "120",
+      "h": 5,
+      "truncated_crossing_coefficient": "0"
+    },
+    {
+      "cutoff": 6,
+      "expected_crossing_coefficient": "720",
+      "h": 6,
+      "truncated_crossing_coefficient": "0"
+    },
+    {
+      "cutoff": 7,
+      "expected_crossing_coefficient": "5040",
+      "h": 7,
+      "truncated_crossing_coefficient": "0"
+    },
+    {
+      "cutoff": 8,
+      "expected_crossing_coefficient": "40320",
+      "h": 8,
+      "truncated_crossing_coefficient": "0"
+    },
+    {
+      "cutoff": 9,
+      "expected_crossing_coefficient": "362880",
+      "h": 9,
+      "truncated_crossing_coefficient": "0"
+    },
+    {
+      "cutoff": 10,
+      "expected_crossing_coefficient": "3628800",
+      "h": 10,
+      "truncated_crossing_coefficient": "0"
+    },
+    {
+      "cutoff": 11,
+      "expected_crossing_coefficient": "39916800",
+      "h": 11,
+      "truncated_crossing_coefficient": "0"
+    },
+    {
+      "cutoff": 12,
+      "expected_crossing_coefficient": "479001600",
+      "h": 12,
+      "truncated_crossing_coefficient": "0"
+    }
+  ],
+  "asymptotic_or_factoring_runtime_test": false,
+  "full_operator_checks": "cutoff 3h contains every mode used in these linear-field tests",
+  "general_order_swap_cases": 96,
+  "repaired_order_swap_cases": 96,
+  "scope": "finite exact negative controls; the all-h obstruction has a written proof"
+}
+python3 tools/check_graded_space.py
+{
+  "claims_new_factoring_exponent": false,
+  "dimension_growth_cases": [
+    {
+      "gamma": "1/4",
+      "left_integer": "4",
+      "passes_necessary_condition_only": false,
+      "right_integer": "16",
+      "window": 4
+    },
+    {
+      "gamma": "1/3",
+      "left_integer": "4",
+      "passes_necessary_condition_only": false,
+      "right_integer": "8",
+      "window": 4
+    },
+    {
+      "gamma": "2/5",
+      "left_integer": "16",
+      "passes_necessary_condition_only": false,
+      "right_integer": "32",
+      "window": 4
+    },
+    {
+      "gamma": "3/7",
+      "left_integer": "64",
+      "passes_necessary_condition_only": false,
+      "right_integer": "128",
+      "window": 4
+    },
+    {
+      "gamma": "49/100",
+      "left_integer": "316912650057057350374175801344",
+      "passes_necessary_condition_only": false,
+      "right_integer": "1267650600228229401496703205376",
+      "window": 4
+    },
+    {
+      "gamma": "1/2",
+      "left_integer": "4",
+      "passes_necessary_condition_only": true,
+      "right_integer": "4",
+      "window": 4
+    },
+    {
+      "gamma": "3/5",
+      "left_integer": "64",
+      "passes_necessary_condition_only": true,
+      "right_integer": "32",
+      "window": 4
+    },
+    {
+      "gamma": "1/3",
+      "left_integer": "8",
+      "passes_necessary_condition_only": true,
+      "right_integer": "8",
+      "window": 8
+    },
+    {
+      "gamma": "1/4",
+      "left_integer": "8",
+      "passes_necessary_condition_only": false,
+      "right_integer": "16",
+      "window": 8
+    },
+    {
+      "gamma": "1/3",
+      "left_integer": "9",
+      "passes_necessary_condition_only": true,
+      "right_integer": "8",
+      "window": 9
+    }
+  ],
+  "finite_polynomial_piece_budgets": [
+    {
+      "budget_rejected": true,
+      "channel_exponent": 487,
+      "lambda": 256,
+      "pieces": 263169,
+      "required_rank_exponent": 512
+    },
+    {
+      "budget_rejected": true,
+      "channel_exponent": 973,
+      "lambda": 512,
+      "pieces": 1050625,
+      "required_rank_exponent": 1024
+    },
+    {
+      "budget_rejected": true,
+      "channel_exponent": 1946,
+      "lambda": 1024,
+      "pieces": 4198401,
+      "required_rank_exponent": 2048
+    },
+    {
+      "budget_rejected": true,
+      "channel_exponent": 7783,
+      "lambda": 4096,
+      "pieces": 67125249,
+      "required_rank_exponent": 8192
+    }
+  ],
+  "nonzero_scaled_crossing_rank_cases": 27,
+  "scope": "finite rank and integer checks; the asymptotic restriction has a written proof",
+  "zero_scale_negative_control_cases": 9
+}
+python3 tools/check_rectangular_profile.py
+{
+  "all_finite_geometry_certificate_cases": 3844,
+  "alpha_one_negative_controls": 4096,
+  "alpha_three_quarters_negative_controls": 4096,
+  "arithmetic": "integer and Fraction only",
+  "disk_interior_cases": 16384,
+  "finite_geometry_failed_shift_control": "33/50 at p=d=4",
+  "finite_geometry_tail_bound": "24857/40960 < 2/3",
+  "finite_geometry_uniform_margin": "1/500",
+  "finite_geometry_worst_upper_pair": [
+    4,
+    4
+  ],
+  "finite_two_row_product_and_iteration_cases": 64,
+  "finite_two_row_profile_cases": 3168,
+  "half_exponent_and_profile_cases": 4096,
+  "invalid_cost_negative_controls": 2,
+  "ordered_tree_cases": 2056,
+  "scope": "declared channel-profile minimax model; no runtime or rank lower bound",
+  "two_row_extremizer_and_recurrence_cases": 528,
+  "uniform_leaf_cases": 100
+}
+python3 tools/check_partition_channels.py --max-weight 6
+{
+  "binary_label_restrictions": [
+    {
+      "column_rank": 4,
+      "label_bits": 1,
+      "prime": 65521,
+      "row_rank": 4,
+      "weight": 2
+    },
+    {
+      "column_rank": 4,
+      "label_bits": 1,
+      "prime": 1000003,
+      "row_rank": 4,
+      "weight": 2
+    },
+    {
+      "column_rank": 16,
+      "label_bits": 2,
+      "prime": 65521,
+      "row_rank": 16,
+      "weight": 4
+    },
+    {
+      "column_rank": 16,
+      "label_bits": 2,
+      "prime": 1000003,
+      "row_rank": 16,
+      "weight": 4
+    },
+    {
+      "column_rank": 64,
+      "label_bits": 3,
+      "prime": 65521,
+      "row_rank": 64,
+      "weight": 6
+    },
+    {
+      "column_rank": 64,
+      "label_bits": 3,
+      "prime": 1000003,
+      "row_rank": 64,
+      "weight": 6
+    }
+  ],
+  "central_pieces": [
+    {
+      "declared_channels": 4,
+      "matrix_dimension": 1,
+      "modular_ranks": [
+        {
+          "column_rank": 1,
+          "prime": 65521,
+          "row_rank": 1
+        },
+        {
+          "column_rank": 1,
+          "prime": 1000003,
+          "row_rank": 1
+        }
+      ],
+      "partition_count": 1,
+      "splittable_partitions": 1,
+      "top_channel_dimension": 2,
+      "top_channel_rank_mod_1000003": 1,
+      "weight": 1
+    },
+    {
+      "declared_channels": 12,
+      "matrix_dimension": 4,
+      "modular_ranks": [
+        {
+          "column_rank": 4,
+          "prime": 65521,
+          "row_rank": 4
+        },
+        {
+          "column_rank": 4,
+          "prime": 1000003,
+          "row_rank": 4
+        }
+      ],
+      "partition_count": 2,
+      "splittable_partitions": 3,
+      "top_channel_dimension": 5,
+      "top_channel_rank_mod_1000003": 4,
+      "weight": 2
+    },
+    {
+      "declared_channels": 30,
+      "matrix_dimension": 9,
+      "modular_ranks": [
+        {
+          "column_rank": 9,
+          "prime": 65521,
+          "row_rank": 9
+        },
+        {
+          "column_rank": 9,
+          "prime": 1000003,
+          "row_rank": 9
+        }
+      ],
+      "partition_count": 3,
+      "splittable_partitions": 6,
+      "top_channel_dimension": 11,
+      "top_channel_rank_mod_1000003": 9,
+      "weight": 3
+    },
+    {
+      "declared_channels": 67,
+      "matrix_dimension": 25,
+      "modular_ranks": [
+        {
+          "column_rank": 25,
+          "prime": 65521,
+          "row_rank": 25
+        },
+        {
+          "column_rank": 25,
+          "prime": 1000003,
+          "row_rank": 25
+        }
+      ],
+      "partition_count": 5,
+      "splittable_partitions": 14,
+      "top_channel_dimension": 22,
+      "top_channel_rank_mod_1000003": 21,
+      "weight": 4
+    },
+    {
+      "declared_channels": 139,
+      "matrix_dimension": 49,
+      "modular_ranks": [
+        {
+          "column_rank": 49,
+          "prime": 65521,
+          "row_rank": 49
+        },
+        {
+          "column_rank": 49,
+          "prime": 1000003,
+          "row_rank": 49
+        }
+      ],
+      "partition_count": 7,
+      "splittable_partitions": 25,
+      "top_channel_dimension": 42,
+      "top_channel_rank_mod_1000003": 42,
+      "weight": 5
+    },
+    {
+      "declared_channels": 272,
+      "matrix_dimension": 121,
+      "modular_ranks": [
+        {
+          "column_rank": 121,
+          "prime": 65521,
+          "row_rank": 121
+        },
+        {
+          "column_rank": 121,
+          "prime": 1000003,
+          "row_rank": 121
+        }
+      ],
+      "partition_count": 11,
+      "splittable_partitions": 53,
+      "top_channel_dimension": 77,
+      "top_channel_rank_mod_1000003": 77,
+      "weight": 6
+    }
+  ],
+  "crossing_identity_entries": 98,
+  "first_declared_channel_saving": {
+    "channels": 28629,
+    "matrix_dimension": 30976,
+    "weight": 15
+  },
+  "natural_gram_counterexample": {
+    "determinant": -25920,
+    "matrix": [
+      [
+        70,
+        0,
+        0,
+        34
+      ],
+      [
+        0,
+        2,
+        -6,
+        0
+      ],
+      [
+        0,
+        -10,
+        -6,
+        0
+      ],
+      [
+        10,
+        0,
+        0,
+        10
+      ]
+    ],
+    "middle_principal_minor": -72,
+    "weight": 2
+  },
+  "negative_controls": [
+    "omitted alternating sign",
+    "omitted annihilation multiplicity"
+  ],
+  "operator_exchange_entries": 1202,
+  "scope": "finite integer identities and exact finite-field ranks; no asymptotic rank claim",
+  "source_commit": "16a5ce41304fcdaea4e0be7c132e1c361dc26da5"
+}
+python3 tools/check_homogeneous_duals.py
+{
+  "crossing_sum_entries": 98,
+  "duality_entries": 918,
+  "negative_controls": [
+    "omitted grading sign",
+    "omitted Gram inverse"
+  ],
+  "new_factoring_exponent_claimed": false,
+  "order_exchange_entries": 1202,
+  "scope": "exact finite duality and crossing checks; all-weight and cost proofs are separate",
+  "sl2_commutator_basis_cases": 66,
+  "weights": [
+    {
+      "dimension": 1,
+      "h": 1,
+      "inverse_polynomial_degree": 0,
+      "largest_dual_coefficient_bits": 1,
+      "scale": "1",
+      "scale_bits": 1
+    },
+    {
+      "dimension": 2,
+      "h": 2,
+      "inverse_polynomial_degree": 1,
+      "largest_dual_coefficient_bits": 3,
+      "scale": "6",
+      "scale_bits": 3
+    },
+    {
+      "dimension": 3,
+      "h": 3,
+      "inverse_polynomial_degree": 2,
+      "largest_dual_coefficient_bits": 12,
+      "scale": "2400",
+      "scale_bits": 12
+    },
+    {
+      "dimension": 5,
+      "h": 4,
+      "inverse_polynomial_degree": 3,
+      "largest_dual_coefficient_bits": 28,
+      "scale": "177811200",
+      "scale_bits": 28
+    },
+    {
+      "dimension": 7,
+      "h": 5,
+      "inverse_polynomial_degree": 4,
+      "largest_dual_coefficient_bits": 53,
+      "scale": "4778472583987200",
+      "scale_bits": 53
+    },
+    {
+      "dimension": 11,
+      "h": 6,
+      "inverse_polynomial_degree": 5,
+      "largest_dual_coefficient_bits": 87,
+      "scale": "76957778812372254720000000",
+      "scale_bits": 86
+    },
+    {
+      "dimension": 15,
+      "h": 7,
+      "inverse_polynomial_degree": 6,
+      "largest_dual_coefficient_bits": 130,
+      "scale": "1109175107815230918268939476664320000000",
+      "scale_bits": 130
+    },
+    {
+      "dimension": 22,
+      "h": 8,
+      "inverse_polynomial_degree": 7,
+      "largest_dual_coefficient_bits": 185,
+      "scale": "19977225766484519521630944476426436555571200000000000000",
+      "scale_bits": 184
+    }
+  ]
+}
+python3 tools/check_binary_prefix_channel.py
+{
+  "binary_channel_cases": [
+    {
+      "binary_labels": 2,
+      "distinct_unions": 3,
+      "label_bits": 1,
+      "rank_mod_1000003": 4,
+      "rank_mod_65521": 4,
+      "top_channel_dimension": 5,
+      "weight": 2
+    },
+    {
+      "binary_labels": 4,
+      "distinct_unions": 9,
+      "label_bits": 2,
+      "rank_mod_1000003": 16,
+      "rank_mod_65521": 16,
+      "top_channel_dimension": 22,
+      "weight": 4
+    },
+    {
+      "binary_labels": 8,
+      "distinct_unions": 27,
+      "label_bits": 3,
+      "rank_mod_1000003": 64,
+      "rank_mod_65521": 64,
+      "top_channel_dimension": 77,
+      "weight": 6
+    },
+    {
+      "binary_labels": 16,
+      "distinct_unions": 78,
+      "label_bits": 4,
+      "rank_mod_1000003": 231,
+      "rank_mod_65521": 231,
+      "top_channel_dimension": 231,
+      "weight": 8
+    }
+  ],
+  "bounded_prefix_cases": 12,
+  "largest_part_class_cases": 189,
+  "negative_controls": [
+    "lexicographic suffix instead of prefix",
+    "omitted reserved ones"
+  ],
+  "no_ones_injection_inputs": 384,
+  "prefix_omission_bound_cases": 102,
+  "replacement_fiber_parameter_cases": 171,
+  "replacement_map_inputs": 24164,
+  "reserved_one_splits": 3496,
+  "scope": "finite combinatorial maps and actual binary-prefix channel ranks; no complete-piece rank claim",
+  "triangular_coefficient_cases": 15520
+}
+python3 tools/check_near_ones_channels.py
+{
+  "embedding_inputs": 276,
+  "escaping_all_ones_coefficients": [
+    {
+      "coefficient": 4,
+      "input_defects": [
+        0,
+        0
+      ],
+      "output_defect": 2,
+      "weight": 2
+    },
+    {
+      "coefficient": 18,
+      "input_defects": [
+        0,
+        0
+      ],
+      "output_defect": 4,
+      "weight": 3
+    },
+    {
+      "coefficient": 96,
+      "input_defects": [
+        0,
+        0
+      ],
+      "output_defect": 6,
+      "weight": 4
+    },
+    {
+      "coefficient": 600,
+      "input_defects": [
+        0,
+        0
+      ],
+      "output_defect": 8,
+      "weight": 5
+    },
+    {
+      "coefficient": 4320,
+      "input_defects": [
+        0,
+        0
+      ],
+      "output_defect": 10,
+      "weight": 6
+    },
+    {
+      "coefficient": 35280,
+      "input_defects": [
+        0,
+        0
+      ],
+      "output_defect": 12,
+      "weight": 7
+    },
+    {
+      "coefficient": 322560,
+      "input_defects": [
+        0,
+        0
+      ],
+      "output_defect": 14,
+      "weight": 8
+    },
+    {
+      "coefficient": 3265920,
+      "input_defects": [
+        0,
+        0
+      ],
+      "output_defect": 16,
+      "weight": 9
+    },
+    {
+      "coefficient": 36288000,
+      "input_defects": [
+        0,
+        0
+      ],
+      "output_defect": 18,
+      "weight": 10
+    },
+    {
+      "coefficient": 439084800,
+      "input_defects": [
+        0,
+        0
+      ],
+      "output_defect": 20,
+      "weight": 11
+    },
+    {
+      "coefficient": 5748019200,
+      "input_defects": [
+        0,
+        0
+      ],
+      "output_defect": 22,
+      "weight": 12
+    }
+  ],
+  "negative_control": "cutting output defect at the sum of the two input defects removes a nonzero all-ones coefficient",
+  "nonzero_defect_support_cases": 2349,
+  "one_two_label_cases": [
+    {
+      "distinct_unions": 3,
+      "labels": 2,
+      "pair_dimension": 4,
+      "rank_mod_1000003": 4,
+      "rank_mod_65521": 4,
+      "weight": 2
+    },
+    {
+      "distinct_unions": 3,
+      "labels": 2,
+      "pair_dimension": 4,
+      "rank_mod_1000003": 4,
+      "rank_mod_65521": 4,
+      "weight": 3
+    },
+    {
+      "distinct_unions": 5,
+      "labels": 3,
+      "pair_dimension": 9,
+      "rank_mod_1000003": 9,
+      "rank_mod_65521": 9,
+      "weight": 4
+    },
+    {
+      "distinct_unions": 5,
+      "labels": 3,
+      "pair_dimension": 9,
+      "rank_mod_1000003": 9,
+      "rank_mod_65521": 9,
+      "weight": 5
+    },
+    {
+      "distinct_unions": 7,
+      "labels": 4,
+      "pair_dimension": 16,
+      "rank_mod_1000003": 16,
+      "rank_mod_65521": 16,
+      "weight": 6
+    },
+    {
+      "distinct_unions": 7,
+      "labels": 4,
+      "pair_dimension": 16,
+      "rank_mod_1000003": 16,
+      "rank_mod_65521": 16,
+      "weight": 7
+    },
+    {
+      "distinct_unions": 9,
+      "labels": 5,
+      "pair_dimension": 25,
+      "rank_mod_1000003": 25,
+      "rank_mod_65521": 25,
+      "weight": 8
+    }
+  ],
+  "scope": "defect embeddings, exact support identities, and finite top-channel ranks; no new factoring rate",
+  "source_commit": "16a5ce41304fcdaea4e0be7c132e1c361dc26da5",
+  "triangular_coefficient_cases": 830,
+  "union_embedding_cases": 7164
+}
+python3 tools/check_primary_central_gram.py
+{
+  "covariance_and_ladder_vectors": 276,
+  "direct_central_entries": 291,
+  "negative_control": "omitting the row swap leaves a negative direction at h=4",
+  "new_factoring_exponent_claimed": false,
+  "scope": "exact finite primitive central-piece identities and ranks; no asymptotic image estimate",
+  "skew_symmetry_vectors": 303,
+  "weights": [
+    {
+      "central_primary_rank": 1,
+      "coefficient_magnitudes": [
+        "1",
+        "3/2",
+        "1"
+      ],
+      "h": 1,
+      "individual_primary_fusion_ranks": [
+        1,
+        0,
+        1
+      ],
+      "primitive_dimension": 1,
+      "stacked_fusion_rank": 1
+    },
+    {
+      "central_primary_rank": 1,
+      "coefficient_magnitudes": [
+        "1",
+        "25/12",
+        "29/10",
+        "5/2",
+        "1"
+      ],
+      "h": 2,
+      "individual_primary_fusion_ranks": [
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "primitive_dimension": 1,
+      "stacked_fusion_rank": 1
+    },
+    {
+      "central_primary_rank": 1,
+      "coefficient_magnitudes": [
+        "1",
+        "49/20",
+        "309/70",
+        "6",
+        "52/9",
+        "7/2",
+        "1"
+      ],
+      "h": 3,
+      "individual_primary_fusion_ranks": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "primitive_dimension": 1,
+      "stacked_fusion_rank": 1
+    },
+    {
+      "central_primary_rank": 4,
+      "coefficient_magnitudes": [
+        "1",
+        "761/280",
+        "2369/420",
+        "267/28",
+        "2539/198",
+        "579/44",
+        "251/26",
+        "9/2",
+        "1"
+      ],
+      "h": 4,
+      "individual_primary_fusion_ranks": [
+        1,
+        0,
+        1,
+        0,
+        2,
+        0,
+        3,
+        1,
+        3
+      ],
+      "primitive_dimension": 2,
+      "stacked_fusion_rank": 4
+    },
+    {
+      "central_primary_rank": 4,
+      "coefficient_magnitudes": [
+        "1",
+        "7381/2520",
+        "30791/4620",
+        "1081/84",
+        "53783/2574",
+        "1453/52",
+        "299/10",
+        "737/30",
+        "247/17",
+        "11/2",
+        "1"
+      ],
+      "h": 5,
+      "individual_primary_fusion_ranks": [
+        1,
+        0,
+        1,
+        0,
+        2,
+        0,
+        3,
+        1,
+        3,
+        1,
+        3
+      ],
+      "primitive_dimension": 2,
+      "stacked_fusion_rank": 4
+    },
+    {
+      "central_primary_rank": 16,
+      "coefficient_magnitudes": [
+        "1",
+        "86021/27720",
+        "452993/60060",
+        "14741/924",
+        "75473/2574",
+        "509/11",
+        "68162/1105",
+        "17342/255",
+        "19468/323",
+        "3133/76",
+        "857/42",
+        "13/2",
+        "1"
+      ],
+      "h": 6,
+      "individual_primary_fusion_ranks": [
+        1,
+        0,
+        1,
+        1,
+        2,
+        2,
+        4,
+        4,
+        7,
+        5,
+        10,
+        6,
+        10
+      ],
+      "primitive_dimension": 4,
+      "stacked_fusion_rank": 16
+    }
+  ]
+}
+python3 tools/check_modular_crossing.py
+{
+  "checks": {
+    "determinant_operator_entries": 5508,
+    "general_crossing_entries": 288,
+    "general_exchange_entries": 5024,
+    "homogeneous_crossing_entries": 641,
+    "homogeneous_exchange_entries": 41153,
+    "integral_cancellation_entries": 209,
+    "normalized_duality_entries": 24,
+    "quadratic_energy_labels": 248,
+    "regular_partition_counts": 51,
+    "state_ideal_operator_entries": 5280
+  },
+  "homogeneous_characteristic_two": [
+    {
+      "all_shifts_exchange_and_sum_checked": true,
+      "central_column_rank": 2,
+      "central_row_rank": 2,
+      "label_count": 2,
+      "prime": 2,
+      "top_channel_ambient_dimension": 5,
+      "weight": 8
+    },
+    {
+      "all_shifts_exchange_and_sum_checked": true,
+      "central_column_rank": 12,
+      "central_row_rank": 12,
+      "label_count": 5,
+      "prime": 2,
+      "top_channel_ambient_dimension": 23,
+      "weight": 16
+    },
+    {
+      "central_column_rank": 261,
+      "central_row_rank": 261,
+      "label_count": 23,
+      "prime": 2,
+      "top_channel_ambient_dimension": 276,
+      "weight": 32
+    }
+  ],
+  "normalized_original_family": [
+    {
+      "label_bits": 1,
+      "prime": 2,
+      "row_column_rank_profile": [
+        [
+          -16,
+          1,
+          4
+        ],
+        [
+          -15,
+          0,
+          0
+        ],
+        [
+          -14,
+          1,
+          2
+        ],
+        [
+          -13,
+          0,
+          0
+        ],
+        [
+          -12,
+          0,
+          0
+        ],
+        [
+          -11,
+          0,
+          0
+        ],
+        [
+          -10,
+          1,
+          2
+        ],
+        [
+          -9,
+          0,
+          0
+        ],
+        [
+          -8,
+          0,
+          0
+        ],
+        [
+          -7,
+          0,
+          0
+        ],
+        [
+          -6,
+          1,
+          2
+        ],
+        [
+          -5,
+          0,
+          0
+        ],
+        [
+          -4,
+          0,
+          0
+        ],
+        [
+          -3,
+          0,
+          0
+        ],
+        [
+          -2,
+          1,
+          2
+        ],
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          0,
+          0
+        ],
+        [
+          4,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          6,
+          2,
+          1
+        ],
+        [
+          7,
+          0,
+          0
+        ],
+        [
+          8,
+          0,
+          0
+        ],
+        [
+          9,
+          0,
+          0
+        ],
+        [
+          10,
+          2,
+          1
+        ],
+        [
+          11,
+          0,
+          0
+        ],
+        [
+          12,
+          0,
+          0
+        ],
+        [
+          13,
+          0,
+          0
+        ],
+        [
+          14,
+          2,
+          1
+        ],
+        [
+          15,
+          0,
+          0
+        ],
+        [
+          16,
+          4,
+          1
+        ]
+      ],
+      "weight": 8
+    },
+    {
+      "label_bits": 1,
+      "prime": 3,
+      "row_column_rank_profile": [
+        [
+          -4,
+          1,
+          2
+        ],
+        [
+          -3,
+          2,
+          4
+        ],
+        [
+          -2,
+          2,
+          2
+        ],
+        [
+          -1,
+          2,
+          2
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          2
+        ],
+        [
+          3,
+          4,
+          2
+        ],
+        [
+          4,
+          1,
+          1
+        ]
+      ],
+      "weight": 2
+    },
+    {
+      "label_bits": 2,
+      "prime": 5,
+      "row_column_rank_profile": [
+        [
+          -8,
+          1,
+          16
+        ],
+        [
+          -7,
+          2,
+          12
+        ],
+        [
+          -6,
+          4,
+          14
+        ],
+        [
+          -5,
+          6,
+          14
+        ],
+        [
+          -4,
+          8,
+          16
+        ],
+        [
+          -3,
+          11,
+          14
+        ],
+        [
+          -2,
+          12,
+          15
+        ],
+        [
+          -1,
+          10,
+          15
+        ],
+        [
+          0,
+          15,
+          15
+        ],
+        [
+          1,
+          16,
+          13
+        ],
+        [
+          2,
+          16,
+          15
+        ],
+        [
+          3,
+          15,
+          11
+        ],
+        [
+          4,
+          16,
+          9
+        ],
+        [
+          5,
+          15,
+          7
+        ],
+        [
+          6,
+          16,
+          4
+        ],
+        [
+          7,
+          14,
+          2
+        ],
+        [
+          8,
+          16,
+          1
+        ]
+      ],
+      "weight": 4
+    }
+  ],
+  "odd_prime_power_pairings": [
+    {
+      "dimension": 1,
+      "pairing_rank": 1,
+      "prime": 3,
+      "weight": 3
+    },
+    {
+      "dimension": 8,
+      "pairing_rank": 8,
+      "prime": 3,
+      "weight": 9
+    },
+    {
+      "dimension": 5,
+      "pairing_rank": 5,
+      "prime": 5,
+      "weight": 5
+    }
+  ],
+  "scope": "finite exact modular identities and ranks; no asymptotic rank improvement",
+  "source_revision": "16a5ce41304fcdaea4e0be7c132e1c361dc26da5",
+  "status": "pass"
+}
+python3 tools/check_sparse_divisor_nonzeroness.py
+{
+  "central_binomial_prime_supply_cases": 64,
+  "complete_prime_factorization_cases": 126,
+  "constructed_prime_factorization_cases": 1024,
+  "cyclic_monomial_multiplication_cases": 373,
+  "cyclic_ring_queries": 1158077,
+  "digit_weight_substitution_cases": 2550,
+  "explicit_bound_examples": [
+    {
+      "input_bit_bound": 64,
+      "log2_K": 56
+    },
+    {
+      "input_bit_bound": 256,
+      "log2_K": 150
+    },
+    {
+      "input_bit_bound": 1024,
+      "log2_K": 416
+    },
+    {
+      "input_bit_bound": 4096,
+      "log2_K": 1204
+    },
+    {
+      "input_bit_bound": 16384,
+      "log2_K": 3627
+    },
+    {
+      "input_bit_bound": 65536,
+      "log2_K": 11411
+    }
+  ],
+  "finite_divisor_bound_cases": 4094,
+  "negative_controls": [
+    "single modulus three misses X^3+X^9 over F2",
+    "unweighted parity misses two permitted divisors",
+    "omitting subtraction of X returns divisor one",
+    "duplicate witnesses cancel all F2 coefficients"
+  ],
+  "prefix_queries": 4359,
+  "prime_input_endpoint_cases": 90,
+  "prime_supply_cutoff_cases": 2041,
+  "scope": "exact sparse-ring identities and finite prefix recovery with an exhaustive divisor oracle; no fast evaluator implementation or improved crossing family",
+  "smallest_prime_factor_recovery_cases": 378,
+  "sparse_support_characteristic_cases": 8079,
+  "vanishing_reductions_checked_against_anchor_product": 768
+}
+python3 -m unittest discover -s tests -v
+test_elementary_blocks_keep_the_exact_product_certificate (test_block_smith_crossings.BlockSmithTests.test_elementary_blocks_keep_the_exact_product_certificate) ... ok
+test_visible_pivots_do_not_certify_missing_tail_as_zero (test_block_smith_crossings.BlockSmithTests.test_visible_pivots_do_not_certify_missing_tail_as_zero) ... ok
+test_dense_nilpotent_cancellation_is_not_a_path_cost (test_cancellation_module_automata.CancellationModuleTests.test_dense_nilpotent_cancellation_is_not_a_path_cost) ... ok
+test_free_boundary_word_counts_are_submultiplicative (test_cancellation_module_automata.CancellationModuleTests.test_free_boundary_word_counts_are_submultiplicative) ... ok
+test_full_tail_prevents_false_exact_zero (test_cancellation_module_automata.CancellationModuleTests.test_full_tail_prevents_false_exact_zero) ... ok
+test_terminal_cancellation_and_precision_hierarchy (test_cancellation_module_automata.CancellationModuleTests.test_terminal_cancellation_and_precision_hierarchy) ... ok
+test_strict_certificate_gap_and_literal_coefficients (test_cancellation_module_crossing.CoupledCrossingTests.test_strict_certificate_gap_and_literal_coefficients) ... ok
+test_percent_encoded_file (test_docs.LinkCheckerTests.test_percent_encoded_file) ... ok
+test_rejects_escaping_repository (test_docs.LinkCheckerTests.test_rejects_escaping_repository) ... ok
+test_reports_missing_file (test_docs.LinkCheckerTests.test_reports_missing_file) ... ok
+test_valid_links_and_fences (test_docs.LinkCheckerTests.test_valid_links_and_fences) ... ok
+test_companion_closure_includes_rank_one_state (test_exact_module_orbits.ExactModuleOrbitTests.test_companion_closure_includes_rank_one_state) ... ok
+test_nonunit_pivots_and_regular_remainders (test_exact_module_orbits.ExactModuleOrbitTests.test_nonunit_pivots_and_regular_remainders) ... ok
+test_rational_rank_deficient_lattice (test_exact_module_orbits.ExactModuleOrbitTests.test_rational_rank_deficient_lattice) ... ok
+test_zero_channel_is_an_exact_dead_transition (test_exact_module_orbits.ExactModuleOrbitTests.test_zero_channel_is_an_exact_dead_transition) ... ok
+test_failure_is_not_reported_as_no_overlap (test_find_overlap.OverlapSearchTests.test_failure_is_not_reported_as_no_overlap) ... ok
+test_pagination_is_flattened_and_bad_shape_is_rejected (test_find_overlap.OverlapSearchTests.test_pagination_is_flattened_and_bad_shape_is_rejected) ... ok
+test_search_reports_matches_from_each_source_and_excludes_prs_from_issues (test_find_overlap.OverlapSearchTests.test_search_reports_matches_from_each_source_and_excludes_prs_from_issues) ... ok
+test_active_compressed_channels_without_large_grid (test_grid_level.GridLevelTests.test_active_compressed_channels_without_large_grid) ... ok
+test_active_rank56_mixed_piece_without_grid_materialization (test_grid_level.GridLevelTests.test_active_rank56_mixed_piece_without_grid_materialization) ... ok
+test_complete_signed_and_modular_suite (test_grid_level.GridLevelTests.test_complete_signed_and_modular_suite) ... ok
+test_state_cap_and_invalid_inputs (test_grid_level.GridLevelTests.test_state_cap_and_invalid_inputs) ... ok
+test_zero_width (test_grid_level.GridLevelTests.test_zero_width) ... ok
+test_all_small_weighted_graphs_against_independent_spec (test_grouping.GroupingTests.test_all_small_weighted_graphs_against_independent_spec) ... ok
+test_certificate_detects_both_failure_types (test_grouping.GroupingTests.test_certificate_detects_both_failure_types) ... ok
+test_demo_contains_recomputed_certificates (test_grouping.GroupingTests.test_demo_contains_recomputed_certificates) ... ok
+test_empty_graph (test_grouping.GroupingTests.test_empty_graph) ... ok
+test_invalid_graphs (test_grouping.GroupingTests.test_invalid_graphs) ... ok
+test_invalid_parameters_and_colorings (test_grouping.GroupingTests.test_invalid_parameters_and_colorings) ... ok
+test_matching_star_and_zero_examples (test_grouping.GroupingTests.test_matching_star_and_zero_examples) ... ok
+test_nonexistence_is_distinct_from_a_search_cap (test_grouping.GroupingTests.test_nonexistence_is_distinct_from_a_search_cap) ... ok
+test_normalization_and_ordered_total (test_grouping.GroupingTests.test_normalization_and_ordered_total) ... ok
+test_safe_power_and_threshold (test_grouping.GroupingTests.test_safe_power_and_threshold) ... ok
+test_all_binary_message_maps_and_composite_moduli (test_half_clique_codec.HalfCliqueCodecTests.test_all_binary_message_maps_and_composite_moduli) ... ok
+test_grouping_internal_equalities_reversed_orientation_and_empty_group (test_half_clique_codec.HalfCliqueCodecTests.test_grouping_internal_equalities_reversed_orientation_and_empty_group) ... ok
+test_insufficient_width_is_rejected (test_half_clique_codec.HalfCliqueCodecTests.test_insufficient_width_is_rejected) ... ok
+test_off_diagonal_flatten_round_trip (test_half_clique_codec.HalfCliqueCodecTests.test_off_diagonal_flatten_round_trip) ... ok
+test_one_endpoint_chunk_reversal_is_detected (test_half_clique_codec.HalfCliqueCodecTests.test_one_endpoint_chunk_reversal_is_detected) ... ok
+test_padding_bits_are_forced_to_zero (test_half_clique_codec.HalfCliqueCodecTests.test_padding_bits_are_forced_to_zero) ... ok
+test_zero_diagonal_codec_on_arbitrary_signed_tables (test_half_clique_codec.HalfCliqueCodecTests.test_zero_diagonal_codec_on_arbitrary_signed_tables) ... ok
+test_minimal_boundary_rates_need_a_limsup (test_minimal_boundary_modules.MinimalBoundaryModuleTests.test_minimal_boundary_rates_need_a_limsup) ... ok
+test_observable_quotient_removes_fixed_precision_rate_failure (test_minimal_boundary_modules.MinimalBoundaryModuleTests.test_observable_quotient_removes_fixed_precision_rate_failure) ... ok
+test_physical_choices_are_grouped_not_counted (test_minimal_boundary_modules.MinimalBoundaryModuleTests.test_physical_choices_are_grouped_not_counted) ... ok
+test_rational_reduction_and_finite_window (test_minimal_boundary_modules.MinimalBoundaryModuleTests.test_rational_reduction_and_finite_window) ... ok
+test_coarse_bounds_and_summable_error_certificate (test_parameters.ParameterTests.test_coarse_bounds_and_summable_error_certificate) ... ok
+test_input_validation (test_parameters.ParameterTests.test_input_validation) ... ok
+test_threshold_boundaries (test_parameters.ParameterTests.test_threshold_boundaries) ... ok
+test_binary_pairing_profile (test_sparse_holonomy_singletons.SparseHolonomySingletonTests.test_binary_pairing_profile) ... ok
+test_filtered_gaussian_encoding (test_sparse_holonomy_singletons.SparseHolonomySingletonTests.test_filtered_gaussian_encoding) ... ok
+test_nonbinary_weights_and_exact_unit_recurrence (test_sparse_holonomy_singletons.SparseHolonomySingletonTests.test_nonbinary_weights_and_exact_unit_recurrence) ... ok
+
+----------------------------------------------------------------------
+Ran 50 tests in 2.493s
+
+OK
+python3 -m unittest tools.check_crossing -v
+test_all_base_entries (tools.check_crossing.CrossingCompressionTests.test_all_base_entries) ... ok
+test_full_row_and_column_channel_encodings (tools.check_crossing.CrossingCompressionTests.test_full_row_and_column_channel_encodings) ... ok
+test_integer_channel_ranks (tools.check_crossing.CrossingCompressionTests.test_integer_channel_ranks) ... ok
+test_rank_width_envelopes (tools.check_crossing.CrossingCompressionTests.test_rank_width_envelopes) ... ok
+test_scaled_coefficients (tools.check_crossing.CrossingCompressionTests.test_scaled_coefficients) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 2.084s
+
+OK
+python3 tools/check_coefficient_basis.py
+{
+  "method": "exact integer minors for rational kernel lines",
+  "scope": "linear span of the symmetric coefficient matrices A_i",
+  "results": [
+    {
+      "t": 2,
+      "hyperplane_subsets": 15,
+      "distinct_central_nonzero_lines": 13,
+      "minimum_rank_product": 921600,
+      "central_row_rank": 960,
+      "unique_minimizer_coefficients": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "t": 4,
+      "hyperplane_subsets": 210,
+      "distinct_central_nonzero_lines": 196,
+      "minimum_rank_product": 1750350168064,
+      "central_row_rank": 1323008,
+      "unique_minimizer_coefficients": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "t": 6,
+      "hyperplane_subsets": 3003,
+      "distinct_central_nonzero_lines": 2913,
+      "minimum_rank_product": 4009028576958480384,
+      "central_row_rank": 2002255872,
+      "unique_minimizer_coefficients": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}
+python3 tools/parameters.py
+{
+  "kind": "recurrence_parameters_not_a_factoring_benchmark",
+  "rho": 0.9006129101714669,
+  "alpha": 0.07551046810477115,
+  "rational_rho": "281/312",
+  "rational_alpha": 0.07548794932066111,
+  "levels": [
+    {
+      "d": 0,
+      "K_bit_length": 6,
+      "D": 2304,
+      "B": 6,
+      "G_bit_length": 40,
+      "log2_input_length_threshold": 223.39850002884623
+    },
+    {
+      "d": 1,
+      "K_bit_length": 80,
+      "D": 2401,
+      "B": 80,
+      "G_bit_length": 192,
+      "log2_input_length_threshold": 3174.3760004615397
+    },
+    {
+      "d": 2,
+      "K_bit_length": 383,
+      "D": 2500,
+      "B": 383,
+      "G_bit_length": 800,
+      "log2_input_length_threshold": 15286.762399611707
+    },
+    {
+      "d": 3,
+      "K_bit_length": 1599,
+      "D": 2601,
+      "B": 1599,
+      "G_bit_length": 3234,
+      "log2_input_length_threshold": 63926.37662578643
+    },
+    {
+      "d": 4,
+      "K_bit_length": 6467,
+      "D": 2704,
+      "B": 6467,
+      "G_bit_length": 12972,
+      "log2_input_length_threshold": 258658.91595051275
+    }
+  ]
+}
+python3 tools/check_k6_sharp_rate.py
+{
+  "beta_gt_one_over_29": true,
+  "beta_lt_one_over_28_negative_control": true,
+  "integer_margin_above_one_over_29": "62137326438020969536606985605",
+  "integer_margin_below_one_over_28": "6839384139039855375089089873",
+  "one_step_cases": 918,
+  "product_cases": 702,
+  "schedule_levels": 4,
+  "scope": "finite exact arithmetic; ordinary asymptotic proof is separate"
+}
+python3 tools/check_half_rate.py
+{
+  "explicit_pad_cases": 240,
+  "largest_tested_bit_length_parameter_bits": 126560,
+  "negative_controls": [
+    "missing floor-plus-one",
+    "input below top cutoff"
+  ],
+  "prefix_inputs": 1023,
+  "prefix_queries": 9227,
+  "schedule_and_top_boundary_cases": 60,
+  "scope": "finite arithmetic and prefix driver; no large evaluator or asymptotic test",
+  "small_input_convention_cases": 2
+}
+python3 tools/check_half_piece_ranks.py --no-numpy
+{"central_column_factor_pass": true, "dimension": 2, "domain": "full_partitions", "h": 2, "identity_pass": true, "max_rank_product": 16, "prime": 65521, "ranks": [{"col": 4, "row": 1, "row_channel_bound": 1, "s": -4}, {"col": 4, "row": 2, "row_channel_bound": 2, "s": -3}, {"col": 4, "row": 3, "row_channel_bound": 4, "s": -2}, {"col": 4, "row": 3, "row_channel_bound": 7, "s": -1}, {"col": 4, "row": 4, "row_channel_bound": 12, "s": 0}, {"col": 4, "row": 4, "row_channel_bound": 18, "s": 1}, {"col": 4, "row": 4, "row_channel_bound": 28, "s": 2}, {"col": 2, "row": 4, "row_channel_bound": 41, "s": 3}, {"col": 1, "row": 4, "row_channel_bound": 60, "s": 4}]}
+{"central_column_factor_pass": true, "dimension": 3, "domain": "full_partitions", "h": 3, "identity_pass": true, "max_rank_product": 81, "prime": 65521, "ranks": [{"col": 9, "row": 1, "row_channel_bound": 1, "s": -6}, {"col": 9, "row": 2, "row_channel_bound": 2, "s": -5}, {"col": 9, "row": 4, "row_channel_bound": 4, "s": -4}, {"col": 9, "row": 6, "row_channel_bound": 7, "s": -3}, {"col": 9, "row": 8, "row_channel_bound": 12, "s": -2}, {"col": 9, "row": 7, "row_channel_bound": 19, "s": -1}, {"col": 9, "row": 9, "row_channel_bound": 30, "s": 0}, {"col": 9, "row": 9, "row_channel_bound": 44, "s": 1}, {"col": 9, "row": 9, "row_channel_bound": 65, "s": 2}, {"col": 6, "row": 9, "row_channel_bound": 93, "s": 3}, {"col": 4, "row": 9, "row_channel_bound": 132, "s": 4}, {"col": 2, "row": 9, "row_channel_bound": 183, "s": 5}, {"col": 1, "row": 9, "row_channel_bound": 253, "s": 6}]}
+{"central_column_factor_pass": true, "dimension": 5, "domain": "full_partitions", "h": 4, "identity_pass": true, "max_rank_product": 625, "prime": 65521, "ranks": [{"col": 25, "row": 1, "row_channel_bound": 1, "s": -8}, {"col": 25, "row": 2, "row_channel_bound": 2, "s": -7}, {"col": 25, "row": 4, "row_channel_bound": 4, "s": -6}, {"col": 25, "row": 7, "row_channel_bound": 7, "s": -5}, {"col": 25, "row": 11, "row_channel_bound": 12, "s": -4}, {"col": 25, "row": 16, "row_channel_bound": 19, "s": -3}, {"col": 25, "row": 23, "row_channel_bound": 30, "s": -2}, {"col": 25, "row": 22, "row_channel_bound": 45, "s": -1}, {"col": 25, "row": 25, "row_channel_bound": 67, "s": 0}, {"col": 25, "row": 25, "row_channel_bound": 96, "s": 1}, {"col": 24, "row": 25, "row_channel_bound": 137, "s": 2}, {"col": 17, "row": 25, "row_channel_bound": 191, "s": 3}, {"col": 12, "row": 25, "row_channel_bound": 265, "s": 4}, {"col": 7, "row": 25, "row_channel_bound": 361, "s": 5}, {"col": 4, "row": 25, "row_channel_bound": 489, "s": 6}, {"col": 2, "row": 25, "row_channel_bound": 654, "s": 7}, {"col": 1, "row": 25, "row_channel_bound": 870, "s": 8}]}
+python3 tools/check_half_projection.py
+{
+  "expected_crossing": 2,
+  "label_domain": [
+    [
+      1,
+      1
+    ],
+    [
+      2
+    ]
+  ],
+  "maximum_mode": 2,
+  "original_piece_values": [
+    2,
+    -8,
+    28,
+    -56,
+    70,
+    -56,
+    28,
+    -8,
+    2
+  ],
+  "original_sum": 2,
+  "projected_piece_values": [
+    -36,
+    80,
+    -64,
+    8,
+    46,
+    -56,
+    28,
+    -8,
+    2
+  ],
+  "projected_sum": 0,
+  "s": [
+    -4,
+    -3,
+    -2,
+    -1,
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "source_commit": "16a5ce41304fcdaea4e0be7c132e1c361dc26da5",
+  "status": "exact finite counterexample; not a general restriction theorem",
+  "weight": 2,
+  "x_y_u_v": [
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      1
+    ]
+  ]
+}
+python3 tools/check_half_restricted_labels.py
+{
+  "angle_index": 4,
+  "central_piece_index": 0,
+  "claim": "The literal p_{<=L}(2h) intermediate-span bound fails.",
+  "intermediate_span_dimension": 4,
+  "labels": [
+    [
+      1,
+      1
+    ],
+    [
+      2
+    ]
+  ],
+  "low_mode_output_basis": [
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      2,
+      1,
+      1
+    ],
+    [
+      2,
+      2
+    ]
+  ],
+  "low_mode_output_dimension": 3,
+  "maximum_label_part": 2,
+  "minor": [
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      4,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      -1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      -1
+    ]
+  ],
+  "minor_columns": [
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      4
+    ],
+    [
+      2,
+      1,
+      1
+    ],
+    [
+      2,
+      2
+    ]
+  ],
+  "minor_determinant": 4,
+  "operator_shift": 2,
+  "operators": "Original unprojected Appendix B operators",
+  "program_sha256": "72a78d64a6939ac9bc76e58460fc7bc244db4b036fc04c88e24330f347c4f5e5",
+  "rows": [
+    {
+      "operator_label": [
+        1,
+        1
+      ],
+      "output_terms": [
+        {
+          "coefficient": 1,
+          "partition": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 4,
+          "partition": [
+            3,
+            1
+          ]
+        }
+      ],
+      "state_label": [
+        1,
+        1
+      ]
+    },
+    {
+      "operator_label": [
+        1,
+        1
+      ],
+      "output_terms": [
+        {
+          "coefficient": 1,
+          "partition": [
+            2,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 4,
+          "partition": [
+            4
+          ]
+        }
+      ],
+      "state_label": [
+        2
+      ]
+    },
+    {
+      "operator_label": [
+        2
+      ],
+      "output_terms": [
+        {
+          "coefficient": -1,
+          "partition": [
+            2,
+            1,
+            1
+          ]
+        }
+      ],
+      "state_label": [
+        1,
+        1
+      ]
+    },
+    {
+      "operator_label": [
+        2
+      ],
+      "output_terms": [
+        {
+          "coefficient": -1,
+          "partition": [
+            2,
+            2
+          ]
+        }
+      ],
+      "state_label": [
+        2
+      ]
+    }
+  ],
+  "scope": "Exact finite counterexample; no asymptotic rank lower bound.",
+  "shared_operator_checker_sha256": "915344728fe4208f9dae69d78aefcc75530e3d87cbd922f50b283e93f0fed9cd",
+  "source_commit": "16a5ce41304fcdaea4e0be7c132e1c361dc26da5",
+  "source_repository": "anthropics/formal-math",
+  "weight": 2
+}
