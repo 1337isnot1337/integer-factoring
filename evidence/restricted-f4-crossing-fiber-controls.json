@@ -1,0 +1,38 @@
+{
+  "scope": "Exact finite image ranks, complete projected equations, and literal prescribed-family substitutions.",
+  "checks": {
+    "independent_binary_image_ranks": 3,
+    "literal_span_memberships": 60,
+    "feasible_witnesses": 3,
+    "complete_parameter_equation_comparisons": 2,
+    "negative_controls": 3
+  },
+  "cases": [
+    {
+      "alphabet": 2,
+      "degree": 2,
+      "input_directions": 9,
+      "image_rank": 7,
+      "common_floor_rank": 2
+    },
+    {
+      "alphabet": 2,
+      "degree": 3,
+      "input_directions": 9,
+      "image_rank": 7,
+      "common_floor_rank": 1
+    },
+    {
+      "alphabet": 3,
+      "degree": 2,
+      "input_directions": 9,
+      "image_rank": 7,
+      "common_floor_rank": 0
+    }
+  ],
+  "source_sha256": {
+    "restricted_f4_crossing_fiber.py": "bd6227c3ede1b43e1466ec222e4763924adf2a2e17fc0debe8cfab47a879a61c",
+    "f4_recentered_lattices.py": "64e72e1a3a2893ee1c36a8f65064b25a7f6c33dd1c519187b28cd80ea22d2d78",
+    "check_restricted_f4_crossing_fiber.py": "3e0d82d59b41a88a03627dfda71676f3a97c8dc0ef8b53c08ea9628e02b3b7b3"
+  }
+}
