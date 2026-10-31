@@ -657,3 +657,7 @@ verify-cube-charge-vertices:
 verify-coefficient-height-walks:
 	OPENBLAS_NUM_THREADS=1 python3 tools/check_full_alphabet_walk_records.py --records evidence/full-alphabet-alternating-walk-0.json evidence/full-alphabet-alternating-walk-1.json --output /tmp/integer-factoring-coefficient-height-walks-replay.json
 
+.PHONY: verify-mixed-quartic-poles
+verify-mixed-quartic-poles:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_reflection_mixed_paired_words.py --output /tmp/integer-factoring-mixed-quartic-poles-replay.json
+

@@ -5,9 +5,9 @@
 The reflection tensor admits a growing family of nonquadratic occupation
 gates whose coefficients have endpoint poles of order M+7 per gate.
 The gates act on disjoint pairs of logical modes related by one fixed
-binary bit flip. Their number can be proportional to M. Every paired
-full-letter-type restriction of every tensor power is polynomial and has
-the crossing endpoint.
+binary bit flip. Their number can be proportional to M. After the displayed
+common monomial clearing, every paired full-letter-type restriction of every
+tensor power is polynomial and has the crossing endpoint.
 
 The proof uses exact divisibility of Gaussian Pfaffians beyond the earlier
 edgewise charge budget. For numerator powers between zero and the gate's
@@ -143,8 +143,9 @@ charge-lattice condition.
 In every retained paired-type tensor-power coefficient, total charge is
 zero. Every nonempty perturbation selection therefore has positive total
 chi-order. All local endpoint poles cancel, those terms vanish, and the
-empty selection gives the crossing. This proves polynomiality and the
-typed endpoint for every tensor-power length.
+empty selection gives the crossing. The retained coefficients are Laurent
+polynomials in w; the common w^C clearing makes them polynomial. The typed
+endpoint holds at every tensor-power length.
 
 Choose the highest logical bit b=m/2. Then h=M, and the complete pairing
 has m/2=M/4 gates. Each gate may have pole order

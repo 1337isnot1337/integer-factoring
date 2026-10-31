@@ -16,6 +16,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Mixed forward/reverse paired quartics](reflection-mixed-paired-quartics.md): a common charge permits both directions on disjoint logical pairs, with asymmetric pole budgets M+7 and M-1; same-pair directions are allowed as an additive correction, while unproved overlapping products are rejected.
+
 - [Coefficient/height alternation at exact integer chambers](coefficient-height-alternation.md): two completed thirty-minute budgets perform 61,041 target steps and produce 1,432 full-profile classes; all eighty saved tensors replay, with no gain, and the unfinished 50,000-step requests remain explicit.
 
 - [All extreme charges are cube height functions](cube-charge-extreme-points.md): a connected-tight-graph proof classifies every charge vertex at every complete alphabet; exact catalogues give 1,980 vertices at sixteen symbols, and independent odd-parity signs give 2^(q/2) vertices with common endpoint pole at most three.
