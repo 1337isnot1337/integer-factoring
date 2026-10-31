@@ -2,6 +2,8 @@
 
 ## Result and scope
 
+The [fixed-prime scalar successor](fixed-prime-factor-transfer.md) gives a stronger reduction in every fixed prime characteristic: it needs only scalar clique evaluations and polynomially many queries. The weighted-polynomial construction below remains a separate valid transfer with its stated hypotheses.
+
 An effective crossing family over one fixed finite field can suffice for
 deterministic integer factoring. It need not reconstruct an integer count
 by combining counts in different characteristics.

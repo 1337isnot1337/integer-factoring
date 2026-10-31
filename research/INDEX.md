@@ -4,6 +4,12 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Proved machine bounds and their foundations
 
+- [Formal compatible-core cutoff](compatible-formal-cutoff.md): the all-field exclusion for supplied Laurent-series crossing decompositions advances from 71 to **73 labels**, with moving subspaces, geometric compression, and complete exact rational coverage.
+- [Compatible integer compression cores](compatible-compression-budget.md): 50 compatible blocks with integer maximal minors of gcd one extend the exact finite-seed exclusion to **97 labels over every field**. Complete rational interval coverage certifies the narrow final margin.
+- [Column-prefix budgets](cnot-cut-budgets.md): exact coefficient cutoffs and an infinite generating identity exclude the zero-basepoint Smith criterion for CNOT row profiles at 16, 32, and 64 labels, including constant basis changes that mix all labels.
+- [Exterior majority-state precision witness](exterior-majority-precision-witness.md): an explicit single Cauchy minor, realized by rank-one `0/1` tables, forces `Omega(MD/u)` local precision for the proposed exterior lift. The original Boolean deformation and divisor tensors remain separate questions.
+- [Rational cut meshes](rational-cut-mesh-budget.md): complete exact certificates extend the prior finite-seed cutoff from 95 to 96 over all fields, and to 97 in characteristic two. Small polynomial sources and their tensor powers remain separate candidates.
+- [Interior Jacobian rank budgets](interior-jacobian-budget.md): explicit full-row-rank binary Jacobians and a proper-projection argument give stronger complementary rank bounds; the initial 96-label characteristic-two certificate is strengthened by the rational-mesh successor.
 - [Half-rate factoring composition](half-rate-factoring.md): ordinary proof of the `1/2` machine bound; its final Lean theorem is in [`formal-appendix/HalfTheorem.lean`](../formal-appendix/HalfTheorem.lean).
 - [Top constructor and codec](half-top-constructor.md): deterministic table construction and exact input translation.
 - [Evaluator and encoding audit](half-evaluator-audit.md): recursive evaluator, computable pad, and charged bit costs.
@@ -14,6 +20,33 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Carry-based swap circuits](carry-swap-circuits.md): all-size direct, inverse, and binary-compressed polynomial crossings, with exact low-jet and finite-basepoint exclusions for the recorded instances.
+- [Complete binary cycle-source screens](low-choi-cycle-searches.md): 19,520 quadratic-feedback cycle partitions and 4,285,440 joined-LFSR linear gauges, with independent first-jet controls and optional native reruns.
+- [Larger exact divisor checkpoints](large-divisor-checkpoints.md): independent prime-order replays through 32,768 bits, saved complete maxima and witnesses, and a focused large-decimal CLI fix.
+- [Factoring from scalar counts in every fixed prime characteristic](fixed-prime-factor-transfer.md): power-root tuples, cyclic factor orbits, and explicit linear-mass arithmetic/comparison networks remove the coefficient-algebra requirement for any fixed prime.
+- [Scalar parity factoring transfer](parity-factor-transfer.md): an odd-witness family for every composite, exact proper-factor recovery, and an `O(n)`-width repeated-squaring constructor reduce factoring to polynomially many scalar `F2` clique evaluations.
+- [Partial transpose and crossing power ranks](partial-transpose-power-rank.md): a characteristic-free proof of the partial-transpose rank inequality, product bounds for all powers, and a Smith-profile exclusion for every regular rank-two source with at least five labels.
+- [Rank-one fixed pairs](rank-one-fixed-pairs.md): an all-field restriction on invertible rank-two channels, plus regular rank-two controlled-cycle examples at every binary label size.
+- [Full CNOT tensor coefficient space](cnot-full-tensor-span.md): exact small row blocks, all-field rank-one and column-rank-two classifications, and an all-field exclusion of the complete eight-label tensor span.
+- [Three-CNOT row-involutive paths](cnot-crossing-modules.md): an all-size construction, exact local modules, and an all-power obstruction for ordinary univariate coefficient grouping.
+
+- [Rough-input sparse transfer](rough-sparse-transfer.md): deterministic small-factor removal reduces the conditional transfer overhead to `exp(O(sqrt n))`, preserving every fixed logarithmic saving exponent supplied by an algebra-valid weighted evaluator.
+
+- [Arbitrary-bound divisor maxima and logspace membership](certified-divisor-oracle.md): an explicit polynomial oracle for every binary bound, strict highly-composite membership in `L`, certified prefix pruning, and independent exact outputs through 8,192 bits.
+
+- [Explicit adaptive divisor oracle](adaptive-benefit-divisor-preprocessing.md): computed benefit certificates remove unknown algorithmic constants, giving polynomial time and a logarithmic-workspace version; an independent exact search agrees through 2,048 bits.
+
+- [Regular roots with a rank-two terminal power](modified-transpose-root-target.md): an all-size paired-chain construction with the ideal column spectrum, plus an all-function Smith exclusion for full-cycle Feistel maps.
+- [Complete normalized rank-two channel form](rank-two-channel-normal-form.md): every invertible two-term matrix pencil is regular; after scalar extension, identity and trace normalization force a commuting-pair form.
+- [Geometric transpose channels and row inverses](geometric-transpose-crossings.md): exact row-unimodular instances through sixteen labels, complete finite polynomial-change screens, protected coefficient ranks, and column-degree certificates for constant twists.
+- [Polynomial exact divisor preprocessing](polynomial-divisor-preprocessing.md): an unconditional uniform `n^O(1)`-time, `O(log n)`-space corollary of Nicolas's exponent theorem, with exact threshold-center code; fixed global constants are not numerically instantiated.
+- [Quantum-spin arithmetic crossing paths](quantum-crossing-initial-forms.md): a rational deformation family, reduction at every prime, independent highest-weight controls, and 422 finite initial-form cases with exact local exclusions.
+- [Nilpotent-superoperator crossing families](nilpotent-flag-crossings.md): a basis-free all-field construction with exact Jordan-block column spectra, cyclic-vector invariance, explicit finite controls, and an exact single-transpose row theorem.
+- [Exact two-adic Cauchy channels](cauchy-two-adic-smith.md): explicit integral LDU factors, exact Smith exponents, and the remaining square-root mode-enumeration scale.
+- [Tapered Hermite precision witness](tapered-hermite-precision-witness.md): one admissible polynomial proves the `MD/u` scale necessary for the source interpolation class and grid; special contraction polynomials remain outside the claim.
+- [Arithmetic initial forms of rational crossing paths](arithmetic-crossing-initial-forms.md): exact reductions in every prime characteristic with rational weights and fractional slopes; independent source and Smith-profile controls, with no stronger exponent.
+- [Exact divisor maxima by next-prime exchanges](exchange-divisor-preprocessing.md): `n^O(log log n)` time and `O(log n log log n)` workspace with cited uniform arithmetic; a practical oracle and separately bounded elementary streamed implementation.
+- [Primorial-weighted pattern enumeration](primorial-weighted-divisor-preprocessing.md): a tight `2^Theta(sqrt(n/log n))` count of all canonical patterns and a smaller-space enumeration; the exchange algorithm skips most patterns.
 - [Simultaneous finite-seed endpoint](simultaneous-seed-endpoint.md): one machine attains an enumerable seed family's limiting time and workspace exponent, with no generation-speed or field-uniformity assumption.
 - [Pieces-to-factoring transfer](pieces-to-factoring.md): conditional crossing-parameter transfer, with full bit-cost accounting.
 - [Scale-one modular transfer](scale-one-modular-transfer.md): fixed-field transfer and machine costs.
@@ -101,6 +134,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Obstructions and work beyond 1/2
 
+- [Elementary mixed-cut budget](strict-mixed-cut-gate.md): a short all-field strict budget gives an independent cutoff through twelve labels; the [prior PR #27 geometric theorem](https://github.com/1337isnot1337/integer-factoring/blob/b49b9e19480c65d139ef15beecacb92064c1a960/research/geometric-cut-rank-budget.md) has the stronger exact cutoff through 95.
+- [Sixteen-label CNOT companion](cnot-sixteen-label-span.md): the mixed budget and rank-one classification give a short all-field certificate for the full fourth coefficient tensor power.
 - [Universal finite-size gates](noncommutative-crossing-finite-gates.md): all-field rank-sum bounds exclude every seed on at most five labels and every non-elementary group orbit family of order at most eight.
 - [Abelian midpoint blocks](noncommutative-crossing-abelian-midpoints.md): exact doubling-map column multiplicities, a real rank-floor lemma, and an all-field exclusion of every cyclic group.
 - [Involution-free orbit minors](noncommutative-crossing-involution-support.md): a diagonal-minor theorem for arbitrary group kernels, excluding odd-order groups, odd-order index-two extensions, and unique-involution groups over every field.

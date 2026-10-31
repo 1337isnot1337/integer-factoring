@@ -196,4 +196,3 @@ The evidence is
 The general proof is the elimination and coefficient-extraction
 argument above; the finite tests validate the indexing, same-site
 selection rule, boundary ordering, and explicit transport matrices.
-

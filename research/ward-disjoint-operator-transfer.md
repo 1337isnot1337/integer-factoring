@@ -157,4 +157,3 @@ The proof of (1) is coefficient extraction at successive support
 boundaries; the finite controls verify the indexing and the absence
 of an unintended ancillary reset. Equations (3)--(4) then give the
 entry-complexity statement for all support sizes and numbers of forms.
-
