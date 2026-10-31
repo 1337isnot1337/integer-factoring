@@ -1,0 +1,21 @@
+{
+  "scope": "Independent paired inverse identities, literal four-map contractions, field Frobenius, and polynomial Smith frames.",
+  "status": "passed",
+  "operation_chains": 8,
+  "independent_literal_coefficient_identities": 5000,
+  "literal_Frobenius_coefficient_identities": 5000,
+  "complete_profiles_certified_by_polynomial_frames": 16,
+  "paired_inverse_matrix_entries": 400,
+  "operations_per_chain": [
+    1,
+    1,
+    2,
+    3,
+    5,
+    8,
+    12,
+    16
+  ],
+  "checker_sha256": "6122c3def2403e226995b7c7c3c12d98ea13d2c8646f79173012b2d083c353c7",
+  "elapsed_seconds": 18.794257561999984
+}

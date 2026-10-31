@@ -1,0 +1,60 @@
+{
+  "record": "evidence/paired-physical-transvection-search.json",
+  "record_sha256": "e49a319a54a4e4ca5a79127863598e9028f9857b1be87f91987e1c2c13deb4c0",
+  "status": "passed",
+  "source_provenance": {
+    "search_paired_physical_transvections.py": {
+      "location": "worktree",
+      "sha256": "dda53b9ac7996c5d180421ed2becfd96a96ebc6d4308934f6bcc6bb95c9de674"
+    },
+    "paired_physical_transvections.py": {
+      "location": "worktree",
+      "sha256": "96dcd602fb19d1f4704992930fc5948fb546ed41b469bba5279c37b5dd1ab89c"
+    },
+    "search_saturated_dual_directions.py": {
+      "location": "worktree",
+      "sha256": "004df609daab720110423f432b359a4ff12b0ec10bc1478e5e8548147a92016c"
+    },
+    "search_f4_recentered_crossings.py": {
+      "location": "worktree",
+      "sha256": "8715f1a28b0cb68ad4d3fd29adc53fe082f6181882ed4bce7ce0e9ff582b0be4"
+    },
+    "native_matrix_smith_f4.py": {
+      "location": "worktree",
+      "sha256": "c08da20f1938a371b438e32fbc6a8f6766b48c2cfee5bcd1c956ce137dc70203"
+    },
+    "native_matrix_smith_f4.cpp": {
+      "location": "worktree",
+      "sha256": "5ec995cd04563c2fa99b69afd71bf476d5ca885f1f90377490c30e5a1a55f330"
+    },
+    "weighted_smith_oracle_f4.py": {
+      "location": "worktree",
+      "sha256": "d277f46caa98dab48d243af64c18e42e09e917bf1e862057a55cb35f74a6d572"
+    }
+  },
+  "completed_requested_schedule": true,
+  "recorded_query_counters": {
+    "single_queries": 80,
+    "pair_queries": 2000,
+    "literal_endpoint_entries": 1300625
+  },
+  "retained_literal_witnesses": 48,
+  "independent_four_map_contractions": 32,
+  "literal_endpoint_entries": 31250,
+  "complete_profiles_certified_by_polynomial_frames": 100,
+  "gauges": {
+    "natural": {
+      "best_rho": 0.7263479477044683,
+      "retained": 24,
+      "distinct_profile_classes": 244
+    },
+    "two_zero": {
+      "best_rho": 0.8335422390094076,
+      "retained": 24,
+      "distinct_profile_classes": 221
+    }
+  },
+  "strict_pressure_candidate_found": false,
+  "checker_sha256": "6122c3def2403e226995b7c7c3c12d98ea13d2c8646f79173012b2d083c353c7",
+  "elapsed_seconds": 31.649236856999778
+}
