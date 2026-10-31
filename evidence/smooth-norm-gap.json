@@ -1,0 +1,314 @@
+{
+  "scope": "Polynomial supplied-norm conversion with a certified inner/outer radius gap; no fast witness search or improved factoring score",
+  "divisor_controls": {
+    "integers_through": 4096,
+    "approximation_cases": 16384,
+    "reversed_item_controls": 1024,
+    "worst_observed_optimum_to_output_ratio": [
+      43,
+      37
+    ],
+    "exact_radius_negative_control": {
+      "integer": 220,
+      "prime_factors": [
+        2,
+        2,
+        5,
+        11
+      ],
+      "valid_exact_pair": [
+        11,
+        20
+      ],
+      "trimmed_pair": [
+        10,
+        22
+      ],
+      "exact_radius": 20,
+      "gap_radius": 40
+    }
+  },
+  "form_controls": {
+    "total_promised_representations": 5092,
+    "scaled_nonprimitive_controls": 5092,
+    "shared_prime_direct_controls": 9148,
+    "records": [
+      {
+        "discriminant": -348,
+        "inverse_slack": 1,
+        "inner_radius": 4,
+        "outer_radius": 9,
+        "promised_representations": 2,
+        "target_classes": 1
+      },
+      {
+        "discriminant": -348,
+        "inverse_slack": 2,
+        "inner_radius": 6,
+        "outer_radius": 9,
+        "promised_representations": 2,
+        "target_classes": 1
+      },
+      {
+        "discriminant": -348,
+        "inverse_slack": 4,
+        "inner_radius": 7,
+        "outer_radius": 9,
+        "promised_representations": 10,
+        "target_classes": 3
+      },
+      {
+        "discriminant": -420,
+        "inverse_slack": 1,
+        "inner_radius": 5,
+        "outer_radius": 10,
+        "promised_representations": 2,
+        "target_classes": 1
+      },
+      {
+        "discriminant": -420,
+        "inverse_slack": 2,
+        "inner_radius": 6,
+        "outer_radius": 10,
+        "promised_representations": 2,
+        "target_classes": 1
+      },
+      {
+        "discriminant": -420,
+        "inverse_slack": 4,
+        "inner_radius": 8,
+        "outer_radius": 10,
+        "promised_representations": 2,
+        "target_classes": 1
+      },
+      {
+        "discriminant": -999,
+        "inverse_slack": 1,
+        "inner_radius": 7,
+        "outer_radius": 15,
+        "promised_representations": 74,
+        "target_classes": 24
+      },
+      {
+        "discriminant": -999,
+        "inverse_slack": 2,
+        "inner_radius": 10,
+        "outer_radius": 15,
+        "promised_representations": 138,
+        "target_classes": 24
+      },
+      {
+        "discriminant": -999,
+        "inverse_slack": 4,
+        "inner_radius": 12,
+        "outer_radius": 15,
+        "promised_representations": 138,
+        "target_classes": 24
+      },
+      {
+        "discriminant": -1679,
+        "inverse_slack": 1,
+        "inner_radius": 10,
+        "outer_radius": 20,
+        "promised_representations": 314,
+        "target_classes": 52
+      },
+      {
+        "discriminant": -1679,
+        "inverse_slack": 2,
+        "inner_radius": 13,
+        "outer_radius": 20,
+        "promised_representations": 370,
+        "target_classes": 52
+      },
+      {
+        "discriminant": -1679,
+        "inverse_slack": 4,
+        "inner_radius": 16,
+        "outer_radius": 20,
+        "promised_representations": 594,
+        "target_classes": 52
+      },
+      {
+        "discriminant": -2639,
+        "inverse_slack": 1,
+        "inner_radius": 12,
+        "outer_radius": 25,
+        "promised_representations": 266,
+        "target_classes": 64
+      },
+      {
+        "discriminant": -2639,
+        "inverse_slack": 2,
+        "inner_radius": 16,
+        "outer_radius": 25,
+        "promised_representations": 362,
+        "target_classes": 64
+      },
+      {
+        "discriminant": -2639,
+        "inverse_slack": 4,
+        "inner_radius": 20,
+        "outer_radius": 25,
+        "promised_representations": 466,
+        "target_classes": 64
+      },
+      {
+        "discriminant": -9679,
+        "inverse_slack": 1,
+        "inner_radius": 24,
+        "outer_radius": 49,
+        "promised_representations": 242,
+        "target_classes": 69
+      },
+      {
+        "discriminant": -9679,
+        "inverse_slack": 2,
+        "inner_radius": 32,
+        "outer_radius": 49,
+        "promised_representations": 378,
+        "target_classes": 71
+      },
+      {
+        "discriminant": -9679,
+        "inverse_slack": 4,
+        "inner_radius": 39,
+        "outer_radius": 49,
+        "promised_representations": 450,
+        "target_classes": 71
+      },
+      {
+        "discriminant": -10007,
+        "inverse_slack": 1,
+        "inner_radius": 25,
+        "outer_radius": 50,
+        "promised_representations": 202,
+        "target_classes": 69
+      },
+      {
+        "discriminant": -10007,
+        "inverse_slack": 2,
+        "inner_radius": 33,
+        "outer_radius": 50,
+        "promised_representations": 250,
+        "target_classes": 75
+      },
+      {
+        "discriminant": -10007,
+        "inverse_slack": 4,
+        "inner_radius": 40,
+        "outer_radius": 50,
+        "promised_representations": 274,
+        "target_classes": 77
+      },
+      {
+        "discriminant": -41612,
+        "inverse_slack": 1,
+        "inner_radius": 50,
+        "outer_radius": 101,
+        "promised_representations": 26,
+        "target_classes": 13
+      },
+      {
+        "discriminant": -41612,
+        "inverse_slack": 2,
+        "inner_radius": 67,
+        "outer_radius": 101,
+        "promised_representations": 26,
+        "target_classes": 13
+      },
+      {
+        "discriminant": -41612,
+        "inverse_slack": 4,
+        "inner_radius": 80,
+        "outer_radius": 101,
+        "promised_representations": 26,
+        "target_classes": 13
+      },
+      {
+        "discriminant": -43228,
+        "inverse_slack": 1,
+        "inner_radius": 51,
+        "outer_radius": 103,
+        "promised_representations": 18,
+        "target_classes": 9
+      },
+      {
+        "discriminant": -43228,
+        "inverse_slack": 2,
+        "inner_radius": 68,
+        "outer_radius": 103,
+        "promised_representations": 18,
+        "target_classes": 9
+      },
+      {
+        "discriminant": -43228,
+        "inverse_slack": 4,
+        "inner_radius": 82,
+        "outer_radius": 103,
+        "promised_representations": 18,
+        "target_classes": 9
+      },
+      {
+        "discriminant": -66548,
+        "inverse_slack": 1,
+        "inner_radius": 64,
+        "outer_radius": 128,
+        "promised_representations": 130,
+        "target_classes": 62
+      },
+      {
+        "discriminant": -66548,
+        "inverse_slack": 2,
+        "inner_radius": 85,
+        "outer_radius": 128,
+        "promised_representations": 146,
+        "target_classes": 64
+      },
+      {
+        "discriminant": -66548,
+        "inverse_slack": 4,
+        "inner_radius": 102,
+        "outer_radius": 128,
+        "promised_representations": 146,
+        "target_classes": 64
+      }
+    ],
+    "actual_form_gap_control": {
+      "form": [
+        11,
+        1,
+        220
+      ],
+      "norm": 220,
+      "exact_radius": 20,
+      "gap_radius": 40,
+      "pair": [
+        [
+          10,
+          -1,
+          242
+        ],
+        [
+          22,
+          1,
+          110
+        ]
+      ]
+    }
+  },
+  "large_square_control": {
+    "distinct_primes": 32,
+    "prime_occurrences": 64,
+    "input_bits": 337,
+    "complete_divisor_count": 1853020188851841,
+    "inverse_slack": 8,
+    "maximum_retained_list": 104258,
+    "total_candidates_processed": 6578976,
+    "exact_optimum": "525896479052627740771371797072411912900610967452630",
+    "returned_divisor": "525454246200691584470528892837054345071930511774620",
+    "complete_divisor_set_enumerated": false
+  },
+  "fast_witness_search_supplied": false,
+  "exact_radius_decision_claimed": false
+}

@@ -41,6 +41,45 @@ verify-arithmetic-framework:
 	python3 tools/check_arithmetic_density_lift.py
 	python3 tools/check_bounded_smooth_norm.py
 
+.PHONY: verify-cyclic-algebra
+verify-cyclic-algebra:
+	python3 tools/check_cyclic_algebra_crossings.py
+
+.PHONY: verify-shift-register
+verify-shift-register:
+	python3 tools/check_shift_register_crossings.py
+
+.PHONY: verify-register-barrier verify-quadratic-register
+verify-register-barrier:
+	python3 tools/check_shift_register_copy_wire_barrier.py
+
+verify-quadratic-register:
+	python3 tools/check_quadratic_register_crossings.py
+
+.PHONY: verify-quantum-pascal
+verify-quantum-pascal:
+	python3 tools/check_quantum_pascal_crossings.py
+
+.PHONY: verify-matrix-vacuum
+verify-matrix-vacuum:
+	python3 tools/check_matrix_vacuum_barrier.py
+
+.PHONY: verify-steiner-cubic
+verify-steiner-cubic:
+	python3 tools/check_steiner_cubic_crossings.py
+
+.PHONY: verify-steiner-coefficients
+verify-steiner-coefficients:
+	python3 tools/check_steiner_coefficient_barrier.py
+
+.PHONY: verify-group-shears
+verify-group-shears:
+	python3 tools/check_group_shear_crossings.py
+
+.PHONY: verify-smith-capacity
+verify-smith-capacity:
+	python3 tools/check_smith_pressure_convexity.py
+
 .PHONY: verify-multipoint-rank-one
 verify-multipoint-rank-one:
 	python3 tools/check_multipoint_rank_one_seeds.py
@@ -127,6 +166,44 @@ verify-multipoint-hermite:
 .PHONY: verify-gaussian-fixed-types
 verify-gaussian-fixed-types:
 	python3 tools/check_reflection_gaussian_fixed_type_duals.py --output /tmp/integer-factoring-gaussian-fixed-types-replay.json
+
+.PHONY: verify-symmetric-binary-filters
+verify-symmetric-binary-filters:
+	python3 tools/check_symmetric_binary_filter_synthesis.py --output /tmp/integer-factoring-symmetric-binary-replay.json
+
+.PHONY: verify-binary-smith-floor
+verify-binary-smith-floor:
+	python3 tools/check_binary_fixed_ray_floor.py --output /tmp/integer-factoring-binary-fixed-ray-replay.json
+	python3 tools/check_binary_all_gauge_floor.py --output /tmp/integer-factoring-binary-all-gauge-replay.json
+
+.PHONY: verify-symmetric-prime-filters verify-symmetric-filter-catalogues
+verify-symmetric-prime-filters:
+	python3 tools/check_symmetric_prime_filter_synthesis.py --output /tmp/integer-factoring-symmetric-prime-replay.json
+
+verify-symmetric-filter-catalogues:
+	python3 tools/check_symmetric_filter_catalogues.py --output /tmp/integer-factoring-symmetric-catalogue-replay.json
+
+.PHONY: verify-gaussian-physical-frames verify-gaussian-coupled-gates
+verify-gaussian-physical-frames:
+	python3 tools/check_reflection_gaussian_physical_frames.py --output /tmp/integer-factoring-gaussian-physical-frames-replay.json
+
+verify-gaussian-coupled-gates:
+	python3 tools/check_reflection_gaussian_coupled_gates.py --output /tmp/integer-factoring-gaussian-coupled-gates-replay.json
+
+.PHONY: verify-physical-splits verify-reflection-code-alphabets
+verify-physical-splits:
+	python3 tools/check_physical_split_crossings.py --output /tmp/integer-factoring-physical-split-replay.json
+
+verify-reflection-code-alphabets:
+	python3 tools/check_reflection_code_alphabets.py --output /tmp/integer-factoring-reflection-code-alphabets-replay.json
+
+.PHONY: verify-nonresonant-filters verify-affine-filter-tiles
+verify-nonresonant-filters:
+	python3 tools/check_nonresonant_boolean_filter_floor.py --output /tmp/integer-factoring-nonresonant-filter-replay.json
+
+verify-affine-filter-tiles:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_affine_symmetric_tiles.py --output /tmp/integer-factoring-affine-filter-tile-replay.json
+
 
 .PHONY: verify-frontier-extensions
 verify-frontier-extensions:

@@ -107,6 +107,13 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 
 ## Current research frontier
 
+The [difference-unique code obstruction](research/sidon-code-rank-obstruction.md)
+shows why sparse additive graph codes do not rescue the elementary crossing:
+its full multivariate coefficient span has rank-sum at least q(q-1)/sqrt(2).
+This includes every binary cubic field graph, but not general nonlinear codes
+or new auxiliary mechanisms. Sixteen finite controls replay with
+`python3 tools/check_sidon_code_crossings.py`; the factoring score is unchanged.
+
 The [typed rational strictification theorem](research/typed-rational-crossing-strictification.md)
 extends the binary pressure floor to scalar rational kernels with only
 zero/endpoint denominators and crossing endpoints at every paired type
@@ -210,6 +217,82 @@ A literal four-mode filter gives a strict natural-charge improvement over the
 Gaussian cost, including a gain proportional to interval length when tiled;
 its complete pressure remains above the required threshold. Run
 `make verify-symmetric-binary-filters` for full-state and exact cost controls.
+
+The [cyclic-algebra constructor](research/cyclic-algebra-crossings.md) permits
+dense polynomial transforms of a regular full-cycle operator, with a complete
+crossing endpoint and unchanged ideal column orders. An exact two-jet
+certificate excludes all 1,024 transforms in the first eight-letter schedule
+for the bare two-place criterion. The factoring exponent remains `1/2`.
+Run `make verify-cyclic-algebra` for independent literal matrix controls;
+the linked note gives the optional complete search replay.
+
+The [shift-register construction](research/shift-register-crossings.md) gives
+further full-cycle seeds with arbitrary balanced bit partitions. All 8,186
+systems through thirty-two physical letters fail the bare two-place test by
+exact integer certificates; a separate selected 64-letter schedule also fails.
+These finite exclusions leave the score at `1/2` and do not cover arbitrary
+word-type gauges or nonlinear feedback. Run `make verify-shift-register` for
+the small exact replay; the note gives the complete catalogue commands.
+
+The [copied-wire argument](research/shift-register-copy-wire-barrier.md)
+explains a structural limitation of growing register seeds: colour
+correlations force enough early Smith channels to give limiting bare
+parameter at least `3/4`. It covers every full-cycle register over a
+prime-power digit alphabet, with arbitrary nonlinear feedback and coordinate
+partitions. Its explicit large-size cutoff leaves a gap above the completed
+small catalogues; it does not cover physical gauges or arbitrary bases.
+Run `make verify-register-barrier`.
+
+A separate [six-bit nonlinear catalogue](research/quadratic-register-crossings.md)
+tests all quadratic lower-tail functions plus the zero-tail indicator:
+1,952 full cycles and all 19,520 balanced partitions fail the bare test.
+Run `make verify-quadratic-register` to replay the complete finite result.
+
+The [quantum-Pascal construction](research/quantum-pascal-trace-crossings.md)
+provides polynomial trace crossings with exact degree `d(d-1)` at odd
+alphabet size `d`. A unitriangular-basis argument forces `rho>=3/4` for
+its bare and unweighted multipoint profile criteria, including arbitrary
+polynomial diagonal vacua. Physical word-type restrictions remain outside
+that proof. Run `make verify-quantum-pascal` for exact endpoints through
+fifteen letters, direct trace controls, and polynomial determinant checks.
+
+The [matrix-vacuum extension](research/matrix-vacuum-boundary-barrier.md)
+allows arbitrary polynomial matrix vacua in the same ladder construction.
+A boundary-difference identity filters the zero-cut rank; the complete
+7,350-case self-dual rank-two affine catalogue has minimum rank 24 and
+bare parameter strictly above `7/8`. This excludes every interpolation
+path with those initial vacua. Run `make verify-matrix-vacuum`; the note
+also gives the optional complete NumPy catalogue. A larger internal space
+with fewer physical ladder powers remains outside the square-basis proof.
+
+The [Steiner construction](research/steiner-cubic-crossings.md) factors the
+swap into three controlled involutions and gives a determinant-one cubic
+crossing for every Steiner quasigroup. Its complete bare Smith profiles
+are independent of the design and force `rho>=3/4` at every size. This
+closes the cubic bare-profile search. A stronger
+[common-coefficient proof](research/steiner-coefficient-barrier.md) also
+excludes arbitrary coefficient recombinations across full words at every
+`q>=7`, with no piece-count or position-symmetry restriction. At `q=3`,
+a middle-coefficient proof gives asymptotic floor `rho>=0.8065306485`
+for the univariate span and a sublinear number of position classes.
+Restricted physical types and the fully multivariate three-letter space
+remain outside those proofs. Run `make verify-steiner-cubic` and
+`make verify-steiner-coefficients`.
+
+The [group-shear extension](research/group-shear-crossings.md) implements
+the swap through three multiplication/division shears over any finite
+`p`-group, with a constant nonzero determinant in characteristic `p`.
+Exact early-jet certificates reject six cyclic, dihedral, and quaternion
+binary seeds for the bare criterion. These finite exclusions do not
+settle the family. Run `make verify-group-shears`.
+
+The [fixed-type capacity argument](research/fixed-type-smith-capacity.md)
+makes physical gauge optimization convex once the two paired types are
+fixed. Entropy-weighted minor flags give global affine supports and an
+exact rational certificate criterion. `make verify-smith-capacity` runs
+the exact controls. The optional numerical solver reports its parameter
+box, primal value, LP estimate, and gap; its current quantum-Pascal example
+does not improve the score.
 
 The [exact Gaussian fixed-type certificates](research/reflection-gaussian-fixed-type-duals.md)
 prove global minima over every independent mode gauge and positive scale
