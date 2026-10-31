@@ -197,6 +197,12 @@ gives the exact entropy optimization for different types and rectangular
 alphabets. Tensoring with the pair-exchanged copy produces an equal-alphabet
 crossing; keeping the two coefficient indices separate makes the costs
 multiply exactly.
+[Rectangular residual repair](research/rectangular-residual-repair.md)
+retains four extreme states on one crossing pair and three on the other.
+An explicit two-parameter inverse and a smaller height-triangular repair
+give valid paired-type families. Finite mixed examples are locally
+polynomial, and the smallest partial repair has an exact non-Gaussian
+Wick witness. Their pressure remains a search problem.
 [Even-core postselection](research/even-core-postselection.md) gives a
 four-letter polynomial family `A + lambda B + lambda^2 C` with a strict
 crossing endpoint. Two exact Wick identities prove that every nonzero
