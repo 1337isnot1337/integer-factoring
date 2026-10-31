@@ -173,10 +173,135 @@
         2,
         1
       ]
+    },
+    {
+      "alphabet": 3,
+      "complete_entries": 81,
+      "copies": 1,
+      "multiplicities": [
+        2,
+        2,
+        2
+      ],
+      "points": [
+        0,
+        2,
+        null
+      ],
+      "prime": 3,
+      "rank_checks": 12,
+      "weights": [
+        2,
+        1,
+        2,
+        2,
+        2,
+        1
+      ]
     }
   ],
-  "complete_entries_checked": 84738,
-  "jet_rank_checks": 60,
+  "complete_entries_checked": 84819,
+  "homogeneous_content_control": {
+    "common_homogeneous_content_degree": 3,
+    "exact_pressure_redistribution_checks": 3,
+    "homogeneous_degree": 5,
+    "primitive_degree": 2,
+    "primitive_mean_order_totals": [
+      "2",
+      "2"
+    ],
+    "scope": "Finite controls for the analytic homogeneous-content proof; not a finite verification of all alphabets.",
+    "selected_content_orders": [
+      1,
+      1,
+      1
+    ],
+    "shifted_mean_order_totals": [
+      "5",
+      "5"
+    ],
+    "shifted_profiles": {
+      "0": [
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          2,
+          2,
+          2,
+          3,
+          5,
+          5,
+          5
+        ]
+      ],
+      "2": [
+        [
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "None": [
+        [
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    "strict_three_quarter_floor_integer_controls": {
+      "2": true,
+      "3": true,
+      "4": true,
+      "5": true
+    }
+  },
+  "jet_rank_checks": 72,
   "rational_certificate": {
     "all_integer_comparisons_pass": true,
     "common_power": 140,
@@ -202,9 +327,9 @@
     ],
     "sum_slopes": "2"
   },
-  "scope": "Exact multipoint interpolation and finite rank controls; the displayed rho is weaker than the known half-rate crossing.",
+  "scope": "Exact multipoint interpolation, finite rank controls, and homogeneous-content ledger controls. The displayed rho is weaker than half-rate; the unweighted same-place criterion has a universal rho > 3/4 floor.",
   "source_sha256": {
-    "check_multipoint_hermite_crossings.py": "a0668c171acc3bd0397325b2e7a08a88ed68fe0de8adda1abb7c655869b9ac3f"
+    "check_multipoint_hermite_crossings.py": "1d3422c882a0e17bd8613065242d6765e74bac2219200d5b1cbab9e6dcaa9fed"
   },
   "status": "pass",
   "ternary_mixing_profiles": {

@@ -154,6 +154,10 @@ not cover the remaining optimization over all physical types. Run
 The [multipoint Hermite transfer](research/multipoint-hermite-crossings.md)
 reconstructs effective crossing pieces from jets at several finite points
 and infinity, with a shared degree budget and complete coefficient costs.
+A general degree-budget argument now proves that its unweighted same-place
+criterion requires `rho > 3/4`, including common scalar factors and independent
+local scales. Weighted types or stronger actual jet-rank estimates remain
+outside that floor.
 Its explicit ternary certificate is weaker than the half-rate crossing;
 the transfer supplies a different criterion for future seeds. Run
 `make verify-multipoint-hermite` for full reconstruction and jet-rank checks.

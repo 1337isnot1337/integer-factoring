@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exact Hermite crossing identities, jet-rank controls, and a rational witness.
+"""Exact Hermite identities, rank controls, a witness, and content accounting.
 
 This checks a reusable multipoint construction and a rho < 19/20 example.
 It does not improve the known factoring exponent one half.
@@ -219,6 +219,57 @@ def mixing_seed():
     return seed
 
 
+def content_ledger_control(seed, expected):
+    # 2*z*(z-2) equals one at z=1 over F_3.  Degree-five homogenization
+    # contributes one further common zero at infinity beyond its degree four.
+    scaled = {key: multiply(value, [0, 2, 2], 3)
+              for key, value in seed.items()}
+    slopes = {0: Fraction(15, 14), 2: Fraction(13, 28),
+              None: Fraction(13, 28)}
+    scales = {0: (Fraction(1), Fraction(9, 5)),
+              2: (Fraction(5, 2), Fraction(1)),
+              None: (Fraction(5, 2), Fraction(1))}
+    shifted = {}
+    for point, profiles in expected.items():
+        actual = local_profiles(scaled, 3, 5, point, 3)
+        assert actual == [[order + 1 for order in profile]
+                          for profile in profiles]
+        shifted[str(point)] = actual
+        s, r = scales[point]
+        before = (sum(s ** -order for order in profiles[0]) ** 28
+                  * sum(r ** -order for order in profiles[1]) ** 28
+                  * (s * r) ** int(28 * slopes[point]))
+        after = (sum(s ** -order for order in actual[0]) ** 28
+                 * sum(r ** -order for order in actual[1]) ** 28
+                 * (s * r) ** int(28 * (slopes[point] + 1)))
+        assert before == after
+    primitive_totals = [sum(Fraction(sum(profiles[cut]), 9)
+                            for profiles in expected.values())
+                        for cut in (0, 1)]
+    shifted_totals = [sum(Fraction(sum(profiles[cut]), 9)
+                          for profiles in shifted.values())
+                      for cut in (0, 1)]
+    assert primitive_totals == [2, 2]
+    assert shifted_totals == [5, 5]
+    assert sum(slopes.values()) == 2
+    assert sum(value + 1 for value in slopes.values()) == 5
+    strict_floor_controls = {}
+    for alphabet in (2, 3, 4, 5):
+        n = alphabet * alphabet
+        assert 4 ** n * n ** n > (n + 1) ** (n + 1)
+        strict_floor_controls[str(alphabet)] = True
+    return scaled, {
+        'primitive_degree': 2, 'homogeneous_degree': 5,
+        'common_homogeneous_content_degree': 3,
+        'selected_content_orders': [1, 1, 1],
+        'primitive_mean_order_totals': [str(value) for value in primitive_totals],
+        'shifted_mean_order_totals': [str(value) for value in shifted_totals],
+        'shifted_profiles': shifted,
+        'exact_pressure_redistribution_checks': 3,
+        'strict_three_quarter_floor_integer_controls': strict_floor_controls,
+        'scope': 'Finite controls for the analytic homogeneous-content proof; not a finite verification of all alphabets.'}
+
+
 def check():
     cases = []
     for copies in range(1, 5):
@@ -234,8 +285,10 @@ def check():
     }
     for point, orders in expected.items():
         assert local_profiles(seed, 3, 2, point, 3) == orders
+    scaled_seed, content_control = content_ledger_control(seed, expected)
     cases.append(check_power(seed, 3, 2, 1, [0, 2, None], [1, 1, 1], 3))
     cases.append(check_power(seed, 3, 2, 2, [0, 2, None], [2, 2, 1], 3))
+    cases.append(check_power(scaled_seed, 3, 5, 1, [0, 2, None], [2, 2, 2], 3))
     s0, s1 = Fraction(9, 5), Fraction(5, 2)
     b0 = 9 * (1 + 4 / s0 + 1 / s0 ** 2 + 3 / s0 ** 4)
     b1 = 27 * (1 + 1 / s1 + 1 / s1 ** 2)
@@ -245,6 +298,7 @@ def check():
             'complete_entries_checked': sum(case['complete_entries'] for case in cases),
             'jet_rank_checks': sum(case['rank_checks'] for case in cases),
             'ternary_mixing_profiles': {str(point): value for point, value in expected.items()},
+            'homogeneous_content_control': content_control,
             'rational_certificate': {'rho_upper': '19/20',
                                      'jet_slopes': ['15/14', '13/28', '13/28'],
                                      'sum_slopes': '2', 'scales': ['9/5', '5/2', '5/2'],
@@ -252,7 +306,7 @@ def check():
                                      'all_integer_comparisons_pass': True,
                                      'left_numerator_bits': [left0.numerator.bit_length(), left1.numerator.bit_length()],
                                      'left_denominator_bits': [left0.denominator.bit_length(), left1.denominator.bit_length()]},
-            'scope': 'Exact multipoint interpolation and finite rank controls; the displayed rho is weaker than the known half-rate crossing.'}
+            'scope': 'Exact multipoint interpolation, finite rank controls, and homogeneous-content ledger controls. The displayed rho is weaker than half-rate; the unweighted same-place criterion has a universal rho > 3/4 floor.'}
 
 
 def main():

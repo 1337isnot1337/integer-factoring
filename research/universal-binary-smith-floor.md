@@ -25,8 +25,10 @@ binary searches with an all-seed theorem.
 The theorem is about this sufficient crossing certificate. It is not a
 factoring lower bound or an obstruction to every tensor algorithm.
 Larger physical alphabets, auxiliary word modules with stronger rate
-bounds, multipoint reconstruction, and rational kernels whose polynomial
-endpoint emerges only after type projection are outside its hypotheses.
+bounds, multipoint reconstruction, and general kernels whose polynomial
+crossing endpoint emerges only after type projection are outside its
+hypotheses. Section 7 also covers a specified triangular class of
+polynomial endpoints that require type projection.
 The established factoring score remains `1/2`.
 
 ## 1. Pressure and harmless normalizations
@@ -368,7 +370,48 @@ The closed inequalities (10)--(18) extend by continuity, after which
 the strict analytic argument (19)--(29) applies directly. Strictness
 is not inferred merely by taking a limit of strict inequalities.
 
-## 7. Literal controls and research consequences
+## 7. Positive-charge polynomial endpoints are also covered
+
+The proof used the strict endpoint only to guarantee three facts: the
+matched entries are nonzero; the two full determinants are nonzero; and
+the shared principal line minors are nonzero. Consequently the same
+pressure floor holds for a Laurent-polynomial tensor with endpoint
+
+\[
+T(1;x,y,u,v)=[x=v][y=u]+N_{xyuv},
+\]
+
+provided N is supported at strictly positive additive paired charge
+
+\[
+f(x)+g(y)-g(u)-f(v)>0
+\tag{30}
+\]
+
+for any real functions f and g on the binary alphabet. This charge is
+independent of the heights being optimized in the Smith criterion.
+
+In the zero cut, order rows by f(x)+g(y) and the matched columns by
+f(v)+g(u). In the infinity cut, use f(x)-g(u) and f(v)-g(y).
+In each case the endpoint is triangular, with identity diagonal blocks;
+equal-potential blocks receive no contribution from N. The full
+determinants therefore remain nonzero. Fixing y=u gives the same
+triangular argument for every principal X,V line minor, and fixing x=v
+does so for every Y,U line minor. Matched entries stay equal to one.
+Paired letter flips merely relabel f and g. All support inequalities and
+the analytic argument above therefore apply unchanged.
+
+The tensor power restricted to equal paired physical word types has
+the crossing endpoint: a nonempty selection of N terms has positive
+total charge, whereas every retained type has total charge zero. Thus
+this corollary includes a class of polynomial tensors whose crossing
+endpoint requires type restriction. It does not include general such
+endpoints, nor rational kernels with poles at w=1. The removable-pole
+construction in [the quartic note](reflection-charged-quartic-tiles.md)
+has a different polynomiality hypothesis and is not excluded by this
+corollary.
+
+## 8. Literal controls and research consequences
 
 The [fixed-ray checker](../tools/check_binary_fixed_ray_floor.py) constructs
 the exact compact cover and compares the normalization with full
