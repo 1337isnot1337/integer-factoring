@@ -1,0 +1,150 @@
+{
+  "cross_determinant_identity_checks": 1024,
+  "direct_seed_endpoint_checks": 2304,
+  "direct_seeds": [
+    {
+      "M": 8,
+      "N": 6,
+      "a": 4,
+      "b": 3,
+      "degree": 30
+    },
+    {
+      "M": 16,
+      "N": 12,
+      "a": 8,
+      "b": 6,
+      "degree": 60
+    },
+    {
+      "M": 32,
+      "N": 20,
+      "a": 16,
+      "b": 10,
+      "degree": 116
+    },
+    {
+      "M": 32,
+      "N": 24,
+      "a": 16,
+      "b": 12,
+      "degree": 120
+    },
+    {
+      "M": 64,
+      "N": 48,
+      "a": 32,
+      "b": 24,
+      "degree": 240
+    },
+    {
+      "M": 1,
+      "N": 1,
+      "a": 1,
+      "b": 1,
+      "degree": 6
+    },
+    {
+      "M": 2,
+      "N": 3,
+      "a": 4,
+      "b": 5,
+      "degree": 22
+    },
+    {
+      "M": 7,
+      "N": 9,
+      "a": 3,
+      "b": 4,
+      "degree": 28
+    },
+    {
+      "M": 16,
+      "N": 6,
+      "a": 7,
+      "b": 3,
+      "degree": 52
+    }
+  ],
+  "families": [
+    {
+      "L": 4,
+      "M": 8,
+      "N": 2,
+      "dimension": 6,
+      "multiplicities": [
+        4,
+        2
+      ],
+      "scalar_sector_lengths": [
+        8,
+        2
+      ]
+    },
+    {
+      "L": 8,
+      "M": 16,
+      "N": 2,
+      "dimension": 6,
+      "multiplicities": [
+        4,
+        2
+      ],
+      "scalar_sector_lengths": [
+        12,
+        2
+      ]
+    },
+    {
+      "L": 8,
+      "M": 16,
+      "N": 4,
+      "dimension": 12,
+      "multiplicities": [
+        8,
+        4
+      ],
+      "scalar_sector_lengths": [
+        16,
+        4
+      ]
+    },
+    {
+      "L": 16,
+      "M": 32,
+      "N": 4,
+      "dimension": 12,
+      "multiplicities": [
+        8,
+        4
+      ],
+      "scalar_sector_lengths": [
+        24,
+        4
+      ]
+    },
+    {
+      "L": 32,
+      "M": 64,
+      "N": 8,
+      "dimension": 24,
+      "multiplicities": [
+        16,
+        8
+      ],
+      "scalar_sector_lengths": [
+        48,
+        8
+      ]
+    }
+  ],
+  "finite_field_block_identity_entries": 22464,
+  "polynomial_identity_entries": 941,
+  "source_sha256": {
+    "tools/check_schur_downset_crossing.py": "c39c307f0dff1d478577490f4c9cb65254decfe8843e65b28a8d2cdc55955b4c",
+    "tools/check_schur_gaussian_reduction.py": "724d15fc83fad5bebade19ded5c6be49744f89aabbe52058c52089edcefd244c",
+    "tools/check_schur_offset_interval.py": "02765c907a2b86e82fdda87e1ac94e762863740d5fc98cf07a1161ba2eb94293",
+    "tools/check_schur_two_block_holonomy.py": "8e7f7fab50e5b6e852707159053f9024a18bd97cc94dc13925c79314a6599785"
+  },
+  "status": "exact two-block holonomy and scalar Gaussian-sector construction; no improved factoring exponent"
+}

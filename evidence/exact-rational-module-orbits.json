@@ -1,0 +1,551 @@
+{
+  "schema": "exact-rational-module-orbits-v1",
+  "field": "F2",
+  "scope": "fixed companion factorization; exact grouped-channel word pressure",
+  "random_finite_jet_span_checks": 300,
+  "literal_channel_word_checks": 170,
+  "orbits": [
+    {
+      "cut": 0,
+      "infinity": true,
+      "states": [
+        [
+          [
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        ]
+      ],
+      "exponents": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "transitions": [
+        {
+          "state": 0,
+          "symbol": 0,
+          "image": [
+            0,
+            1
+          ]
+        },
+        {
+          "state": 0,
+          "symbol": 1,
+          "image": [
+            0,
+            1
+          ]
+        },
+        {
+          "state": 0,
+          "symbol": 2,
+          "image": [
+            0,
+            1
+          ]
+        },
+        {
+          "state": 0,
+          "symbol": 3,
+          "image": [
+            0,
+            1
+          ]
+        },
+        {
+          "state": 1,
+          "symbol": 0,
+          "image": [
+            1,
+            0
+          ]
+        },
+        {
+          "state": 1,
+          "symbol": 1,
+          "image": [
+            0,
+            1
+          ]
+        },
+        {
+          "state": 1,
+          "symbol": 2,
+          "image": [
+            1,
+            0
+          ]
+        },
+        {
+          "state": 1,
+          "symbol": 3,
+          "image": [
+            1,
+            0
+          ]
+        }
+      ],
+      "classes": [
+        0,
+        1
+      ],
+      "point": "5",
+      "upper_rate": "266/25",
+      "potential": [
+        "16025/6",
+        "8525/6"
+      ]
+    },
+    {
+      "cut": 1,
+      "infinity": false,
+      "states": [
+        [
+          [
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              2,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        ]
+      ],
+      "exponents": [
+        0,
+        -1,
+        -1,
+        -1
+      ],
+      "transitions": [
+        {
+          "state": 0,
+          "symbol": 0,
+          "image": [
+            0,
+            1
+          ]
+        },
+        {
+          "state": 0,
+          "symbol": 1,
+          "image": [
+            0,
+            0
+          ]
+        },
+        {
+          "state": 0,
+          "symbol": 2,
+          "image": [
+            0,
+            2
+          ]
+        },
+        {
+          "state": 0,
+          "symbol": 3,
+          "image": [
+            0,
+            2
+          ]
+        },
+        {
+          "state": 1,
+          "symbol": 0,
+          "image": [
+            1,
+            0
+          ]
+        },
+        {
+          "state": 1,
+          "symbol": 1,
+          "image": [
+            0,
+            3
+          ]
+        },
+        {
+          "state": 1,
+          "symbol": 2,
+          "image": [
+            0,
+            2
+          ]
+        },
+        {
+          "state": 1,
+          "symbol": 3,
+          "image": [
+            0,
+            2
+          ]
+        },
+        {
+          "state": 2,
+          "symbol": 0,
+          "image": [
+            0,
+            1
+          ]
+        },
+        {
+          "state": 2,
+          "symbol": 1,
+          "image": [
+            0,
+            4
+          ]
+        },
+        {
+          "state": 2,
+          "symbol": 2,
+          "image": [
+            0,
+            2
+          ]
+        },
+        {
+          "state": 2,
+          "symbol": 3,
+          "image": [
+            0,
+            2
+          ]
+        },
+        {
+          "state": 3,
+          "symbol": 0,
+          "image": [
+            0,
+            1
+          ]
+        },
+        {
+          "state": 3,
+          "symbol": 1,
+          "image": [
+            0,
+            4
+          ]
+        },
+        {
+          "state": 3,
+          "symbol": 2,
+          "image": [
+            0,
+            2
+          ]
+        },
+        {
+          "state": 3,
+          "symbol": 3,
+          "image": [
+            0,
+            2
+          ]
+        },
+        {
+          "state": 4,
+          "symbol": 0,
+          "image": [
+            0,
+            5
+          ]
+        },
+        {
+          "state": 4,
+          "symbol": 1,
+          "image": [
+            0,
+            1
+          ]
+        },
+        {
+          "state": 4,
+          "symbol": 2,
+          "image": [
+            1,
+            2
+          ]
+        },
+        {
+          "state": 4,
+          "symbol": 3,
+          "image": [
+            1,
+            2
+          ]
+        },
+        {
+          "state": 5,
+          "symbol": 0,
+          "image": [
+            1,
+            0
+          ]
+        },
+        {
+          "state": 5,
+          "symbol": 1,
+          "image": [
+            0,
+            6
+          ]
+        },
+        {
+          "state": 5,
+          "symbol": 2,
+          "image": [
+            0,
+            2
+          ]
+        },
+        {
+          "state": 5,
+          "symbol": 3,
+          "image": [
+            0,
+            2
+          ]
+        },
+        {
+          "state": 6,
+          "symbol": 0,
+          "image": [
+            0,
+            1
+          ]
+        },
+        {
+          "state": 6,
+          "symbol": 1,
+          "image": [
+            0,
+            4
+          ]
+        },
+        {
+          "state": 6,
+          "symbol": 2,
+          "image": [
+            0,
+            2
+          ]
+        },
+        {
+          "state": 6,
+          "symbol": 3,
+          "image": [
+            0,
+            2
+          ]
+        }
+      ],
+      "classes": [
+        0,
+        1,
+        2,
+        2,
+        3,
+        1,
+        2
+      ],
+      "point": "5",
+      "upper_rate": "607/500",
+      "potential": [
+        "212292521500/87286701",
+        "134602721500/87286701",
+        "201436521500/87286701",
+        "201436521500/87286701",
+        "146396601500/87286701",
+        "134602721500/87286701",
+        "201436521500/87286701"
+      ]
+    }
+  ],
+  "uniform_lower_bound_B": "10",
+  "upper_bound_point": "5",
+  "upper_bound_B": "80731/6250",
+  "factoring_exponent_improvement": false,
+  "sources": {
+    "check_cancellation_module_automata.py": "f2d7f72ac524ee5ab6d4617a595b072e5ce5a3071f86e88bace71b3bfb36e08e",
+    "check_minimal_boundary_modules.py": "5ed2903466455efe664825fab5a79fdc8855d87ad5fa74d77251df3d0df30ec3"
+  }
+}

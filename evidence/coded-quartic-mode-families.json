@@ -1,0 +1,481 @@
+{
+  "cases": [
+    {
+      "ambient": 2,
+      "coefficient_sha256": "606b481c4cfe46dccea0c234c22a21f78397c0ea5dc34cddcc892f8ffd4cb9df",
+      "coefficients_hx_hu_gy_gv": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "common_w_clearing_power": 0,
+      "degree": 8,
+      "endpoint": 1,
+      "endpoint_kind": "nonnegative logical height; equality is crossing",
+      "field": 2,
+      "index_order": "x+q*y+q^2*u+q^3*v",
+      "indices": [
+        0,
+        1
+      ],
+      "local_endpoint_entries_checked": 16,
+      "logical_energy": [
+        0,
+        1
+      ],
+      "nonzero_quartic_diagonal_labels": [],
+      "nonzero_quartic_entries": 0,
+      "q": 2,
+      "quartic_numerator": [
+        1,
+        0
+      ],
+      "strict_endpoint": false,
+      "strictly_positive_endpoint_entries": 0
+    },
+    {
+      "ambient": 4,
+      "coefficient_sha256": "ff6121665ab9ceb43053f68ce9f5fac34dd4a4163b469e4994d2b75166e9f0d2",
+      "coefficients_hx_hu_gy_gv": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "common_w_clearing_power": 0,
+      "degree": 32,
+      "endpoint": 1,
+      "endpoint_kind": "nonnegative logical height; equality is crossing",
+      "field": 2,
+      "index_order": "x+q*y+q^2*u+q^3*v",
+      "indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "local_endpoint_entries_checked": 4096,
+      "logical_energy": [
+        0,
+        1,
+        2,
+        3,
+        3,
+        4,
+        5,
+        6
+      ],
+      "nonzero_quartic_diagonal_labels": [
+        5,
+        6,
+        7
+      ],
+      "nonzero_quartic_entries": 186,
+      "previous_independent_exterior_control_matches": true,
+      "q": 8,
+      "quartic_numerator": [
+        1,
+        0
+      ],
+      "strict_endpoint": false,
+      "strictly_positive_endpoint_entries": 64
+    },
+    {
+      "ambient": 8,
+      "coefficient_sha256": "b1a487e2b0c1c2399cc6608ff4eaf4245d2bc8ca99e3ebd1b4d598505e06add1",
+      "coefficients_hx_hu_gy_gv": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "common_w_clearing_power": 0,
+      "degree": 64,
+      "endpoint": 1,
+      "endpoint_kind": "nonnegative logical height; equality is crossing",
+      "field": 2,
+      "index_order": "x+q*y+q^2*u+q^3*v",
+      "indices": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "local_endpoint_entries_checked": 4096,
+      "logical_energy": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "nonzero_quartic_diagonal_labels": [
+        5,
+        6,
+        7
+      ],
+      "nonzero_quartic_entries": 110,
+      "q": 8,
+      "quartic_numerator": [
+        1,
+        0
+      ],
+      "strict_endpoint": false,
+      "strictly_positive_endpoint_entries": 32
+    },
+    {
+      "ambient": 8,
+      "coefficient_sha256": "a5f8765146edb28fed8d2c6511f41524442aee173d433579622b8d9b1cdcd8c6",
+      "coefficients_hx_hu_gy_gv": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "common_w_clearing_power": 0,
+      "degree": 64,
+      "endpoint": 1,
+      "endpoint_kind": "nonnegative logical height; equality is crossing",
+      "field": 2,
+      "index_order": "x+q*y+q^2*u+q^3*v",
+      "indices": [
+        0,
+        1,
+        3,
+        7
+      ],
+      "local_endpoint_entries_checked": 4096,
+      "logical_energy": [
+        0,
+        1,
+        3,
+        4,
+        7,
+        8,
+        10,
+        11
+      ],
+      "nonzero_quartic_diagonal_labels": [
+        5,
+        6,
+        7
+      ],
+      "nonzero_quartic_entries": 173,
+      "q": 8,
+      "quartic_numerator": [
+        1,
+        0
+      ],
+      "strict_endpoint": false,
+      "strictly_positive_endpoint_entries": 64
+    },
+    {
+      "ambient": 8,
+      "coefficient_sha256": "7beecb6f6e0108e03ea2488477c291eeb5eb599a4ee57bebf29d1e209eb96cb0",
+      "coefficients_hx_hu_gy_gv": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "common_w_clearing_power": 0,
+      "degree": 80,
+      "endpoint": 1,
+      "endpoint_kind": "nonnegative logical height; equality is crossing",
+      "field": 2,
+      "index_order": "x+q*y+q^2*u+q^3*v",
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "local_endpoint_entries_checked": 65536,
+      "logical_energy": [
+        0,
+        1,
+        2,
+        3,
+        3,
+        4,
+        5,
+        6,
+        4,
+        5,
+        6,
+        7,
+        7,
+        8,
+        9,
+        10
+      ],
+      "nonzero_quartic_diagonal_labels": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "nonzero_quartic_entries": 1577,
+      "q": 16,
+      "quartic_numerator": [
+        1,
+        0
+      ],
+      "strict_endpoint": false,
+      "strictly_positive_endpoint_entries": 320
+    },
+    {
+      "ambient": 4,
+      "coefficient_sha256": "b27d9212c87467c005005227715c009a399f75a000127f503fc37e68a139419e",
+      "coefficients_hx_hu_gy_gv": [
+        [
+          2,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "common_w_clearing_power": 2,
+      "degree": 32,
+      "endpoint": 1,
+      "endpoint_kind": "nonnegative logical height; equality is crossing",
+      "field": 2,
+      "index_order": "x+q*y+q^2*u+q^3*v",
+      "indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "local_endpoint_entries_checked": 4096,
+      "logical_energy": [
+        0,
+        1,
+        2,
+        3,
+        3,
+        4,
+        5,
+        6
+      ],
+      "nonzero_quartic_diagonal_labels": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "nonzero_quartic_entries": 232,
+      "q": 8,
+      "quartic_numerator": [
+        11,
+        0
+      ],
+      "strict_endpoint": false,
+      "strictly_positive_endpoint_entries": 64
+    },
+    {
+      "ambient": 4,
+      "coefficient_sha256": "bd3e1464bfbae07150d9a52350c3f2b7be6ce468b349b96b0e8234af65285d3e",
+      "coefficients_hx_hu_gy_gv": [
+        [
+          4099,
+          -6
+        ],
+        [
+          4101,
+          -7
+        ],
+        [
+          8201,
+          -6
+        ],
+        [
+          8209,
+          -7
+        ]
+      ],
+      "common_w_clearing_power": 26,
+      "degree": 70,
+      "endpoint": 1,
+      "endpoint_kind": "nonnegative logical height; equality is crossing",
+      "field": 2,
+      "index_order": "x+q*y+q^2*u+q^3*v",
+      "indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "local_endpoint_entries_checked": 4096,
+      "logical_energy": [
+        0,
+        1,
+        2,
+        3,
+        3,
+        4,
+        5,
+        6
+      ],
+      "nonzero_quartic_diagonal_labels": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "nonzero_quartic_entries": 232,
+      "q": 8,
+      "quartic_numerator": [
+        1,
+        0
+      ],
+      "strict_endpoint": false,
+      "strictly_positive_endpoint_entries": 64
+    },
+    {
+      "ambient": 8,
+      "coefficient_sha256": "f27f60e931661b760896c13cb2bac5feb2098f481344bd0d6265f77b28d57a63",
+      "coefficients_hx_hu_gy_gv": [
+        [
+          7,
+          -1
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          13,
+          -3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "common_w_clearing_power": 6,
+      "degree": 74,
+      "endpoint": 1,
+      "endpoint_kind": "nonnegative logical height; equality is crossing",
+      "field": 2,
+      "index_order": "x+q*y+q^2*u+q^3*v",
+      "indices": [
+        0,
+        1,
+        3,
+        7
+      ],
+      "local_endpoint_entries_checked": 4096,
+      "logical_energy": [
+        0,
+        1,
+        3,
+        4,
+        7,
+        8,
+        10,
+        11
+      ],
+      "nonzero_quartic_diagonal_labels": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "nonzero_quartic_entries": 222,
+      "q": 8,
+      "quartic_numerator": [
+        21,
+        -2
+      ],
+      "strict_endpoint": false,
+      "strictly_positive_endpoint_entries": 64
+    }
+  ],
+  "field": 2,
+  "source_sha256": {
+    "tools/build_coded_quartic_crossing.py": "337ff163141c3a495b546480bdd893fc698bf3c711a40024fdd8770fc072bc4a",
+    "tools/check_coded_quartic_mode_families.py": "4701a3ed6e8afeb3e2d5c7ba55e08a14f86b0018d33bd8120e14638bbf503932",
+    "tools/check_schur_downset_crossing.py": "c39c307f0dff1d478577490f4c9cb65254decfe8843e65b28a8d2cdc55955b4c",
+    "tools/weighted_smith_oracle.py": "9a6cbace2bb1fea210d1bea784f4a55fdfd5e7bb69b23d0d956861e00263204f"
+  },
+  "status": "exact polynomial and typed-endpoint controls; no pressure claim"
+}

@@ -1,0 +1,723 @@
+{
+  "counting": {
+    "balanced_equal_count_and_energy_pigeonhole_checks": 54,
+    "exact_binary_type_bounds": 90,
+    "exact_product_partition_expansions": 3
+  },
+  "exterior_profiles": [
+    {
+      "M": 2,
+      "cut": 0,
+      "end": "zero",
+      "full_tensor_orders": [
+        0,
+        0,
+        0,
+        0,
+        4,
+        4,
+        4,
+        4,
+        8,
+        8,
+        8,
+        8,
+        12,
+        12,
+        12,
+        12
+      ],
+      "index": 0,
+      "one_particle_orders": [
+        0,
+        0,
+        4,
+        8
+      ]
+    },
+    {
+      "M": 2,
+      "cut": 1,
+      "end": "zero",
+      "full_tensor_orders": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "index": 0,
+      "one_particle_orders": [
+        0,
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "M": 2,
+      "cut": 0,
+      "end": "gauged_infinity",
+      "full_tensor_orders": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "index": 0,
+      "one_particle_orders": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "M": 2,
+      "cut": 1,
+      "end": "gauged_infinity",
+      "full_tensor_orders": [
+        0,
+        0,
+        4,
+        4,
+        4,
+        4,
+        6,
+        6,
+        8,
+        8,
+        10,
+        10,
+        10,
+        10,
+        14,
+        14
+      ],
+      "index": 0,
+      "one_particle_orders": [
+        0,
+        4,
+        4,
+        6
+      ]
+    },
+    {
+      "M": 4,
+      "cut": 0,
+      "end": "zero",
+      "full_tensor_orders": [
+        0,
+        0,
+        0,
+        0,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        16,
+        16,
+        16,
+        16
+      ],
+      "index": 1,
+      "one_particle_orders": [
+        0,
+        0,
+        8,
+        8
+      ]
+    },
+    {
+      "M": 4,
+      "cut": 1,
+      "end": "zero",
+      "full_tensor_orders": [
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        4,
+        4,
+        4,
+        4,
+        6,
+        6,
+        6,
+        6
+      ],
+      "index": 1,
+      "one_particle_orders": [
+        0,
+        0,
+        2,
+        4
+      ]
+    },
+    {
+      "M": 4,
+      "cut": 0,
+      "end": "gauged_infinity",
+      "full_tensor_orders": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "index": 1,
+      "one_particle_orders": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "M": 4,
+      "cut": 1,
+      "end": "gauged_infinity",
+      "full_tensor_orders": [
+        0,
+        0,
+        2,
+        2,
+        8,
+        8,
+        10,
+        10,
+        12,
+        12,
+        14,
+        14,
+        20,
+        20,
+        22,
+        22
+      ],
+      "index": 1,
+      "one_particle_orders": [
+        0,
+        2,
+        8,
+        12
+      ]
+    },
+    {
+      "M": 8,
+      "cut": 0,
+      "end": "zero",
+      "full_tensor_orders": [
+        0,
+        0,
+        0,
+        0,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        32,
+        32,
+        32,
+        32
+      ],
+      "index": 3,
+      "one_particle_orders": [
+        0,
+        0,
+        16,
+        16
+      ]
+    },
+    {
+      "M": 8,
+      "cut": 1,
+      "end": "zero",
+      "full_tensor_orders": [
+        0,
+        0,
+        0,
+        0,
+        6,
+        6,
+        6,
+        6,
+        8,
+        8,
+        8,
+        8,
+        14,
+        14,
+        14,
+        14
+      ],
+      "index": 3,
+      "one_particle_orders": [
+        0,
+        0,
+        6,
+        8
+      ]
+    },
+    {
+      "M": 8,
+      "cut": 0,
+      "end": "gauged_infinity",
+      "full_tensor_orders": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "index": 3,
+      "one_particle_orders": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "M": 8,
+      "cut": 1,
+      "end": "gauged_infinity",
+      "full_tensor_orders": [
+        0,
+        0,
+        2,
+        2,
+        16,
+        16,
+        18,
+        18,
+        24,
+        24,
+        26,
+        26,
+        40,
+        40,
+        42,
+        42
+      ],
+      "index": 3,
+      "one_particle_orders": [
+        0,
+        2,
+        16,
+        24
+      ]
+    }
+  ],
+  "omitted_mode_weight_negative_control": {
+    "different_A_index_sums": [
+      0,
+      1
+    ],
+    "indices": [
+      0,
+      1
+    ],
+    "off_diagonal_endpoint_value": 1,
+    "same_species_cardinalities": true,
+    "v": [
+      2,
+      0
+    ],
+    "x": [
+      1,
+      0
+    ],
+    "y_and_u": [
+      0,
+      0
+    ]
+  },
+  "source_sha256": {
+    "tools/check_fixed_mode_crossings.py": "f36a3d4d2d4e7d1ea7bca107c7dfb827861d5ce08fca03c1b8284313122ad549",
+    "tools/check_schur_downset_crossing.py": "c39c307f0dff1d478577490f4c9cb65254decfe8843e65b28a8d2cdc55955b4c",
+    "tools/check_schur_gaussian_reduction.py": "724d15fc83fad5bebade19ded5c6be49744f89aabbe52058c52089edcefd244c",
+    "tools/schur_fermion.py": "03b19a8df3793b12b4516b8d19435a308976e721a960608090b99158b3877614"
+  },
+  "status": "exact arbitrary-mode typed crossing and pressure reduction; no improved exponent",
+  "typed_endpoints": [
+    {
+      "A_mode_counts": [
+        1,
+        2
+      ],
+      "B_mode_counts": [
+        0,
+        1
+      ],
+      "M": 4,
+      "arbitrary_height_label_checks": 216,
+      "copies": 3,
+      "direct_gaussian_endpoint_entries": 1241,
+      "inclusion_pairings": 729,
+      "indices": [
+        0,
+        1
+      ],
+      "label_dimension": 27,
+      "sample_restored_shifts": [
+        -3,
+        12
+      ],
+      "unequal_total_species_occupations": true
+    },
+    {
+      "A_mode_counts": [
+        1,
+        1
+      ],
+      "B_mode_counts": [
+        1,
+        0
+      ],
+      "M": 4,
+      "arbitrary_height_label_checks": 64,
+      "copies": 2,
+      "direct_gaussian_endpoint_entries": 4096,
+      "inclusion_pairings": 64,
+      "indices": [
+        0,
+        3
+      ],
+      "label_dimension": 8,
+      "sample_restored_shifts": [
+        -17,
+        -4
+      ],
+      "unequal_total_species_occupations": true
+    },
+    {
+      "A_mode_counts": [
+        1,
+        0
+      ],
+      "B_mode_counts": [
+        0,
+        1
+      ],
+      "M": 4,
+      "arbitrary_height_label_checks": 32,
+      "copies": 2,
+      "direct_gaussian_endpoint_entries": 256,
+      "inclusion_pairings": 16,
+      "indices": [
+        1,
+        2
+      ],
+      "label_dimension": 4,
+      "sample_restored_shifts": [
+        10,
+        -1
+      ],
+      "unequal_total_species_occupations": false
+    },
+    {
+      "A_mode_counts": [
+        1,
+        1,
+        1
+      ],
+      "B_mode_counts": [
+        0,
+        1,
+        0
+      ],
+      "M": 4,
+      "arbitrary_height_label_checks": 128,
+      "copies": 2,
+      "direct_gaussian_endpoint_entries": 768,
+      "inclusion_pairings": 256,
+      "indices": [
+        0,
+        1,
+        2
+      ],
+      "label_dimension": 16,
+      "sample_restored_shifts": [
+        -5,
+        10
+      ],
+      "unequal_total_species_occupations": true
+    },
+    {
+      "A_mode_counts": [
+        1,
+        1,
+        0
+      ],
+      "B_mode_counts": [
+        0,
+        1,
+        1
+      ],
+      "M": 8,
+      "arbitrary_height_label_checks": 128,
+      "copies": 2,
+      "direct_gaussian_endpoint_entries": 768,
+      "inclusion_pairings": 256,
+      "indices": [
+        0,
+        3,
+        5
+      ],
+      "label_dimension": 16,
+      "sample_restored_shifts": [
+        13,
+        -2
+      ],
+      "unequal_total_species_occupations": false
+    }
+  ],
+  "variable_energy_schur": [
+    {
+      "M": 4,
+      "energy_slices": [
+        {
+          "delta": -2,
+          "entries": 1,
+          "h": 2,
+          "labels": 1
+        },
+        {
+          "delta": -1,
+          "entries": 16,
+          "h": 3,
+          "labels": 2
+        },
+        {
+          "delta": 0,
+          "entries": 81,
+          "h": 4,
+          "labels": 3
+        },
+        {
+          "delta": 1,
+          "entries": 16,
+          "h": 5,
+          "labels": 2
+        },
+        {
+          "delta": 2,
+          "entries": 1,
+          "h": 6,
+          "labels": 1
+        }
+      ],
+      "indices": [
+        0,
+        1,
+        2
+      ],
+      "r": 1
+    },
+    {
+      "M": 4,
+      "energy_slices": [
+        {
+          "delta": -3,
+          "entries": 1,
+          "h": 1,
+          "labels": 1
+        },
+        {
+          "delta": 0,
+          "entries": 16,
+          "h": 4,
+          "labels": 2
+        },
+        {
+          "delta": 3,
+          "entries": 1,
+          "h": 7,
+          "labels": 1
+        }
+      ],
+      "indices": [
+        0,
+        3
+      ],
+      "r": 1
+    },
+    {
+      "M": 8,
+      "energy_slices": [
+        {
+          "delta": -5,
+          "entries": 1,
+          "h": 3,
+          "labels": 1
+        },
+        {
+          "delta": -3,
+          "entries": 1,
+          "h": 5,
+          "labels": 1
+        },
+        {
+          "delta": -2,
+          "entries": 1,
+          "h": 6,
+          "labels": 1
+        },
+        {
+          "delta": 0,
+          "entries": 81,
+          "h": 8,
+          "labels": 3
+        },
+        {
+          "delta": 2,
+          "entries": 1,
+          "h": 10,
+          "labels": 1
+        },
+        {
+          "delta": 3,
+          "entries": 1,
+          "h": 11,
+          "labels": 1
+        },
+        {
+          "delta": 5,
+          "entries": 1,
+          "h": 13,
+          "labels": 1
+        }
+      ],
+      "indices": [
+        0,
+        2,
+        5
+      ],
+      "r": 1
+    },
+    {
+      "M": 8,
+      "energy_slices": [
+        {
+          "delta": -4,
+          "entries": 1,
+          "h": 12,
+          "labels": 1
+        },
+        {
+          "delta": -3,
+          "entries": 16,
+          "h": 13,
+          "labels": 2
+        },
+        {
+          "delta": -2,
+          "entries": 625,
+          "h": 14,
+          "labels": 5
+        },
+        {
+          "delta": -1,
+          "entries": 1296,
+          "h": 15,
+          "labels": 6
+        },
+        {
+          "delta": 0,
+          "entries": 4096,
+          "h": 16,
+          "labels": 8
+        },
+        {
+          "delta": 1,
+          "entries": 1296,
+          "h": 17,
+          "labels": 6
+        },
+        {
+          "delta": 2,
+          "entries": 625,
+          "h": 18,
+          "labels": 5
+        },
+        {
+          "delta": 3,
+          "entries": 16,
+          "h": 19,
+          "labels": 2
+        },
+        {
+          "delta": 4,
+          "entries": 1,
+          "h": 20,
+          "labels": 1
+        }
+      ],
+      "indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "r": 2
+    }
+  ]
+}

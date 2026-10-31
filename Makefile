@@ -1,4 +1,4 @@
-.PHONY: verify verify-docs verify-frontier verify-post-half verify-formal verify-k6 verify-half-appendix help
+.PHONY: verify verify-docs verify-frontier verify-post-half verify-schur-fermion verify-schur-central verify-schur-gaussian verify-schur-sparse verify-fixed-modes verify-cancellation-modules verify-minimal-modules verify-exact-modules verify-cancellation-crossing verify-block-smith verify-linear-smith verify-type-pressure verify-crossing-interpolation verify-smith-oracle verify-controlled-smith verify-sparse-holonomy verify-charge-pruning verify-cubic-full-images verify-formal verify-k6 verify-half-appendix help
 
 verify: verify-docs verify-frontier
 	python3 -m unittest discover -s tests -v
@@ -13,6 +13,95 @@ verify: verify-docs verify-frontier
 
 verify-docs:
 	python3 tools/check_docs.py
+
+verify-schur-fermion:
+	python3 tools/check_schur_fermion.py
+
+verify-schur-central:
+	python3 tools/check_schur_homogeneous_central.py
+
+verify-schur-gaussian:
+	python3 tools/check_schur_gaussian_reduction.py
+
+verify-schur-sparse:
+	python3 tools/check_schur_downset_crossing.py
+	python3 tools/check_schur_offset_interval.py
+	python3 tools/check_schur_two_block_holonomy.py
+
+verify-fixed-modes:
+	python3 tools/check_fixed_mode_crossings.py
+	python3 tools/check_three_mode_pressure_certificate.py --certificate evidence/three-mode-pressure-refinement.json
+	python3 tools/check_schur_one_species_interval.py
+	python3 tools/check_large_interval_pressure.py
+	python3 tools/check_schur_pascal_complement.py
+	python3 tools/check_constant_flag_crossings.py
+
+verify-cancellation-modules:
+	python3 tools/check_cancellation_module_automata.py
+
+verify-minimal-modules:
+	python3 tools/check_minimal_boundary_modules.py
+
+verify-exact-modules:
+	python3 tools/check_exact_module_orbits.py
+
+verify-cancellation-crossing:
+	python3 tools/check_cancellation_module_crossing.py
+
+verify-block-smith:
+	python3 tools/check_block_smith_crossings.py
+
+verify-linear-smith:
+	python3 tools/check_linear_smith_barrier.py
+
+verify-type-pressure:
+	python3 tools/check_type_optimized_pressure.py
+
+verify-crossing-interpolation:
+	python3 tools/check_polynomial_crossing_interpolation.py
+	python3 tools/check_tensorized_smith_sections.py
+	python3 tools/check_positive_energy_quartic_endpoints.py
+	python3 tools/check_localized_quartic_profiles.py
+	python3 tools/check_residual_quartic_codes.py
+	python3 tools/check_coded_quartic_mode_families.py
+	python3 tools/check_conjugate_residual_phase_codes.py
+	python3 tools/check_residual_three_letter_obstruction.py
+	python3 tools/check_signed_residual_codes.py
+	python3 tools/check_fixed_field_descent.py
+	python3 tools/check_involutive_core_crossings.py
+	python3 tools/check_coordinate_core_crossings.py
+	python3 tools/check_even_core_postselection.py
+	python3 tools/check_paired_type_crossing_pressure.py
+	python3 tools/check_two_parameter_even_core.py
+	python3 tools/check_rectangular_residual_repair.py
+	python3 tools/check_four_parameter_even_core.py
+
+verify-smith-oracle:
+	python3 tools/check_weighted_smith_oracle.py
+	python3 tools/check_sparse_bulk_species_floor.py
+
+.PHONY: verify-native-smith
+verify-native-smith:
+	python3 tools/check_native_weighted_smith_f4.py
+
+.PHONY: verify-native-rectangular
+verify-native-rectangular:
+	python3 tools/check_native_rectangular_smith.py
+
+verify-controlled-smith:
+	python3 tools/check_controlled_permutation_smith.py
+	python3 tools/check_qutrit_weyl_crossing.py
+
+verify-sparse-holonomy:
+	python3 tools/check_sparse_holonomy_singletons.py
+
+verify-charge-pruning:
+	python3 tools/check_one_sided_charge_pruning.py
+	python3 tools/check_typed_gaussian_generic_blocks.py
+	python3 tools/check_typed_gaussian_charge_blocks.py
+
+verify-cubic-full-images:
+	python3 tools/check_cubic_full_image_span.py --output /tmp/cubic-full-image-span.json
 
 verify-post-half:
 	python3 tools/check_half_piece_ranks.py --full
@@ -47,6 +136,26 @@ help:
 	  'make verify-frontier      - focused frontier certificates' \
 	  'make verify-post-half     - larger optional matrix-rank checks' \
 	  'make verify-docs          - check local Markdown file links' \
+	  'make verify-schur-fermion - exact full Schur entry and crossing queries' \
+	  'make verify-schur-central - hook identities and exact Schur central ranks' \
+	  'make verify-schur-gaussian - exact Schur digit reduction and Gaussian seed' \
+	  'make verify-schur-sparse - exact down-set and offset interval reductions' \
+	  'make verify-fixed-modes - arbitrary mode sets and independent occupations' \
+	  'make verify-cancellation-modules - exact finite module and word certificates' \
+	  'make verify-minimal-modules - exact boundary reduction and complete word rates' \
+	  'make verify-exact-modules - complete rational lattice orbits and pressures' \
+	  'make verify-cancellation-crossing - strict module improvement on a complete crossing' \
+	  'make verify-block-smith - ordered block profiles and submultiplicativity' \
+	  'make verify-linear-smith - uniform degree-one obstruction and binary catalogue' \
+	  'make verify-type-pressure - rational type and physical-gauge certificates' \
+	  'make verify-crossing-interpolation - exact polynomial synthesis from local flags' \
+	  'make verify-smith-oracle - exact weighted Smith minima and sparse entropy dual' \
+	  'make verify-native-smith - optional compiled F4 search controls (C++17)' \
+	  'make verify-native-rectangular - optional rectangular paired-type controls (C++17)' \
+	  'make verify-controlled-smith - controlled monomial and qutrit crossings' \
+	  'make verify-sparse-holonomy - sparse Smith profiles and Gaussian identities' \
+	  'make verify-charge-pruning - one-sided charges and typed Gaussian block bounds' \
+	  'make verify-cubic-full-images - complete varying-image cubic spaces and ranks' \
 	  'make verify-formal        - rebuild original Lean lemmas (Lean 4.35.0)' \
 	  'make verify-k6            - rebuild the certified 1/30 machine (Lean 4.35.0)' \
 	  'make verify-half-appendix - rebuild the certified 1/2 machine (Lean 4.33.1)'

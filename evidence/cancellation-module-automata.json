@@ -1,0 +1,790 @@
+{
+  "cases": [
+    {
+      "automata_constructed": 24,
+      "auxiliary_dimension": 1,
+      "best_sampled_certificate": {
+        "B_module": "256/27",
+        "infinity": {
+          "automaton": {
+            "dimension": 1,
+            "free_boundaries": false,
+            "precision": 1,
+            "states": [
+              [
+                1
+              ]
+            ],
+            "terminal_costs": [
+              0
+            ],
+            "transitions": [
+              [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            ]
+          },
+          "beta": "16/3",
+          "boundary_constant": "1",
+          "factors": {
+            "cut": 0,
+            "exponents": [
+              1,
+              0,
+              0,
+              -1
+            ],
+            "heights": [
+              0
+            ],
+            "infinity": true,
+            "side": 0
+          },
+          "potential": [
+            "1"
+          ],
+          "precision": 1
+        },
+        "s": "3",
+        "zero": {
+          "automaton": {
+            "dimension": 1,
+            "free_boundaries": false,
+            "precision": 1,
+            "states": [
+              [
+                1
+              ]
+            ],
+            "terminal_costs": [
+              0
+            ],
+            "transitions": [
+              [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            ]
+          },
+          "beta": "16/9",
+          "boundary_constant": "1",
+          "factors": {
+            "cut": 1,
+            "exponents": [
+              0,
+              -1,
+              -1,
+              -2
+            ],
+            "heights": [
+              0
+            ],
+            "infinity": false,
+            "side": 0
+          },
+          "potential": [
+            "1"
+          ],
+          "precision": 1
+        }
+      },
+      "coefficient_rank_checks": 600,
+      "degree": 1,
+      "literal_channel_product_checks": 480,
+      "maximum_reachable_states": 1,
+      "name": "scalar elementary",
+      "ordered_endpoint_entries": 272,
+      "rational_weighted_checks": 1200,
+      "termwise_min_plus_comparisons": 480
+    },
+    {
+      "automata_constructed": 72,
+      "auxiliary_dimension": 2,
+      "best_sampled_certificate": {
+        "B_module": "256/27",
+        "infinity": {
+          "automaton": {
+            "dimension": 2,
+            "free_boundaries": false,
+            "precision": 1,
+            "states": [
+              [
+                1
+              ]
+            ],
+            "terminal_costs": [
+              0
+            ],
+            "transitions": [
+              [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            ]
+          },
+          "beta": "16/3",
+          "boundary_constant": "1",
+          "factors": {
+            "cut": 0,
+            "exponents": [
+              1,
+              0,
+              0,
+              -1
+            ],
+            "heights": [
+              0,
+              0
+            ],
+            "infinity": true,
+            "side": 0
+          },
+          "potential": [
+            "1"
+          ],
+          "precision": 1
+        },
+        "s": "3",
+        "zero": {
+          "automaton": {
+            "dimension": 2,
+            "free_boundaries": false,
+            "precision": 1,
+            "states": [
+              [
+                1
+              ]
+            ],
+            "terminal_costs": [
+              0
+            ],
+            "transitions": [
+              [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            ]
+          },
+          "beta": "16/9",
+          "boundary_constant": "1",
+          "factors": {
+            "cut": 1,
+            "exponents": [
+              0,
+              -1,
+              -1,
+              -2
+            ],
+            "heights": [
+              0,
+              0
+            ],
+            "infinity": false,
+            "side": 0
+          },
+          "potential": [
+            "1"
+          ],
+          "precision": 1
+        }
+      },
+      "coefficient_rank_checks": 1800,
+      "degree": 1,
+      "literal_channel_product_checks": 1440,
+      "maximum_reachable_states": 1,
+      "name": "auxiliary elementary",
+      "ordered_endpoint_entries": 272,
+      "rational_weighted_checks": 3600,
+      "termwise_min_plus_comparisons": 1440
+    },
+    {
+      "automata_constructed": 72,
+      "auxiliary_dimension": 2,
+      "best_sampled_certificate": {
+        "B_module": "16",
+        "infinity": {
+          "automaton": {
+            "dimension": 2,
+            "free_boundaries": false,
+            "precision": 1,
+            "states": [
+              [
+                1
+              ]
+            ],
+            "terminal_costs": [
+              0
+            ],
+            "transitions": [
+              [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            ]
+          },
+          "beta": "4",
+          "boundary_constant": "1",
+          "factors": {
+            "cut": 0,
+            "exponents": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "heights": [
+              0,
+              0
+            ],
+            "infinity": true,
+            "side": 0
+          },
+          "potential": [
+            "1"
+          ],
+          "precision": 1
+        },
+        "s": "1",
+        "zero": {
+          "automaton": {
+            "dimension": 2,
+            "free_boundaries": false,
+            "precision": 1,
+            "states": [
+              [
+                1
+              ],
+              [
+                3
+              ],
+              [
+                2
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "terminal_costs": [
+              0,
+              0,
+              1,
+              0
+            ],
+            "transitions": [
+              [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  2
+                ],
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  2
+                ]
+              ],
+              [
+                [
+                  0,
+                  2
+                ],
+                [
+                  0,
+                  2
+                ],
+                [
+                  0,
+                  2
+                ],
+                [
+                  0,
+                  2
+                ]
+              ],
+              [
+                [
+                  0,
+                  3
+                ],
+                [
+                  0,
+                  2
+                ],
+                [
+                  0,
+                  3
+                ],
+                [
+                  0,
+                  2
+                ]
+              ],
+              [
+                [
+                  0,
+                  3
+                ],
+                [
+                  0,
+                  2
+                ],
+                [
+                  0,
+                  3
+                ],
+                [
+                  0,
+                  2
+                ]
+              ]
+            ]
+          },
+          "beta": "4",
+          "boundary_constant": "1",
+          "factors": {
+            "cut": 1,
+            "exponents": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "heights": [
+              0,
+              0
+            ],
+            "infinity": false,
+            "side": 0
+          },
+          "potential": [
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "precision": 1
+        }
+      },
+      "coefficient_rank_checks": 2880,
+      "degree": 2,
+      "literal_channel_product_checks": 1440,
+      "maximum_reachable_states": 12,
+      "name": "ordered pairing",
+      "ordered_endpoint_entries": 272,
+      "rational_weighted_checks": 5760,
+      "termwise_min_plus_comparisons": 1440
+    },
+    {
+      "automata_constructed": 72,
+      "auxiliary_dimension": 2,
+      "best_sampled_certificate": {
+        "B_module": "16",
+        "infinity": {
+          "automaton": {
+            "dimension": 2,
+            "free_boundaries": false,
+            "precision": 1,
+            "states": [
+              [
+                1
+              ],
+              [
+                2
+              ]
+            ],
+            "terminal_costs": [
+              0,
+              1
+            ],
+            "transitions": [
+              [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  1
+                ]
+              ]
+            ]
+          },
+          "beta": "4",
+          "boundary_constant": "1",
+          "factors": {
+            "cut": 0,
+            "exponents": [
+              3,
+              2,
+              0,
+              -1
+            ],
+            "heights": [
+              0,
+              0
+            ],
+            "infinity": true,
+            "side": 0
+          },
+          "potential": [
+            "1",
+            "1"
+          ],
+          "precision": 1
+        },
+        "s": "1",
+        "zero": {
+          "automaton": {
+            "dimension": 2,
+            "free_boundaries": false,
+            "precision": 1,
+            "states": [
+              [
+                1
+              ],
+              [
+                2
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "terminal_costs": [
+              0,
+              1,
+              0
+            ],
+            "transitions": [
+              [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              [
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  2
+                ],
+                [
+                  0,
+                  2
+                ],
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                [
+                  0,
+                  2
+                ],
+                [
+                  0,
+                  2
+                ],
+                [
+                  0,
+                  2
+                ],
+                [
+                  0,
+                  2
+                ]
+              ]
+            ]
+          },
+          "beta": "4",
+          "boundary_constant": "1",
+          "factors": {
+            "cut": 1,
+            "exponents": [
+              0,
+              -1,
+              -1,
+              -1
+            ],
+            "heights": [
+              0,
+              0
+            ],
+            "infinity": false,
+            "side": 0
+          },
+          "potential": [
+            "1",
+            "1",
+            "1"
+          ],
+          "precision": 1
+        }
+      },
+      "coefficient_rank_checks": 3960,
+      "degree": 3,
+      "literal_channel_product_checks": 1440,
+      "maximum_reachable_states": 7,
+      "name": "mixed nilpotent loop",
+      "ordered_endpoint_entries": 272,
+      "rational_weighted_checks": 7920,
+      "termwise_min_plus_comparisons": 1440
+    }
+  ],
+  "checker_sha256": "f2d7f72ac524ee5ab6d4617a595b072e5ce5a3071f86e88bace71b3bfb36e08e",
+  "field": 2,
+  "maximum_word": 2,
+  "precisions": [
+    1,
+    2,
+    3
+  ],
+  "scope": "Exact finite module automata, literal rational-product and coefficient-rank checks; no improved factoring exponent.",
+  "status": "pass",
+  "synthetic_controls": {
+    "discarded_high_coefficients_reappear_after_division": true,
+    "free_boundary_submultiplicativity_checks": 72,
+    "literal_free_boundary_word_checks": 168,
+    "literal_rational_word_checks": 168,
+    "maximum_random_states": 7,
+    "nilpotent_cancellation_controls": 24,
+    "precision_monotonicity_and_exactness_checks": 336,
+    "random_automata": 12,
+    "strict_cancellation_examples": [
+      {
+        "automaton": {
+          "dimension": 2,
+          "free_boundaries": false,
+          "precision": 1,
+          "states": [
+            [
+              1
+            ],
+            [
+              3
+            ]
+          ],
+          "terminal_costs": [
+            0,
+            0
+          ],
+          "transitions": [
+            [
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                1,
+                1
+              ]
+            ]
+          ]
+        },
+        "min_plus_word_weight_at_length_8": "1",
+        "module_word_weight_at_length_8": "1/128",
+        "precision": 1
+      },
+      {
+        "automaton": {
+          "dimension": 2,
+          "free_boundaries": false,
+          "precision": 2,
+          "states": [
+            [
+              2,
+              1
+            ],
+            [
+              10,
+              5
+            ]
+          ],
+          "terminal_costs": [
+            0,
+            0
+          ],
+          "transitions": [
+            [
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                2,
+                1
+              ]
+            ]
+          ]
+        },
+        "min_plus_word_weight_at_length_8": "1",
+        "module_word_weight_at_length_8": "1/16384",
+        "precision": 2
+      },
+      {
+        "automaton": {
+          "dimension": 2,
+          "free_boundaries": false,
+          "precision": 3,
+          "states": [
+            [
+              4,
+              2,
+              1
+            ],
+            [
+              36,
+              18,
+              9
+            ]
+          ],
+          "terminal_costs": [
+            0,
+            0
+          ],
+          "transitions": [
+            [
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                3,
+                1
+              ]
+            ]
+          ]
+        },
+        "min_plus_word_weight_at_length_8": "1",
+        "module_word_weight_at_length_8": "1/2097152",
+        "precision": 3
+      }
+    ]
+  }
+}

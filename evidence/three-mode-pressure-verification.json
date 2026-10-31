@@ -1,0 +1,91 @@
+{
+  "certified_rho_upper": "19/25",
+  "dyadic_precision": 192,
+  "independent_fraction_interval_controls": 29,
+  "independent_nonzero_minor_checks": 2488,
+  "internal_regularity_checks": 56,
+  "lhs_interval_numerators": [
+    "427561942566409960417773985576553430179362541116340965028896628444030922344784628486346219137739760498561488134779267",
+    "427561942566409960417773985576553430179362541116341369565309182846279985435893235632692558163809073303284983210314345"
+  ],
+  "minimum_internal_slack": 1,
+  "physical_mode_weights_A": [
+    -1158,
+    890,
+    2938
+  ],
+  "physical_mode_weights_B": [
+    8846,
+    7310,
+    5262
+  ],
+  "post_half_target_reached": false,
+  "profile_blocks": [
+    {
+      "cut": 0,
+      "direction": 0,
+      "endpoint": "zero",
+      "orders": [
+        236,
+        748,
+        1260,
+        2796,
+        3308,
+        3308
+      ]
+    },
+    {
+      "cut": 0,
+      "direction": 1,
+      "endpoint": "zero",
+      "orders": [
+        278,
+        790,
+        1302,
+        1814,
+        2838,
+        3350
+      ]
+    },
+    {
+      "cut": 1,
+      "direction": 0,
+      "endpoint": "infinity",
+      "orders": [
+        1862,
+        2374,
+        2886,
+        3910,
+        4422,
+        4934
+      ]
+    },
+    {
+      "cut": 1,
+      "direction": 1,
+      "endpoint": "infinity",
+      "orders": [
+        -836,
+        -324,
+        188,
+        700,
+        1212,
+        1724
+      ]
+    }
+  ],
+  "rhs_interval_numerators": [
+    "557257322974799798532972801763829392192820124091503733883513926012217205445167260204158528055231963355899781541264446",
+    "557257322974799798532972801763829392192820124091504160020080130912440372998011511126253834981300527869543467254551969"
+  ],
+  "scope": "A strict improvement of the previous Gaussian pressure control; no improved factoring exponent.",
+  "source_sha256": {
+    "tools/check_fixed_mode_crossings.py": "f36a3d4d2d4e7d1ea7bca107c7dfb827861d5ce08fca03c1b8284313122ad549",
+    "tools/check_schur_downset_crossing.py": "c39c307f0dff1d478577490f4c9cb65254decfe8843e65b28a8d2cdc55955b4c",
+    "tools/check_three_mode_pressure_certificate.py": "365e48affadda7ea8b02069738ec384efc2a91151887840b4d4b0230ceeeb6ee",
+    "tools/weighted_smith_oracle.py": "9a6cbace2bb1fea210d1bea784f4a55fdfd5e7bb69b23d0d956861e00263204f"
+  },
+  "status": "pass",
+  "strict_inequality": true,
+  "strict_integer_gap": "129695380408389838115198816187275962013457582975162364318204743165937220009274024571465969891422890052614798330950101"
+}

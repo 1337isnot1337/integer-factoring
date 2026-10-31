@@ -1,0 +1,35 @@
+{
+  "both_cut_both_place_prefix_comparisons": 832,
+  "coefficient_functional_rank_comparisons": 512,
+  "common_type_polynomial_entries": 5248,
+  "exact_convex_pressure_comparisons": 384,
+  "noncommuting_auxiliary_word_entries": 1296,
+  "opposite_direction_control_profiles": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      2
+    ]
+  ],
+  "quartic_enumeration": {
+    "neutral_per_copy": 328,
+    "opposite_vector_pairs": 1810,
+    "positive_copy_occupation_counts": [
+      1,
+      16,
+      36,
+      16,
+      1
+    ]
+  },
+  "scalar_tensor_samples": 32,
+  "scope": "One-sided perturbations only; no improved factoring exponent.",
+  "source_sha256": {
+    "check_one_sided_charge_pruning.py": "6f7aa6491bc331f718037aef906b816f884c1fcc4ef8bb1dec7da5179c217e96",
+    "weighted_smith_oracle.py": "9a6cbace2bb1fea210d1bea784f4a55fdfd5e7bb69b23d0d956861e00263204f"
+  },
+  "status": "pass"
+}

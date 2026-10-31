@@ -1,0 +1,399 @@
+{
+  "checker_sha256": "5ed2903466455efe664825fab5a79fdc8855d87ad5fa74d77251df3d0df30ec3",
+  "crossing_reductions": {
+    "cases": [
+      {
+        "cut": 0,
+        "infinity": false,
+        "minimal_dimension": 1,
+        "name": "auxiliary elementary",
+        "original_channels": 4,
+        "retained_channels": 4,
+        "side": 0
+      },
+      {
+        "cut": 0,
+        "infinity": true,
+        "minimal_dimension": 1,
+        "name": "auxiliary elementary",
+        "original_channels": 4,
+        "retained_channels": 4,
+        "side": 0
+      },
+      {
+        "cut": 0,
+        "infinity": false,
+        "minimal_dimension": 1,
+        "name": "auxiliary elementary",
+        "original_channels": 4,
+        "retained_channels": 4,
+        "side": 1
+      },
+      {
+        "cut": 0,
+        "infinity": true,
+        "minimal_dimension": 1,
+        "name": "auxiliary elementary",
+        "original_channels": 4,
+        "retained_channels": 4,
+        "side": 1
+      },
+      {
+        "cut": 1,
+        "infinity": false,
+        "minimal_dimension": 1,
+        "name": "auxiliary elementary",
+        "original_channels": 4,
+        "retained_channels": 4,
+        "side": 0
+      },
+      {
+        "cut": 1,
+        "infinity": true,
+        "minimal_dimension": 1,
+        "name": "auxiliary elementary",
+        "original_channels": 4,
+        "retained_channels": 4,
+        "side": 0
+      },
+      {
+        "cut": 1,
+        "infinity": false,
+        "minimal_dimension": 1,
+        "name": "auxiliary elementary",
+        "original_channels": 4,
+        "retained_channels": 4,
+        "side": 1
+      },
+      {
+        "cut": 1,
+        "infinity": true,
+        "minimal_dimension": 1,
+        "name": "auxiliary elementary",
+        "original_channels": 4,
+        "retained_channels": 4,
+        "side": 1
+      },
+      {
+        "cut": 0,
+        "infinity": false,
+        "minimal_dimension": 2,
+        "name": "ordered pairing",
+        "original_channels": 4,
+        "retained_channels": 4,
+        "side": 0
+      },
+      {
+        "cut": 0,
+        "infinity": true,
+        "minimal_dimension": 2,
+        "name": "ordered pairing",
+        "original_channels": 4,
+        "retained_channels": 4,
+        "side": 0
+      },
+      {
+        "cut": 0,
+        "infinity": false,
+        "minimal_dimension": 2,
+        "name": "ordered pairing",
+        "original_channels": 4,
+        "retained_channels": 4,
+        "side": 1
+      },
+      {
+        "cut": 0,
+        "infinity": true,
+        "minimal_dimension": 2,
+        "name": "ordered pairing",
+        "original_channels": 4,
+        "retained_channels": 4,
+        "side": 1
+      },
+      {
+        "cut": 1,
+        "infinity": false,
+        "minimal_dimension": 2,
+        "name": "ordered pairing",
+        "original_channels": 4,
+        "retained_channels": 4,
+        "side": 0
+      },
+      {
+        "cut": 1,
+        "infinity": true,
+        "minimal_dimension": 2,
+        "name": "ordered pairing",
+        "original_channels": 4,
+        "retained_channels": 4,
+        "side": 0
+      },
+      {
+        "cut": 1,
+        "infinity": false,
+        "minimal_dimension": 2,
+        "name": "ordered pairing",
+        "original_channels": 4,
+        "retained_channels": 4,
+        "side": 1
+      },
+      {
+        "cut": 1,
+        "infinity": true,
+        "minimal_dimension": 2,
+        "name": "ordered pairing",
+        "original_channels": 4,
+        "retained_channels": 4,
+        "side": 1
+      },
+      {
+        "cut": 0,
+        "infinity": false,
+        "minimal_dimension": 2,
+        "name": "mixed nilpotent loop",
+        "original_channels": 4,
+        "retained_channels": 4,
+        "side": 0
+      },
+      {
+        "cut": 0,
+        "infinity": true,
+        "minimal_dimension": 2,
+        "name": "mixed nilpotent loop",
+        "original_channels": 4,
+        "retained_channels": 4,
+        "side": 0
+      },
+      {
+        "cut": 0,
+        "infinity": false,
+        "minimal_dimension": 2,
+        "name": "mixed nilpotent loop",
+        "original_channels": 4,
+        "retained_channels": 4,
+        "side": 1
+      },
+      {
+        "cut": 0,
+        "infinity": true,
+        "minimal_dimension": 2,
+        "name": "mixed nilpotent loop",
+        "original_channels": 4,
+        "retained_channels": 4,
+        "side": 1
+      },
+      {
+        "cut": 1,
+        "infinity": false,
+        "minimal_dimension": 2,
+        "name": "mixed nilpotent loop",
+        "original_channels": 4,
+        "retained_channels": 4,
+        "side": 0
+      },
+      {
+        "cut": 1,
+        "infinity": true,
+        "minimal_dimension": 2,
+        "name": "mixed nilpotent loop",
+        "original_channels": 4,
+        "retained_channels": 4,
+        "side": 0
+      },
+      {
+        "cut": 1,
+        "infinity": false,
+        "minimal_dimension": 2,
+        "name": "mixed nilpotent loop",
+        "original_channels": 4,
+        "retained_channels": 4,
+        "side": 1
+      },
+      {
+        "cut": 1,
+        "infinity": true,
+        "minimal_dimension": 2,
+        "name": "mixed nilpotent loop",
+        "original_channels": 4,
+        "retained_channels": 4,
+        "side": 1
+      }
+    ],
+    "exact_intertwining_identities": 816
+  },
+  "field": "F_2(tau)",
+  "grouped_physical_choices": {
+    "channels": 1,
+    "physical_choices": 2,
+    "rate": "1"
+  },
+  "hidden_component": {
+    "minimal_dimension": 1,
+    "original_dimension": 2,
+    "records": [
+      {
+        "minimal_module_rate": "1/2",
+        "precision": 1,
+        "unreduced_rate": "1"
+      },
+      {
+        "minimal_module_rate": "1/2",
+        "precision": 2,
+        "unreduced_rate": "1"
+      },
+      {
+        "minimal_module_rate": "1/2",
+        "precision": 3,
+        "unreduced_rate": "1"
+      }
+    ],
+    "word_comparisons": 9
+  },
+  "module_checker_sha256": "f2d7f72ac524ee5ab6d4617a595b072e5ce5a3071f86e88bace71b3bfb36e08e",
+  "parity_gap": {
+    "boundary_partition": [
+      "1",
+      "0",
+      "1",
+      "0",
+      "1",
+      "0",
+      "1",
+      "0",
+      "1"
+    ],
+    "dimension": 2,
+    "liminf_rate": "0",
+    "limsup_rate": "1"
+  },
+  "rational_gauge_embeddings": {
+    "cases": [
+      {
+        "boundary_shift": 0,
+        "case": 0,
+        "matrix_shifts": [
+          -1,
+          0
+        ],
+        "minimal_dimension": 2,
+        "reachable_dimension": 3,
+        "window": {
+          "0": "3/2",
+          "1": "35/12",
+          "2": "1"
+        }
+      },
+      {
+        "boundary_shift": 0,
+        "case": 1,
+        "matrix_shifts": [
+          -2,
+          0
+        ],
+        "minimal_dimension": 2,
+        "reachable_dimension": 3,
+        "window": {
+          "0": "9/4",
+          "1": "97/24",
+          "2": "1"
+        }
+      },
+      {
+        "boundary_shift": 0,
+        "case": 2,
+        "matrix_shifts": [
+          0,
+          -1
+        ],
+        "minimal_dimension": 2,
+        "reachable_dimension": 3,
+        "window": {
+          "0": "3/2",
+          "1": "5/2",
+          "2": "1"
+        }
+      },
+      {
+        "boundary_shift": 0,
+        "case": 3,
+        "matrix_shifts": [
+          0,
+          -3
+        ],
+        "minimal_dimension": 2,
+        "reachable_dimension": 3,
+        "window": {
+          "0": "27/8",
+          "1": "15/4",
+          "2": "1"
+        }
+      },
+      {
+        "boundary_shift": -2,
+        "case": 4,
+        "matrix_shifts": [
+          -2,
+          -2
+        ],
+        "minimal_dimension": 2,
+        "reachable_dimension": 3,
+        "window": {
+          "0": "6561/256",
+          "1": "3159/128",
+          "2": "81/16"
+        }
+      },
+      {
+        "boundary_shift": -4,
+        "case": 5,
+        "matrix_shifts": [
+          -3,
+          -5
+        ],
+        "minimal_dimension": 2,
+        "reachable_dimension": 3,
+        "window": {
+          "0": "43046721/65536",
+          "1": "531441/2048",
+          "2": "6561/256"
+        }
+      },
+      {
+        "boundary_shift": -2,
+        "case": 6,
+        "matrix_shifts": [
+          -1,
+          -3
+        ],
+        "minimal_dimension": 2,
+        "reachable_dimension": 3,
+        "window": {
+          "0": "6561/256",
+          "1": "729/32",
+          "2": "81/16"
+        }
+      },
+      {
+        "boundary_shift": -1,
+        "case": 7,
+        "matrix_shifts": [
+          0,
+          -2
+        ],
+        "minimal_dimension": 2,
+        "reachable_dimension": 3,
+        "window": {
+          "0": "81/16",
+          "1": "27/4",
+          "2": "9/4"
+        }
+      }
+    ],
+    "exact_intertwining_identities": 80,
+    "finite_window_inequalities": 48,
+    "literal_scalar_word_comparisons": 680
+  },
+  "scope": "Constructive boundary-rate completeness for a fixed grouped-channel factorization; no new factoring exponent.",
+  "status": "pass",
+  "zero_series_control": true
+}
