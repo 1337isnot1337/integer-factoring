@@ -8,9 +8,9 @@ removes the linear scan through the modes from the earlier certificate
 checker. It also provides a reusable way to certify long Gaussian
 spectator products surrounding a fixed defect.
 
-Eight recorded witnesses extend the explicit interval certificates to
-\(2^{209}-1\) modes. The last rational upper bound is less than
-\(5\cdot10^{-123}\) above \(1/\sqrt2\). Every bound remains above
+Eleven recorded witnesses extend the explicit interval certificates to
+\(2^{1636}-1\) modes. The last rational upper bound is less than
+\(2\cdot10^{-980}\) above \(1/\sqrt2\). Every bound remains above
 that threshold. The factoring score is still \(1/2\); this is an
 improvement in finite certificates and their computation, not a new
 factoring exponent.
@@ -157,8 +157,11 @@ not the test used to accept a certificate.
 | 20 | \(2^{55}-1\) | \(1023286908188737/1447146223759344\) | \(3.3764\cdot10^{-31}\) |
 | 40 | \(2^{106}-1\) | \(a_{40}/(4b_{40})\) from (7) | \(8.0613\cdot10^{-62}\) |
 | 80 | \(2^{209}-1\) | \(a_{80}/(4b_{80})\) from (7) | \(4.5951\cdot10^{-123}\) |
+| 160 | \(2^{414}-1\) | \(a_{160}/(4b_{160})\) from (7) | \(1.49306\cdot10^{-245}\) |
+| 320 | \(2^{821}-1\) | \(a_{320}/(4b_{320})\) from (7) | \(1.57630\cdot10^{-490}\) |
+| 640 | \(2^{1636}-1\) | \(a_{640}/(4b_{640})\) from (7) | \(1.75695\cdot10^{-980}\) |
 
-Writing \(\rho_{80}=a_{80}/(4b_{80})\) for the last rational upper
+Writing \(\rho_{80}=a_{80}/(4b_{80})\) for the level-80 rational upper
 bound, the certificate is explicitly
 
 ```math
@@ -179,6 +182,21 @@ Both strict rational comparisons are reproducible without decimal
 approximations. The interval floor still prevents this displayed family
 from crossing the target.
 
+The same Pell identity certifies the later gap bounds without
+subtracting nearly equal numerical square roots. For level 640, exact
+integer comparison gives
+
+```math
+0<\frac{a_{640}}{4b_{640}}-\frac1{\sqrt2}
+<\frac5{112b_{640}^2}<2\cdot10^{-980},
+```
+
+where the final inequality is checked as
+\(5\cdot10^{980}<224b_{640}^2\). The corresponding upper bounds
+at levels 160 and 320 are \(2\cdot10^{-245}\) and
+\(2\cdot10^{-490}\). These compare the rational certificate values
+with the limiting threshold; they are not bounds below that threshold.
+
 ## 5. Evidence and reuse
 
 Run the [checker](../tools/check_accelerated_interval_pressure.py):
@@ -195,8 +213,20 @@ rational type probabilities. Independent `Fraction` controls compare
 signs are also checked against the earlier direct-product interval
 method, covering both parities and both signs.
 
-The largest recorded case uses 498 Euler terms and 2,928 fractional
-bits. The argument and implementation apply to arbitrary finite
+The [extended record](../evidence/accelerated-interval-pressure-extended.json)
+contains levels 160, 320, and 640, including strict outward interval
+endpoints and exact integer checks of the displayed gap bounds. Reproduce
+their pressure certificates with:
+
+```sh
+python3 -X int_max_str_digits=100000 tools/check_accelerated_interval_pressure.py \
+  --levels 160 320 640 --output /tmp/accelerated-interval-pressure-extended.json
+```
+
+The Python integer-to-decimal allowance is increased only to print the
+large, explicitly constructed certificate endpoints. The largest
+recorded case uses 3,352 Euler terms and 20,040 fractional bits. The
+argument and implementation apply to arbitrary finite
 geometric products in the stated domain, so the same routine can
 certify the spectator contributions in a proposed bounded-defect
 pressure witness. The finite defect orders and admissible endpoint
