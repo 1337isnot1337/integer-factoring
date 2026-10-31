@@ -1,0 +1,322 @@
+{
+  "constraint_rank": 510,
+  "even_laurent_endpoint_variables": 512,
+  "fiber_checks": [
+    {
+      "a": 0,
+      "b": 0,
+      "endpoint_entries": 256,
+      "infinity_orders": [
+        0,
+        1,
+        1,
+        2,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        6,
+        7,
+        7,
+        8
+      ],
+      "wick_identities": 128,
+      "zero_orders": [
+        0,
+        1,
+        1,
+        2,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        6,
+        7,
+        7,
+        8
+      ]
+    },
+    {
+      "a": 0,
+      "b": 1,
+      "endpoint_entries": 256,
+      "infinity_orders": [
+        0,
+        1,
+        1,
+        2,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        6,
+        7,
+        7,
+        8
+      ],
+      "wick_identities": 128,
+      "zero_orders": [
+        0,
+        1,
+        1,
+        2,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        6,
+        7,
+        7,
+        8
+      ]
+    },
+    {
+      "a": 1,
+      "b": 0,
+      "endpoint_entries": 256,
+      "infinity_orders": [
+        0,
+        1,
+        1,
+        2,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        6,
+        7,
+        7,
+        8
+      ],
+      "wick_identities": 128,
+      "zero_orders": [
+        0,
+        1,
+        1,
+        2,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        6,
+        7,
+        7,
+        8
+      ]
+    },
+    {
+      "a": 1,
+      "b": 1,
+      "endpoint_entries": 256,
+      "infinity_orders": [
+        0,
+        1,
+        1,
+        2,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        6,
+        7,
+        7,
+        8
+      ],
+      "wick_identities": 128,
+      "zero_orders": [
+        0,
+        1,
+        1,
+        2,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        6,
+        7,
+        7,
+        8
+      ]
+    }
+  ],
+  "fiber_dimension": 2,
+  "fiber_formula": "G * (1 + (a*z^2+b*z^3)*(1+z)*theta_v_plus*theta_v_minus)",
+  "independent_toeplitz_ranks": 72,
+  "infinity_cut": 1,
+  "infinity_heights": [
+    [
+      0,
+      1,
+      1,
+      2
+    ],
+    [
+      0,
+      1,
+      1,
+      2
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      2,
+      2,
+      4
+    ]
+  ],
+  "quartic_violated_row_lattices": 2,
+  "quartic_wick_negative_control": 15,
+  "relaxed_non_gaussian_control": {
+    "common_monomial_shift": 0,
+    "perturbation_terms": [
+      [
+        60,
+        0
+      ],
+      [
+        92,
+        2
+      ],
+      [
+        172,
+        2
+      ],
+      [
+        204,
+        4
+      ]
+    ],
+    "row_targets": [
+      [
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "violated_wick_masks": [
+      60,
+      92,
+      172,
+      204
+    ]
+  },
+  "row_targets": [
+    0,
+    1,
+    1,
+    2,
+    3,
+    3,
+    4,
+    4,
+    4,
+    4,
+    5,
+    5,
+    6,
+    7,
+    7,
+    8
+  ],
+  "source_sha256": {
+    "tools/check_block_smith_crossings.py": "6fd6e1d3fb8ad5ee08ed716101caa27b5d8b20529318927c14ed09106e3889a7",
+    "tools/check_polynomial_crossing_interpolation.py": "7114a7448911a2449973bd5aae4a8f5c0a7ce4004e5a6c432149dd5baa3463f3",
+    "tools/check_schur_gaussian_reduction.py": "724d15fc83fad5bebade19ded5c6be49744f89aabbe52058c52089edcefd244c"
+  },
+  "status": "exact complete interpolation fiber for specified local row lattices; no improved exponent",
+  "zero_cut": 0,
+  "zero_heights": [
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      1,
+      2
+    ],
+    [
+      0,
+      -1,
+      -1,
+      -2
+    ]
+  ]
+}
