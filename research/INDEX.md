@@ -238,6 +238,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 - [Steiner cubic crossings](steiner-cubic-crossings.md): three controlled involutions give determinant-one crossing paths for every Steiner quasigroup; exact design-independent profiles exclude the bare criterion at every size, with a six-dimensional orbit calculation and full-cut controls.
 
+- [Steiner coefficient barrier](steiner-coefficient-barrier.md): one shared coefficient forces actual two-cut ranks at every word length; arbitrary coefficient recombinations on complete words cannot beat `rho=3/4` for any `q>=7`, even with independent variables and designs across positions.
+
 - [Group-shear crossings](group-shear-crossings.md): multiplication/division shears give cubic swap paths over every finite `p`-group in characteristic `p`; exact early-jet certificates exclude six displayed binary seeds, without an all-group claim.
 
 - [All-degree homogeneous Boolean charge bands](homogeneous-boolean-charge-bands.md): a degree-independent loss cap and stronger Gaussian floors exclude all exterior charges and a linearly growing interior band, including overlapping monomials.

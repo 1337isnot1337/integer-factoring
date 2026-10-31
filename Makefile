@@ -41,6 +41,10 @@ verify-matrix-vacuum:
 verify-steiner-cubic:
 	python3 tools/check_steiner_cubic_crossings.py
 
+.PHONY: verify-steiner-coefficients
+verify-steiner-coefficients:
+	python3 tools/check_steiner_coefficient_barrier.py
+
 .PHONY: verify-group-shears
 verify-group-shears:
 	python3 tools/check_group_shear_crossings.py

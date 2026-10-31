@@ -1,0 +1,31 @@
+{
+  "records": [
+    {
+      "word_length": 1,
+      "physical_alphabet": 7,
+      "complete_nonzero_binary_recombinations": 15,
+      "detected_recombinations": 8,
+      "minimum_detected_row_rank": 14,
+      "minimum_detected_column_rank": 28,
+      "minimum_detected_product": 392,
+      "exact_univariate_spanning_threshold_squared": 609
+    },
+    {
+      "word_length": 2,
+      "physical_alphabet": 49,
+      "complete_nonzero_binary_recombinations": 127,
+      "detected_recombinations": 64,
+      "minimum_detected_row_rank": 196,
+      "minimum_detected_column_rank": 784,
+      "minimum_detected_product": 153664,
+      "exact_univariate_spanning_threshold_squared": 921200
+    }
+  ],
+  "exact_seven_letter_comparison": {
+    "8T_squared": 392,
+    "q_cubed": 343
+  },
+  "scope": "Finite complete binary univariate controls; the written block proof covers arbitrary multivariate recombinations and characteristic-two extensions.",
+  "factoring_exponent": "1/2; unchanged",
+  "source_sha256": "2d9efee56feb2192028fbe4d1d43d5b400e421ebc6a9d3b014d195cf389d60e0"
+}

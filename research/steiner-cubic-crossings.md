@@ -173,9 +173,8 @@ make verify-steiner-cubic
 make verify
 ```
 
-The construction changes the local algebra but leaves only a six-dimensional
-permutation span. A useful next question is whether tensor-power coefficient
-recombinations or restricted physical types can exploit its two-dimensional
-nilpotent summand while retaining the required standard-matrix endpoint.
-The all-size calculation above closes the bare cubic search; it does not
-settle those alternatives. No new Lean work was used.
+The [common-coefficient argument](steiner-coefficient-barrier.md) now also
+excludes arbitrary coefficient recombinations on full words at every
+`q>=7`, using constant blocks in the two cuts. The remaining three-letter
+coefficient question and restricted physical types are separate from the
+bare calculation above. No new Lean work was used.
