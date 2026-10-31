@@ -12,9 +12,12 @@ This note gives the construction method and a complete finite example.
 For the existing four-label Schur Gaussian seed, its useful physical
 gauges and two specified row lattices leave exactly a two-dimensional
 space of endpoint-preserving even perturbations. Both directions are
-local Gaussian changes at the `v` leg. A relaxed pair of row lattices
-also produces an explicit non-Gaussian crossing, which checks that the
-interpolation method can leave the Gaussian class.
+local Gaussian changes at the `v` leg. Without the parity restriction,
+the complete space has dimension six: every solution is one of 64
+explicit local changes at that same leg. All 64 retain the original
+two Smith profiles. A relaxed pair of row lattices also produces an
+explicit non-Gaussian crossing, which checks that the interpolation
+method can leave the Gaussian class.
 
 These statements concern the specified row lattices. They do not exclude
 other row bases, other gauges, coefficient recombinations, or a better
@@ -172,10 +175,67 @@ Both are regular for the two polynomials in (7). Thus all four tensors
 have exactly the original Smith profiles.
 
 The factor in (7) adds a quadratic fermion edge within the `v` boundary,
-so all four tensors remain Gaussian. Consequently a genuinely
+so all four tensors remain Gaussian. Consequently an even
 non-Gaussian perturbation cannot retain these particular row lattices.
 This is a statement about the chosen lattices, which are stronger data
 than the two unordered Smith profiles.
+
+### Removing the parity restriction completely
+
+The same finite-window argument includes every physical tensor entry.
+There are now `1,024` Laurent endpoint-preserving variables. The
+constraint matrix has rank `1,018`, so the entire unrestricted fiber
+has dimension six.
+
+Let `E_(a,b)` be the four-by-four matrix unit that sends physical state
+`b` to state `a` at the `v` leg. All solutions have the following form:
+
+```math
+T(z)=L_v(z)G(z),                                         \tag{8}
+```
+
+where the local map is
+
+```math
+\begin{aligned}
+L_v(z)=I
+ &+(1+z)z\left(
+ aE_{1,0}+bE_{2,0}+cE_{3,1}+dE_{3,2}\right)\\
+ &+(1+z)(ez^2+fz^3)E_{3,0},\\
+ &\hspace{22mm}a,b,c,d,e,f\in\mathbb F_2.
+\end{aligned}                                            \tag{9}
+```
+
+Here `L_v` acts only on the `v` index of the tensor. The checker verifies
+that the six displayed perturbations are linearly independent and lie
+in the full kernel. The exact rank computation then proves that (9)
+lists every solution, including all possible Laurent degrees.
+
+Put `N_v=L_v-I`. Every nonzero entry of `N_v` increases occupation, so
+`N_v^3=0` and
+
+```math
+L_v^{-1}=I+N_v+N_v^2.                                    \tag{10}
+```
+
+At zero, a one-occupation step in (9) acquires the factor `z^-1`;
+at infinity it acquires `xi^2`. Thus `(1+z)z` is regular after both
+gauges. A two-occupation step acquires `z^-2` and `xi^4`, respectively,
+so both remaining coefficients are regular as well. The inverse in
+(10) is regular at both ends. Also `L_v(1)=I`, which preserves the
+crossing endpoint.
+
+The `v` leg lies on the column side of both specified flattenings.
+These regular local maps and their regular inverses therefore preserve
+both Smith profiles. The checker verifies the local map, its inverse,
+the resulting tensor, and both exact profiles for every one of the
+64 parameter choices.
+
+The even members are precisely `a=b=c=d=0`, recovering the four
+tensors in (7). Thus the fixed-lattice classification extends beyond
+even or Gaussian perturbations: every admissible tensor differs from
+the seed by one of the local leg maps (9). This remains a statement
+about these particular row lattices and physical gauges.
 
 ## 4. A non-Gaussian constructive control
 
@@ -203,12 +263,14 @@ python3 tools/check_polynomial_crossing_interpolation.py \
   --output evidence/polynomial-crossing-interpolation.json
 ```
 
-It verifies the two unit basis changes, the complete `512`-variable
-constraint rank, both spanning perturbations, all `1,024` endpoint
-entries of the four-tensor fiber, and `72` independent block-Toeplitz
-ranks. It checks all Gaussian Wick identities in that fiber and a
-non-Gaussian control outside it. The relaxed interpolation example is
-constructed by the same exact linear solver.
+It verifies the two unit basis changes, both the `512`-variable and
+`1,024`-variable constraint ranks, and all spanning perturbations.
+It checks all `64` unrestricted fiber members, including their local
+map inverses and both Smith profiles. The original even-fiber checks
+and an additional odd-parity member give `90` independent
+block-Toeplitz rank checks. It checks all Gaussian Wick identities in
+the even fiber and a non-Gaussian control outside it. The relaxed
+interpolation example is constructed by the same exact linear solver.
 
 See the [checker](../tools/check_polynomial_crossing_interpolation.py)
 and [verification output](../evidence/polynomial-crossing-interpolation.json).

@@ -211,6 +211,102 @@ def wick_failures(values, common_shift=0):
             and (values[mask] << (common_shift * (mask.bit_count() // 2 - 1))) != pfaffian(mask)]
 
 
+def gauged_leg_operator(matrix, heights, infinity):
+    """Gauge a physical leg map, with its row the target and column the source."""
+    result = [[0] * 4 for _ in range(4)]
+    for target, source in product(range(4), repeat=2):
+        polynomial = matrix[target][source]
+        while polynomial:
+            bit = polynomial & -polynomial
+            degree = bit.bit_length() - 1
+            exponent = heights[target] - heights[source] + (-degree if infinity else degree)
+            assert exponent >= 0
+            result[target][source] ^= 1 << exponent
+            polynomial ^= bit
+    return result
+
+
+def check_unrestricted_fiber(base, changes, orders):
+    """Classify every Laurent perturbation, including odd physical parity."""
+    variables, columns = interpolation_columns(changes, orders, even=False)
+    basis, kernel = column_elimination(columns)
+    assert len(variables) == 1024 and len(basis) == 1018 and len(kernel) == 6
+    lookup = {variable: i for i, variable in enumerate(variables)}
+    generators = ((1, 0, 1), (2, 0, 1), (3, 1, 1), (3, 2, 1),
+                  (3, 0, 2), (3, 0, 3))
+    known = []
+    for target, source, shift in generators:
+        witness = 0
+        for mask in range(256):
+            if mask >> 6 == target:
+                value = base[(mask & 63) | (source << 6)]
+                for exponent in range(value.bit_length()):
+                    if value >> exponent & 1:
+                        witness ^= 1 << lookup[mask, shift + exponent]
+        image = 0
+        for i, column in enumerate(columns):
+            if witness >> i & 1:
+                image ^= column
+        assert image == 0
+        known.append(witness)
+    assert binary_rank(known) == 6
+    identity = [[int(i == j) for j in range(4)] for i in range(4)]
+    records, toeplitz_checks = [], 0
+    for selector in range(64):
+        witness = 0
+        nilpotent = [[0] * 4 for _ in range(4)]
+        for i, (target, source, shift) in enumerate(generators):
+            if selector >> i & 1:
+                witness ^= known[i]
+                nilpotent[target][source] ^= 3 << shift
+        square = polynomial_matrix_product(nilpotent, nilpotent, 20)
+        assert polynomial_matrix_product(square, nilpotent, 20) == [[0] * 4 for _ in range(4)]
+        leg_map = [[identity[i][j] ^ nilpotent[i][j] for j in range(4)] for i in range(4)]
+        inverse = [[leg_map[i][j] ^ square[i][j] for j in range(4)] for i in range(4)]
+        assert polynomial_matrix_product(leg_map, inverse, 20) == identity
+        for heights, infinity in ((ZERO_HEIGHTS[3], False), (INFINITY_HEIGHTS[3], True)):
+            gauged = gauged_leg_operator(leg_map, heights, infinity)
+            gauged_inverse = gauged_leg_operator(inverse, heights, infinity)
+            assert polynomial_matrix_product(gauged, gauged_inverse, 20) == identity
+            assert binary_rank([sum((value & 1) << j for j, value in enumerate(row))
+                                for row in gauged]) == 4
+        values, common_shift = apply_perturbation(base, variables, witness)
+        assert common_shift == 0
+        for mask, (labels, value) in enumerate(zip(LABELS, values)):
+            reconstructed = 0
+            for source in range(4):
+                reconstructed ^= polynomial_multiply(
+                    leg_map[labels[3]][source], base[(mask & 63) | (source << 6)])
+            assert value == reconstructed
+            assert value.bit_count() % 2 == int(labels[0] == labels[3] and labels[1] == labels[2])
+        profiles = []
+        for heights, cut, infinity in ((ZERO_HEIGHTS, 0, False), (INFINITY_HEIGHTS, 1, True)):
+            matrix = gauged_matrix(values, heights, cut, infinity)
+            degree = max(value.bit_length() - 1 for row in matrix for value in row)
+            actual, _ = smith_profile(matrix, degree)
+            assert actual == EXPECTED
+            if selector == 1:  # independent Toeplitz audit of an odd-parity member
+                for precision in range(1, max(actual) + 2):
+                    assert toeplitz_rank(matrix, precision) == sum(
+                        max(0, precision - order) for order in actual)
+                    toeplitz_checks += 1
+            profiles.append(actual)
+        records.append({"selector": selector, "zero_orders": profiles[0],
+                        "infinity_orders": profiles[1], "endpoint_entries": 256,
+                        "regular_leg_map_and_inverse_at_both_ends": True})
+    return {
+        "all_laurent_endpoint_variables": len(variables),
+        "unrestricted_constraint_rank": len(basis),
+        "unrestricted_fiber_dimension": len(kernel),
+        "unrestricted_fiber_size": 64,
+        "local_v_generators": [{"target": target, "source": source,
+                                "coefficient": f"(1+z)*z^{shift}"}
+                               for target, source, shift in generators],
+        "all_parity_fiber_checks": records,
+        "additional_independent_toeplitz_ranks": toeplitz_checks,
+    }
+
+
 def check():
     base = [0] * 256
     for entry in seed_data()["local"]:
@@ -299,6 +395,7 @@ def check():
         changed = polynomial_matrix_product(polynomial_matrix_product(changes[side][0], matrix, 20), changes[side][1], 20)
         assert encode_rows(changed, 0, relaxed[side])[0] == 0
 
+    unrestricted = check_unrestricted_fiber(base, changes, orders)
     return {
         "status": "exact complete interpolation fiber for specified local row lattices; no improved exponent",
         "zero_heights": ZERO_HEIGHTS, "infinity_heights": INFINITY_HEIGHTS,
@@ -306,6 +403,7 @@ def check():
         "even_laurent_endpoint_variables": len(variables), "constraint_rank": len(basis),
         "fiber_dimension": len(kernel), "fiber_formula": "G * (1 + (a*z^2+b*z^3)*(1+z)*theta_v_plus*theta_v_minus)",
         "fiber_checks": records, "independent_toeplitz_ranks": toeplitz_checks,
+        "unrestricted_parity_classification": unrestricted,
         "quartic_wick_negative_control": 15, "quartic_violated_row_lattices": violated_flags,
         "relaxed_non_gaussian_control": {
             "row_targets": relaxed, "common_monomial_shift": common_shift,

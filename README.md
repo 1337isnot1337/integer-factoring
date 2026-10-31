@@ -125,7 +125,7 @@ It applies to Smith and module certificates. A checked physical gauge gives
 certificate and remains weaker than the known half-rate construction.
 [Polynomial interpolation](research/polynomial-crossing-interpolation.md)
 constructs crossings from prescribed local row lattices by exact linear
-algebra. The complete fixed-lattice Gaussian fiber is classified, and a
+algebra. The complete fixed-lattice fiber consists of 64 local changes, and a
 relaxed system constructs a non-Gaussian control.
 An [exact weighted Smith oracle](research/weighted-smith-separation-oracle.md)
 finds all determinantal minima without listing every minor. It supports
