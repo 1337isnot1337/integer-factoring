@@ -24,6 +24,10 @@ verify-smooth-norms:
 	python3 tools/check_smooth_norm_relation.py
 	python3 tools/check_factored_norm_search.py
 
+.PHONY: verify-class-square-conic
+verify-class-square-conic:
+	python3 tools/check_class_square_conic.py
+
 verify-neutral-duals:
 	python3 tools/check_neutral_reflected_crossings.py
 	python3 tools/check_homogeneous_dual_completion.py
@@ -42,10 +46,12 @@ verify-arithmetic:
 	python3 tools/check_interval_packet_circuits.py
 	python3 tools/check_normalized_interval_jets.py
 	python3 tools/check_interval_pole_trace.py
+	python3 tools/check_pole_cauchy_slope.py
 
 .PHONY: verify-interval-pole-trace
 verify-interval-pole-trace:
 	python3 tools/check_interval_pole_trace.py
+	python3 tools/check_pole_cauchy_slope.py
 
 verify-bell:
 	python3 tools/check_bell_crossing.py
@@ -464,7 +470,7 @@ verify-post-half:
 verify-arithmetic-sieve:
 	python3 tools/check_arithmetic_sieve_certificate.py
 
-verify-frontier: verify-bell
+verify-frontier: verify-bell verify-class-square-conic
 	python3 tools/check_bare_seven_to_twelve_letters.py > /dev/null
 	python3 tools/check_quadratic_inverse_degree_caps.py > /dev/null
 	python3 tools/check_quadratic_inverse_paths.py --alphabet 9 > /dev/null

@@ -1,0 +1,123 @@
+{
+  "scope": "Exact square Cauchy determinant and valuation slope; no fast global valuation algorithm.",
+  "seed": 20261040,
+  "dense_determinant_controls": 96,
+  "slope_controls": 48,
+  "positive_rectangles": 20,
+  "vandermonde_content_controls": 128,
+  "two_interval_content_controls": 128,
+  "huge_known_content_controls": [
+    {
+      "length": 1208925819614629174706188,
+      "vandermonde_content_bits": 159
+    },
+    {
+      "length": 1606938044258990275541962092341162602522202993782792835301388,
+      "vandermonde_content_bits": 399
+    }
+  ],
+  "examples": [
+    {
+      "number": 27,
+      "original_left": [
+        2,
+        5
+      ],
+      "original_right": [
+        9,
+        10
+      ],
+      "padded_domains": [
+        [
+          [
+            2,
+            5
+          ]
+        ],
+        [
+          [
+            9,
+            10
+          ],
+          [
+            28,
+            30
+          ]
+        ]
+      ],
+      "pair_count": 1,
+      "scale_bits": 10,
+      "scaled_determinant_orders": [
+        21,
+        23
+      ]
+    },
+    {
+      "number": 143,
+      "original_left": [
+        10,
+        13
+      ],
+      "original_right": [
+        11,
+        14
+      ],
+      "padded_domains": [
+        [
+          [
+            10,
+            13
+          ]
+        ],
+        [
+          [
+            11,
+            14
+          ]
+        ]
+      ],
+      "pair_count": 1,
+      "scale_bits": 9,
+      "scaled_determinant_orders": [
+        19,
+        21
+      ]
+    },
+    {
+      "number": 33,
+      "original_left": [
+        10,
+        15
+      ],
+      "original_right": [
+        3,
+        5
+      ],
+      "padded_domains": [
+        [
+          [
+            10,
+            15
+          ]
+        ],
+        [
+          [
+            3,
+            5
+          ],
+          [
+            34,
+            37
+          ]
+        ]
+      ],
+      "pair_count": 1,
+      "scale_bits": 12,
+      "scaled_determinant_orders": [
+        58,
+        62
+      ]
+    }
+  ],
+  "unresolved": "Compute the two normalized determinant contents without expanding the matrix or cross product."
+}

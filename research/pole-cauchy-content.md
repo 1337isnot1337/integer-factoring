@@ -1,0 +1,138 @@
+# Global factor counts from a Cauchy determinant slope
+
+The [pole trace](interval-pole-trace.md) has a second exact global
+interface: two determinant valuations of an implicitly given Cauchy matrix determine
+the factor-pair count. Padding handles arbitrary rectangular intervals
+without an exponential number of square queries. The padding and known
+Vandermonde contents have polynomial binary-input cost. Computing the
+two global determinant valuations at the desired cost remains open.
+There is no improved factoring bound or new Lean formalization.
+
+## 1. A square matrix with the exact factor incidence as its reduction
+
+Let `A={a_1,...,a_m}`, `B={b_1,...,b_m}` be distinct positive integer
+nodes. For odd `N`, choose `h` with `|N-a_i*b_j|<2^h` throughout the
+matrix. Put `z_k=N+2^k*w`, where `w^2+w+1=0`, and take `k>h+1`.
+Define
+
+```math
+(M_k)_{ij}=\frac{2^k w}{z_k-a_i b_j}.                \tag{1}
+```
+
+The pole-filter proof shows that every entry is 2-adically integral,
+and its reduction modulo two is one exactly when `a_i*b_j=N`.
+These ones occupy distinct rows and columns. Therefore the **actual**
+rank of `M_k mod 2` over `F_4` is exactly the number `D` of factor pairs.
+The matrix also satisfies the exact rank-one displacement relation
+
+```math
+\operatorname{diag}(a_i)M_k\operatorname{diag}(b_j)-z_kM_k
+=-2^k w\,\mathbf1\mathbf1^T.                        \tag{2}
+```
+
+Over `Q_2(w)`, column scaling converts the unscaled kernel to a Cauchy
+matrix with nodes `a_i` and `z_k/b_j`. These node families and the
+resonant denominators must be retained in any use of a Cauchy algorithm.
+
+## 2. The determinant slope gives the count
+
+Write `V(A)=prod_(i<j)(a_j-a_i)` and similarly for `B`. The exact
+Cauchy determinant identity, with its column factors canceled, is
+
+```math
+\det\left(\frac1{z-a_i b_j}\right)
+=\frac{z^{m(m-1)/2}V(A)V(B)}{\prod_{i,j}(z-a_i b_j)}. \tag{3}
+```
+
+One obtains (3) by applying the ordinary Cauchy identity to `a_i,z/b_j`.
+The powers of each `b_j` from the column scaling, Vandermonde, and
+denominator cancel. This also fixes the positive sign in (3).
+
+Let `E_k=v_2(det M_k)` and
+`E_*=sum_(a_i*b_j!=N) v_2(N-a_i*b_j)`. All nonzero differences have
+valuation below `h`, while a zero difference becomes `2^k*w` of
+valuation `k`. Since `N` is odd, `v_2(z_k)=0`. Thus (3) gives
+
+```math
+E_k=k(m-D)+v_2(V(A))+v_2(V(B))-E_*,\qquad
+\boxed{D=m-(E_{k+1}-E_k)}.                          \tag{4}
+```
+
+All determinants here are nonzero over `Q_2(w)`. Their contents can
+nevertheless be enormous. The unknown constant `E_*` cancels from the
+slope. Equation (4) is an exact reduction, not a way of evaluating
+either content. Substituting a large unknown cross-product valuation
+into (4) does not make that evaluation inexpensive.
+
+## 3. Implicit padding preserves arbitrary rectangle queries
+
+First clip both original factor intervals to `[1,N+1)`; this cannot
+remove a factor pair. Let their lengths be `r,s` and set `m=max(r,s)`.
+Append `m-r` nodes from `[N+1,N+1+m-r)` to the first domain when needed,
+and likewise for the second. A new node exceeds `N`, so it participates
+in no factor pair with a positive integer. Both domains now have size
+`m` and at most two ordered disjoint intervals, and `D` is unchanged.
+Zero-size matrices have determinant one and give count zero directly.
+
+The padded endpoints have `O(n)` bits when `N` and the original endpoints
+do. One may choose `h,k=O(n)`. Every exact entry of (1) has a binary
+rational-coordinate description of polynomial length. The matrix still
+has potentially exponentially many entries; it is supplied by its
+interval endpoints and kernel, not expanded.
+
+## 4. The known Vandermonde contents really are cheap
+
+Set `H(t)=prod_(j=0)^(t-1) j!` and `S(t)=v_2(H(t))`. For one interval
+of length `t`, its Vandermonde equals `H(t)` up to sign. Legendre's
+formula gives
+
+```math
+S(t)=\sum_{q=2,4,8,\ldots<t}\sum_{j=0}^{t-1}\lfloor j/q\rfloor.
+```
+
+If `t=q*u+r`, `0<=r<q`, the inner sum is
+`q*u*(u-1)/2+u*r`. There are `O(log(t+1))` terms, with polynomial-size
+binary intermediates.
+
+For two ordered disjoint intervals `[L,U)`, `[V,W)`, the cross product
+of their differences is
+
+```math
+\prod_{a=L}^{U-1}\prod_{b=V}^{W-1}(b-a)
+=\frac{H(W-L)H(V-U)}{H(W-U)H(V-L)}.                 \tag{5}
+```
+
+This follows by telescoping the factorials for each fixed `a`.
+Consequently the cross content is four evaluations of `S`, and the
+within-interval contents add two more. All normalization data in (3)
+except `E_*` is therefore effective in polynomial bit cost for the
+padded domains. The reference computes `S` for length `2^200+12` as
+a 399-bit exponent, without constructing its Vandermonde product.
+
+## 5. The exact remaining computational target
+
+Given odd `N`, the two padded interval domains, and `k=O(n)`, compute
+`E_k,E_(k+1)` from the implicit kernel (1), including normalization,
+parameter construction, and bit cost. Each content has `O(n)` output
+bits: it is nonnegative and at most `k*m+O(n*m^2)` by (3).
+An all-input query algorithm with cost `2^(O(n/(log n)^beta))` for a fixed
+`beta>1/2` would transfer through the existing polynomial number of
+factor-prefix queries to a stronger score. No such cost bound
+is established here.
+
+The [arithmetic Cauchy power formulas](arithmetic-cauchy-powers.md)
+provide exact Smith orders in their stated unit-denominator,
+arithmetic-node regime. The odd/odd part of (1) has resonant
+denominators, and its Cauchy column nodes are reciprocal progressions.
+Extending or replacing the normalization in this regime is the concrete
+cross-lane question in
+[Discussion #53](https://github.com/1337isnot1337/integer-factoring/discussions/53).
+
+Run `make verify-interval-pole-trace`. The
+[dense checker](../tools/check_pole_cauchy_slope.py) performs exact
+Gaussian elimination in `Q(w)`, compares the whole determinant with
+(3), and checks the slope against literal factor pairs after padding.
+It independently checks the one- and two-interval Vandermonde contents
+by literal differences. The
+[receipt](../evidence/pole-cauchy-slope.json) records finite controls;
+these support the ordinary proof and do not establish a fast evaluator.

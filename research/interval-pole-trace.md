@@ -181,8 +181,8 @@ many states. No better bound follows from the closure identities alone.
 
 The positive target is now specific: reduce or merge this global trace
 family while preserving (2), (5), and (7), and charge the total number of
-states and every normalized division. To improve the current score, the
-complete query cost must beat `2^(n/(log n)^(1/2-o(1)))`. Another cheap
+states and every normalized division. A sufficient improvement is a
+complete query cost `2^(O(n/(log n)^beta))` for a fixed `beta>1/2`. Another cheap
 point evaluation, or a compact name for the state family, does not do so.
 
 ## 6. Checks, including artificial common factors
@@ -209,3 +209,9 @@ the enormous rectangles. At `r=200,p=32`, the input has 402 bits and the
 filter displacement has 434 bits despite the enormous raw fake factor.
 This removes that false-factor issue from the definition of the target
 operator; an efficient general evaluation of the operator remains open.
+
+The [Cauchy content-slope continuation](pole-cauchy-content.md) reduces
+the same global count to two exact determinant contents. Implicit padding
+handles unequal interval sizes, and the Vandermonde normalization data
+is computable in polynomial bit cost. Evaluating the global contents
+without expanding the matrix remains unresolved.

@@ -50,6 +50,9 @@ The [global pole trace](research/interval-pole-trace.md) gives an exact
 polynomial-precision factor-pair filter and closed bilinear reduction rules.
 Its current implementation still enumerates the dyadic state tree; efficient
 global state reduction remains open.
+The [Cauchy content-slope reduction](research/pole-cauchy-content.md) gives
+a second global target using two implicit determinant contents, with cheap
+padding and explicit Vandermonde normalization.
 The [research index](research/INDEX.md) links proofs, exact evidence, and replay commands.
 
 The result table distinguishes verified machine bounds from conditional constructions and finite experiments. A merged PR or a passing finite test does not imply independent mathematical review.
@@ -1130,6 +1133,14 @@ The [quantitative localization target](research/smooth-norm-localization.md)
 now specifies the required short-box theorem and its conditional complete
 cost. The localized smoothness statement and splitting coverage are both
 unproved; the existing class-group density theorem supplies neither for free.
+
+The [known-root conic parametrization](research/class-square-conic.md)
+constructs all rational square-norm points with an integral matrix of
+determinant `|Delta|`. Its exact cancellation bound gives direct gcd splitting
+certificates and rewrites prescribed-square search as a smooth denominator
+problem. Finding that denominator remains open. Run
+`make verify-class-square-conic` for independent conic-point and large-certificate
+controls; the factoring score remains `1/2`.
 
 The [Bell-diagonal seed construction](research/bell-diagonal-crossings.md)
 gives exact two-cut transforms and excludes its complete symmetric
