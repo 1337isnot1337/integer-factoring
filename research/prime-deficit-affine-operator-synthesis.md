@@ -223,3 +223,10 @@ All 16,721 affine coefficient equations, all 54 complete cut profiles,
 every endpoint, every degree bound, and every saved pressure point
 match. The record includes the source hashes used for that fresh replay.
 It makes no claim about an unrecorded historical source hash.
+
+All four complete search drivers were also rerun against the final source.
+Every saved JSON field matched, apart from elapsed seconds. The
+[full-run replay manifest](../evidence/qutrit-affine-complete-current-source-replay.json)
+records all 242 paths, 4,985 affine queries, the per-run profile counts,
+and the source and original-record hashes. This validates present-source
+reproducibility of the entire prescribed schedule.

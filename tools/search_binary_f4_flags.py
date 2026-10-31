@@ -151,10 +151,17 @@ def main():
     parser.add_argument('--baseline-shift', type=int, default=0)
     parser.add_argument('--flags', type=int, default=384)
     parser.add_argument('--samples', type=int, default=8)
+    parser.add_argument('--max-transfer', type=int, default=3)
+    parser.add_argument('--target-box', type=int, default=0,
+                        help='Also test all zero-sum eight-row changes in this integer box.')
     parser.add_argument('--seconds', type=float, default=1800)
     parser.add_argument('--seed', type=int, default=310781)
     parser.add_argument('--output', type=Path, required=True)
     args = parser.parse_args()
+    if args.max_transfer < 1:
+        raise ValueError('The maximum row-target transfer must be positive.')
+    if args.target_box < 0:
+        raise ValueError('The row-target box radius must be nonnegative.')
     rng = random.Random(args.seed);start = time.monotonic();deadline = start+args.seconds
     engine = FlagSearch(args.degree,args.baseline_shift);lattice = engine.lattice
     all_flags = flags(); selected = rng.sample(range(len(all_flags)), min(args.flags,len(all_flags)))
@@ -166,21 +173,34 @@ def main():
     for first, second in product(range(8),repeat=2):
         if first == second:
             continue
-        for step in (1,2,3):
+        for step in range(1,args.max_transfer+1):
             target = list(lattice.orders);target[first] += step;target[second] -= step
             if any(sorted(target[4*s:4*s+4]) != target[4*s:4*s+4] for s in range(2)):
                 continue
             targets.add(tuple(target))
+    if args.target_box:
+        radius = args.target_box
+        for prefix in product(range(-radius,radius+1),repeat=7):
+            last = -sum(prefix)
+            if abs(last) > radius:
+                continue
+            target = tuple(a+b for a,b in zip(lattice.orders,prefix+(last,)))
+            if all(tuple(sorted(target[4*s:4*s+4])) == target[4*s:4*s+4] for s in range(2)):
+                targets.add(target)
     def target_pressure(target):
         profiles = [tuple(target[4*s+i]-lattice.scalar_shifts[s] for i in range(4)) for s in range(2)]
         return critical(profiles, energies, .29277969091981376)
     base_pressure = target_pressure(lattice.orders)
+    raw_target_count = len(targets)
     targets = sorted((t for t in targets if target_pressure(t) <= base_pressure+1e-12), key=target_pressure)
     targets = [lattice.orders]+[t for t in targets if t != lattice.orders]
     result = {'status':'Finite exact F4 flags and polynomial lattice feasibility; exploratory pressures.',
               'degree':args.degree,'baseline_laurent_clearing':args.baseline_shift,
               'flag_indices':selected,'available_flags':len(all_flags),
               'target_count':len(targets),'random_seed':args.seed,'variants':[],'profiles':[],
+              'maximum_row_target_transfer':args.max_transfer,
+              'zero_sum_target_box_radius':args.target_box,
+              'raw_sorted_target_count':raw_target_count,
               'feasibility_pruning':'Necessary two-cut minimum constraints are imposed before either flag.'}
     systems = {}
     classes = {}

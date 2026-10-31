@@ -514,3 +514,7 @@ verify-global-one-mode-filters: verify-global-gaussian-floor verify-one-mode-lau
 .PHONY: verify-prime-deficit-affine-synthesis
 verify-prime-deficit-affine-synthesis:
 	python3 tools/check_prime_deficit_operator_synthesis.py
+
+.PHONY: verify-binary-target-box
+verify-binary-target-box:
+	python3 tools/check_binary_target_box.py --output /tmp/integer-factoring-binary-target-box-replay.json

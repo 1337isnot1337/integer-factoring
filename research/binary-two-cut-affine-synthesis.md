@@ -180,12 +180,13 @@ chosen constant flags or the initially proposed degree.
 
 Indeed, regular invertible local changes cannot turn a matrix whose
 entries all have order at least a into one with an entry of order below a.
-Applying the inverse changes therefore shows, entry by entry,
+Write \(\widetilde T=w^{-L}T\) for the uncleared Laurent tensor
+from Section 1. Applying the inverse changes therefore shows, entry by entry,
 
 \[
--\deg T_{xyuv}-u-v\ge-8,
+-\deg \widetilde T_{xyuv}-u-v\ge-8,
 \qquad
-\operatorname{ord}T_{xyuv}-x-y\ge-4.
+\operatorname{ord}\widetilde T_{xyuv}-x-y\ge-4.
 \tag{7}
 \]
 
@@ -222,3 +223,58 @@ The separate [affine-pencil](../tools/search_binary_affine_crossings.py)
 and [polynomial-neighborhood](../tools/search_binary_polynomial_neighborhood.py)
 drivers supply reusable endpoint constructors and pressure helpers.
 Their presence does not assert completion of any unrecorded search run.
+
+## 6. A complete finite schedule of simultaneous row-target changes
+
+A further search allows all eight row targets to change together. Starting
+from the reference vector, take every integer delta vector in
+`[-2,2]^8` with sum zero and sorted targets at each cut, and include the
+original single-row transfers of one, two, or three units. This gives
+23,099 distinct raw sorted targets. A numerical critical-pressure
+comparison at scale `0.29277969091981376`, with tolerance `1e-12`,
+selects 7,079 targets. This floating filter defines a finite schedule;
+it is not an all-scale sign certificate or target-space optimality claim.
+
+The [complete record](../evidence/binary-two-cut-zero-sum-target-box.json)
+uses degree twelve, common clearing four, and **129 selected constant F4
+flags per cut**, consisting of 128 deterministic pseudorandom flags and
+the identity. This is a larger target family with fewer flags than the
+separate complete-flag experiment above. Every selected target and flag
+pair was decided. Necessary common constraints reject 1,430 targets
+independently of the flags. Across the selected flags, only five pairs
+survive the separate-cut constraints for direct affine intersection.
+
+There are exactly five feasible targets. They add a common integer
+`g` to all four infinity targets and subtract it from all four zero
+targets, for `g=-2,-1,0,1,2`. Each feasible system has affine dimension
+one over F4. The [independent checker](../tools/check_binary_target_box.py)
+reconstructs all four points of each line, checks literal endpoints and
+every minor of both cuts, and multiplies the coefficients by the matching
+monomial. All five normalized four-point families are exactly the
+original degree-five reference line after its common clearing. Thus the
+survivors are **five monomial shifts of the same four-point affine line**,
+with the same complete cost, approximately `rho=0.804022810651`.
+
+Every target still has the minimum bounds used in Section 4. Hence the
+same finite support argument covers all Laurent coefficients for these
+specified row targets and selected flags. It does not extend the 129-flag
+coverage to all 8,925 flags.
+
+The [replay record](../evidence/binary-target-box-replay.json) independently
+reconstructs the 23,099/7,079 target sets, checks the flag manifest, and
+re-eliminates the 17 distinct common-minimum systems underlying all 1,430
+common contradictions. It verifies 50 literal weighted cut profiles and
+400 endpoint coefficients across all fiber points and saved representatives.
+The remaining flag-pair exclusions are checked against the completed
+manifest, without independently rerunning the whole search.
+
+```sh
+OPENBLAS_NUM_THREADS=1 python3 tools/search_binary_f4_flags.py --degree 12 --baseline-shift 4 --target-box 2 --flags 128 --seconds 750 --output /tmp/binary-target-box-search.json
+OPENBLAS_NUM_THREADS=1 python3 tools/check_binary_target_box.py --output /tmp/binary-target-box-replay.json
+```
+
+A separate attempt to enlarge single-row transfers through six produced
+no additional targets after its stated pressure filter. Its redundant
+higher-degree replay was stopped at 22 of the same 51 targets, already
+covered completely by the degree-twelve Laurent result. That interrupted
+prefix is not presented as another completed search.
