@@ -91,6 +91,14 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 
 ## Current research frontier
 
+The [exact nonlinear charge theorem](research/nonlinear-symbol-charge-lattices.md)
+characterizes every admissible pair of full-symbol potentials for the
+reflection tensor: their Hamming-cube Lipschitz constants must sum to at
+most two. At four symbols this is a six-dimensional cross-polytope and
+includes nonlinear parity charges. The resulting complete rational
+coefficient spaces have exact endpoint and full-profile checks. Run
+`make verify-nonlinear-symbol-charges`.
+
 An [exact joint-filter separation](research/joint-boolean-multiplier-separation.md)
 strictly improves every scalar Boolean multiplier on three balanced parity
 groups, uniformly for physical lengths at least sixteen. The certificate

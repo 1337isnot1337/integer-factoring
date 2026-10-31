@@ -641,3 +641,7 @@ verify-colored-row-fibers:
 verify-fused-six-vertex:
 	OPENBLAS_NUM_THREADS=1 python3 tools/check_fused_six_vertex_crossings.py --output /tmp/integer-factoring-fused-six-vertex-replay.json --search-records evidence/fused-six-vertex-gauges-m2-theta2.json evidence/fused-six-vertex-gauges-m3-theta4.json
 
+.PHONY: verify-nonlinear-symbol-charges
+verify-nonlinear-symbol-charges:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_nonlinear_symbol_charges.py --output /tmp/integer-factoring-nonlinear-symbol-charges-replay.json
+
