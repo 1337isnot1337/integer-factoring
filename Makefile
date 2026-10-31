@@ -401,3 +401,14 @@ verify-f16-identity-operators:
 .PHONY: verify-reflection-compensated-gauges
 verify-reflection-compensated-gauges:
 	python3 tools/check_reflection_hot_compensated_gauges.py --extended
+
+.PHONY: verify-prime-power-filters verify-prime-power-filters-extended
+verify-prime-power-filters:
+	python3 tools/check_prime_power_identity_filters.py
+	python3 tools/check_joint_identity_filter_pressure.py
+	python3 tools/check_selected_identity_operators.py --extended
+
+verify-prime-power-filters-extended:
+	python3 tools/check_prime_power_identity_filters.py --include-qutrit
+	python3 tools/check_joint_identity_filter_pressure.py
+	python3 tools/check_selected_identity_operators.py --extended

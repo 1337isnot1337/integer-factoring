@@ -94,7 +94,7 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 The latest [research checkpoint](research/constructive-frontier-checkpoint.md)
 keeps the proved score at `1/2`. An
 [accelerated exact certificate](research/accelerated-interval-certificates.md)
-now treats `2^209-1` modes with a rational upper bound less than `5e-123`
+now treats `2^1636-1` modes with a rational upper bound less than `2e-980`
 above `1/sqrt(2)`. This remains an approach from above. A finite identity
 with a positive remainder makes the check polynomial in the logarithm of
 the mode count and can also certify long Gaussian spectator products.
@@ -174,6 +174,19 @@ directions at prime-power lengths. Exact original-cut comparisons check
 both profiles, including the auxiliary zero units in the mixed case.
 These constructions permit correlations between modes; no rate gain is
 claimed. `make verify-coupled-filters` replays the controls.
+
+At a prime-power interval length, the
+[simultaneous Pascal reduction](research/prime-power-joint-identity-filters.md)
+now separates every identity direction in one regular change of basis.
+Any selected subset, including interior and irregularly spaced indices,
+has exactly twice as many active zero modes as selected directions.
+Joint diagonal filters have an explicit finite-difference profile, and
+the operator interfaces accept arbitrary selected indices. One exact
+coefficient catalogue can therefore be reused over all selected subsets.
+The recorded three-mode F4 and four-mode binary screens found no gain
+on their stated finite grids. `make verify-prime-power-filters` replays
+the exact identities, full-pressure controls, and original physical cuts;
+its extended target also checks the original qutrit matrices of order 729.
 
 The [reflection-pair compression](research/reflection-dual-rail-compression.md)
 retains one occupied mode from every reflected pair. A characteristic-two

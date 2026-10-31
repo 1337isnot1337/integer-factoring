@@ -88,6 +88,12 @@ def normalized_kernel(prime, modes, kernel, endpoint='identity', selected=None):
 
 
 def _geometry(prime, n, modes, geometry):
+    if geometry.startswith('selected:'):
+        from selected_identity_mode_filters import geometry_data
+        selected = tuple(map(int, geometry.removeprefix('selected:').split(',')))
+        if len(selected) != modes:
+            raise ValueError('The selected-index count must equal the number of modes.')
+        return geometry_data(prime, n, selected)
     if geometry == 'initial':
         data = concentration_data(prime, n, modes)
         return {'selected': tuple(range(modes)), 'retained': data['top'],
@@ -166,6 +172,9 @@ def active_components(prime, n, ramification=1, modes=2, geometry='initial'):
         gaussian = active_power_kernels(prime, n, ramification, modes)[(0,) * modes]
     elif geometry.startswith('split:'):
         from split_identity_mode_filters import active_gaussian
+        gaussian = active_gaussian(prime, n, ramification, modes, geometry)
+    elif geometry.startswith('selected:'):
+        from selected_identity_mode_filters import active_gaussian
         gaussian = active_gaussian(prime, n, ramification, modes, geometry)
     else:
         from coupled_identity_extreme_filters import active_power_kernels as extreme_kernels
@@ -264,7 +273,7 @@ def profile_data(prime, n, ramification, charge, modes, kernel, geometry='initia
     diagonal = {state: {0: 1} for state in states(prime, modes)}
     if geometry == 'initial':
         data = diagonal_profile_data(prime, n, ramification, charge, modes, diagonal, blocks)
-    elif geometry.startswith('split:'):
+    elif geometry.startswith(('split:', 'selected:')):
         if not isinstance(charge, (int, Fraction)):
             raise ValueError('Use an integer or Fraction for an exact physical charge.')
         geometry_data = _geometry(prime, n, modes, geometry)
