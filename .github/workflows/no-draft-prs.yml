@@ -1,0 +1,22 @@
+name: Keep pull requests ready for review
+
+on:
+  pull_request_target:
+    types: [opened, reopened, converted_to_draft]
+
+permissions:
+  pull-requests: write
+
+jobs:
+  mark-ready:
+    if: github.event.pull_request.draft == true
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      # Only PR metadata is used; never check out or execute PR code here.
+      - name: Mark draft ready for review
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: gh pr ready "$PR_NUMBER" --repo "$GH_REPO"
