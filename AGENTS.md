@@ -1,41 +1,62 @@
 # Agent entry point
 
-Read [autoresearch.md](autoresearch.md), [CONTRIBUTING.md](CONTRIBUTING.md),
-the [README](README.md), and the [research index](research/INDEX.md) before
-substantial work. Read the relevant research notes for your task. Follow the user's assigned task and preserve existing work in progress.
+Read [README](README.md), [CONTRIBUTING.md](CONTRIBUTING.md),
+[autoresearch.md](autoresearch.md), and the [research index](research/INDEX.md)
+before substantial work. Read the relevant research notes and preserve existing
+work, source attribution, and contributor credit.
 
-Before starting substantial research or a new direction, check current `main`,
-the [coordination board](https://github.com/1337isnot1337/integer-factoring/issues/8),
-open Issues and pull requests, and existing research for overlap. Post your
-name or agent, scope, base commit, branch or worktree, and next checkpoint on
-the board. Update the claim at a pivot or handoff, link the evidence and PR,
-and explicitly release it when you stop. Coordinate overlapping work; old
-comments are not permanent locks. Use a focused branch or worktree and retain
-source attribution. The owner authorizes these routine coordination posts.
+## Working in this repository
+
+Work directly on the repository's `main` branch by default. Make focused
+commits and push useful checkpoints frequently. Do not create a branch, fork,
+or pull request merely to hold work for later review. Use a branch or worktree
+only when isolation, parallel work, a risky experiment, or an external
+contributor's lack of push access makes it useful. Keep branch lifetimes short
+and integrate useful checkpoints promptly.
+
+For substantial research, check current `main`, the
+[coordination board](https://github.com/1337isnot1337/integer-factoring/issues/8),
+open issues, existing research, and any overlapping work. Record the scope,
+base commit, and next checkpoint on the board. Treat claims as coordination,
+not locks; update or release them at a pivot or handoff. The owner authorizes
+routine coordination posts.
+
+## Pull requests: merge by default
+
+Every useful pull request is intended to be merged. Merge research notes,
+partial or ongoing results, negative results, finite certificates, checkers,
+tests, documentation, and maintenance changes. Do not hold a PR open because
+it does not improve the factoring exponent, lacks Lean formalization, awaits
+independent mathematical review, or is an incomplete research direction.
+Merge a useful checkpoint and continue the work directly on `main`.
+
+Before merging, do the minimum integration work needed to preserve repository
+integrity: inspect the exact head and base, resolve conflicts, retain source
+and contributor credit, state the result's actual scope, and run relevant
+checks when feasible. Fix regressions introduced by the change. Record failed
+or unrun checks honestly; do not turn a merge into a claim of correctness.
+If a PR is stacked, integrate its prerequisites first and then merge the
+incremental change. Do not close or abandon a useful PR merely because its
+approach was superseded; merge the useful material or a clearly scoped record
+of it.
+
+A merge means the contribution is integrated into the repository. It does not
+mean the mathematics is independently reviewed, a finite experiment is a
+uniform theorem, or a stronger factoring bound has been established.
 
 For onboarding and smaller contributions, see [docs/START_HERE.md](docs/START_HERE.md).
-Small corrections and reproduction reports can go directly to an issue or PR.
-For review and queue cleanup, use [docs/REVIEWING.md](docs/REVIEWING.md) and
-the [exact-head ledger](docs/REVIEW_LEDGER.md). Record source, evidence, credit,
-and unresolved scope separately from GitHub merge or closure state.
+Use [docs/REVIEWING.md](docs/REVIEWING.md) and the
+[exact-head ledger](docs/REVIEW_LEDGER.md) to record what was inspected,
+integrated, and not independently reviewed.
 
-All pull requests must be ready for review. Do not create draft PRs or convert
-open PRs to drafts. Keep ongoing work reviewable and describe incomplete work
-and remaining obligations in the PR body; ready for review does not mean ready
-to merge. See [CONTRIBUTING.md](CONTRIBUTING.md#pull-request-status).
+State exact claims and assumptions, algorithm and complete cost where relevant,
+evidence actually checked, and remaining obligations. Run `make verify` and
+relevant focused checks; run `make verify-formal` for the original Lean
+lemmas, `make verify-k6` for k6, and `make verify-half-appendix` for the
+full `1/2` theorem. Report commands that could not run.
 
-State the exact claim and its assumptions, the algorithm and complete cost
-where relevant, the evidence actually checked, and the remaining obligations.
-Finite certificates or formal lemmas do not by themselves establish an
-improved factoring machine. Run `make verify` and any relevant scoped checks;
-run `make verify-formal` for the original Lean lemmas, `make verify-k6` for
-k6, and `make verify-half-appendix` for the full `1/2` theorem. Report commands
-that could not run.
-
-The main README must stay current: when a change affects a result, evidence,
-verification, or an open obligation, update its status, relevant links, and
-reproduction guidance in the same change. Correct discovered stale claims
-against current source and evidence. Do not promote an unreviewed or partial
+Keep the main README current when a change affects a result, evidence,
+verification, or an open obligation. Do not promote an unreviewed or partial
 result merely because it was merged.
 
 Do not spawn subagents unless the user explicitly requests them.

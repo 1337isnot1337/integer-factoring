@@ -10,6 +10,8 @@ Install Python 3, Git, and Make, then run:
 ```sh
 git clone https://github.com/1337isnot1337/integer-factoring.git
 cd integer-factoring
+git switch main
+git pull --ff-only
 git rev-parse HEAD
 python3 --version
 make verify
@@ -21,9 +23,17 @@ proofs. No GitHub account is needed to clone or check the public repository.
 For documentation changes, `make verify-docs` is the focused check. Optional
 rank experiments can use NumPy; the default checks do not require it.
 
-To send changes, fork the repository on GitHub, clone your fork, and create a
-branch with `git switch -c contribution/my-change`. See
-[CONTRIBUTING.md](../CONTRIBUTING.md) for the PR workflow and checks.
+## Default contribution workflow
+
+Work directly on `main` when you have push access. Make a focused change,
+run the relevant checks, and commit and push useful checkpoints frequently.
+A branch or worktree is optional; use one only when you need isolation,
+parallel work, or a risky experiment. A fork or PR is mainly for contributors
+without push access or when a separate integration review is useful.
+
+Useful partial research, negative results, finite certificates, checkers,
+tests, documentation, and maintenance changes belong in the repository.
+They do not need to establish a stronger factoring exponent.
 
 ## Choose a starting point
 
@@ -42,7 +52,7 @@ You can also [report a finding](https://github.com/1337isnot1337/integer-factori
 For substantial research, check and post a narrow scope on the
 [coordination board](https://github.com/1337isnot1337/integer-factoring/issues/8)
 before starting. Small corrections and reproduction reports can go directly
-to an issue or PR.
+to the repository.
 
 ## Understand the evidence
 
@@ -54,9 +64,10 @@ established here.
 
 A finite rank computation checks its declared finite cases. An obstruction
 applies to its stated construction class. A proposed asymptotic improvement
-also needs a uniform algorithm and complete bit-cost accounting. Open PRs
-can contain later, unreviewed work; a merged PR is not mathematical acceptance.
-The [review guide](REVIEWING.md) explains these distinctions.
+also needs a uniform algorithm and complete bit-cost accounting. Research
+checkpoints may be merged before independent review; merge status is not
+mathematical acceptance. The [review guide](REVIEWING.md) explains these
+distinctions.
 
 ## Writing a research finding
 
