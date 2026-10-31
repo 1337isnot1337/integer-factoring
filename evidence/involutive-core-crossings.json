@@ -1,0 +1,565 @@
+{
+  "cases": [
+    {
+      "ambient": 2,
+      "coefficient_sha256": "960334e5379e5ad7b33e5c918681e94a81b5e027d25d89d1f5c264fba8015659",
+      "common_w_clearing_power": 0,
+      "degree": 8,
+      "endpoint": 1,
+      "endpoint_entries_checked": 81,
+      "field": 2,
+      "index_order": "x+q*y+q^2*u+q^3*v",
+      "indices": [
+        0,
+        1
+      ],
+      "input_power": 0,
+      "logical_heights_by_leg": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "mode": "direct",
+      "output_power": 0,
+      "positive_endpoint_entries": 3,
+      "q": 3,
+      "quartic_power": 0,
+      "repair_power": null,
+      "strict_endpoint": false,
+      "two_copy_full_type_endpoint_checks": 51
+    },
+    {
+      "ambient": 4,
+      "coefficient_sha256": "fd263fcfafe0d08b09c78e7dffa96aa7e3da854c88512f8b9f2ac35e8c605982",
+      "common_w_clearing_power": 0,
+      "degree": 24,
+      "endpoint": 1,
+      "endpoint_entries_checked": 1296,
+      "field": 2,
+      "independent_exterior_coefficients_checked": 1296,
+      "index_order": "x+q*y+q^2*u+q^3*v",
+      "indices": [
+        0,
+        1,
+        2
+      ],
+      "input_power": 0,
+      "logical_heights_by_leg": [
+        [
+          0,
+          1,
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          2,
+          3
+        ]
+      ],
+      "mode": "direct",
+      "output_power": 0,
+      "positive_endpoint_entries": 26,
+      "q": 6,
+      "quartic_power": 0,
+      "repair_power": null,
+      "strict_endpoint": false,
+      "two_copy_full_type_endpoint_checks": 246
+    },
+    {
+      "ambient": 4,
+      "coefficient_sha256": "6929b11a2153359f75a06e8b055f82cd860e0f679c028cf8d7d74c2c60fe2a19",
+      "common_w_clearing_power": 0,
+      "degree": 32,
+      "endpoint": 1,
+      "endpoint_entries_checked": 20736,
+      "field": 2,
+      "independent_exterior_coefficients_checked": 20736,
+      "index_order": "x+q*y+q^2*u+q^3*v",
+      "indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "input_power": 0,
+      "logical_heights_by_leg": [
+        [
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3,
+          3,
+          4,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          3,
+          4,
+          5,
+          6,
+          3,
+          4,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          3,
+          4,
+          5,
+          6,
+          3,
+          4,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3,
+          3,
+          4,
+          5,
+          6
+        ]
+      ],
+      "mode": "direct",
+      "output_power": 0,
+      "positive_endpoint_entries": 256,
+      "q": 12,
+      "quartic_power": 0,
+      "repair_power": null,
+      "strict_endpoint": false,
+      "two_copy_full_type_endpoint_checks": 1068
+    },
+    {
+      "ambient": 8,
+      "coefficient_sha256": "116e383585580f24afdac2e78156bb24dc041eaf74c9edd62d9ef58158879647",
+      "common_w_clearing_power": 0,
+      "degree": 64,
+      "endpoint": 1,
+      "endpoint_entries_checked": 20736,
+      "field": 2,
+      "index_order": "x+q*y+q^2*u+q^3*v",
+      "indices": [
+        0,
+        1,
+        3,
+        7
+      ],
+      "input_power": 0,
+      "logical_heights_by_leg": [
+        [
+          0,
+          1,
+          3,
+          4,
+          0,
+          1,
+          3,
+          4,
+          7,
+          8,
+          10,
+          11
+        ],
+        [
+          0,
+          1,
+          3,
+          4,
+          7,
+          8,
+          10,
+          11,
+          7,
+          8,
+          10,
+          11
+        ],
+        [
+          0,
+          1,
+          3,
+          4,
+          7,
+          8,
+          10,
+          11,
+          7,
+          8,
+          10,
+          11
+        ],
+        [
+          0,
+          1,
+          3,
+          4,
+          0,
+          1,
+          3,
+          4,
+          7,
+          8,
+          10,
+          11
+        ]
+      ],
+      "mode": "direct",
+      "output_power": 0,
+      "positive_endpoint_entries": 224,
+      "q": 12,
+      "quartic_power": 0,
+      "repair_power": null,
+      "strict_endpoint": false,
+      "two_copy_full_type_endpoint_checks": 1068
+    },
+    {
+      "ambient": 4,
+      "coefficient_sha256": "e0adaa3b83d4f4de893b1831a93ad6a8fbb7b22f954ecc7fb12ba74fdfe2d735",
+      "common_w_clearing_power": 1,
+      "degree": 25,
+      "endpoint": 1,
+      "endpoint_entries_checked": 1296,
+      "field": 2,
+      "index_order": "x+q*y+q^2*u+q^3*v",
+      "indices": [
+        0,
+        1,
+        2
+      ],
+      "input_power": 0,
+      "logical_heights_by_leg": [
+        [
+          0,
+          1,
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          2,
+          3
+        ]
+      ],
+      "mode": "direct",
+      "output_power": 0,
+      "positive_endpoint_entries": 26,
+      "q": 6,
+      "quartic_power": 0,
+      "repair_power": -1,
+      "strict_endpoint": false,
+      "two_copy_full_type_endpoint_checks": 246
+    },
+    {
+      "ambient": 4,
+      "coefficient_sha256": "0d88dcc2a233b3da3857a292a8296fe588b6159a9fda1dae725a5a392830f457",
+      "common_w_clearing_power": 3,
+      "degree": 24,
+      "endpoint": 1,
+      "endpoint_entries_checked": 1296,
+      "field": 2,
+      "index_order": "x+q*y+q^2*u+q^3*v",
+      "indices": [
+        0,
+        1,
+        2
+      ],
+      "input_power": 2,
+      "logical_heights_by_leg": [
+        [
+          0,
+          1,
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          2,
+          3
+        ]
+      ],
+      "mode": "direct",
+      "output_power": -3,
+      "positive_endpoint_entries": 30,
+      "q": 6,
+      "quartic_power": 1,
+      "repair_power": null,
+      "strict_endpoint": false,
+      "two_copy_full_type_endpoint_checks": 246
+    },
+    {
+      "ambient": 4,
+      "coefficient_sha256": "65adacb7e22b0ed6864222a853df9d13c7f775b5c80300fd8812403bf14762e9",
+      "common_w_clearing_power": 6,
+      "degree": 32,
+      "endpoint": 1,
+      "endpoint_entries_checked": 1296,
+      "field": 2,
+      "index_order": "x+q*y+q^2*u+q^3*v",
+      "indices": [
+        0,
+        1,
+        2
+      ],
+      "input_power": -2,
+      "logical_heights_by_leg": [
+        [
+          0,
+          1,
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          2,
+          3
+        ]
+      ],
+      "mode": "direct",
+      "output_power": 1,
+      "positive_endpoint_entries": 30,
+      "q": 6,
+      "quartic_power": -4,
+      "repair_power": 2,
+      "strict_endpoint": false,
+      "two_copy_full_type_endpoint_checks": 246
+    },
+    {
+      "ambient": 2,
+      "coefficient_sha256": "de97460fb2bdd431376a5772163fa4dd97735e1093a270067a56bc0019762dad",
+      "common_w_clearing_power": 0,
+      "degree": 8,
+      "endpoint": 1,
+      "endpoint_entries_checked": 81,
+      "field": 2,
+      "index_order": "x+q*y+q^2*u+q^3*v",
+      "indices": [
+        0,
+        1
+      ],
+      "input_power": 1,
+      "logical_heights_by_leg": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "mode": "direct",
+      "output_power": 0,
+      "positive_endpoint_entries": 4,
+      "q": 3,
+      "quartic_power": 0,
+      "repair_power": null,
+      "strict_endpoint": false,
+      "two_copy_full_type_endpoint_checks": 51
+    },
+    {
+      "ambient": 4,
+      "coefficient_sha256": "d2ffed14805a9e8d7a83d48d74a13c192c1eab030eda04d41a4c9fbd597e221e",
+      "common_w_clearing_power": 0,
+      "degree": 48,
+      "endpoint": 1,
+      "endpoint_entries_checked": 1296,
+      "field": 2,
+      "index_order": "x+q*y+q^2*u+q^3*v",
+      "indices": [
+        0,
+        1,
+        2
+      ],
+      "input_power": 0,
+      "logical_heights_by_leg": null,
+      "mode": "ramified-repair",
+      "output_power": 0,
+      "positive_endpoint_entries": 0,
+      "q": 6,
+      "quartic_power": 0,
+      "repair_power": null,
+      "strict_endpoint": true,
+      "two_copy_full_type_endpoint_checks": 246
+    },
+    {
+      "ambient": 4,
+      "coefficient_sha256": "f867c4c3ed56c609f101b1d5eef944bb51684a35f83462ba443a50913760eedc",
+      "common_w_clearing_power": 0,
+      "degree": 96,
+      "endpoint": 1,
+      "endpoint_entries_checked": 20736,
+      "field": 2,
+      "index_order": "x+q*y+q^2*u+q^3*v",
+      "indices": [
+        0,
+        1,
+        2
+      ],
+      "input_power": 0,
+      "logical_heights_by_leg": null,
+      "mode": "temporal",
+      "output_power": 0,
+      "positive_endpoint_entries": 0,
+      "q": 12,
+      "quartic_power": 0,
+      "repair_power": null,
+      "strict_endpoint": true,
+      "two_copy_full_type_endpoint_checks": 1068
+    }
+  ],
+  "core_transfer_binary_rows": [
+    1,
+    10,
+    4,
+    8,
+    16,
+    32,
+    64,
+    160,
+    256
+  ],
+  "core_transfer_square_is_identity": true,
+  "field": 2,
+  "source_sha256": {
+    "tools/check_involutive_core_crossings.py": "0d0248a8ea2bbf4f8460f72d1527ccbceed75ea047ad4d05fdd75a21ce30c1b2",
+    "tools/check_residual_quartic_codes.py": "918a68af3acf3081b34eb7a216b5738440356f904354845d57e1379cd7b9ef20",
+    "tools/check_schur_downset_crossing.py": "c39c307f0dff1d478577490f4c9cb65254decfe8843e65b28a8d2cdc55955b4c",
+    "tools/involutive_core_crossing.py": "939707097c6fc48744deadf31431b52afe5bc62f1961918130b485216bc5bcc7",
+    "tools/weighted_smith_oracle.py": "9a6cbace2bb1fea210d1bea784f4a55fdfd5e7bb69b23d0d956861e00263204f"
+  },
+  "status": "exact polynomial crossing constructions; no pressure or exponent claim"
+}
