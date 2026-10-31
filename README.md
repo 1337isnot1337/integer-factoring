@@ -165,6 +165,10 @@ the four physical maps, with a reusable exact constructor.
 two four-element-field tensors to cancel their endpoint phases. Three
 checked eight-letter, degree-48 crossings descend to binary coefficients
 through an explicit constant change of basis.
+[Fixed field descent](research/fixed-field-descent.md) also transfers any
+coefficient certificate over a fixed extension to its base field without
+enlarging the physical alphabet. Projecting after each complete tensor
+power costs only the extension degree in the coefficient-cost sum.
 An [all-field residual obstruction](research/residual-quartic-three-letter-obstruction.md)
 excludes three-letter restrictions by four constant physical maps over
 every characteristic-two field. When both crossing pairs use the same

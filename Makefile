@@ -67,6 +67,7 @@ verify-crossing-interpolation:
 	python3 tools/check_conjugate_residual_phase_codes.py
 	python3 tools/check_residual_three_letter_obstruction.py
 	python3 tools/check_signed_residual_codes.py
+	python3 tools/check_fixed_field_descent.py
 
 verify-smith-oracle:
 	python3 tools/check_weighted_smith_oracle.py

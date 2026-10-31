@@ -1,0 +1,166 @@
+{
+  "matrix_controls": [
+    {
+      "factorizations": 54,
+      "field": 4,
+      "sharp_rank_increase": [
+        1,
+        2
+      ]
+    },
+    {
+      "factorizations": 54,
+      "field": 8,
+      "sharp_rank_increase": [
+        1,
+        3
+      ]
+    }
+  ],
+  "nonmultiplicative_projection_checked": true,
+  "source_sha256": {
+    "tools/check_fixed_field_descent.py": "831c1fe850b9d21b8d0050e310adaed2586251950542bb7d274e2ffd334ea8ac"
+  },
+  "status": "exact controls for fixed-extension rank descent",
+  "tensor_controls": [
+    {
+      "alphabet": 2,
+      "coefficients": [
+        {
+          "degree": 0,
+          "rank_pairs": [
+            [
+              4,
+              4
+            ],
+            [
+              4,
+              4
+            ]
+          ]
+        },
+        {
+          "degree": 1,
+          "rank_pairs": [
+            [
+              4,
+              3
+            ],
+            [
+              4,
+              3
+            ]
+          ]
+        }
+      ],
+      "endpoint_entries": 16,
+      "length": 1
+    },
+    {
+      "alphabet": 4,
+      "coefficients": [
+        {
+          "degree": 0,
+          "rank_pairs": [
+            [
+              16,
+              14
+            ],
+            [
+              16,
+              15
+            ]
+          ]
+        },
+        {
+          "degree": 1,
+          "rank_pairs": [
+            [
+              12,
+              12
+            ],
+            [
+              12,
+              12
+            ]
+          ]
+        },
+        {
+          "degree": 2,
+          "rank_pairs": [
+            [
+              16,
+              13
+            ],
+            [
+              16,
+              16
+            ]
+          ]
+        }
+      ],
+      "endpoint_entries": 256,
+      "length": 2
+    },
+    {
+      "alphabet": 8,
+      "coefficients": [
+        {
+          "degree": 0,
+          "rank_pairs": [
+            [
+              64,
+              52
+            ],
+            [
+              64,
+              55
+            ]
+          ]
+        },
+        {
+          "degree": 1,
+          "rank_pairs": [
+            [
+              64,
+              54
+            ],
+            [
+              64,
+              61
+            ]
+          ]
+        },
+        {
+          "degree": 2,
+          "rank_pairs": [
+            [
+              64,
+              61
+            ],
+            [
+              64,
+              60
+            ]
+          ]
+        },
+        {
+          "degree": 3,
+          "rank_pairs": [
+            [
+              64,
+              52
+            ],
+            [
+              64,
+              55
+            ]
+          ]
+        }
+      ],
+      "endpoint_entries": 4096,
+      "length": 3
+    }
+  ],
+  "trace_of_one_zero_control_checked": true
+}
