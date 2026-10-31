@@ -137,8 +137,9 @@ these encodings:
 |\mathrm{enc}(U_m)|&=4m+2,\\
 |\mathrm{enc}(z)|&=3s(z)+5,\\
 |\mathrm{enc}(\mathrm{pad}_F, U_\ell,I)|
- &=14+4(F+\ell+\lambda+K)+7KJ+3\sum_z s(z).                       \tag{3}
+ &=14+4(F+\ell+\lambda+K)+7KJ+3\sum_z s(z).
 \end{aligned}
+\tag{3}
 ```
 
 The sum ranges over every table entry, including zeros. Since the bound

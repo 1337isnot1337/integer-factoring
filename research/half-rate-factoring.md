@@ -95,10 +95,8 @@ reference's all-natural-number convention.
 The source proves
 
 ```math
-\begin{aligned}
-\log_2 K_d&=(3x_0+6)2^d-6d-2x_0-6,\\
-K_d&<K_{d+1}\le K_d^{10}.
-\end{aligned}
+\log_2 K_d=(3x_0+6)2^d-6d-2x_0-6,\qquad
+K_d<K_{d+1}\le K_d^{10}.
 \tag{5}
 ```
 
