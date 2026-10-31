@@ -192,6 +192,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Primary central Gram matrix](primary-central-gram.md): source-linked rank calculations.
 - [Half-piece ranks](half-piece-rank.md): finite crossing-piece rank evidence.
 
+- [Qutrit operators below a power of three](qutrit-deficit-operator-search.md): a complete prime-field Weyl evaluator with exact dummy-factor removal, original-tensor controls, and two complete 1,129-kernel projector searches at interval 26.
+
 ## Obstructions and work beyond 1/2
 
 - [Homogeneous Boolean occupation filters](homogeneous-boolean-filter-bounds.md): an exact two-probability cost formula proves all-scale natural-charge domination, a uniform large-scale comparison at every charge, and a bounded-charge small-scale critical-pressure bound.

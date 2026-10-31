@@ -461,3 +461,7 @@ verify-above-power-operators:
 .PHONY: verify-homogeneous-boolean-filters
 verify-homogeneous-boolean-filters:
 	python3 tools/check_homogeneous_boolean_filter_bounds.py
+
+.PHONY: verify-prime-deficit-operators
+verify-prime-deficit-operators:
+	python3 tools/check_prime_deficit_identity_operators.py --extended
