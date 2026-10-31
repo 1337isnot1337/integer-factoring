@@ -158,6 +158,13 @@ that endpoint and cancels its denominators term by term. It gives an
 explicit eight-letter, degree-32 candidate whose quartic correction
 survives common types. Its endpoint is proved; a pressure improvement
 has not been established.
+[Arbitrary-mode codes](research/coded-quartic-mode-families.md) extend this
+construction to noninterval sets and independent Laurent coefficients on
+the four physical maps, with a reusable exact constructor.
+[Conjugate phase codes](research/conjugate-residual-phase-codes.md) pair
+two four-element-field tensors to cancel their endpoint phases. Three
+checked eight-letter, degree-48 crossings descend to binary coefficients
+through an explicit constant change of basis.
 For this Gaussian seed, [generic mode blocks](research/typed-gaussian-generic-blocks.md)
 force cost `Omega(D^2)` when all nonvacuum occupations stay fixed, even
 after arbitrary coefficient recombinations. Growing occupation densities
