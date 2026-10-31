@@ -54,6 +54,11 @@ verify-gaussian-fixed-types:
 verify-symmetric-binary-filters:
 	python3 tools/check_symmetric_binary_filter_synthesis.py --output /tmp/integer-factoring-symmetric-binary-replay.json
 
+.PHONY: verify-binary-smith-floor
+verify-binary-smith-floor:
+	python3 tools/check_binary_fixed_ray_floor.py --output /tmp/integer-factoring-binary-fixed-ray-replay.json
+	python3 tools/check_binary_all_gauge_floor.py --output /tmp/integer-factoring-binary-all-gauge-replay.json
+
 .PHONY: verify-frontier-extensions
 verify-frontier-extensions:
 	python3 tools/check_all_scale_balanced_obstruction.py

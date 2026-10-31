@@ -91,6 +91,15 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 
 ## Current research frontier
 
+The [universal binary Smith-pressure theorem](research/universal-binary-smith-floor.md)
+excludes every Laurent-polynomial strict binary crossing seed under the
+two-place Smith criterion, over every coefficient field and with all
+independent physical-letter heights. Shared minors couple the two cuts;
+a monotonicity argument reduces arbitrary weights to a certified compact
+inequality. This closes the binary higher-degree and row-frame search
+route without changing the achieved factoring score. Run
+`make verify-binary-smith-floor` for the exact certificate and full-minor controls.
+
 The [symmetric multilevel filter construction](research/symmetric-multilevel-filter-synthesis.md)
 compresses a correlated binary block to one polynomial per occupation weight.
 Its exact tensor rule permits different filters on disjoint physical blocks.
@@ -125,9 +134,9 @@ The [nonconstant row-frame constructor](research/nonconstant-binary-row-flags.md
 extends complete binary crossing synthesis to arbitrary regular polynomial
 changes of row basis. Its first completed F4 catalogue covers every
 strictly lower triangular first jet at both cuts and 59 explicit targets.
-Only the reference affine line survives. Higher jets remain a constructive
-search direction. Run `make verify-polynomial-flags` for literal polynomial
-and full-minor controls.
+Only the reference affine line survives. The universal binary theorem above
+now excludes a threshold crossing even with arbitrary higher jets. Run
+`make verify-polynomial-flags` for literal polynomial and full-minor controls.
 
 The continuation from PR #38 adds a [multilevel canonical-packet
 collision](research/multilevel-thue-morse-packet.md): an explicit one-bit

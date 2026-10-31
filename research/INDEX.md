@@ -16,6 +16,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Universal binary Smith-pressure floor](universal-binary-smith-floor.md): every Laurent-polynomial binary crossing seed, every coefficient field, arbitrary degree, all regular frames, and all independent physical-letter heights have strictly positive critical pressure; shared minors and an exact 421-leaf compact certificate close this entire two-place Smith route.
+
 - [Symmetric multilevel filter synthesis](symmetric-multilevel-filter-synthesis.md): occupation-weight compression and exact tensorization preserve full degree costs and actual physical energies; a literal four-mode filter gives strict natural-charge relative gains without a better full crossing root.
 
 - [Exact Gaussian fixed-type duals](reflection-gaussian-fixed-type-duals.md): rational active-minor certificates prove global minima over all independent gauges and scales for explicit physical marginals at intervals 4, 8, 16, and 32, without claiming an all-type obstruction.
