@@ -435,3 +435,13 @@ verify-reflection-all-bulks:
 .PHONY: verify-near-power-operators
 verify-near-power-operators:
 	python3 tools/check_near_power_terminal_operators.py --extended
+
+.PHONY: verify-joint-polynomial-synthesis verify-weyl-filter-flags
+verify-joint-polynomial-synthesis:
+	python3 tools/check_joint_binary_filter_synthesis.py
+	python3 tools/check_joint_prime_filter_synthesis.py
+	python3 tools/check_joint_filter_catalogues.py
+
+verify-weyl-filter-flags:
+	python3 tools/check_weyl_flag_filter_synthesis.py
+	python3 tools/check_unit_reduced_lattice_basis.py

@@ -14,6 +14,12 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Joint residue-compressed polynomial synthesis](joint-binary-filter-synthesis.md): at most twice the number of digit states plus one residue patterns give exact degree/order feasibility in every prime characteristic, with a constructive fixed-field endpoint lift.
+
+- [Completed joint-filter catalogues](joint-filter-search-records.md): every retained literal witness is reconstructed, and finite all-index grids keep mode-assignment coverage and interruption limits explicit.
+
+- [Polynomial filter flags and zero-unit removal](weyl-filter-flags-and-unit-reduction.md): constant extension-field flags and exact polynomial unit division preserve valid row-lattice bounds and reduce large non-prime-power sources.
+
 - [Identity operators below a power of two](near-power-identity-operator-reduction.md): weighted interpolation retains one extra auxiliary mode, exact Gaussian multiplicity division enables a small Weyl evaluator, and the contraction has an explicit scalar-plus-rank-one formula.
 
 - [All physical-leg bulk orderings](reflection-hot-all-bulk-gauges.md): two explicit regular cross pivots cover every nonnegative bulk ordering with the same bounded support, complete coefficient sources, and independent original-tensor controls.

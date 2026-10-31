@@ -1,0 +1,462 @@
+{
+  "status": "All complete-coefficient versus residue-compressed controls passed.",
+  "exact_feasibility_comparisons": 288,
+  "literal_polynomial_witness_replays": 32,
+  "modes_tested": [
+    2,
+    3,
+    4
+  ],
+  "residue_scales_tested": [
+    1,
+    2,
+    7,
+    32
+  ],
+  "sample_witnesses": [
+    {
+      "modes": 2,
+      "m": 1,
+      "coefficient_field_order": 8,
+      "degree_bounds": [
+        2,
+        0,
+        2,
+        2
+      ],
+      "order_bounds": [
+        0,
+        3,
+        2,
+        2
+      ],
+      "endpoint_image_dimension": 3,
+      "endpoint_values": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "actual_degrees": [
+        2,
+        0,
+        0,
+        2
+      ],
+      "actual_orders": [
+        0,
+        3,
+        3,
+        2
+      ],
+      "residue_pattern_count": 1
+    },
+    {
+      "modes": 2,
+      "m": 1,
+      "coefficient_field_order": 8,
+      "degree_bounds": [
+        1,
+        1,
+        2,
+        1
+      ],
+      "order_bounds": [
+        0,
+        0,
+        1,
+        2
+      ],
+      "endpoint_image_dimension": 4,
+      "endpoint_values": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "actual_degrees": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "actual_orders": [
+        0,
+        1,
+        1,
+        2
+      ],
+      "residue_pattern_count": 1
+    },
+    {
+      "modes": 2,
+      "m": 1,
+      "coefficient_field_order": 8,
+      "degree_bounds": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "order_bounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "endpoint_image_dimension": 4,
+      "endpoint_values": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "actual_degrees": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "actual_orders": [
+        0,
+        1,
+        1,
+        2
+      ],
+      "residue_pattern_count": 1
+    },
+    {
+      "modes": 2,
+      "m": 1,
+      "coefficient_field_order": 8,
+      "degree_bounds": [
+        1,
+        2,
+        2,
+        2
+      ],
+      "order_bounds": [
+        0,
+        1,
+        2,
+        0
+      ],
+      "endpoint_image_dimension": 4,
+      "endpoint_values": [
+        1,
+        3,
+        1,
+        2
+      ],
+      "actual_degrees": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "actual_orders": [
+        0,
+        1,
+        2,
+        1
+      ],
+      "residue_pattern_count": 1
+    },
+    {
+      "modes": 2,
+      "m": 1,
+      "coefficient_field_order": 8,
+      "degree_bounds": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "order_bounds": [
+        0,
+        0,
+        3,
+        3
+      ],
+      "endpoint_image_dimension": 4,
+      "endpoint_values": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "actual_degrees": [
+        0,
+        0,
+        2,
+        2
+      ],
+      "actual_orders": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "residue_pattern_count": 1
+    },
+    {
+      "modes": 2,
+      "m": 1,
+      "coefficient_field_order": 8,
+      "degree_bounds": [
+        1,
+        2,
+        2,
+        1
+      ],
+      "order_bounds": [
+        1,
+        2,
+        1,
+        1
+      ],
+      "endpoint_image_dimension": 4,
+      "endpoint_values": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "actual_degrees": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "actual_orders": [
+        1,
+        2,
+        2,
+        3
+      ],
+      "residue_pattern_count": 1
+    },
+    {
+      "modes": 2,
+      "m": 1,
+      "coefficient_field_order": 8,
+      "degree_bounds": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "order_bounds": [
+        1,
+        2,
+        2,
+        3
+      ],
+      "endpoint_image_dimension": 1,
+      "endpoint_values": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "actual_degrees": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "actual_orders": [
+        1,
+        2,
+        2,
+        3
+      ],
+      "residue_pattern_count": 1
+    },
+    {
+      "modes": 2,
+      "m": 2,
+      "coefficient_field_order": 8,
+      "degree_bounds": [
+        1,
+        1,
+        4,
+        4
+      ],
+      "order_bounds": [
+        0,
+        1,
+        3,
+        5
+      ],
+      "endpoint_image_dimension": 3,
+      "endpoint_values": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "actual_degrees": [
+        0,
+        0,
+        4,
+        4
+      ],
+      "actual_orders": [
+        0,
+        2,
+        6,
+        8
+      ],
+      "residue_pattern_count": 2
+    },
+    {
+      "modes": 2,
+      "m": 2,
+      "coefficient_field_order": 8,
+      "degree_bounds": [
+        2,
+        1,
+        4,
+        4
+      ],
+      "order_bounds": [
+        0,
+        1,
+        5,
+        1
+      ],
+      "endpoint_image_dimension": 4,
+      "endpoint_values": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "actual_degrees": [
+        0,
+        0,
+        0,
+        4
+      ],
+      "actual_orders": [
+        0,
+        6,
+        6,
+        2
+      ],
+      "residue_pattern_count": 2
+    },
+    {
+      "modes": 2,
+      "m": 2,
+      "coefficient_field_order": 8,
+      "degree_bounds": [
+        1,
+        0,
+        0,
+        3
+      ],
+      "order_bounds": [
+        0,
+        0,
+        0,
+        4
+      ],
+      "endpoint_image_dimension": 3,
+      "endpoint_values": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "actual_degrees": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "actual_orders": [
+        0,
+        2,
+        2,
+        4
+      ],
+      "residue_pattern_count": 2
+    },
+    {
+      "modes": 2,
+      "m": 2,
+      "coefficient_field_order": 8,
+      "degree_bounds": [
+        0,
+        0,
+        0,
+        3
+      ],
+      "order_bounds": [
+        0,
+        2,
+        1,
+        2
+      ],
+      "endpoint_image_dimension": 2,
+      "endpoint_values": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "actual_degrees": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "actual_orders": [
+        0,
+        2,
+        2,
+        4
+      ],
+      "residue_pattern_count": 2
+    },
+    {
+      "modes": 2,
+      "m": 2,
+      "coefficient_field_order": 8,
+      "degree_bounds": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "order_bounds": [
+        2,
+        2,
+        2,
+        5
+      ],
+      "endpoint_image_dimension": 4,
+      "endpoint_values": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "actual_degrees": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "actual_orders": [
+        2,
+        4,
+        4,
+        6
+      ],
+      "residue_pattern_count": 2
+    }
+  ]
+}

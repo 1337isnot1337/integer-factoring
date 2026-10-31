@@ -188,6 +188,19 @@ on their stated finite grids. `make verify-prime-power-filters` replays
 the exact identities, full-pressure controls, and original physical cuts;
 its extended target also checks the original qutrit matrices of order 729.
 
+The [joint residue synthesis theorem](research/joint-binary-filter-synthesis.md)
+extends polynomial feasibility to correlated filters in every prime
+characteristic. It uses at most `2*p^r+1` small residue patterns and a
+fixed coefficient extension for nonzero endpoints. The
+[completed catalogues and all-index screens](research/joint-filter-search-records.md)
+retain 6,899 literal witnesses over F16, F32, and F27; every degree,
+beta order, endpoint, and witness hash is replayed. The stated finite
+grids found no improvement. A separate
+[flag and zero-unit reduction](research/weyl-filter-flags-and-unit-reduction.md)
+preserves exact constraints while reducing an interval-31 source from
+degree 2,221 to 124. `make verify-joint-polynomial-synthesis` and
+`make verify-weyl-filter-flags` reproduce these gates.
+
 [Extension-field operator lattices](research/identity-operator-field-flags.md)
 now permit constant F4 row bases and constructive F16 endpoint lifts.
 The scalar Pascal contraction also gives small exact sources for every
