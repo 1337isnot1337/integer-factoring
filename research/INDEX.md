@@ -14,6 +14,9 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Arithmetic framework shift](arithmetic-framework.md): primary-source randomness audit and a new generator/relation construction contract, outside the crossing evaluator.
+- [Deterministic torsion extraction](arithmetic-torsion-extraction.md): a black-box two-group basis algorithm from an annihilator, with no saturated relation lattice or random group elements.
+- [Positive relation kernel](positive-relation-kernel.md): a Fourier-positive smooth-pair hitting lemma and diagonally dominant relation construction; efficient arithmetic pair extraction is open.
 - [Pieces-to-factoring transfer](pieces-to-factoring.md): conditional crossing-parameter transfer, with full bit-cost accounting.
 - [Scale-one modular transfer](scale-one-modular-transfer.md): fixed-field transfer and machine costs.
 - [Sparse divisor nonzeroness](sparse-divisor-nonzeroness.md): detection of divisors in weighted polynomial counts.

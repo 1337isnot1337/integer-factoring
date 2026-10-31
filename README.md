@@ -75,6 +75,13 @@ No uniform factoring exponent above `1/2` is proved here. One open approach seek
 
 See the [research index](research/INDEX.md) for completed arguments, scoped obstructions, and older candidates. Active work can also appear in [open pull requests](https://github.com/1337isnot1337/integer-factoring/pulls); branch research is not automatically a result on `main`.
 
+An [arithmetic framework program](research/arithmetic-framework.md) studies
+deterministic class-group relation generation outside the crossing evaluator.
+It proves a positive Fourier hitting lemma and deterministic extraction of
+two-torsion from unsaturated relation data. The fast generator and smooth-pair
+construction steps remain open, so the score is still `1/2`. Reproduce the
+current exact controls with `make verify-arithmetic-framework`.
+
 ## Contribution and attribution
 
 Start with the [contributor quickstart](docs/START_HERE.md) and
