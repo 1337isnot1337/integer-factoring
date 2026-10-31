@@ -91,6 +91,14 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 
 ## Current research frontier
 
+The [Clifford Smith reduction](research/clifford-gaussian-smith-profiles.md)
+recovers every Smith order of an invertible Gaussian operator on `M`
+fermionic modes from a matrix of order `2M`. An elementary characteristic-two
+proof includes singular creation factors and the scalar normalization.
+For the reflection crossing this permits all independent physical mode
+heights, removing the earlier internal regularity restriction. Run
+`make verify-unrestricted-gaussian` for full original-tensor comparisons.
+
 The [nonconstant row-frame constructor](research/nonconstant-binary-row-flags.md)
 extends complete binary crossing synthesis to arbitrary regular polynomial
 changes of row basis. Its first completed F4 catalogue covers every

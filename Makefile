@@ -34,6 +34,10 @@ verify-boolean-charge-bands:
 verify-polynomial-flags:
 	python3 tools/check_binary_polynomial_flags.py
 
+.PHONY: verify-unrestricted-gaussian
+verify-unrestricted-gaussian:
+	python3 tools/check_reflection_unrestricted_gaussian.py --output /tmp/integer-factoring-unrestricted-gaussian-replay.json
+
 .PHONY: verify-frontier-extensions
 verify-frontier-extensions:
 	python3 tools/check_all_scale_balanced_obstruction.py
