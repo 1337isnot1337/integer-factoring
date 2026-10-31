@@ -85,3 +85,43 @@ def pole_filter_bits(number, left, right, precision):
     bound = max(abs(number - left[0] * right[0]),
                 abs(number - (left[1] - 1) * (right[1] - 1)))
     return precision + bound.bit_length()
+
+
+def factorial_vandermonde_content(length):
+    """v_2(prod_{0<=i<j<length}(j-i)), in polynomial binary-input cost."""
+    assert length >= 0
+    result, stride = 0, 2
+    while stride < length:
+        quotient, remainder = divmod(length, stride)
+        result += stride * quotient * (quotient - 1) // 2 + quotient * remainder
+        stride *= 2
+    return result
+
+
+def interval_vandermonde_content(intervals):
+    """Exact content for a fixed number of ordered disjoint integer intervals."""
+    result = sum(factorial_vandermonde_content(u - l) for l, u in intervals)
+    for i, (lower, upper) in enumerate(intervals):
+        assert lower <= upper
+        for start, stop in intervals[i + 1:]:
+            assert upper <= start
+            result += (factorial_vandermonde_content(stop - lower)
+                       + factorial_vandermonde_content(start - upper)
+                       - factorial_vandermonde_content(stop - upper)
+                       - factorial_vandermonde_content(start - lower))
+    return result
+
+
+def square_pole_domains(number, left, right):
+    """Pad the shorter factor domain above N; at most two intervals per side."""
+    assert number >= 1
+    domains = []
+    for lower, upper in (left, right):
+        assert 1 <= lower <= upper
+        domains.append([(min(lower, number + 1), min(upper, number + 1))])
+    size = max(domain[0][1] - domain[0][0] for domain in domains)
+    for domain in domains:
+        missing = size - (domain[0][1] - domain[0][0])
+        if missing:
+            domain.append((number + 1, number + 1 + missing))
+    return tuple(tuple(domain) for domain in domains)
