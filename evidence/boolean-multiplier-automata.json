@@ -1,0 +1,53 @@
+{
+  "status": "Exact finite covers, unbounded-tail routes, literal F4 cutoffs, and code distributions passed.",
+  "finite_cover_comparisons": 36,
+  "exhaustively_represented_multipliers": 4052,
+  "integral_multiplier_routes": 20475,
+  "continuous_dominance_routes": 15863,
+  "negative_gap_routes": 2633,
+  "baseline_routes": 1979,
+  "periodic_tail_controls": 9915,
+  "literal_colored_witnesses": 411,
+  "literal_colored_state_controls": 3948,
+  "independent_code_homogeneous_layer_controls": 70656,
+  "exact_heterogeneous_pattern_distributions": 172,
+  "floating_envelope_sanity_cases": 40,
+  "automaton_sizes": [
+    {
+      "maximum_boolean_degree": 1,
+      "continuous_pieces": 5,
+      "negative_gap_periodic_rows": 1,
+      "maximum_period": 2
+    },
+    {
+      "maximum_boolean_degree": 2,
+      "continuous_pieces": 13,
+      "negative_gap_periodic_rows": 4,
+      "maximum_period": 4
+    },
+    {
+      "maximum_boolean_degree": 3,
+      "continuous_pieces": 29,
+      "negative_gap_periodic_rows": 13,
+      "maximum_period": 7
+    },
+    {
+      "maximum_boolean_degree": 4,
+      "continuous_pieces": 61,
+      "negative_gap_periodic_rows": 42,
+      "maximum_period": 15
+    },
+    {
+      "maximum_boolean_degree": 5,
+      "continuous_pieces": 125,
+      "negative_gap_periodic_rows": 164,
+      "maximum_period": 31
+    },
+    {
+      "maximum_boolean_degree": 6,
+      "continuous_pieces": 253,
+      "negative_gap_periodic_rows": 576,
+      "maximum_period": 63
+    }
+  ]
+}

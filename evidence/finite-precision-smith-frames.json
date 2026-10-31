@@ -1,0 +1,106 @@
+{
+  "status": "Finite-frame precision, actual unit representatives, and literal coefficient witnesses passed.",
+  "known_complete_profile_cases": 108,
+  "full_untruncated_product_checks": 108,
+  "independent_toeplitz_ranks": 316,
+  "untruncated_fraction_free_comparisons": 12,
+  "rejected_insufficient_precision_or_rank": 2,
+  "rounded_gauge_references": [
+    {
+      "reference": "affine-degenerate-witness-0-integer-chamber.json",
+      "complete_profiles": [
+        [
+          -9,
+          -7,
+          -3,
+          -1,
+          1,
+          3,
+          7,
+          8,
+          9,
+          10,
+          15,
+          17,
+          18,
+          20,
+          25,
+          27
+        ],
+        [
+          9,
+          11,
+          15,
+          17,
+          19,
+          21,
+          24,
+          25,
+          26,
+          27,
+          33,
+          34,
+          35,
+          36,
+          43,
+          45
+        ]
+      ],
+      "binary_and_F4_profiles_equal": true,
+      "replayed_rho": 0.7450485723725101,
+      "coefficient_witnesses": 2,
+      "fiber_variables": 216
+    },
+    {
+      "reference": "affine-degenerate-witness-1-integer-chamber.json",
+      "complete_profiles": [
+        [
+          -8,
+          -6,
+          -2,
+          0,
+          2,
+          4,
+          8,
+          8,
+          10,
+          10,
+          16,
+          18,
+          18,
+          20,
+          26,
+          28
+        ],
+        [
+          8,
+          10,
+          14,
+          16,
+          18,
+          20,
+          24,
+          24,
+          26,
+          26,
+          32,
+          34,
+          34,
+          36,
+          42,
+          44
+        ]
+      ],
+      "binary_and_F4_profiles_equal": true,
+      "replayed_rho": 0.7449315952026363,
+      "coefficient_witnesses": 2,
+      "fiber_variables": 214
+    }
+  ],
+  "search_replays": [],
+  "source_sha256": {
+    "check_finite_precision_smith_frames.py": "2e143b4fd335837facd2b9967cb587ee417bdb54837c8eba4e6fddfbf0c51a54",
+    "finite_precision_smith_frames.py": "99f275da5775c4438b272929840a6942a7eb7489480f76d4f129b39aaf955e8c",
+    "full_alphabet_two_cut_lattices.py": "cbc67b9e3f4f422a34e1474e0dc02eba9c741b3b7b836b315123d061571f0caf"
+  }
+}

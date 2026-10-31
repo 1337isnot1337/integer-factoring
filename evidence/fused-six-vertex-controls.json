@@ -1,0 +1,501 @@
+{
+  "status": "Exact finite fused crossings and independent full profiles; no asymptotic improvement.",
+  "cases": [
+    {
+      "m": 2,
+      "theta": 2,
+      "degree": 2,
+      "cancelled_common_degree": 2,
+      "literal_endpoint_entries": 486,
+      "complete_independent_binary_profiles": 12,
+      "independent_toeplitz_ranks": 17,
+      "projective_cases": [
+        {
+          "projective_pair": [
+            0,
+            null
+          ],
+          "complete_profiles_zero_then_infinity": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              -2,
+              -2,
+              -2,
+              -2,
+              -2,
+              -2,
+              -1,
+              -1,
+              0
+            ]
+          ]
+        },
+        {
+          "projective_pair": [
+            2,
+            3
+          ],
+          "complete_profiles_zero_then_infinity": [
+            [
+              0,
+              1,
+              1,
+              1,
+              1,
+              2,
+              2,
+              2,
+              2
+            ],
+            [
+              -2,
+              -2,
+              -2,
+              -2,
+              -2,
+              -2,
+              0,
+              0,
+              4
+            ]
+          ]
+        },
+        {
+          "projective_pair": [
+            9,
+            15
+          ],
+          "complete_profiles_zero_then_infinity": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              -2,
+              -2,
+              -2,
+              -2,
+              -2,
+              -2,
+              -2,
+              -2,
+              -2
+            ]
+          ]
+        },
+        {
+          "projective_pair": [
+            14,
+            10
+          ],
+          "complete_profiles_zero_then_infinity": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              -2,
+              -2,
+              -2,
+              -2,
+              -2,
+              -2,
+              -2,
+              -2,
+              -2
+            ]
+          ]
+        },
+        {
+          "projective_pair": [
+            8,
+            10
+          ],
+          "complete_profiles_zero_then_infinity": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              -2,
+              -2,
+              -2,
+              -2,
+              -2,
+              -2,
+              -2,
+              -2,
+              -2
+            ]
+          ]
+        },
+        {
+          "projective_pair": [
+            null,
+            0
+          ],
+          "complete_profiles_zero_then_infinity": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              -2,
+              -2,
+              -2,
+              -2,
+              -2,
+              -2,
+              -1,
+              -1,
+              0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "m": 3,
+      "theta": 4,
+      "degree": 3,
+      "cancelled_common_degree": 6,
+      "literal_endpoint_entries": 1536,
+      "complete_independent_binary_profiles": 12,
+      "independent_toeplitz_ranks": 17,
+      "projective_cases": [
+        {
+          "projective_pair": [
+            0,
+            null
+          ],
+          "complete_profiles_zero_then_infinity": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -2,
+              -2,
+              -2,
+              -1,
+              -1,
+              0
+            ]
+          ]
+        },
+        {
+          "projective_pair": [
+            2,
+            3
+          ],
+          "complete_profiles_zero_then_infinity": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -3
+            ]
+          ]
+        },
+        {
+          "projective_pair": [
+            9,
+            15
+          ],
+          "complete_profiles_zero_then_infinity": [
+            [
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -1,
+              -1,
+              -1,
+              -1,
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "projective_pair": [
+            14,
+            10
+          ],
+          "complete_profiles_zero_then_infinity": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -3
+            ]
+          ]
+        },
+        {
+          "projective_pair": [
+            8,
+            10
+          ],
+          "complete_profiles_zero_then_infinity": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -3
+            ]
+          ]
+        },
+        {
+          "projective_pair": [
+            null,
+            0
+          ],
+          "complete_profiles_zero_then_infinity": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -3,
+              -2,
+              -2,
+              -2,
+              -1,
+              -1,
+              0
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "rejected_fusion_cases": [
+    {
+      "m": 3,
+      "theta": 2,
+      "invariant": true,
+      "endpoint_identity": false
+    },
+    {
+      "m": 4,
+      "theta": 2,
+      "invariant": true,
+      "endpoint_identity": false
+    }
+  ],
+  "search_replays": [
+    {
+      "record": "fused-six-vertex-gauges-m2-theta2.json",
+      "completed_starts": 72,
+      "optimizer_successes": 68,
+      "best_replayed_rho": 0.98993968592235,
+      "every_recorded_full_profile_and_cost_replayed": true
+    },
+    {
+      "record": "fused-six-vertex-gauges-m3-theta4.json",
+      "completed_starts": 72,
+      "optimizer_successes": 67,
+      "best_replayed_rho": 1.0003839576687998,
+      "every_recorded_full_profile_and_cost_replayed": true
+    }
+  ]
+}
