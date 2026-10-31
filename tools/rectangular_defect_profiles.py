@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Compute the proved fixed-gauge rectangular defect profiles over F4.
 
-Only unit denominators (polynomials with constant term one) are cleared. Polynomial arithmetic
-is exact in a fixed ring; a common precision bound is checked before the
-512-coefficient Smith calculation. The generic rank is supplied by the
+Only unit denominators (polynomials with constant term one) are cleared.
+Polynomial arithmetic uses an adaptive exact coefficient window; a common
+precision bound is checked before the Smith calculation. Generic rank is supplied by the
 all-length endpoint theorem, never inferred from truncated zeros.
 """
 from __future__ import annotations
@@ -22,7 +22,7 @@ import subprocess
 import tempfile
 import time
 
-from check_rectangular_f4_repair import partial_repair
+from check_rectangular_f4_repair import partial_repair,full_inverse_repair,matrix_multiply
 from native_matrix_smith_f4 import MatrixOracle
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -176,7 +176,7 @@ class Program:
             else:a=self.car(a,name+('_create' if r else '_annihilate'))
         return a
 
-    def build(self,alpha=1,beta=2,quartic_terms=None,initial=None,repair_spec=None):
+    def build(self,alpha=1,beta=2,quartic_terms=None,initial=None,repair_spec=None,input_spec=None,repair_kind='partial',identity_spec=None):
         data=self.data;M=data['M'];T=M-1;infinity=data['place']=='infinity'
         if quartic_terms is None:quartic_terms=[(1,0)]
         endpoint=0
@@ -187,10 +187,27 @@ class Program:
         u0=('in_' if infinity else 'right_')+'u0';uT=('in_' if infinity else 'right_')+f'u{T}'
         y0=('out_' if infinity else 'left_')+'y0';yT=('out_' if infinity else 'left_')+f'y{T}'
         v0=('out_' if infinity else 'right_')+'v0';vT=('out_' if infinity else 'right_')+f'v{T}'
-        if repair_spec is None:correction=partial_repair(alpha,beta)
-        else:
-            from check_rectangular_refined_repairs import refined_repair
-            correction=refined_repair(alpha,beta,*repair_spec)
+        if repair_kind not in ('partial','inverse'):raise ValueError('Unknown residual repair.')
+        input_matrix=None
+        if identity_spec is not None:
+            if repair_spec is not None or input_spec is not None:raise ValueError('Identity transport and independent flag repairs are separate constructors.')
+            if not data.get('full_core',False):raise ValueError('Identity transports require the full-core construction.')
+            from check_rectangular_identity_transports import validate_identity_transport,validate_typed_transport
+            if len(identity_spec)==2:correction,input_matrix=validate_identity_transport(alpha,beta,*identity_spec)
+            elif len(identity_spec)==3:correction,input_matrix=validate_typed_transport(alpha,beta,*identity_spec)
+            else:raise ValueError('Supply C,W and an optional certified typed endpoint.')
+        else:correction=(partial_repair if repair_kind=='partial' else full_inverse_repair)(alpha,beta)
+        if repair_spec is not None:
+            from check_rectangular_refined_repairs import validate_postcorrection
+            validate_postcorrection(*repair_spec)
+            correction=matrix_multiply(repair_spec[0],correction)
+        if input_spec is not None:
+            if not data.get('full_core',False):raise ValueError('Input repairs require the full-core construction.')
+            from check_rectangular_refined_repairs import validate_precorrection,validate_postcorrection
+            validate_precorrection(*input_spec)
+            input_matrix=input_spec[0]
+            if repair_spec is not None:
+                validate_postcorrection(repair_spec[0],input_spec[1],input_spec[2],False)
         core=(1,0,2,3);heightX=(0,0,1,1);heightY=(0,0,1)
         def middle(a):
             a=self.add(a,self.number(self.number(a,uT),u0))
@@ -211,24 +228,46 @@ class Program:
             if infinity:return (1-M)*bool(core[v]&1)+(M-1)*bool(core[v]&2)-M*(core[y].bit_count())
             return bool(core[y]&1)+(2*M-1)*bool(core[y]&2)
         if initial is None:initial=Expr(0)
-        base=middle(initial) if infinity else None;parts=[]
-        for row,line in enumerate(correction):
-            v,y=row%4,row//4
-            for column,coefficient in enumerate(line):
-                if not coefficient:continue
-                vp,yp=column%4,column//4
-                if infinity:
-                    a=self.unit(base,[v0,vT],core[v],core[vp])
-                    a=self.unit(a,[y0,yT],core[y],core[yp])
-                else:
-                    # Right multiplication transposes this matrix unit.
-                    a=self.unit(initial,[v0,vT],core[vp],core[v])
-                    a=middle(a);a=self.unit(a,[y0,yT],core[y],core[yp])
-                dh=heightX[vp]+heightY[yp]-heightX[v]-heightY[y]
-                dz=physical(v,y)-physical(vp,yp)-(dh if infinity else 0)
-                parts.append(self.scale(a,coefficient,z=dz,u=dh))
-        out=parts[0]
-        for part in parts[1:]:out=self.add(out,part)
+        def output(source):
+            base=middle(source) if infinity else None;parts=[]
+            for row,line in enumerate(correction):
+                v,y=row%4,row//4
+                for column,coefficient in enumerate(line):
+                    if not coefficient:continue
+                    vp,yp=column%4,column//4
+                    if infinity:
+                        a=self.unit(base,[v0,vT],core[v],core[vp])
+                        a=self.unit(a,[y0,yT],core[y],core[yp])
+                    else:
+                        # Right multiplication transposes this matrix unit.
+                        a=self.unit(source,[v0,vT],core[vp],core[v])
+                        a=middle(a);a=self.unit(a,[y0,yT],core[y],core[yp])
+                    dh=heightX[vp]+heightY[yp]-heightX[v]-heightY[y]
+                    dz=physical(v,y)-physical(vp,yp)-(dh if infinity else 0)
+                    parts.append(self.scale(a,coefficient,z=dz,u=dh))
+            out=parts[0]
+            for part in parts[1:]:out=self.add(out,part)
+            return out
+        out=output(initial)
+        if input_matrix is not None:
+            x0=('in_' if infinity else 'left_')+'x0';xT=('in_' if infinity else 'left_')+f'x{T}'
+            def input_physical(x,u):
+                if infinity:return M*core[x].bit_count()+(1-M)*bool(core[u]&1)+(M-1)*bool(core[u]&2)
+                return (1-2*M)*bool(core[x]&1)-bool(core[x]&2)
+            for row,line in enumerate(input_matrix):
+                xa,ua=row%4,row//4
+                for column,coefficient in enumerate(line):
+                    coefficient^=int(row==column)
+                    if not coefficient:continue
+                    xb,ub=column%4,column//4
+                    a=self.unit(initial,[u0,uT],core[ua],core[ub])
+                    if infinity:
+                        a=self.unit(a,[x0,xT],core[xa],core[xb]);a=output(a)
+                    else:
+                        a=output(a);a=self.unit(a,[x0,xT],core[xb],core[xa])
+                    dh=heightX[xb]+heightY[ub]-heightX[xa]-heightY[ua]
+                    dz=input_physical(xb,ub)-input_physical(xa,ua)-(dh if infinity else 0)
+                    out=self.add(out,self.scale(a,coefficient,z=dz,u=dh))
         return out
 
 def library(precision=1024):
@@ -254,8 +293,8 @@ def library(precision=1024):
     lib.fock_f4_evaluate_v2.argtypes=[ctypes.c_int,ctypes.c_int,I,ctypes.c_int,U,ctypes.c_int,I,I,ctypes.c_int,I,ctypes.c_int,ctypes.c_int,U,L,L]
     lib.fock_f4_evaluate_v2.restype=ctypes.c_int;return lib
 
-def active_matrix(data,alpha=1,beta=2,quartic_terms=None,repair_spec=None,profile_precision=None):
-    program=Program(data);last=program.build(alpha,beta,quartic_terms,repair_spec=repair_spec);n=1<<program.k
+def active_matrix(data,alpha=1,beta=2,quartic_terms=None,repair_spec=None,profile_precision=None,input_spec=None,repair_kind='partial',identity_spec=None):
+    program=Program(data);last=program.build(alpha,beta,quartic_terms,repair_spec=repair_spec,input_spec=input_spec,repair_kind=repair_kind,identity_spec=identity_spec);n=1<<program.k
     diagonal=[sum(s for j,s in enumerate(data['active_orders']) if mask>>j&1) for mask in range(n)]
     window,builder=precision_sizes(program,last.base+min(diagonal),data['M'],profile_precision);words=builder//64;output_words=window//64
     instructions=(ctypes.c_int*(5*len(program.instructions)))(*(v for row in program.instructions for v in row))

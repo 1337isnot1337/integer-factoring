@@ -179,6 +179,14 @@ To put the endpoint at one, substitute \(w=-u^2\). Further integer
 ramification permits rational height choices. Every parameter and every
 local polynomial is fixed before the copy count grows.
 
+Laurent-polynomial coefficients \(f_I\) are also permitted. Multiply
+the whole local tensor by one monomial \(w^d\) that clears all negative
+powers. Its endpoint scalar \((-1)^d\) is a unit and can be normalized
+away. The scalar monomial shifts every zero-place order by \(d\), and
+every infinity order by \(-d\), before any ramification. These shifts
+cancel from the product pressure. Thus this extension does not silently
+discard a denominator cost; its only denominator is a monomial.
+
 ## 4. Pressure from the actual local cut profiles
 
 Let \(\eta_{e,D}(a)\) be a fixed monomial height for each endpoint
@@ -252,6 +260,38 @@ with only logarithmic dimension and rounding losses. These are effective
 crossing pieces at parameter \(\rho\), so the fixed-field evaluator
 and [scalar recovery transfer](fixed-prime-transfer-source-audit.md) apply.
 No inequality below the current threshold is proved by the transfer alone.
+
+### Independent matching physical types
+
+Use one type \(\mathbf q_X\) on \((X,V)\), and another
+\(\mathbf q_Y\) on \((Y,U)\). The endpoint signs are constant by
+Sections 2--3. For (9), the corresponding all-field Gaussian endpoint
+is justified explicitly in [its paired-type extension](all-field-pascal-crossings.md).
+Split the physical height into
+
+~~~math
+G_X(a)=\sum_e(\eta_{e,X}(a)+\eta_{e,V}(a)),\qquad
+G_Y(a)=\sum_e(\eta_{e,Y}(a)+\eta_{e,U}(a)).                \tag{14a}
+~~~
+
+The [paired-type symmetrization](paired-type-crossing-pressure.md) gives
+the criterion
+
+~~~math
+W_0(s)W_\infty(s)
+<\left[
+ \left(\sum_a s^{-G_X(a)/R}\right)
+ \left(\sum_a s^{-G_Y(a)/R}\right)
+ \right]^R,
+\qquad R=2\rho.                                         \tag{14b}
+~~~
+
+Indeed, the original logarithmic coefficient-rank cost is bounded by
+\(R m[H(\mathbf q_X)+H(\mathbf q_Y)]\). Tensoring with the exchanged
+copy doubles that cost and gives common physical logarithmic dimension
+\(m[H(\mathbf q_X)+H(\mathbf q_Y)]+O(\log m)\). This is precisely
+the four-leg normalization \(4\rho\). Keeping the two coefficient
+indices separate leaves their number polynomial.
 
 ## 5. The signed residual control
 

@@ -17,7 +17,7 @@ from check_rectangular_defect_core_basis import core_basis_data,data_for
 from rectangular_defect_profiles import Program,Expr,library,lcm2,quotient2,MASK,precision_sizes
 from native_matrix_smith_f4 import MatrixOracle
 
-def coordinate_matrix(data,alpha=1,beta=2,quartic_terms=None,repair_spec=None,profile_precision=None):
+def coordinate_matrix(data,alpha=1,beta=2,quartic_terms=None,repair_spec=None,profile_precision=None,input_spec=None,repair_kind='partial',identity_spec=None):
     start=time.monotonic();bases=[core_basis_data(data,side) for side in ('left','right')]
     extended=dict(data);extended['active_images']=dict(data['active_images']);names=[]
     for side,basis in zip(('left','right'),bases):
@@ -36,7 +36,7 @@ def coordinate_matrix(data,alpha=1,beta=2,quartic_terms=None,repair_spec=None,pr
             bit=state&-state;index=bit.bit_length()-1
             right_vectors[state]=program.car(right_vectors[state^bit],right_names[index]+'_create')
         initial=program.diagonal(right_vectors[state],diagonal)
-        value=program.build(alpha,beta,quartic_terms,initial,repair_spec)
+        value=program.build(alpha,beta,quartic_terms,initial,repair_spec,input_spec,repair_kind,identity_spec)
         annihilated={0:value}
         for mask in range(left_states):
             if mask:

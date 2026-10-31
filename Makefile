@@ -134,6 +134,16 @@ verify-all-field-crossings:
 	python3 tools/check_all_field_pascal_crossings.py
 	python3 tools/check_graded_even_power.py
 
+.PHONY: verify-core-transports verify-boolean-cauchy
+verify-core-transports:
+	python3 tools/check_rectangular_identity_transports.py
+	python3 tools/check_rectangular_input_coordinates.py
+	python3 tools/check_rectangular_coordinate_transforms.py
+	python3 tools/check_rectangular_scalar_cache.py
+
+verify-boolean-cauchy:
+	python3 tools/check_boolean_cauchy_smith.py
+
 verify-controlled-smith:
 	python3 tools/check_controlled_permutation_smith.py
 	python3 tools/check_qutrit_weyl_crossing.py

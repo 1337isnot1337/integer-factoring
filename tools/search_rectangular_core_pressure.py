@@ -20,16 +20,20 @@ from rectangular_defect_coordinates import coordinate_matrix
 from search_rectangular_defect_pressure import entropy
 
 class CoreDefectPressure:
-    def __init__(self,M=8,alpha=1,beta=2,quartic_terms=None,repair_spec=None,full_core=False):
+    def __init__(self,M=8,alpha=1,beta=2,quartic_terms=None,repair_spec=None,full_core=False,input_spec=None,repair_kind='partial',identity_spec=None,compiled=None,source_data=None):
         self.M=M;self.full_core=full_core;self.core_stride=10 if full_core else 7;self.parameters=2*self.core_stride+5
         self.leg_slices={'v':(0,3),'y':(3,2),'u':(5,2)}
         if full_core:self.leg_slices['x']=(7,3)
-        self.data=[data_for(place,M,full_core=full_core) for place in ('infinity','zero')]
+        self.data=source_data if source_data is not None else [data_for(place,M,full_core=full_core) for place in ('infinity','zero')]
+        if len(self.data)!=2 or (compiled is not None and len(compiled)!=2):raise ValueError('Supply both ordered valuation places.')
         self.oracles=[];self.metadata=[];self.row_features=[];self.column_features=[];self.spectator_signs=[]
         self.quartic_terms=quartic_terms or [(1,0)];self.queries=0;self.failures=0
         self.base_heights=4*np.arange(M)-2*M+2
         for side,data in enumerate(self.data):
-            matrix,shifts,meta=coordinate_matrix(data,alpha,beta,self.quartic_terms,repair_spec);n=len(matrix)
+            if data['M']!=M or data['place']!=('infinity','zero')[side] or data.get('full_core',False)!=full_core:raise ValueError('Support data do not match the requested construction.')
+            matrix,shifts,meta=compiled[side] if compiled is not None else coordinate_matrix(data,alpha,beta,self.quartic_terms,repair_spec,input_spec=input_spec,repair_kind=repair_kind,identity_spec=identity_spec)
+            if meta['M']!=M or meta['place']!=('infinity','zero')[side] or meta.get('full_core',False)!=full_core:raise ValueError('Compiled coordinates have inconsistent mode or basis metadata.')
+            n=len(matrix)
             self.oracles.append(MatrixOracle(matrix,n,shifts,precision=meta['profile_precision']));self.metadata.append(meta)
             rf=np.zeros((n,self.parameters));cf=np.zeros((n,self.parameters));rf[:,2*side]=meta['row_charges'];cf[:,2*side+1]=meta['column_charges'];o=4+self.core_stride*side
             for i,state in enumerate(meta['row_core_states']):
@@ -96,10 +100,15 @@ class CoreDefectPressure:
 def main():
     parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--M',type=int,default=8);parser.add_argument('--alpha',type=int,default=1);parser.add_argument('--beta',type=int,default=2);parser.add_argument('--quartic-power',type=int,default=0);parser.add_argument('--restarts',type=int,default=12);parser.add_argument('--maxfun',type=int,default=300);parser.add_argument('--seconds',type=float,default=1800);parser.add_argument('--seed',type=int,default=91378);parser.add_argument('--height-bound',type=float,default=24);parser.add_argument('--starts',type=Path);parser.add_argument('--output',type=Path,required=True)
     parser.add_argument('--full-core',action='store_true')
-    args=parser.parse_args();started=time.monotonic();oracle=CoreDefectPressure(args.M,args.alpha,args.beta,[(1,args.quartic_power)],full_core=args.full_core);best=None;records=[];rng=np.random.default_rng(args.seed);dimension=oracle.parameters
+    parser.add_argument('--repair',choices=('partial','inverse'),default='partial')
+    parser.add_argument('--transport-spec','--identity-spec',dest='identity_spec',type=Path)
+    args=parser.parse_args();identity_spec=None
+    if args.identity_spec:
+        supplied=json.loads(args.identity_spec.read_text());identity_spec=(supplied['C'],supplied['W'],supplied['target']) if isinstance(supplied,dict) and 'target' in supplied else (supplied['C'],supplied['W']) if isinstance(supplied,dict) else supplied;args.full_core=True
+    started=time.monotonic();oracle=CoreDefectPressure(args.M,args.alpha,args.beta,[(1,args.quartic_power)],full_core=args.full_core,repair_kind=args.repair,identity_spec=identity_spec);best=None;records=[];rng=np.random.default_rng(args.seed);dimension=oracle.parameters
     def save():
         metadata=[{k:v for k,v in m.items() if k not in ('row_core_states','column_core_states','row_charges','column_charges')} for m in oracle.metadata]
-        result={'status':'exploratory floating search; no exact rate claimed','M':args.M,'alpha':args.alpha,'beta':args.beta,'quartic_terms':oracle.quartic_terms,'full_core':args.full_core,'queries':oracle.queries,'failures':oracle.failures,'elapsed_seconds':time.monotonic()-started,'best':best,'restarts':records,'builder_metadata':metadata,'random_seed':args.seed,'normalized_height_bound':args.height_bound,'parameter_layout':'four charges; each place v_low,v_top,v_both,y_low,y_top,u_low,u_top, then optional x_low,x_top,x_both; log_s; weights multiplied by log_s'}
+        result={'status':'exploratory floating search; no exact rate claimed','M':args.M,'alpha':args.alpha,'beta':args.beta,'repair_kind':args.repair,'identity_spec':identity_spec,'quartic_terms':oracle.quartic_terms,'full_core':args.full_core,'queries':oracle.queries,'failures':oracle.failures,'elapsed_seconds':time.monotonic()-started,'best':best,'restarts':records,'builder_metadata':metadata,'random_seed':args.seed,'normalized_height_bound':args.height_bound,'parameter_layout':'four charges; each place v_low,v_top,v_both,y_low,y_top,u_low,u_top, then optional x_low,x_top,x_both; log_s; weights multiplied by log_s'}
         temporary=args.output.with_suffix(args.output.suffix+'.tmp');temporary.write_text(json.dumps(result,indent=2)+'\n');temporary.replace(args.output)
     def objective(x):
         nonlocal best

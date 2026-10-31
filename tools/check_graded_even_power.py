@@ -114,7 +114,7 @@ def evaluate(polynomial, point, prime):
     return result
 
 
-def check_typed_endpoints(prime, parity, copies):
+def check_typed_endpoints(prime, parity, copies, paired=False):
     d = len(parity)
     # Endpoint ordinary crossing, with arbitrary even perturbation vanishing at 1.
     perturbation = sample_even_tensor(d, parity, prime)
@@ -130,11 +130,16 @@ def check_typed_endpoints(prime, parity, copies):
         kind = tuple(word.count(a) for a in range(d))
         types.setdefault(kind, []).append(word)
     checked = 0
-    for word_set in types.values():
-        for labels in product(word_set, repeat=4):
+    for type_x, words_x in types.items():
+        choices_y = types.items() if paired else [(type_x, words_x)]
+        for type_y, words_y in choices_y:
+          odd_x = sum(count * parity[a] for a, count in enumerate(type_x))
+          odd_y = sum(count * parity[a] for a, count in enumerate(type_y))
+          beta = (-1) ** (odd_x * (odd_x - 1) // 2 + odd_y * (odd_y - 1) // 2)
+          for labels in product(words_x, words_y, words_y, words_x):
             v, y, u, x = labels
             value = evaluate(literal_global_entry(tensor, labels, parity, prime), 1, prime)
-            assert value == int(v == x and y == u)
+            assert value == beta * int(v == x and y == u) % prime
             # Global boundary reorder is constant on a fixed physical type.
             totals = [sum(parity[a] for a in word) % 2 for word in labels]
             for order in CUTS:
@@ -182,7 +187,8 @@ def main():
         for parity, copies in (((0, 1), 2), ((0, 1), 3), ((0, 1, 1, 0), 2)):
             records.append({"prime": prime, "parity": parity, "copies": copies,
                             "polynomial_entry_equalities": check_tensor_power(prime, parity, copies),
-                            "typed_endpoint_entries": check_typed_endpoints(prime, parity, copies)})
+                            "typed_endpoint_entries": check_typed_endpoints(prime, parity, copies),
+                            "paired_endpoint_entries": check_typed_endpoints(prime, parity, copies, paired=True)})
     result = {"scope": "Exact finite controls for graded even tensor powers and their actual cut matrices.",
               "cases": records, "odd_seed_negative_control": odd_negative_control(),
               "signed_residual_control": residual_sign_control(),

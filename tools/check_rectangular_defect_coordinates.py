@@ -65,9 +65,9 @@ def evaluate_polynomial_matrix(matrix, shifts, metadata, z):
     return result
 
 
-def point_control(data, compiled, z):
+def point_control(data, compiled, z, seed=None):
     place = data['place']
-    K = original_matrix(z, place)
+    K = original_matrix(z, place, seed)
     K = infinity_transform(K, z, data.get('full_core', False)) if place == 'infinity' else zero_transform(K, z)
     masks = [sum(((mask >> j)&1) << index for j, index in enumerate(data['active_indices']))
              for mask in range(1 << len(data['active_indices']))]

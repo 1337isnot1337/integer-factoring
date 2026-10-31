@@ -125,10 +125,11 @@ def compiled_active(place, M):
     return active_matrix(support_data(place, M), 1, 2)
 
 
-def original_matrix(z, place):
+def original_matrix(z, place, seed=None):
     M, beta = 4, 6
     assert mul(beta, beta)^beta^1 == 0
-    seed = build(tuple(range(M)), M, 1, 2, check_types=False)
+    if seed is None:
+        seed = build(tuple(range(M)), M, 1, 2, check_types=False)
     w = power(z, -1) if place == 'infinity' else z
     denominator = power(1 ^ w, seed['denominator_degree'])
     bulk, top = 1 << (M-2), 1 << (M-1)

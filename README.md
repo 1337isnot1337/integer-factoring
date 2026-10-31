@@ -118,6 +118,15 @@ physical cores. Its 25-parameter pressure calculation has dimensions
 independent of the interval length. Adaptive exact series windows permit
 larger intervals while rejecting unresolved pivots.
 
+[Coupled core transports](research/rectangular-core-transports.md) now
+permit arbitrary invertible core changes, including height-raising
+directions, when an exact left/right product preserves the endpoint.
+Their matrices can be updated from cached coordinates. The
+[critical-pressure analysis](research/rectangular-critical-pressure.md)
+separates genuine defect gains from interval convergence, while a
+[bivariate limit](research/bivariate-core-pressure-limit.md) reduces the
+large-interval question to a finite leading matrix and its weighted ranks.
+
 The [all-field Pascal construction](research/all-field-pascal-crossings.md)
 retains the required global signs in odd characteristic. The
 [graded-power theorem](research/graded-even-power-transfer.md) also
@@ -130,6 +139,10 @@ For the original evaluator's precision question,
 and [finite decoder certificates](research/canonical-packet-decoder-frontier.md)
 give exact four-wire binary thresholds: 12 local bits for parity and
 13 for the full count. They do not supply an efficient all-size decoder.
+The [full Boolean operator](research/boolean-cauchy-smith-profile.md)
+has an exact all-size Smith profile and a one-bit inverse at either
+nearest center. Direct insertion of that inverse reconnects the source
+groups, so this operator theorem alone does not improve the evaluator.
 
 The [31 October research checkpoint](research/constructive-frontier-checkpoint.md)
 collects the latest exact bounds, new construction families, reproducible

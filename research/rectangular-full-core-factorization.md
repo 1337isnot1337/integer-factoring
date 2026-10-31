@@ -265,6 +265,17 @@ four extreme cores and both bulk charges. The
 [recorded controls](../evidence/rectangular-full-core-coordinates-control.json)
 have no discrepancies and verify the excluded rows and columns.
 
+At `M=8`, an independent
+[full-spectrum control](../tools/check_rectangular_full_core_spectra.py)
+compares the ten-mode construction with the earlier seven-/nine-mode
+construction. It uses nonzero quarter-integer bulk and old-core weights,
+sets the additional `x` weights to zero, and convolves each active
+spectrum with its own scalar spectators. The
+[recorded spectra](../evidence/rectangular-full-core-spectra-M8.json)
+agree at all `49,152` orders at each valuation place. Thus this
+comparison checks the complete spectator multiplicities and weighted
+profiles, beyond a single pressure value.
+
 The fixed-size reduction proves polynomial mathematical complexity
 in the interval length, with a larger constant than the predecessor.
 An implementation must separately establish that its coefficient
