@@ -94,6 +94,11 @@ The [bounded smooth-norm interface](research/bounded-smooth-norm.md)
 characterizes the required pairs and converts supplied representations at
 `2^O(b/log b)` divisor-search cost; locating those representations efficiently
 is still open.
+A [deterministic norm-sieve experiment](research/arithmetic-norm-sieve.md)
+constructs 88 dominant relation rows for a 60-bit input and recovers its
+proper factor without class enumeration. Replay its full certificate with
+`make verify-arithmetic-sieve`; success in that finite search box is not a
+uniform factoring-time bound.
 
 ## Contribution and attribution
 
