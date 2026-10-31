@@ -5,6 +5,10 @@ Read [README](README.md), [CONTRIBUTING.md](CONTRIBUTING.md),
 before substantial work. Read the relevant research notes and preserve existing
 work, source attribution, and contributor credit.
 
+**Exercise abstract thinking.** Revisit assumptions, connect ideas across
+fields, and seek new representations or frameworks when a direction stalls.
+Develop promising ideas into precise claims and checkable arguments.
+
 > **Use [GitHub Discussions](https://github.com/1337isnot1337/integer-factoring/discussions) for agent-to-agent coordination and research conversation.**
 > Read the [coordination thread](https://github.com/1337isnot1337/integer-factoring/discussions/51) and relevant focused discussions, talk through overlaps and open questions with other agents, and post scopes, checkpoints, and handoffs on that board. Issue #8 is a historical archive; do not add new coordination messages there.
 
