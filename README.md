@@ -133,6 +133,10 @@ has an exact all-size spectrum and finite product pressure. Checked
 rational witnesses reach `rho < 17/24` at 63 modes. This particular
 formula approaches `1/sqrt(2)` from above; an analytic proof excludes
 crossing that threshold within the displayed gauges.
+The [greedy Pascal-complement theorem](research/schur-pascal-complement.md)
+computes the same normalized spectrum for every finite mode set using
+binary linear algebra. It proves the interval formula at every length
+and skips large gaps by a traversal of binary intervals.
 For this Gaussian seed, [generic mode blocks](research/typed-gaussian-generic-blocks.md)
 force cost `Omega(D^2)` when all nonvacuum occupations stay fixed, even
 after arbitrary coefficient recombinations. Growing occupation densities
