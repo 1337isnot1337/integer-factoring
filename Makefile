@@ -497,3 +497,10 @@ verify-exterior-gaussian-floor:
 
 verify-charged-one-mode-filters:
 	python3 tools/check_charged_one_mode_filters.py
+
+.PHONY: verify-folded-gaussian-floor verify-small-gaussian-bases
+verify-folded-gaussian-floor:
+	python3 tools/check_folded_charged_gaussian_floor.py
+
+verify-small-gaussian-bases:
+	python3 tools/check_small_charged_gaussian_bases.py
