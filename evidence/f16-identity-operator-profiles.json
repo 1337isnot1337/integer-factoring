@@ -1,0 +1,40 @@
+{
+  "status": "Exact F16 restriction-of-scalars and original physical controls; no pressure claim.",
+  "independent_all_minor_profiles": 30,
+  "late_extension_coefficient_degree": 600,
+  "F4_two_cut_regressions": 10,
+  "independent_diagonal_minor_profiles": 20,
+  "original_physical_cases": [
+    {
+      "n": 2,
+      "ramification": 1,
+      "charge": 0,
+      "modes": 2,
+      "geometry": "mixed",
+      "original_matrix_order": 16,
+      "endpoint_coefficients_checked": 68,
+      "maximum_native_precision": 512
+    },
+    {
+      "n": 3,
+      "ramification": 1,
+      "charge": 1,
+      "modes": 3,
+      "geometry": "split:1:2",
+      "original_matrix_order": 64,
+      "endpoint_coefficients_checked": 825,
+      "maximum_native_precision": 512
+    },
+    {
+      "n": 3,
+      "ramification": 3,
+      "charge": -1,
+      "modes": 2,
+      "geometry": "initial",
+      "original_matrix_order": 64,
+      "endpoint_coefficients_checked": 808,
+      "maximum_native_precision": 512
+    }
+  ],
+  "extended": true
+}

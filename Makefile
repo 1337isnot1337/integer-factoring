@@ -393,3 +393,7 @@ verify-f4-operator-catalogues:
 .PHONY: verify-field-lattice-lifts
 verify-field-lattice-lifts:
 	python3 tools/check_f4_lattice_linear.py
+
+.PHONY: verify-f16-identity-operators
+verify-f16-identity-operators:
+	python3 tools/check_f16_identity_operator_profiles.py --extended
