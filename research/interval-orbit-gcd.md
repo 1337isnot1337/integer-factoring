@@ -106,6 +106,11 @@ The [unit-jet algorithm](interval-unit-jets.md) now provides all local
 Taylor data at a suitable quadratic 2-adic point with polynomial bit
 cost in the endpoint length, precision, and jet degree. Extracting the
 global common factor from this data and the recurrences remains open.
+The [global packet circuits](interval-packet-circuits.md) further give
+small ordinary circuits for both input polynomials modulo `2^p`, with
+polynomial generation cost. Large artificial modular common factors
+persist in an explicit family, so a rational-factor certificate or
+effective multiplicity removal is still required.
 
 Equations (3)--(4) specify a new elimination problem. They do not
 authorize treating a long product, a shifted evaluation, or a large

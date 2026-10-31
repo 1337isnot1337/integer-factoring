@@ -33,22 +33,14 @@ The composition uses the existing clique evaluator from [Anthropic's Appendix B]
 | Sharper k6 saving `log(12/11)/log(12) > 1/29` | Ordinary proof, not Lean-verified at this rate | [Rate derivation](research/k6-sharp-rate.md) |
 | Saving exponent above `1/2` | **Not established** | [Research index](research/INDEX.md) |
 
-The arithmetic framework work now includes an
-[exact dyadic inverse-section recursion](research/dyadic-inverse-sections.md)
-with interval selectors and Euclidean aggregation of affine fibres.
-An [exact cyclic-family aggregation](research/dyadic-orbit-aggregation.md)
-also handles complete fractional-linear orbits with affine changes in
-polynomial bit time.
-The current reference evaluator still visits exponentially many low-bit
-roots and does not improve the bound. Its next target is aggregation of
-whole families of arithmetic sections, following the released Bell lane
-in [PR #41](https://github.com/1337isnot1337/integer-factoring/pull/41).
-The [interval orbit-gcd interface](research/interval-orbit-gcd.md) retains
-the correlated root relation and specifies the unresolved elimination
-algorithm; its stronger factoring consequence is conditional.
-[Local jets of those products](research/interval-unit-jets.md) now have
-a polynomial bit-cost evaluator in their binary endpoint size,
-precision, and Taylor degree; global gcd extraction remains open.
+Arithmetic research now uses [inverse sections](research/dyadic-inverse-sections.md)
+and an [interval orbit-gcd interface](research/interval-orbit-gcd.md).
+It supplies [exact complete-orbit aggregation](research/dyadic-orbit-aggregation.md)
+and [global modular input circuits](research/interval-packet-circuits.md)
+with `O(n+p)` arithmetic nodes and polynomial generation cost.
+Recovering the genuine rational common factor within the desired time
+bound remains open; these results do not improve the factoring score.
+The [research index](research/INDEX.md) links proofs, exact evidence, and replay commands.
 
 The result table distinguishes verified machine bounds from conditional constructions and finite experiments. A merged PR or a passing finite test does not imply independent mathematical review.
 
@@ -61,8 +53,6 @@ make verify               # Python unit tests, exact certificates, and local lin
 make verify-frontier      # Focused research certificates
 make verify-post-half     # Larger optional rank tests
 make verify-docs          # Local Markdown-link check
-python3 tools/check_dyadic_hyperbola.py # Exact arithmetic-framework controls
-python3 tools/check_dyadic_orbit_aggregation.py # Complete cyclic-family controls
 make verify-arithmetic    # All arithmetic-framework checkers
 ```
 

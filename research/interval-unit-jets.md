@@ -26,6 +26,10 @@ This is a local evaluation algorithm, not the unresolved global gcd
 algorithm. In particular, both products in (1) are units, so computing
 an ordinary ideal gcd inside this truncated ring cannot recover the
 common global factor. The complete factoring score remains `1/2`.
+The later [global packet circuit](interval-packet-circuits.md) extends
+modular evaluation to arbitrary arguments using a different pairing
+identity. The present evaluator remains an independent check at unit
+points.
 
 ## 1. Parity splitting makes every base factor a unit
 
