@@ -64,7 +64,7 @@ help:
 	  'make verify-frontier      - focused frontier certificates' \
 	  'make verify-post-half     - larger optional matrix-rank checks' \
 	  'make verify-docs          - check local Markdown file links' \
-	  'make verify-arithmetic-sieve - replay the 60-bit arithmetic relation certificate' \
+	  'make verify-arithmetic-sieve - replay the 60/80-bit arithmetic certificates and finite search limits' \
 	  'make verify-formal        - rebuild original Lean lemmas (Lean 4.35.0)' \
 	  'make verify-k6            - rebuild the certified 1/30 machine (Lean 4.35.0)' \
 	  'make verify-half-appendix - rebuild the certified 1/2 machine (Lean 4.33.1)'

@@ -21,6 +21,14 @@ jobs:
       - name: Run exact finite certificates
         run: make verify
 
+  arithmetic-sieve:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - name: Replay arithmetic relation certificates and finite search limits
+        run: make verify-arithmetic-sieve
+
   lean-lemmas:
     runs-on: ubuntu-24.04
     timeout-minutes: 30

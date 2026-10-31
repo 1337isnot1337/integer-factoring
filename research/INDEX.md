@@ -21,7 +21,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Actual class-group controls](arithmetic-class-group-controls.md): exact composition, smooth prime-form words, unsaturated relations and complete two-torsion recovery; exhaustive searches produce factors for 18 finite targets.
 - [Density/index transfer](arithmetic-density-lift.md): dense smooth forms and relations on a possibly proper factor-base subgroup give a global class-number multiple; missing ambiguous directions remain an explicit obligation.
 - [Bounded smooth-norm interface](bounded-smooth-norm.md): exact equivalence between smooth-form quotients and balanced smooth represented norms; supplied witnesses convert at `2^O(b/log b)` cost, while fast witness search remains open.
-- [Deterministic norm sieve](arithmetic-norm-sieve.md): 88 dominant relations and exact determinant/torsion extraction factor a 60-bit input without class enumeration; uniform box success remains unproved.
+- [Deterministic norm sieve](arithmetic-norm-sieve.md): dominant relations and exact determinant/torsion extraction factor 60-bit and 80-bit inputs without class enumeration; two smaller-box exhaustion controls retain the finite search limits.
 - [Pieces-to-factoring transfer](pieces-to-factoring.md): conditional crossing-parameter transfer, with full bit-cost accounting.
 - [Scale-one modular transfer](scale-one-modular-transfer.md): fixed-field transfer and machine costs.
 - [Sparse divisor nonzeroness](sparse-divisor-nonzeroness.md): detection of divisors in weighted polynomial counts.

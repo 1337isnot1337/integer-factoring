@@ -105,9 +105,10 @@ check 40 discriminants, all associative triples, smooth prime-form words,
 and proper-factor extraction for 18 targets. Those controls enumerate
 classes and orders; they do not implement fast generator/relation search.
 The [norm-sieve experiment](arithmetic-norm-sieve.md) goes further in a
-finite run: it searches arithmetic norm witnesses for 88 dominant rows,
-then factors a 60-bit input by determinant/torsion extraction without
-class enumeration. Its fixed-box success has no uniform guarantee.
+finite runs: it searches arithmetic norm witnesses for dominant rows,
+then factors 60-bit and 80-bit inputs by determinant/torsion extraction
+without class enumeration. Smaller boxes fail on two retained targets;
+the larger-box successes have no uniform guarantee.
 
 The [bounded smooth-norm interface](bounded-smooth-norm.md) now proves the
 exact arithmetic characterization and implements conversion of supplied

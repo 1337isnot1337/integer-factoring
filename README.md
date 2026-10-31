@@ -56,7 +56,7 @@ make verify-k6           # Lean 4.35.0; complete 1/30 theorem
 make verify-formal       # Lean 4.35.0; original local lemmas
 ```
 
-The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four groups on PRs and on `main`: exact Python checks, original Lean lemmas, k6, and the half-rate theorem. The half-rate script audits the axioms of its final theorem and supporting declarations.
+The [GitHub Actions workflow](.github/workflows/verify.yml) runs five groups on PRs and on `main`: exact Python checks, the larger arithmetic relation certificates, original Lean lemmas, k6, and the half-rate theorem. The half-rate script audits the axioms of its final theorem and supporting declarations.
 
 ## Repository map
 
@@ -95,10 +95,10 @@ characterizes the required pairs and converts supplied representations at
 `2^O(b/log b)` divisor-search cost; locating those representations efficiently
 is still open.
 A [deterministic norm-sieve experiment](research/arithmetic-norm-sieve.md)
-constructs 88 dominant relation rows for a 60-bit input and recovers its
-proper factor without class enumeration. Replay its full certificate with
-`make verify-arithmetic-sieve`; success in that finite search box is not a
-uniform factoring-time bound.
+constructs dominant relation certificates for 60-bit and 80-bit inputs and
+recovers proper factors without class enumeration. Replay both certificates
+and two smaller-box exhaustion controls with `make verify-arithmetic-sieve`;
+success in a larger finite box is not a uniform factoring-time bound.
 
 ## Contribution and attribution
 
