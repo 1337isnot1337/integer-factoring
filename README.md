@@ -185,6 +185,15 @@ threshold; the [weighted block theorem](research/difference-support-rank-floor.m
 subsequently closes every coordinate-code pair for the elementary seed.
 Run `make verify-downset-crossings verify-regular-code-crossings`.
 
+The [coherent bounded-spin construction](research/bounded-spin-crossing.md)
+uses height-three Clebsch--Gordan paths over the fixed field `F_5`.
+It has Fibonacci many labels, nondegenerate paired encoders at every
+length, an exact crossing endpoint, and a finite-state entry algorithm.
+It also supports exactly `2^lambda` labels with degree `O(lambda)`.
+A companion integer identity has scale `12^n` and `O(lambda)` coefficient
+bits. Modular rank gains do not automatically lift to rational ranks.
+A uniform favorable rank bound remains open. Run `make verify-bounded-spin`.
+
 The [exact nonlinear charge theorem](research/nonlinear-symbol-charge-lattices.md)
 characterizes every admissible pair of full-symbol potentials for the
 reflection tensor: their Hamming-cube Lipschitz constants must sum to at

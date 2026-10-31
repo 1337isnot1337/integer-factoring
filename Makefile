@@ -124,6 +124,10 @@ verify-transpose-intertwiner:
 verify-joint-determinant:
 	python3 tools/check_joint_determinant_barrier.py
 
+.PHONY: verify-bounded-spin
+verify-bounded-spin:
+	python3 tools/check_bounded_spin_crossing.py
+
 .PHONY: verify-downset-crossings verify-regular-code-crossings
 verify-downset-crossings:
 	python3 tools/check_downset_crossing_normal_form.py
