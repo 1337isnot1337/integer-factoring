@@ -217,7 +217,53 @@ search or a completed requested iteration count. Its pressure optimizations
 are floating point. A strict numerical candidate still requires an exact
 rational pressure certificate before any bound is claimed.
 
-## 5. Independent controls
+## 5. Completed search from a different source family
+
+The driver also supports the five-symbol tensor
+
+\[
+R_{xyuv}=[x=y][u=v],\qquad E_{xyuv}=[x=v][y=u],
+\qquad B(z)=R+z(E+R).
+\tag{8}
+\]
+
+It has degree one and satisfies the strict endpoint \(B(1)=E\).
+This reference is independent of the reflection Gaussian source. The
+completed run allowed the whole degree-six endpoint fiber, used paired
+energies \((0,12,6,0,8)\) at both places, set row floors three below the
+reference orders, and set caps four above them.
+
+| Reference | Completed steps | Distinct target vectors | Profile classes in that reference | Complete profile queries |
+| --- | ---: | ---: | ---: | ---: |
+| Binary Brauer source | 200 | 155 | 278 | 465 |
+| Retained nonbinary F4 tensor | 200 | 8 | 16 | 24 |
+
+The common-floor fibers had 1,770 and 1,501 free F4 coordinates. The best
+recorded ratio moved from the original reference's approximately
+\(0.9957096676\) to \(0.9825257604\). This improves this deliberately
+different finite source only; it is far above the existing factoring
+threshold and does not improve the repository's best bound.
+
+The [complete record](../evidence/f4-recentered-brauer-five-search.json) has
+both reference tensors, all physical heights, and 24 retained witnesses.
+Its [independent replay](../evidence/f4-recentered-brauer-five-replay.json)
+certifies 52 complete profiles by exact polynomial regular frames, verifies
+48 untruncated target-frame products, and checks 16,250 literal endpoint
+entries. This replay does not call the native Smith profile oracle or solve
+the search's affine systems. The numerical roots are recomputed separately.
+
+```sh
+python3 tools/check_f4_recentered_walks.py \
+  evidence/f4-recentered-brauer-five-search.json \
+  --output /tmp/f4-recentered-brauer-five-replay.json
+```
+
+The search driver can restart a new finite schedule from a selected retained
+literal witness with `--initial-record` and `--witness-index`. This is a new
+schedule from a saved tensor, not a claim to resume the exact earlier
+iteration state.
+
+## 6. Independent controls
 
 Run:
 
