@@ -61,6 +61,7 @@ make verify-crossing-interpolation # Exact synthesis with prescribed local row l
 make verify-smith-oracle # Exact weighted profiles and the scoped sparse entropy dual
 make verify-controlled-smith # Controlled monomial crossings and the qutrit control
 make verify-sparse-holonomy # Exact singleton profiles and Gaussian entry identities
+make verify-charge-pruning # One-sided charge changes and typed Gaussian block bounds
 ```
 
 The Python checks use Python 3 and its standard library. Some optional checks use NumPy for speed. The exploratory mode-pressure search uses NumPy and SciPy. The optional linear Smith catalogue and Schur central-rank checks also require a C++17 compiler.
@@ -123,6 +124,10 @@ crossing to arbitrary index sets, unequal species occupations, and
 independent mode heights. Their product-type criterion is exact; an
 [exploratory search driver](tools/search_schur_mode_pressure.py) uses the
 weighted Smith oracle to search this larger family.
+For this Gaussian seed, [generic mode blocks](research/typed-gaussian-generic-blocks.md)
+force cost `Omega(D^2)` when all nonvacuum occupations stay fixed, even
+after arbitrary coefficient recombinations. Growing occupation densities
+remain a separate regime.
 
 [Exact type optimization](research/type-optimized-crossing-pressure.md)
 reduces the best common letter frequencies to one rational pressure inequality.
@@ -136,6 +141,10 @@ relaxed system constructs a non-Gaussian control.
 An [exact weighted Smith oracle](research/weighted-smith-separation-oracle.md)
 finds all determinantal minima without listing every minor. It supports
 continuous gauge searches with exact rational replay.
+[One-sided charge changes](research/one-sided-charge-pruning.md) disappear
+exactly under common-type restriction and cannot improve either convex
+Smith-profile sum. Neutral interactions and opposite-charge combinations
+remain available to the constructive search.
 
 [Finite module automata](research/cancellation-module-smith-automata.md)
 retain cancellation between auxiliary paths. Their bounds improve monotonically

@@ -45,6 +45,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Obstructions and work beyond 1/2
 
+- [One-sided charge pruning](one-sided-charge-pruning.md): common-type restriction removes every strictly one-directional charge perturbation; both-cut Smith majorization gives a matching untyped obstruction.
+- [Typed Gaussian generic blocks](typed-gaussian-generic-blocks.md): arbitrary coefficient recombinations have cost `Omega(D^2)` at fixed nonvacuum occupations, with exact finite controls and a separate growing-density bound.
 - [Sparse bulk species-gauge floor](sparse-bulk-species-gauge-floor.md): an exact entropy dual proves `rho >= 3/4` in the stated common-density limit model; no exclusion of general sparse families or unbounded energy slopes is claimed.
 - [Controlled monomial Smith floor](controlled-permutation-smith-floor.md): a fiber-span argument extends the nilpotent-path obstruction to dependent, noncommuting, and weighted monomial controls.
 - [Qutrit Weyl crossing](qutrit-weyl-crossing.md): a complete auxiliary crossing with an exact all-length constant-coefficient rank formula and a scoped raw-piece obstruction.

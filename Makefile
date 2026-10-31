@@ -1,4 +1,4 @@
-.PHONY: verify verify-docs verify-frontier verify-post-half verify-schur-fermion verify-schur-central verify-schur-gaussian verify-schur-sparse verify-fixed-modes verify-cancellation-modules verify-minimal-modules verify-exact-modules verify-cancellation-crossing verify-block-smith verify-linear-smith verify-type-pressure verify-crossing-interpolation verify-smith-oracle verify-controlled-smith verify-sparse-holonomy verify-cubic-full-images verify-formal verify-k6 verify-half-appendix help
+.PHONY: verify verify-docs verify-frontier verify-post-half verify-schur-fermion verify-schur-central verify-schur-gaussian verify-schur-sparse verify-fixed-modes verify-cancellation-modules verify-minimal-modules verify-exact-modules verify-cancellation-crossing verify-block-smith verify-linear-smith verify-type-pressure verify-crossing-interpolation verify-smith-oracle verify-controlled-smith verify-sparse-holonomy verify-charge-pruning verify-cubic-full-images verify-formal verify-k6 verify-half-appendix help
 
 verify: verify-docs verify-frontier
 	python3 -m unittest discover -s tests -v
@@ -66,6 +66,10 @@ verify-controlled-smith:
 verify-sparse-holonomy:
 	python3 tools/check_sparse_holonomy_singletons.py
 
+verify-charge-pruning:
+	python3 tools/check_one_sided_charge_pruning.py
+	python3 tools/check_typed_gaussian_generic_blocks.py
+
 verify-cubic-full-images:
 	python3 tools/check_cubic_full_image_span.py --output /tmp/cubic-full-image-span.json
 
@@ -118,6 +122,7 @@ help:
 	  'make verify-smith-oracle - exact weighted Smith minima and sparse entropy dual' \
 	  'make verify-controlled-smith - controlled monomial and qutrit crossings' \
 	  'make verify-sparse-holonomy - sparse Smith profiles and Gaussian identities' \
+	  'make verify-charge-pruning - one-sided charges and typed Gaussian block bounds' \
 	  'make verify-cubic-full-images - complete varying-image cubic spaces and ranks' \
 	  'make verify-formal        - rebuild original Lean lemmas (Lean 4.35.0)' \
 	  'make verify-k6            - rebuild the certified 1/30 machine (Lean 4.35.0)' \
