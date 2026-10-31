@@ -55,15 +55,16 @@ forms
 C(v^d)\left(1+\sum_j a_jv^{k_j}(1+v)^{h_j}H_j\right)
 \]
 
-over characteristic two, with positive integer `d,h_j`, nonnegative `k_j`,
-and arbitrary nonempty exterior monomials `H_j`. At `v=1`, every correction
-vanishes and `C(v^d)=C(1)`. Thus the unweighted polynomial endpoint is
+over characteristic two, with positive integer `d,h_j`, integer `k_j`,
+and arbitrary nonempty exterior monomials `H_j`. One common monomial clears
+negative powers. At `v=1`, every correction vanishes and `C(v^d)=C(1)`. Thus the unweighted polynomial endpoint is
 unchanged entry by entry, and any typed crossing endpoint is inherited.
 This operation is not justified by applying it to the numerator of a
 rational tensor whose poles have not already been canceled.
 
 The [screening driver](../tools/screen_ramified_polynomial_crossings.py)
-starts with the polynomial two-mode frozen Gaussian, scans balanced even
+uses the polynomial two-mode frozen Gaussian or a strict Pascal-repaired
+seed, scans balanced even
 monomials or opposite-charge cubic pairs at explicit Gaussian gauges, and
 optimizes the best candidates over all physical-letter weights. It records
 ramification, coefficient hashes, and source hashes. These are additional

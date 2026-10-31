@@ -132,6 +132,14 @@ The charge projections split both cuts into explicit square blocks with
 no degree increase. Full-letter gauge searches are recorded separately
 from exact endpoint and profile controls; no threshold witness is claimed.
 
+[Slow endpoint corrections](research/slow-ramification-crossings.md) after
+ramification have exact eventual affine Smith orders, with an explicit
+threshold. An exact qutrit example decreases the profile product by about
+1.47% at one fixed scale. It does not improve the Gaussian optimum; its
+finite correction and long-interval embeddings remain constructive search
+targets. Both endpoint admissibility and the two complete profiles are
+checked before interpreting a favorable local cost.
+
 The [Walsh permanent calculation](research/walsh-principal-permanents.md)
 gives all-size scalar valuation formulas beyond the determinant model.
 It also proves that exponentially many grouped modes survive the current

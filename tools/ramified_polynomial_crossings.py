@@ -27,8 +27,9 @@ def ramify_binary(polynomial, factor):
 def endpoint_perturbation(seed, monomials, *, ramification=1):
     """Multiply C(w^d) by 1 + sum a*w^j*(1+w)^k*z^mask.
 
-    Each term is (mask, a, j, k), where a is an F4 coefficient, j>=0,
-    and k>=1. Exterior variables are ordered x, y, u, v; the positions
+    Each term is (mask, a, j, k), where a is an F4 coefficient, j is
+    integral, and k>=1. One common monomial clears negative j. Exterior
+    variables are ordered x, y, u, v; the positions
     within each leg use the ordinary bit-mask order. This is an affine
     sum of exterior monomials, not a product of their factors.
     """
@@ -43,16 +44,19 @@ def endpoint_perturbation(seed, monomials, *, ramification=1):
     count = q**4
     if len(seed["values"]) != count:
         raise ValueError("The source coefficient count is inconsistent.")
-    values = [tuple(ramify_binary(int(plane), ramification) for plane in entry)
-              for entry in seed["values"]]
-    result = list(values)
-    specifications = []
+    monomials = list(monomials)
     for mask, coefficient, shift, order in monomials:
         if not isinstance(mask, int) or not 0 < mask < count:
             raise ValueError("Use a nonempty exterior monomial in the four alphabets.")
-        if coefficient not in (1, 2, 3) or shift < 0 or order < 1:
-            raise ValueError("Use a nonzero F4 coefficient, nonnegative shift, and positive endpoint order.")
-        polynomial = binary_power(3, order) << shift
+        if coefficient not in (1, 2, 3) or not isinstance(shift, int) or not isinstance(order, int) or order < 1:
+            raise ValueError("Use a nonzero F4 coefficient, integral shift, and positive endpoint order.")
+    common_power = max(0, -min((term[2] for term in monomials), default=0))
+    values = [tuple(ramify_binary(int(plane), ramification) for plane in entry)
+              for entry in seed["values"]]
+    result = [tuple(plane << common_power for plane in entry) for entry in values]
+    specifications = []
+    for mask, coefficient, shift, order in monomials:
+        polynomial = binary_power(3, order) << (shift+common_power)
         for target in range(count):
             if target & mask == mask:
                 correction = scale(times_binary(values[target ^ mask], polynomial), coefficient)
@@ -62,6 +66,7 @@ def endpoint_perturbation(seed, monomials, *, ramification=1):
     rendered = json.dumps(result, separators=(",", ":"))
     return {"field": 4, "dimensions": dimensions, "q_x": q, "q_u": q,
             "denominator_degree": 0, "values": result, "degree": degree,
+            "global_w_power": common_power,
             "ramification": ramification, "perturbations": specifications,
             "coefficient_sha256": hashlib.sha256(rendered.encode()).hexdigest(),
             "strict_endpoint": bool(seed.get("strict_endpoint", False)),

@@ -282,3 +282,7 @@ verify-cauchy-powers:
 .PHONY: verify-strict-gaussian
 verify-strict-gaussian:
 	python3 tools/check_strict_gaussian_crossings.py
+
+.PHONY: verify-slow-ramification
+verify-slow-ramification:
+	python3 tools/check_slow_ramification_crossings.py
