@@ -1,0 +1,3070 @@
+{
+  "scope": "Finite independent original-matrix replay of pure-coupling structured profiles; no untested structured profile is certified.",
+  "large_controls_included": true,
+  "checks": {
+    "complete_original_matrix_profile_comparisons": 60,
+    "complete_regular_frame_identity_entries": 9308
+  },
+  "cases": [
+    {
+      "label": "small-2-False-0",
+      "source_alphabet": 2,
+      "first_support": [
+        [
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      "second_support": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ]
+      ],
+      "polynomial": 6,
+      "F4_coefficient": 1,
+      "profiles": [
+        {
+          "-2": 16
+        },
+        {
+          "0": 16
+        }
+      ],
+      "structured_pivot_counts": [
+        {
+          "diagonal_update": 16,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        },
+        {
+          "diagonal_update": 16,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        }
+      ],
+      "structured_seconds": 0.0009196459996019257,
+      "complete_matrix_seconds": 0.000615988999925321
+    },
+    {
+      "label": "small-2-False-1",
+      "source_alphabet": 2,
+      "first_support": [
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "second_support": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          1
+        ]
+      ],
+      "polynomial": 5,
+      "F4_coefficient": 2,
+      "profiles": [
+        {
+          "-2": 16
+        },
+        {
+          "0": 16
+        }
+      ],
+      "structured_pivot_counts": [
+        {
+          "diagonal_update": 16,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        },
+        {
+          "diagonal_update": 16,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        }
+      ],
+      "structured_seconds": 0.004326864000177011,
+      "complete_matrix_seconds": 0.0005798649999633199
+    },
+    {
+      "label": "small-2-False-2",
+      "source_alphabet": 2,
+      "first_support": [
+        [
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      "second_support": [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "polynomial": 5,
+      "F4_coefficient": 2,
+      "profiles": [
+        {
+          "-2": 16
+        },
+        {
+          "0": 16
+        }
+      ],
+      "structured_pivot_counts": [
+        {
+          "diagonal_update": 16,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        },
+        {
+          "diagonal_update": 16,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        }
+      ],
+      "structured_seconds": 0.00020147299983364064,
+      "complete_matrix_seconds": 0.0005316719998518238
+    },
+    {
+      "label": "small-2-False-3",
+      "source_alphabet": 2,
+      "first_support": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          1
+        ]
+      ],
+      "second_support": [
+        [
+          1,
+          0,
+          0,
+          1
+        ]
+      ],
+      "polynomial": 3,
+      "F4_coefficient": 3,
+      "profiles": [
+        {
+          "-2": 16
+        },
+        {
+          "0": 16
+        }
+      ],
+      "structured_pivot_counts": [
+        {
+          "diagonal_update": 16,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        },
+        {
+          "diagonal_update": 16,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        }
+      ],
+      "structured_seconds": 0.00020697199943242595,
+      "complete_matrix_seconds": 0.000563769999644137
+    },
+    {
+      "label": "small-2-False-4",
+      "source_alphabet": 2,
+      "first_support": [
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          1
+        ]
+      ],
+      "second_support": [
+        [
+          1,
+          0,
+          1,
+          0
+        ]
+      ],
+      "polynomial": 6,
+      "F4_coefficient": 3,
+      "profiles": [
+        {
+          "-2": 16
+        },
+        {
+          "0": 16
+        }
+      ],
+      "structured_pivot_counts": [
+        {
+          "diagonal_update": 16,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        },
+        {
+          "diagonal_update": 16,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        }
+      ],
+      "structured_seconds": 0.00020623099953809287,
+      "complete_matrix_seconds": 0.0005343159991753055
+    },
+    {
+      "label": "small-2-False-5",
+      "source_alphabet": 2,
+      "first_support": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ]
+      ],
+      "second_support": [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "polynomial": 3,
+      "F4_coefficient": 2,
+      "profiles": [
+        {
+          "-2": 16
+        },
+        {
+          "0": 16
+        }
+      ],
+      "structured_pivot_counts": [
+        {
+          "diagonal_update": 16,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        },
+        {
+          "diagonal_update": 16,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        }
+      ],
+      "structured_seconds": 0.0002317990001756698,
+      "complete_matrix_seconds": 0.000551471999642672
+    },
+    {
+      "label": "small-2-False-6",
+      "source_alphabet": 2,
+      "first_support": [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ]
+      ],
+      "second_support": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      "polynomial": 6,
+      "F4_coefficient": 2,
+      "profiles": [
+        {
+          "-2": 16
+        },
+        {
+          "0": 16
+        }
+      ],
+      "structured_pivot_counts": [
+        {
+          "diagonal_update": 16,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        },
+        {
+          "diagonal_update": 16,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        }
+      ],
+      "structured_seconds": 0.0042720319997897604,
+      "complete_matrix_seconds": 0.000562909001018852
+    },
+    {
+      "label": "small-2-False-7",
+      "source_alphabet": 2,
+      "first_support": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ]
+      ],
+      "second_support": [
+        [
+          0,
+          1,
+          1,
+          0
+        ]
+      ],
+      "polynomial": 3,
+      "F4_coefficient": 2,
+      "profiles": [
+        {
+          "-2": 16
+        },
+        {
+          "0": 16
+        }
+      ],
+      "structured_pivot_counts": [
+        {
+          "diagonal_update": 16,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        },
+        {
+          "diagonal_update": 16,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        }
+      ],
+      "structured_seconds": 0.00020755300101882312,
+      "complete_matrix_seconds": 0.0005358279995562043
+    },
+    {
+      "label": "small-2-True-0",
+      "source_alphabet": 2,
+      "first_support": [
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ]
+      ],
+      "second_support": [
+        [
+          0,
+          1,
+          0,
+          1
+        ]
+      ],
+      "polynomial": 6,
+      "F4_coefficient": 3,
+      "profiles": [
+        {
+          "-9": 1,
+          "-8": 14,
+          "-7": 1
+        },
+        {
+          "-8": 1,
+          "-7": 4,
+          "-6": 6,
+          "-5": 4,
+          "-4": 1
+        }
+      ],
+      "structured_pivot_counts": [
+        {
+          "diagonal_update": 0,
+          "offdiagonal_to_arrow": 1,
+          "arrow_center": 1,
+          "arrow_leaf_diagonal": 14,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        },
+        {
+          "diagonal_update": 16,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        }
+      ],
+      "structured_seconds": 0.00044260699905862566,
+      "complete_matrix_seconds": 0.0005902699995203875
+    },
+    {
+      "label": "small-2-True-1",
+      "source_alphabet": 2,
+      "first_support": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          1
+        ]
+      ],
+      "second_support": [
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "polynomial": 5,
+      "F4_coefficient": 3,
+      "profiles": [
+        {
+          "-8": 16
+        },
+        {
+          "-8": 1,
+          "-7": 4,
+          "-6": 6,
+          "-5": 4,
+          "-4": 1
+        }
+      ],
+      "structured_pivot_counts": [
+        {
+          "diagonal_update": 16,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        },
+        {
+          "diagonal_update": 16,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        }
+      ],
+      "structured_seconds": 0.0002760159986792132,
+      "complete_matrix_seconds": 0.0048582360013824655
+    },
+    {
+      "label": "small-2-True-2",
+      "source_alphabet": 2,
+      "first_support": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "second_support": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      "polynomial": 6,
+      "F4_coefficient": 1,
+      "profiles": [
+        {
+          "-10": 1,
+          "-8": 14,
+          "-6": 1
+        },
+        {
+          "-8": 1,
+          "-7": 4,
+          "-6": 6,
+          "-5": 4,
+          "-4": 1
+        }
+      ],
+      "structured_pivot_counts": [
+        {
+          "diagonal_update": 14,
+          "offdiagonal_to_arrow": 1,
+          "arrow_center": 1,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        },
+        {
+          "diagonal_update": 16,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        }
+      ],
+      "structured_seconds": 0.0007737469986750511,
+      "complete_matrix_seconds": 0.0008188049996533664
+    },
+    {
+      "label": "small-2-True-3",
+      "source_alphabet": 2,
+      "first_support": [
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "second_support": [
+        [
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      "polynomial": 5,
+      "F4_coefficient": 2,
+      "profiles": [
+        {
+          "-8": 16
+        },
+        {
+          "-8": 1,
+          "-7": 4,
+          "-6": 6,
+          "-5": 4,
+          "-4": 1
+        }
+      ],
+      "structured_pivot_counts": [
+        {
+          "diagonal_update": 16,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        },
+        {
+          "diagonal_update": 16,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        }
+      ],
+      "structured_seconds": 0.00033671699929982424,
+      "complete_matrix_seconds": 0.0005566290001297602
+    },
+    {
+      "label": "small-2-True-4",
+      "source_alphabet": 2,
+      "first_support": [
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          1
+        ]
+      ],
+      "second_support": [
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ]
+      ],
+      "polynomial": 5,
+      "F4_coefficient": 2,
+      "profiles": [
+        {
+          "-9": 1,
+          "-8": 14,
+          "-7": 1
+        },
+        {
+          "-8": 1,
+          "-7": 4,
+          "-6": 6,
+          "-5": 4,
+          "-4": 1
+        }
+      ],
+      "structured_pivot_counts": [
+        {
+          "diagonal_update": 0,
+          "offdiagonal_to_arrow": 1,
+          "arrow_center": 1,
+          "arrow_leaf_diagonal": 14,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        },
+        {
+          "diagonal_update": 16,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        }
+      ],
+      "structured_seconds": 0.0002598020000732504,
+      "complete_matrix_seconds": 0.0005894089990761131
+    },
+    {
+      "label": "small-2-True-5",
+      "source_alphabet": 2,
+      "first_support": [
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          1
+        ]
+      ],
+      "second_support": [
+        [
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          1
+        ]
+      ],
+      "polynomial": 6,
+      "F4_coefficient": 2,
+      "profiles": [
+        {
+          "-10": 1,
+          "-8": 14,
+          "-6": 1
+        },
+        {
+          "-8": 1,
+          "-7": 4,
+          "-6": 6,
+          "-5": 4,
+          "-4": 1
+        }
+      ],
+      "structured_pivot_counts": [
+        {
+          "diagonal_update": 0,
+          "offdiagonal_to_arrow": 1,
+          "arrow_center": 1,
+          "arrow_leaf_diagonal": 14,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        },
+        {
+          "diagonal_update": 16,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        }
+      ],
+      "structured_seconds": 0.00018931599879579153,
+      "complete_matrix_seconds": 0.0047033120008563856
+    },
+    {
+      "label": "small-2-True-6",
+      "source_alphabet": 2,
+      "first_support": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          1
+        ]
+      ],
+      "second_support": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ]
+      ],
+      "polynomial": 5,
+      "F4_coefficient": 3,
+      "profiles": [
+        {
+          "-9": 1,
+          "-8": 14,
+          "-7": 1
+        },
+        {
+          "-8": 1,
+          "-7": 4,
+          "-6": 6,
+          "-5": 4,
+          "-4": 1
+        }
+      ],
+      "structured_pivot_counts": [
+        {
+          "diagonal_update": 16,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        },
+        {
+          "diagonal_update": 16,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        }
+      ],
+      "structured_seconds": 0.00024610099899291527,
+      "complete_matrix_seconds": 0.0005808360001537949
+    },
+    {
+      "label": "small-2-True-7",
+      "source_alphabet": 2,
+      "first_support": [
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      "second_support": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          1
+        ]
+      ],
+      "polynomial": 5,
+      "F4_coefficient": 3,
+      "profiles": [
+        {
+          "-8": 16
+        },
+        {
+          "-8": 1,
+          "-7": 4,
+          "-6": 6,
+          "-5": 4,
+          "-4": 1
+        }
+      ],
+      "structured_pivot_counts": [
+        {
+          "diagonal_update": 16,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        },
+        {
+          "diagonal_update": 16,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        }
+      ],
+      "structured_seconds": 0.00019650700050988235,
+      "complete_matrix_seconds": 0.0006629290001001209
+    },
+    {
+      "label": "small-3-False-0",
+      "source_alphabet": 3,
+      "first_support": [
+        [
+          2,
+          2,
+          1,
+          1
+        ],
+        [
+          2,
+          2,
+          2,
+          1
+        ]
+      ],
+      "second_support": [
+        [
+          2,
+          2,
+          1,
+          0
+        ]
+      ],
+      "polynomial": 6,
+      "F4_coefficient": 2,
+      "profiles": [
+        {
+          "-2": 64,
+          "-1": 16,
+          "0": 1
+        },
+        {
+          "0": 81
+        }
+      ],
+      "structured_pivot_counts": [
+        {
+          "diagonal_update": 81,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        },
+        {
+          "diagonal_update": 81,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        }
+      ],
+      "structured_seconds": 0.0055542049994983245,
+      "complete_matrix_seconds": 0.02541851800015138
+    },
+    {
+      "label": "small-3-False-1",
+      "source_alphabet": 3,
+      "first_support": [
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          2,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          2,
+          1
+        ],
+        [
+          2,
+          0,
+          1,
+          1
+        ],
+        [
+          2,
+          0,
+          2,
+          1
+        ]
+      ],
+      "second_support": [
+        [
+          2,
+          0,
+          0,
+          1
+        ],
+        [
+          2,
+          0,
+          0,
+          2
+        ],
+        [
+          2,
+          1,
+          0,
+          1
+        ],
+        [
+          2,
+          1,
+          0,
+          2
+        ]
+      ],
+      "polynomial": 3,
+      "F4_coefficient": 2,
+      "profiles": [
+        {
+          "-2": 64,
+          "-1": 16,
+          "0": 1
+        },
+        {
+          "0": 81
+        }
+      ],
+      "structured_pivot_counts": [
+        {
+          "diagonal_update": 81,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        },
+        {
+          "diagonal_update": 81,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        }
+      ],
+      "structured_seconds": 0.001078295999832335,
+      "complete_matrix_seconds": 0.05551085799925204
+    },
+    {
+      "label": "small-3-False-2",
+      "source_alphabet": 3,
+      "first_support": [
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          2,
+          0
+        ],
+        [
+          0,
+          2,
+          1,
+          0
+        ],
+        [
+          0,
+          2,
+          2,
+          0
+        ]
+      ],
+      "second_support": [
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          1
+        ],
+        [
+          0,
+          0,
+          2,
+          2
+        ]
+      ],
+      "polynomial": 6,
+      "F4_coefficient": 1,
+      "profiles": [
+        {
+          "-2": 64,
+          "-1": 16,
+          "0": 1
+        },
+        {
+          "0": 81
+        }
+      ],
+      "structured_pivot_counts": [
+        {
+          "diagonal_update": 81,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        },
+        {
+          "diagonal_update": 81,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        }
+      ],
+      "structured_seconds": 0.00565932399877056,
+      "complete_matrix_seconds": 0.04037044200049422
+    },
+    {
+      "label": "small-3-False-3",
+      "source_alphabet": 3,
+      "first_support": [
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          1,
+          1
+        ]
+      ],
+      "second_support": [
+        [
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          1,
+          2,
+          0
+        ],
+        [
+          1,
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          0,
+          0
+        ],
+        [
+          1,
+          2,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          0,
+          2
+        ],
+        [
+          1,
+          2,
+          2,
+          0
+        ],
+        [
+          1,
+          2,
+          2,
+          1
+        ],
+        [
+          1,
+          2,
+          2,
+          2
+        ]
+      ],
+      "polynomial": 3,
+      "F4_coefficient": 2,
+      "profiles": [
+        {
+          "-2": 64,
+          "-1": 16,
+          "0": 1
+        },
+        {
+          "0": 81
+        }
+      ],
+      "structured_pivot_counts": [
+        {
+          "diagonal_update": 81,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        },
+        {
+          "diagonal_update": 81,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        }
+      ],
+      "structured_seconds": 0.0011072090001107426,
+      "complete_matrix_seconds": 0.04706204299873207
+    },
+    {
+      "label": "small-3-False-4",
+      "source_alphabet": 3,
+      "first_support": [
+        [
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          2,
+          0
+        ],
+        [
+          1,
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          1,
+          2,
+          2
+        ]
+      ],
+      "second_support": [
+        [
+          2,
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          1,
+          2
+        ],
+        [
+          2,
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          1,
+          1,
+          2
+        ]
+      ],
+      "polynomial": 5,
+      "F4_coefficient": 1,
+      "profiles": [
+        {
+          "-2": 65,
+          "-1": 15,
+          "0": 1
+        },
+        {
+          "0": 81
+        }
+      ],
+      "structured_pivot_counts": [
+        {
+          "diagonal_update": 81,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        },
+        {
+          "diagonal_update": 81,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        }
+      ],
+      "structured_seconds": 0.0017216960004589055,
+      "complete_matrix_seconds": 0.040997979000167106
+    },
+    {
+      "label": "small-3-False-5",
+      "source_alphabet": 3,
+      "first_support": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          0,
+          0
+        ],
+        [
+          1,
+          2,
+          0,
+          1
+        ]
+      ],
+      "second_support": [
+        [
+          1,
+          1,
+          2,
+          0
+        ],
+        [
+          1,
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2,
+          0
+        ],
+        [
+          1,
+          2,
+          2,
+          1
+        ],
+        [
+          1,
+          2,
+          2,
+          2
+        ]
+      ],
+      "polynomial": 3,
+      "F4_coefficient": 1,
+      "profiles": [
+        {
+          "-2": 64,
+          "-1": 16,
+          "0": 1
+        },
+        {
+          "0": 81
+        }
+      ],
+      "structured_pivot_counts": [
+        {
+          "diagonal_update": 81,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        },
+        {
+          "diagonal_update": 81,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        }
+      ],
+      "structured_seconds": 0.005894238000109908,
+      "complete_matrix_seconds": 0.04833106599835446
+    },
+    {
+      "label": "small-3-False-6",
+      "source_alphabet": 3,
+      "first_support": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          2
+        ]
+      ],
+      "second_support": [
+        [
+          2,
+          0,
+          2,
+          1
+        ],
+        [
+          2,
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          2,
+          2,
+          1
+        ]
+      ],
+      "polynomial": 6,
+      "F4_coefficient": 3,
+      "profiles": [
+        {
+          "-2": 65,
+          "-1": 16
+        },
+        {
+          "0": 81
+        }
+      ],
+      "structured_pivot_counts": [
+        {
+          "diagonal_update": 81,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        },
+        {
+          "diagonal_update": 81,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        }
+      ],
+      "structured_seconds": 0.001053869000315899,
+      "complete_matrix_seconds": 0.024078487000224413
+    },
+    {
+      "label": "small-3-False-7",
+      "source_alphabet": 3,
+      "first_support": [
+        [
+          0,
+          2,
+          1,
+          0
+        ],
+        [
+          0,
+          2,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          2,
+          0
+        ],
+        [
+          0,
+          2,
+          2,
+          1
+        ],
+        [
+          0,
+          2,
+          2,
+          2
+        ]
+      ],
+      "second_support": [
+        [
+          1,
+          0,
+          2,
+          1
+        ],
+        [
+          1,
+          0,
+          2,
+          2
+        ]
+      ],
+      "polynomial": 6,
+      "F4_coefficient": 1,
+      "profiles": [
+        {
+          "-2": 64,
+          "-1": 16,
+          "0": 1
+        },
+        {
+          "0": 81
+        }
+      ],
+      "structured_pivot_counts": [
+        {
+          "diagonal_update": 81,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        },
+        {
+          "diagonal_update": 81,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        }
+      ],
+      "structured_seconds": 0.005044336001446936,
+      "complete_matrix_seconds": 0.02432946600129071
+    },
+    {
+      "label": "five-0,0,0,36,1",
+      "source_alphabet": 5,
+      "first_support": [
+        [
+          0,
+          0,
+          2,
+          1
+        ],
+        [
+          0,
+          0,
+          3,
+          1
+        ],
+        [
+          0,
+          0,
+          2,
+          2
+        ],
+        [
+          0,
+          0,
+          3,
+          2
+        ],
+        [
+          0,
+          0,
+          2,
+          3
+        ],
+        [
+          0,
+          0,
+          3,
+          3
+        ],
+        [
+          0,
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          0,
+          3,
+          4
+        ]
+      ],
+      "second_support": [
+        [
+          0,
+          0,
+          2,
+          1
+        ],
+        [
+          0,
+          0,
+          3,
+          1
+        ],
+        [
+          0,
+          0,
+          2,
+          2
+        ],
+        [
+          0,
+          0,
+          3,
+          2
+        ],
+        [
+          0,
+          0,
+          2,
+          3
+        ],
+        [
+          0,
+          0,
+          3,
+          3
+        ],
+        [
+          0,
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          0,
+          3,
+          4
+        ]
+      ],
+      "polynomial": 73014444049,
+      "F4_coefficient": 1,
+      "profiles": [
+        {
+          "-32": 1,
+          "-16": 1,
+          "-15": 2,
+          "-14": 1,
+          "-13": 2,
+          "-12": 4,
+          "-11": 4,
+          "-10": 5,
+          "-9": 6,
+          "-8": 9,
+          "-7": 12,
+          "-6": 13,
+          "-5": 16,
+          "-4": 21,
+          "-3": 24,
+          "-2": 23,
+          "-1": 28,
+          "0": 32,
+          "1": 30,
+          "2": 32,
+          "3": 34,
+          "4": 38,
+          "5": 38,
+          "6": 34,
+          "7": 36,
+          "8": 35,
+          "9": 30,
+          "10": 23,
+          "11": 22,
+          "12": 19,
+          "13": 12,
+          "14": 10,
+          "15": 8,
+          "16": 7,
+          "17": 4,
+          "18": 2,
+          "19": 4,
+          "20": 2,
+          "24": 1
+        },
+        {
+          "0": 1,
+          "16": 1,
+          "17": 2,
+          "18": 1,
+          "19": 2,
+          "20": 4,
+          "21": 4,
+          "22": 5,
+          "23": 6,
+          "24": 9,
+          "25": 12,
+          "26": 13,
+          "27": 16,
+          "28": 21,
+          "29": 24,
+          "30": 23,
+          "31": 28,
+          "32": 32,
+          "33": 30,
+          "34": 32,
+          "35": 34,
+          "36": 38,
+          "37": 38,
+          "38": 34,
+          "39": 36,
+          "40": 35,
+          "41": 30,
+          "42": 24,
+          "43": 22,
+          "44": 19,
+          "45": 12,
+          "46": 10,
+          "47": 8,
+          "48": 6,
+          "49": 4,
+          "50": 2,
+          "51": 4,
+          "52": 2,
+          "56": 1
+        }
+      ],
+      "structured_pivot_counts": [
+        {
+          "diagonal_update": 625,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        },
+        {
+          "diagonal_update": 203,
+          "offdiagonal_to_arrow": 1,
+          "arrow_center": 1,
+          "arrow_leaf_diagonal": 405,
+          "arrow_leaf_column": 2,
+          "arrow_leaf_row": 13
+        }
+      ],
+      "structured_seconds": 0.19447643300009076,
+      "complete_matrix_seconds": 4.414686886999334
+    },
+    {
+      "label": "five-0,5,4,24,2",
+      "source_alphabet": 5,
+      "first_support": [
+        [
+          0,
+          0,
+          2,
+          1
+        ],
+        [
+          0,
+          0,
+          3,
+          1
+        ],
+        [
+          0,
+          0,
+          2,
+          2
+        ],
+        [
+          0,
+          0,
+          3,
+          2
+        ],
+        [
+          0,
+          0,
+          2,
+          3
+        ],
+        [
+          0,
+          0,
+          3,
+          3
+        ],
+        [
+          0,
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          0,
+          3,
+          4
+        ]
+      ],
+      "second_support": [
+        [
+          0,
+          2,
+          2,
+          2
+        ],
+        [
+          0,
+          4,
+          2,
+          2
+        ],
+        [
+          0,
+          2,
+          4,
+          2
+        ],
+        [
+          0,
+          4,
+          4,
+          2
+        ],
+        [
+          0,
+          2,
+          2,
+          4
+        ],
+        [
+          0,
+          4,
+          2,
+          4
+        ],
+        [
+          0,
+          2,
+          4,
+          4
+        ],
+        [
+          0,
+          4,
+          4,
+          4
+        ]
+      ],
+      "polynomial": 269488144,
+      "F4_coefficient": 2,
+      "profiles": [
+        {
+          "-20": 1,
+          "-16": 1,
+          "-15": 2,
+          "-14": 1,
+          "-13": 2,
+          "-12": 4,
+          "-11": 4,
+          "-10": 5,
+          "-9": 6,
+          "-8": 9,
+          "-7": 12,
+          "-6": 13,
+          "-5": 16,
+          "-4": 21,
+          "-3": 24,
+          "-2": 23,
+          "-1": 28,
+          "0": 32,
+          "1": 30,
+          "2": 32,
+          "3": 34,
+          "4": 38,
+          "5": 38,
+          "6": 34,
+          "7": 36,
+          "8": 35,
+          "9": 30,
+          "10": 24,
+          "11": 22,
+          "12": 18,
+          "13": 13,
+          "14": 10,
+          "15": 8,
+          "16": 7,
+          "17": 3,
+          "18": 2,
+          "19": 4,
+          "20": 2,
+          "24": 1
+        },
+        {
+          "7": 1,
+          "16": 1,
+          "17": 2,
+          "18": 1,
+          "19": 2,
+          "20": 4,
+          "21": 4,
+          "22": 5,
+          "23": 6,
+          "24": 9,
+          "25": 12,
+          "26": 13,
+          "27": 16,
+          "28": 21,
+          "29": 24,
+          "30": 23,
+          "31": 28,
+          "32": 32,
+          "33": 30,
+          "34": 32,
+          "35": 34,
+          "36": 38,
+          "37": 38,
+          "38": 34,
+          "39": 36,
+          "40": 35,
+          "41": 30,
+          "42": 24,
+          "43": 22,
+          "44": 19,
+          "45": 12,
+          "46": 10,
+          "47": 7,
+          "48": 8,
+          "49": 4,
+          "50": 2,
+          "51": 4,
+          "52": 1,
+          "56": 1
+        }
+      ],
+      "structured_pivot_counts": [
+        {
+          "diagonal_update": 625,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        },
+        {
+          "diagonal_update": 299,
+          "offdiagonal_to_arrow": 1,
+          "arrow_center": 1,
+          "arrow_leaf_diagonal": 309,
+          "arrow_leaf_column": 5,
+          "arrow_leaf_row": 10
+        }
+      ],
+      "structured_seconds": 0.19192867300080252,
+      "complete_matrix_seconds": 3.811305244000323
+    },
+    {
+      "label": "five-5,9,0,32,3",
+      "source_alphabet": 5,
+      "first_support": [
+        [
+          0,
+          2,
+          2,
+          2
+        ],
+        [
+          0,
+          4,
+          2,
+          2
+        ],
+        [
+          0,
+          2,
+          4,
+          2
+        ],
+        [
+          0,
+          4,
+          4,
+          2
+        ],
+        [
+          0,
+          2,
+          2,
+          4
+        ],
+        [
+          0,
+          4,
+          2,
+          4
+        ],
+        [
+          0,
+          2,
+          4,
+          4
+        ],
+        [
+          0,
+          4,
+          4,
+          4
+        ]
+      ],
+      "second_support": [
+        [
+          4,
+          2,
+          2,
+          2
+        ],
+        [
+          4,
+          4,
+          2,
+          2
+        ],
+        [
+          4,
+          2,
+          4,
+          2
+        ],
+        [
+          4,
+          4,
+          4,
+          2
+        ],
+        [
+          4,
+          2,
+          2,
+          4
+        ],
+        [
+          4,
+          4,
+          2,
+          4
+        ],
+        [
+          4,
+          2,
+          4,
+          4
+        ],
+        [
+          4,
+          4,
+          4,
+          4
+        ]
+      ],
+      "polynomial": 4294967297,
+      "F4_coefficient": 3,
+      "profiles": [
+        {
+          "-20": 1,
+          "-16": 1,
+          "-15": 2,
+          "-14": 1,
+          "-13": 2,
+          "-12": 4,
+          "-11": 4,
+          "-10": 5,
+          "-9": 6,
+          "-8": 9,
+          "-7": 12,
+          "-6": 13,
+          "-5": 16,
+          "-4": 21,
+          "-3": 24,
+          "-2": 23,
+          "-1": 28,
+          "0": 32,
+          "1": 30,
+          "2": 32,
+          "3": 34,
+          "4": 38,
+          "5": 38,
+          "6": 34,
+          "7": 36,
+          "8": 35,
+          "9": 30,
+          "10": 24,
+          "11": 22,
+          "12": 19,
+          "13": 12,
+          "14": 9,
+          "15": 9,
+          "16": 7,
+          "17": 4,
+          "18": 2,
+          "19": 3,
+          "20": 2,
+          "62": 1
+        },
+        {
+          "10": 1,
+          "16": 1,
+          "17": 2,
+          "18": 1,
+          "19": 2,
+          "20": 4,
+          "21": 4,
+          "22": 5,
+          "23": 6,
+          "24": 9,
+          "25": 12,
+          "26": 13,
+          "27": 16,
+          "28": 21,
+          "29": 24,
+          "30": 23,
+          "31": 28,
+          "32": 32,
+          "33": 30,
+          "34": 32,
+          "35": 34,
+          "36": 38,
+          "37": 38,
+          "38": 34,
+          "39": 36,
+          "40": 35,
+          "41": 30,
+          "42": 24,
+          "43": 22,
+          "44": 19,
+          "45": 12,
+          "46": 9,
+          "47": 9,
+          "48": 7,
+          "49": 4,
+          "50": 2,
+          "51": 3,
+          "52": 2,
+          "96": 1
+        }
+      ],
+      "structured_pivot_counts": [
+        {
+          "diagonal_update": 625,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        },
+        {
+          "diagonal_update": 1,
+          "offdiagonal_to_arrow": 1,
+          "arrow_center": 1,
+          "arrow_leaf_diagonal": 613,
+          "arrow_leaf_column": 4,
+          "arrow_leaf_row": 5
+        }
+      ],
+      "structured_seconds": 0.09738355400077126,
+      "complete_matrix_seconds": 3.7931063500000164
+    },
+    {
+      "label": "five-10,14,8,12,2",
+      "source_alphabet": 5,
+      "first_support": [
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "second_support": [
+        [
+          4,
+          0,
+          0,
+          0
+        ]
+      ],
+      "polynomial": 1118464,
+      "F4_coefficient": 2,
+      "profiles": [
+        {
+          "-20": 1,
+          "-16": 1,
+          "-15": 2,
+          "-14": 1,
+          "-13": 2,
+          "-12": 4,
+          "-11": 4,
+          "-10": 5,
+          "-9": 6,
+          "-8": 9,
+          "-7": 12,
+          "-6": 13,
+          "-5": 16,
+          "-4": 21,
+          "-3": 24,
+          "-2": 23,
+          "-1": 28,
+          "0": 32,
+          "1": 30,
+          "2": 32,
+          "3": 34,
+          "4": 38,
+          "5": 38,
+          "6": 34,
+          "7": 36,
+          "8": 35,
+          "9": 30,
+          "10": 24,
+          "11": 22,
+          "12": 19,
+          "13": 12,
+          "14": 10,
+          "15": 8,
+          "16": 6,
+          "17": 4,
+          "18": 2,
+          "19": 4,
+          "20": 1,
+          "24": 2
+        },
+        {
+          "12": 1,
+          "16": 1,
+          "17": 2,
+          "18": 1,
+          "19": 2,
+          "20": 4,
+          "21": 4,
+          "22": 5,
+          "23": 6,
+          "24": 9,
+          "25": 12,
+          "26": 13,
+          "27": 16,
+          "28": 21,
+          "29": 24,
+          "30": 23,
+          "31": 28,
+          "32": 32,
+          "33": 30,
+          "34": 32,
+          "35": 34,
+          "36": 38,
+          "37": 38,
+          "38": 34,
+          "39": 36,
+          "40": 35,
+          "41": 30,
+          "42": 24,
+          "43": 22,
+          "44": 19,
+          "45": 12,
+          "46": 10,
+          "47": 8,
+          "48": 6,
+          "49": 4,
+          "50": 2,
+          "51": 4,
+          "52": 1,
+          "56": 2
+        }
+      ],
+      "structured_pivot_counts": [
+        {
+          "diagonal_update": 625,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        },
+        {
+          "diagonal_update": 625,
+          "offdiagonal_to_arrow": 0,
+          "arrow_center": 0,
+          "arrow_leaf_diagonal": 0,
+          "arrow_leaf_column": 0,
+          "arrow_leaf_row": 0
+        }
+      ],
+      "structured_seconds": 0.12464595900019049,
+      "complete_matrix_seconds": 3.9462148779985
+    },
+    {
+      "label": "five-12,12,0,2,1",
+      "source_alphabet": 5,
+      "first_support": [
+        [
+          2,
+          0,
+          0,
+          0
+        ]
+      ],
+      "second_support": [
+        [
+          2,
+          0,
+          0,
+          0
+        ]
+      ],
+      "polynomial": 5,
+      "F4_coefficient": 1,
+      "profiles": [
+        {
+          "-16": 1,
+          "-15": 2,
+          "-14": 1,
+          "-13": 2,
+          "-12": 4,
+          "-11": 4,
+          "-10": 5,
+          "-9": 6,
+          "-8": 9,
+          "-7": 12,
+          "-6": 13,
+          "-5": 16,
+          "-4": 21,
+          "-3": 24,
+          "-2": 24,
+          "-1": 28,
+          "0": 32,
+          "1": 30,
+          "2": 32,
+          "3": 34,
+          "4": 38,
+          "5": 38,
+          "6": 34,
+          "7": 36,
+          "8": 35,
+          "9": 30,
+          "10": 24,
+          "11": 22,
+          "12": 19,
+          "13": 12,
+          "14": 9,
+          "15": 8,
+          "16": 6,
+          "17": 4,
+          "18": 2,
+          "19": 4,
+          "20": 2,
+          "24": 1,
+          "32": 1
+        },
+        {
+          "6": 1,
+          "16": 1,
+          "17": 2,
+          "18": 1,
+          "19": 2,
+          "20": 4,
+          "21": 4,
+          "22": 5,
+          "23": 6,
+          "24": 9,
+          "25": 12,
+          "26": 13,
+          "27": 16,
+          "28": 21,
+          "29": 24,
+          "30": 23,
+          "31": 28,
+          "32": 32,
+          "33": 30,
+          "34": 32,
+          "35": 34,
+          "36": 38,
+          "37": 38,
+          "38": 34,
+          "39": 36,
+          "40": 35,
+          "41": 30,
+          "42": 24,
+          "43": 22,
+          "44": 19,
+          "45": 12,
+          "46": 9,
+          "47": 8,
+          "48": 6,
+          "49": 4,
+          "50": 2,
+          "51": 4,
+          "52": 2,
+          "56": 1,
+          "88": 1
+        }
+      ],
+      "structured_pivot_counts": [
+        {
+          "diagonal_update": 143,
+          "offdiagonal_to_arrow": 1,
+          "arrow_center": 1,
+          "arrow_leaf_diagonal": 473,
+          "arrow_leaf_column": 4,
+          "arrow_leaf_row": 3
+        },
+        {
+          "diagonal_update": 0,
+          "offdiagonal_to_arrow": 1,
+          "arrow_center": 1,
+          "arrow_leaf_diagonal": 613,
+          "arrow_leaf_column": 4,
+          "arrow_leaf_row": 6
+        }
+      ],
+      "structured_seconds": 0.04484762900028727,
+      "complete_matrix_seconds": 3.9111902230015403
+    },
+    {
+      "label": "five-1,6,6,18,1",
+      "source_alphabet": 5,
+      "first_support": [
+        [
+          1,
+          0,
+          2,
+          1
+        ],
+        [
+          1,
+          0,
+          3,
+          1
+        ],
+        [
+          1,
+          0,
+          2,
+          2
+        ],
+        [
+          1,
+          0,
+          3,
+          2
+        ],
+        [
+          1,
+          0,
+          2,
+          3
+        ],
+        [
+          1,
+          0,
+          3,
+          3
+        ],
+        [
+          1,
+          0,
+          2,
+          4
+        ],
+        [
+          1,
+          0,
+          3,
+          4
+        ]
+      ],
+      "second_support": [
+        [
+          1,
+          2,
+          2,
+          2
+        ],
+        [
+          1,
+          4,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          4,
+          2
+        ],
+        [
+          1,
+          4,
+          4,
+          2
+        ],
+        [
+          1,
+          2,
+          2,
+          4
+        ],
+        [
+          1,
+          4,
+          2,
+          4
+        ],
+        [
+          1,
+          2,
+          4,
+          4
+        ],
+        [
+          1,
+          4,
+          4,
+          4
+        ]
+      ],
+      "polynomial": 20971840,
+      "F4_coefficient": 1,
+      "profiles": [
+        {
+          "-16": 2,
+          "-15": 2,
+          "-14": 1,
+          "-13": 2,
+          "-12": 4,
+          "-11": 4,
+          "-10": 5,
+          "-9": 6,
+          "-8": 9,
+          "-7": 12,
+          "-6": 13,
+          "-5": 16,
+          "-4": 21,
+          "-3": 24,
+          "-2": 23,
+          "-1": 28,
+          "0": 32,
+          "1": 30,
+          "2": 32,
+          "3": 34,
+          "4": 38,
+          "5": 38,
+          "6": 34,
+          "7": 36,
+          "8": 35,
+          "9": 30,
+          "10": 23,
+          "11": 22,
+          "12": 20,
+          "13": 12,
+          "14": 10,
+          "15": 8,
+          "16": 6,
+          "17": 3,
+          "18": 2,
+          "19": 4,
+          "20": 4
+        },
+        {
+          "16": 1,
+          "17": 2,
+          "18": 1,
+          "19": 3,
+          "20": 4,
+          "21": 4,
+          "22": 5,
+          "23": 6,
+          "24": 9,
+          "25": 12,
+          "26": 13,
+          "27": 16,
+          "28": 21,
+          "29": 24,
+          "30": 23,
+          "31": 28,
+          "32": 32,
+          "33": 30,
+          "34": 32,
+          "35": 34,
+          "36": 38,
+          "37": 38,
+          "38": 34,
+          "39": 36,
+          "40": 35,
+          "41": 29,
+          "42": 24,
+          "43": 23,
+          "44": 19,
+          "45": 12,
+          "46": 10,
+          "47": 7,
+          "48": 7,
+          "49": 4,
+          "50": 2,
+          "51": 4,
+          "52": 2,
+          "82": 1
+        }
+      ],
+      "structured_pivot_counts": [
+        {
+          "diagonal_update": 4,
+          "offdiagonal_to_arrow": 1,
+          "arrow_center": 1,
+          "arrow_leaf_diagonal": 607,
+          "arrow_leaf_column": 8,
+          "arrow_leaf_row": 4
+        },
+        {
+          "diagonal_update": 6,
+          "offdiagonal_to_arrow": 1,
+          "arrow_center": 1,
+          "arrow_leaf_diagonal": 599,
+          "arrow_leaf_column": 7,
+          "arrow_leaf_row": 11
+        }
+      ],
+      "structured_seconds": 0.07308634299988626,
+      "complete_matrix_seconds": 4.128656722999949
+    }
+  ],
+  "source_sha256": {
+    "check_pure_two_copy_frames.py": "aa0a9c20beb7c423410a15b26693712b7a8f16a2e999e0d353a4504c08549804",
+    "pure_two_copy_frames.py": "17c478a4333c0b12fa049b60c1a6c1438a0f80d4ab8d57603a3cee233d0ece2a",
+    "native_rank_one_smith_f4.cpp": "92f37ba7b46e82a6bb3d00874a73a42f4e49b002f967f05056cb42ed77baa9e9",
+    "native_rank_one_smith_f4.py": "f4ab4a1fe764e255849a83a54672018fb91e98503e759c663ad4d963fbd21fcf",
+    "two_copy_crossing_couplings.py": "aebf167991a2d4f64824ca4207a4e7f4a116e85aa484b3b2e81e18cafc3df1ae",
+    "f4_recentered_lattices.py": "64e72e1a3a2893ee1c36a8f65064b25a7f6c33dd1c519187b28cd80ea22d2d78",
+    "native_matrix_smith_f4.py": "c08da20f1938a371b438e32fbc6a8f6766b48c2cfee5bcd1c956ce137dc70203",
+    "native_matrix_smith_f4.cpp": "5ec995cd04563c2fa99b69afd71bf476d5ca885f1f90377490c30e5a1a55f330",
+    "native_rectangular_smith_f4.cpp": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6"
+  }
+}
