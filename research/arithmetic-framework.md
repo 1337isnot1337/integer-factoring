@@ -113,8 +113,11 @@ the larger-box successes have no uniform guarantee.
 The [bounded smooth-norm interface](bounded-smooth-norm.md) now proves the
 exact arithmetic characterization and implements conversion of supplied
 witnesses. Its exact divisor step costs 2^O(b/log b); locating a witness
-quickly remains open. The next work is deterministic arithmetic search
-within that interface. The prime-form generator requirement remains a
+quickly remains open. For relation rows, the
+[supplied-norm word theorem](smooth-norm-relations.md) removes balancing
+entirely. The [quantitative localization target](smooth-norm-localization.md)
+fixes the biased generator-power family and a sufficient unproved short-box
+statement, with the conditional bit-cost transfer. The prime-form generator requirement remains a
 separate obligation for complete two-torsion recovery. The
 [density/index transfer](arithmetic-density-lift.md) gives an alternative:
 relations on the possibly proper small factor-base subgroup suffice for a

@@ -982,6 +982,10 @@ constructs dominant relation certificates for 60-bit and 80-bit inputs and
 recovers proper factors without class enumeration. Replay both certificates
 and two smaller-box exhaustion controls with `make verify-arithmetic-sieve`;
 success in a larger finite box is not a uniform factoring-time bound.
+The [quantitative localization target](research/smooth-norm-localization.md)
+now specifies the required short-box theorem and its conditional complete
+cost. The localized smoothness statement and splitting coverage are both
+unproved; the existing class-group density theorem supplies neither for free.
 
 The [Bell-diagonal seed construction](research/bell-diagonal-crossings.md)
 gives exact two-cut transforms and excludes its complete symmetric
