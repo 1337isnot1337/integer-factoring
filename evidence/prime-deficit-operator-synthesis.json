@@ -1,0 +1,37 @@
+{
+  "status": "Exact finite-frame affine synthesis controls; no pressure improvement claim.",
+  "literal_transformed_entry_equalities": 1692,
+  "complete_Smith_prefix_controls": 84,
+  "complete_affine_assignments_per_query": 19683,
+  "exhaustive_affine_target_queries": 27,
+  "feasible_exhaustive_queries": 5,
+  "nontrivial_infinity_flag_witnesses": 6,
+  "original_physical_controls": [
+    {
+      "prime": 3,
+      "parent": 3,
+      "selected": [
+        0
+      ],
+      "ramification": 1,
+      "aggregate_charge": -1,
+      "matrix_order": 81,
+      "endpoint_coefficients": 959,
+      "coefficient_variables": 9
+    },
+    {
+      "prime": 2,
+      "parent": 4,
+      "selected": [
+        0,
+        2
+      ],
+      "ramification": 3,
+      "aggregate_charge": 2,
+      "matrix_order": 64,
+      "endpoint_coefficients": 690,
+      "coefficient_variables": 18
+    }
+  ],
+  "insufficient_precision_rejection": true
+}

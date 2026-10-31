@@ -276,6 +276,15 @@ completed at interval 26, including interior selections. Their 9,032
 kernel/geometry cases retain the Gaussian best value in the recorded
 finite grids and refinements.
 
+The [prime-field affine solver](research/prime-deficit-affine-operator-synthesis.md)
+then removes the fixed-projector restriction. It gives independent
+coefficients to all 19 qutrit occupation-preserving entries, with exact
+endpoint equations and a checked source-precision bound. Four searches
+completed 242 prescribed paths and 4,985 exact affine queries, including
+nontrivial infinity flags; no returned profile improved the recorded
+pressure. These paths do not exhaust every polynomial coefficient family.
+`make verify-prime-deficit-affine-synthesis` replays its independent gates.
+
 The complementary [above-power construction](research/above-power-identity-operator-reduction.md)
 handles terminal directions at `n=2^k+1` by retaining the existing,
 unchanged identity direction zero. Its local core and Weyl matrix are

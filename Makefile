@@ -510,3 +510,7 @@ verify-global-gaussian-floor: verify-charged-gaussian-floor verify-exterior-gaus
 	python3 tools/check_global_charged_gaussian_floor.py
 
 verify-global-one-mode-filters: verify-global-gaussian-floor verify-one-mode-laurent-filters verify-charged-one-mode-filters
+
+.PHONY: verify-prime-deficit-affine-synthesis
+verify-prime-deficit-affine-synthesis:
+	python3 tools/check_prime_deficit_operator_synthesis.py

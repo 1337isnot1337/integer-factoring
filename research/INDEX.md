@@ -18,6 +18,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 - [Completed above-power operator catalogue](above-power-operator-searches.md): all 42,560 specified interval-33 projector kernels yield 1,111 exact profile classes, with complete numerical grid and refinement records.
 
+- [Prime-field affine operator synthesis](prime-deficit-affine-operator-synthesis.md): all occupation-preserving qutrit coefficient entries become exact affine unknowns, with strict identity endpoints, explicit source-precision guards, constant infinity flags, and four completed finite path searches.
+
 - [Operators on arbitrary one-deficit selections](arbitrary-one-deficit-operator-search.md): a compatible selected-index API with full original controls and four complete parent-exponent qutrit catalogues.
 
 - [Energy-conjugated one-deficit operators](deficit-energy-conjugated-operators.md): selected-index monomial conjugation preserves the strict endpoint and charges its complete Laurent support; four further qutrit catalogues completed.
