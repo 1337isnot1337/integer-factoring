@@ -66,6 +66,13 @@ verify-symmetric-prime-filters:
 verify-symmetric-filter-catalogues:
 	python3 tools/check_symmetric_filter_catalogues.py --output /tmp/integer-factoring-symmetric-catalogue-replay.json
 
+.PHONY: verify-gaussian-physical-frames verify-gaussian-coupled-gates
+verify-gaussian-physical-frames:
+	python3 tools/check_reflection_gaussian_physical_frames.py --output /tmp/integer-factoring-gaussian-physical-frames-replay.json
+
+verify-gaussian-coupled-gates:
+	python3 tools/check_reflection_gaussian_coupled_gates.py --output /tmp/integer-factoring-gaussian-coupled-gates-replay.json
+
 .PHONY: verify-frontier-extensions
 verify-frontier-extensions:
 	python3 tools/check_all_scale_balanced_obstruction.py

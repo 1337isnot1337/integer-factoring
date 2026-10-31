@@ -129,6 +129,14 @@ Its explicit ternary certificate is weaker than the half-rate crossing;
 the transfer supplies a different criterion for future seeds. Run
 `make verify-multipoint-hermite` for full reconstruction and jet-rank checks.
 
+The [growing physical-frame construction](research/growing-gaussian-physical-frames.md)
+and [coupled quadratic gates](research/coupled-gaussian-gates.md) preserve strict
+endpoints while changing a number of modes that grows with the interval.
+Their exact Clifford updates retain determinant-mean changes and rational
+denominator costs. Original-tensor replays pass; the completed natural-gauge
+frame searches found no gain. Run `make verify-gaussian-physical-frames
+verify-gaussian-coupled-gates` for the full controls.
+
 The [Clifford Smith reduction](research/clifford-gaussian-smith-profiles.md)
 recovers every Smith order of an invertible Gaussian operator on `M`
 fermionic modes from a matrix of order `2M`. An elementary characteristic-two

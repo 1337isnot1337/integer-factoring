@@ -16,6 +16,10 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Growing Gaussian physical frames](growing-gaussian-physical-frames.md): endpoint-trivial creation and annihilation words may change a growing fraction of modes, with arbitrary independent mode heights, complete degree costs, and full original-tensor controls.
+
+- [Coupled Gaussian gates](coupled-gaussian-gates.md): cross-letter quadratic operations have an exact rank-two Clifford update with a determinant-mean correction; all rational denominator costs and original-Fock profiles are retained.
+
 - [Symmetric filters in every prime characteristic](symmetric-prime-multilevel-filters.md): Vandermonde compression retains complete digit multiplicities, endpoint signs, exact polynomial feasibility, and tensor costs at actual physical energies.
 
 - [Completed symmetric tile catalogues](symmetric-tiled-filter-searches.md): 3,830 exact polynomial profiles and 32 full positive-root searches across binary and qutrit intervals, with every saved witness reconstructed and all best points selecting the baseline.
