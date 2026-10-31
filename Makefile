@@ -355,3 +355,12 @@ verify-raw-core-masks:
 .PHONY: verify-f4-filter-catalogue
 verify-f4-filter-catalogue:
 	python3 tools/check_f4_filter_catalogue.py
+
+.PHONY: verify-reflection-hot-grid verify-reflection-hot-grid-exhaustive
+verify-reflection-hot-grid:
+	python3 tools/check_reflection_hot_core_grid.py
+	python3 tools/reflection_hot_core_uniform.py
+
+verify-reflection-hot-grid-exhaustive:
+	python3 tools/check_reflection_hot_core_grid.py --exhaustive
+	python3 tools/reflection_hot_core_uniform.py
