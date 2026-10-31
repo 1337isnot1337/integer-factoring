@@ -16,6 +16,10 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Symmetric filters in every prime characteristic](symmetric-prime-multilevel-filters.md): Vandermonde compression retains complete digit multiplicities, endpoint signs, exact polynomial feasibility, and tensor costs at actual physical energies.
+
+- [Completed symmetric tile catalogues](symmetric-tiled-filter-searches.md): 3,830 exact polynomial profiles and 32 full positive-root searches across binary and qutrit intervals, with every saved witness reconstructed and all best points selecting the baseline.
+
 - [Universal binary Smith-pressure floor](universal-binary-smith-floor.md): every Laurent-polynomial binary crossing seed, every coefficient field, arbitrary degree, all regular frames, and all independent physical-letter heights have strictly positive critical pressure; shared minors and an exact 421-leaf compact certificate close this entire two-place Smith route.
 
 - [Symmetric multilevel filter synthesis](symmetric-multilevel-filter-synthesis.md): occupation-weight compression and exact tensorization preserve full degree costs and actual physical energies; a literal four-mode filter gives strict natural-charge relative gains without a better full crossing root.

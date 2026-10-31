@@ -100,6 +100,13 @@ inequality. This closes the binary higher-degree and row-frame search
 route without changing the achieved factoring score. Run
 `make verify-binary-smith-floor` for the exact certificate and full-minor controls.
 
+The [prime-characteristic symmetric transform](research/symmetric-prime-multilevel-filters.md)
+retains all digit multiplicities and endpoint signs while compressing a
+correlated block to occupation weights. Four [completed tile catalogues](research/symmetric-tiled-filter-searches.md)
+contain 3,830 exact profiles and 32 complete cost searches across binary
+and qutrit intervals; every best point still selected the baseline. Run
+`make verify-symmetric-prime-filters verify-symmetric-filter-catalogues`.
+
 The [symmetric multilevel filter construction](research/symmetric-multilevel-filter-synthesis.md)
 compresses a correlated binary block to one polynomial per occupation weight.
 Its exact tensor rule permits different filters on disjoint physical blocks.

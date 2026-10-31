@@ -1,0 +1,24 @@
+{
+  "status": "Prime-weight compression agrees with the original digit transform, endpoints, and exact feasibility.",
+  "scope": "Constructive prime-state symmetric multilevel filters; no factoring exponent improvement.",
+  "exact_baseline_and_endpoint_sign_controls": 18,
+  "nonconstant_original_digit_state_controls": 655,
+  "uncompressed_feasibility_comparisons": 48,
+  "synthesized_original_state_controls": 26,
+  "different_block_tensor_controls": {
+    "prime": 3,
+    "different_block_full_states": 9,
+    "unequal_physical_mode_energies": [
+      5,
+      1
+    ],
+    "exact_cost_factorizations": 6
+  },
+  "source_sha256": {
+    "symmetric_prime_filter_synthesis.py": "aba9baf531ac69ddf4c33c4ef1cdbebc6e41ce3608212bff9ccd59a6cc61ea0d",
+    "check_symmetric_prime_filter_synthesis.py": "c6bd4c1ab1b510df445c3d5f74fbf492ed1d125c1f0f9d92c05c420a0b147eb4",
+    "joint_prime_filter_synthesis.py": "f04df9434773b8094c4e0a0f40fb6aa131ca5a55a66a6bfeab2957b9ff99a7f6",
+    "prime_power_identity_filters.py": "c59ea1e5a65db42764cb855352c808f8e6aafc55edcaf9aa20f2f8dc0911a227",
+    "polynomial_state_filter_synthesis.py": "720e4bc11d71d92166535192f132e9c4b95b99a32fe91f8c0e34d6e1ddf5acc9"
+  }
+}
