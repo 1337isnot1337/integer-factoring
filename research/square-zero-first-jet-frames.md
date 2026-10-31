@@ -115,7 +115,12 @@ physical block. The zero upper-right block forces its selected
 The matrices `G_0,H_0` preserve the reflection symplectic form. The
 selected-minor homology representation proved in Section 2 of the
 uniform construction is multiplicative. Its two selected-minor
-matrices are therefore inverses. Calling the first one `Q` proves
+matrices are therefore inverses. In the literal implementation order,
+the selected rows are `(v,y)` and columns are `(u,x)`. Since the
+one-particle factors are symmetric, the factor on `(x,y)` is
+`Q=rho(H_0)`, while the factor on `(u,v)` is `rho(G_0)=Q^(-1)`.
+For the polynomial diagonal blocks, the corresponding factors are
+`rho((1+w)H_M)` and `rho((1+w)G_M)`. Thus the constant factorization is
 
 \[
  T(0;x,y,u,v)=Q_{x,y}(Q^{-1})_{u,v}.

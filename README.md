@@ -141,6 +141,14 @@ power-of-two reflection alphabet. The
 also handles arbitrary ranks on the four- and sixteen-letter seeds.
 The complete [dense rank-one catalogue](research/dense-rank-one-coupled-frames.md)
 contains 5,355 generators and 7,176 distinct polynomial tensors over `F4`.
+The [uniform physical-matrix criterion](research/uniform-reflection-jet-criterion.md)
+decides every pole up to half the reflection interval from low coefficients
+of a `q` by `q` matrix. Its proof works at every interval, and an exact
+256-letter control constructs those matrices without a full four-leg tensor.
+The [completed coordinate and dense searches](research/reflection-coupled-search-checkpoint.md)
+retain all outcomes and independently replay their winners. A separate
+exact affine combination changes the cut determinant and creates two
+new singular places, opening a mixed-place search beyond physical frames.
 
 For two fixed ternary bases with uniform paired types, an
 [exact minor certificate](research/ternary-uniform-gauge-majorization.md)
@@ -177,6 +185,8 @@ make verify-physical-frames # Exact polynomial and coupled rational physical fra
 make verify-ternary-majorization # Sharp uniform-type gauge certificates for two bases
 make verify-square-zero-frames # All-size first-jet controls and exact pole-two criterion
 make verify-dense-coupled-frames # Complete rank-one catalogue and independent Laurent replay
+make verify-uniform-reflection-jets # All-size physical-jet criterion, including 256 letters
+make verify-coupled-searches # Completed search replays and exact affine determinant change
 make verify-schur-fermion # Complete Schur entry formulas and exact comparisons
 make verify-schur-central # Hook-residue identities and full Schur ranks through weight 8
 make verify-schur-gaussian # Exact digit reduction and fixed Gaussian crossing seed

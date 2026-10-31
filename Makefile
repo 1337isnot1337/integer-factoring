@@ -714,6 +714,15 @@ verify-joint-residue-retiming:
 .PHONY: verify-weighted-carries
 .PHONY: verify-square-zero-frames verify-dense-coupled-frames
 .PHONY: verify-constant-carry-weights
+.PHONY: verify-uniform-reflection-jets verify-coupled-searches
+verify-uniform-reflection-jets:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_reflection_low_jet_frames.py --include-interval16 --output /tmp/integer-factoring-uniform-reflection-jets-replay.json
+
+verify-coupled-searches:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_reflection4_coupled_search.py --output /tmp/integer-factoring-coordinate-search-replay.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_dense_rank_one_pressure.py --output /tmp/integer-factoring-dense-pressure-replay.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_affine_coupled_frames.py --output /tmp/integer-factoring-affine-frames-replay.json
+
 verify-constant-carry-weights:
 	python3 tools/check_constant_field_carry_weights.py --output /tmp/integer-factoring-constant-carry-weights-replay.json
 	python3 tools/check_first_jet_carry_weights.py --output /tmp/integer-factoring-first-jet-carry-weights-replay.json

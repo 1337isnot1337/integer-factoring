@@ -1,0 +1,142 @@
+{
+  "complete_finite_profiles": 4,
+  "controls": [
+    {
+      "base_ranks": [
+        16,
+        16
+      ],
+      "changed_profiles": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          2,
+          2,
+          2,
+          4
+        ]
+      ],
+      "changed_ranks": [
+        16,
+        11
+      ],
+      "point": 2
+    },
+    {
+      "base_ranks": [
+        16,
+        16
+      ],
+      "changed_profiles": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          2,
+          2,
+          2,
+          4
+        ]
+      ],
+      "changed_ranks": [
+        16,
+        11
+      ],
+      "point": 3
+    }
+  ],
+  "degree": 24,
+  "endpoint_entries": 256,
+  "frame_metadata": [
+    {
+      "pole": 1,
+      "scalar": 2,
+      "source": 1,
+      "target": 2
+    },
+    {
+      "pole": 1,
+      "scalar": 3,
+      "source": 1,
+      "target": 2
+    }
+  ],
+  "independent_coefficient_entries": 256,
+  "monomial_content": 0,
+  "scope": "exact affine strict path and determinant change; no pressure certificate",
+  "seed_sha256": "e66cce68f3e788318c1f375ac249d4b207963db9c8c937bfa4888b339dfa134e",
+  "source_sha256": {
+    "check_affine_coupled_frames.py": "db1752dd5ada6147564bc83a8d4c116530fab3d60f09ea3425c1f8d9e85867a3",
+    "reflection_laurent_physical_frames.py": "e4396ed1a78303893adce6a4f931d8a1866f79ae09fc9f8b0ac6aea164352563",
+    "search_affine_coupled_reflection_frames.py": "bf4d360a7da1554e03858f1876d231fcb25f7e78f3abb5629e623d64d87481c6",
+    "square_zero_coupled_reflection_frames.py": "69e1e72251b3a1d7c51e710de717dee73079e2a7c878a1cac4abff0d43d990bf",
+    "weighted_smith_oracle_f4.py": "d277f46caa98dab48d243af64c18e42e09e917bf1e862057a55cb35f74a6d572"
+  },
+  "status": "passed",
+  "unchanged_leading_entries": 256,
+  "word": [
+    [
+      56,
+      2
+    ],
+    [
+      58,
+      2
+    ]
+  ]
+}
