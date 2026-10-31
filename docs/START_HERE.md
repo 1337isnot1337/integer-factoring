@@ -3,6 +3,9 @@
 You can contribute a small correction, reproduce a check, review one argument,
 or develop a construction. You do not need a new factoring bound to help.
 
+Use the [glossary](GLOSSARY.md) for the main proof terms and notation before
+reading the research notes.
+
 ## Run the basic checks
 
 Install Python 3, Git, and Make, then run:
