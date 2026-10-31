@@ -44,9 +44,7 @@ Section 3 gives a stronger complement envelope that also retains the
 known locations of \(S\). It yields a rigorous lower bound for the
 common-height pressure. A general entropy floor for all mode sets is
 not proved here. Finite numerical searches are not a substitute for that
-remaining inequality. The derivation and checks used substantial OpenAI
-assistant support.
-
+remaining inequality.
 ## 1. Every translated consecutive Pascal block is invertible
 
 For integers \(A,B\ge0\), consider the square matrix

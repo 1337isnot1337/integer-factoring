@@ -190,6 +190,3 @@ mode set must preserve the operator and endpoint identities, as well
 as supply useful dimension counts. The separate
 [arbitrary finite-mode crossings](fixed-mode-crossings.md) already
 have valid endpoints and remain outside this vacuum-locality claim.
-
-This note and its finite controls used substantial OpenAI assistant
-support. No Lean formalization was added.

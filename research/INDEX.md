@@ -16,8 +16,11 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 - [Mixed-field rectangular repair](rectangular-f4-repair.md): an explicit two-parameter height-triangular correction over every characteristic-two field, a uniform simple-pole bound, and four exact mixed-F4 constructors.
 - [Bounded rectangular defect blocks](rectangular-defect-factorization.md): full-interval repairs reduce to seven and nine active fermion modes at the stated Gaussian gauges, with structurally proved generic ranks and exact rational support checks.
+- [Secondary-height repairs](rectangular-refined-repairs.md): 231 individually admissible F4 shears, dense additive flags, and Laurent quartic freedom preserve the all-length crossing and bounded support.
 - [Rectangular convex pressure search](rectangular-convex-pressure.md): paired Gibbs derivatives, attaining-minor separation, generic-rank interfaces, and independent exact and numerical implementation controls.
 - [Cauchy packet polynomial realization](cauchy-packet-realization.md): every degree-at-most-wire-count polynomial integral on the interpolation grid has an explicit affine packet realization, with separate canonical-lift controls.
+- [Canonical alternating packets](canonical-alternating-packet.md): an all-size binary-input family has exact minimum odd-center content `L(1+log_2 L)-1`, with creation precision one.
+- [Eight-wire polynomial lattice](eight-wire-cauchy-lattice.md): an exact finite module certificate realizes every integral degree-at-most-120 polynomial and three full wire-scale tapered examples, with canonical precision still separate.
 - [Dyadic affine mode reduction](one-species-dyadic-affine-reduction.md): appending common trailing binary ones gives exactly the smaller typed one-species tensor after ramification, including independent-gauge transport.
 - [Pascal complement convolution](pascal-complement-convolution.md): characteristic-independent complement-order inequalities and a field-free pressure envelope for arbitrary mode sets.
 

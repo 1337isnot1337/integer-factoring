@@ -107,6 +107,12 @@ scalar factors. Exact rational support checks and an independent full-matrix
 control support a scalable profile calculation. The
 [paired-type search audit](research/rectangular-convex-pressure.md) records
 the derivative, minor-separation formulation, and precision conditions.
+Regular core coordinate bases now permit fourteen independent core weights
+and four bulk charges without increasing the active dimensions. The
+[secondary-height family](research/rectangular-refined-repairs.md) adds
+231 elementary F4 repairs and arbitrary endpoint-compatible Laurent
+quartic numerators. These families are being searched with exact field
+arithmetic and explicit finite-precision checks.
 
 The [31 October research checkpoint](research/constructive-frontier-checkpoint.md)
 collects the latest exact bounds, new construction families, reproducible

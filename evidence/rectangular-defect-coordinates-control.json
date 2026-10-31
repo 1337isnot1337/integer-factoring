@@ -1,0 +1,317 @@
+{
+  "status": "independent original-tensor coordinate and real-core-gauge controls",
+  "field": {
+    "modulus": "X^4+X+1",
+    "omega_image": 6
+  },
+  "entrywise_cases": [
+    {
+      "place": "infinity",
+      "M": 4,
+      "z": 2,
+      "entries_checked": 9216,
+      "zero_rows_checked": 32,
+      "zero_columns_checked": 32
+    },
+    {
+      "place": "infinity",
+      "M": 4,
+      "z": 3,
+      "entries_checked": 9216,
+      "zero_rows_checked": 32,
+      "zero_columns_checked": 32
+    },
+    {
+      "place": "infinity",
+      "M": 4,
+      "z": 4,
+      "entries_checked": 9216,
+      "zero_rows_checked": 32,
+      "zero_columns_checked": 32
+    },
+    {
+      "place": "infinity",
+      "M": 4,
+      "z": 5,
+      "entries_checked": 9216,
+      "zero_rows_checked": 32,
+      "zero_columns_checked": 32
+    },
+    {
+      "place": "zero",
+      "M": 4,
+      "z": 2,
+      "entries_checked": 36864,
+      "zero_rows_checked": 64,
+      "zero_columns_checked": 64
+    },
+    {
+      "place": "zero",
+      "M": 4,
+      "z": 3,
+      "entries_checked": 36864,
+      "zero_rows_checked": 64,
+      "zero_columns_checked": 64
+    },
+    {
+      "place": "zero",
+      "M": 4,
+      "z": 4,
+      "entries_checked": 36864,
+      "zero_rows_checked": 64,
+      "zero_columns_checked": 64
+    },
+    {
+      "place": "zero",
+      "M": 4,
+      "z": 5,
+      "entries_checked": 36864,
+      "zero_rows_checked": 64,
+      "zero_columns_checked": 64
+    }
+  ],
+  "weighted_profiles": [
+    {
+      "place": "infinity",
+      "M": 4,
+      "cases": [
+        {
+          "case": 0,
+          "orders_checked": 192,
+          "maximum_error": 0.0,
+          "lambda": 0,
+          "mu": 0,
+          "v": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "y": [
+            0,
+            0,
+            0
+          ],
+          "u": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "case": 1,
+          "orders_checked": 192,
+          "maximum_error": 0.0,
+          "lambda": 0.75,
+          "mu": -2.0,
+          "v": [
+            1.75,
+            -0.25,
+            -1.0,
+            0.75
+          ],
+          "y": [
+            1.5,
+            -0.5,
+            -0.5
+          ],
+          "u": [
+            0.25,
+            1.5,
+            -0.75
+          ]
+        },
+        {
+          "case": 2,
+          "orders_checked": 192,
+          "maximum_error": 0.0,
+          "lambda": -0.5,
+          "mu": -2.0,
+          "v": [
+            -0.5,
+            -0.25,
+            2.0,
+            0.25
+          ],
+          "y": [
+            0.0,
+            1.5,
+            -0.25
+          ],
+          "u": [
+            -0.5,
+            -0.5,
+            -1.25
+          ]
+        },
+        {
+          "case": 3,
+          "orders_checked": 192,
+          "maximum_error": 0.0,
+          "lambda": -0.25,
+          "mu": 1.5,
+          "v": [
+            -1.5,
+            0.25,
+            0.5,
+            0.0
+          ],
+          "y": [
+            0.0,
+            1.5,
+            -1.75
+          ],
+          "u": [
+            0.25,
+            0.25,
+            -1.25
+          ]
+        },
+        {
+          "case": 4,
+          "orders_checked": 192,
+          "maximum_error": 0.0,
+          "lambda": -0.5,
+          "mu": -0.75,
+          "v": [
+            -1.5,
+            -0.75,
+            2.0,
+            0.75
+          ],
+          "y": [
+            1.0,
+            -2.0,
+            -1.0
+          ],
+          "u": [
+            0.75,
+            -1.75,
+            -1.25
+          ]
+        }
+      ]
+    },
+    {
+      "place": "zero",
+      "M": 4,
+      "cases": [
+        {
+          "case": 0,
+          "orders_checked": 192,
+          "maximum_error": 0.0,
+          "lambda": 0,
+          "mu": 0,
+          "v": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "y": [
+            0,
+            0,
+            0
+          ],
+          "u": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "case": 1,
+          "orders_checked": 192,
+          "maximum_error": 0.0,
+          "lambda": -0.5,
+          "mu": 0.75,
+          "v": [
+            1.25,
+            0.25,
+            1.5,
+            1.0
+          ],
+          "y": [
+            0.0,
+            1.25,
+            -0.75
+          ],
+          "u": [
+            -0.75,
+            1.25,
+            -1.75
+          ]
+        },
+        {
+          "case": 2,
+          "orders_checked": 192,
+          "maximum_error": 0.0,
+          "lambda": -0.25,
+          "mu": 1.25,
+          "v": [
+            1.5,
+            -1.0,
+            0.5,
+            0.25
+          ],
+          "y": [
+            0.0,
+            -0.25,
+            1.5
+          ],
+          "u": [
+            -1.75,
+            0.25,
+            1.25
+          ]
+        },
+        {
+          "case": 3,
+          "orders_checked": 192,
+          "maximum_error": 0.0,
+          "lambda": -0.5,
+          "mu": 0.25,
+          "v": [
+            0.5,
+            -1.0,
+            -0.25,
+            -1.25
+          ],
+          "y": [
+            1.75,
+            -0.75,
+            -1.5
+          ],
+          "u": [
+            2.0,
+            -1.25,
+            -1.5
+          ]
+        },
+        {
+          "case": 4,
+          "orders_checked": 192,
+          "maximum_error": 0.0,
+          "lambda": 1.5,
+          "mu": 0.0,
+          "v": [
+            -0.25,
+            -0.5,
+            0.75,
+            -1.25
+          ],
+          "y": [
+            -1.5,
+            0.5,
+            -1.5
+          ],
+          "u": [
+            -1.5,
+            0.5,
+            -1.25
+          ]
+        }
+      ]
+    }
+  ]
+}

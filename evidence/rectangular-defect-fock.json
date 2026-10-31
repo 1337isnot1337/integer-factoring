@@ -1,53 +1,133 @@
 {
-  "status": "independent full Fock spectator identity at finite field points",
+  "status": "independent full Fock controls at finite field points",
   "cases": [
     {
       "field_modulus": "X^4+X+1",
       "omega_image": 6,
+      "place": "infinity",
       "z": 2,
       "M": 4,
       "full_fock_dimension": 256,
       "defect_dimension": 128,
-      "spectator_order": -3,
+      "spectator_orders": [
+        -3
+      ],
       "all_matrix_entries_checked": 65536,
       "specialized_full_rank": 192,
-      "specialized_defect_rank": 96
+      "specialized_defect_rank": 96,
+      "compiled_active_entries_checked": 16384,
+      "restored_unit_denominator_degree": 6
     },
     {
       "field_modulus": "X^4+X+1",
       "omega_image": 6,
+      "place": "infinity",
       "z": 3,
       "M": 4,
       "full_fock_dimension": 256,
       "defect_dimension": 128,
-      "spectator_order": -3,
+      "spectator_orders": [
+        -3
+      ],
       "all_matrix_entries_checked": 65536,
       "specialized_full_rank": 192,
-      "specialized_defect_rank": 96
+      "specialized_defect_rank": 96,
+      "compiled_active_entries_checked": 16384,
+      "restored_unit_denominator_degree": 6
     },
     {
       "field_modulus": "X^4+X+1",
       "omega_image": 6,
+      "place": "infinity",
       "z": 4,
       "M": 4,
       "full_fock_dimension": 256,
       "defect_dimension": 128,
-      "spectator_order": -3,
+      "spectator_orders": [
+        -3
+      ],
       "all_matrix_entries_checked": 65536,
       "specialized_full_rank": 192,
-      "specialized_defect_rank": 96
+      "specialized_defect_rank": 96,
+      "compiled_active_entries_checked": 16384,
+      "restored_unit_denominator_degree": 6
     },
     {
       "field_modulus": "X^4+X+1",
       "omega_image": 6,
+      "place": "infinity",
       "z": 5,
       "M": 4,
       "full_fock_dimension": 256,
       "defect_dimension": 128,
-      "spectator_order": -3,
+      "spectator_orders": [
+        -3
+      ],
       "all_matrix_entries_checked": 65536,
       "specialized_full_rank": 192,
-      "specialized_defect_rank": 96
+      "specialized_defect_rank": 96,
+      "compiled_active_entries_checked": 16384,
+      "restored_unit_denominator_degree": 6
+    },
+    {
+      "field_modulus": "X^4+X+1",
+      "omega_image": 6,
+      "place": "zero",
+      "z": 2,
+      "M": 4,
+      "full_fock_dimension": 256,
+      "defect_dimension": 256,
+      "spectator_orders": [],
+      "all_matrix_entries_checked": 65536,
+      "specialized_full_rank": 160,
+      "specialized_defect_rank": 160,
+      "compiled_active_entries_checked": 65536,
+      "restored_unit_denominator_degree": 4
+    },
+    {
+      "field_modulus": "X^4+X+1",
+      "omega_image": 6,
+      "place": "zero",
+      "z": 3,
+      "M": 4,
+      "full_fock_dimension": 256,
+      "defect_dimension": 256,
+      "spectator_orders": [],
+      "all_matrix_entries_checked": 65536,
+      "specialized_full_rank": 160,
+      "specialized_defect_rank": 160,
+      "compiled_active_entries_checked": 65536,
+      "restored_unit_denominator_degree": 4
+    },
+    {
+      "field_modulus": "X^4+X+1",
+      "omega_image": 6,
+      "place": "zero",
+      "z": 4,
+      "M": 4,
+      "full_fock_dimension": 256,
+      "defect_dimension": 256,
+      "spectator_orders": [],
+      "all_matrix_entries_checked": 65536,
+      "specialized_full_rank": 192,
+      "specialized_defect_rank": 192,
+      "compiled_active_entries_checked": 65536,
+      "restored_unit_denominator_degree": 4
+    },
+    {
+      "field_modulus": "X^4+X+1",
+      "omega_image": 6,
+      "place": "zero",
+      "z": 5,
+      "M": 4,
+      "full_fock_dimension": 256,
+      "defect_dimension": 256,
+      "spectator_orders": [],
+      "all_matrix_entries_checked": 65536,
+      "specialized_full_rank": 192,
+      "specialized_defect_rank": 192,
+      "compiled_active_entries_checked": 65536,
+      "restored_unit_denominator_degree": 4
     }
   ]
 }

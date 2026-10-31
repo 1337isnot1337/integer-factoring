@@ -1,0 +1,72 @@
+{
+  "status": "pass",
+  "scope": "Two generic M4 points; independent full-tensor Gibbs roots and all38 core/charge derivatives. Floating controls do not certify a new bound or a global optimum.",
+  "cases": [
+    {
+      "parameters": [
+        0.01755330900625529,
+        0.17626294179566476,
+        0.10887319846784149,
+        0.061875693937936904,
+        -0.05665824014582771,
+        -0.028586417994430152,
+        -0.010949496947562726,
+        0.1178196037836246,
+        0.1480451129926233,
+        -0.17766542538483338,
+        0.07499650852486761,
+        -0.10859703373716283,
+        -0.06473647126454696,
+        -0.14763880839477722,
+        0.1744515472167783,
+        0.055548583134296586,
+        -0.0863356333831365,
+        -0.1291018176597144,
+        0.13
+      ],
+      "reduced_rho": 0.9162408057304108,
+      "full_rho": 0.9162408057304108,
+      "pressure_error": 0.0,
+      "derivative_coordinates": 19,
+      "maximum_derivative_error": 1.9741883128254756e-10,
+      "entropy": 5.118530837602123
+    },
+    {
+      "parameters": [
+        0.14352282659599053,
+        0.1357294644777719,
+        -0.15330776617643696,
+        0.13379305577562378,
+        -0.06904539020714082,
+        -0.17011653510351835,
+        -0.09442851910191698,
+        -0.06406820964744933,
+        0.12593042564885903,
+        -0.08303966769169713,
+        0.17540061530763873,
+        -0.002327060976400952,
+        0.08569690922073192,
+        -0.031168425612238676,
+        0.15272033663620344,
+        0.04579225840675957,
+        0.18577592476620336,
+        -0.14191030557697534,
+        0.17
+      ],
+      "reduced_rho": 0.906247280908629,
+      "full_rho": 0.906247280908629,
+      "pressure_error": 0.0,
+      "derivative_coordinates": 19,
+      "maximum_derivative_error": 1.148692157018627e-10,
+      "entropy": 5.060430890906662
+    }
+  ],
+  "source_sha256": {
+    "rectangular_defect_profiles.py": "1cc323ed45dd9485b16a2c84b7062c381119447eb19369e00c907db7b7fbde44",
+    "rectangular_defect_coordinates.py": "7a57d87cc251126c2d79eec55afccd5d379e5bb6dc9823dbe7428fd1a8ebe7ee",
+    "native_fock_f4.cpp": "12c75a4e84aac82a753c59415d714f68c182246c348506a9a01fd5a0a683a875",
+    "search_rectangular_defect_pressure.py": "d4bd0e2d3f1875f5d2306ecba30e75ee0f994d3979fdc7bfc1b29deac2c3e711",
+    "search_rectangular_core_pressure.py": "1cf1eed8a9e41527b2d1883b7d725588fca177245b9e096206c72fce151f5393",
+    "check_rectangular_core_pressure.py": "d4fccfb1788fc185f463f7e39aa570b02349255a6cc340be6e4c9d4d54a32c94"
+  }
+}

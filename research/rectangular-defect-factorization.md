@@ -33,7 +33,9 @@ h_0(a)&=(-2M+1+2a,1+2a,0,0).
 \tag{1}
 ```
 
-They do not assert a reduction for arbitrary physical letter weights.
+Sections 6 and 7 extend these gauges by four real bulk parameters and
+arbitrary weights on the retained extreme states of `y,u,v`. They do
+not assert a reduction for arbitrary physical letter weights.
 The weights of a mixed `top+alpha*both` core letter are those of its
 leading top state. The mismatch of the other summand is included as a
 Laurent coefficient of the corresponding core operator.
@@ -408,15 +410,20 @@ points in `F16`, it checks all 65,536 entries of the spectator identity:
 both off-diagonal blocks vanish, and the second diagonal block is
 `z^-3` times the first. The specialized ranks are `192` and `96`.
 The four points avoid the poles and have nontrivial spectator scalars.
-This optional replay uses NumPy:
+An additional entrywise comparison checks the compiled active operator
+program at both cuts, after restoring its recorded unit denominator.
+This optional replay uses NumPy and, with `--compare-active`, C++17:
 
 ```sh
-python tools/check_rectangular_defect_fock.py \
+python tools/check_rectangular_defect_fock.py --compare-active \
   --output evidence/rectangular-defect-fock.json
 ```
 
 The [recorded finite-field checks](../evidence/rectangular-defect-fock.json)
-are an implementation control. They do not infer a rational-function
+compare 16,384 active entries at infinity and 65,536 at zero at each
+point. At zero, two specializations have rank `160` and two have rank
+`192`; this does not alter the generic-rank theorem. These comparisons
+are implementation controls. They do not infer a rational-function
 identity merely from its values at four points.
 
 The gauge convention matters when comparing this result with the
@@ -428,9 +435,208 @@ from (3) plus `2M-2`, uniformly. The rational factors in the defect
 construction already include their scalar denominators; no second
 denominator restoration should be applied.
 
-This support certificate does not itself record the defect Smith
-multisets. A complete numerical profile implementation must still be
-compared with direct full matrices in feasible cases and must retain
-the stated generic rank and precision conditions. The operator algebra
-and support argument above are the proof of the reduction; a finite
-comparison is an implementation check, not a substitute for it.
+The [active profile tool](../tools/rectangular_defect_profiles.py) builds
+the finite CAR program and computes its orders with a supplied generic
+rank. It must retain the stated precision conditions. The operator
+algebra and support argument above are the proof of the reduction; a
+finite comparison is an implementation check, not a substitute for it.
+
+## 6. Bulk charges and arbitrary extreme-state weights
+
+The same support reduction allows two additional real bulk parameters
+at each place. These statements concern weighted Smith orders in the
+sense used by the rectangular profile oracle.
+
+At infinity, add `lambda` to the weight of every occupied `y,v` mode,
+and `mu` to every occupied `x,u` mode. Every change of basis in the
+infinity proof is an exterior compound of a one-particle map. It
+therefore preserves total occupation. The new active matrix is the
+old one with row weight `lambda*|mask|` and column weight
+`mu*|mask|`. Each spectator order changes from `kappa` to
+`kappa+lambda+mu`.
+
+At zero, the corresponding conserved quantity is the difference
+between occupation in the first and second blocks. Add physical
+mode weights
+
+```math
+(\lambda,-\lambda,-\mu,\mu)
+\quad\text{in boundary order }(x,y,u,v).
+\tag{13}
+```
+
+Every `xy` creation pair and `uv` annihilation pair preserves this
+difference. The Pascal operation and the support sweeps stay within
+their respective blocks. They therefore commute with the two diagonal
+weight maps in (13). Put
+`q(mask)=|mask in first block|-|mask in second block|`.
+The active row and column weights are `lambda*q(mask)` and
+`mu*q(mask)`. A first-block spectator order gains `lambda+mu`, while
+a second-block spectator order loses that amount. Neither argument
+requires the two parameters to be integral or nonnegative.
+
+There is a further finite family of arbitrary real weights. Keep the
+natural bulk dependence, and add any function of the extreme core
+state on each of `y,u,v`. There are three retained states on `y,u`
+and four on `v`. Removing one additive constant per leg leaves seven
+independent core parameters at each place. A diagonal function of two
+occupation bits is a polynomial in their two number operators. The
+listed core CAR generators already contain these operators, so the
+seven- and nine-mode support bounds remain unchanged.
+
+This observation alone would require inserting the extra diagonal
+operators inside the active matrix program. The next section gives
+fixed regular bases in which every such weight is an ordinary row or
+column weight. These bases are independent of the real weight values.
+
+## 7. Regular coordinate bases for the core operators
+
+Let `R` be the local valuation ring, and let `r` canonical creation and
+annihilation pairs act on the `n=2^k` dimensional active Fock module.
+Assume all their coefficients are in `R`. Define the vacuum projector
+
+```math
+P=\prod_{i=1}^{r}(I+c_i a_i),\qquad d=2^{k-r}.
+\tag{14}
+```
+
+The canonical relations give a direct sum decomposition into the
+`2^r` modules `c_S image(P)`, all of rank `d`, and
+
+```math
+P a_S c_T P=[S=T]P.
+\tag{15}
+```
+
+Choose `d` independent rows `I` and `d` independent columns `J` of
+`P` modulo the maximal ideal. The minor `P[I,J]` is invertible modulo
+that ideal. Form square matrices by block rows and columns:
+
+```math
+L_S=E_I^{\mathsf T}P a_S,
+\qquad B_T=c_T P E_J.
+\tag{16}
+```
+
+Equation (15) gives
+
+```math
+LB=I_{2^r}\otimes P[I,J].
+\tag{17}
+```
+
+Both matrices are integral, and their product has unit determinant.
+They are consequently regular invertible changes of basis. No
+division by a possibly nonunit minor is involved. The same canonical
+relations give the exact intertwining identities
+
+```math
+L c_i=c_i^{\rm coordinate}L,\quad
+L a_i=a_i^{\rm coordinate}L,\quad
+c_i B=Bc_i^{\rm coordinate},\quad
+a_i B=Ba_i^{\rm coordinate}.
+\tag{18}
+```
+
+Thus `L` is a valid row coordinate map and `B` is a valid column
+coordinate map. The row and column sides of the rectangular defect
+use different core CAR systems; apply the construction separately to
+those two systems.
+
+At infinity the left system consists of `v0,vT,y0,yT`, and the right
+system of `u0,uT`. At zero the left system is `y0,yT`, and the right
+system is `v0,vT,u0,uT`. The right vectors in the support artifact
+have already been transported through `Sigma`. Pull them back before
+applying (14): multiply each creation component at coordinate `j` by
+`z^-kappa_j` and each annihilation component by `z^kappa_j`.
+
+These pulled-back vectors are integral. On the full Fock space they
+are precisely the original right core operators conjugated by the
+regular right Gaussian change of basis and its regular inverse.
+Diagonal pullback does not create an inactive coordinate. The left
+vectors are integral for the analogous reason. This establishes the
+integrality assumption of (14) at every interval size, rather than
+assuming that rational canonical pairs are regular.
+
+After these coordinate changes, the excluded `y=both` rows and
+`u=both` columns are identically zero. Deleting them leaves square
+matrices of size `96` at infinity and `384` at zero, with full generic
+rank. At zero with `M=4`, the size is `192`. Row core weights are the
+sum of the `v,y` weights at infinity and the `y` weight at zero.
+Column core weights are the `u` weight at infinity and the sum of
+the `v,u` weights at zero. The physical state ordering remains
+`(low,vacuum,top,both)`; coordinate occupation masks are
+`(1,0,2,3)` in that order.
+
+The bulk charges of section 6 also stay diagonal in these coordinates.
+For a basis index `(S,j)`, the row charge is the charge of vacuum row
+`I[j]` plus the sum of the charges of the core creations in `S`.
+The column charge uses vacuum column `J[j]` in the same formula.
+At infinity every core creation has charge `+1`. At zero a `v`
+creation has charge `+1` and a `u` or `y` creation has charge `-1`.
+This follows because `P` commutes with the bulk charge, and each core
+creation is homogeneous for it. The charge must be computed by this
+formula; it need not equal the occupation count of the new coordinate
+index.
+
+The [core basis checker](../tools/check_rectangular_defect_core_basis.py)
+checks exact rational integrality, canonical pairings, the vacuum minor,
+the ranks of both complete coordinate maps modulo `z`, and every
+intertwining identity modulo `z`. Its `core_basis_data(data,side)` API
+exports the regular rational generators, their ordering, the pivot
+sets `I,J`, and the exact coordinate bulk charges. Run:
+
+```sh
+python tools/check_rectangular_defect_core_basis.py \
+  --output evidence/rectangular-defect-core-basis.json
+```
+
+The [recorded basis evidence](../evidence/rectangular-defect-core-basis.json)
+contains both sides at both places for `M=2,4,8,16,32,64,128`.
+The proof of (14)--(18) supplies the identities over the valuation
+ring; the finite residue calculations select and certify unit minors
+for the explicit implementation.
+
+## 8. Scalar quartic perturbations and other core corrections
+
+The support proof depends on the location of the quartic operators,
+not on their scalar coefficient. Replace the scalar `1/(1+w)^2` by
+
+```math
+f(w)=\frac{P(w)}{(1+w)^2},\qquad P(1)=1,
+\tag{19}
+```
+
+where `P` is a Laurent polynomial over the coefficient field. The
+ramified core endpoint is unchanged, so the same partial correction
+works. The cancellation in the predecessor's denominator argument is
+unchanged as well: the potentially double-pole term becomes
+`P Q10+G0`, which still vanishes at `w=1`, and `P Q11` still vanishes
+there. The remaining denominator at `w=1` has order at most one.
+Any pole introduced at `w=0` by a Laurent monomial can be cleared by
+a global power of `w`, whose value at the crossing endpoint is one.
+After the usual paired-type restriction, this gives polynomial
+crossings at every word length.
+
+No new CAR vector appears in (19). The same active dimensions,
+spectators, coordinate bases, and rank promise therefore apply. For
+the simple choice `P(w)=w^ell`, the quartic scalar in the two local
+variables is
+
+```math
+f_\infty(z)=\frac{z^{2-\ell}}{(1+z)^2},
+\qquad f_0(z)=\frac{z^\ell}{(1+z)^2}.
+\tag{20}
+```
+
+The effective construction remains polynomial in `M` and the degree
+and coefficient encoding of `P`. An unrestricted rapidly growing
+choice of `P` is not being assigned a free complexity bound.
+
+Likewise, replacing the twelve-dimensional output correction by any
+other admissible correction on the same retained `v,y` core adds no
+new operator support. In particular, a strict-height triangular
+postcorrection can be included in this same fixed-size calculation.
+Its endpoint and polynomiality must still satisfy the paired-type
+theorem; bounded support alone does not certify admissibility or
+improved pressure.

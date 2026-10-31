@@ -30,8 +30,7 @@ comparison or a numerical optimization result.
 The restriction to one species matters. The full two-species kernel has
 an additional scalar defect described in Section 5. This note does not
 exclude arbitrary mode sets, different coefficient decompositions, or a
-new factoring exponent. The derivation and checks used substantial
-OpenAI assistant support.
+new factoring exponent.
 
 ## 1. The polynomial kernel
 

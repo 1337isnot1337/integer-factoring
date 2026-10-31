@@ -98,6 +98,17 @@ verify-frontier-reductions:
 	python3 tools/check_pascal_complement_convolution.py
 	python3 tools/check_prime_power_vacuum.py
 	python3 tools/check_cauchy_packet_polynomials.py
+	python3 tools/check_canonical_alternating_packet.py
+	python3 tools/check_cauchy_packet_lattice.py
+
+.PHONY: verify-bounded-defect
+verify-bounded-defect:
+	python3 tools/check_rectangular_defect_core_basis.py
+	python3 tools/check_rectangular_defect_fock.py --compare-active
+	python3 tools/check_rectangular_defect_coordinates.py
+	python3 tools/check_rectangular_quartic_perturbations.py
+	python3 tools/check_rectangular_core_pressure.py
+	python3 tools/check_rectangular_refined_repairs.py
 
 verify-native-rectangular-search:
 	python3 tools/check_native_rectangular_smith_f4.py

@@ -286,8 +286,26 @@ def one_particle(indices, ambient):
 
 
 def build(indices=(0, 1, 2), ambient=4, alpha=1, beta=2, check_types=True,
-          independent_exterior=False):
+          independent_exterior=False, quartic_terms=None):
     indices = tuple(indices)
+    explicit_quartic = quartic_terms is not None
+    if quartic_terms is None:
+        quartic_terms = [(1, 0)]
+    terms = {}
+    for coefficient, exponent in quartic_terms:
+        if coefficient not in (0, 1, 2, 3) or not isinstance(exponent, int):
+            raise ValueError('A quartic term needs an F4 coefficient and an integer exponent.')
+        terms[exponent] = terms.get(exponent, 0) ^ coefficient
+    terms = {exponent: coefficient for exponent, coefficient in terms.items() if coefficient}
+    endpoint_coefficient = 0
+    for coefficient in terms.values():
+        endpoint_coefficient ^= coefficient
+    if endpoint_coefficient != 1:
+        raise ValueError('The quartic Laurent numerator must take value one at w=1.')
+    global_w_power = -min(0, min(terms))
+    quartic_polynomial = tuple(sum(((coefficient >> plane)&1) << (exponent+global_w_power)
+                                  for exponent, coefficient in terms.items()) for plane in range(2))
+    gaussian_factor = 5 << global_w_power
     original, correction, endpoint = check_repair(alpha, beta)
     n, top_index = len(indices), indices[-1]
     bulk, top = 1 << (n-2), 1 << (n-1)
@@ -342,23 +360,24 @@ def build(indices=(0, 1, 2), ambient=4, alpha=1, beta=2, check_types=True,
                     if not raw_support[target]:
                         del raw_support[target]
         quartic = 1 | (1 << (2*n-1)) | (1 << (2*n)) | (1 << (4*n-1))
-        exterior = {mask: binary_mul(5, value) for mask, value in raw_support.items()}
+        exterior = {mask: (binary_mul(gaussian_factor, value), 0) for mask, value in raw_support.items()}
         for mask, value in raw_support.items():
             if not mask & quartic:
                 target = mask | quartic
-                exterior[target] = exterior.get(target, 0) ^ value
+                exterior[target] = add(exterior.get(target, ZERO), times_binary(quartic_polynomial, value))
 
     for x, y, u, v in product(range(qx), range(qu), range(qu), range(qx)):
         xx, vv, answer, control = xmap[x], xmap[v], ZERO, ZERO
         for (yy, cy), (uu, cu) in product(ymap[y], umap[u]):
-            p = binary_mul(5, minor(vv | (yy << n), uu | (xx << n)))
+            p = (binary_mul(gaussian_factor, minor(vv | (yy << n), uu | (xx << n))), 0)
             if xx & 1 and uu & 1 and yy & top and vv & top:
-                p ^= minor((vv ^ top) | ((yy ^ top) << n), (uu ^ 1) | ((xx ^ 1) << n))
+                p = add(p, times_binary(quartic_polynomial,
+                        minor((vv ^ top) | ((yy ^ top) << n), (uu ^ 1) | ((xx ^ 1) << n))))
             coefficient = fmul(cy, cu)
-            answer = add(answer, scale((p, 0), coefficient))
+            answer = add(answer, scale(p, coefficient))
             if independent_exterior:
                 mask = xx | (yy << n) | (uu << (2*n)) | (vv << (3*n))
-                control = add(control, scale((exterior.get(mask, 0), 0), coefficient))
+                control = add(control, scale(exterior.get(mask, ZERO), coefficient))
         if independent_exterior:
             assert answer == control
         numerator[position(x, y, u, v)] = answer
@@ -416,7 +435,7 @@ def build(indices=(0, 1, 2), ambient=4, alpha=1, beta=2, check_types=True,
                 assert evaluate_one(polynomial) == int(x == v and y == u)
                 checks += 1
     histogram = Counter(c_order(value) for value in values if value != ZERO)
-    return {'field': 4, 'field_polynomial': 'omega^2+omega+1', 'indices': list(indices),
+    result = {'field': 4, 'field_polynomial': 'omega^2+omega+1', 'indices': list(indices),
             'ambient': ambient, 'alpha': alpha, 'beta': beta, 'delta': 1 ^ fmul(alpha, beta),
             'dimensions': [qx, qu, qu, qx], 'q_x': qx, 'q_u': qu, 'bulk_size': bulk,
             'repair_kind': 'mixed_height_partial', 'degree': max(max(value).bit_length()-1 for value in values),
@@ -430,6 +449,10 @@ def build(indices=(0, 1, 2), ambient=4, alpha=1, beta=2, check_types=True,
             'c_order_histogram': dict(sorted(histogram.items())),
             'coefficient_sha256': sha256(json.dumps(values, separators=(',', ':')).encode()).hexdigest(),
             'values': values}
+    if explicit_quartic:
+        result['quartic_terms'] = [[coefficient, exponent] for exponent, coefficient in sorted(terms.items())]
+        result['global_w_power'] = global_w_power
+    return result
 
 
 def check_parameter_gauges():
