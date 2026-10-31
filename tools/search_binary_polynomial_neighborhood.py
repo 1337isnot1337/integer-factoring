@@ -17,7 +17,6 @@ from pathlib import Path
 import time
 
 import numpy as np
-from scipy.optimize import minimize_scalar
 
 from native_rectangular_smith_f4 import RectangularOracle
 from screen_full_alphabet_monomial_pressure import optimize
@@ -39,6 +38,8 @@ def candidate(directions, degree=5):
 
 
 def main():
+    # SciPy is optional for the exact checkers that import this module.
+    from scipy.optimize import minimize_scalar
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--weight', type=int, choices=(1, 2, 3, 4), default=3)
     parser.add_argument('--degree', type=int, default=5)

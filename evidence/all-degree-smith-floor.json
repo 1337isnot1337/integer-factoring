@@ -1,0 +1,66 @@
+{
+  "scope": "Ordinary all-degree proof plus exact finite controls; no factoring improvement",
+  "critical_rational": {
+    "numerator": 577,
+    "denominator": 816,
+    "strict_square_comparison": 2,
+    "approximate": 0.7071078431372549
+  },
+  "comparisons": [
+    {
+      "alphabet": 2,
+      "matrix_rank": 4,
+      "exact_comparison": "F_n > q^(4*577/816)",
+      "left_bit_length": 19585,
+      "right_bit_length": 18706,
+      "pressure_floor_approximate": 8.559875903698202,
+      "rho_floor_approximate": 0.7743974703476993
+    },
+    {
+      "alphabet": 3,
+      "matrix_rank": 9,
+      "exact_comparison": "F_n > q^(4*577/816)",
+      "left_bit_length": 61248,
+      "right_bit_length": 60030,
+      "pressure_floor_approximate": 25.086143318868512,
+      "rho_floor_approximate": 0.7332695228164551
+    },
+    {
+      "alphabet": 4,
+      "matrix_rank": 16,
+      "exact_comparison": "F_n > q^(4*577/816)",
+      "left_bit_length": 130561,
+      "right_bit_length": 130558,
+      "pressure_floor_approximate": 50.4600849912025,
+      "rho_floor_approximate": 0.7071338413964393
+    }
+  ],
+  "profile_controls": [
+    {
+      "catalogue": "quadratic-crossing-catalogue.json",
+      "profiles_checked": 162,
+      "normalization_and_four_constraints": "passed"
+    },
+    {
+      "catalogue": "parity-cubic-crossing-catalogue.json",
+      "profiles_checked": 671,
+      "normalization_and_four_constraints": "passed"
+    },
+    {
+      "catalogue": "parity-quartic-crossing-catalogue.json",
+      "profiles_checked": 3999,
+      "normalization_and_four_constraints": "passed"
+    },
+    {
+      "catalogue": "cubic-crossing-million-sample.json",
+      "profiles_checked": 1061,
+      "normalization_and_four_constraints": "passed"
+    },
+    {
+      "catalogue": "rank-one-constant-quadratic-catalogues.json",
+      "profiles_checked": 1668,
+      "normalization_and_four_constraints": "passed"
+    }
+  ],
+  "all_field_scalar_parity_floor": "256/27"
+}

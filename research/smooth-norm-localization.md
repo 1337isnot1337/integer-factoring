@@ -193,6 +193,11 @@ m(J+1)(2h_b+1)^2\,Y_b\,\operatorname{poly}(b)
 ```
 
 Factor-base construction and sampler generation are at 2^O(s_b) cost.
+This uniform cost statement uses standard deterministic polynomial-bit-cost
+quadratic-form composition, as reviewed in Lenstra--Pomerance Section 2.
+The repository now also provides [explicit polynomial ideal-lattice
+composition](factored-norm-search.md). The older finite-control scan for
+coprime leading coefficients is not being assigned that complexity.
 Every relation entry has O(b+s_b) bits, and bits(E_H) is
 O(m(b+s_b))=2^O(s_b). Exact determinant computation has polynomial cost
 in this encoded input, still 2^O(s_b). The index correction
@@ -281,6 +286,16 @@ These finite examples do not
 disprove U_beta: they do not instantiate its asymptotic constants, sampler
 or signed box. They do demonstrate the distinction between having a
 bounded smooth represented norm and locating one in a specified box.
+
+The [universal smooth-square contract](universal-smooth-square.md) is a
+different promising search input: it fixes one smooth norm before the
+targets, at the cost of increasing that norm's bit length to the arithmetic
+scale. The [one-factored-norm algorithm](factored-norm-search.md) is exact,
+but its exponential bound uses the candidate norm's bit length or number
+of distinct prime factors. Substituting the original discriminant bit
+length into that bound would be incorrect for the universal cap. U_beta
+instead keeps the represented norm at O(b) bits and imposes a separate
+short-coordinate hypothesis. Neither search guarantee is proved here.
 
 Substantial OpenAI Codex assistance was used. This note gives an ordinary
 conditional algorithm proof and an explicit open analytic target, with no

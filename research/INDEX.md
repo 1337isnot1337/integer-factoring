@@ -16,6 +16,18 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Cell-set minor caps](cell-minor-caps.md): every k-cell endpoint minor bounds each normalized Smith profile prefix by kd plus the k smallest cell energies; this exactly excludes the four-symbol shared-minor target, leaves certified sharper negative relaxation targets at five and six symbols, and proves a compact ternary region; the finite floating searches found no negative four-symbol value, but global four-symbol closure remains open. No realizing tensor or factoring improvement.
+
+- [Joint determinant actual-rank barrier](joint-determinant-barrier.md): all-field Weyl filtrations close every binary pure-value quadratic and cubic at leading `rho>=4/5`; the weaker rank-two determinant floor is `2/3`, and the common-cofactor result above closes the ternary quadratic class.
+
+- [Constant transpose-intertwiner barrier](transpose-intertwiner-barrier.md): equal actual cut ranks at every tensor length preclude contraction for polynomially many coefficient pieces; complete tests exclude 32,454,657 ternary cubic coefficient seeds, with actual-jet witnesses checked through three copies.
+
+- [Universal multipoint Smith floor](multipoint-smith-floor.md): determinant budgets and equal local minimum orders force `rho > 3/4` for the unweighted local-jet criterion over every field, alphabet and degree; a complete 1,579,014-seed cubic catalogue provides independent controls.
+
+- [Low-rank ternary quadratic multipoint catalogue](multipoint-low-rank-seeds.md): all binary seeds with cut-rank product at most three at both finite places have an exact `rho >= 3/4` pressure floor; nine stabilizer representatives, 32,265 seeds, 321 signatures, complete local-rank coverage and independent tensor controls.
+
+- [Complete ternary quadratic multipoint catalogue](multipoint-rank-one-seeds.md): all binary seeds with pure values at both finite places have an exact `rho >= 3/4` pressure floor, with 3,078 representatives, 23 signatures, independent Toeplitz profiles and full tensor-power reconstructions.
+
 - [All-code elementary coefficient-span barrier](difference-support-rank-floor.md): weighted difference/orientation blocks give rank-sum at least (|A||B|)^(3/4) for arbitrary paired binary codes over every field; equal alphabets force rho >= 3/4, without symmetry or downset assumptions.
 
 - [Difference-unique code rank obstruction](sidon-code-rank-obstruction.md): a literal two-cut block proof excludes the elementary crossing on all cubic binary-field graphs; 16 exact finite controls distinguish the separate multiplication-graph candidate.
@@ -26,6 +38,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Interval unit jets](interval-unit-jets.md): polynomial-bit-time local Taylor data for exponentially long interval products using parity, power sums, and exact Newton identities; global elimination remains open.
 - [Interval packet circuits](interval-packet-circuits.md): global modular polynomial circuits with `O(n+p)` nodes and polynomial generation cost; exact artificial-common-factor controls state the remaining elimination obligation.
 - [Normalized interval jets](normalized-interval-jets.md): exact binary content exponents, zero orders, and polynomial-cost unit jets at scaled integer centers; global root search remains open.
+- [Global interval pole trace](interval-pole-trace.md): an exact finite-precision factor-pair projection, closed boundary and bilinear section rules, and a charged enumerative baseline; efficient global state reduction remains open.
 - [Arithmetic framework shift](arithmetic-framework.md): primary-source randomness audit and a new generator/relation construction contract, outside the crossing evaluator.
 - [Deterministic torsion extraction](arithmetic-torsion-extraction.md): a black-box two-group basis algorithm from an annihilator, with no saturated relation lattice or random group elements.
 - [Positive relation kernel](positive-relation-kernel.md): a Fourier-positive smooth-pair hitting lemma and diagonally dominant relation construction; efficient arithmetic pair extraction is open.
@@ -33,7 +46,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Actual class-group controls](arithmetic-class-group-controls.md): exact composition, smooth prime-form words, unsaturated relations and complete two-torsion recovery; exhaustive searches produce factors for 18 finite targets.
 - [Density/index transfer](arithmetic-density-lift.md): dense smooth forms and relations on a possibly proper factor-base subgroup give a global class-number multiple; missing ambiguous directions remain an explicit obligation.
 - [Bounded smooth-norm interface](bounded-smooth-norm.md): exact equivalence between smooth-form quotients and balanced smooth represented norms; supplied witnesses convert at `2^O(b/log b)` cost, while fast witness search remains open.
-- [Deterministic norm sieve](arithmetic-norm-sieve.md): dominant relations and exact determinant/torsion extraction factor 60-bit and 80-bit inputs without class enumeration; two smaller-box exhaustion controls retain the finite search limits.
+- [Deterministic norm sieve](arithmetic-norm-sieve.md): pair and direct-word certificates factor 60/80-bit inputs without class enumeration; polynomial composition and bounded diagonals reduce determinant encodings to 520/500 bits, while failed boxes retain the search limits.
 - [Quantitative smooth-norm localization](smooth-norm-localization.md): the exact biased generator-power family, an explicit unproved short-box hypothesis and a conditional transfer above half; splitting coverage remains a separate hypothesis.
 - [Polynomial divisor-gap extraction](smooth-norm-gap.md): integer multiplicative trimming converts promised inner-radius balanced norms at a specified outer radius, without enumerating all divisors.
 - [Relations from small smooth norms](smooth-norm-relations.md): primitive smooth norms yield bounded prime-form words directly, removing the balanced-factor condition and strictly enlarging the accepted target set.
@@ -307,6 +320,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Uniform degree-one Smith obstruction](linear-smith-barrier.md): coupled endpoint ranks force `B >= q^3` over every field and alphabet; sharp binary bounds and all 65,536 scalar binary pencils are checked.
 - [Full varying-image cubic spaces](cubic-full-image-span.md): exact 786- and 1,225-dimensional coefficient spaces over characteristic two, and smaller matrices for exact column ranks; no strict seed is supplied.
 
+- [Nine-letter quadratic-inverse probe](nine-letter-quadratic-inverse-probe.md): a general first-two-coefficient tradeoff and complete 31-path schedule, with every exact profile, 248 independent Toeplitz controls and all-scale exclusions.
+- [Inverse-degree compatibility and noncommuting paths](inverse-degree-crossing-compatibility.md): a new cut constraint rules out the formal seven-letter optimum at all integer ramifications; a quadratic-inverse constructor supplies exact endpoints and a complete 5,005-path first-jet exclusion.
 - [Pieces-to-factoring transfer](pieces-to-factoring.md): conditional crossing-parameter transfer, with full bit-cost accounting.
 - [Scale-one modular transfer](scale-one-modular-transfer.md): fixed-field transfer and machine costs.
 - [Sparse divisor nonzeroness](sparse-divisor-nonzeroness.md): detection of divisors in weighted polynomial counts.
@@ -375,6 +390,13 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Sparse bulk species-gauge floor](sparse-bulk-species-gauge-floor.md): an exact entropy dual proves `rho >= 3/4` in the stated common-density limit model; no exclusion of general sparse families or unbounded energy slopes is claimed.
 - [Controlled monomial Smith floor](controlled-permutation-smith-floor.md): a fiber-span argument extends the nilpotent-path obstruction to dependent, noncommuting, and weighted monomial controls.
 - [Qutrit Weyl crossing](qutrit-weyl-crossing.md): a complete auxiliary crossing with an exact all-length constant-coefficient rank formula and a scoped raw-piece obstruction.
+- [Inverse-degree aspect bounds](inverse-degree-aspect-bounds.md): entropy slack gives degree/inverse-degree limits, stronger quadratic caps 14,20,35,91, and an abstract two-case exclusion for all 2^31 binary level weights on the fixed nine-letter flag.
+- [Leading-rank entropy floor](leading-rank-entropy-floor.md): rational entropy duals exclude a repeated minimum Smith order on 7 through 10 letters, and close every positive kernel-level weighting of the displayed seven-letter transpose channel.
+- [Shared-minor floor through six letters](shared-minor-smith-floor.md): common q-by-q minors couple both cuts and give an all-degree, all-field bare-profile exclusion for q<=6, including fixed auxiliary states; seven letters are the first case left open by this relaxation.
+- [All-degree small-alphabet Smith floor](all-degree-small-alphabet-smith-floor.md): over every field and arbitrary fixed auxiliaries, bare ungauged local profiles on 2, 3 or 4 physical labels cannot improve the half-rate threshold; a sharper scalar binary parity floor holds at every degree.
+- [Complete binary quadratic catalogue](binary-quadratic-catalogue.md): all 65,536 fixed-endpoint scalar binary quadratics, 162 paired profiles, and an exact all-scale pressure floor of 256/27 for the stated ungauged cuts.
+- [Extended binary polynomial catalogues](extended-binary-polynomial-catalogues.md): all nonzero rank-one column constants in quadratics, complete parity cubics and quartics, and a separately marked million-path unrestricted cubic sample; no improved pressure.
+
 - [Directions beyond half](post-half-directions.md): experiments, scope, and unresolved questions.
 - [Network tradeoff](half-top-structure.md): restriction for the current local-enumeration and wire-channel constructor.
 - [Restricted-label counterexample](half-restricted-labels.md): failure of a proposed low-mode dimension reduction.

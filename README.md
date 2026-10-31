@@ -46,6 +46,10 @@ Recovering the genuine rational common factor within the desired time
 bound remains open; these results do not improve the factoring score.
 [Normalized integer-center jets](research/normalized-interval-jets.md)
 also separate huge local powers of two from polynomial-cost unit data.
+The [global pole trace](research/interval-pole-trace.md) gives an exact
+polynomial-precision factor-pair filter and closed bilinear reduction rules.
+Its current implementation still enumerates the dyadic state tree; efficient
+global state reduction remains open.
 The [research index](research/INDEX.md) links proofs, exact evidence, and replay commands.
 
 The result table distinguishes verified machine bounds from conditional constructions and finite experiments. A merged PR or a passing finite test does not imply independent mathematical review.
@@ -106,6 +110,81 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs five groups on 
 | [`tools/`](tools/) and [`tests/`](tests/) | Exact checkers, reproduction scripts, and unit tests |
 
 ## Current research frontier
+
+For larger alphabets, [cell-set minor caps](research/cell-minor-caps.md)
+strengthen the [shared-minor relaxation](research/shared-minor-profile-relaxation.md):
+every set of k cells gives an endpoint minor that bounds each Smith-profile
+prefix by kd plus the k smallest cell energies. This exactly excludes the
+earlier four-symbol relaxation target. Sharper negative relaxation targets
+remain at five and six symbols; they are construction targets, not crossings.
+Run `make verify-cell-minor-caps`.
+
+The [binary site-symmetry barrier](research/binary-site-symmetry-barrier.md)
+gives an ordinary actual-rank proof of `rho >= 3/4` for every decomposition
+whose binary pieces are invariant under all simultaneous permutations of
+tensor positions. It covers scalar seeds of every degree, arbitrary coefficient
+recombinations and mixtures of scalar curves, over any fixed field,
+including characteristic two. A universal degree-four polynomial and
+Weyl filtrations supply the obstruction at every tensor length.
+It extends to a common partition into any sublinear number of position
+classes, with arbitrary coupled coefficient functionals between classes.
+Run `make verify-binary-site-symmetry` for exact algebra and finite controls.
+The [matching-curve controls](research/matching-curve-controls.md) show
+why escaping common-minor tests does not escape this broader theorem.
+New physical code restrictions and constructions that break the stated
+site symmetry remain open; no stronger factoring exponent is established.
+
+The [full auxiliary coefficient-span experiment](research/auxiliary-coefficient-span.md)
+tests ordered noncommuting constructions outside that symmetry hypothesis.
+Complete finite recombination improves several raw rank maxima, but exact
+rank-sum lower certificates leave the tested finite-block envelope above
+the half-rate threshold. Run `make verify-auxiliary-coefficient-span`.
+Nine full extension-field controls over `F_4` retain the same finite
+minmax thresholds; run `make verify-auxiliary-extension-span`.
+
+The [common-cofactor barrier](research/common-cofactor-barrier.md) closes
+the asymmetric ternary quadratic family for actual coefficient ranks.
+All 32,265 normalized seeds, covering 12,852,225 actual coefficient seeds,
+have a shared projected minor that forces
+`rho >= log(3)/(2 log(2)) = 0.792481...` at every tensor length.
+The exact full certificate replay is `make verify-common-cofactor`.
+The binary site-symmetry theorem above additionally covers seeds without
+this certificate at its weaker, but still post-half-excluding, floor.
+The factoring exponent is still one half.
+
+The [joint determinant barrier](research/joint-determinant-barrier.md)
+uses Weyl filtrations in every characteristic to bound actual coefficient
+ranks. It rules out `rho < 4/5` for binary quadratics with two pure
+interpolation values and cubics with three, including the entire
+135,005,697-seed ternary cubic class. Equal determinants give floor one.
+The asymmetric rank-two values have a weaker determinant floor of `2/3`;
+the common-cofactor result above now closes the full ternary quadratic
+class with a stronger certificate. Run `make verify-joint-determinant`.
+
+The [constant transpose-intertwiner obstruction](research/transpose-intertwiner-barrier.md)
+applies to actual tensor-power coefficient ranks: a common invertible
+intertwiner forces both cut ranks to agree, ruling out leading contraction
+for polynomially many pieces. It excludes 32,454,657 ternary cubic seeds.
+Actual jets of 200 retained witnesses are checked through three copies;
+the favorable two-copy values do not persist in that finite comparison.
+Run `make verify-transpose-intertwiner` for complete finite coverage counts
+and independent matrix controls. No stronger factoring exponent is claimed.
+
+The [universal multipoint Smith floor](research/multipoint-smith-floor.md)
+shows that the local-jet pressure criterion needs `rho > 3/4` over every
+field, alphabet size, polynomial degree, allocation, and permitted cut scale.
+It therefore cannot improve the existing `1/sqrt(2)` crossing. A completed
+1,579,014-seed cubic catalogue supplies independent literal controls.
+Sharper actual-jet bounds and physical type constructions remain outside
+this obstruction. Run `make verify-multipoint-smith-floor`.
+
+The [complete low-rank ternary quadratic catalogue](research/multipoint-low-rank-seeds.md)
+excludes binary seeds with cut-rank product at most three at both finite
+interpolation points: all 32,265 representatives satisfy the exact multipoint
+pressure floor `rho >= 3/4`, over every degree allocation and two-cut scale.
+The [pure-value subfamily](research/multipoint-rank-one-seeds.md) has its
+own smaller replay. Larger local ranks and additional field points remain
+open. Run `make verify-multipoint-rank-two` for the broader catalogue.
 
 The [weighted code-block theorem](research/difference-support-rank-floor.md)
 excludes the full elementary crossing coefficient span on **every pair of
@@ -1026,6 +1105,9 @@ constructs dominant relation certificates for 60-bit and 80-bit inputs and
 recovers proper factors without class enumeration. Replay both certificates
 and two smaller-box exhaustion controls with `make verify-arithmetic-sieve`;
 success in a larger finite box is not a uniform factoring-time bound.
+The direct-word certificates use the polynomial ideal-lattice composer and
+a diagonal fixed by the word bound, reducing the two determinant encodings
+to 520 and 500 bits. The original pair-form certificates remain replayable.
 The [quantitative localization target](research/smooth-norm-localization.md)
 now specifies the required short-box theorem and its conditional complete
 cost. The localized smoothness statement and splitting coverage are both
@@ -1060,6 +1142,32 @@ For [self-reciprocal quartics](research/bell-quartic-rigidity.md), an exact
 matrix identity relates a pressure witness to sparse Hadamard rank reduction;
 it is a necessary condition and supplies no improved factoring bound.
 
+
+The current ordinary-proof campaign establishes these scoped results:
+
+| Scope | Result and evidence |
+| --- | --- |
+| Bare ungauged local Smith profiles, every field and degree, fixed auxiliaries | [Degree budgets](research/all-degree-small-alphabet-smith-floor.md) and [shared minors](research/shared-minor-smith-floor.md) exclude a half-rate improvement through six letters. |
+| The same certificate on 7 through 10 letters | An [exact entropy dual](research/leading-rank-entropy-floor.md) forces exactly one minimum-order channel in each cut for any potential improvement. |
+| Scalar paths with a monomial column determinant | [Inverse-degree compatibility](research/inverse-degree-crossing-compatibility.md) rules out the formal seven-letter optimum at every integer ramification. |
+| Polynomial inverse paths on 7 through 10 letters | [Inverse-degree aspect bounds](research/inverse-degree-aspect-bounds.md) cap the useful degree; they also exclude all `2^31` binary level-weight assignments of the fixed nine-letter flag. |
+| Noncommuting quadratic-inverse constructions | A [general two-jet tradeoff and complete nine-letter schedule](research/nine-letter-quadratic-inverse-probe.md) show why suppressing order one alone fails; all 31 tested level choices are excluded at every scale. Other pencils remain open. |
+
+The [binary quadratic](research/binary-quadratic-catalogue.md) and
+[extended polynomial catalogues](research/extended-binary-polynomial-catalogues.md)
+retain the finite evidence behind these arguments, including all 16,777,216
+parity quartics. Their independent replay limits are stated explicitly.
+Run `make verify-polynomial-crossings` for the focused Python checks;
+optional `--full` replays are documented in those notes. The separate
+`make verify-polynomial-native` gate uses Clang and Boost for complete local
+Smith profiles and independent Toeplitz controls.
+
+Run `make verify-nine-letter-all` for every complete profile and all-scale
+certificate in the 31-path native schedule.
+
+These results restrict the stated certificates. Independent gauges,
+coefficient recombinations, cancellation refinements, and larger alphabets
+remain constructive routes; no stronger factoring score follows here.
 
 ## Contribution and attribution
 

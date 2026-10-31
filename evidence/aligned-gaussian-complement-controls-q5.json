@@ -1,0 +1,43 @@
+{
+  "record": "evidence/aligned-gaussian-complement-directions-q5.json",
+  "record_sha256": "31b75f44973b05e4c04c780743f2d3ba80bc40e4505959658c7e49bae86adc5b",
+  "status": "passed",
+  "source_provenance": {
+    "aligned_gaussian_complements.py": {
+      "location": "worktree",
+      "sha256": "4fa80647f5017cf3d395fd472c86a3e590a512753123c50013b2786c3bc2dfd3"
+    },
+    "selected_gaussian_coefficients.py": {
+      "location": "worktree",
+      "sha256": "eba892e833a2b61abc8af15fe57a31a7781670fe7287277371f5de9e89f91354"
+    },
+    "selected_gaussian_coefficients.cpp": {
+      "location": "worktree",
+      "sha256": "b648c25e65907b8528bd0491ef2a67442cc1c6982f95e1d5335bc41246a51a15"
+    },
+    "native_rectangular_smith_f4.cpp": {
+      "location": "worktree",
+      "sha256": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6"
+    },
+    "saturated_dual_kernel_directions.py": {
+      "location": "worktree",
+      "sha256": "a8034b7acda20c986619e55e5f71873371f38adedc9d2366d1e2c4a6f13745eb"
+    },
+    "search_f4_recentered_crossings.py": {
+      "location": "worktree",
+      "sha256": "8715f1a28b0cb68ad4d3fd29adc53fe082f6181882ed4bce7ce0e9ff582b0be4"
+    },
+    "reflection_dual_rail_gaussian.py": {
+      "location": "worktree",
+      "sha256": "6d4780f02b9479d2473c823f74c4749f47e1db0bd32e5318bd601bdd51010a38"
+    }
+  },
+  "independent_full_baseline_minors": 625,
+  "independent_complementary_minors": 130,
+  "literal_endpoint_zero_slab_entries": 8125,
+  "exact_polynomial_normalization_identities": 8125,
+  "direct_degree18_slab_entries": 2125,
+  "candidate_directions": 505,
+  "independent_direction_rank_over_F2_and_F4": 295,
+  "checker_sha256": "de55d5b6dfd8601618ccf92ceadcaac9caedb71e1f56fc6c831a88361b219779"
+}

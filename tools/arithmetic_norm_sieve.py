@@ -11,9 +11,14 @@ from math import gcd, isqrt
 import sys
 
 from arithmetic_two_group import power, project_to_two_part, two_group_basis
-from binary_quadratic_forms import ambiguous_factor, compose_forms, inverse_form, reduce_form
+from binary_quadratic_forms import ambiguous_factor
 from bounded_smooth_norm import norm_to_pair, smooth_factors
 from check_positive_relation_kernel import determinant
+from quadratic_form_arithmetic import (
+    compose_primitive as compose_forms, inverse_primitive as inverse_form,
+    reduce_primitive as reduce_form,
+)
+from smooth_norm_relation import dominant_relation_row, norm_to_prime_word
 
 
 def prime_base(discriminant, bound):
@@ -45,6 +50,19 @@ def roots_x(form, y, prime, root):
     return range(prime) if c*y*y % prime == 0 else []
 
 
+def sieve_row(form, base, y, x_min, x_max):
+    a, b, c = form
+    values = [a*x*x+b*x*y+c*y*y for x in range(x_min, x_max+1)]
+    residual = values[:]
+    for prime, root, _ in base:
+        for residue in roots_x(form, y, prime, root):
+            first = (residue-x_min) % prime
+            for index in range(first, len(values), prime):
+                while residual[index] > 1 and residual[index] % prime == 0:
+                    residual[index] //= prime
+    return values, residual
+
+
 def find_pair(form, base, bound, radius, x_bound, y_bound):
     a, b, c = form
     if gcd(a, b*b-4*a*c) == 1 and smooth_factors(a, bound) is not None:
@@ -53,13 +71,7 @@ def find_pair(form, base, bound, radius, x_bound, y_bound):
             return pair, (1, 0), 1
     candidates = 1
     for y in range(1, y_bound+1):
-        values = [a*x*x+b*x*y+c*y*y for x in range(x_bound+1)]
-        residual = values[:]
-        for prime, root, _ in base:
-            for residue in roots_x(form, y, prime, root):
-                for x in range(residue, len(values), prime):
-                    while residual[x] > 1 and residual[x] % prime == 0:
-                        residual[x] //= prime
+        values, residual = sieve_row(form, base, y, 0, x_bound)
         for x, remainder in enumerate(residual):
             candidates += 1
             if remainder != 1 or values[x] > radius*radius:
@@ -67,6 +79,24 @@ def find_pair(form, base, bound, radius, x_bound, y_bound):
             pair = norm_to_pair(form, x, y, bound, radius)
             if pair is not None:
                 return pair, (x, y), candidates
+    return None, None, candidates
+
+
+def find_word(form, base, bound, norm_bound, x_bound, y_bound):
+    a, b, c = form
+    if gcd(a, b*b-4*a*c) == 1 and a <= norm_bound and smooth_factors(a, bound) is not None:
+        return norm_to_prime_word(form, 1, 0, bound, norm_bound), (1, 0), 1
+    candidates = 1
+    for y in range(1, y_bound+1):
+        values, residual = sieve_row(form, base, y, -x_bound, x_bound)
+        for index, remainder in enumerate(residual):
+            candidates += 1
+            if remainder != 1 or values[index] > norm_bound:
+                continue
+            x = index-x_bound
+            word = norm_to_prime_word(form, x, y, bound, norm_bound)
+            assert word is not None
+            return word, (x, y), candidates
     return None, None, candidates
 
 
@@ -106,29 +136,40 @@ def extraction(base, annihilator, integer):
     return basis, factor
 
 
-def generate(integer, bound, x_bound, y_bound):
+def generate(integer, bound, x_bound, y_bound, word_relations=False):
     assert integer > 1 and integer % 2 == 1 and bound >= 2 and x_bound >= 1 and y_bound >= 1
     discriminant = -4*integer
     radius = isqrt(-discriminant-1)//2
     base = prime_base(discriminant, bound)
     identity = (1, 0, integer)
-    diagonal = 1 << (2*integer.bit_length())
+    norm_word_bound = (radius*radius).bit_length()-1
+    diagonal = norm_word_bound+1 if word_relations else 1 << (2*integer.bit_length())
     rows, vectors = [], []
     for index, (_, _, generator) in enumerate(base):
         target = power(generator, diagonal, identity, compose_forms)
-        pair, vector, candidates = find_pair(target, base, bound, radius, x_bound, y_bound)
+        if word_relations:
+            witness, vector, candidates = find_word(target, base, bound, radius*radius, x_bound, y_bound)
+        else:
+            witness, vector, candidates = find_pair(target, base, bound, radius, x_bound, y_bound)
         print(f'relation {index+1}/{len(base)}: {candidates} inspected candidates', file=sys.stderr, flush=True)
-        if pair is None:
+        if witness is None:
             return {'status': 'search_exhausted', 'integer': str(integer), 'failed_generator_index': index,
                     'completed_relations': len(rows), 'x_bound': x_bound, 'y_bound': y_bound}
-        rows.append(relation_row(index, diagonal, pair, base))
+        if word_relations:
+            row = dominant_relation_row(index, [prime for prime, _, _ in base], [0]*len(base),
+                                        witness, 0, norm_word_bound)
+        else:
+            row = relation_row(index, diagonal, witness, base)
+        rows.append(row)
         vectors.append(vector)
     annihilator = abs(determinant(rows))
     basis, factor = extraction(base, annihilator, integer)
     return {
         'scope': 'Finite exact relation/torsion certificate; fixed-box search has no uniform success or improved asymptotic guarantee',
-        'format': 'dominant-norm-relations-v1', 'status': 'factor_found' if factor else 'relations_verified_no_split',
+        'format': 'dominant-norm-word-relations-v2' if word_relations else 'dominant-norm-relations-v1',
+        'status': 'factor_found' if factor else 'relations_verified_no_split',
         'integer': str(integer), 'smooth_bound': bound, 'x_bound': x_bound, 'y_bound': y_bound,
+        'x_min': -x_bound if word_relations else 0,
         'factor_base_size': len(base), 'diagonal_hex': hex(diagonal), 'row_witness_vectors': vectors,
         'relation_matrix_sha256': matrix_hash(rows),
         'relation_determinant_hex': hex(annihilator), 'determinant_bits': annihilator.bit_length(),
@@ -139,6 +180,7 @@ def generate(integer, bound, x_bound, y_bound):
 
 
 def verify(certificate):
+    assert certificate['format'] in ('dominant-norm-relations-v1', 'dominant-norm-word-relations-v2')
     integer, bound = int(certificate['integer']), certificate['smooth_bound']
     radius = isqrt(4*integer-1)//2
     identity, diagonal = (1, 0, integer), int(certificate['diagonal_hex'], 16)
@@ -146,12 +188,21 @@ def verify(certificate):
     vectors = certificate['row_witness_vectors']
     assert len(vectors) == len(base) == certificate['factor_base_size']
     rows = []
+    word_relations = certificate['format'] == 'dominant-norm-word-relations-v2'
+    norm_word_bound = (radius*radius).bit_length()-1
+    assert diagonal == (norm_word_bound+1 if word_relations else 1 << (2*integer.bit_length()))
     for index, ((_, _, generator), (x, y)) in enumerate(zip(base, vectors)):
-        assert 0 <= x <= certificate['x_bound'] and 0 <= y <= certificate['y_bound']
+        assert certificate.get('x_min', 0) <= x <= certificate['x_bound'] and 0 <= y <= certificate['y_bound']
         target = power(generator, diagonal, identity, compose_forms)
-        pair = norm_to_pair(target, x, y, bound, radius)
-        assert pair is not None
-        row = relation_row(index, diagonal, pair, base)
+        if word_relations:
+            word = norm_to_prime_word(target, x, y, bound, radius*radius)
+            assert word is not None
+            row = dominant_relation_row(index, [prime for prime, _, _ in base], [0]*len(base),
+                                        word, 0, norm_word_bound)
+        else:
+            pair = norm_to_pair(target, x, y, bound, radius)
+            assert pair is not None
+            row = relation_row(index, diagonal, pair, base)
         value = identity
         for exponent, (_, _, form) in zip(row, base):
             value = compose_forms(value, power(form if exponent >= 0 else inverse_form(form), abs(exponent), identity, compose_forms))
@@ -166,7 +217,8 @@ def verify(certificate):
     encoded = [[[str(value) for value in form], order] for form, order in basis]
     assert encoded == certificate['extracted_two_group_basis']
     assert factor is not None and str(factor) == certificate['recovered_factor'] and integer % factor == 0
-    return {'integer': str(integer), 'verified_relations': len(rows), 'determinant_bits': annihilator.bit_length(),
+    return {'integer': str(integer), 'format': certificate['format'],
+            'verified_relations': len(rows), 'determinant_bits': annihilator.bit_length(),
             'determinant_two_valuation': certificate['determinant_two_valuation'],
             'two_group_basis_order_logs': [order for _, order in basis], 'proper_factor': str(factor)}
 
@@ -177,5 +229,7 @@ if __name__ == '__main__':
     parser.add_argument('--smooth-bound', type=int, default=1000)
     parser.add_argument('--x-bound', type=int, default=4096)
     parser.add_argument('--y-bound', type=int, default=64)
+    parser.add_argument('--word-relations', action='store_true', help='use smooth words directly and the minimal norm-word diagonal')
     arguments = parser.parse_args()
-    print(json.dumps(generate(arguments.integer, arguments.smooth_bound, arguments.x_bound, arguments.y_bound), indent=2))
+    print(json.dumps(generate(arguments.integer, arguments.smooth_bound, arguments.x_bound,
+                              arguments.y_bound, arguments.word_relations), indent=2))

@@ -1,4 +1,4 @@
-.PHONY: verify verify-docs verify-frontier verify-arithmetic verify-arithmetic-framework verify-post-half verify-formal verify-k6 verify-half-appendix verify-bell help verify-schur-fermion verify-schur-central verify-schur-gaussian verify-schur-sparse verify-fixed-modes verify-cancellation-modules verify-minimal-modules verify-exact-modules verify-cancellation-crossing verify-block-smith verify-linear-smith verify-type-pressure verify-crossing-interpolation verify-smith-oracle verify-controlled-smith verify-sparse-holonomy verify-charge-pruning verify-cubic-full-images verify-arithmetic-sieve
+.PHONY: verify verify-docs verify-frontier verify-arithmetic verify-arithmetic-framework verify-post-half verify-formal verify-k6 verify-half-appendix verify-bell help verify-schur-fermion verify-schur-central verify-schur-gaussian verify-schur-sparse verify-fixed-modes verify-cancellation-modules verify-minimal-modules verify-exact-modules verify-cancellation-crossing verify-block-smith verify-linear-smith verify-type-pressure verify-crossing-interpolation verify-smith-oracle verify-controlled-smith verify-sparse-holonomy verify-charge-pruning verify-cubic-full-images verify-arithmetic-sieve verify-polynomial-crossings verify-polynomial-native verify-nine-letter-all
 
 verify: verify-docs verify-frontier verify-arithmetic
 	python3 -m unittest discover -s tests -v
@@ -41,6 +41,11 @@ verify-arithmetic:
 	python3 tools/check_interval_unit_jets.py
 	python3 tools/check_interval_packet_circuits.py
 	python3 tools/check_normalized_interval_jets.py
+	python3 tools/check_interval_pole_trace.py
+
+.PHONY: verify-interval-pole-trace
+verify-interval-pole-trace:
+	python3 tools/check_interval_pole_trace.py
 
 verify-bell:
 	python3 tools/check_bell_crossing.py
@@ -425,6 +430,23 @@ verify-charge-pruning:
 verify-cubic-full-images:
 	python3 tools/check_cubic_full_image_span.py --output /tmp/cubic-full-image-span.json
 
+.PHONY: verify-polynomial-crossings verify-polynomial-native verify-nine-letter-all
+verify-polynomial-crossings:
+	python3 tools/check_quadratic_inverse_degree_caps.py
+	python3 tools/check_quadratic_inverse_paths.py --alphabet 9
+	python3 tools/check_leading_rank_entropy_floor.py
+	python3 tools/check_quadratic_inverse_paths.py
+	python3 tools/check_shared_minor_smith_floor.py
+	python3 tools/check_all_degree_smith_floor.py
+	python3 tools/check_quadratic_crossings.py
+	python3 tools/check_extended_binary_crossings.py
+
+verify-polynomial-native:
+	python3 tools/check_polynomial_local_smith.py --nine-letter
+
+verify-nine-letter-all:
+	python3 tools/check_nine_letter_level_catalogue.py
+
 verify-post-half:
 	python3 tools/check_half_piece_ranks.py --full
 	python3 tools/check_half_projection.py
@@ -434,6 +456,13 @@ verify-arithmetic-sieve:
 	python3 tools/check_arithmetic_sieve_certificate.py
 
 verify-frontier: verify-bell
+	python3 tools/check_quadratic_inverse_degree_caps.py > /dev/null
+	python3 tools/check_quadratic_inverse_paths.py --alphabet 9 > /dev/null
+	python3 tools/check_leading_rank_entropy_floor.py > /dev/null
+	python3 tools/check_quadratic_inverse_paths.py > /dev/null
+	python3 tools/check_shared_minor_smith_floor.py > /dev/null
+	python3 tools/check_all_degree_smith_floor.py > /dev/null
+	python3 tools/check_quadratic_crossings.py > /dev/null
 	python3 tools/check_arithmetic_two_group.py
 	python3 tools/check_positive_relation_kernel.py
 	python3 tools/check_arithmetic_bias_seed.py
@@ -465,6 +494,9 @@ help:
 	@printf '%s\n' \
 	  'make verify               - unit tests, exact certificates, and local documentation links' \
 	  'make verify-frontier      - focused frontier certificates' \
+  'make verify-polynomial-crossings - focused polynomial crossing certificates' \
+  'make verify-polynomial-native - optional native local Smith profile checks' \
+  'make verify-nine-letter-all - complete 31-path nine-letter profile catalogue' \
 	  'make verify-post-half     - larger optional matrix-rank checks' \
 	  'make verify-docs          - check local Markdown file links' \
 	  'make verify-arithmetic-sieve - replay the 60/80-bit arithmetic certificates and finite search limits' \
@@ -747,3 +779,102 @@ verify-prime-deficit-affine-synthesis:
 .PHONY: verify-binary-target-box
 verify-binary-target-box:
 	python3 tools/check_binary_target_box.py --output /tmp/integer-factoring-binary-target-box-replay.json
+
+.PHONY: verify-full-alphabet-affine
+verify-full-alphabet-affine:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_full_alphabet_two_cut_lattices.py --output /tmp/integer-factoring-full-alphabet-affine-replay.json --search-records evidence/full-alphabet-q4-natural-affine-search.json evidence/full-alphabet-q4-degenerate-affine-search.json
+
+
+.PHONY: verify-multiplier-automata verify-global-code-multipliers
+verify-multiplier-automata:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_boolean_multiplier_automata.py --output /tmp/integer-factoring-multiplier-automata-replay.json
+
+verify-global-code-multipliers:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_global_code_multipliers.py --output /tmp/integer-factoring-global-code-multipliers-replay.json
+
+
+.PHONY: verify-quartic-tiles
+verify-quartic-tiles:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_reflection_quartic_tiles.py --output /tmp/integer-factoring-quartic-tiles-replay.json
+
+
+.PHONY: verify-shared-minor-targets
+verify-shared-minor-targets:
+	python3 tools/check_shared_minor_profile_targets.py --output /tmp/integer-factoring-shared-minor-targets-replay.json
+
+
+.PHONY: verify-regular-frame-cells verify-finite-smith-frames
+verify-regular-frame-cells:
+	python3 tools/check_formal_row_flags.py --output /tmp/integer-factoring-formal-row-flags-replay.json
+
+verify-finite-smith-frames:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_finite_precision_smith_frames.py --output /tmp/integer-factoring-finite-smith-frames-replay.json
+
+
+.PHONY: verify-odd-fiber-codes
+verify-odd-fiber-codes:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_odd_fiber_crossings.py --output /tmp/integer-factoring-odd-fiber-codes-replay.json
+
+
+.PHONY: verify-joint-syndrome-filters
+verify-joint-syndrome-filters:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_joint_syndrome_filter_synthesis.py --output /tmp/integer-factoring-joint-syndrome-filters-replay.json
+
+
+.PHONY: verify-typed-charge-lattices
+verify-typed-charge-lattices:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_typed_charge_lattice_synthesis.py --output /tmp/integer-factoring-typed-charge-lattice-replay.json
+
+
+.PHONY: verify-joint-multiplier-separation
+verify-joint-multiplier-separation:
+	python3 tools/check_joint_boolean_multiplier_separation.py --output /tmp/integer-factoring-joint-multiplier-separation-replay.json
+
+
+.PHONY: verify-colored-row-fibers
+verify-colored-row-fibers:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_colored_row_fibers.py --output /tmp/integer-factoring-colored-row-fibers-replay.json
+
+
+.PHONY: verify-fused-six-vertex
+verify-fused-six-vertex:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_fused_six_vertex_crossings.py --output /tmp/integer-factoring-fused-six-vertex-replay.json --search-records evidence/fused-six-vertex-gauges-m2-theta2.json evidence/fused-six-vertex-gauges-m3-theta4.json
+
+
+.PHONY: verify-nonlinear-symbol-charges
+verify-nonlinear-symbol-charges:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_nonlinear_symbol_charges.py --output /tmp/integer-factoring-nonlinear-symbol-charges-replay.json
+
+
+.PHONY: verify-paired-quartic-poles
+verify-paired-quartic-poles:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_reflection_paired_quartic_words.py --output /tmp/integer-factoring-paired-quartic-poles-replay.json
+
+
+.PHONY: verify-cube-charge-vertices
+verify-cube-charge-vertices:
+	python3 tools/check_cube_charge_vertices.py --output /tmp/integer-factoring-cube-charge-vertices-replay.json
+
+
+.PHONY: verify-coefficient-height-walks
+verify-coefficient-height-walks:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_full_alphabet_walk_records.py --records evidence/full-alphabet-alternating-walk-0.json evidence/full-alphabet-alternating-walk-1.json --output /tmp/integer-factoring-coefficient-height-walks-replay.json
+
+
+.PHONY: verify-mixed-quartic-poles
+verify-mixed-quartic-poles:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_reflection_mixed_paired_words.py --output /tmp/integer-factoring-mixed-quartic-poles-replay.json
+
+
+.PHONY: verify-binary-typed-endpoints
+verify-binary-typed-endpoints:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_binary_typed_endpoint_gauges.py --output /tmp/integer-factoring-binary-typed-endpoints-replay.json
+
+
+.PHONY: verify-joint-residue-retiming
+verify-joint-residue-retiming:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_joint_syndrome_residue_retiming.py --output /tmp/integer-factoring-joint-residue-retiming-replay.json
+
+.PHONY: verify-cell-minor-caps
+verify-cell-minor-caps:
+	python3 tools/check_cell_minor_caps.py --output /tmp/integer-factoring-cell-minor-caps-replay.json

@@ -99,9 +99,12 @@ evidence scope; they are not independent mathematical acceptance.
 | [#41](https://github.com/1337isnot1337/integer-factoring/pull/41), `8c95d717cc30d1826f64ea2bfa93fc87a924ee50`; mathematical checkpoint `dbbd7b14d52f4ded9a85e694ce2f10573d9f3564` | Merged at `3a1cd6758393c70ee2e844ec343ecb077c16cf6f` | Bell transforms, folded/code constructions, scoped rank and pressure floors, rigidity interface, and completed finite searches. All 40 research/tool/evidence files from the checked mathematical checkpoint were compared with integrated main and retained byte for byte. `make verify`, focused Bell checks, and independent profile readbacks passed at the recorded source. The lane is released; no stronger factoring bound is claimed. |
 | [#47](https://github.com/1337isnot1337/integer-factoring/pull/47), `80d3af0602476648d13601f28ff721822aec1187`; mathematical checkpoint `2aef203c88ae8de0fa19d103bc1d70f3723c402c` | Merged at `a24247394438492dc8d1689dbfb15cdf295774e8` | Arithmetic inverse sections, complete-orbit aggregation, global modular product circuits, and valuation-separated local jets. `make verify` and the class-group integration gate passed before merge; no new Lean source or local Lean build. Global rational-factor extraction remains unresolved. The later exact rational-part identity, specialization caveat, and 192 pole controls are retained at `4f752e4c2301c899d9af51415cc2e7a844e880e6`. |
 
-The combined local default gate passed before the final documentation-only
-rebase for the rational-part checkpoint; its final documentation gate passed
-on `4f752e4` across 289 Markdown files. The intervening missing-tool restoration
+The combined local default gate passed on the rational-part source before
+its final rebase; that rebase also incorporated concurrent code changes.
+The final documentation gate passed on `4f752e4` across 289 Markdown files.
+After those integrations, `make verify` passed again at the exact main head
+`38030d3f7f0d56c609a729ee69c294988edfbaaf`. These checks are local replay,
+not independent mathematical review. The intervening missing-tool restoration
 was coordinated with its source owner in
 [Discussion #51](https://github.com/1337isnot1337/integer-factoring/discussions/51).
 The active global elimination question is
@@ -145,3 +148,22 @@ checks actually run or reused, accepted scope, exclusions, source attribution,
 retaining commit or archive tag, and actual GitHub disposition. A snapshot or
 successful finite replay alone must not be recorded as mathematical acceptance.
 When a PR changes, retain the historical checkpoint and review the delta.
+
+## 2026-10-31: PR #50 integration by research director
+
+- Inspected PR head `e5ba011e5264c6e78086f9b57da7a5be60048dc6` against
+  main `38030d3` in an isolated checkout. Contributor: orda-aska / Claude Code.
+- Preserved main's already-restored tools and subsequent research. Resolved
+  additive README/index conflicts by retaining current content and restoring
+  missing predecessor paragraphs/entries. Retained the 30 missing Make targets.
+- The incremental code changes are lazy SciPy imports and a source-hash-checked
+  embedded-reference fallback for saved walk records. No research claims changed.
+- Passed `make verify`, the five exact binary/flag/target checks with SciPy
+  available and with all SciPy imports deliberately blocked, and
+  `make verify-coefficient-height-walks` (both embedded-reference records).
+- This is source inspection and integration testing, not independent acceptance
+  of the mathematical claims. No Lean rebuild or PR approval was performed.
+
+## 2026-10-31: PR #49 integration by research director
+
+Exact head 78b3cca917583eff2324671d6fd241c28ebd7019; contributor orda-aska / Claude Code. Inspected incremental source, preserved current main, and replayed make verify-cell-minor-caps byte-identically against evidence. Full make verify passed on the integration tree (315 docs, 50+5 tests). Finite floating findings remain distinct from global positivity. Integration is not independent mathematical acceptance; no new factoring bound, Lean rebuild, or PR approval.
