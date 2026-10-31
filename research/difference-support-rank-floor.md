@@ -1,6 +1,101 @@
-# Active differences force two-cut ranks in restricted elementary crossings
+# An all-code barrier for the elementary crossing coefficient span
 
-## Theorem
+
+## Weighted block theorem: arbitrary paired codes, every field
+
+Let A and B be arbitrary nonempty subsets of {0,1}^m, of sizes a and b.
+Use A on the X,V legs and B on the Y,U legs. Over ANY field, restrict
+
+```
+product_j ((1-z_j) I_j + z_j E_j)
+```
+
+to these physical alphabets. In characteristic two this is the earlier
+I+z_j(E+I) convention. No downset, linearity, site symmetry, or equal-size
+assumption is made. For D in A+B, define
+
+```
+S_D = {x in A : x xor D in B},
+n_D = |S_D|,
+h_D = |{x restricted outside D : x in S_D}|,
+g_D = |{x restricted to D : x in S_D}|.
+```
+
+Every decomposition of a nonzero scalar multiple of the crossing endpoint
+into full multivariate coefficient-span tensors satisfies
+
+```
+sum_i sqrt(r_i c_i) >= sum_(D in A+B) sqrt(h_D g_D)
+                     >= a*b / sqrt(min(a,b))
+                     >= (a*b)^(3/4).                 (W)
+```
+
+In particular, for a=b=q the lower bound is q^(3/2), and with s pieces
+some r_i*c_i >= q^3/s^2. Polynomially many pieces therefore force
+rho >= 3/4 in the maximum-rank-product interface. This uniformly excludes
+ALL equal-size code restrictions of this elementary seed, including
+arbitrary different codes on the two crossing pairs. The unequal-size
+bound also defeats the ordinary paired-exchange rank-sum envelope.
+
+This is a coefficient-span theorem, not an obstruction to new local seeds,
+context-dependent auxiliary kernels, or arbitrary factoring algorithms.
+The complete factoring score remains 1/2. No new Lean proof is asserted.
+
+### Proof
+
+For a coefficient functional L put beta_D=L(product_(j in D) z_j), now
+including D=0. A swapped entry (u,v)=(y,x), where x xor y=D, is exactly
+beta_D. Outside D all four bits coincide, so no extra factor is present.
+
+In the row cut, nonzero entries preserve both the xor difference D and
+the intersection x intersection y. For fixed D, these intersections are
+exactly the h_D outside projections of S_D. Every one of these h_D
+separate blocks contains a swapped entry beta_D. Thus
+
+```
+r(L) >= sum_(D: beta_D != 0) h_D.
+```
+
+In the column cut, nonzero entries preserve D=x xor u=y xor v. On D,
+local multiset equality forces y=u and v=x. Each of the g_D orientations
+x restricted to D can couple only to its complementary column orientation.
+After permuting column blocks these are separate blocks, each containing
+a swapped entry beta_D. Hence
+
+```
+c(L) >= sum_(D: beta_D != 0) g_D.
+```
+
+Cauchy--Schwarz yields sqrt(r(L)c(L)) at least the sum of sqrt(h_D*g_D)
+over those active differences. The endpoint identity requires
+sum_i beta_(i,D)=kappa != 0 for every D in A+B. Summing the bound over
+pieces therefore counts every difference at least once, proving the
+first inequality of (W). This uses the same beta_D in both cuts.
+
+An element of S_D is uniquely specified by its inside and outside
+projections, so h_D*g_D >= n_D. Moreover n_D <= min(a,b) and
+sum_D n_D = a*b, since ordered pairs in A x B partition by their xor.
+Therefore
+
+```
+sum_D sqrt(h_D*g_D) >= sum_D sqrt(n_D)
+                    >= sum_D n_D/sqrt(min(a,b)).
+```
+
+Finally max(a,b) >= min(a,b) gives the last inequality of (W).
+All block witnesses are literal nonzero entries. The argument uses no
+order, positivity, algebraic closure, or division by the characteristic.
+
+### Consequence for the current paired-code lane
+
+The earlier unweighted difference count left staggered paired downsets
+open. The weighted argument above closes their ENTIRE elementary
+coefficient-span envelope too, without enumerating larger matching codes.
+Their exact normal forms and checkers remain useful, but a positive pivot
+must change the local kernel or the way auxiliary states couple to it.
+Do not reinterpret this as ruling out all nonlinear-code constructions.
+
+## Unweighted active-difference corollary
 
 For a nonempty binary word code C, let
 Delta(C) = {x xor y : x,y in C, x != y}. Restrict the elementary
@@ -85,8 +180,8 @@ set has at least 2^(m-1)-1 elements. The constant factor does not change
 (2), because log_2(N) = m log_2(phi)+O(1).
 
 This closes that language's scalar elementary coefficient-span route.
-It does not exclude different local polynomials, new auxiliary dynamics,
-or the separately constructed *unequal* physical-code pairs.
+The weighted theorem above also handles unequal physical-code pairs.
+Different local polynomials and new auxiliary dynamics remain outside it.
 
 ## 2. Multiplication graph codes are excluded at every field size
 
@@ -125,8 +220,8 @@ sum_i sqrt(r_i c_i) >= |A+B|,
 where addition is xor, and zero is included if present. The row and column
 cuts each have a nonzero block for every active cross-difference. The
 factor two need not survive because reversing a pair may leave A x B.
-Do not apply the equal-code factor or the hard-core conclusion to the
-staggered paired-code lane without checking its alphabets.
+The weighted theorem above supplies the stronger paired-code conclusion.
+The factor two in the unweighted bound still requires equal codes.
 
 ## Evidence and scope
 
@@ -136,10 +231,13 @@ cmp /tmp/difference-support.json evidence/difference-support-floor.json
 ```
 
 The exact F2 checker exhausts all 273 nonempty codes at lengths one to
-three and all 65,532 multivariate coefficient functionals. It checks
-r >= active differences and c >= twice active differences for every
-case. Additional sumset controls cover hard-core words through length
-14 and multiplication graphs through k=4, plus the rational phi bound.
+three and all 65,532 multivariate coefficient functionals. It checks both
+the unweighted and weighted block bounds. All 225 ordered pairs of nonempty
+two-bit codes add 3,600 paired-code functionals. A separate signed dense
+constructor and modular elimination over F3 check 1,215 functionals on all
+15 nonempty two-bit codes, using (1-z)I+zE. Additional sumset controls cover
+hard-core words through length 14 and multiplication graphs through k=4,
+plus the rational phi bound.
 These controls support the written all-size proof; they are not independent
 review or a new Lean proof. No improved factoring bound is asserted.
 

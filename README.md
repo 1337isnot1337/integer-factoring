@@ -107,14 +107,14 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs five groups on 
 
 ## Current research frontier
 
-The [active-difference rank theorem](research/difference-support-rank-floor.md)
-proves rank-sum at least sqrt(2) times the nonzero difference-set size for
-the elementary crossing on any binary code. It uniformly excludes the full
-no-adjacent-ones language, its exact-size prefixes, and multiplication graph
-codes, while leaving unequal paired codes and new auxiliary kernels open.
-The exact checker covers all 273 codes through three bits and 65,532
-multivariate functionals. This narrows construction choices; the factoring
-score remains 1/2.
+The [weighted code-block theorem](research/difference-support-rank-floor.md)
+excludes the full elementary crossing coefficient span on **every pair of
+binary physical codes**, over every field. For equal alphabet size q,
+the rank-sum is at least q^(3/2), so polynomially many pieces force
+rho >= 3/4. This closes the scalar elementary-code route, including
+staggered paired codes; new kernels and code-coupled auxiliary dynamics
+remain open. Exact controls cover 273 codes, 225 code pairs, and signed
+ternary-field cases. The complete factoring score remains 1/2.
 
 The [smooth-norm relation reduction](research/smooth-norm-relations.md)
 accepts primitive smooth represented norms without a balanced-factor

@@ -16,7 +16,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
-- [Active-difference two-cut rank floor](difference-support-rank-floor.md): a same-monomial witness uniformly excludes hard-core words, their exact-size prefixes, and multiplication graph codes within the elementary full coefficient span; unequal paired alphabets have a separate weaker sumset bound.
+- [All-code elementary coefficient-span barrier](difference-support-rank-floor.md): weighted difference/orientation blocks give rank-sum at least (|A||B|)^(3/4) for arbitrary paired binary codes over every field; equal alphabets force rho >= 3/4, without symmetry or downset assumptions.
 
 - [Difference-unique code rank obstruction](sidon-code-rank-obstruction.md): a literal two-cut block proof excludes the elementary crossing on all cubic binary-field graphs; 16 exact finite controls distinguish the separate multiplication-graph candidate.
 
