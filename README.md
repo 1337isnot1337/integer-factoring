@@ -170,6 +170,10 @@ excludes three-letter restrictions by four constant physical maps over
 every characteristic-two field. When both crossing pairs use the same
 code, the resulting three-letter operator is always singular. Larger
 blocks and bulk-dependent codes remain outside this obstruction.
+A [signed exterior model](research/signed-residual-codes.md) extends the
+single-copy obstruction to every field. Exact identities over the
+27-element field also give a three-conjugate residual phase repair;
+its full polynomial factoring construction remains an open obligation.
 For this Gaussian seed, [generic mode blocks](research/typed-gaussian-generic-blocks.md)
 force cost `Omega(D^2)` when all nonvacuum occupations stay fixed, even
 after arbitrary coefficient recombinations. Growing occupation densities
