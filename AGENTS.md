@@ -19,6 +19,11 @@ For review and queue cleanup, use [docs/REVIEWING.md](docs/REVIEWING.md) and
 the [exact-head ledger](docs/REVIEW_LEDGER.md). Record source, evidence, credit,
 and unresolved scope separately from GitHub merge or closure state.
 
+All pull requests must be ready for review. Do not create draft PRs or convert
+open PRs to drafts. Keep ongoing work reviewable and describe incomplete work
+and remaining obligations in the PR body; ready for review does not mean ready
+to merge. See [CONTRIBUTING.md](CONTRIBUTING.md#pull-request-status).
+
 State the exact claim and its assumptions, the algorithm and complete cost
 where relevant, the evidence actually checked, and the remaining obligations.
 Finite certificates or formal lemmas do not by themselves establish an
