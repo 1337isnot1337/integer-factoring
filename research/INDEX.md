@@ -14,6 +14,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Carry-based swap circuits](carry-swap-circuits.md): all-size direct, inverse, and binary-compressed polynomial crossings, with exact low-jet and finite-basepoint exclusions for the recorded instances.
+- [Complete binary cycle-source screens](low-choi-cycle-searches.md): 19,520 quadratic-feedback cycle partitions and 4,285,440 joined-LFSR linear gauges, with independent first-jet controls and optional native reruns.
 - [Larger exact divisor checkpoints](large-divisor-checkpoints.md): independent prime-order replays through 32,768 bits, saved complete maxima and witnesses, and a focused large-decimal CLI fix.
 - [Factoring from scalar counts in every fixed prime characteristic](fixed-prime-factor-transfer.md): power-root tuples, cyclic factor orbits, and explicit linear-mass arithmetic/comparison networks remove the coefficient-algebra requirement for any fixed prime.
 - [Scalar parity factoring transfer](parity-factor-transfer.md): an odd-witness family for every composite, exact proper-factor recovery, and an `O(n)`-width repeated-squaring constructor reduce factoring to polynomially many scalar `F2` clique evaluations.
