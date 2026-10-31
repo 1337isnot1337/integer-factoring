@@ -123,7 +123,7 @@ For a requested row vector \(\tau\), the constructor chooses
 \(P\ge\max_i\tau_i\). It then requires
 
 \[
-[z^k]\bigl(L A_e(T)R\bigr)_{ij}=0
+\operatorname{coeff}_{z^k}\bigl(L A_e(T)R\bigr)_{ij}=0
 \qquad(k<\tau_i).
 \tag{6}
 \]
@@ -156,6 +156,16 @@ This is an exact parameterization of the full floor fiber. The checker
 compares feasibility and dimension against direct elimination in the
 original coordinates.
 
+For dense nonbinary frames, repeated elimination of the same pivot coordinates
+was the main computational cost. The accelerated implementation expresses
+each original unknown in free affine coordinates by triangular substitution.
+It caches the 256 binary sums within each block of eight coordinate
+expressions. The two coefficient planes use the same tables; multiplication
+by \(\omega\) is applied to the second sum. The affine constant is an extra
+coordinate. These are exact substitutions, with the same output equations
+as direct elimination. A memory estimate selects direct elimination when
+the cached tables would exceed the stated implementation budget.
+
 After a feasible tensor has been reconstructed and checked, it may replace
 \(B\). Its endpoint still satisfies (1), so (2) again describes the entire
 degree-bounded endpoint fiber. Its new regular frames can define different
@@ -181,8 +191,12 @@ T_5(z)=w^{-16}G_{\{0,2,4,8,12\}}(w),\qquad z=w^2,
 \tag{7}
 \]
 
-gives a degree-18 strict crossing on five symbols. Equation (7) is checked
-entry by entry by the search constructor. The division is an exact monomial
+gives a degree-18 strict crossing on five symbols. The standalone search
+constructor evaluates the corresponding small Laurent-Pfaffian recurrence
+directly in \(z\). Its 625 entries were compared exactly with (7), retaining
+the source digest
+`91e0ee1014b79e5e042053201717ccd95ad33a27ec7f1ee9a6c2144b10aa75e9`.
+The division in (7) is an exact monomial
 division, and the new variable has only integer exponents. Evaluating at one
 preserves the crossing endpoint.
 
@@ -215,8 +229,11 @@ python3 tools/check_f4_recentered_lattices.py \
 The [recorded controls](../evidence/f4-recentered-lattice-controls.json) cover
 1,665 literal endpoint entries, 39 full tensor substitutions, 32 independent
 Toeplitz-rank calculations, and four genuinely nonbinary reference changes.
-Twenty additional complete-fiber queries agree with the predecessor binary
-implementation. Four out-of-window requests are rejected.
+Twenty additional complete-fiber queries agree with an independent literal
+binary Smith-jet construction. Four out-of-window requests are rejected. The accelerated
+coordinate substitution has another 100 literal substitution controls,
+including dense triangular systems with 257 variables. Four complete
+crossing fibers agree equation by equation with direct elimination.
 
 For the Toeplitz controls, each \(F\)-coefficient is expanded into its
 literal two-by-two binary multiplication matrix. The resulting binary rank

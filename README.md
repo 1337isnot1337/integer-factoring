@@ -141,6 +141,13 @@ parameter. Its exact reduced-dual compiler preserves every crossing piece;
 it does not improve the factoring exponent. Run `make verify-modular-descent`
 to compare it with the original unreduced recursion.
 
+The [difference-unique code obstruction](research/sidon-code-rank-obstruction.md)
+shows why sparse additive graph codes do not rescue the elementary crossing:
+its full multivariate coefficient span has rank-sum at least q(q-1)/sqrt(2).
+This includes every binary cubic field graph, but not general nonlinear codes
+or new auxiliary mechanisms. Sixteen finite controls replay with
+`python3 tools/check_sidon_code_crossings.py`; the factoring score is unchanged.
+
 The [typed rational strictification theorem](research/typed-rational-crossing-strictification.md)
 extends the binary pressure floor to scalar rational kernels with only
 zero/endpoint denominators and crossing endpoints at every paired type
@@ -305,6 +312,13 @@ for the univariate span and a sublinear number of position classes.
 Restricted physical types and the fully multivariate three-letter space
 remain outside those proofs. Run `make verify-steiner-cubic` and
 `make verify-steiner-coefficients`.
+
+The [ordered physical-gauge construction](research/ordered-physical-gauge-crossings.md)
+preserves every crossing endpoint while introducing noncommuting auxiliary
+matrices and polynomially many coefficients. Exact integer dual potentials
+reject all 216 cases of a stated two-dimensional binary control under the
+finite-block rank-sum envelope. Other auxiliaries and a uniform subcritical
+rank bound remain open. Run `make verify-ordered-steiner-gauges`.
 
 The [group-shear extension](research/group-shear-crossings.md) implements
 the swap through three multiplication/division shears over any finite
