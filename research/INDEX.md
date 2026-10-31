@@ -16,6 +16,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Active-difference two-cut rank floor](difference-support-rank-floor.md): a same-monomial witness uniformly excludes hard-core words, their exact-size prefixes, and multiplication graph codes within the elementary full coefficient span; unequal paired alphabets have a separate weaker sumset bound.
+
 - [Difference-unique code rank obstruction](sidon-code-rank-obstruction.md): a literal two-cut block proof excludes the elementary crossing on all cubic binary-field graphs; 16 exact finite controls distinguish the separate multiplication-graph candidate.
 
 - [Dyadic inverse sections](dyadic-inverse-sections.md): exact arithmetic interval recursion, affine-fibre floor sums, integer-factor recovery, and the unresolved aggregation cost.
