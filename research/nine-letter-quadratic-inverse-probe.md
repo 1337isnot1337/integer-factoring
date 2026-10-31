@@ -76,6 +76,62 @@ alone can move almost the entire obstruction into the second coefficient.
 A surviving pencil needs a coordinated early-order profile, with its
 endpoint and inverse degree retained.
 
+## A general first-two-coefficient tradeoff
+
+This phenomenon is forced in part by an ordinary theorem. Over any field,
+let R(w)^-1 have degree at most two, R(1)=I, and suppose Phi(R(0)) has
+row rank one. If c and d are the counts of Smith orders one and two in
+Phi(R(w)), then
+
+```math
+\boxed{d\ge\max(0,q^2-c^2-7c-10).}
+```
+
+Put U=R(0) and expand R=U+wR_1+w^2R_2+.... Writing its inverse as
+L_0+wL_1+w^2L_2, coefficient multiplication and L_0+L_1+L_2=I give
+
+```math
+U^2=R_1U^{-1}R_1+U-R_1-R_2.
+```
+
+Since U is an invertible transpose channel, Phi(U^2) has full rank q^2.
+If r is the row rank of Phi(R_1), decomposing R_1 into r transpose
+channels shows that R_1 U^-1 R_1 has row rank at most r^2. Consequently
+q^2<=r^2+1+r+rank Phi(R_2).
+
+A local Smith channel of order a contributes at most k-a+1 rank to
+coefficient k. Thus r<=2+c and rank Phi(R_2)<=3+2c+d. Substitution
+gives q^2<=c^2+7c+10+d, proving the assertion. The argument makes no
+flag, nilpotent-splitting or characteristic assumption.
+
+For the displayed q=9 path, c=1 already forces at least 63 order-two
+channels; the complete calculation gives 78. Minimizing c alone is
+therefore a poor construction objective. The full profile matters.
+
+## Complete single-level schedule
+
+The [complete catalogue](../evidence/nine-letter-all-single-level-profiles.json)
+now contains all 31 choices of the weight-one level, beyond the original
+first-jet winner. They give fourteen distinct paired profiles. Every
+path has degree 61 and at least 47 order-two infinity channels, so the
+same two-interval proof above excludes every member at every scale.
+
+The [driver](../tools/check_nine_letter_level_catalogue.py) reconstructs
+both original cut matrices for each level, computes every Smith order,
+checks 248 independent Toeplitz prefix ranks, and verifies the
+inverse-degree, shared-minor and first-two-coefficient constraints.
+The best exploratory pressure in this schedule occurs at level 14,
+approximately rho=0.997510152, and remains far from the target.
+
+```sh
+make verify-nine-letter-all
+```
+
+This closes that finite schedule, not arbitrary quadratic-inverse paths.
+New pencils need a different distribution of early channels or a different
+crossing mechanism; changing which one of these levels receives weight one
+has been checked completely.
+
 ## Independent local Smith engine and reproduction
 
 The [native engine](../tools/polynomial_local_smith.cpp) works over

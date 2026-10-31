@@ -82,7 +82,8 @@ The current ordinary-proof campaign establishes these scoped results:
 | Bare ungauged local Smith profiles, every field and degree, fixed auxiliaries | [Degree budgets](research/all-degree-small-alphabet-smith-floor.md) and [shared minors](research/shared-minor-smith-floor.md) exclude a half-rate improvement through six letters. |
 | The same certificate on 7 through 10 letters | An [exact entropy dual](research/leading-rank-entropy-floor.md) forces exactly one minimum-order channel in each cut for any potential improvement. |
 | Scalar paths with a monomial column determinant | [Inverse-degree compatibility](research/inverse-degree-crossing-compatibility.md) rules out the formal seven-letter optimum at every integer ramification. |
-| Noncommuting quadratic-inverse constructions | A [complete nine-letter probe](research/nine-letter-quadratic-inverse-probe.md) fails at every scale despite its small first jet. Other pencils remain open. |
+| Polynomial inverse paths on 7 through 10 letters | [Inverse-degree aspect bounds](research/inverse-degree-aspect-bounds.md) cap the useful degree; they also exclude all `2^31` binary level-weight assignments of the fixed nine-letter flag. |
+| Noncommuting quadratic-inverse constructions | A [general two-jet tradeoff and complete nine-letter schedule](research/nine-letter-quadratic-inverse-probe.md) show why suppressing order one alone fails; all 31 tested level choices are excluded at every scale. Other pencils remain open. |
 
 The [binary quadratic](research/binary-quadratic-catalogue.md) and
 [extended polynomial catalogues](research/extended-binary-polynomial-catalogues.md)
@@ -92,6 +93,9 @@ Run `make verify-polynomial-crossings` for the focused Python checks;
 optional `--full` replays are documented in those notes. The separate
 `make verify-polynomial-native` gate uses Clang and Boost for complete local
 Smith profiles and independent Toeplitz controls.
+
+Run `make verify-nine-letter-all` for every complete profile and all-scale
+certificate in the 31-path native schedule.
 
 These results restrict the stated certificates. Independent gauges,
 coefficient recombinations, cancellation refinements, and larger alphabets

@@ -1,4 +1,4 @@
-.PHONY: verify verify-docs verify-frontier verify-polynomial-crossings verify-polynomial-native verify-post-half verify-formal verify-k6 verify-half-appendix help
+.PHONY: verify verify-docs verify-frontier verify-polynomial-crossings verify-polynomial-native verify-nine-letter-all verify-post-half verify-formal verify-k6 verify-half-appendix help
 
 verify: verify-docs verify-frontier
 	python3 -m unittest discover -s tests -v
@@ -15,6 +15,8 @@ verify-docs:
 	python3 tools/check_docs.py
 
 verify-polynomial-crossings:
+	python3 tools/check_quadratic_inverse_degree_caps.py
+	python3 tools/check_quadratic_inverse_paths.py --alphabet 9
 	python3 tools/check_leading_rank_entropy_floor.py
 	python3 tools/check_quadratic_inverse_paths.py
 	python3 tools/check_shared_minor_smith_floor.py
@@ -25,12 +27,17 @@ verify-polynomial-crossings:
 verify-polynomial-native:
 	python3 tools/check_polynomial_local_smith.py --nine-letter
 
+verify-nine-letter-all:
+	python3 tools/check_nine_letter_level_catalogue.py
+
 verify-post-half:
 	python3 tools/check_half_piece_ranks.py --full
 	python3 tools/check_half_projection.py
 	python3 tools/check_half_restricted_labels.py
 
 verify-frontier:
+	python3 tools/check_quadratic_inverse_degree_caps.py > /dev/null
+	python3 tools/check_quadratic_inverse_paths.py --alphabet 9 > /dev/null
 	python3 tools/check_leading_rank_entropy_floor.py > /dev/null
 	python3 tools/check_quadratic_inverse_paths.py > /dev/null
 	python3 tools/check_shared_minor_smith_floor.py > /dev/null

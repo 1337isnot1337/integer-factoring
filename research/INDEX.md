@@ -14,7 +14,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
-- [Nine-letter quadratic-inverse probe](nine-letter-quadratic-inverse-probe.md): an explicit noncommuting path survives the first-jet screen but fails complete profiles; independent native/Toeplitz checks and an exact all-scale rejection retain the full tensor.
+- [Nine-letter quadratic-inverse probe](nine-letter-quadratic-inverse-probe.md): a general first-two-coefficient tradeoff and complete 31-path schedule, with every exact profile, 248 independent Toeplitz controls and all-scale exclusions.
 - [Inverse-degree compatibility and noncommuting paths](inverse-degree-crossing-compatibility.md): a new cut constraint rules out the formal seven-letter optimum at all integer ramifications; a quadratic-inverse constructor supplies exact endpoints and a complete 5,005-path first-jet exclusion.
 - [Pieces-to-factoring transfer](pieces-to-factoring.md): conditional crossing-parameter transfer, with full bit-cost accounting.
 - [Scale-one modular transfer](scale-one-modular-transfer.md): fixed-field transfer and machine costs.
@@ -28,6 +28,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Obstructions and work beyond 1/2
 
+- [Inverse-degree aspect bounds](inverse-degree-aspect-bounds.md): entropy slack gives degree/inverse-degree limits, stronger quadratic caps 14,20,35,91, and an abstract two-case exclusion for all 2^31 binary level weights on the fixed nine-letter flag.
 - [Leading-rank entropy floor](leading-rank-entropy-floor.md): rational entropy duals exclude a repeated minimum Smith order on 7 through 10 letters, and close every positive kernel-level weighting of the displayed seven-letter transpose channel.
 - [Shared-minor floor through six letters](shared-minor-smith-floor.md): common q-by-q minors couple both cuts and give an all-degree, all-field bare-profile exclusion for q<=6, including fixed auxiliary states; seven letters are the first case left open by this relaxation.
 - [All-degree small-alphabet Smith floor](all-degree-small-alphabet-smith-floor.md): over every field and arbitrary fixed auxiliaries, bare ungauged local profiles on 2, 3 or 4 physical labels cannot improve the half-rate threshold; a sharper scalar binary parity floor holds at every degree.

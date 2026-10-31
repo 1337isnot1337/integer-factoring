@@ -199,7 +199,7 @@ def main():
                 if sum(nu) == 4*regularization and mu[0] == 0 < mu[1]:
                     assert mu[1] <= 2*(nu[-1]-regularization)
                     compatibility_controls += 1
-    print(json.dumps({"alphabet": q, "dimension": n, "kernel_level_counts": dict(Counter(levels)),
+    report = {"alphabet": q, "dimension": n, "kernel_level_counts": dict(Counter(levels)),
                       "paths_screened": sum(histogram.values()), "order_one_histogram": dict(sorted(histogram.items())),
                       "minimum_order_one_multiplicity": multiplicity, "best_one_weight_levels": selected,
                       "actual_degree": degree, "row_constant_rank": 1, "inverse_degree_at_most": 2,
@@ -211,7 +211,37 @@ def main():
                       "complete_first_jet_exclusion": excluded,
                       "small_scale_B_lower_bound": str(small_scale),
                       "large_scale_B_lower_bound": str(large_scale),
-                      "scope": "This weighted kernel-flag family only; no factoring improvement"}, indent=2))
+                      "scope": "This weighted kernel-flag family only; no factoring improvement"}
+    if q == 9:
+        from check_leading_rank_entropy_floor import entropy_dual
+        alpha, _, _, denominator, entropy_power, _ = entropy_dual(9)
+        penalty = alpha[0]-2*alpha[1]/7
+        cutoff = Fraction(239, 200)
+        assert (entropy_power/cutoff**int(denominator*penalty))**6 > 9**(17*denominator)
+        assert cutoff**(6*35) > 9**17
+        full_jet = [0] * (n-1)
+        for jet in jets.values():
+            full_jet = [a ^ b for a, b in zip(full_jet, jet)]
+        full_rank = binary_rank(full_jet)
+        top_three = sorted((rank for rank, count in histogram.items() for _ in range(count)), reverse=True)[:3]
+        early_floor = full_rank-sum(top_three)
+        assert full_rank == 80 and top_three == [22, 22, 18] and early_floor == 18
+        split = Fraction(5, 4)
+        small_case = Fraction(n)/split**2 * (1+Fraction(early_floor)/split)
+        large_case = split**31
+        assert small_case**7 > 9**20 and large_case**7 > 9**20
+        report['all_binary_level_weights'] = {
+            'assignments_covered': 2**31, 'fixed_kernel_flag': True,
+            'degree': '31 + number of weight-two levels',
+            'high_degree_case': 'at least four weight-two levels: degree >=35',
+            'high_degree_rho_floor': '17/24', 'all_one_jet_rank': full_rank,
+            'top_three_removed_jet_ranks': top_three,
+            'few_twos_order_one_lower_bound': early_floor,
+            'few_twos_scale_split': str(split),
+            'few_twos_small_scale_pressure_floor': str(small_case),
+            'few_twos_large_scale_pressure_floor': str(large_case),
+            'few_twos_rho_floor': '5/7'}
+    print(json.dumps(report, indent=2))
 
 
 if __name__ == "__main__":

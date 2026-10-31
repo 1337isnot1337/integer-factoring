@@ -35,7 +35,7 @@ def prefix_rank(matrix, precision):
     return binary_rank(rows)
 
 
-def nine_letter():
+def nine_letter(one_level=32):
     q, n = 9, 81
     unit = [(1 << (q*b+a)) ^ ((1 << (q*(b-1)+a)) if b else 0)
             for a in range(q) for b in range(q)]
@@ -43,7 +43,9 @@ def nine_letter():
     basis, levels = kernel_flag(nilpotent)
     inverse_basis = inverse(basis)
     triangular = compose(compose(inverse_basis, nilpotent), basis)
-    physical, _ = construct(q, basis, levels, triangular, inverse_basis, (32,))
+    physical, _ = construct(q, basis, levels, triangular, inverse_basis, (one_level,))
+    assert all(physical[i][j].bit_count() % 2 == int(i == j) for i in range(n) for j in range(n))
+    assert all(physical[i][j] & 1 == (unit[j] >> i & 1) for i in range(n) for j in range(n))
     degree = max(value.bit_length()-1 for row in physical for value in row)
     row = [[physical[q*x+u][q*v+y] for u in range(q) for v in range(q)]
            for x in range(q) for y in range(q)]
