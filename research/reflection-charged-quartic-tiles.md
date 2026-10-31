@@ -216,12 +216,20 @@ and is justified by the exact typed division, not by discarding a pole.
 
 ## 6. Rank and exact controls
 
-Strict words and polynomial positive-charge words have full local rank by
-their endpoint arguments. Removable-pole words need not have a regular local
-endpoint. The construction theorem does not assert full local rank for every
-such word. The checker supplies a nonzero determinant specialization over
-F16 before using a full-rank Smith oracle. An unsuccessful finite-field
-specialization is an unresolved rank control, not a proof of rank deficiency.
+Every word in this note has full generic local rank in both scalar cuts,
+including the removable-pole words. This follows from the
+[paired-type endpoint rank theorem](paired-type-endpoint-full-rank.md).
+If a local cut had rank r below its matrix order q^2, its n-fold tensor
+power would have rank at most r^n. A balanced paired-type submatrix is
+regular at w=1 by Section 4 and specializes to a permutation matrix of
+size q^(2n) divided by a polynomial in n. Taking nth roots contradicts
+r<q^2. The same argument applies after selecting any fixed physical
+subalphabet, and permits different sizes for the two paired alphabets.
+
+The checker also supplies a nonzero determinant specialization over F16
+as an independent finite control. Failure to find one in that particular
+field is an unresolved specialization control; it does not invalidate
+the full-rank theorem.
 
 The direct constructor is
 [`reflection_quartic_tiles.py`](../tools/reflection_quartic_tiles.py).

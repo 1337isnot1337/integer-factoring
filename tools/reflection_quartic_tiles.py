@@ -185,10 +185,11 @@ def finite_field_rank(matrix):
 
 
 def full_rank_certificate(seed):
-    """A nonzero determinant specialization proves full generic rank.
+    """An independent finite specialization control of the full-rank theorem.
 
-    Failure to find one in F16 is an unresolved control, not a rank-deficiency
-    theorem. The construction theorem itself does not assume full local rank.
+    All-length paired-type endpoint identities already prove full local rank.
+    Failure to find a witness in F16 is an unresolved specialization control,
+    not a rank-deficiency theorem.
     """
     result=[]
     for side in (0,1):

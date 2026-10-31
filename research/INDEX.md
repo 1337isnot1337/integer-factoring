@@ -16,6 +16,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Paired-type rational endpoints force full local rank](paired-type-endpoint-full-rank.md): crossing specializations of largest type classes force both scalar cut matrices to have full generic rank, including local poles and unequal alphabets; smaller-entropy hypotheses give the precise weaker rank bound.
+
 - [Complete regular row-frame cells](formal-row-flag-cells.md): every formal frame with a fixed constant flag has a unique bounded lower polynomial representative; the degree-gap formula covers all jets over every field.
 
 - [Finite-precision regular Smith frames](finite-precision-smith-frames.md): actual polynomial unit frames retain all coefficient equations below explicit row caps, avoiding irrelevant fraction-free tails; full products, independent profiles, and 316 Toeplitz ranks verify the implementation.
