@@ -18,6 +18,10 @@ verify-docs:
 verify-multilevel-packet:
 	python3 tools/check_multilevel_thue_morse_packet.py
 
+.PHONY: verify-read-once-filters
+verify-read-once-filters:
+	python3 tools/check_read_once_boolean_filter_floor.py
+
 .PHONY: verify-frontier-extensions
 verify-frontier-extensions:
 	python3 tools/check_all_scale_balanced_obstruction.py

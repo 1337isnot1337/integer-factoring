@@ -98,6 +98,13 @@ valuation level below a chosen cutoff at the stated precision. This is a
 scoped reconstruction obstruction, not a stronger factoring exponent.
 Replay it with `make verify-multilevel-packet`.
 
+A [read-once Boolean filter theorem](research/read-once-boolean-filter-floor.md)
+excludes every homogeneous read-once XOR/AND occupation filter throughout
+the interior charge interval, with no degree or mode-count bound. A single
+parity of any number of modes is excluded at every real charge. The proof
+uses a degree-controlled log-odds inequality and retains the full physical
+cost. Run `make verify-read-once-filters` for exact independent controls.
+
 The latest [research checkpoint](research/frontier-session-20261031.md)
 keeps the proved score at `1/2`. An
 [accelerated exact certificate](research/accelerated-interval-certificates.md)

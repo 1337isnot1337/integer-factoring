@@ -212,6 +212,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Obstructions and work beyond 1/2
 
+- [Read-once Boolean filter floor](read-once-boolean-filter-floor.md): a degree-controlled log-odds theorem excludes every homogeneous read-once filter at interior charges and every parity filter at all charges, without a selected-mode bound.
+
 - [Multilevel canonical-packet collisions](multilevel-thue-morse-packet.md): explicit one-bit Thue--Morse inputs collide with zero on every retained valuation level below a chosen cutoff; exact local-polynomial controls supplement the all-size proof.
 
 - [Global charged Gaussian and one-mode Laurent floor](global-charged-gaussian-floor.md): the binary Gaussian has positive critical pressure at every integer length, real aggregate charge, and scale; the complete admissible one-mode Laurent family is also excluded at all charges.
