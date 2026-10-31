@@ -1,0 +1,96 @@
+{
+  "scope": "Exact conversion from a supplied bounded smooth norm to a smooth-form quotient; finite witness search is exhaustive",
+  "representations_checked": 2500,
+  "nonprimitive_scaled_controls": 778,
+  "classes_reached_outside_original_smooth_set": 91,
+  "unbalanced_smooth_representations_rejected": 56,
+  "exact_divisor_search_control": {
+    "discriminant": -1679,
+    "norm": 210,
+    "pair_norms": [
+      15,
+      14
+    ]
+  },
+  "unbalanced_control": {
+    "discriminant": -999,
+    "norm": 125,
+    "radius": 12
+  },
+  "smooth_bound": 7,
+  "records": [
+    {
+      "discriminant": -348,
+      "class_number": 6,
+      "radius": 9,
+      "maximum_supplied_norm": 81,
+      "classes_with_a_bounded_smooth_norm": 3,
+      "exact_smooth_quotient_set_size": 3,
+      "such_classes_outside_original_smooth_set": 0
+    },
+    {
+      "discriminant": -420,
+      "class_number": 8,
+      "radius": 10,
+      "maximum_supplied_norm": 100,
+      "classes_with_a_bounded_smooth_norm": 1,
+      "exact_smooth_quotient_set_size": 1,
+      "such_classes_outside_original_smooth_set": 0
+    },
+    {
+      "discriminant": -4620,
+      "class_number": 24,
+      "radius": 33,
+      "maximum_supplied_norm": 1089,
+      "classes_with_a_bounded_smooth_norm": 1,
+      "exact_smooth_quotient_set_size": 1,
+      "such_classes_outside_original_smooth_set": 0
+    },
+    {
+      "discriminant": -5460,
+      "class_number": 16,
+      "radius": 36,
+      "maximum_supplied_norm": 1296,
+      "classes_with_a_bounded_smooth_norm": 1,
+      "exact_smooth_quotient_set_size": 1,
+      "such_classes_outside_original_smooth_set": 0
+    },
+    {
+      "discriminant": -10007,
+      "class_number": 77,
+      "radius": 50,
+      "maximum_supplied_norm": 2500,
+      "classes_with_a_bounded_smooth_norm": 77,
+      "exact_smooth_quotient_set_size": 77,
+      "such_classes_outside_original_smooth_set": 36
+    },
+    {
+      "discriminant": -41612,
+      "class_number": 90,
+      "radius": 101,
+      "maximum_supplied_norm": 10201,
+      "classes_with_a_bounded_smooth_norm": 17,
+      "exact_smooth_quotient_set_size": 17,
+      "such_classes_outside_original_smooth_set": 8
+    },
+    {
+      "discriminant": -43228,
+      "class_number": 48,
+      "radius": 103,
+      "maximum_supplied_norm": 10609,
+      "classes_with_a_bounded_smooth_norm": 9,
+      "exact_smooth_quotient_set_size": 9,
+      "such_classes_outside_original_smooth_set": 4
+    },
+    {
+      "discriminant": -66548,
+      "class_number": 128,
+      "radius": 128,
+      "maximum_supplied_norm": 16384,
+      "classes_with_a_bounded_smooth_norm": 64,
+      "exact_smooth_quotient_set_size": 64,
+      "such_classes_outside_original_smooth_set": 43
+    }
+  ],
+  "fast_witness_search_supplied": false
+}

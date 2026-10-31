@@ -1,0 +1,59 @@
+{
+  "scope": "Global polynomial circuits modulo 2^p, not just pointwise function equality; no global gcd algorithm.",
+  "seed": 20261035,
+  "paired_symmetric_controls": 256,
+  "complete_coefficient_controls": 1024,
+  "spurious_modular_common_factor_controls": 204,
+  "large_unit_jet_cross_checks": 4,
+  "large_zero_jet_cross_checks": 2,
+  "large_circuits": [
+    {
+      "precision": 32,
+      "jet_degree": 6,
+      "interval": [
+        "1329227995784915872903807060280344583",
+        "1330526069999549579810939684362649619"
+      ],
+      "number": null,
+      "nodes": 318,
+      "input_degree": "1298074214633706907132624082305036",
+      "circuit_sha256": "46d08f409521f267667f4d011a66dd782b7e61807c84cd8b3fec4fb64357e10a"
+    },
+    {
+      "precision": 32,
+      "jet_degree": 6,
+      "interval": [
+        "1329227995784915872903807060280344583",
+        "1330526069999549579810939684362649619"
+      ],
+      "number": "170141183460469231731687303715884105727",
+      "nodes": 381,
+      "input_degree": "1298074214633706907132624082305036",
+      "circuit_sha256": "2c5e4bb5131efc598bf923476e9cc7039e0d69c2f043720221481afd4fa22b0d"
+    },
+    {
+      "precision": 48,
+      "jet_degree": 8,
+      "interval": [
+        "1766847064778384329583297500742918515827483896875618958121606201292619783",
+        "1766847064779991267627556491018460477919825059478141161115388994127921171"
+      ],
+      "number": null,
+      "nodes": 546,
+      "input_degree": "1606938044258990275541962092341162602522202993782792835301388",
+      "circuit_sha256": "f2da4c9041f961a669a5c8bac5742586d6e47dd1bb9b5d9bfe3f541bb6a51c34"
+    },
+    {
+      "precision": 48,
+      "jet_degree": 8,
+      "interval": [
+        "1766847064778384329583297500742918515827483896875618958121606201292619783",
+        "1766847064779991267627556491018460477919825059478141161115388994127921171"
+      ],
+      "number": "226156424291633194186662080095093570025917938800079226639565593765455331327",
+      "nodes": 641,
+      "input_degree": "1606938044258990275541962092341162602522202993782792835301388",
+      "circuit_sha256": "95d643ec776beef6c20143c111b617c222c4eb092d283602559af906fd0552ae"
+    }
+  ]
+}

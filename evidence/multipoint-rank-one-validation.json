@@ -1,0 +1,21 @@
+{
+  "status": "pass",
+  "orbit_sizes": [
+    1,
+    144,
+    144,
+    96,
+    96,
+    32
+  ],
+  "seeds_replayed": 3078,
+  "independent_toeplitz_profiles": 138,
+  "reconstructed_two_copy_crossings": 23,
+  "complete_two_copy_entries": 5888,
+  "exact_rho_floor": "3/4",
+  "scope": "All F3 degree-at-most-two crossings with Swap endpoint and both cut ranks at most one at 0 and 2.",
+  "source_sha256": {
+    "search_multipoint_rank_one_seeds.py": "c63739b5be0d9434a40b95d203d203d33ef2266ddb8a90570281f90c4189d3f1",
+    "check_multipoint_rank_one_seeds.py": "611d4f5d24850ddecfbb5c339513fe7ac7766690606f82f0bdaba6350d31f123"
+  }
+}

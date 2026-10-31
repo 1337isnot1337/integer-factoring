@@ -1,0 +1,51 @@
+{
+  "status": "pass",
+  "complete_normalized_seeds": 32265,
+  "complete_actual_coefficient_seeds": 12852225,
+  "finite_value_orbit_coverage": 3585,
+  "direct_projected_determinant_identities": 64530,
+  "nonzero_endpoint_identities": 32265,
+  "general_left_projection_cases": [
+    [
+      7,
+      29
+    ],
+    [
+      7,
+      56
+    ]
+  ],
+  "literal_positive_characteristic_cofactor_rank_checks": 12,
+  "actual_jet_controls": {
+    "witnesses": 195,
+    "copies": [
+      1,
+      2,
+      3
+    ],
+    "independent_cut_rank_values": 1080,
+    "complete_reconstructed_entries": 851760,
+    "finite_best_rank_products": {
+      "1": 4,
+      "2": 64,
+      "3": 816
+    },
+    "scope": "One retained witness per unequal-determinant signature, not every coefficient seed.",
+    "evidence_sha256": "3136c0b3795265d47c9a34d53c774cf0bcec8c19a8c43b6d9c85710a114181a7"
+  },
+  "leading_rho_floor": "log(3)/(2 log(2))",
+  "scope": "All normalized ternary binary quadratics with two-cut rank product at most two at 0 and 2.",
+  "source_sha256": {
+    "common_cofactor.py": "99df14c20d14d60f83afa9bed599d825f5a637eccd906407daec5bb3b1ee72b5",
+    "check_common_cofactor_barrier.py": "2741f4d0b65c0213dceafa8cb0b3cb7c57fb1d771fffcd317165e0e7a20fcc95",
+    "check_joint_determinant_barrier.py": "0ceabdb6d20857212bfee434f6189b2b855f9c06860a7cdaeb799a72134b2505",
+    "search_multipoint_rank_one_seeds.py": "c63739b5be0d9434a40b95d203d203d33ef2266ddb8a90570281f90c4189d3f1",
+    "search_multipoint_rank_two_seeds.py": "843bdbde8f7a57ea6f9560eb4f098c520437550aab74ad5c8ccb6cdee574ac4f",
+    "check_multipoint_rank_two_seeds.py": "42fb394368581d14c19579babfce027d858f07324d3c6709798fe9cf2d203170",
+    "check_transpose_intertwiner_barrier.py": "9887bef9a56acfb165c3238d5e6046de4cc9a3a3f22b4d3a5547563ffd67f3bb",
+    "check_multipoint_hermite_crossings.py": "a0668c171acc3bd0397325b2e7a08a88ed68fe0de8adda1abb7c655869b9ac3f",
+    "search_asymmetric_quadratic_jets.py": "57308284f03ec31f93f480c26974a3017ce7d85455617c1dae1215d6e16d5ae9",
+    "search_multipoint_actual_jets.py": "32f5dc2bcdd562014dcf2056b9144b7351fb6d82fb1fff9de6a1e2b95cc52294"
+  },
+  "catalogue_sha256": "716ff01e535338195fdd46b7549780537e1064ca68a159845ea12ddba5ed85fd"
+}

@@ -1,0 +1,15 @@
+{
+  "status": "pass",
+  "finite_values_covered_by_stabilizer": 3585,
+  "seeds_replayed": 32265,
+  "independent_toeplitz_profiles": 1926,
+  "reconstructed_two_copy_crossings": 321,
+  "complete_two_copy_entries": 82176,
+  "exact_rho_floor": "3/4",
+  "scope": "F3 binary-alphabet quadratic crossings with two-cut rank product at most two at both 0 and 2; representatives allow a global cut swap.",
+  "source_sha256": {
+    "search_multipoint_rank_one_seeds.py": "c63739b5be0d9434a40b95d203d203d33ef2266ddb8a90570281f90c4189d3f1",
+    "search_multipoint_rank_two_seeds.py": "843bdbde8f7a57ea6f9560eb4f098c520437550aab74ad5c8ccb6cdee574ac4f",
+    "check_multipoint_rank_two_seeds.py": "42fb394368581d14c19579babfce027d858f07324d3c6709798fe9cf2d203170"
+  }
+}

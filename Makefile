@@ -1,6 +1,6 @@
-.PHONY: verify verify-docs verify-frontier verify-post-half verify-schur-fermion verify-schur-central verify-schur-gaussian verify-schur-sparse verify-fixed-modes verify-cancellation-modules verify-minimal-modules verify-exact-modules verify-cancellation-crossing verify-block-smith verify-linear-smith verify-type-pressure verify-crossing-interpolation verify-smith-oracle verify-controlled-smith verify-sparse-holonomy verify-charge-pruning verify-cubic-full-images verify-formal verify-k6 verify-half-appendix help
+.PHONY: verify verify-docs verify-frontier verify-arithmetic verify-arithmetic-framework verify-post-half verify-formal verify-k6 verify-half-appendix verify-bell help verify-schur-fermion verify-schur-central verify-schur-gaussian verify-schur-sparse verify-fixed-modes verify-cancellation-modules verify-minimal-modules verify-exact-modules verify-cancellation-crossing verify-block-smith verify-linear-smith verify-type-pressure verify-crossing-interpolation verify-smith-oracle verify-controlled-smith verify-sparse-holonomy verify-charge-pruning verify-cubic-full-images
 
-verify: verify-docs verify-frontier
+verify: verify-docs verify-frontier verify-arithmetic
 	python3 -m unittest discover -s tests -v
 	python3 -m unittest tools.check_crossing -v
 	python3 tools/check_coefficient_basis.py
@@ -13,6 +13,84 @@ verify: verify-docs verify-frontier
 
 verify-docs:
 	python3 tools/check_docs.py
+
+verify-arithmetic:
+	python3 tools/check_dyadic_hyperbola.py
+	python3 tools/check_dyadic_orbit_aggregation.py
+	python3 tools/check_interval_orbit_gcd.py
+	python3 tools/check_interval_unit_jets.py
+	python3 tools/check_interval_packet_circuits.py
+	python3 tools/check_normalized_interval_jets.py
+
+verify-bell:
+	python3 tools/check_bell_crossing.py
+	python3 tools/check_bell_pencils.py
+	python3 tools/check_bell_profiles.py evidence/bell-synthesis-d4h4.json evidence/bell-synthesis-d8h3.json evidence/bell-folded-adaptive-d8.json evidence/bell-folded-adaptive-d16.json
+	python3 tools/check_folded_bell.py
+	python3 tools/check_code_folded_bell.py
+	python3 tools/check_bell_projection.py
+	python3 tools/check_bell_cubic_floor.py
+	python3 tools/check_bell_quartic_rigidity.py
+
+
+verify-arithmetic-framework:
+	python3 tools/check_arithmetic_two_group.py
+	python3 tools/check_positive_relation_kernel.py
+	python3 tools/check_arithmetic_bias_seed.py
+	python3 tools/check_arithmetic_class_groups.py
+	python3 tools/check_arithmetic_density_lift.py
+	python3 tools/check_bounded_smooth_norm.py
+
+.PHONY: verify-multipoint-rank-one
+verify-multipoint-rank-one:
+	python3 tools/check_multipoint_rank_one_seeds.py
+
+.PHONY: verify-multipoint-rank-two
+verify-multipoint-rank-two:
+	python3 tools/check_multipoint_rank_two_seeds.py
+
+.PHONY: verify-multipoint-smith-floor
+verify-multipoint-smith-floor:
+	python3 tools/check_multipoint_smith_floor.py
+
+.PHONY: verify-transpose-intertwiner
+verify-transpose-intertwiner:
+	python3 tools/check_transpose_intertwiner_barrier.py
+
+.PHONY: verify-joint-determinant
+verify-joint-determinant:
+	python3 tools/check_joint_determinant_barrier.py
+
+.PHONY: verify-downset-crossings verify-regular-code-crossings
+verify-downset-crossings:
+	python3 tools/check_downset_crossing_normal_form.py
+
+verify-regular-code-crossings:
+	python3 tools/search_regular_code_crossings.py --verify evidence/regular-code-crossings.json
+
+.PHONY: verify-auxiliary-coefficient-span
+verify-auxiliary-coefficient-span:
+	python3 tools/search_auxiliary_coefficient_span.py --verify evidence/auxiliary-coefficient-span.json
+
+.PHONY: verify-auxiliary-extension-span
+verify-auxiliary-extension-span:
+	python3 tools/search_auxiliary_extension_span.py --verify evidence/auxiliary-extension-span.json
+
+.PHONY: verify-binary-site-symmetry verify-matching-curve-controls verify-matching-curve-jets
+verify-binary-site-symmetry:
+	python3 tools/check_binary_site_symmetry_barrier.py
+
+verify-matching-curve-controls:
+	python3 tools/check_degree_five_matching_candidate.py
+	python3 tools/check_frobenius_cofactor_span.py
+
+verify-matching-curve-jets:
+	python3 tools/check_matching_curve_jets.py --prime 5 --output /tmp/integer-factoring-matching-five-jets.json
+	python3 tools/check_matching_curve_jets.py --prime 11 --output /tmp/integer-factoring-matching-eleven-jets.json
+
+.PHONY: verify-common-cofactor
+verify-common-cofactor:
+	python3 tools/check_common_cofactor_barrier.py
 
 .PHONY: verify-multilevel-packet
 verify-multilevel-packet:
@@ -49,43 +127,6 @@ verify-multipoint-hermite:
 .PHONY: verify-gaussian-fixed-types
 verify-gaussian-fixed-types:
 	python3 tools/check_reflection_gaussian_fixed_type_duals.py --output /tmp/integer-factoring-gaussian-fixed-types-replay.json
-
-.PHONY: verify-symmetric-binary-filters
-verify-symmetric-binary-filters:
-	python3 tools/check_symmetric_binary_filter_synthesis.py --output /tmp/integer-factoring-symmetric-binary-replay.json
-
-.PHONY: verify-binary-smith-floor
-verify-binary-smith-floor:
-	python3 tools/check_binary_fixed_ray_floor.py --output /tmp/integer-factoring-binary-fixed-ray-replay.json
-	python3 tools/check_binary_all_gauge_floor.py --output /tmp/integer-factoring-binary-all-gauge-replay.json
-
-.PHONY: verify-symmetric-prime-filters verify-symmetric-filter-catalogues
-verify-symmetric-prime-filters:
-	python3 tools/check_symmetric_prime_filter_synthesis.py --output /tmp/integer-factoring-symmetric-prime-replay.json
-
-verify-symmetric-filter-catalogues:
-	python3 tools/check_symmetric_filter_catalogues.py --output /tmp/integer-factoring-symmetric-catalogue-replay.json
-
-.PHONY: verify-gaussian-physical-frames verify-gaussian-coupled-gates
-verify-gaussian-physical-frames:
-	python3 tools/check_reflection_gaussian_physical_frames.py --output /tmp/integer-factoring-gaussian-physical-frames-replay.json
-
-verify-gaussian-coupled-gates:
-	python3 tools/check_reflection_gaussian_coupled_gates.py --output /tmp/integer-factoring-gaussian-coupled-gates-replay.json
-
-.PHONY: verify-physical-splits verify-reflection-code-alphabets
-verify-physical-splits:
-	python3 tools/check_physical_split_crossings.py --output /tmp/integer-factoring-physical-split-replay.json
-
-verify-reflection-code-alphabets:
-	python3 tools/check_reflection_code_alphabets.py --output /tmp/integer-factoring-reflection-code-alphabets-replay.json
-
-.PHONY: verify-nonresonant-filters verify-affine-filter-tiles
-verify-nonresonant-filters:
-	python3 tools/check_nonresonant_boolean_filter_floor.py --output /tmp/integer-factoring-nonresonant-filter-replay.json
-
-verify-affine-filter-tiles:
-	OPENBLAS_NUM_THREADS=1 python3 tools/check_affine_symmetric_tiles.py --output /tmp/integer-factoring-affine-filter-tile-replay.json
 
 .PHONY: verify-frontier-extensions
 verify-frontier-extensions:
@@ -284,7 +325,13 @@ verify-post-half:
 	python3 tools/check_half_projection.py
 	python3 tools/check_half_restricted_labels.py
 
-verify-frontier:
+verify-frontier: verify-bell
+	python3 tools/check_arithmetic_two_group.py
+	python3 tools/check_positive_relation_kernel.py
+	python3 tools/check_arithmetic_bias_seed.py
+	python3 tools/check_arithmetic_class_groups.py
+	python3 tools/check_arithmetic_density_lift.py
+	python3 tools/check_bounded_smooth_norm.py
 	python3 tools/check_piece_transfer.py
 	python3 tools/check_boson_truncation.py
 	python3 tools/check_graded_space.py
@@ -591,9 +638,47 @@ verify-prime-deficit-affine-synthesis:
 .PHONY: verify-binary-target-box
 verify-binary-target-box:
 	python3 tools/check_binary_target_box.py --output /tmp/integer-factoring-binary-target-box-replay.json
+
 .PHONY: verify-full-alphabet-affine
 verify-full-alphabet-affine:
 	OPENBLAS_NUM_THREADS=1 python3 tools/check_full_alphabet_two_cut_lattices.py --output /tmp/integer-factoring-full-alphabet-affine-replay.json --search-records evidence/full-alphabet-q4-natural-affine-search.json evidence/full-alphabet-q4-degenerate-affine-search.json
+
+.PHONY: verify-symmetric-binary-filters
+verify-symmetric-binary-filters:
+	python3 tools/check_symmetric_binary_filter_synthesis.py --output /tmp/integer-factoring-symmetric-binary-replay.json
+
+.PHONY: verify-binary-smith-floor
+verify-binary-smith-floor:
+	python3 tools/check_binary_fixed_ray_floor.py --output /tmp/integer-factoring-binary-fixed-ray-replay.json
+	python3 tools/check_binary_all_gauge_floor.py --output /tmp/integer-factoring-binary-all-gauge-replay.json
+
+.PHONY: verify-symmetric-prime-filters verify-symmetric-filter-catalogues
+verify-symmetric-prime-filters:
+	python3 tools/check_symmetric_prime_filter_synthesis.py --output /tmp/integer-factoring-symmetric-prime-replay.json
+
+verify-symmetric-filter-catalogues:
+	python3 tools/check_symmetric_filter_catalogues.py --output /tmp/integer-factoring-symmetric-catalogue-replay.json
+
+.PHONY: verify-gaussian-physical-frames verify-gaussian-coupled-gates
+verify-gaussian-physical-frames:
+	python3 tools/check_reflection_gaussian_physical_frames.py --output /tmp/integer-factoring-gaussian-physical-frames-replay.json
+
+verify-gaussian-coupled-gates:
+	python3 tools/check_reflection_gaussian_coupled_gates.py --output /tmp/integer-factoring-gaussian-coupled-gates-replay.json
+
+.PHONY: verify-physical-splits verify-reflection-code-alphabets
+verify-physical-splits:
+	python3 tools/check_physical_split_crossings.py --output /tmp/integer-factoring-physical-split-replay.json
+
+verify-reflection-code-alphabets:
+	python3 tools/check_reflection_code_alphabets.py --output /tmp/integer-factoring-reflection-code-alphabets-replay.json
+
+.PHONY: verify-nonresonant-filters verify-affine-filter-tiles
+verify-nonresonant-filters:
+	python3 tools/check_nonresonant_boolean_filter_floor.py --output /tmp/integer-factoring-nonresonant-filter-replay.json
+
+verify-affine-filter-tiles:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_affine_symmetric_tiles.py --output /tmp/integer-factoring-affine-filter-tile-replay.json
 
 .PHONY: verify-multiplier-automata verify-global-code-multipliers
 verify-multiplier-automata:
@@ -668,4 +753,3 @@ verify-binary-typed-endpoints:
 .PHONY: verify-joint-residue-retiming
 verify-joint-residue-retiming:
 	OPENBLAS_NUM_THREADS=1 python3 tools/check_joint_syndrome_residue_retiming.py --output /tmp/integer-factoring-joint-residue-retiming-replay.json
-
