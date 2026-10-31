@@ -665,3 +665,7 @@ verify-mixed-quartic-poles:
 verify-binary-typed-endpoints:
 	OPENBLAS_NUM_THREADS=1 python3 tools/check_binary_typed_endpoint_gauges.py --output /tmp/integer-factoring-binary-typed-endpoints-replay.json
 
+.PHONY: verify-joint-residue-retiming
+verify-joint-residue-retiming:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_joint_syndrome_residue_retiming.py --output /tmp/integer-factoring-joint-residue-retiming-replay.json
+
