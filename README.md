@@ -202,31 +202,31 @@ degree 2,221 to 124. `make verify-joint-polynomial-synthesis` and
 `make verify-weyl-filter-flags` reproduce these gates.
 For a correlated [homogeneous Boolean filter family](research/homogeneous-boolean-filter-bounds.md),
 the full cost is strictly worse than the same natural-charge Gaussian
-at every scale. A biased-support bound extends the relative comparison
-to every charge above an explicit scale threshold; a positive finite-tail
-bound treats the small-scale branch at bounded charge and large interval.
-The [charged Gaussian floor](research/charged-gaussian-pressure-floor.md)
-now closes that gap: fixed degree and bounded charge give positive full
-critical pressure at every scale for all sufficiently large binary
-prime-power intervals. The floor covers real charges
-`|J| <= (6-4sqrt(2))n+2-2sqrt(2)` for every integer `n >= 3`, using
-analytic tails and 290 outward-rational rectangles. A separate exact
-identity treats all even integer charges in `[-2n,2n]` for every digit
-count.
-`make verify-homogeneous-boolean-filters` replays the polynomial identities
-and exact support inequalities.
-The [one-mode Laurent theorem](research/one-mode-binary-laurent-filter-floor.md)
-also excludes every single-mode binary Laurent filter at zero charge,
-over any fixed characteristic-two field and without a degree cutoff.
-Only a common scalar Laurent monomial has the Gaussian cost.
-The [charged extension](research/charged-one-mode-binary-laurent-filters.md)
-proves the same relative domination for every `|J| <= 2n`. Outside that
-interval, relative gains are possible, but a sharp loss cap and an exact
-70-interval certificate prove that the full critical pressure stays
-positive. The [exterior Gaussian theorem](research/exterior-charged-gaussian-floor.md)
-separately covers every digit count at all real `|J| >= 2n`.
-`make verify-charged-gaussian-floor verify-one-mode-laurent-filters`
-replays these additional certificates.
+at every scale. The [global Gaussian floor](research/global-charged-gaussian-floor.md)
+now proves positive complete critical pressure for **every integer length,
+every real aggregate charge, and every positive scale** in the binary
+Gaussian family. It combines exact charge folding, analytic tails,
+small finite bases, and integer-outward certificates. The analytic floor
+also extends to every power-of-two digit count.
+
+This makes the homogeneous filter's large-scale branch absolutely
+positive at every real charge. For fixed Boolean degree and bounded
+charge, its small-scale bound gives positive pressure at every scale for
+all sufficiently large binary prime-power lengths. This last conclusion
+does not extend the correlated small-scale result to unbounded charge.
+`make verify-homogeneous-boolean-filters` replays its exact identities.
+
+The [complete one-mode Laurent theorem](research/global-charged-gaussian-floor.md)
+excludes every admissible single-mode binary Laurent occupation filter
+at every aggregate charge, scale, and finite degree, over any fixed
+characteristic-two coefficient field. The construction retains its
+power-of-two interval lengths. Inside `|J| <= 2n`, equality with the
+Gaussian occurs only for a common scalar Laurent monomial. Outside that
+range, relative gains can occur, but an exact loss cap and a stronger
+Gaussian floor keep the full pressure positive.
+`make verify-global-one-mode-filters` replays the complete certificate
+chain. Independent physical-state gauges and coupled multilevel or
+off-diagonal operators remain outside these exclusions.
 
 [Extension-field operator lattices](research/identity-operator-field-flags.md)
 now permit constant F4 row bases and constructive F16 endpoint lifts.

@@ -16,8 +16,8 @@ R\ge1\qquad\text{whenever}\qquad |J|\le2n.
 \tag{1}
 \]
 
-Equality holds exactly for a common scalar Laurent monomial on both
-occupation states. The statement holds at every scale and degree,
+Within this charge interval, equality holds exactly for a common scalar
+Laurent monomial on both occupation states. The statement holds at every scale and degree,
 including arbitrary multilevel cancellations. The interval is uniform
 over the selected index. Its negative-charge part uses an additional
 coefficient constraint beyond the degree/order dichotomy.
@@ -333,3 +333,9 @@ This proves the exterior corollary, including \(n=1\). The middle
 charge region between the continuous Gaussian band and the exterior
 range remains outside this absolute theorem except for the even
 integer charges covered above.
+
+The subsequent [global Gaussian theorem](global-charged-gaussian-floor.md)
+closes the remaining middle-charge gap. Combined with the relative
+interior theorem and the exterior corollary above, it excludes this
+one-mode family at every real aggregate charge. The filter construction
+retains its admissible power-of-two interval lengths.

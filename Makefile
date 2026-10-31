@@ -504,3 +504,9 @@ verify-folded-gaussian-floor:
 
 verify-small-gaussian-bases:
 	python3 tools/check_small_charged_gaussian_bases.py
+
+.PHONY: verify-global-gaussian-floor verify-global-one-mode-filters
+verify-global-gaussian-floor: verify-charged-gaussian-floor verify-exterior-gaussian-floor verify-folded-gaussian-floor verify-small-gaussian-bases
+	python3 tools/check_global_charged_gaussian_floor.py
+
+verify-global-one-mode-filters: verify-global-gaussian-floor verify-one-mode-laurent-filters verify-charged-one-mode-filters

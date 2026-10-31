@@ -208,6 +208,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Obstructions and work beyond 1/2
 
+- [Global charged Gaussian and one-mode Laurent floor](global-charged-gaussian-floor.md): the binary Gaussian has positive critical pressure at every integer length, real aggregate charge, and scale; the complete admissible one-mode Laurent family is also excluded at all charges.
+
 - [Continuous charge folding and the wider tail floor](folded-charged-gaussian-floor.md): exact all-digit folding and a convex-tail prefix comparison extend the binary continuous floor to absolute charge at most 2n-2-2sqrt(2).
 
 - [Small charged Gaussian bases](small-charged-gaussian-bases.md): analytic tails and 1,627 complete integer-outward rectangles prove all-scale residual bases at lengths one, two, and three.

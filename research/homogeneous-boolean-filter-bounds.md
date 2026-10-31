@@ -194,7 +194,11 @@ e^{2nt_n^*}(1-e^{-t_n^*})=1.
 The bracket in (12) is strictly increasing. Hence \(R>1\) for
 every real \(J\) whenever \(t\ge t_n^*\). This conclusion is uniform
 over \(r,d,g,L,P\) and the selected indices, within the construction's
-stated hypotheses.
+stated hypotheses. The subsequent [global Gaussian floor](global-charged-gaussian-floor.md)
+therefore makes the full critical pressure positive on this large-scale
+branch for every real aggregate charge. The small-scale argument below
+still requires bounded Boolean degree and bounded charge as the interval
+grows.
 
 There can be relative gains below this scale at extreme charges.
 For example, \(n=32,P=1,r=d=1,j_1=0,L=266,J=-1000,t=0.01\)
