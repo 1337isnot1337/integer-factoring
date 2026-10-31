@@ -1,0 +1,48 @@
+{
+  "status": "exact coefficient closure and permutation orbit certified",
+  "source_record_sha256": "fc6b3b57cbc771802105fe4099088be41f134db05af246a03e29bfa88e8cd025",
+  "source_and_saturated_constant_slab_dimension": 22,
+  "unshifted_first_leg_tensor_dimension": 110,
+  "crossing_preserving_permutations": 8,
+  "permutation_constant_tensor_dimension": 367,
+  "literal_degree18_direction_rank": 1980,
+  "permutation_endpoint_dimension_at_degree18": 6606,
+  "pure_tensor_controls": [
+    {
+      "basis_index": 8,
+      "three_leg_supports": [
+        [
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          2,
+          3,
+          4
+        ]
+      ]
+    },
+    {
+      "basis_index": 19,
+      "three_leg_supports": [
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          4
+        ]
+      ]
+    }
+  ],
+  "factoring_bound_improved": false
+}
