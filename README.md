@@ -153,6 +153,11 @@ For [localized quartic changes](research/localized-quartic-profiles.md),
 exact determinant and complete zero-profile formulas quantify the cost
 of the resulting spread in Smith orders. A rank-deficient limiting
 endpoint is explicitly checked and requires a further restriction.
+[A polynomial physical code](research/residual-quartic-codes.md) repairs
+that endpoint and cancels its denominators term by term. It gives an
+explicit eight-letter, degree-32 candidate whose quartic correction
+survives common types. Its endpoint is proved; a pressure improvement
+has not been established.
 For this Gaussian seed, [generic mode blocks](research/typed-gaussian-generic-blocks.md)
 force cost `Omega(D^2)` when all nonvacuum occupations stay fixed, even
 after arbitrary coefficient recombinations. Growing occupation densities

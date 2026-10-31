@@ -62,6 +62,7 @@ verify-crossing-interpolation:
 	python3 tools/check_tensorized_smith_sections.py
 	python3 tools/check_positive_energy_quartic_endpoints.py
 	python3 tools/check_localized_quartic_profiles.py
+	python3 tools/check_residual_quartic_codes.py
 
 verify-smith-oracle:
 	python3 tools/check_weighted_smith_oracle.py
