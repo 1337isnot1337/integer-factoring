@@ -75,10 +75,17 @@ def main():
     pairs = [(0, 0)]+list(combinations_with_replacement(product_masks(), 2))
     pairs += [(randomizer.randrange(65536), randomizer.randrange(65536)) for _ in range(args.random_pairs)]
     if args.catalogue_limit is not None:
-        randomizer.shuffle(pairs[1:])
-        pairs = pairs[:args.catalogue_limit]
+        shuffled = pairs[1:]
+        randomizer.shuffle(shuffled)
+        pairs = (pairs[:1]+shuffled)[:args.catalogue_limit]
+    script_root = Path(__file__).resolve().parent
+    source_names = (Path(__file__).name, 'closed_auxiliary_blocks.py',
+                    'native_rectangular_smith_f4.py', 'native_rectangular_smith_f4.cpp',
+                    'search_rectangular_f4_pressure.py')
     report = {'scope': 'Finite closed auxiliary-block construction and floating gauge search; no new factoring bound.',
               'arguments': vars(args) | {'output': str(args.output)},
+              'source_sha256': {name: sha256((script_root/name).read_bytes()).hexdigest()
+                               for name in source_names},
               'catalogue_size': len(pairs), 'seeds': [], 'profile_classes': [],
               'weighted_records': [], 'completed_catalogue': False,
               'completed_weighted_schedule': False}

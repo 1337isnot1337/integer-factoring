@@ -24,6 +24,7 @@ def main():
     parser.add_argument('--directions', type=Path, default=Path('evidence/source-slab-module-directions-h16.json'))
     parser.add_argument('--seconds', type=float, default=3600.)
     parser.add_argument('--maximum-cases', type=int)
+    parser.add_argument('--precision', type=int, choices=(128, 256, 512, 1024), default=128)
     parser.add_argument('--random-seed', type=int, default=31102691)
     parser.add_argument('--output', type=Path, required=True)
     args = parser.parse_args()
@@ -33,7 +34,7 @@ def main():
     assert len(generators) == 3
     supports = constant_slab_tensors(generators, 5)
     values, heights, ex, ey = five_letter_source()
-    compiler = CoupledCopies(5, values, 18, heights)
+    compiler = CoupledCopies(5, values, 18, heights, precision=args.precision)
     energies = ([a+b for a in ex for b in ex], [a+b for a in ey for b in ey])
     baseline_profiles = compiler.baseline_control()
     baseline = root_for_profiles(baseline_profiles, *energies)
@@ -58,6 +59,7 @@ def main():
                     (main_cases if power == span else extra_cases).append(case)
     rng = random.Random(args.random_seed)
     rng.shuffle(main_cases); rng.shuffle(extra_cases)
+    main_cases.sort(key=lambda case: (-case[3], case[4]))
     cases = main_cases+extra_cases
     if args.maximum_cases is not None:
         cases = cases[:args.maximum_cases]
@@ -70,6 +72,7 @@ def main():
               'source_sha256': {name: sha256((source_root/name).read_bytes()).hexdigest() for name in source_names},
               'direction_record_sha256': sha256(args.directions.read_bytes()).hexdigest(),
               'source_alphabet': 5, 'physical_alphabet': 25, 'complete_degree_bound': 36,
+              'series_precision': args.precision,
               'source_heights_infinity_then_zero': heights, 'paired_energies': energies,
               'constant_slabs': generators, 'supports': supports, 'baseline': baseline,
               'baseline_profiles': compact(baseline_profiles), 'catalogue_size': len(cases),
