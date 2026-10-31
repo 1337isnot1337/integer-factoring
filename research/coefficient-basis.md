@@ -45,9 +45,9 @@ with `c_i!=0`. The row eigenvalue on sector `U` is `c_U M_(U,U)!=0`;
 the column eigenvalue on sector `t-L` is `c_L M_(t-L,t-L)!=0`. Therefore
 
 \[
- \operatorname{rank}_{\rm row}F\ge d_U,
+ \mathrm{rank}_{\rm row}F\ge d_U,
  \qquad
- \operatorname{rank}_{\rm col}F\ge d_{t-L}.
+ \mathrm{rank}_{\rm col}F\ge d_{t-L}.
 \]
 
 These endpoint sectors cannot be removed by cancellations involving other
@@ -65,8 +65,8 @@ Suppose `t=2m>=2` and `c_m!=0`. Write
 Then
 
 \[
- \operatorname{rank}_{\rm row}F
- \operatorname{rank}_{\rm col}F\ge r_m^2,
+ \mathrm{rank}_{\rm row}F
+ \mathrm{rank}_{\rm col}F\ge r_m^2,
 \]
 
 with equality only when `F` is a nonzero scalar multiple of `A_m`.
@@ -110,8 +110,8 @@ Consequently `r_m<(7/6)d_m`. If `L<m` or `U>m`, one endpoint sector
 has dimension at least `(7/2)d_m` and the other at least `d_m`. Hence
 
 \[
- \operatorname{rank}_{\rm row}F
- \operatorname{rank}_{\rm col}F
+ \mathrm{rank}_{\rm row}F
+ \mathrm{rank}_{\rm col}F
  \ge\frac72d_m^2
  >\frac{49}{36}d_m^2
  >r_m^2.
@@ -126,7 +126,7 @@ Consider any finite decomposition
 
 \[
  \sum_s F_s=2^t E^{\otimes t},\qquad
- F_s\in\operatorname{span}_{\mathbb Q}\{A_0,...,A_t\}.
+ F_s\in\mathrm{span}_{\mathbb Q}\{A_0,...,A_t\}.
 \]
 
 At least one piece has a nonzero coefficient of `A_m`. Section 2 shows
@@ -152,8 +152,8 @@ The minimax value is therefore exactly
 
 \[
  \boxed{\min_{\{F_s\}}\max_s
-  \operatorname{rank}_{\rm row}(F_s)
-  \operatorname{rank}_{\rm col}(F_s)=r_m^2.}
+  \mathrm{rank}_{\rm row}(F_s)
+  \mathrm{rank}_{\rm col}(F_s)=r_m^2.}
 \]
 
 Since

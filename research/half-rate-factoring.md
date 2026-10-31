@@ -61,7 +61,7 @@ For `P=K_ell`, positive widths `lambda,B`, and an explicitly written
 absolute value by `2^B`, the sufficient pad exponent obeys
 
 ```math
-\operatorname{need}(\ell,\lambda,B)
+\mathrm{need}(\ell,\lambda,B)
 \le e_\ell P^2\lambda+C_0P^2\log_2(P(\lambda+B)),
 \qquad e_\ell\le0.85\,2^{-\ell/2}.
 \tag{3}
@@ -136,8 +136,8 @@ The top-constructor lemma provides a deterministic procedure
 `lambda,B` with
 
 ```math
-\operatorname{WFe}(P,\lambda,B,I),\quad
-\operatorname{zval}(P,I)=D(N,k,x),\quad
+\mathrm{WFe}(P,\lambda,B,I),\quad
+\mathrm{zval}(P,I)=D(N,k,x),\quad
 P^2\lambda\le4717n,\quad B\le6769n/P.
 \tag{8}
 ```
@@ -181,7 +181,7 @@ is computable. Use the following integer instead:
 
 ```math
 q=\left\lfloor\frac{P^2\lambda}{r}\right\rfloor+1
-  +C_0P^2\operatorname{size}\bigl(P(\lambda+B)\bigr),
+  +C_0P^2\mathrm{size}\bigl(P(\lambda+B)\bigr),
 \tag{10}
 ```
 
@@ -193,13 +193,13 @@ This pad is affordable. Equation (8) and `P>=2` imply
 `P(lambda+B)<=9128n<2^14 n`, so
 
 ```math
-\operatorname{size}(P(\lambda+B))\le\operatorname{size}(n)+14.
+\mathrm{size}(P(\lambda+B))\le\mathrm{size}(n)+14.
 ```
 
 From (6), `size(n)<=400 size(P)<=400P`. Thus
 
 ```math
-rP^2\operatorname{size}(P(\lambda+B))
+rP^2\mathrm{size}(P(\lambda+B))
 \le414P^4\le414n.
 ```
 

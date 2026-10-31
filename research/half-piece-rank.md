@@ -30,10 +30,10 @@ For `a=t_m a'`, the coefficient recursion is
 ```math
 \begin{aligned}
 [t^\pi]a[r]t^\sigma
-={}&\sum_{l\in\operatorname{supp}\pi}
+={}&\sum_{l\in\mathrm{supp}\pi}
 \binom{l-1}{m-1}
 [t^{\pi\setminus l}]a'[r-l]t^\sigma\\
-&+\sum_{k\in\operatorname{supp}\sigma}
+&+\sum_{k\in\mathrm{supp}\sigma}
 (-1)^{m-1}\binom{k+m-1}{m-1}k\,m_k(\sigma)
 [t^\pi]a'[r+k]t^{\sigma\setminus k}.
 \end{aligned}

@@ -8,7 +8,7 @@ Let `U_h` send a basis pair `(xi,eta)` of partitions of `h` to
 `kappa=pi sqrt(2/3)/ln(2)`. Then
 
 ```math
-\log_2\operatorname{rank}_{\mathbb Q} U_h
+\log_2\mathrm{rank}_{\mathbb Q} U_h
 =\kappa\sqrt{2h}+o(\sqrt h).
 \tag{1}
 ```
@@ -47,7 +47,7 @@ Thus
 
 ```math
 (t^\xi)[h]t^\eta=t^\pi+
-\text{terms with fewer than }\operatorname{length}(\pi)\text{ parts}.
+\text{terms with fewer than }\mathrm{length}(\pi)\text{ parts}.
 \tag{2}
 ```
 

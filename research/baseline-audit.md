@@ -544,7 +544,7 @@ For the source's chain hypotheses, the checked theorem
 `chainMax_le_explicit` gives
 
 \[
-\operatorname{chainMax}(mb,48,d,L)
+\mathrm{chainMax}(mb,48,d,L)
 \le W_0+G^4+7+(G^4+9)B+2B_0,
 \tag{30}
 \]
@@ -569,7 +569,7 @@ The file defines the explicit integer function
 \[
 E(n)=z_T(\ell,n)
  +W_0+G^4+7+(G^4+9)B+2B_0
- +z_P(\ell,n),\qquad \ell=\operatorname{ellOf}(n),
+ +z_P(\ell,n),\qquad \ell=\mathrm{ellOf}(n),
 \tag{31}
 \]
 

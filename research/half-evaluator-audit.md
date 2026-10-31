@@ -57,7 +57,7 @@ well-formed `K_l`-node instance `I`, and pad of at least
 The bound is
 
 ```math
-\operatorname{need}(\ell,\lambda,B)
+\mathrm{need}(\ell,\lambda,B)
 \le e_\ell K_\ell^2\lambda
    +C_0K_\ell^2\log_2\bigl(K_\ell(\lambda+B)\bigr).                 \tag{1}
 ```
@@ -134,9 +134,9 @@ these encodings:
 
 ```math
 \begin{aligned}
-|\operatorname{enc}(U_m)|&=4m+2,\\
-|\operatorname{enc}(z)|&=3s(z)+5,\\
-|\operatorname{enc}(\operatorname{pad}_F, U_\ell,I)|
+|\mathrm{enc}(U_m)|&=4m+2,\\
+|\mathrm{enc}(z)|&=3s(z)+5,\\
+|\mathrm{enc}(\mathrm{pad}_F, U_\ell,I)|
  &=14+4(F+\ell+\lambda+K)+7KJ+3\sum_z s(z).                       \tag{3}
 \end{aligned}
 ```
@@ -145,7 +145,7 @@ The sum ranges over every table entry, including zeros. Since the bound
 on entries is inclusive, `s(z) <= B+1`, not always `B`. Thus
 
 ```math
-|\operatorname{enc}(\operatorname{pad}_F,U_\ell,I)|
+|\mathrm{enc}(\mathrm{pad}_F,U_\ell,I)|
 \le14+4(F+\ell+\lambda+K)+(3B+10)K2^{(K-1)\lambda}.               \tag{4}
 ```
 
@@ -179,7 +179,7 @@ Use the integer
 
 ```math
 q=\left\lfloor\frac{P^2\lambda}{r}\right\rfloor+1
-  +C_0P^2\operatorname{size}\bigl(P(\lambda+B)\bigr).             \tag{5}
+  +C_0P^2\mathrm{size}\bigl(P(\lambda+B)\bigr).             \tag{5}
 ```
 
 From (2), `e_l <= rho^l <= 1/r`. Also `size(t) >= log2(t)` for

@@ -81,7 +81,7 @@ For positive widths `lambda,B`, the fragment evaluates a written
 The sufficient exponent satisfies
 
 ```math
-\operatorname{need}\le e_\ell K_\ell^2\lambda
+\mathrm{need}\le e_\ell K_\ell^2\lambda
  +C_0K_\ell^2\log_2(K_\ell(\lambda+B)),
 \qquad e_\ell\le0.85\rho^\ell.
 \tag{4}
@@ -113,7 +113,7 @@ The pinned top-constructor proof gives a deterministic procedure for each
 prefix query. It writes a clique `I` with exact integer value
 
 ```math
-\operatorname{zval}(I)
+\mathrm{zval}(I)
 =\#\{d\mid N:\lfloor d/2^k\rfloor=x\},
 \tag{6}
 ```
@@ -140,7 +140,7 @@ Use the following computable integer instead:
 
 ```math
 q=\left\lfloor\frac{a^\ell P^2\lambda}{b^\ell}\right\rfloor+1
- +C_0P^2\operatorname{size}(P(\lambda+B)).
+ +C_0P^2\mathrm{size}(P(\lambda+B)).
 \tag{8}
 ```
 
@@ -160,9 +160,9 @@ To bound the pad, note that `rho>=1/2` and (5) imply
 ```math
 \begin{aligned}
 P(\lambda+B)&\le9128n<2^{14}n,\\
-\operatorname{size}(P(\lambda+B))
- &\le\operatorname{size}(n)+14\le414P,\\
-P^2\operatorname{size}(P(\lambda+B))
+\mathrm{size}(P(\lambda+B))
+ &\le\mathrm{size}(n)+14\le414P,\\
+P^2\mathrm{size}(P(\lambda+B))
  &\le414P^3\le414n/P\le414n\rho^\ell.
 \end{aligned}
 \tag{9}

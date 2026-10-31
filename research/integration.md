@@ -283,7 +283,7 @@ on the nontrivial input range. The original top construction has volume
 `N_ell=O(n+P^8 n^(3/4))=O(n)`. Its leading exponent is bounded by
 
 \[
-O(n/P+P^8n^{3/4}+\operatorname{polylog}(n)P^c),
+O(n/P+P^8n^{3/4}+\mathrm{polylog}(n)P^c),
 \]
 
 with the fixed polynomial terms accounted for by the source's explicit
@@ -341,7 +341,7 @@ Thus a conservative tabulation bound includes the exponent
 `(2N+N')/K + N/G^2 + O(lambda)` and has cost
 
 \[
-\operatorname{poly}(n)2^{O((N+N')/K)}.
+\mathrm{poly}(n)2^{O((N+N')/K)}.
 \tag{13}
 \]
 
@@ -354,7 +354,7 @@ exponent by a fixed constant and does not change `alpha_0`.
 At each recursive level, the deterministic grouping search costs
 
 \[
-K_d^{G_d}\operatorname{poly}(n).
+K_d^{G_d}\mathrm{poly}(n).
 \]
 
 Its binary logarithm is at most
@@ -394,7 +394,7 @@ cases `N=0,1` are treated separately, matching `Nat.minFac`.
 Combining (11)--(15), the abstract evaluator's cost is bounded by
 
 \[
-\operatorname{poly}(n)\,
+\mathrm{poly}(n)\,
 2^{O(\rho_0^\ell n+\ell P^2\log n+n^{639/640}+n^{19/20})}
 =2^{O(n/(\log n)^{\alpha_0})}.
 \tag{16}
