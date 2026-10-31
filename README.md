@@ -119,6 +119,13 @@ operand weight, inverse-Frobenius alignment reduces recovery to a
 univariate field scan and combines every large carry and operand box
 into one common Frobenius quotient. Its remaining operand sum and cyclic
 coefficient extraction still need an improved algorithm.
+A [constant-field refinement](research/constant-field-carry-weights.md)
+builds the auxiliary weights inside the existing root field, independently
+of the recovery degree. The [first-jet identity](research/first-jet-carry-weights.md)
+then needs only even digit width, adding at most one bit per digit while
+preserving the explicit constructor bounds. It separates the carry scalar
+into two operand cases, or eighteen period-three input-phase instances,
+without changing the multiplication constraints.
 
 [Coupled rational physical frames](research/coupled-rational-physical-frames.md)
 cancel poles across both paired alphabets while preserving the exact
@@ -165,6 +172,7 @@ make verify-weighted-adaptive # Exact local-gauge catalogues and typed reconstru
 make verify-basis-searches # Completed ternary/fused winner replays and basis-oracle controls
 make verify-frobenius-recovery # Punctured sparse recovery, unit boxes, and radix costs
 make verify-weighted-carries # Exact padded carries, joint quotient, and aligned recovery
+make verify-constant-carry-weights # Fixed-field units, rank-two separation, and first-jet phases
 make verify-physical-frames # Exact polynomial and coupled rational physical frames
 make verify-ternary-majorization # Sharp uniform-type gauge certificates for two bases
 make verify-square-zero-frames # All-size first-jet controls and exact pole-two criterion

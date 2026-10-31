@@ -713,6 +713,11 @@ verify-joint-residue-retiming:
 .PHONY: verify-physical-frames verify-ternary-majorization
 .PHONY: verify-weighted-carries
 .PHONY: verify-square-zero-frames verify-dense-coupled-frames
+.PHONY: verify-constant-carry-weights
+verify-constant-carry-weights:
+	python3 tools/check_constant_field_carry_weights.py --output /tmp/integer-factoring-constant-carry-weights-replay.json
+	python3 tools/check_first_jet_carry_weights.py --output /tmp/integer-factoring-first-jet-carry-weights-replay.json
+
 verify-square-zero-frames:
 	OPENBLAS_NUM_THREADS=1 python3 tools/check_square_zero_coupled_frames.py --output /tmp/integer-factoring-square-zero-first-jet-replay.json
 	OPENBLAS_NUM_THREADS=1 python3 tools/check_square_zero_second_jet.py --output /tmp/integer-factoring-square-zero-second-jet-replay.json
