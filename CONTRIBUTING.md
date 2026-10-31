@@ -27,15 +27,26 @@ prior research claim. Existing claims are advisory; check their latest update.
    optional [finding outline](docs/START_HERE.md#writing-a-research-finding).
 3. Run the checks below that cover the change. Include the actual commands,
    outcomes, environment, and unrun checks in the PR template.
-4. Open a PR against `main`; use a draft for ongoing work. Link predecessor work
-   and any coordination claim. A reviewer may request a smaller independently
-   reviewable checkpoint from a large research branch.
+4. Open a PR against `main` ready for review, including ongoing work. Link
+   predecessor work and any coordination claim. A reviewer may request a smaller
+   independently reviewable checkpoint from a large research branch.
 
 For a bug or mathematical correction, identify the exact file, statement, and
 commit, then give the smallest counterexample or reproduction you have. For an
 independent replay, report failures as well as successes. The
 [issue templates](https://github.com/1337isnot1337/integer-factoring/issues/new/choose)
 provide short outlines; leave unknown fields explicitly unknown.
+
+## Pull request status
+
+All pull requests must be ready for review. Do not create draft PRs or convert
+open PRs to drafts. Describe incomplete work, failed checks, and remaining
+obligations in the PR body so reviewers can assess the available checkpoint.
+Ready for review does not imply that a change is complete or ready to merge.
+
+The [no-draft workflow](.github/workflows/no-draft-prs.yml) automatically marks
+draft PRs ready for review when they are opened, reopened, or converted to draft,
+including PRs from forks and PRs targeting research branches.
 
 ## Claims and checks
 
