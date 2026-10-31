@@ -174,6 +174,8 @@ def main():
     parser.add_argument('--samples', type=int, default=3)
     parser.add_argument('--source', choices=('reflection-five', 'brauer-five'), default='reflection-five')
     parser.add_argument('--degree', type=int, help='Allowed polynomial degree; defaults to 18 for reflection and 6 for Brauer.')
+    parser.add_argument('--initial-record', type=Path, help='Restart at a retained literal witness from an earlier record.')
+    parser.add_argument('--witness-index', type=int, default=0)
     parser.add_argument('--paired-energies', help='Five even integer paired energies; default is the natural source gauge.')
     parser.add_argument('--seed', type=int, default=2026103192)
     parser.add_argument('--output', required=True, type=Path)
@@ -194,6 +196,18 @@ def main():
     initial_digest = digest(values)
     q = 5
     degree = args.degree if args.degree is not None else (18 if args.source == 'reflection-five' else 6)
+    initial_record = None
+    if args.initial_record:
+        initial_record = json.loads(args.initial_record.read_text())
+        if initial_record['alphabet'] != q or not 0 <= args.witness_index < len(initial_record['retained_witnesses']):
+            parser.error('Select a retained witness from a five-symbol record.')
+        values = tuple(map(tuple, initial_record['retained_witnesses'][args.witness_index]['values']))
+        if args.degree is None:
+            degree = initial_record['degree']
+        if not args.paired_energies:
+            heights = tuple(map(tuple, initial_record['heights_infinity_then_zero']))
+            energy_x, energy_y = map(tuple, initial_record['paired_energies'])
+        initial_digest = digest(values)
     if degree < max(a.bit_length()-1 for a, b in values):
         parser.error('The coefficient degree cannot be smaller than the source degree.')
     retained = []
@@ -206,12 +220,16 @@ def main():
                     'native_matrix_smith_f4.py', 'native_matrix_smith_f4.cpp',
                     'weighted_smith_oracle_f4.py')
     report = {'scope': 'Exact F4 coefficient fibers and literal endpoint/profile replays; finite stochastic searches and numerical roots only.',
-              'arguments': vars(args) | {'output': str(args.output)}, 'alphabet': q, 'degree': degree,
+              'arguments': vars(args) | {'output': str(args.output), 'initial_record': str(args.initial_record) if args.initial_record else None}, 'alphabet': q, 'degree': degree,
               'reference_family': args.source, 'initial_source_sha256': initial_digest,
               'heights_infinity_then_zero': heights, 'paired_energies': (energy_x, energy_y),
               'source_sha256': {name: sha256((script_root/name).read_bytes()).hexdigest() for name in source_names}}
     if args.source == 'reflection-five':
         report.update(source_letters=(0, 2, 4, 8, 12), removed_common_monomial=16, removed_exponent_gcd=2)
+    if initial_record is not None:
+        report.update(restart_from_literal_witness=True,
+                      restart_record_sha256=sha256(args.initial_record.read_bytes()).hexdigest(),
+                      restart_scope='New finite schedule from the selected retained witness; iteration state is not resumed.')
 
     def save(completed=False):
         report.update(rounds=rounds, retained_witnesses=sorted(retained, key=lambda r: r['rho'])[:24],
@@ -227,6 +245,7 @@ def main():
         reference_digest = digest(values)
         used_references.add(reference_digest)
         lattice = RecenteredCrossingLattice(values, q, degree, heights, args.upper_window)
+        frame_seconds = time.monotonic()-round_started
         floors = tuple(max(0, order-args.lower_window) for order in lattice.orders)
         fiber = RecenteredFiber(lattice, floors)
         reference_profiles = lattice.check_witness(values, lattice.orders)
@@ -236,6 +255,7 @@ def main():
         record = {'round': round_index, 'reference_values': values, 'reference_digest': reference_digest,
                   'nonbinary_reference': any(b for a, b in values), 'reference_profiles': reference_profiles,
                   'reference_cost': reference_cost, 'fiber_variables': fiber.variables,
+                  'fiber_compression': fiber.compression, 'frame_construction_seconds': frame_seconds,
                   'floor_targets': floors, 'ceiling_targets': lattice.caps, 'reference_targets': lattice.orders,
                   'construction_seconds': time.monotonic()-round_started, 'completed_trials': 0,
                   'profile_classes': [], 'literal_replays': 1}
@@ -251,7 +271,6 @@ def main():
         for trial in range(args.trials_per_round):
             if time.monotonic() >= deadline:
                 break
-            record['completed_trials'] = trial+1
             if trial and trial % 100 == 0:
                 record.update(distinct_target_vectors=len(seen),
                               profile_classes=[{'profiles': p, 'samples': count} for p, count in sorted(classes.items())],
@@ -279,6 +298,7 @@ def main():
                     targets[row] += 1
             targets = tuple(targets)
             if targets in seen:
+                record['completed_trials'] = trial+1
                 continue
             seen.add(targets)
             if len(parents) < 128:
@@ -312,6 +332,7 @@ def main():
                 if cost['rho'] < best-1e-11:
                     best = cost['rho']
                     print(json.dumps({'event': 'new_best', 'round': round_index, 'trial': trial, **cost}), flush=True)
+            record['completed_trials'] = trial+1
             if trial % 100 == 0:
                 record.update(distinct_target_vectors=len(seen),
                               profile_classes=[{'profiles': p, 'samples': count} for p, count in sorted(classes.items())],

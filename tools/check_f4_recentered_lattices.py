@@ -11,7 +11,7 @@ import random
 
 from check_block_smith_crossings import binary_rank
 from f4_recentered_lattices import (
-    RecenteredCrossingLattice, RecenteredFiber, add_equation, assignment,
+    AffineCoordinateMap, RecenteredCrossingLattice, RecenteredFiber, add_equation, assignment,
     dot, f4_rank, pack, polynomial_multiply, regular_frame, scale_row, unpack,
 )
 from check_polynomial_crossing_interpolation import (
@@ -108,7 +108,8 @@ def run():
     checks = {'scalar_products': 0, 'packed_roundtrips': 0,
               'affine_equations': 0, 'literal_endpoints': 0,
               'independent_toeplitz_ranks': 0, 'full_tensor_replays': 0,
-              'recentered_nonbinary_references': 0, 'negative_controls': 0}
+              'recentered_nonbinary_references': 0, 'negative_controls': 0,
+              'table_coordinate_fibers': 0, 'table_literal_substitutions': 0}
     for a, b in product(range(4), repeat=2):
         low, high = scale_row(a & 1, a >> 1, b)
         assert low | (high << 1) == scalar_product(a, b)
@@ -131,6 +132,25 @@ def run():
         assert all(dot(a, b, *solution) == rhs for a, b, rhs in rows)
         checks['affine_equations'] += len(rows)
 
+    coordinate_rng = random.Random(2026103194)
+    for n, stride in ((1, 1), (9, 20), (33, 3), (257, 7)):
+        pivots = {}
+        for j in range(n):
+            if j % stride == 0:
+                continue
+            pivots[j] = ((1 << j) | coordinate_rng.getrandbits(j),
+                         coordinate_rng.getrandbits(j), coordinate_rng.randrange(4))
+        coordinates = AffineCoordinateMap(n, pivots)
+        for trial in range(25):
+            a, b, rhs = coordinate_rng.getrandbits(n), coordinate_rng.getrandbits(n), coordinate_rng.randrange(4)
+            reduced_a, reduced_b, reduced_rhs = coordinates.reduce(a, b, rhs)
+            free_a, free_b = coordinate_rng.getrandbits(coordinates.variables), coordinate_rng.getrandbits(coordinates.variables)
+            original_a = sum(((free_a >> i) & 1) << j for i, j in enumerate(coordinates.free))
+            original_b = sum(((free_b >> i) & 1) << j for i, j in enumerate(coordinates.free))
+            solution = assignment(pivots, original_a, original_b)
+            assert (dot(a, b, *solution) ^ rhs) == (dot(reduced_a, reduced_b, free_a, free_b) ^ reduced_rhs)
+            checks['table_literal_substitutions'] += 1
+
     records = []
     cases = ((2, 2), (2, 3), (3, 2), (3, 3))
     for q, degree in cases:
@@ -147,7 +167,12 @@ def run():
                 assert toeplitz_rank(matrix, precision) == 2*sum(max(0, precision-v) for v in orders)
                 checks['independent_toeplitz_ranks'] += 1
         floors = tuple(max(0, value-2) for value in lattice.orders)
-        fiber = RecenteredFiber(lattice, floors)
+        fiber = RecenteredFiber(lattice, floors, compression='tables')
+        direct_fiber = RecenteredFiber(lattice, floors, compression='direct')
+        assert fiber.free == direct_fiber.free
+        assert fiber.base_pivots == direct_fiber.base_pivots
+        assert fiber.equations == direct_fiber.equations
+        checks['table_coordinate_fibers'] += 1
         target_records = []
         retained = None
         for trial in range(8):
