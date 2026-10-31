@@ -595,3 +595,10 @@ verify-binary-target-box:
 verify-full-alphabet-affine:
 	OPENBLAS_NUM_THREADS=1 python3 tools/check_full_alphabet_two_cut_lattices.py --output /tmp/integer-factoring-full-alphabet-affine-replay.json --search-records evidence/full-alphabet-q4-natural-affine-search.json evidence/full-alphabet-q4-degenerate-affine-search.json
 
+.PHONY: verify-multiplier-automata verify-global-code-multipliers
+verify-multiplier-automata:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_boolean_multiplier_automata.py --output /tmp/integer-factoring-multiplier-automata-replay.json
+
+verify-global-code-multipliers:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_global_code_multipliers.py --output /tmp/integer-factoring-global-code-multipliers-replay.json
+

@@ -16,6 +16,10 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Complete one-support multiplier automata](boolean-multiplier-automata.md): arbitrary degree, characteristic-two coefficient extensions, and ramification reduce exactly to finitely many continuous cutoff functions and periodic binary tails; global code supports retain every actual physical mode energy.
+
+- [Global code multiplier searches](global-code-multiplier-searches.md): 13,248 explicit supports on 64, 128, and 256 modes use the complete multiplier envelope; fifteen completed full-ratio searches select the baseline, with independent support and root replays.
+
 - [Complete-entry larger-alphabet synthesis](full-alphabet-two-cut-affine-synthesis.md): all degree-bounded F4 coefficients satisfy exact endpoint-preserving two-cut equations; compressed fibers support two completed 20,000-walk four-symbol searches with 1,046 full-profile classes and eighty complete witness replays.
 
 - [Nonresonant filters for arbitrary Boolean supports](nonresonant-boolean-filter-floor.md): the complete pressure floor extends to every Boolean pattern in a two-power family outside a finite resonant window; an exact counterexample preserves the excluded resonance.

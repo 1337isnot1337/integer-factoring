@@ -1,0 +1,157 @@
+{
+  "status": "All explicit global code supports regenerated and complete multiplier-envelope roots replayed.",
+  "scope": "Exact support/multiplier reductions; the outer scale and charge searches remain exploratory.",
+  "total_code_supports_in_completed_runs": 13248,
+  "complete_root_replays": [
+    {
+      "n": 64,
+      "rank": 2,
+      "code_supports": 64,
+      "rho": 0.7075072433080506,
+      "root_residual": 9.142195990656395e-11,
+      "full_critical_pressure": 0.019506923021065582,
+      "physical_entropy": 24.362348437030143,
+      "selected_kind": "baseline"
+    },
+    {
+      "n": 128,
+      "rank": 2,
+      "code_supports": 64,
+      "rho": 0.707235146747923,
+      "root_residual": 2.0612489493032626e-10,
+      "full_critical_pressure": 0.010954687584739276,
+      "physical_entropy": 42.67374419568418,
+      "selected_kind": "baseline"
+    },
+    {
+      "n": 256,
+      "rank": 2,
+      "code_supports": 64,
+      "rho": 0.7071468886858093,
+      "root_residual": 4.256196211444019e-10,
+      "full_critical_pressure": 0.006051874139392314,
+      "physical_entropy": 75.44779968496886,
+      "selected_kind": "baseline"
+    },
+    {
+      "n": 64,
+      "rank": 3,
+      "code_supports": 512,
+      "rho": 0.7075072433080506,
+      "root_residual": 9.142195990656395e-11,
+      "full_critical_pressure": 0.019506923021065582,
+      "physical_entropy": 24.362348437030143,
+      "selected_kind": "baseline"
+    },
+    {
+      "n": 128,
+      "rank": 3,
+      "code_supports": 512,
+      "rho": 0.707235146747923,
+      "root_residual": 2.0612489493032626e-10,
+      "full_critical_pressure": 0.010954687584739276,
+      "physical_entropy": 42.67374419568418,
+      "selected_kind": "baseline"
+    },
+    {
+      "n": 256,
+      "rank": 3,
+      "code_supports": 512,
+      "rho": 0.7071468886858093,
+      "root_residual": 4.256196211444019e-10,
+      "full_critical_pressure": 0.006051874139392314,
+      "physical_entropy": 75.44779968496886,
+      "selected_kind": "baseline"
+    },
+    {
+      "n": 64,
+      "rank": 4,
+      "code_supports": 1792,
+      "rho": 0.7075072433080506,
+      "root_residual": 9.142195990656395e-11,
+      "full_critical_pressure": 0.019506923021065582,
+      "physical_entropy": 24.362348437030143,
+      "selected_kind": "baseline"
+    },
+    {
+      "n": 128,
+      "rank": 4,
+      "code_supports": 1792,
+      "rho": 0.707235146747923,
+      "root_residual": 2.0612489493032626e-10,
+      "full_critical_pressure": 0.010954687584739276,
+      "physical_entropy": 42.67374419568418,
+      "selected_kind": "baseline"
+    },
+    {
+      "n": 256,
+      "rank": 4,
+      "code_supports": 1792,
+      "rho": 0.7071468886858093,
+      "root_residual": 4.256196211444019e-10,
+      "full_critical_pressure": 0.006051874139392314,
+      "physical_entropy": 75.44779968496886,
+      "selected_kind": "baseline"
+    },
+    {
+      "n": 64,
+      "rank": 5,
+      "code_supports": 1024,
+      "rho": 0.7075072433080506,
+      "root_residual": 9.142195990656395e-11,
+      "full_critical_pressure": 0.019506923021065582,
+      "physical_entropy": 24.362348437030143,
+      "selected_kind": "baseline"
+    },
+    {
+      "n": 128,
+      "rank": 5,
+      "code_supports": 1024,
+      "rho": 0.707235146747923,
+      "root_residual": 2.0612489493032626e-10,
+      "full_critical_pressure": 0.010954687584739276,
+      "physical_entropy": 42.67374419568418,
+      "selected_kind": "baseline"
+    },
+    {
+      "n": 256,
+      "rank": 5,
+      "code_supports": 1024,
+      "rho": 0.7071468886858093,
+      "root_residual": 4.256196211444019e-10,
+      "full_critical_pressure": 0.006051874139392314,
+      "physical_entropy": 75.44779968496886,
+      "selected_kind": "baseline"
+    },
+    {
+      "n": 64,
+      "rank": 6,
+      "code_supports": 1024,
+      "rho": 0.7075072433080506,
+      "root_residual": 9.142195990656395e-11,
+      "full_critical_pressure": 0.019506923021065582,
+      "physical_entropy": 24.362348437030143,
+      "selected_kind": "baseline"
+    },
+    {
+      "n": 128,
+      "rank": 6,
+      "code_supports": 1024,
+      "rho": 0.707235146747923,
+      "root_residual": 2.0612489493032626e-10,
+      "full_critical_pressure": 0.010954687584739276,
+      "physical_entropy": 42.67374419568418,
+      "selected_kind": "baseline"
+    },
+    {
+      "n": 256,
+      "rank": 6,
+      "code_supports": 1024,
+      "rho": 0.7071468886858093,
+      "root_residual": 4.256196211444019e-10,
+      "full_critical_pressure": 0.006051874139392314,
+      "physical_entropy": 75.44779968496886,
+      "selected_kind": "baseline"
+    }
+  ]
+}

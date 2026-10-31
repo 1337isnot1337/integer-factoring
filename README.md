@@ -91,6 +91,13 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 
 ## Current research frontier
 
+The [one-support multiplier reduction](research/boolean-multiplier-automata.md)
+removes polynomial-degree and coefficient-field cutoffs from a growing global
+Boolean-filter family. Its finite automaton retains continuous ramified
+cutoffs and exact periodic tails. [Fifteen complete outer searches](research/global-code-multiplier-searches.md)
+over 13,248 explicit code supports on up to 256 modes still select the
+baseline. Run `make verify-multiplier-automata verify-global-code-multipliers`.
+
 The [complete-entry larger-alphabet solver](research/full-alphabet-two-cut-affine-synthesis.md)
 varies every polynomial coefficient over F4 while preserving the strict
 endpoint and simultaneous local row conditions. Two completed four-symbol
