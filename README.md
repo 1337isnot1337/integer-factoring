@@ -155,6 +155,20 @@ The [completed coordinate and dense searches](research/reflection-coupled-search
 retain all outcomes and independently replay their winners. A separate
 exact affine combination changes the cut determinant and creates two
 new singular places, opening a mixed-place search beyond physical frames.
+A [uniform paired-trace identity](research/reflection-paired-trace-invariant.md)
+is preserved by arbitrary paired rational frames and affine combinations.
+It proves scalar content one and the degree floor `M^2` throughout that
+family. The [constant-companion search](research/constant-companion-reflection-search.md)
+completes 21,528 additional exact tensors and 80 full refinements, with
+independent coefficient controls and fresh winner replays.
+
+The [multiplicative-monoid decomposition](research/multiplicative-monoid-blocks.md)
+retains the characteristic-two nilpotent coordinates and decomposes every
+odd-modulus multiplication algebra into explicit truncated polynomial
+blocks. For the adaptive moduli, its local bilinear product count is
+near-linear over a fully charged coefficient algebra. Exact Fourier,
+addition, multiplication, and joint-copy formulas close on these blocks.
+The cost of the complete network's joint interfaces remains open.
 
 For two fixed ternary bases with uniform paired types, an
 [exact minor certificate](research/ternary-uniform-gauge-majorization.md)
@@ -193,6 +207,9 @@ make verify-square-zero-frames # All-size first-jet controls and exact pole-two 
 make verify-dense-coupled-frames # Complete rank-one catalogue and independent Laurent replay
 make verify-uniform-reflection-jets # All-size physical-jet criterion, including 256 letters
 make verify-triangular-series # Uniform linear families and complete Laurent-series controls
+make verify-paired-trace # Uniform paired contraction, scalar-content and degree controls
+make verify-companion-search # Complete 21,528-frame archive and fresh winner replays
+make verify-monoid-blocks # Explicit multiplication blocks and full Fourier/copy closure
 make verify-coupled-searches # Completed search replays and exact affine determinant change
 make verify-schur-fermion # Complete Schur entry formulas and exact comparisons
 make verify-schur-central # Hook-residue identities and full Schur ranks through weight 8

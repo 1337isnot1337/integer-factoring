@@ -716,6 +716,16 @@ verify-joint-residue-retiming:
 .PHONY: verify-constant-carry-weights
 .PHONY: verify-uniform-reflection-jets verify-coupled-searches
 .PHONY: verify-triangular-series
+.PHONY: verify-paired-trace verify-companion-search verify-monoid-blocks
+verify-paired-trace:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_reflection_paired_trace.py --output /tmp/integer-factoring-paired-trace-replay.json
+
+verify-companion-search:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_dense_coupled_companions.py --output /tmp/integer-factoring-companion-search-replay.json
+
+verify-monoid-blocks:
+	python3 tools/check_multiplicative_monoid_blocks.py --output /tmp/integer-factoring-monoid-blocks-replay.json
+
 verify-triangular-series:
 	OPENBLAS_NUM_THREADS=1 python3 tools/check_triangular_reflection_jet_families.py --output /tmp/integer-factoring-triangular-jets-replay.json
 	OPENBLAS_NUM_THREADS=1 python3 tools/check_laurent_series_coupled_frames.py --output /tmp/integer-factoring-laurent-series-replay.json
