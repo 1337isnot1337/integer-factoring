@@ -121,7 +121,52 @@ authorize treating a long product, a shifted evaluation, or a large
 integer power as a unit-cost operation. In particular, a short
 description of the recurrence is not a proof of a fast solution.
 
-## 3. What existing algebraic results actually supply
+## 3. A global rational-part projection and its specialization trap
+
+Let `G` be the gcd in (1) and put `R=(P'/P)(Q'/Q)`. Both input
+polynomials have simple rational roots. Thus
+
+```math
+R(X)=\sum_{a\in I,\ b\in J}
+ \frac1{(X-a)(X-N/b)}.
+```
+
+If `a!=N/b`, a summand has only simple poles, and its antiderivative
+is a difference of logarithms. If `a=N/b`, its antiderivative is
+`-1/(X-a)`. Consequently the unique proper rational part of an
+antiderivative of `R` is exactly
+
+```math
+\mathcal H(R)=-\sum_{\substack{a\in I,b\in J\\ab=N}}\frac1{X-a}
+=-G'(X)/G(X).                                    \tag{5}
+```
+
+This describes the desired output as a linear rational-part
+projection, with denominator degree equal to the number of genuine
+factor witnesses. Dense Hermite reduction would compute it, but
+charges for the long input degrees. A fast algorithm for these
+implicitly described inputs is the new question in
+[Discussion #53](https://github.com/1337isnot1337/integer-factoring/discussions/53).
+Equation (5) is an identity, not an algorithm for that projection.
+
+Treating `N` as an indeterminate does not solve the problem. Over
+`Q(N)`, none of the two root families coincide, so the rational part
+is identically zero. Specialization can create common roots exactly
+when
+
+```math
+\prod_{a\in I,b\in J}(N-ab)=0.                   \tag{6}
+```
+
+For `I=J=[2,4)`, this exceptional polynomial is
+`(N-4)(N-6)^2(N-9)`. At `N=5` the gcd is one; at `N=6` it is
+`(X-2)(X-3)`, so the rational part becomes
+`-(2X-5)/((X-2)(X-3))`. Generic integration followed by specialization
+therefore loses precisely the resonant terms sought by factoring.
+A constructive method must handle these specializations, rather than
+assume that the generic rational-part projection commutes with them.
+
+## 4. What existing algebraic results actually supply
 
 Kaltofen's [Single-Factor Hensel Lifting, 1987](https://userpages.cs.umbc.edu/phatak/691a/supl/hensel-kaltofen-1987.pdf)
 proves a bound on the straight-line complexity of factors and gcds in
@@ -138,6 +183,14 @@ The recurrence bound still depends essentially on the square root of
 the numerical index, rather than polynomially on its bit length.
 Applying that algorithm to (3) does not give the proposed primitive.
 
+Bhattacharjee, Kumar, Ramanathan, Saptharishi, and Saraf's
+[2025 deterministic circuit-factorization theorem](https://arxiv.org/abs/2504.08063v2),
+Theorem 1.2, assumes constant depth and polynomial degree and size in
+the number of variables, over the rationals (with an extension to
+sufficiently large characteristic). Our exponentially high-degree
+circuits over `Z/2^p` do not meet those hypotheses. This theorem is
+not a ready-made extraction step for the packet circuits.
+
 There is another obstruction to a shortcut through small primes:
 reducing the two polynomials modulo a small prime can create common
 roots that are absent over `Q`. For example, `N=35`, `I=[2,5)`, and
@@ -146,7 +199,7 @@ roots that are absent over `Q`. For example, `N=35`, `I=[2,5)`, and
 separation and reconstruction cost; a single small-prime gcd is not
 an exact factor decision.
 
-## 4. Replay and current scope
+## 5. Replay and current scope
 
 ```sh
 python3 tools/check_interval_orbit_gcd.py --output /tmp/interval-orbit-gcd.json
@@ -159,6 +212,9 @@ compares its integer polynomial coefficients with trial-divisor
 products on 1,024 selected rectangles and all 688 dyadic factor boxes
 for inputs 2 through 256. It also checks both boundary recurrences
 at exact rational arguments and the small-prime false-root example.
+It independently compares 192 literal pole decompositions and their
+rational parts with logarithmic derivatives of the dense gcd, and
+retains the `N=5,6` specialization control above.
 The [receipt](../evidence/interval-orbit-gcd.json) records those finite
 controls. This is an exact interface and a source audit; the required
 compressed elimination algorithm remains unresolved. The strongest

@@ -38,7 +38,7 @@ The composition uses the existing clique evaluator from [Anthropic's Appendix B]
 | Saving exponent above `1/2` | **Not established** | [Research index](research/INDEX.md) |
 
 Arithmetic research now uses [inverse sections](research/dyadic-inverse-sections.md)
-and an [interval orbit-gcd interface](research/interval-orbit-gcd.md).
+and an [interval orbit-gcd interface with a rational-part projection](research/interval-orbit-gcd.md).
 It supplies [exact complete-orbit aggregation](research/dyadic-orbit-aggregation.md)
 and [global modular input circuits](research/interval-packet-circuits.md)
 with `O(n+p)` arithmetic nodes and polynomial generation cost.

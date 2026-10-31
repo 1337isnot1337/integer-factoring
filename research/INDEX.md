@@ -18,7 +18,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 - [Dyadic inverse sections](dyadic-inverse-sections.md): exact arithmetic interval recursion, affine-fibre floor sums, integer-factor recovery, and the unresolved aggregation cost.
 - [Dyadic orbit aggregation](dyadic-orbit-aggregation.md): polynomial bit time for complete fractional-linear cyclic families with interval selectors and arbitrary affine changes.
-- [Interval orbit gcd](interval-orbit-gcd.md): exact correlated-root interface, two boundary recurrences, output-sensitive algorithm target, and source audit; its stronger factoring consequence is conditional.
+- [Interval orbit gcd](interval-orbit-gcd.md): correlated-root and rational-part interfaces, exact specialization caveat, output-sensitive algorithm target, and source audit; its stronger factoring consequence is conditional.
 - [Interval unit jets](interval-unit-jets.md): polynomial-bit-time local Taylor data for exponentially long interval products using parity, power sums, and exact Newton identities; global elimination remains open.
 - [Interval packet circuits](interval-packet-circuits.md): global modular polynomial circuits with `O(n+p)` nodes and polynomial generation cost; exact artificial-common-factor controls state the remaining elimination obligation.
 - [Normalized interval jets](normalized-interval-jets.md): exact binary content exponents, zero orders, and polynomial-cost unit jets at scaled integer centers; global root search remains open.
