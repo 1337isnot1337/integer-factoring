@@ -397,3 +397,7 @@ verify-field-lattice-lifts:
 .PHONY: verify-f16-identity-operators
 verify-f16-identity-operators:
 	python3 tools/check_f16_identity_operator_profiles.py --extended
+
+.PHONY: verify-reflection-compensated-gauges
+verify-reflection-compensated-gauges:
+	python3 tools/check_reflection_hot_compensated_gauges.py --extended

@@ -14,6 +14,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Negative hot-state heights with cold-bit compensation](reflection-hot-compensated-gauges.md): retaining only the internal hot-core factors permits negative selected-state heights, with every compensating cold height and both independent boundary bulks included in the exact cost.
+
 - [Exact operator profiles over F16](f16-identity-operator-profiles.md): restriction of scalars duplicates each Smith order exactly twice, enabling complete extension-field profiles with literal original-tensor and all-minor controls.
 
 - [Fixed-field endpoint lifts for polynomial lattices](extension-field-lattice-lifts.md): exact packed `F4` constraints admit constructive `F16` lifts whenever none of the eight required endpoint coordinates is forced to zero, with a checked equality-case fallback.
