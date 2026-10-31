@@ -156,3 +156,38 @@ two copies during generation.
 Implementation and analysis used substantial AI assistance from Codex.
 These are finite exact computations and ordinary arguments, with no
 new Lean proof or stronger factoring exponent.
+
+## Extension-field control
+
+A second complete enumeration uses `F_4=F_2[omega]/(omega^2+omega+1)`.
+It covers elementary copies one through four, module and ordered-pairing
+copies one and two, and the one-copy mixed loop: nine cases and
+**3,792** functionals. Every minmax threshold is identical to its
+`F_2` counterpart, and every certified rank-sum interval is identical
+at the `2^-20` rounding resolution. The latter does not assert that
+the two exact irrational optima are equal.
+
+The packed digit basis is `(omega,omega^2)`, so digit three represents
+one and XOR still implements vector addition. The binary-span separator
+is valid for the full extension-field search because every scalar
+multiple of every generator is included. The Cayley-graph certificate
+likewise permits all extension coefficients, including combinations
+that descend to `F_2` only after summation.
+
+Two-bit-plane elimination computes the full ranks. A separate dense
+implementation in basis `(1,omega)` checks 64 random rectangular
+matrices and the selected witness ranks; all binary coefficient
+embeddings are also compared. Verification of the saved artifact
+uses the opposite pivot order for every functional. Reproduce with
+
+```sh
+make verify-auxiliary-extension-span
+python3 tools/search_auxiliary_extension_span.py \
+  --output /tmp/auxiliary-extension-span-replay.json
+```
+
+The [extension-field artifact](../evidence/auxiliary-extension-span.json)
+contains every rank pair, threshold separator, rank-sum dual potential,
+and upper decomposition. This control closes a small field-extension
+loophole in those nine finite cases; it makes no claim over the
+algebraic closure, other fields, or untested tensor lengths.

@@ -38,6 +38,10 @@ verify-joint-determinant:
 verify-auxiliary-coefficient-span:
 	python3 tools/search_auxiliary_coefficient_span.py --verify evidence/auxiliary-coefficient-span.json
 
+.PHONY: verify-auxiliary-extension-span
+verify-auxiliary-extension-span:
+	python3 tools/search_auxiliary_extension_span.py --verify evidence/auxiliary-extension-span.json
+
 .PHONY: verify-binary-site-symmetry verify-matching-curve-controls verify-matching-curve-jets
 verify-binary-site-symmetry:
 	python3 tools/check_binary_site_symmetry_barrier.py

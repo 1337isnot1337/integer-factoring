@@ -111,6 +111,8 @@ tests ordered noncommuting constructions outside that symmetry hypothesis.
 Complete finite recombination improves several raw rank maxima, but exact
 rank-sum lower certificates leave the tested finite-block envelope above
 the half-rate threshold. Run `make verify-auxiliary-coefficient-span`.
+Nine full extension-field controls over `F_4` retain the same finite
+minmax thresholds; run `make verify-auxiliary-extension-span`.
 
 The [common-cofactor barrier](research/common-cofactor-barrier.md) closes
 the asymmetric ternary quadratic family for actual coefficient ranks.
