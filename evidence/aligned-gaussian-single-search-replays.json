@@ -1,0 +1,230 @@
+{
+  "scope": "Independent literal sparse constructions and complete polynomial Smith certificates; numerical roots remain exploratory.",
+  "records": [
+    {
+      "record": "evidence/aligned-gaussian-complement-single-search.json",
+      "record_sha256": "fa0039caab50ac91ac7d409d7e7c397dd3e8cb0d3d0edb842079acef014382ea",
+      "status": "passed",
+      "source_provenance": {
+        "search_saturated_dual_directions.py": {
+          "location": "worktree",
+          "sha256": "004df609daab720110423f432b359a4ff12b0ec10bc1478e5e8548147a92016c"
+        },
+        "saturated_dual_kernel_directions.py": {
+          "location": "worktree",
+          "sha256": "a8034b7acda20c986619e55e5f71873371f38adedc9d2366d1e2c4a6f13745eb"
+        },
+        "search_f4_recentered_crossings.py": {
+          "location": "worktree",
+          "sha256": "8715f1a28b0cb68ad4d3fd29adc53fe082f6181882ed4bce7ce0e9ff582b0be4"
+        },
+        "native_matrix_smith_f4.py": {
+          "location": "worktree",
+          "sha256": "c08da20f1938a371b438e32fbc6a8f6766b48c2cfee5bcd1c956ce137dc70203"
+        },
+        "native_matrix_smith_f4.cpp": {
+          "location": "worktree",
+          "sha256": "5ec995cd04563c2fa99b69afd71bf476d5ca885f1f90377490c30e5a1a55f330"
+        },
+        "weighted_smith_oracle_f4.py": {
+          "location": "worktree",
+          "sha256": "d277f46caa98dab48d243af64c18e42e09e917bf1e862057a55cb35f74a6d572"
+        }
+      },
+      "parameter_dimension_over_F4": 295,
+      "retained_literal_witnesses": 48,
+      "literal_endpoint_entries": 31250,
+      "complete_profiles_certified_by_polynomial_frames": 100,
+      "gauges": {
+        "natural": {
+          "retained": 24,
+          "best_rho": 0.7263479477044683,
+          "distinct_profile_classes": 347
+        },
+        "two_zero": {
+          "retained": 24,
+          "best_rho": 0.8335422390094076,
+          "distinct_profile_classes": 351
+        }
+      },
+      "recorded_query_counters": {
+        "single_queries": 590,
+        "pair_queries": 0,
+        "random_queries": 0,
+        "literal_endpoint_replays": 162
+      },
+      "completed_requested_schedule": true,
+      "strict_pressure_candidate_found": false,
+      "elapsed_seconds": 49.69556953100073
+    },
+    {
+      "record": "evidence/aligned-gaussian-raw-complement-single-search.json",
+      "record_sha256": "b0231259f0fe78c7edb2d8d830989599e87ffc7e61ef869c721279fe843a7419",
+      "status": "passed",
+      "source_provenance": {
+        "search_saturated_dual_directions.py": {
+          "location": "worktree",
+          "sha256": "004df609daab720110423f432b359a4ff12b0ec10bc1478e5e8548147a92016c"
+        },
+        "saturated_dual_kernel_directions.py": {
+          "location": "worktree",
+          "sha256": "a8034b7acda20c986619e55e5f71873371f38adedc9d2366d1e2c4a6f13745eb"
+        },
+        "search_f4_recentered_crossings.py": {
+          "location": "worktree",
+          "sha256": "8715f1a28b0cb68ad4d3fd29adc53fe082f6181882ed4bce7ce0e9ff582b0be4"
+        },
+        "native_matrix_smith_f4.py": {
+          "location": "worktree",
+          "sha256": "c08da20f1938a371b438e32fbc6a8f6766b48c2cfee5bcd1c956ce137dc70203"
+        },
+        "native_matrix_smith_f4.cpp": {
+          "location": "worktree",
+          "sha256": "5ec995cd04563c2fa99b69afd71bf476d5ca885f1f90377490c30e5a1a55f330"
+        },
+        "weighted_smith_oracle_f4.py": {
+          "location": "worktree",
+          "sha256": "d277f46caa98dab48d243af64c18e42e09e917bf1e862057a55cb35f74a6d572"
+        }
+      },
+      "parameter_dimension_over_F4": 50,
+      "retained_literal_witnesses": 48,
+      "literal_endpoint_entries": 31250,
+      "complete_profiles_certified_by_polynomial_frames": 100,
+      "gauges": {
+        "natural": {
+          "retained": 24,
+          "best_rho": 0.7263479477044683,
+          "distinct_profile_classes": 60
+        },
+        "two_zero": {
+          "retained": 24,
+          "best_rho": 0.8335422390094076,
+          "distinct_profile_classes": 61
+        }
+      },
+      "recorded_query_counters": {
+        "single_queries": 100,
+        "pair_queries": 0,
+        "random_queries": 0,
+        "literal_endpoint_replays": 97
+      },
+      "completed_requested_schedule": true,
+      "strict_pressure_candidate_found": false,
+      "elapsed_seconds": 45.892621376000534
+    },
+    {
+      "record": "evidence/aligned-gaussian-generator-layer-1-single-search.json",
+      "record_sha256": "f7bb52993d6b1fc75b6a47b2941285127657943412f1caba723079f9e5257b59",
+      "status": "passed",
+      "source_provenance": {
+        "search_saturated_dual_directions.py": {
+          "location": "worktree",
+          "sha256": "004df609daab720110423f432b359a4ff12b0ec10bc1478e5e8548147a92016c"
+        },
+        "saturated_dual_kernel_directions.py": {
+          "location": "worktree",
+          "sha256": "a8034b7acda20c986619e55e5f71873371f38adedc9d2366d1e2c4a6f13745eb"
+        },
+        "search_f4_recentered_crossings.py": {
+          "location": "worktree",
+          "sha256": "8715f1a28b0cb68ad4d3fd29adc53fe082f6181882ed4bce7ce0e9ff582b0be4"
+        },
+        "native_matrix_smith_f4.py": {
+          "location": "worktree",
+          "sha256": "c08da20f1938a371b438e32fbc6a8f6766b48c2cfee5bcd1c956ce137dc70203"
+        },
+        "native_matrix_smith_f4.cpp": {
+          "location": "worktree",
+          "sha256": "5ec995cd04563c2fa99b69afd71bf476d5ca885f1f90377490c30e5a1a55f330"
+        },
+        "weighted_smith_oracle_f4.py": {
+          "location": "worktree",
+          "sha256": "d277f46caa98dab48d243af64c18e42e09e917bf1e862057a55cb35f74a6d572"
+        }
+      },
+      "parameter_dimension_over_F4": 200,
+      "retained_literal_witnesses": 48,
+      "literal_endpoint_entries": 31250,
+      "complete_profiles_certified_by_polynomial_frames": 100,
+      "gauges": {
+        "natural": {
+          "retained": 24,
+          "best_rho": 0.7263479477044683,
+          "distinct_profile_classes": 227
+        },
+        "two_zero": {
+          "retained": 24,
+          "best_rho": 0.8335422390094076,
+          "distinct_profile_classes": 229
+        }
+      },
+      "recorded_query_counters": {
+        "single_queries": 400,
+        "pair_queries": 0,
+        "random_queries": 0,
+        "literal_endpoint_replays": 113
+      },
+      "completed_requested_schedule": true,
+      "strict_pressure_candidate_found": false,
+      "elapsed_seconds": 59.89298095799859
+    },
+    {
+      "record": "evidence/aligned-gaussian-generator-layer-2-single-search.json",
+      "record_sha256": "dd4967de26c9f306158286f6320135a45735906a4a65fe2ac73bfb4079715259",
+      "status": "passed",
+      "source_provenance": {
+        "search_saturated_dual_directions.py": {
+          "location": "worktree",
+          "sha256": "004df609daab720110423f432b359a4ff12b0ec10bc1478e5e8548147a92016c"
+        },
+        "saturated_dual_kernel_directions.py": {
+          "location": "worktree",
+          "sha256": "a8034b7acda20c986619e55e5f71873371f38adedc9d2366d1e2c4a6f13745eb"
+        },
+        "search_f4_recentered_crossings.py": {
+          "location": "worktree",
+          "sha256": "8715f1a28b0cb68ad4d3fd29adc53fe082f6181882ed4bce7ce0e9ff582b0be4"
+        },
+        "native_matrix_smith_f4.py": {
+          "location": "worktree",
+          "sha256": "c08da20f1938a371b438e32fbc6a8f6766b48c2cfee5bcd1c956ce137dc70203"
+        },
+        "native_matrix_smith_f4.cpp": {
+          "location": "worktree",
+          "sha256": "5ec995cd04563c2fa99b69afd71bf476d5ca885f1f90377490c30e5a1a55f330"
+        },
+        "weighted_smith_oracle_f4.py": {
+          "location": "worktree",
+          "sha256": "d277f46caa98dab48d243af64c18e42e09e917bf1e862057a55cb35f74a6d572"
+        }
+      },
+      "parameter_dimension_over_F4": 10,
+      "retained_literal_witnesses": 26,
+      "literal_endpoint_entries": 17500,
+      "complete_profiles_certified_by_polynomial_frames": 56,
+      "gauges": {
+        "natural": {
+          "retained": 13,
+          "best_rho": 0.7263479477044683,
+          "distinct_profile_classes": 14
+        },
+        "two_zero": {
+          "retained": 13,
+          "best_rho": 0.8335422390094076,
+          "distinct_profile_classes": 14
+        }
+      },
+      "recorded_query_counters": {
+        "single_queries": 20,
+        "pair_queries": 0,
+        "random_queries": 0,
+        "literal_endpoint_replays": 27
+      },
+      "completed_requested_schedule": true,
+      "strict_pressure_candidate_found": false,
+      "elapsed_seconds": 28.696174078000695
+    }
+  ],
+  "checker_sha256": "1e256ace2dab18b1851c9a95d2a7b26f7003090eb86ae67d45e6b73fe3f38c57"
+}
