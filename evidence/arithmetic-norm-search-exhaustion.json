@@ -1,0 +1,35 @@
+{
+  "scope": "Finite fixed-box exhaustion controls; not an asymptotic lower bound",
+  "controls": [
+    {
+      "status": "search_exhausted",
+      "integer": "1208925818180866012192151",
+      "failed_generator_index": 22,
+      "completed_relations": 22,
+      "x_bound": 4096,
+      "y_bound": 64,
+      "smooth_bound": 1000,
+      "generator_prime": 197,
+      "target_form": [
+        "703135247427",
+        "-646306737026",
+        "1867853905160"
+      ]
+    },
+    {
+      "status": "search_exhausted",
+      "integer": "906694351050364540708897",
+      "failed_generator_index": 15,
+      "completed_relations": 15,
+      "x_bound": 4096,
+      "y_bound": 256,
+      "smooth_bound": 1000,
+      "generator_prime": 127,
+      "target_form": [
+        "871731309586",
+        "-598242644502",
+        "1142746515493"
+      ]
+    }
+  ]
+}

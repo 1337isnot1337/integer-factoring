@@ -1,4 +1,4 @@
-.PHONY: verify verify-docs verify-frontier verify-arithmetic verify-arithmetic-framework verify-post-half verify-formal verify-k6 verify-half-appendix verify-bell help verify-schur-fermion verify-schur-central verify-schur-gaussian verify-schur-sparse verify-fixed-modes verify-cancellation-modules verify-minimal-modules verify-exact-modules verify-cancellation-crossing verify-block-smith verify-linear-smith verify-type-pressure verify-crossing-interpolation verify-smith-oracle verify-controlled-smith verify-sparse-holonomy verify-charge-pruning verify-cubic-full-images
+.PHONY: verify verify-docs verify-frontier verify-arithmetic verify-arithmetic-framework verify-post-half verify-formal verify-k6 verify-half-appendix verify-bell help verify-schur-fermion verify-schur-central verify-schur-gaussian verify-schur-sparse verify-fixed-modes verify-cancellation-modules verify-minimal-modules verify-exact-modules verify-cancellation-crossing verify-block-smith verify-linear-smith verify-type-pressure verify-crossing-interpolation verify-smith-oracle verify-controlled-smith verify-sparse-holonomy verify-charge-pruning verify-cubic-full-images verify-arithmetic-sieve
 
 verify: verify-docs verify-frontier verify-arithmetic
 	python3 -m unittest discover -s tests -v
@@ -13,6 +13,26 @@ verify: verify-docs verify-frontier verify-arithmetic
 
 verify-docs:
 	python3 tools/check_docs.py
+
+.PHONY: verify-modular-descent
+verify-modular-descent:
+	python3 tools/check_modular_parameter_descent.py
+
+.PHONY: verify-smooth-norms verify-neutral-duals verify-f4-recentered verify-odd-cyclic
+verify-smooth-norms:
+	python3 tools/check_smooth_norm_gap.py
+	python3 tools/check_smooth_norm_relation.py
+	python3 tools/check_factored_norm_search.py
+
+verify-neutral-duals:
+	python3 tools/check_neutral_reflected_crossings.py
+	python3 tools/check_homogeneous_dual_completion.py
+
+verify-f4-recentered:
+	python3 tools/check_f4_recentered_lattices.py
+
+verify-odd-cyclic:
+	python3 tools/check_odd_cyclic_crossing.py
 
 verify-arithmetic:
 	python3 tools/check_dyadic_hyperbola.py
@@ -402,6 +422,9 @@ verify-post-half:
 	python3 tools/check_half_projection.py
 	python3 tools/check_half_restricted_labels.py
 
+verify-arithmetic-sieve:
+	python3 tools/check_arithmetic_sieve_certificate.py
+
 verify-frontier: verify-bell
 	python3 tools/check_arithmetic_two_group.py
 	python3 tools/check_positive_relation_kernel.py
@@ -436,6 +459,7 @@ help:
 	  'make verify-frontier      - focused frontier certificates' \
 	  'make verify-post-half     - larger optional matrix-rank checks' \
 	  'make verify-docs          - check local Markdown file links' \
+	  'make verify-arithmetic-sieve - replay the 60/80-bit arithmetic certificates and finite search limits' \
 	  'make verify-schur-fermion - exact full Schur entry and crossing queries' \
 	  'make verify-schur-central - hook identities and exact Schur central ranks' \
 	  'make verify-schur-gaussian - exact Schur digit reduction and Gaussian seed' \

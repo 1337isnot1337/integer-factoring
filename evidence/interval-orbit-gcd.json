@@ -8,6 +8,34 @@
   ],
   "dyadic_factor_boxes": 688,
   "orbit_boundary_recurrence_controls": 256,
+  "literal_pole_value_controls": 192,
+  "specialization_jump_control": {
+    "intervals": [
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        4
+      ]
+    ],
+    "gcd_at_5": [
+      1
+    ],
+    "gcd_at_6": [
+      6,
+      -5,
+      1
+    ],
+    "exceptional_parameter_polynomial": [
+      1296,
+      -900,
+      228,
+      -25,
+      1
+    ]
+  },
   "small_prime_false_common_root_control": {
     "number": 35,
     "prime": 3,

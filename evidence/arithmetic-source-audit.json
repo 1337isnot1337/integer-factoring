@@ -13,5 +13,28 @@
     "two_rank_bound": "|C_Delta[2]| <= 2^omega(Delta), Theorem 2.5",
     "smooth_density_radius": "Theorem 8.1 proof counts a <= x = (1/2) sqrt(|Delta|/d), 1 <= d <= 12, before applying Lemma 2.10"
   },
-  "scope": "Source audit, not a proof of deterministic generator construction or a stronger factoring bound"
+  "scope": "Source audit, not a proof of deterministic generator construction or a stronger factoring bound",
+  "witness_search_source_audits": [
+    {
+      "source": "Balog, Blomer, Dartyge and Tenenbaum, Friable values of binary forms (2012)",
+      "url": "https://tenenb.perso.math.cnrs.fr/PPP/friableforms.pdf",
+      "pdf_sha256": "7f09a433c6df1eba6214fed28c4f3d68d1fcad1e9df931b994c1cb3e29b5392c",
+      "checked_location": "Theorem 1; PDF page 2 inspected visually",
+      "limit": "Implied constants depend on the fixed form; no short-box bound uniform in growing discriminant was imported"
+    },
+    {
+      "source": "de Boer, Pellet-Mary and Wesolowski, Rigorous methods for computational number theory, December 1, 2025 version",
+      "url": "https://koendeboer.com/publication/rigorousmethods/RigorousMethods.pdf",
+      "pdf_sha256": "c0e66d2673182e8beb7e8f744506d1fe78a15e187806f51cc20f3d892ad513bf",
+      "checked_location": "Abstract and Theorem 1.1, text extraction",
+      "limit": "Randomized ideal sampling under ERH; not used as an unconditional deterministic witness extractor"
+    },
+    {
+      "source": "Bradford and Wagstaff, Square Form Factorization II, retrieved author PDF",
+      "url": "https://homes.cerias.purdue.edu/~ssw/squfof2.pdf",
+      "pdf_sha256": "cd9290c7f9acaf79a073cae2ab23d16b08b064ea553f7c22dc28a156a417f26f",
+      "checked_location": "Section 8.2 and Theorem 4; PDF page 14 inspected visually",
+      "limit": "Complexity analysis explicitly assumes heuristic hypotheses, including rectangle smoothness and factoring success; none imported as proved facts"
+    }
+  ]
 }
