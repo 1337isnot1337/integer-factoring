@@ -233,6 +233,13 @@ before physical costs are evaluated. The contraction is a scalar matrix
 plus rank one. Complete interval-31 terminal and split projector screens
 found no gain in their recorded grids. `make verify-near-power-operators`
 checks the interpolation, auxiliary-factor removal, and original cuts.
+The [fixed-deficit extension](research/fixed-deficit-identity-cores.md)
+proves a corresponding mixed-end core at `n=p^k-d` in every prime
+characteristic. It retains `2*r+d` actual zero modes, calculates their
+profile through order `p^(r+d)`, and bounds the departure from the
+scalar prime-power contraction by rank `d`. Its general gate checks
+exact polynomial geometry and Gaussian-factor division; further complete
+physical operator replays are stated separately.
 
 The [reflection-pair compression](research/reflection-dual-rail-compression.md)
 retains one occupied mode from every reflected pair. A characteristic-two

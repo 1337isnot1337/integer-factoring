@@ -14,6 +14,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Fixed deficits below prime powers](fixed-deficit-identity-cores.md): mixed initial and terminal directions have a uniformly bounded rectangular core, exact Gaussian-digit division, and a rank-at-most-deficit contraction correction in every prime characteristic.
+
 - [Complete-entry binary crossing synthesis](binary-two-cut-affine-synthesis.md): exact affine systems at both cuts cover free Laurent entries, a support lemma bounds the required degree for specified targets, and complete constant F4 flag searches decide those targets.
 
 - [Joint residue-compressed polynomial synthesis](joint-binary-filter-synthesis.md): at most twice the number of digit states plus one residue patterns give exact degree/order feasibility in every prime characteristic, with a constructive fixed-field endpoint lift.

@@ -449,3 +449,7 @@ verify-weyl-filter-flags:
 .PHONY: verify-binary-two-cut-lattices
 verify-binary-two-cut-lattices:
 	python3 tools/check_binary_two_cut_lattices.py
+
+.PHONY: verify-deficit-identity-geometry
+verify-deficit-identity-geometry:
+	python3 tools/check_deficit_identity_mode_geometry.py
