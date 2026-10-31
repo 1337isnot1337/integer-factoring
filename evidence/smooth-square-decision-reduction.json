@@ -1,0 +1,7627 @@
+{
+  "decision_calls_checked": 15046,
+  "discriminants_checked": 255,
+  "invalid_always_yes_oracle_rejected": true,
+  "negative_decisions_used": 2818,
+  "records": [
+    {
+      "decision_calls": 27,
+      "discriminant": -512,
+      "distinct_cap_vectors_in_finite_oracle": 7,
+      "example": {
+        "half_word": [
+          -16
+        ],
+        "primitive_norm_bits": 51,
+        "queries": 7,
+        "target": [
+          1,
+          0,
+          128
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        3
+      ],
+      "maximum_calls_per_target": 7,
+      "negative_answers": 5,
+      "query_bound_per_target": 7,
+      "query_kinds": {
+        "left_interval": 20,
+        "left_singleton": 4,
+        "middle_singleton": 3
+      },
+      "subgroup_order": 8,
+      "targets_checked": 4
+    },
+    {
+      "decision_calls": 90,
+      "discriminant": -511,
+      "distinct_cap_vectors_in_finite_oracle": 13,
+      "example": {
+        "half_word": [
+          -18,
+          -16
+        ],
+        "primitive_norm_bits": 111,
+        "queries": 13,
+        "target": [
+          1,
+          1,
+          128
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        2,
+        5
+      ],
+      "maximum_calls_per_target": 13,
+      "negative_answers": 15,
+      "query_bound_per_target": 14,
+      "query_kinds": {
+        "left_interval": 70,
+        "left_singleton": 14,
+        "middle_singleton": 6
+      },
+      "subgroup_order": 14,
+      "targets_checked": 7
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -508,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          0,
+          127
+        ]
+      },
+      "exponent_cap": 54,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 13,
+      "discriminant": -507,
+      "distinct_cap_vectors_in_finite_oracle": 7,
+      "example": {
+        "half_word": [
+          -17
+        ],
+        "primitive_norm_bits": 96,
+        "queries": 7,
+        "target": [
+          3,
+          3,
+          43
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        7
+      ],
+      "maximum_calls_per_target": 7,
+      "negative_answers": 1,
+      "query_bound_per_target": 7,
+      "query_kinds": {
+        "left_interval": 10,
+        "left_singleton": 2,
+        "middle_singleton": 1
+      },
+      "subgroup_order": 4,
+      "targets_checked": 2
+    },
+    {
+      "decision_calls": 13,
+      "discriminant": -504,
+      "distinct_cap_vectors_in_finite_oracle": 7,
+      "example": {
+        "half_word": [
+          -29
+        ],
+        "primitive_norm_bits": 135,
+        "queries": 7,
+        "target": [
+          7,
+          0,
+          18
+        ]
+      },
+      "exponent_cap": 30,
+      "factor_base_primes": [
+        5
+      ],
+      "maximum_calls_per_target": 7,
+      "negative_answers": 1,
+      "query_bound_per_target": 7,
+      "query_kinds": {
+        "left_interval": 10,
+        "left_singleton": 2,
+        "middle_singleton": 1
+      },
+      "subgroup_order": 4,
+      "targets_checked": 2
+    },
+    {
+      "decision_calls": 398,
+      "discriminant": -503,
+      "distinct_cap_vectors_in_finite_oracle": 19,
+      "example": {
+        "half_word": [
+          -18,
+          -18,
+          -12
+        ],
+        "primitive_norm_bits": 161,
+        "queries": 19,
+        "target": [
+          1,
+          1,
+          126
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        2,
+        3,
+        7
+      ],
+      "maximum_calls_per_target": 19,
+      "negative_answers": 72,
+      "query_bound_per_target": 21,
+      "query_kinds": {
+        "left_interval": 315,
+        "left_singleton": 63,
+        "middle_singleton": 20
+      },
+      "subgroup_order": 21,
+      "targets_checked": 21
+    },
+    {
+      "decision_calls": 64,
+      "discriminant": -500,
+      "distinct_cap_vectors_in_finite_oracle": 13,
+      "example": {
+        "half_word": [
+          -18,
+          -14
+        ],
+        "primitive_norm_bits": 136,
+        "queries": 13,
+        "target": [
+          1,
+          0,
+          125
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        3,
+        7
+      ],
+      "maximum_calls_per_target": 13,
+      "negative_answers": 8,
+      "query_bound_per_target": 14,
+      "query_kinds": {
+        "left_interval": 50,
+        "left_singleton": 10,
+        "middle_singleton": 4
+      },
+      "subgroup_order": 10,
+      "targets_checked": 5
+    },
+    {
+      "decision_calls": 14,
+      "discriminant": -499,
+      "distinct_cap_vectors_in_finite_oracle": 5,
+      "example": {
+        "half_word": [
+          -5
+        ],
+        "primitive_norm_bits": 24,
+        "queries": 5,
+        "target": [
+          5,
+          -1,
+          25
+        ]
+      },
+      "exponent_cap": 6,
+      "factor_base_primes": [
+        5
+      ],
+      "maximum_calls_per_target": 5,
+      "negative_answers": 3,
+      "query_bound_per_target": 5,
+      "query_kinds": {
+        "left_interval": 9,
+        "left_singleton": 3,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 3,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 38,
+      "discriminant": -496,
+      "distinct_cap_vectors_in_finite_oracle": 13,
+      "example": {
+        "half_word": [
+          -18,
+          -16
+        ],
+        "primitive_norm_bits": 174,
+        "queries": 13,
+        "target": [
+          5,
+          -2,
+          25
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        5,
+        7
+      ],
+      "maximum_calls_per_target": 13,
+      "negative_answers": 3,
+      "query_bound_per_target": 14,
+      "query_kinds": {
+        "left_interval": 30,
+        "left_singleton": 6,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 6,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 51,
+      "discriminant": -495,
+      "distinct_cap_vectors_in_finite_oracle": 13,
+      "example": {
+        "half_word": [
+          -18,
+          -17
+        ],
+        "primitive_norm_bits": 132,
+        "queries": 13,
+        "target": [
+          4,
+          -1,
+          31
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        2,
+        7
+      ],
+      "maximum_calls_per_target": 13,
+      "negative_answers": 5,
+      "query_bound_per_target": 14,
+      "query_kinds": {
+        "left_interval": 40,
+        "left_singleton": 8,
+        "middle_singleton": 3
+      },
+      "subgroup_order": 16,
+      "targets_checked": 4
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -492,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          0,
+          123
+        ]
+      },
+      "exponent_cap": 66,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 120,
+      "discriminant": -491,
+      "distinct_cap_vectors_in_finite_oracle": 13,
+      "example": {
+        "half_word": [
+          -17,
+          -17
+        ],
+        "primitive_norm_bits": 133,
+        "queries": 14,
+        "target": [
+          3,
+          -1,
+          41
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        3,
+        5
+      ],
+      "maximum_calls_per_target": 14,
+      "negative_answers": 18,
+      "query_bound_per_target": 14,
+      "query_kinds": {
+        "left_interval": 90,
+        "left_singleton": 18,
+        "middle_singleton": 12
+      },
+      "subgroup_order": 9,
+      "targets_checked": 9
+    },
+    {
+      "decision_calls": 64,
+      "discriminant": -488,
+      "distinct_cap_vectors_in_finite_oracle": 13,
+      "example": {
+        "half_word": [
+          -18,
+          -16
+        ],
+        "primitive_norm_bits": 147,
+        "queries": 13,
+        "target": [
+          1,
+          0,
+          122
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        3,
+        7
+      ],
+      "maximum_calls_per_target": 13,
+      "negative_answers": 8,
+      "query_bound_per_target": 14,
+      "query_kinds": {
+        "left_interval": 50,
+        "left_singleton": 10,
+        "middle_singleton": 4
+      },
+      "subgroup_order": 10,
+      "targets_checked": 5
+    },
+    {
+      "decision_calls": 34,
+      "discriminant": -487,
+      "distinct_cap_vectors_in_finite_oracle": 5,
+      "example": {
+        "half_word": [
+          0
+        ],
+        "primitive_norm_bits": 1,
+        "queries": 5,
+        "target": [
+          1,
+          1,
+          122
+        ]
+      },
+      "exponent_cap": 6,
+      "factor_base_primes": [
+        2
+      ],
+      "maximum_calls_per_target": 5,
+      "negative_answers": 15,
+      "query_bound_per_target": 5,
+      "query_kinds": {
+        "left_interval": 21,
+        "left_singleton": 7,
+        "middle_singleton": 6
+      },
+      "subgroup_order": 7,
+      "targets_checked": 7
+    },
+    {
+      "decision_calls": 20,
+      "discriminant": -484,
+      "distinct_cap_vectors_in_finite_oracle": 7,
+      "example": {
+        "half_word": [
+          -17
+        ],
+        "primitive_norm_bits": 79,
+        "queries": 7,
+        "target": [
+          5,
+          -4,
+          25
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        5
+      ],
+      "maximum_calls_per_target": 7,
+      "negative_answers": 3,
+      "query_bound_per_target": 7,
+      "query_kinds": {
+        "left_interval": 15,
+        "left_singleton": 3,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 3,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -483,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          1,
+          121
+        ]
+      },
+      "exponent_cap": 42,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -480,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          0,
+          120
+        ]
+      },
+      "exponent_cap": 90,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 624,
+      "discriminant": -479,
+      "distinct_cap_vectors_in_finite_oracle": 25,
+      "example": {
+        "half_word": [
+          -18,
+          -18,
+          -18,
+          -1
+        ],
+        "primitive_norm_bits": 183,
+        "queries": 25,
+        "target": [
+          1,
+          1,
+          120
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        2,
+        3,
+        5,
+        7
+      ],
+      "maximum_calls_per_target": 25,
+      "negative_answers": 88,
+      "query_bound_per_target": 28,
+      "query_kinds": {
+        "left_interval": 500,
+        "left_singleton": 100,
+        "middle_singleton": 24
+      },
+      "subgroup_order": 25,
+      "targets_checked": 25
+    },
+    {
+      "decision_calls": 64,
+      "discriminant": -476,
+      "distinct_cap_vectors_in_finite_oracle": 13,
+      "example": {
+        "half_word": [
+          -18,
+          -14
+        ],
+        "primitive_norm_bits": 123,
+        "queries": 13,
+        "target": [
+          1,
+          0,
+          119
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        3,
+        5
+      ],
+      "maximum_calls_per_target": 13,
+      "negative_answers": 8,
+      "query_bound_per_target": 14,
+      "query_kinds": {
+        "left_interval": 50,
+        "left_singleton": 10,
+        "middle_singleton": 4
+      },
+      "subgroup_order": 10,
+      "targets_checked": 5
+    },
+    {
+      "decision_calls": 13,
+      "discriminant": -475,
+      "distinct_cap_vectors_in_finite_oracle": 7,
+      "example": {
+        "half_word": [
+          -17
+        ],
+        "primitive_norm_bits": 96,
+        "queries": 7,
+        "target": [
+          11,
+          3,
+          11
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        7
+      ],
+      "maximum_calls_per_target": 7,
+      "negative_answers": 1,
+      "query_bound_per_target": 7,
+      "query_kinds": {
+        "left_interval": 10,
+        "left_singleton": 2,
+        "middle_singleton": 1
+      },
+      "subgroup_order": 4,
+      "targets_checked": 2
+    },
+    {
+      "decision_calls": 20,
+      "discriminant": -472,
+      "distinct_cap_vectors_in_finite_oracle": 7,
+      "example": {
+        "half_word": [
+          -17
+        ],
+        "primitive_norm_bits": 96,
+        "queries": 7,
+        "target": [
+          7,
+          -2,
+          17
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        7
+      ],
+      "maximum_calls_per_target": 7,
+      "negative_answers": 3,
+      "query_bound_per_target": 7,
+      "query_kinds": {
+        "left_interval": 15,
+        "left_singleton": 3,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 3,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 103,
+      "discriminant": -471,
+      "distinct_cap_vectors_in_finite_oracle": 13,
+      "example": {
+        "half_word": [
+          -18,
+          -14
+        ],
+        "primitive_norm_bits": 102,
+        "queries": 13,
+        "target": [
+          3,
+          3,
+          40
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        2,
+        5
+      ],
+      "maximum_calls_per_target": 13,
+      "negative_answers": 18,
+      "query_bound_per_target": 14,
+      "query_kinds": {
+        "left_interval": 80,
+        "left_singleton": 16,
+        "middle_singleton": 7
+      },
+      "subgroup_order": 16,
+      "targets_checked": 8
+    },
+    {
+      "decision_calls": 13,
+      "discriminant": -468,
+      "distinct_cap_vectors_in_finite_oracle": 7,
+      "example": {
+        "half_word": [
+          -29
+        ],
+        "primitive_norm_bits": 163,
+        "queries": 7,
+        "target": [
+          9,
+          0,
+          13
+        ]
+      },
+      "exponent_cap": 30,
+      "factor_base_primes": [
+        7
+      ],
+      "maximum_calls_per_target": 7,
+      "negative_answers": 1,
+      "query_bound_per_target": 7,
+      "query_kinds": {
+        "left_interval": 10,
+        "left_singleton": 2,
+        "middle_singleton": 1
+      },
+      "subgroup_order": 4,
+      "targets_checked": 2
+    },
+    {
+      "decision_calls": 62,
+      "discriminant": -467,
+      "distinct_cap_vectors_in_finite_oracle": 9,
+      "example": {
+        "half_word": [
+          -6,
+          -5
+        ],
+        "primitive_norm_bits": 48,
+        "queries": 9,
+        "target": [
+          1,
+          1,
+          117
+        ]
+      },
+      "exponent_cap": 6,
+      "factor_base_primes": [
+        3,
+        7
+      ],
+      "maximum_calls_per_target": 9,
+      "negative_answers": 15,
+      "query_bound_per_target": 10,
+      "query_kinds": {
+        "left_interval": 42,
+        "left_singleton": 14,
+        "middle_singleton": 6
+      },
+      "subgroup_order": 7,
+      "targets_checked": 7
+    },
+    {
+      "decision_calls": 79,
+      "discriminant": -464,
+      "distinct_cap_vectors_in_finite_oracle": 13,
+      "example": {
+        "half_word": [
+          -17,
+          -16
+        ],
+        "primitive_norm_bits": 129,
+        "queries": 14,
+        "target": [
+          4,
+          0,
+          29
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        3,
+        5
+      ],
+      "maximum_calls_per_target": 14,
+      "negative_answers": 9,
+      "query_bound_per_target": 14,
+      "query_kinds": {
+        "left_interval": 60,
+        "left_singleton": 12,
+        "middle_singleton": 7
+      },
+      "subgroup_order": 12,
+      "targets_checked": 6
+    },
+    {
+      "decision_calls": 34,
+      "discriminant": -463,
+      "distinct_cap_vectors_in_finite_oracle": 5,
+      "example": {
+        "half_word": [
+          0
+        ],
+        "primitive_norm_bits": 1,
+        "queries": 5,
+        "target": [
+          1,
+          1,
+          116
+        ]
+      },
+      "exponent_cap": 6,
+      "factor_base_primes": [
+        2
+      ],
+      "maximum_calls_per_target": 5,
+      "negative_answers": 15,
+      "query_bound_per_target": 5,
+      "query_kinds": {
+        "left_interval": 21,
+        "left_singleton": 7,
+        "middle_singleton": 6
+      },
+      "subgroup_order": 7,
+      "targets_checked": 7
+    },
+    {
+      "decision_calls": 20,
+      "discriminant": -460,
+      "distinct_cap_vectors_in_finite_oracle": 7,
+      "example": {
+        "half_word": [
+          -17
+        ],
+        "primitive_norm_bits": 96,
+        "queries": 7,
+        "target": [
+          4,
+          -2,
+          29
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        7
+      ],
+      "maximum_calls_per_target": 7,
+      "negative_answers": 3,
+      "query_bound_per_target": 7,
+      "query_kinds": {
+        "left_interval": 15,
+        "left_singleton": 3,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 6,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 20,
+      "discriminant": -459,
+      "distinct_cap_vectors_in_finite_oracle": 7,
+      "example": {
+        "half_word": [
+          -17
+        ],
+        "primitive_norm_bits": 79,
+        "queries": 7,
+        "target": [
+          9,
+          -3,
+          13
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        5
+      ],
+      "maximum_calls_per_target": 7,
+      "negative_answers": 3,
+      "query_bound_per_target": 7,
+      "query_kinds": {
+        "left_interval": 15,
+        "left_singleton": 3,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 6,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 13,
+      "discriminant": -456,
+      "distinct_cap_vectors_in_finite_oracle": 7,
+      "example": {
+        "half_word": [
+          -29
+        ],
+        "primitive_norm_bits": 135,
+        "queries": 7,
+        "target": [
+          6,
+          0,
+          19
+        ]
+      },
+      "exponent_cap": 30,
+      "factor_base_primes": [
+        5
+      ],
+      "maximum_calls_per_target": 7,
+      "negative_answers": 1,
+      "query_bound_per_target": 7,
+      "query_kinds": {
+        "left_interval": 10,
+        "left_singleton": 2,
+        "middle_singleton": 1
+      },
+      "subgroup_order": 4,
+      "targets_checked": 2
+    },
+    {
+      "decision_calls": 64,
+      "discriminant": -455,
+      "distinct_cap_vectors_in_finite_oracle": 13,
+      "example": {
+        "half_word": [
+          -18,
+          -14
+        ],
+        "primitive_norm_bits": 81,
+        "queries": 13,
+        "target": [
+          1,
+          1,
+          114
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        2,
+        3
+      ],
+      "maximum_calls_per_target": 13,
+      "negative_answers": 8,
+      "query_bound_per_target": 14,
+      "query_kinds": {
+        "left_interval": 50,
+        "left_singleton": 10,
+        "middle_singleton": 4
+      },
+      "subgroup_order": 20,
+      "targets_checked": 5
+    },
+    {
+      "decision_calls": 27,
+      "discriminant": -452,
+      "distinct_cap_vectors_in_finite_oracle": 7,
+      "example": {
+        "half_word": [
+          -16
+        ],
+        "primitive_norm_bits": 51,
+        "queries": 7,
+        "target": [
+          1,
+          0,
+          113
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        3
+      ],
+      "maximum_calls_per_target": 7,
+      "negative_answers": 5,
+      "query_bound_per_target": 7,
+      "query_kinds": {
+        "left_interval": 20,
+        "left_singleton": 4,
+        "middle_singleton": 3
+      },
+      "subgroup_order": 8,
+      "targets_checked": 4
+    },
+    {
+      "decision_calls": 38,
+      "discriminant": -451,
+      "distinct_cap_vectors_in_finite_oracle": 13,
+      "example": {
+        "half_word": [
+          -18,
+          -16
+        ],
+        "primitive_norm_bits": 174,
+        "queries": 13,
+        "target": [
+          5,
+          -3,
+          23
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        5,
+        7
+      ],
+      "maximum_calls_per_target": 13,
+      "negative_answers": 3,
+      "query_bound_per_target": 14,
+      "query_kinds": {
+        "left_interval": 30,
+        "left_singleton": 6,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 6,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -448,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          0,
+          112
+        ]
+      },
+      "exponent_cap": 42,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 90,
+      "discriminant": -447,
+      "distinct_cap_vectors_in_finite_oracle": 13,
+      "example": {
+        "half_word": [
+          -18,
+          -15
+        ],
+        "primitive_norm_bits": 121,
+        "queries": 13,
+        "target": [
+          1,
+          1,
+          112
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        2,
+        7
+      ],
+      "maximum_calls_per_target": 13,
+      "negative_answers": 15,
+      "query_bound_per_target": 14,
+      "query_kinds": {
+        "left_interval": 70,
+        "left_singleton": 14,
+        "middle_singleton": 6
+      },
+      "subgroup_order": 14,
+      "targets_checked": 7
+    },
+    {
+      "decision_calls": 52,
+      "discriminant": -444,
+      "distinct_cap_vectors_in_finite_oracle": 13,
+      "example": {
+        "half_word": [
+          -17,
+          -17
+        ],
+        "primitive_norm_bits": 175,
+        "queries": 14,
+        "target": [
+          7,
+          2,
+          16
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        5,
+        7
+      ],
+      "maximum_calls_per_target": 14,
+      "negative_answers": 4,
+      "query_bound_per_target": 14,
+      "query_kinds": {
+        "left_interval": 40,
+        "left_singleton": 8,
+        "middle_singleton": 4
+      },
+      "subgroup_order": 8,
+      "targets_checked": 4
+    },
+    {
+      "decision_calls": 24,
+      "discriminant": -443,
+      "distinct_cap_vectors_in_finite_oracle": 5,
+      "example": {
+        "half_word": [
+          -5
+        ],
+        "primitive_norm_bits": 16,
+        "queries": 5,
+        "target": [
+          1,
+          1,
+          111
+        ]
+      },
+      "exponent_cap": 6,
+      "factor_base_primes": [
+        3
+      ],
+      "maximum_calls_per_target": 5,
+      "negative_answers": 8,
+      "query_bound_per_target": 5,
+      "query_kinds": {
+        "left_interval": 15,
+        "left_singleton": 5,
+        "middle_singleton": 4
+      },
+      "subgroup_order": 5,
+      "targets_checked": 5
+    },
+    {
+      "decision_calls": 38,
+      "discriminant": -440,
+      "distinct_cap_vectors_in_finite_oracle": 13,
+      "example": {
+        "half_word": [
+          -18,
+          -17
+        ],
+        "primitive_norm_bits": 153,
+        "queries": 13,
+        "target": [
+          9,
+          -8,
+          14
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        3,
+        7
+      ],
+      "maximum_calls_per_target": 13,
+      "negative_answers": 3,
+      "query_bound_per_target": 14,
+      "query_kinds": {
+        "left_interval": 30,
+        "left_singleton": 6,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 12,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 196,
+      "discriminant": -439,
+      "distinct_cap_vectors_in_finite_oracle": 13,
+      "example": {
+        "half_word": [
+          -6,
+          -5,
+          -2
+        ],
+        "primitive_norm_bits": 47,
+        "queries": 14,
+        "target": [
+          4,
+          -3,
+          28
+        ]
+      },
+      "exponent_cap": 6,
+      "factor_base_primes": [
+        2,
+        5,
+        7
+      ],
+      "maximum_calls_per_target": 14,
+      "negative_answers": 44,
+      "query_bound_per_target": 15,
+      "query_kinds": {
+        "left_interval": 135,
+        "left_singleton": 45,
+        "middle_singleton": 16
+      },
+      "subgroup_order": 15,
+      "targets_checked": 15
+    },
+    {
+      "decision_calls": 20,
+      "discriminant": -436,
+      "distinct_cap_vectors_in_finite_oracle": 7,
+      "example": {
+        "half_word": [
+          -17
+        ],
+        "primitive_norm_bits": 79,
+        "queries": 7,
+        "target": [
+          5,
+          -2,
+          22
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        5
+      ],
+      "maximum_calls_per_target": 7,
+      "negative_answers": 3,
+      "query_bound_per_target": 7,
+      "query_kinds": {
+        "left_interval": 15,
+        "left_singleton": 3,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 3,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -435,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          1,
+          109
+        ]
+      },
+      "exponent_cap": 42,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 20,
+      "discriminant": -432,
+      "distinct_cap_vectors_in_finite_oracle": 7,
+      "example": {
+        "half_word": [
+          -17
+        ],
+        "primitive_norm_bits": 96,
+        "queries": 7,
+        "target": [
+          9,
+          -6,
+          13
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        7
+      ],
+      "maximum_calls_per_target": 7,
+      "negative_answers": 3,
+      "query_bound_per_target": 7,
+      "query_kinds": {
+        "left_interval": 15,
+        "left_singleton": 3,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 6,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 280,
+      "discriminant": -431,
+      "distinct_cap_vectors_in_finite_oracle": 13,
+      "example": {
+        "half_word": [
+          -6,
+          -5,
+          5
+        ],
+        "primitive_norm_bits": 52,
+        "queries": 14,
+        "target": [
+          1,
+          1,
+          108
+        ]
+      },
+      "exponent_cap": 6,
+      "factor_base_primes": [
+        2,
+        3,
+        5
+      ],
+      "maximum_calls_per_target": 14,
+      "negative_answers": 80,
+      "query_bound_per_target": 15,
+      "query_kinds": {
+        "left_interval": 189,
+        "left_singleton": 63,
+        "middle_singleton": 28
+      },
+      "subgroup_order": 21,
+      "targets_checked": 21
+    },
+    {
+      "decision_calls": 62,
+      "discriminant": -428,
+      "distinct_cap_vectors_in_finite_oracle": 7,
+      "example": {
+        "half_word": [
+          -14
+        ],
+        "primitive_norm_bits": 45,
+        "queries": 7,
+        "target": [
+          3,
+          -2,
+          36
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        3
+      ],
+      "maximum_calls_per_target": 7,
+      "negative_answers": 22,
+      "query_bound_per_target": 7,
+      "query_kinds": {
+        "left_interval": 45,
+        "left_singleton": 9,
+        "middle_singleton": 8
+      },
+      "subgroup_order": 9,
+      "targets_checked": 9
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -427,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          1,
+          107
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 20,
+      "discriminant": -424,
+      "distinct_cap_vectors_in_finite_oracle": 7,
+      "example": {
+        "half_word": [
+          -17
+        ],
+        "primitive_norm_bits": 79,
+        "queries": 7,
+        "target": [
+          10,
+          -4,
+          11
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        5
+      ],
+      "maximum_calls_per_target": 7,
+      "negative_answers": 3,
+      "query_bound_per_target": 7,
+      "query_kinds": {
+        "left_interval": 15,
+        "left_singleton": 3,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 6,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 64,
+      "discriminant": -423,
+      "distinct_cap_vectors_in_finite_oracle": 13,
+      "example": {
+        "half_word": [
+          -18,
+          -17
+        ],
+        "primitive_norm_bits": 132,
+        "queries": 13,
+        "target": [
+          1,
+          1,
+          106
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        2,
+        7
+      ],
+      "maximum_calls_per_target": 13,
+      "negative_answers": 8,
+      "query_bound_per_target": 14,
+      "query_kinds": {
+        "left_interval": 50,
+        "left_singleton": 10,
+        "middle_singleton": 4
+      },
+      "subgroup_order": 10,
+      "targets_checked": 5
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -420,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          0,
+          105
+        ]
+      },
+      "exponent_cap": 90,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 116,
+      "discriminant": -419,
+      "distinct_cap_vectors_in_finite_oracle": 13,
+      "example": {
+        "half_word": [
+          -6,
+          -6,
+          2
+        ],
+        "primitive_norm_bits": 59,
+        "queries": 13,
+        "target": [
+          3,
+          -1,
+          35
+        ]
+      },
+      "exponent_cap": 6,
+      "factor_base_primes": [
+        3,
+        5,
+        7
+      ],
+      "maximum_calls_per_target": 13,
+      "negative_answers": 20,
+      "query_bound_per_target": 15,
+      "query_kinds": {
+        "left_interval": 81,
+        "left_singleton": 27,
+        "middle_singleton": 8
+      },
+      "subgroup_order": 9,
+      "targets_checked": 9
+    },
+    {
+      "decision_calls": 56,
+      "discriminant": -416,
+      "distinct_cap_vectors_in_finite_oracle": 19,
+      "example": {
+        "half_word": [
+          -18,
+          -18,
+          -17
+        ],
+        "primitive_norm_bits": 237,
+        "queries": 19,
+        "target": [
+          9,
+          -4,
+          12
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        3,
+        5,
+        7
+      ],
+      "maximum_calls_per_target": 19,
+      "negative_answers": 3,
+      "query_bound_per_target": 21,
+      "query_kinds": {
+        "left_interval": 45,
+        "left_singleton": 9,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 12,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 34,
+      "discriminant": -415,
+      "distinct_cap_vectors_in_finite_oracle": 7,
+      "example": {
+        "half_word": [
+          -15
+        ],
+        "primitive_norm_bits": 31,
+        "queries": 7,
+        "target": [
+          1,
+          1,
+          104
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        2
+      ],
+      "maximum_calls_per_target": 7,
+      "negative_answers": 8,
+      "query_bound_per_target": 7,
+      "query_kinds": {
+        "left_interval": 25,
+        "left_singleton": 5,
+        "middle_singleton": 4
+      },
+      "subgroup_order": 10,
+      "targets_checked": 5
+    },
+    {
+      "decision_calls": 34,
+      "discriminant": -412,
+      "distinct_cap_vectors_in_finite_oracle": 7,
+      "example": {
+        "half_word": [
+          -15
+        ],
+        "primitive_norm_bits": 85,
+        "queries": 7,
+        "target": [
+          1,
+          0,
+          103
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        7
+      ],
+      "maximum_calls_per_target": 7,
+      "negative_answers": 8,
+      "query_bound_per_target": 7,
+      "query_kinds": {
+        "left_interval": 25,
+        "left_singleton": 5,
+        "middle_singleton": 4
+      },
+      "subgroup_order": 5,
+      "targets_checked": 5
+    },
+    {
+      "decision_calls": 38,
+      "discriminant": -411,
+      "distinct_cap_vectors_in_finite_oracle": 13,
+      "example": {
+        "half_word": [
+          -18,
+          -17
+        ],
+        "primitive_norm_bits": 180,
+        "queries": 13,
+        "target": [
+          7,
+          -3,
+          15
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        5,
+        7
+      ],
+      "maximum_calls_per_target": 13,
+      "negative_answers": 3,
+      "query_bound_per_target": 14,
+      "query_kinds": {
+        "left_interval": 30,
+        "left_singleton": 6,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 6,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -408,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          0,
+          102
+        ]
+      },
+      "exponent_cap": 42,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 106,
+      "discriminant": -407,
+      "distinct_cap_vectors_in_finite_oracle": 13,
+      "example": {
+        "half_word": [
+          -17,
+          -15
+        ],
+        "primitive_norm_bits": 82,
+        "queries": 14,
+        "target": [
+          3,
+          -1,
+          34
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        2,
+        3
+      ],
+      "maximum_calls_per_target": 14,
+      "negative_answers": 14,
+      "query_bound_per_target": 14,
+      "query_kinds": {
+        "left_interval": 80,
+        "left_singleton": 16,
+        "middle_singleton": 10
+      },
+      "subgroup_order": 16,
+      "targets_checked": 8
+    },
+    {
+      "decision_calls": 132,
+      "discriminant": -404,
+      "distinct_cap_vectors_in_finite_oracle": 19,
+      "example": {
+        "half_word": [
+          -18,
+          -18,
+          -15
+        ],
+        "primitive_norm_bits": 225,
+        "queries": 19,
+        "target": [
+          1,
+          0,
+          101
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        3,
+        5,
+        7
+      ],
+      "maximum_calls_per_target": 19,
+      "negative_answers": 15,
+      "query_bound_per_target": 21,
+      "query_kinds": {
+        "left_interval": 105,
+        "left_singleton": 21,
+        "middle_singleton": 6
+      },
+      "subgroup_order": 14,
+      "targets_checked": 7
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -403,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          1,
+          101
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -400,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          0,
+          100
+        ]
+      },
+      "exponent_cap": 42,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 51,
+      "discriminant": -399,
+      "distinct_cap_vectors_in_finite_oracle": 13,
+      "example": {
+        "half_word": [
+          -18,
+          -17
+        ],
+        "primitive_norm_bits": 115,
+        "queries": 13,
+        "target": [
+          4,
+          -1,
+          25
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        2,
+        5
+      ],
+      "maximum_calls_per_target": 13,
+      "negative_answers": 5,
+      "query_bound_per_target": 14,
+      "query_kinds": {
+        "left_interval": 40,
+        "left_singleton": 8,
+        "middle_singleton": 3
+      },
+      "subgroup_order": 16,
+      "targets_checked": 4
+    },
+    {
+      "decision_calls": 20,
+      "discriminant": -396,
+      "distinct_cap_vectors_in_finite_oracle": 7,
+      "example": {
+        "half_word": [
+          -17
+        ],
+        "primitive_norm_bits": 79,
+        "queries": 7,
+        "target": [
+          4,
+          -2,
+          25
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        5
+      ],
+      "maximum_calls_per_target": 7,
+      "negative_answers": 3,
+      "query_bound_per_target": 7,
+      "query_kinds": {
+        "left_interval": 15,
+        "left_singleton": 3,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 6,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 51,
+      "discriminant": -395,
+      "distinct_cap_vectors_in_finite_oracle": 13,
+      "example": {
+        "half_word": [
+          -18,
+          -16
+        ],
+        "primitive_norm_bits": 147,
+        "queries": 13,
+        "target": [
+          5,
+          5,
+          21
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        3,
+        7
+      ],
+      "maximum_calls_per_target": 13,
+      "negative_answers": 5,
+      "query_bound_per_target": 14,
+      "query_kinds": {
+        "left_interval": 40,
+        "left_singleton": 8,
+        "middle_singleton": 3
+      },
+      "subgroup_order": 8,
+      "targets_checked": 4
+    },
+    {
+      "decision_calls": 27,
+      "discriminant": -392,
+      "distinct_cap_vectors_in_finite_oracle": 7,
+      "example": {
+        "half_word": [
+          -16
+        ],
+        "primitive_norm_bits": 51,
+        "queries": 7,
+        "target": [
+          1,
+          0,
+          98
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        3
+      ],
+      "maximum_calls_per_target": 7,
+      "negative_answers": 5,
+      "query_bound_per_target": 7,
+      "query_kinds": {
+        "left_interval": 20,
+        "left_singleton": 4,
+        "middle_singleton": 3
+      },
+      "subgroup_order": 8,
+      "targets_checked": 4
+    },
+    {
+      "decision_calls": 132,
+      "discriminant": -391,
+      "distinct_cap_vectors_in_finite_oracle": 19,
+      "example": {
+        "half_word": [
+          -18,
+          -18,
+          -16
+        ],
+        "primitive_norm_bits": 210,
+        "queries": 19,
+        "target": [
+          1,
+          1,
+          98
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        2,
+        5,
+        7
+      ],
+      "maximum_calls_per_target": 19,
+      "negative_answers": 15,
+      "query_bound_per_target": 21,
+      "query_kinds": {
+        "left_interval": 105,
+        "left_singleton": 21,
+        "middle_singleton": 6
+      },
+      "subgroup_order": 14,
+      "targets_checked": 7
+    },
+    {
+      "decision_calls": 13,
+      "discriminant": -388,
+      "distinct_cap_vectors_in_finite_oracle": 7,
+      "example": {
+        "half_word": [
+          -17
+        ],
+        "primitive_norm_bits": 96,
+        "queries": 7,
+        "target": [
+          2,
+          2,
+          49
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        7
+      ],
+      "maximum_calls_per_target": 7,
+      "negative_answers": 1,
+      "query_bound_per_target": 7,
+      "query_kinds": {
+        "left_interval": 10,
+        "left_singleton": 2,
+        "middle_singleton": 1
+      },
+      "subgroup_order": 4,
+      "targets_checked": 2
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -387,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          1,
+          97
+        ]
+      },
+      "exponent_cap": 42,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 25,
+      "discriminant": -384,
+      "distinct_cap_vectors_in_finite_oracle": 13,
+      "example": {
+        "half_word": [
+          -18,
+          -17
+        ],
+        "primitive_norm_bits": 180,
+        "queries": 13,
+        "target": [
+          4,
+          4,
+          25
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        5,
+        7
+      ],
+      "maximum_calls_per_target": 13,
+      "negative_answers": 1,
+      "query_bound_per_target": 14,
+      "query_kinds": {
+        "left_interval": 20,
+        "left_singleton": 4,
+        "middle_singleton": 1
+      },
+      "subgroup_order": 8,
+      "targets_checked": 2
+    },
+    {
+      "decision_calls": 224,
+      "discriminant": -383,
+      "distinct_cap_vectors_in_finite_oracle": 13,
+      "example": {
+        "half_word": [
+          -6,
+          -5,
+          1
+        ],
+        "primitive_norm_bits": 34,
+        "queries": 14,
+        "target": [
+          3,
+          -1,
+          32
+        ]
+      },
+      "exponent_cap": 6,
+      "factor_base_primes": [
+        2,
+        3,
+        7
+      ],
+      "maximum_calls_per_target": 14,
+      "negative_answers": 52,
+      "query_bound_per_target": 15,
+      "query_kinds": {
+        "left_interval": 153,
+        "left_singleton": 51,
+        "middle_singleton": 20
+      },
+      "subgroup_order": 17,
+      "targets_checked": 17
+    },
+    {
+      "decision_calls": 27,
+      "discriminant": -380,
+      "distinct_cap_vectors_in_finite_oracle": 7,
+      "example": {
+        "half_word": [
+          -16
+        ],
+        "primitive_norm_bits": 51,
+        "queries": 7,
+        "target": [
+          1,
+          0,
+          95
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        3
+      ],
+      "maximum_calls_per_target": 7,
+      "negative_answers": 5,
+      "query_bound_per_target": 7,
+      "query_kinds": {
+        "left_interval": 20,
+        "left_singleton": 4,
+        "middle_singleton": 3
+      },
+      "subgroup_order": 8,
+      "targets_checked": 4
+    },
+    {
+      "decision_calls": 14,
+      "discriminant": -379,
+      "distinct_cap_vectors_in_finite_oracle": 5,
+      "example": {
+        "half_word": [
+          -5
+        ],
+        "primitive_norm_bits": 24,
+        "queries": 5,
+        "target": [
+          5,
+          -1,
+          19
+        ]
+      },
+      "exponent_cap": 6,
+      "factor_base_primes": [
+        5
+      ],
+      "maximum_calls_per_target": 5,
+      "negative_answers": 3,
+      "query_bound_per_target": 5,
+      "query_kinds": {
+        "left_interval": 9,
+        "left_singleton": 3,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 3,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 52,
+      "discriminant": -376,
+      "distinct_cap_vectors_in_finite_oracle": 13,
+      "example": {
+        "half_word": [
+          -17,
+          -17
+        ],
+        "primitive_norm_bits": 175,
+        "queries": 14,
+        "target": [
+          7,
+          4,
+          14
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        5,
+        7
+      ],
+      "maximum_calls_per_target": 14,
+      "negative_answers": 4,
+      "query_bound_per_target": 14,
+      "query_kinds": {
+        "left_interval": 40,
+        "left_singleton": 8,
+        "middle_singleton": 4
+      },
+      "subgroup_order": 8,
+      "targets_checked": 4
+    },
+    {
+      "decision_calls": 34,
+      "discriminant": -375,
+      "distinct_cap_vectors_in_finite_oracle": 7,
+      "example": {
+        "half_word": [
+          -15
+        ],
+        "primitive_norm_bits": 31,
+        "queries": 7,
+        "target": [
+          1,
+          1,
+          94
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        2
+      ],
+      "maximum_calls_per_target": 7,
+      "negative_answers": 8,
+      "query_bound_per_target": 7,
+      "query_kinds": {
+        "left_interval": 25,
+        "left_singleton": 5,
+        "middle_singleton": 4
+      },
+      "subgroup_order": 10,
+      "targets_checked": 5
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -372,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          0,
+          93
+        ]
+      },
+      "exponent_cap": 42,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 51,
+      "discriminant": -371,
+      "distinct_cap_vectors_in_finite_oracle": 13,
+      "example": {
+        "half_word": [
+          -18,
+          -16
+        ],
+        "primitive_norm_bits": 132,
+        "queries": 13,
+        "target": [
+          7,
+          7,
+          15
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        3,
+        5
+      ],
+      "maximum_calls_per_target": 13,
+      "negative_answers": 5,
+      "query_bound_per_target": 14,
+      "query_kinds": {
+        "left_interval": 40,
+        "left_singleton": 8,
+        "middle_singleton": 3
+      },
+      "subgroup_order": 8,
+      "targets_checked": 4
+    },
+    {
+      "decision_calls": 20,
+      "discriminant": -368,
+      "distinct_cap_vectors_in_finite_oracle": 7,
+      "example": {
+        "half_word": [
+          -16
+        ],
+        "primitive_norm_bits": 51,
+        "queries": 7,
+        "target": [
+          9,
+          -8,
+          12
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        3
+      ],
+      "maximum_calls_per_target": 7,
+      "negative_answers": 3,
+      "query_bound_per_target": 7,
+      "query_kinds": {
+        "left_interval": 15,
+        "left_singleton": 3,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 6,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 80,
+      "discriminant": -367,
+      "distinct_cap_vectors_in_finite_oracle": 9,
+      "example": {
+        "half_word": [
+          -6,
+          -3
+        ],
+        "primitive_norm_bits": 29,
+        "queries": 9,
+        "target": [
+          1,
+          1,
+          92
+        ]
+      },
+      "exponent_cap": 6,
+      "factor_base_primes": [
+        2,
+        7
+      ],
+      "maximum_calls_per_target": 9,
+      "negative_answers": 20,
+      "query_bound_per_target": 10,
+      "query_kinds": {
+        "left_interval": 54,
+        "left_singleton": 18,
+        "middle_singleton": 8
+      },
+      "subgroup_order": 9,
+      "targets_checked": 9
+    },
+    {
+      "decision_calls": 20,
+      "discriminant": -364,
+      "distinct_cap_vectors_in_finite_oracle": 7,
+      "example": {
+        "half_word": [
+          -17
+        ],
+        "primitive_norm_bits": 79,
+        "queries": 7,
+        "target": [
+          4,
+          -2,
+          23
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        5
+      ],
+      "maximum_calls_per_target": 7,
+      "negative_answers": 3,
+      "query_bound_per_target": 7,
+      "query_kinds": {
+        "left_interval": 15,
+        "left_singleton": 3,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 6,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 13,
+      "discriminant": -363,
+      "distinct_cap_vectors_in_finite_oracle": 7,
+      "example": {
+        "half_word": [
+          -17
+        ],
+        "primitive_norm_bits": 96,
+        "queries": 7,
+        "target": [
+          3,
+          3,
+          31
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        7
+      ],
+      "maximum_calls_per_target": 7,
+      "negative_answers": 1,
+      "query_bound_per_target": 7,
+      "query_kinds": {
+        "left_interval": 10,
+        "left_singleton": 2,
+        "middle_singleton": 1
+      },
+      "subgroup_order": 4,
+      "targets_checked": 2
+    },
+    {
+      "decision_calls": 13,
+      "discriminant": -360,
+      "distinct_cap_vectors_in_finite_oracle": 7,
+      "example": {
+        "half_word": [
+          -29
+        ],
+        "primitive_norm_bits": 163,
+        "queries": 7,
+        "target": [
+          9,
+          0,
+          10
+        ]
+      },
+      "exponent_cap": 30,
+      "factor_base_primes": [
+        7
+      ],
+      "maximum_calls_per_target": 7,
+      "negative_answers": 1,
+      "query_bound_per_target": 7,
+      "query_kinds": {
+        "left_interval": 10,
+        "left_singleton": 2,
+        "middle_singleton": 1
+      },
+      "subgroup_order": 4,
+      "targets_checked": 2
+    },
+    {
+      "decision_calls": 360,
+      "discriminant": -359,
+      "distinct_cap_vectors_in_finite_oracle": 19,
+      "example": {
+        "half_word": [
+          -18,
+          -18,
+          -15
+        ],
+        "primitive_norm_bits": 163,
+        "queries": 19,
+        "target": [
+          1,
+          1,
+          90
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        2,
+        3,
+        5
+      ],
+      "maximum_calls_per_target": 19,
+      "negative_answers": 67,
+      "query_bound_per_target": 21,
+      "query_kinds": {
+        "left_interval": 285,
+        "left_singleton": 57,
+        "middle_singleton": 18
+      },
+      "subgroup_order": 19,
+      "targets_checked": 19
+    },
+    {
+      "decision_calls": 115,
+      "discriminant": -356,
+      "distinct_cap_vectors_in_finite_oracle": 19,
+      "example": {
+        "half_word": [
+          -18,
+          -16,
+          -17
+        ],
+        "primitive_norm_bits": 227,
+        "queries": 20,
+        "target": [
+          9,
+          -2,
+          10
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        3,
+        5,
+        7
+      ],
+      "maximum_calls_per_target": 20,
+      "negative_answers": 9,
+      "query_bound_per_target": 21,
+      "query_kinds": {
+        "left_interval": 90,
+        "left_singleton": 18,
+        "middle_singleton": 7
+      },
+      "subgroup_order": 12,
+      "targets_checked": 6
+    },
+    {
+      "decision_calls": 13,
+      "discriminant": -355,
+      "distinct_cap_vectors_in_finite_oracle": 7,
+      "example": {
+        "half_word": [
+          -17
+        ],
+        "primitive_norm_bits": 96,
+        "queries": 7,
+        "target": [
+          5,
+          5,
+          19
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        7
+      ],
+      "maximum_calls_per_target": 7,
+      "negative_answers": 1,
+      "query_bound_per_target": 7,
+      "query_kinds": {
+        "left_interval": 10,
+        "left_singleton": 2,
+        "middle_singleton": 1
+      },
+      "subgroup_order": 4,
+      "targets_checked": 2
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -352,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          0,
+          88
+        ]
+      },
+      "exponent_cap": 42,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 77,
+      "discriminant": -351,
+      "distinct_cap_vectors_in_finite_oracle": 13,
+      "example": {
+        "half_word": [
+          -18,
+          -17
+        ],
+        "primitive_norm_bits": 115,
+        "queries": 13,
+        "target": [
+          4,
+          -1,
+          22
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        2,
+        5
+      ],
+      "maximum_calls_per_target": 13,
+      "negative_answers": 11,
+      "query_bound_per_target": 14,
+      "query_kinds": {
+        "left_interval": 60,
+        "left_singleton": 12,
+        "middle_singleton": 5
+      },
+      "subgroup_order": 12,
+      "targets_checked": 6
+    },
+    {
+      "decision_calls": 20,
+      "discriminant": -348,
+      "distinct_cap_vectors_in_finite_oracle": 7,
+      "example": {
+        "half_word": [
+          -17
+        ],
+        "primitive_norm_bits": 96,
+        "queries": 7,
+        "target": [
+          7,
+          -4,
+          13
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        7
+      ],
+      "maximum_calls_per_target": 7,
+      "negative_answers": 3,
+      "query_bound_per_target": 7,
+      "query_kinds": {
+        "left_interval": 15,
+        "left_singleton": 3,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 3,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 24,
+      "discriminant": -347,
+      "distinct_cap_vectors_in_finite_oracle": 5,
+      "example": {
+        "half_word": [
+          -5
+        ],
+        "primitive_norm_bits": 16,
+        "queries": 5,
+        "target": [
+          1,
+          1,
+          87
+        ]
+      },
+      "exponent_cap": 6,
+      "factor_base_primes": [
+        3
+      ],
+      "maximum_calls_per_target": 5,
+      "negative_answers": 8,
+      "query_bound_per_target": 5,
+      "query_kinds": {
+        "left_interval": 15,
+        "left_singleton": 5,
+        "middle_singleton": 4
+      },
+      "subgroup_order": 5,
+      "targets_checked": 5
+    },
+    {
+      "decision_calls": 64,
+      "discriminant": -344,
+      "distinct_cap_vectors_in_finite_oracle": 13,
+      "example": {
+        "half_word": [
+          -18,
+          -16
+        ],
+        "primitive_norm_bits": 132,
+        "queries": 13,
+        "target": [
+          1,
+          0,
+          86
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        3,
+        5
+      ],
+      "maximum_calls_per_target": 13,
+      "negative_answers": 8,
+      "query_bound_per_target": 14,
+      "query_kinds": {
+        "left_interval": 50,
+        "left_singleton": 10,
+        "middle_singleton": 4
+      },
+      "subgroup_order": 10,
+      "targets_checked": 5
+    },
+    {
+      "decision_calls": 34,
+      "discriminant": -343,
+      "distinct_cap_vectors_in_finite_oracle": 5,
+      "example": {
+        "half_word": [
+          0
+        ],
+        "primitive_norm_bits": 1,
+        "queries": 5,
+        "target": [
+          1,
+          1,
+          86
+        ]
+      },
+      "exponent_cap": 6,
+      "factor_base_primes": [
+        2
+      ],
+      "maximum_calls_per_target": 5,
+      "negative_answers": 15,
+      "query_bound_per_target": 5,
+      "query_kinds": {
+        "left_interval": 21,
+        "left_singleton": 7,
+        "middle_singleton": 6
+      },
+      "subgroup_order": 7,
+      "targets_checked": 7
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -340,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          0,
+          85
+        ]
+      },
+      "exponent_cap": 42,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 38,
+      "discriminant": -339,
+      "distinct_cap_vectors_in_finite_oracle": 13,
+      "example": {
+        "half_word": [
+          -18,
+          -17
+        ],
+        "primitive_norm_bits": 180,
+        "queries": 13,
+        "target": [
+          7,
+          -5,
+          13
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        5,
+        7
+      ],
+      "maximum_calls_per_target": 13,
+      "negative_answers": 3,
+      "query_bound_per_target": 14,
+      "query_kinds": {
+        "left_interval": 30,
+        "left_singleton": 6,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 6,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 13,
+      "discriminant": -336,
+      "distinct_cap_vectors_in_finite_oracle": 7,
+      "example": {
+        "half_word": [
+          -29
+        ],
+        "primitive_norm_bits": 135,
+        "queries": 7,
+        "target": [
+          4,
+          0,
+          21
+        ]
+      },
+      "exponent_cap": 30,
+      "factor_base_primes": [
+        5
+      ],
+      "maximum_calls_per_target": 7,
+      "negative_answers": 1,
+      "query_bound_per_target": 7,
+      "query_kinds": {
+        "left_interval": 10,
+        "left_singleton": 2,
+        "middle_singleton": 1
+      },
+      "subgroup_order": 4,
+      "targets_checked": 2
+    },
+    {
+      "decision_calls": 170,
+      "discriminant": -335,
+      "distinct_cap_vectors_in_finite_oracle": 19,
+      "example": {
+        "half_word": [
+          -18,
+          -18,
+          -14
+        ],
+        "primitive_norm_bits": 172,
+        "queries": 19,
+        "target": [
+          4,
+          -1,
+          21
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        2,
+        3,
+        7
+      ],
+      "maximum_calls_per_target": 19,
+      "negative_answers": 22,
+      "query_bound_per_target": 21,
+      "query_kinds": {
+        "left_interval": 135,
+        "left_singleton": 27,
+        "middle_singleton": 8
+      },
+      "subgroup_order": 18,
+      "targets_checked": 9
+    },
+    {
+      "decision_calls": 116,
+      "discriminant": -332,
+      "distinct_cap_vectors_in_finite_oracle": 13,
+      "example": {
+        "half_word": [
+          -18,
+          -10
+        ],
+        "primitive_norm_bits": 114,
+        "queries": 13,
+        "target": [
+          3,
+          -2,
+          28
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        3,
+        7
+      ],
+      "maximum_calls_per_target": 13,
+      "negative_answers": 22,
+      "query_bound_per_target": 14,
+      "query_kinds": {
+        "left_interval": 90,
+        "left_singleton": 18,
+        "middle_singleton": 8
+      },
+      "subgroup_order": 9,
+      "targets_checked": 9
+    },
+    {
+      "decision_calls": 14,
+      "discriminant": -331,
+      "distinct_cap_vectors_in_finite_oracle": 5,
+      "example": {
+        "half_word": [
+          -5
+        ],
+        "primitive_norm_bits": 24,
+        "queries": 5,
+        "target": [
+          5,
+          -3,
+          17
+        ]
+      },
+      "exponent_cap": 6,
+      "factor_base_primes": [
+        5
+      ],
+      "maximum_calls_per_target": 5,
+      "negative_answers": 3,
+      "query_bound_per_target": 5,
+      "query_kinds": {
+        "left_interval": 9,
+        "left_singleton": 3,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 3,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 13,
+      "discriminant": -328,
+      "distinct_cap_vectors_in_finite_oracle": 7,
+      "example": {
+        "half_word": [
+          -17
+        ],
+        "primitive_norm_bits": 96,
+        "queries": 7,
+        "target": [
+          2,
+          0,
+          41
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        7
+      ],
+      "maximum_calls_per_target": 7,
+      "negative_answers": 1,
+      "query_bound_per_target": 7,
+      "query_kinds": {
+        "left_interval": 10,
+        "left_singleton": 2,
+        "middle_singleton": 1
+      },
+      "subgroup_order": 4,
+      "targets_checked": 2
+    },
+    {
+      "decision_calls": 79,
+      "discriminant": -327,
+      "distinct_cap_vectors_in_finite_oracle": 13,
+      "example": {
+        "half_word": [
+          -17,
+          -17
+        ],
+        "primitive_norm_bits": 130,
+        "queries": 14,
+        "target": [
+          3,
+          3,
+          28
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        2,
+        7
+      ],
+      "maximum_calls_per_target": 14,
+      "negative_answers": 9,
+      "query_bound_per_target": 14,
+      "query_kinds": {
+        "left_interval": 60,
+        "left_singleton": 12,
+        "middle_singleton": 7
+      },
+      "subgroup_order": 12,
+      "targets_checked": 6
+    },
+    {
+      "decision_calls": 20,
+      "discriminant": -324,
+      "distinct_cap_vectors_in_finite_oracle": 7,
+      "example": {
+        "half_word": [
+          -17
+        ],
+        "primitive_norm_bits": 79,
+        "queries": 7,
+        "target": [
+          9,
+          -6,
+          10
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        5
+      ],
+      "maximum_calls_per_target": 7,
+      "negative_answers": 3,
+      "query_bound_per_target": 7,
+      "query_kinds": {
+        "left_interval": 15,
+        "left_singleton": 3,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 6,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 13,
+      "discriminant": -323,
+      "distinct_cap_vectors_in_finite_oracle": 7,
+      "example": {
+        "half_word": [
+          -17
+        ],
+        "primitive_norm_bits": 54,
+        "queries": 7,
+        "target": [
+          9,
+          1,
+          9
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        3
+      ],
+      "maximum_calls_per_target": 7,
+      "negative_answers": 1,
+      "query_bound_per_target": 7,
+      "query_kinds": {
+        "left_interval": 10,
+        "left_singleton": 2,
+        "middle_singleton": 1
+      },
+      "subgroup_order": 4,
+      "targets_checked": 2
+    },
+    {
+      "decision_calls": 25,
+      "discriminant": -320,
+      "distinct_cap_vectors_in_finite_oracle": 13,
+      "example": {
+        "half_word": [
+          -18,
+          -17
+        ],
+        "primitive_norm_bits": 153,
+        "queries": 13,
+        "target": [
+          9,
+          2,
+          9
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        3,
+        7
+      ],
+      "maximum_calls_per_target": 13,
+      "negative_answers": 1,
+      "query_bound_per_target": 14,
+      "query_kinds": {
+        "left_interval": 20,
+        "left_singleton": 4,
+        "middle_singleton": 1
+      },
+      "subgroup_order": 8,
+      "targets_checked": 2
+    },
+    {
+      "decision_calls": 64,
+      "discriminant": -319,
+      "distinct_cap_vectors_in_finite_oracle": 13,
+      "example": {
+        "half_word": [
+          -18,
+          -17
+        ],
+        "primitive_norm_bits": 115,
+        "queries": 13,
+        "target": [
+          1,
+          1,
+          80
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        2,
+        5
+      ],
+      "maximum_calls_per_target": 13,
+      "negative_answers": 8,
+      "query_bound_per_target": 14,
+      "query_kinds": {
+        "left_interval": 50,
+        "left_singleton": 10,
+        "middle_singleton": 4
+      },
+      "subgroup_order": 10,
+      "targets_checked": 5
+    },
+    {
+      "decision_calls": 34,
+      "discriminant": -316,
+      "distinct_cap_vectors_in_finite_oracle": 7,
+      "example": {
+        "half_word": [
+          -15
+        ],
+        "primitive_norm_bits": 70,
+        "queries": 7,
+        "target": [
+          1,
+          0,
+          79
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        5
+      ],
+      "maximum_calls_per_target": 7,
+      "negative_answers": 8,
+      "query_bound_per_target": 7,
+      "query_kinds": {
+        "left_interval": 25,
+        "left_singleton": 5,
+        "middle_singleton": 4
+      },
+      "subgroup_order": 5,
+      "targets_checked": 5
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -315,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          1,
+          79
+        ]
+      },
+      "exponent_cap": 42,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -312,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          0,
+          78
+        ]
+      },
+      "exponent_cap": 42,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 474,
+      "discriminant": -311,
+      "distinct_cap_vectors_in_finite_oracle": 25,
+      "example": {
+        "half_word": [
+          -18,
+          -18,
+          -18,
+          -15
+        ],
+        "primitive_norm_bits": 261,
+        "queries": 25,
+        "target": [
+          1,
+          1,
+          78
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        2,
+        3,
+        5,
+        7
+      ],
+      "maximum_calls_per_target": 25,
+      "negative_answers": 67,
+      "query_bound_per_target": 28,
+      "query_kinds": {
+        "left_interval": 380,
+        "left_singleton": 76,
+        "middle_singleton": 18
+      },
+      "subgroup_order": 19,
+      "targets_checked": 19
+    },
+    {
+      "decision_calls": 13,
+      "discriminant": -308,
+      "distinct_cap_vectors_in_finite_oracle": 7,
+      "example": {
+        "half_word": [
+          -29
+        ],
+        "primitive_norm_bits": 92,
+        "queries": 7,
+        "target": [
+          9,
+          4,
+          9
+        ]
+      },
+      "exponent_cap": 30,
+      "factor_base_primes": [
+        3
+      ],
+      "maximum_calls_per_target": 7,
+      "negative_answers": 1,
+      "query_bound_per_target": 7,
+      "query_kinds": {
+        "left_interval": 10,
+        "left_singleton": 2,
+        "middle_singleton": 1
+      },
+      "subgroup_order": 4,
+      "targets_checked": 2
+    },
+    {
+      "decision_calls": 14,
+      "discriminant": -307,
+      "distinct_cap_vectors_in_finite_oracle": 5,
+      "example": {
+        "half_word": [
+          -5
+        ],
+        "primitive_norm_bits": 29,
+        "queries": 5,
+        "target": [
+          7,
+          -1,
+          11
+        ]
+      },
+      "exponent_cap": 6,
+      "factor_base_primes": [
+        7
+      ],
+      "maximum_calls_per_target": 5,
+      "negative_answers": 3,
+      "query_bound_per_target": 5,
+      "query_kinds": {
+        "left_interval": 9,
+        "left_singleton": 3,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 3,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 38,
+      "discriminant": -304,
+      "distinct_cap_vectors_in_finite_oracle": 13,
+      "example": {
+        "half_word": [
+          -18,
+          -17
+        ],
+        "primitive_norm_bits": 180,
+        "queries": 13,
+        "target": [
+          5,
+          -4,
+          16
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        5,
+        7
+      ],
+      "maximum_calls_per_target": 13,
+      "negative_answers": 3,
+      "query_bound_per_target": 14,
+      "query_kinds": {
+        "left_interval": 30,
+        "left_singleton": 6,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 6,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 34,
+      "discriminant": -303,
+      "distinct_cap_vectors_in_finite_oracle": 7,
+      "example": {
+        "half_word": [
+          -15
+        ],
+        "primitive_norm_bits": 31,
+        "queries": 7,
+        "target": [
+          1,
+          1,
+          76
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        2
+      ],
+      "maximum_calls_per_target": 7,
+      "negative_answers": 8,
+      "query_bound_per_target": 7,
+      "query_kinds": {
+        "left_interval": 25,
+        "left_singleton": 5,
+        "middle_singleton": 4
+      },
+      "subgroup_order": 10,
+      "targets_checked": 5
+    },
+    {
+      "decision_calls": 20,
+      "discriminant": -300,
+      "distinct_cap_vectors_in_finite_oracle": 7,
+      "example": {
+        "half_word": [
+          -17
+        ],
+        "primitive_norm_bits": 96,
+        "queries": 7,
+        "target": [
+          4,
+          -2,
+          19
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        7
+      ],
+      "maximum_calls_per_target": 7,
+      "negative_answers": 3,
+      "query_bound_per_target": 7,
+      "query_kinds": {
+        "left_interval": 15,
+        "left_singleton": 3,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 6,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 75,
+      "discriminant": -299,
+      "distinct_cap_vectors_in_finite_oracle": 19,
+      "example": {
+        "half_word": [
+          -18,
+          -18,
+          -15
+        ],
+        "primitive_norm_bits": 225,
+        "queries": 19,
+        "target": [
+          3,
+          -1,
+          25
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        3,
+        5,
+        7
+      ],
+      "maximum_calls_per_target": 19,
+      "negative_answers": 5,
+      "query_bound_per_target": 21,
+      "query_kinds": {
+        "left_interval": 60,
+        "left_singleton": 12,
+        "middle_singleton": 3
+      },
+      "subgroup_order": 8,
+      "targets_checked": 4
+    },
+    {
+      "decision_calls": 64,
+      "discriminant": -296,
+      "distinct_cap_vectors_in_finite_oracle": 13,
+      "example": {
+        "half_word": [
+          -18,
+          -16
+        ],
+        "primitive_norm_bits": 132,
+        "queries": 13,
+        "target": [
+          1,
+          0,
+          74
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        3,
+        5
+      ],
+      "maximum_calls_per_target": 13,
+      "negative_answers": 8,
+      "query_bound_per_target": 14,
+      "query_kinds": {
+        "left_interval": 50,
+        "left_singleton": 10,
+        "middle_singleton": 4
+      },
+      "subgroup_order": 10,
+      "targets_checked": 5
+    },
+    {
+      "decision_calls": 27,
+      "discriminant": -295,
+      "distinct_cap_vectors_in_finite_oracle": 7,
+      "example": {
+        "half_word": [
+          -16
+        ],
+        "primitive_norm_bits": 33,
+        "queries": 7,
+        "target": [
+          1,
+          1,
+          74
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        2
+      ],
+      "maximum_calls_per_target": 7,
+      "negative_answers": 5,
+      "query_bound_per_target": 7,
+      "query_kinds": {
+        "left_interval": 20,
+        "left_singleton": 4,
+        "middle_singleton": 3
+      },
+      "subgroup_order": 8,
+      "targets_checked": 4
+    },
+    {
+      "decision_calls": 13,
+      "discriminant": -292,
+      "distinct_cap_vectors_in_finite_oracle": 7,
+      "example": {
+        "half_word": [
+          -17
+        ],
+        "primitive_norm_bits": 96,
+        "queries": 7,
+        "target": [
+          2,
+          2,
+          37
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        7
+      ],
+      "maximum_calls_per_target": 7,
+      "negative_answers": 1,
+      "query_bound_per_target": 7,
+      "query_kinds": {
+        "left_interval": 10,
+        "left_singleton": 2,
+        "middle_singleton": 1
+      },
+      "subgroup_order": 4,
+      "targets_checked": 2
+    },
+    {
+      "decision_calls": 13,
+      "discriminant": -291,
+      "distinct_cap_vectors_in_finite_oracle": 7,
+      "example": {
+        "half_word": [
+          -17
+        ],
+        "primitive_norm_bits": 79,
+        "queries": 7,
+        "target": [
+          3,
+          3,
+          25
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        5
+      ],
+      "maximum_calls_per_target": 7,
+      "negative_answers": 1,
+      "query_bound_per_target": 7,
+      "query_kinds": {
+        "left_interval": 10,
+        "left_singleton": 2,
+        "middle_singleton": 1
+      },
+      "subgroup_order": 4,
+      "targets_checked": 2
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -288,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          0,
+          72
+        ]
+      },
+      "exponent_cap": 42,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 90,
+      "discriminant": -287,
+      "distinct_cap_vectors_in_finite_oracle": 13,
+      "example": {
+        "half_word": [
+          -18,
+          -12
+        ],
+        "primitive_norm_bits": 75,
+        "queries": 13,
+        "target": [
+          1,
+          1,
+          72
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        2,
+        3
+      ],
+      "maximum_calls_per_target": 13,
+      "negative_answers": 15,
+      "query_bound_per_target": 14,
+      "query_kinds": {
+        "left_interval": 70,
+        "left_singleton": 14,
+        "middle_singleton": 6
+      },
+      "subgroup_order": 14,
+      "targets_checked": 7
+    },
+    {
+      "decision_calls": 90,
+      "discriminant": -284,
+      "distinct_cap_vectors_in_finite_oracle": 13,
+      "example": {
+        "half_word": [
+          -18,
+          -13
+        ],
+        "primitive_norm_bits": 118,
+        "queries": 13,
+        "target": [
+          1,
+          0,
+          71
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        3,
+        5
+      ],
+      "maximum_calls_per_target": 13,
+      "negative_answers": 15,
+      "query_bound_per_target": 14,
+      "query_kinds": {
+        "left_interval": 70,
+        "left_singleton": 14,
+        "middle_singleton": 6
+      },
+      "subgroup_order": 7,
+      "targets_checked": 7
+    },
+    {
+      "decision_calls": 14,
+      "discriminant": -283,
+      "distinct_cap_vectors_in_finite_oracle": 5,
+      "example": {
+        "half_word": [
+          -5
+        ],
+        "primitive_norm_bits": 29,
+        "queries": 5,
+        "target": [
+          7,
+          -5,
+          11
+        ]
+      },
+      "exponent_cap": 6,
+      "factor_base_primes": [
+        7
+      ],
+      "maximum_calls_per_target": 5,
+      "negative_answers": 3,
+      "query_bound_per_target": 5,
+      "query_kinds": {
+        "left_interval": 9,
+        "left_singleton": 3,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 3,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -280,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          0,
+          70
+        ]
+      },
+      "exponent_cap": 42,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 115,
+      "discriminant": -279,
+      "distinct_cap_vectors_in_finite_oracle": 19,
+      "example": {
+        "half_word": [
+          -18,
+          -17,
+          -17
+        ],
+        "primitive_norm_bits": 211,
+        "queries": 20,
+        "target": [
+          4,
+          3,
+          18
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        2,
+        5,
+        7
+      ],
+      "maximum_calls_per_target": 20,
+      "negative_answers": 9,
+      "query_bound_per_target": 21,
+      "query_kinds": {
+        "left_interval": 90,
+        "left_singleton": 18,
+        "middle_singleton": 7
+      },
+      "subgroup_order": 12,
+      "targets_checked": 6
+    },
+    {
+      "decision_calls": 25,
+      "discriminant": -276,
+      "distinct_cap_vectors_in_finite_oracle": 13,
+      "example": {
+        "half_word": [
+          -18,
+          -17
+        ],
+        "primitive_norm_bits": 180,
+        "queries": 13,
+        "target": [
+          6,
+          6,
+          13
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        5,
+        7
+      ],
+      "maximum_calls_per_target": 13,
+      "negative_answers": 1,
+      "query_bound_per_target": 14,
+      "query_kinds": {
+        "left_interval": 20,
+        "left_singleton": 4,
+        "middle_singleton": 1
+      },
+      "subgroup_order": 8,
+      "targets_checked": 2
+    },
+    {
+      "decision_calls": 13,
+      "discriminant": -275,
+      "distinct_cap_vectors_in_finite_oracle": 7,
+      "example": {
+        "half_word": [
+          -17
+        ],
+        "primitive_norm_bits": 54,
+        "queries": 7,
+        "target": [
+          9,
+          7,
+          9
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        3
+      ],
+      "maximum_calls_per_target": 7,
+      "negative_answers": 1,
+      "query_bound_per_target": 7,
+      "query_kinds": {
+        "left_interval": 10,
+        "left_singleton": 2,
+        "middle_singleton": 1
+      },
+      "subgroup_order": 4,
+      "targets_checked": 2
+    },
+    {
+      "decision_calls": 51,
+      "discriminant": -272,
+      "distinct_cap_vectors_in_finite_oracle": 13,
+      "example": {
+        "half_word": [
+          -18,
+          -16
+        ],
+        "primitive_norm_bits": 147,
+        "queries": 13,
+        "target": [
+          4,
+          0,
+          17
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        3,
+        7
+      ],
+      "maximum_calls_per_target": 13,
+      "negative_answers": 5,
+      "query_bound_per_target": 14,
+      "query_kinds": {
+        "left_interval": 40,
+        "left_singleton": 8,
+        "middle_singleton": 3
+      },
+      "subgroup_order": 8,
+      "targets_checked": 4
+    },
+    {
+      "decision_calls": 142,
+      "discriminant": -271,
+      "distinct_cap_vectors_in_finite_oracle": 13,
+      "example": {
+        "half_word": [
+          -6,
+          -6,
+          3
+        ],
+        "primitive_norm_bits": 57,
+        "queries": 13,
+        "target": [
+          1,
+          1,
+          68
+        ]
+      },
+      "exponent_cap": 6,
+      "factor_base_primes": [
+        2,
+        5,
+        7
+      ],
+      "maximum_calls_per_target": 13,
+      "negative_answers": 27,
+      "query_bound_per_target": 15,
+      "query_kinds": {
+        "left_interval": 99,
+        "left_singleton": 33,
+        "middle_singleton": 10
+      },
+      "subgroup_order": 11,
+      "targets_checked": 11
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -268,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          0,
+          67
+        ]
+      },
+      "exponent_cap": 30,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -267,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          1,
+          67
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 25,
+      "discriminant": -264,
+      "distinct_cap_vectors_in_finite_oracle": 13,
+      "example": {
+        "half_word": [
+          -18,
+          -17
+        ],
+        "primitive_norm_bits": 180,
+        "queries": 13,
+        "target": [
+          3,
+          0,
+          22
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        5,
+        7
+      ],
+      "maximum_calls_per_target": 13,
+      "negative_answers": 1,
+      "query_bound_per_target": 14,
+      "query_kinds": {
+        "left_interval": 20,
+        "left_singleton": 4,
+        "middle_singleton": 1
+      },
+      "subgroup_order": 8,
+      "targets_checked": 2
+    },
+    {
+      "decision_calls": 116,
+      "discriminant": -263,
+      "distinct_cap_vectors_in_finite_oracle": 9,
+      "example": {
+        "half_word": [
+          -6,
+          4
+        ],
+        "primitive_norm_bits": 25,
+        "queries": 9,
+        "target": [
+          1,
+          1,
+          66
+        ]
+      },
+      "exponent_cap": 6,
+      "factor_base_primes": [
+        2,
+        3
+      ],
+      "maximum_calls_per_target": 9,
+      "negative_answers": 36,
+      "query_bound_per_target": 10,
+      "query_kinds": {
+        "left_interval": 78,
+        "left_singleton": 26,
+        "middle_singleton": 12
+      },
+      "subgroup_order": 13,
+      "targets_checked": 13
+    },
+    {
+      "decision_calls": 13,
+      "discriminant": -260,
+      "distinct_cap_vectors_in_finite_oracle": 7,
+      "example": {
+        "half_word": [
+          -29
+        ],
+        "primitive_norm_bits": 92,
+        "queries": 7,
+        "target": [
+          9,
+          8,
+          9
+        ]
+      },
+      "exponent_cap": 30,
+      "factor_base_primes": [
+        3
+      ],
+      "maximum_calls_per_target": 7,
+      "negative_answers": 1,
+      "query_bound_per_target": 7,
+      "query_kinds": {
+        "left_interval": 10,
+        "left_singleton": 2,
+        "middle_singleton": 1
+      },
+      "subgroup_order": 4,
+      "targets_checked": 2
+    },
+    {
+      "decision_calls": 13,
+      "discriminant": -259,
+      "distinct_cap_vectors_in_finite_oracle": 7,
+      "example": {
+        "half_word": [
+          -17
+        ],
+        "primitive_norm_bits": 79,
+        "queries": 7,
+        "target": [
+          7,
+          7,
+          11
+        ]
+      },
+      "exponent_cap": 18,
+      "factor_base_primes": [
+        5
+      ],
+      "maximum_calls_per_target": 7,
+      "negative_answers": 1,
+      "query_bound_per_target": 7,
+      "query_kinds": {
+        "left_interval": 10,
+        "left_singleton": 2,
+        "middle_singleton": 1
+      },
+      "subgroup_order": 4,
+      "targets_checked": 2
+    },
+    {
+      "decision_calls": 11,
+      "discriminant": -256,
+      "distinct_cap_vectors_in_finite_oracle": 6,
+      "example": {
+        "half_word": [
+          -11
+        ],
+        "primitive_norm_bits": 52,
+        "queries": 6,
+        "target": [
+          4,
+          4,
+          17
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [
+        5
+      ],
+      "maximum_calls_per_target": 6,
+      "negative_answers": 1,
+      "query_bound_per_target": 6,
+      "query_kinds": {
+        "left_interval": 8,
+        "left_singleton": 2,
+        "middle_singleton": 1
+      },
+      "subgroup_order": 4,
+      "targets_checked": 2
+    },
+    {
+      "decision_calls": 32,
+      "discriminant": -255,
+      "distinct_cap_vectors_in_finite_oracle": 11,
+      "example": {
+        "half_word": [
+          -12,
+          -11
+        ],
+        "primitive_norm_bits": 86,
+        "queries": 11,
+        "target": [
+          4,
+          -1,
+          16
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [
+        2,
+        7
+      ],
+      "maximum_calls_per_target": 11,
+      "negative_answers": 3,
+      "query_bound_per_target": 12,
+      "query_kinds": {
+        "left_interval": 24,
+        "left_singleton": 6,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 12,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -252,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          0,
+          63
+        ]
+      },
+      "exponent_cap": 28,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 69,
+      "discriminant": -251,
+      "distinct_cap_vectors_in_finite_oracle": 10,
+      "example": {
+        "half_word": [
+          -4,
+          -4,
+          -3
+        ],
+        "primitive_norm_bits": 49,
+        "queries": 10,
+        "target": [
+          1,
+          1,
+          63
+        ]
+      },
+      "exponent_cap": 4,
+      "factor_base_primes": [
+        3,
+        5,
+        7
+      ],
+      "maximum_calls_per_target": 10,
+      "negative_answers": 13,
+      "query_bound_per_target": 12,
+      "query_kinds": {
+        "left_interval": 42,
+        "left_singleton": 21,
+        "middle_singleton": 6
+      },
+      "subgroup_order": 7,
+      "targets_checked": 7
+    },
+    {
+      "decision_calls": 44,
+      "discriminant": -248,
+      "distinct_cap_vectors_in_finite_oracle": 11,
+      "example": {
+        "half_word": [
+          -11,
+          -11
+        ],
+        "primitive_norm_bits": 97,
+        "queries": 12,
+        "target": [
+          7,
+          2,
+          9
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [
+        3,
+        7
+      ],
+      "maximum_calls_per_target": 12,
+      "negative_answers": 4,
+      "query_bound_per_target": 12,
+      "query_kinds": {
+        "left_interval": 32,
+        "left_singleton": 8,
+        "middle_singleton": 4
+      },
+      "subgroup_order": 8,
+      "targets_checked": 4
+    },
+    {
+      "decision_calls": 17,
+      "discriminant": -247,
+      "distinct_cap_vectors_in_finite_oracle": 6,
+      "example": {
+        "half_word": [
+          -11
+        ],
+        "primitive_norm_bits": 23,
+        "queries": 6,
+        "target": [
+          4,
+          -3,
+          16
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [
+        2
+      ],
+      "maximum_calls_per_target": 6,
+      "negative_answers": 3,
+      "query_bound_per_target": 6,
+      "query_kinds": {
+        "left_interval": 12,
+        "left_singleton": 3,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 6,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 32,
+      "discriminant": -244,
+      "distinct_cap_vectors_in_finite_oracle": 11,
+      "example": {
+        "half_word": [
+          -12,
+          -11
+        ],
+        "primitive_norm_bits": 118,
+        "queries": 11,
+        "target": [
+          5,
+          -4,
+          13
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [
+        5,
+        7
+      ],
+      "maximum_calls_per_target": 11,
+      "negative_answers": 3,
+      "query_bound_per_target": 12,
+      "query_kinds": {
+        "left_interval": 24,
+        "left_singleton": 6,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 6,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 11,
+      "discriminant": -243,
+      "distinct_cap_vectors_in_finite_oracle": 4,
+      "example": {
+        "half_word": [
+          -3
+        ],
+        "primitive_norm_bits": 17,
+        "queries": 4,
+        "target": [
+          1,
+          1,
+          61
+        ]
+      },
+      "exponent_cap": 4,
+      "factor_base_primes": [
+        7
+      ],
+      "maximum_calls_per_target": 4,
+      "negative_answers": 3,
+      "query_bound_per_target": 4,
+      "query_kinds": {
+        "left_interval": 6,
+        "left_singleton": 3,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 3,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -240,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          0,
+          60
+        ]
+      },
+      "exponent_cap": 28,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 239,
+      "discriminant": -239,
+      "distinct_cap_vectors_in_finite_oracle": 16,
+      "example": {
+        "half_word": [
+          -12,
+          -12,
+          0
+        ],
+        "primitive_norm_bits": 63,
+        "queries": 16,
+        "target": [
+          1,
+          1,
+          60
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [
+        2,
+        3,
+        5
+      ],
+      "maximum_calls_per_target": 16,
+      "negative_answers": 41,
+      "query_bound_per_target": 18,
+      "query_kinds": {
+        "left_interval": 180,
+        "left_singleton": 45,
+        "middle_singleton": 14
+      },
+      "subgroup_order": 15,
+      "targets_checked": 15
+    },
+    {
+      "decision_calls": 143,
+      "discriminant": -236,
+      "distinct_cap_vectors_in_finite_oracle": 16,
+      "example": {
+        "half_word": [
+          -12,
+          -12,
+          -9
+        ],
+        "primitive_norm_bits": 145,
+        "queries": 16,
+        "target": [
+          1,
+          0,
+          59
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [
+        3,
+        5,
+        7
+      ],
+      "maximum_calls_per_target": 16,
+      "negative_answers": 20,
+      "query_bound_per_target": 18,
+      "query_kinds": {
+        "left_interval": 108,
+        "left_singleton": 27,
+        "middle_singleton": 8
+      },
+      "subgroup_order": 9,
+      "targets_checked": 9
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -235,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          1,
+          59
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -232,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          0,
+          58
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 32,
+      "discriminant": -231,
+      "distinct_cap_vectors_in_finite_oracle": 11,
+      "example": {
+        "half_word": [
+          -12,
+          -10
+        ],
+        "primitive_norm_bits": 71,
+        "queries": 11,
+        "target": [
+          4,
+          -3,
+          15
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [
+        2,
+        5
+      ],
+      "maximum_calls_per_target": 11,
+      "negative_answers": 3,
+      "query_bound_per_target": 12,
+      "query_kinds": {
+        "left_interval": 24,
+        "left_singleton": 6,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 12,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -228,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          0,
+          57
+        ]
+      },
+      "exponent_cap": 28,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 34,
+      "discriminant": -227,
+      "distinct_cap_vectors_in_finite_oracle": 7,
+      "example": {
+        "half_word": [
+          -4,
+          -3
+        ],
+        "primitive_norm_bits": 30,
+        "queries": 7,
+        "target": [
+          1,
+          1,
+          57
+        ]
+      },
+      "exponent_cap": 4,
+      "factor_base_primes": [
+        3,
+        7
+      ],
+      "maximum_calls_per_target": 7,
+      "negative_answers": 8,
+      "query_bound_per_target": 8,
+      "query_kinds": {
+        "left_interval": 20,
+        "left_singleton": 10,
+        "middle_singleton": 4
+      },
+      "subgroup_order": 5,
+      "targets_checked": 5
+    },
+    {
+      "decision_calls": 21,
+      "discriminant": -224,
+      "distinct_cap_vectors_in_finite_oracle": 11,
+      "example": {
+        "half_word": [
+          -12,
+          -11
+        ],
+        "primitive_norm_bits": 90,
+        "queries": 11,
+        "target": [
+          8,
+          8,
+          9
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [
+        3,
+        5
+      ],
+      "maximum_calls_per_target": 11,
+      "negative_answers": 1,
+      "query_bound_per_target": 12,
+      "query_kinds": {
+        "left_interval": 16,
+        "left_singleton": 4,
+        "middle_singleton": 1
+      },
+      "subgroup_order": 8,
+      "targets_checked": 2
+    },
+    {
+      "decision_calls": 48,
+      "discriminant": -223,
+      "distinct_cap_vectors_in_finite_oracle": 7,
+      "example": {
+        "half_word": [
+          -4,
+          1
+        ],
+        "primitive_norm_bits": 14,
+        "queries": 7,
+        "target": [
+          1,
+          1,
+          56
+        ]
+      },
+      "exponent_cap": 4,
+      "factor_base_primes": [
+        2,
+        7
+      ],
+      "maximum_calls_per_target": 7,
+      "negative_answers": 13,
+      "query_bound_per_target": 8,
+      "query_kinds": {
+        "left_interval": 28,
+        "left_singleton": 14,
+        "middle_singleton": 6
+      },
+      "subgroup_order": 7,
+      "targets_checked": 7
+    },
+    {
+      "decision_calls": 11,
+      "discriminant": -220,
+      "distinct_cap_vectors_in_finite_oracle": 6,
+      "example": {
+        "half_word": [
+          -11
+        ],
+        "primitive_norm_bits": 62,
+        "queries": 6,
+        "target": [
+          5,
+          0,
+          11
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [
+        7
+      ],
+      "maximum_calls_per_target": 6,
+      "negative_answers": 1,
+      "query_bound_per_target": 6,
+      "query_kinds": {
+        "left_interval": 8,
+        "left_singleton": 2,
+        "middle_singleton": 1
+      },
+      "subgroup_order": 4,
+      "targets_checked": 2
+    },
+    {
+      "decision_calls": 11,
+      "discriminant": -219,
+      "distinct_cap_vectors_in_finite_oracle": 6,
+      "example": {
+        "half_word": [
+          -11
+        ],
+        "primitive_norm_bits": 52,
+        "queries": 6,
+        "target": [
+          3,
+          3,
+          19
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [
+        5
+      ],
+      "maximum_calls_per_target": 6,
+      "negative_answers": 1,
+      "query_bound_per_target": 6,
+      "query_kinds": {
+        "left_interval": 8,
+        "left_singleton": 2,
+        "middle_singleton": 1
+      },
+      "subgroup_order": 4,
+      "targets_checked": 2
+    },
+    {
+      "decision_calls": 32,
+      "discriminant": -216,
+      "distinct_cap_vectors_in_finite_oracle": 11,
+      "example": {
+        "half_word": [
+          -12,
+          -11
+        ],
+        "primitive_norm_bits": 118,
+        "queries": 11,
+        "target": [
+          7,
+          -6,
+          9
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [
+        5,
+        7
+      ],
+      "maximum_calls_per_target": 11,
+      "negative_answers": 3,
+      "query_bound_per_target": 12,
+      "query_kinds": {
+        "left_interval": 24,
+        "left_singleton": 6,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 6,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 111,
+      "discriminant": -215,
+      "distinct_cap_vectors_in_finite_oracle": 16,
+      "example": {
+        "half_word": [
+          -12,
+          -12,
+          -9
+        ],
+        "primitive_norm_bits": 113,
+        "queries": 16,
+        "target": [
+          1,
+          1,
+          54
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [
+        2,
+        3,
+        7
+      ],
+      "maximum_calls_per_target": 16,
+      "negative_answers": 15,
+      "query_bound_per_target": 18,
+      "query_kinds": {
+        "left_interval": 84,
+        "left_singleton": 21,
+        "middle_singleton": 6
+      },
+      "subgroup_order": 14,
+      "targets_checked": 7
+    },
+    {
+      "decision_calls": 17,
+      "discriminant": -212,
+      "distinct_cap_vectors_in_finite_oracle": 6,
+      "example": {
+        "half_word": [
+          -11
+        ],
+        "primitive_norm_bits": 35,
+        "queries": 6,
+        "target": [
+          6,
+          -2,
+          9
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [
+        3
+      ],
+      "maximum_calls_per_target": 6,
+      "negative_answers": 3,
+      "query_bound_per_target": 6,
+      "query_kinds": {
+        "left_interval": 12,
+        "left_singleton": 3,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 6,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 11,
+      "discriminant": -211,
+      "distinct_cap_vectors_in_finite_oracle": 4,
+      "example": {
+        "half_word": [
+          -3
+        ],
+        "primitive_norm_bits": 14,
+        "queries": 4,
+        "target": [
+          1,
+          1,
+          53
+        ]
+      },
+      "exponent_cap": 4,
+      "factor_base_primes": [
+        5
+      ],
+      "maximum_calls_per_target": 4,
+      "negative_answers": 3,
+      "query_bound_per_target": 4,
+      "query_kinds": {
+        "left_interval": 6,
+        "left_singleton": 3,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 3,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 11,
+      "discriminant": -208,
+      "distinct_cap_vectors_in_finite_oracle": 6,
+      "example": {
+        "half_word": [
+          -11
+        ],
+        "primitive_norm_bits": 62,
+        "queries": 6,
+        "target": [
+          4,
+          0,
+          13
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [
+        7
+      ],
+      "maximum_calls_per_target": 6,
+      "negative_answers": 1,
+      "query_bound_per_target": 6,
+      "query_kinds": {
+        "left_interval": 8,
+        "left_singleton": 2,
+        "middle_singleton": 1
+      },
+      "subgroup_order": 4,
+      "targets_checked": 2
+    },
+    {
+      "decision_calls": 17,
+      "discriminant": -207,
+      "distinct_cap_vectors_in_finite_oracle": 6,
+      "example": {
+        "half_word": [
+          -10
+        ],
+        "primitive_norm_bits": 21,
+        "queries": 6,
+        "target": [
+          4,
+          -1,
+          13
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [
+        2
+      ],
+      "maximum_calls_per_target": 6,
+      "negative_answers": 3,
+      "query_bound_per_target": 6,
+      "query_kinds": {
+        "left_interval": 12,
+        "left_singleton": 3,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 6,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 17,
+      "discriminant": -204,
+      "distinct_cap_vectors_in_finite_oracle": 6,
+      "example": {
+        "half_word": [
+          -10
+        ],
+        "primitive_norm_bits": 47,
+        "queries": 6,
+        "target": [
+          4,
+          -2,
+          13
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [
+        5
+      ],
+      "maximum_calls_per_target": 6,
+      "negative_answers": 3,
+      "query_bound_per_target": 6,
+      "query_kinds": {
+        "left_interval": 12,
+        "left_singleton": 3,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 6,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 11,
+      "discriminant": -203,
+      "distinct_cap_vectors_in_finite_oracle": 6,
+      "example": {
+        "half_word": [
+          -11
+        ],
+        "primitive_norm_bits": 35,
+        "queries": 6,
+        "target": [
+          7,
+          7,
+          9
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [
+        3
+      ],
+      "maximum_calls_per_target": 6,
+      "negative_answers": 1,
+      "query_bound_per_target": 6,
+      "query_kinds": {
+        "left_interval": 8,
+        "left_singleton": 2,
+        "middle_singleton": 1
+      },
+      "subgroup_order": 4,
+      "targets_checked": 2
+    },
+    {
+      "decision_calls": 17,
+      "discriminant": -200,
+      "distinct_cap_vectors_in_finite_oracle": 6,
+      "example": {
+        "half_word": [
+          -10
+        ],
+        "primitive_norm_bits": 32,
+        "queries": 6,
+        "target": [
+          6,
+          -4,
+          9
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [
+        3
+      ],
+      "maximum_calls_per_target": 6,
+      "negative_answers": 3,
+      "query_bound_per_target": 6,
+      "query_kinds": {
+        "left_interval": 12,
+        "left_singleton": 3,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 6,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 93,
+      "discriminant": -199,
+      "distinct_cap_vectors_in_finite_oracle": 10,
+      "example": {
+        "half_word": [
+          -4,
+          -3,
+          -2
+        ],
+        "primitive_norm_bits": 34,
+        "queries": 11,
+        "target": [
+          4,
+          3,
+          13
+        ]
+      },
+      "exponent_cap": 4,
+      "factor_base_primes": [
+        2,
+        5,
+        7
+      ],
+      "maximum_calls_per_target": 11,
+      "negative_answers": 18,
+      "query_bound_per_target": 12,
+      "query_kinds": {
+        "left_interval": 54,
+        "left_singleton": 27,
+        "middle_singleton": 12
+      },
+      "subgroup_order": 9,
+      "targets_checked": 9
+    },
+    {
+      "decision_calls": 11,
+      "discriminant": -196,
+      "distinct_cap_vectors_in_finite_oracle": 6,
+      "example": {
+        "half_word": [
+          -11
+        ],
+        "primitive_norm_bits": 52,
+        "queries": 6,
+        "target": [
+          2,
+          2,
+          25
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [
+        5
+      ],
+      "maximum_calls_per_target": 6,
+      "negative_answers": 1,
+      "query_bound_per_target": 6,
+      "query_kinds": {
+        "left_interval": 8,
+        "left_singleton": 2,
+        "middle_singleton": 1
+      },
+      "subgroup_order": 4,
+      "targets_checked": 2
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -195,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          1,
+          49
+        ]
+      },
+      "exponent_cap": 28,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -192,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          0,
+          48
+        ]
+      },
+      "exponent_cap": 28,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 133,
+      "discriminant": -191,
+      "distinct_cap_vectors_in_finite_oracle": 10,
+      "example": {
+        "half_word": [
+          -4,
+          -3,
+          1
+        ],
+        "primitive_norm_bits": 23,
+        "queries": 11,
+        "target": [
+          3,
+          -1,
+          16
+        ]
+      },
+      "exponent_cap": 4,
+      "factor_base_primes": [
+        2,
+        3,
+        5
+      ],
+      "maximum_calls_per_target": 11,
+      "negative_answers": 35,
+      "query_bound_per_target": 12,
+      "query_kinds": {
+        "left_interval": 78,
+        "left_singleton": 39,
+        "middle_singleton": 16
+      },
+      "subgroup_order": 13,
+      "targets_checked": 13
+    },
+    {
+      "decision_calls": 29,
+      "discriminant": -188,
+      "distinct_cap_vectors_in_finite_oracle": 6,
+      "example": {
+        "half_word": [
+          -10
+        ],
+        "primitive_norm_bits": 32,
+        "queries": 6,
+        "target": [
+          1,
+          0,
+          47
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [
+        3
+      ],
+      "maximum_calls_per_target": 6,
+      "negative_answers": 8,
+      "query_bound_per_target": 6,
+      "query_kinds": {
+        "left_interval": 20,
+        "left_singleton": 5,
+        "middle_singleton": 4
+      },
+      "subgroup_order": 5,
+      "targets_checked": 5
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -187,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          1,
+          47
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 11,
+      "discriminant": -184,
+      "distinct_cap_vectors_in_finite_oracle": 6,
+      "example": {
+        "half_word": [
+          -11
+        ],
+        "primitive_norm_bits": 52,
+        "queries": 6,
+        "target": [
+          2,
+          0,
+          23
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [
+        5
+      ],
+      "maximum_calls_per_target": 6,
+      "negative_answers": 1,
+      "query_bound_per_target": 6,
+      "query_kinds": {
+        "left_interval": 8,
+        "left_singleton": 2,
+        "middle_singleton": 1
+      },
+      "subgroup_order": 4,
+      "targets_checked": 2
+    },
+    {
+      "decision_calls": 23,
+      "discriminant": -183,
+      "distinct_cap_vectors_in_finite_oracle": 6,
+      "example": {
+        "half_word": [
+          -10
+        ],
+        "primitive_norm_bits": 21,
+        "queries": 6,
+        "target": [
+          3,
+          3,
+          16
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [
+        2
+      ],
+      "maximum_calls_per_target": 6,
+      "negative_answers": 5,
+      "query_bound_per_target": 6,
+      "query_kinds": {
+        "left_interval": 16,
+        "left_singleton": 4,
+        "middle_singleton": 3
+      },
+      "subgroup_order": 8,
+      "targets_checked": 4
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -180,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          0,
+          45
+        ]
+      },
+      "exponent_cap": 28,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 34,
+      "discriminant": -179,
+      "distinct_cap_vectors_in_finite_oracle": 7,
+      "example": {
+        "half_word": [
+          -4,
+          -2
+        ],
+        "primitive_norm_bits": 22,
+        "queries": 7,
+        "target": [
+          1,
+          1,
+          45
+        ]
+      },
+      "exponent_cap": 4,
+      "factor_base_primes": [
+        3,
+        5
+      ],
+      "maximum_calls_per_target": 7,
+      "negative_answers": 8,
+      "query_bound_per_target": 8,
+      "query_kinds": {
+        "left_interval": 20,
+        "left_singleton": 10,
+        "middle_singleton": 4
+      },
+      "subgroup_order": 5,
+      "targets_checked": 5
+    },
+    {
+      "decision_calls": 32,
+      "discriminant": -176,
+      "distinct_cap_vectors_in_finite_oracle": 11,
+      "example": {
+        "half_word": [
+          -12,
+          -11
+        ],
+        "primitive_norm_bits": 90,
+        "queries": 11,
+        "target": [
+          5,
+          -2,
+          9
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [
+        3,
+        5
+      ],
+      "maximum_calls_per_target": 11,
+      "negative_answers": 3,
+      "query_bound_per_target": 12,
+      "query_kinds": {
+        "left_interval": 24,
+        "left_singleton": 6,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 6,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 17,
+      "discriminant": -175,
+      "distinct_cap_vectors_in_finite_oracle": 6,
+      "example": {
+        "half_word": [
+          -10
+        ],
+        "primitive_norm_bits": 21,
+        "queries": 6,
+        "target": [
+          4,
+          -1,
+          11
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [
+        2
+      ],
+      "maximum_calls_per_target": 6,
+      "negative_answers": 3,
+      "query_bound_per_target": 6,
+      "query_kinds": {
+        "left_interval": 12,
+        "left_singleton": 3,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 6,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -172,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          0,
+          43
+        ]
+      },
+      "exponent_cap": 20,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 11,
+      "discriminant": -171,
+      "distinct_cap_vectors_in_finite_oracle": 6,
+      "example": {
+        "half_word": [
+          -11
+        ],
+        "primitive_norm_bits": 52,
+        "queries": 6,
+        "target": [
+          7,
+          5,
+          7
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [
+        5
+      ],
+      "maximum_calls_per_target": 6,
+      "negative_answers": 1,
+      "query_bound_per_target": 6,
+      "query_kinds": {
+        "left_interval": 8,
+        "left_singleton": 2,
+        "middle_singleton": 1
+      },
+      "subgroup_order": 4,
+      "targets_checked": 2
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -168,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          0,
+          42
+        ]
+      },
+      "exponent_cap": 28,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 78,
+      "discriminant": -167,
+      "distinct_cap_vectors_in_finite_oracle": 7,
+      "example": {
+        "half_word": [
+          -3,
+          2
+        ],
+        "primitive_norm_bits": 13,
+        "queries": 8,
+        "target": [
+          2,
+          -1,
+          21
+        ]
+      },
+      "exponent_cap": 4,
+      "factor_base_primes": [
+        2,
+        3
+      ],
+      "maximum_calls_per_target": 8,
+      "negative_answers": 28,
+      "query_bound_per_target": 8,
+      "query_kinds": {
+        "left_interval": 44,
+        "left_singleton": 22,
+        "middle_singleton": 12
+      },
+      "subgroup_order": 11,
+      "targets_checked": 11
+    },
+    {
+      "decision_calls": 44,
+      "discriminant": -164,
+      "distinct_cap_vectors_in_finite_oracle": 11,
+      "example": {
+        "half_word": [
+          -11,
+          -11
+        ],
+        "primitive_norm_bits": 86,
+        "queries": 12,
+        "target": [
+          5,
+          -4,
+          9
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [
+        3,
+        5
+      ],
+      "maximum_calls_per_target": 12,
+      "negative_answers": 4,
+      "query_bound_per_target": 12,
+      "query_kinds": {
+        "left_interval": 32,
+        "left_singleton": 8,
+        "middle_singleton": 4
+      },
+      "subgroup_order": 8,
+      "targets_checked": 4
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -163,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          1,
+          41
+        ]
+      },
+      "exponent_cap": 4,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -160,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          0,
+          40
+        ]
+      },
+      "exponent_cap": 28,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 54,
+      "discriminant": -159,
+      "distinct_cap_vectors_in_finite_oracle": 11,
+      "example": {
+        "half_word": [
+          -12,
+          -9
+        ],
+        "primitive_norm_bits": 66,
+        "queries": 11,
+        "target": [
+          1,
+          1,
+          40
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [
+        2,
+        5
+      ],
+      "maximum_calls_per_target": 11,
+      "negative_answers": 8,
+      "query_bound_per_target": 12,
+      "query_kinds": {
+        "left_interval": 40,
+        "left_singleton": 10,
+        "middle_singleton": 4
+      },
+      "subgroup_order": 10,
+      "targets_checked": 5
+    },
+    {
+      "decision_calls": 11,
+      "discriminant": -156,
+      "distinct_cap_vectors_in_finite_oracle": 6,
+      "example": {
+        "half_word": [
+          -11
+        ],
+        "primitive_norm_bits": 52,
+        "queries": 6,
+        "target": [
+          3,
+          0,
+          13
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [
+        5
+      ],
+      "maximum_calls_per_target": 6,
+      "negative_answers": 1,
+      "query_bound_per_target": 6,
+      "query_kinds": {
+        "left_interval": 8,
+        "left_singleton": 2,
+        "middle_singleton": 1
+      },
+      "subgroup_order": 4,
+      "targets_checked": 2
+    },
+    {
+      "decision_calls": 11,
+      "discriminant": -155,
+      "distinct_cap_vectors_in_finite_oracle": 6,
+      "example": {
+        "half_word": [
+          -11
+        ],
+        "primitive_norm_bits": 35,
+        "queries": 6,
+        "target": [
+          5,
+          5,
+          9
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [
+        3
+      ],
+      "maximum_calls_per_target": 6,
+      "negative_answers": 1,
+      "query_bound_per_target": 6,
+      "query_kinds": {
+        "left_interval": 8,
+        "left_singleton": 2,
+        "middle_singleton": 1
+      },
+      "subgroup_order": 4,
+      "targets_checked": 2
+    },
+    {
+      "decision_calls": 17,
+      "discriminant": -152,
+      "distinct_cap_vectors_in_finite_oracle": 6,
+      "example": {
+        "half_word": [
+          -10
+        ],
+        "primitive_norm_bits": 32,
+        "queries": 6,
+        "target": [
+          6,
+          -4,
+          7
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [
+        3
+      ],
+      "maximum_calls_per_target": 6,
+      "negative_answers": 3,
+      "query_bound_per_target": 6,
+      "query_kinds": {
+        "left_interval": 12,
+        "left_singleton": 3,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 6,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 48,
+      "discriminant": -151,
+      "distinct_cap_vectors_in_finite_oracle": 7,
+      "example": {
+        "half_word": [
+          -4,
+          -1
+        ],
+        "primitive_norm_bits": 13,
+        "queries": 7,
+        "target": [
+          1,
+          1,
+          38
+        ]
+      },
+      "exponent_cap": 4,
+      "factor_base_primes": [
+        2,
+        5
+      ],
+      "maximum_calls_per_target": 7,
+      "negative_answers": 13,
+      "query_bound_per_target": 8,
+      "query_kinds": {
+        "left_interval": 28,
+        "left_singleton": 14,
+        "middle_singleton": 6
+      },
+      "subgroup_order": 7,
+      "targets_checked": 7
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -148,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          0,
+          37
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -147,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          1,
+          37
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 11,
+      "discriminant": -144,
+      "distinct_cap_vectors_in_finite_oracle": 6,
+      "example": {
+        "half_word": [
+          -11
+        ],
+        "primitive_norm_bits": 52,
+        "queries": 6,
+        "target": [
+          4,
+          0,
+          9
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [
+        5
+      ],
+      "maximum_calls_per_target": 6,
+      "negative_answers": 1,
+      "query_bound_per_target": 6,
+      "query_kinds": {
+        "left_interval": 8,
+        "left_singleton": 2,
+        "middle_singleton": 1
+      },
+      "subgroup_order": 4,
+      "targets_checked": 2
+    },
+    {
+      "decision_calls": 54,
+      "discriminant": -143,
+      "distinct_cap_vectors_in_finite_oracle": 11,
+      "example": {
+        "half_word": [
+          -12,
+          -10
+        ],
+        "primitive_norm_bits": 56,
+        "queries": 11,
+        "target": [
+          3,
+          -1,
+          12
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [
+        2,
+        3
+      ],
+      "maximum_calls_per_target": 11,
+      "negative_answers": 8,
+      "query_bound_per_target": 12,
+      "query_kinds": {
+        "left_interval": 40,
+        "left_singleton": 10,
+        "middle_singleton": 4
+      },
+      "subgroup_order": 10,
+      "targets_checked": 5
+    },
+    {
+      "decision_calls": 17,
+      "discriminant": -140,
+      "distinct_cap_vectors_in_finite_oracle": 6,
+      "example": {
+        "half_word": [
+          -11
+        ],
+        "primitive_norm_bits": 35,
+        "queries": 6,
+        "target": [
+          4,
+          -2,
+          9
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [
+        3
+      ],
+      "maximum_calls_per_target": 6,
+      "negative_answers": 3,
+      "query_bound_per_target": 6,
+      "query_kinds": {
+        "left_interval": 12,
+        "left_singleton": 3,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 6,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 11,
+      "discriminant": -139,
+      "distinct_cap_vectors_in_finite_oracle": 4,
+      "example": {
+        "half_word": [
+          -3
+        ],
+        "primitive_norm_bits": 14,
+        "queries": 4,
+        "target": [
+          1,
+          1,
+          35
+        ]
+      },
+      "exponent_cap": 4,
+      "factor_base_primes": [
+        5
+      ],
+      "maximum_calls_per_target": 4,
+      "negative_answers": 3,
+      "query_bound_per_target": 4,
+      "query_kinds": {
+        "left_interval": 6,
+        "left_singleton": 3,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 3,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 11,
+      "discriminant": -136,
+      "distinct_cap_vectors_in_finite_oracle": 6,
+      "example": {
+        "half_word": [
+          -11
+        ],
+        "primitive_norm_bits": 52,
+        "queries": 6,
+        "target": [
+          2,
+          0,
+          17
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [
+        5
+      ],
+      "maximum_calls_per_target": 6,
+      "negative_answers": 1,
+      "query_bound_per_target": 6,
+      "query_kinds": {
+        "left_interval": 8,
+        "left_singleton": 2,
+        "middle_singleton": 1
+      },
+      "subgroup_order": 4,
+      "targets_checked": 2
+    },
+    {
+      "decision_calls": 17,
+      "discriminant": -135,
+      "distinct_cap_vectors_in_finite_oracle": 6,
+      "example": {
+        "half_word": [
+          -11
+        ],
+        "primitive_norm_bits": 23,
+        "queries": 6,
+        "target": [
+          4,
+          -3,
+          9
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [
+        2
+      ],
+      "maximum_calls_per_target": 6,
+      "negative_answers": 3,
+      "query_bound_per_target": 6,
+      "query_kinds": {
+        "left_interval": 12,
+        "left_singleton": 3,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 6,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -132,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          0,
+          33
+        ]
+      },
+      "exponent_cap": 28,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 34,
+      "discriminant": -131,
+      "distinct_cap_vectors_in_finite_oracle": 7,
+      "example": {
+        "half_word": [
+          -4,
+          -3
+        ],
+        "primitive_norm_bits": 27,
+        "queries": 7,
+        "target": [
+          1,
+          1,
+          33
+        ]
+      },
+      "exponent_cap": 4,
+      "factor_base_primes": [
+        3,
+        5
+      ],
+      "maximum_calls_per_target": 7,
+      "negative_answers": 8,
+      "query_bound_per_target": 8,
+      "query_kinds": {
+        "left_interval": 20,
+        "left_singleton": 10,
+        "middle_singleton": 4
+      },
+      "subgroup_order": 5,
+      "targets_checked": 5
+    },
+    {
+      "decision_calls": 11,
+      "discriminant": -128,
+      "distinct_cap_vectors_in_finite_oracle": 6,
+      "example": {
+        "half_word": [
+          -11
+        ],
+        "primitive_norm_bits": 35,
+        "queries": 6,
+        "target": [
+          4,
+          4,
+          9
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [
+        3
+      ],
+      "maximum_calls_per_target": 6,
+      "negative_answers": 1,
+      "query_bound_per_target": 6,
+      "query_kinds": {
+        "left_interval": 8,
+        "left_singleton": 2,
+        "middle_singleton": 1
+      },
+      "subgroup_order": 4,
+      "targets_checked": 2
+    },
+    {
+      "decision_calls": 19,
+      "discriminant": -127,
+      "distinct_cap_vectors_in_finite_oracle": 4,
+      "example": {
+        "half_word": [
+          0
+        ],
+        "primitive_norm_bits": 1,
+        "queries": 4,
+        "target": [
+          1,
+          1,
+          32
+        ]
+      },
+      "exponent_cap": 4,
+      "factor_base_primes": [
+        2
+      ],
+      "maximum_calls_per_target": 4,
+      "negative_answers": 8,
+      "query_bound_per_target": 4,
+      "query_kinds": {
+        "left_interval": 10,
+        "left_singleton": 5,
+        "middle_singleton": 4
+      },
+      "subgroup_order": 5,
+      "targets_checked": 5
+    },
+    {
+      "decision_calls": 11,
+      "discriminant": -124,
+      "distinct_cap_vectors_in_finite_oracle": 4,
+      "example": {
+        "half_word": [
+          -3
+        ],
+        "primitive_norm_bits": 14,
+        "queries": 4,
+        "target": [
+          1,
+          0,
+          31
+        ]
+      },
+      "exponent_cap": 4,
+      "factor_base_primes": [
+        5
+      ],
+      "maximum_calls_per_target": 4,
+      "negative_answers": 3,
+      "query_bound_per_target": 4,
+      "query_kinds": {
+        "left_interval": 6,
+        "left_singleton": 3,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 3,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -123,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          1,
+          31
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -120,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          0,
+          30
+        ]
+      },
+      "exponent_cap": 28,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 79,
+      "discriminant": -119,
+      "distinct_cap_vectors_in_finite_oracle": 16,
+      "example": {
+        "half_word": [
+          -12,
+          -12,
+          -8
+        ],
+        "primitive_norm_bits": 100,
+        "queries": 16,
+        "target": [
+          2,
+          -1,
+          15
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [
+        2,
+        3,
+        5
+      ],
+      "maximum_calls_per_target": 16,
+      "negative_answers": 8,
+      "query_bound_per_target": 18,
+      "query_kinds": {
+        "left_interval": 60,
+        "left_singleton": 15,
+        "middle_singleton": 4
+      },
+      "subgroup_order": 10,
+      "targets_checked": 5
+    },
+    {
+      "decision_calls": 32,
+      "discriminant": -116,
+      "distinct_cap_vectors_in_finite_oracle": 11,
+      "example": {
+        "half_word": [
+          -12,
+          -11
+        ],
+        "primitive_norm_bits": 90,
+        "queries": 11,
+        "target": [
+          5,
+          -2,
+          6
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [
+        3,
+        5
+      ],
+      "maximum_calls_per_target": 11,
+      "negative_answers": 3,
+      "query_bound_per_target": 12,
+      "query_kinds": {
+        "left_interval": 24,
+        "left_singleton": 6,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 6,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -115,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          1,
+          29
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -112,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          0,
+          28
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 43,
+      "discriminant": -111,
+      "distinct_cap_vectors_in_finite_oracle": 11,
+      "example": {
+        "half_word": [
+          -12,
+          -10
+        ],
+        "primitive_norm_bits": 71,
+        "queries": 11,
+        "target": [
+          3,
+          3,
+          10
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [
+        2,
+        5
+      ],
+      "maximum_calls_per_target": 11,
+      "negative_answers": 5,
+      "query_bound_per_target": 12,
+      "query_kinds": {
+        "left_interval": 32,
+        "left_singleton": 8,
+        "middle_singleton": 3
+      },
+      "subgroup_order": 8,
+      "targets_checked": 4
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -108,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          0,
+          27
+        ]
+      },
+      "exponent_cap": 20,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 11,
+      "discriminant": -107,
+      "distinct_cap_vectors_in_finite_oracle": 4,
+      "example": {
+        "half_word": [
+          -3
+        ],
+        "primitive_norm_bits": 10,
+        "queries": 4,
+        "target": [
+          1,
+          1,
+          27
+        ]
+      },
+      "exponent_cap": 4,
+      "factor_base_primes": [
+        3
+      ],
+      "maximum_calls_per_target": 4,
+      "negative_answers": 3,
+      "query_bound_per_target": 4,
+      "query_kinds": {
+        "left_interval": 6,
+        "left_singleton": 3,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 3,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 32,
+      "discriminant": -104,
+      "distinct_cap_vectors_in_finite_oracle": 11,
+      "example": {
+        "half_word": [
+          -12,
+          -11
+        ],
+        "primitive_norm_bits": 90,
+        "queries": 11,
+        "target": [
+          3,
+          -2,
+          9
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [
+        3,
+        5
+      ],
+      "maximum_calls_per_target": 11,
+      "negative_answers": 3,
+      "query_bound_per_target": 12,
+      "query_kinds": {
+        "left_interval": 24,
+        "left_singleton": 6,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 6,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 19,
+      "discriminant": -103,
+      "distinct_cap_vectors_in_finite_oracle": 4,
+      "example": {
+        "half_word": [
+          0
+        ],
+        "primitive_norm_bits": 1,
+        "queries": 4,
+        "target": [
+          1,
+          1,
+          26
+        ]
+      },
+      "exponent_cap": 4,
+      "factor_base_primes": [
+        2
+      ],
+      "maximum_calls_per_target": 4,
+      "negative_answers": 8,
+      "query_bound_per_target": 4,
+      "query_kinds": {
+        "left_interval": 10,
+        "left_singleton": 5,
+        "middle_singleton": 4
+      },
+      "subgroup_order": 5,
+      "targets_checked": 5
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -100,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          0,
+          25
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -99,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          1,
+          25
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -96,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          0,
+          24
+        ]
+      },
+      "exponent_cap": 28,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 43,
+      "discriminant": -95,
+      "distinct_cap_vectors_in_finite_oracle": 11,
+      "example": {
+        "half_word": [
+          -12,
+          -9
+        ],
+        "primitive_norm_bits": 53,
+        "queries": 11,
+        "target": [
+          4,
+          -1,
+          6
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [
+        2,
+        3
+      ],
+      "maximum_calls_per_target": 11,
+      "negative_answers": 5,
+      "query_bound_per_target": 12,
+      "query_kinds": {
+        "left_interval": 32,
+        "left_singleton": 8,
+        "middle_singleton": 3
+      },
+      "subgroup_order": 8,
+      "targets_checked": 4
+    },
+    {
+      "decision_calls": 11,
+      "discriminant": -92,
+      "distinct_cap_vectors_in_finite_oracle": 4,
+      "example": {
+        "half_word": [
+          -3
+        ],
+        "primitive_norm_bits": 10,
+        "queries": 4,
+        "target": [
+          1,
+          0,
+          23
+        ]
+      },
+      "exponent_cap": 4,
+      "factor_base_primes": [
+        3
+      ],
+      "maximum_calls_per_target": 4,
+      "negative_answers": 3,
+      "query_bound_per_target": 4,
+      "query_kinds": {
+        "left_interval": 6,
+        "left_singleton": 3,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 3,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -91,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          1,
+          23
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -88,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          0,
+          22
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 17,
+      "discriminant": -87,
+      "distinct_cap_vectors_in_finite_oracle": 6,
+      "example": {
+        "half_word": [
+          -11
+        ],
+        "primitive_norm_bits": 23,
+        "queries": 6,
+        "target": [
+          4,
+          -3,
+          6
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [
+        2
+      ],
+      "maximum_calls_per_target": 6,
+      "negative_answers": 3,
+      "query_bound_per_target": 6,
+      "query_kinds": {
+        "left_interval": 12,
+        "left_singleton": 3,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 6,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -84,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          0,
+          21
+        ]
+      },
+      "exponent_cap": 28,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 11,
+      "discriminant": -83,
+      "distinct_cap_vectors_in_finite_oracle": 4,
+      "example": {
+        "half_word": [
+          -3
+        ],
+        "primitive_norm_bits": 10,
+        "queries": 4,
+        "target": [
+          1,
+          1,
+          21
+        ]
+      },
+      "exponent_cap": 4,
+      "factor_base_primes": [
+        3
+      ],
+      "maximum_calls_per_target": 4,
+      "negative_answers": 3,
+      "query_bound_per_target": 4,
+      "query_kinds": {
+        "left_interval": 6,
+        "left_singleton": 3,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 3,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 11,
+      "discriminant": -80,
+      "distinct_cap_vectors_in_finite_oracle": 6,
+      "example": {
+        "half_word": [
+          -11
+        ],
+        "primitive_norm_bits": 35,
+        "queries": 6,
+        "target": [
+          4,
+          0,
+          5
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [
+        3
+      ],
+      "maximum_calls_per_target": 6,
+      "negative_answers": 1,
+      "query_bound_per_target": 6,
+      "query_kinds": {
+        "left_interval": 8,
+        "left_singleton": 2,
+        "middle_singleton": 1
+      },
+      "subgroup_order": 4,
+      "targets_checked": 2
+    },
+    {
+      "decision_calls": 19,
+      "discriminant": -79,
+      "distinct_cap_vectors_in_finite_oracle": 4,
+      "example": {
+        "half_word": [
+          0
+        ],
+        "primitive_norm_bits": 1,
+        "queries": 4,
+        "target": [
+          1,
+          1,
+          20
+        ]
+      },
+      "exponent_cap": 4,
+      "factor_base_primes": [
+        2
+      ],
+      "maximum_calls_per_target": 4,
+      "negative_answers": 8,
+      "query_bound_per_target": 4,
+      "query_kinds": {
+        "left_interval": 10,
+        "left_singleton": 5,
+        "middle_singleton": 4
+      },
+      "subgroup_order": 5,
+      "targets_checked": 5
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -76,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          0,
+          19
+        ]
+      },
+      "exponent_cap": 20,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -75,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          1,
+          19
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -72,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          0,
+          18
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 48,
+      "discriminant": -71,
+      "distinct_cap_vectors_in_finite_oracle": 7,
+      "example": {
+        "half_word": [
+          -4,
+          -1
+        ],
+        "primitive_norm_bits": 12,
+        "queries": 7,
+        "target": [
+          1,
+          1,
+          18
+        ]
+      },
+      "exponent_cap": 4,
+      "factor_base_primes": [
+        2,
+        3
+      ],
+      "maximum_calls_per_target": 7,
+      "negative_answers": 13,
+      "query_bound_per_target": 8,
+      "query_kinds": {
+        "left_interval": 28,
+        "left_singleton": 14,
+        "middle_singleton": 6
+      },
+      "subgroup_order": 7,
+      "targets_checked": 7
+    },
+    {
+      "decision_calls": 11,
+      "discriminant": -68,
+      "distinct_cap_vectors_in_finite_oracle": 6,
+      "example": {
+        "half_word": [
+          -11
+        ],
+        "primitive_norm_bits": 35,
+        "queries": 6,
+        "target": [
+          2,
+          2,
+          9
+        ]
+      },
+      "exponent_cap": 12,
+      "factor_base_primes": [
+        3
+      ],
+      "maximum_calls_per_target": 6,
+      "negative_answers": 1,
+      "query_bound_per_target": 6,
+      "query_kinds": {
+        "left_interval": 8,
+        "left_singleton": 2,
+        "middle_singleton": 1
+      },
+      "subgroup_order": 4,
+      "targets_checked": 2
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -67,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          1,
+          17
+        ]
+      },
+      "exponent_cap": 4,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -64,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          0,
+          16
+        ]
+      },
+      "exponent_cap": 6,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 9,
+      "discriminant": -63,
+      "distinct_cap_vectors_in_finite_oracle": 5,
+      "example": {
+        "half_word": [
+          -5
+        ],
+        "primitive_norm_bits": 11,
+        "queries": 5,
+        "target": [
+          4,
+          1,
+          4
+        ]
+      },
+      "exponent_cap": 6,
+      "factor_base_primes": [
+        2
+      ],
+      "maximum_calls_per_target": 5,
+      "negative_answers": 1,
+      "query_bound_per_target": 5,
+      "query_kinds": {
+        "left_interval": 6,
+        "left_singleton": 2,
+        "middle_singleton": 1
+      },
+      "subgroup_order": 4,
+      "targets_checked": 2
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -60,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          0,
+          15
+        ]
+      },
+      "exponent_cap": 6,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 8,
+      "discriminant": -59,
+      "distinct_cap_vectors_in_finite_oracle": 3,
+      "example": {
+        "half_word": [
+          0
+        ],
+        "primitive_norm_bits": 1,
+        "queries": 3,
+        "target": [
+          1,
+          1,
+          15
+        ]
+      },
+      "exponent_cap": 2,
+      "factor_base_primes": [
+        3
+      ],
+      "maximum_calls_per_target": 3,
+      "negative_answers": 3,
+      "query_bound_per_target": 3,
+      "query_kinds": {
+        "left_interval": 3,
+        "left_singleton": 3,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 3,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 9,
+      "discriminant": -56,
+      "distinct_cap_vectors_in_finite_oracle": 5,
+      "example": {
+        "half_word": [
+          -5
+        ],
+        "primitive_norm_bits": 16,
+        "queries": 5,
+        "target": [
+          2,
+          0,
+          7
+        ]
+      },
+      "exponent_cap": 6,
+      "factor_base_primes": [
+        3
+      ],
+      "maximum_calls_per_target": 5,
+      "negative_answers": 1,
+      "query_bound_per_target": 5,
+      "query_kinds": {
+        "left_interval": 6,
+        "left_singleton": 2,
+        "middle_singleton": 1
+      },
+      "subgroup_order": 4,
+      "targets_checked": 2
+    },
+    {
+      "decision_calls": 9,
+      "discriminant": -55,
+      "distinct_cap_vectors_in_finite_oracle": 5,
+      "example": {
+        "half_word": [
+          -5
+        ],
+        "primitive_norm_bits": 11,
+        "queries": 5,
+        "target": [
+          4,
+          3,
+          4
+        ]
+      },
+      "exponent_cap": 6,
+      "factor_base_primes": [
+        2
+      ],
+      "maximum_calls_per_target": 5,
+      "negative_answers": 1,
+      "query_bound_per_target": 5,
+      "query_kinds": {
+        "left_interval": 6,
+        "left_singleton": 2,
+        "middle_singleton": 1
+      },
+      "subgroup_order": 4,
+      "targets_checked": 2
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -52,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          0,
+          13
+        ]
+      },
+      "exponent_cap": 6,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -51,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          1,
+          13
+        ]
+      },
+      "exponent_cap": 6,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -48,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          0,
+          12
+        ]
+      },
+      "exponent_cap": 6,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 24,
+      "discriminant": -47,
+      "distinct_cap_vectors_in_finite_oracle": 5,
+      "example": {
+        "half_word": [
+          -2,
+          -1
+        ],
+        "primitive_norm_bits": 8,
+        "queries": 5,
+        "target": [
+          1,
+          1,
+          12
+        ]
+      },
+      "exponent_cap": 2,
+      "factor_base_primes": [
+        2,
+        3
+      ],
+      "maximum_calls_per_target": 5,
+      "negative_answers": 8,
+      "query_bound_per_target": 6,
+      "query_kinds": {
+        "left_interval": 10,
+        "left_singleton": 10,
+        "middle_singleton": 4
+      },
+      "subgroup_order": 5,
+      "targets_checked": 5
+    },
+    {
+      "decision_calls": 8,
+      "discriminant": -44,
+      "distinct_cap_vectors_in_finite_oracle": 3,
+      "example": {
+        "half_word": [
+          0
+        ],
+        "primitive_norm_bits": 1,
+        "queries": 3,
+        "target": [
+          1,
+          0,
+          11
+        ]
+      },
+      "exponent_cap": 2,
+      "factor_base_primes": [
+        3
+      ],
+      "maximum_calls_per_target": 3,
+      "negative_answers": 3,
+      "query_bound_per_target": 3,
+      "query_kinds": {
+        "left_interval": 3,
+        "left_singleton": 3,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 3,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -43,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          1,
+          11
+        ]
+      },
+      "exponent_cap": 2,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -40,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          0,
+          10
+        ]
+      },
+      "exponent_cap": 6,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 9,
+      "discriminant": -39,
+      "distinct_cap_vectors_in_finite_oracle": 5,
+      "example": {
+        "half_word": [
+          -5
+        ],
+        "primitive_norm_bits": 11,
+        "queries": 5,
+        "target": [
+          3,
+          3,
+          4
+        ]
+      },
+      "exponent_cap": 6,
+      "factor_base_primes": [
+        2
+      ],
+      "maximum_calls_per_target": 5,
+      "negative_answers": 1,
+      "query_bound_per_target": 5,
+      "query_kinds": {
+        "left_interval": 6,
+        "left_singleton": 2,
+        "middle_singleton": 1
+      },
+      "subgroup_order": 4,
+      "targets_checked": 2
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -36,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          0,
+          9
+        ]
+      },
+      "exponent_cap": 6,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -35,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          1,
+          9
+        ]
+      },
+      "exponent_cap": 6,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -32,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          0,
+          8
+        ]
+      },
+      "exponent_cap": 6,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 8,
+      "discriminant": -31,
+      "distinct_cap_vectors_in_finite_oracle": 3,
+      "example": {
+        "half_word": [
+          0
+        ],
+        "primitive_norm_bits": 1,
+        "queries": 3,
+        "target": [
+          1,
+          1,
+          8
+        ]
+      },
+      "exponent_cap": 2,
+      "factor_base_primes": [
+        2
+      ],
+      "maximum_calls_per_target": 3,
+      "negative_answers": 3,
+      "query_bound_per_target": 3,
+      "query_kinds": {
+        "left_interval": 3,
+        "left_singleton": 3,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 3,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -28,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          0,
+          7
+        ]
+      },
+      "exponent_cap": 2,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -27,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          1,
+          7
+        ]
+      },
+      "exponent_cap": 2,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -24,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          0,
+          6
+        ]
+      },
+      "exponent_cap": 6,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 8,
+      "discriminant": -23,
+      "distinct_cap_vectors_in_finite_oracle": 3,
+      "example": {
+        "half_word": [
+          0
+        ],
+        "primitive_norm_bits": 1,
+        "queries": 3,
+        "target": [
+          1,
+          1,
+          6
+        ]
+      },
+      "exponent_cap": 2,
+      "factor_base_primes": [
+        2
+      ],
+      "maximum_calls_per_target": 3,
+      "negative_answers": 3,
+      "query_bound_per_target": 3,
+      "query_kinds": {
+        "left_interval": 3,
+        "left_singleton": 3,
+        "middle_singleton": 2
+      },
+      "subgroup_order": 3,
+      "targets_checked": 3
+    },
+    {
+      "decision_calls": 0,
+      "discriminant": -20,
+      "distinct_cap_vectors_in_finite_oracle": 1,
+      "example": {
+        "half_word": [],
+        "primitive_norm_bits": 1,
+        "queries": 0,
+        "target": [
+          1,
+          0,
+          5
+        ]
+      },
+      "exponent_cap": 6,
+      "factor_base_primes": [],
+      "maximum_calls_per_target": 0,
+      "negative_answers": 0,
+      "query_bound_per_target": 0,
+      "query_kinds": {},
+      "subgroup_order": 1,
+      "targets_checked": 1
+    },
+    {
+      "decision_calls": 649,
+      "discriminant": -1679,
+      "distinct_cap_vectors_in_finite_oracle": 25,
+      "example": {
+        "half_word": [
+          -24,
+          -24,
+          -24,
+          -16
+        ],
+        "primitive_norm_bits": 326,
+        "queries": 25,
+        "target": [
+          1,
+          1,
+          420
+        ]
+      },
+      "exponent_cap": 24,
+      "factor_base_primes": [
+        2,
+        3,
+        5,
+        7
+      ],
+      "maximum_calls_per_target": 25,
+      "negative_answers": 86,
+      "query_bound_per_target": 28,
+      "query_kinds": {
+        "left_interval": 520,
+        "left_singleton": 104,
+        "middle_singleton": 25
+      },
+      "subgroup_order": 52,
+      "targets_checked": 26
+    },
+    {
+      "decision_calls": 312,
+      "discriminant": -2639,
+      "distinct_cap_vectors_in_finite_oracle": 19,
+      "example": {
+        "half_word": [
+          -24,
+          -23,
+          -23
+        ],
+        "primitive_norm_bits": 228,
+        "queries": 20,
+        "target": [
+          4,
+          1,
+          165
+        ]
+      },
+      "exponent_cap": 24,
+      "factor_base_primes": [
+        2,
+        3,
+        5
+      ],
+      "maximum_calls_per_target": 20,
+      "negative_answers": 40,
+      "query_bound_per_target": 21,
+      "query_kinds": {
+        "left_interval": 240,
+        "left_singleton": 48,
+        "middle_singleton": 24
+      },
+      "subgroup_order": 64,
+      "targets_checked": 16
+    },
+    {
+      "decision_calls": 1198,
+      "discriminant": -4799,
+      "distinct_cap_vectors_in_finite_oracle": 19,
+      "example": {
+        "half_word": [
+          -30,
+          -29,
+          3
+        ],
+        "primitive_norm_bits": 166,
+        "queries": 20,
+        "target": [
+          15,
+          1,
+          80
+        ]
+      },
+      "exponent_cap": 30,
+      "factor_base_primes": [
+        2,
+        3,
+        5
+      ],
+      "maximum_calls_per_target": 20,
+      "negative_answers": 253,
+      "query_bound_per_target": 21,
+      "query_kinds": {
+        "left_interval": 945,
+        "left_singleton": 189,
+        "middle_singleton": 64
+      },
+      "subgroup_order": 63,
+      "targets_checked": 63
+    },
+    {
+      "decision_calls": 1358,
+      "discriminant": -9679,
+      "distinct_cap_vectors_in_finite_oracle": 19,
+      "example": {
+        "half_word": [
+          -30,
+          -29,
+          10
+        ],
+        "primitive_norm_bits": 251,
+        "queries": 20,
+        "target": [
+          4,
+          -1,
+          605
+        ]
+      },
+      "exponent_cap": 30,
+      "factor_base_primes": [
+        2,
+        5,
+        7
+      ],
+      "maximum_calls_per_target": 20,
+      "negative_answers": 299,
+      "query_bound_per_target": 21,
+      "query_kinds": {
+        "left_interval": 1065,
+        "left_singleton": 213,
+        "middle_singleton": 80
+      },
+      "subgroup_order": 71,
+      "targets_checked": 71
+    },
+    {
+      "decision_calls": 1016,
+      "discriminant": -10007,
+      "distinct_cap_vectors_in_finite_oracle": 13,
+      "example": {
+        "half_word": [
+          -29,
+          -8
+        ],
+        "primitive_norm_bits": 84,
+        "queries": 14,
+        "target": [
+          2,
+          -1,
+          1251
+        ]
+      },
+      "exponent_cap": 30,
+      "factor_base_primes": [
+        2,
+        3
+      ],
+      "maximum_calls_per_target": 14,
+      "negative_answers": 326,
+      "query_bound_per_target": 14,
+      "query_kinds": {
+        "left_interval": 770,
+        "left_singleton": 154,
+        "middle_singleton": 92
+      },
+      "subgroup_order": 77,
+      "targets_checked": 77
+    },
+    {
+      "decision_calls": 149,
+      "discriminant": -41612,
+      "distinct_cap_vectors_in_finite_oracle": 10,
+      "example": {
+        "half_word": [
+          -225
+        ],
+        "primitive_norm_bits": 714,
+        "queries": 10,
+        "target": [
+          1,
+          0,
+          10403
+        ]
+      },
+      "exponent_cap": 228,
+      "factor_base_primes": [
+        3
+      ],
+      "maximum_calls_per_target": 10,
+      "negative_answers": 39,
+      "query_bound_per_target": 10,
+      "query_kinds": {
+        "left_interval": 120,
+        "left_singleton": 15,
+        "middle_singleton": 14
+      },
+      "subgroup_order": 30,
+      "targets_checked": 15
+    },
+    {
+      "decision_calls": 239,
+      "discriminant": -43228,
+      "distinct_cap_vectors_in_finite_oracle": 10,
+      "example": {
+        "half_word": [
+          -216
+        ],
+        "primitive_norm_bits": 1213,
+        "queries": 10,
+        "target": [
+          1,
+          0,
+          10807
+        ]
+      },
+      "exponent_cap": 228,
+      "factor_base_primes": [
+        7
+      ],
+      "maximum_calls_per_target": 10,
+      "negative_answers": 74,
+      "query_bound_per_target": 10,
+      "query_kinds": {
+        "left_interval": 192,
+        "left_singleton": 24,
+        "middle_singleton": 23
+      },
+      "subgroup_order": 48,
+      "targets_checked": 24
+    },
+    {
+      "decision_calls": 607,
+      "discriminant": -66548,
+      "distinct_cap_vectors_in_finite_oracle": 19,
+      "example": {
+        "half_word": [
+          -182,
+          -162
+        ],
+        "primitive_norm_bits": 1487,
+        "queries": 19,
+        "target": [
+          1,
+          0,
+          16637
+        ]
+      },
+      "exponent_cap": 182,
+      "factor_base_primes": [
+        3,
+        7
+      ],
+      "maximum_calls_per_target": 19,
+      "negative_answers": 111,
+      "query_bound_per_target": 20,
+      "query_kinds": {
+        "left_interval": 512,
+        "left_singleton": 64,
+        "middle_singleton": 31
+      },
+      "subgroup_order": 64,
+      "targets_checked": 32
+    }
+  ],
+  "scope": "Search-to-decision reduction for variable-cap smooth square norms; every decider in this checker uses exhaustive finite group information",
+  "target_representations_recovered": 1258
+}

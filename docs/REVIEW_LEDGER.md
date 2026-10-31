@@ -99,9 +99,12 @@ evidence scope; they are not independent mathematical acceptance.
 | [#41](https://github.com/1337isnot1337/integer-factoring/pull/41), `8c95d717cc30d1826f64ea2bfa93fc87a924ee50`; mathematical checkpoint `dbbd7b14d52f4ded9a85e694ce2f10573d9f3564` | Merged at `3a1cd6758393c70ee2e844ec343ecb077c16cf6f` | Bell transforms, folded/code constructions, scoped rank and pressure floors, rigidity interface, and completed finite searches. All 40 research/tool/evidence files from the checked mathematical checkpoint were compared with integrated main and retained byte for byte. `make verify`, focused Bell checks, and independent profile readbacks passed at the recorded source. The lane is released; no stronger factoring bound is claimed. |
 | [#47](https://github.com/1337isnot1337/integer-factoring/pull/47), `80d3af0602476648d13601f28ff721822aec1187`; mathematical checkpoint `2aef203c88ae8de0fa19d103bc1d70f3723c402c` | Merged at `a24247394438492dc8d1689dbfb15cdf295774e8` | Arithmetic inverse sections, complete-orbit aggregation, global modular product circuits, and valuation-separated local jets. `make verify` and the class-group integration gate passed before merge; no new Lean source or local Lean build. Global rational-factor extraction remains unresolved. The later exact rational-part identity, specialization caveat, and 192 pole controls are retained at `4f752e4c2301c899d9af51415cc2e7a844e880e6`. |
 
-The combined local default gate passed before the final documentation-only
-rebase for the rational-part checkpoint; its final documentation gate passed
-on `4f752e4` across 289 Markdown files. The intervening missing-tool restoration
+The combined local default gate passed on the rational-part source before
+its final rebase; that rebase also incorporated concurrent code changes.
+The final documentation gate passed on `4f752e4` across 289 Markdown files.
+After those integrations, `make verify` passed again at the exact main head
+`38030d3f7f0d56c609a729ee69c294988edfbaaf`. These checks are local replay,
+not independent mathematical review. The intervening missing-tool restoration
 was coordinated with its source owner in
 [Discussion #51](https://github.com/1337isnot1337/integer-factoring/discussions/51).
 The active global elimination question is
@@ -109,6 +112,36 @@ The active global elimination question is
 The strongest complete factoring score remains `1/2`.
 
 ## Maintaining this record
+
+### 31 October actual-rank and supervisor continuation: PR 42
+
+PR [#42](https://github.com/1337isnot1337/integer-factoring/pull/42) merged
+at `1aa090a560998ccf4bdca86de792def642700eb5`, with exact source head
+`236fd85832c8d7c8cc9f705e9fea4500cab33cb5`. Its earlier mathematical
+checkpoint `6440212` had already been integrated through `65823ce`.
+The incremental work retains the paired-downset normal form, the source-
+pinned updated receipts, and the owner-requested Astra supervisor prompt
+with current Discussions/main-first instructions. Cinna Davis /
+1337isnot1337 and substantial Codex AI assistance retain their source
+credits. This is an integration record, not independent proof review.
+
+The broad `make verify` gate passed on integrated candidate `39deedf`:
+50 unit tests, five crossing tests, default exact certificates, and links
+in 291 Markdown files. The binary-site-symmetry, downset and regular-code
+focused gates passed on the unchanged research sources. The new paired
+receipt covers all 361 ordered three-bit downset pairs, 160,000 literal
+polynomial entries and 4,670 actual rank queries. Later reconciliation
+retained the incoming new standalone research files and all incoming
+README/index link targets; the final local link gate checked 296 files.
+The later optional arithmetic, flag and matching searches were not rerun
+as part of this integration. No Lean source changed or Lean gate ran.
+
+The integration retained the other frontier agent's byte-for-byte tool
+restoration and full research-note/index restoration. The resulting diff
+against the reconciled main source contained only the intended nine-file
+PR delta. A Markdown coefficient-extraction ambiguity was reconciled to
+the restored source's `operatorname` notation. A merge or passing gate
+does not establish a new factoring bound; the complete exponent is `1/2`.
 
 For each later decision, record the exact reviewed head, changed-file coverage,
 checks actually run or reused, accepted scope, exclusions, source attribution,

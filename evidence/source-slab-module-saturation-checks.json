@@ -1,0 +1,79 @@
+{
+  "status": "exact full polynomial-module saturation certificate passed",
+  "source_sha256": "366242064babf2188460bcca8fbc8b02f5db7bf8b4ba71c6d22cb64a88f65e6f",
+  "rational_rank": 10,
+  "rational_reconstruction_entries": 1250,
+  "minimal_basis_degrees": [
+    0,
+    0,
+    0,
+    8,
+    8,
+    8,
+    12,
+    16,
+    16,
+    16
+  ],
+  "independent_leading_rows": 10,
+  "saturation_degree_bound": 15,
+  "saturation_equation_rank": 84,
+  "saturation_polynomial_space_dimension": 76,
+  "bounded_degree_controls": [
+    {
+      "degree": 0,
+      "dimension": 3
+    },
+    {
+      "degree": 1,
+      "dimension": 6
+    },
+    {
+      "degree": 7,
+      "dimension": 24
+    },
+    {
+      "degree": 8,
+      "dimension": 30
+    },
+    {
+      "degree": 11,
+      "dimension": 48
+    },
+    {
+      "degree": 12,
+      "dimension": 55
+    },
+    {
+      "degree": 15,
+      "dimension": 76
+    },
+    {
+      "degree": 16,
+      "dimension": 86
+    },
+    {
+      "degree": 17,
+      "dimension": 96
+    },
+    {
+      "degree": 18,
+      "dimension": 106
+    },
+    {
+      "degree": 20,
+      "dimension": 126
+    }
+  ],
+  "endpoint_coefficient_controls": 1250,
+  "complete_endpoint_zero_tensor_dimensions": {
+    "1": 15,
+    "9": 150,
+    "13": 275,
+    "16": 380,
+    "17": 430,
+    "18": 480
+  },
+  "negative_controls": 3,
+  "factoring_bound_improved": false
+}

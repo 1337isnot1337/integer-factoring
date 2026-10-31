@@ -1,4 +1,4 @@
-.PHONY: verify verify-docs verify-frontier verify-arithmetic verify-arithmetic-framework verify-post-half verify-formal verify-k6 verify-half-appendix verify-bell help verify-schur-fermion verify-schur-central verify-schur-gaussian verify-schur-sparse verify-fixed-modes verify-cancellation-modules verify-minimal-modules verify-exact-modules verify-cancellation-crossing verify-block-smith verify-linear-smith verify-type-pressure verify-crossing-interpolation verify-smith-oracle verify-controlled-smith verify-sparse-holonomy verify-charge-pruning verify-cubic-full-images verify-arithmetic-sieve
+.PHONY: verify verify-docs verify-frontier verify-arithmetic verify-arithmetic-framework verify-post-half verify-formal verify-k6 verify-half-appendix verify-bell help verify-schur-fermion verify-schur-central verify-schur-gaussian verify-schur-sparse verify-fixed-modes verify-cancellation-modules verify-minimal-modules verify-exact-modules verify-cancellation-crossing verify-block-smith verify-linear-smith verify-type-pressure verify-crossing-interpolation verify-smith-oracle verify-controlled-smith verify-sparse-holonomy verify-charge-pruning verify-cubic-full-images verify-arithmetic-sieve verify-polynomial-crossings verify-polynomial-native verify-nine-letter-all
 
 verify: verify-docs verify-frontier verify-arithmetic
 	python3 -m unittest discover -s tests -v
@@ -421,6 +421,23 @@ verify-charge-pruning:
 verify-cubic-full-images:
 	python3 tools/check_cubic_full_image_span.py --output /tmp/cubic-full-image-span.json
 
+.PHONY: verify-polynomial-crossings verify-polynomial-native verify-nine-letter-all
+verify-polynomial-crossings:
+	python3 tools/check_quadratic_inverse_degree_caps.py
+	python3 tools/check_quadratic_inverse_paths.py --alphabet 9
+	python3 tools/check_leading_rank_entropy_floor.py
+	python3 tools/check_quadratic_inverse_paths.py
+	python3 tools/check_shared_minor_smith_floor.py
+	python3 tools/check_all_degree_smith_floor.py
+	python3 tools/check_quadratic_crossings.py
+	python3 tools/check_extended_binary_crossings.py
+
+verify-polynomial-native:
+	python3 tools/check_polynomial_local_smith.py --nine-letter
+
+verify-nine-letter-all:
+	python3 tools/check_nine_letter_level_catalogue.py
+
 verify-post-half:
 	python3 tools/check_half_piece_ranks.py --full
 	python3 tools/check_half_projection.py
@@ -430,6 +447,13 @@ verify-arithmetic-sieve:
 	python3 tools/check_arithmetic_sieve_certificate.py
 
 verify-frontier: verify-bell
+	python3 tools/check_quadratic_inverse_degree_caps.py > /dev/null
+	python3 tools/check_quadratic_inverse_paths.py --alphabet 9 > /dev/null
+	python3 tools/check_leading_rank_entropy_floor.py > /dev/null
+	python3 tools/check_quadratic_inverse_paths.py > /dev/null
+	python3 tools/check_shared_minor_smith_floor.py > /dev/null
+	python3 tools/check_all_degree_smith_floor.py > /dev/null
+	python3 tools/check_quadratic_crossings.py > /dev/null
 	python3 tools/check_arithmetic_two_group.py
 	python3 tools/check_positive_relation_kernel.py
 	python3 tools/check_arithmetic_bias_seed.py
@@ -461,6 +485,9 @@ help:
 	@printf '%s\n' \
 	  'make verify               - unit tests, exact certificates, and local documentation links' \
 	  'make verify-frontier      - focused frontier certificates' \
+  'make verify-polynomial-crossings - focused polynomial crossing certificates' \
+  'make verify-polynomial-native - optional native local Smith profile checks' \
+  'make verify-nine-letter-all - complete 31-path nine-letter profile catalogue' \
 	  'make verify-post-half     - larger optional matrix-rank checks' \
 	  'make verify-docs          - check local Markdown file links' \
 	  'make verify-arithmetic-sieve - replay the 60/80-bit arithmetic certificates and finite search limits' \

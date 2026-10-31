@@ -1,0 +1,42 @@
+{
+  "status": "exact literal fourth-root family certified",
+  "source_record_sha256": "fc6b3b57cbc771802105fe4099088be41f134db05af246a03e29bfa88e8cd025",
+  "literal_root_coefficient_checks": 1250,
+  "rational_reconstruction_entries": 1250,
+  "minimal_basis_degrees": [
+    0,
+    0,
+    0,
+    2,
+    2,
+    2,
+    3,
+    4,
+    4,
+    4
+  ],
+  "saturation_checked_degree": 3,
+  "saturation_equation_rank": 21,
+  "saturation_polynomial_dimension": 19,
+  "bounded_dimensions": {
+    "0": 3,
+    "1": 6,
+    "2": 12,
+    "3": 19,
+    "4": 29,
+    "8": 69,
+    "17": 159
+  },
+  "endpoint_coefficient_checks": 1250,
+  "endpoint_zero_tensor_dimensions": {
+    "1": 15,
+    "3": 60,
+    "4": 95,
+    "5": 145,
+    "9": 345,
+    "18": 795
+  },
+  "literal_independent_directions_at_degree_18": 795,
+  "negative_controls": 2,
+  "factoring_bound_improved": false
+}

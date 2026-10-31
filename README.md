@@ -181,7 +181,9 @@ ranks to be checked without inferring them from a Smith bound.
 The formulas also permit different downsets on the two crossing pairs;
 all 361 ordered three-bit downset pairs are checked exactly.
 Complete small no-adjacent-ones code experiments give no new rank-sum
-threshold. Run `make verify-downset-crossings verify-regular-code-crossings`.
+threshold; the [weighted block theorem](research/difference-support-rank-floor.md)
+subsequently closes every coordinate-code pair for the elementary seed.
+Run `make verify-downset-crossings verify-regular-code-crossings`.
 
 The [exact nonlinear charge theorem](research/nonlinear-symbol-charge-lattices.md)
 characterizes every admissible pair of full-symbol potentials for the
@@ -1052,6 +1054,32 @@ For [self-reciprocal quartics](research/bell-quartic-rigidity.md), an exact
 matrix identity relates a pressure witness to sparse Hadamard rank reduction;
 it is a necessary condition and supplies no improved factoring bound.
 
+
+The current ordinary-proof campaign establishes these scoped results:
+
+| Scope | Result and evidence |
+| --- | --- |
+| Bare ungauged local Smith profiles, every field and degree, fixed auxiliaries | [Degree budgets](research/all-degree-small-alphabet-smith-floor.md) and [shared minors](research/shared-minor-smith-floor.md) exclude a half-rate improvement through six letters. |
+| The same certificate on 7 through 10 letters | An [exact entropy dual](research/leading-rank-entropy-floor.md) forces exactly one minimum-order channel in each cut for any potential improvement. |
+| Scalar paths with a monomial column determinant | [Inverse-degree compatibility](research/inverse-degree-crossing-compatibility.md) rules out the formal seven-letter optimum at every integer ramification. |
+| Polynomial inverse paths on 7 through 10 letters | [Inverse-degree aspect bounds](research/inverse-degree-aspect-bounds.md) cap the useful degree; they also exclude all `2^31` binary level-weight assignments of the fixed nine-letter flag. |
+| Noncommuting quadratic-inverse constructions | A [general two-jet tradeoff and complete nine-letter schedule](research/nine-letter-quadratic-inverse-probe.md) show why suppressing order one alone fails; all 31 tested level choices are excluded at every scale. Other pencils remain open. |
+
+The [binary quadratic](research/binary-quadratic-catalogue.md) and
+[extended polynomial catalogues](research/extended-binary-polynomial-catalogues.md)
+retain the finite evidence behind these arguments, including all 16,777,216
+parity quartics. Their independent replay limits are stated explicitly.
+Run `make verify-polynomial-crossings` for the focused Python checks;
+optional `--full` replays are documented in those notes. The separate
+`make verify-polynomial-native` gate uses Clang and Boost for complete local
+Smith profiles and independent Toeplitz controls.
+
+Run `make verify-nine-letter-all` for every complete profile and all-scale
+certificate in the 31-path native schedule.
+
+These results restrict the stated certificates. Independent gauges,
+coefficient recombinations, cancellation refinements, and larger alphabets
+remain constructive routes; no stronger factoring score follows here.
 
 ## Contribution and attribution
 
