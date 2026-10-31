@@ -270,3 +270,7 @@ verify-weighted-pascal:
 .PHONY: verify-frozen-core
 verify-frozen-core:
 	python3 tools/check_rectangular_frozen_core_rows.py
+
+.PHONY: verify-retained-profile-precision
+verify-retained-profile-precision:
+	python3 tools/check_retained_profile_precision.py

@@ -36,6 +36,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Critical cubic residual repairs](full-alphabet-monomial-residuals.md): four cubic pairs restore all sixteen states at the singular canonical quartic, with symbolic determinant (1+gamma+ab)^4 and a uniform height-block correction.
 - [Secondary-height repairs](rectangular-refined-repairs.md): 231 individually admissible F4 shears, dense additive flags, and Laurent quartic freedom preserve the all-length crossing and bounded support.
 - [Rectangular convex pressure search](rectangular-convex-pressure.md): paired Gibbs derivatives, attaining-minor separation, generic-rank interfaces, and independent exact and numerical implementation controls.
+- [Retained profile precision](retained-profile-precision.md): exported coefficient arrays carry their actual retained cutoff, with an adversarial regression for reuse in a larger elimination window.
 - [Cauchy packet polynomial realization](cauchy-packet-realization.md): every degree-at-most-wire-count polynomial integral on the interpolation grid has an explicit affine packet realization, with separate canonical-lift controls.
 - [Canonical alternating packets](canonical-alternating-packet.md): an all-size binary-input family has exact minimum odd-center content `L(1+log_2 L)-1`, with creation precision one.
 - [Canonical packet upper bounds](canonical-packet-upper-frontier.md): exact exhaustive four-wire visibility, adaptive positive endpoint bounds, and an all-size limitation of low-order endpoint jets.

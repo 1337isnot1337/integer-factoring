@@ -62,6 +62,16 @@ def precision_sizes(program,base,M,profile_precision=None):
     if builder>32768:raise ArithmeticError('Requested polynomial builder precision is too large.')
     return window,builder
 
+def retained_known_below(metadata,window):
+    """A common absolute precision bound for the exported coefficient arrays.
+
+    Native construction knows coefficients below metadata[1], but exports
+    only `window` coefficients after each entry's valuation. The standard
+    Smith engine also enforces its own window cap. Keeping this separate
+    retained bound protects consumers that align or enlarge those arrays.
+    """
+    return min(int(metadata[1]),int(metadata[0])+window)
+
 def upow(e):
     if e<0:raise ValueError('Negative polynomial unit power.')
     out=1
@@ -325,7 +335,7 @@ def active_matrix(data,alpha=1,beta=2,quartic_terms=None,repair_spec=None,profil
             shift_row.append(int(shifts[index]))
         matrix.append(row);shift_matrix.append(shift_row)
     exact=program.degree_bounds[last.register]<builder and int(meta[3])<window
-    return matrix,shift_matrix,{'registers':len(program.instructions),'coefficient_count':len(program.coefficients),'unit_denominator_degree':last.denominator.bit_length()-1,'unit_denominator_hex':hex(last.denominator),'program_degree_bound':program.degree_bounds[last.register],'maximum_normalized_degree':int(meta[3]),'exact_polynomial_matrix':exact,'minimum_valuation':int(meta[0]),'known_below':int(meta[1]),'builder_precision':int(meta[2]),'profile_precision':window,'matrix_seconds':time.monotonic()-start}
+    return matrix,shift_matrix,{'registers':len(program.instructions),'coefficient_count':len(program.coefficients),'unit_denominator_degree':last.denominator.bit_length()-1,'unit_denominator_hex':hex(last.denominator),'program_degree_bound':program.degree_bounds[last.register],'maximum_normalized_degree':int(meta[3]),'exact_polynomial_matrix':exact,'minimum_valuation':int(meta[0]),'known_below':retained_known_below(meta,window),'builder_known_below':int(meta[1]),'builder_precision':int(meta[2]),'profile_precision':window,'matrix_seconds':time.monotonic()-start}
 
 def profile(data,alpha=1,beta=2,quartic_terms=None):
     matrix,shifts,metadata=active_matrix(data,alpha,beta,quartic_terms);n=len(matrix);rank=3*n//4
