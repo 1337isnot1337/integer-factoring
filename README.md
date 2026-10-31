@@ -91,6 +91,14 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 
 ## Current research frontier
 
+The [nonconstant row-frame constructor](research/nonconstant-binary-row-flags.md)
+extends complete binary crossing synthesis to arbitrary regular polynomial
+changes of row basis. Its first completed F4 catalogue covers every
+strictly lower triangular first jet at both cuts and 59 explicit targets.
+Only the reference affine line survives. Higher jets remain a constructive
+search direction. Run `make verify-polynomial-flags` for literal polynomial
+and full-minor controls.
+
 The continuation from PR #38 adds a [multilevel canonical-packet
 collision](research/multilevel-thue-morse-packet.md): an explicit one-bit
 Thue--Morse input loses its original bit simultaneously on every retained

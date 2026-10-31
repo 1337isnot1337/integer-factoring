@@ -16,6 +16,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Nonconstant regular binary flags](nonconstant-binary-row-flags.md): arbitrary regular polynomial row frames keep complete two-cut synthesis affine, finite jets suffice for fixed targets, and the full first-jet F4 catalogue retains only the reference line.
+
 - [Terminal operators above a power of two](above-power-identity-operator-reduction.md): an existing unfiltered low identity direction closes a small square Weyl core while keeping its physical spectator and degree accounting explicit.
 
 - [Completed above-power operator catalogue](above-power-operator-searches.md): all 42,560 specified interval-33 projector kernels yield 1,111 exact profile classes, with complete numerical grid and refinement records.

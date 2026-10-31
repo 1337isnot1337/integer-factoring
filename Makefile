@@ -30,6 +30,10 @@ verify-all-digit-gaussian:
 verify-boolean-charge-bands:
 	python3 tools/check_homogeneous_boolean_charge_bands.py
 
+.PHONY: verify-polynomial-flags
+verify-polynomial-flags:
+	python3 tools/check_binary_polynomial_flags.py
+
 .PHONY: verify-frontier-extensions
 verify-frontier-extensions:
 	python3 tools/check_all_scale_balanced_obstruction.py
