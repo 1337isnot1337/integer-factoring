@@ -1,0 +1,50 @@
+{
+  "status": "exact controls passed; no pressure improvement asserted",
+  "full_parameter_dimension": 120,
+  "kernel_slab_rank": 11,
+  "complete_tensor_direction_dimension": 88,
+  "independent_kernel_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    11
+  ],
+  "coefficientwise_kernel_relations": [
+    [
+      6,
+      8,
+      9,
+      10
+    ],
+    [
+      6,
+      8,
+      11,
+      12
+    ],
+    [
+      6,
+      9,
+      11,
+      13
+    ],
+    [
+      8,
+      9,
+      11,
+      14
+    ]
+  ],
+  "vacuum_kernel_entries": 120,
+  "independent_source_piece_entries": 8192,
+  "F4_endpoint_entries": 20480,
+  "full_family_reconstructed": true,
+  "maximum_polynomial_degree": 64
+}
