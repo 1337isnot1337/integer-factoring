@@ -72,6 +72,10 @@ verify-steiner-cubic:
 verify-steiner-coefficients:
 	python3 tools/check_steiner_coefficient_barrier.py
 
+.PHONY: verify-ordered-steiner-gauges
+verify-ordered-steiner-gauges:
+	python3 tools/check_ordered_steiner_gauges.py
+
 .PHONY: verify-group-shears
 verify-group-shears:
 	python3 tools/check_group_shear_crossings.py

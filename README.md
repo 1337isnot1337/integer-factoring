@@ -262,6 +262,13 @@ Restricted physical types and the fully multivariate three-letter space
 remain outside those proofs. Run `make verify-steiner-cubic` and
 `make verify-steiner-coefficients`.
 
+The [ordered physical-gauge construction](research/ordered-physical-gauge-crossings.md)
+preserves every crossing endpoint while introducing noncommuting auxiliary
+matrices and polynomially many coefficients. Exact integer dual potentials
+reject all 216 cases of a stated two-dimensional binary control under the
+finite-block rank-sum envelope. Other auxiliaries and a uniform subcritical
+rank bound remain open. Run `make verify-ordered-steiner-gauges`.
+
 The [group-shear extension](research/group-shear-crossings.md) implements
 the swap through three multiplication/division shears over any finite
 `p`-group, with a constant nonzero determinant in characteristic `p`.

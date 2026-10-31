@@ -326,6 +326,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 - [Steiner coefficient barrier](steiner-coefficient-barrier.md): shared coefficients force actual ranks at every word length; the complete multivariate span has `rho>=3/4` for `q>=7`, and the three-letter univariate span has asymptotic floor `0.8065306485`, also with a sublinear number of independent position classes.
 
+- [Ordered physical-gauge crossings](ordered-physical-gauge-crossings.md): noncommuting matrix gauges preserve every endpoint and the polynomial coefficient count; exact rank-sum dual potentials exclude 216 stated binary controls, with a distinct clock/shift phase construction left for further work.
+
 - [Group-shear crossings](group-shear-crossings.md): multiplication/division shears give cubic swap paths over every finite `p`-group in characteristic `p`; exact early-jet certificates exclude six displayed binary seeds, without an all-group claim.
 
 - [All-degree homogeneous Boolean charge bands](homogeneous-boolean-charge-bands.md): a degree-independent loss cap and stronger Gaussian floors exclude all exterior charges and a linearly growing interior band, including overlapping monomials.
