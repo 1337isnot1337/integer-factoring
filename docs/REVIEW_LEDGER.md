@@ -80,6 +80,14 @@ numerical optimization searches, and Lean gates were not rerun in this
 integration. Integration and passing checks do not establish a stronger
 factoring machine or independent acceptance of the author proofs.
 
+Concurrent main reached `6646d5a` during this integration, including the
+GitHub merges of #39 (`e19d077`) and #42 (`65823ce`). It was reconciled
+without dropping either set of research targets, and the combined broad
+gate passed again. A later eight-file arithmetic addition at `601735e`
+merged without conflicts; its smooth-norm relation and gap checkers passed,
+as did the final documentation gate. Those later files did not modify the
+frontier sources covered by the ten focused replays.
+
 ## Maintaining this record
 
 For each later decision, record the exact reviewed head, changed-file coverage,
