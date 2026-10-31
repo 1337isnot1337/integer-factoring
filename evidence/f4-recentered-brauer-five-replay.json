@@ -1,0 +1,45 @@
+{
+  "scope": "Exact literal endpoints, complete polynomial Smith frames, untruncated target products, and numerical cost replays; no new factoring bound.",
+  "records": [
+    {
+      "record": "evidence/f4-recentered-brauer-five-search.json",
+      "record_sha256": "ad787aedcb101520695b2c57cf8350238b5c20207e5779ca1e8f9186ea381633",
+      "status": "passed",
+      "source_hash_mismatches": [],
+      "source_provenance": {
+        "search_f4_recentered_crossings.py": {
+          "location": "worktree",
+          "sha256": "8715f1a28b0cb68ad4d3fd29adc53fe082f6181882ed4bce7ce0e9ff582b0be4"
+        },
+        "f4_recentered_lattices.py": {
+          "location": "worktree",
+          "sha256": "64e72e1a3a2893ee1c36a8f65064b25a7f6c33dd1c519187b28cd80ea22d2d78"
+        },
+        "native_matrix_smith_f4.py": {
+          "location": "worktree",
+          "sha256": "c08da20f1938a371b438e32fbc6a8f6766b48c2cfee5bcd1c956ce137dc70203"
+        },
+        "native_matrix_smith_f4.cpp": {
+          "location": "worktree",
+          "sha256": "5ec995cd04563c2fa99b69afd71bf476d5ca885f1f90377490c30e5a1a55f330"
+        },
+        "weighted_smith_oracle_f4.py": {
+          "location": "worktree",
+          "sha256": "d277f46caa98dab48d243af64c18e42e09e917bf1e862057a55cb35f74a6d572"
+        }
+      },
+      "references": 2,
+      "nonbinary_references": 1,
+      "retained_literal_witnesses": 24,
+      "complete_profiles_certified_by_polynomial_frames": 52,
+      "untruncated_target_products": 48,
+      "literal_endpoint_entries": 16250,
+      "recorded_complete_profile_queries": 489,
+      "completed_requested_schedule": true,
+      "best_recorded_rho": 0.9825257603774942,
+      "strict_pressure_candidate_found": false,
+      "elapsed_seconds": 27.20391799999925
+    }
+  ],
+  "checker_sha256": "557b64c98a8cd41b222bd9198704f96adf74efc49eadf70c4ad2386aaffd3856"
+}

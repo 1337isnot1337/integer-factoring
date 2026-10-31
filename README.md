@@ -38,7 +38,7 @@ The composition uses the existing clique evaluator from [Anthropic's Appendix B]
 | Saving exponent above `1/2` | **Not established** | [Research index](research/INDEX.md) |
 
 Arithmetic research now uses [inverse sections](research/dyadic-inverse-sections.md)
-and an [interval orbit-gcd interface](research/interval-orbit-gcd.md).
+and an [interval orbit-gcd interface with a rational-part projection](research/interval-orbit-gcd.md).
 It supplies [exact complete-orbit aggregation](research/dyadic-orbit-aggregation.md)
 and [global modular input circuits](research/interval-packet-circuits.md)
 with `O(n+p)` arithmetic nodes and polynomial generation cost.
@@ -107,6 +107,15 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs five groups on 
 
 ## Current research frontier
 
+The [active-difference rank theorem](research/difference-support-rank-floor.md)
+proves rank-sum at least sqrt(2) times the nonzero difference-set size for
+the elementary crossing on any binary code. It uniformly excludes the full
+no-adjacent-ones language, its exact-size prefixes, and multiplication graph
+codes, while leaving unequal paired codes and new auxiliary kernels open.
+The exact checker covers all 273 codes through three bits and 65,532
+multivariate functionals. This narrows construction choices; the factoring
+score remains 1/2.
+
 The [smooth-norm relation reduction](research/smooth-norm-relations.md)
 accepts primitive smooth represented norms without a balanced-factor
 requirement. A [gap extractor](research/smooth-norm-gap.md) handles the
@@ -140,6 +149,13 @@ allows nonregular monomials to be removed from both the state and operator
 parameter. Its exact reduced-dual compiler preserves every crossing piece;
 it does not improve the factoring exponent. Run `make verify-modular-descent`
 to compare it with the original unreduced recursion.
+
+The [difference-unique code obstruction](research/sidon-code-rank-obstruction.md)
+shows why sparse additive graph codes do not rescue the elementary crossing:
+its full multivariate coefficient span has rank-sum at least q(q-1)/sqrt(2).
+This includes every binary cubic field graph, but not general nonlinear codes
+or new auxiliary mechanisms. Sixteen finite controls replay with
+`python3 tools/check_sidon_code_crossings.py`; the factoring score is unchanged.
 
 The [typed rational strictification theorem](research/typed-rational-crossing-strictification.md)
 extends the binary pressure floor to scalar rational kernels with only
@@ -295,6 +311,13 @@ for the univariate span and a sublinear number of position classes.
 Restricted physical types and the fully multivariate three-letter space
 remain outside those proofs. Run `make verify-steiner-cubic` and
 `make verify-steiner-coefficients`.
+
+The [ordered physical-gauge construction](research/ordered-physical-gauge-crossings.md)
+preserves every crossing endpoint while introducing noncommuting auxiliary
+matrices and polynomially many coefficients. Exact integer dual potentials
+reject all 216 cases of a stated two-dimensional binary control under the
+finite-block rank-sum envelope. Other auxiliaries and a uniform subcritical
+rank bound remain open. Run `make verify-ordered-steiner-gauges`.
 
 The [group-shear extension](research/group-shear-crossings.md) implements
 the swap through three multiplication/division shears over any finite
