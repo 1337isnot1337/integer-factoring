@@ -316,3 +316,7 @@ verify-core-charge-projections:
 	python3 tools/check_strict_core_charge_profiles.py
 	python3 tools/check_strict_core_charge_gauges.py
 	python3 tools/check_raw_extreme_charge_projections.py
+
+.PHONY: verify-frozen-core-complete
+verify-frozen-core-complete:
+	python3 tools/check_frozen_core_complete_search.py

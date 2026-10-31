@@ -14,6 +14,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Complete finite frozen-row searches](frozen-core-complete-search.md): exact coefficient flags, affine cell counts, and rational-scale profile comparisons cover all 4,194,304 rows in each of 86 stated gauge/scale/orbit cases, with no same-gauge Gaussian improvement.
+
 - [Strict fixed-core charge projections](strict-core-charge-projection.md): regular support on at most four times the physical core size, exact physical-core gauges, and complete fourteen-class screens at intervals eight and sixteen.
 - [Raw extreme-core charge projections](raw-extreme-charge-projections.md): endpoint-preserving masks on both extreme modes retain all physical states, with ten active fermion modes and exact original weighted-cut controls.
 
