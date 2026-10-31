@@ -128,6 +128,11 @@ An [exact three-mode certificate](research/three-mode-pressure-improvement.md)
 uses independent occupations of the two species to prove `rho < 741/1000`.
 It improves the previous Gaussian pressure control but remains above
 `1/sqrt(2)`, so the best factoring exponent is unchanged.
+The [one-species interval family](research/schur-one-species-interval.md)
+has an exact all-size spectrum and finite product pressure. Checked
+rational witnesses reach `rho < 17/24` at 63 modes. This particular
+formula approaches `1/sqrt(2)` from above; an analytic proof excludes
+crossing that threshold within the displayed gauges.
 For this Gaussian seed, [generic mode blocks](research/typed-gaussian-generic-blocks.md)
 force cost `Omega(D^2)` when all nonvacuum occupations stay fixed, even
 after arbitrary coefficient recombinations. Growing occupation densities
