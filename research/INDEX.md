@@ -14,6 +14,9 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Strict fixed-core charge projections](strict-core-charge-projection.md): regular support on at most four times the physical core size, exact physical-core gauges, and complete fourteen-class screens at intervals eight and sixteen.
+- [Raw extreme-core charge projections](raw-extreme-charge-projections.md): endpoint-preserving masks on both extreme modes retain all physical states, with ten active fermion modes and exact original weighted-cut controls.
+
 - [Exact prime-state filter searches](prime-state-filter-searches.md): portable monomial, dual, cancellation-branch, and polynomial synthesis searches with exact profiles and complete degree costs; the recorded finite grids give no threshold improvement.
 
 - [Coupled identity-filter reduction](coupled-identity-filter-reduction.md): regular paired shears concentrate arbitrary correlated digit weights into twice as many active zero modes, with terminal and opposite-end extensions at prime-power interval lengths.

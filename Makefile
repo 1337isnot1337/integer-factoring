@@ -310,3 +310,9 @@ verify-coupled-filters:
 .PHONY: verify-prime-filter-pressure
 verify-prime-filter-pressure:
 	python3 tools/check_prime_state_filter_pressure.py
+
+.PHONY: verify-core-charge-projections
+verify-core-charge-projections:
+	python3 tools/check_strict_core_charge_profiles.py
+	python3 tools/check_strict_core_charge_gauges.py
+	python3 tools/check_raw_extreme_charge_projections.py
