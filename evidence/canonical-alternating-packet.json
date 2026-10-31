@@ -27,7 +27,8 @@
           3,
           11
         ]
-      ]
+      ],
+      "dropped_last_row_minimum_content": 11
     },
     {
       "L": 8,
@@ -67,7 +68,8 @@
           7,
           31
         ]
-      ]
+      ],
+      "dropped_last_row_minimum_content": 31
     },
     {
       "L": 16,
@@ -139,7 +141,8 @@
           15,
           79
         ]
-      ]
+      ],
+      "dropped_last_row_minimum_content": 79
     },
     {
       "L": 32,
@@ -275,7 +278,8 @@
           31,
           191
         ]
-      ]
+      ],
+      "dropped_last_row_minimum_content": 191
     },
     {
       "L": 64,
@@ -539,11 +543,12 @@
           63,
           447
         ]
-      ]
+      ],
+      "dropped_last_row_minimum_content": 447
     }
   ],
   "source_sha256": {
-    "tools/check_canonical_alternating_packet.py": "eb93cdeedf188a1284f47c7b96afd74c833d692ad1465d08538daa3cf85fe2d1",
+    "tools/check_canonical_alternating_packet.py": "b9c36e81a61624fa54b75818c0f4e1691c889fda59d4b01e28cb2a3e2a78ae8a",
     "tools/cauchy_packet_polynomials.py": "92d102c11cc42db9caadd028b5552b068ae9d734c46a4c4f5791662cc5be83cc",
     "research/canonical-alternating-packet.md": "407475757e4731a063bff027fa4cbe69243cd6ce2dc83567d844d4075a46b307"
   },

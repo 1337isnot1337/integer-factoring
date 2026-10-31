@@ -1,7 +1,9 @@
 // Exact truncated polynomial evaluation of a supplied fermionic program.
 // The Python frontend clears only polynomial units at zero, tracks all
 // Laurent shifts, and checks the common precision before Smith reduction.
+#ifndef F4_SERIES_WORDS
 #define F4_SERIES_WORDS 16
+#endif
 #include "native_rectangular_smith_f4.cpp"
 
 namespace fock {
@@ -19,14 +21,14 @@ P mul(const P&a,const P&b){
 // Kind 0 is a basis vector, kind 1 a CAR sum (coefficient1=CAR id), and
 // kind 2 a polynomial linear combination of two earlier vectors.
 // CAR records: mode, creation flag, polynomial coefficient id.
-extern "C" int fock_f4_evaluate(int k,int count,const int*program,
+extern "C" int fock_f4_evaluate_v2(int k,int count,const int*program,
  int coefficient_count,const std::uint64_t*coefficients,int car_count,
  const int*car_offsets,const int*car_terms,int final_register,
- const int*diagonal_orders,int common_base,std::uint64_t*output,
+ const int*diagonal_orders,int common_base,int output_words,std::uint64_t*output,
  std::int64_t*shifts,std::int64_t*metadata){
  try{
   using namespace fock;
-  if(k<1||k>10||count<1||count>10000||final_register<0||final_register>=count)return 1;
+  if(k<1||k>10||count<1||count>10000||final_register<0||final_register>=count||output_words<2||output_words>words)return 1;
   int n=1<<k;
   std::vector<P>cs(coefficient_count);
   for(int j=0;j<coefficient_count;++j)for(int w=0;w<words;++w){
@@ -73,11 +75,11 @@ extern "C" int fock_f4_evaluate(int k,int count,const int*program,
     int v=f4::valuation(value);value=value>>v;shifts[index]=shift+v;
     maximum_degree=std::max(maximum_degree,std::int64_t(f4::degree(value)));
     smallest=std::min(smallest,shifts[index]);
-    for(int w=0;w<8;++w){output[(2*index)*8+w]=value.lo.w[w];output[(2*index+1)*8+w]=value.hi.w[w];}
+    for(int w=0;w<output_words;++w){output[(2*index)*output_words+w]=value.lo.w[w];output[(2*index+1)*output_words+w]=value.hi.w[w];}
    }
   }
   metadata[0]=smallest;metadata[1]=known;metadata[2]=precision;metadata[3]=maximum_degree;
-  if(smallest==1000000000||known<smallest+512)return 4;
+  if(smallest==1000000000||known<smallest+64*output_words)return 4;
   return 0;
  }catch(...){return 5;}
 }
@@ -86,15 +88,15 @@ extern "C" int fock_f4_evaluate(int k,int count,const int*program,
 // inserts Gamma(Sigma) explicitly (instruction kind 3), and reads L on
 // selected vacuum output coordinates. Every output register has the same
 // tracked Laurent shift and unit denominator, supplied by the frontend.
-extern "C" int fock_f4_coordinates(int k,int count,const int*program,
+extern "C" int fock_f4_coordinates_v2(int k,int count,const int*program,
  int coefficient_count,const std::uint64_t*coefficients,int car_count,
  const int*car_offsets,const int*car_terms,const int*diagonal_offsets,
  int left_multiplicity,const int*vacuum_rows,int right_multiplicity,
- const int*vacuum_columns,const int*output_registers,int common_base,
+ const int*vacuum_columns,const int*output_registers,int common_base,int output_words,
  std::uint64_t*output,std::int64_t*shifts,std::int64_t*metadata){
  try{
   using namespace fock;
-  if(k<1||k>10||count<1||count>30000)return 1;
+  if(k<1||k>10||count<1||count>30000||output_words<2||output_words>words)return 1;
   int n=1<<k;
   if(left_multiplicity<1||right_multiplicity<1||n%left_multiplicity||n%right_multiplicity)return 1;
   int left_states=n/left_multiplicity,right_states=n/right_multiplicity;
@@ -140,12 +142,12 @@ extern "C" int fock_f4_coordinates(int k,int count,const int*program,
      auto value=reg[regid][source_row];if(!value){shifts[index]=0;continue;}
      int v=f4::valuation(value);value=value>>v;shifts[index]=common_base+v;
      smallest=std::min(smallest,shifts[index]);maximum_degree=std::max(maximum_degree,std::int64_t(f4::degree(value)));
-     for(int w=0;w<8;++w){output[(2*index)*8+w]=value.lo.w[w];output[(2*index+1)*8+w]=value.hi.w[w];}
+     for(int w=0;w<output_words;++w){output[(2*index)*output_words+w]=value.lo.w[w];output[(2*index+1)*output_words+w]=value.hi.w[w];}
     }
    }
   }
   metadata[0]=smallest;metadata[1]=common_base+precision;metadata[2]=precision;metadata[3]=maximum_degree;
-  if(smallest==1000000000||metadata[1]<smallest+512)return 4;
+  if(smallest==1000000000||metadata[1]<smallest+64*output_words)return 4;
   return 0;
  }catch(...){return 5;}
 }

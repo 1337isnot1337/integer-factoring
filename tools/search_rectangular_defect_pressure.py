@@ -33,7 +33,7 @@ class DefectPressure:
         self.coefficients=[alpha,beta];self.quartic_terms=quartic_terms or [(1,0)]
         for side,data in enumerate(self.data):
             matrix,shifts,metadata=active_matrix(data,alpha,beta,self.quartic_terms)
-            n=len(matrix);self.oracles.append(MatrixOracle(matrix,3*n//4,shifts));self.metadata.append(metadata)
+            n=len(matrix);self.oracles.append(MatrixOracle(matrix,3*n//4,shifts,precision=metadata['profile_precision']));self.metadata.append(metadata)
             signs=[1 if side==0 or j<self.M else -1 for j in data['active_indices']]
             self.charges.append(np.array([sum(signs[j] for j in range(len(signs)) if mask>>j&1) for mask in range(n)]))
             inactive=[j for j in range(2*self.M) if j not in data['active_indices']]

@@ -158,10 +158,12 @@ def original_matrix(z, place):
     return K
 
 
-def infinity_transform(K, z):
+def infinity_transform(K, z, full_core=False):
     M = 4
     _, U, Ui, V, Vi, sigma = infinity_matrices(M)
     _, active, orders, trace = concentrate_infinity(M)
+    if full_core:
+        trace = []  # The full-core M4 construction keeps all eight modes.
     U = np.array([[eval_rat(r, z) for r in row] for row in U], dtype=np.uint8)
     V = np.array([[eval_rat(r, z) for r in row] for row in V], dtype=np.uint8)
     for step in trace:

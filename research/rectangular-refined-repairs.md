@@ -118,6 +118,10 @@ coefficients in its allowed positions, gives a valid dense family.
 Row zero is fixed here to preserve the convenient all-low Gaussian
 background. It is an additional search convention, not a requirement
 of the lexicographic endpoint proof.
+Allowing it to change adds eleven directions, or `33` nonzero `F4`
+variants. The independent constructor requires an explicit
+`keep_background=False` for these variants. They are recorded
+separately from the original fixed-background family.
 
 ## 3. Constant parameter symmetries
 
@@ -209,3 +213,147 @@ spectator modes or additional physical alphabet states. Pressure
 improvements from these directions still require exact profile
 certificates and the uniform complexity argument required by the
 factoring reduction.
+
+Two optional compiled controls compare the new active matrix
+programs with the original tensor coefficients:
+
+```sh
+python tools/check_rectangular_refined_coordinates.py \
+  --output evidence/rectangular-refined-coordinates-control.json
+python tools/check_rectangular_quartic_perturbations.py \
+  --output evidence/rectangular-quartic-perturbations.json
+```
+
+The [refined-coordinate control](../tools/check_rectangular_refined_coordinates.py)
+checks four shears, including both orientations of an equal-height
+pair, at both places and under nontrivial core weights. Its
+[evidence](../evidence/rectangular-refined-coordinates-control.json)
+records sixteen complete 192-order comparisons, all with zero
+discrepancy.
+
+The [quartic control](../tools/check_rectangular_quartic_perturbations.py)
+checks twelve Laurent numerators by independent exterior expansion
+and `95,040` two-copy paired-type polynomial checks. Its
+[evidence](../evidence/rectangular-quartic-perturbations.json) also
+records six complete 192-order comparisons for positive and negative
+monomials and a nonbinary polynomial, with the global Laurent
+clearing power restored explicitly. All discrepancies are zero.
+
+## 5. Input repairs and a common flag on both sides
+
+The [ten-mode full-core reduction](rectangular-full-core-factorization.md)
+also permits corrections on the retained input core `(x,u)`.
+Index its states by `i=x+4u`, using the same height functions as
+in (1). Let `W` have diagonal one and satisfy (3). Define
+
+```math
+J_V=H^{-1}VH,\qquad J_W=H^{-1}WH,
+\qquad K^{V,W}=J_V K J_W,
+\tag{7}
+```
+
+where this matrix notation uses the cut with output `(v,y)` and
+input `(x,u)`. The input order used by a particular Fock matrix
+may be `(u,x)`; this only introduces a constant permutation.
+
+The entries of `J_W` are polynomials:
+
+```math
+(J_W)_{ab}=W_{ab}c^{h(b)-h(a)}.
+```
+
+Consequently an input repair introduces no additional pole. The
+ramified endpoint in (7) is
+
+```math
+VUW.
+\tag{8}
+```
+
+If `V` and `W` satisfy **one common** secondary additive flag,
+then (8) is unitriangular for that flag. The two successive
+paired-type equalities from section 1 again remove every
+off-diagonal term. Polynomiality and the crossing endpoint hold
+at every word length. The generic-rank proof and the coefficient
+precision obligations are unchanged.
+
+The common-flag requirement is material. For example,
+`V=I+E_(3,8)` and `W=I+E_(8,3)` are individually admissible
+equal-height shears, but they require opposite secondary orders.
+Their product through `U` has zero at diagonal position `3`.
+They cannot be combined by the stated theorem.
+
+For an input single shear, fixing the background column zero
+removes three equal-height directions and no strict-height
+direction. There are therefore `44+41=85` directions, or `255`
+nonzero single-shear variants over `F4`. Fixing both output row
+zero and input column zero leaves the all-low extreme-core block
+unchanged, including every choice of the bulk occupation bits.
+
+### Matrix-unit order for the two cuts
+
+For a single input entry `W_ab`, write
+`a=(x_a,u_a)` and `b=(x_b,u_b)`. In the infinity cut it acts as
+the right matrix unit with row `a`, column `b`. In the zero cut,
+where `x` is a row leg and `u` is a column leg, its contribution is
+
+```math
+E_x(x_b,x_a)\ K\ E_u(u_a,u_b).
+\tag{9}
+```
+
+Thus the `x` matrix unit is transposed. The `u` matrix unit acts
+before the input code embedding, while the `x` unit in (9) acts
+outside the complete original tensor. This order must be retained
+when transporting the operators through the Gaussian.
+
+If the physical gauge is `g_x,g_u`, the coefficient of (9) also
+contains
+
+```math
+z^{g_x(x_b)+g_u(u_b)-g_x(x_a)-g_u(u_a)}.
+\tag{10}
+```
+
+At infinity the factor `c^(h(b)-h(a))` contributes an additional
+`z^(-(h(b)-h(a)))` and a unit `(1+z)^(h(b)-h(a))`. At zero it
+contributes only that unit. The full-core CAR list already contains
+all operators in (9). Neither `V`, `W`, nor the scalar quartic
+perturbations enlarge the ten-mode supports.
+
+The parameter symmetry (5) extends by also replacing
+`W` with `D W D^-1`. Both endpoint sides then have the same
+constant physical covariance (6). Frobenius squares all entries
+of both correction matrices.
+
+### Exact independent constructor
+
+The refined repair module provides `validate_precorrection(...)`
+and `precorrect_seed(...)`. The latter applies the polynomial
+input map directly to the original tensor coefficients and checks
+that any existing output correction satisfies the same supplied
+flag. A separate [input-repair replay](../tools/check_rectangular_input_repairs.py)
+runs all `255` single input variants and three dense two-sided
+common-flag examples:
+
+```sh
+python tools/check_rectangular_input_repairs.py \
+  --output evidence/rectangular-input-repairs.json
+```
+
+The [recorded input evidence](../evidence/rectangular-input-repairs.json)
+contains `130,860` two-copy paired-type polynomial checks, all
+local ramified endpoint checks, and the explicit rejection of
+the incompatible opposite shears above. These finite controls
+check the constructor. Equations (7)--(8) and the additive-type
+argument provide the proof for every word length.
+
+The same evidence separately checks the nine additional nonzero
+input shears that change column zero. The explicit
+`keep_background=False` option admits them without weakening the
+common-flag condition. Together with those variants, the input
+replay has `134,640` paired-type checks. The corresponding output
+replay separately includes all `33` extra row-zero variants and
+also totals `134,640` paired-type checks. These larger families
+preserve the crossing theorem, but their all-low core blocks need
+not remain unchanged.

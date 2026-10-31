@@ -36,6 +36,9 @@ h_0(a)&=(-2M+1+2a,1+2a,0,0).
 Sections 6 and 7 extend these gauges by four real bulk parameters and
 arbitrary weights on the retained extreme states of `y,u,v`. They do
 not assert a reduction for arbitrary physical letter weights.
+The [full-core extension](rectangular-full-core-factorization.md) also
+permits arbitrary extreme-state weights on `x`, using ten active modes
+at each place.
 The weights of a mixed `top+alpha*both` core letter are those of its
 leading top state. The mismatch of the other summand is included as a
 Laurent coefficient of the corresponding core operator.
@@ -596,6 +599,16 @@ contains both sides at both places for `M=2,4,8,16,32,64,128`.
 The proof of (14)--(18) supplies the identities over the valuation
 ring; the finite residue calculations select and certify unit minors
 for the explicit implementation.
+
+An independent [coordinate audit](../tools/check_rectangular_defect_coordinates.py)
+starts from the original full `M=4` tensor, constructs the regular
+Gaussian and core basis changes, and compares every retained entry
+at four `F16` points. It also compares complete weighted profiles
+with direct physical matrices under arbitrary quarter-integer core
+and bulk-charge weights. The
+[recorded coordinate controls](../evidence/rectangular-defect-coordinates-control.json)
+contain 184,320 entry comparisons and ten complete 192-order profile
+comparisons, all exact or with zero numerical discrepancy as applicable.
 
 ## 8. Scalar quartic perturbations and other core corrections
 

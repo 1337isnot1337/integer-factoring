@@ -110,9 +110,26 @@ the derivative, minor-separation formulation, and precision conditions.
 Regular core coordinate bases now permit fourteen independent core weights
 and four bulk charges without increasing the active dimensions. The
 [secondary-height family](research/rectangular-refined-repairs.md) adds
-231 elementary F4 repairs and arbitrary endpoint-compatible Laurent
-quartic numerators. These families are being searched with exact field
-arithmetic and explicit finite-precision checks.
+input and output repairs with a shared additive flag, together with
+arbitrary endpoint-compatible Laurent quartic numerators. A
+[full-core extension](research/rectangular-full-core-factorization.md)
+uses ten active modes at both places and supports all four extreme
+physical cores. Its 25-parameter pressure calculation has dimensions
+independent of the interval length. Adaptive exact series windows permit
+larger intervals while rejecting unresolved pivots.
+
+The [all-field Pascal construction](research/all-field-pascal-crossings.md)
+retains the required global signs in odd characteristic. The
+[graded-power theorem](research/graded-even-power-transfer.md) also
+permits even perturbations that vanish at the crossing endpoint. The
+scalar factoring dependency is pinned in a separate
+[source audit](research/fixed-prime-transfer-source-audit.md).
+
+For the original evaluator's precision question,
+[canonical packet bounds](research/canonical-packet-upper-frontier.md)
+and [finite decoder certificates](research/canonical-packet-decoder-frontier.md)
+give exact four-wire binary thresholds: 12 local bits for parity and
+13 for the full count. They do not supply an efficient all-size decoder.
 
 The [31 October research checkpoint](research/constructive-frontier-checkpoint.md)
 collects the latest exact bounds, new construction families, reproducible

@@ -17,7 +17,10 @@ from check_rectangular_defect_support import (
 )
 
 
-def data_for(place, M):
+def data_for(place, M, full_core=False):
+    if full_core:
+        from check_rectangular_full_core_support import full_core_data
+        return full_core_data(place, M)
     procedure = concentrate_infinity if place == 'infinity' else concentrate_zero
     images, active, orders, trace = procedure(M)
     return {'place': place, 'M': M, 'active_indices': active,
@@ -34,9 +37,9 @@ def core_operators(data, side):
     M, infinity = data['M'], data['place'] == 'infinity'
     if side == 'left':
         names = ([f'out_{letter}{i}' for letter in ('v', 'y') for i in (0, M-1)]
-                 if infinity else [f'left_y{i}' for i in (0, M-1)])
+                 if infinity else [f'left_{letter}{i}' for letter in (('y', 'x') if data.get('full_core') else ('y',)) for i in (0, M-1)])
     elif side == 'right':
-        names = ([f'in_u{i}' for i in (0, M-1)] if infinity
+        names = ([f'in_{letter}{i}' for letter in (('u', 'x') if data.get('full_core') else ('u',)) for i in (0, M-1)] if infinity
                  else [f'right_{letter}{i}' for letter in ('v', 'u') for i in (0, M-1)])
     else:
         raise ValueError('Side must be left or right.')
@@ -137,6 +140,7 @@ def certificate(data, side):
     digest = sha256(json.dumps({'L': [hex(row) for row in L], 'B': [hex(row) for row in B]},
                                sort_keys=True, separators=(',', ':')).encode()).hexdigest()
     return {'place': data['place'], 'M': data['M'], 'side': side,
+            'full_core': bool(data.get('full_core')),
             'active_modes': k, 'core_modes': r, 'core_names': names,
             'matrix_order': n, 'multiplicity': d,
             'minimum_coefficient_order': minimum,
@@ -161,6 +165,9 @@ def core_basis_data(data, side):
         name: {'creation': [entry.pair() for entry in pair[0]],
                'annihilation': [entry.pair() for entry in pair[1]]}
         for name, pair in images.items()}
+    result['core_letters'] = [name.rsplit('_', 1)[-1][0] for name in result['core_names'][::2]]
+    result['core_pair_modes'] = {letter: [2*i, 2*i+1] for i, letter in enumerate(result['core_letters'])}
+    result['physical_state_to_occupation_mask'] = [1, 0, 2, 3]
     mode_charges = ([1]*len(data['active_indices']) if data['place'] == 'infinity'
                     else [1 if index < data['M'] else -1 for index in data['active_indices']])
     def charge(mask):
@@ -187,11 +194,12 @@ def core_basis_data(data, side):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--data', type=Path, help='One support artifact; default checks the power-of-two sequence.')
+    parser.add_argument('--full-core', action='store_true', help='Check the extended ten-mode support.')
     parser.add_argument('--output', type=Path)
     parser.add_argument('--artifact-directory', type=Path)
     args = parser.parse_args()
     data = ([json.loads(args.data.read_text())] if args.data else
-            [data_for(place, M) for M in (2, 4, 8, 16, 32, 64, 128) for place in ('infinity', 'zero')])
+            [data_for(place, M, args.full_core) for M in (2, 4, 8, 16, 32, 64, 128) for place in ('infinity', 'zero')])
     records = []
     for item in data:
         for side in ('left', 'right'):

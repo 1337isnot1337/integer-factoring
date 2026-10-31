@@ -115,6 +115,24 @@ verify-native-rectangular-search:
 	python3 tools/check_native_matrix_smith_f4.py
 	python3 tools/check_matrix_f4_entry_shifts.py
 	python3 tools/check_rectangular_f4_optimizer.py
+	python3 tools/check_native_matrix_precision.py
+
+.PHONY: verify-full-core verify-canonical-packets verify-all-field-crossings
+verify-full-core:
+	python3 tools/check_rectangular_full_core_support.py
+	python3 tools/check_rectangular_defect_core_basis.py --full-core
+	python3 tools/check_rectangular_full_core_coordinates.py
+	python3 tools/check_rectangular_core_pressure.py --full-core
+	python3 tools/check_rectangular_input_repairs.py
+
+verify-canonical-packets:
+	python3 tools/check_canonical_alternating_packet.py
+	python3 tools/check_canonical_packet_exhaustive.py
+	python3 tools/check_canonical_packet_decoder.py
+
+verify-all-field-crossings:
+	python3 tools/check_all_field_pascal_crossings.py
+	python3 tools/check_graded_even_power.py
 
 verify-controlled-smith:
 	python3 tools/check_controlled_permutation_smith.py

@@ -2833,6 +2833,305 @@
       ]
     }
   ],
+  "background_changing_output_cases": [
+    {
+      "row": 0,
+      "column": 1,
+      "coefficient": 1,
+      "denominator_degree": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "45953ce7b24f706aa1a97ab52b92874deb68be36ae13cefe5686d5cf9056e904"
+    },
+    {
+      "row": 0,
+      "column": 1,
+      "coefficient": 2,
+      "denominator_degree": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "147e7774cf531caac080017c5cadb1e84e66a744db9da29e5e165139a3327178"
+    },
+    {
+      "row": 0,
+      "column": 1,
+      "coefficient": 3,
+      "denominator_degree": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "e87e3f5f9b79c0285db4dfaba27be59db319595ecfa9eb141ccd93fca8d375c6"
+    },
+    {
+      "row": 0,
+      "column": 2,
+      "coefficient": 1,
+      "denominator_degree": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "bf04293b5711706b0d3b916dd0a5a9014b0ee7f7d2c4f5ea375062076b45340d"
+    },
+    {
+      "row": 0,
+      "column": 2,
+      "coefficient": 2,
+      "denominator_degree": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "e63adde0501a9b57c785a72a65f03359c0c9aef212a6a54a032a91673874358a"
+    },
+    {
+      "row": 0,
+      "column": 2,
+      "coefficient": 3,
+      "denominator_degree": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "0cd6636ebcb58dead40d4366c2fe6e722ca4c056607b5e21ab5fc9b6ebec256a"
+    },
+    {
+      "row": 0,
+      "column": 3,
+      "coefficient": 1,
+      "denominator_degree": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "761f22b4011f64fc6ff172896c68ede65815df366275ee8efc943dae2ef3f60f"
+    },
+    {
+      "row": 0,
+      "column": 3,
+      "coefficient": 2,
+      "denominator_degree": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "c66b542092ddc2870b02bbc7671910e0ac2230b1e891d5a18686a7032f2020de"
+    },
+    {
+      "row": 0,
+      "column": 3,
+      "coefficient": 3,
+      "denominator_degree": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "000057114327fb00c1f69e03ef8e316c0d960e1415444b0cdf861b5a06b0fefa"
+    },
+    {
+      "row": 0,
+      "column": 4,
+      "coefficient": 1,
+      "denominator_degree": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "711bc563ed9e4521737d480c3c180fb6797dddf518346e591ca636bd3c05924f"
+    },
+    {
+      "row": 0,
+      "column": 4,
+      "coefficient": 2,
+      "denominator_degree": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "6e65f556f6df4997aaa6d3c269e6a28257d860bb0fe20ffb10bb071e3a79aac1"
+    },
+    {
+      "row": 0,
+      "column": 4,
+      "coefficient": 3,
+      "denominator_degree": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "fd8ed8f25068d4343a642614eadf730e983b441cbda22bb3aaac7ed90e0ca4cb"
+    },
+    {
+      "row": 0,
+      "column": 5,
+      "coefficient": 1,
+      "denominator_degree": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "29f4b8485a448b0368388db064b4129ebb1ceec9bddf8840419704e7091ae589"
+    },
+    {
+      "row": 0,
+      "column": 5,
+      "coefficient": 2,
+      "denominator_degree": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "dfd48c4db269c6ded112e916c6afd568b6a565c93d8241f3b51c46d3d43b416d"
+    },
+    {
+      "row": 0,
+      "column": 5,
+      "coefficient": 3,
+      "denominator_degree": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "e3fd4e6c0e28958023fcf55b94169e0e63429d299ede3d989ba61f7b4a8c29cf"
+    },
+    {
+      "row": 0,
+      "column": 6,
+      "coefficient": 1,
+      "denominator_degree": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "059cbe755778d4a86a65593dadc62501dea882624f3f8b349e54cf3b2a23fc86"
+    },
+    {
+      "row": 0,
+      "column": 6,
+      "coefficient": 2,
+      "denominator_degree": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "5111aba21d3d588f847c13e7b9b2c2abfb24861d156ae2b349e4f77dbddc29b7"
+    },
+    {
+      "row": 0,
+      "column": 6,
+      "coefficient": 3,
+      "denominator_degree": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "56c3d0dbf757f04b440ddcb2dd362d991c7bdfb5db37ca0c2675805f93c05872"
+    },
+    {
+      "row": 0,
+      "column": 7,
+      "coefficient": 1,
+      "denominator_degree": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "87dc2e7968eac9af3f44cf142bc3980432f73c2620dbb8c70b9bd734b47d6763"
+    },
+    {
+      "row": 0,
+      "column": 7,
+      "coefficient": 2,
+      "denominator_degree": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "b069d62fc47dfbe63787230ee8d6b01ccde5f6caa143c5184853e1becbadeb79"
+    },
+    {
+      "row": 0,
+      "column": 7,
+      "coefficient": 3,
+      "denominator_degree": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "3266265945bd7b16dd3c04164e1a72a151f1daccb25499358085ef41f625d799"
+    },
+    {
+      "row": 0,
+      "column": 8,
+      "coefficient": 1,
+      "denominator_degree": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "4f3821a06e18eabc115a9f0fd24cea8198c21ca49527d661a5c5ed18384ecfbb"
+    },
+    {
+      "row": 0,
+      "column": 8,
+      "coefficient": 2,
+      "denominator_degree": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "6be842067356d2d27d07238fcc9511e8050ded991cb5e0dcabd28178569fac01"
+    },
+    {
+      "row": 0,
+      "column": 8,
+      "coefficient": 3,
+      "denominator_degree": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "d30f2db1c5dd313bc0b276c7c6e68fe97e0d2ba2e5cd4ca36d4a38bc96b9171d"
+    },
+    {
+      "row": 0,
+      "column": 9,
+      "coefficient": 1,
+      "denominator_degree": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "52c87a46d032a83ce76885161e0d44fc5d92640eee4cba085881c4800b928ecc"
+    },
+    {
+      "row": 0,
+      "column": 9,
+      "coefficient": 2,
+      "denominator_degree": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "129d6f389fb7494b9100a181c72a267f22c4f31e045ba723af4e2ed8c01c9620"
+    },
+    {
+      "row": 0,
+      "column": 9,
+      "coefficient": 3,
+      "denominator_degree": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "aed821db9d8d0574e9fdc6312ea894268fb59d58cd49720d0fd99af7544aedc8"
+    },
+    {
+      "row": 0,
+      "column": 10,
+      "coefficient": 1,
+      "denominator_degree": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "9f527f93bb423a7cab1a9a484c75c4edb9a63ed2a25ab5f1f28c16b5df394ec1"
+    },
+    {
+      "row": 0,
+      "column": 10,
+      "coefficient": 2,
+      "denominator_degree": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "132d5d2ddb147f90959b68bf44dd1e5cb175befdf921e7134a78fcdf5230679e"
+    },
+    {
+      "row": 0,
+      "column": 10,
+      "coefficient": 3,
+      "denominator_degree": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "ce9f24e361edee930a1caaf848c778e8f0f2eb245129086d2e6bdaa784dd64a2"
+    },
+    {
+      "row": 0,
+      "column": 11,
+      "coefficient": 1,
+      "denominator_degree": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "0c985bbbbb0f81cadb0d122874d869af131bc4e03a53eab8aeb82f8350cd6d31"
+    },
+    {
+      "row": 0,
+      "column": 11,
+      "coefficient": 2,
+      "denominator_degree": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "ff498008950125b86f0758bae6ad9a1652cf21f43cbe9690a0e708bc8bbe6c0a"
+    },
+    {
+      "row": 0,
+      "column": 11,
+      "coefficient": 3,
+      "denominator_degree": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "ffdb6d8a65a5972e96ae4a1f2e37d6cf2d12dd9008746bb79b7978e3bd026127"
+    }
+  ],
   "parameter_gauges": {
     "quartic_terms": [
       [

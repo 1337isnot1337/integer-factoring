@@ -72,8 +72,10 @@ def conjugate_postcorrection(postcorrection, multiplier):
             for i, row in enumerate(postcorrection)]
 
 
-def postcorrect_seed(seed, postcorrection, secondary_x, secondary_y, check_types=True):
-    keys = validate_postcorrection(postcorrection, secondary_x, secondary_y)
+def postcorrect_seed(seed, postcorrection, secondary_x, secondary_y, check_types=True, *, keep_background=True):
+    keys = validate_postcorrection(postcorrection, secondary_x, secondary_y, keep_background)
+    if 'input_correction' in seed:
+        validate_postcorrection(seed['input_correction'], secondary_x, secondary_y, keep_background=False)
     A, B, bulk = seed['q_x'], seed['q_u'], seed['bulk_size']
     def position(x, y, u, v):
         return x+A*(y+B*(u+B*v))
@@ -88,12 +90,27 @@ def postcorrect_seed(seed, postcorrection, secondary_x, secondary_y, check_types
             source = seed['values'][position(x, ys*bulk+y % bulk, u, vs*bulk+v % bulk)]
             answer = add(answer, scale(times_binary(source, polynomial), coefficient))
         values[position(x, y, u, v)] = answer
+    endpoint = matrix_multiply(postcorrection, seed['ramified_endpoint_matrix'])
+    result = _verified_repair(seed, values, endpoint, keys, check_types)
+    total = (matrix_multiply(postcorrection, seed['postcorrection'])
+             if 'postcorrection' in seed else postcorrection)
+    result.update({'repair_kind': 'mixed_refined_height_partial',
+                   'postcorrection': total, 'secondary_x': secondary_x, 'secondary_y': secondary_y,
+                   'repair_matrix': matrix_multiply(postcorrection, seed['repair_matrix'])})
+    if not keep_background or 'output_background_fixed' in seed:
+        result['output_background_fixed'] = not any(total[0][j] for j in range(1, 12))
+    return result
+
+
+def _verified_repair(seed, values, endpoint, keys, check_types):
+    A, B, bulk = seed['q_x'], seed['q_u'], seed['bulk_size']
+    def position(x, y, u, v):
+        return x+A*(y+B*(u+B*v))
     degree = seed['denominator_degree']
     cancellation = min(degree, min(c_order(value) for value in values if value != ZERO))
     if cancellation:
         values = [divide_binary(value, binary_power(3, cancellation)) for value in values]
         degree -= cancellation
-    endpoint = matrix_multiply(postcorrection, seed['ramified_endpoint_matrix'])
     for i, row in enumerate(endpoint):
         assert row[i] == 1
         assert all(not coefficient or i == j or keys[i] < keys[j] for j, coefficient in enumerate(row))
@@ -121,10 +138,7 @@ def postcorrect_seed(seed, postcorrection, secondary_x, secondary_y, check_types
                 assert evaluate_one(polynomial) == int(x == v and y == u)
                 checks += 1
     result = dict(seed)
-    result.update({'repair_kind': 'mixed_refined_height_partial',
-                   'postcorrection': postcorrection, 'secondary_x': secondary_x, 'secondary_y': secondary_y,
-                   'repair_matrix': matrix_multiply(postcorrection, seed['repair_matrix']),
-                   'ramified_endpoint_matrix': endpoint, 'values': values,
+    result.update({'ramified_endpoint_matrix': endpoint, 'values': values,
                    'denominator_degree': degree, 'degree': max(max(value).bit_length()-1 for value in values),
                    'cancelled_c_order': 4-degree,
                    'ramified_endpoint_checks': len(values), 'two_copy_type_checks': checks,
@@ -132,6 +146,44 @@ def postcorrect_seed(seed, postcorrection, secondary_x, secondary_y, check_types
                    'nonzero_entries': sum(value != ZERO for value in values),
                    'c_order_histogram': dict(sorted(Counter(c_order(value) for value in values if value != ZERO).items())),
                    'coefficient_sha256': sha256(json.dumps(values, separators=(',', ':')).encode()).hexdigest()})
+    return result
+
+
+def validate_precorrection(matrix, secondary_x, secondary_y, keep_background=True):
+    keys = validate_postcorrection(matrix, secondary_x, secondary_y, keep_background=False)
+    if keep_background and any(matrix[row][0] for row in range(1, 12)):
+        raise ValueError('This input family fixes the Gaussian background column.')
+    return keys
+
+
+def precorrect_seed(seed, precorrection, secondary_x, secondary_y, check_types=True, *, keep_background=True):
+    """Apply the dressed input map H^-1 W H, using one flag for V and W."""
+    keys = validate_precorrection(precorrection, secondary_x, secondary_y, keep_background)
+    if 'postcorrection' in seed:
+        validate_postcorrection(seed['postcorrection'], secondary_x, secondary_y, keep_background=False)
+    if 'input_correction' in seed:
+        validate_precorrection(seed['input_correction'], secondary_x, secondary_y, keep_background=False)
+    A, B, bulk = seed['q_x'], seed['q_u'], seed['bulk_size']
+    def position(x, y, u, v):
+        return x+A*(y+B*(u+B*v))
+    gate = [[(source % 4, source // 4, precorrection[source][target],
+              binary_power(3, height(target)-height(source)))
+             for source in range(12) if precorrection[source][target]] for target in range(12)]
+    values = [ZERO]*len(seed['values'])
+    for x, y, u, v in product(range(A), range(B), range(B), range(A)):
+        answer = ZERO
+        for xs, us, coefficient, polynomial in gate[x//bulk+4*(u//bulk)]:
+            source = seed['values'][position(xs*bulk+x % bulk, y, us*bulk+u % bulk, v)]
+            answer = add(answer, scale(times_binary(source, polynomial), coefficient))
+        values[position(x, y, u, v)] = answer
+    endpoint = matrix_multiply(seed['ramified_endpoint_matrix'], precorrection)
+    result = _verified_repair(seed, values, endpoint, keys, check_types)
+    total = (matrix_multiply(seed['input_correction'], precorrection)
+             if 'input_correction' in seed else precorrection)
+    result.update({'repair_kind': 'mixed_refined_two_sided_partial',
+                   'input_correction': total, 'secondary_x': secondary_x, 'secondary_y': secondary_y})
+    if not keep_background or 'input_background_fixed' in seed:
+        result['input_background_fixed'] = not any(total[i][0] for i in range(1, 12))
     return result
 
 
@@ -186,6 +238,17 @@ def main():
                                   'two_copy_type_checks': seed['two_copy_type_checks'],
                                   'coefficient_sha256': seed['coefficient_sha256']})
     rng = random.Random(77131)
+    background = []
+    for column in range(1, 12):
+        for coefficient in (1, 2, 3):
+            matrix, wx, wy = single_shear(0, column, coefficient)
+            seed = postcorrect_seed(base, matrix, wx, wy, keep_background=False)
+            assert not seed['output_background_fixed']
+            background.append({'row': 0, 'column': column, 'coefficient': coefficient,
+                               'denominator_degree': seed['denominator_degree'],
+                               'ramified_endpoint_checks': seed['ramified_endpoint_checks'],
+                               'two_copy_type_checks': seed['two_copy_type_checks'],
+                               'coefficient_sha256': seed['coefficient_sha256']})
     dense = []
     for case in range(3):
         wx, wy = [rng.randrange(-50, 51) for _ in range(4)], [rng.randrange(-50, 51) for _ in range(3)]
@@ -197,6 +260,7 @@ def main():
     result = {'status': 'exact secondary-height polynomial repairs; no pressure claim',
               'single_shear_directions_with_row_zero_fixed': counts,
               'single_shear_cases': summaries, 'dense_flag_cases': dense,
+              'background_changing_output_cases': background,
               'parameter_gauges': parameter_controls()}
     rendered = json.dumps(result, indent=2)+'\n'
     if args.output:

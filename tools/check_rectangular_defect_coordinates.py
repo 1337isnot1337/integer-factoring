@@ -68,7 +68,7 @@ def evaluate_polynomial_matrix(matrix, shifts, metadata, z):
 def point_control(data, compiled, z):
     place = data['place']
     K = original_matrix(z, place)
-    K = infinity_transform(K, z) if place == 'infinity' else zero_transform(K, z)
+    K = infinity_transform(K, z, data.get('full_core', False)) if place == 'infinity' else zero_transform(K, z)
     masks = [sum(((mask >> j)&1) << index for j, index in enumerate(data['active_indices']))
              for mask in range(1 << len(data['active_indices']))]
     active = K[np.ix_(masks, masks)]
@@ -99,17 +99,18 @@ def physical_masks(M, alphabet):
 
 
 def coordinate_weights(metadata, gauges):
-    lam, mu, v, y, u = gauges
+    lam, mu, v, y, u = gauges[:5]
+    x = gauges[5] if len(gauges) > 5 else [0]*4
     inverse_core = (1, 0, 2, 3)
     rw, cw = [], []
     if metadata['place'] == 'infinity':
         for state, charge in zip(metadata['row_core_states'], metadata['row_charges']):
             rw.append(lam*charge+v[inverse_core[state&3]]+y[inverse_core[(state >> 2)&3]])
         for state, charge in zip(metadata['column_core_states'], metadata['column_charges']):
-            cw.append(mu*charge+u[inverse_core[state&3]])
+            cw.append(mu*charge+u[inverse_core[state&3]]+x[inverse_core[(state >> 2)&3]])
     else:
         for state, charge in zip(metadata['row_core_states'], metadata['row_charges']):
-            rw.append(lam*charge+y[inverse_core[state&3]])
+            rw.append(lam*charge+y[inverse_core[state&3]]+x[inverse_core[(state >> 2)&3]])
         for state, charge in zip(metadata['column_core_states'], metadata['column_charges']):
             cw.append(mu*charge+v[inverse_core[state&3]]+u[inverse_core[(state >> 2)&3]])
     return rw, cw
@@ -117,7 +118,8 @@ def coordinate_weights(metadata, gauges):
 
 def original_cut(seed, place, gauges):
     M = seed['ambient'] if 'ambient' in seed else 4
-    lam, mu, vcore, ycore, ucore = gauges
+    lam, mu, vcore, ycore, ucore = gauges[:5]
+    xcore = gauges[5] if len(gauges) > 5 else [0]*4
     A, B, bulk = seed['q_x'], seed['q_u'], 1 << (M-2)
     alphabets = (A, B, B, A)
     masks = [physical_masks(M, alphabet) for alphabet in alphabets]
@@ -127,7 +129,7 @@ def original_cut(seed, place, gauges):
     else:
         mode_weights = ([-2*M+1+2*a+lam for a in range(M)], [1+2*a-lam for a in range(M)],
                         [-mu]*M, [mu]*M)
-    core_weights = ([0]*4, ycore, ucore, vcore)
+    core_weights = (xcore, ycore, ucore, vcore)
     weights = [[sum(mode_weights[leg][a] for a in range(M) if mask >> a & 1)+core_weights[leg][letter//bulk]
                 for letter, mask in enumerate(masks[leg])] for leg in range(4)]
     n = A*B
@@ -157,12 +159,18 @@ def weighted_controls(data, compiled, count, seed=None):
     rng = random.Random(18721 if data['place'] == 'infinity' else 9713)
     records = []
     for case in range(count):
-        values = [rng.randrange(-8, 9)/4 for _ in range(12)] if case else [0]*12
+        full = data.get('full_core', False)
+        number = 16 if full else 12
+        values = [rng.randrange(-8, 9)/4 for _ in range(number)] if case else [0]*number
         gauges = (values[0], values[1], values[2:6], values[6:9], values[9:12])
+        if full:
+            gauges += (values[12:16],)
         rw, cw = coordinate_weights(metadata, gauges)
         expected = reduced.profile(rw, cw)['orders']
-        if data['place'] == 'infinity':
-            spectator = -3+gauges[0]+gauges[1]
+        inactive = [i for i in range(2*data['M']) if i not in data['active_indices']]
+        for index, order in zip(inactive, data['spectator_orders']):
+            sign = 1 if data['place'] == 'infinity' or index < data['M'] else -1
+            spectator = order+sign*(gauges[0]+gauges[1])
             expected = sorted(expected+[value+spectator for value in expected])
         _, rw, cw = original_cut(seed, data['place'], gauges)
         actual = dense.profile(rw, cw, infinity=data['place'] == 'infinity')['orders']
@@ -172,6 +180,8 @@ def weighted_controls(data, compiled, count, seed=None):
         assert len(actual) == len(expected) and error < 1e-9, (data['place'], case, error)
         records.append({'case': case, 'orders_checked': len(actual), 'maximum_error': error,
                         'lambda': gauges[0], 'mu': gauges[1], 'v': gauges[2], 'y': gauges[3], 'u': gauges[4]})
+        if full:
+            records[-1]['x'] = gauges[5]
     return {'place': data['place'], 'M': 4, 'cases': records}
 
 

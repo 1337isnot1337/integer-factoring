@@ -117,3 +117,44 @@ Recorded evidence:
 [generic profiles](../evidence/native-matrix-smith-f4.json),
 [entrywise Laurent shifts](../evidence/matrix-f4-entry-shifts.json), and
 [optimizer audit](../evidence/rectangular-f4-optimizer.json).
+
+## 5. Fixed-size core searches and adaptive precision
+
+The [regular core coordinates](rectangular-full-core-factorization.md)
+support 19- and 25-parameter searches without growing the active matrix
+dimension with the interval length. The direct entry point is
+[`search_rectangular_core_pressure.py`](../tools/search_rectangular_core_pressure.py).
+The optional [`search_rectangular_core_bundle.py`](../tools/search_rectangular_core_bundle.py)
+alternates fixed-type proximal cutting-plane steps with Gibbs type updates.
+Every new subgradient is checked against every previously evaluated point
+in both directions. The resulting finite convexity controls check the
+oracle and its use; numerical quadratic-program stopping is not a proof
+of optimality. The scalar
+[`quartic screen`](../tools/screen_rectangular_quartic_pressure.py)
+records its fixed starts, coefficient range, failures, and subsequent local
+refinements. It makes no exclusion claim outside those queries.
+
+The native Smith engine accepts power-of-two series windows from 128 to
+8192 coefficients. The CAR matrix builder uses a separately sized
+polynomial window, retains a common absolute known-coefficient cutoff,
+and records whether every polynomial entry was fully computed. If the
+matrix is not complete, the requested weighted profile must lie below
+that cutoff after the smallest row and column weights are restored.
+The profile engine also rejects a missing promised pivot inside its own
+window. Increasing the numerical search size does not silently weaken
+either precision requirement.
+
+[`check_native_matrix_precision.py`](../tools/check_native_matrix_precision.py)
+compares wide-window profiles against independently enumerated exact
+minors of high-degree matrices. It verifies that a narrow window rejects
+an unresolved rank-two profile and that the enlarged window returns both
+orders. The [recorded evidence](../evidence/native-matrix-precision.json)
+includes independent 4096- and 8192-coefficient replays at both places.
+
+For the pressure parameterization,
+[`check_rectangular_core_pressure.py`](../tools/check_rectangular_core_pressure.py)
+compares the reduced Gibbs root with an independently constructed full
+four-mode tensor, then checks every derivative at generic points. Its
+`--full-core` option includes the additional three `x` weights at each
+place. A point on a valuation tie is not used as a central-difference
+derivative certificate.

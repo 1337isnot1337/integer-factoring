@@ -1,0 +1,142 @@
+{
+  "status": "pass",
+  "creation_precision": 1,
+  "length_two_binary_row_ternary_column_pairs": 1296,
+  "length_two_nonzero_original_pairs": 842,
+  "length_two_odd_original_pairs": 640,
+  "length_two_exact_parity_precision": 3,
+  "length_two_exact_count_precision": 4,
+  "length_four_binary_row_ternary_column_pairs": 2821109907456,
+  "length_four_exact_parity_precision": 12,
+  "length_four_exact_count_precision": 13,
+  "length_four_odd_pairs_covered": 1410554920960,
+  "explicit_count_collision": {
+    "row_tensor_mask": 8224,
+    "column_difference": [
+      1,
+      -1,
+      -1,
+      1,
+      -1,
+      -1,
+      1,
+      -1,
+      -1,
+      1,
+      1,
+      -1,
+      1,
+      -1,
+      -1,
+      1
+    ],
+    "original_difference": -2,
+    "minimum_content": 12
+  },
+  "higher_creation_precision_control": {
+    "row_tensor_mask": 32,
+    "column_creation_precision": 22,
+    "column": [
+      0,
+      2161744,
+      1759216,
+      2879648,
+      1447568,
+      1,
+      3606864,
+      13792,
+      3581056,
+      4179184,
+      633632,
+      3252192,
+      2959904,
+      450048,
+      1666656,
+      3691904
+    ],
+    "original_value": 1,
+    "minimum_content": 22
+  },
+  "runs": [
+    {
+      "found": false,
+      "precision": 12,
+      "mode": "odd",
+      "row_tensors_tested": 65535,
+      "right_half_queries": 429975135,
+      "projection_survivors": 64
+    },
+    {
+      "found": false,
+      "precision": 13,
+      "mode": "nonzero",
+      "row_tensors_tested": 65535,
+      "right_half_queries": 429975135,
+      "projection_survivors": 30
+    },
+    {
+      "found": true,
+      "precision": 12,
+      "mode": "nonzero",
+      "row_tensor_mask": 160,
+      "original_difference": -2,
+      "column_difference": [
+        -1,
+        -1,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        1
+      ],
+      "row_tensors_tested": 192,
+      "right_half_queries": 1257432,
+      "projection_survivors": 13
+    },
+    {
+      "found": true,
+      "precision": 11,
+      "mode": "odd",
+      "row_tensor_mask": 32,
+      "original_difference": -1,
+      "column_difference": [
+        -1,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "row_tensors_tested": 63,
+      "right_half_queries": 406783,
+      "projection_survivors": 1
+    }
+  ],
+  "source_sha256": {
+    "tools/canonical_packet_decoder.cpp": "b66bb3cdb73b651f090a72e70cdb9d9629a9d572c39cc50bc166bf4c505c59ea",
+    "tools/check_canonical_packet_decoder.py": "630aceee7c61173ccee1ece2d61909fff3c1cd08eb0041ebbd6d13f20cf5e4a8",
+    "tools/check_canonical_packet_exhaustive.py": "c3fbbf725a75de41e2f55e010247f1e5075a328020f551ca600d1d62b81ef403",
+    "tools/cauchy_packet_polynomials.py": "92d102c11cc42db9caadd028b5552b068ae9d734c46a4c4f5791662cc5be83cc",
+    "research/canonical-packet-decoder-frontier.md": "433c96be3ce7598adce358abff7f4872981b71a277ec82b233c6d9ddba40a9db"
+  },
+  "scope": "Exact finite parity and full-count separation for canonical binary columns with the binary row tensor fixed and known. The proof allows an exhaustive decoder; no efficient all-size decoder or factoring exponent improvement is established."
+}

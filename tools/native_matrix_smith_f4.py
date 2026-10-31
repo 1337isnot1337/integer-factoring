@@ -22,22 +22,21 @@ import tempfile
 
 from native_weighted_smith_f4 import _pack
 
-_LIBRARY=None
+_LIBRARIES={}
 _U64=ctypes.POINTER(ctypes.c_uint64)
 _I64=ctypes.POINTER(ctypes.c_int64)
 _U32=ctypes.POINTER(ctypes.c_uint32)
 _DOUBLE=ctypes.POINTER(ctypes.c_double)
 
 
-def _library():
-    global _LIBRARY
-    if _LIBRARY is not None:return _LIBRARY
+def _library(precision=512):
+    if precision in _LIBRARIES:return _LIBRARIES[precision]
     source=Path(__file__).with_suffix('.cpp')
     included=source.with_name('native_rectangular_smith_f4.cpp')
     compiler=shlex.split(os.environ.get('CXX','c++'))
     if not compiler or shutil.which(compiler[0]) is None:
         raise RuntimeError('The optional matrix profile engine requires C++17.')
-    flags=['-O3','-std=c++17','-shared','-fPIC']
+    flags=['-O3','-std=c++17','-shared','-fPIC',f'-DF4_SERIES_WORDS={precision//64}']
     try:cpu=Path('/proc/cpuinfo').read_text()
     except OSError:cpu=''
     if platform.machine().lower() in ('x86_64','amd64','i386','i686') and 'pclmulqdq' in cpu:
@@ -57,18 +56,27 @@ def _library():
     lib.matrix_f4_profile.argtypes=[ctypes.c_int,ctypes.c_int,_U64,ctypes.c_int,_I64,_DOUBLE,_DOUBLE,
                                    ctypes.c_int,ctypes.c_double,_DOUBLE,_I64,_U32,_U32]
     lib.matrix_f4_profile.restype=ctypes.c_int
-    _LIBRARY=lib;return lib
+    _LIBRARIES[precision]=lib;return lib
 
 
 class MatrixOracle:
-    def __init__(self,matrix,rank,shifts=None):
+    def __init__(self,matrix,rank,shifts=None,precision=512):
         self.n=len(matrix)
         if not 1<=self.n<=1024 or any(len(row)!=self.n for row in matrix):
             raise ValueError('Supply a square matrix of order 1 through 1024.')
         if not isinstance(rank,int) or not 1<=rank<=self.n:
             raise ValueError('Supply the proved generic rank between 1 and the matrix order.')
-        self.rank=rank
-        self._packed,self._words=_pack([v for row in matrix for v in row],self.n*self.n)
+        if not isinstance(precision,int) or precision<128 or precision>8192 or precision&(precision-1):
+            raise ValueError('Series precision must be a power of two from128 through8192.')
+        self.rank=rank;self.precision=precision
+        flat_values=[v for row in matrix for v in row]
+        if precision==512:self._packed,self._words=_pack(flat_values,self.n*self.n)
+        else:
+            if any(len(v)!=2 or any(not isinstance(x,int) or x<0 for x in v) for v in flat_values):raise ValueError('Expected nonnegative integer F4 bit planes.')
+            bits=max((x.bit_length() for v in flat_values for x in v),default=0)
+            if bits>precision:raise ValueError('Polynomial exceeds the selected series precision.')
+            self._words=max(1,(bits+63)//64);mask=(1<<64)-1
+            self._packed=(ctypes.c_uint64*(2*self.n*self.n*self._words))(*(x>>(64*w)&mask for v in flat_values for x in v for w in range(self._words)))
         if shifts is None:shifts=[[0]*self.n for _ in range(self.n)]
         if len(shifts)!=self.n or any(len(row)!=self.n for row in shifts):
             raise ValueError('One integer Laurent shift is required per entry.')
@@ -88,7 +96,7 @@ class MatrixOracle:
         rr=(ctypes.c_double*self.n)(*rw);cc=(ctypes.c_double*self.n)(*cw)
         orders=(ctypes.c_double*self.rank)();values=(ctypes.c_int64*self.rank)()
         rows=(ctypes.c_uint32*self.rank)();cols=(ctypes.c_uint32*self.rank)()
-        status=_library().matrix_f4_profile(self.n,self.rank,self._packed,self._words,self._shifts,
+        status=_library(self.precision).matrix_f4_profile(self.n,self.rank,self._packed,self._words,self._shifts,
                                             rr,cc,int(bool(infinity)),scale,orders,values,rows,cols)
         if status:raise ArithmeticError(f'Matrix profile did not resolve every promised pivot (status {status}).')
         result={'orders':list(orders),'base_prefix':list(values),'rows':list(rows),'cols':list(cols)}

@@ -1,0 +1,44 @@
+{
+  "scope": "Pinned-source audit and exact replay of the PR31 scalar fixed-prime factoring transfer. No new factoring exponent is claimed.",
+  "audited_revision": "b1ba452fa4a3d19fe6fea3822c53613f3b582104",
+  "primary_reference_revision": "c91cc3f4947caca8977e81a5d14244f73b5ae2b1",
+  "replay_matches_published_json": true,
+  "characteristics": [
+    2,
+    3,
+    5,
+    7
+  ],
+  "counts": {
+    "cyclic_completeness": 222560,
+    "completeness_cases": 262136,
+    "power_completeness": 39576,
+    "factor_calls": 19524,
+    "cyclic_queries": 18406,
+    "complete_factorizations": 4092,
+    "power_queries": 28825,
+    "prefix_queries": 290536,
+    "power_successes": 1118,
+    "cyclic_successes": 6598,
+    "cyclic_count_controls": 2044,
+    "power_count_controls": 2635,
+    "cyclic_mass_controls": 7996,
+    "power_mass_controls": 41683,
+    "constructor_schedule_controls": 248,
+    "comparison_trace_controls": 5460
+  },
+  "source_hashes": {
+    "fixed-prime-factor-transfer.md": "ee0bc309affa7460405cdd924855f318531b266a402f99b98fea75f9a3c562e7",
+    "parity-factor-transfer.md": "06379fef77da05a789000293731aaefd305ee6ad941210bd6ebe4dcfe900ca97",
+    "check_fixed_prime_factor_transfer.py": "e1c49201238caad9f7c2664ecb6d9117f9beee0f72854473bf4e7b0d16f771c6",
+    "check_parity_factor_transfer.py": "ec1b7e496cdd51bf52885366b9b0d41d33a57afa0a843218c990a5f0425e5b5c"
+  },
+  "published_evidence_sha256": "6eaf3c17c4da87f7c05e48669e3b26aa2f96d5e50326cd2e9f7691197812f02e",
+  "replayed_evidence_sha256": "6eaf3c17c4da87f7c05e48669e3b26aa2f96d5e50326cd2e9f7691197812f02e",
+  "reproduction": "At the audited revision: python3 tools/check_fixed_prime_factor_transfer.py --output evidence/fixed-prime-factor-transfer.json",
+  "limitations": [
+    "The checker uses explicit tuple enumeration as its finite reference oracle.",
+    "The uniform transfer depends on the stated multiplication-network and generic-grouping proofs.",
+    "No faster clique evaluator or pressure witness below 1/sqrt(2) is supplied."
+  ]
+}

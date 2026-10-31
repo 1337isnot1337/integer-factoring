@@ -5,6 +5,7 @@
       "place": "infinity",
       "M": 2,
       "side": "left",
+      "full_core": false,
       "active_modes": 4,
       "core_modes": 4,
       "core_names": [
@@ -28,6 +29,26 @@
       "intertwining_identities_checked": 16,
       "coordinate_core_mode_offset": 0,
       "mod_z_basis_sha256": "af38aae00e317520846cd17d93ccd28f5150a700103aff7370278177628f6a52",
+      "core_letters": [
+        "v",
+        "y"
+      ],
+      "core_pair_modes": {
+        "v": [
+          0,
+          1
+        ],
+        "y": [
+          2,
+          3
+        ]
+      },
+      "physical_state_to_occupation_mask": [
+        1,
+        0,
+        2,
+        3
+      ],
       "core_charges": [
         1,
         1,
@@ -39,6 +60,7 @@
       "place": "infinity",
       "M": 2,
       "side": "right",
+      "full_core": false,
       "active_modes": 4,
       "core_modes": 2,
       "core_names": [
@@ -66,6 +88,21 @@
       "intertwining_identities_checked": 8,
       "coordinate_core_mode_offset": 2,
       "mod_z_basis_sha256": "d236ab4de64253ef1362762f9f8ce90cb835c2cf59f31c0ec68c3ae4008fb529",
+      "core_letters": [
+        "u"
+      ],
+      "core_pair_modes": {
+        "u": [
+          0,
+          1
+        ]
+      },
+      "physical_state_to_occupation_mask": [
+        1,
+        0,
+        2,
+        3
+      ],
       "core_charges": [
         1,
         1
@@ -75,6 +112,7 @@
       "place": "zero",
       "M": 2,
       "side": "left",
+      "full_core": false,
       "active_modes": 4,
       "core_modes": 2,
       "core_names": [
@@ -102,6 +140,21 @@
       "intertwining_identities_checked": 8,
       "coordinate_core_mode_offset": 2,
       "mod_z_basis_sha256": "e7f549df5b6f4929b72ba66330a90a199e6a40116fa6d4188ba4fc09c7d3d062",
+      "core_letters": [
+        "y"
+      ],
+      "core_pair_modes": {
+        "y": [
+          0,
+          1
+        ]
+      },
+      "physical_state_to_occupation_mask": [
+        1,
+        0,
+        2,
+        3
+      ],
       "core_charges": [
         -1,
         -1
@@ -111,6 +164,7 @@
       "place": "zero",
       "M": 2,
       "side": "right",
+      "full_core": false,
       "active_modes": 4,
       "core_modes": 4,
       "core_names": [
@@ -134,6 +188,26 @@
       "intertwining_identities_checked": 16,
       "coordinate_core_mode_offset": 0,
       "mod_z_basis_sha256": "169d58064520766291a74633831e52bad0796af358ec63219dda3101043815c9",
+      "core_letters": [
+        "v",
+        "u"
+      ],
+      "core_pair_modes": {
+        "v": [
+          0,
+          1
+        ],
+        "u": [
+          2,
+          3
+        ]
+      },
+      "physical_state_to_occupation_mask": [
+        1,
+        0,
+        2,
+        3
+      ],
       "core_charges": [
         1,
         1,
@@ -145,6 +219,7 @@
       "place": "infinity",
       "M": 4,
       "side": "left",
+      "full_core": false,
       "active_modes": 7,
       "core_modes": 4,
       "core_names": [
@@ -182,6 +257,26 @@
       "intertwining_identities_checked": 16,
       "coordinate_core_mode_offset": 3,
       "mod_z_basis_sha256": "a75ef9ba4325a16459f13a89e65d1a827aa239f0bf42d201a3c3c25f503894a7",
+      "core_letters": [
+        "v",
+        "y"
+      ],
+      "core_pair_modes": {
+        "v": [
+          0,
+          1
+        ],
+        "y": [
+          2,
+          3
+        ]
+      },
+      "physical_state_to_occupation_mask": [
+        1,
+        0,
+        2,
+        3
+      ],
       "core_charges": [
         1,
         1,
@@ -193,6 +288,7 @@
       "place": "infinity",
       "M": 4,
       "side": "right",
+      "full_core": false,
       "active_modes": 7,
       "core_modes": 2,
       "core_names": [
@@ -276,6 +372,21 @@
       "intertwining_identities_checked": 8,
       "coordinate_core_mode_offset": 5,
       "mod_z_basis_sha256": "47945626fd9665980722ae0f1e42b5007dd1c98103e4fd98734e01bf9da4a9ef",
+      "core_letters": [
+        "u"
+      ],
+      "core_pair_modes": {
+        "u": [
+          0,
+          1
+        ]
+      },
+      "physical_state_to_occupation_mask": [
+        1,
+        0,
+        2,
+        3
+      ],
       "core_charges": [
         1,
         1
@@ -285,6 +396,7 @@
       "place": "zero",
       "M": 4,
       "side": "left",
+      "full_core": false,
       "active_modes": 8,
       "core_modes": 2,
       "core_names": [
@@ -432,6 +544,21 @@
       "intertwining_identities_checked": 8,
       "coordinate_core_mode_offset": 6,
       "mod_z_basis_sha256": "5f2b22fa9780b6d0c5a930b194d8d5118097ecba0cf04467e54dcc6c48ddf653",
+      "core_letters": [
+        "y"
+      ],
+      "core_pair_modes": {
+        "y": [
+          0,
+          1
+        ]
+      },
+      "physical_state_to_occupation_mask": [
+        1,
+        0,
+        2,
+        3
+      ],
       "core_charges": [
         -1,
         -1
@@ -441,6 +568,7 @@
       "place": "zero",
       "M": 4,
       "side": "right",
+      "full_core": false,
       "active_modes": 8,
       "core_modes": 4,
       "core_names": [
@@ -494,6 +622,26 @@
       "intertwining_identities_checked": 16,
       "coordinate_core_mode_offset": 4,
       "mod_z_basis_sha256": "6ebb8289c2b6515b0d8dc3df9af96ae7521990658bb150cdcfd1fc344ade90dd",
+      "core_letters": [
+        "v",
+        "u"
+      ],
+      "core_pair_modes": {
+        "v": [
+          0,
+          1
+        ],
+        "u": [
+          2,
+          3
+        ]
+      },
+      "physical_state_to_occupation_mask": [
+        1,
+        0,
+        2,
+        3
+      ],
       "core_charges": [
         1,
         1,
@@ -505,6 +653,7 @@
       "place": "infinity",
       "M": 8,
       "side": "left",
+      "full_core": false,
       "active_modes": 7,
       "core_modes": 4,
       "core_names": [
@@ -542,6 +691,26 @@
       "intertwining_identities_checked": 16,
       "coordinate_core_mode_offset": 3,
       "mod_z_basis_sha256": "a75ef9ba4325a16459f13a89e65d1a827aa239f0bf42d201a3c3c25f503894a7",
+      "core_letters": [
+        "v",
+        "y"
+      ],
+      "core_pair_modes": {
+        "v": [
+          0,
+          1
+        ],
+        "y": [
+          2,
+          3
+        ]
+      },
+      "physical_state_to_occupation_mask": [
+        1,
+        0,
+        2,
+        3
+      ],
       "core_charges": [
         1,
         1,
@@ -553,6 +722,7 @@
       "place": "infinity",
       "M": 8,
       "side": "right",
+      "full_core": false,
       "active_modes": 7,
       "core_modes": 2,
       "core_names": [
@@ -636,6 +806,21 @@
       "intertwining_identities_checked": 8,
       "coordinate_core_mode_offset": 5,
       "mod_z_basis_sha256": "47945626fd9665980722ae0f1e42b5007dd1c98103e4fd98734e01bf9da4a9ef",
+      "core_letters": [
+        "u"
+      ],
+      "core_pair_modes": {
+        "u": [
+          0,
+          1
+        ]
+      },
+      "physical_state_to_occupation_mask": [
+        1,
+        0,
+        2,
+        3
+      ],
       "core_charges": [
         1,
         1
@@ -645,6 +830,7 @@
       "place": "zero",
       "M": 8,
       "side": "left",
+      "full_core": false,
       "active_modes": 9,
       "core_modes": 2,
       "core_names": [
@@ -920,6 +1106,21 @@
       "intertwining_identities_checked": 8,
       "coordinate_core_mode_offset": 7,
       "mod_z_basis_sha256": "51dfc651fa1429f62b6690d37d46bac16a6aaf5ae55fe5d264e411f2f82bd359",
+      "core_letters": [
+        "y"
+      ],
+      "core_pair_modes": {
+        "y": [
+          0,
+          1
+        ]
+      },
+      "physical_state_to_occupation_mask": [
+        1,
+        0,
+        2,
+        3
+      ],
       "core_charges": [
         -1,
         -1
@@ -929,6 +1130,7 @@
       "place": "zero",
       "M": 8,
       "side": "right",
+      "full_core": false,
       "active_modes": 9,
       "core_modes": 4,
       "core_names": [
@@ -1014,6 +1216,26 @@
       "intertwining_identities_checked": 16,
       "coordinate_core_mode_offset": 5,
       "mod_z_basis_sha256": "28b0a38e2d419c4dc4996a113ed084c18b55bc1380707ed6b185da499a146005",
+      "core_letters": [
+        "v",
+        "u"
+      ],
+      "core_pair_modes": {
+        "v": [
+          0,
+          1
+        ],
+        "u": [
+          2,
+          3
+        ]
+      },
+      "physical_state_to_occupation_mask": [
+        1,
+        0,
+        2,
+        3
+      ],
       "core_charges": [
         1,
         1,
@@ -1025,6 +1247,7 @@
       "place": "infinity",
       "M": 16,
       "side": "left",
+      "full_core": false,
       "active_modes": 7,
       "core_modes": 4,
       "core_names": [
@@ -1062,6 +1285,26 @@
       "intertwining_identities_checked": 16,
       "coordinate_core_mode_offset": 3,
       "mod_z_basis_sha256": "a75ef9ba4325a16459f13a89e65d1a827aa239f0bf42d201a3c3c25f503894a7",
+      "core_letters": [
+        "v",
+        "y"
+      ],
+      "core_pair_modes": {
+        "v": [
+          0,
+          1
+        ],
+        "y": [
+          2,
+          3
+        ]
+      },
+      "physical_state_to_occupation_mask": [
+        1,
+        0,
+        2,
+        3
+      ],
       "core_charges": [
         1,
         1,
@@ -1073,6 +1316,7 @@
       "place": "infinity",
       "M": 16,
       "side": "right",
+      "full_core": false,
       "active_modes": 7,
       "core_modes": 2,
       "core_names": [
@@ -1156,6 +1400,21 @@
       "intertwining_identities_checked": 8,
       "coordinate_core_mode_offset": 5,
       "mod_z_basis_sha256": "47945626fd9665980722ae0f1e42b5007dd1c98103e4fd98734e01bf9da4a9ef",
+      "core_letters": [
+        "u"
+      ],
+      "core_pair_modes": {
+        "u": [
+          0,
+          1
+        ]
+      },
+      "physical_state_to_occupation_mask": [
+        1,
+        0,
+        2,
+        3
+      ],
       "core_charges": [
         1,
         1
@@ -1165,6 +1424,7 @@
       "place": "zero",
       "M": 16,
       "side": "left",
+      "full_core": false,
       "active_modes": 9,
       "core_modes": 2,
       "core_names": [
@@ -1440,6 +1700,21 @@
       "intertwining_identities_checked": 8,
       "coordinate_core_mode_offset": 7,
       "mod_z_basis_sha256": "51dfc651fa1429f62b6690d37d46bac16a6aaf5ae55fe5d264e411f2f82bd359",
+      "core_letters": [
+        "y"
+      ],
+      "core_pair_modes": {
+        "y": [
+          0,
+          1
+        ]
+      },
+      "physical_state_to_occupation_mask": [
+        1,
+        0,
+        2,
+        3
+      ],
       "core_charges": [
         -1,
         -1
@@ -1449,6 +1724,7 @@
       "place": "zero",
       "M": 16,
       "side": "right",
+      "full_core": false,
       "active_modes": 9,
       "core_modes": 4,
       "core_names": [
@@ -1534,6 +1810,26 @@
       "intertwining_identities_checked": 16,
       "coordinate_core_mode_offset": 5,
       "mod_z_basis_sha256": "28b0a38e2d419c4dc4996a113ed084c18b55bc1380707ed6b185da499a146005",
+      "core_letters": [
+        "v",
+        "u"
+      ],
+      "core_pair_modes": {
+        "v": [
+          0,
+          1
+        ],
+        "u": [
+          2,
+          3
+        ]
+      },
+      "physical_state_to_occupation_mask": [
+        1,
+        0,
+        2,
+        3
+      ],
       "core_charges": [
         1,
         1,
@@ -1545,6 +1841,7 @@
       "place": "infinity",
       "M": 32,
       "side": "left",
+      "full_core": false,
       "active_modes": 7,
       "core_modes": 4,
       "core_names": [
@@ -1582,6 +1879,26 @@
       "intertwining_identities_checked": 16,
       "coordinate_core_mode_offset": 3,
       "mod_z_basis_sha256": "a75ef9ba4325a16459f13a89e65d1a827aa239f0bf42d201a3c3c25f503894a7",
+      "core_letters": [
+        "v",
+        "y"
+      ],
+      "core_pair_modes": {
+        "v": [
+          0,
+          1
+        ],
+        "y": [
+          2,
+          3
+        ]
+      },
+      "physical_state_to_occupation_mask": [
+        1,
+        0,
+        2,
+        3
+      ],
       "core_charges": [
         1,
         1,
@@ -1593,6 +1910,7 @@
       "place": "infinity",
       "M": 32,
       "side": "right",
+      "full_core": false,
       "active_modes": 7,
       "core_modes": 2,
       "core_names": [
@@ -1676,6 +1994,21 @@
       "intertwining_identities_checked": 8,
       "coordinate_core_mode_offset": 5,
       "mod_z_basis_sha256": "47945626fd9665980722ae0f1e42b5007dd1c98103e4fd98734e01bf9da4a9ef",
+      "core_letters": [
+        "u"
+      ],
+      "core_pair_modes": {
+        "u": [
+          0,
+          1
+        ]
+      },
+      "physical_state_to_occupation_mask": [
+        1,
+        0,
+        2,
+        3
+      ],
       "core_charges": [
         1,
         1
@@ -1685,6 +2018,7 @@
       "place": "zero",
       "M": 32,
       "side": "left",
+      "full_core": false,
       "active_modes": 9,
       "core_modes": 2,
       "core_names": [
@@ -1960,6 +2294,21 @@
       "intertwining_identities_checked": 8,
       "coordinate_core_mode_offset": 7,
       "mod_z_basis_sha256": "51dfc651fa1429f62b6690d37d46bac16a6aaf5ae55fe5d264e411f2f82bd359",
+      "core_letters": [
+        "y"
+      ],
+      "core_pair_modes": {
+        "y": [
+          0,
+          1
+        ]
+      },
+      "physical_state_to_occupation_mask": [
+        1,
+        0,
+        2,
+        3
+      ],
       "core_charges": [
         -1,
         -1
@@ -1969,6 +2318,7 @@
       "place": "zero",
       "M": 32,
       "side": "right",
+      "full_core": false,
       "active_modes": 9,
       "core_modes": 4,
       "core_names": [
@@ -2054,6 +2404,26 @@
       "intertwining_identities_checked": 16,
       "coordinate_core_mode_offset": 5,
       "mod_z_basis_sha256": "28b0a38e2d419c4dc4996a113ed084c18b55bc1380707ed6b185da499a146005",
+      "core_letters": [
+        "v",
+        "u"
+      ],
+      "core_pair_modes": {
+        "v": [
+          0,
+          1
+        ],
+        "u": [
+          2,
+          3
+        ]
+      },
+      "physical_state_to_occupation_mask": [
+        1,
+        0,
+        2,
+        3
+      ],
       "core_charges": [
         1,
         1,
@@ -2065,6 +2435,7 @@
       "place": "infinity",
       "M": 64,
       "side": "left",
+      "full_core": false,
       "active_modes": 7,
       "core_modes": 4,
       "core_names": [
@@ -2102,6 +2473,26 @@
       "intertwining_identities_checked": 16,
       "coordinate_core_mode_offset": 3,
       "mod_z_basis_sha256": "a75ef9ba4325a16459f13a89e65d1a827aa239f0bf42d201a3c3c25f503894a7",
+      "core_letters": [
+        "v",
+        "y"
+      ],
+      "core_pair_modes": {
+        "v": [
+          0,
+          1
+        ],
+        "y": [
+          2,
+          3
+        ]
+      },
+      "physical_state_to_occupation_mask": [
+        1,
+        0,
+        2,
+        3
+      ],
       "core_charges": [
         1,
         1,
@@ -2113,6 +2504,7 @@
       "place": "infinity",
       "M": 64,
       "side": "right",
+      "full_core": false,
       "active_modes": 7,
       "core_modes": 2,
       "core_names": [
@@ -2196,6 +2588,21 @@
       "intertwining_identities_checked": 8,
       "coordinate_core_mode_offset": 5,
       "mod_z_basis_sha256": "47945626fd9665980722ae0f1e42b5007dd1c98103e4fd98734e01bf9da4a9ef",
+      "core_letters": [
+        "u"
+      ],
+      "core_pair_modes": {
+        "u": [
+          0,
+          1
+        ]
+      },
+      "physical_state_to_occupation_mask": [
+        1,
+        0,
+        2,
+        3
+      ],
       "core_charges": [
         1,
         1
@@ -2205,6 +2612,7 @@
       "place": "zero",
       "M": 64,
       "side": "left",
+      "full_core": false,
       "active_modes": 9,
       "core_modes": 2,
       "core_names": [
@@ -2480,6 +2888,21 @@
       "intertwining_identities_checked": 8,
       "coordinate_core_mode_offset": 7,
       "mod_z_basis_sha256": "51dfc651fa1429f62b6690d37d46bac16a6aaf5ae55fe5d264e411f2f82bd359",
+      "core_letters": [
+        "y"
+      ],
+      "core_pair_modes": {
+        "y": [
+          0,
+          1
+        ]
+      },
+      "physical_state_to_occupation_mask": [
+        1,
+        0,
+        2,
+        3
+      ],
       "core_charges": [
         -1,
         -1
@@ -2489,6 +2912,7 @@
       "place": "zero",
       "M": 64,
       "side": "right",
+      "full_core": false,
       "active_modes": 9,
       "core_modes": 4,
       "core_names": [
@@ -2574,6 +2998,26 @@
       "intertwining_identities_checked": 16,
       "coordinate_core_mode_offset": 5,
       "mod_z_basis_sha256": "28b0a38e2d419c4dc4996a113ed084c18b55bc1380707ed6b185da499a146005",
+      "core_letters": [
+        "v",
+        "u"
+      ],
+      "core_pair_modes": {
+        "v": [
+          0,
+          1
+        ],
+        "u": [
+          2,
+          3
+        ]
+      },
+      "physical_state_to_occupation_mask": [
+        1,
+        0,
+        2,
+        3
+      ],
       "core_charges": [
         1,
         1,
@@ -2585,6 +3029,7 @@
       "place": "infinity",
       "M": 128,
       "side": "left",
+      "full_core": false,
       "active_modes": 7,
       "core_modes": 4,
       "core_names": [
@@ -2622,6 +3067,26 @@
       "intertwining_identities_checked": 16,
       "coordinate_core_mode_offset": 3,
       "mod_z_basis_sha256": "a75ef9ba4325a16459f13a89e65d1a827aa239f0bf42d201a3c3c25f503894a7",
+      "core_letters": [
+        "v",
+        "y"
+      ],
+      "core_pair_modes": {
+        "v": [
+          0,
+          1
+        ],
+        "y": [
+          2,
+          3
+        ]
+      },
+      "physical_state_to_occupation_mask": [
+        1,
+        0,
+        2,
+        3
+      ],
       "core_charges": [
         1,
         1,
@@ -2633,6 +3098,7 @@
       "place": "infinity",
       "M": 128,
       "side": "right",
+      "full_core": false,
       "active_modes": 7,
       "core_modes": 2,
       "core_names": [
@@ -2716,6 +3182,21 @@
       "intertwining_identities_checked": 8,
       "coordinate_core_mode_offset": 5,
       "mod_z_basis_sha256": "47945626fd9665980722ae0f1e42b5007dd1c98103e4fd98734e01bf9da4a9ef",
+      "core_letters": [
+        "u"
+      ],
+      "core_pair_modes": {
+        "u": [
+          0,
+          1
+        ]
+      },
+      "physical_state_to_occupation_mask": [
+        1,
+        0,
+        2,
+        3
+      ],
       "core_charges": [
         1,
         1
@@ -2725,6 +3206,7 @@
       "place": "zero",
       "M": 128,
       "side": "left",
+      "full_core": false,
       "active_modes": 9,
       "core_modes": 2,
       "core_names": [
@@ -3000,6 +3482,21 @@
       "intertwining_identities_checked": 8,
       "coordinate_core_mode_offset": 7,
       "mod_z_basis_sha256": "51dfc651fa1429f62b6690d37d46bac16a6aaf5ae55fe5d264e411f2f82bd359",
+      "core_letters": [
+        "y"
+      ],
+      "core_pair_modes": {
+        "y": [
+          0,
+          1
+        ]
+      },
+      "physical_state_to_occupation_mask": [
+        1,
+        0,
+        2,
+        3
+      ],
       "core_charges": [
         -1,
         -1
@@ -3009,6 +3506,7 @@
       "place": "zero",
       "M": 128,
       "side": "right",
+      "full_core": false,
       "active_modes": 9,
       "core_modes": 4,
       "core_names": [
@@ -3094,6 +3592,26 @@
       "intertwining_identities_checked": 16,
       "coordinate_core_mode_offset": 5,
       "mod_z_basis_sha256": "28b0a38e2d419c4dc4996a113ed084c18b55bc1380707ed6b185da499a146005",
+      "core_letters": [
+        "v",
+        "u"
+      ],
+      "core_pair_modes": {
+        "v": [
+          0,
+          1
+        ],
+        "u": [
+          2,
+          3
+        ]
+      },
+      "physical_state_to_occupation_mask": [
+        1,
+        0,
+        2,
+        3
+      ],
       "core_charges": [
         1,
         1,

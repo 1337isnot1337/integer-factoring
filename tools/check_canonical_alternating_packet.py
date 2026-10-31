@@ -84,6 +84,7 @@ def check():
         n = length // 2
         claimed = length * (a + 1) - 1
         profiles = []
+        lower_degree_profiles = []
         state = sum(1 << x for x in range(0, length, 2))
         assert sum(row_contents(length, 0)) == 0
         for center in range(-length + 1, length, 2):
@@ -97,6 +98,8 @@ def check():
             total = sum(actual)
             assert total >= claimed, (length, center, total, claimed)
             profiles.append([center, total])
+            lower_degree_profiles.append([center, total - actual[-1]])
+            assert total - actual[-1] >= claimed
             center_checks += 1
             if length <= 8:
                 column = [0] * (1 << length)
@@ -109,8 +112,10 @@ def check():
                 expanded_checks += len(full)
         assert profiles[-1] == [length - 1, claimed]
         assert min(value for _, value in profiles) == claimed
+        assert lower_degree_profiles[-1] == [length - 1, claimed]
         records.append({'L': length, 'creation_precision': 1, 'original_value': 1,
-                        'minimum_content': claimed, 'profiles': profiles})
+                        'minimum_content': claimed, 'profiles': profiles,
+                        'dropped_last_row_minimum_content': min(value for _, value in lower_degree_profiles)})
 
     # The theorem deliberately starts at L=4 and controls only odd centers.
     assert sum(row_contents(2, 1)) == 2

@@ -52,6 +52,16 @@ def gcd2(a,b):
 
 def lcm2(a,b):return mul2(quotient2(a,gcd2(a,b)),b)
 
+def power_two_ceiling(n):return 1<<max(0,(n-1).bit_length())
+
+def precision_sizes(program,base,M,profile_precision=None):
+    window=profile_precision or max(512,power_two_ceiling(16*M))
+    if window<128 or window>8192 or window&(window-1):raise ValueError('Invalid profile precision.')
+    coefficient_bits=max(max(pair).bit_length() for pair in program.coefficients)
+    builder=max(1024,power_two_ceiling(max(coefficient_bits,window+max(0,-base)+64)))
+    if builder>32768:raise ArithmeticError('Requested polynomial builder precision is too large.')
+    return window,builder
+
 def upow(e):
     if e<0:raise ValueError('Negative polynomial unit power.')
     out=1
@@ -96,7 +106,7 @@ class Program:
             self.car_meta[name]=(len(self.cars),base,den);self.cars.append(packed)
 
     def coefficient(self,p):
-        if max(p).bit_length()>1024:raise ArithmeticError('Program coefficient exceeds 1024 bits.')
+        if max(p).bit_length()>32768:raise ArithmeticError('Program coefficient exceeds 32768 bits.')
         if p not in self.coefficient_ids:
             self.coefficient_ids[p]=len(self.coefficients);self.coefficients.append(p)
         return self.coefficient_ids[p]
@@ -221,11 +231,11 @@ class Program:
         for part in parts[1:]:out=self.add(out,part)
         return out
 
-def library():
+def library(precision=1024):
     source=Path(__file__).with_name('native_fock_f4.cpp');included=source.with_name('native_rectangular_smith_f4.cpp')
     compiler=shlex.split(os.environ.get('CXX','c++'))
     if not compiler or shutil.which(compiler[0]) is None:raise RuntimeError('C++17 is required.')
-    flags=['-O3','-std=c++17','-shared','-fPIC']
+    flags=['-O3','-std=c++17','-shared','-fPIC',f'-DF4_SERIES_WORDS={precision//64}']
     try:cpu=Path('/proc/cpuinfo').read_text()
     except OSError:cpu=''
     if platform.machine().lower() in ('x86_64','amd64') and 'pclmulqdq' in cpu:flags+=['-mpclmul','-msse2']
@@ -241,33 +251,35 @@ def library():
         finally:
             if os.path.exists(name):os.unlink(name)
     lib=ctypes.CDLL(str(target));I=ctypes.POINTER(ctypes.c_int);U=ctypes.POINTER(ctypes.c_uint64);L=ctypes.POINTER(ctypes.c_int64)
-    lib.fock_f4_evaluate.argtypes=[ctypes.c_int,ctypes.c_int,I,ctypes.c_int,U,ctypes.c_int,I,I,ctypes.c_int,I,ctypes.c_int,U,L,L]
-    lib.fock_f4_evaluate.restype=ctypes.c_int;return lib
+    lib.fock_f4_evaluate_v2.argtypes=[ctypes.c_int,ctypes.c_int,I,ctypes.c_int,U,ctypes.c_int,I,I,ctypes.c_int,I,ctypes.c_int,ctypes.c_int,U,L,L]
+    lib.fock_f4_evaluate_v2.restype=ctypes.c_int;return lib
 
-def active_matrix(data,alpha=1,beta=2,quartic_terms=None,repair_spec=None):
+def active_matrix(data,alpha=1,beta=2,quartic_terms=None,repair_spec=None,profile_precision=None):
     program=Program(data);last=program.build(alpha,beta,quartic_terms,repair_spec=repair_spec);n=1<<program.k
+    diagonal=[sum(s for j,s in enumerate(data['active_orders']) if mask>>j&1) for mask in range(n)]
+    window,builder=precision_sizes(program,last.base+min(diagonal),data['M'],profile_precision);words=builder//64;output_words=window//64
     instructions=(ctypes.c_int*(5*len(program.instructions)))(*(v for row in program.instructions for v in row))
-    packed=(ctypes.c_uint64*(32*len(program.coefficients)))(*(value>>(64*w)&MASK for pair in program.coefficients for value in pair for w in range(16)))
+    packed=(ctypes.c_uint64*(2*words*len(program.coefficients)))(*(value>>(64*w)&MASK for pair in program.coefficients for value in pair for w in range(words)))
     terms=[];offsets=[0]
     for car in program.cars:terms.extend(v for term in car for v in term);offsets.append(len(terms)//3)
     cc=(ctypes.c_int*len(terms))(*terms);co=(ctypes.c_int*len(offsets))(*offsets)
-    diagonal=[sum(s for j,s in enumerate(data['active_orders']) if mask>>j&1) for mask in range(n)]
-    dd=(ctypes.c_int*n)(*diagonal);output=(ctypes.c_uint64*(16*n*n))();shifts=(ctypes.c_int64*(n*n))();meta=(ctypes.c_int64*4)()
-    start=time.monotonic();status=library().fock_f4_evaluate(program.k,len(program.instructions),instructions,len(program.coefficients),packed,len(program.cars),co,cc,last.register,dd,last.base,output,shifts,meta)
+    dd=(ctypes.c_int*n)(*diagonal);output=(ctypes.c_uint64*(2*output_words*n*n))();shifts=(ctypes.c_int64*(n*n))();meta=(ctypes.c_int64*4)()
+    start=time.monotonic();status=library(builder).fock_f4_evaluate_v2(program.k,len(program.instructions),instructions,len(program.coefficients),packed,len(program.cars),co,cc,last.register,dd,last.base,output_words,output,shifts,meta)
     if status:raise ArithmeticError(f'Fock program failed or lacked common precision (status {status}, metadata {list(meta)}).')
     matrix=[];shift_matrix=[]
     for i in range(n):
         row=[];shift_row=[]
         for j in range(n):
-            index=i*n+j;row.append(tuple(sum(int(output[(2*index+plane)*8+w])<<(64*w) for w in range(8)) for plane in range(2)))
+            index=i*n+j;row.append(tuple(sum(int(output[(2*index+plane)*output_words+w])<<(64*w) for w in range(output_words)) for plane in range(2)))
             shift_row.append(int(shifts[index]))
         matrix.append(row);shift_matrix.append(shift_row)
-    exact=program.degree_bounds[last.register]<1024 and int(meta[3])<512
-    return matrix,shift_matrix,{'registers':len(program.instructions),'coefficient_count':len(program.coefficients),'unit_denominator_degree':last.denominator.bit_length()-1,'unit_denominator_hex':hex(last.denominator),'program_degree_bound':program.degree_bounds[last.register],'maximum_normalized_degree':int(meta[3]),'exact_polynomial_matrix':exact,'minimum_valuation':int(meta[0]),'known_below':int(meta[1]),'builder_precision':int(meta[2]),'matrix_seconds':time.monotonic()-start}
+    exact=program.degree_bounds[last.register]<builder and int(meta[3])<window
+    return matrix,shift_matrix,{'registers':len(program.instructions),'coefficient_count':len(program.coefficients),'unit_denominator_degree':last.denominator.bit_length()-1,'unit_denominator_hex':hex(last.denominator),'program_degree_bound':program.degree_bounds[last.register],'maximum_normalized_degree':int(meta[3]),'exact_polynomial_matrix':exact,'minimum_valuation':int(meta[0]),'known_below':int(meta[1]),'builder_precision':int(meta[2]),'profile_precision':window,'matrix_seconds':time.monotonic()-start}
 
 def profile(data,alpha=1,beta=2,quartic_terms=None):
     matrix,shifts,metadata=active_matrix(data,alpha,beta,quartic_terms);n=len(matrix);rank=3*n//4
-    start=time.monotonic();result=MatrixOracle(matrix,rank,shifts).profile()
+    start=time.monotonic();result=MatrixOracle(matrix,rank,shifts,precision=metadata['profile_precision']).profile()
+    if not metadata['exact_polynomial_matrix'] and max(result['orders'])>=metadata['known_below']:raise ArithmeticError('Profile exceeds known polynomial precision.')
     orders=[]
     for value in result['orders']:
         if value!=round(value):raise ArithmeticError('Noninteger unweighted profile.')

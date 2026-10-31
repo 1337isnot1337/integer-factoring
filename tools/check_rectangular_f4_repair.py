@@ -166,6 +166,33 @@ def partial_repair(alpha, beta):
     return result
 
 
+def full_inverse_repair(alpha, beta):
+    """Exact inverse of the determinant-one residual, including alpha*beta=1."""
+    if alpha not in range(4) or beta not in range(4):
+        raise ValueError('alpha and beta must be F4 coefficients.')
+    original = residual(alpha, beta)
+    matrix = [row[:]+[int(i == j) for j in range(12)] for i, row in enumerate(original)]
+    determinant = 1
+    for column in range(12):
+        pivot = next((row for row in range(column, 12) if matrix[row][column]), None)
+        if pivot is None:
+            raise ArithmeticError('The residual matrix is unexpectedly singular.')
+        matrix[column], matrix[pivot] = matrix[pivot], matrix[column]
+        determinant = fmul(determinant, matrix[column][column])
+        inverse = finv(matrix[column][column])
+        matrix[column] = [fmul(inverse, value) for value in matrix[column]]
+        for row in range(12):
+            if row != column and matrix[row][column]:
+                scalar = matrix[row][column]
+                matrix[row] = [value ^ fmul(scalar, source) for value, source in zip(matrix[row], matrix[column])]
+    answer = [row[12:] for row in matrix]
+    identity = [[int(i == j) for j in range(12)] for i in range(12)]
+    assert determinant == 1
+    assert matrix_multiply(answer, original) == identity
+    assert matrix_multiply(original, answer) == identity
+    return answer
+
+
 def check_literal_residual(alpha, beta):
     """Independent seven-factor exterior endpoint, before block elimination."""
     factors = (65, 130, 20, 40, 96, 6, 153)
@@ -286,7 +313,7 @@ def one_particle(indices, ambient):
 
 
 def build(indices=(0, 1, 2), ambient=4, alpha=1, beta=2, check_types=True,
-          independent_exterior=False, quartic_terms=None):
+          independent_exterior=False, quartic_terms=None, repair='partial'):
     indices = tuple(indices)
     explicit_quartic = quartic_terms is not None
     if quartic_terms is None:
@@ -306,7 +333,13 @@ def build(indices=(0, 1, 2), ambient=4, alpha=1, beta=2, check_types=True,
     quartic_polynomial = tuple(sum(((coefficient >> plane)&1) << (exponent+global_w_power)
                                   for exponent, coefficient in terms.items()) for plane in range(2))
     gaussian_factor = 5 << global_w_power
-    original, correction, endpoint = check_repair(alpha, beta)
+    if repair == 'partial':
+        original, correction, endpoint = check_repair(alpha, beta)
+    elif repair == 'inverse':
+        original, correction = residual(alpha, beta), full_inverse_repair(alpha, beta)
+        endpoint = [[int(i == j) for j in range(12)] for i in range(12)]
+    else:
+        raise ValueError('Repair must be partial or inverse.')
     n, top_index = len(indices), indices[-1]
     bulk, top = 1 << (n-2), 1 << (n-1)
     qx, qu = 4*bulk, 3*bulk
@@ -402,7 +435,8 @@ def build(indices=(0, 1, 2), ambient=4, alpha=1, beta=2, check_types=True,
 
     cancellation = min(4, min(c_order(value) for value in values if value != ZERO))
     denominator_degree = 4-cancellation
-    assert denominator_degree <= 1  # Uniform residue cancellation proved in the note.
+    if repair == 'partial':
+        assert denominator_degree <= 1  # Uniform residue cancellation proved in the note.
     if cancellation:
         denominator = binary_power(3, cancellation)
         values = [divide_binary(value, denominator) for value in values]
@@ -438,7 +472,8 @@ def build(indices=(0, 1, 2), ambient=4, alpha=1, beta=2, check_types=True,
     result = {'field': 4, 'field_polynomial': 'omega^2+omega+1', 'indices': list(indices),
             'ambient': ambient, 'alpha': alpha, 'beta': beta, 'delta': 1 ^ fmul(alpha, beta),
             'dimensions': [qx, qu, qu, qx], 'q_x': qx, 'q_u': qu, 'bulk_size': bulk,
-            'repair_kind': 'mixed_height_partial', 'degree': max(max(value).bit_length()-1 for value in values),
+            'repair_kind': 'mixed_height_partial' if repair == 'partial' else 'mixed_height_inverse',
+            'degree': max(max(value).bit_length()-1 for value in values),
             'denominator_degree': denominator_degree, 'cancelled_c_order': cancellation,
             'strict_endpoint': False, 'typed_endpoint': 'independent common X/V and U/Y full-letter types',
             'logical_heights_x_v': hx, 'logical_heights_u_y': hu,
