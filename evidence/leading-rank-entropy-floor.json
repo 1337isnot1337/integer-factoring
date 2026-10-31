@@ -1,0 +1,74 @@
+{
+  "scope": "Bare profile, either minimum-order multiplicity at least two",
+  "rho_lower_bound": "17/24",
+  "certificates": [
+    {
+      "alphabet": 7,
+      "alpha": [
+        "1/2",
+        "1/5",
+        "3/10"
+      ],
+      "beta": [
+        "137/350",
+        "87/350",
+        "9/25"
+      ],
+      "shared_prefix_multiplier": "23/700",
+      "common_weight_denominator": 350,
+      "exact_entropy_comparison": "exp(6*D*C)>q^(17*D)",
+      "approximate_rho_lower_bound": 0.731188661304488
+    },
+    {
+      "alphabet": 8,
+      "alpha": [
+        "1/2",
+        "1/5",
+        "3/10"
+      ],
+      "beta": [
+        "145/384",
+        "467/1920",
+        "91/240"
+      ],
+      "shared_prefix_multiplier": "47/1680",
+      "common_weight_denominator": 1920,
+      "exact_entropy_comparison": "exp(6*D*C)>q^(17*D)",
+      "approximate_rho_lower_bound": 0.723883162019208
+    },
+    {
+      "alphabet": 9,
+      "alpha": [
+        "1/2",
+        "1/5",
+        "3/10"
+      ],
+      "beta": [
+        "2083/5670",
+        "271/1134",
+        "124/315"
+      ],
+      "shared_prefix_multiplier": "41/1680",
+      "common_weight_denominator": 5670,
+      "exact_entropy_comparison": "exp(6*D*C)>q^(17*D)",
+      "approximate_rho_lower_bound": 0.7174739263973242
+    },
+    {
+      "alphabet": 10,
+      "alpha": [
+        "1/2",
+        "1/5",
+        "3/10"
+      ],
+      "beta": [
+        "719/2000",
+        "471/2000",
+        "81/200"
+      ],
+      "shared_prefix_multiplier": "13/600",
+      "common_weight_denominator": 2000,
+      "exact_entropy_comparison": "exp(6*D*C)>q^(17*D)",
+      "approximate_rho_lower_bound": 0.7118434502344966
+    }
+  ]
+}

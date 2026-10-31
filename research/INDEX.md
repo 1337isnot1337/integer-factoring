@@ -307,6 +307,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Uniform degree-one Smith obstruction](linear-smith-barrier.md): coupled endpoint ranks force `B >= q^3` over every field and alphabet; sharp binary bounds and all 65,536 scalar binary pencils are checked.
 - [Full varying-image cubic spaces](cubic-full-image-span.md): exact 786- and 1,225-dimensional coefficient spaces over characteristic two, and smaller matrices for exact column ranks; no strict seed is supplied.
 
+- [Nine-letter quadratic-inverse probe](nine-letter-quadratic-inverse-probe.md): a general first-two-coefficient tradeoff and complete 31-path schedule, with every exact profile, 248 independent Toeplitz controls and all-scale exclusions.
+- [Inverse-degree compatibility and noncommuting paths](inverse-degree-crossing-compatibility.md): a new cut constraint rules out the formal seven-letter optimum at all integer ramifications; a quadratic-inverse constructor supplies exact endpoints and a complete 5,005-path first-jet exclusion.
 - [Pieces-to-factoring transfer](pieces-to-factoring.md): conditional crossing-parameter transfer, with full bit-cost accounting.
 - [Scale-one modular transfer](scale-one-modular-transfer.md): fixed-field transfer and machine costs.
 - [Sparse divisor nonzeroness](sparse-divisor-nonzeroness.md): detection of divisors in weighted polynomial counts.
@@ -375,6 +377,13 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Sparse bulk species-gauge floor](sparse-bulk-species-gauge-floor.md): an exact entropy dual proves `rho >= 3/4` in the stated common-density limit model; no exclusion of general sparse families or unbounded energy slopes is claimed.
 - [Controlled monomial Smith floor](controlled-permutation-smith-floor.md): a fiber-span argument extends the nilpotent-path obstruction to dependent, noncommuting, and weighted monomial controls.
 - [Qutrit Weyl crossing](qutrit-weyl-crossing.md): a complete auxiliary crossing with an exact all-length constant-coefficient rank formula and a scoped raw-piece obstruction.
+- [Inverse-degree aspect bounds](inverse-degree-aspect-bounds.md): entropy slack gives degree/inverse-degree limits, stronger quadratic caps 14,20,35,91, and an abstract two-case exclusion for all 2^31 binary level weights on the fixed nine-letter flag.
+- [Leading-rank entropy floor](leading-rank-entropy-floor.md): rational entropy duals exclude a repeated minimum Smith order on 7 through 10 letters, and close every positive kernel-level weighting of the displayed seven-letter transpose channel.
+- [Shared-minor floor through six letters](shared-minor-smith-floor.md): common q-by-q minors couple both cuts and give an all-degree, all-field bare-profile exclusion for q<=6, including fixed auxiliary states; seven letters are the first case left open by this relaxation.
+- [All-degree small-alphabet Smith floor](all-degree-small-alphabet-smith-floor.md): over every field and arbitrary fixed auxiliaries, bare ungauged local profiles on 2, 3 or 4 physical labels cannot improve the half-rate threshold; a sharper scalar binary parity floor holds at every degree.
+- [Complete binary quadratic catalogue](binary-quadratic-catalogue.md): all 65,536 fixed-endpoint scalar binary quadratics, 162 paired profiles, and an exact all-scale pressure floor of 256/27 for the stated ungauged cuts.
+- [Extended binary polynomial catalogues](extended-binary-polynomial-catalogues.md): all nonzero rank-one column constants in quadratics, complete parity cubics and quartics, and a separately marked million-path unrestricted cubic sample; no improved pressure.
+
 - [Directions beyond half](post-half-directions.md): experiments, scope, and unresolved questions.
 - [Network tradeoff](half-top-structure.md): restriction for the current local-enumeration and wire-channel constructor.
 - [Restricted-label counterexample](half-restricted-labels.md): failure of a proposed low-mode dimension reduction.
