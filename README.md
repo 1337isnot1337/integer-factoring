@@ -33,6 +33,14 @@ The composition uses the existing clique evaluator from [Anthropic's Appendix B]
 | Sharper k6 saving `log(12/11)/log(12) > 1/29` | Ordinary proof, not Lean-verified at this rate | [Rate derivation](research/k6-sharp-rate.md) |
 | Saving exponent above `1/2` | **Not established** | [Research index](research/INDEX.md) |
 
+The arithmetic framework work now includes an
+[exact dyadic inverse-section recursion](research/dyadic-inverse-sections.md)
+with interval selectors and Euclidean aggregation of affine fibres.
+The current reference evaluator still visits exponentially many low-bit
+roots and does not improve the bound. Its next target is aggregation of
+whole families of arithmetic sections, following the released Bell lane
+in [PR #41](https://github.com/1337isnot1337/integer-factoring/pull/41).
+
 The result table distinguishes verified machine bounds from conditional constructions and finite experiments. A merged PR or a passing finite test does not imply independent mathematical review.
 
 ## Verification
@@ -44,6 +52,7 @@ make verify               # Python unit tests, exact certificates, and local lin
 make verify-frontier      # Focused research certificates
 make verify-post-half     # Larger optional rank tests
 make verify-docs          # Local Markdown-link check
+python3 tools/check_dyadic_hyperbola.py # Exact arithmetic-framework controls
 ```
 
 The Python checks use Python 3 and its standard library. Some optional checks use NumPy for speed.
