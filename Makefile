@@ -306,3 +306,7 @@ verify-coupled-filters:
 	python3 tools/check_coupled_identity_extreme_filters.py
 	python3 tools/check_binary_coupled_filter_profiles.py
 	python3 tools/check_coupled_filter_pressure.py
+
+.PHONY: verify-prime-filter-pressure
+verify-prime-filter-pressure:
+	python3 tools/check_prime_state_filter_pressure.py
