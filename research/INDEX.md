@@ -14,6 +14,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Bounded hot cores after reflection compression](reflection-hot-core-defects.md): arbitrary even polynomial defects on the hottest logical modes reduce to three active modes per selected mode, with complete Laurent coefficients and all Gaussian spectators retained.
+
 - [Coupled occupation-transfer operators](coupled-identity-operator-filters.md): exact bounded active matrices extend the joint diagonal filters to occupation-preserving kernels, with polynomial degree costs and a larger energy-filtered endpoint class.
 
 - [Coupled polynomial filter synthesis](coupled-filter-linear-synthesis.md): exact linear constraints certify a complete zero-partition upper bound while charging all infinity degrees, with brute-force feasibility controls and scoped finite searches.

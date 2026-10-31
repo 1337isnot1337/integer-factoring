@@ -332,3 +332,7 @@ verify-coupled-synthesis:
 .PHONY: verify-coupled-operators
 verify-coupled-operators:
 	python3 tools/check_coupled_identity_operator_filters.py --extended
+
+.PHONY: verify-reflection-hot-cores
+verify-reflection-hot-cores:
+	python3 tools/check_reflection_hot_core_profiles.py --extended
