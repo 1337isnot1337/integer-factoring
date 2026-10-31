@@ -1,0 +1,44 @@
+{
+  "status": "All distinct saved operator profiles independently reconstructed and replayed.",
+  "runs": [
+    {
+      "n": 32,
+      "ramification": 1,
+      "geometry": "mixed",
+      "modes": 2,
+      "completed_catalogue_candidates": 9216,
+      "all_distinct_profile_representatives_replayed": 46
+    },
+    {
+      "n": 32,
+      "ramification": 1,
+      "geometry": "mixed",
+      "modes": 2,
+      "completed_catalogue_candidates": 2359296,
+      "all_distinct_profile_representatives_replayed": 249
+    },
+    {
+      "n": 32,
+      "ramification": 1,
+      "geometry": "split:1:2",
+      "modes": 3,
+      "completed_catalogue_candidates": 42560,
+      "all_distinct_profile_representatives_replayed": 786
+    },
+    {
+      "n": 32,
+      "ramification": 3,
+      "geometry": "split:1:2",
+      "modes": 3,
+      "completed_catalogue_candidates": 42560,
+      "all_distinct_profile_representatives_replayed": 814
+    }
+  ],
+  "total_distinct_profiles_replayed": 1895,
+  "source_sha256": {
+    "evidence/f4-operator-degree1-mixed-n32.json": "aaea3ac3d8bfccd17287a0a8d5f757350f72eea301c59d12039e420d8db1c71c",
+    "evidence/f4-operator-degree2-mixed-n32.json": "67c7dc338a29ab2c8d198dd1434ad4fd17a1e0a45b7e25ee3070769f51c9aa90",
+    "evidence/split-f4-operator-projectors.json": "4026eb2cfaa82f97f88afdcda5ce21246c659a46ef3db3a3c4aacce5d5a51061",
+    "tools/check_f4_operator_catalogues.py": "29f427739ea590cfc36fa23e53d6b49cad2c105f8076f14dbbc7ae44a91e391f"
+  }
+}

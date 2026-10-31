@@ -392,3 +392,41 @@ The [mixed-end mode theorem](split-identity-mode-reduction.md)
 also permits independent initial and terminal blocks of selected
 directions. The operator and Weyl constructions apply to that
 geometry without changing their endpoint or degree obligations.
+
+### Completed larger catalogues
+
+The same compiler has now completed the following finite families.
+The numerical pressure minima include the Gaussian control and remain
+approximately `0.0330679625084` after the stated refinements.
+
+| Family at interval 32 | Ramification | Kernels | Exact profile classes |
+| --- | ---: | ---: | ---: |
+| Mixed two-direction, slow degree one | 1 | 9,216 | 46 |
+| Mixed two-direction, slow degree two | 1 | 2,359,296 | 249 |
+| Split three-direction projector kernels | 1 | 42,560 | 786 |
+| Split three-direction projector kernels | 3 | 42,560 | 814 |
+
+The [degree-two catalogue](../evidence/f4-operator-degree2-mixed-n32.json)
+uses all 36 filtered one-occupation endpoint blocks and all eight
+independent `F4` coefficients multiplying `1+q^-1` or `1+q^-2`.
+The vacuum and full-occupation coefficients remain one in this
+particular enumeration.
+
+The [split projector driver](../tools/search_split_f4_identity_operators.py)
+constructs all 674 idempotents on a three-dimensional `F4` occupation
+sector: zero, identity, 336 rank-one projectors, and their rank-two
+complements. Four prescribed couplings between the one- and
+two-occupation sectors give 2,660 distinct pairs. Four top-state colors
+and four filtered endpoint flags give 42,560 kernels. The
+[two completed runs](../evidence/split-f4-operator-projectors.json)
+use `split:1:2` and slow-pole height one in all three sectors.
+They do not enumerate arbitrary pairs of occupation-sector matrices.
+
+The [catalogue checker](../tools/check_f4_operator_catalogues.py)
+reconstructs every one of the 1,895 distinct saved profile
+representatives directly from its full Laurent kernel, bypassing
+the affine coefficient compiler. It verifies both exact cut profiles,
+the endpoint policy, distinctness, and the recorded multiplicity sums;
+see the [replay record](../evidence/f4-operator-catalogue-replay.json).
+These complete finite catalogues do not exclude other polynomial
+degrees, coefficient families, physical gauges, or scales.
