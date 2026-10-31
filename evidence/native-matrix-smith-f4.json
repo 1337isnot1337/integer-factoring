@@ -1,0 +1,174 @@
+{
+  "status": "pass",
+  "profile_pairs": 18,
+  "all_minors_examined": 520,
+  "maximum_floating_error": 4.440892098500626e-16,
+  "missing_promised_rank_rejected": true,
+  "records": [
+    {
+      "matrix_order": 2,
+      "supplied_generic_rank": 1,
+      "infinity": false,
+      "exact_orders": [
+        "4715/6293"
+      ]
+    },
+    {
+      "matrix_order": 2,
+      "supplied_generic_rank": 1,
+      "infinity": true,
+      "exact_orders": [
+        "-6073/6293"
+      ]
+    },
+    {
+      "matrix_order": 2,
+      "supplied_generic_rank": 2,
+      "infinity": false,
+      "exact_orders": [
+        "-1630/6293",
+        "-449/6293"
+      ]
+    },
+    {
+      "matrix_order": 2,
+      "supplied_generic_rank": 2,
+      "infinity": true,
+      "exact_orders": [
+        "-2119/899",
+        "1822/899"
+      ]
+    },
+    {
+      "matrix_order": 3,
+      "supplied_generic_rank": 1,
+      "infinity": false,
+      "exact_orders": [
+        "-227/899"
+      ]
+    },
+    {
+      "matrix_order": 3,
+      "supplied_generic_rank": 1,
+      "infinity": true,
+      "exact_orders": [
+        "-227/899"
+      ]
+    },
+    {
+      "matrix_order": 3,
+      "supplied_generic_rank": 2,
+      "infinity": false,
+      "exact_orders": [
+        "3945/6293",
+        "16659/6293"
+      ]
+    },
+    {
+      "matrix_order": 3,
+      "supplied_generic_rank": 2,
+      "infinity": true,
+      "exact_orders": [
+        "-16546/6293",
+        "-2406/6293"
+      ]
+    },
+    {
+      "matrix_order": 3,
+      "supplied_generic_rank": 3,
+      "infinity": false,
+      "exact_orders": [
+        "-3676/6293",
+        "-2609/6293",
+        "2361/899"
+      ]
+    },
+    {
+      "matrix_order": 3,
+      "supplied_generic_rank": 3,
+      "infinity": true,
+      "exact_orders": [
+        "-1960/899",
+        "-8583/6293",
+        "1567/899"
+      ]
+    },
+    {
+      "matrix_order": 4,
+      "supplied_generic_rank": 1,
+      "infinity": false,
+      "exact_orders": [
+        "1307/6293"
+      ]
+    },
+    {
+      "matrix_order": 4,
+      "supplied_generic_rank": 1,
+      "infinity": true,
+      "exact_orders": [
+        "-5885/6293"
+      ]
+    },
+    {
+      "matrix_order": 4,
+      "supplied_generic_rank": 2,
+      "infinity": false,
+      "exact_orders": [
+        "-9084/6293",
+        "10868/6293"
+      ]
+    },
+    {
+      "matrix_order": 4,
+      "supplied_generic_rank": 2,
+      "infinity": true,
+      "exact_orders": [
+        "-784/899",
+        "3676/6293"
+      ]
+    },
+    {
+      "matrix_order": 4,
+      "supplied_generic_rank": 3,
+      "infinity": false,
+      "exact_orders": [
+        "-10768/6293",
+        "-4/31",
+        "17037/6293"
+      ]
+    },
+    {
+      "matrix_order": 4,
+      "supplied_generic_rank": 3,
+      "infinity": true,
+      "exact_orders": [
+        "-18923/6293",
+        "-214/217",
+        "19798/6293"
+      ]
+    },
+    {
+      "matrix_order": 4,
+      "supplied_generic_rank": 4,
+      "infinity": false,
+      "exact_orders": [
+        "-7186/6293",
+        "-581/899",
+        "-250/6293",
+        "8311/6293"
+      ]
+    },
+    {
+      "matrix_order": 4,
+      "supplied_generic_rank": 4,
+      "infinity": true,
+      "exact_orders": [
+        "-16861/6293",
+        "-5214/6293",
+        "-3226/6293",
+        "22109/6293"
+      ]
+    }
+  ],
+  "scope": "Generic rank is supplied and independently known from triangular factors; truncated zeros do not certify rank."
+}

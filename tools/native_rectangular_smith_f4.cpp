@@ -14,7 +14,10 @@
 #include <wmmintrin.h>
 #endif
 
-constexpr int words=8,precision=64*words;
+#ifndef F4_SERIES_WORDS
+#define F4_SERIES_WORDS 8
+#endif
+constexpr int words=F4_SERIES_WORDS,precision=64*words;
 struct Poly{
  std::array<std::uint64_t,words>w{};
  Poly(std::uint64_t x=0){w[0]=x;}
@@ -97,22 +100,25 @@ Series add(Series a,Series b,double tag,double scale,double cap){
 double height(const double*g,const std::array<int,4>&labels){double h=0;for(int l=0;l<4;++l)if(labels[l])h+=g[offsets[l]+labels[l]-1];return h;}
 std::vector<Pivot> profile_block(const double*g,const Matrix&matrix,
                                std::vector<std::array<int,4>>rows,
-                               std::vector<std::array<int,4>>cols,bool infinity,double scale){
- auto a=matrix;int n=a.size();
- std::vector<double>r(n),c(n);for(int i=0;i<n;++i){r[i]=height(g,rows[i]);c[i]=height(g,cols[i]);}
+                               std::vector<std::array<int,4>>cols,bool infinity,double scale,
+                               int wanted_rank=-1,const std::vector<double>*given_rows=nullptr,
+                               const std::vector<double>*given_cols=nullptr){
+ auto a=matrix;int n=a.size(),rank=wanted_rank<0?n:wanted_rank;
+ if(rank<0||rank>n)throw std::runtime_error("rank");
+ std::vector<double>r(n),c(n);for(int i=0;i<n;++i){r[i]=given_rows?(*given_rows)[i]:height(g,rows[i]);c[i]=given_cols?(*given_cols)[i]:height(g,cols[i]);}
  if(infinity){for(auto&row:a)for(auto&entry:row)if(entry.bits){
   int d=degree(entry.bits);Poly rev;
   for(int k=0;k<=d;++k){
    if(entry.bits.lo.w[k/64]>>(k%64)&1)rev.lo.w[(d-k)/64]|=std::uint64_t(1)<<((d-k)%64);
    if(entry.bits.hi.w[k/64]>>(k%64)&1)rev.hi.w[(d-k)/64]|=std::uint64_t(1)<<((d-k)%64);
   }
-  entry.bits=rev;entry.base=-d;
- }}else{for(auto&row:a)for(auto&entry:row)if(entry.bits){int v=valuation(entry.bits);entry.bits=entry.bits>>v;entry.base=v;}}
+  entry.bits=rev;entry.base=-d-entry.base;
+ }}else{for(auto&row:a)for(auto&entry:row)if(entry.bits){int v=valuation(entry.bits);entry.bits=entry.bits>>v;entry.base+=v;}}
  double minimum=1e100;for(int i=0;i<n;++i)for(int j=0;j<n;++j)if(a[i][j].bits)minimum=std::min(minimum,scale*a[i][j].base+r[i]+c[j]);
  double cap=minimum+precision*scale;
  for(int i=0;i<n;++i)for(int j=0;j<n;++j)a[i][j]=normalize(a[i][j],r[i]+c[j],scale,cap);
  std::vector<Pivot>out;
- for(int k=0;k<n;++k){
+ for(int k=0;k<rank;++k){
   double best=1e100;int pi=-1,pj=-1;
   for(int i=k;i<n;++i)for(int j=k;j<n;++j)if(a[i][j].bits){double x=scale*a[i][j].base+r[i]+c[j];if(x<best){best=x;pi=i;pj=j;}}
   if(pi<0)return {};
@@ -207,4 +213,31 @@ extern "C" int rectangular_f4_cost_gradient(const double*params,const double*piX
   }
   return 0;
  }catch(...){return 4;}
+}
+
+// Selected row/column indices certify nested attaining minors. The finite
+// field arithmetic is exact; the real-weight selection still needs replay.
+extern "C" int rectangular_f4_prefixes(const double*params,int cut,double*orders,
+ std::int64_t*bases,std::uint32_t*rows,std::uint32_t*cols){
+ try{
+  using namespace f4;
+  if(!alphabet||cut<0||cut>1)return 1;
+  int A=alphabets[0],B=alphabets[1],n=A*B,stride=parameter_stride;
+  double scale=params[2*stride];if(scale<=0)return 2;
+  for(int side=0;side<2;++side){
+   int selected=side==0?cut:1-cut;
+   auto pivots=profile(params+side*stride,selected,side==0,scale);
+   if(int(pivots.size())!=n)return 3;
+   std::int64_t cumulative=0;std::vector<bool>seen_r(n),seen_c(n);
+   for(int i=0;i<n;++i){auto p=pivots[i];
+    int r=B*p.labels[0]+p.labels[selected==0?1:2];
+    int c=A*p.labels[selected==0?2:1]+p.labels[3];
+    if(seen_r[r]||seen_c[c])return 4;
+    seen_r[r]=seen_c[c]=true;cumulative+=p.base;
+    int index=side*n+i;orders[index]=p.value;bases[index]=cumulative;
+    rows[index]=r;cols[index]=c;
+   }
+  }
+  return 0;
+ }catch(...){return 5;}
 }

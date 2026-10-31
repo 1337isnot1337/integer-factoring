@@ -7,6 +7,35 @@
     "hypothesis_for_division": "delta=1+alpha*beta != 0"
   },
   "independent_polynomial_products_checked": 4096,
+  "parameter_gauges": {
+    "scaling_identity": "K(k*alpha,beta/k)=k^(q(v)+q(y)-q(x)-q(u))*K(alpha,beta)",
+    "mode_set": [
+      0,
+      1,
+      2
+    ],
+    "scaling_entry_checks": 89856,
+    "frobenius_entry_checks": 29952,
+    "representative_F4_profile_classes": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "all_six_doubly_active_pairs_have_identical_weighted_profiles": true
+  },
   "valid_parameter_pairs": [
     [
       0,

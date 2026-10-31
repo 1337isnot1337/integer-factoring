@@ -45,6 +45,8 @@ _GENERATION=0
 _LOCK=threading.RLock()
 _DOUBLE=ctypes.POINTER(ctypes.c_double)
 _U64=ctypes.POINTER(ctypes.c_uint64)
+_U32=ctypes.POINTER(ctypes.c_uint32)
+_I64=ctypes.POINTER(ctypes.c_int64)
 
 
 def _library():
@@ -75,6 +77,8 @@ def _library():
     lib.rectangular_f4_set_seed.restype=ctypes.c_int
     lib.rectangular_f4_cost_gradient.argtypes=[_DOUBLE,_DOUBLE,_DOUBLE,ctypes.c_int,_DOUBLE,_DOUBLE,_DOUBLE]
     lib.rectangular_f4_cost_gradient.restype=ctypes.c_int
+    lib.rectangular_f4_prefixes.argtypes=[_DOUBLE,ctypes.c_int,_DOUBLE,_I64,_U32,_U32]
+    lib.rectangular_f4_prefixes.restype=ctypes.c_int
     _LIBRARY=lib;return lib
 
 
@@ -130,6 +134,23 @@ class RectangularOracle:
         orders[:self.n]=[v+self.denominator_degree*x[-1] for v in orders[:self.n]]
         if not all(math.isfinite(v) for v in [cost]+gradient+orders):raise ArithmeticError('Floating pressure overflowed.')
         return (cost,gradient,orders) if want_spectra else (cost,gradient)
+
+    def prefixes(self,params,cut=1):
+        """Attaining nested minors, encoded by newly selected row/column indices."""
+        x,native_x=self._params(params,cut)
+        orders=(ctypes.c_double*(2*self.n))()
+        bases=(ctypes.c_int64*(2*self.n))()
+        rows=(ctypes.c_uint32*(2*self.n))()
+        cols=(ctypes.c_uint32*(2*self.n))()
+        with _LOCK:
+            if self._generation!=_GENERATION:raise RuntimeError('Another seed replaced this oracle; call activate() before reuse.')
+            status=_library().rectangular_f4_prefixes(native_x,cut,orders,bases,rows,cols)
+        if status:raise ArithmeticError(f'Prefix profile unresolved (status {status}).')
+        orders,bases=list(orders),list(bases)
+        for i in range(self.n):
+            orders[i]+=self.denominator_degree*x[-1]
+            bases[i]+=self.denominator_degree*(i+1)
+        return {'orders':orders,'base_prefix':bases,'rows':list(rows),'cols':list(cols)}
 
     def types(self,params,cut=1):
         x,_=self._params(params,cut);GX=[0.]*self.A;GY=[0.]*self.B

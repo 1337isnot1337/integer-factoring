@@ -1,0 +1,149 @@
+{
+  "status": "pass",
+  "random_seed": 91073,
+  "matrix_cases": 26,
+  "both_cuts_profiles": 52,
+  "all_minors_examined": 832,
+  "attaining_prefix_minors_checked": 154,
+  "maximum_floating_error": 8.881784197001252e-16,
+  "rank_deficient_entry_dependent_cases": 2,
+  "records": [
+    {
+      "order": 2,
+      "rank": 2,
+      "entry_dependent_shifts": true
+    },
+    {
+      "order": 2,
+      "rank": 2,
+      "entry_dependent_shifts": true
+    },
+    {
+      "order": 2,
+      "rank": 2,
+      "entry_dependent_shifts": true
+    },
+    {
+      "order": 2,
+      "rank": 2,
+      "entry_dependent_shifts": true
+    },
+    {
+      "order": 2,
+      "rank": 2,
+      "entry_dependent_shifts": true
+    },
+    {
+      "order": 2,
+      "rank": 2,
+      "entry_dependent_shifts": true
+    },
+    {
+      "order": 2,
+      "rank": 2,
+      "entry_dependent_shifts": true
+    },
+    {
+      "order": 2,
+      "rank": 2,
+      "entry_dependent_shifts": true
+    },
+    {
+      "order": 3,
+      "rank": 3,
+      "entry_dependent_shifts": true
+    },
+    {
+      "order": 3,
+      "rank": 3,
+      "entry_dependent_shifts": true
+    },
+    {
+      "order": 3,
+      "rank": 3,
+      "entry_dependent_shifts": true
+    },
+    {
+      "order": 3,
+      "rank": 3,
+      "entry_dependent_shifts": true
+    },
+    {
+      "order": 3,
+      "rank": 3,
+      "entry_dependent_shifts": true
+    },
+    {
+      "order": 3,
+      "rank": 3,
+      "entry_dependent_shifts": true
+    },
+    {
+      "order": 3,
+      "rank": 3,
+      "entry_dependent_shifts": true
+    },
+    {
+      "order": 3,
+      "rank": 3,
+      "entry_dependent_shifts": true
+    },
+    {
+      "order": 4,
+      "rank": 4,
+      "entry_dependent_shifts": true
+    },
+    {
+      "order": 4,
+      "rank": 4,
+      "entry_dependent_shifts": true
+    },
+    {
+      "order": 4,
+      "rank": 4,
+      "entry_dependent_shifts": true
+    },
+    {
+      "order": 4,
+      "rank": 4,
+      "entry_dependent_shifts": true
+    },
+    {
+      "order": 4,
+      "rank": 4,
+      "entry_dependent_shifts": true
+    },
+    {
+      "order": 4,
+      "rank": 4,
+      "entry_dependent_shifts": true
+    },
+    {
+      "order": 4,
+      "rank": 4,
+      "entry_dependent_shifts": true
+    },
+    {
+      "order": 4,
+      "rank": 4,
+      "entry_dependent_shifts": true
+    },
+    {
+      "order": 3,
+      "rank": 2,
+      "entry_dependent_shifts": true
+    },
+    {
+      "order": 4,
+      "rank": 3,
+      "entry_dependent_shifts": true
+    }
+  ],
+  "source_sha256": {
+    "tools/native_matrix_smith_f4.py": "f8c5210b496c6d3904aea126ab52b25521cd8e85b9dd5df4dce60d30b121b44e",
+    "tools/native_matrix_smith_f4.cpp": "5ec995cd04563c2fa99b69afd71bf476d5ca885f1f90377490c30e5a1a55f330",
+    "tools/native_rectangular_smith_f4.cpp": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6",
+    "tools/check_matrix_f4_entry_shifts.py": "1ed5694413b64043e8eea4491d39e2f06ba9a862069fc1df0e067f767331fe26"
+  },
+  "scope": "Exact all-minor controls at order at most four for genuinely entry-dependent Laurent shifts, at zero and infinity. Rank is proved by exhaustive exact minors; floating weights remain exploratory."
+}

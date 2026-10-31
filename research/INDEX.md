@@ -15,6 +15,11 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 ## Transfers and proposed stronger evaluators
 
 - [Mixed-field rectangular repair](rectangular-f4-repair.md): an explicit two-parameter height-triangular correction over every characteristic-two field, a uniform simple-pole bound, and four exact mixed-F4 constructors.
+- [Bounded rectangular defect blocks](rectangular-defect-factorization.md): full-interval repairs reduce to seven and nine active fermion modes at the stated Gaussian gauges, with structurally proved generic ranks and exact rational support checks.
+- [Rectangular convex pressure search](rectangular-convex-pressure.md): paired Gibbs derivatives, attaining-minor separation, generic-rank interfaces, and independent exact and numerical implementation controls.
+- [Cauchy packet polynomial realization](cauchy-packet-realization.md): every degree-at-most-wire-count polynomial integral on the interpolation grid has an explicit affine packet realization, with separate canonical-lift controls.
+- [Dyadic affine mode reduction](one-species-dyadic-affine-reduction.md): appending common trailing binary ones gives exactly the smaller typed one-species tensor after ramification, including independent-gauge transport.
+- [Pascal complement convolution](pascal-complement-convolution.md): characteristic-independent complement-order inequalities and a field-free pressure envelope for arbitrary mode sets.
 
 - [31 October constructive frontier checkpoint](constructive-frontier-checkpoint.md): exact finite bounds, proved construction families, reproducible floating starts, and the remaining threshold obligation after a three-hour research session.
 - [Complete Schur queries](schur-fermion-queries.md): division-free small determinant formulas for modes and complete crossing coefficients; polynomial query cost with exact independent checks, but no new rank bound.
@@ -71,6 +76,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Obstructions and work beyond 1/2
 
+- [Prime-power vacuum locality](prime-power-vacuum-locality.md): Artin--Hasse transcendence excludes the stated scalar finite-locality replacement, with independent finite coefficient controls and no factoring lower-bound claim.
 - [One-sided charge pruning](one-sided-charge-pruning.md): common-type restriction removes every strictly one-directional charge perturbation; both-cut Smith majorization gives a matching untyped obstruction.
 - [Typed Gaussian generic blocks](typed-gaussian-generic-blocks.md): arbitrary coefficient recombinations have cost `Omega(D^2)` at fixed nonvacuum occupations, with exact finite controls and a separate growing-density bound.
 - [Exact typed charge-block compression](typed-gaussian-charge-blocks.md): polynomially many orbit blocks compute every coefficient-combination rank, including complete binary searches through 1,260 physical labels and independent dense controls.

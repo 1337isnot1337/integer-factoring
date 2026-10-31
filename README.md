@@ -100,6 +100,14 @@ engine now accepts F4 coefficients and independent physical types; its
 controls replay exact rational-weight profiles. These are construction and
 search advances, with no score improvement claimed.
 
+For full intervals, the [bounded-defect reduction](research/rectangular-defect-factorization.md)
+now confines this repair to seven active modes at infinity and nine at zero,
+at the explicitly stated Gaussian gauges. The remaining modes contribute
+scalar factors. Exact rational support checks and an independent full-matrix
+control support a scalable profile calculation. The
+[paired-type search audit](research/rectangular-convex-pressure.md) records
+the derivative, minor-separation formulation, and precision conditions.
+
 The [31 October research checkpoint](research/constructive-frontier-checkpoint.md)
 collects the latest exact bounds, new construction families, reproducible
 search starts, and the remaining obligations for a score improvement.

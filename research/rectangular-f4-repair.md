@@ -255,3 +255,71 @@ exact pressure or coefficient-rank certificate for these or other seeds,
 followed by the existing effective transfer. Fixed-field descent can
 be applied after the complete typed tensor power; there is no need to
 tensor a conjugate copy merely to remove F4 coefficients.
+
+## 5. Constant parameters reduce to four profile classes over F4
+
+For nonzero `k` in the coefficient field, the parameter pairs
+`(alpha,beta)` and `(k*alpha,beta/k)` have exactly the same weighted
+Smith profiles at both places, for every set of physical weights.
+This also preserves every coefficient rank and every fixed-type
+rank-cost sum.
+
+Define the charge of an `x/v` letter to be its actual occupation count.
+For a `u/y` letter, use its bulk occupation plus the count of its leading
+core state, so the counts of `(low,vacuum,top)` are `(1,0,1)`.
+In particular the `both` summand in the mixed third state contributes
+one additional occupied mode beyond this nominal charge.
+
+The Gaussian minors and the quartic term conserve total input and
+output occupation. If a term uses the both summand `e_u` times at `u`
+and `e_y` times at `y`, with `e_u,e_y` each zero or one, then
+
+```math
+q(x)+q(u)+e_u=q(v)+q(y)+e_y.
+```
+
+Replacing the parameters by `(k*alpha,beta/k)` multiplies this term by
+`k^(e_u-e_y)`. The conservation equation makes that factor independent
+of the summands. Hence the uncorrected tensors satisfy
+
+```math
+K_{k\alpha,\beta/k}(x,y,u,v)
+=k^{q(v)+q(y)-q(x)-q(u)}K_{\alpha,\beta}(x,y,u,v).
+\tag{7}
+```
+
+The correction has the same covariance. Let `D` be diagonal on the
+core output pairs, with `D_(v,y)=k^(q(v)+q(y))`. In (1), `delta` is
+unchanged, each entry with coefficient `alpha` raises this charge by
+one, and each entry with coefficient `beta*delta` lowers it by one.
+All other entries preserve charge. Thus
+
+```math
+C(k\alpha,\beta/k)=D C(\alpha,\beta)D^{-1}.
+```
+
+The height matrix commutes with `D`, so (7) holds for the repaired
+tensor `K'` as well. Its factor splits across the four physical legs.
+In either flattening it is multiplication by invertible constant
+diagonal matrices on rows and columns, which commutes with the physical
+valuation weights. Every weighted determinantal valuation is unchanged.
+On independent paired word types, the total exponent in (7) is zero,
+so the entire typed tensor is actually identical.
+
+Consequently all nonzero parameter pairs with a fixed product are
+equivalent. Over F4, Frobenius conjugation also identifies product
+`omega` with product `omega^2`: all other construction coefficients
+are binary, and conjugating polynomial coefficients preserves every
+minor valuation and every rank. The thirteen permitted pairs therefore
+reduce to these four profile classes:
+
+| Representative | Parameter pairs covered |
+|---|---|
+| `(0,0)` | The original partial repair |
+| `(1,0)` | The three input-only mixtures |
+| `(0,1)` | The three output-only mixtures |
+| `(1,omega)` | All six doubly active pairs with product different from one |
+
+The checker compares all 89,856 scaled local entries and all 29,952
+Frobenius-conjugated entries on the eight-by-six example. These checks
+support the exact occupation argument; they are not its premise.

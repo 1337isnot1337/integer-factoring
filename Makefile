@@ -90,6 +90,21 @@ verify-native-rectangular:
 	python3 tools/check_native_rectangular_smith.py
 	python3 tools/check_native_rectangular_smith_f4.py
 
+.PHONY: verify-frontier-reductions verify-native-rectangular-search
+verify-frontier-reductions:
+	python3 tools/check_rectangular_f4_repair.py
+	python3 tools/check_rectangular_defect_support.py
+	python3 tools/check_one_species_dyadic_affine.py
+	python3 tools/check_pascal_complement_convolution.py
+	python3 tools/check_prime_power_vacuum.py
+	python3 tools/check_cauchy_packet_polynomials.py
+
+verify-native-rectangular-search:
+	python3 tools/check_native_rectangular_smith_f4.py
+	python3 tools/check_native_matrix_smith_f4.py
+	python3 tools/check_matrix_f4_entry_shifts.py
+	python3 tools/check_rectangular_f4_optimizer.py
+
 verify-controlled-smith:
 	python3 tools/check_controlled_permutation_smith.py
 	python3 tools/check_qutrit_weyl_crossing.py

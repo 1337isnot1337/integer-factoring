@@ -432,6 +432,36 @@ def build(indices=(0, 1, 2), ambient=4, alpha=1, beta=2, check_types=True,
             'values': values}
 
 
+def check_parameter_gauges():
+    """Exact all-entry controls for charge gauges and field conjugation."""
+    seeds = {(a, b): build((0, 1, 2), 4, a, b, check_types=False)
+             for a, b in product(range(4), repeat=2) if fmul(a, b) != 1}
+    scaling_checks = conjugation_checks = 0
+    bulk, qx, qu = 2, 8, 6
+    charge_x = [int(a % bulk).bit_count()+(1, 0, 1, 2)[a // bulk] for a in range(qx)]
+    charge_u = [int(a % bulk).bit_count()+(1, 0, 1)[a // bulk] for a in range(qu)]
+    for (a, b), seed in seeds.items():
+        conjugate = seeds[fmul(a, a), fmul(b, b)]
+        assert seed['denominator_degree'] == conjugate['denominator_degree']
+        for original, transformed in zip(seed['values'], conjugate['values']):
+            assert transformed == (original[0] ^ original[1], original[1])
+            conjugation_checks += 1
+        for k in (1, 2, 3):
+            other = seeds[fmul(k, a), fmul(b, finv(k))]
+            assert seed['denominator_degree'] == other['denominator_degree']
+            for x, y, u, v in product(range(qx), range(qu), range(qu), range(qx)):
+                position = x+qx*(y+qu*(u+qu*v))
+                exponent = (charge_x[v]+charge_u[y]-charge_x[x]-charge_u[u]) % 3
+                multiplier = (1, k, fmul(k, k))[exponent]
+                assert other['values'][position] == scale(seed['values'][position], multiplier)
+                scaling_checks += 1
+    return {'scaling_identity': 'K(k*alpha,beta/k)=k^(q(v)+q(y)-q(x)-q(u))*K(alpha,beta)',
+            'mode_set': [0, 1, 2], 'scaling_entry_checks': scaling_checks,
+            'frobenius_entry_checks': conjugation_checks,
+            'representative_F4_profile_classes': [[0, 0], [1, 0], [0, 1], [1, 2]],
+            'all_six_doubly_active_pairs_have_identical_weighted_profiles': True}
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path)
@@ -440,6 +470,7 @@ def main():
     args = parser.parse_args()
     symbolic = check_symbolic_repair()
     arithmetic_checks = check_arithmetic()
+    parameter_gauges = check_parameter_gauges()
     valid, rejected = [], []
     for alpha, beta in product(range(4), repeat=2):
         check_literal_residual(alpha, beta)
@@ -464,6 +495,7 @@ def main():
             (args.seed_directory/name).write_text(json.dumps(data, separators=(',', ':'))+'\n')
     result = {'status': 'exact mixed-F4 partial repair and typed crossing checks; no pressure improvement claimed',
               'symbolic_repair': symbolic, 'independent_polynomial_products_checked': arithmetic_checks,
+              'parameter_gauges': parameter_gauges,
               'valid_parameter_pairs': valid, 'singular_parameter_pairs_rejected': rejected, 'cases': cases}
     rendered = json.dumps(result, indent=2)+'\n'
     if args.output:

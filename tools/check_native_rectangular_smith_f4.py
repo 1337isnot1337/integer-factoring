@@ -45,12 +45,30 @@ def exact_orders(values,A,B,params,cut,denominator):
     return orders
 
 
+def check_attaining_minors(oracle,values,params,cut):
+    result=oracle.prefixes(params,cut);n=oracle.n
+    for side in range(2):
+        selected=cut if side==0 else 1-cut
+        full=matrix(values,oracle.A,oracle.B,selected)
+        rows=result['rows'][side*n:(side+1)*n]
+        cols=result['cols'][side*n:(side+1)*n]
+        assert len(set(rows))==n and len(set(cols))==n
+        for k in range(n):
+            minor=[[full[r][c] for c in cols[:k+1]] for r in rows[:k+1]]
+            exact=WeightedSmithOracle(minor,infinity=side==0)
+            _,prefixes=exact.profile([0]*(k+1),[0]*(k+1),1)
+            value=exact.valuation(prefixes[-1].polynomial)
+            if side==0:value+=oracle.denominator_degree*(k+1)
+            assert value==result['base_prefix'][side*n+k]
+    return 2*n
+
+
 def logsum(values):
     top=max(values);return top+math.log(sum(math.exp(v-top) for v in values))
 
 
 def check():
-    rng=random.Random(941);records=[];maximum_error=0.;last=None
+    rng=random.Random(941);records=[];maximum_error=0.;last=None;minor_checks=0
     for A,B,d in ((2,2,0),(2,3,0),(3,2,1),(3,3,2)):
         values=[(0,0)]*(A*A*B*B)
         for x,y,u,v in product(range(A),range(B),range(B),range(A)):
@@ -60,6 +78,7 @@ def check():
         px=[Fraction(i+1,A*(A+1)//2) for i in range(A)];py=[Fraction(i+1,B*(B+1)//2) for i in range(B)]
         for cut in (0,1):
             expected=exact_orders(values,A,B,params,cut,d)
+            minor_checks+=check_attaining_minors(oracle,values,params,cut)
             cost,gradient,actual=oracle.evaluate(params,px,py,cut,True)
             error=max(abs(float(a)-b) for a,b in zip(expected,actual));maximum_error=max(maximum_error,error);assert error<2e-10
             mean=0.
@@ -87,6 +106,7 @@ def check():
     actual_errors=[]
     for cut in (0,1):
         expected=exact_orders(actual_seed['values'],4,3,actual_params,cut,actual_seed['denominator_degree'])
+        minor_checks+=check_attaining_minors(actual,actual_seed['values'],actual_params,cut)
         _,_,observed=actual.evaluate(actual_params,[.25]*4,[1/3]*3,cut,True)
         error=max(abs(float(a)-b) for a,b in zip(expected,observed));actual_errors.append(error)
         assert error<2e-10
@@ -111,7 +131,7 @@ def check():
     except ArithmeticError:pass
     else:raise AssertionError('An unresolved singular profile was accepted.')
     return {'field':4,'status':'pass','exact_fraction_free_replays':len(records),
-            'maximum_order_error':maximum_error,'actual_mixed_seed_order_errors':actual_errors,'paired_gibbs_identity':True,'gradient_coordinates_checked':24,
+            'maximum_order_error':maximum_error,'attaining_minors_checked':minor_checks,'actual_mixed_seed_order_errors':actual_errors,'paired_gibbs_identity':True,'gradient_coordinates_checked':24,
             'active_seed_guard':True,'failed_load_invalidates_prior_seed':True,
             'oversized_input_rejected':True,'wrong_endpoint_rejected':True,
             'singular_profile_rejected':True,'replays':records,

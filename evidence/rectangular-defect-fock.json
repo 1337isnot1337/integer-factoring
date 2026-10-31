@@ -1,0 +1,53 @@
+{
+  "status": "independent full Fock spectator identity at finite field points",
+  "cases": [
+    {
+      "field_modulus": "X^4+X+1",
+      "omega_image": 6,
+      "z": 2,
+      "M": 4,
+      "full_fock_dimension": 256,
+      "defect_dimension": 128,
+      "spectator_order": -3,
+      "all_matrix_entries_checked": 65536,
+      "specialized_full_rank": 192,
+      "specialized_defect_rank": 96
+    },
+    {
+      "field_modulus": "X^4+X+1",
+      "omega_image": 6,
+      "z": 3,
+      "M": 4,
+      "full_fock_dimension": 256,
+      "defect_dimension": 128,
+      "spectator_order": -3,
+      "all_matrix_entries_checked": 65536,
+      "specialized_full_rank": 192,
+      "specialized_defect_rank": 96
+    },
+    {
+      "field_modulus": "X^4+X+1",
+      "omega_image": 6,
+      "z": 4,
+      "M": 4,
+      "full_fock_dimension": 256,
+      "defect_dimension": 128,
+      "spectator_order": -3,
+      "all_matrix_entries_checked": 65536,
+      "specialized_full_rank": 192,
+      "specialized_defect_rank": 96
+    },
+    {
+      "field_modulus": "X^4+X+1",
+      "omega_image": 6,
+      "z": 5,
+      "M": 4,
+      "full_fock_dimension": 256,
+      "defect_dimension": 128,
+      "spectator_order": -3,
+      "all_matrix_entries_checked": 65536,
+      "specialized_full_rank": 192,
+      "specialized_defect_rank": 96
+    }
+  ]
+}
