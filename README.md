@@ -50,6 +50,7 @@ make verify-schur-gaussian # Exact digit reduction and fixed Gaussian crossing s
 make verify-schur-sparse # Sparse down-sets and two-scale offset interval reductions
 make verify-cancellation-modules # Exact module states and word-rate certificates
 make verify-minimal-modules # Exact boundary reduction and complete word-rate hierarchy
+make verify-exact-modules # Complete rational lattice orbits and exact pressures
 make verify-cancellation-crossing # Strict certificate gain for a complete crossing
 make verify-block-smith # Exact profiles for ordered crossing blocks
 make verify-cubic-full-images # Full cubic coefficient spaces and reduced ranks
@@ -129,6 +130,10 @@ converge to the exact full-matrix word rate when both boundaries are free.
 extends this completeness result to fixed scalar boundaries, while keeping
 physical choices grouped by channel. This is a statement about word bounds,
 not a characterization of actual coefficient ranks.
+[Exact rational lattice orbits](research/exact-rational-module-orbits.md)
+can retain identically missing directions and compute the full word rate
+when the orbit closes. A companion example has explicit two- and seven-state
+orbits and a proved certificate floor.
 An [explicit coupled crossing](research/cancellation-module-crossing-example.md)
 strictly improves its corresponding capped min-plus certificate, from at least
 `425/27` to `1625/108`. The same local factors and precision caps are used.

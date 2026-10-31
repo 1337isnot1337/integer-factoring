@@ -1,4 +1,4 @@
-.PHONY: verify verify-docs verify-frontier verify-post-half verify-schur-fermion verify-schur-central verify-schur-gaussian verify-schur-sparse verify-cancellation-modules verify-minimal-modules verify-cancellation-crossing verify-block-smith verify-linear-smith verify-type-pressure verify-controlled-smith verify-sparse-holonomy verify-cubic-full-images verify-formal verify-k6 verify-half-appendix help
+.PHONY: verify verify-docs verify-frontier verify-post-half verify-schur-fermion verify-schur-central verify-schur-gaussian verify-schur-sparse verify-cancellation-modules verify-minimal-modules verify-exact-modules verify-cancellation-crossing verify-block-smith verify-linear-smith verify-type-pressure verify-controlled-smith verify-sparse-holonomy verify-cubic-full-images verify-formal verify-k6 verify-half-appendix help
 
 verify: verify-docs verify-frontier
 	python3 -m unittest discover -s tests -v
@@ -33,6 +33,9 @@ verify-cancellation-modules:
 
 verify-minimal-modules:
 	python3 tools/check_minimal_boundary_modules.py
+
+verify-exact-modules:
+	python3 tools/check_exact_module_orbits.py
 
 verify-cancellation-crossing:
 	python3 tools/check_cancellation_module_crossing.py
@@ -95,6 +98,7 @@ help:
 	  'make verify-schur-sparse - exact down-set and offset interval reductions' \
 	  'make verify-cancellation-modules - exact finite module and word certificates' \
 	  'make verify-minimal-modules - exact boundary reduction and complete word rates' \
+	  'make verify-exact-modules - complete rational lattice orbits and pressures' \
 	  'make verify-cancellation-crossing - strict module improvement on a complete crossing' \
 	  'make verify-block-smith - ordered block profiles and submultiplicativity' \
 	  'make verify-linear-smith - uniform degree-one obstruction and binary catalogue' \
