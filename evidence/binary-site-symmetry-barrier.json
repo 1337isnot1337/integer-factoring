@@ -1,0 +1,198 @@
+{
+  "status": "pass",
+  "integer_cut_identities": [
+    {
+      "determinant_terms": 24,
+      "common_polynomial_terms": 8,
+      "odd_characteristic_multiplier": 4,
+      "characteristic_two_division": false
+    },
+    {
+      "determinant_terms": 24,
+      "common_polynomial_terms": 8,
+      "odd_characteristic_multiplier": 4,
+      "characteristic_two_division": false
+    }
+  ],
+  "multiplicities": {
+    "hook_formula_t_range": [
+      1,
+      64
+    ],
+    "dominated_shapes_checked": 1301,
+    "base_prime_digit_checks": [
+      {
+        "prime": 2,
+        "t": 1,
+        "rank_floor_bits": 2,
+        "denominator_bits": 7
+      },
+      {
+        "prime": 2,
+        "t": 2,
+        "rank_floor_bits": 6,
+        "denominator_bits": 9
+      },
+      {
+        "prime": 2,
+        "t": 7,
+        "rank_floor_bits": 24,
+        "denominator_bits": 27
+      },
+      {
+        "prime": 2,
+        "t": 31,
+        "rank_floor_bits": 146,
+        "denominator_bits": 59
+      },
+      {
+        "prime": 2,
+        "t": 127,
+        "rank_floor_bits": 691,
+        "denominator_bits": 102
+      },
+      {
+        "prime": 2,
+        "t": 511,
+        "rank_floor_bits": 2957,
+        "denominator_bits": 157
+      },
+      {
+        "prime": 3,
+        "t": 1,
+        "rank_floor_bits": 2,
+        "denominator_bits": 7
+      },
+      {
+        "prime": 3,
+        "t": 2,
+        "rank_floor_bits": 4,
+        "denominator_bits": 13
+      },
+      {
+        "prime": 3,
+        "t": 7,
+        "rank_floor_bits": 23,
+        "denominator_bits": 28
+      },
+      {
+        "prime": 3,
+        "t": 31,
+        "rank_floor_bits": 161,
+        "denominator_bits": 37
+      },
+      {
+        "prime": 3,
+        "t": 127,
+        "rank_floor_bits": 707,
+        "denominator_bits": 80
+      },
+      {
+        "prime": 3,
+        "t": 511,
+        "rank_floor_bits": 2987,
+        "denominator_bits": 115
+      },
+      {
+        "prime": 5,
+        "t": 1,
+        "rank_floor_bits": 2,
+        "denominator_bits": 7
+      },
+      {
+        "prime": 5,
+        "t": 2,
+        "rank_floor_bits": 4,
+        "denominator_bits": 13
+      },
+      {
+        "prime": 5,
+        "t": 7,
+        "rank_floor_bits": 25,
+        "denominator_bits": 26
+      },
+      {
+        "prime": 5,
+        "t": 31,
+        "rank_floor_bits": 160,
+        "denominator_bits": 38
+      },
+      {
+        "prime": 5,
+        "t": 127,
+        "rank_floor_bits": 736,
+        "denominator_bits": 39
+      },
+      {
+        "prime": 5,
+        "t": 511,
+        "rank_floor_bits": 2972,
+        "denominator_bits": 135
+      },
+      {
+        "prime": 11,
+        "t": 1,
+        "rank_floor_bits": 2,
+        "denominator_bits": 7
+      },
+      {
+        "prime": 11,
+        "t": 2,
+        "rank_floor_bits": 4,
+        "denominator_bits": 13
+      },
+      {
+        "prime": 11,
+        "t": 7,
+        "rank_floor_bits": 12,
+        "denominator_bits": 46
+      },
+      {
+        "prime": 11,
+        "t": 31,
+        "rank_floor_bits": 125,
+        "denominator_bits": 90
+      },
+      {
+        "prime": 11,
+        "t": 127,
+        "rank_floor_bits": 718,
+        "denominator_bits": 65
+      },
+      {
+        "prime": 11,
+        "t": 511,
+        "rank_floor_bits": 2950,
+        "denominator_bits": 167
+      }
+    ]
+  },
+  "literal_ranks": {
+    "symmetric_controls": [
+      {
+        "prime": 2,
+        "nonzero_witness_controls": 128,
+        "minimum_observed_cut_rank": 24,
+        "proved_m4_floor": 3
+      },
+      {
+        "prime": 3,
+        "nonzero_witness_controls": 46,
+        "minimum_observed_cut_rank": 12,
+        "proved_m4_floor": 3
+      },
+      {
+        "prime": 5,
+        "nonzero_witness_controls": 54,
+        "minimum_observed_cut_rank": 12,
+        "proved_m4_floor": 3
+      }
+    ],
+    "nonsymmetric_negative_control_ranks": [
+      1,
+      1
+    ]
+  },
+  "scope": "Exact algebra and finite controls for the ordinary site-symmetry proof; not an independent proof of its representation-theoretic dependencies or a factoring improvement.",
+  "source_sha256": "68abf64d1772d090d1cf0db3ea2cc177352d90b2835ddbb008d4f2ad94f2f9a9"
+}

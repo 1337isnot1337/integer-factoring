@@ -1,0 +1,51 @@
+{
+  "status": "pass",
+  "prime": 5,
+  "degree": 5,
+  "strict_endpoint_entries": 16,
+  "projective_point_cut_ranks": [
+    [
+      1,
+      4
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      4,
+      1
+    ]
+  ],
+  "entry_span_dimension": 6,
+  "cut_determinant_common_degree": 0,
+  "intertwiner_constraint_ranks": {
+    "yu": 4,
+    "xv": 4
+  },
+  "cofactor_linear_rank": 17,
+  "remaining_variables": 15,
+  "rank_one_minor_equations": 72,
+  "nullstellensatz_multiplier_monomials": 1452,
+  "maximum_multiplier_degree": 2,
+  "verified_polynomial_identity": "sum multipliers times equations = 1 mod 5",
+  "scope": "Absence of a shared projected cofactor over every F5 extension; no factoring improvement or uniform low-rank upper bound.",
+  "source_sha256": {
+    "matching_curve.py": "31a68ea31e1c1faaa97e486e92da0e946be0bd601402a23febe469adc40406fc",
+    "degree_five_matching.py": "3f9ee65ecc18c0107aa0455aed903c81c857aca1456a043eec654f8bf55da82b",
+    "check_degree_five_matching_candidate.py": "e59ffe348785fba184d61fc042765ae853757db95eae345a843f721df37fbe72"
+  },
+  "candidate_sha256": "611fbd3fdfa30646e80ff5e13bafcfc48a51c81d3f525ee49529cff8a4c2e38f"
+}
