@@ -91,6 +91,13 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 
 ## Current research frontier
 
+The [complete-entry larger-alphabet solver](research/full-alphabet-two-cut-affine-synthesis.md)
+varies every polynomial coefficient over F4 while preserving the strict
+endpoint and simultaneous local row conditions. Two completed four-symbol
+searches contain 40,000 target walks and 1,046 full-profile classes; all eighty
+retained tensors replay exactly, with no critical crossing. Run
+`make verify-full-alphabet-affine`.
+
 The [universal binary Smith-pressure theorem](research/universal-binary-smith-floor.md)
 excludes every Laurent-polynomial strict binary crossing seed under the
 two-place Smith criterion, over every coefficient field and with all

@@ -16,6 +16,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Complete-entry larger-alphabet synthesis](full-alphabet-two-cut-affine-synthesis.md): all degree-bounded F4 coefficients satisfy exact endpoint-preserving two-cut equations; compressed fibers support two completed 20,000-walk four-symbol searches with 1,046 full-profile classes and eighty complete witness replays.
+
 - [Nonresonant filters for arbitrary Boolean supports](nonresonant-boolean-filter-floor.md): the complete pressure floor extends to every Boolean pattern in a two-power family outside a finite resonant window; an exact counterexample preserves the excluded resonance.
 
 - [Affine Boolean filter tiles](affine-boolean-filter-tiles.md): literal coefficient relabeling and exact monomial normalization leave the symmetric family; all 124,080 specified maps and witnesses regenerate 65,475 retained full-state profiles, with eight complete root replays.

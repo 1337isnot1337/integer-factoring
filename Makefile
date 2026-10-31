@@ -591,3 +591,7 @@ verify-prime-deficit-affine-synthesis:
 .PHONY: verify-binary-target-box
 verify-binary-target-box:
 	python3 tools/check_binary_target_box.py --output /tmp/integer-factoring-binary-target-box-replay.json
+.PHONY: verify-full-alphabet-affine
+verify-full-alphabet-affine:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_full_alphabet_two_cut_lattices.py --output /tmp/integer-factoring-full-alphabet-affine-replay.json --search-records evidence/full-alphabet-q4-natural-affine-search.json evidence/full-alphabet-q4-degenerate-affine-search.json
+
