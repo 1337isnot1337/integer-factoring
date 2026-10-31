@@ -34,6 +34,18 @@ verify-transpose-intertwiner:
 verify-joint-determinant:
 	python3 tools/check_joint_determinant_barrier.py
 
+.PHONY: verify-binary-site-symmetry verify-matching-curve-controls verify-matching-curve-jets
+verify-binary-site-symmetry:
+	python3 tools/check_binary_site_symmetry_barrier.py
+
+verify-matching-curve-controls:
+	python3 tools/check_degree_five_matching_candidate.py
+	python3 tools/check_frobenius_cofactor_span.py
+
+verify-matching-curve-jets:
+	python3 tools/check_matching_curve_jets.py --prime 5 --output /tmp/integer-factoring-matching-five-jets.json
+	python3 tools/check_matching_curve_jets.py --prime 11 --output /tmp/integer-factoring-matching-eleven-jets.json
+
 .PHONY: verify-common-cofactor
 verify-common-cofactor:
 	python3 tools/check_common_cofactor_barrier.py

@@ -91,14 +91,28 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 
 ## Current research frontier
 
+The [binary site-symmetry barrier](research/binary-site-symmetry-barrier.md)
+gives an ordinary actual-rank proof of `rho >= 3/4` for every decomposition
+whose binary pieces are invariant under a common permutation of tensor
+positions. It covers scalar seeds of every degree, arbitrary coefficient
+recombinations and mixtures of scalar curves, over any fixed field,
+including characteristic two. A universal degree-four polynomial and
+Weyl filtrations supply the obstruction at every tensor length.
+Run `make verify-binary-site-symmetry` for exact algebra and finite controls.
+The [matching-curve controls](research/matching-curve-controls.md) show
+why escaping common-minor tests does not escape this broader theorem.
+New physical code restrictions and constructions that break the stated
+site symmetry remain open; no stronger factoring exponent is established.
+
 The [common-cofactor barrier](research/common-cofactor-barrier.md) closes
 the asymmetric ternary quadratic family for actual coefficient ranks.
 All 32,265 normalized seeds, covering 12,852,225 actual coefficient seeds,
 have a shared projected minor that forces
 `rho >= log(3)/(2 log(2)) = 0.792481...` at every tensor length.
 The exact full certificate replay is `make verify-common-cofactor`.
-New physical code restrictions and seed families without this certificate
-remain outside the result; the factoring exponent is still one half.
+The binary site-symmetry theorem above additionally covers seeds without
+this certificate at its weaker, but still post-half-excluding, floor.
+The factoring exponent is still one half.
 
 The [joint determinant barrier](research/joint-determinant-barrier.md)
 uses Weyl filtrations in every characteristic to bound actual coefficient
