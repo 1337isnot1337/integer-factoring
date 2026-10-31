@@ -1,0 +1,1624 @@
+{
+  "status": "exact finite controls of uniform full-alphabet charge reductions",
+  "scope": "Full physical alphabet and occupation-preserving base correction only.",
+  "single_sign_profile_controls": [
+    {
+      "case": 0,
+      "place": "infinity",
+      "trial": 0,
+      "orders_checked": 16,
+      "minimum_prefix_difference": -3.0,
+      "maximum_prefix_difference": 0.0,
+      "total_difference": 0.0
+    },
+    {
+      "case": 0,
+      "place": "infinity",
+      "trial": 1,
+      "orders_checked": 16,
+      "minimum_prefix_difference": -2.75,
+      "maximum_prefix_difference": 0.0,
+      "total_difference": 0.0
+    },
+    {
+      "case": 0,
+      "place": "zero",
+      "trial": 0,
+      "orders_checked": 16,
+      "minimum_prefix_difference": -2.0,
+      "maximum_prefix_difference": 0.0,
+      "total_difference": 0.0
+    },
+    {
+      "case": 0,
+      "place": "zero",
+      "trial": 1,
+      "orders_checked": 16,
+      "minimum_prefix_difference": -4.25,
+      "maximum_prefix_difference": 0.0,
+      "total_difference": 0.0
+    },
+    {
+      "case": 1,
+      "place": "infinity",
+      "trial": 0,
+      "orders_checked": 16,
+      "minimum_prefix_difference": -6.0,
+      "maximum_prefix_difference": 0.0,
+      "total_difference": 0.0
+    },
+    {
+      "case": 1,
+      "place": "infinity",
+      "trial": 1,
+      "orders_checked": 16,
+      "minimum_prefix_difference": -12.5,
+      "maximum_prefix_difference": 0.0,
+      "total_difference": 0.0
+    },
+    {
+      "case": 1,
+      "place": "zero",
+      "trial": 0,
+      "orders_checked": 16,
+      "minimum_prefix_difference": -6.0,
+      "maximum_prefix_difference": 0.0,
+      "total_difference": 0.0
+    },
+    {
+      "case": 1,
+      "place": "zero",
+      "trial": 1,
+      "orders_checked": 16,
+      "minimum_prefix_difference": -3.5,
+      "maximum_prefix_difference": 0.0,
+      "total_difference": 0.0
+    },
+    {
+      "case": 2,
+      "place": "infinity",
+      "trial": 0,
+      "orders_checked": 16,
+      "minimum_prefix_difference": 0.0,
+      "maximum_prefix_difference": 0.0,
+      "total_difference": 0.0
+    },
+    {
+      "case": 2,
+      "place": "infinity",
+      "trial": 1,
+      "orders_checked": 16,
+      "minimum_prefix_difference": -4.0,
+      "maximum_prefix_difference": 0.0,
+      "total_difference": 0.0
+    },
+    {
+      "case": 2,
+      "place": "zero",
+      "trial": 0,
+      "orders_checked": 16,
+      "minimum_prefix_difference": -1.0,
+      "maximum_prefix_difference": 0.0,
+      "total_difference": 0.0
+    },
+    {
+      "case": 2,
+      "place": "zero",
+      "trial": 1,
+      "orders_checked": 16,
+      "minimum_prefix_difference": -0.75,
+      "maximum_prefix_difference": 0.0,
+      "total_difference": 0.0
+    },
+    {
+      "case": 3,
+      "place": "infinity",
+      "trial": 0,
+      "orders_checked": 16,
+      "minimum_prefix_difference": -3.0,
+      "maximum_prefix_difference": 0.0,
+      "total_difference": 0.0
+    },
+    {
+      "case": 3,
+      "place": "infinity",
+      "trial": 1,
+      "orders_checked": 16,
+      "minimum_prefix_difference": -6.25,
+      "maximum_prefix_difference": 0.0,
+      "total_difference": 0.0
+    },
+    {
+      "case": 3,
+      "place": "zero",
+      "trial": 0,
+      "orders_checked": 16,
+      "minimum_prefix_difference": -2.0,
+      "maximum_prefix_difference": 0.0,
+      "total_difference": 0.0
+    },
+    {
+      "case": 3,
+      "place": "zero",
+      "trial": 1,
+      "orders_checked": 16,
+      "minimum_prefix_difference": -1.5,
+      "maximum_prefix_difference": 0.0,
+      "total_difference": 0.0
+    },
+    {
+      "case": 4,
+      "place": "infinity",
+      "trial": 0,
+      "orders_checked": 16,
+      "minimum_prefix_difference": 0.0,
+      "maximum_prefix_difference": 0.0,
+      "total_difference": 0.0
+    },
+    {
+      "case": 4,
+      "place": "infinity",
+      "trial": 1,
+      "orders_checked": 16,
+      "minimum_prefix_difference": 0.0,
+      "maximum_prefix_difference": 0.0,
+      "total_difference": 0.0
+    },
+    {
+      "case": 4,
+      "place": "zero",
+      "trial": 0,
+      "orders_checked": 16,
+      "minimum_prefix_difference": -2.0,
+      "maximum_prefix_difference": 0.0,
+      "total_difference": 0.0
+    },
+    {
+      "case": 4,
+      "place": "zero",
+      "trial": 1,
+      "orders_checked": 16,
+      "minimum_prefix_difference": -7.75,
+      "maximum_prefix_difference": 0.0,
+      "total_difference": 0.0
+    },
+    {
+      "case": 5,
+      "place": "infinity",
+      "trial": 0,
+      "orders_checked": 16,
+      "minimum_prefix_difference": 0.0,
+      "maximum_prefix_difference": 0.0,
+      "total_difference": 0.0
+    },
+    {
+      "case": 5,
+      "place": "infinity",
+      "trial": 1,
+      "orders_checked": 16,
+      "minimum_prefix_difference": 0.0,
+      "maximum_prefix_difference": 0.0,
+      "total_difference": 0.0
+    },
+    {
+      "case": 5,
+      "place": "zero",
+      "trial": 0,
+      "orders_checked": 16,
+      "minimum_prefix_difference": -2.0,
+      "maximum_prefix_difference": 0.0,
+      "total_difference": 0.0
+    },
+    {
+      "case": 5,
+      "place": "zero",
+      "trial": 1,
+      "orders_checked": 16,
+      "minimum_prefix_difference": -4.5,
+      "maximum_prefix_difference": 0.0,
+      "total_difference": 0.0
+    },
+    {
+      "case": 6,
+      "place": "infinity",
+      "trial": 0,
+      "orders_checked": 16,
+      "minimum_prefix_difference": 0.0,
+      "maximum_prefix_difference": 0.0,
+      "total_difference": 0.0
+    },
+    {
+      "case": 6,
+      "place": "infinity",
+      "trial": 1,
+      "orders_checked": 16,
+      "minimum_prefix_difference": -1.25,
+      "maximum_prefix_difference": 0.0,
+      "total_difference": 0.0
+    },
+    {
+      "case": 6,
+      "place": "zero",
+      "trial": 0,
+      "orders_checked": 16,
+      "minimum_prefix_difference": -20.0,
+      "maximum_prefix_difference": 0.0,
+      "total_difference": 0.0
+    },
+    {
+      "case": 6,
+      "place": "zero",
+      "trial": 1,
+      "orders_checked": 16,
+      "minimum_prefix_difference": -16.5,
+      "maximum_prefix_difference": 0.0,
+      "total_difference": 0.0
+    },
+    {
+      "case": 7,
+      "place": "infinity",
+      "trial": 0,
+      "orders_checked": 16,
+      "minimum_prefix_difference": 0.0,
+      "maximum_prefix_difference": 0.0,
+      "total_difference": 0.0
+    },
+    {
+      "case": 7,
+      "place": "infinity",
+      "trial": 1,
+      "orders_checked": 16,
+      "minimum_prefix_difference": 0.0,
+      "maximum_prefix_difference": 0.0,
+      "total_difference": 0.0
+    },
+    {
+      "case": 7,
+      "place": "zero",
+      "trial": 0,
+      "orders_checked": 16,
+      "minimum_prefix_difference": -2.0,
+      "maximum_prefix_difference": 0.0,
+      "total_difference": 0.0
+    },
+    {
+      "case": 7,
+      "place": "zero",
+      "trial": 1,
+      "orders_checked": 16,
+      "minimum_prefix_difference": -2.75,
+      "maximum_prefix_difference": 0.0,
+      "total_difference": 0.0
+    },
+    {
+      "case": 8,
+      "place": "infinity",
+      "trial": 0,
+      "orders_checked": 16,
+      "minimum_prefix_difference": 0.0,
+      "maximum_prefix_difference": 0.0,
+      "total_difference": 0.0
+    },
+    {
+      "case": 8,
+      "place": "infinity",
+      "trial": 1,
+      "orders_checked": 16,
+      "minimum_prefix_difference": -2.0,
+      "maximum_prefix_difference": 0.0,
+      "total_difference": 0.0
+    },
+    {
+      "case": 8,
+      "place": "zero",
+      "trial": 0,
+      "orders_checked": 16,
+      "minimum_prefix_difference": -2.0,
+      "maximum_prefix_difference": 0.0,
+      "total_difference": 0.0
+    },
+    {
+      "case": 8,
+      "place": "zero",
+      "trial": 1,
+      "orders_checked": 16,
+      "minimum_prefix_difference": -2.0,
+      "maximum_prefix_difference": 0.0,
+      "total_difference": 0.0
+    },
+    {
+      "case": 9,
+      "place": "infinity",
+      "trial": 0,
+      "orders_checked": 16,
+      "minimum_prefix_difference": -1.0,
+      "maximum_prefix_difference": 0.0,
+      "total_difference": 0.0
+    },
+    {
+      "case": 9,
+      "place": "infinity",
+      "trial": 1,
+      "orders_checked": 16,
+      "minimum_prefix_difference": 0.0,
+      "maximum_prefix_difference": 0.0,
+      "total_difference": 0.0
+    },
+    {
+      "case": 9,
+      "place": "zero",
+      "trial": 0,
+      "orders_checked": 16,
+      "minimum_prefix_difference": -4.0,
+      "maximum_prefix_difference": 0.0,
+      "total_difference": 0.0
+    },
+    {
+      "case": 9,
+      "place": "zero",
+      "trial": 1,
+      "orders_checked": 16,
+      "minimum_prefix_difference": -5.25,
+      "maximum_prefix_difference": 0.0,
+      "total_difference": 0.0
+    },
+    {
+      "case": 10,
+      "place": "infinity",
+      "trial": 0,
+      "orders_checked": 16,
+      "minimum_prefix_difference": 0.0,
+      "maximum_prefix_difference": 0.0,
+      "total_difference": 0.0
+    },
+    {
+      "case": 10,
+      "place": "infinity",
+      "trial": 1,
+      "orders_checked": 16,
+      "minimum_prefix_difference": -1.25,
+      "maximum_prefix_difference": 0.0,
+      "total_difference": 0.0
+    },
+    {
+      "case": 10,
+      "place": "zero",
+      "trial": 0,
+      "orders_checked": 16,
+      "minimum_prefix_difference": -4.0,
+      "maximum_prefix_difference": 0.0,
+      "total_difference": 0.0
+    },
+    {
+      "case": 10,
+      "place": "zero",
+      "trial": 1,
+      "orders_checked": 16,
+      "minimum_prefix_difference": -5.5,
+      "maximum_prefix_difference": 0.0,
+      "total_difference": 0.0
+    },
+    {
+      "case": 11,
+      "place": "infinity",
+      "trial": 0,
+      "orders_checked": 16,
+      "minimum_prefix_difference": -29.0,
+      "maximum_prefix_difference": 0.0,
+      "total_difference": 0.0
+    },
+    {
+      "case": 11,
+      "place": "infinity",
+      "trial": 1,
+      "orders_checked": 16,
+      "minimum_prefix_difference": -24.25,
+      "maximum_prefix_difference": 0.0,
+      "total_difference": 0.0
+    },
+    {
+      "case": 11,
+      "place": "zero",
+      "trial": 0,
+      "orders_checked": 16,
+      "minimum_prefix_difference": -8.0,
+      "maximum_prefix_difference": 0.0,
+      "total_difference": 0.0
+    },
+    {
+      "case": 11,
+      "place": "zero",
+      "trial": 1,
+      "orders_checked": 16,
+      "minimum_prefix_difference": -6.5,
+      "maximum_prefix_difference": 0.0,
+      "total_difference": 0.0
+    }
+  ],
+  "charge_gauge_controls": [
+    {
+      "minus": [
+        0,
+        null,
+        0,
+        1
+      ],
+      "plus": [
+        null,
+        0,
+        0,
+        1
+      ],
+      "kind": "field",
+      "coefficient": 2,
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        null,
+        0,
+        1
+      ],
+      "plus": [
+        null,
+        0,
+        0,
+        1
+      ],
+      "kind": "field",
+      "coefficient": 3,
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        null,
+        0,
+        1
+      ],
+      "plus": [
+        null,
+        0,
+        0,
+        1
+      ],
+      "kind": "Laurent",
+      "powers": [
+        -2,
+        3
+      ],
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        null,
+        0,
+        1
+      ],
+      "plus": [
+        null,
+        0,
+        0,
+        1
+      ],
+      "kind": "Laurent",
+      "powers": [
+        3,
+        -1
+      ],
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        null,
+        0,
+        1
+      ],
+      "plus": [
+        null,
+        1,
+        0,
+        0
+      ],
+      "kind": "field",
+      "coefficient": 2,
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        null,
+        0,
+        1
+      ],
+      "plus": [
+        null,
+        1,
+        0,
+        0
+      ],
+      "kind": "field",
+      "coefficient": 3,
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        null,
+        0,
+        1
+      ],
+      "plus": [
+        null,
+        1,
+        0,
+        0
+      ],
+      "kind": "Laurent",
+      "powers": [
+        -2,
+        3
+      ],
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        null,
+        0,
+        1
+      ],
+      "plus": [
+        null,
+        1,
+        0,
+        0
+      ],
+      "kind": "Laurent",
+      "powers": [
+        3,
+        -1
+      ],
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        null,
+        0,
+        1
+      ],
+      "plus": [
+        null,
+        1,
+        0,
+        1
+      ],
+      "kind": "field",
+      "coefficient": 2,
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        null,
+        0,
+        1
+      ],
+      "plus": [
+        null,
+        1,
+        0,
+        1
+      ],
+      "kind": "field",
+      "coefficient": 3,
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        null,
+        0,
+        1
+      ],
+      "plus": [
+        null,
+        1,
+        0,
+        1
+      ],
+      "kind": "Laurent",
+      "powers": [
+        -2,
+        3
+      ],
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        null,
+        0,
+        1
+      ],
+      "plus": [
+        null,
+        1,
+        0,
+        1
+      ],
+      "kind": "Laurent",
+      "powers": [
+        3,
+        -1
+      ],
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        null,
+        0,
+        1
+      ],
+      "plus": [
+        null,
+        1,
+        1,
+        1
+      ],
+      "kind": "field",
+      "coefficient": 2,
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        null,
+        0,
+        1
+      ],
+      "plus": [
+        null,
+        1,
+        1,
+        1
+      ],
+      "kind": "field",
+      "coefficient": 3,
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        null,
+        0,
+        1
+      ],
+      "plus": [
+        null,
+        1,
+        1,
+        1
+      ],
+      "kind": "Laurent",
+      "powers": [
+        -2,
+        3
+      ],
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        null,
+        0,
+        1
+      ],
+      "plus": [
+        null,
+        1,
+        1,
+        1
+      ],
+      "kind": "Laurent",
+      "powers": [
+        3,
+        -1
+      ],
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        null,
+        0,
+        1
+      ],
+      "plus": [
+        0,
+        0,
+        null,
+        1
+      ],
+      "kind": "field",
+      "coefficient": 2,
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        null,
+        0,
+        1
+      ],
+      "plus": [
+        0,
+        0,
+        null,
+        1
+      ],
+      "kind": "field",
+      "coefficient": 3,
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        null,
+        0,
+        1
+      ],
+      "plus": [
+        0,
+        0,
+        null,
+        1
+      ],
+      "kind": "Laurent",
+      "powers": [
+        -2,
+        3
+      ],
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        null,
+        0,
+        1
+      ],
+      "plus": [
+        0,
+        0,
+        null,
+        1
+      ],
+      "kind": "Laurent",
+      "powers": [
+        3,
+        -1
+      ],
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        null,
+        0,
+        1
+      ],
+      "plus": [
+        0,
+        1,
+        null,
+        0
+      ],
+      "kind": "field",
+      "coefficient": 2,
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        null,
+        0,
+        1
+      ],
+      "plus": [
+        0,
+        1,
+        null,
+        0
+      ],
+      "kind": "field",
+      "coefficient": 3,
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        null,
+        0,
+        1
+      ],
+      "plus": [
+        0,
+        1,
+        null,
+        0
+      ],
+      "kind": "Laurent",
+      "powers": [
+        -2,
+        3
+      ],
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        null,
+        0,
+        1
+      ],
+      "plus": [
+        0,
+        1,
+        null,
+        0
+      ],
+      "kind": "Laurent",
+      "powers": [
+        3,
+        -1
+      ],
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        null,
+        0,
+        1
+      ],
+      "plus": [
+        0,
+        1,
+        null,
+        1
+      ],
+      "kind": "field",
+      "coefficient": 2,
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        null,
+        0,
+        1
+      ],
+      "plus": [
+        0,
+        1,
+        null,
+        1
+      ],
+      "kind": "field",
+      "coefficient": 3,
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        null,
+        0,
+        1
+      ],
+      "plus": [
+        0,
+        1,
+        null,
+        1
+      ],
+      "kind": "Laurent",
+      "powers": [
+        -2,
+        3
+      ],
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        null,
+        0,
+        1
+      ],
+      "plus": [
+        0,
+        1,
+        null,
+        1
+      ],
+      "kind": "Laurent",
+      "powers": [
+        3,
+        -1
+      ],
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        null,
+        0,
+        1
+      ],
+      "plus": [
+        1,
+        1,
+        null,
+        1
+      ],
+      "kind": "field",
+      "coefficient": 2,
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        null,
+        0,
+        1
+      ],
+      "plus": [
+        1,
+        1,
+        null,
+        1
+      ],
+      "kind": "field",
+      "coefficient": 3,
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        null,
+        0,
+        1
+      ],
+      "plus": [
+        1,
+        1,
+        null,
+        1
+      ],
+      "kind": "Laurent",
+      "powers": [
+        -2,
+        3
+      ],
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        null,
+        0,
+        1
+      ],
+      "plus": [
+        1,
+        1,
+        null,
+        1
+      ],
+      "kind": "Laurent",
+      "powers": [
+        3,
+        -1
+      ],
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        1,
+        0,
+        null
+      ],
+      "plus": [
+        null,
+        0,
+        0,
+        1
+      ],
+      "kind": "field",
+      "coefficient": 2,
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        1,
+        0,
+        null
+      ],
+      "plus": [
+        null,
+        0,
+        0,
+        1
+      ],
+      "kind": "field",
+      "coefficient": 3,
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        1,
+        0,
+        null
+      ],
+      "plus": [
+        null,
+        0,
+        0,
+        1
+      ],
+      "kind": "Laurent",
+      "powers": [
+        -2,
+        3
+      ],
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        1,
+        0,
+        null
+      ],
+      "plus": [
+        null,
+        0,
+        0,
+        1
+      ],
+      "kind": "Laurent",
+      "powers": [
+        3,
+        -1
+      ],
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        1,
+        0,
+        null
+      ],
+      "plus": [
+        null,
+        1,
+        0,
+        0
+      ],
+      "kind": "field",
+      "coefficient": 2,
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        1,
+        0,
+        null
+      ],
+      "plus": [
+        null,
+        1,
+        0,
+        0
+      ],
+      "kind": "field",
+      "coefficient": 3,
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        1,
+        0,
+        null
+      ],
+      "plus": [
+        null,
+        1,
+        0,
+        0
+      ],
+      "kind": "Laurent",
+      "powers": [
+        -2,
+        3
+      ],
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        1,
+        0,
+        null
+      ],
+      "plus": [
+        null,
+        1,
+        0,
+        0
+      ],
+      "kind": "Laurent",
+      "powers": [
+        3,
+        -1
+      ],
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        1,
+        0,
+        null
+      ],
+      "plus": [
+        null,
+        1,
+        0,
+        1
+      ],
+      "kind": "field",
+      "coefficient": 2,
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        1,
+        0,
+        null
+      ],
+      "plus": [
+        null,
+        1,
+        0,
+        1
+      ],
+      "kind": "field",
+      "coefficient": 3,
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        1,
+        0,
+        null
+      ],
+      "plus": [
+        null,
+        1,
+        0,
+        1
+      ],
+      "kind": "Laurent",
+      "powers": [
+        -2,
+        3
+      ],
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        1,
+        0,
+        null
+      ],
+      "plus": [
+        null,
+        1,
+        0,
+        1
+      ],
+      "kind": "Laurent",
+      "powers": [
+        3,
+        -1
+      ],
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        1,
+        0,
+        null
+      ],
+      "plus": [
+        null,
+        1,
+        1,
+        1
+      ],
+      "kind": "field",
+      "coefficient": 2,
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        1,
+        0,
+        null
+      ],
+      "plus": [
+        null,
+        1,
+        1,
+        1
+      ],
+      "kind": "field",
+      "coefficient": 3,
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        1,
+        0,
+        null
+      ],
+      "plus": [
+        null,
+        1,
+        1,
+        1
+      ],
+      "kind": "Laurent",
+      "powers": [
+        -2,
+        3
+      ],
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        1,
+        0,
+        null
+      ],
+      "plus": [
+        null,
+        1,
+        1,
+        1
+      ],
+      "kind": "Laurent",
+      "powers": [
+        3,
+        -1
+      ],
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        1,
+        0,
+        null
+      ],
+      "plus": [
+        0,
+        0,
+        null,
+        1
+      ],
+      "kind": "field",
+      "coefficient": 2,
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        1,
+        0,
+        null
+      ],
+      "plus": [
+        0,
+        0,
+        null,
+        1
+      ],
+      "kind": "field",
+      "coefficient": 3,
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        1,
+        0,
+        null
+      ],
+      "plus": [
+        0,
+        0,
+        null,
+        1
+      ],
+      "kind": "Laurent",
+      "powers": [
+        -2,
+        3
+      ],
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        1,
+        0,
+        null
+      ],
+      "plus": [
+        0,
+        0,
+        null,
+        1
+      ],
+      "kind": "Laurent",
+      "powers": [
+        3,
+        -1
+      ],
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        1,
+        0,
+        null
+      ],
+      "plus": [
+        0,
+        1,
+        null,
+        0
+      ],
+      "kind": "field",
+      "coefficient": 2,
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        1,
+        0,
+        null
+      ],
+      "plus": [
+        0,
+        1,
+        null,
+        0
+      ],
+      "kind": "field",
+      "coefficient": 3,
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        1,
+        0,
+        null
+      ],
+      "plus": [
+        0,
+        1,
+        null,
+        0
+      ],
+      "kind": "Laurent",
+      "powers": [
+        -2,
+        3
+      ],
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        1,
+        0,
+        null
+      ],
+      "plus": [
+        0,
+        1,
+        null,
+        0
+      ],
+      "kind": "Laurent",
+      "powers": [
+        3,
+        -1
+      ],
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        1,
+        0,
+        null
+      ],
+      "plus": [
+        0,
+        1,
+        null,
+        1
+      ],
+      "kind": "field",
+      "coefficient": 2,
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        1,
+        0,
+        null
+      ],
+      "plus": [
+        0,
+        1,
+        null,
+        1
+      ],
+      "kind": "field",
+      "coefficient": 3,
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        1,
+        0,
+        null
+      ],
+      "plus": [
+        0,
+        1,
+        null,
+        1
+      ],
+      "kind": "Laurent",
+      "powers": [
+        -2,
+        3
+      ],
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        1,
+        0,
+        null
+      ],
+      "plus": [
+        0,
+        1,
+        null,
+        1
+      ],
+      "kind": "Laurent",
+      "powers": [
+        3,
+        -1
+      ],
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        1,
+        0,
+        null
+      ],
+      "plus": [
+        1,
+        1,
+        null,
+        1
+      ],
+      "kind": "field",
+      "coefficient": 2,
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        1,
+        0,
+        null
+      ],
+      "plus": [
+        1,
+        1,
+        null,
+        1
+      ],
+      "kind": "field",
+      "coefficient": 3,
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        1,
+        0,
+        null
+      ],
+      "plus": [
+        1,
+        1,
+        null,
+        1
+      ],
+      "kind": "Laurent",
+      "powers": [
+        -2,
+        3
+      ],
+      "entries_checked": 256
+    },
+    {
+      "minus": [
+        0,
+        1,
+        0,
+        null
+      ],
+      "plus": [
+        1,
+        1,
+        null,
+        1
+      ],
+      "kind": "Laurent",
+      "powers": [
+        3,
+        -1
+      ],
+      "entries_checked": 256
+    }
+  ]
+}

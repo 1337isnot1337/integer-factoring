@@ -20,10 +20,85 @@ The required next certificate is still \(\rho<1/\sqrt2\). In the
 independent-pair formulation, the equivalent target is a strict rational
 instance of \(B(s)<[Z_X(s)Z_Y(s)]^R\) with \(R<\sqrt2\).
 
+## Follow-through beginning at 04:02 UTC on 31 October
+
+Further work continues on the same research branch, with three parallel
+workers and frequent published checkpoints. The score remains \(1/2\).
+The following advances are ordinary proofs and exact finite controls;
+none is being presented as a strict pressure certificate.
+
+- The formerly open mixed-field repair is now constructed explicitly,
+  with a uniform simple-pole bound and independent paired-type endpoints.
+  Its full-interval profile computation reduces to seven active modes at
+  infinity and nine at zero. Arbitrary weights on all four extreme cores
+  use ten active modes at each place.
+- [Coupled constant transports](rectangular-core-transports.md),
+  [polynomial shears](rectangular-polynomial-shears.md), and
+  [additional quartics](rectangular-extra-quartics.md) give exact families
+  beyond the first repair. Cached coordinate updates make their screens
+  practical without rebuilding each full tensor.
+- [Full-alphabet quartic repairs](full-alphabet-quartic-repair.md) retain
+  all four extreme states on both crossing pairs. A rank-four projector
+  gives the determinant \((1+\gamma)^4\), and a five-entry partial
+  correction admits non-Gaussian F4 seeds. Their profiles also reduce to
+  fixed-size matrices, with 23 or 29 continuous parameters.
+- [Critical pressure](rectangular-critical-pressure.md) and the
+  [bivariate limit](bivariate-core-pressure-limit.md) separate an actual
+  defect gain from ordinary interval convergence. Exact rational LP
+  certificates for the [fitted leading models](rectangular-leading-face-lp.md)
+  isolate an all-low face. The required
+  [uniform symbolic entry bounds](rectangular-uniform-ray-obstruction.md)
+  are now proved and independently checked. They imply a
+  [moving balanced-gauge obstruction](rectangular-balanced-gauge-obstruction.md),
+  also extended to the [full alphabet](full-alphabet-leading-obstruction.md),
+  above the logarithmic profile scale. The preserved
+  [all-low background](rectangular-low-background.md) is proved to be
+  precisely the shorter interval of length \(M-2\).
+- [All-field Gaussian endpoints](all-field-pascal-crossings.md),
+  [graded powers](graded-even-power-transfer.md), and
+  [truncated symmetric powers](truncated-symmetric-pascal-crossings.md)
+  give further characteristic-dependent search families. The truncated
+  symmetric algebra has p states per mode and permits odd-degree
+  perturbations. Its interval bulk still has critical rate \(1/\sqrt2\).
+- The [Boolean Cauchy operator](boolean-cauchy-smith-profile.md) has an
+  all-size binomial Smith profile and an implicit one-bit inverse at a
+  nearest center. The [grouped inverse theorem](grouped-cauchy-inverse-profile.md)
+  accounts for the normalization precision and shows why directly
+  inserting that inverse does not provide a cheaper grouped factorization.
+- [Opposite-charge core cubics](rectangular-core-monomials.md) give
+  admissible endpoint-preserving terms beyond quartics. A uniform
+  single-sign obstruction narrows the full-alphabet search to pairs of
+  opposite particle changes. The sixteen such extreme-mode pairs have
+  nonzero two-copy typed effects in exact controls.
+  Four [critical cubic pairs](full-alphabet-monomial-residuals.md) go
+  further: they restore the singular sixteen-state residual, with
+  symbolic determinant `(1+gamma+ab)^4` and a canonical height-block
+  correction. Their all-length endpoints are proved; their pressure
+  is being investigated separately.
+- [Principal Cauchy permanents](walsh-principal-permanents.md) have
+  exact all-size balanced-discrepancy valuations and a proved factorial
+  law on even-spacing power-of-two subsets. Their valuations can differ
+  quadratically from the determinant values. The source-oriented forward
+  twirl nevertheless retains exponentially many grouped modes at the
+  existing precision schedule, leaving scalar recovery as a separate task.
+
+Three [frozen rectangular search states](../evidence/rectangular-search-snapshots.json)
+replayed with zero discrepancy in both complete profiles and the pressure
+value: \(0.7201918203\) at eight modes, \(0.7111834960\) at sixteen,
+and \(0.7084273909\) at thirty-two. These are finite search states,
+not global optima or new certified bounds. They remain above the target
+and do not improve the much larger interval certificate below.
+
+The completed four-mode constant-output screen covered all 264 retained
+shears at five frozen starts, with 1,320 successful profile queries and
+no improvement over its control. Larger-interval and newly enlarged
+construction screens are recorded separately as they complete. A failed
+finite screen excludes only its stated candidates and starts.
+
 ## Quantitative progress with exact certificates
 
-The [interval frontier](quantitative-interval-frontier.md) now has the
-following exact rational upper bounds. They all remain above the target.
+The [interval frontier](quantitative-interval-frontier.md) initially gave
+the following exact rational upper bounds. They all remain above the target.
 
 | Number of modes | Certified upper bound for \(\rho\) |
 |---:|---:|
@@ -48,6 +123,23 @@ This explains the positive leading gap
 result, not a lower bound for every Gaussian construction or every crossing.
 The [Pascal-complement theorem](schur-pascal-complement.md) also gives an
 exact spectrum algorithm for every finite mode set, including large gaps.
+
+The follow-through adds an
+[accelerated interval checker](accelerated-interval-certificates.md) based
+on a finite Euler-series identity with a positive exact remainder. It
+encloses geometric logarithmic products with polynomially many integer
+operations in the logarithm of the number of modes. Eight exact witnesses
+include `2^209-1` modes, with upper bound
+
+\[
+\rho<\frac{8771616955900347725453582478444206703138404016040525014107137}
+{12404939662976074530083669466978070217253381205037089626615744}.
+\]
+
+This rational number lies less than `5e-123` above `1/sqrt(2)`.
+Its strict pressure inequality is certified by outward integer intervals;
+it does not cross the threshold or improve the score. The same routine
+is available for the Gaussian spectators of a future finite-defect witness.
 
 ## New admissible construction families
 
@@ -155,18 +247,15 @@ The native targets are optional and require a C++17 compiler. Their Python
 wrappers and finite controls use the standard library. Numerical optimization
 programs may additionally use NumPy and SciPy.
 
-The clearest remaining targets are the partial rectangular repair with
-independent paired types, Laurent deformations that preserve its useful
-background, and polynomial perturbations away from the classified Gaussian
-surface. One untested finite-field extension is especially concrete: over
-\(\mathbb F_4\), choosing mixed coefficients \(\alpha=1\),
-\(\beta=\omega\) makes \((1+\alpha\beta)^2\ne0\). Both mixed
-directions are active while the height-flag partial repair remains
-available and preserves the low background. The next work is to construct
-that repair over \(\mathbb F_4\), determine its actual scalar denominator,
-and add rectangular support to the four-element-field profile engine.
-The proved fixed-field descent handles the eventual binary transfer;
-no additional conjugate-copy cancellation is needed.
+The original checkpoint proposed the mixed coefficients
+\(\alpha=1,\beta=\omega\) as an untested extension. That construction,
+its denominator proof, and the four-element-field rectangular engine are
+now complete. The current targets are a strict finite witness in the
+expanded repair families, a negative finite limiting pressure in a family
+that changes the preserved Gaussian background, and a scalar recovery
+method that can use the improved operator precision without recreating
+the original grouping cost. Fixed-field descent handles the eventual
+binary transfer once a strict crossing certificate exists.
 
 For any numerical candidate, the next gate is an exact weighted
 profile or coefficient-rank bound and a strict rational pressure comparison.

@@ -91,6 +91,107 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 
 ## Current research frontier
 
+The latest [research checkpoint](research/constructive-frontier-checkpoint.md)
+keeps the proved score at `1/2`. An
+[accelerated exact certificate](research/accelerated-interval-certificates.md)
+now treats `2^209-1` modes with a rational upper bound less than `5e-123`
+above `1/sqrt(2)`. This remains an approach from above. A finite identity
+with a positive remainder makes the check polynomial in the logarithm of
+the mode count and can also certify long Gaussian spectator products.
+
+Symbolic entry witnesses now support a
+[uniform balanced-gauge obstruction](research/rectangular-balanced-gauge-obstruction.md)
+for the baseline repair and its
+[full-alphabet extension](research/full-alphabet-leading-obstruction.md).
+The weights may change arbitrarily with the interval length; for every
+fixed `c>1/sqrt(2)`, these families have positive critical pressure
+eventually whenever `M log s >= c log M`. The result concerns these
+specific repairs and balanced bulk charges. Searches continue in families
+that alter their preserved background, including
+[opposite-charge cubic terms](research/rectangular-core-monomials.md).
+Four [critical cubic pairs](research/full-alphabet-monomial-residuals.md)
+also change the residual itself and restore all sixteen states at the
+singular canonical quartic coefficient. Their determinant is exactly
+`(1+gamma+ab)^4`, and a height-block correction proves the all-length
+crossing. Its partial repairs still preserve an all-low Gaussian submatrix;
+their occupation mixing requires a separate leading-pressure analysis.
+
+The [Walsh permanent calculation](research/walsh-principal-permanents.md)
+gives all-size scalar valuation formulas beyond the determinant model.
+It also proves that exponentially many grouped modes survive the current
+precision schedule for direct forward twirling. Lower-precision scalar
+recovery remains a distinct possible route.
+
+The [mixed-field rectangular repair](research/rectangular-f4-repair.md) now
+settles the four-element-field construction left open in the preceding
+checkpoint. Its explicit correction preserves the low Gaussian background
+and has at most a simple local pole for every finite mode set. Matching
+paired types give polynomial crossings. The optional rectangular profile
+engine now accepts F4 coefficients and independent physical types; its
+controls replay exact rational-weight profiles. These are construction and
+search advances, with no score improvement claimed.
+
+For full intervals, the [bounded-defect reduction](research/rectangular-defect-factorization.md)
+now confines this repair to seven active modes at infinity and nine at zero,
+at the explicitly stated Gaussian gauges. The remaining modes contribute
+scalar factors. Exact rational support checks and an independent full-matrix
+control support a scalable profile calculation. The
+[paired-type search audit](research/rectangular-convex-pressure.md) records
+the derivative, minor-separation formulation, and precision conditions.
+Regular core coordinate bases now permit fourteen independent core weights
+and four bulk charges without increasing the active dimensions. The
+[secondary-height family](research/rectangular-refined-repairs.md) adds
+input and output repairs with a shared additive flag, together with
+arbitrary endpoint-compatible Laurent quartic numerators. A
+[full-core extension](research/rectangular-full-core-factorization.md)
+uses ten active modes at both places and supports all four extreme
+physical cores. Its 25-parameter pressure calculation has dimensions
+independent of the interval length. Adaptive exact series windows permit
+larger intervals while rejecting unresolved pivots.
+
+The [full-alphabet quartic repair](research/full-alphabet-quartic-repair.md)
+retains all four extreme states on both crossing pairs. Its residual is
+invertible for every quartic coefficient other than one, and a sparse
+partial correction gives non-Gaussian examples over F4. Fixed-size profile
+matrices support 23 or 29 continuous parameters for this family.
+
+[Coupled core transports](research/rectangular-core-transports.md) now
+permit arbitrary invertible core changes, including height-raising
+directions, when an exact left/right product preserves the endpoint.
+Their matrices can be updated from cached coordinates. The
+[critical-pressure analysis](research/rectangular-critical-pressure.md)
+separates genuine defect gains from interval convergence, while a
+[bivariate limit](research/bivariate-core-pressure-limit.md) reduces the
+large-interval question to a finite leading matrix and its weighted ranks.
+The [leading-face certificates](research/rectangular-leading-face-lp.md)
+give exact rational LP bounds for the fitted rectangular model. Its
+[all-low background](research/rectangular-low-background.md) is exactly a
+shorter Gaussian interval. Separate [polynomial shears](research/rectangular-polynomial-shears.md)
+and [four extra quartics](research/rectangular-extra-quartics.md) preserve
+the endpoint and provide additional admissible search directions.
+
+The [all-field Pascal construction](research/all-field-pascal-crossings.md)
+retains the required global signs in odd characteristic. The
+[graded-power theorem](research/graded-even-power-transfer.md) also
+permits even perturbations that vanish at the crossing endpoint. The
+scalar factoring dependency is pinned in a separate
+[source audit](research/fixed-prime-transfer-source-audit.md).
+A [truncated symmetric construction](research/truncated-symmetric-pascal-crossings.md)
+also gives ordinary tensor powers with p states per mode in characteristic
+p, including non-Gaussian perturbations of odd degree.
+
+For the original evaluator's precision question,
+[canonical packet bounds](research/canonical-packet-upper-frontier.md)
+and [finite decoder certificates](research/canonical-packet-decoder-frontier.md)
+give exact four-wire binary thresholds: 12 local bits for parity and
+13 for the full count. They do not supply an efficient all-size decoder.
+The [full Boolean operator](research/boolean-cauchy-smith-profile.md)
+has an exact all-size Smith profile and a one-bit inverse at either
+nearest center. Direct insertion of that inverse reconnects the source
+groups, so this operator theorem alone does not improve the evaluator.
+The [grouped inverse profile](research/grouped-cauchy-inverse-profile.md)
+determines the exact precision cost of a direct grouped factorization.
+
 The [31 October research checkpoint](research/constructive-frontier-checkpoint.md)
 collects the latest exact bounds, new construction families, reproducible
 search starts, and the remaining obligations for a score improvement.
@@ -142,6 +243,9 @@ crossing that threshold within the displayed gauges.
 The [quantitative interval theorem](research/quantitative-interval-frontier.md)
 gives the sharp gap asymptotic `(log n)^2 / (sqrt(2) pi^2 n^2)` and
 exact large witnesses using outward integer intervals.
+The [accelerated extension](research/accelerated-interval-certificates.md)
+replaces mode enumeration with exact geometric moments and reaches the
+much larger finite certificate described above.
 The [greedy Pascal-complement theorem](research/schur-pascal-complement.md)
 computes the same normalized spectrum for every finite mode set using
 binary linear algebra. It proves the interval formula at every length

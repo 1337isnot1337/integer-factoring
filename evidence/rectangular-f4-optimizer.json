@@ -1,0 +1,25 @@
+{
+  "status": "pass",
+  "random_seed": 8041,
+  "actual_mixed_seed_points": 8,
+  "paired_gradient_coordinates": 168,
+  "paired_gradient_maximum_error": 2.506988755479611e-09,
+  "gibbs_root_maximum_error": 3.774758283725532e-15,
+  "heldout_minor_comparisons": 5125,
+  "heldout_minor_minimum_slack": -1.7763568394002505e-15,
+  "determinant_equality_maximum_error": 1.7763568394002505e-15,
+  "constraints_per_cut": [
+    280,
+    274
+  ],
+  "disconnected_component_orders": 24,
+  "disconnected_component_prefixes": 24,
+  "source_sha256": {
+    "native_rectangular_smith_f4.cpp": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6",
+    "native_rectangular_smith_f4.py": "5c96128e3713138a08752c22036154cb65983a0b47ca66aa2ca18949d765ce4a",
+    "search_rectangular_f4_pressure.py": "b54c4779330851aa480b664d4a0eb5f37b732213c6f612fea60a19cd93c43fd1",
+    "search_rectangular_f4_convex.py": "85e8d4ca838c9e83c91218e37498cc43e3e42016fa595d021a823fe53f814930",
+    "check_rectangular_f4_optimizer.py": "13b0ffbf0bee623a1e5853c6be6f701a4f08ac27caa76e791c34feaf794bd27f"
+  },
+  "scope": "Finite implementation checks for both cuts, independent Gibbs roots, the envelope derivative, attaining-minor inequalities across gauges, and disconnected component assembly. Floating comparisons do not certify an exponent, a global optimum, or arbitrary future profiles."
+}

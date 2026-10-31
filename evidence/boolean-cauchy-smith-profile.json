@@ -1,0 +1,531 @@
+{
+  "status": "pass",
+  "operator_cases": 47,
+  "normalized_kernel_entries_checked": 944,
+  "boolean_factorization_entries_checked": 466112,
+  "independent_smith_profiles": 40,
+  "normalized_inverse_products": 80,
+  "arbitrary_row_character_controls": 141,
+  "permanent_polynomial_coefficients_checked": 2039,
+  "source_group_crossing_ranks_checked": 22,
+  "records": [
+    {
+      "L": 2,
+      "t": -2,
+      "zeta": 0,
+      "boundary_rows": 2,
+      "orders": {
+        "0": 1,
+        "None": 3
+      }
+    },
+    {
+      "L": 2,
+      "t": -2,
+      "zeta": 1,
+      "boundary_rows": 2,
+      "orders": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      }
+    },
+    {
+      "L": 2,
+      "t": -2,
+      "zeta": 2,
+      "boundary_rows": 2,
+      "orders": {
+        "0": 1,
+        "2": 2,
+        "4": 1
+      }
+    },
+    {
+      "L": 2,
+      "t": -2,
+      "zeta": 3,
+      "boundary_rows": 2,
+      "orders": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      }
+    },
+    {
+      "L": 2,
+      "t": -1,
+      "zeta": 0,
+      "boundary_rows": 1,
+      "orders": {
+        "0": 2,
+        "None": 2
+      }
+    },
+    {
+      "L": 2,
+      "t": -1,
+      "zeta": 1,
+      "boundary_rows": 1,
+      "orders": {
+        "0": 2,
+        "1": 2
+      }
+    },
+    {
+      "L": 2,
+      "t": -1,
+      "zeta": 2,
+      "boundary_rows": 1,
+      "orders": {
+        "0": 2,
+        "2": 2
+      }
+    },
+    {
+      "L": 2,
+      "t": -1,
+      "zeta": 3,
+      "boundary_rows": 1,
+      "orders": {
+        "0": 2,
+        "1": 2
+      }
+    },
+    {
+      "L": 2,
+      "t": 1,
+      "zeta": 0,
+      "boundary_rows": 1,
+      "orders": {
+        "0": 2,
+        "None": 2
+      }
+    },
+    {
+      "L": 2,
+      "t": 1,
+      "zeta": 1,
+      "boundary_rows": 1,
+      "orders": {
+        "0": 2,
+        "1": 2
+      }
+    },
+    {
+      "L": 2,
+      "t": 1,
+      "zeta": 2,
+      "boundary_rows": 1,
+      "orders": {
+        "0": 2,
+        "2": 2
+      }
+    },
+    {
+      "L": 2,
+      "t": 1,
+      "zeta": 3,
+      "boundary_rows": 1,
+      "orders": {
+        "0": 2,
+        "1": 2
+      }
+    },
+    {
+      "L": 4,
+      "t": -4,
+      "zeta": 0,
+      "boundary_rows": 4,
+      "orders": {
+        "0": 1,
+        "None": 15
+      }
+    },
+    {
+      "L": 4,
+      "t": -4,
+      "zeta": 1,
+      "boundary_rows": 4,
+      "orders": {
+        "0": 1,
+        "1": 4,
+        "2": 6,
+        "3": 4,
+        "4": 1
+      }
+    },
+    {
+      "L": 4,
+      "t": -4,
+      "zeta": 2,
+      "boundary_rows": 4,
+      "orders": {
+        "0": 1,
+        "2": 4,
+        "4": 6,
+        "6": 4,
+        "8": 1
+      }
+    },
+    {
+      "L": 4,
+      "t": -4,
+      "zeta": 3,
+      "boundary_rows": 4,
+      "orders": {
+        "0": 1,
+        "1": 4,
+        "2": 6,
+        "3": 4,
+        "4": 1
+      }
+    },
+    {
+      "L": 4,
+      "t": -3,
+      "zeta": 0,
+      "boundary_rows": 3,
+      "orders": {
+        "0": 2,
+        "None": 14
+      }
+    },
+    {
+      "L": 4,
+      "t": -3,
+      "zeta": 1,
+      "boundary_rows": 3,
+      "orders": {
+        "0": 2,
+        "1": 6,
+        "2": 6,
+        "3": 2
+      }
+    },
+    {
+      "L": 4,
+      "t": -3,
+      "zeta": 2,
+      "boundary_rows": 3,
+      "orders": {
+        "0": 2,
+        "2": 6,
+        "4": 6,
+        "6": 2
+      }
+    },
+    {
+      "L": 4,
+      "t": -3,
+      "zeta": 3,
+      "boundary_rows": 3,
+      "orders": {
+        "0": 2,
+        "1": 6,
+        "2": 6,
+        "3": 2
+      }
+    },
+    {
+      "L": 4,
+      "t": -2,
+      "zeta": 0,
+      "boundary_rows": 2,
+      "orders": {
+        "0": 4,
+        "None": 12
+      }
+    },
+    {
+      "L": 4,
+      "t": -2,
+      "zeta": 1,
+      "boundary_rows": 2,
+      "orders": {
+        "0": 4,
+        "1": 8,
+        "2": 4
+      }
+    },
+    {
+      "L": 4,
+      "t": -2,
+      "zeta": 2,
+      "boundary_rows": 2,
+      "orders": {
+        "0": 4,
+        "2": 8,
+        "4": 4
+      }
+    },
+    {
+      "L": 4,
+      "t": -2,
+      "zeta": 3,
+      "boundary_rows": 2,
+      "orders": {
+        "0": 4,
+        "1": 8,
+        "2": 4
+      }
+    },
+    {
+      "L": 4,
+      "t": -1,
+      "zeta": 0,
+      "boundary_rows": 1,
+      "orders": {
+        "0": 8,
+        "None": 8
+      }
+    },
+    {
+      "L": 4,
+      "t": -1,
+      "zeta": 1,
+      "boundary_rows": 1,
+      "orders": {
+        "0": 8,
+        "1": 8
+      }
+    },
+    {
+      "L": 4,
+      "t": -1,
+      "zeta": 2,
+      "boundary_rows": 1,
+      "orders": {
+        "0": 8,
+        "2": 8
+      }
+    },
+    {
+      "L": 4,
+      "t": -1,
+      "zeta": 3,
+      "boundary_rows": 1,
+      "orders": {
+        "0": 8,
+        "1": 8
+      }
+    },
+    {
+      "L": 4,
+      "t": 1,
+      "zeta": 0,
+      "boundary_rows": 1,
+      "orders": {
+        "0": 8,
+        "None": 8
+      }
+    },
+    {
+      "L": 4,
+      "t": 1,
+      "zeta": 1,
+      "boundary_rows": 1,
+      "orders": {
+        "0": 8,
+        "1": 8
+      }
+    },
+    {
+      "L": 4,
+      "t": 1,
+      "zeta": 2,
+      "boundary_rows": 1,
+      "orders": {
+        "0": 8,
+        "2": 8
+      }
+    },
+    {
+      "L": 4,
+      "t": 1,
+      "zeta": 3,
+      "boundary_rows": 1,
+      "orders": {
+        "0": 8,
+        "1": 8
+      }
+    },
+    {
+      "L": 4,
+      "t": 2,
+      "zeta": 0,
+      "boundary_rows": 2,
+      "orders": {
+        "0": 4,
+        "None": 12
+      }
+    },
+    {
+      "L": 4,
+      "t": 2,
+      "zeta": 1,
+      "boundary_rows": 2,
+      "orders": {
+        "0": 4,
+        "1": 8,
+        "2": 4
+      }
+    },
+    {
+      "L": 4,
+      "t": 2,
+      "zeta": 2,
+      "boundary_rows": 2,
+      "orders": {
+        "0": 4,
+        "2": 8,
+        "4": 4
+      }
+    },
+    {
+      "L": 4,
+      "t": 2,
+      "zeta": 3,
+      "boundary_rows": 2,
+      "orders": {
+        "0": 4,
+        "1": 8,
+        "2": 4
+      }
+    },
+    {
+      "L": 4,
+      "t": 3,
+      "zeta": 0,
+      "boundary_rows": 3,
+      "orders": {
+        "0": 2,
+        "None": 14
+      }
+    },
+    {
+      "L": 4,
+      "t": 3,
+      "zeta": 1,
+      "boundary_rows": 3,
+      "orders": {
+        "0": 2,
+        "1": 6,
+        "2": 6,
+        "3": 2
+      }
+    },
+    {
+      "L": 4,
+      "t": 3,
+      "zeta": 2,
+      "boundary_rows": 3,
+      "orders": {
+        "0": 2,
+        "2": 6,
+        "4": 6,
+        "6": 2
+      }
+    },
+    {
+      "L": 4,
+      "t": 3,
+      "zeta": 3,
+      "boundary_rows": 3,
+      "orders": {
+        "0": 2,
+        "1": 6,
+        "2": 6,
+        "3": 2
+      }
+    },
+    {
+      "L": 8,
+      "t": -8,
+      "zeta": 1,
+      "boundary_rows": 8,
+      "orders": {
+        "0": 1,
+        "1": 8,
+        "2": 28,
+        "3": 56,
+        "4": 70,
+        "5": 56,
+        "6": 28,
+        "7": 8,
+        "8": 1
+      }
+    },
+    {
+      "L": 8,
+      "t": -3,
+      "zeta": 1,
+      "boundary_rows": 3,
+      "orders": {
+        "0": 32,
+        "1": 96,
+        "2": 96,
+        "3": 32
+      }
+    },
+    {
+      "L": 8,
+      "t": -1,
+      "zeta": 1,
+      "boundary_rows": 1,
+      "orders": {
+        "0": 128,
+        "1": 128
+      }
+    },
+    {
+      "L": 8,
+      "t": 1,
+      "zeta": 1,
+      "boundary_rows": 1,
+      "orders": {
+        "0": 128,
+        "1": 128
+      }
+    },
+    {
+      "L": 8,
+      "t": 3,
+      "zeta": 1,
+      "boundary_rows": 3,
+      "orders": {
+        "0": 32,
+        "1": 96,
+        "2": 96,
+        "3": 32
+      }
+    },
+    {
+      "L": 8,
+      "t": 1,
+      "zeta": 0,
+      "boundary_rows": 1,
+      "orders": {
+        "0": 128,
+        "None": 128
+      }
+    },
+    {
+      "L": 8,
+      "t": 1,
+      "zeta": 2,
+      "boundary_rows": 1,
+      "orders": {
+        "0": 128,
+        "2": 128
+      }
+    }
+  ],
+  "source_sha256": {
+    "tools/boolean_cauchy_operator.py": "1d9c4c2993f977e02c3a742ffa388e893ab95f3c99d1de13aa25e038ef0bcb30",
+    "tools/check_boolean_cauchy_smith.py": "36fcda0367519e0d1157a3672478e32eceda57c08822d944027ee2a24e98fe91",
+    "tools/cauchy_packet_polynomials.py": "92d102c11cc42db9caadd028b5552b068ae9d734c46a4c4f5791662cc5be83cc",
+    "research/boolean-cauchy-smith-profile.md": "daf4484d38ba45e477af7718fbf901bd95808756c9e6589f8a654416f540d0c7"
+  },
+  "scope": "Finite exact controls for an all-size Boolean substitution Smith theorem, parity-character identity, normalized inverse, and specified group-cut obstruction. The inverse-entry complexity proof is separate; no scalar decoder or improved factoring score is claimed."
+}

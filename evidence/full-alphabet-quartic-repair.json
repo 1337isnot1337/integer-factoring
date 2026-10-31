@@ -1,0 +1,1893 @@
+{
+  "status": "exact full-alphabet quartic repairs; no pressure bound",
+  "symbolic_partial_identity": {
+    "ring": "F2[gamma]",
+    "matrix_entries_checked": 256,
+    "cleared_endpoint_matrix": [
+      [
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        3,
+        0,
+        0,
+        3,
+        0,
+        0
+      ],
+      [
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        3,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3
+      ]
+    ]
+  },
+  "residual_cases": [
+    {
+      "gamma": 0,
+      "rank": 16,
+      "determinant": 1
+    },
+    {
+      "gamma": 1,
+      "rank": 12,
+      "determinant": 0
+    },
+    {
+      "gamma": 2,
+      "rank": 16,
+      "determinant": 3
+    },
+    {
+      "gamma": 3,
+      "rank": 16,
+      "determinant": 2
+    }
+  ],
+  "residual_projector_binary_row_masks": [
+    1,
+    0,
+    0,
+    8,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    4096,
+    4096,
+    1,
+    8,
+    32768
+  ],
+  "projector_rank": 4,
+  "cases": [
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        1
+      ],
+      "ambient": 2,
+      "gamma": 0,
+      "dimensions": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "q_x": 4,
+      "q_u": 4,
+      "bulk_size": 1,
+      "repair_kind": "full_alphabet_quartic_partial",
+      "denominator_degree": 0,
+      "cancelled_c_order": 4,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "residual_rank": 16,
+      "residual_determinant": 1,
+      "logical_heights_x_v": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "logical_heights_u_y": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "degree": 8,
+      "ramified_endpoint_checks": 256,
+      "two_copy_type_checks": 784,
+      "independent_exterior_checks": 256,
+      "wick_minor_checks": 36,
+      "non_gaussian_witness": null,
+      "coefficient_sha256": "27ba23d01f93d70f0d02677c4a327e5c104107a520b13bde446f3cd43da3bc49"
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        1
+      ],
+      "ambient": 2,
+      "gamma": 2,
+      "dimensions": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "q_x": 4,
+      "q_u": 4,
+      "bulk_size": 1,
+      "repair_kind": "full_alphabet_quartic_partial",
+      "denominator_degree": 0,
+      "cancelled_c_order": 4,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "residual_rank": 16,
+      "residual_determinant": 3,
+      "logical_heights_x_v": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "logical_heights_u_y": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "degree": 8,
+      "ramified_endpoint_checks": 256,
+      "two_copy_type_checks": 784,
+      "independent_exterior_checks": 256,
+      "wick_minor_checks": 36,
+      "non_gaussian_witness": {
+        "rows": [
+          1,
+          3
+        ],
+        "columns": [
+          0,
+          1
+        ],
+        "nonzero_difference": [
+          "0xf",
+          "0xf"
+        ]
+      },
+      "coefficient_sha256": "ad46d79bd18c63c11f7687155f1f322fa6e38b04d41c28b00cfb2752df7556cb"
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        1
+      ],
+      "ambient": 2,
+      "gamma": 3,
+      "dimensions": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "q_x": 4,
+      "q_u": 4,
+      "bulk_size": 1,
+      "repair_kind": "full_alphabet_quartic_partial",
+      "denominator_degree": 0,
+      "cancelled_c_order": 4,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "residual_rank": 16,
+      "residual_determinant": 2,
+      "logical_heights_x_v": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "logical_heights_u_y": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "degree": 8,
+      "ramified_endpoint_checks": 256,
+      "two_copy_type_checks": 784,
+      "independent_exterior_checks": 256,
+      "wick_minor_checks": 36,
+      "non_gaussian_witness": {
+        "rows": [
+          1,
+          3
+        ],
+        "columns": [
+          0,
+          1
+        ],
+        "nonzero_difference": [
+          "0x0",
+          "0xf"
+        ]
+      },
+      "coefficient_sha256": "eac5a60cd8b5ef9207b629849033e3b9a8e74028d17c7fde1bfadb0b9a45020b"
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        1
+      ],
+      "ambient": 2,
+      "gamma": 0,
+      "dimensions": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "q_x": 4,
+      "q_u": 4,
+      "bulk_size": 1,
+      "repair_kind": "full_alphabet_quartic_inverse",
+      "denominator_degree": 0,
+      "cancelled_c_order": 4,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "residual_rank": 16,
+      "residual_determinant": 1,
+      "logical_heights_x_v": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "logical_heights_u_y": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "degree": 9,
+      "ramified_endpoint_checks": 256,
+      "two_copy_type_checks": 784,
+      "independent_exterior_checks": 256,
+      "wick_minor_checks": 36,
+      "non_gaussian_witness": null,
+      "coefficient_sha256": "caf5f05cd093baced34f25381d572704cd290ec7b1f9b00c13a9f6930f74954d"
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        1
+      ],
+      "ambient": 2,
+      "gamma": 2,
+      "dimensions": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "q_x": 4,
+      "q_u": 4,
+      "bulk_size": 1,
+      "repair_kind": "full_alphabet_quartic_inverse",
+      "denominator_degree": 0,
+      "cancelled_c_order": 4,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "residual_rank": 16,
+      "residual_determinant": 3,
+      "logical_heights_x_v": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "logical_heights_u_y": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "degree": 9,
+      "ramified_endpoint_checks": 256,
+      "two_copy_type_checks": 784,
+      "independent_exterior_checks": 256,
+      "wick_minor_checks": 36,
+      "non_gaussian_witness": {
+        "rows": [
+          0,
+          1
+        ],
+        "columns": [
+          0,
+          1
+        ],
+        "nonzero_difference": [
+          "0x11",
+          "0x11"
+        ]
+      },
+      "coefficient_sha256": "f78414d89ccba205c141ced179f0005fbc2a0e423a65a77ed2f3aeaa57523151"
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        1
+      ],
+      "ambient": 2,
+      "gamma": 3,
+      "dimensions": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "q_x": 4,
+      "q_u": 4,
+      "bulk_size": 1,
+      "repair_kind": "full_alphabet_quartic_inverse",
+      "denominator_degree": 0,
+      "cancelled_c_order": 4,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "residual_rank": 16,
+      "residual_determinant": 2,
+      "logical_heights_x_v": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "logical_heights_u_y": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "degree": 9,
+      "ramified_endpoint_checks": 256,
+      "two_copy_type_checks": 784,
+      "independent_exterior_checks": 256,
+      "wick_minor_checks": 36,
+      "non_gaussian_witness": {
+        "rows": [
+          0,
+          1
+        ],
+        "columns": [
+          0,
+          1
+        ],
+        "nonzero_difference": [
+          "0x0",
+          "0x11"
+        ]
+      },
+      "coefficient_sha256": "264a8de4e0fb44a0af38c7556f74642926634df2b3f51326a72a891b000d9ff0"
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        1,
+        2
+      ],
+      "ambient": 4,
+      "gamma": 0,
+      "dimensions": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "q_x": 8,
+      "q_u": 8,
+      "bulk_size": 2,
+      "repair_kind": "full_alphabet_quartic_partial",
+      "denominator_degree": 0,
+      "cancelled_c_order": 4,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "residual_rank": 16,
+      "residual_determinant": 1,
+      "logical_heights_x_v": [
+        0,
+        1,
+        0,
+        1,
+        2,
+        3,
+        2,
+        3
+      ],
+      "logical_heights_u_y": [
+        0,
+        1,
+        0,
+        1,
+        2,
+        3,
+        2,
+        3
+      ],
+      "degree": 24,
+      "ramified_endpoint_checks": 4096,
+      "two_copy_type_checks": 14400,
+      "independent_exterior_checks": 4096,
+      "wick_minor_checks": 225,
+      "non_gaussian_witness": null,
+      "coefficient_sha256": "71d9f60de56a59c3a0bb68106847ea6b754535ce73da61a160c593b3f542d35a"
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        1,
+        2
+      ],
+      "ambient": 4,
+      "gamma": 2,
+      "dimensions": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "q_x": 8,
+      "q_u": 8,
+      "bulk_size": 2,
+      "repair_kind": "full_alphabet_quartic_partial",
+      "denominator_degree": 1,
+      "cancelled_c_order": 3,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "residual_rank": 16,
+      "residual_determinant": 3,
+      "logical_heights_x_v": [
+        0,
+        1,
+        0,
+        1,
+        2,
+        3,
+        2,
+        3
+      ],
+      "logical_heights_u_y": [
+        0,
+        1,
+        0,
+        1,
+        2,
+        3,
+        2,
+        3
+      ],
+      "degree": 25,
+      "ramified_endpoint_checks": 4096,
+      "two_copy_type_checks": 14400,
+      "independent_exterior_checks": 4096,
+      "wick_minor_checks": 225,
+      "non_gaussian_witness": {
+        "rows": [
+          2,
+          5
+        ],
+        "columns": [
+          0,
+          1
+        ],
+        "nonzero_difference": [
+          "0x3",
+          "0x3"
+        ]
+      },
+      "coefficient_sha256": "ff53306f7afad530a2a0d94ba9cdd314c08d10e44b18d023e84fd2d86517dd35"
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        1,
+        2
+      ],
+      "ambient": 4,
+      "gamma": 3,
+      "dimensions": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "q_x": 8,
+      "q_u": 8,
+      "bulk_size": 2,
+      "repair_kind": "full_alphabet_quartic_partial",
+      "denominator_degree": 1,
+      "cancelled_c_order": 3,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "residual_rank": 16,
+      "residual_determinant": 2,
+      "logical_heights_x_v": [
+        0,
+        1,
+        0,
+        1,
+        2,
+        3,
+        2,
+        3
+      ],
+      "logical_heights_u_y": [
+        0,
+        1,
+        0,
+        1,
+        2,
+        3,
+        2,
+        3
+      ],
+      "degree": 25,
+      "ramified_endpoint_checks": 4096,
+      "two_copy_type_checks": 14400,
+      "independent_exterior_checks": 4096,
+      "wick_minor_checks": 225,
+      "non_gaussian_witness": {
+        "rows": [
+          2,
+          5
+        ],
+        "columns": [
+          0,
+          1
+        ],
+        "nonzero_difference": [
+          "0x0",
+          "0x3"
+        ]
+      },
+      "coefficient_sha256": "85e20d3ea1da6a4ae24e9518608c8d5b9474e234fbd78f847feef14c7bfa88f3"
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        1,
+        2
+      ],
+      "ambient": 4,
+      "gamma": 0,
+      "dimensions": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "q_x": 8,
+      "q_u": 8,
+      "bulk_size": 2,
+      "repair_kind": "full_alphabet_quartic_inverse",
+      "denominator_degree": 0,
+      "cancelled_c_order": 4,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "residual_rank": 16,
+      "residual_determinant": 1,
+      "logical_heights_x_v": [
+        0,
+        1,
+        0,
+        1,
+        2,
+        3,
+        2,
+        3
+      ],
+      "logical_heights_u_y": [
+        0,
+        1,
+        0,
+        1,
+        2,
+        3,
+        2,
+        3
+      ],
+      "degree": 25,
+      "ramified_endpoint_checks": 4096,
+      "two_copy_type_checks": 14400,
+      "independent_exterior_checks": 4096,
+      "wick_minor_checks": 225,
+      "non_gaussian_witness": null,
+      "coefficient_sha256": "8cac1668124f47f31a826639480adc50f76731059938d94bb87718a8af58d460"
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        1,
+        2
+      ],
+      "ambient": 4,
+      "gamma": 2,
+      "dimensions": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "q_x": 8,
+      "q_u": 8,
+      "bulk_size": 2,
+      "repair_kind": "full_alphabet_quartic_inverse",
+      "denominator_degree": 1,
+      "cancelled_c_order": 3,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "residual_rank": 16,
+      "residual_determinant": 3,
+      "logical_heights_x_v": [
+        0,
+        1,
+        0,
+        1,
+        2,
+        3,
+        2,
+        3
+      ],
+      "logical_heights_u_y": [
+        0,
+        1,
+        0,
+        1,
+        2,
+        3,
+        2,
+        3
+      ],
+      "degree": 26,
+      "ramified_endpoint_checks": 4096,
+      "two_copy_type_checks": 14400,
+      "independent_exterior_checks": 4096,
+      "wick_minor_checks": 225,
+      "non_gaussian_witness": {
+        "rows": [
+          0,
+          2
+        ],
+        "columns": [
+          0,
+          1
+        ],
+        "nonzero_difference": [
+          "0x5",
+          "0x5"
+        ]
+      },
+      "coefficient_sha256": "89dc27dd34b6b3ea1da6572397987d21115faecefb019a9c1cbaf8feb8dd528b"
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        1,
+        2
+      ],
+      "ambient": 4,
+      "gamma": 3,
+      "dimensions": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "q_x": 8,
+      "q_u": 8,
+      "bulk_size": 2,
+      "repair_kind": "full_alphabet_quartic_inverse",
+      "denominator_degree": 1,
+      "cancelled_c_order": 3,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "residual_rank": 16,
+      "residual_determinant": 2,
+      "logical_heights_x_v": [
+        0,
+        1,
+        0,
+        1,
+        2,
+        3,
+        2,
+        3
+      ],
+      "logical_heights_u_y": [
+        0,
+        1,
+        0,
+        1,
+        2,
+        3,
+        2,
+        3
+      ],
+      "degree": 26,
+      "ramified_endpoint_checks": 4096,
+      "two_copy_type_checks": 14400,
+      "independent_exterior_checks": 4096,
+      "wick_minor_checks": 225,
+      "non_gaussian_witness": {
+        "rows": [
+          0,
+          2
+        ],
+        "columns": [
+          0,
+          1
+        ],
+        "nonzero_difference": [
+          "0x0",
+          "0x5"
+        ]
+      },
+      "coefficient_sha256": "0ef061b9ebf83f406aa0a5ca0670f7563335a993c6459ec7c6b50ef6a794b4d6"
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        2,
+        5
+      ],
+      "ambient": 8,
+      "gamma": 0,
+      "dimensions": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "q_x": 8,
+      "q_u": 8,
+      "bulk_size": 2,
+      "repair_kind": "full_alphabet_quartic_partial",
+      "denominator_degree": 0,
+      "cancelled_c_order": 4,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "residual_rank": 16,
+      "residual_determinant": 1,
+      "logical_heights_x_v": [
+        0,
+        2,
+        0,
+        2,
+        5,
+        7,
+        5,
+        7
+      ],
+      "logical_heights_u_y": [
+        0,
+        2,
+        0,
+        2,
+        5,
+        7,
+        5,
+        7
+      ],
+      "degree": 48,
+      "ramified_endpoint_checks": 4096,
+      "two_copy_type_checks": 14400,
+      "independent_exterior_checks": 4096,
+      "wick_minor_checks": 225,
+      "non_gaussian_witness": null,
+      "coefficient_sha256": "72e5f016a0894affa2215f8fdb91a3047704ba1dce349b260abefa8659ad49e1"
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        2,
+        5
+      ],
+      "ambient": 8,
+      "gamma": 2,
+      "dimensions": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "q_x": 8,
+      "q_u": 8,
+      "bulk_size": 2,
+      "repair_kind": "full_alphabet_quartic_partial",
+      "denominator_degree": 1,
+      "cancelled_c_order": 3,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "residual_rank": 16,
+      "residual_determinant": 3,
+      "logical_heights_x_v": [
+        0,
+        2,
+        0,
+        2,
+        5,
+        7,
+        5,
+        7
+      ],
+      "logical_heights_u_y": [
+        0,
+        2,
+        0,
+        2,
+        5,
+        7,
+        5,
+        7
+      ],
+      "degree": 49,
+      "ramified_endpoint_checks": 4096,
+      "two_copy_type_checks": 14400,
+      "independent_exterior_checks": 4096,
+      "wick_minor_checks": 225,
+      "non_gaussian_witness": {
+        "rows": [
+          2,
+          5
+        ],
+        "columns": [
+          0,
+          1
+        ],
+        "nonzero_difference": [
+          "0x3",
+          "0x3"
+        ]
+      },
+      "coefficient_sha256": "40ed2c4d43326f59d3324d42d86016aacfa098ab3d9e1f989cd2d043c76f8d86"
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        2,
+        5
+      ],
+      "ambient": 8,
+      "gamma": 3,
+      "dimensions": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "q_x": 8,
+      "q_u": 8,
+      "bulk_size": 2,
+      "repair_kind": "full_alphabet_quartic_partial",
+      "denominator_degree": 1,
+      "cancelled_c_order": 3,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "residual_rank": 16,
+      "residual_determinant": 2,
+      "logical_heights_x_v": [
+        0,
+        2,
+        0,
+        2,
+        5,
+        7,
+        5,
+        7
+      ],
+      "logical_heights_u_y": [
+        0,
+        2,
+        0,
+        2,
+        5,
+        7,
+        5,
+        7
+      ],
+      "degree": 49,
+      "ramified_endpoint_checks": 4096,
+      "two_copy_type_checks": 14400,
+      "independent_exterior_checks": 4096,
+      "wick_minor_checks": 225,
+      "non_gaussian_witness": {
+        "rows": [
+          2,
+          5
+        ],
+        "columns": [
+          0,
+          1
+        ],
+        "nonzero_difference": [
+          "0x0",
+          "0x3"
+        ]
+      },
+      "coefficient_sha256": "729173d9878573fbdd9bfb1f41e49b79dd8f998707562ffd5bb11223cc4d73d8"
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        2,
+        5
+      ],
+      "ambient": 8,
+      "gamma": 0,
+      "dimensions": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "q_x": 8,
+      "q_u": 8,
+      "bulk_size": 2,
+      "repair_kind": "full_alphabet_quartic_inverse",
+      "denominator_degree": 0,
+      "cancelled_c_order": 4,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "residual_rank": 16,
+      "residual_determinant": 1,
+      "logical_heights_x_v": [
+        0,
+        2,
+        0,
+        2,
+        5,
+        7,
+        5,
+        7
+      ],
+      "logical_heights_u_y": [
+        0,
+        2,
+        0,
+        2,
+        5,
+        7,
+        5,
+        7
+      ],
+      "degree": 49,
+      "ramified_endpoint_checks": 4096,
+      "two_copy_type_checks": 14400,
+      "independent_exterior_checks": 4096,
+      "wick_minor_checks": 225,
+      "non_gaussian_witness": null,
+      "coefficient_sha256": "f11cdb69f53bd5863994591381b14a2f2033dadff69c6a362a2f8223995fcfeb"
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        2,
+        5
+      ],
+      "ambient": 8,
+      "gamma": 2,
+      "dimensions": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "q_x": 8,
+      "q_u": 8,
+      "bulk_size": 2,
+      "repair_kind": "full_alphabet_quartic_inverse",
+      "denominator_degree": 1,
+      "cancelled_c_order": 3,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "residual_rank": 16,
+      "residual_determinant": 3,
+      "logical_heights_x_v": [
+        0,
+        2,
+        0,
+        2,
+        5,
+        7,
+        5,
+        7
+      ],
+      "logical_heights_u_y": [
+        0,
+        2,
+        0,
+        2,
+        5,
+        7,
+        5,
+        7
+      ],
+      "degree": 50,
+      "ramified_endpoint_checks": 4096,
+      "two_copy_type_checks": 14400,
+      "independent_exterior_checks": 4096,
+      "wick_minor_checks": 225,
+      "non_gaussian_witness": {
+        "rows": [
+          0,
+          2
+        ],
+        "columns": [
+          0,
+          1
+        ],
+        "nonzero_difference": [
+          "0x5",
+          "0x5"
+        ]
+      },
+      "coefficient_sha256": "effe927c8f588465e023dd332cf4171249a57e7445a23eb03f51df37a93d9eab"
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        2,
+        5
+      ],
+      "ambient": 8,
+      "gamma": 3,
+      "dimensions": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "q_x": 8,
+      "q_u": 8,
+      "bulk_size": 2,
+      "repair_kind": "full_alphabet_quartic_inverse",
+      "denominator_degree": 1,
+      "cancelled_c_order": 3,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "residual_rank": 16,
+      "residual_determinant": 2,
+      "logical_heights_x_v": [
+        0,
+        2,
+        0,
+        2,
+        5,
+        7,
+        5,
+        7
+      ],
+      "logical_heights_u_y": [
+        0,
+        2,
+        0,
+        2,
+        5,
+        7,
+        5,
+        7
+      ],
+      "degree": 50,
+      "ramified_endpoint_checks": 4096,
+      "two_copy_type_checks": 14400,
+      "independent_exterior_checks": 4096,
+      "wick_minor_checks": 225,
+      "non_gaussian_witness": {
+        "rows": [
+          0,
+          2
+        ],
+        "columns": [
+          0,
+          1
+        ],
+        "nonzero_difference": [
+          "0x0",
+          "0x5"
+        ]
+      },
+      "coefficient_sha256": "2b4918654e330c260efa0754dee41e34032b0b3e39331caf7a52804fd6b8049a"
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "ambient": 4,
+      "gamma": 0,
+      "dimensions": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "q_x": 16,
+      "q_u": 16,
+      "bulk_size": 4,
+      "repair_kind": "full_alphabet_quartic_partial",
+      "denominator_degree": 0,
+      "cancelled_c_order": 4,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "residual_rank": 16,
+      "residual_determinant": 1,
+      "logical_heights_x_v": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        1,
+        2,
+        3,
+        3,
+        4,
+        5,
+        6,
+        3,
+        4,
+        5,
+        6
+      ],
+      "logical_heights_u_y": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        1,
+        2,
+        3,
+        3,
+        4,
+        5,
+        6,
+        3,
+        4,
+        5,
+        6
+      ],
+      "degree": 32,
+      "ramified_endpoint_checks": 65536,
+      "two_copy_type_checks": 246016,
+      "independent_exterior_checks": 65536,
+      "wick_minor_checks": 784,
+      "non_gaussian_witness": null,
+      "coefficient_sha256": "da98ba1d8aa0d0f6d25f75cce6596cfc4722f2d98e8e02dc4b5419f7f90cd4b3"
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "ambient": 4,
+      "gamma": 2,
+      "dimensions": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "q_x": 16,
+      "q_u": 16,
+      "bulk_size": 4,
+      "repair_kind": "full_alphabet_quartic_partial",
+      "denominator_degree": 1,
+      "cancelled_c_order": 3,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "residual_rank": 16,
+      "residual_determinant": 3,
+      "logical_heights_x_v": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        1,
+        2,
+        3,
+        3,
+        4,
+        5,
+        6,
+        3,
+        4,
+        5,
+        6
+      ],
+      "logical_heights_u_y": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        1,
+        2,
+        3,
+        3,
+        4,
+        5,
+        6,
+        3,
+        4,
+        5,
+        6
+      ],
+      "degree": 33,
+      "ramified_endpoint_checks": 65536,
+      "two_copy_type_checks": 246016,
+      "independent_exterior_checks": 65536,
+      "wick_minor_checks": 784,
+      "non_gaussian_witness": {
+        "rows": [
+          3,
+          7
+        ],
+        "columns": [
+          0,
+          1
+        ],
+        "nonzero_difference": [
+          "0x3",
+          "0x3"
+        ]
+      },
+      "coefficient_sha256": "ed823d08044c93d1702b93027f34a4a8bd544baa25fbcde6113cf25581657f72"
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "ambient": 4,
+      "gamma": 3,
+      "dimensions": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "q_x": 16,
+      "q_u": 16,
+      "bulk_size": 4,
+      "repair_kind": "full_alphabet_quartic_partial",
+      "denominator_degree": 1,
+      "cancelled_c_order": 3,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "residual_rank": 16,
+      "residual_determinant": 2,
+      "logical_heights_x_v": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        1,
+        2,
+        3,
+        3,
+        4,
+        5,
+        6,
+        3,
+        4,
+        5,
+        6
+      ],
+      "logical_heights_u_y": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        1,
+        2,
+        3,
+        3,
+        4,
+        5,
+        6,
+        3,
+        4,
+        5,
+        6
+      ],
+      "degree": 33,
+      "ramified_endpoint_checks": 65536,
+      "two_copy_type_checks": 246016,
+      "independent_exterior_checks": 65536,
+      "wick_minor_checks": 784,
+      "non_gaussian_witness": {
+        "rows": [
+          3,
+          7
+        ],
+        "columns": [
+          0,
+          1
+        ],
+        "nonzero_difference": [
+          "0x0",
+          "0x3"
+        ]
+      },
+      "coefficient_sha256": "39afb4a64de37da6d2cf70616e069ab140c82602e45cc34d8673ddb0238e7f9a"
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "ambient": 4,
+      "gamma": 0,
+      "dimensions": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "q_x": 16,
+      "q_u": 16,
+      "bulk_size": 4,
+      "repair_kind": "full_alphabet_quartic_inverse",
+      "denominator_degree": 0,
+      "cancelled_c_order": 4,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "residual_rank": 16,
+      "residual_determinant": 1,
+      "logical_heights_x_v": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        1,
+        2,
+        3,
+        3,
+        4,
+        5,
+        6,
+        3,
+        4,
+        5,
+        6
+      ],
+      "logical_heights_u_y": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        1,
+        2,
+        3,
+        3,
+        4,
+        5,
+        6,
+        3,
+        4,
+        5,
+        6
+      ],
+      "degree": 33,
+      "ramified_endpoint_checks": 65536,
+      "two_copy_type_checks": 246016,
+      "independent_exterior_checks": 65536,
+      "wick_minor_checks": 784,
+      "non_gaussian_witness": null,
+      "coefficient_sha256": "86bcd3b7dd366fdd44374cc6e031d74e2a7b3b699dc4c3dde5cc3d6b4d99c736"
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "ambient": 4,
+      "gamma": 2,
+      "dimensions": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "q_x": 16,
+      "q_u": 16,
+      "bulk_size": 4,
+      "repair_kind": "full_alphabet_quartic_inverse",
+      "denominator_degree": 1,
+      "cancelled_c_order": 3,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "residual_rank": 16,
+      "residual_determinant": 3,
+      "logical_heights_x_v": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        1,
+        2,
+        3,
+        3,
+        4,
+        5,
+        6,
+        3,
+        4,
+        5,
+        6
+      ],
+      "logical_heights_u_y": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        1,
+        2,
+        3,
+        3,
+        4,
+        5,
+        6,
+        3,
+        4,
+        5,
+        6
+      ],
+      "degree": 34,
+      "ramified_endpoint_checks": 65536,
+      "two_copy_type_checks": 246016,
+      "independent_exterior_checks": 65536,
+      "wick_minor_checks": 784,
+      "non_gaussian_witness": {
+        "rows": [
+          0,
+          3
+        ],
+        "columns": [
+          0,
+          1
+        ],
+        "nonzero_difference": [
+          "0x5",
+          "0x5"
+        ]
+      },
+      "coefficient_sha256": "6b5916216c623f4e5c460665f8d7a741d47c9a36bf4100ecadc926243378ba2f"
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "ambient": 4,
+      "gamma": 3,
+      "dimensions": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "q_x": 16,
+      "q_u": 16,
+      "bulk_size": 4,
+      "repair_kind": "full_alphabet_quartic_inverse",
+      "denominator_degree": 1,
+      "cancelled_c_order": 3,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "residual_rank": 16,
+      "residual_determinant": 2,
+      "logical_heights_x_v": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        1,
+        2,
+        3,
+        3,
+        4,
+        5,
+        6,
+        3,
+        4,
+        5,
+        6
+      ],
+      "logical_heights_u_y": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        1,
+        2,
+        3,
+        3,
+        4,
+        5,
+        6,
+        3,
+        4,
+        5,
+        6
+      ],
+      "degree": 34,
+      "ramified_endpoint_checks": 65536,
+      "two_copy_type_checks": 246016,
+      "independent_exterior_checks": 65536,
+      "wick_minor_checks": 784,
+      "non_gaussian_witness": {
+        "rows": [
+          0,
+          3
+        ],
+        "columns": [
+          0,
+          1
+        ],
+        "nonzero_difference": [
+          "0x0",
+          "0x5"
+        ]
+      },
+      "coefficient_sha256": "7a99d94bf6c3f53c3286c8f5306a1a0450f45d9d4a4701aeb80229e649c19010"
+    }
+  ],
+  "source_sha256": "2f63b45a5f5eb6e5913d12c70301f8d665631d0d62ccb5413293a52d06ba5976"
+}

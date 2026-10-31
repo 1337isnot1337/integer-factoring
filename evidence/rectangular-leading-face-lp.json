@@ -1,0 +1,4774 @@
+{
+  "status": "Exact primal and dual certificates for a finite fitted slope model; symbolic slope verification remains open.",
+  "constraints": [
+    {
+      "place": "infinity",
+      "entry": [0,0],
+      "fitted_slope": 0,
+      "fitted_offset": 0,
+      "feature": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [1,1],
+      "fitted_slope": -2,
+      "fitted_offset": 3,
+      "feature": [1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [2,64],
+      "fitted_slope": 0,
+      "fitted_offset": -1,
+      "feature": [1,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [3,5],
+      "fitted_slope": -2,
+      "fitted_offset": 6,
+      "feature": [2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [3,65],
+      "fitted_slope": -2,
+      "fitted_offset": 2,
+      "feature": [2,2,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [7,21],
+      "fitted_slope": -2,
+      "fitted_offset": 5,
+      "feature": [3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [7,69],
+      "fitted_slope": -2,
+      "fitted_offset": 5,
+      "feature": [3,3,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [8,1],
+      "fitted_slope": -2,
+      "fitted_offset": 3,
+      "feature": [1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [8,32],
+      "fitted_slope": -2,
+      "fitted_offset": 1,
+      "feature": [1,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [8,64],
+      "fitted_slope": 0,
+      "fitted_offset": -1,
+      "feature": [1,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [9,3],
+      "fitted_slope": -4,
+      "fitted_offset": 4,
+      "feature": [2,2,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [9,33],
+      "fitted_slope": -4,
+      "fitted_offset": 4,
+      "feature": [2,2,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [9,65],
+      "fitted_slope": -2,
+      "fitted_offset": 2,
+      "feature": [2,2,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [10,64],
+      "fitted_slope": -1,
+      "fitted_offset": -1,
+      "feature": [2,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [11,7],
+      "fitted_slope": -4,
+      "fitted_offset": 7,
+      "feature": [3,3,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [11,37],
+      "fitted_slope": -4,
+      "fitted_offset": 7,
+      "feature": [3,3,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [11,65],
+      "fitted_slope": -3,
+      "fitted_offset": 2,
+      "feature": [3,2,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [11,67],
+      "fitted_slope": -4,
+      "fitted_offset": 3,
+      "feature": [3,3,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [15,23],
+      "fitted_slope": -4,
+      "fitted_offset": 6,
+      "feature": [4,4,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [15,53],
+      "fitted_slope": -4,
+      "fitted_offset": 6,
+      "feature": [4,4,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [15,69],
+      "fitted_slope": -3,
+      "fitted_offset": 5,
+      "feature": [4,3,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [15,71],
+      "fitted_slope": -4,
+      "fitted_offset": 6,
+      "feature": [4,4,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [16,16],
+      "fitted_slope": 0,
+      "fitted_offset": -1,
+      "feature": [1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [16,64],
+      "fitted_slope": 0,
+      "fitted_offset": -1,
+      "feature": [1,1,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [17,17],
+      "fitted_slope": -2,
+      "fitted_offset": 2,
+      "feature": [2,2,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [17,65],
+      "fitted_slope": -2,
+      "fitted_offset": 2,
+      "feature": [2,2,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [19,21],
+      "fitted_slope": -2,
+      "fitted_offset": 5,
+      "feature": [3,3,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [19,69],
+      "fitted_slope": -2,
+      "fitted_offset": 5,
+      "feature": [3,3,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [23,29],
+      "fitted_slope": 0,
+      "fitted_offset": 2,
+      "feature": [4,4,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [23,77],
+      "fitted_slope": 0,
+      "fitted_offset": 2,
+      "feature": [4,4,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [24,17],
+      "fitted_slope": -2,
+      "fitted_offset": 2,
+      "feature": [2,2,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [24,48],
+      "fitted_slope": -2,
+      "fitted_offset": 0,
+      "feature": [2,2,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [24,64],
+      "fitted_slope": -1,
+      "fitted_offset": -1,
+      "feature": [2,1,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [24,65],
+      "fitted_slope": -2,
+      "fitted_offset": 2,
+      "feature": [2,2,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [25,19],
+      "fitted_slope": -4,
+      "fitted_offset": 3,
+      "feature": [3,3,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [25,49],
+      "fitted_slope": -4,
+      "fitted_offset": 3,
+      "feature": [3,3,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [25,65],
+      "fitted_slope": -3,
+      "fitted_offset": 2,
+      "feature": [3,2,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [25,67],
+      "fitted_slope": -4,
+      "fitted_offset": 3,
+      "feature": [3,3,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [27,23],
+      "fitted_slope": -4,
+      "fitted_offset": 6,
+      "feature": [4,4,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [27,53],
+      "fitted_slope": -4,
+      "fitted_offset": 6,
+      "feature": [4,4,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [27,69],
+      "fitted_slope": -3,
+      "fitted_offset": 5,
+      "feature": [4,3,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [27,71],
+      "fitted_slope": -4,
+      "fitted_offset": 6,
+      "feature": [4,4,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [31,31],
+      "fitted_slope": -2,
+      "fitted_offset": 3,
+      "feature": [5,5,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [31,61],
+      "fitted_slope": -2,
+      "fitted_offset": 3,
+      "feature": [5,5,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [31,77],
+      "fitted_slope": -1,
+      "fitted_offset": 2,
+      "feature": [5,4,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [31,79],
+      "fitted_slope": -2,
+      "fitted_offset": 3,
+      "feature": [5,5,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [32,2],
+      "fitted_slope": -2,
+      "fitted_offset": 1,
+      "feature": [1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [32,32],
+      "fitted_slope": -2,
+      "fitted_offset": 1,
+      "feature": [1,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [33,3],
+      "fitted_slope": -4,
+      "fitted_offset": 4,
+      "feature": [2,2,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [33,33],
+      "fitted_slope": -4,
+      "fitted_offset": 4,
+      "feature": [2,2,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [34,64],
+      "fitted_slope": -1,
+      "fitted_offset": -1,
+      "feature": [2,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [34,66],
+      "fitted_slope": -2,
+      "fitted_offset": 0,
+      "feature": [2,2,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [35,7],
+      "fitted_slope": -4,
+      "fitted_offset": 7,
+      "feature": [3,3,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [35,37],
+      "fitted_slope": -4,
+      "fitted_offset": 7,
+      "feature": [3,3,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [35,65],
+      "fitted_slope": -3,
+      "fitted_offset": 2,
+      "feature": [3,2,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [35,67],
+      "fitted_slope": -4,
+      "fitted_offset": 3,
+      "feature": [3,3,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [39,23],
+      "fitted_slope": -4,
+      "fitted_offset": 6,
+      "feature": [4,4,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [39,53],
+      "fitted_slope": -4,
+      "fitted_offset": 6,
+      "feature": [4,4,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [39,69],
+      "fitted_slope": -3,
+      "fitted_offset": 5,
+      "feature": [4,3,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [39,71],
+      "fitted_slope": -4,
+      "fitted_offset": 6,
+      "feature": [4,4,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [40,3],
+      "fitted_slope": -4,
+      "fitted_offset": 4,
+      "feature": [2,2,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [40,33],
+      "fitted_slope": -4,
+      "fitted_offset": 4,
+      "feature": [2,2,0,0,1,0,0,1,0,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [40,64],
+      "fitted_slope": -1,
+      "fitted_offset": -1,
+      "feature": [2,1,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [40,66],
+      "fitted_slope": -2,
+      "fitted_offset": 0,
+      "feature": [2,2,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [41,7],
+      "fitted_slope": -4,
+      "fitted_offset": 7,
+      "feature": [3,3,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [41,35],
+      "fitted_slope": -4,
+      "fitted_offset": 5,
+      "feature": [3,3,0,0,1,0,0,1,0,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [41,65],
+      "fitted_slope": -3,
+      "fitted_offset": 2,
+      "feature": [3,2,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [41,67],
+      "fitted_slope": -4,
+      "fitted_offset": 3,
+      "feature": [3,3,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [45,23],
+      "fitted_slope": -4,
+      "fitted_offset": 6,
+      "feature": [4,4,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [43,39],
+      "fitted_slope": -4,
+      "fitted_offset": 8,
+      "feature": [4,4,0,0,1,0,0,1,0,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [43,67],
+      "fitted_slope": -3,
+      "fitted_offset": 3,
+      "feature": [4,3,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [45,71],
+      "fitted_slope": -4,
+      "fitted_offset": 6,
+      "feature": [4,4,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [47,31],
+      "fitted_slope": -2,
+      "fitted_offset": 3,
+      "feature": [5,5,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [47,55],
+      "fitted_slope": -4,
+      "fitted_offset": 7,
+      "feature": [5,5,0,0,1,0,0,1,0,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [47,71],
+      "fitted_slope": -3,
+      "fitted_offset": 6,
+      "feature": [5,4,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [47,79],
+      "fitted_slope": -2,
+      "fitted_offset": 3,
+      "feature": [5,5,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [48,18],
+      "fitted_slope": -2,
+      "fitted_offset": 0,
+      "feature": [2,2,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [48,48],
+      "fitted_slope": -2,
+      "fitted_offset": 0,
+      "feature": [2,2,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [48,64],
+      "fitted_slope": -1,
+      "fitted_offset": -1,
+      "feature": [2,1,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [48,66],
+      "fitted_slope": -2,
+      "fitted_offset": 0,
+      "feature": [2,2,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [49,19],
+      "fitted_slope": -4,
+      "fitted_offset": 3,
+      "feature": [3,3,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [49,49],
+      "fitted_slope": -4,
+      "fitted_offset": 3,
+      "feature": [3,3,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [49,65],
+      "fitted_slope": -3,
+      "fitted_offset": 2,
+      "feature": [3,2,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [49,67],
+      "fitted_slope": -4,
+      "fitted_offset": 3,
+      "feature": [3,3,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [51,23],
+      "fitted_slope": -4,
+      "fitted_offset": 6,
+      "feature": [4,4,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [51,53],
+      "fitted_slope": -4,
+      "fitted_offset": 6,
+      "feature": [4,4,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [51,69],
+      "fitted_slope": -3,
+      "fitted_offset": 5,
+      "feature": [4,3,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [51,71],
+      "fitted_slope": -4,
+      "fitted_offset": 6,
+      "feature": [4,4,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [55,31],
+      "fitted_slope": -2,
+      "fitted_offset": 3,
+      "feature": [5,5,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [55,61],
+      "fitted_slope": -2,
+      "fitted_offset": 3,
+      "feature": [5,5,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [55,77],
+      "fitted_slope": -1,
+      "fitted_offset": 2,
+      "feature": [5,4,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [55,79],
+      "fitted_slope": -2,
+      "fitted_offset": 3,
+      "feature": [5,5,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [56,19],
+      "fitted_slope": -4,
+      "fitted_offset": 3,
+      "feature": [3,3,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [56,49],
+      "fitted_slope": -4,
+      "fitted_offset": 3,
+      "feature": [3,3,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [56,65],
+      "fitted_slope": -3,
+      "fitted_offset": 2,
+      "feature": [3,2,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [56,67],
+      "fitted_slope": -4,
+      "fitted_offset": 3,
+      "feature": [3,3,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [57,23],
+      "fitted_slope": -4,
+      "fitted_offset": 6,
+      "feature": [4,4,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [57,51],
+      "fitted_slope": -4,
+      "fitted_offset": 4,
+      "feature": [4,4,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [57,67],
+      "fitted_slope": -3,
+      "fitted_offset": 3,
+      "feature": [4,3,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [57,71],
+      "fitted_slope": -4,
+      "fitted_offset": 6,
+      "feature": [4,4,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [59,31],
+      "fitted_slope": -2,
+      "fitted_offset": 3,
+      "feature": [5,5,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [59,55],
+      "fitted_slope": -4,
+      "fitted_offset": 7,
+      "feature": [5,5,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [59,71],
+      "fitted_slope": -3,
+      "fitted_offset": 6,
+      "feature": [5,4,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [59,79],
+      "fitted_slope": -2,
+      "fitted_offset": 3,
+      "feature": [5,5,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [63,63],
+      "fitted_slope": -2,
+      "fitted_offset": 4,
+      "feature": [6,6,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [63,79],
+      "fitted_slope": -1,
+      "fitted_offset": 3,
+      "feature": [6,5,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [64,16],
+      "fitted_slope": 0,
+      "fitted_offset": -1,
+      "feature": [1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [64,18],
+      "fitted_slope": -1,
+      "fitted_offset": 0,
+      "feature": [1,2,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [64,48],
+      "fitted_slope": -1,
+      "fitted_offset": 0,
+      "feature": [1,2,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [64,64],
+      "fitted_slope": 0,
+      "fitted_offset": -1,
+      "feature": [1,1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [64,66],
+      "fitted_slope": -1,
+      "fitted_offset": 0,
+      "feature": [1,2,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [65,17],
+      "fitted_slope": -2,
+      "fitted_offset": 2,
+      "feature": [2,2,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [65,19],
+      "fitted_slope": -3,
+      "fitted_offset": 3,
+      "feature": [2,3,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [65,49],
+      "fitted_slope": -3,
+      "fitted_offset": 3,
+      "feature": [2,3,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [65,65],
+      "fitted_slope": -2,
+      "fitted_offset": 2,
+      "feature": [2,2,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [65,67],
+      "fitted_slope": -3,
+      "fitted_offset": 3,
+      "feature": [2,3,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [67,21],
+      "fitted_slope": -2,
+      "fitted_offset": 5,
+      "feature": [3,3,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [67,23],
+      "fitted_slope": -3,
+      "fitted_offset": 6,
+      "feature": [3,4,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [67,53],
+      "fitted_slope": -3,
+      "fitted_offset": 6,
+      "feature": [3,4,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [67,69],
+      "fitted_slope": -2,
+      "fitted_offset": 5,
+      "feature": [3,3,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [67,71],
+      "fitted_slope": -3,
+      "fitted_offset": 6,
+      "feature": [3,4,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [71,29],
+      "fitted_slope": 0,
+      "fitted_offset": 2,
+      "feature": [4,4,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [71,31],
+      "fitted_slope": -1,
+      "fitted_offset": 3,
+      "feature": [4,5,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [71,61],
+      "fitted_slope": -1,
+      "fitted_offset": 3,
+      "feature": [4,5,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [71,77],
+      "fitted_slope": 0,
+      "fitted_offset": 2,
+      "feature": [4,4,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [71,79],
+      "fitted_slope": -1,
+      "fitted_offset": 3,
+      "feature": [4,5,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [72,17],
+      "fitted_slope": -2,
+      "fitted_offset": 2,
+      "feature": [2,2,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [72,19],
+      "fitted_slope": -3,
+      "fitted_offset": 3,
+      "feature": [2,3,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [72,48],
+      "fitted_slope": -2,
+      "fitted_offset": 0,
+      "feature": [2,2,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [72,49],
+      "fitted_slope": -3,
+      "fitted_offset": 3,
+      "feature": [2,3,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [72,64],
+      "fitted_slope": -1,
+      "fitted_offset": -1,
+      "feature": [2,1,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [72,65],
+      "fitted_slope": -2,
+      "fitted_offset": 2,
+      "feature": [2,2,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [72,67],
+      "fitted_slope": -3,
+      "fitted_offset": 3,
+      "feature": [2,3,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [73,19],
+      "fitted_slope": -4,
+      "fitted_offset": 3,
+      "feature": [3,3,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [73,23],
+      "fitted_slope": -3,
+      "fitted_offset": 6,
+      "feature": [3,4,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [73,49],
+      "fitted_slope": -4,
+      "fitted_offset": 3,
+      "feature": [3,3,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [73,51],
+      "fitted_slope": -3,
+      "fitted_offset": 4,
+      "feature": [3,4,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [73,65],
+      "fitted_slope": -3,
+      "fitted_offset": 2,
+      "feature": [3,2,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [73,67],
+      "fitted_slope": -4,
+      "fitted_offset": 3,
+      "feature": [3,3,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [73,71],
+      "fitted_slope": -3,
+      "fitted_offset": 6,
+      "feature": [3,4,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [75,23],
+      "fitted_slope": -4,
+      "fitted_offset": 6,
+      "feature": [4,4,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [75,31],
+      "fitted_slope": -1,
+      "fitted_offset": 3,
+      "feature": [4,5,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [75,53],
+      "fitted_slope": -4,
+      "fitted_offset": 6,
+      "feature": [4,4,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [75,55],
+      "fitted_slope": -3,
+      "fitted_offset": 7,
+      "feature": [4,5,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [75,69],
+      "fitted_slope": -3,
+      "fitted_offset": 5,
+      "feature": [4,3,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [75,71],
+      "fitted_slope": -4,
+      "fitted_offset": 6,
+      "feature": [4,4,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [75,79],
+      "fitted_slope": -1,
+      "fitted_offset": 3,
+      "feature": [4,5,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [79,31],
+      "fitted_slope": -2,
+      "fitted_offset": 3,
+      "feature": [5,5,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [79,61],
+      "fitted_slope": -2,
+      "fitted_offset": 3,
+      "feature": [5,5,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [79,63],
+      "fitted_slope": -1,
+      "fitted_offset": 4,
+      "feature": [5,6,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [79,77],
+      "fitted_slope": -1,
+      "fitted_offset": 2,
+      "feature": [5,4,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [79,79],
+      "fitted_slope": -2,
+      "fitted_offset": 3,
+      "feature": [5,5,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [79,95],
+      "fitted_slope": 1,
+      "fitted_offset": 2,
+      "feature": [5,6,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [80,3],
+      "fitted_slope": -2,
+      "fitted_offset": 4,
+      "feature": [2,2,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [80,16],
+      "fitted_slope": 1,
+      "fitted_offset": -1,
+      "feature": [2,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [80,19],
+      "fitted_slope": -3,
+      "fitted_offset": 3,
+      "feature": [2,3,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [80,33],
+      "fitted_slope": -2,
+      "fitted_offset": 4,
+      "feature": [2,2,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [80,49],
+      "fitted_slope": -3,
+      "fitted_offset": 3,
+      "feature": [2,3,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [80,64],
+      "fitted_slope": -1,
+      "fitted_offset": -1,
+      "feature": [2,1,0,0,0,1,0,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [80,65],
+      "fitted_slope": -2,
+      "fitted_offset": 2,
+      "feature": [2,2,0,0,0,1,0,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [80,67],
+      "fitted_slope": -3,
+      "fitted_offset": 3,
+      "feature": [2,3,0,0,0,1,0,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [81,19],
+      "fitted_slope": -4,
+      "fitted_offset": 3,
+      "feature": [3,3,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [81,17],
+      "fitted_slope": -1,
+      "fitted_offset": 2,
+      "feature": [3,2,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [81,23],
+      "fitted_slope": -3,
+      "fitted_offset": 6,
+      "feature": [3,4,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [81,39],
+      "fitted_slope": -3,
+      "fitted_offset": 8,
+      "feature": [3,4,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [81,49],
+      "fitted_slope": -4,
+      "fitted_offset": 3,
+      "feature": [3,3,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [81,65],
+      "fitted_slope": -3,
+      "fitted_offset": 2,
+      "feature": [3,2,0,0,0,1,0,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [81,67],
+      "fitted_slope": -4,
+      "fitted_offset": 3,
+      "feature": [3,3,0,0,0,1,0,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [81,71],
+      "fitted_slope": -3,
+      "fitted_offset": 6,
+      "feature": [3,4,0,0,0,1,0,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [83,23],
+      "fitted_slope": -4,
+      "fitted_offset": 6,
+      "feature": [4,4,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [83,21],
+      "fitted_slope": -1,
+      "fitted_offset": 5,
+      "feature": [4,3,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [83,31],
+      "fitted_slope": -1,
+      "fitted_offset": 3,
+      "feature": [4,5,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [85,55],
+      "fitted_slope": -3,
+      "fitted_offset": 7,
+      "feature": [4,5,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [83,53],
+      "fitted_slope": -4,
+      "fitted_offset": 6,
+      "feature": [4,4,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [83,69],
+      "fitted_slope": -3,
+      "fitted_offset": 5,
+      "feature": [4,3,0,0,0,1,0,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [83,71],
+      "fitted_slope": -4,
+      "fitted_offset": 6,
+      "feature": [4,4,0,0,0,1,0,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [83,79],
+      "fitted_slope": -1,
+      "fitted_offset": 3,
+      "feature": [4,5,0,0,0,1,0,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [87,29],
+      "fitted_slope": 1,
+      "fitted_offset": 2,
+      "feature": [5,4,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [87,31],
+      "fitted_slope": -2,
+      "fitted_offset": 3,
+      "feature": [5,5,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [87,61],
+      "fitted_slope": -2,
+      "fitted_offset": 3,
+      "feature": [5,5,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [87,63],
+      "fitted_slope": -1,
+      "fitted_offset": 4,
+      "feature": [5,6,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [87,77],
+      "fitted_slope": -1,
+      "fitted_offset": 2,
+      "feature": [5,4,0,0,0,1,0,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [87,79],
+      "fitted_slope": -2,
+      "fitted_offset": 3,
+      "feature": [5,5,0,0,0,1,0,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [87,95],
+      "fitted_slope": 1,
+      "fitted_offset": 2,
+      "feature": [5,6,0,0,0,1,0,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [88,17],
+      "fitted_slope": -1,
+      "fitted_offset": 2,
+      "feature": [3,2,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [88,19],
+      "fitted_slope": -2,
+      "fitted_offset": 3,
+      "feature": [3,3,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [88,35],
+      "fitted_slope": -2,
+      "fitted_offset": 5,
+      "feature": [3,3,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [88,39],
+      "fitted_slope": -3,
+      "fitted_offset": 8,
+      "feature": [3,4,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [88,48],
+      "fitted_slope": -1,
+      "fitted_offset": 0,
+      "feature": [3,2,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [88,64],
+      "fitted_slope": 0,
+      "fitted_offset": -1,
+      "feature": [3,1,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [88,65],
+      "fitted_slope": -1,
+      "fitted_offset": 2,
+      "feature": [3,2,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [88,67],
+      "fitted_slope": -2,
+      "fitted_offset": 3,
+      "feature": [3,3,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [88,83],
+      "fitted_slope": -1,
+      "fitted_offset": 2,
+      "feature": [3,4,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [89,19],
+      "fitted_slope": -3,
+      "fitted_offset": 3,
+      "feature": [4,3,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [89,23],
+      "fitted_slope": -2,
+      "fitted_offset": 6,
+      "feature": [4,4,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [89,39],
+      "fitted_slope": -4,
+      "fitted_offset": 8,
+      "feature": [4,4,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [89,49],
+      "fitted_slope": -3,
+      "fitted_offset": 3,
+      "feature": [4,3,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [89,55],
+      "fitted_slope": -3,
+      "fitted_offset": 7,
+      "feature": [4,5,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [89,65],
+      "fitted_slope": -2,
+      "fitted_offset": 2,
+      "feature": [4,2,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [89,67],
+      "fitted_slope": -3,
+      "fitted_offset": 3,
+      "feature": [4,3,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [89,71],
+      "fitted_slope": -2,
+      "fitted_offset": 6,
+      "feature": [4,4,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [89,87],
+      "fitted_slope": -1,
+      "fitted_offset": 5,
+      "feature": [4,5,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [91,23],
+      "fitted_slope": -3,
+      "fitted_offset": 6,
+      "feature": [5,4,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [91,31],
+      "fitted_slope": 0,
+      "fitted_offset": 3,
+      "feature": [5,5,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [91,55],
+      "fitted_slope": -4,
+      "fitted_offset": 7,
+      "feature": [5,5,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [91,53],
+      "fitted_slope": -3,
+      "fitted_offset": 6,
+      "feature": [5,4,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [91,63],
+      "fitted_slope": -1,
+      "fitted_offset": 4,
+      "feature": [5,6,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [91,69],
+      "fitted_slope": -2,
+      "fitted_offset": 5,
+      "feature": [5,3,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [91,71],
+      "fitted_slope": -3,
+      "fitted_offset": 6,
+      "feature": [5,4,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [91,87],
+      "fitted_slope": -2,
+      "fitted_offset": 5,
+      "feature": [5,5,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [91,95],
+      "fitted_slope": 1,
+      "fitted_offset": 2,
+      "feature": [5,6,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [95,31],
+      "fitted_slope": -1,
+      "fitted_offset": 3,
+      "feature": [6,5,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [95,61],
+      "fitted_slope": -1,
+      "fitted_offset": 3,
+      "feature": [6,5,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [95,63],
+      "fitted_slope": 0,
+      "fitted_offset": 4,
+      "feature": [6,6,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [95,77],
+      "fitted_slope": 0,
+      "fitted_offset": 2,
+      "feature": [6,4,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [95,79],
+      "fitted_slope": -1,
+      "fitted_offset": 3,
+      "feature": [6,5,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [95,95],
+      "fitted_slope": 0,
+      "fitted_offset": 2,
+      "feature": [6,6,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [0,0],
+      "fitted_slope": 0,
+      "fitted_offset": 0,
+      "feature": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [0,48],
+      "fitted_slope": 0,
+      "fitted_offset": 0,
+      "feature": [0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [0,160],
+      "fitted_slope": 0,
+      "fitted_offset": 0,
+      "feature": [0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [0,257],
+      "fitted_slope": 0,
+      "fitted_offset": 2,
+      "feature": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [0,288],
+      "fitted_slope": 0,
+      "fitted_offset": 0,
+      "feature": [0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [0,289],
+      "fitted_slope": 0,
+      "fitted_offset": 2,
+      "feature": [0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [0,320],
+      "fitted_slope": 0,
+      "fitted_offset": 0,
+      "feature": [0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [0,352],
+      "fitted_slope": 0,
+      "fitted_offset": 0,
+      "feature": [0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [0,368],
+      "fitted_slope": 0,
+      "fitted_offset": 0,
+      "feature": [0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [1,4],
+      "fitted_slope": 0,
+      "fitted_offset": 1,
+      "feature": [0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [1,32],
+      "fitted_slope": 0,
+      "fitted_offset": 1,
+      "feature": [0,0,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [1,64],
+      "fitted_slope": 0,
+      "fitted_offset": 1,
+      "feature": [0,0,1,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [1,112],
+      "fitted_slope": 0,
+      "fitted_offset": 1,
+      "feature": [0,0,1,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [1,164],
+      "fitted_slope": 0,
+      "fitted_offset": 1,
+      "feature": [0,0,1,1,0,0,0,0,0,0,0,1,0,0,0,0,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [1,224],
+      "fitted_slope": 0,
+      "fitted_offset": 1,
+      "feature": [0,0,1,1,0,0,0,0,0,0,0,0,0,1,0,0,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [1,261],
+      "fitted_slope": 0,
+      "fitted_offset": 3,
+      "feature": [0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [1,289],
+      "fitted_slope": 0,
+      "fitted_offset": 3,
+      "feature": [0,0,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [1,293],
+      "fitted_slope": 0,
+      "fitted_offset": 3,
+      "feature": [0,0,1,2,0,0,0,0,0,0,0,1,0,0,0,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [1,321],
+      "fitted_slope": 0,
+      "fitted_offset": 3,
+      "feature": [0,0,1,1,0,0,0,0,0,0,0,0,1,0,0,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [1,352],
+      "fitted_slope": 0,
+      "fitted_offset": 3,
+      "feature": [0,0,1,1,0,0,0,0,0,0,0,0,0,1,0,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [1,353],
+      "fitted_slope": 0,
+      "fitted_offset": 3,
+      "feature": [0,0,1,2,0,0,0,0,0,0,0,0,0,1,0,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [3,5],
+      "fitted_slope": 0,
+      "fitted_offset": 4,
+      "feature": [0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [3,33],
+      "fitted_slope": 0,
+      "fitted_offset": 4,
+      "feature": [0,0,2,2,0,0,0,0,0,0,0,1,0,0,0,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [3,65],
+      "fitted_slope": 0,
+      "fitted_offset": 4,
+      "feature": [0,0,2,2,0,0,0,0,0,0,0,0,1,0,0,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [3,96],
+      "fitted_slope": 0,
+      "fitted_offset": 4,
+      "feature": [0,0,2,2,0,0,0,0,0,0,0,0,0,1,0,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [3,165],
+      "fitted_slope": 0,
+      "fitted_offset": 4,
+      "feature": [0,0,2,2,0,0,0,0,0,0,0,1,0,0,0,0,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [3,225],
+      "fitted_slope": 0,
+      "fitted_offset": 4,
+      "feature": [0,0,2,2,0,0,0,0,0,0,0,0,0,1,0,0,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [3,263],
+      "fitted_slope": 0,
+      "fitted_offset": 8,
+      "feature": [0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [3,291],
+      "fitted_slope": 0,
+      "fitted_offset": 8,
+      "feature": [0,0,2,2,0,0,0,0,0,0,0,1,0,0,0,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [3,295],
+      "fitted_slope": 0,
+      "fitted_offset": 8,
+      "feature": [0,0,2,3,0,0,0,0,0,0,0,1,0,0,0,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [3,323],
+      "fitted_slope": 0,
+      "fitted_offset": 8,
+      "feature": [0,0,2,2,0,0,0,0,0,0,0,0,1,0,0,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [3,353],
+      "fitted_slope": 0,
+      "fitted_offset": 8,
+      "feature": [0,0,2,2,0,0,0,0,0,0,0,0,0,1,0,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [3,355],
+      "fitted_slope": 0,
+      "fitted_offset": 8,
+      "feature": [0,0,2,3,0,0,0,0,0,0,0,0,0,1,0,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [7,7],
+      "fitted_slope": 0,
+      "fitted_offset": 9,
+      "feature": [0,0,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [7,35],
+      "fitted_slope": 0,
+      "fitted_offset": 9,
+      "feature": [0,0,3,3,0,0,0,0,0,0,0,1,0,0,0,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [7,67],
+      "fitted_slope": 0,
+      "fitted_offset": 9,
+      "feature": [0,0,3,3,0,0,0,0,0,0,0,0,1,0,0,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [7,97],
+      "fitted_slope": 0,
+      "fitted_offset": 9,
+      "feature": [0,0,3,3,0,0,0,0,0,0,0,0,0,1,0,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [7,167],
+      "fitted_slope": 0,
+      "fitted_offset": 9,
+      "feature": [0,0,3,3,0,0,0,0,0,0,0,1,0,0,0,0,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [7,227],
+      "fitted_slope": 0,
+      "fitted_offset": 9,
+      "feature": [0,0,3,3,0,0,0,0,0,0,0,0,0,1,0,0,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [7,271],
+      "fitted_slope": 2,
+      "fitted_offset": 3,
+      "feature": [0,0,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [7,295],
+      "fitted_slope": 2,
+      "fitted_offset": 3,
+      "feature": [0,0,3,3,0,0,0,0,0,0,0,1,0,0,0,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [7,303],
+      "fitted_slope": 2,
+      "fitted_offset": 3,
+      "feature": [0,0,3,4,0,0,0,0,0,0,0,1,0,0,0,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [7,327],
+      "fitted_slope": 2,
+      "fitted_offset": 3,
+      "feature": [0,0,3,3,0,0,0,0,0,0,0,0,1,0,0,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [7,355],
+      "fitted_slope": 2,
+      "fitted_offset": 7,
+      "feature": [0,0,3,3,0,0,0,0,0,0,0,0,0,1,0,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [7,359],
+      "fitted_slope": 2,
+      "fitted_offset": 3,
+      "feature": [0,0,3,4,0,0,0,0,0,0,0,0,0,1,0,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [15,15],
+      "fitted_slope": 2,
+      "fitted_offset": 4,
+      "feature": [0,0,4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [15,39],
+      "fitted_slope": 2,
+      "fitted_offset": 4,
+      "feature": [0,0,4,4,0,0,0,0,0,0,0,1,0,0,0,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [15,71],
+      "fitted_slope": 2,
+      "fitted_offset": 4,
+      "feature": [0,0,4,4,0,0,0,0,0,0,0,0,1,0,0,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [15,101],
+      "fitted_slope": 2,
+      "fitted_offset": 4,
+      "feature": [0,0,4,4,0,0,0,0,0,0,0,0,0,1,0,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [15,175],
+      "fitted_slope": 2,
+      "fitted_offset": 4,
+      "feature": [0,0,4,4,0,0,0,0,0,0,0,1,0,0,0,0,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [15,231],
+      "fitted_slope": 2,
+      "fitted_offset": 4,
+      "feature": [0,0,4,4,0,0,0,0,0,0,0,0,0,1,0,0,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [15,303],
+      "fitted_slope": 4,
+      "fitted_offset": 0,
+      "feature": [0,0,4,4,0,0,0,0,0,0,0,1,0,0,0,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [15,335],
+      "fitted_slope": 4,
+      "fitted_offset": 0,
+      "feature": [0,0,4,4,0,0,0,0,0,0,0,0,1,0,0,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [15,359],
+      "fitted_slope": 4,
+      "fitted_offset": 2,
+      "feature": [0,0,4,4,0,0,0,0,0,0,0,0,0,1,0,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [15,367],
+      "fitted_slope": 4,
+      "fitted_offset": 0,
+      "feature": [0,0,4,5,0,0,0,0,0,0,0,0,0,1,0,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [31,47],
+      "fitted_slope": 4,
+      "fitted_offset": 1,
+      "feature": [0,0,5,5,0,0,0,0,0,0,0,1,0,0,0,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [31,79],
+      "fitted_slope": 4,
+      "fitted_offset": 1,
+      "feature": [0,0,5,5,0,0,0,0,0,0,0,0,1,0,0,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [31,109],
+      "fitted_slope": 4,
+      "fitted_offset": 1,
+      "feature": [0,0,5,5,0,0,0,0,0,0,0,0,0,1,0,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [31,239],
+      "fitted_slope": 4,
+      "fitted_offset": 1,
+      "feature": [0,0,5,5,0,0,0,0,0,0,0,0,0,1,0,0,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [31,367],
+      "fitted_slope": 6,
+      "fitted_offset": -1,
+      "feature": [0,0,5,5,0,0,0,0,0,0,0,0,0,1,0,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [63,111],
+      "fitted_slope": 6,
+      "fitted_offset": 0,
+      "feature": [0,0,6,6,0,0,0,0,0,0,0,0,0,1,0,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [64,16],
+      "fitted_slope": 2,
+      "fitted_offset": -3,
+      "feature": [0,0,-1,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [64,176],
+      "fitted_slope": 2,
+      "fitted_offset": -3,
+      "feature": [0,0,-1,-1,0,0,0,0,0,0,0,1,0,0,0,0,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [64,273],
+      "fitted_slope": 2,
+      "fitted_offset": -1,
+      "feature": [0,0,-1,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [64,304],
+      "fitted_slope": 2,
+      "fitted_offset": -3,
+      "feature": [0,0,-1,-1,0,0,0,0,0,0,0,1,0,0,0,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [64,305],
+      "fitted_slope": 2,
+      "fitted_offset": -1,
+      "feature": [0,0,-1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [64,336],
+      "fitted_slope": 2,
+      "fitted_offset": -3,
+      "feature": [0,0,-1,-1,0,0,0,0,0,0,0,0,1,0,0,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [64,368],
+      "fitted_slope": 2,
+      "fitted_offset": -3,
+      "feature": [0,0,-1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [65,80],
+      "fitted_slope": 2,
+      "fitted_offset": -2,
+      "feature": [0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [65,240],
+      "fitted_slope": 2,
+      "fitted_offset": -2,
+      "feature": [0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [128,128],
+      "fitted_slope": 0,
+      "fitted_offset": 1,
+      "feature": [0,0,-1,-1,0,0,0,0,0,0,0,0,0,0,1,0,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [128,176],
+      "fitted_slope": 0,
+      "fitted_offset": 1,
+      "feature": [0,0,-1,-1,0,0,0,0,0,0,0,1,0,0,1,0,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [128,257],
+      "fitted_slope": 0,
+      "fitted_offset": 3,
+      "feature": [0,0,-1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [128,288],
+      "fitted_slope": 0,
+      "fitted_offset": 1,
+      "feature": [0,0,-1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [128,320],
+      "fitted_slope": 0,
+      "fitted_offset": 1,
+      "feature": [0,0,-1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [128,368],
+      "fitted_slope": 0,
+      "fitted_offset": 1,
+      "feature": [0,0,-1,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [129,0],
+      "fitted_slope": 0,
+      "fitted_offset": 0,
+      "feature": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [129,48],
+      "fitted_slope": 0,
+      "fitted_offset": 0,
+      "feature": [0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [129,132],
+      "fitted_slope": 0,
+      "fitted_offset": 2,
+      "feature": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [129,160],
+      "fitted_slope": 0,
+      "fitted_offset": 0,
+      "feature": [0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [129,192],
+      "fitted_slope": 0,
+      "fitted_offset": 2,
+      "feature": [0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [129,240],
+      "fitted_slope": 0,
+      "fitted_offset": 2,
+      "feature": [0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [129,257],
+      "fitted_slope": 0,
+      "fitted_offset": 2,
+      "feature": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [129,261],
+      "fitted_slope": 0,
+      "fitted_offset": 4,
+      "feature": [0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [129,288],
+      "fitted_slope": 0,
+      "fitted_offset": 0,
+      "feature": [0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [129,289],
+      "fitted_slope": 0,
+      "fitted_offset": 2,
+      "feature": [0,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [129,320],
+      "fitted_slope": 0,
+      "fitted_offset": 0,
+      "feature": [0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [129,321],
+      "fitted_slope": 0,
+      "fitted_offset": 4,
+      "feature": [0,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [129,352],
+      "fitted_slope": 0,
+      "fitted_offset": 0,
+      "feature": [0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [129,368],
+      "fitted_slope": 0,
+      "fitted_offset": 0,
+      "feature": [0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [131,1],
+      "fitted_slope": 0,
+      "fitted_offset": 3,
+      "feature": [0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [131,32],
+      "fitted_slope": 0,
+      "fitted_offset": 1,
+      "feature": [0,0,1,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [131,64],
+      "fitted_slope": 0,
+      "fitted_offset": 1,
+      "feature": [0,0,1,1,0,0,0,0,0,0,0,0,1,0,1,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [131,112],
+      "fitted_slope": 0,
+      "fitted_offset": 1,
+      "feature": [0,0,1,1,0,0,0,0,0,0,0,0,0,1,1,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [131,133],
+      "fitted_slope": 0,
+      "fitted_offset": 5,
+      "feature": [0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [131,161],
+      "fitted_slope": 0,
+      "fitted_offset": 3,
+      "feature": [0,0,1,1,0,0,0,0,0,0,0,1,0,0,1,0,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [131,193],
+      "fitted_slope": 0,
+      "fitted_offset": 5,
+      "feature": [0,0,1,1,0,0,0,0,0,0,0,0,1,0,1,0,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [131,224],
+      "fitted_slope": 0,
+      "fitted_offset": 1,
+      "feature": [0,0,1,1,0,0,0,0,0,0,0,0,0,1,1,0,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [131,259],
+      "fitted_slope": 0,
+      "fitted_offset": 7,
+      "feature": [0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [131,263],
+      "fitted_slope": 0,
+      "fitted_offset": 9,
+      "feature": [0,0,1,2,0,0,0,0,0,0,0,0,0,0,1,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [131,289],
+      "fitted_slope": 0,
+      "fitted_offset": 7,
+      "feature": [0,0,1,1,0,0,0,0,0,0,0,1,0,0,1,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [131,291],
+      "fitted_slope": 0,
+      "fitted_offset": 7,
+      "feature": [0,0,1,2,0,0,0,0,0,0,0,1,0,0,1,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [131,321],
+      "fitted_slope": 0,
+      "fitted_offset": 9,
+      "feature": [0,0,1,1,0,0,0,0,0,0,0,0,1,0,1,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [131,323],
+      "fitted_slope": 0,
+      "fitted_offset": 9,
+      "feature": [0,0,1,2,0,0,0,0,0,0,0,0,1,0,1,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [131,352],
+      "fitted_slope": 0,
+      "fitted_offset": 5,
+      "feature": [0,0,1,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [131,354],
+      "fitted_slope": 0,
+      "fitted_offset": 5,
+      "feature": [0,0,1,2,0,0,0,0,0,0,0,0,0,1,1,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [135,3],
+      "fitted_slope": 0,
+      "fitted_offset": 8,
+      "feature": [0,0,2,2,0,0,0,0,0,0,0,0,0,0,1,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [135,33],
+      "fitted_slope": 0,
+      "fitted_offset": 4,
+      "feature": [0,0,2,2,0,0,0,0,0,0,0,1,0,0,1,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [135,65],
+      "fitted_slope": 0,
+      "fitted_offset": 4,
+      "feature": [0,0,2,2,0,0,0,0,0,0,0,0,1,0,1,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [135,96],
+      "fitted_slope": 0,
+      "fitted_offset": 4,
+      "feature": [0,0,2,2,0,0,0,0,0,0,0,0,0,1,1,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [135,135],
+      "fitted_slope": 0,
+      "fitted_offset": 10,
+      "feature": [0,0,2,2,0,0,0,0,0,0,0,0,0,0,1,0,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [135,163],
+      "fitted_slope": 0,
+      "fitted_offset": 8,
+      "feature": [0,0,2,2,0,0,0,0,0,0,0,1,0,0,1,0,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [135,195],
+      "fitted_slope": 0,
+      "fitted_offset": 10,
+      "feature": [0,0,2,2,0,0,0,0,0,0,0,0,1,0,1,0,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [135,225],
+      "fitted_slope": 0,
+      "fitted_offset": 4,
+      "feature": [0,0,2,2,0,0,0,0,0,0,0,0,0,1,1,0,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [135,263],
+      "fitted_slope": 0,
+      "fitted_offset": 8,
+      "feature": [0,0,2,2,0,0,0,0,0,0,0,0,0,0,1,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [135,271],
+      "fitted_slope": 2,
+      "fitted_offset": 4,
+      "feature": [0,0,2,3,0,0,0,0,0,0,0,0,0,0,1,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [135,291],
+      "fitted_slope": 0,
+      "fitted_offset": 8,
+      "feature": [0,0,2,2,0,0,0,0,0,0,0,1,0,0,1,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [135,295],
+      "fitted_slope": 0,
+      "fitted_offset": 8,
+      "feature": [0,0,2,3,0,0,0,0,0,0,0,1,0,0,1,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [135,323],
+      "fitted_slope": 0,
+      "fitted_offset": 8,
+      "feature": [0,0,2,2,0,0,0,0,0,0,0,0,1,0,1,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [135,327],
+      "fitted_slope": 2,
+      "fitted_offset": 4,
+      "feature": [0,0,2,3,0,0,0,0,0,0,0,0,1,0,1,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [135,353],
+      "fitted_slope": 0,
+      "fitted_offset": 8,
+      "feature": [0,0,2,2,0,0,0,0,0,0,0,0,0,1,1,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [135,355],
+      "fitted_slope": 0,
+      "fitted_offset": 8,
+      "feature": [0,0,2,3,0,0,0,0,0,0,0,0,0,1,1,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [143,7],
+      "fitted_slope": 0,
+      "fitted_offset": 9,
+      "feature": [0,0,3,3,0,0,0,0,0,0,0,0,0,0,1,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [143,35],
+      "fitted_slope": 0,
+      "fitted_offset": 9,
+      "feature": [0,0,3,3,0,0,0,0,0,0,0,1,0,0,1,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [143,67],
+      "fitted_slope": 0,
+      "fitted_offset": 9,
+      "feature": [0,0,3,3,0,0,0,0,0,0,0,0,1,0,1,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [143,97],
+      "fitted_slope": 0,
+      "fitted_offset": 9,
+      "feature": [0,0,3,3,0,0,0,0,0,0,0,0,0,1,1,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [143,143],
+      "fitted_slope": 2,
+      "fitted_offset": 5,
+      "feature": [0,0,3,3,0,0,0,0,0,0,0,0,0,0,1,0,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [143,167],
+      "fitted_slope": 0,
+      "fitted_offset": 9,
+      "feature": [0,0,3,3,0,0,0,0,0,0,0,1,0,0,1,0,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [143,199],
+      "fitted_slope": 2,
+      "fitted_offset": 5,
+      "feature": [0,0,3,3,0,0,0,0,0,0,0,0,1,0,1,0,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [143,227],
+      "fitted_slope": 0,
+      "fitted_offset": 9,
+      "feature": [0,0,3,3,0,0,0,0,0,0,0,0,0,1,1,0,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [143,271],
+      "fitted_slope": 2,
+      "fitted_offset": 5,
+      "feature": [0,0,3,3,0,0,0,0,0,0,0,0,0,0,1,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [143,295],
+      "fitted_slope": 2,
+      "fitted_offset": 7,
+      "feature": [0,0,3,3,0,0,0,0,0,0,0,1,0,0,1,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [143,303],
+      "fitted_slope": 2,
+      "fitted_offset": 5,
+      "feature": [0,0,3,4,0,0,0,0,0,0,0,1,0,0,1,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [143,327],
+      "fitted_slope": 2,
+      "fitted_offset": 9,
+      "feature": [0,0,3,3,0,0,0,0,0,0,0,0,1,0,1,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [143,335],
+      "fitted_slope": 4,
+      "fitted_offset": 1,
+      "feature": [0,0,3,4,0,0,0,0,0,0,0,0,1,0,1,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [143,355],
+      "fitted_slope": 2,
+      "fitted_offset": 7,
+      "feature": [0,0,3,3,0,0,0,0,0,0,0,0,0,1,1,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [143,359],
+      "fitted_slope": 2,
+      "fitted_offset": 9,
+      "feature": [0,0,3,4,0,0,0,0,0,0,0,0,0,1,1,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [159,15],
+      "fitted_slope": 2,
+      "fitted_offset": 4,
+      "feature": [0,0,4,4,0,0,0,0,0,0,0,0,0,0,1,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [159,39],
+      "fitted_slope": 2,
+      "fitted_offset": 4,
+      "feature": [0,0,4,4,0,0,0,0,0,0,0,1,0,0,1,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [159,71],
+      "fitted_slope": 2,
+      "fitted_offset": 4,
+      "feature": [0,0,4,4,0,0,0,0,0,0,0,0,1,0,1,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [159,101],
+      "fitted_slope": 2,
+      "fitted_offset": 4,
+      "feature": [0,0,4,4,0,0,0,0,0,0,0,0,0,1,1,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [159,175],
+      "fitted_slope": 2,
+      "fitted_offset": 4,
+      "feature": [0,0,4,4,0,0,0,0,0,0,0,1,0,0,1,0,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [159,207],
+      "fitted_slope": 4,
+      "fitted_offset": 2,
+      "feature": [0,0,4,4,0,0,0,0,0,0,0,0,1,0,1,0,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [159,231],
+      "fitted_slope": 2,
+      "fitted_offset": 4,
+      "feature": [0,0,4,4,0,0,0,0,0,0,0,0,0,1,1,0,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [159,303],
+      "fitted_slope": 4,
+      "fitted_offset": 0,
+      "feature": [0,0,4,4,0,0,0,0,0,0,0,1,0,0,1,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [159,335],
+      "fitted_slope": 4,
+      "fitted_offset": 0,
+      "feature": [0,0,4,4,0,0,0,0,0,0,0,0,1,0,1,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [159,359],
+      "fitted_slope": 4,
+      "fitted_offset": 2,
+      "feature": [0,0,4,4,0,0,0,0,0,0,0,0,0,1,1,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [159,367],
+      "fitted_slope": 4,
+      "fitted_offset": 0,
+      "feature": [0,0,4,5,0,0,0,0,0,0,0,0,0,1,1,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [191,47],
+      "fitted_slope": 4,
+      "fitted_offset": 1,
+      "feature": [0,0,5,5,0,0,0,0,0,0,0,1,0,0,1,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [191,79],
+      "fitted_slope": 4,
+      "fitted_offset": 1,
+      "feature": [0,0,5,5,0,0,0,0,0,0,0,0,1,0,1,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [191,103],
+      "fitted_slope": 4,
+      "fitted_offset": 3,
+      "feature": [0,0,5,5,0,0,0,0,0,0,0,0,0,1,1,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [191,239],
+      "fitted_slope": 4,
+      "fitted_offset": 1,
+      "feature": [0,0,5,5,0,0,0,0,0,0,0,0,0,1,1,0,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [192,144],
+      "fitted_slope": 2,
+      "fitted_offset": -2,
+      "feature": [0,0,-2,-2,0,0,0,0,0,0,0,0,0,0,1,0,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [192,273],
+      "fitted_slope": 2,
+      "fitted_offset": 0,
+      "feature": [0,0,-2,-1,0,0,0,0,0,0,0,0,0,0,1,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [192,304],
+      "fitted_slope": 2,
+      "fitted_offset": -2,
+      "feature": [0,0,-2,-1,0,0,0,0,0,0,0,1,0,0,1,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [192,336],
+      "fitted_slope": 2,
+      "fitted_offset": -2,
+      "feature": [0,0,-2,-1,0,0,0,0,0,0,0,0,1,0,1,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [193,16],
+      "fitted_slope": 2,
+      "fitted_offset": -3,
+      "feature": [0,0,-1,-1,0,0,0,0,0,0,0,0,0,0,1,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [193,208],
+      "fitted_slope": 2,
+      "fitted_offset": -1,
+      "feature": [0,0,-1,-1,0,0,0,0,0,0,0,0,1,0,1,0,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [193,273],
+      "fitted_slope": 2,
+      "fitted_offset": -1,
+      "feature": [0,0,-1,-1,0,0,0,0,0,0,0,0,0,0,1,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [193,304],
+      "fitted_slope": 2,
+      "fitted_offset": -3,
+      "feature": [0,0,-1,-1,0,0,0,0,0,0,0,1,0,0,1,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [193,336],
+      "fitted_slope": 2,
+      "fitted_offset": -3,
+      "feature": [0,0,-1,-1,0,0,0,0,0,0,0,0,1,0,1,0,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [195,80],
+      "fitted_slope": 2,
+      "fitted_offset": -2,
+      "feature": [0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [256,208],
+      "fitted_slope": 2,
+      "fitted_offset": -1,
+      "feature": [0,0,-1,-1,0,0,0,0,0,0,0,0,1,0,0,1,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [256,256],
+      "fitted_slope": 2,
+      "fitted_offset": -1,
+      "feature": [0,0,-1,-1,0,0,0,0,0,0,0,0,0,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [256,288],
+      "fitted_slope": 2,
+      "fitted_offset": -1,
+      "feature": [0,0,-1,0,0,0,0,0,0,0,0,1,0,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [256,304],
+      "fitted_slope": 2,
+      "fitted_offset": -1,
+      "feature": [0,0,-1,-1,0,0,0,0,0,0,0,1,0,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [256,320],
+      "fitted_slope": 2,
+      "fitted_offset": -1,
+      "feature": [0,0,-1,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [256,336],
+      "fitted_slope": 2,
+      "fitted_offset": -1,
+      "feature": [0,0,-1,-1,0,0,0,0,0,0,0,0,1,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [256,352],
+      "fitted_slope": 2,
+      "fitted_offset": -1,
+      "feature": [0,0,-1,1,0,0,0,0,0,0,0,0,0,1,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [256,368],
+      "fitted_slope": 2,
+      "fitted_offset": -1,
+      "feature": [0,0,-1,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [257,0],
+      "fitted_slope": 0,
+      "fitted_offset": 0,
+      "feature": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [257,48],
+      "fitted_slope": 0,
+      "fitted_offset": 0,
+      "feature": [0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [257,64],
+      "fitted_slope": 0,
+      "fitted_offset": 0,
+      "feature": [0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [257,80],
+      "fitted_slope": 2,
+      "fitted_offset": -2,
+      "feature": [0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [257,112],
+      "fitted_slope": 0,
+      "fitted_offset": 0,
+      "feature": [0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [257,128],
+      "fitted_slope": 0,
+      "fitted_offset": 0,
+      "feature": [0,0,0,-1,0,0,0,0,0,0,0,0,0,0,0,1,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [257,160],
+      "fitted_slope": 0,
+      "fitted_offset": 0,
+      "feature": [0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [257,176],
+      "fitted_slope": 0,
+      "fitted_offset": 0,
+      "feature": [0,0,0,-1,0,0,0,0,0,0,0,1,0,0,0,1,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [257,192],
+      "fitted_slope": 0,
+      "fitted_offset": 0,
+      "feature": [0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [257,208],
+      "fitted_slope": 2,
+      "fitted_offset": 0,
+      "feature": [0,0,0,-1,0,0,0,0,0,0,0,0,1,0,0,1,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [257,224],
+      "fitted_slope": 0,
+      "fitted_offset": 0,
+      "feature": [0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [257,240],
+      "fitted_slope": 0,
+      "fitted_offset": 0,
+      "feature": [0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [257,256],
+      "fitted_slope": 2,
+      "fitted_offset": -2,
+      "feature": [0,0,0,-1,0,0,0,0,0,0,0,0,0,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [257,257],
+      "fitted_slope": 0,
+      "fitted_offset": 2,
+      "feature": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [257,288],
+      "fitted_slope": 0,
+      "fitted_offset": 0,
+      "feature": [0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [257,289],
+      "fitted_slope": 0,
+      "fitted_offset": 2,
+      "feature": [0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [257,304],
+      "fitted_slope": 2,
+      "fitted_offset": -2,
+      "feature": [0,0,0,-1,0,0,0,0,0,0,0,1,0,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [257,320],
+      "fitted_slope": 0,
+      "fitted_offset": 0,
+      "feature": [0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [257,321],
+      "fitted_slope": 0,
+      "fitted_offset": 4,
+      "feature": [0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [257,336],
+      "fitted_slope": 2,
+      "fitted_offset": -2,
+      "feature": [0,0,0,-1,0,0,0,0,0,0,0,0,1,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [257,352],
+      "fitted_slope": 0,
+      "fitted_offset": 0,
+      "feature": [0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [257,353],
+      "fitted_slope": 0,
+      "fitted_offset": 2,
+      "feature": [0,0,0,2,0,0,0,0,0,0,0,0,0,1,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [257,368],
+      "fitted_slope": 0,
+      "fitted_offset": 0,
+      "feature": [0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [259,0],
+      "fitted_slope": 0,
+      "fitted_offset": -1,
+      "feature": [0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [259,1],
+      "fitted_slope": 0,
+      "fitted_offset": 3,
+      "feature": [0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [259,32],
+      "fitted_slope": 0,
+      "fitted_offset": 3,
+      "feature": [0,0,1,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [259,48],
+      "fitted_slope": 0,
+      "fitted_offset": -1,
+      "feature": [0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [259,64],
+      "fitted_slope": 0,
+      "fitted_offset": -1,
+      "feature": [0,0,1,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [259,65],
+      "fitted_slope": 0,
+      "fitted_offset": 3,
+      "feature": [0,0,1,2,0,0,0,0,0,0,0,0,1,0,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [259,80],
+      "fitted_slope": 2,
+      "fitted_offset": -1,
+      "feature": [0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [259,96],
+      "fitted_slope": 0,
+      "fitted_offset": 3,
+      "feature": [0,0,1,2,0,0,0,0,0,0,0,0,0,1,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [259,112],
+      "fitted_slope": 0,
+      "fitted_offset": -1,
+      "feature": [0,0,1,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [259,129],
+      "fitted_slope": 0,
+      "fitted_offset": 3,
+      "feature": [0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [259,160],
+      "fitted_slope": 0,
+      "fitted_offset": -1,
+      "feature": [0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [259,161],
+      "fitted_slope": 0,
+      "fitted_offset": 3,
+      "feature": [0,0,1,1,0,0,0,0,0,0,0,1,0,0,0,1,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [259,192],
+      "fitted_slope": 0,
+      "fitted_offset": -1,
+      "feature": [0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [259,193],
+      "fitted_slope": 0,
+      "fitted_offset": 3,
+      "feature": [0,0,1,1,0,0,0,0,0,0,0,0,1,0,0,1,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [259,224],
+      "fitted_slope": 0,
+      "fitted_offset": -1,
+      "feature": [0,0,1,1,0,0,0,0,0,0,0,0,0,1,0,1,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [259,225],
+      "fitted_slope": 0,
+      "fitted_offset": 3,
+      "feature": [0,0,1,2,0,0,0,0,0,0,0,0,0,1,0,1,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [259,240],
+      "fitted_slope": 0,
+      "fitted_offset": -1,
+      "feature": [0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [259,257],
+      "fitted_slope": 0,
+      "fitted_offset": 1,
+      "feature": [0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [259,259],
+      "fitted_slope": 0,
+      "fitted_offset": 7,
+      "feature": [0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [259,288],
+      "fitted_slope": 0,
+      "fitted_offset": -1,
+      "feature": [0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [259,289],
+      "fitted_slope": 0,
+      "fitted_offset": 1,
+      "feature": [0,0,1,1,0,0,0,0,0,0,0,1,0,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [259,291],
+      "fitted_slope": 0,
+      "fitted_offset": 7,
+      "feature": [0,0,1,2,0,0,0,0,0,0,0,1,0,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [259,320],
+      "fitted_slope": 0,
+      "fitted_offset": -1,
+      "feature": [0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [259,321],
+      "fitted_slope": 0,
+      "fitted_offset": 1,
+      "feature": [0,0,1,1,0,0,0,0,0,0,0,0,1,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [259,323],
+      "fitted_slope": 0,
+      "fitted_offset": 9,
+      "feature": [0,0,1,2,0,0,0,0,0,0,0,0,1,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [259,352],
+      "fitted_slope": 0,
+      "fitted_offset": -1,
+      "feature": [0,0,1,1,0,0,0,0,0,0,0,0,0,1,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [259,353],
+      "fitted_slope": 0,
+      "fitted_offset": 1,
+      "feature": [0,0,1,2,0,0,0,0,0,0,0,0,0,1,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [259,355],
+      "fitted_slope": 0,
+      "fitted_offset": 7,
+      "feature": [0,0,1,3,0,0,0,0,0,0,0,0,0,1,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [259,368],
+      "fitted_slope": 0,
+      "fitted_offset": -1,
+      "feature": [0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [263,1],
+      "fitted_slope": 0,
+      "fitted_offset": 2,
+      "feature": [0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [263,3],
+      "fitted_slope": 0,
+      "fitted_offset": 8,
+      "feature": [0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [263,32],
+      "fitted_slope": 0,
+      "fitted_offset": 2,
+      "feature": [0,0,2,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [263,33],
+      "fitted_slope": 0,
+      "fitted_offset": 8,
+      "feature": [0,0,2,2,0,0,0,0,0,0,0,1,0,0,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [263,64],
+      "fitted_slope": 2,
+      "fitted_offset": 2,
+      "feature": [0,0,2,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [263,65],
+      "fitted_slope": 0,
+      "fitted_offset": 2,
+      "feature": [0,0,2,2,0,0,0,0,0,0,0,0,1,0,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [263,67],
+      "fitted_slope": 0,
+      "fitted_offset": 8,
+      "feature": [0,0,2,3,0,0,0,0,0,0,0,0,1,0,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [263,96],
+      "fitted_slope": 0,
+      "fitted_offset": 2,
+      "feature": [0,0,2,2,0,0,0,0,0,0,0,0,0,1,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [263,97],
+      "fitted_slope": 0,
+      "fitted_offset": 8,
+      "feature": [0,0,2,3,0,0,0,0,0,0,0,0,0,1,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [263,131],
+      "fitted_slope": 0,
+      "fitted_offset": 8,
+      "feature": [0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [263,161],
+      "fitted_slope": 0,
+      "fitted_offset": 2,
+      "feature": [0,0,2,1,0,0,0,0,0,0,0,1,0,0,0,1,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [263,163],
+      "fitted_slope": 0,
+      "fitted_offset": 8,
+      "feature": [0,0,2,2,0,0,0,0,0,0,0,1,0,0,0,1,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [263,193],
+      "fitted_slope": 0,
+      "fitted_offset": 2,
+      "feature": [0,0,2,1,0,0,0,0,0,0,0,0,1,0,0,1,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [263,195],
+      "fitted_slope": 0,
+      "fitted_offset": 8,
+      "feature": [0,0,2,2,0,0,0,0,0,0,0,0,1,0,0,1,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [263,225],
+      "fitted_slope": 0,
+      "fitted_offset": 2,
+      "feature": [0,0,2,2,0,0,0,0,0,0,0,0,0,1,0,1,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [263,227],
+      "fitted_slope": 0,
+      "fitted_offset": 8,
+      "feature": [0,0,2,3,0,0,0,0,0,0,0,0,0,1,0,1,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [263,241],
+      "fitted_slope": 0,
+      "fitted_offset": 2,
+      "feature": [0,0,2,1,0,0,0,0,0,0,0,0,0,1,0,1,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [263,259],
+      "fitted_slope": 0,
+      "fitted_offset": 8,
+      "feature": [0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [263,263],
+      "fitted_slope": 0,
+      "fitted_offset": 8,
+      "feature": [0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [263,289],
+      "fitted_slope": 0,
+      "fitted_offset": 2,
+      "feature": [0,0,2,1,0,0,0,0,0,0,0,1,0,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [263,291],
+      "fitted_slope": 0,
+      "fitted_offset": 8,
+      "feature": [0,0,2,2,0,0,0,0,0,0,0,1,0,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [263,295],
+      "fitted_slope": 0,
+      "fitted_offset": 8,
+      "feature": [0,0,2,3,0,0,0,0,0,0,0,1,0,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [263,321],
+      "fitted_slope": 0,
+      "fitted_offset": 2,
+      "feature": [0,0,2,1,0,0,0,0,0,0,0,0,1,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [263,323],
+      "fitted_slope": 0,
+      "fitted_offset": 10,
+      "feature": [0,0,2,2,0,0,0,0,0,0,0,0,1,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [263,327],
+      "fitted_slope": 2,
+      "fitted_offset": 4,
+      "feature": [0,0,2,3,0,0,0,0,0,0,0,0,1,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [263,352],
+      "fitted_slope": 0,
+      "fitted_offset": 2,
+      "feature": [0,0,2,1,0,0,0,0,0,0,0,0,0,1,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [263,353],
+      "fitted_slope": 0,
+      "fitted_offset": 2,
+      "feature": [0,0,2,2,0,0,0,0,0,0,0,0,0,1,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [263,355],
+      "fitted_slope": 0,
+      "fitted_offset": 8,
+      "feature": [0,0,2,3,0,0,0,0,0,0,0,0,0,1,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [263,359],
+      "fitted_slope": 0,
+      "fitted_offset": 8,
+      "feature": [0,0,2,4,0,0,0,0,0,0,0,0,0,1,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [271,3],
+      "fitted_slope": 0,
+      "fitted_offset": 7,
+      "feature": [0,0,3,2,0,0,0,0,0,0,0,0,0,0,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [271,7],
+      "fitted_slope": 2,
+      "fitted_offset": 3,
+      "feature": [0,0,3,3,0,0,0,0,0,0,0,0,0,0,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [271,33],
+      "fitted_slope": 0,
+      "fitted_offset": 7,
+      "feature": [0,0,3,2,0,0,0,0,0,0,0,1,0,0,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [271,37],
+      "fitted_slope": 2,
+      "fitted_offset": 3,
+      "feature": [0,0,3,3,0,0,0,0,0,0,0,1,0,0,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [271,65],
+      "fitted_slope": 2,
+      "fitted_offset": 7,
+      "feature": [0,0,3,2,0,0,0,0,0,0,0,0,1,0,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [271,67],
+      "fitted_slope": 0,
+      "fitted_offset": 7,
+      "feature": [0,0,3,3,0,0,0,0,0,0,0,0,1,0,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [271,71],
+      "fitted_slope": 2,
+      "fitted_offset": 3,
+      "feature": [0,0,3,4,0,0,0,0,0,0,0,0,1,0,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [271,97],
+      "fitted_slope": 0,
+      "fitted_offset": 7,
+      "feature": [0,0,3,3,0,0,0,0,0,0,0,0,0,1,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [271,101],
+      "fitted_slope": 2,
+      "fitted_offset": 3,
+      "feature": [0,0,3,4,0,0,0,0,0,0,0,0,0,1,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [271,135],
+      "fitted_slope": 2,
+      "fitted_offset": 3,
+      "feature": [0,0,3,2,0,0,0,0,0,0,0,0,0,0,0,1,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [271,163],
+      "fitted_slope": 0,
+      "fitted_offset": 7,
+      "feature": [0,0,3,2,0,0,0,0,0,0,0,1,0,0,0,1,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [271,167],
+      "fitted_slope": 2,
+      "fitted_offset": 3,
+      "feature": [0,0,3,3,0,0,0,0,0,0,0,1,0,0,0,1,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [271,195],
+      "fitted_slope": 0,
+      "fitted_offset": 7,
+      "feature": [0,0,3,2,0,0,0,0,0,0,0,0,1,0,0,1,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [271,199],
+      "fitted_slope": 2,
+      "fitted_offset": 3,
+      "feature": [0,0,3,3,0,0,0,0,0,0,0,0,1,0,0,1,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [271,227],
+      "fitted_slope": 0,
+      "fitted_offset": 7,
+      "feature": [0,0,3,3,0,0,0,0,0,0,0,0,0,1,0,1,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [271,231],
+      "fitted_slope": 2,
+      "fitted_offset": 3,
+      "feature": [0,0,3,4,0,0,0,0,0,0,0,0,0,1,0,1,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [271,243],
+      "fitted_slope": 0,
+      "fitted_offset": 7,
+      "feature": [0,0,3,2,0,0,0,0,0,0,0,0,0,1,0,1,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [271,263],
+      "fitted_slope": 0,
+      "fitted_offset": 7,
+      "feature": [0,0,3,2,0,0,0,0,0,0,0,0,0,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [271,271],
+      "fitted_slope": 2,
+      "fitted_offset": 3,
+      "feature": [0,0,3,3,0,0,0,0,0,0,0,0,0,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [271,291],
+      "fitted_slope": 0,
+      "fitted_offset": 7,
+      "feature": [0,0,3,2,0,0,0,0,0,0,0,1,0,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [271,295],
+      "fitted_slope": 0,
+      "fitted_offset": 7,
+      "feature": [0,0,3,3,0,0,0,0,0,0,0,1,0,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [271,303],
+      "fitted_slope": 2,
+      "fitted_offset": 3,
+      "feature": [0,0,3,4,0,0,0,0,0,0,0,1,0,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [271,323],
+      "fitted_slope": 0,
+      "fitted_offset": 7,
+      "feature": [0,0,3,2,0,0,0,0,0,0,0,0,1,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [271,327],
+      "fitted_slope": 0,
+      "fitted_offset": 7,
+      "feature": [0,0,3,3,0,0,0,0,0,0,0,0,1,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [271,335],
+      "fitted_slope": 6,
+      "fitted_offset": -1,
+      "feature": [0,0,3,4,0,0,0,0,0,0,0,0,1,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [271,353],
+      "fitted_slope": 0,
+      "fitted_offset": 7,
+      "feature": [0,0,3,2,0,0,0,0,0,0,0,0,0,1,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [271,355],
+      "fitted_slope": 0,
+      "fitted_offset": 7,
+      "feature": [0,0,3,3,0,0,0,0,0,0,0,0,0,1,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [271,359],
+      "fitted_slope": 0,
+      "fitted_offset": 7,
+      "feature": [0,0,3,4,0,0,0,0,0,0,0,0,0,1,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [271,367],
+      "fitted_slope": 2,
+      "fitted_offset": 3,
+      "feature": [0,0,3,5,0,0,0,0,0,0,0,0,0,1,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [287,7],
+      "fitted_slope": 2,
+      "fitted_offset": 2,
+      "feature": [0,0,4,3,0,0,0,0,0,0,0,0,0,0,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [287,15],
+      "fitted_slope": 4,
+      "fitted_offset": 0,
+      "feature": [0,0,4,4,0,0,0,0,0,0,0,0,0,0,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [287,37],
+      "fitted_slope": 2,
+      "fitted_offset": 2,
+      "feature": [0,0,4,3,0,0,0,0,0,0,0,1,0,0,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [287,45],
+      "fitted_slope": 4,
+      "fitted_offset": 0,
+      "feature": [0,0,4,4,0,0,0,0,0,0,0,1,0,0,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [287,69],
+      "fitted_slope": 4,
+      "fitted_offset": 2,
+      "feature": [0,0,4,3,0,0,0,0,0,0,0,0,1,0,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [287,71],
+      "fitted_slope": 2,
+      "fitted_offset": 2,
+      "feature": [0,0,4,4,0,0,0,0,0,0,0,0,1,0,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [287,79],
+      "fitted_slope": 4,
+      "fitted_offset": 0,
+      "feature": [0,0,4,5,0,0,0,0,0,0,0,0,1,0,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [287,101],
+      "fitted_slope": 2,
+      "fitted_offset": 2,
+      "feature": [0,0,4,4,0,0,0,0,0,0,0,0,0,1,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [287,109],
+      "fitted_slope": 4,
+      "fitted_offset": 0,
+      "feature": [0,0,4,5,0,0,0,0,0,0,0,0,0,1,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [287,143],
+      "fitted_slope": 4,
+      "fitted_offset": 0,
+      "feature": [0,0,4,3,0,0,0,0,0,0,0,0,0,0,0,1,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [287,167],
+      "fitted_slope": 2,
+      "fitted_offset": 2,
+      "feature": [0,0,4,3,0,0,0,0,0,0,0,1,0,0,0,1,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [287,175],
+      "fitted_slope": 4,
+      "fitted_offset": 0,
+      "feature": [0,0,4,4,0,0,0,0,0,0,0,1,0,0,0,1,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [287,199],
+      "fitted_slope": 2,
+      "fitted_offset": 2,
+      "feature": [0,0,4,3,0,0,0,0,0,0,0,0,1,0,0,1,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [287,207],
+      "fitted_slope": 4,
+      "fitted_offset": 0,
+      "feature": [0,0,4,4,0,0,0,0,0,0,0,0,1,0,0,1,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [287,231],
+      "fitted_slope": 2,
+      "fitted_offset": 2,
+      "feature": [0,0,4,4,0,0,0,0,0,0,0,0,0,1,0,1,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [287,239],
+      "fitted_slope": 4,
+      "fitted_offset": 0,
+      "feature": [0,0,4,5,0,0,0,0,0,0,0,0,0,1,0,1,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [287,247],
+      "fitted_slope": 2,
+      "fitted_offset": 2,
+      "feature": [0,0,4,3,0,0,0,0,0,0,0,0,0,1,0,1,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [287,271],
+      "fitted_slope": 2,
+      "fitted_offset": 2,
+      "feature": [0,0,4,3,0,0,0,0,0,0,0,0,0,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [287,295],
+      "fitted_slope": 2,
+      "fitted_offset": 2,
+      "feature": [0,0,4,3,0,0,0,0,0,0,0,1,0,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [287,303],
+      "fitted_slope": 2,
+      "fitted_offset": 2,
+      "feature": [0,0,4,4,0,0,0,0,0,0,0,1,0,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [287,327],
+      "fitted_slope": 2,
+      "fitted_offset": 2,
+      "feature": [0,0,4,3,0,0,0,0,0,0,0,0,1,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [287,335],
+      "fitted_slope": 2,
+      "fitted_offset": 2,
+      "feature": [0,0,4,4,0,0,0,0,0,0,0,0,1,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [287,357],
+      "fitted_slope": 2,
+      "fitted_offset": 2,
+      "feature": [0,0,4,3,0,0,0,0,0,0,0,0,0,1,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [287,359],
+      "fitted_slope": 2,
+      "fitted_offset": 2,
+      "feature": [0,0,4,4,0,0,0,0,0,0,0,0,0,1,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [287,367],
+      "fitted_slope": 2,
+      "fitted_offset": 2,
+      "feature": [0,0,4,5,0,0,0,0,0,0,0,0,0,1,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [319,15],
+      "fitted_slope": 4,
+      "fitted_offset": -1,
+      "feature": [0,0,5,4,0,0,0,0,0,0,0,0,0,0,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [319,39],
+      "fitted_slope": 4,
+      "fitted_offset": 1,
+      "feature": [0,0,5,4,0,0,0,0,0,0,0,1,0,0,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [319,47],
+      "fitted_slope": 6,
+      "fitted_offset": -1,
+      "feature": [0,0,5,5,0,0,0,0,0,0,0,1,0,0,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [319,71],
+      "fitted_slope": 6,
+      "fitted_offset": 1,
+      "feature": [0,0,5,4,0,0,0,0,0,0,0,0,1,0,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [319,79],
+      "fitted_slope": 4,
+      "fitted_offset": -1,
+      "feature": [0,0,5,5,0,0,0,0,0,0,0,0,1,0,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [319,103],
+      "fitted_slope": 4,
+      "fitted_offset": 1,
+      "feature": [0,0,5,5,0,0,0,0,0,0,0,0,0,1,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [319,111],
+      "fitted_slope": 6,
+      "fitted_offset": -1,
+      "feature": [0,0,5,6,0,0,0,0,0,0,0,0,0,1,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [319,175],
+      "fitted_slope": 4,
+      "fitted_offset": -1,
+      "feature": [0,0,5,4,0,0,0,0,0,0,0,1,0,0,0,1,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [319,207],
+      "fitted_slope": 4,
+      "fitted_offset": -1,
+      "feature": [0,0,5,4,0,0,0,0,0,0,0,0,1,0,0,1,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [319,239],
+      "fitted_slope": 4,
+      "fitted_offset": -1,
+      "feature": [0,0,5,5,0,0,0,0,0,0,0,0,0,1,0,1,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [319,255],
+      "fitted_slope": 4,
+      "fitted_offset": -1,
+      "feature": [0,0,5,4,0,0,0,0,0,0,0,0,0,1,0,1,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [319,303],
+      "fitted_slope": 4,
+      "fitted_offset": -1,
+      "feature": [0,0,5,4,0,0,0,0,0,0,0,1,0,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [319,335],
+      "fitted_slope": 4,
+      "fitted_offset": -1,
+      "feature": [0,0,5,4,0,0,0,0,0,0,0,0,1,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [319,359],
+      "fitted_slope": 4,
+      "fitted_offset": 1,
+      "feature": [0,0,5,4,0,0,0,0,0,0,0,0,0,1,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [319,367],
+      "fitted_slope": 4,
+      "fitted_offset": -1,
+      "feature": [0,0,5,5,0,0,0,0,0,0,0,0,0,1,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [320,272],
+      "fitted_slope": 4,
+      "fitted_offset": -4,
+      "feature": [0,0,-2,-2,0,0,0,0,0,0,0,0,0,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [320,304],
+      "fitted_slope": 4,
+      "fitted_offset": -4,
+      "feature": [0,0,-2,-1,0,0,0,0,0,0,0,1,0,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [320,336],
+      "fitted_slope": 4,
+      "fitted_offset": -4,
+      "feature": [0,0,-2,-1,0,0,0,0,0,0,0,0,1,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [320,368],
+      "fitted_slope": 4,
+      "fitted_offset": -4,
+      "feature": [0,0,-2,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [321,16],
+      "fitted_slope": 2,
+      "fitted_offset": -3,
+      "feature": [0,0,-1,-1,0,0,0,0,0,0,0,0,0,0,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [321,80],
+      "fitted_slope": 2,
+      "fitted_offset": -3,
+      "feature": [0,0,-1,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [321,144],
+      "fitted_slope": 2,
+      "fitted_offset": -3,
+      "feature": [0,0,-1,-2,0,0,0,0,0,0,0,0,0,0,0,1,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [321,176],
+      "fitted_slope": 2,
+      "fitted_offset": -3,
+      "feature": [0,0,-1,-1,0,0,0,0,0,0,0,1,0,0,0,1,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [321,240],
+      "fitted_slope": 2,
+      "fitted_offset": -3,
+      "feature": [0,0,-1,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [321,272],
+      "fitted_slope": 4,
+      "fitted_offset": -5,
+      "feature": [0,0,-1,-2,0,0,0,0,0,0,0,0,0,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [323,16],
+      "fitted_slope": 2,
+      "fitted_offset": -4,
+      "feature": [0,0,0,-1,0,0,0,0,0,0,0,0,0,0,0,1,0,0]
+    }
+  ],
+  "cases": [
+    {
+      "success": true,
+      "optimum": "2",
+      "primal": ["0","0","0","0","2","1","2","2","1","0","0","0","0","0","0","0","0","0","-2","0"],
+      "dual_inequalities": [
+        [5,"-1"],
+        [217,"-1"]
+      ],
+      "dual_equalities": [
+        [0,"-3"]
+      ],
+      "selected_x": 0,
+      "selected_y": 0,
+      "state_inequalities": [
+        {
+          "letter": "X",
+          "selected": 0,
+          "comparison": 0
+        },
+        {
+          "letter": "X",
+          "selected": 0,
+          "comparison": 1
+        },
+        {
+          "letter": "X",
+          "selected": 0,
+          "comparison": 2
+        },
+        {
+          "letter": "X",
+          "selected": 0,
+          "comparison": 3
+        },
+        {
+          "letter": "Y",
+          "selected": 0,
+          "comparison": 0
+        },
+        {
+          "letter": "Y",
+          "selected": 0,
+          "comparison": 1
+        },
+        {
+          "letter": "Y",
+          "selected": 0,
+          "comparison": 2
+        }
+      ]
+    },
+    {
+      "success": true,
+      "optimum": "2",
+      "primal": ["0","0","0","0","2","1","2","2","1","0","0","0","0","0","0","0","0","0","-2","0"],
+      "dual_inequalities": [
+        [49,"-1"],
+        [287,"-1"]
+      ],
+      "dual_equalities": [
+        [0,"-2"],
+        [1,"1"]
+      ],
+      "selected_x": 0,
+      "selected_y": 1,
+      "state_inequalities": [
+        {
+          "letter": "X",
+          "selected": 0,
+          "comparison": 0
+        },
+        {
+          "letter": "X",
+          "selected": 0,
+          "comparison": 1
+        },
+        {
+          "letter": "X",
+          "selected": 0,
+          "comparison": 2
+        },
+        {
+          "letter": "X",
+          "selected": 0,
+          "comparison": 3
+        },
+        {
+          "letter": "Y",
+          "selected": 1,
+          "comparison": 0
+        },
+        {
+          "letter": "Y",
+          "selected": 1,
+          "comparison": 1
+        },
+        {
+          "letter": "Y",
+          "selected": 1,
+          "comparison": 2
+        }
+      ]
+    },
+    {
+      "success": true,
+      "optimum": "4",
+      "primal": ["-1","1","0","0","2","2","2","4","0","0","0","0","0","0","0","0","-2","-2","-2","-2"],
+      "dual_inequalities": [
+        [114,"-1"],
+        [400,"-1"]
+      ],
+      "dual_equalities": [
+        [0,"-2"]
+      ],
+      "selected_x": 0,
+      "selected_y": 2,
+      "state_inequalities": [
+        {
+          "letter": "X",
+          "selected": 0,
+          "comparison": 0
+        },
+        {
+          "letter": "X",
+          "selected": 0,
+          "comparison": 1
+        },
+        {
+          "letter": "X",
+          "selected": 0,
+          "comparison": 2
+        },
+        {
+          "letter": "X",
+          "selected": 0,
+          "comparison": 3
+        },
+        {
+          "letter": "Y",
+          "selected": 2,
+          "comparison": 0
+        },
+        {
+          "letter": "Y",
+          "selected": 2,
+          "comparison": 1
+        },
+        {
+          "letter": "Y",
+          "selected": 2,
+          "comparison": 2
+        }
+      ]
+    },
+    {
+      "success": true,
+      "optimum": "2",
+      "primal": ["0","0","0","0","2","1","2","2","1","0","0","0","0","0","0","0","0","0","-2","0"],
+      "dual_inequalities": [
+        [10,"-1"],
+        [218,"-1"]
+      ],
+      "dual_equalities": [
+        [0,"-2"]
+      ],
+      "selected_x": 1,
+      "selected_y": 0,
+      "state_inequalities": [
+        {
+          "letter": "X",
+          "selected": 1,
+          "comparison": 0
+        },
+        {
+          "letter": "X",
+          "selected": 1,
+          "comparison": 1
+        },
+        {
+          "letter": "X",
+          "selected": 1,
+          "comparison": 2
+        },
+        {
+          "letter": "X",
+          "selected": 1,
+          "comparison": 3
+        },
+        {
+          "letter": "Y",
+          "selected": 0,
+          "comparison": 0
+        },
+        {
+          "letter": "Y",
+          "selected": 0,
+          "comparison": 1
+        },
+        {
+          "letter": "Y",
+          "selected": 0,
+          "comparison": 2
+        }
+      ]
+    },
+    {
+      "success": true,
+      "optimum": "0",
+      "primal": ["0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","-4","0"],
+      "dual_inequalities": [
+        [61,"-1"],
+        [288,"-1"]
+      ],
+      "dual_equalities": [
+        [0,"-2"],
+        [1,"1"]
+      ],
+      "selected_x": 1,
+      "selected_y": 1,
+      "state_inequalities": [
+        {
+          "letter": "X",
+          "selected": 1,
+          "comparison": 0
+        },
+        {
+          "letter": "X",
+          "selected": 1,
+          "comparison": 1
+        },
+        {
+          "letter": "X",
+          "selected": 1,
+          "comparison": 2
+        },
+        {
+          "letter": "X",
+          "selected": 1,
+          "comparison": 3
+        },
+        {
+          "letter": "Y",
+          "selected": 1,
+          "comparison": 0
+        },
+        {
+          "letter": "Y",
+          "selected": 1,
+          "comparison": 1
+        },
+        {
+          "letter": "Y",
+          "selected": 1,
+          "comparison": 2
+        }
+      ]
+    },
+    {
+      "success": true,
+      "optimum": "4",
+      "primal": ["-1","1","0","0","2","2","2","2","-2","0","0","0","0","0","0","0","0","0","-4","0"],
+      "dual_inequalities": [
+        [138,"-1"],
+        [402,"-1/2"],
+        [429,"-1/2"]
+      ],
+      "dual_equalities": [
+        [0,"-3"],
+        [1,"-1/2"]
+      ],
+      "selected_x": 1,
+      "selected_y": 2,
+      "state_inequalities": [
+        {
+          "letter": "X",
+          "selected": 1,
+          "comparison": 0
+        },
+        {
+          "letter": "X",
+          "selected": 1,
+          "comparison": 1
+        },
+        {
+          "letter": "X",
+          "selected": 1,
+          "comparison": 2
+        },
+        {
+          "letter": "X",
+          "selected": 1,
+          "comparison": 3
+        },
+        {
+          "letter": "Y",
+          "selected": 2,
+          "comparison": 0
+        },
+        {
+          "letter": "Y",
+          "selected": 2,
+          "comparison": 1
+        },
+        {
+          "letter": "Y",
+          "selected": 2,
+          "comparison": 2
+        }
+      ]
+    },
+    {
+      "success": true,
+      "optimum": "4",
+      "primal": ["0","0","0","0","2","-2","0","2","2","0","0","0","0","0","0","0","0","0","-4","0"],
+      "dual_inequalities": [
+        [24,"-1"],
+        [228,"-1"]
+      ],
+      "dual_equalities": [
+        [0,"-2"],
+        [1,"-1"]
+      ],
+      "selected_x": 2,
+      "selected_y": 0,
+      "state_inequalities": [
+        {
+          "letter": "X",
+          "selected": 2,
+          "comparison": 0
+        },
+        {
+          "letter": "X",
+          "selected": 2,
+          "comparison": 1
+        },
+        {
+          "letter": "X",
+          "selected": 2,
+          "comparison": 2
+        },
+        {
+          "letter": "X",
+          "selected": 2,
+          "comparison": 3
+        },
+        {
+          "letter": "Y",
+          "selected": 0,
+          "comparison": 0
+        },
+        {
+          "letter": "Y",
+          "selected": 0,
+          "comparison": 1
+        },
+        {
+          "letter": "Y",
+          "selected": 0,
+          "comparison": 2
+        }
+      ]
+    },
+    {
+      "success": true,
+      "optimum": "4",
+      "primal": ["0","0","0","0","2","-2","0","2","2","0","0","0","0","0","0","0","0","0","-4","0"],
+      "dual_inequalities": [
+        [81,"-1"],
+        [297,"-1"]
+      ],
+      "dual_equalities": [
+        [0,"-3"]
+      ],
+      "selected_x": 2,
+      "selected_y": 1,
+      "state_inequalities": [
+        {
+          "letter": "X",
+          "selected": 2,
+          "comparison": 0
+        },
+        {
+          "letter": "X",
+          "selected": 2,
+          "comparison": 1
+        },
+        {
+          "letter": "X",
+          "selected": 2,
+          "comparison": 2
+        },
+        {
+          "letter": "X",
+          "selected": 2,
+          "comparison": 3
+        },
+        {
+          "letter": "Y",
+          "selected": 1,
+          "comparison": 0
+        },
+        {
+          "letter": "Y",
+          "selected": 1,
+          "comparison": 1
+        },
+        {
+          "letter": "Y",
+          "selected": 1,
+          "comparison": 2
+        }
+      ]
+    },
+    {
+      "success": true,
+      "optimum": "8",
+      "primal": ["1","-1","0","0","2","-2","0","6","2","-4","-4","0","0","0","0","0","0","0","-8","0"],
+      "dual_inequalities": [
+        [167,"-1"],
+        [405,"-1/2"],
+        [432,"-1/2"]
+      ],
+      "dual_equalities": [
+        [0,"-3"],
+        [1,"-1/2"]
+      ],
+      "selected_x": 2,
+      "selected_y": 2,
+      "state_inequalities": [
+        {
+          "letter": "X",
+          "selected": 2,
+          "comparison": 0
+        },
+        {
+          "letter": "X",
+          "selected": 2,
+          "comparison": 1
+        },
+        {
+          "letter": "X",
+          "selected": 2,
+          "comparison": 2
+        },
+        {
+          "letter": "X",
+          "selected": 2,
+          "comparison": 3
+        },
+        {
+          "letter": "Y",
+          "selected": 2,
+          "comparison": 0
+        },
+        {
+          "letter": "Y",
+          "selected": 2,
+          "comparison": 1
+        },
+        {
+          "letter": "Y",
+          "selected": 2,
+          "comparison": 2
+        }
+      ]
+    },
+    {
+      "success": true,
+      "optimum": "4",
+      "primal": ["0","0","0","0","2","0","0","2","0","0","0","0","0","0","0","0","0","0","-4","0"],
+      "dual_inequalities": [
+        [34,"-1"],
+        [229,"-1"]
+      ],
+      "dual_equalities": [
+        [0,"-3"],
+        [1,"-1"]
+      ],
+      "selected_x": 3,
+      "selected_y": 0,
+      "state_inequalities": [
+        {
+          "letter": "X",
+          "selected": 3,
+          "comparison": 0
+        },
+        {
+          "letter": "X",
+          "selected": 3,
+          "comparison": 1
+        },
+        {
+          "letter": "X",
+          "selected": 3,
+          "comparison": 2
+        },
+        {
+          "letter": "X",
+          "selected": 3,
+          "comparison": 3
+        },
+        {
+          "letter": "Y",
+          "selected": 0,
+          "comparison": 0
+        },
+        {
+          "letter": "Y",
+          "selected": 0,
+          "comparison": 1
+        },
+        {
+          "letter": "Y",
+          "selected": 0,
+          "comparison": 2
+        }
+      ]
+    },
+    {
+      "success": true,
+      "optimum": "2",
+      "primal": ["0","0","0","0","2","0","0","0","0","0","0","0","0","0","0","0","0","0","-4","0"],
+      "dual_inequalities": [
+        [93,"-1"],
+        [298,"-1"]
+      ],
+      "dual_equalities": [
+        [0,"-3"]
+      ],
+      "selected_x": 3,
+      "selected_y": 1,
+      "state_inequalities": [
+        {
+          "letter": "X",
+          "selected": 3,
+          "comparison": 0
+        },
+        {
+          "letter": "X",
+          "selected": 3,
+          "comparison": 1
+        },
+        {
+          "letter": "X",
+          "selected": 3,
+          "comparison": 2
+        },
+        {
+          "letter": "X",
+          "selected": 3,
+          "comparison": 3
+        },
+        {
+          "letter": "Y",
+          "selected": 1,
+          "comparison": 0
+        },
+        {
+          "letter": "Y",
+          "selected": 1,
+          "comparison": 1
+        },
+        {
+          "letter": "Y",
+          "selected": 1,
+          "comparison": 2
+        }
+      ]
+    },
+    {
+      "success": true,
+      "optimum": "4",
+      "primal": ["1","-1","0","0","0","0","-2","0","-2","2","0","0","0","0","0","0","0","0","-6","0"],
+      "dual_inequalities": [
+        [192,"-1/2"],
+        [199,"-1/2"],
+        [408,"-1/3"],
+        [438,"-2/3"]
+      ],
+      "dual_equalities": [
+        [0,"-7/2"],
+        [1,"-2/3"]
+      ],
+      "selected_x": 3,
+      "selected_y": 2,
+      "state_inequalities": [
+        {
+          "letter": "X",
+          "selected": 3,
+          "comparison": 0
+        },
+        {
+          "letter": "X",
+          "selected": 3,
+          "comparison": 1
+        },
+        {
+          "letter": "X",
+          "selected": 3,
+          "comparison": 2
+        },
+        {
+          "letter": "X",
+          "selected": 3,
+          "comparison": 3
+        },
+        {
+          "letter": "Y",
+          "selected": 2,
+          "comparison": 0
+        },
+        {
+          "letter": "Y",
+          "selected": 2,
+          "comparison": 1
+        },
+        {
+          "letter": "Y",
+          "selected": 2,
+          "comparison": 2
+        }
+      ]
+    }
+  ],
+  "C0_physical_gaps": [
+    {
+      "success": true,
+      "optimum": "2",
+      "primal": ["0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","-4","0"],
+      "dual_inequalities": [
+        [49,"-1"],
+        [287,"-1"]
+      ],
+      "dual_equalities": [
+        [0,"-2"],
+        [1,"1"],
+        [2,"-1"]
+      ],
+      "letter": "X",
+      "state": 0
+    },
+    {
+      "success": true,
+      "optimum": "4",
+      "primal": ["0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","-4","0"],
+      "dual_inequalities": [
+        [81,"-1"],
+        [297,"-1"]
+      ],
+      "dual_equalities": [
+        [0,"-3"],
+        [2,"-1"]
+      ],
+      "letter": "X",
+      "state": 2
+    },
+    {
+      "success": true,
+      "optimum": "2",
+      "primal": ["0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","-4","0"],
+      "dual_inequalities": [
+        [93,"-1"],
+        [298,"-1"]
+      ],
+      "dual_equalities": [
+        [0,"-3"],
+        [2,"-1"]
+      ],
+      "letter": "X",
+      "state": 3
+    },
+    {
+      "success": true,
+      "optimum": "2",
+      "primal": ["0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","-4","0"],
+      "dual_inequalities": [
+        [10,"-1"],
+        [218,"-1"]
+      ],
+      "dual_equalities": [
+        [0,"-2"],
+        [2,"-1"]
+      ],
+      "letter": "Y",
+      "state": 0
+    },
+    {
+      "success": true,
+      "optimum": "4",
+      "primal": ["1","-1","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","-4","0"],
+      "dual_inequalities": [
+        [138,"-1"],
+        [402,"-1/2"],
+        [429,"-1/2"]
+      ],
+      "dual_equalities": [
+        [0,"-3"],
+        [1,"-1/2"],
+        [2,"-1"]
+      ],
+      "letter": "Y",
+      "state": 2
+    }
+  ],
+  "used_entry_constraints": [5,10,24,34,49,61,81,93,114,138,167,192,199,217,218,228,229,287,288,297,298,400,402,405,408,429,432,438],
+  "used_entries": [
+    {
+      "place": "infinity",
+      "entry": [7,21],
+      "fitted_slope": -2,
+      "fitted_offset": 5,
+      "feature": [3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [9,3],
+      "fitted_slope": -4,
+      "fitted_offset": 4,
+      "feature": [2,2,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [17,17],
+      "fitted_slope": -2,
+      "fitted_offset": 2,
+      "feature": [2,2,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [25,19],
+      "fitted_slope": -4,
+      "fitted_offset": 3,
+      "feature": [3,3,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [33,33],
+      "fitted_slope": -4,
+      "fitted_offset": 4,
+      "feature": [2,2,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [40,33],
+      "fitted_slope": -4,
+      "fitted_offset": 4,
+      "feature": [2,2,0,0,1,0,0,1,0,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [49,49],
+      "fitted_slope": -4,
+      "fitted_offset": 3,
+      "feature": [3,3,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [56,49],
+      "fitted_slope": -4,
+      "fitted_offset": 3,
+      "feature": [3,3,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [65,65],
+      "fitted_slope": -2,
+      "fitted_offset": 2,
+      "feature": [2,2,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [73,67],
+      "fitted_slope": -4,
+      "fitted_offset": 3,
+      "feature": [3,3,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [81,67],
+      "fitted_slope": -4,
+      "fitted_offset": 3,
+      "feature": [3,3,0,0,0,1,0,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [88,83],
+      "fitted_slope": -1,
+      "fitted_offset": 2,
+      "feature": [3,4,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "infinity",
+      "entry": [89,67],
+      "fitted_slope": -3,
+      "fitted_offset": 3,
+      "feature": [4,3,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [0,0],
+      "fitted_slope": 0,
+      "fitted_offset": 0,
+      "feature": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [0,48],
+      "fitted_slope": 0,
+      "fitted_offset": 0,
+      "feature": [0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [1,64],
+      "fitted_slope": 0,
+      "fitted_offset": 1,
+      "feature": [0,0,1,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [1,112],
+      "fitted_slope": 0,
+      "fitted_offset": 1,
+      "feature": [0,0,1,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0]
+    },
+    {
+      "place": "zero",
+      "entry": [128,128],
+      "fitted_slope": 0,
+      "fitted_offset": 1,
+      "feature": [0,0,-1,-1,0,0,0,0,0,0,0,0,0,0,1,0,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [128,176],
+      "fitted_slope": 0,
+      "fitted_offset": 1,
+      "feature": [0,0,-1,-1,0,0,0,0,0,0,0,1,0,0,1,0,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [129,192],
+      "fitted_slope": 0,
+      "fitted_offset": 2,
+      "feature": [0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [129,240],
+      "fitted_slope": 0,
+      "fitted_offset": 2,
+      "feature": [0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0]
+    },
+    {
+      "place": "zero",
+      "entry": [257,257],
+      "fitted_slope": 0,
+      "fitted_offset": 2,
+      "feature": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [257,289],
+      "fitted_slope": 0,
+      "fitted_offset": 2,
+      "feature": [0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [257,321],
+      "fitted_slope": 0,
+      "fitted_offset": 4,
+      "feature": [0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [257,353],
+      "fitted_slope": 0,
+      "fitted_offset": 2,
+      "feature": [0,0,0,2,0,0,0,0,0,0,0,0,0,1,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [259,288],
+      "fitted_slope": 0,
+      "fitted_offset": -1,
+      "feature": [0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [259,320],
+      "fitted_slope": 0,
+      "fitted_offset": -1,
+      "feature": [0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1]
+    },
+    {
+      "place": "zero",
+      "entry": [259,368],
+      "fitted_slope": 0,
+      "fitted_offset": -1,
+      "feature": [0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1]
+    }
+  ],
+  "full_core": false,
+  "fit_sizes": [16,32],
+  "validation_sizes": [64],
+  "source_files": [
+    {
+      "filename": "entries-infinity-M16.json",
+      "sha256": "00c1025ad1dc46fcda1ddf35cd0ea718de21a6be3084f3238fdd4ebc171180db"
+    },
+    {
+      "filename": "entries-infinity-M32.json",
+      "sha256": "89495a05c6da85e2ddb6e9d515794ca684392198f4feeb4b070ec2a75c2ec701"
+    },
+    {
+      "filename": "entries-infinity-M64.json",
+      "sha256": "cf56fc3bf10565dcbd80aad26f7fd476c4c5a7c24e73ef9444118dc11cf79407"
+    },
+    {
+      "filename": "entries-zero-M16.json",
+      "sha256": "ee5990f020172569669a1bf6d88cfc1de7809193fae3575728cdedf6bb4f4184"
+    },
+    {
+      "filename": "entries-zero-M32.json",
+      "sha256": "54cb09f701002e3098bbf5449d303dbceb0b94317666f61c742bf4b4ec192c55"
+    },
+    {
+      "filename": "entries-zero-M64.json",
+      "sha256": "cdc1e425e967ef9baff9afeca0314b1fad22c83468495c81bc80b8b6e6334688"
+    }
+  ]
+}

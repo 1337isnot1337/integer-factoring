@@ -1,0 +1,1110 @@
+{
+  "status": "All 34 uniform entry bounds pass for both conjugate quartics; 22 exact LP certificates pass.",
+  "scope": "The full-alphabet partial repair with gamma=omega or omega^2 and balanced aggregate charges.",
+  "coefficient_checks": 68,
+  "coefficients": [
+    {
+      "gamma": 2,
+      "place": "infinity",
+      "physical_masks": [
+        5,
+        5
+      ],
+      "vacuum_coordinates": [
+        0,
+        0
+      ],
+      "certified_slope_upper_bound": -4,
+      "specialized_leading_coefficient": 2,
+      "coefficients_known_below": 76
+    },
+    {
+      "gamma": 2,
+      "place": "infinity",
+      "physical_masks": [
+        13,
+        7
+      ],
+      "vacuum_coordinates": [
+        0,
+        0
+      ],
+      "certified_slope_upper_bound": -4,
+      "specialized_leading_coefficient": 1,
+      "coefficients_known_below": 76
+    },
+    {
+      "gamma": 2,
+      "place": "infinity",
+      "physical_masks": [
+        7,
+        13
+      ],
+      "vacuum_coordinates": [
+        0,
+        0
+      ],
+      "certified_slope_upper_bound": -4,
+      "specialized_leading_coefficient": 1,
+      "coefficients_known_below": 76
+    },
+    {
+      "gamma": 2,
+      "place": "infinity",
+      "physical_masks": [
+        4,
+        1
+      ],
+      "vacuum_coordinates": [
+        2,
+        2
+      ],
+      "certified_slope_upper_bound": -4,
+      "specialized_leading_coefficient": 2,
+      "coefficients_known_below": 76
+    },
+    {
+      "gamma": 2,
+      "place": "infinity",
+      "physical_masks": [
+        8,
+        2
+      ],
+      "vacuum_coordinates": [
+        2,
+        2
+      ],
+      "certified_slope_upper_bound": -2,
+      "specialized_leading_coefficient": 3,
+      "coefficients_known_below": 78
+    },
+    {
+      "gamma": 2,
+      "place": "infinity",
+      "physical_masks": [
+        1,
+        4
+      ],
+      "vacuum_coordinates": [
+        2,
+        2
+      ],
+      "certified_slope_upper_bound": -4,
+      "specialized_leading_coefficient": 3,
+      "coefficients_known_below": 76
+    },
+    {
+      "gamma": 2,
+      "place": "infinity",
+      "physical_masks": [
+        9,
+        6
+      ],
+      "vacuum_coordinates": [
+        2,
+        2
+      ],
+      "certified_slope_upper_bound": -4,
+      "specialized_leading_coefficient": 2,
+      "coefficients_known_below": 76
+    },
+    {
+      "gamma": 2,
+      "place": "infinity",
+      "physical_masks": [
+        2,
+        8
+      ],
+      "vacuum_coordinates": [
+        2,
+        2
+      ],
+      "certified_slope_upper_bound": -2,
+      "specialized_leading_coefficient": 3,
+      "coefficients_known_below": 78
+    },
+    {
+      "gamma": 2,
+      "place": "infinity",
+      "physical_masks": [
+        6,
+        9
+      ],
+      "vacuum_coordinates": [
+        2,
+        2
+      ],
+      "certified_slope_upper_bound": -4,
+      "specialized_leading_coefficient": 1,
+      "coefficients_known_below": 76
+    },
+    {
+      "gamma": 2,
+      "place": "infinity",
+      "physical_masks": [
+        14,
+        11
+      ],
+      "vacuum_coordinates": [
+        2,
+        2
+      ],
+      "certified_slope_upper_bound": -4,
+      "specialized_leading_coefficient": 1,
+      "coefficients_known_below": 76
+    },
+    {
+      "gamma": 2,
+      "place": "infinity",
+      "physical_masks": [
+        11,
+        14
+      ],
+      "vacuum_coordinates": [
+        4,
+        2
+      ],
+      "certified_slope_upper_bound": -2,
+      "specialized_leading_coefficient": 2,
+      "coefficients_known_below": 76
+    },
+    {
+      "gamma": 2,
+      "place": "infinity",
+      "physical_masks": [
+        10,
+        10
+      ],
+      "vacuum_coordinates": [
+        6,
+        18
+      ],
+      "certified_slope_upper_bound": -4,
+      "specialized_leading_coefficient": 1,
+      "coefficients_known_below": 76
+    },
+    {
+      "gamma": 2,
+      "place": "infinity",
+      "physical_masks": [
+        3,
+        12
+      ],
+      "vacuum_coordinates": [
+        6,
+        6
+      ],
+      "certified_slope_upper_bound": -4,
+      "specialized_leading_coefficient": 2,
+      "coefficients_known_below": 76
+    },
+    {
+      "gamma": 2,
+      "place": "infinity",
+      "physical_masks": [
+        15,
+        15
+      ],
+      "vacuum_coordinates": [
+        6,
+        18
+      ],
+      "certified_slope_upper_bound": -4,
+      "specialized_leading_coefficient": 3,
+      "coefficients_known_below": 76
+    },
+    {
+      "gamma": 2,
+      "place": "infinity",
+      "physical_masks": [
+        12,
+        3
+      ],
+      "vacuum_coordinates": [
+        38,
+        22
+      ],
+      "certified_slope_upper_bound": -4,
+      "specialized_leading_coefficient": 3,
+      "coefficients_known_below": 76
+    },
+    {
+      "gamma": 2,
+      "place": "infinity",
+      "physical_masks": [
+        0,
+        0
+      ],
+      "vacuum_coordinates": [
+        102,
+        54
+      ],
+      "certified_slope_upper_bound": -2,
+      "specialized_leading_coefficient": 1,
+      "coefficients_known_below": 78
+    },
+    {
+      "gamma": 2,
+      "place": "zero",
+      "physical_masks": [
+        0,
+        0
+      ],
+      "vacuum_coordinates": [
+        0,
+        0
+      ],
+      "certified_slope_upper_bound": 0,
+      "specialized_leading_coefficient": 1,
+      "coefficients_known_below": 1000000
+    },
+    {
+      "gamma": 2,
+      "place": "zero",
+      "physical_masks": [
+        4,
+        1
+      ],
+      "vacuum_coordinates": [
+        0,
+        0
+      ],
+      "certified_slope_upper_bound": 0,
+      "specialized_leading_coefficient": 2,
+      "coefficients_known_below": 80
+    },
+    {
+      "gamma": 2,
+      "place": "zero",
+      "physical_masks": [
+        8,
+        2
+      ],
+      "vacuum_coordinates": [
+        0,
+        0
+      ],
+      "certified_slope_upper_bound": 2,
+      "specialized_leading_coefficient": 3,
+      "coefficients_known_below": 82
+    },
+    {
+      "gamma": 2,
+      "place": "zero",
+      "physical_masks": [
+        1,
+        4
+      ],
+      "vacuum_coordinates": [
+        0,
+        0
+      ],
+      "certified_slope_upper_bound": 0,
+      "specialized_leading_coefficient": 2,
+      "coefficients_known_below": 80
+    },
+    {
+      "gamma": 2,
+      "place": "zero",
+      "physical_masks": [
+        5,
+        5
+      ],
+      "vacuum_coordinates": [
+        0,
+        0
+      ],
+      "certified_slope_upper_bound": 0,
+      "specialized_leading_coefficient": 1,
+      "coefficients_known_below": 80
+    },
+    {
+      "gamma": 2,
+      "place": "zero",
+      "physical_masks": [
+        9,
+        5
+      ],
+      "vacuum_coordinates": [
+        0,
+        0
+      ],
+      "certified_slope_upper_bound": 0,
+      "specialized_leading_coefficient": 2,
+      "coefficients_known_below": 80
+    },
+    {
+      "gamma": 2,
+      "place": "zero",
+      "physical_masks": [
+        5,
+        6
+      ],
+      "vacuum_coordinates": [
+        0,
+        0
+      ],
+      "certified_slope_upper_bound": 0,
+      "specialized_leading_coefficient": 3,
+      "coefficients_known_below": 80
+    },
+    {
+      "gamma": 2,
+      "place": "zero",
+      "physical_masks": [
+        9,
+        6
+      ],
+      "vacuum_coordinates": [
+        0,
+        0
+      ],
+      "certified_slope_upper_bound": 2,
+      "specialized_leading_coefficient": 1,
+      "coefficients_known_below": 80
+    },
+    {
+      "gamma": 2,
+      "place": "zero",
+      "physical_masks": [
+        13,
+        7
+      ],
+      "vacuum_coordinates": [
+        0,
+        0
+      ],
+      "certified_slope_upper_bound": 0,
+      "specialized_leading_coefficient": 3,
+      "coefficients_known_below": 80
+    },
+    {
+      "gamma": 2,
+      "place": "zero",
+      "physical_masks": [
+        6,
+        9
+      ],
+      "vacuum_coordinates": [
+        0,
+        0
+      ],
+      "certified_slope_upper_bound": 0,
+      "specialized_leading_coefficient": 2,
+      "coefficients_known_below": 80
+    },
+    {
+      "gamma": 2,
+      "place": "zero",
+      "physical_masks": [
+        14,
+        11
+      ],
+      "vacuum_coordinates": [
+        0,
+        0
+      ],
+      "certified_slope_upper_bound": 0,
+      "specialized_leading_coefficient": 3,
+      "coefficients_known_below": 80
+    },
+    {
+      "gamma": 2,
+      "place": "zero",
+      "physical_masks": [
+        7,
+        13
+      ],
+      "vacuum_coordinates": [
+        0,
+        0
+      ],
+      "certified_slope_upper_bound": 0,
+      "specialized_leading_coefficient": 3,
+      "coefficients_known_below": 80
+    },
+    {
+      "gamma": 2,
+      "place": "zero",
+      "physical_masks": [
+        11,
+        14
+      ],
+      "vacuum_coordinates": [
+        0,
+        0
+      ],
+      "certified_slope_upper_bound": 2,
+      "specialized_leading_coefficient": 3,
+      "coefficients_known_below": 82
+    },
+    {
+      "gamma": 2,
+      "place": "zero",
+      "physical_masks": [
+        2,
+        8
+      ],
+      "vacuum_coordinates": [
+        2,
+        4
+      ],
+      "certified_slope_upper_bound": 0,
+      "specialized_leading_coefficient": 2,
+      "coefficients_known_below": 80
+    },
+    {
+      "gamma": 2,
+      "place": "zero",
+      "physical_masks": [
+        10,
+        10
+      ],
+      "vacuum_coordinates": [
+        2,
+        4
+      ],
+      "certified_slope_upper_bound": 0,
+      "specialized_leading_coefficient": 3,
+      "coefficients_known_below": 80
+    },
+    {
+      "gamma": 2,
+      "place": "zero",
+      "physical_masks": [
+        3,
+        12
+      ],
+      "vacuum_coordinates": [
+        2,
+        4
+      ],
+      "certified_slope_upper_bound": 0,
+      "specialized_leading_coefficient": 3,
+      "coefficients_known_below": 80
+    },
+    {
+      "gamma": 2,
+      "place": "zero",
+      "physical_masks": [
+        15,
+        15
+      ],
+      "vacuum_coordinates": [
+        2,
+        8
+      ],
+      "certified_slope_upper_bound": 0,
+      "specialized_leading_coefficient": 3,
+      "coefficients_known_below": 80
+    },
+    {
+      "gamma": 2,
+      "place": "zero",
+      "physical_masks": [
+        12,
+        3
+      ],
+      "vacuum_coordinates": [
+        6,
+        6
+      ],
+      "certified_slope_upper_bound": 2,
+      "specialized_leading_coefficient": 3,
+      "coefficients_known_below": 82
+    },
+    {
+      "gamma": 3,
+      "place": "infinity",
+      "physical_masks": [
+        5,
+        5
+      ],
+      "vacuum_coordinates": [
+        0,
+        0
+      ],
+      "certified_slope_upper_bound": -4,
+      "specialized_leading_coefficient": 3,
+      "coefficients_known_below": 76
+    },
+    {
+      "gamma": 3,
+      "place": "infinity",
+      "physical_masks": [
+        13,
+        7
+      ],
+      "vacuum_coordinates": [
+        0,
+        0
+      ],
+      "certified_slope_upper_bound": -4,
+      "specialized_leading_coefficient": 1,
+      "coefficients_known_below": 76
+    },
+    {
+      "gamma": 3,
+      "place": "infinity",
+      "physical_masks": [
+        7,
+        13
+      ],
+      "vacuum_coordinates": [
+        0,
+        0
+      ],
+      "certified_slope_upper_bound": -4,
+      "specialized_leading_coefficient": 1,
+      "coefficients_known_below": 76
+    },
+    {
+      "gamma": 3,
+      "place": "infinity",
+      "physical_masks": [
+        4,
+        1
+      ],
+      "vacuum_coordinates": [
+        2,
+        2
+      ],
+      "certified_slope_upper_bound": -4,
+      "specialized_leading_coefficient": 3,
+      "coefficients_known_below": 76
+    },
+    {
+      "gamma": 3,
+      "place": "infinity",
+      "physical_masks": [
+        8,
+        2
+      ],
+      "vacuum_coordinates": [
+        2,
+        2
+      ],
+      "certified_slope_upper_bound": -2,
+      "specialized_leading_coefficient": 2,
+      "coefficients_known_below": 78
+    },
+    {
+      "gamma": 3,
+      "place": "infinity",
+      "physical_masks": [
+        1,
+        4
+      ],
+      "vacuum_coordinates": [
+        2,
+        2
+      ],
+      "certified_slope_upper_bound": -4,
+      "specialized_leading_coefficient": 2,
+      "coefficients_known_below": 76
+    },
+    {
+      "gamma": 3,
+      "place": "infinity",
+      "physical_masks": [
+        9,
+        6
+      ],
+      "vacuum_coordinates": [
+        2,
+        2
+      ],
+      "certified_slope_upper_bound": -4,
+      "specialized_leading_coefficient": 3,
+      "coefficients_known_below": 76
+    },
+    {
+      "gamma": 3,
+      "place": "infinity",
+      "physical_masks": [
+        2,
+        8
+      ],
+      "vacuum_coordinates": [
+        2,
+        2
+      ],
+      "certified_slope_upper_bound": -2,
+      "specialized_leading_coefficient": 2,
+      "coefficients_known_below": 78
+    },
+    {
+      "gamma": 3,
+      "place": "infinity",
+      "physical_masks": [
+        6,
+        9
+      ],
+      "vacuum_coordinates": [
+        2,
+        2
+      ],
+      "certified_slope_upper_bound": -4,
+      "specialized_leading_coefficient": 1,
+      "coefficients_known_below": 76
+    },
+    {
+      "gamma": 3,
+      "place": "infinity",
+      "physical_masks": [
+        14,
+        11
+      ],
+      "vacuum_coordinates": [
+        2,
+        2
+      ],
+      "certified_slope_upper_bound": -4,
+      "specialized_leading_coefficient": 1,
+      "coefficients_known_below": 76
+    },
+    {
+      "gamma": 3,
+      "place": "infinity",
+      "physical_masks": [
+        11,
+        14
+      ],
+      "vacuum_coordinates": [
+        4,
+        2
+      ],
+      "certified_slope_upper_bound": -2,
+      "specialized_leading_coefficient": 3,
+      "coefficients_known_below": 76
+    },
+    {
+      "gamma": 3,
+      "place": "infinity",
+      "physical_masks": [
+        10,
+        10
+      ],
+      "vacuum_coordinates": [
+        6,
+        18
+      ],
+      "certified_slope_upper_bound": -4,
+      "specialized_leading_coefficient": 1,
+      "coefficients_known_below": 76
+    },
+    {
+      "gamma": 3,
+      "place": "infinity",
+      "physical_masks": [
+        3,
+        12
+      ],
+      "vacuum_coordinates": [
+        6,
+        6
+      ],
+      "certified_slope_upper_bound": -4,
+      "specialized_leading_coefficient": 3,
+      "coefficients_known_below": 76
+    },
+    {
+      "gamma": 3,
+      "place": "infinity",
+      "physical_masks": [
+        15,
+        15
+      ],
+      "vacuum_coordinates": [
+        6,
+        18
+      ],
+      "certified_slope_upper_bound": -4,
+      "specialized_leading_coefficient": 2,
+      "coefficients_known_below": 76
+    },
+    {
+      "gamma": 3,
+      "place": "infinity",
+      "physical_masks": [
+        12,
+        3
+      ],
+      "vacuum_coordinates": [
+        38,
+        22
+      ],
+      "certified_slope_upper_bound": -4,
+      "specialized_leading_coefficient": 2,
+      "coefficients_known_below": 76
+    },
+    {
+      "gamma": 3,
+      "place": "infinity",
+      "physical_masks": [
+        0,
+        0
+      ],
+      "vacuum_coordinates": [
+        102,
+        54
+      ],
+      "certified_slope_upper_bound": -2,
+      "specialized_leading_coefficient": 1,
+      "coefficients_known_below": 78
+    },
+    {
+      "gamma": 3,
+      "place": "zero",
+      "physical_masks": [
+        0,
+        0
+      ],
+      "vacuum_coordinates": [
+        0,
+        0
+      ],
+      "certified_slope_upper_bound": 0,
+      "specialized_leading_coefficient": 1,
+      "coefficients_known_below": 1000000
+    },
+    {
+      "gamma": 3,
+      "place": "zero",
+      "physical_masks": [
+        4,
+        1
+      ],
+      "vacuum_coordinates": [
+        0,
+        0
+      ],
+      "certified_slope_upper_bound": 0,
+      "specialized_leading_coefficient": 3,
+      "coefficients_known_below": 80
+    },
+    {
+      "gamma": 3,
+      "place": "zero",
+      "physical_masks": [
+        8,
+        2
+      ],
+      "vacuum_coordinates": [
+        0,
+        0
+      ],
+      "certified_slope_upper_bound": 2,
+      "specialized_leading_coefficient": 2,
+      "coefficients_known_below": 82
+    },
+    {
+      "gamma": 3,
+      "place": "zero",
+      "physical_masks": [
+        1,
+        4
+      ],
+      "vacuum_coordinates": [
+        0,
+        0
+      ],
+      "certified_slope_upper_bound": 0,
+      "specialized_leading_coefficient": 3,
+      "coefficients_known_below": 80
+    },
+    {
+      "gamma": 3,
+      "place": "zero",
+      "physical_masks": [
+        5,
+        5
+      ],
+      "vacuum_coordinates": [
+        0,
+        0
+      ],
+      "certified_slope_upper_bound": 0,
+      "specialized_leading_coefficient": 1,
+      "coefficients_known_below": 80
+    },
+    {
+      "gamma": 3,
+      "place": "zero",
+      "physical_masks": [
+        9,
+        5
+      ],
+      "vacuum_coordinates": [
+        0,
+        0
+      ],
+      "certified_slope_upper_bound": 0,
+      "specialized_leading_coefficient": 3,
+      "coefficients_known_below": 80
+    },
+    {
+      "gamma": 3,
+      "place": "zero",
+      "physical_masks": [
+        5,
+        6
+      ],
+      "vacuum_coordinates": [
+        0,
+        0
+      ],
+      "certified_slope_upper_bound": 0,
+      "specialized_leading_coefficient": 2,
+      "coefficients_known_below": 80
+    },
+    {
+      "gamma": 3,
+      "place": "zero",
+      "physical_masks": [
+        9,
+        6
+      ],
+      "vacuum_coordinates": [
+        0,
+        0
+      ],
+      "certified_slope_upper_bound": 2,
+      "specialized_leading_coefficient": 1,
+      "coefficients_known_below": 80
+    },
+    {
+      "gamma": 3,
+      "place": "zero",
+      "physical_masks": [
+        13,
+        7
+      ],
+      "vacuum_coordinates": [
+        0,
+        0
+      ],
+      "certified_slope_upper_bound": 0,
+      "specialized_leading_coefficient": 2,
+      "coefficients_known_below": 80
+    },
+    {
+      "gamma": 3,
+      "place": "zero",
+      "physical_masks": [
+        6,
+        9
+      ],
+      "vacuum_coordinates": [
+        0,
+        0
+      ],
+      "certified_slope_upper_bound": 0,
+      "specialized_leading_coefficient": 3,
+      "coefficients_known_below": 80
+    },
+    {
+      "gamma": 3,
+      "place": "zero",
+      "physical_masks": [
+        14,
+        11
+      ],
+      "vacuum_coordinates": [
+        0,
+        0
+      ],
+      "certified_slope_upper_bound": 0,
+      "specialized_leading_coefficient": 2,
+      "coefficients_known_below": 80
+    },
+    {
+      "gamma": 3,
+      "place": "zero",
+      "physical_masks": [
+        7,
+        13
+      ],
+      "vacuum_coordinates": [
+        0,
+        0
+      ],
+      "certified_slope_upper_bound": 0,
+      "specialized_leading_coefficient": 2,
+      "coefficients_known_below": 80
+    },
+    {
+      "gamma": 3,
+      "place": "zero",
+      "physical_masks": [
+        11,
+        14
+      ],
+      "vacuum_coordinates": [
+        0,
+        0
+      ],
+      "certified_slope_upper_bound": 2,
+      "specialized_leading_coefficient": 2,
+      "coefficients_known_below": 82
+    },
+    {
+      "gamma": 3,
+      "place": "zero",
+      "physical_masks": [
+        2,
+        8
+      ],
+      "vacuum_coordinates": [
+        2,
+        4
+      ],
+      "certified_slope_upper_bound": 0,
+      "specialized_leading_coefficient": 3,
+      "coefficients_known_below": 80
+    },
+    {
+      "gamma": 3,
+      "place": "zero",
+      "physical_masks": [
+        10,
+        10
+      ],
+      "vacuum_coordinates": [
+        2,
+        4
+      ],
+      "certified_slope_upper_bound": 0,
+      "specialized_leading_coefficient": 2,
+      "coefficients_known_below": 80
+    },
+    {
+      "gamma": 3,
+      "place": "zero",
+      "physical_masks": [
+        3,
+        12
+      ],
+      "vacuum_coordinates": [
+        2,
+        4
+      ],
+      "certified_slope_upper_bound": 0,
+      "specialized_leading_coefficient": 2,
+      "coefficients_known_below": 80
+    },
+    {
+      "gamma": 3,
+      "place": "zero",
+      "physical_masks": [
+        15,
+        15
+      ],
+      "vacuum_coordinates": [
+        2,
+        8
+      ],
+      "certified_slope_upper_bound": 0,
+      "specialized_leading_coefficient": 2,
+      "coefficients_known_below": 80
+    },
+    {
+      "gamma": 3,
+      "place": "zero",
+      "physical_masks": [
+        12,
+        3
+      ],
+      "vacuum_coordinates": [
+        6,
+        6
+      ],
+      "certified_slope_upper_bound": 2,
+      "specialized_leading_coefficient": 2,
+      "coefficients_known_below": 82
+    }
+  ],
+  "duals": {
+    "leading_C_lower_bounds": [
+      [
+        "2",
+        "2",
+        "4",
+        "4"
+      ],
+      [
+        "2",
+        "0",
+        "4",
+        "2"
+      ],
+      [
+        "2",
+        "2",
+        "8",
+        "4"
+      ],
+      [
+        "2",
+        "2",
+        "4",
+        "4"
+      ]
+    ],
+    "gap_lower_bounds": [
+      {
+        "letter": "X",
+        "state": 0,
+        "constant_gap": "2",
+        "off_face_C_multiplier": "-1"
+      },
+      {
+        "letter": "X",
+        "state": 2,
+        "constant_gap": "4",
+        "off_face_C_multiplier": "-2"
+      },
+      {
+        "letter": "X",
+        "state": 3,
+        "constant_gap": "2",
+        "off_face_C_multiplier": "-1"
+      },
+      {
+        "letter": "Y",
+        "state": 0,
+        "constant_gap": "2",
+        "off_face_C_multiplier": "-1"
+      },
+      {
+        "letter": "Y",
+        "state": 2,
+        "constant_gap": "4",
+        "off_face_C_multiplier": "-1"
+      },
+      {
+        "letter": "Y",
+        "state": 3,
+        "constant_gap": "2",
+        "off_face_C_multiplier": "-1"
+      }
+    ],
+    "exact_primal_dual_certificates": 22
+  },
+  "moving_gauge_constants": {
+    "physical_core_cardinalities": [
+      4,
+      4
+    ],
+    "coarse_constant": "K0 = 20 log 2 + sqrt(2) log 16",
+    "coarse_pressure_bound": "F >= T - (2B+8) ell - K0",
+    "nonpositive_pressure_gap_bound": "gap >= 2 tau - 2K0 - (4B+20) ell"
+  },
+  "input_sha256": "a260a77062b3cbe5bb05702774f946a3f19439124e8fd0a535abc3bbe5d628ca",
+  "source_sha256": {
+    "check_full_alphabet_leading_obstruction.py": "ab8636d521d12d17d65218bfdb07dd499e048ea46a1d3ec18cdcda1f18043a5c",
+    "full_alphabet_quartic_profiles.py": "757b1d41085129edfc1f13acf075216b894f282b165415619bd5e12e944a4b1f",
+    "rectangular_geometric_core.py": "bdb26ea4d82dff00ff5ae2bec7ed9d879d5770d79bd02e7c8e32c7fda4098318",
+    "check_rectangular_uniform_entry_bounds.py": "4c477d9f5ce73bbe80974d98c9276bee197ed082d7628b690f622000236a87f5"
+  }
+}

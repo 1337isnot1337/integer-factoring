@@ -1,0 +1,149 @@
+#!/usr/bin/env python3
+"""Explore all y/u/v core weights and four charges in bounded defect bases.
+
+The regular coordinate bases preserve every valuation profile. Numerical
+optimization is exploratory and requires exact replay for any strict bound.
+"""
+from __future__ import annotations
+import argparse
+import json
+import math
+from pathlib import Path
+import time
+import numpy as np
+from scipy.optimize import minimize
+from scipy.special import expit,logsumexp
+
+from check_rectangular_defect_core_basis import data_for
+from native_matrix_smith_f4 import MatrixOracle
+from rectangular_defect_coordinates import coordinate_matrix
+from search_rectangular_defect_pressure import entropy
+
+class CoreDefectPressure:
+    def __init__(self,M=8,alpha=1,beta=2,quartic_terms=None,repair_spec=None,full_core=False,input_spec=None,repair_kind='partial',identity_spec=None,compiled=None,source_data=None,full_alphabet_gamma=None):
+        self.M=M;self.full_core=full_core;self.full_alphabet_gamma=full_alphabet_gamma
+        y_states=3 if full_alphabet_gamma is not None else 2
+        self.core_stride=3+2*y_states+(3 if full_core else 0);self.parameters=2*self.core_stride+5
+        self.leg_slices={'v':(0,3),'y':(3,y_states),'u':(3+y_states,y_states)}
+        if full_core:self.leg_slices['x']=(3+2*y_states,3)
+        self.data=source_data if source_data is not None else [data_for(place,M,full_core=full_core) for place in ('infinity','zero')]
+        if len(self.data)!=2 or (compiled is not None and len(compiled)!=2):raise ValueError('Supply both ordered valuation places.')
+        self.oracles=[];self.metadata=[];self.row_features=[];self.column_features=[];self.spectator_signs=[]
+        self.quartic_terms=quartic_terms or [(1,0)];self.queries=0;self.failures=0
+        self.base_heights=4*np.arange(M)-2*M+2
+        for side,data in enumerate(self.data):
+            if data['M']!=M or data['place']!=('infinity','zero')[side] or data.get('full_core',False)!=full_core:raise ValueError('Support data do not match the requested construction.')
+            matrix,shifts,meta=compiled[side] if compiled is not None else coordinate_matrix(data,alpha,beta,self.quartic_terms,repair_spec,input_spec=input_spec,repair_kind=repair_kind,identity_spec=identity_spec,full_alphabet_gamma=full_alphabet_gamma)
+            if meta['M']!=M or meta['place']!=('infinity','zero')[side] or meta.get('full_core',False)!=full_core:raise ValueError('Compiled coordinates have inconsistent mode or basis metadata.')
+            if meta.get('full_alphabet_gamma')!=full_alphabet_gamma:raise ValueError('Compiled coordinates do not match the physical alphabet and quartic coefficient.')
+            n=len(matrix)
+            self.oracles.append(MatrixOracle(matrix,n,shifts,precision=meta['profile_precision']));self.metadata.append(meta)
+            rf=np.zeros((n,self.parameters));cf=np.zeros((n,self.parameters));rf[:,2*side]=meta['row_charges'];cf[:,2*side+1]=meta['column_charges'];o=4+self.core_stride*side
+            for i,state in enumerate(meta['row_core_states']):
+                for pair,letter in enumerate(meta['row_core_letters']):
+                    mask=(state>>(2*pair))&3
+                    if mask:rf[i,o+self.leg_slices[letter][0]+mask-1]=1
+            for j,state in enumerate(meta['column_core_states']):
+                for pair,letter in enumerate(meta['column_core_letters']):
+                    mask=(state>>(2*pair))&3
+                    if mask:cf[j,o+self.leg_slices[letter][0]+mask-1]=1
+            self.row_features.append(rf);self.column_features.append(cf)
+            inactive=[j for j in range(2*M) if j not in data['active_indices']]
+            self.spectator_signs.append(np.array([1 if side==0 or j<M else -1 for j in inactive]))
+
+    def evaluate(self,parameters):
+        theta=np.asarray(parameters,dtype=float)
+        if theta.shape!=(self.parameters,) or theta[-1]<=0:raise ValueError('Supply all core/charge weights and positive log(s).')
+        self.queries+=1;logB=0.;dB=np.zeros(self.parameters);profiles=[]
+        for side,(oracle,data,rf,cf) in enumerate(zip(self.oracles,self.data,self.row_features,self.column_features)):
+            rw=rf@theta;cw=cf@theta;result=oracle.profile(rw,cw,scale=theta[-1])
+            if not self.metadata[side]['exact_polynomial_matrix']:
+                known=self.metadata[side]['known_below']*theta[-1]+float(min(rw))+float(min(cw))
+                if max(result['orders'])>=known-1e-8:raise ArithmeticError('Weighted profile exceeds known Fock precision.')
+            orders=np.array(result['orders']);logZ=logsumexp(-orders);weights=np.exp(-orders-logZ);logB+=float(logZ)
+            dB-=weights@(rf[np.array(result['rows'])]+cf[np.array(result['cols'])])
+            dB[-1]-=float(weights@np.diff(np.r_[0,np.array(result['base_prefix'])]))
+            spectators=np.array(data['spectator_orders'],dtype=float);signs=self.spectator_signs[side]
+            values=spectators*theta[-1]+signs*(theta[2*side]+theta[2*side+1]);occ=expit(-values)
+            logB+=float(np.sum(np.logaddexp(0,-values)));dB[2*side]-=float(occ@signs);dB[2*side+1]-=float(occ@signs);dB[-1]-=float(occ@spectators)
+            profiles.append(orders.tolist())
+        etaX=theta[0]+theta[1]+theta[2]+theta[3];etaY=theta[0]+theta[1]-theta[2]-theta[3]
+        gx=self.base_heights*theta[-1]+etaX;gy=self.base_heights*theta[-1]+etaY
+        def core_total(letter):
+            off,count=self.leg_slices[letter]
+            return sum((theta[4+self.core_stride*side+off:4+self.core_stride*side+off+count] for side in range(2)),np.zeros(count))
+        vx=core_total('v');uy=core_total('y')+core_total('u')
+        if self.full_core:vx+=core_total('x')
+        coreX=np.array([0.,gx[0]+vx[0],gx[-1]+vx[1],gx[0]+gx[-1]+vx[2]])
+        coreY=np.array([0.,gy[0]+uy[0],gy[-1]+uy[1]]+([gy[0]+gy[-1]+uy[2]] if self.full_alphabet_gamma is not None else []))
+        def partitions(R):
+            return float(np.sum(np.logaddexp(0,-gx[1:-1]/R))+np.sum(np.logaddexp(0,-gy[1:-1]/R))+logsumexp(-coreX/R)+logsumexp(-coreY/R))
+        def equation(R):return logB-R*partitions(R)
+        low,high=1e-9,4.
+        if equation(low)<=0:raise ArithmeticError('Nonpositive root; inspect profiles and precision.')
+        while equation(high)>0:
+            high*=2
+            if high>1e6:raise ArithmeticError('No Gibbs root bracket.')
+        for _ in range(70):
+            middle=(low+high)/2
+            if equation(middle)>0:low=middle
+            else:high=middle
+        R=(low+high)/2;px=expit(-gx/R);py=expit(-gy/R)
+        cx=np.exp(-coreX/R-logsumexp(-coreX/R));cy=np.exp(-coreY/R-logsumexp(-coreY/R))
+        px[0],px[-1]=cx[1]+cx[3],cx[2]+cx[3];py[0],py[-1]=cy[1],cy[2]
+        if self.full_alphabet_gamma is not None:py[0]+=cy[3];py[-1]+=cy[3]
+        H=sum(entropy([p,1-p]) for p in px[1:-1])+sum(entropy([p,1-p]) for p in py[1:-1])+entropy(cx)+entropy(cy)
+        physical=np.zeros(self.parameters);physical[:2]=np.sum(px)+np.sum(py);physical[2:4]=np.sum(px)-np.sum(py);physical[-1]=self.base_heights@(px+py)
+        for side in range(2):
+            o=4+self.core_stride*side
+            for letter,(off,count) in self.leg_slices.items():physical[o+off:o+off+count]=cx[1:] if letter in ('x','v') else cy[1:]
+        gradient=(dB+physical)/(2*H)
+        if not np.all(np.isfinite(gradient)):raise ArithmeticError('Nonfinite derivative.')
+        return R/2,gradient,{'full_core':self.full_core,'full_alphabet_gamma':self.full_alphabet_gamma,'core_stride':self.core_stride,'type_x_core':cx.tolist(),'type_y_core':cy.tolist(),'type_x_occupations':px.tolist(),'type_y_occupations':py.tolist(),'entropy':H,'log_profile_product':logB,'active_orders_times_log_s':profiles}
+
+def main():
+    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--M',type=int,default=8);parser.add_argument('--alpha',type=int,default=1);parser.add_argument('--beta',type=int,default=2);parser.add_argument('--quartic-power',type=int,default=0);parser.add_argument('--restarts',type=int,default=12);parser.add_argument('--maxfun',type=int,default=300);parser.add_argument('--seconds',type=float,default=1800);parser.add_argument('--seed',type=int,default=91378);parser.add_argument('--height-bound',type=float,default=24);parser.add_argument('--starts',type=Path);parser.add_argument('--output',type=Path,required=True)
+    parser.add_argument('--full-core',action='store_true')
+    parser.add_argument('--full-alphabet-gamma',type=int,choices=(0,2,3))
+    parser.add_argument('--repair',choices=('partial','inverse'),default='partial')
+    parser.add_argument('--transport-spec','--identity-spec',dest='identity_spec',type=Path)
+    args=parser.parse_args();identity_spec=None
+    if args.identity_spec:
+        supplied=json.loads(args.identity_spec.read_text());identity_spec=(supplied['C'],supplied['W'],supplied['target']) if isinstance(supplied,dict) and 'target' in supplied else (supplied['C'],supplied['W']) if isinstance(supplied,dict) else supplied;args.full_core=True
+    started=time.monotonic();oracle=CoreDefectPressure(args.M,args.alpha,args.beta,[(1,args.quartic_power)],full_core=args.full_core,repair_kind=args.repair,identity_spec=identity_spec,full_alphabet_gamma=args.full_alphabet_gamma);best=None;records=[];rng=np.random.default_rng(args.seed);dimension=oracle.parameters
+    def save():
+        metadata=[{k:v for k,v in m.items() if k not in ('row_core_states','column_core_states','row_charges','column_charges')} for m in oracle.metadata]
+        result={'status':'exploratory floating search; no exact rate claimed','M':args.M,'alpha':args.alpha,'beta':args.beta,'repair_kind':args.repair,'identity_spec':identity_spec,'quartic_terms':oracle.quartic_terms,'full_core':args.full_core,'full_alphabet_gamma':args.full_alphabet_gamma,'queries':oracle.queries,'failures':oracle.failures,'elapsed_seconds':time.monotonic()-started,'best':best,'restarts':records,'builder_metadata':metadata,'random_seed':args.seed,'normalized_height_bound':args.height_bound,'parameter_layout':'four charges; each place v_low,v_top,v_both,y_low,y_top,[y_both],u_low,u_top,[u_both], then optional x_low,x_top,x_both; log_s; weights multiplied by log_s; bracketed states only for full alphabet'}
+        temporary=args.output.with_suffix(args.output.suffix+'.tmp');temporary.write_text(json.dumps(result,indent=2)+'\n');temporary.replace(args.output)
+    def objective(x):
+        nonlocal best
+        if time.monotonic()-started>args.seconds:raise TimeoutError
+        theta=np.r_[x[:-1]*x[-1],x[-1]]
+        try:value,gradient,details=oracle.evaluate(theta)
+        except ArithmeticError:
+            oracle.failures+=1;return 100.,np.zeros(dimension)
+        if best is None or value<best['rho']-1e-10:
+            best={'rho':value,'parameters':theta.tolist(),'normalized_heights':x[:-1].tolist(),**details};save();print(json.dumps({'query':oracle.queries,'rho':value,'seconds':time.monotonic()-started}),flush=True)
+        return value,np.r_[gradient[:-1]*x[-1],gradient[-1]+gradient[:-1]@x[:-1]]
+    starts=[]
+    if args.starts:
+        supplied=json.loads(args.starts.read_text());supplied=supplied if isinstance(supplied,list) else [supplied['best']['parameters']]
+        for p in supplied:
+            if len(p)==5:p=list(p[:4])+[0.]*(dimension-5)+[p[-1]]
+            elif len(p)==19 and args.full_core and args.full_alphabet_gamma is None:p=list(p[:11])+[0.]*3+list(p[11:18])+[0.]*3+[p[-1]]
+            if len(p)!=dimension:raise ValueError('Wrong number of start parameters.')
+            starts.append(np.r_[np.array(p[:-1])/p[-1],p[-1]])
+    starts.extend([np.r_[np.zeros(dimension-1),t/args.M] for t in (.3,1.,3.)])
+    try:
+        for x in starts:objective(x)
+        for iteration in range(args.restarts):
+            x=np.r_[best['normalized_heights'],best['parameters'][-1]]
+            if iteration:
+                x[:-1]+=rng.normal(0,.6 if iteration%3 else 2.,dimension-1);x[-1]*=math.exp(rng.normal(0,.4))
+            run=minimize(objective,x,jac=True,method='L-BFGS-B',bounds=[(-args.height_bound,args.height_bound)]*(dimension-1)+[(.002/args.M,8/args.M)],options={'maxfun':args.maxfun,'maxiter':args.maxfun,'ftol':1e-13,'gtol':1e-7,'maxls':20})
+            records.append({'restart':iteration,'success':bool(run.success),'message':str(run.message),'evaluations':int(run.nfev),'rho':float(run.fun)});save()
+    except TimeoutError:records.append({'status':'time budget reached'})
+    finally:save()
+    print(json.dumps({'best_rho':None if best is None else best['rho'],'queries':oracle.queries,'seconds':time.monotonic()-started}),flush=True)
+
+if __name__=='__main__':main()

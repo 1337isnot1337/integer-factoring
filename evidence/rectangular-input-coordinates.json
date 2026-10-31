@@ -1,0 +1,1065 @@
+{
+  "status": "pass",
+  "scope": "Independent full M4 tensor entries at an F16 point and complete arbitrary-core weighted profiles for four input shears, a two-sided common flag, and two full inverses. No new rate claimed.",
+  "cases": [
+    {
+      "case": "input_3_8",
+      "entrywise": {
+        "place": "infinity",
+        "M": 4,
+        "z": 2,
+        "entries_checked": 36864,
+        "zero_rows_checked": 64,
+        "zero_columns_checked": 64
+      },
+      "weighted_profiles": {
+        "place": "infinity",
+        "M": 4,
+        "cases": [
+          {
+            "case": 0,
+            "orders_checked": 192,
+            "maximum_error": 0.0,
+            "lambda": 0,
+            "mu": 0,
+            "v": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0,
+              0
+            ],
+            "u": [
+              0,
+              0,
+              0
+            ],
+            "x": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "case": 1,
+            "orders_checked": 192,
+            "maximum_error": 0.0,
+            "lambda": 0.75,
+            "mu": -2.0,
+            "v": [
+              1.75,
+              -0.25,
+              -1.0,
+              0.75
+            ],
+            "y": [
+              1.5,
+              -0.5,
+              -0.5
+            ],
+            "u": [
+              0.25,
+              1.5,
+              -0.75
+            ],
+            "x": [
+              -0.5,
+              -2.0,
+              -0.5,
+              -0.25
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "input_3_8",
+      "entrywise": {
+        "place": "zero",
+        "M": 4,
+        "z": 2,
+        "entries_checked": 36864,
+        "zero_rows_checked": 64,
+        "zero_columns_checked": 64
+      },
+      "weighted_profiles": {
+        "place": "zero",
+        "M": 4,
+        "cases": [
+          {
+            "case": 0,
+            "orders_checked": 192,
+            "maximum_error": 0.0,
+            "lambda": 0,
+            "mu": 0,
+            "v": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0,
+              0
+            ],
+            "u": [
+              0,
+              0,
+              0
+            ],
+            "x": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "case": 1,
+            "orders_checked": 192,
+            "maximum_error": 0.0,
+            "lambda": -0.5,
+            "mu": 0.75,
+            "v": [
+              1.25,
+              0.25,
+              1.5,
+              1.0
+            ],
+            "y": [
+              0.0,
+              1.25,
+              -0.75
+            ],
+            "u": [
+              -0.75,
+              1.25,
+              -1.75
+            ],
+            "x": [
+              -0.25,
+              1.25,
+              1.5,
+              -1.0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "input_8_3",
+      "entrywise": {
+        "place": "infinity",
+        "M": 4,
+        "z": 2,
+        "entries_checked": 36864,
+        "zero_rows_checked": 64,
+        "zero_columns_checked": 64
+      },
+      "weighted_profiles": {
+        "place": "infinity",
+        "M": 4,
+        "cases": [
+          {
+            "case": 0,
+            "orders_checked": 192,
+            "maximum_error": 0.0,
+            "lambda": 0,
+            "mu": 0,
+            "v": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0,
+              0
+            ],
+            "u": [
+              0,
+              0,
+              0
+            ],
+            "x": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "case": 1,
+            "orders_checked": 192,
+            "maximum_error": 0.0,
+            "lambda": 0.75,
+            "mu": -2.0,
+            "v": [
+              1.75,
+              -0.25,
+              -1.0,
+              0.75
+            ],
+            "y": [
+              1.5,
+              -0.5,
+              -0.5
+            ],
+            "u": [
+              0.25,
+              1.5,
+              -0.75
+            ],
+            "x": [
+              -0.5,
+              -2.0,
+              -0.5,
+              -0.25
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "input_8_3",
+      "entrywise": {
+        "place": "zero",
+        "M": 4,
+        "z": 2,
+        "entries_checked": 36864,
+        "zero_rows_checked": 64,
+        "zero_columns_checked": 64
+      },
+      "weighted_profiles": {
+        "place": "zero",
+        "M": 4,
+        "cases": [
+          {
+            "case": 0,
+            "orders_checked": 192,
+            "maximum_error": 0.0,
+            "lambda": 0,
+            "mu": 0,
+            "v": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0,
+              0
+            ],
+            "u": [
+              0,
+              0,
+              0
+            ],
+            "x": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "case": 1,
+            "orders_checked": 192,
+            "maximum_error": 0.0,
+            "lambda": -0.5,
+            "mu": 0.75,
+            "v": [
+              1.25,
+              0.25,
+              1.5,
+              1.0
+            ],
+            "y": [
+              0.0,
+              1.25,
+              -0.75
+            ],
+            "u": [
+              -0.75,
+              1.25,
+              -1.75
+            ],
+            "x": [
+              -0.25,
+              1.25,
+              1.5,
+              -1.0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "input_10_11",
+      "entrywise": {
+        "place": "infinity",
+        "M": 4,
+        "z": 2,
+        "entries_checked": 36864,
+        "zero_rows_checked": 64,
+        "zero_columns_checked": 64
+      },
+      "weighted_profiles": {
+        "place": "infinity",
+        "M": 4,
+        "cases": [
+          {
+            "case": 0,
+            "orders_checked": 192,
+            "maximum_error": 0.0,
+            "lambda": 0,
+            "mu": 0,
+            "v": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0,
+              0
+            ],
+            "u": [
+              0,
+              0,
+              0
+            ],
+            "x": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "case": 1,
+            "orders_checked": 192,
+            "maximum_error": 0.0,
+            "lambda": 0.75,
+            "mu": -2.0,
+            "v": [
+              1.75,
+              -0.25,
+              -1.0,
+              0.75
+            ],
+            "y": [
+              1.5,
+              -0.5,
+              -0.5
+            ],
+            "u": [
+              0.25,
+              1.5,
+              -0.75
+            ],
+            "x": [
+              -0.5,
+              -2.0,
+              -0.5,
+              -0.25
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "input_10_11",
+      "entrywise": {
+        "place": "zero",
+        "M": 4,
+        "z": 2,
+        "entries_checked": 36864,
+        "zero_rows_checked": 64,
+        "zero_columns_checked": 64
+      },
+      "weighted_profiles": {
+        "place": "zero",
+        "M": 4,
+        "cases": [
+          {
+            "case": 0,
+            "orders_checked": 192,
+            "maximum_error": 0.0,
+            "lambda": 0,
+            "mu": 0,
+            "v": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0,
+              0
+            ],
+            "u": [
+              0,
+              0,
+              0
+            ],
+            "x": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "case": 1,
+            "orders_checked": 192,
+            "maximum_error": 0.0,
+            "lambda": -0.5,
+            "mu": 0.75,
+            "v": [
+              1.25,
+              0.25,
+              1.5,
+              1.0
+            ],
+            "y": [
+              0.0,
+              1.25,
+              -0.75
+            ],
+            "u": [
+              -0.75,
+              1.25,
+              -1.75
+            ],
+            "x": [
+              -0.25,
+              1.25,
+              1.5,
+              -1.0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "input_1_0",
+      "entrywise": {
+        "place": "infinity",
+        "M": 4,
+        "z": 2,
+        "entries_checked": 36864,
+        "zero_rows_checked": 64,
+        "zero_columns_checked": 64
+      },
+      "weighted_profiles": {
+        "place": "infinity",
+        "M": 4,
+        "cases": [
+          {
+            "case": 0,
+            "orders_checked": 192,
+            "maximum_error": 0.0,
+            "lambda": 0,
+            "mu": 0,
+            "v": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0,
+              0
+            ],
+            "u": [
+              0,
+              0,
+              0
+            ],
+            "x": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "case": 1,
+            "orders_checked": 192,
+            "maximum_error": 0.0,
+            "lambda": 0.75,
+            "mu": -2.0,
+            "v": [
+              1.75,
+              -0.25,
+              -1.0,
+              0.75
+            ],
+            "y": [
+              1.5,
+              -0.5,
+              -0.5
+            ],
+            "u": [
+              0.25,
+              1.5,
+              -0.75
+            ],
+            "x": [
+              -0.5,
+              -2.0,
+              -0.5,
+              -0.25
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "input_1_0",
+      "entrywise": {
+        "place": "zero",
+        "M": 4,
+        "z": 2,
+        "entries_checked": 36864,
+        "zero_rows_checked": 64,
+        "zero_columns_checked": 64
+      },
+      "weighted_profiles": {
+        "place": "zero",
+        "M": 4,
+        "cases": [
+          {
+            "case": 0,
+            "orders_checked": 192,
+            "maximum_error": 0.0,
+            "lambda": 0,
+            "mu": 0,
+            "v": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0,
+              0
+            ],
+            "u": [
+              0,
+              0,
+              0
+            ],
+            "x": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "case": 1,
+            "orders_checked": 192,
+            "maximum_error": 0.0,
+            "lambda": -0.5,
+            "mu": 0.75,
+            "v": [
+              1.25,
+              0.25,
+              1.5,
+              1.0
+            ],
+            "y": [
+              0.0,
+              1.25,
+              -0.75
+            ],
+            "u": [
+              -0.75,
+              1.25,
+              -1.75
+            ],
+            "x": [
+              -0.25,
+              1.25,
+              1.5,
+              -1.0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "common_flag_both_sides",
+      "entrywise": {
+        "place": "infinity",
+        "M": 4,
+        "z": 2,
+        "entries_checked": 36864,
+        "zero_rows_checked": 64,
+        "zero_columns_checked": 64
+      },
+      "weighted_profiles": {
+        "place": "infinity",
+        "M": 4,
+        "cases": [
+          {
+            "case": 0,
+            "orders_checked": 192,
+            "maximum_error": 0.0,
+            "lambda": 0,
+            "mu": 0,
+            "v": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0,
+              0
+            ],
+            "u": [
+              0,
+              0,
+              0
+            ],
+            "x": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "case": 1,
+            "orders_checked": 192,
+            "maximum_error": 0.0,
+            "lambda": 0.75,
+            "mu": -2.0,
+            "v": [
+              1.75,
+              -0.25,
+              -1.0,
+              0.75
+            ],
+            "y": [
+              1.5,
+              -0.5,
+              -0.5
+            ],
+            "u": [
+              0.25,
+              1.5,
+              -0.75
+            ],
+            "x": [
+              -0.5,
+              -2.0,
+              -0.5,
+              -0.25
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "common_flag_both_sides",
+      "entrywise": {
+        "place": "zero",
+        "M": 4,
+        "z": 2,
+        "entries_checked": 36864,
+        "zero_rows_checked": 64,
+        "zero_columns_checked": 64
+      },
+      "weighted_profiles": {
+        "place": "zero",
+        "M": 4,
+        "cases": [
+          {
+            "case": 0,
+            "orders_checked": 192,
+            "maximum_error": 0.0,
+            "lambda": 0,
+            "mu": 0,
+            "v": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0,
+              0
+            ],
+            "u": [
+              0,
+              0,
+              0
+            ],
+            "x": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "case": 1,
+            "orders_checked": 192,
+            "maximum_error": 0.0,
+            "lambda": -0.5,
+            "mu": 0.75,
+            "v": [
+              1.25,
+              0.25,
+              1.5,
+              1.0
+            ],
+            "y": [
+              0.0,
+              1.25,
+              -0.75
+            ],
+            "u": [
+              -0.75,
+              1.25,
+              -1.75
+            ],
+            "x": [
+              -0.25,
+              1.25,
+              1.5,
+              -1.0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "full_inverse_1_1",
+      "entrywise": {
+        "place": "infinity",
+        "M": 4,
+        "z": 2,
+        "entries_checked": 36864,
+        "zero_rows_checked": 64,
+        "zero_columns_checked": 64
+      },
+      "weighted_profiles": {
+        "place": "infinity",
+        "M": 4,
+        "cases": [
+          {
+            "case": 0,
+            "orders_checked": 192,
+            "maximum_error": 0.0,
+            "lambda": 0,
+            "mu": 0,
+            "v": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0,
+              0
+            ],
+            "u": [
+              0,
+              0,
+              0
+            ],
+            "x": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "case": 1,
+            "orders_checked": 192,
+            "maximum_error": 0.0,
+            "lambda": 0.75,
+            "mu": -2.0,
+            "v": [
+              1.75,
+              -0.25,
+              -1.0,
+              0.75
+            ],
+            "y": [
+              1.5,
+              -0.5,
+              -0.5
+            ],
+            "u": [
+              0.25,
+              1.5,
+              -0.75
+            ],
+            "x": [
+              -0.5,
+              -2.0,
+              -0.5,
+              -0.25
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "full_inverse_1_1",
+      "entrywise": {
+        "place": "zero",
+        "M": 4,
+        "z": 2,
+        "entries_checked": 36864,
+        "zero_rows_checked": 64,
+        "zero_columns_checked": 64
+      },
+      "weighted_profiles": {
+        "place": "zero",
+        "M": 4,
+        "cases": [
+          {
+            "case": 0,
+            "orders_checked": 192,
+            "maximum_error": 0.0,
+            "lambda": 0,
+            "mu": 0,
+            "v": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0,
+              0
+            ],
+            "u": [
+              0,
+              0,
+              0
+            ],
+            "x": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "case": 1,
+            "orders_checked": 192,
+            "maximum_error": 0.0,
+            "lambda": -0.5,
+            "mu": 0.75,
+            "v": [
+              1.25,
+              0.25,
+              1.5,
+              1.0
+            ],
+            "y": [
+              0.0,
+              1.25,
+              -0.75
+            ],
+            "u": [
+              -0.75,
+              1.25,
+              -1.75
+            ],
+            "x": [
+              -0.25,
+              1.25,
+              1.5,
+              -1.0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "full_inverse_1_2",
+      "entrywise": {
+        "place": "infinity",
+        "M": 4,
+        "z": 2,
+        "entries_checked": 36864,
+        "zero_rows_checked": 64,
+        "zero_columns_checked": 64
+      },
+      "weighted_profiles": {
+        "place": "infinity",
+        "M": 4,
+        "cases": [
+          {
+            "case": 0,
+            "orders_checked": 192,
+            "maximum_error": 0.0,
+            "lambda": 0,
+            "mu": 0,
+            "v": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0,
+              0
+            ],
+            "u": [
+              0,
+              0,
+              0
+            ],
+            "x": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "case": 1,
+            "orders_checked": 192,
+            "maximum_error": 0.0,
+            "lambda": 0.75,
+            "mu": -2.0,
+            "v": [
+              1.75,
+              -0.25,
+              -1.0,
+              0.75
+            ],
+            "y": [
+              1.5,
+              -0.5,
+              -0.5
+            ],
+            "u": [
+              0.25,
+              1.5,
+              -0.75
+            ],
+            "x": [
+              -0.5,
+              -2.0,
+              -0.5,
+              -0.25
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "full_inverse_1_2",
+      "entrywise": {
+        "place": "zero",
+        "M": 4,
+        "z": 2,
+        "entries_checked": 36864,
+        "zero_rows_checked": 64,
+        "zero_columns_checked": 64
+      },
+      "weighted_profiles": {
+        "place": "zero",
+        "M": 4,
+        "cases": [
+          {
+            "case": 0,
+            "orders_checked": 192,
+            "maximum_error": 0.0,
+            "lambda": 0,
+            "mu": 0,
+            "v": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0,
+              0
+            ],
+            "u": [
+              0,
+              0,
+              0
+            ],
+            "x": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "case": 1,
+            "orders_checked": 192,
+            "maximum_error": 0.0,
+            "lambda": -0.5,
+            "mu": 0.75,
+            "v": [
+              1.25,
+              0.25,
+              1.5,
+              1.0
+            ],
+            "y": [
+              0.0,
+              1.25,
+              -0.75
+            ],
+            "u": [
+              -0.75,
+              1.25,
+              -1.75
+            ],
+            "x": [
+              -0.25,
+              1.25,
+              1.5,
+              -1.0
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "source_sha256": {
+    "rectangular_defect_profiles.py": "96d68a34482e61b3a80fed23866c5f663e04912b72df822c7d26bf2e43c55648",
+    "rectangular_defect_coordinates.py": "38a5865aa7ce4d8fe38eb043ad744439c7288dd4cdd0190008ed1e307ff6f258",
+    "check_rectangular_refined_repairs.py": "62f7955009f55f9a12071b1e3c18b7a15ef8981d97afeb63da26fd8e4a38bd1d",
+    "check_rectangular_f4_repair.py": "7aa0f6085d84b239d8c767e18ce036709a2e9abf207cac51583a01c9efee7bdd",
+    "check_rectangular_defect_fock.py": "4ecef2d30de3b5e342177c7802b3d8bb1a9eef9b3d7800c39df8a635c556f14d",
+    "check_rectangular_defect_coordinates.py": "ce520a9a49955036b37e81ad691bcd12b26129f1396848d318396b3973bf6448",
+    "check_rectangular_input_coordinates.py": "0b0e24c51e450c89a5783274d28500bab143e9caecce7910d45c7ca53225c438"
+  }
+}

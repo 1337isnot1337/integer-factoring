@@ -1,0 +1,3261 @@
+{
+  "status": "exact full-alphabet rank-restoring cubic residuals; no pressure claim",
+  "symbolic_rank_restoration": {
+    "ring": "F2[a,b,gamma]",
+    "full_determinant": "(1+gamma+a*b)^4",
+    "pairs": [
+      {
+        "minus": 0,
+        "plus": 2,
+        "determinants": [
+          {
+            "block_order": 4,
+            "nonzero_monomial_exponents_a_b_gamma": [
+              [
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "block_order": 12,
+            "nonzero_monomial_exponents_a_b_gamma": [
+              [
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "block_order": 16,
+            "nonzero_monomial_exponents_a_b_gamma": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                4,
+                4,
+                0
+              ],
+              [
+                0,
+                0,
+                4
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "minus": 0,
+        "plus": 7,
+        "determinants": [
+          {
+            "block_order": 4,
+            "nonzero_monomial_exponents_a_b_gamma": [
+              [
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "block_order": 12,
+            "nonzero_monomial_exponents_a_b_gamma": [
+              [
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "block_order": 16,
+            "nonzero_monomial_exponents_a_b_gamma": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                4,
+                4,
+                0
+              ],
+              [
+                0,
+                0,
+                4
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "minus": 1,
+        "plus": 3,
+        "determinants": [
+          {
+            "block_order": 4,
+            "nonzero_monomial_exponents_a_b_gamma": [
+              [
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "block_order": 12,
+            "nonzero_monomial_exponents_a_b_gamma": [
+              [
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "block_order": 16,
+            "nonzero_monomial_exponents_a_b_gamma": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                4,
+                4,
+                0
+              ],
+              [
+                0,
+                0,
+                4
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "minus": 1,
+        "plus": 6,
+        "determinants": [
+          {
+            "block_order": 4,
+            "nonzero_monomial_exponents_a_b_gamma": [
+              [
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "block_order": 12,
+            "nonzero_monomial_exponents_a_b_gamma": [
+              [
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "block_order": 16,
+            "nonzero_monomial_exponents_a_b_gamma": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                4,
+                4,
+                0
+              ],
+              [
+                0,
+                0,
+                4
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "singular_cases_rejected": 3,
+  "cases": [
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        1
+      ],
+      "ambient": 2,
+      "gamma": 1,
+      "dimensions": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "q_x": 4,
+      "q_u": 4,
+      "bulk_size": 1,
+      "repair_kind": "full_alphabet_monomial_residual_partial",
+      "denominator_degree": 0,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "logical_heights_x_v": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "logical_heights_u_y": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "global_w_power": 0,
+      "residual_monomials": [
+        [
+          0,
+          null,
+          0,
+          1,
+          [
+            [
+              1,
+              0
+            ]
+          ],
+          1
+        ],
+        [
+          null,
+          1,
+          0,
+          1,
+          [
+            [
+              1,
+              0
+            ]
+          ],
+          2
+        ]
+      ],
+      "critical_exterior_terms": [
+        [
+          145,
+          1
+        ],
+        [
+          152,
+          1
+        ]
+      ],
+      "residual_rank": 16,
+      "residual_determinant": 1,
+      "leading_height_blocks": [
+        {
+          "order": 4,
+          "rank": 4,
+          "determinant": 1
+        },
+        {
+          "order": 12,
+          "rank": 12,
+          "determinant": 1
+        },
+        {
+          "order": 16,
+          "rank": 16,
+          "determinant": 1
+        }
+      ],
+      "degree": 8,
+      "cancelled_c_order": 4,
+      "ramified_endpoint_checks": 256,
+      "two_copy_type_checks": 784,
+      "independent_exterior_checks": 256,
+      "nonzero_entries": 97,
+      "coefficient_sha256": "805052236826a32d34db00358b28c0cf59004c85b117050ec2372c99352c986e",
+      "uncancelled_denominator_degree": 4,
+      "odd_degree_witness": {
+        "physical_letters_x_y_u_v": [
+          3,
+          0,
+          0,
+          2
+        ],
+        "occupied_mode_masks": [
+          3,
+          1,
+          1,
+          2
+        ],
+        "nonzero_polynomial_numerator": [
+          "0x11",
+          "0x0"
+        ]
+      }
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        1
+      ],
+      "ambient": 2,
+      "gamma": 1,
+      "dimensions": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "q_x": 4,
+      "q_u": 4,
+      "bulk_size": 1,
+      "repair_kind": "full_alphabet_monomial_residual_inverse",
+      "denominator_degree": 0,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "logical_heights_x_v": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "logical_heights_u_y": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "global_w_power": 0,
+      "residual_monomials": [
+        [
+          0,
+          null,
+          0,
+          1,
+          [
+            [
+              1,
+              0
+            ]
+          ],
+          1
+        ],
+        [
+          null,
+          1,
+          0,
+          1,
+          [
+            [
+              1,
+              0
+            ]
+          ],
+          2
+        ]
+      ],
+      "critical_exterior_terms": [
+        [
+          145,
+          1
+        ],
+        [
+          152,
+          1
+        ]
+      ],
+      "residual_rank": 16,
+      "residual_determinant": 1,
+      "leading_height_blocks": [],
+      "degree": 9,
+      "cancelled_c_order": 4,
+      "ramified_endpoint_checks": 256,
+      "two_copy_type_checks": 784,
+      "independent_exterior_checks": 256,
+      "nonzero_entries": 121,
+      "coefficient_sha256": "a5e6dd63d45a60441351959bd640ac59e766f9de52ca6041294028fbccb8e9e5",
+      "uncancelled_denominator_degree": 4,
+      "odd_degree_witness": {
+        "physical_letters_x_y_u_v": [
+          3,
+          0,
+          0,
+          0
+        ],
+        "occupied_mode_masks": [
+          3,
+          1,
+          1,
+          1
+        ],
+        "nonzero_polynomial_numerator": [
+          "0x5",
+          "0x0"
+        ]
+      }
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        1
+      ],
+      "ambient": 2,
+      "gamma": 1,
+      "dimensions": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "q_x": 4,
+      "q_u": 4,
+      "bulk_size": 1,
+      "repair_kind": "full_alphabet_monomial_residual_partial",
+      "denominator_degree": 0,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "logical_heights_x_v": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "logical_heights_u_y": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "global_w_power": 0,
+      "residual_monomials": [
+        [
+          0,
+          null,
+          0,
+          1,
+          [
+            [
+              1,
+              0
+            ]
+          ],
+          1
+        ],
+        [
+          null,
+          1,
+          0,
+          1,
+          [
+            [
+              2,
+              0
+            ]
+          ],
+          2
+        ]
+      ],
+      "critical_exterior_terms": [
+        [
+          145,
+          1
+        ],
+        [
+          152,
+          2
+        ]
+      ],
+      "residual_rank": 16,
+      "residual_determinant": 2,
+      "leading_height_blocks": [
+        {
+          "order": 4,
+          "rank": 4,
+          "determinant": 1
+        },
+        {
+          "order": 12,
+          "rank": 12,
+          "determinant": 1
+        },
+        {
+          "order": 16,
+          "rank": 16,
+          "determinant": 2
+        }
+      ],
+      "degree": 8,
+      "cancelled_c_order": 4,
+      "ramified_endpoint_checks": 256,
+      "two_copy_type_checks": 784,
+      "independent_exterior_checks": 256,
+      "nonzero_entries": 99,
+      "coefficient_sha256": "077188c63d9c541e4cc122a5d72b330c3ddb7c334ceadded8270205f57243e83",
+      "uncancelled_denominator_degree": 4,
+      "odd_degree_witness": {
+        "physical_letters_x_y_u_v": [
+          3,
+          0,
+          0,
+          2
+        ],
+        "occupied_mode_masks": [
+          3,
+          1,
+          1,
+          2
+        ],
+        "nonzero_polynomial_numerator": [
+          "0x11",
+          "0x0"
+        ]
+      }
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        1
+      ],
+      "ambient": 2,
+      "gamma": 1,
+      "dimensions": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "q_x": 4,
+      "q_u": 4,
+      "bulk_size": 1,
+      "repair_kind": "full_alphabet_monomial_residual_inverse",
+      "denominator_degree": 0,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "logical_heights_x_v": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "logical_heights_u_y": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "global_w_power": 0,
+      "residual_monomials": [
+        [
+          0,
+          null,
+          0,
+          1,
+          [
+            [
+              1,
+              0
+            ]
+          ],
+          1
+        ],
+        [
+          null,
+          1,
+          0,
+          1,
+          [
+            [
+              2,
+              0
+            ]
+          ],
+          2
+        ]
+      ],
+      "critical_exterior_terms": [
+        [
+          145,
+          1
+        ],
+        [
+          152,
+          2
+        ]
+      ],
+      "residual_rank": 16,
+      "residual_determinant": 2,
+      "leading_height_blocks": [],
+      "degree": 9,
+      "cancelled_c_order": 4,
+      "ramified_endpoint_checks": 256,
+      "two_copy_type_checks": 784,
+      "independent_exterior_checks": 256,
+      "nonzero_entries": 123,
+      "coefficient_sha256": "d7d5c87092a2614919097ccbd31e6d02aa7fb875d787510b1324aab4d282add3",
+      "uncancelled_denominator_degree": 4,
+      "odd_degree_witness": {
+        "physical_letters_x_y_u_v": [
+          3,
+          0,
+          0,
+          0
+        ],
+        "occupied_mode_masks": [
+          3,
+          1,
+          1,
+          1
+        ],
+        "nonzero_polynomial_numerator": [
+          "0x5",
+          "0x5"
+        ]
+      }
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        1
+      ],
+      "ambient": 2,
+      "gamma": 1,
+      "dimensions": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "q_x": 4,
+      "q_u": 4,
+      "bulk_size": 1,
+      "repair_kind": "full_alphabet_monomial_residual_partial",
+      "denominator_degree": 0,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "logical_heights_x_v": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "logical_heights_u_y": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "global_w_power": 0,
+      "residual_monomials": [
+        [
+          0,
+          null,
+          0,
+          1,
+          [
+            [
+              1,
+              0
+            ]
+          ],
+          1
+        ],
+        [
+          null,
+          1,
+          0,
+          1,
+          [
+            [
+              3,
+              0
+            ]
+          ],
+          2
+        ]
+      ],
+      "critical_exterior_terms": [
+        [
+          145,
+          1
+        ],
+        [
+          152,
+          3
+        ]
+      ],
+      "residual_rank": 16,
+      "residual_determinant": 3,
+      "leading_height_blocks": [
+        {
+          "order": 4,
+          "rank": 4,
+          "determinant": 1
+        },
+        {
+          "order": 12,
+          "rank": 12,
+          "determinant": 1
+        },
+        {
+          "order": 16,
+          "rank": 16,
+          "determinant": 3
+        }
+      ],
+      "degree": 8,
+      "cancelled_c_order": 4,
+      "ramified_endpoint_checks": 256,
+      "two_copy_type_checks": 784,
+      "independent_exterior_checks": 256,
+      "nonzero_entries": 99,
+      "coefficient_sha256": "364649ad426324c34807cdc14cebc834983ae52b993ed863b2e24b0cca76fac0",
+      "uncancelled_denominator_degree": 4,
+      "odd_degree_witness": {
+        "physical_letters_x_y_u_v": [
+          3,
+          0,
+          0,
+          2
+        ],
+        "occupied_mode_masks": [
+          3,
+          1,
+          1,
+          2
+        ],
+        "nonzero_polynomial_numerator": [
+          "0x11",
+          "0x0"
+        ]
+      }
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        1
+      ],
+      "ambient": 2,
+      "gamma": 1,
+      "dimensions": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "q_x": 4,
+      "q_u": 4,
+      "bulk_size": 1,
+      "repair_kind": "full_alphabet_monomial_residual_inverse",
+      "denominator_degree": 0,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "logical_heights_x_v": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "logical_heights_u_y": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "global_w_power": 0,
+      "residual_monomials": [
+        [
+          0,
+          null,
+          0,
+          1,
+          [
+            [
+              1,
+              0
+            ]
+          ],
+          1
+        ],
+        [
+          null,
+          1,
+          0,
+          1,
+          [
+            [
+              3,
+              0
+            ]
+          ],
+          2
+        ]
+      ],
+      "critical_exterior_terms": [
+        [
+          145,
+          1
+        ],
+        [
+          152,
+          3
+        ]
+      ],
+      "residual_rank": 16,
+      "residual_determinant": 3,
+      "leading_height_blocks": [],
+      "degree": 9,
+      "cancelled_c_order": 4,
+      "ramified_endpoint_checks": 256,
+      "two_copy_type_checks": 784,
+      "independent_exterior_checks": 256,
+      "nonzero_entries": 123,
+      "coefficient_sha256": "78de226920ee01f6fa6a5084cb3ed1d89e6fd38d89dfaabf2aa1002b3b62cbf2",
+      "uncancelled_denominator_degree": 4,
+      "odd_degree_witness": {
+        "physical_letters_x_y_u_v": [
+          3,
+          0,
+          0,
+          0
+        ],
+        "occupied_mode_masks": [
+          3,
+          1,
+          1,
+          1
+        ],
+        "nonzero_polynomial_numerator": [
+          "0x0",
+          "0x5"
+        ]
+      }
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        1
+      ],
+      "ambient": 2,
+      "gamma": 1,
+      "dimensions": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "q_x": 4,
+      "q_u": 4,
+      "bulk_size": 1,
+      "repair_kind": "full_alphabet_monomial_residual_partial",
+      "denominator_degree": 1,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "logical_heights_x_v": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "logical_heights_u_y": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "global_w_power": 0,
+      "residual_monomials": [
+        [
+          0,
+          null,
+          0,
+          1,
+          [
+            [
+              1,
+              0
+            ]
+          ],
+          1
+        ],
+        [
+          1,
+          1,
+          null,
+          1,
+          [
+            [
+              1,
+              0
+            ]
+          ],
+          1
+        ]
+      ],
+      "critical_exterior_terms": [
+        [
+          145,
+          1
+        ],
+        [
+          138,
+          1
+        ]
+      ],
+      "residual_rank": 16,
+      "residual_determinant": 1,
+      "leading_height_blocks": [
+        {
+          "order": 4,
+          "rank": 4,
+          "determinant": 1
+        },
+        {
+          "order": 12,
+          "rank": 12,
+          "determinant": 1
+        },
+        {
+          "order": 16,
+          "rank": 16,
+          "determinant": 1
+        }
+      ],
+      "degree": 9,
+      "cancelled_c_order": 3,
+      "ramified_endpoint_checks": 256,
+      "two_copy_type_checks": 784,
+      "independent_exterior_checks": 256,
+      "nonzero_entries": 101,
+      "coefficient_sha256": "95761c0f78c3d849eb0c79619e9261d0c0e3f814fdc6ec106cf2d2a34dc00a5c",
+      "uncancelled_denominator_degree": 4,
+      "odd_degree_witness": {
+        "physical_letters_x_y_u_v": [
+          3,
+          0,
+          0,
+          2
+        ],
+        "occupied_mode_masks": [
+          3,
+          1,
+          1,
+          2
+        ],
+        "nonzero_polynomial_numerator": [
+          "0x33",
+          "0x0"
+        ]
+      }
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        1
+      ],
+      "ambient": 2,
+      "gamma": 1,
+      "dimensions": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "q_x": 4,
+      "q_u": 4,
+      "bulk_size": 1,
+      "repair_kind": "full_alphabet_monomial_residual_inverse",
+      "denominator_degree": 1,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "logical_heights_x_v": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "logical_heights_u_y": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "global_w_power": 0,
+      "residual_monomials": [
+        [
+          0,
+          null,
+          0,
+          1,
+          [
+            [
+              1,
+              0
+            ]
+          ],
+          1
+        ],
+        [
+          1,
+          1,
+          null,
+          1,
+          [
+            [
+              1,
+              0
+            ]
+          ],
+          1
+        ]
+      ],
+      "critical_exterior_terms": [
+        [
+          145,
+          1
+        ],
+        [
+          138,
+          1
+        ]
+      ],
+      "residual_rank": 16,
+      "residual_determinant": 1,
+      "leading_height_blocks": [],
+      "degree": 10,
+      "cancelled_c_order": 3,
+      "ramified_endpoint_checks": 256,
+      "two_copy_type_checks": 784,
+      "independent_exterior_checks": 256,
+      "nonzero_entries": 125,
+      "coefficient_sha256": "8cb9151b80c7f901e10706c13aa2a8f42395189ffd71de2ee51a63b707da4d99",
+      "uncancelled_denominator_degree": 4,
+      "odd_degree_witness": {
+        "physical_letters_x_y_u_v": [
+          3,
+          0,
+          0,
+          0
+        ],
+        "occupied_mode_masks": [
+          3,
+          1,
+          1,
+          1
+        ],
+        "nonzero_polynomial_numerator": [
+          "0xf",
+          "0x0"
+        ]
+      }
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        1
+      ],
+      "ambient": 2,
+      "gamma": 1,
+      "dimensions": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "q_x": 4,
+      "q_u": 4,
+      "bulk_size": 1,
+      "repair_kind": "full_alphabet_monomial_residual_partial",
+      "denominator_degree": 1,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "logical_heights_x_v": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "logical_heights_u_y": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "global_w_power": 0,
+      "residual_monomials": [
+        [
+          0,
+          null,
+          0,
+          1,
+          [
+            [
+              1,
+              0
+            ]
+          ],
+          1
+        ],
+        [
+          1,
+          1,
+          null,
+          1,
+          [
+            [
+              2,
+              0
+            ]
+          ],
+          1
+        ]
+      ],
+      "critical_exterior_terms": [
+        [
+          145,
+          1
+        ],
+        [
+          138,
+          2
+        ]
+      ],
+      "residual_rank": 16,
+      "residual_determinant": 2,
+      "leading_height_blocks": [
+        {
+          "order": 4,
+          "rank": 4,
+          "determinant": 1
+        },
+        {
+          "order": 12,
+          "rank": 12,
+          "determinant": 1
+        },
+        {
+          "order": 16,
+          "rank": 16,
+          "determinant": 2
+        }
+      ],
+      "degree": 9,
+      "cancelled_c_order": 3,
+      "ramified_endpoint_checks": 256,
+      "two_copy_type_checks": 784,
+      "independent_exterior_checks": 256,
+      "nonzero_entries": 102,
+      "coefficient_sha256": "5b6a20eda9b446970551e0feec5b2c80692122e7ba00eb5381586305a8553c8e",
+      "uncancelled_denominator_degree": 4,
+      "odd_degree_witness": {
+        "physical_letters_x_y_u_v": [
+          3,
+          0,
+          0,
+          2
+        ],
+        "occupied_mode_masks": [
+          3,
+          1,
+          1,
+          2
+        ],
+        "nonzero_polynomial_numerator": [
+          "0x33",
+          "0x0"
+        ]
+      }
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        1
+      ],
+      "ambient": 2,
+      "gamma": 1,
+      "dimensions": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "q_x": 4,
+      "q_u": 4,
+      "bulk_size": 1,
+      "repair_kind": "full_alphabet_monomial_residual_inverse",
+      "denominator_degree": 1,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "logical_heights_x_v": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "logical_heights_u_y": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "global_w_power": 0,
+      "residual_monomials": [
+        [
+          0,
+          null,
+          0,
+          1,
+          [
+            [
+              1,
+              0
+            ]
+          ],
+          1
+        ],
+        [
+          1,
+          1,
+          null,
+          1,
+          [
+            [
+              2,
+              0
+            ]
+          ],
+          1
+        ]
+      ],
+      "critical_exterior_terms": [
+        [
+          145,
+          1
+        ],
+        [
+          138,
+          2
+        ]
+      ],
+      "residual_rank": 16,
+      "residual_determinant": 2,
+      "leading_height_blocks": [],
+      "degree": 10,
+      "cancelled_c_order": 3,
+      "ramified_endpoint_checks": 256,
+      "two_copy_type_checks": 784,
+      "independent_exterior_checks": 256,
+      "nonzero_entries": 126,
+      "coefficient_sha256": "faa47f83868e53b44b0625329411b96c539c315e29cd876641b8605de822916d",
+      "uncancelled_denominator_degree": 4,
+      "odd_degree_witness": {
+        "physical_letters_x_y_u_v": [
+          3,
+          0,
+          0,
+          0
+        ],
+        "occupied_mode_masks": [
+          3,
+          1,
+          1,
+          1
+        ],
+        "nonzero_polynomial_numerator": [
+          "0xf",
+          "0xf"
+        ]
+      }
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        1
+      ],
+      "ambient": 2,
+      "gamma": 1,
+      "dimensions": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "q_x": 4,
+      "q_u": 4,
+      "bulk_size": 1,
+      "repair_kind": "full_alphabet_monomial_residual_partial",
+      "denominator_degree": 1,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "logical_heights_x_v": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "logical_heights_u_y": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "global_w_power": 0,
+      "residual_monomials": [
+        [
+          0,
+          null,
+          0,
+          1,
+          [
+            [
+              1,
+              0
+            ]
+          ],
+          1
+        ],
+        [
+          1,
+          1,
+          null,
+          1,
+          [
+            [
+              3,
+              0
+            ]
+          ],
+          1
+        ]
+      ],
+      "critical_exterior_terms": [
+        [
+          145,
+          1
+        ],
+        [
+          138,
+          3
+        ]
+      ],
+      "residual_rank": 16,
+      "residual_determinant": 3,
+      "leading_height_blocks": [
+        {
+          "order": 4,
+          "rank": 4,
+          "determinant": 1
+        },
+        {
+          "order": 12,
+          "rank": 12,
+          "determinant": 1
+        },
+        {
+          "order": 16,
+          "rank": 16,
+          "determinant": 3
+        }
+      ],
+      "degree": 9,
+      "cancelled_c_order": 3,
+      "ramified_endpoint_checks": 256,
+      "two_copy_type_checks": 784,
+      "independent_exterior_checks": 256,
+      "nonzero_entries": 102,
+      "coefficient_sha256": "a32a555e87e33e524bde691feb25aaf92d8180524888da28b2c004ad2952ada6",
+      "uncancelled_denominator_degree": 4,
+      "odd_degree_witness": {
+        "physical_letters_x_y_u_v": [
+          3,
+          0,
+          0,
+          2
+        ],
+        "occupied_mode_masks": [
+          3,
+          1,
+          1,
+          2
+        ],
+        "nonzero_polynomial_numerator": [
+          "0x33",
+          "0x0"
+        ]
+      }
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        1
+      ],
+      "ambient": 2,
+      "gamma": 1,
+      "dimensions": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "q_x": 4,
+      "q_u": 4,
+      "bulk_size": 1,
+      "repair_kind": "full_alphabet_monomial_residual_inverse",
+      "denominator_degree": 1,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "logical_heights_x_v": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "logical_heights_u_y": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "global_w_power": 0,
+      "residual_monomials": [
+        [
+          0,
+          null,
+          0,
+          1,
+          [
+            [
+              1,
+              0
+            ]
+          ],
+          1
+        ],
+        [
+          1,
+          1,
+          null,
+          1,
+          [
+            [
+              3,
+              0
+            ]
+          ],
+          1
+        ]
+      ],
+      "critical_exterior_terms": [
+        [
+          145,
+          1
+        ],
+        [
+          138,
+          3
+        ]
+      ],
+      "residual_rank": 16,
+      "residual_determinant": 3,
+      "leading_height_blocks": [],
+      "degree": 10,
+      "cancelled_c_order": 3,
+      "ramified_endpoint_checks": 256,
+      "two_copy_type_checks": 784,
+      "independent_exterior_checks": 256,
+      "nonzero_entries": 126,
+      "coefficient_sha256": "2f773f14e0b19a6376d97d8264f1799d2ad5f5213c181070203a30727b207d91",
+      "uncancelled_denominator_degree": 4,
+      "odd_degree_witness": {
+        "physical_letters_x_y_u_v": [
+          3,
+          0,
+          0,
+          0
+        ],
+        "occupied_mode_masks": [
+          3,
+          1,
+          1,
+          1
+        ],
+        "nonzero_polynomial_numerator": [
+          "0x0",
+          "0xf"
+        ]
+      }
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        1
+      ],
+      "ambient": 2,
+      "gamma": 1,
+      "dimensions": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "q_x": 4,
+      "q_u": 4,
+      "bulk_size": 1,
+      "repair_kind": "full_alphabet_monomial_residual_partial",
+      "denominator_degree": 0,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "logical_heights_x_v": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "logical_heights_u_y": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "global_w_power": 0,
+      "residual_monomials": [
+        [
+          0,
+          1,
+          0,
+          null,
+          [
+            [
+              1,
+              0
+            ]
+          ],
+          1
+        ],
+        [
+          null,
+          1,
+          1,
+          1,
+          [
+            [
+              1,
+              0
+            ]
+          ],
+          1
+        ]
+      ],
+      "critical_exterior_terms": [
+        [
+          25,
+          1
+        ],
+        [
+          168,
+          1
+        ]
+      ],
+      "residual_rank": 16,
+      "residual_determinant": 1,
+      "leading_height_blocks": [
+        {
+          "order": 4,
+          "rank": 4,
+          "determinant": 1
+        },
+        {
+          "order": 12,
+          "rank": 12,
+          "determinant": 1
+        },
+        {
+          "order": 16,
+          "rank": 16,
+          "determinant": 1
+        }
+      ],
+      "degree": 8,
+      "cancelled_c_order": 4,
+      "ramified_endpoint_checks": 256,
+      "two_copy_type_checks": 784,
+      "independent_exterior_checks": 256,
+      "nonzero_entries": 94,
+      "coefficient_sha256": "06b2453e4b5692ddcf0f3367b32b5b41d047c67e6f14191c91547236c31ad70e",
+      "uncancelled_denominator_degree": 4,
+      "odd_degree_witness": {
+        "physical_letters_x_y_u_v": [
+          3,
+          2,
+          0,
+          0
+        ],
+        "occupied_mode_masks": [
+          3,
+          2,
+          1,
+          1
+        ],
+        "nonzero_polynomial_numerator": [
+          "0x3",
+          "0x0"
+        ]
+      }
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        1
+      ],
+      "ambient": 2,
+      "gamma": 1,
+      "dimensions": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "q_x": 4,
+      "q_u": 4,
+      "bulk_size": 1,
+      "repair_kind": "full_alphabet_monomial_residual_inverse",
+      "denominator_degree": 0,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "logical_heights_x_v": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "logical_heights_u_y": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "global_w_power": 0,
+      "residual_monomials": [
+        [
+          0,
+          1,
+          0,
+          null,
+          [
+            [
+              1,
+              0
+            ]
+          ],
+          1
+        ],
+        [
+          null,
+          1,
+          1,
+          1,
+          [
+            [
+              1,
+              0
+            ]
+          ],
+          1
+        ]
+      ],
+      "critical_exterior_terms": [
+        [
+          25,
+          1
+        ],
+        [
+          168,
+          1
+        ]
+      ],
+      "residual_rank": 16,
+      "residual_determinant": 1,
+      "leading_height_blocks": [],
+      "degree": 9,
+      "cancelled_c_order": 4,
+      "ramified_endpoint_checks": 256,
+      "two_copy_type_checks": 784,
+      "independent_exterior_checks": 256,
+      "nonzero_entries": 115,
+      "coefficient_sha256": "203d032ea5cecf892265d2582f6c6d263b361eff354f6bc07a19c886704e1f0f",
+      "uncancelled_denominator_degree": 4,
+      "odd_degree_witness": {
+        "physical_letters_x_y_u_v": [
+          3,
+          0,
+          0,
+          0
+        ],
+        "occupied_mode_masks": [
+          3,
+          1,
+          1,
+          1
+        ],
+        "nonzero_polynomial_numerator": [
+          "0x33",
+          "0x0"
+        ]
+      }
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        1
+      ],
+      "ambient": 2,
+      "gamma": 1,
+      "dimensions": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "q_x": 4,
+      "q_u": 4,
+      "bulk_size": 1,
+      "repair_kind": "full_alphabet_monomial_residual_partial",
+      "denominator_degree": 0,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "logical_heights_x_v": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "logical_heights_u_y": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "global_w_power": 0,
+      "residual_monomials": [
+        [
+          0,
+          1,
+          0,
+          null,
+          [
+            [
+              1,
+              0
+            ]
+          ],
+          1
+        ],
+        [
+          null,
+          1,
+          1,
+          1,
+          [
+            [
+              2,
+              0
+            ]
+          ],
+          1
+        ]
+      ],
+      "critical_exterior_terms": [
+        [
+          25,
+          1
+        ],
+        [
+          168,
+          2
+        ]
+      ],
+      "residual_rank": 16,
+      "residual_determinant": 2,
+      "leading_height_blocks": [
+        {
+          "order": 4,
+          "rank": 4,
+          "determinant": 1
+        },
+        {
+          "order": 12,
+          "rank": 12,
+          "determinant": 1
+        },
+        {
+          "order": 16,
+          "rank": 16,
+          "determinant": 2
+        }
+      ],
+      "degree": 8,
+      "cancelled_c_order": 4,
+      "ramified_endpoint_checks": 256,
+      "two_copy_type_checks": 784,
+      "independent_exterior_checks": 256,
+      "nonzero_entries": 98,
+      "coefficient_sha256": "721b0f16bc834e72335b52959feaafead5a39edc9c065e40e2385dfe9960c42f",
+      "uncancelled_denominator_degree": 4,
+      "odd_degree_witness": {
+        "physical_letters_x_y_u_v": [
+          3,
+          2,
+          0,
+          0
+        ],
+        "occupied_mode_masks": [
+          3,
+          2,
+          1,
+          1
+        ],
+        "nonzero_polynomial_numerator": [
+          "0x3",
+          "0x0"
+        ]
+      }
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        1
+      ],
+      "ambient": 2,
+      "gamma": 1,
+      "dimensions": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "q_x": 4,
+      "q_u": 4,
+      "bulk_size": 1,
+      "repair_kind": "full_alphabet_monomial_residual_inverse",
+      "denominator_degree": 0,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "logical_heights_x_v": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "logical_heights_u_y": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "global_w_power": 0,
+      "residual_monomials": [
+        [
+          0,
+          1,
+          0,
+          null,
+          [
+            [
+              1,
+              0
+            ]
+          ],
+          1
+        ],
+        [
+          null,
+          1,
+          1,
+          1,
+          [
+            [
+              2,
+              0
+            ]
+          ],
+          1
+        ]
+      ],
+      "critical_exterior_terms": [
+        [
+          25,
+          1
+        ],
+        [
+          168,
+          2
+        ]
+      ],
+      "residual_rank": 16,
+      "residual_determinant": 2,
+      "leading_height_blocks": [],
+      "degree": 9,
+      "cancelled_c_order": 4,
+      "ramified_endpoint_checks": 256,
+      "two_copy_type_checks": 784,
+      "independent_exterior_checks": 256,
+      "nonzero_entries": 120,
+      "coefficient_sha256": "f5c26574ab311924a46415f037d14c246e6abd57707cbcdf31a6027a2801b42f",
+      "uncancelled_denominator_degree": 4,
+      "odd_degree_witness": {
+        "physical_letters_x_y_u_v": [
+          3,
+          0,
+          0,
+          0
+        ],
+        "occupied_mode_masks": [
+          3,
+          1,
+          1,
+          1
+        ],
+        "nonzero_polynomial_numerator": [
+          "0x33",
+          "0x33"
+        ]
+      }
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        1
+      ],
+      "ambient": 2,
+      "gamma": 1,
+      "dimensions": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "q_x": 4,
+      "q_u": 4,
+      "bulk_size": 1,
+      "repair_kind": "full_alphabet_monomial_residual_partial",
+      "denominator_degree": 0,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "logical_heights_x_v": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "logical_heights_u_y": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "global_w_power": 0,
+      "residual_monomials": [
+        [
+          0,
+          1,
+          0,
+          null,
+          [
+            [
+              1,
+              0
+            ]
+          ],
+          1
+        ],
+        [
+          null,
+          1,
+          1,
+          1,
+          [
+            [
+              3,
+              0
+            ]
+          ],
+          1
+        ]
+      ],
+      "critical_exterior_terms": [
+        [
+          25,
+          1
+        ],
+        [
+          168,
+          3
+        ]
+      ],
+      "residual_rank": 16,
+      "residual_determinant": 3,
+      "leading_height_blocks": [
+        {
+          "order": 4,
+          "rank": 4,
+          "determinant": 1
+        },
+        {
+          "order": 12,
+          "rank": 12,
+          "determinant": 1
+        },
+        {
+          "order": 16,
+          "rank": 16,
+          "determinant": 3
+        }
+      ],
+      "degree": 8,
+      "cancelled_c_order": 4,
+      "ramified_endpoint_checks": 256,
+      "two_copy_type_checks": 784,
+      "independent_exterior_checks": 256,
+      "nonzero_entries": 98,
+      "coefficient_sha256": "09ede807c7789ebbf057e4f254ace2d2d3abd9fa0a1ea6b94dea21436380f142",
+      "uncancelled_denominator_degree": 4,
+      "odd_degree_witness": {
+        "physical_letters_x_y_u_v": [
+          3,
+          2,
+          0,
+          0
+        ],
+        "occupied_mode_masks": [
+          3,
+          2,
+          1,
+          1
+        ],
+        "nonzero_polynomial_numerator": [
+          "0x3",
+          "0x0"
+        ]
+      }
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        1
+      ],
+      "ambient": 2,
+      "gamma": 1,
+      "dimensions": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "q_x": 4,
+      "q_u": 4,
+      "bulk_size": 1,
+      "repair_kind": "full_alphabet_monomial_residual_inverse",
+      "denominator_degree": 0,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "logical_heights_x_v": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "logical_heights_u_y": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "global_w_power": 0,
+      "residual_monomials": [
+        [
+          0,
+          1,
+          0,
+          null,
+          [
+            [
+              1,
+              0
+            ]
+          ],
+          1
+        ],
+        [
+          null,
+          1,
+          1,
+          1,
+          [
+            [
+              3,
+              0
+            ]
+          ],
+          1
+        ]
+      ],
+      "critical_exterior_terms": [
+        [
+          25,
+          1
+        ],
+        [
+          168,
+          3
+        ]
+      ],
+      "residual_rank": 16,
+      "residual_determinant": 3,
+      "leading_height_blocks": [],
+      "degree": 9,
+      "cancelled_c_order": 4,
+      "ramified_endpoint_checks": 256,
+      "two_copy_type_checks": 784,
+      "independent_exterior_checks": 256,
+      "nonzero_entries": 120,
+      "coefficient_sha256": "abfb0972638072f76beab1fd88ec863be0a904a96489f57e9afdddcbfd797fac",
+      "uncancelled_denominator_degree": 4,
+      "odd_degree_witness": {
+        "physical_letters_x_y_u_v": [
+          3,
+          0,
+          0,
+          0
+        ],
+        "occupied_mode_masks": [
+          3,
+          1,
+          1,
+          1
+        ],
+        "nonzero_polynomial_numerator": [
+          "0x0",
+          "0x33"
+        ]
+      }
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        1
+      ],
+      "ambient": 2,
+      "gamma": 1,
+      "dimensions": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "q_x": 4,
+      "q_u": 4,
+      "bulk_size": 1,
+      "repair_kind": "full_alphabet_monomial_residual_partial",
+      "denominator_degree": 1,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "logical_heights_x_v": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "logical_heights_u_y": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "global_w_power": 0,
+      "residual_monomials": [
+        [
+          0,
+          1,
+          0,
+          null,
+          [
+            [
+              1,
+              0
+            ]
+          ],
+          1
+        ],
+        [
+          0,
+          1,
+          null,
+          1,
+          [
+            [
+              1,
+              0
+            ]
+          ],
+          2
+        ]
+      ],
+      "critical_exterior_terms": [
+        [
+          25,
+          1
+        ],
+        [
+          137,
+          1
+        ]
+      ],
+      "residual_rank": 16,
+      "residual_determinant": 1,
+      "leading_height_blocks": [
+        {
+          "order": 4,
+          "rank": 4,
+          "determinant": 1
+        },
+        {
+          "order": 12,
+          "rank": 12,
+          "determinant": 1
+        },
+        {
+          "order": 16,
+          "rank": 16,
+          "determinant": 1
+        }
+      ],
+      "degree": 9,
+      "cancelled_c_order": 3,
+      "ramified_endpoint_checks": 256,
+      "two_copy_type_checks": 784,
+      "independent_exterior_checks": 256,
+      "nonzero_entries": 87,
+      "coefficient_sha256": "7865344ac1d807c551040a32c936372d4dfc58c1779ad5a39881123b3bb0b163",
+      "uncancelled_denominator_degree": 4,
+      "odd_degree_witness": {
+        "physical_letters_x_y_u_v": [
+          3,
+          2,
+          0,
+          0
+        ],
+        "occupied_mode_masks": [
+          3,
+          2,
+          1,
+          1
+        ],
+        "nonzero_polynomial_numerator": [
+          "0x5",
+          "0x0"
+        ]
+      }
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        1
+      ],
+      "ambient": 2,
+      "gamma": 1,
+      "dimensions": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "q_x": 4,
+      "q_u": 4,
+      "bulk_size": 1,
+      "repair_kind": "full_alphabet_monomial_residual_inverse",
+      "denominator_degree": 1,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "logical_heights_x_v": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "logical_heights_u_y": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "global_w_power": 0,
+      "residual_monomials": [
+        [
+          0,
+          1,
+          0,
+          null,
+          [
+            [
+              1,
+              0
+            ]
+          ],
+          1
+        ],
+        [
+          0,
+          1,
+          null,
+          1,
+          [
+            [
+              1,
+              0
+            ]
+          ],
+          2
+        ]
+      ],
+      "critical_exterior_terms": [
+        [
+          25,
+          1
+        ],
+        [
+          137,
+          1
+        ]
+      ],
+      "residual_rank": 16,
+      "residual_determinant": 1,
+      "leading_height_blocks": [],
+      "degree": 10,
+      "cancelled_c_order": 3,
+      "ramified_endpoint_checks": 256,
+      "two_copy_type_checks": 784,
+      "independent_exterior_checks": 256,
+      "nonzero_entries": 110,
+      "coefficient_sha256": "9958594cfc9ead50effddf050aa8ad970b987855fc1e6b355f562f6b8e8686fb",
+      "uncancelled_denominator_degree": 4,
+      "odd_degree_witness": {
+        "physical_letters_x_y_u_v": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "occupied_mode_masks": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "nonzero_polynomial_numerator": [
+          "0x5",
+          "0x0"
+        ]
+      }
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        1
+      ],
+      "ambient": 2,
+      "gamma": 1,
+      "dimensions": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "q_x": 4,
+      "q_u": 4,
+      "bulk_size": 1,
+      "repair_kind": "full_alphabet_monomial_residual_partial",
+      "denominator_degree": 1,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "logical_heights_x_v": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "logical_heights_u_y": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "global_w_power": 0,
+      "residual_monomials": [
+        [
+          0,
+          1,
+          0,
+          null,
+          [
+            [
+              1,
+              0
+            ]
+          ],
+          1
+        ],
+        [
+          0,
+          1,
+          null,
+          1,
+          [
+            [
+              2,
+              0
+            ]
+          ],
+          2
+        ]
+      ],
+      "critical_exterior_terms": [
+        [
+          25,
+          1
+        ],
+        [
+          137,
+          2
+        ]
+      ],
+      "residual_rank": 16,
+      "residual_determinant": 2,
+      "leading_height_blocks": [
+        {
+          "order": 4,
+          "rank": 4,
+          "determinant": 1
+        },
+        {
+          "order": 12,
+          "rank": 12,
+          "determinant": 1
+        },
+        {
+          "order": 16,
+          "rank": 16,
+          "determinant": 2
+        }
+      ],
+      "degree": 9,
+      "cancelled_c_order": 3,
+      "ramified_endpoint_checks": 256,
+      "two_copy_type_checks": 784,
+      "independent_exterior_checks": 256,
+      "nonzero_entries": 93,
+      "coefficient_sha256": "a0d1a5d230c536c67226900c403cd99dcf5eb64c3ed6767be5567c6400c85e38",
+      "uncancelled_denominator_degree": 4,
+      "odd_degree_witness": {
+        "physical_letters_x_y_u_v": [
+          3,
+          2,
+          0,
+          0
+        ],
+        "occupied_mode_masks": [
+          3,
+          2,
+          1,
+          1
+        ],
+        "nonzero_polynomial_numerator": [
+          "0x5",
+          "0x0"
+        ]
+      }
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        1
+      ],
+      "ambient": 2,
+      "gamma": 1,
+      "dimensions": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "q_x": 4,
+      "q_u": 4,
+      "bulk_size": 1,
+      "repair_kind": "full_alphabet_monomial_residual_inverse",
+      "denominator_degree": 1,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "logical_heights_x_v": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "logical_heights_u_y": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "global_w_power": 0,
+      "residual_monomials": [
+        [
+          0,
+          1,
+          0,
+          null,
+          [
+            [
+              1,
+              0
+            ]
+          ],
+          1
+        ],
+        [
+          0,
+          1,
+          null,
+          1,
+          [
+            [
+              2,
+              0
+            ]
+          ],
+          2
+        ]
+      ],
+      "critical_exterior_terms": [
+        [
+          25,
+          1
+        ],
+        [
+          137,
+          2
+        ]
+      ],
+      "residual_rank": 16,
+      "residual_determinant": 2,
+      "leading_height_blocks": [],
+      "degree": 10,
+      "cancelled_c_order": 3,
+      "ramified_endpoint_checks": 256,
+      "two_copy_type_checks": 784,
+      "independent_exterior_checks": 256,
+      "nonzero_entries": 117,
+      "coefficient_sha256": "f4af49bc11c57c579604eb746148d7f319b806405cbfc7fea69c8bd59788fe40",
+      "uncancelled_denominator_degree": 4,
+      "odd_degree_witness": {
+        "physical_letters_x_y_u_v": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "occupied_mode_masks": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "nonzero_polynomial_numerator": [
+          "0x5",
+          "0x0"
+        ]
+      }
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        1
+      ],
+      "ambient": 2,
+      "gamma": 1,
+      "dimensions": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "q_x": 4,
+      "q_u": 4,
+      "bulk_size": 1,
+      "repair_kind": "full_alphabet_monomial_residual_partial",
+      "denominator_degree": 1,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "logical_heights_x_v": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "logical_heights_u_y": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "global_w_power": 0,
+      "residual_monomials": [
+        [
+          0,
+          1,
+          0,
+          null,
+          [
+            [
+              1,
+              0
+            ]
+          ],
+          1
+        ],
+        [
+          0,
+          1,
+          null,
+          1,
+          [
+            [
+              3,
+              0
+            ]
+          ],
+          2
+        ]
+      ],
+      "critical_exterior_terms": [
+        [
+          25,
+          1
+        ],
+        [
+          137,
+          3
+        ]
+      ],
+      "residual_rank": 16,
+      "residual_determinant": 3,
+      "leading_height_blocks": [
+        {
+          "order": 4,
+          "rank": 4,
+          "determinant": 1
+        },
+        {
+          "order": 12,
+          "rank": 12,
+          "determinant": 1
+        },
+        {
+          "order": 16,
+          "rank": 16,
+          "determinant": 3
+        }
+      ],
+      "degree": 9,
+      "cancelled_c_order": 3,
+      "ramified_endpoint_checks": 256,
+      "two_copy_type_checks": 784,
+      "independent_exterior_checks": 256,
+      "nonzero_entries": 93,
+      "coefficient_sha256": "a4fdcb0b445d25a578fc53e1029e55226f806d3c3873487e84d6f3cc646e478e",
+      "uncancelled_denominator_degree": 4,
+      "odd_degree_witness": {
+        "physical_letters_x_y_u_v": [
+          3,
+          2,
+          0,
+          0
+        ],
+        "occupied_mode_masks": [
+          3,
+          2,
+          1,
+          1
+        ],
+        "nonzero_polynomial_numerator": [
+          "0x5",
+          "0x0"
+        ]
+      }
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        1
+      ],
+      "ambient": 2,
+      "gamma": 1,
+      "dimensions": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "q_x": 4,
+      "q_u": 4,
+      "bulk_size": 1,
+      "repair_kind": "full_alphabet_monomial_residual_inverse",
+      "denominator_degree": 1,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "logical_heights_x_v": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "logical_heights_u_y": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "global_w_power": 0,
+      "residual_monomials": [
+        [
+          0,
+          1,
+          0,
+          null,
+          [
+            [
+              1,
+              0
+            ]
+          ],
+          1
+        ],
+        [
+          0,
+          1,
+          null,
+          1,
+          [
+            [
+              3,
+              0
+            ]
+          ],
+          2
+        ]
+      ],
+      "critical_exterior_terms": [
+        [
+          25,
+          1
+        ],
+        [
+          137,
+          3
+        ]
+      ],
+      "residual_rank": 16,
+      "residual_determinant": 3,
+      "leading_height_blocks": [],
+      "degree": 10,
+      "cancelled_c_order": 3,
+      "ramified_endpoint_checks": 256,
+      "two_copy_type_checks": 784,
+      "independent_exterior_checks": 256,
+      "nonzero_entries": 117,
+      "coefficient_sha256": "a601757b325391751c53579b25f26e4b156f79dacfa9ecc3f315941a5f95d02a",
+      "uncancelled_denominator_degree": 4,
+      "odd_degree_witness": {
+        "physical_letters_x_y_u_v": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "occupied_mode_masks": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "nonzero_polynomial_numerator": [
+          "0x5",
+          "0x0"
+        ]
+      }
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        1,
+        2
+      ],
+      "ambient": 4,
+      "gamma": 1,
+      "dimensions": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "q_x": 8,
+      "q_u": 8,
+      "bulk_size": 2,
+      "repair_kind": "full_alphabet_monomial_residual_partial",
+      "denominator_degree": 1,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "logical_heights_x_v": [
+        0,
+        1,
+        0,
+        1,
+        2,
+        3,
+        2,
+        3
+      ],
+      "logical_heights_u_y": [
+        0,
+        1,
+        0,
+        1,
+        2,
+        3,
+        2,
+        3
+      ],
+      "global_w_power": 1,
+      "residual_monomials": [
+        [
+          0,
+          null,
+          0,
+          2,
+          [
+            [
+              1,
+              -1
+            ]
+          ],
+          1
+        ],
+        [
+          null,
+          2,
+          0,
+          2,
+          [
+            [
+              2,
+              2
+            ]
+          ],
+          2
+        ]
+      ],
+      "critical_exterior_terms": [
+        [
+          145,
+          1
+        ],
+        [
+          152,
+          2
+        ]
+      ],
+      "residual_rank": 16,
+      "residual_determinant": 2,
+      "leading_height_blocks": [
+        {
+          "order": 4,
+          "rank": 4,
+          "determinant": 1
+        },
+        {
+          "order": 12,
+          "rank": 12,
+          "determinant": 1
+        },
+        {
+          "order": 16,
+          "rank": 16,
+          "determinant": 2
+        }
+      ],
+      "degree": 26,
+      "cancelled_c_order": 3,
+      "ramified_endpoint_checks": 4096,
+      "two_copy_type_checks": 14400,
+      "independent_exterior_checks": 4096,
+      "nonzero_entries": 1335,
+      "coefficient_sha256": "1eec9aca00af60ad8bd6022f5e3d9215fc034d3b55ad36595fd01fd1c4274a91",
+      "uncancelled_denominator_degree": 4,
+      "odd_degree_witness": {
+        "physical_letters_x_y_u_v": [
+          1,
+          0,
+          0,
+          4
+        ],
+        "occupied_mode_masks": [
+          3,
+          1,
+          1,
+          4
+        ],
+        "nonzero_polynomial_numerator": [
+          "0x1e030",
+          "0x0"
+        ]
+      }
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        2,
+        5
+      ],
+      "ambient": 8,
+      "gamma": 1,
+      "dimensions": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "q_x": 8,
+      "q_u": 8,
+      "bulk_size": 2,
+      "repair_kind": "full_alphabet_monomial_residual_partial",
+      "denominator_degree": 1,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "logical_heights_x_v": [
+        0,
+        2,
+        0,
+        2,
+        5,
+        7,
+        5,
+        7
+      ],
+      "logical_heights_u_y": [
+        0,
+        2,
+        0,
+        2,
+        5,
+        7,
+        5,
+        7
+      ],
+      "global_w_power": 1,
+      "residual_monomials": [
+        [
+          0,
+          5,
+          0,
+          null,
+          [
+            [
+              1,
+              -1
+            ]
+          ],
+          1
+        ],
+        [
+          null,
+          5,
+          5,
+          5,
+          [
+            [
+              3,
+              2
+            ]
+          ],
+          1
+        ]
+      ],
+      "critical_exterior_terms": [
+        [
+          25,
+          1
+        ],
+        [
+          168,
+          3
+        ]
+      ],
+      "residual_rank": 16,
+      "residual_determinant": 3,
+      "leading_height_blocks": [
+        {
+          "order": 4,
+          "rank": 4,
+          "determinant": 1
+        },
+        {
+          "order": 12,
+          "rank": 12,
+          "determinant": 1
+        },
+        {
+          "order": 16,
+          "rank": 16,
+          "determinant": 3
+        }
+      ],
+      "degree": 50,
+      "cancelled_c_order": 3,
+      "ramified_endpoint_checks": 4096,
+      "two_copy_type_checks": 14400,
+      "independent_exterior_checks": 4096,
+      "nonzero_entries": 1327,
+      "coefficient_sha256": "9ddf33c732a8cdcb5acddb476a5fde5423cacc343cf60189afc2839e6b0d414a",
+      "uncancelled_denominator_degree": 4,
+      "odd_degree_witness": {
+        "physical_letters_x_y_u_v": [
+          1,
+          4,
+          0,
+          0
+        ],
+        "occupied_mode_masks": [
+          3,
+          4,
+          1,
+          1
+        ],
+        "nonzero_polynomial_numerator": [
+          "0xa0000",
+          "0x0"
+        ]
+      }
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "ambient": 4,
+      "gamma": 1,
+      "dimensions": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "q_x": 16,
+      "q_u": 16,
+      "bulk_size": 4,
+      "repair_kind": "full_alphabet_monomial_residual_partial",
+      "denominator_degree": 1,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent matching full-letter types on X/V and Y/U",
+      "logical_heights_x_v": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        1,
+        2,
+        3,
+        3,
+        4,
+        5,
+        6,
+        3,
+        4,
+        5,
+        6
+      ],
+      "logical_heights_u_y": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        1,
+        2,
+        3,
+        3,
+        4,
+        5,
+        6,
+        3,
+        4,
+        5,
+        6
+      ],
+      "global_w_power": 1,
+      "residual_monomials": [
+        [
+          0,
+          null,
+          0,
+          3,
+          [
+            [
+              1,
+              -1
+            ]
+          ],
+          1
+        ],
+        [
+          3,
+          3,
+          null,
+          3,
+          [
+            [
+              1,
+              2
+            ]
+          ],
+          1
+        ]
+      ],
+      "critical_exterior_terms": [
+        [
+          145,
+          1
+        ],
+        [
+          138,
+          1
+        ]
+      ],
+      "residual_rank": 16,
+      "residual_determinant": 1,
+      "leading_height_blocks": [
+        {
+          "order": 4,
+          "rank": 4,
+          "determinant": 1
+        },
+        {
+          "order": 12,
+          "rank": 12,
+          "determinant": 1
+        },
+        {
+          "order": 16,
+          "rank": 16,
+          "determinant": 1
+        }
+      ],
+      "degree": 34,
+      "cancelled_c_order": 3,
+      "ramified_endpoint_checks": 65536,
+      "two_copy_type_checks": 246016,
+      "independent_exterior_checks": 65536,
+      "nonzero_entries": 15729,
+      "coefficient_sha256": "a39e1385503a259d07c826a470a9a6bf66d4d4f2a903ffa320854e7849de83f9",
+      "uncancelled_denominator_degree": 4,
+      "odd_degree_witness": {
+        "physical_letters_x_y_u_v": [
+          1,
+          0,
+          0,
+          8
+        ],
+        "occupied_mode_masks": [
+          3,
+          1,
+          1,
+          8
+        ],
+        "nonzero_polynomial_numerator": [
+          "0x6030",
+          "0x0"
+        ]
+      }
+    }
+  ]
+}

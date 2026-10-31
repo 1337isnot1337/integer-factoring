@@ -1,0 +1,1213 @@
+{
+  "status": "pass",
+  "proved_formula_controls": {
+    "principal_energy_cases": 3688,
+    "independent_minimum_assignments": 3688,
+    "independent_determinant_smith_checks": 3688,
+    "balanced_exact_permanent_cases": 2560,
+    "contiguous_interval_cases": 570,
+    "literal_twirl_cases": 24,
+    "literal_twirl_entries": 4224,
+    "independent_local_kernel_coefficients": 7440,
+    "low_jet_formula_coefficients": 224,
+    "sparse_interval_and_reflection_coefficients": 316,
+    "power_of_two_circulant_congruences": 34,
+    "special_size_odd_minor_bounds": 34,
+    "even_spacing_cauchy_congruences": 68,
+    "even_spacing_complete_polynomials": 210,
+    "even_spacing_polynomial_coefficients": 6734
+  },
+  "restricted_decoders": [
+    {
+      "L": 2,
+      "precision": 4,
+      "status": "dual_verified",
+      "basis_directions_checked": 3
+    },
+    {
+      "L": 4,
+      "precision": 5,
+      "status": "dual_verified",
+      "basis_directions_checked": 5
+    },
+    {
+      "L": 8,
+      "precision": 6,
+      "status": "dual_verified",
+      "basis_directions_checked": 9
+    },
+    {
+      "L": 16,
+      "precision": 7,
+      "status": "dual_verified",
+      "basis_directions_checked": 17
+    },
+    {
+      "L": 32,
+      "precision": 8,
+      "status": "dual_verified",
+      "basis_directions_checked": 33
+    },
+    {
+      "L": 64,
+      "precision": 9,
+      "status": "dual_verified",
+      "basis_directions_checked": 65
+    },
+    {
+      "L": 128,
+      "precision": 10,
+      "status": "six_query_collision_verified",
+      "nonzero_coefficients": 5
+    }
+  ],
+  "high_height_witness": {
+    "L": 8,
+    "hidden_bits": 112,
+    "canonical_creation_precision": 120,
+    "complete_polynomial_coefficients_checked": 33696,
+    "odd_original_contraction": "165380383293486881916071800790368353",
+    "local_records": [
+      {
+        "center": -7,
+        "minimum_content_or_precision_cutoff": 112
+      },
+      {
+        "center": -5,
+        "minimum_content_or_precision_cutoff": 112
+      },
+      {
+        "center": -3,
+        "minimum_content_or_precision_cutoff": 112
+      },
+      {
+        "center": -1,
+        "minimum_content_or_precision_cutoff": 112
+      },
+      {
+        "center": 1,
+        "minimum_content_or_precision_cutoff": 112
+      },
+      {
+        "center": 3,
+        "minimum_content_or_precision_cutoff": 112
+      },
+      {
+        "center": 5,
+        "minimum_content_or_precision_cutoff": 112
+      },
+      {
+        "center": 7,
+        "minimum_content_or_precision_cutoff": 112
+      }
+    ]
+  },
+  "finite_factorial_pattern": {
+    "status": "Individual squared-Cauchy Smith orders and non-power-of-two permanent formula remain finite observations. The note proves the power-of-two permanent formula for all sizes.",
+    "direct_permanent_controls": 24,
+    "records": [
+      {
+        "n": 1,
+        "odd_T": 1,
+        "precision": 40,
+        "squared_cauchy_orders": [
+          0
+        ],
+        "ordinary_determinant_order": 0,
+        "permanent_order_by_borchardt": 0
+      },
+      {
+        "n": 1,
+        "odd_T": 3,
+        "precision": 40,
+        "squared_cauchy_orders": [
+          0
+        ],
+        "ordinary_determinant_order": 0,
+        "permanent_order_by_borchardt": 0
+      },
+      {
+        "n": 1,
+        "odd_T": 5,
+        "precision": 40,
+        "squared_cauchy_orders": [
+          0
+        ],
+        "ordinary_determinant_order": 0,
+        "permanent_order_by_borchardt": 0
+      },
+      {
+        "n": 2,
+        "odd_T": 1,
+        "precision": 48,
+        "squared_cauchy_orders": [
+          0,
+          3
+        ],
+        "ordinary_determinant_order": 2,
+        "permanent_order_by_borchardt": 1
+      },
+      {
+        "n": 2,
+        "odd_T": 3,
+        "precision": 48,
+        "squared_cauchy_orders": [
+          0,
+          3
+        ],
+        "ordinary_determinant_order": 2,
+        "permanent_order_by_borchardt": 1
+      },
+      {
+        "n": 2,
+        "odd_T": 9,
+        "precision": 48,
+        "squared_cauchy_orders": [
+          0,
+          3
+        ],
+        "ordinary_determinant_order": 2,
+        "permanent_order_by_borchardt": 1
+      },
+      {
+        "n": 3,
+        "odd_T": 1,
+        "precision": 56,
+        "squared_cauchy_orders": [
+          0,
+          3,
+          6
+        ],
+        "ordinary_determinant_order": 8,
+        "permanent_order_by_borchardt": 1
+      },
+      {
+        "n": 3,
+        "odd_T": 3,
+        "precision": 56,
+        "squared_cauchy_orders": [
+          0,
+          3,
+          6
+        ],
+        "ordinary_determinant_order": 8,
+        "permanent_order_by_borchardt": 1
+      },
+      {
+        "n": 3,
+        "odd_T": 13,
+        "precision": 56,
+        "squared_cauchy_orders": [
+          0,
+          3,
+          6
+        ],
+        "ordinary_determinant_order": 8,
+        "permanent_order_by_borchardt": 1
+      },
+      {
+        "n": 4,
+        "odd_T": 1,
+        "precision": 64,
+        "squared_cauchy_orders": [
+          0,
+          3,
+          6,
+          10
+        ],
+        "ordinary_determinant_order": 16,
+        "permanent_order_by_borchardt": 3
+      },
+      {
+        "n": 4,
+        "odd_T": 3,
+        "precision": 64,
+        "squared_cauchy_orders": [
+          0,
+          3,
+          6,
+          10
+        ],
+        "ordinary_determinant_order": 16,
+        "permanent_order_by_borchardt": 3
+      },
+      {
+        "n": 4,
+        "odd_T": 17,
+        "precision": 64,
+        "squared_cauchy_orders": [
+          0,
+          3,
+          6,
+          10
+        ],
+        "ordinary_determinant_order": 16,
+        "permanent_order_by_borchardt": 3
+      },
+      {
+        "n": 5,
+        "odd_T": 1,
+        "precision": 72,
+        "squared_cauchy_orders": [
+          0,
+          3,
+          6,
+          10,
+          14
+        ],
+        "ordinary_determinant_order": 30,
+        "permanent_order_by_borchardt": 3
+      },
+      {
+        "n": 5,
+        "odd_T": 3,
+        "precision": 72,
+        "squared_cauchy_orders": [
+          0,
+          3,
+          6,
+          10,
+          14
+        ],
+        "ordinary_determinant_order": 30,
+        "permanent_order_by_borchardt": 3
+      },
+      {
+        "n": 5,
+        "odd_T": 21,
+        "precision": 72,
+        "squared_cauchy_orders": [
+          0,
+          3,
+          6,
+          10,
+          14
+        ],
+        "ordinary_determinant_order": 30,
+        "permanent_order_by_borchardt": 3
+      },
+      {
+        "n": 6,
+        "odd_T": 1,
+        "precision": 80,
+        "squared_cauchy_orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17
+        ],
+        "ordinary_determinant_order": 46,
+        "permanent_order_by_borchardt": 4
+      },
+      {
+        "n": 6,
+        "odd_T": 3,
+        "precision": 80,
+        "squared_cauchy_orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17
+        ],
+        "ordinary_determinant_order": 46,
+        "permanent_order_by_borchardt": 4
+      },
+      {
+        "n": 6,
+        "odd_T": 25,
+        "precision": 80,
+        "squared_cauchy_orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17
+        ],
+        "ordinary_determinant_order": 46,
+        "permanent_order_by_borchardt": 4
+      },
+      {
+        "n": 7,
+        "odd_T": 1,
+        "precision": 88,
+        "squared_cauchy_orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20
+        ],
+        "ordinary_determinant_order": 66,
+        "permanent_order_by_borchardt": 4
+      },
+      {
+        "n": 7,
+        "odd_T": 3,
+        "precision": 88,
+        "squared_cauchy_orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20
+        ],
+        "ordinary_determinant_order": 66,
+        "permanent_order_by_borchardt": 4
+      },
+      {
+        "n": 7,
+        "odd_T": 29,
+        "precision": 88,
+        "squared_cauchy_orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20
+        ],
+        "ordinary_determinant_order": 66,
+        "permanent_order_by_borchardt": 4
+      },
+      {
+        "n": 8,
+        "odd_T": 1,
+        "precision": 96,
+        "squared_cauchy_orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25
+        ],
+        "ordinary_determinant_order": 88,
+        "permanent_order_by_borchardt": 7
+      },
+      {
+        "n": 8,
+        "odd_T": 3,
+        "precision": 96,
+        "squared_cauchy_orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25
+        ],
+        "ordinary_determinant_order": 88,
+        "permanent_order_by_borchardt": 7
+      },
+      {
+        "n": 8,
+        "odd_T": 33,
+        "precision": 96,
+        "squared_cauchy_orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25
+        ],
+        "ordinary_determinant_order": 88,
+        "permanent_order_by_borchardt": 7
+      },
+      {
+        "n": 9,
+        "odd_T": 1,
+        "precision": 104,
+        "squared_cauchy_orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25,
+          30
+        ],
+        "ordinary_determinant_order": 118,
+        "permanent_order_by_borchardt": 7
+      },
+      {
+        "n": 9,
+        "odd_T": 3,
+        "precision": 104,
+        "squared_cauchy_orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25,
+          30
+        ],
+        "ordinary_determinant_order": 118,
+        "permanent_order_by_borchardt": 7
+      },
+      {
+        "n": 9,
+        "odd_T": 37,
+        "precision": 104,
+        "squared_cauchy_orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25,
+          30
+        ],
+        "ordinary_determinant_order": 118,
+        "permanent_order_by_borchardt": 7
+      },
+      {
+        "n": 10,
+        "odd_T": 1,
+        "precision": 112,
+        "squared_cauchy_orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25,
+          30,
+          33
+        ],
+        "ordinary_determinant_order": 150,
+        "permanent_order_by_borchardt": 8
+      },
+      {
+        "n": 10,
+        "odd_T": 3,
+        "precision": 112,
+        "squared_cauchy_orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25,
+          30,
+          33
+        ],
+        "ordinary_determinant_order": 150,
+        "permanent_order_by_borchardt": 8
+      },
+      {
+        "n": 10,
+        "odd_T": 41,
+        "precision": 112,
+        "squared_cauchy_orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25,
+          30,
+          33
+        ],
+        "ordinary_determinant_order": 150,
+        "permanent_order_by_borchardt": 8
+      },
+      {
+        "n": 11,
+        "odd_T": 1,
+        "precision": 120,
+        "squared_cauchy_orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25,
+          30,
+          33,
+          36
+        ],
+        "ordinary_determinant_order": 186,
+        "permanent_order_by_borchardt": 8
+      },
+      {
+        "n": 11,
+        "odd_T": 3,
+        "precision": 120,
+        "squared_cauchy_orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25,
+          30,
+          33,
+          36
+        ],
+        "ordinary_determinant_order": 186,
+        "permanent_order_by_borchardt": 8
+      },
+      {
+        "n": 11,
+        "odd_T": 45,
+        "precision": 120,
+        "squared_cauchy_orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25,
+          30,
+          33,
+          36
+        ],
+        "ordinary_determinant_order": 186,
+        "permanent_order_by_borchardt": 8
+      },
+      {
+        "n": 12,
+        "odd_T": 1,
+        "precision": 128,
+        "squared_cauchy_orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25,
+          30,
+          33,
+          36,
+          40
+        ],
+        "ordinary_determinant_order": 224,
+        "permanent_order_by_borchardt": 10
+      },
+      {
+        "n": 12,
+        "odd_T": 3,
+        "precision": 128,
+        "squared_cauchy_orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25,
+          30,
+          33,
+          36,
+          40
+        ],
+        "ordinary_determinant_order": 224,
+        "permanent_order_by_borchardt": 10
+      },
+      {
+        "n": 12,
+        "odd_T": 49,
+        "precision": 128,
+        "squared_cauchy_orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25,
+          30,
+          33,
+          36,
+          40
+        ],
+        "ordinary_determinant_order": 224,
+        "permanent_order_by_borchardt": 10
+      },
+      {
+        "n": 13,
+        "odd_T": 1,
+        "precision": 136,
+        "squared_cauchy_orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25,
+          30,
+          33,
+          36,
+          40,
+          44
+        ],
+        "ordinary_determinant_order": 268,
+        "permanent_order_by_borchardt": 10
+      },
+      {
+        "n": 13,
+        "odd_T": 3,
+        "precision": 136,
+        "squared_cauchy_orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25,
+          30,
+          33,
+          36,
+          40,
+          44
+        ],
+        "ordinary_determinant_order": 268,
+        "permanent_order_by_borchardt": 10
+      },
+      {
+        "n": 13,
+        "odd_T": 53,
+        "precision": 136,
+        "squared_cauchy_orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25,
+          30,
+          33,
+          36,
+          40,
+          44
+        ],
+        "ordinary_determinant_order": 268,
+        "permanent_order_by_borchardt": 10
+      },
+      {
+        "n": 14,
+        "odd_T": 1,
+        "precision": 144,
+        "squared_cauchy_orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25,
+          30,
+          33,
+          36,
+          40,
+          44,
+          47
+        ],
+        "ordinary_determinant_order": 314,
+        "permanent_order_by_borchardt": 11
+      },
+      {
+        "n": 14,
+        "odd_T": 3,
+        "precision": 144,
+        "squared_cauchy_orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25,
+          30,
+          33,
+          36,
+          40,
+          44,
+          47
+        ],
+        "ordinary_determinant_order": 314,
+        "permanent_order_by_borchardt": 11
+      },
+      {
+        "n": 14,
+        "odd_T": 57,
+        "precision": 144,
+        "squared_cauchy_orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25,
+          30,
+          33,
+          36,
+          40,
+          44,
+          47
+        ],
+        "ordinary_determinant_order": 314,
+        "permanent_order_by_borchardt": 11
+      },
+      {
+        "n": 15,
+        "odd_T": 1,
+        "precision": 152,
+        "squared_cauchy_orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25,
+          30,
+          33,
+          36,
+          40,
+          44,
+          47,
+          50
+        ],
+        "ordinary_determinant_order": 364,
+        "permanent_order_by_borchardt": 11
+      },
+      {
+        "n": 15,
+        "odd_T": 3,
+        "precision": 152,
+        "squared_cauchy_orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25,
+          30,
+          33,
+          36,
+          40,
+          44,
+          47,
+          50
+        ],
+        "ordinary_determinant_order": 364,
+        "permanent_order_by_borchardt": 11
+      },
+      {
+        "n": 15,
+        "odd_T": 61,
+        "precision": 152,
+        "squared_cauchy_orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25,
+          30,
+          33,
+          36,
+          40,
+          44,
+          47,
+          50
+        ],
+        "ordinary_determinant_order": 364,
+        "permanent_order_by_borchardt": 11
+      },
+      {
+        "n": 16,
+        "odd_T": 1,
+        "precision": 160,
+        "squared_cauchy_orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25,
+          30,
+          33,
+          36,
+          40,
+          44,
+          47,
+          50,
+          56
+        ],
+        "ordinary_determinant_order": 416,
+        "permanent_order_by_borchardt": 15
+      },
+      {
+        "n": 16,
+        "odd_T": 3,
+        "precision": 160,
+        "squared_cauchy_orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25,
+          30,
+          33,
+          36,
+          40,
+          44,
+          47,
+          50,
+          56
+        ],
+        "ordinary_determinant_order": 416,
+        "permanent_order_by_borchardt": 15
+      },
+      {
+        "n": 16,
+        "odd_T": 65,
+        "precision": 160,
+        "squared_cauchy_orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25,
+          30,
+          33,
+          36,
+          40,
+          44,
+          47,
+          50,
+          56
+        ],
+        "ordinary_determinant_order": 416,
+        "permanent_order_by_borchardt": 15
+      },
+      {
+        "n": 32,
+        "odd_T": 129,
+        "precision": 288,
+        "squared_cauchy_orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25,
+          30,
+          33,
+          36,
+          40,
+          44,
+          47,
+          50,
+          56,
+          62,
+          65,
+          68,
+          72,
+          76,
+          79,
+          82,
+          87,
+          92,
+          95,
+          98,
+          102,
+          106,
+          109,
+          112,
+          119
+        ],
+        "ordinary_determinant_order": 1824,
+        "permanent_order_by_borchardt": 31
+      },
+      {
+        "n": 64,
+        "odd_T": 257,
+        "precision": 544,
+        "squared_cauchy_orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25,
+          30,
+          33,
+          36,
+          40,
+          44,
+          47,
+          50,
+          56,
+          62,
+          65,
+          68,
+          72,
+          76,
+          79,
+          82,
+          87,
+          92,
+          95,
+          98,
+          102,
+          106,
+          109,
+          112,
+          119,
+          126,
+          129,
+          132,
+          136,
+          140,
+          143,
+          146,
+          151,
+          156,
+          159,
+          162,
+          166,
+          170,
+          173,
+          176,
+          182,
+          188,
+          191,
+          194,
+          198,
+          202,
+          205,
+          208,
+          213,
+          218,
+          221,
+          224,
+          228,
+          232,
+          235,
+          238,
+          246
+        ],
+        "ordinary_determinant_order": 7680,
+        "permanent_order_by_borchardt": 63
+      },
+      {
+        "n": 128,
+        "odd_T": 513,
+        "precision": 1056,
+        "squared_cauchy_orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25,
+          30,
+          33,
+          36,
+          40,
+          44,
+          47,
+          50,
+          56,
+          62,
+          65,
+          68,
+          72,
+          76,
+          79,
+          82,
+          87,
+          92,
+          95,
+          98,
+          102,
+          106,
+          109,
+          112,
+          119,
+          126,
+          129,
+          132,
+          136,
+          140,
+          143,
+          146,
+          151,
+          156,
+          159,
+          162,
+          166,
+          170,
+          173,
+          176,
+          182,
+          188,
+          191,
+          194,
+          198,
+          202,
+          205,
+          208,
+          213,
+          218,
+          221,
+          224,
+          228,
+          232,
+          235,
+          238,
+          246,
+          254,
+          257,
+          260,
+          264,
+          268,
+          271,
+          274,
+          279,
+          284,
+          287,
+          290,
+          294,
+          298,
+          301,
+          304,
+          310,
+          316,
+          319,
+          322,
+          326,
+          330,
+          333,
+          336,
+          341,
+          346,
+          349,
+          352,
+          356,
+          360,
+          363,
+          366,
+          373,
+          380,
+          383,
+          386,
+          390,
+          394,
+          397,
+          400,
+          405,
+          410,
+          413,
+          416,
+          420,
+          424,
+          427,
+          430,
+          436,
+          442,
+          445,
+          448,
+          452,
+          456,
+          459,
+          462,
+          467,
+          472,
+          475,
+          478,
+          482,
+          486,
+          489,
+          492,
+          501
+        ],
+        "ordinary_determinant_order": 31616,
+        "permanent_order_by_borchardt": 127
+      }
+    ]
+  },
+  "source_sha256": {
+    "tools/check_walsh_cauchy_permanents.py": "a297c9790250e7b9edffa27d01f956142a34eb30a88fcab1fd1fb0c168d80b0b",
+    "tools/walsh_cauchy_permanents.py": "c48a7574cd723dceba39f16c2c5cdef78dadd118be039aad74ebe49b750de5b0",
+    "tools/search_interval_permanent_decoder.py": "84fc41d8ec71dca099c7b51da4191cb557676b7b1bc0c6aa35d96ed45a2e277a",
+    "tools/boolean_cauchy_operator.py": "1d9c4c2993f977e02c3a742ffa388e893ab95f3c99d1de13aa25e038ef0bcb30",
+    "tools/cauchy_packet_polynomials.py": "92d102c11cc42db9caadd028b5552b068ae9d734c46a4c4f5791662cc5be83cc",
+    "research/walsh-principal-permanents.md": "608b39d8c7fb887c56c68ed2d390cb8a3eaf361607862c281945fe79568d800f",
+    "evidence/walsh-permanent-witness.json": "5fc9d76851fd6a0917d4aa399a606b8c427c4d65a867b8441604a0bb92035820",
+    "evidence/interval-permanent-decoders.json": "b2996b252f277394c542bb60d3844c3d050d1c4a278570a4d6bf32e8aa1e1993"
+  },
+  "scope": "All-size twirl, discrepancy, and power-of-two even-spacing permanent theorems; exact finite restricted decoders; an explicit high-height collision; and separately labeled finite individual Smith patterns. No general contraction improvement or new factoring score."
+}

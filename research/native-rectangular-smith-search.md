@@ -104,3 +104,33 @@ python3 tools/native_rectangular_smith.py \
 An optional `--params PATH` accepts a JSON list containing the full weighted
 parameter vector. An optional `--output PATH` saves the numerical result.
 These commands do not claim a new factoring exponent.
+
+## Four-element-field extension
+
+The companion `native_rectangular_smith_f4.py` has the same rectangular
+interface and paired-type calculation. Import its `RectangularOracle` and
+supply each polynomial as a pair `(low, high)` of binary coefficient masks,
+representing `low + omega*high` with `omega^2=omega+1`. Its adjacent C++ source
+uses exact field operations and separates balanced support components before
+elimination. Each leg retains its own alphabet and height offsets.
+
+The [mixed-field repair](rectangular-f4-repair.md) supplies admissible rational
+seeds. Pass the recorded `denominator_degree` and `endpoint_check=False`;
+the paired-type endpoint proof supplies admissibility. The engine restores
+this scalar denominator once. A finite profile alone does not prove the
+endpoint or an improved asymptotic factoring rate.
+
+```sh
+python3 tools/check_native_rectangular_smith_f4.py \
+  --output evidence/native-rectangular-smith-f4.json
+python3 tools/check_rectangular_f4_repair.py --seed-directory /tmp/f4-seeds
+python3 tools/native_rectangular_smith_f4.py \
+  /tmp/f4-seeds/rectangular-f4-12-0-1-2-M4.json --log-s 0.1
+```
+
+The F4 checker compares both cuts at exact rational weights for four shapes,
+including unequal alphabets and nonzero denominator corrections. It checks
+24 gradient coordinates, the paired Gibbs formula, and failed-load,
+oversized-input, endpoint, and singular-profile controls. An additional
+independent fraction-free replay on the actual mixed `(4,3)` seed agreed
+in both cuts to less than `3e-16` in the native floating outputs.

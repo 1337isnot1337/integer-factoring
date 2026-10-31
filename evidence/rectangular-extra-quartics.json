@@ -1,0 +1,1153 @@
+{
+  "status": "exact endpoint-vanishing extreme quartics; no pressure claim",
+  "single_extra_cases": [
+    {
+      "pattern": 0,
+      "modes": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 1,
+      "ell": -2,
+      "denominator_degree": 1,
+      "global_w_power": 2,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "3766b4c3daa6ff59f07784694405fd9c66bac47d0f57a218d6df49ac2309abed"
+    },
+    {
+      "pattern": 0,
+      "modes": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 1,
+      "ell": 0,
+      "denominator_degree": 1,
+      "global_w_power": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "2911a8fdcb3e4273781c8dc8789a7311076cc5c8df03ccebdfbd8fa2f15d5a39"
+    },
+    {
+      "pattern": 0,
+      "modes": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 1,
+      "ell": 3,
+      "denominator_degree": 1,
+      "global_w_power": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "0d0b0a273c2384740df6bf67ff661ddb592f63b9295c452fcd9708490f69b9c1"
+    },
+    {
+      "pattern": 0,
+      "modes": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 2,
+      "ell": -2,
+      "denominator_degree": 1,
+      "global_w_power": 2,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "123374b774654fb5307f657358fb43b085a55037b4bb8851a853e4efca22d5c9"
+    },
+    {
+      "pattern": 0,
+      "modes": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 2,
+      "ell": 0,
+      "denominator_degree": 1,
+      "global_w_power": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "6fbfd84ada56e21b60c45d15ed46ca005f6e323aeb1cfc88fc792e194df52b63"
+    },
+    {
+      "pattern": 0,
+      "modes": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 2,
+      "ell": 3,
+      "denominator_degree": 1,
+      "global_w_power": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "63832ccea24234fb6ead8b4f25928dbeb6a7d69af870e68024f317929108e91d"
+    },
+    {
+      "pattern": 0,
+      "modes": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 3,
+      "ell": -2,
+      "denominator_degree": 1,
+      "global_w_power": 2,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "68ec6f429b8d2ca7eb4534e578c8b5f1218d6e525a3bf094573f0a2de5cec4d6"
+    },
+    {
+      "pattern": 0,
+      "modes": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 3,
+      "ell": 0,
+      "denominator_degree": 1,
+      "global_w_power": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "ddd28dc19704f3533292b6a8e314a52eb70e0d65590223a97d9855bcb982d43b"
+    },
+    {
+      "pattern": 0,
+      "modes": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 3,
+      "ell": 3,
+      "denominator_degree": 1,
+      "global_w_power": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "ac9267a5e68a3002c93c99785ed6cf02cca5e9630fa9fe0d85b6a29c289eef00"
+    },
+    {
+      "pattern": 1,
+      "modes": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 1,
+      "ell": -2,
+      "denominator_degree": 0,
+      "global_w_power": 2,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "b979a2a353d6dcf0b672d7d850b3be100de338558cd4cd1cd82d34ab8b7e5090"
+    },
+    {
+      "pattern": 1,
+      "modes": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 1,
+      "ell": 0,
+      "denominator_degree": 0,
+      "global_w_power": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "ca492d956fd4b014a3f46004d0a4c16922819263cf2f6cee7ecd1acc2e7c3681"
+    },
+    {
+      "pattern": 1,
+      "modes": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 1,
+      "ell": 3,
+      "denominator_degree": 0,
+      "global_w_power": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "b74ec04d3fea582f4ef178a9ab78f5152e8a80e20b297688328d5c0e7632ac0d"
+    },
+    {
+      "pattern": 1,
+      "modes": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 2,
+      "ell": -2,
+      "denominator_degree": 0,
+      "global_w_power": 2,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "9d58a01466be9321b57a4b3c468bc11e7d8b8109606700d98fd663f5b64a42c5"
+    },
+    {
+      "pattern": 1,
+      "modes": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 2,
+      "ell": 0,
+      "denominator_degree": 0,
+      "global_w_power": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "b9cfc00e12abfc578929ef447f04bca44ebcfce2fb17800318986b81aae6029a"
+    },
+    {
+      "pattern": 1,
+      "modes": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 2,
+      "ell": 3,
+      "denominator_degree": 0,
+      "global_w_power": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "5b59e95702a941b0d6a36f822bf0e2a3641973e1b7219a46c7a3a4741bc5d193"
+    },
+    {
+      "pattern": 1,
+      "modes": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 3,
+      "ell": -2,
+      "denominator_degree": 0,
+      "global_w_power": 2,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "986df6a7ec6135ffc650ed383d71c3151761158ede7b4e9a8f85a9273e165eb1"
+    },
+    {
+      "pattern": 1,
+      "modes": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 3,
+      "ell": 0,
+      "denominator_degree": 0,
+      "global_w_power": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "b21c6d50d3d480f8093c712f1ba1d6ac0f40d838972b8ddbc3fbdbb88bdec15f"
+    },
+    {
+      "pattern": 1,
+      "modes": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 3,
+      "ell": 3,
+      "denominator_degree": 0,
+      "global_w_power": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "42323992ca00366c74b85d6a5ef48888139dbbad1ebf157a96e28fa30ec607f5"
+    },
+    {
+      "pattern": 2,
+      "modes": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 1,
+      "ell": -2,
+      "denominator_degree": 0,
+      "global_w_power": 2,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "fd72b222b8f0364b63692a41af0c93f90a490beb17017b6e191495d1f136e181"
+    },
+    {
+      "pattern": 2,
+      "modes": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 1,
+      "ell": 0,
+      "denominator_degree": 0,
+      "global_w_power": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "5e92c7331198b5fb695388257793b2c527ee0f5a3ce6111d9801228e54559650"
+    },
+    {
+      "pattern": 2,
+      "modes": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 1,
+      "ell": 3,
+      "denominator_degree": 0,
+      "global_w_power": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "facb06ad1432ccf9ae274645369397202b91ed20c9a4095068f3f2953b4d822a"
+    },
+    {
+      "pattern": 2,
+      "modes": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 2,
+      "ell": -2,
+      "denominator_degree": 0,
+      "global_w_power": 2,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "bd8479b3084ac5858abf0878c7c11a6d13920c1b62b72f5609077fb7ddde2603"
+    },
+    {
+      "pattern": 2,
+      "modes": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 2,
+      "ell": 0,
+      "denominator_degree": 0,
+      "global_w_power": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "a0e58197c9050d5ba96bc1805c83b553bbb648ac221616199330a7473d8d7597"
+    },
+    {
+      "pattern": 2,
+      "modes": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 2,
+      "ell": 3,
+      "denominator_degree": 0,
+      "global_w_power": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "f270cb1cb8087234823ae51f5ef57628da6ea9cb8651f2a5b55d49d657df805a"
+    },
+    {
+      "pattern": 2,
+      "modes": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 3,
+      "ell": -2,
+      "denominator_degree": 0,
+      "global_w_power": 2,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "73a65d599bc55e26b633d23023a411db5871c1a8d2de549c7c0179d96f2b88fb"
+    },
+    {
+      "pattern": 2,
+      "modes": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 3,
+      "ell": 0,
+      "denominator_degree": 0,
+      "global_w_power": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "80ac8c6b15de1782177c2111b984a487327622e1119c032235bd175de8265f95"
+    },
+    {
+      "pattern": 2,
+      "modes": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 3,
+      "ell": 3,
+      "denominator_degree": 0,
+      "global_w_power": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "ebf29d618bdfedb1f9b386d3e9a57df33751dee589c2f564564ff84383b1a306"
+    },
+    {
+      "pattern": 3,
+      "modes": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 1,
+      "ell": -2,
+      "denominator_degree": 0,
+      "global_w_power": 2,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "32c7971100abf175f0172445acc1e56269a7a2f1b46e0f0d4682ee78e368db09"
+    },
+    {
+      "pattern": 3,
+      "modes": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 1,
+      "ell": 0,
+      "denominator_degree": 0,
+      "global_w_power": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "d3d49513986a4c41984caf7a8569ce59c48fc1f9a1cb1a24e8dcf93053dd60b0"
+    },
+    {
+      "pattern": 3,
+      "modes": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 1,
+      "ell": 3,
+      "denominator_degree": 0,
+      "global_w_power": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "7b4898ce03cbafb50565d810de1b650161f3f14b0d7e601af009a491f2f5102f"
+    },
+    {
+      "pattern": 3,
+      "modes": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 2,
+      "ell": -2,
+      "denominator_degree": 0,
+      "global_w_power": 2,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "6545518caf91e3c702db2885db4457503a05926a24559a3952ea8840a73c8a4e"
+    },
+    {
+      "pattern": 3,
+      "modes": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 2,
+      "ell": 0,
+      "denominator_degree": 0,
+      "global_w_power": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "ee922803fc22bcc49cd5ee9ea744ee33039f0b35302e8f2d8306863f166efee4"
+    },
+    {
+      "pattern": 3,
+      "modes": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 2,
+      "ell": 3,
+      "denominator_degree": 0,
+      "global_w_power": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "e6aa27e23c822e741e97565efa56351cac690f46fcedfe3d7b6b01c76346921b"
+    },
+    {
+      "pattern": 3,
+      "modes": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 3,
+      "ell": -2,
+      "denominator_degree": 0,
+      "global_w_power": 2,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "1ff1e1fb3ac483ba628530496f66c176735acfe3a5481f06aa16f6879ea55083"
+    },
+    {
+      "pattern": 3,
+      "modes": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 3,
+      "ell": 0,
+      "denominator_degree": 0,
+      "global_w_power": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "b03fdaaa75bd75b81f8d0d0f3e2db59aecf3d991c95cbe212c1698ffa8970055"
+    },
+    {
+      "pattern": 3,
+      "modes": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 3,
+      "ell": 3,
+      "denominator_degree": 0,
+      "global_w_power": 0,
+      "ramified_endpoint_checks": 144,
+      "two_copy_type_checks": 420,
+      "coefficient_sha256": "e9a011ab30f8f56e5edd629452b452f3cd31db3d3704171e4ef878c25cebec44"
+    }
+  ],
+  "mixed_extra_cases": [
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        1,
+        2
+      ],
+      "ambient": 4,
+      "alpha": 1,
+      "beta": 2,
+      "delta": 3,
+      "dimensions": [
+        8,
+        6,
+        6,
+        8
+      ],
+      "q_x": 8,
+      "q_u": 6,
+      "bulk_size": 2,
+      "repair_kind": "mixed_partial_extra_quartics",
+      "degree": 27,
+      "denominator_degree": 1,
+      "cancelled_c_order": 1,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent common X/V and U/Y full-letter types",
+      "logical_heights_x_v": [
+        0,
+        1,
+        0,
+        1,
+        2,
+        3,
+        2,
+        3
+      ],
+      "logical_heights_u_y": [
+        0,
+        1,
+        0,
+        1,
+        2,
+        3
+      ],
+      "ramified_endpoint_matrix": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "ramified_endpoint_checks": 2304,
+      "two_copy_type_checks": 7920,
+      "independent_exterior_checks": 0,
+      "nonzero_entries": 755,
+      "coefficient_sha256": "0355339e0114c21c501cfb22649ba52db766f53933d58f1ac93141c143e1f9d4",
+      "extra_quartics": [
+        [
+          0,
+          2,
+          0,
+          0,
+          [
+            [
+              1,
+              -2
+            ]
+          ],
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          2,
+          [
+            [
+              2,
+              -1
+            ]
+          ],
+          0
+        ],
+        [
+          2,
+          2,
+          0,
+          2,
+          [
+            [
+              3,
+              0
+            ]
+          ],
+          0
+        ],
+        [
+          0,
+          2,
+          2,
+          2,
+          [
+            [
+              1,
+              1
+            ]
+          ],
+          0
+        ]
+      ],
+      "global_w_power": 2,
+      "uncancelled_denominator_degree": 2
+    },
+    {
+      "field": 4,
+      "field_polynomial": "omega^2+omega+1",
+      "indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "ambient": 4,
+      "alpha": 1,
+      "beta": 2,
+      "delta": 3,
+      "dimensions": [
+        16,
+        12,
+        12,
+        16
+      ],
+      "q_x": 16,
+      "q_u": 12,
+      "bulk_size": 4,
+      "repair_kind": "mixed_partial_extra_quartics",
+      "degree": 35,
+      "denominator_degree": 1,
+      "cancelled_c_order": 1,
+      "strict_endpoint": false,
+      "typed_endpoint": "independent common X/V and U/Y full-letter types",
+      "logical_heights_x_v": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        1,
+        2,
+        3,
+        3,
+        4,
+        5,
+        6,
+        3,
+        4,
+        5,
+        6
+      ],
+      "logical_heights_u_y": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        1,
+        2,
+        3,
+        3,
+        4,
+        5,
+        6
+      ],
+      "ramified_endpoint_matrix": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "ramified_endpoint_checks": 36864,
+      "two_copy_type_checks": 136896,
+      "independent_exterior_checks": 0,
+      "nonzero_entries": 9246,
+      "coefficient_sha256": "a2b2baa0ab92651e66f654552c301ad05011355249f7d6368397b7f93c905bc4",
+      "extra_quartics": [
+        [
+          0,
+          3,
+          0,
+          0,
+          [
+            [
+              1,
+              -2
+            ]
+          ],
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          3,
+          [
+            [
+              2,
+              -1
+            ]
+          ],
+          0
+        ],
+        [
+          3,
+          3,
+          0,
+          3,
+          [
+            [
+              3,
+              0
+            ]
+          ],
+          0
+        ],
+        [
+          0,
+          3,
+          3,
+          3,
+          [
+            [
+              1,
+              1
+            ]
+          ],
+          0
+        ]
+      ],
+      "global_w_power": 2,
+      "uncancelled_denominator_degree": 2
+    }
+  ],
+  "marginal_endpoint_rejected": true
+}

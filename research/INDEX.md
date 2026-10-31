@@ -14,6 +14,39 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Mixed-field rectangular repair](rectangular-f4-repair.md): an explicit two-parameter height-triangular correction over every characteristic-two field, a uniform simple-pole bound, and four exact mixed-F4 constructors.
+- [Full-alphabet quartic repair](full-alphabet-quartic-repair.md): a rank-four projector identifies every invertible coefficient, a sparse correction retains all four states on both pairs, and fixed-size profiles support 23 or 29 parameters.
+- [Bounded rectangular defect blocks](rectangular-defect-factorization.md): full-interval repairs reduce to seven and nine active fermion modes at the stated Gaussian gauges, with structurally proved generic ranks and exact rational support checks.
+- [All four extreme cores](rectangular-full-core-factorization.md): ten active modes at both places give fixed 768-order blocks and 25 continuous search parameters, with exact regular-basis and full-matrix controls.
+- [Coupled core transports](rectangular-core-transports.md): arbitrary invertible constant core changes preserve a certified endpoint through an exact matrix identity; cached coordinate updates and two-base scalar interpolation avoid rebuilding the Fock program.
+- [Critical rectangular pressure](rectangular-critical-pressure.md): a target-sign discriminator, explicit Gaussian control, frozen-boundary limit, and reproducible starts that activate the extreme core states.
+- [Bivariate core limits](bivariate-core-pressure-limit.md): eventual affine Smith orders for fixed rational two-variable matrices and a finite limiting pressure problem; four-size profile fits remain separate from an exported symbolic certificate.
+- [Exact leading-face LP certificates](rectangular-leading-face-lp.md): unbounded rational primal/dual certificates isolate the all-low face in fitted 19- and 25-parameter models; uniform entry bounds remain a separate obligation.
+- [Uniform entry and ray obstruction](rectangular-uniform-ray-obstruction.md): 28 symbolic coefficient witnesses replace the fitted entry bounds and support exact dual certificates for the baseline family.
+- [Moving balanced-gauge obstruction](rectangular-balanced-gauge-obstruction.md): every balanced gauge vector has positive critical pressure eventually when M log s exceeds c log M with c greater than 1/sqrt(2), uniformly over unbounded weights and scales.
+- [Full-alphabet leading obstruction](full-alphabet-leading-obstruction.md): 34 symbolic witnesses and 22 rational duals extend the moving-gauge theorem to both conjugate full-alphabet partial repairs and all 29 parameters.
+- [All-low Gaussian background](rectangular-low-background.md): a uniform two-cut calculation identifies the preserved conditional tensor with the interval of length M-2, including bulk charges and scalar cancellation.
+- [Polynomial core shears](rectangular-polynomial-shears.md): Laurent core changes equal to the identity at the endpoint permit every height direction, with exact cached updates and original-tensor controls.
+- [Four additional quartics](rectangular-extra-quartics.md): positive-energy extreme monomials preserve the existing repair, with exact Laurent constructors and seven/nine- or ten-mode support.
+- [Core monomials and opposite cubic charges](rectangular-core-monomials.md): arbitrary positive-energy monomials preserve the endpoint, while a uniform full-alphabet obstruction reduces the useful cubic search to opposite-charge pairs.
+- [Critical cubic residual repairs](full-alphabet-monomial-residuals.md): four cubic pairs restore all sixteen states at the singular canonical quartic, with symbolic determinant (1+gamma+ab)^4 and a uniform height-block correction.
+- [Secondary-height repairs](rectangular-refined-repairs.md): 231 individually admissible F4 shears, dense additive flags, and Laurent quartic freedom preserve the all-length crossing and bounded support.
+- [Rectangular convex pressure search](rectangular-convex-pressure.md): paired Gibbs derivatives, attaining-minor separation, generic-rank interfaces, and independent exact and numerical implementation controls.
+- [Cauchy packet polynomial realization](cauchy-packet-realization.md): every degree-at-most-wire-count polynomial integral on the interpolation grid has an explicit affine packet realization, with separate canonical-lift controls.
+- [Canonical alternating packets](canonical-alternating-packet.md): an all-size binary-input family has exact minimum odd-center content `L(1+log_2 L)-1`, with creation precision one.
+- [Canonical packet upper bounds](canonical-packet-upper-frontier.md): exact exhaustive four-wire visibility, adaptive positive endpoint bounds, and an all-size limitation of low-order endpoint jets.
+- [Finite canonical decoder thresholds](canonical-packet-decoder-frontier.md): exact parity and full-count separation for two and four wires, with an all-size binary full-count collision.
+- [Full Boolean Cauchy operator](boolean-cauchy-smith-profile.md): an all-size binomial Smith profile, a one-bit inverse at the nearest centers, uniform implicit inverse entries, and an exact grouping cost for direct insertion.
+- [Grouped Cauchy inverse profile](grouped-cauchy-inverse-profile.md): a weighted Boolean substitution lemma and graded elimination give the exact grouped Smith orders and normalization cost of the direct inverse.
+- [Walsh twirling and Cauchy permanents](walsh-principal-permanents.md): exact discrepancy valuations, a power-of-two factorial law for even-spacing Cauchy permanents, and source-oriented grouped-profile bounds separate scalar recovery from full-operator contraction.
+- [Eight-wire polynomial lattice](eight-wire-cauchy-lattice.md): an exact finite module certificate realizes every integral degree-at-most-120 polynomial and three full wire-scale tapered examples, with canonical precision still separate.
+- [Dyadic affine mode reduction](one-species-dyadic-affine-reduction.md): appending common trailing binary ones gives exactly the smaller typed one-species tensor after ramification, including independent-gauge transport.
+- [Pascal complement convolution](pascal-complement-convolution.md): characteristic-independent complement-order inequalities and a field-free pressure envelope for arbitrary mode sets.
+- [All-field Pascal crossings](all-field-pascal-crossings.md): signed global Gaussian endpoints and Pascal-complement profiles over every field, including independent matching types.
+- [Graded even tensor powers](graded-even-power-transfer.md): both cut profiles tensorize with explicit signs, admitting non-Gaussian endpoint-vanishing perturbations in odd characteristic.
+- [Truncated symmetric Pascal crossings](truncated-symmetric-pascal-crossings.md): p-state modes in characteristic p give ordinary tensor powers, exact digit-sum spectra, and arbitrary-degree endpoint-vanishing perturbations.
+- [Fixed-prime recovery source audit](fixed-prime-transfer-source-audit.md): pinned scalar factoring recovery, direct primary-source network accounting, and a byte-identical finite replay of the external dependency.
+
 - [31 October constructive frontier checkpoint](constructive-frontier-checkpoint.md): exact finite bounds, proved construction families, reproducible floating starts, and the remaining threshold obligation after a three-hour research session.
 - [Complete Schur queries](schur-fermion-queries.md): division-free small determinant formulas for modes and complete crossing coefficients; polynomial query cost with exact independent checks, but no new rank bound.
 - [Schur hook residues and central ranks](schur-hook-residue-central.md): all-weight hook identities give rank at most `p(2h)-3`, attained at weights 8 and 16 by complete exact computations.
@@ -26,6 +59,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Certified three-mode pressure improvement](three-mode-pressure-improvement.md): asymmetric species occupations give the exact bound `rho < 741/1000`, with all-minor replay and outward integer interval arithmetic; the post-half target remains open.
 - [One-species interval spectra](schur-one-species-interval.md): exact odd orders, rational certificates through 63 modes, and an analytic description of approach to the half-rate threshold from above in the displayed gauges.
 - [Quantitative interval frontier](quantitative-interval-frontier.md): exact certificates through 16,383 modes and a sharp all-parity asymptotic for the gap above the half-rate threshold, with bounded-mantissa integer arithmetic.
+- [Accelerated exact interval certificates](accelerated-interval-certificates.md): a positive Euler-series remainder removes the scan through modes and certifies an interval of 2^209-1 modes, with a rational upper bound less than 5e-123 above the unchanged threshold.
 - [Greedy Pascal complements](schur-pascal-complement.md): an exact binary-linear-algebra formula for the infinity spectrum of every finite mode set, with a traversal that skips large index gaps and an all-length interval corollary.
 - [Constant-flag crossings](constant-flag-crossings.md): polynomial Gaussian crossings from two arbitrary constant flags and a unitriangular endpoint; an exact four-mode, fixed-gauge screen covers all 4,096 lower flags over the four-element field.
 - [Positive-energy perturbations](positive-energy-quartic-endpoints.md): an index-sum criterion for valid nonvanishing endpoint changes and rational local coefficients whose poles cancel after every fixed-type projection.
@@ -69,6 +103,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Obstructions and work beyond 1/2
 
+- [Prime-power vacuum locality](prime-power-vacuum-locality.md): Artin--Hasse transcendence excludes the stated scalar finite-locality replacement, with independent finite coefficient controls and no factoring lower-bound claim.
 - [One-sided charge pruning](one-sided-charge-pruning.md): common-type restriction removes every strictly one-directional charge perturbation; both-cut Smith majorization gives a matching untyped obstruction.
 - [Typed Gaussian generic blocks](typed-gaussian-generic-blocks.md): arbitrary coefficient recombinations have cost `Omega(D^2)` at fixed nonvacuum occupations, with exact finite controls and a separate growing-density bound.
 - [Exact typed charge-block compression](typed-gaussian-charge-blocks.md): polynomially many orbit blocks compute every coefficient-combination rank, including complete binary searches through 1,260 physical labels and independent dense controls.

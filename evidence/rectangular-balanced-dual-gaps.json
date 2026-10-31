@@ -1,0 +1,76 @@
+{
+  "status": "Exact dual and Gaussian constants support the uniform balanced-gauge theorem.",
+  "scope": "The baseline mixed rectangular partial repair; tau >= c log M with c > 1/sqrt(2).",
+  "leading_C_lower_bounds": [
+    [
+      "2",
+      "2",
+      "4"
+    ],
+    [
+      "2",
+      "0",
+      "4"
+    ],
+    [
+      "4",
+      "4",
+      "8"
+    ],
+    [
+      "4",
+      "2",
+      "4"
+    ]
+  ],
+  "off_face_gap_certificates": [
+    {
+      "letter": "X",
+      "state": 0,
+      "constant_gap": "2",
+      "off_face_C_multiplier": "-1",
+      "entry_dual_mass": "2"
+    },
+    {
+      "letter": "X",
+      "state": 2,
+      "constant_gap": "4",
+      "off_face_C_multiplier": "-1",
+      "entry_dual_mass": "2"
+    },
+    {
+      "letter": "X",
+      "state": 3,
+      "constant_gap": "2",
+      "off_face_C_multiplier": "-1",
+      "entry_dual_mass": "2"
+    },
+    {
+      "letter": "Y",
+      "state": 0,
+      "constant_gap": "2",
+      "off_face_C_multiplier": "-1",
+      "entry_dual_mass": "2"
+    },
+    {
+      "letter": "Y",
+      "state": 2,
+      "constant_gap": "4",
+      "off_face_C_multiplier": "-1",
+      "entry_dual_mass": "2"
+    }
+  ],
+  "active_Gaussian_factors": 20,
+  "sum_negative_Gaussian_orders": "-4M",
+  "physical_core_cardinalities": [
+    4,
+    3
+  ],
+  "coarse_pressure_constant": "K0 = 20 log 2 + sqrt(2) log 12",
+  "entry_offset_constant": "Any B >= 0 satisfying all 28 eventual bounds v(entry) <= a M + B.",
+  "coarse_pressure_bound": "F >= T - (2B+8) ell - K0",
+  "nonpositive_pressure_gap_bound": "gap >= 2 tau - K0 - (2B+12) ell",
+  "model_sha256": "e6a80fde629eec1641f55d178bb9533857f3b62502b3f49133ead18cbdd25eb5",
+  "witness_sha256": "94d41464e16f9421eef67f3da09c6ac94b64ac3375e27c6b77670f19e289a423",
+  "checker_sha256": "e29d971ca800d656108f95fc4061a1b0fafb7b78fedf713b8b63a347924ffe04"
+}
