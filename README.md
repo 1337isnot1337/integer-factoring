@@ -138,6 +138,13 @@ path with those initial vacua. Run `make verify-matrix-vacuum`; the note
 also gives the optional complete NumPy catalogue. A larger internal space
 with fewer physical ladder powers remains outside the square-basis proof.
 
+The [Steiner construction](research/steiner-cubic-crossings.md) factors the
+swap into three controlled involutions and gives a determinant-one cubic
+crossing for every Steiner quasigroup. Its complete bare Smith profiles
+are independent of the design and force `rho>=3/4` at every size. This
+closes the cubic bare-profile search while leaving physical types and
+coefficient recombinations open. Run `make verify-steiner-cubic`.
+
 The [fixed-type capacity argument](research/fixed-type-smith-capacity.md)
 makes physical gauge optimization convex once the two paired types are
 fixed. Entropy-weighted minor flags give global affine supports and an

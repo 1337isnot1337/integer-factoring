@@ -37,6 +37,10 @@ verify-quantum-pascal:
 verify-matrix-vacuum:
 	python3 tools/check_matrix_vacuum_barrier.py
 
+.PHONY: verify-steiner-cubic
+verify-steiner-cubic:
+	python3 tools/check_steiner_cubic_crossings.py
+
 .PHONY: verify-smith-capacity
 verify-smith-capacity:
 	python3 tools/check_smith_pressure_convexity.py
