@@ -33,6 +33,9 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Carry Fourier elimination](carry-fourier-elimination.md): constant-state fixed-frequency queries, exact frequency-labelled interface ranks, and an explicit reduction of the coupled problem to incomplete bilinear character sums.
 - [Asymmetric supporting-line pressure](asymmetric-support-line-crossings.md): coefficient cancellation with unequal cut weights, common paired types, exact integer-power certificates, and the optimal rectangular aspect ratio.
 - [Complete asymmetric modular transfer](asymmetric-modular-transfer.md): an effective all-width weighted rank bound gives a uniform unequal-child recursion and deterministic factoring machine, with explicit grouping, padding, circuit and ring costs; the needed strict crossing certificate remains open.
+- [Weighted adaptive local-gauge catalogues](weighted-adaptive-gauge-catalogues.md): exact ramified coefficient bounds, monotone per-jet gauge choices, and complete common-type opposite-flag reconstructions.
+- [Completed ternary physical-basis search](ternary-physical-basis-search.md): 316 bases and 2,528 completed optimizations retain the known exact-family candidate; both stage winners independently replay and no global optimum is claimed.
+- [Completed fused gauge search and basis controls](fused-weighted-search-checkpoint.md): 1,294 completed trials retain full-cost candidates on three through six letters, with exact rational profile replays and a separately checked physical-basis oracle.
 
 - [Joint residues reduce to finite templates and convex offsets](joint-syndrome-residue-retiming.md): at fixed normalized degree, arbitrary coefficient fields and ramification reduce exactly to finitely many binary endpoint covers and compact convex offset programs; a transport certificate bounds the entire offset box, with exact color and Hall controls.
 

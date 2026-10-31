@@ -98,6 +98,15 @@ It includes unequal child sizes, grouping, exact padding, circuit costs,
 and fixed-field divisor recovery. No seed meeting that hypothesis has
 been certified.
 
+[Weighted adaptive gauge catalogues](research/weighted-adaptive-gauge-catalogues.md)
+can choose a different rank-bound gauge for each jet while keeping one
+physical tensor and one pair of types. Their exact coefficient formula
+improves some finite jet bounds, with complete typed reconstructions.
+The completed [ternary basis search](research/ternary-physical-basis-search.md)
+and [fused gauge search](research/fused-weighted-search-checkpoint.md)
+retain every trial outcome and independently replay their winners.
+Neither completed search found a post-half crossing.
+
 ## Verification
 
 From the repository root, run:
@@ -118,6 +127,8 @@ make verify-compressed-fusion # Compressed/literal identities and root-of-unity 
 make verify-explicit-fusion # All-degree row identities and complete-block spectator theorem
 make verify-carry-fourier  # Exact carry elimination and frequency-labelled rank controls
 make verify-asymmetric-crossings # Supporting-line algebra and numerical-oracle controls
+make verify-weighted-adaptive # Exact local-gauge catalogues and typed reconstructions
+make verify-basis-searches # Completed ternary/fused winner replays and basis-oracle controls
 make verify-schur-fermion # Complete Schur entry formulas and exact comparisons
 make verify-schur-central # Hook-residue identities and full Schur ranks through weight 8
 make verify-schur-gaussian # Exact digit reduction and fixed Gaussian crossing seed

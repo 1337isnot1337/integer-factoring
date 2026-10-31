@@ -708,6 +708,15 @@ verify-joint-residue-retiming:
 
 .PHONY: verify-explicit-fusion verify-carry-fourier
 .PHONY: verify-asymmetric-crossings
+.PHONY: verify-weighted-adaptive verify-basis-searches
+verify-weighted-adaptive:
+	python3 tools/check_weighted_adaptive_catalogues.py --output /tmp/integer-factoring-weighted-adaptive-replay.json
+
+verify-basis-searches:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_ternary_basis_search.py --output /tmp/integer-factoring-ternary-basis-replay.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_fused_weighted_winners.py evidence/fused-mixed-weighted-summary.json --output /tmp/integer-factoring-fused-winners-replay.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_fused_physical_bases.py --output /tmp/integer-factoring-fused-bases-replay.json
+
 verify-asymmetric-crossings:
 	python3 tools/check_asymmetric_support_line.py --output /tmp/integer-factoring-asymmetric-support-replay.json
 	OPENBLAS_NUM_THREADS=1 python3 tools/check_asymmetric_pressure_oracle.py --output /tmp/integer-factoring-asymmetric-oracle-replay.json
