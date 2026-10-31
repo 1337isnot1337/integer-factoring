@@ -9,7 +9,7 @@ from pathlib import Path
 import random
 
 from check_rectangular_f4_repair import (
-    ZERO, add, multiply, binary_power, divide_binary, evaluate_one,
+    ZERO, add, multiply, binary_power, divide_binary, evaluate_one, fmul, scale,
     ramify_binary, full_inverse_repair, residual, build,
 )
 from rectangular_frozen_core_rows import row_components, combine_row
@@ -87,6 +87,31 @@ def cubic_control():
             'conclusion': 'outside the scalar times product(1+l_i*z_i) product(1+q_ij*z_i*z_j) model'}
 
 
+def parameter_orbit_controls():
+    rng = random.Random(310829)
+    checks = 0
+    for indices, ambient in (((0, 1, 2), 4), ((0, 1, 2, 3), 4), ((0, 2, 5), 8)):
+        data = {beta: row_components(indices, ambient, beta) for beta in (1, 2, 3)}
+        bulk = data[1]['bulk_size']
+        for gamma in (2, 3):
+            powers = (1, gamma, fmul(gamma, gamma))
+            for _ in range(3):
+                g = [rng.randrange(4) for _ in range(12)]
+                g[10] = 1 ^ g[0]
+                changed = [fmul(c, powers[(2-(1, 0, 1, 2)[r % 4]-(1, 0, 1)[r//4]) % 3])
+                           for r, c in enumerate(g)]
+                actual = combine_row(data[gamma], g)['values']
+                transformed = combine_row(data[1], changed)['values']
+                for x, y, u, v in product(range(bulk), repeat=4):
+                    position = x+bulk*(y+bulk*(u+bulk*v))
+                    delta = x.bit_count()+u.bit_count()-v.bit_count()-y.bit_count()
+                    assert actual[position] == scale(transformed[position], powers[delta % 3])
+                    checks += 1
+    return {'coefficient_checks': checks, 'nonzero_beta_representative': 1,
+            'row_map': "g'_r=gamma^(2-q_r)*g_r",
+            'external_map': 'gamma^(|x|+|u|-|v|-|y|)'}
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path)
@@ -135,6 +160,7 @@ def main():
               'mode_set_controls': cases,
               'original_tensor_controls': original_tensor_controls(),
               'non_gaussian_control': cubic_control(),
+              'parameter_orbit_controls': parameter_orbit_controls(),
               'incorrect_endpoint_rejected': rejected,
               'scope': 'construction and endpoint proof only; no pressure or factoring-exponent improvement'}
     rendered = json.dumps(result, indent=2)+'\n'

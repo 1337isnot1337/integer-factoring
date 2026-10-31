@@ -154,6 +154,34 @@ The polynomial degree is finite for every fixed seed. The standard
 coefficient count and the paired-type rank-cost transfer therefore
 apply. Profiles must be computed for the actual tensor `L_g`.
 
+### Two output-parameter orbits
+
+All nonzero values of `beta` give equivalent free-row families. This
+reduces a search to `beta=0` and `beta=1`.
+
+To see this, let `beta'=gamma beta` with `gamma` nonzero, and set
+
+\[
+q_r=(1,0,1,2)_{r\bmod4}+(1,0,1)_{\lfloor r/4\rfloor},
+\qquad g'_r=\gamma^{2-q_r}g_r.
+\]
+
+Here `q_r` counts source core occupations before the extra low
+occupation in the mixed `y`-both term. If the bulk occupancy difference
+is `Delta=|x|+|u|-|v|-|y|`, every contributing Gaussian or quartic
+monomial has equally many input and output variables. The exponent of
+`beta` in that source is therefore `Delta+2-q_r`. Term by term,
+
+\[
+L_g(\beta')_{x,y,u,v}
+ =\gamma^{|x|+|u|-|v|-|y|}L_{g'}(\beta)_{x,y,u,v}.
+\]
+
+The factor on the right is a product of nonzero constant diagonal
+maps on the four physical legs, so every weighted Smith profile is
+unchanged. Its total exponent also cancels on every matching paired
+type. Since `q_0=q_10=2`, the transformed row still satisfies (1).
+
 ## 3. Included backgrounds and a non-Gaussian member
 
 The row `g=e_0` is the existing all-low Gaussian background. A quartic
@@ -247,8 +275,9 @@ the residual column for all sixteen parameter pairs, every source
 component's regular ramified endpoint, independent two-copy types for
 dense rows, and coefficient equality with separately constructed
 partial and inverse seeds. It includes a gapped mode set and ambient
-parameters larger than the maximum mode. It also checks (12) and
-rejects a row with zero endpoint.
+parameters larger than the maximum mode. It checks the nonzero-parameter
+orbit identity coefficient by coefficient, checks (12), and rejects a
+row with zero endpoint.
 
 The finite controls support the ordinary proofs in Sections 1 and 2;
 they do not replace those proofs. Initial floating searches have not

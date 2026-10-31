@@ -123,6 +123,12 @@ Its endpoint condition is exactly `g_0 + g_10 = 1`. The family contains both
 the Gaussian background and a full-inverse restriction with an exact
 non-Gaussian coefficient witness. This changes the background excluded by
 the fixed-repair obstruction, while a useful pressure remains to be found.
+The [compact frozen-row compiler](research/frozen-core-row-profiles.md)
+reduces both cuts to matrices of order at most 64, independent of interval
+length, and normalizes the nonzero output parameters to one orbit.
+Its complete-polynomial cancellation search records 24,528 profile queries
+through interval length 64. The Gaussian row was best in those finite
+searches; arbitrary gauges and affine rows remain open.
 
 A [strict Pascal repair](research/strict-gaussian-relabeling-crossings.md)
 preserves the inherited Gaussian profiles and makes the local endpoint an

@@ -231,6 +231,12 @@
     ],
     "conclusion": "outside the scalar times product(1+l_i*z_i) product(1+q_ij*z_i*z_j) model"
   },
+  "parameter_orbit_controls": {
+    "coefficient_checks": 1728,
+    "nonzero_beta_representative": 1,
+    "row_map": "g'_r=gamma^(2-q_r)*g_r",
+    "external_map": "gamma^(|x|+|u|-|v|-|y|)"
+  },
   "incorrect_endpoint_rejected": true,
   "scope": "construction and endpoint proof only; no pressure or factoring-exponent improvement"
 }
