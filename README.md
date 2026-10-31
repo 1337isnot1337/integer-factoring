@@ -145,6 +145,12 @@ The [uniform physical-matrix criterion](research/uniform-reflection-jet-criterio
 decides every pole up to half the reflection interval from low coefficients
 of a `q` by `q` matrix. Its proof works at every interval, and an exact
 256-letter control constructs those matrices without a full four-leg tensor.
+A [common invariant half of the physical alphabet](research/triangular-reflection-jet-families.md)
+turns the pole equations into a joint linear system for independent Laurent
+coefficients. At sixteen letters, pole orders one through four allow
+192 independent field parameters. The complete series constructor is checked
+against independent coefficient calculations and finite-field evaluations;
+the four-letter family has 65,536 coefficient choices to search.
 The [completed coordinate and dense searches](research/reflection-coupled-search-checkpoint.md)
 retain all outcomes and independently replay their winners. A separate
 exact affine combination changes the cut determinant and creates two
@@ -186,6 +192,7 @@ make verify-ternary-majorization # Sharp uniform-type gauge certificates for two
 make verify-square-zero-frames # All-size first-jet controls and exact pole-two criterion
 make verify-dense-coupled-frames # Complete rank-one catalogue and independent Laurent replay
 make verify-uniform-reflection-jets # All-size physical-jet criterion, including 256 letters
+make verify-triangular-series # Uniform linear families and complete Laurent-series controls
 make verify-coupled-searches # Completed search replays and exact affine determinant change
 make verify-schur-fermion # Complete Schur entry formulas and exact comparisons
 make verify-schur-central # Hook-residue identities and full Schur ranks through weight 8

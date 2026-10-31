@@ -715,6 +715,11 @@ verify-joint-residue-retiming:
 .PHONY: verify-square-zero-frames verify-dense-coupled-frames
 .PHONY: verify-constant-carry-weights
 .PHONY: verify-uniform-reflection-jets verify-coupled-searches
+.PHONY: verify-triangular-series
+verify-triangular-series:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_triangular_reflection_jet_families.py --output /tmp/integer-factoring-triangular-jets-replay.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_laurent_series_coupled_frames.py --output /tmp/integer-factoring-laurent-series-replay.json
+
 verify-uniform-reflection-jets:
 	OPENBLAS_NUM_THREADS=1 python3 tools/check_reflection_low_jet_frames.py --include-interval16 --output /tmp/integer-factoring-uniform-reflection-jets-replay.json
 
