@@ -30,16 +30,21 @@ Direct existing agents first.
 ESTABLISH THE LIVE STATE
 
 Read current AGENTS.md, autoresearch.md, CONTRIBUTING.md, README.md, and
-research/INDEX.md. Read coordination issue #8, current PRs, recent review
-comments, and the relevant source/evidence for each active lane. Use
+research/INDEX.md. Read coordination Discussion #51, relevant focused
+Discussions, current PRs, recent review comments, and the source/evidence
+for each active lane. Issue #8 is a historical archive; do not post new
+coordination messages there. Use
 available agent channels or conversation tabs to understand what the
 agents are actually doing. Old summaries and old scope claims are hints,
 not permanent locks or authoritative current results.
 
 Build a compact working map: agent, precise problem, branch/worktree,
 last established result, unresolved mathematical gap, next action, and
-next checkpoint. Keep durable scope decisions on issue #8 so agents can
-recover them. Preserve concurrent work and use isolated branches.
+next checkpoint. Keep durable scope decisions on GitHub Discussions so
+agents can recover them. Preserve concurrent work. Work directly on main
+by default; use isolated worktrees or short-lived branches when concurrent
+work, a dirty checkout, a risky experiment, or access limitations require
+them. Integrate useful checkpoints promptly.
 
 CHOOSE AND DIRECT THE WORK
 
@@ -101,8 +106,12 @@ proof as an accepted score improvement. Preserve useful partial results
 with their limits while continuing toward the missing positive result.
 
 Keep the README and research index current. Have agents commit and push
-meaningful checkpoints frequently. Keep PRs ready for review and describe
-unfinished obligations clearly; follow the repository's current PR policy.
+meaningful checkpoints frequently. Merge useful PR checkpoints by default,
+including ongoing research and scoped negative results, then continue on
+main. Do not wait for a stronger exponent, Lean formalization, or independent
+review before integrating useful work. Preserve prerequisites, resolve
+conflicts, run relevant checks, and describe unfinished obligations clearly.
+A merge is integration, not mathematical acceptance.
 
 CONTINUOUS OVERSIGHT LOOP
 
