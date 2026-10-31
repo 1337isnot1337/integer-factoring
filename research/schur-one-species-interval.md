@@ -141,8 +141,8 @@ has order list
 Put \(t=\xi^2\), and in this section redefine
 
 ~~~math
-D=\operatorname{diag}(t^a),\qquad
-Q=\operatorname{diag}((1+t)^a),\qquad
+D=\mathrm{diag}(t^a),\qquad
+Q=\mathrm{diag}((1+t)^a),\qquad
 O_{ab}=t^{a\mathbin{|}b}.
 ~~~
 
@@ -171,7 +171,7 @@ S=DP+(1+t)QP^{\mathsf T}O.                              \tag{11}
 
 Every entry in row \(a\) of \(O\) is divisible by \(t^a\).
 Thus a regular column operation clears the upper-right block, giving
-\(\operatorname{diag}(D,S)\).
+\(\mathrm{diag}(D,S)\).
 
 ### Full interval: \(n=M\)
 
@@ -207,7 +207,7 @@ The truncated inclusion matrix satisfies \(P^2=I\) and
 parenthesis on the right by \(P\) gives
 
 ~~~math
-L=\operatorname{diag}(t,t^2,\ldots,t^n)
+L=\mathrm{diag}(t,t^2,\ldots,t^n)
   +u\mathbf1^{\mathsf T},\qquad u_a=(1+t)^{a+1}.         \tag{15}
 ~~~
 

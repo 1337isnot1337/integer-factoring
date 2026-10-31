@@ -89,7 +89,7 @@ permutation, with one nonzero entry for each of the
 \(3^{2t-1}\) pairs satisfying \(\sum_i(x_i-y_i)=0\). Hence
 
 \[
-\operatorname{rank}R([z^0]G_t)=3^{2t-1}.                   \tag{6}
+\mathrm{rank}R([z^0]G_t)=3^{2t-1}.                   \tag{6}
 \]
 
 ## 3. The column cut has the same exact rank
@@ -115,7 +115,7 @@ the entire path and \((x,u)\). The column matrix is another partial
 permutation, with \(3^{2t-1}\) nonzero rows. Thus
 
 \[
-\operatorname{rank}C([z^0]G_t)=3^{2t-1}.                   \tag{8}
+\mathrm{rank}C([z^0]G_t)=3^{2t-1}.                   \tag{8}
 \]
 
 These are ranks over \(F_2\), and over every extension, because the matrices

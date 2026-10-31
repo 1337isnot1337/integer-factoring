@@ -25,8 +25,8 @@ be a constant unitriangular matrix. Put \(c=1+w\) and define
 
 \[
 \begin{aligned}
-A(w)&=U\operatorname{diag}(c^{d_i})V,\\
-B(w)&=V^{-1}\operatorname{diag}(c^{2M-d_i})U^{-1}P,\\
+A(w)&=U\mathrm{diag}(c^{d_i})V,\\
+B(w)&=V^{-1}\mathrm{diag}(c^{2M-d_i})U^{-1}P,\\
 \mathcal D(w)&=
 \begin{pmatrix}
 A(w)&w^{2M}P\\
@@ -89,9 +89,9 @@ V=P^{\mathsf T}C^{-1},
 where \(C\) is lower unitriangular. The two polynomial factors are
 
 \[
-A=\operatorname{diag}(c^{2i+1})P^{\mathsf T}C^{-1},
+A=\mathrm{diag}(c^{2i+1})P^{\mathsf T}C^{-1},
 \qquad
-B=C P^{\mathsf T}\operatorname{diag}(c^{2M-2i-1})P.
+B=C P^{\mathsf T}\mathrm{diag}(c^{2M-2i-1})P.
 \tag{4}
 \]
 

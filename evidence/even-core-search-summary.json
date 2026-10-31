@@ -1,0 +1,84 @@
+{
+  "scope": "Exploratory floating searches only; no pressure improvement and no family exclusion. Exact admissibility and Gaussian classifications are separate proved packages.",
+  "searches": {
+    "local_two_output_monomials": {
+      "refined_candidates": 25,
+      "best_rho": 0.8112781249785608,
+      "best_candidate": {
+        "lambda_y_power": 8,
+        "lambda_v_power": 0,
+        "rho": 0.8112781249785608,
+        "orientation": 1,
+        "initial_rho": 0.811278126587019,
+        "calls": 385,
+        "seconds": 2.5819494409952313
+      },
+      "orientation": 1,
+      "solver": "three alternating Gibbs type updates and fixed-type SLSQP stages, each at most 100 iterations",
+      "independent_crossing_pair_types": true,
+      "best_non_gaussian_rho": 1.0056336747679053
+    },
+    "input_bias_monomials": {
+      "refined_candidates": 32,
+      "best_rho": 1.002044530023193,
+      "best_candidate": {
+        "powers_x_y_u_v": [
+          -2,
+          7,
+          0,
+          -1
+        ],
+        "rho": 1.002044530023193,
+        "orientation": 1,
+        "initial_rho": 1.6824823514277967,
+        "calls": 377,
+        "seconds": 76.9497630850019
+      },
+      "orientation": 1,
+      "solver": "three alternating Gibbs type updates and fixed-type SLSQP stages, each at most 100 iterations",
+      "independent_crossing_pair_types": true
+    },
+    "nonzero_f4_constants": {
+      "refined_candidates": 11,
+      "best_rho": 1.0068876872919001,
+      "best_candidate": {
+        "parameters_p_L_r_M": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "rho": 1.0068876872919001,
+        "orientation": 1,
+        "initial_rho": 2.1070136310977134,
+        "calls": 486,
+        "seconds": 1.4846038969990332
+      },
+      "orientation": 1,
+      "solver": "three alternating Gibbs type updates and fixed-type SLSQP stages, each at most 100 iterations",
+      "independent_crossing_pair_types": true
+    },
+    "polynomial_jets": {
+      "refined_candidates": 21,
+      "best_rho": 1.0034375013655075,
+      "best_candidate": {
+        "L_polynomial_bits": 271,
+        "M_polynomial_bits": 1,
+        "L_jet": [
+          3,
+          0
+        ],
+        "M_jet": null,
+        "rho": 1.0034375013655075,
+        "orientation": 1,
+        "initial_rho": 1.8719887880594501,
+        "calls": 548,
+        "seconds": 27.913143151999975
+      },
+      "orientation": 1,
+      "solver": "three alternating Gibbs type updates and fixed-type SLSQP stages, each at most 100 iterations",
+      "independent_crossing_pair_types": true,
+      "screened_candidates": 159
+    }
+  }
+}

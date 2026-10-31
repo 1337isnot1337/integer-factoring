@@ -26,7 +26,7 @@ developed with substantial OpenAI assistant support.
 Let \(A(z)\) be an invertible \(n\)-by-\(n\) matrix over
 \(\mathbb F_2(z)\), represented initially by polynomial entries.
 Use either the zero valuation
-\(\nu(f)=\operatorname{ord}_0f\), or the infinity valuation
+\(\nu(f)=\mathrm{ord}_0f\), or the infinity valuation
 \(\nu(f)=-\deg f\) for nonzero polynomials.
 
 For row weights \(r_i\), column weights \(c_j\), and a scale

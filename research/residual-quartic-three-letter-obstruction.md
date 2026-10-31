@@ -51,7 +51,7 @@ Then
  \dim\{LAJ:A\in W\}\ge5. \tag{3}
 \]
 
-**Proof.** Write \(\ker L=Fa\) and \(\operatorname{im}J=\ker b^T\), with
+**Proof.** Write \(\ker L=Fa\) and \(\mathrm{im}J=\ker b^T\), with
 \(a,b\in F^4\setminus\{0\}\). The matrices killed by this compression are
 exactly those of the form
 
@@ -147,8 +147,8 @@ by the lemma. The rank inequality for a product through an eight-dimensional
 space gives
 
 \[
- \operatorname{rank}(A'B')
- \ge\operatorname{rank}(A')+\operatorname{rank}(B')-8
+ \mathrm{rank}(A'B')
+ \ge\mathrm{rank}(A')+\mathrm{rank}(B')-8
  \ge2.
 \]
 
@@ -181,7 +181,7 @@ is singular over every characteristic-two field.
 
 \[
  \mathcal S(V)=\ker(\tau-I),\qquad
- \mathcal A(V)=\operatorname{im}(\tau+I).
+ \mathcal A(V)=\mathrm{im}(\tau+I).
 \]
 
 In characteristic two, \(\mathcal A(V)\subseteq\mathcal S(V)\). For
@@ -198,7 +198,7 @@ The operator \(R\) commutes with \(\tau\). On
  0&1&1&0\\
  0&1&1&0\\
  0&0&0&0
- \end{pmatrix},\qquad \operatorname{rank}N=2. \tag{6}
+ \end{pmatrix},\qquad \mathrm{rank}N=2. \tag{6}
 \]
 
 Tensor-square maps induce entrywise Frobenius maps on these quotients. Thus

@@ -40,14 +40,14 @@ The scalar and free-boundary orders are
 
 \[
 \begin{aligned}
-v_b(w)&=\min_{\mathbf a}\operatorname{ord}_\tau
+v_b(w)&=\min_{\mathbf a}\mathrm{ord}_\tau
                    \bigl(f^TU_w(\mathbf a)e\bigr),\\
-v_*(w)&=\min_{\mathbf a,r,c}\operatorname{ord}_\tau
+v_*(w)&=\min_{\mathbf a,r,c}\mathrm{ord}_\tau
                    \bigl(U_w(\mathbf a)_{r,c}\bigr).
 \end{aligned}                                                     \tag{1}
 \]
 
-Use \(\operatorname{ord}(0)=+\infty\) and \(s^{-\infty}=0\).
+Use \(\mathrm{ord}(0)=+\infty\) and \(s^{-\infty}=0\).
 Define
 
 \[
@@ -66,7 +66,7 @@ Let \(\mathcal S\) be the finite alphabet of all individual matrices
 \(U_i(a)\). First restrict the row representation to
 
 \[
-\mathcal R=\operatorname{span}_K\{f^TU_{\sigma_1}\cdots
+\mathcal R=\mathrm{span}_K\{f^TU_{\sigma_1}\cdots
 U_{\sigma_m}:m\ge0,\ \sigma_j\in\mathcal S\}.
 \]
 
@@ -130,8 +130,8 @@ The \((j,k)\) entry inside parentheses is the scalar output for
 Let
 
 \[
-\eta=\min_{r,c}\operatorname{ord}(R^{-1}_{r,c})
-     +\min_{r,c}\operatorname{ord}(C^{-1}_{r,c}),
+\eta=\min_{r,c}\mathrm{ord}(R^{-1}_{r,c})
+     +\min_{r,c}\mathrm{ord}(C^{-1}_{r,c}),
 \]
 
 where zeros are ignored when taking a minimum. The valuation inequality
@@ -160,8 +160,8 @@ channels. It does not count physical path words as independent terms.
 All shifts on the right lie between zero and \(2d-2\).
 
 In the other direction, if
-\(\alpha=\min_r\operatorname{ord}(f_r)\) and
-\(\gamma=\min_r\operatorname{ord}(e_r)\), then
+\(\alpha=\min_r\mathrm{ord}(f_r)\) and
+\(\gamma=\min_r\mathrm{ord}(e_r)\), then
 
 \[
 v_b(w)\ge\alpha+\gamma+v_*(w),\qquad

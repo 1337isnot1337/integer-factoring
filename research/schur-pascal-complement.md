@@ -31,8 +31,8 @@ order. Work over \(\mathbb F_2[[t]]\), and put
 
 ~~~math
 P_{ab}=\binom ab\bmod2=\mathbf1_{b\subseteq a},\qquad
-D=\operatorname{diag}(t^a),\qquad
-Q=\operatorname{diag}((1+t)^a),\qquad
+D=\mathrm{diag}(t^a),\qquad
+Q=\mathrm{diag}((1+t)^a),\qquad
 O_{ab}=t^{a\mathbin{|}b}.                               \tag{1}
 ~~~
 
@@ -68,7 +68,7 @@ period has row rank \(n\). All indices in \([L,2L)\) are outside \(S\).
 
 ~~~math
 \boxed{\quad
-\operatorname{sort}\bigl(S\cup\{c_1,\ldots,c_n\}\bigr).
+\mathrm{sort}\bigl(S\cup\{c_1,\ldots,c_n\}\bigr).
 \quad}                                                 \tag{3}
 ~~~
 
@@ -79,7 +79,7 @@ The two sets in (3) are disjoint, so every order is distinct.
 The regular elimination from the interval calculation gives
 
 ~~~math
-F_S\ \sim\ \operatorname{diag}(D,K_S),\qquad
+F_S\ \sim\ \mathrm{diag}(D,K_S),\qquad
 K_S=DP+(1+t)QP^{\mathsf T}O.                            \tag{4}
 ~~~
 
@@ -120,7 +120,7 @@ in characteristic two.
 Write (5) as an infinite matrix product
 
 ~~~math
-K_S=U\operatorname{diag}(t^c:c\notin S)V,
+K_S=U\mathrm{diag}(t^c:c\notin S)V,
 \qquad
 U_{a,c}=(1+t)^{a+1}\binom ca,
 \quad

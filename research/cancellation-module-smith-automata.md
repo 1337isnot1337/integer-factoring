@@ -48,7 +48,7 @@ order is zero, and (1) is unchanged. Each remaining matrix family is nonzero.
 Put
 
 \[
-\delta_i=\min_{a,r,s}\operatorname{ord}_\tau(U_i(\tau;a)_{r,s}),
+\delta_i=\min_{a,r,s}\mathrm{ord}_\tau(U_i(\tau;a)_{r,s}),
                                                                   \tag{2}
 \]
 
@@ -57,10 +57,10 @@ ignoring zero entries. This is a finite nonnegative integer.
 For a word \(w=(i_1,\ldots,i_t)\), define
 
 \[
-N_w=\operatorname{span}_{O}
+N_w=\mathrm{span}_{O}
  \{f^TU_{i_1}(a_1)\cdots U_{i_t}(a_t):a_1,\ldots,a_t\},
 \qquad
-v(w)=\min_{x\in N_w}\operatorname{ord}_\tau(xe).                 \tag{3}
+v(w)=\min_{x\in N_w}\mathrm{ord}_\tau(xe).                 \tag{3}
 \]
 
 The zero ideal has infinite order. Taking the module span does not lower
@@ -85,7 +85,7 @@ Initially reduce \(Of^T\) modulo \(\tau^P\); the full lift is
 
 \[
 R_i(M)=\sum_a\widetilde M U_i(a),\qquad
-\gamma_i(M)=\min_{x\in R_i(M)}\operatorname{ord}_\tau x,
+\gamma_i(M)=\min_{x\in R_i(M)}\mathrm{ord}_\tau x,
 \qquad
 T_i(M)=\tau^{-\gamma_i(M)}R_i(M)\bmod\tau^P.                    \tag{4}
 \]
@@ -131,7 +131,7 @@ Let \(G_P(w)\) be the sum of transition increments and \(M_P(w)\) the
 final state. For nonzero terminal vector \(e\), put
 
 \[
-\kappa(M)=\min_{x\in\widetilde M}\operatorname{ord}_\tau(xe),
+\kappa(M)=\min_{x\in\widetilde M}\mathrm{ord}_\tau(xe),
 \qquad m_P(w)=G_P(w)+\kappa(M_P(w)).                            \tag{7}
 \]
 
@@ -151,7 +151,7 @@ preserves containment; replacing a reduction by its full lift only
 enlarges the result. Hence \(m_P(w)\le v(w)\).
 
 An unnormalized version of the update makes two stronger statements
-transparent. If \(R=\sum_a A_P(w)U_i(a)\) and \(g=\operatorname{ord}R\),
+transparent. If \(R=\sum_a A_P(w)U_i(a)\) and \(g=\mathrm{ord}R\),
 then
 
 \[
@@ -194,11 +194,11 @@ Assign auxiliary edge \((r,s)\) of symbol \(i\) the cost
 
 \[
 k_{i,r,s}=\min\!\left(P,\min_a
-             \operatorname{ord}_\tau(U_i(a)_{r,s})\right),     \tag{12}
+             \mathrm{ord}_\tau(U_i(a)_{r,s})\right),     \tag{12}
 \]
 
 with an identically zero entry assigned \(P\). Initialize coordinate
-\(r\) with \(\min(P,\operatorname{ord}f_r)\), assigning \(P\) to a
+\(r\) with \(\min(P,\mathrm{ord}f_r)\), assigning \(P\) to a
 zero coordinate. Update by min-plus multiplication, obtaining an
 unnormalized vector \(c_w\). Use exact coordinate orders of \(e\) for
 the terminal cost and omit its zero coordinates.
@@ -212,7 +212,7 @@ A_P(w)\subseteq\bigoplus_r\tau^{(c_w)_r}O.                    \tag{13}
 It holds initially. Matrix multiplication proves the inclusion for
 the image \(R\). Since all edge costs lie in \([0,P]\), the next
 coordinate costs have spread at most \(P\). Also
-\(g=\operatorname{ord}R\ge\min_r(c_{wi})_r\). Every coordinate of the
+\(g=\mathrm{ord}R\ge\min_r(c_{wi})_r\). Every coordinate of the
 added tail \(\tau^{g+P}O^D\) therefore has at least its required order.
 Equation (9) proves the induction.
 
@@ -322,8 +322,8 @@ The approximate update (9) is monotone under module inclusion and
 homogeneous under multiplication by a scalar power of \(\tau\). Write
 \(A_P(w)=\tau^{G_P(w)}\widetilde M_P(w)\), with
 \(\widetilde M_P(w)\subseteq O^D\). Normalization gives
-\(\operatorname{ord}\widetilde M_P(w)=0\), including the initial full
-module, so \(G_P(w)=\operatorname{ord}A_P(w)\).
+\(\mathrm{ord}\widetilde M_P(w)=0\), including the initial full
+module, so \(G_P(w)=\mathrm{ord}A_P(w)\).
 Continuing with a word \(v\) therefore
 gives a submodule of \(\tau^{G_P(w)} A_P(v)\). Thus
 

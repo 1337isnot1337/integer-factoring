@@ -68,12 +68,12 @@ output coefficients. No extrapolation in \(d\) is used here.
 
 ## 2. Every rank-one map: the exact 786-dimensional space
 
-Let \(\operatorname{Sym}_d(F)\) mean the vector space of symmetric
+Let \(\mathrm{Sym}_d(F)\) mean the vector space of symmetric
 \(d\)-by-\(d\) matrices. Define
 
 \[
-\mathcal S=\operatorname{span}\{T_{A,B}:A,B\in
-\operatorname{Sym}_d(F)\},\qquad
+\mathcal S=\mathrm{span}\{T_{A,B}:A,B\in
+\mathrm{Sym}_d(F)\},\qquad
 T_{A,B}(x,y,v,u)=A_{xu}B_{yv}.                              \tag{3}
 \]
 
@@ -81,7 +81,7 @@ T_{A,B}(x,y,v,u)=A_{xu}B_{yv}.                              \tag{3}
 \(C_0=ab^T\) is
 
 \[
-\boxed{\mathcal W=\mathcal S+\operatorname{span}\{E,D\}.}  \tag{4}
+\boxed{\mathcal W=\mathcal S+\mathrm{span}\{E,D\}.}  \tag{4}
 \]
 
 **Upper inclusion.** The zero mixed parent blocks make the change from the
@@ -99,7 +99,7 @@ right side of (4), since both \(N\) and \(\Delta\) belong to
 \{e_i+e_j:0\le i<j<7\}                                  \tag{5}
 \]
 
-have outer squares forming a basis of \(\operatorname{Sym}_7(F)\).
+have outer squares forming a basis of \(\mathrm{Sym}_7(F)\).
 Indeed, the diagonal squares give \(e_ie_i^T\), and
 
 \[
@@ -125,7 +125,7 @@ the 21 alternating edge matrices. Let \(V\) have their vectorizations as its
 columns. Every \(T\in\mathcal W\) has unique coordinates
 
 \[
-C(T)=\operatorname{diag}_{(i,j)}(g_{ij})+VQV^T,\qquad
+C(T)=\mathrm{diag}_{(i,j)}(g_{ij})+VQV^T,\qquad
 g_{ii}=e,\quad g_{ij}=e+a[i-j=\pm1]\ (i\ne j),              \tag{6}
 \]
 
@@ -140,8 +140,8 @@ diagonal labels and zero elsewhere.
 **Theorem 2.**
 
 \[
-\boxed{\operatorname{rank}C(T)
-=2(21-|Z|)+\operatorname{rank}(Q_{L,L}+eI_{\mathrm{diag}}).} \tag{7}
+\boxed{\mathrm{rank}C(T)
+=2(21-|Z|)+\mathrm{rank}(Q_{L,L}+eI_{\mathrm{diag}}).} \tag{7}
 \]
 
 **Proof.** For each unordered pair choose the ordered basis
@@ -193,8 +193,8 @@ both output legs. Thus every raw coefficient lies in \(\mathcal M\).
 Conversely, (1) gives
 
 \[
-R([q^3]G_{C_0})J=\operatorname{vec}(C_0)
-                         \operatorname{vec}(C_0)^T.         \tag{9}
+R([q^3]G_{C_0})J=\mathrm{vec}(C_0)
+                         \mathrm{vec}(C_0)^T.         \tag{9}
 \]
 
 Take \(C_0\) to be one matrix unit or the sum of two distinct matrix units.

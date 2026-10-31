@@ -88,8 +88,8 @@ First consider a scalar decomposition of the crossing into two tensors:
 
 \[
 E=U+V,\qquad
-\operatorname{rank}_{xy\mid uv}U=r',\quad
-\operatorname{rank}_{xu\mid yv}V=c'.
+\mathrm{rank}_{xy\mid uv}U=r',\quad
+\mathrm{rank}_{xu\mid yv}V=c'.
 \]
 
 Write each tensor as the corresponding sum of rank-one matrices. Fix
@@ -179,7 +179,7 @@ The following small rank fact identifies the exceptional case.
 \(X,Y\) are invertible and \(YX=I\).
 
 **Proof.** Independent changes of basis preserving the swap reduce a
-singular \(X\) to zero or \(\operatorname{diag}(1,0)\). In the latter
+singular \(X\) to zero or \(\mathrm{diag}(1,0)\). In the latter
 case three rows have unavoidable pivots in distinct columns, so the
 rank is at least three. If \(X\) is invertible, left multiplication by
 \(X^{-1}\otimes I\) and right multiplication by \(I\otimes X\) give

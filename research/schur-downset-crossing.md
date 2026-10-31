@@ -58,8 +58,8 @@ by `S`. Define
 ```math
 \begin{aligned}
 P_{a,c}&=\mathbf1_{c\subseteq a},&
-Q&=\operatorname{diag}(q^a),&
-Q_J&=\operatorname{diag}(q^{T-a}),\\
+Q&=\mathrm{diag}(q^a),&
+Q_J&=\mathrm{diag}(q^{T-a}),\\
 G_{a,c}&=z^{a\mathbin{\&}c},&
 H_{a,c}&=z^{T-(a\mathbin{|}c)},&
 Z_{a,c}&=z^{a\mathbin{\&}\neg c}.
@@ -70,7 +70,7 @@ Down-set closure gives the exact identities
 
 ```math
 P^2=I,\qquad G=PQP^T,\qquad
-H=z^T\operatorname{diag}(z^{-a})G\operatorname{diag}(z^{-a}). \tag{4}
+H=z^T\mathrm{diag}(z^{-a})G\mathrm{diag}(z^{-a}). \tag{4}
 ```
 
 For `G`, expand the product over the bits in `a intersection c`.
@@ -189,8 +189,8 @@ Both `G` and `q` are units at zero. Also
 
 ```math
 z^{M-1}H^{-1}
-=\operatorname{diag}(z^a)G^{-1}\operatorname{diag}(z^a)
-\in\operatorname{Mat}_n(\mathbb F_2[[z]]).                  \tag{12}
+=\mathrm{diag}(z^a)G^{-1}\mathrm{diag}(z^a)
+\in\mathrm{Mat}_n(\mathbb F_2[[z]]).                  \tag{12}
 ```
 
 If `nu_1,...,nu_n` are the zero Smith orders of `H`, equations
@@ -213,7 +213,7 @@ Smith profile of `L_infinity` is exactly that of `H`.
 For the Hamming ball
 
 ```math
-S_{b,k}=\{a:\operatorname{popcount}(a)\le k\},\qquad 2k<b,  \tag{15}
+S_{b,k}=\{a:\mathrm{popcount}(a)\le k\},\qquad 2k<b,  \tag{15}
 ```
 
 every entry of `H` vanishes at zero: the union of two allowed masks cannot
@@ -249,7 +249,7 @@ Let `phi_i` be the zero Smith orders of `F`. Since `Z(0)=P^T`, all
 `phi_i` are positive. In particular,
 
 ```math
-0\le\sum_i\phi_i=\operatorname{ord}_0\det F\le n+2A.       \tag{18}
+0\le\sum_i\phi_i=\mathrm{ord}_0\det F\le n+2A.       \tag{18}
 ```
 
 These aggregate identities suffice for the limiting exterior pressures.

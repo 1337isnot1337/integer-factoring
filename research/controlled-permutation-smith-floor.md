@@ -65,7 +65,7 @@ H(w)=\Phi\bigl(U(I-wS)^{-1}\bigr)
 
 Put
 \[
-r=\dim_F\operatorname{span}\{L_j:0\le j<q\}.
+r=\dim_F\mathrm{span}\{L_j:0\le j<q\}.
 \tag{5}
 \]
 This is at most the number of distinct controls, and can be strictly
@@ -82,7 +82,7 @@ The row matrix of \(\Phi(U^2)\) has exactly one nonzero entry in each row
 \]
 Consequently
 \[
-\operatorname{rank}\Phi(U^2)=|\operatorname{im}\Psi|.
+\mathrm{rank}\Phi(U^2)=|\mathrm{im}\Psi|.
 \tag{7}
 \]
 
@@ -98,12 +98,12 @@ e_y=L_x^{-1}e_b=L_x^{\mathsf T}e_b.
 \]
 These coordinate vectors are linearly independent. They all belong to the
 image, under evaluation at \(e_b\), of the \(r\)-dimensional matrix space
-\(\operatorname{span}\{L_x^{\mathsf T}\}\). Therefore each fiber of
+\(\mathrm{span}\{L_x^{\mathsf T}\}\). Therefore each fiber of
 \(\Psi\) has size at most \(r\), even when distinct control matrices are
 linearly dependent. Thus
 \[
 \boxed{\quad
-\operatorname{rank}\Phi(U^2)\ge\lceil n/r\rceil .
+\mathrm{rank}\Phi(U^2)\ge\lceil n/r\rceil .
 \quad}
 \tag{9}
 \]
@@ -199,7 +199,7 @@ successive powers of a coordinate vector give a scaled coordinate basis,
 and \(U^n=I\). Thus the construction and ideal column orders remain valid.
 
 The first reshuffling still has rank
-\(r=\dim_F\operatorname{span}\{L_j\}\).
+\(r=\dim_F\mathrm{span}\{L_j\}\).
 The second has one nonzero entry in each row; its support map is (6)
 with the permutations \(\pi_j\). Its rank is therefore the image size
 of that support map.
@@ -208,7 +208,7 @@ For a fixed output label \(b\), the vectors \(L_j^{-1}e_b\) and
 \(L_j^{\mathsf T}e_b\) need not be equal. They are nonzero multiples
 of the same coordinate vector. Consequently distinct possible inverse
 images still give linearly independent vectors in the evaluation of
-\(\operatorname{span}\{L_j^{\mathsf T}\}\) at \(e_b\). The fiber size
+\(\mathrm{span}\{L_j^{\mathsf T}\}\) at \(e_b\). The fiber size
 is at most \(r\), exactly as before. No unitary condition, common phase
 group, or field automorphism is required.
 

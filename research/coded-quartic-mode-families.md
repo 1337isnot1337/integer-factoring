@@ -108,8 +108,8 @@ different zero and infinity flags. For example, the inherited full-interval
 four-mode Gaussian flags suggest zero orders
 
 \[
- (\operatorname{ord}_0 h_x,\operatorname{ord}_0 h_u,
-   \operatorname{ord}_0 g_y,\operatorname{ord}_0 g_v)=(-6,-7,-6,-7)
+ (\mathrm{ord}_0 h_x,\mathrm{ord}_0 h_u,
+   \mathrm{ord}_0 g_y,\mathrm{ord}_0 g_v)=(-6,-7,-6,-7)
 \]
 
 and degrees \((6,5,7,6)\), respectively. These requirements are compatible with

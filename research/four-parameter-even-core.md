@@ -103,6 +103,60 @@ is a contraction of the original Gaussian with Gaussian two-mode
 boundary states. This proves sufficiency on all four coordinate
 hyperplanes and completes the classification.
 
+## Elementary decomposition on paired types
+
+Write each physical letter as two occupation bits
+\(a=(a_1,a_2)\), and put \(K_*=K_{1,w^8,1,1}\).
+Define the binary tensor \(H(z;x,y,u,v)\) by its six nonzero
+coefficients. The index in this table is \(x+2y+4u+8v\).
+
+| Index | Coefficient |
+|---:|---|
+| 0 | \(1\) |
+| 3 | \(1+z\) |
+| 6 | \(1\) |
+| 9 | \(z\) |
+| 12 | \(1\) |
+| 15 | \(1\) |
+
+The exceptional tensor satisfies the exact entrywise identity
+
+\[
+\begin{aligned}
+&w^{-8}c^{\,5(y_1-u_1)+3(y_2-u_2)}
+ K_*(w;x,y,u,v)\\
+&\qquad=
+ H(w^8;x_1,y_2,u_2,v_1)
+ H(w^8;x_2,y_1,u_1,v_2).
+\end{aligned}
+\tag{6}
+\]
+
+To derive it, apply the displayed diagonal gauge to the eight-edge
+factorization in the two-output note. The two disconnected four-cycles
+then both have edge coefficients
+\((xy,uv,xv,uy)=(c^8,1,w^8,1)\).
+Since \(c^8=1+w^8\), their four-variable coefficient is
+\(c^8+w^8=1\), which gives the table. An independent literal
+comparison checked all 256 coefficients of (6), including exact division
+for the negative powers of \(c\).
+
+The endpoint of \(H\) itself is the binary crossing plus the
+\(uv\)-only entry. Thus (6) is a decomposition into elementary
+**typed** pencils, not an assertion of a strict local crossing for
+each factor. On independent matching \(x/v\) and \(y/u\) word types,
+every extra \(uv\) entry strictly increases the \(v\)-occupation
+relative to \(x\), and therefore cannot survive. The factors give
+the exact crossing after this restriction.
+
+The total exponent of \(c\) in (6) is also zero on those paired
+types: the \(y\) and \(u\) words have matching counts of each
+occupation bit. Hence this gauge cancels exactly in every restricted
+tensor entry. The remaining scalar \(w^{-8}\) only shifts the two
+Smith order lists in opposite directions. This explains the elementary
+structure of the exceptional Gaussian tensor within the admissible
+paired-type method; it does not assert an additional pressure bound.
+
 ## Reproduction
 
 ```sh

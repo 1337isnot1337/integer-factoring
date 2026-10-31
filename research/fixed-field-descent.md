@@ -25,12 +25,12 @@ In particular, \(\lambda(1)=1\), and \(\lambda\) fixes every element of
 For every matrix \(A\) over \(L\), entrywise projection satisfies
 
 \[
- \operatorname{rank}_F\lambda(A)
- \le d\operatorname{rank}_L A. \tag{1}
+ \mathrm{rank}_F\lambda(A)
+ \le d\mathrm{rank}_L A. \tag{1}
 \]
 
 To prove this, write \(A=UV\), with inner dimension
-\(r=\operatorname{rank}_L A\), and expand every entry of \(U,V\) in
+\(r=\mathrm{rank}_L A\), and expand every entry of \(U,V\) in
 the chosen basis. Define
 
 \[

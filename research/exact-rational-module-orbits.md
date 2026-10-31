@@ -33,7 +33,7 @@ row lattice $M_\varnothing=\mathcal O^D$, set
 
 \[
 M_{wi}=\sum_a M_wU_i(a),\qquad
-v(w)=\operatorname{ord} M_w.
+v(w)=\mathrm{ord} M_w.
 \tag{1}
 \]
 
@@ -84,11 +84,11 @@ provides a useful way to recognize that equality.
 ## 3. Finite exact orbit theorem
 
 For a normalized nonzero lattice $L\subseteq\mathcal O^D$ with
-$\operatorname{ord}L=0$, define
+$\mathrm{ord}L=0$, define
 
 \[
 R_i(L)=\sum_a LU_i(a),\qquad
-\gamma(L,i)=\operatorname{ord}R_i(L),\qquad
+\gamma(L,i)=\mathrm{ord}R_i(L),\qquad
 \Phi_i(L)=\tau^{-\gamma(L,i)}R_i(L).
 \tag{2}
 \]

@@ -14,6 +14,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [31 October constructive frontier checkpoint](constructive-frontier-checkpoint.md): exact finite bounds, proved construction families, reproducible floating starts, and the remaining threshold obligation after a three-hour research session.
 - [Complete Schur queries](schur-fermion-queries.md): division-free small determinant formulas for modes and complete crossing coefficients; polynomial query cost with exact independent checks, but no new rank bound.
 - [Schur hook residues and central ranks](schur-hook-residue-central.md): all-weight hook identities give rank at most `p(2h)-3`, attained at weights 8 and 16 by complete exact computations.
 - [Schur digit reduction and a fixed Gaussian seed](schur-gaussian-digit-reduction.md): exact local maps, retained energy projections, explicit finite coefficients, and a four-label occupation-sector crossing.

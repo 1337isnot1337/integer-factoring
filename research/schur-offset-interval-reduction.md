@@ -41,7 +41,7 @@ entropy loss depends on `N`, not on the offset `M`.
 For indices `a,b` in `S`, write
 
 ```math
-P_{a,b}=\mathbf1_{b\subseteq a},\qquad Q=\operatorname{diag}(q^a),
+P_{a,b}=\mathbf1_{b\subseteq a},\qquad Q=\mathrm{diag}(q^a),
 \qquad G_{a,b}=z^{a\mathbin{\&}b},\qquad
 H_{M,a,b}=z^{M-1-(a\mathbin{|}b)}.                          \tag{2}
 ```
@@ -99,9 +99,9 @@ Y&z^M I&I.
 All exponents are integral. Equations (3) prove
 
 ```math
-\operatorname{diag}(U_B,U_X,U_V,U_Y)\,
+\mathrm{diag}(U_B,U_X,U_V,U_Y)\,
 \mathcal R_{M,N}(z)\,
-\operatorname{diag}(V_B,V_X,V_V,V_Y)
+\mathrm{diag}(V_B,V_X,V_V,V_Y)
 =K_{M,N}(z)\otimes I_N,                                  \tag{7}
 ```
 
@@ -230,8 +230,8 @@ sum exactly to the selected Schur crossing. If `R_j,C_j` are the two
 flattening ranks of `Gamma_j`, locality of every map gives
 
 ```math
-\sum_{i,j}\sqrt{\operatorname{rank}_R B_{i,j}
-                       \operatorname{rank}_C B_{i,j}}
+\sum_{i,j}\sqrt{\mathrm{rank}_R B_{i,j}
+                       \mathrm{rank}_C B_{i,j}}
 \le \bigl(2r(N-1)+1\bigr)\sum_j\sqrt{R_jC_j}.              \tag{17}
 ```
 

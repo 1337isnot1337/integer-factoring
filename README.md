@@ -91,6 +91,10 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 
 ## Current research frontier
 
+The [31 October research checkpoint](research/constructive-frontier-checkpoint.md)
+collects the latest exact bounds, new construction families, reproducible
+search starts, and the remaining obligations for a score improvement.
+
 No uniform factoring exponent above `1/2` is proved here. One open approach seeks effective crossing pieces with total rank width `4*rho*lambda + O(log lambda)` for `rho < 1/sqrt(2)`. A suitable family could improve the evaluator bound, but finite rank improvements alone do not establish that inequality.
 
 The [complete Schur entry algorithm](research/schur-fermion-queries.md) computes

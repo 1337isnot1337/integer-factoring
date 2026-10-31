@@ -40,8 +40,8 @@ Let `M` be a power of two and let `S` be any nonempty subset of
 
 ```math
 P_{a,b}=\mathbf1_{b\subseteq a},\quad
-Q=\operatorname{diag}(q^a),\quad
-Q_J=\operatorname{diag}(q^{T-a}),\quad
+Q=\mathrm{diag}(q^a),\quad
+Q_J=\mathrm{diag}(q^{T-a}),\quad
 G_{a,b}=z^{a\mathbin{\&}b},\quad
 H_{a,b}=z^{T-(a\mathbin{|}b)}.                              \tag{1}
 ```
@@ -221,8 +221,8 @@ with natural logarithms and the usual endpoint convention. Then
 two ends gives
 
 ```math
-\sum_j\sqrt{\operatorname{rank}_R\Gamma_{m,j}
-                  \operatorname{rank}_C\Gamma_{m,j}}
+\sum_j\sqrt{\mathrm{rank}_R\Gamma_{m,j}
+                  \mathrm{rank}_C\Gamma_{m,j}}
 \le m^{O(1)}\left[
 B_{\mathrm{raw}}(s)\,
 s^{\sum_a(G_A(a)p_A(a)+G_B(a)p_B(a))}

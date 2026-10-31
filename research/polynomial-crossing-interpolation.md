@@ -56,7 +56,7 @@ over the local power-series ring. Choose nonnegative integer row targets
 `tau_(e,i)`. Impose
 
 ```math
-\operatorname{ord}_e (U_e M_e(T)V_e)_{i,j}\ge\tau_{e,i}
+\mathrm{ord}_e (U_e M_e(T)V_e)_{i,j}\ge\tau_{e,i}
 \qquad\text{for every }i,j.                                \tag{3}
 ```
 

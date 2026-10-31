@@ -47,11 +47,11 @@ Pair the decreasing list \((w_1,\ldots,w_b,0)\). Its zero Smith
 orders are two copies of \(T-a-c\) for each pair \((a,c)\), plus
 \(T\) for a final unpaired zero.
 
-Write \(D=\operatorname{diag}(z^{-w_i})\), with the zero-weight
+Write \(D=\mathrm{diag}(z^{-w_i})\), with the zero-weight
 coordinate included. Then
 
 \[
-H=z^T D\left(J+\operatorname{diag}(d_i)\right)D,
+H=z^T D\left(J+\mathrm{diag}(d_i)\right)D,
 \qquad d_0=0,\quad d_i=1+z^{w_i}\ (i>0),                   \tag{2}
 \]
 
@@ -64,7 +64,7 @@ The induction maintains the same matrix shape with \(J\) replaced by
 \(uJ\), where \(u\in F[[z]]^\times\), and
 
 \[
-\operatorname{ord}(u+1)>a                                  \tag{3}
+\mathrm{ord}(u+1)>a                                  \tag{3}
 \]
 
 for the largest remaining positive weight \(a\). Initially \(u=1\),
@@ -87,7 +87,7 @@ Consequently its block Schur elimination uses invertible matrices over
 \(F[[z]]\), so it preserves Smith orders.
 
 In the unweighted middle matrix of (2), the Schur complement again has
-the form \(u'J+\operatorname{diag}(d_i)\). Direct inversion of the
+the form \(u'J+\mathrm{diag}(d_i)\). Direct inversion of the
 two-by-two block gives the exact recurrence
 
 \[
@@ -108,7 +108,7 @@ Condition (3) and \(a>c\) show that this numerator has order exactly
 \(c\). Thus
 
 \[
-\operatorname{ord}(u'+1)=c.
+\mathrm{ord}(u'+1)=c.
 \]
 
 Every remaining positive weight is smaller than \(c\), so the
@@ -147,7 +147,7 @@ Indeed, the middle determinant in (2) is
 ## 4. An exact Gaussian encoding for every Hamming ball
 
 Let now
-\(S_k=\{a\in\{0,\ldots,2^b-1\}:\operatorname{popcount}(a)\le k\}\).
+\(S_k=\{a\in\{0,\ldots,2^b-1\}:\mathrm{popcount}(a)\le k\}\).
 Identify a mask with its subset of the \(b\) weighted bit positions.
 Append one additional mode of weight zero. To each subset \(A\) of
 size at most \(k\), append this mode exactly when \(|A|\) has parity
@@ -160,14 +160,14 @@ alternating matrices and a cross block by
 
 \[
 A_{ij}=z^{-w_i-w_j}\ (i\ne j),\quad A_{ii}=0,
-\qquad C=A+\operatorname{diag}(z^{-w_i}).
+\qquad C=A+\mathrm{diag}(z^{-w_i}).
 \]
 
 Then
 
 \[
 \boxed{\displaystyle
-H_{S_k}(A,B)=z^T\operatorname{Pf}
+H_{S_k}(A,B)=z^T\mathrm{Pf}
  \begin{pmatrix}A&C\\C^T&A\end{pmatrix}
  [\widetilde A_+,\widetilde B_-].}                          \tag{6}
 \]
@@ -187,11 +187,11 @@ therefore gives
 \[
 \prod_{i\in\widetilde A\cap\widetilde B}
 \bigl(1+(1+z^{w_i})\bigr)
-=z^{\operatorname{wt}(\widetilde A\cap\widetilde B)}.
+=z^{\mathrm{wt}(\widetilde A\cap\widetilde B)}.
 \]
 
 Multiplying by the factors for the selected modes and by \(z^T\)
-produces \(z^{T-\operatorname{wt}(A\cup B)}\), which is the
+produces \(z^{T-\mathrm{wt}(A\cup B)}\), which is the
 required entry. The added mode has weight zero and contributes no change.
 
 Equation (6) identifies the sparse matrix with a Gaussian kernel restricted

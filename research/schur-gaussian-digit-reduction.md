@@ -119,9 +119,9 @@ Equations (4) give the exact block identity
 
 ```math
 \boxed{\quad
-\operatorname{diag}(U_B,U_X,U_V,U_Y)\,
+\mathrm{diag}(U_B,U_X,U_V,U_Y)\,
 \mathcal K_M(w^2)\,
-\operatorname{diag}(V_B,V_X,V_V,V_Y)
+\mathrm{diag}(V_B,V_X,V_V,V_Y)
 =K(W)\otimes I_M,\quad}                                    \tag{6}
 ```
 
@@ -149,8 +149,8 @@ occupations of one mode. Let `flip` interchange plus and minus.
 For external labels `(x,y,u,v)`, select occupations
 
 ```math
-(B,X,V,Y)=(\operatorname{flip}(u),
-\operatorname{flip}(x),v,y).                                 \tag{8}
+(B,X,V,Y)=(\mathrm{flip}(u),
+\mathrm{flip}(x),v,y).                                 \tag{8}
 ```
 
 The tensor entry `T(w;x,y,u,v)` is the selected determinant of (7),
@@ -298,8 +298,8 @@ projections. Hence it cannot increase either flattening rank. If
 `R_j,C_j` are the two ranks of `Gamma_(M,r,j)`, then (19) gives
 
 ```math
-\sum_{i,j}\sqrt{\operatorname{rank}_R B_{i,j}
-                       \operatorname{rank}_C B_{i,j}}
+\sum_{i,j}\sqrt{\mathrm{rank}_R B_{i,j}
+                       \mathrm{rank}_C B_{i,j}}
 \le\bigl(2r(M-1)+1\bigr)\sum_j\sqrt{R_jC_j}.                \tag{20}
 ```
 

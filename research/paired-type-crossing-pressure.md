@@ -109,7 +109,7 @@ coefficient pieces \(A_{m,k}\) of the restricted path,
 
 \[
  C_m:=\sum_k\sqrt{r(A_{m,k})c(A_{m,k})}
- \le \operatorname{poly}(m)\,
+ \le \mathrm{poly}(m)\,
  \left[B(s)s^{\langle\pi_X,G_X\rangle+
                      \langle\pi_Y,G_Y\rangle}\right]^{m/2}.  \tag{5}
 \]

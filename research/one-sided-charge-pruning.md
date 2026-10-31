@@ -34,8 +34,8 @@ decomposition
 
 ~~~math
 T=T_0+R,\qquad
-\operatorname{supp}T_0\subseteq\{Q=0\},\qquad
-\operatorname{supp}R\subseteq\{Q>0\}.                  \tag{2}
+\mathrm{supp}T_0\subseteq\{Q=0\},\qquad
+\mathrm{supp}R\subseteq\{Q>0\}.                  \tag{2}
 ~~~
 
 Replacing `Q` by `-Q` includes strictly negative changes. Polynomial

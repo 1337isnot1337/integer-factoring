@@ -97,8 +97,8 @@ signature \(\eta\), and let \(M_{\tau,\eta}(B)\) denote its block in a
 coefficient combination \(B=\sum_k b_kA_k\). Then
 
 \[
-\boxed{\operatorname{rank}_{\tau}(B)=
-\sum_{\eta}N(\eta)\operatorname{rank}M_{\tau,\eta}(B).} \tag{2}
+\boxed{\mathrm{rank}_{\tau}(B)=
+\sum_{\eta}N(\eta)\mathrm{rank}M_{\tau,\eta}(B).} \tag{2}
 \]
 
 The blocks are square because each physical leg uses the same type. Formula
@@ -135,9 +135,9 @@ for each cut.
 In the chosen Gaussian gauge,
 
 \[
-\deg P_{xyuv}\le \operatorname{occ}(x)+3\operatorname{occ}(v),
+\deg P_{xyuv}\le \mathrm{occ}(x)+3\mathrm{occ}(v),
 \qquad
-\operatorname{occ}=(0,1,1,2).
+\mathrm{occ}=(0,1,1,2).
 \]
 
 The common type therefore gives the exact safe degree bound
@@ -161,7 +161,7 @@ The complete rank table gives a rigorous lower bound for every
 
 \[
 \left\lfloor
-\sqrt{\operatorname{rank}_R(B_b)\operatorname{rank}_C(B_b)}
+\sqrt{\mathrm{rank}_R(B_b)\mathrm{rank}_C(B_b)}
 \right\rfloor.
 \]
 
@@ -197,7 +197,7 @@ For \(D=1260\), the recorded witness uses codes
 R_{0,2,\ldots,16}
 ={}&(1,98,2024,15118,95116,249110,759360,760086,1587600),\\
 C_{0,2,\ldots,16}
-={}&\operatorname{reverse}(R_{0,2,\ldots,16}).
+={}&\mathrm{reverse}(R_{0,2,\ldots,16}).
 \end{aligned}
 \]
 

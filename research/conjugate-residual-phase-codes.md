@@ -68,7 +68,7 @@ superposition. Direct expansion of (2) gives
 
 \[
  (C_r\otimes C_r)R(B_p\otimes B_p)
- =\operatorname{diag}(1,a,a,1),\qquad a=1+pr,
+ =\mathrm{diag}(1,a,a,1),\qquad a=1+pr,
  \tag{4}
 \]
 

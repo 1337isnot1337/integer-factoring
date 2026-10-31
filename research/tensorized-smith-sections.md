@@ -59,7 +59,7 @@ $$
 \tag{1}
 $$
 
-Write $D=\operatorname{diag}(\tau^{\sigma_i})$. Fix regular invertible
+Write $D=\mathrm{diag}(\tau^{\sigma_i})$. Fix regular invertible
 left and right changes $U_e,V_e$ at each endpoint. Their finite jets
 suffice to verify the row divisibility statements below. The checker
 constructs 32 coefficients of these changes and checks
@@ -147,7 +147,7 @@ expressions simplify to polynomials. Each vanishes at $z=1$.
 Thus the affine space
 
 $$
-G^{(2)}+\operatorname{span}_{\mathbb F_2}\{\Delta_1,\ldots,\Delta_{292}\}
+G^{(2)}+\mathrm{span}_{\mathbb F_2}\{\Delta_1,\ldots,\Delta_{292}\}
 \tag{7}
 $$
 
@@ -222,7 +222,7 @@ term $I+N$. Its normalized matrix is an invertible power-series matrix.
 Both Smith profiles are exactly
 
 $$
-\operatorname{sort}\{\sigma_i+\sigma_j:1\le i,j\le16\}.
+\mathrm{sort}\{\sigma_i+\sigma_j:1\le i,j\le16\}.
 \tag{14}
 $$
 

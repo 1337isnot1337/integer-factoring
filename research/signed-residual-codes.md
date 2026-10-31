@@ -60,7 +60,7 @@ If \(N=(R-\Gamma(D_0))\Gamma(D_0)^{-1}\), the signed
 creation-annihilation relations give
 
 \[
- N^2=-N,\qquad \operatorname{rank}N=4.
+ N^2=-N,\qquad \mathrm{rank}N=4.
  \tag{2}
 \]
 
@@ -92,7 +92,7 @@ Its column space, viewed as a space of four-by-four matrices, is
  \tag{3}
 \]
 
-Put \(J=\operatorname{diag}(1,1,1,-1)\), and let \(W\) be the matrix
+Put \(J=\mathrm{diag}(1,1,1,-1)\), and let \(W\) be the matrix
 space with the same pattern but \(+b\) in position \((2,3)\). Then
 \(W_-=WJ\), and the row space of the flattening is \(W^TJ\).
 
@@ -110,7 +110,7 @@ has image dimension at least five.
 The proof is the same matrix-space argument as in
 [the characteristic-two obstruction](residual-quartic-three-letter-obstruction.md),
 with signs retained. Write \(\ker L=Fa\) and
-\(\operatorname{im}K=\ker b^T\). The killed matrices are exactly
+\(\mathrm{im}K=\ker b^T\). The killed matrices are exactly
 \(ar^T+sb^T\). The parameterization has one-dimensional redundancy
 
 \[
@@ -175,7 +175,7 @@ An integer symbolic expansion of (1) gives
 
 \[
  (C_r\otimes C_r)R(B_p\otimes B_p)
-  =\operatorname{diag}(1,1+pr,1+pr,1+2pr).
+  =\mathrm{diag}(1,1+pr,1+pr,1+2pr).
  \tag{4}
 \]
 
@@ -205,7 +205,7 @@ defines \(\mathbb F_{27}\). Its elementary symmetric functions are
 \(e_1=2,e_2=0,e_3=1\). Consequently,
 
 \[
- \operatorname{Norm}(1+\lambda\alpha)
+ \mathrm{Norm}(1+\lambda\alpha)
   =1+2\lambda+\lambda^3=1
   \qquad (\lambda=1,2).
  \tag{6}

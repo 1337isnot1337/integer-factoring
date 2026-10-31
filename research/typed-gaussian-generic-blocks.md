@@ -52,7 +52,7 @@ K(w)=
 
 in boundary order \(B,X,V,Y\). The physical labels
 \((x,y,u,v)\) select boundary states
-\((\operatorname{flip}(u),\operatorname{flip}(x),v,y)\);
+\((\mathrm{flip}(u),\mathrm{flip}(x),v,y)\);
 the flip exchanges the two species. The selected determinant gives
 the tensor entry.
 
@@ -149,7 +149,7 @@ remain true for every linear combination of its coefficients.
 
 ## 3. Arbitrary recombinations retain a large piece
 
-Let \(\mathcal V=\operatorname{span}\{A_j\}\), over
+Let \(\mathcal V=\mathrm{span}\{A_j\}\), over
 \(\mathbb F_2\) or a field extension. Equation (4) defines a
 linear functional
 
@@ -166,8 +166,8 @@ If \(B\in\mathcal V\) and \(\lambda(B)\ne0\), every one of
 the blocks in (6)--(7) is nonzero. Therefore
 
 ~~~math
-\operatorname{rank}_R B\ge N_R,\qquad
-\operatorname{rank}_C B\ge N_C.                         \tag{9}
+\mathrm{rank}_R B\ge N_R,\qquad
+\mathrm{rank}_C B\ge N_C.                         \tag{9}
 ~~~
 
 Now let \(E=\sum_{\ell}B_\ell\), with every
@@ -177,8 +177,8 @@ Now let \(E=\sum_{\ell}B_\ell\), with every
 ~~~math
 \boxed{\quad
 \sum_\ell
- \sqrt{\operatorname{rank}_R B_\ell\,
-       \operatorname{rank}_C B_\ell}
+ \sqrt{\mathrm{rank}_R B_\ell\,
+       \mathrm{rank}_C B_\ell}
 \ \ge\ \sqrt{N_RN_C}.
 \quad}                                                  \tag{10}
 ~~~
@@ -236,7 +236,7 @@ this conclusion.
 For lengths \(m=3,4,5,6\), the checker enumerates every element of
 the five-dimensional coefficient span over \(\mathbb F_2\). It then
 assigns each element the integer weight
-\(\lfloor\sqrt{\operatorname{rank}_R B\operatorname{rank}_C B}\rfloor\)
+\(\lfloor\sqrt{\mathrm{rank}_R B\mathrm{rank}_C B}\rfloor\)
 and computes the shortest path to the crossing in the XOR graph.
 Every true decomposition cost is at least this integer path cost:
 

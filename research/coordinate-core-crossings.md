@@ -71,7 +71,7 @@ despite the different coordinate maps in the table. Let \(K\) denote the
 resulting rational local tensor. Its explicit polynomial numerator is
 
 \[
-N=\operatorname{restrict}(c^2G+QG),\qquad K=N/c^2.
+N=\mathrm{restrict}(c^2G+QG),\qquad K=N/c^2.
 \tag{4}
 \]
 

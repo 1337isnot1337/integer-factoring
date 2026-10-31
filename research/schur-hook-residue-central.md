@@ -7,7 +7,7 @@ central-channel relations at every power-of-two weight `h >= 2`.
 They give the all-weight bound
 
 ```math
-\operatorname{rank} A_0\le p(2h)-3.                         \tag{1}
+\mathrm{rank} A_0\le p(2h)-3.                         \tag{1}
 ```
 
 Both crossing flattenings have the same central rank. Exact computations
@@ -86,8 +86,8 @@ define the channel vector and the external residue charge
 u_j^{(R)}=\sum_{a\equiv j\pmod R}s_{\eta_a},
 \qquad
 c_j^{(R)}(y)=
-\#\{a\in\operatorname{Arms}(y):a\equiv j\}
-+\#\{b\in\operatorname{Legs}(y):b\equiv -1-j\}\pmod2.
+\#\{a\in\mathrm{Arms}(y):a\equiv j\}
++\#\{b\in\mathrm{Legs}(y):b\equiv -1-j\}\pmod2.
                                                                   \tag{6}
 ```
 
@@ -202,7 +202,7 @@ There are two exact ways to compute the pairing rank. The direct method
 forms the Gram matrix of row-space bases. The second method uses
 
 ```math
-\operatorname{rank}(F G^T)
+\mathrm{rank}(F G^T)
 =\dim A-\dim B^\perp
   +\dim((A+B^\perp)/A),                                    \tag{10}
 ```

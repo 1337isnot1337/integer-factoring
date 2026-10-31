@@ -124,7 +124,7 @@ holonomy admits a useful decomposition. Define
 
 ~~~math
 P_{a,b}=\mathbf1_{b\subseteq a},\qquad
-Q=\operatorname{diag}(q^a).
+Q=\mathrm{diag}(q^a).
 ~~~
 
 The relabelled raw Schur contraction matrix is
@@ -193,7 +193,7 @@ both directions with coefficient one.
 
 Encode a physical label by \(0=\varnothing\), \(1=+\), \(2=-\),
 \(3=\{+,-\}\), as in the offset note. The selected minors in boundary
-states \((\operatorname{flip}(u),\operatorname{flip}(x),v,y)\)
+states \((\mathrm{flip}(u),\mathrm{flip}(x),v,y)\)
 therefore satisfy
 
 ~~~math

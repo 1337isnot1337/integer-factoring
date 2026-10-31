@@ -20,7 +20,7 @@ Work over \(\mathbb F_2\). Let \(M\ge2\) be a power of two and put
 \(\{0,\ldots,T\}\). Write
 
 \[
- P_{ij}=[j\subseteq i],\qquad Q=\operatorname{diag}(c^{2i}),\qquad
+ P_{ij}=[j\subseteq i],\qquad Q=\mathrm{diag}(c^{2i}),\qquad
  H_{ij}=w^{2(T-(i\mathbin{|}j))}.
 \]
 

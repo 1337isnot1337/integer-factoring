@@ -147,8 +147,8 @@ unimodular transformation on each flattened side. These factors commute
 with the quartic multiplier. The remaining cross matrix is
 
 \[
- \operatorname{diag}(w^{2a+1})P^T\ \oplus\
- \operatorname{diag}(w^{2a+1}).
+ \mathrm{diag}(w^{2a+1})P^T\ \oplus\
+ \mathrm{diag}(w^{2a+1}).
 \]
 
 The constant Pascal change of the \(v\) variables makes it diagonal. Its
@@ -166,7 +166,7 @@ Label the resulting two copies of the mode set by \(X,Y\), with energies
 
 \[
  A_0=2(a+b+1),\quad B_0=2(M+c),\quad
- r_0=\operatorname{ord}_0(f)+2(a+b+1-M).
+ r_0=\mathrm{ord}_0(f)+2(a+b+1-M).
  \tag{10}
 \]
 
