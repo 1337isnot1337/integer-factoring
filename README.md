@@ -108,6 +108,36 @@ characterizes the required pairs and converts supplied representations at
 `2^O(b/log b)` divisor-search cost; locating those representations efficiently
 is still open.
 
+The [Bell-diagonal seed construction](research/bell-diagonal-crossings.md)
+gives exact two-cut transforms and excludes its complete symmetric
+coefficient spans at local dimensions two and four. Dimension eight
+remains open under that argument. Replay its physical tensors and pencil
+ranks with `make verify-bell`; no stronger factoring exponent is claimed.
+The [linear-pencil search](research/bell-linear-search.md) includes two
+complete small-domain calibrations and explicit larger finite searches,
+with no improvement in the recorded schedules.
+The [polynomial synthesis engine](research/bell-polynomial-synthesis.md)
+certifies uniform rational rank bounds and led to an explicit
+[folded-cube crossing family](research/folded-bell-crossings.md).
+Its optimal leading contraction within its complete coefficient span
+is `H_2(1/4)=0.811278...`, above the critical threshold. The factoring
+score is unchanged.
+The [code-quotient analysis](research/code-quotient-crossings.md) preserves
+the crossing duality, pays the maximal common polynomial division, and
+identifies nonuniform finite-field cancellations as a remaining route;
+ordinary covering-radius gains alone do not improve its pressure criterion.
+The [signed-boundary extension](research/signed-boundary-crossings.md)
+preserves duality under more general intertwiners and isotropic reductions,
+with exact common-factor costs; its strict rank improvement remains open.
+An [endpoint pressure theorem](research/bell-cubic-outer-rank-floor.md)
+excludes the stated outer-rank-one cubics in every odd characteristic,
+and quartics at local dimensions 8 and 16. Its first open power-of-two
+quartic alphabet at least eight is 32.
+For [self-reciprocal quartics](research/bell-quartic-rigidity.md), an exact
+matrix identity relates a pressure witness to sparse Hadamard rank reduction;
+it is a necessary condition and supplies no improved factoring bound.
+
+
 ## Contribution and attribution
 
 Start with the [contributor quickstart](docs/START_HERE.md) and

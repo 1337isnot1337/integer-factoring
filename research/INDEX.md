@@ -27,6 +27,15 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Actual class-group controls](arithmetic-class-group-controls.md): exact composition, smooth prime-form words, unsaturated relations and complete two-torsion recovery; exhaustive searches produce factors for 18 finite targets.
 - [Density/index transfer](arithmetic-density-lift.md): dense smooth forms and relations on a possibly proper factor-base subgroup give a global class-number multiple; missing ambiguous directions remain an explicit obligation.
 - [Bounded smooth-norm interface](bounded-smooth-norm.md): exact equivalence between smooth-form quotients and balanced smooth represented norms; supplied witnesses convert at `2^O(b/log b)` cost, while fast witness search remains open.
+- [Bell-diagonal crossings](bell-diagonal-crossings.md): exact two-cut transforms, effective polynomial paths, and a complete symmetric-span restriction at local dimensions two and four; dimension eight remains open.
+- [Bell linear-pencil search](bell-linear-search.md): exact coefficient ranks, complete small-domain calibrations, and retained higher-dimension finite schedules.
+- [Bell polynomial synthesis](bell-polynomial-synthesis.md): exact affine two-cut construction and rational pressure bounds uniform in tensor length.
+- [Folded-cube Bell family](folded-bell-crossings.md): explicit all-dimension crossing in every odd characteristic, with optimal coefficient-span limit `H_2(1/4)`.
+- [Code-quotient crossings](code-quotient-crossings.md): exact projection and maximal common division, a characteristic-zero pressure restriction, and a precise modular-cancellation target.
+- [Signed boundary crossings](signed-boundary-crossings.md): exact intertwiners and isotropic code reduction, with complete common-factor normalization and retained explicit paths.
+- [Bell outer-rank endpoint floors](bell-cubic-outer-rank-floor.md): pressure exceeds `5/7` for the stated cubics at all local dimensions at least eight and for quartics at 8 and 16; the refined bound leaves 32 open.
+- [Quartic Bell paths and matrix rigidity](bell-quartic-rigidity.md): a chirped reshape turns a self-reciprocal quartic into an explicit Hadamard sparse modification, with necessary critical parameters and a stated missing converse.
+
 - [Pieces-to-factoring transfer](pieces-to-factoring.md): conditional crossing-parameter transfer, with full bit-cost accounting.
 - [Scale-one modular transfer](scale-one-modular-transfer.md): fixed-field transfer and machine costs.
 - [Sparse divisor nonzeroness](sparse-divisor-nonzeroness.md): detection of divisors in weighted polynomial counts.
