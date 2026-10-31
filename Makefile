@@ -625,3 +625,7 @@ verify-odd-fiber-codes:
 verify-joint-syndrome-filters:
 	OPENBLAS_NUM_THREADS=1 python3 tools/check_joint_syndrome_filter_synthesis.py --output /tmp/integer-factoring-joint-syndrome-filters-replay.json
 
+.PHONY: verify-typed-charge-lattices
+verify-typed-charge-lattices:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_typed_charge_lattice_synthesis.py --output /tmp/integer-factoring-typed-charge-lattice-replay.json
+

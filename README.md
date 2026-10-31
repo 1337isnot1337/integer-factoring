@@ -91,6 +91,15 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 
 ## Current research frontier
 
+The [typed rational coefficient lattice](research/typed-charge-lattice-synthesis.md)
+frees every entry under an exact charge condition at the endpoint. Local poles
+cancel in every paired-type tensor power; a negative-charge boundary extension
+adds further coefficients while preserving that endpoint. At four symbols,
+the displayed spaces have 6,144 or 6,237 free F4 coefficients and effective
+degree 24. Full local rank follows from the [type-class rank theorem](research/paired-type-endpoint-full-rank.md).
+These are constructive search spaces; no better factoring exponent is claimed.
+Run `make verify-typed-charge-lattices`.
+
 The [growing quartic construction](research/reflection-charged-quartic-tiles.md)
 adds nonquadratic occupation gates on a growing fraction of physical modes.
 An exact charge budget also permits specified endpoint poles: they cancel in

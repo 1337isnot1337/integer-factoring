@@ -16,6 +16,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Complete-entry typed rational coefficient lattices](typed-charge-lattice-synthesis.md): explicit entrywise endpoint valuations give full affine spaces with local poles and all-length polynomial type restrictions; four-symbol families have 6,144 or 6,237 coefficients at effective degree 24, with complete two-cut synthesis and independent coefficient controls.
+
 - [Joint global-syndrome polynomial synthesis](joint-syndrome-polynomial-filters.md): independent syndrome polynomials retain all endpoint colors and full zero/infinity costs; exact residue compression removes ramification-size growth, and coefficient-space releases escape a demonstrated greedy-search trap.
 
 - [Coherent physical codes with full letter gauges](physical-code-gauge-searches.md): disjoint odd fibers give exact coherent split maps; completed suites contain thirty coordinate, 158 coherent five-letter, and 57 compressed fourteen-letter seeds, with full type costs and independent contraction/profile controls.
