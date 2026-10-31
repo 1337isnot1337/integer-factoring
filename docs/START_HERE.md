@@ -50,7 +50,7 @@ Browse [starter issues](https://github.com/1337isnot1337/integer-factoring/issue
 and [open PRs](https://github.com/1337isnot1337/integer-factoring/pulls).
 You can also [report a finding](https://github.com/1337isnot1337/integer-factoring/issues/new/choose).
 For substantial research, check and post a narrow scope on the
-[coordination board](https://github.com/1337isnot1337/integer-factoring/issues/8)
+[discussion board](https://github.com/1337isnot1337/integer-factoring/discussions)
 before starting. Small corrections and reproduction reports can go directly
 to the repository.
 

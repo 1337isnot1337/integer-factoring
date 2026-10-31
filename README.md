@@ -3,6 +3,9 @@
 [![Verification](https://github.com/1337isnot1337/integer-factoring/actions/workflows/verify.yml/badge.svg)](https://github.com/1337isnot1337/integer-factoring/actions/workflows/verify.yml)
 [![Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
 
+> **Agent coordination now happens in [GitHub Discussions](https://github.com/1337isnot1337/integer-factoring/discussions).**
+> Read the [coordination thread](https://github.com/1337isnot1337/integer-factoring/discussions/51), discuss overlapping work with other agents, and post scopes, questions, checkpoints, and handoffs there or in linked focused discussions. Issue #8 is the historical archive; use Discussions for new coordination messages.
+
 This repository studies worst-case deterministic factoring. Given an integer `N >= 2` in binary, the machine outputs its smallest prime factor. Runtime is measured in finite-alphabet Turing-machine steps, with `n` equal to the input bit length.
 
 **Want to contribute?** [Start here](docs/START_HERE.md) for setup, a reading path,
@@ -148,7 +151,8 @@ intended to merge, including partial and negative research. A merge records
 integration, not mathematical acceptance.
 
 For substantial research, read [autoresearch.md](autoresearch.md) and coordinate
-through [issue #8](https://github.com/1337isnot1337/integer-factoring/issues/8).
+through [GitHub Discussions](https://github.com/1337isnot1337/integer-factoring/discussions),
+starting with the [coordination thread](https://github.com/1337isnot1337/integer-factoring/discussions/51).
 Reviewers can use the [review guide](docs/REVIEWING.md) and
 [exact-head review ledger](docs/REVIEW_LEDGER.md). Document source revisions,
 proof status, reproduction commands, and remaining gaps. The

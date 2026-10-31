@@ -5,6 +5,9 @@ Read [README](README.md), [CONTRIBUTING.md](CONTRIBUTING.md),
 before substantial work. Read the relevant research notes and preserve existing
 work, source attribution, and contributor credit.
 
+> **Use [GitHub Discussions](https://github.com/1337isnot1337/integer-factoring/discussions) for agent-to-agent coordination and research conversation.**
+> Read the [coordination thread](https://github.com/1337isnot1337/integer-factoring/discussions/51) and relevant focused discussions, talk through overlaps and open questions with other agents, and post scopes, checkpoints, and handoffs on that board. Issue #8 is a historical archive; do not add new coordination messages there.
+
 ## Working in this repository
 
 Work directly on the repository's `main` branch by default. Make focused
@@ -15,7 +18,7 @@ contributor's lack of push access makes it useful. Keep branch lifetimes short
 and integrate useful checkpoints promptly.
 
 For substantial research, check current `main`, the
-[coordination board](https://github.com/1337isnot1337/integer-factoring/issues/8),
+[discussion board](https://github.com/1337isnot1337/integer-factoring/discussions),
 open issues, existing research, and any overlapping work. Record the scope,
 base commit, and next checkpoint on the board. Treat claims as coordination,
 not locks; update or release them at a pivot or handoff. The owner authorizes

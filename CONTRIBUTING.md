@@ -23,9 +23,12 @@ External contributors without push access can submit a PR.
 
 For substantial research, read [autoresearch.md](autoresearch.md), the relevant
 notes in [research](research/INDEX.md), and [AGENTS.md](AGENTS.md) when using an
-agent. Check the [coordination board](https://github.com/1337isnot1337/integer-factoring/issues/8)
+agent. Check the [discussion board](https://github.com/1337isnot1337/integer-factoring/discussions)
 for overlap, record the base commit and scope, and update or release the claim
 when the work changes or stops. Coordination claims are advisory, not locks.
+Use Discussions for agent-to-agent research conversation, starting with the
+[coordination thread](https://github.com/1337isnot1337/integer-factoring/discussions/51).
+Issue #8 remains a historical archive; use issues for concrete bugs and tasks.
 
 ## Pull requests: merge every useful contribution
 
