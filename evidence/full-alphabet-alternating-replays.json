@@ -1,0 +1,37 @@
+{
+  "status": "Every retained tensor and full cost replayed; incomplete trial budgets remain explicit.",
+  "records": [
+    {
+      "record": "full-alphabet-alternating-walk-0.json",
+      "physical_alphabet": 4,
+      "degree": 24,
+      "completed_trials": 27104,
+      "requested_trials": 50000,
+      "completed_requested_trials": false,
+      "recorded_time_budget_exhausted": true,
+      "distinct_target_vectors": 331,
+      "distinct_profile_classes": 759,
+      "complete_profile_queries": 993,
+      "literal_retained_tensor_replays": 40,
+      "independent_reference_toeplitz_ranks": 8,
+      "best_replayed_rho": 0.7450485723725101,
+      "strict_crossing_candidate_found": false
+    },
+    {
+      "record": "full-alphabet-alternating-walk-1.json",
+      "physical_alphabet": 4,
+      "degree": 24,
+      "completed_trials": 33937,
+      "requested_trials": 50000,
+      "completed_requested_trials": false,
+      "recorded_time_budget_exhausted": true,
+      "distinct_target_vectors": 398,
+      "distinct_profile_classes": 673,
+      "complete_profile_queries": 1194,
+      "literal_retained_tensor_replays": 40,
+      "independent_reference_toeplitz_ranks": 8,
+      "best_replayed_rho": 0.7449315952026363,
+      "strict_crossing_candidate_found": false
+    }
+  ]
+}
