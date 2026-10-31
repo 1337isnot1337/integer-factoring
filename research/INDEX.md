@@ -16,6 +16,10 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Coherent physical split projections](physical-split-crossings.md): constant left/right splittings preserve strict endpoints and permit unequal alphabets; full profiles and actual new-symbol heights are recomputed, with 5,480 completed finite projections and independent F4 restriction-of-scalars controls.
+
+- [Reflection coordinate-code alphabets](reflection-code-alphabets.md): non-Cartesian physical state restrictions leave the Gaussian class while keeping the endpoint; a 236-alphabet natural-gauge screen and exact original-tensor checks retain the full physical entropy cost.
+
 - [Growing Gaussian physical frames](growing-gaussian-physical-frames.md): endpoint-trivial creation and annihilation words may change a growing fraction of modes, with arbitrary independent mode heights, complete degree costs, and full original-tensor controls.
 
 - [Coupled Gaussian gates](coupled-gaussian-gates.md): cross-letter quadratic operations have an exact rank-two Clifford update with a determinant-mean correction; all rational denominator costs and original-Fock profiles are retained.

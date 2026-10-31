@@ -73,6 +73,13 @@ verify-gaussian-physical-frames:
 verify-gaussian-coupled-gates:
 	python3 tools/check_reflection_gaussian_coupled_gates.py --output /tmp/integer-factoring-gaussian-coupled-gates-replay.json
 
+.PHONY: verify-physical-splits verify-reflection-code-alphabets
+verify-physical-splits:
+	python3 tools/check_physical_split_crossings.py --output /tmp/integer-factoring-physical-split-replay.json
+
+verify-reflection-code-alphabets:
+	python3 tools/check_reflection_code_alphabets.py --output /tmp/integer-factoring-reflection-code-alphabets-replay.json
+
 .PHONY: verify-frontier-extensions
 verify-frontier-extensions:
 	python3 tools/check_all_scale_balanced_obstruction.py

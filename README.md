@@ -129,6 +129,15 @@ Its explicit ternary certificate is weaker than the half-rate crossing;
 the transfer supplies a different criterion for future seeds. Run
 `make verify-multipoint-hermite` for full reconstruction and jet-rank checks.
 
+The [physical split-projection interface](research/physical-split-crossings.md)
+constructs smaller or unequal alphabets with exact left/right endpoint
+repairs, including coherent combinations over F4. Complete searches cover
+5,440 rank-three projections and two twenty-projection energy families.
+[Coordinate-code restrictions](research/reflection-code-alphabets.md) add
+236 recorded alphabets. Every complete profile is recomputed after projection;
+these fixed-gauge screens have not improved the crossing threshold. Run
+`make verify-physical-splits verify-reflection-code-alphabets`.
+
 The [growing physical-frame construction](research/growing-gaussian-physical-frames.md)
 and [coupled quadratic gates](research/coupled-gaussian-gates.md) preserve strict
 endpoints while changing a number of modes that grows with the interval.
