@@ -14,6 +14,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Nonlinear three-direction filters over F4](f4-weyl-filter-screen.md): complete polynomial compilation and a portable catalogue cover 369,603 colored monomial filters, with every distinct exact profile retained and independently replayable.
+
 - [General extreme-core transition masks](raw-core-transition-masks.md): arbitrary binary or `F4` masks preserving every diagonal transition keep the typed endpoint and admit exact charge-block profiles with arbitrary physical core gauges.
 
 - [State filters with nonzero endpoint repair](repaired-endpoint-state-filters.md): a free diagonal physical repair enlarges scalar and joint polynomial synthesis, including a strict feasibility example, signed prime-field filters, and colored binary filters over `F4`.

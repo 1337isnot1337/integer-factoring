@@ -351,3 +351,7 @@ verify-repaired-state-filters:
 .PHONY: verify-raw-core-masks
 verify-raw-core-masks:
 	python3 tools/check_raw_core_mask_profiles.py
+
+.PHONY: verify-f4-filter-catalogue
+verify-f4-filter-catalogue:
+	python3 tools/check_f4_filter_catalogue.py
