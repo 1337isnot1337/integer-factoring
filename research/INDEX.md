@@ -16,6 +16,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Complete ternary quadratic multipoint catalogue](multipoint-rank-one-seeds.md): all binary seeds with pure values at both finite places have an exact `rho >= 3/4` pressure floor, with 3,078 representatives, 23 signatures, independent Toeplitz profiles and full tensor-power reconstructions.
+
 - [Exact Gaussian fixed-type duals](reflection-gaussian-fixed-type-duals.md): rational active-minor certificates prove global minima over all independent gauges and scales for explicit physical marginals at intervals 4, 8, 16, and 32, without claiming an all-type obstruction.
 
 - [Multipoint Hermite crossing transfer](multipoint-hermite-crossings.md): local jets at several points share the degree budget, reconstruct exact crossing pieces, and admit independent two-cut scales with complete factor-construction costs; an exact ternary example validates the criterion below the existing performance level.

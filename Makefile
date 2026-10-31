@@ -14,6 +14,10 @@ verify: verify-docs verify-frontier
 verify-docs:
 	python3 tools/check_docs.py
 
+.PHONY: verify-multipoint-rank-one
+verify-multipoint-rank-one:
+	python3 tools/check_multipoint_rank_one_seeds.py
+
 .PHONY: verify-multilevel-packet
 verify-multilevel-packet:
 	python3 tools/check_multilevel_thue_morse_packet.py

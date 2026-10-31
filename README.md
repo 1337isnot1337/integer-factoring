@@ -91,6 +91,13 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 
 ## Current research frontier
 
+The [complete ternary quadratic catalogue](research/multipoint-rank-one-seeds.md)
+excludes binary seeds with pure values at both finite interpolation points:
+all 3,078 representatives satisfy an exact multipoint pressure floor
+`rho >= 3/4`, over every degree allocation and two-cut scale. Larger
+local ranks and additional field points remain open. Run
+`make verify-multipoint-rank-one` for the catalogue and independent controls.
+
 The [exact Gaussian fixed-type certificates](research/reflection-gaussian-fixed-type-duals.md)
 prove global minima over every independent mode gauge and positive scale
 for four explicit rational physical types, through interval length 32.
