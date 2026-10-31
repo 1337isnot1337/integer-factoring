@@ -1,0 +1,104 @@
+{
+  "scope": "Exact literal row-frame and complete-profile replays; numerical cost minimizations are exploratory.",
+  "records": [
+    {
+      "record": "evidence/f4-smith-flag-five-symbol-prefix.json",
+      "record_sha256": "2441f8befdf4a4aec7337e5122ebac3f69fa5850dee812009310597d8f45bcbc",
+      "status": "passed",
+      "source_provenance": {
+        "search_f4_smith_flags.py": {
+          "location": "worktree",
+          "sha256": "956b91d67be0a2ffa3f2aa03b0280020b63bb3d5a3cd76cdebb909e9570a0c8e"
+        },
+        "f4_smith_flag_fibers.py": {
+          "location": "worktree",
+          "sha256": "e0233b811f3c473bbca2c1988ca8929564bf43c9bbde0db1d5732f56ba69e96e"
+        },
+        "f4_recentered_lattices.py": {
+          "location": "worktree",
+          "sha256": "64e72e1a3a2893ee1c36a8f65064b25a7f6c33dd1c519187b28cd80ea22d2d78"
+        },
+        "search_f4_recentered_crossings.py": {
+          "location": "worktree",
+          "sha256": "8715f1a28b0cb68ad4d3fd29adc53fe082f6181882ed4bce7ce0e9ff582b0be4"
+        },
+        "native_matrix_smith_f4.py": {
+          "location": "worktree",
+          "sha256": "c08da20f1938a371b438e32fbc6a8f6766b48c2cfee5bcd1c956ce137dc70203"
+        },
+        "native_matrix_smith_f4.cpp": {
+          "location": "worktree",
+          "sha256": "5ec995cd04563c2fa99b69afd71bf476d5ca885f1f90377490c30e5a1a55f330"
+        },
+        "weighted_smith_oracle_f4.py": {
+          "location": "worktree",
+          "sha256": "d277f46caa98dab48d243af64c18e42e09e917bf1e862057a55cb35f74a6d572"
+        }
+      },
+      "kind": "equal-order-F4-flag-search",
+      "flags": 3,
+      "binary_rank_certificates_for_regular_modules": 18,
+      "complete_profiles_certified_by_polynomial_frames": 4,
+      "untruncated_target_products": 2,
+      "literal_endpoint_entries": 1250,
+      "retained_witnesses": 1,
+      "completed_target_walks": 120,
+      "complete_profile_queries": 9,
+      "best_recorded_rho": 0.8335422390094076,
+      "strict_pressure_candidate_found": false,
+      "elapsed_seconds": 5.055218856001375
+    },
+    {
+      "record": "evidence/f4-polynomial-smith-flags-five-symbol-prefix.json",
+      "record_sha256": "9cb617caf0be5d8e093a05df1c093eca0c8126dcee8c5764f2ae50024c83a330",
+      "status": "passed",
+      "source_provenance": {
+        "search_f4_polynomial_smith_flags.py": {
+          "location": "worktree",
+          "sha256": "415f3f02b6610549342d06e2c7577f3843bc5a90a432bea953f9e90cf46fe435"
+        },
+        "f4_polynomial_smith_flags.py": {
+          "location": "worktree",
+          "sha256": "3d2d3c144676ce5b6c6de6077c091dd836c6fb5b0545f7b89a5480ea97a13103"
+        },
+        "f4_smith_flag_fibers.py": {
+          "location": "worktree",
+          "sha256": "e0233b811f3c473bbca2c1988ca8929564bf43c9bbde0db1d5732f56ba69e96e"
+        },
+        "f4_recentered_lattices.py": {
+          "location": "worktree",
+          "sha256": "64e72e1a3a2893ee1c36a8f65064b25a7f6c33dd1c519187b28cd80ea22d2d78"
+        },
+        "search_f4_recentered_crossings.py": {
+          "location": "worktree",
+          "sha256": "8715f1a28b0cb68ad4d3fd29adc53fe082f6181882ed4bce7ce0e9ff582b0be4"
+        },
+        "native_matrix_smith_f4.py": {
+          "location": "worktree",
+          "sha256": "c08da20f1938a371b438e32fbc6a8f6766b48c2cfee5bcd1c956ce137dc70203"
+        },
+        "native_matrix_smith_f4.cpp": {
+          "location": "worktree",
+          "sha256": "5ec995cd04563c2fa99b69afd71bf476d5ca885f1f90377490c30e5a1a55f330"
+        },
+        "weighted_smith_oracle_f4.py": {
+          "location": "worktree",
+          "sha256": "d277f46caa98dab48d243af64c18e42e09e917bf1e862057a55cb35f74a6d572"
+        }
+      },
+      "kind": "polynomial-F4-flag-search",
+      "flags": 3,
+      "binary_rank_certificates_for_regular_modules": 18,
+      "complete_profiles_certified_by_polynomial_frames": 4,
+      "untruncated_target_products": 2,
+      "literal_endpoint_entries": 1250,
+      "retained_witnesses": 1,
+      "completed_target_walks": 120,
+      "complete_profile_queries": 9,
+      "best_recorded_rho": 0.8335422390094076,
+      "strict_pressure_candidate_found": false,
+      "elapsed_seconds": 2.4950073700001667
+    }
+  ],
+  "checker_sha256": "4798b8de6272f8521dc2f1094145b923760fe4100b8f3143d378bc2e06e4454d"
+}

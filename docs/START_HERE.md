@@ -54,6 +54,10 @@ For substantial research, check and post a narrow scope on the
 before starting. Small corrections and reproduction reports can go directly
 to the repository.
 
+For ongoing multi-agent research direction, the
+[Astra supervisor prompt](RESEARCH_SUPERVISOR_PROMPT.md) provides a
+copy-ready brief for Dot, including task selection and mathematical guidance.
+
 ## Understand the evidence
 
 The [README result table](../README.md#results-and-evidence) describes the

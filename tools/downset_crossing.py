@@ -21,19 +21,22 @@ def is_downset(code):
                               for i in range(x.bit_length()) if x >> i & 1)
 
 
-def coefficient_matrices(code):
+def coefficient_matrices(code,other=None):
     code = sorted(code)
-    n,index = len(code),{x:i for i,x in enumerate(code)}
+    paired = other is not None
+    other = sorted(other) if paired else code
+    n,h = len(code),len(other)
+    index,second = {x:i for i,x in enumerate(code)},{x:i for i,x in enumerate(other)}
     blocks = defaultdict(list)
-    for x,y in product(code,repeat=2):
+    for x,y in product(code,other):
         blocks[x&y,x^y].append((x,y))
     degree = max(s.bit_count() for _,s in blocks)
-    cuts = [[[0]*(n*n) for _ in range(degree+1)] for _ in range(2)]
+    cuts = [[[0]*(n*h) for _ in range(degree+1)] for _ in range(2)]
     powers = one_plus_powers(degree)
     support = 0
     for (_,diff),pairs in blocks.items():
         distance = diff.bit_count()
-        for (x,y),(u,v) in product(pairs,repeat=2):
+        for (x,y),(v,u) in product(pairs,repeat=2):
             changed = (x^u).bit_count()
             polynomial = powers[distance-changed] << changed
             support += 1
@@ -41,18 +44,23 @@ def coefficient_matrices(code):
                 bit = polynomial & -polynomial
                 k = bit.bit_length()-1
                 polynomial ^= bit
-                cuts[0][k][index[x]*n+index[y]] |= 1 << (index[u]*n+index[v])
-                cuts[1][k][index[x]*n+index[u]] |= 1 << (index[y]*n+index[v])
-    endpoint = [1 << (j*n+i) for i,j in product(range(n),repeat=2)]
+                cuts[0][k][index[x]*h+second[y]] |= 1 << (second[u]*n+index[v])
+                cuts[1][k][index[x]*h+second[u]] |= 1 << (second[y]*n+index[v])
+    endpoint = [1 << (j*n+i) for i,j in product(range(n),range(h))]
     assert all(combine(cut,(1 << (degree+1))-1) == endpoint for cut in cuts)
-    return cuts,{'code_size':n,'degree':degree,'row_blocks':len(blocks),
-                 'nonzero_entry_polynomials':support,'endpoint_matrix_rows':2*n*n}
+    metadata = {'code_size':n,'degree':degree,'row_blocks':len(blocks),
+                'nonzero_entry_polynomials':support,'endpoint_matrix_rows':2*n*h}
+    if paired:
+        metadata['other_code_size'] = h
+    return cuts,metadata
 
 
-def column_blocks(code):
-    assert is_downset(code)
+def column_blocks(code,other=None):
+    paired = other is not None
+    other = other if paired else code
+    assert is_downset(code) and is_downset(other)
     blocks = defaultdict(list)
-    for x,u in product(sorted(code),repeat=2):
+    for x,u in product(sorted(code),sorted(other)):
         diff = x^u
         blocks[diff,x&diff].append(x&~diff)
     result = []
@@ -60,7 +68,8 @@ def column_blocks(code):
         assert len(outside) == len(set(outside))
         outside = tuple(sorted(outside))
         assert is_downset(outside)
-        assert outside == tuple(sorted(blocks[diff,diff^orientation]))
+        if not paired:
+            assert outside == tuple(sorted(blocks[diff,diff^orientation]))
         result.append((diff,orientation,outside))
     return result
 

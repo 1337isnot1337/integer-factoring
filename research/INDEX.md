@@ -16,7 +16,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
-- [Active-difference two-cut rank floor](difference-support-rank-floor.md): a same-monomial witness uniformly excludes hard-core words, their exact-size prefixes, and multiplication graph codes within the elementary full coefficient span; unequal paired alphabets have a separate weaker sumset bound.
+- [All-code elementary coefficient-span barrier](difference-support-rank-floor.md): weighted difference/orientation blocks give rank-sum at least (|A||B|)^(3/4) for arbitrary paired binary codes over every field; equal alphabets force rho >= 3/4, without symmetry or downset assumptions.
 
 - [Difference-unique code rank obstruction](sidon-code-rank-obstruction.md): a literal two-cut block proof excludes the elementary crossing on all cubic binary-field graphs; 16 exact finite controls distinguish the separate multiplication-graph candidate.
 
@@ -384,6 +384,14 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Rectangular-grid frontier](rectangular-grid-frontier.md): limits of unequal splits under the declared-profile recurrence.
 - [Top-channel rank](top-channel-rank.md): exact factor rank on the full partition domain.
 - [Coefficient basis](coefficient-basis.md): scoped minimax calculation for the chosen coefficient span.
+
+## Binary actual-rank tools and physical codes
+
+- [Binary site-symmetry actual-rank barrier](binary-site-symmetry-barrier.md): a universal degree-four certificate forces `rho>=3/4` over any fixed field, including all scalar polynomial degrees, coefficient recombinations, and common partitions into sublinearly many position classes.
+- [Full auxiliary coefficient-span optimization](auxiliary-coefficient-span.md): all 2,588 binary functionals in 15 finite cases, strict recombination gains, exact minmax certificates, and rational rank-sum optima certified by shortest-path dual potentials.
+- [Nonlinear downset-code crossings](downset-code-crossings.md): exact global characteristic-two Smith factors and a constant basis normal form for actual coefficient ranks on every downset and every paired-downset encoding, with complete small-domain controls and nonlinear regular-code searches.
+- [Matching-value curve controls](matching-curve-controls.md): degree-five Nullstellensatz certificate rules out common projected cofactors over all extensions; a degree-eleven inverse certificate proves disjoint cofactor spans. Both remain subject to the broader site-symmetry barrier.
+- [Common projected-cofactor actual-rank barrier](common-cofactor-barrier.md): exact certificates for every one of 32,265 normalized ternary rank-product-two quadratics cover all 12,852,225 coefficient seeds and force `rho>=log(3)/(2log(2))` at every tensor length.
 
 ## Earlier grouping and crossing research
 
