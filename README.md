@@ -59,6 +59,11 @@ input length. It preserves the exact divisor-prefix count while reducing
 the written top-instance bounds to `P^2 lambda <= 99n` and
 `B_tab <= 117n/P`; their large-`P` constants tend to 36 and 40.
 The complete construction still costs `2^O(n/P)` bit operations.
+The [operand-length refinement](research/operand-length-transform-constructor.md)
+reduces each length-conditioned instance further to `P^2 lambda <= 49n`
+and `B_tab <= 57n/P`, with limiting constants 18 and 20. Summing the
+`n` disjoint length classes gives each original prefix count; the added
+polynomial number of evaluator calls preserves the same runtime exponent.
 
 [Adaptive opposite flags](research/adaptive-mixed-place-crossings.md) choose
 the cheapest available jet at each step. A complete rational interval
@@ -67,6 +72,10 @@ width. The [weighted fused oracle](research/fused-weighted-place-profiles.md)
 also accounts for arbitrary physical-symbol heights at every singular
 place. These constructions provide additional search tools; neither
 certificate passes the post-half threshold.
+An [exact compressed fusion recurrence](research/compressed-fusion-root-resonance.md)
+also constructs and checks root-of-unity seeds through nineteen letters.
+Its explicit joint endpoint normalization requires new second-cut costs,
+which the accompanying complete local-profile engine computes.
 
 ## Verification
 
@@ -81,8 +90,10 @@ make verify-mixed-place   # Mixed-place reconstruction and exact rank controls
 make verify-adaptive-mixed-place # Greedy flags and the full rational interval certificate
 make verify-network-codecs # Exact Fourier-coset images and optimal codecs
 make verify-adaptive-transform # Exact convolution, carry bijection, and smaller top bounds
+make verify-operand-length # Asymmetric supports, length-class counts, and 49/57 bounds
 make verify-fused-places  # All finite and closed-place fused profiles; needs NumPy/SciPy
 make verify-fused-weights # Complete weighted local profiles and type-shift controls
+make verify-compressed-fusion # Compressed/literal identities and root-of-unity endpoints
 make verify-schur-fermion # Complete Schur entry formulas and exact comparisons
 make verify-schur-central # Hook-residue identities and full Schur ranks through weight 8
 make verify-schur-gaussian # Exact digit reduction and fixed Gaussian crossing seed

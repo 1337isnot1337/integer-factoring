@@ -33,6 +33,10 @@ verify-network-codecs:
 verify-adaptive-transform:
 	python3 tools/check_adaptive_transform_constructor.py
 
+.PHONY: verify-operand-length
+verify-operand-length:
+	python3 tools/check_operand_length_transform.py
+
 .PHONY: verify-fused-places
 verify-fused-places:
 	python3 tools/check_fused_multipoint_profiles.py
@@ -41,6 +45,11 @@ verify-fused-places:
 .PHONY: verify-fused-weights
 verify-fused-weights:
 	python3 tools/check_fused_weighted_places.py
+
+.PHONY: verify-compressed-fusion
+verify-compressed-fusion:
+	python3 tools/check_compressed_fusion.py --output /tmp/integer-factoring-compressed-fusion-replay.json
+	python3 tools/check_f16_weighted_local_oracle.py --output /tmp/integer-factoring-f16-local-oracle-replay.json
 
 .PHONY: verify-multilevel-packet
 verify-multilevel-packet:
