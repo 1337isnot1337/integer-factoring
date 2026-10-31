@@ -4,6 +4,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Proved machine bounds and their foundations
 
+- [Rational cut meshes](rational-cut-mesh-budget.md): complete exact certificates extend the prior finite-seed cutoff from 95 to 96 over all fields, and to 97 in characteristic two. Small polynomial sources and their tensor powers remain separate candidates.
+- [Interior Jacobian rank budgets](interior-jacobian-budget.md): explicit full-row-rank binary Jacobians and a proper-projection argument give stronger complementary rank bounds; the initial 96-label characteristic-two certificate is strengthened by the rational-mesh successor.
 - [Half-rate factoring composition](half-rate-factoring.md): ordinary proof of the `1/2` machine bound; its final Lean theorem is in [`formal-appendix/HalfTheorem.lean`](../formal-appendix/HalfTheorem.lean).
 - [Top constructor and codec](half-top-constructor.md): deterministic table construction and exact input translation.
 - [Evaluator and encoding audit](half-evaluator-audit.md): recursive evaluator, computable pad, and charged bit costs.
