@@ -23,6 +23,12 @@ from reflection_hot_state_support import core_data
 @lru_cache(maxsize=32)
 def coordinate_basis(interval, place, side, ramification=1, core=1, internal_regular=False):
     data = core_data(interval, place, ramification, core, internal_regular)
+    return coordinate_basis_for_data(data, side)
+
+
+def coordinate_basis_for_data(data, side):
+    """Construct regular physical coordinates from a proved CAR support record."""
+    core = data['core']
     names = data['core_names'][side]
     images = {}
     for name in names:
@@ -140,6 +146,12 @@ def gaussian_coordinates(interval, place, ramification=1, core=1, profile_precis
                     assert current['regular_images'][a + '_' + kind] == original['regular_images'][b + '_' + kind]
         return {**zero, 'data': data, 'left': left, 'right': right,
                 'metadata': {**zero['metadata'], 'reused_identical_zero_matrix': True}}
+    return gaussian_coordinates_for_data(data, left, right, profile_precision)
+
+
+def gaussian_coordinates_for_data(data, left, right, profile_precision=512):
+    """Export complete parity matrices for an explicit regular coordinate basis."""
+    interval = data['M']
     extended = dict(data)
     extended['active_images'] = {}
     names = []

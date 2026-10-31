@@ -14,6 +14,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [All physical-leg bulk orderings](reflection-hot-all-bulk-gauges.md): two explicit regular cross pivots cover every nonnegative bulk ordering with the same bounded support, complete coefficient sources, and independent original-tensor controls.
+
 - [Separate physical-leg bulk heights](reflection-hot-leg-bulk-gauges.md): explicit ordering and hot-cold inequalities preserve a bounded reflection core, with distinct physical type costs and exact original-tensor controls.
 
 - [Completed cold-compensated searches](reflection-hot-compensated-searches.md): full coefficient grids on negative-height rays, scoped continuous searches through interval 64, and nonlinear OR-state penalties include every compensating cold cost.

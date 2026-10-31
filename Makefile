@@ -426,3 +426,8 @@ verify-resonant-operators:
 .PHONY: verify-reflection-leg-bulks
 verify-reflection-leg-bulks:
 	python3 tools/check_reflection_hot_leg_bulk_gauges.py --extended
+
+.PHONY: verify-reflection-all-bulks
+verify-reflection-all-bulks:
+	python3 tools/check_reflection_hot_all_bulk_gauges.py --extended
+	python3 tools/check_reflection_hot_state_gauges.py --extended

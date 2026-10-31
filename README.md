@@ -237,6 +237,13 @@ OR-state penalties. None supplies a gain in its stated scope. The
 also permits different bulk heights on the four legs within an explicit
 regularity cone, retaining the same bounded active core and both physical
 type costs. `make verify-reflection-leg-bulks` checks its original tensors.
+The [second regular cross pivot](research/reflection-hot-all-bulk-gauges.md)
+removes the bulk-ordering restriction: all nonnegative physical-leg bulk
+choices now use the same bounded core, subject to the stated hot-cold
+regularity inequalities. Complete coefficient expansion is checked before
+Smith elimination, including the large local-unit denominators of this
+second pivot. `make verify-reflection-all-bulks` replays the new construction
+and the shared hot-state regression.
 
 The [Walsh permanent calculation](research/walsh-principal-permanents.md)
 gives all-size scalar valuation formulas beyond the determinant model.

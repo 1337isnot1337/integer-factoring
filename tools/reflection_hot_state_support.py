@@ -95,8 +95,9 @@ def concentrate_residue(images, offset, residue, step, count, variable, orders, 
     return {coordinate(j) for j in retained}
 
 
-def concentrate(interval, ramification=1, core=1, internal_regular=False):
-    before = full_images(interval, ramification, core, internal_regular)
+def concentrate(interval, ramification=1, core=1, internal_regular=False, source_images=None):
+    before = (full_images(interval, ramification, core, internal_regular)
+              if source_images is None else source_images)
     images = {name: (list(first), list(second)) for name, (first, second) in before.items()}
     m, k = interval // 2, core
     orders = [ramification * (2 + 4 * r) for r in range(interval)]

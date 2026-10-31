@@ -215,8 +215,9 @@
           "builder_known_below": 1024,
           "exact_polynomial_matrix": true,
           "known_below": 512,
-          "matrix_seconds": 0.014660586999525549,
-          "defect_source_maximum_bits": 21
+          "matrix_seconds": 0.0021024690000785995,
+          "defect_source_maximum_bits": 21,
+          "smith_precision": 512
         },
         {
           "matrix_order": 16,
@@ -232,8 +233,9 @@
           "builder_known_below": 1024,
           "exact_polynomial_matrix": true,
           "known_below": 512,
-          "matrix_seconds": 0.014660586999525549,
-          "defect_source_maximum_bits": 19
+          "matrix_seconds": 0.0021024690000785995,
+          "defect_source_maximum_bits": 19,
+          "smith_precision": 512
         }
       ]
     },
@@ -264,8 +266,9 @@
           "builder_known_below": 1024,
           "exact_polynomial_matrix": true,
           "known_below": 512,
-          "matrix_seconds": 0.014660586999525549,
-          "defect_source_maximum_bits": 25
+          "matrix_seconds": 0.0021024690000785995,
+          "defect_source_maximum_bits": 25,
+          "smith_precision": 512
         },
         {
           "matrix_order": 16,
@@ -281,8 +284,9 @@
           "builder_known_below": 1024,
           "exact_polynomial_matrix": true,
           "known_below": 512,
-          "matrix_seconds": 0.014660586999525549,
-          "defect_source_maximum_bits": 19
+          "matrix_seconds": 0.0021024690000785995,
+          "defect_source_maximum_bits": 19,
+          "smith_precision": 512
         }
       ]
     },
@@ -314,8 +318,9 @@
           "builder_known_below": 1024,
           "exact_polynomial_matrix": true,
           "known_below": 512,
-          "matrix_seconds": 0.014660586999525549,
-          "defect_source_maximum_bits": 23
+          "matrix_seconds": 0.0021024690000785995,
+          "defect_source_maximum_bits": 23,
+          "smith_precision": 512
         },
         {
           "matrix_order": 16,
@@ -331,8 +336,9 @@
           "builder_known_below": 1024,
           "exact_polynomial_matrix": true,
           "known_below": 512,
-          "matrix_seconds": 0.014660586999525549,
-          "defect_source_maximum_bits": 23
+          "matrix_seconds": 0.0021024690000785995,
+          "defect_source_maximum_bits": 23,
+          "smith_precision": 512
         }
       ]
     },
@@ -364,8 +370,9 @@
           "builder_known_below": 1024,
           "exact_polynomial_matrix": true,
           "known_below": 512,
-          "matrix_seconds": 0.0009878199998638593,
-          "defect_source_maximum_bits": 63
+          "matrix_seconds": 0.0010807840000097713,
+          "defect_source_maximum_bits": 63,
+          "smith_precision": 512
         },
         {
           "matrix_order": 16,
@@ -381,8 +388,9 @@
           "builder_known_below": 1024,
           "exact_polynomial_matrix": true,
           "known_below": 512,
-          "matrix_seconds": 0.0009878199998638593,
-          "defect_source_maximum_bits": 67
+          "matrix_seconds": 0.0010807840000097713,
+          "defect_source_maximum_bits": 67,
+          "smith_precision": 512
         }
       ]
     },
@@ -414,8 +422,9 @@
           "builder_known_below": 1024,
           "exact_polynomial_matrix": true,
           "known_below": 512,
-          "matrix_seconds": 1.386011112000233,
-          "defect_source_maximum_bits": 65
+          "matrix_seconds": 0.3121038799999951,
+          "defect_source_maximum_bits": 65,
+          "smith_precision": 512
         },
         {
           "matrix_order": 256,
@@ -431,8 +440,9 @@
           "builder_known_below": 1024,
           "exact_polynomial_matrix": true,
           "known_below": 512,
-          "matrix_seconds": 1.386011112000233,
-          "defect_source_maximum_bits": 65
+          "matrix_seconds": 0.3121038799999951,
+          "defect_source_maximum_bits": 65,
+          "smith_precision": 512
         }
       ]
     },
@@ -463,8 +473,9 @@
           "builder_known_below": 1024,
           "exact_polynomial_matrix": true,
           "known_below": 512,
-          "matrix_seconds": 1.386011112000233,
-          "defect_source_maximum_bits": 65
+          "matrix_seconds": 0.3121038799999951,
+          "defect_source_maximum_bits": 65,
+          "smith_precision": 512
         },
         {
           "matrix_order": 256,
@@ -480,8 +491,9 @@
           "builder_known_below": 1024,
           "exact_polynomial_matrix": true,
           "known_below": 512,
-          "matrix_seconds": 1.386011112000233,
-          "defect_source_maximum_bits": 65
+          "matrix_seconds": 0.3121038799999951,
+          "defect_source_maximum_bits": 65,
+          "smith_precision": 512
         }
       ]
     },
@@ -513,8 +525,9 @@
           "builder_known_below": 1024,
           "exact_polynomial_matrix": true,
           "known_below": 512,
-          "matrix_seconds": 0.0012210120003146585,
-          "defect_source_maximum_bits": 9
+          "matrix_seconds": 0.0009352239999316225,
+          "defect_source_maximum_bits": 9,
+          "smith_precision": 512
         },
         {
           "matrix_order": 16,
@@ -530,8 +543,9 @@
           "builder_known_below": 1024,
           "exact_polynomial_matrix": true,
           "known_below": 512,
-          "matrix_seconds": 0.0012210120003146585,
-          "defect_source_maximum_bits": 11
+          "matrix_seconds": 0.0009352239999316225,
+          "defect_source_maximum_bits": 11,
+          "smith_precision": 512
         }
       ]
     },
@@ -563,8 +577,9 @@
           "builder_known_below": 1024,
           "exact_polynomial_matrix": true,
           "known_below": 512,
-          "matrix_seconds": 0.0007773030001771986,
-          "defect_source_maximum_bits": 21
+          "matrix_seconds": 0.0008061800000405128,
+          "defect_source_maximum_bits": 21,
+          "smith_precision": 512
         },
         {
           "matrix_order": 16,
@@ -580,8 +595,9 @@
           "builder_known_below": 1024,
           "exact_polynomial_matrix": true,
           "known_below": 512,
-          "matrix_seconds": 0.0007773030001771986,
-          "defect_source_maximum_bits": 27
+          "matrix_seconds": 0.0008061800000405128,
+          "defect_source_maximum_bits": 27,
+          "smith_precision": 512
         }
       ]
     },
@@ -614,8 +630,9 @@
           "builder_known_below": 1024,
           "exact_polynomial_matrix": true,
           "known_below": 512,
-          "matrix_seconds": 14.46219639499941,
-          "defect_source_maximum_bits": 96
+          "matrix_seconds": 4.004466088000072,
+          "defect_source_maximum_bits": 96,
+          "smith_precision": 512
         },
         {
           "matrix_order": 256,
@@ -631,8 +648,9 @@
           "builder_known_below": 1024,
           "exact_polynomial_matrix": true,
           "known_below": 512,
-          "matrix_seconds": 14.46219639499941,
-          "defect_source_maximum_bits": 84
+          "matrix_seconds": 4.004466088000072,
+          "defect_source_maximum_bits": 84,
+          "smith_precision": 512
         }
       ]
     },
@@ -665,8 +683,9 @@
           "builder_known_below": 1024,
           "exact_polynomial_matrix": true,
           "known_below": 512,
-          "matrix_seconds": 8.133288007999909,
-          "defect_source_maximum_bits": 48
+          "matrix_seconds": 2.3532275100000106,
+          "defect_source_maximum_bits": 48,
+          "smith_precision": 512
         },
         {
           "matrix_order": 256,
@@ -682,8 +701,9 @@
           "builder_known_below": 1024,
           "exact_polynomial_matrix": true,
           "known_below": 512,
-          "matrix_seconds": 8.133288007999909,
-          "defect_source_maximum_bits": 40
+          "matrix_seconds": 2.3532275100000106,
+          "defect_source_maximum_bits": 40,
+          "smith_precision": 512
         }
       ]
     }
@@ -702,17 +722,6 @@
       "maximum_error": 1.6075463356302055e-10
     }
   ],
-  "original_complete_weighted_cut_profiles": 56,
-  "endpoint_coefficient_equalities": 328960,
-  "source_sha256": {
-    "research/reflection-hot-state-gauges.md": "56573ab38297fe7c6288640d879d4583387544e94326a304dc9460c991b5dc4e",
-    "tools/reflection_hot_state_support.py": "452e8448cc14783e6333be3ed0f7ccf25f10f650254c8bd705080f447652f40a",
-    "tools/reflection_hot_state_coordinates.py": "261551541d837b5695f24388f41d402ca70d4550d023d3e534d94eb85ccf13d9",
-    "tools/reflection_hot_state_gauges.py": "eae7981b520209aead4258e294b5c14efbd73640130c017c8ce93e3d2a220e84",
-    "tools/native_fock_f4_parity.cpp": "d796f245f13b44e6cc65a226b9ae5fb59bac0cedc565c0b0f73e791cb722c7e3",
-    "tools/check_reflection_hot_state_gauges.py": "4261e5e5f3ad82cea31ccf605db59cc09402361ffad68587aa6cffe0221a501f"
-  },
-  "scope": "Exact regular support and original weighted profiles; floating pressure and derivative controls; no improved exponent claim.",
   "adaptive_elimination_control": {
     "initial_elimination_precision": 512,
     "final_elimination_precisions": [
@@ -726,5 +735,15 @@
     "maximum_height": 1000,
     "pressure_error": 0.0
   },
-  "verification_assembly": "Extended original-tensor replay plus a scoped replay of adaptive elimination after that isolated change."
+  "original_complete_weighted_cut_profiles": 56,
+  "endpoint_coefficient_equalities": 328960,
+  "source_sha256": {
+    "research/reflection-hot-state-gauges.md": "56573ab38297fe7c6288640d879d4583387544e94326a304dc9460c991b5dc4e",
+    "tools/reflection_hot_state_support.py": "e3e648aca414018d81ca8edfd4b74812e16935b09617c730778166a7cc4ea0b0",
+    "tools/reflection_hot_state_coordinates.py": "fac59d6b0bf0a4872ca0b6aff22d9c53d2dec4d4324e6ef6502b8617456661b1",
+    "tools/reflection_hot_state_gauges.py": "eae7981b520209aead4258e294b5c14efbd73640130c017c8ce93e3d2a220e84",
+    "tools/native_fock_f4_parity.cpp": "d796f245f13b44e6cc65a226b9ae5fb59bac0cedc565c0b0f73e791cb722c7e3",
+    "tools/check_reflection_hot_state_gauges.py": "4261e5e5f3ad82cea31ccf605db59cc09402361ffad68587aa6cffe0221a501f"
+  },
+  "scope": "Exact regular support and original weighted profiles; floating pressure and derivative controls; no improved exponent claim."
 }
