@@ -65,11 +65,13 @@ mode sums are finite, so this also applies to every coefficient of the
 operator series. The ideal is proper and homogeneous with positive
 weights; projection to the quotient leaves constant coefficients intact.
 
-The quotient here is in the **state argument** of an operator. We retain
-the full polynomial `a^mu` as its operator parameter, including monomials
-that belong to `I_p`. Preserving the state ideal alone would not justify
-deleting such operator-parameter monomials. Neither the construction nor
-its general-family checker makes that deletion.
+The construction below retains the full polynomial `a^mu` as its operator
+parameter. Preserving the state ideal alone would not justify deleting its
+nonregular monomials. The separate [parameter-descent proof](modular-parameter-descent.md)
+now establishes that the same ideal acts as zero in the operator parameter,
+so a reduced dual compiler computes exactly the same pieces. The original
+general-family checker retains the unreduced parameters as an independent
+control.
 
 This is a quotient of the representation on which all source identities
 already hold. It does not discard a mode with a nonzero commutator.

@@ -8,7 +8,9 @@
     "independent_toeplitz_ranks": 32,
     "full_tensor_replays": 39,
     "recentered_nonbinary_references": 4,
-    "negative_controls": 4
+    "negative_controls": 4,
+    "table_coordinate_fibers": 4,
+    "table_literal_substitutions": 100
   },
   "cases": [
     {
@@ -993,7 +995,7 @@
     "method": "Literal basis expansion in independent binary Smith jets."
   },
   "source_sha256": {
-    "f4_recentered_lattices.py": "29efac65212430b8aff0f4b28bced0a275c55c176c16be668c23f19210e12d29",
-    "check_f4_recentered_lattices.py": "a12c68220cf58cc71c515edad5777ee325ca89336a8ffdc97d955f06dc5b504d"
+    "f4_recentered_lattices.py": "64e72e1a3a2893ee1c36a8f65064b25a7f6c33dd1c519187b28cd80ea22d2d78",
+    "check_f4_recentered_lattices.py": "cfcc4b33b5158a6a36c417cfd8d398442ba3eec502158714a77a3c303e438e17"
   }
 }

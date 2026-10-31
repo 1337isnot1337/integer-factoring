@@ -96,6 +96,14 @@ basis extraction is only 2^O(sqrt(b)). If m and bits(E) have the same bound,
 the whole extraction fits that scale. This observation does not construct
 the class-group generators or relation matrix.
 
+Without that preprocessing there is still a useful uniform tail bound:
+if N has r distinct prime factors, then N>=(r+1)!, since the i-th prime is
+at least i+1. Hence r=O(b/log b), and the generic exponential factor is
+2^O(b/log b). Thus, with the intended exp(O(sqrt(b log b))) encoded
+relation data, this postprocessing alone fits saving exponent 1. The earlier roughness step
+is stronger and places it at the smaller arithmetic scale. Neither bound
+supplies relations or missing generator directions.
+
 ## 4. Exact controls
 
 Run `python3 tools/check_arithmetic_two_group.py`. The
