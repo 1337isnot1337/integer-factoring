@@ -18,6 +18,7 @@ verify-constructions:
 	python3 tools/check_interior_jacobian_budget.py --output /tmp/integer-factoring-interior-jacobian-budget.json
 	python3 tools/check_rational_cut_mesh_budget.py --output /tmp/integer-factoring-rational-cut-mesh-budget.json
 	python3 tools/check_compatible_compression_budget.py --cores evidence/compatible-compression-cores.json --output /tmp/integer-factoring-compatible-compression-budget.json
+	python3 tools/check_compatible_formal_cutoff.py --cores evidence/compatible-compression-cores.json --output /tmp/integer-factoring-compatible-formal-cutoff.json
 	python3 tools/check_carry_swap_circuits.py --witnesses evidence/carry-swap-finite-minors.json --output /tmp/integer-factoring-carry-swap-circuit-audit.json
 	python3 tools/check_low_choi_cycle_searches.py --output /tmp/integer-factoring-low-choi-cycle-searches.json
 	python3 tools/check_modified_transpose_roots.py --output /tmp/integer-factoring-modified-transpose-roots.json

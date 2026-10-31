@@ -4,6 +4,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Proved machine bounds and their foundations
 
+- [Formal compatible-core cutoff](compatible-formal-cutoff.md): the all-field exclusion for supplied Laurent-series crossing decompositions advances from 71 to **73 labels**, with moving subspaces, geometric compression, and complete exact rational coverage.
 - [Compatible integer compression cores](compatible-compression-budget.md): 50 compatible blocks with integer maximal minors of gcd one extend the exact finite-seed exclusion to **97 labels over every field**. Complete rational interval coverage certifies the narrow final margin.
 - [Column-prefix budgets](cnot-cut-budgets.md): exact coefficient cutoffs and an infinite generating identity exclude the zero-basepoint Smith criterion for CNOT row profiles at 16, 32, and 64 labels, including constant basis changes that mix all labels.
 - [Exterior majority-state precision witness](exterior-majority-precision-witness.md): an explicit single Cauchy minor, realized by rank-one `0/1` tables, forces `Omega(MD/u)` local precision for the proposed exterior lift. The original Boolean deformation and divisor tensors remain separate questions.
