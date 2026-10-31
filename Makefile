@@ -22,6 +22,7 @@ verify-bell:
 	python3 tools/check_code_folded_bell.py
 	python3 tools/check_bell_projection.py
 	python3 tools/check_bell_cubic_floor.py
+	python3 tools/check_bell_quartic_rigidity.py
 
 verify-post-half:
 	python3 tools/check_half_piece_ranks.py --full

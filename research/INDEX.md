@@ -21,6 +21,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Code-quotient crossings](code-quotient-crossings.md): exact projection and maximal common division, a characteristic-zero pressure restriction, and a precise modular-cancellation target.
 - [Signed boundary crossings](signed-boundary-crossings.md): exact intertwiners and isotropic code reduction, with complete common-factor normalization and retained explicit paths.
 - [Cubic Bell outer-rank floor](bell-cubic-outer-rank-floor.md): the endpoint forces pressure above `5/7` for rank-one constant-row/leading-column cubics in every odd characteristic; quartics remain open.
+- [Quartic Bell paths and matrix rigidity](bell-quartic-rigidity.md): a chirped reshape turns a self-reciprocal quartic into an explicit Hadamard sparse modification, with necessary critical parameters and a stated missing converse.
 
 - [Pieces-to-factoring transfer](pieces-to-factoring.md): conditional crossing-parameter transfer, with full bit-cost accounting.
 - [Scale-one modular transfer](scale-one-modular-transfer.md): fixed-field transfer and machine costs.
