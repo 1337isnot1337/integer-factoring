@@ -137,8 +137,13 @@ also proves that the displayed truncated-symmetric interval pressure stays
 strictly above the threshold for every integer digit count `q >= 2`,
 every mode count, and every profile scale. Its fixed-`q` gap has a sharp
 Lambert-W asymptotic. Noninterval modes and independent mode heights remain
-outside this theorem. Run `make verify-frontier-extensions` for the new
-ordinary-proof controls; neither extension changes the factoring score.
+outside this theorem. The [weighted Pascal reduction](research/weighted-lucas-pascal-profiles.md)
+now computes admissible independent-height profiles by constant-field elimination.
+Lucas antichains permit every height vector, and a prime-radix traversal skips
+arbitrarily large gaps between modes. These are exact search tools; the original
+crossing degree remains part of the eventual evaluator cost. Run
+`make verify-frontier-extensions verify-weighted-pascal` for the ordinary-proof
+controls; neither result changes the factoring score.
 
 The [mixed-field rectangular repair](research/rectangular-f4-repair.md) now
 settles the four-element-field construction left open in the preceding

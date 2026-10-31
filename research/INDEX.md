@@ -46,6 +46,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Dyadic affine mode reduction](one-species-dyadic-affine-reduction.md): appending common trailing binary ones gives exactly the smaller typed one-species tensor after ramification, including independent-gauge transport.
 - [Pascal complement convolution](pascal-complement-convolution.md): characteristic-independent complement-order inequalities and a field-free pressure envelope for arbitrary mode sets.
 - [All-field Pascal crossings](all-field-pascal-crossings.md): signed global Gaussian endpoints and Pascal-complement profiles over every field, including independent matching types.
+- [Weighted Lucas-Pascal profiles](weighted-lucas-pascal-profiles.md): a unit factorization gives exact independent-height profiles by constant-field elimination, and prime-radix block traversal skips arbitrary index gaps.
 - [Graded even tensor powers](graded-even-power-transfer.md): both cut profiles tensorize with explicit signs, admitting non-Gaussian endpoint-vanishing perturbations in odd characteristic.
 - [Truncated symmetric Pascal crossings](truncated-symmetric-pascal-crossings.md): p-state modes in characteristic p give ordinary tensor powers, exact digit-sum spectra, and arbitrary-degree endpoint-vanishing perturbations.
 - [Every-digit interval frontier](truncated-symmetric-interval-frontier.md): the displayed interval pressure stays above the half-rate threshold for every digit count, every interval length, and every scale, with a sharp fixed-digit Lambert-W gap.

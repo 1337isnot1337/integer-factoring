@@ -262,3 +262,7 @@ help:
 	  'make verify-formal        - rebuild original Lean lemmas (Lean 4.35.0)' \
 	  'make verify-k6            - rebuild the certified 1/30 machine (Lean 4.35.0)' \
 	  'make verify-half-appendix - rebuild the certified 1/2 machine (Lean 4.33.1)'
+
+.PHONY: verify-weighted-pascal
+verify-weighted-pascal:
+	python3 tools/check_lucas_weighted_pascal.py
