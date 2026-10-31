@@ -105,6 +105,14 @@ parity of any number of modes is excluded at every real charge. The proof
 uses a degree-controlled log-odds inequality and retains the full physical
 cost. Run `make verify-read-once-filters` for exact independent controls.
 
+The [all-digit charged Gaussian theorem](research/all-digit-charged-gaussian-floor.md)
+now proves positive critical pressure for every real digit parameter
+`q > 1`, integer interval length, real aggregate charge, and positive
+scale. Differentiating in `q` reduces the result to a single convex kernel;
+2,648 exact positive rectangles cover the remaining compact domains.
+This closes the odd-digit gap for this Gaussian family while leaving the
+proved factoring score unchanged. Run `make verify-all-digit-gaussian`.
+
 The latest [research checkpoint](research/frontier-session-20261031.md)
 keeps the proved score at `1/2`. An
 [accelerated exact certificate](research/accelerated-interval-certificates.md)

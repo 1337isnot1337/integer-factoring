@@ -212,6 +212,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Obstructions and work beyond 1/2
 
+- [All-digit charged Gaussian floor](all-digit-charged-gaussian-floor.md): strict monotonicity in every real digit parameter and positive full critical pressure for all `q>1`, charges, scales, and interval lengths; exact compact certificates plus analytic tails.
+
 - [Read-once Boolean filter floor](read-once-boolean-filter-floor.md): a degree-controlled log-odds theorem excludes every homogeneous read-once filter at interior charges and every parity filter at all charges, without a selected-mode bound.
 
 - [Multilevel canonical-packet collisions](multilevel-thue-morse-packet.md): explicit one-bit Thue--Morse inputs collide with zero on every retained valuation level below a chosen cutoff; exact local-polynomial controls supplement the all-size proof.
