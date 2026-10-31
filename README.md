@@ -107,6 +107,13 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs five groups on 
 
 ## Current research frontier
 
+The [difference-unique code obstruction](research/sidon-code-rank-obstruction.md)
+shows why sparse additive graph codes do not rescue the elementary crossing:
+its full multivariate coefficient span has rank-sum at least q(q-1)/sqrt(2).
+This includes every binary cubic field graph, but not general nonlinear codes
+or new auxiliary mechanisms. Sixteen finite controls replay with
+`python3 tools/check_sidon_code_crossings.py`; the factoring score is unchanged.
+
 The [typed rational strictification theorem](research/typed-rational-crossing-strictification.md)
 extends the binary pressure floor to scalar rational kernels with only
 zero/endpoint denominators and crossing endpoints at every paired type

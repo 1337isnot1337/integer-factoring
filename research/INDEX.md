@@ -16,6 +16,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Difference-unique code rank obstruction](sidon-code-rank-obstruction.md): a literal two-cut block proof excludes the elementary crossing on all cubic binary-field graphs; 16 exact finite controls distinguish the separate multiplication-graph candidate.
+
 - [Dyadic inverse sections](dyadic-inverse-sections.md): exact arithmetic interval recursion, affine-fibre floor sums, integer-factor recovery, and the unresolved aggregation cost.
 - [Dyadic orbit aggregation](dyadic-orbit-aggregation.md): polynomial bit time for complete fractional-linear cyclic families with interval selectors and arbitrary affine changes.
 - [Interval orbit gcd](interval-orbit-gcd.md): exact correlated-root interface, two boundary recurrences, output-sensitive algorithm target, and source audit; its stronger factoring consequence is conditional.
