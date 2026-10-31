@@ -36,6 +36,9 @@ The composition uses the existing clique evaluator from [Anthropic's Appendix B]
 The arithmetic framework work now includes an
 [exact dyadic inverse-section recursion](research/dyadic-inverse-sections.md)
 with interval selectors and Euclidean aggregation of affine fibres.
+An [exact cyclic-family aggregation](research/dyadic-orbit-aggregation.md)
+also handles complete fractional-linear orbits with affine changes in
+polynomial bit time.
 The current reference evaluator still visits exponentially many low-bit
 roots and does not improve the bound. Its next target is aggregation of
 whole families of arithmetic sections, following the released Bell lane
@@ -53,6 +56,7 @@ make verify-frontier      # Focused research certificates
 make verify-post-half     # Larger optional rank tests
 make verify-docs          # Local Markdown-link check
 python3 tools/check_dyadic_hyperbola.py # Exact arithmetic-framework controls
+python3 tools/check_dyadic_orbit_aggregation.py # Complete cyclic-family controls
 ```
 
 The Python checks use Python 3 and its standard library. Some optional checks use NumPy for speed.

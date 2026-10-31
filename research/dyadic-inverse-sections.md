@@ -200,10 +200,14 @@ or replacing its count by an asymptotic density with error exceeding
 one, would not by itself give the required all-input algorithm.
 The next experiment is exact merging and algebraic aggregation of
 linear-fractional sections, including all interval boundary data.
+The [complete cyclic-family identity](dyadic-orbit-aggregation.md) now
+provides a positive aggregation primitive with arbitrary affine changes
+and two interval selectors. Relating the correlated actual section
+family to these complete averages remains open.
 
 Related earlier repository work concerns
-[Fourier multiplication-gate queries on PR #23](https://github.com/1337isnot1337/integer-factoring/blob/research/beyond-half-20261030/research/fourier-multiplication-gates.md)
-and [p-adic digit/carry queries on PR #26](https://github.com/1337isnot1337/integer-factoring/blob/research/further-bounds-20261030/research/padic-digit-carry-transfer.md).
+[Fourier multiplication-gate queries on PR #23](https://github.com/1337isnot1337/integer-factoring/blob/147652574e7ce1ff68b2c378712846cbf438da34/research/fourier-multiplication-gates.md)
+and [p-adic digit/carry queries on PR #26](https://github.com/1337isnot1337/integer-factoring/blob/dd28d375ea65863356c67b051f5d4f217562475d/research/padic-digit-carry-transfer.md).
 Those do not aggregate the present inverse-section recursion.
 For analytic background, Shparlinski's
 [Modular Hyperbolas, arXiv:1103.2879v4](https://arxiv.org/abs/1103.2879v4)
