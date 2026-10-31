@@ -166,6 +166,15 @@ polynomials even at mode scales with hundreds of bits. Full infinity
 degrees and any denominator clearing remain charged. This supplies a
 concrete route for testing coordinated cancellations at both cuts.
 
+The [coupled identity-filter reduction](research/coupled-identity-filter-reduction.md)
+now concentrates arbitrary joint filters on `r` selected directions into
+`2*r` zero modes, independently of interval length. The proof covers
+initial directions in every characteristic, and terminal or opposite-end
+directions at prime-power lengths. Exact original-cut comparisons check
+both profiles, including the auxiliary zero units in the mixed case.
+These constructions permit correlations between modes; no rate gain is
+claimed. `make verify-coupled-filters` replays the controls.
+
 The [Walsh permanent calculation](research/walsh-principal-permanents.md)
 gives all-size scalar valuation formulas beyond the determinant model.
 It also proves that exponentially many grouped modes survive the current

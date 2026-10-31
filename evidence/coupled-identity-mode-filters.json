@@ -1,0 +1,754 @@
+{
+  "status": "Exact bounded cores and coupled polynomial crossings; no pressure gain claimed.",
+  "simultaneous_regular_concentration": {
+    "exact_polynomial_form_identities": 936,
+    "interpolation_and_unit_gram_controls": [
+      {
+        "prime": 2,
+        "n": 3,
+        "modes": 1,
+        "n_mod_prime": 1,
+        "active_zero_modes": 2
+      },
+      {
+        "prime": 2,
+        "n": 4,
+        "modes": 1,
+        "n_mod_prime": 0,
+        "active_zero_modes": 2
+      },
+      {
+        "prime": 2,
+        "n": 5,
+        "modes": 1,
+        "n_mod_prime": 1,
+        "active_zero_modes": 2
+      },
+      {
+        "prime": 2,
+        "n": 6,
+        "modes": 1,
+        "n_mod_prime": 0,
+        "active_zero_modes": 2
+      },
+      {
+        "prime": 2,
+        "n": 7,
+        "modes": 1,
+        "n_mod_prime": 1,
+        "active_zero_modes": 2
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "modes": 1,
+        "n_mod_prime": 0,
+        "active_zero_modes": 2
+      },
+      {
+        "prime": 2,
+        "n": 9,
+        "modes": 1,
+        "n_mod_prime": 1,
+        "active_zero_modes": 2
+      },
+      {
+        "prime": 2,
+        "n": 10,
+        "modes": 1,
+        "n_mod_prime": 0,
+        "active_zero_modes": 2
+      },
+      {
+        "prime": 2,
+        "n": 3,
+        "modes": 2,
+        "n_mod_prime": 1,
+        "active_zero_modes": 4
+      },
+      {
+        "prime": 2,
+        "n": 4,
+        "modes": 2,
+        "n_mod_prime": 0,
+        "active_zero_modes": 4
+      },
+      {
+        "prime": 2,
+        "n": 5,
+        "modes": 2,
+        "n_mod_prime": 1,
+        "active_zero_modes": 4
+      },
+      {
+        "prime": 2,
+        "n": 6,
+        "modes": 2,
+        "n_mod_prime": 0,
+        "active_zero_modes": 4
+      },
+      {
+        "prime": 2,
+        "n": 7,
+        "modes": 2,
+        "n_mod_prime": 1,
+        "active_zero_modes": 4
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "modes": 2,
+        "n_mod_prime": 0,
+        "active_zero_modes": 4
+      },
+      {
+        "prime": 2,
+        "n": 9,
+        "modes": 2,
+        "n_mod_prime": 1,
+        "active_zero_modes": 4
+      },
+      {
+        "prime": 2,
+        "n": 10,
+        "modes": 2,
+        "n_mod_prime": 0,
+        "active_zero_modes": 4
+      },
+      {
+        "prime": 2,
+        "n": 3,
+        "modes": 3,
+        "n_mod_prime": 1,
+        "active_zero_modes": 6
+      },
+      {
+        "prime": 2,
+        "n": 4,
+        "modes": 3,
+        "n_mod_prime": 0,
+        "active_zero_modes": 6
+      },
+      {
+        "prime": 2,
+        "n": 5,
+        "modes": 3,
+        "n_mod_prime": 1,
+        "active_zero_modes": 6
+      },
+      {
+        "prime": 2,
+        "n": 6,
+        "modes": 3,
+        "n_mod_prime": 0,
+        "active_zero_modes": 6
+      },
+      {
+        "prime": 2,
+        "n": 7,
+        "modes": 3,
+        "n_mod_prime": 1,
+        "active_zero_modes": 6
+      },
+      {
+        "prime": 2,
+        "n": 8,
+        "modes": 3,
+        "n_mod_prime": 0,
+        "active_zero_modes": 6
+      },
+      {
+        "prime": 2,
+        "n": 9,
+        "modes": 3,
+        "n_mod_prime": 1,
+        "active_zero_modes": 6
+      },
+      {
+        "prime": 2,
+        "n": 10,
+        "modes": 3,
+        "n_mod_prime": 0,
+        "active_zero_modes": 6
+      },
+      {
+        "prime": 3,
+        "n": 3,
+        "modes": 1,
+        "n_mod_prime": 0,
+        "active_zero_modes": 2
+      },
+      {
+        "prime": 3,
+        "n": 4,
+        "modes": 1,
+        "n_mod_prime": 1,
+        "active_zero_modes": 2
+      },
+      {
+        "prime": 3,
+        "n": 5,
+        "modes": 1,
+        "n_mod_prime": 2,
+        "active_zero_modes": 2
+      },
+      {
+        "prime": 3,
+        "n": 6,
+        "modes": 1,
+        "n_mod_prime": 0,
+        "active_zero_modes": 2
+      },
+      {
+        "prime": 3,
+        "n": 7,
+        "modes": 1,
+        "n_mod_prime": 1,
+        "active_zero_modes": 2
+      },
+      {
+        "prime": 3,
+        "n": 8,
+        "modes": 1,
+        "n_mod_prime": 2,
+        "active_zero_modes": 2
+      },
+      {
+        "prime": 3,
+        "n": 9,
+        "modes": 1,
+        "n_mod_prime": 0,
+        "active_zero_modes": 2
+      },
+      {
+        "prime": 3,
+        "n": 10,
+        "modes": 1,
+        "n_mod_prime": 1,
+        "active_zero_modes": 2
+      },
+      {
+        "prime": 3,
+        "n": 3,
+        "modes": 2,
+        "n_mod_prime": 0,
+        "active_zero_modes": 4
+      },
+      {
+        "prime": 3,
+        "n": 4,
+        "modes": 2,
+        "n_mod_prime": 1,
+        "active_zero_modes": 4
+      },
+      {
+        "prime": 3,
+        "n": 5,
+        "modes": 2,
+        "n_mod_prime": 2,
+        "active_zero_modes": 4
+      },
+      {
+        "prime": 3,
+        "n": 6,
+        "modes": 2,
+        "n_mod_prime": 0,
+        "active_zero_modes": 4
+      },
+      {
+        "prime": 3,
+        "n": 7,
+        "modes": 2,
+        "n_mod_prime": 1,
+        "active_zero_modes": 4
+      },
+      {
+        "prime": 3,
+        "n": 8,
+        "modes": 2,
+        "n_mod_prime": 2,
+        "active_zero_modes": 4
+      },
+      {
+        "prime": 3,
+        "n": 9,
+        "modes": 2,
+        "n_mod_prime": 0,
+        "active_zero_modes": 4
+      },
+      {
+        "prime": 3,
+        "n": 10,
+        "modes": 2,
+        "n_mod_prime": 1,
+        "active_zero_modes": 4
+      },
+      {
+        "prime": 3,
+        "n": 3,
+        "modes": 3,
+        "n_mod_prime": 0,
+        "active_zero_modes": 6
+      },
+      {
+        "prime": 3,
+        "n": 4,
+        "modes": 3,
+        "n_mod_prime": 1,
+        "active_zero_modes": 6
+      },
+      {
+        "prime": 3,
+        "n": 5,
+        "modes": 3,
+        "n_mod_prime": 2,
+        "active_zero_modes": 6
+      },
+      {
+        "prime": 3,
+        "n": 6,
+        "modes": 3,
+        "n_mod_prime": 0,
+        "active_zero_modes": 6
+      },
+      {
+        "prime": 3,
+        "n": 7,
+        "modes": 3,
+        "n_mod_prime": 1,
+        "active_zero_modes": 6
+      },
+      {
+        "prime": 3,
+        "n": 8,
+        "modes": 3,
+        "n_mod_prime": 2,
+        "active_zero_modes": 6
+      },
+      {
+        "prime": 3,
+        "n": 9,
+        "modes": 3,
+        "n_mod_prime": 0,
+        "active_zero_modes": 6
+      },
+      {
+        "prime": 3,
+        "n": 10,
+        "modes": 3,
+        "n_mod_prime": 1,
+        "active_zero_modes": 6
+      },
+      {
+        "prime": 5,
+        "n": 3,
+        "modes": 1,
+        "n_mod_prime": 3,
+        "active_zero_modes": 2
+      },
+      {
+        "prime": 5,
+        "n": 4,
+        "modes": 1,
+        "n_mod_prime": 4,
+        "active_zero_modes": 2
+      },
+      {
+        "prime": 5,
+        "n": 5,
+        "modes": 1,
+        "n_mod_prime": 0,
+        "active_zero_modes": 2
+      },
+      {
+        "prime": 5,
+        "n": 6,
+        "modes": 1,
+        "n_mod_prime": 1,
+        "active_zero_modes": 2
+      },
+      {
+        "prime": 5,
+        "n": 7,
+        "modes": 1,
+        "n_mod_prime": 2,
+        "active_zero_modes": 2
+      },
+      {
+        "prime": 5,
+        "n": 8,
+        "modes": 1,
+        "n_mod_prime": 3,
+        "active_zero_modes": 2
+      },
+      {
+        "prime": 5,
+        "n": 9,
+        "modes": 1,
+        "n_mod_prime": 4,
+        "active_zero_modes": 2
+      },
+      {
+        "prime": 5,
+        "n": 10,
+        "modes": 1,
+        "n_mod_prime": 0,
+        "active_zero_modes": 2
+      },
+      {
+        "prime": 5,
+        "n": 3,
+        "modes": 2,
+        "n_mod_prime": 3,
+        "active_zero_modes": 4
+      },
+      {
+        "prime": 5,
+        "n": 4,
+        "modes": 2,
+        "n_mod_prime": 4,
+        "active_zero_modes": 4
+      },
+      {
+        "prime": 5,
+        "n": 5,
+        "modes": 2,
+        "n_mod_prime": 0,
+        "active_zero_modes": 4
+      },
+      {
+        "prime": 5,
+        "n": 6,
+        "modes": 2,
+        "n_mod_prime": 1,
+        "active_zero_modes": 4
+      },
+      {
+        "prime": 5,
+        "n": 7,
+        "modes": 2,
+        "n_mod_prime": 2,
+        "active_zero_modes": 4
+      },
+      {
+        "prime": 5,
+        "n": 8,
+        "modes": 2,
+        "n_mod_prime": 3,
+        "active_zero_modes": 4
+      },
+      {
+        "prime": 5,
+        "n": 9,
+        "modes": 2,
+        "n_mod_prime": 4,
+        "active_zero_modes": 4
+      },
+      {
+        "prime": 5,
+        "n": 10,
+        "modes": 2,
+        "n_mod_prime": 0,
+        "active_zero_modes": 4
+      },
+      {
+        "prime": 5,
+        "n": 3,
+        "modes": 3,
+        "n_mod_prime": 3,
+        "active_zero_modes": 6
+      },
+      {
+        "prime": 5,
+        "n": 4,
+        "modes": 3,
+        "n_mod_prime": 4,
+        "active_zero_modes": 6
+      },
+      {
+        "prime": 5,
+        "n": 5,
+        "modes": 3,
+        "n_mod_prime": 0,
+        "active_zero_modes": 6
+      },
+      {
+        "prime": 5,
+        "n": 6,
+        "modes": 3,
+        "n_mod_prime": 1,
+        "active_zero_modes": 6
+      },
+      {
+        "prime": 5,
+        "n": 7,
+        "modes": 3,
+        "n_mod_prime": 2,
+        "active_zero_modes": 6
+      },
+      {
+        "prime": 5,
+        "n": 8,
+        "modes": 3,
+        "n_mod_prime": 3,
+        "active_zero_modes": 6
+      },
+      {
+        "prime": 5,
+        "n": 9,
+        "modes": 3,
+        "n_mod_prime": 4,
+        "active_zero_modes": 6
+      },
+      {
+        "prime": 5,
+        "n": 10,
+        "modes": 3,
+        "n_mod_prime": 0,
+        "active_zero_modes": 6
+      }
+    ]
+  },
+  "single_mode_regression": {
+    "independent_prime_scalar_profile_comparisons": 16
+  },
+  "literal_polynomial_tensors": {
+    "physical_endpoint_coefficient_equalities": 47748,
+    "complete_two_cut_controls": [
+      {
+        "prime": 2,
+        "n": 2,
+        "ramification": 1,
+        "charge": 0,
+        "clearing_order": 0,
+        "matrix_order": 16,
+        "maximum_series_precision": 16
+      },
+      {
+        "prime": 2,
+        "n": 2,
+        "ramification": 1,
+        "charge": 2,
+        "clearing_order": 0,
+        "matrix_order": 16,
+        "maximum_series_precision": 16
+      },
+      {
+        "prime": 2,
+        "n": 2,
+        "ramification": 1,
+        "charge": 0,
+        "clearing_order": 1,
+        "matrix_order": 16,
+        "maximum_series_precision": 8
+      },
+      {
+        "prime": 2,
+        "n": 2,
+        "ramification": 1,
+        "charge": 2,
+        "clearing_order": 1,
+        "matrix_order": 16,
+        "maximum_series_precision": 8
+      },
+      {
+        "prime": 2,
+        "n": 2,
+        "ramification": 1,
+        "charge": 0,
+        "clearing_order": 1,
+        "matrix_order": 16,
+        "maximum_series_precision": 16
+      },
+      {
+        "prime": 2,
+        "n": 2,
+        "ramification": 1,
+        "charge": 2,
+        "clearing_order": 1,
+        "matrix_order": 16,
+        "maximum_series_precision": 16
+      },
+      {
+        "prime": 2,
+        "n": 2,
+        "ramification": 1,
+        "charge": 0,
+        "clearing_order": 2,
+        "matrix_order": 16,
+        "maximum_series_precision": 8
+      },
+      {
+        "prime": 2,
+        "n": 2,
+        "ramification": 1,
+        "charge": 2,
+        "clearing_order": 2,
+        "matrix_order": 16,
+        "maximum_series_precision": 8
+      },
+      {
+        "prime": 2,
+        "n": 3,
+        "ramification": 1,
+        "charge": 0,
+        "clearing_order": 0,
+        "matrix_order": 64,
+        "maximum_series_precision": 32
+      },
+      {
+        "prime": 2,
+        "n": 3,
+        "ramification": 1,
+        "charge": 2,
+        "clearing_order": 0,
+        "matrix_order": 64,
+        "maximum_series_precision": 32
+      },
+      {
+        "prime": 2,
+        "n": 3,
+        "ramification": 1,
+        "charge": 0,
+        "clearing_order": 1,
+        "matrix_order": 64,
+        "maximum_series_precision": 32
+      },
+      {
+        "prime": 2,
+        "n": 3,
+        "ramification": 1,
+        "charge": 2,
+        "clearing_order": 1,
+        "matrix_order": 64,
+        "maximum_series_precision": 32
+      },
+      {
+        "prime": 2,
+        "n": 3,
+        "ramification": 1,
+        "charge": 0,
+        "clearing_order": 1,
+        "matrix_order": 64,
+        "maximum_series_precision": 32
+      },
+      {
+        "prime": 2,
+        "n": 3,
+        "ramification": 1,
+        "charge": 2,
+        "clearing_order": 1,
+        "matrix_order": 64,
+        "maximum_series_precision": 32
+      },
+      {
+        "prime": 2,
+        "n": 3,
+        "ramification": 1,
+        "charge": 0,
+        "clearing_order": 2,
+        "matrix_order": 64,
+        "maximum_series_precision": 16
+      },
+      {
+        "prime": 2,
+        "n": 3,
+        "ramification": 1,
+        "charge": 2,
+        "clearing_order": 2,
+        "matrix_order": 64,
+        "maximum_series_precision": 16
+      },
+      {
+        "prime": 3,
+        "n": 2,
+        "ramification": 1,
+        "charge": 0,
+        "clearing_order": 0,
+        "matrix_order": 81,
+        "maximum_series_precision": 32
+      },
+      {
+        "prime": 3,
+        "n": 2,
+        "ramification": 1,
+        "charge": 2,
+        "clearing_order": 0,
+        "matrix_order": 81,
+        "maximum_series_precision": 32
+      },
+      {
+        "prime": 3,
+        "n": 2,
+        "ramification": 1,
+        "charge": 0,
+        "clearing_order": 1,
+        "matrix_order": 81,
+        "maximum_series_precision": 32
+      },
+      {
+        "prime": 3,
+        "n": 2,
+        "ramification": 1,
+        "charge": 2,
+        "clearing_order": 1,
+        "matrix_order": 81,
+        "maximum_series_precision": 32
+      },
+      {
+        "prime": 3,
+        "n": 2,
+        "ramification": 1,
+        "charge": 0,
+        "clearing_order": 1,
+        "matrix_order": 81,
+        "maximum_series_precision": 32
+      },
+      {
+        "prime": 3,
+        "n": 2,
+        "ramification": 1,
+        "charge": 2,
+        "clearing_order": 1,
+        "matrix_order": 81,
+        "maximum_series_precision": 32
+      },
+      {
+        "prime": 3,
+        "n": 2,
+        "ramification": 1,
+        "charge": 0,
+        "clearing_order": 0,
+        "matrix_order": 81,
+        "maximum_series_precision": 32
+      },
+      {
+        "prime": 3,
+        "n": 2,
+        "ramification": 1,
+        "charge": 2,
+        "clearing_order": 0,
+        "matrix_order": 81,
+        "maximum_series_precision": 32
+      },
+      {
+        "prime": 2,
+        "n": 3,
+        "ramification": 3,
+        "charge": 0,
+        "clearing_order": 1,
+        "matrix_order": 64,
+        "maximum_series_precision": 64
+      },
+      {
+        "prime": 2,
+        "n": 3,
+        "ramification": 3,
+        "charge": 2,
+        "clearing_order": 1,
+        "matrix_order": 64,
+        "maximum_series_precision": 64
+      }
+    ]
+  }
+}

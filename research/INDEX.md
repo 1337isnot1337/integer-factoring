@@ -14,6 +14,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Coupled identity-filter reduction](coupled-identity-filter-reduction.md): regular paired shears concentrate arbitrary correlated digit weights into twice as many active zero modes, with terminal and opposite-end extensions at prime-power interval lengths.
+
 - [Arithmetic Cauchy factorial law and Smith profiles](arithmetic-cauchy-factorial-law.md): a finite-sampling moment bound proves the permanent congruence at every size, and an integral orthogonal basis proves every squared-Cauchy invariant factor over each prime-adic coefficient ring.
 - [All arithmetic Cauchy powers](arithmetic-cauchy-powers.md): a factorial-normalized alternant bound proves the determinant congruence and every Smith order for each positive Hadamard power, including an explicit tunable first spectral gap.
 
