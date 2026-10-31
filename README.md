@@ -192,6 +192,11 @@ matching word types on each crossing pair cancel them globally and
 justify the restored rational Smith profiles. The two pairs may have
 different types, and pairing with an exchanged copy restores equal
 external dimensions.
+[Independent paired-type pressure](research/paired-type-crossing-pressure.md)
+gives the exact entropy optimization for different types and rectangular
+alphabets. Tensoring with the pair-exchanged copy produces an equal-alphabet
+crossing; keeping the two coefficient indices separate makes the costs
+multiply exactly.
 [Even-core postselection](research/even-core-postselection.md) gives a
 four-letter polynomial family `A + lambda B + lambda^2 C` with a strict
 crossing endpoint. Two exact Wick identities prove that every nonzero

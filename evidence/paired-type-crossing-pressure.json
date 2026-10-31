@@ -1,0 +1,106 @@
+{
+  "constant_crossing_control": {
+    "R": 2,
+    "partition_product": 6,
+    "profile_product": 36,
+    "rho": 1
+  },
+  "endpoint_entries_checked": 1296,
+  "gibbs": {
+    "a": 3,
+    "b": 2,
+    "formal_profiles_only_not_a_crossing_certificate": true,
+    "gibbs_x": [
+      "81/97",
+      "16/97"
+    ],
+    "gibbs_y": [
+      "6561/8113",
+      "1296/8113",
+      "256/8113"
+    ],
+    "multiplicative_entropy_identity": true,
+    "strict_rational_inequality": true,
+    "t": "3/2"
+  },
+  "rank_pairs": [
+    [
+      6,
+      5
+    ],
+    [
+      5,
+      5
+    ],
+    [
+      6,
+      5
+    ]
+  ],
+  "rectangular_dimensions": [
+    2,
+    3,
+    3,
+    2
+  ],
+  "separate_coefficient_pairs": 9,
+  "status": "pass",
+  "tensor_product_rank_pairs": [
+    [
+      36,
+      25
+    ],
+    [
+      30,
+      25
+    ],
+    [
+      36,
+      25
+    ],
+    [
+      30,
+      25
+    ],
+    [
+      25,
+      25
+    ],
+    [
+      30,
+      25
+    ],
+    [
+      36,
+      25
+    ],
+    [
+      30,
+      25
+    ],
+    [
+      36,
+      25
+    ]
+  ],
+  "type_dimensions": [
+    {
+      "dimension_x": 15,
+      "dimension_y": 60,
+      "m": 6,
+      "square_dimension": 900
+    },
+    {
+      "dimension_x": 495,
+      "dimension_y": 13860,
+      "m": 12,
+      "square_dimension": 6860700
+    },
+    {
+      "dimension_x": 18564,
+      "dimension_y": 4084080,
+      "m": 18,
+      "square_dimension": 75816861120
+    }
+  ]
+}
