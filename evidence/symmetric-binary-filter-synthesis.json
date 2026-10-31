@@ -1,0 +1,189 @@
+{
+  "status": "Exact full-state feasibility, polynomial tensorization, and relative-gain certificates passed.",
+  "scope": "Constructive symmetric multilevel filter interface; no improved factoring exponent.",
+  "uncompressed_feasibility_comparisons": 144,
+  "feasible_literal_witnesses": 17,
+  "full_state_transform_controls": 78,
+  "baseline_lengths_through_64": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64
+  ],
+  "tensor_product_controls": {
+    "different_block_polynomial_states": 16,
+    "exact_two_block_cost_factorizations": 15,
+    "block_mode_energies": [
+      [
+        7,
+        1
+      ],
+      [
+        5,
+        3
+      ]
+    ],
+    "different_block_polynomials": [
+      [
+        {
+          "0": 1,
+          "4": 1,
+          "5": 1
+        },
+        {
+          "0": 1
+        },
+        {
+          "0": 1
+        }
+      ],
+      [
+        {
+          "0": 1
+        },
+        {
+          "0": 1,
+          "8": 1,
+          "11": 1
+        },
+        {
+          "0": 1,
+          "4": 1,
+          "6": 1
+        }
+      ]
+    ]
+  },
+  "natural_and_interior_relative_gain": {
+    "n": 4,
+    "ramification": 1,
+    "modes": 4,
+    "f_by_weight": [
+      {
+        "0": 1,
+        "8": 1,
+        "16": 1
+      },
+      {
+        "0": 1
+      },
+      {
+        "0": 1
+      },
+      {
+        "0": 1
+      },
+      {
+        "0": 1
+      }
+    ],
+    "beta_by_weight": [
+      {
+        "0": 1,
+        "8": 1,
+        "16": 1
+      },
+      {
+        "4": 1,
+        "12": 1,
+        "20": 1,
+        "8": 1,
+        "16": 1
+      },
+      {
+        "24": 1
+      },
+      {
+        "8": 1,
+        "28": 1,
+        "24": 1
+      },
+      {
+        "24": 1,
+        "32": 1,
+        "8": 1
+      }
+    ],
+    "full_degrees": [
+      16,
+      0,
+      0,
+      0,
+      0
+    ],
+    "exact_beta_orders": [
+      0,
+      4,
+      24,
+      8,
+      8
+    ],
+    "all_endpoint_values": 1,
+    "common_denominator": "1208925819614629174706176",
+    "cases": [
+      {
+        "charge": 0,
+        "exp_minus_t": "49/50",
+        "exact_relative_cost": "18986658827535928630136138639310937278078689378435697087762536062264899055734336493926956326263775578439245097841708417797390972088426050743822049529915551/20173519214491659641000125472096395772327161102256115887845319294227458434264473739403071444570007518203705921769142150878906250000000000000000000000000000",
+        "relative_cost_is_below_one": true,
+        "log_relative_cost_interval_numerators": [
+          "-73302308989079908351184",
+          "-73302308989079908351116"
+        ],
+        "full_critical_pressure_interval_numerators": [
+          "3476596449510125792935468",
+          "3476596449510125792941151"
+        ],
+        "genuine_rho_root_bracket": [
+          "483/500",
+          "967/1000"
+        ],
+        "lower_rho_pressure_interval_numerators": [
+          "7376240248381996744754",
+          "7376240248381996750846"
+        ],
+        "upper_rho_pressure_interval_numerators": [
+          "-6025896285891249361026",
+          "-6025896285891249354931"
+        ]
+      },
+      {
+        "charge": 8,
+        "exp_minus_t": "49/50",
+        "exact_relative_cost": "21320637775208532565823654872554264981306040226231151416376506057620937543761512998747214431753349862714738188233382187642396186056941557390722666057515304877413698933031589317774751/22867933873918319991770513757204661173313202398465161566493836212777126211409397708421027375761257029643143627903651032285628848196048079953704695887978554612512451171875000000000000",
+        "relative_cost_is_below_one": true,
+        "log_relative_cost_interval_numerators": [
+          "-84697522442097650615100",
+          "-84697522442097650615032"
+        ],
+        "full_critical_pressure_interval_numerators": [
+          "3474383854614382739071012",
+          "3474383854614382739078683"
+        ],
+        "genuine_rho_root_bracket": [
+          "483/500",
+          "967/1000"
+        ],
+        "lower_rho_pressure_interval_numerators": [
+          "11126971273384825165230",
+          "11126971273384825173295"
+        ],
+        "upper_rho_pressure_interval_numerators": [
+          "-2258304581131225188464",
+          "-2258304581131225180403"
+        ]
+      }
+    ],
+    "scope": "Exact relative gains at natural and interior charges; complete pressure stays positive and rho remains above the factoring threshold."
+  },
+  "source_sha256": {
+    "symmetric_binary_filter_synthesis.py": "c6a9d3a6c3b069569a670bb9fadf0129524fbc1d28d47541c553b85f5d320c78",
+    "check_symmetric_binary_filter_synthesis.py": "2218af18047d6a4e7bd1b0f7c34f6f5457e5bef23eff8ed2ccf9e6b4f2e9773a",
+    "charged_gaussian_floor.py": "5321193eda456b922ae947f55a492de675de2d08a90ccb2a87a0fd89a60805cc",
+    "polynomial_state_filter_synthesis.py": "720e4bc11d71d92166535192f132e9c4b95b99a32fe91f8c0e34d6e1ddf5acc9",
+    "weyl_lattice_filter_synthesis.py": "5aef949234535ddb72e9f3d5560557bb9f0e06aeffd7b59b82fd5def6aa6c284"
+  }
+}

@@ -19,8 +19,10 @@ An explicit three-letter polynomial over `F_3` satisfies the multipoint
 criterion with `rho < 19/20`. This is a complete ordinary construction,
 including exact endpoint and rational pressure checks, but it is much
 weaker than the existing `rho = 1/sqrt(2)` family. The achieved factoring
-exponent remains one half. The main purpose is to make a different
-construction criterion available to future searches.
+exponent remains one half. Section 6 proves a general limitation: every
+certificate from this unweighted, same-place criterion has `rho > 3/4`.
+The transfer theorem remains useful as a precise interface for extensions
+that change its rank estimates or introduce physical type weights.
 
 ## 1. A finite polynomial seed and its local profiles
 
@@ -96,7 +98,8 @@ then apply. If `F` is a fixed extension of `F_p`, embed the original
 `F_p` tables in `F` and perform the evaluator's operations there. The
 result remains the embedded `F_p` contraction, so scalar recovery still
 uses the same prime. A certificate with `rho < 1/sqrt(2)` would therefore
-improve the factoring exponent. No such certificate is given here.
+improve the factoring exponent. Section 6 shows that the unweighted
+criterion (6) cannot supply such a certificate.
 
 ### A rational verification form
 
@@ -266,7 +269,147 @@ Here `532=4*140*(19/20)`. Equations (4) and (7) therefore hold with
 `rho=19/20`. For `m=28r`, one explicit reconstruction uses multiplicities
 `30r+1,13r,13r`, totaling `2m+1`.
 
-## 6. Reproduction and search scope
+## 6. A universal floor for the unweighted criterion
+
+The flexibility to move interpolation points does not remove the global
+degree budget. The following bound includes scalar factors that vanish
+at selected points, including content at infinity from an oversized
+degree bound.
+
+**Theorem.** Put `n=q^2`, and define
+
+```math
+f_n=\log(2n)-\frac{n+1}{2n}\log(n+1).
+```
+
+For every scalar polynomial crossing in Section 1, every choice of
+distinct rational places over the working field, every `d_j >= 0` with
+sum `D`, and every pair of scales `s_j,r_j >= 1`,
+
+```math
+\max_j F_j\ \ge\ \log n+f_n.                           \tag{15}
+```
+
+Consequently every successful strict certificate (6) satisfies
+
+```math
+\rho>\frac12+\frac{f_n}{2\log n}>\frac34.               \tag{16}
+```
+
+The first lower bound in (16) is approximately `0.8871987352` at `q=2`,
+`0.8666347614` at `q=3`, `0.8535669207` at `q=4`, and `0.8445011436`
+at `q=5`. It tends to `3/4` as the alphabet grows. Thus the
+unweighted same-place Hermite criterion cannot reach the known
+`1/sqrt(2)` crossing parameter.
+
+The proof also applies to a tensor with fixed auxiliary indices if both
+of its local flattenings have **exact generic rank `n`**, their entries
+are rearrangements of the same tensor entries, and the criterion uses
+their complete lists of `n` Smith channels. For example, putting both
+auxiliary indices on the row side of either cut leaves exactly `n`
+columns. A scalar endpoint contraction equal to the crossing then proves
+rank `n`. An endpoint contraction alone only proves rank at least `n`;
+it does not justify this extension when an auxiliary index on each side
+allows larger generic rank. No auxiliary transfer theorem is assumed
+here: the assertion is a floor for a criterion with the stated channel
+and common-content hypotheses.
+
+### Remove homogeneous content before charging local orders
+
+Homogenize every tensor entry to degree `D`. Let `G` be their common
+homogeneous gcd, let `g=deg G`, and divide it out. The remaining tensor
+has homogeneous degree `D'=D-g`. Its entries have no common zero on
+the projective line. In particular, at every selected place one entry
+is a unit, so each local cut has a zero Smith order.
+
+Write `c_j=ord_(a_j) G`. At point `j`, both original profiles equal
+their primitive profiles plus `c_j`. Write `u_j` and `v_j` for the two
+primitive mean orders. For each cut, fix one nonzero `n` by `n` minor.
+It is a homogeneous polynomial of degree `nD'`. At each selected place
+its vanishing order is at least the sum of the local Smith orders.
+The selected places are distinct and rational, so
+
+```math
+\sum_j u_j\le D',\qquad
+\sum_j v_j\le D',\qquad
+\sum_j c_j\le g.                                      \tag{17}
+```
+
+The same minor works at all places; a separate minor is not chosen to
+spend the degree budget repeatedly. For non-rational closed points,
+residue degrees would have to be included throughout. Those points are
+outside the present statement.
+
+Let `J_+={j:d_j>=c_j}` and, for these indices, put
+`delta_j=d_j-c_j`. This set is nonempty, and
+
+```math
+\sum_{j\in J_+}\delta_j
+\ge\sum_j(d_j-c_j)\ge D-g=D'.                         \tag{18}
+```
+
+Equations (17)--(18) imply that at least one `j` in `J_+` has
+`u_j+v_j <= 2delta_j`. Otherwise the strict opposite inequalities
+would contradict the summed bounds. This argument also covers
+`D'=0` and `delta_j=0`.
+
+At this chosen place, put `A=log s_j` and `B=log r_j`. Subtracting
+the scalar content from the two profiles changes (5) exactly into
+
+```math
+F_j=\log\sum_i e^{-A\nu'_i}
+    +\log\sum_i e^{-B\mu'_i}
+    +\delta_j(A+B).                                  \tag{19}
+```
+
+Thus scalar content moves between the orders and the interpolation
+allowance without being charged twice.
+
+### One low mean and one zero channel force the floor
+
+If `delta_j=0`, both primitive means vanish. All primitive orders are
+nonnegative, so (19) is `2log n`, which implies (15).
+
+Otherwise one of the two means is at most `delta_j`, and the other
+is at most `2delta_j`. For the smaller mean, Jensen's inequality gives
+
+```math
+\log\sum_i e^{-A\nu'_i}+\delta_j A\ge\log n.           \tag{20}
+```
+
+For the other profile, retain one zero order and apply Jensen to the
+remaining `n-1` orders. Their sum is at most `2n delta_j`. With
+`x=delta_j B >= 0`, this gives
+
+```math
+\log\sum_i e^{-B\mu'_i}+\delta_j B
+\ge \log\left(1+(n-1)e^{-2nx/(n-1)}\right)+x
+\ge f_n.                                              \tag{21}
+```
+
+The last minimum occurs at
+`x=(n-1)log(n+1)/(2n)`. Swapping the two cuts if necessary makes
+(20)--(21) apply in either order. Their sum proves (15).
+
+For completeness, `f_n > (log n)/2` for every `n>1`. Multiplying
+the difference by `2n` gives
+
+```math
+h(n)=2n\log2+n\log n-(n+1)\log(n+1).
+```
+
+Here `h(1)=0` and `h'(n)=log(4n/(n+1))>0` for `n>1`, proving
+the strict second inequality in (16).
+
+The one-profile Jensen expression in (21) is the same generic budget
+function used in earlier restricted-family floors. The new accounting
+here is the shared degree budget over all Hermite places, including
+homogeneous scalar content. This is a limitation of the displayed
+sufficient criterion, not a lower bound for arbitrary crossing
+decompositions, actual jet ranks, factoring algorithms, weighted physical
+types, or the opposite-place coefficient method.
+
+## 7. Reproduction and search scope
 
 Run:
 
@@ -277,10 +420,12 @@ python3 tools/check_multipoint_hermite_crossings.py \
 
 The standard-library checker verifies complete reconstructed crossings
 over characteristics two, three, and five, including infinity jets and
-nontrivial Hermite coefficients. It checks `84,738` complete tensor
-entries, `60` exact jet-rank inequalities, the ternary seed's full local
+nontrivial Hermite coefficients. It checks `84,819` complete tensor
+entries, `72` exact jet-rank inequalities, the ternary seed's full local
 profiles by independent Toeplitz ranks, and both rational comparisons
-in (14). These are finite controls for the separate all-length proof.
+in (14). It also checks the global degree ledger and the cancellation of
+nontrivial scalar content at both finite places and infinity. These are
+finite controls for the separate all-length proofs.
 
 Exploratory tests also applied the criterion to rational fused `sl_2`
 polynomial matrices and to higher-alphabet versions of (13). They did

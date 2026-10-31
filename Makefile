@@ -1,6 +1,6 @@
-.PHONY: verify verify-docs verify-frontier verify-post-half verify-schur-fermion verify-schur-central verify-schur-gaussian verify-schur-sparse verify-fixed-modes verify-cancellation-modules verify-minimal-modules verify-exact-modules verify-cancellation-crossing verify-block-smith verify-linear-smith verify-type-pressure verify-crossing-interpolation verify-smith-oracle verify-controlled-smith verify-sparse-holonomy verify-charge-pruning verify-cubic-full-images verify-formal verify-k6 verify-half-appendix help
+.PHONY: verify verify-docs verify-frontier verify-arithmetic verify-arithmetic-framework verify-post-half verify-formal verify-k6 verify-half-appendix verify-bell help verify-schur-fermion verify-schur-central verify-schur-gaussian verify-schur-sparse verify-fixed-modes verify-cancellation-modules verify-minimal-modules verify-exact-modules verify-cancellation-crossing verify-block-smith verify-linear-smith verify-type-pressure verify-crossing-interpolation verify-smith-oracle verify-controlled-smith verify-sparse-holonomy verify-charge-pruning verify-cubic-full-images
 
-verify: verify-docs verify-frontier
+verify: verify-docs verify-frontier verify-arithmetic
 	python3 -m unittest discover -s tests -v
 	python3 -m unittest tools.check_crossing -v
 	python3 tools/check_coefficient_basis.py
@@ -13,6 +13,33 @@ verify: verify-docs verify-frontier
 
 verify-docs:
 	python3 tools/check_docs.py
+
+verify-arithmetic:
+	python3 tools/check_dyadic_hyperbola.py
+	python3 tools/check_dyadic_orbit_aggregation.py
+	python3 tools/check_interval_orbit_gcd.py
+	python3 tools/check_interval_unit_jets.py
+	python3 tools/check_interval_packet_circuits.py
+	python3 tools/check_normalized_interval_jets.py
+
+verify-bell:
+	python3 tools/check_bell_crossing.py
+	python3 tools/check_bell_pencils.py
+	python3 tools/check_bell_profiles.py evidence/bell-synthesis-d4h4.json evidence/bell-synthesis-d8h3.json evidence/bell-folded-adaptive-d8.json evidence/bell-folded-adaptive-d16.json
+	python3 tools/check_folded_bell.py
+	python3 tools/check_code_folded_bell.py
+	python3 tools/check_bell_projection.py
+	python3 tools/check_bell_cubic_floor.py
+	python3 tools/check_bell_quartic_rigidity.py
+
+
+verify-arithmetic-framework:
+	python3 tools/check_arithmetic_two_group.py
+	python3 tools/check_positive_relation_kernel.py
+	python3 tools/check_arithmetic_bias_seed.py
+	python3 tools/check_arithmetic_class_groups.py
+	python3 tools/check_arithmetic_density_lift.py
+	python3 tools/check_bounded_smooth_norm.py
 
 .PHONY: verify-multipoint-rank-one
 verify-multipoint-rank-one:
@@ -298,7 +325,13 @@ verify-post-half:
 	python3 tools/check_half_projection.py
 	python3 tools/check_half_restricted_labels.py
 
-verify-frontier:
+verify-frontier: verify-bell
+	python3 tools/check_arithmetic_two_group.py
+	python3 tools/check_positive_relation_kernel.py
+	python3 tools/check_arithmetic_bias_seed.py
+	python3 tools/check_arithmetic_class_groups.py
+	python3 tools/check_arithmetic_density_lift.py
+	python3 tools/check_bounded_smooth_norm.py
 	python3 tools/check_piece_transfer.py
 	python3 tools/check_boson_truncation.py
 	python3 tools/check_graded_space.py

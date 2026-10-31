@@ -1,0 +1,41 @@
+{
+  "scope": "Exact density/index transfer; classes and orders enumerated only for finite verification; no fast arithmetic witness extractor",
+  "discriminants_checked": 256,
+  "proper_factor_base_subgroups": 54,
+  "index_correction_needed_for_annihilation": 41,
+  "subgroups_missing_global_two_torsion": 51,
+  "maximum_density_index_bound": 8,
+  "missing_factoring_direction_control": {
+    "discriminant": -348,
+    "class_number": 6,
+    "factor_base_subgroup_order": 3,
+    "smooth_form_count": 3,
+    "actual_index": 2,
+    "density_index_bound": 2,
+    "subgroup_relation_determinant": 3,
+    "index_correction": 2,
+    "global_class_number_multiple": 6,
+    "subgroup_determinant_already_annihilates_global_group": false,
+    "global_two_torsion_size": 2,
+    "subgroup_two_torsion_size": 1,
+    "local_ambiguous_forms": [
+      [
+        1,
+        0,
+        87
+      ]
+    ],
+    "global_ambiguous_forms": [
+      [
+        1,
+        0,
+        87
+      ],
+      [
+        3,
+        0,
+        29
+      ]
+    ]
+  }
+}

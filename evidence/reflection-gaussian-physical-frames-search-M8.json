@@ -1,0 +1,41 @@
+{
+  "status": "exploratory exact-profile screen at natural physical heights",
+  "M": 8,
+  "baseline_rho": 0.7166536597281918,
+  "best": {
+    "rho": 0.7166536597281918,
+    "scale": 0.21663550665457543,
+    "gates": [],
+    "profiles": [
+      [
+        2,
+        6,
+        10,
+        14,
+        18,
+        22,
+        26,
+        30
+      ],
+      [
+        2,
+        6,
+        10,
+        14,
+        18,
+        22,
+        26,
+        30
+      ]
+    ]
+  },
+  "cases": 1200,
+  "unique_combined_profiles": 514,
+  "majorization_dominating": 1200,
+  "neutral": 42,
+  "failures": 0,
+  "nondominating_profiles": [],
+  "scope": "Only the tested finite words at the natural physical heights; no improved bound or universal obstruction.",
+  "seconds": 3.3538483319998704,
+  "seed": 75017
+}
