@@ -20,4 +20,4 @@ first step and blockers. Check the research index and open work for overlap.
 
 If you have a result, distinguish the proof, finite checks, and remaining gaps.
 Include reproduction commands and credit. For substantial work, link your claim
-on the coordination board: https://github.com/1337isnot1337/integer-factoring/issues/8
+on the discussion board: https://github.com/1337isnot1337/integer-factoring/discussions/51

@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "random_seed": 440993,
+  "exact_quartic_matrix_identities": 60,
+  "rational_pressure_comparisons": 240,
+  "fields": [
+    3,
+    5,
+    7
+  ],
+  "physical_dimensions": [
+    2,
+    4,
+    8,
+    16
+  ],
+  "necessary_rigidity_bound": "R_H(floor(2Q/M)) <= floor(sqrt(Q)); M=(d^2-d)/2-1",
+  "critical_rank_exponent": "2sqrt(2)-2",
+  "critical_changed_entry_exponent": "sqrt(2)",
+  "scope": "Necessary condition for self-reciprocal quartic Bell paths with rank-one constant coefficient; not a converse or a factoring improvement",
+  "factoring_score": "1/2; unchanged"
+}

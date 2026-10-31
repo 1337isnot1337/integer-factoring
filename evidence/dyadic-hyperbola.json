@@ -1,0 +1,22 @@
+{
+  "scope": "Exact identities and finite controls; no improved factoring exponent.",
+  "seed": 20261031,
+  "checks": {
+    "floor_sums": 17408,
+    "affine_intervals": 14280,
+    "inverse_fibre_entries": 431081,
+    "rectangles": 12252,
+    "recursive_rectangles": 6132,
+    "mobius_section_entries": 8128,
+    "polynomial_fibre_entries": 36409,
+    "shallow_derivative_pairs": 260400,
+    "divisor_prefixes": 10671,
+    "factorizations": 4095
+  },
+  "large_full_fibres": 12,
+  "complete_factorization_range": [
+    2,
+    4096
+  ],
+  "remaining_cost": "Up to 2^(ceil(n/2)-1) low roots; polynomial bit cost per root."
+}
