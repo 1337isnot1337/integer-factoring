@@ -1,0 +1,236 @@
+{
+  "status": "exact finite controls of an all-size polynomial crossing family",
+  "residual_column_entries_checked": 192,
+  "mode_set_controls": [
+    {
+      "indices": [
+        0,
+        1
+      ],
+      "ambient": 2,
+      "beta": 0,
+      "basis_ramified_entries_checked": 12,
+      "independent_two_copy_type_checks": 3
+    },
+    {
+      "indices": [
+        0,
+        1
+      ],
+      "ambient": 2,
+      "beta": 1,
+      "basis_ramified_entries_checked": 12,
+      "independent_two_copy_type_checks": 3
+    },
+    {
+      "indices": [
+        0,
+        1
+      ],
+      "ambient": 2,
+      "beta": 2,
+      "basis_ramified_entries_checked": 12,
+      "independent_two_copy_type_checks": 3
+    },
+    {
+      "indices": [
+        0,
+        1,
+        2
+      ],
+      "ambient": 4,
+      "beta": 0,
+      "basis_ramified_entries_checked": 192,
+      "independent_two_copy_type_checks": 108
+    },
+    {
+      "indices": [
+        0,
+        1,
+        2
+      ],
+      "ambient": 4,
+      "beta": 1,
+      "basis_ramified_entries_checked": 192,
+      "independent_two_copy_type_checks": 108
+    },
+    {
+      "indices": [
+        0,
+        1,
+        2
+      ],
+      "ambient": 4,
+      "beta": 2,
+      "basis_ramified_entries_checked": 192,
+      "independent_two_copy_type_checks": 108
+    },
+    {
+      "indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "ambient": 4,
+      "beta": 0,
+      "basis_ramified_entries_checked": 3072,
+      "independent_two_copy_type_checks": 2352
+    },
+    {
+      "indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "ambient": 4,
+      "beta": 1,
+      "basis_ramified_entries_checked": 3072,
+      "independent_two_copy_type_checks": 2352
+    },
+    {
+      "indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "ambient": 4,
+      "beta": 2,
+      "basis_ramified_entries_checked": 3072,
+      "independent_two_copy_type_checks": 2352
+    },
+    {
+      "indices": [
+        0,
+        2,
+        5
+      ],
+      "ambient": 8,
+      "beta": 0,
+      "basis_ramified_entries_checked": 192,
+      "independent_two_copy_type_checks": 108
+    },
+    {
+      "indices": [
+        0,
+        2,
+        5
+      ],
+      "ambient": 8,
+      "beta": 1,
+      "basis_ramified_entries_checked": 192,
+      "independent_two_copy_type_checks": 108
+    },
+    {
+      "indices": [
+        0,
+        2,
+        5
+      ],
+      "ambient": 8,
+      "beta": 2,
+      "basis_ramified_entries_checked": 192,
+      "independent_two_copy_type_checks": 108
+    }
+  ],
+  "original_tensor_controls": [
+    {
+      "alpha": 1,
+      "beta": 2,
+      "repair": "partial",
+      "row_coefficients": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "polynomial_entries_checked": 256
+    },
+    {
+      "alpha": 1,
+      "beta": 1,
+      "repair": "inverse",
+      "row_coefficients": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "polynomial_entries_checked": 256
+    },
+    {
+      "alpha": 1,
+      "beta": 2,
+      "repair": "inverse",
+      "row_coefficients": [
+        3,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        3,
+        0,
+        1,
+        2,
+        0
+      ],
+      "polynomial_entries_checked": 256
+    }
+  ],
+  "non_gaussian_control": {
+    "M": 4,
+    "beta": 1,
+    "row_coefficients": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    "vacuum_coefficient": "w^2",
+    "cubic_variables": [
+      "x_1",
+      "x_2",
+      "y_1"
+    ],
+    "cubic_relation_residual": "w^6*(1+w)^14",
+    "exact_residual_bitplanes": [
+      1398080,
+      0
+    ],
+    "gaussian_control_residual_bitplanes": [
+      0,
+      0
+    ],
+    "conclusion": "outside the scalar times product(1+l_i*z_i) product(1+q_ij*z_i*z_j) model"
+  },
+  "incorrect_endpoint_rejected": true,
+  "scope": "construction and endpoint proof only; no pressure or factoring-exponent improvement"
+}

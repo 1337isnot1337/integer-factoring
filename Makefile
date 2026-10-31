@@ -266,3 +266,7 @@ help:
 .PHONY: verify-weighted-pascal
 verify-weighted-pascal:
 	python3 tools/check_lucas_weighted_pascal.py
+
+.PHONY: verify-frozen-core
+verify-frozen-core:
+	python3 tools/check_rectangular_frozen_core_rows.py

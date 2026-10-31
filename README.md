@@ -117,6 +117,13 @@ singular canonical quartic coefficient. Their determinant is exactly
 crossing. Its partial repairs still preserve an all-low Gaussian submatrix;
 their occupation mixing requires a separate leading-pressure analysis.
 
+An [arbitrary frozen-core output row](research/polynomial-frozen-core-crossings.md)
+now gives an eleven-parameter affine family of locally polynomial crossings.
+Its endpoint condition is exactly `g_0 + g_10 = 1`. The family contains both
+the Gaussian background and a full-inverse restriction with an exact
+non-Gaussian coefficient witness. This changes the background excluded by
+the fixed-repair obstruction, while a useful pressure remains to be found.
+
 The [Walsh permanent calculation](research/walsh-principal-permanents.md)
 gives all-size scalar valuation formulas beyond the determinant model.
 It also proves that exponentially many grouped modes survive the current
