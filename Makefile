@@ -287,3 +287,11 @@ verify-strict-gaussian:
 .PHONY: verify-slow-ramification
 verify-slow-ramification:
 	python3 tools/check_slow_ramification_crossings.py
+
+.PHONY: verify-state-filters verify-state-filters-extended
+verify-state-filters:
+	python3 tools/check_truncated_symmetric_identity_filters.py
+	python3 tools/check_prime_state_filter_profiles.py
+
+verify-state-filters-extended:
+	python3 tools/check_prime_state_filter_profiles.py --extended

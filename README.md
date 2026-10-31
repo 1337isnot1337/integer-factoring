@@ -146,6 +146,18 @@ finite correction and long-interval embeddings remain constructive search
 targets. Both endpoint admissibility and the two complete profiles are
 checked before interpreting a favorable local cost.
 
+[Prime-state identity filters](research/prime-identity-filter-diagonalization.md)
+now have complete all-size profiles from a finite-difference transform of
+their digit weights. Explicit polynomial Pascal factors diagonalize every
+charge block; the active zero matrix has only `p^2` states, independent of
+interval length. The [qutrit specialization](research/truncated-symmetric-identity-filters.md)
+also proves that every nonidentity monomial filter strictly increases the
+profile product against its Gaussian background throughout the stated
+charge range. General polynomial filters and coupled directions remain
+constructive targets. `make verify-state-filters` checks the exact finite
+identities; its extended target also replays the original characteristic-five
+matrices of order 625.
+
 The [Walsh permanent calculation](research/walsh-principal-permanents.md)
 gives all-size scalar valuation formulas beyond the determinant model.
 It also proves that exponentially many grouped modes survive the current
