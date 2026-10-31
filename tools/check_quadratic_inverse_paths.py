@@ -129,7 +129,7 @@ def construct(q, basis, levels, nilpotent_triangular, inverse_basis, one_levels)
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--alphabet", type=int, default=7, choices=(3, 7))
+    parser.add_argument("--alphabet", type=int, default=7, choices=(3, 7, 9))
     args = parser.parse_args()
     q, n = args.alphabet, args.alphabet**2
     identity = [1 << i for i in range(n)]
@@ -147,7 +147,7 @@ def main():
     assert binary_rank(constant) == 1
     maximum_level = max(levels)
     possible = list(range(2, maximum_level+1))
-    count_ones = 6 if q == 7 else 3
+    count_ones = {3: 3, 7: 6, 9: 1}[q]
     jets = {}
     for level in possible:
         selected = [column if levels[j] == level else 0 for j, column in enumerate(triangular)]

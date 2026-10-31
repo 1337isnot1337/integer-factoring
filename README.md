@@ -75,15 +75,27 @@ No uniform factoring exponent above `1/2` is proved here. One open approach seek
 
 See the [research index](research/INDEX.md) for completed arguments, scoped obstructions, and older candidates. Active work can also appear in [open pull requests](https://github.com/1337isnot1337/integer-factoring/pulls); branch research is not automatically a result on `main`.
 
-The [binary quadratic catalogue](research/binary-quadratic-catalogue.md) checks all 65,536 scalar binary interpolations with the stated identity and crossing endpoints. Their ungauged Smith pressure has sharp all-scale minimum `256/27`; this supplies no stronger factoring exponent. Reproduce with `python3 tools/check_quadratic_crossings.py --full`; the default command checks representatives and an additional sample.
+The current ordinary-proof campaign establishes these scoped results:
 
-The [extended catalogues](research/extended-binary-polynomial-catalogues.md) cover every column-rank-one binary constant tensor in quadratic paths, and all parity-preserving binary cubics and quartics. Their same sharp pressure floor is certified exactly. The quartic catalogue has 16,777,216 tensors; its independent replay checks representatives and a separate sample. Run `python3 tools/check_extended_binary_crossings.py` for the focused checks and `--full` for complete independent replay of the smaller structured catalogues.
+| Scope | Result and evidence |
+| --- | --- |
+| Bare ungauged local Smith profiles, every field and degree, fixed auxiliaries | [Degree budgets](research/all-degree-small-alphabet-smith-floor.md) and [shared minors](research/shared-minor-smith-floor.md) exclude a half-rate improvement through six letters. |
+| The same certificate on 7 through 10 letters | An [exact entropy dual](research/leading-rank-entropy-floor.md) forces exactly one minimum-order channel in each cut for any potential improvement. |
+| Scalar paths with a monomial column determinant | [Inverse-degree compatibility](research/inverse-degree-crossing-compatibility.md) rules out the formal seven-letter optimum at every integer ramification. |
+| Noncommuting quadratic-inverse constructions | A [complete nine-letter probe](research/nine-letter-quadratic-inverse-probe.md) fails at every scale despite its small first jet. Other pencils remain open. |
 
-An [all-degree theorem](research/all-degree-small-alphabet-smith-floor.md) now rules out a half-rate improvement by **bare ungauged Smith profiles** for local alphabets of size 2, 3, or 4, over any field and with fixed auxiliary dimension. Its scalar binary parity specialization proves the `256/27` floor at every degree. This is a scoped certificate obstruction; larger alphabets, independent gauges and actual coefficient-rank improvements remain open. Run `python3 tools/check_all_degree_smith_floor.py` for exact threshold comparisons and finite controls.
+The [binary quadratic](research/binary-quadratic-catalogue.md) and
+[extended polynomial catalogues](research/extended-binary-polynomial-catalogues.md)
+retain the finite evidence behind these arguments, including all 16,777,216
+parity quartics. Their independent replay limits are stated explicitly.
+Run `make verify-polynomial-crossings` for the focused Python checks;
+optional `--full` replays are documented in those notes. The separate
+`make verify-polynomial-native` gate uses Clang and Boost for complete local
+Smith profiles and independent Toeplitz controls.
 
-The [shared-minor refinement](research/shared-minor-smith-floor.md) strengthens the ungauged exclusion to alphabets of size **2 through 6**, with every degree and fixed auxiliary dimension retained. Exact certificates give `rho>5/7>1/sqrt(2)`. Reproduce with `python3 tools/check_shared_minor_smith_floor.py`.
-
-An [inverse-degree compatibility theorem](research/inverse-degree-crossing-compatibility.md) rules out the relaxation's formal seven-letter optimum at every integer ramification. It also gives a concrete noncommuting quadratic-inverse constructor; its first 5,005 weighted-flag paths are excluded by two exact jets. Other seven-letter profiles and broader constructions remain open. Run `python3 tools/check_quadratic_inverse_paths.py` for the constructive controls and complete finite screen.
+These results restrict the stated certificates. Independent gauges,
+coefficient recombinations, cancellation refinements, and larger alphabets
+remain constructive routes; no stronger factoring score follows here.
 
 ## Contribution and attribution
 
