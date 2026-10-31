@@ -113,6 +113,13 @@ scale. Differentiating in `q` reduces the result to a single convex kernel;
 This closes the odd-digit gap for this Gaussian family while leaving the
 proved factoring score unchanged. Run `make verify-all-digit-gaussian`.
 
+The [full-degree Boolean charge-band theorem](research/homogeneous-boolean-charge-bands.md)
+also covers overlapping homogeneous patterns: every exterior charge is
+excluded at every admissible length, and a linearly growing interior band
+is excluded once the binary interval length is at least 32. Its degree and
+selected-mode count may grow with the interval. The remaining interior
+edge bands have fixed width. Run `make verify-boolean-charge-bands`.
+
 The latest [research checkpoint](research/frontier-session-20261031.md)
 keeps the proved score at `1/2`. An
 [accelerated exact certificate](research/accelerated-interval-certificates.md)

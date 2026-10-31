@@ -65,7 +65,7 @@ For any function `k`, write the full finite pressure functional as
 
 \[
 \begin{aligned}
-\mathcal D_n[k](J,t)={}&
+\mathcal D_n(k;J,t)={}&
 \sum_{i=0}^{n-1}\{k((2i+1-J)t)+k((2i+1+J)t)\}\\
 &+\sum_{a=0}^{2n-1}k((2a+1-2n)t)\\
 &-R\sum_{i=0}^{n-1}\{k((4i-2n+2-J)t/R)

@@ -26,6 +26,10 @@ verify-read-once-filters:
 verify-all-digit-gaussian:
 	python3 tools/check_all_digit_charged_gaussian_floor.py
 
+.PHONY: verify-boolean-charge-bands
+verify-boolean-charge-bands:
+	python3 tools/check_homogeneous_boolean_charge_bands.py
+
 .PHONY: verify-frontier-extensions
 verify-frontier-extensions:
 	python3 tools/check_all_scale_balanced_obstruction.py
