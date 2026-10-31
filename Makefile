@@ -1,6 +1,6 @@
-.PHONY: verify verify-docs verify-frontier verify-arithmetic-framework verify-post-half verify-formal verify-k6 verify-half-appendix help
+.PHONY: verify verify-docs verify-frontier verify-arithmetic verify-arithmetic-framework verify-post-half verify-formal verify-k6 verify-half-appendix help
 
-verify: verify-docs verify-frontier
+verify: verify-docs verify-frontier verify-arithmetic
 	python3 -m unittest discover -s tests -v
 	python3 -m unittest tools.check_crossing -v
 	python3 tools/check_coefficient_basis.py
@@ -13,6 +13,14 @@ verify: verify-docs verify-frontier
 
 verify-docs:
 	python3 tools/check_docs.py
+
+verify-arithmetic:
+	python3 tools/check_dyadic_hyperbola.py
+	python3 tools/check_dyadic_orbit_aggregation.py
+	python3 tools/check_interval_orbit_gcd.py
+	python3 tools/check_interval_unit_jets.py
+	python3 tools/check_interval_packet_circuits.py
+	python3 tools/check_normalized_interval_jets.py
 
 verify-arithmetic-framework:
 	python3 tools/check_arithmetic_two_group.py
