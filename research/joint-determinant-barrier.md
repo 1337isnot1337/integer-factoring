@@ -239,4 +239,11 @@ therefore gives a two-position quotient certificate with floor `2/3`.
 The saved checker identifies example indices; these finite class counts
 do not assert a complete actual-rank search within any Smith signature.
 
+The subsequent [common-cofactor certificate](common-cofactor-barrier.md)
+closes this opening for the full ternary quadratic rank-product-two class:
+all 32,265 normalized coefficient seeds have a stronger projected-minor
+certificate. The determinant floor above remains valid; its apparent room
+does not supply a construction. Other coefficient fields and new physical
+restrictions are not settled by that finite existence classification.
+
 This proof and its exact computations used substantial OpenAI Codex assistance.

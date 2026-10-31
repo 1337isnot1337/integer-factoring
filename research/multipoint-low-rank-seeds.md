@@ -20,6 +20,11 @@ This rules out an improvement on the existing `1/sqrt(2)` crossing
 within the stated criterion and family. The factoring exponent remains
 one half. No Lean proof is added.
 
+The subsequent [common-cofactor proof](common-cofactor-barrier.md) also
+closes this whole ternary family for actual tensor-power coefficient ranks,
+with leading floor `log(3)/(2log(2))`. Its all-length conclusion uses
+representation multiplicities and a complete projected-minor catalogue.
+
 The physical alphabet is binary; the coefficient field is ternary.
 The result does not cover arbitrary quadratic tensors, additional
 extension-field places, larger alphabets, or higher polynomial degree.
@@ -106,7 +111,8 @@ are retained. No numerical minimization is used in the exclusion.
 A cut-rank product of three cannot occur here: if one cut has rank one,
 the other is a product of two ranks from `{1,2}`, so is `1,2,4`.
 Thus this result also covers a local rank-product cutoff of three.
-Product four or higher, cubic seeds with three low-rank values, and
-new coefficient-field points remain constructive directions.
+The [joint determinant theorem](joint-determinant-barrier.md) separately
+closes pure-value cubic families over every field. Product four or higher
+and new coefficient-field points remain outside this note's finite family.
 
 This work used substantial OpenAI Codex assistance.

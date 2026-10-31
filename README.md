@@ -91,13 +91,23 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 
 ## Current research frontier
 
+The [common-cofactor barrier](research/common-cofactor-barrier.md) closes
+the asymmetric ternary quadratic family for actual coefficient ranks.
+All 32,265 normalized seeds, covering 12,852,225 actual coefficient seeds,
+have a shared projected minor that forces
+`rho >= log(3)/(2 log(2)) = 0.792481...` at every tensor length.
+The exact full certificate replay is `make verify-common-cofactor`.
+New physical code restrictions and seed families without this certificate
+remain outside the result; the factoring exponent is still one half.
+
 The [joint determinant barrier](research/joint-determinant-barrier.md)
 uses Weyl filtrations in every characteristic to bound actual coefficient
 ranks. It rules out `rho < 4/5` for binary quadratics with two pure
 interpolation values and cubics with three, including the entire
 135,005,697-seed ternary cubic class. Equal determinants give floor one.
-Asymmetric rank-two values remain a constructive direction, with a weaker
-determinant floor of `2/3`. Run `make verify-joint-determinant`.
+The asymmetric rank-two values have a weaker determinant floor of `2/3`;
+the common-cofactor result above now closes the full ternary quadratic
+class with a stronger certificate. Run `make verify-joint-determinant`.
 
 The [constant transpose-intertwiner obstruction](research/transpose-intertwiner-barrier.md)
 applies to actual tensor-power coefficient ranks: a common invertible

@@ -34,6 +34,10 @@ verify-transpose-intertwiner:
 verify-joint-determinant:
 	python3 tools/check_joint_determinant_barrier.py
 
+.PHONY: verify-common-cofactor
+verify-common-cofactor:
+	python3 tools/check_common_cofactor_barrier.py
+
 .PHONY: verify-multilevel-packet
 verify-multilevel-packet:
 	python3 tools/check_multilevel_thue_morse_packet.py

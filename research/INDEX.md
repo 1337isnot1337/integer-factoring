@@ -16,7 +16,9 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
-- [Joint determinant actual-rank barrier](joint-determinant-barrier.md): all-field Weyl filtrations give a common rank witness for both cuts, closing every binary pure-value quadratic and cubic at leading `rho>=4/5`; asymmetric rank-two values leave the interval between `2/3` and `1/sqrt(2)` open.
+- [Common projected-cofactor actual-rank barrier](common-cofactor-barrier.md): exact certificates for every one of 32,265 normalized ternary rank-product-two quadratics cover all 12,852,225 coefficient seeds and force `rho>=log(3)/(2log(2))` at every tensor length.
+
+- [Joint determinant actual-rank barrier](joint-determinant-barrier.md): all-field Weyl filtrations close every binary pure-value quadratic and cubic at leading `rho>=4/5`; the weaker rank-two determinant floor is `2/3`, and the common-cofactor result above closes the ternary quadratic class.
 
 - [Constant transpose-intertwiner barrier](transpose-intertwiner-barrier.md): equal actual cut ranks at every tensor length preclude contraction for polynomially many coefficient pieces; complete tests exclude 32,454,657 ternary cubic coefficient seeds, with actual-jet witnesses checked through three copies.
 

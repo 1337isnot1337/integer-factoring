@@ -21,8 +21,8 @@ from search_multipoint_rank_one_seeds import KEYS,SWAP,pure_tensors,representati
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def schedules(copies):
-    total = 3*copies+1
+def schedules(copies,local_degree=3):
+    total = local_degree*copies+1
     result = []
     for first in range(total+1):
         for second in range(total-first+1):
@@ -36,9 +36,9 @@ def schedules(copies):
     return result
 
 
-def analyze(seed,copies,plans):
+def analyze(seed,copies,plans,local_degree=3):
     table = tensor_power(seed,2,copies,3)
-    degree = 3*copies
+    degree = local_degree*copies
     locals_ = [{key:local_polynomial(value,point,degree,3)
                 for key,value in table.items()} for point in (0,2,None)]
     ranks = [[[rank(flatten(local,2**copies,cut,k),3) for cut in (0,1)]
