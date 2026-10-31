@@ -163,3 +163,7 @@ When a PR changes, retain the historical checkpoint and review the delta.
   `make verify-coefficient-height-walks` (both embedded-reference records).
 - This is source inspection and integration testing, not independent acceptance
   of the mathematical claims. No Lean rebuild or PR approval was performed.
+
+## 2026-10-31: PR #49 integration by research director
+
+Exact head 78b3cca917583eff2324671d6fd241c28ebd7019; contributor orda-aska / Claude Code. Inspected incremental source, preserved current main, and replayed make verify-cell-minor-caps byte-identically against evidence. Full make verify passed on the integration tree (315 docs, 50+5 tests). Finite floating findings remain distinct from global positivity. Integration is not independent mathematical acceptance; no new factoring bound, Lean rebuild, or PR approval.

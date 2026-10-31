@@ -107,6 +107,14 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs five groups on 
 
 ## Current research frontier
 
+For larger alphabets, [cell-set minor caps](research/cell-minor-caps.md)
+strengthen the [shared-minor relaxation](research/shared-minor-profile-relaxation.md):
+every set of k cells gives an endpoint minor that bounds each Smith-profile
+prefix by kd plus the k smallest cell energies. This exactly excludes the
+earlier four-symbol relaxation target. Sharper negative relaxation targets
+remain at five and six symbols; they are construction targets, not crossings.
+Run `make verify-cell-minor-caps`.
+
 The [binary site-symmetry barrier](research/binary-site-symmetry-barrier.md)
 gives an ordinary actual-rank proof of `rho >= 3/4` for every decomposition
 whose binary pieces are invariant under all simultaneous permutations of

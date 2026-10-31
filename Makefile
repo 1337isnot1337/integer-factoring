@@ -865,3 +865,7 @@ verify-binary-typed-endpoints:
 .PHONY: verify-joint-residue-retiming
 verify-joint-residue-retiming:
 	OPENBLAS_NUM_THREADS=1 python3 tools/check_joint_syndrome_residue_retiming.py --output /tmp/integer-factoring-joint-residue-retiming-replay.json
+
+.PHONY: verify-cell-minor-caps
+verify-cell-minor-caps:
+	python3 tools/check_cell_minor_caps.py --output /tmp/integer-factoring-cell-minor-caps-replay.json
