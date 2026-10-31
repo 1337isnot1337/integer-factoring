@@ -38,6 +38,80 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Bell outer-rank endpoint floors](bell-cubic-outer-rank-floor.md): pressure exceeds `5/7` for the stated cubics at all local dimensions at least eight and for quartics at 8 and 16; the refined bound leaves 32 open.
 - [Quartic Bell paths and matrix rigidity](bell-quartic-rigidity.md): a chirped reshape turns a self-reciprocal quartic into an explicit Hadamard sparse modification, with necessary critical parameters and a stated missing converse.
 
+- [Joint residues reduce to finite templates and convex offsets](joint-syndrome-residue-retiming.md): at fixed normalized degree, arbitrary coefficient fields and ramification reduce exactly to finitely many binary endpoint covers and compact convex offset programs; a transport certificate bounds the entire offset box, with exact color and Hall controls.
+
+- [Typed rational kernels have pressure-preserving strict forms](typed-rational-crossing-strictification.md): balanced valuation circuits yield paired potentials and positive-characteristic strictification; the scalar binary floor extends to all stated rational endpoints, with a sharp four-copy endpoint test and uniform eighth-power gauge in characteristic two.
+
+- [Mixed forward/reverse paired quartics](reflection-mixed-paired-quartics.md): a common charge permits both directions on disjoint logical pairs, with asymmetric pole budgets M+7 and M-1; same-pair directions are allowed as an additive correction, while unproved overlapping products are rejected.
+
+- [Coefficient/height alternation at exact integer chambers](coefficient-height-alternation.md): two completed thirty-minute budgets perform 61,041 target steps and produce 1,432 full-profile classes; all eighty saved tensors replay, with no gain, and the unfinished 50,000-step requests remain explicit.
+
+- [All extreme charges are cube height functions](cube-charge-extreme-points.md): a connected-tight-graph proof classifies every charge vertex at every complete alphabet; exact catalogues give 1,980 vertices at sixteen symbols, and independent odd-parity signs give 2^(q/2) vertices with common endpoint pole at most three.
+
+- [Amplified removable poles in growing quartic words](reflection-paired-quartic-poles.md): simultaneous Pfaffian row congruences permit M/4 disjoint gates with pole M+7 each, unchanged effective degree in the stated numerator window, and actual common pole at most M-1; an exact three-copy counterexample checks the first excluded boundary.
+
+- [Exact nonlinear symbol-charge domain](nonlinear-symbol-charge-lattices.md): arbitrary physical-symbol potentials satisfy the full reflection coefficient inequalities exactly when their Hamming-cube Lipschitz constants sum to at most two; the four-symbol polytope has twelve vertices and sixty-four facets, including nonlinear parity charges.
+
+- [Finite fused six-vertex crossings](finite-fused-six-vertex-crossings.md): literal three- and four-symbol F16 fusion, exact common-factor cancellation, 24 independent binary profiles, and 144 replayed full-gauge starts; the completed finite searches remain uncompetitive.
+
+- [Exact F4 regular row fibers](colored-regular-row-fibers.md): nonbinary polynomial row operations preserve a common binary affine floor, allowing exact compressed F4 synthesis with complete coefficient windows and literal untruncated tensor replays.
+
+- [Joint filters beyond the complete scalar multiplier family](joint-boolean-multiplier-separation.md): a literal three-parity polynomial filter beats every scalar Boolean support and arbitrary-degree multiplier on that quotient; 10,668 exact envelope certificates give a uniform separation at every balanced physical length at least sixteen, with positive full critical pressure.
+
+- [Complete-entry typed rational coefficient lattices](typed-charge-lattice-synthesis.md): explicit entrywise endpoint valuations give full affine spaces with local poles and all-length polynomial type restrictions; four-symbol families have 6,144 or 6,237 coefficients at effective degree 24, with complete two-cut synthesis and independent coefficient controls.
+
+- [Joint global-syndrome polynomial synthesis](joint-syndrome-polynomial-filters.md): independent syndrome polynomials retain all endpoint colors and full zero/infinity costs; exact residue compression removes ramification-size growth, and coefficient-space releases escape a demonstrated greedy-search trap.
+
+- [Coherent physical codes with full letter gauges](physical-code-gauge-searches.md): disjoint odd fibers give exact coherent split maps; completed suites contain thirty coordinate, 158 coherent five-letter, and 57 compressed fourteen-letter seeds, with full type costs and independent contraction/profile controls.
+
+- [Paired-type rational endpoints force full local rank](paired-type-endpoint-full-rank.md): crossing specializations of largest type classes force both scalar cut matrices to have full generic rank, including local poles and unequal alphabets; smaller-entropy hypotheses give the precise weaker rank bound.
+
+- [Complete regular row-frame cells](formal-row-flag-cells.md): every formal frame with a fixed constant flag has a unique bounded lower polynomial representative; the degree-gap formula covers all jets over every field.
+
+- [Finite-precision regular Smith frames](finite-precision-smith-frames.md): actual polynomial unit frames retain all coefficient equations below explicit row caps, avoiding irrelevant fraction-free tails; full products, independent profiles, and 316 Toeplitz ranks verify the implementation.
+
+- [Fast matrix multiplication and the current recursion](fast-matrix-multiplication-recursion-audit.md): pinned source accounting isolates the child-volume term; changes to a fixed terminal solver or summable construction overhead do not change the certified logarithmic saving exponent, while a new multi-output primitive remains outside the audit.
+
+- [Larger-alphabet shared-minor targets](shared-minor-profile-relaxation.md): all shared-line and rectangular-subalphabet prefix constraints admit explicitly certified negative relaxed pressure at four and five symbols; these are construction targets, not realizing tensors or factoring improvements.
+
+- [Growing quartic words and removable endpoint poles](reflection-charged-quartic-tiles.md): ordered creation/annihilation gates leave the Gaussian class; an explicit charge budget proves exact pole cancellation and crossing endpoints after paired type restriction, with complete degree costs and original-tensor checks.
+
+- [Complete one-support multiplier automata](boolean-multiplier-automata.md): arbitrary degree, characteristic-two coefficient extensions, and ramification reduce exactly to finitely many continuous cutoff functions and periodic binary tails; global code supports retain every actual physical mode energy.
+
+- [Global code multiplier searches](global-code-multiplier-searches.md): 13,248 explicit supports on 64, 128, and 256 modes use the complete multiplier envelope; fifteen completed full-ratio searches select the baseline, with independent support and root replays.
+
+- [Complete-entry larger-alphabet synthesis](full-alphabet-two-cut-affine-synthesis.md): all degree-bounded F4 coefficients satisfy exact endpoint-preserving two-cut equations; compressed fibers support two completed 20,000-walk four-symbol searches with 1,046 full-profile classes and eighty complete witness replays.
+
+- [Nonresonant filters for arbitrary Boolean supports](nonresonant-boolean-filter-floor.md): the complete pressure floor extends to every Boolean pattern in a two-power family outside a finite resonant window; an exact counterexample preserves the excluded resonance.
+
+- [Affine Boolean filter tiles](affine-boolean-filter-tiles.md): literal coefficient relabeling and exact monomial normalization leave the symmetric family; all 124,080 specified maps and witnesses regenerate 65,475 retained full-state profiles, with eight complete root replays.
+
+- [Coherent physical split projections](physical-split-crossings.md): constant left/right splittings preserve strict endpoints and permit unequal alphabets; full profiles and actual new-symbol heights are recomputed, with 5,480 completed finite projections and independent F4 restriction-of-scalars controls.
+
+- [Reflection coordinate-code alphabets](reflection-code-alphabets.md): non-Cartesian physical state restrictions leave the Gaussian class while keeping the endpoint; a 236-alphabet natural-gauge screen and exact original-tensor checks retain the full physical entropy cost.
+
+- [Growing Gaussian physical frames](growing-gaussian-physical-frames.md): endpoint-trivial creation and annihilation words may change a growing fraction of modes, with arbitrary independent mode heights, complete degree costs, and full original-tensor controls.
+
+- [Coupled Gaussian gates](coupled-gaussian-gates.md): cross-letter quadratic operations have an exact rank-two Clifford update with a determinant-mean correction; all rational denominator costs and original-Fock profiles are retained.
+
+- [Symmetric filters in every prime characteristic](symmetric-prime-multilevel-filters.md): Vandermonde compression retains complete digit multiplicities, endpoint signs, exact polynomial feasibility, and tensor costs at actual physical energies.
+
+- [Completed symmetric tile catalogues](symmetric-tiled-filter-searches.md): 3,830 exact polynomial profiles and 32 full positive-root searches across binary and qutrit intervals, with every saved witness reconstructed and all best points selecting the baseline.
+
+- [Universal binary Smith-pressure floor](universal-binary-smith-floor.md): every Laurent-polynomial binary crossing seed, every coefficient field, arbitrary degree, all regular frames, and all independent physical-letter heights have strictly positive critical pressure; shared minors and an exact 421-leaf compact certificate close this entire two-place Smith route.
+
+- [Symmetric multilevel filter synthesis](symmetric-multilevel-filter-synthesis.md): occupation-weight compression and exact tensorization preserve full degree costs and actual physical energies; a literal four-mode filter gives strict natural-charge relative gains without a better full crossing root.
+
+- [Exact Gaussian fixed-type duals](reflection-gaussian-fixed-type-duals.md): rational active-minor certificates prove global minima over all independent gauges and scales for explicit physical marginals at intervals 4, 8, 16, and 32, without claiming an all-type obstruction.
+
+- [Multipoint Hermite crossing transfer](multipoint-hermite-crossings.md): local jets at several points share the degree budget, reconstruct exact crossing pieces, and admit independent two-cut scales with complete factor-construction costs; an exact ternary example validates the criterion below the existing performance level.
+
+- [Global homogeneous one-level filter floor](global-homogeneous-boolean-filter-floor.md): all overlapping homogeneous Boolean occupation filters have positive complete pressure at every charge and scale, with unrestricted admissible degree and an exact compact cover for the remaining nine lengths.
+
+- [Complete Gaussian profiles from Clifford matrices](clifford-gaussian-smith-profiles.md): an elementary characteristic-two Cartan argument recovers all Fock Smith orders from a matrix of twice the mode count, with closed reflection matrices and no internal regularity restriction on physical mode gauges.
+
+- [Nonconstant regular binary flags](nonconstant-binary-row-flags.md): arbitrary regular polynomial row frames keep complete two-cut synthesis affine, finite jets suffice for fixed targets, and the full first-jet F4 catalogue retains only the reference line.
+
 - [Terminal operators above a power of two](above-power-identity-operator-reduction.md): an existing unfiltered low identity direction closes a small square Weyl core while keeping its physical spectator and degree accounting explicit.
 
 - [Completed above-power operator catalogue](above-power-operator-searches.md): all 42,560 specified interval-33 projector kernels yield 1,111 exact profile classes, with complete numerical grid and refinement records.
@@ -233,6 +307,14 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Qutrit operators below a power of three](qutrit-deficit-operator-search.md): a complete prime-field Weyl evaluator with exact dummy-factor removal, original-tensor controls, and two complete 1,129-kernel projector searches at interval 26.
 
 ## Obstructions and work beyond 1/2
+
+- [All-degree homogeneous Boolean charge bands](homogeneous-boolean-charge-bands.md): a degree-independent loss cap and stronger Gaussian floors exclude all exterior charges and a linearly growing interior band, including overlapping monomials.
+
+- [All-digit charged Gaussian floor](all-digit-charged-gaussian-floor.md): strict monotonicity in every real digit parameter and positive full critical pressure for all `q>1`, charges, scales, and interval lengths; exact compact certificates plus analytic tails.
+
+- [Read-once Boolean filter floor](read-once-boolean-filter-floor.md): a degree-controlled log-odds theorem excludes every homogeneous read-once filter at interior charges and every parity filter at all charges, without a selected-mode bound.
+
+- [Multilevel canonical-packet collisions](multilevel-thue-morse-packet.md): explicit one-bit Thue--Morse inputs collide with zero on every retained valuation level below a chosen cutoff; exact local-polynomial controls supplement the all-size proof.
 
 - [Global charged Gaussian and one-mode Laurent floor](global-charged-gaussian-floor.md): the binary Gaussian has positive critical pressure at every integer length, real aggregate charge, and scale; the complete admissible one-mode Laurent family is also excluded at all charges.
 

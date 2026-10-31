@@ -1,0 +1,332 @@
+{
+  "status": "Every catalogue polynomial and each reported complete positive-root evaluation replayed.",
+  "scope": "Finite exact witness reconstruction and floating search-value replay; no all-family pressure claim.",
+  "exact_reconstructed_polynomial_profiles": 3830,
+  "completed_root_replays": 32,
+  "catalogues": [
+    {
+      "file": "symmetric-tiled-filters-r4.json",
+      "prime": 2,
+      "block_size": 4,
+      "exact_reconstructed_polynomial_profiles": 517,
+      "common_odd_ramification": 15,
+      "complete_root_replays": [
+        {
+          "n": 64,
+          "partition": "contiguous",
+          "rho": 0.7075072433080506,
+          "root_residual": 9.142195990656395e-11,
+          "physical_entropy": 24.362348437030143,
+          "full_critical_pressure": 0.019506923021065582,
+          "nonbaseline_blocks": 0
+        },
+        {
+          "n": 64,
+          "partition": "interleaved",
+          "rho": 0.7075072433080506,
+          "root_residual": 9.142195990656395e-11,
+          "physical_entropy": 24.362348437030143,
+          "full_critical_pressure": 0.019506923021065582,
+          "nonbaseline_blocks": 0
+        },
+        {
+          "n": 64,
+          "partition": "reflected",
+          "rho": 0.7075072433080506,
+          "root_residual": 9.142195990656395e-11,
+          "physical_entropy": 24.362348437030143,
+          "full_critical_pressure": 0.019506923021065582,
+          "nonbaseline_blocks": 0
+        },
+        {
+          "n": 64,
+          "partition": "shuffled",
+          "rho": 0.7075072433080506,
+          "root_residual": 9.142195990656395e-11,
+          "physical_entropy": 24.362348437030143,
+          "full_critical_pressure": 0.019506923021065582,
+          "nonbaseline_blocks": 0
+        },
+        {
+          "n": 128,
+          "partition": "contiguous",
+          "rho": 0.707235146747923,
+          "root_residual": 2.0612489493032626e-10,
+          "physical_entropy": 42.67374419568418,
+          "full_critical_pressure": 0.010954687584739276,
+          "nonbaseline_blocks": 0
+        },
+        {
+          "n": 128,
+          "partition": "interleaved",
+          "rho": 0.707235146747923,
+          "root_residual": 2.0612489493032626e-10,
+          "physical_entropy": 42.67374419568418,
+          "full_critical_pressure": 0.010954687584739276,
+          "nonbaseline_blocks": 0
+        },
+        {
+          "n": 128,
+          "partition": "reflected",
+          "rho": 0.707235146747923,
+          "root_residual": 2.0612489493032626e-10,
+          "physical_entropy": 42.67374419568418,
+          "full_critical_pressure": 0.010954687584739276,
+          "nonbaseline_blocks": 0
+        },
+        {
+          "n": 128,
+          "partition": "shuffled",
+          "rho": 0.707235146747923,
+          "root_residual": 2.0612489493032626e-10,
+          "physical_entropy": 42.67374419568418,
+          "full_critical_pressure": 0.010954687584739276,
+          "nonbaseline_blocks": 0
+        }
+      ]
+    },
+    {
+      "file": "symmetric-tiled-filters-r8.json",
+      "prime": 2,
+      "block_size": 8,
+      "exact_reconstructed_polynomial_profiles": 2802,
+      "common_odd_ramification": 3,
+      "complete_root_replays": [
+        {
+          "n": 64,
+          "partition": "contiguous",
+          "rho": 0.7075072433080506,
+          "root_residual": 9.142195990656395e-11,
+          "physical_entropy": 24.362348437030143,
+          "full_critical_pressure": 0.019506923021065582,
+          "nonbaseline_blocks": 0
+        },
+        {
+          "n": 64,
+          "partition": "interleaved",
+          "rho": 0.7075072433080506,
+          "root_residual": 9.142195990656395e-11,
+          "physical_entropy": 24.362348437030143,
+          "full_critical_pressure": 0.019506923021065582,
+          "nonbaseline_blocks": 0
+        },
+        {
+          "n": 64,
+          "partition": "reflected",
+          "rho": 0.7075072433080506,
+          "root_residual": 9.142195990656395e-11,
+          "physical_entropy": 24.362348437030143,
+          "full_critical_pressure": 0.019506923021065582,
+          "nonbaseline_blocks": 0
+        },
+        {
+          "n": 64,
+          "partition": "shuffled",
+          "rho": 0.7075072433080506,
+          "root_residual": 9.142195990656395e-11,
+          "physical_entropy": 24.362348437030143,
+          "full_critical_pressure": 0.019506923021065582,
+          "nonbaseline_blocks": 0
+        },
+        {
+          "n": 128,
+          "partition": "contiguous",
+          "rho": 0.707235146747923,
+          "root_residual": 2.0612489493032626e-10,
+          "physical_entropy": 42.67374419568418,
+          "full_critical_pressure": 0.010954687584739276,
+          "nonbaseline_blocks": 0
+        },
+        {
+          "n": 128,
+          "partition": "interleaved",
+          "rho": 0.707235146747923,
+          "root_residual": 2.0612489493032626e-10,
+          "physical_entropy": 42.67374419568418,
+          "full_critical_pressure": 0.010954687584739276,
+          "nonbaseline_blocks": 0
+        },
+        {
+          "n": 128,
+          "partition": "reflected",
+          "rho": 0.707235146747923,
+          "root_residual": 2.0612489493032626e-10,
+          "physical_entropy": 42.67374419568418,
+          "full_critical_pressure": 0.010954687584739276,
+          "nonbaseline_blocks": 0
+        },
+        {
+          "n": 128,
+          "partition": "shuffled",
+          "rho": 0.707235146747923,
+          "root_residual": 2.0612489493032626e-10,
+          "physical_entropy": 42.67374419568418,
+          "full_critical_pressure": 0.010954687584739276,
+          "nonbaseline_blocks": 0
+        }
+      ]
+    },
+    {
+      "file": "symmetric-qutrit-tiled-filters-r2.json",
+      "prime": 3,
+      "block_size": 2,
+      "exact_reconstructed_polynomial_profiles": 294,
+      "common_odd_ramification": 3,
+      "complete_root_replays": [
+        {
+          "n": 27,
+          "partition": "contiguous",
+          "rho": 0.7091192808868979,
+          "root_residual": 3.5800529207818954e-11,
+          "physical_entropy": 18.331731725348167,
+          "full_critical_pressure": 0.07368420221989763,
+          "nonbaseline_blocks": 0
+        },
+        {
+          "n": 27,
+          "partition": "interleaved",
+          "rho": 0.7091192808868979,
+          "root_residual": 3.5800529207818954e-11,
+          "physical_entropy": 18.331731725348167,
+          "full_critical_pressure": 0.07368420221989763,
+          "nonbaseline_blocks": 0
+        },
+        {
+          "n": 27,
+          "partition": "reflected",
+          "rho": 0.7091192808868979,
+          "root_residual": 3.5800529207818954e-11,
+          "physical_entropy": 18.331731725348167,
+          "full_critical_pressure": 0.07368420221989763,
+          "nonbaseline_blocks": 0
+        },
+        {
+          "n": 27,
+          "partition": "shuffled",
+          "rho": 0.7091192808868979,
+          "root_residual": 3.5800529207818954e-11,
+          "physical_entropy": 18.331731725348167,
+          "full_critical_pressure": 0.07368420221989763,
+          "nonbaseline_blocks": 0
+        },
+        {
+          "n": 81,
+          "partition": "contiguous",
+          "rho": 0.7074661595730447,
+          "root_residual": 1.7759427262120653e-10,
+          "physical_entropy": 42.13237742532965,
+          "full_critical_pressure": 0.030275301299842794,
+          "nonbaseline_blocks": 0
+        },
+        {
+          "n": 81,
+          "partition": "interleaved",
+          "rho": 0.7074661595730447,
+          "root_residual": 1.7759427262120653e-10,
+          "physical_entropy": 42.13237742532965,
+          "full_critical_pressure": 0.030275301299842794,
+          "nonbaseline_blocks": 0
+        },
+        {
+          "n": 81,
+          "partition": "reflected",
+          "rho": 0.7074661595730447,
+          "root_residual": 1.7759427262120653e-10,
+          "physical_entropy": 42.13237742532965,
+          "full_critical_pressure": 0.030275301299842794,
+          "nonbaseline_blocks": 0
+        },
+        {
+          "n": 81,
+          "partition": "shuffled",
+          "rho": 0.7074661595730447,
+          "root_residual": 1.7759427262120653e-10,
+          "physical_entropy": 42.13237742532965,
+          "full_critical_pressure": 0.030275301299842794,
+          "nonbaseline_blocks": 0
+        }
+      ]
+    },
+    {
+      "file": "symmetric-qutrit-tiled-filters-r4.json",
+      "prime": 3,
+      "block_size": 4,
+      "exact_reconstructed_polynomial_profiles": 217,
+      "common_odd_ramification": 1,
+      "complete_root_replays": [
+        {
+          "n": 27,
+          "partition": "contiguous",
+          "rho": 0.7091192808868979,
+          "root_residual": 3.5800529207818954e-11,
+          "physical_entropy": 18.331731725348167,
+          "full_critical_pressure": 0.07368420221989763,
+          "nonbaseline_blocks": 0
+        },
+        {
+          "n": 27,
+          "partition": "interleaved",
+          "rho": 0.7091192808868979,
+          "root_residual": 3.5800529207818954e-11,
+          "physical_entropy": 18.331731725348167,
+          "full_critical_pressure": 0.07368420221989763,
+          "nonbaseline_blocks": 0
+        },
+        {
+          "n": 27,
+          "partition": "reflected",
+          "rho": 0.7091192808868979,
+          "root_residual": 3.5800529207818954e-11,
+          "physical_entropy": 18.331731725348167,
+          "full_critical_pressure": 0.07368420221989763,
+          "nonbaseline_blocks": 0
+        },
+        {
+          "n": 27,
+          "partition": "shuffled",
+          "rho": 0.7091192808868979,
+          "root_residual": 3.5800529207818954e-11,
+          "physical_entropy": 18.331731725348167,
+          "full_critical_pressure": 0.07368420221989763,
+          "nonbaseline_blocks": 0
+        },
+        {
+          "n": 81,
+          "partition": "contiguous",
+          "rho": 0.7074661595730447,
+          "root_residual": 1.7759427262120653e-10,
+          "physical_entropy": 42.13237742532965,
+          "full_critical_pressure": 0.030275301299842794,
+          "nonbaseline_blocks": 0
+        },
+        {
+          "n": 81,
+          "partition": "interleaved",
+          "rho": 0.7074661595730447,
+          "root_residual": 1.7759427262120653e-10,
+          "physical_entropy": 42.13237742532965,
+          "full_critical_pressure": 0.030275301299842794,
+          "nonbaseline_blocks": 0
+        },
+        {
+          "n": 81,
+          "partition": "reflected",
+          "rho": 0.7074661595730447,
+          "root_residual": 1.7759427262120653e-10,
+          "physical_entropy": 42.13237742532965,
+          "full_critical_pressure": 0.030275301299842794,
+          "nonbaseline_blocks": 0
+        },
+        {
+          "n": 81,
+          "partition": "shuffled",
+          "rho": 0.7074661595730447,
+          "root_residual": 1.7759427262120653e-10,
+          "physical_entropy": 42.13237742532965,
+          "full_critical_pressure": 0.030275301299842794,
+          "nonbaseline_blocks": 0
+        }
+      ]
+    }
+  ]
+}

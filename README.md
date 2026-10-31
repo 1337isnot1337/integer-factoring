@@ -107,6 +107,181 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 
 ## Current research frontier
 
+The [typed rational strictification theorem](research/typed-rational-crossing-strictification.md)
+extends the binary pressure floor to scalar rational kernels with only
+zero/endpoint denominators and crossing endpoints at every paired type
+and length. A paired physical gauge preserves the complete pressure.
+For binary characteristic-two kernels, twelve exact charge circuits make
+length four a sufficient and sharp endpoint test; ramification by eight
+always produces a strict crossing. Run `make verify-binary-typed-endpoints`.
+
+The [amplified quartic pole theorem](research/reflection-paired-quartic-poles.md)
+permits a growing word of disjoint gates with poles of order M+7 per gate.
+Simultaneous Pfaffian row factors prove every typed endpoint, and exact
+common-factor cancellation reduces the actual local pole to at most M-1.
+The stated numerator window keeps the original effective degree. The
+construction still needs a negative full-pressure witness. Run
+`make verify-paired-quartic-poles`.
+
+The [exact nonlinear charge theorem](research/nonlinear-symbol-charge-lattices.md)
+characterizes every admissible pair of full-symbol potentials for the
+reflection tensor: their Hamming-cube Lipschitz constants must sum to at
+most two. At four symbols this is a six-dimensional cross-polytope and
+includes nonlinear parity charges. The resulting complete rational
+coefficient spaces have exact endpoint and full-profile checks. Run
+`make verify-nonlinear-symbol-charges`.
+
+An [exact joint-filter separation](research/joint-boolean-multiplier-separation.md)
+strictly improves every scalar Boolean multiplier on three balanced parity
+groups, uniformly for physical lengths at least sixteen. The certificate
+covers all 254 nonconstant supports and unbounded multiplier degree, field
+extensions, and ramification. Its complete critical pressure stays positive;
+this is a stronger construction family, with no score increase. Run
+`make verify-joint-multiplier-separation`.
+
+The [typed rational coefficient lattice](research/typed-charge-lattice-synthesis.md)
+frees every entry under an exact charge condition at the endpoint. Local poles
+cancel in every paired-type tensor power; a negative-charge boundary extension
+adds further coefficients while preserving that endpoint. At four symbols,
+the displayed spaces have 6,144 or 6,237 free F4 coefficients and effective
+degree 24. Full local rank follows from the [type-class rank theorem](research/paired-type-endpoint-full-rank.md).
+These are constructive search spaces; no better factoring exponent is claimed.
+Run `make verify-typed-charge-lattices`.
+
+The [growing quartic construction](research/reflection-charged-quartic-tiles.md)
+adds nonquadratic occupation gates on a growing fraction of physical modes.
+An exact charge budget also permits specified endpoint poles: they cancel in
+every retained coefficient after paired type restriction. The construction
+includes its effective degree and restored local profiles; it supplies new
+search families, without an improved rate yet. Run `make verify-quartic-tiles`.
+
+The [one-support multiplier reduction](research/boolean-multiplier-automata.md)
+removes polynomial-degree and coefficient-field cutoffs from a growing global
+Boolean-filter family. Its finite automaton retains continuous ramified
+cutoffs and exact periodic tails. [Fifteen complete outer searches](research/global-code-multiplier-searches.md)
+over 13,248 explicit code supports on up to 256 modes still select the
+baseline. Run `make verify-multiplier-automata verify-global-code-multipliers`.
+
+The [complete-entry larger-alphabet solver](research/full-alphabet-two-cut-affine-synthesis.md)
+varies every polynomial coefficient over F4 while preserving the strict
+endpoint and simultaneous local row conditions. Two completed four-symbol
+searches contain 40,000 target walks and 1,046 full-profile classes; all eighty
+retained tensors replay exactly, with no critical crossing. Run
+`make verify-full-alphabet-affine`.
+
+The [universal binary Smith-pressure theorem](research/universal-binary-smith-floor.md)
+excludes every Laurent-polynomial strict binary crossing seed under the
+two-place Smith criterion, over every coefficient field and with all
+independent physical-letter heights. Shared minors couple the two cuts;
+a monotonicity argument reduces arbitrary weights to a certified compact
+inequality. This closes the binary higher-degree and row-frame search
+route without changing the achieved factoring score. Run
+`make verify-binary-smith-floor` for the exact certificate and full-minor controls.
+
+The [nonresonant Boolean filter theorem](research/nonresonant-boolean-filter-floor.md)
+excludes arbitrary nonhomogeneous Boolean supports in the stated two-power
+family outside a finite resonant window. A separate [affine tile construction](research/affine-boolean-filter-tiles.md)
+recomputes full transformed polynomials after Boolean relabeling; its complete
+124,080-case catalogue contains 65,475 retained profiles, with no gain in the
+eight recorded full-cost searches. Run `make verify-nonresonant-filters
+verify-affine-filter-tiles`.
+
+The [prime-characteristic symmetric transform](research/symmetric-prime-multilevel-filters.md)
+retains all digit multiplicities and endpoint signs while compressing a
+correlated block to occupation weights. Four [completed tile catalogues](research/symmetric-tiled-filter-searches.md)
+contain 3,830 exact profiles and 32 complete cost searches across binary
+and qutrit intervals; every best point still selected the baseline. Run
+`make verify-symmetric-prime-filters verify-symmetric-filter-catalogues`.
+
+The [symmetric multilevel filter construction](research/symmetric-multilevel-filter-synthesis.md)
+compresses a correlated binary block to one polynomial per occupation weight.
+Its exact tensor rule permits different filters on disjoint physical blocks.
+A literal four-mode filter gives a strict natural-charge improvement over the
+Gaussian cost, including a gain proportional to interval length when tiled;
+its complete pressure remains above the required threshold. Run
+`make verify-symmetric-binary-filters` for full-state and exact cost controls.
+
+The [exact Gaussian fixed-type certificates](research/reflection-gaussian-fixed-type-duals.md)
+prove global minima over every independent mode gauge and positive scale
+for four explicit rational physical types, through interval length 32.
+The proof uses nonnegative multipliers on exact Clifford minors; it does
+not cover the remaining optimization over all physical types. Run
+`make verify-gaussian-fixed-types` for exact determinant and stationarity checks.
+
+The [multipoint Hermite transfer](research/multipoint-hermite-crossings.md)
+reconstructs effective crossing pieces from jets at several finite points
+and infinity, with a shared degree budget and complete coefficient costs.
+A general degree-budget argument now proves that its unweighted same-place
+criterion requires `rho > 3/4`, including common scalar factors and independent
+local scales. Weighted types or stronger actual jet-rank estimates remain
+outside that floor.
+Its explicit ternary certificate is weaker than the half-rate crossing;
+the transfer supplies a different criterion for future seeds. Run
+`make verify-multipoint-hermite` for full reconstruction and jet-rank checks.
+
+The [physical split-projection interface](research/physical-split-crossings.md)
+constructs smaller or unequal alphabets with exact left/right endpoint
+repairs, including coherent combinations over F4. Complete searches cover
+5,440 rank-three projections and two twenty-projection energy families.
+[Coordinate-code restrictions](research/reflection-code-alphabets.md) add
+236 recorded alphabets. Every complete profile is recomputed after projection;
+these fixed-gauge screens have not improved the crossing threshold. Run
+`make verify-physical-splits verify-reflection-code-alphabets`.
+
+The [growing physical-frame construction](research/growing-gaussian-physical-frames.md)
+and [coupled quadratic gates](research/coupled-gaussian-gates.md) preserve strict
+endpoints while changing a number of modes that grows with the interval.
+Their exact Clifford updates retain determinant-mean changes and rational
+denominator costs. Original-tensor replays pass; the completed natural-gauge
+frame searches found no gain. Run `make verify-gaussian-physical-frames
+verify-gaussian-coupled-gates` for the full controls.
+
+The [Clifford Smith reduction](research/clifford-gaussian-smith-profiles.md)
+recovers every Smith order of an invertible Gaussian operator on `M`
+fermionic modes from a matrix of order `2M`. An elementary characteristic-two
+proof includes singular creation factors and the scalar normalization.
+For the reflection crossing this permits all independent physical mode
+heights, removing the earlier internal regularity restriction. Run
+`make verify-unrestricted-gaussian` for full original-tensor comparisons.
+
+The [nonconstant row-frame constructor](research/nonconstant-binary-row-flags.md)
+extends complete binary crossing synthesis to arbitrary regular polynomial
+changes of row basis. Its first completed F4 catalogue covers every
+strictly lower triangular first jet at both cuts and 59 explicit targets.
+Only the reference affine line survives. The universal binary theorem above
+now excludes a threshold crossing even with arbitrary higher jets. Run
+`make verify-polynomial-flags` for literal polynomial and full-minor controls.
+
+The continuation from PR #38 adds a [multilevel canonical-packet
+collision](research/multilevel-thue-morse-packet.md): an explicit one-bit
+Thue--Morse input loses its original bit simultaneously on every retained
+valuation level below a chosen cutoff at the stated precision. This is a
+scoped reconstruction obstruction, not a stronger factoring exponent.
+Replay it with `make verify-multilevel-packet`.
+
+A [read-once Boolean filter theorem](research/read-once-boolean-filter-floor.md)
+excludes every homogeneous read-once XOR/AND occupation filter throughout
+the interior charge interval, with no degree or mode-count bound. A single
+parity of any number of modes is excluded at every real charge. The proof
+uses a degree-controlled log-odds inequality and retains the full physical
+cost. Run `make verify-read-once-filters` for exact independent controls.
+
+The [all-digit charged Gaussian theorem](research/all-digit-charged-gaussian-floor.md)
+now proves positive critical pressure for every real digit parameter
+`q > 1`, integer interval length, real aggregate charge, and positive
+scale. Differentiating in `q` reduces the result to a single convex kernel;
+2,648 exact positive rectangles cover the remaining compact domains.
+This closes the odd-digit gap for this Gaussian family while leaving the
+proved factoring score unchanged. Run `make verify-all-digit-gaussian`.
+
+The [global homogeneous-filter theorem](research/global-homogeneous-boolean-filter-floor.md)
+now excludes every homogeneous one-level Boolean occupation filter at
+every real aggregate charge and positive scale. It permits arbitrary
+overlapping patterns and every degree through the selected-mode count.
+The proof extends the earlier charge bands using a uniform edge estimate
+and 13,323 exact positive cover leaves. General multilevel and resonant
+nonhomogeneous filters remain open. Run `make verify-global-homogeneous-filters`.
+
 The latest [research checkpoint](research/frontier-session-20261031.md)
 keeps the proved score at `1/2`. An
 [accelerated exact certificate](research/accelerated-interval-certificates.md)

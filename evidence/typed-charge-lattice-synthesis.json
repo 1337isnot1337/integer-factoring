@@ -1,0 +1,864 @@
+{
+  "status": "Exact typed charge-lattice synthesis controls passed",
+  "kernel_edge_controls": 5920,
+  "original_coefficient_charge_controls": 832,
+  "independent_affine_coefficient_comparisons": 297792,
+  "two_copy_typed_coefficients": 13328,
+  "full_local_profiles": 36,
+  "independent_rational_profiles": 4,
+  "alternate_reference_frames": 2,
+  "negative_controls": 2,
+  "cases": [
+    {
+      "weights": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "negative_boundary": false,
+      "variables": 6144,
+      "pole": 0,
+      "numerator_degree": 24,
+      "effective_degree": 24,
+      "fiber_variables": 160,
+      "reference_solution_dimension": 28,
+      "random_profiles_infinity_then_zero": [
+        [
+          -24,
+          -24,
+          -24,
+          -24,
+          -20,
+          -20,
+          -20,
+          -19,
+          -13,
+          -12,
+          -12,
+          -12,
+          -8,
+          -8,
+          -8,
+          -8
+        ],
+        [
+          0,
+          2,
+          2,
+          4,
+          6,
+          6,
+          8,
+          8,
+          8,
+          8,
+          10,
+          10,
+          12,
+          14,
+          14,
+          16
+        ]
+      ],
+      "feasible_profiles_infinity_then_zero": [
+        [
+          -8,
+          -6,
+          -2,
+          0,
+          2,
+          4,
+          6,
+          8,
+          8,
+          10,
+          12,
+          14,
+          16,
+          18,
+          22,
+          24
+        ],
+        [
+          8,
+          10,
+          14,
+          16,
+          18,
+          20,
+          22,
+          24,
+          24,
+          26,
+          28,
+          30,
+          32,
+          34,
+          38,
+          40
+        ]
+      ],
+      "rank_specializations": [
+        {
+          "side": 0,
+          "field_value": 2,
+          "rank": 16
+        },
+        {
+          "side": 1,
+          "field_value": 2,
+          "rank": 16
+        }
+      ],
+      "independent_rational_sides": []
+    },
+    {
+      "weights": [
+        "0",
+        "1",
+        "0",
+        "1"
+      ],
+      "negative_boundary": false,
+      "variables": 6144,
+      "pole": 1,
+      "numerator_degree": 25,
+      "effective_degree": 24,
+      "fiber_variables": 111,
+      "reference_solution_dimension": 23,
+      "random_profiles_infinity_then_zero": [
+        [
+          -29,
+          -26,
+          -23,
+          -23,
+          -21,
+          -19,
+          -15,
+          -15,
+          -14,
+          -13,
+          -9,
+          -9,
+          -9,
+          -7,
+          -4,
+          -1
+        ],
+        [
+          -4,
+          -2,
+          -1,
+          1,
+          3,
+          4,
+          6,
+          6,
+          8,
+          8,
+          11,
+          13,
+          13,
+          14,
+          17,
+          19
+        ]
+      ],
+      "feasible_profiles_infinity_then_zero": [
+        [
+          -13,
+          -8,
+          -4,
+          -1,
+          1,
+          6,
+          6,
+          8,
+          11,
+          12,
+          15,
+          17,
+          17,
+          23,
+          24,
+          30
+        ],
+        [
+          3,
+          5,
+          11,
+          13,
+          15,
+          18,
+          19,
+          22,
+          24,
+          28,
+          29,
+          29,
+          35,
+          36,
+          39,
+          46
+        ]
+      ],
+      "rank_specializations": [
+        {
+          "side": 0,
+          "field_value": 2,
+          "rank": 16
+        },
+        {
+          "side": 1,
+          "field_value": 2,
+          "rank": 16
+        }
+      ],
+      "independent_rational_sides": [
+        0,
+        1
+      ]
+    },
+    {
+      "weights": [
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "negative_boundary": false,
+      "variables": 6144,
+      "pole": 3,
+      "numerator_degree": 27,
+      "effective_degree": 24,
+      "fiber_variables": 140,
+      "reference_solution_dimension": 22,
+      "random_profiles_infinity_then_zero": [
+        [
+          -24,
+          -24,
+          -24,
+          -24,
+          -20,
+          -20,
+          -20,
+          -20,
+          -12,
+          -12,
+          -12,
+          -12,
+          -8,
+          -8,
+          -8,
+          -8
+        ],
+        [
+          0,
+          2,
+          2,
+          4,
+          6,
+          6,
+          8,
+          8,
+          8,
+          8,
+          10,
+          10,
+          12,
+          14,
+          15,
+          16
+        ]
+      ],
+      "feasible_profiles_infinity_then_zero": [
+        [
+          -8,
+          -6,
+          -2,
+          0,
+          2,
+          4,
+          6,
+          8,
+          8,
+          10,
+          12,
+          14,
+          16,
+          18,
+          22,
+          24
+        ],
+        [
+          8,
+          10,
+          14,
+          16,
+          18,
+          20,
+          22,
+          24,
+          24,
+          26,
+          28,
+          30,
+          32,
+          34,
+          38,
+          40
+        ]
+      ],
+      "rank_specializations": [
+        {
+          "side": 0,
+          "field_value": 2,
+          "rank": 16
+        },
+        {
+          "side": 1,
+          "field_value": 2,
+          "rank": 16
+        }
+      ],
+      "independent_rational_sides": []
+    },
+    {
+      "weights": [
+        "2",
+        "2",
+        "0",
+        "0"
+      ],
+      "negative_boundary": false,
+      "variables": 6144,
+      "pole": 3,
+      "numerator_degree": 27,
+      "effective_degree": 24,
+      "fiber_variables": 104,
+      "reference_solution_dimension": 16,
+      "random_profiles_infinity_then_zero": [
+        [
+          -24,
+          -24,
+          -24,
+          -23,
+          -21,
+          -20,
+          -20,
+          -18,
+          -14,
+          -12,
+          -12,
+          -12,
+          -8,
+          -8,
+          -8,
+          -8
+        ],
+        [
+          0,
+          2,
+          2,
+          4,
+          6,
+          6,
+          8,
+          8,
+          8,
+          8,
+          10,
+          10,
+          12,
+          14,
+          14,
+          16
+        ]
+      ],
+      "feasible_profiles_infinity_then_zero": [
+        [
+          -8,
+          -6,
+          -2,
+          0,
+          2,
+          4,
+          6,
+          8,
+          8,
+          10,
+          12,
+          14,
+          16,
+          18,
+          22,
+          24
+        ],
+        [
+          8,
+          10,
+          14,
+          16,
+          18,
+          20,
+          22,
+          24,
+          24,
+          26,
+          28,
+          30,
+          32,
+          34,
+          38,
+          40
+        ]
+      ],
+      "rank_specializations": [
+        {
+          "side": 0,
+          "field_value": 2,
+          "rank": 16
+        },
+        {
+          "side": 1,
+          "field_value": 2,
+          "rank": 16
+        }
+      ],
+      "independent_rational_sides": []
+    },
+    {
+      "weights": [
+        "1",
+        "-1",
+        "1",
+        "-1"
+      ],
+      "negative_boundary": false,
+      "variables": 6144,
+      "pole": 3,
+      "numerator_degree": 27,
+      "effective_degree": 24,
+      "fiber_variables": 71,
+      "reference_solution_dimension": 15,
+      "random_profiles_infinity_then_zero": [
+        [
+          -24,
+          -23,
+          -23,
+          -22,
+          -21,
+          -20,
+          -20,
+          -19,
+          -17,
+          -16,
+          -15,
+          -15,
+          -13,
+          -13,
+          -10,
+          -8
+        ],
+        [
+          -7,
+          -6,
+          -5,
+          -3,
+          1,
+          1,
+          3,
+          3,
+          3,
+          5,
+          5,
+          6,
+          10,
+          12,
+          14,
+          15
+        ]
+      ],
+      "feasible_profiles_infinity_then_zero": [
+        [
+          -14,
+          -6,
+          -5,
+          -3,
+          0,
+          2,
+          4,
+          5,
+          5,
+          6,
+          12,
+          14,
+          15,
+          20,
+          20,
+          29
+        ],
+        [
+          0,
+          2,
+          8,
+          12,
+          12,
+          12,
+          16,
+          18,
+          19,
+          23,
+          24,
+          28,
+          29,
+          30,
+          37,
+          42
+        ]
+      ],
+      "rank_specializations": [
+        {
+          "side": 0,
+          "field_value": 2,
+          "rank": 16
+        },
+        {
+          "side": 1,
+          "field_value": 2,
+          "rank": 16
+        }
+      ],
+      "independent_rational_sides": []
+    },
+    {
+      "weights": [
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "negative_boundary": true,
+      "variables": 6237,
+      "pole": 3,
+      "numerator_degree": 27,
+      "effective_degree": 24,
+      "fiber_variables": 159,
+      "reference_solution_dimension": 27,
+      "random_profiles_infinity_then_zero": [
+        [
+          -24,
+          -24,
+          -24,
+          -23,
+          -21,
+          -20,
+          -20,
+          -20,
+          -12,
+          -12,
+          -12,
+          -12,
+          -8,
+          -8,
+          -8,
+          -8
+        ],
+        [
+          0,
+          2,
+          2,
+          4,
+          6,
+          6,
+          8,
+          8,
+          8,
+          8,
+          10,
+          10,
+          12,
+          14,
+          14,
+          17
+        ]
+      ],
+      "feasible_profiles_infinity_then_zero": [
+        [
+          -8,
+          -6,
+          -2,
+          0,
+          2,
+          4,
+          6,
+          8,
+          8,
+          10,
+          12,
+          14,
+          16,
+          18,
+          22,
+          24
+        ],
+        [
+          8,
+          10,
+          14,
+          16,
+          18,
+          20,
+          22,
+          24,
+          24,
+          26,
+          28,
+          30,
+          32,
+          34,
+          38,
+          40
+        ]
+      ],
+      "rank_specializations": [
+        {
+          "side": 0,
+          "field_value": 2,
+          "rank": 16
+        },
+        {
+          "side": 1,
+          "field_value": 2,
+          "rank": 16
+        }
+      ],
+      "independent_rational_sides": [
+        0,
+        1
+      ]
+    },
+    {
+      "weights": [
+        "2",
+        "2",
+        "0",
+        "0"
+      ],
+      "negative_boundary": true,
+      "variables": 6224,
+      "pole": 3,
+      "numerator_degree": 27,
+      "effective_degree": 24,
+      "fiber_variables": 129,
+      "reference_solution_dimension": 21,
+      "random_profiles_infinity_then_zero": [
+        [
+          -24,
+          -24,
+          -24,
+          -24,
+          -20,
+          -20,
+          -20,
+          -20,
+          -12,
+          -12,
+          -12,
+          -12,
+          -8,
+          -8,
+          -8,
+          -8
+        ],
+        [
+          0,
+          2,
+          2,
+          4,
+          6,
+          6,
+          8,
+          8,
+          8,
+          8,
+          10,
+          10,
+          12,
+          14,
+          14,
+          16
+        ]
+      ],
+      "feasible_profiles_infinity_then_zero": [
+        [
+          -8,
+          -6,
+          -2,
+          0,
+          2,
+          4,
+          6,
+          8,
+          8,
+          10,
+          12,
+          14,
+          16,
+          18,
+          22,
+          24
+        ],
+        [
+          8,
+          10,
+          14,
+          16,
+          18,
+          20,
+          22,
+          24,
+          24,
+          26,
+          28,
+          30,
+          32,
+          34,
+          38,
+          40
+        ]
+      ],
+      "rank_specializations": [
+        {
+          "side": 0,
+          "field_value": 2,
+          "rank": 16
+        },
+        {
+          "side": 1,
+          "field_value": 4,
+          "rank": 16
+        }
+      ],
+      "independent_rational_sides": []
+    },
+    {
+      "weights": [
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2"
+      ],
+      "negative_boundary": true,
+      "variables": 6237,
+      "pole": 1,
+      "numerator_degree": 25,
+      "effective_degree": 24,
+      "fiber_variables": 128,
+      "reference_solution_dimension": 29,
+      "random_profiles_infinity_then_zero": [
+        [
+          -29,
+          -25,
+          -25,
+          -24,
+          -24,
+          -20,
+          -20,
+          -20,
+          -16,
+          -13,
+          -13,
+          -12,
+          -11,
+          -7,
+          -7,
+          -5
+        ],
+        [
+          -2,
+          -1,
+          2,
+          4,
+          5,
+          5,
+          6,
+          6,
+          8,
+          8,
+          9,
+          11,
+          13,
+          14,
+          15,
+          17
+        ]
+      ],
+      "feasible_profiles_infinity_then_zero": [
+        [
+          -14,
+          -9,
+          -6,
+          -1,
+          0,
+          4,
+          4,
+          6,
+          7,
+          11,
+          11,
+          13,
+          17,
+          19,
+          24,
+          26
+        ],
+        [
+          4,
+          8,
+          14,
+          15,
+          16,
+          18,
+          21,
+          22,
+          25,
+          28,
+          28,
+          30,
+          30,
+          35,
+          38,
+          44
+        ]
+      ],
+      "rank_specializations": [
+        {
+          "side": 0,
+          "field_value": 2,
+          "rank": 16
+        },
+        {
+          "side": 1,
+          "field_value": 2,
+          "rank": 16
+        }
+      ],
+      "independent_rational_sides": []
+    }
+  ],
+  "source_sha256": {
+    "check_typed_charge_lattice_synthesis.py": "2dfbd3132c655205196068cfadef5aae3439f32f77391dfc24dc87c5ce20950e",
+    "typed_charge_lattice_synthesis.py": "ff80b470f8023729278e5ea0bc83afbed4b0d071cf20649212c125c2708f5d05",
+    "full_alphabet_two_cut_lattices.py": "cbc67b9e3f4f422a34e1474e0dc02eba9c741b3b7b836b315123d061571f0caf",
+    "weyl_lattice_filter_synthesis.py": "5aef949234535ddb72e9f3d5560557bb9f0e06aeffd7b59b82fd5def6aa6c284",
+    "reflection_quartic_tiles.py": "91a9420c575ce91f6817b220318ce2225f4c1a8d98585c8fc6dca8d8c3c66da2",
+    "check_reflection_quartic_tiles.py": "2600ca281d757fa97ceddf3f7511d258398d7022b734d9f0b67bd6cc036c04fc",
+    "reflection_dual_rail_gaussian.py": "6d4780f02b9479d2473c823f74c4749f47e1db0bd32e5318bd601bdd51010a38",
+    "native_matrix_smith_f4.py": "c08da20f1938a371b438e32fbc6a8f6766b48c2cfee5bcd1c956ce137dc70203",
+    "native_matrix_smith_f4.cpp": "5ec995cd04563c2fa99b69afd71bf476d5ca885f1f90377490c30e5a1a55f330",
+    "finite_precision_smith_frames.py": "99f275da5775c4438b272929840a6942a7eb7489480f76d4f129b39aaf955e8c"
+  },
+  "note_sha256": "f878b299109ed8efdd2f42172c40f99f030871d131abc85d2c1d8568a2402f92"
+}

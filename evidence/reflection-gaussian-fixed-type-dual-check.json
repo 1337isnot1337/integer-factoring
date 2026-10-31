@@ -1,0 +1,110 @@
+{
+  "status": "pass",
+  "certificates": [
+    {
+      "interval": 4,
+      "exact_minor_valuations": 23,
+      "exact_stationarity_equations": 25,
+      "natural_bogoliubov_orders_checked": 16,
+      "twice_probability_entropy_interval": [
+        "4049822546277773693904420",
+        "4049822546277773693905652"
+      ],
+      "global_minimum_cost_interval": [
+        "2960748936386337436775268",
+        "2960748936386337436776319"
+      ],
+      "critical_gap_interval": [
+        "97091951311152977960318",
+        "97091951311152977962243"
+      ],
+      "optimal_fixed_type_rho_interval": [
+        "883822882038074320786589",
+        "883822882038074320787174"
+      ],
+      "interval_denominator": "1208925819614629174706176",
+      "rho_display_only": 0.7310811529526366
+    },
+    {
+      "interval": 8,
+      "exact_minor_valuations": 48,
+      "exact_stationarity_equations": 49,
+      "natural_bogoliubov_orders_checked": 32,
+      "twice_probability_entropy_interval": [
+        "6383058285424470951115220",
+        "6383058285424470951117692"
+      ],
+      "global_minimum_cost_interval": [
+        "4574443423509223741967538",
+        "4574443423509223741969801"
+      ],
+      "critical_gap_interval": [
+        "60939625176603147842462",
+        "60939625176603147846477"
+      ],
+      "optimal_fixed_type_rho_interval": [
+        "866381367325848385140423",
+        "866381367325848385141194"
+      ],
+      "interval_denominator": "1208925819614629174706176",
+      "rho_display_only": 0.716653870129125
+    },
+    {
+      "interval": 16,
+      "exact_minor_valuations": 95,
+      "exact_stationarity_equations": 97,
+      "natural_bogoliubov_orders_checked": 64,
+      "twice_probability_entropy_interval": [
+        "10327070812373790054513416",
+        "10327070812373790054518348"
+      ],
+      "global_minimum_cost_interval": [
+        "7338462174170720384024401",
+        "7338462174170720384029578"
+      ],
+      "critical_gap_interval": [
+        "36120372947545235443566",
+        "36120372947545235452236"
+      ],
+      "optimal_fixed_type_rho_interval": [
+        "859068031952522710105842",
+        "859068031952522710106867"
+      ],
+      "interval_denominator": "1208925819614629174706176",
+      "rho_display_only": 0.7106044208952117
+    },
+    {
+      "interval": 32,
+      "exact_minor_valuations": 192,
+      "exact_stationarity_equations": 193,
+      "natural_bogoliubov_orders_checked": 128,
+      "twice_probability_entropy_interval": [
+        "17532820873763641046392076",
+        "17532820873763641046401920"
+      ],
+      "global_minimum_cost_interval": [
+        "12418866127236727947498732",
+        "12418866127236727947511769"
+      ],
+      "critical_gap_interval": [
+        "21289594069408042573935",
+        "21289594069408042593941"
+      ],
+      "optimal_fixed_type_rho_interval": [
+        "856307608436267706870322",
+        "856307608436267706871715"
+      ],
+      "interval_denominator": "1208925819614629174706176",
+      "rho_display_only": 0.7083210520801301
+    }
+  ],
+  "exact_minor_valuations": 358,
+  "rejected_negative_controls": 3,
+  "source_sha256": {
+    "research/reflection-gaussian-fixed-type-duals.md": "fa3b0c6248073aaf0547614dd6ed5712ef19868e12f22f0ac2a794b9996cba60",
+    "tools/check_reflection_gaussian_fixed_type_duals.py": "9ec168e7f66e403203e06c722e903aa46d4ec1fdc23264de332adc3b916b36b4",
+    "tools/reflection_unrestricted_gaussian.py": "0abc6062ebf9a88f144e484dea4801e6bd65235c089e3d59e84253e423f86752",
+    "tools/check_reflection_unrestricted_gaussian.py": "159e6a4d6b225f02ab726290f90e298e7499d878647c4d439473e7a0ef4f5469"
+  },
+  "scope": "Global minimum over all real independent Gaussian mode gauges and every positive scale for the listed fixed rational physical bit marginals; no all-type or improved-exponent claim."
+}

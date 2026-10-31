@@ -1,0 +1,3547 @@
+{
+  "status": "Every arbitrary-height normalization and shared-minor pressure control passed.",
+  "scope": "All binary Laurent-polynomial strict crossing seeds, every coefficient field, and all independent physical-letter heights; no improved factoring exponent.",
+  "literal_endpoint_coefficients": 2688,
+  "complete_profiles_by_all_minors": 504,
+  "arbitrary_integer_height_cases": 84,
+  "nontrivial_paired_label_flips": 60,
+  "outward_actual_pressure_comparisons": 252,
+  "compact_analytic_certificate": "binary-fixed-ray-floor.json",
+  "critical_lower_bound": "exp(-max(a,b)*t)/28, with paired energies normalized to -2a and -2b",
+  "literal_controls": [
+    {
+      "degree": 0,
+      "original_heights_infinity_then_zero": [
+        -4,
+        2,
+        -4,
+        0,
+        1,
+        -3,
+        -4,
+        4
+      ],
+      "paired_label_flip_mask": 9,
+      "Laurent_clearing": 3,
+      "canonical_paired_energy_halves": [
+        "1/2",
+        "9/2"
+      ],
+      "deficit": 4,
+      "normalized_zero_profile": [
+        0,
+        5,
+        7,
+        12
+      ],
+      "normalized_infinity_profile": [
+        0,
+        2,
+        4,
+        6
+      ],
+      "shared_minor_supports": [
+        [
+          5,
+          5
+        ],
+        [
+          7,
+          7
+        ]
+      ]
+    },
+    {
+      "degree": 0,
+      "original_heights_infinity_then_zero": [
+        -3,
+        -2,
+        1,
+        -4,
+        -4,
+        4,
+        -4,
+        3
+      ],
+      "paired_label_flip_mask": 0,
+      "Laurent_clearing": 2,
+      "canonical_paired_energy_halves": [
+        "4",
+        "1/2"
+      ],
+      "deficit": 0,
+      "normalized_zero_profile": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "normalized_infinity_profile": [
+        0,
+        1,
+        7,
+        8
+      ],
+      "shared_minor_supports": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "degree": 0,
+      "original_heights_infinity_then_zero": [
+        3,
+        2,
+        -4,
+        4,
+        0,
+        -2,
+        -2,
+        -4
+      ],
+      "paired_label_flip_mask": 9,
+      "Laurent_clearing": 0,
+      "canonical_paired_energy_halves": [
+        "3/2",
+        "3"
+      ],
+      "deficit": 4,
+      "normalized_zero_profile": [
+        0,
+        4,
+        4,
+        8
+      ],
+      "normalized_infinity_profile": [
+        0,
+        2,
+        7,
+        9
+      ],
+      "shared_minor_supports": [
+        [
+          4,
+          4
+        ],
+        [
+          12,
+          12
+        ]
+      ]
+    },
+    {
+      "degree": 0,
+      "original_heights_infinity_then_zero": [
+        -2,
+        0,
+        4,
+        -4,
+        1,
+        -2,
+        2,
+        -1
+      ],
+      "paired_label_flip_mask": 6,
+      "Laurent_clearing": 2,
+      "canonical_paired_energy_halves": [
+        "3",
+        "2"
+      ],
+      "deficit": 0,
+      "normalized_zero_profile": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "normalized_infinity_profile": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "shared_minor_supports": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "degree": 0,
+      "original_heights_infinity_then_zero": [
+        -4,
+        -1,
+        -3,
+        1,
+        2,
+        3,
+        2,
+        -4
+      ],
+      "paired_label_flip_mask": 6,
+      "Laurent_clearing": 3,
+      "canonical_paired_energy_halves": [
+        "5/2",
+        "1/2"
+      ],
+      "deficit": 4,
+      "normalized_zero_profile": [
+        0,
+        2,
+        5,
+        7
+      ],
+      "normalized_infinity_profile": [
+        0,
+        3,
+        4,
+        7
+      ],
+      "shared_minor_supports": [
+        [
+          2,
+          2
+        ],
+        [
+          5,
+          5
+        ]
+      ]
+    },
+    {
+      "degree": 0,
+      "original_heights_infinity_then_zero": [
+        -2,
+        -2,
+        0,
+        -2,
+        0,
+        -2,
+        3,
+        -3
+      ],
+      "paired_label_flip_mask": 0,
+      "Laurent_clearing": 0,
+      "canonical_paired_energy_halves": [
+        "7/2",
+        "1/2"
+      ],
+      "deficit": 1,
+      "normalized_zero_profile": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "normalized_infinity_profile": [
+        0,
+        2,
+        4,
+        6
+      ],
+      "shared_minor_supports": [
+        [
+          5,
+          5
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "degree": 0,
+      "original_heights_infinity_then_zero": [
+        2,
+        -3,
+        3,
+        4,
+        -4,
+        -2,
+        3,
+        4
+      ],
+      "paired_label_flip_mask": 15,
+      "Laurent_clearing": 0,
+      "canonical_paired_energy_halves": [
+        "3",
+        "1/2"
+      ],
+      "deficit": 0,
+      "normalized_zero_profile": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "normalized_infinity_profile": [
+        0,
+        0,
+        6,
+        6
+      ],
+      "shared_minor_supports": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "degree": 0,
+      "original_heights_infinity_then_zero": [
+        2,
+        -3,
+        0,
+        1,
+        1,
+        1,
+        -3,
+        4
+      ],
+      "paired_label_flip_mask": 9,
+      "Laurent_clearing": 2,
+      "canonical_paired_energy_halves": [
+        "4",
+        "5/2"
+      ],
+      "deficit": 0,
+      "normalized_zero_profile": [
+        0,
+        2,
+        5,
+        7
+      ],
+      "normalized_infinity_profile": [
+        0,
+        3,
+        3,
+        6
+      ],
+      "shared_minor_supports": [
+        [
+          5,
+          5
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "degree": 0,
+      "original_heights_infinity_then_zero": [
+        -3,
+        0,
+        3,
+        -2,
+        2,
+        1,
+        -1,
+        2
+      ],
+      "paired_label_flip_mask": 6,
+      "Laurent_clearing": 1,
+      "canonical_paired_energy_halves": [
+        "1/2",
+        "3/2"
+      ],
+      "deficit": 4,
+      "normalized_zero_profile": [
+        0,
+        0,
+        4,
+        4
+      ],
+      "normalized_infinity_profile": [
+        0,
+        3,
+        5,
+        8
+      ],
+      "shared_minor_supports": [
+        [
+          4,
+          4
+        ],
+        [
+          8,
+          8
+        ]
+      ]
+    },
+    {
+      "degree": 0,
+      "original_heights_infinity_then_zero": [
+        2,
+        -2,
+        -1,
+        1,
+        -4,
+        0,
+        4,
+        3
+      ],
+      "paired_label_flip_mask": 15,
+      "Laurent_clearing": 3,
+      "canonical_paired_energy_halves": [
+        "1",
+        "1/2"
+      ],
+      "deficit": 4,
+      "normalized_zero_profile": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "normalized_infinity_profile": [
+        0,
+        3,
+        3,
+        6
+      ],
+      "shared_minor_supports": [
+        [
+          1,
+          1
+        ],
+        [
+          6,
+          6
+        ]
+      ]
+    },
+    {
+      "degree": 0,
+      "original_heights_infinity_then_zero": [
+        -1,
+        2,
+        2,
+        1,
+        -4,
+        -2,
+        -2,
+        1
+      ],
+      "paired_label_flip_mask": 0,
+      "Laurent_clearing": 2,
+      "canonical_paired_energy_halves": [
+        "3/2",
+        "0"
+      ],
+      "deficit": 4,
+      "normalized_zero_profile": [
+        0,
+        3,
+        4,
+        7
+      ],
+      "normalized_infinity_profile": [
+        0,
+        0,
+        4,
+        4
+      ],
+      "shared_minor_supports": [
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          4
+        ]
+      ]
+    },
+    {
+      "degree": 0,
+      "original_heights_infinity_then_zero": [
+        2,
+        -1,
+        3,
+        3,
+        3,
+        -1,
+        3,
+        -2
+      ],
+      "paired_label_flip_mask": 15,
+      "Laurent_clearing": 1,
+      "canonical_paired_energy_halves": [
+        "3",
+        "2"
+      ],
+      "deficit": 0,
+      "normalized_zero_profile": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "normalized_infinity_profile": [
+        0,
+        2,
+        5,
+        7
+      ],
+      "shared_minor_supports": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "degree": 1,
+      "original_heights_infinity_then_zero": [
+        -4,
+        0,
+        -1,
+        1,
+        1,
+        -4,
+        1,
+        4
+      ],
+      "paired_label_flip_mask": 9,
+      "Laurent_clearing": 0,
+      "canonical_paired_energy_halves": [
+        "1",
+        "2"
+      ],
+      "deficit": 6,
+      "normalized_zero_profile": [
+        0,
+        3,
+        7,
+        11
+      ],
+      "normalized_infinity_profile": [
+        0,
+        1,
+        5,
+        7
+      ],
+      "shared_minor_supports": [
+        [
+          9,
+          9
+        ],
+        [
+          5,
+          7
+        ]
+      ]
+    },
+    {
+      "degree": 1,
+      "original_heights_infinity_then_zero": [
+        1,
+        0,
+        2,
+        1,
+        -3,
+        0,
+        -2,
+        3
+      ],
+      "paired_label_flip_mask": 9,
+      "Laurent_clearing": 3,
+      "canonical_paired_energy_halves": [
+        "1",
+        "0"
+      ],
+      "deficit": 5,
+      "normalized_zero_profile": [
+        0,
+        2,
+        6,
+        9
+      ],
+      "normalized_infinity_profile": [
+        0,
+        0,
+        1,
+        3
+      ],
+      "shared_minor_supports": [
+        [
+          6,
+          8
+        ],
+        [
+          9,
+          9
+        ]
+      ]
+    },
+    {
+      "degree": 1,
+      "original_heights_infinity_then_zero": [
+        -4,
+        -3,
+        -4,
+        3,
+        -1,
+        2,
+        -2,
+        -2
+      ],
+      "paired_label_flip_mask": 0,
+      "Laurent_clearing": 1,
+      "canonical_paired_energy_halves": [
+        "2",
+        "7/2"
+      ],
+      "deficit": 3,
+      "normalized_zero_profile": [
+        0,
+        3,
+        4,
+        7
+      ],
+      "normalized_infinity_profile": [
+        0,
+        1,
+        4,
+        11
+      ],
+      "shared_minor_supports": [
+        [
+          7,
+          9
+        ],
+        [
+          4,
+          4
+        ]
+      ]
+    },
+    {
+      "degree": 1,
+      "original_heights_infinity_then_zero": [
+        2,
+        1,
+        4,
+        -4,
+        -2,
+        4,
+        -1,
+        -1
+      ],
+      "paired_label_flip_mask": 6,
+      "Laurent_clearing": 2,
+      "canonical_paired_energy_halves": [
+        "5/2",
+        "4"
+      ],
+      "deficit": 3,
+      "normalized_zero_profile": [
+        0,
+        1,
+        4,
+        7
+      ],
+      "normalized_infinity_profile": [
+        0,
+        3,
+        8,
+        14
+      ],
+      "shared_minor_supports": [
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          4
+        ]
+      ]
+    },
+    {
+      "degree": 1,
+      "original_heights_infinity_then_zero": [
+        -4,
+        -3,
+        -4,
+        0,
+        -4,
+        -4,
+        -4,
+        -4
+      ],
+      "paired_label_flip_mask": 0,
+      "Laurent_clearing": 3,
+      "canonical_paired_energy_halves": [
+        "6",
+        "15/2"
+      ],
+      "deficit": 0,
+      "normalized_zero_profile": [
+        0,
+        6,
+        7,
+        15
+      ],
+      "normalized_infinity_profile": [
+        0,
+        4,
+        7,
+        13
+      ],
+      "shared_minor_supports": [
+        [
+          6,
+          8
+        ],
+        [
+          7,
+          7
+        ]
+      ]
+    },
+    {
+      "degree": 1,
+      "original_heights_infinity_then_zero": [
+        -3,
+        4,
+        -4,
+        -4,
+        0,
+        1,
+        4,
+        -3
+      ],
+      "paired_label_flip_mask": 6,
+      "Laurent_clearing": 1,
+      "canonical_paired_energy_halves": [
+        "5",
+        "5/2"
+      ],
+      "deficit": 5,
+      "normalized_zero_profile": [
+        0,
+        4,
+        4,
+        8
+      ],
+      "normalized_infinity_profile": [
+        0,
+        7,
+        8,
+        15
+      ],
+      "shared_minor_supports": [
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          7
+        ]
+      ]
+    },
+    {
+      "degree": 1,
+      "original_heights_infinity_then_zero": [
+        -2,
+        -1,
+        0,
+        3,
+        -2,
+        2,
+        4,
+        -3
+      ],
+      "paired_label_flip_mask": 6,
+      "Laurent_clearing": 2,
+      "canonical_paired_energy_halves": [
+        "2",
+        "5/2"
+      ],
+      "deficit": 5,
+      "normalized_zero_profile": [
+        0,
+        5,
+        8,
+        10
+      ],
+      "normalized_infinity_profile": [
+        0,
+        1,
+        5,
+        6
+      ],
+      "shared_minor_supports": [
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          8
+        ]
+      ]
+    },
+    {
+      "degree": 1,
+      "original_heights_infinity_then_zero": [
+        -3,
+        0,
+        0,
+        -1,
+        2,
+        4,
+        -2,
+        -2
+      ],
+      "paired_label_flip_mask": 6,
+      "Laurent_clearing": 0,
+      "canonical_paired_energy_halves": [
+        "2",
+        "1"
+      ],
+      "deficit": 5,
+      "normalized_zero_profile": [
+        0,
+        4,
+        6,
+        12
+      ],
+      "normalized_infinity_profile": [
+        0,
+        0,
+        4,
+        4
+      ],
+      "shared_minor_supports": [
+        [
+          9,
+          10
+        ],
+        [
+          11,
+          12
+        ]
+      ]
+    },
+    {
+      "degree": 1,
+      "original_heights_infinity_then_zero": [
+        0,
+        2,
+        -2,
+        -1,
+        1,
+        3,
+        1,
+        3
+      ],
+      "paired_label_flip_mask": 15,
+      "Laurent_clearing": 1,
+      "canonical_paired_energy_halves": [
+        "3/2",
+        "2"
+      ],
+      "deficit": 4,
+      "normalized_zero_profile": [
+        0,
+        2,
+        6,
+        8
+      ],
+      "normalized_infinity_profile": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "shared_minor_supports": [
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          6
+        ]
+      ]
+    },
+    {
+      "degree": 1,
+      "original_heights_infinity_then_zero": [
+        -1,
+        0,
+        2,
+        4,
+        0,
+        -2,
+        4,
+        -2
+      ],
+      "paired_label_flip_mask": 15,
+      "Laurent_clearing": 3,
+      "canonical_paired_energy_halves": [
+        "1/2",
+        "2"
+      ],
+      "deficit": 6,
+      "normalized_zero_profile": [
+        0,
+        2,
+        6,
+        8
+      ],
+      "normalized_infinity_profile": [
+        0,
+        1,
+        6,
+        7
+      ],
+      "shared_minor_supports": [
+        [
+          6,
+          8
+        ],
+        [
+          10,
+          12
+        ]
+      ]
+    },
+    {
+      "degree": 1,
+      "original_heights_infinity_then_zero": [
+        1,
+        -2,
+        -3,
+        -1,
+        -2,
+        3,
+        -3,
+        4
+      ],
+      "paired_label_flip_mask": 9,
+      "Laurent_clearing": 0,
+      "canonical_paired_energy_halves": [
+        "1",
+        "5/2"
+      ],
+      "deficit": 7,
+      "normalized_zero_profile": [
+        0,
+        6,
+        6,
+        12
+      ],
+      "normalized_infinity_profile": [
+        0,
+        2,
+        5,
+        7
+      ],
+      "shared_minor_supports": [
+        [
+          13,
+          14
+        ],
+        [
+          10,
+          12
+        ]
+      ]
+    },
+    {
+      "degree": 1,
+      "original_heights_infinity_then_zero": [
+        3,
+        2,
+        -1,
+        -3,
+        -1,
+        -3,
+        3,
+        -1
+      ],
+      "paired_label_flip_mask": 6,
+      "Laurent_clearing": 2,
+      "canonical_paired_energy_halves": [
+        "1",
+        "1/2"
+      ],
+      "deficit": 8,
+      "normalized_zero_profile": [
+        0,
+        2,
+        7,
+        7
+      ],
+      "normalized_infinity_profile": [
+        0,
+        3,
+        8,
+        11
+      ],
+      "shared_minor_supports": [
+        [
+          8,
+          10
+        ],
+        [
+          6,
+          8
+        ]
+      ]
+    },
+    {
+      "degree": 2,
+      "original_heights_infinity_then_zero": [
+        0,
+        4,
+        4,
+        -4,
+        3,
+        4,
+        0,
+        -3
+      ],
+      "paired_label_flip_mask": 6,
+      "Laurent_clearing": 0,
+      "canonical_paired_energy_halves": [
+        "2",
+        "6"
+      ],
+      "deficit": 5,
+      "normalized_zero_profile": [
+        0,
+        3,
+        7,
+        12
+      ],
+      "normalized_infinity_profile": [
+        0,
+        4,
+        8,
+        12
+      ],
+      "shared_minor_supports": [
+        [
+          6,
+          10
+        ],
+        [
+          10,
+          14
+        ]
+      ]
+    },
+    {
+      "degree": 2,
+      "original_heights_infinity_then_zero": [
+        4,
+        1,
+        -1,
+        -1,
+        4,
+        0,
+        -1,
+        4
+      ],
+      "paired_label_flip_mask": 9,
+      "Laurent_clearing": 5,
+      "canonical_paired_energy_halves": [
+        "11/2",
+        "1/2"
+      ],
+      "deficit": 4,
+      "normalized_zero_profile": [
+        0,
+        1,
+        9,
+        9
+      ],
+      "normalized_infinity_profile": [
+        0,
+        2,
+        5,
+        7
+      ],
+      "shared_minor_supports": [
+        [
+          10,
+          12
+        ],
+        [
+          1,
+          5
+        ]
+      ]
+    },
+    {
+      "degree": 2,
+      "original_heights_infinity_then_zero": [
+        2,
+        4,
+        -2,
+        -2,
+        2,
+        -2,
+        3,
+        0
+      ],
+      "paired_label_flip_mask": 15,
+      "Laurent_clearing": 1,
+      "canonical_paired_energy_halves": [
+        "1",
+        "3/2"
+      ],
+      "deficit": 8,
+      "normalized_zero_profile": [
+        0,
+        2,
+        5,
+        8
+      ],
+      "normalized_infinity_profile": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "shared_minor_supports": [
+        [
+          6,
+          9
+        ],
+        [
+          6,
+          9
+        ]
+      ]
+    },
+    {
+      "degree": 2,
+      "original_heights_infinity_then_zero": [
+        -3,
+        3,
+        4,
+        -4,
+        -3,
+        3,
+        0,
+        0
+      ],
+      "paired_label_flip_mask": 6,
+      "Laurent_clearing": 3,
+      "canonical_paired_energy_halves": [
+        "5",
+        "5"
+      ],
+      "deficit": 2,
+      "normalized_zero_profile": [
+        0,
+        3,
+        4,
+        6
+      ],
+      "normalized_infinity_profile": [
+        0,
+        6,
+        8,
+        14
+      ],
+      "shared_minor_supports": [
+        [
+          4,
+          7
+        ],
+        [
+          3,
+          7
+        ]
+      ]
+    },
+    {
+      "degree": 2,
+      "original_heights_infinity_then_zero": [
+        4,
+        2,
+        -1,
+        3,
+        -3,
+        -4,
+        0,
+        4
+      ],
+      "paired_label_flip_mask": 9,
+      "Laurent_clearing": 5,
+      "canonical_paired_energy_halves": [
+        "4",
+        "3/2"
+      ],
+      "deficit": 7,
+      "normalized_zero_profile": [
+        0,
+        3,
+        8,
+        11
+      ],
+      "normalized_infinity_profile": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "shared_minor_supports": [
+        [
+          7,
+          10
+        ],
+        [
+          10,
+          13
+        ]
+      ]
+    },
+    {
+      "degree": 2,
+      "original_heights_infinity_then_zero": [
+        -1,
+        4,
+        3,
+        0,
+        -1,
+        -2,
+        -2,
+        2
+      ],
+      "paired_label_flip_mask": 6,
+      "Laurent_clearing": 5,
+      "canonical_paired_energy_halves": [
+        "0",
+        "3/2"
+      ],
+      "deficit": 8,
+      "normalized_zero_profile": [
+        0,
+        4,
+        4,
+        6
+      ],
+      "normalized_infinity_profile": [
+        0,
+        1,
+        7,
+        8
+      ],
+      "shared_minor_supports": [
+        [
+          11,
+          15
+        ],
+        [
+          8,
+          12
+        ]
+      ]
+    },
+    {
+      "degree": 2,
+      "original_heights_infinity_then_zero": [
+        2,
+        -2,
+        2,
+        2,
+        -1,
+        -3,
+        -3,
+        -3
+      ],
+      "paired_label_flip_mask": 0,
+      "Laurent_clearing": 2,
+      "canonical_paired_energy_halves": [
+        "0",
+        "3"
+      ],
+      "deficit": 7,
+      "normalized_zero_profile": [
+        0,
+        3,
+        4,
+        9
+      ],
+      "normalized_infinity_profile": [
+        0,
+        4,
+        4,
+        8
+      ],
+      "shared_minor_supports": [
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          7
+        ]
+      ]
+    },
+    {
+      "degree": 2,
+      "original_heights_infinity_then_zero": [
+        -3,
+        1,
+        0,
+        -2,
+        -3,
+        1,
+        3,
+        0
+      ],
+      "paired_label_flip_mask": 6,
+      "Laurent_clearing": 5,
+      "canonical_paired_energy_halves": [
+        "4",
+        "5/2"
+      ],
+      "deficit": 2,
+      "normalized_zero_profile": [
+        0,
+        1,
+        6,
+        7
+      ],
+      "normalized_infinity_profile": [
+        0,
+        1,
+        5,
+        6
+      ],
+      "shared_minor_supports": [
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          8
+        ]
+      ]
+    },
+    {
+      "degree": 2,
+      "original_heights_infinity_then_zero": [
+        3,
+        3,
+        0,
+        -3,
+        0,
+        1,
+        2,
+        -4
+      ],
+      "paired_label_flip_mask": 6,
+      "Laurent_clearing": 1,
+      "canonical_paired_energy_halves": [
+        "2",
+        "3"
+      ],
+      "deficit": 2,
+      "normalized_zero_profile": [
+        0,
+        3,
+        4,
+        7
+      ],
+      "normalized_infinity_profile": [
+        0,
+        0,
+        1,
+        5
+      ],
+      "shared_minor_supports": [
+        [
+          4,
+          8
+        ],
+        [
+          3,
+          6
+        ]
+      ]
+    },
+    {
+      "degree": 2,
+      "original_heights_infinity_then_zero": [
+        -4,
+        -1,
+        -2,
+        -2,
+        -2,
+        4,
+        0,
+        2
+      ],
+      "paired_label_flip_mask": 6,
+      "Laurent_clearing": 3,
+      "canonical_paired_energy_halves": [
+        "3",
+        "1/2"
+      ],
+      "deficit": 7,
+      "normalized_zero_profile": [
+        0,
+        2,
+        6,
+        8
+      ],
+      "normalized_infinity_profile": [
+        0,
+        3,
+        6,
+        9
+      ],
+      "shared_minor_supports": [
+        [
+          4,
+          8
+        ],
+        [
+          9,
+          12
+        ]
+      ]
+    },
+    {
+      "degree": 2,
+      "original_heights_infinity_then_zero": [
+        -4,
+        -2,
+        4,
+        -4,
+        3,
+        2,
+        1,
+        -3
+      ],
+      "paired_label_flip_mask": 6,
+      "Laurent_clearing": 0,
+      "canonical_paired_energy_halves": [
+        "4",
+        "5/2"
+      ],
+      "deficit": 7,
+      "normalized_zero_profile": [
+        0,
+        3,
+        6,
+        9
+      ],
+      "normalized_infinity_profile": [
+        0,
+        6,
+        9,
+        14
+      ],
+      "shared_minor_supports": [
+        [
+          6,
+          10
+        ],
+        [
+          9,
+          13
+        ]
+      ]
+    },
+    {
+      "degree": 2,
+      "original_heights_infinity_then_zero": [
+        3,
+        0,
+        -2,
+        -1,
+        -1,
+        0,
+        0,
+        -4
+      ],
+      "paired_label_flip_mask": 0,
+      "Laurent_clearing": 3,
+      "canonical_paired_energy_halves": [
+        "3/2",
+        "1"
+      ],
+      "deficit": 5,
+      "normalized_zero_profile": [
+        0,
+        0,
+        5,
+        6
+      ],
+      "normalized_infinity_profile": [
+        0,
+        2,
+        4,
+        7
+      ],
+      "shared_minor_supports": [
+        [
+          5,
+          9
+        ],
+        [
+          0,
+          3
+        ]
+      ]
+    },
+    {
+      "degree": 3,
+      "original_heights_infinity_then_zero": [
+        -4,
+        -4,
+        4,
+        0,
+        1,
+        -2,
+        -2,
+        -3
+      ],
+      "paired_label_flip_mask": 0,
+      "Laurent_clearing": 1,
+      "canonical_paired_energy_halves": [
+        "3",
+        "2"
+      ],
+      "deficit": 8,
+      "normalized_zero_profile": [
+        0,
+        3,
+        5,
+        8
+      ],
+      "normalized_infinity_profile": [
+        0,
+        4,
+        8,
+        14
+      ],
+      "shared_minor_supports": [
+        [
+          4,
+          10
+        ],
+        [
+          6,
+          10
+        ]
+      ]
+    },
+    {
+      "degree": 3,
+      "original_heights_infinity_then_zero": [
+        -2,
+        4,
+        4,
+        -4,
+        2,
+        -2,
+        1,
+        -3
+      ],
+      "paired_label_flip_mask": 6,
+      "Laurent_clearing": 1,
+      "canonical_paired_energy_halves": [
+        "7/2",
+        "7/2"
+      ],
+      "deficit": 5,
+      "normalized_zero_profile": [
+        0,
+        1,
+        1,
+        9
+      ],
+      "normalized_infinity_profile": [
+        0,
+        6,
+        8,
+        14
+      ],
+      "shared_minor_supports": [
+        [
+          5,
+          11
+        ],
+        [
+          3,
+          9
+        ]
+      ]
+    },
+    {
+      "degree": 3,
+      "original_heights_infinity_then_zero": [
+        -3,
+        -2,
+        4,
+        -4,
+        4,
+        2,
+        -2,
+        1
+      ],
+      "paired_label_flip_mask": 6,
+      "Laurent_clearing": 1,
+      "canonical_paired_energy_halves": [
+        "1",
+        "1"
+      ],
+      "deficit": 11,
+      "normalized_zero_profile": [
+        0,
+        2,
+        5,
+        8
+      ],
+      "normalized_infinity_profile": [
+        0,
+        5,
+        8,
+        13
+      ],
+      "shared_minor_supports": [
+        [
+          7,
+          12
+        ],
+        [
+          12,
+          18
+        ]
+      ]
+    },
+    {
+      "degree": 3,
+      "original_heights_infinity_then_zero": [
+        1,
+        2,
+        1,
+        4,
+        -1,
+        1,
+        -1,
+        -1
+      ],
+      "paired_label_flip_mask": 15,
+      "Laurent_clearing": 1,
+      "canonical_paired_energy_halves": [
+        "3/2",
+        "3/2"
+      ],
+      "deficit": 6,
+      "normalized_zero_profile": [
+        0,
+        2,
+        2,
+        5
+      ],
+      "normalized_infinity_profile": [
+        0,
+        3,
+        5,
+        8
+      ],
+      "shared_minor_supports": [
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          12
+        ]
+      ]
+    },
+    {
+      "degree": 3,
+      "original_heights_infinity_then_zero": [
+        -2,
+        0,
+        0,
+        -4,
+        1,
+        -4,
+        -1,
+        -4
+      ],
+      "paired_label_flip_mask": 0,
+      "Laurent_clearing": 5,
+      "canonical_paired_energy_halves": [
+        "9/2",
+        "5/2"
+      ],
+      "deficit": 3,
+      "normalized_zero_profile": [
+        0,
+        0,
+        7,
+        9
+      ],
+      "normalized_infinity_profile": [
+        0,
+        1,
+        5,
+        6
+      ],
+      "shared_minor_supports": [
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          10
+        ]
+      ]
+    },
+    {
+      "degree": 3,
+      "original_heights_infinity_then_zero": [
+        4,
+        2,
+        -2,
+        3,
+        0,
+        0,
+        2,
+        3
+      ],
+      "paired_label_flip_mask": 15,
+      "Laurent_clearing": 4,
+      "canonical_paired_energy_halves": [
+        "5",
+        "1"
+      ],
+      "deficit": 5,
+      "normalized_zero_profile": [
+        0,
+        2,
+        3,
+        6
+      ],
+      "normalized_infinity_profile": [
+        0,
+        5,
+        7,
+        10
+      ],
+      "shared_minor_supports": [
+        [
+          3,
+          9
+        ],
+        [
+          2,
+          7
+        ]
+      ]
+    },
+    {
+      "degree": 3,
+      "original_heights_infinity_then_zero": [
+        2,
+        -1,
+        -4,
+        2,
+        0,
+        2,
+        2,
+        -4
+      ],
+      "paired_label_flip_mask": 0,
+      "Laurent_clearing": 0,
+      "canonical_paired_energy_halves": [
+        "0",
+        "1/2"
+      ],
+      "deficit": 11,
+      "normalized_zero_profile": [
+        0,
+        4,
+        4,
+        8
+      ],
+      "normalized_infinity_profile": [
+        0,
+        3,
+        6,
+        9
+      ],
+      "shared_minor_supports": [
+        [
+          13,
+          18
+        ],
+        [
+          4,
+          10
+        ]
+      ]
+    },
+    {
+      "degree": 3,
+      "original_heights_infinity_then_zero": [
+        -1,
+        4,
+        -2,
+        1,
+        2,
+        3,
+        1,
+        -4
+      ],
+      "paired_label_flip_mask": 6,
+      "Laurent_clearing": 4,
+      "canonical_paired_energy_halves": [
+        "1",
+        "3"
+      ],
+      "deficit": 8,
+      "normalized_zero_profile": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "normalized_infinity_profile": [
+        0,
+        2,
+        6,
+        8
+      ],
+      "shared_minor_supports": [
+        [
+          6,
+          12
+        ],
+        [
+          9,
+          14
+        ]
+      ]
+    },
+    {
+      "degree": 3,
+      "original_heights_infinity_then_zero": [
+        2,
+        0,
+        -3,
+        -4,
+        2,
+        -1,
+        4,
+        -2
+      ],
+      "paired_label_flip_mask": 0,
+      "Laurent_clearing": 1,
+      "canonical_paired_energy_halves": [
+        "1",
+        "0"
+      ],
+      "deficit": 11,
+      "normalized_zero_profile": [
+        0,
+        3,
+        6,
+        10
+      ],
+      "normalized_infinity_profile": [
+        0,
+        3,
+        6,
+        9
+      ],
+      "shared_minor_supports": [
+        [
+          14,
+          15
+        ],
+        [
+          9,
+          14
+        ]
+      ]
+    },
+    {
+      "degree": 3,
+      "original_heights_infinity_then_zero": [
+        2,
+        3,
+        -4,
+        -1,
+        1,
+        3,
+        0,
+        -3
+      ],
+      "paired_label_flip_mask": 6,
+      "Laurent_clearing": 2,
+      "canonical_paired_energy_halves": [
+        "1/2",
+        "1"
+      ],
+      "deficit": 9,
+      "normalized_zero_profile": [
+        0,
+        1,
+        6,
+        8
+      ],
+      "normalized_infinity_profile": [
+        0,
+        1,
+        6,
+        10
+      ],
+      "shared_minor_supports": [
+        [
+          5,
+          10
+        ],
+        [
+          5,
+          11
+        ]
+      ]
+    },
+    {
+      "degree": 3,
+      "original_heights_infinity_then_zero": [
+        4,
+        -2,
+        -4,
+        2,
+        4,
+        3,
+        0,
+        3
+      ],
+      "paired_label_flip_mask": 9,
+      "Laurent_clearing": 4,
+      "canonical_paired_energy_halves": [
+        "13/2",
+        "3/2"
+      ],
+      "deficit": 6,
+      "normalized_zero_profile": [
+        0,
+        3,
+        7,
+        11
+      ],
+      "normalized_infinity_profile": [
+        0,
+        6,
+        6,
+        12
+      ],
+      "shared_minor_supports": [
+        [
+          13,
+          19
+        ],
+        [
+          3,
+          9
+        ]
+      ]
+    },
+    {
+      "degree": 3,
+      "original_heights_infinity_then_zero": [
+        2,
+        -4,
+        2,
+        -2,
+        3,
+        -2,
+        -4,
+        2
+      ],
+      "paired_label_flip_mask": 9,
+      "Laurent_clearing": 6,
+      "canonical_paired_energy_halves": [
+        "5/2",
+        "4"
+      ],
+      "deficit": 7,
+      "normalized_zero_profile": [
+        0,
+        4,
+        7,
+        11
+      ],
+      "normalized_infinity_profile": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "shared_minor_supports": [
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ]
+      ]
+    },
+    {
+      "degree": 4,
+      "original_heights_infinity_then_zero": [
+        0,
+        -4,
+        -3,
+        2,
+        3,
+        4,
+        4,
+        -4
+      ],
+      "paired_label_flip_mask": 15,
+      "Laurent_clearing": 5,
+      "canonical_paired_energy_halves": [
+        "1/2",
+        "1/2"
+      ],
+      "deficit": 12,
+      "normalized_zero_profile": [
+        0,
+        1,
+        5,
+        13
+      ],
+      "normalized_infinity_profile": [
+        0,
+        2,
+        7,
+        9
+      ],
+      "shared_minor_supports": [
+        [
+          2,
+          9
+        ],
+        [
+          10,
+          18
+        ]
+      ]
+    },
+    {
+      "degree": 4,
+      "original_heights_infinity_then_zero": [
+        0,
+        3,
+        -2,
+        1,
+        -4,
+        2,
+        -3,
+        3
+      ],
+      "paired_label_flip_mask": 0,
+      "Laurent_clearing": 2,
+      "canonical_paired_energy_halves": [
+        "0",
+        "0"
+      ],
+      "deficit": 13,
+      "normalized_zero_profile": [
+        0,
+        5,
+        7,
+        13
+      ],
+      "normalized_infinity_profile": [
+        0,
+        1,
+        5,
+        6
+      ],
+      "shared_minor_supports": [
+        [
+          11,
+          18
+        ],
+        [
+          11,
+          19
+        ]
+      ]
+    },
+    {
+      "degree": 4,
+      "original_heights_infinity_then_zero": [
+        3,
+        1,
+        -3,
+        -4,
+        1,
+        -2,
+        -3,
+        2
+      ],
+      "paired_label_flip_mask": 9,
+      "Laurent_clearing": 2,
+      "canonical_paired_energy_halves": [
+        "1",
+        "7/2"
+      ],
+      "deficit": 8,
+      "normalized_zero_profile": [
+        0,
+        1,
+        4,
+        8
+      ],
+      "normalized_infinity_profile": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "shared_minor_supports": [
+        [
+          1,
+          9
+        ],
+        [
+          3,
+          10
+        ]
+      ]
+    },
+    {
+      "degree": 4,
+      "original_heights_infinity_then_zero": [
+        2,
+        2,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        -4
+      ],
+      "paired_label_flip_mask": 6,
+      "Laurent_clearing": 6,
+      "canonical_paired_energy_halves": [
+        "3/2",
+        "3/2"
+      ],
+      "deficit": 6,
+      "normalized_zero_profile": [
+        0,
+        0,
+        5,
+        5
+      ],
+      "normalized_infinity_profile": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "shared_minor_supports": [
+        [
+          4,
+          12
+        ],
+        [
+          1,
+          9
+        ]
+      ]
+    },
+    {
+      "degree": 4,
+      "original_heights_infinity_then_zero": [
+        0,
+        0,
+        -3,
+        1,
+        0,
+        -4,
+        1,
+        2
+      ],
+      "paired_label_flip_mask": 9,
+      "Laurent_clearing": 7,
+      "canonical_paired_energy_halves": [
+        "3/2",
+        "3"
+      ],
+      "deficit": 5,
+      "normalized_zero_profile": [
+        0,
+        1,
+        7,
+        7
+      ],
+      "normalized_infinity_profile": [
+        0,
+        1,
+        3,
+        5
+      ],
+      "shared_minor_supports": [
+        [
+          4,
+          9
+        ],
+        [
+          5,
+          12
+        ]
+      ]
+    },
+    {
+      "degree": 4,
+      "original_heights_infinity_then_zero": [
+        0,
+        -3,
+        0,
+        -4,
+        4,
+        -2,
+        2,
+        2
+      ],
+      "paired_label_flip_mask": 9,
+      "Laurent_clearing": 7,
+      "canonical_paired_energy_halves": [
+        "1",
+        "3/2"
+      ],
+      "deficit": 10,
+      "normalized_zero_profile": [
+        0,
+        4,
+        6,
+        11
+      ],
+      "normalized_infinity_profile": [
+        0,
+        3,
+        4,
+        7
+      ],
+      "shared_minor_supports": [
+        [
+          10,
+          18
+        ],
+        [
+          4,
+          12
+        ]
+      ]
+    },
+    {
+      "degree": 4,
+      "original_heights_infinity_then_zero": [
+        0,
+        1,
+        1,
+        1,
+        -4,
+        -3,
+        -4,
+        -4
+      ],
+      "paired_label_flip_mask": 0,
+      "Laurent_clearing": 5,
+      "canonical_paired_energy_halves": [
+        "7/2",
+        "5/2"
+      ],
+      "deficit": 6,
+      "normalized_zero_profile": [
+        0,
+        7,
+        8,
+        15
+      ],
+      "normalized_infinity_profile": [
+        0,
+        0,
+        1,
+        2
+      ],
+      "shared_minor_supports": [
+        [
+          8,
+          14
+        ],
+        [
+          7,
+          15
+        ]
+      ]
+    },
+    {
+      "degree": 4,
+      "original_heights_infinity_then_zero": [
+        -2,
+        -4,
+        4,
+        -2,
+        -4,
+        -4,
+        -3,
+        3
+      ],
+      "paired_label_flip_mask": 0,
+      "Laurent_clearing": 3,
+      "canonical_paired_energy_halves": [
+        "5/2",
+        "7/2"
+      ],
+      "deficit": 10,
+      "normalized_zero_profile": [
+        0,
+        7,
+        7,
+        14
+      ],
+      "normalized_infinity_profile": [
+        0,
+        2,
+        7,
+        12
+      ],
+      "shared_minor_supports": [
+        [
+          7,
+          15
+        ],
+        [
+          13,
+          21
+        ]
+      ]
+    },
+    {
+      "degree": 4,
+      "original_heights_infinity_then_zero": [
+        2,
+        0,
+        1,
+        -3,
+        -3,
+        2,
+        -2,
+        0
+      ],
+      "paired_label_flip_mask": 6,
+      "Laurent_clearing": 4,
+      "canonical_paired_energy_halves": [
+        "2",
+        "1/2"
+      ],
+      "deficit": 8,
+      "normalized_zero_profile": [
+        0,
+        2,
+        5,
+        8
+      ],
+      "normalized_infinity_profile": [
+        0,
+        2,
+        5,
+        5
+      ],
+      "shared_minor_supports": [
+        [
+          8,
+          15
+        ],
+        [
+          5,
+          12
+        ]
+      ]
+    },
+    {
+      "degree": 4,
+      "original_heights_infinity_then_zero": [
+        -1,
+        3,
+        -4,
+        2,
+        4,
+        0,
+        1,
+        -4
+      ],
+      "paired_label_flip_mask": 9,
+      "Laurent_clearing": 3,
+      "canonical_paired_energy_halves": [
+        "1/2",
+        "0"
+      ],
+      "deficit": 13,
+      "normalized_zero_profile": [
+        0,
+        2,
+        8,
+        8
+      ],
+      "normalized_infinity_profile": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "shared_minor_supports": [
+        [
+          10,
+          18
+        ],
+        [
+          11,
+          17
+        ]
+      ]
+    },
+    {
+      "degree": 4,
+      "original_heights_infinity_then_zero": [
+        2,
+        2,
+        -4,
+        1,
+        3,
+        4,
+        0,
+        -2
+      ],
+      "paired_label_flip_mask": 15,
+      "Laurent_clearing": 4,
+      "canonical_paired_energy_halves": [
+        "2",
+        "1"
+      ],
+      "deficit": 9,
+      "normalized_zero_profile": [
+        0,
+        3,
+        6,
+        9
+      ],
+      "normalized_infinity_profile": [
+        0,
+        2,
+        5,
+        8
+      ],
+      "shared_minor_supports": [
+        [
+          5,
+          13
+        ],
+        [
+          8,
+          13
+        ]
+      ]
+    },
+    {
+      "degree": 4,
+      "original_heights_infinity_then_zero": [
+        -2,
+        2,
+        3,
+        4,
+        3,
+        -1,
+        -1,
+        -2
+      ],
+      "paired_label_flip_mask": 15,
+      "Laurent_clearing": 6,
+      "canonical_paired_energy_halves": [
+        "3/2",
+        "3/2"
+      ],
+      "deficit": 10,
+      "normalized_zero_profile": [
+        0,
+        2,
+        5,
+        7
+      ],
+      "normalized_infinity_profile": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "shared_minor_supports": [
+        [
+          9,
+          17
+        ],
+        [
+          6,
+          14
+        ]
+      ]
+    },
+    {
+      "degree": 5,
+      "original_heights_infinity_then_zero": [
+        -3,
+        -1,
+        -4,
+        -3,
+        -4,
+        3,
+        -4,
+        0
+      ],
+      "paired_label_flip_mask": 0,
+      "Laurent_clearing": 0,
+      "canonical_paired_energy_halves": [
+        "5",
+        "3"
+      ],
+      "deficit": 7,
+      "normalized_zero_profile": [
+        0,
+        3,
+        8,
+        13
+      ],
+      "normalized_infinity_profile": [
+        0,
+        2,
+        6,
+        10
+      ],
+      "shared_minor_supports": [
+        [
+          10,
+          19
+        ],
+        [
+          7,
+          17
+        ]
+      ]
+    },
+    {
+      "degree": 5,
+      "original_heights_infinity_then_zero": [
+        1,
+        -2,
+        2,
+        0,
+        -4,
+        2,
+        -1,
+        2
+      ],
+      "paired_label_flip_mask": 6,
+      "Laurent_clearing": 8,
+      "canonical_paired_energy_halves": [
+        "1/2",
+        "1/2"
+      ],
+      "deficit": 11,
+      "normalized_zero_profile": [
+        0,
+        3,
+        6,
+        10
+      ],
+      "normalized_infinity_profile": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "shared_minor_supports": [
+        [
+          8,
+          18
+        ],
+        [
+          7,
+          17
+        ]
+      ]
+    },
+    {
+      "degree": 5,
+      "original_heights_infinity_then_zero": [
+        2,
+        -1,
+        -3,
+        -1,
+        -3,
+        -4,
+        4,
+        -1
+      ],
+      "paired_label_flip_mask": 0,
+      "Laurent_clearing": 0,
+      "canonical_paired_energy_halves": [
+        "3/2",
+        "2"
+      ],
+      "deficit": 10,
+      "normalized_zero_profile": [
+        0,
+        4,
+        8,
+        12
+      ],
+      "normalized_infinity_profile": [
+        0,
+        1,
+        3,
+        6
+      ],
+      "shared_minor_supports": [
+        [
+          12,
+          21
+        ],
+        [
+          8,
+          17
+        ]
+      ]
+    },
+    {
+      "degree": 5,
+      "original_heights_infinity_then_zero": [
+        -1,
+        4,
+        -1,
+        3,
+        2,
+        -2,
+        3,
+        -3
+      ],
+      "paired_label_flip_mask": 15,
+      "Laurent_clearing": 8,
+      "canonical_paired_energy_halves": [
+        "1/2",
+        "2"
+      ],
+      "deficit": 10,
+      "normalized_zero_profile": [
+        0,
+        1,
+        3,
+        8
+      ],
+      "normalized_infinity_profile": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "shared_minor_supports": [
+        [
+          5,
+          15
+        ],
+        [
+          8,
+          17
+        ]
+      ]
+    },
+    {
+      "degree": 5,
+      "original_heights_infinity_then_zero": [
+        -1,
+        3,
+        -3,
+        -3,
+        4,
+        0,
+        4,
+        -4
+      ],
+      "paired_label_flip_mask": 6,
+      "Laurent_clearing": 8,
+      "canonical_paired_energy_halves": [
+        "2",
+        "2"
+      ],
+      "deficit": 12,
+      "normalized_zero_profile": [
+        0,
+        4,
+        8,
+        12
+      ],
+      "normalized_infinity_profile": [
+        0,
+        4,
+        6,
+        11
+      ],
+      "shared_minor_supports": [
+        [
+          9,
+          17
+        ],
+        [
+          12,
+          22
+        ]
+      ]
+    },
+    {
+      "degree": 5,
+      "original_heights_infinity_then_zero": [
+        4,
+        4,
+        -1,
+        -4,
+        -1,
+        -4,
+        -3,
+        1
+      ],
+      "paired_label_flip_mask": 0,
+      "Laurent_clearing": 4,
+      "canonical_paired_energy_halves": [
+        "0",
+        "2"
+      ],
+      "deficit": 13,
+      "normalized_zero_profile": [
+        0,
+        2,
+        4,
+        8
+      ],
+      "normalized_infinity_profile": [
+        0,
+        5,
+        9,
+        12
+      ],
+      "shared_minor_supports": [
+        [
+          2,
+          9
+        ],
+        [
+          7,
+          17
+        ]
+      ]
+    },
+    {
+      "degree": 5,
+      "original_heights_infinity_then_zero": [
+        -4,
+        1,
+        -3,
+        -3,
+        -4,
+        0,
+        0,
+        -2
+      ],
+      "paired_label_flip_mask": 0,
+      "Laurent_clearing": 1,
+      "canonical_paired_energy_halves": [
+        "13/2",
+        "1"
+      ],
+      "deficit": 6,
+      "normalized_zero_profile": [
+        0,
+        0,
+        6,
+        6
+      ],
+      "normalized_infinity_profile": [
+        0,
+        4,
+        7,
+        11
+      ],
+      "shared_minor_supports": [
+        [
+          6,
+          16
+        ],
+        [
+          0,
+          10
+        ]
+      ]
+    },
+    {
+      "degree": 5,
+      "original_heights_infinity_then_zero": [
+        4,
+        -2,
+        -4,
+        2,
+        -3,
+        -4,
+        2,
+        4
+      ],
+      "paired_label_flip_mask": 9,
+      "Laurent_clearing": 1,
+      "canonical_paired_energy_halves": [
+        "7/2",
+        "4"
+      ],
+      "deficit": 9,
+      "normalized_zero_profile": [
+        0,
+        6,
+        8,
+        13
+      ],
+      "normalized_infinity_profile": [
+        0,
+        4,
+        5,
+        11
+      ],
+      "shared_minor_supports": [
+        [
+          11,
+          19
+        ],
+        [
+          14,
+          22
+        ]
+      ]
+    },
+    {
+      "degree": 5,
+      "original_heights_infinity_then_zero": [
+        -2,
+        -4,
+        -3,
+        -2,
+        0,
+        -1,
+        -4,
+        2
+      ],
+      "paired_label_flip_mask": 0,
+      "Laurent_clearing": 4,
+      "canonical_paired_energy_halves": [
+        "1",
+        "6"
+      ],
+      "deficit": 7,
+      "normalized_zero_profile": [
+        0,
+        3,
+        4,
+        7
+      ],
+      "normalized_infinity_profile": [
+        0,
+        4,
+        7,
+        11
+      ],
+      "shared_minor_supports": [
+        [
+          3,
+          12
+        ],
+        [
+          10,
+          18
+        ]
+      ]
+    },
+    {
+      "degree": 5,
+      "original_heights_infinity_then_zero": [
+        -2,
+        -4,
+        -4,
+        -3,
+        -1,
+        -4,
+        0,
+        3
+      ],
+      "paired_label_flip_mask": 0,
+      "Laurent_clearing": 6,
+      "canonical_paired_energy_halves": [
+        "3/2",
+        "6"
+      ],
+      "deficit": 6,
+      "normalized_zero_profile": [
+        0,
+        0,
+        5,
+        7
+      ],
+      "normalized_infinity_profile": [
+        0,
+        4,
+        6,
+        12
+      ],
+      "shared_minor_supports": [
+        [
+          2,
+          11
+        ],
+        [
+          8,
+          18
+        ]
+      ]
+    },
+    {
+      "degree": 5,
+      "original_heights_infinity_then_zero": [
+        -3,
+        2,
+        4,
+        -3,
+        -1,
+        0,
+        -4,
+        -2
+      ],
+      "paired_label_flip_mask": 6,
+      "Laurent_clearing": 1,
+      "canonical_paired_energy_halves": [
+        "9/2",
+        "1"
+      ],
+      "deficit": 9,
+      "normalized_zero_profile": [
+        0,
+        2,
+        5,
+        7
+      ],
+      "normalized_infinity_profile": [
+        0,
+        5,
+        7,
+        14
+      ],
+      "shared_minor_supports": [
+        [
+          11,
+          21
+        ],
+        [
+          4,
+          14
+        ]
+      ]
+    },
+    {
+      "degree": 5,
+      "original_heights_infinity_then_zero": [
+        4,
+        -1,
+        -2,
+        4,
+        -4,
+        1,
+        -4,
+        3
+      ],
+      "paired_label_flip_mask": 9,
+      "Laurent_clearing": 2,
+      "canonical_paired_energy_halves": [
+        "7/2",
+        "3"
+      ],
+      "deficit": 10,
+      "normalized_zero_profile": [
+        0,
+        4,
+        8,
+        12
+      ],
+      "normalized_infinity_profile": [
+        0,
+        3,
+        8,
+        11
+      ],
+      "shared_minor_supports": [
+        [
+          9,
+          19
+        ],
+        [
+          15,
+          23
+        ]
+      ]
+    },
+    {
+      "degree": 6,
+      "original_heights_infinity_then_zero": [
+        -3,
+        4,
+        0,
+        1,
+        -2,
+        -2,
+        1,
+        1
+      ],
+      "paired_label_flip_mask": 6,
+      "Laurent_clearing": 5,
+      "canonical_paired_energy_halves": [
+        "3/2",
+        "3/2"
+      ],
+      "deficit": 10,
+      "normalized_zero_profile": [
+        0,
+        3,
+        3,
+        6
+      ],
+      "normalized_infinity_profile": [
+        0,
+        1,
+        7,
+        9
+      ],
+      "shared_minor_supports": [
+        [
+          7,
+          19
+        ],
+        [
+          5,
+          17
+        ]
+      ]
+    },
+    {
+      "degree": 6,
+      "original_heights_infinity_then_zero": [
+        -2,
+        3,
+        -2,
+        4,
+        3,
+        -4,
+        1,
+        -1
+      ],
+      "paired_label_flip_mask": 9,
+      "Laurent_clearing": 9,
+      "canonical_paired_energy_halves": [
+        "2",
+        "1"
+      ],
+      "deficit": 11,
+      "normalized_zero_profile": [
+        0,
+        4,
+        6,
+        8
+      ],
+      "normalized_infinity_profile": [
+        0,
+        1,
+        4,
+        9
+      ],
+      "shared_minor_supports": [
+        [
+          7,
+          18
+        ],
+        [
+          7,
+          18
+        ]
+      ]
+    },
+    {
+      "degree": 6,
+      "original_heights_infinity_then_zero": [
+        3,
+        -2,
+        -3,
+        0,
+        -4,
+        -1,
+        -4,
+        1
+      ],
+      "paired_label_flip_mask": 0,
+      "Laurent_clearing": 2,
+      "canonical_paired_energy_halves": [
+        "0",
+        "5"
+      ],
+      "deficit": 10,
+      "normalized_zero_profile": [
+        0,
+        4,
+        7,
+        9
+      ],
+      "normalized_infinity_profile": [
+        0,
+        3,
+        5,
+        8
+      ],
+      "shared_minor_supports": [
+        [
+          5,
+          17
+        ],
+        [
+          7,
+          19
+        ]
+      ]
+    },
+    {
+      "degree": 6,
+      "original_heights_infinity_then_zero": [
+        4,
+        -1,
+        0,
+        2,
+        -4,
+        0,
+        -4,
+        2
+      ],
+      "paired_label_flip_mask": 9,
+      "Laurent_clearing": 0,
+      "canonical_paired_energy_halves": [
+        "2",
+        "5/2"
+      ],
+      "deficit": 9,
+      "normalized_zero_profile": [
+        0,
+        2,
+        8,
+        11
+      ],
+      "normalized_infinity_profile": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "shared_minor_supports": [
+        [
+          6,
+          15
+        ],
+        [
+          12,
+          21
+        ]
+      ]
+    },
+    {
+      "degree": 6,
+      "original_heights_infinity_then_zero": [
+        3,
+        2,
+        -2,
+        4,
+        1,
+        0,
+        4,
+        -3
+      ],
+      "paired_label_flip_mask": 15,
+      "Laurent_clearing": 0,
+      "canonical_paired_energy_halves": [
+        "5/2",
+        "2"
+      ],
+      "deficit": 11,
+      "normalized_zero_profile": [
+        0,
+        3,
+        5,
+        8
+      ],
+      "normalized_infinity_profile": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "shared_minor_supports": [
+        [
+          5,
+          15
+        ],
+        [
+          10,
+          22
+        ]
+      ]
+    },
+    {
+      "degree": 6,
+      "original_heights_infinity_then_zero": [
+        -1,
+        -3,
+        0,
+        -4,
+        -4,
+        4,
+        3,
+        1
+      ],
+      "paired_label_flip_mask": 6,
+      "Laurent_clearing": 0,
+      "canonical_paired_energy_halves": [
+        "4",
+        "2"
+      ],
+      "deficit": 10,
+      "normalized_zero_profile": [
+        0,
+        5,
+        8,
+        11
+      ],
+      "normalized_infinity_profile": [
+        0,
+        3,
+        5,
+        9
+      ],
+      "shared_minor_supports": [
+        [
+          7,
+          17
+        ],
+        [
+          9,
+          21
+        ]
+      ]
+    },
+    {
+      "degree": 6,
+      "original_heights_infinity_then_zero": [
+        2,
+        4,
+        -1,
+        -3,
+        4,
+        2,
+        -4,
+        2
+      ],
+      "paired_label_flip_mask": 15,
+      "Laurent_clearing": 9,
+      "canonical_paired_energy_halves": [
+        "5/2",
+        "1/2"
+      ],
+      "deficit": 14,
+      "normalized_zero_profile": [
+        0,
+        4,
+        8,
+        12
+      ],
+      "normalized_infinity_profile": [
+        0,
+        5,
+        6,
+        12
+      ],
+      "shared_minor_supports": [
+        [
+          14,
+          25
+        ],
+        [
+          7,
+          18
+        ]
+      ]
+    },
+    {
+      "degree": 6,
+      "original_heights_infinity_then_zero": [
+        2,
+        1,
+        -4,
+        -4,
+        -2,
+        4,
+        -1,
+        3
+      ],
+      "paired_label_flip_mask": 0,
+      "Laurent_clearing": 4,
+      "canonical_paired_energy_halves": [
+        "1/2",
+        "0"
+      ],
+      "deficit": 16,
+      "normalized_zero_profile": [
+        0,
+        4,
+        7,
+        9
+      ],
+      "normalized_infinity_profile": [
+        0,
+        3,
+        8,
+        12
+      ],
+      "shared_minor_supports": [
+        [
+          13,
+          25
+        ],
+        [
+          11,
+          22
+        ]
+      ]
+    },
+    {
+      "degree": 6,
+      "original_heights_infinity_then_zero": [
+        -1,
+        -4,
+        3,
+        -4,
+        2,
+        -4,
+        -2,
+        -2
+      ],
+      "paired_label_flip_mask": 0,
+      "Laurent_clearing": 7,
+      "canonical_paired_energy_halves": [
+        "5/2",
+        "7/2"
+      ],
+      "deficit": 11,
+      "normalized_zero_profile": [
+        0,
+        4,
+        8,
+        8
+      ],
+      "normalized_infinity_profile": [
+        0,
+        5,
+        8,
+        12
+      ],
+      "shared_minor_supports": [
+        [
+          4,
+          16
+        ],
+        [
+          11,
+          22
+        ]
+      ]
+    },
+    {
+      "degree": 6,
+      "original_heights_infinity_then_zero": [
+        0,
+        -3,
+        0,
+        -3,
+        -3,
+        3,
+        2,
+        1
+      ],
+      "paired_label_flip_mask": 6,
+      "Laurent_clearing": 1,
+      "canonical_paired_energy_halves": [
+        "5/2",
+        "1"
+      ],
+      "deficit": 9,
+      "normalized_zero_profile": [
+        0,
+        3,
+        4,
+        7
+      ],
+      "normalized_infinity_profile": [
+        0,
+        3,
+        3,
+        6
+      ],
+      "shared_minor_supports": [
+        [
+          3,
+          14
+        ],
+        [
+          6,
+          17
+        ]
+      ]
+    },
+    {
+      "degree": 6,
+      "original_heights_infinity_then_zero": [
+        4,
+        -3,
+        4,
+        1,
+        -1,
+        0,
+        2,
+        -3
+      ],
+      "paired_label_flip_mask": 15,
+      "Laurent_clearing": 2,
+      "canonical_paired_energy_halves": [
+        "1/2",
+        "3/2"
+      ],
+      "deficit": 13,
+      "normalized_zero_profile": [
+        0,
+        2,
+        4,
+        7
+      ],
+      "normalized_infinity_profile": [
+        0,
+        6,
+        9,
+        10
+      ],
+      "shared_minor_supports": [
+        [
+          4,
+          15
+        ],
+        [
+          12,
+          22
+        ]
+      ]
+    },
+    {
+      "degree": 6,
+      "original_heights_infinity_then_zero": [
+        -4,
+        -3,
+        1,
+        2,
+        0,
+        -2,
+        -4,
+        -1
+      ],
+      "paired_label_flip_mask": 0,
+      "Laurent_clearing": 1,
+      "canonical_paired_energy_halves": [
+        "3/2",
+        "4"
+      ],
+      "deficit": 9,
+      "normalized_zero_profile": [
+        0,
+        1,
+        6,
+        7
+      ],
+      "normalized_infinity_profile": [
+        0,
+        4,
+        8,
+        11
+      ],
+      "shared_minor_supports": [
+        [
+          1,
+          13
+        ],
+        [
+          7,
+          18
+        ]
+      ]
+    }
+  ],
+  "source_sha256": {
+    "check_binary_all_gauge_floor.py": "5276ce568fd994cc9abe2862deed00d757f81a14256723f7cc0bbe04c24ffd15",
+    "check_binary_fixed_ray_floor.py": "eca312add761f37521c51d8237cdd002b6fe44f838ebd1ebfbda62f69c41fddc",
+    "check_binary_two_cut_lattices.py": "07f40447b47a0810ad5f225cbcb436d9c01cfb20e374de483a9ce73a8138e891",
+    "charged_gaussian_floor.py": "5321193eda456b922ae947f55a492de675de2d08a90ccb2a87a0fd89a60805cc"
+  }
+}

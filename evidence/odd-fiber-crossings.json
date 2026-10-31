@@ -1,0 +1,208 @@
+{
+  "cases": [
+    {
+      "dimensions": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "endpoint_entries": 16,
+      "nonbinary_entries": 0,
+      "profiles": [
+        {
+          "cut": 0,
+          "independent_precision": 50,
+          "orders": {
+            "0.0": 1,
+            "12.0": 1,
+            "14.0": 1,
+            "24.0": 1
+          },
+          "toeplitz_checks": 4
+        },
+        {
+          "cut": 1,
+          "independent_precision": 58,
+          "orders": {
+            "-20.0": 1,
+            "-10.0": 1,
+            "-6.0": 1,
+            "8.0": 1
+          },
+          "toeplitz_checks": 5
+        }
+      ]
+    },
+    {
+      "dimensions": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "endpoint_entries": 81,
+      "nonbinary_entries": 0,
+      "profiles": [
+        {
+          "cut": 0,
+          "independent_precision": 190,
+          "orders": {
+            "0.0": 1,
+            "20.0": 2,
+            "28.0": 2,
+            "40.0": 1,
+            "56.0": 2,
+            "72.0": 1
+          },
+          "toeplitz_checks": 6
+        },
+        {
+          "cut": 1,
+          "independent_precision": 190,
+          "orders": {
+            "-70.0": 1,
+            "-66.0": 1,
+            "-56.0": 1,
+            "-36.0": 1,
+            "-30.0": 1,
+            "-16.0": 1,
+            "-10.0": 1,
+            "0.0": 1,
+            "20.0": 1
+          },
+          "toeplitz_checks": 9
+        }
+      ]
+    },
+    {
+      "dimensions": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "endpoint_entries": 81,
+      "nonbinary_entries": 0,
+      "profiles": [
+        {
+          "cut": 0,
+          "independent_precision": 234,
+          "orders": {
+            "0.0": 1,
+            "20.0": 1,
+            "24.0": 1,
+            "28.0": 2,
+            "44.0": 1,
+            "48.0": 2,
+            "56.0": 1
+          },
+          "toeplitz_checks": 7
+        },
+        {
+          "cut": 1,
+          "independent_precision": 234,
+          "orders": {
+            "-84.0": 1,
+            "-70.0": 2,
+            "-56.0": 1,
+            "-48.0": 1,
+            "-34.0": 1,
+            "-32.0": 1,
+            "-22.0": 1,
+            "-12.0": 1
+          },
+          "toeplitz_checks": 9
+        }
+      ]
+    },
+    {
+      "dimensions": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "endpoint_entries": 625,
+      "nonbinary_entries": 0,
+      "profiles": [
+        {
+          "cut": 0,
+          "independent_precision": 186,
+          "orders": {
+            "0.0": 1,
+            "16.0": 2,
+            "18.0": 2,
+            "32.0": 1,
+            "34.0": 2,
+            "36.0": 2,
+            "38.0": 4,
+            "40.0": 1,
+            "48.0": 2,
+            "52.0": 2,
+            "54.0": 1,
+            "58.0": 1,
+            "60.0": 1,
+            "68.0": 2,
+            "80.0": 1
+          },
+          "toeplitz_checks": 15
+        },
+        {
+          "cut": 1,
+          "independent_precision": 186,
+          "orders": {
+            "-80.0": 1,
+            "-70.0": 1,
+            "-66.0": 1,
+            "-56.0": 1,
+            "-50.0": 1,
+            "-40.0": 1,
+            "-36.0": 1,
+            "-34.0": 1,
+            "-32.0": 1,
+            "-30.0": 1,
+            "-26.0": 1,
+            "-20.0": 1,
+            "-18.0": 1,
+            "-16.0": 3,
+            "-12.0": 4,
+            "-10.0": 2,
+            "-8.0": 1,
+            "2.0": 1,
+            "16.0": 1
+          },
+          "toeplitz_checks": 19
+        }
+      ]
+    }
+  ],
+  "endpoint_entries": 39219,
+  "independent_profiles": 8,
+  "invalid_fibers_rejected": 4,
+  "larger_literal_contraction": {
+    "dimensions": [
+      14,
+      14,
+      14,
+      14
+    ],
+    "entries": 38416,
+    "triple": [
+      7,
+      11,
+      15
+    ]
+  },
+  "scope": "Exact odd-fiber split maps, literal full contractions, complete endpoints, and independent binary Smith/Toeplitz controls; numerical optimization is separate.",
+  "source_sha256": {
+    "check_block_smith_crossings.py": "6fd6e1d3fb8ad5ee08ed716101caa27b5d8b20529318927c14ed09106e3889a7",
+    "check_odd_fiber_crossings.py": "8c23f0f4c3a41b8c9579c70b6cf6d64814cf9936439a9ecd99bc10aa6a7228b0",
+    "check_physical_split_crossings.py": "0032c76ee53ad850e6ab5acc4f7a422d31c2845a03596ca7b7a4ba83abb1755f",
+    "physical_split_crossings.py": "f80920838d10cd0ad8d907bd671a10795749d830cce256399661d959ad40efb8",
+    "reflection_dual_rail_gaussian.py": "6d4780f02b9479d2473c823f74c4749f47e1db0bd32e5318bd601bdd51010a38",
+    "search_physical_code_gauges.py": "71e1b87a45a9b2551546b9671b07e8ebf9b6d9531bfb927c4c8ed2a03c6bd422"
+  },
+  "status": "pass",
+  "toeplitz_checks": 74
+}

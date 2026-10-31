@@ -1,0 +1,97 @@
+{
+  "status": "Complete-entry equations, compressed fibers, endpoints, and independent profiles passed.",
+  "scope": "Exact sufficient row-lattice construction at arbitrary physical alphabet size; finite controls at two, three, and four symbols.",
+  "binary_reference_system_comparisons": 9,
+  "full_and_compressed_feasibility_comparisons": 24,
+  "literal_endpoint_entries": 1348,
+  "complete_native_and_independent_profiles": 32,
+  "independent_toeplitz_checks": 58,
+  "invalid_endpoint_or_target_controls": 3,
+  "cases": [
+    {
+      "alphabet": [
+        0,
+        1,
+        2
+      ],
+      "energies": [
+        0,
+        12,
+        4
+      ],
+      "variables": 1620,
+      "compressed_variables": 32,
+      "feasible_full_tensor_witnesses": 2
+    },
+    {
+      "alphabet": [
+        0,
+        1,
+        2
+      ],
+      "energies": [
+        0,
+        0,
+        8
+      ],
+      "variables": 1620,
+      "compressed_variables": 15,
+      "feasible_full_tensor_witnesses": 2
+    },
+    {
+      "alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "energies": [
+        0,
+        12,
+        4,
+        16
+      ],
+      "variables": 6144,
+      "compressed_variables": 108,
+      "feasible_full_tensor_witnesses": 2
+    },
+    {
+      "alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "energies": [
+        0,
+        0,
+        12,
+        16
+      ],
+      "variables": 6144,
+      "compressed_variables": 89,
+      "feasible_full_tensor_witnesses": 2
+    }
+  ],
+  "search_record_replays": [
+    {
+      "record": "full-alphabet-q4-natural-affine-search.json",
+      "completed_trials": 20000,
+      "distinct_profile_classes": 45,
+      "retained_full_tensor_replays": 40
+    },
+    {
+      "record": "full-alphabet-q4-degenerate-affine-search.json",
+      "completed_trials": 20000,
+      "distinct_profile_classes": 1001,
+      "retained_full_tensor_replays": 40
+    }
+  ],
+  "source_sha256": {
+    "check_full_alphabet_two_cut_lattices.py": "785f527f8b93fb675eac16c046a0c45617b8cce7aafa0ec90b3f02ae55319937",
+    "full_alphabet_two_cut_lattices.py": "cbc67b9e3f4f422a34e1474e0dc02eba9c741b3b7b836b315123d061571f0caf",
+    "weyl_lattice_filter_synthesis.py": "5aef949234535ddb72e9f3d5560557bb9f0e06aeffd7b59b82fd5def6aa6c284",
+    "check_block_smith_crossings.py": "6fd6e1d3fb8ad5ee08ed716101caa27b5d8b20529318927c14ed09106e3889a7",
+    "check_physical_split_crossings.py": "0032c76ee53ad850e6ab5acc4f7a422d31c2845a03596ca7b7a4ba83abb1755f"
+  }
+}

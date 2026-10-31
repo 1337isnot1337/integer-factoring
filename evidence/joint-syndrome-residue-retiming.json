@@ -1,0 +1,56 @@
+{
+  "status": "Exact independent-color reduction, endpoint-cover dominance, collision/reordering, degree caps, and transport controls passed; no factoring gain claimed.",
+  "counts": {
+    "original_profile_controls": 48,
+    "endpoint_cover_controls": 48,
+    "strict_component_reductions": 44,
+    "retimed_literal_vectors": 240,
+    "literal_physical_state_controls": 2920,
+    "degree_cap_controls": 240,
+    "exact_transport_networks": 64,
+    "exact_transport_inequalities": 256
+  },
+  "profile_control_sha256": "f9712055a2b03fed945a6ba95b48158ae89770558585ccf5659e495ae5cdf5ec",
+  "transport_control_sha256": "db27009a70e4dc9999f09c769e9a578d4b5901150fb6a858d11ac821457e30ef",
+  "independent_color_negative_control": {
+    "rank": 1,
+    "column_types": [
+      1
+    ],
+    "spacing": 7,
+    "f": [
+      {
+        "0": 3
+      },
+      {
+        "0": 3
+      }
+    ],
+    "delta": [
+      {
+        "7": 3
+      },
+      {
+        "7": 3
+      }
+    ],
+    "actual_orders": [
+      7,
+      7
+    ],
+    "actual_degrees": [
+      0,
+      0
+    ],
+    "endpoint_values": [
+      3,
+      3
+    ],
+    "coefficient_field_degree": 2,
+    "retimed_numerators": [
+      0,
+      0
+    ]
+  },
+  "seed": 817371
+}
