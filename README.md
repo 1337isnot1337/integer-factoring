@@ -6,8 +6,9 @@
 This repository studies worst-case deterministic factoring. Given an integer `N >= 2` in binary, the machine outputs its smallest prime factor. Runtime is measured in finite-alphabet Turing-machine steps, with `n` equal to the input bit length.
 
 **Want to contribute?** [Start here](docs/START_HERE.md) for setup, a reading path,
-and small tasks. Reproductions, mathematical corrections, documentation, independent
-review, and scoped negative results are welcome.
+and small tasks. Work directly on `main` by default and push useful checkpoints
+frequently. Reproductions, mathematical corrections, documentation, independent
+review, and scoped negative or partial research results are welcome.
 
 ## Main theorem: logarithmic saving exponent 1/2
 
@@ -73,6 +74,28 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 
 No uniform factoring exponent above `1/2` is proved here. One open approach seeks effective crossing pieces with total rank width `4*rho*lambda + O(log lambda)` for `rho < 1/sqrt(2)`. A suitable family could improve the evaluator bound, but finite rank improvements alone do not establish that inequality.
 
+See the [research index](research/INDEX.md) for completed arguments, scoped obstructions, and older candidates. Active work is committed directly to `main` by default; useful partial research can be integrated as a checkpoint without being promoted to a stronger theorem.
+
+An [arithmetic framework program](research/arithmetic-framework.md) studies
+deterministic class-group relation generation outside the crossing evaluator.
+It proves a positive Fourier hitting lemma and deterministic extraction of
+two-torsion from unsaturated relation data. A powering seed with published
+expander amplification supplies biased words from generators without a group
+decomposition. The fast generator and smooth-pair
+construction steps remain open, so the score is still `1/2`. Reproduce the
+current exact controls with `make verify-arithmetic-framework`.
+The [actual quadratic-form controls](research/arithmetic-class-group-controls.md)
+also recover proper factors for 18 finite targets and check complete
+two-torsion recovery; their generator and order searches enumerate classes.
+A [density/index transfer](research/arithmetic-density-lift.md) also turns
+relations on a possibly proper small-prime subgroup into a global
+class-number multiple. Fast pair extraction and deterministic coverage of
+the missing ambiguous directions remain unresolved.
+The [bounded smooth-norm interface](research/bounded-smooth-norm.md)
+characterizes the required pairs and converts supplied representations at
+`2^O(b/log b)` divisor-search cost; locating those representations efficiently
+is still open.
+
 The [Bell-diagonal seed construction](research/bell-diagonal-crossings.md)
 gives exact two-cut transforms and excludes its complete symmetric
 coefficient spans at local dimensions two and four. Dimension eight
@@ -102,14 +125,15 @@ For [self-reciprocal quartics](research/bell-quartic-rigidity.md), an exact
 matrix identity relates a pressure witness to sparse Hadamard rank reduction;
 it is a necessary condition and supplies no improved factoring bound.
 
-See the [research index](research/INDEX.md) for completed arguments, scoped obstructions, and older candidates. Active work can also appear in [open pull requests](https://github.com/1337isnot1337/integer-factoring/pulls); branch research is not automatically a result on `main`.
 
 ## Contribution and attribution
 
 Start with the [contributor quickstart](docs/START_HERE.md) and
-[CONTRIBUTING.md](CONTRIBUTING.md). You can report a correction or reproduction
-without proposing a new bound. [Open a focused issue](https://github.com/1337isnot1337/integer-factoring/issues/new/choose)
-or choose an [available starter task](https://github.com/1337isnot1337/integer-factoring/issues?q=is%3Aissue%20is%3Aopen%20label%3A%22good%20first%20issue%22).
+[CONTRIBUTING.md](CONTRIBUTING.md). Work directly on `main` when you have
+push access. Pull requests are mainly for external contributors or when
+isolation and separate integration review are useful; every useful PR is
+intended to merge, including partial and negative research. A merge records
+integration, not mathematical acceptance.
 
 For substantial research, read [autoresearch.md](autoresearch.md) and coordinate
 through [issue #8](https://github.com/1337isnot1337/integer-factoring/issues/8).
