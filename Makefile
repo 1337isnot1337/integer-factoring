@@ -18,6 +18,7 @@ verify-arithmetic-framework:
 	python3 tools/check_arithmetic_two_group.py
 	python3 tools/check_positive_relation_kernel.py
 	python3 tools/check_arithmetic_bias_seed.py
+	python3 tools/check_arithmetic_class_groups.py
 
 verify-post-half:
 	python3 tools/check_half_piece_ranks.py --full
@@ -28,6 +29,7 @@ verify-frontier:
 	python3 tools/check_arithmetic_two_group.py
 	python3 tools/check_positive_relation_kernel.py
 	python3 tools/check_arithmetic_bias_seed.py
+	python3 tools/check_arithmetic_class_groups.py
 	python3 tools/check_piece_transfer.py
 	python3 tools/check_boson_truncation.py
 	python3 tools/check_graded_space.py

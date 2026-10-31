@@ -100,6 +100,10 @@ and oversized annihilators. `python3 tools/check_positive_relation_kernel.py`
 checks the exact Fourier lemma and a complete finite presentation/torsion
 pipeline with an unsaturated relation lattice. Neither is evidence of a
 new asymptotic factoring bound.
+The [actual class-group controls](arithmetic-class-group-controls.md) also
+check 40 discriminants, all associative triples, smooth prime-form words,
+and proper-factor extraction for 18 targets. Those controls enumerate
+classes and orders; they do not implement fast generator/relation search.
 
 Next work is to express the pair-extraction primitive as a bounded smooth
 norm problem for a binary quadratic form and investigate deterministic

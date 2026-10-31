@@ -83,6 +83,9 @@ expander amplification supplies biased words from generators without a group
 decomposition. The fast generator and smooth-pair
 construction steps remain open, so the score is still `1/2`. Reproduce the
 current exact controls with `make verify-arithmetic-framework`.
+The [actual quadratic-form controls](research/arithmetic-class-group-controls.md)
+also recover proper factors for 18 finite targets and check complete
+two-torsion recovery; their generator and order searches enumerate classes.
 
 ## Contribution and attribution
 
