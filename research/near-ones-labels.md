@@ -24,8 +24,8 @@ All new claims below are ordinary proofs or explicitly finite checks.
 For a partition `mu`, define
 
 ```math
-\operatorname{def}(\mu)
-=\operatorname{wt}(\mu)-\operatorname{length}(\mu)
+\mathrm{def}(\mu)
+=\mathrm{wt}(\mu)-\mathrm{length}(\mu)
 =\sum_j(\mu_j-1).
 ```
 
@@ -70,7 +70,7 @@ The output has length
 Its weight is `H+r`. Therefore its defect is exactly
 
 ```math
-\operatorname{def}(\text{output})
+\mathrm{def}(\text{output})
 =r-H+d_x+d_y+2A.
 \tag{2}
 ```
@@ -147,7 +147,7 @@ for some fixed `B` and all sufficiently large `lambda`.
 Equation (4) preserves their distinctness. The expansion in that proof gives
 
 ```math
-\log_2\operatorname{rank}U_{H,D}
+\log_2\mathrm{rank}U_{H,D}
 \ge\sqrt2\,\lambda
  -(3-2\sqrt2)\log_2\lambda-O(1).
 \tag{5}

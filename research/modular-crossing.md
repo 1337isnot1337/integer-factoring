@@ -274,7 +274,7 @@ Direct Riemann-sum estimates give
 
 ```math
 \mathbb E_t H=A_p/t^2+O_p(1/t),\qquad
-\operatorname{Var}_t(H)=O_p(t^{-3}).
+\mathrm{Var}_t(H)=O_p(t^{-3}).
 \tag{10}
 ```
 
@@ -468,7 +468,7 @@ inactive factors. Summing the independent sectors gives the exact lower
 bound
 
 ```math
-\operatorname{rank}e_k(R_1,\ldots,R_t)
+\mathrm{rank}e_k(R_1,\ldots,R_t)
 \ge\binom tk\,2^{t-k}.
 \tag{19}
 ```

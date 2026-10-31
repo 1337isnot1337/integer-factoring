@@ -27,7 +27,7 @@ piece restricted to `W_h` is a positive semidefinite Gram matrix. Its rank
 is exactly
 
 ```math
-\operatorname{rank}\left(\bigoplus_{j=0}^{2h}C_j:
+\mathrm{rank}\left(\bigoplus_{j=0}^{2h}C_j:
 W_h\otimes W_h\longrightarrow\bigoplus_{j=0}^{2h}W_j\right).
 \tag{2}
 ```
@@ -48,8 +48,8 @@ Use the positive Fock inner product
 
 ```math
 \langle t^\mu,t^\nu\rangle=z_\mu[\mu=\nu],\qquad
-z_\mu=\prod_m m^{\operatorname{mult}_m(\mu)}
-                 \operatorname{mult}_m(\mu)!.
+z_\mu=\prod_m m^{\mathrm{mult}_m(\mu)}
+                 \mathrm{mult}_m(\mu)!.
 ```
 
 Then `D*=U` and `[D,U]=2H`, where `H` is the weight operator.

@@ -219,7 +219,7 @@ weight-`E` partitions with parts at most `2L`; (2) includes those
 columns and possibly more. Hence
 
 ```math
-\max_{|s|\le2h}\operatorname{rank}_{\mathbb Q}F_s
+\max_{|s|\le2h}\mathrm{rank}_{\mathbb Q}F_s
 \ge\frac{SD}{4h+1}.
 \tag{8}
 ```
@@ -319,7 +319,7 @@ The same volume comparison at `2h` and `h` yields
 Combining (1) and (12),
 
 ```math
-\frac{\max_{|s|\le2h}\operatorname{rank}_{\mathbb Q}F_s}{p_L(2h)}
+\frac{\max_{|s|\le2h}\mathrm{rank}_{\mathbb Q}F_s}{p_L(2h)}
 \ge\frac{D}{2^{10L}h(4h+1)}.
 \tag{13}
 ```
@@ -353,7 +353,7 @@ s_B=\#\{\mu\in B:\ell(\mu)\le3h/(2L)\}.
 The energy-window argument gives the exact conditional bound
 
 ```math
-\max_{|s|\le2h}\operatorname{rank}_{\mathbb Q}(F_s|_{B\times B})
+\max_{|s|\le2h}\mathrm{rank}_{\mathbb Q}(F_s|_{B\times B})
 \ge\frac{d\,s_B}{4h+1}.
 \tag{14}
 ```

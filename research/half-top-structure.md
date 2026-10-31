@@ -200,7 +200,7 @@ where `x0>=18` is fixed. Its declared, computable pad exponent is
 
 ```math
 q=\left\lfloor\frac{V}{r}\right\rfloor+1+
-C_0P^2\operatorname{size}\bigl(P(\lambda+B)\bigr)>V/r,
+C_0P^2\mathrm{size}\bigl(P(\lambda+B)\bigr)>V/r,
 \tag{10}
 ```
 

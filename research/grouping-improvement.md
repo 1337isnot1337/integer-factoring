@@ -96,7 +96,7 @@ whose endpoint colors are `a,b`. If that matching contains `m_j` edges,
 then
 
 \[
-Z_j\sim\operatorname{Binomial}(m_j,p),\qquad p=2/K^2.
+Z_j\sim\mathrm{Binomial}(m_j,p),\qquad p=2/K^2.
 \]
 
 Independence holds within each matching because its edges have disjoint
@@ -241,7 +241,7 @@ For each coloring, compute all class sizes and pair sums by scanning the
 a conservative bound is
 
 \[
-K^g\,\operatorname{poly}(g,K,\log(P+1),\log(D+1))
+K^g\,\mathrm{poly}(g,K,\log(P+1),\log(D+1))
 \tag{10}
 \]
 

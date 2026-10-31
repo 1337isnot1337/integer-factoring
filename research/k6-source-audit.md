@@ -162,7 +162,7 @@ The closed theorem applies it to one finite-alphabet machine computing
 satisfies
 
 \[
-M.\operatorname{time}(n)\le
+M.\mathrm{time}(n)\le
 C\exp\!\left(\frac{Cn}{(\log n)^{1/30}}\right)
 \qquad\text{for every integer }n\ge2.
 \]

@@ -9,8 +9,8 @@ It also computes positive integers lambda and B such that
 
 ~~~math
 \begin{aligned}
-\operatorname{WFe}(P,\lambda,B,I),\qquad
-\operatorname{zval}(P,I)
+\mathrm{WFe}(P,\lambda,B,I),\qquad
+\mathrm{zval}(P,I)
   &=\#\{d:d\mid N,\ \lfloor d/2^k\rfloor=x\},\\
 P^2\lambda&\le4717n,\\
 B&\le6769n/P.
@@ -307,7 +307,7 @@ For E=2^((P-1)lambda) and entries of absolute value at most 2^B, its exact
 definitions give the coarse bound
 
 ~~~math
-\operatorname{len}(I)\le
+\mathrm{len}(I)\le
 6+4\lambda+P\bigl(4+E(3B+10)\bigr)=2^{O(n/P)}.
 ~~~
 

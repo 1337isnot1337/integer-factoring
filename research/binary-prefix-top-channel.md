@@ -17,7 +17,7 @@ U_\lambda:\mathbb Q^{S_\lambda\times S_\lambda}\longrightarrow V_{2h},
 Then, with `kappa=pi sqrt(2/3)/ln 2`,
 
 ```math
-\log_2\operatorname{rank}_{\mathbb Q}U_\lambda
+\log_2\mathrm{rank}_{\mathbb Q}U_\lambda
 =\kappa\sqrt{2h}+o(\sqrt h)
 =\sqrt2\,\lambda+o(\lambda).
 \tag{1}
@@ -28,7 +28,7 @@ The proof also gives the quantitative bounds
 ```math
 \sqrt2\,\lambda
 -O\!\left(\frac{\lambda\ln\ln\lambda}{\ln\lambda}\right)
-\le\log_2\operatorname{rank}U_\lambda
+\le\log_2\mathrm{rank}U_\lambda
 \le\sqrt2\,\lambda+O(\ln\lambda).
 \tag{1a}
 ```
@@ -41,7 +41,7 @@ the bounds to
 ```math
 \begin{aligned}
 \sqrt2\,\lambda-(3-2\sqrt2)\log_2\lambda-O(1)
-&\le\log_2\operatorname{rank}_{\mathbb Q}U_\lambda\\
+&\le\log_2\mathrm{rank}_{\mathbb Q}U_\lambda\\
 &\le\sqrt2\,\lambda+(2\sqrt2-2)\log_2\lambda+O(1).
 \end{aligned}
 \tag{1b}
@@ -229,7 +229,7 @@ large `lambda`. Equation (6), followed by `C -> infinity`, gives
 
 ```math
 \liminf_{\lambda\to\infty}
-\frac{\ln\operatorname{rank}U_\lambda}{\sqrt h}
+\frac{\ln\mathrm{rank}U_\lambda}{\sqrt h}
 \ge c\sqrt2.
 ```
 
@@ -285,7 +285,7 @@ changes its logarithmic count by only `O(ln h)`.
 The reserved-one construction and triangular argument therefore give
 
 ```math
-\ln\operatorname{rank}U_\lambda
+\ln\mathrm{rank}U_\lambda
 \ge c\sqrt{2h}
 -O\!\left(\frac{\sqrt h\ln\ln h}{\ln h}\right).
 ```
@@ -416,7 +416,7 @@ because `gamma>1/sqrt(2)`. Consequently,
 Sections 3 and 4 therefore imply
 
 ```math
-\log_2\operatorname{rank}U_\lambda
+\log_2\mathrm{rank}U_\lambda
 \ge \log_2 p(2h-m)+o(1)
 =\kappa\sqrt{2h}-O(\log h).
 ```
@@ -468,7 +468,7 @@ The reserved-one construction therefore gives this lower bound for
 `ln rank(U_lambda)`. The ambient dimension gives the upper bound
 
 ```math
-\ln\operatorname{rank}U_\lambda
+\ln\mathrm{rank}U_\lambda
 \le\ln p(2h)
 =c\sqrt{2h}-\ln h+O(1).
 ```
@@ -528,9 +528,9 @@ Every factor `h!/z_nu` is nonzero. Thus both projections have rank
 `rank(U_lambda)`, and
 
 ```math
-\operatorname{rank}F_r\ge\operatorname{rank}U_\lambda,
+\mathrm{rank}F_r\ge\mathrm{rank}U_\lambda,
 \qquad
-\operatorname{rank}F_c\ge\operatorname{rank}U_\lambda.
+\mathrm{rank}F_c\ge\mathrm{rank}U_\lambda.
 \tag{12}
 ```
 

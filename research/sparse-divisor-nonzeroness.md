@@ -353,7 +353,7 @@ many prefixes. Circuit generation, storage, prime generation, all ring
 operations, and zero tests therefore have total cost
 
 ```math
-\operatorname{poly}\bigl(A(n)+2,\ n,\ M,\ Q\bigr)
+\mathrm{poly}\bigl(A(n)+2,\ n,\ M,\ Q\bigr)
 =\exp\!\left(
 O\!\left(\log(A(n)+2)+n/\log n\right)
 \right).
