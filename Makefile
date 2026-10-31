@@ -372,3 +372,8 @@ verify-split-identity-modes:
 verify-f4-identity-operators:
 	python3 tools/check_f4_identity_operator_filters.py
 	python3 tools/check_compiled_f4_identity_operators.py
+
+.PHONY: verify-weyl-lattice-synthesis
+verify-weyl-lattice-synthesis:
+	python3 tools/check_weyl_lattice_filter_synthesis.py
+	python3 tools/check_weyl_lattice_endpoint_cover.py
