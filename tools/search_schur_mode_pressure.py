@@ -15,7 +15,7 @@ from pathlib import Path
 import time
 
 import numpy as np
-from scipy.optimize import LinearConstraint, brentq, minimize
+from scipy.optimize import Bounds, LinearConstraint, brentq, minimize
 from scipy.special import expit
 
 from check_schur_downset_crossing import sparse_kernel
@@ -137,10 +137,18 @@ class ModePressureSearch:
             value = linear @ x + np.logaddexp(0, -x[self.order_base:]).sum()
             return float(value), gradient
         x = self.initial_guess() if start is None else np.asarray(start)
+        # A subset of determinantal constraints may be unbounded for a
+        # nonuniform type, even though the completed problem is bounded.
+        # A finite search box keeps those temporary relaxations numerical.
+        box = max(100.0, 4 * float(max(abs(x))))
+        lower = np.full(self.dimension, -box)
+        upper = np.full(self.dimension, box)
+        lower[self.scale_index] = 0
+        bounds = Bounds(lower, upper)
         total_iterations = 0
         for round_index in range(self.max_rounds):
             matrix = np.array(list(self.constraints.values()))
-            result = minimize(objective, x, jac=True, method='SLSQP',
+            result = minimize(objective, x, jac=True, method='SLSQP', bounds=bounds,
                               constraints=[LinearConstraint(self.equalities, 0, 0),
                                            LinearConstraint(matrix, 0, np.inf)],
                               options={'maxiter': 800, 'ftol': 1e-11})
@@ -171,6 +179,7 @@ class ModePressureSearch:
                 'listed_minimum_slack': float(min(matrix @ x)),
                 'determinant_equality_error': float(max(abs(self.equalities @ x))),
                 'cutting_rounds': round_index + 1, 'optimizer_iterations': total_iterations,
+                'temporary_search_box': box,
                 'constraints': len(self.constraints),
                 'oracle_cache_sizes': [len(block['oracle'].cache) for block in self.blocks],
                 'solution': x.tolist()}
@@ -212,6 +221,10 @@ def main():
         result = search.solve_fixed_type(probabilities, solution)
         history.append(result)
         solution = result['solution']
+        if (result['oracle_minimum_slack'] < -1e-6
+                or result['listed_minimum_slack'] < -1e-6
+                or result['determinant_equality_error'] > 1e-6):
+            raise ArithmeticError('infeasible numerical iterate; no pressure bound is certified')
         next_probabilities, next_rho = search.optimal_independent_type(solution)
         print(json.dumps({'iteration': iteration, 'rho': result['rho'], 'next_rho': next_rho,
                           'next_probabilities': next_probabilities.tolist(),

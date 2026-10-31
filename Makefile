@@ -30,6 +30,7 @@ verify-schur-sparse:
 
 verify-fixed-modes:
 	python3 tools/check_fixed_mode_crossings.py
+	python3 tools/check_three_mode_pressure_certificate.py --certificate evidence/three-mode-pressure-refinement.json
 
 verify-cancellation-modules:
 	python3 tools/check_cancellation_module_automata.py

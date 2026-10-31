@@ -124,6 +124,10 @@ crossing to arbitrary index sets, unequal species occupations, and
 independent mode heights. Their product-type criterion is exact; an
 [exploratory search driver](tools/search_schur_mode_pressure.py) uses the
 weighted Smith oracle to search this larger family.
+An [exact three-mode certificate](research/three-mode-pressure-improvement.md)
+uses independent occupations of the two species to prove `rho < 741/1000`.
+It improves the previous Gaussian pressure control but remains above
+`1/sqrt(2)`, so the best factoring exponent is unchanged.
 For this Gaussian seed, [generic mode blocks](research/typed-gaussian-generic-blocks.md)
 force cost `Omega(D^2)` when all nonvacuum occupations stay fixed, even
 after arbitrary coefficient recombinations. Growing occupation densities
@@ -132,8 +136,9 @@ remain a separate regime.
 [Exact type optimization](research/type-optimized-crossing-pressure.md)
 reduces the best common letter frequencies to one rational pressure inequality.
 It applies to Smith and module certificates. A checked physical gauge gives
-`rho < 61/80` for the Gaussian seed; this is an improvement of that seed
-certificate and remains weaker than the known half-rate construction.
+`rho < 61/80` for the four-label Gaussian seed; the three-mode certificate
+above improves this local pressure bound. Both remain weaker than the
+known half-rate construction.
 [Polynomial interpolation](research/polynomial-crossing-interpolation.md)
 constructs crossings from prescribed local row lattices by exact linear
 algebra. The complete fixed-lattice fiber consists of 64 local changes, and a
