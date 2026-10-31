@@ -717,6 +717,10 @@ verify-joint-residue-retiming:
 .PHONY: verify-uniform-reflection-jets verify-coupled-searches
 .PHONY: verify-triangular-series
 .PHONY: verify-paired-trace verify-companion-search verify-monoid-blocks
+.PHONY: verify-unsplit-monoid
+verify-unsplit-monoid:
+	python3 tools/check_unsplit_monoid_contraction.py --output /tmp/integer-factoring-unsplit-monoid-replay.json
+
 verify-paired-trace:
 	OPENBLAS_NUM_THREADS=1 python3 tools/check_reflection_paired_trace.py --output /tmp/integer-factoring-paired-trace-replay.json
 

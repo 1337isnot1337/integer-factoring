@@ -169,6 +169,15 @@ blocks. For the adaptive moduli, its local bilinear product count is
 near-linear over a fully charged coefficient algebra. Exact Fourier,
 addition, multiplication, and joint-copy formulas close on these blocks.
 The cost of the complete network's joint interfaces remains open.
+An [original-field refinement](research/unsplit-monoid-contraction.md)
+keeps all odd-character coordinates inside the existing message space.
+It gives at most `M 8^omega(M)` scalar products and a complete
+`M 64^omega(M) polylog(M)` convolution algorithm, with every basis map,
+evaluation, interpolation, and reduction charged. The entire middle vertex,
+viewed as three dense bundles, has tensor rank between `M^A` and
+`M^(A(1+O(1/log D)))`. Its factors couple the original neighboring labels;
+the note accounts for their interfaces and does not infer a stronger
+factoring exponent from this bundle contraction alone.
 
 For two fixed ternary bases with uniform paired types, an
 [exact minor certificate](research/ternary-uniform-gauge-majorization.md)
@@ -210,6 +219,7 @@ make verify-triangular-series # Uniform linear families and complete Laurent-ser
 make verify-paired-trace # Uniform paired contraction, scalar-content and degree controls
 make verify-companion-search # Complete 21,528-frame archive and fresh winner replays
 make verify-monoid-blocks # Explicit multiplication blocks and full Fourier/copy closure
+make verify-unsplit-monoid # Original-field fast convolution and whole-middle bundle controls
 make verify-coupled-searches # Completed search replays and exact affine determinant change
 make verify-schur-fermion # Complete Schur entry formulas and exact comparisons
 make verify-schur-central # Hook-residue identities and full Schur ranks through weight 8
