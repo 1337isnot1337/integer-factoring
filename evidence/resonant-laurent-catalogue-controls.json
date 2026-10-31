@@ -1,0 +1,25 @@
+{
+  "status": "Exact complete Laurent catalogue grouping with independent literal polynomial controls; no pressure claim.",
+  "literal_matrix_endpoint_decisions": 131072,
+  "literal_admissible_profile_signatures": 91136,
+  "windows": [
+    {
+      "window_lower": -2,
+      "complete_offdiagonal_pairs": 4096,
+      "exact_offdiagonal_product_classes": 607,
+      "complete_diagonal_pair_controls": 16,
+      "full_catalogue_kernels": 11796480,
+      "full_catalogue_signatures": 556,
+      "all_representative_signatures_replayed": true
+    },
+    {
+      "window_lower": -1,
+      "complete_offdiagonal_pairs": 4096,
+      "exact_offdiagonal_product_classes": 607,
+      "complete_diagonal_pair_controls": 16,
+      "full_catalogue_kernels": 11796480,
+      "full_catalogue_signatures": 575,
+      "all_representative_signatures_replayed": true
+    }
+  ]
+}

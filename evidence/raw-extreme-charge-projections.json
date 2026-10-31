@@ -1,0 +1,301 @@
+{
+  "status": "pass",
+  "typed_endpoint_entries": 18144,
+  "original_weighted_cut_profiles": [
+    {
+      "interval": 2,
+      "charges": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "trial": 0,
+      "place": 0,
+      "complete_rank": 16
+    },
+    {
+      "interval": 2,
+      "charges": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "trial": 0,
+      "place": 1,
+      "complete_rank": 16
+    },
+    {
+      "interval": 2,
+      "charges": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "trial": 1,
+      "place": 0,
+      "complete_rank": 16
+    },
+    {
+      "interval": 2,
+      "charges": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "trial": 1,
+      "place": 1,
+      "complete_rank": 16
+    },
+    {
+      "interval": 2,
+      "charges": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "trial": 0,
+      "place": 0,
+      "complete_rank": 16
+    },
+    {
+      "interval": 2,
+      "charges": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "trial": 0,
+      "place": 1,
+      "complete_rank": 16
+    },
+    {
+      "interval": 2,
+      "charges": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "trial": 1,
+      "place": 0,
+      "complete_rank": 16
+    },
+    {
+      "interval": 2,
+      "charges": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "trial": 1,
+      "place": 1,
+      "complete_rank": 16
+    },
+    {
+      "interval": 2,
+      "charges": [
+        0,
+        1,
+        2,
+        0
+      ],
+      "trial": 0,
+      "place": 0,
+      "complete_rank": 16
+    },
+    {
+      "interval": 2,
+      "charges": [
+        0,
+        1,
+        2,
+        0
+      ],
+      "trial": 0,
+      "place": 1,
+      "complete_rank": 16
+    },
+    {
+      "interval": 2,
+      "charges": [
+        0,
+        1,
+        2,
+        0
+      ],
+      "trial": 1,
+      "place": 0,
+      "complete_rank": 16
+    },
+    {
+      "interval": 2,
+      "charges": [
+        0,
+        1,
+        2,
+        0
+      ],
+      "trial": 1,
+      "place": 1,
+      "complete_rank": 16
+    },
+    {
+      "interval": 4,
+      "charges": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "trial": 0,
+      "place": 0,
+      "complete_rank": 256
+    },
+    {
+      "interval": 4,
+      "charges": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "trial": 0,
+      "place": 1,
+      "complete_rank": 256
+    },
+    {
+      "interval": 4,
+      "charges": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "trial": 1,
+      "place": 0,
+      "complete_rank": 256
+    },
+    {
+      "interval": 4,
+      "charges": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "trial": 1,
+      "place": 1,
+      "complete_rank": 256
+    },
+    {
+      "interval": 4,
+      "charges": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "trial": 0,
+      "place": 0,
+      "complete_rank": 256
+    },
+    {
+      "interval": 4,
+      "charges": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "trial": 0,
+      "place": 1,
+      "complete_rank": 256
+    },
+    {
+      "interval": 4,
+      "charges": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "trial": 1,
+      "place": 0,
+      "complete_rank": 256
+    },
+    {
+      "interval": 4,
+      "charges": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "trial": 1,
+      "place": 1,
+      "complete_rank": 256
+    },
+    {
+      "interval": 4,
+      "charges": [
+        0,
+        1,
+        2,
+        0
+      ],
+      "trial": 0,
+      "place": 0,
+      "complete_rank": 256
+    },
+    {
+      "interval": 4,
+      "charges": [
+        0,
+        1,
+        2,
+        0
+      ],
+      "trial": 0,
+      "place": 1,
+      "complete_rank": 256
+    },
+    {
+      "interval": 4,
+      "charges": [
+        0,
+        1,
+        2,
+        0
+      ],
+      "trial": 1,
+      "place": 0,
+      "complete_rank": 256
+    },
+    {
+      "interval": 4,
+      "charges": [
+        0,
+        1,
+        2,
+        0
+      ],
+      "trial": 1,
+      "place": 1,
+      "complete_rank": 256
+    }
+  ],
+  "source_sha256": {
+    "tools/strict_core_charge_gauges.py": "b4345dc1df57551c7febbb9f3b7156fb52e57326dc53ec32d76d1055be47ff6e",
+    "tools/check_raw_extreme_charge_projections.py": "235e839fea707a152b49d53c5112c8f6b8bac62b7b7df9c3ede0678031da62eb",
+    "tools/search_raw_extreme_charge_projections.py": "838f2b3caadb7b79eef1523bc2f8534b145ee18b68fd3ab0441df2b5eb7d21e4",
+    "research/raw-extreme-charge-projections.md": "b4b44e1faa9a8424828f6d85090f383197f9f482647a124f42bf54099757183b"
+  },
+  "scope": "Raw Gaussian typed endpoints and exact weighted cut controls; no improved exponent claim."
+}

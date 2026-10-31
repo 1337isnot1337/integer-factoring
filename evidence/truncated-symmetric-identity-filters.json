@@ -1,0 +1,319 @@
+{
+  "block_factorizations": {
+    "exact_charge_block_determinants": 5,
+    "independent_polynomial_entry_identities": 19,
+    "unit_determinant_factorizations": 5
+  },
+  "domination_controls": {
+    "charge_hypothesis": "1-2*n <= J <= 2*n",
+    "comparison": "Gaussian background at the same charge and scale",
+    "exact_rational_comparisons": 4000
+  },
+  "failed_positive_mode_controls": {
+    "exact_schur_and_coefficient_controls": [
+      {
+        "n": 2,
+        "one_copy_endpoint_pole_order": 1,
+        "zero_gauged_added_entry_order": -2
+      },
+      {
+        "n": 3,
+        "one_copy_endpoint_pole_order": 3,
+        "zero_gauged_added_entry_order": -2
+      }
+    ],
+    "scope": "Unrepaired full-alphabet positive-one Smith summand"
+  },
+  "full_tensor_controls": {
+    "complete_two_cut_controls": [
+      {
+        "J": 0,
+        "P": 1,
+        "clearing_order": 0,
+        "e1": 0,
+        "e2": 0,
+        "matrix_order": 9,
+        "maximum_series_precision": 8,
+        "n": 1
+      },
+      {
+        "J": 1,
+        "P": 1,
+        "clearing_order": 0,
+        "e1": 0,
+        "e2": 0,
+        "matrix_order": 9,
+        "maximum_series_precision": 8,
+        "n": 1
+      },
+      {
+        "J": 0,
+        "P": 1,
+        "clearing_order": 1,
+        "e1": 0,
+        "e2": 1,
+        "matrix_order": 9,
+        "maximum_series_precision": 4,
+        "n": 1
+      },
+      {
+        "J": 1,
+        "P": 1,
+        "clearing_order": 1,
+        "e1": 0,
+        "e2": 1,
+        "matrix_order": 9,
+        "maximum_series_precision": 4,
+        "n": 1
+      },
+      {
+        "J": 0,
+        "P": 1,
+        "clearing_order": 1,
+        "e1": 1,
+        "e2": 1,
+        "matrix_order": 9,
+        "maximum_series_precision": 4,
+        "n": 1
+      },
+      {
+        "J": 1,
+        "P": 1,
+        "clearing_order": 1,
+        "e1": 1,
+        "e2": 1,
+        "matrix_order": 9,
+        "maximum_series_precision": 4,
+        "n": 1
+      },
+      {
+        "J": 0,
+        "P": 1,
+        "clearing_order": 2,
+        "e1": 1,
+        "e2": 2,
+        "matrix_order": 9,
+        "maximum_series_precision": 4,
+        "n": 1
+      },
+      {
+        "J": 1,
+        "P": 1,
+        "clearing_order": 2,
+        "e1": 1,
+        "e2": 2,
+        "matrix_order": 9,
+        "maximum_series_precision": 4,
+        "n": 1
+      },
+      {
+        "J": 0,
+        "P": 1,
+        "clearing_order": 0,
+        "e1": -1,
+        "e2": -2,
+        "matrix_order": 9,
+        "maximum_series_precision": 16,
+        "n": 1
+      },
+      {
+        "J": 1,
+        "P": 1,
+        "clearing_order": 0,
+        "e1": -1,
+        "e2": -2,
+        "matrix_order": 9,
+        "maximum_series_precision": 16,
+        "n": 1
+      },
+      {
+        "J": 0,
+        "P": 1,
+        "clearing_order": 1,
+        "e1": 1,
+        "e2": -1,
+        "matrix_order": 9,
+        "maximum_series_precision": 8,
+        "n": 1
+      },
+      {
+        "J": 1,
+        "P": 1,
+        "clearing_order": 1,
+        "e1": 1,
+        "e2": -1,
+        "matrix_order": 9,
+        "maximum_series_precision": 8,
+        "n": 1
+      },
+      {
+        "J": 0,
+        "P": 1,
+        "clearing_order": 0,
+        "e1": 0,
+        "e2": 0,
+        "matrix_order": 81,
+        "maximum_series_precision": 32,
+        "n": 2
+      },
+      {
+        "J": 1,
+        "P": 1,
+        "clearing_order": 0,
+        "e1": 0,
+        "e2": 0,
+        "matrix_order": 81,
+        "maximum_series_precision": 32,
+        "n": 2
+      },
+      {
+        "J": 0,
+        "P": 1,
+        "clearing_order": 1,
+        "e1": 0,
+        "e2": 1,
+        "matrix_order": 81,
+        "maximum_series_precision": 16,
+        "n": 2
+      },
+      {
+        "J": 1,
+        "P": 1,
+        "clearing_order": 1,
+        "e1": 0,
+        "e2": 1,
+        "matrix_order": 81,
+        "maximum_series_precision": 16,
+        "n": 2
+      },
+      {
+        "J": 0,
+        "P": 1,
+        "clearing_order": 1,
+        "e1": 1,
+        "e2": 1,
+        "matrix_order": 81,
+        "maximum_series_precision": 16,
+        "n": 2
+      },
+      {
+        "J": 1,
+        "P": 1,
+        "clearing_order": 1,
+        "e1": 1,
+        "e2": 1,
+        "matrix_order": 81,
+        "maximum_series_precision": 16,
+        "n": 2
+      },
+      {
+        "J": 0,
+        "P": 1,
+        "clearing_order": 2,
+        "e1": -1,
+        "e2": 2,
+        "matrix_order": 81,
+        "maximum_series_precision": 16,
+        "n": 2
+      },
+      {
+        "J": 1,
+        "P": 1,
+        "clearing_order": 2,
+        "e1": -1,
+        "e2": 2,
+        "matrix_order": 81,
+        "maximum_series_precision": 16,
+        "n": 2
+      },
+      {
+        "J": 1,
+        "P": 3,
+        "clearing_order": 1,
+        "e1": 0,
+        "e2": 1,
+        "matrix_order": 81,
+        "maximum_series_precision": 64,
+        "n": 2
+      },
+      {
+        "J": 1,
+        "P": 3,
+        "clearing_order": 2,
+        "e1": -1,
+        "e2": 2,
+        "matrix_order": 81,
+        "maximum_series_precision": 64,
+        "n": 2
+      }
+    ],
+    "endpoint_coefficient_equalities": 66582
+  },
+  "new_factoring_exponent_claimed": false,
+  "profile_controls": {
+    "closed_form_against_all_minors": 1176,
+    "large_integer_controls": [
+      {
+        "n_bits": 210,
+        "ramification_bits": 65,
+        "zero_active": [
+          "-97261323672455430408",
+          "-48630661836227715204",
+          "0",
+          "60016481757794366605253696363522410118219265908757752201044622392585384682034585468",
+          "60016481757794366605253696363522410118219265908757752201044622441216046518262300672",
+          "60016481757794366605253696363522410118219265908757752201044622489846708354490015876",
+          "120032963515588733210507392727044820236438531817515504402089244882432093036524601344",
+          "120032963515588733210507392727044820236438531817515504402089244931062754872752316548",
+          "120032963515588733210507392727044820236438531817515504402089244979693416708980031752"
+        ]
+      },
+      {
+        "n_bits": 210,
+        "ramification_bits": 65,
+        "zero_active": [
+          "-97261323672455430422",
+          "-48630661836227715218",
+          "-14",
+          "-14",
+          "48630661836227715190",
+          "97261323672455430394",
+          "60016481757794366605253696363522410118219265908757752201044622392585384682034585454",
+          "60016481757794366605253696363522410118219265908757752201044622441216046518262300658",
+          "60016481757794366605253696363522410118219265908757752201044622489846708354490015862"
+        ]
+      },
+      {
+        "n_bits": 203,
+        "ramification_bits": 50,
+        "zero_active": [
+          "-14564966701892808416153771001993490095044700069941834587208550946237678327326",
+          "-14564966701892808416153771001993490095044700069941834587208550122673149948730",
+          "-14564966701892808416153771001993490095044700069941834587208550122673149948730",
+          "-14564966701892808416153771001993490095044700069941834587208549299108621570134",
+          "-14564966701892808416153771001993490095044700069941834587208549299108621570134",
+          "-14564966701892808416153771001993490095044700069941834587208549299108621570134",
+          "-14564966701892808416153771001993490095044700069941834587208548475544093191538",
+          "-14564966701892808416153771001993490095044700069941834587208548475544093191538",
+          "-14564966701892808416153771001993490095044700069941834587208547651979564812942"
+        ]
+      },
+      {
+        "n_bits": 333,
+        "ramification_bits": 1,
+        "zero_active": [
+          "0",
+          "4/3",
+          "8/3",
+          "59999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999992/3",
+          "59999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999996/3",
+          "20000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "119999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999996/3",
+          "40000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "120000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004/3"
+        ]
+      }
+    ]
+  },
+  "status": "pass"
+}

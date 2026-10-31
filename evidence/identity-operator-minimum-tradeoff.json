@@ -1,0 +1,152 @@
+{
+  "status": "Exact all-prime highest-block identities and minimum tradeoff controls; not a bound for every operator objective.",
+  "top_and_one_hole_matrix_unit_actions": 550,
+  "lower_occupation_vanishing_actions": 2281,
+  "exact_polynomial_controls": [
+    {
+      "prime": 2,
+      "n": 4,
+      "ramification": 1,
+      "selected": [
+        0,
+        3
+      ],
+      "infinity_gain": 2,
+      "zero_q_minimum": -1,
+      "Gaussian_zero_q_minimum": 4
+    },
+    {
+      "prime": 2,
+      "n": 4,
+      "ramification": 1,
+      "selected": [
+        0,
+        3
+      ],
+      "infinity_gain": 4,
+      "zero_q_minimum": -2,
+      "Gaussian_zero_q_minimum": 4
+    },
+    {
+      "prime": 2,
+      "n": 4,
+      "ramification": 1,
+      "selected": [
+        0,
+        3
+      ],
+      "infinity_gain": 6,
+      "zero_q_minimum": -3,
+      "Gaussian_zero_q_minimum": 4
+    },
+    {
+      "prime": 2,
+      "n": 8,
+      "ramification": 3,
+      "selected": [
+        1,
+        4,
+        7
+      ],
+      "infinity_gain": 2,
+      "zero_q_minimum": 14,
+      "Gaussian_zero_q_minimum": 39
+    },
+    {
+      "prime": 2,
+      "n": 8,
+      "ramification": 3,
+      "selected": [
+        1,
+        4,
+        7
+      ],
+      "infinity_gain": 4,
+      "zero_q_minimum": 13,
+      "Gaussian_zero_q_minimum": 39
+    },
+    {
+      "prime": 2,
+      "n": 8,
+      "ramification": 3,
+      "selected": [
+        1,
+        4,
+        7
+      ],
+      "infinity_gain": 6,
+      "zero_q_minimum": 12,
+      "Gaussian_zero_q_minimum": 39
+    },
+    {
+      "prime": 3,
+      "n": 3,
+      "ramification": 1,
+      "selected": [
+        0,
+        2
+      ],
+      "infinity_gain": 2,
+      "zero_q_minimum": 1,
+      "Gaussian_zero_q_minimum": 5
+    },
+    {
+      "prime": 3,
+      "n": 3,
+      "ramification": 1,
+      "selected": [
+        0,
+        2
+      ],
+      "infinity_gain": 4,
+      "zero_q_minimum": 0,
+      "Gaussian_zero_q_minimum": 5
+    },
+    {
+      "prime": 3,
+      "n": 3,
+      "ramification": 1,
+      "selected": [
+        0,
+        2
+      ],
+      "infinity_gain": 6,
+      "zero_q_minimum": -1,
+      "Gaussian_zero_q_minimum": 5
+    },
+    {
+      "prime": 5,
+      "n": 5,
+      "ramification": 1,
+      "selected": [
+        2
+      ],
+      "infinity_gain": 2,
+      "zero_q_minimum": 5,
+      "Gaussian_zero_q_minimum": 11
+    },
+    {
+      "prime": 5,
+      "n": 5,
+      "ramification": 1,
+      "selected": [
+        2
+      ],
+      "infinity_gain": 4,
+      "zero_q_minimum": 4,
+      "Gaussian_zero_q_minimum": 11
+    },
+    {
+      "prime": 5,
+      "n": 5,
+      "ramification": 1,
+      "selected": [
+        2
+      ],
+      "infinity_gain": 6,
+      "zero_q_minimum": 3,
+      "Gaussian_zero_q_minimum": 11
+    }
+  ],
+  "strict_positive_gain_required": true
+}

@@ -91,10 +91,10 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 
 ## Current research frontier
 
-The latest [research checkpoint](research/constructive-frontier-checkpoint.md)
+The latest [research checkpoint](research/frontier-session-20261031.md)
 keeps the proved score at `1/2`. An
 [accelerated exact certificate](research/accelerated-interval-certificates.md)
-now treats `2^209-1` modes with a rational upper bound less than `5e-123`
+now treats `2^1636-1` modes with a rational upper bound less than `2e-980`
 above `1/sqrt(2)`. This remains an approach from above. A finite identity
 with a positive remainder makes the check polynomial in the logarithm of
 the mode count and can also certify long Gaussian spectator products.
@@ -103,9 +103,10 @@ Symbolic entry witnesses now support a
 [uniform balanced-gauge obstruction](research/rectangular-balanced-gauge-obstruction.md)
 for the baseline repair and its
 [full-alphabet extension](research/full-alphabet-leading-obstruction.md).
-The weights may change arbitrarily with the interval length; for every
-fixed `c>1/sqrt(2)`, these families have positive critical pressure
-eventually whenever `M log s >= c log M`. The result concerns these
+The [all-scale extension](research/all-scale-balanced-obstruction.md)
+now proves positive critical pressure for every `log s > 0` once the
+interval is sufficiently large. Both the weights and the scale may
+change arbitrarily with the interval length. The result concerns these
 specific repairs and balanced bulk charges. Searches continue in families
 that alter their preserved background, including
 [opposite-charge cubic terms](research/rectangular-core-monomials.md).
@@ -116,11 +117,258 @@ singular canonical quartic coefficient. Their determinant is exactly
 crossing. Its partial repairs still preserve an all-low Gaussian submatrix;
 their occupation mixing requires a separate leading-pressure analysis.
 
+An [arbitrary frozen-core output row](research/polynomial-frozen-core-crossings.md)
+now gives an eleven-parameter affine family of locally polynomial crossings.
+Its endpoint condition is exactly `g_0 + g_10 = 1`. The family contains both
+the Gaussian background and a full-inverse restriction with an exact
+non-Gaussian coefficient witness. This changes the background excluded by
+the fixed-repair obstruction, while a useful pressure remains to be found.
+The [compact frozen-row compiler](research/frozen-core-row-profiles.md)
+reduces both cuts to matrices of order at most 64, independent of interval
+length, and normalizes the nonzero output parameters to one orbit.
+Its complete-polynomial cancellation search records 24,528 profile queries
+through interval length 64. The Gaussian row was best in those finite
+searches; arbitrary gauges and affine rows remain open.
+
+A [strict Pascal repair](research/strict-gaussian-relabeling-crossings.md)
+preserves the inherited Gaussian profiles and makes the local endpoint an
+exact crossing on the full alphabet. It permits affine relabeling sums,
+binary charge projections, and nonseparable entrywise monomial changes.
+The charge projections split both cuts into explicit square blocks with
+no degree increase. Full-letter gauge searches are recorded separately
+from exact endpoint and profile controls; no threshold witness is claimed.
+
+[Slow endpoint corrections](research/slow-ramification-crossings.md) after
+ramification have exact eventual affine Smith orders, with an explicit
+threshold. An exact qutrit example decreases the profile product by about
+1.47% at one fixed scale. It does not improve the Gaussian optimum; its
+finite correction and long-interval embeddings remain constructive search
+targets. Both endpoint admissibility and the two complete profiles are
+checked before interpreting a favorable local cost.
+
+[Prime-state identity filters](research/prime-identity-filter-diagonalization.md)
+now have complete all-size profiles from a finite-difference transform of
+their digit weights. Explicit polynomial Pascal factors diagonalize every
+charge block; the active zero matrix has only `p^2` states, independent of
+interval length. The [qutrit specialization](research/truncated-symmetric-identity-filters.md)
+also proves that every nonidentity monomial filter strictly increases the
+profile product against its Gaussian background throughout the stated
+charge range. General polynomial filters and coupled directions remain
+constructive targets. `make verify-state-filters` checks the exact finite
+identities; its extended target also replays the original characteristic-five
+matrices of order 625.
+
+The [polynomial filter synthesis algorithm](research/polynomial-state-filter-synthesis.md)
+goes beyond monomial weights. Prescribed degree bounds, zero orders, and
+endpoint values form an exact finite-field feasibility problem. Residue
+compression uses at most `2*p+1` small systems and constructs explicit
+polynomials even at mode scales with hundreds of bits. Full infinity
+degrees and any denominator clearing remain charged. This supplies a
+concrete route for testing coordinated cancellations at both cuts.
+
+The [coupled identity-filter reduction](research/coupled-identity-filter-reduction.md)
+now concentrates arbitrary joint filters on `r` selected directions into
+`2*r` zero modes, independently of interval length. The proof covers
+initial directions in every characteristic, and terminal or opposite-end
+directions at prime-power lengths. Exact original-cut comparisons check
+both profiles, including the auxiliary zero units in the mixed case.
+These constructions permit correlations between modes; no rate gain is
+claimed. `make verify-coupled-filters` replays the controls.
+
+At a prime-power interval length, the
+[simultaneous Pascal reduction](research/prime-power-joint-identity-filters.md)
+now separates every identity direction in one regular change of basis.
+Any selected subset, including interior and irregularly spaced indices,
+has exactly twice as many active zero modes as selected directions.
+Joint diagonal filters have an explicit finite-difference profile, and
+the operator interfaces accept arbitrary selected indices. One exact
+coefficient catalogue can therefore be reused over all selected subsets.
+The recorded three-mode F4 and four-mode binary screens found no gain
+on their stated finite grids. `make verify-prime-power-filters` replays
+the exact identities, full-pressure controls, and original physical cuts;
+its extended target also checks the original qutrit matrices of order 729.
+
+The [joint residue synthesis theorem](research/joint-binary-filter-synthesis.md)
+extends polynomial feasibility to correlated filters in every prime
+characteristic. It uses at most `2*p^r+1` small residue patterns and a
+fixed coefficient extension for nonzero endpoints. The
+[completed catalogues and all-index screens](research/joint-filter-search-records.md)
+retain 6,899 literal witnesses over F16, F32, and F27; every degree,
+beta order, endpoint, and witness hash is replayed. The stated finite
+grids found no improvement. A separate
+[flag and zero-unit reduction](research/weyl-filter-flags-and-unit-reduction.md)
+preserves exact constraints while reducing an interval-31 source from
+degree 2,221 to 124. `make verify-joint-polynomial-synthesis` and
+`make verify-weyl-filter-flags` reproduce these gates.
+For a correlated [homogeneous Boolean filter family](research/homogeneous-boolean-filter-bounds.md),
+the full cost is strictly worse than the same natural-charge Gaussian
+at every scale. The [global Gaussian floor](research/global-charged-gaussian-floor.md)
+now proves positive complete critical pressure for **every integer length,
+every real aggregate charge, and every positive scale** in the binary
+Gaussian family. It combines exact charge folding, analytic tails,
+small finite bases, and integer-outward certificates. The analytic floor
+also extends to every power-of-two digit count.
+
+This makes the homogeneous filter's large-scale branch absolutely
+positive at every real charge. For fixed Boolean degree and bounded
+charge, its small-scale bound gives positive pressure at every scale for
+all sufficiently large binary prime-power lengths. This last conclusion
+does not extend the correlated small-scale result to unbounded charge.
+`make verify-homogeneous-boolean-filters` replays its exact identities.
+
+The [complete one-mode Laurent theorem](research/global-charged-gaussian-floor.md)
+excludes every admissible single-mode binary Laurent occupation filter
+at every aggregate charge, scale, and finite degree, over any fixed
+characteristic-two coefficient field. The construction retains its
+power-of-two interval lengths. Inside `|J| <= 2n`, equality with the
+Gaussian occurs only for a common scalar Laurent monomial. Outside that
+range, relative gains can occur, but an exact loss cap and a stronger
+Gaussian floor keep the full pressure positive.
+`make verify-global-one-mode-filters` replays the complete certificate
+chain. Independent physical-state gauges and coupled multilevel or
+off-diagonal operators remain outside these exclusions.
+
+[Extension-field operator lattices](research/identity-operator-field-flags.md)
+now permit constant F4 row bases and constructive F16 endpoint lifts.
+The scalar Pascal contraction also gives small exact sources for every
+selected subset. A separate
+[one-hole minimum tradeoff](research/identity-operator-minimum-tradeoff.md)
+proves that improving that block's infinity minimum by `2*g`, for `g > 0`,
+forces a zero-order loss of at least `n*P+g` powers of the local variable.
+It applies when the top coefficient is a monomial, over every fixed
+coefficient extension. Deeper blocks and nonmonomial top coefficients
+remain open. `make verify-operator-field-flags` checks both results.
+
+The [four-mode resonance reduction](research/binary-four-mode-resonance.md)
+does reach a deeper occupation block: two equal-energy two-particle
+states admit an arbitrary invertible endpoint matrix. Both complete
+profiles reduce to five scalar factors and one two-by-two matrix.
+An exact polynomial-degree obstruction excludes one subfamily;
+[complete Laurent catalogues](research/resonant-laurent-catalogues.md)
+then cover 11,796,480 admissible kernels in each of two stated coefficient
+windows. Their exact signatures were searched over all 2,360 resonant
+quadruples at interval 32, with no numerical gain. The windows overlap,
+and the pressure conclusions concern the recorded finite grids and
+refinements. `make verify-resonant-operators` replays the exact controls.
+
+For lengths just below a power of two, the
+[near-power operator reduction](research/near-power-identity-operator-reduction.md)
+handles terminal modes and a split with one initial mode. It retains
+`2*r+1` actual zero modes and uses a local auxiliary Gaussian only to
+compute the profile; exact multiplicity division removes that factor
+before physical costs are evaluated. The contraction is a scalar matrix
+plus rank one. Complete interval-31 terminal and split projector screens
+found no gain in their recorded grids. `make verify-near-power-operators`
+checks the interpolation, auxiliary-factor removal, and original cuts.
+The [fixed-deficit extension](research/fixed-deficit-identity-cores.md)
+proves a corresponding mixed-end core at `n=p^k-d` in every prime
+characteristic. It retains `2*r+d` actual zero modes, calculates their
+profile through order `p^(r+d)`, and bounds the departure from the
+scalar prime-power contraction by rank `d`. Its general gate checks
+exact polynomial geometry and Gaussian-factor division; further complete
+physical operator replays are stated separately.
+The [arbitrary-selection operator API](research/arbitrary-one-deficit-operator-search.md)
+now handles every selected set one below a prime power, with original
+physical controls and exact Gaussian-factor division. Four parent-length
+qutrit catalogues and four
+[energy-conjugated catalogues](research/deficit-energy-conjugated-operators.md)
+completed at interval 26, including interior selections. Their 9,032
+kernel/geometry cases retain the Gaussian best value in the recorded
+finite grids and refinements.
+
+The [prime-field affine solver](research/prime-deficit-affine-operator-synthesis.md)
+then removes the fixed-projector restriction. It gives independent
+coefficients to all 19 qutrit occupation-preserving entries, with exact
+endpoint equations and a checked source-precision bound. Four searches
+completed 242 prescribed paths and 4,985 exact affine queries, including
+nontrivial infinity flags; no returned profile improved the recorded
+pressure. These paths do not exhaust every polynomial coefficient family.
+`make verify-prime-deficit-affine-synthesis` replays its independent gates.
+
+The complementary [above-power construction](research/above-power-identity-operator-reduction.md)
+handles terminal directions at `n=2^k+1` by retaining the existing,
+unchanged identity direction zero. Its local core and Weyl matrix are
+bounded independently of the interval, with no formal physical mode
+added. The [interval-33 catalogue](research/above-power-operator-searches.md)
+completed all 42,560 specified projector kernels and 1,111 exact profile
+classes, with no gain on the recorded grid and refinements.
+`make verify-above-power-operators` checks the complete construction.
+
+The [reflection-pair compression](research/reflection-dual-rail-compression.md)
+retains one occupied mode from every reflected pair. A characteristic-two
+homology calculation gives an explicit polynomial Gaussian on the
+square root of the original alphabet, with complete profiles at both
+cuts. Its natural pressure equals half the original pressure at twice
+the scale, so the rate is unchanged. The smaller seed makes further
+logical-core perturbations and independent-gauge searches accessible.
+
+The [physical hot-state search checkpoint](research/reflection-hot-state-searches.md)
+records completed positive and unrestricted height screens, all 65,536
+coefficient rows at five fixed positive-height rays, and nonlinear
+two-bit state penalties. None improves its Gaussian control in the
+recorded scope. The [raw transition-mask screen](research/raw-core-transition-masks.md)
+also retains its interrupted 167-of-615-candidate prefix explicitly;
+the remaining masks are not counted as searched.
+
+[Cold-compensated hot-state searches](research/reflection-hot-compensated-searches.md)
+allow negative selected-state heights while charging every compensating
+cold-bit height. The saved runs include all 65,536 coefficient rows at
+seven fixed negative-height rays, 234 natural-class representatives at
+interval 16, sampled rows through interval 64, and nonlinear two-bit
+OR-state penalties. None supplies a gain in its stated scope. The
+[separate physical-leg bulk theorem](research/reflection-hot-leg-bulk-gauges.md)
+also permits different bulk heights on the four legs within an explicit
+regularity cone, retaining the same bounded active core and both physical
+type costs. `make verify-reflection-leg-bulks` checks its original tensors.
+The [second regular cross pivot](research/reflection-hot-all-bulk-gauges.md)
+removes the bulk-ordering restriction: all nonnegative physical-leg bulk
+choices now use the same bounded core, subject to the stated hot-cold
+regularity inequalities. Complete coefficient expansion is checked before
+Smith elimination, including the large local-unit denominators of this
+second pivot. `make verify-reflection-all-bulks` replays the new construction
+and the shared hot-state regression.
+
+An independent [binary crossing synthesis](research/binary-two-cut-affine-synthesis.md)
+assigns free Laurent coefficients to every tensor entry while fixing the
+strict permutation endpoint. For its selected row targets, a support
+bound makes degree 12 after common clearing exhaustive, and all 8,925
+constant F4 flags at each cut are covered. All fifty nonreference targets
+are infeasible; this is an exact result for those fixed frames and gauges.
+It does not exclude other target orders or other regular frames.
+`make verify-binary-two-cut-lattices` checks literal minors, endpoint
+coefficients, flag enumeration, and the pruning used by the complete run.
+
 The [Walsh permanent calculation](research/walsh-principal-permanents.md)
 gives all-size scalar valuation formulas beyond the determinant model.
 It also proves that exponentially many grouped modes survive the current
 precision schedule for direct forward twirling. Lower-precision scalar
 recovery remains a distinct possible route.
+
+The [arithmetic Cauchy theorem](research/arithmetic-cauchy-factorial-law.md)
+now proves the permanent valuation `v_2(per C)=v_2(n!)` for every
+even-spacing arithmetic block, with no power-of-two size restriction.
+It also proves every invariant-factor order of the squared Cauchy matrix:
+`2*r*v_p(d) + 2*v_p(r!) + v_p(r+1)` when `p` divides the spacing `d`.
+An integral orthogonal-polynomial basis supplies the full Smith proof.
+The [all-power extension](research/arithmetic-cauchy-powers.md) now gives
+`2*r*v_p(d) + v_p(r!) + v_p((m)_r)` for every positive Hadamard power `m`,
+where `(m)_r` is the rising factorial. A factorial-normalized alternant
+bound makes the leading Cauchy--Binet term unique modulo `p`. These are
+complete spectral formulas; scalar recovery and grouped operator cost
+remain separate obligations.
+
+The [digit-count interval theorem](research/truncated-symmetric-interval-frontier.md)
+also proves that the displayed truncated-symmetric interval pressure stays
+strictly above the threshold for every integer digit count `q >= 2`,
+every mode count, and every profile scale. Its fixed-`q` gap has a sharp
+Lambert-W asymptotic. Noninterval modes and independent mode heights remain
+outside this theorem. The [weighted Pascal reduction](research/weighted-lucas-pascal-profiles.md)
+now computes admissible independent-height profiles by constant-field elimination.
+Lucas antichains permit every height vector, and a prime-radix traversal skips
+arbitrarily large gaps between modes. These are exact search tools; the original
+crossing degree remains part of the eventual evaluator cost. Run
+`make verify-frontier-extensions verify-weighted-pascal` for the ordinary-proof
+controls; neither result changes the factoring score.
 
 The [mixed-field rectangular repair](research/rectangular-f4-repair.md) now
 settles the four-element-field construction left open in the preceding
@@ -192,7 +440,7 @@ groups, so this operator theorem alone does not improve the evaluator.
 The [grouped inverse profile](research/grouped-cauchy-inverse-profile.md)
 determines the exact precision cost of a direct grouped factorization.
 
-The [31 October research checkpoint](research/constructive-frontier-checkpoint.md)
+The [earlier 31 October research checkpoint](research/constructive-frontier-checkpoint.md)
 collects the latest exact bounds, new construction families, reproducible
 search starts, and the remaining obligations for a score improvement.
 

@@ -1,0 +1,163 @@
+{
+  "status": "exact finite F4^8 profiles at prescribed integer heights and sampled positive scales",
+  "interval": 16,
+  "ramification": 1,
+  "planned_candidates": 65536,
+  "rays": [
+    [
+      [
+        2,
+        2,
+        2,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        2,
+        2,
+        2
+      ]
+    ],
+    [
+      [
+        2,
+        2,
+        2,
+        2
+      ],
+      [
+        2,
+        2,
+        2,
+        2
+      ]
+    ],
+    [
+      [
+        2,
+        0,
+        0,
+        2
+      ],
+      [
+        2,
+        0,
+        0,
+        2
+      ]
+    ],
+    [
+      [
+        0,
+        2,
+        2,
+        0
+      ],
+      [
+        0,
+        2,
+        2,
+        0
+      ]
+    ]
+  ],
+  "scales": [
+    0.06762509832489577,
+    0.13525019664979154,
+    0.2705003932995831
+  ],
+  "gaussian_natural": {
+    "rho": 0.7106044045201707,
+    "log_s": 0.13525019664979154,
+    "evaluations": 14,
+    "success": true
+  },
+  "independent_compiled_profile_controls": 30,
+  "minimum_same_height_relative_log_cost": 0.0,
+  "best_sampled_baseline_excess": 0.18738888841492107,
+  "best_sampled_critical_excess": 0.21651862869166338,
+  "best_sampled_row": {
+    "row": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "ray_index": 0,
+    "log_s": 0.13525019664979154,
+    "profiles": [
+      [
+        0,
+        6,
+        6,
+        12,
+        38,
+        38,
+        44,
+        44,
+        44,
+        44,
+        50,
+        50,
+        76,
+        82,
+        82,
+        88
+      ],
+      [
+        0,
+        2,
+        6,
+        8,
+        34,
+        36,
+        38,
+        40,
+        40,
+        42,
+        44,
+        46,
+        72,
+        74,
+        78,
+        80
+      ]
+    ]
+  },
+  "complete": true,
+  "completed_candidates": 65536,
+  "class_counts_by_ray": [
+    228,
+    249,
+    243,
+    424,
+    424
+  ],
+  "profile_digest_sha256": "8a35757981ede4adbd79dc235e57d87c9638fb9d15bdde3457f28d7ab14835ef",
+  "seconds": 593.814170699,
+  "source_sha256": {
+    "tools/search_reflection_hot_positive_rays.py": "f41da793149f6831e346969e126f1ecf3b635c1cfa052c4437a9723ac478ecb2",
+    "tools/reflection_hot_state_gauges.py": "eae7981b520209aead4258e294b5c14efbd73640130c017c8ce93e3d2a220e84",
+    "tools/reflection_hot_state_coordinates.py": "261551541d837b5695f24388f41d402ca70d4550d023d3e534d94eb85ccf13d9",
+    "tools/reflection_hot_state_support.py": "452e8448cc14783e6333be3ed0f7ccf25f10f650254c8bd705080f447652f40a",
+    "tools/search_reflection_hot_core_filters.py": "fc89bdc6be5c5598ddf7b4c456380a31f871b44d4623ff52f76c275ad794e1a8"
+  }
+}

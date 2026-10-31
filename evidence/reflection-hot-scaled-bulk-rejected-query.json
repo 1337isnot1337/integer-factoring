@@ -1,0 +1,20 @@
+{
+  "status": "Diagnostic of a strictly rejected numerical optimizer proposal; the rejected point was not scored.",
+  "interval": 128,
+  "coefficient_row": [0, 1, 1, 1, 1, 1, 0, 1],
+  "larger_leg_choices": [0, 1, 0, 0],
+  "unprojected_optimizer_parameters": [-4.430508887256275, 0.0, 0.0, 0.0, 0.0, 0.000001, 0.000001, 0.000001, 0.000001, 2.079503993525278, 2.079538398879854, 2.079503993525278, 2.079538398879854, 0.000005819896329054874, 0.000005819896329054874, 0.0, -2.117582368135751e-22],
+  "offending_parameter": "infinity physical-v hot-state slack",
+  "stated_slack_lower_bound": 0.0,
+  "rejected_slack": -2.117582368135751e-22,
+  "removed_factor_height_increment": -0.0000010000000000000002,
+  "removed_factor_allowed_lower_bound": -0.000001,
+  "regularity_margin": -2.117582368135751e-22,
+  "strict_gate_rejected": true,
+  "corrected_parameterization": "Project every optimizer vector to its explicitly stated numerical box before evaluating it. The saved vector and physical heights are the projected values actually evaluated.",
+  "projected_offending_slack": 0.0,
+  "evaluator_or_theorem_tolerance_changed": false,
+  "original_temporary_prefix_retained": false,
+  "canonical_result": "reflection-hot-scaled-bulk-search-M128.json",
+  "canonical_run_restarted_from_first_candidate": true
+}

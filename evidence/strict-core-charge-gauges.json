@@ -1,0 +1,282 @@
+{
+  "status": "pass",
+  "original_weighted_cut_profiles": [
+    {
+      "interval": 2,
+      "core": 2,
+      "charges": [
+        0,
+        1,
+        2,
+        0
+      ],
+      "trial": 0,
+      "place": 0,
+      "complete_rank": 16,
+      "active_rank": 16
+    },
+    {
+      "interval": 2,
+      "core": 2,
+      "charges": [
+        0,
+        1,
+        2,
+        0
+      ],
+      "trial": 0,
+      "place": 1,
+      "complete_rank": 16,
+      "active_rank": 16
+    },
+    {
+      "interval": 2,
+      "core": 2,
+      "charges": [
+        0,
+        1,
+        2,
+        0
+      ],
+      "trial": 1,
+      "place": 0,
+      "complete_rank": 16,
+      "active_rank": 16
+    },
+    {
+      "interval": 2,
+      "core": 2,
+      "charges": [
+        0,
+        1,
+        2,
+        0
+      ],
+      "trial": 1,
+      "place": 1,
+      "complete_rank": 16,
+      "active_rank": 16
+    },
+    {
+      "interval": 2,
+      "core": 2,
+      "charges": [
+        0,
+        1,
+        2,
+        0
+      ],
+      "trial": 2,
+      "place": 0,
+      "complete_rank": 16,
+      "active_rank": 16
+    },
+    {
+      "interval": 2,
+      "core": 2,
+      "charges": [
+        0,
+        1,
+        2,
+        0
+      ],
+      "trial": 2,
+      "place": 1,
+      "complete_rank": 16,
+      "active_rank": 16
+    },
+    {
+      "interval": 4,
+      "core": 2,
+      "charges": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "trial": 0,
+      "place": 0,
+      "complete_rank": 256,
+      "active_rank": 256
+    },
+    {
+      "interval": 4,
+      "core": 2,
+      "charges": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "trial": 0,
+      "place": 1,
+      "complete_rank": 256,
+      "active_rank": 256
+    },
+    {
+      "interval": 4,
+      "core": 2,
+      "charges": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "trial": 1,
+      "place": 0,
+      "complete_rank": 256,
+      "active_rank": 256
+    },
+    {
+      "interval": 4,
+      "core": 2,
+      "charges": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "trial": 1,
+      "place": 1,
+      "complete_rank": 256,
+      "active_rank": 256
+    },
+    {
+      "interval": 4,
+      "core": 2,
+      "charges": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "trial": 2,
+      "place": 0,
+      "complete_rank": 256,
+      "active_rank": 256
+    },
+    {
+      "interval": 4,
+      "core": 2,
+      "charges": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "trial": 2,
+      "place": 1,
+      "complete_rank": 256,
+      "active_rank": 256
+    },
+    {
+      "interval": 4,
+      "core": 1,
+      "charges": [
+        0,
+        1
+      ],
+      "trial": 0,
+      "place": 0,
+      "complete_rank": 256,
+      "active_rank": 16
+    },
+    {
+      "interval": 4,
+      "core": 1,
+      "charges": [
+        0,
+        1
+      ],
+      "trial": 0,
+      "place": 1,
+      "complete_rank": 256,
+      "active_rank": 16
+    },
+    {
+      "interval": 4,
+      "core": 1,
+      "charges": [
+        0,
+        1
+      ],
+      "trial": 1,
+      "place": 0,
+      "complete_rank": 256,
+      "active_rank": 16
+    },
+    {
+      "interval": 4,
+      "core": 1,
+      "charges": [
+        0,
+        1
+      ],
+      "trial": 1,
+      "place": 1,
+      "complete_rank": 256,
+      "active_rank": 16
+    },
+    {
+      "interval": 4,
+      "core": 1,
+      "charges": [
+        0,
+        1
+      ],
+      "trial": 2,
+      "place": 0,
+      "complete_rank": 256,
+      "active_rank": 16
+    },
+    {
+      "interval": 4,
+      "core": 1,
+      "charges": [
+        0,
+        1
+      ],
+      "trial": 2,
+      "place": 1,
+      "complete_rank": 256,
+      "active_rank": 16
+    }
+  ],
+  "gradient_components_checked": 27,
+  "gradient_errors": [
+    1.3401762338771661e-12,
+    7.87408902186773e-12,
+    3.142378718345995e-12,
+    1.2123645837247565e-11,
+    5.047404334768135e-12,
+    1.321408260590573e-12,
+    6.8547337944702136e-12,
+    3.734854439607638e-12,
+    5.7242014947500586e-12,
+    5.2909846642856806e-12,
+    1.368499671222656e-11,
+    1.3406116494696363e-13,
+    2.0094746613213976e-11,
+    3.673268286763509e-12,
+    2.025072817768425e-12,
+    2.1946651961035624e-11,
+    5.218028266418262e-12,
+    1.6310858913515247e-12,
+    1.356619330761255e-11,
+    1.0570503240076023e-11,
+    5.951711345986155e-12,
+    3.2494631985180433e-12,
+    8.300013454309862e-12,
+    4.397400629393977e-12,
+    4.8940378523853675e-12,
+    1.7431438237291985e-12,
+    8.182907129672401e-11
+  ],
+  "source_sha256": {
+    "tools/strict_core_charge_profiles.py": "37d4abaf97c29cc6d06012584efb76262352f2797de4228cf7527fc87204c681",
+    "tools/strict_core_charge_gauges.py": "b4345dc1df57551c7febbb9f3b7156fb52e57326dc53ec32d76d1055be47ff6e",
+    "tools/check_strict_core_charge_gauges.py": "6dfc8f35c7658c6af544c05630c995170f7ded2c482a39dcdb360d0c9df2205b",
+    "research/strict-core-charge-projection.md": "f5d36b054c02c32aae6fe3dea07ae8420465d69714ea6033c57db2d38b97ae6f"
+  },
+  "scope": "Exact quarter-integer weighted profiles and floating derivative controls; no improved rate claim."
+}

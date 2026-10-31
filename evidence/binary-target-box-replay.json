@@ -1,0 +1,173 @@
+{
+  "status": "PASS: independent target reconstruction, exact common rejections, and complete scalar-shift fibers.",
+  "record": "evidence/binary-two-cut-zero-sum-target-box.json",
+  "degree_after_clearing": 12,
+  "common_Laurent_clearing": 4,
+  "raw_independently_enumerated_targets": 23099,
+  "retained_fixed_pressure_targets": 7079,
+  "pressure_filter_scale": 0.29277969091981376,
+  "pressure_filter_tolerance": 1e-12,
+  "flags_per_cut": 129,
+  "declared_completion_checked": true,
+  "distinct_common_minimum_systems_replayed": 17,
+  "exact_common_inconsistent_targets": 1430,
+  "feasible_target_fibers": [
+    {
+      "infinity_target_shift": -2,
+      "target": [
+        3,
+        6,
+        8,
+        11,
+        7,
+        10,
+        12,
+        15
+      ],
+      "affine_dimension_over_F4": 1,
+      "all_points_replayed": 4,
+      "complete_cut_profiles": [
+        [
+          -11,
+          -8,
+          -6,
+          -3
+        ],
+        [
+          5,
+          8,
+          10,
+          13
+        ]
+      ]
+    },
+    {
+      "infinity_target_shift": -1,
+      "target": [
+        4,
+        7,
+        9,
+        12,
+        6,
+        9,
+        11,
+        14
+      ],
+      "affine_dimension_over_F4": 1,
+      "all_points_replayed": 4,
+      "complete_cut_profiles": [
+        [
+          -10,
+          -7,
+          -5,
+          -2
+        ],
+        [
+          4,
+          7,
+          9,
+          12
+        ]
+      ]
+    },
+    {
+      "infinity_target_shift": 0,
+      "target": [
+        5,
+        8,
+        10,
+        13,
+        5,
+        8,
+        10,
+        13
+      ],
+      "affine_dimension_over_F4": 1,
+      "all_points_replayed": 4,
+      "complete_cut_profiles": [
+        [
+          -9,
+          -6,
+          -4,
+          -1
+        ],
+        [
+          3,
+          6,
+          8,
+          11
+        ]
+      ]
+    },
+    {
+      "infinity_target_shift": 1,
+      "target": [
+        6,
+        9,
+        11,
+        14,
+        4,
+        7,
+        9,
+        12
+      ],
+      "affine_dimension_over_F4": 1,
+      "all_points_replayed": 4,
+      "complete_cut_profiles": [
+        [
+          -8,
+          -5,
+          -3,
+          0
+        ],
+        [
+          2,
+          5,
+          7,
+          10
+        ]
+      ]
+    },
+    {
+      "infinity_target_shift": 2,
+      "target": [
+        7,
+        10,
+        12,
+        15,
+        3,
+        6,
+        8,
+        11
+      ],
+      "affine_dimension_over_F4": 1,
+      "all_points_replayed": 4,
+      "complete_cut_profiles": [
+        [
+          -7,
+          -4,
+          -2,
+          1
+        ],
+        [
+          1,
+          4,
+          6,
+          9
+        ]
+      ]
+    }
+  ],
+  "normalized_four_point_families_exactly_equal": true,
+  "also_equal_to_original_degree_five_line_after_common_clearing": true,
+  "complete_weighted_cut_profiles_by_all_minors": 50,
+  "literal_endpoint_coefficients": 400,
+  "scope": "The floating pressure filter is replayed as a finite schedule. Exact algebra verifies all common failures and every point of the five recorded feasible lines. The remaining flag-pair exclusions are manifest-checked, not independently rerun.",
+  "source_sha256": {
+    "evidence/binary-two-cut-zero-sum-target-box.json": "9d730194da09d62891bb2a9cff21651bc6d3368402c2ebd2ece6843be65a10d4",
+    "tools/check_binary_target_box.py": "5fbc64c18fbc425a8d52f767cfa0d37c41ddcbf1b8ce40033fc9131c32544a9e",
+    "tools/search_binary_f4_flags.py": "10e8c6485cb71605dfe29b3abea330b649441303fa0af7387d6efaf45b0fccb5",
+    "tools/search_binary_two_cut_lattices.py": "f61fce28e203fa9804617ec559636e44eccaf1b9a1cac68770761d0c2ee30f05",
+    "tools/check_binary_two_cut_lattices.py": "07f40447b47a0810ad5f225cbcb436d9c01cfb20e374de483a9ce73a8138e891"
+  }
+}

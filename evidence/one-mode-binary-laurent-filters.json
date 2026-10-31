@@ -1,0 +1,215 @@
+{
+  "status": "All exact degree/order implications and rational cost comparisons pass.",
+  "scope": "Finite independent controls for the uniform Laurent-polynomial theorem; no finite search is used to prove its universal quantifiers.",
+  "catalogues": [
+    {
+      "field_order": 2,
+      "support": [
+        -3,
+        3
+      ],
+      "endpoint_nonzero_polynomials": 64,
+      "ramification_products_m": [
+        1,
+        2,
+        7,
+        32
+      ],
+      "complete_pairs": 16384,
+      "diagonal_cases": 15840,
+      "crossed_cases": 544,
+      "common_scalar_monomial_cases": 28,
+      "distinct_degree_order_profiles": 2208
+    },
+    {
+      "field_order": 4,
+      "support": [
+        -2,
+        1
+      ],
+      "endpoint_nonzero_polynomials": 192,
+      "ramification_products_m": [
+        1,
+        2,
+        7,
+        32
+      ],
+      "complete_pairs": 147456,
+      "diagonal_cases": 145512,
+      "crossed_cases": 1944,
+      "common_scalar_monomial_cases": 48,
+      "distinct_degree_order_profiles": 516
+    }
+  ],
+  "exact_rational_cost_comparisons": 16344,
+  "examples": [
+    {
+      "field_order": 2,
+      "m": 1,
+      "f0": [
+        [
+          3,
+          1
+        ]
+      ],
+      "f1": [
+        [
+          3,
+          1
+        ]
+      ],
+      "beta_orders": [
+        3,
+        4
+      ],
+      "full_degrees": [
+        3,
+        3
+      ],
+      "branch": "crossed",
+      "common_scalar_monomial": true
+    },
+    {
+      "field_order": 2,
+      "m": 1,
+      "f0": [
+        [
+          3,
+          1
+        ]
+      ],
+      "f1": [
+        [
+          2,
+          1
+        ]
+      ],
+      "beta_orders": [
+        3,
+        2
+      ],
+      "full_degrees": [
+        3,
+        2
+      ],
+      "branch": "diagonal",
+      "common_scalar_monomial": false
+    },
+    {
+      "field_order": 2,
+      "m": 1,
+      "f0": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "f1": [
+        [
+          1,
+          1
+        ]
+      ],
+      "beta_orders": [
+        1,
+        4
+      ],
+      "full_degrees": [
+        3,
+        1
+      ],
+      "branch": "crossed",
+      "common_scalar_monomial": false
+    },
+    {
+      "field_order": 4,
+      "m": 1,
+      "f0": [
+        [
+          1,
+          1
+        ]
+      ],
+      "f1": [
+        [
+          1,
+          1
+        ]
+      ],
+      "beta_orders": [
+        1,
+        2
+      ],
+      "full_degrees": [
+        1,
+        1
+      ],
+      "branch": "crossed",
+      "common_scalar_monomial": true
+    },
+    {
+      "field_order": 4,
+      "m": 1,
+      "f0": [
+        [
+          1,
+          1
+        ]
+      ],
+      "f1": [
+        [
+          1,
+          2
+        ]
+      ],
+      "beta_orders": [
+        1,
+        1
+      ],
+      "full_degrees": [
+        1,
+        1
+      ],
+      "branch": "diagonal",
+      "common_scalar_monomial": false
+    },
+    {
+      "field_order": 4,
+      "m": 1,
+      "f0": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "f1": [
+        [
+          0,
+          1
+        ]
+      ],
+      "beta_orders": [
+        0,
+        1
+      ],
+      "full_degrees": [
+        1,
+        0
+      ],
+      "branch": "crossed",
+      "common_scalar_monomial": false
+    }
+  ]
+}

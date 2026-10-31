@@ -10,6 +10,9 @@ The permanent and determinant have different valuation behavior.
 For every contiguous subset, their valuations agree and have a simple
 dyadic formula. A circulant comparison proves the permanent valuation
 for every evenly spaced subset of power-of-two size and even spacing.
+The [arithmetic Cauchy theorem](arithmetic-cauchy-factorial-law.md) now
+extends that conclusion to every subset size and proves the individual
+squared-Cauchy Smith orders previously observed here.
 On the even positions it differs from the determinant valuation by
 a quadratic amount. This gives a concrete family of scalar modes
 outside the exterior-algebra calculation.
@@ -473,7 +476,7 @@ contractions are one and zero. Their twirled values differ by
 normalization must remain explicit. This does not assert a
 collision for the untwirled source kernel.
 
-### 4.4 A stronger individual Smith profile remains observational
+### 4.4 The individual Smith profile is now proved at every size
 
 The checker also evaluates the blocks by Borchardt's identity
 
@@ -484,18 +487,20 @@ The checker also evaluates the blocks by Borchardt's identity
 Here the circle denotes entrywise multiplication. A primary proof
 is [Singer (2004), Theorem 1.1][borchardt]. Small cases also use
 a separate direct permanent computation. For consecutive indices,
-the tested squared-Cauchy Smith orders are
+the squared-Cauchy Smith orders are
 
 \[
  2r+2v_2(r!)+v_2(r+1),\qquad 0\le r<n.
 \]
 
-Tests through `n=128` give
+The original tests through `n=128` gave
 `v_2(per C)=v_2(n!)=n-s_2(n)`, including non-power-of-two sizes
-through sixteen. The individual Smith formula, and the extension
-of the permanent formula to arbitrary sizes, are finite observations.
-The proof above establishes the permanent formula for power-of-two
-sizes only. Nonconsecutive index sets can have larger valuations.
+through sixteen. Both statements now have ordinary all-size proofs in
+[the arithmetic Cauchy theorem](arithmetic-cauchy-factorial-law.md).
+Its sampling-moment lemma removes the size restriction from the permanent
+formula; its integral orthogonal-polynomial basis proves the individual
+Smith orders. The proof above remains a separate power-of-two argument.
+Nonconsecutive index sets can have larger valuations.
 
 Reversing columns makes `C circle C` a Hankel matrix
 `1/(A+2i+2j)^2`. Two forward-difference transforms give entries
@@ -507,8 +512,8 @@ Reversing columns makes `C circle C` a Hankel matrix
 \]
 
 Every denominator is odd. This exposes factorial weights and
-odd-progression harmonic sums, but it does not yet prove the
-individual Smith formula.
+odd-progression harmonic sums. The new theorem supplies the additional
+integral basis needed to prove the individual Smith formula.
 
 ## 5. Exact restricted scalar decoders
 

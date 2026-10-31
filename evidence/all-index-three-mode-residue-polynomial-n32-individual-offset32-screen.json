@@ -1,0 +1,2605 @@
+{
+  "status": "Exact coefficient profiles and complete stated subset/grid screen; floating pressure is exploratory.",
+  "n": 32,
+  "ramification": 1,
+  "modes": 3,
+  "family": "exact residue-compressed polynomial witnesses",
+  "source_lattice_record": null,
+  "source_joint_record": "evidence/joint-binary-polynomial-n32-r3-individual-offset32.json",
+  "coefficient_cases": 10504,
+  "all_mode_permutations_included": true,
+  "ordered_profiles_before_mode_permutations": 2361,
+  "distinct_ordered_beta_degree_profiles": 7402,
+  "catalogue_sha256": "e8d6a1c6bd1bf834b59e6421f1ad16eadd22de9e27a23913ad7e132338e12bcf",
+  "selected_subsets": 4960,
+  "subset_stride": 1,
+  "scale_grid": [
+    0.0625,
+    0.125,
+    0.15625,
+    0.1875,
+    0.25
+  ],
+  "charge_grid": [
+    -1.0,
+    0.0,
+    1.0
+  ],
+  "gain_detection_tolerance": 1e-09,
+  "total_profile_subset_grid_evaluations": 550708800,
+  "minimum_relative_log_cost": -6.66133814775094e-16,
+  "minimum_critical_pressure": 0.03336164503723471,
+  "same_gauge_gain_found": false,
+  "negative_critical_pressure_found": false,
+  "grid_summaries": [
+    {
+      "scale": 0.0625,
+      "charge": -1.0,
+      "Gaussian_pressure": 1.2903563644930465,
+      "minimum_relative_log_cost": -5.551115123125783e-16,
+      "minimum_critical_pressure": 1.290356364493046
+    },
+    {
+      "scale": 0.0625,
+      "charge": 0.0,
+      "Gaussian_pressure": 1.2891759509342116,
+      "minimum_relative_log_cost": -6.66133814775094e-16,
+      "minimum_critical_pressure": 1.289175950934211
+    },
+    {
+      "scale": 0.0625,
+      "charge": 1.0,
+      "Gaussian_pressure": 1.2903563644930465,
+      "minimum_relative_log_cost": -5.551115123125783e-16,
+      "minimum_critical_pressure": 1.290356364493046
+    },
+    {
+      "scale": 0.125,
+      "charge": -1.0,
+      "Gaussian_pressure": 0.07123402063588635,
+      "minimum_relative_log_cost": -4.440892098500626e-16,
+      "minimum_critical_pressure": 0.07123402063588591
+    },
+    {
+      "scale": 0.125,
+      "charge": 0.0,
+      "Gaussian_pressure": 0.07103834785392138,
+      "minimum_relative_log_cost": -6.66133814775094e-16,
+      "minimum_critical_pressure": 0.07103834785392071
+    },
+    {
+      "scale": 0.125,
+      "charge": 1.0,
+      "Gaussian_pressure": 0.07123402063588635,
+      "minimum_relative_log_cost": -5.551115123125783e-16,
+      "minimum_critical_pressure": 0.0712340206358858
+    },
+    {
+      "scale": 0.15625,
+      "charge": -1.0,
+      "Gaussian_pressure": 0.036306366228759046,
+      "minimum_relative_log_cost": -5.551115123125783e-16,
+      "minimum_critical_pressure": 0.03630636622875849
+    },
+    {
+      "scale": 0.15625,
+      "charge": 0.0,
+      "Gaussian_pressure": 0.036244076856041474,
+      "minimum_relative_log_cost": -6.66133814775094e-16,
+      "minimum_critical_pressure": 0.03624407685604081
+    },
+    {
+      "scale": 0.15625,
+      "charge": 1.0,
+      "Gaussian_pressure": 0.036306366228759046,
+      "minimum_relative_log_cost": -4.440892098500626e-16,
+      "minimum_critical_pressure": 0.0363063662287586
+    },
+    {
+      "scale": 0.1875,
+      "charge": -1.0,
+      "Gaussian_pressure": 0.03338022790012474,
+      "minimum_relative_log_cost": -5.551115123125783e-16,
+      "minimum_critical_pressure": 0.03338022790012418
+    },
+    {
+      "scale": 0.1875,
+      "charge": 0.0,
+      "Gaussian_pressure": 0.03336164503723538,
+      "minimum_relative_log_cost": -6.66133814775094e-16,
+      "minimum_critical_pressure": 0.03336164503723471
+    },
+    {
+      "scale": 0.1875,
+      "charge": 1.0,
+      "Gaussian_pressure": 0.03338022790012474,
+      "minimum_relative_log_cost": -5.551115123125783e-16,
+      "minimum_critical_pressure": 0.03338022790012418
+    },
+    {
+      "scale": 0.25,
+      "charge": -1.0,
+      "Gaussian_pressure": 0.041762890476452874,
+      "minimum_relative_log_cost": -4.440892098500626e-16,
+      "minimum_critical_pressure": 0.04176289047645243
+    },
+    {
+      "scale": 0.25,
+      "charge": 0.0,
+      "Gaussian_pressure": 0.04176140635491343,
+      "minimum_relative_log_cost": -6.66133814775094e-16,
+      "minimum_critical_pressure": 0.04176140635491277
+    },
+    {
+      "scale": 0.25,
+      "charge": 1.0,
+      "Gaussian_pressure": 0.041762890476452874,
+      "minimum_relative_log_cost": -5.551115123125783e-16,
+      "minimum_critical_pressure": 0.04176289047645232
+    }
+  ],
+  "selected_profile_records": [
+    {
+      "beta_orders": [
+        32,
+        64,
+        64,
+        96,
+        64,
+        96,
+        96,
+        128
+      ],
+      "degrees": [
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32
+      ],
+      "source_degree_bounds": [
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32
+      ],
+      "source_beta_bounds": [
+        32,
+        64,
+        64,
+        96,
+        64,
+        96,
+        96,
+        128
+      ],
+      "endpoint_values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "endpoint_image_dimension": 1,
+      "coefficient_field_order": 16,
+      "witness_polynomial_sha256": "4e20d1c5624c100718227c8ea9eaf32c0cb3714187170a2764f72ac210622729",
+      "source_mode_permutation": [
+        0,
+        1,
+        2
+      ],
+      "source_multiplicity": 648,
+      "catalogue_index": 0,
+      "minimum_relative_log_cost": -6.66133814775094e-16,
+      "relative_point": [
+        0.0625,
+        0.0,
+        [
+          0,
+          12,
+          17
+        ]
+      ],
+      "minimum_critical_pressure": 0.03336164503723471,
+      "critical_point": [
+        0.1875,
+        0.0,
+        [
+          0,
+          16,
+          31
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        32,
+        64,
+        65,
+        64,
+        64,
+        96,
+        64,
+        64
+      ],
+      "degrees": [
+        32,
+        32,
+        32,
+        32,
+        32,
+        65,
+        32,
+        32
+      ],
+      "source_degree_bounds": [
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        65,
+        32
+      ],
+      "source_beta_bounds": [
+        32,
+        65,
+        64,
+        64,
+        64,
+        64,
+        96,
+        64
+      ],
+      "endpoint_values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "endpoint_image_dimension": 2,
+      "coefficient_field_order": 16,
+      "witness_polynomial_sha256": "ebefc5072eb4e9e6e3cede1294d5620c50c37004cfe003381e46b2f189423080",
+      "source_mode_permutation": [
+        0,
+        2,
+        1
+      ],
+      "source_multiplicity": 36,
+      "catalogue_index": 2,
+      "minimum_relative_log_cost": 0.8792928987030653,
+      "relative_point": [
+        0.0625,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "minimum_critical_pressure": 1.1255429435286946,
+      "critical_point": [
+        0.125,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        32,
+        64,
+        64,
+        96,
+        65,
+        64,
+        64,
+        64
+      ],
+      "degrees": [
+        32,
+        32,
+        32,
+        65,
+        32,
+        32,
+        32,
+        32
+      ],
+      "source_degree_bounds": [
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        65,
+        32
+      ],
+      "source_beta_bounds": [
+        32,
+        65,
+        64,
+        64,
+        64,
+        64,
+        96,
+        64
+      ],
+      "endpoint_values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "endpoint_image_dimension": 2,
+      "coefficient_field_order": 16,
+      "witness_polynomial_sha256": "ebefc5072eb4e9e6e3cede1294d5620c50c37004cfe003381e46b2f189423080",
+      "source_mode_permutation": [
+        1,
+        2,
+        0
+      ],
+      "source_multiplicity": 36,
+      "catalogue_index": 3,
+      "minimum_relative_log_cost": 0.8091028790571997,
+      "relative_point": [
+        0.0625,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "minimum_critical_pressure": 0.9699330457594275,
+      "critical_point": [
+        0.125,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        32,
+        65,
+        64,
+        97,
+        64,
+        64,
+        96,
+        96
+      ],
+      "degrees": [
+        32,
+        32,
+        32,
+        32,
+        65,
+        32,
+        65,
+        32
+      ],
+      "source_degree_bounds": [
+        32,
+        32,
+        32,
+        32,
+        65,
+        32,
+        65,
+        32
+      ],
+      "source_beta_bounds": [
+        32,
+        65,
+        64,
+        97,
+        64,
+        64,
+        96,
+        96
+      ],
+      "endpoint_values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "endpoint_image_dimension": 2,
+      "coefficient_field_order": 16,
+      "witness_polynomial_sha256": "61b5070518a915cc15e8ad3ce319a3d895b4ba389deb5e44e8f4ed633cc69d0d",
+      "source_mode_permutation": [
+        0,
+        1,
+        2
+      ],
+      "source_multiplicity": 54,
+      "catalogue_index": 160,
+      "minimum_relative_log_cost": 0.9187210575810774,
+      "relative_point": [
+        0.0625,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "minimum_critical_pressure": 1.294158812320699,
+      "critical_point": [
+        0.125,
+        0.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        32,
+        64,
+        65,
+        97,
+        64,
+        96,
+        64,
+        96
+      ],
+      "degrees": [
+        32,
+        32,
+        32,
+        32,
+        65,
+        65,
+        32,
+        32
+      ],
+      "source_degree_bounds": [
+        32,
+        32,
+        32,
+        32,
+        65,
+        32,
+        65,
+        32
+      ],
+      "source_beta_bounds": [
+        32,
+        65,
+        64,
+        97,
+        64,
+        64,
+        96,
+        96
+      ],
+      "endpoint_values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "endpoint_image_dimension": 2,
+      "coefficient_field_order": 16,
+      "witness_polynomial_sha256": "61b5070518a915cc15e8ad3ce319a3d895b4ba389deb5e44e8f4ed633cc69d0d",
+      "source_mode_permutation": [
+        0,
+        2,
+        1
+      ],
+      "source_multiplicity": 54,
+      "catalogue_index": 161,
+      "minimum_relative_log_cost": 0.8458851354074293,
+      "relative_point": [
+        0.0625,
+        1.0,
+        [
+          0,
+          1,
+          8
+        ]
+      ],
+      "minimum_critical_pressure": 1.1244480269641866,
+      "critical_point": [
+        0.125,
+        0.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        32,
+        65,
+        64,
+        64,
+        64,
+        97,
+        96,
+        96
+      ],
+      "degrees": [
+        32,
+        32,
+        65,
+        32,
+        32,
+        32,
+        65,
+        32
+      ],
+      "source_degree_bounds": [
+        32,
+        32,
+        32,
+        32,
+        65,
+        32,
+        65,
+        32
+      ],
+      "source_beta_bounds": [
+        32,
+        65,
+        64,
+        97,
+        64,
+        64,
+        96,
+        96
+      ],
+      "endpoint_values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "endpoint_image_dimension": 2,
+      "coefficient_field_order": 16,
+      "witness_polynomial_sha256": "61b5070518a915cc15e8ad3ce319a3d895b4ba389deb5e44e8f4ed633cc69d0d",
+      "source_mode_permutation": [
+        1,
+        0,
+        2
+      ],
+      "source_multiplicity": 54,
+      "catalogue_index": 162,
+      "minimum_relative_log_cost": 0.9200495999886176,
+      "relative_point": [
+        0.0625,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "minimum_critical_pressure": 1.2942838926474067,
+      "critical_point": [
+        0.125,
+        0.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        32,
+        64,
+        64,
+        96,
+        65,
+        97,
+        64,
+        96
+      ],
+      "degrees": [
+        32,
+        32,
+        65,
+        65,
+        32,
+        32,
+        32,
+        32
+      ],
+      "source_degree_bounds": [
+        32,
+        32,
+        32,
+        32,
+        65,
+        32,
+        65,
+        32
+      ],
+      "source_beta_bounds": [
+        32,
+        65,
+        64,
+        97,
+        64,
+        64,
+        96,
+        96
+      ],
+      "endpoint_values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "endpoint_image_dimension": 2,
+      "coefficient_field_order": 16,
+      "witness_polynomial_sha256": "61b5070518a915cc15e8ad3ce319a3d895b4ba389deb5e44e8f4ed633cc69d0d",
+      "source_mode_permutation": [
+        1,
+        2,
+        0
+      ],
+      "source_multiplicity": 54,
+      "catalogue_index": 163,
+      "minimum_relative_log_cost": 0.777659592622518,
+      "relative_point": [
+        0.0625,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "minimum_critical_pressure": 0.9689607505621574,
+      "critical_point": [
+        0.125,
+        0.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        32,
+        64,
+        65,
+        64,
+        64,
+        96,
+        97,
+        96
+      ],
+      "degrees": [
+        32,
+        65,
+        32,
+        32,
+        32,
+        65,
+        32,
+        32
+      ],
+      "source_degree_bounds": [
+        32,
+        32,
+        32,
+        32,
+        65,
+        32,
+        65,
+        32
+      ],
+      "source_beta_bounds": [
+        32,
+        65,
+        64,
+        97,
+        64,
+        64,
+        96,
+        96
+      ],
+      "endpoint_values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "endpoint_image_dimension": 2,
+      "coefficient_field_order": 16,
+      "witness_polynomial_sha256": "61b5070518a915cc15e8ad3ce319a3d895b4ba389deb5e44e8f4ed633cc69d0d",
+      "source_mode_permutation": [
+        2,
+        0,
+        1
+      ],
+      "source_multiplicity": 54,
+      "catalogue_index": 164,
+      "minimum_relative_log_cost": 0.8481811088461217,
+      "relative_point": [
+        0.0625,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "minimum_critical_pressure": 1.1246455001982536,
+      "critical_point": [
+        0.125,
+        0.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        32,
+        64,
+        64,
+        96,
+        65,
+        64,
+        97,
+        96
+      ],
+      "degrees": [
+        32,
+        65,
+        32,
+        65,
+        32,
+        32,
+        32,
+        32
+      ],
+      "source_degree_bounds": [
+        32,
+        32,
+        32,
+        32,
+        65,
+        32,
+        65,
+        32
+      ],
+      "source_beta_bounds": [
+        32,
+        65,
+        64,
+        97,
+        64,
+        64,
+        96,
+        96
+      ],
+      "endpoint_values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "endpoint_image_dimension": 2,
+      "coefficient_field_order": 16,
+      "witness_polynomial_sha256": "61b5070518a915cc15e8ad3ce319a3d895b4ba389deb5e44e8f4ed633cc69d0d",
+      "source_mode_permutation": [
+        2,
+        1,
+        0
+      ],
+      "source_multiplicity": 54,
+      "catalogue_index": 165,
+      "minimum_relative_log_cost": 0.7786386459753505,
+      "relative_point": [
+        0.0625,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "minimum_critical_pressure": 0.9690354029298067,
+      "critical_point": [
+        0.125,
+        0.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        32,
+        64,
+        65,
+        64,
+        64,
+        96,
+        64,
+        65
+      ],
+      "degrees": [
+        32,
+        64,
+        32,
+        32,
+        64,
+        65,
+        32,
+        32
+      ],
+      "source_degree_bounds": [
+        32,
+        32,
+        64,
+        32,
+        64,
+        32,
+        65,
+        32
+      ],
+      "source_beta_bounds": [
+        32,
+        65,
+        64,
+        64,
+        64,
+        64,
+        96,
+        65
+      ],
+      "endpoint_values": [
+        1,
+        3,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1
+      ],
+      "endpoint_image_dimension": 3,
+      "coefficient_field_order": 16,
+      "witness_polynomial_sha256": "e513d8d010f6b7c5332fc270bc63b4487baca69befc8f3ff5b9456ef0e5413bb",
+      "source_mode_permutation": [
+        0,
+        2,
+        1
+      ],
+      "source_multiplicity": 3,
+      "catalogue_index": 822,
+      "minimum_relative_log_cost": 0.8981482519169646,
+      "relative_point": [
+        0.0625,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "minimum_critical_pressure": 1.1258965953985847,
+      "critical_point": [
+        0.125,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        32,
+        64,
+        64,
+        96,
+        65,
+        64,
+        64,
+        65
+      ],
+      "degrees": [
+        32,
+        64,
+        64,
+        65,
+        32,
+        32,
+        32,
+        32
+      ],
+      "source_degree_bounds": [
+        32,
+        32,
+        64,
+        32,
+        64,
+        32,
+        65,
+        32
+      ],
+      "source_beta_bounds": [
+        32,
+        65,
+        64,
+        64,
+        64,
+        64,
+        96,
+        65
+      ],
+      "endpoint_values": [
+        1,
+        3,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "endpoint_image_dimension": 3,
+      "coefficient_field_order": 16,
+      "witness_polynomial_sha256": "e513d8d010f6b7c5332fc270bc63b4487baca69befc8f3ff5b9456ef0e5413bb",
+      "source_mode_permutation": [
+        1,
+        2,
+        0
+      ],
+      "source_multiplicity": 3,
+      "catalogue_index": 823,
+      "minimum_relative_log_cost": 0.8279383728896406,
+      "relative_point": [
+        0.0625,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "minimum_critical_pressure": 0.9702904329544833,
+      "critical_point": [
+        0.125,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        32,
+        64,
+        65,
+        97,
+        64,
+        96,
+        97,
+        64
+      ],
+      "degrees": [
+        32,
+        65,
+        32,
+        32,
+        65,
+        65,
+        32,
+        32
+      ],
+      "source_degree_bounds": [
+        32,
+        32,
+        65,
+        32,
+        65,
+        32,
+        65,
+        32
+      ],
+      "source_beta_bounds": [
+        32,
+        65,
+        64,
+        97,
+        64,
+        97,
+        96,
+        64
+      ],
+      "endpoint_values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "endpoint_image_dimension": 2,
+      "coefficient_field_order": 16,
+      "witness_polynomial_sha256": "3695a4804278a8f898fb2d2d8ab00c75f6ae9503b49a15ee60b21717f5c85aa8",
+      "source_mode_permutation": [
+        0,
+        2,
+        1
+      ],
+      "source_multiplicity": 24,
+      "catalogue_index": 1647,
+      "minimum_relative_log_cost": 0.8618364139548813,
+      "relative_point": [
+        0.0625,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "minimum_critical_pressure": 1.1250603786916376,
+      "critical_point": [
+        0.125,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        32,
+        64,
+        64,
+        96,
+        65,
+        97,
+        97,
+        64
+      ],
+      "degrees": [
+        32,
+        65,
+        65,
+        65,
+        32,
+        32,
+        32,
+        32
+      ],
+      "source_degree_bounds": [
+        32,
+        32,
+        65,
+        32,
+        65,
+        32,
+        65,
+        32
+      ],
+      "source_beta_bounds": [
+        32,
+        65,
+        64,
+        97,
+        64,
+        97,
+        96,
+        64
+      ],
+      "endpoint_values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "endpoint_image_dimension": 2,
+      "coefficient_field_order": 16,
+      "witness_polynomial_sha256": "3695a4804278a8f898fb2d2d8ab00c75f6ae9503b49a15ee60b21717f5c85aa8",
+      "source_mode_permutation": [
+        1,
+        2,
+        0
+      ],
+      "source_multiplicity": 24,
+      "catalogue_index": 1648,
+      "minimum_relative_log_cost": 0.7943608768751886,
+      "relative_point": [
+        0.0625,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "minimum_critical_pressure": 0.9696119044817184,
+      "critical_point": [
+        0.125,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        32,
+        64,
+        65,
+        64,
+        64,
+        96,
+        64,
+        65
+      ],
+      "degrees": [
+        64,
+        32,
+        32,
+        32,
+        64,
+        65,
+        32,
+        32
+      ],
+      "source_degree_bounds": [
+        64,
+        32,
+        32,
+        32,
+        64,
+        32,
+        65,
+        32
+      ],
+      "source_beta_bounds": [
+        32,
+        65,
+        64,
+        64,
+        64,
+        64,
+        96,
+        65
+      ],
+      "endpoint_values": [
+        3,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1
+      ],
+      "endpoint_image_dimension": 3,
+      "coefficient_field_order": 16,
+      "witness_polynomial_sha256": "87a34ab67f1feca73f247b41c56811751af4c4c36663a1a7781dc60664eb4a63",
+      "source_mode_permutation": [
+        0,
+        2,
+        1
+      ],
+      "source_multiplicity": 9,
+      "catalogue_index": 3351,
+      "minimum_relative_log_cost": 0.8889770321094055,
+      "relative_point": [
+        0.0625,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "minimum_critical_pressure": 1.1257040980877182,
+      "critical_point": [
+        0.125,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        32,
+        64,
+        64,
+        96,
+        65,
+        64,
+        64,
+        65
+      ],
+      "degrees": [
+        64,
+        32,
+        64,
+        65,
+        32,
+        32,
+        32,
+        32
+      ],
+      "source_degree_bounds": [
+        64,
+        32,
+        32,
+        32,
+        64,
+        32,
+        65,
+        32
+      ],
+      "source_beta_bounds": [
+        32,
+        65,
+        64,
+        64,
+        64,
+        64,
+        96,
+        65
+      ],
+      "endpoint_values": [
+        3,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "endpoint_image_dimension": 3,
+      "coefficient_field_order": 16,
+      "witness_polynomial_sha256": "87a34ab67f1feca73f247b41c56811751af4c4c36663a1a7781dc60664eb4a63",
+      "source_mode_permutation": [
+        1,
+        2,
+        0
+      ],
+      "source_multiplicity": 9,
+      "catalogue_index": 3353,
+      "minimum_relative_log_cost": 0.8181211711553864,
+      "relative_point": [
+        0.0625,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "minimum_critical_pressure": 0.970065552496651,
+      "critical_point": [
+        0.125,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        32,
+        64,
+        65,
+        64,
+        64,
+        96,
+        64,
+        65
+      ],
+      "degrees": [
+        64,
+        64,
+        32,
+        32,
+        32,
+        65,
+        32,
+        32
+      ],
+      "source_degree_bounds": [
+        64,
+        32,
+        32,
+        32,
+        64,
+        32,
+        65,
+        32
+      ],
+      "source_beta_bounds": [
+        32,
+        65,
+        64,
+        64,
+        64,
+        64,
+        96,
+        65
+      ],
+      "endpoint_values": [
+        3,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "endpoint_image_dimension": 3,
+      "coefficient_field_order": 16,
+      "witness_polynomial_sha256": "87a34ab67f1feca73f247b41c56811751af4c4c36663a1a7781dc60664eb4a63",
+      "source_mode_permutation": [
+        2,
+        0,
+        1
+      ],
+      "source_multiplicity": 9,
+      "catalogue_index": 3354,
+      "minimum_relative_log_cost": 0.8862893891447214,
+      "relative_point": [
+        0.0625,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "minimum_critical_pressure": 1.1255791228380705,
+      "critical_point": [
+        0.125,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        32,
+        64,
+        64,
+        96,
+        65,
+        64,
+        64,
+        65
+      ],
+      "degrees": [
+        64,
+        64,
+        32,
+        65,
+        32,
+        32,
+        32,
+        32
+      ],
+      "source_degree_bounds": [
+        64,
+        32,
+        32,
+        32,
+        64,
+        32,
+        65,
+        32
+      ],
+      "source_beta_bounds": [
+        32,
+        65,
+        64,
+        64,
+        64,
+        64,
+        96,
+        65
+      ],
+      "endpoint_values": [
+        3,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "endpoint_image_dimension": 3,
+      "coefficient_field_order": 16,
+      "witness_polynomial_sha256": "87a34ab67f1feca73f247b41c56811751af4c4c36663a1a7781dc60664eb4a63",
+      "source_mode_permutation": [
+        2,
+        1,
+        0
+      ],
+      "source_multiplicity": 9,
+      "catalogue_index": 3355,
+      "minimum_relative_log_cost": 0.8167729508966435,
+      "relative_point": [
+        0.0625,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "minimum_critical_pressure": 0.9700016314459585,
+      "critical_point": [
+        0.125,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        32,
+        64,
+        65,
+        64,
+        64,
+        96,
+        64,
+        129
+      ],
+      "degrees": [
+        65,
+        32,
+        32,
+        32,
+        32,
+        65,
+        32,
+        32
+      ],
+      "source_degree_bounds": [
+        65,
+        32,
+        32,
+        32,
+        32,
+        32,
+        65,
+        32
+      ],
+      "source_beta_bounds": [
+        32,
+        65,
+        64,
+        64,
+        64,
+        64,
+        96,
+        129
+      ],
+      "endpoint_values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "endpoint_image_dimension": 2,
+      "coefficient_field_order": 16,
+      "witness_polynomial_sha256": "84ece6f9e3c1bbd49d567ca2c16b16f35ddf7ec615329bb31d216636a95068c8",
+      "source_mode_permutation": [
+        0,
+        2,
+        1
+      ],
+      "source_multiplicity": 128,
+      "catalogue_index": 5734,
+      "minimum_relative_log_cost": 0.8558048047119016,
+      "relative_point": [
+        0.0625,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "minimum_critical_pressure": 1.1248348508293144,
+      "critical_point": [
+        0.125,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        32,
+        64,
+        64,
+        96,
+        65,
+        64,
+        64,
+        129
+      ],
+      "degrees": [
+        65,
+        32,
+        32,
+        65,
+        32,
+        32,
+        32,
+        32
+      ],
+      "source_degree_bounds": [
+        65,
+        32,
+        32,
+        32,
+        32,
+        32,
+        65,
+        32
+      ],
+      "source_beta_bounds": [
+        32,
+        65,
+        64,
+        64,
+        64,
+        64,
+        96,
+        129
+      ],
+      "endpoint_values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "endpoint_image_dimension": 2,
+      "coefficient_field_order": 16,
+      "witness_polynomial_sha256": "84ece6f9e3c1bbd49d567ca2c16b16f35ddf7ec615329bb31d216636a95068c8",
+      "source_mode_permutation": [
+        1,
+        2,
+        0
+      ],
+      "source_multiplicity": 128,
+      "catalogue_index": 5735,
+      "minimum_relative_log_cost": 0.7855746250686195,
+      "relative_point": [
+        0.0625,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "minimum_critical_pressure": 0.9692248831004395,
+      "critical_point": [
+        0.125,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        32,
+        65,
+        64,
+        97,
+        64,
+        97,
+        96,
+        129
+      ],
+      "degrees": [
+        65,
+        32,
+        65,
+        32,
+        65,
+        32,
+        65,
+        32
+      ],
+      "source_degree_bounds": [
+        65,
+        32,
+        65,
+        32,
+        65,
+        32,
+        65,
+        32
+      ],
+      "source_beta_bounds": [
+        32,
+        65,
+        64,
+        97,
+        64,
+        97,
+        96,
+        129
+      ],
+      "endpoint_values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "endpoint_image_dimension": 2,
+      "coefficient_field_order": 16,
+      "witness_polynomial_sha256": "06d9e61a9fe59f96a9fb4d63150e5a1924af4ccbdd3a549835a35420362f6a01",
+      "source_mode_permutation": [
+        0,
+        1,
+        2
+      ],
+      "source_multiplicity": 21,
+      "catalogue_index": 6574,
+      "minimum_relative_log_cost": 0.9078535362373374,
+      "relative_point": [
+        0.0625,
+        -1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "minimum_critical_pressure": 1.2937178442481851,
+      "critical_point": [
+        0.125,
+        0.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        32,
+        64,
+        65,
+        97,
+        64,
+        96,
+        97,
+        129
+      ],
+      "degrees": [
+        65,
+        65,
+        32,
+        32,
+        65,
+        65,
+        32,
+        32
+      ],
+      "source_degree_bounds": [
+        65,
+        32,
+        65,
+        32,
+        65,
+        32,
+        65,
+        32
+      ],
+      "source_beta_bounds": [
+        32,
+        65,
+        64,
+        97,
+        64,
+        97,
+        96,
+        129
+      ],
+      "endpoint_values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "endpoint_image_dimension": 2,
+      "coefficient_field_order": 16,
+      "witness_polynomial_sha256": "06d9e61a9fe59f96a9fb4d63150e5a1924af4ccbdd3a549835a35420362f6a01",
+      "source_mode_permutation": [
+        0,
+        2,
+        1
+      ],
+      "source_multiplicity": 21,
+      "catalogue_index": 6575,
+      "minimum_relative_log_cost": 0.8369989328054648,
+      "relative_point": [
+        0.0625,
+        -1.0,
+        [
+          0,
+          1,
+          17
+        ]
+      ],
+      "minimum_critical_pressure": 1.1241431305300278,
+      "critical_point": [
+        0.125,
+        0.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        32,
+        64,
+        64,
+        96,
+        65,
+        97,
+        97,
+        129
+      ],
+      "degrees": [
+        65,
+        65,
+        65,
+        65,
+        32,
+        32,
+        32,
+        32
+      ],
+      "source_degree_bounds": [
+        65,
+        32,
+        65,
+        32,
+        65,
+        32,
+        65,
+        32
+      ],
+      "source_beta_bounds": [
+        32,
+        65,
+        64,
+        97,
+        64,
+        97,
+        96,
+        129
+      ],
+      "endpoint_values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "endpoint_image_dimension": 2,
+      "coefficient_field_order": 16,
+      "witness_polynomial_sha256": "06d9e61a9fe59f96a9fb4d63150e5a1924af4ccbdd3a549835a35420362f6a01",
+      "source_mode_permutation": [
+        1,
+        2,
+        0
+      ],
+      "source_multiplicity": 21,
+      "catalogue_index": 6576,
+      "minimum_relative_log_cost": 0.7695840500677682,
+      "relative_point": [
+        0.0625,
+        -1.0,
+        [
+          0,
+          1,
+          17
+        ]
+      ],
+      "minimum_critical_pressure": 0.9686974994569004,
+      "critical_point": [
+        0.125,
+        0.0,
+        [
+          0,
+          1,
+          24
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        32,
+        64,
+        65,
+        97,
+        64,
+        64,
+        64,
+        129
+      ],
+      "degrees": [
+        65,
+        32,
+        65,
+        32,
+        65,
+        65,
+        32,
+        32
+      ],
+      "source_degree_bounds": [
+        65,
+        32,
+        65,
+        32,
+        65,
+        65,
+        32,
+        32
+      ],
+      "source_beta_bounds": [
+        32,
+        64,
+        65,
+        97,
+        64,
+        64,
+        64,
+        129
+      ],
+      "endpoint_values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "endpoint_image_dimension": 2,
+      "coefficient_field_order": 16,
+      "witness_polynomial_sha256": "e9f692e1bac3ffcdc155325e0ec95c4e8379821501b1a8d41ab8c9d0f09240b2",
+      "source_mode_permutation": [
+        0,
+        1,
+        2
+      ],
+      "source_multiplicity": 4,
+      "catalogue_index": 6577,
+      "minimum_relative_log_cost": 0.8788939973163838,
+      "relative_point": [
+        0.0625,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "minimum_critical_pressure": 1.1254035559349251,
+      "critical_point": [
+        0.125,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        32,
+        64,
+        64,
+        64,
+        65,
+        97,
+        64,
+        129
+      ],
+      "degrees": [
+        65,
+        32,
+        65,
+        65,
+        65,
+        32,
+        32,
+        32
+      ],
+      "source_degree_bounds": [
+        65,
+        32,
+        65,
+        32,
+        65,
+        65,
+        32,
+        32
+      ],
+      "source_beta_bounds": [
+        32,
+        64,
+        65,
+        97,
+        64,
+        64,
+        64,
+        129
+      ],
+      "endpoint_values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "endpoint_image_dimension": 2,
+      "coefficient_field_order": 16,
+      "witness_polynomial_sha256": "e9f692e1bac3ffcdc155325e0ec95c4e8379821501b1a8d41ab8c9d0f09240b2",
+      "source_mode_permutation": [
+        1,
+        0,
+        2
+      ],
+      "source_multiplicity": 4,
+      "catalogue_index": 6579,
+      "minimum_relative_log_cost": 0.8160167051769918,
+      "relative_point": [
+        0.0625,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "minimum_critical_pressure": 0.9702289300973472,
+      "critical_point": [
+        0.125,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        32,
+        64,
+        64,
+        64,
+        65,
+        64,
+        97,
+        129
+      ],
+      "degrees": [
+        65,
+        65,
+        32,
+        65,
+        65,
+        32,
+        32,
+        32
+      ],
+      "source_degree_bounds": [
+        65,
+        32,
+        65,
+        32,
+        65,
+        65,
+        32,
+        32
+      ],
+      "source_beta_bounds": [
+        32,
+        64,
+        65,
+        97,
+        64,
+        64,
+        64,
+        129
+      ],
+      "endpoint_values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "endpoint_image_dimension": 2,
+      "coefficient_field_order": 16,
+      "witness_polynomial_sha256": "e9f692e1bac3ffcdc155325e0ec95c4e8379821501b1a8d41ab8c9d0f09240b2",
+      "source_mode_permutation": [
+        2,
+        0,
+        1
+      ],
+      "source_multiplicity": 4,
+      "catalogue_index": 6581,
+      "minimum_relative_log_cost": 0.8169603566128822,
+      "relative_point": [
+        0.0625,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "minimum_critical_pressure": 0.970268904102193,
+      "critical_point": [
+        0.125,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        32,
+        64,
+        65,
+        64,
+        64,
+        64,
+        97,
+        129
+      ],
+      "degrees": [
+        65,
+        65,
+        65,
+        32,
+        32,
+        65,
+        32,
+        32
+      ],
+      "source_degree_bounds": [
+        65,
+        32,
+        65,
+        32,
+        65,
+        65,
+        32,
+        32
+      ],
+      "source_beta_bounds": [
+        32,
+        64,
+        65,
+        97,
+        64,
+        64,
+        64,
+        129
+      ],
+      "endpoint_values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "endpoint_image_dimension": 2,
+      "coefficient_field_order": 16,
+      "witness_polynomial_sha256": "e9f692e1bac3ffcdc155325e0ec95c4e8379821501b1a8d41ab8c9d0f09240b2",
+      "source_mode_permutation": [
+        2,
+        1,
+        0
+      ],
+      "source_multiplicity": 4,
+      "catalogue_index": 6582,
+      "minimum_relative_log_cost": 0.8811183323243501,
+      "relative_point": [
+        0.0625,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "minimum_critical_pressure": 1.1255218397487567,
+      "critical_point": [
+        0.125,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        32,
+        64,
+        64,
+        64,
+        65,
+        97,
+        64,
+        129
+      ],
+      "degrees": [
+        65,
+        64,
+        65,
+        65,
+        65,
+        32,
+        32,
+        32
+      ],
+      "source_degree_bounds": [
+        65,
+        64,
+        65,
+        65,
+        65,
+        32,
+        32,
+        32
+      ],
+      "source_beta_bounds": [
+        32,
+        64,
+        64,
+        64,
+        65,
+        97,
+        64,
+        129
+      ],
+      "endpoint_values": [
+        1,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1
+      ],
+      "endpoint_image_dimension": 3,
+      "coefficient_field_order": 16,
+      "witness_polynomial_sha256": "3a6d1d29419a7f1c3a78058c7ca0439cf5a9c80d5057fd81325ba65768445b28",
+      "source_mode_permutation": [
+        0,
+        1,
+        2
+      ],
+      "source_multiplicity": 2,
+      "catalogue_index": 7201,
+      "minimum_relative_log_cost": 0.8259236087949775,
+      "relative_point": [
+        0.0625,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "minimum_critical_pressure": 0.9704538259534452,
+      "critical_point": [
+        0.125,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        32,
+        64,
+        64,
+        64,
+        65,
+        64,
+        97,
+        129
+      ],
+      "degrees": [
+        65,
+        65,
+        64,
+        65,
+        65,
+        32,
+        32,
+        32
+      ],
+      "source_degree_bounds": [
+        65,
+        64,
+        65,
+        65,
+        65,
+        32,
+        32,
+        32
+      ],
+      "source_beta_bounds": [
+        32,
+        64,
+        64,
+        64,
+        65,
+        97,
+        64,
+        129
+      ],
+      "endpoint_values": [
+        1,
+        1,
+        2,
+        1,
+        2,
+        1,
+        1,
+        1
+      ],
+      "endpoint_image_dimension": 3,
+      "coefficient_field_order": 16,
+      "witness_polynomial_sha256": "3a6d1d29419a7f1c3a78058c7ca0439cf5a9c80d5057fd81325ba65768445b28",
+      "source_mode_permutation": [
+        0,
+        2,
+        1
+      ],
+      "source_multiplicity": 2,
+      "catalogue_index": 7202,
+      "minimum_relative_log_cost": 0.8281957957425741,
+      "relative_point": [
+        0.0625,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "minimum_critical_pressure": 0.9705576905626536,
+      "critical_point": [
+        0.125,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        32,
+        64,
+        65,
+        97,
+        64,
+        64,
+        64,
+        129
+      ],
+      "degrees": [
+        65,
+        64,
+        65,
+        32,
+        65,
+        65,
+        32,
+        32
+      ],
+      "source_degree_bounds": [
+        65,
+        64,
+        65,
+        65,
+        65,
+        32,
+        32,
+        32
+      ],
+      "source_beta_bounds": [
+        32,
+        64,
+        64,
+        64,
+        65,
+        97,
+        64,
+        129
+      ],
+      "endpoint_values": [
+        1,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "endpoint_image_dimension": 3,
+      "coefficient_field_order": 16,
+      "witness_polynomial_sha256": "3a6d1d29419a7f1c3a78058c7ca0439cf5a9c80d5057fd81325ba65768445b28",
+      "source_mode_permutation": [
+        1,
+        0,
+        2
+      ],
+      "source_multiplicity": 2,
+      "catalogue_index": 7203,
+      "minimum_relative_log_cost": 0.888171816584876,
+      "relative_point": [
+        0.0625,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "minimum_critical_pressure": 1.1255960954237754,
+      "critical_point": [
+        0.125,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "beta_orders": [
+        32,
+        64,
+        65,
+        64,
+        64,
+        64,
+        97,
+        129
+      ],
+      "degrees": [
+        65,
+        65,
+        65,
+        32,
+        64,
+        65,
+        32,
+        32
+      ],
+      "source_degree_bounds": [
+        65,
+        64,
+        65,
+        65,
+        65,
+        32,
+        32,
+        32
+      ],
+      "source_beta_bounds": [
+        32,
+        64,
+        64,
+        64,
+        65,
+        97,
+        64,
+        129
+      ],
+      "endpoint_values": [
+        1,
+        1,
+        2,
+        1,
+        2,
+        1,
+        1,
+        1
+      ],
+      "endpoint_image_dimension": 3,
+      "coefficient_field_order": 16,
+      "witness_polynomial_sha256": "3a6d1d29419a7f1c3a78058c7ca0439cf5a9c80d5057fd81325ba65768445b28",
+      "source_mode_permutation": [
+        1,
+        2,
+        0
+      ],
+      "source_multiplicity": 2,
+      "catalogue_index": 7204,
+      "minimum_relative_log_cost": 0.8930513313628623,
+      "relative_point": [
+        0.0625,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "minimum_critical_pressure": 1.1258393147947245,
+      "critical_point": [
+        0.125,
+        1.0,
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    }
+  ],
+  "elapsed_seconds": 18.950907772999926,
+  "total_elapsed_seconds": 19.195961427000043
+}

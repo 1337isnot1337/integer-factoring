@@ -14,7 +14,7 @@ from pathlib import Path
 import time
 
 from check_rectangular_defect_core_basis import core_basis_data,data_for
-from rectangular_defect_profiles import Program,Expr,library,lcm2,quotient2,MASK,precision_sizes
+from rectangular_defect_profiles import Program,Expr,library,lcm2,quotient2,MASK,precision_sizes,retained_known_below
 from native_matrix_smith_f4 import MatrixOracle
 
 def coordinate_matrix(data,alpha=1,beta=2,quartic_terms=None,repair_spec=None,profile_precision=None,input_spec=None,repair_kind='partial',identity_spec=None,extra_quartics=None,full_alphabet_gamma=None,extra_monomials=None,residual_monomials=None):
@@ -90,7 +90,7 @@ def coordinate_matrix(data,alpha=1,beta=2,quartic_terms=None,repair_spec=None,pr
         for j in kept_columns:
             index=i*n+j;row.append(tuple(sum(int(output[(2*index+plane)*output_words+w])<<(64*w) for w in range(output_words)) for plane in range(2)));shift_row.append(int(shifts[index]))
         matrix.append(row);shift_matrix.append(shift_row)
-    metadata={'place':data['place'],'M':data['M'],'matrix_order':len(matrix),'padded_matrix_order':n,'registers':len(program.instructions),'coefficient_count':len(program.coefficients),'unit_denominator_degree':denominator.bit_length()-1,'unit_denominator_hex':hex(denominator),'program_degree_bound':bound,'maximum_normalized_degree':int(meta[3]),'exact_polynomial_matrix':bound<builder and int(meta[3])<window,'minimum_valuation':int(meta[0]),'known_below':int(meta[1]),'builder_precision':builder,'profile_precision':window,'matrix_seconds':time.monotonic()-start,'row_core_states':[row_states[i] for i in kept_rows],'column_core_states':[column_states[j] for j in kept_columns],'row_charges':[left['coordinate_row_charges'][i] for i in kept_rows],'column_charges':[right['coordinate_column_charges'][j] for j in kept_columns]}
+    metadata={'place':data['place'],'M':data['M'],'matrix_order':len(matrix),'padded_matrix_order':n,'registers':len(program.instructions),'coefficient_count':len(program.coefficients),'unit_denominator_degree':denominator.bit_length()-1,'unit_denominator_hex':hex(denominator),'program_degree_bound':bound,'maximum_normalized_degree':int(meta[3]),'exact_polynomial_matrix':bound<builder and int(meta[3])<window,'minimum_valuation':int(meta[0]),'known_below':retained_known_below(meta,window),'builder_known_below':int(meta[1]),'builder_precision':builder,'profile_precision':window,'matrix_seconds':time.monotonic()-start,'row_core_states':[row_states[i] for i in kept_rows],'column_core_states':[column_states[j] for j in kept_columns],'row_charges':[left['coordinate_row_charges'][i] for i in kept_rows],'column_charges':[right['coordinate_column_charges'][j] for j in kept_columns]}
     metadata['row_core_letters']=left['core_letters'];metadata['column_core_letters']=right['core_letters'];metadata['full_core']=bool(data.get('full_core',False))
     metadata['full_alphabet_gamma']=full_alphabet_gamma
     if residual_monomials is not None:metadata['residual_monomials']=residual_monomials

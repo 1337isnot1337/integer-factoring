@@ -1,0 +1,300 @@
+{
+  "status": "Exact repaired F4 endpoints and both physical profiles; no pressure claim.",
+  "binary_regressions": {
+    "complete_F2_profile_regressions": 12
+  },
+  "original_tensor_controls": {
+    "raw_and_repaired_endpoint_equalities": 279552,
+    "full_physical_both_cut_cases": [
+      {
+        "n": 2,
+        "ramification": 1,
+        "charge": 0,
+        "modes": 2,
+        "geometry": "initial",
+        "clearing": 0,
+        "filter_coefficients": [
+          [
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              2
+            ]
+          ],
+          [
+            [
+              1,
+              3
+            ]
+          ],
+          [
+            [
+              0,
+              1
+            ]
+          ]
+        ],
+        "endpoint_values": [
+          1,
+          2,
+          3,
+          1
+        ],
+        "full_physical_matrix_order": 16,
+        "maximum_exact_jet_precision": 512
+      },
+      {
+        "n": 2,
+        "ramification": 3,
+        "charge": 2,
+        "modes": 2,
+        "geometry": "terminal",
+        "clearing": 0,
+        "filter_coefficients": [
+          [
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              2
+            ]
+          ],
+          [
+            [
+              1,
+              3
+            ]
+          ],
+          [
+            [
+              0,
+              1
+            ]
+          ]
+        ],
+        "endpoint_values": [
+          1,
+          2,
+          3,
+          1
+        ],
+        "full_physical_matrix_order": 16,
+        "maximum_exact_jet_precision": 512
+      },
+      {
+        "n": 3,
+        "ramification": 1,
+        "charge": -1,
+        "modes": 2,
+        "geometry": "initial",
+        "clearing": 0,
+        "filter_coefficients": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              2
+            ]
+          ],
+          [
+            [
+              1,
+              3
+            ]
+          ],
+          [
+            [
+              0,
+              1
+            ]
+          ]
+        ],
+        "endpoint_values": [
+          3,
+          2,
+          3,
+          1
+        ],
+        "full_physical_matrix_order": 64,
+        "maximum_exact_jet_precision": 512
+      },
+      {
+        "n": 3,
+        "ramification": 1,
+        "charge": 1,
+        "modes": 3,
+        "geometry": "initial",
+        "clearing": 3,
+        "filter_coefficients": [
+          [
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              2
+            ]
+          ],
+          [
+            [
+              1,
+              3
+            ]
+          ],
+          [
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              2
+            ]
+          ],
+          [
+            [
+              0,
+              3
+            ]
+          ],
+          [
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              -3,
+              2
+            ]
+          ]
+        ],
+        "endpoint_values": [
+          1,
+          2,
+          3,
+          1,
+          2,
+          3,
+          1,
+          2
+        ],
+        "full_physical_matrix_order": 64,
+        "maximum_exact_jet_precision": 512
+      },
+      {
+        "n": 4,
+        "ramification": 1,
+        "charge": 2,
+        "modes": 2,
+        "geometry": "mixed",
+        "clearing": 0,
+        "filter_coefficients": [
+          [
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              2
+            ]
+          ],
+          [
+            [
+              1,
+              3
+            ]
+          ],
+          [
+            [
+              0,
+              1
+            ]
+          ]
+        ],
+        "endpoint_values": [
+          1,
+          2,
+          3,
+          1
+        ],
+        "full_physical_matrix_order": 256,
+        "maximum_exact_jet_precision": 512
+      },
+      {
+        "n": 4,
+        "ramification": 1,
+        "charge": -1,
+        "modes": 2,
+        "geometry": "terminal",
+        "clearing": 0,
+        "filter_coefficients": [
+          [
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              2
+            ]
+          ],
+          [
+            [
+              1,
+              3
+            ]
+          ],
+          [
+            [
+              0,
+              1
+            ]
+          ]
+        ],
+        "endpoint_values": [
+          1,
+          2,
+          3,
+          1
+        ],
+        "full_physical_matrix_order": 256,
+        "maximum_exact_jet_precision": 512
+      }
+    ],
+    "conjugate_field_profile_controls": 6
+  },
+  "native_field_controls": {
+    "late_second_plane_cancellation_controls": 2,
+    "unsupported_complete_source_rejected": true
+  }
+}

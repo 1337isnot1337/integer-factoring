@@ -22,6 +22,12 @@ from one deformed contraction. No improved factoring exponent is
 claimed. The canonical scalar collisions in
 [the decoder note](canonical-packet-decoder-frontier.md) remain valid.
 
+The separate [arithmetic Cauchy theorem](arithmetic-cauchy-factorial-law.md)
+proves every invariant factor of the physical squared Cauchy matrix at
+arbitrary sizes. That smaller matrix has a different profile from the
+full Boolean substitution operator studied here; its theorem does not
+remove this operator's grouped-rank cost.
+
 ## 1. Definitions and coefficient rings
 
 Let `L=2^a`, `a>=1`, and use the Cauchy kernel from

@@ -1,0 +1,14 @@
+{
+  "status": "Exact continuous-charge folding identities and analytic comparison hypotheses; finite comparisons do not prove an unrecorded all-charge floor.",
+  "exact_formal_pressure_identities": 2510,
+  "exact_monotonicity_and_concavity_relations": 76890,
+  "exact_C9_above_two": true,
+  "exact_quadratic_field_tail_prefix_inequalities": 1240,
+  "independent_full_pressure_comparisons": 192,
+  "maximum_floating_identity_error": 1.9984014443252818e-13,
+  "new_binary_floor": "Every integer n\u22653, t>0, and real |J|\u22642n\u22122\u22122sqrt(2).",
+  "folding_corollary": "Every integer n\u22659, t>0, and real |J|\u22642n\u221216.",
+  "source_sha256": {
+    "tools/check_folded_charged_gaussian_floor.py": "a6cca70c6e1f43c01e89e1005e892805b9173ca5954a7cb3e4b6bf3af1bb23dc"
+  }
+}

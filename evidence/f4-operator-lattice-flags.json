@@ -1,0 +1,62 @@
+{
+  "status": "Exact scalar-source and nonbinary operator-flag controls; no pressure claim.",
+  "scalar_Pascal_cases": [
+    {
+      "n": 2,
+      "ramification": 1,
+      "modes": 2,
+      "geometry": "mixed",
+      "common_polynomial_unit_degree": 6
+    },
+    {
+      "n": 4,
+      "ramification": 1,
+      "modes": 2,
+      "geometry": "initial",
+      "common_polynomial_unit_degree": 6
+    },
+    {
+      "n": 8,
+      "ramification": 3,
+      "modes": 2,
+      "geometry": "terminal",
+      "common_polynomial_unit_degree": 42
+    },
+    {
+      "n": 4,
+      "ramification": 1,
+      "modes": 3,
+      "geometry": "initial",
+      "common_polynomial_unit_degree": 18
+    },
+    {
+      "n": 8,
+      "ramification": 1,
+      "modes": 3,
+      "geometry": "terminal",
+      "common_polynomial_unit_degree": 42
+    },
+    {
+      "n": 32,
+      "ramification": 1,
+      "modes": 3,
+      "geometry": "split:1:2",
+      "common_polynomial_unit_degree": 465
+    },
+    {
+      "n": 32,
+      "ramification": 3,
+      "modes": 3,
+      "geometry": "split:2:1",
+      "common_polynomial_unit_degree": 1395
+    }
+  ],
+  "exact_common_unit_source_entries": 213,
+  "complete_F4_constant_tables": 4096,
+  "admissible_filtered_endpoint_kernels": 324,
+  "complete_F4_two_dimensional_flags": 5,
+  "literal_constant_matrix_calculations": 1620,
+  "F4_and_F16_feasibility_comparisons": 420,
+  "feasible_decisions": 90,
+  "independent_literal_witness_checks": 90
+}

@@ -1,0 +1,87 @@
+{
+  "status": "All four complete driver runs reproduce all saved JSON fields exactly, excluding elapsed seconds.",
+  "scope": "Present-source replay of prescribed greedy paths; no claim of exhaustive coefficient-space search or historical source hashes.",
+  "runs": [
+    {
+      "run": 0,
+      "selection": [
+        7,
+        18
+      ],
+      "powers": [
+        -1,
+        0,
+        1
+      ],
+      "infinity_flag": "identity",
+      "completed_paths": 72,
+      "affine_queries": 523,
+      "profile_records": 3,
+      "exact_match_excluding_elapsed_seconds": true
+    },
+    {
+      "run": 1,
+      "selection": [
+        0,
+        13
+      ],
+      "powers": [
+        -1,
+        0,
+        1
+      ],
+      "infinity_flag": "identity",
+      "completed_paths": 72,
+      "affine_queries": 523,
+      "profile_records": 3,
+      "exact_match_excluding_elapsed_seconds": true
+    },
+    {
+      "run": 2,
+      "selection": [
+        0,
+        13
+      ],
+      "powers": [
+        -27,
+        -1,
+        0,
+        1,
+        27
+      ],
+      "infinity_flag": "identity",
+      "completed_paths": 90,
+      "affine_queries": 2608,
+      "profile_records": 13,
+      "exact_match_excluding_elapsed_seconds": true
+    },
+    {
+      "run": 3,
+      "selection": [
+        0,
+        13
+      ],
+      "powers": [
+        -27,
+        -1,
+        0,
+        1,
+        27
+      ],
+      "infinity_flag": "pascal",
+      "completed_paths": 8,
+      "affine_queries": 1331,
+      "profile_records": 8,
+      "exact_match_excluding_elapsed_seconds": true
+    }
+  ],
+  "total_paths": 242,
+  "total_queries": 4985,
+  "profile_records_counted_per_run": 27,
+  "source_sha256": {
+    "tools/search_prime_deficit_affine_operators.py": "893a0147ed44fcaa67ed2b2c61252968d6a937ecdad6474f4906461d0547d962",
+    "tools/prime_deficit_operator_synthesis.py": "6ec3fd2ee84a1b7d5ad209238e5acd37909060f195c9d40c89a995b9fc17cafc",
+    "tools/check_prime_deficit_operator_synthesis.py": "ddd7ea76d91bc760c5d21894ddb65068bda2f1efb5468ddf1049af34839c69ed"
+  },
+  "saved_search_sha256": "4a07bc72c4292634b9ae9c4a6fea18bb35f05ecbb1ee413897511c9137d96d68"
+}

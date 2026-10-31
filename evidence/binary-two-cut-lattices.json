@@ -1,0 +1,60 @@
+{
+  "status": "All independent exact controls passed; no pressure claim.",
+  "binary_complete_flags": 315,
+  "F4_complete_flags": 8925,
+  "distinct_F4_tail_space_chains": 8925,
+  "complete_weighted_cut_profiles_by_all_minors": 246,
+  "literal_endpoint_coefficients": 1968,
+  "base_lattice_controls": [
+    {
+      "degree": 5,
+      "variables": 80,
+      "base_lattice_dimension": 1,
+      "all_F4_affine_line_assignments_replayed": 4
+    },
+    {
+      "degree": 8,
+      "variables": 128,
+      "base_lattice_dimension": 1,
+      "all_F4_affine_line_assignments_replayed": 4
+    },
+    {
+      "degree": 12,
+      "variables": 192,
+      "base_lattice_dimension": 1,
+      "all_F4_affine_line_assignments_replayed": 4
+    }
+  ],
+  "colored_free_coefficient_tables": 64,
+  "Laurent_clearing_controls": [
+    {
+      "degree_after_clearing": 9,
+      "common_monomial_clearing": 1,
+      "base_lattice_dimension": 1,
+      "all_F4_affine_line_assignments_replayed": 4,
+      "complete_witness_replays": 5
+    },
+    {
+      "degree_after_clearing": 12,
+      "common_monomial_clearing": 4,
+      "base_lattice_dimension": 1,
+      "all_F4_affine_line_assignments_replayed": 4,
+      "complete_witness_replays": 5
+    },
+    {
+      "degree_after_clearing": 16,
+      "common_monomial_clearing": 7,
+      "base_lattice_dimension": 1,
+      "all_F4_affine_line_assignments_replayed": 4,
+      "complete_witness_replays": 5
+    }
+  ],
+  "nonbinary_flag_witnesses": 12,
+  "common_minimum_pruning_pair_comparisons": 24,
+  "source_sha256": {
+    "search_binary_two_cut_lattices.py": "f61fce28e203fa9804617ec559636e44eccaf1b9a1cac68770761d0c2ee30f05",
+    "search_binary_flag_lattices.py": "d4c83d3f6ff1182a29a4180257d6ab5f8c9462b16a2745a4cb4f38f273cb42b4",
+    "search_binary_f4_flags.py": "10e8c6485cb71605dfe29b3abea330b649441303fa0af7387d6efaf45b0fccb5",
+    "check_binary_two_cut_lattices.py": "07f40447b47a0810ad5f225cbcb436d9c01cfb20e374de483a9ce73a8138e891"
+  }
+}

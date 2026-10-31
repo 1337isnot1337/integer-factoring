@@ -1,0 +1,54 @@
+{
+  "status": "Complete saved-point replay, not a new optimization or global minimum certificate.",
+  "chain_rule_controls": {
+    "comparisons": 272,
+    "maximum_absolute_error": 2.3809691718224e-10
+  },
+  "records": [
+    {
+      "file": "reflection-hot-leg-bulk-search-M64.json",
+      "sha256": "41484e28f0d401bdbde78d5b7b484b7658f545785adbbc29719d2ca58a7ff211",
+      "candidates": 25,
+      "starts": 100,
+      "original_queries": 8009,
+      "replayed_saved_points": 25,
+      "maximum_pressure_error": 0.0
+    },
+    {
+      "file": "reflection-hot-leg-bulk-search-M128.json",
+      "sha256": "0d859961598edfb474cd3c97cd42e983b5137885ca7ca53173522fd5e59e086c",
+      "candidates": 25,
+      "starts": 100,
+      "original_queries": 8072,
+      "replayed_saved_points": 25,
+      "maximum_pressure_error": 0.0
+    },
+    {
+      "file": "reflection-hot-all-bulk-search-M64.json",
+      "sha256": "9a3a95cce3cf4b516f6d33004c0c41da56a782d97aa13107b137cf034009e9a2",
+      "candidates": 13,
+      "starts": 416,
+      "original_queries": 25844,
+      "replayed_saved_points": 221,
+      "maximum_pressure_error": 0.0
+    },
+    {
+      "file": "reflection-hot-all-bulk-search-M128.json",
+      "sha256": "b29d4f096e24543a8ab63de985aaef6d9c5b13828ac3bad0817e506d7bfbdec4",
+      "candidates": 13,
+      "starts": 416,
+      "original_queries": 25917,
+      "replayed_saved_points": 221,
+      "maximum_pressure_error": 0.0
+    },
+    {
+      "file": "reflection-hot-scaled-bulk-search-M128.json",
+      "sha256": "828efeab80f2a68e4245e4cfaddf773698ad698b6e89ff916cdcc7a64cb0c370",
+      "candidates": 3,
+      "starts": 144,
+      "original_queries": 11954,
+      "replayed_saved_points": 51,
+      "maximum_pressure_error": 0.0
+    }
+  ]
+}

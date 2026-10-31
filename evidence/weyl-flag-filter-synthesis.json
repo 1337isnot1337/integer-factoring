@@ -1,0 +1,885 @@
+{
+  "status": "All exact flag/profile controls passed.",
+  "full_flag_counts": {
+    "dimension2": 5,
+    "dimension3": 105
+  },
+  "known_Smith_matrices_over_F16": 36,
+  "late_coefficient_degree": 600,
+  "independent_native_F4_profiles": 30,
+  "old_and_new_identity_lattice_comparisons": 160,
+  "polynomial_flag_witnesses": [
+    {
+      "n": 3,
+      "ramification": 1,
+      "geometry": "initial",
+      "modes": 2,
+      "flags": [
+        0,
+        4,
+        0
+      ],
+      "degree_bounds": [
+        4,
+        4,
+        1,
+        1
+      ],
+      "row_targets": [
+        7,
+        5,
+        4,
+        2
+      ],
+      "endpoint_values": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "actual_degrees": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "verification": {
+        "transformed_entries": 6,
+        "exact_reduced_orders": [
+          7,
+          4,
+          5,
+          2
+        ]
+      }
+    },
+    {
+      "n": 3,
+      "ramification": 1,
+      "geometry": "initial",
+      "modes": 2,
+      "flags": [
+        0,
+        4,
+        0
+      ],
+      "degree_bounds": [
+        1,
+        3,
+        4,
+        0
+      ],
+      "row_targets": [
+        2,
+        3,
+        4,
+        1
+      ],
+      "endpoint_values": [
+        1,
+        2,
+        3,
+        1
+      ],
+      "actual_degrees": [
+        0,
+        2,
+        3,
+        0
+      ],
+      "verification": {
+        "transformed_entries": 6,
+        "exact_reduced_orders": [
+          2,
+          3,
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "n": 3,
+      "ramification": 1,
+      "geometry": "initial",
+      "modes": 2,
+      "flags": [
+        0,
+        0,
+        0
+      ],
+      "degree_bounds": [
+        4,
+        0,
+        4,
+        1
+      ],
+      "row_targets": [
+        8,
+        3,
+        1,
+        1
+      ],
+      "endpoint_values": [
+        3,
+        1,
+        2,
+        1
+      ],
+      "actual_degrees": [
+        3,
+        0,
+        4,
+        0
+      ],
+      "verification": {
+        "transformed_entries": 6,
+        "exact_reduced_orders": [
+          8,
+          1,
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "n": 3,
+      "ramification": 1,
+      "geometry": "initial",
+      "modes": 2,
+      "flags": [
+        0,
+        0,
+        0
+      ],
+      "degree_bounds": [
+        0,
+        4,
+        4,
+        0
+      ],
+      "row_targets": [
+        8,
+        3,
+        0,
+        1
+      ],
+      "endpoint_values": [
+        1,
+        3,
+        3,
+        2
+      ],
+      "actual_degrees": [
+        0,
+        4,
+        4,
+        0
+      ],
+      "verification": {
+        "transformed_entries": 6,
+        "exact_reduced_orders": [
+          8,
+          0,
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "n": 4,
+      "ramification": 3,
+      "geometry": "mixed",
+      "modes": 2,
+      "flags": [
+        0,
+        3,
+        0
+      ],
+      "degree_bounds": [
+        4,
+        0,
+        4,
+        0
+      ],
+      "row_targets": [
+        24,
+        21,
+        12,
+        9
+      ],
+      "endpoint_values": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "actual_degrees": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "verification": {
+        "transformed_entries": 5,
+        "exact_reduced_orders": [
+          24,
+          12,
+          21,
+          9
+        ]
+      }
+    },
+    {
+      "n": 4,
+      "ramification": 3,
+      "geometry": "mixed",
+      "modes": 2,
+      "flags": [
+        0,
+        1,
+        0
+      ],
+      "degree_bounds": [
+        4,
+        4,
+        0,
+        5
+      ],
+      "row_targets": [
+        5,
+        13,
+        0,
+        14
+      ],
+      "endpoint_values": [
+        3,
+        2,
+        1,
+        1
+      ],
+      "actual_degrees": [
+        4,
+        4,
+        0,
+        5
+      ],
+      "verification": {
+        "transformed_entries": 4,
+        "exact_reduced_orders": [
+          5,
+          0,
+          13,
+          14
+        ]
+      }
+    },
+    {
+      "n": 4,
+      "ramification": 3,
+      "geometry": "mixed",
+      "modes": 2,
+      "flags": [
+        0,
+        0,
+        0
+      ],
+      "degree_bounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "row_targets": [
+        24,
+        12,
+        21,
+        9
+      ],
+      "endpoint_values": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "actual_degrees": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "verification": {
+        "transformed_entries": 4,
+        "exact_reduced_orders": [
+          24,
+          12,
+          21,
+          9
+        ]
+      }
+    },
+    {
+      "n": 4,
+      "ramification": 3,
+      "geometry": "mixed",
+      "modes": 2,
+      "flags": [
+        0,
+        0,
+        0
+      ],
+      "degree_bounds": [
+        0,
+        5,
+        0,
+        0
+      ],
+      "row_targets": [
+        24,
+        12,
+        21,
+        9
+      ],
+      "endpoint_values": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "actual_degrees": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "verification": {
+        "transformed_entries": 4,
+        "exact_reduced_orders": [
+          24,
+          12,
+          21,
+          9
+        ]
+      }
+    },
+    {
+      "n": 4,
+      "ramification": 1,
+      "geometry": "initial",
+      "modes": 3,
+      "flags": [
+        0,
+        63,
+        84,
+        0
+      ],
+      "degree_bounds": [
+        1,
+        4,
+        5,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "row_targets": [
+        4,
+        11,
+        10,
+        4,
+        2,
+        3,
+        2,
+        4
+      ],
+      "endpoint_values": [
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        2,
+        2
+      ],
+      "actual_degrees": [
+        1,
+        1,
+        5,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "verification": {
+        "transformed_entries": 13,
+        "exact_reduced_orders": [
+          4,
+          4,
+          10,
+          11,
+          2,
+          3,
+          6,
+          4
+        ]
+      }
+    },
+    {
+      "n": 4,
+      "ramification": 1,
+      "geometry": "initial",
+      "modes": 3,
+      "flags": [
+        0,
+        76,
+        86,
+        0
+      ],
+      "degree_bounds": [
+        4,
+        0,
+        1,
+        4,
+        1,
+        0,
+        5,
+        1
+      ],
+      "row_targets": [
+        13,
+        10,
+        2,
+        2,
+        6,
+        7,
+        6,
+        3
+      ],
+      "endpoint_values": [
+        2,
+        1,
+        3,
+        1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "actual_degrees": [
+        4,
+        0,
+        1,
+        0,
+        0,
+        0,
+        5,
+        0
+      ],
+      "verification": {
+        "transformed_entries": 11,
+        "exact_reduced_orders": [
+          13,
+          2,
+          4,
+          10,
+          6,
+          6,
+          7,
+          3
+        ]
+      }
+    },
+    {
+      "n": 4,
+      "ramification": 1,
+      "geometry": "initial",
+      "modes": 3,
+      "flags": [
+        0,
+        80,
+        81,
+        0
+      ],
+      "degree_bounds": [
+        5,
+        1,
+        4,
+        0,
+        5,
+        1,
+        5,
+        1
+      ],
+      "row_targets": [
+        13,
+        6,
+        5,
+        4,
+        3,
+        7,
+        3,
+        4
+      ],
+      "endpoint_values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "actual_degrees": [
+        5,
+        0,
+        0,
+        0,
+        5,
+        1,
+        1,
+        1
+      ],
+      "verification": {
+        "transformed_entries": 13,
+        "exact_reduced_orders": [
+          13,
+          4,
+          5,
+          6,
+          3,
+          6,
+          7,
+          4
+        ]
+      }
+    },
+    {
+      "n": 4,
+      "ramification": 1,
+      "geometry": "initial",
+      "modes": 3,
+      "flags": [
+        0,
+        18,
+        98,
+        0
+      ],
+      "degree_bounds": [
+        0,
+        5,
+        4,
+        4,
+        5,
+        5,
+        0,
+        0
+      ],
+      "row_targets": [
+        12,
+        10,
+        8,
+        9,
+        6,
+        7,
+        5,
+        3
+      ],
+      "endpoint_values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "actual_degrees": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "verification": {
+        "transformed_entries": 12,
+        "exact_reduced_orders": [
+          12,
+          8,
+          9,
+          10,
+          5,
+          6,
+          7,
+          3
+        ]
+      }
+    },
+    {
+      "n": 4,
+      "ramification": 1,
+      "geometry": "split:1:2",
+      "modes": 3,
+      "flags": [
+        0,
+        89,
+        66,
+        0
+      ],
+      "degree_bounds": [
+        0,
+        4,
+        1,
+        0,
+        1,
+        0,
+        0,
+        4
+      ],
+      "row_targets": [
+        12,
+        11,
+        10,
+        8,
+        7,
+        9,
+        6,
+        5
+      ],
+      "endpoint_values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "actual_degrees": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "verification": {
+        "transformed_entries": 11,
+        "exact_reduced_orders": [
+          12,
+          8,
+          10,
+          11,
+          6,
+          7,
+          9,
+          5
+        ]
+      }
+    },
+    {
+      "n": 4,
+      "ramification": 1,
+      "geometry": "split:1:2",
+      "modes": 3,
+      "flags": [
+        0,
+        16,
+        88,
+        0
+      ],
+      "degree_bounds": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        5,
+        5,
+        5
+      ],
+      "row_targets": [
+        5,
+        5,
+        7,
+        6,
+        9,
+        9,
+        11,
+        5
+      ],
+      "endpoint_values": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        2,
+        2,
+        1
+      ],
+      "actual_degrees": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        5,
+        5,
+        5
+      ],
+      "verification": {
+        "transformed_entries": 11,
+        "exact_reduced_orders": [
+          5,
+          5,
+          6,
+          7,
+          9,
+          11,
+          12,
+          5
+        ]
+      }
+    },
+    {
+      "n": 4,
+      "ramification": 1,
+      "geometry": "split:1:2",
+      "modes": 3,
+      "flags": [
+        0,
+        59,
+        52,
+        0
+      ],
+      "degree_bounds": [
+        5,
+        1,
+        5,
+        5,
+        0,
+        0,
+        4,
+        4
+      ],
+      "row_targets": [
+        8,
+        15,
+        14,
+        12,
+        3,
+        5,
+        2,
+        9
+      ],
+      "endpoint_values": [
+        1,
+        2,
+        2,
+        3,
+        2,
+        1,
+        3,
+        2
+      ],
+      "actual_degrees": [
+        0,
+        0,
+        4,
+        0,
+        0,
+        0,
+        0,
+        4
+      ],
+      "verification": {
+        "transformed_entries": 13,
+        "exact_reduced_orders": [
+          8,
+          12,
+          14,
+          15,
+          2,
+          3,
+          5,
+          9
+        ]
+      }
+    },
+    {
+      "n": 4,
+      "ramification": 1,
+      "geometry": "split:1:2",
+      "modes": 3,
+      "flags": [
+        0,
+        87,
+        54,
+        0
+      ],
+      "degree_bounds": [
+        0,
+        4,
+        5,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "row_targets": [
+        12,
+        11,
+        10,
+        8,
+        9,
+        7,
+        6,
+        5
+      ],
+      "endpoint_values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "actual_degrees": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "verification": {
+        "transformed_entries": 13,
+        "exact_reduced_orders": [
+          12,
+          8,
+          10,
+          11,
+          6,
+          7,
+          9,
+          5
+        ]
+      }
+    }
+  ]
+}

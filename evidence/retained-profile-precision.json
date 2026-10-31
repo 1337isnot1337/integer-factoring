@@ -1,0 +1,37 @@
+{
+  "status": "retained coefficient precision is separate from builder precision",
+  "source_polynomial_degree": 300,
+  "short_output_window": 128,
+  "short_builder_precision": 1024,
+  "retained_known_below": 128,
+  "builder_known_below": 1024,
+  "exact_profile": [
+    0.0,
+    0.0,
+    150.0,
+    250.0
+  ],
+  "padded_truncated_profile": [
+    0.0,
+    0.0,
+    200.0,
+    200.0
+  ],
+  "same_window_native_rejection": true,
+  "old_common_bound_would_accept_padding": true,
+  "new_common_bound_rejects_padding": true,
+  "weighted_padded_profile": [
+    -0.25,
+    -0.25,
+    99.75,
+    99.75
+  ],
+  "weighted_retained_cutoff": 63.75,
+  "weighted_exact_replay": [
+    -0.25,
+    -0.25,
+    74.75,
+    124.75
+  ],
+  "scope": "metadata hardening for truncated arrays; no failure reproduced in the standard same-window native path"
+}
