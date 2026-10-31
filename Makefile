@@ -431,3 +431,7 @@ verify-reflection-leg-bulks:
 verify-reflection-all-bulks:
 	python3 tools/check_reflection_hot_all_bulk_gauges.py --extended
 	python3 tools/check_reflection_hot_state_gauges.py --extended
+
+.PHONY: verify-near-power-operators
+verify-near-power-operators:
+	python3 tools/check_near_power_terminal_operators.py --extended

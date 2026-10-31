@@ -14,6 +14,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Identity operators below a power of two](near-power-identity-operator-reduction.md): weighted interpolation retains one extra auxiliary mode, exact Gaussian multiplicity division enables a small Weyl evaluator, and the contraction has an explicit scalar-plus-rank-one formula.
+
 - [All physical-leg bulk orderings](reflection-hot-all-bulk-gauges.md): two explicit regular cross pivots cover every nonnegative bulk ordering with the same bounded support, complete coefficient sources, and independent original-tensor controls.
 
 - [Separate physical-leg bulk heights](reflection-hot-leg-bulk-gauges.md): explicit ordering and hot-cold inequalities preserve a bounded reflection core, with distinct physical type costs and exact original-tensor controls.

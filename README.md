@@ -211,6 +211,16 @@ quadruples at interval 32, with no numerical gain. The windows overlap,
 and the pressure conclusions concern the recorded finite grids and
 refinements. `make verify-resonant-operators` replays the exact controls.
 
+For lengths just below a power of two, the
+[near-power operator reduction](research/near-power-identity-operator-reduction.md)
+handles terminal modes and a split with one initial mode. It retains
+`2*r+1` actual zero modes and uses a local auxiliary Gaussian only to
+compute the profile; exact multiplicity division removes that factor
+before physical costs are evaluated. The contraction is a scalar matrix
+plus rank one. Complete interval-31 terminal and split projector screens
+found no gain in their recorded grids. `make verify-near-power-operators`
+checks the interpolation, auxiliary-factor removal, and original cuts.
+
 The [reflection-pair compression](research/reflection-dual-rail-compression.md)
 retains one occupied mode from every reflected pair. A characteristic-two
 homology calculation gives an explicit polynomial Gaussian on the
