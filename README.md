@@ -94,6 +94,9 @@ ordinary covering-radius gains alone do not improve its pressure criterion.
 The [signed-boundary extension](research/signed-boundary-crossings.md)
 preserves duality under more general intertwiners and isotropic reductions,
 with exact common-factor costs; its strict rank improvement remains open.
+An [endpoint pressure theorem](research/bell-cubic-outer-rank-floor.md)
+also excludes cubic Bell paths with the stated two outer rank-one
+coefficients in every odd characteristic, while leaving quartic targets open.
 
 See the [research index](research/INDEX.md) for completed arguments, scoped obstructions, and older candidates. Active work can also appear in [open pull requests](https://github.com/1337isnot1337/integer-factoring/pulls); branch research is not automatically a result on `main`.
 

@@ -17,10 +17,11 @@ verify-docs:
 verify-bell:
 	python3 tools/check_bell_crossing.py
 	python3 tools/check_bell_pencils.py
-	python3 tools/check_bell_profiles.py evidence/bell-synthesis-d4h4.json evidence/bell-synthesis-d8h3.json
+	python3 tools/check_bell_profiles.py evidence/bell-synthesis-d4h4.json evidence/bell-synthesis-d8h3.json evidence/bell-folded-adaptive-d8.json evidence/bell-folded-adaptive-d16.json
 	python3 tools/check_folded_bell.py
 	python3 tools/check_code_folded_bell.py
 	python3 tools/check_bell_projection.py
+	python3 tools/check_bell_cubic_floor.py
 
 verify-post-half:
 	python3 tools/check_half_piece_ranks.py --full

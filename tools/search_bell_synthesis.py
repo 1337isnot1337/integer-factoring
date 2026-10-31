@@ -8,10 +8,13 @@ is exact. The greedy order of tightening constraints is a finite heuristic.
 import argparse
 import json
 from math import log
+import os
+from pathlib import Path
 import random
 import time
 
 from bell_crossing import sign, transform
+from folded_bell import coefficient_vectors
 from search_bell_profiles import optimum, profiles, record, tensor_start
 
 
@@ -142,7 +145,8 @@ def synthesis(bits: int, degree: int, scale: float, seed: int,
 
 
 def run(bits: int, degree: int, trials: int, seed: int,
-        tensor_initial: bool = False, adaptive: bool = False) -> dict:
+        tensor_initial: bool = False, adaptive: bool = False,
+        folded_initial: bool = False, checkpoint=None) -> dict:
     start = time.monotonic()
     best = None
     improvements = []
@@ -152,6 +156,9 @@ def run(bits: int, degree: int, trials: int, seed: int,
     for trial in range(trials):
         scale = scales[trial % len(scales)]
         initial = None
+        if folded_initial:
+            assert degree >= bits
+            initial = coefficient_vectors(bits, 3) + ((0,) * (1 << (2 * bits)),) * (degree - bits)
         if adaptive and best is not None and trial % 16:
             initial = best["coefficients"]
             dual = tuple(transform(row, bits, 3) for row in initial)
@@ -173,10 +180,23 @@ def run(bits: int, degree: int, trials: int, seed: int,
             improvements.append({"trial": trial, "seed": seed + trial,
                                  "scale": scale,
                                  "rho_approx": result["value"] / (4 * bits * log(2))})
+        if checkpoint and (trial == 0 or (trial + 1) % 64 == 0):
+            checkpoint({"status": "exact synthesis schedule in progress",
+                        "bits": bits, "degree": degree, "trials": trials,
+                        "trials_completed": trial + 1, "seed": seed,
+                        "tensor_initial": tensor_initial, "adaptive": adaptive,
+                        "folded_initial": folded_initial,
+                        "improvements": improvements,
+                        "best": record(best["coefficients"], bits),
+                        "total_exact_constraint_proposals": total_proposals,
+                        "distinct_profile_pairs": len(profiles_seen),
+                        "elapsed_seconds": time.monotonic() - start})
     return {"status": "exact synthesis schedule completed", "bits": bits,
             "local_dimension": 1 << bits, "degree": degree, "trials": trials,
+            "trials_completed": trials,
             "tensor_initial": tensor_initial,
             "adaptive": adaptive,
+            "folded_initial": folded_initial,
             "seed": seed, "distinct_profile_pairs": len(profiles_seen),
             "total_exact_constraint_proposals": total_proposals,
             "improvements": improvements, "best": record(best["coefficients"], bits),
@@ -192,12 +212,18 @@ def main() -> None:
     parser.add_argument("--seed", type=int, default=20261031)
     parser.add_argument("--tensor-initial", action="store_true")
     parser.add_argument("--adaptive", action="store_true")
+    parser.add_argument("--folded-initial", action="store_true")
     parser.add_argument("--output", required=True)
     args = parser.parse_args()
-    result = run(args.bits, args.degree, args.trials, args.seed, args.tensor_initial, args.adaptive)
-    with open(args.output, "w") as stream:
-        json.dump(result, stream, indent=2)
-        stream.write("\n")
+    output = Path(args.output)
+    def save(result):
+        temporary = output.with_name(output.name + ".tmp")
+        temporary.write_text(json.dumps(result, indent=2) + "\n")
+        os.replace(temporary, output)
+    result = run(args.bits, args.degree, args.trials, args.seed,
+                 args.tensor_initial or args.folded_initial, args.adaptive,
+                 args.folded_initial, save)
+    save(result)
     print(json.dumps({key: result[key] for key in ("status", "local_dimension", "degree",
           "trials", "distinct_profile_pairs", "total_exact_constraint_proposals", "elapsed_seconds")}))
     print(json.dumps({"bounds": result["best"]["bounds"], "improvements": result["improvements"]}))

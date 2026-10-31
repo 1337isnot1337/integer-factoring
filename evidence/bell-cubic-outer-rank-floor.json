@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "random_seed": 20261101,
+  "exact_endpoint_cases": 216,
+  "exact_pressure_comparisons": 864,
+  "dimension_inequality_powers": [
+    3,
+    32
+  ],
+  "dimension_eight_pressure_floor": 432,
+  "uniform_rho_floor": "strictly greater than 5/7 > 1/sqrt(2)",
+  "scope": "Cubic order/degree pressure with rank-one constant row and leading column coefficients; not an actual-rank exclusion",
+  "factoring_score": "1/2; unchanged"
+}

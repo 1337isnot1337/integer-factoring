@@ -98,5 +98,35 @@ tensor-word ranks independently satisfy (1); 2,448 dense affine controls
 cover feasible and inconsistent systems. No independent proof review or
 Lean formalization is claimed. Substantial OpenAI Codex assistance was used.
 
-The next target is a structurally different uniform family, including
-possible code quotients, rather than extrapolating these finite schedules.
+## 4. Restarts from the closed folded family
+
+Two further completed schedules use the proved folded family as the
+starting point rather than the older tensor product:
+
+| Physical dimension | Degree | Adaptive trials | Distinct profile pairs | Best certified rho upper bound |
+| --- | ---: | ---: | ---: | ---: |
+| 8 | 3 | 512 | 2 | 0.863 |
+| 16 | 4 | 128 | 1 | 0.854 |
+
+The [dimension-eight record](../evidence/bell-folded-adaptive-d8.json)
+retains 45,038 exact constraint proposals; the
+[dimension-sixteen record](../evidence/bell-folded-adaptive-d16.json)
+retains 43,021. Neither improves its starting family. These are limited
+target orders, not a global optimum. Earlier interrupted larger runs
+produced no final receipt and are not counted as completed evidence.
+
+```sh
+python3 tools/search_bell_synthesis.py --bits 3 --degree 3 --trials 512 --folded-initial --adaptive --seed 20261101 --output /tmp/folded-adaptive-d8.json
+python3 tools/search_bell_synthesis.py --bits 4 --degree 4 --trials 128 --folded-initial --adaptive --seed 20261101 --output /tmp/folded-adaptive-d16.json
+```
+
+The driver atomically saves a partial receipt after the first trial and
+every 64 trials, then marks the final completed trial count. Partial
+receipts certify their explicit candidate and completed prefix only.
+Both a live partial receipt and the completed records passed the same
+coefficient and rational-bound readback.
+
+The [cubic endpoint theorem](bell-cubic-outer-rank-floor.md) independently
+closes the outer-rank-one cubic pressure targets over every odd field.
+Quartic paths, cubic outer ranks outside that theorem, and actual-rank
+compression remain constructive targets.
