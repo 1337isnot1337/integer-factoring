@@ -14,6 +14,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Arithmetic Cauchy factorial law and Smith profiles](arithmetic-cauchy-factorial-law.md): a finite-sampling moment bound proves the permanent congruence at every size, and an integral orthogonal basis proves every squared-Cauchy invariant factor over each prime-adic coefficient ring.
+
 - [Mixed-field rectangular repair](rectangular-f4-repair.md): an explicit two-parameter height-triangular correction over every characteristic-two field, a uniform simple-pole bound, and four exact mixed-F4 constructors.
 - [Full-alphabet quartic repair](full-alphabet-quartic-repair.md): a rank-four projector identifies every invertible coefficient, a sparse correction retains all four states on both pairs, and fixed-size profiles support 23 or 29 parameters.
 - [Bounded rectangular defect blocks](rectangular-defect-factorization.md): full-interval repairs reduce to seven and nine active fermion modes at the stated Gaussian gauges, with structurally proved generic ranks and exact rational support checks.

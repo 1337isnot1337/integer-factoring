@@ -1,0 +1,9775 @@
+{
+  "claim": "Ordinary all-size arithmetic Cauchy permanent factorial valuation and complete squared-matrix Smith profile; no improved factoring exponent.",
+  "complete_polynomial_controls": {
+    "count": 120,
+    "records": [
+      {
+        "center": -3,
+        "checked_coefficients": 8,
+        "content": 3,
+        "packet_length": 4,
+        "size": 1,
+        "spacing": 4,
+        "start": 0
+      },
+      {
+        "center": -3,
+        "checked_coefficients": 15,
+        "content": 7,
+        "packet_length": 4,
+        "size": 2,
+        "spacing": 2,
+        "start": 0
+      },
+      {
+        "center": -3,
+        "checked_coefficients": 8,
+        "content": 3,
+        "packet_length": 4,
+        "size": 1,
+        "spacing": 4,
+        "start": 1
+      },
+      {
+        "center": -3,
+        "checked_coefficients": 15,
+        "content": 7,
+        "packet_length": 4,
+        "size": 2,
+        "spacing": 2,
+        "start": 1
+      },
+      {
+        "center": -1,
+        "checked_coefficients": 8,
+        "content": 3,
+        "packet_length": 4,
+        "size": 1,
+        "spacing": 4,
+        "start": 0
+      },
+      {
+        "center": -1,
+        "checked_coefficients": 15,
+        "content": 7,
+        "packet_length": 4,
+        "size": 2,
+        "spacing": 2,
+        "start": 0
+      },
+      {
+        "center": -1,
+        "checked_coefficients": 8,
+        "content": 3,
+        "packet_length": 4,
+        "size": 1,
+        "spacing": 4,
+        "start": 1
+      },
+      {
+        "center": -1,
+        "checked_coefficients": 15,
+        "content": 7,
+        "packet_length": 4,
+        "size": 2,
+        "spacing": 2,
+        "start": 1
+      },
+      {
+        "center": 1,
+        "checked_coefficients": 8,
+        "content": 3,
+        "packet_length": 4,
+        "size": 1,
+        "spacing": 4,
+        "start": 0
+      },
+      {
+        "center": 1,
+        "checked_coefficients": 15,
+        "content": 7,
+        "packet_length": 4,
+        "size": 2,
+        "spacing": 2,
+        "start": 0
+      },
+      {
+        "center": 1,
+        "checked_coefficients": 8,
+        "content": 3,
+        "packet_length": 4,
+        "size": 1,
+        "spacing": 4,
+        "start": 1
+      },
+      {
+        "center": 1,
+        "checked_coefficients": 15,
+        "content": 7,
+        "packet_length": 4,
+        "size": 2,
+        "spacing": 2,
+        "start": 1
+      },
+      {
+        "center": 3,
+        "checked_coefficients": 8,
+        "content": 3,
+        "packet_length": 4,
+        "size": 1,
+        "spacing": 4,
+        "start": 0
+      },
+      {
+        "center": 3,
+        "checked_coefficients": 15,
+        "content": 7,
+        "packet_length": 4,
+        "size": 2,
+        "spacing": 2,
+        "start": 0
+      },
+      {
+        "center": 3,
+        "checked_coefficients": 8,
+        "content": 3,
+        "packet_length": 4,
+        "size": 1,
+        "spacing": 4,
+        "start": 1
+      },
+      {
+        "center": 3,
+        "checked_coefficients": 15,
+        "content": 7,
+        "packet_length": 4,
+        "size": 2,
+        "spacing": 2,
+        "start": 1
+      },
+      {
+        "center": -7,
+        "checked_coefficients": 16,
+        "content": 4,
+        "packet_length": 8,
+        "size": 1,
+        "spacing": 4,
+        "start": 0
+      },
+      {
+        "center": -7,
+        "checked_coefficients": 31,
+        "content": 9,
+        "packet_length": 8,
+        "size": 2,
+        "spacing": 2,
+        "start": 0
+      },
+      {
+        "center": -7,
+        "checked_coefficients": 46,
+        "content": 13,
+        "packet_length": 8,
+        "size": 3,
+        "spacing": 2,
+        "start": 0
+      },
+      {
+        "center": -7,
+        "checked_coefficients": 61,
+        "content": 19,
+        "packet_length": 8,
+        "size": 4,
+        "spacing": 2,
+        "start": 0
+      },
+      {
+        "center": -7,
+        "checked_coefficients": 16,
+        "content": 4,
+        "packet_length": 8,
+        "size": 1,
+        "spacing": 4,
+        "start": 1
+      },
+      {
+        "center": -7,
+        "checked_coefficients": 31,
+        "content": 9,
+        "packet_length": 8,
+        "size": 2,
+        "spacing": 2,
+        "start": 1
+      },
+      {
+        "center": -7,
+        "checked_coefficients": 46,
+        "content": 13,
+        "packet_length": 8,
+        "size": 3,
+        "spacing": 2,
+        "start": 1
+      },
+      {
+        "center": -7,
+        "checked_coefficients": 61,
+        "content": 19,
+        "packet_length": 8,
+        "size": 4,
+        "spacing": 2,
+        "start": 1
+      },
+      {
+        "center": -7,
+        "checked_coefficients": 31,
+        "content": 9,
+        "packet_length": 8,
+        "size": 2,
+        "spacing": 4,
+        "start": 0
+      },
+      {
+        "center": -7,
+        "checked_coefficients": 31,
+        "content": 9,
+        "packet_length": 8,
+        "size": 2,
+        "spacing": 4,
+        "start": 1
+      },
+      {
+        "center": -1,
+        "checked_coefficients": 16,
+        "content": 4,
+        "packet_length": 8,
+        "size": 1,
+        "spacing": 4,
+        "start": 0
+      },
+      {
+        "center": -1,
+        "checked_coefficients": 31,
+        "content": 9,
+        "packet_length": 8,
+        "size": 2,
+        "spacing": 2,
+        "start": 0
+      },
+      {
+        "center": -1,
+        "checked_coefficients": 46,
+        "content": 13,
+        "packet_length": 8,
+        "size": 3,
+        "spacing": 2,
+        "start": 0
+      },
+      {
+        "center": -1,
+        "checked_coefficients": 61,
+        "content": 19,
+        "packet_length": 8,
+        "size": 4,
+        "spacing": 2,
+        "start": 0
+      },
+      {
+        "center": -1,
+        "checked_coefficients": 16,
+        "content": 4,
+        "packet_length": 8,
+        "size": 1,
+        "spacing": 4,
+        "start": 1
+      },
+      {
+        "center": -1,
+        "checked_coefficients": 31,
+        "content": 9,
+        "packet_length": 8,
+        "size": 2,
+        "spacing": 2,
+        "start": 1
+      },
+      {
+        "center": -1,
+        "checked_coefficients": 46,
+        "content": 13,
+        "packet_length": 8,
+        "size": 3,
+        "spacing": 2,
+        "start": 1
+      },
+      {
+        "center": -1,
+        "checked_coefficients": 61,
+        "content": 19,
+        "packet_length": 8,
+        "size": 4,
+        "spacing": 2,
+        "start": 1
+      },
+      {
+        "center": -1,
+        "checked_coefficients": 31,
+        "content": 9,
+        "packet_length": 8,
+        "size": 2,
+        "spacing": 4,
+        "start": 0
+      },
+      {
+        "center": -1,
+        "checked_coefficients": 31,
+        "content": 9,
+        "packet_length": 8,
+        "size": 2,
+        "spacing": 4,
+        "start": 1
+      },
+      {
+        "center": 1,
+        "checked_coefficients": 16,
+        "content": 4,
+        "packet_length": 8,
+        "size": 1,
+        "spacing": 4,
+        "start": 0
+      },
+      {
+        "center": 1,
+        "checked_coefficients": 31,
+        "content": 9,
+        "packet_length": 8,
+        "size": 2,
+        "spacing": 2,
+        "start": 0
+      },
+      {
+        "center": 1,
+        "checked_coefficients": 46,
+        "content": 13,
+        "packet_length": 8,
+        "size": 3,
+        "spacing": 2,
+        "start": 0
+      },
+      {
+        "center": 1,
+        "checked_coefficients": 61,
+        "content": 19,
+        "packet_length": 8,
+        "size": 4,
+        "spacing": 2,
+        "start": 0
+      },
+      {
+        "center": 1,
+        "checked_coefficients": 16,
+        "content": 4,
+        "packet_length": 8,
+        "size": 1,
+        "spacing": 4,
+        "start": 1
+      },
+      {
+        "center": 1,
+        "checked_coefficients": 31,
+        "content": 9,
+        "packet_length": 8,
+        "size": 2,
+        "spacing": 2,
+        "start": 1
+      },
+      {
+        "center": 1,
+        "checked_coefficients": 46,
+        "content": 13,
+        "packet_length": 8,
+        "size": 3,
+        "spacing": 2,
+        "start": 1
+      },
+      {
+        "center": 1,
+        "checked_coefficients": 61,
+        "content": 19,
+        "packet_length": 8,
+        "size": 4,
+        "spacing": 2,
+        "start": 1
+      },
+      {
+        "center": 1,
+        "checked_coefficients": 31,
+        "content": 9,
+        "packet_length": 8,
+        "size": 2,
+        "spacing": 4,
+        "start": 0
+      },
+      {
+        "center": 1,
+        "checked_coefficients": 31,
+        "content": 9,
+        "packet_length": 8,
+        "size": 2,
+        "spacing": 4,
+        "start": 1
+      },
+      {
+        "center": 7,
+        "checked_coefficients": 16,
+        "content": 4,
+        "packet_length": 8,
+        "size": 1,
+        "spacing": 4,
+        "start": 0
+      },
+      {
+        "center": 7,
+        "checked_coefficients": 31,
+        "content": 9,
+        "packet_length": 8,
+        "size": 2,
+        "spacing": 2,
+        "start": 0
+      },
+      {
+        "center": 7,
+        "checked_coefficients": 46,
+        "content": 13,
+        "packet_length": 8,
+        "size": 3,
+        "spacing": 2,
+        "start": 0
+      },
+      {
+        "center": 7,
+        "checked_coefficients": 61,
+        "content": 19,
+        "packet_length": 8,
+        "size": 4,
+        "spacing": 2,
+        "start": 0
+      },
+      {
+        "center": 7,
+        "checked_coefficients": 16,
+        "content": 4,
+        "packet_length": 8,
+        "size": 1,
+        "spacing": 4,
+        "start": 1
+      },
+      {
+        "center": 7,
+        "checked_coefficients": 31,
+        "content": 9,
+        "packet_length": 8,
+        "size": 2,
+        "spacing": 2,
+        "start": 1
+      },
+      {
+        "center": 7,
+        "checked_coefficients": 46,
+        "content": 13,
+        "packet_length": 8,
+        "size": 3,
+        "spacing": 2,
+        "start": 1
+      },
+      {
+        "center": 7,
+        "checked_coefficients": 61,
+        "content": 19,
+        "packet_length": 8,
+        "size": 4,
+        "spacing": 2,
+        "start": 1
+      },
+      {
+        "center": 7,
+        "checked_coefficients": 31,
+        "content": 9,
+        "packet_length": 8,
+        "size": 2,
+        "spacing": 4,
+        "start": 0
+      },
+      {
+        "center": 7,
+        "checked_coefficients": 31,
+        "content": 9,
+        "packet_length": 8,
+        "size": 2,
+        "spacing": 4,
+        "start": 1
+      },
+      {
+        "center": -15,
+        "checked_coefficients": 32,
+        "content": 5,
+        "packet_length": 16,
+        "size": 1,
+        "spacing": 4,
+        "start": 0
+      },
+      {
+        "center": -15,
+        "checked_coefficients": 63,
+        "content": 11,
+        "packet_length": 16,
+        "size": 2,
+        "spacing": 2,
+        "start": 0
+      },
+      {
+        "center": -15,
+        "checked_coefficients": 94,
+        "content": 16,
+        "packet_length": 16,
+        "size": 3,
+        "spacing": 2,
+        "start": 0
+      },
+      {
+        "center": -15,
+        "checked_coefficients": 125,
+        "content": 23,
+        "packet_length": 16,
+        "size": 4,
+        "spacing": 2,
+        "start": 0
+      },
+      {
+        "center": -15,
+        "checked_coefficients": 156,
+        "content": 28,
+        "packet_length": 16,
+        "size": 5,
+        "spacing": 2,
+        "start": 0
+      },
+      {
+        "center": -15,
+        "checked_coefficients": 32,
+        "content": 5,
+        "packet_length": 16,
+        "size": 1,
+        "spacing": 4,
+        "start": 1
+      },
+      {
+        "center": -15,
+        "checked_coefficients": 63,
+        "content": 11,
+        "packet_length": 16,
+        "size": 2,
+        "spacing": 2,
+        "start": 1
+      },
+      {
+        "center": -15,
+        "checked_coefficients": 94,
+        "content": 16,
+        "packet_length": 16,
+        "size": 3,
+        "spacing": 2,
+        "start": 1
+      },
+      {
+        "center": -15,
+        "checked_coefficients": 125,
+        "content": 23,
+        "packet_length": 16,
+        "size": 4,
+        "spacing": 2,
+        "start": 1
+      },
+      {
+        "center": -15,
+        "checked_coefficients": 156,
+        "content": 28,
+        "packet_length": 16,
+        "size": 5,
+        "spacing": 2,
+        "start": 1
+      },
+      {
+        "center": -15,
+        "checked_coefficients": 63,
+        "content": 11,
+        "packet_length": 16,
+        "size": 2,
+        "spacing": 4,
+        "start": 0
+      },
+      {
+        "center": -15,
+        "checked_coefficients": 94,
+        "content": 16,
+        "packet_length": 16,
+        "size": 3,
+        "spacing": 4,
+        "start": 0
+      },
+      {
+        "center": -15,
+        "checked_coefficients": 125,
+        "content": 23,
+        "packet_length": 16,
+        "size": 4,
+        "spacing": 4,
+        "start": 0
+      },
+      {
+        "center": -15,
+        "checked_coefficients": 63,
+        "content": 11,
+        "packet_length": 16,
+        "size": 2,
+        "spacing": 4,
+        "start": 1
+      },
+      {
+        "center": -15,
+        "checked_coefficients": 94,
+        "content": 16,
+        "packet_length": 16,
+        "size": 3,
+        "spacing": 4,
+        "start": 1
+      },
+      {
+        "center": -15,
+        "checked_coefficients": 125,
+        "content": 23,
+        "packet_length": 16,
+        "size": 4,
+        "spacing": 4,
+        "start": 1
+      },
+      {
+        "center": -1,
+        "checked_coefficients": 32,
+        "content": 5,
+        "packet_length": 16,
+        "size": 1,
+        "spacing": 4,
+        "start": 0
+      },
+      {
+        "center": -1,
+        "checked_coefficients": 63,
+        "content": 11,
+        "packet_length": 16,
+        "size": 2,
+        "spacing": 2,
+        "start": 0
+      },
+      {
+        "center": -1,
+        "checked_coefficients": 94,
+        "content": 16,
+        "packet_length": 16,
+        "size": 3,
+        "spacing": 2,
+        "start": 0
+      },
+      {
+        "center": -1,
+        "checked_coefficients": 125,
+        "content": 23,
+        "packet_length": 16,
+        "size": 4,
+        "spacing": 2,
+        "start": 0
+      },
+      {
+        "center": -1,
+        "checked_coefficients": 156,
+        "content": 28,
+        "packet_length": 16,
+        "size": 5,
+        "spacing": 2,
+        "start": 0
+      },
+      {
+        "center": -1,
+        "checked_coefficients": 32,
+        "content": 5,
+        "packet_length": 16,
+        "size": 1,
+        "spacing": 4,
+        "start": 1
+      },
+      {
+        "center": -1,
+        "checked_coefficients": 63,
+        "content": 11,
+        "packet_length": 16,
+        "size": 2,
+        "spacing": 2,
+        "start": 1
+      },
+      {
+        "center": -1,
+        "checked_coefficients": 94,
+        "content": 16,
+        "packet_length": 16,
+        "size": 3,
+        "spacing": 2,
+        "start": 1
+      },
+      {
+        "center": -1,
+        "checked_coefficients": 125,
+        "content": 23,
+        "packet_length": 16,
+        "size": 4,
+        "spacing": 2,
+        "start": 1
+      },
+      {
+        "center": -1,
+        "checked_coefficients": 156,
+        "content": 28,
+        "packet_length": 16,
+        "size": 5,
+        "spacing": 2,
+        "start": 1
+      },
+      {
+        "center": -1,
+        "checked_coefficients": 63,
+        "content": 11,
+        "packet_length": 16,
+        "size": 2,
+        "spacing": 4,
+        "start": 0
+      },
+      {
+        "center": -1,
+        "checked_coefficients": 94,
+        "content": 16,
+        "packet_length": 16,
+        "size": 3,
+        "spacing": 4,
+        "start": 0
+      },
+      {
+        "center": -1,
+        "checked_coefficients": 125,
+        "content": 23,
+        "packet_length": 16,
+        "size": 4,
+        "spacing": 4,
+        "start": 0
+      },
+      {
+        "center": -1,
+        "checked_coefficients": 63,
+        "content": 11,
+        "packet_length": 16,
+        "size": 2,
+        "spacing": 4,
+        "start": 1
+      },
+      {
+        "center": -1,
+        "checked_coefficients": 94,
+        "content": 16,
+        "packet_length": 16,
+        "size": 3,
+        "spacing": 4,
+        "start": 1
+      },
+      {
+        "center": -1,
+        "checked_coefficients": 125,
+        "content": 23,
+        "packet_length": 16,
+        "size": 4,
+        "spacing": 4,
+        "start": 1
+      },
+      {
+        "center": 1,
+        "checked_coefficients": 32,
+        "content": 5,
+        "packet_length": 16,
+        "size": 1,
+        "spacing": 4,
+        "start": 0
+      },
+      {
+        "center": 1,
+        "checked_coefficients": 63,
+        "content": 11,
+        "packet_length": 16,
+        "size": 2,
+        "spacing": 2,
+        "start": 0
+      },
+      {
+        "center": 1,
+        "checked_coefficients": 94,
+        "content": 16,
+        "packet_length": 16,
+        "size": 3,
+        "spacing": 2,
+        "start": 0
+      },
+      {
+        "center": 1,
+        "checked_coefficients": 125,
+        "content": 23,
+        "packet_length": 16,
+        "size": 4,
+        "spacing": 2,
+        "start": 0
+      },
+      {
+        "center": 1,
+        "checked_coefficients": 156,
+        "content": 28,
+        "packet_length": 16,
+        "size": 5,
+        "spacing": 2,
+        "start": 0
+      },
+      {
+        "center": 1,
+        "checked_coefficients": 32,
+        "content": 5,
+        "packet_length": 16,
+        "size": 1,
+        "spacing": 4,
+        "start": 1
+      },
+      {
+        "center": 1,
+        "checked_coefficients": 63,
+        "content": 11,
+        "packet_length": 16,
+        "size": 2,
+        "spacing": 2,
+        "start": 1
+      },
+      {
+        "center": 1,
+        "checked_coefficients": 94,
+        "content": 16,
+        "packet_length": 16,
+        "size": 3,
+        "spacing": 2,
+        "start": 1
+      },
+      {
+        "center": 1,
+        "checked_coefficients": 125,
+        "content": 23,
+        "packet_length": 16,
+        "size": 4,
+        "spacing": 2,
+        "start": 1
+      },
+      {
+        "center": 1,
+        "checked_coefficients": 156,
+        "content": 28,
+        "packet_length": 16,
+        "size": 5,
+        "spacing": 2,
+        "start": 1
+      },
+      {
+        "center": 1,
+        "checked_coefficients": 63,
+        "content": 11,
+        "packet_length": 16,
+        "size": 2,
+        "spacing": 4,
+        "start": 0
+      },
+      {
+        "center": 1,
+        "checked_coefficients": 94,
+        "content": 16,
+        "packet_length": 16,
+        "size": 3,
+        "spacing": 4,
+        "start": 0
+      },
+      {
+        "center": 1,
+        "checked_coefficients": 125,
+        "content": 23,
+        "packet_length": 16,
+        "size": 4,
+        "spacing": 4,
+        "start": 0
+      },
+      {
+        "center": 1,
+        "checked_coefficients": 63,
+        "content": 11,
+        "packet_length": 16,
+        "size": 2,
+        "spacing": 4,
+        "start": 1
+      },
+      {
+        "center": 1,
+        "checked_coefficients": 94,
+        "content": 16,
+        "packet_length": 16,
+        "size": 3,
+        "spacing": 4,
+        "start": 1
+      },
+      {
+        "center": 1,
+        "checked_coefficients": 125,
+        "content": 23,
+        "packet_length": 16,
+        "size": 4,
+        "spacing": 4,
+        "start": 1
+      },
+      {
+        "center": 15,
+        "checked_coefficients": 32,
+        "content": 5,
+        "packet_length": 16,
+        "size": 1,
+        "spacing": 4,
+        "start": 0
+      },
+      {
+        "center": 15,
+        "checked_coefficients": 63,
+        "content": 11,
+        "packet_length": 16,
+        "size": 2,
+        "spacing": 2,
+        "start": 0
+      },
+      {
+        "center": 15,
+        "checked_coefficients": 94,
+        "content": 16,
+        "packet_length": 16,
+        "size": 3,
+        "spacing": 2,
+        "start": 0
+      },
+      {
+        "center": 15,
+        "checked_coefficients": 125,
+        "content": 23,
+        "packet_length": 16,
+        "size": 4,
+        "spacing": 2,
+        "start": 0
+      },
+      {
+        "center": 15,
+        "checked_coefficients": 156,
+        "content": 28,
+        "packet_length": 16,
+        "size": 5,
+        "spacing": 2,
+        "start": 0
+      },
+      {
+        "center": 15,
+        "checked_coefficients": 32,
+        "content": 5,
+        "packet_length": 16,
+        "size": 1,
+        "spacing": 4,
+        "start": 1
+      },
+      {
+        "center": 15,
+        "checked_coefficients": 63,
+        "content": 11,
+        "packet_length": 16,
+        "size": 2,
+        "spacing": 2,
+        "start": 1
+      },
+      {
+        "center": 15,
+        "checked_coefficients": 94,
+        "content": 16,
+        "packet_length": 16,
+        "size": 3,
+        "spacing": 2,
+        "start": 1
+      },
+      {
+        "center": 15,
+        "checked_coefficients": 125,
+        "content": 23,
+        "packet_length": 16,
+        "size": 4,
+        "spacing": 2,
+        "start": 1
+      },
+      {
+        "center": 15,
+        "checked_coefficients": 156,
+        "content": 28,
+        "packet_length": 16,
+        "size": 5,
+        "spacing": 2,
+        "start": 1
+      },
+      {
+        "center": 15,
+        "checked_coefficients": 63,
+        "content": 11,
+        "packet_length": 16,
+        "size": 2,
+        "spacing": 4,
+        "start": 0
+      },
+      {
+        "center": 15,
+        "checked_coefficients": 94,
+        "content": 16,
+        "packet_length": 16,
+        "size": 3,
+        "spacing": 4,
+        "start": 0
+      },
+      {
+        "center": 15,
+        "checked_coefficients": 125,
+        "content": 23,
+        "packet_length": 16,
+        "size": 4,
+        "spacing": 4,
+        "start": 0
+      },
+      {
+        "center": 15,
+        "checked_coefficients": 63,
+        "content": 11,
+        "packet_length": 16,
+        "size": 2,
+        "spacing": 4,
+        "start": 1
+      },
+      {
+        "center": 15,
+        "checked_coefficients": 94,
+        "content": 16,
+        "packet_length": 16,
+        "size": 3,
+        "spacing": 4,
+        "start": 1
+      },
+      {
+        "center": 15,
+        "checked_coefficients": 125,
+        "content": 23,
+        "packet_length": 16,
+        "size": 4,
+        "spacing": 4,
+        "start": 1
+      }
+    ]
+  },
+  "moment_controls": {
+    "acyclic_quotient_weights": 484,
+    "equality_partition_reconstructions": 77,
+    "literal_injective_sums": 55,
+    "partition_records": [
+      {
+        "acyclic_partitions": 1,
+        "discarded_cyclic_partitions": 0,
+        "exponents": [
+          1
+        ]
+      },
+      {
+        "acyclic_partitions": 2,
+        "discarded_cyclic_partitions": 0,
+        "exponents": [
+          2
+        ]
+      },
+      {
+        "acyclic_partitions": 4,
+        "discarded_cyclic_partitions": 1,
+        "exponents": [
+          1,
+          1
+        ]
+      },
+      {
+        "acyclic_partitions": 5,
+        "discarded_cyclic_partitions": 0,
+        "exponents": [
+          3
+        ]
+      },
+      {
+        "acyclic_partitions": 12,
+        "discarded_cyclic_partitions": 3,
+        "exponents": [
+          2,
+          1
+        ]
+      },
+      {
+        "acyclic_partitions": 26,
+        "discarded_cyclic_partitions": 11,
+        "exponents": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "acyclic_partitions": 15,
+        "discarded_cyclic_partitions": 0,
+        "exponents": [
+          4
+        ]
+      },
+      {
+        "acyclic_partitions": 42,
+        "discarded_cyclic_partitions": 10,
+        "exponents": [
+          3,
+          1
+        ]
+      },
+      {
+        "acyclic_partitions": 39,
+        "discarded_cyclic_partitions": 13,
+        "exponents": [
+          2,
+          2
+        ]
+      },
+      {
+        "acyclic_partitions": 103,
+        "discarded_cyclic_partitions": 48,
+        "exponents": [
+          2,
+          1,
+          1
+        ]
+      },
+      {
+        "acyclic_partitions": 235,
+        "discarded_cyclic_partitions": 137,
+        "exponents": [
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    ],
+    "prime_denominator_checks": 4572
+  },
+  "negative_controls": {
+    "different_residues_in_unramified_quadratic_extension": {
+      "column_shifts": [
+        "omega",
+        "omega^2"
+      ],
+      "permanent": 0,
+      "relation": "omega^2+omega+1=0",
+      "spacing": 2
+    },
+    "nonconsecutive_even_positions": {
+      "T": 1,
+      "factorial_valuation": 3,
+      "permanent": "63488/165375",
+      "positions": [
+        0,
+        2,
+        4,
+        8
+      ],
+      "valuation": 11
+    }
+  },
+  "orthogonal_basis_controls": {
+    "count": 6,
+    "records": [
+      {
+        "A": 1,
+        "coefficient_checks": 28,
+        "maximum_degree": 6,
+        "norm_orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20
+        ],
+        "prime": 2,
+        "spacing": 2
+      },
+      {
+        "A": -7,
+        "coefficient_checks": 28,
+        "maximum_degree": 6,
+        "norm_orders": [
+          0,
+          5,
+          10,
+          16,
+          22,
+          27,
+          32
+        ],
+        "prime": 2,
+        "spacing": 4
+      },
+      {
+        "A": 3,
+        "coefficient_checks": 28,
+        "maximum_degree": 6,
+        "norm_orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20
+        ],
+        "prime": 2,
+        "spacing": 6
+      },
+      {
+        "A": 1,
+        "coefficient_checks": 28,
+        "maximum_degree": 6,
+        "norm_orders": [
+          0,
+          2,
+          5,
+          8,
+          10,
+          13,
+          16
+        ],
+        "prime": 3,
+        "spacing": 3
+      },
+      {
+        "A": 4,
+        "coefficient_checks": 28,
+        "maximum_degree": 6,
+        "norm_orders": [
+          0,
+          4,
+          9,
+          14,
+          18,
+          23,
+          28
+        ],
+        "prime": 3,
+        "spacing": 9
+      },
+      {
+        "A": 6,
+        "coefficient_checks": 28,
+        "maximum_degree": 6,
+        "norm_orders": [
+          0,
+          2,
+          4,
+          6,
+          9,
+          12,
+          14
+        ],
+        "prime": 5,
+        "spacing": 5
+      }
+    ]
+  },
+  "permanent_controls": {
+    "count": 336,
+    "maximum_size": 14,
+    "records": [
+      {
+        "columns": [
+          -35
+        ],
+        "permanent_residue": 5,
+        "precision": 3,
+        "prime": 2,
+        "size": 1,
+        "spacing": 2,
+        "trial": 0,
+        "valuation": 0
+      },
+      {
+        "columns": [
+          1327
+        ],
+        "permanent_residue": 7,
+        "precision": 3,
+        "prime": 2,
+        "size": 1,
+        "spacing": 2,
+        "trial": 1,
+        "valuation": 0
+      },
+      {
+        "columns": [
+          479
+        ],
+        "permanent_residue": 7,
+        "precision": 3,
+        "prime": 2,
+        "size": 1,
+        "spacing": 2,
+        "trial": 2,
+        "valuation": 0
+      },
+      {
+        "columns": [
+          997
+        ],
+        "permanent_residue": 5,
+        "precision": 3,
+        "prime": 2,
+        "size": 1,
+        "spacing": 4,
+        "trial": 0,
+        "valuation": 0
+      },
+      {
+        "columns": [
+          437
+        ],
+        "permanent_residue": 5,
+        "precision": 3,
+        "prime": 2,
+        "size": 1,
+        "spacing": 4,
+        "trial": 1,
+        "valuation": 0
+      },
+      {
+        "columns": [
+          -1563
+        ],
+        "permanent_residue": 5,
+        "precision": 3,
+        "prime": 2,
+        "size": 1,
+        "spacing": 4,
+        "trial": 2,
+        "valuation": 0
+      },
+      {
+        "columns": [
+          -1039
+        ],
+        "permanent_residue": 1,
+        "precision": 3,
+        "prime": 2,
+        "size": 1,
+        "spacing": 6,
+        "trial": 0,
+        "valuation": 0
+      },
+      {
+        "columns": [
+          -1711
+        ],
+        "permanent_residue": 1,
+        "precision": 3,
+        "prime": 2,
+        "size": 1,
+        "spacing": 6,
+        "trial": 1,
+        "valuation": 0
+      },
+      {
+        "columns": [
+          849
+        ],
+        "permanent_residue": 1,
+        "precision": 3,
+        "prime": 2,
+        "size": 1,
+        "spacing": 6,
+        "trial": 2,
+        "valuation": 0
+      },
+      {
+        "columns": [
+          471
+        ],
+        "permanent_residue": 7,
+        "precision": 3,
+        "prime": 2,
+        "size": 1,
+        "spacing": 10,
+        "trial": 0,
+        "valuation": 0
+      },
+      {
+        "columns": [
+          399
+        ],
+        "permanent_residue": 7,
+        "precision": 3,
+        "prime": 2,
+        "size": 1,
+        "spacing": 10,
+        "trial": 1,
+        "valuation": 0
+      },
+      {
+        "columns": [
+          -579
+        ],
+        "permanent_residue": 5,
+        "precision": 3,
+        "prime": 2,
+        "size": 1,
+        "spacing": 10,
+        "trial": 2,
+        "valuation": 0
+      },
+      {
+        "columns": [
+          169,
+          -759
+        ],
+        "permanent_residue": 6,
+        "precision": 4,
+        "prime": 2,
+        "size": 2,
+        "spacing": 2,
+        "trial": 0,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          1063,
+          -1049
+        ],
+        "permanent_residue": 14,
+        "precision": 4,
+        "prime": 2,
+        "size": 2,
+        "spacing": 2,
+        "trial": 1,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          -941,
+          -1233
+        ],
+        "permanent_residue": 14,
+        "precision": 4,
+        "prime": 2,
+        "size": 2,
+        "spacing": 2,
+        "trial": 2,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          -627,
+          45
+        ],
+        "permanent_residue": 10,
+        "precision": 4,
+        "prime": 2,
+        "size": 2,
+        "spacing": 4,
+        "trial": 0,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          -5,
+          1083
+        ],
+        "permanent_residue": 10,
+        "precision": 4,
+        "prime": 2,
+        "size": 2,
+        "spacing": 4,
+        "trial": 1,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          -1997,
+          -331
+        ],
+        "permanent_residue": 14,
+        "precision": 4,
+        "prime": 2,
+        "size": 2,
+        "spacing": 4,
+        "trial": 2,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          1721,
+          -1091
+        ],
+        "permanent_residue": 14,
+        "precision": 4,
+        "prime": 2,
+        "size": 2,
+        "spacing": 6,
+        "trial": 0,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          87,
+          -1111
+        ],
+        "permanent_residue": 6,
+        "precision": 4,
+        "prime": 2,
+        "size": 2,
+        "spacing": 6,
+        "trial": 1,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          1157,
+          619
+        ],
+        "permanent_residue": 6,
+        "precision": 4,
+        "prime": 2,
+        "size": 2,
+        "spacing": 6,
+        "trial": 2,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          -1223,
+          -1073
+        ],
+        "permanent_residue": 6,
+        "precision": 4,
+        "prime": 2,
+        "size": 2,
+        "spacing": 10,
+        "trial": 0,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          -1699,
+          -1877
+        ],
+        "permanent_residue": 6,
+        "precision": 4,
+        "prime": 2,
+        "size": 2,
+        "spacing": 10,
+        "trial": 1,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          1005,
+          1987
+        ],
+        "permanent_residue": 6,
+        "precision": 4,
+        "prime": 2,
+        "size": 2,
+        "spacing": 10,
+        "trial": 2,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          -1689,
+          1739,
+          -1917
+        ],
+        "permanent_residue": 14,
+        "precision": 4,
+        "prime": 2,
+        "size": 3,
+        "spacing": 2,
+        "trial": 0,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          -1729,
+          -1605,
+          1899
+        ],
+        "permanent_residue": 14,
+        "precision": 4,
+        "prime": 2,
+        "size": 3,
+        "spacing": 2,
+        "trial": 1,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          781,
+          -745,
+          -1051
+        ],
+        "permanent_residue": 14,
+        "precision": 4,
+        "prime": 2,
+        "size": 3,
+        "spacing": 2,
+        "trial": 2,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          -285,
+          1839,
+          1825
+        ],
+        "permanent_residue": 6,
+        "precision": 4,
+        "prime": 2,
+        "size": 3,
+        "spacing": 4,
+        "trial": 0,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          -1177,
+          -1597,
+          1867
+        ],
+        "permanent_residue": 2,
+        "precision": 4,
+        "prime": 2,
+        "size": 3,
+        "spacing": 4,
+        "trial": 1,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          499,
+          -1519,
+          -915
+        ],
+        "permanent_residue": 2,
+        "precision": 4,
+        "prime": 2,
+        "size": 3,
+        "spacing": 4,
+        "trial": 2,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          1445,
+          43,
+          -649
+        ],
+        "permanent_residue": 2,
+        "precision": 4,
+        "prime": 2,
+        "size": 3,
+        "spacing": 6,
+        "trial": 0,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          -1353,
+          1735,
+          1623
+        ],
+        "permanent_residue": 6,
+        "precision": 4,
+        "prime": 2,
+        "size": 3,
+        "spacing": 6,
+        "trial": 1,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          1293,
+          799,
+          -403
+        ],
+        "permanent_residue": 6,
+        "precision": 4,
+        "prime": 2,
+        "size": 3,
+        "spacing": 6,
+        "trial": 2,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          -797,
+          1623,
+          -1069
+        ],
+        "permanent_residue": 14,
+        "precision": 4,
+        "prime": 2,
+        "size": 3,
+        "spacing": 10,
+        "trial": 0,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          909,
+          -997,
+          1929
+        ],
+        "permanent_residue": 14,
+        "precision": 4,
+        "prime": 2,
+        "size": 3,
+        "spacing": 10,
+        "trial": 1,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          -1199,
+          1519,
+          -1777
+        ],
+        "permanent_residue": 10,
+        "precision": 4,
+        "prime": 2,
+        "size": 3,
+        "spacing": 10,
+        "trial": 2,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          -1985,
+          -93,
+          -687,
+          1557
+        ],
+        "permanent_residue": 56,
+        "precision": 6,
+        "prime": 2,
+        "size": 4,
+        "spacing": 2,
+        "trial": 0,
+        "valuation": 3
+      },
+      {
+        "columns": [
+          -181,
+          -549,
+          1573,
+          -1779
+        ],
+        "permanent_residue": 56,
+        "precision": 6,
+        "prime": 2,
+        "size": 4,
+        "spacing": 2,
+        "trial": 1,
+        "valuation": 3
+      },
+      {
+        "columns": [
+          -1299,
+          -631,
+          -109,
+          -849
+        ],
+        "permanent_residue": 56,
+        "precision": 6,
+        "prime": 2,
+        "size": 4,
+        "spacing": 2,
+        "trial": 2,
+        "valuation": 3
+      },
+      {
+        "columns": [
+          1511,
+          -871,
+          1047,
+          1503
+        ],
+        "permanent_residue": 8,
+        "precision": 6,
+        "prime": 2,
+        "size": 4,
+        "spacing": 4,
+        "trial": 0,
+        "valuation": 3
+      },
+      {
+        "columns": [
+          1481,
+          1239,
+          1047,
+          -1963
+        ],
+        "permanent_residue": 56,
+        "precision": 6,
+        "prime": 2,
+        "size": 4,
+        "spacing": 4,
+        "trial": 1,
+        "valuation": 3
+      },
+      {
+        "columns": [
+          1665,
+          1635,
+          -1489,
+          -13
+        ],
+        "permanent_residue": 8,
+        "precision": 6,
+        "prime": 2,
+        "size": 4,
+        "spacing": 4,
+        "trial": 2,
+        "valuation": 3
+      },
+      {
+        "columns": [
+          -1855,
+          -243,
+          277,
+          1105
+        ],
+        "permanent_residue": 24,
+        "precision": 6,
+        "prime": 2,
+        "size": 4,
+        "spacing": 6,
+        "trial": 0,
+        "valuation": 3
+      },
+      {
+        "columns": [
+          -1721,
+          77,
+          733,
+          629
+        ],
+        "permanent_residue": 24,
+        "precision": 6,
+        "prime": 2,
+        "size": 4,
+        "spacing": 6,
+        "trial": 1,
+        "valuation": 3
+      },
+      {
+        "columns": [
+          515,
+          1587,
+          731,
+          -1039
+        ],
+        "permanent_residue": 56,
+        "precision": 6,
+        "prime": 2,
+        "size": 4,
+        "spacing": 6,
+        "trial": 2,
+        "valuation": 3
+      },
+      {
+        "columns": [
+          839,
+          -177,
+          1985,
+          653
+        ],
+        "permanent_residue": 56,
+        "precision": 6,
+        "prime": 2,
+        "size": 4,
+        "spacing": 10,
+        "trial": 0,
+        "valuation": 3
+      },
+      {
+        "columns": [
+          -1925,
+          -129,
+          1655,
+          1779
+        ],
+        "permanent_residue": 24,
+        "precision": 6,
+        "prime": 2,
+        "size": 4,
+        "spacing": 10,
+        "trial": 1,
+        "valuation": 3
+      },
+      {
+        "columns": [
+          -1937,
+          -493,
+          1951,
+          1471
+        ],
+        "permanent_residue": 24,
+        "precision": 6,
+        "prime": 2,
+        "size": 4,
+        "spacing": 10,
+        "trial": 2,
+        "valuation": 3
+      },
+      {
+        "columns": [
+          -1727,
+          -787,
+          -1751,
+          1599,
+          -1261
+        ],
+        "permanent_residue": 56,
+        "precision": 6,
+        "prime": 2,
+        "size": 5,
+        "spacing": 2,
+        "trial": 0,
+        "valuation": 3
+      },
+      {
+        "columns": [
+          361,
+          893,
+          1963,
+          -903,
+          105
+        ],
+        "permanent_residue": 8,
+        "precision": 6,
+        "prime": 2,
+        "size": 5,
+        "spacing": 2,
+        "trial": 1,
+        "valuation": 3
+      },
+      {
+        "columns": [
+          707,
+          209,
+          -1929,
+          -145,
+          -165
+        ],
+        "permanent_residue": 56,
+        "precision": 6,
+        "prime": 2,
+        "size": 5,
+        "spacing": 2,
+        "trial": 2,
+        "valuation": 3
+      },
+      {
+        "columns": [
+          1975,
+          495,
+          -1609,
+          185,
+          1207
+        ],
+        "permanent_residue": 56,
+        "precision": 6,
+        "prime": 2,
+        "size": 5,
+        "spacing": 4,
+        "trial": 0,
+        "valuation": 3
+      },
+      {
+        "columns": [
+          633,
+          -673,
+          1921,
+          1345,
+          547
+        ],
+        "permanent_residue": 24,
+        "precision": 6,
+        "prime": 2,
+        "size": 5,
+        "spacing": 4,
+        "trial": 1,
+        "valuation": 3
+      },
+      {
+        "columns": [
+          1757,
+          -1841,
+          -667,
+          -1289,
+          829
+        ],
+        "permanent_residue": 24,
+        "precision": 6,
+        "prime": 2,
+        "size": 5,
+        "spacing": 4,
+        "trial": 2,
+        "valuation": 3
+      },
+      {
+        "columns": [
+          1061,
+          1459,
+          -967,
+          319,
+          653
+        ],
+        "permanent_residue": 24,
+        "precision": 6,
+        "prime": 2,
+        "size": 5,
+        "spacing": 6,
+        "trial": 0,
+        "valuation": 3
+      },
+      {
+        "columns": [
+          1917,
+          -37,
+          1127,
+          -137,
+          453
+        ],
+        "permanent_residue": 40,
+        "precision": 6,
+        "prime": 2,
+        "size": 5,
+        "spacing": 6,
+        "trial": 1,
+        "valuation": 3
+      },
+      {
+        "columns": [
+          1955,
+          547,
+          -1767,
+          329,
+          1311
+        ],
+        "permanent_residue": 8,
+        "precision": 6,
+        "prime": 2,
+        "size": 5,
+        "spacing": 6,
+        "trial": 2,
+        "valuation": 3
+      },
+      {
+        "columns": [
+          -1281,
+          -1939,
+          -1603,
+          165,
+          369
+        ],
+        "permanent_residue": 40,
+        "precision": 6,
+        "prime": 2,
+        "size": 5,
+        "spacing": 10,
+        "trial": 0,
+        "valuation": 3
+      },
+      {
+        "columns": [
+          -131,
+          1249,
+          -1737,
+          -239,
+          -1825
+        ],
+        "permanent_residue": 24,
+        "precision": 6,
+        "prime": 2,
+        "size": 5,
+        "spacing": 10,
+        "trial": 1,
+        "valuation": 3
+      },
+      {
+        "columns": [
+          1367,
+          1367,
+          257,
+          -225,
+          625
+        ],
+        "permanent_residue": 8,
+        "precision": 6,
+        "prime": 2,
+        "size": 5,
+        "spacing": 10,
+        "trial": 2,
+        "valuation": 3
+      },
+      {
+        "columns": [
+          -1479,
+          519,
+          -723,
+          -163,
+          -585,
+          -763
+        ],
+        "permanent_residue": 48,
+        "precision": 7,
+        "prime": 2,
+        "size": 6,
+        "spacing": 2,
+        "trial": 0,
+        "valuation": 4
+      },
+      {
+        "columns": [
+          -1913,
+          -1013,
+          743,
+          -393,
+          -1085,
+          351
+        ],
+        "permanent_residue": 48,
+        "precision": 7,
+        "prime": 2,
+        "size": 6,
+        "spacing": 2,
+        "trial": 1,
+        "valuation": 4
+      },
+      {
+        "columns": [
+          793,
+          409,
+          -701,
+          -465,
+          971,
+          605
+        ],
+        "permanent_residue": 48,
+        "precision": 7,
+        "prime": 2,
+        "size": 6,
+        "spacing": 2,
+        "trial": 2,
+        "valuation": 4
+      },
+      {
+        "columns": [
+          -1241,
+          707,
+          -73,
+          -285,
+          -519,
+          1583
+        ],
+        "permanent_residue": 48,
+        "precision": 7,
+        "prime": 2,
+        "size": 6,
+        "spacing": 4,
+        "trial": 0,
+        "valuation": 4
+      },
+      {
+        "columns": [
+          1387,
+          1355,
+          1957,
+          1587,
+          391,
+          1401
+        ],
+        "permanent_residue": 16,
+        "precision": 7,
+        "prime": 2,
+        "size": 6,
+        "spacing": 4,
+        "trial": 1,
+        "valuation": 4
+      },
+      {
+        "columns": [
+          -697,
+          -439,
+          1855,
+          623,
+          445,
+          1547
+        ],
+        "permanent_residue": 16,
+        "precision": 7,
+        "prime": 2,
+        "size": 6,
+        "spacing": 4,
+        "trial": 2,
+        "valuation": 4
+      },
+      {
+        "columns": [
+          717,
+          975,
+          -1223,
+          -1819,
+          1543,
+          -1987
+        ],
+        "permanent_residue": 112,
+        "precision": 7,
+        "prime": 2,
+        "size": 6,
+        "spacing": 6,
+        "trial": 0,
+        "valuation": 4
+      },
+      {
+        "columns": [
+          1159,
+          -1835,
+          1309,
+          1009,
+          55,
+          -1821
+        ],
+        "permanent_residue": 48,
+        "precision": 7,
+        "prime": 2,
+        "size": 6,
+        "spacing": 6,
+        "trial": 1,
+        "valuation": 4
+      },
+      {
+        "columns": [
+          -41,
+          1139,
+          1145,
+          893,
+          -1139,
+          -1839
+        ],
+        "permanent_residue": 112,
+        "precision": 7,
+        "prime": 2,
+        "size": 6,
+        "spacing": 6,
+        "trial": 2,
+        "valuation": 4
+      },
+      {
+        "columns": [
+          -637,
+          1437,
+          625,
+          603,
+          -673,
+          -89
+        ],
+        "permanent_residue": 112,
+        "precision": 7,
+        "prime": 2,
+        "size": 6,
+        "spacing": 10,
+        "trial": 0,
+        "valuation": 4
+      },
+      {
+        "columns": [
+          1659,
+          1051,
+          -29,
+          -1929,
+          -1473,
+          1007
+        ],
+        "permanent_residue": 48,
+        "precision": 7,
+        "prime": 2,
+        "size": 6,
+        "spacing": 10,
+        "trial": 1,
+        "valuation": 4
+      },
+      {
+        "columns": [
+          1963,
+          -1111,
+          -1671,
+          1951,
+          1369,
+          1387
+        ],
+        "permanent_residue": 48,
+        "precision": 7,
+        "prime": 2,
+        "size": 6,
+        "spacing": 10,
+        "trial": 2,
+        "valuation": 4
+      },
+      {
+        "columns": [
+          -139,
+          -863,
+          -1081,
+          -1943,
+          -521,
+          1681,
+          1039
+        ],
+        "permanent_residue": 48,
+        "precision": 7,
+        "prime": 2,
+        "size": 7,
+        "spacing": 2,
+        "trial": 0,
+        "valuation": 4
+      },
+      {
+        "columns": [
+          1055,
+          387,
+          -1501,
+          411,
+          -733,
+          77,
+          247
+        ],
+        "permanent_residue": 16,
+        "precision": 7,
+        "prime": 2,
+        "size": 7,
+        "spacing": 2,
+        "trial": 1,
+        "valuation": 4
+      },
+      {
+        "columns": [
+          -1609,
+          -1697,
+          1591,
+          -1889,
+          299,
+          1231,
+          1387
+        ],
+        "permanent_residue": 112,
+        "precision": 7,
+        "prime": 2,
+        "size": 7,
+        "spacing": 2,
+        "trial": 2,
+        "valuation": 4
+      },
+      {
+        "columns": [
+          447,
+          -369,
+          -373,
+          -1399,
+          955,
+          943,
+          391
+        ],
+        "permanent_residue": 112,
+        "precision": 7,
+        "prime": 2,
+        "size": 7,
+        "spacing": 4,
+        "trial": 0,
+        "valuation": 4
+      },
+      {
+        "columns": [
+          -877,
+          651,
+          233,
+          -1187,
+          1931,
+          -1689,
+          -421
+        ],
+        "permanent_residue": 80,
+        "precision": 7,
+        "prime": 2,
+        "size": 7,
+        "spacing": 4,
+        "trial": 1,
+        "valuation": 4
+      },
+      {
+        "columns": [
+          1397,
+          1089,
+          1443,
+          -721,
+          95,
+          -451,
+          769
+        ],
+        "permanent_residue": 80,
+        "precision": 7,
+        "prime": 2,
+        "size": 7,
+        "spacing": 4,
+        "trial": 2,
+        "valuation": 4
+      },
+      {
+        "columns": [
+          -1169,
+          539,
+          -101,
+          -1001,
+          319,
+          -851,
+          1751
+        ],
+        "permanent_residue": 80,
+        "precision": 7,
+        "prime": 2,
+        "size": 7,
+        "spacing": 6,
+        "trial": 0,
+        "valuation": 4
+      },
+      {
+        "columns": [
+          -1945,
+          -697,
+          85,
+          -1275,
+          1931,
+          -1085,
+          1075
+        ],
+        "permanent_residue": 112,
+        "precision": 7,
+        "prime": 2,
+        "size": 7,
+        "spacing": 6,
+        "trial": 1,
+        "valuation": 4
+      },
+      {
+        "columns": [
+          -635,
+          -1259,
+          -545,
+          -1591,
+          -517,
+          -1177,
+          -1943
+        ],
+        "permanent_residue": 112,
+        "precision": 7,
+        "prime": 2,
+        "size": 7,
+        "spacing": 6,
+        "trial": 2,
+        "valuation": 4
+      },
+      {
+        "columns": [
+          973,
+          1585,
+          -1773,
+          -11,
+          -313,
+          549,
+          -951
+        ],
+        "permanent_residue": 80,
+        "precision": 7,
+        "prime": 2,
+        "size": 7,
+        "spacing": 10,
+        "trial": 0,
+        "valuation": 4
+      },
+      {
+        "columns": [
+          -971,
+          -1147,
+          -1345,
+          -351,
+          975,
+          417,
+          115
+        ],
+        "permanent_residue": 48,
+        "precision": 7,
+        "prime": 2,
+        "size": 7,
+        "spacing": 10,
+        "trial": 1,
+        "valuation": 4
+      },
+      {
+        "columns": [
+          -1175,
+          -221,
+          -1811,
+          1007,
+          -1507,
+          1963,
+          -765
+        ],
+        "permanent_residue": 16,
+        "precision": 7,
+        "prime": 2,
+        "size": 7,
+        "spacing": 10,
+        "trial": 2,
+        "valuation": 4
+      },
+      {
+        "columns": [
+          -1619,
+          623,
+          1803,
+          603,
+          1431,
+          1337,
+          1529,
+          213
+        ],
+        "permanent_residue": 384,
+        "precision": 10,
+        "prime": 2,
+        "size": 8,
+        "spacing": 2,
+        "trial": 0,
+        "valuation": 7
+      },
+      {
+        "columns": [
+          -349,
+          1585,
+          -1795,
+          1757,
+          1543,
+          -1121,
+          -503,
+          467
+        ],
+        "permanent_residue": 384,
+        "precision": 10,
+        "prime": 2,
+        "size": 8,
+        "spacing": 2,
+        "trial": 1,
+        "valuation": 7
+      },
+      {
+        "columns": [
+          -1865,
+          -59,
+          -1827,
+          1071,
+          1235,
+          -1361,
+          1133,
+          731
+        ],
+        "permanent_residue": 896,
+        "precision": 10,
+        "prime": 2,
+        "size": 8,
+        "spacing": 2,
+        "trial": 2,
+        "valuation": 7
+      },
+      {
+        "columns": [
+          1773,
+          -735,
+          511,
+          349,
+          773,
+          63,
+          1719,
+          -1155
+        ],
+        "permanent_residue": 128,
+        "precision": 10,
+        "prime": 2,
+        "size": 8,
+        "spacing": 4,
+        "trial": 0,
+        "valuation": 7
+      },
+      {
+        "columns": [
+          -279,
+          -1611,
+          893,
+          -47,
+          -1027,
+          735,
+          -1597,
+          593
+        ],
+        "permanent_residue": 384,
+        "precision": 10,
+        "prime": 2,
+        "size": 8,
+        "spacing": 4,
+        "trial": 1,
+        "valuation": 7
+      },
+      {
+        "columns": [
+          573,
+          241,
+          979,
+          695,
+          -785,
+          -1749,
+          1793,
+          -933
+        ],
+        "permanent_residue": 128,
+        "precision": 10,
+        "prime": 2,
+        "size": 8,
+        "spacing": 4,
+        "trial": 2,
+        "valuation": 7
+      },
+      {
+        "columns": [
+          -1811,
+          -1355,
+          355,
+          -707,
+          489,
+          -1969,
+          607,
+          563
+        ],
+        "permanent_residue": 384,
+        "precision": 10,
+        "prime": 2,
+        "size": 8,
+        "spacing": 6,
+        "trial": 0,
+        "valuation": 7
+      },
+      {
+        "columns": [
+          -657,
+          -607,
+          -1667,
+          489,
+          -853,
+          1823,
+          361,
+          -1491
+        ],
+        "permanent_residue": 896,
+        "precision": 10,
+        "prime": 2,
+        "size": 8,
+        "spacing": 6,
+        "trial": 1,
+        "valuation": 7
+      },
+      {
+        "columns": [
+          -1453,
+          -125,
+          -889,
+          -3,
+          717,
+          1963,
+          -1913,
+          -795
+        ],
+        "permanent_residue": 384,
+        "precision": 10,
+        "prime": 2,
+        "size": 8,
+        "spacing": 6,
+        "trial": 2,
+        "valuation": 7
+      },
+      {
+        "columns": [
+          -681,
+          1479,
+          493,
+          1059,
+          1577,
+          -1529,
+          685,
+          -1685
+        ],
+        "permanent_residue": 896,
+        "precision": 10,
+        "prime": 2,
+        "size": 8,
+        "spacing": 10,
+        "trial": 0,
+        "valuation": 7
+      },
+      {
+        "columns": [
+          -215,
+          193,
+          1381,
+          1513,
+          1127,
+          -1529,
+          1995,
+          435
+        ],
+        "permanent_residue": 384,
+        "precision": 10,
+        "prime": 2,
+        "size": 8,
+        "spacing": 10,
+        "trial": 1,
+        "valuation": 7
+      },
+      {
+        "columns": [
+          661,
+          -1507,
+          -1527,
+          779,
+          297,
+          -27,
+          -619,
+          -1883
+        ],
+        "permanent_residue": 896,
+        "precision": 10,
+        "prime": 2,
+        "size": 8,
+        "spacing": 10,
+        "trial": 2,
+        "valuation": 7
+      },
+      {
+        "columns": [
+          -387,
+          865,
+          1073,
+          675,
+          -1353,
+          1245,
+          -1983,
+          259,
+          583
+        ],
+        "permanent_residue": 384,
+        "precision": 10,
+        "prime": 2,
+        "size": 9,
+        "spacing": 2,
+        "trial": 0,
+        "valuation": 7
+      },
+      {
+        "columns": [
+          643,
+          1699,
+          1137,
+          129,
+          893,
+          -847,
+          -991,
+          1337,
+          697
+        ],
+        "permanent_residue": 896,
+        "precision": 10,
+        "prime": 2,
+        "size": 9,
+        "spacing": 2,
+        "trial": 1,
+        "valuation": 7
+      },
+      {
+        "columns": [
+          -57,
+          1875,
+          -1059,
+          -339,
+          963,
+          1745,
+          443,
+          -1895,
+          -615
+        ],
+        "permanent_residue": 896,
+        "precision": 10,
+        "prime": 2,
+        "size": 9,
+        "spacing": 2,
+        "trial": 2,
+        "valuation": 7
+      },
+      {
+        "columns": [
+          -771,
+          1717,
+          -321,
+          927,
+          -1859,
+          993,
+          1803,
+          1885,
+          -1463
+        ],
+        "permanent_residue": 128,
+        "precision": 10,
+        "prime": 2,
+        "size": 9,
+        "spacing": 4,
+        "trial": 0,
+        "valuation": 7
+      },
+      {
+        "columns": [
+          -67,
+          -1455,
+          103,
+          1045,
+          -725,
+          1559,
+          1887,
+          -1693,
+          653
+        ],
+        "permanent_residue": 128,
+        "precision": 10,
+        "prime": 2,
+        "size": 9,
+        "spacing": 4,
+        "trial": 1,
+        "valuation": 7
+      },
+      {
+        "columns": [
+          1033,
+          -1365,
+          1699,
+          -165,
+          -221,
+          -745,
+          797,
+          -1629,
+          1921
+        ],
+        "permanent_residue": 384,
+        "precision": 10,
+        "prime": 2,
+        "size": 9,
+        "spacing": 4,
+        "trial": 2,
+        "valuation": 7
+      },
+      {
+        "columns": [
+          -827,
+          -1251,
+          -1765,
+          -1125,
+          -1673,
+          785,
+          -1735,
+          1609,
+          -1567
+        ],
+        "permanent_residue": 640,
+        "precision": 10,
+        "prime": 2,
+        "size": 9,
+        "spacing": 6,
+        "trial": 0,
+        "valuation": 7
+      },
+      {
+        "columns": [
+          1889,
+          -389,
+          -245,
+          -979,
+          1811,
+          999,
+          -1199,
+          -135,
+          -213
+        ],
+        "permanent_residue": 128,
+        "precision": 10,
+        "prime": 2,
+        "size": 9,
+        "spacing": 6,
+        "trial": 1,
+        "valuation": 7
+      },
+      {
+        "columns": [
+          1517,
+          -687,
+          -1047,
+          -393,
+          -225,
+          715,
+          -281,
+          1283,
+          1543
+        ],
+        "permanent_residue": 896,
+        "precision": 10,
+        "prime": 2,
+        "size": 9,
+        "spacing": 6,
+        "trial": 2,
+        "valuation": 7
+      },
+      {
+        "columns": [
+          231,
+          921,
+          1531,
+          1123,
+          1937,
+          -1113,
+          259,
+          -1881,
+          1437
+        ],
+        "permanent_residue": 384,
+        "precision": 10,
+        "prime": 2,
+        "size": 9,
+        "spacing": 10,
+        "trial": 0,
+        "valuation": 7
+      },
+      {
+        "columns": [
+          -1717,
+          1657,
+          857,
+          1427,
+          -1079,
+          571,
+          651,
+          -501,
+          -5
+        ],
+        "permanent_residue": 384,
+        "precision": 10,
+        "prime": 2,
+        "size": 9,
+        "spacing": 10,
+        "trial": 1,
+        "valuation": 7
+      },
+      {
+        "columns": [
+          653,
+          -85,
+          1843,
+          -537,
+          1479,
+          791,
+          721,
+          399,
+          1815
+        ],
+        "permanent_residue": 128,
+        "precision": 10,
+        "prime": 2,
+        "size": 9,
+        "spacing": 10,
+        "trial": 2,
+        "valuation": 7
+      },
+      {
+        "columns": [
+          -159,
+          -1625,
+          1437,
+          461,
+          -1411,
+          -665,
+          1111,
+          1065,
+          -1233,
+          -1667
+        ],
+        "permanent_residue": 1280,
+        "precision": 11,
+        "prime": 2,
+        "size": 10,
+        "spacing": 2,
+        "trial": 0,
+        "valuation": 8
+      },
+      {
+        "columns": [
+          -707,
+          1835,
+          819,
+          1989,
+          305,
+          753,
+          1547,
+          -1421,
+          -1907,
+          627
+        ],
+        "permanent_residue": 1280,
+        "precision": 11,
+        "prime": 2,
+        "size": 10,
+        "spacing": 2,
+        "trial": 1,
+        "valuation": 8
+      },
+      {
+        "columns": [
+          1951,
+          -1637,
+          1869,
+          125,
+          751,
+          51,
+          -605,
+          -297,
+          397,
+          1789
+        ],
+        "permanent_residue": 256,
+        "precision": 11,
+        "prime": 2,
+        "size": 10,
+        "spacing": 2,
+        "trial": 2,
+        "valuation": 8
+      },
+      {
+        "columns": [
+          1035,
+          1611,
+          -605,
+          -1215,
+          -221,
+          -331,
+          1275,
+          -789,
+          1411,
+          -821
+        ],
+        "permanent_residue": 1792,
+        "precision": 11,
+        "prime": 2,
+        "size": 10,
+        "spacing": 4,
+        "trial": 0,
+        "valuation": 8
+      },
+      {
+        "columns": [
+          -1447,
+          -1823,
+          -1713,
+          685,
+          1993,
+          -401,
+          1741,
+          -1773,
+          -1565,
+          531
+        ],
+        "permanent_residue": 1280,
+        "precision": 11,
+        "prime": 2,
+        "size": 10,
+        "spacing": 4,
+        "trial": 1,
+        "valuation": 8
+      },
+      {
+        "columns": [
+          87,
+          907,
+          -843,
+          -621,
+          97,
+          519,
+          877,
+          -1195,
+          -413,
+          -1279
+        ],
+        "permanent_residue": 256,
+        "precision": 11,
+        "prime": 2,
+        "size": 10,
+        "spacing": 4,
+        "trial": 2,
+        "valuation": 8
+      },
+      {
+        "columns": [
+          1405,
+          257,
+          161,
+          393,
+          457,
+          385,
+          -807,
+          1589,
+          -1483,
+          1713
+        ],
+        "permanent_residue": 256,
+        "precision": 11,
+        "prime": 2,
+        "size": 10,
+        "spacing": 6,
+        "trial": 0,
+        "valuation": 8
+      },
+      {
+        "columns": [
+          221,
+          -777,
+          -71,
+          313,
+          -495,
+          183,
+          1713,
+          -695,
+          53,
+          -347
+        ],
+        "permanent_residue": 1280,
+        "precision": 11,
+        "prime": 2,
+        "size": 10,
+        "spacing": 6,
+        "trial": 1,
+        "valuation": 8
+      },
+      {
+        "columns": [
+          -1363,
+          -79,
+          1503,
+          209,
+          1069,
+          -1981,
+          817,
+          1465,
+          -429,
+          -469
+        ],
+        "permanent_residue": 256,
+        "precision": 11,
+        "prime": 2,
+        "size": 10,
+        "spacing": 6,
+        "trial": 2,
+        "valuation": 8
+      },
+      {
+        "columns": [
+          -337,
+          659,
+          -1907,
+          -545,
+          -305,
+          -241,
+          -1501,
+          609,
+          1683,
+          399
+        ],
+        "permanent_residue": 1280,
+        "precision": 11,
+        "prime": 2,
+        "size": 10,
+        "spacing": 10,
+        "trial": 0,
+        "valuation": 8
+      },
+      {
+        "columns": [
+          1665,
+          -1819,
+          -1945,
+          1321,
+          793,
+          293,
+          -1951,
+          305,
+          1767,
+          627
+        ],
+        "permanent_residue": 256,
+        "precision": 11,
+        "prime": 2,
+        "size": 10,
+        "spacing": 10,
+        "trial": 1,
+        "valuation": 8
+      },
+      {
+        "columns": [
+          1381,
+          655,
+          1275,
+          831,
+          -473,
+          -1533,
+          -1155,
+          -271,
+          551,
+          -391
+        ],
+        "permanent_residue": 256,
+        "precision": 11,
+        "prime": 2,
+        "size": 10,
+        "spacing": 10,
+        "trial": 2,
+        "valuation": 8
+      },
+      {
+        "columns": [
+          1985,
+          -593,
+          309,
+          1475,
+          -1771,
+          1137,
+          -1331,
+          -669,
+          41,
+          1245,
+          1193
+        ],
+        "permanent_residue": 256,
+        "precision": 11,
+        "prime": 2,
+        "size": 11,
+        "spacing": 2,
+        "trial": 0,
+        "valuation": 8
+      },
+      {
+        "columns": [
+          -625,
+          -339,
+          493,
+          -1561,
+          529,
+          1773,
+          827,
+          -1535,
+          1709,
+          -175,
+          413
+        ],
+        "permanent_residue": 256,
+        "precision": 11,
+        "prime": 2,
+        "size": 11,
+        "spacing": 2,
+        "trial": 1,
+        "valuation": 8
+      },
+      {
+        "columns": [
+          295,
+          -153,
+          -707,
+          -1531,
+          1637,
+          -899,
+          271,
+          -1819,
+          895,
+          -597,
+          1301
+        ],
+        "permanent_residue": 1280,
+        "precision": 11,
+        "prime": 2,
+        "size": 11,
+        "spacing": 2,
+        "trial": 2,
+        "valuation": 8
+      },
+      {
+        "columns": [
+          -1103,
+          -1493,
+          1985,
+          369,
+          -1339,
+          -1563,
+          -207,
+          -1695,
+          1293,
+          -1859,
+          -985
+        ],
+        "permanent_residue": 1280,
+        "precision": 11,
+        "prime": 2,
+        "size": 11,
+        "spacing": 4,
+        "trial": 0,
+        "valuation": 8
+      },
+      {
+        "columns": [
+          73,
+          1295,
+          -1761,
+          -1965,
+          631,
+          -607,
+          -979,
+          -1241,
+          177,
+          -1613,
+          1271
+        ],
+        "permanent_residue": 768,
+        "precision": 11,
+        "prime": 2,
+        "size": 11,
+        "spacing": 4,
+        "trial": 1,
+        "valuation": 8
+      },
+      {
+        "columns": [
+          1407,
+          1413,
+          -965,
+          85,
+          -671,
+          -253,
+          -647,
+          1899,
+          -329,
+          1363,
+          1635
+        ],
+        "permanent_residue": 768,
+        "precision": 11,
+        "prime": 2,
+        "size": 11,
+        "spacing": 4,
+        "trial": 2,
+        "valuation": 8
+      },
+      {
+        "columns": [
+          1683,
+          1873,
+          1835,
+          -975,
+          681,
+          359,
+          -1903,
+          -1393,
+          -1769,
+          -9,
+          -1249
+        ],
+        "permanent_residue": 1280,
+        "precision": 11,
+        "prime": 2,
+        "size": 11,
+        "spacing": 6,
+        "trial": 0,
+        "valuation": 8
+      },
+      {
+        "columns": [
+          1953,
+          1177,
+          1089,
+          -1531,
+          -641,
+          -1241,
+          135,
+          -1005,
+          -203,
+          831,
+          -719
+        ],
+        "permanent_residue": 256,
+        "precision": 11,
+        "prime": 2,
+        "size": 11,
+        "spacing": 6,
+        "trial": 1,
+        "valuation": 8
+      },
+      {
+        "columns": [
+          -129,
+          1947,
+          1345,
+          1089,
+          -1173,
+          -1725,
+          759,
+          -543,
+          -629,
+          -1823,
+          1239
+        ],
+        "permanent_residue": 1280,
+        "precision": 11,
+        "prime": 2,
+        "size": 11,
+        "spacing": 6,
+        "trial": 2,
+        "valuation": 8
+      },
+      {
+        "columns": [
+          -1885,
+          -27,
+          -709,
+          1403,
+          -551,
+          -513,
+          -1515,
+          867,
+          1237,
+          -1019,
+          -1089
+        ],
+        "permanent_residue": 768,
+        "precision": 11,
+        "prime": 2,
+        "size": 11,
+        "spacing": 10,
+        "trial": 0,
+        "valuation": 8
+      },
+      {
+        "columns": [
+          -1571,
+          321,
+          827,
+          -737,
+          1981,
+          261,
+          1191,
+          -1197,
+          -509,
+          1861,
+          -1903
+        ],
+        "permanent_residue": 1280,
+        "precision": 11,
+        "prime": 2,
+        "size": 11,
+        "spacing": 10,
+        "trial": 1,
+        "valuation": 8
+      },
+      {
+        "columns": [
+          1337,
+          1191,
+          993,
+          1365,
+          937,
+          117,
+          -1099,
+          561,
+          1773,
+          -1521,
+          -591
+        ],
+        "permanent_residue": 768,
+        "precision": 11,
+        "prime": 2,
+        "size": 11,
+        "spacing": 10,
+        "trial": 2,
+        "valuation": 8
+      },
+      {
+        "columns": [
+          -1009,
+          925,
+          1729,
+          -1973,
+          -829,
+          439,
+          1119,
+          585,
+          -711,
+          -1903,
+          339,
+          -91
+        ],
+        "permanent_residue": 3072,
+        "precision": 13,
+        "prime": 2,
+        "size": 12,
+        "spacing": 2,
+        "trial": 0,
+        "valuation": 10
+      },
+      {
+        "columns": [
+          1675,
+          799,
+          -1559,
+          939,
+          -925,
+          923,
+          5,
+          -455,
+          -1123,
+          -887,
+          -1133,
+          303
+        ],
+        "permanent_residue": 7168,
+        "precision": 13,
+        "prime": 2,
+        "size": 12,
+        "spacing": 2,
+        "trial": 1,
+        "valuation": 10
+      },
+      {
+        "columns": [
+          -357,
+          1059,
+          -1889,
+          1431,
+          67,
+          551,
+          681,
+          -1329,
+          99,
+          435,
+          -133,
+          -1739
+        ],
+        "permanent_residue": 3072,
+        "precision": 13,
+        "prime": 2,
+        "size": 12,
+        "spacing": 2,
+        "trial": 2,
+        "valuation": 10
+      },
+      {
+        "columns": [
+          299,
+          1659,
+          1779,
+          1551,
+          -1897,
+          325,
+          -1731,
+          1475,
+          501,
+          1053,
+          -541,
+          801
+        ],
+        "permanent_residue": 1024,
+        "precision": 13,
+        "prime": 2,
+        "size": 12,
+        "spacing": 4,
+        "trial": 0,
+        "valuation": 10
+      },
+      {
+        "columns": [
+          813,
+          1061,
+          447,
+          803,
+          -145,
+          1641,
+          365,
+          -737,
+          -571,
+          1273,
+          -1599,
+          -615
+        ],
+        "permanent_residue": 3072,
+        "precision": 13,
+        "prime": 2,
+        "size": 12,
+        "spacing": 4,
+        "trial": 1,
+        "valuation": 10
+      },
+      {
+        "columns": [
+          1749,
+          1749,
+          1275,
+          -1257,
+          -1619,
+          -153,
+          1591,
+          -1429,
+          1643,
+          107,
+          -601,
+          681
+        ],
+        "permanent_residue": 3072,
+        "precision": 13,
+        "prime": 2,
+        "size": 12,
+        "spacing": 4,
+        "trial": 2,
+        "valuation": 10
+      },
+      {
+        "columns": [
+          379,
+          -277,
+          -1287,
+          1915,
+          549,
+          391,
+          1429,
+          -379,
+          1563,
+          -1875,
+          355,
+          1329
+        ],
+        "permanent_residue": 3072,
+        "precision": 13,
+        "prime": 2,
+        "size": 12,
+        "spacing": 6,
+        "trial": 0,
+        "valuation": 10
+      },
+      {
+        "columns": [
+          -729,
+          1965,
+          -365,
+          1709,
+          1579,
+          275,
+          1173,
+          1277,
+          1055,
+          457,
+          -871,
+          631
+        ],
+        "permanent_residue": 3072,
+        "precision": 13,
+        "prime": 2,
+        "size": 12,
+        "spacing": 6,
+        "trial": 1,
+        "valuation": 10
+      },
+      {
+        "columns": [
+          1341,
+          1429,
+          317,
+          405,
+          1173,
+          -1117,
+          195,
+          -1893,
+          289,
+          1489,
+          437,
+          -1773
+        ],
+        "permanent_residue": 7168,
+        "precision": 13,
+        "prime": 2,
+        "size": 12,
+        "spacing": 6,
+        "trial": 2,
+        "valuation": 10
+      },
+      {
+        "columns": [
+          1597,
+          -1457,
+          -229,
+          465,
+          899,
+          53,
+          -1269,
+          -93,
+          905,
+          -847,
+          -277,
+          1003
+        ],
+        "permanent_residue": 7168,
+        "precision": 13,
+        "prime": 2,
+        "size": 12,
+        "spacing": 10,
+        "trial": 0,
+        "valuation": 10
+      },
+      {
+        "columns": [
+          -1621,
+          1487,
+          -1195,
+          -1677,
+          -267,
+          1867,
+          539,
+          -683,
+          605,
+          441,
+          117,
+          -1261
+        ],
+        "permanent_residue": 3072,
+        "precision": 13,
+        "prime": 2,
+        "size": 12,
+        "spacing": 10,
+        "trial": 1,
+        "valuation": 10
+      },
+      {
+        "columns": [
+          171,
+          -1653,
+          -463,
+          -1055,
+          625,
+          1835,
+          1537,
+          -1567,
+          -999,
+          -869,
+          1735,
+          -403
+        ],
+        "permanent_residue": 3072,
+        "precision": 13,
+        "prime": 2,
+        "size": 12,
+        "spacing": 10,
+        "trial": 2,
+        "valuation": 10
+      },
+      {
+        "columns": [
+          -663,
+          297,
+          1405,
+          -555,
+          -1355,
+          1505,
+          1121,
+          -1893,
+          -415,
+          -825,
+          1445,
+          583,
+          1463
+        ],
+        "permanent_residue": 7168,
+        "precision": 13,
+        "prime": 2,
+        "size": 13,
+        "spacing": 2,
+        "trial": 0,
+        "valuation": 10
+      },
+      {
+        "columns": [
+          945,
+          -709,
+          1565,
+          -307,
+          -1467,
+          1103,
+          561,
+          -1243,
+          1959,
+          -1419,
+          705,
+          645,
+          -661
+        ],
+        "permanent_residue": 3072,
+        "precision": 13,
+        "prime": 2,
+        "size": 13,
+        "spacing": 2,
+        "trial": 1,
+        "valuation": 10
+      },
+      {
+        "columns": [
+          621,
+          257,
+          1175,
+          829,
+          -1101,
+          -241,
+          -1059,
+          -1649,
+          -1373,
+          1817,
+          901,
+          -1903,
+          -1207
+        ],
+        "permanent_residue": 5120,
+        "precision": 13,
+        "prime": 2,
+        "size": 13,
+        "spacing": 2,
+        "trial": 2,
+        "valuation": 10
+      },
+      {
+        "columns": [
+          -1081,
+          1953,
+          1719,
+          -657,
+          -459,
+          -1813,
+          1969,
+          -641,
+          -1345,
+          1693,
+          593,
+          1095,
+          801
+        ],
+        "permanent_residue": 1024,
+        "precision": 13,
+        "prime": 2,
+        "size": 13,
+        "spacing": 4,
+        "trial": 0,
+        "valuation": 10
+      },
+      {
+        "columns": [
+          -1687,
+          935,
+          887,
+          -1521,
+          1587,
+          407,
+          -1883,
+          -1347,
+          1879,
+          -601,
+          1141,
+          -1933,
+          989
+        ],
+        "permanent_residue": 3072,
+        "precision": 13,
+        "prime": 2,
+        "size": 13,
+        "spacing": 4,
+        "trial": 1,
+        "valuation": 10
+      },
+      {
+        "columns": [
+          13,
+          1253,
+          1659,
+          -959,
+          83,
+          -1941,
+          675,
+          -863,
+          -1021,
+          37,
+          -973,
+          555,
+          -1295
+        ],
+        "permanent_residue": 5120,
+        "precision": 13,
+        "prime": 2,
+        "size": 13,
+        "spacing": 4,
+        "trial": 2,
+        "valuation": 10
+      },
+      {
+        "columns": [
+          -789,
+          -69,
+          -657,
+          1157,
+          -603,
+          449,
+          1705,
+          -1075,
+          1219,
+          -1783,
+          1909,
+          227,
+          -579
+        ],
+        "permanent_residue": 1024,
+        "precision": 13,
+        "prime": 2,
+        "size": 13,
+        "spacing": 6,
+        "trial": 0,
+        "valuation": 10
+      },
+      {
+        "columns": [
+          1587,
+          1975,
+          -1425,
+          -961,
+          -1955,
+          -517,
+          -967,
+          -1921,
+          -665,
+          -1189,
+          879,
+          -667,
+          -541
+        ],
+        "permanent_residue": 3072,
+        "precision": 13,
+        "prime": 2,
+        "size": 13,
+        "spacing": 6,
+        "trial": 1,
+        "valuation": 10
+      },
+      {
+        "columns": [
+          1511,
+          751,
+          -1421,
+          -767,
+          -305,
+          1945,
+          -1679,
+          -1611,
+          185,
+          1129,
+          -1603,
+          753,
+          -1475
+        ],
+        "permanent_residue": 3072,
+        "precision": 13,
+        "prime": 2,
+        "size": 13,
+        "spacing": 6,
+        "trial": 2,
+        "valuation": 10
+      },
+      {
+        "columns": [
+          -181,
+          1539,
+          -1173,
+          -1465,
+          815,
+          -771,
+          737,
+          -1797,
+          1917,
+          -1861,
+          773,
+          -1717,
+          1549
+        ],
+        "permanent_residue": 3072,
+        "precision": 13,
+        "prime": 2,
+        "size": 13,
+        "spacing": 10,
+        "trial": 0,
+        "valuation": 10
+      },
+      {
+        "columns": [
+          1371,
+          1523,
+          -1425,
+          1737,
+          339,
+          -1425,
+          -653,
+          -909,
+          1395,
+          -1969,
+          183,
+          -17,
+          55
+        ],
+        "permanent_residue": 3072,
+        "precision": 13,
+        "prime": 2,
+        "size": 13,
+        "spacing": 10,
+        "trial": 1,
+        "valuation": 10
+      },
+      {
+        "columns": [
+          37,
+          -1023,
+          -905,
+          -1363,
+          -105,
+          1663,
+          197,
+          1767,
+          -1391,
+          -1685,
+          1519,
+          -709,
+          -339
+        ],
+        "permanent_residue": 5120,
+        "precision": 13,
+        "prime": 2,
+        "size": 13,
+        "spacing": 10,
+        "trial": 2,
+        "valuation": 10
+      },
+      {
+        "columns": [
+          -263,
+          437,
+          -457,
+          -871,
+          1009,
+          65,
+          -971,
+          1875,
+          -287,
+          1755,
+          -881,
+          1801,
+          805,
+          -207
+        ],
+        "permanent_residue": 14336,
+        "precision": 14,
+        "prime": 2,
+        "size": 14,
+        "spacing": 2,
+        "trial": 0,
+        "valuation": 11
+      },
+      {
+        "columns": [
+          -1287,
+          689,
+          1379,
+          893,
+          759,
+          219,
+          -1749,
+          -735,
+          537,
+          -1023,
+          155,
+          1643,
+          1215,
+          -7
+        ],
+        "permanent_residue": 6144,
+        "precision": 14,
+        "prime": 2,
+        "size": 14,
+        "spacing": 2,
+        "trial": 1,
+        "valuation": 11
+      },
+      {
+        "columns": [
+          -1767,
+          1749,
+          -1197,
+          543,
+          -1081,
+          1079,
+          71,
+          -337,
+          -1027,
+          1981,
+          -1471,
+          1443,
+          -273,
+          1197
+        ],
+        "permanent_residue": 14336,
+        "precision": 14,
+        "prime": 2,
+        "size": 14,
+        "spacing": 2,
+        "trial": 2,
+        "valuation": 11
+      },
+      {
+        "columns": [
+          1567,
+          -251,
+          -1445,
+          -1459,
+          129,
+          1495,
+          233,
+          -31,
+          101,
+          967,
+          833,
+          -1603,
+          -255,
+          -1749
+        ],
+        "permanent_residue": 6144,
+        "precision": 14,
+        "prime": 2,
+        "size": 14,
+        "spacing": 4,
+        "trial": 0,
+        "valuation": 11
+      },
+      {
+        "columns": [
+          -323,
+          -383,
+          -1093,
+          1461,
+          1183,
+          603,
+          -1185,
+          1333,
+          1971,
+          -989,
+          -627,
+          -1523,
+          -1975,
+          453
+        ],
+        "permanent_residue": 2048,
+        "precision": 14,
+        "prime": 2,
+        "size": 14,
+        "spacing": 4,
+        "trial": 1,
+        "valuation": 11
+      },
+      {
+        "columns": [
+          -1327,
+          637,
+          255,
+          39,
+          -1097,
+          1449,
+          1079,
+          -353,
+          1743,
+          -1361,
+          933,
+          137,
+          1077,
+          1839
+        ],
+        "permanent_residue": 10240,
+        "precision": 14,
+        "prime": 2,
+        "size": 14,
+        "spacing": 4,
+        "trial": 2,
+        "valuation": 11
+      },
+      {
+        "columns": [
+          1511,
+          169,
+          179,
+          359,
+          -1469,
+          457,
+          -373,
+          1851,
+          1269,
+          767,
+          -1941,
+          -1247,
+          745,
+          -663
+        ],
+        "permanent_residue": 6144,
+        "precision": 14,
+        "prime": 2,
+        "size": 14,
+        "spacing": 6,
+        "trial": 0,
+        "valuation": 11
+      },
+      {
+        "columns": [
+          -1835,
+          183,
+          -1617,
+          1803,
+          123,
+          1295,
+          1403,
+          783,
+          1041,
+          -895,
+          -561,
+          41,
+          1875,
+          1641
+        ],
+        "permanent_residue": 14336,
+        "precision": 14,
+        "prime": 2,
+        "size": 14,
+        "spacing": 6,
+        "trial": 1,
+        "valuation": 11
+      },
+      {
+        "columns": [
+          1989,
+          1121,
+          159,
+          173,
+          1563,
+          -863,
+          -1997,
+          1293,
+          -1419,
+          -1863,
+          -47,
+          -1057,
+          1781,
+          -717
+        ],
+        "permanent_residue": 14336,
+        "precision": 14,
+        "prime": 2,
+        "size": 14,
+        "spacing": 6,
+        "trial": 2,
+        "valuation": 11
+      },
+      {
+        "columns": [
+          641,
+          1197,
+          251,
+          -1997,
+          683,
+          1091,
+          -445,
+          479,
+          -1761,
+          -1439,
+          1841,
+          1249,
+          675,
+          -749
+        ],
+        "permanent_residue": 14336,
+        "precision": 14,
+        "prime": 2,
+        "size": 14,
+        "spacing": 10,
+        "trial": 0,
+        "valuation": 11
+      },
+      {
+        "columns": [
+          -1353,
+          -125,
+          -207,
+          -349,
+          -329,
+          -1417,
+          -1801,
+          393,
+          -181,
+          -1329,
+          -11,
+          1799,
+          -1295,
+          -851
+        ],
+        "permanent_residue": 14336,
+        "precision": 14,
+        "prime": 2,
+        "size": 14,
+        "spacing": 10,
+        "trial": 1,
+        "valuation": 11
+      },
+      {
+        "columns": [
+          661,
+          1175,
+          -1937,
+          -337,
+          1669,
+          -53,
+          1707,
+          -1753,
+          1603,
+          1733,
+          -1037,
+          33,
+          1165,
+          -1985
+        ],
+        "permanent_residue": 14336,
+        "precision": 14,
+        "prime": 2,
+        "size": 14,
+        "spacing": 10,
+        "trial": 2,
+        "valuation": 11
+      },
+      {
+        "columns": [
+          2690
+        ],
+        "permanent_residue": 8,
+        "precision": 3,
+        "prime": 3,
+        "size": 1,
+        "spacing": 3,
+        "trial": 0,
+        "valuation": 0
+      },
+      {
+        "columns": [
+          -2788
+        ],
+        "permanent_residue": 23,
+        "precision": 3,
+        "prime": 3,
+        "size": 1,
+        "spacing": 3,
+        "trial": 1,
+        "valuation": 0
+      },
+      {
+        "columns": [
+          -2483
+        ],
+        "permanent_residue": 1,
+        "precision": 3,
+        "prime": 3,
+        "size": 1,
+        "spacing": 3,
+        "trial": 2,
+        "valuation": 0
+      },
+      {
+        "columns": [
+          -896
+        ],
+        "permanent_residue": 16,
+        "precision": 3,
+        "prime": 3,
+        "size": 1,
+        "spacing": 6,
+        "trial": 0,
+        "valuation": 0
+      },
+      {
+        "columns": [
+          166
+        ],
+        "permanent_residue": 7,
+        "precision": 3,
+        "prime": 3,
+        "size": 1,
+        "spacing": 6,
+        "trial": 1,
+        "valuation": 0
+      },
+      {
+        "columns": [
+          -52
+        ],
+        "permanent_residue": 14,
+        "precision": 3,
+        "prime": 3,
+        "size": 1,
+        "spacing": 6,
+        "trial": 2,
+        "valuation": 0
+      },
+      {
+        "columns": [
+          -1634,
+          -88
+        ],
+        "permanent_residue": 7,
+        "precision": 3,
+        "prime": 3,
+        "size": 2,
+        "spacing": 3,
+        "trial": 0,
+        "valuation": 0
+      },
+      {
+        "columns": [
+          1630,
+          -949
+        ],
+        "permanent_residue": 22,
+        "precision": 3,
+        "prime": 3,
+        "size": 2,
+        "spacing": 3,
+        "trial": 1,
+        "valuation": 0
+      },
+      {
+        "columns": [
+          -5,
+          517
+        ],
+        "permanent_residue": 20,
+        "precision": 3,
+        "prime": 3,
+        "size": 2,
+        "spacing": 3,
+        "trial": 2,
+        "valuation": 0
+      },
+      {
+        "columns": [
+          2669,
+          353
+        ],
+        "permanent_residue": 23,
+        "precision": 3,
+        "prime": 3,
+        "size": 2,
+        "spacing": 6,
+        "trial": 0,
+        "valuation": 0
+      },
+      {
+        "columns": [
+          2441,
+          214
+        ],
+        "permanent_residue": 4,
+        "precision": 3,
+        "prime": 3,
+        "size": 2,
+        "spacing": 6,
+        "trial": 1,
+        "valuation": 0
+      },
+      {
+        "columns": [
+          2399,
+          -2908
+        ],
+        "permanent_residue": 8,
+        "precision": 3,
+        "prime": 3,
+        "size": 2,
+        "spacing": 6,
+        "trial": 2,
+        "valuation": 0
+      },
+      {
+        "columns": [
+          -488,
+          -1570,
+          -550
+        ],
+        "permanent_residue": 15,
+        "precision": 4,
+        "prime": 3,
+        "size": 3,
+        "spacing": 3,
+        "trial": 0,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          503,
+          -2204,
+          -2569
+        ],
+        "permanent_residue": 51,
+        "precision": 4,
+        "prime": 3,
+        "size": 3,
+        "spacing": 3,
+        "trial": 1,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          -2053,
+          -2983,
+          275
+        ],
+        "permanent_residue": 3,
+        "precision": 4,
+        "prime": 3,
+        "size": 3,
+        "spacing": 3,
+        "trial": 2,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          -2009,
+          1531,
+          1237
+        ],
+        "permanent_residue": 6,
+        "precision": 4,
+        "prime": 3,
+        "size": 3,
+        "spacing": 6,
+        "trial": 0,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          2962,
+          -1919,
+          -2774
+        ],
+        "permanent_residue": 69,
+        "precision": 4,
+        "prime": 3,
+        "size": 3,
+        "spacing": 6,
+        "trial": 1,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          580,
+          1117,
+          1916
+        ],
+        "permanent_residue": 30,
+        "precision": 4,
+        "prime": 3,
+        "size": 3,
+        "spacing": 6,
+        "trial": 2,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          1423,
+          -2051,
+          -1706,
+          2699
+        ],
+        "permanent_residue": 48,
+        "precision": 4,
+        "prime": 3,
+        "size": 4,
+        "spacing": 3,
+        "trial": 0,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          -1763,
+          748,
+          -2122,
+          -2206
+        ],
+        "permanent_residue": 6,
+        "precision": 4,
+        "prime": 3,
+        "size": 4,
+        "spacing": 3,
+        "trial": 1,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          598,
+          -481,
+          1117,
+          -2461
+        ],
+        "permanent_residue": 15,
+        "precision": 4,
+        "prime": 3,
+        "size": 4,
+        "spacing": 3,
+        "trial": 2,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          -1394,
+          1549,
+          1192,
+          508
+        ],
+        "permanent_residue": 69,
+        "precision": 4,
+        "prime": 3,
+        "size": 4,
+        "spacing": 6,
+        "trial": 0,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          -998,
+          689,
+          2768,
+          2264
+        ],
+        "permanent_residue": 3,
+        "precision": 4,
+        "prime": 3,
+        "size": 4,
+        "spacing": 6,
+        "trial": 1,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          -1361,
+          95,
+          -118,
+          -193
+        ],
+        "permanent_residue": 48,
+        "precision": 4,
+        "prime": 3,
+        "size": 4,
+        "spacing": 6,
+        "trial": 2,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          1405,
+          2999,
+          313,
+          967,
+          -1229
+        ],
+        "permanent_residue": 42,
+        "precision": 4,
+        "prime": 3,
+        "size": 5,
+        "spacing": 3,
+        "trial": 0,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          2090,
+          2587,
+          1652,
+          -2843,
+          1460
+        ],
+        "permanent_residue": 51,
+        "precision": 4,
+        "prime": 3,
+        "size": 5,
+        "spacing": 3,
+        "trial": 1,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          -1685,
+          1691,
+          -2212,
+          -1466,
+          -2372
+        ],
+        "permanent_residue": 57,
+        "precision": 4,
+        "prime": 3,
+        "size": 5,
+        "spacing": 3,
+        "trial": 2,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          2107,
+          2720,
+          652,
+          1388,
+          2939
+        ],
+        "permanent_residue": 60,
+        "precision": 4,
+        "prime": 3,
+        "size": 5,
+        "spacing": 6,
+        "trial": 0,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          -1648,
+          -2840,
+          1280,
+          -1475,
+          -1850
+        ],
+        "permanent_residue": 75,
+        "precision": 4,
+        "prime": 3,
+        "size": 5,
+        "spacing": 6,
+        "trial": 1,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          2305,
+          2375,
+          2875,
+          -2329,
+          -1802
+        ],
+        "permanent_residue": 12,
+        "precision": 4,
+        "prime": 3,
+        "size": 5,
+        "spacing": 6,
+        "trial": 2,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          2065,
+          2332,
+          2723,
+          -2885,
+          926,
+          -1949
+        ],
+        "permanent_residue": 126,
+        "precision": 5,
+        "prime": 3,
+        "size": 6,
+        "spacing": 3,
+        "trial": 0,
+        "valuation": 2
+      },
+      {
+        "columns": [
+          235,
+          1529,
+          -349,
+          -1381,
+          136,
+          -79
+        ],
+        "permanent_residue": 207,
+        "precision": 5,
+        "prime": 3,
+        "size": 6,
+        "spacing": 3,
+        "trial": 1,
+        "valuation": 2
+      },
+      {
+        "columns": [
+          2387,
+          -2698,
+          -2005,
+          398,
+          71,
+          554
+        ],
+        "permanent_residue": 234,
+        "precision": 5,
+        "prime": 3,
+        "size": 6,
+        "spacing": 3,
+        "trial": 2,
+        "valuation": 2
+      },
+      {
+        "columns": [
+          508,
+          -925,
+          -1906,
+          -1865,
+          2653,
+          253
+        ],
+        "permanent_residue": 153,
+        "precision": 5,
+        "prime": 3,
+        "size": 6,
+        "spacing": 6,
+        "trial": 0,
+        "valuation": 2
+      },
+      {
+        "columns": [
+          76,
+          -1859,
+          -287,
+          -1244,
+          172,
+          -527
+        ],
+        "permanent_residue": 45,
+        "precision": 5,
+        "prime": 3,
+        "size": 6,
+        "spacing": 6,
+        "trial": 1,
+        "valuation": 2
+      },
+      {
+        "columns": [
+          1321,
+          1561,
+          787,
+          -28,
+          980,
+          -437
+        ],
+        "permanent_residue": 207,
+        "precision": 5,
+        "prime": 3,
+        "size": 6,
+        "spacing": 6,
+        "trial": 2,
+        "valuation": 2
+      },
+      {
+        "columns": [
+          -512,
+          -2830,
+          458,
+          -1499,
+          -1486,
+          250,
+          -683
+        ],
+        "permanent_residue": 117,
+        "precision": 5,
+        "prime": 3,
+        "size": 7,
+        "spacing": 3,
+        "trial": 0,
+        "valuation": 2
+      },
+      {
+        "columns": [
+          -2315,
+          -1978,
+          -2545,
+          -2374,
+          -2713,
+          2557,
+          -1486
+        ],
+        "permanent_residue": 171,
+        "precision": 5,
+        "prime": 3,
+        "size": 7,
+        "spacing": 3,
+        "trial": 1,
+        "valuation": 2
+      },
+      {
+        "columns": [
+          -2741,
+          502,
+          -2750,
+          -184,
+          1367,
+          -989,
+          -716
+        ],
+        "permanent_residue": 153,
+        "precision": 5,
+        "prime": 3,
+        "size": 7,
+        "spacing": 3,
+        "trial": 2,
+        "valuation": 2
+      },
+      {
+        "columns": [
+          236,
+          2818,
+          -674,
+          1441,
+          1127,
+          290,
+          904
+        ],
+        "permanent_residue": 117,
+        "precision": 5,
+        "prime": 3,
+        "size": 7,
+        "spacing": 6,
+        "trial": 0,
+        "valuation": 2
+      },
+      {
+        "columns": [
+          -1907,
+          349,
+          -379,
+          2609,
+          -563,
+          -2480,
+          1166
+        ],
+        "permanent_residue": 171,
+        "precision": 5,
+        "prime": 3,
+        "size": 7,
+        "spacing": 6,
+        "trial": 1,
+        "valuation": 2
+      },
+      {
+        "columns": [
+          1775,
+          -1204,
+          1930,
+          -1018,
+          1064,
+          668,
+          -289
+        ],
+        "permanent_residue": 180,
+        "precision": 5,
+        "prime": 3,
+        "size": 7,
+        "spacing": 6,
+        "trial": 2,
+        "valuation": 2
+      },
+      {
+        "columns": [
+          -2033,
+          -2516,
+          1111,
+          1652,
+          -2366,
+          1616,
+          2137,
+          -61
+        ],
+        "permanent_residue": 234,
+        "precision": 5,
+        "prime": 3,
+        "size": 8,
+        "spacing": 3,
+        "trial": 0,
+        "valuation": 2
+      },
+      {
+        "columns": [
+          -2359,
+          1865,
+          -1937,
+          -175,
+          1798,
+          2074,
+          562,
+          -679
+        ],
+        "permanent_residue": 36,
+        "precision": 5,
+        "prime": 3,
+        "size": 8,
+        "spacing": 3,
+        "trial": 1,
+        "valuation": 2
+      },
+      {
+        "columns": [
+          -1538,
+          1024,
+          -985,
+          1636,
+          62,
+          -655,
+          -2350,
+          2410
+        ],
+        "permanent_residue": 144,
+        "precision": 5,
+        "prime": 3,
+        "size": 8,
+        "spacing": 3,
+        "trial": 2,
+        "valuation": 2
+      },
+      {
+        "columns": [
+          -1493,
+          2756,
+          -1636,
+          -1552,
+          -2537,
+          1018,
+          2537,
+          -1640
+        ],
+        "permanent_residue": 117,
+        "precision": 5,
+        "prime": 3,
+        "size": 8,
+        "spacing": 6,
+        "trial": 0,
+        "valuation": 2
+      },
+      {
+        "columns": [
+          -1814,
+          235,
+          -949,
+          -302,
+          -2861,
+          1561,
+          -1927,
+          1354
+        ],
+        "permanent_residue": 225,
+        "precision": 5,
+        "prime": 3,
+        "size": 8,
+        "spacing": 6,
+        "trial": 1,
+        "valuation": 2
+      },
+      {
+        "columns": [
+          -751,
+          229,
+          2233,
+          965,
+          -1240,
+          -1516,
+          184,
+          -2471
+        ],
+        "permanent_residue": 144,
+        "precision": 5,
+        "prime": 3,
+        "size": 8,
+        "spacing": 6,
+        "trial": 2,
+        "valuation": 2
+      },
+      {
+        "columns": [
+          1619,
+          91,
+          -1562,
+          -910,
+          -103,
+          -2872,
+          1391,
+          -104,
+          1552
+        ],
+        "permanent_residue": 1620,
+        "precision": 7,
+        "prime": 3,
+        "size": 9,
+        "spacing": 3,
+        "trial": 0,
+        "valuation": 4
+      },
+      {
+        "columns": [
+          -812,
+          2417,
+          -833,
+          -2284,
+          1373,
+          1370,
+          1361,
+          2152,
+          -2408
+        ],
+        "permanent_residue": 1134,
+        "precision": 7,
+        "prime": 3,
+        "size": 9,
+        "spacing": 3,
+        "trial": 1,
+        "valuation": 4
+      },
+      {
+        "columns": [
+          -1858,
+          -1544,
+          -1240,
+          -2192,
+          -2080,
+          -1780,
+          -1096,
+          2470,
+          -1844
+        ],
+        "permanent_residue": 2106,
+        "precision": 7,
+        "prime": 3,
+        "size": 9,
+        "spacing": 3,
+        "trial": 2,
+        "valuation": 4
+      },
+      {
+        "columns": [
+          -161,
+          686,
+          1471,
+          584,
+          187,
+          1117,
+          -2095,
+          1787,
+          2366
+        ],
+        "permanent_residue": 1377,
+        "precision": 7,
+        "prime": 3,
+        "size": 9,
+        "spacing": 6,
+        "trial": 0,
+        "valuation": 4
+      },
+      {
+        "columns": [
+          2845,
+          2636,
+          419,
+          -1538,
+          -610,
+          1507,
+          2026,
+          -2497,
+          -2261
+        ],
+        "permanent_residue": 810,
+        "precision": 7,
+        "prime": 3,
+        "size": 9,
+        "spacing": 6,
+        "trial": 1,
+        "valuation": 4
+      },
+      {
+        "columns": [
+          -488,
+          -1072,
+          401,
+          406,
+          1930,
+          -2702,
+          -1366,
+          -1525,
+          -386
+        ],
+        "permanent_residue": 1782,
+        "precision": 7,
+        "prime": 3,
+        "size": 9,
+        "spacing": 6,
+        "trial": 2,
+        "valuation": 4
+      },
+      {
+        "columns": [
+          209,
+          -1132,
+          7,
+          1522,
+          -337,
+          -2281,
+          1087,
+          1459,
+          -1999,
+          -2399
+        ],
+        "permanent_residue": 405,
+        "precision": 7,
+        "prime": 3,
+        "size": 10,
+        "spacing": 3,
+        "trial": 0,
+        "valuation": 4
+      },
+      {
+        "columns": [
+          1805,
+          952,
+          2189,
+          535,
+          889,
+          1312,
+          -2660,
+          -2900,
+          2303,
+          2314
+        ],
+        "permanent_residue": 1863,
+        "precision": 7,
+        "prime": 3,
+        "size": 10,
+        "spacing": 3,
+        "trial": 1,
+        "valuation": 4
+      },
+      {
+        "columns": [
+          -2654,
+          -1715,
+          -110,
+          824,
+          -1511,
+          2417,
+          -764,
+          784,
+          -2092,
+          -1775
+        ],
+        "permanent_residue": 648,
+        "precision": 7,
+        "prime": 3,
+        "size": 10,
+        "spacing": 3,
+        "trial": 2,
+        "valuation": 4
+      },
+      {
+        "columns": [
+          -2309,
+          -1669,
+          1712,
+          1127,
+          2504,
+          2914,
+          2315,
+          -1145,
+          1414,
+          -856
+        ],
+        "permanent_residue": 1539,
+        "precision": 7,
+        "prime": 3,
+        "size": 10,
+        "spacing": 6,
+        "trial": 0,
+        "valuation": 4
+      },
+      {
+        "columns": [
+          -1327,
+          -1400,
+          2885,
+          -2929,
+          2941,
+          2558,
+          755,
+          266,
+          -2410,
+          -530
+        ],
+        "permanent_residue": 648,
+        "precision": 7,
+        "prime": 3,
+        "size": 10,
+        "spacing": 6,
+        "trial": 1,
+        "valuation": 4
+      },
+      {
+        "columns": [
+          1201,
+          -1751,
+          -326,
+          2467,
+          506,
+          -389,
+          -2923,
+          265,
+          668,
+          -569
+        ],
+        "permanent_residue": 162,
+        "precision": 7,
+        "prime": 3,
+        "size": 10,
+        "spacing": 6,
+        "trial": 2,
+        "valuation": 4
+      },
+      {
+        "columns": [
+          2771,
+          1093,
+          -943,
+          -2156,
+          -472,
+          -116,
+          -101,
+          2509,
+          -2422,
+          1526,
+          -2764
+        ],
+        "permanent_residue": 162,
+        "precision": 7,
+        "prime": 3,
+        "size": 11,
+        "spacing": 3,
+        "trial": 0,
+        "valuation": 4
+      },
+      {
+        "columns": [
+          -2240,
+          1615,
+          -85,
+          2773,
+          613,
+          -2486,
+          -586,
+          -1495,
+          1030,
+          -1252,
+          1039
+        ],
+        "permanent_residue": 405,
+        "precision": 7,
+        "prime": 3,
+        "size": 11,
+        "spacing": 3,
+        "trial": 1,
+        "valuation": 4
+      },
+      {
+        "columns": [
+          -154,
+          1861,
+          358,
+          2840,
+          1186,
+          605,
+          2570,
+          2107,
+          2965,
+          -2336,
+          1600
+        ],
+        "permanent_residue": 891,
+        "precision": 7,
+        "prime": 3,
+        "size": 11,
+        "spacing": 3,
+        "trial": 2,
+        "valuation": 4
+      },
+      {
+        "columns": [
+          149,
+          -602,
+          -313,
+          -326,
+          -2032,
+          2762,
+          1430,
+          8,
+          -2324,
+          -2636,
+          -520
+        ],
+        "permanent_residue": 567,
+        "precision": 7,
+        "prime": 3,
+        "size": 11,
+        "spacing": 6,
+        "trial": 0,
+        "valuation": 4
+      },
+      {
+        "columns": [
+          -373,
+          -41,
+          -2236,
+          -539,
+          -2599,
+          -1643,
+          248,
+          2897,
+          2174,
+          199,
+          1511
+        ],
+        "permanent_residue": 1296,
+        "precision": 7,
+        "prime": 3,
+        "size": 11,
+        "spacing": 6,
+        "trial": 1,
+        "valuation": 4
+      },
+      {
+        "columns": [
+          1781,
+          -205,
+          2324,
+          -2471,
+          376,
+          1087,
+          334,
+          1906,
+          -1808,
+          -2914,
+          626
+        ],
+        "permanent_residue": 1053,
+        "precision": 7,
+        "prime": 3,
+        "size": 11,
+        "spacing": 6,
+        "trial": 2,
+        "valuation": 4
+      },
+      {
+        "columns": [
+          389,
+          -848,
+          -2381,
+          -959,
+          -1139,
+          -188,
+          848,
+          259,
+          -1204,
+          1105,
+          -721,
+          1640
+        ],
+        "permanent_residue": 1701,
+        "precision": 8,
+        "prime": 3,
+        "size": 12,
+        "spacing": 3,
+        "trial": 0,
+        "valuation": 5
+      },
+      {
+        "columns": [
+          -1036,
+          1312,
+          -2696,
+          766,
+          -14,
+          -1066,
+          -2956,
+          -1417,
+          -1802,
+          -383,
+          1831,
+          1676
+        ],
+        "permanent_residue": 243,
+        "precision": 8,
+        "prime": 3,
+        "size": 12,
+        "spacing": 3,
+        "trial": 1,
+        "valuation": 5
+      },
+      {
+        "columns": [
+          2107,
+          -2441,
+          2056,
+          -157,
+          -1204,
+          2960,
+          -1508,
+          -2918,
+          -121,
+          -256,
+          83,
+          1643
+        ],
+        "permanent_residue": 4617,
+        "precision": 8,
+        "prime": 3,
+        "size": 12,
+        "spacing": 3,
+        "trial": 2,
+        "valuation": 5
+      },
+      {
+        "columns": [
+          -922,
+          -389,
+          931,
+          976,
+          -2035,
+          -1873,
+          1151,
+          -1453,
+          -898,
+          -1855,
+          -2794,
+          -2735
+        ],
+        "permanent_residue": 4860,
+        "precision": 8,
+        "prime": 3,
+        "size": 12,
+        "spacing": 6,
+        "trial": 0,
+        "valuation": 5
+      },
+      {
+        "columns": [
+          172,
+          -898,
+          -1636,
+          2965,
+          -1075,
+          800,
+          2782,
+          -2327,
+          1885,
+          916,
+          758,
+          -1042
+        ],
+        "permanent_residue": 4131,
+        "precision": 8,
+        "prime": 3,
+        "size": 12,
+        "spacing": 6,
+        "trial": 1,
+        "valuation": 5
+      },
+      {
+        "columns": [
+          -865,
+          2048,
+          -1408,
+          -2273,
+          1052,
+          -286,
+          1946,
+          2372,
+          245,
+          2263,
+          1438,
+          2161
+        ],
+        "permanent_residue": 5589,
+        "precision": 8,
+        "prime": 3,
+        "size": 12,
+        "spacing": 6,
+        "trial": 2,
+        "valuation": 5
+      },
+      {
+        "columns": [
+          575,
+          -475,
+          -1741,
+          -2567,
+          269,
+          2767,
+          2506,
+          -916,
+          2383,
+          -2861,
+          -1813,
+          1378,
+          2833
+        ],
+        "permanent_residue": 1215,
+        "precision": 8,
+        "prime": 3,
+        "size": 13,
+        "spacing": 3,
+        "trial": 0,
+        "valuation": 5
+      },
+      {
+        "columns": [
+          -2185,
+          -323,
+          -2873,
+          -2641,
+          -1694,
+          1570,
+          -851,
+          -154,
+          842,
+          2146,
+          -2969,
+          2417,
+          -1165
+        ],
+        "permanent_residue": 486,
+        "precision": 8,
+        "prime": 3,
+        "size": 13,
+        "spacing": 3,
+        "trial": 1,
+        "valuation": 5
+      },
+      {
+        "columns": [
+          2948,
+          2878,
+          -1250,
+          1556,
+          -2533,
+          -2288,
+          653,
+          2836,
+          -626,
+          2542,
+          1859,
+          146,
+          -517
+        ],
+        "permanent_residue": 6075,
+        "precision": 8,
+        "prime": 3,
+        "size": 13,
+        "spacing": 3,
+        "trial": 2,
+        "valuation": 5
+      },
+      {
+        "columns": [
+          -1846,
+          -2333,
+          -1424,
+          -236,
+          -2326,
+          2750,
+          1657,
+          844,
+          -2534,
+          -142,
+          -601,
+          -2555,
+          -2731
+        ],
+        "permanent_residue": 4860,
+        "precision": 8,
+        "prime": 3,
+        "size": 13,
+        "spacing": 6,
+        "trial": 0,
+        "valuation": 5
+      },
+      {
+        "columns": [
+          -1145,
+          -19,
+          -1946,
+          1913,
+          496,
+          -2512,
+          1975,
+          1789,
+          991,
+          -1766,
+          19,
+          419,
+          -1895
+        ],
+        "permanent_residue": 4131,
+        "precision": 8,
+        "prime": 3,
+        "size": 13,
+        "spacing": 6,
+        "trial": 1,
+        "valuation": 5
+      },
+      {
+        "columns": [
+          -308,
+          305,
+          -1721,
+          -2729,
+          380,
+          1447,
+          1742,
+          -1583,
+          -833,
+          -2581,
+          902,
+          1769,
+          -563
+        ],
+        "permanent_residue": 1944,
+        "precision": 8,
+        "prime": 3,
+        "size": 13,
+        "spacing": 6,
+        "trial": 2,
+        "valuation": 5
+      },
+      {
+        "columns": [
+          -1364,
+          2872,
+          1448,
+          -170,
+          -2681,
+          -668,
+          1274,
+          1208,
+          2278,
+          -2396,
+          -2975,
+          2663,
+          -2102,
+          -2573
+        ],
+        "permanent_residue": 4617,
+        "precision": 8,
+        "prime": 3,
+        "size": 14,
+        "spacing": 3,
+        "trial": 0,
+        "valuation": 5
+      },
+      {
+        "columns": [
+          -2902,
+          1213,
+          -793,
+          -803,
+          -1039,
+          700,
+          -2075,
+          -251,
+          -2951,
+          -2711,
+          -215,
+          2432,
+          464,
+          496
+        ],
+        "permanent_residue": 6318,
+        "precision": 8,
+        "prime": 3,
+        "size": 14,
+        "spacing": 3,
+        "trial": 1,
+        "valuation": 5
+      },
+      {
+        "columns": [
+          1163,
+          -901,
+          1567,
+          -524,
+          2462,
+          -2075,
+          -2011,
+          1912,
+          250,
+          275,
+          143,
+          1043,
+          334,
+          266
+        ],
+        "permanent_residue": 1701,
+        "precision": 8,
+        "prime": 3,
+        "size": 14,
+        "spacing": 3,
+        "trial": 2,
+        "valuation": 5
+      },
+      {
+        "columns": [
+          -1774,
+          2653,
+          2137,
+          -274,
+          2494,
+          -2911,
+          604,
+          -2636,
+          2209,
+          -71,
+          -2840,
+          1432,
+          2620,
+          1774
+        ],
+        "permanent_residue": 5589,
+        "precision": 8,
+        "prime": 3,
+        "size": 14,
+        "spacing": 6,
+        "trial": 0,
+        "valuation": 5
+      },
+      {
+        "columns": [
+          -1831,
+          1625,
+          -643,
+          -2198,
+          -2951,
+          -367,
+          185,
+          -2612,
+          233,
+          -1304,
+          -1211,
+          1123,
+          1324,
+          -1129
+        ],
+        "permanent_residue": 4860,
+        "precision": 8,
+        "prime": 3,
+        "size": 14,
+        "spacing": 6,
+        "trial": 1,
+        "valuation": 5
+      },
+      {
+        "columns": [
+          -1184,
+          -950,
+          -1265,
+          1072,
+          1837,
+          2333,
+          2468,
+          1349,
+          -1955,
+          2279,
+          2648,
+          2224,
+          2584,
+          607
+        ],
+        "permanent_residue": 3402,
+        "precision": 8,
+        "prime": 3,
+        "size": 14,
+        "spacing": 6,
+        "trial": 2,
+        "valuation": 5
+      },
+      {
+        "columns": [
+          -4182
+        ],
+        "permanent_residue": 57,
+        "precision": 3,
+        "prime": 5,
+        "size": 1,
+        "spacing": 5,
+        "trial": 0,
+        "valuation": 0
+      },
+      {
+        "columns": [
+          2367
+        ],
+        "permanent_residue": 78,
+        "precision": 3,
+        "prime": 5,
+        "size": 1,
+        "spacing": 5,
+        "trial": 1,
+        "valuation": 0
+      },
+      {
+        "columns": [
+          489
+        ],
+        "permanent_residue": 34,
+        "precision": 3,
+        "prime": 5,
+        "size": 1,
+        "spacing": 5,
+        "trial": 2,
+        "valuation": 0
+      },
+      {
+        "columns": [
+          3271
+        ],
+        "permanent_residue": 6,
+        "precision": 3,
+        "prime": 5,
+        "size": 1,
+        "spacing": 10,
+        "trial": 0,
+        "valuation": 0
+      },
+      {
+        "columns": [
+          -3868
+        ],
+        "permanent_residue": 18,
+        "precision": 3,
+        "prime": 5,
+        "size": 1,
+        "spacing": 10,
+        "trial": 1,
+        "valuation": 0
+      },
+      {
+        "columns": [
+          239
+        ],
+        "permanent_residue": 34,
+        "precision": 3,
+        "prime": 5,
+        "size": 1,
+        "spacing": 10,
+        "trial": 2,
+        "valuation": 0
+      },
+      {
+        "columns": [
+          -1127,
+          1644
+        ],
+        "permanent_residue": 81,
+        "precision": 3,
+        "prime": 5,
+        "size": 2,
+        "spacing": 5,
+        "trial": 0,
+        "valuation": 0
+      },
+      {
+        "columns": [
+          3731,
+          -811
+        ],
+        "permanent_residue": 78,
+        "precision": 3,
+        "prime": 5,
+        "size": 2,
+        "spacing": 5,
+        "trial": 1,
+        "valuation": 0
+      },
+      {
+        "columns": [
+          -1213,
+          -2706
+        ],
+        "permanent_residue": 39,
+        "precision": 3,
+        "prime": 5,
+        "size": 2,
+        "spacing": 5,
+        "trial": 2,
+        "valuation": 0
+      },
+      {
+        "columns": [
+          -4768,
+          -909
+        ],
+        "permanent_residue": 51,
+        "precision": 3,
+        "prime": 5,
+        "size": 2,
+        "spacing": 10,
+        "trial": 0,
+        "valuation": 0
+      },
+      {
+        "columns": [
+          3641,
+          -1968
+        ],
+        "permanent_residue": 101,
+        "precision": 3,
+        "prime": 5,
+        "size": 2,
+        "spacing": 10,
+        "trial": 1,
+        "valuation": 0
+      },
+      {
+        "columns": [
+          -518,
+          2907
+        ],
+        "permanent_residue": 83,
+        "precision": 3,
+        "prime": 5,
+        "size": 2,
+        "spacing": 10,
+        "trial": 2,
+        "valuation": 0
+      },
+      {
+        "columns": [
+          2417,
+          3692,
+          2318
+        ],
+        "permanent_residue": 83,
+        "precision": 3,
+        "prime": 5,
+        "size": 3,
+        "spacing": 5,
+        "trial": 0,
+        "valuation": 0
+      },
+      {
+        "columns": [
+          -2301,
+          -1702,
+          -3822
+        ],
+        "permanent_residue": 111,
+        "precision": 3,
+        "prime": 5,
+        "size": 3,
+        "spacing": 5,
+        "trial": 1,
+        "valuation": 0
+      },
+      {
+        "columns": [
+          739,
+          -3982,
+          -2453
+        ],
+        "permanent_residue": 69,
+        "precision": 3,
+        "prime": 5,
+        "size": 3,
+        "spacing": 5,
+        "trial": 2,
+        "valuation": 0
+      },
+      {
+        "columns": [
+          -2276,
+          2947,
+          3528
+        ],
+        "permanent_residue": 74,
+        "precision": 3,
+        "prime": 5,
+        "size": 3,
+        "spacing": 10,
+        "trial": 0,
+        "valuation": 0
+      },
+      {
+        "columns": [
+          -98,
+          4458,
+          3093
+        ],
+        "permanent_residue": 122,
+        "precision": 3,
+        "prime": 5,
+        "size": 3,
+        "spacing": 10,
+        "trial": 1,
+        "valuation": 0
+      },
+      {
+        "columns": [
+          -523,
+          2941,
+          3867
+        ],
+        "permanent_residue": 119,
+        "precision": 3,
+        "prime": 5,
+        "size": 3,
+        "spacing": 10,
+        "trial": 2,
+        "valuation": 0
+      },
+      {
+        "columns": [
+          2874,
+          2843,
+          2032,
+          -54
+        ],
+        "permanent_residue": 106,
+        "precision": 3,
+        "prime": 5,
+        "size": 4,
+        "spacing": 5,
+        "trial": 0,
+        "valuation": 0
+      },
+      {
+        "columns": [
+          -4919,
+          -3322,
+          123,
+          2959
+        ],
+        "permanent_residue": 79,
+        "precision": 3,
+        "prime": 5,
+        "size": 4,
+        "spacing": 5,
+        "trial": 1,
+        "valuation": 0
+      },
+      {
+        "columns": [
+          337,
+          3568,
+          -1454,
+          -1016
+        ],
+        "permanent_residue": 51,
+        "precision": 3,
+        "prime": 5,
+        "size": 4,
+        "spacing": 5,
+        "trial": 2,
+        "valuation": 0
+      },
+      {
+        "columns": [
+          -3859,
+          -11,
+          1204,
+          4938
+        ],
+        "permanent_residue": 18,
+        "precision": 3,
+        "prime": 5,
+        "size": 4,
+        "spacing": 10,
+        "trial": 0,
+        "valuation": 0
+      },
+      {
+        "columns": [
+          -2582,
+          -3693,
+          -1642,
+          -3564
+        ],
+        "permanent_residue": 113,
+        "precision": 3,
+        "prime": 5,
+        "size": 4,
+        "spacing": 10,
+        "trial": 1,
+        "valuation": 0
+      },
+      {
+        "columns": [
+          -2741,
+          2736,
+          142,
+          2422
+        ],
+        "permanent_residue": 39,
+        "precision": 3,
+        "prime": 5,
+        "size": 4,
+        "spacing": 10,
+        "trial": 2,
+        "valuation": 0
+      },
+      {
+        "columns": [
+          244,
+          3886,
+          2196,
+          -303,
+          1669
+        ],
+        "permanent_residue": 10,
+        "precision": 4,
+        "prime": 5,
+        "size": 5,
+        "spacing": 5,
+        "trial": 0,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          234,
+          4477,
+          1526,
+          -3497,
+          -2687
+        ],
+        "permanent_residue": 485,
+        "precision": 4,
+        "prime": 5,
+        "size": 5,
+        "spacing": 5,
+        "trial": 1,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          -4468,
+          -4933,
+          3356,
+          3597,
+          3746
+        ],
+        "permanent_residue": 190,
+        "precision": 4,
+        "prime": 5,
+        "size": 5,
+        "spacing": 5,
+        "trial": 2,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          326,
+          3962,
+          -924,
+          769,
+          -4628
+        ],
+        "permanent_residue": 20,
+        "precision": 4,
+        "prime": 5,
+        "size": 5,
+        "spacing": 10,
+        "trial": 0,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          507,
+          -728,
+          -1423,
+          -1877,
+          758
+        ],
+        "permanent_residue": 235,
+        "precision": 4,
+        "prime": 5,
+        "size": 5,
+        "spacing": 10,
+        "trial": 1,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          4872,
+          4747,
+          -2961,
+          542,
+          -3532
+        ],
+        "permanent_residue": 520,
+        "precision": 4,
+        "prime": 5,
+        "size": 5,
+        "spacing": 10,
+        "trial": 2,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          -2528,
+          809,
+          1979,
+          -1322,
+          -1451,
+          -1418
+        ],
+        "permanent_residue": 540,
+        "precision": 4,
+        "prime": 5,
+        "size": 6,
+        "spacing": 5,
+        "trial": 0,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          -1787,
+          -4453,
+          -3994,
+          -4904,
+          -4114,
+          -2346
+        ],
+        "permanent_residue": 80,
+        "precision": 4,
+        "prime": 5,
+        "size": 6,
+        "spacing": 5,
+        "trial": 1,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          -4366,
+          3049,
+          2139,
+          3719,
+          -4686,
+          -2607
+        ],
+        "permanent_residue": 560,
+        "precision": 4,
+        "prime": 5,
+        "size": 6,
+        "spacing": 5,
+        "trial": 2,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          4734,
+          -2594,
+          3427,
+          -4546,
+          4463,
+          2094
+        ],
+        "permanent_residue": 555,
+        "precision": 4,
+        "prime": 5,
+        "size": 6,
+        "spacing": 10,
+        "trial": 0,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          3814,
+          -2713,
+          -1803,
+          4554,
+          -2566,
+          4536
+        ],
+        "permanent_residue": 45,
+        "precision": 4,
+        "prime": 5,
+        "size": 6,
+        "spacing": 10,
+        "trial": 1,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          -4797,
+          -2513,
+          1168,
+          3548,
+          1601,
+          4776
+        ],
+        "permanent_residue": 430,
+        "precision": 4,
+        "prime": 5,
+        "size": 6,
+        "spacing": 10,
+        "trial": 2,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          -4803,
+          -4226,
+          -3264,
+          -7,
+          514,
+          2119,
+          -3576
+        ],
+        "permanent_residue": 40,
+        "precision": 4,
+        "prime": 5,
+        "size": 7,
+        "spacing": 5,
+        "trial": 0,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          -3628,
+          2376,
+          4632,
+          2922,
+          -1702,
+          -3129,
+          -2613
+        ],
+        "permanent_residue": 530,
+        "precision": 4,
+        "prime": 5,
+        "size": 7,
+        "spacing": 5,
+        "trial": 1,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          2514,
+          -3407,
+          1392,
+          3366,
+          -964,
+          -2171,
+          -3921
+        ],
+        "permanent_residue": 435,
+        "precision": 4,
+        "prime": 5,
+        "size": 7,
+        "spacing": 5,
+        "trial": 2,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          1058,
+          1604,
+          -1412,
+          626,
+          1369,
+          4759,
+          -1309
+        ],
+        "permanent_residue": 565,
+        "precision": 4,
+        "prime": 5,
+        "size": 7,
+        "spacing": 10,
+        "trial": 0,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          1746,
+          -391,
+          4816,
+          1077,
+          -2057,
+          887,
+          -964
+        ],
+        "permanent_residue": 480,
+        "precision": 4,
+        "prime": 5,
+        "size": 7,
+        "spacing": 10,
+        "trial": 1,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          1264,
+          -1586,
+          -2418,
+          -2929,
+          1687,
+          1346,
+          618
+        ],
+        "permanent_residue": 545,
+        "precision": 4,
+        "prime": 5,
+        "size": 7,
+        "spacing": 10,
+        "trial": 2,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          1508,
+          -1151,
+          4528,
+          4657,
+          2514,
+          -4901,
+          -438,
+          2434
+        ],
+        "permanent_residue": 170,
+        "precision": 4,
+        "prime": 5,
+        "size": 8,
+        "spacing": 5,
+        "trial": 0,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          -4553,
+          1858,
+          -4761,
+          4656,
+          3889,
+          -3677,
+          4501,
+          -4136
+        ],
+        "permanent_residue": 135,
+        "precision": 4,
+        "prime": 5,
+        "size": 8,
+        "spacing": 5,
+        "trial": 1,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          2659,
+          -3268,
+          -2667,
+          -3221,
+          -182,
+          -489,
+          -529,
+          4159
+        ],
+        "permanent_residue": 610,
+        "precision": 4,
+        "prime": 5,
+        "size": 8,
+        "spacing": 5,
+        "trial": 2,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          1293,
+          -2684,
+          2798,
+          -457,
+          -4074,
+          -2782,
+          903,
+          3703
+        ],
+        "permanent_residue": 280,
+        "precision": 4,
+        "prime": 5,
+        "size": 8,
+        "spacing": 10,
+        "trial": 0,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          4322,
+          2817,
+          1887,
+          -4866,
+          4564,
+          -2904,
+          -129,
+          736
+        ],
+        "permanent_residue": 390,
+        "precision": 4,
+        "prime": 5,
+        "size": 8,
+        "spacing": 10,
+        "trial": 1,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          -366,
+          -2483,
+          -3386,
+          1479,
+          4502,
+          -2742,
+          -2972,
+          4358
+        ],
+        "permanent_residue": 210,
+        "precision": 4,
+        "prime": 5,
+        "size": 8,
+        "spacing": 10,
+        "trial": 2,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          3746,
+          -4922,
+          3161,
+          256,
+          -4689,
+          483,
+          318,
+          -1498,
+          -1353
+        ],
+        "permanent_residue": 460,
+        "precision": 4,
+        "prime": 5,
+        "size": 9,
+        "spacing": 5,
+        "trial": 0,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          833,
+          -2917,
+          -4597,
+          3782,
+          -2408,
+          -3381,
+          2113,
+          1152,
+          -4253
+        ],
+        "permanent_residue": 445,
+        "precision": 4,
+        "prime": 5,
+        "size": 9,
+        "spacing": 5,
+        "trial": 1,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          2499,
+          1159,
+          4486,
+          -873,
+          -2724,
+          -4969,
+          4028,
+          4922,
+          799
+        ],
+        "permanent_residue": 135,
+        "precision": 4,
+        "prime": 5,
+        "size": 9,
+        "spacing": 5,
+        "trial": 2,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          1889,
+          4966,
+          4137,
+          3529,
+          1882,
+          368,
+          -2403,
+          -1406,
+          -2387
+        ],
+        "permanent_residue": 135,
+        "precision": 4,
+        "prime": 5,
+        "size": 9,
+        "spacing": 10,
+        "trial": 0,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          1787,
+          -2258,
+          -4507,
+          991,
+          4526,
+          -4043,
+          4899,
+          -566,
+          1326
+        ],
+        "permanent_residue": 270,
+        "precision": 4,
+        "prime": 5,
+        "size": 9,
+        "spacing": 10,
+        "trial": 1,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          -679,
+          3551,
+          -4972,
+          -129,
+          767,
+          471,
+          -719,
+          -4469,
+          -2114
+        ],
+        "permanent_residue": 205,
+        "precision": 4,
+        "prime": 5,
+        "size": 9,
+        "spacing": 10,
+        "trial": 2,
+        "valuation": 1
+      },
+      {
+        "columns": [
+          -3896,
+          1657,
+          3823,
+          3619,
+          -1287,
+          -2957,
+          -4024,
+          -2969,
+          2737,
+          -508
+        ],
+        "permanent_residue": 50,
+        "precision": 5,
+        "prime": 5,
+        "size": 10,
+        "spacing": 5,
+        "trial": 0,
+        "valuation": 2
+      },
+      {
+        "columns": [
+          2952,
+          3112,
+          -2032,
+          -4259,
+          -993,
+          -142,
+          -4291,
+          4082,
+          -2824,
+          -3778
+        ],
+        "permanent_residue": 775,
+        "precision": 5,
+        "prime": 5,
+        "size": 10,
+        "spacing": 5,
+        "trial": 1,
+        "valuation": 2
+      },
+      {
+        "columns": [
+          -1849,
+          -471,
+          428,
+          -3744,
+          -4682,
+          -3826,
+          2766,
+          2514,
+          -3606,
+          -983
+        ],
+        "permanent_residue": 1350,
+        "precision": 5,
+        "prime": 5,
+        "size": 10,
+        "spacing": 5,
+        "trial": 2,
+        "valuation": 2
+      },
+      {
+        "columns": [
+          1542,
+          -4829,
+          3393,
+          -4142,
+          1946,
+          3056,
+          2914,
+          -1196,
+          -3631,
+          -3519
+        ],
+        "permanent_residue": 2025,
+        "precision": 5,
+        "prime": 5,
+        "size": 10,
+        "spacing": 10,
+        "trial": 0,
+        "valuation": 2
+      },
+      {
+        "columns": [
+          626,
+          -4631,
+          -14,
+          818,
+          -1061,
+          -4184,
+          4447,
+          -3946,
+          -4896,
+          1236
+        ],
+        "permanent_residue": 800,
+        "precision": 5,
+        "prime": 5,
+        "size": 10,
+        "spacing": 10,
+        "trial": 1,
+        "valuation": 2
+      },
+      {
+        "columns": [
+          -3359,
+          -3748,
+          -2339,
+          -1834,
+          2774,
+          4711,
+          2647,
+          -117,
+          4448,
+          -96
+        ],
+        "permanent_residue": 1675,
+        "precision": 5,
+        "prime": 5,
+        "size": 10,
+        "spacing": 10,
+        "trial": 2,
+        "valuation": 2
+      },
+      {
+        "columns": [
+          -2996,
+          1317,
+          -142,
+          -2579,
+          1609,
+          -3471,
+          3418,
+          4199,
+          -3304,
+          -3752,
+          3672
+        ],
+        "permanent_residue": 350,
+        "precision": 5,
+        "prime": 5,
+        "size": 11,
+        "spacing": 5,
+        "trial": 0,
+        "valuation": 2
+      },
+      {
+        "columns": [
+          -1439,
+          3782,
+          -287,
+          -572,
+          548,
+          -2469,
+          1646,
+          -1267,
+          3492,
+          -789,
+          3398
+        ],
+        "permanent_residue": 275,
+        "precision": 5,
+        "prime": 5,
+        "size": 11,
+        "spacing": 5,
+        "trial": 1,
+        "valuation": 2
+      },
+      {
+        "columns": [
+          -4766,
+          4911,
+          -4831,
+          -3478,
+          2449,
+          859,
+          1126,
+          -3961,
+          4741,
+          -119,
+          -1837
+        ],
+        "permanent_residue": 1200,
+        "precision": 5,
+        "prime": 5,
+        "size": 11,
+        "spacing": 5,
+        "trial": 2,
+        "valuation": 2
+      },
+      {
+        "columns": [
+          -1232,
+          69,
+          -938,
+          -862,
+          1838,
+          58,
+          3081,
+          158,
+          4412,
+          -803,
+          3761
+        ],
+        "permanent_residue": 2550,
+        "precision": 5,
+        "prime": 5,
+        "size": 11,
+        "spacing": 10,
+        "trial": 0,
+        "valuation": 2
+      },
+      {
+        "columns": [
+          -557,
+          -197,
+          -1019,
+          -4202,
+          1062,
+          -2679,
+          -4019,
+          4438,
+          3921,
+          -4936,
+          -3973
+        ],
+        "permanent_residue": 2175,
+        "precision": 5,
+        "prime": 5,
+        "size": 11,
+        "spacing": 10,
+        "trial": 1,
+        "valuation": 2
+      },
+      {
+        "columns": [
+          3869,
+          414,
+          4377,
+          -2323,
+          -4328,
+          4842,
+          538,
+          -1877,
+          3388,
+          2914,
+          3531
+        ],
+        "permanent_residue": 475,
+        "precision": 5,
+        "prime": 5,
+        "size": 11,
+        "spacing": 10,
+        "trial": 2,
+        "valuation": 2
+      },
+      {
+        "columns": [
+          3671,
+          -4624,
+          -639,
+          -242,
+          -861,
+          -2621,
+          -722,
+          -4047,
+          3179,
+          -4551,
+          3713,
+          1736
+        ],
+        "permanent_residue": 1475,
+        "precision": 5,
+        "prime": 5,
+        "size": 12,
+        "spacing": 5,
+        "trial": 0,
+        "valuation": 2
+      },
+      {
+        "columns": [
+          1668,
+          3183,
+          -613,
+          2267,
+          -3254,
+          4788,
+          4611,
+          1773,
+          -4037,
+          4066,
+          3169,
+          -3242
+        ],
+        "permanent_residue": 1650,
+        "precision": 5,
+        "prime": 5,
+        "size": 12,
+        "spacing": 5,
+        "trial": 1,
+        "valuation": 2
+      },
+      {
+        "columns": [
+          2718,
+          -1051,
+          1654,
+          -4657,
+          -2799,
+          -1776,
+          -3519,
+          -2823,
+          4347,
+          -443,
+          -3953,
+          3817
+        ],
+        "permanent_residue": 1300,
+        "precision": 5,
+        "prime": 5,
+        "size": 12,
+        "spacing": 5,
+        "trial": 2,
+        "valuation": 2
+      },
+      {
+        "columns": [
+          52,
+          389,
+          2328,
+          -2346,
+          4622,
+          -4782,
+          -4783,
+          4523,
+          -384,
+          -4632,
+          -2296,
+          -2172
+        ],
+        "permanent_residue": 1850,
+        "precision": 5,
+        "prime": 5,
+        "size": 12,
+        "spacing": 10,
+        "trial": 0,
+        "valuation": 2
+      },
+      {
+        "columns": [
+          3813,
+          1148,
+          3229,
+          -412,
+          -4822,
+          -566,
+          -2739,
+          -4706,
+          -3408,
+          -1824,
+          -4272,
+          988
+        ],
+        "permanent_residue": 1550,
+        "precision": 5,
+        "prime": 5,
+        "size": 12,
+        "spacing": 10,
+        "trial": 1,
+        "valuation": 2
+      },
+      {
+        "columns": [
+          -659,
+          -3286,
+          -2207,
+          -1053,
+          -553,
+          -2084,
+          4783,
+          -4173,
+          -4291,
+          2619,
+          4502,
+          -3151
+        ],
+        "permanent_residue": 1650,
+        "precision": 5,
+        "prime": 5,
+        "size": 12,
+        "spacing": 10,
+        "trial": 2,
+        "valuation": 2
+      },
+      {
+        "columns": [
+          -1783,
+          3819,
+          -783,
+          2128,
+          3976,
+          4688,
+          -2296,
+          -2492,
+          3181,
+          1979,
+          -293,
+          3997,
+          -642
+        ],
+        "permanent_residue": 2700,
+        "precision": 5,
+        "prime": 5,
+        "size": 13,
+        "spacing": 5,
+        "trial": 0,
+        "valuation": 2
+      },
+      {
+        "columns": [
+          4823,
+          1044,
+          4696,
+          -693,
+          -2281,
+          -2653,
+          4323,
+          4631,
+          -3144,
+          -656,
+          2542,
+          3294,
+          -786
+        ],
+        "permanent_residue": 2100,
+        "precision": 5,
+        "prime": 5,
+        "size": 13,
+        "spacing": 5,
+        "trial": 1,
+        "valuation": 2
+      },
+      {
+        "columns": [
+          -4578,
+          -558,
+          -4469,
+          -1012,
+          -782,
+          -639,
+          1019,
+          -192,
+          -442,
+          4709,
+          -466,
+          -2311,
+          -2946
+        ],
+        "permanent_residue": 925,
+        "precision": 5,
+        "prime": 5,
+        "size": 13,
+        "spacing": 5,
+        "trial": 2,
+        "valuation": 2
+      },
+      {
+        "columns": [
+          461,
+          207,
+          3121,
+          -2426,
+          -4886,
+          -2424,
+          -2498,
+          -946,
+          -888,
+          4999,
+          4627,
+          -1294,
+          -1706
+        ],
+        "permanent_residue": 2450,
+        "precision": 5,
+        "prime": 5,
+        "size": 13,
+        "spacing": 10,
+        "trial": 0,
+        "valuation": 2
+      },
+      {
+        "columns": [
+          -2408,
+          -4649,
+          -2998,
+          -1336,
+          3908,
+          2968,
+          -468,
+          -1856,
+          212,
+          -4011,
+          -2778,
+          1984,
+          1201
+        ],
+        "permanent_residue": 2225,
+        "precision": 5,
+        "prime": 5,
+        "size": 13,
+        "spacing": 10,
+        "trial": 1,
+        "valuation": 2
+      },
+      {
+        "columns": [
+          3146,
+          -4846,
+          -2239,
+          -1758,
+          -4452,
+          2613,
+          2353,
+          -4493,
+          -1536,
+          19,
+          3149,
+          2861,
+          -4497
+        ],
+        "permanent_residue": 450,
+        "precision": 5,
+        "prime": 5,
+        "size": 13,
+        "spacing": 10,
+        "trial": 2,
+        "valuation": 2
+      },
+      {
+        "columns": [
+          3059,
+          3881,
+          -1563,
+          -4022,
+          -4778,
+          1899,
+          3413,
+          2946,
+          1403,
+          521,
+          1332,
+          2362,
+          -2168,
+          -4154
+        ],
+        "permanent_residue": 2175,
+        "precision": 5,
+        "prime": 5,
+        "size": 14,
+        "spacing": 5,
+        "trial": 0,
+        "valuation": 2
+      },
+      {
+        "columns": [
+          -3389,
+          -354,
+          -2624,
+          3569,
+          -2461,
+          2369,
+          802,
+          2599,
+          -1876,
+          -2238,
+          -1636,
+          -1624,
+          -3543,
+          4073
+        ],
+        "permanent_residue": 2550,
+        "precision": 5,
+        "prime": 5,
+        "size": 14,
+        "spacing": 5,
+        "trial": 1,
+        "valuation": 2
+      },
+      {
+        "columns": [
+          3547,
+          -2532,
+          407,
+          1803,
+          -457,
+          -1822,
+          -1618,
+          -3163,
+          -3439,
+          4192,
+          -2707,
+          4524,
+          1333,
+          -289
+        ],
+        "permanent_residue": 1350,
+        "precision": 5,
+        "prime": 5,
+        "size": 14,
+        "spacing": 5,
+        "trial": 2,
+        "valuation": 2
+      },
+      {
+        "columns": [
+          4316,
+          4178,
+          -472,
+          -3532,
+          1604,
+          -949,
+          -1504,
+          -3291,
+          843,
+          -4394,
+          -3897,
+          4299,
+          -793,
+          4619
+        ],
+        "permanent_residue": 1075,
+        "precision": 5,
+        "prime": 5,
+        "size": 14,
+        "spacing": 10,
+        "trial": 0,
+        "valuation": 2
+      },
+      {
+        "columns": [
+          -2484,
+          471,
+          1381,
+          1299,
+          -3213,
+          -4469,
+          4329,
+          2216,
+          2507,
+          4954,
+          -1044,
+          -3929,
+          -3609,
+          -2908
+        ],
+        "permanent_residue": 2100,
+        "precision": 5,
+        "prime": 5,
+        "size": 14,
+        "spacing": 10,
+        "trial": 1,
+        "valuation": 2
+      },
+      {
+        "columns": [
+          3809,
+          882,
+          -1149,
+          -1247,
+          4392,
+          -1712,
+          2491,
+          -289,
+          1989,
+          -2222,
+          1868,
+          2613,
+          2723,
+          -528
+        ],
+        "permanent_residue": 2475,
+        "precision": 5,
+        "prime": 5,
+        "size": 14,
+        "spacing": 10,
+        "trial": 2,
+        "valuation": 2
+      }
+    ]
+  },
+  "smith_controls": {
+    "count": 108,
+    "records": [
+      {
+        "A": 1,
+        "orders": [
+          0
+        ],
+        "precision": 4,
+        "prime": 2,
+        "size": 1,
+        "spacing": 2
+      },
+      {
+        "A": 3,
+        "orders": [
+          0
+        ],
+        "precision": 4,
+        "prime": 2,
+        "size": 1,
+        "spacing": 2
+      },
+      {
+        "A": 1,
+        "orders": [
+          0,
+          3
+        ],
+        "precision": 7,
+        "prime": 2,
+        "size": 2,
+        "spacing": 2
+      },
+      {
+        "A": 3,
+        "orders": [
+          0,
+          3
+        ],
+        "precision": 7,
+        "prime": 2,
+        "size": 2,
+        "spacing": 2
+      },
+      {
+        "A": 1,
+        "orders": [
+          0,
+          3,
+          6
+        ],
+        "precision": 10,
+        "prime": 2,
+        "size": 3,
+        "spacing": 2
+      },
+      {
+        "A": 3,
+        "orders": [
+          0,
+          3,
+          6
+        ],
+        "precision": 10,
+        "prime": 2,
+        "size": 3,
+        "spacing": 2
+      },
+      {
+        "A": 1,
+        "orders": [
+          0,
+          3,
+          6,
+          10,
+          14
+        ],
+        "precision": 18,
+        "prime": 2,
+        "size": 5,
+        "spacing": 2
+      },
+      {
+        "A": 3,
+        "orders": [
+          0,
+          3,
+          6,
+          10,
+          14
+        ],
+        "precision": 18,
+        "prime": 2,
+        "size": 5,
+        "spacing": 2
+      },
+      {
+        "A": 1,
+        "orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25
+        ],
+        "precision": 29,
+        "prime": 2,
+        "size": 8,
+        "spacing": 2
+      },
+      {
+        "A": 3,
+        "orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25
+        ],
+        "precision": 29,
+        "prime": 2,
+        "size": 8,
+        "spacing": 2
+      },
+      {
+        "A": 1,
+        "orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25,
+          30,
+          33,
+          36,
+          40
+        ],
+        "precision": 44,
+        "prime": 2,
+        "size": 12,
+        "spacing": 2
+      },
+      {
+        "A": 3,
+        "orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25,
+          30,
+          33,
+          36,
+          40
+        ],
+        "precision": 44,
+        "prime": 2,
+        "size": 12,
+        "spacing": 2
+      },
+      {
+        "A": 1,
+        "orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25,
+          30,
+          33,
+          36,
+          40,
+          44,
+          47,
+          50,
+          56,
+          62
+        ],
+        "precision": 66,
+        "prime": 2,
+        "size": 17,
+        "spacing": 2
+      },
+      {
+        "A": 3,
+        "orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25,
+          30,
+          33,
+          36,
+          40,
+          44,
+          47,
+          50,
+          56,
+          62
+        ],
+        "precision": 66,
+        "prime": 2,
+        "size": 17,
+        "spacing": 2
+      },
+      {
+        "A": 1,
+        "orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25,
+          30,
+          33,
+          36,
+          40,
+          44,
+          47,
+          50,
+          56,
+          62,
+          65,
+          68,
+          72,
+          76,
+          79,
+          82,
+          87
+        ],
+        "precision": 91,
+        "prime": 2,
+        "size": 24,
+        "spacing": 2
+      },
+      {
+        "A": 3,
+        "orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25,
+          30,
+          33,
+          36,
+          40,
+          44,
+          47,
+          50,
+          56,
+          62,
+          65,
+          68,
+          72,
+          76,
+          79,
+          82,
+          87
+        ],
+        "precision": 91,
+        "prime": 2,
+        "size": 24,
+        "spacing": 2
+      },
+      {
+        "A": 1,
+        "orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25,
+          30,
+          33,
+          36,
+          40,
+          44,
+          47,
+          50,
+          56,
+          62,
+          65,
+          68,
+          72,
+          76,
+          79,
+          82,
+          87,
+          92,
+          95,
+          98,
+          102,
+          106,
+          109,
+          112,
+          119,
+          126
+        ],
+        "precision": 130,
+        "prime": 2,
+        "size": 33,
+        "spacing": 2
+      },
+      {
+        "A": 3,
+        "orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25,
+          30,
+          33,
+          36,
+          40,
+          44,
+          47,
+          50,
+          56,
+          62,
+          65,
+          68,
+          72,
+          76,
+          79,
+          82,
+          87,
+          92,
+          95,
+          98,
+          102,
+          106,
+          109,
+          112,
+          119,
+          126
+        ],
+        "precision": 130,
+        "prime": 2,
+        "size": 33,
+        "spacing": 2
+      },
+      {
+        "A": 1,
+        "orders": [
+          0
+        ],
+        "precision": 4,
+        "prime": 2,
+        "size": 1,
+        "spacing": 4
+      },
+      {
+        "A": 3,
+        "orders": [
+          0
+        ],
+        "precision": 4,
+        "prime": 2,
+        "size": 1,
+        "spacing": 4
+      },
+      {
+        "A": 1,
+        "orders": [
+          0,
+          5
+        ],
+        "precision": 9,
+        "prime": 2,
+        "size": 2,
+        "spacing": 4
+      },
+      {
+        "A": 3,
+        "orders": [
+          0,
+          5
+        ],
+        "precision": 9,
+        "prime": 2,
+        "size": 2,
+        "spacing": 4
+      },
+      {
+        "A": 1,
+        "orders": [
+          0,
+          5,
+          10
+        ],
+        "precision": 14,
+        "prime": 2,
+        "size": 3,
+        "spacing": 4
+      },
+      {
+        "A": 3,
+        "orders": [
+          0,
+          5,
+          10
+        ],
+        "precision": 14,
+        "prime": 2,
+        "size": 3,
+        "spacing": 4
+      },
+      {
+        "A": 1,
+        "orders": [
+          0,
+          5,
+          10,
+          16,
+          22
+        ],
+        "precision": 26,
+        "prime": 2,
+        "size": 5,
+        "spacing": 4
+      },
+      {
+        "A": 3,
+        "orders": [
+          0,
+          5,
+          10,
+          16,
+          22
+        ],
+        "precision": 26,
+        "prime": 2,
+        "size": 5,
+        "spacing": 4
+      },
+      {
+        "A": 1,
+        "orders": [
+          0,
+          5,
+          10,
+          16,
+          22,
+          27,
+          32,
+          39
+        ],
+        "precision": 43,
+        "prime": 2,
+        "size": 8,
+        "spacing": 4
+      },
+      {
+        "A": 3,
+        "orders": [
+          0,
+          5,
+          10,
+          16,
+          22,
+          27,
+          32,
+          39
+        ],
+        "precision": 43,
+        "prime": 2,
+        "size": 8,
+        "spacing": 4
+      },
+      {
+        "A": 1,
+        "orders": [
+          0,
+          5,
+          10,
+          16,
+          22,
+          27,
+          32,
+          39,
+          46,
+          51,
+          56,
+          62
+        ],
+        "precision": 66,
+        "prime": 2,
+        "size": 12,
+        "spacing": 4
+      },
+      {
+        "A": 3,
+        "orders": [
+          0,
+          5,
+          10,
+          16,
+          22,
+          27,
+          32,
+          39,
+          46,
+          51,
+          56,
+          62
+        ],
+        "precision": 66,
+        "prime": 2,
+        "size": 12,
+        "spacing": 4
+      },
+      {
+        "A": 1,
+        "orders": [
+          0,
+          5,
+          10,
+          16,
+          22,
+          27,
+          32,
+          39,
+          46,
+          51,
+          56,
+          62,
+          68,
+          73,
+          78,
+          86,
+          94
+        ],
+        "precision": 98,
+        "prime": 2,
+        "size": 17,
+        "spacing": 4
+      },
+      {
+        "A": 3,
+        "orders": [
+          0,
+          5,
+          10,
+          16,
+          22,
+          27,
+          32,
+          39,
+          46,
+          51,
+          56,
+          62,
+          68,
+          73,
+          78,
+          86,
+          94
+        ],
+        "precision": 98,
+        "prime": 2,
+        "size": 17,
+        "spacing": 4
+      },
+      {
+        "A": 1,
+        "orders": [
+          0,
+          5,
+          10,
+          16,
+          22,
+          27,
+          32,
+          39,
+          46,
+          51,
+          56,
+          62,
+          68,
+          73,
+          78,
+          86,
+          94,
+          99,
+          104,
+          110,
+          116,
+          121,
+          126,
+          133
+        ],
+        "precision": 137,
+        "prime": 2,
+        "size": 24,
+        "spacing": 4
+      },
+      {
+        "A": 3,
+        "orders": [
+          0,
+          5,
+          10,
+          16,
+          22,
+          27,
+          32,
+          39,
+          46,
+          51,
+          56,
+          62,
+          68,
+          73,
+          78,
+          86,
+          94,
+          99,
+          104,
+          110,
+          116,
+          121,
+          126,
+          133
+        ],
+        "precision": 137,
+        "prime": 2,
+        "size": 24,
+        "spacing": 4
+      },
+      {
+        "A": 1,
+        "orders": [
+          0,
+          5,
+          10,
+          16,
+          22,
+          27,
+          32,
+          39,
+          46,
+          51,
+          56,
+          62,
+          68,
+          73,
+          78,
+          86,
+          94,
+          99,
+          104,
+          110,
+          116,
+          121,
+          126,
+          133,
+          140,
+          145,
+          150,
+          156,
+          162,
+          167,
+          172,
+          181,
+          190
+        ],
+        "precision": 194,
+        "prime": 2,
+        "size": 33,
+        "spacing": 4
+      },
+      {
+        "A": 3,
+        "orders": [
+          0,
+          5,
+          10,
+          16,
+          22,
+          27,
+          32,
+          39,
+          46,
+          51,
+          56,
+          62,
+          68,
+          73,
+          78,
+          86,
+          94,
+          99,
+          104,
+          110,
+          116,
+          121,
+          126,
+          133,
+          140,
+          145,
+          150,
+          156,
+          162,
+          167,
+          172,
+          181,
+          190
+        ],
+        "precision": 194,
+        "prime": 2,
+        "size": 33,
+        "spacing": 4
+      },
+      {
+        "A": 1,
+        "orders": [
+          0
+        ],
+        "precision": 4,
+        "prime": 2,
+        "size": 1,
+        "spacing": 6
+      },
+      {
+        "A": 3,
+        "orders": [
+          0
+        ],
+        "precision": 4,
+        "prime": 2,
+        "size": 1,
+        "spacing": 6
+      },
+      {
+        "A": 1,
+        "orders": [
+          0,
+          3
+        ],
+        "precision": 7,
+        "prime": 2,
+        "size": 2,
+        "spacing": 6
+      },
+      {
+        "A": 3,
+        "orders": [
+          0,
+          3
+        ],
+        "precision": 7,
+        "prime": 2,
+        "size": 2,
+        "spacing": 6
+      },
+      {
+        "A": 1,
+        "orders": [
+          0,
+          3,
+          6
+        ],
+        "precision": 10,
+        "prime": 2,
+        "size": 3,
+        "spacing": 6
+      },
+      {
+        "A": 3,
+        "orders": [
+          0,
+          3,
+          6
+        ],
+        "precision": 10,
+        "prime": 2,
+        "size": 3,
+        "spacing": 6
+      },
+      {
+        "A": 1,
+        "orders": [
+          0,
+          3,
+          6,
+          10,
+          14
+        ],
+        "precision": 18,
+        "prime": 2,
+        "size": 5,
+        "spacing": 6
+      },
+      {
+        "A": 3,
+        "orders": [
+          0,
+          3,
+          6,
+          10,
+          14
+        ],
+        "precision": 18,
+        "prime": 2,
+        "size": 5,
+        "spacing": 6
+      },
+      {
+        "A": 1,
+        "orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25
+        ],
+        "precision": 29,
+        "prime": 2,
+        "size": 8,
+        "spacing": 6
+      },
+      {
+        "A": 3,
+        "orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25
+        ],
+        "precision": 29,
+        "prime": 2,
+        "size": 8,
+        "spacing": 6
+      },
+      {
+        "A": 1,
+        "orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25,
+          30,
+          33,
+          36,
+          40
+        ],
+        "precision": 44,
+        "prime": 2,
+        "size": 12,
+        "spacing": 6
+      },
+      {
+        "A": 3,
+        "orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25,
+          30,
+          33,
+          36,
+          40
+        ],
+        "precision": 44,
+        "prime": 2,
+        "size": 12,
+        "spacing": 6
+      },
+      {
+        "A": 1,
+        "orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25,
+          30,
+          33,
+          36,
+          40,
+          44,
+          47,
+          50,
+          56,
+          62
+        ],
+        "precision": 66,
+        "prime": 2,
+        "size": 17,
+        "spacing": 6
+      },
+      {
+        "A": 3,
+        "orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25,
+          30,
+          33,
+          36,
+          40,
+          44,
+          47,
+          50,
+          56,
+          62
+        ],
+        "precision": 66,
+        "prime": 2,
+        "size": 17,
+        "spacing": 6
+      },
+      {
+        "A": 1,
+        "orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25,
+          30,
+          33,
+          36,
+          40,
+          44,
+          47,
+          50,
+          56,
+          62,
+          65,
+          68,
+          72,
+          76,
+          79,
+          82,
+          87
+        ],
+        "precision": 91,
+        "prime": 2,
+        "size": 24,
+        "spacing": 6
+      },
+      {
+        "A": 3,
+        "orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25,
+          30,
+          33,
+          36,
+          40,
+          44,
+          47,
+          50,
+          56,
+          62,
+          65,
+          68,
+          72,
+          76,
+          79,
+          82,
+          87
+        ],
+        "precision": 91,
+        "prime": 2,
+        "size": 24,
+        "spacing": 6
+      },
+      {
+        "A": 1,
+        "orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25,
+          30,
+          33,
+          36,
+          40,
+          44,
+          47,
+          50,
+          56,
+          62,
+          65,
+          68,
+          72,
+          76,
+          79,
+          82,
+          87,
+          92,
+          95,
+          98,
+          102,
+          106,
+          109,
+          112,
+          119,
+          126
+        ],
+        "precision": 130,
+        "prime": 2,
+        "size": 33,
+        "spacing": 6
+      },
+      {
+        "A": 3,
+        "orders": [
+          0,
+          3,
+          6,
+          10,
+          14,
+          17,
+          20,
+          25,
+          30,
+          33,
+          36,
+          40,
+          44,
+          47,
+          50,
+          56,
+          62,
+          65,
+          68,
+          72,
+          76,
+          79,
+          82,
+          87,
+          92,
+          95,
+          98,
+          102,
+          106,
+          109,
+          112,
+          119,
+          126
+        ],
+        "precision": 130,
+        "prime": 2,
+        "size": 33,
+        "spacing": 6
+      },
+      {
+        "A": 1,
+        "orders": [
+          0
+        ],
+        "precision": 4,
+        "prime": 3,
+        "size": 1,
+        "spacing": 3
+      },
+      {
+        "A": 4,
+        "orders": [
+          0
+        ],
+        "precision": 4,
+        "prime": 3,
+        "size": 1,
+        "spacing": 3
+      },
+      {
+        "A": 1,
+        "orders": [
+          0,
+          2
+        ],
+        "precision": 6,
+        "prime": 3,
+        "size": 2,
+        "spacing": 3
+      },
+      {
+        "A": 4,
+        "orders": [
+          0,
+          2
+        ],
+        "precision": 6,
+        "prime": 3,
+        "size": 2,
+        "spacing": 3
+      },
+      {
+        "A": 1,
+        "orders": [
+          0,
+          2,
+          5
+        ],
+        "precision": 9,
+        "prime": 3,
+        "size": 3,
+        "spacing": 3
+      },
+      {
+        "A": 4,
+        "orders": [
+          0,
+          2,
+          5
+        ],
+        "precision": 9,
+        "prime": 3,
+        "size": 3,
+        "spacing": 3
+      },
+      {
+        "A": 1,
+        "orders": [
+          0,
+          2,
+          5,
+          8,
+          10
+        ],
+        "precision": 14,
+        "prime": 3,
+        "size": 5,
+        "spacing": 3
+      },
+      {
+        "A": 4,
+        "orders": [
+          0,
+          2,
+          5,
+          8,
+          10
+        ],
+        "precision": 14,
+        "prime": 3,
+        "size": 5,
+        "spacing": 3
+      },
+      {
+        "A": 1,
+        "orders": [
+          0,
+          2,
+          5,
+          8,
+          10,
+          13,
+          16,
+          18
+        ],
+        "precision": 22,
+        "prime": 3,
+        "size": 8,
+        "spacing": 3
+      },
+      {
+        "A": 4,
+        "orders": [
+          0,
+          2,
+          5,
+          8,
+          10,
+          13,
+          16,
+          18
+        ],
+        "precision": 22,
+        "prime": 3,
+        "size": 8,
+        "spacing": 3
+      },
+      {
+        "A": 1,
+        "orders": [
+          0,
+          2,
+          5,
+          8,
+          10,
+          13,
+          16,
+          18,
+          22,
+          26,
+          28,
+          31
+        ],
+        "precision": 35,
+        "prime": 3,
+        "size": 12,
+        "spacing": 3
+      },
+      {
+        "A": 4,
+        "orders": [
+          0,
+          2,
+          5,
+          8,
+          10,
+          13,
+          16,
+          18,
+          22,
+          26,
+          28,
+          31
+        ],
+        "precision": 35,
+        "prime": 3,
+        "size": 12,
+        "spacing": 3
+      },
+      {
+        "A": 1,
+        "orders": [
+          0,
+          2,
+          5,
+          8,
+          10,
+          13,
+          16,
+          18,
+          22,
+          26,
+          28,
+          31,
+          34,
+          36,
+          39,
+          42,
+          44
+        ],
+        "precision": 48,
+        "prime": 3,
+        "size": 17,
+        "spacing": 3
+      },
+      {
+        "A": 4,
+        "orders": [
+          0,
+          2,
+          5,
+          8,
+          10,
+          13,
+          16,
+          18,
+          22,
+          26,
+          28,
+          31,
+          34,
+          36,
+          39,
+          42,
+          44
+        ],
+        "precision": 48,
+        "prime": 3,
+        "size": 17,
+        "spacing": 3
+      },
+      {
+        "A": 1,
+        "orders": [
+          0,
+          2,
+          5,
+          8,
+          10,
+          13,
+          16,
+          18,
+          22,
+          26,
+          28,
+          31,
+          34,
+          36,
+          39,
+          42,
+          44,
+          48,
+          52,
+          54,
+          57,
+          60,
+          62,
+          65
+        ],
+        "precision": 69,
+        "prime": 3,
+        "size": 24,
+        "spacing": 3
+      },
+      {
+        "A": 4,
+        "orders": [
+          0,
+          2,
+          5,
+          8,
+          10,
+          13,
+          16,
+          18,
+          22,
+          26,
+          28,
+          31,
+          34,
+          36,
+          39,
+          42,
+          44,
+          48,
+          52,
+          54,
+          57,
+          60,
+          62,
+          65
+        ],
+        "precision": 69,
+        "prime": 3,
+        "size": 24,
+        "spacing": 3
+      },
+      {
+        "A": 1,
+        "orders": [
+          0,
+          2,
+          5,
+          8,
+          10,
+          13,
+          16,
+          18,
+          22,
+          26,
+          28,
+          31,
+          34,
+          36,
+          39,
+          42,
+          44,
+          48,
+          52,
+          54,
+          57,
+          60,
+          62,
+          65,
+          68,
+          70,
+          75,
+          80,
+          82,
+          85,
+          88,
+          90,
+          93
+        ],
+        "precision": 97,
+        "prime": 3,
+        "size": 33,
+        "spacing": 3
+      },
+      {
+        "A": 4,
+        "orders": [
+          0,
+          2,
+          5,
+          8,
+          10,
+          13,
+          16,
+          18,
+          22,
+          26,
+          28,
+          31,
+          34,
+          36,
+          39,
+          42,
+          44,
+          48,
+          52,
+          54,
+          57,
+          60,
+          62,
+          65,
+          68,
+          70,
+          75,
+          80,
+          82,
+          85,
+          88,
+          90,
+          93
+        ],
+        "precision": 97,
+        "prime": 3,
+        "size": 33,
+        "spacing": 3
+      },
+      {
+        "A": 1,
+        "orders": [
+          0
+        ],
+        "precision": 4,
+        "prime": 3,
+        "size": 1,
+        "spacing": 9
+      },
+      {
+        "A": 4,
+        "orders": [
+          0
+        ],
+        "precision": 4,
+        "prime": 3,
+        "size": 1,
+        "spacing": 9
+      },
+      {
+        "A": 1,
+        "orders": [
+          0,
+          4
+        ],
+        "precision": 8,
+        "prime": 3,
+        "size": 2,
+        "spacing": 9
+      },
+      {
+        "A": 4,
+        "orders": [
+          0,
+          4
+        ],
+        "precision": 8,
+        "prime": 3,
+        "size": 2,
+        "spacing": 9
+      },
+      {
+        "A": 1,
+        "orders": [
+          0,
+          4,
+          9
+        ],
+        "precision": 13,
+        "prime": 3,
+        "size": 3,
+        "spacing": 9
+      },
+      {
+        "A": 4,
+        "orders": [
+          0,
+          4,
+          9
+        ],
+        "precision": 13,
+        "prime": 3,
+        "size": 3,
+        "spacing": 9
+      },
+      {
+        "A": 1,
+        "orders": [
+          0,
+          4,
+          9,
+          14,
+          18
+        ],
+        "precision": 22,
+        "prime": 3,
+        "size": 5,
+        "spacing": 9
+      },
+      {
+        "A": 4,
+        "orders": [
+          0,
+          4,
+          9,
+          14,
+          18
+        ],
+        "precision": 22,
+        "prime": 3,
+        "size": 5,
+        "spacing": 9
+      },
+      {
+        "A": 1,
+        "orders": [
+          0,
+          4,
+          9,
+          14,
+          18,
+          23,
+          28,
+          32
+        ],
+        "precision": 36,
+        "prime": 3,
+        "size": 8,
+        "spacing": 9
+      },
+      {
+        "A": 4,
+        "orders": [
+          0,
+          4,
+          9,
+          14,
+          18,
+          23,
+          28,
+          32
+        ],
+        "precision": 36,
+        "prime": 3,
+        "size": 8,
+        "spacing": 9
+      },
+      {
+        "A": 1,
+        "orders": [
+          0,
+          4,
+          9,
+          14,
+          18,
+          23,
+          28,
+          32,
+          38,
+          44,
+          48,
+          53
+        ],
+        "precision": 57,
+        "prime": 3,
+        "size": 12,
+        "spacing": 9
+      },
+      {
+        "A": 4,
+        "orders": [
+          0,
+          4,
+          9,
+          14,
+          18,
+          23,
+          28,
+          32,
+          38,
+          44,
+          48,
+          53
+        ],
+        "precision": 57,
+        "prime": 3,
+        "size": 12,
+        "spacing": 9
+      },
+      {
+        "A": 1,
+        "orders": [
+          0,
+          4,
+          9,
+          14,
+          18,
+          23,
+          28,
+          32,
+          38,
+          44,
+          48,
+          53,
+          58,
+          62,
+          67,
+          72,
+          76
+        ],
+        "precision": 80,
+        "prime": 3,
+        "size": 17,
+        "spacing": 9
+      },
+      {
+        "A": 4,
+        "orders": [
+          0,
+          4,
+          9,
+          14,
+          18,
+          23,
+          28,
+          32,
+          38,
+          44,
+          48,
+          53,
+          58,
+          62,
+          67,
+          72,
+          76
+        ],
+        "precision": 80,
+        "prime": 3,
+        "size": 17,
+        "spacing": 9
+      },
+      {
+        "A": 1,
+        "orders": [
+          0,
+          4,
+          9,
+          14,
+          18,
+          23,
+          28,
+          32,
+          38,
+          44,
+          48,
+          53,
+          58,
+          62,
+          67,
+          72,
+          76,
+          82,
+          88,
+          92,
+          97,
+          102,
+          106,
+          111
+        ],
+        "precision": 115,
+        "prime": 3,
+        "size": 24,
+        "spacing": 9
+      },
+      {
+        "A": 4,
+        "orders": [
+          0,
+          4,
+          9,
+          14,
+          18,
+          23,
+          28,
+          32,
+          38,
+          44,
+          48,
+          53,
+          58,
+          62,
+          67,
+          72,
+          76,
+          82,
+          88,
+          92,
+          97,
+          102,
+          106,
+          111
+        ],
+        "precision": 115,
+        "prime": 3,
+        "size": 24,
+        "spacing": 9
+      },
+      {
+        "A": 1,
+        "orders": [
+          0,
+          4,
+          9,
+          14,
+          18,
+          23,
+          28,
+          32,
+          38,
+          44,
+          48,
+          53,
+          58,
+          62,
+          67,
+          72,
+          76,
+          82,
+          88,
+          92,
+          97,
+          102,
+          106,
+          111,
+          116,
+          120,
+          127,
+          134,
+          138,
+          143,
+          148,
+          152,
+          157
+        ],
+        "precision": 161,
+        "prime": 3,
+        "size": 33,
+        "spacing": 9
+      },
+      {
+        "A": 4,
+        "orders": [
+          0,
+          4,
+          9,
+          14,
+          18,
+          23,
+          28,
+          32,
+          38,
+          44,
+          48,
+          53,
+          58,
+          62,
+          67,
+          72,
+          76,
+          82,
+          88,
+          92,
+          97,
+          102,
+          106,
+          111,
+          116,
+          120,
+          127,
+          134,
+          138,
+          143,
+          148,
+          152,
+          157
+        ],
+        "precision": 161,
+        "prime": 3,
+        "size": 33,
+        "spacing": 9
+      },
+      {
+        "A": 1,
+        "orders": [
+          0
+        ],
+        "precision": 4,
+        "prime": 5,
+        "size": 1,
+        "spacing": 5
+      },
+      {
+        "A": 6,
+        "orders": [
+          0
+        ],
+        "precision": 4,
+        "prime": 5,
+        "size": 1,
+        "spacing": 5
+      },
+      {
+        "A": 1,
+        "orders": [
+          0,
+          2
+        ],
+        "precision": 6,
+        "prime": 5,
+        "size": 2,
+        "spacing": 5
+      },
+      {
+        "A": 6,
+        "orders": [
+          0,
+          2
+        ],
+        "precision": 6,
+        "prime": 5,
+        "size": 2,
+        "spacing": 5
+      },
+      {
+        "A": 1,
+        "orders": [
+          0,
+          2,
+          4
+        ],
+        "precision": 8,
+        "prime": 5,
+        "size": 3,
+        "spacing": 5
+      },
+      {
+        "A": 6,
+        "orders": [
+          0,
+          2,
+          4
+        ],
+        "precision": 8,
+        "prime": 5,
+        "size": 3,
+        "spacing": 5
+      },
+      {
+        "A": 1,
+        "orders": [
+          0,
+          2,
+          4,
+          6,
+          9
+        ],
+        "precision": 13,
+        "prime": 5,
+        "size": 5,
+        "spacing": 5
+      },
+      {
+        "A": 6,
+        "orders": [
+          0,
+          2,
+          4,
+          6,
+          9
+        ],
+        "precision": 13,
+        "prime": 5,
+        "size": 5,
+        "spacing": 5
+      },
+      {
+        "A": 1,
+        "orders": [
+          0,
+          2,
+          4,
+          6,
+          9,
+          12,
+          14,
+          16
+        ],
+        "precision": 20,
+        "prime": 5,
+        "size": 8,
+        "spacing": 5
+      },
+      {
+        "A": 6,
+        "orders": [
+          0,
+          2,
+          4,
+          6,
+          9,
+          12,
+          14,
+          16
+        ],
+        "precision": 20,
+        "prime": 5,
+        "size": 8,
+        "spacing": 5
+      },
+      {
+        "A": 1,
+        "orders": [
+          0,
+          2,
+          4,
+          6,
+          9,
+          12,
+          14,
+          16,
+          18,
+          21,
+          24,
+          26
+        ],
+        "precision": 30,
+        "prime": 5,
+        "size": 12,
+        "spacing": 5
+      },
+      {
+        "A": 6,
+        "orders": [
+          0,
+          2,
+          4,
+          6,
+          9,
+          12,
+          14,
+          16,
+          18,
+          21,
+          24,
+          26
+        ],
+        "precision": 30,
+        "prime": 5,
+        "size": 12,
+        "spacing": 5
+      },
+      {
+        "A": 1,
+        "orders": [
+          0,
+          2,
+          4,
+          6,
+          9,
+          12,
+          14,
+          16,
+          18,
+          21,
+          24,
+          26,
+          28,
+          30,
+          33,
+          36,
+          38
+        ],
+        "precision": 42,
+        "prime": 5,
+        "size": 17,
+        "spacing": 5
+      },
+      {
+        "A": 6,
+        "orders": [
+          0,
+          2,
+          4,
+          6,
+          9,
+          12,
+          14,
+          16,
+          18,
+          21,
+          24,
+          26,
+          28,
+          30,
+          33,
+          36,
+          38
+        ],
+        "precision": 42,
+        "prime": 5,
+        "size": 17,
+        "spacing": 5
+      },
+      {
+        "A": 1,
+        "orders": [
+          0,
+          2,
+          4,
+          6,
+          9,
+          12,
+          14,
+          16,
+          18,
+          21,
+          24,
+          26,
+          28,
+          30,
+          33,
+          36,
+          38,
+          40,
+          42,
+          45,
+          48,
+          50,
+          52,
+          54
+        ],
+        "precision": 58,
+        "prime": 5,
+        "size": 24,
+        "spacing": 5
+      },
+      {
+        "A": 6,
+        "orders": [
+          0,
+          2,
+          4,
+          6,
+          9,
+          12,
+          14,
+          16,
+          18,
+          21,
+          24,
+          26,
+          28,
+          30,
+          33,
+          36,
+          38,
+          40,
+          42,
+          45,
+          48,
+          50,
+          52,
+          54
+        ],
+        "precision": 58,
+        "prime": 5,
+        "size": 24,
+        "spacing": 5
+      },
+      {
+        "A": 1,
+        "orders": [
+          0,
+          2,
+          4,
+          6,
+          9,
+          12,
+          14,
+          16,
+          18,
+          21,
+          24,
+          26,
+          28,
+          30,
+          33,
+          36,
+          38,
+          40,
+          42,
+          45,
+          48,
+          50,
+          52,
+          54,
+          58,
+          62,
+          64,
+          66,
+          68,
+          71,
+          74,
+          76,
+          78
+        ],
+        "precision": 82,
+        "prime": 5,
+        "size": 33,
+        "spacing": 5
+      },
+      {
+        "A": 6,
+        "orders": [
+          0,
+          2,
+          4,
+          6,
+          9,
+          12,
+          14,
+          16,
+          18,
+          21,
+          24,
+          26,
+          28,
+          30,
+          33,
+          36,
+          38,
+          40,
+          42,
+          45,
+          48,
+          50,
+          52,
+          54,
+          58,
+          62,
+          64,
+          66,
+          68,
+          71,
+          74,
+          76,
+          78
+        ],
+        "precision": 82,
+        "prime": 5,
+        "size": 33,
+        "spacing": 5
+      }
+    ]
+  },
+  "source_sha256": {
+    "research/arithmetic-cauchy-factorial-law.md": "71819f637b0dafc82388efca7acbdc712eb3ab046cd37a76b0879eb7d5679933",
+    "tools/boolean_cauchy_operator.py": "1d9c4c2993f977e02c3a742ffa388e893ab95f3c99d1de13aa25e038ef0bcb30",
+    "tools/cauchy_packet_polynomials.py": "92d102c11cc42db9caadd028b5552b068ae9d734c46a4c4f5791662cc5be83cc",
+    "tools/check_arithmetic_cauchy_factorial.py": "f692acfeda81dae86167e9e43c652e6fa497dd52ad8453f6119a4672698de3c2",
+    "tools/walsh_cauchy_permanents.py": "c48a7574cd723dceba39f16c2c5cdef78dadd118be039aad74ebe49b750de5b0"
+  },
+  "status": "pass"
+}

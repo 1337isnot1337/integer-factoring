@@ -19,6 +19,10 @@ verify-frontier-extensions:
 	python3 tools/check_all_scale_balanced_obstruction.py
 	python3 tools/check_truncated_symmetric_interval_frontier.py
 
+.PHONY: verify-cauchy-factorial
+verify-cauchy-factorial:
+	python3 tools/check_arithmetic_cauchy_factorial.py
+
 verify-schur-fermion:
 	python3 tools/check_schur_fermion.py
 
