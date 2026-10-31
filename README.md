@@ -310,6 +310,13 @@ reject all 216 cases of a stated two-dimensional binary control under the
 finite-block rank-sum envelope. Other auxiliaries and a uniform subcritical
 rank bound remain open. Run `make verify-ordered-steiner-gauges`.
 
+The [ordered Weyl construction](research/weyl-ordered-boundaries.md) writes
+the auxiliary word as an explicit quadratic phase. A Fourier argument
+classifies boundaries retaining the rank-one zero cut at every length.
+All 4,096 normalized F4 choices fail the two-position bare criterion by
+an exact four-jet floor `738>9^3`; longer ordered words remain open.
+Run `make verify-weyl-ordered-boundaries` for the standard-library replay.
+
 The [group-shear extension](research/group-shear-crossings.md) implements
 the swap through three multiplication/division shears over any finite
 `p`-group, with a constant nonzero determinant in characteristic `p`.

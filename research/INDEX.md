@@ -339,6 +339,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 - [Ordered physical-gauge crossings](ordered-physical-gauge-crossings.md): noncommuting matrix gauges preserve every endpoint and the polynomial coefficient count; exact rank-sum dual potentials exclude 216 stated binary controls, with a distinct clock/shift phase construction left for further work.
 
+- [Ordered Weyl boundaries](weyl-ordered-boundaries.md): explicit quadratic-phase word kernels and an all-length rank-one cold-boundary classification; exact four-jet certificates reject all 4,096 normalized F4 boundaries at two positions, without excluding longer words.
+
 - [Group-shear crossings](group-shear-crossings.md): multiplication/division shears give cubic swap paths over every finite `p`-group in characteristic `p`; exact early-jet certificates exclude six displayed binary seeds, without an all-group claim.
 
 - [All-degree homogeneous Boolean charge bands](homogeneous-boolean-charge-bands.md): a degree-independent loss cap and stronger Gaussian floors exclude all exterior charges and a linearly growing interior band, including overlapping monomials.

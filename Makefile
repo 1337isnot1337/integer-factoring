@@ -96,6 +96,10 @@ verify-steiner-coefficients:
 verify-ordered-steiner-gauges:
 	python3 tools/check_ordered_steiner_gauges.py
 
+.PHONY: verify-weyl-ordered-boundaries
+verify-weyl-ordered-boundaries:
+	python3 tools/check_weyl_ordered_boundaries.py
+
 .PHONY: verify-group-shears
 verify-group-shears:
 	python3 tools/check_group_shear_crossings.py
