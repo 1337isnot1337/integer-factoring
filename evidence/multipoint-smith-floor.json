@@ -1,0 +1,20 @@
+{
+  "status": "pass",
+  "abstract_exact_pressure_comparisons": 9908,
+  "sharp_abstract_profile_corners": 127,
+  "literal_polynomial_seeds": 56,
+  "literal_cut_profiles": 528,
+  "literal_exact_pressure_comparisons": 264,
+  "complete_native_cubic_search_seeds": 1579014,
+  "independent_cubic_toeplitz_profiles": 1200,
+  "reconstructed_two_copy_cubic_crossings": 200,
+  "complete_two_copy_cubic_entries": 51200,
+  "universal_rho_floor": "strictly greater than 3/4 for every fixed finite alphabet",
+  "scope": "The unweighted local-jet multipoint Smith pressure criterion; no factoring lower bound or exclusion of sharper actual-jet bounds.",
+  "source_sha256": {
+    "search_multipoint_pure_cubics.cpp": "38dcea24f08f15592dd57b738e84cf7a9e19419811c4b904985cf33c6b7a289d",
+    "check_multipoint_smith_floor.py": "83a763ee2aa111cf96ab6814b254f324019f89497b53fcd5a3fc68c23b41cd54",
+    "check_multipoint_hermite_crossings.py": "a0668c171acc3bd0397325b2e7a08a88ed68fe0de8adda1abb7c655869b9ac3f"
+  },
+  "cubic_catalogue_sha256": "286dd66b2485b2b7b6b3ba9a4c43039f21c92e3d457aec72e3fb6e84ddcc298a"
+}
