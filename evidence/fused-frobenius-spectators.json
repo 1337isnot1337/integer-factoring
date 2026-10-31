@@ -1,0 +1,1376 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "claim": "Six exact transfer-period identities establish all-t spectator factorization for m=t*ell-1 at the three specified F16 parameters; no universal weighted barrier or factoring improvement claimed.",
+  "source_sha256": {
+    "check_fused_frobenius_spectators.py": "5f98fcb70bf1b07621a212b9bf67495ca8aab798f2a3d373e788095e96b48ce6",
+    "compressed_fused_six_vertex.py": "5c17d1371b5e5e48ec9b141e0b45aa3650092207e03b412209c9fee66b91bb3e",
+    "explicit_fused_row_formula.py": "e9cdfbb6dd1e4e6a58ba1f6216a7e135eb27f227643d2dff3c607d6f9c44cf8a",
+    "fused_six_vertex_crossings.py": "90b016b84e57b2b6d1134c61016c2de5183edc2b2f2943ef9964d5d82dbaf109",
+    "f16_identity_operator_profiles.py": "3095c293971c4fff43f2a71052e49c526ded05aa9d087531124d246a05c67c8b",
+    "f4_lattice_linear.py": "fc27ccbcf4a82cb3c2643eac6a8a53fb7e08ced4700a30c0b5abca1a3f3aab8e"
+  },
+  "period_identities": [
+    {
+      "theta": 2,
+      "root_order": 3,
+      "output_bit": 0,
+      "matrix": [
+        [
+          [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ]
+          ],
+          [],
+          []
+        ],
+        [
+          [],
+          [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ]
+          ],
+          []
+        ],
+        [
+          [],
+          [],
+          [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ]
+          ]
+        ]
+      ],
+      "off_diagonal_zero": true,
+      "diagonal_terms": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          3,
+          1
+        ]
+      ]
+    },
+    {
+      "theta": 2,
+      "root_order": 3,
+      "output_bit": 1,
+      "matrix": [
+        [
+          [
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              3,
+              3,
+              1
+            ]
+          ],
+          [],
+          []
+        ],
+        [
+          [],
+          [
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              3,
+              3,
+              1
+            ]
+          ],
+          []
+        ],
+        [
+          [],
+          [],
+          [
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              3,
+              3,
+              1
+            ]
+          ]
+        ]
+      ],
+      "off_diagonal_zero": true,
+      "diagonal_terms": [
+        [
+          3,
+          0,
+          1
+        ],
+        [
+          3,
+          3,
+          1
+        ]
+      ]
+    },
+    {
+      "theta": 8,
+      "root_order": 5,
+      "output_bit": 0,
+      "matrix": [
+        [
+          [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              5,
+              1
+            ]
+          ],
+          [],
+          [],
+          [],
+          []
+        ],
+        [
+          [],
+          [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              5,
+              1
+            ]
+          ],
+          [],
+          [],
+          []
+        ],
+        [
+          [],
+          [],
+          [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              5,
+              1
+            ]
+          ],
+          [],
+          []
+        ],
+        [
+          [],
+          [],
+          [],
+          [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              5,
+              1
+            ]
+          ],
+          []
+        ],
+        [
+          [],
+          [],
+          [],
+          [],
+          [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              5,
+              1
+            ]
+          ]
+        ]
+      ],
+      "off_diagonal_zero": true,
+      "diagonal_terms": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          5,
+          1
+        ]
+      ]
+    },
+    {
+      "theta": 8,
+      "root_order": 5,
+      "output_bit": 1,
+      "matrix": [
+        [
+          [
+            [
+              5,
+              0,
+              1
+            ],
+            [
+              5,
+              5,
+              1
+            ]
+          ],
+          [],
+          [],
+          [],
+          []
+        ],
+        [
+          [],
+          [
+            [
+              5,
+              0,
+              1
+            ],
+            [
+              5,
+              5,
+              1
+            ]
+          ],
+          [],
+          [],
+          []
+        ],
+        [
+          [],
+          [],
+          [
+            [
+              5,
+              0,
+              1
+            ],
+            [
+              5,
+              5,
+              1
+            ]
+          ],
+          [],
+          []
+        ],
+        [
+          [],
+          [],
+          [],
+          [
+            [
+              5,
+              0,
+              1
+            ],
+            [
+              5,
+              5,
+              1
+            ]
+          ],
+          []
+        ],
+        [
+          [],
+          [],
+          [],
+          [],
+          [
+            [
+              5,
+              0,
+              1
+            ],
+            [
+              5,
+              5,
+              1
+            ]
+          ]
+        ]
+      ],
+      "off_diagonal_zero": true,
+      "diagonal_terms": [
+        [
+          5,
+          0,
+          1
+        ],
+        [
+          5,
+          5,
+          1
+        ]
+      ]
+    },
+    {
+      "theta": 4,
+      "root_order": 15,
+      "output_bit": 0,
+      "matrix": [
+        [
+          [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              15,
+              1
+            ]
+          ],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        [
+          [],
+          [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              15,
+              1
+            ]
+          ],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        [
+          [],
+          [],
+          [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              15,
+              1
+            ]
+          ],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        [
+          [],
+          [],
+          [],
+          [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              15,
+              1
+            ]
+          ],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        [
+          [],
+          [],
+          [],
+          [],
+          [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              15,
+              1
+            ]
+          ],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              15,
+              1
+            ]
+          ],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              15,
+              1
+            ]
+          ],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              15,
+              1
+            ]
+          ],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              15,
+              1
+            ]
+          ],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              15,
+              1
+            ]
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              15,
+              1
+            ]
+          ],
+          [],
+          [],
+          [],
+          []
+        ],
+        [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              15,
+              1
+            ]
+          ],
+          [],
+          [],
+          []
+        ],
+        [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              15,
+              1
+            ]
+          ],
+          [],
+          []
+        ],
+        [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              15,
+              1
+            ]
+          ],
+          []
+        ],
+        [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              15,
+              1
+            ]
+          ]
+        ]
+      ],
+      "off_diagonal_zero": true,
+      "diagonal_terms": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          15,
+          1
+        ]
+      ]
+    },
+    {
+      "theta": 4,
+      "root_order": 15,
+      "output_bit": 1,
+      "matrix": [
+        [
+          [
+            [
+              15,
+              0,
+              1
+            ],
+            [
+              15,
+              15,
+              1
+            ]
+          ],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        [
+          [],
+          [
+            [
+              15,
+              0,
+              1
+            ],
+            [
+              15,
+              15,
+              1
+            ]
+          ],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        [
+          [],
+          [],
+          [
+            [
+              15,
+              0,
+              1
+            ],
+            [
+              15,
+              15,
+              1
+            ]
+          ],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        [
+          [],
+          [],
+          [],
+          [
+            [
+              15,
+              0,
+              1
+            ],
+            [
+              15,
+              15,
+              1
+            ]
+          ],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        [
+          [],
+          [],
+          [],
+          [],
+          [
+            [
+              15,
+              0,
+              1
+            ],
+            [
+              15,
+              15,
+              1
+            ]
+          ],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            [
+              15,
+              0,
+              1
+            ],
+            [
+              15,
+              15,
+              1
+            ]
+          ],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            [
+              15,
+              0,
+              1
+            ],
+            [
+              15,
+              15,
+              1
+            ]
+          ],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            [
+              15,
+              0,
+              1
+            ],
+            [
+              15,
+              15,
+              1
+            ]
+          ],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            [
+              15,
+              0,
+              1
+            ],
+            [
+              15,
+              15,
+              1
+            ]
+          ],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            [
+              15,
+              0,
+              1
+            ],
+            [
+              15,
+              15,
+              1
+            ]
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            [
+              15,
+              0,
+              1
+            ],
+            [
+              15,
+              15,
+              1
+            ]
+          ],
+          [],
+          [],
+          [],
+          []
+        ],
+        [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            [
+              15,
+              0,
+              1
+            ],
+            [
+              15,
+              15,
+              1
+            ]
+          ],
+          [],
+          [],
+          []
+        ],
+        [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            [
+              15,
+              0,
+              1
+            ],
+            [
+              15,
+              15,
+              1
+            ]
+          ],
+          [],
+          []
+        ],
+        [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            [
+              15,
+              0,
+              1
+            ],
+            [
+              15,
+              15,
+              1
+            ]
+          ],
+          []
+        ],
+        [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            [
+              15,
+              0,
+              1
+            ],
+            [
+              15,
+              15,
+              1
+            ]
+          ]
+        ]
+      ],
+      "off_diagonal_zero": true,
+      "diagonal_terms": [
+        [
+          15,
+          0,
+          1
+        ],
+        [
+          15,
+          15,
+          1
+        ]
+      ]
+    }
+  ],
+  "base_crossings": [
+    {
+      "theta": 2,
+      "root_order": 3,
+      "m": 2,
+      "degree": 2,
+      "normalized_matrix_sha256": "12549d2bc540810ab6df6bf27a74aac4f8acf5fc141fd5cb4c78bbc8ae5c9d83",
+      "endpoint_sha256": "93025c6d2b10f06821d16da1848e1ed53e444d9ea9b1162856bf18ec33aa9913",
+      "strict_endpoint_entries": 81
+    },
+    {
+      "theta": 8,
+      "root_order": 5,
+      "m": 4,
+      "degree": 4,
+      "normalized_matrix_sha256": "5afb39ab29e45911ef35d902aad159d2716c108477839d706fb012684d5598b5",
+      "endpoint_sha256": "218eb46a09432ba3d521a6b506edb05453af92640ba2af988d10090516fa8556",
+      "strict_endpoint_entries": 625
+    },
+    {
+      "theta": 4,
+      "root_order": 15,
+      "m": 14,
+      "degree": 14,
+      "normalized_matrix_sha256": "a7d60bc7fd320cfb5a6891bde2bfea29bea279b3d1d8faadc717cda94e1bf50e",
+      "endpoint_sha256": "29c2da827031d3ae989b8cdab89b374464952218c7647f255215176756c64ff7",
+      "strict_endpoint_entries": 50625
+    }
+  ],
+  "complete_multiple_controls": [
+    {
+      "theta": 2,
+      "root_order": 3,
+      "multiple": 2,
+      "m": 5,
+      "alphabet": 6,
+      "degree": 2,
+      "normalized_matrix_entries": 1296,
+      "raw_endpoint_entries": 1296,
+      "raw_endpoint_scalar": 2,
+      "normalized_matrix_sha256": "375d3f64bed90759c1bf5f24afb9d28cfc4eb5f9cccb5b98e9dd6e03f1593724",
+      "raw_endpoint_sha256": "8504c30f93af3e9df3dc00629ee47bdb6a31fb636cf8d87a1d5894a73ae16ccf",
+      "implied_smith_multiplicity": 4
+    },
+    {
+      "theta": 2,
+      "root_order": 3,
+      "multiple": 3,
+      "m": 8,
+      "alphabet": 9,
+      "degree": 2,
+      "normalized_matrix_entries": 6561,
+      "raw_endpoint_entries": 6561,
+      "raw_endpoint_scalar": 2,
+      "normalized_matrix_sha256": "7d5f997ab387e841d91ffab702b4eee9902ca545bfe4cadf58dcb5edcd25225a",
+      "raw_endpoint_sha256": "c265f6f5d43ba5e1f6b8797f1ad5c868c64fd86dd394d5eee43844c9f7d9542b",
+      "implied_smith_multiplicity": 9
+    },
+    {
+      "theta": 2,
+      "root_order": 3,
+      "multiple": 4,
+      "m": 11,
+      "alphabet": 12,
+      "degree": 2,
+      "normalized_matrix_entries": 20736,
+      "raw_endpoint_entries": 20736,
+      "raw_endpoint_scalar": 2,
+      "normalized_matrix_sha256": "4f8683f4d0b20789be822cf0eb4ea770f87f0192684643fffd2db2f0ec7ea121",
+      "raw_endpoint_sha256": "6fd177eec0f306554c9a1f004ac8c08dce2b135a0491d5ca348b177aa9c58155",
+      "implied_smith_multiplicity": 16
+    },
+    {
+      "theta": 2,
+      "root_order": 3,
+      "multiple": 5,
+      "m": 14,
+      "alphabet": 15,
+      "degree": 2,
+      "normalized_matrix_entries": 50625,
+      "raw_endpoint_entries": 50625,
+      "raw_endpoint_scalar": 2,
+      "normalized_matrix_sha256": "0d20d3e5970dbbc48f2d9f53c5f2843d4a543cd770006475d6076fa0f76940e3",
+      "raw_endpoint_sha256": "639163cae49b1b932352917839f169fb8274d9d8916900d0769801d5cb3f5638",
+      "implied_smith_multiplicity": 25
+    },
+    {
+      "theta": 4,
+      "root_order": 15,
+      "multiple": 2,
+      "m": 29,
+      "alphabet": 30,
+      "degree": 14,
+      "normalized_matrix_entries": 810000,
+      "raw_endpoint_entries": 810000,
+      "raw_endpoint_scalar": 4,
+      "normalized_matrix_sha256": "3f468d8560dc3fa5ac29da37d929e4b968b2f5d1b9b62b8f4812f687b1df3365",
+      "raw_endpoint_sha256": "cabe8500d4b2c21a64ca76186e76b794e00f55c9131cc9cdf5ea8b48e879a241",
+      "implied_smith_multiplicity": 4
+    },
+    {
+      "theta": 8,
+      "root_order": 5,
+      "multiple": 2,
+      "m": 9,
+      "alphabet": 10,
+      "degree": 4,
+      "normalized_matrix_entries": 10000,
+      "raw_endpoint_entries": 10000,
+      "raw_endpoint_scalar": 8,
+      "normalized_matrix_sha256": "9e28b60408b9863f594f902b0bd4272efaea275e22880638d8d4c44de0cd230f",
+      "raw_endpoint_sha256": "d632ce13135a72cf144fe7de7399502bd78c0c6c658676eb928a9fcb31f29f87",
+      "implied_smith_multiplicity": 4
+    }
+  ],
+  "totals": {
+    "certified_period_identities": 6,
+    "extra_cyclic_shift_controls": 12,
+    "literal_row_interpretations": 518,
+    "generating_vector_coefficients": 1645,
+    "base_endpoint_entries": 51331,
+    "complete_multiple_cases": 6,
+    "normalized_multiple_entries": 899218,
+    "raw_multiple_endpoint_entries": 899218
+  }
+}

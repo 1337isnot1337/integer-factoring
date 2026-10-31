@@ -28,6 +28,9 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Every singular place of the fused seeds](fused-all-place-profiles.md): exact closed-point factorization, complete profiles, quotient-module rank checks, and full determinant-degree accounting on three through six physical letters.
 - [Physical gauges at every fused place](fused-weighted-place-profiles.md): complete symbol-height profiles from all actual support minors, local convexity and subgradients, rational local ramification, and common paired-type accounting.
 - [Compressed fusion and root-of-unity endpoints](compressed-fusion-root-resonance.md): exact symmetric-block recurrences reproduce the literal construction and supply explicitly normalized seeds through nineteen letters; complete weighted profiles use a cached fraction-free local engine.
+- [Explicit fused row formula](explicit-fused-row-formula.md): a degree-one divided row and eight formal identities prove the symmetric-block recurrence at every block size.
+- [Complete-block spectator theorem](fused-frobenius-spectators.md): exact period identities at root orders 3, 5, and 15 give an all-multiple tensor factorization and the complete profile costs of its full-crossing spectator.
+- [Carry Fourier elimination](carry-fourier-elimination.md): constant-state fixed-frequency queries, exact frequency-labelled interface ranks, and an explicit reduction of the coupled problem to incomplete bilinear character sums.
 
 - [Joint residues reduce to finite templates and convex offsets](joint-syndrome-residue-retiming.md): at fixed normalized degree, arbitrary coefficient fields and ramification reduce exactly to finitely many binary endpoint covers and compact convex offset programs; a transport certificate bounds the entire offset box, with exact color and Hall controls.
 

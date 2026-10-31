@@ -76,6 +76,18 @@ An [exact compressed fusion recurrence](research/compressed-fusion-root-resonanc
 also constructs and checks root-of-unity seeds through nineteen letters.
 Its explicit joint endpoint normalization requires new second-cut costs,
 which the accompanying complete local-profile engine computes.
+The [explicit fused row formula](research/explicit-fused-row-formula.md)
+proves the compressed construction for every symmetric block size.
+At complete blocks of root orders 3, 5, and 15, the
+[spectator factor theorem](research/fused-frobenius-spectators.md)
+identifies the larger crossing exactly and explains why its constant
+degree alone does not improve the inherited contraction bound.
+
+The [carry Fourier elimination](research/carry-fourier-elimination.md)
+evaluates each fixed-frequency carry query with a constant-size state.
+It also proves that retaining the frequency as a tensor coordinate
+restores the large interface rank, and reduces the remaining coupled
+arithmetic problem to explicit incomplete bilinear character sums.
 
 ## Verification
 
@@ -94,6 +106,8 @@ make verify-operand-length # Asymmetric supports, length-class counts, and 49/57
 make verify-fused-places  # All finite and closed-place fused profiles; needs NumPy/SciPy
 make verify-fused-weights # Complete weighted local profiles and type-shift controls
 make verify-compressed-fusion # Compressed/literal identities and root-of-unity endpoints
+make verify-explicit-fusion # All-degree row identities and complete-block spectator theorem
+make verify-carry-fourier  # Exact carry elimination and frequency-labelled rank controls
 make verify-schur-fermion # Complete Schur entry formulas and exact comparisons
 make verify-schur-central # Hook-residue identities and full Schur ranks through weight 8
 make verify-schur-gaussian # Exact digit reduction and fixed Gaussian crossing seed

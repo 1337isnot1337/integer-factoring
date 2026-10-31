@@ -706,3 +706,11 @@ verify-binary-typed-endpoints:
 verify-joint-residue-retiming:
 	OPENBLAS_NUM_THREADS=1 python3 tools/check_joint_syndrome_residue_retiming.py --output /tmp/integer-factoring-joint-residue-retiming-replay.json
 
+.PHONY: verify-explicit-fusion verify-carry-fourier
+verify-explicit-fusion:
+	python3 tools/check_explicit_fused_row.py --output /tmp/integer-factoring-explicit-fused-row-replay.json
+	python3 tools/check_fused_frobenius_spectators.py --output /tmp/integer-factoring-fused-spectators-replay.json
+
+verify-carry-fourier:
+	python3 tools/check_carry_fourier_elimination.py --output /tmp/integer-factoring-carry-fourier-replay.json
+
