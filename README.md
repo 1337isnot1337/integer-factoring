@@ -111,6 +111,12 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs five groups on 
 
 ## Current research frontier
 
+The [auxiliary extension](research/auxiliary-binary-gauge-floor.md) carries
+the same floor to matrix-valued binary seeds of every fixed auxiliary
+dimension, including independent rational auxiliary gauges at the two
+places; block certificates and module word-rate bounds remain outside it.
+Run `make verify-auxiliary-binary-floor`.
+
 For larger alphabets, [cell-set minor caps](research/cell-minor-caps.md)
 strengthen the [shared-minor relaxation](research/shared-minor-profile-relaxation.md):
 every set of k cells gives an endpoint minor that bounds each Smith-profile
@@ -263,6 +269,15 @@ Complete small no-adjacent-ones code experiments give no new rank-sum
 threshold; the [weighted block theorem](research/difference-support-rank-floor.md)
 subsequently closes every coordinate-code pair for the elementary seed.
 Run `make verify-downset-crossings verify-regular-code-crossings`.
+
+The [coherent bounded-spin construction](research/bounded-spin-crossing.md)
+uses height-three Clebsch--Gordan paths over the fixed field `F_5`.
+It has Fibonacci many labels, nondegenerate paired encoders at every
+length, an exact crossing endpoint, and a finite-state entry algorithm.
+It also supports exactly `2^lambda` labels with degree `O(lambda)`.
+A companion integer identity has scale `12^n` and `O(lambda)` coefficient
+bits. Modular rank gains do not automatically lift to rational ranks.
+A uniform favorable rank bound remains open. Run `make verify-bounded-spin`.
 
 The [exact nonlinear charge theorem](research/nonlinear-symbol-charge-lattices.md)
 characterizes every admissible pair of full-symbol potentials for the
@@ -1154,7 +1169,7 @@ The current ordinary-proof campaign establishes these scoped results:
 | Scope | Result and evidence |
 | --- | --- |
 | Bare ungauged local Smith profiles, every field and degree, fixed auxiliaries | [Degree budgets](research/all-degree-small-alphabet-smith-floor.md) and [shared minors](research/shared-minor-smith-floor.md) exclude a half-rate improvement through six letters. |
-| The same certificate on 7 through 10 letters | An [exact entropy dual](research/leading-rank-entropy-floor.md) forces exactly one minimum-order channel in each cut for any potential improvement. |
+| The same certificate on 7 through 12 letters | [Box-minor Kronecker budgets](research/bare-seven-to-twelve-letters.md) exclude a half-rate improvement through twelve letters; at 13 letters an exact profile satisfies every box budget and adjugate inequality proved there, so the criterion remains open. |
 | Scalar paths with a monomial column determinant | [Inverse-degree compatibility](research/inverse-degree-crossing-compatibility.md) rules out the formal seven-letter optimum at every integer ramification. |
 | Polynomial inverse paths on 7 through 10 letters | [Inverse-degree aspect bounds](research/inverse-degree-aspect-bounds.md) cap the useful degree; they also exclude all `2^31` binary level-weight assignments of the fixed nine-letter flag. |
 | Noncommuting quadratic-inverse constructions | A [general two-jet tradeoff and complete nine-letter schedule](research/nine-letter-quadratic-inverse-probe.md) show why suppressing order one alone fails; all 31 tested level choices are excluded at every scale. Other pencils remain open. |

@@ -167,3 +167,11 @@ When a PR changes, retain the historical checkpoint and review the delta.
 ## 2026-10-31: PR #49 integration by research director
 
 Exact head 78b3cca917583eff2324671d6fd241c28ebd7019; contributor orda-aska / Claude Code. Inspected incremental source, preserved current main, and replayed make verify-cell-minor-caps byte-identically against evidence. Full make verify passed on the integration tree (315 docs, 50+5 tests). Finite floating findings remain distinct from global positivity. Integration is not independent mathematical acceptance; no new factoring bound, Lean rebuild, or PR approval.
+
+## 2026-10-31: PR #54 integration by research director
+
+Exact head fb5d2fe333a2c21b41c7f092ee25ef87d4801921; contributor orda-aska / Claude Code. Inspected scope and checker, preserved current main, replayed make verify-auxiliary-binary-floor byte-identically:230 cases,3320 rectangular profiles,128 all-minor controls,68 larger constant-contraction pressure cases. Full make verify passed on integration tree (322docs,50+5tests). The result concerns the stated local Smith criterion, not actual coefficient ranks or all auxiliary mechanisms. Integration/source inspection is not independent mathematical acceptance. No Lean rebuild or PR approval.
+
+## 2026-10-31: PR #55 integration by research director
+
+Exact head ba5974a05a998572d14763c3c40997aabf65f217 after its #40 prerequisite. Contributor orda-aska / Claude Code. Inspected checker and scope, retained optional generator without rerunning its floating search. Focused exact replay passed: six entropy certificates, q13 feasible profile, 140 literal crossings,1200 boxes,280 adjugate controls and mutation rejections. Full make verify passed on reconciled local tree (327docs,50+5tests); restored focused/default wiring while preserving current targets. The q13 profile is not a realizing tensor, and these are bare-criterion obstructions only. Integration is not independent mathematical acceptance; no Lean rebuild or PR approval.

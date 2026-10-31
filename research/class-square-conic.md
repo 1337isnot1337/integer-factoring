@@ -202,6 +202,17 @@ new source of ambiguous classes. General supplied-square witnesses can
 also yield useful content; uniform discovery of such witnesses remains
 open.
 
+The concurrent [conic denominator audit](conic-denominator-descent.md),
+integrated from `014ba9f`, gives a sharper specialization for Delta=-4N.
+After preparing an odd coprime leading coefficient, its content is
+exactly a parity factor times one linear gcd with N. Unless that gcd
+already factors N, the remaining denominator belongs to the root norm
+class or its product with U. It also recovers a square-root class from
+a supplied square representation without factoring its denominator and
+gives explicit failures of monotone denominator descent. That audit and
+the general-discriminant matrix and adjugate proof here are complementary
+ordinary results; neither supplies smooth-denominator search.
+
 ## 5. Reproduction and evidence
 
 Run `make verify-class-square-conic`, or

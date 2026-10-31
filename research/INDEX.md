@@ -16,6 +16,10 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Bare criterion through twelve letters](bare-seven-to-twelve-letters.md): proved box-minor Kronecker budgets couple the two cuts; exact entropy-dual certificates give rho_bare>1/sqrt(2) for 7<=q<=12 at every degree and field, with fixed auxiliaries; an exact thirteen-letter profile satisfies every box budget and adjugate inequality and is the remaining construction target.
+
+- [Auxiliary binary gauge floor](auxiliary-binary-gauge-floor.md): the gauged binary floor extends to matrix-valued Laurent seeds of every fixed auxiliary dimension with independent rational auxiliary conjugation gauges at the two places, by dominating the rectangular Smith orders coordinatewise with a twisted scalar boundary contraction; an explicit seed shows that no constant contraction dominates at both places and that a boundary contraction `f^T K e` can have strictly larger pressure.
+
 - [Cell-set minor caps](cell-minor-caps.md): every k-cell endpoint minor bounds each normalized Smith profile prefix by kd plus the k smallest cell energies; this exactly excludes the four-symbol shared-minor target, leaves certified sharper negative relaxation targets at five and six symbols, and proves a compact ternary region; the finite floating searches found no negative four-symbol value, but global four-symbol closure remains open. No realizing tensor or factoring improvement.
 
 - [Joint determinant actual-rank barrier](joint-determinant-barrier.md): all-field Weyl filtrations close every binary pure-value quadratic and cubic at leading `rho>=4/5`; the weaker rank-two determinant floor is `2/3`, and the common-cofactor result above closes the ternary quadratic class.
@@ -49,6 +53,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Deterministic norm sieve](arithmetic-norm-sieve.md): pair and direct-word certificates factor 60/80-bit inputs without class enumeration; polynomial composition and bounded diagonals reduce determinant encodings to 520/500 bits, while failed boxes retain the search limits.
 - [Quantitative smooth-norm localization](smooth-norm-localization.md): the exact biased generator-power family, an explicit unproved short-box hypothesis and a conditional transfer above half; splitting coverage remains a separate hypothesis.
 - [Known-root conic transport](class-square-conic.md): an integral matrix of determinant |Delta| parametrizes every rational square-norm point; cancellation divides the discriminant, and fixed-square search is exactly a denominator-divisor search, still unproved within the target cost.
+- [Conic denominator audit](conic-denominator-descent.md): for discriminant -4N, cancellation is one explicit linear gcd and a parity factor; nonsplitting cases preserve the root class up to the exceptional ambiguous class, with exact failures of monotone descent.
 - [Polynomial divisor-gap extraction](smooth-norm-gap.md): integer multiplicative trimming converts promised inner-radius balanced norms at a specified outer radius, without enumerating all divisors.
 - [Relations from small smooth norms](smooth-norm-relations.md): primitive smooth norms yield bounded prime-form words directly, removing the balanced-factor condition and strictly enlarging the accepted target set.
 - [Exact search for a factored norm](factored-norm-search.md): ideal-lattice composition and deterministic meet-in-the-middle decide one primitive representation and recover coordinates in `Y poly(b)+2^O(b/log b)` bit time; selecting candidate norms remains open.
@@ -412,6 +417,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Binary actual-rank tools and physical codes
 
+- [Coherent bounded-spin crossing](bounded-spin-crossing.md): uniform height-three path encoders over F5, Fibonacci growth, strict endpoint, exact binary widths and a finite-state entry constructor; a post-half actual-rank bound remains open.
 - [Binary site-symmetry actual-rank barrier](binary-site-symmetry-barrier.md): a universal degree-four certificate forces `rho>=3/4` over any fixed field, including all scalar polynomial degrees, coefficient recombinations, and common partitions into sublinearly many position classes.
 - [Full auxiliary coefficient-span optimization](auxiliary-coefficient-span.md): all 2,588 binary functionals in 15 finite cases, strict recombination gains, exact minmax certificates, and rational rank-sum optima certified by shortest-path dual potentials.
 - [Nonlinear downset-code crossings](downset-code-crossings.md): exact global characteristic-two Smith factors and a constant basis normal form for actual coefficient ranks on every downset and every paired-downset encoding, with complete small-domain controls and nonlinear regular-code searches.

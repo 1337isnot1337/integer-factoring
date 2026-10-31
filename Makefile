@@ -137,6 +137,10 @@ verify-transpose-intertwiner:
 verify-joint-determinant:
 	python3 tools/check_joint_determinant_barrier.py
 
+.PHONY: verify-bounded-spin
+verify-bounded-spin:
+	python3 tools/check_bounded_spin_crossing.py
+
 .PHONY: verify-downset-crossings verify-regular-code-crossings
 verify-downset-crossings:
 	python3 tools/check_downset_crossing_normal_form.py
@@ -436,6 +440,7 @@ verify-cubic-full-images:
 
 .PHONY: verify-polynomial-crossings verify-polynomial-native verify-nine-letter-all
 verify-polynomial-crossings:
+	python3 tools/check_bare_seven_to_twelve_letters.py
 	python3 tools/check_quadratic_inverse_degree_caps.py
 	python3 tools/check_quadratic_inverse_paths.py --alphabet 9
 	python3 tools/check_leading_rank_entropy_floor.py
@@ -460,6 +465,7 @@ verify-arithmetic-sieve:
 	python3 tools/check_arithmetic_sieve_certificate.py
 
 verify-frontier: verify-bell verify-class-square-conic
+	python3 tools/check_bare_seven_to_twelve_letters.py > /dev/null
 	python3 tools/check_quadratic_inverse_degree_caps.py > /dev/null
 	python3 tools/check_quadratic_inverse_paths.py --alphabet 9 > /dev/null
 	python3 tools/check_leading_rank_entropy_floor.py > /dev/null
@@ -882,3 +888,11 @@ verify-joint-residue-retiming:
 .PHONY: verify-cell-minor-caps
 verify-cell-minor-caps:
 	python3 tools/check_cell_minor_caps.py --output /tmp/integer-factoring-cell-minor-caps-replay.json
+
+.PHONY: verify-auxiliary-binary-floor
+verify-auxiliary-binary-floor:
+	python3 tools/check_auxiliary_binary_gauge_floor.py --output /tmp/integer-factoring-auxiliary-binary-floor-replay.json
+
+.PHONY: verify-bare-seven-to-twelve-letters
+verify-bare-seven-to-twelve-letters:
+	python3 tools/check_bare_seven_to_twelve_letters.py

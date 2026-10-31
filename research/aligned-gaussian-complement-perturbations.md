@@ -200,3 +200,60 @@ Numerical coefficient scans and row-target searches use these literal
 directions as input. Any reported favorable pressure still requires full
 profile replay and a rigorous numerical inequality before it can change
 the factoring bound.
+
+## 5. Completed single-generator screens
+
+The completed finite screens use both fixed paired-energy vectors
+\((0,10,6,2,8)\) and \((0,12,6,0,8)\). Their unchanged reference costs
+are approximately `0.7263479477044683` and `0.8335422390094076`.
+Every query constructs the literal perturbed tensor and computes both
+complete Smith profiles. Scale optimization is numerical; these records
+do not certify global optima over scales or coefficient families.
+
+All source tensors and directions are binary. The automorphism
+\(a\mapsto a^2\) of \(\mathbf F_4\) fixes them, exchanges the two
+nonbinary nonzero coefficients, and preserves every determinantal
+valuation. Therefore coefficients \(1\) and \(\omega\), with
+\(\omega^2=\omega+1\), represent all nonzero one-generator choices.
+
+| Literal directions tested | Independent directions in this run | Coefficient-orbit queries | Best nonzero recorded cost, natural gauge |
+| --- | ---: | ---: | ---: |
+| First normalized-generator layer | 295 | 590 | `0.7699563779` |
+| Second normalized-generator layer | 200 | 400 | `0.7711950696` |
+| Third normalized-generator layer | 10 | 20 | `0.8589033798` |
+| Independent basis selected from the seventeen direct raw slabs | 50 | 100 | `0.7699563779` |
+
+The first three runs cover every one of the original 505 normalized
+generator shapes, including their allowed monomial shifts and logical
+placements. The raw-column run covers a 50-direction independent basis
+selected from its 85 literal candidates. It does not test every dependent
+raw generator shape. No run recorded an improvement over its unchanged
+reference at either gauge. No pair or larger-support coefficient search
+is claimed here.
+
+The four complete records are
+[first layer](../evidence/aligned-gaussian-complement-single-search.json),
+[second layer](../evidence/aligned-gaussian-generator-layer-1-single-search.json),
+[third layer](../evidence/aligned-gaussian-generator-layer-2-single-search.json),
+and [raw-column basis](../evidence/aligned-gaussian-raw-complement-single-search.json).
+The [independent replay](../evidence/aligned-gaussian-single-search-replays.json)
+reconstructs all 170 retained literal witnesses and certifies 356 complete
+profiles using regular polynomial frames. It checks 111,250 endpoint
+entries, including repeated references and witnesses across gauges.
+It does not use the native Smith oracle to certify those profiles.
+
+For example, the first layer is obtained by the independent-basis pass
+of the complete normalized input:
+
+```sh
+OPENBLAS_NUM_THREADS=1 python3 tools/search_saturated_dual_directions.py \
+  evidence/aligned-gaussian-complement-directions-q5.json \
+  --pair-queries 0 --random-queries 0 --seconds 900 \
+  --output /tmp/aligned-gaussian-complement-single-search.json
+OPENBLAS_NUM_THREADS=1 python3 tools/check_saturated_dual_search.py \
+  evidence/aligned-gaussian-complement-single-search.json \
+  evidence/aligned-gaussian-raw-complement-single-search.json \
+  evidence/aligned-gaussian-generator-layer-1-single-search.json \
+  evidence/aligned-gaussian-generator-layer-2-single-search.json \
+  --output /tmp/aligned-gaussian-single-search-replays.json
+```
