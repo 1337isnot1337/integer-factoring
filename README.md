@@ -91,6 +91,13 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 
 ## Current research frontier
 
+The [multipoint Hermite transfer](research/multipoint-hermite-crossings.md)
+reconstructs effective crossing pieces from jets at several finite points
+and infinity, with a shared degree budget and complete coefficient costs.
+Its explicit ternary certificate is weaker than the half-rate crossing;
+the transfer supplies a different criterion for future seeds. Run
+`make verify-multipoint-hermite` for full reconstruction and jet-rank checks.
+
 The [Clifford Smith reduction](research/clifford-gaussian-smith-profiles.md)
 recovers every Smith order of an invertible Gaussian operator on `M`
 fermionic modes from a matrix of order `2M`. An elementary characteristic-two

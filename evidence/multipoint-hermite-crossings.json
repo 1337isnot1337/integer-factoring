@@ -1,0 +1,284 @@
+{
+  "cases": [
+    {
+      "alphabet": 2,
+      "complete_entries": 16,
+      "copies": 1,
+      "multiplicities": [
+        1,
+        1
+      ],
+      "points": [
+        0,
+        null
+      ],
+      "prime": 2,
+      "rank_checks": 4,
+      "weights": [
+        1,
+        1
+      ]
+    },
+    {
+      "alphabet": 2,
+      "complete_entries": 256,
+      "copies": 2,
+      "multiplicities": [
+        2,
+        1
+      ],
+      "points": [
+        0,
+        null
+      ],
+      "prime": 2,
+      "rank_checks": 6,
+      "weights": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "alphabet": 2,
+      "complete_entries": 4096,
+      "copies": 3,
+      "multiplicities": [
+        2,
+        2
+      ],
+      "points": [
+        0,
+        null
+      ],
+      "prime": 2,
+      "rank_checks": 8,
+      "weights": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "alphabet": 2,
+      "complete_entries": 65536,
+      "copies": 4,
+      "multiplicities": [
+        3,
+        2
+      ],
+      "points": [
+        0,
+        null
+      ],
+      "prime": 2,
+      "rank_checks": 10,
+      "weights": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "alphabet": 2,
+      "complete_entries": 4096,
+      "copies": 3,
+      "multiplicities": [
+        2,
+        1,
+        1
+      ],
+      "points": [
+        0,
+        2,
+        null
+      ],
+      "prime": 3,
+      "rank_checks": 8,
+      "weights": [
+        0,
+        2,
+        1,
+        2
+      ]
+    },
+    {
+      "alphabet": 2,
+      "complete_entries": 4096,
+      "copies": 3,
+      "multiplicities": [
+        2,
+        1,
+        1
+      ],
+      "points": [
+        0,
+        2,
+        null
+      ],
+      "prime": 5,
+      "rank_checks": 8,
+      "weights": [
+        2,
+        3,
+        4,
+        4
+      ]
+    },
+    {
+      "alphabet": 3,
+      "complete_entries": 81,
+      "copies": 1,
+      "multiplicities": [
+        1,
+        1,
+        1
+      ],
+      "points": [
+        0,
+        2,
+        null
+      ],
+      "prime": 3,
+      "rank_checks": 6,
+      "weights": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "alphabet": 3,
+      "complete_entries": 6561,
+      "copies": 2,
+      "multiplicities": [
+        2,
+        2,
+        1
+      ],
+      "points": [
+        0,
+        2,
+        null
+      ],
+      "prime": 3,
+      "rank_checks": 10,
+      "weights": [
+        2,
+        1,
+        2,
+        2,
+        1
+      ]
+    }
+  ],
+  "complete_entries_checked": 84738,
+  "jet_rank_checks": 60,
+  "rational_certificate": {
+    "all_integer_comparisons_pass": true,
+    "common_power": 140,
+    "jet_slopes": [
+      "15/14",
+      "13/28",
+      "13/28"
+    ],
+    "left_denominator_bits": [
+      983,
+      565
+    ],
+    "left_numerator_bits": [
+      1824,
+      1406
+    ],
+    "rho_upper": "19/20",
+    "right_power_of_three": 532,
+    "scales": [
+      "9/5",
+      "5/2",
+      "5/2"
+    ],
+    "sum_slopes": "2"
+  },
+  "scope": "Exact multipoint interpolation and finite rank controls; the displayed rho is weaker than the known half-rate crossing.",
+  "source_sha256": {
+    "check_multipoint_hermite_crossings.py": "a0668c171acc3bd0397325b2e7a08a88ed68fe0de8adda1abb7c655869b9ac3f"
+  },
+  "status": "pass",
+  "ternary_mixing_profiles": {
+    "0": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        1,
+        1,
+        2,
+        4,
+        4,
+        4
+      ]
+    ],
+    "2": [
+      [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "None": [
+      [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  }
+}

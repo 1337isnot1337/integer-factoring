@@ -16,6 +16,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Multipoint Hermite crossing transfer](multipoint-hermite-crossings.md): local jets at several points share the degree budget, reconstruct exact crossing pieces, and admit independent two-cut scales with complete factor-construction costs; an exact ternary example validates the criterion below the existing performance level.
+
 - [Global homogeneous one-level filter floor](global-homogeneous-boolean-filter-floor.md): all overlapping homogeneous Boolean occupation filters have positive complete pressure at every charge and scale, with unrestricted admissible degree and an exact compact cover for the remaining nine lengths.
 
 - [Complete Gaussian profiles from Clifford matrices](clifford-gaussian-smith-profiles.md): an elementary characteristic-two Cartan argument recovers all Fock Smith orders from a matrix of twice the mode count, with closed reflection matrices and no internal regularity restriction on physical mode gauges.

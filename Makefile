@@ -42,6 +42,10 @@ verify-unrestricted-gaussian:
 verify-global-homogeneous-filters:
 	python3 tools/check_global_homogeneous_boolean_filter_floor.py --output /tmp/integer-factoring-global-homogeneous-replay.json
 
+.PHONY: verify-multipoint-hermite
+verify-multipoint-hermite:
+	python3 tools/check_multipoint_hermite_crossings.py --output /tmp/integer-factoring-multipoint-hermite-replay.json
+
 .PHONY: verify-frontier-extensions
 verify-frontier-extensions:
 	python3 tools/check_all_scale_balanced_obstruction.py
