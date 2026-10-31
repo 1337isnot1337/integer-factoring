@@ -91,6 +91,15 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 
 ## Current research frontier
 
+The [mixed-field rectangular repair](research/rectangular-f4-repair.md) now
+settles the four-element-field construction left open in the preceding
+checkpoint. Its explicit correction preserves the low Gaussian background
+and has at most a simple local pole for every finite mode set. Matching
+paired types give polynomial crossings. The optional rectangular profile
+engine now accepts F4 coefficients and independent physical types; its
+controls replay exact rational-weight profiles. These are construction and
+search advances, with no score improvement claimed.
+
 The [31 October research checkpoint](research/constructive-frontier-checkpoint.md)
 collects the latest exact bounds, new construction families, reproducible
 search starts, and the remaining obligations for a score improvement.

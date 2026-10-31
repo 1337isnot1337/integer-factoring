@@ -74,6 +74,7 @@ verify-crossing-interpolation:
 	python3 tools/check_paired_type_crossing_pressure.py
 	python3 tools/check_two_parameter_even_core.py
 	python3 tools/check_rectangular_residual_repair.py
+	python3 tools/check_rectangular_f4_repair.py
 	python3 tools/check_four_parameter_even_core.py
 
 verify-smith-oracle:
@@ -87,6 +88,7 @@ verify-native-smith:
 .PHONY: verify-native-rectangular
 verify-native-rectangular:
 	python3 tools/check_native_rectangular_smith.py
+	python3 tools/check_native_rectangular_smith_f4.py
 
 verify-controlled-smith:
 	python3 tools/check_controlled_permutation_smith.py
