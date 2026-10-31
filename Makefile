@@ -21,6 +21,13 @@ verify-mixed-place:
 
 verify-network-codecs:
 	python3 tools/check_factoring_network_structure.py
+	python3 tools/check_factoring_primitive_recipients.py
+	python3 tools/check_factoring_recipient_rank_envelope.py
+
+.PHONY: verify-fused-places
+verify-fused-places:
+	python3 tools/check_fused_multipoint_profiles.py
+	python3 tools/check_fused_closed_profiles.py
 
 .PHONY: verify-multilevel-packet
 verify-multilevel-packet:

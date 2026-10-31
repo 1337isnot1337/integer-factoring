@@ -43,6 +43,15 @@ to `rho < 9/10`, while remaining above the post-half target. The
 joint-message ranks and optimal codecs for the source's coset bundles. These
 ordinary results do not establish a factoring exponent above `1/2`.
 
+The [primitive-recipient codec](research/factoring-primitive-recipient-codec.md)
+extends the full-range result to arbitrary small sets of odd Fourier
+recipients, with a constructive lattice preimage algorithm. The
+[rank envelope](research/factoring-recipient-rank-envelope.md) covers every
+size of such a set and states the limits of independent bundle compression.
+The [complete fused-place catalogue](research/fused-all-place-profiles.md)
+supplies all singular-place profiles on three through six letters, including
+the extension-field places omitted by the earlier rational-point screens.
+
 ## Verification
 
 From the repository root, run:
@@ -54,6 +63,7 @@ make verify-post-half     # Larger optional rank tests
 make verify-docs          # Local Markdown-link check
 make verify-mixed-place   # Mixed-place reconstruction and exact rank controls
 make verify-network-codecs # Exact Fourier-coset images and optimal codecs
+make verify-fused-places  # All finite and closed-place fused profiles; needs NumPy/SciPy
 make verify-schur-fermion # Complete Schur entry formulas and exact comparisons
 make verify-schur-central # Hook-residue identities and full Schur ranks through weight 8
 make verify-schur-gaussian # Exact digit reduction and fixed Gaussian crossing seed

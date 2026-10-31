@@ -19,6 +19,9 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Mixed-place Hermite crossings](mixed-place-hermite-crossings.md): opposite jet flags give two representations of every piece using disjoint point sets, with a strict exact improvement over the older unweighted same-place criterion for a ternary seed.
 - [Weighted same-place Hermite crossings](weighted-multipoint-hermite-crossings.md): exact paired-type accounting and a uniform three-quarter floor for this sufficient criterion.
 - [Fourier fan-out structure](factoring-network-structure.md): exact joint ranks and polynomial-time optimal codecs for source Fourier-coset bundles over the composite modulus; most bundles in a many-group split remain surjective.
+- [Primitive-recipient codec](factoring-primitive-recipient-codec.md): every odd-recipient set below the sharp source threshold has a full message range, with a polynomial-time lattice preimage algorithm.
+- [Recipient rank envelope](factoring-recipient-rank-envelope.md): arbitrary odd-recipient sets have maximal leading image entropy, with a quantified loss and a separately scoped consequence for independently encoded layer-pair interfaces.
+- [Every singular place of the fused seeds](fused-all-place-profiles.md): exact closed-point factorization, complete profiles, quotient-module rank checks, and full determinant-degree accounting on three through six physical letters.
 
 - [Joint residues reduce to finite templates and convex offsets](joint-syndrome-residue-retiming.md): at fixed normalized degree, arbitrary coefficient fields and ramification reduce exactly to finitely many binary endpoint covers and compact convex offset programs; a transport certificate bounds the entire offset box, with exact color and Hall controls.
 
