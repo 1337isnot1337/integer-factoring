@@ -41,6 +41,10 @@ verify-matrix-vacuum:
 verify-steiner-cubic:
 	python3 tools/check_steiner_cubic_crossings.py
 
+.PHONY: verify-group-shears
+verify-group-shears:
+	python3 tools/check_group_shear_crossings.py
+
 .PHONY: verify-smith-capacity
 verify-smith-capacity:
 	python3 tools/check_smith_pressure_convexity.py

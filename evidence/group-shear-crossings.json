@@ -1,0 +1,109 @@
+{
+  "records": [
+    {
+      "group": "C8",
+      "alphabet": 8,
+      "row_leading_rank": 34,
+      "column_toeplitz_ranks": [
+        1,
+        9,
+        63
+      ],
+      "column_zero_order_counts": {
+        "0": 1,
+        "1": 7,
+        "2": 46
+      },
+      "exact_all_scale_bare_floor": 1564,
+      "strict_bare_rho_lower_bound": "3/4"
+    },
+    {
+      "group": "D8",
+      "alphabet": 8,
+      "row_leading_rank": 24,
+      "column_toeplitz_ranks": [
+        1,
+        12,
+        62
+      ],
+      "column_zero_order_counts": {
+        "0": 1,
+        "1": 10,
+        "2": 39
+      },
+      "exact_all_scale_bare_floor": 936,
+      "strict_bare_rho_lower_bound": "3/4"
+    },
+    {
+      "group": "Q8",
+      "alphabet": 8,
+      "row_leading_rank": 26,
+      "column_toeplitz_ranks": [
+        1,
+        12,
+        63
+      ],
+      "column_zero_order_counts": {
+        "0": 1,
+        "1": 10,
+        "2": 40
+      },
+      "exact_all_scale_bare_floor": 1040,
+      "strict_bare_rho_lower_bound": "3/4"
+    },
+    {
+      "group": "C16",
+      "alphabet": 16,
+      "row_leading_rank": 174,
+      "column_toeplitz_ranks": [
+        1,
+        17,
+        233
+      ],
+      "column_zero_order_counts": {
+        "0": 1,
+        "1": 15,
+        "2": 200
+      },
+      "exact_all_scale_bare_floor": 34800,
+      "strict_bare_rho_lower_bound": "3/4"
+    },
+    {
+      "group": "D16",
+      "alphabet": 16,
+      "row_leading_rank": 122,
+      "column_toeplitz_ranks": [
+        1,
+        26,
+        242
+      ],
+      "column_zero_order_counts": {
+        "0": 1,
+        "1": 24,
+        "2": 191
+      },
+      "exact_all_scale_bare_floor": 23302,
+      "strict_bare_rho_lower_bound": "3/4"
+    },
+    {
+      "group": "D32",
+      "alphabet": 32,
+      "row_leading_rank": 582,
+      "column_toeplitz_ranks": [
+        1,
+        54,
+        962
+      ],
+      "column_zero_order_counts": {
+        "0": 1,
+        "1": 52,
+        "2": 855
+      },
+      "exact_all_scale_bare_floor": 497610,
+      "strict_bare_rho_lower_bound": "3/4"
+    }
+  ],
+  "scope": "Displayed six groups, characteristic two and its extensions; bare cubic criterion only.",
+  "factoring_exponent": "1/2; unchanged",
+  "source_sha256": "91b76627e7229f36e7c382d5f69d691cbfc83d06682489cac8c3e496f7b0c487"
+}

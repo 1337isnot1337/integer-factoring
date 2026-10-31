@@ -145,6 +145,13 @@ are independent of the design and force `rho>=3/4` at every size. This
 closes the cubic bare-profile search while leaving physical types and
 coefficient recombinations open. Run `make verify-steiner-cubic`.
 
+The [group-shear extension](research/group-shear-crossings.md) implements
+the swap through three multiplication/division shears over any finite
+`p`-group, with a constant nonzero determinant in characteristic `p`.
+Exact early-jet certificates reject six cyclic, dihedral, and quaternion
+binary seeds for the bare criterion. These finite exclusions do not
+settle the family. Run `make verify-group-shears`.
+
 The [fixed-type capacity argument](research/fixed-type-smith-capacity.md)
 makes physical gauge optimization convex once the two paired types are
 fixed. Entropy-weighted minor flags give global affine supports and an
