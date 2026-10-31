@@ -8,8 +8,8 @@ Let all four physical word alphabets be `{0,1}^m`. Suppose
 \sum_i A_i=\kappa E_m,\qquad \kappa\ne0,
 ```
 
-where every `A_i` is invariant under simultaneously permuting the `m`
-positions in its four words. Write `r(A)` and `c(A)` for ranks in cuts
+where every `A_i` is invariant under every permutation acting simultaneously
+on the `m` positions of its four words. Write `r(A)` and `c(A)` for ranks in cuts
 `(x,y)|(u,v)` and `(x,u)|(y,v)`. Over any fixed field,
 
 ```math

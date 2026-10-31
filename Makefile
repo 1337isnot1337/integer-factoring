@@ -34,6 +34,13 @@ verify-transpose-intertwiner:
 verify-joint-determinant:
 	python3 tools/check_joint_determinant_barrier.py
 
+.PHONY: verify-downset-crossings verify-regular-code-crossings
+verify-downset-crossings:
+	python3 tools/check_downset_crossing_normal_form.py
+
+verify-regular-code-crossings:
+	python3 tools/search_regular_code_crossings.py --verify evidence/regular-code-crossings.json
+
 .PHONY: verify-auxiliary-coefficient-span
 verify-auxiliary-coefficient-span:
 	python3 tools/search_auxiliary_coefficient_span.py --verify evidence/auxiliary-coefficient-span.json

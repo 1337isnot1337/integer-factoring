@@ -93,8 +93,8 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 
 The [binary site-symmetry barrier](research/binary-site-symmetry-barrier.md)
 gives an ordinary actual-rank proof of `rho >= 3/4` for every decomposition
-whose binary pieces are invariant under a common permutation of tensor
-positions. It covers scalar seeds of every degree, arbitrary coefficient
+whose binary pieces are invariant under all simultaneous permutations of
+tensor positions. It covers scalar seeds of every degree, arbitrary coefficient
 recombinations and mixtures of scalar curves, over any fixed field,
 including characteristic two. A universal degree-four polynomial and
 Weyl filtrations supply the obstruction at every tensor length.
@@ -113,6 +113,14 @@ rank-sum lower certificates leave the tested finite-block envelope above
 the half-rate threshold. Run `make verify-auxiliary-coefficient-span`.
 Nine full extension-field controls over `F_4` retain the same finite
 minmax thresholds; run `make verify-auxiliary-extension-span`.
+
+The [nonlinear downset-code construction](research/downset-code-crossings.md)
+preserves the crossing on a restricted physical alphabet. Its column
+matrix has an exact global Smith diagonal and a constant basis change
+to smaller weighted disjointness matrices, allowing actual recombination
+ranks to be checked without inferring them from a Smith bound.
+Complete small no-adjacent-ones code experiments give no new rank-sum
+threshold. Run `make verify-downset-crossings verify-regular-code-crossings`.
 
 The [common-cofactor barrier](research/common-cofactor-barrier.md) closes
 the asymmetric ternary quadratic family for actual coefficient ranks.
