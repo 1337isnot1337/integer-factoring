@@ -19,7 +19,6 @@ import random
 import time
 
 import numpy as np
-from scipy.optimize import minimize_scalar
 
 from native_rectangular_smith_f4 import RectangularOracle
 from search_binary_affine_crossings import critical, rate, physical_energies
@@ -231,6 +230,9 @@ def main():
         if trial%25 == 0:
             save();print(json.dumps({k: result[k] for k in ('targets_attempted','feasible_targets','profile_queries','profile_class_count','elapsed_seconds')}), flush=True)
     save()
+    # SciPy is needed only by this exploratory search; importing it here keeps
+    # the exact checkers that reuse this module runnable without SciPy.
+    from scipy.optimize import minimize_scalar
     nrng = np.random.default_rng(args.seed)
     for row in result['classes'][:args.top]:
         if time.monotonic() > deadline:
