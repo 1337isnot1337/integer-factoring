@@ -212,6 +212,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Obstructions and work beyond 1/2
 
+- [Multilevel canonical-packet collisions](multilevel-thue-morse-packet.md): explicit one-bit Thue--Morse inputs collide with zero on every retained valuation level below a chosen cutoff; exact local-polynomial controls supplement the all-size proof.
+
 - [Global charged Gaussian and one-mode Laurent floor](global-charged-gaussian-floor.md): the binary Gaussian has positive critical pressure at every integer length, real aggregate charge, and scale; the complete admissible one-mode Laurent family is also excluded at all charges.
 
 - [Continuous charge folding and the wider tail floor](folded-charged-gaussian-floor.md): exact all-digit folding and a convex-tail prefix comparison extend the binary continuous floor to absolute charge at most 2n-2-2sqrt(2).

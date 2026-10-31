@@ -91,6 +91,13 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 
 ## Current research frontier
 
+The continuation from PR #38 adds a [multilevel canonical-packet
+collision](research/multilevel-thue-morse-packet.md): an explicit one-bit
+Thue--Morse input loses its original bit simultaneously on every retained
+valuation level below a chosen cutoff at the stated precision. This is a
+scoped reconstruction obstruction, not a stronger factoring exponent.
+Replay it with `make verify-multilevel-packet`.
+
 The latest [research checkpoint](research/frontier-session-20261031.md)
 keeps the proved score at `1/2`. An
 [accelerated exact certificate](research/accelerated-interval-certificates.md)

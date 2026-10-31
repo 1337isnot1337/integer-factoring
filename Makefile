@@ -14,6 +14,10 @@ verify: verify-docs verify-frontier
 verify-docs:
 	python3 tools/check_docs.py
 
+.PHONY: verify-multilevel-packet
+verify-multilevel-packet:
+	python3 tools/check_multilevel_thue_morse_packet.py
+
 .PHONY: verify-frontier-extensions
 verify-frontier-extensions:
 	python3 tools/check_all_scale_balanced_obstruction.py
