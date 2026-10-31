@@ -14,6 +14,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Inverse-degree compatibility and noncommuting paths](inverse-degree-crossing-compatibility.md): a new cut constraint rules out the formal seven-letter optimum at all integer ramifications; a quadratic-inverse constructor supplies exact endpoints and a complete 5,005-path first-jet exclusion.
 - [Pieces-to-factoring transfer](pieces-to-factoring.md): conditional crossing-parameter transfer, with full bit-cost accounting.
 - [Scale-one modular transfer](scale-one-modular-transfer.md): fixed-field transfer and machine costs.
 - [Sparse divisor nonzeroness](sparse-divisor-nonzeroness.md): detection of divisors in weighted polynomial counts.

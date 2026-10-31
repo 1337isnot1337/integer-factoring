@@ -15,6 +15,7 @@ verify-docs:
 	python3 tools/check_docs.py
 
 verify-polynomial-crossings:
+	python3 tools/check_quadratic_inverse_paths.py
 	python3 tools/check_shared_minor_smith_floor.py
 	python3 tools/check_all_degree_smith_floor.py
 	python3 tools/check_quadratic_crossings.py
@@ -26,6 +27,7 @@ verify-post-half:
 	python3 tools/check_half_restricted_labels.py
 
 verify-frontier:
+	python3 tools/check_quadratic_inverse_paths.py > /dev/null
 	python3 tools/check_shared_minor_smith_floor.py > /dev/null
 	python3 tools/check_all_degree_smith_floor.py > /dev/null
 	python3 tools/check_quadratic_crossings.py > /dev/null

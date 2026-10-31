@@ -142,11 +142,12 @@ ungauged argument.
 The formal equality pattern at q=7 has degree M=12 and both normalized
 Smith profiles (0,7 repeated six times,13 repeated 42 times). Each profile
 has 49 entries and total 588=49M, and their seven-entry prefixes saturate
-(2). A path realizing that pattern with the complete crossing endpoint
-would pass the half-rate pressure test. No such path is supplied here.
-In particular, a candidate must not be accepted merely for having the
-correct column Jordan spectrum; the opposite cut is an independent and
-often incompatible obligation.
+(2). The [inverse-degree compatibility theorem](inverse-degree-crossing-compatibility.md)
+subsequently rules out this exact pattern at every integer ramification:
+its second infinity order is too large relative to the polynomial inverse
+degree. Thus this relaxation does not certify that an algebraic witness
+exists at seven letters. Other seven-letter profiles remain outside the
+exclusion. A correct column Jordan spectrum alone is insufficient.
 
 Run `python3 tools/check_shared_minor_smith_floor.py` to reproduce the
 exact all-scale exclusion through q=6. The next constructive work must

@@ -81,7 +81,9 @@ The [extended catalogues](research/extended-binary-polynomial-catalogues.md) cov
 
 An [all-degree theorem](research/all-degree-small-alphabet-smith-floor.md) now rules out a half-rate improvement by **bare ungauged Smith profiles** for local alphabets of size 2, 3, or 4, over any field and with fixed auxiliary dimension. Its scalar binary parity specialization proves the `256/27` floor at every degree. This is a scoped certificate obstruction; larger alphabets, independent gauges and actual coefficient-rank improvements remain open. Run `python3 tools/check_all_degree_smith_floor.py` for exact threshold comparisons and finite controls.
 
-The [shared-minor refinement](research/shared-minor-smith-floor.md) strengthens the ungauged exclusion to alphabets of size **2 through 6**, with every degree and fixed auxiliary dimension retained. Exact certificates give `rho>5/7>1/sqrt(2)`. A seven-letter profile is the first target this relaxation leaves open; its algebraic realization is unproved. Reproduce with `python3 tools/check_shared_minor_smith_floor.py`.
+The [shared-minor refinement](research/shared-minor-smith-floor.md) strengthens the ungauged exclusion to alphabets of size **2 through 6**, with every degree and fixed auxiliary dimension retained. Exact certificates give `rho>5/7>1/sqrt(2)`. Reproduce with `python3 tools/check_shared_minor_smith_floor.py`.
+
+An [inverse-degree compatibility theorem](research/inverse-degree-crossing-compatibility.md) rules out the relaxation's formal seven-letter optimum at every integer ramification. It also gives a concrete noncommuting quadratic-inverse constructor; its first 5,005 weighted-flag paths are excluded by two exact jets. Other seven-letter profiles and broader constructions remain open. Run `python3 tools/check_quadratic_inverse_paths.py` for the constructive controls and complete finite screen.
 
 ## Contribution and attribution
 
