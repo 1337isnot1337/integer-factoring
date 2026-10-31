@@ -84,11 +84,12 @@ fast arithmetic witness extractor. Enumerating the entire class group or
 all smooth forms would generally have exponential bit cost and would not
 improve the factoring score.
 
-Likewise, a small-bias set for a group supplied in known coordinates is
-not automatically an efficient construction for an unknown class group.
-The input assumptions of [Jalan--Moshkovitz's abelian Cayley expander work](https://arxiv.org/abs/2105.01149)
-and related amplification constructions must be audited before using them
-as this algorithmic primitive.
+The [biased-word construction](arithmetic-biased-words.md) supplies the
+required sample without knowing class-group coordinates: powering the
+generators gives an explicit inverse-polynomial spectral gap, and published
+derandomized squaring amplifies it at polynomial cost in the generator
+count, log-size upper bound and inverse density. Its maximum word norm
+can be large, but only its bit length enters the relation encoding.
 
 ## Exact finite pipeline
 
@@ -115,6 +116,6 @@ sample, exact biases, kernel bound, relation matrix and extraction result.
 Run `python3 tools/check_positive_relation_kernel.py` to reproduce it.
 
 These proved components and finite controls do not establish a new
-deterministic factoring bound. The generator, bias-construction and smooth
-pair-extraction obligations remain open. This work used substantial
+deterministic factoring bound. The generator and smooth pair-extraction
+obligations remain open. This work used substantial
 OpenAI Codex assistance and adds no Lean formalization.

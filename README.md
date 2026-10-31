@@ -78,7 +78,9 @@ See the [research index](research/INDEX.md) for completed arguments, scoped obst
 An [arithmetic framework program](research/arithmetic-framework.md) studies
 deterministic class-group relation generation outside the crossing evaluator.
 It proves a positive Fourier hitting lemma and deterministic extraction of
-two-torsion from unsaturated relation data. The fast generator and smooth-pair
+two-torsion from unsaturated relation data. A powering seed with published
+expander amplification supplies biased words from generators without a group
+decomposition. The fast generator and smooth-pair
 construction steps remain open, so the score is still `1/2`. Reproduce the
 current exact controls with `make verify-arithmetic-framework`.
 

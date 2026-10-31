@@ -8,10 +8,12 @@ retains that campaign's proofs and exact controls. This branch instead
 studies deterministic arithmetic relation generation in quadratic class
 groups. The strongest complete factoring score remains 1/2.
 
-Two components are proved here: a positive Fourier translate-hitting lemma
+The components proved here are a positive Fourier translate-hitting lemma
 that produces bounded full-rank relation rows given a pair extractor, and
 a deterministic black-box two-group basis algorithm using only an
-annihilator. The arithmetic primitives that would turn them into a faster
+annihilator. A powering seed plus published expander amplification also
+supplies biased words without knowing the class-group decomposition.
+The arithmetic primitives that would turn these into a faster
 factoring machine are still open. This is not a claimed breakthrough bound.
 
 ## Primary-source audit
@@ -73,7 +75,8 @@ following deterministic construction from specified primitives:
 - A set S of small smooth reduced forms with a lower density bound and
   short factor-base words.
 - An explicit low-bias distribution on the class group, supplied as words
-  in the generators.
+  in the generators; the [biased-word construction](arithmetic-biased-words.md)
+  now supplies this from generators and a group-size upper bound.
 - A procedure that extracts a smooth pair from the guaranteed translated
   correlation intersection.
 
@@ -84,7 +87,7 @@ with a checked integer determinant. The two-group algorithm separately
 replaces random coverage of ambiguous forms.
 
 The open arithmetic task is the efficient, uniform construction of the
-generators, low-bias words and smooth pair witnesses. The finite kernel
+generators and smooth pair witnesses. The finite kernel
 checker explicitly uses exhaustive pair search and does not count that
 as an efficient extraction algorithm. This separation is the central
 research contract, rather than a hidden oracle assumption.
