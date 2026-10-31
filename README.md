@@ -91,6 +91,14 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 
 ## Current research frontier
 
+The [universal multipoint Smith floor](research/multipoint-smith-floor.md)
+shows that the local-jet pressure criterion needs `rho > 3/4` over every
+field, alphabet size, polynomial degree, allocation, and permitted cut scale.
+It therefore cannot improve the existing `1/sqrt(2)` crossing. A completed
+1,579,014-seed cubic catalogue supplies independent literal controls.
+Sharper actual-jet bounds and physical type constructions remain outside
+this obstruction. Run `make verify-multipoint-smith-floor`.
+
 The [complete low-rank ternary quadratic catalogue](research/multipoint-low-rank-seeds.md)
 excludes binary seeds with cut-rank product at most three at both finite
 interpolation points: all 32,265 representatives satisfy the exact multipoint

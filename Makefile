@@ -22,6 +22,10 @@ verify-multipoint-rank-one:
 verify-multipoint-rank-two:
 	python3 tools/check_multipoint_rank_two_seeds.py
 
+.PHONY: verify-multipoint-smith-floor
+verify-multipoint-smith-floor:
+	python3 tools/check_multipoint_smith_floor.py
+
 .PHONY: verify-multilevel-packet
 verify-multilevel-packet:
 	python3 tools/check_multilevel_thue_morse_packet.py

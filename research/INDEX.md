@@ -16,6 +16,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Universal multipoint Smith floor](multipoint-smith-floor.md): determinant budgets and equal local minimum orders force `rho > 3/4` for the unweighted local-jet criterion over every field, alphabet and degree; a complete 1,579,014-seed cubic catalogue provides independent controls.
+
 - [Low-rank ternary quadratic multipoint catalogue](multipoint-low-rank-seeds.md): all binary seeds with cut-rank product at most three at both finite places have an exact `rho >= 3/4` pressure floor; nine stabilizer representatives, 32,265 seeds, 321 signatures, complete local-rank coverage and independent tensor controls.
 
 - [Complete ternary quadratic multipoint catalogue](multipoint-rank-one-seeds.md): all binary seeds with pure values at both finite places have an exact `rho >= 3/4` pressure floor, with 3,078 representatives, 23 signatures, independent Toeplitz profiles and full tensor-power reconstructions.
