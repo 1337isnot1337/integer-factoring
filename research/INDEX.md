@@ -25,6 +25,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Uniform entry and ray obstruction](rectangular-uniform-ray-obstruction.md): 28 symbolic coefficient witnesses replace the fitted entry bounds and support exact dual certificates for the baseline family.
 - [Moving balanced-gauge obstruction](rectangular-balanced-gauge-obstruction.md): every balanced gauge vector has positive critical pressure eventually when M log s exceeds c log M with c greater than 1/sqrt(2), uniformly over unbounded weights and scales.
 - [Full-alphabet leading obstruction](full-alphabet-leading-obstruction.md): 34 symbolic witnesses and 22 rational duals extend the moving-gauge theorem to both conjugate full-alphabet partial repairs and all 29 parameters.
+- [All-scale balanced obstruction](all-scale-balanced-obstruction.md): the positive finite Gaussian tail removes the logarithmic scale restriction for both partial-repair families, uniformly over all balanced weights and all positive scales at sufficiently large intervals.
 - [All-low Gaussian background](rectangular-low-background.md): a uniform two-cut calculation identifies the preserved conditional tensor with the interval of length M-2, including bulk charges and scalar cancellation.
 - [Polynomial core shears](rectangular-polynomial-shears.md): Laurent core changes equal to the identity at the endpoint permit every height direction, with exact cached updates and original-tensor controls.
 - [Four additional quartics](rectangular-extra-quartics.md): positive-energy extreme monomials preserve the existing repair, with exact Laurent constructors and seven/nine- or ten-mode support.
@@ -45,6 +46,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [All-field Pascal crossings](all-field-pascal-crossings.md): signed global Gaussian endpoints and Pascal-complement profiles over every field, including independent matching types.
 - [Graded even tensor powers](graded-even-power-transfer.md): both cut profiles tensorize with explicit signs, admitting non-Gaussian endpoint-vanishing perturbations in odd characteristic.
 - [Truncated symmetric Pascal crossings](truncated-symmetric-pascal-crossings.md): p-state modes in characteristic p give ordinary tensor powers, exact digit-sum spectra, and arbitrary-degree endpoint-vanishing perturbations.
+- [Every-digit interval frontier](truncated-symmetric-interval-frontier.md): the displayed interval pressure stays above the half-rate threshold for every digit count, every interval length, and every scale, with a sharp fixed-digit Lambert-W gap.
 - [Fixed-prime recovery source audit](fixed-prime-transfer-source-audit.md): pinned scalar factoring recovery, direct primary-source network accounting, and a byte-identical finite replay of the external dependency.
 
 - [31 October constructive frontier checkpoint](constructive-frontier-checkpoint.md): exact finite bounds, proved construction families, reproducible floating starts, and the remaining threshold obligation after a three-hour research session.

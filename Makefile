@@ -14,6 +14,11 @@ verify: verify-docs verify-frontier
 verify-docs:
 	python3 tools/check_docs.py
 
+.PHONY: verify-frontier-extensions
+verify-frontier-extensions:
+	python3 tools/check_all_scale_balanced_obstruction.py
+	python3 tools/check_truncated_symmetric_interval_frontier.py
+
 verify-schur-fermion:
 	python3 tools/check_schur_fermion.py
 

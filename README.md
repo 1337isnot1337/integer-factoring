@@ -103,9 +103,10 @@ Symbolic entry witnesses now support a
 [uniform balanced-gauge obstruction](research/rectangular-balanced-gauge-obstruction.md)
 for the baseline repair and its
 [full-alphabet extension](research/full-alphabet-leading-obstruction.md).
-The weights may change arbitrarily with the interval length; for every
-fixed `c>1/sqrt(2)`, these families have positive critical pressure
-eventually whenever `M log s >= c log M`. The result concerns these
+The [all-scale extension](research/all-scale-balanced-obstruction.md)
+now proves positive critical pressure for every `log s > 0` once the
+interval is sufficiently large. Both the weights and the scale may
+change arbitrarily with the interval length. The result concerns these
 specific repairs and balanced bulk charges. Searches continue in families
 that alter their preserved background, including
 [opposite-charge cubic terms](research/rectangular-core-monomials.md).
@@ -121,6 +122,14 @@ gives all-size scalar valuation formulas beyond the determinant model.
 It also proves that exponentially many grouped modes survive the current
 precision schedule for direct forward twirling. Lower-precision scalar
 recovery remains a distinct possible route.
+
+The [digit-count interval theorem](research/truncated-symmetric-interval-frontier.md)
+also proves that the displayed truncated-symmetric interval pressure stays
+strictly above the threshold for every integer digit count `q >= 2`,
+every mode count, and every profile scale. Its fixed-`q` gap has a sharp
+Lambert-W asymptotic. Noninterval modes and independent mode heights remain
+outside this theorem. Run `make verify-frontier-extensions` for the new
+ordinary-proof controls; neither extension changes the factoring score.
 
 The [mixed-field rectangular repair](research/rectangular-f4-repair.md) now
 settles the four-element-field construction left open in the preceding
