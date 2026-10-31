@@ -472,3 +472,7 @@ verify-selected-deficit-geometry:
 
 verify-surplus-identity-geometry:
 	python3 tools/check_surplus_identity_mode_geometry.py
+
+.PHONY: verify-bulk-search-records
+verify-bulk-search-records:
+	python3 tools/check_reflection_hot_bulk_search_records.py

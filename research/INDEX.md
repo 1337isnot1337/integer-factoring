@@ -34,6 +34,10 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 - [Identity operators below a power of two](near-power-identity-operator-reduction.md): weighted interpolation retains one extra auxiliary mode, exact Gaussian multiplicity division enables a small Weyl evaluator, and the contraction has an explicit scalar-plus-rank-one formula.
 
+- [Completed all-order bulk searches](reflection-hot-all-bulk-searches.md): all sixteen ordering cones, fixed and interval-scaled height boxes, complete numerical records, and replay of the saved best points.
+
+- [Completed separate-leg bulk searches](reflection-hot-leg-bulk-searches.md): both 25-candidate searches at intervals 64 and 128 completed with full cold and physical costs; the resumed boundary is recorded.
+
 - [All physical-leg bulk orderings](reflection-hot-all-bulk-gauges.md): two explicit regular cross pivots cover every nonnegative bulk ordering with the same bounded support, complete coefficient sources, and independent original-tensor controls.
 
 - [Separate physical-leg bulk heights](reflection-hot-leg-bulk-gauges.md): explicit ordering and hot-cold inequalities preserve a bounded reflection core, with distinct physical type costs and exact original-tensor controls.
