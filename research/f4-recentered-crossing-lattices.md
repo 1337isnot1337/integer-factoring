@@ -123,7 +123,7 @@ For a requested row vector \(\tau\), the constructor chooses
 \(P\ge\max_i\tau_i\). It then requires
 
 \[
-[z^k](L A_e(T)R)_{ij}=0
+[z^k]\,(L A_e(T)R)_{ij}=0
 \qquad(k<\tau_i).
 \tag{6}
 \]
