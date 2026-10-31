@@ -14,6 +14,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Fixed-field endpoint lifts for polynomial lattices](extension-field-lattice-lifts.md): exact packed `F4` constraints admit constructive `F16` lifts whenever none of the eight required endpoint coordinates is forced to zero, with a checked equality-case fallback.
+
 - [Two-cut synthesis for occupation-transfer kernels](identity-operator-lattice-synthesis.md): all operator coefficients are solved together under independent zero and infinity row constraints, with explicit Laurent support and an exact repaired-endpoint test.
 
 - [Physical state gauges on reflection hot cores](reflection-hot-state-gauges.md): a regular reduction supports arbitrary state heights and endpoint-preserving masks on at most eleven modes per hot bit; monotone exterior-defect heights require only four.

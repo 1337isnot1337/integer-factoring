@@ -389,3 +389,7 @@ verify-operator-lattice-synthesis:
 .PHONY: verify-f4-operator-catalogues
 verify-f4-operator-catalogues:
 	python3 tools/check_f4_operator_catalogues.py
+
+.PHONY: verify-field-lattice-lifts
+verify-field-lattice-lifts:
+	python3 tools/check_f4_lattice_linear.py
