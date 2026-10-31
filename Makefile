@@ -610,6 +610,10 @@ verify-quartic-tiles:
 verify-shared-minor-targets:
 	python3 tools/check_shared_minor_profile_targets.py --output /tmp/integer-factoring-shared-minor-targets-replay.json
 
+.PHONY: verify-cell-minor-caps
+verify-cell-minor-caps:
+	python3 tools/check_cell_minor_caps.py --output /tmp/integer-factoring-cell-minor-caps-replay.json
+
 .PHONY: verify-regular-frame-cells verify-finite-smith-frames
 verify-regular-frame-cells:
 	python3 tools/check_formal_row_flags.py --output /tmp/integer-factoring-formal-row-flags-replay.json

@@ -1,0 +1,514 @@
+{
+  "scope": "Necessary prefix inequalities for scalar Laurent strict crossings. Relaxation points are not tensors; nothing here is a crossing certificate or a factoring improvement.",
+  "dyadic_precision": 120,
+  "literal_control": {
+    "tensors": 104,
+    "complete_profiles": 416,
+    "cell_minors": 352,
+    "tight_cell_prefixes": 502,
+    "tight_line_prefixes": 131,
+    "nonzero_r_tail": 208,
+    "nonzero_s_tail": 160,
+    "tight_family_tensors": 24,
+    "record_sha256": "2c0a21cf73a762eb892d37daac91ba667fe6d7507621ff5b6aeb5d6097f714e2"
+  },
+  "predecessor_targets": [
+    {
+      "alphabet": 4,
+      "deficit": "1",
+      "paired_energies_X": [
+        "0",
+        "0",
+        "2",
+        "8/3"
+      ],
+      "paired_energies_Y": [
+        "0",
+        "0",
+        "2",
+        "8/3"
+      ],
+      "families": "cell+shared line+rectangle",
+      "average_normalized_orders": [
+        "0",
+        "1",
+        "3/2",
+        "3/2",
+        "3",
+        "3",
+        "3",
+        "3",
+        "11/3",
+        "11/3",
+        "11/3",
+        "11/3",
+        "5",
+        "17/3",
+        "17/3",
+        "19/3"
+      ],
+      "convex_hull": [
+        [
+          0,
+          "0"
+        ],
+        [
+          1,
+          "0"
+        ],
+        [
+          2,
+          "1"
+        ],
+        [
+          4,
+          "4"
+        ],
+        [
+          8,
+          "16"
+        ],
+        [
+          12,
+          "92/3"
+        ],
+        [
+          13,
+          "107/3"
+        ],
+        [
+          15,
+          "47"
+        ],
+        [
+          16,
+          "160/3"
+        ]
+      ],
+      "binding_cap_families": [
+        "cell",
+        "shared"
+      ],
+      "pressure_dyadic_interval": [
+        "57190967327737143460315126954951026",
+        "57190967327737143460315126954976593"
+      ],
+      "pressure_decimal_interval": [
+        0.0430257017675629,
+        0.0430257017675629
+      ],
+      "predecessor_pressure_dyadic_interval": [
+        "-30774379630103049817791654759512678",
+        "-30774379630103049817791654759487183"
+      ],
+      "status": "Excluded by the cell-set caps: G_relaxed > 0."
+    },
+    {
+      "alphabet": 5,
+      "deficit": "1",
+      "paired_energies_X": [
+        "0",
+        "0",
+        "2",
+        "8/3",
+        "3"
+      ],
+      "paired_energies_Y": [
+        "0",
+        "0",
+        "2",
+        "8/3",
+        "3"
+      ],
+      "families": "cell+shared line+rectangle",
+      "average_normalized_orders": [
+        "0",
+        "1",
+        "3/2",
+        "3/2",
+        "7/3",
+        "29/9",
+        "29/9",
+        "29/9",
+        "11/3",
+        "11/3",
+        "11/3",
+        "11/3",
+        "4",
+        "4",
+        "4",
+        "4",
+        "5",
+        "17/3",
+        "17/3",
+        "6",
+        "6",
+        "19/3",
+        "20/3",
+        "20/3",
+        "7"
+      ],
+      "convex_hull": [
+        [
+          0,
+          "0"
+        ],
+        [
+          1,
+          "0"
+        ],
+        [
+          2,
+          "1"
+        ],
+        [
+          4,
+          "4"
+        ],
+        [
+          5,
+          "19/3"
+        ],
+        [
+          8,
+          "16"
+        ],
+        [
+          12,
+          "92/3"
+        ],
+        [
+          16,
+          "140/3"
+        ],
+        [
+          17,
+          "155/3"
+        ],
+        [
+          19,
+          "63"
+        ],
+        [
+          21,
+          "75"
+        ],
+        [
+          22,
+          "244/3"
+        ],
+        [
+          24,
+          "284/3"
+        ],
+        [
+          25,
+          "305/3"
+        ]
+      ],
+      "binding_cap_families": [
+        "cell",
+        "shared"
+      ],
+      "pressure_dyadic_interval": [
+        "-5594909784279484787108848085623632",
+        "-5594909784279484787108848085596181"
+      ],
+      "pressure_decimal_interval": [
+        -0.004209142300659762,
+        -0.004209142300659762
+      ],
+      "predecessor_pressure_dyadic_interval": [
+        "-129783136020195857319130248662327444",
+        "-129783136020195857319130248662301817"
+      ],
+      "status": "Still a negative relaxation point with cell caps."
+    }
+  ],
+  "sharper_targets": [
+    {
+      "alphabet": 5,
+      "deficit": "7/6",
+      "paired_energies_X": [
+        "0",
+        "0",
+        "19/9",
+        "23/9",
+        "37/9"
+      ],
+      "paired_energies_Y": [
+        "0",
+        "0",
+        "19/9",
+        "23/9",
+        "37/9"
+      ],
+      "families": "cell+shared line+rectangle",
+      "average_normalized_orders": [
+        "0",
+        "7/6",
+        "59/36",
+        "67/36",
+        "95/36",
+        "377/108",
+        "377/108",
+        "377/108",
+        "67/18",
+        "67/18",
+        "67/18",
+        "67/18",
+        "95/18",
+        "95/18",
+        "95/18",
+        "95/18",
+        "97/18",
+        "35/6",
+        "35/6",
+        "113/18",
+        "133/18",
+        "133/18",
+        "47/6",
+        "47/6",
+        "169/18"
+      ],
+      "convex_hull": [
+        [
+          0,
+          "0"
+        ],
+        [
+          1,
+          "0"
+        ],
+        [
+          2,
+          "7/6"
+        ],
+        [
+          3,
+          "101/36"
+        ],
+        [
+          4,
+          "14/3"
+        ],
+        [
+          5,
+          "263/36"
+        ],
+        [
+          8,
+          "160/9"
+        ],
+        [
+          12,
+          "98/3"
+        ],
+        [
+          16,
+          "484/9"
+        ],
+        [
+          17,
+          "355/6"
+        ],
+        [
+          19,
+          "425/6"
+        ],
+        [
+          20,
+          "694/9"
+        ],
+        [
+          22,
+          "827/9"
+        ],
+        [
+          24,
+          "968/9"
+        ],
+        [
+          25,
+          "2105/18"
+        ]
+      ],
+      "binding_cap_families": [
+        "cell",
+        "shared"
+      ],
+      "pressure_dyadic_interval": [
+        "-25323042899126275011024419183719408",
+        "-25323042899126275011024419183702753"
+      ],
+      "pressure_decimal_interval": [
+        -0.019050940079074163,
+        -0.019050940079074163
+      ],
+      "pressure_without_cell_caps_dyadic_interval": [
+        "-118194380599214265061485794483693128",
+        "-118194380599214265061485794483677801"
+      ],
+      "common_denominator": 108,
+      "status": "Negative relaxation point satisfying every cell-set and shared-line cap (rectangular caps are implied); no realizing tensor is known."
+    },
+    {
+      "alphabet": 6,
+      "deficit": "8/7",
+      "paired_energies_X": [
+        "0",
+        "0",
+        "15/8",
+        "27/10",
+        "4",
+        "4"
+      ],
+      "paired_energies_Y": [
+        "0",
+        "0",
+        "15/8",
+        "27/10",
+        "4",
+        "4"
+      ],
+      "families": "cell+shared line+rectangle",
+      "average_normalized_orders": [
+        "0",
+        "8/7",
+        "169/112",
+        "215/112",
+        "2881/1120",
+        "2881/1120",
+        "3879/1120",
+        "3879/1120",
+        "269/70",
+        "269/70",
+        "269/70",
+        "269/70",
+        "137/28",
+        "36/7",
+        "36/7",
+        "36/7",
+        "36/7",
+        "36/7",
+        "36/7",
+        "36/7",
+        "36/7",
+        "1601/280",
+        "1601/280",
+        "229/35",
+        "393/56",
+        "393/56",
+        "393/56",
+        "393/56",
+        "549/70",
+        "549/70",
+        "549/70",
+        "549/70",
+        "64/7",
+        "64/7",
+        "64/7",
+        "64/7"
+      ],
+      "convex_hull": [
+        [
+          0,
+          "0"
+        ],
+        [
+          1,
+          "0"
+        ],
+        [
+          2,
+          "8/7"
+        ],
+        [
+          3,
+          "297/112"
+        ],
+        [
+          4,
+          "32/7"
+        ],
+        [
+          6,
+          "5441/560"
+        ],
+        [
+          8,
+          "233/14"
+        ],
+        [
+          12,
+          "2241/70"
+        ],
+        [
+          13,
+          "5167/140"
+        ],
+        [
+          21,
+          "1561/20"
+        ],
+        [
+          23,
+          "3132/35"
+        ],
+        [
+          24,
+          "3361/35"
+        ],
+        [
+          28,
+          "1241/10"
+        ],
+        [
+          32,
+          "10883/70"
+        ],
+        [
+          36,
+          "13443/70"
+        ]
+      ],
+      "binding_cap_families": [
+        "cell",
+        "shared"
+      ],
+      "pressure_dyadic_interval": [
+        "-57969991126060698987756609166511498",
+        "-57969991126060698987756609166486647"
+      ],
+      "pressure_decimal_interval": [
+        -0.04361177413497759,
+        -0.04361177413497759
+      ],
+      "pressure_without_cell_caps_dyadic_interval": [
+        "-153570048934771442485393621461662682",
+        "-153570048934771442485393621461640707"
+      ],
+      "common_denominator": 1120,
+      "status": "Negative relaxation point satisfying every cell-set and shared-line cap (rectangular caps are implied); no realizing tensor is known."
+    }
+  ],
+  "ternary_compact_cover": {
+    "alphabet": 3,
+    "deficit_box": [
+      "0",
+      "4"
+    ],
+    "energy_box": [
+      "0",
+      "1"
+    ],
+    "margin": "1/100",
+    "leaves": 15000,
+    "audit_nodes": 36939,
+    "smallest_leaf_lower_bound_decimal": 0.010003252800547884,
+    "large_deficit_tail_lower_bound_decimal": 0.892655203151627,
+    "leaf_sha256": "42fa7ded254ef0619323626b2a399c8e28953a7374444a076dbba3cd88188ba7",
+    "statement": "For q=3, every point with all paired energies in [0,1] and any d>=0 has G_relaxed >= 1/100."
+  },
+  "status": "Cell-set caps passed the literal F_p control; the q=4 predecessor target is excluded; the q=5 predecessor target and the sharper q=5 and q=6 targets remain certified negative relaxation points; the compact ternary region is certified positive."
+}

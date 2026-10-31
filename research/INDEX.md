@@ -52,6 +52,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 - [Larger-alphabet shared-minor targets](shared-minor-profile-relaxation.md): all shared-line and rectangular-subalphabet prefix constraints admit explicitly certified negative relaxed pressure at four and five symbols; these are construction targets, not realizing tensors or factoring improvements.
 
+- [Cell-set minor caps](cell-minor-caps.md): every k-cell endpoint minor bounds each normalized Smith profile prefix by kd plus the k smallest cell energies; this exactly excludes the four-symbol shared-minor target, leaves certified sharper negative relaxation targets at five and six symbols, and proves a compact ternary region; floating-point searches find no negative four-symbol value, with infimum zero only in degenerate tails. No realizing tensor or factoring improvement.
+
 - [Growing quartic words and removable endpoint poles](reflection-charged-quartic-tiles.md): ordered creation/annihilation gates leave the Gaussian class; an explicit charge budget proves exact pole cancellation and crossing endpoints after paired type restriction, with complete degree costs and original-tensor checks.
 
 - [Complete one-support multiplier automata](boolean-multiplier-automata.md): arbitrary degree, characteristic-two coefficient extensions, and ramification reduce exactly to finitely many continuous cutoff functions and periodic binary tails; global code supports retain every actual physical mode energy.
