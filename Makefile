@@ -621,3 +621,7 @@ verify-finite-smith-frames:
 verify-odd-fiber-codes:
 	OPENBLAS_NUM_THREADS=1 python3 tools/check_odd_fiber_crossings.py --output /tmp/integer-factoring-odd-fiber-codes-replay.json
 
+.PHONY: verify-joint-syndrome-filters
+verify-joint-syndrome-filters:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_joint_syndrome_filter_synthesis.py --output /tmp/integer-factoring-joint-syndrome-filters-replay.json
+

@@ -1,0 +1,203 @@
+{
+  "status": "Joint coefficient feasibility, original-state transforms, endpoints, and full costs passed.",
+  "exhaustive_binary_kernel_endpoint_decisions": 160,
+  "feasible_exhaustive_cases": 72,
+  "all_ones_endpoint_restriction_negative_control": {
+    "degree_bounds": [
+      0,
+      1,
+      2,
+      0
+    ],
+    "order_bounds": [
+      2,
+      2,
+      2,
+      3,
+      2,
+      2,
+      2,
+      3
+    ],
+    "f": [
+      {
+        "0": 1
+      },
+      {
+        "0": 1,
+        "1": 2
+      },
+      {
+        "0": 1,
+        "2": 1,
+        "1": 2
+      },
+      {
+        "0": 1
+      }
+    ],
+    "delta": [
+      {
+        "2": 1
+      },
+      {
+        "2": 3
+      },
+      {
+        "2": 3,
+        "3": 1
+      },
+      {
+        "3": 1
+      },
+      {
+        "2": 1
+      },
+      {
+        "2": 2
+      },
+      {
+        "2": 2,
+        "3": 1
+      },
+      {
+        "3": 1
+      }
+    ],
+    "actual_degrees": [
+      0,
+      1,
+      2,
+      0
+    ],
+    "actual_orders": [
+      2,
+      2,
+      2,
+      3,
+      2,
+      2,
+      2,
+      3
+    ],
+    "endpoint_values": [
+      1,
+      3,
+      2,
+      1
+    ]
+  },
+  "canonical_literal_witness_replays": 64,
+  "independent_original_polynomial_state_controls": 1792,
+  "exact_rational_full_cost_controls": 72,
+  "independent_residue_compression_comparisons": 128,
+  "large_spacing_literal_controls": [
+    {
+      "spacing": 127,
+      "residue_pattern_count": 2,
+      "coefficient_variables": 385,
+      "maximum_local_coefficient_variables": 7,
+      "endpoint_values": [
+        1,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "spacing": 257,
+      "residue_pattern_count": 2,
+      "coefficient_variables": 775,
+      "maximum_local_coefficient_variables": 7,
+      "endpoint_values": [
+        1,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "spacing": 65537,
+      "residue_pattern_count": 2,
+      "coefficient_variables": 196615,
+      "maximum_local_coefficient_variables": 7,
+      "endpoint_values": [
+        1,
+        3,
+        2,
+        1
+      ]
+    }
+  ],
+  "target_walk_negative_control_and_basis_release": {
+    "scope": "Uniform-bias algorithmic control, not a physical factoring candidate.",
+    "feasible_basis_releases": 11,
+    "original_relative_cost": [
+      4281827047,
+      4199040000
+    ],
+    "improved_relative_cost": [
+      35633720269,
+      37791360000
+    ],
+    "released_pivot": 1,
+    "forced_output_state": 3,
+    "original_f": [
+      {
+        "0": 1,
+        "3": 1,
+        "4": 1
+      },
+      {
+        "0": 1
+      },
+      {
+        "0": 1
+      },
+      {
+        "0": 1
+      },
+      {
+        "0": 1
+      },
+      {
+        "0": 1
+      },
+      {
+        "0": 1
+      },
+      {
+        "0": 1
+      }
+    ],
+    "improved_f": [
+      {
+        "0": 1,
+        "2": 1,
+        "4": 1
+      },
+      {
+        "0": 1
+      },
+      {
+        "0": 1
+      },
+      {
+        "0": 1
+      },
+      {
+        "0": 1
+      },
+      {
+        "0": 1
+      },
+      {
+        "0": 1
+      },
+      {
+        "0": 1
+      }
+    ]
+  },
+  "scope": "Exact feasibility and witness interface; the weighted target walk is a search heuristic."
+}
