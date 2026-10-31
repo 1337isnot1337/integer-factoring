@@ -14,6 +14,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Coupled occupation-transfer operators](coupled-identity-operator-filters.md): exact bounded active matrices extend the joint diagonal filters to occupation-preserving kernels, with polynomial degree costs and a larger energy-filtered endpoint class.
+
 - [Coupled polynomial filter synthesis](coupled-filter-linear-synthesis.md): exact linear constraints certify a complete zero-partition upper bound while charging all infinity degrees, with brute-force feasibility controls and scoped finite searches.
 
 - [Reflection-pair Gaussian compression](reflection-dual-rail-compression.md): an explicit characteristic-two homology calculation reduces the physical alphabet from `2^M` to `2^(M/2)`, with a polynomial endpoint, complete two-cut profiles, and the identical natural rate at twice the scale.

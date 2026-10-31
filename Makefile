@@ -328,3 +328,7 @@ verify-reflection-compression:
 .PHONY: verify-coupled-synthesis
 verify-coupled-synthesis:
 	python3 tools/check_coupled_filter_linear_synthesis.py
+
+.PHONY: verify-coupled-operators
+verify-coupled-operators:
+	python3 tools/check_coupled_identity_operator_filters.py --extended
