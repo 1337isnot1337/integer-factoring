@@ -91,6 +91,13 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 
 ## Current research frontier
 
+The [exact Gaussian fixed-type certificates](research/reflection-gaussian-fixed-type-duals.md)
+prove global minima over every independent mode gauge and positive scale
+for four explicit rational physical types, through interval length 32.
+The proof uses nonnegative multipliers on exact Clifford minors; it does
+not cover the remaining optimization over all physical types. Run
+`make verify-gaussian-fixed-types` for exact determinant and stationarity checks.
+
 The [multipoint Hermite transfer](research/multipoint-hermite-crossings.md)
 reconstructs effective crossing pieces from jets at several finite points
 and infinity, with a shared degree budget and complete coefficient costs.

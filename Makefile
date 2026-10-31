@@ -46,6 +46,10 @@ verify-global-homogeneous-filters:
 verify-multipoint-hermite:
 	python3 tools/check_multipoint_hermite_crossings.py --output /tmp/integer-factoring-multipoint-hermite-replay.json
 
+.PHONY: verify-gaussian-fixed-types
+verify-gaussian-fixed-types:
+	python3 tools/check_reflection_gaussian_fixed_type_duals.py --output /tmp/integer-factoring-gaussian-fixed-types-replay.json
+
 .PHONY: verify-frontier-extensions
 verify-frontier-extensions:
 	python3 tools/check_all_scale_balanced_obstruction.py

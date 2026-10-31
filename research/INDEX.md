@@ -16,6 +16,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Exact Gaussian fixed-type duals](reflection-gaussian-fixed-type-duals.md): rational active-minor certificates prove global minima over all independent gauges and scales for explicit physical marginals at intervals 4, 8, 16, and 32, without claiming an all-type obstruction.
+
 - [Multipoint Hermite crossing transfer](multipoint-hermite-crossings.md): local jets at several points share the degree budget, reconstruct exact crossing pieces, and admit independent two-cut scales with complete factor-construction costs; an exact ternary example validates the criterion below the existing performance level.
 
 - [Global homogeneous one-level filter floor](global-homogeneous-boolean-filter-floor.md): all overlapping homogeneous Boolean occupation filters have positive complete pressure at every charge and scale, with unrestricted admissible degree and an exact compact cover for the remaining nine lengths.
