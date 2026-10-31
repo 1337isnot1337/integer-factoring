@@ -25,6 +25,7 @@ verify-constructions:
 	python3 tools/check_partial_transpose_rank.py --output /tmp/integer-factoring-partial-transpose-rank.json
 	python3 tools/check_cnot_crossing_modules.py --output /tmp/integer-factoring-cnot-crossing-modules.json
 	python3 tools/cnot_full_span.py --output /tmp/integer-factoring-cnot-full-span-audit.json
+	python3 tools/check_cnot_cut_budgets.py --output /tmp/integer-factoring-cnot-cut-budgets.json
 	python3 tools/check_geometric_transpose_crossings.py --polynomial-screen --output /tmp/integer-factoring-geometric-transpose-audit.json
 	python3 tools/check_geometric_row_inverses.py --output /tmp/integer-factoring-geometric-row-inverse-audit.json
 	python3 tools/check_nicolas_threshold_centers.py --output /tmp/integer-factoring-nicolas-threshold-centers.json

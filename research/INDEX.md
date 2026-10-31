@@ -4,6 +4,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Proved machine bounds and their foundations
 
+- [Column-prefix budgets](cnot-cut-budgets.md): exact coefficient cutoffs and an infinite generating identity exclude the zero-basepoint Smith criterion for CNOT row profiles at 16, 32, and 64 labels, including constant basis changes that mix all labels.
 - [Exterior majority-state precision witness](exterior-majority-precision-witness.md): an explicit single Cauchy minor, realized by rank-one `0/1` tables, forces `Omega(MD/u)` local precision for the proposed exterior lift. The original Boolean deformation and divisor tensors remain separate questions.
 - [Rational cut meshes](rational-cut-mesh-budget.md): complete exact certificates extend the prior finite-seed cutoff from 95 to 96 over all fields, and to 97 in characteristic two. Small polynomial sources and their tensor powers remain separate candidates.
 - [Interior Jacobian rank budgets](interior-jacobian-budget.md): explicit full-row-rank binary Jacobians and a proper-projection argument give stronger complementary rank bounds; the initial 96-label characteristic-two certificate is strengthened by the rational-mesh successor.
