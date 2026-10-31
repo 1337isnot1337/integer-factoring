@@ -91,6 +91,14 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs these four grou
 
 ## Current research frontier
 
+The [typed rational strictification theorem](research/typed-rational-crossing-strictification.md)
+extends the binary pressure floor to scalar rational kernels with only
+zero/endpoint denominators and crossing endpoints at every paired type
+and length. A paired physical gauge preserves the complete pressure.
+For binary characteristic-two kernels, twelve exact charge circuits make
+length four a sufficient and sharp endpoint test; ramification by eight
+always produces a strict crossing. Run `make verify-binary-typed-endpoints`.
+
 The [amplified quartic pole theorem](research/reflection-paired-quartic-poles.md)
 permits a growing word of disjoint gates with poles of order M+7 per gate.
 Simultaneous Pfaffian row factors prove every typed endpoint, and exact

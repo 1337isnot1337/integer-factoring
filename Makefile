@@ -661,3 +661,7 @@ verify-coefficient-height-walks:
 verify-mixed-quartic-poles:
 	OPENBLAS_NUM_THREADS=1 python3 tools/check_reflection_mixed_paired_words.py --output /tmp/integer-factoring-mixed-quartic-poles-replay.json
 
+.PHONY: verify-binary-typed-endpoints
+verify-binary-typed-endpoints:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_binary_typed_endpoint_gauges.py --output /tmp/integer-factoring-binary-typed-endpoints-replay.json
+

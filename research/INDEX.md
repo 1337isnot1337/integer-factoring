@@ -16,6 +16,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Typed rational kernels have pressure-preserving strict forms](typed-rational-crossing-strictification.md): balanced valuation circuits yield paired potentials and positive-characteristic strictification; the scalar binary floor extends to all stated rational endpoints, with a sharp four-copy endpoint test and uniform eighth-power gauge in characteristic two.
+
 - [Mixed forward/reverse paired quartics](reflection-mixed-paired-quartics.md): a common charge permits both directions on disjoint logical pairs, with asymmetric pole budgets M+7 and M-1; same-pair directions are allowed as an additive correction, while unproved overlapping products are rejected.
 
 - [Coefficient/height alternation at exact integer chambers](coefficient-height-alternation.md): two completed thirty-minute budgets perform 61,041 target steps and produce 1,432 full-profile classes; all eighty saved tensors replay, with no gain, and the unfinished 50,000-step requests remain explicit.

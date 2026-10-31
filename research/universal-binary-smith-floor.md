@@ -31,6 +31,15 @@ hypotheses. Section 7 also covers a specified triangular class of
 polynomial endpoints that require type projection.
 The established factoring score remains `1/2`.
 
+The [typed rational strictification theorem](typed-rational-crossing-strictification.md)
+also transfers this floor to every scalar rational binary kernel over a
+field of positive characteristic whose entries have denominators only at
+zero and one and whose full paired-type endpoints hold at every length.
+In characteristic two, twelve charge circuits give a sharp four-copy
+endpoint test, and an eighth-power ramification gives an exact strict
+crossing with unchanged full pressure. Auxiliary boundary contractions
+remain outside this corollary.
+
 ## 1. Pressure and harmless normalizations
 
 Subtract the height at letter zero on each leg and at each place, so
