@@ -1,0 +1,98 @@
+{
+  "status": "pass",
+  "length": 8,
+  "physical_labels": 13,
+  "coefficient_span_dimension": 6,
+  "ambient_cut_dimension": 169,
+  "independent_magnetic_entry_controls": 40,
+  "coefficient_rank_pairs": [
+    [
+      169,
+      1
+    ],
+    [
+      169,
+      1
+    ],
+    [
+      169,
+      21
+    ],
+    [
+      112,
+      56
+    ],
+    [
+      33,
+      33
+    ],
+    [
+      56,
+      112
+    ],
+    [
+      21,
+      169
+    ],
+    [
+      1,
+      169
+    ],
+    [
+      1,
+      169
+    ]
+  ],
+  "primary_component_dimensions": [
+    20,
+    1,
+    43,
+    70,
+    35
+  ],
+  "double_component_nilpotent_rank": 13,
+  "kernel_flats": 759,
+  "base_field_vectors": 15625,
+  "base_field_zero_patterns": 741,
+  "exact_minmax_rank_product": 2304,
+  "separator": [
+    0,
+    0,
+    3,
+    3,
+    0,
+    0
+  ],
+  "attaining_piece_rank_pairs": [
+    [
+      169,
+      1
+    ],
+    [
+      1,
+      169
+    ],
+    [
+      33,
+      33
+    ],
+    [
+      112,
+      14
+    ],
+    [
+      14,
+      112
+    ],
+    [
+      48,
+      48
+    ]
+  ],
+  "scope": "Eight-site full coefficient span over every characteristic-five field extension; no uniform-length theorem or improved factoring bound.",
+  "source_sha256": {
+    "tools/bounded_spin_crossing.py": "cefc38c88cdf76650f4966fa9e49d0edbc9ce4c2eec3848dd2716f35ee3819bd",
+    "tools/check_bounded_spin_rank_algebra.py": "a785dc2aa23b5033cf41d06c41312cd0db15f5774445d77a9e960f99c94dabf2",
+    "evidence/bounded-spin-rank-model.json": "2c915fa48b498fa2bab8f5c2de80886cec1e9385b7cc7f5a7381aa8235bbe6ee"
+  }
+}
