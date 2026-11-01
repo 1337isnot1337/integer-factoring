@@ -1267,3 +1267,10 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 
 
 - [Factoring from prime-adic precision-one coefficients](prime-bezout-counting.md): constant derivative units on full prime-power grids, exact modular factor counts, an elementary polynomial prime bound, and a uniform supplied-oracle reduction.
+
+## Optimized rational type for the existing cube kernel
+
+[Exact rational-type certificate](cube-optimized-rational-type.md) sharpens the existing cube interface to rho < 0.624718442. This changes only the type and scale; the complete factoring exponent stays 1/2.
+
+
+- [One prime field with a chosen trial budget](one-prime-bezout-recovery.md): prime-only interval counts, a single-field smallest-prime decoder, and a uniform tradeoff between trial division and the hypothesized global coefficient provider.
