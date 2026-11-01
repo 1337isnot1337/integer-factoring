@@ -180,6 +180,10 @@ verify-joint-projector-lattices:
 verify-joint-evaluation-algebra:
 	python3 tools/check_joint_evaluation_algebra.py
 
+.PHONY: verify-joint-endpoint-loops
+verify-joint-endpoint-loops:
+	python3 tools/check_joint_endpoint_loops.py
+
 .PHONY: verify-group-shears
 verify-group-shears:
 	python3 tools/check_group_shear_crossings.py

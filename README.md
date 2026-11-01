@@ -668,6 +668,12 @@ zero, one and infinity to a constant conjugation: a polynomial minor
 the identity at infinity leaves the tensor unchanged. Gauges singular
 at the distinguished places remain open. Run `make verify-joint-monomial-lattices`,
 `make verify-joint-projector-lattices` and `make verify-joint-evaluation-algebra`.
+The [singular endpoint loop construction](research/joint-endpoint-rational-loops.md)
+evades three-place regularity and gives genuine new polynomial crossings.
+Its nilpotent sector reduces to three effective parameters; two symbolic
+minors and a positive Bernstein certificate prove `rho>=3/4` for every
+nontrivial member over every characteristic-two field at the natural heights.
+Thus it gives no half-rate improvement. Run `make verify-joint-endpoint-loops`.
 
 The [group-shear extension](research/group-shear-crossings.md) implements
 the swap through three multiplication/division shears over any finite
