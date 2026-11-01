@@ -1,5 +1,7 @@
 # Research index
 
+- [Sparse unit elimination with complete integer certificates](sparse-unit-presentation.md): identical deterministic pivots and all four presentation maps, 606 small controls, complete 64/80-bit replays and matched component timings.
+
 - [Uniform orthogonal graph codes from a cubic differential](tensor-cubic-graph-orthogonality.md): an exact Gram criterion at every cutoff, mixed-occupation native profiles, independent literal and Toeplitz checks, and completed F4/F16 51-letter controls; no frontier gain.
 
 - [Exact interval-weighted Kloosterman blocks](circuit-box-kloosterman-blocks.md): polynomial-bit summation of complete unit-frequency and ratio-progression blocks, a positive ratio-filtered factor count, and a fully charged outer inversion; no exponent gain.

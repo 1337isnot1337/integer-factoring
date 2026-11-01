@@ -2511,3 +2511,10 @@ verify-tensor-f16: verify-tensor-cubic-graph
 
 verify-tensor-cubic-graph:
 	python3 tools/check_tensor_hot_compounds_f16_mixed.py --output /tmp/integer-factoring-tensor-cubic-graph.json
+
+.PHONY: verify-sparse-unit-presentation
+
+verify-oriented-refinement: verify-sparse-unit-presentation
+
+verify-sparse-unit-presentation:
+	python3 tools/check_sparse_unit_presentation.py

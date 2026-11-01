@@ -2155,3 +2155,10 @@ when `1` is outside the binary span of three field coefficients. Its explicit
 Gram determinant proof works in every characteristic-two field. Exact mixed
 constructors and two completed 51-letter profiles are retained. These pilots
 do not improve the pressure frontier or the factoring exponent.
+
+[Sparse unit elimination](research/sparse-unit-presentation.md) preserves the
+entire reference pivot sequence and all integer presentation certificates.
+Stable identifiers and incidence updates reduce the matched 80-bit final-pass
+median from 13.116 seconds to 0.853 seconds, with verification included.
+This is a measured implementation improvement; the relation-search bound is
+unchanged.
