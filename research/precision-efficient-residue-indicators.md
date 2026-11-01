@@ -359,6 +359,14 @@ precision to recover the integer count from the domain-size bound. Five
 invalid-interface controls are rejected. This extends the earlier packing implementation and tightens its carry invoice; it supplies no
 new complete factoring bound or independent mathematical review.
 
+The [clean full replay receipt](../evidence/teichmuller-packed-full-verification.json)
+and [compressed log](../evidence/teichmuller-packed-full-verification.stdout.txt.xz)
+pin the default-plus-39-focused pass at `10d7610`, including the canonical
+compiler, refined carry bound and all three compiler-control panels. The
+run has 388 Python command blocks, 66 unit tests, five crossing tests and
+1,131 Markdown files. Later receipt/docs and main changes are outside that
+source pin; a code replay does not independently review the ordinary proofs.
+
 ## 6. Exact controls
 
 The [checker](../tools/check_precision_residue_indicators.py) expands both

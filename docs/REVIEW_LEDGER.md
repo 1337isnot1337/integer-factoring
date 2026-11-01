@@ -968,3 +968,14 @@ canonical source. The old full run at `777b48d` was deliberately interrupted
 for consolidation; no full PASS follows from it. Earlier full pins remain
 historical checks. No native integer-query representation, stronger score,
 new Lean or independent mathematical review is supplied.
+
+The [exact full receipt](../evidence/teichmuller-packed-full-verification.json)
+records the exit-zero default-plus-39-focused run at clean frozen
+`10d761083651d1d5a78366a00e73ba9c986b5fa9`, tree
+`e1fef4e84aeb90964b33d34b9f3460cc244d758e`, in 697.46 seconds.
+It has 388 Python command blocks, 66 unit tests, five crossing tests and
+1,131 Markdown files. Clean pre/post status and both raw/compressed log
+hashes are retained with the
+[complete compressed log](../evidence/teichmuller-packed-full-verification.stdout.txt.xz).
+This pin includes canonical consolidation and the refined packing interface;
+later receipt/docs changes and main integration deltas have separate scope.
