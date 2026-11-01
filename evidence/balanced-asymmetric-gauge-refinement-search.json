@@ -1,0 +1,305 @@
+{
+  "status": "exploratory floating search; no certified exponent or global optimum",
+  "seed_coefficient_sha256": "29f5d7d1ac236a42b832977a54c41582f5381a335fd6812e6192fb406eef6ca5",
+  "constructor": {},
+  "dimensions": [
+    5,
+    5,
+    5,
+    5
+  ],
+  "denominator_degree": 0,
+  "cut": 1,
+  "random_seed": 2026103221,
+  "records": [
+    {
+      "dimensions": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "parameters": [
+        2.0663007019881723e-08,
+        3.0040252898960864e-06,
+        0.005405735093419709,
+        0.0010660723494628395,
+        2.2950860770950126e-07,
+        0.00019191454923205985,
+        0.0015874298855586303,
+        5.0321585674683345,
+        0.640880333280698,
+        1.9226421161241927,
+        2.563983766701961,
+        13.9299930051257,
+        0.6408803699817976,
+        1.922640939672631,
+        2.565678021213166,
+        3.2080062041183908,
+        0.640880335298851,
+        1.922641127127538,
+        2.5635613839861975,
+        3.2045795254177305,
+        0.6408803653700382,
+        1.9226410809090866,
+        2.5635228492037374,
+        13.987574452967186,
+        1.995742748843183e-09,
+        2.7301078287827415e-05,
+        9.819915178091095e-06,
+        6.451577775269501,
+        -2.4142897865670963e-09,
+        2.2032420293941182e-05,
+        1.5429814096307474e-05,
+        0.004176761579573578,
+        0.640880342076197
+      ],
+      "rho_floating": 0.729549834747631,
+      "type_x_v": [
+        0.6540069029443067,
+        0.27168896127952485,
+        0.04688607679667962,
+        0.019376423125737622,
+        0.008041635853751092
+      ],
+      "type_y_u": [
+        0.6592638848794546,
+        0.27387278929455167,
+        0.047256626407418637,
+        0.019606699417340778,
+        1.2343481532934293e-12
+      ],
+      "cut": 1,
+      "query": 904
+    }
+  ],
+  "profile_queries_attempted": 17401,
+  "failed_profiles": 2717,
+  "elapsed_seconds": 19.248230571000022,
+  "restarts": [
+    {
+      "restart": 0,
+      "optimizer_success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "evaluations": 925,
+      "final_rho": 0.729549834712706
+    },
+    {
+      "restart": 1,
+      "optimizer_success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "evaluations": 6365,
+      "final_rho": 0.8119309251738424
+    },
+    {
+      "restart": 2,
+      "optimizer_success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "evaluations": 300,
+      "final_rho": 0.7309643710068671
+    },
+    {
+      "restart": 3,
+      "optimizer_success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "evaluations": 196,
+      "final_rho": 0.74530463384527
+    },
+    {
+      "restart": 4,
+      "optimizer_success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "evaluations": 192,
+      "final_rho": 0.7820744768233794
+    },
+    {
+      "restart": 5,
+      "optimizer_success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "evaluations": 160,
+      "final_rho": 1.1251384268864129
+    },
+    {
+      "restart": 6,
+      "optimizer_success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "evaluations": 309,
+      "final_rho": 0.7304274186799258
+    },
+    {
+      "restart": 7,
+      "optimizer_success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "evaluations": 265,
+      "final_rho": 0.7407136020964448
+    },
+    {
+      "restart": 8,
+      "optimizer_success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "evaluations": 238,
+      "final_rho": 0.7635553582432563
+    },
+    {
+      "restart": 9,
+      "optimizer_success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "evaluations": 232,
+      "final_rho": 0.9626658733009887
+    },
+    {
+      "restart": 10,
+      "optimizer_success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "evaluations": 446,
+      "final_rho": 0.7302917730729772
+    },
+    {
+      "restart": 11,
+      "optimizer_success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "evaluations": 234,
+      "final_rho": 0.7362955139209485
+    },
+    {
+      "restart": 12,
+      "optimizer_success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "evaluations": 491,
+      "final_rho": 0.7565322591517192
+    },
+    {
+      "restart": 13,
+      "optimizer_success": false,
+      "message": "ABNORMAL: ",
+      "evaluations": 180,
+      "final_rho": 100.0
+    },
+    {
+      "restart": 14,
+      "optimizer_success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "evaluations": 194,
+      "final_rho": 0.7322813625712832
+    },
+    {
+      "restart": 15,
+      "optimizer_success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "evaluations": 201,
+      "final_rho": 0.7385584943368539
+    },
+    {
+      "restart": 16,
+      "optimizer_success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "evaluations": 143,
+      "final_rho": 0.7701803614728877
+    },
+    {
+      "restart": 17,
+      "optimizer_success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "evaluations": 245,
+      "final_rho": 0.8427234643912638
+    },
+    {
+      "restart": 18,
+      "optimizer_success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "evaluations": 510,
+      "final_rho": 0.7302698354552956
+    },
+    {
+      "restart": 19,
+      "optimizer_success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "evaluations": 135,
+      "final_rho": 0.7419764493380143
+    },
+    {
+      "restart": 20,
+      "optimizer_success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "evaluations": 585,
+      "final_rho": 0.7470071980042272
+    },
+    {
+      "restart": 21,
+      "optimizer_success": false,
+      "message": "ABNORMAL: ",
+      "evaluations": 111,
+      "final_rho": 3.5011614582649018
+    },
+    {
+      "restart": 22,
+      "optimizer_success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "evaluations": 285,
+      "final_rho": 0.7307508170011944
+    },
+    {
+      "restart": 23,
+      "optimizer_success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "evaluations": 199,
+      "final_rho": 0.7498274694868968
+    },
+    {
+      "restart": 24,
+      "optimizer_success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "evaluations": 281,
+      "final_rho": 0.7617105611105626
+    },
+    {
+      "restart": 25,
+      "optimizer_success": false,
+      "message": "ABNORMAL: ",
+      "evaluations": 290,
+      "final_rho": 100.0
+    },
+    {
+      "restart": 26,
+      "optimizer_success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "evaluations": 156,
+      "final_rho": 0.7306581455928426
+    },
+    {
+      "restart": 27,
+      "optimizer_success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "evaluations": 1141,
+      "final_rho": 0.7307556004601012
+    },
+    {
+      "restart": 28,
+      "optimizer_success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "evaluations": 277,
+      "final_rho": 0.7692953331657715
+    },
+    {
+      "restart": 29,
+      "optimizer_success": false,
+      "message": "ABNORMAL: ",
+      "evaluations": 248,
+      "final_rho": 1.2847171474498464
+    },
+    {
+      "restart": 30,
+      "optimizer_success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "evaluations": 503,
+      "final_rho": 0.7301441682364471
+    },
+    {
+      "restart": 31,
+      "optimizer_success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "evaluations": 1364,
+      "final_rho": 0.7306515560277222
+    }
+  ]
+}
