@@ -63,7 +63,7 @@ def solve(matrix, right):
                 continue
             factor = matrix[j][i]
             for row, source in ((matrix[j], matrix[i]), (right[j], right[i])):
-                for k in range(size):
+                for k in range(len(row)):
                     term = multiply(factor, source[k])
                     row[k] = add(row[k], (-term[0], -term[1]))
     return right
@@ -84,6 +84,7 @@ def valuation(value):
 def check():
     rng = random.Random(20261040)
     controls = positive = flow_controls = trace_controls = max_pairs = empty_controls = 0
+    block_controls, negative_schur_example = 0, None
     examples = []
     for index in range(48):
         left_size, right_size = rng.randrange(1, 6), rng.randrange(1, 6)
@@ -116,7 +117,7 @@ def check():
         assert pairs == [(a, b) for a in left for b in right if a * b == number]
         bound = max((abs(number - a * b) for a in left for b in right), default=0).bit_length()
         scale_bits = bound + 3
-        orders, previous_matrix = [], None
+        orders, schur_orders, previous_matrix = [], [], None
         for k in (scale_bits, scale_bits + 1):
             z = (F(number), F(1 << k))
             matrix = [[inverse((F(number - a * b), F(1 << k))) for b in right]
@@ -153,6 +154,36 @@ def check():
                         assert scaled[i][j] == flowed
                         flow_controls += 1
             previous_matrix = scaled
+            if size >= 2:
+                cut = size - 1 if index == 0 else max(1, size // 2)
+                block = [row[:cut] for row in scaled[:cut]]
+                upper_right = [row[cut:] for row in scaled[:cut]]
+                solved = solve(block, upper_right)
+                schur = []
+                for i in range(cut, size):
+                    row = []
+                    for j in range(cut, size):
+                        entry = scaled[i][j]
+                        for r in range(cut):
+                            term = multiply(scaled[i][r], solved[r][j - cut])
+                            entry = add(entry, (-term[0], -term[1]))
+                        expected_entry = scaled[i][j]
+                        for r in range(cut):
+                            expected_entry = multiply(expected_entry, z)
+                            expected_entry = multiply(expected_entry,
+                                (F((left[i] - left[r]) * (right[j] - right[r])), F(0)))
+                            expected_entry = multiply(expected_entry, matrix[i][r])
+                            expected_entry = multiply(expected_entry, matrix[r][j])
+                        assert entry == expected_entry
+                        row.append(entry)
+                        block_controls += 1
+                    schur.append(row)
+                # determinant(scaled) is c^size times determinant(unscaled).
+                scaled_det = direct
+                for _ in range(size):
+                    scaled_det = multiply(scaled_det, (F(0), F(1 << k)))
+                assert multiply(determinant(block), determinant(schur)) == scaled_det
+                schur_orders.append(valuation(determinant(schur)))
             quotient = solve(scaled, [[multiply(entry, entry) for entry in row] for row in scaled])
             scalar_trace = (F(0), F(0))
             total = (F(0), F(0))
@@ -169,6 +200,12 @@ def check():
             trace_controls += 1
             controls += 1
         assert orders[1] - orders[0] == size - len(pairs)
+        if index == 0:
+            assert schur_orders[1] - schur_orders[0] == -1
+            negative_schur_example = {'number': number, 'nodes': left,
+                                     'eliminated_prefix_size': size - 1,
+                                     'scale_bits': scale_bits, 'schur_orders': schur_orders,
+                                     'schur_order_slope': -1}
         positive += bool(pairs)
         if len(examples) < 3 and pairs:
             examples.append({'number': number, 'original_left': [original_left.start, original_left.stop],
@@ -196,6 +233,8 @@ def check():
             'slope_controls': controls // 2, 'positive_rectangles': positive,
             'maximum_factor_pair_count': max_pairs, 'empty_padded_domains': empty_controls,
             'literal_entry_flow_controls': flow_controls, 'normalized_trace_controls': trace_controls,
+            'literal_schur_entry_controls': block_controls,
+            'nonintegral_schur_control': negative_schur_example,
             'vandermonde_content_controls': 128, 'two_interval_content_controls': 128,
             'huge_known_content_controls': huge, 'examples': examples,
             'unresolved': 'Evaluate the determinant-content difference or normalized inverse/Hadamard-square trace without expanding the matrix.'}

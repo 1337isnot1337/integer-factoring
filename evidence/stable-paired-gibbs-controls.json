@@ -1,0 +1,207 @@
+{
+  "status": "passed",
+  "scope": "Exact affine consistency checks, stable floating roots within independently certified boundary brackets, and finite numerical gradient controls. Native global profile attainment is not proved by the affine reconstruction.",
+  "boundary_record": "evidence/paired-gibbs-boundary-diagnostics.json",
+  "boundary_record_sha256": "a0b0d44ff4cbdd0e9f7b7e026b231fb7ac4a789f956c6c5c2aa7e6cfd146773b",
+  "certified_boundary_brackets_matched": 12,
+  "diagnostic_guard_examples_recovered": 8,
+  "successful_low_entropy_diagnostics_replayed": 4,
+  "boundary_directional_decimal_controls": 8,
+  "maximum_boundary_directional_error": 2.5094134686876046e-09,
+  "ordinary_root_and_gradient_controls": 48,
+  "maximum_ordinary_root_error": 5.284661597215745e-14,
+  "maximum_ordinary_gradient_error": 2.6645352591003757e-15,
+  "ordinary_smooth_finite_difference_controls": 47,
+  "ordinary_nonsmooth_directions_skipped": 1,
+  "maximum_ordinary_finite_difference_error": 6.57897642614147e-11,
+  "boundary_cases": [
+    {
+      "kind": "positive-nonvacuum",
+      "normalized_height": 3,
+      "cut": 0,
+      "rho": 1.7219928361171515,
+      "log_paired_entropy": -21.872657993634537,
+      "log_zero_rate_constant": -23.998993668515816,
+      "delta_numerator": "0",
+      "gradient_status": "finite_log_scaled_envelope_gradient",
+      "affine_consistency": {
+        "orders_nondecreasing": true,
+        "delta_nonnegative": true,
+        "endpoint_minimum_bound": true
+      }
+    },
+    {
+      "kind": "positive-nonvacuum",
+      "normalized_height": 3,
+      "cut": 1,
+      "rho": 1.7643282929000144,
+      "log_paired_entropy": -21.22723544736278,
+      "log_zero_rate_constant": -23.30584660011398,
+      "delta_numerator": "0",
+      "gradient_status": "finite_log_scaled_envelope_gradient",
+      "affine_consistency": {
+        "orders_nondecreasing": true,
+        "delta_nonnegative": true,
+        "endpoint_minimum_bound": true
+      }
+    },
+    {
+      "kind": "negative-preferred-one",
+      "normalized_height": -3,
+      "cut": 0,
+      "rho": 1.7219928361171515,
+      "log_paired_entropy": -21.872657993634537,
+      "log_zero_rate_constant": -23.998993668515816,
+      "delta_numerator": "0",
+      "gradient_status": "finite_log_scaled_envelope_gradient",
+      "affine_consistency": {
+        "orders_nondecreasing": true,
+        "delta_nonnegative": true,
+        "endpoint_minimum_bound": true
+      }
+    },
+    {
+      "kind": "negative-preferred-one",
+      "normalized_height": -3,
+      "cut": 1,
+      "rho": 1.7643282929000144,
+      "log_paired_entropy": -21.22723544736278,
+      "log_zero_rate_constant": -23.30584660011398,
+      "delta_numerator": "0",
+      "gradient_status": "finite_log_scaled_envelope_gradient",
+      "affine_consistency": {
+        "orders_nondecreasing": true,
+        "delta_nonnegative": true,
+        "endpoint_minimum_bound": true
+      }
+    },
+    {
+      "kind": "positive-nonvacuum",
+      "normalized_height": 6,
+      "cut": 0,
+      "rho": 1.2703372957053265,
+      "log_paired_entropy": -68.59321166931441,
+      "log_zero_rate_constant": -71.99899366849692,
+      "delta_numerator": "0",
+      "gradient_status": "finite_log_scaled_envelope_gradient",
+      "affine_consistency": {
+        "orders_nondecreasing": true,
+        "delta_nonnegative": true,
+        "endpoint_minimum_bound": true
+      }
+    },
+    {
+      "kind": "positive-nonvacuum",
+      "normalized_height": 6,
+      "cut": 1,
+      "rho": 1.2819412582221528,
+      "log_paired_entropy": -67.91813148132636,
+      "log_zero_rate_constant": -71.30584660009508,
+      "delta_numerator": "0",
+      "gradient_status": "finite_log_scaled_envelope_gradient",
+      "affine_consistency": {
+        "orders_nondecreasing": true,
+        "delta_nonnegative": true,
+        "endpoint_minimum_bound": true
+      }
+    },
+    {
+      "kind": "negative-preferred-one",
+      "normalized_height": -6,
+      "cut": 0,
+      "rho": 1.2703372957053265,
+      "log_paired_entropy": -68.59321166931441,
+      "log_zero_rate_constant": -71.99899366849692,
+      "delta_numerator": "0",
+      "gradient_status": "finite_log_scaled_envelope_gradient",
+      "affine_consistency": {
+        "orders_nondecreasing": true,
+        "delta_nonnegative": true,
+        "endpoint_minimum_bound": true
+      }
+    },
+    {
+      "kind": "negative-preferred-one",
+      "normalized_height": -6,
+      "cut": 1,
+      "rho": 1.2819412582221528,
+      "log_paired_entropy": -67.91813148132636,
+      "log_zero_rate_constant": -71.30584660009508,
+      "delta_numerator": "0",
+      "gradient_status": "finite_log_scaled_envelope_gradient",
+      "affine_consistency": {
+        "orders_nondecreasing": true,
+        "delta_nonnegative": true,
+        "endpoint_minimum_bound": true
+      }
+    },
+    {
+      "kind": "positive-nonvacuum",
+      "normalized_height": 12,
+      "cut": 0,
+      "rho": 1.1198963719360897,
+      "log_paired_entropy": -163.65530194024555,
+      "log_zero_rate_constant": -167.99899366849692,
+      "delta_numerator": "0",
+      "gradient_status": "finite_log_scaled_envelope_gradient",
+      "affine_consistency": {
+        "orders_nondecreasing": true,
+        "delta_nonnegative": true,
+        "endpoint_minimum_bound": true
+      }
+    },
+    {
+      "kind": "positive-nonvacuum",
+      "normalized_height": 12,
+      "cut": 1,
+      "rho": 1.1244159524985122,
+      "log_paired_entropy": -162.97018665223175,
+      "log_zero_rate_constant": -167.3058466000951,
+      "delta_numerator": "0",
+      "gradient_status": "finite_log_scaled_envelope_gradient",
+      "affine_consistency": {
+        "orders_nondecreasing": true,
+        "delta_nonnegative": true,
+        "endpoint_minimum_bound": true
+      }
+    },
+    {
+      "kind": "negative-preferred-one",
+      "normalized_height": -12,
+      "cut": 0,
+      "rho": 1.1198963719360897,
+      "log_paired_entropy": -163.65530194024555,
+      "log_zero_rate_constant": -167.99899366849692,
+      "delta_numerator": "0",
+      "gradient_status": "finite_log_scaled_envelope_gradient",
+      "affine_consistency": {
+        "orders_nondecreasing": true,
+        "delta_nonnegative": true,
+        "endpoint_minimum_bound": true
+      }
+    },
+    {
+      "kind": "negative-preferred-one",
+      "normalized_height": -12,
+      "cut": 1,
+      "rho": 1.1244159524985122,
+      "log_paired_entropy": -162.97018665223175,
+      "log_zero_rate_constant": -167.3058466000951,
+      "delta_numerator": "0",
+      "gradient_status": "finite_log_scaled_envelope_gradient",
+      "affine_consistency": {
+        "orders_nondecreasing": true,
+        "delta_nonnegative": true,
+        "endpoint_minimum_bound": true
+      }
+    }
+  ],
+  "source_sha256": {
+    "check_stable_paired_gibbs.py": "d61463277813cc29c6b084fd89e44c3a8811fd5144b55420df9895a5eced5b55",
+    "stable_paired_gibbs.py": "0721d49def8ae6c1f05f9628ad27a8e4e28073d725160ee4a438964b76f5a8ad",
+    "native_rectangular_smith_f4.py": "5c96128e3713138a08752c22036154cb65983a0b47ca66aa2ca18949d765ce4a",
+    "native_rectangular_smith_f4.cpp": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6",
+    "search_rectangular_f4_pressure.py": "b54c4779330851aa480b664d4a0eb5f37b732213c6f612fea60a19cd93c43fd1"
+  },
+  "elapsed_seconds": 9.116265254999234
+}

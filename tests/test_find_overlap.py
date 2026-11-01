@@ -35,11 +35,12 @@ class OverlapSearchTests(unittest.TestCase):
             root = Path(directory)
             (root / "research").mkdir()
             (root / "research" / "note.md").write_text("A grouping obstacle\n")
-            with patch.object(find_overlap, "github_pages", side_effect=[[pr], [issue, pr_as_issue], [comment]]):
+            with patch.object(find_overlap, "github_pages", side_effect=[[pr], [issue, pr_as_issue], [comment]]), \
+                 patch.object(find_overlap, "github_discussions", return_value=([], [])):
                 groups = find_overlap.search(["grouping"], root)
-        self.assertEqual([len(items) for _, items in groups], [1, 1, 1, 1])
+        self.assertEqual([len(items) for _, items in groups], [1, 1, 0, 0, 1, 1])
         self.assertEqual(groups[1][1][0][0].split()[0], "https://example/issue/2")
-        self.assertEqual(groups[3][1][0][0], "research/note.md")
+        self.assertEqual(groups[5][1][0][0], "research/note.md")
 
     def test_failure_is_not_reported_as_no_overlap(self):
         error = subprocess.CalledProcessError(1, ["gh", "api"])

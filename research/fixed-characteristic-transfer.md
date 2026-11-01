@@ -38,6 +38,12 @@ No improved factoring exponent is claimed here.
 
 The weighted network that represents (1), including its construction
 cost, is described in [the weighted-constructor note](weighted-prefix-constructor.md).
+The later [trial-budget refinement](sparse-divisor-residues.md) replaces the
+universal divisor cap below by D=2^ceil(n/t) after trial division to 2^t.
+It preserves every fixed positive rational saving exponent, including
+values above one, and needs only polynomial cyclic degrees for target
+scores through one. Its global-only version uses standard Garg--Schost
+interpolation. The faster weighted evaluator remains unproved.
 The sparse polynomial test below is a standard method. In particular,
 Bläser, Hardt, Lipton and Vishnoi's
 [*Deterministically Testing Sparse Polynomial Identities of Unbounded Degree*](https://cs.yale.edu/homes/vishnoi/Publications_files/BHLV08-ipl.pdf)

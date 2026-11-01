@@ -66,6 +66,12 @@ The result table distinguishes verified machine bounds from conditional construc
 
 ## Verification
 
+Before starting overlapping work, run `python3 tools/find_overlap.py KEYWORD`
+with an authenticated GitHub CLI. It searches discussion posts, comments and
+replies, open issues/PRs, historical issue #8 comments, and local research
+Markdown. See [the research workflow](autoresearch.md#workflow) and the tool's
+coverage report; matches are leads, not proof of novelty or active claims.
+
 From the repository root, run:
 
 ```sh
@@ -300,6 +306,17 @@ product 2304; that finite block cannot improve the rate. Run
 The [spin-zero jet identities](research/bounded-spin-three-jets.md)
 hold at every length and bound the coefficient span by `n-2` for even
 `n>=6`; ordinary cut-rank growth remains open.
+An [enlarged six-vertex construction](research/bounded-spin-six-vertex.md)
+exposes the complete monomial span with degree `O(n^2)` and the same
+strict endpoint. At eight sites it adds a seventh tensor direction;
+the noncommuting cut operators have invariant commutator modules of
+dimension 28. Uniform favorable ranks remain open. Run the optional
+`make verify-bounded-spin-six-vertex`.
+The [modular interface](research/bounded-spin-modular-interface.md)
+connects these constructors to the existing fixed-characteristic transfer:
+dense rank factors meet its cost bound, and the original coefficient
+space also permits automatic selection. A favorable uniform rank
+estimate is still missing.
 
 The [exact nonlinear charge theorem](research/nonlinear-symbol-charge-lattices.md)
 characterizes every admissible pair of full-symbol potentials for the
@@ -1191,6 +1208,14 @@ in the complete factoring bound. At the trial budget for `1/2 < beta <= 1`,
 the required weights, query count and recovery work are polynomial in `b`.
 The coefficient engine remains unproved. Run
 `make verify-divisor-moments` for the supplied-moment controls.
+
+The [global sparse-residue transfer](research/sparse-divisor-residues.md)
+connects that trial budget to the fixed-characteristic weighted constructor.
+Garg--Schost interpolation recovers the integer divisor polynomial from
+global cyclic residues, with polynomial algebra degrees through target
+score one. The refined transfer preserves every fixed positive saving
+exponent, removing the earlier cap from the transfer overhead. Its faster
+weighted evaluator remains unproved. Run `make verify-sparse-divisor-residues`.
 
 The [Bell-diagonal seed construction](research/bell-diagonal-crossings.md)
 gives exact two-cut transforms and excludes its complete symmetric

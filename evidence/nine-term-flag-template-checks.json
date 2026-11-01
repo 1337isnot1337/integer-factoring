@@ -1,0 +1,446 @@
+{
+  "status": "exact nine-term template factors and leading-jet constraints certified",
+  "constructor_sha256": "3e491183c79bdcc2d4c09824b375e03dab2778b50096eb57aadb4fa7d53ced3d",
+  "one_copy_rank_three_image": 4769284,
+  "one_copy_components": [
+    33792,
+    4194308,
+    541184
+  ],
+  "nine_pair_labels": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      2
+    ]
+  ],
+  "antitone_pairing": [
+    8,
+    7,
+    6,
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+  ],
+  "flag_intersections": [
+    {
+      "relative_order_cutoff": 0,
+      "reference_flag_dimension": 1,
+      "intersection_dimension": 0
+    },
+    {
+      "relative_order_cutoff": 1,
+      "reference_flag_dimension": 3,
+      "intersection_dimension": 0
+    },
+    {
+      "relative_order_cutoff": 2,
+      "reference_flag_dimension": 4,
+      "intersection_dimension": 0
+    },
+    {
+      "relative_order_cutoff": 3,
+      "reference_flag_dimension": 6,
+      "intersection_dimension": 0
+    },
+    {
+      "relative_order_cutoff": 4,
+      "reference_flag_dimension": 10,
+      "intersection_dimension": 0
+    },
+    {
+      "relative_order_cutoff": 5,
+      "reference_flag_dimension": 14,
+      "intersection_dimension": 0
+    },
+    {
+      "relative_order_cutoff": 6,
+      "reference_flag_dimension": 19,
+      "intersection_dimension": 1
+    },
+    {
+      "relative_order_cutoff": 7,
+      "reference_flag_dimension": 25,
+      "intersection_dimension": 1
+    },
+    {
+      "relative_order_cutoff": 8,
+      "reference_flag_dimension": 34,
+      "intersection_dimension": 1
+    },
+    {
+      "relative_order_cutoff": 9,
+      "reference_flag_dimension": 46,
+      "intersection_dimension": 1
+    }
+  ],
+  "intersection_coefficient_vector_at_orders_six_to_nine": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "order_six_reference_quotient_rank": 5,
+  "full_matching_update_quotient_rank": 9,
+  "image_intersection_dimension": 1,
+  "coimage_intersection_dimension": 1,
+  "universal_order_six_updated_rank_lower_bound": 12,
+  "literal_F4_leading_quotient_controls": [
+    {
+      "pairing": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "coefficients": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "order_six_quotient_rank": 12
+    },
+    {
+      "pairing": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "coefficients": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "order_six_quotient_rank": 13
+    },
+    {
+      "pairing": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "coefficients": [
+        1,
+        2,
+        3,
+        1,
+        2,
+        3,
+        1,
+        2,
+        3
+      ],
+      "order_six_quotient_rank": 13
+    },
+    {
+      "pairing": [
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "coefficients": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "order_six_quotient_rank": 12
+    },
+    {
+      "pairing": [
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "coefficients": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "order_six_quotient_rank": 13
+    },
+    {
+      "pairing": [
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "coefficients": [
+        1,
+        2,
+        3,
+        1,
+        2,
+        3,
+        1,
+        2,
+        3
+      ],
+      "order_six_quotient_rank": 13
+    },
+    {
+      "pairing": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        0
+      ],
+      "coefficients": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "order_six_quotient_rank": 12
+    },
+    {
+      "pairing": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        0
+      ],
+      "coefficients": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "order_six_quotient_rank": 13
+    },
+    {
+      "pairing": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        0
+      ],
+      "coefficients": [
+        1,
+        2,
+        3,
+        1,
+        2,
+        3,
+        1,
+        2,
+        3
+      ],
+      "order_six_quotient_rank": 13
+    },
+    {
+      "pairing": [
+        0,
+        3,
+        6,
+        1,
+        4,
+        7,
+        2,
+        5,
+        8
+      ],
+      "coefficients": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "order_six_quotient_rank": 12
+    },
+    {
+      "pairing": [
+        0,
+        3,
+        6,
+        1,
+        4,
+        7,
+        2,
+        5,
+        8
+      ],
+      "coefficients": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "order_six_quotient_rank": 13
+    },
+    {
+      "pairing": [
+        0,
+        3,
+        6,
+        1,
+        4,
+        7,
+        2,
+        5,
+        8
+      ],
+      "coefficients": [
+        1,
+        2,
+        3,
+        1,
+        2,
+        3,
+        1,
+        2,
+        3
+      ],
+      "order_six_quotient_rank": 13
+    }
+  ],
+  "component_height_sums": [
+    2,
+    4,
+    6,
+    4,
+    6,
+    8,
+    6,
+    8,
+    10
+  ],
+  "height_sum_average_per_matched_pair": 12,
+  "best_simultaneous_zero_entry_order": 21,
+  "endpoint_polynomials_checked": 108,
+  "literal_extreme_entry_orders_checked": 216,
+  "scope": "Leading infinity jet for matched sparse factors, all pairings and nonzero field weights; not a global pressure exclusion.",
+  "factoring_bound_improved": false
+}

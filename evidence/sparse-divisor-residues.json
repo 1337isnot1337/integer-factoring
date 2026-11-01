@@ -1,0 +1,38 @@
+{
+  "scope": "Garg--Schost recovery from supplied global residues, not a fast evaluator",
+  "finite_provider": "explicit small divisor enumeration and already trial-proved large primes",
+  "small_recoveries": 84,
+  "small_residue_queries": 12420,
+  "zero_residues_from_characteristic_cancellation": 34,
+  "maximum_small_cyclic_degree": 4801,
+  "large_supplied_divisor_controls": [
+    {
+      "integer": 1000000016000000063,
+      "smallest_prime_factor": 1000000007,
+      "divisor_count": 4,
+      "query_count": 607,
+      "largest_cyclic_degree": 4463,
+      "retained_prime_count": 40,
+      "crt_modulus_bits": 248,
+      "residue_support_histogram": {
+        "0": 5,
+        "2": 2,
+        "4": 600
+      }
+    },
+    {
+      "integer": 906694351050364540708897,
+      "smallest_prime_factor": 824633708473,
+      "divisor_count": 4,
+      "query_count": 807,
+      "largest_cyclic_degree": 6203,
+      "retained_prime_count": 51,
+      "crt_modulus_bits": 333,
+      "residue_support_histogram": {
+        "0": 5,
+        "2": 2,
+        "4": 800
+      }
+    }
+  ]
+}
