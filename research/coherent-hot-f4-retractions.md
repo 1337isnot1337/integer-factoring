@@ -158,3 +158,7 @@ explicit left inverse. Keeping all lower-height words ensures deletion
 closure. The [probe](../tools/probe_coherent_hot_f4_hyperoval.py) checks
 these identities and computes both full cuts. This is a specified
 candidate, not a claimed favorable profile or completed bound.
+
+## Subsequent completed results
+
+The specified hyperoval candidate now has the [exact bound rho < 0.710005861](f4-hyperoval-crossing-bound.md). The [common-core floor](hot-boundary-natural-pressure-floor.md) identifies the limitation of boundary-only natural-pressure changes. Neither result improves the complete factoring exponent.

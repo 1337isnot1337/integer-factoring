@@ -1147,3 +1147,7 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 ## Fixed rational local frames
 
 - [Polynomial coefficient-transfer cost for fixed rational frames](fixed-rational-frame-transfer.md)
+
+## Boundary-only natural-pressure limit
+
+- [Common-core pressure floor](hot-boundary-natural-pressure-floor.md): every height-25 boundary retraction retaining the 92 lower labels has natural two-place typed pressure at least 17/24, over characteristic two. Interior changes, general gauges, other places and different recombinations are outside this result.

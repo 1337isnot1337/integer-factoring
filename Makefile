@@ -609,7 +609,7 @@ verify-post-half: verify-pr29-extended
 verify-arithmetic-sieve:
 	python3 tools/check_arithmetic_sieve_certificate.py
 
-verify-frontier: verify-bell verify-class-square-conic verify-divisor-moments verify-sparse-divisor-residues verify-odd-character-residues verify-pr31-frontier verify-f4-hyperoval
+verify-frontier: verify-bell verify-class-square-conic verify-divisor-moments verify-sparse-divisor-residues verify-odd-character-residues verify-pr31-frontier verify-f4-hyperoval verify-hot-boundary-floor
 	python3 tools/check_direct_sublinear_counts.py
 	python3 tools/check_rational_simultaneous_transfer.py
 	python3 tools/check_minimum_cut_rank_budget.py
@@ -2091,3 +2091,7 @@ verify-prime-cofactor-fresh-176:
 .PHONY: verify-fixed-rational-frames
 verify-fixed-rational-frames:
 	python3 tools/check_fixed_rational_frame_transfer.py --output /tmp/integer-factoring-fixed-rational-frame-transfer.json
+
+.PHONY: verify-hot-boundary-floor
+verify-hot-boundary-floor:
+	python3 tools/check_hot_boundary_core_barrier.py
