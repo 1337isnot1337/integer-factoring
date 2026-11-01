@@ -501,6 +501,12 @@ within the allowed `2^O(lambda)` construction budget. Its complete
 six-site coefficient span has dimension 33; favorable two-cut ranks
 remain open. Run `make verify-quantum-braid` and the optional complete
 `make verify-quantum-braid-profiles`.
+The [exact path quotient and phase descent](research/quantum-braid-path-quotient.md)
+replace the ambient order-five braid calculation by a bounded-path
+calculation over F4. A period-five weighting gives a strict crossing
+of degree at most `n^2`, omits one residue class of coefficients and
+preserves both ranks of every retained piece. A favorable uniform rank
+bound remains open. Run `make verify-braid-path`.
 
 The [exact nonlinear charge theorem](research/nonlinear-symbol-charge-lattices.md)
 characterizes every admissible pair of full-symbol potentials for the

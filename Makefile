@@ -255,6 +255,10 @@ verify-quantum-braid:
 verify-quantum-braid-profiles:
 	python3 tools/check_quantum_block_braid_profile.py
 
+.PHONY: verify-braid-path
+verify-braid-path:
+	python3 tools/check_quantum_braid_path.py
+
 .PHONY: verify-downset-crossings verify-regular-code-crossings
 verify-downset-crossings:
 	python3 tools/check_downset_crossing_normal_form.py
