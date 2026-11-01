@@ -2705,3 +2705,9 @@ verify-tensor-affine-clifford:
 .PHONY: check-stencil-overlap
 check-stencil-overlap:
 	python3 tools/check_circuit_box_stencil_overlap.py
+
+.PHONY: check-direct-unit-presentation check-direct-unit-search
+check-direct-unit-presentation:
+	python3 tools/check_direct_unit_presentation.py --replay evidence/direct-unit-presentation.json
+check-direct-unit-search:
+	python3 tools/check_direct_unit_oriented_power_search.py --replay evidence/direct-unit-oriented-power-search.json.xz
