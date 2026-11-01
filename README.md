@@ -53,6 +53,8 @@ global state reduction remains open.
 The [Cauchy content-slope reduction](research/pole-cauchy-content.md) gives
 a second global target using two implicit determinant contents, with cheap
 padding and explicit Vandermonde normalization.
+An exact trace involving the inverse and entrywise square gives the count directly;
+efficient evaluation of that normalized scalar is unproved.
 The [research index](research/INDEX.md) links proofs, exact evidence, and replay commands.
 
 The result table distinguishes verified machine bounds from conditional constructions and finite experiments. A merged PR or a passing finite test does not imply independent mathematical review.
@@ -1143,7 +1145,10 @@ determinant `|Delta|`. Its exact cancellation bound gives direct gcd splitting
 certificates and rewrites prescribed-square search as a smooth denominator
 problem. Finding that denominator remains open. Run
 `make verify-class-square-conic` for independent conic-point and large-certificate
-controls; the factoring score remains `1/2`.
+controls. Three explicit rational points also give a polynomial algorithm for
+solving every modular square-norm instance without a prime factorization of the modulus.
+An exact negative integer example is soluble at every modulus, separating
+this local information from the required global search. The score remains `1/2`.
 
 The [Bell-diagonal seed construction](research/bell-diagonal-crossings.md)
 gives exact two-cut transforms and excludes its complete symmetric

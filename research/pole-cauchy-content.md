@@ -109,11 +109,45 @@ except `E_*` is therefore effective in polynomial bit cost for the
 padded domains. The reference computes `S` for length `2^200+12` as
 a 399-bit exponent, without constructing its Vandermonde product.
 
-## 5. The exact remaining computational target
+## 5. A normalized trace from two Cauchy powers
+
+There is a direct scalar target that avoids the unknown constant `E_*`.
+Use the indeterminate `t` and write `M(t)_(ij)=t*w/(N+t*w-a_i*b_j)`.
+Let `M circle M` denote the entrywise square, while the inverse and
+matrix multiplication below are ordinary matrix operations. Then
+
+```math
+t\,\partial_t M=M-M\mathbin{\circ}M,\qquad
+M(2t)=\frac{2M(t)}{1+M(t)}\quad\text{entrywise}.       \tag{6}
+```
+
+Jacobi's determinant identity gives
+`t*(partial_t det M)/(det M)=m-tr(M^(-1)*(M circle M))`.
+Taking the same logarithmic derivative directly in (3) therefore proves
+the exact identity
+
+```math
+\operatorname{tr}\bigl(M(t)^{-1}(M(t)\mathbin{\circ}M(t))\bigr)
+=\sum_{i,j}M(t)_{ij}-\binom m2\frac{t w}{N+t w}.      \tag{7}
+```
+
+For `t=2^k`, with `k>=p+h`, the right side is integral and equals `D`
+modulo `2^p`. Thus the required normalized scalar trace is integral,
+even though the inverse matrix can be nonintegral. Computing a matrix
+inverse modulo two would be invalid when `D<m`.
+
+Equations (6)--(7) connect the pole filter directly to the first two
+Cauchy Hadamard powers. They require only a short parameter update to
+describe the next matrix; evaluating the global scalar remains open.
+One can target this trace or the determinant slope directly, without
+separately computing the potentially larger background contents.
+
+## 6. The exact remaining computational target
 
 Given odd `N`, the two padded interval domains, and `k=O(n)`, compute
-`E_k,E_(k+1)` from the implicit kernel (1), including normalization,
-parameter construction, and bit cost. Each content has `O(n)` output
+the slope `E_(k+1)-E_k`, or the normalized scalar in (7) to the precision
+needed to recover `D`. Include normalization, parameter construction,
+and bit cost. Computing `E_k,E_(k+1)` separately is sufficient. Each content has `O(n)` output
 bits: it is nonnegative and at most `k*m+O(n*m^2)` by (3).
 An all-input query algorithm with cost `2^(O(n/(log n)^beta))` for a fixed
 `beta>1/2` would transfer through the existing polynomial number of
@@ -128,11 +162,16 @@ Extending or replacing the normalization in this regime is the concrete
 cross-lane question in
 [Discussion #53](https://github.com/1337isnot1337/integer-factoring/discussions/53).
 
+## 7. Exact finite controls
+
 Run `make verify-interval-pole-trace`. The
 [dense checker](../tools/check_pole_cauchy_slope.py) performs exact
 Gaussian elimination in `Q(w)`, compares the whole determinant with
 (3), and checks the slope against literal factor pairs after padding.
-It independently checks the one- and two-interval Vandermonde contents
-by literal differences. The
+It also solves for the inverse/Hadamard-square matrix over `Q(w)`,
+compares the exact scalar trace in (7), and checks the entrywise flow
+in (6). Explicit two-pair, square, empty, and padded unequal cases are
+included. It independently checks the one- and two-interval Vandermonde
+contents by literal differences. The
 [receipt](../evidence/pole-cauchy-slope.json) records finite controls;
 these support the ordinary proof and do not establish a fast evaluator.

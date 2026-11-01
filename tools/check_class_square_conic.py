@@ -8,7 +8,7 @@ import json
 from binary_quadratic_forms import ambiguous_factor, compose_forms, reduced_forms
 from bounded_smooth_norm import smooth_factors
 from class_square_conic import (
-    content_factor, cross, evaluate, parameters_from_point, parametrized_point,
+    content_factor, cross, evaluate, modular_unit_point, parameters_from_point, parametrized_point,
     representation_from_denominator, square_parametrization,
 )
 from quadratic_form_arithmetic import power_primitive
@@ -152,10 +152,42 @@ def check_large_and_unreduced():
                 "denominator": denominator, "smooth_bound_rejected": 1000}}
 
 
+def check_modular_points():
+    cases = 0
+    partition_sizes = set()
+    for absolute in range(3, 257):
+        if (-absolute) % 4 not in (0, 1):
+            continue
+        for root in reduced_forms(-absolute):
+            data = square_parametrization(root)
+            for modulus in (2, 8, 9, 16, 25, 72, 1001, (1 << 127)*3**45*5**19):
+                result = modular_unit_point(data, modulus)
+                x, y = result["vector"]
+                assert 0 <= x < modulus and 0 <= y < modulus
+                assert (evaluate(data["target"], x, y)-1) % modulus == 0
+                partition_sizes.add(sum(part > 1 for part in result["coprime_parts"]))
+                cases += 1
+    # Q is a nonprincipal square of a class of order three. It represents
+    # one over every Z/mZ, while its minimum nonzero integer norm is two.
+    data = square_parametrization((2, -1, 3))
+    assert data["target"] == (2, 1, 3)
+    minimum = min(evaluate(data["target"], x, y) for x in range(-10, 11)
+                  for y in range(-10, 11) if x or y)
+    assert minimum == 2
+    examples = [modular_unit_point(data, modulus) for modulus in
+                (2, 9, 18, 2**81*3**67*23**11)]
+    return {"uniform_construction_cases": cases,
+            "nontrivial_partition_sizes_observed": sorted(partition_sizes),
+            "every_modulus_but_no_integer_unit_point": {
+                "root": data["root"], "target": data["target"],
+                "integer_minimum": minimum, "examples": examples}}
+
+
 def main():
     print(json.dumps({"scope": "Exact conic transport and supplied-point extraction; no search bound",
                       "small_forms": check_small_forms(), "splitting": check_splitting(),
-                      "large_and_unreduced": check_large_and_unreduced()}, indent=2))
+                      "large_and_unreduced": check_large_and_unreduced(),
+                      "modular_unit_points": check_modular_points()}, indent=2))
 
 
 if __name__ == "__main__":

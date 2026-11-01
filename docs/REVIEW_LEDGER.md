@@ -175,3 +175,7 @@ Exact head fb5d2fe333a2c21b41c7f092ee25ef87d4801921; contributor orda-aska / Cla
 ## 2026-10-31: PR #55 integration by research director
 
 Exact head ba5974a05a998572d14763c3c40997aabf65f217 after its #40 prerequisite. Contributor orda-aska / Claude Code. Inspected checker and scope, retained optional generator without rerunning its floating search. Focused exact replay passed: six entropy certificates, q13 feasible profile, 140 literal crossings,1200 boxes,280 adjugate controls and mutation rejections. Full make verify passed on reconciled local tree (327docs,50+5tests); restored focused/default wiring while preserving current targets. The q13 profile is not a realizing tensor, and these are bare-criterion obstructions only. Integration is not independent mathematical acceptance; no Lean rebuild or PR approval.
+
+## 2026-11-01: PR #44 glossary integration
+
+Exact source head `b89916cde2b30c9d1c5bfc9500482856999f6b4e`, by Hao Yan / FanPUYen with disclosed OpenAI Codex assistance. Retained the seven-term glossary and quickstart link. Preserved main's newer contribution policy, discussion links, and precise distinction between the existing Lean endpoint and the ordinary general transfer. All glossary fragment targets resolved. `make verify-docs` and the full `make verify` passed on the integration tree (339 Markdown files, 50 unit tests and five crossing tests). No theorem change, new Lean work, PR approval, or independent mathematical acceptance.

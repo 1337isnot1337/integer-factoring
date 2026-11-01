@@ -213,7 +213,64 @@ gives explicit failures of monotone denominator descent. That audit and
 the general-discriminant matrix and adjugate proof here are complementary
 ordinary results; neither supplies smooth-denominator search.
 
-## 5. Reproduction and evidence
+## 5. Three points solve every modular instance
+
+There is also a uniform polynomial algorithm for **unrestricted modular
+solubility** of these targets. It does not need a prime factorization of the
+modulus or of Delta. This gives a constructive separation between local
+solubility and the variable-cap integer decision contract.
+
+Evaluate the parametrization at (1,0), (0,1), and (1,1), and normalize
+each resulting projective point. Call their positive last coordinates
+d_0,d_1,d_2. They divide a,c,a+b+c respectively. Consequently
+
+```math
+\gcd(d_0,d_1,d_2)\mid\gcd(a,c,a+b+c)=1.                 \tag{8}
+```
+
+For any modulus q>=2, partition its prime-power factors into at most
+three coprime parts q_i so that gcd(q_i,d_i)=1. This partition is
+computable without a prime factorization of q. Starting with a remaining divisor r
+of q, its full part supported on primes dividing d_i is
+
+```math
+\gcd(r,d_i^{\operatorname{bits}(r)}).
+```
+
+The exponent is at least every prime valuation of r. Thus the complementary
+part of r is coprime both to d_i and to the retained part. Repeating for
+the three denominators leaves one by (8). Modular powering suffices;
+the large displayed power is never constructed.
+
+On each q_i, divide the corresponding point coordinates by d_i using a
+modular inverse. This gives Q(x_i,y_i)=1 modulo q_i. Combine the two
+coordinates by CRT. All arithmetic is polynomial in bits(F)+bits(q).
+Multiplying both coordinates by M gives a solution of Q(x,y)=M^2 modulo
+q. If M is factored with binary exponents, computing M modulo q uses
+only the supplied factor data and modular powering.
+
+This applies even when the exact integer answer is negative. For example,
+
+```math
+F=(2,-1,3),\qquad Q=\operatorname{red}(F^2)=(2,1,3).
+```
+
+The construction supplies Q(x,y)=1 modulo every integer q>=2. There is
+no integer unit representation: when y=0 its nonzero values are at least
+two, and when y!=0,
+
+```math
+Q(x,y)=2(x+y/4)^2+23y^2/8>2.
+```
+
+This is a valid square-subgroup target with all exponent caps zero in
+the existing decision contract. Every local answer is YES while the
+exact answer is NO. Therefore unrestricted congruence solubility, even
+at all moduli, cannot implement that oracle. An approach that also finds
+short compatible integer lifts or enforces the divisor bound in (6)
+would supply additional global information; that problem remains open.
+
+## 6. Reproduction and evidence
 
 Run `make verify-class-square-conic`, or
 
@@ -229,7 +286,9 @@ inverse maps on independently enumerated conic points, and compares unit
 point factors with the independent ambiguous boundary formulas. It also
 replays the two-part tops in the existing 60/80-bit certificates, includes
 large unreduced roots, and records a known-root point whose denominator
-is not 1000-smooth. Exact counts are in the
+is not 1000-smooth. The modular construction is checked on small order
+classes and moduli with large prime powers, including every partition
+size and the negative integer-unit example. Exact counts are in the
 [receipt](../evidence/class-square-conic.json).
 
 The ordinary proof and finite checks have not received independent
