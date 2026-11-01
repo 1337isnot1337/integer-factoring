@@ -1557,3 +1557,8 @@ verify-pole-arithmetic:
 	python3 tools/check_pole_cauchy_conditioning.py
 	python3 tools/check_pole_cauchy_polynomial_solve.py
 	python3 tools/check_modular_interval_jets.py
+
+.PHONY: verify-cofactor-collisions
+verify-cofactor-collisions:
+	python3 tools/check_cofactor_collision_relations.py
+	python3 tools/check_cofactor_collision_quota.py

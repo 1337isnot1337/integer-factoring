@@ -1,0 +1,63 @@
+{
+  "claim": "A finite per-generator admissible quota gives a full-rank cofactor relation family",
+  "composite_key_fixture": {
+    "integer": 959,
+    "records": [
+      {
+        "form": [
+          15,
+          1,
+          16
+        ],
+        "key": [
+          15,
+          1
+        ],
+        "orientation": 1
+      },
+      {
+        "form": [
+          15,
+          -1,
+          16
+        ],
+        "key": [
+          15,
+          1
+        ],
+        "orientation": -1
+      },
+      {
+        "form": [
+          15,
+          11,
+          18
+        ],
+        "key": [
+          15,
+          11
+        ],
+        "orientation": 1
+      }
+    ]
+  },
+  "exact_weighted_dominance_controls": 1000,
+  "finite_abelian_saturation_image_controls": 300,
+  "literal_key_count_controls": 200,
+  "scope": "The time to accumulate the per-generator admissible quota remains unproved.",
+  "strict_threshold_control": {
+    "cancelled_row": {
+      "2": 0
+    },
+    "first_exponent": 5,
+    "gap": 8,
+    "height": 16,
+    "left_word": {
+      "2": -4
+    },
+    "prime": 2,
+    "right_word": {
+      "2": 4
+    }
+  }
+}
