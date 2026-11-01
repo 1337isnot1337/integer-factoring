@@ -96,19 +96,23 @@ L=(b+1)S(S-1)/2+S(b+2)+3                               \tag{5}
 ```
 
 prime moduli. Maximal support identifies the primes where all signed
-exponents are separated. Coefficientwise CRT then recovers
+exponents are separated. Pair the nonzero positions a,-a and square one
+representative from each pair. Distinct pairs have distinct squares modulo
+q; the squared positions are exactly the residues of the positive divisor
+squares. Their monic product reduces
 
 ```math
-C_N^{\pm}(X)=\prod_{d\mid N}(X-d)(X+d)
-            =\prod_{d\mid N}(X^2-d^2).                 \tag{6}
+P_N(Y)=\prod_{d\mid N}(Y-d^2).                         \tag{6}
 ```
 
-Its coefficient height is at most (N+1)^S, and the product of retained
-primes exceeds twice that bound. The polynomial is even. Remove its
-known factor X-1 and isolate the least root in [2,N]. Negative roots
-are outside the interval; the remaining least positive root is the
-smallest prime factor. This covers prime powers, squares and arbitrary
-nonsquarefree inputs without separate promises.
+Its coefficient height is at most (N^2+1)^D<=2^(D(2b+1)), and the product
+of retained primes exceeds twice that bound. Signed coefficientwise CRT
+recovers the same degree-tau(N) polynomial as the moment interface.
+Remove Y-1, isolate the least root in [2,N^2], and take its integer square
+root to obtain the smallest prime factor. This covers prime powers,
+squares and arbitrary nonsquarefree inputs without separate promises.
+The paired-residue simplification was suggested in the
+[coordination discussion](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19324705).
 
 Suppose a uniform deterministic algorithm supplies each (2), for the
 characters specified above, in F(b)poly(b,q) bit operations, with
@@ -190,7 +194,7 @@ independently trial-proved prime factors as the preceding controls.
 The signed option in the
 [sparse recovery core](../tools/sparse_divisor_residues.py) separately
 recovers the full polynomial (6) from supplied cyclic residues, comparing
-it with an independent product over every positive and negative divisor.
+it with an independent product over every squared divisor.
 This includes completely cancelled images and one 60-bit recovery.
 Exact counts and source scope are in the
 [receipt](../evidence/odd-character-residues.json). These are component

@@ -71,12 +71,11 @@ def check_signed_recovery():
         result = recover_from_global_residues(integer, 2, len(values), oracle, signed=True)
         expected = [1]
         for divisor in values:
-            for root in (divisor, -divisor):
-                product = [0]*(len(expected)+1)
-                for i, value in enumerate(expected):
-                    product[i] -= root*value
-                    product[i+1] += value
-                expected = product
+            product = [0]*(len(expected)+1)
+            for i, value in enumerate(expected):
+                product[i] -= divisor*divisor*value
+                product[i+1] += value
+            expected = product
         assert result["divisor_polynomial"] == expected
         assert result["divisor_count"] == len(values)
         assert result["smallest_prime_factor"] == values[1]

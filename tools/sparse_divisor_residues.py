@@ -4,6 +4,8 @@ This specializes Garg--Schost sparse interpolation.  The fast residue
 evaluator is an explicit missing input, not implemented by this module.
 """
 
+from math import isqrt
+
 from check_fixed_characteristic_transfer import first_primes
 from divisor_moment_recovery import smallest_integer_root
 
@@ -24,7 +26,8 @@ def recover_from_global_residues(integer, characteristic, divisor_bound, oracle,
 
     The callback returns the dense q-coefficient representative.  Its exact
     evaluation cost must be supplied separately.  D>=tau(N) is a promise.
-    With signed=True the target is sum(Z^d-Z^-d), with 2*tau(N) terms.
+    With signed=True the target is sum(Z^d-Z^-d), with 2*tau(N) terms;
+    paired opposite positions recover the polynomial with roots d^2.
     """
     if integer < 2 or characteristic < 2 or divisor_bound < 2:
         raise ValueError("N>=2, a fixed prime characteristic and D>=tau(N) are required")
@@ -48,11 +51,16 @@ def recover_from_global_residues(integer, characteristic, divisor_bound, oracle,
             raise ValueError("the residue support exceeds the supplied divisor bound")
         if size < rank or size == 0:
             continue
+        nodes = support
+        if signed:
+            nodes = sorted({value*value % prime for value in support})
+            if size % 2 or len(nodes)*2 != size:
+                raise ValueError("signed residues must have opposite position pairs")
         if size > rank:
-            rank, modulus, coefficients, retained = size, 1, [0]*size, 0
+            rank, modulus, coefficients, retained = size, 1, [0]*len(nodes), 0
         if modulus > reconstruction_threshold:
             continue
-        polynomial = support_polynomial(support, prime)
+        polynomial = support_polynomial(nodes, prime)
         inverse = pow(modulus, -1, prime)
         coefficients = [left+modulus*((right-left)*inverse % prime)
                         for left, right in zip(coefficients, polynomial[:-1])]
@@ -61,15 +69,17 @@ def recover_from_global_residues(integer, characteristic, divisor_bound, oracle,
     if rank < 2 or modulus <= reconstruction_threshold:
         raise ValueError("insufficient collision-free residue information")
     polynomial = [value if 2*value <= modulus else value-modulus for value in coefficients]+[1]
-    if signed and (rank % 2 or any(polynomial[1::2])):
-        raise ValueError("the signed support polynomial must have paired opposite roots")
-    quotient = [0]*rank
+    degree = len(polynomial)-1
+    quotient = [0]*degree
     quotient[-1] = 1
-    for index in range(rank-2, -1, -1):
+    for index in range(degree-2, -1, -1):
         quotient[index] = polynomial[index+1]+quotient[index+1]
     if polynomial[0]+quotient[0]:
         raise ValueError("the recovered divisor polynomial omits the root one")
-    factor = smallest_integer_root(quotient, integer)
+    node = smallest_integer_root(quotient, integer*integer if signed else integer)
+    factor = isqrt(node) if signed else node
+    if signed and factor*factor != node:
+        raise ValueError("the recovered paired node is not a square")
     if integer % factor:
         raise ValueError("the recovered least node is not a divisor")
     return {"smallest_prime_factor": factor, "divisor_count": rank//2 if signed else rank,
