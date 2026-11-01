@@ -2172,6 +2172,12 @@ the best retained support value is about `1.000419`, above the required
 one. This numerical result leaves unsearched parameters open and supplies
 no new factoring exponent.
 
+A [complete F4 interior-frame screen](research/moving-boundary-crossings.md#a-complete-f4-family-that-changes-one-protected-letter)
+changes one of the five protected letters in 1,280 declared parameter cases.
+All complete profiles are retained. A further 860,160 asymmetric grid points
+and twenty bounded refinements give no support value below one. The full
+binary frame run and more general gauge choices retain their separate scope.
+
 ## Sparse oriented power prefixes
 
 The [sparse residual selector](research/sparse-oriented-power-prefixes.md)
