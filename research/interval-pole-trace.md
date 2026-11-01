@@ -149,6 +149,16 @@ resolvent level, a retained child contributes
 `(1/2)*C_child(Z/2)`; its residue at zero is unchanged. The scaled filter
 has the same identity with `k` replaced by `k-1`.
 
+The invariant is `A'D'-B'C'=AD-BC=-N`. A
+[Discussion #53 contribution](https://github.com/1337isnot1337/integer-factoring/discussions/53#discussioncomment-19324116)
+also gives an explicit reason to retain the reciprocal pair and interval
+selectors when batching these states. At `N=21`, the two children
+`(A,B,C,D)=(4,1,1,-5)` and `(4,3,3,-3)`, both on `u,v in {0,1}`,
+have respectively zero and two zeros, despite the same determinant.
+The checker reproduces that contributed control and the invariant.
+This rules out identifying those two states by determinant alone; it
+does not exclude a weighted batch computation preserving their data.
+
 For the weighted projection (1), retain the affine map from the current
 `u` to the original `a`. Under a section it changes by affine composition;
 its coefficients have `O(n)` bits. The supplied fast reference implements

@@ -8,6 +8,15 @@
   "global_count_controls": 684,
   "literal_child_pair_controls": 9216,
   "boundary_translation_controls": 256,
+  "section_determinant_invariant_controls": 256,
+  "same_determinant_state_control": {
+    "number": 21,
+    "child_zero_counts": [
+      0,
+      2
+    ],
+    "source_discussion_comment": 19324116
+  },
   "random_max_tree_nodes": 23,
   "random_max_coefficient_bits": 10,
   "huge_artificial_factor_controls": [
