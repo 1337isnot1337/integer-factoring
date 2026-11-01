@@ -1,0 +1,707 @@
+{
+  "annihilator": 63391378092879872,
+  "annihilator_bits": 56,
+  "annihilator_supplied": false,
+  "cap_fixed_before_targets": 4,
+  "class_number_supplied": false,
+  "complete_generation_claimed": false,
+  "extraction": {
+    "annihilator": 63391378092879872,
+    "factor": 32452843,
+    "factor_data": {
+      "coprime_factors": [
+        32452843,
+        49979687
+      ],
+      "form": [
+        41216265,
+        17526844,
+        41216265
+      ],
+      "proper_factor": 32452843,
+      "shape": "equal_outer_coefficients"
+    },
+    "odd_annihilator_part": 15476410667207,
+    "odd_n": 1621982935400141,
+    "statistics": {
+      "dependent_top_cancellations": 0,
+      "generator_count": 9,
+      "group_inversions": 0,
+      "group_multiplications": 300,
+      "maximum_cyclic_order_log": 2,
+      "maximum_retained_basis_rank": 1,
+      "order_bit_bound": 53,
+      "order_swaps": 0,
+      "processed_generators": 2,
+      "top_checks": 2
+    },
+    "status": "factored",
+    "trace": [
+      {
+        "candidate": [
+          2,
+          2,
+          810991467700071
+        ],
+        "candidate_order_log": 1,
+        "generator_index": 0,
+        "proper_factor": null,
+        "top": [
+          2,
+          2,
+          810991467700071
+        ]
+      },
+      {
+        "candidate": [
+          35241693,
+          8602466,
+          46549510
+        ],
+        "candidate_order_log": 2,
+        "generator_index": 1,
+        "proper_factor": 32452843,
+        "top": [
+          41216265,
+          17526844,
+          41216265
+        ]
+      }
+    ]
+  },
+  "factor_base_primes": [
+    3,
+    5,
+    7,
+    11,
+    23,
+    31,
+    37,
+    41,
+    43
+  ],
+  "factorization": [
+    32452843,
+    49979687
+  ],
+  "half_diagonal": 37,
+  "index_statistics": {
+    "box_size": 387420489,
+    "index_group_multiplications": 39362,
+    "multiplication_count_scope": "Index/lookup loops; polynomial binary-power setup and coordinate construction are excluded",
+    "rectangles": [
+      {
+        "left_classes": 19683,
+        "left_domain": 19683,
+        "offset": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "right_classes": 19683,
+        "right_domain": 19683
+      }
+    ]
+  },
+  "input_bits": 51,
+  "missing_relation_indices": [],
+  "odd_n": 1621982935400141,
+  "relation_matrix": [
+    [
+      76,
+      6,
+      -2,
+      -6,
+      -8,
+      6,
+      6,
+      8,
+      -2
+    ],
+    [
+      0,
+      68,
+      6,
+      -8,
+      -4,
+      -2,
+      6,
+      -6,
+      0
+    ],
+    [
+      8,
+      -4,
+      74,
+      2,
+      0,
+      0,
+      -8,
+      -8,
+      -6
+    ],
+    [
+      4,
+      4,
+      0,
+      80,
+      0,
+      -4,
+      8,
+      8,
+      -8
+    ],
+    [
+      6,
+      2,
+      2,
+      8,
+      74,
+      -8,
+      8,
+      -2,
+      0
+    ],
+    [
+      2,
+      6,
+      -2,
+      -2,
+      6,
+      74,
+      4,
+      -8,
+      4
+    ],
+    [
+      8,
+      6,
+      -4,
+      -4,
+      2,
+      4,
+      70,
+      -4,
+      8
+    ],
+    [
+      0,
+      -6,
+      0,
+      -8,
+      -6,
+      -4,
+      -8,
+      76,
+      -2
+    ],
+    [
+      -2,
+      -8,
+      -4,
+      -4,
+      -6,
+      2,
+      0,
+      4,
+      72
+    ]
+  ],
+  "roots": {
+    "3": 2,
+    "5": 4,
+    "7": 2,
+    "11": 8,
+    "23": 18,
+    "31": 22,
+    "37": 36,
+    "41": 16,
+    "43": 8
+  },
+  "status": "factored",
+  "targets": [
+    {
+      "direct_factor_from_root_difference": 32452843,
+      "half_word": [
+        -1,
+        -3,
+        1,
+        3,
+        4,
+        -3,
+        -3,
+        -4,
+        1
+      ],
+      "index": 0,
+      "query_group_multiplications": 275,
+      "rectangle_index": 0,
+      "relation_row": [
+        76,
+        6,
+        -2,
+        -6,
+        -8,
+        6,
+        6,
+        8,
+        -2
+      ],
+      "representation": {
+        "content": 46450389318795,
+        "fixed_norm": 69343283711002207272112722823845962177292088921730208661353242888798446690876250390625,
+        "primitive_norm": 32138506202956385888380786166917995126414108210982992515625,
+        "primitive_vector": [
+          18883490898694614736914745,
+          24688287790281527595318043
+        ],
+        "root_norm": 8327261477280643627916786860970311901000625,
+        "vector": [
+          877145503942286927784172270140541132275,
+          1146780579473030082419557265818142518185
+        ]
+      },
+      "represented": true,
+      "root_difference": [
+        41216265,
+        17526844,
+        41216265
+      ],
+      "target": [
+        36240077,
+        -21444566,
+        47928990
+      ]
+    },
+    {
+      "direct_factor_from_root_difference": 32452843,
+      "half_word": [
+        0,
+        3,
+        -3,
+        4,
+        2,
+        1,
+        -3,
+        3,
+        0
+      ],
+      "index": 1,
+      "query_group_multiplications": 473,
+      "rectangle_index": 0,
+      "relation_row": [
+        0,
+        68,
+        6,
+        -8,
+        -4,
+        -2,
+        6,
+        -6,
+        0
+      ],
+      "representation": {
+        "content": 231714504472487484105,
+        "fixed_norm": 69343283711002207272112722823845962177292088921730208661353242888798446690876250390625,
+        "primitive_norm": 1291510566858226831032221073451336854793140625,
+        "primitive_vector": [
+          -5052150812807462671,
+          1338944346393359441
+        ],
+        "root_norm": 8327261477280643627916786860970311901000625,
+        "vector": [
+          -1170656622109956087171709033189493344455,
+          310252825740775917349044296957039185305
+        ]
+      },
+      "represented": true,
+      "root_difference": [
+        41216265,
+        17526844,
+        41216265
+      ],
+      "target": [
+        39651117,
+        -29058290,
+        46230198
+      ]
+    },
+    {
+      "direct_factor_from_root_difference": null,
+      "half_word": [
+        -4,
+        2,
+        0,
+        -1,
+        0,
+        0,
+        4,
+        4,
+        3
+      ],
+      "index": 2,
+      "query_group_multiplications": 649,
+      "rectangle_index": 0,
+      "relation_row": [
+        8,
+        -4,
+        74,
+        2,
+        0,
+        0,
+        -8,
+        -8,
+        -6
+      ],
+      "representation": {
+        "content": 887844276171709142825,
+        "fixed_norm": 69343283711002207272112722823845962177292088921730208661353242888798446690876250390625,
+        "primitive_norm": 87969232958882940416144788930069201171580625,
+        "primitive_vector": [
+          724496330084186113,
+          -1088888674031547371
+        ],
+        "root_norm": 8327261477280643627916786860970311901000625,
+        "vector": [
+          643239919772653882364353045550998589225,
+          -966763576627111317615006232082792263075
+        ]
+      },
+      "represented": true,
+      "root_difference": [
+        2,
+        2,
+        810991467700071
+      ],
+      "target": [
+        29891621,
+        -9039818,
+        54945582
+      ]
+    },
+    {
+      "direct_factor_from_root_difference": 32452843,
+      "half_word": [
+        -2,
+        -2,
+        0,
+        -3,
+        0,
+        2,
+        -4,
+        -4,
+        4
+      ],
+      "index": 3,
+      "query_group_multiplications": 827,
+      "rectangle_index": 0,
+      "relation_row": [
+        4,
+        4,
+        0,
+        80,
+        0,
+        -4,
+        8,
+        8,
+        -8
+      ],
+      "representation": {
+        "content": 1598093168762475,
+        "fixed_norm": 69343283711002207272112722823845962177292088921730208661353242888798446690876250390625,
+        "primitive_norm": 27151899247425301593801354320411894292169564985058875625,
+        "primitive_vector": [
+          802108942266615090461704,
+          275561488517122488246711
+        ],
+        "root_norm": 8327261477280643627916786860970311901000625,
+        "vector": [
+          1281844821239572026307288469138059757400,
+          440372932373232645443322116796358969725
+        ]
+      },
+      "represented": true,
+      "root_difference": [
+        41216265,
+        17526844,
+        41216265
+      ],
+      "target": [
+        38135397,
+        -2792072,
+        42583321
+      ]
+    },
+    {
+      "direct_factor_from_root_difference": null,
+      "half_word": [
+        -3,
+        -1,
+        -1,
+        -4,
+        0,
+        4,
+        -4,
+        1,
+        0
+      ],
+      "index": 4,
+      "query_group_multiplications": 1099,
+      "rectangle_index": 0,
+      "relation_row": [
+        6,
+        2,
+        2,
+        8,
+        74,
+        -8,
+        8,
+        -2,
+        0
+      ],
+      "representation": {
+        "content": 8481294121817342933625,
+        "fixed_norm": 69343283711002207272112722823845962177292088921730208661353242888798446690876250390625,
+        "primitive_norm": 964006927752767275167142034041453371071025,
+        "primitive_vector": [
+          217657373582353723,
+          -26104473716966738
+        ],
+        "root_norm": 8327261477280643627916786860970311901000625,
+        "vector": [
+          1846016203134218056471276050489260635875,
+          -221399719488845320080509599573466765250
+        ]
+      },
+      "represented": true,
+      "root_difference": [
+        2,
+        2,
+        810991467700071
+      ],
+      "target": [
+        19746437,
+        4867048,
+        82440441
+      ]
+    },
+    {
+      "direct_factor_from_root_difference": null,
+      "half_word": [
+        -1,
+        -3,
+        1,
+        1,
+        -3,
+        0,
+        -2,
+        4,
+        -2
+      ],
+      "index": 5,
+      "query_group_multiplications": 964,
+      "rectangle_index": 0,
+      "relation_row": [
+        2,
+        6,
+        -2,
+        -2,
+        6,
+        74,
+        4,
+        -8,
+        4
+      ],
+      "representation": {
+        "content": 3313758957239840920965,
+        "fixed_norm": 69343283711002207272112722823845962177292088921730208661353242888798446690876250390625,
+        "primitive_norm": 6314843242530317742707550080202372782015625,
+        "primitive_vector": [
+          -499573958749124630,
+          -39395276210743011
+        ],
+        "root_norm": 8327261477280643627916786860970311901000625,
+        "vector": [
+          -1655467680608678536928331880646764867950,
+          -130546449416287271654454686185177125615
+        ]
+      },
+      "represented": true,
+      "root_difference": [
+        2,
+        2,
+        810991467700071
+      ],
+      "target": [
+        23115249,
+        21797704,
+        75308205
+      ]
+    },
+    {
+      "direct_factor_from_root_difference": null,
+      "half_word": [
+        -4,
+        -3,
+        2,
+        2,
+        -1,
+        -2,
+        2,
+        2,
+        -4
+      ],
+      "index": 6,
+      "query_group_multiplications": 200,
+      "rectangle_index": 0,
+      "relation_row": [
+        8,
+        6,
+        -4,
+        -4,
+        2,
+        4,
+        70,
+        -4,
+        8
+      ],
+      "representation": {
+        "content": 797681485413201235,
+        "fixed_norm": 69343283711002207272112722823845962177292088921730208661353242888798446690876250390625,
+        "primitive_norm": 108979642680948576511200786663650530580986760765625,
+        "primitive_vector": [
+          1636838865170553673686,
+          -698103890666707580687
+        ],
+        "root_norm": 8327261477280643627916786860970311901000625,
+        "vector": [
+          1305676057351305873282525167310842202210,
+          -556864548479754332804952025918730548445
+        ]
+      },
+      "represented": true,
+      "root_difference": [
+        2,
+        2,
+        810991467700071
+      ],
+      "target": [
+        12127734,
+        -9158302,
+        135470613
+      ]
+    },
+    {
+      "direct_factor_from_root_difference": 32452843,
+      "half_word": [
+        0,
+        3,
+        0,
+        4,
+        3,
+        2,
+        4,
+        -1,
+        1
+      ],
+      "index": 7,
+      "query_group_multiplications": 114,
+      "rectangle_index": 0,
+      "relation_row": [
+        0,
+        -6,
+        0,
+        -8,
+        -6,
+        -4,
+        -8,
+        76,
+        -2
+      ],
+      "representation": {
+        "content": 117775605004888341105,
+        "fixed_norm": 69343283711002207272112722823845962177292088921730208661353242888798446690876250390625,
+        "primitive_norm": 4999121773589343407029817235029416622686890625,
+        "primitive_vector": [
+          21708069949961660977,
+          -2627514279735883889
+        ],
+        "root_norm": 8327261477280643627916786860970311901000625,
+        "vector": [
+          2556681071845170799017678965527943559585,
+          -309457083954877151294335234758105957345
+        ]
+      },
+      "represented": true,
+      "root_difference": [
+        41216265,
+        17526844,
+        41216265
+      ],
+      "target": [
+        8123709,
+        3688930,
+        200079174
+      ]
+    },
+    {
+      "direct_factor_from_root_difference": null,
+      "half_word": [
+        1,
+        4,
+        2,
+        2,
+        3,
+        -1,
+        0,
+        -2,
+        1
+      ],
+      "index": 8,
+      "query_group_multiplications": 27,
+      "rectangle_index": 0,
+      "relation_row": [
+        -2,
+        -8,
+        -4,
+        -4,
+        -6,
+        2,
+        0,
+        4,
+        72
+      ],
+      "representation": {
+        "content": 27475025771993565123264753,
+        "fixed_norm": 69343283711002207272112722823845962177292088921730208661353242888798446690876250390625,
+        "primitive_norm": 91860369211081633935102196362890625,
+        "primitive_vector": [
+          48740480804504,
+          -21754043435515
+        ],
+        "root_norm": 8327261477280643627916786860970311901000625,
+        "vector": [
+          1339145966243105054691094344228426847512,
+          -597692904035842060504579251805027902795
+        ]
+      },
+      "represented": true,
+      "root_difference": [
+        2,
+        2,
+        810991467700071
+      ],
+      "target": [
+        27691190,
+        1559574,
+        58595929
+      ]
+    }
+  ]
+}

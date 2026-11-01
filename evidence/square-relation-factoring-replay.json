@@ -1,0 +1,50 @@
+{
+  "certificates": [
+    {
+      "annihilator_bits": 56,
+      "certificate": "square-relation-factoring-51bit.json",
+      "complete_generation_claimed": false,
+      "direct_root_difference_factors": [
+        32452843,
+        32452843,
+        32452843,
+        32452843
+      ],
+      "dominant_rows_checked": 9,
+      "factorization": [
+        32452843,
+        49979687
+      ],
+      "fixed_norm_bits": 286,
+      "input_bits": 51,
+      "mitm_search_rerun": false,
+      "odd_n": 1621982935400141,
+      "rational_elimination_determinant": 63391378092879872,
+      "returned_factors_checked_prime": true
+    },
+    {
+      "annihilator_bits": 75,
+      "certificate": "square-relation-factoring-60bit.json",
+      "complete_generation_claimed": false,
+      "direct_root_difference_factors": [
+        1000000007,
+        1000000007,
+        1000000007,
+        1000000007,
+        1000000007
+      ],
+      "dominant_rows_checked": 12,
+      "factorization": [
+        1000000007,
+        1000000009
+      ],
+      "fixed_norm_bits": 361,
+      "input_bits": 60,
+      "mitm_search_rerun": false,
+      "odd_n": 1000000016000000063,
+      "rational_elimination_determinant": 22962539960812291571712,
+      "returned_factors_checked_prime": true
+    }
+  ],
+  "scope": "Independent arithmetic replay of finite square-relation factoring certificates"
+}

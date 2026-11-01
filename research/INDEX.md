@@ -43,7 +43,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Interval packet circuits](interval-packet-circuits.md): global modular polynomial circuits with `O(n+p)` nodes and polynomial generation cost; exact artificial-common-factor controls state the remaining elimination obligation.
 - [Normalized interval jets](normalized-interval-jets.md): exact binary content exponents, zero orders, and polynomial-cost unit jets at scaled integer centers; global root search remains open.
 - [Global interval pole trace](interval-pole-trace.md): an exact finite-precision factor-pair projection, closed boundary and bilinear section rules, and a charged enumerative baseline; efficient global state reduction remains open.
-- [Cauchy content slope](pole-cauchy-content.md): two implicit determinant contents recover an arbitrary rectangle's factor count; polynomial-cost padding and Vandermonde normalization leave global content evaluation open.
+- [Cauchy determinant slope](pole-cauchy-content.md): a determinant slope or normalized trace from two Cauchy powers recovers an arbitrary rectangle's factor count; padding and Vandermonde normalization are cheap, while global scalar evaluation remains open.
 - [Arithmetic framework shift](arithmetic-framework.md): primary-source randomness audit and a new generator/relation construction contract, outside the crossing evaluator.
 - [Deterministic torsion extraction](arithmetic-torsion-extraction.md): a black-box two-group basis algorithm from an annihilator, with no saturated relation lattice or random group elements.
 - [Positive relation kernel](positive-relation-kernel.md): a Fourier-positive smooth-pair hitting lemma and diagonally dominant relation construction; efficient arithmetic pair extraction is open.
@@ -419,6 +419,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 ## Binary actual-rank tools and physical codes
 
 - [Coherent bounded-spin crossing](bounded-spin-crossing.md): uniform height-three path encoders over F5, Fibonacci growth, strict endpoint, exact binary widths and a finite-state entry constructor; a post-half actual-rank bound remains open.
+- [Bounded-spin primary rank algebra](bounded-spin-rank-algebra.md): exact six-dimensional cut algebras at length eight, a rank formula over every characteristic-five extension, and a sharp minmax product 2304 certified by 759 common kernels and a separating hyperplane.
 - [Binary site-symmetry actual-rank barrier](binary-site-symmetry-barrier.md): a universal degree-four certificate forces `rho>=3/4` over any fixed field, including all scalar polynomial degrees, coefficient recombinations, and common partitions into sublinearly many position classes.
 - [Full auxiliary coefficient-span optimization](auxiliary-coefficient-span.md): all 2,588 binary functionals in 15 finite cases, strict recombination gains, exact minmax certificates, and rational rank-sum optima certified by shortest-path dual potentials.
 - [Nonlinear downset-code crossings](downset-code-crossings.md): exact global characteristic-two Smith factors and a constant basis normal form for actual coefficient ranks on every downset and every paired-downset encoding, with complete small-domain controls and nonlinear regular-code searches.

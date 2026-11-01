@@ -241,6 +241,14 @@ specified coefficient recombinations. A recoupling or transfer argument
 must bound the two ordinary cut ranks of the same pieces. Path growth,
 category theory, and a low rank at one finite length do not establish it.
 
+An [exact primary-algebra calculation](bounded-spin-rank-algebra.md) now
+settles the full eight-site coefficient span over every extension of
+`F_5`: its minimum maximum rank product is 2304, exceeding `13^3`.
+The double-root sector has genuine nilpotent rank thirteen, but all
+combinations below the threshold lie in a hyperplane missing the crossing.
+This closes that finite block, not the uniform family. An all-length
+primary decomposition or a changed kernel/selected subspace remains open.
+
 ## 6. Independent finite controls
 
 Run `make verify-bounded-spin`. The standard-library checker compares

@@ -53,6 +53,8 @@ global state reduction remains open.
 The [Cauchy content-slope reduction](research/pole-cauchy-content.md) gives
 a second global target using two implicit determinant contents, with cheap
 padding and explicit Vandermonde normalization.
+An exact trace involving the inverse and entrywise square gives the count directly;
+efficient evaluation of that normalized scalar is unproved.
 The [research index](research/INDEX.md) links proofs, exact evidence, and replay commands.
 
 The result table distinguishes verified machine bounds from conditional constructions and finite experiments. A merged PR or a passing finite test does not imply independent mathematical review.
@@ -280,7 +282,12 @@ length, an exact crossing endpoint, and a finite-state entry algorithm.
 It also supports exactly `2^lambda` labels with degree `O(lambda)`.
 A companion integer identity has scale `12^n` and `O(lambda)` coefficient
 bits. Modular rank gains do not automatically lift to rational ranks.
-A uniform favorable rank bound remains open. Run `make verify-bounded-spin`.
+A uniform favorable rank bound remains open. The
+[eight-site rank algebra](research/bounded-spin-rank-algebra.md) gives
+exact ranks over every characteristic-five extension and minmax rank
+product 2304; that finite block cannot improve the rate. Run
+`make verify-bounded-spin` and the optional NumPy target
+`make verify-bounded-spin-algebra`.
 
 The [exact nonlinear charge theorem](research/nonlinear-symbol-charge-lattices.md)
 characterizes every admissible pair of full-symbol potentials for the

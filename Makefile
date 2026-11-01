@@ -143,6 +143,10 @@ verify-joint-determinant:
 verify-bounded-spin:
 	python3 tools/check_bounded_spin_crossing.py
 
+.PHONY: verify-bounded-spin-algebra
+verify-bounded-spin-algebra:
+	python3 tools/check_bounded_spin_rank_algebra.py
+
 .PHONY: verify-downset-crossings verify-regular-code-crossings
 verify-downset-crossings:
 	python3 tools/check_downset_crossing_normal_form.py
