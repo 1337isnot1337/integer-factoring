@@ -1809,6 +1809,8 @@ The [generic F4 frame engine](research/cube-f4-generic-frames.md) computes compl
 
 The [low-order flat-cube filters](research/cube-flat-low-order-floors.md) apply over every field and allow odd physical coefficients. After common coordinate factors are removed, either a face of rank at least two or an average second Smith order at most one third of the remaining degree forces `rho>29/50>1/sqrt(3)`. Exact integer entropy certificates prove both tests. Deterministic even and odd reference constructors retain all 512 endpoint and 768 rank-one face identities. Run `make verify-cube-flat-low-order`.
 
+The [complete flat-cube coefficient engine](research/cube-flat-coefficient-fibers.md) covers all 6,912 degree-six endpoint coordinates with no parity restriction, or 13,824 binary coordinates over F4. Exact generic row frames define complete affine fibers; independent polynomial products and full Smith certificates validate retained assignments. The included bounded search exposes source hashes, complete references, second-order feasibility tests, and replayable improvements. These tools and fixed-frame rigidity results leave the factoring score unchanged.
+
 ## Contribution and attribution
 
 Start with the [contributor quickstart](docs/START_HERE.md) and

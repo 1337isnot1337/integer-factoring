@@ -1226,3 +1226,8 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 - [Deeply matched reflected progressions](matched-progression-bezout.md): exact primitive denominator and complete modular Bézout compiler at binary huge degree, with reciprocal perturbations retained.
 
 - [Tensor-product Pascal box crossings](tensor-pascal-box-crossings.md): exact crossing matrices, coherent energy labels, and all-scale certificates for 150 finite restriction screens.
+
+
+## Complete flat coefficient spaces
+
+- [All physical words over F2 and F4, with exact generic row constraints](cube-flat-coefficient-fibers.md)

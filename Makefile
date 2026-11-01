@@ -2202,3 +2202,8 @@ verify-matched-progression-bezout:
 .PHONY: verify-tensor-pascal-boxes
 verify-tensor-pascal-boxes:
 	python3 tools/check_tensor_pascal_box_crossings.py --output /tmp/tensor-pascal-box-crossings.json
+
+
+.PHONY: verify-cube-flat-coefficient-fibers
+verify-cube-flat-coefficient-fibers:
+	python3 tools/check_cube_flat_coefficient_fibers.py --compare evidence/cube-flat-coefficient-fibers.json --output /tmp/integer-factoring-cube-flat-coefficient-fibers.json
