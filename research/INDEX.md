@@ -12,6 +12,7 @@
 
 ## Composite-cofactor relations
 
+- [Composite-ideal closure and integral elimination](cofactor-ideal-closure.md): fixed norm weights certify all augmented rows; a definition forest removes every residual generator over the integers, avoiding rational-rank selection; complete controls reach 144 bits.
 - [Exact composite-cofactor selection](cofactor-collision-selection.md): signed residual-ideal keys, fixed-base collision rows, exact rational-span retention, and matched 92-bit/124-bit finite controls.
 - [An explicit admissible quota](cofactor-collision-quota.md): a finite key count and weighted dominance force full relation rank; the uniform time to collect admissible hits remains open.
 

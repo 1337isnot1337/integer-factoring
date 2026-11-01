@@ -1623,3 +1623,10 @@ verify-pr31-frontier:
 	python3 tools/check_mixed_cut_rank_budget.py --output /tmp/integer-factoring-mixed-cut-rank-budget.json
 	python3 tools/check_parity_factor_transfer.py --output /tmp/integer-factoring-parity-factor-transfer.json
 	python3 tools/check_rough_sparse_transfer.py --output /tmp/integer-factoring-rough-sparse-transfer.json
+
+.PHONY: verify-cofactor-ideal-closure
+verify-cofactor-ideal-closure:
+	python3 tools/check_cofactor_ideal_closure.py --output /tmp/cofactor-ideal-closure.json
+	python3 tools/check_cofactor_ideal_closure.py --replay evidence/cofactor-ideal-closure-92.json
+	python3 tools/check_cofactor_ideal_closure.py --replay evidence/cofactor-ideal-closure-124.json
+	python3 tools/check_cofactor_ideal_closure.py --replay evidence/cofactor-ideal-closure-144.json

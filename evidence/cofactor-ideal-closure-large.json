@@ -1,0 +1,100 @@
+{
+  "cases": [
+    {
+      "augmented_relation_rank": 1058,
+      "cutoff": 1021,
+      "factor": 2147483647,
+      "generator_count": 1062,
+      "initial_base_size": 85,
+      "input_bits": 92,
+      "integer": 4951760154835678088235319297,
+      "max_cofactor": 1042441,
+      "maximum_definition_depth": 26,
+      "maximum_relation_entry_bits": 156,
+      "maximum_word_coefficient_bits": 148,
+      "method": "ideal-closure relation halving",
+      "norm_queries": 81430,
+      "partial_identities_verified": 1058,
+      "record": "evidence/cofactor-ideal-closure-92.json",
+      "record_sha256": "d4257bc8d5af28baadbab8f51b970e9e9b83c88786a2e0d73d2503cc94b11e53",
+      "relation_rank": 81,
+      "verification": {
+        "fixed_base_relation_checks": 81,
+        "integer_elimination_replays": 1058,
+        "literal_relation_checks": 0,
+        "negative_orientations": 533,
+        "partial_identity_checks": 1058,
+        "self_references": 0,
+        "weighted_dominance_checks": 1058
+      },
+      "window": 10000
+    },
+    {
+      "augmented_relation_rank": 5318,
+      "cutoff": 4093,
+      "factor": 2305843009213693951,
+      "generator_count": 5321,
+      "initial_base_size": 283,
+      "input_bits": 124,
+      "integer": 21267647932558653899591465697288388633,
+      "max_cofactor": 16752649,
+      "maximum_definition_depth": 57,
+      "maximum_relation_entry_bits": 435,
+      "maximum_word_coefficient_bits": 428,
+      "method": "ideal-closure relation halving",
+      "norm_queries": 1391826,
+      "partial_identities_verified": 5318,
+      "record": "evidence/cofactor-ideal-closure-124.json",
+      "record_sha256": "2d977515d6fbc3d87b34fe20e7724f8fe0e087e022ebe6d3c73173516055a00c",
+      "relation_rank": 280,
+      "verification": {
+        "fixed_base_relation_checks": 280,
+        "integer_elimination_replays": 5318,
+        "literal_relation_checks": 0,
+        "negative_orientations": 2608,
+        "partial_identity_checks": 5318,
+        "self_references": 0,
+        "weighted_dominance_checks": 5318
+      },
+      "window": 100000
+    },
+    {
+      "augmented_relation_rank": 10242,
+      "cutoff": 8191,
+      "factor": 4108225714090758818561,
+      "generator_count": 10245,
+      "initial_base_size": 513,
+      "input_bits": 144,
+      "integer": 17355670471043633865640786569418441084204301,
+      "max_cofactor": 67092481,
+      "maximum_definition_depth": 71,
+      "maximum_relation_entry_bits": 540,
+      "maximum_word_coefficient_bits": 537,
+      "method": "ideal-closure relation halving",
+      "norm_queries": 3395784,
+      "partial_identities_verified": 10242,
+      "record": "evidence/cofactor-ideal-closure-144.json",
+      "record_sha256": "ad348eb7dc78fa9a24c2b5e966840bedf85eff84e4711036e96210168dba1f23",
+      "relation_rank": 510,
+      "verification": {
+        "fixed_base_relation_checks": 510,
+        "integer_elimination_replays": 10242,
+        "literal_relation_checks": 0,
+        "negative_orientations": 5030,
+        "partial_identity_checks": 10242,
+        "self_references": 0,
+        "weighted_dominance_checks": 10242
+      },
+      "window": 200000
+    }
+  ],
+  "claim": "Composite ideal closure with exact original-base elimination on 92-bit, 124-bit and 144-bit inputs",
+  "scope": "Exact finite controls; no uniform admissible-hit estimate or improved factoring exponent.",
+  "source_sha256": {
+    "tools/check_cofactor_ideal_closure.py": "96e11d0460ad80f2ae10757178eb753bd3bfc2c430988cfe802fe8b31682710a",
+    "tools/cofactor_collision_relations.py": "c41073e64a4436a1c2034e8610e450d663831850660d8361277fc0a97490cc3a",
+    "tools/cofactor_ideal_closure.py": "eeb38cb18defd7ae3b3e7125a21706565365894e78baea0d61113ebe06fb54a5",
+    "tools/quadratic_ideal_hnf.py": "41ee985788598d589d3ddf683a2ae2bb333d4a99d9559d3dbaab723ebd8c3692",
+    "tools/relation_two_saturation.py": "c5adfb285a694d10c964ac516ea2f646c2b1effc0a8f47871d11a80593aee6b9"
+  }
+}

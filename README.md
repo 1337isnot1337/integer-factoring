@@ -46,6 +46,15 @@ The complete factoring score remains **1/2**.
 Run `make verify-cofactor-collisions` for the exact retained-witness and
 quota checks; add `--replay-search` to the selector checker to repeat every
 large-run query.
+A second [composite-ideal closure algorithm](research/cofactor-ideal-closure.md)
+promotes residual ideals to temporary generators, proves every selected row
+independent by weighted diagonal dominance, and eliminates all new definitions
+over the integers. Extraction stays in the original prime base and needs no
+rational-rank selection. Exact 92/124/144-bit controls use 81,430 / 1,391,826 /
+3,395,784 norm queries. Their 16,618 selected ideal identities, dominance
+inequalities, and integer eliminations are replayed. Uniform admissibility
+and reached-key bounds remain open. Run `make verify-cofactor-ideal-closure`.
+
 <!-- cofactor-collision-checkpoint:end -->
 
 <!-- coherent-compound-checkpoint:start -->
