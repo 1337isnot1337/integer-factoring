@@ -1,0 +1,726 @@
+{
+  "completed": true,
+  "alphabet": 5,
+  "matrix_order": 25,
+  "degree": 36,
+  "primitive_scalar_polynomial": [
+    1
+  ],
+  "coefficient_sha256": "20bce31b59f6af896e583bf3fe2174ec6795f9adeebd337b7135c080974089b7",
+  "places": [
+    {
+      "point": 0,
+      "profiles": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          4,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          14,
+          14,
+          14,
+          14,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          18,
+          18,
+          20,
+          20,
+          20
+        ]
+      ],
+      "independent_toeplitz_controls": [
+        {
+          "jet_length": 1,
+          "toeplitz_order": 25,
+          "rank": 25,
+          "kernel_dimension": 0
+        },
+        {
+          "jet_length": 21,
+          "toeplitz_order": 525,
+          "rank": 193,
+          "kernel_dimension": 332
+        }
+      ]
+    },
+    {
+      "point": 1,
+      "profiles": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "independent_toeplitz_controls": [
+        {
+          "jet_length": 1,
+          "toeplitz_order": 25,
+          "rank": 25,
+          "kernel_dimension": 0
+        },
+        {
+          "jet_length": 1,
+          "toeplitz_order": 25,
+          "rank": 25,
+          "kernel_dimension": 0
+        }
+      ]
+    },
+    {
+      "point": 2,
+      "profiles": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "independent_toeplitz_controls": [
+        {
+          "jet_length": 1,
+          "toeplitz_order": 25,
+          "rank": 25,
+          "kernel_dimension": 0
+        },
+        {
+          "jet_length": 1,
+          "toeplitz_order": 25,
+          "rank": 25,
+          "kernel_dimension": 0
+        }
+      ]
+    },
+    {
+      "point": 3,
+      "profiles": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "independent_toeplitz_controls": [
+        {
+          "jet_length": 3,
+          "toeplitz_order": 75,
+          "rank": 73,
+          "kernel_dimension": 2
+        },
+        {
+          "jet_length": 1,
+          "toeplitz_order": 25,
+          "rank": 25,
+          "kernel_dimension": 0
+        }
+      ]
+    },
+    {
+      "point": 4,
+      "profiles": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "independent_toeplitz_controls": [
+        {
+          "jet_length": 1,
+          "toeplitz_order": 25,
+          "rank": 25,
+          "kernel_dimension": 0
+        },
+        {
+          "jet_length": 1,
+          "toeplitz_order": 25,
+          "rank": 25,
+          "kernel_dimension": 0
+        }
+      ]
+    },
+    {
+      "point": 5,
+      "profiles": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "independent_toeplitz_controls": [
+        {
+          "jet_length": 1,
+          "toeplitz_order": 25,
+          "rank": 25,
+          "kernel_dimension": 0
+        },
+        {
+          "jet_length": 1,
+          "toeplitz_order": 25,
+          "rank": 25,
+          "kernel_dimension": 0
+        }
+      ]
+    },
+    {
+      "point": 6,
+      "profiles": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ]
+      ],
+      "independent_toeplitz_controls": [
+        {
+          "jet_length": 1,
+          "toeplitz_order": 25,
+          "rank": 25,
+          "kernel_dimension": 0
+        },
+        {
+          "jet_length": 3,
+          "toeplitz_order": 75,
+          "rank": 73,
+          "kernel_dimension": 2
+        }
+      ]
+    },
+    {
+      "point": 7,
+      "profiles": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          6
+        ]
+      ],
+      "independent_toeplitz_controls": [
+        {
+          "jet_length": 5,
+          "toeplitz_order": 125,
+          "rank": 105,
+          "kernel_dimension": 20
+        },
+        {
+          "jet_length": 7,
+          "toeplitz_order": 175,
+          "rank": 151,
+          "kernel_dimension": 24
+        }
+      ]
+    },
+    {
+      "point": null,
+      "profiles": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          4,
+          4,
+          4,
+          4,
+          8,
+          8,
+          10,
+          10,
+          12
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "independent_toeplitz_controls": [
+        {
+          "jet_length": 13,
+          "toeplitz_order": 325,
+          "rank": 239,
+          "kernel_dimension": 86
+        },
+        {
+          "jet_length": 1,
+          "toeplitz_order": 25,
+          "rank": 25,
+          "kernel_dimension": 0
+        }
+      ]
+    }
+  ],
+  "degree_budget_bounds": [
+    {
+      "matrix_order": 25,
+      "degree": 36,
+      "homogeneous_determinant_degree": 900,
+      "rational_order_sums": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        20,
+        86
+      ],
+      "unaccounted_degree": 792,
+      "nonrational_point_order_bound": 396,
+      "all_algebraic_point_order_bound": 396
+    },
+    {
+      "matrix_order": 25,
+      "degree": 36,
+      "homogeneous_determinant_degree": 900,
+      "rational_order_sums": [
+        332,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        24,
+        0
+      ],
+      "unaccounted_degree": 542,
+      "nonrational_point_order_bound": 271,
+      "all_algebraic_point_order_bound": 332
+    }
+  ],
+  "moment_margin": 172,
+  "exact_bare_two_place_infimum": 1,
+  "unweighted_supporting_cost_lower_bound": 1,
+  "all_positive_supporting_angles_excluded": true,
+  "invalid_controls": 4,
+  "source_sha256": {
+    "check_hecke_all_algebraic_places.py": "e782ad13777edcbb2201638a763080498ced978d75966cddbbd1fe5fa64c2561",
+    "finite_field_place_budget.py": "67054d99e6584343f5010993d19f391a687115116b5cf76c10d65baf764efc53",
+    "three_row_hecke_crossing.py": "6374c66dd224f3e64ed35575872a4c0878b261716182d53ae1ade23d7e932da2",
+    "three_row_hecke_paths.py": "243288f91e028d5b5001971d06c0790bfa116fdd97f36250e079fcd9e55bf61c",
+    "check_three_row_hecke_crossing.py": "cddcab541f7baf063995707fbaee55632d3918c7dd8225c1c84e619ad60800b6",
+    "binary_extension_smith.py": "17b5ce294e56d9e6cfd4e532721e31b5d3bfe5e7449e6de4269fa91446eeab5f",
+    "native_matrix_smith_f4.py": "c08da20f1938a371b438e32fbc6a8f6766b48c2cfee5bcd1c956ce137dc70203",
+    "native_matrix_smith_f4.cpp": "5ec995cd04563c2fa99b69afd71bf476d5ca885f1f90377490c30e5a1a55f330",
+    "native_rectangular_smith_f4.cpp": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6"
+  },
+  "scope": "Every pair of distinct algebraic projective places over an algebraic closure ofF8, either cut orientation, for the primitive retained tensor. Unweighted uniform-type two-place pressure at every positive supporting angle. Arbitrary physical gauges and mixed-place allocations are outside scope."
+}

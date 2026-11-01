@@ -1499,3 +1499,7 @@ The [symbolic profile classification](orthogonal-joint-global-rigidity.md#5-all-
 ## Ten-point F8 hyperoval crossing
 
 [Exact 96-letter bound rho < 0.710005835](f8-hyperoval-crossing-bound.md) improves both complete natural profiles over the F4 code at every positive scale. The source-pinned clean replay resolves all 18,432 channel orders, with an explicit rational physical type and independent polynomial-entry controls. The factoring exponent remains 1/2.
+
+## All-algebraic two-point Hecke barrier
+
+[Determinant and Frobenius-orbit budgets](hecke-all-algebraic-place-barrier.md) exclude every two-geometric-point shift of the retained five-/nine-letter Hecke tensors over algebraic extensions, at every unweighted supporting angle. All rational-place profiles have independent Toeplitz determinant-order controls. Physical gauges and mixed-place groupings remain outside scope.
