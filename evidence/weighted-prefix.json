@@ -1,0 +1,21 @@
+{
+  "coefficient_characteristics": [
+    2,
+    3,
+    5
+  ],
+  "cyclic_dimensions": [
+    1,
+    2,
+    3,
+    5,
+    7
+  ],
+  "distributed_digit_weight_cases": 40,
+  "negative_control": "nontrivial divisors of 9 vanish mod 2 after exponents reduce mod 1 or 3, but not 5",
+  "scope": "finite weighted constructor checks; no modular evaluator or new factoring exponent",
+  "source_carry_acceptance_cases": 3840,
+  "source_three_stage_convolutions": 320,
+  "weighted_divisor_prefix_cases": 4875,
+  "weighted_grouped_contractions": 2049
+}

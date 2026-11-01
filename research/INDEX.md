@@ -16,6 +16,18 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Weighted fixed-characteristic transfer](fixed-characteristic-transfer.md): uniform factoring from a modular evaluator.
+
+- [Weighted prefix constructor](weighted-prefix-constructor.md): exact weighted tables and their construction cost.
+
+- [Modular crossing pieces](past-half-pieces.md): effective characteristic-two pieces and the half-rate bound.
+
+- [Polynomial Pfaffian formula](modular-pfaffian.md): polynomial-time computation of complete piece profiles.
+
+- [Shared-mode Schur reduction](fermi-sea-schur.md): exact common-block convolution and rank restrictions.
+
+- [Sparse-grid geometry](past-half-sparse-grids.md): limitations of regular-grid density changes.
+
 - [Coarsened grid check](coarsened-grid-validation.md): exact finite integration checks for signed network grouping, orientation, composite moduli, and padded clique tables.
 
 - [Bare criterion through twelve letters](bare-seven-to-twelve-letters.md): proved box-minor Kronecker budgets couple the two cuts; exact entropy-dual certificates give rho_bare>1/sqrt(2) for 7<=q<=12 at every degree and field, with fixed auxiliaries; an exact thirteen-letter profile satisfies every box budget and adjugate inequality and is the remaining construction target.
@@ -47,6 +59,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Global interval pole trace](interval-pole-trace.md): an exact finite-precision factor-pair projection, closed boundary and bilinear section rules, and a charged enumerative baseline; efficient global state reduction remains open.
 - [Cauchy determinant slope](pole-cauchy-content.md): a determinant slope or normalized trace from two Cauchy powers recovers an arbitrary rectangle's factor count; padding and Vandermonde normalization are cheap, while global scalar evaluation remains open.
 - [Arithmetic framework shift](arithmetic-framework.md): primary-source randomness audit and a new generator/relation construction contract, outside the crossing evaluator.
+- [Uniformity and the half frontier](uniformity-and-half-frontier.md): standard padding shows that `P=BPP` would beat every fixed saving exponent; small universal random-tape families exist nonuniformly, while efficient uniform construction remains open.
 - [Deterministic torsion extraction](arithmetic-torsion-extraction.md): a black-box two-group basis algorithm from an annihilator, with no saturated relation lattice or random group elements.
 - [Positive relation kernel](positive-relation-kernel.md): a Fourier-positive smooth-pair hitting lemma and diagonally dominant relation construction; efficient arithmetic pair extraction is open.
 - [Biased words without coordinates](arithmetic-biased-words.md): a powering seed and published derandomized squaring supply biased samples from generators and a group-size upper bound.

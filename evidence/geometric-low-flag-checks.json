@@ -1,0 +1,53 @@
+{
+  "status": "exact rank-one exclusion over every characteristic-two field certified",
+  "certificate_sha256": "026c2c361c17ba92c8182bc5f1c59a130b8418d5c7c457f267b68d6d5e8efe14",
+  "reference_digest": "91e0ee1014b79e5e042053201717ccd95ad33a27ec7f1ee9a6c2144b10aa75e9",
+  "literal_projective_chart_identities": 25,
+  "maximum_identity_degree": 3,
+  "total_multiplier_monomials": 60,
+  "coefficient_scope": "Every characteristic-two field and algebraic closure.",
+  "independent_finite_field_controls": [
+    {
+      "field_size": 2,
+      "polynomial_modulus": 3,
+      "projective_left_factors_exhausted": 31,
+      "every_right_constraint_rank": 5
+    },
+    {
+      "field_size": 4,
+      "polynomial_modulus": 7,
+      "projective_left_factors_exhausted": 341,
+      "every_right_constraint_rank": 5
+    },
+    {
+      "field_size": 16,
+      "polynomial_modulus": 19,
+      "projective_left_factors_exhausted": 69905,
+      "every_right_constraint_rank": 5
+    }
+  ],
+  "damaged_identity_rejected": true,
+  "next_flag_rank_one_positive_control": {
+    "relative_order": 10,
+    "left": [
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    "right": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ]
+  },
+  "single_pure_two_copy_rate_floor": [
+    5,
+    7
+  ],
+  "pressure_interval_count": 60,
+  "factoring_bound_improved": false
+}
