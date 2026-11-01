@@ -2219,6 +2219,10 @@ verify-multichannel-cofactors:
 verify-multichannel-bare-entropy:
 	python3 tools/check_multichannel_bare_entropy.py
 
+.PHONY: verify-inherited-second-jet
+verify-inherited-second-jet:
+	python3 tools/check_inherited_second_jet_caps.py
+
 .PHONY: verify-multiaxis-cube
 verify-multiaxis-cube:
 	python3 tools/check_multiaxis_cube_transfer.py

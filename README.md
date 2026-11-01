@@ -2079,6 +2079,13 @@ Both exceed `1/sqrt(2)`. Independently gauged energies remain outside this
 obstruction. Run `make verify-multichannel-bare-entropy` for the exact
 rational probabilities and 100-bit outward entropy comparisons.
 
+[Inherited nonlinear second-jet checks](research/inherited-second-jet-caps.md)
+extend the existing adjugate theorem to independent gradings and square
+physical restrictions. An exact twelve-letter point passes the linear
+constraints but fails these nonlinear checks. The implementation evaluates
+the two actual profiles; concavity prevents substituting their average.
+Run `make verify-inherited-second-jet`; twelve letters remain unresolved.
+
 The [latest full verification receipt](evidence/hereditary-full-verification.json)
 pins a successful clean default replay and all nine named joint/hereditary
 targets to exact `d31ffec`: 350 Python command blocks, 66 unit tests,

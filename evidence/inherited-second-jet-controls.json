@@ -1,0 +1,89 @@
+{
+  "scope": "Existing universal second-jet theorem lifted to independent gradings and square restrictions; nonlinear conditions on the two actual profiles.",
+  "literal_controls": {
+    "tensors": 9,
+    "unique_complete_profiles": 36,
+    "inequalities": 744,
+    "profiles_sha256": "3ab2eef998a5ed88f2ffa3d07d4e4ace999ebee5eceb0b9c45fea5ed7474c291"
+  },
+  "normalization_identities": 1740,
+  "q12": {
+    "scope": "Negative point of preceding linear constraints, excluded by the existing second-jet theorem; no tensor.",
+    "oriented_square_caps": 1452,
+    "rectangular_jet_caps": 6578,
+    "multichannel_caps": 6578,
+    "pressure_interval": [
+      -17344886576402446472249199489,
+      -17344886576402446472249197838
+    ],
+    "precision": 100,
+    "pressure_upper_bound": "-1/100",
+    "nonlinear_violations": 300,
+    "full_alphabet_rejections": [
+      {
+        "physical_size": 12,
+        "size": 12,
+        "family": "hereditary second jet cell",
+        "orientation": 0,
+        "lhs": "805364503/100000",
+        "rhs": "201089889/25000",
+        "slack": "-1004947/100000"
+      },
+      {
+        "physical_size": 12,
+        "size": 12,
+        "family": "hereditary second jet cell",
+        "orientation": 1,
+        "lhs": "805364503/100000",
+        "rhs": "201089889/25000",
+        "slack": "-1004947/100000"
+      },
+      {
+        "physical_size": 12,
+        "size": 144,
+        "family": "hereditary second jet cell",
+        "orientation": 0,
+        "lhs": "9669290827/100000",
+        "rhs": "603269667/6250",
+        "slack": "-3395231/20000"
+      },
+      {
+        "physical_size": 12,
+        "size": 144,
+        "family": "hereditary second jet cell",
+        "orientation": 1,
+        "lhs": "9669290827/100000",
+        "rhs": "603269667/6250",
+        "slack": "-3395231/20000"
+      },
+      {
+        "physical_size": 12,
+        "size": 12,
+        "family": "hereditary second jet shared",
+        "orientation": 0,
+        "lhs": "100684339/12500",
+        "rhs": "201089889/25000",
+        "slack": "-278789/25000"
+      },
+      {
+        "physical_size": 12,
+        "size": 12,
+        "family": "hereditary second jet shared",
+        "orientation": 1,
+        "lhs": "100684339/12500",
+        "rhs": "201089889/25000",
+        "slack": "-278789/25000"
+      }
+    ],
+    "input_sha256": "c32c0412451cba58e7750c60f1fc193a160dac7362ff4fcc7d9fedb3561cd567"
+  },
+  "source_sha256": {
+    "tools/check_inherited_second_jet_caps.py": "d0cf119c6fdd271006520523614b6710647d9655090a506766ccb0cb60282769",
+    "tools/inherited_second_jet_caps.py": "3407c44bda2796daabc957cf0653077c034ba4c1f16019debf7dfc9c26d77231",
+    "tools/hereditary_adjugate_caps.py": "5e7f5b43bbd39e267629d2ef624d721228e46951bccbaac3fa4a56cca13d47fe",
+    "tools/rectangular_adjugate_jet_caps.py": "d59773c82318246f10bde91158dbf84a77daab62ac27481e43a0d48baf47075f",
+    "tools/multichannel_cofactor_caps.py": "f0561973de6ff525674c7b52621221788bd8e32d45dc2b09c8d286b39b5df358",
+    "tools/check_cell_minor_caps.py": "92856996bc0fb7e213e5228e1697d2f1cfb5727e10a9e572c764731114e2f6bc",
+    "tools/charged_gaussian_floor.py": "5321193eda456b922ae947f55a492de675de2d08a90ccb2a87a0fd89a60805cc"
+  }
+}
