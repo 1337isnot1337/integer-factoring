@@ -1,5 +1,7 @@
 # Research index
 
+- [Small internal pivots](small-pivot-integer-row-selection.md): arbitrary pivot-column exactness, retained original relations, and paired 96/112 component measurements.
+
 - [Sparse graph projections and bounded 128-bit attempts](sparse-projected-signed-graph.md): identical full integer maps, independently replayed integration, explicit failure costs, and a declared larger retry.
 
 - [Uniform literal full-tail core](tensor-literal-full-tail-core.md): weighted operator transport, both cut gauges, complete rank-one applications, and independent endpoint/Smith controls.

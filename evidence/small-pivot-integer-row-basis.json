@@ -1,0 +1,211 @@
+{
+  "controls": {
+    "matrices": 680,
+    "acceptance_decisions": 17000,
+    "every_original_row_subsequence_matches_rational_elimination": true,
+    "insertion_order_triangularity_checked_after_every_row": true,
+    "original_relation_content_trap_passed": true,
+    "nonmonotone_pivot_column_control_passed": true,
+    "invalid_rows_rejected": 3
+  },
+  "benchmarks": [
+    {
+      "bits": 96,
+      "source_file": "evidence/optimized-oriented-power-96.json.xz",
+      "source_sha256": "46ec21d6af643d6c9a9fddd759e854910efc9425ceba8e02c674f9e88b841a9b",
+      "matrix_rows": 321,
+      "matrix_columns": 89,
+      "rank": 89,
+      "selected_original_rows_sha256": "b250bce2a302bc5ec32c32930e8d8cbc729139b9fa7628c893c85c5599af77b3",
+      "repetitions": 3,
+      "runs": [
+        {
+          "repetition": 0,
+          "method": "leftmost_primitive",
+          "elapsed_seconds": 0.15386313500493998,
+          "cpu_seconds": 0.1367632969999999,
+          "statistics": {
+            "row_attempts": 321,
+            "elimination_steps": 4045,
+            "content_normalizations": 3843,
+            "maximum_temporary_entry_bits": 1109
+          }
+        },
+        {
+          "repetition": 0,
+          "method": "small_pivot_primitive",
+          "elapsed_seconds": 0.0839491629958502,
+          "cpu_seconds": 0.0839518720000001,
+          "statistics": {
+            "row_attempts": 321,
+            "elimination_steps": 3014,
+            "content_normalizations": 2068,
+            "maximum_temporary_entry_bits": 1076
+          }
+        },
+        {
+          "repetition": 1,
+          "method": "small_pivot_primitive",
+          "elapsed_seconds": 0.06880169000214664,
+          "cpu_seconds": 0.068277009,
+          "statistics": {
+            "row_attempts": 321,
+            "elimination_steps": 3014,
+            "content_normalizations": 2068,
+            "maximum_temporary_entry_bits": 1076
+          }
+        },
+        {
+          "repetition": 1,
+          "method": "leftmost_primitive",
+          "elapsed_seconds": 0.14219522899657022,
+          "cpu_seconds": 0.14098700600000003,
+          "statistics": {
+            "row_attempts": 321,
+            "elimination_steps": 4045,
+            "content_normalizations": 3843,
+            "maximum_temporary_entry_bits": 1109
+          }
+        },
+        {
+          "repetition": 2,
+          "method": "leftmost_primitive",
+          "elapsed_seconds": 0.12710491599864326,
+          "cpu_seconds": 0.127099136,
+          "statistics": {
+            "row_attempts": 321,
+            "elimination_steps": 4045,
+            "content_normalizations": 3843,
+            "maximum_temporary_entry_bits": 1109
+          }
+        },
+        {
+          "repetition": 2,
+          "method": "small_pivot_primitive",
+          "elapsed_seconds": 0.06340925300173694,
+          "cpu_seconds": 0.06341179200000013,
+          "statistics": {
+            "row_attempts": 321,
+            "elimination_steps": 3014,
+            "content_normalizations": 2068,
+            "maximum_temporary_entry_bits": 1076
+          }
+        }
+      ],
+      "medians": {
+        "leftmost_primitive": {
+          "elapsed_seconds": 0.14219522899657022,
+          "cpu_seconds": 0.1367632969999999
+        },
+        "small_pivot_primitive": {
+          "elapsed_seconds": 0.06880169000214664,
+          "cpu_seconds": 0.068277009
+        }
+      },
+      "same_selected_original_relations_on_every_run": true
+    },
+    {
+      "bits": 112,
+      "source_file": "evidence/optimized-oriented-power-112.json.xz",
+      "source_sha256": "e026296bb0d5eab1054f3e3e3701de05e237a1162401974e499fc985c9196bca",
+      "matrix_rows": 619,
+      "matrix_columns": 289,
+      "rank": 289,
+      "selected_original_rows_sha256": "569154bae81cb0c5405ae35b647b9ef121800ae22681744893e956fe1c5a9ae7",
+      "repetitions": 3,
+      "runs": [
+        {
+          "repetition": 0,
+          "method": "leftmost_primitive",
+          "elapsed_seconds": 16.617258293001214,
+          "cpu_seconds": 16.609297676,
+          "statistics": {
+            "row_attempts": 619,
+            "elimination_steps": 60174,
+            "content_normalizations": 59207,
+            "maximum_temporary_entry_bits": 4714
+          }
+        },
+        {
+          "repetition": 0,
+          "method": "small_pivot_primitive",
+          "elapsed_seconds": 7.568126153004414,
+          "cpu_seconds": 7.002244169000001,
+          "statistics": {
+            "row_attempts": 619,
+            "elimination_steps": 36192,
+            "content_normalizations": 24531,
+            "maximum_temporary_entry_bits": 3512
+          }
+        },
+        {
+          "repetition": 1,
+          "method": "small_pivot_primitive",
+          "elapsed_seconds": 7.107066288997885,
+          "cpu_seconds": 6.946222555999999,
+          "statistics": {
+            "row_attempts": 619,
+            "elimination_steps": 36192,
+            "content_normalizations": 24531,
+            "maximum_temporary_entry_bits": 3512
+          }
+        },
+        {
+          "repetition": 1,
+          "method": "leftmost_primitive",
+          "elapsed_seconds": 17.5259211540033,
+          "cpu_seconds": 16.917654084,
+          "statistics": {
+            "row_attempts": 619,
+            "elimination_steps": 60174,
+            "content_normalizations": 59207,
+            "maximum_temporary_entry_bits": 4714
+          }
+        },
+        {
+          "repetition": 2,
+          "method": "leftmost_primitive",
+          "elapsed_seconds": 20.218534257997817,
+          "cpu_seconds": 18.327989047999992,
+          "statistics": {
+            "row_attempts": 619,
+            "elimination_steps": 60174,
+            "content_normalizations": 59207,
+            "maximum_temporary_entry_bits": 4714
+          }
+        },
+        {
+          "repetition": 2,
+          "method": "small_pivot_primitive",
+          "elapsed_seconds": 7.964855960002751,
+          "cpu_seconds": 7.251849454999999,
+          "statistics": {
+            "row_attempts": 619,
+            "elimination_steps": 36192,
+            "content_normalizations": 24531,
+            "maximum_temporary_entry_bits": 3512
+          }
+        }
+      ],
+      "medians": {
+        "leftmost_primitive": {
+          "elapsed_seconds": 17.5259211540033,
+          "cpu_seconds": 16.917654084
+        },
+        "small_pivot_primitive": {
+          "elapsed_seconds": 7.568126153004414,
+          "cpu_seconds": 7.002244169000001
+        }
+      },
+      "same_selected_original_relations_on_every_run": true
+    }
+  ],
+  "source_sha256": {
+    "tools/small_pivot_integer_row_basis.py": "66c8f7abc6bb9058f2ec3d8da83a2692e6c7adf8d4065743cdf1ea4db09ac75b",
+    "tools/check_small_pivot_integer_row_basis.py": "6e1dddd10a69e214c3001f732bc684d69edc334ad93b87c18114a98ecd202827",
+    "tools/primitive_integer_row_basis.py": "656bdfa439ca96dfa997fce614f3c2f8700d6954ad59c6c2a80133743a6459ff",
+    "tools/cofactor_collision_relations.py": "e3ca86c6e2208edf1f5edc980ed954c6fb3919f21a4cce40a8681d0d908022c5"
+  },
+  "scope": "Exact original-row selection with changed internal pivots; no uniform factoring exponent gain.",
+  "timing_scope": "Rank selection only; complete search and certificate replay costs remain separate."
+}
