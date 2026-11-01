@@ -1095,3 +1095,8 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 ## Limits of rational extraction from compressed polynomial moments
 
 - [Limits of rational extraction from compressed polynomial moments](pole-cauchy-localization-obstruction.md)
+
+
+## Protected lower states through height 25
+
+- [Protected lower states through height 25](coherent-protected-height25.md)

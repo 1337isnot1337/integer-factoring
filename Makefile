@@ -2028,3 +2028,7 @@ verify-rough-length-fourier:
 .PHONY: verify-pole-cauchy-localization
 verify-pole-cauchy-localization:
 	python3 tools/check_pole_cauchy_localization.py --output /tmp/integer-factoring-pole-cauchy-localization.json
+
+.PHONY: verify-coherent-protected-height25
+verify-coherent-protected-height25:
+	python3 tools/check_coherent_protected_height25.py --recompute-profiles --output /tmp/integer-factoring-coherent-protected-height25.json

@@ -1684,6 +1684,8 @@ The [rough-length Fourier constructor](research/rough-length-fourier-constructor
 
 The [moment-quotient localization analysis](research/pole-cauchy-localization-obstruction.md) proves why directly inverting the factor-count pole in the small polynomial quotient fails at polynomial precision. An exact proper-factor example also defeats common-factor cancellation followed by canonical rational coefficient lifting. The result scopes these reconstruction strategies; a different scalar extraction method remains open.
 
+The [height-25 protected-state theorem](research/coherent-protected-height25.md) gives the exact natural-pressure floor `17/24 > 1/sqrt(2)` for every constant height-homogeneous split that retains the 28 states below height 16 and uses only states through height 25. It covers separate paired alphabets and types over every characteristic-two field, including the 96-letter hyperoval family. Changing the protected lower states or the stated gauge assumptions remains outside the theorem.
+
 ## Contribution and attribution
 
 Start with the [contributor quickstart](docs/START_HERE.md) and
