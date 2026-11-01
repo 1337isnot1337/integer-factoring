@@ -1,0 +1,55 @@
+{
+  "source_commit": "ab0dc947a4ad1d6fa9fa13aa459cc4cc779da332",
+  "source_tree": "07589dfa8636df8ef4fce32e6848d51e78dd3d4a",
+  "started_utc": "2026-11-01T19:28:50.006502+00:00",
+  "commands": [
+    [
+      "python3",
+      "tools/multiplier_treewidth/check_shift_lemma.py"
+    ],
+    [
+      "python3",
+      "tools/multiplier_treewidth/check_cayley_relations.py"
+    ],
+    [
+      "python3",
+      "tools/multiplier_treewidth/tw_multipliers.py"
+    ]
+  ],
+  "pre_status": "",
+  "status": "pass",
+  "results": [
+    {
+      "command": [
+        "python3",
+        "tools/multiplier_treewidth/check_shift_lemma.py"
+      ],
+      "returncode": 0,
+      "seconds": 39.6568049849011
+    },
+    {
+      "command": [
+        "python3",
+        "tools/multiplier_treewidth/check_cayley_relations.py"
+      ],
+      "returncode": 0,
+      "seconds": 0.06514869537204504
+    },
+    {
+      "command": [
+        "python3",
+        "tools/multiplier_treewidth/tw_multipliers.py"
+      ],
+      "returncode": 0,
+      "seconds": 167.43187385285273
+    }
+  ],
+  "seconds": 207.15437575010583,
+  "finished_utc": "2026-11-01T19:32:19.680348+00:00",
+  "post_status": "",
+  "stdout": {
+    "path": "evidence/verify-pr73-source-ab0dc94.stdout.txt.xz",
+    "uncompressed_sha256": "488679844b9ee64923141db06f147a6bfe5cd4bf9342a6e99c0b0d0fd4c7b758",
+    "compressed_sha256": "49614847b458e54b49b38d56da33fb7101d579b8216717acda3b5c45c27aeac0"
+  }
+}

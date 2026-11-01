@@ -3123,3 +3123,11 @@ verify-routing-graphs:
 verify-window-graph-data:
 	cd tools/window_lemma/graph/data && sha256sum --check SHA256SUMS
 	python3 -m py_compile tools/window_lemma/graph/cayley_small.py tools/window_lemma/graph/summarize.py
+
+.PHONY: verify-multiplier-treewidth-controls verify-multiplier-treewidth-brackets
+verify-multiplier-treewidth-controls:
+	python3 tools/multiplier_treewidth/check_shift_lemma.py
+	python3 tools/multiplier_treewidth/check_cayley_relations.py
+
+verify-multiplier-treewidth-brackets:
+	python3 tools/multiplier_treewidth/tw_multipliers.py

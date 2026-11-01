@@ -978,3 +978,37 @@ PASS is claimed for it here. These are author implementation checks and
 ordinary proofs, with no independent mathematical review, new Lean work,
 integer-word compiler or stronger factoring bound.
 
+
+## PR73/74 integration and multiplier scope repairs
+
+PR73 head `ab0dc947a4ad1d6fa9fa13aa459cc4cc779da332` is retained by
+`f406934`; PR74 head `329a2edcef84d0b738647df3a9a8d20bdc92e7de` by
+`d958a43`. The additive index conflict preserves both sources. The PR74
+precision-note conflict retains both implementations and the packed-system
+bound; its additional inverse bound is numbered (14). The concise README
+overview from concurrent `ebfd7e5` is preserved with stable backend links.
+
+The multiplier separator proof now explicitly requires Boolean auxiliary
+variables, as its `2^(k+1)` rectangle cover counts bits. Its odd-only proof
+uses `h=6*floor(n/12)`, translated shifts starting at n'/2, and the corrected
+width bound `h/120-3`. The fixed-target transfer covers unchanged output-pin
+graphs or deletion only of bounded-degree simplicial outputs. Arbitrary
+propagation can remove more vertices/edges and is not identified with that
+deletion. The underlying unfixed-relation theorem and an array upper bound
+remain useful; no universal specialized-factoring treewidth result is claimed.
+
+The clean original PR73 source passed shift, relation-cycle and full finite
+multiplier-bracket commands in 207.15 seconds. Its
+[receipt](../evidence/verify-pr73-source-ab0dc94.json) and
+[complete compressed log](../evidence/verify-pr73-source-ab0dc94.stdout.txt.xz)
+retain exact source/tree and clean pre/post status. This source predates
+the scope/constant repairs, whose justification is the written argument;
+finite bracket fits are not exact treewidths or asymptotic proofs.
+
+PR74's focused backend passed all 402 small-ring elements, 180 rational
+queries against 675 assignments, 60 field reductions and 3,240 Frobenius
+comparisons. Its 324 acquired queries satisfy the stated count/degree
+budgets. The inherited interpolation and the separate packed-system
+controls also pass. These later sources are outside the full `2a1daeb`
+verification pin. Source/concurrent credits and both useful implementations
+are retained; no Lean or stronger factoring score is claimed.

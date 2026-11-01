@@ -13,7 +13,7 @@ saved. **KNOWN** means cited. **CONJECTURE** means unproved.
 | Angle | Verdict |
 |---|---|
 | 1. Relations as cycles in a factor-base graph | The cycle *guarantee* is trivial. Graph theory gives existence, including short ones, but not construction. The construction step reduces back to the existing inputs: connectivity needs B1b, the least-nonresidue / generation bound, and finding *useful* cycles needs U_beta, the smooth-value localization. No door opens. |
-| 2. Factoring as SAT on a multiplier network | **Ruled out.** Sub-`ell/sqrt(log ell)` treewidth is impossible for any network in which N enters only by pinning product bits and x and y appear as bit variables. The treewidth is in fact `Theta(ell)` (PROVEN, Theorem T1 plus the row-by-row upper bound). The only escape is to precompute a global, "spread" code of N into the tables. For that model, communication arguments provably cannot give lower bounds, and a polynomial-table lower bound would separate factoring from P. |
+| 2. Multiplication as a Boolean constraint network | The unfixed multiplication relation needs width Omega(ell) under the stated visible-bit and Boolean-auxiliary hypotheses; an array construction has width O(ell). The fixed-target consequence covers unchanged output-pin graphs or deletion only of bounded-degree simplicial outputs. Arbitrary propagation, specialized constraints and transform-only encodings require separate arguments. |
 
 Neither angle changes the repository score of `1/2`.
 
@@ -25,10 +25,12 @@ Neither angle changes the repository score of `1/2`.
 
 A *network* F is a set of local constraints, such as CNF clauses or tables,
 over variables `x_0..x_{n-1}`, `y_0..y_{n-1}`, `z_0..z_{2n-1}` and arbitrary
-auxiliary variables. F *encodes multiplication on a family Y* if, for every
+Boolean auxiliary variables. F *encodes multiplication on a family Y* if, for every
 `y` in Y and all x and z, `∃aux F(x,y,z,aux)` holds iff `x*y = z`. The primal
 graph `G_F` joins two variables that share a constraint. There is no
-restriction on the size of F or on its auxiliary variables.
+restriction on the size of F or on the number of Boolean auxiliary variables.
+The separator cost counts bits. Auxiliary variables with unbounded domains
+are outside this statement unless their information capacity is charged.
 
 ### Theorem T1 (PROVEN)
 
@@ -39,11 +41,17 @@ Let `n' = 6*floor(n/6)`. If F encodes multiplication on
 tw(G_F) >= n'/120 - 1.
 ```
 
-The same bound holds, minus 2, if Y is only
-`{2^j + 1 : n'/2 <= j < n}` and x is restricted to odd values
-`< 2^(n'/2)`. This covers encodings that build in "x, y odd" and
-"1 < x <= y". (For odd-only encodings, read `n'/2` in place of `n'` in the
-proof below.)
+For the odd-only variant put `h=6*floor(n/12)` and keep the source family
+`Y={2^j+1 : n'/2<=j<n}`, with odd `1<x<2^(n'/2)`. The corrected bound is
+
+```
+tw(G_F) >= h/120 - 3.
+```
+
+It is still linear in n, but uses half as many free bits and therefore
+loses a factor of two in the leading constant, as well as the two
+fooling-set bits. The assertion is trivial when h=0. Restricting to the
+smaller inputs in the proof also enforces `1<x<=y`.
 
 **Proof.**
 
@@ -96,13 +104,21 @@ proof below.)
 - Its 2^m solutions form a fooling set: mixing two of them breaks some split
   pair. So `2^(k+1) >= 2^m`, which gives `k+1 >= n'/120`.
 
-*Odd variant.*
-- Use x bits below `n'/2`, the shifts `j in [n'/2, n')`, and W equal to the
-  middle n' product bits. Then `x*(2^j+1) = x + (x << j)` has no carries
-  (VERIFIED, L4).
-- Each crossing gives a triple `x_i = z_i = z_{i+j}` that is not all one
-  colour, and fooling sets work for triples too. Dropping `x_0 = 1` and the
-  excluded solution x = 1 costs at most 2. ∎
+*Odd variant, with its parameter loss explicit.*
+- Put `j0=n'/2` and use only h low x bits and shifts
+  `j=j0,...,j0+h-1`. These are a subset of the stated family because
+  `h<=n'/2` and `j0+h<=n'<=n`.
+- Balance the separator on the 2h product bits at indices
+  `j0,...,j0+2h-1`. Translate these indices by j0 and apply the even
+  shift lemma with h in place of n'. It gives at least h/120 split
+  pairs `x_i,z_(i+j)` for some allowed j.
+- Since `x<2^h` and `j>=h`, the product is `x+(x<<j)` without carries.
+  Every such pair belongs to the equality triple `x_i=z_i=z_(i+j)`;
+  each triple is split between the two sides.
+- Fixing x_0=1 loses at most one free triple. Removing the excluded
+  solution x=1 loses at most one further bit in the logarithm of the
+  fooling-set size. Thus `k+1>=h/120-2`, giving the displayed bound.
+  When fewer than two free triples remain, the claimed bound is trivial. ∎
 
 **Provenance.** The shift / information-transfer idea is KNOWN. It is
 Brent–Kung, "The area-time complexity of binary multiplication", JACM 28
@@ -118,37 +134,44 @@ new result. The constant 1/120 is weak. The exact minimum of
 `Σ_i min(#A, #B)` is `n^2/9` at n = 6 and n = 12 (VERIFIED, L1), against the
 proved `n^2/120`.
 
-### Corollary T1.1: hard-wired N (PROVEN)
+### Conditional corollary T1.1: specified output pins and deletions
 
-Suppose a factoring network G0 for a given N is obtained from such an F by
-pinning the product bits to N. There are two cases.
+Let F satisfy the Boolean unfixed-multiplier hypotheses above. Two
+particular underlying graphs retain its lower bound after fixing N:
 
-- **Pinned bits stay as vertices** (unary constraints). Then `G0 = G_F` and
-  T1 applies directly.
-- **Pinned bits are propagated away** (`G0 = G_F - Z`). Suppose each z_k is
-  simplicial in G_F, for example because it occurs in one constraint of arity
-  at most w. Then `tw(G_F) <= max(tw(G0), w-1)`: hang a leaf bag holding z_k's
-  scope off a bag that contains its neighbour clique.
+- **Keep every vertex and add only unary output pins.** Then `G0=G_F`,
+  so T1 applies directly, regardless of N.
+- **Delete only the output vertices Z, retaining all other vertices and
+  edges.** Assume each output is simplicial in G_F and has degree at
+  most w-1. Eliminate the outputs first. Their remaining neighbour sets
+  are already cliques, so no fill is introduced and every such step has
+  width at most w-1. Hence
 
-  So `tw(G0) >= n'/120 - 1` whenever `w - 1` is below that. This covers the
-  standard Tseitin "multiplier + output unit clauses" SAT encoding (w = 3),
-  and any bit-level circuit that ends by comparing recovered product bits
-  with N.
+  ```
+  tw(G_F) <= max(tw(G_F-Z), w-1).
+  ```
 
-With `ell = 2n`, the bound is `tw >= ell/240 - O(1)`. That is
-`omega(ell/sqrt(log ell))`, so the repository's open question
-(`sanftenberg-transform-treewidth-floor.md`, last section;
-`sanftenberg-root-four-bit-circuits.md`, "global separator") is answered
-**negatively** for every whole bit circuit of that shape. This holds whatever
-the transforms, twiddles, pointwise products and carry recovery look like
-inside.
+  The T1 lower bound transfers when w-1 is smaller than that bound.
 
-Scope caveat: I did not inspect the upstream Lean sources. The claim applies
-if x and y occur as binary variables and N enters only as pinned product
-bits, which is how the repository notes describe the circuit ("canonical-word
-checks", "coefficient/carry recovery"). If x or y exist only in transform
-coordinates, T1 needs a re-check (CONJECTURE: the same bound holds whenever
-the binary x is recoverable by local constraints).
+This can apply to dedicated bounded-arity Tseitin outputs when their
+neighbour-clique condition is checked. **Arbitrary propagation is not
+identified with G_F-Z.** Substituting output constants can simplify
+constraints, remove additional edges and propagate constants into internal
+vertices; those changes are outside this graph argument. Merely ending a
+bit circuit with a comparison to N does not establish the simplicial-output
+or unchanged-graph hypotheses.
+
+For `ell=2n`, the unfixed lower bound is `ell/240-O(1)`; the corrected
+odd-only variant is `ell/480-O(1)`. These are larger than
+`ell/sqrt(log ell)` asymptotically for the covered graphs. They provide a
+negative answer for an underlying whole-bit-circuit separator only after
+its visible-input, Boolean-variable and output-graph hypotheses are checked.
+They do not settle every specialized factoring encoding.
+
+The upstream circuit sources were not independently audited here. If x or y
+exist only in transform coordinates, or the instance is rewritten after
+N is fixed, a new argument is required. Recoverability of binary inputs by
+some local constraints alone is not proved sufficient in this note.
 
 ### Upper bound and growth (PROVEN / VERIFIED)
 
@@ -156,7 +179,10 @@ the binary x is recoverable by local constraints).
   `<= 2n + O(1)`. Process the rows in order and, inside a row, the ripple
   positions in order. A bag holds all of x, y_j, the live accumulator window
   of n+1 bits, and O(1) adder wires. Each pinned z_k hangs off as a leaf.
-  Together with T1, the treewidth is `Theta(n) = Theta(ell)`.
+  Together with T1, the minimum possible width in the stated unfixed Boolean
+  encoding class is `Theta(n)=Theta(ell)`: every encoding has the lower
+  bound, and this array supplies an upper bound. Arbitrary encodings can
+  of course add irrelevant high-width components.
   (`sanftenberg-root-four-bit-circuits.md` already notes an `O(T)` path
   decomposition per product gadget.)
 - **VERIFIED** (`tw_multipliers.py`, output in `output_tw_multipliers.txt`):
@@ -174,17 +200,19 @@ the binary x is recoverable by local constraints).
   Small n cannot distinguish `n` from `n/sqrt(log n)`, so the asymptotic
   verdict rests on the proof, not on the fit.
 
-### What is still open (the only door)
+### Further representations and open questions
 
-**PROVEN (trivial):** suppose the tables may depend on N arbitrarily, with
-polynomial-time construction. If factoring were in P, unit constraints
-`x_i = bit_i(p)` would give width 0. So no superconstant treewidth lower
-bound for that model can be proved without proving factoring ∉ P.
+**Observation for solver-correct encodings:** if the tables may depend on
+N arbitrarily and factoring were in P, one could compute a factor and fix
+its bits by unary constraints, obtaining width zero. This concerns finding
+one valid witness, not preserving the exact relation of every factor pair.
+A lower bound in that broad solver model would therefore separate factoring
+from P.
 
 Rectangle methods also cannot reach it, because `[xy = N]` has at most d(N)
-solutions and therefore a cover of size d(N). So any encoding that beats T1
-must read N in a **spread** way: every balanced separator must see
-information about N that is precomputed globally.
+solutions and therefore a cover of size d(N). The unfixed shift fooling set therefore cannot simply be reused for the
+fixed-target relation. The graph corollary specifies particular shapes it
+can cover; it does not classify every way of escaping those hypotheses.
 
 **CONJECTURE:** the natural candidate, a residue-number-system encoding
 (local `r_i * s_i ≡ N mod m_i`, plus the global range checks `1 < x, y < 2^n`),
