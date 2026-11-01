@@ -1,0 +1,81 @@
+{
+  "status": "passed",
+  "core_q": 81,
+  "maximum_physical_height": 36,
+  "maximum_height_inventory_q": 294,
+  "known_core_orders_per_cut": 3359,
+  "unknown_core_orders_per_cut": 3202,
+  "rho_floor": [
+    17,
+    24
+  ],
+  "derivative_degree": 1935,
+  "mobius_sign_variations": 3,
+  "root_controls": [
+    {
+      "box": [
+        [
+          9081026427,
+          10000000000
+        ],
+        [
+          2270256607,
+          2500000000
+        ]
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "value_hashes": [
+        "f1f9af19db69ae1bfbe4afadfd7e4ee405996c5567f5a1ba245b5352619c8745",
+        "f2a1d3c21ff6693b9435bc466432860e17e4fd1304c0f083a138e0dd8db8bbc5"
+      ]
+    },
+    {
+      "box": [
+        [
+          9876550127,
+          10000000000
+        ],
+        [
+          617284383,
+          625000000
+        ]
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "value_hashes": [
+        "1a84ebd3350a7f8b140a9f70ab7782983377c41791a4273d2285210829c7afe4",
+        "14c00c296f08df0c2a2f82258ee33fc2918e001eb1b2806228601ce4e595a731"
+      ]
+    },
+    {
+      "box": [
+        [
+          4987801921,
+          5000000000
+        ],
+        [
+          9975603843,
+          10000000000
+        ]
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "value_hashes": [
+        "6ae3c562057a2e5450a24d697079ae6d93d63185fa7dee9e7561c849cf535fca",
+        "a263731463ffde42aef6a68bcc81299492581013b3137d23939c701146beeaca"
+      ]
+    }
+  ],
+  "precision_bits": 192,
+  "minimum_log_gap_lower": 600557868083443333992346191126445124265864003164297843266,
+  "endpoint_integer_power_gap_positive": true,
+  "core_receipt_sha256": "13ad5470f1a4d75c0fd9b428974111f4eb7a69df1caa1c50eec797917178c4ca",
+  "scope": "Balanced natural pressure of homogeneous coherent retractions on twelve modes retaining every coordinate state of height<24 and supported in height<=36, over any characteristic-two field. Not an arbitrary-weight or asymmetric obstruction."
+}
