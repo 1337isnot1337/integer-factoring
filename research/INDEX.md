@@ -1183,3 +1183,7 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 ## Wider grouping range with balanced carry relays
 
 - [A rectangular Fourier constructor with balanced carry relays](routed-rectangular-fourier-constructor.md)
+
+## Symmetric exterior operators and exact higher-axis profiles
+
+- [Symplectic block reduction for symmetric cube cut operators](cube-symmetric-exterior-blocks.md): one constant binary basis gives exact small blocks over every characteristic-two coefficient ring; full matrix and Toeplitz controls independently check the Smith profiles, and exact all-scale certificates reject the natural Cayley profile method through twelve axes.

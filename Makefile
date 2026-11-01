@@ -2141,3 +2141,7 @@ verify-product-power-weights:
 .PHONY: verify-routed-rectangular-fourier
 verify-routed-rectangular-fourier:
 	python3 tools/check_routed_rectangular_fourier.py --output /tmp/integer-factoring-routed-rectangular-fourier.json
+
+.PHONY: verify-symmetric-exterior
+verify-symmetric-exterior:
+	python3 tools/check_cube_symmetric_exterior_blocks.py --output /tmp/integer-factoring-cube-symmetric-exterior-blocks.json
