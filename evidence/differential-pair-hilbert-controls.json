@@ -1,0 +1,86 @@
+{
+  "status": "passed",
+  "weighted_cell_comparisons": [
+    {
+      "family": "mds_two",
+      "modes": 8,
+      "cap": 64,
+      "dimension": 92,
+      "graded_cells": 53
+    },
+    {
+      "family": "mds_two",
+      "modes": 12,
+      "cap": 16,
+      "dimension": 31,
+      "graded_cells": 21
+    },
+    {
+      "family": "mds_two",
+      "modes": 12,
+      "cap": 20,
+      "dimension": 48,
+      "graded_cells": 28
+    },
+    {
+      "family": "mds_two",
+      "modes": 12,
+      "cap": 22,
+      "dimension": 60,
+      "graded_cells": 32
+    },
+    {
+      "family": "mds_two",
+      "modes": 12,
+      "cap": 24,
+      "dimension": 74,
+      "graded_cells": 36
+    },
+    {
+      "family": "weighted_one",
+      "modes": 8,
+      "cap": 64,
+      "dimension": 136,
+      "graded_cells": 64
+    },
+    {
+      "family": "weighted_one",
+      "modes": 12,
+      "cap": 16,
+      "dimension": 32,
+      "graded_cells": 21
+    },
+    {
+      "family": "weighted_one",
+      "modes": 12,
+      "cap": 20,
+      "dimension": 52,
+      "graded_cells": 29
+    },
+    {
+      "family": "weighted_one",
+      "modes": 12,
+      "cap": 22,
+      "dimension": 66,
+      "graded_cells": 33
+    },
+    {
+      "family": "weighted_one",
+      "modes": 12,
+      "cap": 24,
+      "dimension": 83,
+      "graded_cells": 37
+    }
+  ],
+  "binary_nonzero_column_rank_two_matrices": 78,
+  "minimum_binary_dimension": 96,
+  "F4_MDS_dimension": 92,
+  "independent_binary_example_dimension": 96,
+  "source_sha256": {
+    "check_differential_pair_hilbert.py": "90903eaed7374e70bc5376f45dd16719fbbe6df091d499129f8a8b17fd532178",
+    "differential_pair_hilbert.py": "f382ec2c6acaf048ca6cbdea158bd67d0fa19c89082b0eca04c2876f5d2d61d4",
+    "coherent_differential_kernels_f4.py": "972b1dc0b59543b624707bb20ba077650ba1338830ea00702a30f54be81c9d89",
+    "coherent_hot_compounds_f4.py": "1a8798f6b9a038413ce1f8d27d435c7a642e84affc9ffb4461298c64d2708d76"
+  },
+  "scope": "Exact physical-code dimension and weighted Hilbert counts; a smaller dimension alone is not a better crossing pressure."
+}
