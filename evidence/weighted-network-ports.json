@@ -1,0 +1,21 @@
+{
+  "checker_sha256": "71330f9980dfb7813c3d1070e806966655d2b307c2350731e6192bbe04775c9f",
+  "composite_modulus_control": 4294967297,
+  "counts": {
+    "convolution_coefficients": 17344,
+    "copied_port_bits": 256,
+    "joined_products": 122,
+    "reject_controls": 508,
+    "transform_inputs": 508
+  },
+  "exact_parameter_cases": 117,
+  "scope": "finite source-port and compiler controls; no new factoring exponent",
+  "source_commit": "c91cc3f4947caca8977e81a5d14244f73b5ae2b1",
+  "status": "pass",
+  "transform_cases_by_scale": {
+    "0": 256,
+    "1": 156,
+    "2": 56,
+    "3": 40
+  }
+}

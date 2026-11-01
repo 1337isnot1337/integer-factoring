@@ -1,0 +1,95 @@
+{
+  "status": "passed",
+  "records": [
+    {
+      "p": 3,
+      "q": 3,
+      "t": 2,
+      "kappa": 1,
+      "auxiliary_order": 9,
+      "row_profile": [
+        1,
+        54
+      ],
+      "column_profile": [
+        27,
+        1
+      ],
+      "direct_opposite_ranks_c1_r2": [
+        27,
+        54
+      ],
+      "endpoint_checks": 81
+    },
+    {
+      "p": 3,
+      "q": 6,
+      "t": 2,
+      "kappa": 1,
+      "auxiliary_order": 36,
+      "row_profile": [
+        1,
+        756
+      ],
+      "column_profile": [
+        540,
+        1
+      ],
+      "direct_opposite_ranks_c1_r2": [],
+      "endpoint_checks": 1296
+    },
+    {
+      "p": 3,
+      "q": 5,
+      "t": 2,
+      "kappa": 2,
+      "auxiliary_order": 25,
+      "row_profile": [
+        1,
+        250
+      ],
+      "column_profile": [
+        250,
+        1
+      ],
+      "direct_opposite_ranks_c1_r2": [],
+      "endpoint_checks": 625
+    },
+    {
+      "p": 3,
+      "q": 8,
+      "t": 2,
+      "kappa": 2,
+      "auxiliary_order": 64,
+      "row_profile": [
+        1,
+        1792
+      ],
+      "column_profile": [
+        1792,
+        1
+      ],
+      "direct_opposite_ranks_c1_r2": [],
+      "endpoint_checks": 4096
+    },
+    {
+      "p": 5,
+      "q": 5,
+      "t": 4,
+      "kappa": 1,
+      "auxiliary_order": 25,
+      "row_profile": [
+        1,
+        375
+      ],
+      "column_profile": [
+        250,
+        1
+      ],
+      "direct_opposite_ranks_c1_r2": [],
+      "endpoint_checks": 625
+    }
+  ],
+  "seconds": 0.11525854800129309,
+  "scope": "General trace-shear catalytic crossing, exact prime-field endpoint and opposite ranks. Odd characteristic has asymmetric ranks unless special parameter congruences hold."
+}

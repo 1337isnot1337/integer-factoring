@@ -250,6 +250,8 @@ Full `make verify` passed for source `08bb5b71c7b6cfc987ed6c773ca4fe8b6cd2b6d5`:
 
 The subsequent projector checkpoint closes arbitrary energy-block idempotents and every positive lattice depth. The one-step pole/rank system has exact all-field dimension chain `69 -> 13 -> 2`; for depth at least two the first two cold/infinity jets alone give `69 -> 33 -> 10 -> 3 -> 2`, without a leading-rank condition. The terminal space consists of the two neutral support-component projections, so idempotence gives exactly four solutions and every transformed tensor is unchanged. The standard-library checker regenerates all formal polynomial row spaces and Frobenius-root consequences and controls 20,000 entries against independent dense F4 multiplication. This is a new focused replay and ordinary proof, not a rerun of the expanded whole suite, a finite-field census, or a factoring lower bound. Other finite places and interacting projection flags remain open.
 
+The stronger one-step replay removes the cold-place condition entirely and gives `69 -> 14 -> 2`. It proves the same four-projector conclusion for every scalar rational multiplier `f(t)=t+O(1)` at infinity, including `t-a` at every finite point over every characteristic-two field. Rational multipliers of degree zero at infinity remain a distinct target; the note gives their exact two-finite-place polynomiality interface. The focused projector and documentation checks passed after this extension.
+
 ## 2026-11-01: Single-bit weight-one coefficient decoder and session handoff
 
 Exact sources `546637a` and `4c2f733` give the ordinary precision reductions and the binary decoder in [the weight-one note](../research/weight-one-divisor-coefficients.md), Section 4.1. For every odd prime level, one bit per cyclotomic coordinate suffices; the full algebra modulo two retains essential nilpotent information. The proof establishes injectivity by cyclotomic root multiplicities, and the implementation uses polynomial-time binary Gaussian elimination. Full integral normalization needs only modulus four. The paired CRT reconstruction credit to Discussion reply 19324705 and the Garg--Schost interpolation attribution are retained.
@@ -291,3 +293,11 @@ unproved. Small experimental bases are not presented as satisfying the enormous
 uniform analytic cutoff. Partial failure is not a primality certificate, and
 passing finite controls is not a proof of a stronger worst-case exponent.
 <!-- beyond-half-review-20261101:end -->
+
+## 2026-11-01: PR #30 recovery and Smith integration
+
+Exact source head `28105165edb8e9a0427468dc833f3c09bc0a7fb7`, with original source attribution and AI disclosures retained. Restored the 96 missing files and retained its distinct integral Schur derivation verbatim as `research/integral-schur-crossing-pr30.md`, rather than overwriting the broader PR #23 derivation. The two new dependent notes point to that companion; the existing Schur note cross-links it. The 22-note checkpoint index identifies the source. The k6 status sentence now correctly qualifies its separate `1/30` endpoint as k6; current half-rate evidence wording is unchanged.
+
+Restored parity/recovery/constructive default targets and retained optional native, Schur-rank, exterior and density targets. The shared `verify-polynomial-native` target keeps its previous command and gains the source checker. Full `make verify` passed on the integration tree: 710 Markdown files, 63 unit tests, five crossing tests, the 21 new parity/recovery/constructive commands and all existing default gates. Ordinary `git diff --check` passed.
+
+Not newly run: the larger optional native, Schur-rank, exterior/density or Lean targets. This integration preserves ordinary construction proofs and their finite controls; it is not independent mathematical acceptance, a PR approval review, or an exponent above `1/2`.

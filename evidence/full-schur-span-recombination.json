@@ -1,0 +1,100 @@
+{
+  "checker_sha256": "7254f701882942ba568f87ae451a8dcb39aecb6d445f8ec233c59f11d15d8c38",
+  "native_source_sha256": "4db962c52202cf42fbc4d7d253bb564dd9c07b3f4afce31a05db0f3ef7848f84",
+  "records": [
+    {
+      "basis_original_shift_masks": [
+        1,
+        4,
+        20,
+        64,
+        257,
+        1088,
+        4353,
+        65537
+      ],
+      "best_two_piece_cost": 20.491933384829668,
+      "best_two_piece_split": 1,
+      "combinations": 256,
+      "dijkstra_popped": 230,
+      "half_threshold_approximation": 9.738517742335421,
+      "input_name": "homogeneous-h4-pieces.json",
+      "input_sha256": "9ac909479d12b52d987bd1ac01b57855b38931a6fb3b0746ff6ccd898477702d",
+      "integer_scale": 1000000,
+      "lower_bound_exceeds_q_to_three_halves": true,
+      "minimum_cost_lower_integer": 20491933,
+      "pieces": [
+        {
+          "column_rank": 10,
+          "mask": 198,
+          "original_shift_mask": 69904,
+          "row_rank": 24
+        },
+        {
+          "column_rank": 25,
+          "mask": 1,
+          "original_shift_mask": 1,
+          "row_rank": 1
+        }
+      ],
+      "q": 5,
+      "selected_cost": 20.491933384829668,
+      "selected_cost_upper_integer": 20491934,
+      "span_dimension": 8,
+      "status": "pass",
+      "target": 199,
+      "weight": 4
+    },
+    {
+      "basis_original_shift_masks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        48,
+        80,
+        240,
+        280,
+        544,
+        1088,
+        3544,
+        4368,
+        69352
+      ],
+      "best_two_piece_cost": 20.491933384829668,
+      "best_two_piece_split": 4097,
+      "combinations": 16384,
+      "dijkstra_popped": 11191,
+      "half_threshold_approximation": 9.738517742335421,
+      "input_name": "full-h4-pieces.json",
+      "input_sha256": "f341f989f74504c1e12896eb7cad476fc11a2733cf95d6bc51b9e19be00ec2bf",
+      "integer_scale": 1000000,
+      "lower_bound_exceeds_q_to_three_halves": true,
+      "minimum_cost_lower_integer": 20491933,
+      "pieces": [
+        {
+          "column_rank": 24,
+          "mask": 4097,
+          "original_shift_mask": 4369,
+          "row_rank": 10
+        },
+        {
+          "column_rank": 1,
+          "mask": 11016,
+          "original_shift_mask": 65536,
+          "row_rank": 25
+        }
+      ],
+      "q": 5,
+      "selected_cost": 20.491933384829668,
+      "selected_cost_upper_integer": 20491934,
+      "span_dimension": 14,
+      "status": "pass",
+      "target": 15113,
+      "weight": 4
+    }
+  ],
+  "scope": "Complete finite coefficient spans only; no general factoring lower bound.",
+  "status": "pass"
+}

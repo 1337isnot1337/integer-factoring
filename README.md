@@ -167,6 +167,8 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs five groups on 
 
 ## Current research frontier
 
+- [PR #30 recovery and Smith checkpoint](research/INDEX.md#retained-pr-30-recovery-and-smith-checkpoint), including a [parallel integral Schur derivation](research/integral-schur-crossing-pr30.md): fixed-characteristic recovery interfaces, exact constructions and scoped Smith/gauge controls. Both Schur notes and their attributions are retained. No exponent above `1/2` or new Lean result is claimed.
+
 - [Ward/Pfaffian entry queries](research/ward-pfaffian-entry-queries.md), [simultaneous seed endpoint](research/simultaneous-seed-endpoint.md), and the [PR #29 checkpoint](research/INDEX.md#retained-pr-29-ward-and-crossing-checkpoint): exact entry constructions, effective interfaces and scoped crossing barriers. Entry evaluation alone is not a favorable rank bound. `verify-constructions` is in the default gate; larger native/extended screens remain separate. No stronger complete factoring exponent is claimed.
 
 - [Full binary conservation-kernel barrier](research/full-conservation-rank-sum-barrier.md) and [PR #27 checkpoint](research/INDEX.md#retained-pr-27-conservation-and-crossing-checkpoint): ordinary rank-sum theorems, transfers and exact finite controls. The all-kernel characteristic-two theorem and the [elementary all-code bound](research/difference-support-rank-floor.md) have distinct scopes. No general factoring lower bound, new Lean result, or exponent above `1/2` is claimed.
@@ -604,8 +606,10 @@ original pole bound into 12 effective tensors; both profiles are
 dominated by the reference at every scale. A subsequent all-field
 classification also closes every energy-projector modification at
 every positive depth under the stated conditions; the only four
-projectors preserve the tensor. Interacting subspaces and other
-finite places remain open. Run `make verify-joint-monomial-lattices`
+projectors preserve the tensor. The one-step infinity conditions alone
+also close every normalized scalar multiplier `f(t)=t+O(1)`.
+Interacting subspaces and rational changes of degree zero at infinity
+remain open. Run `make verify-joint-monomial-lattices`
 and `make verify-joint-projector-lattices`.
 
 The [group-shear extension](research/group-shear-crossings.md) implements

@@ -281,8 +281,52 @@ make verify-joint-projector-lattices
 python3 tools/check_joint_projector_lattices.py --generate
 ```
 
+### 4.4 One step at infinity needs no cold-place condition
+
+In fact the one-step result has a stronger version. Drop the cold
+condition `(I-P)A_0P=0` entirely. Idempotence, `PC_0(I-P)=0` and
+leading rank one in (11) already force the same four neutral
+projections. Repeating the formal-monomial elimination without the
+cold equations gives the exact all-field chain
+
+```text
+69 -> 14 -> 2.
+```
+
+The checker replays this third system too. Thus the infinity condition
+alone closes a larger rational family: for any scalar rational
+function `f(t)=t+O(1)` at infinity, set `U=f(t)P+(I-P)`. Its conjugation
+formula is
+
+```math
+C_U=PCP+QCQ+f(z^{-1})PCQ+f(z^{-1})^{-1}QCP.            \tag{16}
+```
+
+No new pole forces `PC_0Q=0`, and the leading coefficient is exactly
+(9), independent of every lower term of `f`. Hence leading rank one
+forces `P` to be one of the four neutral projections, and (16) is the
+original tensor. This covers `f(t)=t-a` at **every** finite point `a`
+in every field in scope, even before polynomiality is required.
+Negative unit depths follow by interchanging `P,Q` and removing a
+common scalar factor, which cancels from conjugation.
+
+It does not cover scalar functions of degree zero at infinity. For
+example `f(t)=(t-a)/(t-b)`, `a!=b`, gives a gauge tending to `I` at
+infinity. Polynomiality requires the two exact finite-place conditions
+
+```math
+QA(a)P=0,\qquad PA(b)Q=0.                             \tag{17}
+```
+
+If `a,b` are both nonzero and different from one, the gauge is regular
+and invertible at zero and one. It therefore preserves the entire
+zero-place Smith profile and the strict crossing endpoint; its
+leading infinity coefficient is also unchanged. These conditions give
+a distinct rational-gauge construction target. They do not establish
+the existence of a nontrivial projector or an improved profile.
+
 This theorem leaves interacting sequences of different lattice
-subspaces, modifications at other finite places, one-step changes
+subspaces, rational changes of degree zero at infinity, one-step changes
 allowing a higher leading rank, and changes allowing a worse pole
 outside its scope. This work used substantial OpenAI assistant support
 and retains the Gaussian reference attribution. No new Lean work,
