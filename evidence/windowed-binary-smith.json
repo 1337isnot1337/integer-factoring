@@ -1,0 +1,2276 @@
+{
+  "complete_affine_equation_controls": [
+    {
+      "complete_equations": 124,
+      "heights": [
+        [
+          0,
+          -1
+        ],
+        [
+          -2,
+          1
+        ],
+        [
+          2,
+          -2
+        ],
+        [
+          -2,
+          -2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          -2,
+          -1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "source": [
+        [
+          8,
+          0
+        ],
+        [
+          15,
+          0
+        ],
+        [
+          12,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          12,
+          0
+        ],
+        [
+          13,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          9,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          14,
+          0
+        ]
+      ],
+      "trial": 0,
+      "window": [
+        {
+          "attempts": [
+            {
+              "adequate": true,
+              "all_pivots_resolved": true,
+              "maximum_order": 12,
+              "precision": 64
+            }
+          ],
+          "internal_precision": 64,
+          "output_precision": 15,
+          "source_determinant_degree_bound": 33
+        },
+        {
+          "attempts": [
+            {
+              "adequate": true,
+              "all_pivots_resolved": true,
+              "maximum_order": 6,
+              "precision": 52
+            }
+          ],
+          "internal_precision": 52,
+          "output_precision": 9,
+          "source_determinant_degree_bound": 24
+        }
+      ]
+    },
+    {
+      "complete_equations": 120,
+      "heights": [
+        [
+          0,
+          -1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          -2
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          -2,
+          1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          -2,
+          2
+        ]
+      ],
+      "source": [
+        [
+          1,
+          0
+        ],
+        [
+          15,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          12,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          14,
+          0
+        ]
+      ],
+      "trial": 1,
+      "window": [
+        {
+          "attempts": [
+            {
+              "adequate": true,
+              "all_pivots_resolved": true,
+              "maximum_order": 9,
+              "precision": 64
+            }
+          ],
+          "internal_precision": 64,
+          "output_precision": 12,
+          "source_determinant_degree_bound": 35
+        },
+        {
+          "attempts": [
+            {
+              "adequate": true,
+              "all_pivots_resolved": true,
+              "maximum_order": 12,
+              "precision": 64
+            }
+          ],
+          "internal_precision": 64,
+          "output_precision": 15,
+          "source_determinant_degree_bound": 40
+        }
+      ]
+    },
+    {
+      "complete_equations": 162,
+      "heights": [
+        [
+          -1,
+          -2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          -1,
+          1
+        ]
+      ],
+      "source": [
+        [
+          8,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          15,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          12,
+          0
+        ],
+        [
+          12,
+          0
+        ],
+        [
+          9,
+          0
+        ],
+        [
+          8,
+          0
+        ]
+      ],
+      "trial": 2,
+      "window": [
+        {
+          "attempts": [
+            {
+              "adequate": true,
+              "all_pivots_resolved": true,
+              "maximum_order": 8,
+              "precision": 32
+            }
+          ],
+          "internal_precision": 32,
+          "output_precision": 11,
+          "source_determinant_degree_bound": 14
+        },
+        {
+          "attempts": [
+            {
+              "adequate": true,
+              "all_pivots_resolved": true,
+              "maximum_order": 8,
+              "precision": 64
+            }
+          ],
+          "internal_precision": 64,
+          "output_precision": 11,
+          "source_determinant_degree_bound": 32
+        }
+      ]
+    },
+    {
+      "complete_equations": 108,
+      "heights": [
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          -2,
+          -2
+        ],
+        [
+          -2,
+          -2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          -2,
+          2
+        ]
+      ],
+      "source": [
+        [
+          8,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          15,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          9,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          15,
+          0
+        ],
+        [
+          12,
+          0
+        ],
+        [
+          9,
+          0
+        ],
+        [
+          15,
+          0
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          14,
+          0
+        ]
+      ],
+      "trial": 3,
+      "window": [
+        {
+          "attempts": [
+            {
+              "adequate": true,
+              "all_pivots_resolved": true,
+              "maximum_order": 4,
+              "precision": 52
+            }
+          ],
+          "internal_precision": 52,
+          "output_precision": 7,
+          "source_determinant_degree_bound": 24
+        },
+        {
+          "attempts": [
+            {
+              "adequate": true,
+              "all_pivots_resolved": true,
+              "maximum_order": 6,
+              "precision": 64
+            }
+          ],
+          "internal_precision": 64,
+          "output_precision": 9,
+          "source_determinant_degree_bound": 31
+        }
+      ]
+    },
+    {
+      "complete_equations": 125,
+      "heights": [
+        [
+          -2,
+          -2
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          -2,
+          -2
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "source": [
+        [
+          11,
+          0
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          9,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          15,
+          0
+        ],
+        [
+          9,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          15,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "trial": 4,
+      "window": [
+        {
+          "attempts": [
+            {
+              "adequate": true,
+              "all_pivots_resolved": true,
+              "maximum_order": 9,
+              "precision": 56
+            }
+          ],
+          "internal_precision": 56,
+          "output_precision": 12,
+          "source_determinant_degree_bound": 26
+        },
+        {
+          "attempts": [
+            {
+              "adequate": true,
+              "all_pivots_resolved": true,
+              "maximum_order": 6,
+              "precision": 46
+            }
+          ],
+          "internal_precision": 46,
+          "output_precision": 9,
+          "source_determinant_degree_bound": 21
+        }
+      ]
+    },
+    {
+      "complete_equations": 136,
+      "heights": [
+        [
+          0,
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          -2,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          -1
+        ]
+      ],
+      "source": [
+        [
+          13,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          12,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          12,
+          0
+        ],
+        [
+          8,
+          0
+        ]
+      ],
+      "trial": 5,
+      "window": [
+        {
+          "attempts": [
+            {
+              "adequate": true,
+              "all_pivots_resolved": true,
+              "maximum_order": 7,
+              "precision": 58
+            }
+          ],
+          "internal_precision": 58,
+          "output_precision": 10,
+          "source_determinant_degree_bound": 27
+        },
+        {
+          "attempts": [
+            {
+              "adequate": true,
+              "all_pivots_resolved": true,
+              "maximum_order": 10,
+              "precision": 64
+            }
+          ],
+          "internal_precision": 64,
+          "output_precision": 13,
+          "source_determinant_degree_bound": 30
+        }
+      ]
+    }
+  ],
+  "complete_small_matrix_controls": 36,
+  "forced_retry": {
+    "attempts": [
+      {
+        "adequate": false,
+        "all_pivots_resolved": false,
+        "maximum_order": null,
+        "precision": 64
+      },
+      {
+        "adequate": false,
+        "all_pivots_resolved": true,
+        "maximum_order": 100,
+        "precision": 128
+      },
+      {
+        "adequate": true,
+        "all_pivots_resolved": true,
+        "maximum_order": 100,
+        "precision": 205
+      }
+    ],
+    "internal_precision": 205,
+    "output_precision": 104,
+    "source_determinant_degree_bound": 100
+  },
+  "frame_and_diagonal_coefficients_compared": 1044,
+  "matrix_controls": [
+    {
+      "orders": [
+        0,
+        0
+      ],
+      "size": 2,
+      "source": [
+        [
+          13,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "trial": 0,
+      "window": {
+        "attempts": [
+          {
+            "adequate": true,
+            "all_pivots_resolved": true,
+            "maximum_order": 0,
+            "precision": 12
+          }
+        ],
+        "internal_precision": 12,
+        "output_precision": 5,
+        "source_determinant_degree_bound": 3
+      }
+    },
+    {
+      "orders": [
+        0,
+        1
+      ],
+      "size": 2,
+      "source": [
+        [
+          1,
+          17
+        ],
+        [
+          0,
+          22
+        ]
+      ],
+      "trial": 1,
+      "window": {
+        "attempts": [
+          {
+            "adequate": true,
+            "all_pivots_resolved": true,
+            "maximum_order": 1,
+            "precision": 22
+          }
+        ],
+        "internal_precision": 22,
+        "output_precision": 6,
+        "source_determinant_degree_bound": 8
+      }
+    },
+    {
+      "orders": [
+        0,
+        4
+      ],
+      "size": 2,
+      "source": [
+        [
+          1,
+          30
+        ],
+        [
+          0,
+          16
+        ]
+      ],
+      "trial": 2,
+      "window": {
+        "attempts": [
+          {
+            "adequate": true,
+            "all_pivots_resolved": true,
+            "maximum_order": 4,
+            "precision": 22
+          }
+        ],
+        "internal_precision": 22,
+        "output_precision": 9,
+        "source_determinant_degree_bound": 8
+      }
+    },
+    {
+      "orders": [
+        0,
+        0
+      ],
+      "size": 2,
+      "source": [
+        [
+          1,
+          9
+        ],
+        [
+          9,
+          4
+        ]
+      ],
+      "trial": 3,
+      "window": {
+        "attempts": [
+          {
+            "adequate": true,
+            "all_pivots_resolved": true,
+            "maximum_order": 0,
+            "precision": 18
+          }
+        ],
+        "internal_precision": 18,
+        "output_precision": 5,
+        "source_determinant_degree_bound": 6
+      }
+    },
+    {
+      "orders": [
+        0,
+        2
+      ],
+      "size": 2,
+      "source": [
+        [
+          14,
+          18
+        ],
+        [
+          29,
+          25
+        ]
+      ],
+      "trial": 4,
+      "window": {
+        "attempts": [
+          {
+            "adequate": true,
+            "all_pivots_resolved": true,
+            "maximum_order": 2,
+            "precision": 22
+          }
+        ],
+        "internal_precision": 22,
+        "output_precision": 7,
+        "source_determinant_degree_bound": 8
+      }
+    },
+    {
+      "orders": [
+        0,
+        0
+      ],
+      "size": 2,
+      "source": [
+        [
+          14,
+          17
+        ],
+        [
+          27,
+          1
+        ]
+      ],
+      "trial": 5,
+      "window": {
+        "attempts": [
+          {
+            "adequate": true,
+            "all_pivots_resolved": true,
+            "maximum_order": 0,
+            "precision": 22
+          }
+        ],
+        "internal_precision": 22,
+        "output_precision": 5,
+        "source_determinant_degree_bound": 8
+      }
+    },
+    {
+      "orders": [
+        0,
+        0
+      ],
+      "size": 2,
+      "source": [
+        [
+          1,
+          18
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "trial": 6,
+      "window": {
+        "attempts": [
+          {
+            "adequate": true,
+            "all_pivots_resolved": true,
+            "maximum_order": 0,
+            "precision": 14
+          }
+        ],
+        "internal_precision": 14,
+        "output_precision": 5,
+        "source_determinant_degree_bound": 4
+      }
+    },
+    {
+      "orders": [
+        0,
+        1
+      ],
+      "size": 2,
+      "source": [
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "trial": 7,
+      "window": {
+        "attempts": [
+          {
+            "adequate": true,
+            "all_pivots_resolved": true,
+            "maximum_order": 1,
+            "precision": 10
+          }
+        ],
+        "internal_precision": 10,
+        "output_precision": 6,
+        "source_determinant_degree_bound": 2
+      }
+    },
+    {
+      "orders": [
+        0,
+        0,
+        5
+      ],
+      "size": 3,
+      "source": [
+        [
+          1,
+          12,
+          0
+        ],
+        [
+          0,
+          16,
+          18
+        ],
+        [
+          17,
+          20,
+          21
+        ]
+      ],
+      "trial": 0,
+      "window": {
+        "attempts": [
+          {
+            "adequate": true,
+            "all_pivots_resolved": true,
+            "maximum_order": 5,
+            "precision": 28
+          }
+        ],
+        "internal_precision": 28,
+        "output_precision": 10,
+        "source_determinant_degree_bound": 11
+      }
+    },
+    {
+      "orders": [
+        0,
+        0,
+        1
+      ],
+      "size": 3,
+      "source": [
+        [
+          8,
+          18,
+          24
+        ],
+        [
+          23,
+          13,
+          0
+        ],
+        [
+          0,
+          0,
+          19
+        ]
+      ],
+      "trial": 1,
+      "window": {
+        "attempts": [
+          {
+            "adequate": true,
+            "all_pivots_resolved": true,
+            "maximum_order": 1,
+            "precision": 30
+          }
+        ],
+        "internal_precision": 30,
+        "output_precision": 6,
+        "source_determinant_degree_bound": 12
+      }
+    },
+    {
+      "orders": [
+        0,
+        0,
+        1
+      ],
+      "size": 3,
+      "source": [
+        [
+          11,
+          0,
+          0
+        ],
+        [
+          20,
+          1,
+          18
+        ],
+        [
+          5,
+          0,
+          2
+        ]
+      ],
+      "trial": 2,
+      "window": {
+        "attempts": [
+          {
+            "adequate": true,
+            "all_pivots_resolved": true,
+            "maximum_order": 1,
+            "precision": 24
+          }
+        ],
+        "internal_precision": 24,
+        "output_precision": 6,
+        "source_determinant_degree_bound": 9
+      }
+    },
+    {
+      "orders": [
+        0,
+        0,
+        1
+      ],
+      "size": 3,
+      "source": [
+        [
+          1,
+          0,
+          6
+        ],
+        [
+          20,
+          1,
+          0
+        ],
+        [
+          29,
+          5,
+          4
+        ]
+      ],
+      "trial": 3,
+      "window": {
+        "attempts": [
+          {
+            "adequate": true,
+            "all_pivots_resolved": true,
+            "maximum_order": 1,
+            "precision": 26
+          }
+        ],
+        "internal_precision": 26,
+        "output_precision": 6,
+        "source_determinant_degree_bound": 10
+      }
+    },
+    {
+      "orders": [
+        0,
+        0,
+        0
+      ],
+      "size": 3,
+      "source": [
+        [
+          26,
+          3,
+          0
+        ],
+        [
+          3,
+          8,
+          27
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "trial": 4,
+      "window": {
+        "attempts": [
+          {
+            "adequate": true,
+            "all_pivots_resolved": true,
+            "maximum_order": 0,
+            "precision": 22
+          }
+        ],
+        "internal_precision": 22,
+        "output_precision": 5,
+        "source_determinant_degree_bound": 8
+      }
+    },
+    {
+      "orders": [
+        0,
+        0,
+        2
+      ],
+      "size": 3,
+      "source": [
+        [
+          16,
+          6,
+          23
+        ],
+        [
+          9,
+          1,
+          18
+        ],
+        [
+          6,
+          0,
+          1
+        ]
+      ],
+      "trial": 5,
+      "window": {
+        "attempts": [
+          {
+            "adequate": true,
+            "all_pivots_resolved": true,
+            "maximum_order": 2,
+            "precision": 26
+          }
+        ],
+        "internal_precision": 26,
+        "output_precision": 7,
+        "source_determinant_degree_bound": 10
+      }
+    },
+    {
+      "orders": [
+        0,
+        0,
+        0
+      ],
+      "size": 3,
+      "source": [
+        [
+          1,
+          20,
+          0
+        ],
+        [
+          0,
+          7,
+          0
+        ],
+        [
+          0,
+          24,
+          1
+        ]
+      ],
+      "trial": 6,
+      "window": {
+        "attempts": [
+          {
+            "adequate": true,
+            "all_pivots_resolved": true,
+            "maximum_order": 0,
+            "precision": 26
+          }
+        ],
+        "internal_precision": 26,
+        "output_precision": 5,
+        "source_determinant_degree_bound": 10
+      }
+    },
+    {
+      "orders": [
+        0,
+        0,
+        0
+      ],
+      "size": 3,
+      "source": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          10,
+          1,
+          9
+        ],
+        [
+          20,
+          0,
+          1
+        ]
+      ],
+      "trial": 7,
+      "window": {
+        "attempts": [
+          {
+            "adequate": true,
+            "all_pivots_resolved": true,
+            "maximum_order": 0,
+            "precision": 20
+          }
+        ],
+        "internal_precision": 20,
+        "output_precision": 5,
+        "source_determinant_degree_bound": 7
+      }
+    },
+    {
+      "orders": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "size": 4,
+      "source": [
+        [
+          4,
+          23,
+          0,
+          0
+        ],
+        [
+          10,
+          22,
+          0,
+          24
+        ],
+        [
+          0,
+          0,
+          2,
+          18
+        ],
+        [
+          0,
+          29,
+          20,
+          1
+        ]
+      ],
+      "trial": 0,
+      "window": {
+        "attempts": [
+          {
+            "adequate": true,
+            "all_pivots_resolved": true,
+            "maximum_order": 1,
+            "precision": 38
+          }
+        ],
+        "internal_precision": 38,
+        "output_precision": 6,
+        "source_determinant_degree_bound": 16
+      }
+    },
+    {
+      "orders": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "size": 4,
+      "source": [
+        [
+          1,
+          18,
+          27,
+          23
+        ],
+        [
+          0,
+          2,
+          0,
+          27
+        ],
+        [
+          0,
+          29,
+          1,
+          15
+        ],
+        [
+          0,
+          24,
+          17,
+          19
+        ]
+      ],
+      "trial": 1,
+      "window": {
+        "attempts": [
+          {
+            "adequate": true,
+            "all_pivots_resolved": true,
+            "maximum_order": 0,
+            "precision": 38
+          }
+        ],
+        "internal_precision": 38,
+        "output_precision": 5,
+        "source_determinant_degree_bound": 16
+      }
+    },
+    {
+      "orders": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "size": 4,
+      "source": [
+        [
+          1,
+          24,
+          27,
+          12
+        ],
+        [
+          6,
+          31,
+          17,
+          18
+        ],
+        [
+          18,
+          10,
+          4,
+          0
+        ],
+        [
+          9,
+          0,
+          10,
+          1
+        ]
+      ],
+      "trial": 2,
+      "window": {
+        "attempts": [
+          {
+            "adequate": true,
+            "all_pivots_resolved": true,
+            "maximum_order": 2,
+            "precision": 36
+          }
+        ],
+        "internal_precision": 36,
+        "output_precision": 7,
+        "source_determinant_degree_bound": 15
+      }
+    },
+    {
+      "orders": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "size": 4,
+      "source": [
+        [
+          1,
+          9,
+          15,
+          5
+        ],
+        [
+          0,
+          1,
+          17,
+          0
+        ],
+        [
+          0,
+          10,
+          4,
+          0
+        ],
+        [
+          27,
+          9,
+          20,
+          25
+        ]
+      ],
+      "trial": 3,
+      "window": {
+        "attempts": [
+          {
+            "adequate": true,
+            "all_pivots_resolved": true,
+            "maximum_order": 2,
+            "precision": 34
+          }
+        ],
+        "internal_precision": 34,
+        "output_precision": 7,
+        "source_determinant_degree_bound": 14
+      }
+    },
+    {
+      "orders": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "size": 4,
+      "source": [
+        [
+          14,
+          20,
+          15,
+          29
+        ],
+        [
+          30,
+          22,
+          18,
+          5
+        ],
+        [
+          9,
+          0,
+          25,
+          0
+        ],
+        [
+          24,
+          0,
+          30,
+          31
+        ]
+      ],
+      "trial": 4,
+      "window": {
+        "attempts": [
+          {
+            "adequate": true,
+            "all_pivots_resolved": true,
+            "maximum_order": 1,
+            "precision": 38
+          }
+        ],
+        "internal_precision": 38,
+        "output_precision": 6,
+        "source_determinant_degree_bound": 16
+      }
+    },
+    {
+      "orders": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "size": 4,
+      "source": [
+        [
+          1,
+          29,
+          18,
+          23
+        ],
+        [
+          17,
+          1,
+          10,
+          0
+        ],
+        [
+          5,
+          20,
+          1,
+          30
+        ],
+        [
+          5,
+          0,
+          0,
+          1
+        ]
+      ],
+      "trial": 5,
+      "window": {
+        "attempts": [
+          {
+            "adequate": true,
+            "all_pivots_resolved": true,
+            "maximum_order": 0,
+            "precision": 34
+          }
+        ],
+        "internal_precision": 34,
+        "output_precision": 5,
+        "source_determinant_degree_bound": 14
+      }
+    },
+    {
+      "orders": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "size": 4,
+      "source": [
+        [
+          19,
+          0,
+          18,
+          12
+        ],
+        [
+          18,
+          31,
+          9,
+          0
+        ],
+        [
+          29,
+          29,
+          25,
+          30
+        ],
+        [
+          27,
+          0,
+          23,
+          14
+        ]
+      ],
+      "trial": 6,
+      "window": {
+        "attempts": [
+          {
+            "adequate": true,
+            "all_pivots_resolved": true,
+            "maximum_order": 1,
+            "precision": 38
+          }
+        ],
+        "internal_precision": 38,
+        "output_precision": 6,
+        "source_determinant_degree_bound": 16
+      }
+    },
+    {
+      "orders": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "size": 4,
+      "source": [
+        [
+          2,
+          0,
+          3,
+          3
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          30,
+          5,
+          7,
+          0
+        ],
+        [
+          0,
+          0,
+          17,
+          1
+        ]
+      ],
+      "trial": 7,
+      "window": {
+        "attempts": [
+          {
+            "adequate": true,
+            "all_pivots_resolved": true,
+            "maximum_order": 1,
+            "precision": 24
+          }
+        ],
+        "internal_precision": 24,
+        "output_precision": 6,
+        "source_determinant_degree_bound": 9
+      }
+    },
+    {
+      "family": "polynomial-unit diagonal",
+      "orders": [
+        2,
+        9
+      ],
+      "size": 2,
+      "source": [
+        [
+          1960811939036,
+          245246653460
+        ],
+        [
+          208591656165296,
+          26050136047632
+        ]
+      ],
+      "trial": 0,
+      "window": {
+        "attempts": [
+          {
+            "adequate": true,
+            "all_pivots_resolved": true,
+            "maximum_order": 9,
+            "precision": 64
+          }
+        ],
+        "internal_precision": 64,
+        "output_precision": 14,
+        "source_determinant_degree_bound": 87
+      }
+    },
+    {
+      "family": "polynomial-unit diagonal",
+      "orders": [
+        2,
+        9
+      ],
+      "size": 2,
+      "source": [
+        [
+          371907807057289826011672,
+          2643375508624761098692
+        ],
+        [
+          6368383129968728460776,
+          53044990880202759148
+        ]
+      ],
+      "trial": 1,
+      "window": {
+        "attempts": [
+          {
+            "adequate": true,
+            "all_pivots_resolved": true,
+            "maximum_order": 9,
+            "precision": 64
+          }
+        ],
+        "internal_precision": 64,
+        "output_precision": 14,
+        "source_determinant_degree_bound": 150
+      }
+    },
+    {
+      "family": "polynomial-unit diagonal",
+      "orders": [
+        2,
+        9
+      ],
+      "size": 2,
+      "source": [
+        [
+          1312233033980956,
+          46778002743516
+        ],
+        [
+          217176372966346588,
+          8076987982643612
+        ]
+      ],
+      "trial": 2,
+      "window": {
+        "attempts": [
+          {
+            "adequate": true,
+            "all_pivots_resolved": true,
+            "maximum_order": 9,
+            "precision": 64
+          }
+        ],
+        "internal_precision": 64,
+        "output_precision": 14,
+        "source_determinant_degree_bound": 107
+      }
+    },
+    {
+      "family": "polynomial-unit diagonal",
+      "orders": [
+        2,
+        9
+      ],
+      "size": 2,
+      "source": [
+        [
+          29424984977104,
+          965211927339424
+        ],
+        [
+          2840010943115924,
+          96511264433491112
+        ]
+      ],
+      "trial": 3,
+      "window": {
+        "attempts": [
+          {
+            "adequate": true,
+            "all_pivots_resolved": true,
+            "maximum_order": 9,
+            "precision": 64
+          }
+        ],
+        "internal_precision": 64,
+        "output_precision": 14,
+        "source_determinant_degree_bound": 105
+      }
+    },
+    {
+      "family": "polynomial-unit diagonal",
+      "orders": [
+        2,
+        9,
+        16
+      ],
+      "size": 3,
+      "source": [
+        [
+          762115675108,
+          221367808,
+          51174302720
+        ],
+        [
+          1596128397184,
+          463143424,
+          98159479808
+        ],
+        [
+          18534359696,
+          8265728,
+          1139654656
+        ]
+      ],
+      "trial": 0,
+      "window": {
+        "attempts": [
+          {
+            "adequate": true,
+            "all_pivots_resolved": true,
+            "maximum_order": 16,
+            "precision": 64
+          }
+        ],
+        "internal_precision": 64,
+        "output_precision": 21,
+        "source_determinant_degree_bound": 113
+      }
+    },
+    {
+      "family": "polynomial-unit diagonal",
+      "orders": [
+        2,
+        9,
+        16
+      ],
+      "size": 3,
+      "source": [
+        [
+          295131293001140,
+          6443304647930940,
+          629211136
+        ],
+        [
+          36662153000112336,
+          805122855694086384,
+          78904754176
+        ],
+        [
+          39385890816,
+          704747274240,
+          65536
+        ]
+      ],
+      "trial": 1,
+      "window": {
+        "attempts": [
+          {
+            "adequate": true,
+            "all_pivots_resolved": true,
+            "maximum_order": 16,
+            "precision": 64
+          }
+        ],
+        "internal_precision": 64,
+        "output_precision": 21,
+        "source_determinant_degree_bound": 150
+      }
+    },
+    {
+      "family": "polynomial-unit diagonal",
+      "orders": [
+        2,
+        9,
+        16
+      ],
+      "size": 3,
+      "source": [
+        [
+          2676313951216,
+          190386460135740,
+          14097744436019736
+        ],
+        [
+          1618483283200,
+          74369794170304,
+          8850940407478656
+        ],
+        [
+          13217943904,
+          1030434422616,
+          49519935530864
+        ]
+      ],
+      "trial": 2,
+      "window": {
+        "attempts": [
+          {
+            "adequate": true,
+            "all_pivots_resolved": true,
+            "maximum_order": 16,
+            "precision": 64
+          }
+        ],
+        "internal_precision": 64,
+        "output_precision": 21,
+        "source_determinant_degree_bound": 150
+      }
+    },
+    {
+      "family": "polynomial-unit diagonal",
+      "orders": [
+        2,
+        9,
+        16
+      ],
+      "size": 3,
+      "source": [
+        [
+          21929467490956050960,
+          417223803140572956,
+          6202489335988116
+        ],
+        [
+          706162532807196544,
+          13277147766126752,
+          200001403528544
+        ],
+        [
+          17653445013891200,
+          212295833977184,
+          3544584295968
+        ]
+      ],
+      "trial": 3,
+      "window": {
+        "attempts": [
+          {
+            "adequate": true,
+            "all_pivots_resolved": true,
+            "maximum_order": 16,
+            "precision": 64
+          }
+        ],
+        "internal_precision": 64,
+        "output_precision": 21,
+        "source_determinant_degree_bound": 176
+      }
+    },
+    {
+      "family": "polynomial-unit diagonal",
+      "orders": [
+        2,
+        9,
+        16,
+        23
+      ],
+      "size": 4,
+      "source": [
+        [
+          12180701927565476,
+          529672169326592,
+          4150847340544,
+          44911414458982400
+        ],
+        [
+          3291681910716968,
+          130045150495232,
+          1021704273920,
+          10091923472386048
+        ],
+        [
+          1204191661276933484,
+          58204154056987136,
+          457106818007040,
+          6743603111161055232
+        ],
+        [
+          277836234994389048,
+          4628447523558912,
+          35861368799232,
+          1006362162992994304
+        ]
+      ],
+      "trial": 0,
+      "window": {
+        "attempts": [
+          {
+            "adequate": true,
+            "all_pivots_resolved": true,
+            "maximum_order": 23,
+            "precision": 64
+          }
+        ],
+        "internal_precision": 64,
+        "output_precision": 28,
+        "source_determinant_degree_bound": 229
+      }
+    },
+    {
+      "family": "polynomial-unit diagonal",
+      "orders": [
+        2,
+        9,
+        16,
+        23
+      ],
+      "size": 4,
+      "source": [
+        [
+          434582258174612144,
+          24234740597344,
+          13303808,
+          3433414349674400
+        ],
+        [
+          192004413461762634952,
+          16744894882612496,
+          5693833216,
+          1483155517603300016
+        ],
+        [
+          24778969326675573694596,
+          2126350842005127752,
+          724983939072,
+          191151495718883476760
+        ],
+        [
+          32685816730700,
+          1182959448,
+          0,
+          256192120744
+        ]
+      ],
+      "trial": 1,
+      "window": {
+        "attempts": [
+          {
+            "adequate": true,
+            "all_pivots_resolved": true,
+            "maximum_order": 23,
+            "precision": 64
+          }
+        ],
+        "internal_precision": 64,
+        "output_precision": 28,
+        "source_determinant_degree_bound": 243
+      }
+    },
+    {
+      "family": "polynomial-unit diagonal",
+      "orders": [
+        2,
+        9,
+        16,
+        23
+      ],
+      "size": 4,
+      "source": [
+        [
+          4956,
+          436,
+          0,
+          0
+        ],
+        [
+          39902576986692,
+          3845408509372,
+          32696389632,
+          297299574784
+        ],
+        [
+          254418890845184,
+          9935175565824,
+          88895410176,
+          2125092847616
+        ],
+        [
+          2213668859317248,
+          71853804605952,
+          760718741504,
+          16057928220672
+        ]
+      ],
+      "trial": 2,
+      "window": {
+        "attempts": [
+          {
+            "adequate": true,
+            "all_pivots_resolved": true,
+            "maximum_order": 23,
+            "precision": 64
+          }
+        ],
+        "internal_precision": 64,
+        "output_precision": 28,
+        "source_determinant_degree_bound": 154
+      }
+    },
+    {
+      "family": "polynomial-unit diagonal",
+      "orders": [
+        2,
+        9,
+        16,
+        23
+      ],
+      "size": 4,
+      "source": [
+        [
+          2027672549045768,
+          12228892297245547624,
+          287166394003956408,
+          11282921238175375992
+        ],
+        [
+          9127040385676,
+          126256995079517916,
+          1295984967901028,
+          114196885658400196
+        ],
+        [
+          74104963072,
+          1029610590371840,
+          10722184593408,
+          861811182731264
+        ],
+        [
+          5082565313268,
+          70357234439872132,
+          590449040314764,
+          60712825622845292
+        ]
+      ],
+      "trial": 3,
+      "window": {
+        "attempts": [
+          {
+            "adequate": true,
+            "all_pivots_resolved": true,
+            "maximum_order": 23,
+            "precision": 64
+          }
+        ],
+        "internal_precision": 64,
+        "output_precision": 28,
+        "source_determinant_degree_bound": 223
+      }
+    }
+  ],
+  "scope": "Exact low-coefficient equivalence to the original polynomial frames. No changed feasible coefficient fiber, stronger pressure or factoring bound.",
+  "singular_rejected": true,
+  "source_sha256": {
+    "tools/check_windowed_binary_smith.py": "10a1d1b34cdf70edb62155481e1453422174437f15cb7b7535e88432c8d3ecf6",
+    "tools/full_alphabet_two_cut_lattices.py": "cbc67b9e3f4f422a34e1474e0dc02eba9c741b3b7b836b315123d061571f0caf",
+    "tools/native_matrix_smith_f4.py": "c08da20f1938a371b438e32fbc6a8f6766b48c2cfee5bcd1c956ce137dc70203",
+    "tools/weyl_lattice_filter_synthesis.py": "5aef949234535ddb72e9f3d5560557bb9f0e06aeffd7b59b82fd5def6aa6c284",
+    "tools/windowed_binary_smith.py": "5c7e13e996f9f390bafa19aec8798fef2937d62623275cbe56b43a7574be6632",
+    "tools/windowed_full_alphabet_lattices.py": "56cb8b12538ff2de1861bcc9a676b7b0a8123e4d299c7d5178bc449c02c4f79a"
+  },
+  "status": "pass"
+}

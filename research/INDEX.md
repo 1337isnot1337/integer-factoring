@@ -1,5 +1,7 @@
 # Research index
 
+- [Exact finite windows for adaptive Smith frames](windowed-smith-frames.md): proven coefficient adequacy, complete affine-system equivalence controls, and a 7.66-second dense five-letter construction; the unfinished untruncated baseline and all mathematical limits are retained.
+
 - [Graded adjugate compatibility at independent physical heights](graded-adjugate-caps.md): two all-field upper-tail families exclude the previous negative five- and six-letter cell-cap profiles; a nearby certified negative integer profile satisfies the stronger constraints but has no realizing tensor.
 
 - [Gaussian circuits with arbitrary one-mode factors](tensor-affine-clifford-profiles.md): integral auxiliary permutation, complete profile theorem, determinant mean, 18-row evaluator, and F4 census.
