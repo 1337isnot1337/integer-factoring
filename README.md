@@ -2378,9 +2378,11 @@ The unmodified public macro network has linear treewidth under dense-table
 elimination. Its radix-2 four-word butterfly tables still have a treewidth
 floor of `Omega(ell/sqrt(log ell))`, matching the half-rate scale. At bit
 level the root-four twiddles become signed rotations and each butterfly has
-an `O(T)`-gate circuit; the full separator, including pointwise products and
-carry recovery, remains open ([treewidth analysis](research/sanftenberg-transform-treewidth-floor.md),
-[bit-circuit analysis](research/sanftenberg-root-four-bit-circuits.md)).
+an `O(T)`-gate circuit. A redundant signed base-four representation removes
+intermediate transform carries, but direct digit convolution retains an
+order-`T` local multiplier-width obstruction; the full separator remains
+open ([treewidth analysis](research/sanftenberg-transform-treewidth-floor.md),
+[bit-circuit and redundant-digit analysis](research/sanftenberg-root-four-bit-circuits.md)).
 
 ## Sparse oriented power prefixes
 
