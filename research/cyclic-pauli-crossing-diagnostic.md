@@ -194,6 +194,26 @@ make verify-cyclic-pauli-crossings
 python3 tools/screen_cyclic_pauli_crossings.py --manifest evidence/cyclic-pauli-typed-diagnostic-manifest.json --output /path/typed-diagnostic.json
 ```
 
+## Completed typed diagnostic at `4d970a7`
+
+The [complete attempt archive](../evidence/cyclic-pauli-typed-diagnostic-complete.json.xz)
+retains the manifest, source words, initial coordinates, every best and last
+complete query, and optimizer outcomes. All nine registered trials were
+attempted: **844 successful complete-profile queries, zero rejected queries**,
+in 72.72 seconds. Seven trials reported optimizer convergence; one reached
+the 200-iteration limit and one reached its 30-second cap.
+
+The minimum successful support was `1.412832752034821` for the uncoupled
+control. The one-loop and four-loop sources reached only
+`1.4142221799369956` and `1.4142678715634174`. The required strict threshold
+is one. These are bounded numerical outcomes, without a global negative
+certificate. They provide no structural reason to extend the loop search,
+so this diagnostic stops here. The complete factoring score is unchanged
+at `1/2`. The reusable outcomes are the literal cyclic source, complete
+block oracle, independently checked orders, and the all-scale bare
+obstructions above; unrestricted physical potentials remain outside those
+obstructions.
+
 Directed by Cinna Davis / 1337isnot1337 with substantial OpenAI assistant
 support. The credited source formula, existing Weyl arithmetic, complete
 Smith engines and Gibbs/support machinery are reused. This is a literal

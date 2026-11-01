@@ -134,6 +134,26 @@ has support `1.0104250223304403`, above the critical value one. Thus this
 archive is a completed attempt ledger, not 51 converged fits or an optimum.
 The two-hour coefficient/gauge walk remains a separate registered run.
 
+## Completed two-hour walk at `1461d7d`
+
+The [summary](../evidence/mixed-graph-walk-complete.json.xz) and
+[full proposal ledger](../evidence/mixed-graph-walk-complete.jsonl.xz)
+retain every proposal, mutation, initial coordinates, best and last complete
+query, optimizer outcome, acceptance decision and rejection. The declared
+7,200-second budget completed with **19,059 proposals**, 9,998 accepted
+moves, **3,054,386 successful complete-profile queries** and 86 rejected
+queries. Of the optimizer outcomes, 4,356 reported convergence, 14,616
+reached the iteration limit, 85 stopped on an unresolved native prefix,
+one had no positive common-type root, and one reached the final wall-clock
+cap. The rejected coordinates and reasons remain explicit.
+
+The best successful support was `1.0097450553486638`, still above one.
+This is a finite numerical campaign, not an optimum or an obstruction to
+the full `4^20` chart. It produced no stronger complete factoring bound;
+the score remains `1/2`. Further coefficient walks are not justified by
+this result. A continuation must change a structural assumption rather
+than extend the same search budget.
+
 Credit: this uses the existing reflection Gaussian source, generic F4 split
 maps, complete rectangular Smith backend, Gibbs pressure and asymmetric
 chain rule. Cinna Davis / 1337isnot1337 directed the campaign; substantial

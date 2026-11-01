@@ -1,0 +1,24 @@
+{
+  "scope": "Full default verification at the first affine trace checkpoint; later prefix and square-zero changes have separate focused checks",
+  "tested_commit": "318c748038d0a12493e8fa5744541d8955f8fe6d",
+  "tested_tree": "5c50a79f357a0d08e4f36323cd0796e938540649",
+  "command": "make verify",
+  "exit_code": 0,
+  "working_tree_before": "clean",
+  "working_tree_after": "clean",
+  "completed_at_utc": "2026-11-01T15:38:13.621999+00:00",
+  "python_command_blocks": 349,
+  "unit_test_groups": [
+    66,
+    5
+  ],
+  "markdown_files_checked": [
+    1099
+  ],
+  "log_bytes": 1124743,
+  "log_sha256": "8f022d1dcf5efcb0151cbd62838a987b0e8d4aacff75447145cf5695c22cbdcd",
+  "archive": "evidence/verify-trace-constraints-318c748.log.xz",
+  "archive_sha256": "ac84e9498887608edaa2df15a0e350994597412e8ffa685692cb7a4b5aedfe61",
+  "new_lean": false,
+  "factoring_score": "1/2"
+}

@@ -3006,3 +3006,11 @@ verify-trace-constraints:
 .PHONY: verify-fused-q12-endpoints
 verify-fused-q12-endpoints:
 	python3 tools/check_fused_q12_endpoint_block_cover.py
+
+.PHONY: verify-frobenius-prefix
+verify-frobenius-prefix:
+	python3 tools/check_frobenius_prefix_contraction.py
+
+.PHONY: verify-collective-css-pauli
+verify-collective-css-pauli:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_collective_css_pauli.py
