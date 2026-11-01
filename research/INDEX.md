@@ -1453,3 +1453,5 @@ The [paired MDS family extension](orthogonal-pair-core-floor.md#5-a-stronger-all
 - [Proper norm stencil overlap](circuit-box-stencil-overlap.md): exact conjugate-overlap identity, maximal rational content, and prime-power/HNF controls; no supply or factoring-exponent claim.
 
 - [Direct unit-presentation traces](direct-unit-presentation-traces.md): original sparse relation matrices, independently indexed integer-isomorphism replay, explicit free summands, and complete matched 64/80-bit power-prefix results.
+
+- [Centered unknown-divisor windows](circuit-box-centered-windows.md): signed root intervals remove two guard bits and aggregate shorter windows; complete exact LLL/Sturm controls, with the classical quarter-bit scope retained.

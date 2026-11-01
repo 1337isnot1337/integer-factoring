@@ -2711,3 +2711,7 @@ check-direct-unit-presentation:
 	python3 tools/check_direct_unit_presentation.py --replay evidence/direct-unit-presentation.json
 check-direct-unit-search:
 	python3 tools/check_direct_unit_oriented_power_search.py --replay evidence/direct-unit-oriented-power-search.json.xz
+
+.PHONY: check-centered-windows
+check-centered-windows:
+	python3 tools/check_circuit_box_centered_windows.py
