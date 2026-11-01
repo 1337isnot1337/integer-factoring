@@ -1,0 +1,340 @@
+{
+  "cases": [
+    {
+      "center_bits": 1,
+      "column_block_count": 4,
+      "column_block_order": 16,
+      "column_ranks": [
+        5,
+        14,
+        24,
+        28,
+        64
+      ],
+      "columns": [
+        1
+      ],
+      "complete_crossing_entries": 4096,
+      "dense_column_comparison": true,
+      "horizontal_pairs": 1,
+      "label_bits": 3,
+      "labels": 8,
+      "maximum_rank_product": 432,
+      "row_ranks": [
+        64,
+        28,
+        18,
+        6,
+        1
+      ],
+      "row_upper_bounds": [
+        64,
+        36,
+        20,
+        6,
+        1
+      ],
+      "weights": [
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "center_bits": 1,
+      "column_block_count": 16,
+      "column_block_order": 64,
+      "column_ranks": [
+        10,
+        65,
+        198,
+        328,
+        500,
+        580,
+        1024
+      ],
+      "columns": [
+        1,
+        1
+      ],
+      "complete_crossing_entries": 1048576,
+      "dense_column_comparison": true,
+      "horizontal_pairs": 2,
+      "label_bits": 5,
+      "labels": 32,
+      "maximum_rank_product": 69696,
+      "row_ranks": [
+        1024,
+        580,
+        352,
+        160,
+        50,
+        10,
+        1
+      ],
+      "row_upper_bounds": [
+        1024,
+        672,
+        402,
+        180,
+        52,
+        10,
+        1
+      ],
+      "weights": [
+        1,
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "center_bits": 2,
+      "column_block_count": 16,
+      "column_block_order": 256,
+      "column_ranks": [
+        25,
+        125,
+        315,
+        585,
+        1034,
+        1540,
+        2272,
+        2368,
+        4096
+      ],
+      "columns": [
+        1,
+        2
+      ],
+      "complete_crossing_entries": 16777216,
+      "dense_column_comparison": false,
+      "horizontal_pairs": 2,
+      "label_bits": 6,
+      "labels": 64,
+      "maximum_rank_product": 565740,
+      "row_ranks": [
+        4096,
+        2368,
+        1796,
+        922,
+        456,
+        180,
+        52,
+        10,
+        1
+      ],
+      "row_upper_bounds": [
+        4096,
+        2872,
+        1912,
+        1064,
+        520,
+        206,
+        58,
+        10,
+        1
+      ],
+      "weights": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "center_bits": 1,
+      "column_block_count": 64,
+      "column_block_order": 256,
+      "column_ranks": [
+        14,
+        154,
+        756,
+        2114,
+        4413,
+        6156,
+        9040,
+        10096,
+        16384
+      ],
+      "columns": [
+        1,
+        1,
+        1
+      ],
+      "complete_crossing_entries": 268435456,
+      "dense_column_comparison": false,
+      "horizontal_pairs": 3,
+      "label_bits": 7,
+      "labels": 128,
+      "maximum_rank_product": 7103040,
+      "row_ranks": [
+        16384,
+        10096,
+        6532,
+        3360,
+        1357,
+        424,
+        96,
+        14,
+        1
+      ],
+      "row_upper_bounds": [
+        16384,
+        11484,
+        7288,
+        3924,
+        1628,
+        476,
+        100,
+        14,
+        1
+      ],
+      "weights": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "center_bits": 2,
+      "column_block_count": 64,
+      "column_block_order": 1024,
+      "column_ranks": [
+        50,
+        432,
+        1738,
+        4353,
+        8200,
+        13592,
+        21596,
+        27978,
+        39584,
+        41280,
+        65536
+      ],
+      "columns": [
+        1,
+        1,
+        2
+      ],
+      "complete_crossing_entries": 4294967296,
+      "dense_column_comparison": false,
+      "horizontal_pairs": 3,
+      "label_bits": 8,
+      "labels": 256,
+      "maximum_rank_product": 77506400,
+      "row_ranks": [
+        65536,
+        41280,
+        31024,
+        17480,
+        9452,
+        4268,
+        1557,
+        452,
+        98,
+        14,
+        1
+      ],
+      "row_upper_bounds": [
+        65536,
+        48192,
+        33048,
+        20320,
+        11056,
+        5152,
+        1956,
+        554,
+        108,
+        14,
+        1
+      ],
+      "weights": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "center_bits": 2,
+      "column_block_count": 64,
+      "column_block_order": 1024,
+      "column_ranks": [
+        67,
+        534,
+        2054,
+        5046,
+        9331,
+        14573,
+        22534,
+        28780,
+        39992,
+        41664,
+        65536
+      ],
+      "columns": [
+        1,
+        2,
+        3
+      ],
+      "complete_crossing_entries": 4294967296,
+      "dense_column_comparison": false,
+      "horizontal_pairs": 3,
+      "label_bits": 8,
+      "labels": 256,
+      "maximum_rank_product": 91285173,
+      "row_ranks": [
+        65536,
+        41664,
+        31232,
+        17624,
+        9783,
+        4360,
+        1596,
+        468,
+        100,
+        14,
+        1
+      ],
+      "row_upper_bounds": [
+        65536,
+        48304,
+        33288,
+        20672,
+        11456,
+        5448,
+        2068,
+        574,
+        108,
+        14,
+        1
+      ],
+      "weights": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2
+      ]
+    }
+  ],
+  "scope": "exact finite complete coded-group crossings; no improved factoring exponent",
+  "source_sha256": "8d183403343bcd8cd4e01e545db0137c96b50d17798bf3660e664ebe5e01836e",
+  "status": "pass"
+}

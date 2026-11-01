@@ -1,0 +1,403 @@
+{
+  "centered_jet_actual_rank_controls": [
+    {
+      "exact_centered_jet_ranks": [
+        [
+          0,
+          0,
+          6,
+          6
+        ],
+        [
+          0,
+          1,
+          4,
+          10
+        ],
+        [
+          0,
+          2,
+          1,
+          36
+        ],
+        [
+          1,
+          0,
+          10,
+          4
+        ],
+        [
+          1,
+          1,
+          14,
+          14
+        ],
+        [
+          2,
+          0,
+          36,
+          1
+        ]
+      ],
+      "length": 2,
+      "pairs": 2
+    },
+    {
+      "exact_centered_jet_ranks": [
+        [
+          0,
+          0,
+          28,
+          28
+        ],
+        [
+          0,
+          1,
+          16,
+          120
+        ],
+        [
+          0,
+          2,
+          14,
+          168
+        ],
+        [
+          0,
+          3,
+          1,
+          400
+        ],
+        [
+          1,
+          0,
+          120,
+          16
+        ],
+        [
+          1,
+          1,
+          50,
+          50
+        ],
+        [
+          1,
+          2,
+          36,
+          156
+        ],
+        [
+          2,
+          0,
+          168,
+          14
+        ],
+        [
+          2,
+          1,
+          156,
+          36
+        ],
+        [
+          3,
+          0,
+          400,
+          1
+        ]
+      ],
+      "length": 3,
+      "pairs": 3
+    },
+    {
+      "exact_centered_jet_ranks": [
+        [
+          0,
+          0,
+          97,
+          97
+        ],
+        [
+          0,
+          1,
+          26,
+          300
+        ],
+        [
+          0,
+          2,
+          1,
+          784
+        ],
+        [
+          1,
+          0,
+          300,
+          26
+        ],
+        [
+          1,
+          1,
+          62,
+          62
+        ],
+        [
+          2,
+          0,
+          784,
+          1
+        ]
+      ],
+      "length": 2,
+      "pairs": 4
+    }
+  ],
+  "checker_sha256": "1fbb0acadf3ecbf058c700e4b07f0de47818392c05326f55cb40a6b2b69bd813",
+  "exact_augmented_profile_checks": [
+    {
+      "exact_augmented_ranks": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          6
+        ]
+      ],
+      "operator_grade": 1,
+      "pairs": 1,
+      "state_grade": 1
+    },
+    {
+      "exact_augmented_ranks": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          2,
+          23
+        ]
+      ],
+      "operator_grade": 1,
+      "pairs": 2,
+      "state_grade": 1
+    },
+    {
+      "exact_augmented_ranks": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          18
+        ],
+        [
+          3,
+          32
+        ],
+        [
+          4,
+          74
+        ]
+      ],
+      "operator_grade": 2,
+      "pairs": 2,
+      "state_grade": 2
+    },
+    {
+      "exact_augmented_ranks": [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          2,
+          28
+        ]
+      ],
+      "operator_grade": 1,
+      "pairs": 2,
+      "state_grade": 2
+    },
+    {
+      "exact_augmented_ranks": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          15
+        ],
+        [
+          2,
+          52
+        ],
+        [
+          3,
+          156
+        ],
+        [
+          4,
+          396
+        ]
+      ],
+      "operator_grade": 2,
+      "pairs": 3,
+      "state_grade": 2
+    },
+    {
+      "exact_augmented_ranks": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          16
+        ],
+        [
+          2,
+          66
+        ],
+        [
+          3,
+          152
+        ],
+        [
+          4,
+          312
+        ],
+        [
+          5,
+          450
+        ],
+        [
+          6,
+          970
+        ]
+      ],
+      "operator_grade": 3,
+      "pairs": 3,
+      "state_grade": 3
+    },
+    {
+      "exact_augmented_ranks": [
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          20
+        ],
+        [
+          2,
+          96
+        ],
+        [
+          3,
+          174
+        ],
+        [
+          4,
+          390
+        ]
+      ],
+      "operator_grade": 2,
+      "pairs": 3,
+      "state_grade": 3
+    }
+  ],
+  "exact_full_grade_type_comparisons": [
+    {
+      "largest_type_matrix": 8,
+      "length": 2,
+      "nonempty_types": 4,
+      "pairs": 2,
+      "type_entries_evaluated": 85
+    },
+    {
+      "largest_type_matrix": 32,
+      "length": 3,
+      "nonempty_types": 6,
+      "pairs": 3,
+      "type_entries_evaluated": 1365
+    },
+    {
+      "largest_type_matrix": 40,
+      "length": 2,
+      "nonempty_types": 6,
+      "pairs": 4,
+      "type_entries_evaluated": 1933
+    },
+    {
+      "largest_type_matrix": 148,
+      "length": 4,
+      "nonempty_types": 9,
+      "pairs": 4,
+      "type_entries_evaluated": 29749
+    },
+    {
+      "largest_type_matrix": 712,
+      "length": 5,
+      "nonempty_types": 12,
+      "pairs": 5,
+      "type_entries_evaluated": 683253
+    }
+  ],
+  "generic_HG_intertwiner": {
+    "constant_ancillary_row_entries": 4,
+    "generic_polynomial_equations": 576,
+    "grade_preserving": true,
+    "intertwiner_columns": [
+      4352,
+      8704,
+      17408,
+      34816,
+      4132,
+      66056,
+      1049728,
+      2392064,
+      16,
+      74240,
+      4384,
+      131072,
+      64,
+      296960,
+      17536,
+      524288,
+      1,
+      1065984,
+      2,
+      2131968,
+      4356,
+      4194304,
+      8712,
+      8388608
+    ],
+    "intertwiner_rank": 24,
+    "middle_exterior_minors_divided_exactly": 36
+  },
+  "module_sha256": "ac0a828879a790ed23492ceb5b6894ae46ca97dc8dd4735bd1e1d16c25dd44f5",
+  "scope": "explicit stable Pfaffian module and complete coefficient-rank upper bounds; no improved factoring exponent",
+  "status": "pass"
+}

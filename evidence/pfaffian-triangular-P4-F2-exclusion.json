@@ -1,0 +1,33 @@
+{
+  "analyzer_sha256": "3128f8fb0517986aa2ef085464540da4a7781423077c1f9ba525b45fb2335cf7",
+  "basis_sha256": "2ca562cabd4689fdbea1b181de046eb5b335900aa334fe0b569d74a20575dc9b",
+  "dimension": 13,
+  "eligible_span_dimension": 3,
+  "eligible_vectors": 3,
+  "endpoint_remainder": 1,
+  "exporter_sha256": "d667ab8ec8786a13088705ad60f3845085a2b42da4534b39398c86d7f8493171",
+  "independent_binary_rank_audit": [
+    {
+      "column_rank": 196,
+      "mask": 15,
+      "row_rank": 1
+    },
+    {
+      "column_rank": 1,
+      "mask": 2321,
+      "row_rank": 225
+    },
+    {
+      "column_rank": 95,
+      "mask": 8191,
+      "row_rank": 108
+    }
+  ],
+  "integer_cost_gate": 135,
+  "labels": 32,
+  "native_input_sha256": "c33cfb9a5e33ca214a2630430468a46ffe5141bca7e41787b5787bbdea1f94f1",
+  "native_source_sha256": "40e44b6987e5f347e35dd524f082a6b966c8171f6cbe1b4c433abab18f50912a",
+  "screen_sha256": "d70a088a851963c349f4ebb255d30ca14c4cea2c175d4d0547d22b6638618e4a",
+  "status": "excluded: affordable vectors do not span crossing",
+  "tested_vectors": 8191
+}

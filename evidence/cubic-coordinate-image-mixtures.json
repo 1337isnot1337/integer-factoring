@@ -1,0 +1,119 @@
+{
+  "baseline_restriction_coefficients_checked": 4900,
+  "column_scalar_compression_indices": [
+    2,
+    3,
+    4,
+    5,
+    10,
+    11,
+    12,
+    13,
+    18,
+    19,
+    20,
+    26,
+    27,
+    34,
+    14,
+    21,
+    28,
+    35,
+    22,
+    29,
+    36,
+    43,
+    30,
+    37,
+    44,
+    38,
+    45,
+    46
+  ],
+  "does_not_cover_simultaneous_nonzero_rows_in_one_complementary_map": true,
+  "finite_case_restriction_coefficients_checked": 6860,
+  "finite_case_selected_raw_coefficient_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    6,
+    7
+  ],
+  "full_tensor_span_excluded": true,
+  "labels": 7,
+  "row_triangular_order": [
+    34,
+    27,
+    26,
+    20,
+    19,
+    18,
+    13,
+    12,
+    11,
+    10,
+    5,
+    4,
+    3,
+    2
+  ],
+  "scope": "Every characteristic-two field; arbitrary mixtures of all coefficient directions from complementary maps C=e_i*v^T, with both i and v varying; every tensor power. More generally, baseline plus delta_(x,w)*K_x(y,v) with arbitrary K_x.",
+  "source_sha256": {
+    "check_cubic_coordinate_image_mixtures.py": "6f5d9ebd997a3790fda39241fa38a89f596b2f777b28dc289a775d35b11853ad",
+    "explore_cubic_complement_gf8.py": "2067e5e7e8929200e40187b916c0581e15b2265e7fc7a75415ce8688e1a21347",
+    "explore_cubic_complement_outputs.py": "9254d7fbe1f3d3124f7549f3c1cbd742708d15776df4bf4b35acf1b5925e157c",
+    "explore_cubic_mixed_gf8.py": "04b3838f3fec52a8975af3ec7d77937a316e6af9e5adee0d76e1928a46c2dc60"
+  },
+  "tensor_power_rank_cost_base_squared": 392,
+  "tensor_power_rank_lower_bases": [
+    14,
+    28
+  ],
+  "universal_column_restriction_coefficients_checked": 268912,
+  "universal_row_restriction_coefficients_checked": 67228,
+  "universal_strict_upper_update_positions": [
+    [
+      0,
+      5
+    ],
+    [
+      0,
+      8
+    ],
+    [
+      0,
+      11
+    ],
+    [
+      1,
+      9
+    ],
+    [
+      1,
+      12
+    ],
+    [
+      2,
+      9
+    ],
+    [
+      2,
+      12
+    ],
+    [
+      3,
+      13
+    ],
+    [
+      4,
+      13
+    ],
+    [
+      5,
+      13
+    ]
+  ],
+  "universal_update_matrix_units": 343
+}

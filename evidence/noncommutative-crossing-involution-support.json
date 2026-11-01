@@ -1,0 +1,373 @@
+{
+  "status": "All group laws, optimal subsets, normalized diagonal minors, and dense ranks passed.",
+  "scope": "Arbitrary finite-group orbit kernels over every field; finite arithmetic audits over F2 and F3.",
+  "examples": [
+    {
+      "group": "C4",
+      "order": 4,
+      "nonidentity_involutions": [
+        2
+      ],
+      "maximum_involution_free_size": 2,
+      "maximum_subset": [
+        0,
+        1
+      ],
+      "kernel_rank_checks": [
+        {
+          "field": 2,
+          "column_rank": 14
+        },
+        {
+          "field": 2,
+          "column_rank": 12
+        },
+        {
+          "field": 3,
+          "column_rank": 16
+        },
+        {
+          "field": 3,
+          "column_rank": 10
+        }
+      ]
+    },
+    {
+      "group": "C9",
+      "order": 9,
+      "nonidentity_involutions": [],
+      "maximum_involution_free_size": 9,
+      "maximum_subset": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "kernel_rank_checks": [
+        {
+          "field": 2,
+          "column_rank": 72
+        },
+        {
+          "field": 2,
+          "column_rank": 72
+        },
+        {
+          "field": 3,
+          "column_rank": 63
+        },
+        {
+          "field": 3,
+          "column_rank": 72
+        }
+      ]
+    },
+    {
+      "group": "C2_cubed",
+      "order": 8,
+      "nonidentity_involutions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "maximum_involution_free_size": 1,
+      "maximum_subset": [
+        0
+      ],
+      "kernel_rank_checks": [
+        {
+          "field": 2,
+          "column_rank": 48
+        },
+        {
+          "field": 2,
+          "column_rank": 44
+        },
+        {
+          "field": 3,
+          "column_rank": 34
+        },
+        {
+          "field": 3,
+          "column_rank": 36
+        }
+      ]
+    },
+    {
+      "group": "D8",
+      "order": 8,
+      "nonidentity_involutions": [
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "maximum_involution_free_size": 2,
+      "maximum_subset": [
+        0,
+        1
+      ],
+      "kernel_rank_checks": [
+        {
+          "field": 2,
+          "column_rank": 51
+        },
+        {
+          "field": 2,
+          "column_rank": 58
+        },
+        {
+          "field": 3,
+          "column_rank": 47
+        },
+        {
+          "field": 3,
+          "column_rank": 59
+        }
+      ]
+    },
+    {
+      "group": "Q8",
+      "order": 8,
+      "nonidentity_involutions": [
+        2
+      ],
+      "maximum_involution_free_size": 4,
+      "maximum_subset": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "kernel_rank_checks": [
+        {
+          "field": 2,
+          "column_rank": 50
+        },
+        {
+          "field": 2,
+          "column_rank": 49
+        },
+        {
+          "field": 3,
+          "column_rank": 62
+        },
+        {
+          "field": 3,
+          "column_rank": 50
+        }
+      ]
+    },
+    {
+      "group": "Q16",
+      "order": 16,
+      "nonidentity_involutions": [
+        4
+      ],
+      "maximum_involution_free_size": 8,
+      "maximum_subset": [
+        0,
+        1,
+        2,
+        3,
+        8,
+        9,
+        10,
+        11
+      ],
+      "kernel_rank_checks": [
+        {
+          "field": 2,
+          "column_rank": 245
+        },
+        {
+          "field": 2,
+          "column_rank": 222
+        },
+        {
+          "field": 3,
+          "column_rank": 248
+        },
+        {
+          "field": 3,
+          "column_rank": 231
+        }
+      ]
+    },
+    {
+      "group": "D10",
+      "order": 10,
+      "nonidentity_involutions": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "maximum_involution_free_size": 5,
+      "maximum_subset": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "kernel_rank_checks": [
+        {
+          "field": 2,
+          "column_rank": 88
+        },
+        {
+          "field": 2,
+          "column_rank": 94
+        },
+        {
+          "field": 3,
+          "column_rank": 94
+        },
+        {
+          "field": 3,
+          "column_rank": 97
+        }
+      ]
+    },
+    {
+      "group": "D12",
+      "order": 12,
+      "nonidentity_involutions": [
+        3,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "maximum_involution_free_size": 3,
+      "maximum_subset": [
+        0,
+        1,
+        2
+      ],
+      "kernel_rank_checks": [
+        {
+          "field": 2,
+          "column_rank": 117
+        },
+        {
+          "field": 2,
+          "column_rank": 138
+        },
+        {
+          "field": 3,
+          "column_rank": 134
+        },
+        {
+          "field": 3,
+          "column_rank": 136
+        }
+      ]
+    },
+    {
+      "group": "S3_times_C3",
+      "order": 18,
+      "nonidentity_involutions": [
+        9,
+        12,
+        15
+      ],
+      "maximum_involution_free_size": 9,
+      "maximum_subset": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "kernel_rank_checks": [
+        {
+          "field": 2,
+          "column_rank": 321
+        },
+        {
+          "field": 2,
+          "column_rank": 321
+        },
+        {
+          "field": 3,
+          "column_rank": 324
+        },
+        {
+          "field": 3,
+          "column_rank": 324
+        }
+      ]
+    },
+    {
+      "group": "nonabelian_order_21",
+      "order": 21,
+      "nonidentity_involutions": [],
+      "maximum_involution_free_size": 21,
+      "maximum_subset": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "kernel_rank_checks": [
+        {
+          "field": 2,
+          "column_rank": 439
+        },
+        {
+          "field": 2,
+          "column_rank": 440
+        },
+        {
+          "field": 3,
+          "column_rank": 440
+        },
+        {
+          "field": 3,
+          "column_rank": 439
+        }
+      ]
+    }
+  ],
+  "rank_floor_target_certificate": [
+    387420489,
+    312500000
+  ],
+  "source_sha256": "5474ec723f592b10665631ef394c4c08318e222f654714610b73b6e0f0e30ef2"
+}

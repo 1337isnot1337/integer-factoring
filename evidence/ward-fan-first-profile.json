@@ -1,0 +1,408 @@
+[
+  {
+    "family": "duplicated fan columns",
+    "forms": 3,
+    "integer_rank_sum_upper_bound": 801804,
+    "joint_order_used": 6,
+    "labels": 174,
+    "largest_explicit_block": 21,
+    "length": 10,
+    "orientation_selected": false,
+    "pairs": 10,
+    "previous_integer_rank_sum_upper_bound": 983460,
+    "profile": [
+      [
+        0,
+        6,
+        30276,
+        30276
+      ],
+      [
+        0,
+        7,
+        30276,
+        30276
+      ],
+      [
+        0,
+        8,
+        5036,
+        30276
+      ],
+      [
+        0,
+        9,
+        190,
+        30276
+      ],
+      [
+        0,
+        10,
+        1,
+        30276
+      ],
+      [
+        1,
+        5,
+        30276,
+        30276
+      ],
+      [
+        1,
+        6,
+        30276,
+        30276
+      ],
+      [
+        1,
+        7,
+        30276,
+        30276
+      ],
+      [
+        1,
+        8,
+        23200,
+        30276
+      ],
+      [
+        1,
+        9,
+        400,
+        30276
+      ],
+      [
+        2,
+        4,
+        30276,
+        30276
+      ],
+      [
+        2,
+        5,
+        30276,
+        30276
+      ],
+      [
+        2,
+        6,
+        30276,
+        30276
+      ],
+      [
+        2,
+        7,
+        30276,
+        30276
+      ],
+      [
+        2,
+        8,
+        30276,
+        30276
+      ],
+      [
+        3,
+        3,
+        30276,
+        30276
+      ],
+      [
+        3,
+        4,
+        30276,
+        30276
+      ],
+      [
+        3,
+        5,
+        30276,
+        30276
+      ],
+      [
+        3,
+        6,
+        30276,
+        30276
+      ],
+      [
+        3,
+        7,
+        30276,
+        30276
+      ],
+      [
+        4,
+        3,
+        30276,
+        30276
+      ],
+      [
+        4,
+        4,
+        30276,
+        30276
+      ],
+      [
+        4,
+        5,
+        30276,
+        30276
+      ],
+      [
+        4,
+        6,
+        30276,
+        30276
+      ],
+      [
+        5,
+        3,
+        30276,
+        30276
+      ],
+      [
+        5,
+        4,
+        30276,
+        30276
+      ],
+      [
+        5,
+        5,
+        30276,
+        30276
+      ],
+      [
+        6,
+        3,
+        30276,
+        30276
+      ],
+      [
+        6,
+        4,
+        30276,
+        30276
+      ],
+      [
+        7,
+        3,
+        30276,
+        30276
+      ]
+    ],
+    "rho_of_upper_bound": 1.3175493069460942,
+    "scope": "Complete unrestricted-rectangle upper profile; no assertion about optimal actual ranks.",
+    "source_sha256": {
+      "check_ward_fan_family.py": "c2f293c7950cab2fb2e6a792bdd189b8e24bee0e1a285e1a70c0381f4bc0bc85",
+      "screen_ward_fan_bounds.py": "c570650043ef737bb1aec44d25b4b475cdee04696cb9f990c0ea4bc18490cf97",
+      "ward_channel_free_bounds.py": "059353e7d33b7415815221a2df5c8e32e43bdf502958b0733f9edb8a77590bef",
+      "ward_rectangular_bounds.py": "2e17f2f1f8f900b27b5a685218a2129205b5beab089c084978e838bdfaa35883"
+    },
+    "total_form_Gram_rank": 0
+  },
+  {
+    "family": "duplicated fan columns",
+    "forms": 3,
+    "integer_rank_sum_upper_bound": 192340,
+    "joint_order_used": 6,
+    "labels": 84,
+    "largest_explicit_block": 21,
+    "length": 10,
+    "orientation_selected": true,
+    "pairs": 10,
+    "previous_integer_rank_sum_upper_bound": 234676,
+    "profile": [
+      [
+        0,
+        6,
+        7056,
+        7056
+      ],
+      [
+        0,
+        7,
+        7056,
+        7056
+      ],
+      [
+        0,
+        8,
+        5036,
+        7056
+      ],
+      [
+        0,
+        9,
+        190,
+        7056
+      ],
+      [
+        0,
+        10,
+        1,
+        7056
+      ],
+      [
+        1,
+        5,
+        7056,
+        7056
+      ],
+      [
+        1,
+        6,
+        7056,
+        7056
+      ],
+      [
+        1,
+        7,
+        7056,
+        7056
+      ],
+      [
+        1,
+        8,
+        7056,
+        7056
+      ],
+      [
+        1,
+        9,
+        400,
+        7056
+      ],
+      [
+        2,
+        4,
+        7056,
+        7056
+      ],
+      [
+        2,
+        5,
+        7056,
+        7056
+      ],
+      [
+        2,
+        6,
+        7056,
+        7056
+      ],
+      [
+        2,
+        7,
+        7056,
+        7056
+      ],
+      [
+        2,
+        8,
+        7056,
+        7056
+      ],
+      [
+        3,
+        3,
+        7056,
+        7056
+      ],
+      [
+        3,
+        4,
+        7056,
+        7056
+      ],
+      [
+        3,
+        5,
+        7056,
+        7056
+      ],
+      [
+        3,
+        6,
+        7056,
+        7056
+      ],
+      [
+        3,
+        7,
+        7056,
+        7056
+      ],
+      [
+        4,
+        3,
+        7056,
+        7056
+      ],
+      [
+        4,
+        4,
+        7056,
+        7056
+      ],
+      [
+        4,
+        5,
+        7056,
+        7056
+      ],
+      [
+        4,
+        6,
+        7056,
+        7056
+      ],
+      [
+        5,
+        3,
+        7056,
+        7056
+      ],
+      [
+        5,
+        4,
+        7056,
+        7056
+      ],
+      [
+        5,
+        5,
+        7056,
+        7056
+      ],
+      [
+        6,
+        3,
+        7056,
+        7056
+      ],
+      [
+        6,
+        4,
+        7056,
+        7056
+      ],
+      [
+        7,
+        3,
+        7056,
+        7056
+      ]
+    ],
+    "rho_of_upper_bound": 1.3729996601803454,
+    "scope": "Complete unrestricted-rectangle upper profile; no assertion about optimal actual ranks.",
+    "source_sha256": {
+      "check_ward_fan_family.py": "c2f293c7950cab2fb2e6a792bdd189b8e24bee0e1a285e1a70c0381f4bc0bc85",
+      "screen_ward_fan_bounds.py": "c570650043ef737bb1aec44d25b4b475cdee04696cb9f990c0ea4bc18490cf97",
+      "ward_channel_free_bounds.py": "059353e7d33b7415815221a2df5c8e32e43bdf502958b0733f9edb8a77590bef",
+      "ward_rectangular_bounds.py": "2e17f2f1f8f900b27b5a685218a2129205b5beab089c084978e838bdfaa35883"
+    },
+    "total_form_Gram_rank": 0
+  }
+]

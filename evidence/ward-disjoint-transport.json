@@ -1,0 +1,68 @@
+{
+  "disjoint_support_cases": [
+    {
+      "exact_grade_controls": 130,
+      "formal_ring_vs_block_flag_entries": 160,
+      "nonzero_entries": 130,
+      "scalar_operator_channels": 16,
+      "streamed_eta_one_vs_full_polynomial_entries": 160,
+      "support_sizes": [
+        1,
+        1
+      ]
+    },
+    {
+      "exact_grade_controls": 115,
+      "formal_ring_vs_block_flag_entries": 160,
+      "nonzero_entries": 115,
+      "scalar_operator_channels": 16,
+      "streamed_eta_one_vs_full_polynomial_entries": 160,
+      "support_sizes": [
+        2,
+        2
+      ]
+    },
+    {
+      "exact_grade_controls": 107,
+      "formal_ring_vs_block_flag_entries": 160,
+      "nonzero_entries": 107,
+      "scalar_operator_channels": 16,
+      "streamed_eta_one_vs_full_polynomial_entries": 160,
+      "support_sizes": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "exact_grade_controls": 97,
+      "formal_ring_vs_block_flag_entries": 160,
+      "nonzero_entries": 97,
+      "scalar_operator_channels": 16,
+      "streamed_eta_one_vs_full_polynomial_entries": 160,
+      "support_sizes": [
+        3,
+        2,
+        4
+      ]
+    },
+    {
+      "exact_grade_controls": 88,
+      "formal_ring_vs_block_flag_entries": 160,
+      "nonzero_entries": 88,
+      "scalar_operator_channels": 16,
+      "streamed_eta_one_vs_full_polynomial_entries": 160,
+      "support_sizes": [
+        1,
+        3,
+        2,
+        2
+      ]
+    }
+  ],
+  "source_sha256": {
+    "check_ward_disjoint_transport.py": "b6cb7bcb0d224b0417035f79ab890d37eadaab1f121be7bed476da53c896c639",
+    "check_ward_form_operator_transport.py": "171e18f3831cd42e40078eb5ea9dd01d50a7feeed0770ab0cf7350d98a5bc389",
+    "check_ward_stable_operators.py": "62299105879afa4b9662ee7dcf7daa33c57852f563a0f1b9b72debbff7677794"
+  }
+}

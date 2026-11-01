@@ -1,0 +1,127 @@
+{
+  "literal_full_tensor_controls": [
+    {
+      "column_ranks": [
+        [
+          0,
+          2,
+          6
+        ],
+        [
+          1,
+          1,
+          5
+        ]
+      ],
+      "length": 2,
+      "literal_polynomial_entries": 216,
+      "pairs": 2,
+      "row_ranks": [
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          1,
+          1,
+          5
+        ]
+      ]
+    },
+    {
+      "column_ranks": [
+        [
+          0,
+          1,
+          29
+        ],
+        [
+          0,
+          2,
+          28
+        ],
+        [
+          0,
+          3,
+          120
+        ],
+        [
+          1,
+          2,
+          85
+        ],
+        [
+          2,
+          1,
+          15
+        ]
+      ],
+      "length": 3,
+      "literal_polynomial_entries": 48000,
+      "pairs": 3,
+      "row_ranks": [
+        [
+          0,
+          1,
+          29
+        ],
+        [
+          0,
+          2,
+          14
+        ],
+        [
+          0,
+          3,
+          1
+        ],
+        [
+          1,
+          2,
+          36
+        ],
+        [
+          2,
+          1,
+          85
+        ]
+      ]
+    }
+  ],
+  "local_operator_block_entries": 512,
+  "restricted_code_controls": [
+    {
+      "combined_cost_bound": 108,
+      "differential_cost_bound": 110,
+      "labels": 6,
+      "length": 3,
+      "pairs": 3
+    },
+    {
+      "combined_cost_bound": 39,
+      "differential_cost_bound": 39,
+      "labels": 3,
+      "length": 3,
+      "pairs": 3
+    },
+    {
+      "combined_cost_bound": 1566,
+      "differential_cost_bound": 1696,
+      "labels": 26,
+      "length": 4,
+      "pairs": 4
+    },
+    {
+      "combined_cost_bound": 682,
+      "differential_cost_bound": 690,
+      "labels": 12,
+      "length": 4,
+      "pairs": 4
+    }
+  ],
+  "source_sha256": {
+    "check_ward_operator_types.py": "67b0ad7d143d7009abf4eaf1d2bfc08b632f9a7a03e6e29273289a0ba6091669",
+    "ward_operator_types.py": "049765c01ded06a2855cbdad74eb3aa3d5d2cd0a924018d03448f625a44dc952"
+  }
+}

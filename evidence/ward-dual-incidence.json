@@ -1,0 +1,14 @@
+{
+  "checker_sha256": "20b8eb7820cc72f58abe3c5d2484c6eb960fe88deeb72c4ccb5509252bd5284b",
+  "combined_creation_shift_minor_controls": 2240,
+  "exact_gauge_support": {
+    "diagonal_entries": 16,
+    "positive_shift_entries": 16
+  },
+  "generic_local_identities": {
+    "both_incidence_operators_equal_generic_derivative": 256,
+    "dual_first_order_identities": 512
+  },
+  "maximal_shift_finite_difference_controls": 1320,
+  "multisite_product_derivative_controls": 2560
+}

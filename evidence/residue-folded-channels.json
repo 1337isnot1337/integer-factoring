@@ -1,0 +1,814 @@
+{
+  "checker_sha256": "0b03dd7901868c90039e61b11941d8d173d5fd73a57ecc92ac5286f5e0942b7e",
+  "complete_piece_channel_checks": [
+    {
+      "angle_indices": [
+        0,
+        64
+      ],
+      "length": 4,
+      "mode_cutoff": 16,
+      "operator_weight": 32,
+      "partner_weight": 32,
+      "pieces": [
+        {
+          "actual_ranks": [
+            1,
+            64
+          ],
+          "folded_channels": [
+            1,
+            1256
+          ],
+          "partition_channels": [
+            1,
+            11840
+          ],
+          "shift": -64
+        },
+        {
+          "actual_ranks": [
+            8,
+            30
+          ],
+          "folded_channels": [
+            22,
+            635
+          ],
+          "partition_channels": [
+            23,
+            2071
+          ],
+          "shift": -32
+        },
+        {
+          "actual_ranks": [
+            6,
+            6
+          ],
+          "folded_channels": [
+            68,
+            375
+          ],
+          "partition_channels": [
+            87,
+            789
+          ],
+          "shift": -16
+        },
+        {
+          "actual_ranks": [
+            29,
+            29
+          ],
+          "folded_channels": [
+            185,
+            185
+          ],
+          "partition_channels": [
+            277,
+            277
+          ],
+          "shift": 0
+        },
+        {
+          "actual_ranks": [
+            6,
+            6
+          ],
+          "folded_channels": [
+            375,
+            68
+          ],
+          "partition_channels": [
+            789,
+            87
+          ],
+          "shift": 16
+        },
+        {
+          "actual_ranks": [
+            30,
+            8
+          ],
+          "folded_channels": [
+            635,
+            22
+          ],
+          "partition_channels": [
+            2071,
+            23
+          ],
+          "shift": 32
+        },
+        {
+          "actual_ranks": [
+            64,
+            1
+          ],
+          "folded_channels": [
+            1256,
+            1
+          ],
+          "partition_channels": [
+            11840,
+            1
+          ],
+          "shift": 64
+        }
+      ],
+      "state_energy": 32
+    },
+    {
+      "angle_indices": [
+        0,
+        32,
+        64,
+        96
+      ],
+      "length": 3,
+      "mode_cutoff": 32,
+      "operator_weight": 47,
+      "partner_weight": 49,
+      "pieces": [
+        {
+          "actual_ranks": [
+            7,
+            346
+          ],
+          "folded_channels": [
+            18,
+            22282
+          ],
+          "partition_channels": [
+            18,
+            68264
+          ],
+          "shift": -64
+        },
+        {
+          "actual_ranks": [
+            95,
+            422
+          ],
+          "folded_channels": [
+            243,
+            8386
+          ],
+          "partition_channels": [
+            254,
+            13911
+          ],
+          "shift": -32
+        },
+        {
+          "actual_ranks": [
+            194,
+            392
+          ],
+          "folded_channels": [
+            1750,
+            1962
+          ],
+          "partition_channels": [
+            2068,
+            2348
+          ],
+          "shift": 0
+        },
+        {
+          "actual_ranks": [
+            524,
+            99
+          ],
+          "folded_channels": [
+            7751,
+            284
+          ],
+          "partition_channels": [
+            12490,
+            300
+          ],
+          "shift": 32
+        },
+        {
+          "actual_ranks": [
+            378,
+            8
+          ],
+          "folded_channels": [
+            21175,
+            24
+          ],
+          "partition_channels": [
+            62006,
+            24
+          ],
+          "shift": 64
+        },
+        {
+          "actual_ranks": [
+            784,
+            1
+          ],
+          "folded_channels": [
+            39956,
+            1
+          ],
+          "partition_channels": [
+            267023,
+            1
+          ],
+          "shift": 96
+        }
+      ],
+      "state_energy": 47
+    },
+    {
+      "angle_indices": [
+        0,
+        128
+      ],
+      "length": 4,
+      "mode_cutoff": 32,
+      "operator_weight": 64,
+      "partner_weight": 64,
+      "pieces": [
+        {
+          "actual_ranks": [
+            1,
+            7396
+          ],
+          "folded_channels": [
+            1,
+            222908
+          ],
+          "partition_channels": [
+            1,
+            2836538
+          ],
+          "shift": -128
+        },
+        {
+          "actual_ranks": [
+            6,
+            1328
+          ],
+          "folded_channels": [
+            23,
+            165348
+          ],
+          "partition_channels": [
+            23,
+            830588
+          ],
+          "shift": -96
+        },
+        {
+          "actual_ranks": [
+            98,
+            3544
+          ],
+          "folded_channels": [
+            261,
+            90343
+          ],
+          "partition_channels": [
+            276,
+            223837
+          ],
+          "shift": -64
+        },
+        {
+          "actual_ranks": [
+            502,
+            1006
+          ],
+          "folded_channels": [
+            1863,
+            34556
+          ],
+          "partition_channels": [
+            2048,
+            54399
+          ],
+          "shift": -32
+        },
+        {
+          "actual_ranks": [
+            2795,
+            2795
+          ],
+          "folded_channels": [
+            9558,
+            9558
+          ],
+          "partition_channels": [
+            11565,
+            11565
+          ],
+          "shift": 0
+        },
+        {
+          "actual_ranks": [
+            1006,
+            502
+          ],
+          "folded_channels": [
+            34556,
+            1863
+          ],
+          "partition_channels": [
+            54399,
+            2048
+          ],
+          "shift": 32
+        },
+        {
+          "actual_ranks": [
+            3544,
+            98
+          ],
+          "folded_channels": [
+            90343,
+            261
+          ],
+          "partition_channels": [
+            223837,
+            276
+          ],
+          "shift": 64
+        },
+        {
+          "actual_ranks": [
+            1328,
+            6
+          ],
+          "folded_channels": [
+            165348,
+            23
+          ],
+          "partition_channels": [
+            830588,
+            23
+          ],
+          "shift": 96
+        },
+        {
+          "actual_ranks": [
+            7396,
+            1
+          ],
+          "folded_channels": [
+            222908,
+            1
+          ],
+          "partition_channels": [
+            2836538,
+            1
+          ],
+          "shift": 128
+        }
+      ],
+      "state_energy": 64
+    },
+    {
+      "angle_indices": [
+        0,
+        64,
+        128,
+        192
+      ],
+      "length": 3,
+      "mode_cutoff": 64,
+      "operator_weight": 95,
+      "partner_weight": 97,
+      "pieces": [
+        {
+          "actual_ranks": [
+            15,
+            5170
+          ],
+          "folded_channels": [
+            236,
+            857523
+          ],
+          "partition_channels": [
+            236,
+            30049316
+          ],
+          "shift": -128
+        },
+        {
+          "actual_ranks": [
+            812,
+            5592
+          ],
+          "folded_channels": [
+            7554,
+            324225
+          ],
+          "partition_channels": [
+            10658,
+            3060375
+          ],
+          "shift": -64
+        },
+        {
+          "actual_ranks": [
+            4408,
+            9510
+          ],
+          "folded_channels": [
+            69489,
+            73571
+          ],
+          "partition_channels": [
+            215911,
+            235402
+          ],
+          "shift": 0
+        },
+        {
+          "actual_ranks": [
+            11106,
+            819
+          ],
+          "folded_channels": [
+            312105,
+            8224
+          ],
+          "partition_channels": [
+            2837788,
+            11841
+          ],
+          "shift": 64
+        },
+        {
+          "actual_ranks": [
+            8790,
+            16
+          ],
+          "folded_channels": [
+            836933,
+            276
+          ],
+          "partition_channels": [
+            28072904,
+            277
+          ],
+          "shift": 128
+        },
+        {
+          "actual_ranks": [
+            14400,
+            1
+          ],
+          "folded_channels": [
+            1553887,
+            1
+          ],
+          "partition_channels": [
+            226090655,
+            1
+          ],
+          "shift": 192
+        }
+      ],
+      "state_energy": 95
+    },
+    {
+      "angle_indices": [
+        0,
+        128,
+        256,
+        384
+      ],
+      "length": 3,
+      "mode_cutoff": 128,
+      "operator_weight": 191,
+      "partner_weight": 193,
+      "pieces": [
+        {
+          "actual_ranks": [
+            31,
+            56546
+          ],
+          "folded_channels": [
+            7468,
+            30699556
+          ],
+          "partition_channels": [
+            10422,
+            224772335157
+          ],
+          "shift": -256
+        },
+        {
+          "actual_ranks": [
+            6833,
+            58435
+          ],
+          "folded_channels": [
+            299800,
+            11829730
+          ],
+          "partition_channels": [
+            2632299,
+            8518386846
+          ],
+          "shift": -128
+        },
+        {
+          "actual_ranks": [
+            93584,
+            198336
+          ],
+          "folded_channels": [
+            2690402,
+            2766028
+          ],
+          "partition_channels": [
+            200660472,
+            213461919
+          ],
+          "shift": 0
+        },
+        {
+          "actual_ranks": [
+            212412,
+            6847
+          ],
+          "folded_channels": [
+            11612974,
+            312702
+          ],
+          "partition_channels": [
+            8070343882,
+            2836539
+          ],
+          "shift": 128
+        },
+        {
+          "actual_ranks": [
+            187110,
+            32
+          ],
+          "folded_channels": [
+            30338627,
+            8118
+          ],
+          "partition_channels": [
+            214104817248,
+            11565
+          ],
+          "shift": 256
+        },
+        {
+          "actual_ranks": [
+            246016,
+            1
+          ],
+          "folded_channels": [
+            55500387,
+            1
+          ],
+          "partition_channels": [
+            4211097880243,
+            1
+          ],
+          "shift": 384
+        }
+      ],
+      "state_energy": 191
+    },
+    {
+      "angle_indices": [
+        0,
+        32,
+        128,
+        160
+      ],
+      "length": 5,
+      "mode_cutoff": 32,
+      "operator_weight": 79,
+      "partner_weight": 81,
+      "pieces": [
+        {
+          "actual_ranks": [
+            7,
+            22306
+          ],
+          "folded_channels": [
+            18,
+            1797863
+          ],
+          "partition_channels": [
+            18,
+            11880946
+          ],
+          "shift": -128
+        },
+        {
+          "actual_ranks": [
+            98,
+            30965
+          ],
+          "folded_channels": [
+            243,
+            1009915
+          ],
+          "partition_channels": [
+            254,
+            3667126
+          ],
+          "shift": -96
+        },
+        {
+          "actual_ranks": [
+            625,
+            28706
+          ],
+          "folded_channels": [
+            1878,
+            450400
+          ],
+          "partition_channels": [
+            2050,
+            1054425
+          ],
+          "shift": -64
+        },
+        {
+          "actual_ranks": [
+            3622,
+            27510
+          ],
+          "folded_channels": [
+            10462,
+            161983
+          ],
+          "partition_channels": [
+            12236,
+            278236
+          ],
+          "shift": -32
+        },
+        {
+          "actual_ranks": [
+            8550,
+            9424
+          ],
+          "folded_channels": [
+            43942,
+            47787
+          ],
+          "partition_channels": [
+            59974,
+            65964
+          ],
+          "shift": 0
+        },
+        {
+          "actual_ranks": [
+            22234,
+            3664
+          ],
+          "folded_channels": [
+            150837,
+            11549
+          ],
+          "partition_channels": [
+            255041,
+            13613
+          ],
+          "shift": 32
+        },
+        {
+          "actual_ranks": [
+            13032,
+            630
+          ],
+          "folded_channels": [
+            424959,
+            2124
+          ],
+          "partition_channels": [
+            972576,
+            2324
+          ],
+          "shift": 64
+        },
+        {
+          "actual_ranks": [
+            28159,
+            100
+          ],
+          "folded_channels": [
+            966372,
+            284
+          ],
+          "partition_channels": [
+            3399386,
+            299
+          ],
+          "shift": 96
+        },
+        {
+          "actual_ranks": [
+            17538,
+            8
+          ],
+          "folded_channels": [
+            1745635,
+            24
+          ],
+          "partition_channels": [
+            11059076,
+            24
+          ],
+          "shift": 128
+        },
+        {
+          "actual_ranks": [
+            36100,
+            1
+          ],
+          "folded_channels": [
+            2531639,
+            1
+          ],
+          "partition_channels": [
+            33867382,
+            1
+          ],
+          "shift": 160
+        }
+      ],
+      "state_energy": 79
+    }
+  ],
+  "complete_profile_evidence_sha256": "e53eb2a662e0f9f2ab0c2aeeb520dfee407fca0065cdc9ec5d2cb69c524fe148",
+  "dimension_examples": [
+    {
+      "energy": 16,
+      "folded_dimension": 5,
+      "length_bound": 2,
+      "mode_cutoff": 8,
+      "regular_partition_dimension": 5
+    },
+    {
+      "energy": 48,
+      "folded_dimension": 68,
+      "length_bound": 3,
+      "mode_cutoff": 16,
+      "regular_partition_dimension": 87
+    },
+    {
+      "energy": 64,
+      "folded_dimension": 184,
+      "length_bound": 4,
+      "mode_cutoff": 16,
+      "regular_partition_dimension": 276
+    },
+    {
+      "energy": 96,
+      "folded_dimension": 1678,
+      "length_bound": 3,
+      "mode_cutoff": 32,
+      "regular_partition_dimension": 2048
+    },
+    {
+      "energy": 128,
+      "folded_dimension": 9557,
+      "length_bound": 4,
+      "mode_cutoff": 32,
+      "regular_partition_dimension": 11564
+    },
+    {
+      "energy": 256,
+      "folded_dimension": 832040,
+      "length_bound": 8,
+      "mode_cutoff": 32,
+      "regular_partition_dimension": 2824974
+    },
+    {
+      "energy": 1024,
+      "folded_dimension": 51016358091980,
+      "length_bound": 16,
+      "mode_cutoff": 64,
+      "regular_partition_dimension": 824068326214949
+    }
+  ],
+  "scope": "exact ambient high-mode folded-space dimensions and valid two-cut channels; no improved factoring exponent",
+  "status": "pass",
+  "verification": {
+    "complete_incoming_operator_vectors": 612,
+    "component_incidence_ranks": 280,
+    "eventual_periodicity_checks": 76,
+    "explicit_high_mode_span_ranks": 112,
+    "original_integer_operator_factor_comparisons": 40,
+    "outgoing_factor_expansion_comparisons": 300,
+    "stable_residue_total_checks": 4
+  }
+}

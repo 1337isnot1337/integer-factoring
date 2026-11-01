@@ -1,0 +1,91 @@
+{
+  "status": "Independent actual-matrix products, split quotient, nilpotent radical, module images, and change-of-basis identities passed.",
+  "cuts": [
+    {
+      "cut": "row",
+      "algebra_dimension": 45,
+      "all_basis_products_reconstructed": 2025,
+      "quotient_is_split_field_product_of_size": 3,
+      "radical_power_dimensions": [
+        42,
+        26,
+        6,
+        0
+      ],
+      "module_filtration_dimensions": [
+        676,
+        371,
+        75,
+        14,
+        0
+      ],
+      "character_multiplicities_by_depth": [
+        [
+          436,
+          40,
+          200
+        ],
+        [
+          231,
+          32,
+          108
+        ],
+        [
+          51,
+          12,
+          12
+        ],
+        [
+          10,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "direct_change_of_basis_column_identities": 4056
+    },
+    {
+      "cut": "column",
+      "algebra_dimension": 11,
+      "all_basis_products_reconstructed": 121,
+      "quotient_is_split_field_product_of_size": 2,
+      "radical_power_dimensions": [
+        9,
+        4,
+        0
+      ],
+      "module_filtration_dimensions": [
+        676,
+        359,
+        34,
+        0
+      ],
+      "character_multiplicities_by_depth": [
+        [
+          668,
+          8
+        ],
+        [
+          355,
+          4
+        ],
+        [
+          34,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "direct_change_of_basis_column_identities": 4056
+    }
+  ],
+  "basis_sha256": "e0ac0bd4a6fa4e68e69d5f1bd5ffdda5e3b375eee9dbb0752f7b22405753781b",
+  "algebra_evidence_sha256": "2b49d3305d489dc61daf244dc7c64d2e505ab5416a34def68f9608024f3b4be8",
+  "source_sha256": "224c56a6bf4e12cf177d36450c7a71194aff00d0b92569c849bd08594c06b85c"
+}

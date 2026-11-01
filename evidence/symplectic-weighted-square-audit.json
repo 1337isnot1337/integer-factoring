@@ -1,0 +1,152 @@
+{
+  "coefficient_dimension": 15,
+  "eligible_span_dimension": 7,
+  "eligible_vectors": [
+    {
+      "code": 1092,
+      "column_rank": 190966,
+      "eligible": true,
+      "event": "eligible",
+      "index": 42,
+      "product": 23679784,
+      "row_rank": 124
+    },
+    {
+      "code": 4369,
+      "column_rank": 449152,
+      "eligible": true,
+      "event": "eligible",
+      "index": 85,
+      "product": 56144000,
+      "row_rank": 125
+    },
+    {
+      "code": 5461,
+      "column_rank": 456976,
+      "eligible": true,
+      "event": "eligible",
+      "index": 127,
+      "product": 456976,
+      "row_rank": 1
+    },
+    {
+      "code": 4194304,
+      "column_rank": 480,
+      "eligible": true,
+      "event": "eligible",
+      "index": 2048,
+      "product": 64561920,
+      "row_rank": 134504
+    },
+    {
+      "code": 4198400,
+      "column_rank": 676,
+      "eligible": true,
+      "event": "eligible",
+      "index": 2112,
+      "product": 94082976,
+      "row_rank": 139176
+    },
+    {
+      "code": 5586944,
+      "column_rank": 225288,
+      "eligible": true,
+      "event": "eligible",
+      "index": 3968,
+      "product": 11714976,
+      "row_rank": 52
+    },
+    {
+      "code": 5588036,
+      "column_rank": 219008,
+      "eligible": true,
+      "event": "eligible",
+      "index": 4010,
+      "product": 27156992,
+      "row_rank": 124
+    },
+    {
+      "code": 5591313,
+      "column_rank": 450256,
+      "eligible": true,
+      "event": "eligible",
+      "index": 4053,
+      "product": 56282000,
+      "row_rank": 125
+    },
+    {
+      "code": 5592405,
+      "column_rank": 456976,
+      "eligible": true,
+      "event": "eligible",
+      "index": 4095,
+      "product": 24219728,
+      "row_rank": 53
+    },
+    {
+      "code": 268435456,
+      "column_rank": 676,
+      "eligible": true,
+      "event": "eligible",
+      "index": 16384,
+      "product": 60031504,
+      "row_rank": 88804
+    },
+    {
+      "code": 268439552,
+      "column_rank": 480,
+      "eligible": true,
+      "event": "eligible",
+      "index": 16448,
+      "product": 71137920,
+      "row_rank": 148204
+    },
+    {
+      "code": 272629760,
+      "column_rank": 676,
+      "eligible": true,
+      "event": "eligible",
+      "index": 18432,
+      "product": 100986288,
+      "row_rank": 149388
+    },
+    {
+      "code": 272633856,
+      "column_rank": 144,
+      "eligible": true,
+      "event": "eligible",
+      "index": 18496,
+      "product": 10810944,
+      "row_rank": 75076
+    },
+    {
+      "code": 352321536,
+      "column_rank": 88804,
+      "eligible": true,
+      "event": "eligible",
+      "index": 28672,
+      "product": 60031504,
+      "row_rank": 676
+    }
+  ],
+  "endpoint_remainder": 1,
+  "excluded_by_eligible_span": true,
+  "field_size": 2,
+  "independently_checked_vectors": 54,
+  "integer_cost_gate": 10055,
+  "labels": 676,
+  "native_input_sha256": "370482741c3e7ad6e347f2dceeb33dc2609ca057531252951695abe400ce6f1f",
+  "projective_vectors_tested": 32767,
+  "screen_sha256": "7fada3c9202d6873c7e8dfee80cbb3b54a7c3e7768d607fd853decc07d38ac77",
+  "source_sha256": {
+    "check_pfaffian_span_f4.py": "506fb9c0de8f722a0fec0ba32d60e081f165a62ea1e0b6c5cfdd5a3023118182",
+    "check_symplectic_seed_tensor_fields.py": "cfede95326457bb97ecfcba86884897934802e805a2091147235349921d46a79",
+    "check_weighted_pfaffian_screen.py": "e1fc7d222ed03a0478c7c848731427816da1fa9441ffe810f457a302e3dfa219",
+    "screen_pfaffian_span_f4.cpp": "40e44b6987e5f347e35dd524f082a6b966c8171f6cbe1b4c433abab18f50912a",
+    "screen_weighted_pfaffian_span.cpp": "ab1a12d27a3c7f5d571b7a6635a09e8bc7909d8eb04c8a627eb93c74852d326d"
+  },
+  "target_ranks": [
+    456976,
+    456976
+  ]
+}

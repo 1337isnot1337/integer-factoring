@@ -1,0 +1,82 @@
+{
+  "algebra_sha256": "2b49d3305d489dc61daf244dc7c64d2e505ab5416a34def68f9608024f3b4be8",
+  "centered_power_checks": [
+    {
+      "exceeds_seed_threshold_by_integer_comparison": false,
+      "nth_root_for_display": 76.0,
+      "power": 1,
+      "rank_cost_integer_lower": 76
+    },
+    {
+      "exceeds_seed_threshold_by_integer_comparison": false,
+      "nth_root_for_display": 88.19297024139735,
+      "power": 2,
+      "rank_cost_integer_lower": 7778
+    },
+    {
+      "exceeds_seed_threshold_by_integer_comparison": false,
+      "nth_root_for_display": 99.73431706279491,
+      "power": 4,
+      "rank_cost_integer_lower": 98941496
+    },
+    {
+      "exceeds_seed_threshold_by_integer_comparison": true,
+      "nth_root_for_display": 103.31336283634508,
+      "power": 8,
+      "rank_cost_integer_lower": 12979321318049698
+    },
+    {
+      "exceeds_seed_threshold_by_integer_comparison": true,
+      "nth_root_for_display": 105.3071365848036,
+      "power": 16,
+      "rank_cost_integer_lower": 228730913181239556440864453189788
+    },
+    {
+      "exceeds_seed_threshold_by_integer_comparison": true,
+      "nth_root_for_display": 106.30282487215601,
+      "power": 32,
+      "rank_cost_integer_lower": 70702338310449931275324263514263814513321491123586958748232800935
+    },
+    {
+      "exceeds_seed_threshold_by_integer_comparison": true,
+      "nth_root_for_display": 106.7916576702492,
+      "power": 64,
+      "rank_cost_integer_lower": 6704848740486735996188770005499193349585618996473575293752670389868545848590404010297433860825497497557315566373852669681606366762
+    },
+    {
+      "exceeds_seed_threshold_by_integer_comparison": true,
+      "nth_root_for_display": 107.03465327014634,
+      "power": 128,
+      "rank_cost_integer_lower": 60134546092570669806915626062625904257427203764898372962831070301385544120118684033680399844133851120976902877524286828431318852052094075563034008699306726661892423360890931270994881444520539834138009969358677051548623470718391913217456565040914491047639748592
+    }
+  ],
+  "checker_sha256": "a4cdcd759ce33cb9abdf841d53d15ef307e70add43694e23706d81575de39a66",
+  "column_character_multiplicities": [
+    668,
+    8
+  ],
+  "labels": 26,
+  "row_character_factors": [
+    [
+      1,
+      40
+    ],
+    [
+      2,
+      436
+    ],
+    [
+      3,
+      200
+    ]
+  ],
+  "scope": "literal polynomial coefficient decompositions; arbitrary recombinations are not excluded",
+  "uniform_polynomial_curve_lower": {
+    "base_for_display": 106.4396369279265,
+    "exact_integer_threshold_comparison_passed": true,
+    "family": "R(t(x),z(x)) with nonconstant polynomial t and arbitrary polynomial z",
+    "finite_bound_for_powers_divisible_by_ten_at_least": 80,
+    "twentieth_power_denominator": 265581311901696,
+    "twentieth_power_numerator": 9252630122271961762108958310400000000000000000000000000
+  }
+}

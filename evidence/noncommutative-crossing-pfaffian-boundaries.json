@@ -1,0 +1,207 @@
+{
+  "claim": "Exact boundary-section formula; no seed success asserted.",
+  "source_sha256": "cff3a98ce25eaceb40bb75754d9160dba752406eb70e7d5612af5d74bf13b68a",
+  "literal_audits": [
+    {
+      "pairs": 2,
+      "labels": 4,
+      "boundary_generators": 1,
+      "syndrome_groups": 1,
+      "literal_contractions": 16
+    },
+    {
+      "pairs": 3,
+      "labels": 8,
+      "boundary_generators": 6,
+      "syndrome_groups": 3,
+      "literal_contractions": 768
+    },
+    {
+      "pairs": 4,
+      "labels": 16,
+      "boundary_generators": 28,
+      "syndrome_groups": 7,
+      "literal_contractions": 28672
+    }
+  ],
+  "all_size_gram_identity_checks": [
+    {
+      "even_pairs": 2,
+      "source_monomials": 1,
+      "exact_gram_entries": 1
+    },
+    {
+      "even_pairs": 4,
+      "source_monomials": 4,
+      "exact_gram_entries": 16
+    },
+    {
+      "even_pairs": 6,
+      "source_monomials": 15,
+      "exact_gram_entries": 225
+    },
+    {
+      "even_pairs": 8,
+      "source_monomials": 56,
+      "exact_gram_entries": 3136
+    }
+  ],
+  "all_field_charge_certificate": {
+    "rank_sequence": [
+      256,
+      120,
+      46,
+      10,
+      1
+    ],
+    "coordinate_weights": [
+      15,
+      30,
+      36,
+      23,
+      16
+    ],
+    "certified_rank_sum_lower": 120,
+    "binary_rank_law_combinations_checked": 31,
+    "intervals": [
+      {
+        "least": 0,
+        "greatest": 0,
+        "charge": 15,
+        "baseline_product": 256,
+        "perturbed_product_lower": 240
+      },
+      {
+        "least": 0,
+        "greatest": 1,
+        "charge": 45,
+        "baseline_product": 2560,
+        "perturbed_product_lower": 2160
+      },
+      {
+        "least": 0,
+        "greatest": 2,
+        "charge": 81,
+        "baseline_product": 11776,
+        "perturbed_product_lower": 10800
+      },
+      {
+        "least": 0,
+        "greatest": 3,
+        "charge": 104,
+        "baseline_product": 30720,
+        "perturbed_product_lower": 28560
+      },
+      {
+        "least": 0,
+        "greatest": 4,
+        "charge": 120,
+        "baseline_product": 65536,
+        "perturbed_product_lower": 61200
+      },
+      {
+        "least": 1,
+        "greatest": 1,
+        "charge": 30,
+        "baseline_product": 1200,
+        "perturbed_product_lower": 936
+      },
+      {
+        "least": 1,
+        "greatest": 2,
+        "charge": 66,
+        "baseline_product": 5520,
+        "perturbed_product_lower": 4680
+      },
+      {
+        "least": 1,
+        "greatest": 3,
+        "charge": 89,
+        "baseline_product": 14400,
+        "perturbed_product_lower": 12376
+      },
+      {
+        "least": 1,
+        "greatest": 4,
+        "charge": 105,
+        "baseline_product": 30720,
+        "perturbed_product_lower": 26520
+      },
+      {
+        "least": 2,
+        "greatest": 2,
+        "charge": 36,
+        "baseline_product": 2116,
+        "perturbed_product_lower": 1350
+      },
+      {
+        "least": 2,
+        "greatest": 3,
+        "charge": 59,
+        "baseline_product": 5520,
+        "perturbed_product_lower": 3570
+      },
+      {
+        "least": 2,
+        "greatest": 4,
+        "charge": 75,
+        "baseline_product": 11776,
+        "perturbed_product_lower": 7650
+      },
+      {
+        "least": 3,
+        "greatest": 3,
+        "charge": 23,
+        "baseline_product": 1200,
+        "perturbed_product_lower": 714
+      },
+      {
+        "least": 3,
+        "greatest": 4,
+        "charge": 39,
+        "baseline_product": 2560,
+        "perturbed_product_lower": 1530
+      },
+      {
+        "least": 4,
+        "greatest": 4,
+        "charge": 16,
+        "baseline_product": 256,
+        "perturbed_product_lower": 3825
+      }
+    ],
+    "field_scope": "Every characteristic-two field by the ordinary proof; binary tests only audit the matrix convention."
+  },
+  "export": {
+    "prefix": "/tmp/pfaffian_boundary_P4_f1",
+    "functional_f": 1,
+    "basis_dimension": 6,
+    "integer_cost_gate": 51,
+    "basis_ranks": [
+      [
+        256,
+        256
+      ],
+      [
+        120,
+        120
+      ],
+      [
+        120,
+        46
+      ],
+      [
+        120,
+        10
+      ],
+      [
+        256,
+        1
+      ],
+      [
+        16,
+        1
+      ]
+    ]
+  }
+}

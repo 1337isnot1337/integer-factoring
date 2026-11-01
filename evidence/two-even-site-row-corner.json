@@ -1,0 +1,1011 @@
+{
+  "all_size_rank_formulas": {
+    "column": "16*C(P,4) + 46*C(P,2) - 38*P + 2",
+    "domain": "Every integer P >= 8; the anchor case count is proved in the note.",
+    "row": "(2048*C(P,4) + 6144*C(P,2) - 9077)*4^(P-7)"
+  },
+  "certificate_sha256": "ea8c90da0e73de97137ad452c100dfa972ac5e2b217fd5e783c388d071b2df69",
+  "compressed_matrix_entries_constructed": 9830400,
+  "core_character": [
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0
+  ],
+  "core_character_scalar_polynomial": "(q+r)^2 (p+r)^3",
+  "core_row_corners": [
+    {
+      "ambient_dimension": 640,
+      "compressed_matrices_sha256": "8dd11a31be93eb6a52c3187d72a2ba10cc0aee8662d8eaee3b431630bca75a05",
+      "compressed_matrix_entries_constructed": 3276800,
+      "core_syndrome": 0,
+      "idempotent_exponent": 4,
+      "left_covectors_sha256": "941ecec51584249a03b65aeeb3859e3ede4afa87c1e08620fb04a838c81d510d",
+      "nilpotent_image_dimensions": [
+        640,
+        354,
+        92,
+        9,
+        0
+      ],
+      "rank_dimension": 640,
+      "triangular_entries_checked": 1640960
+    },
+    {
+      "ambient_dimension": 384,
+      "compressed_matrices_sha256": "047f49fe7c86b99d066e566374715865557e54c3cccb4afd05c35814a3ed416e",
+      "compressed_matrix_entries_constructed": 1179648,
+      "core_syndrome": 3,
+      "idempotent_exponent": 2,
+      "left_covectors_sha256": "2425974bfc948f32db89a8c4e637de37c01f16043d393116be1b3ded209350fe",
+      "nilpotent_image_dimensions": [
+        384,
+        236,
+        52,
+        8,
+        0
+      ],
+      "rank_dimension": 384,
+      "triangular_entries_checked": 591360
+    },
+    {
+      "ambient_dimension": 384,
+      "compressed_matrices_sha256": "b67b838487661a33d412ce3f73b967a8fffb82a34026b78e031677be0f44f892",
+      "compressed_matrix_entries_constructed": 524288,
+      "core_syndrome": 5,
+      "idempotent_exponent": 4,
+      "left_covectors_sha256": "013caaa1b54f543c54603cd6bccdfef2f1c93dcd5fa96740afabcabfd6663072",
+      "nilpotent_image_dimensions": [
+        256,
+        168,
+        48,
+        8,
+        0
+      ],
+      "rank_dimension": 256,
+      "triangular_entries_checked": 263168
+    },
+    {
+      "ambient_dimension": 384,
+      "compressed_matrices_sha256": "a8689e3d5c95085cb2d807bd4609ef064f9b93500a10b30c9d457f0f35c4d19e",
+      "compressed_matrix_entries_constructed": 1179648,
+      "core_syndrome": 6,
+      "idempotent_exponent": 4,
+      "left_covectors_sha256": "c14d052e6511e66d4071d153e781cb0b2a4d2b2b102816ec6772ad9bbae71e74",
+      "nilpotent_image_dimensions": [
+        384,
+        260,
+        80,
+        12,
+        0
+      ],
+      "rank_dimension": 384,
+      "triangular_entries_checked": 591360
+    },
+    {
+      "ambient_dimension": 384,
+      "compressed_matrices_sha256": "4cfac48c0c398ad655797f726a587ae87cebc99e390c1c39ef8ea4beb4aa6074",
+      "compressed_matrix_entries_constructed": 131072,
+      "core_syndrome": 9,
+      "idempotent_exponent": 4,
+      "left_covectors_sha256": "c2f6abf88ef14a08777e718c6cfb10486a93fa25776b07cb51dd1b27ca93331c",
+      "nilpotent_image_dimensions": [
+        128,
+        88,
+        24,
+        0
+      ],
+      "rank_dimension": 128,
+      "triangular_entries_checked": 66048
+    },
+    {
+      "ambient_dimension": 384,
+      "compressed_matrices_sha256": "cd6e212f0b62483ede44acaf7ace4426eeed7e546bde6dbaead5597fa80abef5",
+      "compressed_matrix_entries_constructed": 524288,
+      "core_syndrome": 10,
+      "idempotent_exponent": 4,
+      "left_covectors_sha256": "01533d52a5a3a8e0bf1b321db35d26f4dab1424962d81d48a04f5c61a5afae79",
+      "nilpotent_image_dimensions": [
+        256,
+        184,
+        64,
+        8,
+        0
+      ],
+      "rank_dimension": 256,
+      "triangular_entries_checked": 263168
+    },
+    {
+      "ambient_dimension": 384,
+      "compressed_matrices_sha256": "a4b7c5ad76b40830d74e7dedff1596b760efbc89a5a4d02914370188943c03cf",
+      "compressed_matrix_entries_constructed": 1179648,
+      "core_syndrome": 12,
+      "idempotent_exponent": 4,
+      "left_covectors_sha256": "c22e9d851bd87726db46c71f80107a19c74247e53e63b30263db2c6d6d964031",
+      "nilpotent_image_dimensions": [
+        384,
+        260,
+        80,
+        12,
+        0
+      ],
+      "rank_dimension": 384,
+      "triangular_entries_checked": 591360
+    },
+    {
+      "ambient_dimension": 384,
+      "compressed_matrices_sha256": "fdbe274dfb6fdf2e63df5fe56c4ef676477280dff1a4758ad13d74cbcbea5954",
+      "compressed_matrix_entries_constructed": 0,
+      "core_syndrome": 17,
+      "idempotent_exponent": 4,
+      "left_covectors_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "nilpotent_image_dimensions": [
+        0
+      ],
+      "rank_dimension": 0,
+      "triangular_entries_checked": 0
+    },
+    {
+      "ambient_dimension": 384,
+      "compressed_matrices_sha256": "573c026fb3d2499afc50cc805dbf33ffa76bb3abad9aed91b859a48af987b425",
+      "compressed_matrix_entries_constructed": 131072,
+      "core_syndrome": 18,
+      "idempotent_exponent": 4,
+      "left_covectors_sha256": "fc7c37c2325c93de2a56eea2dc0865e0d2cf6a819f122dfe219941c454bd1edb",
+      "nilpotent_image_dimensions": [
+        128,
+        88,
+        24,
+        0
+      ],
+      "rank_dimension": 128,
+      "triangular_entries_checked": 66048
+    },
+    {
+      "ambient_dimension": 384,
+      "compressed_matrices_sha256": "ea39884228c23ec26ce342850e56a6aab23b9c855a26c50ae7484dc6266f95b4",
+      "compressed_matrix_entries_constructed": 524288,
+      "core_syndrome": 20,
+      "idempotent_exponent": 4,
+      "left_covectors_sha256": "0e20dfe2ee72242d515b36b1b58f51f796de6aeb2a597a74a088f2aa37c2f4be",
+      "nilpotent_image_dimensions": [
+        256,
+        168,
+        48,
+        8,
+        0
+      ],
+      "rank_dimension": 256,
+      "triangular_entries_checked": 263168
+    },
+    {
+      "ambient_dimension": 384,
+      "compressed_matrices_sha256": "b47af5541105b9cecb33f9c8e3e7a5e622cf689476dd282595e02e90c50da93c",
+      "compressed_matrix_entries_constructed": 1179648,
+      "core_syndrome": 24,
+      "idempotent_exponent": 2,
+      "left_covectors_sha256": "4c68eb5c9158fbd70c70ae12bc74603ff9207683dfd4c2456aa0ec4b6bb70146",
+      "nilpotent_image_dimensions": [
+        384,
+        236,
+        52,
+        8,
+        0
+      ],
+      "rank_dimension": 384,
+      "triangular_entries_checked": 591360
+    }
+  ],
+  "cost_exponent": {
+    "denominator": 12,
+    "numerator": 17
+  },
+  "dependency_module_audits": [
+    {
+      "all_generator_compression_entries_checked": 58800,
+      "ambient_dimension": 384,
+      "annihilated_span_dimension": 183,
+      "compression_dimension": 70,
+      "constructed_left_covectors_sha256": "e14b8281e0c32ae9e09b80146eaa9e5f1131fa8e9ad20f5bb8eff5ba4f55e563",
+      "core_pairs": 5,
+      "core_syndrome": 17,
+      "cut": "row",
+      "jordan_copies": 0,
+      "pairs": 7
+    },
+    {
+      "all_generator_compression_entries_checked": 295788,
+      "ambient_dimension": 768,
+      "annihilated_span_dimension": 521,
+      "compression_dimension": 157,
+      "constructed_left_covectors_sha256": "59acda887220ec9aa55f5980c07e98bbd4685e8110b3608230cbfd50dea34a01",
+      "core_pairs": 5,
+      "core_syndrome": 17,
+      "cut": "row",
+      "jordan_copies": 1,
+      "pairs": 7
+    },
+    {
+      "all_generator_compression_entries_checked": 780300,
+      "ambient_dimension": 1536,
+      "annihilated_span_dimension": 946,
+      "compression_dimension": 255,
+      "constructed_left_covectors_sha256": "e5b4ad5b549591a0e66b816d611fcf0aa8a1560178c0534bf2fec851a6cc4a75",
+      "core_pairs": 5,
+      "core_syndrome": 17,
+      "cut": "row",
+      "jordan_copies": 2,
+      "pairs": 7
+    },
+    {
+      "all_generator_compression_entries_checked": 0,
+      "compression_dimension": 0,
+      "core_pairs": 4,
+      "core_syndrome": 15,
+      "cut": "column",
+      "jordan_copies": 0,
+      "pairs": 8
+    },
+    {
+      "all_generator_compression_entries_checked": 0,
+      "compression_dimension": 0,
+      "core_pairs": 4,
+      "core_syndrome": 15,
+      "cut": "column",
+      "jordan_copies": 1,
+      "pairs": 8
+    },
+    {
+      "all_generator_compression_entries_checked": 0,
+      "compression_dimension": 0,
+      "core_pairs": 4,
+      "core_syndrome": 15,
+      "cut": "column",
+      "jordan_copies": 2,
+      "pairs": 8
+    },
+    {
+      "all_generator_compression_entries_checked": 0,
+      "compression_dimension": 0,
+      "core_pairs": 4,
+      "core_syndrome": 15,
+      "cut": "column",
+      "jordan_copies": 3,
+      "pairs": 8
+    },
+    {
+      "all_generator_compression_entries_checked": 3584,
+      "ambient_dimension": 1536,
+      "annihilated_span_dimension": 176,
+      "compression_dimension": 16,
+      "constructed_left_covectors_sha256": "bd827103de35940dfc551d953d7708457d2294be940ea106561c9b806a4a2dc3",
+      "core_pairs": 4,
+      "core_syndrome": 15,
+      "cut": "column",
+      "jordan_copies": 4,
+      "pairs": 8
+    },
+    {
+      "all_generator_compression_entries_checked": 0,
+      "compression_dimension": 0,
+      "core_pairs": 5,
+      "core_syndrome": 0,
+      "cut": "column",
+      "jordan_copies": 0,
+      "pairs": 8
+    },
+    {
+      "all_generator_compression_entries_checked": 0,
+      "compression_dimension": 0,
+      "core_pairs": 5,
+      "core_syndrome": 0,
+      "cut": "column",
+      "jordan_copies": 1,
+      "pairs": 8
+    },
+    {
+      "all_generator_compression_entries_checked": 0,
+      "compression_dimension": 0,
+      "core_pairs": 5,
+      "core_syndrome": 0,
+      "cut": "column",
+      "jordan_copies": 2,
+      "pairs": 8
+    },
+    {
+      "all_generator_compression_entries_checked": 504,
+      "ambient_dimension": 5120,
+      "annihilated_span_dimension": 70,
+      "compression_dimension": 6,
+      "constructed_left_covectors_sha256": "03748950f3b31fe34cb67bf39a50a6b15f6d9353e7fe1b31ae615701f7594040",
+      "core_pairs": 5,
+      "core_syndrome": 0,
+      "cut": "column",
+      "jordan_copies": 3,
+      "pairs": 8
+    },
+    {
+      "all_generator_compression_entries_checked": 0,
+      "compression_dimension": 0,
+      "core_pairs": 5,
+      "core_syndrome": 3,
+      "cut": "column",
+      "jordan_copies": 0,
+      "pairs": 8
+    },
+    {
+      "all_generator_compression_entries_checked": 0,
+      "compression_dimension": 0,
+      "core_pairs": 5,
+      "core_syndrome": 3,
+      "cut": "column",
+      "jordan_copies": 1,
+      "pairs": 8
+    },
+    {
+      "all_generator_compression_entries_checked": 0,
+      "compression_dimension": 0,
+      "core_pairs": 5,
+      "core_syndrome": 3,
+      "cut": "column",
+      "jordan_copies": 2,
+      "pairs": 8
+    },
+    {
+      "all_generator_compression_entries_checked": 896,
+      "ambient_dimension": 3072,
+      "annihilated_span_dimension": 92,
+      "compression_dimension": 8,
+      "constructed_left_covectors_sha256": "7204583de3d5f37a487b28e9cfa1a1d9a3a334ce18a844a68a5e9c1e9be59db6",
+      "core_pairs": 5,
+      "core_syndrome": 3,
+      "cut": "column",
+      "jordan_copies": 3,
+      "pairs": 8
+    },
+    {
+      "all_generator_compression_entries_checked": 0,
+      "compression_dimension": 0,
+      "core_pairs": 5,
+      "core_syndrome": 5,
+      "cut": "column",
+      "jordan_copies": 0,
+      "pairs": 8
+    },
+    {
+      "all_generator_compression_entries_checked": 0,
+      "compression_dimension": 0,
+      "core_pairs": 5,
+      "core_syndrome": 5,
+      "cut": "column",
+      "jordan_copies": 1,
+      "pairs": 8
+    },
+    {
+      "all_generator_compression_entries_checked": 224,
+      "ambient_dimension": 1536,
+      "annihilated_span_dimension": 44,
+      "compression_dimension": 4,
+      "constructed_left_covectors_sha256": "bf702da5ea52c9591834ddda349aa285b8032f75af0fef9f9da350c6f61cfcf4",
+      "core_pairs": 5,
+      "core_syndrome": 5,
+      "cut": "column",
+      "jordan_copies": 2,
+      "pairs": 8
+    },
+    {
+      "all_generator_compression_entries_checked": 5600,
+      "ambient_dimension": 3072,
+      "annihilated_span_dimension": 220,
+      "compression_dimension": 20,
+      "constructed_left_covectors_sha256": "1a6827005a14ba1dbd86a80585fb2e7d10b54d84ee62b8509cfd7a5361176e95",
+      "core_pairs": 5,
+      "core_syndrome": 5,
+      "cut": "column",
+      "jordan_copies": 3,
+      "pairs": 8
+    },
+    {
+      "all_generator_compression_entries_checked": 0,
+      "compression_dimension": 0,
+      "core_pairs": 5,
+      "core_syndrome": 6,
+      "cut": "column",
+      "jordan_copies": 0,
+      "pairs": 8
+    },
+    {
+      "all_generator_compression_entries_checked": 0,
+      "compression_dimension": 0,
+      "core_pairs": 5,
+      "core_syndrome": 6,
+      "cut": "column",
+      "jordan_copies": 1,
+      "pairs": 8
+    },
+    {
+      "all_generator_compression_entries_checked": 0,
+      "compression_dimension": 0,
+      "core_pairs": 5,
+      "core_syndrome": 6,
+      "cut": "column",
+      "jordan_copies": 2,
+      "pairs": 8
+    },
+    {
+      "all_generator_compression_entries_checked": 896,
+      "ambient_dimension": 3072,
+      "annihilated_span_dimension": 92,
+      "compression_dimension": 8,
+      "constructed_left_covectors_sha256": "2dc24abbc18373ffdd8a9c4383148ca71cdba51ebfdb6852f53437cd5d9f90bc",
+      "core_pairs": 5,
+      "core_syndrome": 6,
+      "cut": "column",
+      "jordan_copies": 3,
+      "pairs": 8
+    },
+    {
+      "all_generator_compression_entries_checked": 0,
+      "compression_dimension": 0,
+      "core_pairs": 5,
+      "core_syndrome": 9,
+      "cut": "column",
+      "jordan_copies": 0,
+      "pairs": 8
+    },
+    {
+      "all_generator_compression_entries_checked": 0,
+      "compression_dimension": 0,
+      "core_pairs": 5,
+      "core_syndrome": 9,
+      "cut": "column",
+      "jordan_copies": 1,
+      "pairs": 8
+    },
+    {
+      "all_generator_compression_entries_checked": 224,
+      "ambient_dimension": 1536,
+      "annihilated_span_dimension": 44,
+      "compression_dimension": 4,
+      "constructed_left_covectors_sha256": "e900cdcbdb1a40b97f4cb15322e5959a1870dee98e4ac7c6bdd66535fbd4e403",
+      "core_pairs": 5,
+      "core_syndrome": 9,
+      "cut": "column",
+      "jordan_copies": 2,
+      "pairs": 8
+    },
+    {
+      "all_generator_compression_entries_checked": 6776,
+      "ambient_dimension": 3072,
+      "annihilated_span_dimension": 244,
+      "compression_dimension": 22,
+      "constructed_left_covectors_sha256": "a0d306bcdf9b95fb770b87c3f50b892d365c8ed9c162f62c6eabf0ef9b58d028",
+      "core_pairs": 5,
+      "core_syndrome": 9,
+      "cut": "column",
+      "jordan_copies": 3,
+      "pairs": 8
+    },
+    {
+      "all_generator_compression_entries_checked": 0,
+      "compression_dimension": 0,
+      "core_pairs": 5,
+      "core_syndrome": 10,
+      "cut": "column",
+      "jordan_copies": 0,
+      "pairs": 8
+    },
+    {
+      "all_generator_compression_entries_checked": 0,
+      "compression_dimension": 0,
+      "core_pairs": 5,
+      "core_syndrome": 10,
+      "cut": "column",
+      "jordan_copies": 1,
+      "pairs": 8
+    },
+    {
+      "all_generator_compression_entries_checked": 224,
+      "ambient_dimension": 1536,
+      "annihilated_span_dimension": 44,
+      "compression_dimension": 4,
+      "constructed_left_covectors_sha256": "6983a3a3f1f26222b19a7882bb3eb1f4f180e8b2940288fd858e08ab9bc39ddf",
+      "core_pairs": 5,
+      "core_syndrome": 10,
+      "cut": "column",
+      "jordan_copies": 2,
+      "pairs": 8
+    },
+    {
+      "all_generator_compression_entries_checked": 5600,
+      "ambient_dimension": 3072,
+      "annihilated_span_dimension": 220,
+      "compression_dimension": 20,
+      "constructed_left_covectors_sha256": "37bc144713427485607eada311df2073416a7c35709714f002e7086bc8a4f549",
+      "core_pairs": 5,
+      "core_syndrome": 10,
+      "cut": "column",
+      "jordan_copies": 3,
+      "pairs": 8
+    },
+    {
+      "all_generator_compression_entries_checked": 0,
+      "compression_dimension": 0,
+      "core_pairs": 5,
+      "core_syndrome": 12,
+      "cut": "column",
+      "jordan_copies": 0,
+      "pairs": 8
+    },
+    {
+      "all_generator_compression_entries_checked": 0,
+      "compression_dimension": 0,
+      "core_pairs": 5,
+      "core_syndrome": 12,
+      "cut": "column",
+      "jordan_copies": 1,
+      "pairs": 8
+    },
+    {
+      "all_generator_compression_entries_checked": 0,
+      "compression_dimension": 0,
+      "core_pairs": 5,
+      "core_syndrome": 12,
+      "cut": "column",
+      "jordan_copies": 2,
+      "pairs": 8
+    },
+    {
+      "all_generator_compression_entries_checked": 896,
+      "ambient_dimension": 3072,
+      "annihilated_span_dimension": 92,
+      "compression_dimension": 8,
+      "constructed_left_covectors_sha256": "c508afb1432151bf9db6f9f4742d164a6df08033b1ac6bb28451164ae1253f50",
+      "core_pairs": 5,
+      "core_syndrome": 12,
+      "cut": "column",
+      "jordan_copies": 3,
+      "pairs": 8
+    },
+    {
+      "all_generator_compression_entries_checked": 0,
+      "compression_dimension": 0,
+      "core_pairs": 5,
+      "core_syndrome": 17,
+      "cut": "column",
+      "jordan_copies": 0,
+      "pairs": 8
+    },
+    {
+      "all_generator_compression_entries_checked": 0,
+      "compression_dimension": 0,
+      "core_pairs": 5,
+      "core_syndrome": 17,
+      "cut": "column",
+      "jordan_copies": 1,
+      "pairs": 8
+    },
+    {
+      "all_generator_compression_entries_checked": 0,
+      "compression_dimension": 0,
+      "core_pairs": 5,
+      "core_syndrome": 17,
+      "cut": "column",
+      "jordan_copies": 2,
+      "pairs": 8
+    },
+    {
+      "all_generator_compression_entries_checked": 896,
+      "ambient_dimension": 3072,
+      "annihilated_span_dimension": 92,
+      "compression_dimension": 8,
+      "constructed_left_covectors_sha256": "ea756ca0c32b725364f3180fb1e0341a29a1ace740726cd82e6d75d34438bc8f",
+      "core_pairs": 5,
+      "core_syndrome": 17,
+      "cut": "column",
+      "jordan_copies": 3,
+      "pairs": 8
+    },
+    {
+      "all_generator_compression_entries_checked": 0,
+      "compression_dimension": 0,
+      "core_pairs": 5,
+      "core_syndrome": 18,
+      "cut": "column",
+      "jordan_copies": 0,
+      "pairs": 8
+    },
+    {
+      "all_generator_compression_entries_checked": 0,
+      "compression_dimension": 0,
+      "core_pairs": 5,
+      "core_syndrome": 18,
+      "cut": "column",
+      "jordan_copies": 1,
+      "pairs": 8
+    },
+    {
+      "all_generator_compression_entries_checked": 224,
+      "ambient_dimension": 1536,
+      "annihilated_span_dimension": 44,
+      "compression_dimension": 4,
+      "constructed_left_covectors_sha256": "210d4d3de7981195ff1d674c2f34724293254a42b3afefe8227c6921abdd4882",
+      "core_pairs": 5,
+      "core_syndrome": 18,
+      "cut": "column",
+      "jordan_copies": 2,
+      "pairs": 8
+    },
+    {
+      "all_generator_compression_entries_checked": 6776,
+      "ambient_dimension": 3072,
+      "annihilated_span_dimension": 244,
+      "compression_dimension": 22,
+      "constructed_left_covectors_sha256": "0d3bbf988f14003f623ac63ba47f66ebf87c6e0a964d8b29b0ec86bae93ce20b",
+      "core_pairs": 5,
+      "core_syndrome": 18,
+      "cut": "column",
+      "jordan_copies": 3,
+      "pairs": 8
+    },
+    {
+      "all_generator_compression_entries_checked": 0,
+      "compression_dimension": 0,
+      "core_pairs": 5,
+      "core_syndrome": 20,
+      "cut": "column",
+      "jordan_copies": 0,
+      "pairs": 8
+    },
+    {
+      "all_generator_compression_entries_checked": 0,
+      "compression_dimension": 0,
+      "core_pairs": 5,
+      "core_syndrome": 20,
+      "cut": "column",
+      "jordan_copies": 1,
+      "pairs": 8
+    },
+    {
+      "all_generator_compression_entries_checked": 224,
+      "ambient_dimension": 1536,
+      "annihilated_span_dimension": 44,
+      "compression_dimension": 4,
+      "constructed_left_covectors_sha256": "e607a478dcc65023ac8a4f5b35adf73b68fd2f6679ab3632025e56050d57cfc9",
+      "core_pairs": 5,
+      "core_syndrome": 20,
+      "cut": "column",
+      "jordan_copies": 2,
+      "pairs": 8
+    },
+    {
+      "all_generator_compression_entries_checked": 6776,
+      "ambient_dimension": 3072,
+      "annihilated_span_dimension": 244,
+      "compression_dimension": 22,
+      "constructed_left_covectors_sha256": "6299611f85d450de9e1b43241266b64e0ea71e7e75be2d57b15ed6179cd09e5e",
+      "core_pairs": 5,
+      "core_syndrome": 20,
+      "cut": "column",
+      "jordan_copies": 3,
+      "pairs": 8
+    },
+    {
+      "all_generator_compression_entries_checked": 0,
+      "compression_dimension": 0,
+      "core_pairs": 5,
+      "core_syndrome": 24,
+      "cut": "column",
+      "jordan_copies": 0,
+      "pairs": 8
+    },
+    {
+      "all_generator_compression_entries_checked": 0,
+      "compression_dimension": 0,
+      "core_pairs": 5,
+      "core_syndrome": 24,
+      "cut": "column",
+      "jordan_copies": 1,
+      "pairs": 8
+    },
+    {
+      "all_generator_compression_entries_checked": 0,
+      "compression_dimension": 0,
+      "core_pairs": 5,
+      "core_syndrome": 24,
+      "cut": "column",
+      "jordan_copies": 2,
+      "pairs": 8
+    },
+    {
+      "all_generator_compression_entries_checked": 896,
+      "ambient_dimension": 3072,
+      "annihilated_span_dimension": 92,
+      "compression_dimension": 8,
+      "constructed_left_covectors_sha256": "d9fb6c380c29af7f51a27b1082a1d74a86a654472888c86efc57a83f757c695b",
+      "core_pairs": 5,
+      "core_syndrome": 24,
+      "cut": "column",
+      "jordan_copies": 3,
+      "pairs": 8
+    }
+  ],
+  "dependency_scalar_compression_entries_checked": 1176104,
+  "first_unclosed_seed_for_this_certificate": {
+    "exact_shortfall": {
+      "difference": 141704246722296628529049146398836395454649770491171045376,
+      "label_power": 14,
+      "rank_product_power": 5
+    },
+    "labels": 11520,
+    "pairs": 10,
+    "rank_dimensions": [
+      44638912,
+      5052
+    ],
+    "rank_product": 225515783424
+  },
+  "largest_dependency_matrix_dimension": 5120,
+  "largest_new_row_matrix_dimension": 640,
+  "literal_embedding_controls": [
+    {
+      "controls": [
+        {
+          "complete_polynomial_entries_checked": 210,
+          "cut": 0,
+          "kind": "entire weight-four block"
+        },
+        {
+          "complete_polynomial_entries_checked": 210,
+          "cut": 1,
+          "kind": "entire weight-four block"
+        },
+        {
+          "complete_polynomial_entries_checked": 84,
+          "cut": 0,
+          "kind": "weight-two principal restriction"
+        },
+        {
+          "complete_polynomial_entries_checked": 84,
+          "cut": 1,
+          "kind": "weight-two principal restriction"
+        },
+        {
+          "complete_polynomial_entries_checked": 3,
+          "cut": 0,
+          "kind": "weight-zero principal restriction"
+        },
+        {
+          "complete_polynomial_entries_checked": 3,
+          "cut": 1,
+          "kind": "weight-zero principal restriction"
+        }
+      ],
+      "pairs": 8
+    },
+    {
+      "controls": [
+        {
+          "complete_polynomial_entries_checked": 378,
+          "cut": 0,
+          "kind": "entire weight-four block"
+        },
+        {
+          "complete_polynomial_entries_checked": 378,
+          "cut": 1,
+          "kind": "entire weight-four block"
+        },
+        {
+          "complete_polynomial_entries_checked": 108,
+          "cut": 0,
+          "kind": "weight-two principal restriction"
+        },
+        {
+          "complete_polynomial_entries_checked": 108,
+          "cut": 1,
+          "kind": "weight-two principal restriction"
+        },
+        {
+          "complete_polynomial_entries_checked": 3,
+          "cut": 0,
+          "kind": "weight-zero principal restriction"
+        },
+        {
+          "complete_polynomial_entries_checked": 3,
+          "cut": 1,
+          "kind": "weight-zero principal restriction"
+        }
+      ],
+      "pairs": 9
+    }
+  ],
+  "local_constant_similarities": [
+    {
+      "basis_columns": [
+        1,
+        8,
+        6,
+        2
+      ],
+      "cut": "row",
+      "linear_target_rows": [
+        1,
+        2,
+        12,
+        8
+      ]
+    },
+    {
+      "basis_columns": [
+        2,
+        4,
+        9,
+        1
+      ],
+      "cut": "column",
+      "linear_target_rows": [
+        0,
+        0,
+        8,
+        0
+      ]
+    }
+  ],
+  "scope": "All characteristic-two fields, every tensor power, arbitrary coefficient-space recombinations.",
+  "seeds": [
+    {
+      "character": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient_directions": 14,
+      "exact_margin": {
+        "difference": 274937323112978348763910876990177166308630956063016091648,
+        "label_power": 17,
+        "rank_product_power": 6
+      },
+      "labels": 1792,
+      "pairs": 8,
+      "rank_dimensions": [
+        1225260,
+        2106
+      ],
+      "rank_product": 2580397560,
+      "weight_four_rank_dimensions": [
+        573440,
+        1120
+      ],
+      "weight_two_restricted_rank_dimensions": [
+        610860,
+        980
+      ],
+      "weight_zero_restricted_rank_dimensions": [
+        40960,
+        6
+      ]
+    },
+    {
+      "character": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient_directions": 16,
+      "exact_margin": {
+        "difference": 57548571342725793129251867311725263843316799834668177452695552,
+        "label_power": 17,
+        "rank_product_power": 6
+      },
+      "labels": 4608,
+      "pairs": 9,
+      "rank_dimensions": [
+        7522480,
+        3332
+      ],
+      "rank_product": 25064903360,
+      "weight_four_rank_dimensions": [
+        4128768,
+        2016
+      ],
+      "weight_two_restricted_rank_dimensions": [
+        3229872,
+        1310
+      ],
+      "weight_zero_restricted_rank_dimensions": [
+        163840,
+        6
+      ]
+    }
+  ],
+  "source_certificates_sha256": {
+    "evidence/two-even-site-P7-jordan-compression-certificate.json": "660592bf565c92c99e1cd8f3c126054e2942a41920ae856462ed0d23cefcd078",
+    "evidence/two-even-site-P8-compression-certificate.json": "f3068a69c7ed580c954b3600cca332efab7619333a854cf47244c76a512f53ee"
+  },
+  "source_sha256": {
+    "assemble_two_even_site_cores.py": "3b0ad33919e8d0c316203c1737d9762f1d10fb515f86a15372df375d667d4d00",
+    "check_common_character_compressions.py": "ab56e9b53ce0710c7bd6f390547e503ac47c7534fe7091e4ad1b8cd014bb2d46",
+    "check_modular_crossing.py": "3422aa9dba53f475551943df76c7a2419c1eefa0b37cc67562a56c4b812cacae",
+    "check_noncommutative_crossing_character_compression.py": "3767998bfb8acd571c47ab641d00aff8a6a661ce3278cda7c3233b19898661d2",
+    "check_two_even_site_P8_compressions.py": "6013b200899e045c8357c903f184a27dc4cd114121e89c71f1b763419b5cd9d7",
+    "check_two_even_site_jordan_compressions.py": "3f1c9d326ed0b42c0d9f188c53489c81757225393806d7d61da752c1a57b4fed",
+    "check_two_even_site_row_corners.py": "97e931f64bf5ce9d48664b988b29611cf16d37cc37a1b34b2c5629dabbce7995",
+    "complement_shell_tensor.py": "8a37f03f385c64aaac948d2d0754adc684b48786614b3380060004bb936deded",
+    "explore_complement_edge_pencils.py": "730649e439a994ab7722e20faeeab3162ae7fad477c9530c5753e5862d7aaec0",
+    "explore_symplectic_boundary_codes.py": "33995930c5d2181dc13a9ac9da661be201c2f1cfbd6be07b1411c08f3f5d8720",
+    "find_tagged_common_character_compressions.py": "3f34d60ff8f52cabdc19ebffd95fe56bda3ddc09ab60978828f3bbd17097efa8"
+  },
+  "status": "pass",
+  "triangular_entries_checked": 4928000,
+  "weight_four_row_triangular_certificate": {
+    "algebra_sha256": "9514894202c764e2ffe919c1097fecf0c2277d6a19b0a03289b87d14235f8005",
+    "basis_sha256": "46231666bc0466fab98b32fe3567df4b46ff7981cb890a7a72a0d2059955f900",
+    "core_character_dimension": 32,
+    "core_syndrome": 15,
+    "independent_algebra_reconstruction": {
+      "algebra_dimension": 22,
+      "all_basis_products_reconstructed": 484,
+      "character_multiplicities_by_depth": [
+        [
+          384,
+          192
+        ],
+        [
+          209,
+          112
+        ],
+        [
+          30,
+          16
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "cut": "row",
+      "direct_change_of_basis_column_identities": 3456,
+      "module_filtration_dimensions": [
+        576,
+        321,
+        46,
+        0
+      ],
+      "quotient_is_split_field_product_of_size": 2,
+      "radical_power_dimensions": [
+        20,
+        9,
+        0
+      ]
+    },
+    "triangular_matrix_entries_checked": 3168
+  }
+}

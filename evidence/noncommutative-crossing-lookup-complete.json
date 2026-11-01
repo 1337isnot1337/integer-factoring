@@ -1,0 +1,440 @@
+{
+  "status": "exhaustive exact native F4 lookup screen; independently audited bounded blocks and all minimizers",
+  "command": "/tmp/intfact-group-correction-screen --k 2 --family lookup --normalized --count 33554432 --exact",
+  "start": {
+    "event": "start",
+    "k": 2,
+    "q": 4,
+    "matrix_order": 64,
+    "family": "lookup",
+    "coefficient_bits": 32,
+    "free_bits": 25,
+    "normalized": true,
+    "baseline_rank": 31,
+    "random": false,
+    "exact_ranks": true,
+    "start": 0,
+    "count": 33554432,
+    "seed": 20261030
+  },
+  "complete": {
+    "event": "complete",
+    "tested": 33554432,
+    "best_rank": 28,
+    "digest_fnv64": "1415671051223566181",
+    "milliseconds": 380272,
+    "histogram": [
+      [
+        28,
+        12
+      ],
+      [
+        31,
+        10
+      ],
+      [
+        33,
+        6
+      ],
+      [
+        37,
+        12
+      ],
+      [
+        38,
+        24
+      ],
+      [
+        39,
+        36
+      ],
+      [
+        40,
+        144
+      ],
+      [
+        41,
+        348
+      ],
+      [
+        42,
+        216
+      ],
+      [
+        43,
+        360
+      ],
+      [
+        44,
+        828
+      ],
+      [
+        45,
+        792
+      ],
+      [
+        46,
+        1512
+      ],
+      [
+        47,
+        672
+      ],
+      [
+        48,
+        5412
+      ],
+      [
+        49,
+        4848
+      ],
+      [
+        50,
+        16920
+      ],
+      [
+        51,
+        22320
+      ],
+      [
+        52,
+        39840
+      ],
+      [
+        53,
+        39576
+      ],
+      [
+        54,
+        74688
+      ],
+      [
+        55,
+        117024
+      ],
+      [
+        56,
+        200208
+      ],
+      [
+        57,
+        154944
+      ],
+      [
+        58,
+        335136
+      ],
+      [
+        59,
+        785664
+      ],
+      [
+        60,
+        2416080
+      ],
+      [
+        61,
+        6883488
+      ],
+      [
+        62,
+        12433536
+      ],
+      [
+        63,
+        8793600
+      ],
+      [
+        64,
+        1226176
+      ]
+    ],
+    "best_coefficients": [
+      0,
+      0,
+      3,
+      0,
+      0,
+      0,
+      1,
+      2,
+      3,
+      1,
+      2,
+      3,
+      0,
+      2,
+      3,
+      2
+    ]
+  },
+  "minimizers": [
+    {
+      "quadratic_index": 9553,
+      "lookup_index": 29440724,
+      "correction": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        2,
+        2,
+        1,
+        1,
+        3,
+        1,
+        2,
+        0,
+        0,
+        2,
+        3
+      ]
+    },
+    {
+      "quadratic_index": 9556,
+      "lookup_index": 30093425,
+      "correction": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        2,
+        3,
+        0,
+        0,
+        2,
+        1,
+        2,
+        1,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "quadratic_index": 9562,
+      "lookup_index": 25134494,
+      "correction": [
+        0,
+        0,
+        2,
+        3,
+        0,
+        2,
+        0,
+        3,
+        2,
+        0,
+        0,
+        3,
+        3,
+        3,
+        3,
+        2
+      ]
+    },
+    {
+      "quadratic_index": 9567,
+      "lookup_index": 24481595,
+      "correction": [
+        0,
+        0,
+        3,
+        2,
+        0,
+        2,
+        1,
+        2,
+        3,
+        1,
+        0,
+        3,
+        2,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "quadratic_index": 24480,
+      "lookup_index": 30243048,
+      "correction": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        3,
+        1,
+        0,
+        3,
+        3,
+        2,
+        2,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "quadratic_index": 24485,
+      "lookup_index": 29848141,
+      "correction": [
+        0,
+        0,
+        1,
+        3,
+        0,
+        0,
+        2,
+        0,
+        1,
+        2,
+        3,
+        2,
+        3,
+        0,
+        2,
+        3
+      ]
+    },
+    {
+      "quadratic_index": 24491,
+      "lookup_index": 24364962,
+      "correction": [
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        1,
+        3,
+        3,
+        0,
+        2,
+        3,
+        1,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "quadratic_index": 24494,
+      "lookup_index": 24759559,
+      "correction": [
+        0,
+        0,
+        3,
+        1,
+        0,
+        0,
+        0,
+        2,
+        2,
+        1,
+        2,
+        3,
+        0,
+        3,
+        3,
+        2
+      ]
+    },
+    {
+      "quadratic_index": 30001,
+      "lookup_index": 29719244,
+      "correction": [
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        2,
+        1,
+        1,
+        3,
+        3,
+        2,
+        2,
+        0,
+        2,
+        3
+      ]
+    },
+    {
+      "quadratic_index": 30004,
+      "lookup_index": 30371945,
+      "correction": [
+        0,
+        0,
+        1,
+        2,
+        0,
+        0,
+        3,
+        0,
+        0,
+        2,
+        3,
+        2,
+        3,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "quadratic_index": 30010,
+      "lookup_index": 24888710,
+      "correction": [
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        0,
+        3,
+        2,
+        0,
+        2,
+        3,
+        1,
+        3,
+        3,
+        2
+      ]
+    },
+    {
+      "quadratic_index": 30015,
+      "lookup_index": 24235811,
+      "correction": [
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        1,
+        2,
+        3,
+        1,
+        2,
+        3,
+        0,
+        2,
+        3,
+        2
+      ]
+    }
+  ],
+  "raw_log_sha256": "c5d6328197faaf502191104d6c200e7d8f944ee8286c885d180c2cab9d817fe6",
+  "native_source_sha256": "16488ed69a2f5b98129909e9543d7aa1bfee6271d77b05a3be3183c3493cfd49",
+  "independent_checker": "tools/check_noncommutative_crossing_native.py"
+}

@@ -1,0 +1,400 @@
+{
+  "cases": [
+    {
+      "all_F4_decompositions_fail_seed_criterion": true,
+      "basis_sha256": "b510e8b1497b7b0e7f7f6c60cf69d75e8eb0e35bd7378bb15aadbe6a7e42195c",
+      "coefficient_dimension": 4,
+      "cost_denominator": 1000000000000,
+      "eligible_count": 3,
+      "eligible_span_basis": {
+        "1": 4,
+        "2": 21,
+        "3": 81
+      },
+      "eligible_span_dimension": 3,
+      "eligible_vectors": [
+        {
+          "code": 21,
+          "column_rank": 100,
+          "event": "eligible",
+          "product": 100,
+          "row_rank": 1
+        },
+        {
+          "code": 81,
+          "column_rank": 1,
+          "event": "eligible",
+          "product": 100,
+          "row_rank": 100
+        },
+        {
+          "code": 85,
+          "column_rank": 12,
+          "event": "eligible",
+          "product": 312,
+          "row_rank": 26
+        }
+      ],
+      "endpoint_remainder": 1,
+      "field": "F2[t]/(t^2+t+1)",
+      "independently_checked_vectors": 43,
+      "integer_cost_gate": 26,
+      "labels": 10,
+      "matrix_and_endpoint_equality_rechecked": true,
+      "name": "omega_radical_P5_L3",
+      "original_audited_basis_sha256": "637d652fb65dc1f19976f871ced7e7abeaf7907ffdd37c92fc451b3aee796842",
+      "projective_vectors_tested": 85,
+      "restricted_shortest_cost_lower_numerator": null,
+      "scope": "the supplied finite coefficient space over F4; other fields and label retracts are not excluded",
+      "screen_sha256": "3f33ca4ddb64c8150cdc8ca237869b7432dd91e0182c049c398e256e52027a66",
+      "seconds": 0.09875649400055408,
+      "shortest_path_states": 0
+    },
+    {
+      "all_F4_decompositions_fail_seed_criterion": true,
+      "basis_sha256": "264bfbce14a6deaba2cf6d30bf3fb09701b83ce16effa2b20306b2e915436e5b",
+      "coefficient_dimension": 5,
+      "cost_denominator": 1000000000000,
+      "eligible_count": 4,
+      "eligible_span_basis": {
+        "1": 4,
+        "2": 16,
+        "3": 64,
+        "4": 276
+      },
+      "eligible_span_dimension": 4,
+      "eligible_vectors": [
+        {
+          "code": 64,
+          "column_rank": 1,
+          "event": "eligible",
+          "product": 64,
+          "row_rank": 64
+        },
+        {
+          "code": 68,
+          "column_rank": 8,
+          "event": "eligible",
+          "product": 144,
+          "row_rank": 18
+        },
+        {
+          "code": 276,
+          "column_rank": 22,
+          "event": "eligible",
+          "product": 308,
+          "row_rank": 14
+        },
+        {
+          "code": 324,
+          "column_rank": 64,
+          "event": "eligible",
+          "product": 64,
+          "row_rank": 1
+        }
+      ],
+      "endpoint_remainder": 1,
+      "field": "F2[t]/(t^2+t+1)",
+      "independently_checked_vectors": 44,
+      "integer_cost_gate": 19,
+      "labels": 8,
+      "matrix_and_endpoint_equality_rechecked": true,
+      "name": "omega_boundary_P4_L3",
+      "original_audited_basis_sha256": "e7e824f2619163ca6b41073f9e9a87b3ebd24cfb67acf8d8b35c1fdf38c1393b",
+      "projective_vectors_tested": 341,
+      "restricted_shortest_cost_lower_numerator": null,
+      "scope": "the supplied finite coefficient space over F4; other fields and label retracts are not excluded",
+      "screen_sha256": "e23fe624c501373090348f4ebf04a8b90a9ccf8845cb2f671b6f53d00e2f5411",
+      "seconds": 0.04008016400257475,
+      "shortest_path_states": 0
+    },
+    {
+      "all_F4_decompositions_fail_seed_criterion": true,
+      "basis_sha256": "2e5485a656615d2e0110591181e942b29bf7f8c97659311988221876ccb22042",
+      "coefficient_dimension": 5,
+      "cost_denominator": 1000000000000,
+      "eligible_count": 3,
+      "eligible_span_basis": {
+        "2": 17,
+        "3": 81,
+        "4": 273
+      },
+      "eligible_span_dimension": 3,
+      "eligible_vectors": [
+        {
+          "code": 17,
+          "column_rank": 60,
+          "event": "eligible",
+          "product": 1020,
+          "row_rank": 17
+        },
+        {
+          "code": 273,
+          "column_rank": 10,
+          "event": "eligible",
+          "product": 340,
+          "row_rank": 34
+        },
+        {
+          "code": 320,
+          "column_rank": 104,
+          "event": "eligible",
+          "product": 832,
+          "row_rank": 8
+        }
+      ],
+      "endpoint_remainder": 1,
+      "field": "F2[t]/(t^2+t+1)",
+      "independently_checked_vectors": 43,
+      "integer_cost_gate": 34,
+      "labels": 12,
+      "matrix_and_endpoint_equality_rechecked": true,
+      "name": "omega_radical_P4_L4_half",
+      "original_audited_basis_sha256": "9f7880f75fb1851d55075e6adf402cdcf0cc0b0246e7108e034cba3ab87e9364",
+      "projective_vectors_tested": 341,
+      "restricted_shortest_cost_lower_numerator": null,
+      "scope": "the supplied finite coefficient space over F4; other fields and label retracts are not excluded",
+      "screen_sha256": "03d444a1e98b0105c29428ec4718e2be5fe6f0dd6292f5fec0d4dafc90655545",
+      "seconds": 0.1297052949994395,
+      "shortest_path_states": 0
+    },
+    {
+      "all_F4_decompositions_fail_seed_criterion": true,
+      "basis_sha256": "e0ac0bd4a6fa4e68e69d5f1bd5ffdda5e3b375eee9dbb0752f7b22405753781b",
+      "coefficient_dimension": 6,
+      "cost_denominator": 1000000000000,
+      "eligible_count": 4,
+      "eligible_span_basis": {
+        "2": 21,
+        "3": 85,
+        "4": 260,
+        "5": 1028
+      },
+      "eligible_span_dimension": 4,
+      "eligible_vectors": [
+        {
+          "code": 85,
+          "column_rank": 676,
+          "event": "eligible",
+          "product": 676,
+          "row_rank": 1
+        },
+        {
+          "code": 1028,
+          "column_rank": 26,
+          "event": "eligible",
+          "product": 7748,
+          "row_rank": 298
+        },
+        {
+          "code": 1092,
+          "column_rank": 12,
+          "event": "eligible",
+          "product": 3288,
+          "row_rank": 274
+        },
+        {
+          "code": 1280,
+          "column_rank": 298,
+          "event": "eligible",
+          "product": 7748,
+          "row_rank": 26
+        }
+      ],
+      "endpoint_remainder": 1,
+      "field": "F2[t]/(t^2+t+1)",
+      "independently_checked_vectors": 44,
+      "integer_cost_gate": 101,
+      "labels": 26,
+      "matrix_and_endpoint_equality_rechecked": true,
+      "name": "omega_radical_P4_L4",
+      "original_audited_basis_sha256": "874f652af0b0ae5df0e5ad1def03f07069ff05dc116b478235dd5873a46d4776",
+      "projective_vectors_tested": 1365,
+      "restricted_shortest_cost_lower_numerator": null,
+      "scope": "the supplied finite coefficient space over F4; other fields and label retracts are not excluded",
+      "screen_sha256": "81e16bd79668a6d096892fd9597def8146dc25d71f5616b99a1e027f4a52bf8c",
+      "seconds": 4.641376429000957,
+      "shortest_path_states": 0
+    },
+    {
+      "all_F4_decompositions_fail_seed_criterion": true,
+      "basis_sha256": "1305d1d3c56aed81d8397e3bccde2e76300b5ed15600670105b599e2e84c1c58",
+      "coefficient_dimension": 8,
+      "cost_denominator": 1000000000000,
+      "eligible_count": 5,
+      "eligible_span_basis": {
+        "3": 64,
+        "4": 260,
+        "5": 1028,
+        "6": 5189,
+        "7": 17472
+      },
+      "eligible_span_dimension": 5,
+      "eligible_vectors": [
+        {
+          "code": 1028,
+          "column_rank": 64,
+          "event": "eligible",
+          "product": 104704,
+          "row_rank": 1636
+        },
+        {
+          "code": 1092,
+          "column_rank": 32,
+          "event": "eligible",
+          "product": 46400,
+          "row_rank": 1450
+        },
+        {
+          "code": 1280,
+          "column_rank": 1636,
+          "event": "eligible",
+          "product": 104704,
+          "row_rank": 64
+        },
+        {
+          "code": 17472,
+          "column_rank": 164,
+          "event": "eligible",
+          "product": 62648,
+          "row_rank": 382
+        },
+        {
+          "code": 20485,
+          "column_rank": 4096,
+          "event": "eligible",
+          "product": 4096,
+          "row_rank": 1
+        }
+      ],
+      "endpoint_remainder": 1,
+      "field": "F2[t]/(t^2+t+1)",
+      "independently_checked_vectors": 45,
+      "integer_cost_gate": 359,
+      "labels": 64,
+      "matrix_and_endpoint_equality_rechecked": true,
+      "name": "omega_radical_P6_L4",
+      "original_audited_basis_sha256": "213be79c974899f197c1faa21004bbfb0d69a3529285942dd1c0e9989cc01a36",
+      "projective_vectors_tested": 21845,
+      "restricted_shortest_cost_lower_numerator": null,
+      "scope": "the supplied finite coefficient space over F4; other fields and label retracts are not excluded",
+      "screen_sha256": "13b69b25f690a0a7e6396e9faf6ef035751a3b2f4f3124da0e5a9d9aa09c1ef3",
+      "seconds": 77.9222407390007,
+      "shortest_path_states": 0
+    },
+    {
+      "all_F4_decompositions_fail_seed_criterion": true,
+      "basis_sha256": "088984aacc98147ac99be02752fb357856961adeb1cf4971c7b5ddd5f12cc2b4",
+      "coefficient_dimension": 8,
+      "cost_denominator": 1000000000000,
+      "eligible_count": 11,
+      "eligible_span_basis": {
+        "2": 17,
+        "3": 68,
+        "5": 1360,
+        "6": 4101,
+        "7": 17685
+      },
+      "eligible_span_dimension": 5,
+      "eligible_vectors": [
+        {
+          "code": 68,
+          "column_rank": 1422,
+          "event": "eligible",
+          "product": 61146,
+          "row_rank": 43
+        },
+        {
+          "code": 4101,
+          "column_rank": 34,
+          "event": "eligible",
+          "product": 27710,
+          "row_rank": 815
+        },
+        {
+          "code": 4176,
+          "column_rank": 44,
+          "event": "eligible",
+          "product": 55000,
+          "row_rank": 1250
+        },
+        {
+          "code": 5461,
+          "column_rank": 1852,
+          "event": "eligible",
+          "product": 35188,
+          "row_rank": 19
+        },
+        {
+          "code": 17685,
+          "column_rank": 24,
+          "event": "eligible",
+          "product": 1656,
+          "row_rank": 69
+        },
+        {
+          "code": 21776,
+          "column_rank": 22,
+          "event": "eligible",
+          "product": 16412,
+          "row_rank": 746
+        },
+        {
+          "code": 21829,
+          "column_rank": 44,
+          "event": "eligible",
+          "product": 57244,
+          "row_rank": 1301
+        },
+        {
+          "code": 25887,
+          "column_rank": 34,
+          "event": "eligible",
+          "product": 27710,
+          "row_rank": 815
+        },
+        {
+          "code": 26037,
+          "column_rank": 44,
+          "event": "eligible",
+          "product": 57244,
+          "row_rank": 1301
+        },
+        {
+          "code": 29978,
+          "column_rank": 34,
+          "event": "eligible",
+          "product": 27710,
+          "row_rank": 815
+        },
+        {
+          "code": 30181,
+          "column_rank": 44,
+          "event": "eligible",
+          "product": 57244,
+          "row_rank": 1301
+        }
+      ],
+      "endpoint_remainder": 1,
+      "field": "F2[t]/(t^2+t+1)",
+      "independently_checked_vectors": 51,
+      "integer_cost_gate": 253,
+      "labels": 50,
+      "matrix_and_endpoint_equality_rechecked": true,
+      "name": "omega_radical_P5_L5_half",
+      "original_audited_basis_sha256": "142179ba23ef898636a068181118ccf331b01c4ee99e195920f01935363df275",
+      "projective_vectors_tested": 21845,
+      "restricted_shortest_cost_lower_numerator": null,
+      "scope": "the supplied finite coefficient space over F4; other fields and label retracts are not excluded",
+      "screen_sha256": "558b59b14d66b812da109b68717beb5b3e02b2d242cb36648133b7a9c6880f12",
+      "seconds": 51.414279761000216,
+      "shortest_path_states": 0
+    }
+  ],
+  "source_sha256": {
+    "check_pfaffian_span_f4.py": "506fb9c0de8f722a0fec0ba32d60e081f165a62ea1e0b6c5cfdd5a3023118182",
+    "check_symplectic_code_f4.py": "2953e2c2d89119c5ec9ca1d8d72c17396963bd93a55e93cbffd51b5316ab8317",
+    "explore_symplectic_boundary_codes.py": "33995930c5d2181dc13a9ac9da661be201c2f1cfbd6be07b1411c08f3f5d8720",
+    "screen_pfaffian_span_f4.cpp": "40e44b6987e5f347e35dd524f082a6b966c8171f6cbe1b4c433abab18f50912a"
+  }
+}

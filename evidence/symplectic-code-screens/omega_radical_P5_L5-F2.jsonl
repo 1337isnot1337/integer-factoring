@@ -1,0 +1,15 @@
+{"event":"start","labels":100,"dimension":9,"field_size":2,"blocks":16,"integer_cost_gate":674,"product_cap":454275,"code_start":1,"code_count":511}
+{"event":"eligible","code":68,"row_rank":100,"column_rank":3634,"product":363400}
+{"event":"eligible","code":256,"row_rank":6404,"column_rank":44,"product":281776}
+{"event":"eligible","code":341,"row_rank":1,"column_rank":10000,"product":10000}
+{"event":"eligible","code":4096,"row_rank":670,"column_rank":670,"product":448900}
+{"event":"eligible","code":16464,"row_rank":4552,"column_rank":44,"product":200288}
+{"event":"eligible","code":16720,"row_rank":4696,"column_rank":44,"product":206624}
+{"event":"eligible","code":21521,"row_rank":100,"column_rank":4186,"product":418600}
+{"event":"eligible","code":21589,"row_rank":44,"column_rank":4552,"product":200288}
+{"event":"eligible","code":21760,"row_rank":45,"column_rank":10000,"product":450000}
+{"event":"eligible","code":70677,"row_rank":164,"column_rank":44,"product":7216}
+{"event":"eligible","code":70933,"row_rank":6352,"column_rank":44,"product":279488}
+{"event":"eligible","code":87109,"row_rank":4716,"column_rank":44,"product":207504}
+{"event":"eligible","code":87365,"row_rank":4532,"column_rank":24,"product":108768}
+{"event":"complete","projective_tested":511,"eligible":13,"milliseconds":158}

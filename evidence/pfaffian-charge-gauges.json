@@ -1,0 +1,64 @@
+{
+  "augmentation_pairing_rank_checks": 1201,
+  "checker_sha256": "d2469ba2a788076d2b5b99d08f3590441bf2d7ba8d47ffb0dc7fb159ce8630c7",
+  "gauges": {
+    "constant_invertible_gauges_checked": 3,
+    "left_gauge_polynomial_entries_checked": 256,
+    "one_sided_shift_counts": [
+      [
+        [
+          0,
+          0
+        ],
+        8
+      ],
+      [
+        [
+          1,
+          -1
+        ],
+        8
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        8
+      ]
+    ],
+    "two_sided_left_shift_counts": [
+      [
+        [
+          0,
+          0
+        ],
+        8
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        8
+      ]
+    ],
+    "two_sided_polynomial_entries_checked": 256,
+    "two_sided_right_shift_counts": [
+      [
+        [
+          0,
+          0
+        ],
+        8
+      ],
+      [
+        [
+          1,
+          -1
+        ],
+        8
+      ]
+    ]
+  }
+}
