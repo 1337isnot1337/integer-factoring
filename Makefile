@@ -2212,3 +2212,8 @@ verify-cube-flat-coefficient-fibers:
 .PHONY: verify-local-parity-gauge
 verify-local-parity-gauge:
 	python3 tools/check_local_parity_gauge.py --output /tmp/integer-factoring-local-parity-gauge.json
+
+.PHONY: verify-rectangular-bezout-denominator
+verify-rectangular-bezout-denominator:
+	python3 tools/check_rectangular_bezout_denominator.py --output /tmp/rectangular-bezout-denominator.json
+	python3 tools/check_rectangular_bezout_scale.py --output /tmp/rectangular-bezout-scale.json

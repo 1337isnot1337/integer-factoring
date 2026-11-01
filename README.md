@@ -1861,3 +1861,5 @@ The [complete modular Bézout compiler](research/balanced-bezout-modular.md) now
 A [deeply matched progression construction](research/matched-progression-bezout.md) computes complete primitive Bézout polynomials modulo a requested power of two for reflected arithmetic progressions with binary encoded, exponentially large counts. The proof controls reciprocal perturbations and accounts for the complete polynomial tails; its stable coprime family does not change the factoring exponent.
 
 [Tensor-product Pascal boxes](research/tensor-pascal-box-crossings.md) give an exact multi-coordinate crossing construction and coherent energy types. The accompanying pressure calculations and integer-polynomial certificates delimit the tested inherited gauges; they do not supply a score above one half.
+
+The [rectangular Bézout denominator theorem](research/rectangular-bezout-denominator.md) determines every inverse Newton coefficient valuation for two independent dyadic isometry prefixes of unequal sizes. A double Mahler expansion proves the formula, and a binary-size maximization gives the exact primitive scale and short supports for both complete normalized polynomials.

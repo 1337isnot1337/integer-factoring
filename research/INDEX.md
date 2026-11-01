@@ -1236,3 +1236,5 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 ## Exact recognition of constant local parity gauges
 
 - [Linear recognition, endpoint-preserving gauges, and a certified nongauge reference](local-parity-gauge-test.md)
+
+- [Exact rectangular Bézout denominators](rectangular-bezout-denominator.md): unequal isometric prefixes, a two-variable proof, exact binary scale computation, and complete shifted polynomial supports of at most `p+defect` coefficients.
