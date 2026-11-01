@@ -215,5 +215,49 @@ this particular gate. The three-pair and cubic constructions already
 change protected states below height 16, so this corollary does not
 exclude them.
 
+## 5. Completed larger profiles and nearby controls
+
+The larger cubic and three-pair jobs have now finished. Each has 108
+physical labels and 11,664 capped orders per cut. The zero cut was
+computed directly; the infinity profile follows from the actual
+orthogonal retraction identity.
+
+| Construction | Height cutoff | Exact orders below 64 | Tail orders at least 64 | Upper-polynomial numerical fit | Lower-polynomial numerical fit |
+|---|---:|---:|---:|---:|---:|
+| [Cubic kernel](../evidence/tensor-f16-fast-cubic-height26-profiles.json) | 26 | 3,397 | 8,267 | 0.710813125460 | 0.710802668063 |
+| [Three-pair kernel](../evidence/tensor-f16-fast-three-pair-height27-profiles.json) | 27 | 3,420 | 8,244 | 0.712539258890 | 0.712538632362 |
+
+The retained zero profiles are complete capped computations, including
+every generic-rank tail multiplicity. A tail entry of 64 is a certified
+lower bound on its actual order, not a claim that its actual order is
+64. The counting-polynomial bounds remain exact; the listed optimization
+values are numerical and have no global-minimum certificate. Neither
+candidate improves the current compact pressure frontier.
+
+Reproduce these two completed jobs with:
+
+```sh
+python3 tools/tensor_f16_fast_kernel_profiles.py --family cubic --height 26 \
+  --output evidence/tensor-f16-fast-cubic-height26-profiles.json
+python3 tools/tensor_f16_fast_kernel_profiles.py --family three-pair --height 27 \
+  --output evidence/tensor-f16-fast-three-pair-height27-profiles.json
+```
+
+The [generic operator driver](../tools/tensor_f16_operator_profiles.py)
+accepts an explicit list of homogeneous F16 deletion operators. It uses
+the same validated construction, actual Gram inverses, and capped
+profile engine. A [height-14 operator pilot](../evidence/tensor-f16-three-pair-height14-cap20-profiles.json)
+uses `D_0D_6+2D_1D_5+4D_2D_4` through physical height 20. Its 50-letter
+upper-polynomial fit is `0.711733408065`, with lower-polynomial fit
+`0.711733392579`.
+
+A [full coordinate control](../evidence/tensor-full-height20-coordinate-profiles.json)
+keeps every word through height 20, giving 56 letters. Its upper and
+lower fits are `0.710824337307` and `0.710823953490`. It is constructed
+using the vacuous deletion operator on all 16 modes: no retained word
+contains that operator's support. This is exactly the full coordinate
+alphabet and provides a comparison for the literal 55-letter searches.
+These two controls also do not improve the compact frontier.
+
 No new factoring exponent, global pressure optimum, or Lean
 formalization is claimed here.

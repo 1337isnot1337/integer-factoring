@@ -242,4 +242,140 @@ do not improve the existing pressure frontier. They establish that
 the larger noncoherent search can be evaluated with all physical
 heights and both places accounted for.
 
+## 6. A complete pressure gate for the first 55-letter family
+
+Before expanding the height-15 coefficient search, its entire natural
+pressure family can be excluded from the current compact frontier.
+Over any characteristic-two field, replace the height-15 cell by any
+three-dimensional physical split `LP=I`, and retain every other ambient
+word through height 20. The maps can be nonorthogonal and need not be
+deletion closed. Then
+
+\[
+\rho\ge\frac{27}{38}=0.7105263157\ldots.
+\tag{4}
+\]
+
+This is a pruning theorem for this specified family, not a general
+lower bound on crossing constructions or factoring algorithms.
+
+All such maps retain the 24 coordinate words of height below 15.
+Their literal tensor has the same complete 576-order profile at both
+places. Let `Z(r)` be its counting polynomial, and let
+
+\[
+A_{55}(r)=\sum_{h(w)\le20}r^{h(w)}-r^{15}.
+\]
+
+The protected-submatrix counting argument gives each complete candidate
+channel sum at least `Z(r)`. The physical height partition is exactly
+`A_55`. The [gate checker](../tools/check_tensor_literal_height15_pressure_gate.py)
+proves the exact integer-polynomial comparison
+
+\[
+Z(s^{27})^{19}>A_{55}(s^{38})^{27},\qquad 0<s\le1.
+\tag{5}
+\]
+
+For `0<s<=4/5`, write `A_55(s^38)<=1+s^38+53s^114<=1+2s^38`.
+The binomial inequality
+`(1+x)^27<=1+27x/(1-27x)` applies at `x=2s^38`.
+Also `Z(s^27)^19>=1+19s^27`. The exact positive margin
+
+\[
+19\bigl(1-54(4/5)^{38}\bigr)-54(4/5)^{11}>0
+\]
+
+therefore establishes (5) on this first interval. The remaining interval
+`[4/5,1]` is covered by 622 adjacent rational intervals. On each interval
+`[a,b]`, the checker clears denominators and proves
+`Z(a^27)^19>A_55(b^38)^27`. Positive coefficients extend each comparison
+to the entire interval. The maximum dyadic depth is 15.
+
+Put `r=s^27` in (5). It gives
+`log Z(r)>2(27/38) log A_55(r^(38/27))`. Combining the two protected
+channel sums with the Gibbs inequality proves (4), including independently
+chosen paired physical types. The result uses the stated common natural
+scale and inherited heights. Other gauges and coefficient-rank arguments
+remain outside its scope.
+
+The [receipt](../evidence/tensor-literal-height15-pressure-gate.json)
+retains both core profiles, all intervals, and the source hashes.
+Its recomputation checks 1,728 orders: both complete compound profiles
+of the deletion-closed core and its separately constructed literal
+zero profile. The literal profile has maximum order 88, strictly below
+the control precision 128, so no unresolved tail enters (5).
+
+```sh
+python3 tools/check_tensor_literal_height15_pressure_gate.py --recompute-profiles
+```
+
+The [coordinate-hole control](../evidence/tensor-literal-height15-coordinate-cap20-profiles.json),
+which deletes only word 128, has upper-polynomial fit `0.711115213048`.
+The [full 56-letter Gaussian control](../evidence/tensor-full-height20-coordinate-profiles.json)
+has upper-polynomial fit `0.710824337307`. Both are completed capped
+calculations. The full control is better than the two 55-letter pilots;
+none improves the existing compact frontier. The complete gate justified
+moving the search to lower cells instead of expanding the excluded
+height-15 coefficient grid.
+
+## 7. Exhaustive F4 splits in earlier two-word cells
+
+The new [rank-one cell driver](../tools/tensor_literal_rank_one_cell_search.py)
+changes a two-word cell at height 8 or 9 and retains every other cell.
+It includes all constant splits `LP=1`, including isotropic embeddings
+whose Gram matrix cannot supply an orthogonal retraction.
+
+After scaling the one-dimensional physical basis, every pair has one
+of the forms
+
+\[
+P=(1,a)^T,\quad L=(1+ab,b),\qquad\text{or}\qquad
+P=(0,1)^T,\quad L=(b,1).
+\tag{6}
+\]
+
+Thus a field of order `q_field` has exactly
+`q_field(q_field+1)` normalized pairs. Field Frobenius preserves both
+profiles because the ambient Pfaffians have binary coefficients. There
+are 13 representatives for all 20 F4 pairs, and 76 representatives for
+all 272 F16 pairs. This enumeration does not assume that the retraction
+is orthogonal.
+
+The [completed F4 census](../evidence/tensor-literal-f4-rank-one-cells-height14-profiles.json)
+retains all other words through height 14, giving 23 physical labels.
+It computes every representative in both specified cells: 26 literal
+profiles covering 40 normalized pairs. Orthogonal cases use the proved
+role-swap identity for the second cut; all other second cuts are computed
+directly. In total, 24,334 capped orders were directly computed.
+
+| Altered cell | Words | Best retained P and L | Best numerical upper-polynomial fit |
+|---|---|---|---:|
+| Height 8 | `6,9` | `P=(1,0)^T`, `L=(1,1)` | 0.716170962458 |
+| Height 9 | `7,16` | `P=L^T=(0,1)^T` | 0.714950105688 |
+
+These finite fits do not improve the frontier. Across the entire F4
+height-8 census, the first profile variation occurs at orders 38 and 40
+in the two cuts. For height 9, it occurs at order 38 in each cut. The
+coefficients therefore affect only relatively late orders in these
+completed small controls. This observation is not an all-field theorem
+or an exclusion of larger alphabets.
+
+The independent [cell checker](../tools/check_tensor_literal_rank_one_cells.py)
+enumerates normalized projective lines and all possible left inverses
+directly, then compares the result with (6), over F2, F4, and F16.
+Three nonorthogonal, noncoherent 12-letter controls are also checked
+against the original interval kernel. The
+[receipt](../evidence/tensor-literal-rank-one-cells-controls.json) records
+62,240 complete polynomial entries, 484 independent Toeplitz-rank checks,
+2,592 capped-order comparisons, and 62,208 endpoint identities with the
+same number of exact infinity reciprocal identities.
+
+```sh
+python3 tools/check_tensor_literal_rank_one_cells.py
+python3 tools/tensor_literal_rank_one_cell_search.py \
+  --field-size 4 --height 14 --boundary-heights 8 9 \
+  --output evidence/tensor-literal-f4-rank-one-cells-height14-profiles.json
+```
+
 No Lean formalization is added.

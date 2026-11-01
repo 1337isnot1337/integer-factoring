@@ -2590,3 +2590,10 @@ verify-compact-oriented-power-search:
 	python3 tools/check_compact_oriented_power_search.py --replay evidence/compact-oriented-power-search.json
 
 verify-oriented-coprime-basis: verify-compact-oriented-power-search
+
+.PHONY: verify-tensor-literal-height15-gate verify-tensor-literal-rank-one-cells
+verify-tensor-literal-height15-gate:
+	python3 tools/check_tensor_literal_height15_pressure_gate.py --recompute-profiles --output /tmp/tensor-literal-height15-gate-verify.json
+
+verify-tensor-literal-rank-one-cells:
+	python3 tools/check_tensor_literal_rank_one_cells.py --output /tmp/tensor-literal-rank-one-cells-verify.json

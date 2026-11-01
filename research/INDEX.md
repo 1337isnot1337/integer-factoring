@@ -1,5 +1,8 @@
 # Research index
 
+- [Completed larger F16 profiles](tensor-f16-capped-search.md#5-completed-larger-profiles-and-nearby-controls): full capped 108-label runs and nearby coordinate controls.
+- [Literal retraction pressure gate and F4 census](tensor-literal-low-cell-retractions.md#6-a-complete-pressure-gate-for-the-first-55-letter-family): an all-field 27/38 floor and exact low-cell split enumeration.
+
 - [Compact oriented power search](compact-oriented-power-search.md): unchanged complete 80-bit mathematical result with smaller unit proofs and exact original-row selection.
 
 - [Prepared bucket remainders](batched-coprime-bucket-basis.md): exact mutable delta correction, complete oriented-word equality, and charged matched 80/96-bit measurements.
