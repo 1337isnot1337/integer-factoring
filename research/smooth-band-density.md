@@ -229,8 +229,7 @@ efficient method to locate an element in an arbitrary translate.
 
 ## 3. Density with the leading smoothness term retained
 
-The elementary order class-number bound proved in
-[the Fourier-norm note](smooth-set-fourier-norm.md), Section 3, is
+The elementary order class-number bound used here is
 
 $$h(\Delta)<\sqrt D\,(b+2).\tag{14}$$
 
