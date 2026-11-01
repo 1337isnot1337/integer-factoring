@@ -581,6 +581,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Noncommuting matrix auxiliary and a linear-rank channel](quantum-braid-matrix-auxiliary.md): a strict degree-`3n^2/2` crossing has an explicit leading identity channel with both cut ranks exactly L; full finite spans grow to16,55,97, while a favorable decomposition of the remaining coefficients is open.
 - [All-extension braid rank-one loci](quantum-braid-rank-one-loci.md): pure-square minor consequences determine both six-site loci over every extension of F4; the scalar row locus is its top line, the enlarged auxiliary row locus is zero, and both column loci are their constant lines. Higher ranks and lengths remain open.
 - [Nilpotent seam crossings and complementary asymmetric channels](nilpotent-seam-crossings.md): a central four-state auxiliary and cup-image quotient ranks give a uniform `L^(1/2+o(1))` row-rank edge and a polynomial column-rank edge. The minimum-cut budget rules out edge-only completion; compatible balanced middle pieces are required for a mixed decomposition.
+- [All-degree nilpotent-seam rank envelopes](nilpotent-seam-rank-envelope.md): an exact eight-counter vacuum-weighted recurrence bounds every coefficient; rational certificates give a middle window with both ranks `L^(5/4+o(1))` and shoulder windows. A graded decomposition satisfying the weighted budgets remains open.
 - [Binary site-symmetry actual-rank barrier](binary-site-symmetry-barrier.md): a universal degree-four certificate forces `rho>=3/4` over any fixed field, including all scalar polynomial degrees, coefficient recombinations, and common partitions into sublinearly many position classes.
 - [Full auxiliary coefficient-span optimization](auxiliary-coefficient-span.md): all 2,588 binary functionals in 15 finite cases, strict recombination gains, exact minmax certificates, and rational rank-sum optima certified by shortest-path dual potentials.
 - [Nonlinear downset-code crossings](downset-code-crossings.md): exact global characteristic-two Smith factors and a constant basis normal form for actual coefficient ranks on every downset and every paired-downset encoding, with complete small-domain controls and nonlinear regular-code searches.
@@ -1275,3 +1276,22 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 
 
 - [One prime field with a chosen trial budget](one-prime-bezout-recovery.md): prime-only interval counts, a single-field smallest-prime decoder, and a uniform tradeoff between trial division and the hypothesized global coefficient provider.
+
+
+- [Complete filtered unit curves for crossing searches](filtered-unit-crossings.md): a strict extension of nonlinear selector products, exact free coordinates, equivalent loop factors, and independently checked complete coefficient cuts.
+
+
+- [Polynomial-size recursive symmetric blocks](recursive-symmetric-exterior-blocks.md): simultaneous conjugacy, an exact word classification, a sharp quadratic block-size bound, full integer multiplicities, and complete specialized profiles through 64 axes.
+
+
+- [Fixed-field count values and a boundary parity provider](bezout-count-values.md): common-unit suffix values, logarithmic-precision prime-window recovery, explicit provider-cost tradeoffs, and an implemented evaluator that visits only the product-feasible interval boundary.
+
+## Orthogonal paired differential retractions
+
+[Subset Gram criterion and construction](orthogonal-differential-pair-codes.md) gives orthogonal, deletion-closed interior maps and identical natural cut profiles. Exact F4 controls find18valid column scalings among81. No new pressure or factoring claim.
+
+
+- [Pascal zero spectra from binary linear maps](linear-pascal-matroid-energies.md): exact Boolean-subcube orders, a supermodular projected-basis weight, explicit polynomial kernels, and complete zero profiles with their physical charges.
+
+
+- [Complete Pascal profiles for arbitrary exponent permutations](permuted-pascal-zero-spectra.md): a coefficientwise-product valuation inequality, explicit zero spectra without monotonicity assumptions, and a compatible infinity cone with both physical charges.

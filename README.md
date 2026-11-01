@@ -720,6 +720,14 @@ The minimum-cut budget rules out an edge-only completion at large
 widths; a mixed decomposition must supply balanced middle pieces.
 Their checked edge spans also miss the small crossing. Run the NumPy replay
 `make verify-braid-nilpotent-seam`.
+An [exact all-degree rank envelope](research/nilpotent-seam-rank-envelope.md)
+now bounds both cuts throughout that coefficient grid. An eight-counter
+integer recurrence includes the residual vacuum dimensions; exact rational
+certificates give a middle window with both ranks at most `L^(5/4+o(1))`.
+Shoulder windows and cut reflection provide other candidate aspect ratios.
+A compatible graded spanning identity remains open; weighted cut budgets
+rule out completing the crossing from just the edges and middle window.
+Run `make verify-braid-rank-envelope` (NumPy for the complete finite replay).
 
 The [exact nonlinear charge theorem](research/nonlinear-symbol-charge-lattices.md)
 characterizes every admissible pair of full-symbol potentials for the
@@ -1909,3 +1917,18 @@ A [prime-adic precision-one refinement](research/prime-bezout-counting.md) turns
 
 
 The [one-prime recovery refinement](research/one-prime-bezout-recovery.md) uses a chosen field and an explicit trial budget. Counts become exact on certified prime-only intervals, so a single characteristic suffices even when the total divisor count vanishes modulo that prime. The resulting conditional cost is exponential only in the charged trial budget and the still-missing coefficient provider.
+
+
+The [complete filtered-unit curve family](research/filtered-unit-crossings.md) extends nonlinear group-direction selectors. It gives explicit independent coordinates, full endpoint and generic-rank proofs, and exact coefficient-cut formulas. The larger family is now available for searches; its retained finite examples do not improve the factoring exponent.
+
+
+Repeating the symplectic reduction gives [polynomial-size blocks for symmetric exterior multiplication](research/recursive-symmetric-exterior-blocks.md): exactly `ceil(r/2)` block types, each of order at most `(r+2)^2/4`, retain the complete `2^r`-dimensional operator. This makes exact symmetric specialization profiles practical through 64 axes; it is a matrix-computation improvement, with no new factoring exponent claimed.
+
+
+The [fixed-field count-value refinement](research/bezout-count-values.md) reduces the precision requirement to `O(log n)` bits: differences of two normalized inverse values detect prime divisors in certified windows. It also implements an exact precision-one provider for intervals with a small symmetric difference, including implicit large singular examples. The general value provider remains open, and its full cost is included in every conditional bound.
+
+
+The [binary-linear Pascal extension](research/linear-pascal-matroid-energies.md) computes complete zero-cut spectra from minimum-weight projected row bases. It supplies actual kernels outside the earlier filtered class and charges their changed physical energies. The other cut remains part of the required contraction calculation.
+
+
+The [arbitrary-permutation Pascal theorem](research/permuted-pascal-zero-spectra.md) removes the linearity restriction: every exponent permutation now has a proved complete zero spectrum. A compatible cone supplies explicit infinity spectra for the same kernel. Both matching-pair energies are retained in the pressure calculation; an improving contraction certificate is still required.

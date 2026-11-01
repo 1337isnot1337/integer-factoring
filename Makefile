@@ -331,6 +331,10 @@ verify-braid-rank-one:
 verify-braid-nilpotent-seam:
 	python3 tools/check_quantum_braid_nilpotent_seam.py
 
+.PHONY: verify-braid-rank-envelope
+verify-braid-rank-envelope:
+	python3 tools/check_nilpotent_seam_rank_bounds.py
+
 .PHONY: verify-downset-crossings verify-regular-code-crossings
 verify-downset-crossings:
 	python3 tools/check_downset_crossing_normal_form.py
@@ -2294,3 +2298,32 @@ verify-cube-optimized-type:
 .PHONY: verify-one-prime-bezout-recovery
 verify-one-prime-bezout-recovery:
 	python3 tools/check_one_prime_bezout_recovery.py --output /tmp/one-prime-bezout-recovery.json
+
+
+.PHONY: verify-filtered-unit-crossings
+verify-filtered-unit-crossings:
+	python3 tools/check_filtered_unit_crossings.py --output /tmp/filtered-unit-crossings.json
+
+
+.PHONY: verify-recursive-symmetric-exterior-blocks
+verify-recursive-symmetric-exterior-blocks:
+	python3 tools/check_recursive_symmetric_exterior_blocks.py --large --output /tmp/recursive-symmetric-exterior-blocks.json
+
+
+.PHONY: verify-bezout-count-values
+verify-bezout-count-values:
+	python3 tools/check_bezout_count_values.py --output /tmp/bezout-count-values.json
+
+.PHONY: verify-orthogonal-differential-pairs
+verify-orthogonal-differential-pairs:
+	python3 tools/check_orthogonal_differential_pairs_f4.py
+
+
+.PHONY: verify-linear-pascal-matroid
+verify-linear-pascal-matroid:
+	python3 tools/check_linear_pascal_matroid.py --output /tmp/linear-pascal-matroid-energies.json
+
+
+.PHONY: verify-permuted-pascal-kernels
+verify-permuted-pascal-kernels:
+	python3 tools/check_permuted_pascal_kernels.py --output /tmp/permuted-pascal-zero-spectra.json
