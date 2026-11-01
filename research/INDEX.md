@@ -445,6 +445,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 - [Polynomial joint-energy dressings](joint-energy-polynomial-dressings.md): a four-dimensional square-zero sector preserves one full profile; 180 quadratic identities and two explicit minors reduce every degree over every characteristic-two field to a constant conjugate under the original pole/rank constraints; exact quadratic/Frobenius elimination also closes every square-zero scalar-polynomial energy generator of arbitrary rank.
 - [Formal polynomial energy-gauge rigidity](joint-polynomial-formal-rigidity.md): two exact direct sums classify all polynomial tangent degrees; every identity-based formal energy gauge retaining the original pole and leading rank factors into a constant gauge and a tensor-preserving full-commutant unit, without a generator or nilpotency assumption.
+- [Discrete joint coordinate lattices](joint-monomial-lattice-modifications.md): difference constraints classify all integer joint monomial charges preserving polynomiality and the original pole into 12 effective tensors; both complete profiles are prefix-dominated by the reference, while arbitrary energy-block idempotents give the next noncoordinate interface.
 
 - [Group-shear crossings](group-shear-crossings.md): multiplication/division shears give cubic swap paths over every finite `p`-group in characteristic `p`; exact early-jet certificates exclude six displayed binary seeds, without an all-group claim.
 

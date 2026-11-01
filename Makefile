@@ -161,6 +161,10 @@ verify-joint-energy-riccati:
 verify-joint-polynomial-tangent:
 	python3 tools/check_joint_polynomial_tangent.py
 
+.PHONY: verify-joint-monomial-lattices
+verify-joint-monomial-lattices:
+	python3 tools/check_joint_monomial_lattices.py
+
 .PHONY: verify-group-shears
 verify-group-shears:
 	python3 tools/check_group_shear_crossings.py

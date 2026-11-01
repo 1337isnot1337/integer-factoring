@@ -143,6 +143,9 @@ unit with the same identity specialization. Consequently
 C_U=VCV^{-1}.                                        \tag{11}
 ```
 
+The construction keeps `W(epsilon,0)=I`, so the constant factor is
+in fact `V(epsilon)=U(epsilon,0)`.
+
 The constant factor retains leading rank one. The earlier constant
 formal theorem further factors it as `V=(D_x tensor D_y)L_0`, where
 the physical diagonal units and the leading-centralizer unit `L_0`

@@ -1,0 +1,157 @@
+# Discrete joint lattice modifications of the five-letter seed
+
+A joint coordinate gauge `U(t)=diag(t^p_i)` may be singular at zero.
+It can therefore change both weighted Smith profiles and evade the
+[formal polynomial unit theorem](joint-polynomial-formal-rigidity.md).
+For the five-letter reference, every integer gauge retaining polynomial
+entries and the original worst infinity pole reduces to one of exactly
+12 effective tensors. Both profiles of each tensor are weakly
+prefix-dominated by the reference. None improves its cost at any scale
+at the inherited physical heights.
+
+The finite classification covers every integer charge in this class;
+it does not bound charges by an experimental window. It leaves
+noncoordinate lattice subspaces and changes allowing a worse pole open.
+The strongest complete factoring score remains `1/2`.
+
+## 1. Entrywise valuations give exact difference constraints
+
+Use `A(t)=T(t)S`, `A(1)=I`, integer joint energies `H_i`, and
+`C(z)=z^8 A(z^-1)D_H(z)` from
+[joint energy conjugations](joint-energy-conjugations.md). For any
+integer vector `p`, define
+
+```math
+A_p(t)_{rc}=t^{p_r-p_c}A(t)_{rc}.                       \tag{1}
+```
+
+The endpoint remains exact, since `U(1)=I`. For each nonzero polynomial
+entry let `l_rc` and `d_rc` be its least and greatest degrees.
+Polynomiality of (1) is exactly
+
+```math
+p_c-p_r\le l_{rc}.                                    \tag{2}
+```
+
+The weighted infinity entry becomes
+`t`-gauge conjugation of `C`, with exponent shift `-p_r+p_c` at `z`.
+Thus retaining regularity of `C_p`, equivalently no pole below `-8`
+in `B_p`, is exactly
+
+```math
+p_r-p_c\le H_c-d_{rc}+8.                              \tag{3}
+```
+
+All bounds in (2)--(3) are nonnegative for the reference. Represent
+`p_c-p_r<=w` by a directed edge `r -> c` of weight `w`. Opposite
+zero-weight paths force equality of the corresponding charges.
+Floyd--Warshall closure gives exactly these five equality groups:
+
+| Group | Joint state indices `x+5y` |
+| --- | --- |
+| `G0` | `0` |
+| `G1` | `1,2,3,5,10,15` |
+| `G2` | `4,20` |
+| `G3` | `6,7,8,11,12,13,16,17,18,24` |
+| `G4` | `9,14,19,21,22,23` |
+
+Let `q_i` denote the charge on `Gi`. After collapsing the groups,
+the complete set of effective inequalities is
+
+```math
+0\le q_3-q_0\le1,\qquad |q_2-q_3|\le1,
+\qquad 0\le q_4-q_1\le1.                              \tag{4}
+```
+
+The undirected support components are `{G0,G2,G3}` and `{G1,G4}`.
+Adding one common charge on either component commutes with every entry
+of `A` and leaves (1) unchanged. Normalize `q_0=q_1=0`. The remaining
+solutions are precisely
+
+```math
+q_3=a\in\{0,1\},\quad q_2=b\in\{a-1,a,a+1\},
+\quad q_4=c\in\{0,1\}.                               \tag{5}
+```
+
+There are `2*3*2=12` solutions and 12 distinct resulting tensors.
+Equations (2)--(5) prove completeness for every integer charge.
+
+## 2. Exact profiles compare the entire family
+
+The [checker](../tools/check_joint_monomial_lattices.py) recomputes all
+entry bounds, the shortest-path equality groups, every quotient edge,
+the 12 tensors and all crossing endpoints. It computes both complete
+weighted Smith profiles for every tensor with fraction-free polynomial
+arithmetic, plus the two reference profiles: 26 profile computations.
+
+For both places, write the orders increasingly. For every candidate
+`p`, the exact prefix inequalities are
+
+```math
+\sum_{i=1}^k\nu_i(p)\le\sum_{i=1}^k\nu_i(0)
+\quad(1\le k\le25).                                  \tag{6}
+```
+
+The hinge-sum proof in the
+[constant-gauge comparison](joint-energy-conjugations.md#4-exact-profile-dominance-at-every-scale)
+applies after a common shift making the orders nonnegative. Consequently
+each candidate partition sum `sum s^(-nu_i)` is at least the reference
+sum for every `s>=1`. The physical energies and restoration terms are
+unchanged. Applying this to both places proves the claimed all-scale
+cost comparison. Only the unchanged tensor has leading realignment
+rank one; the other ranks range from two to four.
+
+Every tensor and profile computation here is binary. Extending the
+coefficient field in characteristic two preserves all ranks, minors,
+valuations and the resulting profiles. This extends the same 12
+tensors to those fields; it does not classify noncoordinate gauges
+with new field parameters.
+
+```sh
+make verify-joint-monomial-lattices
+python3 tools/check_joint_monomial_lattices.py --generate
+```
+
+The [evidence](../evidence/joint-monomial-lattices.json) retains the
+quotient graph, every profile, leading rank and source hashes. It uses
+only the Python standard library and has no floating-point step.
+
+## 3. Noncoordinate modifications have an exact interface
+
+The next discrete family replaces coordinate projections by an arbitrary
+energy-block idempotent `P`, with `P^2=P` and `Q=I-P`. Set
+
+```math
+U(t)=tP+Q,\quad U(t)^{-1}=t^{-1}P+Q.
+```
+
+The complete transformation is
+
+```math
+A_U=PAP+QAQ+tPAQ+t^{-1}QAP.                            \tag{7}
+```
+
+It is polynomial if and only if `Q A(0) P=0`: the image of `P` must
+be invariant under the cold operator. Since `P` preserves energy,
+
+```math
+C_U=PCP+QCQ+z^{-1}PCQ+zQCP.                           \tag{8}
+```
+
+The no-new-pole condition is exactly `P C_0 Q=0`: the kernel of `P`
+must be invariant under the leading infinity operator. When it holds,
+the new leading coefficient is
+
+```math
+(C_U)_0=PC_0P+QC_0Q+PC_1Q.                            \tag{9}
+```
+
+Thus complementary graded subspaces with these two invariant-subspace
+conditions give an explicit next search space. Equations (7)--(9) are
+ordinary block multiplication identities, not a claim that a useful
+noncoordinate projection exists. Such a projection changes the
+zero-place profile too; preserving it must not be assumed.
+Constructions allowing a worse infinity pole also remain outside this
+checkpoint. This work used substantial OpenAI assistant support and
+retains the Gaussian reference attribution. No new Lean work, improved
+coefficient-rank bound or factoring exponent is claimed.

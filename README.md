@@ -581,6 +581,12 @@ two exact direct sums control every degree, and formal lifting reduces
 every such pole/rank-preserving gauge to a constant conjugation and a
 tensor-preserving commutant unit. Separate components remain open.
 Run `make verify-joint-polynomial-tangent`.
+The [discrete coordinate lattice calculation](research/joint-monomial-lattice-modifications.md)
+allows singular joint monomial gauges that change both profiles. Exact
+difference constraints classify every integer charge preserving the
+original pole bound into 12 effective tensors; both profiles are
+dominated by the reference at every scale. Noncoordinate lattice
+subspaces remain open. Run `make verify-joint-monomial-lattices`.
 
 The [group-shear extension](research/group-shear-crossings.md) implements
 the swap through three multiplication/division shears over any finite
