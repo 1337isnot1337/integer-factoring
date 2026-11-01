@@ -663,7 +663,7 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs five groups on 
 
 ## Current research frontier
 
-- [Mixed occupation and height in six-to-five split graphs](research/mixed-graph-retractions.md): a literal degree-22 reflection source, arbitrary paired F4 graph maps, independent coefficient/profile controls and a registered sparse screen followed by a two-hour free-gauge walk. No pressure improvement is claimed at registration.
+- [Mixed occupation and height in six-to-five split graphs](research/mixed-graph-retractions.md): a literal degree-22 reflection source, arbitrary paired F4 graph maps and independent coefficient/profile controls. All 436 sparse representatives resolved; 51 selected free-height attempts gave best numerical support 1.010425, above one. Only three fits converged; a registered two-hour coefficient/gauge walk is separate. No factoring improvement.
 
 - [F8 hyperoval retraction refinement](research/f8-hyperoval-retraction-refinement.md): exact rho < 0.710005787198 at the same 96-letter size and with the same hyperoval image. A rank-one change of retraction improves both complete natural profiles at every positive scale over the earlier F8 and F4 constructions. Full profiles, independent entries and a rational physical type certify the result. The factoring exponent remains 1/2.
 

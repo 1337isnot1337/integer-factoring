@@ -115,6 +115,25 @@ python3 tools/search_mixed_graph_retractions.py --stage free --seconds 600 --inp
 python3 tools/search_mixed_graph_retractions.py --stage walk --seconds 7200 --input /path/free.json --output /path/walk.json
 ```
 
+## Completed initial stages at `1461d7d`
+
+The [complete initial archive](../evidence/mixed-graph-initial-screen-complete.json.xz)
+retains every screen case, every selected free-height trial and their
+summaries. All 436 Frobenius representatives resolved 50 orders each,
+with no rejection. They give 436 distinct literal tensors and 158 distinct
+unit profile pairs. The best balanced rate is the unchanged reference
+`0.7263479477044683`; the best inherited-height interior support is
+`1.0183848616343762`. The screen took 12.86 seconds.
+
+All 51 selected free-height trials were attempted, making 9,614 successful
+complete queries and one rejected query in 14.27 seconds. Only three trials
+reported optimizer convergence. Forty-seven reached the 100-iteration
+limit, and one stopped on an unresolved native prefix; its full rejected
+coordinates and reason are retained. The best successful numerical query
+has support `1.0104250223304403`, above the critical value one. Thus this
+archive is a completed attempt ledger, not 51 converged fits or an optimum.
+The two-hour coefficient/gauge walk remains a separate registered run.
+
 Credit: this uses the existing reflection Gaussian source, generic F4 split
 maps, complete rectangular Smith backend, Gibbs pressure and asymmetric
 chain rule. Cinna Davis / 1337isnot1337 directed the campaign; substantial
