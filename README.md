@@ -66,6 +66,12 @@ The result table distinguishes verified machine bounds from conditional construc
 
 ## Verification
 
+Before starting overlapping work, run `python3 tools/find_overlap.py KEYWORD`
+with an authenticated GitHub CLI. It searches discussion posts, comments and
+replies, open issues/PRs, historical issue #8 comments, and local research
+Markdown. See [the research workflow](autoresearch.md#workflow) and the tool's
+coverage report; matches are leads, not proof of novelty or active claims.
+
 From the repository root, run:
 
 ```sh
