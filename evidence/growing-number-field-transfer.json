@@ -1,0 +1,105 @@
+{
+  "status": "PASS",
+  "scope": "Growing-field coefficient-ring and indexing interfaces; no new factoring score.",
+  "algebra": {
+    "totals": {
+      "local_factorization_entries": 384,
+      "local_crossing_entries": 96,
+      "reduced_factorization_entries": 1536,
+      "reduced_crossing_entries": 384,
+      "homomorphism_products": 576,
+      "mixed_size_crossing_entries": 2048,
+      "repeated_field_zero_divisors": 4,
+      "defining_polynomial_checks": 24,
+      "forbidden_denominator_controls": 2
+    },
+    "cases": [
+      {
+        "degrees": [
+          2,
+          3,
+          4
+        ],
+        "tensor_dimension": 24,
+        "denominator_bits": 4522,
+        "constructed_modulus_bits": 4523,
+        "small_composite_moduli": [
+          49,
+          77,
+          121
+        ]
+      },
+      {
+        "degrees": [
+          2,
+          3,
+          2
+        ],
+        "tensor_dimension": 12,
+        "denominator_bits": 3640,
+        "constructed_modulus_bits": 3641,
+        "small_composite_moduli": [
+          49,
+          77,
+          121
+        ]
+      }
+    ]
+  },
+  "global_tail": {
+    "raw_factorization_entries": 3072,
+    "restricted_and_capped_factorization_entries": 384,
+    "restricted_crossing_entries": 96,
+    "inconsistent_padding_negative_controls": 6,
+    "raw_label_bits": 2,
+    "tail_label_bits": 1,
+    "same_raw_field_reused": true
+  },
+  "multinomial": {
+    "type_counts": 494,
+    "complete_unranking_checks": 25388,
+    "largest_small_intermediate_bits": 10,
+    "long_case": {
+      "counts": [
+        2048,
+        2048
+      ],
+      "count_bits": 4090,
+      "intermediate_bits": 4101,
+      "avoided_factorial_bits": 43251
+    }
+  },
+  "parameters": {
+    "global_envelopes": 112,
+    "block_and_tail_cutoffs": 672,
+    "complete_degree_product_checks": 128,
+    "degree_growth_control": {
+      "size_count": 16,
+      "degree_rate": 2,
+      "maximum_field_degree_log2": 32,
+      "tensor_dimension_log2": 272,
+      "multiplication_tensor_bits_log2": 848
+    },
+    "bit_budget": "G(m(n)) <= 2^(8*C+67/64) * n^(1/64) on checked dyadic n"
+  },
+  "global_blocks": {
+    "global_preprocessing_budgets": 672,
+    "active_node_divisions": 2016,
+    "integer_root_boundary_checks": 1365,
+    "fixed_cost_powers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      8,
+      16
+    ],
+    "single_field_degree_growth_budgets": 392,
+    "bounded_reciprocal_log_depth_products": 560,
+    "bit_budget": "G(m(n)) <= 2^(2*C+1/128) * n^(1/128) on checked dyadic n",
+    "raw_cost": "2^(O(t^h)) for a fixed integer h>=1",
+    "raw_width_error": "O(t/log(t+2)); bounded product across O(loglog n) levels",
+    "no_per_tail_field": true
+  }
+}

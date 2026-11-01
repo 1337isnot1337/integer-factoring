@@ -1,0 +1,100 @@
+{
+  "status": "PASS",
+  "scope": "Abelian p-group convolution-matrix lemma in matching characteristic; no nonbinary crossing claim",
+  "checker_sha256": "7838c616feaf7e8a25ae5ccc0c1f21ec28f9098ff2e80a530cc2391b93627849",
+  "groups": [
+    {
+      "characteristic": 2,
+      "cyclic_orders": [
+        4
+      ],
+      "group_size": 4,
+      "periodicity_checks": 32,
+      "difference_basis_checks": 4,
+      "all_nonzero_functions_checked": 15,
+      "direct_derivative_checks": 10,
+      "random_function_bases_checked": 100,
+      "monomial_basis_total_weight": "4",
+      "minimum_convolution_rank_minus_product_bound": 0
+    },
+    {
+      "characteristic": 2,
+      "cyclic_orders": [
+        8
+      ],
+      "group_size": 8,
+      "periodicity_checks": 128,
+      "difference_basis_checks": 8,
+      "all_nonzero_functions_checked": 255,
+      "direct_derivative_checks": 44,
+      "random_function_bases_checked": 100,
+      "monomial_basis_total_weight": "12",
+      "minimum_convolution_rank_minus_product_bound": 0
+    },
+    {
+      "characteristic": 3,
+      "cyclic_orders": [
+        3
+      ],
+      "group_size": 3,
+      "periodicity_checks": 18,
+      "difference_basis_checks": 3,
+      "all_nonzero_functions_checked": 26,
+      "direct_derivative_checks": 12,
+      "random_function_bases_checked": 100,
+      "monomial_basis_total_weight": "3/2",
+      "minimum_convolution_rank_minus_product_bound": 0
+    },
+    {
+      "characteristic": 3,
+      "cyclic_orders": [
+        9
+      ],
+      "group_size": 9,
+      "periodicity_checks": 162,
+      "difference_basis_checks": 9,
+      "all_nonzero_functions_checked": 19682,
+      "direct_derivative_checks": 756,
+      "random_function_bases_checked": 100,
+      "monomial_basis_total_weight": "9",
+      "minimum_convolution_rank_minus_product_bound": 0
+    },
+    {
+      "characteristic": 2,
+      "cyclic_orders": [
+        2,
+        4
+      ],
+      "group_size": 8,
+      "periodicity_checks": 40,
+      "difference_basis_checks": 16,
+      "all_nonzero_functions_checked": 255,
+      "direct_derivative_checks": 38,
+      "random_function_bases_checked": 100,
+      "monomial_basis_total_weight": "12",
+      "minimum_convolution_rank_minus_product_bound": 0
+    },
+    {
+      "characteristic": 3,
+      "cyclic_orders": [
+        3,
+        3
+      ],
+      "group_size": 9,
+      "periodicity_checks": 36,
+      "difference_basis_checks": 18,
+      "all_nonzero_functions_checked": 19682,
+      "direct_derivative_checks": 690,
+      "random_function_bases_checked": 100,
+      "monomial_basis_total_weight": "9",
+      "minimum_convolution_rank_minus_product_bound": 0
+    }
+  ],
+  "totals": {
+    "periodicity_checks": 416,
+    "difference_basis_checks": 58,
+    "all_nonzero_functions_checked": 39915,
+    "direct_derivative_checks": 1550,
+    "random_function_bases_checked": 600
+  }
+}

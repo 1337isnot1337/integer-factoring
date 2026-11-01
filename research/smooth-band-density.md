@@ -238,8 +238,7 @@ including nonfundamental discriminants. Since `D < 2^b`, `log 2 < 1`,
 $$h(\Delta)<\sqrt D\,(b+2).\tag{14}$$
 
 Indeed, the preceding bound is strictly smaller than
-`sqrt(D)(b+4)/3`, and `(b+4)/3 < b+2`. This supplies the stated estimate
-without depending on an uncommitted companion note.
+`sqrt(D)(b+4)/3`, and `(b+4)/3 < b+2`. This proves the stated estimate for the binary input length.
 
 Take `R` to be a fixed positive fraction of `sqrt(D)`, still
 with `4R^2 < D`. Choose

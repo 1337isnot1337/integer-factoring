@@ -127,6 +127,8 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs five groups on 
 
 ## Current research frontier
 
+- [Full binary conservation-kernel barrier](research/full-conservation-rank-sum-barrier.md) and [PR #27 checkpoint](research/INDEX.md#retained-pr-27-conservation-and-crossing-checkpoint): ordinary rank-sum theorems, transfers and exact finite controls. The all-kernel characteristic-two theorem and the [elementary all-code bound](research/difference-support-rank-floor.md) have distinct scopes. No general factoring lower bound, new Lean result, or exponent above `1/2` is claimed.
+
 - [Vanishing-slack transfer](research/vanishing-slack-score-transfer.md), [optimized divisor bound](research/optimized-divisor-count-bound.md), and the [PR #26 checkpoint](research/INDEX.md#retained-pr-26-effective-transfer-and-crossing-checkpoint): effective interfaces, arithmetic bounds and scoped crossing work. Universal verified search does not supply a new numerical exponent. See `make verify-further` and the retained optional targets; no new Lean or stronger complete factoring bound is claimed.
 
 - [Rational-family specialization](research/rational-family-transfer.md), [exact modular half endpoint](research/modular-half-endpoint.md), and the [PR #24 checkpoint](research/INDEX.md#retained-pr-24-effective-family-and-finite-rank-checkpoint): effective interfaces and scoped finite or uniform rank barriers. No exponent above `1/2` or new Lean result is claimed. Run `make verify-pr24` for the checkpoint checks.
