@@ -1,0 +1,13 @@
+{
+  "status": "registered_incomplete",
+  "input_archive": "evidence/pencil-principal-screen-complete.json.xz",
+  "input_archive_sha256": "1b4b3f5612656ddb7b9e8a92ddac20087c79cb088bc7c88feadf625e8a4f8610",
+  "registered_endpoint_states": 90584,
+  "selection": "All45292 recordedprincipal restrictions, bothchoices ofstrongchannel.",
+  "criteria": [
+    "Negative exact first-order gap, regardless of minimum multiplicity.",
+    "Zero exact first-order gap, simple weak minimum, nonpositive exact variance difference."
+  ],
+  "arithmetic": "Integer first/second sums with rational normalization; no floating moment comparisons.",
+  "scope": "Finite recorded-profile filter, not a free-height optimization or an exact improvement without independent candidate replay."
+}

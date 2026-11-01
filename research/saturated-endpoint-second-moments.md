@@ -99,3 +99,14 @@ time ceiling. The lowest observed variance difference is **one at both
 axes**, attained at the independently checked natural point. No nonpositive
 witness was found. These local searches do not prove that one is a global
 minimum, so the sufficient condition remains unfulfilled for this face.
+
+The [recorded-profile filter](../tools/filter_principal_endpoint_moments.py)
+has a separate [registration](../evidence/principal-endpoint-moment-filter-manifest.json):
+check both endpoint orientations of every one of the 45,292 retained
+principal restrictions, using exact integer moment sums and rational
+normalization. A negative `D` is also a sufficient endpoint escape, even
+when the weak minimum is multiple: for large fixed `x`, the coefficient
+`x*D+log(sum exp(-x*(s-min(s))))` is negative. The filter records every
+such case and every saturated simple case with `V<=0` for independent
+profile replay. It does not vary the recorded heights or certify an
+unseen profile. No result of this filter is asserted at registration.
