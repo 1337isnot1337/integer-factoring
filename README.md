@@ -2147,6 +2147,13 @@ frames at every common scale and physical type; the full 65,536-case run
 is separate and incomplete at that snapshot. Full-gauge fits remain
 iteration-limited evidence. No improved factoring exponent is claimed.
 
+A separate [asymmetric screen of those complete profiles](research/moving-boundary-crossings.md#asymmetric-supporting-line-screen-of-the-frozen-prefix)
+checks 11,010,048 numerical angle/tilt points and refines twenty cases.
+Its normalization agrees with the existing native supporting-line oracle;
+the best retained support value is about `1.000419`, above the required
+one. This numerical result leaves unsearched parameters open and supplies
+no new factoring exponent.
+
 ## Sparse oriented power prefixes
 
 The [sparse residual selector](research/sparse-oriented-power-prefixes.md)
