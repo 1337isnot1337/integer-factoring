@@ -145,6 +145,17 @@ A [shared endpoint-minor argument](research/cube-gaussian-profile-budget.md)
 proves `rho > 3/5` for every homogeneous eight-by-eight Gaussian kernel
 under the common-scale, unweighted Smith-profile method. Multiple physical modes
 and stronger coefficient-rank estimates remain outside that obstruction.
+
+The [four-axis shared-minor proof](research/four-axis-gaussian-profile-floor.md)
+excludes the corresponding homogeneous Gaussian profile target. Its
+[weighted extension](research/weighted-four-axis-gaussian-profile-floor.md)
+also covers arbitrary coupled modes, common subalphabets and types, and
+vertex-dependent additive degree caps, including nonhomogeneous entries.
+The [general shared-minor budgets](research/multiaxis-gaussian-profile-floor.md)
+exclude the common-scale unweighted degree-cap criterion through eight axes.
+At nine axes an explicit integer profile satisfies these budgets and has
+pressure below `1/3`; constructing a realizing kernel remains open.
+Run `make verify-four-axis-floor verify-weighted-four-axis-floor verify-multiaxis-floor`.
 <!-- cube-transfer-checkpoint:end -->
 
 ## Results and evidence

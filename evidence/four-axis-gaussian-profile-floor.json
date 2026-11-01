@@ -1,0 +1,2010 @@
+{
+  "augmentation_minors": {
+    "identity": "determinant = c_ab^4",
+    "symbolic_coefficient_minors": 12
+  },
+  "checker_sha256": "3e85a610639d3ef313255761c7f313eb53a8321a0bd1a45317dadb67dee65273",
+  "entropy": {
+    "equality_cases": 117,
+    "exact_rational_cases": 7920,
+    "identity": "(r+s)^b a^a (b-a)^(b-a) >= b^b r^a s^(b-a)"
+  },
+  "scope": "Exact shared-minor and entropy controls; the universal floor is the written proof.",
+  "shared_minors": {
+    "cases": [
+      {
+        "budget": 8,
+        "cayley": false,
+        "degree": 1,
+        "minors": [
+          {
+            "antipodal_columns": [
+              15,
+              11,
+              7,
+              3
+            ],
+            "axes": [
+              0,
+              1
+            ],
+            "determinant_monomials": 29,
+            "rows": [
+              0,
+              4,
+              8,
+              12
+            ],
+            "valuations": [
+              0,
+              0
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              13,
+              7,
+              5
+            ],
+            "axes": [
+              0,
+              2
+            ],
+            "determinant_monomials": 7,
+            "rows": [
+              0,
+              2,
+              8,
+              10
+            ],
+            "valuations": [
+              1,
+              0
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              13,
+              11,
+              9
+            ],
+            "axes": [
+              0,
+              3
+            ],
+            "determinant_monomials": 17,
+            "rows": [
+              0,
+              2,
+              4,
+              6
+            ],
+            "valuations": [
+              0,
+              0
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              14,
+              7,
+              6
+            ],
+            "axes": [
+              1,
+              2
+            ],
+            "determinant_monomials": 15,
+            "rows": [
+              0,
+              1,
+              8,
+              9
+            ],
+            "valuations": [
+              0,
+              0
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              14,
+              11,
+              10
+            ],
+            "axes": [
+              1,
+              3
+            ],
+            "determinant_monomials": 21,
+            "rows": [
+              0,
+              1,
+              4,
+              5
+            ],
+            "valuations": [
+              0,
+              0
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              14,
+              13,
+              12
+            ],
+            "axes": [
+              2,
+              3
+            ],
+            "determinant_monomials": 17,
+            "rows": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "valuations": [
+              0,
+              0
+            ]
+          }
+        ],
+        "name": "seed-11",
+        "shared_minor_upper_bounds_for_Delta4": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "sum_upper_bounds": 0
+      },
+      {
+        "budget": 8,
+        "cayley": false,
+        "degree": 1,
+        "minors": [
+          {
+            "antipodal_columns": [
+              15,
+              11,
+              7,
+              3
+            ],
+            "axes": [
+              0,
+              1
+            ],
+            "determinant_monomials": 23,
+            "rows": [
+              0,
+              4,
+              8,
+              12
+            ],
+            "valuations": [
+              0,
+              0
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              13,
+              7,
+              5
+            ],
+            "axes": [
+              0,
+              2
+            ],
+            "determinant_monomials": 13,
+            "rows": [
+              0,
+              2,
+              8,
+              10
+            ],
+            "valuations": [
+              0,
+              0
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              13,
+              11,
+              9
+            ],
+            "axes": [
+              0,
+              3
+            ],
+            "determinant_monomials": 19,
+            "rows": [
+              0,
+              2,
+              4,
+              6
+            ],
+            "valuations": [
+              0,
+              0
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              14,
+              7,
+              6
+            ],
+            "axes": [
+              1,
+              2
+            ],
+            "determinant_monomials": 15,
+            "rows": [
+              0,
+              1,
+              8,
+              9
+            ],
+            "valuations": [
+              0,
+              0
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              14,
+              11,
+              10
+            ],
+            "axes": [
+              1,
+              3
+            ],
+            "determinant_monomials": 17,
+            "rows": [
+              0,
+              1,
+              4,
+              5
+            ],
+            "valuations": [
+              0,
+              0
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              14,
+              13,
+              12
+            ],
+            "axes": [
+              2,
+              3
+            ],
+            "determinant_monomials": 11,
+            "rows": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "valuations": [
+              0,
+              0
+            ]
+          }
+        ],
+        "name": "seed-17",
+        "shared_minor_upper_bounds_for_Delta4": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "sum_upper_bounds": 0
+      },
+      {
+        "budget": 16,
+        "cayley": false,
+        "degree": 2,
+        "minors": [
+          {
+            "antipodal_columns": [
+              15,
+              11,
+              7,
+              3
+            ],
+            "axes": [
+              0,
+              1
+            ],
+            "determinant_monomials": 59,
+            "rows": [
+              0,
+              4,
+              8,
+              12
+            ],
+            "valuations": [
+              0,
+              0
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              13,
+              7,
+              5
+            ],
+            "axes": [
+              0,
+              2
+            ],
+            "determinant_monomials": 51,
+            "rows": [
+              0,
+              2,
+              8,
+              10
+            ],
+            "valuations": [
+              0,
+              0
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              13,
+              11,
+              9
+            ],
+            "axes": [
+              0,
+              3
+            ],
+            "determinant_monomials": 7,
+            "rows": [
+              0,
+              2,
+              4,
+              6
+            ],
+            "valuations": [
+              1,
+              0
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              14,
+              7,
+              6
+            ],
+            "axes": [
+              1,
+              2
+            ],
+            "determinant_monomials": 35,
+            "rows": [
+              0,
+              1,
+              8,
+              9
+            ],
+            "valuations": [
+              0,
+              0
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              14,
+              11,
+              10
+            ],
+            "axes": [
+              1,
+              3
+            ],
+            "determinant_monomials": 49,
+            "rows": [
+              0,
+              1,
+              4,
+              5
+            ],
+            "valuations": [
+              0,
+              0
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              14,
+              13,
+              12
+            ],
+            "axes": [
+              2,
+              3
+            ],
+            "determinant_monomials": 43,
+            "rows": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "valuations": [
+              0,
+              0
+            ]
+          }
+        ],
+        "name": "seed-23",
+        "shared_minor_upper_bounds_for_Delta4": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "sum_upper_bounds": 0
+      },
+      {
+        "budget": 16,
+        "cayley": false,
+        "degree": 2,
+        "minors": [
+          {
+            "antipodal_columns": [
+              15,
+              11,
+              7,
+              3
+            ],
+            "axes": [
+              0,
+              1
+            ],
+            "determinant_monomials": 43,
+            "rows": [
+              0,
+              4,
+              8,
+              12
+            ],
+            "valuations": [
+              0,
+              0
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              13,
+              7,
+              5
+            ],
+            "axes": [
+              0,
+              2
+            ],
+            "determinant_monomials": 73,
+            "rows": [
+              0,
+              2,
+              8,
+              10
+            ],
+            "valuations": [
+              0,
+              0
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              13,
+              11,
+              9
+            ],
+            "axes": [
+              0,
+              3
+            ],
+            "determinant_monomials": 61,
+            "rows": [
+              0,
+              2,
+              4,
+              6
+            ],
+            "valuations": [
+              0,
+              0
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              14,
+              7,
+              6
+            ],
+            "axes": [
+              1,
+              2
+            ],
+            "determinant_monomials": 19,
+            "rows": [
+              0,
+              1,
+              8,
+              9
+            ],
+            "valuations": [
+              1,
+              0
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              14,
+              11,
+              10
+            ],
+            "axes": [
+              1,
+              3
+            ],
+            "determinant_monomials": 47,
+            "rows": [
+              0,
+              1,
+              4,
+              5
+            ],
+            "valuations": [
+              0,
+              0
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              14,
+              13,
+              12
+            ],
+            "axes": [
+              2,
+              3
+            ],
+            "determinant_monomials": 37,
+            "rows": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "valuations": [
+              0,
+              0
+            ]
+          }
+        ],
+        "name": "seed-29",
+        "shared_minor_upper_bounds_for_Delta4": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "sum_upper_bounds": 0
+      },
+      {
+        "budget": 24,
+        "cayley": false,
+        "degree": 3,
+        "minors": [
+          {
+            "antipodal_columns": [
+              15,
+              11,
+              7,
+              3
+            ],
+            "axes": [
+              0,
+              1
+            ],
+            "determinant_monomials": 37,
+            "rows": [
+              0,
+              4,
+              8,
+              12
+            ],
+            "valuations": [
+              3,
+              0
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              13,
+              7,
+              5
+            ],
+            "axes": [
+              0,
+              2
+            ],
+            "determinant_monomials": 117,
+            "rows": [
+              0,
+              2,
+              8,
+              10
+            ],
+            "valuations": [
+              0,
+              0
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              13,
+              11,
+              9
+            ],
+            "axes": [
+              0,
+              3
+            ],
+            "determinant_monomials": 143,
+            "rows": [
+              0,
+              2,
+              4,
+              6
+            ],
+            "valuations": [
+              0,
+              0
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              14,
+              7,
+              6
+            ],
+            "axes": [
+              1,
+              2
+            ],
+            "determinant_monomials": 99,
+            "rows": [
+              0,
+              1,
+              8,
+              9
+            ],
+            "valuations": [
+              0,
+              0
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              14,
+              11,
+              10
+            ],
+            "axes": [
+              1,
+              3
+            ],
+            "determinant_monomials": 111,
+            "rows": [
+              0,
+              1,
+              4,
+              5
+            ],
+            "valuations": [
+              0,
+              0
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              14,
+              13,
+              12
+            ],
+            "axes": [
+              2,
+              3
+            ],
+            "determinant_monomials": 169,
+            "rows": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "valuations": [
+              0,
+              0
+            ]
+          }
+        ],
+        "name": "seed-31",
+        "shared_minor_upper_bounds_for_Delta4": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "sum_upper_bounds": 0
+      },
+      {
+        "budget": 24,
+        "cayley": false,
+        "degree": 3,
+        "minors": [
+          {
+            "antipodal_columns": [
+              15,
+              11,
+              7,
+              3
+            ],
+            "axes": [
+              0,
+              1
+            ],
+            "determinant_monomials": 107,
+            "rows": [
+              0,
+              4,
+              8,
+              12
+            ],
+            "valuations": [
+              1,
+              0
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              13,
+              7,
+              5
+            ],
+            "axes": [
+              0,
+              2
+            ],
+            "determinant_monomials": 103,
+            "rows": [
+              0,
+              2,
+              8,
+              10
+            ],
+            "valuations": [
+              0,
+              0
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              13,
+              11,
+              9
+            ],
+            "axes": [
+              0,
+              3
+            ],
+            "determinant_monomials": 55,
+            "rows": [
+              0,
+              2,
+              4,
+              6
+            ],
+            "valuations": [
+              0,
+              3
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              14,
+              7,
+              6
+            ],
+            "axes": [
+              1,
+              2
+            ],
+            "determinant_monomials": 119,
+            "rows": [
+              0,
+              1,
+              8,
+              9
+            ],
+            "valuations": [
+              0,
+              0
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              14,
+              11,
+              10
+            ],
+            "axes": [
+              1,
+              3
+            ],
+            "determinant_monomials": 5,
+            "rows": [
+              0,
+              1,
+              4,
+              5
+            ],
+            "valuations": [
+              1,
+              6
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              14,
+              13,
+              12
+            ],
+            "axes": [
+              2,
+              3
+            ],
+            "determinant_monomials": 121,
+            "rows": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "valuations": [
+              0,
+              1
+            ]
+          }
+        ],
+        "name": "seed-37",
+        "shared_minor_upper_bounds_for_Delta4": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "sum_upper_bounds": 1
+      },
+      {
+        "budget": 32,
+        "cayley": false,
+        "degree": 4,
+        "minors": [
+          {
+            "antipodal_columns": [
+              15,
+              11,
+              7,
+              3
+            ],
+            "axes": [
+              0,
+              1
+            ],
+            "determinant_monomials": 89,
+            "rows": [
+              0,
+              4,
+              8,
+              12
+            ],
+            "valuations": [
+              0,
+              0
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              13,
+              7,
+              5
+            ],
+            "axes": [
+              0,
+              2
+            ],
+            "determinant_monomials": 153,
+            "rows": [
+              0,
+              2,
+              8,
+              10
+            ],
+            "valuations": [
+              0,
+              0
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              13,
+              11,
+              9
+            ],
+            "axes": [
+              0,
+              3
+            ],
+            "determinant_monomials": 13,
+            "rows": [
+              0,
+              2,
+              4,
+              6
+            ],
+            "valuations": [
+              2,
+              3
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              14,
+              7,
+              6
+            ],
+            "axes": [
+              1,
+              2
+            ],
+            "determinant_monomials": 67,
+            "rows": [
+              0,
+              1,
+              8,
+              9
+            ],
+            "valuations": [
+              1,
+              1
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              14,
+              11,
+              10
+            ],
+            "axes": [
+              1,
+              3
+            ],
+            "determinant_monomials": 95,
+            "rows": [
+              0,
+              1,
+              4,
+              5
+            ],
+            "valuations": [
+              0,
+              1
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              14,
+              13,
+              12
+            ],
+            "axes": [
+              2,
+              3
+            ],
+            "determinant_monomials": 81,
+            "rows": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "valuations": [
+              1,
+              2
+            ]
+          }
+        ],
+        "name": "seed-41",
+        "shared_minor_upper_bounds_for_Delta4": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "sum_upper_bounds": 1
+      },
+      {
+        "budget": 32,
+        "cayley": false,
+        "degree": 4,
+        "minors": [
+          {
+            "antipodal_columns": [
+              15,
+              11,
+              7,
+              3
+            ],
+            "axes": [
+              0,
+              1
+            ],
+            "determinant_monomials": 75,
+            "rows": [
+              0,
+              4,
+              8,
+              12
+            ],
+            "valuations": [
+              0,
+              1
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              13,
+              7,
+              5
+            ],
+            "axes": [
+              0,
+              2
+            ],
+            "determinant_monomials": 99,
+            "rows": [
+              0,
+              2,
+              8,
+              10
+            ],
+            "valuations": [
+              1,
+              0
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              13,
+              11,
+              9
+            ],
+            "axes": [
+              0,
+              3
+            ],
+            "determinant_monomials": 17,
+            "rows": [
+              0,
+              2,
+              4,
+              6
+            ],
+            "valuations": [
+              0,
+              4
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              14,
+              7,
+              6
+            ],
+            "axes": [
+              1,
+              2
+            ],
+            "determinant_monomials": 27,
+            "rows": [
+              0,
+              1,
+              8,
+              9
+            ],
+            "valuations": [
+              4,
+              2
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              14,
+              11,
+              10
+            ],
+            "axes": [
+              1,
+              3
+            ],
+            "determinant_monomials": 9,
+            "rows": [
+              0,
+              1,
+              4,
+              5
+            ],
+            "valuations": [
+              3,
+              2
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              14,
+              13,
+              12
+            ],
+            "axes": [
+              2,
+              3
+            ],
+            "determinant_monomials": 75,
+            "rows": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "valuations": [
+              0,
+              0
+            ]
+          }
+        ],
+        "name": "seed-43",
+        "shared_minor_upper_bounds_for_Delta4": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "sum_upper_bounds": 1
+      },
+      {
+        "budget": 40,
+        "cayley": false,
+        "degree": 5,
+        "minors": [
+          {
+            "antipodal_columns": [
+              15,
+              11,
+              7,
+              3
+            ],
+            "axes": [
+              0,
+              1
+            ],
+            "determinant_monomials": 17,
+            "rows": [
+              0,
+              4,
+              8,
+              12
+            ],
+            "valuations": [
+              4,
+              4
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              13,
+              7,
+              5
+            ],
+            "axes": [
+              0,
+              2
+            ],
+            "determinant_monomials": 17,
+            "rows": [
+              0,
+              2,
+              8,
+              10
+            ],
+            "valuations": [
+              4,
+              4
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              13,
+              11,
+              9
+            ],
+            "axes": [
+              0,
+              3
+            ],
+            "determinant_monomials": 15,
+            "rows": [
+              0,
+              2,
+              4,
+              6
+            ],
+            "valuations": [
+              4,
+              4
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              14,
+              7,
+              6
+            ],
+            "axes": [
+              1,
+              2
+            ],
+            "determinant_monomials": 15,
+            "rows": [
+              0,
+              1,
+              8,
+              9
+            ],
+            "valuations": [
+              4,
+              4
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              14,
+              11,
+              10
+            ],
+            "axes": [
+              1,
+              3
+            ],
+            "determinant_monomials": 9,
+            "rows": [
+              0,
+              1,
+              4,
+              5
+            ],
+            "valuations": [
+              4,
+              4
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              14,
+              13,
+              12
+            ],
+            "axes": [
+              2,
+              3
+            ],
+            "determinant_monomials": 17,
+            "rows": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "valuations": [
+              4,
+              4
+            ]
+          }
+        ],
+        "name": "seed-47",
+        "shared_minor_upper_bounds_for_Delta4": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "sum_upper_bounds": 16
+      },
+      {
+        "budget": 40,
+        "cayley": false,
+        "degree": 5,
+        "minors": [
+          {
+            "antipodal_columns": [
+              15,
+              11,
+              7,
+              3
+            ],
+            "axes": [
+              0,
+              1
+            ],
+            "determinant_monomials": 11,
+            "rows": [
+              0,
+              4,
+              8,
+              12
+            ],
+            "valuations": [
+              4,
+              5
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              13,
+              7,
+              5
+            ],
+            "axes": [
+              0,
+              2
+            ],
+            "determinant_monomials": 21,
+            "rows": [
+              0,
+              2,
+              8,
+              10
+            ],
+            "valuations": [
+              4,
+              4
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              13,
+              11,
+              9
+            ],
+            "axes": [
+              0,
+              3
+            ],
+            "determinant_monomials": 15,
+            "rows": [
+              0,
+              2,
+              4,
+              6
+            ],
+            "valuations": [
+              4,
+              4
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              14,
+              7,
+              6
+            ],
+            "axes": [
+              1,
+              2
+            ],
+            "determinant_monomials": 15,
+            "rows": [
+              0,
+              1,
+              8,
+              9
+            ],
+            "valuations": [
+              4,
+              4
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              14,
+              11,
+              10
+            ],
+            "axes": [
+              1,
+              3
+            ],
+            "determinant_monomials": 9,
+            "rows": [
+              0,
+              1,
+              4,
+              5
+            ],
+            "valuations": [
+              4,
+              5
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              14,
+              13,
+              12
+            ],
+            "axes": [
+              2,
+              3
+            ],
+            "determinant_monomials": 11,
+            "rows": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "valuations": [
+              4,
+              4
+            ]
+          }
+        ],
+        "name": "seed-53",
+        "shared_minor_upper_bounds_for_Delta4": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "sum_upper_bounds": 16
+      },
+      {
+        "budget": 64,
+        "cayley": false,
+        "degree": 8,
+        "minors": [
+          {
+            "antipodal_columns": [
+              15,
+              11,
+              7,
+              3
+            ],
+            "axes": [
+              0,
+              1
+            ],
+            "determinant_monomials": 127,
+            "rows": [
+              0,
+              4,
+              8,
+              12
+            ],
+            "valuations": [
+              4,
+              6
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              13,
+              7,
+              5
+            ],
+            "axes": [
+              0,
+              2
+            ],
+            "determinant_monomials": 101,
+            "rows": [
+              0,
+              2,
+              8,
+              10
+            ],
+            "valuations": [
+              4,
+              5
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              13,
+              11,
+              9
+            ],
+            "axes": [
+              0,
+              3
+            ],
+            "determinant_monomials": 107,
+            "rows": [
+              0,
+              2,
+              4,
+              6
+            ],
+            "valuations": [
+              4,
+              5
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              14,
+              7,
+              6
+            ],
+            "axes": [
+              1,
+              2
+            ],
+            "determinant_monomials": 151,
+            "rows": [
+              0,
+              1,
+              8,
+              9
+            ],
+            "valuations": [
+              5,
+              4
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              14,
+              11,
+              10
+            ],
+            "axes": [
+              1,
+              3
+            ],
+            "determinant_monomials": 45,
+            "rows": [
+              0,
+              1,
+              4,
+              5
+            ],
+            "valuations": [
+              5,
+              5
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              14,
+              13,
+              12
+            ],
+            "axes": [
+              2,
+              3
+            ],
+            "determinant_monomials": 89,
+            "rows": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "valuations": [
+              4,
+              4
+            ]
+          }
+        ],
+        "name": "seed-59",
+        "shared_minor_upper_bounds_for_Delta4": [
+          4,
+          5,
+          4,
+          4
+        ],
+        "sum_upper_bounds": 17
+      },
+      {
+        "budget": 64,
+        "cayley": false,
+        "degree": 8,
+        "minors": [
+          {
+            "antipodal_columns": [
+              15,
+              11,
+              7,
+              3
+            ],
+            "axes": [
+              0,
+              1
+            ],
+            "determinant_monomials": 27,
+            "rows": [
+              0,
+              4,
+              8,
+              12
+            ],
+            "valuations": [
+              5,
+              7
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              13,
+              7,
+              5
+            ],
+            "axes": [
+              0,
+              2
+            ],
+            "determinant_monomials": 99,
+            "rows": [
+              0,
+              2,
+              8,
+              10
+            ],
+            "valuations": [
+              5,
+              5
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              13,
+              11,
+              9
+            ],
+            "axes": [
+              0,
+              3
+            ],
+            "determinant_monomials": 25,
+            "rows": [
+              0,
+              2,
+              4,
+              6
+            ],
+            "valuations": [
+              7,
+              7
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              14,
+              7,
+              6
+            ],
+            "axes": [
+              1,
+              2
+            ],
+            "determinant_monomials": 53,
+            "rows": [
+              0,
+              1,
+              8,
+              9
+            ],
+            "valuations": [
+              8,
+              5
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              14,
+              11,
+              10
+            ],
+            "axes": [
+              1,
+              3
+            ],
+            "determinant_monomials": 169,
+            "rows": [
+              0,
+              1,
+              4,
+              5
+            ],
+            "valuations": [
+              4,
+              4
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              14,
+              13,
+              12
+            ],
+            "axes": [
+              2,
+              3
+            ],
+            "determinant_monomials": 191,
+            "rows": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "valuations": [
+              4,
+              4
+            ]
+          }
+        ],
+        "name": "seed-61",
+        "shared_minor_upper_bounds_for_Delta4": [
+          5,
+          4,
+          4,
+          4
+        ],
+        "sum_upper_bounds": 17
+      },
+      {
+        "budget": 96,
+        "cayley": true,
+        "degree": 12,
+        "minors": [
+          {
+            "antipodal_columns": [
+              15,
+              11,
+              7,
+              3
+            ],
+            "axes": [
+              0,
+              1
+            ],
+            "determinant_monomials": 1,
+            "rows": [
+              0,
+              4,
+              8,
+              12
+            ],
+            "valuations": [
+              24,
+              24
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              13,
+              7,
+              5
+            ],
+            "axes": [
+              0,
+              2
+            ],
+            "determinant_monomials": 1,
+            "rows": [
+              0,
+              2,
+              8,
+              10
+            ],
+            "valuations": [
+              24,
+              24
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              13,
+              11,
+              9
+            ],
+            "axes": [
+              0,
+              3
+            ],
+            "determinant_monomials": 1,
+            "rows": [
+              0,
+              2,
+              4,
+              6
+            ],
+            "valuations": [
+              24,
+              24
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              14,
+              7,
+              6
+            ],
+            "axes": [
+              1,
+              2
+            ],
+            "determinant_monomials": 1,
+            "rows": [
+              0,
+              1,
+              8,
+              9
+            ],
+            "valuations": [
+              24,
+              24
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              14,
+              11,
+              10
+            ],
+            "axes": [
+              1,
+              3
+            ],
+            "determinant_monomials": 1,
+            "rows": [
+              0,
+              1,
+              4,
+              5
+            ],
+            "valuations": [
+              24,
+              24
+            ]
+          },
+          {
+            "antipodal_columns": [
+              15,
+              14,
+              13,
+              12
+            ],
+            "axes": [
+              2,
+              3
+            ],
+            "determinant_monomials": 1,
+            "rows": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "valuations": [
+              24,
+              24
+            ]
+          }
+        ],
+        "name": "symmetric-cayley-control",
+        "shared_minor_upper_bounds_for_Delta4": [
+          24,
+          24,
+          24,
+          24
+        ],
+        "sum_upper_bounds": 96
+      }
+    ],
+    "exact_shared_determinants": 78,
+    "kernels": 13,
+    "non_cayley_kernels": 12
+  },
+  "status": "passed"
+}

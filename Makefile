@@ -1969,3 +1969,16 @@ verify-coherent-shared-gauges:
 verify-f4-hyperoval:
 	python3 tools/check_coherent_hot_f4_hyperoval_entries.py
 	python3 tools/certify_coherent_hot_f4_hyperoval.py
+
+.PHONY: verify-four-axis-floor
+verify-four-axis-floor:
+	python3 tools/check_four_axis_gaussian_profile_floor.py
+
+.PHONY: verify-weighted-four-axis-floor
+verify-weighted-four-axis-floor:
+	python3 tools/check_weighted_four_axis_gaussian_profile_floor.py
+
+.PHONY: verify-multiaxis-floor
+verify-multiaxis-floor:
+	python3 tools/check_multiaxis_gaussian_profile_floor.py
+

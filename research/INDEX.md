@@ -5,6 +5,12 @@
 - [An actual common three-cut Gaussian family](cube-homogeneous-gaussian.md): one homogeneous multivariate endpoint, exact three-cut Smith factors, a rational `rho=5/8` certificate, and an all-scale floor for its declared Cayley method; no score improvement.
 - [Cube geometry and a complete conditional transfer](cube-crossing-transfer.md): antipodal cube edges, equitable regrouping, effective entry queries, and `alpha=log_3(1/rho)`; a new local family below `1/sqrt(3)` is still required to improve the score.
 
+## Higher-dimensional Gaussian constraints
+
+- [Four-axis shared endpoint minors](four-axis-gaussian-profile-floor.md): a short non-Cayley proof gives common-scale unweighted profile pressure strictly above one half.
+- [Weighted four-axis degree caps](weighted-four-axis-gaussian-profile-floor.md): the floor survives arbitrary coupled modes, common subalphabets and correlated types, and vertex-dependent additive degree bounds, including nonhomogeneous entries.
+- [Shared endpoint budgets through eight axes](multiaxis-gaussian-profile-floor.md): exact all-scale certificates exclude the unweighted degree-cap criterion for dimensions two through eight; a fully rational nine-axis relaxed profile first passes these budgets, without a realizing kernel.
+
 ## Coherent physical crossing spaces
 
 - [Quadratic-parity Walsh paths and the full radial obstruction](bell-walsh-constructions.md): arbitrary positive energy tables, an exact radial optimum `H_2(1/4)`, and strict reciprocal retiming improvements for fixed folded seeds.
