@@ -61,8 +61,11 @@ Its exact compact certificate and unbounded tails give `rho >= 5/7`;
 changed energy shapes and asymmetric criteria remain open.
 New [graded adjugate constraints](research/graded-adjugate-caps.md) apply
 at independent physical heights. They rule out the older negative
-cell-cap profile optimizers, while leaving a nearby exact negative
-integer target that still needs a realizing tensor.
+cell-cap profile optimizers. Stronger
+[physical subalphabet constraints](research/subalphabet-adjugate-caps.md)
+also exclude the later integer target and its entire proposed row-prefix
+sector. Exact rational dual certificates give positive critical pressure
+at three old parameter points; a global floor over all energies remains open.
 An [exact finite-window frame backend](research/windowed-smith-frames.md)
 makes repeated affine-frame construction practical while preserving the
 original low-coefficient systems. Its

@@ -2442,6 +2442,12 @@ verify-fused-f4-zero-census:
 verify-windowed-f4-affine:
 	python3 tools/check_windowed_f4_affine.py --output /tmp/windowed-f4-affine.json
 
+.PHONY: verify-subalphabet-adjugate-caps
+verify-subalphabet-adjugate-caps:
+	python3 tools/check_subalphabet_adjugate_caps.py --output /tmp/subalphabet-adjugate-caps.json
+
+verify-frontier: verify-subalphabet-adjugate-caps
+
 .PHONY: verify-coherent-f4-partial
 verify-coherent-f4-partial:
 	python3 tools/check_coherent_hot_f4_partial.py

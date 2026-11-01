@@ -1,5 +1,12 @@
 # Graded adjugates add upper-tail compatibility constraints
 
+**Later compatibility update:** the
+[physical subalphabet extension](subalphabet-adjugate-caps.md) excludes
+the integer target in section 5, although it passes every inequality proved
+here. It also gives exact positive pressure certificates for arbitrary
+feasible profiles at the three listed fixed parameter points. The earlier
+negative pressure computations remain computations of weaker relaxations.
+
 The adjugate mechanism extends to independent physical heights. It gives
 two new families of necessary inequalities for scalar strict crossings
 over **every field**, without a degree bound. They exclude the previously

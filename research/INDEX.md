@@ -1,10 +1,12 @@
 # Research index
 
+- [Physical subalphabets strengthen graded adjugate compatibility](subalphabet-adjugate-caps.md): all-field square restrictions and rectangular cofactor gaps exclude the last integer target and give exact positive pressure certificates at three formerly negative parameter points; no global energy floor or score improvement.
+
 - [Complete affine equations in F4 reference frames](windowed-f4-affine-frames.md): coupled field equations, independent binary equivalence and nonbinary frame controls, an actual degree-42 five-letter pilot, and the completed four-frame binary predecessor.
 
 - [Exact finite windows for adaptive Smith frames](windowed-smith-frames.md): proven coefficient adequacy, complete affine-system equivalence controls, and a 7.66-second dense five-letter construction; the unfinished untruncated baseline and all mathematical limits are retained.
 
-- [Graded adjugate compatibility at independent physical heights](graded-adjugate-caps.md): two all-field upper-tail families exclude the previous negative five- and six-letter cell-cap profiles; a nearby certified negative integer profile satisfies the stronger constraints but has no realizing tensor.
+- [Graded adjugate compatibility at independent physical heights](graded-adjugate-caps.md): two all-field upper-tail families exclude the previous negative five- and six-letter cell-cap profiles; the nearby negative integer profile passes these whole-alphabet caps but is excluded by the later subalphabet extension.
 
 - [Gaussian circuits with arbitrary one-mode factors](tensor-affine-clifford-profiles.md): integral auxiliary permutation, complete profile theorem, determinant mean, 18-row evaluator, and F4 census.
 

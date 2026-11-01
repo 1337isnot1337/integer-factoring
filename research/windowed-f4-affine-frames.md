@@ -57,8 +57,9 @@ the manifest, driver, witnesses and frame-level counters. Direct target
 tests failed in all four frames; the best measured ratio stayed about
 `0.89459228`. The `completed_walks` diagnostic was only updated on selected
 events and is not the coverage counter: `walks_attempted` is 200 per frame.
-This is finite frame coverage. A subsequent subalphabet cofactor argument
-excludes the target independently of these experiments.
+This is finite frame coverage. The subsequent
+[subalphabet cofactor argument](subalphabet-adjugate-caps.md) excludes the
+target independently of these experiments.
 
 The backend is ready for targets surviving stronger necessary constraints.
 The target exclusions and numerical pilot do not improve the complete
