@@ -40,7 +40,7 @@ def literal_trace(a, b, c, d, left, right):
 def check():
     rng = random.Random(20261039)
     filter_controls = weighted_controls = tree_controls = child_controls = boundary_controls = 0
-    positive_rectangles = positive_weighted_controls = 0
+    positive_rectangles = positive_weighted_controls = invariant_controls = 0
     max_nodes = max_bits = 0
     for _ in range(384):
         number = 2 * rng.randrange(1, 1024) + 1
@@ -86,6 +86,8 @@ def check():
                         if state.evaluate(u, v) == 0}
         actual = set()
         for e, child in enumerate(state.children()):
+            assert child.a * child.d - child.b * child.c == state.a * state.d - state.b * state.c
+            invariant_controls += 1
             f = (state.b * e + state.d) % 2
             for u in range(*child.left):
                 for v in range(*child.right):
@@ -107,6 +109,14 @@ def check():
             literal_trace(a, b, c, d, left, (right[1], right[1] + 1))
             - literal_trace(a, b, c, d, left, (right[0], right[0] + 1)))
         boundary_controls += 2
+
+    # Contributed in Discussion #53, comment 19324116: determinant alone loses zeros.
+    counter_children = list(BilinearRectangle(2, 1, 1, -10, (0, 4), (0, 4)).children())
+    counter_counts = [sum(child.evaluate(u, v) == 0 for u in range(*child.left)
+                          for v in range(*child.right)) for child in counter_children]
+    assert counter_counts == [0, 2]
+    assert all(child.a * child.d - child.b * child.c == -21 for child in counter_children)
+    assert pole_count(21, (1, 9), (1, 9))[0] == 2
 
     # Integer-semiprime and square controls, including narrow offset rectangles.
     for a in range(3, 50, 2):
@@ -160,6 +170,9 @@ def check():
             'additional_positive_weighted_controls': positive_weighted_controls,
             'global_count_controls': tree_controls, 'literal_child_pair_controls': child_controls,
             'boundary_translation_controls': boundary_controls,
+            'section_determinant_invariant_controls': invariant_controls,
+            'same_determinant_state_control': {'number': 21, 'child_zero_counts': counter_counts,
+                                               'source_discussion_comment': 19324116},
             'random_max_tree_nodes': max_nodes, 'random_max_coefficient_bits': max_bits,
             'huge_artificial_factor_controls': huge,
             'unresolved': 'Evaluate or merge the normalized global resolvent states without the enumerative tree cost.'}

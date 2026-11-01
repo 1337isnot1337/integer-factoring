@@ -10,6 +10,12 @@ verify: verify-docs verify-frontier verify-arithmetic
 	python3 tools/check_half_piece_ranks.py --no-numpy
 	python3 tools/check_half_projection.py
 	python3 tools/check_half_restricted_labels.py
+	python3 tools/check_weighted_prefix.py
+	python3 tools/check_fixed_characteristic_transfer.py
+	python3 tools/check_modular_pieces.py
+	python3 tools/check_modular_pfaffian.py
+	python3 tools/check_fermi_sea_schur.py
+	python3 tools/check_sparse_grid_geometry.py
 
 verify-docs:
 	python3 tools/check_docs.py
@@ -27,6 +33,10 @@ verify-smooth-norms:
 .PHONY: verify-class-square-conic
 verify-class-square-conic:
 	python3 tools/check_class_square_conic.py
+
+.PHONY: verify-divisor-moments
+verify-divisor-moments:
+	python3 tools/check_divisor_moment_recovery.py
 
 verify-neutral-duals:
 	python3 tools/check_neutral_reflected_crossings.py
@@ -478,7 +488,7 @@ verify-post-half:
 verify-arithmetic-sieve:
 	python3 tools/check_arithmetic_sieve_certificate.py
 
-verify-frontier: verify-bell verify-class-square-conic
+verify-frontier: verify-bell verify-class-square-conic verify-divisor-moments
 	python3 tools/check_bare_seven_to_twelve_letters.py > /dev/null
 	python3 tools/check_quadratic_inverse_degree_caps.py > /dev/null
 	python3 tools/check_quadratic_inverse_paths.py --alphabet 9 > /dev/null
@@ -910,3 +920,12 @@ verify-auxiliary-binary-floor:
 .PHONY: verify-bare-seven-to-twelve-letters
 verify-bare-seven-to-twelve-letters:
 	python3 tools/check_bare_seven_to_twelve_letters.py
+
+.PHONY: verify-modular
+verify-modular:
+	python3 tools/check_modular_pieces.py --full
+	python3 tools/check_modular_pfaffian.py --full
+	python3 tools/check_fermi_sea_schur.py
+	python3 tools/check_weighted_prefix.py
+	python3 tools/check_fixed_characteristic_transfer.py
+	python3 tools/check_sparse_grid_geometry.py
