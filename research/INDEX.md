@@ -1,5 +1,7 @@
 # Research index
 
+- [A thirteen-letter global negation sector](negation-odd-qutrit-crossing.md): explicit F7 split crossing; exact early Toeplitz ranks give 70 and 169 orders at most four in degree nine, excluding its bare balanced rate at every scale. Higher orders and weighted criteria are not asserted.
+
 - [Binary prefixes at unequal supporting weights](asymmetric-binary-prefix-relaxation.md): all binary endpoint prefixes reduce the necessary real-profile problem to one convex allocation. Twelve bounded outer fits find no negative margin; near-zero cold limits stop the diagnostic. These profiles are not tensors, and no global asymmetric binary theorem follows.
 
 - [Globally type-removable poles have polynomial pressure limits](approximate-rational-strictification.md): rounded weak charge potentials and Frobenius substitution clear extra finite scalar poles at cost 4Lt/p^k, preserving every strict negative witness in a polynomial representative on the same alphabets and finite field. All-type global regularity is required; auxiliary matrices and selected-type-only endpoints remain outside scope.

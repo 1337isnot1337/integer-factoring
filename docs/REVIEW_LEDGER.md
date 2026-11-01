@@ -641,3 +641,18 @@ The focused replay also checks 1296 affine word-majorant comparisons on
 60 abstract profiles; documentation checks pass. The ongoing full run at
 `d159502` predates this target. No new Lean or independent mathematical
 review is claimed.
+
+## Integrated default and focused replay at `d159502`
+
+The clean frozen integration
+`d159502a9787f7fe42712c6e1fe9f6b1728dc5a4`, tree
+`f9d64390a621b3f8f83b77c1d169106b9927d63b`, passed `make verify`
+in 734.43 seconds and the q12 target, unequal linear-Smith, approximate
+strictification, cold-gap and uniform-axis targets in 22.52 seconds.
+Pre-run and post-run working trees were clean. The
+[receipt](../evidence/verify-integrated-d159502.json) and
+[complete compressed log](../evidence/verify-integrated-d159502.stdout.txt.xz)
+retain all commands and hashes. This includes PR64 and the q12 box
+correction, but predates the q13 audits/target and later peer treewidth
+delta, whose checks remain separate. No new Lean or stronger complete
+factoring bound is implied.

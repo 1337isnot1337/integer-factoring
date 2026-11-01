@@ -2630,6 +2630,14 @@ rates below `7071/10000` and `707/1000`, both below `1/sqrt(2)`.
 Those formal rates cannot be realized by bare polynomial crossings. Run
 `make verify-q12-integer-word-target`; the factoring score remains **1/2**.
 
+The [combined thirteen-letter target](research/joint-bare-profile-feasibility.md)
+passes every declared box and cofactor family, with exact formal rate below
+`7061/10000`; it still needs an actual polynomial realization. One concrete
+[global negation-odd construction](research/negation-odd-qutrit-crossing.md)
+does preserve the thirteen-letter endpoint, but its retained early channels
+already exclude the bare balanced target at every scale. Neither result
+changes the complete factoring score.
+
 The [latest full verification receipt](evidence/higher-words-full-verification.json)
 pins a successful clean default replay and fifteen named joint/cofactor
 targets to exact `269efb8`: 356 Python command blocks, 66 unit tests,
