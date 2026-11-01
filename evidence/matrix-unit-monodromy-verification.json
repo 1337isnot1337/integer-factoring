@@ -1,0 +1,11 @@
+{
+  "checker_sha256": "ee3f20854704f3ec1f984a590b6a7264b200d80df1c74ccac1515593f7e45beb",
+  "endpoint_checks": 8736,
+  "entry_algorithm_comparisons": 8736,
+  "full_cut_rank_profile_comparisons": 12,
+  "outside_local_even_parity_span": true,
+  "protected_row_identity_and_column_triangular_checks": 14760,
+  "scope": "Finite verification only; the full coefficient-span restriction is proved in the companion note.",
+  "seconds": 1.8352504559998124,
+  "status": "passed"
+}

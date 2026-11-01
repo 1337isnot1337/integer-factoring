@@ -1,0 +1,85 @@
+{
+  "all_split_candidates_on_sieved_bit_ranges": 46,
+  "arithmetic": "Exact integer and rational arithmetic",
+  "bit_boundary_cases": 1536,
+  "checker_sha256": "81bfe1926d118acbc7a6bd44c7315f5c68d5b57ff198e6c94a39d2a4329b7445",
+  "comparison_table": [
+    {
+      "input_bits_n": 16,
+      "new_count_bits": 9,
+      "new_over_previous": "9/16",
+      "previous_count_bits": 16
+    },
+    {
+      "input_bits_n": 32,
+      "new_count_bits": 17,
+      "new_over_previous": "17/32",
+      "previous_count_bits": 32
+    },
+    {
+      "input_bits_n": 64,
+      "new_count_bits": 33,
+      "new_over_previous": "33/64",
+      "previous_count_bits": 64
+    },
+    {
+      "input_bits_n": 128,
+      "new_count_bits": 65,
+      "new_over_previous": "65/128",
+      "previous_count_bits": 128
+    },
+    {
+      "input_bits_n": 256,
+      "new_count_bits": 117,
+      "new_over_previous": "117/256",
+      "previous_count_bits": 256
+    },
+    {
+      "input_bits_n": 512,
+      "new_count_bits": 199,
+      "new_over_previous": "199/512",
+      "previous_count_bits": 512
+    },
+    {
+      "input_bits_n": 1024,
+      "new_count_bits": 335,
+      "new_over_previous": "335/922",
+      "previous_count_bits": 922
+    },
+    {
+      "input_bits_n": 4096,
+      "new_count_bits": 1011,
+      "new_over_previous": "337/1024",
+      "previous_count_bits": 3072
+    },
+    {
+      "input_bits_n": 1000000,
+      "new_count_bits": 110239,
+      "new_over_previous": "4793/20595",
+      "previous_count_bits": 473685
+    },
+    {
+      "input_bits_n": 1099511627776,
+      "new_count_bits": 43407007440,
+      "new_over_previous": "4340700744/24739011625",
+      "previous_count_bits": 247390116250
+    },
+    {
+      "input_bits_n": 1267650600228229401496703205376,
+      "new_count_bits": 15700938825242796584901030387,
+      "new_over_previous": "15700938825242796584901030387/114088554020540646134703288484",
+      "previous_count_bits": 114088554020540646134703288484
+    }
+  ],
+  "comparisons_against_old_bound": 65536,
+  "exact_coarse_comparison_inequalities": 8191,
+  "exact_count_modulus_checks": 200000,
+  "independently_sieved_integers": 200000,
+  "invalid_inputs_rejected": 3,
+  "large_input_leading_coefficient_inequalities": 1490,
+  "largest_sieved_divisor_count": 160,
+  "rational_exact_count_modulus_checks": 390,
+  "scope": "Uniform auxiliary divisor bound; no improvement of the unconditional factoring exponent.",
+  "status": "passed",
+  "strict_ternary_bucket_parameter_checks": 2053
+}

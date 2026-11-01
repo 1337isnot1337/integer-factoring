@@ -1,0 +1,240 @@
+{
+  "coefficient_sha256": "151ef535603bc1fdf05edd3bde23dba339dabe780d6a12684d8d7a5fb91421d3",
+  "coefficient_slots_checked": 524287,
+  "cut_rank_product": 4503582447517696,
+  "exact_column_cut_rank": 67108736,
+  "exact_row_cut_rank": 67108736,
+  "field_polynomial": 524327,
+  "independent_full_polynomial_evaluations": [
+    [
+      1,
+      0
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      3,
+      0
+    ],
+    [
+      417792,
+      1
+    ],
+    [
+      313345,
+      1
+    ]
+  ],
+  "independent_small_coefficients": 246,
+  "independent_small_rank_profiles": 15,
+  "irreducibility_divisors_checked": 511,
+  "k": 7,
+  "labels": 524288,
+  "native_profiles": [
+    {
+      "k": 1,
+      "rank": 19,
+      "t": 19,
+      "weights": [
+        0,
+        19,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "k": 2,
+      "rank": 190,
+      "t": 19,
+      "weights": [
+        0,
+        19,
+        171,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "k": 3,
+      "rank": 1159,
+      "t": 19,
+      "weights": [
+        0,
+        19,
+        171,
+        969,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "k": 4,
+      "rank": 5035,
+      "t": 19,
+      "weights": [
+        0,
+        19,
+        171,
+        969,
+        3876,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "k": 5,
+      "rank": 16663,
+      "t": 19,
+      "weights": [
+        0,
+        19,
+        171,
+        969,
+        3876,
+        11628,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "k": 6,
+      "rank": 43795,
+      "t": 19,
+      "weights": [
+        0,
+        19,
+        171,
+        969,
+        3876,
+        11628,
+        27132,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "k": 7,
+      "rank": 94183,
+      "t": 19,
+      "weights": [
+        0,
+        19,
+        171,
+        969,
+        3876,
+        11628,
+        27132,
+        50388,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "nonzero_coefficient_frobenius_checks": 94183,
+  "ordinary_kernel_rank": 94183,
+  "polynomial_hex": "0x80027",
+  "rejected_bound": 4650663930232832,
+  "scope": "Exact rank-inequality counterexample at t=19; minimal t only in the stated trace-product family. No crossing synthesis or improved factoring score.",
+  "seconds": 22.907327126000382,
+  "smaller_family_parameter_pairs_excluded": 153,
+  "source_sha256": {
+    "check_trace_bilinear_kernel.py": "63f4fa4dc682a8be64740f284d3ba785f4d152723ad3a7da3d26aa6aa18d723c",
+    "check_trace_kernel_support.py": "3a9380ea7ebce61bad4176af33bc6eccb019e287d512a0f63c54d9254109cb7f",
+    "trace_kernel_support.cpp": "a3260eebcad2024fa4d60fe50ab9d67951e583e733fd8eed1e8f14ea497efea6"
+  },
+  "status": "passed",
+  "t": 19
+}

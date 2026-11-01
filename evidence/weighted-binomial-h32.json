@@ -1,0 +1,18 @@
+{
+  "field":2,
+  "energy":32,
+  "labels":202,
+  "nonzero_pieces":17,
+  "coefficient_span_dimension":17,
+  "crossing_entry_checks":3115724,
+  "row_block_count":4403,
+  "col_block_count":1827,
+  "entries_per_cut":1557862,
+  "row_ranks":[40804,0,8318,0,8990,0,1910,0,6540,0,1312,0,1424,0,292,0,1294,0,226,0,242,0,46,0,98,0,14,0,14,0,2,0,1],
+  "col_ranks":[1821,0,195,0,1045,0,765,0,4310,0,761,0,3894,0,2873,0,15886,0,530,0,2750,0,2030,0,11062,0,1849,0,9385,0,6889,0,40804],
+  "rank_sum_decimal":31631.830780751034,
+  "half_threshold_decimal":1820.78712050708983,
+  "rho_decimal":0.976017015951064441,
+  "seconds":0.581936012999999974,
+  "scope":"Exact finite coefficient ranks; no asymptotic rank theorem or improved score."
+}

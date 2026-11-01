@@ -1,0 +1,160 @@
+{
+  "branching_and_skip_edge_control_paths": [
+    [
+      0,
+      1,
+      3,
+      4
+    ],
+    [
+      0,
+      2,
+      3,
+      4
+    ],
+    [
+      0,
+      3,
+      4
+    ]
+  ],
+  "column_components": [
+    [
+      0,
+      1
+    ],
+    [
+      2
+    ]
+  ],
+  "common_type_sum_one_lengths": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "connected_component_negative_control": "passed",
+  "cover_type_comparisons": 143,
+  "integer_dual_certificates": [
+    {
+      "product": "256",
+      "total": 4
+    },
+    {
+      "product": "1",
+      "total": 1
+    }
+  ],
+  "original_exact_optimized_base": 2,
+  "rational_path_pair_certificates": [
+    {
+      "column_beta": "2",
+      "column_path": 0,
+      "column_positive_vector": [
+        "4",
+        "1"
+      ],
+      "piece_weights": [
+        "1/4",
+        "4",
+        "1"
+      ],
+      "row_beta": "1/2",
+      "row_path": 0
+    },
+    {
+      "column_beta": "2",
+      "column_path": 0,
+      "column_positive_vector": [
+        "1",
+        "4"
+      ],
+      "piece_weights": [
+        "4",
+        "1/4",
+        "1"
+      ],
+      "row_beta": "1/2",
+      "row_path": 1
+    },
+    {
+      "column_beta": "1/2",
+      "column_path": 0,
+      "column_positive_vector": [
+        "1",
+        "1"
+      ],
+      "piece_weights": [
+        "4",
+        "4",
+        "1"
+      ],
+      "row_beta": "1",
+      "row_path": 2
+    },
+    {
+      "column_beta": "1",
+      "column_path": 1,
+      "column_positive_vector": [
+        "1"
+      ],
+      "piece_weights": [
+        "1/4",
+        "1",
+        "1"
+      ],
+      "row_beta": "1/2",
+      "row_path": 0
+    },
+    {
+      "column_beta": "1",
+      "column_path": 1,
+      "column_positive_vector": [
+        "1"
+      ],
+      "piece_weights": [
+        "1",
+        "1/4",
+        "1"
+      ],
+      "row_beta": "1/2",
+      "row_path": 1
+    },
+    {
+      "column_beta": "1",
+      "column_path": 1,
+      "column_positive_vector": [
+        "1"
+      ],
+      "piece_weights": [
+        "1",
+        "1",
+        "1"
+      ],
+      "row_beta": "1",
+      "row_path": 2
+    }
+  ],
+  "refined_exact_optimized_base": 1,
+  "row_components": [
+    [
+      0
+    ],
+    [
+      1
+    ],
+    [
+      2
+    ]
+  ],
+  "scope": "Abstract counting-graph refinement; no improving crossing or factoring exponent.",
+  "source_sha256": "6c1ff39e9b11f62bba4652eb5d3b49311c9a63914a0eeb447057f8f325d63d72",
+  "status": "passed"
+}

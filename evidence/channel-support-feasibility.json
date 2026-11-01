@@ -1,0 +1,230 @@
+{
+  "status": "passed",
+  "signed_two_variable_cases": 637,
+  "signed_two_variable_feasible": 371,
+  "signed_two_variable_infeasible": 266,
+  "bounded_digit_multiequation_cases": 200,
+  "bounded_digit_length": 3,
+  "bounded_digit_feasible": 66,
+  "largest_visited_count": 21,
+  "case_sha256": "d035c9cb28646dce1db9d9d560e1da421fa9575919e6550b6a897b5fed2ebebd",
+  "mixed_endpoint_parity_example": {
+    "matrix": [
+      [
+        1,
+        -1,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      [
+        -1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        -1
+      ],
+      [
+        0,
+        0,
+        0,
+        -1,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        -1,
+        -1
+      ]
+    ],
+    "rhs": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      -1
+    ],
+    "certificate": {
+      "feasible": false,
+      "closed_carries": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "bounds": [
+        3,
+        1,
+        2,
+        2,
+        2,
+        5
+      ],
+      "visited_count": 1
+    }
+  },
+  "two_label_bridge_example": {
+    "matrix": [
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        -1,
+        -1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        -1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        -1,
+        -1
+      ]
+    ],
+    "rhs": [
+      0,
+      0,
+      -1,
+      1,
+      0,
+      -1
+    ],
+    "positive_edge_counts": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2
+    ],
+    "certificate": {
+      "feasible": true,
+      "witness": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "carry_path": [
+        [
+          0,
+          0,
+          1,
+          -1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "digit_path": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "bounds": [
+        1,
+        1,
+        4,
+        4,
+        4,
+        5
+      ],
+      "visited_count": 8
+    }
+  }
+}

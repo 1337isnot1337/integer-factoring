@@ -1,0 +1,1652 @@
+{
+  "binary_seven_site_lower_square": 2508800,
+  "checker_sha256": "b11f33bf2aa3c8e1da7f6a775b114b9c0a2216dd1560d79b56c3592a29888933",
+  "endpoint_checks": 5600,
+  "exterior_operator_walk_comparisons": 5600,
+  "full_cut_rank_profile_comparisons": 12,
+  "scope": "The exact witnesses and arithmetic support the stated finite classes; all-length rank bounds follow from the companion triangular proof.",
+  "seconds": 2.2398410890000378,
+  "status": "passed",
+  "ternary_four_particle_occupations_checked": 126,
+  "ternary_witnesses": [
+    {
+      "acyclic_mask": 247,
+      "occupation_mask": 15,
+      "topological_order": [
+        6,
+        4,
+        5,
+        7,
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "acyclic_mask": 239,
+      "occupation_mask": 23,
+      "topological_order": [
+        6,
+        7,
+        1,
+        3,
+        5,
+        0,
+        2
+      ]
+    },
+    {
+      "acyclic_mask": 223,
+      "occupation_mask": 39,
+      "topological_order": [
+        3,
+        4,
+        6,
+        7,
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "acyclic_mask": 191,
+      "occupation_mask": 71,
+      "topological_order": [
+        3,
+        4,
+        5,
+        0,
+        7,
+        1,
+        2
+      ]
+    },
+    {
+      "acyclic_mask": 127,
+      "occupation_mask": 135,
+      "topological_order": [
+        3,
+        4,
+        5,
+        1,
+        6,
+        0,
+        2
+      ]
+    },
+    {
+      "acyclic_mask": 127,
+      "occupation_mask": 263,
+      "topological_order": [
+        3,
+        4,
+        5,
+        2,
+        6,
+        0,
+        1
+      ]
+    },
+    {
+      "acyclic_mask": 239,
+      "occupation_mask": 27,
+      "topological_order": [
+        6,
+        7,
+        0,
+        1,
+        3,
+        2,
+        5
+      ]
+    },
+    {
+      "acyclic_mask": 223,
+      "occupation_mask": 43,
+      "topological_order": [
+        6,
+        3,
+        4,
+        7,
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "acyclic_mask": 191,
+      "occupation_mask": 75,
+      "topological_order": [
+        0,
+        3,
+        4,
+        5,
+        7,
+        1,
+        2
+      ]
+    },
+    {
+      "acyclic_mask": 127,
+      "occupation_mask": 139,
+      "topological_order": [
+        6,
+        0,
+        3,
+        4,
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "acyclic_mask": 127,
+      "occupation_mask": 267,
+      "topological_order": [
+        6,
+        0,
+        3,
+        4,
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "acyclic_mask": 223,
+      "occupation_mask": 51,
+      "topological_order": [
+        6,
+        7,
+        1,
+        4,
+        3,
+        0,
+        2
+      ]
+    },
+    {
+      "acyclic_mask": 191,
+      "occupation_mask": 83,
+      "topological_order": [
+        7,
+        1,
+        4,
+        3,
+        0,
+        2,
+        5
+      ]
+    },
+    {
+      "acyclic_mask": 127,
+      "occupation_mask": 147,
+      "topological_order": [
+        1,
+        4,
+        3,
+        5,
+        6,
+        0,
+        2
+      ]
+    },
+    {
+      "acyclic_mask": 191,
+      "occupation_mask": 275,
+      "topological_order": [
+        7,
+        1,
+        4,
+        3,
+        0,
+        2,
+        5
+      ]
+    },
+    {
+      "acyclic_mask": 223,
+      "occupation_mask": 99,
+      "topological_order": [
+        3,
+        4,
+        0,
+        6,
+        7,
+        1,
+        2
+      ]
+    },
+    {
+      "acyclic_mask": 223,
+      "occupation_mask": 163,
+      "topological_order": [
+        3,
+        4,
+        1,
+        7,
+        6,
+        0,
+        2
+      ]
+    },
+    {
+      "acyclic_mask": 251,
+      "occupation_mask": 291,
+      "topological_order": [
+        5,
+        3,
+        4,
+        6,
+        7,
+        0,
+        1
+      ]
+    },
+    {
+      "acyclic_mask": 127,
+      "occupation_mask": 195,
+      "topological_order": [
+        3,
+        4,
+        0,
+        1,
+        5,
+        6,
+        2
+      ]
+    },
+    {
+      "acyclic_mask": 127,
+      "occupation_mask": 323,
+      "topological_order": [
+        3,
+        4,
+        0,
+        5,
+        6,
+        1,
+        2
+      ]
+    },
+    {
+      "acyclic_mask": 191,
+      "occupation_mask": 387,
+      "topological_order": [
+        3,
+        4,
+        1,
+        5,
+        7,
+        0,
+        2
+      ]
+    },
+    {
+      "acyclic_mask": 239,
+      "occupation_mask": 29,
+      "topological_order": [
+        6,
+        0,
+        7,
+        3,
+        5,
+        2,
+        1
+      ]
+    },
+    {
+      "acyclic_mask": 223,
+      "occupation_mask": 45,
+      "topological_order": [
+        6,
+        0,
+        2,
+        3,
+        1,
+        4,
+        7
+      ]
+    },
+    {
+      "acyclic_mask": 191,
+      "occupation_mask": 77,
+      "topological_order": [
+        0,
+        3,
+        4,
+        5,
+        2,
+        1,
+        7
+      ]
+    },
+    {
+      "acyclic_mask": 127,
+      "occupation_mask": 141,
+      "topological_order": [
+        6,
+        0,
+        3,
+        4,
+        5,
+        2,
+        1
+      ]
+    },
+    {
+      "acyclic_mask": 127,
+      "occupation_mask": 269,
+      "topological_order": [
+        6,
+        0,
+        3,
+        4,
+        5,
+        2,
+        1
+      ]
+    },
+    {
+      "acyclic_mask": 471,
+      "occupation_mask": 53,
+      "topological_order": [
+        6,
+        7,
+        8,
+        0,
+        2,
+        1,
+        4
+      ]
+    },
+    {
+      "acyclic_mask": 367,
+      "occupation_mask": 85,
+      "topological_order": [
+        3,
+        5,
+        0,
+        6,
+        8,
+        2,
+        1
+      ]
+    },
+    {
+      "acyclic_mask": 381,
+      "occupation_mask": 149,
+      "topological_order": [
+        4,
+        3,
+        5,
+        6,
+        8,
+        0,
+        2
+      ]
+    },
+    {
+      "acyclic_mask": 367,
+      "occupation_mask": 277,
+      "topological_order": [
+        3,
+        5,
+        2,
+        8,
+        6,
+        0,
+        1
+      ]
+    },
+    {
+      "acyclic_mask": 191,
+      "occupation_mask": 101,
+      "topological_order": [
+        2,
+        5,
+        3,
+        0,
+        1,
+        4,
+        7
+      ]
+    },
+    {
+      "acyclic_mask": 319,
+      "occupation_mask": 165,
+      "topological_order": [
+        8,
+        2,
+        5,
+        3,
+        0,
+        1,
+        4
+      ]
+    },
+    {
+      "acyclic_mask": 127,
+      "occupation_mask": 293,
+      "topological_order": [
+        2,
+        5,
+        3,
+        4,
+        6,
+        0,
+        1
+      ]
+    },
+    {
+      "acyclic_mask": 127,
+      "occupation_mask": 197,
+      "topological_order": [
+        3,
+        4,
+        5,
+        0,
+        6,
+        2,
+        1
+      ]
+    },
+    {
+      "acyclic_mask": 127,
+      "occupation_mask": 325,
+      "topological_order": [
+        3,
+        4,
+        5,
+        0,
+        2,
+        6,
+        1
+      ]
+    },
+    {
+      "acyclic_mask": 191,
+      "occupation_mask": 389,
+      "topological_order": [
+        3,
+        4,
+        5,
+        0,
+        2,
+        1,
+        7
+      ]
+    },
+    {
+      "acyclic_mask": 223,
+      "occupation_mask": 57,
+      "topological_order": [
+        6,
+        0,
+        1,
+        2,
+        7,
+        3,
+        4
+      ]
+    },
+    {
+      "acyclic_mask": 191,
+      "occupation_mask": 89,
+      "topological_order": [
+        0,
+        1,
+        3,
+        2,
+        7,
+        4,
+        5
+      ]
+    },
+    {
+      "acyclic_mask": 127,
+      "occupation_mask": 153,
+      "topological_order": [
+        6,
+        0,
+        1,
+        3,
+        2,
+        4,
+        5
+      ]
+    },
+    {
+      "acyclic_mask": 127,
+      "occupation_mask": 281,
+      "topological_order": [
+        6,
+        0,
+        1,
+        3,
+        2,
+        4,
+        5
+      ]
+    },
+    {
+      "acyclic_mask": 191,
+      "occupation_mask": 105,
+      "topological_order": [
+        0,
+        2,
+        3,
+        1,
+        5,
+        4,
+        7
+      ]
+    },
+    {
+      "acyclic_mask": 127,
+      "occupation_mask": 169,
+      "topological_order": [
+        6,
+        0,
+        2,
+        3,
+        1,
+        5,
+        4
+      ]
+    },
+    {
+      "acyclic_mask": 127,
+      "occupation_mask": 297,
+      "topological_order": [
+        6,
+        0,
+        2,
+        3,
+        1,
+        5,
+        4
+      ]
+    },
+    {
+      "acyclic_mask": 127,
+      "occupation_mask": 201,
+      "topological_order": [
+        0,
+        3,
+        1,
+        4,
+        6,
+        2,
+        5
+      ]
+    },
+    {
+      "acyclic_mask": 127,
+      "occupation_mask": 329,
+      "topological_order": [
+        0,
+        3,
+        2,
+        5,
+        6,
+        1,
+        4
+      ]
+    },
+    {
+      "acyclic_mask": 191,
+      "occupation_mask": 393,
+      "topological_order": [
+        0,
+        3,
+        1,
+        2,
+        4,
+        5,
+        7
+      ]
+    },
+    {
+      "acyclic_mask": 439,
+      "occupation_mask": 113,
+      "topological_order": [
+        0,
+        1,
+        2,
+        7,
+        8,
+        4,
+        5
+      ]
+    },
+    {
+      "acyclic_mask": 446,
+      "occupation_mask": 177,
+      "topological_order": [
+        1,
+        2,
+        4,
+        7,
+        8,
+        5,
+        3
+      ]
+    },
+    {
+      "acyclic_mask": 446,
+      "occupation_mask": 305,
+      "topological_order": [
+        1,
+        2,
+        5,
+        8,
+        7,
+        4,
+        3
+      ]
+    },
+    {
+      "acyclic_mask": 375,
+      "occupation_mask": 209,
+      "topological_order": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        2,
+        8
+      ]
+    },
+    {
+      "acyclic_mask": 463,
+      "occupation_mask": 337,
+      "topological_order": [
+        3,
+        0,
+        2,
+        6,
+        1,
+        8,
+        7
+      ]
+    },
+    {
+      "acyclic_mask": 502,
+      "occupation_mask": 401,
+      "topological_order": [
+        1,
+        2,
+        4,
+        5,
+        7,
+        8,
+        6
+      ]
+    },
+    {
+      "acyclic_mask": 463,
+      "occupation_mask": 225,
+      "topological_order": [
+        3,
+        0,
+        1,
+        6,
+        2,
+        7,
+        8
+      ]
+    },
+    {
+      "acyclic_mask": 247,
+      "occupation_mask": 353,
+      "topological_order": [
+        0,
+        2,
+        5,
+        4,
+        6,
+        1,
+        7
+      ]
+    },
+    {
+      "acyclic_mask": 502,
+      "occupation_mask": 417,
+      "topological_order": [
+        1,
+        2,
+        5,
+        4,
+        7,
+        8,
+        6
+      ]
+    },
+    {
+      "acyclic_mask": 223,
+      "occupation_mask": 449,
+      "topological_order": [
+        3,
+        0,
+        1,
+        2,
+        4,
+        6,
+        7
+      ]
+    },
+    {
+      "acyclic_mask": 463,
+      "occupation_mask": 30,
+      "topological_order": [
+        6,
+        7,
+        8,
+        1,
+        2,
+        0,
+        3
+      ]
+    },
+    {
+      "acyclic_mask": 463,
+      "occupation_mask": 46,
+      "topological_order": [
+        6,
+        7,
+        8,
+        1,
+        2,
+        0,
+        3
+      ]
+    },
+    {
+      "acyclic_mask": 446,
+      "occupation_mask": 78,
+      "topological_order": [
+        3,
+        4,
+        5,
+        7,
+        8,
+        1,
+        2
+      ]
+    },
+    {
+      "acyclic_mask": 439,
+      "occupation_mask": 142,
+      "topological_order": [
+        4,
+        5,
+        1,
+        7,
+        8,
+        2,
+        0
+      ]
+    },
+    {
+      "acyclic_mask": 439,
+      "occupation_mask": 270,
+      "topological_order": [
+        4,
+        5,
+        2,
+        8,
+        7,
+        1,
+        0
+      ]
+    },
+    {
+      "acyclic_mask": 223,
+      "occupation_mask": 54,
+      "topological_order": [
+        6,
+        7,
+        1,
+        2,
+        4,
+        0,
+        3
+      ]
+    },
+    {
+      "acyclic_mask": 191,
+      "occupation_mask": 86,
+      "topological_order": [
+        7,
+        1,
+        4,
+        3,
+        5,
+        2,
+        0
+      ]
+    },
+    {
+      "acyclic_mask": 127,
+      "occupation_mask": 150,
+      "topological_order": [
+        1,
+        4,
+        3,
+        5,
+        2,
+        0,
+        6
+      ]
+    },
+    {
+      "acyclic_mask": 127,
+      "occupation_mask": 278,
+      "topological_order": [
+        1,
+        4,
+        3,
+        5,
+        2,
+        0,
+        6
+      ]
+    },
+    {
+      "acyclic_mask": 319,
+      "occupation_mask": 102,
+      "topological_order": [
+        8,
+        2,
+        5,
+        3,
+        4,
+        1,
+        0
+      ]
+    },
+    {
+      "acyclic_mask": 127,
+      "occupation_mask": 166,
+      "topological_order": [
+        2,
+        5,
+        3,
+        4,
+        1,
+        0,
+        6
+      ]
+    },
+    {
+      "acyclic_mask": 127,
+      "occupation_mask": 294,
+      "topological_order": [
+        2,
+        5,
+        3,
+        4,
+        1,
+        0,
+        6
+      ]
+    },
+    {
+      "acyclic_mask": 127,
+      "occupation_mask": 198,
+      "topological_order": [
+        3,
+        4,
+        5,
+        1,
+        2,
+        0,
+        6
+      ]
+    },
+    {
+      "acyclic_mask": 127,
+      "occupation_mask": 326,
+      "topological_order": [
+        3,
+        4,
+        5,
+        1,
+        2,
+        0,
+        6
+      ]
+    },
+    {
+      "acyclic_mask": 191,
+      "occupation_mask": 390,
+      "topological_order": [
+        3,
+        4,
+        5,
+        1,
+        2,
+        7,
+        0
+      ]
+    },
+    {
+      "acyclic_mask": 223,
+      "occupation_mask": 58,
+      "topological_order": [
+        6,
+        7,
+        1,
+        0,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "acyclic_mask": 191,
+      "occupation_mask": 90,
+      "topological_order": [
+        7,
+        1,
+        0,
+        3,
+        4,
+        2,
+        5
+      ]
+    },
+    {
+      "acyclic_mask": 127,
+      "occupation_mask": 154,
+      "topological_order": [
+        1,
+        0,
+        4,
+        2,
+        6,
+        3,
+        5
+      ]
+    },
+    {
+      "acyclic_mask": 191,
+      "occupation_mask": 282,
+      "topological_order": [
+        7,
+        1,
+        0,
+        3,
+        4,
+        2,
+        5
+      ]
+    },
+    {
+      "acyclic_mask": 381,
+      "occupation_mask": 106,
+      "topological_order": [
+        0,
+        2,
+        3,
+        6,
+        8,
+        5,
+        4
+      ]
+    },
+    {
+      "acyclic_mask": 367,
+      "occupation_mask": 170,
+      "topological_order": [
+        1,
+        0,
+        2,
+        6,
+        8,
+        3,
+        5
+      ]
+    },
+    {
+      "acyclic_mask": 381,
+      "occupation_mask": 298,
+      "topological_order": [
+        0,
+        2,
+        5,
+        8,
+        6,
+        3,
+        4
+      ]
+    },
+    {
+      "acyclic_mask": 367,
+      "occupation_mask": 202,
+      "topological_order": [
+        1,
+        0,
+        2,
+        3,
+        6,
+        5,
+        8
+      ]
+    },
+    {
+      "acyclic_mask": 493,
+      "occupation_mask": 330,
+      "topological_order": [
+        0,
+        2,
+        3,
+        5,
+        6,
+        8,
+        7
+      ]
+    },
+    {
+      "acyclic_mask": 471,
+      "occupation_mask": 394,
+      "topological_order": [
+        4,
+        1,
+        2,
+        7,
+        0,
+        8,
+        6
+      ]
+    },
+    {
+      "acyclic_mask": 191,
+      "occupation_mask": 114,
+      "topological_order": [
+        7,
+        1,
+        2,
+        4,
+        0,
+        5,
+        3
+      ]
+    },
+    {
+      "acyclic_mask": 127,
+      "occupation_mask": 178,
+      "topological_order": [
+        1,
+        2,
+        4,
+        0,
+        5,
+        3,
+        6
+      ]
+    },
+    {
+      "acyclic_mask": 127,
+      "occupation_mask": 306,
+      "topological_order": [
+        1,
+        2,
+        4,
+        0,
+        5,
+        3,
+        6
+      ]
+    },
+    {
+      "acyclic_mask": 127,
+      "occupation_mask": 210,
+      "topological_order": [
+        1,
+        4,
+        0,
+        2,
+        3,
+        5,
+        6
+      ]
+    },
+    {
+      "acyclic_mask": 127,
+      "occupation_mask": 338,
+      "topological_order": [
+        1,
+        4,
+        0,
+        2,
+        3,
+        5,
+        6
+      ]
+    },
+    {
+      "acyclic_mask": 191,
+      "occupation_mask": 402,
+      "topological_order": [
+        1,
+        4,
+        2,
+        5,
+        7,
+        0,
+        3
+      ]
+    },
+    {
+      "acyclic_mask": 471,
+      "occupation_mask": 226,
+      "topological_order": [
+        4,
+        1,
+        0,
+        6,
+        7,
+        2,
+        8
+      ]
+    },
+    {
+      "acyclic_mask": 493,
+      "occupation_mask": 354,
+      "topological_order": [
+        0,
+        2,
+        5,
+        3,
+        6,
+        8,
+        7
+      ]
+    },
+    {
+      "acyclic_mask": 239,
+      "occupation_mask": 418,
+      "topological_order": [
+        1,
+        2,
+        5,
+        3,
+        7,
+        0,
+        6
+      ]
+    },
+    {
+      "acyclic_mask": 223,
+      "occupation_mask": 450,
+      "topological_order": [
+        3,
+        4,
+        1,
+        0,
+        2,
+        6,
+        7
+      ]
+    },
+    {
+      "acyclic_mask": 223,
+      "occupation_mask": 60,
+      "topological_order": [
+        2,
+        0,
+        1,
+        6,
+        7,
+        3,
+        4
+      ]
+    },
+    {
+      "acyclic_mask": 251,
+      "occupation_mask": 92,
+      "topological_order": [
+        0,
+        1,
+        3,
+        6,
+        7,
+        4,
+        5
+      ]
+    },
+    {
+      "acyclic_mask": 251,
+      "occupation_mask": 156,
+      "topological_order": [
+        0,
+        1,
+        4,
+        7,
+        6,
+        3,
+        5
+      ]
+    },
+    {
+      "acyclic_mask": 223,
+      "occupation_mask": 284,
+      "topological_order": [
+        2,
+        0,
+        1,
+        6,
+        7,
+        3,
+        4
+      ]
+    },
+    {
+      "acyclic_mask": 191,
+      "occupation_mask": 108,
+      "topological_order": [
+        2,
+        0,
+        3,
+        5,
+        1,
+        4,
+        7
+      ]
+    },
+    {
+      "acyclic_mask": 319,
+      "occupation_mask": 172,
+      "topological_order": [
+        8,
+        2,
+        0,
+        3,
+        5,
+        1,
+        4
+      ]
+    },
+    {
+      "acyclic_mask": 127,
+      "occupation_mask": 300,
+      "topological_order": [
+        2,
+        0,
+        5,
+        1,
+        6,
+        3,
+        4
+      ]
+    },
+    {
+      "acyclic_mask": 475,
+      "occupation_mask": 204,
+      "topological_order": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "acyclic_mask": 223,
+      "occupation_mask": 332,
+      "topological_order": [
+        2,
+        0,
+        1,
+        3,
+        6,
+        4,
+        7
+      ]
+    },
+    {
+      "acyclic_mask": 487,
+      "occupation_mask": 396,
+      "topological_order": [
+        5,
+        2,
+        1,
+        7,
+        8,
+        0,
+        6
+      ]
+    },
+    {
+      "acyclic_mask": 319,
+      "occupation_mask": 116,
+      "topological_order": [
+        8,
+        2,
+        1,
+        4,
+        5,
+        0,
+        3
+      ]
+    },
+    {
+      "acyclic_mask": 127,
+      "occupation_mask": 180,
+      "topological_order": [
+        2,
+        1,
+        4,
+        5,
+        0,
+        3,
+        6
+      ]
+    },
+    {
+      "acyclic_mask": 127,
+      "occupation_mask": 308,
+      "topological_order": [
+        2,
+        1,
+        4,
+        5,
+        0,
+        3,
+        6
+      ]
+    },
+    {
+      "acyclic_mask": 475,
+      "occupation_mask": 212,
+      "topological_order": [
+        0,
+        1,
+        4,
+        3,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "acyclic_mask": 487,
+      "occupation_mask": 340,
+      "topological_order": [
+        5,
+        2,
+        0,
+        6,
+        8,
+        1,
+        7
+      ]
+    },
+    {
+      "acyclic_mask": 223,
+      "occupation_mask": 404,
+      "topological_order": [
+        2,
+        0,
+        1,
+        4,
+        7,
+        3,
+        6
+      ]
+    },
+    {
+      "acyclic_mask": 127,
+      "occupation_mask": 228,
+      "topological_order": [
+        2,
+        5,
+        0,
+        1,
+        3,
+        4,
+        6
+      ]
+    },
+    {
+      "acyclic_mask": 127,
+      "occupation_mask": 356,
+      "topological_order": [
+        2,
+        5,
+        0,
+        1,
+        3,
+        4,
+        6
+      ]
+    },
+    {
+      "acyclic_mask": 191,
+      "occupation_mask": 420,
+      "topological_order": [
+        2,
+        5,
+        0,
+        1,
+        3,
+        4,
+        7
+      ]
+    },
+    {
+      "acyclic_mask": 223,
+      "occupation_mask": 452,
+      "topological_order": [
+        2,
+        0,
+        1,
+        3,
+        4,
+        6,
+        7
+      ]
+    },
+    {
+      "acyclic_mask": 191,
+      "occupation_mask": 120,
+      "topological_order": [
+        0,
+        1,
+        2,
+        3,
+        7,
+        4,
+        5
+      ]
+    },
+    {
+      "acyclic_mask": 127,
+      "occupation_mask": 184,
+      "topological_order": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        3,
+        5
+      ]
+    },
+    {
+      "acyclic_mask": 127,
+      "occupation_mask": 312,
+      "topological_order": [
+        0,
+        1,
+        2,
+        5,
+        6,
+        3,
+        4
+      ]
+    },
+    {
+      "acyclic_mask": 127,
+      "occupation_mask": 216,
+      "topological_order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        5
+      ]
+    },
+    {
+      "acyclic_mask": 127,
+      "occupation_mask": 344,
+      "topological_order": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        4,
+        5
+      ]
+    },
+    {
+      "acyclic_mask": 191,
+      "occupation_mask": 408,
+      "topological_order": [
+        0,
+        1,
+        2,
+        4,
+        7,
+        3,
+        5
+      ]
+    },
+    {
+      "acyclic_mask": 127,
+      "occupation_mask": 232,
+      "topological_order": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        5,
+        4
+      ]
+    },
+    {
+      "acyclic_mask": 127,
+      "occupation_mask": 360,
+      "topological_order": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        4
+      ]
+    },
+    {
+      "acyclic_mask": 191,
+      "occupation_mask": 424,
+      "topological_order": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        4,
+        7
+      ]
+    },
+    {
+      "acyclic_mask": 223,
+      "occupation_mask": 456,
+      "topological_order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7
+      ]
+    },
+    {
+      "acyclic_mask": 127,
+      "occupation_mask": 240,
+      "topological_order": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        3,
+        6
+      ]
+    },
+    {
+      "acyclic_mask": 127,
+      "occupation_mask": 368,
+      "topological_order": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        3,
+        6
+      ]
+    },
+    {
+      "acyclic_mask": 191,
+      "occupation_mask": 432,
+      "topological_order": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        7,
+        3
+      ]
+    },
+    {
+      "acyclic_mask": 223,
+      "occupation_mask": 464,
+      "topological_order": [
+        0,
+        1,
+        2,
+        4,
+        3,
+        6,
+        7
+      ]
+    },
+    {
+      "acyclic_mask": 239,
+      "occupation_mask": 480,
+      "topological_order": [
+        0,
+        1,
+        2,
+        5,
+        3,
+        6,
+        7
+      ]
+    }
+  ],
+  "triangular_entry_checks": 19835
+}

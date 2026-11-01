@@ -1,0 +1,34 @@
+{
+  "all_input_scalar_commutation_checks": 6192,
+  "all_input_zero_product_checks": 11520,
+  "checker_sha256": "7bf3a5469ff3c045f69e3996f6187e90abb0502326d2b60bcb9b31efe8b8705c",
+  "incorrect_twist_negative_control": true,
+  "invalid_rational_supervector_rejected": true,
+  "ordered_gathered_factor_checks": 1728,
+  "reciprocal_weight_exact_cauchy_checks": 5,
+  "scope": "Both actual toy seeds are far above the improvement threshold; the 12-to-8 base reduction only demonstrates certified ordered nilpotence.",
+  "seconds": 2.0624282969993146,
+  "seed_summaries": [
+    {
+      "allowed_edges_per_cut": 36,
+      "certified_walk_base": 6,
+      "channels_per_cut": 6,
+      "field": 3,
+      "name": "scalar_twist",
+      "nontrivial_cross_phases": 4,
+      "unweighted_rank_sum_base": 6
+    },
+    {
+      "allowed_edges_per_cut": 96,
+      "certified_walk_base": 8,
+      "channels_per_cut": 12,
+      "field": 2,
+      "name": "square_zero",
+      "nontrivial_cross_phases": 0,
+      "unweighted_rank_sum_base": 12
+    }
+  ],
+  "single_copy_crossing_entries": 32,
+  "status": "passed",
+  "type_walk_count_checks": 8
+}

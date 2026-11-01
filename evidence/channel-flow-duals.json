@@ -1,0 +1,43 @@
+{
+  "complete_graph_flow": {
+    "dual_product": "4^128",
+    "piece_totals": [
+      32,
+      32
+    ],
+    "total": 64
+  },
+  "exact_optimized_certificate_bases": [
+    8,
+    4
+  ],
+  "independent_rational_supervector_comparisons": 96,
+  "invalid_certificate_rejections": 4,
+  "scope": "Optimality of the weighted-supervector bound only; no tensor-rank or factoring lower bound.",
+  "source_sha256": "337153e60b2d87b6847518b4ac8729b505e14b4d8dca114b0d75697bf1b001bc",
+  "spectral_vs_common_type_negative_control_lengths": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "square_zero_flow": {
+    "dual_product": "8^192",
+    "edges": 96,
+    "piece_totals": [
+      32,
+      32,
+      32
+    ],
+    "total": 96,
+    "vertices": 12
+  },
+  "status": "passed"
+}

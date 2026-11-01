@@ -1,0 +1,167 @@
+{
+  "source_sha256": "25b59141c8cbae2523170d24877992384dcae33f05d9a76b020fae18a0d595e5",
+  "coefficient_helper_sha256": "e6cfcdb8990cd5db260d713cdc168350b14c0507ed03e54df709d53f29fb6441",
+  "integral_gauss_coefficient_checks": 2401,
+  "integral_sl2_gauss_coefficient_checks": 2401,
+  "binary_carry_checks": 390625,
+  "shells": [
+    {
+      "energy": 1,
+      "labels": 1,
+      "row_blocks": 1,
+      "exact_coefficient_products": 4,
+      "additive_law_failures": 1
+    },
+    {
+      "energy": 2,
+      "labels": 2,
+      "row_blocks": 3,
+      "exact_coefficient_products": 27,
+      "additive_law_failures": 0
+    },
+    {
+      "energy": 3,
+      "labels": 2,
+      "row_blocks": 3,
+      "exact_coefficient_products": 48,
+      "additive_law_failures": 5
+    },
+    {
+      "energy": 4,
+      "labels": 4,
+      "row_blocks": 11,
+      "exact_coefficient_products": 275,
+      "additive_law_failures": 0
+    },
+    {
+      "energy": 5,
+      "labels": 4,
+      "row_blocks": 11,
+      "exact_coefficient_products": 396,
+      "additive_law_failures": 17
+    },
+    {
+      "energy": 6,
+      "labels": 6,
+      "row_blocks": 17,
+      "exact_coefficient_products": 833,
+      "additive_law_failures": 5
+    },
+    {
+      "energy": 7,
+      "labels": 6,
+      "row_blocks": 17,
+      "exact_coefficient_products": 1088,
+      "additive_law_failures": 61
+    },
+    {
+      "energy": 8,
+      "labels": 10,
+      "row_blocks": 51,
+      "exact_coefficient_products": 4131,
+      "additive_law_failures": 0
+    },
+    {
+      "energy": 10,
+      "labels": 14,
+      "row_blocks": 73,
+      "exact_coefficient_products": 8833,
+      "additive_law_failures": 36
+    },
+    {
+      "energy": 12,
+      "labels": 20,
+      "row_blocks": 129,
+      "exact_coefficient_products": 21801,
+      "additive_law_failures": 17
+    },
+    {
+      "energy": 16,
+      "labels": 36,
+      "row_blocks": 363,
+      "exact_coefficient_products": 104907,
+      "additive_law_failures": 0
+    }
+  ],
+  "opposite_shells": [
+    {
+      "energy": 1,
+      "labels": 1,
+      "sum_blocks": 1,
+      "exact_normalized_products": 4,
+      "coefficient_squares_and_commutation": true
+    },
+    {
+      "energy": 2,
+      "labels": 2,
+      "sum_blocks": 3,
+      "exact_normalized_products": 27,
+      "coefficient_squares_and_commutation": true
+    },
+    {
+      "energy": 3,
+      "labels": 2,
+      "sum_blocks": 3,
+      "exact_normalized_products": 48,
+      "coefficient_squares_and_commutation": true
+    },
+    {
+      "energy": 4,
+      "labels": 4,
+      "sum_blocks": 9,
+      "exact_normalized_products": 225,
+      "coefficient_squares_and_commutation": true
+    },
+    {
+      "energy": 5,
+      "labels": 4,
+      "sum_blocks": 9,
+      "exact_normalized_products": 324,
+      "coefficient_squares_and_commutation": true
+    },
+    {
+      "energy": 6,
+      "labels": 6,
+      "sum_blocks": 15,
+      "exact_normalized_products": 735,
+      "coefficient_squares_and_commutation": true
+    },
+    {
+      "energy": 7,
+      "labels": 6,
+      "sum_blocks": 15,
+      "exact_normalized_products": 960,
+      "coefficient_squares_and_commutation": true
+    },
+    {
+      "energy": 8,
+      "labels": 10,
+      "sum_blocks": 35,
+      "exact_normalized_products": 2835,
+      "coefficient_squares_and_commutation": true
+    },
+    {
+      "energy": 10,
+      "labels": 14,
+      "sum_blocks": 53,
+      "exact_normalized_products": 6413,
+      "coefficient_squares_and_commutation": true
+    },
+    {
+      "energy": 12,
+      "labels": 20,
+      "sum_blocks": 83,
+      "exact_normalized_products": 14027,
+      "coefficient_squares_and_commutation": true
+    },
+    {
+      "energy": 16,
+      "labels": 36,
+      "sum_blocks": 201,
+      "exact_normalized_products": 58089,
+      "coefficient_squares_and_commutation": true
+    }
+  ],
+  "scope": "The complete finite checks replay the written all-energy coefficient algebra and power-of-two additive specialization; mixed row orientations are not covered.",
+  "elapsed_seconds": 1.94
+}
