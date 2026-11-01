@@ -2995,3 +2995,7 @@ verify-regularized-transpose-words:
 .PHONY: verify-cyclic-pauli-crossings
 verify-cyclic-pauli-crossings:
 	python3 tools/check_cyclic_pauli_crossings.py
+.PHONY: verify-joint-frobenius
+verify-joint-frobenius:
+	python3 tools/check_joint_frobenius_carries.py
+	python3 tools/check_joint_geometric_box_network.py
