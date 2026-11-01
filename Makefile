@@ -354,6 +354,10 @@ verify-braid-graded-seam:
 verify-braid-spectral-fusion:
 	python3 tools/check_quantum_braid_spectral_fusion.py
 
+.PHONY: verify-braid-fusion-occupancy
+verify-braid-fusion-occupancy:
+	python3 tools/check_quantum_braid_fusion_occupancy.py
+
 .PHONY: verify-downset-crossings verify-regular-code-crossings
 verify-downset-crossings:
 	python3 tools/check_downset_crossing_normal_form.py

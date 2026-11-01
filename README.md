@@ -890,6 +890,13 @@ in the vacuum quotient the transport is a scalar times the constant braid.
 Exact polynomial normalization gives two-term transport factors at lengths
 `5*2^s`. A global kernel, spanning identity and favorable complete rank sum
 remain open. Run `make verify-braid-spectral-fusion` (NumPy).
+A [complete fusion-occupancy resolution](research/fusion-occupancy-resolution.md)
+groups every vacuum/triplet placement into `n+1` orthogonal sectors of
+exact rank `binom(n,k)F_(k-1)` (rank one at k=0). Including all boundary
+degrees gives an explicit scale-one crossing sum at every length, with
+both cut bounds and every occupancy convolution channel retained.
+A favorable complete rank sum remains unproved. Run
+`make verify-braid-fusion-occupancy` (NumPy).
 
 The [exact nonlinear charge theorem](research/nonlinear-symbol-charge-lattices.md)
 characterizes every admissible pair of full-symbol potentials for the
