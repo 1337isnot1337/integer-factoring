@@ -3989,7 +3989,7 @@
   ],
   "source_sha256": {
     "tools/regularized_transpose_words.py": "3f0dd03d41973f707100371768aee256196c107d4dcc22545fb4ccc695471771",
-    "tools/check_regularized_transpose_words.py": "bfa6e02628ab07c38c6310b9e9ea5b4568acb6ac948998806ff816e53687f281",
+    "tools/check_regularized_transpose_words.py": "655f8a4c647b4d9d4c778387826789354f49d6a19a2a50742fee615e8dcfc8f6",
     "tools/screen_regularized_transpose_words.py": "27abc6b14d949b51960e7cad0b07166fee3fed25e6d5a5a62da9b377d7214309",
     "tools/bounded_complete_support_fit.py": "8c00f785588825567783fdf018b4b40e83b700f4089d26762c056966d9124364",
     "tools/normalized_support_gap.py": "b7cfce4d812d5652168047bd8983cb8f0cd3c96e673fce59ec1494f634bcf25d",
@@ -4000,5 +4000,6 @@
     "tools/native_rectangular_smith_f4.cpp": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6",
     "tools/search_f4_recentered_crossings.py": "aaa200699ed3630f941bf694af79d0465a277b3dc570e5cc3a4a5c5703c284cd"
   },
-  "scope": "Eight literal tensors; all outcomes retained, no leading-rank seed filtering; two free-height attempts each, numerical only. No favorable rate or improved score at registration."
+  "scope": "Eight literal tensors; all outcomes retained, no leading-rank seed filtering; two free-height attempts each, numerical only. No favorable rate or improved score at registration.",
+  "registration_update": "Before pilot: add independent even-degree/odd-factor control; constructor and all eight declared pressure inputs unchanged."
 }

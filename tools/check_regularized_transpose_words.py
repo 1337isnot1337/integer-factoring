@@ -90,7 +90,7 @@ def main():
     records, entries, orders, endpoints = [], 0, 0, 0
     for q, count, shears in ((3, 2, 5), (4, 2, 7), (12, 8, 48)):
         pre, post = random_gates(rng, q, count, shears), random_gates(rng, q, count, shears)
-        base_powers = (1, 1, 5) if q == 12 else (1, 2, 2)
+        base_powers = (1, 1, 5) if q == 12 else (2, 2, 2) if q == 4 else (1, 2, 2)
         seed, metadata = construct(q, pre, post, base_powers=base_powers)
         columns = list(product(range(q), repeat=2)) if q <= 4 else [(0, 0), (0, 1), (3, 9), (11, 7)]
         entries += independent_columns(seed, metadata, columns)
@@ -143,6 +143,7 @@ def main():
               'complete_native_orders': sum(len(v['complete_native_orders']) for v in records),
               'independent_leading_matrix_rank_checks': 6,
               'all_two_by_two_F4_rank_checks': 768,
+              'even_degree_odd_factor_control': {'q': 4, 'degree': 10, 'factors': 7},
               'records': records, 'seconds': time.monotonic()-begun,
               'source_sha256': {n: sha256(Path(__file__).with_name(n).read_bytes()).hexdigest() for n in names},
               'scope': 'Exact finite construction, endpoints and profile controls. The q12 native '
