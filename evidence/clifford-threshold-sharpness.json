@@ -1,0 +1,256 @@
+{
+  "status": "pass",
+  "scope": "Exact finite controls for two proved characteristic-two statements; no factoring exponent gain.",
+  "row_threshold_controls": [
+    {
+      "sites": 2,
+      "degree": 1,
+      "ambient_dimension": 4,
+      "retained_dimension": 3,
+      "kernel_operator_rank": 2,
+      "strict_threshold_equality": true,
+      "row_frame_kernel_verified": true,
+      "row_smith_counts_through_degree": [
+        1,
+        2
+      ],
+      "full_frame_count_at_degree": 4,
+      "toeplitz_ranks": [
+        0,
+        1,
+        4
+      ]
+    },
+    {
+      "sites": 3,
+      "degree": 1,
+      "ambient_dimension": 8,
+      "retained_dimension": 6,
+      "kernel_operator_rank": 4,
+      "strict_threshold_equality": true,
+      "row_frame_kernel_verified": true,
+      "row_smith_counts_through_degree": [
+        1,
+        4
+      ],
+      "full_frame_count_at_degree": 6,
+      "toeplitz_ranks": [
+        0,
+        1,
+        6
+      ]
+    },
+    {
+      "sites": 3,
+      "degree": 2,
+      "ambient_dimension": 8,
+      "retained_dimension": 7,
+      "kernel_operator_rank": 2,
+      "strict_threshold_equality": true,
+      "row_frame_kernel_verified": true,
+      "row_smith_counts_through_degree": [
+        1,
+        6,
+        12
+      ],
+      "full_frame_count_at_degree": 15,
+      "toeplitz_ranks": [
+        0,
+        1,
+        8,
+        27
+      ]
+    },
+    {
+      "sites": 4,
+      "degree": 1,
+      "ambient_dimension": 16,
+      "retained_dimension": 12,
+      "kernel_operator_rank": 8,
+      "strict_threshold_equality": true,
+      "row_frame_kernel_verified": true,
+      "row_smith_counts_through_degree": [
+        1,
+        6
+      ],
+      "full_frame_count_at_degree": 8,
+      "toeplitz_ranks": [
+        0,
+        1,
+        8
+      ]
+    },
+    {
+      "sites": 4,
+      "degree": 2,
+      "ambient_dimension": 16,
+      "retained_dimension": 14,
+      "kernel_operator_rank": 4,
+      "strict_threshold_equality": true,
+      "row_frame_kernel_verified": true,
+      "row_smith_counts_through_degree": [
+        1,
+        8,
+        25
+      ],
+      "full_frame_count_at_degree": 28,
+      "toeplitz_ranks": [
+        0,
+        1,
+        10,
+        44
+      ]
+    },
+    {
+      "sites": 4,
+      "degree": 3,
+      "ambient_dimension": 16,
+      "retained_dimension": 15,
+      "kernel_operator_rank": 2,
+      "strict_threshold_equality": true,
+      "row_frame_kernel_verified": true,
+      "row_smith_counts_through_degree": [
+        1,
+        8,
+        28,
+        52
+      ],
+      "full_frame_count_at_degree": 56,
+      "toeplitz_ranks": [
+        0,
+        1,
+        10,
+        47,
+        136
+      ]
+    },
+    {
+      "sites": 5,
+      "degree": 1,
+      "ambient_dimension": 32,
+      "retained_dimension": 24,
+      "kernel_operator_rank": 16,
+      "strict_threshold_equality": true,
+      "row_frame_kernel_verified": true
+    },
+    {
+      "sites": 5,
+      "degree": 2,
+      "ambient_dimension": 32,
+      "retained_dimension": 28,
+      "kernel_operator_rank": 8,
+      "strict_threshold_equality": true,
+      "row_frame_kernel_verified": true
+    },
+    {
+      "sites": 5,
+      "degree": 3,
+      "ambient_dimension": 32,
+      "retained_dimension": 30,
+      "kernel_operator_rank": 4,
+      "strict_threshold_equality": true,
+      "row_frame_kernel_verified": true
+    },
+    {
+      "sites": 5,
+      "degree": 4,
+      "ambient_dimension": 32,
+      "retained_dimension": 31,
+      "kernel_operator_rank": 2,
+      "strict_threshold_equality": true,
+      "row_frame_kernel_verified": true
+    },
+    {
+      "sites": 6,
+      "degree": 1,
+      "ambient_dimension": 64,
+      "retained_dimension": 48,
+      "kernel_operator_rank": 32,
+      "strict_threshold_equality": true,
+      "row_frame_kernel_verified": true
+    },
+    {
+      "sites": 6,
+      "degree": 2,
+      "ambient_dimension": 64,
+      "retained_dimension": 56,
+      "kernel_operator_rank": 16,
+      "strict_threshold_equality": true,
+      "row_frame_kernel_verified": true
+    },
+    {
+      "sites": 6,
+      "degree": 3,
+      "ambient_dimension": 64,
+      "retained_dimension": 60,
+      "kernel_operator_rank": 8,
+      "strict_threshold_equality": true,
+      "row_frame_kernel_verified": true
+    },
+    {
+      "sites": 6,
+      "degree": 4,
+      "ambient_dimension": 64,
+      "retained_dimension": 62,
+      "kernel_operator_rank": 4,
+      "strict_threshold_equality": true,
+      "row_frame_kernel_verified": true
+    },
+    {
+      "sites": 6,
+      "degree": 5,
+      "ambient_dimension": 64,
+      "retained_dimension": 63,
+      "kernel_operator_rank": 2,
+      "strict_threshold_equality": true,
+      "row_frame_kernel_verified": true
+    }
+  ],
+  "cubic_countercontrol": {
+    "sites": 7,
+    "ambient_dimension": 128,
+    "zero_based_generator_terms": [
+      [
+        1,
+        3,
+        8
+      ],
+      [
+        5,
+        7,
+        9
+      ],
+      [
+        1,
+        5,
+        10
+      ],
+      [
+        3,
+        7,
+        11
+      ],
+      [
+        1,
+        7,
+        12
+      ],
+      [
+        3,
+        5,
+        13
+      ]
+    ],
+    "operator_rank": 38,
+    "square_rank": 8,
+    "noncentral_square_commutator_rank": 16,
+    "first_commutator_squares_checked": 14,
+    "commuting_first_pairs_checked": 91,
+    "rank_refinement_disproved": false,
+    "central_square_induction_disproved": true
+  },
+  "source_sha256": {
+    "tools/clifford_compression.py": "989d895bcd06f2ab68c53e7660a471e02a1a3468066ac494fb47e65e79b911bb",
+    "tools/check_clifford_threshold_sharpness.py": "df30dc43929b277cadbcca23e194c206473dec12fd21bbdcbdf1892ba7839fb4"
+  }
+}

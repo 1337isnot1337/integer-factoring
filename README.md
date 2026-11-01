@@ -64,6 +64,37 @@ The [research index](research/INDEX.md) links proofs, exact evidence, and replay
 
 The result table distinguishes verified machine bounds from conditional constructions and finite experiments. A merged PR or a passing finite test does not imply independent mathematical review.
 
+
+<!-- beyond-half-checkpoint:start -->
+## Arithmetic and tensor checkpoint, November 1
+
+The [consolidated research guide](research/beyond-half-research-checkpoint.md)
+connects the ordinary proofs, exact programs, and remaining obligations.
+The complete factoring score remains **1/2**; this checkpoint adds no Lean
+formalization.
+
+The arithmetic route now has explicit prime-form generators, uniform smooth-norm
+existence, complete unsigned-norm decoding, height-weighted independent relations,
+and determinant-free factor extraction. With a quasipolynomial factor base, a
+full batch of supplied norms can be processed in
+`2^((1/2+o(1))b/log_2 b)` time. A uniform fast norm selector remains open.
+Generation and existence use the pinned all-number-field Hecke zero-free theorem;
+the finite algebraic replays do not require that analytic input. Stored examples
+include a 124-bit factorization with 942 independently reconstructed relations.
+
+State-dependent channel bases, a polynomial subspace oracle, and blocking improve
+exact tensor certificates. New all-degree pressure restrictions close the bare
+seven-letter interface and the stated bounded-order families through ten letters.
+Their hypotheses leave other constructions open. None establishes a factoring
+lower bound or a larger complete score.
+
+Run `make verify-beyond-half` for the core processing and pressure replays.
+`make verify-reflection-codes-full` repeats the separate exhaustive 65,519-code
+classification. Individual notes give additional finite-search commands and
+state which checks replay certificates instead of regenerating searched witnesses.
+<!-- beyond-half-checkpoint:end -->
+
+
 ## Verification
 
 Before starting overlapping work, run `python3 tools/find_overlap.py KEYWORD`
@@ -126,6 +157,8 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs five groups on 
 | [`tools/`](tools/) and [`tests/`](tests/) | Exact checkers, reproduction scripts, and unit tests |
 
 ## Current research frontier
+
+- [Full binary conservation-kernel barrier](research/full-conservation-rank-sum-barrier.md) and [PR #27 checkpoint](research/INDEX.md#retained-pr-27-conservation-and-crossing-checkpoint): ordinary rank-sum theorems, transfers and exact finite controls. The all-kernel characteristic-two theorem and the [elementary all-code bound](research/difference-support-rank-floor.md) have distinct scopes. No general factoring lower bound, new Lean result, or exponent above `1/2` is claimed.
 
 - [Vanishing-slack transfer](research/vanishing-slack-score-transfer.md), [optimized divisor bound](research/optimized-divisor-count-bound.md), and the [PR #26 checkpoint](research/INDEX.md#retained-pr-26-effective-transfer-and-crossing-checkpoint): effective interfaces, arithmetic bounds and scoped crossing work. Universal verified search does not supply a new numerical exponent. See `make verify-further` and the retained optional targets; no new Lean or stronger complete factoring bound is claimed.
 
@@ -517,6 +550,26 @@ Selecting charge zero and area zero gives a binary family with strict
 endpoints and linearly many coefficients. Its complete binary spans fail
 the finite half target at lengths two and three; useful uniform rank
 bounds remain open. Run `make verify-ordered-charge-area`.
+
+[Joint-pair energy conjugations](research/joint-energy-conjugations.md)
+preserve one full weighted Smith profile while changing the other cut.
+For the five-letter Gaussian reference, exact commutants reduce the
+leading-coefficient-preserving F4 family to 1,296 distinct tensors.
+Fraction-free profiles and prefix dominance show that none improves the
+reference at its natural heights at any scale. Fixing its next complete
+coefficient forces a trivial conjugation. A tangent-space identity also
+classifies every formal leading-rank-one deformation near the identity
+as a centralizer motion and separate physical diagonal changes.
+Other constant components and weaker order-preserving changes remain
+open. Run `make verify-joint-energy-conjugations` and
+`make verify-joint-leading-tangent`.
+The [polynomial dressing reduction](research/joint-energy-polynomial-dressings.md)
+also handles arbitrary polynomial degrees in its four-dimensional
+nilpotent sector: retaining the original worst pole and rank-one leading
+coefficient reduces the seed to a constant conjugate, over every
+characteristic-two field. A unipotence argument also closes every
+rank-one scalar-polynomial energy dressing with those constraints.
+Run `make verify-joint-energy-dressings`.
 
 The [group-shear extension](research/group-shear-crossings.md) implements
 the swap through three multiplication/division shears over any finite
@@ -1185,9 +1238,11 @@ deterministic class-group relation generation outside the crossing evaluator.
 It proves a positive Fourier hitting lemma and deterministic extraction of
 two-torsion from unsaturated relation data. A powering seed with published
 expander amplification supplies biased words from generators without a group
-decomposition. The fast generator and smooth-pair
-construction steps remain open, so the score is still `1/2`. Reproduce the
-current exact controls with `make verify-arithmetic-framework`.
+decomposition. Full prime-form generation now has an [explicit polynomial cutoff](research/explicit-prime-form-cutoffs.md)
+under the pinned finite-order Hecke zero-free theorem. Fast norm selection
+remains open; the [completed processing stack](research/beyond-half-research-checkpoint.md)
+states its precise contract. The score remains `1/2`. Reproduce the earlier
+framework controls with `make verify-arithmetic-framework`.
 The [actual quadratic-form controls](research/arithmetic-class-group-controls.md)
 also recover proper factors for 18 finite targets and check complete
 two-torsion recovery; their generator and order searches enumerate classes.

@@ -1,0 +1,705 @@
+{
+  "status": "pass",
+  "scope": "Complete representation of a supplied factored norm; no smooth-norm selection bound.",
+  "partition_controls": 5461,
+  "complete_ellipse_comparisons": 13745,
+  "representations": 1168,
+  "primitive_representations_possible": 422,
+  "norms_requiring_imprimitive_representation": 746,
+  "imprimitive_outputs": 779,
+  "odd_inert_exponent_decisions": 8760,
+  "noncanonical_form_controls": 360,
+  "bounded_primitive_norm_ellipse_controls": 845,
+  "malformed_input_controls": 6,
+  "split_square_only_control": {
+    "full": {
+      "form": [
+        1,
+        1,
+        6
+      ],
+      "vector": [
+        2,
+        0
+      ],
+      "norm": 4,
+      "product_norm": 4,
+      "removed_integer_content": 1
+    },
+    "primitive": {
+      "form": [
+        1,
+        1,
+        6
+      ],
+      "vector": [
+        1,
+        0
+      ],
+      "norm": 1,
+      "product_norm": 1,
+      "removed_integer_content": 1
+    }
+  },
+  "forced_inert_square_control": {
+    "full": {
+      "form": [
+        1,
+        1,
+        6
+      ],
+      "vector": [
+        5,
+        0
+      ],
+      "norm": 25,
+      "product_norm": 25,
+      "removed_integer_content": 1
+    },
+    "primitive": {
+      "form": [
+        1,
+        1,
+        6
+      ],
+      "vector": [
+        1,
+        0
+      ],
+      "norm": 1,
+      "product_norm": 1,
+      "removed_integer_content": 1
+    }
+  },
+  "competing_content_control": {
+    "first_primitive_norm": 678223072849,
+    "bounded_primitive_norm": 2401,
+    "bound": 2401,
+    "one_smaller_bound_rejected": true,
+    "stats": {
+      "distinct_primes": 2,
+      "split_primes": 1,
+      "inert_primes": 1,
+      "multiplicity": 18,
+      "choice_product": 17,
+      "maximum_radix": 17,
+      "left_capacity": 1,
+      "right_capacity": 17,
+      "group_multiplications": 47,
+      "left_products": 1,
+      "right_products_examined": 7,
+      "maximum_primitive_norm": 2401,
+      "over_bound_matches": 1,
+      "odd_inert_exponent": false
+    }
+  },
+  "classwise_left_minimum_control": {
+    "primitive_representation": {
+      "form": [
+        1,
+        0,
+        103
+      ],
+      "vector": [
+        1,
+        0
+      ],
+      "norm": 1,
+      "product_norm": 1,
+      "removed_integer_content": 1
+    },
+    "stats": {
+      "distinct_primes": 2,
+      "split_primes": 2,
+      "inert_primes": 0,
+      "multiplicity": 28,
+      "choice_product": 221,
+      "maximum_radix": 17,
+      "left_capacity": 13,
+      "right_capacity": 17,
+      "group_multiplications": 81,
+      "left_products": 13,
+      "right_products_examined": 9,
+      "maximum_primitive_norm": 1,
+      "over_bound_matches": 8,
+      "odd_inert_exponent": false
+    }
+  },
+  "large_known_word_control": {
+    "norm_bits": 143,
+    "integer_content": 313507625,
+    "representation": {
+      "form": [
+        174131,
+        11243,
+        5952533
+      ],
+      "vector": [
+        -3876607564140829625,
+        -802743095424912375
+      ],
+      "norm": 6487634291189994390483090240957447515328125,
+      "product_norm": 6487634291189994390483090240957447515328125,
+      "removed_integer_content": 1
+    },
+    "primitive_representation": {
+      "form": [
+        174131,
+        11243,
+        5952533
+      ],
+      "vector": [
+        -12365273617,
+        -2560521759
+      ],
+      "norm": 66007022794321487644918061,
+      "product_norm": 66007022794321487644918061,
+      "removed_integer_content": 1
+    },
+    "stats": {
+      "distinct_primes": 13,
+      "split_primes": 12,
+      "inert_primes": 1,
+      "multiplicity": 30,
+      "choice_product": 331776,
+      "maximum_radix": 4,
+      "left_capacity": 576,
+      "right_capacity": 576,
+      "group_multiplications": 2034,
+      "left_products": 576,
+      "right_products_examined": 305,
+      "maximum_primitive_norm": null,
+      "over_bound_matches": 0,
+      "odd_inert_exponent": false
+    }
+  },
+  "records": [
+    {
+      "discriminant": -3,
+      "class_number": 1,
+      "base": [
+        [
+          5,
+          null
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          11,
+          null
+        ],
+        [
+          13,
+          7
+        ]
+      ],
+      "cases": 65,
+      "represented": 25,
+      "norms_requiring_imprimitive_representation": 13
+    },
+    {
+      "discriminant": -4,
+      "class_number": 1,
+      "base": [
+        [
+          3,
+          null
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          7,
+          null
+        ],
+        [
+          13,
+          10
+        ]
+      ],
+      "cases": 96,
+      "represented": 33,
+      "norms_requiring_imprimitive_representation": 20
+    },
+    {
+      "discriminant": -7,
+      "class_number": 1,
+      "base": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          null
+        ],
+        [
+          5,
+          null
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "cases": 130,
+      "represented": 43,
+      "norms_requiring_imprimitive_representation": 27
+    },
+    {
+      "discriminant": -8,
+      "class_number": 1,
+      "base": [
+        [
+          3,
+          2
+        ],
+        [
+          5,
+          null
+        ],
+        [
+          7,
+          null
+        ],
+        [
+          11,
+          6
+        ]
+      ],
+      "cases": 101,
+      "represented": 36,
+      "norms_requiring_imprimitive_representation": 21
+    },
+    {
+      "discriminant": -15,
+      "class_number": 2,
+      "base": [
+        [
+          2,
+          1
+        ],
+        [
+          7,
+          null
+        ],
+        [
+          11,
+          null
+        ],
+        [
+          17,
+          11
+        ]
+      ],
+      "cases": 164,
+      "represented": 31,
+      "norms_requiring_imprimitive_representation": 17
+    },
+    {
+      "discriminant": -20,
+      "class_number": 2,
+      "base": [
+        [
+          3,
+          2
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          11,
+          null
+        ],
+        [
+          13,
+          null
+        ]
+      ],
+      "cases": 152,
+      "represented": 32,
+      "norms_requiring_imprimitive_representation": 16
+    },
+    {
+      "discriminant": -23,
+      "class_number": 3,
+      "base": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          null
+        ],
+        [
+          7,
+          null
+        ]
+      ],
+      "cases": 432,
+      "represented": 128,
+      "norms_requiring_imprimitive_representation": 96
+    },
+    {
+      "discriminant": -24,
+      "class_number": 2,
+      "base": [
+        [
+          5,
+          4
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          13,
+          null
+        ],
+        [
+          17,
+          null
+        ]
+      ],
+      "cases": 116,
+      "represented": 26,
+      "norms_requiring_imprimitive_representation": 11
+    },
+    {
+      "discriminant": -31,
+      "class_number": 3,
+      "base": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          null
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          null
+        ]
+      ],
+      "cases": 390,
+      "represented": 116,
+      "norms_requiring_imprimitive_representation": 84
+    },
+    {
+      "discriminant": -39,
+      "class_number": 4,
+      "base": [
+        [
+          2,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          null
+        ],
+        [
+          17,
+          null
+        ]
+      ],
+      "cases": 400,
+      "represented": 71,
+      "norms_requiring_imprimitive_representation": 43
+    },
+    {
+      "discriminant": -40,
+      "class_number": 2,
+      "base": [
+        [
+          3,
+          null
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          17,
+          null
+        ]
+      ],
+      "cases": 144,
+      "represented": 27,
+      "norms_requiring_imprimitive_representation": 14
+    },
+    {
+      "discriminant": -47,
+      "class_number": 5,
+      "base": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          null
+        ],
+        [
+          11,
+          null
+        ]
+      ],
+      "cases": 650,
+      "represented": 164,
+      "norms_requiring_imprimitive_representation": 119
+    },
+    {
+      "discriminant": -56,
+      "class_number": 4,
+      "base": [
+        [
+          3,
+          2
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          11,
+          null
+        ],
+        [
+          17,
+          null
+        ]
+      ],
+      "cases": 312,
+      "represented": 61,
+      "norms_requiring_imprimitive_representation": 33
+    },
+    {
+      "discriminant": -84,
+      "class_number": 4,
+      "base": [
+        [
+          5,
+          4
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          13,
+          null
+        ],
+        [
+          29,
+          null
+        ]
+      ],
+      "cases": 184,
+      "represented": 21,
+      "norms_requiring_imprimitive_representation": 8
+    },
+    {
+      "discriminant": -120,
+      "class_number": 4,
+      "base": [
+        [
+          7,
+          null
+        ],
+        [
+          11,
+          10
+        ],
+        [
+          13,
+          6
+        ],
+        [
+          19,
+          null
+        ]
+      ],
+      "cases": 176,
+      "represented": 19,
+      "norms_requiring_imprimitive_representation": 9
+    },
+    {
+      "discriminant": -163,
+      "class_number": 1,
+      "base": [
+        [
+          3,
+          null
+        ],
+        [
+          5,
+          null
+        ],
+        [
+          41,
+          1
+        ],
+        [
+          43,
+          3
+        ]
+      ],
+      "cases": 49,
+      "represented": 15,
+      "norms_requiring_imprimitive_representation": 9
+    },
+    {
+      "discriminant": -180,
+      "class_number": 4,
+      "base": [
+        [
+          7,
+          4
+        ],
+        [
+          11,
+          null
+        ],
+        [
+          13,
+          null
+        ],
+        [
+          23,
+          2
+        ]
+      ],
+      "cases": 168,
+      "represented": 18,
+      "norms_requiring_imprimitive_representation": 8
+    },
+    {
+      "discriminant": -220,
+      "class_number": 4,
+      "base": [
+        [
+          3,
+          null
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          13,
+          12
+        ],
+        [
+          19,
+          null
+        ]
+      ],
+      "cases": 264,
+      "represented": 46,
+      "norms_requiring_imprimitive_representation": 26
+    },
+    {
+      "discriminant": -324,
+      "class_number": 6,
+      "base": [
+        [
+          5,
+          4
+        ],
+        [
+          7,
+          null
+        ],
+        [
+          11,
+          null
+        ],
+        [
+          13,
+          12
+        ]
+      ],
+      "cases": 390,
+      "represented": 64,
+      "norms_requiring_imprimitive_representation": 37
+    },
+    {
+      "discriminant": -400,
+      "class_number": 4,
+      "base": [
+        [
+          3,
+          null
+        ],
+        [
+          7,
+          null
+        ],
+        [
+          13,
+          4
+        ],
+        [
+          17,
+          12
+        ]
+      ],
+      "cases": 272,
+      "represented": 44,
+      "norms_requiring_imprimitive_representation": 27
+    },
+    {
+      "discriminant": -41612,
+      "class_number": 90,
+      "base": [
+        [
+          3,
+          2
+        ],
+        [
+          5,
+          null
+        ],
+        [
+          7,
+          null
+        ],
+        [
+          11,
+          10
+        ]
+      ],
+      "cases": 9090,
+      "represented": 148,
+      "norms_requiring_imprimitive_representation": 108
+    }
+  ],
+  "engine_sha256": "1b7f203e32c90432327e7629c7aeb624d1f973d7636e708810a60534acac7b6e",
+  "checker_sha256": "9105473363f494260b22ac6bd0516c0b9c77274f9cb9ba0a0ea2d351f81feb6d"
+}

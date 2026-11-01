@@ -141,6 +141,18 @@ verify-subgroup-return:
 verify-ordered-charge-area:
 	python3 tools/check_ordered_charge_area.py
 
+.PHONY: verify-joint-energy-conjugations
+verify-joint-energy-conjugations:
+	python3 tools/check_joint_energy_conjugations.py
+
+.PHONY: verify-joint-leading-tangent
+verify-joint-leading-tangent:
+	python3 tools/check_joint_leading_tangent.py
+
+.PHONY: verify-joint-energy-dressings
+verify-joint-energy-dressings:
+	python3 tools/check_joint_energy_dressings.py
+
 .PHONY: verify-group-shears
 verify-group-shears:
 	python3 tools/check_group_shear_crossings.py
@@ -592,6 +604,36 @@ verify-frontier: verify-bell verify-class-square-conic verify-divisor-moments ve
 	python3 tools/check_arithmetic_class_groups.py
 	python3 tools/check_arithmetic_density_lift.py
 	python3 tools/check_bounded_smooth_norm.py
+	python3 tools/check_weighted_cut_rank_budget.py
+	python3 tools/check_weighted_cut_residual_budget.py
+	python3 tools/check_weighted_cut_dual_certificate.py
+	python3 tools/check_two_product_complement.py
+	python3 tools/check_two_product_seed_cutoff.py
+	python3 tools/check_flagged_cut_rank_budget.py
+	python3 tools/check_geometric_subspace_compression.py
+	python3 tools/check_geometric_cut_rank_budget.py
+	python3 tools/check_weighted_cut_relaxation_limit.py
+	python3 tools/check_geometric_cut_relaxation_limit.py
+	python3 tools/check_weighted_cut_border_stability.py
+	python3 tools/check_geometric_border_cutoff.py
+	python3 tools/check_rank_one_formal_cutoff.py
+	python3 tools/check_quadratic_crossing.py
+	python3 tools/check_word_restriction_barrier.py
+	python3 tools/check_code_sections.py
+	python3 tools/check_frame_filtration.py
+	python3 tools/check_feistel_filtration.py
+	python3 tools/check_diagonal_word_rank_sum.py
+	python3 tools/check_incidence_kernel_rank_sum.py
+	python3 tools/check_full_conservation_rank_sum.py
+	python3 tools/check_p_group_convolution_degree.py
+	python3 tools/check_bi_exterior_crossing_algebra.py
+	python3 tools/check_bi_exterior_degree_budget.py
+	python3 tools/check_nonlinear_layer_probe.py
+	python3 tools/check_pauli_walsh_dictionary.py
+	python3 tools/check_pauli_walsh_pairs.py
+	python3 tools/check_growing_number_field_transfer.py
+	python3 tools/check_rank_sum_global_transfer.py
+	python3 tools/check_characteristic_independent_recovery.py
 	python3 tools/check_piece_transfer.py
 	python3 tools/check_boson_truncation.py
 	python3 tools/check_graded_space.py
@@ -1209,3 +1251,94 @@ verify-weyl-orbit:
 
 verify-witt-full:
 	python3 tools/witt_artin_hasse.py --h 32 --gram
+
+.PHONY: verify-pr27 verify-code-width5
+verify-pr27:
+	python3 tools/check_weighted_cut_rank_budget.py
+	python3 tools/check_weighted_cut_residual_budget.py
+	python3 tools/check_weighted_cut_dual_certificate.py
+	python3 tools/check_two_product_complement.py
+	python3 tools/check_two_product_seed_cutoff.py
+	python3 tools/check_flagged_cut_rank_budget.py
+	python3 tools/check_geometric_subspace_compression.py
+	python3 tools/check_geometric_cut_rank_budget.py
+	python3 tools/check_weighted_cut_relaxation_limit.py
+	python3 tools/check_geometric_cut_relaxation_limit.py
+	python3 tools/check_weighted_cut_border_stability.py
+	python3 tools/check_geometric_border_cutoff.py
+	python3 tools/check_rank_one_formal_cutoff.py
+	python3 tools/check_quadratic_crossing.py
+	python3 tools/check_word_restriction_barrier.py
+	python3 tools/check_code_sections.py
+	python3 tools/check_frame_filtration.py
+	python3 tools/check_feistel_filtration.py
+	python3 tools/check_diagonal_word_rank_sum.py
+	python3 tools/check_incidence_kernel_rank_sum.py
+	python3 tools/check_full_conservation_rank_sum.py
+	python3 tools/check_p_group_convolution_degree.py
+	python3 tools/check_bi_exterior_crossing_algebra.py
+	python3 tools/check_bi_exterior_degree_budget.py
+	python3 tools/check_nonlinear_layer_probe.py
+	python3 tools/check_pauli_walsh_dictionary.py
+	python3 tools/check_pauli_walsh_pairs.py
+	python3 tools/check_growing_number_field_transfer.py
+	python3 tools/check_rank_sum_global_transfer.py
+	python3 tools/check_characteristic_independent_recovery.py
+
+verify-code-width5:
+	g++ -O3 -std=c++20 -fopenmp tools/check_code_kernel_width5.cpp -o /tmp/integer-factoring-code-width5
+	/tmp/integer-factoring-code-width5 0 64 4 /tmp/integer-factoring-code-width5
+	python3 tools/check_code_sections.py --full-classifier --native-prefix /tmp/integer-factoring-code-width5
+
+# beyond-half-checks:start
+.PHONY: verify-beyond-half verify-norm-processing verify-adaptive-channels verify-crossing-pressure-certificates verify-protected-scalar-pressure verify-reflection-codes-full
+
+# Core exact replays; exhaustive coordinate-code classification has its own target.
+verify-beyond-half: verify-norm-processing verify-adaptive-channels verify-crossing-pressure-certificates verify-protected-scalar-pressure
+
+verify-norm-processing:
+	python3 tools/check_prime_form_bias.py
+	python3 tools/check_prime_form_cutoffs.py
+	python3 tools/check_direct_discriminant_short_norms.py
+	python3 tools/check_early_ambiguous_factor.py
+	python3 tools/check_factored_norm_representation.py
+	python3 tools/check_prime_form_factor_base.py
+	python3 tools/check_smooth_band_density.py
+	python3 tools/check_powered_prime_norm_parameters.py
+	python3 tools/check_powered_prime_norm_witnesses.py
+	python3 tools/check_quasipolynomial_norm_parameters.py
+	python3 tools/check_relation_two_saturation.py
+	python3 tools/check_weighted_norm_relations.py
+	python3 tools/check_arbitrary_norm_representation.py
+	python3 tools/check_selected_norm_factoring.py
+	python3 tools/check_selected_norm_factoring_124_bit.py
+	python3 tools/check_arbitrary_selected_norm_factoring.py
+
+verify-adaptive-channels:
+	python3 tools/check_adaptive_smith_lattices.py
+	python3 tools/check_matroid_smith_channels.py
+	python3 tools/check_dvr_smith_channels.py
+	python3 tools/check_subspace_smith_channels.py
+	python3 tools/check_channel_pressure_separation.py
+	python3 tools/check_block_subspace_channels.py
+
+verify-crossing-pressure-certificates:
+	python3 tools/check_direct_type_elementary_floor.py
+	python3 tools/check_arbitrary_binary_code_pressure.py
+	python3 tools/check_integer_shared_minor_floor.py
+	python3 tools/check_adjugate_seven_letter_floor.py
+	python3 tools/check_bounded_order_smith_floor.py
+	python3 tools/check_clifford_compression.py
+	python3 tools/check_clifford_threshold_sharpness.py
+	python3 tools/check_homogeneous_restriction_floor.py
+	python3 tools/check_joint_height_conjugations.py
+
+verify-protected-scalar-pressure:
+	python3 tools/check_triangular_auxiliary_row_fiber.py
+	python3 tools/check_protected_subtensor_pressure.py
+	python3 tools/check_scalar_terminal_projections.py
+
+verify-reflection-codes-full:
+	python3 tools/check_reflection_coordinate_codes.py --full --progress --output evidence/reflection-coordinate-codes.json
+
+# beyond-half-checks:end

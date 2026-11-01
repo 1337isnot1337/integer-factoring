@@ -229,28 +229,16 @@ efficient method to locate an element in an arbitrary translate.
 
 ## 3. Density with the leading smoothness term retained
 
-The elementary order class-number bound needed here is
+The order class-number bound needed here follows from
+[Adzaga et al., Lemma 4.3](https://people.math.wisc.edu/~chidambaram3/papers/QCPlusQuotients.pdf#page=9),
+which gives `h(Delta) <= sqrt(D)(log(4D)+2)/pi` for quadratic orders,
+including nonfundamental discriminants. Since `D < 2^b`, `log 2 < 1`,
+`log 4 < 2`, and `pi > 3`, this implies
 
 $$h(\Delta)<\sqrt D\,(b+2).\tag{14}$$
 
-For completeness, let chi_Delta be the nonprincipal Kronecker character
-modulo D. Its complete period has sum zero, and its partial sums have
-absolute value at most D. Splitting the Dirichlet series at D and
-using partial summation on the tail gives
-
-$$L(1,\chi_\Delta)\le H_D+1\le\log D+2.$$
-
-The quadratic class-number formula is
-$$h(\Delta)=\frac{w_\Delta\sqrt D}{2\pi}L(1,\chi_\Delta),$$
-where w_Delta is the number of units in the order. For the fundamental
-case see [Sutherland, equation (10.1)](https://math.mit.edu/~drew/sutherland-phd.pdf);
-the general case follows by the conductor Euler factors and the relative
-order class-number formula in
-[Clark, Section 2.3, equation (2)](https://math.mit.edu/~drew/vantage/ClarkPaper.pdf).
-For Delta<-4, w_Delta=2, so the displayed estimate implies (14), since
-log D<b and pi>1. The orders of discriminants -3 and -4 both have class
-number one and satisfy (14) directly. This argument does not require
-factoring D or computing the class number.
+Indeed, the preceding bound is strictly smaller than
+`sqrt(D)(b+4)/3`, and `(b+4)/3 < b+2`. This proves the stated estimate for the binary input length.
 
 Take `R` to be a fixed positive fraction of `sqrt(D)`, still
 with `4R^2 < D`. Choose

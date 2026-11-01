@@ -1,0 +1,346 @@
+{
+  "status": "PASS",
+  "scope": "Characteristic-two fixed additive conservation; no factoring exponent improvement",
+  "exhaustive_binary_function_degree_controls": 65812,
+  "extension_field_function_degree_controls": 336,
+  "exhaustive_binary_rank_square_controls": 65536,
+  "arbitrary_nonprojector_decompositions": 48,
+  "conjugated_three_square_zero_decompositions": 24,
+  "random_rank_square_controls": 144,
+  "independent_dense_tensor_controls": 24,
+  "exact_double_cauchy_binet_witnesses": 72,
+  "sample_witnesses": [
+    {
+      "field_order": 2,
+      "width": 1,
+      "family": "arbitrary",
+      "counts": [
+        1,
+        1,
+        0
+      ],
+      "row_degree_sum": 1,
+      "column_degree_sum": 1,
+      "profiles": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ]
+    },
+    {
+      "field_order": 2,
+      "width": 1,
+      "family": "three_square_zero",
+      "counts": [
+        1,
+        1,
+        0
+      ],
+      "row_degree_sum": 1,
+      "column_degree_sum": 1,
+      "profiles": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "field_order": 2,
+      "width": 2,
+      "family": "arbitrary",
+      "counts": [
+        3,
+        1,
+        0
+      ],
+      "row_degree_sum": 8,
+      "column_degree_sum": 6,
+      "profiles": [
+        [
+          16,
+          12
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          12,
+          8
+        ]
+      ]
+    },
+    {
+      "field_order": 2,
+      "width": 2,
+      "family": "three_square_zero",
+      "counts": [
+        2,
+        2,
+        0
+      ],
+      "row_degree_sum": 7,
+      "column_degree_sum": 7,
+      "profiles": [
+        [
+          10,
+          10
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          12,
+          12
+        ]
+      ]
+    },
+    {
+      "field_order": 2,
+      "width": 3,
+      "family": "arbitrary",
+      "counts": [
+        8,
+        0,
+        0
+      ],
+      "row_degree_sum": 16,
+      "column_degree_sum": 20,
+      "profiles": [
+        [
+          34,
+          50
+        ],
+        [
+          44,
+          52
+        ],
+        [
+          46,
+          56
+        ]
+      ]
+    },
+    {
+      "field_order": 2,
+      "width": 3,
+      "family": "three_square_zero",
+      "counts": [
+        4,
+        4,
+        0
+      ],
+      "row_degree_sum": 18,
+      "column_degree_sum": 18,
+      "profiles": [
+        [
+          44,
+          52
+        ],
+        [
+          40,
+          32
+        ],
+        [
+          50,
+          42
+        ]
+      ]
+    },
+    {
+      "field_order": 4,
+      "width": 1,
+      "family": "arbitrary",
+      "counts": [
+        2,
+        0,
+        0
+      ],
+      "row_degree_sum": 2,
+      "column_degree_sum": 1,
+      "profiles": [
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          1
+        ]
+      ]
+    },
+    {
+      "field_order": 4,
+      "width": 1,
+      "family": "three_square_zero",
+      "counts": [
+        1,
+        1,
+        0
+      ],
+      "row_degree_sum": 2,
+      "column_degree_sum": 2,
+      "profiles": [
+        [
+          4,
+          4
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          4
+        ]
+      ]
+    },
+    {
+      "field_order": 4,
+      "width": 2,
+      "family": "arbitrary",
+      "counts": [
+        4,
+        0,
+        0
+      ],
+      "row_degree_sum": 7,
+      "column_degree_sum": 8,
+      "profiles": [
+        [
+          14,
+          16
+        ],
+        [
+          16,
+          16
+        ],
+        [
+          16,
+          13
+        ]
+      ]
+    },
+    {
+      "field_order": 4,
+      "width": 2,
+      "family": "three_square_zero",
+      "counts": [
+        2,
+        2,
+        0
+      ],
+      "row_degree_sum": 8,
+      "column_degree_sum": 7,
+      "profiles": [
+        [
+          16,
+          16
+        ],
+        [
+          16,
+          12
+        ],
+        [
+          12,
+          8
+        ]
+      ]
+    },
+    {
+      "field_order": 4,
+      "width": 3,
+      "family": "arbitrary",
+      "counts": [
+        8,
+        0,
+        0
+      ],
+      "row_degree_sum": 23,
+      "column_degree_sum": 21,
+      "profiles": [
+        [
+          60,
+          52
+        ],
+        [
+          64,
+          60
+        ],
+        [
+          60,
+          60
+        ]
+      ]
+    },
+    {
+      "field_order": 4,
+      "width": 3,
+      "family": "three_square_zero",
+      "counts": [
+        4,
+        4,
+        0
+      ],
+      "row_degree_sum": 24,
+      "column_degree_sum": 22,
+      "profiles": [
+        [
+          56,
+          56
+        ],
+        [
+          52,
+          52
+        ],
+        [
+          60,
+          52
+        ]
+      ]
+    }
+  ],
+  "false_rank_product_negative_control": {
+    "labels": 16,
+    "cuts": [
+      30,
+      30
+    ],
+    "rank_K": 4,
+    "rank_K_squared": 0
+  },
+  "odd_characteristic_negative_control": {
+    "field_order": 3,
+    "labels": 4,
+    "cuts": [
+      4,
+      4
+    ],
+    "rank_K_squared": 4,
+    "scope": "Refutes characteristic-free degree/rank-square and invertible-target extensions"
+  },
+  "checker_sha256": "a6abd29ff3fc2260ca27c144bdb6fc8aa97f3ac13db08ac364fc65ddb6fcc99a"
+}

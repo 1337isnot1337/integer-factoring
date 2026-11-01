@@ -1,8 +1,61 @@
 # Research index
 
-Latest: [31 October ordinary-proof research session](frontier-session-20261031.md) — complete score unchanged at 1/2; exact constructors, global charge obstructions, completed finite searches, and final validation.
+Related checkpoint: [31 October ordinary-proof research session](frontier-session-20261031.md) — complete score unchanged at 1/2; exact constructors, global charge obstructions, completed finite searches, and final validation.
 
 This index covers research notes on `main`. Open PRs can contain later work. Each note states its own assumptions, proof scope, and evidence. An obstruction to a specific construction is not a factoring lower bound.
+
+<!-- beyond-half-index:start -->
+## November 1 arithmetic and tensor checkpoint
+
+[Overview and exact selector contract](beyond-half-research-checkpoint.md). Ordinary proofs and executable evidence; complete score remains 1/2.
+
+- [Prove polynomial-size prime-form generation and exact biased samples](polylog-prime-form-generators.md).
+- [Make prime-form generator and bias cutoffs explicit](explicit-prime-form-cutoffs.md).
+- [Record prime-translation and smooth-set Fourier obstructions](prime-translates-miss-smooth-forms.md).
+- [Smooth set fourier norm](smooth-set-fourier-norm.md).
+- [Extract useful ambiguous forms in polynomial time from an annihilator](polynomial-ambiguous-extraction.md).
+- [Decode primitive factored norms by exact orientation matching](factored-norm-orientation-search.md).
+- [Prove explicit multiband smooth-ideal density](smooth-band-density.md).
+- [Construct the prime-form base deterministically](prime-form-root-construction.md).
+- [Amplify prime bias to obtain short smooth norms in every class](powered-prime-smooth-norms.md).
+- [Replay powered-prime smooth-norm existence on finite class groups](powered-prime-finite-replay.md).
+- [Complete the selected-integer factoring consumer](selected-norm-factoring-interface.md).
+- [Remove the multiplicity promise from the unsigned consumer](height-only-selected-integers.md).
+- [Decode arbitrary factored norms and minimize primitive content](arbitrary-factored-norm-representation.md).
+- [Bound coverage of one target-independent norm list](norm-selector-coverage.md).
+- [Prove the elementary crossing floor after all binary type restrictions](direct-type-elementary-pressure-floor.md).
+- [Classify all rank-seven constant restrictions of three elementary sites](linear-physical-restriction-crossings.md).
+- [Prove Clifford compression layers and near-full pressure floors](clifford-compression-pressure-floor.md).
+- [Pin the scope of the recent rigorous ideal sampler](rigorous-ideal-sampling-scope.md).
+- [Show the row-frame threshold is sharp and exhibit the cubic induction obstruction](clifford-threshold-sharpness.md).
+- [Sharpen supplied-norm processing to a uniform one-half leading coefficient](quasipolynomial-base-norm-processing.md).
+- [Direct supplied smooth norms give signed short prime words](smooth-norm-short-words.md).
+- [Polynomial ideal HNF and uniform Delta=-4N extraction structure](direct-discriminant-short-norms.md).
+- [Complete finite norm sieve and original 60/92-bit factoring certificates](complete-smooth-norm-sieve.md).
+- [Determinant-free full and partial relation halving](determinant-free-ambiguous-extraction.md).
+- [Finite partial norm search and 124-bit certificate](partial-norm-search.md).
+- [Height-only norms and logarithm-weighted relation independence](height-only-smooth-norm-relations.md).
+- [Adaptive target exponents improve the finite height search](adaptive-height-norm-selection.md).
+- [Polynomial-size complete subspace Smith-channel oracle](subspace-smith-channel-oracle.md).
+- [Exact all-state channel-pressure separation](channel-pressure-separation.md).
+- [Exact block and precision hierarchy for complete subspace channels](block-subspace-channel-hierarchy.md).
+- [Exact modular higher-spin crossing exclusions](modular-spin-crossings.md).
+- [Exact homogeneous physical restrictions of the two-site reflection seed](reflection-homogeneous-restrictions.md).
+- [All-scale 5/7 floor for every homogeneous middle-fiber restriction](homogeneous-restriction-pressure-floor.md).
+- [Complete joint physical conjugations cannot improve the four-letter reflection seed](joint-height-conjugation-floor.md).
+- [State-adaptive physical Smith channels](state-adaptive-smith-channels.md).
+- [Matroid optimization within equal-order channel blocks](matroid-adaptive-smith-channels.md).
+- [Complete regular channel bases through finite jets](dvr-adaptive-smith-channels.md).
+- [Complete triangular auxiliary row fiber and word obstruction](triangular-auxiliary-row-fiber.md).
+- [Protected subtensor and maximal regular left projection](protected-subtensor-pressure.md).
+- [Bounded boundary extraction of protected scalar lines](boundary-extracted-scalar-pressure.md).
+- [All binary code embeddings with arbitrary diagonal gauges](arbitrary-binary-code-pressure-floor.md).
+- [Integer shared-minor floors and the universal affine exclusion](integer-shared-minor-pressure-floor.md).
+- [All-degree seven-letter adjugate floor and capped jets](adjugate-seven-letter-pressure-floor.md).
+- [All coordinate codes of two reflection sites have an exact pressure floor](reflection-coordinate-code-pressure-floor.md).
+- [Smith orders bounded by degree close alphabets through ten](bounded-order-smith-pressure-floor.md).
+
+<!-- beyond-half-index:end -->
 
 ## Proved machine bounds and their foundations
 
@@ -388,6 +441,10 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 - [Ordered charge-area crossings](ordered-charge-area-crossings.md): growing clocks have an exact integer charge-walk normal form; polynomial-degree field descent preserves the exponent, and a binary area-zero filter retains both strict endpoints with linearly many coefficients; complete binary spans fail at two selected lengths.
 
+- [Joint energy conjugations](joint-energy-conjugations.md): joint-pair changes preserve one entire weighted Smith profile; a 16-dimensional bimodule enumerates the complete 1,296-member F4 orbit fixing the five-letter reference's leading coefficient, and exact prefix dominance excludes any scale improvement at its natural heights; a tangent identity classifies all formal leading-rank-one motions near the identity.
+
+- [Polynomial joint-energy dressings](joint-energy-polynomial-dressings.md): a four-dimensional square-zero sector preserves one full profile; 180 quadratic identities and two explicit minors reduce every degree over every characteristic-two field to a constant conjugate under the original pole/rank constraints; unipotence also closes every rank-one scalar-polynomial energy generator.
+
 - [Group-shear crossings](group-shear-crossings.md): multiplication/division shears give cubic swap paths over every finite `p`-group in characteristic `p`; exact early-jet certificates exclude six displayed binary seeds, without an all-group claim.
 
 - [All-degree homogeneous Boolean charge bands](homogeneous-boolean-charge-bands.md): a degree-independent loss cap and stronger Gaussian floors exclude all exterior charges and a linearly growing interior band, including overlapping monomials.
@@ -632,3 +689,36 @@ Integrated from [exact PR #26 source](https://github.com/1337isnot1337/integer-f
 - [An all-energy row filtration for the binary weighted Weyl curve](weighted-weyl-row-filtration.md)
 - [The constant alternate-order Weyl algebra](weyl-alternate-order-algebra.md)
 - [A p-typical Witt state space with perfect modular duality](witt-duality-and-vertex-jets.md)
+
+## Retained PR #27 conservation and crossing checkpoint
+
+Integrated from [exact PR #27 source](https://github.com/1337isnot1337/integer-factoring/tree/b49b9e19480c65d139ef15beecacb92064c1a960), retaining original credits and scope. Ordinary transfers and restricted rank barriers do not establish a stronger complete factoring exponent.
+
+- [An exact exterior-algebra model for both crossing cuts](bi-exterior-crossing-algebra.md)
+- [Degree and quadratic-rank budgets for the full exterior model](bi-exterior-degree-budget.md)
+- [Verified divisor recovery in a varying characteristic](characteristic-independent-recovery.md)
+- [Dual code sections: exact normal forms and complete finite screens](code-section-normal-forms.md)
+- [A rank-sum barrier for all unsymmetrized diagonal words](diagonal-word-rank-sum-barrier.md)
+- [A rank quotient for arbitrary fixed-target Feistel relabelings](fixed-target-feistel-barrier.md)
+- [Flag quotients exclude finite rank-sum seeds through eighty-two labels](flagged-cut-rank-budget.md)
+- [A common rank quotient for all affine-selector frames](frame-filtration-barrier.md)
+- [A rank-sum obstruction for every binary conservation kernel](full-conservation-rank-sum-barrier.md)
+- [Formal crossing limits are excluded through sixty-four labels](geometric-border-cutoff.md)
+- [Geometric compression excludes exact rank-sum seeds through ninety-five labels](geometric-cut-rank-budget.md)
+- [The geometric compression bounds still admit the dyadic scalar profile](geometric-cut-relaxation-limit.md)
+- [Universal subspace compression from integer Jacobian certificates](geometric-subspace-compression.md)
+- [One global block length permits growing coefficient fields](global-block-field-transfer.md)
+- [A support barrier for Boolean-incidence crossing kernels](incidence-kernel-rank-sum-barrier.md)
+- [Nonlinear label maps give a genuinely new layer family, but no gain yet](nonlinear-layer-probe.md)
+- [Pauli/Walsh atoms: an exact sixty-four-label dictionary exclusion](pauli-walsh-dictionary.md)
+- [Polynomial-time coefficient queries on quadratic Boolean codes](quadratic-code-oracle.md)
+- [Factor kernels exclude formal crossing limits through seventy-one labels](rank-one-formal-cutoff.md)
+- [A quantitative global transfer from raw rank sums](rank-sum-global-transfer.md)
+- [A two-product approximation leaves a half-dimensional complement](two-product-complement.md)
+- [The two-product theorem excludes rank-sum seeds through 54 labels](two-product-seed-cutoff.md)
+- [Weighted cut budgets survive formal one-parameter degenerations](weighted-cut-border-stability.md)
+- [Positive cut duals exclude seeds through fifty-two labels](weighted-cut-dual-certificate.md)
+- [Weighted cut budgets and a forty-six-label cutoff](weighted-cut-rank-budget.md)
+- [An exact limitation of the scalar cut budgets](weighted-cut-relaxation-limit.md)
+- [Residual cut budgets exclude seeds through fifty labels](weighted-cut-residual-budget.md)
+- [Arbitrary binary-word restrictions of the 23-term profile](word-restriction-barrier.md)

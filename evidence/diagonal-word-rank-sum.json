@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "scope": "full unsymmetrized diagonal I,N word span; characteristic two",
+  "universal_claim": "r*c >= d^2*word_support; crossing rank-sum >= d^(3/2)",
+  "new_factoring_exponent": false,
+  "binary_exhaustion": {
+    "nonzero_polynomials": 65808,
+    "by_width": [
+      {
+        "width": 1,
+        "nonzero_polynomials": 3
+      },
+      {
+        "width": 2,
+        "nonzero_polynomials": 15
+      },
+      {
+        "width": 3,
+        "nonzero_polynomials": 255
+      },
+      {
+        "width": 4,
+        "nonzero_polynomials": 65535
+      }
+    ]
+  },
+  "direct_tensor_controls": 34,
+  "extension_field": "F4 = F2[a]/(a^2+a+1)",
+  "extension_field_controls": 80,
+  "general_kernel_negative_control": {
+    "width": 4,
+    "row_rank": 30,
+    "column_rank": 30,
+    "ordinary_kernel_rank": 4,
+    "rank_product": 900,
+    "false_unrestricted_lower_bound": 1024
+  },
+  "checker_sha256": "225b7a2a11654fef10fbd2fa3afbb71e27ad3ff4e2391811a9b62b97b7a9145e"
+}

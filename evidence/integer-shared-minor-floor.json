@@ -1,0 +1,6308 @@
+{
+  "scope": "bare ungauged polynomial local Smith pressures, all fields and fixed auxiliary dimension",
+  "all_alphabet_degree_one_floor": "rho >= 3/4",
+  "finite_cases_rho_floor": "rho > 577/816 > 1/sqrt(2)",
+  "exact_thresholds": {
+    "7": "245641539/1000000",
+    "8": "179183517/500000",
+    "9": "500045417/1000000",
+    "10": "336822719/500000",
+    "11": "882079527/1000000"
+  },
+  "finite_controls": {
+    "balanced_integer_allocations_checked": 1992,
+    "budget_monotonicity_cases": 11694,
+    "affine_exact_minimum_cases": 92
+  },
+  "alphabet_degree_cases": 19,
+  "budget_polynomials": 363,
+  "bernstein_leaves": 718,
+  "maximum_subdivision_depth": 5,
+  "certificates": [
+    {
+      "alphabet": 7,
+      "degree": 2,
+      "pressure_threshold": "245641539/1000000",
+      "maximum_bernstein_degree": 6,
+      "budgets": [
+        {
+          "prefix_budget": 0,
+          "polynomial_sha256": "168b007988acf4eca97e416247d279f8f9be4d43275c32acdabe9ddcfb566c5d",
+          "degree": 6,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "7000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 1,
+          "polynomial_sha256": "bf89037347f286c994cf87393c7c5ff25863c353ce5db42242431ae2bd719c7f",
+          "degree": 6,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "6000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 2,
+          "polynomial_sha256": "5e721e9d9382e2ab831e07302a2a558d46ee32ea295523da7cc2ecebb96eed3e",
+          "degree": 6,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "5000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 3,
+          "polynomial_sha256": "b1ec0a212eb78f59d950d225b743975ad64e8f47e6a358638a7e85d96a750470",
+          "degree": 6,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "59358461/15"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 4,
+          "polynomial_sha256": "70609e12fb9fc1fcaebba2c31a053468306d96250bfa579d4c56151b98f28984",
+          "degree": 6,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "5119487/5"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 5,
+          "polynomial_sha256": "456dd0ed14f4b0b06d4ad91275aca46e52fdf49c9f57f48e7167d5d4d19e9b6a",
+          "degree": 6,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "17108461/20"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "482795961/4"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 6,
+          "polynomial_sha256": "fcf3e96c96baed7c108ab831f18b7ad5fb041cc9c44c862bf95351a676314c31",
+          "degree": 6,
+          "leaves": [
+            {
+              "depth": 2,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "55325383/120"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "93983461/16"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "469858461/4"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 7,
+          "polynomial_sha256": "7bf1e9e103c10cd22cec36421b4d3c8c39357913cda607e0864a7e7e1e1ae06d",
+          "degree": 6,
+          "leaves": [
+            {
+              "depth": 2,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "57012883/120"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "377199469/64"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "469920961/4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "alphabet": 7,
+      "degree": 3,
+      "pressure_threshold": "245641539/1000000",
+      "maximum_bernstein_degree": 8,
+      "budgets": [
+        {
+          "prefix_budget": 0,
+          "polynomial_sha256": "ff97bb7a7338f1fdf96ffd47e364f8a984949ab7db6ccadd97571483ffcb9b74",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "7000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 1,
+          "polynomial_sha256": "ceec78b8e5d0420ea18a296008ceb946f7845e1a68d0440e257200c682147275",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "6000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 2,
+          "polynomial_sha256": "f00b7b93598f547214490429e3124b13486ebcef7d52ed19e97167a90b3eeddd",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "5000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 3,
+          "polynomial_sha256": "f204942dae3e7a1c957abdc6a7a0f65d215c137774804b2113e3cddb5307ffa8",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "4000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 4,
+          "polynomial_sha256": "c2d4e5458c92d5c4f189f4be66bde1c4c94e4e5500934a218cd4ca445d3044b8",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "31558461/14"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 5,
+          "polynomial_sha256": "fbf6cec1315979c3c37baad550567ffaa1bf2d85d2eb34e89aca1ae938a84784",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "2000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "239983461/8"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 6,
+          "polynomial_sha256": "cc41675365bc55de0dd5a89cdf3d11810c4d53b469f388b47e4c3c88766aa9b5",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "165417305/224"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "219858461/8"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 7,
+          "polynomial_sha256": "e2996c361b8017164c2e4da6de3cc8be95330ffacfa0b4b369d44b508a8d10ad",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "46479805/112"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "213420961/8"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 8,
+          "polynomial_sha256": "51e025ab57229d702c8a620fe2b2b31023b43d153e40278906c64bf0dcf7bbcc",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 2,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "289824469/256"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "206795961/8"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 9,
+          "polynomial_sha256": "b0a95596813eabbc4704ff76e5fd1152ee12278c5354deccc58e78bf09250ccd",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 2,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "226824469/256"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "868995517/1024"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "199983461/8"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 10,
+          "polynomial_sha256": "6cfb9c59a563a3bc76de9766c7a47ab7bf578cb822f11d8bfa0cc2669ed5a9ff",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 2,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "485289563/512"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "940714267/1024"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "200545961/8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "alphabet": 7,
+      "degree": 4,
+      "pressure_threshold": "245641539/1000000",
+      "maximum_bernstein_degree": 10,
+      "budgets": [
+        {
+          "prefix_budget": 0,
+          "polynomial_sha256": "6033e62ba47acbc0192787b05931e20a2264d963d946a6a4288c83c91620b79b",
+          "degree": 10,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "7000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 1,
+          "polynomial_sha256": "d1660fcc639cc40c1717123cde587f6c720b54080d63b2e8278506f0568ed336",
+          "degree": 10,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "6000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 2,
+          "polynomial_sha256": "9b90bba82db8480266fa52197b30528c47bd7fbd3284eaef2234fdc3210e1725",
+          "degree": 10,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "5000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 3,
+          "polynomial_sha256": "6278b4d9da16cfefc65341fc3e9d20d0942db21f6dbc2485d9cdad03fd3dee9f",
+          "degree": 10,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "4000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 4,
+          "polynomial_sha256": "eec00ca87b6b52a62ed391346c1790444740771fec190cb840855fe00a15b7b1",
+          "degree": 10,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "3000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 5,
+          "polynomial_sha256": "29a196fc33b949778a6e7078bcf1607e40722f32e9ceaba8995999a48cc7070e",
+          "degree": 10,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "59075383/42"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 6,
+          "polynomial_sha256": "cd183a6bedd248583e9e436fa11b953d46bfb0ff6fcb61a8acba228fdcf4149a",
+          "degree": 10,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "128420961/16"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 7,
+          "polynomial_sha256": "296bdac6d2cc47a30df0e792232837ef690b9341c42e101450adb72c54026127",
+          "degree": 10,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "58749543/8"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 8,
+          "polynomial_sha256": "54fdaf4310fe140e1182144110bdc08c6067c6d887d13ca052333afe2ec8d8b3",
+          "degree": 10,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "106358461/16"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 9,
+          "polynomial_sha256": "5e0db3f44305a09bb66c8b1859b524111f52f572b2dd043eed36a913bbb94a4a",
+          "degree": 10,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "36795961/48"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "47499543/8"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 10,
+          "polynomial_sha256": "204466a798d56721806155ed051db62fd421ee75917fb859ed49385639916cf4",
+          "degree": 10,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "51425383/144"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "83420961/16"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 11,
+          "polynomial_sha256": "10b622a8c99840d779f5526495f65178eb875f4cdd1fac43981f82bf8ce53b20",
+          "degree": 10,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "14300383/144"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "19116959/4"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 12,
+          "polynomial_sha256": "a6fd03cbf0fd1df1368b2d03c76ec672f2610656d27fe4bdc38fbe765897e961",
+          "degree": 10,
+          "leaves": [
+            {
+              "depth": 2,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "6203018743/17920"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "68858461/16"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 13,
+          "polynomial_sha256": "a2d9bbf5fa765293e6688cd8a4236d258fc14d4caa7121f70c898885503f0134",
+          "degree": 10,
+          "leaves": [
+            {
+              "depth": 2,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "6557299993/17920"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "4330021"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 14,
+          "polynomial_sha256": "9b83a67fb24aa1338bf0b30cfc5054b724a45b1c77a2d2104bf2a7e598f39332",
+          "degree": 10,
+          "leaves": [
+            {
+              "depth": 2,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "6675393743/17920"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "69420961/16"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "alphabet": 7,
+      "degree": 5,
+      "pressure_threshold": "245641539/1000000",
+      "maximum_bernstein_degree": 12,
+      "budgets": [
+        {
+          "prefix_budget": 0,
+          "polynomial_sha256": "b8a18e9af6e87cb4a305cec36deba62ecdde86c4b1e1b53ff83f14b884f77951",
+          "degree": 12,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "7000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 1,
+          "polynomial_sha256": "6387cda9bfbf5e7b009018daa0e788de786ad76b2b781d77b8b9e6105ef057ef",
+          "degree": 12,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "6000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 2,
+          "polynomial_sha256": "2c18f90d005bb58031a23179315916efe4ab552c14d6f4e57fa556dad2a6cd33",
+          "degree": 12,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "5000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 3,
+          "polynomial_sha256": "077df522c5c0b803b463b214d4e40d6b57124b07fa332d112fd09f0fe9f9930a",
+          "degree": 12,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "4000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 4,
+          "polynomial_sha256": "856865064e8699aa352ad1fd79e3e558d5776d555d6079707e98bc444486fa98",
+          "degree": 12,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "3000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 5,
+          "polynomial_sha256": "a37d1ab7bfa60a627254f84a8717d44f1a316e9390cd4856c8cb350ac881d7b6",
+          "degree": 12,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "2000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 6,
+          "polynomial_sha256": "2853e7faed63637ae564671af9dd4284477bb1166cad54987badd0ea9214b1ea",
+          "degree": 12,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "88509227/99"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 7,
+          "polynomial_sha256": "0bbd5826437496880175a37c30576b8b442bc5e44daee14ea62256628c5b7696",
+          "degree": 12,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "117420961/32"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 8,
+          "polynomial_sha256": "45750a3881656fca6fee2c1aed821c8c687565d4582977321bc9fa22a278ac5b",
+          "degree": 12,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "25304459/8"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 9,
+          "polynomial_sha256": "c2e620c19ae5480e3a7cce8ee2dd3313524ef4904767074cced5c9dbbf0791e1",
+          "degree": 12,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "5298771/2"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 10,
+          "polynomial_sha256": "0d0ee0e384a53cc276f16dffbda40a422082cc10644343ac778fb471247894eb",
+          "degree": 12,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "68108461/32"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 11,
+          "polynomial_sha256": "4a6251331bc431f4da1953a18b517a035dff299201a9de327fd08a838853623a",
+          "degree": 12,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "323352977/384"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "51202211/32"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 12,
+          "polynomial_sha256": "d47410f0a522049775d15dfa39b1b02d78744b0a15f035fe1d2e852d2a88e85b",
+          "degree": 12,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "63430159/128"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "37514711/32"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 13,
+          "polynomial_sha256": "34ac644ef897b0230b90243cbe250b9e54ad173b9a966949c62f2624ed7c50dc",
+          "degree": 12,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "51742659/128"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "16780793/16"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 14,
+          "polynomial_sha256": "2a1864dbd604639695b5b9ded05f9531eb0c2f95468ab9cdee0ed57d6e6f540b",
+          "degree": 12,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "116852977/384"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "1830021/2"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 15,
+          "polynomial_sha256": "68e0943a099ded15c1fa680f941a0a22c2b7dc7f860961195c844f42173560f0",
+          "degree": 12,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "25055159/128"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "24670961/32"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 16,
+          "polynomial_sha256": "406f6e61b22d30622ba2a0f4814139bf369fceb19cd352069b8e8ef107c1d9eb",
+          "degree": 12,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "10055159/128"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "19733461/32"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 17,
+          "polynomial_sha256": "ee715d32daaf21ff43505fa9089b0cad24e4a6edfc43f20f79f51e2a24a3f1db",
+          "degree": 12,
+          "leaves": [
+            {
+              "depth": 2,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "33900523/176"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "3616959/8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "alphabet": 7,
+      "degree": 6,
+      "pressure_threshold": "245641539/1000000",
+      "maximum_bernstein_degree": 14,
+      "budgets": [
+        {
+          "prefix_budget": 0,
+          "polynomial_sha256": "ef2bc776bc79b87c9ddfd00ca60006804a831e0ea3f0c1dd08e62a763db6b073",
+          "degree": 14,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "7000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 1,
+          "polynomial_sha256": "5d3ab24ae4792d53148acc412017dbdb6257eb49d3d198acdd383d58616c46d3",
+          "degree": 14,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "6000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 2,
+          "polynomial_sha256": "be8b46e5b7f0199b2e3f611c78fe18e1de9e29b04386b9d8fd218aaed43c4d77",
+          "degree": 14,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "5000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 3,
+          "polynomial_sha256": "6e8e61c01b80967a23d5df4d7ee6b257311254d68b039c21aa9b778ded8631c3",
+          "degree": 14,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "4000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 4,
+          "polynomial_sha256": "790735f8bbc5acbd29afe18b16e547c8cf2e640fcb4c5b3253a09ad68c98fb1c",
+          "degree": 14,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "3000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 5,
+          "polynomial_sha256": "0ccd54cf3005ff820904c4ed820ff0b2da8b1714479fdc7a394de7c8d4cbdf5d",
+          "degree": 14,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "2000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 6,
+          "polynomial_sha256": "3fdb6af62938dc5419daacb9ef2edef22d1fb9927e182d2170984d3c96ae10af",
+          "degree": 14,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 7,
+          "polynomial_sha256": "6702cad7ea7d3fc28ea81fb4239a31024945c64353ad3cbbd4b8a08a796744c0",
+          "degree": 14,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 8,
+          "polynomial_sha256": "26e84066daa203e1624e151657b428e2520be9d64c7af7e7e7b5d0ce6f697be0",
+          "degree": 14,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "318092270/1001"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 9,
+          "polynomial_sha256": "498a6fad9e81b3fcfe8cae9596b59e02188d9347f6458068f11cf2d335cbf4b1",
+          "degree": 14,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "630043219/256"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 10,
+          "polynomial_sha256": "4732907c121af35e8f511868cdaab6ebc51a86f45dbebc2668482c235ccad890",
+          "degree": 14,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "132452211/64"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 11,
+          "polynomial_sha256": "d689ff688ad9efe2bcbc1b84300c5863cede6fb17533c55f8cab0aaad19aad6b",
+          "degree": 14,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "428605719/256"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 12,
+          "polynomial_sha256": "adeb370285c22e9dbf557c9ec33c98608d17bc3d0af4ffb6caaf7d3560fd6c0c",
+          "degree": 14,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "569193985/448"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 13,
+          "polynomial_sha256": "5a78954f4f3c31aa3818c8abe2540ba72637a3abcf99c944debbc75afb8cbae8",
+          "degree": 14,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "494600235/448"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 14,
+          "polynomial_sha256": "b6424978194772b907798d3d6a11cd18be262998a7c6d7e2f720f0142534909a",
+          "degree": 14,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "63420961/64"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "59572355/64"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 15,
+          "polynomial_sha256": "e907807d4c3d2422888ac31bfdb0678a9734cfc4b2a365fcbc278ac787048e3a",
+          "degree": 14,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "215199469/256"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "336412735/448"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 16,
+          "polynomial_sha256": "022ed8562bae007fac4894b776e8ab681b3a43d5dd89e8359f32fbab00ce0a61",
+          "degree": 14,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "43827211/64"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "252818985/448"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 17,
+          "polynomial_sha256": "1e7cb64c5ffdf1bfa41b045453cb48f6b88cfde7a2af0b7ea908ad30a547da92",
+          "degree": 14,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "134011969/256"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "2026753699/5824"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 18,
+          "polynomial_sha256": "6dc11e4ce1f5d237afdd80ad7c5ed4604444941bf5f3bc12f1a1fc65a0bfc432",
+          "degree": 14,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "22827211/64"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "11884987/112"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 19,
+          "polynomial_sha256": "6b4412f7007efcfca3fbd2ecb57857035e9ce33e12e4e9ffbe259a1730412e73",
+          "degree": 14,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "95136969/256"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "372056537/2912"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 20,
+          "polynomial_sha256": "9cd7b367ff7984dd8c6c1620bb1f1e2f74d3f427259b0ab225f0acc202a573ae",
+          "degree": 14,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "24358461/64"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "204942331/1456"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 21,
+          "polynomial_sha256": "1eeeed0cd033fa76b41f4f5f6b9b7db23c97259c2816da037316e9eb9e388853",
+          "degree": 14,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "98199469/256"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "60356291/416"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "alphabet": 7,
+      "degree": 7,
+      "pressure_threshold": "245641539/1000000",
+      "maximum_bernstein_degree": 18,
+      "budgets": [
+        {
+          "prefix_budget": 0,
+          "polynomial_sha256": "c4d1648faa6286d7fa85b1036c2e67e2ab32107152998ac65b489ad367b9e58b",
+          "degree": 18,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "7000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 1,
+          "polynomial_sha256": "24565417cc8b7bd9ca2bd7d63119cb1a51988ea3b4600924462e56d312c207ee",
+          "degree": 17,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "6000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 2,
+          "polynomial_sha256": "27630055f47d1fb7a5441d5d6dcd14d89a0d8fb6c28f65059a3cb2d308825cbd",
+          "degree": 17,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "5000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 3,
+          "polynomial_sha256": "aaa2ee4e197625ed9f09cdaea9dc4aaa322032e07a37aa5d43ff6d9197f2c183",
+          "degree": 17,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "4000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 4,
+          "polynomial_sha256": "296dfd67382f3724d0775d0b3c3f6690dd2365bccd328ee8064d6e0a965f87c8",
+          "degree": 17,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "3000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 5,
+          "polynomial_sha256": "a28f58b6c0e81d75a4212e0a391d41a2cee5e8fd01415a94f1fdedd55fd5c38c",
+          "degree": 17,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "2000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 6,
+          "polynomial_sha256": "e711bd957366166b899bf8e0890caa526fd1b51463adf783fe90e0d5c81f2f1f",
+          "degree": 17,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 7,
+          "polynomial_sha256": "e3b01efee52a82046a01b5a971ce9d20b91f0f34491e39361e00dbdf9ef1ed56",
+          "degree": 16,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 8,
+          "polynomial_sha256": "ea142cf331cc938c2b27c9d1b4ee111fc12c050ff5087c9820bce656d6417f2c",
+          "degree": 16,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 9,
+          "polynomial_sha256": "8f8e2446b0b870984682b9d0b4fa6153f23ed40dd697e97eef4d1e053b4caec0",
+          "degree": 16,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "35083311/70"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 10,
+          "polynomial_sha256": "36b8d8e10e1ea3dabe44336aabcf747fe551bc83ed00689518133ee2e8ba8b58",
+          "degree": 16,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "613888797/256"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 11,
+          "polynomial_sha256": "2cc2b47422d1939a9cd8f38e529a5ee7029cd45bba9cf8c59825903ae12bb88a",
+          "degree": 16,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "8490223581/4096"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 12,
+          "polynomial_sha256": "7bf72a67e900713f21601c03b3f9a31fbef5ad8f1f9cbf3ab40d992afb64bd6f",
+          "degree": 16,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "51584815937/30720"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 13,
+          "polynomial_sha256": "7a1e880b2d7ebabea8b49fb62d60246eabe7fb69e837ea11a671f97ba14f4b22",
+          "degree": 16,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "51789554707/35840"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 14,
+          "polynomial_sha256": "e01eda4154459783d74870dee495e16495014b5f655c553305558c7f74ca98a3",
+          "degree": 16,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "44178273457/35840"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 15,
+          "polynomial_sha256": "2a8dd12c77cdffb99f7bff380a57fa6024c4f45d8401f6f08ecda39fc69a6f85",
+          "degree": 16,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "36378992207/35840"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 16,
+          "polynomial_sha256": "ac0e06d0d2b36113d213f4a9c19648fde5513b9aea54ad1f752a9bfaa7193886",
+          "degree": 16,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "28391710957/35840"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 17,
+          "polynomial_sha256": "6c5465f85d953049209d6701ab3768b006ad911fde50df10bff16c2a085ad5ab",
+          "degree": 16,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "60845724833/116480"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 18,
+          "polynomial_sha256": "4e9bdd036375ed53ce0f5e1b99a20e3408a18ccb1ed180f536226d4f19e7c6e3",
+          "degree": 16,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "449980719/512"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "28412443583/116480"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 19,
+          "polynomial_sha256": "68dd6dfa9eee3e5d7d3ed4f3ff8c284b64cedfd887e6c3cc4cf97e45aa22578e",
+          "degree": 16,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "418480719/512"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "3237880427/29120"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 20,
+          "polynomial_sha256": "845112e5b6105c7a5aeb9d6ffd4ff4b54666b81bb9417784c1d08b3d03c16498",
+          "degree": 16,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "50124543/64"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "321005263/7280"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 21,
+          "polynomial_sha256": "75b51ab1f477d2d8c93c4dda750ea13ca7d408017f365a6ea6088b2aea8bc9c9",
+          "degree": 16,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "23866959/32"
+            },
+            {
+              "depth": 2,
+              "interval_index": 2,
+              "minimum_bernstein_coefficient": "25960627636523/131203072"
+            },
+            {
+              "depth": 2,
+              "interval_index": 3,
+              "minimum_bernstein_coefficient": "440629783373593/16777216"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 22,
+          "polynomial_sha256": "429c4ae502e7df5b2f5235bce9a949127498b0b30e3c4d924a691c875f7acd81",
+          "degree": 16,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "361105719/512"
+            },
+            {
+              "depth": 2,
+              "interval_index": 2,
+              "minimum_bernstein_coefficient": "16860917261523/131203072"
+            },
+            {
+              "depth": 2,
+              "interval_index": 3,
+              "minimum_bernstein_coefficient": "875136999919061/33554432"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 23,
+          "polynomial_sha256": "618ca644def0aaa25b3e1d3168692aaea0dd78ef4d5c15f1226226667a08bf4d",
+          "degree": 16,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "338699469/512"
+            },
+            {
+              "depth": 2,
+              "interval_index": 2,
+              "minimum_bernstein_coefficient": "6973169449023/131203072"
+            },
+            {
+              "depth": 2,
+              "interval_index": 3,
+              "minimum_bernstein_coefficient": "868793170200311/33554432"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 24,
+          "polynomial_sha256": "f82ebb8941f92af0b52bed7305a991a196a425336d488b3ab98434a59214ee2c",
+          "degree": 16,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "157326297/256"
+            },
+            {
+              "depth": 3,
+              "interval_index": 4,
+              "minimum_bernstein_coefficient": "126708577707663775/1563368095744"
+            },
+            {
+              "depth": 3,
+              "interval_index": 5,
+              "minimum_bernstein_coefficient": "283828792013703125/549755813888"
+            },
+            {
+              "depth": 2,
+              "interval_index": 3,
+              "minimum_bernstein_coefficient": "107778509698867/4194304"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "alphabet": 7,
+      "degree": 8,
+      "pressure_threshold": "245641539/1000000",
+      "maximum_bernstein_degree": 20,
+      "budgets": [
+        {
+          "prefix_budget": 0,
+          "polynomial_sha256": "436f326159fbfa5e3ae4ad987806576d413df73688e6309c7d8994a5fb3c2cbb",
+          "degree": 20,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "7000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 1,
+          "polynomial_sha256": "5532aa6a8a90c170ecd52044228db04ce145a1d16a00970aff0e8cf9ec1a0aff",
+          "degree": 20,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "6000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 2,
+          "polynomial_sha256": "364cb926cdf5a494c243fb7b163be81151b1ef4a0422cf020da0dadbf8e6c49a",
+          "degree": 19,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "5000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 3,
+          "polynomial_sha256": "c1111e317fd300e24d992264bdb626ce1e83f9bf3cc7800d6eba6f9eeb911bf5",
+          "degree": 19,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "4000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 4,
+          "polynomial_sha256": "9a4ed1ce5cc23125cd21f55acaa92b2762c05ebaa2ef51f09b1823ea0a2c27e8",
+          "degree": 19,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "3000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 5,
+          "polynomial_sha256": "5952a43c88cbbe6b2f62279a255be709fa4fcaceb9cff4954967ebd12b0d69a4",
+          "degree": 19,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "2000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 6,
+          "polynomial_sha256": "c8ff1ca81d9233ecff93507dccad2053936a1121f5901bc64c50c5297fd99d35",
+          "degree": 19,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 7,
+          "polynomial_sha256": "976132e874a721b060b46573a180ca07818cf1976369c3be9c02e4301e04fd1d",
+          "degree": 19,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 8,
+          "polynomial_sha256": "66bf4674f591f8733dfccbb76cebd2e2749190f7bf232a293f80e1a7fab60426",
+          "degree": 19,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 9,
+          "polynomial_sha256": "3f2105e68c790f482991e4454351163275df3344e462255cdf2e4fa5182139bd",
+          "degree": 19,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 10,
+          "polynomial_sha256": "3e8b924bfaa2049bbab49c140b9421e194ed282afef83dba2397c097d91937ab",
+          "degree": 19,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1746146065/1938"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 11,
+          "polynomial_sha256": "c7bb555db55e59fe450593d4557df660e0ea5e6f355a889be7cc8c3a6e5d957e",
+          "degree": 19,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "19434642627/8192"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 12,
+          "polynomial_sha256": "e04e7adf7c68606d3336af93b9456b0fdd2b230a814cec43d8431444dfa25d50",
+          "degree": 19,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "1032663985529/496128"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 13,
+          "polynomial_sha256": "c22352943159b0d0b7fd68d28b1722f93894480762eed65a02e474b5afff0616",
+          "degree": 19,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "2754399705257/1488384"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 14,
+          "polynomial_sha256": "ec5f6920194c57ac81c4155fa89c13600cb65605d14a0b9422975557952efe28",
+          "degree": 18,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "13723788397/8704"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 15,
+          "polynomial_sha256": "f1365bb9ce8f76225bb3906eb30116ed59e3d307579fae648f9796ee33dc7db3",
+          "degree": 18,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "244342962587/182784"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 16,
+          "polynomial_sha256": "5f88056e189a8a2ebf184c8db77784603055d127dab6d9a87c90ca053511c72f",
+          "degree": 18,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "599195294011/548352"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 17,
+          "polynomial_sha256": "0370d59c4bbaaae2e5bc4d430d86d4513fde186ebfd8858b8be3223937fb7716",
+          "degree": 18,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "1934490125137/2376192"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 18,
+          "polynomial_sha256": "6ba7abbf20afd2d0e4b9ed4ca95123b09842092c13e68fbcaaefbde6fc4b046d",
+          "degree": 18,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "1226050312637/2376192"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 19,
+          "polynomial_sha256": "e613723a927c82e933fb146000ec27370e0a28ea0504e366ea6b94653065f203",
+          "degree": 18,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "3760769797/10752"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 20,
+          "polynomial_sha256": "fb90a5e28692c9520138e1c1c7d1925c12c544c6cddf640dbf1030ffbea26745",
+          "degree": 18,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "429244687637/2376192"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 21,
+          "polynomial_sha256": "ab87de74874f645f8f1bd1c8a46f78092e799bc73157db79eed6f89e9cb6c276",
+          "degree": 18,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "137169781387/2376192"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 22,
+          "polynomial_sha256": "40f4fb5cdc3d6efbf75e90745fb412799376bfb117523d5fc1661f903050bcdc",
+          "degree": 18,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 2,
+              "interval_index": 2,
+              "minimum_bernstein_coefficient": "6253181742625117/22941794304"
+            },
+            {
+              "depth": 2,
+              "interval_index": 3,
+              "minimum_bernstein_coefficient": "3531836930717491/268435456"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 23,
+          "polynomial_sha256": "9b8a5ea18af4bd3f6e3ef0eacfc4938e492aa0cac2b0474904ffbdf938fc2417",
+          "degree": 18,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "4001219751/4096"
+            },
+            {
+              "depth": 2,
+              "interval_index": 2,
+              "minimum_bernstein_coefficient": "14163258256891093/91767177216"
+            },
+            {
+              "depth": 2,
+              "interval_index": 3,
+              "minimum_bernstein_coefficient": "13857934683041839/1073741824"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 24,
+          "polynomial_sha256": "46ee3f2599b9c2abbe27a2bd6bf93827bbc95f02396b3c6fbf7afcca25861f08",
+          "degree": 18,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "58929459/64"
+            },
+            {
+              "depth": 2,
+              "interval_index": 2,
+              "minimum_bernstein_coefficient": "339590824241/10862592"
+            },
+            {
+              "depth": 2,
+              "interval_index": 3,
+              "minimum_bernstein_coefficient": "106114037931113/8388608"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 25,
+          "polynomial_sha256": "d9efa0f40c2054e8f06cc42694a0c5a106daafb0682b114cb1fee5af0e6d05e2",
+          "degree": 18,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "3699719751/4096"
+            },
+            {
+              "depth": 3,
+              "interval_index": 4,
+              "minimum_bernstein_coefficient": "48217190918839984375/281474976710656"
+            },
+            {
+              "depth": 3,
+              "interval_index": 5,
+              "minimum_bernstein_coefficient": "216017927647618953125/1266637395197952"
+            },
+            {
+              "depth": 2,
+              "interval_index": 3,
+              "minimum_bernstein_coefficient": "13469605043291839/1073741824"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 26,
+          "polynomial_sha256": "c470be39cef3e2056243f4bb154d4cc7168fdf586c2fa7ddd7a79471e96e7b29",
+          "degree": 18,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "906168219/1024"
+            },
+            {
+              "depth": 3,
+              "interval_index": 4,
+              "minimum_bernstein_coefficient": "9007736786108921875/70368744177664"
+            },
+            {
+              "depth": 3,
+              "interval_index": 5,
+              "minimum_bernstein_coefficient": "39571667833648390625/316659348799488"
+            },
+            {
+              "depth": 2,
+              "interval_index": 3,
+              "minimum_bernstein_coefficient": "3338157624842491/268435456"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 27,
+          "polynomial_sha256": "16dafe329b227dd72fae91490f4ac610ab9b156a383642566e4a2929e629249e",
+          "degree": 18,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "3635219751/4096"
+            },
+            {
+              "depth": 3,
+              "interval_index": 4,
+              "minimum_bernstein_coefficient": "38016370160793109375/281474976710656"
+            },
+            {
+              "depth": 3,
+              "interval_index": 5,
+              "minimum_bernstein_coefficient": "167541339485228328125/1266637395197952"
+            },
+            {
+              "depth": 2,
+              "interval_index": 3,
+              "minimum_bernstein_coefficient": "13362049122416839/1073741824"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 28,
+          "polynomial_sha256": "36333d3dd64a4a19cfdcc39adaec706e413c42fce637e6b6cc26dfae0663672e",
+          "degree": 18,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "227420961/256"
+            },
+            {
+              "depth": 3,
+              "interval_index": 4,
+              "minimum_bernstein_coefficient": "2417386114557015625/17592186044416"
+            },
+            {
+              "depth": 3,
+              "interval_index": 5,
+              "minimum_bernstein_coefficient": "10664139304298328125/79164837199872"
+            },
+            {
+              "depth": 2,
+              "interval_index": 3,
+              "minimum_bernstein_coefficient": "835324291464529/67108864"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "alphabet": 7,
+      "degree": 9,
+      "pressure_threshold": "245641539/1000000",
+      "maximum_bernstein_degree": 22,
+      "budgets": [
+        {
+          "prefix_budget": 0,
+          "polynomial_sha256": "b7c681d1a1f33d7eb2e8f89eb0feb19635bcdaadbd87e61af8d7996a3ada9b43",
+          "degree": 22,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "7000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 1,
+          "polynomial_sha256": "cb97a477fbce50f245d64a5b2e2de79a85f1ccfec73f01f09aca788c89c5c1db",
+          "degree": 22,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "6000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 2,
+          "polynomial_sha256": "0f743d5247f5e95ffddb13db9f2d4b4c4c98a85fde12d3c33bd71b3b5e64b302",
+          "degree": 22,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "5000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 3,
+          "polynomial_sha256": "817383c22b191693d9bba383693964eee468be6da685fc3864fc76dcdb1bd818",
+          "degree": 21,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "4000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 4,
+          "polynomial_sha256": "3cc15005fdb10e0727cf758eeb6555086a8768e0075a93bc9cc97c960223b125",
+          "degree": 21,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "3000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 5,
+          "polynomial_sha256": "279665aafea0f1a93cc01d64852ef6889c02682c2a7ae28af933978d1b8f67a3",
+          "degree": 21,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "2000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 6,
+          "polynomial_sha256": "4977aa632a0a3a8e105fde6a089c87f2d461766b9498d3f8a5eb5cc7a3504a78",
+          "degree": 21,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 7,
+          "polynomial_sha256": "15cf16b26797aa37def4e29165e213c38ee8a7e7734ab6308878d27ec194b843",
+          "degree": 21,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 8,
+          "polynomial_sha256": "731ef9415050a785c495a2a18b82202735b5e350b221189eb0821a1af5a798b5",
+          "degree": 21,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 9,
+          "polynomial_sha256": "42ecb743095c10cbb18c76cb7c58eb86327d082619a09ab04c536b261e8311b5",
+          "degree": 21,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 10,
+          "polynomial_sha256": "96ac57fe16489697a4ae5bbdf583b2d4529eb5e3f2202d9770e1f97bdb837eb4",
+          "degree": 21,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 11,
+          "polynomial_sha256": "9a5d61dfdac8cbeab559b601383ecbf5e4402b10ea80f74703b59d85183fca5e",
+          "degree": 21,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1098487639/1197"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 12,
+          "polynomial_sha256": "6f1ac7a194b51325e7d5a8e9351878cdfb7aa1b2bf8188f508123a375f375d44",
+          "degree": 21,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "37352205127/16384"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 13,
+          "polynomial_sha256": "16ba4f74dd790c08f8d0dfcd0f1c8ad2ec7d5d199a58b2031131ea75101764cd",
+          "degree": 21,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "17585751001/8192"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 14,
+          "polynomial_sha256": "892a6579950a73a39d582e9b12176a0eee4fa227bc19517eb06a4504fb1900a5",
+          "degree": 21,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "4927378339471/2480640"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 15,
+          "polynomial_sha256": "af09ab3094a05c5b6b8111b1bc381292dd53e731e1d3d329dbc0bf74927249c6",
+          "degree": 21,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "2128647443173/1240320"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 16,
+          "polynomial_sha256": "309106aeed8440158639821ac0c5a0c08d0b49f5db826ec08cbace33fa4d18df",
+          "degree": 21,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "3638998120721/2480640"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 17,
+          "polynomial_sha256": "d77a98b0722b69f948a435b0c19c8852d2ba5e2992903f9cba29bdcd7cb0aeb0",
+          "degree": 21,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "803716879759/680960"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 18,
+          "polynomial_sha256": "400eb4a0b1c5b5a65bb8b3fb9776313b64e3ff58faa80a2783f5f083691c6dd0",
+          "degree": 21,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "601372817259/680960"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 19,
+          "polynomial_sha256": "d22d57f087b6a421429a1421f982154eba9b2c54c6ed1098d9bc84f3beeab972",
+          "degree": 21,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "72916564040627/104186880"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 20,
+          "polynomial_sha256": "f3b7e0da24fafca77d6d0349aef93d1194053716e6b8a19d1f4a6e617480f3de",
+          "degree": 21,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "17858119680209/34728960"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 21,
+          "polynomial_sha256": "48f0374757ac6a4b431df237253c294752e2e773aeb6a75b0791f6f1f6a8ff2c",
+          "degree": 20,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "305046487117/1131520"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 22,
+          "polynomial_sha256": "8b085650dc836196c4f449ecc75e5c30fb3e1a18223dc680ca4d71051275d2b8",
+          "degree": 20,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "2368332880223/21498880"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 23,
+          "polynomial_sha256": "97c528b0b9d35471e3b888872cf8889357e4f5e96983e6a204376d120b0cd662",
+          "degree": 20,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 2,
+              "interval_index": 2,
+              "minimum_bernstein_coefficient": "85084119938860819/216761630720"
+            },
+            {
+              "depth": 2,
+              "interval_index": 3,
+              "minimum_bernstein_coefficient": "871051771876481/134217728"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 24,
+          "polynomial_sha256": "42b096ae70eefe716738d10b024a80c650eae58f976c6f62f978a01344c12d4d",
+          "degree": 20,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 2,
+              "interval_index": 2,
+              "minimum_bernstein_coefficient": "54856955371860819/216761630720"
+            },
+            {
+              "depth": 2,
+              "interval_index": 3,
+              "minimum_bernstein_coefficient": "6686044124589973/1073741824"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 25,
+          "polynomial_sha256": "37e817c61c826e43042a12a52d9ec8a7f1451b8c4379fb318b734a0daf5e6611",
+          "degree": 20,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 2,
+              "interval_index": 2,
+              "minimum_bernstein_coefficient": "59263022435157047/325142446080"
+            },
+            {
+              "depth": 2,
+              "interval_index": 3,
+              "minimum_bernstein_coefficient": "52247248943204159/8589934592"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 26,
+          "polynomial_sha256": "438573776b9dda78b038d0afcc6034eea09f2a4038d289d5ea0b66c16b49aa42",
+          "degree": 20,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 2,
+              "interval_index": 2,
+              "minimum_bernstein_coefficient": "16803673023226961/162571223040"
+            },
+            {
+              "depth": 2,
+              "interval_index": 3,
+              "minimum_bernstein_coefficient": "50979483343547909/8589934592"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 27,
+          "polynomial_sha256": "9face1cf9c03481d1fe40d5b3e9a54d0fc00814689003cac6e2c4043015e5630",
+          "degree": 20,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 2,
+              "interval_index": 2,
+              "minimum_bernstein_coefficient": "4759833674307823/216761630720"
+            },
+            {
+              "depth": 2,
+              "interval_index": 3,
+              "minimum_bernstein_coefficient": "24842528098875517/4294967296"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 28,
+          "polynomial_sha256": "610713f99b2fb5152c40a9eebd79718e8b71554d94973d35a1aca387de43f42b",
+          "degree": 20,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 3,
+              "interval_index": 4,
+              "minimum_bernstein_coefficient": "1471894179352755765625/4503599627370496"
+            },
+            {
+              "depth": 3,
+              "interval_index": 5,
+              "minimum_bernstein_coefficient": "4252842210399153962675/34093656554078208"
+            },
+            {
+              "depth": 2,
+              "interval_index": 3,
+              "minimum_bernstein_coefficient": "24505495424156767/4294967296"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 29,
+          "polynomial_sha256": "3eb5281242d10394b39e511dc78f55e784604020ca6b3761c4ab34e7e1961dd8",
+          "degree": 20,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 3,
+              "interval_index": 4,
+              "minimum_bernstein_coefficient": "2641381968294447078125/9007199254740992"
+            },
+            {
+              "depth": 3,
+              "interval_index": 5,
+              "minimum_bernstein_coefficient": "11105000645586683785075/136374626216312832"
+            },
+            {
+              "depth": 2,
+              "interval_index": 3,
+              "minimum_bernstein_coefficient": "48294891529735409/8589934592"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 30,
+          "polynomial_sha256": "22a4cf582f4ea5f841815dbd9aa52d9c0183948e784f8cb315509f57ec4d76b3",
+          "degree": 20,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "8165626001/8192"
+            },
+            {
+              "depth": 3,
+              "interval_index": 4,
+              "minimum_bernstein_coefficient": "2310715761080404109375/9007199254740992"
+            },
+            {
+              "depth": 3,
+              "interval_index": 5,
+              "minimum_bernstein_coefficient": "1553143060973569713775/45458208738770944"
+            },
+            {
+              "depth": 2,
+              "interval_index": 3,
+              "minimum_bernstein_coefficient": "47536758242016659/8589934592"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 31,
+          "polynomial_sha256": "3a5055ade82a7f2fb7a89eccb0f04514ad6d1b1699c8dc6ad8f47f98b9dfb111",
+          "degree": 20,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "4084570813/4096"
+            },
+            {
+              "depth": 3,
+              "interval_index": 4,
+              "minimum_bernstein_coefficient": "290907619110422828125/1125899906842624"
+            },
+            {
+              "depth": 3,
+              "interval_index": 5,
+              "minimum_bernstein_coefficient": "2494860858696550859725/68187313108156416"
+            },
+            {
+              "depth": 2,
+              "interval_index": 3,
+              "minimum_bernstein_coefficient": "11891253527789321/2147483648"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "alphabet": 7,
+      "degree": 10,
+      "pressure_threshold": "245641539/1000000",
+      "maximum_bernstein_degree": 24,
+      "budgets": [
+        {
+          "prefix_budget": 0,
+          "polynomial_sha256": "c1f01cf59ac8d54053cfadd4182f8d0f4224827264239c853f7cf832f2c63c02",
+          "degree": 24,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "7000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 1,
+          "polynomial_sha256": "b7264c147ec3a6467c0105de22f01e479f1654bf166ef841d17c63a5ac1a6494",
+          "degree": 24,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "6000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 2,
+          "polynomial_sha256": "2272af63c2b33762b7c0ec6e8ed2cf33f8e0219f28822c1fb458dd5bf390b14e",
+          "degree": 24,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "5000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 3,
+          "polynomial_sha256": "b0ff4ae9c24948dfce782911a5962164714473b29a64fe5e92a96f314bb25228",
+          "degree": 24,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "4000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 4,
+          "polynomial_sha256": "74e9f9aa47f88b78113d35c0f9bf9f69c7e92c8fec20897dd460e685a61150a1",
+          "degree": 23,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "3000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 5,
+          "polynomial_sha256": "dbe51c5d1f9d65b22ebccad1461c4d8bf1a8d192ae0b030032e3e8976d285cba",
+          "degree": 23,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "2000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 6,
+          "polynomial_sha256": "743f7b4b31e3d2bd606ab7842871961ba2849bc18589a62a84cbedb72aa73714",
+          "degree": 23,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 7,
+          "polynomial_sha256": "aa0e16af277323848c00dfdde26c9e8946d729f3e008253d02c621c64fdacb46",
+          "degree": 23,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 8,
+          "polynomial_sha256": "43667c18931acdbcd74d4af33b13da827d054fce0c1316acd2574eaec81a390e",
+          "degree": 23,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 9,
+          "polynomial_sha256": "909b4407e0e743814a77a1771167ad4f2d033916413075c66204177648da20ab",
+          "degree": 23,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 10,
+          "polynomial_sha256": "5ee9aa863c402bc0d7f5db0ad6c3d8e540222051ada81092f54f09e2f8b03766",
+          "degree": 23,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 11,
+          "polynomial_sha256": "2ea40775ec5812d99f4b596066b3592f408295e2698218b88e05e5e490e959ca",
+          "degree": 23,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 12,
+          "polynomial_sha256": "a7931c0ded1b95b1b8008159532c4b7c82aa045a64cbc3957a466d212bed7c5b",
+          "degree": 23,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "68811301/77"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 13,
+          "polynomial_sha256": "9bf0c64c03d7c2852f373af4b255bcce152bb8a049a817c122354ea47c4ba6d6",
+          "degree": 23,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "52779989/253"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 14,
+          "polynomial_sha256": "63aab12c04f4b923974a2cb3eae9af8aae2c37aa88350a6f0b7654812eb59315",
+          "degree": 23,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "69692080127/32768"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 15,
+          "polynomial_sha256": "6950039d6729ce562b1626dc1842f987c89eb94687d6bf10c350707e74ffa1a9",
+          "degree": 23,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "261834836133/131072"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 16,
+          "polynomial_sha256": "b5ed245156d89876f697c94dbbe16837df86eb7c098457a50203263c3977a59c",
+          "degree": 23,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "302554340424815/167360512"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 17,
+          "polynomial_sha256": "6c7430b63ac989f48627db70cb99d81b77447c4b358b7f8a036258d142e7d9a9",
+          "degree": 23,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "907234532760959/585761792"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 18,
+          "polynomial_sha256": "d39f16273961817bfcaa740cf291b25f981f849e7003aedddfb87ccc75a07ca7",
+          "degree": 23,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "733119552635959/585761792"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 19,
+          "polynomial_sha256": "851c0f860a55a9aece81005a41dce411334612310158df274a787f18fcf5fe28",
+          "degree": 23,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "56273192040769/53251072"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 20,
+          "polynomial_sha256": "37d905aeacb7636a34f509f9fe1faf5ba3d633394695a6f6bc1bb0441d85cd8c",
+          "degree": 23,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "1288325644849/1498112"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 21,
+          "polynomial_sha256": "e98150b03d55bccb1c67bf49ddfc10510a49db18a6a8eefea219e42854566a28",
+          "degree": 23,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "387310196698459/585761792"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 22,
+          "polynomial_sha256": "f4d806728e1a98d402d0b89f3cb1214a3c0bae8ab75f3b210c990da89fc90873",
+          "degree": 23,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "312693398331357/692263936"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 23,
+          "polynomial_sha256": "853740356b8ed4e52c27aa212498b99eb06bc99b20f780a778701d32caedc23c",
+          "degree": 23,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "166875186831357/692263936"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 24,
+          "polynomial_sha256": "251c8824f4a5c9eff2b00c32d7e9cf725ca448a1769d99e191304e93449bc49f",
+          "degree": 23,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "18315673081357/692263936"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 25,
+          "polynomial_sha256": "0d6a44952613dce9cb3001a90d42f81d0a01f4637b3c22a7f5fc14f9f772ad5f",
+          "degree": 23,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 2,
+              "interval_index": 2,
+              "minimum_bernstein_coefficient": "264218214898912061605/578085418172416"
+            },
+            {
+              "depth": 2,
+              "interval_index": 3,
+              "minimum_bernstein_coefficient": "3417938650778364889/1099511627776"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 26,
+          "polynomial_sha256": "5c5a0557b75d66551649b78461cb61190778da238f8c4f7e9f2c93a92565514b",
+          "degree": 23,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 2,
+              "interval_index": 2,
+              "minimum_bernstein_coefficient": "104131774797467847525/289042709086208"
+            },
+            {
+              "depth": 2,
+              "interval_index": 3,
+              "minimum_bernstein_coefficient": "808336426765259191/274877906944"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 27,
+          "polynomial_sha256": "5af36769230c8de65d721490067cec6ca88ef8e935543e83af3d7d17b38473c2",
+          "degree": 23,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 2,
+              "interval_index": 2,
+              "minimum_bernstein_coefficient": "2232578103993569075/8693013807104"
+            },
+            {
+              "depth": 2,
+              "interval_index": 3,
+              "minimum_bernstein_coefficient": "3045844845516114889/1099511627776"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 28,
+          "polynomial_sha256": "c63cf43571f0792085f48abf9fab8bcd7e20012114228f1acb1666d3796d2887",
+          "degree": 22,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 2,
+              "interval_index": 2,
+              "minimum_bernstein_coefficient": "4059044092469594765/28275917193216"
+            },
+            {
+              "depth": 2,
+              "interval_index": 3,
+              "minimum_bernstein_coefficient": "89232377066987477/34359738368"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 29,
+          "polynomial_sha256": "342db85ea58eba70806c7a1ce52f08f7d696f99079834ba320ea5f3dd7d6b9c1",
+          "degree": 22,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 2,
+              "interval_index": 2,
+              "minimum_bernstein_coefficient": "8151400576422988435/113103668772864"
+            },
+            {
+              "depth": 2,
+              "interval_index": 3,
+              "minimum_bernstein_coefficient": "682317652597352941/274877906944"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 30,
+          "polynomial_sha256": "349677516a78f6bead01638e452a906d604fc6b4c831afb04f2f323373050541",
+          "degree": 22,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 3,
+              "interval_index": 4,
+              "minimum_bernstein_coefficient": "41765253294964742640625/72057594037927936"
+            },
+            {
+              "depth": 3,
+              "interval_index": 5,
+              "minimum_bernstein_coefficient": "590884079534981404516517/5687958368438714368"
+            },
+            {
+              "depth": 2,
+              "interval_index": 3,
+              "minimum_bernstein_coefficient": "2537847667243261/1073741824"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 31,
+          "polynomial_sha256": "b2e7b3d356a59c4210f509d811569548898d823178695f46b1bc6b440286ccdb",
+          "degree": 22,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 3,
+              "interval_index": 4,
+              "minimum_bernstein_coefficient": "649497747984506048265625/1152921504606846976"
+            },
+            {
+              "depth": 3,
+              "interval_index": 5,
+              "minimum_bernstein_coefficient": "6969395541317990089436147/91007333895019429888"
+            },
+            {
+              "depth": 2,
+              "interval_index": 3,
+              "minimum_bernstein_coefficient": "636972312002665441/274877906944"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 32,
+          "polynomial_sha256": "d16e48f17d8ef13bf577cfdc63547d6008af358eb7d7723ec053a32f99abc036",
+          "degree": 22,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 3,
+              "interval_index": 4,
+              "minimum_bernstein_coefficient": "19666826637794602765625/36028797018963968"
+            },
+            {
+              "depth": 3,
+              "interval_index": 5,
+              "minimum_bernstein_coefficient": "2392662185062366359941/50785342575345664"
+            },
+            {
+              "depth": 2,
+              "interval_index": 3,
+              "minimum_bernstein_coefficient": "38968688109157801/17179869184"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 33,
+          "polynomial_sha256": "939132fe0920672d5a4d4e9fc72c8c45a6fb1f3daa21c2293150a71d42db4442",
+          "degree": 22,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 3,
+              "interval_index": 4,
+              "minimum_bernstein_coefficient": "607766165994199602953125/1152921504606846976"
+            },
+            {
+              "depth": 3,
+              "interval_index": 5,
+              "minimum_bernstein_coefficient": "1408910555501013754998647/91007333895019429888"
+            },
+            {
+              "depth": 2,
+              "interval_index": 3,
+              "minimum_bernstein_coefficient": "609269096045852941/274877906944"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 34,
+          "polynomial_sha256": "454275cc0955e4151f5ab8c3daaad6c061b9215bd3324e5a0625852751642839",
+          "degree": 22,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 3,
+              "interval_index": 4,
+              "minimum_bernstein_coefficient": "73097611092352873953125/144115188075855872"
+            },
+            {
+              "depth": 4,
+              "interval_index": 10,
+              "minimum_bernstein_coefficient": "19715074140989165575466099793/604462909807314587353088"
+            },
+            {
+              "depth": 4,
+              "interval_index": 11,
+              "minimum_bernstein_coefficient": "275838783040300851866784847/9444732965739290427392"
+            },
+            {
+              "depth": 2,
+              "interval_index": 3,
+              "minimum_bernstein_coefficient": "74285321362581227/34359738368"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 35,
+          "polynomial_sha256": "3d2ddaf4b2c0709e69f967942a6334ce8ed2054ec2fc34657a2e672f83bf3814",
+          "degree": 22,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 3,
+              "interval_index": 4,
+              "minimum_bernstein_coefficient": "585987609783897454515625/1152921504606846976"
+            },
+            {
+              "depth": 4,
+              "interval_index": 10,
+              "minimum_bernstein_coefficient": "165701423434674639447722938969/4835703278458516698824704"
+            },
+            {
+              "depth": 4,
+              "interval_index": 11,
+              "minimum_bernstein_coefficient": "37333781073290616850325413541/1208925819614629174706176"
+            },
+            {
+              "depth": 2,
+              "interval_index": 3,
+              "minimum_bernstein_coefficient": "594845345698915441/274877906944"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "alphabet": 7,
+      "degree": 11,
+      "pressure_threshold": "245641539/1000000",
+      "maximum_bernstein_degree": 26,
+      "budgets": [
+        {
+          "prefix_budget": 0,
+          "polynomial_sha256": "f5d743e860d0a0caba7d8edec2eaf8ea0bd0e757c671ddfaa0982b250fae3c72",
+          "degree": 26,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "7000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 1,
+          "polynomial_sha256": "de0fa93ee04fe71537dbaebf11afe6ef95caf7977e8b6ba0cd521f50b5c5a2a2",
+          "degree": 26,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "6000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 2,
+          "polynomial_sha256": "d67fd954625bef4b327d46c1dac971a32fbd7f6fa706f0d54d89240a2e960a9e",
+          "degree": 26,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "5000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 3,
+          "polynomial_sha256": "caf1c69bc6976ce5f7f99d636f4909001f77805616f1589be31397844eef64da",
+          "degree": 26,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "4000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 4,
+          "polynomial_sha256": "109a5bdf3180d003768d529574d3d14e5870d197a146dfd3bb10ce58578a5abf",
+          "degree": 26,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "3000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 5,
+          "polynomial_sha256": "ae129efbe305271b05976499025019b76deb02b2784afc1bbe9cdc8ebdb9a3c2",
+          "degree": 25,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "2000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 6,
+          "polynomial_sha256": "c35ca0a87d25b0effa41d814720fee5b66dc191973638e91df414ee6c6d1b559",
+          "degree": 25,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 7,
+          "polynomial_sha256": "af2e74d1c93549c12a6c7cdfa1f30ca7fa5d082a0dba0b0404633a4a37c7c440",
+          "degree": 25,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 8,
+          "polynomial_sha256": "68fe7d19936a1e6d13b35a7bf1862ab82df7f682aa623cecf1107c9b01f4adc8",
+          "degree": 25,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 9,
+          "polynomial_sha256": "5503643567f39aa1c16be2dc90d3bd4774749066b3eafeb9ddce0eb67f398518",
+          "degree": 25,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 10,
+          "polynomial_sha256": "4fe018ffa031fe0e414fb044ff4f160e8139c4bbeee65058d425e782b2af987a",
+          "degree": 25,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 11,
+          "polynomial_sha256": "1312efc9525aa3a7752ca4df9c4357977ffe5a95dd8cf77e578d100a2e2d9db6",
+          "degree": 25,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 12,
+          "polynomial_sha256": "62cf920dc4fa8c5cd62e11892a109248570651f3965d78a7ab5aaec4141558d2",
+          "degree": 25,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 13,
+          "polynomial_sha256": "25acc968c4b74e8f123fd88a8b38bdd449bfacc4f966c5e88121b670aa3ae273",
+          "degree": 25,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 14,
+          "polynomial_sha256": "a1bcd2cfa300c0384078b13c756b052281c6b9c027b4d92de0753867a046cfdd",
+          "degree": 25,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "5108819461/12650"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 15,
+          "polynomial_sha256": "d3e695b9e4b092e1e0c32f0b5254b1e02cd7240c35563427d0dea0438fb4de0f",
+          "degree": 25,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "16869074469/8192"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 16,
+          "polynomial_sha256": "dc2b553c0670ee2dadfe1cd8451a409b1d59f5dcf06b37a5f4cc9fefb5e6ce02",
+          "degree": 25,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "506491586133/262144"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 17,
+          "polynomial_sha256": "9ba963bfd06e66a03b37ea16c0f591821e79ae68f3bdd96ff601100e755fad58",
+          "degree": 25,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "473156804883/262144"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 18,
+          "polynomial_sha256": "7012b2a6053b58a05feb09f03750b05a4fb39739135b798f53c921c68dc4a7b3",
+          "degree": 25,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "17058976643954467/10650214400"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 19,
+          "polynomial_sha256": "4a985920aaea04a4c9ce339432ec315eadd9f326c967cd4cfb50269499ab0c33",
+          "degree": 25,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "14906564968204467/10650214400"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 20,
+          "polynomial_sha256": "c0477ac065fcf9f332f4b1d82f4446f735db7db78edfa66e8d697a55dd21d82c",
+          "degree": 25,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "12736672718454467/10650214400"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 21,
+          "polynomial_sha256": "4a8046cf0bd7fa7cb12e422b07c613ab75d5cd99d526ff6eed7ea317ff9bbea4",
+          "degree": 25,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "10549299894704467/10650214400"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 22,
+          "polynomial_sha256": "8ab0d214b62ad77f926ed1ad080a857b7f26a2cf800645444eb0bea4f5d95885",
+          "degree": 25,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "8344446496954467/10650214400"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 23,
+          "polynomial_sha256": "9ef94cbc9ef212f9c097b65c53ce665c50002c3ad068f1dc5bcb1448884e0e8c",
+          "degree": 25,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "43513659942503/78310400"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 24,
+          "polynomial_sha256": "93a3a640bc3a6908de0a4c7fe3c759bc9f38121c754b9b9c1ecdb4d08126fa38",
+          "degree": 25,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "440883890647551/1331276800"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 25,
+          "polynomial_sha256": "c387ce2eec1c2d7cdd9ac9a92fec6a3519e8786b9682fa3cb843107ff03cc8e6",
+          "degree": 25,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "244356837647551/1331276800"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 26,
+          "polynomial_sha256": "2a5edb33ccc49feea2811c8b3815b79de8ae3d7a0c601cb119042bb1e18d9cb4",
+          "degree": 25,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "2352751238029/70067200"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 27,
+          "polynomial_sha256": "11024ee2b08361ab42ea7e5b2967139e892faf75b4b0a705c739b347793def5c",
+          "degree": 25,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 2,
+              "interval_index": 2,
+              "minimum_bernstein_coefficient": "935028675946547421397/1738602761420800"
+            },
+            {
+              "depth": 2,
+              "interval_index": 3,
+              "minimum_bernstein_coefficient": "860183709543584099/549755813888"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 28,
+          "polynomial_sha256": "3c69117d56c7326d4b14c7aec866bf8e92268eee1c8c9d3b391f6552f47070a0",
+          "degree": 25,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 2,
+              "interval_index": 2,
+              "minimum_bernstein_coefficient": "185586805424764945193/434650690355200"
+            },
+            {
+              "depth": 2,
+              "interval_index": 3,
+              "minimum_bernstein_coefficient": "6175389774656563417/4398046511104"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 29,
+          "polynomial_sha256": "92408bd882a10d608db85785daf9733ee6521dbbb98c7b2016f788db45c28bb1",
+          "degree": 25,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 2,
+              "interval_index": 2,
+              "minimum_bernstein_coefficient": "1093540197381746702169/3477205522841600"
+            },
+            {
+              "depth": 2,
+              "interval_index": 3,
+              "minimum_bernstein_coefficient": "10920500306552736209/8796093022208"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 30,
+          "polynomial_sha256": "af1f49cb04d4fe56f08cc9a5360e99a88a5021fb96917296ee60656e91a68224",
+          "degree": 25,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 2,
+              "interval_index": 2,
+              "minimum_bernstein_coefficient": "768457336600489702169/3477205522841600"
+            },
+            {
+              "depth": 2,
+              "interval_index": 3,
+              "minimum_bernstein_coefficient": "9744695028888673709/8796093022208"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 31,
+          "polynomial_sha256": "890d9e124d7764b9a29f35595d1126573c671ecce1378898790d9b7c54288901",
+          "degree": 25,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 2,
+              "interval_index": 2,
+              "minimum_bernstein_coefficient": "148988771854551624761/869301380710400"
+            },
+            {
+              "depth": 2,
+              "interval_index": 3,
+              "minimum_bernstein_coefficient": "4540993367041719667/4398046511104"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 32,
+          "polynomial_sha256": "a118e8b4ed0915a6339f1d7daec29f958600ba6a994e1f53af5baeb10f91aad6",
+          "degree": 25,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 2,
+              "interval_index": 2,
+              "minimum_bernstein_coefficient": "18950810479308595127/158054796492800"
+            },
+            {
+              "depth": 2,
+              "interval_index": 3,
+              "minimum_bernstein_coefficient": "2099661985294258271/2199023255552"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 33,
+          "polynomial_sha256": "373dc5cf0aeb1be5e19d9fde496eecb6d3f0ff4790bc425e7be0d073f80a7b18",
+          "degree": 25,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 2,
+              "interval_index": 2,
+              "minimum_bernstein_coefficient": "39516853451573302661/632219185971200"
+            },
+            {
+              "depth": 2,
+              "interval_index": 3,
+              "minimum_bernstein_coefficient": "7694678650169454959/8796093022208"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 34,
+          "polynomial_sha256": "a42cc5a413bfeefb4a63ac9641e596242b174206be7d4f858ff9a540a79cc4eb",
+          "degree": 25,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 2,
+              "interval_index": 2,
+              "minimum_bernstein_coefficient": "1025797036097302661/632219185971200"
+            },
+            {
+              "depth": 2,
+              "interval_index": 3,
+              "minimum_bernstein_coefficient": "6970078861060704959/8796093022208"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 35,
+          "polynomial_sha256": "25ba2b88256642d3f11f8458f02a6b30adaa75c8f2958a4062cb2e9cdb2e620c",
+          "degree": 24,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 3,
+              "interval_index": 4,
+              "minimum_bernstein_coefficient": "27459422174581440487859375/36893488147419103232"
+            },
+            {
+              "depth": 3,
+              "interval_index": 5,
+              "minimum_bernstein_coefficient": "39846674425363878195029/8118301278288740352"
+            },
+            {
+              "depth": 2,
+              "interval_index": 3,
+              "minimum_bernstein_coefficient": "1556212143462695771/2199023255552"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 36,
+          "polynomial_sha256": "78f1836c74256d5c4ec7a647783d0439f32f5dcc9c9acdfe4d4ec664fd65c93d",
+          "degree": 24,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 3,
+              "interval_index": 4,
+              "minimum_bernstein_coefficient": "13431671541481412602328125/18446744073709551616"
+            },
+            {
+              "depth": 4,
+              "interval_index": 10,
+              "minimum_bernstein_coefficient": "49847904054006073282760018767761/309485009821345068724781056"
+            },
+            {
+              "depth": 4,
+              "interval_index": 11,
+              "minimum_bernstein_coefficient": "216005713924190683548401081695/46045729539125655008968704"
+            },
+            {
+              "depth": 2,
+              "interval_index": 3,
+              "minimum_bernstein_coefficient": "733434527967933823/1099511627776"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 37,
+          "polynomial_sha256": "1ba0be509b5f5873478e60886dbc6951ef622acc0fdd27e8b1af4560b926120f",
+          "degree": 24,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 3,
+              "interval_index": 4,
+              "minimum_bernstein_coefficient": "6730919783804137087296875/9223372036854775808"
+            },
+            {
+              "depth": 4,
+              "interval_index": 10,
+              "minimum_bernstein_coefficient": "25406792260562096189441654891693/154742504910672534362390528"
+            },
+            {
+              "depth": 4,
+              "interval_index": 11,
+              "minimum_bernstein_coefficient": "131338568950597811929223485565/15348576513041885002989568"
+            },
+            {
+              "depth": 2,
+              "interval_index": 3,
+              "minimum_bernstein_coefficient": "23078109411010139/34359738368"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 38,
+          "polynomial_sha256": "825e3e466782cd74bad4d9d5e3265dc65182f33b345ec5e9f70875dd56dcaeaf",
+          "degree": 24,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 3,
+              "interval_index": 4,
+              "minimum_bernstein_coefficient": "26953847161343409921453125/36893488147419103232"
+            },
+            {
+              "depth": 4,
+              "interval_index": 10,
+              "minimum_bernstein_coefficient": "102592849509366503853889910582397/618970019642690137449562112"
+            },
+            {
+              "depth": 4,
+              "interval_index": 11,
+              "minimum_bernstein_coefficient": "483020703315594811907305144195/46045729539125655008968704"
+            },
+            {
+              "depth": 2,
+              "interval_index": 3,
+              "minimum_bernstein_coefficient": "1482063975489039521/2199023255552"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "alphabet": 8,
+      "degree": 2,
+      "pressure_threshold": "179183517/500000",
+      "maximum_bernstein_degree": 6,
+      "budgets": [
+        {
+          "prefix_budget": 0,
+          "polynomial_sha256": "cc03806f098a2ab423fca78aee53a5f40bff741adc9514e717a1ab5da553e779",
+          "degree": 6,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "4000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 1,
+          "polynomial_sha256": "12b5e5d12df81055488695b13dc5d9e53d6d7e2ed8e3d09feaef857ae705a471",
+          "degree": 6,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "3500000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 2,
+          "polynomial_sha256": "a9abbc3ae9ee72917127ca1c1b910739256806fb5dad15c7d39fcc22986f7962",
+          "degree": 6,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "3000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 3,
+          "polynomial_sha256": "d52b59c1376f39404b6f75ca023a26afd372c691b4f4cbf60f6d463442b7a97e",
+          "degree": 6,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "2500000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 4,
+          "polynomial_sha256": "9c10e59299a7fbae1c6b200054e034facfe475eb842d39ea7036e6f998da0241",
+          "degree": 6,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "20816483/15"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 5,
+          "polynomial_sha256": "f634ac41327add271bb9ed4f28df52423ad996f7dd1f81324f4606d023b77f8d",
+          "degree": 6,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "25566483/20"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "432535233/4"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 6,
+          "polynomial_sha256": "e97c641dbeff620661802d61bee977834fd3b6f56faca035fa70791f70c77643",
+          "degree": 6,
+          "leaves": [
+            {
+              "depth": 2,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "75191483/80"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "206586091/32"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "424316483/4"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 7,
+          "polynomial_sha256": "90703b63f6e9868c9ec1acc7f2d048cbbf0d52106af27efb6391d1d1e6f33642",
+          "degree": 6,
+          "leaves": [
+            {
+              "depth": 3,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "539829353/1536"
+            },
+            {
+              "depth": 3,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "3270994199/8192"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "635516239/128"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "415910233/4"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 8,
+          "polynomial_sha256": "e781f08d2611331ec03aa2807932648d174fabde3bb3fbe535de6d600435681e",
+          "degree": 6,
+          "leaves": [
+            {
+              "depth": 3,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "22716197/64"
+            },
+            {
+              "depth": 3,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "25847733/64"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "79597733/16"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "415941483/4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "alphabet": 8,
+      "degree": 3,
+      "pressure_threshold": "179183517/500000",
+      "maximum_bernstein_degree": 8,
+      "budgets": [
+        {
+          "prefix_budget": 0,
+          "polynomial_sha256": "e83b28ce011eff1bd93e368af3172425c80366bedc0c200074a20358ec8b0ec3",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "4000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 1,
+          "polynomial_sha256": "7635c31c1df83589f592d1683f0f15df3ec39deac7411f2baceafdf45d49c3f4",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "3500000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 2,
+          "polynomial_sha256": "41c7848a4709389d41592e2b9d174bcf8ec217e8ad83d2cfe0b34e875e3cfd41",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "3000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 3,
+          "polynomial_sha256": "97b30f2ddc05c48da3f9db64b3737bc522bc63df1d8a71062610c0d07cd80373",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "2500000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 4,
+          "polynomial_sha256": "bc5062ac854eafe6838e7b11f340a165e8af17add8d72db2ce13f9e0664389d9",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "2000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 5,
+          "polynomial_sha256": "05d3d73e23fc31fc761e8e88113f83a6a0afaa6861d9d8c6fd43bfdbc9dd0377",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "7216483/14"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 6,
+          "polynomial_sha256": "2b9252b8dd19549e3c805773eed22597195ad312d6c0d76bb602ff24a96800b4",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "194457415/224"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "206878983/8"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 7,
+          "polynomial_sha256": "b4b4378dfdff828487f62ec2453214bf96e85dee54bc74b770b9239da21ee5a0",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "5394915/224"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "48489277/2"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 8,
+          "polynomial_sha256": "36421790ab08870ed27e60dd067443fa94fbe90627c165713f3741fcf016a698",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 2,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "500000"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "41816483/64"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "189816483/8"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 9,
+          "polynomial_sha256": "7a10400661a5c7f7b4f7d91b0440a4eef9a199e0ce15a4d479c3e0bb112bd160",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 2,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1939424945/4096"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "1066299331/2048"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "46395527/2"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 10,
+          "polynomial_sha256": "0b93bda634ab5f81582c55ccc5de5d5ff74a4d9704864d9e9af005a5a91c7111",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 2,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "23387255/64"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "195453739/512"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "181253983/8"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 11,
+          "polynomial_sha256": "6b53282fff36daa897603401f53e3829ddfc82687246ffcd38b5d5a4fe28d69a",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 2,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "830657785/2048"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "876736831/2048"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "90837929/4"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 12,
+          "polynomial_sha256": "a77bc9ccc658aa91165f939e504f03278ee6381709e2f4639103115fba1c81a1",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 2,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "214519915/512"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "56773591/128"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "181816483/8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "alphabet": 8,
+      "degree": 4,
+      "pressure_threshold": "179183517/500000",
+      "maximum_bernstein_degree": 10,
+      "budgets": [
+        {
+          "prefix_budget": 0,
+          "polynomial_sha256": "62376aaa86db946f42b187f1673e61898ebb92612b12d216550c87937c6fc21c",
+          "degree": 10,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "4000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 1,
+          "polynomial_sha256": "44ed1da67e72d9b932df32a58e0d6265df5e7b6be0b044e6319b23cd32482422",
+          "degree": 10,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "3500000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 2,
+          "polynomial_sha256": "19d253891e469f849ed1602ed943ea17d77ccba13ea8e78bc2e0dec7c99924b7",
+          "degree": 10,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "3000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 3,
+          "polynomial_sha256": "be52766ae7a7a81fec0a5a4bfaae79ab7360f9772d8d42fcf7997e61d5658635",
+          "degree": 10,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "2500000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 4,
+          "polynomial_sha256": "51c381fc3937791292009f58247a77987eea56344f594704a82d2f819a6dfdc8",
+          "degree": 10,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "2000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 5,
+          "polynomial_sha256": "18b832360dbcd840f9c542ed9dbb9a020b090aa7bc54a5f86775c4085878bd2f",
+          "degree": 10,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1500000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 6,
+          "polynomial_sha256": "85667ae733ce84890cfc46655fe7c1c1d6dee157c7697841fa060a9e4e898c69",
+          "degree": 10,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "3216483/14"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 7,
+          "polynomial_sha256": "5998dd20132a2fc87773cfe7491e831e99f52147954f86086c1dc4a89041bfbd",
+          "degree": 10,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "500000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "208304841/32"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 8,
+          "polynomial_sha256": "fe1d3b0cff5f17d4f242a32f3da62a530aff35c478b957710cab4bd38edd8456",
+          "degree": 10,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "500000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "97316483/16"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 9,
+          "polynomial_sha256": "0fe9f29eca6ee8c94d7514d7b67c642377265df43e88ec0feb308908d88a07bd",
+          "degree": 10,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "64986949/144"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "180742341/32"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 10,
+          "polynomial_sha256": "35fccb3bb8537a3dd468e71691db4bc63a0f93cc3a541c655e5619d190829744",
+          "degree": 10,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "31686949/144"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "83316483/16"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 11,
+          "polynomial_sha256": "8ae8f6f6eba96275685833d2e1d354273bf91f5b753b005fc5cd2af6617ffaf5",
+          "degree": 10,
+          "leaves": [
+            {
+              "depth": 2,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "500000"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "29203723531/64512"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "152304841/32"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 12,
+          "polynomial_sha256": "1489bc8ad3b367685fe71786e1044e9d2cec979500ed0d9c70b00d3c4066d6ed",
+          "degree": 10,
+          "leaves": [
+            {
+              "depth": 2,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "500000"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "3466972151/10752"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "71941483/16"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 13,
+          "polynomial_sha256": "e52138e8079245fd85b3eb9a696aa5e826647ab23f2c7020855988d95bcc3945",
+          "degree": 10,
+          "leaves": [
+            {
+              "depth": 2,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "500000"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "11298848531/64512"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "134804841/32"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 14,
+          "polynomial_sha256": "21f1499fed4eca57299d9bf249e6dd61748ed020a2065c0d223b3b3f664107b2",
+          "degree": 10,
+          "leaves": [
+            {
+              "depth": 2,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "3643486831/8192"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "347385203/32256"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "62535233/16"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 15,
+          "polynomial_sha256": "143f2ee942623e3a87c8c06ba2610e7facc7fb2915cadb0072c397dfe8f85ffc",
+          "degree": 10,
+          "leaves": [
+            {
+              "depth": 2,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "14668869199/32768"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "1250004781/64512"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "125492341/32"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 16,
+          "polynomial_sha256": "9de248945365cd8dcfc0024276482cedc91682d45603e0fd5a442ee0f507b019",
+          "degree": 10,
+          "leaves": [
+            {
+              "depth": 2,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "114847733/256"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "717541453/32256"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "62816483/16"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "alphabet": 8,
+      "degree": 5,
+      "pressure_threshold": "179183517/500000",
+      "maximum_bernstein_degree": 12,
+      "budgets": [
+        {
+          "prefix_budget": 0,
+          "polynomial_sha256": "287d1967cfcebc777d50330886acfd36a3fd09bf20611ffa9d2e1c2ca3b0a9ba",
+          "degree": 12,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "4000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 1,
+          "polynomial_sha256": "f254c43b8f61c04b49dff01453a85f94c44aa160c889205a29e819cf9284e07f",
+          "degree": 12,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "3500000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 2,
+          "polynomial_sha256": "7485ec7e17710b3714102e461f77d225c27ae5adcb9ba480a7c4d0fea18cddcf",
+          "degree": 12,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "3000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 3,
+          "polynomial_sha256": "23f4e558d579fd3c82d44da3bde9eec7d44928ad926555397928de471e4fb635",
+          "degree": 12,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "2500000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 4,
+          "polynomial_sha256": "ad08164eb78a0a54f737ead2124b02708c8110b46239c927e702e3d81aff8216",
+          "degree": 12,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "2000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 5,
+          "polynomial_sha256": "64c56659c9f6d75f94ef8ff72ed496f0bba21726210ead8a06fe63be537bb76e",
+          "degree": 12,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1500000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 6,
+          "polynomial_sha256": "d4e1282319ce70fb4818fafe884a8158bc6202134692e0d5a9dddf90a9e2ab44",
+          "degree": 12,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 7,
+          "polynomial_sha256": "64718cdaf1f4b3ddd52fb481995a00328e9a131a5c93934906a026b440e129e9",
+          "degree": 12,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "309557/3"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 8,
+          "polynomial_sha256": "744578b0ceb014b26c9bbefe9389c634daba120137e20c9e7e11906b0b7b6cbc",
+          "degree": 12,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "500000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "79316483/32"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 9,
+          "polynomial_sha256": "83ac6bd9005f8d1934b21b624a1c9a3275a1129b44c7c0ed563260d98a2449e6",
+          "degree": 12,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "500000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "278469057/128"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 10,
+          "polynomial_sha256": "75aa87268f005474617755db52d92b3fe3bf6a0ea99fa7a301da05b9d354f76a",
+          "degree": 12,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "500000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "29900429/16"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 11,
+          "polynomial_sha256": "48fde5c3a616a1aa2e4117e02e080f4bd394d9b9456adec367ba1d3edd89784c",
+          "degree": 12,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "500000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "199469057/128"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 12,
+          "polynomial_sha256": "f785955478673056350cfd1a87c09b483d08415fc1fdd1c91409a90b5ad7f2a0",
+          "degree": 12,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "52655127/128"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "39816483/32"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 13,
+          "polynomial_sha256": "445fe77ba650a716386d95ba063a5772bf143cbfcfe1ffb8273302f3089512d9",
+          "degree": 12,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "41615503/192"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "127250307/128"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 14,
+          "polynomial_sha256": "580325a497b1cd53aef8f9ab474fd041704dbfead8dfac084a419ecb503ae139",
+          "degree": 12,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "4652881/384"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "5864277/8"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 15,
+          "polynomial_sha256": "b6996808d016b09f90f5fa9dc9bf98a15b21cacc0e10788f9776813448b00898",
+          "degree": 12,
+          "leaves": [
+            {
+              "depth": 2,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "500000"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "1079721933/5632"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "84125307/128"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 16,
+          "polynomial_sha256": "5966b0be1bfb36d76b155a7a644deb237411c801d8be796079917f04fe0ee7ae",
+          "degree": 12,
+          "leaves": [
+            {
+              "depth": 2,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "500000"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "278757053/2112"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "18441483/32"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 17,
+          "polynomial_sha256": "7e090fd72ca72338158afe93d701bf5d87131627754ae429c1fb02b1e04da2db",
+          "degree": 12,
+          "leaves": [
+            {
+              "depth": 2,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "500000"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "1148978299/16896"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "62750307/128"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 18,
+          "polynomial_sha256": "e3e4be313b959b70aafac0c8e090a906fb9462aec43c535ff36eff1f664128a2",
+          "degree": 12,
+          "leaves": [
+            {
+              "depth": 2,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "500000"
+            },
+            {
+              "depth": 3,
+              "interval_index": 2,
+              "minimum_bernstein_coefficient": "158013912612571/536870912"
+            },
+            {
+              "depth": 3,
+              "interval_index": 3,
+              "minimum_bernstein_coefficient": "1566864348781/25952256"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "1596201/4"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 19,
+          "polynomial_sha256": "4c3a2b6cdb4e609fbbd563c78a95a5a7542954ed99a008141d048379f97dbfcb",
+          "degree": 12,
+          "leaves": [
+            {
+              "depth": 2,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "500000"
+            },
+            {
+              "depth": 3,
+              "interval_index": 2,
+              "minimum_bernstein_coefficient": "539596298497159/2147483648"
+            },
+            {
+              "depth": 4,
+              "interval_index": 6,
+              "minimum_bernstein_coefficient": "262607755511169223/8796093022208"
+            },
+            {
+              "depth": 4,
+              "interval_index": 7,
+              "minimum_bernstein_coefficient": "978816461616739/94489280512"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "38750307/128"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 20,
+          "polynomial_sha256": "8348d8a21175985bd790796abe253db9e1b26fa8b4f96351ccbcbee2543c35e3",
+          "degree": 12,
+          "leaves": [
+            {
+              "depth": 2,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "500000"
+            },
+            {
+              "depth": 3,
+              "interval_index": 2,
+              "minimum_bernstein_coefficient": "34189935282049/134217728"
+            },
+            {
+              "depth": 4,
+              "interval_index": 6,
+              "minimum_bernstein_coefficient": "19088049793011553/549755813888"
+            },
+            {
+              "depth": 4,
+              "interval_index": 7,
+              "minimum_bernstein_coefficient": "91818220149679/5905580032"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "9878983/32"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "alphabet": 9,
+      "degree": 2,
+      "pressure_threshold": "500045417/1000000",
+      "maximum_bernstein_degree": 6,
+      "budgets": [
+        {
+          "prefix_budget": 0,
+          "polynomial_sha256": "1d4f76cde4752025c01225db327c2d5c1b75c1e9e8ad03641011b514ff4863c5",
+          "degree": 6,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "9000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 1,
+          "polynomial_sha256": "29eb8dd9c1740d56badb0f31a3e6e2640087bd652c01598986c22b320f84b5b3",
+          "degree": 6,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "8000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 2,
+          "polynomial_sha256": "e8c403bdb6c306df1fa030689d6f1bda4f53880cb8ea3e95d2ff1b0651471d2f",
+          "degree": 6,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "7000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 3,
+          "polynomial_sha256": "eea6a1fb16b9cb8571b99ae990068472408d151483218795b96dd36d5dab544f",
+          "degree": 6,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "6000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 4,
+          "polynomial_sha256": "cedf181ffb452a8952911a4635f39fbf16311f1a2e8bf213e9023185e4134498",
+          "degree": 6,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "5000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 5,
+          "polynomial_sha256": "64da47d17fffd8efdefa90e64adb1d4c2acbc5a51ecf84cd53af01cf6190745c",
+          "degree": 6,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "6954583/15"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 6,
+          "polynomial_sha256": "c84b51724e5320d38cc39f515d8bf6604525bf03a6958ffdafb45b005401aca6",
+          "degree": 6,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "30204583/20"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "1412454583/4"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 7,
+          "polynomial_sha256": "f2c310953a6d7a3e1b8825e56458f1f291fec534a8be0472b098ad0eff7aac3b",
+          "degree": 6,
+          "leaves": [
+            {
+              "depth": 2,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "112329583/80"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "1271458957/64"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "1391642083/4"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 8,
+          "polynomial_sha256": "5ce2155446e43c1d1951225ca41711fe1c24125ecbee67278baedfe4a9bac7ed",
+          "degree": 6,
+          "leaves": [
+            {
+              "depth": 3,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "84050763/256"
+            },
+            {
+              "depth": 3,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "139427707/256"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "259329583/16"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "1370454583/4"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 9,
+          "polynomial_sha256": "51b77e5fda3c7d75f224d9c7586c47dd368ad080e55944759dffcdb6b508a8dd",
+          "degree": 6,
+          "leaves": [
+            {
+              "depth": 3,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "16094479/48"
+            },
+            {
+              "depth": 3,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "2268358937/4096"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "1038583957/64"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "1370517083/4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "alphabet": 9,
+      "degree": 3,
+      "pressure_threshold": "500045417/1000000",
+      "maximum_bernstein_degree": 8,
+      "budgets": [
+        {
+          "prefix_budget": 0,
+          "polynomial_sha256": "f81164a129109c81da616ae088446658ba22dc710f23dbca0eb2543af4b60db8",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "9000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 1,
+          "polynomial_sha256": "8a44ce1ad5514206426e4933e2392546eee99ecbcfb01987d20e1343e245b59e",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "8000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 2,
+          "polynomial_sha256": "4312950911f76ca1e040e7e7b6e6bf41805d4b0ff15fc554a75419c6989016b8",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "7000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 3,
+          "polynomial_sha256": "ec74debf4758f2cd937e2b0ed54f08a3f62a3038208411b757f2709ea23dc59d",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "6000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 4,
+          "polynomial_sha256": "a87b21bf97dfed35d0f04d2251fb17b21262eb3174c355a36e05c2fec200684f",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "5000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 5,
+          "polynomial_sha256": "d3d7424dc056e7b48848b8ddb6e7162e269ed542caa790126c3e2f7c3f916e0b",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "48354583/14"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 6,
+          "polynomial_sha256": "b6beef10964cfb8e4839b9f9d927089bc57541c967c6cbfba85eac8f57664758",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "670397915/224"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "704454583/8"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 7,
+          "polynomial_sha256": "9037ca30be25b3f5b33fc86b8ee8c6defd3cc09ab57f26605d749ceeb3548eef",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "236897915/224"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "672579583/8"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 8,
+          "polynomial_sha256": "b7c47ae9bfc0f3c4404048ba6a656101477566c29e5011b75426afa6c8e9a93f",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 2,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "388052707/256"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "640267083/8"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 9,
+          "polynomial_sha256": "76e70016577e11c1ff0bc71c217e6d45878dc8f7cf45a53af51c005e83ccaf14",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 2,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "461335415/512"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "628027289/512"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "629892083/8"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 10,
+          "polynomial_sha256": "b965d0fc724cea979ecc55d7ce2004a67d4dc3a2f804bbef329225106988af33",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 2,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1379169785/2048"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "473621039/512"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "619329583/8"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 11,
+          "polynomial_sha256": "fa2eb2497a09e451da5f4387a8a7d499b0af7869337313077f2dc5b492d47a86",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 2,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "223397915/512"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "39110833/64"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "608579583/8"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 12,
+          "polynomial_sha256": "aa04a8fbfaa6dc350f719565bb6519ea8c3fbcd5b2d570439af21345ff746d19",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 2,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "278241665/512"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "188083957/256"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "609704583/8"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 13,
+          "polynomial_sha256": "286000e0df81ea58da970800ee0d961cd217565a9d2176f3e873bbd15245c7e5",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 2,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "76415885/128"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "407808539/512"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "610267083/8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "alphabet": 10,
+      "degree": 2,
+      "pressure_threshold": "336822719/500000",
+      "maximum_bernstein_degree": 6,
+      "budgets": [
+        {
+          "prefix_budget": 0,
+          "polynomial_sha256": "0032d6e889738168bc80958e1727633ca59401b3897636bb83c5c3da780c443f",
+          "degree": 6,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "5000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 1,
+          "polynomial_sha256": "961be3fd027224303727cc7a76e1856a2e68594b2b72e06ef8ebd7c4f27dbd70",
+          "degree": 6,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "4500000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 2,
+          "polynomial_sha256": "f61184065084c60a9174923d58f69108a610218b4b9f68624c63a543cad54d0b",
+          "degree": 6,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "4000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 3,
+          "polynomial_sha256": "dfa3721978849ec80c1f37cb7bd9885528217291427977797272a0913846b360",
+          "degree": 6,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "3500000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 4,
+          "polynomial_sha256": "6daa01d0d1342bbc8a5f04798833f1ac2950017229bd712195aaafa06b3be992",
+          "degree": 6,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "3000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 5,
+          "polynomial_sha256": "f890dea9fba3cb1897f6599b8e3e060848a3e4eaccb5c604db76734463f6fadf",
+          "degree": 6,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "23177281/15"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 6,
+          "polynomial_sha256": "d0c24319797336d0f00f32c2911eea9b3260df89dcd1debacc851d307b03ff95",
+          "degree": 6,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "2000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "1106177281/4"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 7,
+          "polynomial_sha256": "d997e211e1216e7d466ff582e4cd5f025503151f363ab0dbd6b1e1167f3a8baa",
+          "degree": 6,
+          "leaves": [
+            {
+              "depth": 2,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "111802281/80"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "2178465123/128"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "1093521031/4"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 8,
+          "polynomial_sha256": "a54b7e8b2fd6b5dd22866678a25c5969992d904d7d1ab9d8528d8c4b0ff6b4b0",
+          "degree": 6,
+          "leaves": [
+            {
+              "depth": 2,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "27927281/80"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "238646031/16"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "1080677281/4"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 9,
+          "polynomial_sha256": "f4a53486ec4a84f1f5ba48add85bb4910898fa00bba5ab4c69bbe26cfd1a67fc",
+          "degree": 6,
+          "leaves": [
+            {
+              "depth": 4,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "176622618363/524288"
+            },
+            {
+              "depth": 4,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "5267573813/491520"
+            },
+            {
+              "depth": 3,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "1054238843/8192"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "1627215123/128"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "1067646031/4"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 10,
+          "polynomial_sha256": "5c6e19a5bbd089233cae5ba2f3ddb88f6a4a0549ad0af93dbaccef44d555f6f6",
+          "degree": 6,
+          "leaves": [
+            {
+              "depth": 4,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "44353408497/131072"
+            },
+            {
+              "depth": 4,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "581817349/40960"
+            },
+            {
+              "depth": 3,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "272938617/2048"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "407120187/32"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "1067677281/4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "alphabet": 10,
+      "degree": 3,
+      "pressure_threshold": "336822719/500000",
+      "maximum_bernstein_degree": 8,
+      "budgets": [
+        {
+          "prefix_budget": 0,
+          "polynomial_sha256": "3ee3277b9b4395074c91915cc2d8ac2da93125f804b107dffb3314662320bd5a",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "5000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 1,
+          "polynomial_sha256": "108572d405a27c020e326ab231445c6affe8e509da7f7041dfaa864b903ca1c9",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "4500000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 2,
+          "polynomial_sha256": "25ec4d9073db3885a0d5871a5004eb1b4005bf95e88a312b2bc2fc3ff47e515c",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "4000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 3,
+          "polynomial_sha256": "433c9b82c35225aa2eb1e61c5903be08e71a5613b4c128d70811fc7ed540d4c5",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "3500000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 4,
+          "polynomial_sha256": "33e5fc2cc01c53bc52abab990d8685e7be82bc2eb6a1a07ee913fda2fd5b19cb",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "3000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 5,
+          "polynomial_sha256": "96a4d473ddfe8ca397a26873f78ba4048ecc90fd803c0ed5705630163ffb8ff7",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "2500000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 6,
+          "polynomial_sha256": "0843a91f71a239315f94be7c0b46a8e6c024e9f6f90bc23b672f589d39678ba5",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1568183/2"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 7,
+          "polynomial_sha256": "5ec41bbbce164a2007f5a4a2c8400a77bebeecd4367b2b90b00c1ac296d9d3b5",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "264198905/224"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "134993539/2"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 8,
+          "polynomial_sha256": "4b84645f982fcf80fea352954ac096d9bff842a67d88b09cbcf4e2f2616ce576",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "8136405/224"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "520427281/8"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 9,
+          "polynomial_sha256": "dfd1cac75a80de671136a3e405be5c09c90c3a7e71df1615d0c1adebb6734ec1",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 2,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1615856865/4096"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "1517188617/2048"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "62582707"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 10,
+          "polynomial_sha256": "0e08c51494018c11f603467a32ce594a7cb716c7a299096c850fd09203061c47",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 2,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "280225935/1024"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "147443499/256"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "494302281/8"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 11,
+          "polynomial_sha256": "1e2c4e0a819b941479bd95bd46a09b6df6cb12f5c4c10b6614c5eaa13353696d",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 2,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "606544365/4096"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "829251117/2048"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "121962289/2"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 12,
+          "polynomial_sha256": "fc0e1bbb8e8dbf400da4521fad99129823506ec8ff7693cbb994555d01cc8ea3",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 2,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "18194685/1024"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "58287249/256"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "481302281/8"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 13,
+          "polynomial_sha256": "f965d6a8923350ff237813371fb3d157854e29b5c8b837d5f5bae93875701707",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 2,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "173498745/2048"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "624501117/2048"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "241002703/4"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 14,
+          "polynomial_sha256": "db79bfae8a8edf94ea4112522ac50e8974f5935c9d34be92ffa61cea492b24bb",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 2,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "127882185/1024"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "44963937/128"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "482427281/8"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 15,
+          "polynomial_sha256": "29b9894b4579cf59678773dcb74d19eddb4b8349da062d14941168ea82cca639",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 2,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "283186245/2048"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "751063617/2048"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "241283953/4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "alphabet": 11,
+      "degree": 3,
+      "pressure_threshold": "882079527/1000000",
+      "maximum_bernstein_degree": 8,
+      "budgets": [
+        {
+          "prefix_budget": 0,
+          "polynomial_sha256": "4495ce98286c3894d0d1b0aaf3fa7aeb5d0a34864f4dabb0fe73d0dd7e9b4e52",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "11000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 1,
+          "polynomial_sha256": "4a3c64dead93d014296d31e1f7f465c82898b27233f07f79c45f82bf582d3285",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "10000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 2,
+          "polynomial_sha256": "39dd3014445efed1403aa8b2c5e4ae84bec9825d640c349696fed839a5916ee9",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "9000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 3,
+          "polynomial_sha256": "1752cc852a9d7556efb2caa35931e4b8149b1cfd1c25e2895e08850489b4570f",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "8000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 4,
+          "polynomial_sha256": "2b3224e2c1e94eee53e5b4d6bd610bef2ed0fed654b43562b1ee6d7c4f118cf0",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "7000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 5,
+          "polynomial_sha256": "3886a6a69442b168add0cab074aa6232afa33cfcba38721dd2a1336366f3285a",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "6000000"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 6,
+          "polynomial_sha256": "c7944e4b14040a4c2cdbd6266069654a3cca4a494cd25b4989de3a8289d730d6",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 0,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "269920473/56"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 7,
+          "polynomial_sha256": "e29fa76408c80ca9f696d42caa9c403af2eb0ed5810a95aab94855c7453ef569",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "4000000"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "1639732973/8"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 8,
+          "polynomial_sha256": "a0b13bd3c71b50a057f293dfa934b8f02a7d919ec91aee9724c663f97fa544d8",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 1,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "317727365/224"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "1593107973/8"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 9,
+          "polynomial_sha256": "e6a78b858639a40c1abf969a60fb54f95fcd0b472a501c888af18ab701b92f08",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 2,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "2000000"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "14275303/4"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "1546045473/8"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 10,
+          "polynomial_sha256": "fff6422c6f731764c72f98384ad294bb2ec83e9744a543e4fdfb01847eaf5ca2",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 2,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "733018835/2048"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "763129409/512"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "1498545473/8"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 11,
+          "polynomial_sha256": "d76c4c9e0df1719336c4ea62a212d80ae58dcc9b4f32e5780fdbbd9df49c64bf",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 2,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "92314105/1024"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "571316909/512"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "1483232973/8"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 12,
+          "polynomial_sha256": "906c464ea68f53c547a3b48baa57b7de75aba49022ed58a706ae71ee7d299f0d",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 3,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 3,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "4662356241/28672"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "93294071/128"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "1467732973/8"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 13,
+          "polynomial_sha256": "fa88564af2948e10f5b0ad308f439e1762804551ddbe7db6229f33e3415ed609",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 3,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 4,
+              "interval_index": 2,
+              "minimum_bernstein_coefficient": "4676919590641/16777216"
+            },
+            {
+              "depth": 5,
+              "interval_index": 6,
+              "minimum_bernstein_coefficient": "43212510575833/4294967296"
+            },
+            {
+              "depth": 5,
+              "interval_index": 7,
+              "minimum_bernstein_coefficient": "5579076223681/2147483648"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "84353767/256"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "1452045473/8"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 14,
+          "polynomial_sha256": "f9404a01d34ced9741c3c7182b887df1bac649470311de8fd60fdb3a1c6214f6",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 3,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 3,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "202538279/7168"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "263629409/512"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "1453732973/8"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 15,
+          "polynomial_sha256": "09fbd25d6610fae0d5d36182be4dc4710b200c83043347f5e9595fc4e32acad2",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 3,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 3,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "241216601/1792"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "326910659/512"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "1454857973/8"
+            }
+          ]
+        },
+        {
+          "prefix_budget": 16,
+          "polynomial_sha256": "20037c4f930e2dff39822cd3f4f3da2878da755da5229cd990edaf70b2f0cc74",
+          "degree": 8,
+          "leaves": [
+            {
+              "depth": 3,
+              "interval_index": 0,
+              "minimum_bernstein_coefficient": "1000000"
+            },
+            {
+              "depth": 3,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "2692060933/14336"
+            },
+            {
+              "depth": 2,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "89637821/128"
+            },
+            {
+              "depth": 1,
+              "interval_index": 1,
+              "minimum_bernstein_coefficient": "1455420473/8"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "floating_arithmetic_used": false,
+  "factoring_exponent_improved": false
+}

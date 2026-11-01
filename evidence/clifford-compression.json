@@ -1,0 +1,5671 @@
+{
+  "status": "pass",
+  "scope": "Constant elementary-tensor physical retractions in characteristic two, without additional gauges; finite controls over F2.",
+  "first_layer_theorem": "q>2^(t-1) implies column multiplicities m0=1,m1=2t",
+  "second_layer_theorem": "q>3*2^(t-2) implies m0=1,m1=2t,m2=binom(2t,2)",
+  "higher_layer_theorem": "2(2^t-q)<2^(t-d) implies mj=binom(2t,j) for j<=d",
+  "row_layer_theorem": "The same generic threshold forces both row-reversal and column orders through d.",
+  "near_full_asymptotic_floor": "codimension n^(beta+o(1)) gives liminf rho>=h2(min((1-beta)/2,1/4))",
+  "certified_rho_floor": "rho>577/816>1/sqrt(2)",
+  "pressure_cases": 57,
+  "operator_controls": {
+    "nonzero_first_layer_operators": 676,
+    "iterated_commutator_rank_controls": 3598,
+    "quadratic_rank_dichotomies_checked": 3214
+  },
+  "restriction_controls": {
+    "first_layer_retractions": 45,
+    "first_layer_records": [
+      {
+        "sites": 1,
+        "physical_dimension": 2,
+        "instance": 0,
+        "column_initial_counts": [
+          1,
+          2
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          4
+        ]
+      },
+      {
+        "sites": 1,
+        "physical_dimension": 2,
+        "instance": 1,
+        "column_initial_counts": [
+          1,
+          2
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          4
+        ]
+      },
+      {
+        "sites": 1,
+        "physical_dimension": 2,
+        "instance": 2,
+        "column_initial_counts": [
+          1,
+          2
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          4
+        ]
+      },
+      {
+        "sites": 2,
+        "physical_dimension": 3,
+        "instance": 0,
+        "column_initial_counts": [
+          1,
+          4
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          6
+        ]
+      },
+      {
+        "sites": 2,
+        "physical_dimension": 3,
+        "instance": 1,
+        "column_initial_counts": [
+          1,
+          4
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          6
+        ]
+      },
+      {
+        "sites": 2,
+        "physical_dimension": 3,
+        "instance": 2,
+        "column_initial_counts": [
+          1,
+          4
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          6
+        ]
+      },
+      {
+        "sites": 2,
+        "physical_dimension": 4,
+        "instance": 0,
+        "column_initial_counts": [
+          1,
+          4
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          6
+        ]
+      },
+      {
+        "sites": 2,
+        "physical_dimension": 4,
+        "instance": 1,
+        "column_initial_counts": [
+          1,
+          4
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          6
+        ]
+      },
+      {
+        "sites": 2,
+        "physical_dimension": 4,
+        "instance": 2,
+        "column_initial_counts": [
+          1,
+          4
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          6
+        ]
+      },
+      {
+        "sites": 3,
+        "physical_dimension": 5,
+        "instance": 0,
+        "column_initial_counts": [
+          1,
+          6
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          8
+        ]
+      },
+      {
+        "sites": 3,
+        "physical_dimension": 5,
+        "instance": 1,
+        "column_initial_counts": [
+          1,
+          6
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          8
+        ]
+      },
+      {
+        "sites": 3,
+        "physical_dimension": 5,
+        "instance": 2,
+        "column_initial_counts": [
+          1,
+          6
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          8
+        ]
+      },
+      {
+        "sites": 3,
+        "physical_dimension": 6,
+        "instance": 0,
+        "column_initial_counts": [
+          1,
+          6
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          8
+        ]
+      },
+      {
+        "sites": 3,
+        "physical_dimension": 6,
+        "instance": 1,
+        "column_initial_counts": [
+          1,
+          6
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          8
+        ]
+      },
+      {
+        "sites": 3,
+        "physical_dimension": 6,
+        "instance": 2,
+        "column_initial_counts": [
+          1,
+          6
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          8
+        ]
+      },
+      {
+        "sites": 3,
+        "physical_dimension": 7,
+        "instance": 0,
+        "column_initial_counts": [
+          1,
+          6
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          8
+        ]
+      },
+      {
+        "sites": 3,
+        "physical_dimension": 7,
+        "instance": 1,
+        "column_initial_counts": [
+          1,
+          6
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          8
+        ]
+      },
+      {
+        "sites": 3,
+        "physical_dimension": 7,
+        "instance": 2,
+        "column_initial_counts": [
+          1,
+          6
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          8
+        ]
+      },
+      {
+        "sites": 3,
+        "physical_dimension": 8,
+        "instance": 0,
+        "column_initial_counts": [
+          1,
+          6
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          8
+        ]
+      },
+      {
+        "sites": 3,
+        "physical_dimension": 8,
+        "instance": 1,
+        "column_initial_counts": [
+          1,
+          6
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          8
+        ]
+      },
+      {
+        "sites": 3,
+        "physical_dimension": 8,
+        "instance": 2,
+        "column_initial_counts": [
+          1,
+          6
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          8
+        ]
+      },
+      {
+        "sites": 4,
+        "physical_dimension": 9,
+        "instance": 0,
+        "column_initial_counts": [
+          1,
+          8
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          10
+        ]
+      },
+      {
+        "sites": 4,
+        "physical_dimension": 9,
+        "instance": 1,
+        "column_initial_counts": [
+          1,
+          8
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          10
+        ]
+      },
+      {
+        "sites": 4,
+        "physical_dimension": 9,
+        "instance": 2,
+        "column_initial_counts": [
+          1,
+          8
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          10
+        ]
+      },
+      {
+        "sites": 4,
+        "physical_dimension": 10,
+        "instance": 0,
+        "column_initial_counts": [
+          1,
+          8
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          10
+        ]
+      },
+      {
+        "sites": 4,
+        "physical_dimension": 10,
+        "instance": 1,
+        "column_initial_counts": [
+          1,
+          8
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          10
+        ]
+      },
+      {
+        "sites": 4,
+        "physical_dimension": 10,
+        "instance": 2,
+        "column_initial_counts": [
+          1,
+          8
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          10
+        ]
+      },
+      {
+        "sites": 4,
+        "physical_dimension": 11,
+        "instance": 0,
+        "column_initial_counts": [
+          1,
+          8
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          10
+        ]
+      },
+      {
+        "sites": 4,
+        "physical_dimension": 11,
+        "instance": 1,
+        "column_initial_counts": [
+          1,
+          8
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          10
+        ]
+      },
+      {
+        "sites": 4,
+        "physical_dimension": 11,
+        "instance": 2,
+        "column_initial_counts": [
+          1,
+          8
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          10
+        ]
+      },
+      {
+        "sites": 4,
+        "physical_dimension": 12,
+        "instance": 0,
+        "column_initial_counts": [
+          1,
+          8
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          10
+        ]
+      },
+      {
+        "sites": 4,
+        "physical_dimension": 12,
+        "instance": 1,
+        "column_initial_counts": [
+          1,
+          8
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          10
+        ]
+      },
+      {
+        "sites": 4,
+        "physical_dimension": 12,
+        "instance": 2,
+        "column_initial_counts": [
+          1,
+          8
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          10
+        ]
+      },
+      {
+        "sites": 4,
+        "physical_dimension": 13,
+        "instance": 0,
+        "column_initial_counts": [
+          1,
+          8
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          10
+        ]
+      },
+      {
+        "sites": 4,
+        "physical_dimension": 13,
+        "instance": 1,
+        "column_initial_counts": [
+          1,
+          8
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          10
+        ]
+      },
+      {
+        "sites": 4,
+        "physical_dimension": 13,
+        "instance": 2,
+        "column_initial_counts": [
+          1,
+          8
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          10
+        ]
+      },
+      {
+        "sites": 4,
+        "physical_dimension": 14,
+        "instance": 0,
+        "column_initial_counts": [
+          1,
+          8
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          10
+        ]
+      },
+      {
+        "sites": 4,
+        "physical_dimension": 14,
+        "instance": 1,
+        "column_initial_counts": [
+          1,
+          8
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          10
+        ]
+      },
+      {
+        "sites": 4,
+        "physical_dimension": 14,
+        "instance": 2,
+        "column_initial_counts": [
+          1,
+          8
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          10
+        ]
+      },
+      {
+        "sites": 4,
+        "physical_dimension": 15,
+        "instance": 0,
+        "column_initial_counts": [
+          1,
+          8
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          10
+        ]
+      },
+      {
+        "sites": 4,
+        "physical_dimension": 15,
+        "instance": 1,
+        "column_initial_counts": [
+          1,
+          8
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          10
+        ]
+      },
+      {
+        "sites": 4,
+        "physical_dimension": 15,
+        "instance": 2,
+        "column_initial_counts": [
+          1,
+          8
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          10
+        ]
+      },
+      {
+        "sites": 4,
+        "physical_dimension": 16,
+        "instance": 0,
+        "column_initial_counts": [
+          1,
+          8
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          10
+        ]
+      },
+      {
+        "sites": 4,
+        "physical_dimension": 16,
+        "instance": 1,
+        "column_initial_counts": [
+          1,
+          8
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          10
+        ]
+      },
+      {
+        "sites": 4,
+        "physical_dimension": 16,
+        "instance": 2,
+        "column_initial_counts": [
+          1,
+          8
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          10
+        ]
+      }
+    ],
+    "full_tensor_coefficient_matrices_compared": 176,
+    "complete_smith_profiles_compared": 18,
+    "complete_profile_parity_controls": [
+      {
+        "sites": 1,
+        "physical_dimension": 2,
+        "instance": 0,
+        "column_counts": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        "row_reversal_order_sum": 4
+      },
+      {
+        "sites": 2,
+        "physical_dimension": 3,
+        "instance": 0,
+        "column_counts": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ]
+        ],
+        "row_reversal_order_sum": 18
+      },
+      {
+        "sites": 2,
+        "physical_dimension": 4,
+        "instance": 0,
+        "column_counts": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            1
+          ]
+        ],
+        "row_reversal_order_sum": 32
+      },
+      {
+        "sites": 3,
+        "physical_dimension": 5,
+        "instance": 0,
+        "column_counts": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            11
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            4,
+            1
+          ]
+        ],
+        "row_reversal_order_sum": 71
+      },
+      {
+        "sites": 3,
+        "physical_dimension": 6,
+        "instance": 0,
+        "column_counts": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "row_reversal_order_sum": 108
+      },
+      {
+        "sites": 3,
+        "physical_dimension": 7,
+        "instance": 0,
+        "column_counts": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            15
+          ],
+          [
+            3,
+            18
+          ],
+          [
+            4,
+            9
+          ]
+        ],
+        "row_reversal_order_sum": 143
+      },
+      {
+        "sites": 3,
+        "physical_dimension": 8,
+        "instance": 0,
+        "column_counts": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            15
+          ],
+          [
+            3,
+            20
+          ],
+          [
+            4,
+            15
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            1
+          ]
+        ],
+        "row_reversal_order_sum": 192
+      },
+      {
+        "sites": 4,
+        "physical_dimension": 9,
+        "instance": 0,
+        "column_counts": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            2,
+            22
+          ],
+          [
+            3,
+            26
+          ],
+          [
+            4,
+            17
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            1
+          ]
+        ],
+        "row_reversal_order_sum": 312
+      },
+      {
+        "sites": 4,
+        "physical_dimension": 9,
+        "instance": 1,
+        "column_counts": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            2,
+            28
+          ],
+          [
+            3,
+            42
+          ],
+          [
+            4,
+            2
+          ]
+        ],
+        "row_reversal_order_sum": 288
+      },
+      {
+        "sites": 4,
+        "physical_dimension": 10,
+        "instance": 0,
+        "column_counts": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            2,
+            24
+          ],
+          [
+            3,
+            34
+          ],
+          [
+            4,
+            24
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            6,
+            1
+          ]
+        ],
+        "row_reversal_order_sum": 384
+      },
+      {
+        "sites": 4,
+        "physical_dimension": 11,
+        "instance": 0,
+        "column_counts": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            2,
+            26
+          ],
+          [
+            3,
+            42
+          ],
+          [
+            4,
+            33
+          ],
+          [
+            5,
+            10
+          ],
+          [
+            6,
+            1
+          ]
+        ],
+        "row_reversal_order_sum": 472
+      },
+      {
+        "sites": 4,
+        "physical_dimension": 12,
+        "instance": 0,
+        "column_counts": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            2,
+            26
+          ],
+          [
+            3,
+            44
+          ],
+          [
+            4,
+            41
+          ],
+          [
+            5,
+            20
+          ],
+          [
+            6,
+            4
+          ]
+        ],
+        "row_reversal_order_sum": 576
+      },
+      {
+        "sites": 4,
+        "physical_dimension": 12,
+        "instance": 1,
+        "column_counts": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            2,
+            28
+          ],
+          [
+            3,
+            56
+          ],
+          [
+            4,
+            50
+          ],
+          [
+            6,
+            1
+          ]
+        ],
+        "row_reversal_order_sum": 544
+      },
+      {
+        "sites": 4,
+        "physical_dimension": 13,
+        "instance": 0,
+        "column_counts": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            2,
+            28
+          ],
+          [
+            3,
+            52
+          ],
+          [
+            4,
+            52
+          ],
+          [
+            5,
+            24
+          ],
+          [
+            6,
+            4
+          ]
+        ],
+        "row_reversal_order_sum": 660
+      },
+      {
+        "sites": 4,
+        "physical_dimension": 14,
+        "instance": 0,
+        "column_counts": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            2,
+            28
+          ],
+          [
+            3,
+            54
+          ],
+          [
+            4,
+            60
+          ],
+          [
+            5,
+            36
+          ],
+          [
+            6,
+            9
+          ]
+        ],
+        "row_reversal_order_sum": 768
+      },
+      {
+        "sites": 4,
+        "physical_dimension": 15,
+        "instance": 0,
+        "column_counts": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            2,
+            28
+          ],
+          [
+            3,
+            56
+          ],
+          [
+            4,
+            68
+          ],
+          [
+            5,
+            48
+          ],
+          [
+            6,
+            16
+          ]
+        ],
+        "row_reversal_order_sum": 884
+      },
+      {
+        "sites": 4,
+        "physical_dimension": 15,
+        "instance": 1,
+        "column_counts": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            2,
+            28
+          ],
+          [
+            3,
+            56
+          ],
+          [
+            4,
+            70
+          ],
+          [
+            5,
+            52
+          ],
+          [
+            6,
+            10
+          ]
+        ],
+        "row_reversal_order_sum": 876
+      },
+      {
+        "sites": 4,
+        "physical_dimension": 16,
+        "instance": 0,
+        "column_counts": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            2,
+            28
+          ],
+          [
+            3,
+            56
+          ],
+          [
+            4,
+            70
+          ],
+          [
+            5,
+            56
+          ],
+          [
+            6,
+            28
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            8,
+            1
+          ]
+        ],
+        "row_reversal_order_sum": 1024
+      }
+    ],
+    "higher_layer_records": [
+      {
+        "sites": 4,
+        "physical_dimension": 13,
+        "instance": 0,
+        "last_resolved_order": 2,
+        "column_initial_counts": [
+          1,
+          8,
+          28
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          10,
+          47
+        ],
+        "last_resolved_row_order": 1,
+        "row_initial_counts": [
+          1,
+          8
+        ],
+        "row_toeplitz_ranks": [
+          0,
+          1,
+          10
+        ]
+      },
+      {
+        "sites": 4,
+        "physical_dimension": 13,
+        "instance": 1,
+        "last_resolved_order": 2,
+        "column_initial_counts": [
+          1,
+          8,
+          28
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          10,
+          47
+        ],
+        "last_resolved_row_order": 1,
+        "row_initial_counts": [
+          1,
+          8
+        ],
+        "row_toeplitz_ranks": [
+          0,
+          1,
+          10
+        ]
+      },
+      {
+        "sites": 4,
+        "physical_dimension": 14,
+        "instance": 0,
+        "last_resolved_order": 2,
+        "column_initial_counts": [
+          1,
+          8,
+          28
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          10,
+          47
+        ],
+        "last_resolved_row_order": 1,
+        "row_initial_counts": [
+          1,
+          8
+        ],
+        "row_toeplitz_ranks": [
+          0,
+          1,
+          10
+        ]
+      },
+      {
+        "sites": 4,
+        "physical_dimension": 14,
+        "instance": 1,
+        "last_resolved_order": 2,
+        "column_initial_counts": [
+          1,
+          8,
+          28
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          10,
+          47
+        ],
+        "last_resolved_row_order": 1,
+        "row_initial_counts": [
+          1,
+          8
+        ],
+        "row_toeplitz_ranks": [
+          0,
+          1,
+          10
+        ]
+      },
+      {
+        "sites": 4,
+        "physical_dimension": 15,
+        "instance": 0,
+        "last_resolved_order": 2,
+        "column_initial_counts": [
+          1,
+          8,
+          28
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          10,
+          47
+        ],
+        "last_resolved_row_order": 2,
+        "row_initial_counts": [
+          1,
+          8,
+          28
+        ],
+        "row_toeplitz_ranks": [
+          0,
+          1,
+          10,
+          47
+        ]
+      },
+      {
+        "sites": 4,
+        "physical_dimension": 15,
+        "instance": 1,
+        "last_resolved_order": 2,
+        "column_initial_counts": [
+          1,
+          8,
+          28
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          10,
+          47
+        ],
+        "last_resolved_row_order": 2,
+        "row_initial_counts": [
+          1,
+          8,
+          28
+        ],
+        "row_toeplitz_ranks": [
+          0,
+          1,
+          10,
+          47
+        ]
+      },
+      {
+        "sites": 4,
+        "physical_dimension": 16,
+        "instance": 0,
+        "last_resolved_order": 3,
+        "column_initial_counts": [
+          1,
+          8,
+          28,
+          56
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          10,
+          47,
+          140
+        ],
+        "last_resolved_row_order": 3,
+        "row_initial_counts": [
+          1,
+          8,
+          28,
+          56
+        ],
+        "row_toeplitz_ranks": [
+          0,
+          1,
+          10,
+          47,
+          140
+        ]
+      },
+      {
+        "sites": 4,
+        "physical_dimension": 16,
+        "instance": 1,
+        "last_resolved_order": 3,
+        "column_initial_counts": [
+          1,
+          8,
+          28,
+          56
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          10,
+          47,
+          140
+        ],
+        "last_resolved_row_order": 3,
+        "row_initial_counts": [
+          1,
+          8,
+          28,
+          56
+        ],
+        "row_toeplitz_ranks": [
+          0,
+          1,
+          10,
+          47,
+          140
+        ]
+      },
+      {
+        "sites": 5,
+        "physical_dimension": 25,
+        "instance": 0,
+        "last_resolved_order": 2,
+        "column_initial_counts": [
+          1,
+          10,
+          45
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          12,
+          68
+        ],
+        "last_resolved_row_order": 1,
+        "row_initial_counts": [
+          1,
+          10
+        ],
+        "row_toeplitz_ranks": [
+          0,
+          1,
+          12
+        ]
+      },
+      {
+        "sites": 5,
+        "physical_dimension": 25,
+        "instance": 1,
+        "last_resolved_order": 2,
+        "column_initial_counts": [
+          1,
+          10,
+          45
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          12,
+          68
+        ],
+        "last_resolved_row_order": 1,
+        "row_initial_counts": [
+          1,
+          10
+        ],
+        "row_toeplitz_ranks": [
+          0,
+          1,
+          12
+        ]
+      },
+      {
+        "sites": 5,
+        "physical_dimension": 28,
+        "instance": 0,
+        "last_resolved_order": 2,
+        "column_initial_counts": [
+          1,
+          10,
+          45
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          12,
+          68
+        ],
+        "last_resolved_row_order": 1,
+        "row_initial_counts": [
+          1,
+          10
+        ],
+        "row_toeplitz_ranks": [
+          0,
+          1,
+          12
+        ]
+      },
+      {
+        "sites": 5,
+        "physical_dimension": 28,
+        "instance": 1,
+        "last_resolved_order": 2,
+        "column_initial_counts": [
+          1,
+          10,
+          45
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          12,
+          68
+        ],
+        "last_resolved_row_order": 1,
+        "row_initial_counts": [
+          1,
+          10
+        ],
+        "row_toeplitz_ranks": [
+          0,
+          1,
+          12
+        ]
+      },
+      {
+        "sites": 5,
+        "physical_dimension": 31,
+        "instance": 0,
+        "last_resolved_order": 3,
+        "column_initial_counts": [
+          1,
+          10,
+          45,
+          120
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          12,
+          68,
+          244
+        ],
+        "last_resolved_row_order": 3,
+        "row_initial_counts": [
+          1,
+          10,
+          45,
+          120
+        ],
+        "row_toeplitz_ranks": [
+          0,
+          1,
+          12,
+          68,
+          244
+        ]
+      },
+      {
+        "sites": 5,
+        "physical_dimension": 31,
+        "instance": 1,
+        "last_resolved_order": 3,
+        "column_initial_counts": [
+          1,
+          10,
+          45,
+          120
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          12,
+          68,
+          244
+        ],
+        "last_resolved_row_order": 3,
+        "row_initial_counts": [
+          1,
+          10,
+          45,
+          120
+        ],
+        "row_toeplitz_ranks": [
+          0,
+          1,
+          12,
+          68,
+          244
+        ]
+      },
+      {
+        "sites": 5,
+        "physical_dimension": 32,
+        "instance": 0,
+        "last_resolved_order": 3,
+        "column_initial_counts": [
+          1,
+          10,
+          45,
+          120
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          12,
+          68,
+          244
+        ],
+        "last_resolved_row_order": 3,
+        "row_initial_counts": [
+          1,
+          10,
+          45,
+          120
+        ],
+        "row_toeplitz_ranks": [
+          0,
+          1,
+          12,
+          68,
+          244
+        ]
+      },
+      {
+        "sites": 5,
+        "physical_dimension": 32,
+        "instance": 1,
+        "last_resolved_order": 3,
+        "column_initial_counts": [
+          1,
+          10,
+          45,
+          120
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          12,
+          68,
+          244
+        ],
+        "last_resolved_row_order": 3,
+        "row_initial_counts": [
+          1,
+          10,
+          45,
+          120
+        ],
+        "row_toeplitz_ranks": [
+          0,
+          1,
+          12,
+          68,
+          244
+        ]
+      }
+    ],
+    "half_dimension_countercontrols": [
+      {
+        "sites": 2,
+        "physical_dimension": 2,
+        "column_initial_counts": [
+          1,
+          2
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          4
+        ]
+      },
+      {
+        "sites": 3,
+        "physical_dimension": 4,
+        "column_initial_counts": [
+          1,
+          4
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          6
+        ]
+      },
+      {
+        "sites": 4,
+        "physical_dimension": 8,
+        "column_initial_counts": [
+          1,
+          6
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          8
+        ]
+      }
+    ],
+    "three_quarter_dimension_countercontrols": [
+      {
+        "sites": 2,
+        "physical_dimension": 3,
+        "column_initial_counts": [
+          1,
+          4,
+          4
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          6,
+          15
+        ],
+        "vanishing_nonzero_operator_mask": 5
+      },
+      {
+        "sites": 3,
+        "physical_dimension": 6,
+        "column_initial_counts": [
+          1,
+          6,
+          13
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          8,
+          28
+        ],
+        "vanishing_nonzero_operator_mask": 5
+      },
+      {
+        "sites": 4,
+        "physical_dimension": 12,
+        "column_initial_counts": [
+          1,
+          8,
+          26
+        ],
+        "toeplitz_ranks": [
+          0,
+          1,
+          10,
+          45
+        ],
+        "vanishing_nonzero_operator_mask": 5
+      }
+    ]
+  },
+  "pressure_certificates": [
+    {
+      "sites": 1,
+      "physical_dimension": 2,
+      "last_proved_column_order": 2,
+      "column_initial_counts": [
+        1,
+        2,
+        1
+      ],
+      "last_proved_row_order": 2,
+      "row_initial_counts": [
+        1,
+        2,
+        1
+      ],
+      "column_prefix_lower_bound": 1,
+      "row_prefix_budget": 1,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        2,
+        1
+      ],
+      "column_lower_polynomial": [
+        1,
+        2,
+        1
+      ],
+      "pressure_threshold": "1420603/200000",
+      "positive_polynomial": [
+        200000,
+        -620603,
+        1200000,
+        800000,
+        200000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 0,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "179397/4"
+        }
+      ]
+    },
+    {
+      "sites": 2,
+      "physical_dimension": 3,
+      "last_proved_column_order": 1,
+      "column_initial_counts": [
+        1,
+        4
+      ],
+      "last_proved_row_order": null,
+      "row_initial_counts": null,
+      "column_prefix_lower_bound": 2,
+      "row_prefix_budget": 4,
+      "row_bound_used": "shared minor",
+      "row_lower_polynomial": [
+        1,
+        0,
+        6,
+        2
+      ],
+      "column_lower_polynomial": [
+        1,
+        4,
+        0,
+        2,
+        2
+      ],
+      "pressure_threshold": "698803/31250",
+      "positive_polynomial": [
+        31250,
+        125000,
+        -511303,
+        875000,
+        312500,
+        375000,
+        500000,
+        125000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 0,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "31250"
+        }
+      ]
+    },
+    {
+      "sites": 2,
+      "physical_dimension": 4,
+      "last_proved_column_order": 4,
+      "column_initial_counts": [
+        1,
+        4,
+        6,
+        4,
+        1
+      ],
+      "last_proved_row_order": 4,
+      "row_initial_counts": [
+        1,
+        4,
+        6,
+        4,
+        1
+      ],
+      "column_prefix_lower_bound": 3,
+      "row_prefix_budget": 5,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        4,
+        6,
+        4,
+        1
+      ],
+      "column_lower_polynomial": [
+        1,
+        4,
+        6,
+        4,
+        1
+      ],
+      "pressure_threshold": "50452811/1000000",
+      "positive_polynomial": [
+        1000000,
+        8000000,
+        -22452811,
+        56000000,
+        70000000,
+        56000000,
+        28000000,
+        8000000,
+        1000000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 0,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "1000000"
+        }
+      ]
+    },
+    {
+      "sites": 3,
+      "physical_dimension": 5,
+      "last_proved_column_order": 1,
+      "column_initial_counts": [
+        1,
+        6
+      ],
+      "last_proved_row_order": null,
+      "row_initial_counts": null,
+      "column_prefix_lower_bound": 4,
+      "row_prefix_budget": 11,
+      "row_bound_used": "shared minor",
+      "row_lower_polynomial": [
+        1,
+        0,
+        1,
+        19,
+        4
+      ],
+      "column_lower_polynomial": [
+        1,
+        6,
+        0,
+        3,
+        15
+      ],
+      "pressure_threshold": "94839377/1000000",
+      "positive_polynomial": [
+        1000000,
+        6000000,
+        1000000,
+        -66839377,
+        133000000,
+        27000000,
+        72000000,
+        297000000,
+        60000000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 0,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "1000000"
+        }
+      ]
+    },
+    {
+      "sites": 3,
+      "physical_dimension": 6,
+      "last_proved_column_order": 1,
+      "column_initial_counts": [
+        1,
+        6
+      ],
+      "last_proved_row_order": null,
+      "row_initial_counts": null,
+      "column_prefix_lower_bound": 5,
+      "row_prefix_budget": 13,
+      "row_bound_used": "shared minor",
+      "row_lower_polynomial": [
+        1,
+        0,
+        2,
+        28,
+        5
+      ],
+      "column_lower_polynomial": [
+        1,
+        6,
+        0,
+        14,
+        15
+      ],
+      "pressure_threshold": "1985443/12500",
+      "positive_polynomial": [
+        12500,
+        75000,
+        25000,
+        -1310443,
+        2350000,
+        725000,
+        5275000,
+        6125000,
+        937500
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 1,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "12500"
+        },
+        {
+          "depth": 1,
+          "interval_index": 1,
+          "minimum_bernstein_coefficient": "12538331/64"
+        }
+      ]
+    },
+    {
+      "sites": 3,
+      "physical_dimension": 7,
+      "last_proved_column_order": 2,
+      "column_initial_counts": [
+        1,
+        6,
+        15
+      ],
+      "last_proved_row_order": 1,
+      "row_initial_counts": [
+        1,
+        6
+      ],
+      "column_prefix_lower_bound": 6,
+      "row_prefix_budget": 15,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        6,
+        0,
+        27,
+        15
+      ],
+      "column_lower_polynomial": [
+        1,
+        6,
+        15,
+        0,
+        24,
+        3
+      ],
+      "pressure_threshold": "245641539/1000000",
+      "positive_polynomial": [
+        1000000,
+        12000000,
+        51000000,
+        -128641539,
+        201000000,
+        642000000,
+        243000000,
+        648000000,
+        441000000,
+        45000000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 0,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "1000000"
+        }
+      ]
+    },
+    {
+      "sites": 3,
+      "physical_dimension": 8,
+      "last_proved_column_order": 6,
+      "column_initial_counts": [
+        1,
+        6,
+        15,
+        20,
+        15,
+        6,
+        1
+      ],
+      "last_proved_row_order": 6,
+      "row_initial_counts": [
+        1,
+        6,
+        15,
+        20,
+        15,
+        6,
+        1
+      ],
+      "column_prefix_lower_bound": 8,
+      "row_prefix_budget": 16,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        6,
+        15,
+        20,
+        15,
+        6,
+        1
+      ],
+      "column_lower_polynomial": [
+        1,
+        6,
+        15,
+        20,
+        15,
+        6,
+        1
+      ],
+      "pressure_threshold": "179183517/500000",
+      "positive_polynomial": [
+        500000,
+        6000000,
+        33000000,
+        -69183517,
+        247500000,
+        396000000,
+        462000000,
+        396000000,
+        247500000,
+        110000000,
+        33000000,
+        6000000,
+        500000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 0,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "500000"
+        }
+      ]
+    },
+    {
+      "sites": 4,
+      "physical_dimension": 9,
+      "last_proved_column_order": 1,
+      "column_initial_counts": [
+        1,
+        8
+      ],
+      "last_proved_row_order": null,
+      "row_initial_counts": null,
+      "column_prefix_lower_bound": 8,
+      "row_prefix_budget": 28,
+      "row_bound_used": "shared minor",
+      "row_lower_polynomial": [
+        1,
+        0,
+        0,
+        4,
+        68,
+        8
+      ],
+      "column_lower_polynomial": [
+        1,
+        8,
+        0,
+        0,
+        44,
+        28
+      ],
+      "pressure_threshold": "500045417/1000000",
+      "positive_polynomial": [
+        1000000,
+        8000000,
+        0,
+        4000000,
+        -356045417,
+        580000000,
+        64000000,
+        176000000,
+        3104000000,
+        2256000000,
+        224000000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 1,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "1000000"
+        },
+        {
+          "depth": 1,
+          "interval_index": 1,
+          "minimum_bernstein_coefficient": "327954583/16"
+        }
+      ]
+    },
+    {
+      "sites": 4,
+      "physical_dimension": 10,
+      "last_proved_column_order": 1,
+      "column_initial_counts": [
+        1,
+        8
+      ],
+      "last_proved_row_order": null,
+      "row_initial_counts": null,
+      "column_prefix_lower_bound": 10,
+      "row_prefix_budget": 30,
+      "row_bound_used": "shared minor",
+      "row_lower_polynomial": [
+        1,
+        0,
+        0,
+        6,
+        83,
+        10
+      ],
+      "column_lower_polynomial": [
+        1,
+        8,
+        0,
+        0,
+        63,
+        28
+      ],
+      "pressure_threshold": "336822719/500000",
+      "positive_polynomial": [
+        500000,
+        4000000,
+        0,
+        3000000,
+        -239822719,
+        351000000,
+        40000000,
+        189000000,
+        2698500000,
+        1477000000,
+        140000000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 1,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "6346031/48"
+        },
+        {
+          "depth": 1,
+          "interval_index": 1,
+          "minimum_bernstein_coefficient": "232302281/16"
+        }
+      ]
+    },
+    {
+      "sites": 4,
+      "physical_dimension": 11,
+      "last_proved_column_order": 1,
+      "column_initial_counts": [
+        1,
+        8
+      ],
+      "last_proved_row_order": null,
+      "row_initial_counts": null,
+      "column_prefix_lower_bound": 12,
+      "row_prefix_budget": 32,
+      "row_bound_used": "shared minor",
+      "row_lower_polynomial": [
+        1,
+        0,
+        0,
+        8,
+        100,
+        12
+      ],
+      "column_lower_polynomial": [
+        1,
+        8,
+        0,
+        0,
+        84,
+        28
+      ],
+      "pressure_threshold": "882079527/1000000",
+      "positive_polynomial": [
+        1000000,
+        8000000,
+        0,
+        8000000,
+        -634079527,
+        840000000,
+        96000000,
+        672000000,
+        8624000000,
+        3808000000,
+        336000000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 2,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "1000000"
+        },
+        {
+          "depth": 2,
+          "interval_index": 1,
+          "minimum_bernstein_coefficient": "2950218289/2560"
+        },
+        {
+          "depth": 1,
+          "interval_index": 1,
+          "minimum_bernstein_coefficient": "653170473/16"
+        }
+      ]
+    },
+    {
+      "sites": 4,
+      "physical_dimension": 12,
+      "last_proved_column_order": 1,
+      "column_initial_counts": [
+        1,
+        8
+      ],
+      "last_proved_row_order": null,
+      "row_initial_counts": null,
+      "column_prefix_lower_bound": 14,
+      "row_prefix_budget": 34,
+      "row_bound_used": "shared minor",
+      "row_lower_polynomial": [
+        1,
+        0,
+        0,
+        10,
+        119,
+        14
+      ],
+      "column_lower_polynomial": [
+        1,
+        8,
+        0,
+        0,
+        107,
+        28
+      ],
+      "pressure_threshold": "225642077/200000",
+      "positive_polynomial": [
+        200000,
+        1600000,
+        0,
+        2000000,
+        -164442077,
+        198800000,
+        22400000,
+        214000000,
+        2602600000,
+        966000000,
+        78400000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 2,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "200000"
+        },
+        {
+          "depth": 2,
+          "interval_index": 1,
+          "minimum_bernstein_coefficient": "483350917/7680"
+        },
+        {
+          "depth": 1,
+          "interval_index": 1,
+          "minimum_bernstein_coefficient": "181382923/16"
+        }
+      ]
+    },
+    {
+      "sites": 4,
+      "physical_dimension": 13,
+      "last_proved_column_order": 2,
+      "column_initial_counts": [
+        1,
+        8,
+        28
+      ],
+      "last_proved_row_order": 1,
+      "row_initial_counts": [
+        1,
+        8
+      ],
+      "column_prefix_lower_bound": 16,
+      "row_prefix_budget": 36,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        8,
+        0,
+        0,
+        132,
+        28
+      ],
+      "column_lower_polynomial": [
+        1,
+        8,
+        28,
+        0,
+        48,
+        84
+      ],
+      "pressure_threshold": "707428137/500000",
+      "positive_polynomial": [
+        500000,
+        8000000,
+        46000000,
+        112000000,
+        -617428137,
+        776000000,
+        2296000000,
+        392000000,
+        3168000000,
+        6216000000,
+        1176000000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 0,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "500000"
+        }
+      ]
+    },
+    {
+      "sites": 4,
+      "physical_dimension": 14,
+      "last_proved_column_order": 2,
+      "column_initial_counts": [
+        1,
+        8,
+        28
+      ],
+      "last_proved_row_order": 1,
+      "row_initial_counts": [
+        1,
+        8
+      ],
+      "column_prefix_lower_bound": 18,
+      "row_prefix_budget": 38,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        8,
+        0,
+        0,
+        159,
+        28
+      ],
+      "column_lower_polynomial": [
+        1,
+        8,
+        28,
+        0,
+        75,
+        84
+      ],
+      "pressure_threshold": "872397671/500000",
+      "positive_polynomial": [
+        500000,
+        8000000,
+        46000000,
+        112000000,
+        -755397671,
+        992000000,
+        2674000000,
+        392000000,
+        5962500000,
+        7728000000,
+        1176000000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 0,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "500000"
+        }
+      ]
+    },
+    {
+      "sites": 4,
+      "physical_dimension": 15,
+      "last_proved_column_order": 2,
+      "column_initial_counts": [
+        1,
+        8,
+        28
+      ],
+      "last_proved_row_order": 2,
+      "row_initial_counts": [
+        1,
+        8,
+        28
+      ],
+      "column_prefix_lower_bound": 20,
+      "row_prefix_budget": 40,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        8,
+        28,
+        0,
+        104,
+        84
+      ],
+      "column_lower_polynomial": [
+        1,
+        8,
+        28,
+        0,
+        104,
+        84
+      ],
+      "pressure_threshold": "2120769233/1000000",
+      "positive_polynomial": [
+        1000000,
+        16000000,
+        120000000,
+        448000000,
+        -1128769233,
+        1832000000,
+        7168000000,
+        4704000000,
+        10816000000,
+        17472000000,
+        7056000000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 0,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "1000000"
+        }
+      ]
+    },
+    {
+      "sites": 4,
+      "physical_dimension": 16,
+      "last_proved_column_order": 8,
+      "column_initial_counts": [
+        1,
+        8,
+        28,
+        56,
+        70,
+        56,
+        28,
+        8,
+        1
+      ],
+      "last_proved_row_order": 8,
+      "row_initial_counts": [
+        1,
+        8,
+        28,
+        56,
+        70,
+        56,
+        28,
+        8,
+        1
+      ],
+      "column_prefix_lower_bound": 22,
+      "row_prefix_budget": 42,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        8,
+        28,
+        56,
+        70,
+        56,
+        28,
+        8,
+        1
+      ],
+      "column_lower_polynomial": [
+        1,
+        8,
+        28,
+        56,
+        70,
+        56,
+        28,
+        8,
+        1
+      ],
+      "pressure_threshold": "636371533/250000",
+      "positive_polynomial": [
+        250000,
+        4000000,
+        30000000,
+        140000000,
+        -181371533,
+        1092000000,
+        2002000000,
+        2860000000,
+        3217500000,
+        2860000000,
+        2002000000,
+        1092000000,
+        455000000,
+        140000000,
+        30000000,
+        4000000,
+        250000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 0,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "250000"
+        }
+      ]
+    },
+    {
+      "sites": 5,
+      "physical_dimension": 25,
+      "last_proved_column_order": 2,
+      "column_initial_counts": [
+        1,
+        10,
+        45
+      ],
+      "last_proved_row_order": 1,
+      "row_initial_counts": [
+        1,
+        10
+      ],
+      "column_prefix_lower_bound": 38,
+      "row_prefix_budget": 87,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        10,
+        0,
+        0,
+        0,
+        569,
+        45
+      ],
+      "column_lower_polynomial": [
+        1,
+        10,
+        45,
+        0,
+        0,
+        389,
+        180
+      ],
+      "pressure_threshold": "8994507277/1000000",
+      "positive_polynomial": [
+        1000000,
+        20000000,
+        145000000,
+        450000000,
+        0,
+        -8036507277,
+        9805000000,
+        27855000000,
+        2025000000,
+        0,
+        221341000000,
+        119925000000,
+        8100000000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 0,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "1000000"
+        }
+      ]
+    },
+    {
+      "sites": 5,
+      "physical_dimension": 26,
+      "last_proved_column_order": 2,
+      "column_initial_counts": [
+        1,
+        10,
+        45
+      ],
+      "last_proved_row_order": 1,
+      "row_initial_counts": [
+        1,
+        10
+      ],
+      "column_prefix_lower_bound": 40,
+      "row_prefix_budget": 90,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        10,
+        0,
+        0,
+        0,
+        620,
+        45
+      ],
+      "column_lower_polynomial": [
+        1,
+        10,
+        45,
+        0,
+        0,
+        440,
+        180
+      ],
+      "pressure_threshold": "5024872113/500000",
+      "positive_polynomial": [
+        500000,
+        10000000,
+        72500000,
+        225000000,
+        0,
+        -4494872113,
+        5412500000,
+        15075000000,
+        1012500000,
+        0,
+        136400000000,
+        65700000000,
+        4050000000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 0,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "500000"
+        }
+      ]
+    },
+    {
+      "sites": 5,
+      "physical_dimension": 27,
+      "last_proved_column_order": 2,
+      "column_initial_counts": [
+        1,
+        10,
+        45
+      ],
+      "last_proved_row_order": 1,
+      "row_initial_counts": [
+        1,
+        10
+      ],
+      "column_prefix_lower_bound": 42,
+      "row_prefix_budget": 93,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        10,
+        0,
+        0,
+        0,
+        673,
+        45
+      ],
+      "column_lower_polynomial": [
+        1,
+        10,
+        45,
+        0,
+        0,
+        493,
+        180
+      ],
+      "pressure_threshold": "2236372647/200000",
+      "positive_polynomial": [
+        200000,
+        4000000,
+        29000000,
+        90000000,
+        0,
+        -2003172647,
+        2377000000,
+        6507000000,
+        405000000,
+        0,
+        66357800000,
+        28665000000,
+        1620000000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 1,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "200000"
+        },
+        {
+          "depth": 1,
+          "interval_index": 1,
+          "minimum_bernstein_coefficient": "2029665239/16"
+        }
+      ]
+    },
+    {
+      "sites": 5,
+      "physical_dimension": 28,
+      "last_proved_column_order": 2,
+      "column_initial_counts": [
+        1,
+        10,
+        45
+      ],
+      "last_proved_row_order": 1,
+      "row_initial_counts": [
+        1,
+        10
+      ],
+      "column_prefix_lower_bound": 44,
+      "row_prefix_budget": 96,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        10,
+        0,
+        0,
+        0,
+        728,
+        45
+      ],
+      "column_lower_polynomial": [
+        1,
+        10,
+        45,
+        0,
+        0,
+        548,
+        180
+      ],
+      "pressure_threshold": "2478661223/200000",
+      "positive_polynomial": [
+        200000,
+        4000000,
+        29000000,
+        90000000,
+        0,
+        -2223461223,
+        2597000000,
+        7002000000,
+        405000000,
+        0,
+        79788800000,
+        31140000000,
+        1620000000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 1,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "200000"
+        },
+        {
+          "depth": 1,
+          "interval_index": 1,
+          "minimum_bernstein_coefficient": "4531182527/32"
+        }
+      ]
+    },
+    {
+      "sites": 5,
+      "physical_dimension": 29,
+      "last_proved_column_order": 2,
+      "column_initial_counts": [
+        1,
+        10,
+        45
+      ],
+      "last_proved_row_order": 2,
+      "row_initial_counts": [
+        1,
+        10,
+        45
+      ],
+      "column_prefix_lower_bound": 46,
+      "row_prefix_budget": 99,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        10,
+        45,
+        0,
+        0,
+        605,
+        180
+      ],
+      "column_lower_polynomial": [
+        1,
+        10,
+        45,
+        0,
+        0,
+        605,
+        180
+      ],
+      "pressure_threshold": "6843249601/500000",
+      "positive_polynomial": [
+        500000,
+        10000000,
+        95000000,
+        450000000,
+        1012500000,
+        -6238249601,
+        6230000000,
+        29025000000,
+        8100000000,
+        0,
+        183012500000,
+        108900000000,
+        16200000000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 0,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "500000"
+        }
+      ]
+    },
+    {
+      "sites": 5,
+      "physical_dimension": 30,
+      "last_proved_column_order": 2,
+      "column_initial_counts": [
+        1,
+        10,
+        45
+      ],
+      "last_proved_row_order": 2,
+      "row_initial_counts": [
+        1,
+        10,
+        45
+      ],
+      "column_prefix_lower_bound": 48,
+      "row_prefix_budget": 102,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        10,
+        45,
+        0,
+        0,
+        664,
+        180
+      ],
+      "column_lower_polynomial": [
+        1,
+        10,
+        45,
+        0,
+        0,
+        664,
+        180
+      ],
+      "pressure_threshold": "3765963501/250000",
+      "positive_polynomial": [
+        250000,
+        5000000,
+        47500000,
+        225000000,
+        506250000,
+        -3433963501,
+        3410000000,
+        15840000000,
+        4050000000,
+        0,
+        110224000000,
+        59760000000,
+        8100000000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 0,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "250000"
+        }
+      ]
+    },
+    {
+      "sites": 5,
+      "physical_dimension": 31,
+      "last_proved_column_order": 3,
+      "column_initial_counts": [
+        1,
+        10,
+        45,
+        120
+      ],
+      "last_proved_row_order": 3,
+      "row_initial_counts": [
+        1,
+        10,
+        45,
+        120
+      ],
+      "column_prefix_lower_bound": 50,
+      "row_prefix_budget": 105,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        10,
+        45,
+        120,
+        0,
+        365,
+        420
+      ],
+      "column_lower_polynomial": [
+        1,
+        10,
+        45,
+        120,
+        0,
+        365,
+        420
+      ],
+      "pressure_threshold": "4131941949/250000",
+      "positive_polynomial": [
+        250000,
+        5000000,
+        47500000,
+        285000000,
+        1106250000,
+        -1249441949,
+        5635000000,
+        10312500000,
+        31350000000,
+        25200000000,
+        33306250000,
+        76650000000,
+        44100000000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 0,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "250000"
+        }
+      ]
+    },
+    {
+      "sites": 5,
+      "physical_dimension": 32,
+      "last_proved_column_order": 10,
+      "column_initial_counts": [
+        1,
+        10,
+        45,
+        120,
+        210,
+        252,
+        210,
+        120,
+        45,
+        10,
+        1
+      ],
+      "last_proved_row_order": 10,
+      "row_initial_counts": [
+        1,
+        10,
+        45,
+        120,
+        210,
+        252,
+        210,
+        120,
+        45,
+        10,
+        1
+      ],
+      "column_prefix_lower_bound": 52,
+      "row_prefix_budget": 108,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        10,
+        45,
+        120,
+        210,
+        252,
+        210,
+        120,
+        45,
+        10,
+        1
+      ],
+      "column_lower_polynomial": [
+        1,
+        10,
+        45,
+        120,
+        210,
+        252,
+        210,
+        120,
+        45,
+        10,
+        1
+      ],
+      "pressure_threshold": "9040312089/500000",
+      "positive_polynomial": [
+        500000,
+        10000000,
+        95000000,
+        570000000,
+        2422500000,
+        -1288312089,
+        19380000000,
+        38760000000,
+        62985000000,
+        83980000000,
+        92378000000,
+        83980000000,
+        62985000000,
+        38760000000,
+        19380000000,
+        7752000000,
+        2422500000,
+        570000000,
+        95000000,
+        10000000,
+        500000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 0,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "500000"
+        }
+      ]
+    },
+    {
+      "sites": 6,
+      "physical_dimension": 49,
+      "last_proved_column_order": 2,
+      "column_initial_counts": [
+        1,
+        12,
+        66
+      ],
+      "last_proved_row_order": 1,
+      "row_initial_counts": [
+        1,
+        12
+      ],
+      "column_prefix_lower_bound": 84,
+      "row_prefix_budget": 210,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        12,
+        0,
+        0,
+        0,
+        0,
+        2322,
+        66
+      ],
+      "column_lower_polynomial": [
+        1,
+        12,
+        66,
+        0,
+        0,
+        0,
+        1992,
+        330
+      ],
+      "pressure_threshold": "60339765567/1000000",
+      "positive_polynomial": [
+        1000000,
+        24000000,
+        210000000,
+        792000000,
+        0,
+        0,
+        -56025765567,
+        52164000000,
+        158004000000,
+        4356000000,
+        0,
+        0,
+        4625424000000,
+        897732000000,
+        21780000000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 1,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "1000000"
+        },
+        {
+          "depth": 1,
+          "interval_index": 1,
+          "minimum_bernstein_coefficient": "6250037113/4"
+        }
+      ]
+    },
+    {
+      "sites": 6,
+      "physical_dimension": 50,
+      "last_proved_column_order": 2,
+      "column_initial_counts": [
+        1,
+        12,
+        66
+      ],
+      "last_proved_row_order": 1,
+      "row_initial_counts": [
+        1,
+        12
+      ],
+      "column_prefix_lower_bound": 86,
+      "row_prefix_budget": 214,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        12,
+        0,
+        0,
+        0,
+        0,
+        2421,
+        66
+      ],
+      "column_lower_polynomial": [
+        1,
+        12,
+        66,
+        0,
+        0,
+        0,
+        2091,
+        330
+      ],
+      "pressure_threshold": "63888113043/1000000",
+      "positive_polynomial": [
+        1000000,
+        24000000,
+        210000000,
+        792000000,
+        0,
+        0,
+        -59376113043,
+        54540000000,
+        164538000000,
+        4356000000,
+        0,
+        0,
+        5062311000000,
+        936936000000,
+        21780000000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 1,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "1000000"
+        },
+        {
+          "depth": 1,
+          "interval_index": 1,
+          "minimum_bernstein_coefficient": "106604386957/64"
+        }
+      ]
+    },
+    {
+      "sites": 6,
+      "physical_dimension": 51,
+      "last_proved_column_order": 2,
+      "column_initial_counts": [
+        1,
+        12,
+        66
+      ],
+      "last_proved_row_order": 1,
+      "row_initial_counts": [
+        1,
+        12
+      ],
+      "column_prefix_lower_bound": 88,
+      "row_prefix_budget": 218,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        12,
+        0,
+        0,
+        0,
+        0,
+        2522,
+        66
+      ],
+      "column_lower_polynomial": [
+        1,
+        12,
+        66,
+        0,
+        0,
+        0,
+        2192,
+        330
+      ],
+      "pressure_threshold": "67568621211/1000000",
+      "positive_polynomial": [
+        1000000,
+        24000000,
+        210000000,
+        792000000,
+        0,
+        0,
+        -62854621211,
+        56964000000,
+        171204000000,
+        4356000000,
+        0,
+        0,
+        5528224000000,
+        976932000000,
+        21780000000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 1,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "1000000"
+        },
+        {
+          "depth": 1,
+          "interval_index": 1,
+          "minimum_bernstein_coefficient": "28399184541/16"
+        }
+      ]
+    },
+    {
+      "sites": 6,
+      "physical_dimension": 52,
+      "last_proved_column_order": 2,
+      "column_initial_counts": [
+        1,
+        12,
+        66
+      ],
+      "last_proved_row_order": 1,
+      "row_initial_counts": [
+        1,
+        12
+      ],
+      "column_prefix_lower_bound": 90,
+      "row_prefix_budget": 222,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        12,
+        0,
+        0,
+        0,
+        0,
+        2625,
+        66
+      ],
+      "column_lower_polynomial": [
+        1,
+        12,
+        66,
+        0,
+        0,
+        0,
+        2295,
+        330
+      ],
+      "pressure_threshold": "7138347609/100000",
+      "positive_polynomial": [
+        100000,
+        2400000,
+        21000000,
+        79200000,
+        0,
+        0,
+        -6646347609,
+        5943600000,
+        17800200000,
+        435600000,
+        0,
+        0,
+        602437500000,
+        101772000000,
+        2178000000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 1,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "100000"
+        },
+        {
+          "depth": 1,
+          "interval_index": 1,
+          "minimum_bernstein_coefficient": "12099439891/64"
+        }
+      ]
+    },
+    {
+      "sites": 6,
+      "physical_dimension": 53,
+      "last_proved_column_order": 2,
+      "column_initial_counts": [
+        1,
+        12,
+        66
+      ],
+      "last_proved_row_order": 1,
+      "row_initial_counts": [
+        1,
+        12
+      ],
+      "column_prefix_lower_bound": 92,
+      "row_prefix_budget": 226,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        12,
+        0,
+        0,
+        0,
+        0,
+        2730,
+        66
+      ],
+      "column_lower_polynomial": [
+        1,
+        12,
+        66,
+        0,
+        0,
+        0,
+        2400,
+        330
+      ],
+      "pressure_threshold": "37667428177/500000",
+      "positive_polynomial": [
+        500000,
+        12000000,
+        105000000,
+        396000000,
+        0,
+        0,
+        -35102428177,
+        30978000000,
+        92466000000,
+        2178000000,
+        0,
+        0,
+        3276000000000,
+        529650000000,
+        10890000000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 1,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "500000"
+        },
+        {
+          "depth": 1,
+          "interval_index": 1,
+          "minimum_bernstein_coefficient": "128814503021/128"
+        }
+      ]
+    },
+    {
+      "sites": 6,
+      "physical_dimension": 54,
+      "last_proved_column_order": 2,
+      "column_initial_counts": [
+        1,
+        12,
+        66
+      ],
+      "last_proved_row_order": 1,
+      "row_initial_counts": [
+        1,
+        12
+      ],
+      "column_prefix_lower_bound": 94,
+      "row_prefix_budget": 230,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        12,
+        0,
+        0,
+        0,
+        0,
+        2837,
+        66
+      ],
+      "column_lower_polynomial": [
+        1,
+        12,
+        66,
+        0,
+        0,
+        0,
+        2507,
+        330
+      ],
+      "pressure_threshold": "79424933503/1000000",
+      "positive_polynomial": [
+        1000000,
+        24000000,
+        210000000,
+        792000000,
+        0,
+        0,
+        -74080933503,
+        64524000000,
+        191994000000,
+        4356000000,
+        0,
+        0,
+        7112359000000,
+        1101672000000,
+        21780000000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 2,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "1000000"
+        },
+        {
+          "depth": 2,
+          "interval_index": 1,
+          "minimum_bernstein_coefficient": "22794686163857/1048576"
+        },
+        {
+          "depth": 1,
+          "interval_index": 1,
+          "minimum_bernstein_coefficient": "137074566497/64"
+        }
+      ]
+    },
+    {
+      "sites": 6,
+      "physical_dimension": 55,
+      "last_proved_column_order": 2,
+      "column_initial_counts": [
+        1,
+        12,
+        66
+      ],
+      "last_proved_row_order": 1,
+      "row_initial_counts": [
+        1,
+        12
+      ],
+      "column_prefix_lower_bound": 96,
+      "row_prefix_budget": 234,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        12,
+        0,
+        0,
+        0,
+        0,
+        2946,
+        66
+      ],
+      "column_lower_polynomial": [
+        1,
+        12,
+        66,
+        0,
+        0,
+        0,
+        2616,
+        330
+      ],
+      "pressure_threshold": "41827936007/500000",
+      "positive_polynomial": [
+        500000,
+        12000000,
+        105000000,
+        396000000,
+        0,
+        0,
+        -39046936007,
+        33570000000,
+        99594000000,
+        2178000000,
+        0,
+        0,
+        3853368000000,
+        572418000000,
+        10890000000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 2,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "500000"
+        },
+        {
+          "depth": 2,
+          "interval_index": 1,
+          "minimum_bernstein_coefficient": "22087724905041/2097152"
+        },
+        {
+          "depth": 1,
+          "interval_index": 1,
+          "minimum_bernstein_coefficient": "145792487361/128"
+        }
+      ]
+    },
+    {
+      "sites": 6,
+      "physical_dimension": 56,
+      "last_proved_column_order": 2,
+      "column_initial_counts": [
+        1,
+        12,
+        66
+      ],
+      "last_proved_row_order": 1,
+      "row_initial_counts": [
+        1,
+        12
+      ],
+      "column_prefix_lower_bound": 98,
+      "row_prefix_budget": 238,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        12,
+        0,
+        0,
+        0,
+        0,
+        3057,
+        66
+      ],
+      "column_lower_polynomial": [
+        1,
+        12,
+        66,
+        0,
+        0,
+        0,
+        2727,
+        330
+      ],
+      "pressure_threshold": "88029829501/1000000",
+      "positive_polynomial": [
+        1000000,
+        24000000,
+        210000000,
+        792000000,
+        0,
+        0,
+        -82245829501,
+        69804000000,
+        206514000000,
+        4356000000,
+        0,
+        0,
+        8336439000000,
+        1188792000000,
+        21780000000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 2,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "1000000"
+        },
+        {
+          "depth": 2,
+          "interval_index": 1,
+          "minimum_bernstein_coefficient": "21352579038369/1048576"
+        },
+        {
+          "depth": 1,
+          "interval_index": 1,
+          "minimum_bernstein_coefficient": "154986545499/64"
+        }
+      ]
+    },
+    {
+      "sites": 6,
+      "physical_dimension": 57,
+      "last_proved_column_order": 2,
+      "column_initial_counts": [
+        1,
+        12,
+        66
+      ],
+      "last_proved_row_order": 2,
+      "row_initial_counts": [
+        1,
+        12,
+        66
+      ],
+      "column_prefix_lower_bound": 100,
+      "row_prefix_budget": 242,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        12,
+        66,
+        0,
+        0,
+        0,
+        2840,
+        330
+      ],
+      "column_lower_polynomial": [
+        1,
+        12,
+        66,
+        0,
+        0,
+        0,
+        2840,
+        330
+      ],
+      "pressure_threshold": "46274478427/500000",
+      "positive_polynomial": [
+        500000,
+        12000000,
+        138000000,
+        792000000,
+        2178000000,
+        0,
+        -43434478427,
+        34410000000,
+        191400000000,
+        21780000000,
+        0,
+        0,
+        4032800000000,
+        937200000000,
+        54450000000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 0,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "500000"
+        }
+      ]
+    },
+    {
+      "sites": 6,
+      "physical_dimension": 58,
+      "last_proved_column_order": 2,
+      "column_initial_counts": [
+        1,
+        12,
+        66
+      ],
+      "last_proved_row_order": 2,
+      "row_initial_counts": [
+        1,
+        12,
+        66
+      ],
+      "column_prefix_lower_bound": 102,
+      "row_prefix_budget": 246,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        12,
+        66,
+        0,
+        0,
+        0,
+        2955,
+        330
+      ],
+      "column_lower_polynomial": [
+        1,
+        12,
+        66,
+        0,
+        0,
+        0,
+        2955,
+        330
+      ],
+      "pressure_threshold": "97215398383/1000000",
+      "positive_polynomial": [
+        1000000,
+        24000000,
+        276000000,
+        1584000000,
+        4356000000,
+        0,
+        -91305398383,
+        71580000000,
+        397980000000,
+        43560000000,
+        0,
+        0,
+        8732025000000,
+        1950300000000,
+        108900000000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 0,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "1000000"
+        }
+      ]
+    },
+    {
+      "sites": 6,
+      "physical_dimension": 59,
+      "last_proved_column_order": 2,
+      "column_initial_counts": [
+        1,
+        12,
+        66
+      ],
+      "last_proved_row_order": 2,
+      "row_initial_counts": [
+        1,
+        12,
+        66
+      ],
+      "column_prefix_lower_bound": 104,
+      "row_prefix_budget": 250,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        12,
+        66,
+        0,
+        0,
+        0,
+        3072,
+        330
+      ],
+      "column_lower_polynomial": [
+        1,
+        12,
+        66,
+        0,
+        0,
+        0,
+        3072,
+        330
+      ],
+      "pressure_threshold": "20406258391/200000",
+      "positive_polynomial": [
+        200000,
+        4800000,
+        55200000,
+        316800000,
+        871200000,
+        0,
+        -19177458391,
+        14877600000,
+        82684800000,
+        8712000000,
+        0,
+        0,
+        1887436800000,
+        405504000000,
+        21780000000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 0,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "200000"
+        }
+      ]
+    },
+    {
+      "sites": 6,
+      "physical_dimension": 60,
+      "last_proved_column_order": 2,
+      "column_initial_counts": [
+        1,
+        12,
+        66
+      ],
+      "last_proved_row_order": 2,
+      "row_initial_counts": [
+        1,
+        12,
+        66
+      ],
+      "column_prefix_lower_bound": 106,
+      "row_prefix_budget": 254,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        12,
+        66,
+        0,
+        0,
+        0,
+        3191,
+        330
+      ],
+      "column_lower_polynomial": [
+        1,
+        12,
+        66,
+        0,
+        0,
+        0,
+        3191,
+        330
+      ],
+      "pressure_threshold": "106998769119/1000000",
+      "positive_polynomial": [
+        1000000,
+        24000000,
+        276000000,
+        1584000000,
+        4356000000,
+        0,
+        -100616769119,
+        77244000000,
+        429132000000,
+        43560000000,
+        0,
+        0,
+        10182481000000,
+        2106060000000,
+        108900000000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 0,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "1000000"
+        }
+      ]
+    },
+    {
+      "sites": 6,
+      "physical_dimension": 61,
+      "last_proved_column_order": 3,
+      "column_initial_counts": [
+        1,
+        12,
+        66,
+        220
+      ],
+      "last_proved_row_order": 3,
+      "row_initial_counts": [
+        1,
+        12,
+        66,
+        220
+      ],
+      "column_prefix_lower_bound": 108,
+      "row_prefix_budget": 258,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        12,
+        66,
+        220,
+        0,
+        0,
+        2432,
+        990
+      ],
+      "column_lower_polynomial": [
+        1,
+        12,
+        66,
+        220,
+        0,
+        0,
+        2432,
+        990
+      ],
+      "pressure_threshold": "28029988809/250000",
+      "positive_polynomial": [
+        250000,
+        6000000,
+        69000000,
+        506000000,
+        2409000000,
+        7260000000,
+        -14713988809,
+        15087000000,
+        86196000000,
+        300190000000,
+        108900000000,
+        0,
+        1478656000000,
+        1203840000000,
+        245025000000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 0,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "250000"
+        }
+      ]
+    },
+    {
+      "sites": 6,
+      "physical_dimension": 62,
+      "last_proved_column_order": 3,
+      "column_initial_counts": [
+        1,
+        12,
+        66,
+        220
+      ],
+      "last_proved_row_order": 3,
+      "row_initial_counts": [
+        1,
+        12,
+        66,
+        220
+      ],
+      "column_prefix_lower_bound": 110,
+      "row_prefix_budget": 262,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        12,
+        66,
+        220,
+        0,
+        0,
+        2555,
+        990
+      ],
+      "column_lower_polynomial": [
+        1,
+        12,
+        66,
+        220,
+        0,
+        0,
+        2555,
+        990
+      ],
+      "pressure_threshold": "23479393919/200000",
+      "positive_polynomial": [
+        200000,
+        4800000,
+        55200000,
+        404800000,
+        1927200000,
+        5808000000,
+        -12777393919,
+        12660000000,
+        72204000000,
+        250976000000,
+        87120000000,
+        0,
+        1305605000000,
+        1011780000000,
+        196020000000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 0,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "200000"
+        }
+      ]
+    },
+    {
+      "sites": 6,
+      "physical_dimension": 63,
+      "last_proved_column_order": 4,
+      "column_initial_counts": [
+        1,
+        12,
+        66,
+        220,
+        495
+      ],
+      "last_proved_row_order": 4,
+      "row_initial_counts": [
+        1,
+        12,
+        66,
+        220,
+        495
+      ],
+      "column_prefix_lower_bound": 112,
+      "row_prefix_budget": 266,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        12,
+        66,
+        220,
+        495,
+        0,
+        1195,
+        1980
+      ],
+      "column_lower_polynomial": [
+        1,
+        12,
+        66,
+        220,
+        495,
+        0,
+        1195,
+        1980
+      ],
+      "pressure_threshold": "61415962767/500000",
+      "positive_polynomial": [
+        500000,
+        12000000,
+        138000000,
+        1012000000,
+        5313000000,
+        20460000000,
+        -3350962767,
+        125220000000,
+        225142500000,
+        393580000000,
+        1027125000000,
+        980100000000,
+        714012500000,
+        2366100000000,
+        1960200000000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 0,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "500000"
+        }
+      ]
+    },
+    {
+      "sites": 6,
+      "physical_dimension": 64,
+      "last_proved_column_order": 12,
+      "column_initial_counts": [
+        1,
+        12,
+        66,
+        220,
+        495,
+        792,
+        924,
+        792,
+        495,
+        220,
+        66,
+        12,
+        1
+      ],
+      "last_proved_row_order": 12,
+      "row_initial_counts": [
+        1,
+        12,
+        66,
+        220,
+        495,
+        792,
+        924,
+        792,
+        495,
+        220,
+        66,
+        12,
+        1
+      ],
+      "column_prefix_lower_bound": 114,
+      "row_prefix_budget": 270,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        12,
+        66,
+        220,
+        495,
+        792,
+        924,
+        792,
+        495,
+        220,
+        66,
+        12,
+        1
+      ],
+      "column_lower_polynomial": [
+        1,
+        12,
+        66,
+        220,
+        495,
+        792,
+        924,
+        792,
+        495,
+        220,
+        66,
+        12,
+        1
+      ],
+      "pressure_threshold": "128426930551/1000000",
+      "positive_polynomial": [
+        1000000,
+        24000000,
+        276000000,
+        2024000000,
+        10626000000,
+        42504000000,
+        6169069449,
+        346104000000,
+        735471000000,
+        1307504000000,
+        1961256000000,
+        2496144000000,
+        2704156000000,
+        2496144000000,
+        1961256000000,
+        1307504000000,
+        735471000000,
+        346104000000,
+        134596000000,
+        42504000000,
+        10626000000,
+        2024000000,
+        276000000,
+        24000000,
+        1000000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 0,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "1000000"
+        }
+      ]
+    },
+    {
+      "sites": 7,
+      "physical_dimension": 97,
+      "last_proved_column_order": 2,
+      "column_initial_counts": [
+        1,
+        14,
+        91
+      ],
+      "last_proved_row_order": 1,
+      "row_initial_counts": [
+        1,
+        14
+      ],
+      "column_prefix_lower_bound": 178,
+      "row_prefix_budget": 501,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        14,
+        0,
+        0,
+        0,
+        0,
+        0,
+        9303,
+        91
+      ],
+      "column_lower_polynomial": [
+        1,
+        14,
+        91,
+        0,
+        0,
+        0,
+        0,
+        8757,
+        546
+      ],
+      "pressure_threshold": "208169695827/500000",
+      "positive_polynomial": [
+        500000,
+        14000000,
+        143500000,
+        637000000,
+        0,
+        0,
+        0,
+        -199139695827,
+        126738500000,
+        427745500000,
+        4140500000,
+        0,
+        0,
+        0,
+        40733185500000,
+        2938162500000,
+        24843000000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 2,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "500000"
+        },
+        {
+          "depth": 3,
+          "interval_index": 2,
+          "minimum_bernstein_coefficient": "5467857562892876371/21990232555520"
+        },
+        {
+          "depth": 3,
+          "interval_index": 3,
+          "minimum_bernstein_coefficient": "43408417839136561727/4398046511104"
+        },
+        {
+          "depth": 1,
+          "interval_index": 1,
+          "minimum_bernstein_coefficient": "1268724888567/512"
+        }
+      ]
+    },
+    {
+      "sites": 7,
+      "physical_dimension": 98,
+      "last_proved_column_order": 2,
+      "column_initial_counts": [
+        1,
+        14,
+        91
+      ],
+      "last_proved_row_order": 1,
+      "row_initial_counts": [
+        1,
+        14
+      ],
+      "column_prefix_lower_bound": 180,
+      "row_prefix_budget": 506,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        14,
+        0,
+        0,
+        0,
+        0,
+        0,
+        9498,
+        91
+      ],
+      "column_lower_polynomial": [
+        1,
+        14,
+        91,
+        0,
+        0,
+        0,
+        0,
+        8952,
+        546
+      ],
+      "pressure_threshold": "214297106277/500000",
+      "positive_polynomial": [
+        500000,
+        14000000,
+        143500000,
+        637000000,
+        0,
+        0,
+        0,
+        -205072106277,
+        129468500000,
+        436618000000,
+        4140500000,
+        0,
+        0,
+        0,
+        42513048000000,
+        3000270000000,
+        24843000000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 2,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "500000"
+        },
+        {
+          "depth": 4,
+          "interval_index": 4,
+          "minimum_bernstein_coefficient": "1886884208958459830671875/288230376151711744"
+        },
+        {
+          "depth": 5,
+          "interval_index": 10,
+          "minimum_bernstein_coefficient": "8329310758592242106442538979/18889465931478580854784"
+        },
+        {
+          "depth": 6,
+          "interval_index": 22,
+          "minimum_bernstein_coefficient": "8420618589970521479836958054477/345752784409783943965966336"
+        },
+        {
+          "depth": 6,
+          "interval_index": 23,
+          "minimum_bernstein_coefficient": "1016467731781171514009952542464611/1237940039285380274899124224"
+        },
+        {
+          "depth": 3,
+          "interval_index": 3,
+          "minimum_bernstein_coefficient": "35241929856182893427/4398046511104"
+        },
+        {
+          "depth": 1,
+          "interval_index": 1,
+          "minimum_bernstein_coefficient": "2631837759159/1024"
+        }
+      ]
+    },
+    {
+      "sites": 7,
+      "physical_dimension": 113,
+      "last_proved_column_order": 2,
+      "column_initial_counts": [
+        1,
+        14,
+        91
+      ],
+      "last_proved_row_order": 2,
+      "row_initial_counts": [
+        1,
+        14,
+        91
+      ],
+      "column_prefix_lower_bound": 217,
+      "row_prefix_budget": 574,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        14,
+        91,
+        0,
+        0,
+        0,
+        0,
+        12117,
+        546
+      ],
+      "column_lower_polynomial": [
+        1,
+        14,
+        91,
+        0,
+        0,
+        0,
+        0,
+        12117,
+        546
+      ],
+      "pressure_threshold": "320598498613/500000",
+      "positive_polynomial": [
+        500000,
+        14000000,
+        189000000,
+        1274000000,
+        4140500000,
+        0,
+        0,
+        -308481498613,
+        170184000000,
+        1110291000000,
+        49686000000,
+        0,
+        0,
+        0,
+        73410844500000,
+        6615882000000,
+        149058000000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 1,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "500000"
+        },
+        {
+          "depth": 1,
+          "interval_index": 1,
+          "minimum_bernstein_coefficient": "180141660503/32"
+        }
+      ]
+    },
+    {
+      "sites": 7,
+      "physical_dimension": 114,
+      "last_proved_column_order": 2,
+      "column_initial_counts": [
+        1,
+        14,
+        91
+      ],
+      "last_proved_row_order": 2,
+      "row_initial_counts": [
+        1,
+        14,
+        91
+      ],
+      "column_prefix_lower_bound": 220,
+      "row_prefix_budget": 578,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        14,
+        91,
+        0,
+        0,
+        0,
+        0,
+        12344,
+        546
+      ],
+      "column_lower_polynomial": [
+        1,
+        14,
+        91,
+        0,
+        0,
+        0,
+        0,
+        12344,
+        546
+      ],
+      "pressure_threshold": "328688278059/500000",
+      "positive_polynomial": [
+        500000,
+        14000000,
+        189000000,
+        1274000000,
+        4140500000,
+        0,
+        0,
+        -316344278059,
+        173362000000,
+        1130948000000,
+        49686000000,
+        0,
+        0,
+        0,
+        76187168000000,
+        6739824000000,
+        149058000000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 1,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "500000"
+        },
+        {
+          "depth": 1,
+          "interval_index": 1,
+          "minimum_bernstein_coefficient": "2966525153389/512"
+        }
+      ]
+    },
+    {
+      "sites": 7,
+      "physical_dimension": 115,
+      "last_proved_column_order": 2,
+      "column_initial_counts": [
+        1,
+        14,
+        91
+      ],
+      "last_proved_row_order": 2,
+      "row_initial_counts": [
+        1,
+        14,
+        91
+      ],
+      "column_prefix_lower_bound": 223,
+      "row_prefix_budget": 582,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        14,
+        91,
+        0,
+        0,
+        0,
+        0,
+        12573,
+        546
+      ],
+      "column_lower_polynomial": [
+        1,
+        14,
+        91,
+        0,
+        0,
+        0,
+        0,
+        12573,
+        546
+      ],
+      "pressure_threshold": "336908854699/500000",
+      "positive_polynomial": [
+        500000,
+        14000000,
+        189000000,
+        1274000000,
+        4140500000,
+        0,
+        0,
+        -324335854699,
+        176568000000,
+        1151787000000,
+        49686000000,
+        0,
+        0,
+        0,
+        79040164500000,
+        6864858000000,
+        149058000000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 1,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "500000"
+        },
+        {
+          "depth": 1,
+          "interval_index": 1,
+          "minimum_bernstein_coefficient": "381614955463/64"
+        }
+      ]
+    },
+    {
+      "sites": 7,
+      "physical_dimension": 116,
+      "last_proved_column_order": 2,
+      "column_initial_counts": [
+        1,
+        14,
+        91
+      ],
+      "last_proved_row_order": 2,
+      "row_initial_counts": [
+        1,
+        14,
+        91
+      ],
+      "column_prefix_lower_bound": 226,
+      "row_prefix_budget": 586,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        14,
+        91,
+        0,
+        0,
+        0,
+        0,
+        12804,
+        546
+      ],
+      "column_lower_polynomial": [
+        1,
+        14,
+        91,
+        0,
+        0,
+        0,
+        0,
+        12804,
+        546
+      ],
+      "pressure_threshold": "172630589159/250000",
+      "positive_polynomial": [
+        250000,
+        7000000,
+        94500000,
+        637000000,
+        2070250000,
+        0,
+        0,
+        -166228589159,
+        89901000000,
+        586404000000,
+        24843000000,
+        0,
+        0,
+        0,
+        40985604000000,
+        3495492000000,
+        74529000000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 1,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "250000"
+        },
+        {
+          "depth": 1,
+          "interval_index": 1,
+          "minimum_bernstein_coefficient": "3141489177353/1024"
+        }
+      ]
+    },
+    {
+      "sites": 7,
+      "physical_dimension": 117,
+      "last_proved_column_order": 2,
+      "column_initial_counts": [
+        1,
+        14,
+        91
+      ],
+      "last_proved_row_order": 2,
+      "row_initial_counts": [
+        1,
+        14,
+        91
+      ],
+      "column_prefix_lower_bound": 229,
+      "row_prefix_budget": 590,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        14,
+        91,
+        0,
+        0,
+        0,
+        0,
+        13037,
+        546
+      ],
+      "column_lower_polynomial": [
+        1,
+        14,
+        91,
+        0,
+        0,
+        0,
+        0,
+        13037,
+        546
+      ],
+      "pressure_threshold": "70749239457/100000",
+      "positive_polynomial": [
+        100000,
+        2800000,
+        37800000,
+        254800000,
+        828100000,
+        0,
+        0,
+        -68141839457,
+        36612800000,
+        238802200000,
+        9937200000,
+        0,
+        0,
+        0,
+        16996336900000,
+        1423640400000,
+        29811600000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 1,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "100000"
+        },
+        {
+          "depth": 1,
+          "interval_index": 1,
+          "minimum_bernstein_coefficient": "40403415917/32"
+        }
+      ]
+    },
+    {
+      "sites": 7,
+      "physical_dimension": 118,
+      "last_proved_column_order": 2,
+      "column_initial_counts": [
+        1,
+        14,
+        91
+      ],
+      "last_proved_row_order": 2,
+      "row_initial_counts": [
+        1,
+        14,
+        91
+      ],
+      "column_prefix_lower_bound": 232,
+      "row_prefix_budget": 594,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        14,
+        91,
+        0,
+        0,
+        0,
+        0,
+        13272,
+        546
+      ],
+      "column_lower_polynomial": [
+        1,
+        14,
+        91,
+        0,
+        0,
+        0,
+        0,
+        13272,
+        546
+      ],
+      "pressure_threshold": "144945943427/200000",
+      "positive_polynomial": [
+        200000,
+        5600000,
+        75600000,
+        509600000,
+        1656200000,
+        0,
+        0,
+        -139637143427,
+        74541600000,
+        486158400000,
+        19874400000,
+        0,
+        0,
+        0,
+        35229196800000,
+        2898604800000,
+        59623200000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 1,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "200000"
+        },
+        {
+          "depth": 1,
+          "interval_index": 1,
+          "minimum_bernstein_coefficient": "665062366271/256"
+        }
+      ]
+    },
+    {
+      "sites": 7,
+      "physical_dimension": 119,
+      "last_proved_column_order": 2,
+      "column_initial_counts": [
+        1,
+        14,
+        91
+      ],
+      "last_proved_row_order": 2,
+      "row_initial_counts": [
+        1,
+        14,
+        91
+      ],
+      "column_prefix_lower_bound": 235,
+      "row_prefix_budget": 598,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        14,
+        91,
+        0,
+        0,
+        0,
+        0,
+        13509,
+        546
+      ],
+      "column_lower_polynomial": [
+        1,
+        14,
+        91,
+        0,
+        0,
+        0,
+        0,
+        13509,
+        546
+      ],
+      "pressure_threshold": "74223621549/100000",
+      "positive_polynomial": [
+        100000,
+        2800000,
+        37800000,
+        254800000,
+        828100000,
+        0,
+        0,
+        -71521821549,
+        37934400000,
+        247392600000,
+        9937200000,
+        0,
+        0,
+        0,
+        18249308100000,
+        1475182800000,
+        29811600000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 1,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "100000"
+        },
+        {
+          "depth": 1,
+          "interval_index": 1,
+          "minimum_bernstein_coefficient": "2672379009/2"
+        }
+      ]
+    },
+    {
+      "sites": 7,
+      "physical_dimension": 120,
+      "last_proved_column_order": 2,
+      "column_initial_counts": [
+        1,
+        14,
+        91
+      ],
+      "last_proved_row_order": 2,
+      "row_initial_counts": [
+        1,
+        14,
+        91
+      ],
+      "column_prefix_lower_bound": 238,
+      "row_prefix_budget": 602,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        14,
+        91,
+        0,
+        0,
+        0,
+        0,
+        13748,
+        546
+      ],
+      "column_lower_polynomial": [
+        1,
+        14,
+        91,
+        0,
+        0,
+        0,
+        0,
+        13748,
+        546
+      ],
+      "pressure_threshold": "152002755609/200000",
+      "positive_polynomial": [
+        200000,
+        5600000,
+        75600000,
+        509600000,
+        1656200000,
+        0,
+        0,
+        -146503555609,
+        77207200000,
+        503484800000,
+        19874400000,
+        0,
+        0,
+        0,
+        37801500800000,
+        3002563200000,
+        59623200000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 1,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "200000"
+        },
+        {
+          "depth": 1,
+          "interval_index": 1,
+          "minimum_bernstein_coefficient": "703662766907/256"
+        }
+      ]
+    },
+    {
+      "sites": 7,
+      "physical_dimension": 121,
+      "last_proved_column_order": 3,
+      "column_initial_counts": [
+        1,
+        14,
+        91,
+        364
+      ],
+      "last_proved_row_order": 3,
+      "row_initial_counts": [
+        1,
+        14,
+        91,
+        364
+      ],
+      "column_prefix_lower_bound": 241,
+      "row_prefix_budget": 606,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        14,
+        91,
+        364,
+        0,
+        0,
+        0,
+        12169,
+        2002
+      ],
+      "column_lower_polynomial": [
+        1,
+        14,
+        91,
+        364,
+        0,
+        0,
+        0,
+        12169,
+        2002
+      ],
+      "pressure_threshold": "194516072623/250000",
+      "positive_polynomial": [
+        250000,
+        7000000,
+        94500000,
+        819000000,
+        4618250000,
+        16562000000,
+        33124000000,
+        -188431572623,
+        86184000000,
+        567703500000,
+        2305849000000,
+        364364000000,
+        0,
+        0,
+        37021140250000,
+        12181169000000,
+        1002001000000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 0,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "250000"
+        }
+      ]
+    },
+    {
+      "sites": 7,
+      "physical_dimension": 122,
+      "last_proved_column_order": 3,
+      "column_initial_counts": [
+        1,
+        14,
+        91,
+        364
+      ],
+      "last_proved_row_order": 3,
+      "row_initial_counts": [
+        1,
+        14,
+        91,
+        364
+      ],
+      "column_prefix_lower_bound": 244,
+      "row_prefix_budget": 610,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        14,
+        91,
+        364,
+        0,
+        0,
+        0,
+        12412,
+        2002
+      ],
+      "column_lower_polynomial": [
+        1,
+        14,
+        91,
+        364,
+        0,
+        0,
+        0,
+        12412,
+        2002
+      ],
+      "pressure_threshold": "199097408957/250000",
+      "positive_polynomial": [
+        250000,
+        7000000,
+        94500000,
+        819000000,
+        4618250000,
+        16562000000,
+        33124000000,
+        -192891408957,
+        87885000000,
+        578760000000,
+        2350075000000,
+        364364000000,
+        0,
+        0,
+        38514436000000,
+        12424412000000,
+        1002001000000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 0,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "250000"
+        }
+      ]
+    },
+    {
+      "sites": 7,
+      "physical_dimension": 123,
+      "last_proved_column_order": 3,
+      "column_initial_counts": [
+        1,
+        14,
+        91,
+        364
+      ],
+      "last_proved_row_order": 3,
+      "row_initial_counts": [
+        1,
+        14,
+        91,
+        364
+      ],
+      "column_prefix_lower_bound": 247,
+      "row_prefix_budget": 614,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        14,
+        91,
+        364,
+        0,
+        0,
+        0,
+        12657,
+        2002
+      ],
+      "column_lower_polynomial": [
+        1,
+        14,
+        91,
+        364,
+        0,
+        0,
+        0,
+        12657,
+        2002
+      ],
+      "pressure_threshold": "814991694379/1000000",
+      "positive_polynomial": [
+        1000000,
+        28000000,
+        378000000,
+        3276000000,
+        18473000000,
+        66248000000,
+        132496000000,
+        -789677694379,
+        358400000000,
+        2359630000000,
+        9578660000000,
+        1457456000000,
+        0,
+        0,
+        160199649000000,
+        50678628000000,
+        4008004000000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 0,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "1000000"
+        }
+      ]
+    },
+    {
+      "sites": 7,
+      "physical_dimension": 124,
+      "last_proved_column_order": 3,
+      "column_initial_counts": [
+        1,
+        14,
+        91,
+        364
+      ],
+      "last_proved_row_order": 3,
+      "row_initial_counts": [
+        1,
+        14,
+        91,
+        364
+      ],
+      "column_prefix_lower_bound": 250,
+      "row_prefix_budget": 618,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        14,
+        91,
+        364,
+        0,
+        0,
+        0,
+        12904,
+        2002
+      ],
+      "column_lower_polynomial": [
+        1,
+        14,
+        91,
+        364,
+        0,
+        0,
+        0,
+        12904,
+        2002
+      ],
+      "pressure_threshold": "416936171917/500000",
+      "positive_polynomial": [
+        500000,
+        14000000,
+        189000000,
+        1638000000,
+        9236500000,
+        33124000000,
+        66248000000,
+        -404032171917,
+        182658000000,
+        1202292000000,
+        4879238000000,
+        728728000000,
+        0,
+        0,
+        83256608000000,
+        25833808000000,
+        2004002000000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 0,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "500000"
+        }
+      ]
+    },
+    {
+      "sites": 7,
+      "physical_dimension": 125,
+      "last_proved_column_order": 4,
+      "column_initial_counts": [
+        1,
+        14,
+        91,
+        364,
+        1001
+      ],
+      "last_proved_row_order": 4,
+      "row_initial_counts": [
+        1,
+        14,
+        91,
+        364,
+        1001
+      ],
+      "column_prefix_lower_bound": 253,
+      "row_prefix_budget": 622,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        14,
+        91,
+        364,
+        1001,
+        0,
+        0,
+        9149,
+        5005
+      ],
+      "column_lower_polynomial": [
+        1,
+        14,
+        91,
+        364,
+        1001,
+        0,
+        0,
+        9149,
+        5005
+      ],
+      "pressure_threshold": "853033459259/1000000",
+      "positive_polynomial": [
+        1000000,
+        28000000,
+        378000000,
+        3276000000,
+        20475000000,
+        94276000000,
+        314678000000,
+        -106007459259,
+        1268183000000,
+        1805258000000,
+        7571382000000,
+        21959938000000,
+        10020010000000,
+        0,
+        83704201000000,
+        91581490000000,
+        25050025000000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 0,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "1000000"
+        }
+      ]
+    },
+    {
+      "sites": 7,
+      "physical_dimension": 126,
+      "last_proved_column_order": 4,
+      "column_initial_counts": [
+        1,
+        14,
+        91,
+        364,
+        1001
+      ],
+      "last_proved_row_order": 4,
+      "row_initial_counts": [
+        1,
+        14,
+        91,
+        364,
+        1001
+      ],
+      "column_prefix_lower_bound": 256,
+      "row_prefix_budget": 626,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        14,
+        91,
+        364,
+        1001,
+        0,
+        0,
+        9400,
+        5005
+      ],
+      "column_lower_polynomial": [
+        1,
+        14,
+        91,
+        364,
+        1001,
+        0,
+        0,
+        9400,
+        5005
+      ],
+      "pressure_threshold": "872476913131/1000000",
+      "positive_polynomial": [
+        1000000,
+        28000000,
+        378000000,
+        3276000000,
+        20475000000,
+        94276000000,
+        314678000000,
+        -124948913131,
+        1275211000000,
+        1850940000000,
+        7754110000000,
+        22462440000000,
+        10020010000000,
+        0,
+        88360000000000,
+        94094000000000,
+        25050025000000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 0,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "1000000"
+        }
+      ]
+    },
+    {
+      "sites": 7,
+      "physical_dimension": 127,
+      "last_proved_column_order": 5,
+      "column_initial_counts": [
+        1,
+        14,
+        91,
+        364,
+        1001,
+        2002
+      ],
+      "last_proved_row_order": 5,
+      "row_initial_counts": [
+        1,
+        14,
+        91,
+        364,
+        1001,
+        2002
+      ],
+      "column_prefix_lower_bound": 259,
+      "row_prefix_budget": 630,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        14,
+        91,
+        364,
+        1001,
+        2002,
+        0,
+        3647,
+        9009
+      ],
+      "column_lower_polynomial": [
+        1,
+        14,
+        91,
+        364,
+        1001,
+        2002,
+        0,
+        3647,
+        9009
+      ],
+      "pressure_threshold": "892204575357/1000000",
+      "positive_polynomial": [
+        1000000,
+        28000000,
+        378000000,
+        3276000000,
+        20475000000,
+        98280000000,
+        370734000000,
+        208181424643,
+        2579591000000,
+        4924010000000,
+        8302658000000,
+        13859846000000,
+        32638606000000,
+        36072036000000,
+        13300609000000,
+        65711646000000,
+        81162081000000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 0,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "1000000"
+        }
+      ]
+    },
+    {
+      "sites": 7,
+      "physical_dimension": 128,
+      "last_proved_column_order": 14,
+      "column_initial_counts": [
+        1,
+        14,
+        91,
+        364,
+        1001,
+        2002,
+        3003,
+        3432,
+        3003,
+        2002,
+        1001,
+        364,
+        91,
+        14,
+        1
+      ],
+      "last_proved_row_order": 14,
+      "row_initial_counts": [
+        1,
+        14,
+        91,
+        364,
+        1001,
+        2002,
+        3003,
+        3432,
+        3003,
+        2002,
+        1001,
+        364,
+        91,
+        14,
+        1
+      ],
+      "column_prefix_lower_bound": 262,
+      "row_prefix_budget": 634,
+      "row_bound_used": "forced row multiplicities",
+      "row_lower_polynomial": [
+        1,
+        14,
+        91,
+        364,
+        1001,
+        2002,
+        3003,
+        3432,
+        3003,
+        2002,
+        1001,
+        364,
+        91,
+        14,
+        1
+      ],
+      "column_lower_polynomial": [
+        1,
+        14,
+        91,
+        364,
+        1001,
+        2002,
+        3003,
+        3432,
+        3003,
+        2002,
+        1001,
+        364,
+        91,
+        14,
+        1
+      ],
+      "pressure_threshold": "9122183133/10000",
+      "positive_polynomial": [
+        10000,
+        280000,
+        3780000,
+        32760000,
+        204750000,
+        982800000,
+        3767400000,
+        2718216867,
+        31081050000,
+        69069000000,
+        131231100000,
+        214741800000,
+        304217550000,
+        374421600000,
+        401166000000,
+        374421600000,
+        304217550000,
+        214741800000,
+        131231100000,
+        69069000000,
+        31081050000,
+        11840400000,
+        3767400000,
+        982800000,
+        204750000,
+        32760000,
+        3780000,
+        280000,
+        10000
+      ],
+      "bernstein_leaves": [
+        {
+          "depth": 0,
+          "interval_index": 0,
+          "minimum_bernstein_coefficient": "10000"
+        }
+      ]
+    }
+  ],
+  "floating_arithmetic_used": false,
+  "factoring_exponent_improved": false,
+  "source_sha256": {
+    "tools/clifford_compression.py": "989d895bcd06f2ab68c53e7660a471e02a1a3468066ac494fb47e65e79b911bb",
+    "tools/check_clifford_compression.py": "99272bef80f2ff8dd32ceee69c9c2a08ae874245c3cf4578e62a36cfefe3c11a",
+    "tools/linear_physical_restriction.py": "f66b9d3a99d99911d5d17c6e9dc21a22f9c21c7f7ff060eea755018f119dde5a",
+    "tools/check_integer_shared_minor_floor.py": "0062c4e7bd0a2784cd158ee34da4113e6b981e61c21b17e3f707c19e512c300c"
+  }
+}
