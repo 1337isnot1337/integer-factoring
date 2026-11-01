@@ -1,0 +1,76 @@
+{
+  "alphabet": 9,
+  "rho_floor": "709/1000",
+  "integer_constraint_weights": [
+    [
+      [
+        "prefix",
+        9
+      ],
+      44835
+    ],
+    [
+      [
+        "square cofactor cell",
+        9,
+        9,
+        81
+      ],
+      7
+    ],
+    [
+      [
+        "square cofactor shared line",
+        9,
+        9,
+        9
+      ],
+      484
+    ],
+    [
+      [
+        "rectangular jet cell",
+        4,
+        9,
+        36
+      ],
+      56
+    ],
+    [
+      [
+        "rectangular jet cell",
+        5,
+        9,
+        45
+      ],
+      59
+    ],
+    [
+      [
+        "rectangular jet cell",
+        6,
+        9,
+        54
+      ],
+      38
+    ],
+    [
+      [
+        "rectangular jet cell",
+        7,
+        9,
+        63
+      ],
+      25
+    ],
+    [
+      [
+        "rectangular jet cell",
+        8,
+        9,
+        72
+      ],
+      3
+    ]
+  ]
+}

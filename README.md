@@ -69,7 +69,8 @@ at three old parameter points; a global floor over all energies remains open.
 For the bare interface,
 [rectangular cofactor entropy witnesses](research/subalphabet-bare-nine-letter-floor.md)
 give all-field, all-degree, all-scale exclusions through nine physical letters;
-the nine-letter rate is greater than `17/24 > 1/sqrt(2)`.
+the [first-jet refinement](research/rectangular-adjugate-first-jet.md) strengthens
+the nine-letter rate to greater than `709/1000 > 1/sqrt(2)`.
 An [exact finite-window frame backend](research/windowed-smith-frames.md)
 makes repeated affine-frame construction practical while preserving the
 original low-coefficient systems. Its

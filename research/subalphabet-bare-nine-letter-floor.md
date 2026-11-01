@@ -1,5 +1,10 @@
 # Rectangular cofactors close the bare interface through nine letters
 
+**Later refinement:** the
+[first possible rectangular cofactor jet](rectangular-adjugate-first-jet.md)
+improves the nine-letter floor to `709/1000`, with a separate short exact
+entropy witness. Every certificate below remains valid.
+
 For scalar polynomial strict crossings over every field, the bare local
 Smith pressure satisfies the following **all-degree, all-scale** bounds:
 

@@ -1,5 +1,7 @@
 # Research index
 
+- [The first possible rectangular cofactor jet has bounded crossed rank](rectangular-adjugate-first-jet.md): stronger all-field adjugate prefixes and a nine-letter bare floor `709/1000`, with 416 interpolated cofactors, 6,168 lifted checks and an explicit binary counterexample to a stronger tail.
+
 - [Nonbinary flags with complete coordinate Fock profiles](f4-pascal-coordinate-flags.md): original F4 minors and occupation sectors with arbitrary whole-symbol potentials; 4,977 entry/endpoint controls, 210 independent nonbinary orders, and a registered eight-case thirty-two-letter screen with two one-hour follow-ons.
 
 - [Rectangular cofactors close the bare interface through nine letters](subalphabet-bare-nine-letter-floor.md): all-field, all-degree, all-scale floors `719/1000`, `713/1000` and `17/24` at seven, eight and nine letters, from short exact rational entropy witnesses. Independent physical gauges and factoring improvements remain open.

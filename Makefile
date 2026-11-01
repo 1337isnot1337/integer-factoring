@@ -2458,6 +2458,12 @@ verify-frontier: verify-subalphabet-bare-entropy
 verify-f4-pascal-coordinate-sectors:
 	OPENBLAS_NUM_THREADS=1 python3 tools/check_f4_pascal_coordinate_sectors.py --output /tmp/f4-pascal-coordinate-sectors.json
 
+.PHONY: verify-rectangular-adjugate-jets
+verify-rectangular-adjugate-jets:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_rectangular_adjugate_jets.py --output /tmp/rectangular-adjugate-jets.json
+
+verify-frontier: verify-rectangular-adjugate-jets
+
 .PHONY: verify-coherent-f4-partial
 verify-coherent-f4-partial:
 	python3 tools/check_coherent_hot_f4_partial.py
