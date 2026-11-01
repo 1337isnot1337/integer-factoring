@@ -1,0 +1,11 @@
+{
+  "complete_edge_incidence_rank_and_square_cases": 12,
+  "full_matching_gram_pairs": 11260,
+  "generic_alternating_copy_folds": 200,
+  "independent_polynomial_and_pfaffian_checks": 96,
+  "negative_control": "nonalternating cross-copy block breaks the fold",
+  "parameter_crossing_evaluations": 640,
+  "scalar_parameter_gram_pairs_over_F16": 6400,
+  "scope": "exact crossing constructor and scalar deformation; no improved joint-width bound",
+  "structured_copy_folds": 128
+}

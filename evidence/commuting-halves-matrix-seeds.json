@@ -1,0 +1,41 @@
+{
+  "checker_sha256": "62d895ca3c741e4155b0a06a5c84d3fdb31ce740108292e8ca93a282913cc243",
+  "example_trace_one_product_densities_rejected": 64,
+  "f4_common_scalarization_witness": {
+    "bra": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "field_polynomial": [
+      1,
+      1,
+      1
+    ],
+    "ket": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "matrix_row_bitmasks": [
+      1,
+      2,
+      6,
+      11
+    ],
+    "pairing": 1
+  },
+  "gathered_factor_entry_checks": 48,
+  "gl4_f2_matrices": 20160,
+  "matrix_entry_scalarization_checks": 256,
+  "negative_interleaving_control": true,
+  "no_basefield_common_bra_ket": 432,
+  "normalized_trace_checks": 60,
+  "ordered_crossing_entries": 4352,
+  "scope": "Finite ordered matrix identities and scalarizations; no improved catalytic seed.",
+  "seconds": 0.8324949589996322,
+  "status": "passed",
+  "type_word_comparisons": 1216
+}

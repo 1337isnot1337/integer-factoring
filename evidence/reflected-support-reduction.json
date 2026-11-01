@@ -1,0 +1,294 @@
+{
+  "charge_projected_coefficient_entries": 79848,
+  "fixed_particle_cases": [
+    {
+      "labels": [
+        [
+          1,
+          7
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "mode_box": 8,
+      "particles": 2,
+      "weight": 8
+    },
+    {
+      "labels": [
+        [
+          1,
+          11
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "mode_box": 16,
+      "particles": 2,
+      "weight": 12
+    },
+    {
+      "labels": [
+        [
+          1,
+          15
+        ],
+        [
+          3,
+          13
+        ],
+        [
+          5,
+          11
+        ],
+        [
+          7,
+          9
+        ]
+      ],
+      "mode_box": 16,
+      "particles": 2,
+      "weight": 16
+    },
+    {
+      "labels": [
+        [
+          1,
+          19
+        ],
+        [
+          3,
+          17
+        ],
+        [
+          5,
+          15
+        ],
+        [
+          7,
+          13
+        ],
+        [
+          9,
+          11
+        ]
+      ],
+      "mode_box": 32,
+      "particles": 2,
+      "weight": 20
+    },
+    {
+      "labels": [
+        [
+          1,
+          3,
+          11
+        ],
+        [
+          1,
+          5,
+          9
+        ],
+        [
+          3,
+          5,
+          7
+        ]
+      ],
+      "mode_box": 16,
+      "particles": 3,
+      "weight": 15
+    },
+    {
+      "labels": [
+        [
+          1,
+          3,
+          17
+        ],
+        [
+          1,
+          5,
+          15
+        ],
+        [
+          1,
+          7,
+          13
+        ],
+        [
+          1,
+          9,
+          11
+        ],
+        [
+          3,
+          5,
+          13
+        ],
+        [
+          3,
+          7,
+          11
+        ]
+      ],
+      "mode_box": 32,
+      "particles": 3,
+      "weight": 21
+    },
+    {
+      "labels": [
+        [
+          1,
+          3,
+          5,
+          15
+        ],
+        [
+          1,
+          3,
+          7,
+          13
+        ],
+        [
+          1,
+          3,
+          9,
+          11
+        ],
+        [
+          1,
+          5,
+          7,
+          11
+        ],
+        [
+          3,
+          5,
+          7,
+          9
+        ]
+      ],
+      "mode_box": 16,
+      "particles": 4,
+      "weight": 24
+    }
+  ],
+  "fixed_particle_polynomial_entries": 2980,
+  "hadamard_rank_inequalities": 102,
+  "new_factoring_exponent_claimed": false,
+  "scope": "exact finite checks of the proved far-reflection obstruction",
+  "small_box_negative_control": {
+    "labels": [
+      [
+        1,
+        15
+      ],
+      [
+        3,
+        13
+      ],
+      [
+        5,
+        11
+      ],
+      [
+        7,
+        9
+      ]
+    ],
+    "mode_box": 8,
+    "shift": 0,
+    "unsupported_index": [
+      0,
+      1,
+      0,
+      1
+    ],
+    "weight": 16
+  },
+  "status": "pass",
+  "varying_particle_cases": [
+    {
+      "dimension": 2,
+      "mask_ranks": [
+        3,
+        3
+      ],
+      "max_particles": 3,
+      "maximum_original_rank_product": 6,
+      "mode_box": 16,
+      "projected_shifts": [
+        -96,
+        -64,
+        -32,
+        0
+      ],
+      "unsupported_entries_before_projection": 2,
+      "weight": 9
+    },
+    {
+      "dimension": 4,
+      "mask_ranks": [
+        3,
+        3
+      ],
+      "max_particles": 3,
+      "maximum_original_rank_product": 100,
+      "mode_box": 16,
+      "projected_shifts": [
+        -96,
+        -64,
+        -32,
+        0
+      ],
+      "unsupported_entries_before_projection": 60,
+      "weight": 15
+    },
+    {
+      "dimension": 5,
+      "mask_ranks": [
+        3,
+        3
+      ],
+      "max_particles": 4,
+      "maximum_original_rank_product": 120,
+      "mode_box": 16,
+      "projected_shifts": [
+        -128,
+        -96,
+        -64,
+        -32,
+        0
+      ],
+      "unsupported_entries_before_projection": 104,
+      "weight": 16
+    },
+    {
+      "dimension": 8,
+      "mask_ranks": [
+        3,
+        3
+      ],
+      "max_particles": 3,
+      "maximum_original_rank_product": 1716,
+      "mode_box": 32,
+      "projected_shifts": [
+        -192,
+        -128,
+        -64,
+        0
+      ],
+      "unsupported_entries_before_projection": 256,
+      "weight": 21
+    }
+  ]
+}

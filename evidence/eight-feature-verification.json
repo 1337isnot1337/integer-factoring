@@ -1,0 +1,25 @@
+{
+  "checker_sha256": "8ed5bcf7a7c376ee232682edf85fe77390b71df5dfa03367226a2db85d806fb6",
+  "field": "F_2",
+  "independent_delayed_transition_cases": 8,
+  "independent_endpoint_entries": 131072,
+  "independent_full_tensor_cases": 24,
+  "independent_six_position_circulant_profiles": 6,
+  "independently_checked_short_witness_profiles": 39,
+  "packed_eight_position_baseline": 1,
+  "persistent_order_and_bit_flip_witness_lengths": [
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "persistent_witness_offdiagonal_shifts": [
+    0,
+    1,
+    2
+  ],
+  "scope": "Exact endpoint and finite ranks only; no asymptotic contraction claim.",
+  "source_sha256": "b74a8bf6bbd68972e86fbf6dbeacf024c19d31111320b8fe9e4bc58517ca4ea5",
+  "status": "passed"
+}

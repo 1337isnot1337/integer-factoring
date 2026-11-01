@@ -1,0 +1,136 @@
+{
+  "basis_coefficient_entries": 5018,
+  "checker_sha256": "cc6b65b1c431b0044efd5ef7b1e2c03dfa30cc6b87fa949145809ef540aaf7f9",
+  "column_factor_entries": 5018,
+  "crossing_entries": 994,
+  "divided_power_nilpotence_checks": 72,
+  "nonunit_top_coefficient_entries": 353,
+  "profiles": [
+    {
+      "col_ranks": [
+        3,
+        0,
+        1,
+        0,
+        9
+      ],
+      "energy": 4,
+      "labels": 3,
+      "prime": 2,
+      "row_ranks": [
+        8,
+        0,
+        2,
+        0,
+        1
+      ],
+      "weights": [
+        1,
+        2
+      ]
+    },
+    {
+      "col_ranks": [
+        6,
+        0,
+        1,
+        0,
+        16
+      ],
+      "energy": 4,
+      "labels": 4,
+      "prime": 2,
+      "row_ranks": [
+        16,
+        0,
+        2,
+        0,
+        1
+      ],
+      "weights": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "col_ranks": [
+        9,
+        16,
+        1,
+        13,
+        25
+      ],
+      "energy": 4,
+      "labels": 5,
+      "prime": 3,
+      "row_ranks": [
+        9,
+        13,
+        4,
+        3,
+        1
+      ],
+      "weights": [
+        1,
+        1
+      ]
+    },
+    {
+      "col_ranks": [
+        0,
+        0,
+        3,
+        0,
+        0,
+        4
+      ],
+      "energy": 5,
+      "labels": 2,
+      "prime": 3,
+      "row_ranks": [
+        0,
+        0,
+        3,
+        0,
+        0,
+        1
+      ],
+      "weights": [
+        1,
+        3
+      ]
+    },
+    {
+      "col_ranks": [
+        3,
+        3,
+        0,
+        0,
+        0,
+        4,
+        4
+      ],
+      "energy": 6,
+      "labels": 2,
+      "prime": 5,
+      "row_ranks": [
+        4,
+        4,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "weights": [
+        1,
+        5
+      ]
+    }
+  ],
+  "rank_bound_comparisons": 56,
+  "row_factor_entries": 5018,
+  "scope": "Finite coefficient/factor identities and exact ranks; no improved seed or asymptotic rank claim.",
+  "status": "passed"
+}

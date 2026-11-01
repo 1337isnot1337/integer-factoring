@@ -1,0 +1,280 @@
+{
+  "status": "PASS",
+  "paired_tag_projection_checks": 1836,
+  "uniform_divisor_bound": {
+    "inequality_checks": 1023,
+    "divisor_bound_checks": 8287,
+    "largest_constructed_input_bits": 36748
+  },
+  "streamed_product_checks": 5220,
+  "maximum_product_carry": 127,
+  "maximum_product_column_sum": 254,
+  "recovery_instances": [
+    {
+      "input": 2,
+      "control_degree": 1,
+      "raw_descriptors": 9,
+      "divisors": 2,
+      "prime_factorization": [
+        [
+          2,
+          1
+        ]
+      ],
+      "counts": {
+        "scalar_queries": 171,
+        "bit_queries": 853,
+        "product_checks": 80,
+        "comparisons": 63,
+        "max_carry": 0,
+        "max_column_sum": 1
+      }
+    },
+    {
+      "input": 3,
+      "control_degree": 1,
+      "raw_descriptors": 9,
+      "divisors": 2,
+      "prime_factorization": [
+        [
+          3,
+          1
+        ]
+      ],
+      "counts": {
+        "scalar_queries": 171,
+        "bit_queries": 872,
+        "product_checks": 80,
+        "comparisons": 63,
+        "max_carry": 1,
+        "max_column_sum": 2
+      }
+    },
+    {
+      "input": 4,
+      "control_degree": 2,
+      "raw_descriptors": 81,
+      "divisors": 3,
+      "prime_factorization": [
+        [
+          2,
+          2
+        ]
+      ],
+      "counts": {
+        "scalar_queries": 2340,
+        "bit_queries": 13080,
+        "product_checks": 624,
+        "comparisons": 603,
+        "max_carry": 0,
+        "max_column_sum": 1
+      }
+    },
+    {
+      "input": 6,
+      "control_degree": 3,
+      "raw_descriptors": 729,
+      "divisors": 4,
+      "prime_factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "counts": {
+        "scalar_queries": 44612,
+        "bit_queries": 140105,
+        "product_checks": 6809,
+        "comparisons": 5833,
+        "max_carry": 1,
+        "max_column_sum": 2
+      }
+    },
+    {
+      "input": 9,
+      "control_degree": 2,
+      "raw_descriptors": 81,
+      "divisors": 3,
+      "prime_factorization": [
+        [
+          3,
+          2
+        ]
+      ],
+      "counts": {
+        "scalar_queries": 2367,
+        "bit_queries": 22870,
+        "product_checks": 630,
+        "comparisons": 595,
+        "max_carry": 1,
+        "max_column_sum": 3
+      }
+    },
+    {
+      "input": 12,
+      "control_degree": 3,
+      "raw_descriptors": 729,
+      "divisors": 6,
+      "prime_factorization": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "counts": {
+        "scalar_queries": 53716,
+        "bit_queries": 393055,
+        "product_checks": 11323,
+        "comparisons": 11193,
+        "max_carry": 1,
+        "max_column_sum": 2
+      }
+    },
+    {
+      "input": 15,
+      "control_degree": 3,
+      "raw_descriptors": 729,
+      "divisors": 4,
+      "prime_factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "counts": {
+        "scalar_queries": 43883,
+        "bit_queries": 232208,
+        "product_checks": 6660,
+        "comparisons": 5765,
+        "max_carry": 1,
+        "max_column_sum": 2
+      }
+    },
+    {
+      "input": 16,
+      "control_degree": 3,
+      "raw_descriptors": 729,
+      "divisors": 5,
+      "prime_factorization": [
+        [
+          2,
+          4
+        ]
+      ],
+      "counts": {
+        "scalar_queries": 29953,
+        "bit_queries": 280662,
+        "product_checks": 5115,
+        "comparisons": 5966,
+        "max_carry": 0,
+        "max_column_sum": 1
+      }
+    },
+    {
+      "input": 18,
+      "control_degree": 3,
+      "raw_descriptors": 729,
+      "divisors": 6,
+      "prime_factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "counts": {
+        "scalar_queries": 52473,
+        "bit_queries": 582091,
+        "product_checks": 11014,
+        "comparisons": 10930,
+        "max_carry": 1,
+        "max_column_sum": 3
+      }
+    },
+    {
+      "input": 25,
+      "control_degree": 3,
+      "raw_descriptors": 729,
+      "divisors": 3,
+      "prime_factorization": [
+        [
+          5,
+          2
+        ]
+      ],
+      "counts": {
+        "scalar_queries": 20500,
+        "bit_queries": 124239,
+        "product_checks": 2244,
+        "comparisons": 2367,
+        "max_carry": 1,
+        "max_column_sum": 4
+      }
+    },
+    {
+      "input": 49,
+      "control_degree": 3,
+      "raw_descriptors": 729,
+      "divisors": 3,
+      "prime_factorization": [
+        [
+          7,
+          2
+        ]
+      ],
+      "counts": {
+        "scalar_queries": 20684,
+        "bit_queries": 169177,
+        "product_checks": 2192,
+        "comparisons": 2265,
+        "max_carry": 2,
+        "max_column_sum": 6
+      }
+    },
+    {
+      "input": 77,
+      "control_degree": 3,
+      "raw_descriptors": 729,
+      "divisors": 4,
+      "prime_factorization": [
+        [
+          7,
+          1
+        ],
+        [
+          11,
+          1
+        ]
+      ],
+      "counts": {
+        "scalar_queries": 41736,
+        "bit_queries": 483849,
+        "product_checks": 5050,
+        "comparisons": 4334,
+        "max_carry": 2,
+        "max_column_sum": 4
+      }
+    }
+  ],
+  "exact_prefix_count_checks": 46,
+  "duplicate_valid_descriptors_removed": 826,
+  "odd_collision_buckets_rejected": 12,
+  "coefficient_ring_cardinality": 16,
+  "scope": "Finite bucket oracles verify descriptor controls; no huge clique evaluator is implemented.",
+  "space_model": "Read-only input, write-only output; handles and counters only in recovery control."
+}

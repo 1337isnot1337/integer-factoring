@@ -1,0 +1,51 @@
+{
+  "amplified_endpoint_entries": 4368,
+  "car_structures": [
+    {
+      "auxiliary_dimension": 4,
+      "car_and_cross_commutation_checks": 16,
+      "fock_dimension": 2,
+      "invalid_car_gather_rejected": true,
+      "modes": 1,
+      "new_terminal_bilinear_rank": 1,
+      "original_terminal_bilinear_rank": 2,
+      "wick_vector_identities": 1
+    },
+    {
+      "auxiliary_dimension": 16,
+      "car_and_cross_commutation_checks": 52,
+      "fock_dimension": 4,
+      "invalid_car_gather_rejected": true,
+      "modes": 2,
+      "new_terminal_bilinear_rank": 1,
+      "original_terminal_bilinear_rank": 4,
+      "wick_vector_identities": 16
+    }
+  ],
+  "checker_sha256": "4c193aff6c44c17efb2559a100ed13b43d4db84121566be89c5b6edd78c7be3a",
+  "endpoint_reachable_dimension": 1,
+  "exact_cut_factor_identities": 64,
+  "gathered_channel_word_checks": 256,
+  "global_cross_half_commutators": 219,
+  "length_one_only_negative_control_reachable_dimension": 3,
+  "normalized_product_densities_rejected": 64,
+  "observable_quotient_reachable_dimension": 2,
+  "one_piece_extended_cut_profile": [
+    11,
+    11
+  ],
+  "ordered_type_coefficient_comparisons": 864,
+  "scope": "Exact constructive interface and noncollapse control; the toy rank sum is thirteen and does not improve the factoring score.",
+  "seconds": 0.13347773600071378,
+  "status": "passed",
+  "two_piece_extended_cut_profiles": [
+    [
+      1,
+      1
+    ],
+    [
+      12,
+      12
+    ]
+  ]
+}

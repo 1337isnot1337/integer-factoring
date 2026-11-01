@@ -1,0 +1,49 @@
+{
+  "status": "exact checks of the uniform invariant-rank obstruction",
+  "diagram_count": 15,
+  "fields": [
+    2,
+    3,
+    5
+  ],
+  "position_rank_checks": 180,
+  "colored_leading_block_checks": 96,
+  "ordered_two_defect_rank_replication_checks": 8,
+  "two_defect_full_through_bijections": 24,
+  "two_defect_pulled_back_crossing_entries": 20736,
+  "zero_sum_gram_checks": 24,
+  "admissible_two_defect_diagrams": 1657,
+  "two_defect_refinement_projection_checks": 16,
+  "row_two_through_diagrams": [
+    [
+      0,
+      1,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      1
+    ]
+  ],
+  "column_two_through_diagrams": [
+    [
+      0,
+      1,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      1
+    ]
+  ],
+  "rank_lower_bound": "binom(t,2)-13*q^2*t in each cut of the same piece",
+  "uniform_rank_lower_bound": "(floor(t/(2*b))-2)^(2*b) in both cuts when t>=6*b",
+  "scope": "simultaneous position-permutation invariance; fixed-color contraction obstruction when t/b tends to infinity",
+  "negative_control": "exact equality-orbit values differ from diagram coefficients"
+}

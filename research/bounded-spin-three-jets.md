@@ -143,9 +143,9 @@ s^6+3s^4t^2,\quad s^3t.
 ```
 
 The pencil is `s=1,t=1-2z`. These explicit scalar polynomials model the
-small coefficient spaces. A complete modular generation argument and,
-more importantly, ordinary-rank formulas for the associated tensor
-coefficients remain to be supplied. Counting invariants or noting the
+small coefficient spaces. A [direct orthogonal-group proof](four-qubit-orthogonal-generators.md)
+now supplies the modular invariant generators. Ordinary-rank formulas for
+the associated tensor coefficients remain to be supplied. Counting invariants or noting the
 triple Gram eigenvalue does not determine cut-rank growth.
 
 ## Verification

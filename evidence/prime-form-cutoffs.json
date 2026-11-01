@@ -1,0 +1,428 @@
+{
+  "scope": "Exact cutoff and budget arithmetic under the stated analytic theorem; no prime enumeration or analytic theorem verification",
+  "ceil_log_two_checks": 4096,
+  "generation_cutoff_checks": 7,
+  "sample_budget_checks": 42,
+  "records": [
+    {
+      "discriminant_bits": 2,
+      "epsilon_numerator_bits": 1,
+      "epsilon_denominator_bits": 2,
+      "cutoff_bits": 532,
+      "weight_bits": 7,
+      "normalized_error_le_epsilon_over_32": true,
+      "unrounded_bias_lt_epsilon_over_4": true,
+      "rounded_bias_lt_epsilon": true
+    },
+    {
+      "discriminant_bits": 2,
+      "epsilon_numerator_bits": 2,
+      "epsilon_denominator_bits": 3,
+      "cutoff_bits": 566,
+      "weight_bits": 8,
+      "normalized_error_le_epsilon_over_32": true,
+      "unrounded_bias_lt_epsilon_over_4": true,
+      "rounded_bias_lt_epsilon": true
+    },
+    {
+      "discriminant_bits": 2,
+      "epsilon_numerator_bits": 1,
+      "epsilon_denominator_bits": 5,
+      "cutoff_bits": 650,
+      "weight_bits": 10,
+      "normalized_error_le_epsilon_over_32": true,
+      "unrounded_bias_lt_epsilon_over_4": true,
+      "rounded_bias_lt_epsilon": true
+    },
+    {
+      "discriminant_bits": 2,
+      "epsilon_numerator_bits": 2,
+      "epsilon_denominator_bits": 10,
+      "cutoff_bits": 812,
+      "weight_bits": 14,
+      "normalized_error_le_epsilon_over_32": true,
+      "unrounded_bias_lt_epsilon_over_4": true,
+      "rounded_bias_lt_epsilon": true
+    },
+    {
+      "discriminant_bits": 2,
+      "epsilon_numerator_bits": 1,
+      "epsilon_denominator_bits": 65,
+      "cutoff_bits": 2669,
+      "weight_bits": 70,
+      "normalized_error_le_epsilon_over_32": true,
+      "unrounded_bias_lt_epsilon_over_4": true,
+      "rounded_bias_lt_epsilon": true
+    },
+    {
+      "discriminant_bits": 2,
+      "epsilon_numerator_bits": 1,
+      "epsilon_denominator_bits": 1025,
+      "cutoff_bits": 33514,
+      "weight_bits": 1030,
+      "normalized_error_le_epsilon_over_32": true,
+      "unrounded_bias_lt_epsilon_over_4": true,
+      "rounded_bias_lt_epsilon": true
+    },
+    {
+      "discriminant_bits": 3,
+      "epsilon_numerator_bits": 1,
+      "epsilon_denominator_bits": 2,
+      "cutoff_bits": 540,
+      "weight_bits": 7,
+      "normalized_error_le_epsilon_over_32": true,
+      "unrounded_bias_lt_epsilon_over_4": true,
+      "rounded_bias_lt_epsilon": true
+    },
+    {
+      "discriminant_bits": 3,
+      "epsilon_numerator_bits": 2,
+      "epsilon_denominator_bits": 3,
+      "cutoff_bits": 573,
+      "weight_bits": 8,
+      "normalized_error_le_epsilon_over_32": true,
+      "unrounded_bias_lt_epsilon_over_4": true,
+      "rounded_bias_lt_epsilon": true
+    },
+    {
+      "discriminant_bits": 3,
+      "epsilon_numerator_bits": 1,
+      "epsilon_denominator_bits": 5,
+      "cutoff_bits": 655,
+      "weight_bits": 10,
+      "normalized_error_le_epsilon_over_32": true,
+      "unrounded_bias_lt_epsilon_over_4": true,
+      "rounded_bias_lt_epsilon": true
+    },
+    {
+      "discriminant_bits": 3,
+      "epsilon_numerator_bits": 2,
+      "epsilon_denominator_bits": 10,
+      "cutoff_bits": 816,
+      "weight_bits": 14,
+      "normalized_error_le_epsilon_over_32": true,
+      "unrounded_bias_lt_epsilon_over_4": true,
+      "rounded_bias_lt_epsilon": true
+    },
+    {
+      "discriminant_bits": 3,
+      "epsilon_numerator_bits": 1,
+      "epsilon_denominator_bits": 65,
+      "cutoff_bits": 2669,
+      "weight_bits": 70,
+      "normalized_error_le_epsilon_over_32": true,
+      "unrounded_bias_lt_epsilon_over_4": true,
+      "rounded_bias_lt_epsilon": true
+    },
+    {
+      "discriminant_bits": 3,
+      "epsilon_numerator_bits": 1,
+      "epsilon_denominator_bits": 1025,
+      "cutoff_bits": 33514,
+      "weight_bits": 1030,
+      "normalized_error_le_epsilon_over_32": true,
+      "unrounded_bias_lt_epsilon_over_4": true,
+      "rounded_bias_lt_epsilon": true
+    },
+    {
+      "discriminant_bits": 8,
+      "epsilon_numerator_bits": 1,
+      "epsilon_denominator_bits": 2,
+      "cutoff_bits": 568,
+      "weight_bits": 7,
+      "normalized_error_le_epsilon_over_32": true,
+      "unrounded_bias_lt_epsilon_over_4": true,
+      "rounded_bias_lt_epsilon": true
+    },
+    {
+      "discriminant_bits": 8,
+      "epsilon_numerator_bits": 2,
+      "epsilon_denominator_bits": 3,
+      "cutoff_bits": 598,
+      "weight_bits": 8,
+      "normalized_error_le_epsilon_over_32": true,
+      "unrounded_bias_lt_epsilon_over_4": true,
+      "rounded_bias_lt_epsilon": true
+    },
+    {
+      "discriminant_bits": 8,
+      "epsilon_numerator_bits": 1,
+      "epsilon_denominator_bits": 5,
+      "cutoff_bits": 676,
+      "weight_bits": 10,
+      "normalized_error_le_epsilon_over_32": true,
+      "unrounded_bias_lt_epsilon_over_4": true,
+      "rounded_bias_lt_epsilon": true
+    },
+    {
+      "discriminant_bits": 8,
+      "epsilon_numerator_bits": 2,
+      "epsilon_denominator_bits": 10,
+      "cutoff_bits": 830,
+      "weight_bits": 14,
+      "normalized_error_le_epsilon_over_32": true,
+      "unrounded_bias_lt_epsilon_over_4": true,
+      "rounded_bias_lt_epsilon": true
+    },
+    {
+      "discriminant_bits": 8,
+      "epsilon_numerator_bits": 1,
+      "epsilon_denominator_bits": 65,
+      "cutoff_bits": 2672,
+      "weight_bits": 70,
+      "normalized_error_le_epsilon_over_32": true,
+      "unrounded_bias_lt_epsilon_over_4": true,
+      "rounded_bias_lt_epsilon": true
+    },
+    {
+      "discriminant_bits": 8,
+      "epsilon_numerator_bits": 1,
+      "epsilon_denominator_bits": 1025,
+      "cutoff_bits": 33514,
+      "weight_bits": 1030,
+      "normalized_error_le_epsilon_over_32": true,
+      "unrounded_bias_lt_epsilon_over_4": true,
+      "rounded_bias_lt_epsilon": true
+    },
+    {
+      "discriminant_bits": 16,
+      "epsilon_numerator_bits": 1,
+      "epsilon_denominator_bits": 2,
+      "cutoff_bits": 594,
+      "weight_bits": 7,
+      "normalized_error_le_epsilon_over_32": true,
+      "unrounded_bias_lt_epsilon_over_4": true,
+      "rounded_bias_lt_epsilon": true
+    },
+    {
+      "discriminant_bits": 16,
+      "epsilon_numerator_bits": 2,
+      "epsilon_denominator_bits": 3,
+      "cutoff_bits": 622,
+      "weight_bits": 8,
+      "normalized_error_le_epsilon_over_32": true,
+      "unrounded_bias_lt_epsilon_over_4": true,
+      "rounded_bias_lt_epsilon": true
+    },
+    {
+      "discriminant_bits": 16,
+      "epsilon_numerator_bits": 1,
+      "epsilon_denominator_bits": 5,
+      "cutoff_bits": 696,
+      "weight_bits": 10,
+      "normalized_error_le_epsilon_over_32": true,
+      "unrounded_bias_lt_epsilon_over_4": true,
+      "rounded_bias_lt_epsilon": true
+    },
+    {
+      "discriminant_bits": 16,
+      "epsilon_numerator_bits": 2,
+      "epsilon_denominator_bits": 10,
+      "cutoff_bits": 846,
+      "weight_bits": 14,
+      "normalized_error_le_epsilon_over_32": true,
+      "unrounded_bias_lt_epsilon_over_4": true,
+      "rounded_bias_lt_epsilon": true
+    },
+    {
+      "discriminant_bits": 16,
+      "epsilon_numerator_bits": 1,
+      "epsilon_denominator_bits": 65,
+      "cutoff_bits": 2677,
+      "weight_bits": 70,
+      "normalized_error_le_epsilon_over_32": true,
+      "unrounded_bias_lt_epsilon_over_4": true,
+      "rounded_bias_lt_epsilon": true
+    },
+    {
+      "discriminant_bits": 16,
+      "epsilon_numerator_bits": 1,
+      "epsilon_denominator_bits": 1025,
+      "cutoff_bits": 33515,
+      "weight_bits": 1030,
+      "normalized_error_le_epsilon_over_32": true,
+      "unrounded_bias_lt_epsilon_over_4": true,
+      "rounded_bias_lt_epsilon": true
+    },
+    {
+      "discriminant_bits": 64,
+      "epsilon_numerator_bits": 1,
+      "epsilon_denominator_bits": 2,
+      "cutoff_bits": 652,
+      "weight_bits": 7,
+      "normalized_error_le_epsilon_over_32": true,
+      "unrounded_bias_lt_epsilon_over_4": true,
+      "rounded_bias_lt_epsilon": true
+    },
+    {
+      "discriminant_bits": 64,
+      "epsilon_numerator_bits": 2,
+      "epsilon_denominator_bits": 3,
+      "cutoff_bits": 678,
+      "weight_bits": 8,
+      "normalized_error_le_epsilon_over_32": true,
+      "unrounded_bias_lt_epsilon_over_4": true,
+      "rounded_bias_lt_epsilon": true
+    },
+    {
+      "discriminant_bits": 64,
+      "epsilon_numerator_bits": 1,
+      "epsilon_denominator_bits": 5,
+      "cutoff_bits": 750,
+      "weight_bits": 10,
+      "normalized_error_le_epsilon_over_32": true,
+      "unrounded_bias_lt_epsilon_over_4": true,
+      "rounded_bias_lt_epsilon": true
+    },
+    {
+      "discriminant_bits": 64,
+      "epsilon_numerator_bits": 2,
+      "epsilon_denominator_bits": 10,
+      "cutoff_bits": 893,
+      "weight_bits": 14,
+      "normalized_error_le_epsilon_over_32": true,
+      "unrounded_bias_lt_epsilon_over_4": true,
+      "rounded_bias_lt_epsilon": true
+    },
+    {
+      "discriminant_bits": 64,
+      "epsilon_numerator_bits": 1,
+      "epsilon_denominator_bits": 65,
+      "cutoff_bits": 2698,
+      "weight_bits": 70,
+      "normalized_error_le_epsilon_over_32": true,
+      "unrounded_bias_lt_epsilon_over_4": true,
+      "rounded_bias_lt_epsilon": true
+    },
+    {
+      "discriminant_bits": 64,
+      "epsilon_numerator_bits": 1,
+      "epsilon_denominator_bits": 1025,
+      "cutoff_bits": 33517,
+      "weight_bits": 1030,
+      "normalized_error_le_epsilon_over_32": true,
+      "unrounded_bias_lt_epsilon_over_4": true,
+      "rounded_bias_lt_epsilon": true
+    },
+    {
+      "discriminant_bits": 1024,
+      "epsilon_numerator_bits": 1,
+      "epsilon_denominator_bits": 2,
+      "cutoff_bits": 778,
+      "weight_bits": 7,
+      "normalized_error_le_epsilon_over_32": true,
+      "unrounded_bias_lt_epsilon_over_4": true,
+      "rounded_bias_lt_epsilon": true
+    },
+    {
+      "discriminant_bits": 1024,
+      "epsilon_numerator_bits": 2,
+      "epsilon_denominator_bits": 3,
+      "cutoff_bits": 804,
+      "weight_bits": 8,
+      "normalized_error_le_epsilon_over_32": true,
+      "unrounded_bias_lt_epsilon_over_4": true,
+      "rounded_bias_lt_epsilon": true
+    },
+    {
+      "discriminant_bits": 1024,
+      "epsilon_numerator_bits": 1,
+      "epsilon_denominator_bits": 5,
+      "cutoff_bits": 874,
+      "weight_bits": 10,
+      "normalized_error_le_epsilon_over_32": true,
+      "unrounded_bias_lt_epsilon_over_4": true,
+      "rounded_bias_lt_epsilon": true
+    },
+    {
+      "discriminant_bits": 1024,
+      "epsilon_numerator_bits": 2,
+      "epsilon_denominator_bits": 10,
+      "cutoff_bits": 1014,
+      "weight_bits": 14,
+      "normalized_error_le_epsilon_over_32": true,
+      "unrounded_bias_lt_epsilon_over_4": true,
+      "rounded_bias_lt_epsilon": true
+    },
+    {
+      "discriminant_bits": 1024,
+      "epsilon_numerator_bits": 1,
+      "epsilon_denominator_bits": 65,
+      "cutoff_bits": 2797,
+      "weight_bits": 70,
+      "normalized_error_le_epsilon_over_32": true,
+      "unrounded_bias_lt_epsilon_over_4": true,
+      "rounded_bias_lt_epsilon": true
+    },
+    {
+      "discriminant_bits": 1024,
+      "epsilon_numerator_bits": 1,
+      "epsilon_denominator_bits": 1025,
+      "cutoff_bits": 33546,
+      "weight_bits": 1030,
+      "normalized_error_le_epsilon_over_32": true,
+      "unrounded_bias_lt_epsilon_over_4": true,
+      "rounded_bias_lt_epsilon": true
+    },
+    {
+      "discriminant_bits": 1048576,
+      "epsilon_numerator_bits": 1,
+      "epsilon_denominator_bits": 2,
+      "cutoff_bits": 1098,
+      "weight_bits": 7,
+      "normalized_error_le_epsilon_over_32": true,
+      "unrounded_bias_lt_epsilon_over_4": true,
+      "rounded_bias_lt_epsilon": true
+    },
+    {
+      "discriminant_bits": 1048576,
+      "epsilon_numerator_bits": 2,
+      "epsilon_denominator_bits": 3,
+      "cutoff_bits": 1124,
+      "weight_bits": 8,
+      "normalized_error_le_epsilon_over_32": true,
+      "unrounded_bias_lt_epsilon_over_4": true,
+      "rounded_bias_lt_epsilon": true
+    },
+    {
+      "discriminant_bits": 1048576,
+      "epsilon_numerator_bits": 1,
+      "epsilon_denominator_bits": 5,
+      "cutoff_bits": 1194,
+      "weight_bits": 10,
+      "normalized_error_le_epsilon_over_32": true,
+      "unrounded_bias_lt_epsilon_over_4": true,
+      "rounded_bias_lt_epsilon": true
+    },
+    {
+      "discriminant_bits": 1048576,
+      "epsilon_numerator_bits": 2,
+      "epsilon_denominator_bits": 10,
+      "cutoff_bits": 1334,
+      "weight_bits": 14,
+      "normalized_error_le_epsilon_over_32": true,
+      "unrounded_bias_lt_epsilon_over_4": true,
+      "rounded_bias_lt_epsilon": true
+    },
+    {
+      "discriminant_bits": 1048576,
+      "epsilon_numerator_bits": 1,
+      "epsilon_denominator_bits": 65,
+      "cutoff_bits": 3114,
+      "weight_bits": 70,
+      "normalized_error_le_epsilon_over_32": true,
+      "unrounded_bias_lt_epsilon_over_4": true,
+      "rounded_bias_lt_epsilon": true
+    },
+    {
+      "discriminant_bits": 1048576,
+      "epsilon_numerator_bits": 1,
+      "epsilon_denominator_bits": 1025,
+      "cutoff_bits": 33834,
+      "weight_bits": 1030,
+      "normalized_error_le_epsilon_over_32": true,
+      "unrounded_bias_lt_epsilon_over_4": true,
+      "rounded_bias_lt_epsilon": true
+    }
+  ]
+}

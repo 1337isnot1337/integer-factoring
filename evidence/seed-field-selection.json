@@ -1,0 +1,24 @@
+{
+  "bad_prime_rank_drops_observed": 107,
+  "base_field_projection_rank_bounds": 301,
+  "checker_sha256": "14e07373d278ad22eef23c2695d537af60f3267ab91778cceac60e076c65696c",
+  "delayed_bounded_selections": 4095,
+  "expanded_width_entropy_envelopes": 512,
+  "extension_rank_equalities": 300,
+  "field_axiom_triples": 1465,
+  "field_orders": [
+    2,
+    3,
+    4,
+    5,
+    8,
+    9
+  ],
+  "integer_cap_checks": 77820,
+  "integer_matrix_reductions": 500,
+  "invalid_fields_and_seeds_rejected": 24,
+  "scope": "Finite field arithmetic, exact seed validation, selection and resource caps; no improved factoring exponent.",
+  "selected_field_changes": 3,
+  "status": "passed",
+  "valid_crossing_seed_checks": 12
+}

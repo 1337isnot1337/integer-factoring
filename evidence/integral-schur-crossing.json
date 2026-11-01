@@ -1,0 +1,422 @@
+{
+  "both_order_complete_piece_entries": 11971,
+  "complete_piece_integrality_entries": 256852,
+  "duality_entries": 552,
+  "families": [
+    {
+      "dimension": 1,
+      "homogeneous": false,
+      "maximum_rank_product": 1,
+      "profile": [
+        [
+          -2,
+          1,
+          1
+        ],
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          2,
+          1,
+          1
+        ]
+      ],
+      "weight": 1
+    },
+    {
+      "dimension": 2,
+      "homogeneous": false,
+      "maximum_rank_product": 4,
+      "profile": [
+        [
+          -4,
+          1,
+          4
+        ],
+        [
+          -3,
+          1,
+          2
+        ],
+        [
+          -2,
+          1,
+          2
+        ],
+        [
+          -1,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          2,
+          1
+        ],
+        [
+          4,
+          4,
+          1
+        ]
+      ],
+      "weight": 2
+    },
+    {
+      "dimension": 3,
+      "homogeneous": false,
+      "maximum_rank_product": 36,
+      "profile": [
+        [
+          -6,
+          1,
+          6
+        ],
+        [
+          -5,
+          0,
+          0
+        ],
+        [
+          -4,
+          4,
+          9
+        ],
+        [
+          -3,
+          2,
+          2
+        ],
+        [
+          -2,
+          4,
+          6
+        ],
+        [
+          -1,
+          1,
+          1
+        ],
+        [
+          0,
+          5,
+          6
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          2,
+          6,
+          4
+        ],
+        [
+          3,
+          1,
+          1
+        ],
+        [
+          4,
+          8,
+          3
+        ],
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          6,
+          4,
+          1
+        ]
+      ],
+      "weight": 3
+    },
+    {
+      "dimension": 5,
+      "homogeneous": false,
+      "maximum_rank_product": 285,
+      "profile": [
+        [
+          -8,
+          1,
+          25
+        ],
+        [
+          -7,
+          1,
+          10
+        ],
+        [
+          -6,
+          4,
+          14
+        ],
+        [
+          -5,
+          2,
+          10
+        ],
+        [
+          -4,
+          7,
+          13
+        ],
+        [
+          -3,
+          5,
+          10
+        ],
+        [
+          -2,
+          8,
+          14
+        ],
+        [
+          -1,
+          4,
+          10
+        ],
+        [
+          0,
+          19,
+          15
+        ],
+        [
+          1,
+          10,
+          6
+        ],
+        [
+          2,
+          14,
+          8
+        ],
+        [
+          3,
+          10,
+          5
+        ],
+        [
+          4,
+          12,
+          4
+        ],
+        [
+          5,
+          10,
+          2
+        ],
+        [
+          6,
+          14,
+          3
+        ],
+        [
+          7,
+          10,
+          1
+        ],
+        [
+          8,
+          25,
+          1
+        ]
+      ],
+      "weight": 4
+    },
+    {
+      "dimension": 2,
+      "homogeneous": true,
+      "maximum_rank_product": 4,
+      "profile": [
+        [
+          -4,
+          1,
+          4
+        ],
+        [
+          -3,
+          0,
+          0
+        ],
+        [
+          -2,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0
+        ],
+        [
+          4,
+          4,
+          1
+        ]
+      ],
+      "weight": 2
+    },
+    {
+      "dimension": 5,
+      "homogeneous": true,
+      "maximum_rank_product": 144,
+      "profile": [
+        [
+          -8,
+          1,
+          25
+        ],
+        [
+          -7,
+          0,
+          0
+        ],
+        [
+          -6,
+          2,
+          5
+        ],
+        [
+          -5,
+          0,
+          0
+        ],
+        [
+          -4,
+          1,
+          4
+        ],
+        [
+          -3,
+          0,
+          0
+        ],
+        [
+          -2,
+          6,
+          6
+        ],
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          12,
+          12
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          2,
+          6,
+          6
+        ],
+        [
+          3,
+          0,
+          0
+        ],
+        [
+          4,
+          4,
+          1
+        ],
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          6,
+          5,
+          2
+        ],
+        [
+          7,
+          0,
+          0
+        ],
+        [
+          8,
+          25,
+          1
+        ]
+      ],
+      "weight": 4
+    },
+    {
+      "central_only": true,
+      "dimension": 22,
+      "homogeneous": true,
+      "profile": [
+        [
+          0,
+          228,
+          228
+        ]
+      ],
+      "weight": 8
+    }
+  ],
+  "individual_integral_angle_factors": 4896,
+  "scope": "finite integral-coordinate and complete-piece checks; no improved exponent claimed",
+  "source_revision": "16a5ce41304fcdaea4e0be7c132e1c361dc26da5",
+  "status": "pass"
+}

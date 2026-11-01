@@ -1,0 +1,1066 @@
+{
+  "scope": "Exact prime-form and rational-weight controls; small all-class enumeration certifies displayed biases only; analytic theorem and uniform cutoff are not verified by this program",
+  "logarithm_interval_checks": 48,
+  "discriminants_checked": 39,
+  "maximum_class_number": 90,
+  "maximum_cutoff": 1021,
+  "oriented_prime_records_checked": 506,
+  "records": [
+    {
+      "discriminant": -3,
+      "class_number": 1,
+      "cutoff": 17,
+      "oriented_prime_records": 4,
+      "distinct_support_classes": 1,
+      "total_mass_bits": 22,
+      "certified_nonprincipal_bias_at_most": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "generated_group_order": 1,
+      "attempts": [
+        {
+          "cutoff": 17,
+          "l1_bound": {
+            "numerator": 0,
+            "denominator": 1
+          }
+        }
+      ]
+    },
+    {
+      "discriminant": -4,
+      "class_number": 1,
+      "cutoff": 17,
+      "oriented_prime_records": 4,
+      "distinct_support_classes": 1,
+      "total_mass_bits": 21,
+      "certified_nonprincipal_bias_at_most": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "generated_group_order": 1,
+      "attempts": [
+        {
+          "cutoff": 17,
+          "l1_bound": {
+            "numerator": 0,
+            "denominator": 1
+          }
+        }
+      ]
+    },
+    {
+      "discriminant": -7,
+      "class_number": 1,
+      "cutoff": 17,
+      "oriented_prime_records": 2,
+      "distinct_support_classes": 1,
+      "total_mass_bits": 21,
+      "certified_nonprincipal_bias_at_most": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "generated_group_order": 1,
+      "attempts": [
+        {
+          "cutoff": 17,
+          "l1_bound": {
+            "numerator": 0,
+            "denominator": 1
+          }
+        }
+      ]
+    },
+    {
+      "discriminant": -8,
+      "class_number": 1,
+      "cutoff": 17,
+      "oriented_prime_records": 4,
+      "distinct_support_classes": 1,
+      "total_mass_bits": 21,
+      "certified_nonprincipal_bias_at_most": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "generated_group_order": 1,
+      "attempts": [
+        {
+          "cutoff": 17,
+          "l1_bound": {
+            "numerator": 0,
+            "denominator": 1
+          }
+        }
+      ]
+    },
+    {
+      "discriminant": -11,
+      "class_number": 1,
+      "cutoff": 17,
+      "oriented_prime_records": 4,
+      "distinct_support_classes": 1,
+      "total_mass_bits": 21,
+      "certified_nonprincipal_bias_at_most": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "generated_group_order": 1,
+      "attempts": [
+        {
+          "cutoff": 17,
+          "l1_bound": {
+            "numerator": 0,
+            "denominator": 1
+          }
+        }
+      ]
+    },
+    {
+      "discriminant": -15,
+      "class_number": 2,
+      "cutoff": 37,
+      "oriented_prime_records": 8,
+      "distinct_support_classes": 2,
+      "total_mass_bits": 25,
+      "certified_nonprincipal_bias_at_most": {
+        "numerator": 669937,
+        "denominator": 7410547
+      },
+      "generated_group_order": 2,
+      "attempts": [
+        {
+          "cutoff": 17,
+          "empty": true
+        },
+        {
+          "cutoff": 37,
+          "l1_bound": {
+            "numerator": 669937,
+            "denominator": 7410547
+          }
+        }
+      ]
+    },
+    {
+      "discriminant": -16,
+      "class_number": 1,
+      "cutoff": 17,
+      "oriented_prime_records": 4,
+      "distinct_support_classes": 1,
+      "total_mass_bits": 21,
+      "certified_nonprincipal_bias_at_most": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "generated_group_order": 1,
+      "attempts": [
+        {
+          "cutoff": 17,
+          "l1_bound": {
+            "numerator": 0,
+            "denominator": 1
+          }
+        }
+      ]
+    },
+    {
+      "discriminant": -19,
+      "class_number": 1,
+      "cutoff": 17,
+      "oriented_prime_records": 6,
+      "distinct_support_classes": 1,
+      "total_mass_bits": 22,
+      "certified_nonprincipal_bias_at_most": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "generated_group_order": 1,
+      "attempts": [
+        {
+          "cutoff": 17,
+          "l1_bound": {
+            "numerator": 0,
+            "denominator": 1
+          }
+        }
+      ]
+    },
+    {
+      "discriminant": -20,
+      "class_number": 2,
+      "cutoff": 37,
+      "oriented_prime_records": 8,
+      "distinct_support_classes": 2,
+      "total_mass_bits": 25,
+      "certified_nonprincipal_bias_at_most": {
+        "numerator": 1533989,
+        "denominator": 4733733
+      },
+      "generated_group_order": 2,
+      "attempts": [
+        {
+          "cutoff": 17,
+          "l1_bound": {
+            "numerator": 1,
+            "denominator": 1
+          }
+        },
+        {
+          "cutoff": 37,
+          "l1_bound": {
+            "numerator": 1533989,
+            "denominator": 4733733
+          }
+        }
+      ]
+    },
+    {
+      "discriminant": -23,
+      "class_number": 3,
+      "cutoff": 17,
+      "oriented_prime_records": 4,
+      "distinct_support_classes": 2,
+      "total_mass_bits": 21,
+      "certified_nonprincipal_bias_at_most": {
+        "numerator": 2,
+        "denominator": 3
+      },
+      "generated_group_order": 3,
+      "attempts": [
+        {
+          "cutoff": 17,
+          "l1_bound": {
+            "numerator": 2,
+            "denominator": 3
+          }
+        }
+      ]
+    },
+    {
+      "discriminant": -24,
+      "class_number": 2,
+      "cutoff": 17,
+      "oriented_prime_records": 6,
+      "distinct_support_classes": 2,
+      "total_mass_bits": 22,
+      "certified_nonprincipal_bias_at_most": {
+        "numerator": 242903,
+        "denominator": 800803
+      },
+      "generated_group_order": 2,
+      "attempts": [
+        {
+          "cutoff": 17,
+          "l1_bound": {
+            "numerator": 242903,
+            "denominator": 800803
+          }
+        }
+      ]
+    },
+    {
+      "discriminant": -27,
+      "class_number": 1,
+      "cutoff": 17,
+      "oriented_prime_records": 4,
+      "distinct_support_classes": 1,
+      "total_mass_bits": 22,
+      "certified_nonprincipal_bias_at_most": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "generated_group_order": 1,
+      "attempts": [
+        {
+          "cutoff": 17,
+          "l1_bound": {
+            "numerator": 0,
+            "denominator": 1
+          }
+        }
+      ]
+    },
+    {
+      "discriminant": -28,
+      "class_number": 1,
+      "cutoff": 17,
+      "oriented_prime_records": 2,
+      "distinct_support_classes": 1,
+      "total_mass_bits": 21,
+      "certified_nonprincipal_bias_at_most": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "generated_group_order": 1,
+      "attempts": [
+        {
+          "cutoff": 17,
+          "l1_bound": {
+            "numerator": 0,
+            "denominator": 1
+          }
+        }
+      ]
+    },
+    {
+      "discriminant": -31,
+      "class_number": 3,
+      "cutoff": 17,
+      "oriented_prime_records": 4,
+      "distinct_support_classes": 2,
+      "total_mass_bits": 21,
+      "certified_nonprincipal_bias_at_most": {
+        "numerator": 2,
+        "denominator": 3
+      },
+      "generated_group_order": 3,
+      "attempts": [
+        {
+          "cutoff": 17,
+          "l1_bound": {
+            "numerator": 2,
+            "denominator": 3
+          }
+        }
+      ]
+    },
+    {
+      "discriminant": -36,
+      "class_number": 2,
+      "cutoff": 17,
+      "oriented_prime_records": 4,
+      "distinct_support_classes": 2,
+      "total_mass_bits": 21,
+      "certified_nonprincipal_bias_at_most": {
+        "numerator": 61,
+        "denominator": 381
+      },
+      "generated_group_order": 2,
+      "attempts": [
+        {
+          "cutoff": 17,
+          "l1_bound": {
+            "numerator": 61,
+            "denominator": 381
+          }
+        }
+      ]
+    },
+    {
+      "discriminant": -39,
+      "class_number": 4,
+      "cutoff": 97,
+      "oriented_prime_records": 22,
+      "distinct_support_classes": 4,
+      "total_mass_bits": 30,
+      "certified_nonprincipal_bias_at_most": {
+        "numerator": 11237821,
+        "denominator": 35786869
+      },
+      "generated_group_order": 4,
+      "attempts": [
+        {
+          "cutoff": 17,
+          "l1_bound": {
+            "numerator": 1,
+            "denominator": 1
+          }
+        },
+        {
+          "cutoff": 37,
+          "l1_bound": {
+            "numerator": 1,
+            "denominator": 1
+          }
+        },
+        {
+          "cutoff": 97,
+          "l1_bound": {
+            "numerator": 11237821,
+            "denominator": 35786869
+          }
+        }
+      ]
+    },
+    {
+      "discriminant": -40,
+      "class_number": 2,
+      "cutoff": 17,
+      "oriented_prime_records": 6,
+      "distinct_support_classes": 2,
+      "total_mass_bits": 22,
+      "certified_nonprincipal_bias_at_most": {
+        "numerator": 228013,
+        "denominator": 876199
+      },
+      "generated_group_order": 2,
+      "attempts": [
+        {
+          "cutoff": 17,
+          "l1_bound": {
+            "numerator": 228013,
+            "denominator": 876199
+          }
+        }
+      ]
+    },
+    {
+      "discriminant": -47,
+      "class_number": 5,
+      "cutoff": 17,
+      "oriented_prime_records": 4,
+      "distinct_support_classes": 4,
+      "total_mass_bits": 21,
+      "certified_nonprincipal_bias_at_most": {
+        "numerator": 185112,
+        "denominator": 266735
+      },
+      "generated_group_order": 5,
+      "attempts": [
+        {
+          "cutoff": 17,
+          "l1_bound": {
+            "numerator": 185112,
+            "denominator": 266735
+          }
+        }
+      ]
+    },
+    {
+      "discriminant": -48,
+      "class_number": 2,
+      "cutoff": 17,
+      "oriented_prime_records": 4,
+      "distinct_support_classes": 2,
+      "total_mass_bits": 22,
+      "certified_nonprincipal_bias_at_most": {
+        "numerator": 2897,
+        "denominator": 276053
+      },
+      "generated_group_order": 2,
+      "attempts": [
+        {
+          "cutoff": 17,
+          "l1_bound": {
+            "numerator": 2897,
+            "denominator": 276053
+          }
+        }
+      ]
+    },
+    {
+      "discriminant": -56,
+      "class_number": 4,
+      "cutoff": 37,
+      "oriented_prime_records": 10,
+      "distinct_support_classes": 3,
+      "total_mass_bits": 25,
+      "certified_nonprincipal_bias_at_most": {
+        "numerator": 1,
+        "denominator": 2
+      },
+      "generated_group_order": 4,
+      "attempts": [
+        {
+          "cutoff": 17,
+          "l1_bound": {
+            "numerator": 1,
+            "denominator": 1
+          }
+        },
+        {
+          "cutoff": 37,
+          "l1_bound": {
+            "numerator": 1,
+            "denominator": 2
+          }
+        }
+      ]
+    },
+    {
+      "discriminant": -63,
+      "class_number": 4,
+      "cutoff": 97,
+      "oriented_prime_records": 18,
+      "distinct_support_classes": 4,
+      "total_mass_bits": 29,
+      "certified_nonprincipal_bias_at_most": {
+        "numerator": 479139,
+        "denominator": 14287102
+      },
+      "generated_group_order": 4,
+      "attempts": [
+        {
+          "cutoff": 17,
+          "l1_bound": {
+            "numerator": 1,
+            "denominator": 1
+          }
+        },
+        {
+          "cutoff": 37,
+          "l1_bound": {
+            "numerator": 1,
+            "denominator": 1
+          }
+        },
+        {
+          "cutoff": 97,
+          "l1_bound": {
+            "numerator": 479139,
+            "denominator": 14287102
+          }
+        }
+      ]
+    },
+    {
+      "discriminant": -64,
+      "class_number": 2,
+      "cutoff": 37,
+      "oriented_prime_records": 8,
+      "distinct_support_classes": 2,
+      "total_mass_bits": 25,
+      "certified_nonprincipal_bias_at_most": {
+        "numerator": 112093,
+        "denominator": 358678
+      },
+      "generated_group_order": 2,
+      "attempts": [
+        {
+          "cutoff": 17,
+          "l1_bound": {
+            "numerator": 1,
+            "denominator": 1
+          }
+        },
+        {
+          "cutoff": 37,
+          "l1_bound": {
+            "numerator": 112093,
+            "denominator": 358678
+          }
+        }
+      ]
+    },
+    {
+      "discriminant": -68,
+      "class_number": 4,
+      "cutoff": 17,
+      "oriented_prime_records": 8,
+      "distinct_support_classes": 3,
+      "total_mass_bits": 22,
+      "certified_nonprincipal_bias_at_most": {
+        "numerator": 1,
+        "denominator": 2
+      },
+      "generated_group_order": 4,
+      "attempts": [
+        {
+          "cutoff": 17,
+          "l1_bound": {
+            "numerator": 1,
+            "denominator": 2
+          }
+        }
+      ]
+    },
+    {
+      "discriminant": -71,
+      "class_number": 7,
+      "cutoff": 37,
+      "oriented_prime_records": 8,
+      "distinct_support_classes": 6,
+      "total_mass_bits": 25,
+      "certified_nonprincipal_bias_at_most": {
+        "numerator": 19130606,
+        "denominator": 30932587
+      },
+      "generated_group_order": 7,
+      "attempts": [
+        {
+          "cutoff": 17,
+          "l1_bound": {
+            "numerator": 6,
+            "denominator": 7
+          }
+        },
+        {
+          "cutoff": 37,
+          "l1_bound": {
+            "numerator": 19130606,
+            "denominator": 30932587
+          }
+        }
+      ]
+    },
+    {
+      "discriminant": -75,
+      "class_number": 2,
+      "cutoff": 37,
+      "oriented_prime_records": 8,
+      "distinct_support_classes": 2,
+      "total_mass_bits": 25,
+      "certified_nonprincipal_bias_at_most": {
+        "numerator": 298173,
+        "denominator": 1948697
+      },
+      "generated_group_order": 2,
+      "attempts": [
+        {
+          "cutoff": 17,
+          "l1_bound": {
+            "numerator": 1,
+            "denominator": 1
+          }
+        },
+        {
+          "cutoff": 37,
+          "l1_bound": {
+            "numerator": 298173,
+            "denominator": 1948697
+          }
+        }
+      ]
+    },
+    {
+      "discriminant": -84,
+      "class_number": 4,
+      "cutoff": 37,
+      "oriented_prime_records": 12,
+      "distinct_support_classes": 3,
+      "total_mass_bits": 26,
+      "certified_nonprincipal_bias_at_most": {
+        "numerator": 1,
+        "denominator": 2
+      },
+      "generated_group_order": 4,
+      "attempts": [
+        {
+          "cutoff": 17,
+          "l1_bound": {
+            "numerator": 1,
+            "denominator": 1
+          }
+        },
+        {
+          "cutoff": 37,
+          "l1_bound": {
+            "numerator": 1,
+            "denominator": 2
+          }
+        }
+      ]
+    },
+    {
+      "discriminant": -100,
+      "class_number": 2,
+      "cutoff": 37,
+      "oriented_prime_records": 6,
+      "distinct_support_classes": 2,
+      "total_mass_bits": 25,
+      "certified_nonprincipal_bias_at_most": {
+        "numerator": 62867,
+        "denominator": 162859
+      },
+      "generated_group_order": 2,
+      "attempts": [
+        {
+          "cutoff": 17,
+          "l1_bound": {
+            "numerator": 1,
+            "denominator": 1
+          }
+        },
+        {
+          "cutoff": 37,
+          "l1_bound": {
+            "numerator": 62867,
+            "denominator": 162859
+          }
+        }
+      ]
+    },
+    {
+      "discriminant": -120,
+      "class_number": 4,
+      "cutoff": 37,
+      "oriented_prime_records": 12,
+      "distinct_support_classes": 4,
+      "total_mass_bits": 26,
+      "certified_nonprincipal_bias_at_most": {
+        "numerator": 2048768,
+        "denominator": 4995749
+      },
+      "generated_group_order": 4,
+      "attempts": [
+        {
+          "cutoff": 17,
+          "l1_bound": {
+            "numerator": 1,
+            "denominator": 1
+          }
+        },
+        {
+          "cutoff": 37,
+          "l1_bound": {
+            "numerator": 2048768,
+            "denominator": 4995749
+          }
+        }
+      ]
+    },
+    {
+      "discriminant": -144,
+      "class_number": 4,
+      "cutoff": 17,
+      "oriented_prime_records": 4,
+      "distinct_support_classes": 3,
+      "total_mass_bits": 21,
+      "certified_nonprincipal_bias_at_most": {
+        "numerator": 503,
+        "denominator": 762
+      },
+      "generated_group_order": 4,
+      "attempts": [
+        {
+          "cutoff": 17,
+          "l1_bound": {
+            "numerator": 503,
+            "denominator": 762
+          }
+        }
+      ]
+    },
+    {
+      "discriminant": -163,
+      "class_number": 1,
+      "cutoff": 97,
+      "oriented_prime_records": 14,
+      "distinct_support_classes": 1,
+      "total_mass_bits": 29,
+      "certified_nonprincipal_bias_at_most": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "generated_group_order": 1,
+      "attempts": [
+        {
+          "cutoff": 17,
+          "empty": true
+        },
+        {
+          "cutoff": 37,
+          "empty": true
+        },
+        {
+          "cutoff": 97,
+          "l1_bound": {
+            "numerator": 0,
+            "denominator": 1
+          }
+        }
+      ]
+    },
+    {
+      "discriminant": -180,
+      "class_number": 4,
+      "cutoff": 37,
+      "oriented_prime_records": 6,
+      "distinct_support_classes": 3,
+      "total_mass_bits": 25,
+      "certified_nonprincipal_bias_at_most": {
+        "numerator": 235882,
+        "denominator": 375357
+      },
+      "generated_group_order": 4,
+      "attempts": [
+        {
+          "cutoff": 17,
+          "l1_bound": {
+            "numerator": 3,
+            "denominator": 2
+          }
+        },
+        {
+          "cutoff": 37,
+          "l1_bound": {
+            "numerator": 235882,
+            "denominator": 375357
+          }
+        }
+      ]
+    },
+    {
+      "discriminant": -196,
+      "class_number": 4,
+      "cutoff": 37,
+      "oriented_prime_records": 8,
+      "distinct_support_classes": 3,
+      "total_mass_bits": 25,
+      "certified_nonprincipal_bias_at_most": {
+        "numerator": 1,
+        "denominator": 2
+      },
+      "generated_group_order": 4,
+      "attempts": [
+        {
+          "cutoff": 17,
+          "l1_bound": {
+            "numerator": 1,
+            "denominator": 1
+          }
+        },
+        {
+          "cutoff": 37,
+          "l1_bound": {
+            "numerator": 1,
+            "denominator": 2
+          }
+        }
+      ]
+    },
+    {
+      "discriminant": -900,
+      "class_number": 8,
+      "cutoff": 37,
+      "oriented_prime_records": 6,
+      "distinct_support_classes": 5,
+      "total_mass_bits": 25,
+      "certified_nonprincipal_bias_at_most": {
+        "numerator": 3,
+        "denominator": 4
+      },
+      "generated_group_order": 8,
+      "attempts": [
+        {
+          "cutoff": 17,
+          "l1_bound": {
+            "numerator": 3,
+            "denominator": 2
+          }
+        },
+        {
+          "cutoff": 37,
+          "l1_bound": {
+            "numerator": 3,
+            "denominator": 4
+          }
+        }
+      ]
+    },
+    {
+      "discriminant": -300,
+      "class_number": 6,
+      "cutoff": 37,
+      "oriented_prime_records": 8,
+      "distinct_support_classes": 4,
+      "total_mass_bits": 25,
+      "certified_nonprincipal_bias_at_most": {
+        "numerator": 2,
+        "denominator": 3
+      },
+      "generated_group_order": 6,
+      "attempts": [
+        {
+          "cutoff": 17,
+          "l1_bound": {
+            "numerator": 4,
+            "denominator": 3
+          }
+        },
+        {
+          "cutoff": 37,
+          "l1_bound": {
+            "numerator": 2,
+            "denominator": 3
+          }
+        }
+      ]
+    },
+    {
+      "discriminant": -400,
+      "class_number": 4,
+      "cutoff": 37,
+      "oriented_prime_records": 6,
+      "distinct_support_classes": 3,
+      "total_mass_bits": 25,
+      "certified_nonprincipal_bias_at_most": {
+        "numerator": 1,
+        "denominator": 2
+      },
+      "generated_group_order": 4,
+      "attempts": [
+        {
+          "cutoff": 17,
+          "l1_bound": {
+            "numerator": 1,
+            "denominator": 1
+          }
+        },
+        {
+          "cutoff": 37,
+          "l1_bound": {
+            "numerator": 1,
+            "denominator": 2
+          }
+        }
+      ]
+    },
+    {
+      "discriminant": -500,
+      "class_number": 10,
+      "cutoff": 97,
+      "oriented_prime_records": 22,
+      "distinct_support_classes": 9,
+      "total_mass_bits": 30,
+      "certified_nonprincipal_bias_at_most": {
+        "numerator": 12143207,
+        "denominator": 44801737
+      },
+      "generated_group_order": 10,
+      "attempts": [
+        {
+          "cutoff": 17,
+          "l1_bound": {
+            "numerator": 6,
+            "denominator": 5
+          }
+        },
+        {
+          "cutoff": 37,
+          "l1_bound": {
+            "numerator": 8702636,
+            "denominator": 7889555
+          }
+        },
+        {
+          "cutoff": 97,
+          "l1_bound": {
+            "numerator": 12143207,
+            "denominator": 44801737
+          }
+        }
+      ]
+    },
+    {
+      "discriminant": -675,
+      "class_number": 6,
+      "cutoff": 37,
+      "oriented_prime_records": 8,
+      "distinct_support_classes": 5,
+      "total_mass_bits": 25,
+      "certified_nonprincipal_bias_at_most": {
+        "numerator": 1390797,
+        "denominator": 1948697
+      },
+      "generated_group_order": 6,
+      "attempts": [
+        {
+          "cutoff": 17,
+          "l1_bound": {
+            "numerator": 1,
+            "denominator": 1
+          }
+        },
+        {
+          "cutoff": 37,
+          "l1_bound": {
+            "numerator": 1390797,
+            "denominator": 1948697
+          }
+        }
+      ]
+    },
+    {
+      "discriminant": -4620,
+      "class_number": 24,
+      "cutoff": 257,
+      "oriented_prime_records": 52,
+      "distinct_support_classes": 20,
+      "total_mass_bits": 34,
+      "certified_nonprincipal_bias_at_most": {
+        "numerator": 6323420353,
+        "denominator": 10978561036
+      },
+      "generated_group_order": 24,
+      "attempts": [
+        {
+          "cutoff": 17,
+          "empty": true
+        },
+        {
+          "cutoff": 37,
+          "l1_bound": {
+            "numerator": 4,
+            "denominator": 3
+          }
+        },
+        {
+          "cutoff": 97,
+          "l1_bound": {
+            "numerator": 1,
+            "denominator": 1
+          }
+        },
+        {
+          "cutoff": 257,
+          "l1_bound": {
+            "numerator": 6323420353,
+            "denominator": 10978561036
+          }
+        }
+      ]
+    },
+    {
+      "discriminant": -41612,
+      "class_number": 90,
+      "cutoff": 1021,
+      "oriented_prime_records": 178,
+      "distinct_support_classes": 80,
+      "total_mass_bits": 40,
+      "certified_nonprincipal_bias_at_most": {
+        "numerator": 4715672063392,
+        "denominator": 7983469691865
+      },
+      "generated_group_order": 90,
+      "attempts": [
+        {
+          "cutoff": 17,
+          "l1_bound": {
+            "numerator": 28,
+            "denominator": 15
+          }
+        },
+        {
+          "cutoff": 37,
+          "l1_bound": {
+            "numerator": 26,
+            "denominator": 15
+          }
+        },
+        {
+          "cutoff": 97,
+          "l1_bound": {
+            "numerator": 1524452476,
+            "denominator": 987345603
+          }
+        },
+        {
+          "cutoff": 257,
+          "l1_bound": {
+            "numerator": 1637341873,
+            "denominator": 1352064783
+          }
+        },
+        {
+          "cutoff": 1021,
+          "l1_bound": {
+            "numerator": 4715672063392,
+            "denominator": 7983469691865
+          }
+        }
+      ]
+    }
+  ]
+}

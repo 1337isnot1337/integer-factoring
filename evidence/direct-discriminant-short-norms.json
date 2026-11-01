@@ -1,0 +1,637 @@
+{
+  "scope": "Exact polynomial ideal-HNF constructors, absorbed supplied prime words, and finite complete two-torsion classification at Delta=-4N",
+  "hnf_controls": {
+    "discriminants_checked": 31,
+    "pair_products_compared_with_independent_implementation": 11014,
+    "retained_reduction_matrices_checked": 1136,
+    "supplied_prime_words_checked": 1200,
+    "words_with_nontrivial_integer_content": 411,
+    "large_content_control": {
+      "discriminant": -999,
+      "terms": [
+        [
+          5,
+          1000,
+          1
+        ],
+        [
+          5,
+          -999,
+          1
+        ]
+      ],
+      "product_norm_bits": 4642,
+      "primitive_norm": 5,
+      "removed_content_bits": 2320
+    }
+  },
+  "prime_absorption_controls": {
+    "absorbed_norms_checked": 1502,
+    "integer_content_removals": 468,
+    "absorbed_norms_above_old_R_squared_bound": 42,
+    "records": [
+      {
+        "discriminant": -84,
+        "radius": 4,
+        "smooth_bound": 7,
+        "prime_cutoff": 19,
+        "full_small_smooth_set_size": 1,
+        "selected_small_smooth_forms": 1,
+        "oriented_sample_primes": 8,
+        "absorbed_norms_checked": 8,
+        "integer_content_removals": 0
+      },
+      {
+        "discriminant": -144,
+        "radius": 5,
+        "smooth_bound": 7,
+        "prime_cutoff": 19,
+        "full_small_smooth_set_size": 3,
+        "selected_small_smooth_forms": 3,
+        "oriented_sample_primes": 6,
+        "absorbed_norms_checked": 54,
+        "integer_content_removals": 18
+      },
+      {
+        "discriminant": -999,
+        "radius": 15,
+        "smooth_bound": 7,
+        "prime_cutoff": 19,
+        "full_small_smooth_set_size": 19,
+        "selected_small_smooth_forms": 6,
+        "oriented_sample_primes": 8,
+        "absorbed_norms_checked": 288,
+        "integer_content_removals": 106
+      },
+      {
+        "discriminant": -1007,
+        "radius": 15,
+        "smooth_bound": 7,
+        "prime_cutoff": 19,
+        "full_small_smooth_set_size": 25,
+        "selected_small_smooth_forms": 6,
+        "oriented_sample_primes": 10,
+        "absorbed_norms_checked": 360,
+        "integer_content_removals": 110
+      },
+      {
+        "discriminant": -1679,
+        "radius": 20,
+        "smooth_bound": 7,
+        "prime_cutoff": 19,
+        "full_small_smooth_set_size": 45,
+        "selected_small_smooth_forms": 6,
+        "oriented_sample_primes": 12,
+        "absorbed_norms_checked": 432,
+        "integer_content_removals": 124
+      },
+      {
+        "discriminant": -10007,
+        "radius": 50,
+        "smooth_bound": 7,
+        "prime_cutoff": 19,
+        "full_small_smooth_set_size": 41,
+        "selected_small_smooth_forms": 6,
+        "oriented_sample_primes": 10,
+        "absorbed_norms_checked": 360,
+        "integer_content_removals": 110
+      }
+    ]
+  },
+  "fixed_discriminant_controls": {
+    "integers_checked": 1005,
+    "complete_odd_interval": [
+      3,
+      2001
+    ],
+    "additional_targets": [
+      10403,
+      10807,
+      11025,
+      16637,
+      25025
+    ],
+    "ambiguous_classes_checked": 3021,
+    "proper_factor_classes_checked": 1513,
+    "maximum_two_rank": 4,
+    "selected_classification_records": [
+      {
+        "integer": 3,
+        "class_number": 1,
+        "distinct_prime_factors_for_independent_check": 1,
+        "two_rank": 0,
+        "ambiguous_classes": 1,
+        "nonfactoring_subgroup": [
+          [
+            1,
+            0,
+            3
+          ]
+        ]
+      },
+      {
+        "integer": 5,
+        "class_number": 2,
+        "distinct_prime_factors_for_independent_check": 1,
+        "two_rank": 1,
+        "ambiguous_classes": 2,
+        "nonfactoring_subgroup": [
+          [
+            1,
+            0,
+            5
+          ],
+          [
+            2,
+            2,
+            3
+          ]
+        ]
+      },
+      {
+        "integer": 9,
+        "class_number": 2,
+        "distinct_prime_factors_for_independent_check": 1,
+        "two_rank": 1,
+        "ambiguous_classes": 2,
+        "nonfactoring_subgroup": [
+          [
+            1,
+            0,
+            9
+          ],
+          [
+            2,
+            2,
+            5
+          ]
+        ]
+      },
+      {
+        "integer": 15,
+        "class_number": 2,
+        "distinct_prime_factors_for_independent_check": 2,
+        "two_rank": 1,
+        "ambiguous_classes": 2,
+        "nonfactoring_subgroup": [
+          [
+            1,
+            0,
+            15
+          ]
+        ]
+      },
+      {
+        "integer": 21,
+        "class_number": 4,
+        "distinct_prime_factors_for_independent_check": 2,
+        "two_rank": 2,
+        "ambiguous_classes": 4,
+        "nonfactoring_subgroup": [
+          [
+            1,
+            0,
+            21
+          ],
+          [
+            2,
+            2,
+            11
+          ]
+        ]
+      },
+      {
+        "integer": 45,
+        "class_number": 4,
+        "distinct_prime_factors_for_independent_check": 2,
+        "two_rank": 2,
+        "ambiguous_classes": 4,
+        "nonfactoring_subgroup": [
+          [
+            1,
+            0,
+            45
+          ],
+          [
+            2,
+            2,
+            23
+          ]
+        ]
+      },
+      {
+        "integer": 63,
+        "class_number": 4,
+        "distinct_prime_factors_for_independent_check": 2,
+        "two_rank": 1,
+        "ambiguous_classes": 2,
+        "nonfactoring_subgroup": [
+          [
+            1,
+            0,
+            63
+          ]
+        ]
+      },
+      {
+        "integer": 225,
+        "class_number": 8,
+        "distinct_prime_factors_for_independent_check": 2,
+        "two_rank": 2,
+        "ambiguous_classes": 4,
+        "nonfactoring_subgroup": [
+          [
+            1,
+            0,
+            225
+          ],
+          [
+            2,
+            2,
+            113
+          ]
+        ]
+      },
+      {
+        "integer": 1155,
+        "class_number": 24,
+        "distinct_prime_factors_for_independent_check": 4,
+        "two_rank": 3,
+        "ambiguous_classes": 8,
+        "nonfactoring_subgroup": [
+          [
+            1,
+            0,
+            1155
+          ]
+        ]
+      },
+      {
+        "integer": 11025,
+        "class_number": 64,
+        "distinct_prime_factors_for_independent_check": 3,
+        "two_rank": 3,
+        "ambiguous_classes": 8,
+        "nonfactoring_subgroup": [
+          [
+            1,
+            0,
+            11025
+          ],
+          [
+            2,
+            2,
+            5513
+          ]
+        ]
+      },
+      {
+        "integer": 25025,
+        "class_number": 160,
+        "distinct_prime_factors_for_independent_check": 4,
+        "two_rank": 4,
+        "ambiguous_classes": 16,
+        "nonfactoring_subgroup": [
+          [
+            1,
+            0,
+            25025
+          ],
+          [
+            2,
+            2,
+            12513
+          ]
+        ]
+      }
+    ],
+    "complete_two_basis_factor_controls": [
+      {
+        "integer": 15,
+        "class_number": 2,
+        "two_rank": 1,
+        "basis_tops": [
+          [
+            3,
+            0,
+            5
+          ]
+        ],
+        "proper_factors_from_tops": [
+          3
+        ]
+      },
+      {
+        "integer": 21,
+        "class_number": 4,
+        "two_rank": 2,
+        "basis_tops": [
+          [
+            2,
+            2,
+            11
+          ],
+          [
+            3,
+            0,
+            7
+          ]
+        ],
+        "proper_factors_from_tops": [
+          3
+        ]
+      },
+      {
+        "integer": 45,
+        "class_number": 4,
+        "two_rank": 2,
+        "basis_tops": [
+          [
+            2,
+            2,
+            23
+          ],
+          [
+            5,
+            0,
+            9
+          ]
+        ],
+        "proper_factors_from_tops": [
+          5
+        ]
+      },
+      {
+        "integer": 63,
+        "class_number": 4,
+        "two_rank": 1,
+        "basis_tops": [
+          [
+            7,
+            0,
+            9
+          ]
+        ],
+        "proper_factors_from_tops": [
+          7
+        ]
+      },
+      {
+        "integer": 75,
+        "class_number": 6,
+        "two_rank": 1,
+        "basis_tops": [
+          [
+            3,
+            0,
+            25
+          ]
+        ],
+        "proper_factors_from_tops": [
+          3
+        ]
+      },
+      {
+        "integer": 105,
+        "class_number": 8,
+        "two_rank": 3,
+        "basis_tops": [
+          [
+            2,
+            2,
+            53
+          ],
+          [
+            3,
+            0,
+            35
+          ],
+          [
+            5,
+            0,
+            21
+          ]
+        ],
+        "proper_factors_from_tops": [
+          3,
+          5
+        ]
+      },
+      {
+        "integer": 225,
+        "class_number": 8,
+        "two_rank": 2,
+        "basis_tops": [
+          [
+            2,
+            2,
+            113
+          ],
+          [
+            9,
+            0,
+            25
+          ]
+        ],
+        "proper_factors_from_tops": [
+          9
+        ]
+      },
+      {
+        "integer": 385,
+        "class_number": 8,
+        "two_rank": 3,
+        "basis_tops": [
+          [
+            2,
+            2,
+            193
+          ],
+          [
+            5,
+            0,
+            77
+          ],
+          [
+            7,
+            0,
+            55
+          ]
+        ],
+        "proper_factors_from_tops": [
+          5,
+          7
+        ]
+      },
+      {
+        "integer": 1155,
+        "class_number": 24,
+        "two_rank": 3,
+        "basis_tops": [
+          [
+            3,
+            0,
+            385
+          ],
+          [
+            5,
+            0,
+            231
+          ],
+          [
+            7,
+            0,
+            165
+          ]
+        ],
+        "proper_factors_from_tops": [
+          3,
+          5,
+          7
+        ]
+      },
+      {
+        "integer": 1365,
+        "class_number": 16,
+        "two_rank": 4,
+        "basis_tops": [
+          [
+            2,
+            2,
+            683
+          ],
+          [
+            3,
+            0,
+            455
+          ],
+          [
+            5,
+            0,
+            273
+          ],
+          [
+            7,
+            0,
+            195
+          ]
+        ],
+        "proper_factors_from_tops": [
+          3,
+          5,
+          7
+        ]
+      },
+      {
+        "integer": 10403,
+        "class_number": 90,
+        "two_rank": 1,
+        "basis_tops": [
+          [
+            101,
+            0,
+            103
+          ]
+        ],
+        "proper_factors_from_tops": [
+          101
+        ]
+      },
+      {
+        "integer": 10807,
+        "class_number": 48,
+        "two_rank": 1,
+        "basis_tops": [
+          [
+            101,
+            0,
+            107
+          ]
+        ],
+        "proper_factors_from_tops": [
+          101
+        ]
+      },
+      {
+        "integer": 11025,
+        "class_number": 64,
+        "two_rank": 3,
+        "basis_tops": [
+          [
+            2,
+            2,
+            5513
+          ],
+          [
+            9,
+            0,
+            1225
+          ],
+          [
+            49,
+            0,
+            225
+          ]
+        ],
+        "proper_factors_from_tops": [
+          9,
+          49
+        ]
+      },
+      {
+        "integer": 16637,
+        "class_number": 128,
+        "two_rank": 2,
+        "basis_tops": [
+          [
+            2,
+            2,
+            8319
+          ],
+          [
+            129,
+            4,
+            129
+          ]
+        ],
+        "proper_factors_from_tops": [
+          127
+        ]
+      },
+      {
+        "integer": 25025,
+        "class_number": 160,
+        "two_rank": 4,
+        "basis_tops": [
+          [
+            2,
+            2,
+            12513
+          ],
+          [
+            25,
+            0,
+            1001
+          ],
+          [
+            7,
+            0,
+            3575
+          ],
+          [
+            11,
+            0,
+            2275
+          ]
+        ],
+        "proper_factors_from_tops": [
+          25,
+          7,
+          11
+        ]
+      }
+    ]
+  },
+  "fast_relation_or_smooth_norm_search_supplied": false,
+  "new_factoring_exponent_established": false
+}

@@ -1,0 +1,88 @@
+{
+  "divided_power_collection_cases": 820,
+  "independent_character_entries": 919,
+  "independent_source_mode_entries": 10830,
+  "integer_operator_square_cases": 96,
+  "largest_character_grid_in_small_suite": 16,
+  "negative_controls": {
+    "annihilation_multiplicities_and_signs_retained": true,
+    "involution_need_not_be_identity": true,
+    "non_prime_power_square_fails": true
+  },
+  "prime_power_gram_cases": [
+    {
+      "dimension": 1,
+      "entrywise_identity": true,
+      "maximum_integral_gram_entry_bits": 1,
+      "prime": 2,
+      "square_identity_entries": 1,
+      "weight": 1
+    },
+    {
+      "dimension": 2,
+      "entrywise_identity": true,
+      "maximum_integral_gram_entry_bits": 2,
+      "prime": 2,
+      "square_identity_entries": 4,
+      "weight": 2
+    },
+    {
+      "dimension": 5,
+      "entrywise_identity": true,
+      "maximum_integral_gram_entry_bits": 5,
+      "prime": 2,
+      "square_identity_entries": 25,
+      "weight": 4
+    },
+    {
+      "dimension": 22,
+      "entrywise_identity": false,
+      "maximum_integral_gram_entry_bits": 12,
+      "prime": 2,
+      "square_identity_entries": 484,
+      "weight": 8
+    },
+    {
+      "dimension": 1,
+      "entrywise_identity": true,
+      "maximum_integral_gram_entry_bits": 1,
+      "prime": 3,
+      "square_identity_entries": 1,
+      "weight": 1
+    },
+    {
+      "dimension": 3,
+      "entrywise_identity": true,
+      "maximum_integral_gram_entry_bits": 3,
+      "prime": 3,
+      "square_identity_entries": 9,
+      "weight": 3
+    },
+    {
+      "dimension": 30,
+      "entrywise_identity": false,
+      "maximum_integral_gram_entry_bits": 14,
+      "prime": 3,
+      "square_identity_entries": 900,
+      "weight": 9
+    },
+    {
+      "dimension": 1,
+      "entrywise_identity": true,
+      "maximum_integral_gram_entry_bits": 1,
+      "prime": 5,
+      "square_identity_entries": 1,
+      "weight": 1
+    },
+    {
+      "dimension": 7,
+      "entrywise_identity": true,
+      "maximum_integral_gram_entry_bits": 7,
+      "prime": 5,
+      "square_identity_entries": 49,
+      "weight": 5
+    }
+  ],
+  "primitive_chain_scalar_cases": 820,
+  "scope": "integral Gram involution and streamed coefficient algorithms; no improved joint width exponent"
+}

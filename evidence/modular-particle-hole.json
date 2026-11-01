@@ -1,0 +1,243 @@
+{
+  "status": "exact checks of an all-size compression identity; no improved exponent",
+  "full": false,
+  "digit_identity_entries": 24,
+  "core_cases": [
+    {
+      "core_modes": 1,
+      "inverse_identity_entries": 16,
+      "full_pfaffian_checked": true
+    },
+    {
+      "core_modes": 2,
+      "inverse_identity_entries": 64,
+      "full_pfaffian_checked": true
+    },
+    {
+      "core_modes": 4,
+      "inverse_identity_entries": 256,
+      "full_pfaffian_checked": true
+    },
+    {
+      "core_modes": 8,
+      "inverse_identity_entries": 1024,
+      "full_pfaffian_checked": true
+    },
+    {
+      "core_modes": 16,
+      "inverse_identity_entries": 4096,
+      "full_pfaffian_checked": false
+    }
+  ],
+  "profile_cases": [
+    {
+      "core_modes": 4,
+      "weight": 8,
+      "cardinality": 2,
+      "selected_labels": [
+        [
+          1,
+          7
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "complement_weight": 8,
+      "complete_profiles_checked": 16,
+      "omitted_factor_negative_control": false,
+      "missing_reflection_negative_control": false
+    },
+    {
+      "core_modes": 8,
+      "weight": 12,
+      "cardinality": 2,
+      "selected_labels": [
+        [
+          1,
+          11
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "complement_weight": 44,
+      "complete_profiles_checked": 81,
+      "omitted_factor_negative_control": true,
+      "missing_reflection_negative_control": true
+    },
+    {
+      "core_modes": 8,
+      "weight": 16,
+      "cardinality": 2,
+      "selected_labels": [
+        [
+          1,
+          15
+        ],
+        [
+          3,
+          13
+        ],
+        [
+          5,
+          11
+        ],
+        [
+          7,
+          9
+        ]
+      ],
+      "complement_weight": 48,
+      "complete_profiles_checked": 256,
+      "omitted_factor_negative_control": true,
+      "missing_reflection_negative_control": false
+    },
+    {
+      "core_modes": 8,
+      "weight": 20,
+      "cardinality": 2,
+      "selected_labels": [
+        [
+          5,
+          15
+        ],
+        [
+          7,
+          13
+        ],
+        [
+          9,
+          11
+        ]
+      ],
+      "complement_weight": 52,
+      "complete_profiles_checked": 81,
+      "omitted_factor_negative_control": true,
+      "missing_reflection_negative_control": true
+    },
+    {
+      "core_modes": 8,
+      "weight": 48,
+      "cardinality": 6,
+      "selected_labels": [
+        [
+          1,
+          3,
+          5,
+          11,
+          13,
+          15
+        ],
+        [
+          1,
+          3,
+          7,
+          9,
+          13,
+          15
+        ],
+        [
+          1,
+          5,
+          7,
+          9,
+          11,
+          15
+        ],
+        [
+          3,
+          5,
+          7,
+          9,
+          11,
+          13
+        ]
+      ],
+      "complement_weight": 16,
+      "complete_profiles_checked": 256,
+      "omitted_factor_negative_control": true,
+      "missing_reflection_negative_control": false
+    },
+    {
+      "core_modes": 8,
+      "weight": 32,
+      "cardinality": 4,
+      "selected_labels": [
+        [
+          1,
+          3,
+          13,
+          15
+        ],
+        [
+          1,
+          5,
+          11,
+          15
+        ],
+        [
+          1,
+          7,
+          9,
+          15
+        ],
+        [
+          1,
+          7,
+          11,
+          13
+        ]
+      ],
+      "complement_weight": 32,
+      "complete_profiles_checked": 256,
+      "omitted_factor_negative_control": false,
+      "missing_reflection_negative_control": false
+    },
+    {
+      "core_modes": 16,
+      "weight": 48,
+      "cardinality": 4,
+      "selected_labels": [
+        [
+          1,
+          3,
+          13,
+          31
+        ],
+        [
+          1,
+          3,
+          15,
+          29
+        ],
+        [
+          1,
+          3,
+          17,
+          27
+        ],
+        [
+          1,
+          3,
+          19,
+          25
+        ]
+      ],
+      "complement_weight": 176,
+      "complete_profiles_checked": 32,
+      "omitted_factor_negative_control": true,
+      "missing_reflection_negative_control": true
+    }
+  ],
+  "sha256": {
+    "check_modular_particle_hole.py": "a2c436c2753685bf1f06459e727badfb5a7a12623b33e74c09c24a1828f99c43",
+    "modular_pfaffian.py": "390e718fb0066401bbe72870b61272b0d0736a385602b487fa3f56a84abe0a61"
+  }
+}

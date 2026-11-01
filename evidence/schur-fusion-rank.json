@@ -1,0 +1,165 @@
+{
+  "rational_expansion_terms": 397,
+  "unique_leading_terms": 67,
+  "independent_finite_variable_evaluations": 134,
+  "independent_monomial_product_entries": 1616,
+  "carry_free_graded_products": 144,
+  "fusion_top_identities": 39,
+  "integral_two_length_drop_entries": 671,
+  "small_fusion_ranks": [
+    {
+      "h": 1,
+      "labels": 1,
+      "ambient": 2,
+      "carry_free_splittable_outputs": 0,
+      "independent_triangular_vectors": 0,
+      "actual_fusion_rank": 1
+    },
+    {
+      "h": 2,
+      "labels": 2,
+      "ambient": 5,
+      "carry_free_splittable_outputs": 1,
+      "independent_triangular_vectors": 1,
+      "actual_fusion_rank": 3
+    },
+    {
+      "h": 3,
+      "labels": 3,
+      "ambient": 11,
+      "carry_free_splittable_outputs": 2,
+      "independent_triangular_vectors": 2,
+      "actual_fusion_rank": 7
+    },
+    {
+      "h": 4,
+      "labels": 5,
+      "ambient": 22,
+      "carry_free_splittable_outputs": 10,
+      "independent_triangular_vectors": 10,
+      "actual_fusion_rank": 16
+    }
+  ],
+  "partition_counts": [
+    {
+      "h": 1,
+      "partitions_2h": 2,
+      "ordinary_splittable": 1,
+      "carry_free_splittable": 0
+    },
+    {
+      "h": 2,
+      "partitions_2h": 5,
+      "ordinary_splittable": 3,
+      "carry_free_splittable": 1
+    },
+    {
+      "h": 3,
+      "partitions_2h": 11,
+      "ordinary_splittable": 6,
+      "carry_free_splittable": 2
+    },
+    {
+      "h": 4,
+      "partitions_2h": 22,
+      "ordinary_splittable": 14,
+      "carry_free_splittable": 10
+    },
+    {
+      "h": 5,
+      "partitions_2h": 42,
+      "ordinary_splittable": 25,
+      "carry_free_splittable": 12
+    },
+    {
+      "h": 6,
+      "partitions_2h": 77,
+      "ordinary_splittable": 53,
+      "carry_free_splittable": 31
+    },
+    {
+      "h": 7,
+      "partitions_2h": 135,
+      "ordinary_splittable": 89,
+      "carry_free_splittable": 41
+    },
+    {
+      "h": 8,
+      "partitions_2h": 231,
+      "ordinary_splittable": 167,
+      "carry_free_splittable": 137
+    },
+    {
+      "h": 9,
+      "partitions_2h": 385,
+      "ordinary_splittable": 278,
+      "carry_free_splittable": 154
+    },
+    {
+      "h": 10,
+      "partitions_2h": 627,
+      "ordinary_splittable": 480,
+      "carry_free_splittable": 329
+    },
+    {
+      "h": 11,
+      "partitions_2h": 1002,
+      "ordinary_splittable": 760,
+      "carry_free_splittable": 429
+    },
+    {
+      "h": 12,
+      "partitions_2h": 1575,
+      "ordinary_splittable": 1273,
+      "carry_free_splittable": 946
+    },
+    {
+      "h": 13,
+      "partitions_2h": 2436,
+      "ordinary_splittable": 1948,
+      "carry_free_splittable": 1163
+    },
+    {
+      "h": 14,
+      "partitions_2h": 3718,
+      "ordinary_splittable": 3089,
+      "carry_free_splittable": 2166
+    },
+    {
+      "h": 15,
+      "partitions_2h": 5604,
+      "ordinary_splittable": 4682,
+      "carry_free_splittable": 2821
+    },
+    {
+      "h": 16,
+      "partitions_2h": 8349,
+      "ordinary_splittable": 7177,
+      "carry_free_splittable": 5967
+    }
+  ],
+  "reused_weight_eight_checkpoint": {
+    "source": "evidence/schur-fusion-gram.json",
+    "source_sha256": "d20ff1f0eda19aae452c333f360faa748b97fbb69d811a7b44816fc12db44dfc",
+    "recomputed_by_this_checker": false,
+    "record": {
+      "ambient_dimension": 231,
+      "central_rank": 228,
+      "dimension": 22,
+      "fusion_gram_rank": 227,
+      "fusion_rank": 229,
+      "h": 8,
+      "independent_direct_central_entries": 0,
+      "integral_fusion_entries": 111804,
+      "proved_lower_bound": 226,
+      "proved_upper_bound": 230,
+      "row_column_identity_entries": 234256
+    }
+  },
+  "negative_controls": [
+    "m_(1,1) has a nonintegral leading power-sum coefficient before saturation",
+    "ordinary subset splitting does not imply carry-free splitting"
+  ],
+  "scope": "finite checks of the saturated integral filtration and carry-free fusion lower bound; asymptotic counting is proved separately",
+  "new_factoring_exponent_claimed": false
+}

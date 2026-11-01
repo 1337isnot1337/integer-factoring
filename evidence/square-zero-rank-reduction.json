@@ -1,0 +1,14 @@
+{
+  "all_four_variable_polynomials": 65536,
+  "branch_counts_including_recursive_calls": {
+    "gaussian": 31,
+    "linear": 30720,
+    "quadratic": 2912,
+    "unit": 32768,
+    "zero": 2017
+  },
+  "checker_sha256": "38986389653997a62451a07743824bf2323875cc5372504e9bac87792b762eb2",
+  "constant_and_linear_residual_guards": 2,
+  "random_larger_cases": 60,
+  "status": "passed"
+}

@@ -1,0 +1,141 @@
+{
+  "status": "weighted complement identity; no rank monotonicity asserted",
+  "full": true,
+  "inverse_entries": 43680,
+  "complete_profile_pairs": 2592,
+  "coefficient_span_comparisons": 12,
+  "core_cases": [
+    {
+      "core_modes": 1,
+      "weights": [
+        1
+      ],
+      "scalar": 21,
+      "full_pfaffian_checked": true
+    },
+    {
+      "core_modes": 1,
+      "weights": [
+        1
+      ],
+      "scalar": 21,
+      "full_pfaffian_checked": true
+    },
+    {
+      "core_modes": 2,
+      "weights": [
+        1,
+        1
+      ],
+      "scalar": 127,
+      "full_pfaffian_checked": true
+    },
+    {
+      "core_modes": 2,
+      "weights": [
+        1,
+        3
+      ],
+      "scalar": 1453,
+      "full_pfaffian_checked": true
+    },
+    {
+      "core_modes": 4,
+      "weights": [
+        1,
+        1,
+        1
+      ],
+      "scalar": 273,
+      "full_pfaffian_checked": true
+    },
+    {
+      "core_modes": 4,
+      "weights": [
+        1,
+        1,
+        2
+      ],
+      "scalar": 1651,
+      "full_pfaffian_checked": true
+    },
+    {
+      "core_modes": 8,
+      "weights": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "scalar": 1651,
+      "full_pfaffian_checked": true
+    },
+    {
+      "core_modes": 8,
+      "weights": [
+        1,
+        3,
+        2,
+        1
+      ],
+      "scalar": 109483,
+      "full_pfaffian_checked": true
+    },
+    {
+      "core_modes": 16,
+      "weights": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "scalar": 5461,
+      "full_pfaffian_checked": false
+    },
+    {
+      "core_modes": 16,
+      "weights": [
+        1,
+        3,
+        1,
+        1,
+        2
+      ],
+      "scalar": 391933,
+      "full_pfaffian_checked": false
+    },
+    {
+      "core_modes": 32,
+      "weights": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "scalar": 32767,
+      "full_pfaffian_checked": false
+    },
+    {
+      "core_modes": 32,
+      "weights": [
+        1,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "scalar": 4737289,
+      "full_pfaffian_checked": false
+    }
+  ],
+  "omitted_factor_negative_control": true,
+  "sha256": {
+    "tools/check_hamming_complement.py": "43d4c4460ddd4bc46b3ad406ee960eb894f788e2288d740b1c55dd7a756e00ae",
+    "tools/hamming_sectors.py": "ec0b9d70f20904e6bab49870469ed5b442212bee8f50a2e12f6bfa67f1d136ab",
+    "tools/hamming_pfaffian.py": "1a402348caafc41b153bc67981469ca9ceb50a6f062eafe69f71daf8aeaa92c6"
+  }
+}

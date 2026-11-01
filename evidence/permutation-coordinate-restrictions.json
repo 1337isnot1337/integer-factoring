@@ -1,0 +1,214 @@
+{
+  "scope": "all common coordinate subsets of the S4 identity-kernel coefficient span",
+  "graph_and_polynomial_controls": {
+    "vertices": 24,
+    "edges": 72,
+    "degree_sequence": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "distinct_union_blocks": 72,
+    "polynomial_block_entries": 576,
+    "exhaustive_deletion_sets_through_size_three": 2325,
+    "seeded_larger_deletion_sets": 1280,
+    "sharp_degree_bound_controls": [
+      {
+        "labels": 15,
+        "retained_edges": 18
+      },
+      {
+        "labels": 16,
+        "retained_edges": 24
+      },
+      {
+        "labels": 17,
+        "retained_edges": 30
+      },
+      {
+        "labels": 18,
+        "retained_edges": 36
+      },
+      {
+        "labels": 19,
+        "retained_edges": 42
+      },
+      {
+        "labels": 20,
+        "retained_edges": 48
+      },
+      {
+        "labels": 21,
+        "retained_edges": 54
+      },
+      {
+        "labels": 22,
+        "retained_edges": 60
+      },
+      {
+        "labels": 23,
+        "retained_edges": 66
+      },
+      {
+        "labels": 24,
+        "retained_edges": 72
+      }
+    ]
+  },
+  "rank_sum_certificates": [
+    {
+      "labels": 15,
+      "crossing_rank": 225,
+      "forced_rank_in_each_cut": 18,
+      "rational_alternative_lower_bounds": [
+        "225",
+        "778855259/10000000",
+        "233527/5000"
+      ],
+      "rational_lower_bound": "233527/5000",
+      "decimal_summary": 46.7054,
+      "exact_power_408_exceeds_d_power_577": true
+    },
+    {
+      "labels": 16,
+      "crossing_rank": 256,
+      "forced_rank_in_each_cut": 24,
+      "rational_alternative_lower_bounds": [
+        "256",
+        "3738479/40000",
+        "271986841/5000000"
+      ],
+      "rational_lower_bound": "271986841/5000000",
+      "decimal_summary": 54.3973682,
+      "exact_power_408_exceeds_d_power_577": true
+    },
+    {
+      "labels": 17,
+      "crossing_rank": 289,
+      "forced_rank_in_each_cut": 30,
+      "rational_alternative_lower_bounds": [
+        "289",
+        "272612693/2500000",
+        "38827973/625000"
+      ],
+      "rational_lower_bound": "38827973/625000",
+      "decimal_summary": 62.1247568,
+      "exact_power_408_exceeds_d_power_577": true
+    },
+    {
+      "labels": 18,
+      "crossing_rank": 324,
+      "forced_rank_in_each_cut": 36,
+      "rational_alternative_lower_bounds": [
+        "324",
+        "156004709/1250000",
+        "349410743/5000000"
+      ],
+      "rational_lower_bound": "349410743/5000000",
+      "decimal_summary": 69.8821486,
+      "exact_power_408_exceeds_d_power_577": true
+    },
+    {
+      "labels": 19,
+      "crossing_rank": 361,
+      "forced_rank_in_each_cut": 42,
+      "rational_alternative_lower_bounds": [
+        "361",
+        "1408239801/10000000",
+        "77665109/1000000"
+      ],
+      "rational_lower_bound": "77665109/1000000",
+      "decimal_summary": 77.665109,
+      "exact_power_408_exceeds_d_power_577": true
+    },
+    {
+      "labels": 20,
+      "crossing_rank": 400,
+      "forced_rank_in_each_cut": 48,
+      "rational_alternative_lower_bounds": [
+        "400",
+        "1571524141/10000000",
+        "427349939/5000000"
+      ],
+      "rational_lower_bound": "427349939/5000000",
+      "decimal_summary": 85.4699878,
+      "exact_power_408_exceeds_d_power_577": true
+    },
+    {
+      "labels": 21,
+      "crossing_rank": 441,
+      "forced_rank_in_each_cut": 54,
+      "rational_alternative_lower_bounds": [
+        "441",
+        "217268883/1250000",
+        "466468827/5000000"
+      ],
+      "rational_lower_bound": "466468827/5000000",
+      "decimal_summary": 93.2937654,
+      "exact_power_408_exceeds_d_power_577": true
+    },
+    {
+      "labels": 22,
+      "crossing_rank": 484,
+      "forced_rank_in_each_cut": 60,
+      "rational_alternative_lower_bounds": [
+        "484",
+        "1908263917/10000000",
+        "252834819/2500000"
+      ],
+      "rational_lower_bound": "252834819/2500000",
+      "decimal_summary": 101.1339276,
+      "exact_power_408_exceeds_d_power_577": true
+    },
+    {
+      "labels": 23,
+      "crossing_rank": 529,
+      "forced_rank_in_each_cut": 66,
+      "rational_alternative_lower_bounds": [
+        "529",
+        "2081936249/10000000",
+        "136235463/1250000"
+      ],
+      "rational_lower_bound": "136235463/1250000",
+      "decimal_summary": 108.9883704,
+      "exact_power_408_exceeds_d_power_577": true
+    },
+    {
+      "labels": 24,
+      "crossing_rank": 576,
+      "forced_rank_in_each_cut": 72,
+      "rational_alternative_lower_bounds": [
+        "576",
+        "2259198437/10000000",
+        "292138307/2500000"
+      ],
+      "rational_lower_bound": "292138307/2500000",
+      "decimal_summary": 116.8553228,
+      "exact_power_408_exceeds_d_power_577": true
+    }
+  ],
+  "small_label_dependency": "minimum-cut-rank-budget.md, universal exclusion through at least d=14",
+  "linear_label_restrictions_not_excluded": true,
+  "tensor_power_recombinations_not_excluded": true
+}

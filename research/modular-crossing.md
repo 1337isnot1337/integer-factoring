@@ -19,6 +19,10 @@ An elementary generating-function argument gives, for every fixed
 not a bound beyond exponent `1/2`. The smaller state space still has
 square-root entropy. A separate actual-rank theorem would be needed for
 a smaller `rho`.
+The [quantitative refinement](modular-half-endpoint.md) sharpens the error to
+`O(sqrt(lambda))`. Together with the wider-slack transfer pinned there, this
+reaches the exact modular half endpoint, while preserving the current overall
+best exponent `1/2`.
 
 There is also a homogeneous variant at prime-power energies. When
 `h=p^r`, its pairing is invertible in the quotient. At `p=2`, only two
@@ -417,6 +421,13 @@ Choosing only prime-power energies can, however, overshoot the energy
 needed for a particular binary label width. Section 5's width statement
 belongs to the general normalized family; it is not a claim about this
 sparse choice of energies.
+
+For this full regular homogeneous domain, the later
+[regular fusion theorem](regular-fusion-rank.md) proves that the central
+piece actually has rank `(1-o(1))q_2(2h)` in both cuts along powers of
+two. Its width coefficient is therefore exactly `1/sqrt(2)` to leading
+order. That lower bound does not automatically survive an arbitrary
+prefix restriction of the labels.
 
 ## 7. Why the one-bit rank saving does not tensor into a better rate
 

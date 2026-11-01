@@ -1,0 +1,20 @@
+{
+  "arbitrary_cluster_cases": 48,
+  "certified_composite_modulus_recoveries": 96,
+  "exact_intergroup_edge_counts": 3516,
+  "independent_cluster_enumerations": 2369,
+  "information_volume_cases": 21,
+  "interpolation_recoveries": 2608,
+  "larger_top_integer_cutoff_checks": 21,
+  "malformed_boundary_cases": 672,
+  "negative_control": {
+    "cluster": "one first-factor input gate and every middle gate",
+    "illegal_digit_residue_rejected": true,
+    "same_boundary_extension_count": 4
+  },
+  "prefix_cases": 1600,
+  "scope": "exact transcription checks for composite interpolation, unique cluster extension, and explicit grouping; no improved logarithmic exponent",
+  "toy_radix_cluster_cases": 96,
+  "unit_vandermonde_differences": 651,
+  "weighted_unique_extensions": 1680
+}

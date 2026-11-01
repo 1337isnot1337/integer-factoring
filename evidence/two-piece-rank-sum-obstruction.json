@@ -1,0 +1,15 @@
+{
+  "scope": "all-field two-piece exclusion for finite rank-sum amplification",
+  "universal_bound": "sqrt(d^2-d+1)+sqrt((d^2-1)(d-1)) > d^(3/2)",
+  "scalar_controls": {
+    "raw_admissible_rank_quadruples": 25739,
+    "normalized_rank_pairs": 58982,
+    "strict_algebraic_dimension_controls": 11,
+    "negative_missing_cross_constraint_control": true
+  },
+  "matrix_controls": {
+    "exact_two_piece_decompositions": 210,
+    "zero_piece_controls": 30
+  },
+  "minimum_nonzero_pieces_for_a_strict_rank_sum_win": 3
+}

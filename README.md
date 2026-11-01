@@ -127,6 +127,12 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs five groups on 
 
 ## Current research frontier
 
+- [Vanishing-slack transfer](research/vanishing-slack-score-transfer.md), [optimized divisor bound](research/optimized-divisor-count-bound.md), and the [PR #26 checkpoint](research/INDEX.md#retained-pr-26-effective-transfer-and-crossing-checkpoint): effective interfaces, arithmetic bounds and scoped crossing work. Universal verified search does not supply a new numerical exponent. See `make verify-further` and the retained optional targets; no new Lean or stronger complete factoring bound is claimed.
+
+- [Rational-family specialization](research/rational-family-transfer.md), [exact modular half endpoint](research/modular-half-endpoint.md), and the [PR #24 checkpoint](research/INDEX.md#retained-pr-24-effective-family-and-finite-rank-checkpoint): effective interfaces and scoped finite or uniform rank barriers. No exponent above `1/2` or new Lean result is claimed. Run `make verify-pr24` for the checkpoint checks.
+
+- [Sublinear working-space refinement](research/sublinear-space-half-rate.md) and [direct exact divisor counts](research/direct-sublinear-divisor-counts.md): PR #23 supplies ordinary time-space proofs and exact finite controls, retaining the half-rate time bound. Its [full checkpoint index](research/INDEX.md#retained-pr-23-time-space-and-crossing-checkpoint) also preserves related crossing constructions and scoped obstructions. Integration is not independent mathematical acceptance; no new Lean or stronger exponent is claimed. Run `make verify-pr23` for the source checkpoint checks.
+
 - [Weighted fixed-characteristic transfer](research/fixed-characteristic-transfer.md), [polynomial Pfaffian profiles](research/modular-pfaffian.md), and [shared-mode Schur reduction](research/fermi-sea-schur.md): retained PR #22 constructions, effective evaluation, and scoped obstructions. No improved exponent is claimed. Run `make verify-modular` for the extended exact controls.
 
 - [Coarsened grid check](research/coarsened-grid-validation.md): a finite signed network-to-padded-clique check, including internal edges and grouping.
@@ -306,6 +312,9 @@ product 2304; that finite block cannot improve the rate. Run
 The [spin-zero jet identities](research/bounded-spin-three-jets.md)
 hold at every length and bound the coefficient span by `n-2` for even
 `n>=6`; ordinary cut-rank growth remains open.
+A [direct orthogonal-group argument](research/four-qubit-orthogonal-generators.md)
+now supplies the degree `2,4,4,6` four-qubit generators in characteristic
+five, with explicit restrictions to the pencil. It supplies no cut-rank bound.
 An [enlarged six-vertex construction](research/bounded-spin-six-vertex.md)
 exposes the complete monomial span with degree `O(n^2)` and the same
 strict endpoint. At eight sites it adds a seventh tensor direction;
@@ -1229,6 +1238,13 @@ global cyclic residues, with polynomial algebra degrees through target
 score one. The refined transfer preserves every fixed positive saving
 exponent, removing the earlier cap from the transfer overhead. Its faster
 weighted evaluator remains unproved. Run `make verify-sparse-divisor-residues`.
+
+A [fixed weight-one alternative](research/weight-one-divisor-coefficients.md)
+uses odd-character Eisenstein coefficients at small prime levels. Exact
+Fourier inversion gives signed divisor residues, and the same sparse
+reconstruction recovers factors. The coefficient at the original composite
+index remains the unresolved engine; no improvement follows from prime-index
+formulas. Run `make verify-odd-character-residues` for the component checks.
 
 The [Bell-diagonal seed construction](research/bell-diagonal-crossings.md)
 gives exact two-cut transforms and excludes its complete symmetric

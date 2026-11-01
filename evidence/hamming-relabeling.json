@@ -1,0 +1,214 @@
+{
+  "status": "finite product-16 witness and all-size block model; no improved factoring exponent",
+  "binary_width": 2,
+  "joint_source_dimension": 33,
+  "label_orbit_images": 196,
+  "label_orbit_span_dimension": 102,
+  "maximum_rank_product": 16,
+  "maximum_binary_width_sum": 4,
+  "witness_piece_count": 6,
+  "crossing_entries": 256,
+  "constant_basis": [
+    33825,
+    1,
+    18450,
+    18,
+    2050,
+    2,
+    8580,
+    260,
+    132,
+    4,
+    4680,
+    4104,
+    72,
+    8,
+    33,
+    1025
+  ],
+  "local_block_entries_checked": 2048,
+  "independent_tensor_power_rank_checks": 104,
+  "witness": [
+    {
+      "row_rank": 1,
+      "column_rank": 16,
+      "tensor_hex": "0x8421000000000000000084210000000000000000842100000000000000008421",
+      "source_terms": [
+        {
+          "label_permutation": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "joint_source_basis_index": 0
+        }
+      ]
+    },
+    {
+      "row_rank": 16,
+      "column_rank": 1,
+      "tensor_hex": "0x8000400020001000080004000200010000800040002000100008000400020001",
+      "source_terms": [
+        {
+          "label_permutation": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "joint_source_basis_index": 0
+        },
+        {
+          "label_permutation": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "joint_source_basis_index": 1
+        }
+      ]
+    },
+    {
+      "row_rank": 4,
+      "column_rank": 4,
+      "tensor_hex": "0x1c00c200000000001c00c2110211020000220c2210221011c00000",
+      "source_terms": [
+        {
+          "label_permutation": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "joint_source_basis_index": 19
+        }
+      ]
+    },
+    {
+      "row_rank": 4,
+      "column_rank": 4,
+      "tensor_hex": "0x28208580282205000005080000052022808000028082050000050800000",
+      "source_terms": [
+        {
+          "label_permutation": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "joint_source_basis_index": 9
+        },
+        {
+          "label_permutation": [
+            0,
+            2,
+            1,
+            3
+          ],
+          "joint_source_basis_index": 19
+        }
+      ]
+    },
+    {
+      "row_rank": 4,
+      "column_rank": 4,
+      "tensor_hex": "0x29009400000204200004094204242042902000042040000029009400000",
+      "source_terms": [
+        {
+          "label_permutation": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "joint_source_basis_index": 9
+        },
+        {
+          "label_permutation": [
+            0,
+            2,
+            3,
+            1
+          ],
+          "joint_source_basis_index": 19
+        }
+      ]
+    },
+    {
+      "row_rank": 4,
+      "column_rank": 4,
+      "tensor_hex": "0x8421481221841248481284211248218421841248842148121248218448128421",
+      "source_terms": [
+        {
+          "label_permutation": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "joint_source_basis_index": 0
+        },
+        {
+          "label_permutation": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "joint_source_basis_index": 8
+        },
+        {
+          "label_permutation": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "joint_source_basis_index": 11
+        },
+        {
+          "label_permutation": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "joint_source_basis_index": 12
+        },
+        {
+          "label_permutation": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "joint_source_basis_index": 19
+        },
+        {
+          "label_permutation": [
+            0,
+            2,
+            1,
+            3
+          ],
+          "joint_source_basis_index": 19
+        },
+        {
+          "label_permutation": [
+            0,
+            2,
+            3,
+            1
+          ],
+          "joint_source_basis_index": 19
+        }
+      ]
+    }
+  ],
+  "source_sha256": {
+    "check_hamming_relabeling.py": "55a2eaa1a1e8fa2792b2e098be8901c277f58854dcd2c4a56c5e228b48793e82",
+    "hamming_relabeling.py": "6bc3b614799db4831c0c21fb2aec7b36245f68cfb3d3df45908635103b30bd31"
+  }
+}

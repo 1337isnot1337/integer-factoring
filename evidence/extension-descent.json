@@ -1,0 +1,57 @@
+{
+  "status": "finite field/descent controls; rational transfer is proved separately",
+  "fields": [
+    {
+      "extension_degree": 1,
+      "modulus": 3,
+      "elements": 2,
+      "good_specialization_points": 0
+    },
+    {
+      "extension_degree": 2,
+      "modulus": 7,
+      "elements": 4,
+      "good_specialization_points": 0
+    },
+    {
+      "extension_degree": 3,
+      "modulus": 11,
+      "elements": 8,
+      "good_specialization_points": 3
+    },
+    {
+      "extension_degree": 4,
+      "modulus": 19,
+      "elements": 16,
+      "good_specialization_points": 12
+    },
+    {
+      "extension_degree": 5,
+      "modulus": 37,
+      "elements": 32,
+      "good_specialization_points": 30
+    },
+    {
+      "extension_degree": 6,
+      "modulus": 67,
+      "elements": 64,
+      "good_specialization_points": 57
+    },
+    {
+      "extension_degree": 7,
+      "modulus": 131,
+      "elements": 128,
+      "good_specialization_points": 126
+    },
+    {
+      "extension_degree": 8,
+      "modulus": 283,
+      "elements": 256,
+      "good_specialization_points": 252
+    }
+  ],
+  "factorization_cases": 240,
+  "descended_entries_checked": 4800,
+  "trace_normalization_negative_control": true,
+  "source_sha256": "00a5109ff1ef791f48a8e23e48fa86678ce13298b7bbc8e8b0281185e79e0a9e"
+}

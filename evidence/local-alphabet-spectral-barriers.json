@@ -1,0 +1,91 @@
+{
+  "positive_rank_pairs_checked": 60710,
+  "direct_flattening_checks": [
+    {
+      "field_size": 2,
+      "alphabet": 2,
+      "coefficient_pairs": 4,
+      "minimum_squared_cost": 4
+    },
+    {
+      "field_size": 2,
+      "alphabet": 3,
+      "coefficient_pairs": 4,
+      "minimum_squared_cost": 16
+    },
+    {
+      "field_size": 2,
+      "alphabet": 4,
+      "coefficient_pairs": 4,
+      "minimum_squared_cost": 49
+    },
+    {
+      "field_size": 2,
+      "alphabet": 5,
+      "coefficient_pairs": 4,
+      "minimum_squared_cost": 121
+    },
+    {
+      "field_size": 2,
+      "alphabet": 6,
+      "coefficient_pairs": 4,
+      "minimum_squared_cost": 256
+    },
+    {
+      "field_size": 2,
+      "alphabet": 7,
+      "coefficient_pairs": 4,
+      "minimum_squared_cost": 484
+    },
+    {
+      "field_size": 4,
+      "alphabet": 2,
+      "coefficient_pairs": 16,
+      "minimum_squared_cost": 4
+    },
+    {
+      "field_size": 4,
+      "alphabet": 3,
+      "coefficient_pairs": 16,
+      "minimum_squared_cost": 16
+    },
+    {
+      "field_size": 4,
+      "alphabet": 4,
+      "coefficient_pairs": 16,
+      "minimum_squared_cost": 49
+    },
+    {
+      "field_size": 4,
+      "alphabet": 5,
+      "coefficient_pairs": 16,
+      "minimum_squared_cost": 121
+    },
+    {
+      "field_size": 4,
+      "alphabet": 6,
+      "coefficient_pairs": 16,
+      "minimum_squared_cost": 256
+    },
+    {
+      "field_size": 4,
+      "alphabet": 7,
+      "coefficient_pairs": 16,
+      "minimum_squared_cost": 484
+    }
+  ],
+  "direct_coefficient_cases_total": 120,
+  "small_alphabet_rational_bounds": {
+    "2": "16/5",
+    "3": "27/5",
+    "4": "128/17"
+  },
+  "exact_integer_comparisons": {
+    "2^29": 536870912,
+    "17^7": 410338673,
+    "11^7": 19487171,
+    "5^10": 9765625
+  },
+  "scope": "Bounds the observable word-rank spectral method, not arbitrary grouped-piece true ranks.",
+  "seconds": 0.6670527959995525
+}

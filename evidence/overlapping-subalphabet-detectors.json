@@ -1,0 +1,5197 @@
+{
+  "field_size": 2,
+  "alphabet": 5,
+  "subalphabet_size": 3,
+  "family_counts": {
+    "2": 45,
+    "3": 120
+  },
+  "orbit_count": 6,
+  "nonzero_tensor_cases": 314,
+  "uniform_spectral_lower_base": 13,
+  "scope": "Only F2 observable individual-word rank spectral transfers in the specified entry spaces; arbitrary finite auxiliary size.",
+  "orbits": [
+    {
+      "orbit": "adjacent complement edges",
+      "subalphabets": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          3
+        ]
+      ],
+      "labelled_families": 30,
+      "basis_rank": 5,
+      "certificate": [
+        [
+          3,
+          [
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          2,
+          [
+            1,
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        [
+          2,
+          [
+            1,
+            0,
+            0,
+            1,
+            0
+          ]
+        ],
+        [
+          4,
+          [
+            1,
+            0,
+            1,
+            0,
+            0
+          ]
+        ],
+        [
+          4,
+          [
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        ]
+      ],
+      "verified_lower_base": 15,
+      "nonzero_tensor_cases": 31,
+      "profiles": [
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            4,
+            4
+          ],
+          "detector_rank": 2
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            4,
+            4
+          ],
+          "detector_rank": 2
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            6,
+            6
+          ],
+          "detector_rank": 4
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            25,
+            1
+          ],
+          "detector_rank": 4
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            24,
+            5
+          ],
+          "detector_rank": 6
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            24,
+            5
+          ],
+          "detector_rank": 6
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            23,
+            7
+          ],
+          "detector_rank": 8
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            1,
+            25
+          ],
+          "detector_rank": 4
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            5,
+            24
+          ],
+          "detector_rank": 6
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            5,
+            24
+          ],
+          "detector_rank": 6
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            0,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            7,
+            23
+          ],
+          "detector_rank": 8
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            24,
+            24
+          ],
+          "detector_rank": 8
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            1,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            25,
+            25
+          ],
+          "detector_rank": 10
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            1,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            25,
+            25
+          ],
+          "detector_rank": 10
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            24,
+            24
+          ],
+          "detector_rank": 12
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            25,
+            25
+          ],
+          "detector_rank": 15
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            24,
+            24
+          ],
+          "detector_rank": 13
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            24,
+            24
+          ],
+          "detector_rank": 13
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            23,
+            23
+          ],
+          "detector_rank": 11
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            10,
+            24
+          ],
+          "detector_rank": 11
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            8,
+            25
+          ],
+          "detector_rank": 9
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            8,
+            25
+          ],
+          "detector_rank": 9
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            8,
+            24
+          ],
+          "detector_rank": 7
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            24,
+            10
+          ],
+          "detector_rank": 11
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            0,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            25,
+            8
+          ],
+          "detector_rank": 9
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            25,
+            8
+          ],
+          "detector_rank": 9
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            24,
+            8
+          ],
+          "detector_rank": 7
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            11,
+            11
+          ],
+          "detector_rank": 7
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            9,
+            9
+          ],
+          "detector_rank": 5
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            9,
+            9
+          ],
+          "detector_rank": 5
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            9,
+            9
+          ],
+          "detector_rank": 3
+        }
+      ]
+    },
+    {
+      "orbit": "disjoint complement edges",
+      "subalphabets": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          2,
+          3,
+          4
+        ]
+      ],
+      "labelled_families": 15,
+      "basis_rank": 5,
+      "certificate": [
+        [
+          2,
+          [
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          3,
+          [
+            1,
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        [
+          3,
+          [
+            1,
+            0,
+            0,
+            1,
+            0
+          ]
+        ],
+        [
+          4,
+          [
+            1,
+            0,
+            1,
+            0,
+            0
+          ]
+        ],
+        [
+          4,
+          [
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        ]
+      ],
+      "verified_lower_base": 16,
+      "nonzero_tensor_cases": 31,
+      "profiles": [
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            4,
+            4
+          ],
+          "detector_rank": 3
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            4,
+            4
+          ],
+          "detector_rank": 3
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            8,
+            8
+          ],
+          "detector_rank": 6
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            25,
+            1
+          ],
+          "detector_rank": 4
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            24,
+            5
+          ],
+          "detector_rank": 7
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            24,
+            5
+          ],
+          "detector_rank": 7
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            25,
+            9
+          ],
+          "detector_rank": 10
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            1,
+            25
+          ],
+          "detector_rank": 4
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            5,
+            24
+          ],
+          "detector_rank": 7
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            5,
+            24
+          ],
+          "detector_rank": 7
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            0,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            9,
+            25
+          ],
+          "detector_rank": 10
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            24,
+            24
+          ],
+          "detector_rank": 8
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            1,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            25,
+            25
+          ],
+          "detector_rank": 11
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            1,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            25,
+            25
+          ],
+          "detector_rank": 11
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            24,
+            24
+          ],
+          "detector_rank": 14
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            25,
+            25
+          ],
+          "detector_rank": 16
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            24,
+            24
+          ],
+          "detector_rank": 13
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            24,
+            24
+          ],
+          "detector_rank": 13
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            25,
+            25
+          ],
+          "detector_rank": 10
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            10,
+            24
+          ],
+          "detector_rank": 12
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            8,
+            25
+          ],
+          "detector_rank": 9
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            8,
+            25
+          ],
+          "detector_rank": 9
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            6,
+            24
+          ],
+          "detector_rank": 6
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            24,
+            10
+          ],
+          "detector_rank": 12
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            0,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            25,
+            8
+          ],
+          "detector_rank": 9
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            25,
+            8
+          ],
+          "detector_rank": 9
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            24,
+            6
+          ],
+          "detector_rank": 6
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            11,
+            11
+          ],
+          "detector_rank": 8
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            9,
+            9
+          ],
+          "detector_rank": 5
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            9,
+            9
+          ],
+          "detector_rank": 5
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            7,
+            7
+          ],
+          "detector_rank": 2
+        }
+      ]
+    },
+    {
+      "orbit": "complement triangle",
+      "subalphabets": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          1,
+          4
+        ]
+      ],
+      "labelled_families": 10,
+      "basis_rank": 6,
+      "certificate": [
+        [
+          2,
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          1,
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        [
+          2,
+          [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
+        ],
+        [
+          2,
+          [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
+        ],
+        [
+          4,
+          [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          3,
+          [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          1,
+          [
+            1,
+            1,
+            0,
+            0,
+            0,
+            1
+          ]
+        ]
+      ],
+      "verified_lower_base": 15,
+      "nonzero_tensor_cases": 63,
+      "profiles": [
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            4,
+            4
+          ],
+          "detector_rank": 2
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            4,
+            4
+          ],
+          "detector_rank": 2
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            6,
+            6
+          ],
+          "detector_rank": 4
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            4,
+            4
+          ],
+          "detector_rank": 2
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            6,
+            6
+          ],
+          "detector_rank": 4
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            6,
+            6
+          ],
+          "detector_rank": 4
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            10,
+            10
+          ],
+          "detector_rank": 6
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            25,
+            1
+          ],
+          "detector_rank": 4
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            24,
+            5
+          ],
+          "detector_rank": 6
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            24,
+            5
+          ],
+          "detector_rank": 6
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            1,
+            0,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            23,
+            7
+          ],
+          "detector_rank": 8
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            24,
+            5
+          ],
+          "detector_rank": 6
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            23,
+            7
+          ],
+          "detector_rank": 8
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            1,
+            1,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            23,
+            7
+          ],
+          "detector_rank": 8
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            22,
+            9
+          ],
+          "detector_rank": 10
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            1,
+            25
+          ],
+          "detector_rank": 4
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            5,
+            24
+          ],
+          "detector_rank": 4
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            5,
+            24
+          ],
+          "detector_rank": 6
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            7,
+            23
+          ],
+          "detector_rank": 6
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            5,
+            24
+          ],
+          "detector_rank": 6
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            7,
+            23
+          ],
+          "detector_rank": 6
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            7,
+            23
+          ],
+          "detector_rank": 8
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            9,
+            22
+          ],
+          "detector_rank": 8
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            24,
+            24
+          ],
+          "detector_rank": 8
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            25,
+            25
+          ],
+          "detector_rank": 8
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            25,
+            25
+          ],
+          "detector_rank": 10
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            24,
+            24
+          ],
+          "detector_rank": 10
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            25,
+            25
+          ],
+          "detector_rank": 10
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            24,
+            24
+          ],
+          "detector_rank": 10
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            24,
+            24
+          ],
+          "detector_rank": 12
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            23,
+            23
+          ],
+          "detector_rank": 12
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            25,
+            25
+          ],
+          "detector_rank": 15
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            24,
+            24
+          ],
+          "detector_rank": 13
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            24,
+            24
+          ],
+          "detector_rank": 13
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            23,
+            23
+          ],
+          "detector_rank": 11
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            24,
+            24
+          ],
+          "detector_rank": 13
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            23,
+            23
+          ],
+          "detector_rank": 11
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            23,
+            23
+          ],
+          "detector_rank": 11
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            22,
+            22
+          ],
+          "detector_rank": 9
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            10,
+            24
+          ],
+          "detector_rank": 11
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            8,
+            25
+          ],
+          "detector_rank": 9
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            8,
+            25
+          ],
+          "detector_rank": 9
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            1,
+            0,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            8,
+            24
+          ],
+          "detector_rank": 7
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            8,
+            25
+          ],
+          "detector_rank": 9
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            1,
+            1,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            8,
+            24
+          ],
+          "detector_rank": 7
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            1,
+            1,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            8,
+            24
+          ],
+          "detector_rank": 7
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            6,
+            23
+          ],
+          "detector_rank": 5
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            24,
+            10
+          ],
+          "detector_rank": 11
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            25,
+            8
+          ],
+          "detector_rank": 11
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            25,
+            8
+          ],
+          "detector_rank": 9
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            24,
+            8
+          ],
+          "detector_rank": 9
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            25,
+            8
+          ],
+          "detector_rank": 9
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            24,
+            8
+          ],
+          "detector_rank": 9
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            24,
+            8
+          ],
+          "detector_rank": 7
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            23,
+            6
+          ],
+          "detector_rank": 7
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            11,
+            11
+          ],
+          "detector_rank": 7
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            9,
+            9
+          ],
+          "detector_rank": 7
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            9,
+            9
+          ],
+          "detector_rank": 5
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            9,
+            9
+          ],
+          "detector_rank": 5
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            9,
+            9
+          ],
+          "detector_rank": 5
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            9,
+            9
+          ],
+          "detector_rank": 5
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            9,
+            9
+          ],
+          "detector_rank": 3
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            5,
+            5
+          ],
+          "detector_rank": 3
+        }
+      ]
+    },
+    {
+      "orbit": "complement star",
+      "subalphabets": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          2,
+          3
+        ]
+      ],
+      "labelled_families": 20,
+      "basis_rank": 6,
+      "certificate": [
+        [
+          3,
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          2,
+          [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
+        ],
+        [
+          4,
+          [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          3,
+          [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          1,
+          [
+            1,
+            1,
+            0,
+            0,
+            0,
+            1
+          ]
+        ]
+      ],
+      "verified_lower_base": 13,
+      "nonzero_tensor_cases": 63,
+      "profiles": [
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            4,
+            4
+          ],
+          "detector_rank": 1
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            4,
+            4
+          ],
+          "detector_rank": 2
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            6,
+            6
+          ],
+          "detector_rank": 3
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            4,
+            4
+          ],
+          "detector_rank": 0
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            6,
+            6
+          ],
+          "detector_rank": 1
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            6,
+            6
+          ],
+          "detector_rank": 2
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            6,
+            6
+          ],
+          "detector_rank": 3
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            25,
+            1
+          ],
+          "detector_rank": 4
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            24,
+            5
+          ],
+          "detector_rank": 5
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            24,
+            5
+          ],
+          "detector_rank": 6
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            1,
+            0,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            23,
+            7
+          ],
+          "detector_rank": 7
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            24,
+            5
+          ],
+          "detector_rank": 4
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            23,
+            7
+          ],
+          "detector_rank": 5
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            1,
+            1,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            23,
+            7
+          ],
+          "detector_rank": 6
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            22,
+            7
+          ],
+          "detector_rank": 7
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            1,
+            25
+          ],
+          "detector_rank": 4
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            5,
+            24
+          ],
+          "detector_rank": 3
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            5,
+            24
+          ],
+          "detector_rank": 6
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            7,
+            23
+          ],
+          "detector_rank": 5
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            5,
+            24
+          ],
+          "detector_rank": 4
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            7,
+            23
+          ],
+          "detector_rank": 3
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            7,
+            23
+          ],
+          "detector_rank": 6
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            7,
+            22
+          ],
+          "detector_rank": 5
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            24,
+            24
+          ],
+          "detector_rank": 8
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            25,
+            25
+          ],
+          "detector_rank": 7
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            25,
+            25
+          ],
+          "detector_rank": 10
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            24,
+            24
+          ],
+          "detector_rank": 9
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            25,
+            25
+          ],
+          "detector_rank": 8
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            24,
+            24
+          ],
+          "detector_rank": 7
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            24,
+            24
+          ],
+          "detector_rank": 10
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            23,
+            23
+          ],
+          "detector_rank": 9
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            25,
+            25
+          ],
+          "detector_rank": 13
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            24,
+            24
+          ],
+          "detector_rank": 12
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            24,
+            24
+          ],
+          "detector_rank": 11
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            23,
+            23
+          ],
+          "detector_rank": 10
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            24,
+            24
+          ],
+          "detector_rank": 13
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            23,
+            23
+          ],
+          "detector_rank": 12
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            23,
+            23
+          ],
+          "detector_rank": 11
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            22,
+            22
+          ],
+          "detector_rank": 10
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            10,
+            24
+          ],
+          "detector_rank": 9
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            8,
+            25
+          ],
+          "detector_rank": 8
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            8,
+            25
+          ],
+          "detector_rank": 7
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            1,
+            0,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            8,
+            24
+          ],
+          "detector_rank": 6
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            8,
+            25
+          ],
+          "detector_rank": 9
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            1,
+            1,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            8,
+            24
+          ],
+          "detector_rank": 8
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            1,
+            1,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            8,
+            24
+          ],
+          "detector_rank": 7
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            10,
+            23
+          ],
+          "detector_rank": 6
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            24,
+            10
+          ],
+          "detector_rank": 9
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            25,
+            8
+          ],
+          "detector_rank": 10
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            25,
+            8
+          ],
+          "detector_rank": 7
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            24,
+            8
+          ],
+          "detector_rank": 8
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            25,
+            8
+          ],
+          "detector_rank": 9
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            24,
+            8
+          ],
+          "detector_rank": 10
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            24,
+            8
+          ],
+          "detector_rank": 7
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            23,
+            10
+          ],
+          "detector_rank": 8
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            11,
+            11
+          ],
+          "detector_rank": 5
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            9,
+            9
+          ],
+          "detector_rank": 6
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            9,
+            9
+          ],
+          "detector_rank": 3
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            9,
+            9
+          ],
+          "detector_rank": 4
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            9,
+            9
+          ],
+          "detector_rank": 5
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            9,
+            9
+          ],
+          "detector_rank": 6
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            9,
+            9
+          ],
+          "detector_rank": 3
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            11,
+            11
+          ],
+          "detector_rank": 4
+        }
+      ]
+    },
+    {
+      "orbit": "complement four-vertex path",
+      "subalphabets": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          2,
+          4
+        ]
+      ],
+      "labelled_families": 60,
+      "basis_rank": 6,
+      "certificate": [
+        [
+          2,
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          1,
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        [
+          3,
+          [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
+        ],
+        [
+          4,
+          [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          3,
+          [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          1,
+          [
+            1,
+            1,
+            0,
+            0,
+            0,
+            1
+          ]
+        ]
+      ],
+      "verified_lower_base": 14,
+      "nonzero_tensor_cases": 63,
+      "profiles": [
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            4,
+            4
+          ],
+          "detector_rank": 2
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            4,
+            4
+          ],
+          "detector_rank": 3
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            8,
+            8
+          ],
+          "detector_rank": 5
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            4,
+            4
+          ],
+          "detector_rank": 0
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            6,
+            6
+          ],
+          "detector_rank": 2
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            6,
+            6
+          ],
+          "detector_rank": 3
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            8,
+            8
+          ],
+          "detector_rank": 5
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            25,
+            1
+          ],
+          "detector_rank": 4
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            24,
+            5
+          ],
+          "detector_rank": 6
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            24,
+            5
+          ],
+          "detector_rank": 7
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            1,
+            0,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            25,
+            9
+          ],
+          "detector_rank": 9
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            24,
+            5
+          ],
+          "detector_rank": 4
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            23,
+            7
+          ],
+          "detector_rank": 6
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            1,
+            1,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            23,
+            7
+          ],
+          "detector_rank": 7
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            24,
+            9
+          ],
+          "detector_rank": 9
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            1,
+            25
+          ],
+          "detector_rank": 4
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            5,
+            24
+          ],
+          "detector_rank": 4
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            5,
+            24
+          ],
+          "detector_rank": 7
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            9,
+            25
+          ],
+          "detector_rank": 7
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            5,
+            24
+          ],
+          "detector_rank": 4
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            7,
+            23
+          ],
+          "detector_rank": 4
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            7,
+            23
+          ],
+          "detector_rank": 7
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            9,
+            24
+          ],
+          "detector_rank": 7
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            24,
+            24
+          ],
+          "detector_rank": 8
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            25,
+            25
+          ],
+          "detector_rank": 8
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            25,
+            25
+          ],
+          "detector_rank": 11
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            24,
+            24
+          ],
+          "detector_rank": 11
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            25,
+            25
+          ],
+          "detector_rank": 8
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            24,
+            24
+          ],
+          "detector_rank": 8
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            24,
+            24
+          ],
+          "detector_rank": 11
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            25,
+            25
+          ],
+          "detector_rank": 11
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            25,
+            25
+          ],
+          "detector_rank": 14
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            24,
+            24
+          ],
+          "detector_rank": 12
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            24,
+            24
+          ],
+          "detector_rank": 11
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            25,
+            25
+          ],
+          "detector_rank": 9
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            24,
+            24
+          ],
+          "detector_rank": 14
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            23,
+            23
+          ],
+          "detector_rank": 12
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            23,
+            23
+          ],
+          "detector_rank": 11
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            24,
+            24
+          ],
+          "detector_rank": 9
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            10,
+            24
+          ],
+          "detector_rank": 10
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            8,
+            25
+          ],
+          "detector_rank": 8
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            8,
+            25
+          ],
+          "detector_rank": 7
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            1,
+            0,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            6,
+            24
+          ],
+          "detector_rank": 5
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            8,
+            25
+          ],
+          "detector_rank": 10
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            1,
+            1,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            8,
+            24
+          ],
+          "detector_rank": 8
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            1,
+            1,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            8,
+            24
+          ],
+          "detector_rank": 7
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            8,
+            25
+          ],
+          "detector_rank": 5
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            24,
+            10
+          ],
+          "detector_rank": 10
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            25,
+            8
+          ],
+          "detector_rank": 10
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            25,
+            8
+          ],
+          "detector_rank": 7
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            24,
+            6
+          ],
+          "detector_rank": 7
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            25,
+            8
+          ],
+          "detector_rank": 10
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            24,
+            8
+          ],
+          "detector_rank": 10
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            24,
+            8
+          ],
+          "detector_rank": 7
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            25,
+            8
+          ],
+          "detector_rank": 7
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            11,
+            11
+          ],
+          "detector_rank": 6
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            9,
+            9
+          ],
+          "detector_rank": 6
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            9,
+            9
+          ],
+          "detector_rank": 3
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            7,
+            7
+          ],
+          "detector_rank": 3
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            9,
+            9
+          ],
+          "detector_rank": 6
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            9,
+            9
+          ],
+          "detector_rank": 6
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            9,
+            9
+          ],
+          "detector_rank": 3
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            9,
+            9
+          ],
+          "detector_rank": 3
+        }
+      ]
+    },
+    {
+      "orbit": "complement three-vertex path plus edge",
+      "subalphabets": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          0,
+          1,
+          3
+        ]
+      ],
+      "labelled_families": 30,
+      "basis_rank": 6,
+      "certificate": [
+        [
+          1,
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          1,
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        [
+          3,
+          [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
+        ],
+        [
+          2,
+          [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
+        ],
+        [
+          4,
+          [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          2,
+          [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          1,
+          [
+            1,
+            1,
+            0,
+            0,
+            0,
+            1
+          ]
+        ]
+      ],
+      "verified_lower_base": 14,
+      "nonzero_tensor_cases": 63,
+      "profiles": [
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            4,
+            4
+          ],
+          "detector_rank": 2
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            4,
+            4
+          ],
+          "detector_rank": 3
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            8,
+            8
+          ],
+          "detector_rank": 5
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            4,
+            4
+          ],
+          "detector_rank": 2
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            6,
+            6
+          ],
+          "detector_rank": 4
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            8,
+            8
+          ],
+          "detector_rank": 5
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            10,
+            10
+          ],
+          "detector_rank": 7
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            25,
+            1
+          ],
+          "detector_rank": 4
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            24,
+            5
+          ],
+          "detector_rank": 6
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            24,
+            5
+          ],
+          "detector_rank": 7
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            1,
+            0,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            25,
+            9
+          ],
+          "detector_rank": 9
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            24,
+            5
+          ],
+          "detector_rank": 6
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            23,
+            7
+          ],
+          "detector_rank": 8
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            1,
+            1,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            25,
+            9
+          ],
+          "detector_rank": 9
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            24,
+            11
+          ],
+          "detector_rank": 11
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            1,
+            25
+          ],
+          "detector_rank": 3
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            5,
+            24
+          ],
+          "detector_rank": 3
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            5,
+            24
+          ],
+          "detector_rank": 6
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            9,
+            25
+          ],
+          "detector_rank": 6
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            5,
+            24
+          ],
+          "detector_rank": 5
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            7,
+            23
+          ],
+          "detector_rank": 5
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            9,
+            25
+          ],
+          "detector_rank": 8
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            11,
+            24
+          ],
+          "detector_rank": 8
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            24,
+            24
+          ],
+          "detector_rank": 7
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            25,
+            25
+          ],
+          "detector_rank": 7
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            25,
+            25
+          ],
+          "detector_rank": 10
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            24,
+            24
+          ],
+          "detector_rank": 10
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            25,
+            25
+          ],
+          "detector_rank": 9
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            24,
+            24
+          ],
+          "detector_rank": 9
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            24,
+            24
+          ],
+          "detector_rank": 12
+        },
+        {
+          "coefficients": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            23,
+            23
+          ],
+          "detector_rank": 12
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            25,
+            25
+          ],
+          "detector_rank": 14
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            24,
+            24
+          ],
+          "detector_rank": 12
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            24,
+            24
+          ],
+          "detector_rank": 11
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            25,
+            25
+          ],
+          "detector_rank": 9
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            24,
+            24
+          ],
+          "detector_rank": 12
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            23,
+            23
+          ],
+          "detector_rank": 10
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            25,
+            25
+          ],
+          "detector_rank": 9
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            24,
+            24
+          ],
+          "detector_rank": 7
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            10,
+            24
+          ],
+          "detector_rank": 10
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            8,
+            25
+          ],
+          "detector_rank": 8
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            8,
+            25
+          ],
+          "detector_rank": 7
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            1,
+            0,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            6,
+            24
+          ],
+          "detector_rank": 5
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            8,
+            25
+          ],
+          "detector_rank": 8
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            1,
+            1,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            8,
+            24
+          ],
+          "detector_rank": 6
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            1,
+            1,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            6,
+            24
+          ],
+          "detector_rank": 5
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            6,
+            23
+          ],
+          "detector_rank": 3
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            24,
+            10
+          ],
+          "detector_rank": 11
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            25,
+            8
+          ],
+          "detector_rank": 11
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            25,
+            8
+          ],
+          "detector_rank": 8
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            24,
+            6
+          ],
+          "detector_rank": 8
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            25,
+            8
+          ],
+          "detector_rank": 9
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            24,
+            8
+          ],
+          "detector_rank": 9
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            24,
+            6
+          ],
+          "detector_rank": 6
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            23,
+            6
+          ],
+          "detector_rank": 6
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            11,
+            11
+          ],
+          "detector_rank": 7
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            9,
+            9
+          ],
+          "detector_rank": 7
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            9,
+            9
+          ],
+          "detector_rank": 4
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            7,
+            7
+          ],
+          "detector_rank": 4
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "cut_ranks": [
+            9,
+            9
+          ],
+          "detector_rank": 5
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          "cut_ranks": [
+            9,
+            9
+          ],
+          "detector_rank": 5
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "cut_ranks": [
+            7,
+            7
+          ],
+          "detector_rank": 2
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "cut_ranks": [
+            7,
+            7
+          ],
+          "detector_rank": 2
+        }
+      ]
+    }
+  ],
+  "seconds": 0.2598989319994871
+}

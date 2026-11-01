@@ -1,0 +1,82 @@
+{
+  "column_blocks_checked": 7668,
+  "cyclic_eight": {
+    "column_coefficient_ranks": [
+      64,
+      28,
+      24,
+      12,
+      16,
+      8,
+      8,
+      4
+    ],
+    "reverse_column_valuations": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      8,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "row_coefficient_ranks": [
+      1,
+      4,
+      6,
+      16,
+      10,
+      24,
+      28,
+      64
+    ],
+    "row_valuations": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      7,
+      6,
+      5,
+      4,
+      3,
+      2,
+      1
+    ]
+  },
+  "exact_crossing_decompositions": 140,
+  "nonzero_kernel_cases": 1407,
+  "rational_am_gm_certificates": [
+    {
+      "labels": 4,
+      "strict_power_test": "pass"
+    },
+    {
+      "labels": 8,
+      "strict_power_test": "pass"
+    },
+    {
+      "labels": 16,
+      "strict_power_test": "pass"
+    },
+    {
+      "labels": 32,
+      "strict_power_test": "pass"
+    }
+  ],
+  "scope": "full conserved-convolution label domains; no claim about arbitrary label restrictions",
+  "status": "pass",
+  "tensor_product_closure_cases": 24
+}
