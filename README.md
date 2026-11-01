@@ -414,6 +414,10 @@ two-cut ranks remain open. Run `make verify-paired-paths`.
 Its enlarged six-vertex span has explicit uniform support factors:
 all three extreme pieces have `O(L^(4/3))` channels and can be
 independent. A complete favorable decomposition still remains open.
+The [height-cutoff tradeoff](research/paired-path-height-tradeoff.md)
+extends the construction to any fixed cutoff: the individual extreme
+rank exponent approaches one as the cutoff grows. The field stays fixed
+for each chosen cutoff. Run `make verify-paired-height`.
 
 The [exact nonlinear charge theorem](research/nonlinear-symbol-charge-lattices.md)
 characterizes every admissible pair of full-symbol potentials for the
