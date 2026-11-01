@@ -70,11 +70,19 @@ def native_controls():
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--archive', type=Path)
     parser.add_argument('--output', type=Path, required=True)
     args = parser.parse_args()
     errors = native_controls()
-    path = ROOT / 'evidence/moving-frame-height1-prefix16384.jsonl.gz'
-    records = [json.loads(line) for line in gzip.decompress(path.read_bytes()).splitlines()]
+    path = args.archive or ROOT / 'evidence/moving-frame-height1-prefix16384.jsonl.gz'
+    payload = gzip.decompress(path.read_bytes())
+    if path.name.endswith('.jsonl.gz'):
+        records = [json.loads(line) for line in payload.splitlines()]
+    else:
+        structured = json.loads(payload)
+        if not structured.get('completed'):
+            raise ValueError('The supplied structured search archive is incomplete.')
+        records = structured['records']
     rational_u = [(1, 64), (1, 32), (1, 16), (1, 8), (1, 4), (3, 8), (1, 2),
                   (5, 8), (3, 4), (7, 8), (15, 16), (31, 32), (63, 64)]
     angles = [2 * math.atan(n / d) for n, d in rational_u] + [math.pi / 4]
@@ -89,7 +97,14 @@ def main():
               'rational_half_angle_grid': rational_u, 'balanced_angle_also_included': True,
               'tilt_grid': tilts.tolist(), 'native_and_balanced_control_errors': errors,
               'profile_archive_sha256': sha256(path.read_bytes()).hexdigest(),
-              'source_sha256': {'tools/screen_asymmetric_moving_profiles.py': sha256(Path(__file__).read_bytes()).hexdigest()},
+              'profile_archive_name': path.name,
+              'source_sha256': {f'tools/{name}': sha256((ROOT / 'tools' / name).read_bytes()).hexdigest()
+                                for name in ('screen_asymmetric_moving_profiles.py', 'asymmetric_crossing_pressure.py',
+                                             'native_rectangular_smith_f4.py', 'native_rectangular_smith_f4.cpp',
+                                             'native_matrix_smith_f4.py', 'native_matrix_smith_f4.cpp',
+                                             'moving_physical_frames.py', 'moving_boundary_crossings.py',
+                                             'check_coherent_hot_boundary.py', 'restrict_implicit_reflection.py',
+                                             'search_moving_interior_crossings.py', 'search_physical_code_gauges.py')},
               'grid_evaluations': 0, 'negative_grid_points': 0, 'top_grid_cases': []}
     began = time.monotonic()
     top = []
@@ -111,7 +126,9 @@ def main():
         report['grid_evaluations'] += gap.size
         for offset, record in enumerate(chunk):
             position = int(np.argmin(ranking[offset]))
-            top.append({'index': begin + offset, 'a_mask': record['a_mask'], 'b_mask': record['b_mask'],
+            recipe = {name: record[name] for name in ('a_mask', 'b_mask', 'interior_index', 'interior_letter', 'a_code', 'b_code')
+                      if name in record}
+            top.append({'index': begin + offset, 'recipe': recipe,
                         'tilt': float(tt[position]), 'angle': float(grid_angle.ravel()[position]),
                         'gap_at_rate_one': float(gap[offset, position]),
                         'linearized_rate_excess': float(ranking[offset, position])})
@@ -126,11 +143,18 @@ def main():
         sides = records[candidate['index']]['orders_infinity_zero']
         def objective(values):
             return support(sides, math.exp(float(values[0])), float(values[1]))
-        fit = minimize(objective, [math.log(candidate['tilt']), candidate['angle']], method='Powell',
+        start = [math.log(candidate['tilt']), candidate['angle']]
+        initial = objective(start)
+        fit = minimize(objective, start, method='Powell',
                        bounds=[(math.log(.0001), math.log(3)), (.001, math.pi / 2 - .001)],
                        options={'maxiter': 80, 'ftol': 1e-10, 'xtol': 1e-8})
-        refined.append({**candidate, 'support_value': float(fit.fun), 'tilt': math.exp(float(fit.x[0])),
-                        'angle': float(fit.x[1]), 'optimizer_success': bool(fit.success),
+        use_initial = initial <= fit.fun
+        selected = start if use_initial else fit.x
+        refined.append({**candidate, 'support_value': float(min(initial, fit.fun)),
+                        'initial_support_value': initial, 'fitted_support_value': float(fit.fun),
+                        'used_initial_candidate': use_initial,
+                        'tilt': math.exp(float(selected[0])),
+                        'angle': float(selected[1]), 'optimizer_success': bool(fit.success),
                         'optimizer_message': str(fit.message), 'evaluations': int(fit.nfev)})
     report.update(completed=True, refined=refined, elapsed_seconds=time.monotonic() - began,
                   best_refined=min(refined, key=lambda value: value['support_value']))

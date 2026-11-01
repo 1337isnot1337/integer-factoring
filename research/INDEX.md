@@ -2,6 +2,26 @@
 
 - [Global balanced floor for the natural five-letter energy shape](natural-five-letter-pressure-floor.md): every scalar Laurent-polynomial kernel over any field at this paired-energy ray has rho at least 5/7; all 2,456 compact boxes and analytic tails are certified, with changed energy shapes and asymmetric criteria left open.
 
+- [Compact reconstructible power witnesses](compact-reconstructible-power-witnesses.md): unchanged query syntax, independent reconstruction, complete 64/80 comparisons, and earlier checkpoint release.
+
+- [Exact equivalent-norm stencils](equivalent-norm-stencils.md): unreduced decoding, independent full presentation replay, and 24 equal-budget comparisons with no observed advantage.
+
+- [Full-rank affine full-tail maps](tensor-full-tail-affine-search.md): endpoint-only maps, explicit Laurent clearings, literal controls, and all 256 binary pairs at M=16.
+
+- [Literal Laurent frames and completed searches](tensor-weighted-laurent-frame-search.md): complete binary/F16 censuses, larger finished profiles, explicit clearing costs, and independent raw-tensor controls.
+
+- [Executable two-pass oriented construction](circuit-box-oriented-batch-controls.md): unitary preprocessing, raw-difference comparison, sparse output charges, and independent ideal controls.
+
+- [Small internal pivots](small-pivot-integer-row-selection.md): arbitrary pivot-column exactness, retained original relations, and paired 96/112 component measurements.
+
+- [Sparse graph projections and bounded 128-bit attempts](sparse-projected-signed-graph.md): identical full integer maps, independently replayed integration, explicit failure costs, and a declared larger retry.
+
+- [Uniform literal full-tail core](tensor-literal-full-tail-core.md): weighted operator transport, both cut gauges, complete rank-one applications, and independent endpoint/Smith controls.
+
+- [Executable classical coprime construction](classical-oriented-basis-engine.md): complete integer engine, sparse norm words, oriented ideal verification, and full 64/80/96 controls.
+
+- [Certified 192-bit batched selective promotion](batch-smooth-fresh-192.md): complete saved-artifact replay, charged generated-ahead work, checked archive reconstruction, and the gated 208-bit follow-on.
+
 - [F4 extension of the ordered fused coefficient envelope](fused-f4-envelope.md): exact full-matrix controls, completed 484-point and 61,440-point finite families, and two registered large scans in a specified 18-dimensional subspace; no completed large-scan or stronger factoring claim.
 
 - [Two classical passes for all supplied orientations](circuit-box-orientation-batch.md): normalized root differences, sparse incidence signs, and essentially linear integer-data construction.
@@ -24,6 +44,7 @@
 - [Primitive temporary rows for exact relation selection](primitive-integer-row-selection.md): an all-matrix equivalence proof, charged coefficient bounds, 17,000 matched decisions and measured 96-bit core selection; original relations remain intact.
 
 - [A lattice terminal for exact ratio-class factors](circuit-box-ratio-lattice.md): weighted two-dimensional reduction, a uniform twenty-line local bound, exact quadratic recovery and fully charged `2^(n/3)*poly(n)` smallest-factor search; representation-specific scope.
+- [Reusable semiprime work in RiemannGaussian](riemann-gaussian-semiprime-source-audit.md): exact-source audit of deterministic boundary contraction, factor moments, semiprime count recovery and coefficient-ring compatibility; no imported score improvement or independent Lean rebuild.
 
 - [Literal hot tensors for low-cell retractions](tensor-literal-low-cell-retractions.md): original Gaussian/Pfaffian evaluation without deletion closure, a proved cache bound, complete independent kernel controls and a retained 55-label capped pilot; no frontier gain.
 
