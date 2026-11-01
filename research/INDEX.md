@@ -1,5 +1,18 @@
 # Research index
 
+## Composite-cofactor relations
+
+- [Exact composite-cofactor selection](cofactor-collision-selection.md): signed residual-ideal keys, fixed-base collision rows, exact rational-span retention, and matched 92-bit/124-bit finite controls.
+- [An explicit admissible quota](cofactor-collision-quota.md): a finite key count and weighted dominance force full relation rank; the uniform time to collect admissible hits remains open.
+
+## Exact pole-Cauchy algorithms
+
+- [Explicit residue-flow profiles](pole-smith-residue-flow.md): every Smith order in `(r+s) poly(b)` bit operations on explicit node lists, without constructing the matrix.
+- [Balanced overlap spectra](pole-smith-overlap-spectrum.md): one tree pass gives the full histogram; power-of-two padding gives a diagonal Smith formula.
+- [Inverse conditioning and entry queries](pole-cauchy-conditioning.md): balanced padding controls precision independently of dimension and permits polynomial-cost individual inverse entries.
+- [Implicit polynomial inverse moments](pole-cauchy-polynomial-moments.md): whole low-degree bilinear forms are computed from two short jets without enumerating either node set; the actual factor-count kernel remains open.
+- [Modular Newton interval jets](modular-interval-jet-arithmetic.md): explicit precision budgets retain the product identities while avoiding large exact symmetric coefficients.
+
 Related checkpoint: [31 October ordinary-proof research session](frontier-session-20261031.md) — complete score unchanged at 1/2; exact constructors, global charge obstructions, completed finite searches, and final validation.
 
 This index covers research notes on `main`. Open PRs can contain later work. Each note states its own assumptions, proof scope, and evidence. An obstruction to a specific construction is not a factoring lower bound.
@@ -520,7 +533,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Constant-state spin projectors and cut reciprocity](bounded-spin-projector.md): exact thirty-state full and sixty-state binary-selected projectors preserve both ambient cut ranks; swapping the two balanced-product exponents identifies the normalized cut operators at every length.
 - [Bounded physical support and uniform rank factors](bounded-spin-support-ranks.md): the shared extreme tensor has explicit channels growing as `(2+sqrt(2))^(n/2)`; near-corner coefficients have uniform combinatorial factors, while sublinear corner bands alone cannot span the crossing.
 - [Pencil algebras and correction modules](bounded-spin-correction-modules.md): a general rank-correction lemma, a two-generator ten-site algebra with sharp all-extension minmax `225^2`, and a twelve-site certificate separating linear span from the open algebra-containment target.
-- [Paired path encoders beyond classical spin](paired-path-crossings.md): arbitrary local invertible splittings and inverse duals give uniform Fibonacci-size crossings; explicit F16 splittings, polynomial-time entries and independent word-kernel controls leave simultaneous rank savings open.
+- [Paired path encoders beyond classical spin](paired-path-crossings.md): arbitrary local invertible splittings and inverse duals give uniform Fibonacci-size crossings; explicit F16 splittings have polynomial-time entries and three independent extreme tensors with uniform `O(L^(4/3))` support factors, while a complete favorable decomposition remains open.
 - [Binary site-symmetry actual-rank barrier](binary-site-symmetry-barrier.md): a universal degree-four certificate forces `rho>=3/4` over any fixed field, including all scalar polynomial degrees, coefficient recombinations, and common partitions into sublinearly many position classes.
 - [Full auxiliary coefficient-span optimization](auxiliary-coefficient-span.md): all 2,588 binary functionals in 15 finite cases, strict recombination gains, exact minmax certificates, and rational rank-sum optima certified by shortest-path dual potentials.
 - [Nonlinear downset-code crossings](downset-code-crossings.md): exact global characteristic-two Smith factors and a constant basis normal form for actual coefficient ranks on every downset and every paired-downset encoding, with complete small-domain controls and nonlinear regular-code searches.

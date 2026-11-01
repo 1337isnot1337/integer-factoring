@@ -1,0 +1,214 @@
+{
+  "binary_displacement_control": {
+    "base_precision": 7,
+    "compressed_nodes": 14,
+    "k": 100000000000000000000000000000000000000000000000000000000000000000000000000000000,
+    "orders": [
+      0,
+      0,
+      99999999999999999999999999999999999999999999999999999999999999999999999999999995,
+      99999999999999999999999999999999999999999999999999999999999999999999999999999998
+    ]
+  },
+  "claim": "Exact convex residue-tree algorithm for Cauchy pole Smith profiles",
+  "dense_Qw_profile_checks": 2000,
+  "exhaustive_subset_energy_checks": 200,
+  "heap_reference_profile_checks": 500,
+  "large_explicit_controls": [
+    {
+      "compressed_nodes": 62,
+      "factor_count": 1,
+      "first_orders": [
+        0,
+        99,
+        99,
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      "input_bits": 201,
+      "k": 106,
+      "last_orders": [
+        101,
+        101,
+        101,
+        101,
+        101,
+        101,
+        101,
+        101
+      ],
+      "maximal_minor_content": 1506,
+      "profile_sha256": "47ca50cfdc37080a2dfc0a77928821fd2cdb5106c793f30d5cccc97caa4896f8",
+      "size": 16,
+      "uncompressed_nodes": 3154,
+      "vertex_update_bound": 3470,
+      "vertex_updates": 188
+    },
+    {
+      "compressed_nodes": 254,
+      "factor_count": 1,
+      "first_orders": [
+        0,
+        98,
+        98,
+        98,
+        98,
+        98,
+        98,
+        98
+      ],
+      "input_bits": 201,
+      "k": 108,
+      "last_orders": [
+        101,
+        101,
+        101,
+        101,
+        101,
+        101,
+        101,
+        101
+      ],
+      "maximal_minor_content": 6307,
+      "profile_sha256": "f089431737f83ebbf9c867abee2f78b9b41e366b67e953ac7e06090fcf9c2150",
+      "size": 64,
+      "uncompressed_nodes": 12899,
+      "vertex_update_bound": 14142,
+      "vertex_updates": 892
+    },
+    {
+      "compressed_nodes": 1022,
+      "factor_count": 1,
+      "first_orders": [
+        0,
+        93,
+        93,
+        95,
+        95,
+        95,
+        95,
+        95
+      ],
+      "input_bits": 201,
+      "k": 110,
+      "last_orders": [
+        101,
+        101,
+        101,
+        101,
+        101,
+        101,
+        101,
+        101
+      ],
+      "maximal_minor_content": 25468,
+      "profile_sha256": "7190a7cf6332d9b1ba0785632467d839c9bba560fb14376f7cd335b30aec875d",
+      "size": 256,
+      "uncompressed_nodes": 51836,
+      "vertex_update_bound": 57598,
+      "vertex_updates": 4092
+    },
+    {
+      "compressed_nodes": 4094,
+      "factor_count": 1,
+      "first_orders": [
+        0,
+        93,
+        93,
+        93,
+        93,
+        95,
+        95,
+        95
+      ],
+      "input_bits": 201,
+      "k": 112,
+      "last_orders": [
+        101,
+        101,
+        101,
+        101,
+        101,
+        101,
+        101,
+        101
+      ],
+      "maximal_minor_content": 102261,
+      "profile_sha256": "c4dc7371cee7b5071eaba0291297027bdd7eefadb1fb71b1118d05188bb80521",
+      "size": 1024,
+      "uncompressed_nodes": 207733,
+      "vertex_update_bound": 234494,
+      "vertex_updates": 18428
+    },
+    {
+      "compressed_nodes": 65534,
+      "factor_count": 1,
+      "first_orders": [
+        0,
+        89,
+        89,
+        89,
+        89,
+        90,
+        90,
+        90
+      ],
+      "input_bits": 201,
+      "k": 116,
+      "last_orders": [
+        101,
+        101,
+        101,
+        101,
+        101,
+        101,
+        101,
+        101
+      ],
+      "maximal_minor_content": 1638769,
+      "profile_sha256": "c6b599c379a24080c231f616a7e2529a1d9ea047c5ce653520704141c1cb580c",
+      "size": 16384,
+      "uncompressed_nodes": 3326321,
+      "vertex_update_bound": 3883006,
+      "vertex_updates": 360444
+    },
+    {
+      "compressed_nodes": 262142,
+      "factor_count": 1,
+      "first_orders": [
+        0,
+        89,
+        89,
+        89,
+        89,
+        89,
+        89,
+        89
+      ],
+      "input_bits": 201,
+      "k": 118,
+      "last_orders": [
+        101,
+        101,
+        101,
+        101,
+        101,
+        101,
+        101,
+        101
+      ],
+      "maximal_minor_content": 6553354,
+      "profile_sha256": "5119a2e4c7efcd01771df1906c0608e5a40d88465147b05081747ee83d4a6b5f",
+      "size": 65536,
+      "uncompressed_nodes": 13303562,
+      "vertex_update_bound": 15794174,
+      "vertex_updates": 1572860
+    }
+  ],
+  "random_seed": 810215,
+  "scope": "Explicit node lists. No compressed-interval evaluator and no improved factoring exponent.",
+  "small_profile_sha256": "c9b04d817b6bd622489d248ef72e694eee94a6699f866d9d4fce04fae8a5200c"
+}

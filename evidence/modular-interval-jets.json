@@ -1,0 +1,13 @@
+{
+  "claim": "Precision-bounded integer power sums and exact Newton division",
+  "elementary_comparisons": 1000,
+  "huge_control": {
+    "degree": 80,
+    "endpoint_bits": 302,
+    "precision": 83,
+    "working_precision": 161
+  },
+  "jet_comparisons": 1000,
+  "literal_product_comparisons": 1000,
+  "scope": "Arithmetic speed and bit-size improvement; no factoring-exponent claim."
+}

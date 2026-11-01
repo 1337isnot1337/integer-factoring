@@ -200,12 +200,100 @@
       "span_dimension": 7
     }
   ],
+  "complete_corner_factor_entries": 3208,
+  "six_vertex_exposure_dimensions": [
+    3,
+    6,
+    10,
+    15,
+    21,
+    28
+  ],
+  "three_independent_vertices": {
+    "length": 8,
+    "entry_labels": [
+      [
+        9,
+        9,
+        3,
+        3
+      ],
+      [
+        10,
+        3,
+        10,
+        3
+      ],
+      [
+        7,
+        6,
+        5,
+        4
+      ],
+      [
+        12,
+        12,
+        4,
+        4
+      ],
+      [
+        9,
+        6,
+        9,
+        6
+      ],
+      [
+        1,
+        0,
+        7,
+        3
+      ],
+      [
+        7,
+        7,
+        12,
+        12
+      ],
+      [
+        8,
+        10,
+        8,
+        10
+      ],
+      [
+        5,
+        0,
+        1,
+        12
+      ],
+      [
+        10,
+        10,
+        12,
+        12
+      ],
+      [
+        0,
+        2,
+        0,
+        2
+      ],
+      [
+        2,
+        9,
+        9,
+        11
+      ]
+    ],
+    "rank": 3
+  },
   "scope": "Uniform paired path crossing construction; no favorable uniform rank decomposition.",
   "source_sha256": {
-    "tools/paired_path_crossing.py": "22d28820f85cfd3615c58e61441af19df7d804448d2651c834d2de19586f1c5b",
-    "tools/check_paired_path_crossing.py": "cfb448c124856baa283e630e1769326ee4a73ddf0daccd6b2a121c2ffb5c3a3c",
+    "tools/paired_path_crossing.py": "309fb3f10a230475d5fae68625fcee5f5cfb50fc52491cc63f0765a7627c5c4b",
+    "tools/check_paired_path_crossing.py": "729af8ef88587c99781e33652bcb5e0736b27fdedc75263c840ec07f8febf32c",
     "tools/check_fourier_multiplication_gates.py": "b094e9101f867d624aafa7bd851cb00b1ea411d1dc69cb700e742e609f94efc9",
     "tools/bounded_spin_crossing.py": "cefc38c88cdf76650f4966fa9e49d0edbc9ce4c2eec3848dd2716f35ee3819bd",
-    "tools/check_fixed_field_descent.py": "831c1fe850b9d21b8d0050e310adaed2586251950542bb7d274e2ffd334ea8ac"
+    "tools/check_fixed_field_descent.py": "831c1fe850b9d21b8d0050e310adaed2586251950542bb7d274e2ffd334ea8ac",
+    "tools/bounded_spin_support.py": "d3771564da3fb1d88ebdc2444f4e62db6754b2f72ad11101ed72a078a2d4a678"
   }
 }

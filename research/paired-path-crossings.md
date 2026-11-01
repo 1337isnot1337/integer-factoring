@@ -142,7 +142,76 @@ fixed extension degree four per cut after amplification. The existing
 the factoring interface. Projecting the local tensor at every site
 is not the descent operation in that assertion.
 
-## 4. Evidence and the remaining question
+## 4. Enlarged span and uniform support factors
+
+The balanced six-vertex construction also applies to these paired
+encoders. With local weights `a,f,b,e,c,d` on `0000,1111,0101,1010,0110,1001`,
+equal word weights force equal occurrence counts within each pair.
+Thus the compressed tensor is
+
+```math
+\sum_{A+B+C=n/2}T_{ABC}U^AV^BW^C,\qquad U=af,
+\quad V=be,\quad W=cd.
+```
+
+The [same disjoint-window exposure](bounded-spin-six-vertex.md),
+`a=f=d=1,b=e=1-z,c=z^(n+1)`, gives a univariate polynomial of degree
+at most `n(n+1)/2`, with the crossing endpoint at one. Its coefficients
+span every `T_ABC`: windows for different `C` are disjoint, and
+the remaining polynomials `(1-z)^(2B)` have distinct leading degrees.
+This argument remains valid in characteristic two. The magnetic
+entry algorithm uses `O(n^2)` monomial counters and polynomial time.
+
+There is a support bound for **every** weight-preserving local splitting
+in section 1, on primal and dual words alike. At prefix length `i`,
+write `D_i` for the number of down steps and `W_i` for the number of
+word ones. Then `h_i=i-2D_i` and `r_i=W_i-D_i`, so
+
+```math
+|i-2W_i|=|h_i-2r_i|\le h_i\le3.
+```
+
+The [bounded-walk count](bounded-spin-support-ranks.md) therefore bounds
+the physical support by `s_n=2a_(n/2)=O(g^n)`, where
+`g=sqrt(2+sqrt(2))<phi^(4/3)` and `L_n` grows as `phi^n`.
+
+In fact each `T_ABC` has explicit factors in both cuts with at most
+
+```math
+s_n\binom n{2(B+C)}\binom{2(B+C)}{2C}
+ =s_n\frac{n!}{(2A)!(2B)!(2C)!}                 \tag{5}
+```
+
+channels. A channel chooses a supported word `x`, a set `J` of
+`2(B+C)` positions, and a subset `D` of `J` of size `2C`. Its four
+words are `x,x^J,x^D,x^(J xor D)`. The channel contributes
+
+```math
+F_P(x)F_Q(x^J)D_R(x^D)D_S(x^{J\mathbin\triangle D}).
+```
+
+This is a product of a row factor and a column factor in either cut.
+All six-vertex configurations occur exactly once. Invalid or unsupported
+words have zero encoder entries. The channels are uniformly unranked
+by the existing bounded-walk and subset routines, including each word
+and its complement as separate channels. No complement covariance of
+the frame is assumed.
+
+In particular the three extreme tensors each have both ranks at most
+`s_n=O(L_n^(4/3))`. Unlike the classical family, they need not coincide:
+an eight-site entry minor for `q=a^3` proves that all three are
+independent. These are several uniformly cheap directions. They do
+not yet decompose the crossing. By rank subadditivity and (5), even
+all three corner bands of width `o(n/log n)` have total row rank at
+most `poly(n)g^n exp(o(n))`, smaller than the crossing's `L_n^2`.
+
+The enlarged coefficient dimension is `O(lambda^2)`. The exponential
+selection argument of section 3 would now cost `2^O(lambda^2)` and
+does not supply the required effectivity. A bound on the raw pieces
+or another explicit selection recipe is an additional obligation
+when using arbitrary enlarged-space recombinations.
+
+## 5. Evidence and the remaining question
 
 Run `make verify-paired-paths`; it uses only the Python standard library.
 The [source-pinned receipt](../evidence/paired-path-crossing.json) records:
@@ -154,11 +223,33 @@ The [source-pinned receipt](../evidence/paired-path-crossing.json) records:
 - Entry certificates attaining coefficient-span dimensions five, six and
   seven at lengths eight, ten and twelve for `q=a^3`. The parity bound
   above supplies the matching upper bounds.
+- Complete support-channel factorizations for the three extremes and two
+  first-corner pieces through six sites: 3,208 entry identities.
+- The three independent eight-site extreme tensors and full exposure-map
+  ranks through twelve sites, plus enlarged crossing endpoint controls.
 
 The open problem is an effective decomposition of the crossing into
 coefficient-span pieces with favorable simultaneous cut ranks, uniformly
 as the selected label width grows. Arbitrary invertible splittings from
 section 1 remain available if the specialization (2) is too rigid.
+The [universal finite rank-sum exclusion](geometric-cut-rank-budget.md)
+already rules out a strict seed through 95 labels, over every field.
+Thus the 13-, 34- and 89-label checks here verify structure and entry
+algorithms; they cannot provide a strict finite seed. A binary-label
+seed would need at least 128 labels.
+
+There is also a useful necessary condition for the uniform problem.
+Suppose `E_L=sum_(j=1)^m H_j`, with `m=poly(n)` and
+`r(H_j)c(H_j)<=L^(2 gamma)` for every piece. Rank subadditivity
+forces some piece to have `r>=L^2/m`, hence `c<=m L^(2 gamma-2)`;
+another piece has the reversed inequalities. At the post-half
+threshold `gamma=sqrt(2)`, the small cut must therefore grow at
+most as `L^(2 sqrt(2)-2+o(1))`, whose exponent is about 0.828.
+Several pieces with both ranks subquadratic do not replace these
+asymmetric directions. Classifying low-opposite-cut directions in
+the enlarged span, together with their compatible combinations,
+is a more specific next question than finding further cheap corners.
+
 The construction and finite span certificates establish neither such
 a rank theorem nor a higher score. The strongest complete score remains
 `1/2`. These arguments and tools used substantial Codex AI assistance;

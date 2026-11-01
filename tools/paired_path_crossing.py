@@ -4,8 +4,10 @@ from __future__ import annotations
 
 from functools import lru_cache
 from itertools import product
+from math import comb
 
 from bounded_spin_crossing import binary_path
+from bounded_spin_support import corner_channel_count as orbit_channels,corner_words as orbit_words
 from check_fourier_multiplication_gates import BinaryField
 
 FIELD = BinaryField(0b10011)
@@ -109,3 +111,60 @@ def polynomial_entry(four_paths,q=8):
 
 def binary_entry(width,labels,q=8):
     return polynomial_entry(tuple(binary_path(width,label) for label in labels),q)
+
+
+def monomial_entry(four_paths,q=8):
+    """Balanced six-vertex coefficients, keyed by exponents of af, be, cd."""
+    length = len(four_paths[0])
+    assert all(len(p) == length and sum(p) == 0 for p in four_paths)
+    blocks = splitting_blocks(q)
+    vertices = (((0,0,0,0),0),((1,1,1,1),0),
+                ((0,1,0,1),1),((1,0,1,0),1),
+                ((0,1,1,0),2),((1,0,0,1),2))
+    states,heights = {((0,0,0,0),(0,0,0)):1},[0]*4
+    for i in range(length):
+        directions = [p[i] for p in four_paths]
+        following = {}
+        for (magnetic,counts),value in states.items():
+            for bits,kind in vertices:
+                target,scalar = [],value
+                for leg,(h,s,r,b) in enumerate(zip(heights,directions,magnetic,bits)):
+                    transition = step(h,s,r,b,blocks,dual=leg >= 2)
+                    if transition is None:
+                        scalar = 0
+                        break
+                    nr,c = transition
+                    target.append(nr)
+                    scalar = MULTIPLY[scalar][c]
+                if scalar:
+                    new_counts = tuple(c+int(j == kind) for j,c in enumerate(counts))
+                    key = tuple(target),new_counts
+                    following[key] = following.get(key,0) ^ scalar
+        states = {k:v for k,v in following.items() if v}
+        heights = [h+s for h,s in zip(heights,directions)]
+    result = {}
+    for (magnetic,counts),value in states.items():
+        assert magnetic == (0,0,0,0) and not any(c&1 for c in counts)
+        result[tuple(c//2 for c in counts)] = value
+    return result
+
+
+def corner_channel_count(length,b,c):
+    return 2*orbit_channels(length,b,c)
+
+
+def exposed_six_vertex_entry(four_paths,q=8):
+    n = len(four_paths[0])
+    result = [0]*(n//2*(n+1)+1)
+    for (_,b,c),value in monomial_entry(four_paths,q).items():
+        for j in range(2*b+1):
+            if comb(2*b,j)&1:
+                result[(n+1)*c+j] ^= value
+    return result
+
+
+def corner_words(length,b,c,channel):
+    assert 0 <= channel < corner_channel_count(length,b,c)
+    words = orbit_words(length,b,c,channel//2)
+    complement = ((1 << length)-1) if channel&1 else 0
+    return tuple(w ^ complement for w in words)

@@ -28,6 +28,27 @@ The complete Lean endpoint is [`IntegerFactoring.HalfAppendix.sqrtLogLog_factori
 
 The composition uses the existing clique evaluator from [Anthropic's Appendix B](https://github.com/anthropics/formal-math) and the multiplication-network reduction by [Isaac Rudich and Louis-Martin Rousseau](https://github.com/IsaacRudich/SubexponentialDeterministicFactoring). See the [written proof](research/half-rate-factoring.md), the [constructor](research/half-top-constructor.md), and the [evaluator audit](research/half-evaluator-audit.md).
 
+<!-- cofactor-collision-checkpoint:start -->
+## Composite-cofactor relation selection
+
+The [exact selector](research/cofactor-collision-selection.md) cancels equal
+or conjugate residual ideals without factoring their composite norms or testing
+them for primality. It retains genuine relations in the fixed prime-form base.
+Matched finite controls reduce leading-norm queries from 227,593 to 88,234 on
+a 92-bit input and from 3,553,722 to 1,400,316 on a 124-bit input. These are
+query counts, not wall-clock speedups or uniform complexity bounds.
+
+The [admissible-quota theorem](research/cofactor-collision-quota.md) proves
+that an explicit per-generator quota forces complete rational relation rank,
+and that retaining independent original rows preserves the useful torsion image.
+The time to collect the required admissible leading norms remains open.
+The complete factoring score remains **1/2**.
+
+Run `make verify-cofactor-collisions` for the exact retained-witness and
+quota checks; add `--replay-search` to the selector checker to repeat every
+large-run query.
+<!-- cofactor-collision-checkpoint:end -->
+
 ## Results and evidence
 
 | Claim | Status | Details |
@@ -64,6 +85,19 @@ The [full Cauchy Smith-profile theorem](research/pole-smith-stabilization.md)
 removes any matrix-size-dependent stabilization precision and gives a direct
 rectangular maximal-minor slope. It does not identify the unknown factor pivots
 or supply a compressed global evaluator. Run `make verify-pole-smith`.
+
+<!-- pole-implicit-checkpoint:start -->
+The pole-Cauchy route now has [linear explicit Smith-profile computation](research/pole-smith-residue-flow.md),
+a [balanced overlap histogram](research/pole-smith-overlap-spectrum.md), and
+[dimension-independent inverse conditioning](research/pole-cauchy-conditioning.md).
+Individual inverse entries and [complete low-degree polynomial bilinear moments](research/pole-cauchy-polynomial-moments.md)
+are computable from binary-encoded progressions in polynomial bit time.
+[Precision-bounded Newton arithmetic](research/modular-interval-jet-arithmetic.md)
+keeps the interval-jet coefficient sizes controlled. These are exact ordinary
+results with independent finite controls; the factor-count Hadamard-square trace
+and implicit reciprocal-overlap counts remain open. Run `make verify-pole-arithmetic`.
+<!-- pole-implicit-checkpoint:end -->
+
 The [research index](research/INDEX.md) links proofs, exact evidence, and replay commands.
 
 The [joint raw-boundary theorem](research/joint-top-boundary-rank.md) extends
@@ -411,6 +445,9 @@ and their inverse duals. An explicit F16 family retains Fibonacci label
 growth, polynomial-time entries and both strict endpoints. Exact small
 checks cover all twelve valid field parameters; favorable uniform
 two-cut ranks remain open. Run `make verify-paired-paths`.
+Its enlarged six-vertex span has explicit uniform support factors:
+all three extreme pieces have `O(L^(4/3))` channels and can be
+independent. A complete favorable decomposition still remains open.
 
 The [exact nonlinear charge theorem](research/nonlinear-symbol-charge-lattices.md)
 characterizes every admissible pair of full-symbol potentials for the
