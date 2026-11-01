@@ -2800,3 +2800,11 @@ verify-height36-core-replay:
 .PHONY: verify-coherent-f8
 verify-coherent-f8:
 	python3 tools/check_coherent_hot_f8.py
+
+.PHONY: verify-f8-hyperoval verify-f8-hyperoval-full
+verify-f8-hyperoval:
+	python3 tools/replay_f8_hyperoval_q96.py
+	python3 tools/certify_f8_hyperoval_q96.py
+verify-f8-hyperoval-full:
+	python3 tools/replay_f8_hyperoval_q96.py --full
+	python3 tools/certify_f8_hyperoval_q96.py

@@ -1,0 +1,310 @@
+{
+  "completed": true,
+  "complete_entries": 76,
+  "nonbinary_entries": 14,
+  "top_plane_entries": 14,
+  "independent_binary_determinants": 164,
+  "blocks": [
+    {
+      "charge": 0,
+      "cut": "zero",
+      "pairs": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "charge": 0,
+      "cut": "infinity",
+      "pairs": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "charge": 1,
+      "cut": "zero",
+      "pairs": [
+        [
+          90,
+          0
+        ],
+        [
+          0,
+          87
+        ]
+      ]
+    },
+    {
+      "charge": 1,
+      "cut": "infinity",
+      "pairs": [
+        [
+          90,
+          0
+        ],
+        [
+          0,
+          87
+        ]
+      ]
+    },
+    {
+      "charge": 2,
+      "cut": "zero",
+      "pairs": [
+        [
+          0,
+          63
+        ],
+        [
+          82,
+          90
+        ]
+      ]
+    },
+    {
+      "charge": 2,
+      "cut": "infinity",
+      "pairs": [
+        [
+          0,
+          63
+        ],
+        [
+          82,
+          90
+        ]
+      ]
+    },
+    {
+      "charge": 3,
+      "cut": "zero",
+      "pairs": [
+        [
+          0,
+          94
+        ],
+        [
+          0,
+          36
+        ]
+      ]
+    },
+    {
+      "charge": 3,
+      "cut": "infinity",
+      "pairs": [
+        [
+          0,
+          94
+        ],
+        [
+          0,
+          36
+        ]
+      ]
+    },
+    {
+      "charge": 4,
+      "cut": "zero",
+      "pairs": [
+        [
+          1,
+          94
+        ],
+        [
+          3,
+          91
+        ]
+      ]
+    },
+    {
+      "charge": 4,
+      "cut": "infinity",
+      "pairs": [
+        [
+          1,
+          94
+        ],
+        [
+          3,
+          91
+        ]
+      ]
+    },
+    {
+      "charge": 5,
+      "cut": "zero",
+      "pairs": [
+        [
+          77,
+          94
+        ],
+        [
+          80,
+          9
+        ]
+      ]
+    },
+    {
+      "charge": 5,
+      "cut": "infinity",
+      "pairs": [
+        [
+          77,
+          94
+        ],
+        [
+          80,
+          9
+        ]
+      ]
+    },
+    {
+      "charge": 6,
+      "cut": "zero",
+      "pairs": [
+        [
+          94,
+          43
+        ],
+        [
+          26,
+          78
+        ]
+      ]
+    },
+    {
+      "charge": 6,
+      "cut": "infinity",
+      "pairs": [
+        [
+          94,
+          43
+        ],
+        [
+          26,
+          78
+        ]
+      ]
+    },
+    {
+      "charge": 7,
+      "cut": "zero",
+      "pairs": [
+        [
+          94,
+          29
+        ],
+        [
+          30,
+          54
+        ]
+      ]
+    },
+    {
+      "charge": 7,
+      "cut": "infinity",
+      "pairs": [
+        [
+          94,
+          29
+        ],
+        [
+          30,
+          54
+        ]
+      ]
+    },
+    {
+      "charge": 8,
+      "cut": "zero",
+      "pairs": [
+        [
+          95,
+          92
+        ],
+        [
+          30,
+          60
+        ]
+      ]
+    },
+    {
+      "charge": 8,
+      "cut": "infinity",
+      "pairs": [
+        [
+          95,
+          92
+        ],
+        [
+          30,
+          60
+        ]
+      ]
+    },
+    {
+      "charge": 9,
+      "cut": "zero",
+      "pairs": [
+        [
+          92,
+          42
+        ],
+        [
+          60,
+          92
+        ]
+      ]
+    },
+    {
+      "charge": 9,
+      "cut": "infinity",
+      "pairs": [
+        [
+          92,
+          42
+        ],
+        [
+          60,
+          92
+        ]
+      ]
+    },
+    {
+      "charge": 10,
+      "cut": "zero",
+      "pairs": [
+        [
+          92,
+          92
+        ]
+      ]
+    },
+    {
+      "charge": 10,
+      "cut": "infinity",
+      "pairs": [
+        [
+          92,
+          92
+        ]
+      ]
+    }
+  ],
+  "source_sha256": {
+    "coherent_f8_maps.py": "8311c760387befd0d7ca709397063d4498dbbfb9a66c74f882c9e924f4c2cfa4",
+    "coherent_hot_compounds_f8.py": "6194da70ba852a0251d26efe1ce509f5b834d6c44b9585847f6040d3c456cc4a",
+    "coherent_hot_compounds_f8.cpp": "f7dd6ae710456b7430e898144dca9d0118fa9a5e9ac0df9966b8663a75262f73",
+    "selected_gaussian_coefficients.cpp": "b648c25e65907b8528bd0491ef2a67442cc1c6982f95e1d5335bc41246a51a15",
+    "native_rectangular_smith_f4.cpp": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6",
+    "coherent_hot_compounds.py": "43971c67f7fb938a836863ddf13794df4bc772ff20e043a5190174552231554a"
+  },
+  "scope": "Selected full polynomial entries of the q96 F8 hyperoval; not an independent full profile replay."
+}

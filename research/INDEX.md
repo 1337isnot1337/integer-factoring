@@ -1495,3 +1495,7 @@ The [symbolic profile classification](orthogonal-joint-global-rigidity.md#5-all-
 ## F8 coherent retraction engine
 
 [Three-plane construction and independent controls](coherent-hot-f8-retractions.md) extends the coherent code interface to F8, with exact low orders and explicit unresolved tails. The check covers 16,884 complete polynomial entries and 70 independent full block profiles. No factoring improvement follows from the engine alone.
+
+## Ten-point F8 hyperoval crossing
+
+[Exact 96-letter bound rho < 0.710005835](f8-hyperoval-crossing-bound.md) improves both complete natural profiles over the F4 code at every positive scale. The source-pinned clean replay resolves all 18,432 channel orders, with an explicit rational physical type and independent polynomial-entry controls. The factoring exponent remains 1/2.

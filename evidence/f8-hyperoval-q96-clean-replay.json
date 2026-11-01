@@ -1,0 +1,24 @@
+{
+  "completed": true,
+  "all_full_orders_replayed": 18432,
+  "all_120_hyperoval_minors_checked": true,
+  "all_endpoints_checked_by_constructor": true,
+  "cutoff": 127,
+  "tail_counts": [
+    0,
+    0
+  ],
+  "profile_sha256": "a2d23fb1e21f9c4d67bdaa3df6baf48736839afca0b2ba795571a9378c091d4e",
+  "source_sha256": {
+    "replay_f8_hyperoval_q96.py": "e85dfbbad0c0213cfb4f9b38cbc4bf4861357a627cea572756437dc2d20135ac",
+    "check_f8_hyperoval_entries.py": "611219498a9dcab86be7edf6d57b8e3e637b6821a3f08c385f50825c401df065",
+    "coherent_f8_maps.py": "8311c760387befd0d7ca709397063d4498dbbfb9a66c74f882c9e924f4c2cfa4",
+    "coherent_hot_compounds_f8.py": "6194da70ba852a0251d26efe1ce509f5b834d6c44b9585847f6040d3c456cc4a",
+    "coherent_hot_compounds_f8.cpp": "f7dd6ae710456b7430e898144dca9d0118fa9a5e9ac0df9966b8663a75262f73",
+    "selected_gaussian_coefficients.cpp": "b648c25e65907b8528bd0491ef2a67442cc1c6982f95e1d5335bc41246a51a15",
+    "native_rectangular_smith_f4.cpp": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6",
+    "coherent_hot_compounds.py": "43971c67f7fb938a836863ddf13794df4bc772ff20e043a5190174552231554a"
+  },
+  "seconds": 2388.706204010996,
+  "scope": "Both complete finite profiles were reconstructed by the exact F8 engine. Not a factoring-exponent improvement or independent mathematical review."
+}
