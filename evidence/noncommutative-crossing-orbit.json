@@ -1,0 +1,3485 @@
+{
+  "status": "exact finite construction checks; no stronger exponent",
+  "coefficient_field": "F_2",
+  "groups": [
+    {
+      "field_degree": 1,
+      "order": 8,
+      "generator_count": 3
+    },
+    {
+      "field_degree": 2,
+      "order": 64,
+      "generator_count": 6
+    }
+  ],
+  "profiles": [
+    {
+      "field_degree": 1,
+      "labels": 8,
+      "binary_width": 3,
+      "order": [
+        0,
+        1,
+        2
+      ],
+      "weights": [
+        1,
+        1,
+        1
+      ],
+      "piece_degree": 3,
+      "control_correction": null,
+      "row_ranks": [
+        64,
+        32,
+        10,
+        1
+      ],
+      "column_ranks": [
+        5,
+        19,
+        32,
+        64
+      ],
+      "rank_products": [
+        320,
+        608,
+        320,
+        64
+      ],
+      "max_rank_product": 608,
+      "total_widths": [
+        9,
+        10,
+        9,
+        6
+      ],
+      "maximum_total_width": 10,
+      "nonzero_piece_count": 4
+    },
+    {
+      "field_degree": 1,
+      "labels": 8,
+      "binary_width": 3,
+      "order": [
+        0,
+        2,
+        1
+      ],
+      "weights": [
+        1,
+        1,
+        1
+      ],
+      "piece_degree": 3,
+      "control_correction": null,
+      "row_ranks": [
+        64,
+        32,
+        10,
+        1
+      ],
+      "column_ranks": [
+        5,
+        19,
+        32,
+        64
+      ],
+      "rank_products": [
+        320,
+        608,
+        320,
+        64
+      ],
+      "max_rank_product": 608,
+      "total_widths": [
+        9,
+        10,
+        9,
+        6
+      ],
+      "maximum_total_width": 10,
+      "nonzero_piece_count": 4
+    },
+    {
+      "field_degree": 1,
+      "labels": 8,
+      "binary_width": 3,
+      "order": [
+        1,
+        0,
+        2
+      ],
+      "weights": [
+        1,
+        1,
+        1
+      ],
+      "piece_degree": 3,
+      "control_correction": null,
+      "row_ranks": [
+        64,
+        32,
+        10,
+        1
+      ],
+      "column_ranks": [
+        5,
+        19,
+        32,
+        64
+      ],
+      "rank_products": [
+        320,
+        608,
+        320,
+        64
+      ],
+      "max_rank_product": 608,
+      "total_widths": [
+        9,
+        10,
+        9,
+        6
+      ],
+      "maximum_total_width": 10,
+      "nonzero_piece_count": 4
+    },
+    {
+      "field_degree": 1,
+      "labels": 8,
+      "binary_width": 3,
+      "order": [
+        1,
+        2,
+        0
+      ],
+      "weights": [
+        1,
+        1,
+        1
+      ],
+      "piece_degree": 3,
+      "control_correction": null,
+      "row_ranks": [
+        64,
+        32,
+        10,
+        1
+      ],
+      "column_ranks": [
+        5,
+        19,
+        32,
+        64
+      ],
+      "rank_products": [
+        320,
+        608,
+        320,
+        64
+      ],
+      "max_rank_product": 608,
+      "total_widths": [
+        9,
+        10,
+        9,
+        6
+      ],
+      "maximum_total_width": 10,
+      "nonzero_piece_count": 4
+    },
+    {
+      "field_degree": 1,
+      "labels": 8,
+      "binary_width": 3,
+      "order": [
+        2,
+        0,
+        1
+      ],
+      "weights": [
+        1,
+        1,
+        1
+      ],
+      "piece_degree": 3,
+      "control_correction": null,
+      "row_ranks": [
+        64,
+        32,
+        10,
+        1
+      ],
+      "column_ranks": [
+        5,
+        19,
+        32,
+        64
+      ],
+      "rank_products": [
+        320,
+        608,
+        320,
+        64
+      ],
+      "max_rank_product": 608,
+      "total_widths": [
+        9,
+        10,
+        9,
+        6
+      ],
+      "maximum_total_width": 10,
+      "nonzero_piece_count": 4
+    },
+    {
+      "field_degree": 1,
+      "labels": 8,
+      "binary_width": 3,
+      "order": [
+        2,
+        1,
+        0
+      ],
+      "weights": [
+        1,
+        1,
+        1
+      ],
+      "piece_degree": 3,
+      "control_correction": null,
+      "row_ranks": [
+        64,
+        32,
+        10,
+        1
+      ],
+      "column_ranks": [
+        5,
+        19,
+        32,
+        64
+      ],
+      "rank_products": [
+        320,
+        608,
+        320,
+        64
+      ],
+      "max_rank_product": 608,
+      "total_widths": [
+        9,
+        10,
+        9,
+        6
+      ],
+      "maximum_total_width": 10,
+      "nonzero_piece_count": 4
+    },
+    {
+      "field_degree": 1,
+      "labels": 8,
+      "binary_width": 3,
+      "order": [
+        0,
+        1,
+        2
+      ],
+      "weights": [
+        1,
+        1,
+        2
+      ],
+      "piece_degree": 4,
+      "control_correction": null,
+      "row_ranks": [
+        64,
+        28,
+        18,
+        6,
+        1
+      ],
+      "column_ranks": [
+        5,
+        14,
+        24,
+        28,
+        64
+      ],
+      "rank_products": [
+        320,
+        392,
+        432,
+        168,
+        64
+      ],
+      "max_rank_product": 432,
+      "total_widths": [
+        9,
+        9,
+        10,
+        8,
+        6
+      ],
+      "maximum_total_width": 10,
+      "nonzero_piece_count": 5
+    },
+    {
+      "field_degree": 1,
+      "labels": 8,
+      "binary_width": 3,
+      "order": [
+        0,
+        1,
+        2
+      ],
+      "weights": [
+        1,
+        2,
+        1
+      ],
+      "piece_degree": 4,
+      "control_correction": null,
+      "row_ranks": [
+        64,
+        24,
+        18,
+        8,
+        1
+      ],
+      "column_ranks": [
+        5,
+        13,
+        25,
+        24,
+        64
+      ],
+      "rank_products": [
+        320,
+        312,
+        450,
+        192,
+        64
+      ],
+      "max_rank_product": 450,
+      "total_widths": [
+        9,
+        9,
+        10,
+        8,
+        6
+      ],
+      "maximum_total_width": 10,
+      "nonzero_piece_count": 5
+    },
+    {
+      "field_degree": 1,
+      "labels": 8,
+      "binary_width": 3,
+      "order": [
+        0,
+        1,
+        2
+      ],
+      "weights": [
+        2,
+        1,
+        1
+      ],
+      "piece_degree": 4,
+      "control_correction": null,
+      "row_ranks": [
+        64,
+        24,
+        18,
+        8,
+        1
+      ],
+      "column_ranks": [
+        5,
+        13,
+        25,
+        24,
+        64
+      ],
+      "rank_products": [
+        320,
+        312,
+        450,
+        192,
+        64
+      ],
+      "max_rank_product": 450,
+      "total_widths": [
+        9,
+        9,
+        10,
+        8,
+        6
+      ],
+      "maximum_total_width": 10,
+      "nonzero_piece_count": 5
+    },
+    {
+      "field_degree": 1,
+      "labels": 8,
+      "binary_width": 3,
+      "order": [
+        0,
+        1,
+        2
+      ],
+      "weights": [
+        1,
+        2,
+        3
+      ],
+      "piece_degree": 6,
+      "control_correction": null,
+      "row_ranks": [
+        64,
+        16,
+        16,
+        18,
+        4,
+        4,
+        1
+      ],
+      "column_ranks": [
+        5,
+        10,
+        10,
+        24,
+        16,
+        16,
+        64
+      ],
+      "rank_products": [
+        320,
+        160,
+        160,
+        432,
+        64,
+        64,
+        64
+      ],
+      "max_rank_product": 432,
+      "total_widths": [
+        9,
+        8,
+        8,
+        10,
+        6,
+        6,
+        6
+      ],
+      "maximum_total_width": 10,
+      "nonzero_piece_count": 7
+    },
+    {
+      "field_degree": 2,
+      "labels": 64,
+      "binary_width": 6,
+      "order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "weights": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "piece_degree": 6,
+      "control_correction": null,
+      "row_ranks": [
+        4096,
+        2592,
+        1388,
+        518,
+        133,
+        20,
+        1
+      ],
+      "column_ranks": [
+        31,
+        226,
+        706,
+        1379,
+        2164,
+        2592,
+        4096
+      ],
+      "rank_products": [
+        126976,
+        585792,
+        979928,
+        714322,
+        287812,
+        51840,
+        4096
+      ],
+      "max_rank_product": 979928,
+      "total_widths": [
+        17,
+        20,
+        21,
+        21,
+        20,
+        17,
+        12
+      ],
+      "maximum_total_width": 21,
+      "nonzero_piece_count": 7
+    },
+    {
+      "field_degree": 2,
+      "labels": 64,
+      "binary_width": 6,
+      "order": [
+        2,
+        3,
+        0,
+        1,
+        4,
+        5
+      ],
+      "weights": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "piece_degree": 6,
+      "control_correction": null,
+      "row_ranks": [
+        4096,
+        2592,
+        1388,
+        518,
+        133,
+        20,
+        1
+      ],
+      "column_ranks": [
+        31,
+        226,
+        706,
+        1379,
+        2164,
+        2592,
+        4096
+      ],
+      "rank_products": [
+        126976,
+        585792,
+        979928,
+        714322,
+        287812,
+        51840,
+        4096
+      ],
+      "max_rank_product": 979928,
+      "total_widths": [
+        17,
+        20,
+        21,
+        21,
+        20,
+        17,
+        12
+      ],
+      "maximum_total_width": 21,
+      "nonzero_piece_count": 7
+    }
+  ],
+  "full_coefficient_spans": [
+    {
+      "labels": 8,
+      "binary_width": 3,
+      "control_correction": null,
+      "coefficient_dimension": 4,
+      "all_recombinations": [
+        {
+          "functional_mask": 1,
+          "row_rank": 64,
+          "column_rank": 5,
+          "rank_product": 320
+        },
+        {
+          "functional_mask": 2,
+          "row_rank": 32,
+          "column_rank": 19,
+          "rank_product": 608
+        },
+        {
+          "functional_mask": 3,
+          "row_rank": 64,
+          "column_rank": 19,
+          "rank_product": 1216
+        },
+        {
+          "functional_mask": 4,
+          "row_rank": 10,
+          "column_rank": 32,
+          "rank_product": 320
+        },
+        {
+          "functional_mask": 5,
+          "row_rank": 64,
+          "column_rank": 32,
+          "rank_product": 2048
+        },
+        {
+          "functional_mask": 6,
+          "row_rank": 32,
+          "column_rank": 28,
+          "rank_product": 896
+        },
+        {
+          "functional_mask": 7,
+          "row_rank": 64,
+          "column_rank": 28,
+          "rank_product": 1792
+        },
+        {
+          "functional_mask": 8,
+          "row_rank": 1,
+          "column_rank": 64,
+          "rank_product": 64
+        },
+        {
+          "functional_mask": 9,
+          "row_rank": 64,
+          "column_rank": 64,
+          "rank_product": 4096
+        },
+        {
+          "functional_mask": 10,
+          "row_rank": 32,
+          "column_rank": 64,
+          "rank_product": 2048
+        },
+        {
+          "functional_mask": 11,
+          "row_rank": 64,
+          "column_rank": 64,
+          "rank_product": 4096
+        },
+        {
+          "functional_mask": 12,
+          "row_rank": 10,
+          "column_rank": 64,
+          "rank_product": 640
+        },
+        {
+          "functional_mask": 13,
+          "row_rank": 64,
+          "column_rank": 64,
+          "rank_product": 4096
+        },
+        {
+          "functional_mask": 14,
+          "row_rank": 32,
+          "column_rank": 64,
+          "rank_product": 2048
+        },
+        {
+          "functional_mask": 15,
+          "row_rank": 64,
+          "column_rank": 64,
+          "rank_product": 4096
+        }
+      ],
+      "minimum_bottleneck_rank_product": 608,
+      "witness": [
+        {
+          "functional_mask": 8,
+          "row_rank": 1,
+          "column_rank": 64,
+          "rank_product": 64
+        },
+        {
+          "functional_mask": 1,
+          "row_rank": 64,
+          "column_rank": 5,
+          "rank_product": 320
+        },
+        {
+          "functional_mask": 4,
+          "row_rank": 10,
+          "column_rank": 32,
+          "rank_product": 320
+        },
+        {
+          "functional_mask": 2,
+          "row_rank": 32,
+          "column_rank": 19,
+          "rank_product": 608
+        }
+      ],
+      "unit_slice_minimum_column_rank": 5,
+      "minimum_rank_sum_interval": {
+        "lower_numerator": 50332020977033,
+        "upper_numerator": 50332020977034,
+        "denominator": 1000000000000
+      },
+      "rank_sum_upper_witness_masks": [
+        7,
+        8
+      ]
+    },
+    {
+      "labels": 64,
+      "binary_width": 6,
+      "control_correction": null,
+      "coefficient_dimension": 7,
+      "all_recombinations": [
+        {
+          "functional_mask": 1,
+          "row_rank": 4096,
+          "column_rank": 31,
+          "rank_product": 126976
+        },
+        {
+          "functional_mask": 2,
+          "row_rank": 2592,
+          "column_rank": 226,
+          "rank_product": 585792
+        },
+        {
+          "functional_mask": 3,
+          "row_rank": 4096,
+          "column_rank": 226,
+          "rank_product": 925696
+        },
+        {
+          "functional_mask": 4,
+          "row_rank": 1388,
+          "column_rank": 706,
+          "rank_product": 979928
+        },
+        {
+          "functional_mask": 5,
+          "row_rank": 4096,
+          "column_rank": 706,
+          "rank_product": 2891776
+        },
+        {
+          "functional_mask": 6,
+          "row_rank": 2592,
+          "column_rank": 706,
+          "rank_product": 1829952
+        },
+        {
+          "functional_mask": 7,
+          "row_rank": 4096,
+          "column_rank": 706,
+          "rank_product": 2891776
+        },
+        {
+          "functional_mask": 8,
+          "row_rank": 518,
+          "column_rank": 1379,
+          "rank_product": 714322
+        },
+        {
+          "functional_mask": 9,
+          "row_rank": 4096,
+          "column_rank": 1379,
+          "rank_product": 5648384
+        },
+        {
+          "functional_mask": 10,
+          "row_rank": 2592,
+          "column_rank": 1379,
+          "rank_product": 3574368
+        },
+        {
+          "functional_mask": 11,
+          "row_rank": 4096,
+          "column_rank": 1379,
+          "rank_product": 5648384
+        },
+        {
+          "functional_mask": 12,
+          "row_rank": 1388,
+          "column_rank": 1382,
+          "rank_product": 1918216
+        },
+        {
+          "functional_mask": 13,
+          "row_rank": 4096,
+          "column_rank": 1382,
+          "rank_product": 5660672
+        },
+        {
+          "functional_mask": 14,
+          "row_rank": 2592,
+          "column_rank": 1382,
+          "rank_product": 3582144
+        },
+        {
+          "functional_mask": 15,
+          "row_rank": 4096,
+          "column_rank": 1382,
+          "rank_product": 5660672
+        },
+        {
+          "functional_mask": 16,
+          "row_rank": 133,
+          "column_rank": 2164,
+          "rank_product": 287812
+        },
+        {
+          "functional_mask": 17,
+          "row_rank": 4096,
+          "column_rank": 2164,
+          "rank_product": 8863744
+        },
+        {
+          "functional_mask": 18,
+          "row_rank": 2592,
+          "column_rank": 2164,
+          "rank_product": 5609088
+        },
+        {
+          "functional_mask": 19,
+          "row_rank": 4096,
+          "column_rank": 2164,
+          "rank_product": 8863744
+        },
+        {
+          "functional_mask": 20,
+          "row_rank": 1388,
+          "column_rank": 2164,
+          "rank_product": 3003632
+        },
+        {
+          "functional_mask": 21,
+          "row_rank": 4096,
+          "column_rank": 2164,
+          "rank_product": 8863744
+        },
+        {
+          "functional_mask": 22,
+          "row_rank": 2592,
+          "column_rank": 2164,
+          "rank_product": 5609088
+        },
+        {
+          "functional_mask": 23,
+          "row_rank": 4096,
+          "column_rank": 2164,
+          "rank_product": 8863744
+        },
+        {
+          "functional_mask": 24,
+          "row_rank": 518,
+          "column_rank": 2164,
+          "rank_product": 1120952
+        },
+        {
+          "functional_mask": 25,
+          "row_rank": 4096,
+          "column_rank": 2164,
+          "rank_product": 8863744
+        },
+        {
+          "functional_mask": 26,
+          "row_rank": 2592,
+          "column_rank": 2164,
+          "rank_product": 5609088
+        },
+        {
+          "functional_mask": 27,
+          "row_rank": 4096,
+          "column_rank": 2164,
+          "rank_product": 8863744
+        },
+        {
+          "functional_mask": 28,
+          "row_rank": 1388,
+          "column_rank": 2164,
+          "rank_product": 3003632
+        },
+        {
+          "functional_mask": 29,
+          "row_rank": 4096,
+          "column_rank": 2164,
+          "rank_product": 8863744
+        },
+        {
+          "functional_mask": 30,
+          "row_rank": 2592,
+          "column_rank": 2164,
+          "rank_product": 5609088
+        },
+        {
+          "functional_mask": 31,
+          "row_rank": 4096,
+          "column_rank": 2164,
+          "rank_product": 8863744
+        },
+        {
+          "functional_mask": 32,
+          "row_rank": 20,
+          "column_rank": 2592,
+          "rank_product": 51840
+        },
+        {
+          "functional_mask": 33,
+          "row_rank": 4096,
+          "column_rank": 2592,
+          "rank_product": 10616832
+        },
+        {
+          "functional_mask": 34,
+          "row_rank": 2592,
+          "column_rank": 2592,
+          "rank_product": 6718464
+        },
+        {
+          "functional_mask": 35,
+          "row_rank": 4096,
+          "column_rank": 2592,
+          "rank_product": 10616832
+        },
+        {
+          "functional_mask": 36,
+          "row_rank": 1388,
+          "column_rank": 2592,
+          "rank_product": 3597696
+        },
+        {
+          "functional_mask": 37,
+          "row_rank": 4096,
+          "column_rank": 2592,
+          "rank_product": 10616832
+        },
+        {
+          "functional_mask": 38,
+          "row_rank": 2592,
+          "column_rank": 2592,
+          "rank_product": 6718464
+        },
+        {
+          "functional_mask": 39,
+          "row_rank": 4096,
+          "column_rank": 2592,
+          "rank_product": 10616832
+        },
+        {
+          "functional_mask": 40,
+          "row_rank": 518,
+          "column_rank": 2592,
+          "rank_product": 1342656
+        },
+        {
+          "functional_mask": 41,
+          "row_rank": 4096,
+          "column_rank": 2592,
+          "rank_product": 10616832
+        },
+        {
+          "functional_mask": 42,
+          "row_rank": 2592,
+          "column_rank": 2592,
+          "rank_product": 6718464
+        },
+        {
+          "functional_mask": 43,
+          "row_rank": 4096,
+          "column_rank": 2592,
+          "rank_product": 10616832
+        },
+        {
+          "functional_mask": 44,
+          "row_rank": 1388,
+          "column_rank": 2592,
+          "rank_product": 3597696
+        },
+        {
+          "functional_mask": 45,
+          "row_rank": 4096,
+          "column_rank": 2592,
+          "rank_product": 10616832
+        },
+        {
+          "functional_mask": 46,
+          "row_rank": 2592,
+          "column_rank": 2592,
+          "rank_product": 6718464
+        },
+        {
+          "functional_mask": 47,
+          "row_rank": 4096,
+          "column_rank": 2592,
+          "rank_product": 10616832
+        },
+        {
+          "functional_mask": 48,
+          "row_rank": 133,
+          "column_rank": 2320,
+          "rank_product": 308560
+        },
+        {
+          "functional_mask": 49,
+          "row_rank": 4096,
+          "column_rank": 2320,
+          "rank_product": 9502720
+        },
+        {
+          "functional_mask": 50,
+          "row_rank": 2592,
+          "column_rank": 2320,
+          "rank_product": 6013440
+        },
+        {
+          "functional_mask": 51,
+          "row_rank": 4096,
+          "column_rank": 2320,
+          "rank_product": 9502720
+        },
+        {
+          "functional_mask": 52,
+          "row_rank": 1388,
+          "column_rank": 2172,
+          "rank_product": 3014736
+        },
+        {
+          "functional_mask": 53,
+          "row_rank": 4096,
+          "column_rank": 2172,
+          "rank_product": 8896512
+        },
+        {
+          "functional_mask": 54,
+          "row_rank": 2592,
+          "column_rank": 2124,
+          "rank_product": 5505408
+        },
+        {
+          "functional_mask": 55,
+          "row_rank": 4096,
+          "column_rank": 2130,
+          "rank_product": 8724480
+        },
+        {
+          "functional_mask": 56,
+          "row_rank": 518,
+          "column_rank": 2320,
+          "rank_product": 1201760
+        },
+        {
+          "functional_mask": 57,
+          "row_rank": 4096,
+          "column_rank": 2320,
+          "rank_product": 9502720
+        },
+        {
+          "functional_mask": 58,
+          "row_rank": 2592,
+          "column_rank": 2320,
+          "rank_product": 6013440
+        },
+        {
+          "functional_mask": 59,
+          "row_rank": 4096,
+          "column_rank": 2320,
+          "rank_product": 9502720
+        },
+        {
+          "functional_mask": 60,
+          "row_rank": 1388,
+          "column_rank": 2124,
+          "rank_product": 2948112
+        },
+        {
+          "functional_mask": 61,
+          "row_rank": 4096,
+          "column_rank": 2124,
+          "rank_product": 8699904
+        },
+        {
+          "functional_mask": 62,
+          "row_rank": 2592,
+          "column_rank": 2030,
+          "rank_product": 5261760
+        },
+        {
+          "functional_mask": 63,
+          "row_rank": 4096,
+          "column_rank": 2016,
+          "rank_product": 8257536
+        },
+        {
+          "functional_mask": 64,
+          "row_rank": 1,
+          "column_rank": 4096,
+          "rank_product": 4096
+        },
+        {
+          "functional_mask": 65,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 66,
+          "row_rank": 2592,
+          "column_rank": 4096,
+          "rank_product": 10616832
+        },
+        {
+          "functional_mask": 67,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 68,
+          "row_rank": 1388,
+          "column_rank": 4096,
+          "rank_product": 5685248
+        },
+        {
+          "functional_mask": 69,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 70,
+          "row_rank": 2592,
+          "column_rank": 4096,
+          "rank_product": 10616832
+        },
+        {
+          "functional_mask": 71,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 72,
+          "row_rank": 518,
+          "column_rank": 4096,
+          "rank_product": 2121728
+        },
+        {
+          "functional_mask": 73,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 74,
+          "row_rank": 2592,
+          "column_rank": 4096,
+          "rank_product": 10616832
+        },
+        {
+          "functional_mask": 75,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 76,
+          "row_rank": 1388,
+          "column_rank": 4096,
+          "rank_product": 5685248
+        },
+        {
+          "functional_mask": 77,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 78,
+          "row_rank": 2592,
+          "column_rank": 4096,
+          "rank_product": 10616832
+        },
+        {
+          "functional_mask": 79,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 80,
+          "row_rank": 133,
+          "column_rank": 4096,
+          "rank_product": 544768
+        },
+        {
+          "functional_mask": 81,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 82,
+          "row_rank": 2592,
+          "column_rank": 4096,
+          "rank_product": 10616832
+        },
+        {
+          "functional_mask": 83,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 84,
+          "row_rank": 1388,
+          "column_rank": 4096,
+          "rank_product": 5685248
+        },
+        {
+          "functional_mask": 85,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 86,
+          "row_rank": 2592,
+          "column_rank": 4096,
+          "rank_product": 10616832
+        },
+        {
+          "functional_mask": 87,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 88,
+          "row_rank": 518,
+          "column_rank": 4096,
+          "rank_product": 2121728
+        },
+        {
+          "functional_mask": 89,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 90,
+          "row_rank": 2592,
+          "column_rank": 4096,
+          "rank_product": 10616832
+        },
+        {
+          "functional_mask": 91,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 92,
+          "row_rank": 1388,
+          "column_rank": 4096,
+          "rank_product": 5685248
+        },
+        {
+          "functional_mask": 93,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 94,
+          "row_rank": 2592,
+          "column_rank": 4096,
+          "rank_product": 10616832
+        },
+        {
+          "functional_mask": 95,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 96,
+          "row_rank": 20,
+          "column_rank": 4096,
+          "rank_product": 81920
+        },
+        {
+          "functional_mask": 97,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 98,
+          "row_rank": 2592,
+          "column_rank": 4096,
+          "rank_product": 10616832
+        },
+        {
+          "functional_mask": 99,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 100,
+          "row_rank": 1388,
+          "column_rank": 4096,
+          "rank_product": 5685248
+        },
+        {
+          "functional_mask": 101,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 102,
+          "row_rank": 2592,
+          "column_rank": 4096,
+          "rank_product": 10616832
+        },
+        {
+          "functional_mask": 103,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 104,
+          "row_rank": 518,
+          "column_rank": 4096,
+          "rank_product": 2121728
+        },
+        {
+          "functional_mask": 105,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 106,
+          "row_rank": 2592,
+          "column_rank": 4096,
+          "rank_product": 10616832
+        },
+        {
+          "functional_mask": 107,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 108,
+          "row_rank": 1388,
+          "column_rank": 4096,
+          "rank_product": 5685248
+        },
+        {
+          "functional_mask": 109,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 110,
+          "row_rank": 2592,
+          "column_rank": 4096,
+          "rank_product": 10616832
+        },
+        {
+          "functional_mask": 111,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 112,
+          "row_rank": 133,
+          "column_rank": 4096,
+          "rank_product": 544768
+        },
+        {
+          "functional_mask": 113,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 114,
+          "row_rank": 2592,
+          "column_rank": 4096,
+          "rank_product": 10616832
+        },
+        {
+          "functional_mask": 115,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 116,
+          "row_rank": 1388,
+          "column_rank": 4096,
+          "rank_product": 5685248
+        },
+        {
+          "functional_mask": 117,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 118,
+          "row_rank": 2592,
+          "column_rank": 4096,
+          "rank_product": 10616832
+        },
+        {
+          "functional_mask": 119,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 120,
+          "row_rank": 518,
+          "column_rank": 4096,
+          "rank_product": 2121728
+        },
+        {
+          "functional_mask": 121,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 122,
+          "row_rank": 2592,
+          "column_rank": 4096,
+          "rank_product": 10616832
+        },
+        {
+          "functional_mask": 123,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 124,
+          "row_rank": 1388,
+          "column_rank": 4096,
+          "rank_product": 5685248
+        },
+        {
+          "functional_mask": 125,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 126,
+          "row_rank": 2592,
+          "column_rank": 4096,
+          "rank_product": 10616832
+        },
+        {
+          "functional_mask": 127,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        }
+      ],
+      "minimum_bottleneck_rank_product": 979928,
+      "witness": [
+        {
+          "functional_mask": 64,
+          "row_rank": 1,
+          "column_rank": 4096,
+          "rank_product": 4096
+        },
+        {
+          "functional_mask": 32,
+          "row_rank": 20,
+          "column_rank": 2592,
+          "rank_product": 51840
+        },
+        {
+          "functional_mask": 1,
+          "row_rank": 4096,
+          "column_rank": 31,
+          "rank_product": 126976
+        },
+        {
+          "functional_mask": 16,
+          "row_rank": 133,
+          "column_rank": 2164,
+          "rank_product": 287812
+        },
+        {
+          "functional_mask": 2,
+          "row_rank": 2592,
+          "column_rank": 226,
+          "rank_product": 585792
+        },
+        {
+          "functional_mask": 8,
+          "row_rank": 518,
+          "column_rank": 1379,
+          "rank_product": 714322
+        },
+        {
+          "functional_mask": 4,
+          "row_rank": 1388,
+          "column_rank": 706,
+          "rank_product": 979928
+        }
+      ],
+      "unit_slice_minimum_column_rank": 31,
+      "minimum_rank_sum_interval": {
+        "lower_numerator": 2714189573599775,
+        "upper_numerator": 2714189573599777,
+        "denominator": 1000000000000
+      },
+      "rank_sum_upper_witness_masks": [
+        62,
+        1,
+        64
+      ]
+    },
+    {
+      "labels": 64,
+      "binary_width": 6,
+      "control_correction": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        2,
+        2,
+        1,
+        1,
+        3,
+        1,
+        2,
+        0,
+        0,
+        2,
+        3
+      ],
+      "coefficient_dimension": 7,
+      "all_recombinations": [
+        {
+          "functional_mask": 1,
+          "row_rank": 4096,
+          "column_rank": 28,
+          "rank_product": 114688
+        },
+        {
+          "functional_mask": 2,
+          "row_rank": 2592,
+          "column_rank": 288,
+          "rank_product": 746496
+        },
+        {
+          "functional_mask": 3,
+          "row_rank": 4096,
+          "column_rank": 288,
+          "rank_product": 1179648
+        },
+        {
+          "functional_mask": 4,
+          "row_rank": 1388,
+          "column_rank": 813,
+          "rank_product": 1128444
+        },
+        {
+          "functional_mask": 5,
+          "row_rank": 4096,
+          "column_rank": 813,
+          "rank_product": 3330048
+        },
+        {
+          "functional_mask": 6,
+          "row_rank": 2592,
+          "column_rank": 813,
+          "rank_product": 2107296
+        },
+        {
+          "functional_mask": 7,
+          "row_rank": 4096,
+          "column_rank": 813,
+          "rank_product": 3330048
+        },
+        {
+          "functional_mask": 8,
+          "row_rank": 518,
+          "column_rank": 1519,
+          "rank_product": 786842
+        },
+        {
+          "functional_mask": 9,
+          "row_rank": 4096,
+          "column_rank": 1519,
+          "rank_product": 6221824
+        },
+        {
+          "functional_mask": 10,
+          "row_rank": 2592,
+          "column_rank": 1519,
+          "rank_product": 3937248
+        },
+        {
+          "functional_mask": 11,
+          "row_rank": 4096,
+          "column_rank": 1519,
+          "rank_product": 6221824
+        },
+        {
+          "functional_mask": 12,
+          "row_rank": 1388,
+          "column_rank": 1521,
+          "rank_product": 2111148
+        },
+        {
+          "functional_mask": 13,
+          "row_rank": 4096,
+          "column_rank": 1521,
+          "rank_product": 6230016
+        },
+        {
+          "functional_mask": 14,
+          "row_rank": 2592,
+          "column_rank": 1521,
+          "rank_product": 3942432
+        },
+        {
+          "functional_mask": 15,
+          "row_rank": 4096,
+          "column_rank": 1521,
+          "rank_product": 6230016
+        },
+        {
+          "functional_mask": 16,
+          "row_rank": 133,
+          "column_rank": 2168,
+          "rank_product": 288344
+        },
+        {
+          "functional_mask": 17,
+          "row_rank": 4096,
+          "column_rank": 2168,
+          "rank_product": 8880128
+        },
+        {
+          "functional_mask": 18,
+          "row_rank": 2592,
+          "column_rank": 2168,
+          "rank_product": 5619456
+        },
+        {
+          "functional_mask": 19,
+          "row_rank": 4096,
+          "column_rank": 2168,
+          "rank_product": 8880128
+        },
+        {
+          "functional_mask": 20,
+          "row_rank": 1388,
+          "column_rank": 2164,
+          "rank_product": 3003632
+        },
+        {
+          "functional_mask": 21,
+          "row_rank": 4096,
+          "column_rank": 2164,
+          "rank_product": 8863744
+        },
+        {
+          "functional_mask": 22,
+          "row_rank": 2592,
+          "column_rank": 2164,
+          "rank_product": 5609088
+        },
+        {
+          "functional_mask": 23,
+          "row_rank": 4096,
+          "column_rank": 2164,
+          "rank_product": 8863744
+        },
+        {
+          "functional_mask": 24,
+          "row_rank": 518,
+          "column_rank": 2164,
+          "rank_product": 1120952
+        },
+        {
+          "functional_mask": 25,
+          "row_rank": 4096,
+          "column_rank": 2164,
+          "rank_product": 8863744
+        },
+        {
+          "functional_mask": 26,
+          "row_rank": 2592,
+          "column_rank": 2164,
+          "rank_product": 5609088
+        },
+        {
+          "functional_mask": 27,
+          "row_rank": 4096,
+          "column_rank": 2164,
+          "rank_product": 8863744
+        },
+        {
+          "functional_mask": 28,
+          "row_rank": 1388,
+          "column_rank": 2164,
+          "rank_product": 3003632
+        },
+        {
+          "functional_mask": 29,
+          "row_rank": 4096,
+          "column_rank": 2164,
+          "rank_product": 8863744
+        },
+        {
+          "functional_mask": 30,
+          "row_rank": 2592,
+          "column_rank": 2164,
+          "rank_product": 5609088
+        },
+        {
+          "functional_mask": 31,
+          "row_rank": 4096,
+          "column_rank": 2164,
+          "rank_product": 8863744
+        },
+        {
+          "functional_mask": 32,
+          "row_rank": 20,
+          "column_rank": 2592,
+          "rank_product": 51840
+        },
+        {
+          "functional_mask": 33,
+          "row_rank": 4096,
+          "column_rank": 2592,
+          "rank_product": 10616832
+        },
+        {
+          "functional_mask": 34,
+          "row_rank": 2592,
+          "column_rank": 2592,
+          "rank_product": 6718464
+        },
+        {
+          "functional_mask": 35,
+          "row_rank": 4096,
+          "column_rank": 2592,
+          "rank_product": 10616832
+        },
+        {
+          "functional_mask": 36,
+          "row_rank": 1388,
+          "column_rank": 2592,
+          "rank_product": 3597696
+        },
+        {
+          "functional_mask": 37,
+          "row_rank": 4096,
+          "column_rank": 2592,
+          "rank_product": 10616832
+        },
+        {
+          "functional_mask": 38,
+          "row_rank": 2592,
+          "column_rank": 2592,
+          "rank_product": 6718464
+        },
+        {
+          "functional_mask": 39,
+          "row_rank": 4096,
+          "column_rank": 2592,
+          "rank_product": 10616832
+        },
+        {
+          "functional_mask": 40,
+          "row_rank": 518,
+          "column_rank": 2592,
+          "rank_product": 1342656
+        },
+        {
+          "functional_mask": 41,
+          "row_rank": 4096,
+          "column_rank": 2592,
+          "rank_product": 10616832
+        },
+        {
+          "functional_mask": 42,
+          "row_rank": 2592,
+          "column_rank": 2592,
+          "rank_product": 6718464
+        },
+        {
+          "functional_mask": 43,
+          "row_rank": 4096,
+          "column_rank": 2592,
+          "rank_product": 10616832
+        },
+        {
+          "functional_mask": 44,
+          "row_rank": 1388,
+          "column_rank": 2592,
+          "rank_product": 3597696
+        },
+        {
+          "functional_mask": 45,
+          "row_rank": 4096,
+          "column_rank": 2592,
+          "rank_product": 10616832
+        },
+        {
+          "functional_mask": 46,
+          "row_rank": 2592,
+          "column_rank": 2592,
+          "rank_product": 6718464
+        },
+        {
+          "functional_mask": 47,
+          "row_rank": 4096,
+          "column_rank": 2592,
+          "rank_product": 10616832
+        },
+        {
+          "functional_mask": 48,
+          "row_rank": 133,
+          "column_rank": 2320,
+          "rank_product": 308560
+        },
+        {
+          "functional_mask": 49,
+          "row_rank": 4096,
+          "column_rank": 2320,
+          "rank_product": 9502720
+        },
+        {
+          "functional_mask": 50,
+          "row_rank": 2592,
+          "column_rank": 2320,
+          "rank_product": 6013440
+        },
+        {
+          "functional_mask": 51,
+          "row_rank": 4096,
+          "column_rank": 2320,
+          "rank_product": 9502720
+        },
+        {
+          "functional_mask": 52,
+          "row_rank": 1388,
+          "column_rank": 2196,
+          "rank_product": 3048048
+        },
+        {
+          "functional_mask": 53,
+          "row_rank": 4096,
+          "column_rank": 2196,
+          "rank_product": 8994816
+        },
+        {
+          "functional_mask": 54,
+          "row_rank": 2592,
+          "column_rank": 2200,
+          "rank_product": 5702400
+        },
+        {
+          "functional_mask": 55,
+          "row_rank": 4096,
+          "column_rank": 2200,
+          "rank_product": 9011200
+        },
+        {
+          "functional_mask": 56,
+          "row_rank": 518,
+          "column_rank": 2320,
+          "rank_product": 1201760
+        },
+        {
+          "functional_mask": 57,
+          "row_rank": 4096,
+          "column_rank": 2320,
+          "rank_product": 9502720
+        },
+        {
+          "functional_mask": 58,
+          "row_rank": 2592,
+          "column_rank": 2320,
+          "rank_product": 6013440
+        },
+        {
+          "functional_mask": 59,
+          "row_rank": 4096,
+          "column_rank": 2320,
+          "rank_product": 9502720
+        },
+        {
+          "functional_mask": 60,
+          "row_rank": 1388,
+          "column_rank": 2132,
+          "rank_product": 2959216
+        },
+        {
+          "functional_mask": 61,
+          "row_rank": 4096,
+          "column_rank": 2132,
+          "rank_product": 8732672
+        },
+        {
+          "functional_mask": 62,
+          "row_rank": 2592,
+          "column_rank": 2030,
+          "rank_product": 5261760
+        },
+        {
+          "functional_mask": 63,
+          "row_rank": 4096,
+          "column_rank": 2016,
+          "rank_product": 8257536
+        },
+        {
+          "functional_mask": 64,
+          "row_rank": 1,
+          "column_rank": 4096,
+          "rank_product": 4096
+        },
+        {
+          "functional_mask": 65,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 66,
+          "row_rank": 2592,
+          "column_rank": 4096,
+          "rank_product": 10616832
+        },
+        {
+          "functional_mask": 67,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 68,
+          "row_rank": 1388,
+          "column_rank": 4096,
+          "rank_product": 5685248
+        },
+        {
+          "functional_mask": 69,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 70,
+          "row_rank": 2592,
+          "column_rank": 4096,
+          "rank_product": 10616832
+        },
+        {
+          "functional_mask": 71,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 72,
+          "row_rank": 518,
+          "column_rank": 4096,
+          "rank_product": 2121728
+        },
+        {
+          "functional_mask": 73,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 74,
+          "row_rank": 2592,
+          "column_rank": 4096,
+          "rank_product": 10616832
+        },
+        {
+          "functional_mask": 75,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 76,
+          "row_rank": 1388,
+          "column_rank": 4096,
+          "rank_product": 5685248
+        },
+        {
+          "functional_mask": 77,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 78,
+          "row_rank": 2592,
+          "column_rank": 4096,
+          "rank_product": 10616832
+        },
+        {
+          "functional_mask": 79,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 80,
+          "row_rank": 133,
+          "column_rank": 4096,
+          "rank_product": 544768
+        },
+        {
+          "functional_mask": 81,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 82,
+          "row_rank": 2592,
+          "column_rank": 4096,
+          "rank_product": 10616832
+        },
+        {
+          "functional_mask": 83,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 84,
+          "row_rank": 1388,
+          "column_rank": 4096,
+          "rank_product": 5685248
+        },
+        {
+          "functional_mask": 85,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 86,
+          "row_rank": 2592,
+          "column_rank": 4096,
+          "rank_product": 10616832
+        },
+        {
+          "functional_mask": 87,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 88,
+          "row_rank": 518,
+          "column_rank": 4096,
+          "rank_product": 2121728
+        },
+        {
+          "functional_mask": 89,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 90,
+          "row_rank": 2592,
+          "column_rank": 4096,
+          "rank_product": 10616832
+        },
+        {
+          "functional_mask": 91,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 92,
+          "row_rank": 1388,
+          "column_rank": 4096,
+          "rank_product": 5685248
+        },
+        {
+          "functional_mask": 93,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 94,
+          "row_rank": 2592,
+          "column_rank": 4096,
+          "rank_product": 10616832
+        },
+        {
+          "functional_mask": 95,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 96,
+          "row_rank": 20,
+          "column_rank": 4096,
+          "rank_product": 81920
+        },
+        {
+          "functional_mask": 97,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 98,
+          "row_rank": 2592,
+          "column_rank": 4096,
+          "rank_product": 10616832
+        },
+        {
+          "functional_mask": 99,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 100,
+          "row_rank": 1388,
+          "column_rank": 4096,
+          "rank_product": 5685248
+        },
+        {
+          "functional_mask": 101,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 102,
+          "row_rank": 2592,
+          "column_rank": 4096,
+          "rank_product": 10616832
+        },
+        {
+          "functional_mask": 103,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 104,
+          "row_rank": 518,
+          "column_rank": 4096,
+          "rank_product": 2121728
+        },
+        {
+          "functional_mask": 105,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 106,
+          "row_rank": 2592,
+          "column_rank": 4096,
+          "rank_product": 10616832
+        },
+        {
+          "functional_mask": 107,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 108,
+          "row_rank": 1388,
+          "column_rank": 4096,
+          "rank_product": 5685248
+        },
+        {
+          "functional_mask": 109,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 110,
+          "row_rank": 2592,
+          "column_rank": 4096,
+          "rank_product": 10616832
+        },
+        {
+          "functional_mask": 111,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 112,
+          "row_rank": 133,
+          "column_rank": 4096,
+          "rank_product": 544768
+        },
+        {
+          "functional_mask": 113,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 114,
+          "row_rank": 2592,
+          "column_rank": 4096,
+          "rank_product": 10616832
+        },
+        {
+          "functional_mask": 115,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 116,
+          "row_rank": 1388,
+          "column_rank": 4096,
+          "rank_product": 5685248
+        },
+        {
+          "functional_mask": 117,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 118,
+          "row_rank": 2592,
+          "column_rank": 4096,
+          "rank_product": 10616832
+        },
+        {
+          "functional_mask": 119,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 120,
+          "row_rank": 518,
+          "column_rank": 4096,
+          "rank_product": 2121728
+        },
+        {
+          "functional_mask": 121,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 122,
+          "row_rank": 2592,
+          "column_rank": 4096,
+          "rank_product": 10616832
+        },
+        {
+          "functional_mask": 123,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 124,
+          "row_rank": 1388,
+          "column_rank": 4096,
+          "rank_product": 5685248
+        },
+        {
+          "functional_mask": 125,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        },
+        {
+          "functional_mask": 126,
+          "row_rank": 2592,
+          "column_rank": 4096,
+          "rank_product": 10616832
+        },
+        {
+          "functional_mask": 127,
+          "row_rank": 4096,
+          "column_rank": 4096,
+          "rank_product": 16777216
+        }
+      ],
+      "minimum_bottleneck_rank_product": 1128444,
+      "witness": [
+        {
+          "functional_mask": 64,
+          "row_rank": 1,
+          "column_rank": 4096,
+          "rank_product": 4096
+        },
+        {
+          "functional_mask": 32,
+          "row_rank": 20,
+          "column_rank": 2592,
+          "rank_product": 51840
+        },
+        {
+          "functional_mask": 1,
+          "row_rank": 4096,
+          "column_rank": 28,
+          "rank_product": 114688
+        },
+        {
+          "functional_mask": 16,
+          "row_rank": 133,
+          "column_rank": 2168,
+          "rank_product": 288344
+        },
+        {
+          "functional_mask": 2,
+          "row_rank": 2592,
+          "column_rank": 288,
+          "rank_product": 746496
+        },
+        {
+          "functional_mask": 8,
+          "row_rank": 518,
+          "column_rank": 1519,
+          "rank_product": 786842
+        },
+        {
+          "functional_mask": 4,
+          "row_rank": 1388,
+          "column_rank": 813,
+          "rank_product": 1128444
+        }
+      ],
+      "unit_slice_minimum_column_rank": 28,
+      "minimum_rank_sum_interval": {
+        "lower_numerator": 2696508822194921,
+        "upper_numerator": 2696508822194923,
+        "denominator": 1000000000000
+      },
+      "rank_sum_upper_witness_masks": [
+        62,
+        1,
+        64
+      ]
+    }
+  ],
+  "arbitrary_shear_profiles": [
+    {
+      "field_degree": 1,
+      "labels": 8,
+      "binary_width": 3,
+      "order": [
+        0,
+        1,
+        2
+      ],
+      "weights": [
+        1,
+        1,
+        1
+      ],
+      "piece_degree": 3,
+      "control_correction": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "row_ranks": [
+        64,
+        32,
+        10,
+        1
+      ],
+      "column_ranks": [
+        5,
+        19,
+        32,
+        64
+      ],
+      "rank_products": [
+        320,
+        608,
+        320,
+        64
+      ],
+      "max_rank_product": 608,
+      "total_widths": [
+        9,
+        10,
+        9,
+        6
+      ],
+      "maximum_total_width": 10,
+      "nonzero_piece_count": 4
+    },
+    {
+      "field_degree": 1,
+      "labels": 8,
+      "binary_width": 3,
+      "order": [
+        0,
+        1,
+        2
+      ],
+      "weights": [
+        1,
+        1,
+        1
+      ],
+      "piece_degree": 3,
+      "control_correction": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "row_ranks": [
+        64,
+        32,
+        10,
+        1
+      ],
+      "column_ranks": [
+        5,
+        19,
+        32,
+        64
+      ],
+      "rank_products": [
+        320,
+        608,
+        320,
+        64
+      ],
+      "max_rank_product": 608,
+      "total_widths": [
+        9,
+        10,
+        9,
+        6
+      ],
+      "maximum_total_width": 10,
+      "nonzero_piece_count": 4
+    },
+    {
+      "field_degree": 1,
+      "labels": 8,
+      "binary_width": 3,
+      "order": [
+        0,
+        1,
+        2
+      ],
+      "weights": [
+        1,
+        1,
+        1
+      ],
+      "piece_degree": 3,
+      "control_correction": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "row_ranks": [
+        64,
+        32,
+        10,
+        1
+      ],
+      "column_ranks": [
+        5,
+        19,
+        32,
+        64
+      ],
+      "rank_products": [
+        320,
+        608,
+        320,
+        64
+      ],
+      "max_rank_product": 608,
+      "total_widths": [
+        9,
+        10,
+        9,
+        6
+      ],
+      "maximum_total_width": 10,
+      "nonzero_piece_count": 4
+    },
+    {
+      "field_degree": 1,
+      "labels": 8,
+      "binary_width": 3,
+      "order": [
+        0,
+        1,
+        2
+      ],
+      "weights": [
+        1,
+        1,
+        1
+      ],
+      "piece_degree": 3,
+      "control_correction": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "row_ranks": [
+        64,
+        32,
+        10,
+        1
+      ],
+      "column_ranks": [
+        5,
+        19,
+        32,
+        64
+      ],
+      "rank_products": [
+        320,
+        608,
+        320,
+        64
+      ],
+      "max_rank_product": 608,
+      "total_widths": [
+        9,
+        10,
+        9,
+        6
+      ],
+      "maximum_total_width": 10,
+      "nonzero_piece_count": 4
+    },
+    {
+      "field_degree": 1,
+      "labels": 8,
+      "binary_width": 3,
+      "order": [
+        0,
+        1,
+        2
+      ],
+      "weights": [
+        1,
+        1,
+        1
+      ],
+      "piece_degree": 3,
+      "control_correction": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "row_ranks": [
+        64,
+        32,
+        10,
+        1
+      ],
+      "column_ranks": [
+        5,
+        19,
+        32,
+        64
+      ],
+      "rank_products": [
+        320,
+        608,
+        320,
+        64
+      ],
+      "max_rank_product": 608,
+      "total_widths": [
+        9,
+        10,
+        9,
+        6
+      ],
+      "maximum_total_width": 10,
+      "nonzero_piece_count": 4
+    },
+    {
+      "field_degree": 1,
+      "labels": 8,
+      "binary_width": 3,
+      "order": [
+        0,
+        1,
+        2
+      ],
+      "weights": [
+        1,
+        1,
+        1
+      ],
+      "piece_degree": 3,
+      "control_correction": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "row_ranks": [
+        64,
+        32,
+        10,
+        1
+      ],
+      "column_ranks": [
+        5,
+        19,
+        32,
+        64
+      ],
+      "rank_products": [
+        320,
+        608,
+        320,
+        64
+      ],
+      "max_rank_product": 608,
+      "total_widths": [
+        9,
+        10,
+        9,
+        6
+      ],
+      "maximum_total_width": 10,
+      "nonzero_piece_count": 4
+    },
+    {
+      "field_degree": 1,
+      "labels": 8,
+      "binary_width": 3,
+      "order": [
+        0,
+        1,
+        2
+      ],
+      "weights": [
+        1,
+        1,
+        1
+      ],
+      "piece_degree": 3,
+      "control_correction": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "row_ranks": [
+        64,
+        32,
+        10,
+        1
+      ],
+      "column_ranks": [
+        5,
+        19,
+        32,
+        64
+      ],
+      "rank_products": [
+        320,
+        608,
+        320,
+        64
+      ],
+      "max_rank_product": 608,
+      "total_widths": [
+        9,
+        10,
+        9,
+        6
+      ],
+      "maximum_total_width": 10,
+      "nonzero_piece_count": 4
+    },
+    {
+      "field_degree": 1,
+      "labels": 8,
+      "binary_width": 3,
+      "order": [
+        0,
+        1,
+        2
+      ],
+      "weights": [
+        1,
+        1,
+        1
+      ],
+      "piece_degree": 3,
+      "control_correction": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "row_ranks": [
+        64,
+        32,
+        10,
+        1
+      ],
+      "column_ranks": [
+        5,
+        19,
+        32,
+        64
+      ],
+      "rank_products": [
+        320,
+        608,
+        320,
+        64
+      ],
+      "max_rank_product": 608,
+      "total_widths": [
+        9,
+        10,
+        9,
+        6
+      ],
+      "maximum_total_width": 10,
+      "nonzero_piece_count": 4
+    },
+    {
+      "field_degree": 1,
+      "labels": 8,
+      "binary_width": 3,
+      "order": [
+        0,
+        1,
+        2
+      ],
+      "weights": [
+        1,
+        1,
+        1
+      ],
+      "piece_degree": 3,
+      "control_correction": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "row_ranks": [
+        64,
+        32,
+        10,
+        1
+      ],
+      "column_ranks": [
+        5,
+        19,
+        32,
+        64
+      ],
+      "rank_products": [
+        320,
+        608,
+        320,
+        64
+      ],
+      "max_rank_product": 608,
+      "total_widths": [
+        9,
+        10,
+        9,
+        6
+      ],
+      "maximum_total_width": 10,
+      "nonzero_piece_count": 4
+    },
+    {
+      "field_degree": 1,
+      "labels": 8,
+      "binary_width": 3,
+      "order": [
+        0,
+        1,
+        2
+      ],
+      "weights": [
+        1,
+        1,
+        1
+      ],
+      "piece_degree": 3,
+      "control_correction": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "row_ranks": [
+        64,
+        32,
+        10,
+        1
+      ],
+      "column_ranks": [
+        5,
+        19,
+        32,
+        64
+      ],
+      "rank_products": [
+        320,
+        608,
+        320,
+        64
+      ],
+      "max_rank_product": 608,
+      "total_widths": [
+        9,
+        10,
+        9,
+        6
+      ],
+      "maximum_total_width": 10,
+      "nonzero_piece_count": 4
+    },
+    {
+      "field_degree": 1,
+      "labels": 8,
+      "binary_width": 3,
+      "order": [
+        0,
+        1,
+        2
+      ],
+      "weights": [
+        1,
+        1,
+        1
+      ],
+      "piece_degree": 3,
+      "control_correction": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "row_ranks": [
+        64,
+        32,
+        10,
+        1
+      ],
+      "column_ranks": [
+        5,
+        19,
+        32,
+        64
+      ],
+      "rank_products": [
+        320,
+        608,
+        320,
+        64
+      ],
+      "max_rank_product": 608,
+      "total_widths": [
+        9,
+        10,
+        9,
+        6
+      ],
+      "maximum_total_width": 10,
+      "nonzero_piece_count": 4
+    },
+    {
+      "field_degree": 1,
+      "labels": 8,
+      "binary_width": 3,
+      "order": [
+        0,
+        1,
+        2
+      ],
+      "weights": [
+        1,
+        1,
+        1
+      ],
+      "piece_degree": 3,
+      "control_correction": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "row_ranks": [
+        64,
+        32,
+        10,
+        1
+      ],
+      "column_ranks": [
+        5,
+        19,
+        32,
+        64
+      ],
+      "rank_products": [
+        320,
+        608,
+        320,
+        64
+      ],
+      "max_rank_product": 608,
+      "total_widths": [
+        9,
+        10,
+        9,
+        6
+      ],
+      "maximum_total_width": 10,
+      "nonzero_piece_count": 4
+    },
+    {
+      "field_degree": 1,
+      "labels": 8,
+      "binary_width": 3,
+      "order": [
+        0,
+        1,
+        2
+      ],
+      "weights": [
+        1,
+        1,
+        1
+      ],
+      "piece_degree": 3,
+      "control_correction": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "row_ranks": [
+        64,
+        32,
+        10,
+        1
+      ],
+      "column_ranks": [
+        5,
+        19,
+        32,
+        64
+      ],
+      "rank_products": [
+        320,
+        608,
+        320,
+        64
+      ],
+      "max_rank_product": 608,
+      "total_widths": [
+        9,
+        10,
+        9,
+        6
+      ],
+      "maximum_total_width": 10,
+      "nonzero_piece_count": 4
+    },
+    {
+      "field_degree": 1,
+      "labels": 8,
+      "binary_width": 3,
+      "order": [
+        0,
+        1,
+        2
+      ],
+      "weights": [
+        1,
+        1,
+        1
+      ],
+      "piece_degree": 3,
+      "control_correction": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "row_ranks": [
+        64,
+        32,
+        10,
+        1
+      ],
+      "column_ranks": [
+        5,
+        19,
+        32,
+        64
+      ],
+      "rank_products": [
+        320,
+        608,
+        320,
+        64
+      ],
+      "max_rank_product": 608,
+      "total_widths": [
+        9,
+        10,
+        9,
+        6
+      ],
+      "maximum_total_width": 10,
+      "nonzero_piece_count": 4
+    },
+    {
+      "field_degree": 1,
+      "labels": 8,
+      "binary_width": 3,
+      "order": [
+        0,
+        1,
+        2
+      ],
+      "weights": [
+        1,
+        1,
+        1
+      ],
+      "piece_degree": 3,
+      "control_correction": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "row_ranks": [
+        64,
+        32,
+        10,
+        1
+      ],
+      "column_ranks": [
+        5,
+        19,
+        32,
+        64
+      ],
+      "rank_products": [
+        320,
+        608,
+        320,
+        64
+      ],
+      "max_rank_product": 608,
+      "total_widths": [
+        9,
+        10,
+        9,
+        6
+      ],
+      "maximum_total_width": 10,
+      "nonzero_piece_count": 4
+    },
+    {
+      "field_degree": 1,
+      "labels": 8,
+      "binary_width": 3,
+      "order": [
+        0,
+        1,
+        2
+      ],
+      "weights": [
+        1,
+        1,
+        1
+      ],
+      "piece_degree": 3,
+      "control_correction": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "row_ranks": [
+        64,
+        32,
+        10,
+        1
+      ],
+      "column_ranks": [
+        5,
+        19,
+        32,
+        64
+      ],
+      "rank_products": [
+        320,
+        608,
+        320,
+        64
+      ],
+      "max_rank_product": 608,
+      "total_widths": [
+        9,
+        10,
+        9,
+        6
+      ],
+      "maximum_total_width": 10,
+      "nonzero_piece_count": 4
+    },
+    {
+      "field_degree": 2,
+      "labels": 64,
+      "binary_width": 6,
+      "order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "weights": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "piece_degree": 6,
+      "control_correction": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "row_ranks": [
+        4096,
+        2592,
+        1388,
+        518,
+        133,
+        20,
+        1
+      ],
+      "column_ranks": [
+        51,
+        291,
+        777,
+        1454,
+        2168,
+        2592,
+        4096
+      ],
+      "rank_products": [
+        208896,
+        754272,
+        1078476,
+        753172,
+        288344,
+        51840,
+        4096
+      ],
+      "max_rank_product": 1078476,
+      "total_widths": [
+        18,
+        21,
+        21,
+        21,
+        20,
+        17,
+        12
+      ],
+      "maximum_total_width": 21,
+      "nonzero_piece_count": 7
+    },
+    {
+      "field_degree": 2,
+      "labels": 64,
+      "binary_width": 6,
+      "order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "weights": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "piece_degree": 6,
+      "control_correction": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        2,
+        2,
+        1,
+        1,
+        3,
+        1,
+        2,
+        0,
+        0,
+        2,
+        3
+      ],
+      "row_ranks": [
+        4096,
+        2592,
+        1388,
+        518,
+        133,
+        20,
+        1
+      ],
+      "column_ranks": [
+        28,
+        288,
+        813,
+        1519,
+        2168,
+        2592,
+        4096
+      ],
+      "rank_products": [
+        114688,
+        746496,
+        1128444,
+        786842,
+        288344,
+        51840,
+        4096
+      ],
+      "max_rank_product": 1128444,
+      "total_widths": [
+        17,
+        21,
+        21,
+        21,
+        20,
+        17,
+        12
+      ],
+      "maximum_total_width": 21,
+      "nonzero_piece_count": 7
+    }
+  ],
+  "central_correction_symmetries": {
+    "field_degree": 2,
+    "arbitrary_corrections": 8,
+    "matrix_entry_equalities": 65536,
+    "identities": [
+      "f+ab gives transpose",
+      "F_q-affine additions give row/column permutations"
+    ]
+  },
+  "constant_coefficient_order_screen": [
+    {
+      "field_degree": 1,
+      "labels": 8,
+      "orders_examined": 2,
+      "distinct_central_corrections": 2,
+      "rank_histogram": {
+        "5": 2
+      },
+      "minimum_column_rank": 5,
+      "minimizing_orders": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          0,
+          2
+        ]
+      ],
+      "canonical_column_rank": 5
+    },
+    {
+      "field_degree": 2,
+      "labels": 64,
+      "orders_examined": 24,
+      "distinct_central_corrections": 14,
+      "rank_histogram": {
+        "31": 2,
+        "40": 4,
+        "44": 4,
+        "54": 4
+      },
+      "minimum_column_rank": 31,
+      "minimizing_orders": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          2,
+          3,
+          0,
+          1,
+          4,
+          5
+        ]
+      ],
+      "canonical_column_rank": 31
+    },
+    {
+      "field_degree": 3,
+      "labels": 512,
+      "orders_examined": 720,
+      "distinct_central_corrections": 230,
+      "rank_histogram": {
+        "197": 2,
+        "287": 2,
+        "290": 16,
+        "361": 4,
+        "362": 10,
+        "363": 24,
+        "364": 12,
+        "369": 8,
+        "373": 2,
+        "376": 4,
+        "385": 4,
+        "390": 4,
+        "398": 4,
+        "411": 2,
+        "422": 8,
+        "436": 4,
+        "437": 4,
+        "438": 16,
+        "439": 20,
+        "443": 4,
+        "444": 8,
+        "445": 8,
+        "446": 12,
+        "448": 20,
+        "452": 12,
+        "453": 8,
+        "454": 8
+      },
+      "minimum_column_rank": 197,
+      "minimizing_orders": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        [
+          3,
+          4,
+          5,
+          0,
+          1,
+          2,
+          6,
+          7,
+          8
+        ]
+      ],
+      "canonical_column_rank": 197
+    }
+  ],
+  "elapsed_seconds": 36.4423,
+  "source_sha256": "e607c29dc323e997b08028cefbcad871a4efd130e49d357ca476fad6861aef7d"
+}

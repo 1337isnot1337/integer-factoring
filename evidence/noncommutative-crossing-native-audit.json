@@ -1,0 +1,946 @@
+{
+  "status": "native ranks independently match exact Python ranks",
+  "complete_normalized_F4_quadratic_replay": true,
+  "blocks": [
+    {
+      "field_degree": 2,
+      "family": "quadratic",
+      "start": 0,
+      "count": 32768,
+      "best_rank": 28,
+      "minimizing_indices": [
+        9553,
+        9556,
+        9562,
+        9567,
+        24480,
+        24485,
+        24491,
+        24494,
+        30001,
+        30004,
+        30010,
+        30015
+      ],
+      "digest_fnv64": "7695949591803970661",
+      "histogram": [
+        [
+          28,
+          12
+        ],
+        [
+          31,
+          10
+        ],
+        [
+          33,
+          6
+        ],
+        [
+          37,
+          12
+        ],
+        [
+          38,
+          24
+        ],
+        [
+          39,
+          36
+        ],
+        [
+          40,
+          144
+        ],
+        [
+          41,
+          348
+        ],
+        [
+          42,
+          216
+        ],
+        [
+          43,
+          360
+        ],
+        [
+          44,
+          540
+        ],
+        [
+          45,
+          264
+        ],
+        [
+          46,
+          936
+        ],
+        [
+          47,
+          144
+        ],
+        [
+          48,
+          1020
+        ],
+        [
+          49,
+          288
+        ],
+        [
+          50,
+          2064
+        ],
+        [
+          51,
+          1776
+        ],
+        [
+          52,
+          3504
+        ],
+        [
+          53,
+          3192
+        ],
+        [
+          54,
+          2544
+        ],
+        [
+          55,
+          1152
+        ],
+        [
+          56,
+          3696
+        ],
+        [
+          57,
+          2592
+        ],
+        [
+          58,
+          3888
+        ],
+        [
+          59,
+          864
+        ],
+        [
+          60,
+          2880
+        ],
+        [
+          64,
+          256
+        ]
+      ],
+      "elapsed_seconds": 6.4613
+    },
+    {
+      "field_degree": 3,
+      "family": "quadratic",
+      "start": 0,
+      "count": 32,
+      "best_rank": 197,
+      "minimizing_indices": [
+        0
+      ],
+      "digest_fnv64": "4933719465346398831",
+      "histogram": [
+        [
+          197,
+          1
+        ],
+        [
+          223,
+          3
+        ],
+        [
+          233,
+          28
+        ]
+      ],
+      "elapsed_seconds": 0.1292
+    },
+    {
+      "field_degree": 3,
+      "family": "quadratic",
+      "start": 9553,
+      "count": 32,
+      "best_rank": 197,
+      "minimizing_indices": [],
+      "digest_fnv64": "14882916267919454900",
+      "histogram": [
+        [
+          302,
+          2
+        ],
+        [
+          303,
+          10
+        ],
+        [
+          304,
+          5
+        ],
+        [
+          305,
+          2
+        ],
+        [
+          306,
+          2
+        ],
+        [
+          307,
+          9
+        ],
+        [
+          308,
+          2
+        ]
+      ],
+      "elapsed_seconds": 0.1822
+    },
+    {
+      "field_degree": 3,
+      "family": "quadratic",
+      "start": 36028797018964447,
+      "count": 32,
+      "best_rank": 197,
+      "minimizing_indices": [],
+      "digest_fnv64": "16098371376160837279",
+      "histogram": [
+        [
+          300,
+          3
+        ],
+        [
+          301,
+          2
+        ],
+        [
+          302,
+          4
+        ],
+        [
+          303,
+          2
+        ],
+        [
+          304,
+          4
+        ],
+        [
+          305,
+          2
+        ],
+        [
+          306,
+          3
+        ],
+        [
+          307,
+          4
+        ],
+        [
+          308,
+          1
+        ],
+        [
+          309,
+          3
+        ],
+        [
+          310,
+          1
+        ],
+        [
+          311,
+          1
+        ],
+        [
+          312,
+          2
+        ]
+      ],
+      "elapsed_seconds": 0.2143
+    },
+    {
+      "field_degree": 2,
+      "family": "lookup",
+      "start": 0,
+      "count": 256,
+      "best_rank": 31,
+      "minimizing_indices": [
+        0
+      ],
+      "digest_fnv64": "3073740924420220640",
+      "histogram": [
+        [
+          31,
+          1
+        ],
+        [
+          40,
+          1
+        ],
+        [
+          48,
+          3
+        ],
+        [
+          49,
+          15
+        ],
+        [
+          50,
+          3
+        ],
+        [
+          51,
+          11
+        ],
+        [
+          52,
+          1
+        ],
+        [
+          54,
+          10
+        ],
+        [
+          55,
+          7
+        ],
+        [
+          56,
+          22
+        ],
+        [
+          57,
+          6
+        ],
+        [
+          58,
+          29
+        ],
+        [
+          59,
+          20
+        ],
+        [
+          60,
+          16
+        ],
+        [
+          61,
+          49
+        ],
+        [
+          62,
+          38
+        ],
+        [
+          63,
+          18
+        ],
+        [
+          64,
+          6
+        ]
+      ],
+      "elapsed_seconds": 0.0381
+    },
+    {
+      "field_degree": 2,
+      "family": "lookup",
+      "start": 1049513,
+      "count": 64,
+      "best_rank": 31,
+      "minimizing_indices": [],
+      "digest_fnv64": "1253145581701201506",
+      "histogram": [
+        [
+          53,
+          1
+        ],
+        [
+          54,
+          1
+        ],
+        [
+          57,
+          1
+        ],
+        [
+          58,
+          3
+        ],
+        [
+          59,
+          3
+        ],
+        [
+          60,
+          16
+        ],
+        [
+          61,
+          18
+        ],
+        [
+          62,
+          15
+        ],
+        [
+          63,
+          6
+        ]
+      ],
+      "elapsed_seconds": 0.0136
+    },
+    {
+      "field_degree": 2,
+      "family": "lookup",
+      "start": 33554368,
+      "count": 64,
+      "best_rank": 31,
+      "minimizing_indices": [],
+      "digest_fnv64": "10359050679080403423",
+      "histogram": [
+        [
+          44,
+          1
+        ],
+        [
+          51,
+          1
+        ],
+        [
+          52,
+          1
+        ],
+        [
+          54,
+          1
+        ],
+        [
+          55,
+          1
+        ],
+        [
+          56,
+          3
+        ],
+        [
+          58,
+          1
+        ],
+        [
+          59,
+          5
+        ],
+        [
+          60,
+          2
+        ],
+        [
+          61,
+          14
+        ],
+        [
+          62,
+          19
+        ],
+        [
+          63,
+          15
+        ]
+      ],
+      "elapsed_seconds": 0.0145
+    },
+    {
+      "field_degree": 3,
+      "family": "bilinear",
+      "start": 0,
+      "count": 32,
+      "best_rank": 197,
+      "minimizing_indices": [
+        0
+      ],
+      "digest_fnv64": "4563078330558793987",
+      "histogram": [
+        [
+          197,
+          1
+        ],
+        [
+          287,
+          2
+        ],
+        [
+          290,
+          4
+        ],
+        [
+          293,
+          7
+        ],
+        [
+          361,
+          1
+        ],
+        [
+          362,
+          4
+        ],
+        [
+          363,
+          9
+        ],
+        [
+          364,
+          4
+        ]
+      ],
+      "elapsed_seconds": 0.1879
+    },
+    {
+      "field_degree": 3,
+      "family": "bilinear",
+      "start": 33555369,
+      "count": 32,
+      "best_rank": 197,
+      "minimizing_indices": [],
+      "digest_fnv64": "11439139260333552360",
+      "histogram": [
+        [
+          468,
+          1
+        ],
+        [
+          474,
+          2
+        ],
+        [
+          476,
+          1
+        ],
+        [
+          477,
+          1
+        ],
+        [
+          481,
+          1
+        ],
+        [
+          489,
+          1
+        ],
+        [
+          494,
+          1
+        ],
+        [
+          495,
+          1
+        ],
+        [
+          496,
+          1
+        ],
+        [
+          498,
+          1
+        ],
+        [
+          499,
+          1
+        ],
+        [
+          500,
+          4
+        ],
+        [
+          501,
+          2
+        ],
+        [
+          502,
+          3
+        ],
+        [
+          503,
+          4
+        ],
+        [
+          504,
+          5
+        ],
+        [
+          505,
+          2
+        ]
+      ],
+      "elapsed_seconds": 0.3671
+    },
+    {
+      "field_degree": 3,
+      "family": "bilinear",
+      "start": 67108832,
+      "count": 32,
+      "best_rank": 197,
+      "minimizing_indices": [],
+      "digest_fnv64": "5303574700566998612",
+      "histogram": [
+        [
+          339,
+          1
+        ],
+        [
+          341,
+          1
+        ],
+        [
+          390,
+          1
+        ],
+        [
+          391,
+          1
+        ],
+        [
+          397,
+          1
+        ],
+        [
+          398,
+          1
+        ],
+        [
+          402,
+          1
+        ],
+        [
+          403,
+          1
+        ],
+        [
+          434,
+          2
+        ],
+        [
+          435,
+          4
+        ],
+        [
+          436,
+          3
+        ],
+        [
+          437,
+          3
+        ],
+        [
+          466,
+          1
+        ],
+        [
+          467,
+          1
+        ],
+        [
+          468,
+          5
+        ],
+        [
+          469,
+          4
+        ],
+        [
+          470,
+          1
+        ]
+      ],
+      "elapsed_seconds": 0.2947
+    }
+  ],
+  "lookup_minimizers": [
+    {
+      "quadratic_index": 9553,
+      "lookup_index": 29440724,
+      "correction": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        2,
+        2,
+        1,
+        1,
+        3,
+        1,
+        2,
+        0,
+        0,
+        2,
+        3
+      ]
+    },
+    {
+      "quadratic_index": 9556,
+      "lookup_index": 30093425,
+      "correction": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        2,
+        3,
+        0,
+        0,
+        2,
+        1,
+        2,
+        1,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "quadratic_index": 9562,
+      "lookup_index": 25134494,
+      "correction": [
+        0,
+        0,
+        2,
+        3,
+        0,
+        2,
+        0,
+        3,
+        2,
+        0,
+        0,
+        3,
+        3,
+        3,
+        3,
+        2
+      ]
+    },
+    {
+      "quadratic_index": 9567,
+      "lookup_index": 24481595,
+      "correction": [
+        0,
+        0,
+        3,
+        2,
+        0,
+        2,
+        1,
+        2,
+        3,
+        1,
+        0,
+        3,
+        2,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "quadratic_index": 24480,
+      "lookup_index": 30243048,
+      "correction": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        3,
+        1,
+        0,
+        3,
+        3,
+        2,
+        2,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "quadratic_index": 24485,
+      "lookup_index": 29848141,
+      "correction": [
+        0,
+        0,
+        1,
+        3,
+        0,
+        0,
+        2,
+        0,
+        1,
+        2,
+        3,
+        2,
+        3,
+        0,
+        2,
+        3
+      ]
+    },
+    {
+      "quadratic_index": 24491,
+      "lookup_index": 24364962,
+      "correction": [
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        1,
+        3,
+        3,
+        0,
+        2,
+        3,
+        1,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "quadratic_index": 24494,
+      "lookup_index": 24759559,
+      "correction": [
+        0,
+        0,
+        3,
+        1,
+        0,
+        0,
+        0,
+        2,
+        2,
+        1,
+        2,
+        3,
+        0,
+        3,
+        3,
+        2
+      ]
+    },
+    {
+      "quadratic_index": 30001,
+      "lookup_index": 29719244,
+      "correction": [
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        2,
+        1,
+        1,
+        3,
+        3,
+        2,
+        2,
+        0,
+        2,
+        3
+      ]
+    },
+    {
+      "quadratic_index": 30004,
+      "lookup_index": 30371945,
+      "correction": [
+        0,
+        0,
+        1,
+        2,
+        0,
+        0,
+        3,
+        0,
+        0,
+        2,
+        3,
+        2,
+        3,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "quadratic_index": 30010,
+      "lookup_index": 24888710,
+      "correction": [
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        0,
+        3,
+        2,
+        0,
+        2,
+        3,
+        1,
+        3,
+        3,
+        2
+      ]
+    },
+    {
+      "quadratic_index": 30015,
+      "lookup_index": 24235811,
+      "correction": [
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        1,
+        2,
+        3,
+        1,
+        2,
+        3,
+        0,
+        2,
+        3,
+        2
+      ]
+    }
+  ],
+  "exhaustive_lookup_summary": {
+    "file": "noncommutative-crossing-lookup-complete.json",
+    "sha256": "cf46ea05a782c4bd2c86ca5b4a190c9a15510bdeec422ef37309545f8526187d",
+    "scope": "full native run; bounded independent Python replay and all minimizers"
+  },
+  "source_sha256": "5df22d2e4b28ded8daab2bfeb9019f07a82c1ddea8f4bf386f74433a7baf7159",
+  "native_source_sha256": "16488ed69a2f5b98129909e9543d7aa1bfee6271d77b05a3be3183c3493cfd49"
+}

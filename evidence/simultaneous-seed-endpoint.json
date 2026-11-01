@@ -1,0 +1,111 @@
+{
+  "claim": "Finite verification of direct type channels and bounded-space seed endpoint interfaces",
+  "new_factoring_exponent": null,
+  "coefficient_fields": [
+    2,
+    3
+  ],
+  "seeds": [
+    {
+      "p": 2,
+      "base_ranks": [
+        [
+          1,
+          4
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "double_quality": "1"
+    },
+    {
+      "p": 3,
+      "base_ranks": [
+        [
+          1,
+          4
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "double_quality": "1"
+    }
+  ],
+  "amplification_cases": 8,
+  "type_pieces": 26,
+  "flattening_entries_compared": 134272,
+  "explicit_channels_unranked": 1020,
+  "type_words_unranked": 1381,
+  "exact_scalar_checks": 2075,
+  "delayed_selection": [
+    {
+      "budget": 0,
+      "valid_records": 0,
+      "selected_characteristic": null
+    },
+    {
+      "budget": 3,
+      "valid_records": 0,
+      "selected_characteristic": null
+    },
+    {
+      "budget": 4,
+      "valid_records": 1,
+      "selected_characteristic": 2
+    },
+    {
+      "budget": 16,
+      "valid_records": 1,
+      "selected_characteristic": 2
+    },
+    {
+      "budget": 17,
+      "valid_records": 2,
+      "selected_characteristic": 2
+    },
+    {
+      "budget": 100,
+      "valid_records": 2,
+      "selected_characteristic": 2
+    }
+  ],
+  "negative_control_invalid_crossing_rejected": true,
+  "slow_scalar_convergence_only": [
+    {
+      "m": 4,
+      "depth": 16,
+      "beta": "17/32",
+      "ratio_lower_bound": "2"
+    },
+    {
+      "m": 8,
+      "depth": 64,
+      "beta": "33/64",
+      "ratio_lower_bound": "3"
+    },
+    {
+      "m": 16,
+      "depth": 256,
+      "beta": "65/128",
+      "ratio_lower_bound": "5"
+    },
+    {
+      "m": 32,
+      "depth": 1024,
+      "beta": "129/256",
+      "ratio_lower_bound": "9"
+    },
+    {
+      "m": 40,
+      "depth": 1600,
+      "beta": "161/320",
+      "ratio_lower_bound": "11"
+    }
+  ],
+  "script_sha256": "53db525e97cb05b6b100ab72fb566b6d6873000e2c677b46fd63954e91b452b4",
+  "scope": "Finite algebra/indexing evidence; no new asymptotic rank profile and no execution of the factoring machine."
+}

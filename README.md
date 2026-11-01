@@ -158,6 +158,8 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs five groups on 
 
 ## Current research frontier
 
+- [Ward/Pfaffian entry queries](research/ward-pfaffian-entry-queries.md), [simultaneous seed endpoint](research/simultaneous-seed-endpoint.md), and the [PR #29 checkpoint](research/INDEX.md#retained-pr-29-ward-and-crossing-checkpoint): exact entry constructions, effective interfaces and scoped crossing barriers. Entry evaluation alone is not a favorable rank bound. `verify-constructions` is in the default gate; larger native/extended screens remain separate. No stronger complete factoring exponent is claimed.
+
 - [Full binary conservation-kernel barrier](research/full-conservation-rank-sum-barrier.md) and [PR #27 checkpoint](research/INDEX.md#retained-pr-27-conservation-and-crossing-checkpoint): ordinary rank-sum theorems, transfers and exact finite controls. The all-kernel characteristic-two theorem and the [elementary all-code bound](research/difference-support-rank-floor.md) have distinct scopes. No general factoring lower bound, new Lean result, or exponent above `1/2` is claimed.
 
 - [Vanishing-slack transfer](research/vanishing-slack-score-transfer.md), [optimized divisor bound](research/optimized-divisor-count-bound.md), and the [PR #26 checkpoint](research/INDEX.md#retained-pr-26-effective-transfer-and-crossing-checkpoint): effective interfaces, arithmetic bounds and scoped crossing work. Universal verified search does not supply a new numerical exponent. See `make verify-further` and the retained optional targets; no new Lean or stronger complete factoring bound is claimed.

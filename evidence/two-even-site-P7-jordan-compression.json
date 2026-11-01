@@ -1,0 +1,1445 @@
+{
+  "all_generator_compression_entries_checked": 23413104,
+  "all_scalar_compression_dimensions": [
+    87420,
+    1150
+  ],
+  "certificate_sha256": "660592bf565c92c99e1cd8f3c126054e2942a41920ae856462ed0d23cefcd078",
+  "character": [
+    1,
+    1,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "character_scalar_polynomial": "(q+r)^2 (p+r)^5",
+  "coefficient_directions": 12,
+  "cost_exponent": {
+    "denominator": 7,
+    "numerator": 10
+  },
+  "exact_margin": {
+    "difference": 112586305336850844412897714353626208033405586027498948224,
+    "label_power": 20,
+    "rank_product_power": 7
+  },
+  "final_rank_certificate_dimensions": [
+    108315,
+    1150
+  ],
+  "labels": 672,
+  "largest_matrix_dimension": 2560,
+  "literal_seven_site_embedding_controls": [
+    {
+      "complete_polynomial_entries_checked": 105,
+      "cut": 0,
+      "kind": "entire weight-four block"
+    },
+    {
+      "complete_polynomial_entries_checked": 105,
+      "cut": 1,
+      "kind": "entire weight-four block"
+    },
+    {
+      "complete_polynomial_entries_checked": 63,
+      "cut": 0,
+      "kind": "weight-two principal restriction"
+    },
+    {
+      "complete_polynomial_entries_checked": 63,
+      "cut": 1,
+      "kind": "weight-two principal restriction"
+    },
+    {
+      "complete_polynomial_entries_checked": 3,
+      "cut": 0,
+      "kind": "weight-zero principal restriction"
+    },
+    {
+      "complete_polynomial_entries_checked": 3,
+      "cut": 1,
+      "kind": "weight-zero principal restriction"
+    }
+  ],
+  "local_constant_similarities": [
+    {
+      "basis_columns": [
+        1,
+        8,
+        6,
+        2
+      ],
+      "cut": "row",
+      "linear_target_rows": [
+        1,
+        2,
+        12,
+        8
+      ]
+    },
+    {
+      "basis_columns": [
+        2,
+        4,
+        9,
+        1
+      ],
+      "cut": "column",
+      "linear_target_rows": [
+        0,
+        0,
+        8,
+        0
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "core_pairs": 4,
+      "core_syndrome": 3,
+      "cut": "row",
+      "modules": [
+        {
+          "all_generator_compression_entries_checked": 9408,
+          "ambient_dimension": 64,
+          "annihilated_span_dimension": 35,
+          "compression_dimension": 28,
+          "constructed_left_covectors_sha256": "911c0a9a367ec83b8a125413251c86b98f63e26b9c6e3dfb57e2b1da50e181ee",
+          "jordan_copies": 0,
+          "multiplicity": 8
+        },
+        {
+          "all_generator_compression_entries_checked": 14700,
+          "ambient_dimension": 128,
+          "annihilated_span_dimension": 68,
+          "compression_dimension": 35,
+          "constructed_left_covectors_sha256": "7adc20ab433496fda771d8b78d5cb0c8de4453921f5c5e1b1c45c94c04c1e26c",
+          "jordan_copies": 1,
+          "multiplicity": 12
+        },
+        {
+          "all_generator_compression_entries_checked": 40368,
+          "ambient_dimension": 256,
+          "annihilated_span_dimension": 148,
+          "compression_dimension": 58,
+          "constructed_left_covectors_sha256": "483c3caf5e2cf7a7f90871cc747e0a2fd277b30d60b43342bc33ea1898fd7682",
+          "jordan_copies": 2,
+          "multiplicity": 6
+        },
+        {
+          "all_generator_compression_entries_checked": 122412,
+          "ambient_dimension": 512,
+          "annihilated_span_dimension": 289,
+          "compression_dimension": 101,
+          "constructed_left_covectors_sha256": "6e7529bc38e10e2d07a83f351057233496da25af3d33a17135e0b22cbaab4638",
+          "jordan_copies": 3,
+          "multiplicity": 1
+        }
+      ],
+      "weighted_compression_dimension": 1093
+    },
+    {
+      "core_pairs": 4,
+      "core_syndrome": 3,
+      "cut": "column",
+      "modules": [
+        {
+          "all_generator_compression_entries_checked": 0,
+          "compression_dimension": 0,
+          "jordan_copies": 0,
+          "multiplicity": 8
+        },
+        {
+          "all_generator_compression_entries_checked": 0,
+          "compression_dimension": 0,
+          "jordan_copies": 1,
+          "multiplicity": 12
+        },
+        {
+          "all_generator_compression_entries_checked": 0,
+          "compression_dimension": 0,
+          "jordan_copies": 2,
+          "multiplicity": 6
+        },
+        {
+          "all_generator_compression_entries_checked": 192,
+          "ambient_dimension": 512,
+          "annihilated_span_dimension": 40,
+          "compression_dimension": 4,
+          "constructed_left_covectors_sha256": "41d439b88a37843cea591a66e206fc56ff43efb08c0cdfb1d2606f2f910b8476",
+          "jordan_copies": 3,
+          "multiplicity": 1
+        }
+      ],
+      "weighted_compression_dimension": 4
+    },
+    {
+      "core_pairs": 4,
+      "core_syndrome": 5,
+      "cut": "row",
+      "modules": [
+        {
+          "all_generator_compression_entries_checked": 3072,
+          "ambient_dimension": 64,
+          "annihilated_span_dimension": 31,
+          "compression_dimension": 16,
+          "constructed_left_covectors_sha256": "507b9d861bd91a23e499407bbcda2adf605cc7ee74b354801d523a2683d55487",
+          "jordan_copies": 0,
+          "multiplicity": 8
+        },
+        {
+          "all_generator_compression_entries_checked": 11532,
+          "ambient_dimension": 128,
+          "annihilated_span_dimension": 76,
+          "compression_dimension": 31,
+          "constructed_left_covectors_sha256": "7db1067bd383a2585a354cb8d16b1e0fc122c3c3ba0b8bf166ded746f30d9d4d",
+          "jordan_copies": 1,
+          "multiplicity": 12
+        },
+        {
+          "all_generator_compression_entries_checked": 22188,
+          "ambient_dimension": 256,
+          "annihilated_span_dimension": 138,
+          "compression_dimension": 43,
+          "constructed_left_covectors_sha256": "601317dedf307b39a22c27745f13d5efefeaaee5a5b7b66de63c8c2d12af3583",
+          "jordan_copies": 2,
+          "multiplicity": 6
+        },
+        {
+          "all_generator_compression_entries_checked": 90828,
+          "ambient_dimension": 512,
+          "annihilated_span_dimension": 311,
+          "compression_dimension": 87,
+          "constructed_left_covectors_sha256": "3fc0562c76eae5e0d91576fe912ecd998c92ed051a0a518c5e657d845b617f10",
+          "jordan_copies": 3,
+          "multiplicity": 1
+        }
+      ],
+      "weighted_compression_dimension": 845
+    },
+    {
+      "core_pairs": 4,
+      "core_syndrome": 5,
+      "cut": "column",
+      "modules": [
+        {
+          "all_generator_compression_entries_checked": 0,
+          "compression_dimension": 0,
+          "jordan_copies": 0,
+          "multiplicity": 8
+        },
+        {
+          "all_generator_compression_entries_checked": 0,
+          "compression_dimension": 0,
+          "jordan_copies": 1,
+          "multiplicity": 12
+        },
+        {
+          "all_generator_compression_entries_checked": 192,
+          "ambient_dimension": 256,
+          "annihilated_span_dimension": 36,
+          "compression_dimension": 4,
+          "constructed_left_covectors_sha256": "ca201cd4a9aa924d5485057cc356454a42db24d9336c911a9e8d8f12948d67d3",
+          "jordan_copies": 2,
+          "multiplicity": 6
+        },
+        {
+          "all_generator_compression_entries_checked": 192,
+          "ambient_dimension": 512,
+          "annihilated_span_dimension": 36,
+          "compression_dimension": 4,
+          "constructed_left_covectors_sha256": "cc8158ad3eeebc57f5e40870922a989c85b945bedca3ded23257a769e774bf86",
+          "jordan_copies": 3,
+          "multiplicity": 1
+        }
+      ],
+      "weighted_compression_dimension": 28
+    },
+    {
+      "core_pairs": 4,
+      "core_syndrome": 6,
+      "cut": "row",
+      "modules": [
+        {
+          "all_generator_compression_entries_checked": 6912,
+          "ambient_dimension": 64,
+          "annihilated_span_dimension": 38,
+          "compression_dimension": 24,
+          "constructed_left_covectors_sha256": "1bb366188e3e7893c819068b82318abcaf34cb094b2a4088f4b41cd0d1c0494d",
+          "jordan_copies": 0,
+          "multiplicity": 8
+        },
+        {
+          "all_generator_compression_entries_checked": 12288,
+          "ambient_dimension": 128,
+          "annihilated_span_dimension": 84,
+          "compression_dimension": 32,
+          "constructed_left_covectors_sha256": "632c4d7a1cb103f9f5f03cba0568b35a96c0f62d3aba31539e58c168957fef16",
+          "jordan_copies": 1,
+          "multiplicity": 12
+        },
+        {
+          "all_generator_compression_entries_checked": 31212,
+          "ambient_dimension": 256,
+          "annihilated_span_dimension": 160,
+          "compression_dimension": 51,
+          "constructed_left_covectors_sha256": "20445d0b1aa52892b3a1257298d439e7940daa597aca1689b1ab448bb61874c4",
+          "jordan_copies": 2,
+          "multiplicity": 6
+        },
+        {
+          "all_generator_compression_entries_checked": 92928,
+          "ambient_dimension": 512,
+          "annihilated_span_dimension": 309,
+          "compression_dimension": 88,
+          "constructed_left_covectors_sha256": "1dbe69b60ce7dfed5030aae632c066d4e9f4ed3a740eb01f4a13d4432538caa9",
+          "jordan_copies": 3,
+          "multiplicity": 1
+        }
+      ],
+      "weighted_compression_dimension": 970
+    },
+    {
+      "core_pairs": 4,
+      "core_syndrome": 6,
+      "cut": "column",
+      "modules": [
+        {
+          "all_generator_compression_entries_checked": 0,
+          "compression_dimension": 0,
+          "jordan_copies": 0,
+          "multiplicity": 8
+        },
+        {
+          "all_generator_compression_entries_checked": 0,
+          "compression_dimension": 0,
+          "jordan_copies": 1,
+          "multiplicity": 12
+        },
+        {
+          "all_generator_compression_entries_checked": 0,
+          "compression_dimension": 0,
+          "jordan_copies": 2,
+          "multiplicity": 6
+        },
+        {
+          "all_generator_compression_entries_checked": 192,
+          "ambient_dimension": 512,
+          "annihilated_span_dimension": 40,
+          "compression_dimension": 4,
+          "constructed_left_covectors_sha256": "3d92b3889fc2aca198db25cd05d69ae0f55ebbaf0a4c6e3a13ebd30fc3108e0d",
+          "jordan_copies": 3,
+          "multiplicity": 1
+        }
+      ],
+      "weighted_compression_dimension": 4
+    },
+    {
+      "core_pairs": 4,
+      "core_syndrome": 9,
+      "cut": "row",
+      "modules": [
+        {
+          "all_generator_compression_entries_checked": 768,
+          "ambient_dimension": 64,
+          "annihilated_span_dimension": 20,
+          "compression_dimension": 8,
+          "constructed_left_covectors_sha256": "ed1043432fe8453a1135811e91ea552c6ae72c57f3958e572f45a3097964349e",
+          "jordan_copies": 0,
+          "multiplicity": 8
+        },
+        {
+          "all_generator_compression_entries_checked": 9408,
+          "ambient_dimension": 128,
+          "annihilated_span_dimension": 87,
+          "compression_dimension": 28,
+          "constructed_left_covectors_sha256": "e34bb7b2ff7d23bb0293120d9f6747d363013ff5a33543e8f408a1fa99e94a96",
+          "jordan_copies": 1,
+          "multiplicity": 12
+        },
+        {
+          "all_generator_compression_entries_checked": 15552,
+          "ambient_dimension": 256,
+          "annihilated_span_dimension": 129,
+          "compression_dimension": 36,
+          "constructed_left_covectors_sha256": "dae361c47a5ee225a17de7846c99ed04d784390295caf35c91b05026a93a6503",
+          "jordan_copies": 2,
+          "multiplicity": 6
+        },
+        {
+          "all_generator_compression_entries_checked": 63948,
+          "ambient_dimension": 512,
+          "annihilated_span_dimension": 293,
+          "compression_dimension": 73,
+          "constructed_left_covectors_sha256": "36e9710de8cdf8c7ad9ca4f4dcf0400ed5b50916fa8f4fea067b8083bcfae324",
+          "jordan_copies": 3,
+          "multiplicity": 1
+        }
+      ],
+      "weighted_compression_dimension": 689
+    },
+    {
+      "core_pairs": 4,
+      "core_syndrome": 9,
+      "cut": "column",
+      "modules": [
+        {
+          "all_generator_compression_entries_checked": 0,
+          "compression_dimension": 0,
+          "jordan_copies": 0,
+          "multiplicity": 8
+        },
+        {
+          "all_generator_compression_entries_checked": 0,
+          "compression_dimension": 0,
+          "jordan_copies": 1,
+          "multiplicity": 12
+        },
+        {
+          "all_generator_compression_entries_checked": 0,
+          "compression_dimension": 0,
+          "jordan_copies": 2,
+          "multiplicity": 6
+        },
+        {
+          "all_generator_compression_entries_checked": 192,
+          "ambient_dimension": 512,
+          "annihilated_span_dimension": 40,
+          "compression_dimension": 4,
+          "constructed_left_covectors_sha256": "fdc7c79aff5c3654267ec33d3ac1b880a6c0d4005477bacc2670cdaea733c08e",
+          "jordan_copies": 3,
+          "multiplicity": 1
+        }
+      ],
+      "weighted_compression_dimension": 4
+    },
+    {
+      "core_pairs": 4,
+      "core_syndrome": 10,
+      "cut": "row",
+      "modules": [
+        {
+          "all_generator_compression_entries_checked": 3072,
+          "ambient_dimension": 64,
+          "annihilated_span_dimension": 30,
+          "compression_dimension": 16,
+          "constructed_left_covectors_sha256": "68d3dbb8bb89f61cb082df8eb7ff8c1c26838532d135c59cd213b109661e0005",
+          "jordan_copies": 0,
+          "multiplicity": 8
+        },
+        {
+          "all_generator_compression_entries_checked": 10800,
+          "ambient_dimension": 128,
+          "annihilated_span_dimension": 75,
+          "compression_dimension": 30,
+          "constructed_left_covectors_sha256": "5491e387922fd578154ac534b395c5080e04e253c9688446c90c79c8734cc72c",
+          "jordan_copies": 1,
+          "multiplicity": 12
+        },
+        {
+          "all_generator_compression_entries_checked": 28812,
+          "ambient_dimension": 256,
+          "annihilated_span_dimension": 148,
+          "compression_dimension": 49,
+          "constructed_left_covectors_sha256": "61b0f76b2087472a49ea5ac6b74d384470fd9efe0a99767b38182393156aa0a0",
+          "jordan_copies": 2,
+          "multiplicity": 6
+        },
+        {
+          "all_generator_compression_entries_checked": 69312,
+          "ambient_dimension": 512,
+          "annihilated_span_dimension": 265,
+          "compression_dimension": 76,
+          "constructed_left_covectors_sha256": "ab4942bcf83890a042e42cc0e7540a545f377cd2a963a1692ac6ffcc6216ccf2",
+          "jordan_copies": 3,
+          "multiplicity": 1
+        }
+      ],
+      "weighted_compression_dimension": 858
+    },
+    {
+      "core_pairs": 4,
+      "core_syndrome": 10,
+      "cut": "column",
+      "modules": [
+        {
+          "all_generator_compression_entries_checked": 0,
+          "compression_dimension": 0,
+          "jordan_copies": 0,
+          "multiplicity": 8
+        },
+        {
+          "all_generator_compression_entries_checked": 0,
+          "compression_dimension": 0,
+          "jordan_copies": 1,
+          "multiplicity": 12
+        },
+        {
+          "all_generator_compression_entries_checked": 192,
+          "ambient_dimension": 256,
+          "annihilated_span_dimension": 36,
+          "compression_dimension": 4,
+          "constructed_left_covectors_sha256": "c7ea88d19ba179a132eeaa184b2e54d3109765c014ab97ccdebb444b2d420128",
+          "jordan_copies": 2,
+          "multiplicity": 6
+        },
+        {
+          "all_generator_compression_entries_checked": 300,
+          "ambient_dimension": 512,
+          "annihilated_span_dimension": 47,
+          "compression_dimension": 5,
+          "constructed_left_covectors_sha256": "62fc7e3c611ed9d319f93933265d50ceada1f5117ee8d42ca8e2425408345d85",
+          "jordan_copies": 3,
+          "multiplicity": 1
+        }
+      ],
+      "weighted_compression_dimension": 29
+    },
+    {
+      "core_pairs": 4,
+      "core_syndrome": 12,
+      "cut": "row",
+      "modules": [
+        {
+          "all_generator_compression_entries_checked": 9408,
+          "ambient_dimension": 64,
+          "annihilated_span_dimension": 34,
+          "compression_dimension": 28,
+          "constructed_left_covectors_sha256": "7c3885eb88c7ed6ab6cf499c10e6497aa4c17563c8712c59f2b92bf68d0ed9ea",
+          "jordan_copies": 0,
+          "multiplicity": 8
+        },
+        {
+          "all_generator_compression_entries_checked": 13872,
+          "ambient_dimension": 128,
+          "annihilated_span_dimension": 63,
+          "compression_dimension": 34,
+          "constructed_left_covectors_sha256": "fbac17ab720972988192a29390feff105e2ec0fd35c8d617a626ce3f1ea41cec",
+          "jordan_copies": 1,
+          "multiplicity": 12
+        },
+        {
+          "all_generator_compression_entries_checked": 37632,
+          "ambient_dimension": 256,
+          "annihilated_span_dimension": 125,
+          "compression_dimension": 56,
+          "constructed_left_covectors_sha256": "f2d905651d954575d1fdda3b47e50a8369e7313320f706ff5b001cde4445a7da",
+          "jordan_copies": 2,
+          "multiplicity": 6
+        },
+        {
+          "all_generator_compression_entries_checked": 97200,
+          "ambient_dimension": 512,
+          "annihilated_span_dimension": 258,
+          "compression_dimension": 90,
+          "constructed_left_covectors_sha256": "5241525c9ee607daee78378f9f484e58cd4ae4bb00bbba146a292cf3a03d64ff",
+          "jordan_copies": 3,
+          "multiplicity": 1
+        }
+      ],
+      "weighted_compression_dimension": 1058
+    },
+    {
+      "core_pairs": 4,
+      "core_syndrome": 12,
+      "cut": "column",
+      "modules": [
+        {
+          "all_generator_compression_entries_checked": 0,
+          "compression_dimension": 0,
+          "jordan_copies": 0,
+          "multiplicity": 8
+        },
+        {
+          "all_generator_compression_entries_checked": 0,
+          "compression_dimension": 0,
+          "jordan_copies": 1,
+          "multiplicity": 12
+        },
+        {
+          "all_generator_compression_entries_checked": 0,
+          "compression_dimension": 0,
+          "jordan_copies": 2,
+          "multiplicity": 6
+        },
+        {
+          "all_generator_compression_entries_checked": 192,
+          "ambient_dimension": 512,
+          "annihilated_span_dimension": 40,
+          "compression_dimension": 4,
+          "constructed_left_covectors_sha256": "691fd1918619f7cd484adb9b9f0eaa11ea7e1527e22013d31e8a0e68fca3cae8",
+          "jordan_copies": 3,
+          "multiplicity": 1
+        }
+      ],
+      "weighted_compression_dimension": 4
+    },
+    {
+      "core_pairs": 4,
+      "core_syndrome": 15,
+      "cut": "row",
+      "modules": [
+        {
+          "all_generator_compression_entries_checked": 12288,
+          "ambient_dimension": 96,
+          "annihilated_span_dimension": 50,
+          "compression_dimension": 32,
+          "constructed_left_covectors_sha256": "34a2c564a5ec0e46ca7131c48349d909424264a995d68753fc3951dfe3cdc33a",
+          "jordan_copies": 0,
+          "multiplicity": 8
+        },
+        {
+          "all_generator_compression_entries_checked": 24300,
+          "ambient_dimension": 192,
+          "annihilated_span_dimension": 108,
+          "compression_dimension": 45,
+          "constructed_left_covectors_sha256": "30f88850eea2c667bda91142383b5888877af75a500e631cf8af2b963c9809d9",
+          "jordan_copies": 1,
+          "multiplicity": 12
+        },
+        {
+          "all_generator_compression_entries_checked": 97200,
+          "ambient_dimension": 384,
+          "annihilated_span_dimension": 223,
+          "compression_dimension": 90,
+          "constructed_left_covectors_sha256": "42777b8d6242486049238b3ffdcad5c30b4afa0973e2047d8c2111146e24dfcb",
+          "jordan_copies": 2,
+          "multiplicity": 6
+        },
+        {
+          "all_generator_compression_entries_checked": 158700,
+          "ambient_dimension": 768,
+          "annihilated_span_dimension": 342,
+          "compression_dimension": 115,
+          "constructed_left_covectors_sha256": "365c533e0fb1638e1ad2492ddeb0b965fb5ece79923f564e9776dfea5d0bef21",
+          "jordan_copies": 3,
+          "multiplicity": 1
+        }
+      ],
+      "weighted_compression_dimension": 1451
+    },
+    {
+      "core_pairs": 4,
+      "core_syndrome": 15,
+      "cut": "column",
+      "modules": [
+        {
+          "all_generator_compression_entries_checked": 0,
+          "compression_dimension": 0,
+          "jordan_copies": 0,
+          "multiplicity": 8
+        },
+        {
+          "all_generator_compression_entries_checked": 0,
+          "compression_dimension": 0,
+          "jordan_copies": 1,
+          "multiplicity": 12
+        },
+        {
+          "all_generator_compression_entries_checked": 0,
+          "compression_dimension": 0,
+          "jordan_copies": 2,
+          "multiplicity": 6
+        },
+        {
+          "all_generator_compression_entries_checked": 3072,
+          "ambient_dimension": 768,
+          "annihilated_span_dimension": 144,
+          "compression_dimension": 16,
+          "constructed_left_covectors_sha256": "51e44acb25365f6e3b905bc8330d8c744946ac8238c548da512c449e723ed835",
+          "jordan_copies": 3,
+          "multiplicity": 1
+        }
+      ],
+      "weighted_compression_dimension": 16
+    },
+    {
+      "core_pairs": 5,
+      "core_syndrome": 0,
+      "cut": "row",
+      "modules": [
+        {
+          "all_generator_compression_entries_checked": 974700,
+          "ambient_dimension": 640,
+          "annihilated_span_dimension": 340,
+          "compression_dimension": 285,
+          "constructed_left_covectors_sha256": "3521cb58dbbcc4e1636bc4b9c78c6ff93b518bf7bb0603edcddc95ec176edf25",
+          "jordan_copies": 0,
+          "multiplicity": 4
+        },
+        {
+          "all_generator_compression_entries_checked": 1660608,
+          "ambient_dimension": 1280,
+          "annihilated_span_dimension": 763,
+          "compression_dimension": 372,
+          "constructed_left_covectors_sha256": "88d050f6c3da422ebe1a1efcfc5fcebbb986fd2e755a32fc8342738ff9f17cfa",
+          "jordan_copies": 1,
+          "multiplicity": 4
+        },
+        {
+          "all_generator_compression_entries_checked": 4234032,
+          "ambient_dimension": 2560,
+          "annihilated_span_dimension": 1578,
+          "compression_dimension": 594,
+          "constructed_left_covectors_sha256": "7c390b733049717c8dd1868041070da8ba8cf14c3c07a6ef3a967a8064b8b04c",
+          "jordan_copies": 2,
+          "multiplicity": 1
+        }
+      ],
+      "weighted_compression_dimension": 3222
+    },
+    {
+      "core_pairs": 5,
+      "core_syndrome": 0,
+      "cut": "column",
+      "modules": [
+        {
+          "all_generator_compression_entries_checked": 0,
+          "compression_dimension": 0,
+          "jordan_copies": 0,
+          "multiplicity": 4
+        },
+        {
+          "all_generator_compression_entries_checked": 0,
+          "compression_dimension": 0,
+          "jordan_copies": 1,
+          "multiplicity": 4
+        },
+        {
+          "all_generator_compression_entries_checked": 432,
+          "ambient_dimension": 2560,
+          "annihilated_span_dimension": 58,
+          "compression_dimension": 6,
+          "constructed_left_covectors_sha256": "f993b631b1ac2dad8c34cf1dcaeffa4149ca62ae7b8e31f27c2c2435d30a6705",
+          "jordan_copies": 2,
+          "multiplicity": 1
+        }
+      ],
+      "weighted_compression_dimension": 6
+    },
+    {
+      "core_pairs": 5,
+      "core_syndrome": 3,
+      "cut": "row",
+      "modules": [
+        {
+          "all_generator_compression_entries_checked": 262848,
+          "ambient_dimension": 384,
+          "annihilated_span_dimension": 225,
+          "compression_dimension": 148,
+          "constructed_left_covectors_sha256": "836b31222b476573a969bdda66cbbe496db65a2adf5d4070387e180296ba7ae3",
+          "jordan_copies": 0,
+          "multiplicity": 4
+        },
+        {
+          "all_generator_compression_entries_checked": 519168,
+          "ambient_dimension": 768,
+          "annihilated_span_dimension": 436,
+          "compression_dimension": 208,
+          "constructed_left_covectors_sha256": "fb2c92ebaf3bc242ea561d807c6f290f34371ef1486db7de0be944f3690b3dd4",
+          "jordan_copies": 1,
+          "multiplicity": 4
+        },
+        {
+          "all_generator_compression_entries_checked": 1362828,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 933,
+          "compression_dimension": 337,
+          "constructed_left_covectors_sha256": "8be3c328d68d6fe1743524b57cfa65c0d23650c2d221ee930cc3da86538d8199",
+          "jordan_copies": 2,
+          "multiplicity": 1
+        }
+      ],
+      "weighted_compression_dimension": 1761
+    },
+    {
+      "core_pairs": 5,
+      "core_syndrome": 3,
+      "cut": "column",
+      "modules": [
+        {
+          "all_generator_compression_entries_checked": 0,
+          "compression_dimension": 0,
+          "jordan_copies": 0,
+          "multiplicity": 4
+        },
+        {
+          "all_generator_compression_entries_checked": 0,
+          "compression_dimension": 0,
+          "jordan_copies": 1,
+          "multiplicity": 4
+        },
+        {
+          "all_generator_compression_entries_checked": 768,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 76,
+          "compression_dimension": 8,
+          "constructed_left_covectors_sha256": "73cdfc4431cd90a8810b2ef30264b7512e5d466e72407a3f6e7ab8632f864639",
+          "jordan_copies": 2,
+          "multiplicity": 1
+        }
+      ],
+      "weighted_compression_dimension": 8
+    },
+    {
+      "core_pairs": 5,
+      "core_syndrome": 5,
+      "cut": "row",
+      "modules": [
+        {
+          "all_generator_compression_entries_checked": 145200,
+          "ambient_dimension": 384,
+          "annihilated_span_dimension": 223,
+          "compression_dimension": 110,
+          "constructed_left_covectors_sha256": "3526ef647c724adc017a30d72ba6df8ed9b34772e9c8dab6c5597545634b316f",
+          "jordan_copies": 0,
+          "multiplicity": 4
+        },
+        {
+          "all_generator_compression_entries_checked": 380208,
+          "ambient_dimension": 768,
+          "annihilated_span_dimension": 482,
+          "compression_dimension": 178,
+          "constructed_left_covectors_sha256": "fd51863aa6844b9b08c59b14d9f026c3a7914f6554dcf0c19de545a19f8b5d58",
+          "jordan_copies": 1,
+          "multiplicity": 4
+        },
+        {
+          "all_generator_compression_entries_checked": 1044300,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 967,
+          "compression_dimension": 295,
+          "constructed_left_covectors_sha256": "0e81675b0ea4662d4fa427541c1630b598a0269ca2df81827ef4e1258d9601f3",
+          "jordan_copies": 2,
+          "multiplicity": 1
+        }
+      ],
+      "weighted_compression_dimension": 1447
+    },
+    {
+      "core_pairs": 5,
+      "core_syndrome": 5,
+      "cut": "column",
+      "modules": [
+        {
+          "all_generator_compression_entries_checked": 0,
+          "compression_dimension": 0,
+          "jordan_copies": 0,
+          "multiplicity": 4
+        },
+        {
+          "all_generator_compression_entries_checked": 192,
+          "ambient_dimension": 768,
+          "annihilated_span_dimension": 36,
+          "compression_dimension": 4,
+          "constructed_left_covectors_sha256": "1c23d0740542d7e33c620043dd8956b55842e1c2150a4ce04ae1e2e07504fdf8",
+          "jordan_copies": 1,
+          "multiplicity": 4
+        },
+        {
+          "all_generator_compression_entries_checked": 4800,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 180,
+          "compression_dimension": 20,
+          "constructed_left_covectors_sha256": "e50cbd6f4cc4f62116e418204ce3b4224f7021bb4730f760a4544cff2f5c956b",
+          "jordan_copies": 2,
+          "multiplicity": 1
+        }
+      ],
+      "weighted_compression_dimension": 36
+    },
+    {
+      "core_pairs": 5,
+      "core_syndrome": 6,
+      "cut": "row",
+      "modules": [
+        {
+          "all_generator_compression_entries_checked": 184512,
+          "ambient_dimension": 384,
+          "annihilated_span_dimension": 233,
+          "compression_dimension": 124,
+          "constructed_left_covectors_sha256": "11159c68c12b69c0dda3e4e06ca917e75b36788897a0f811c778382f4a7dac3a",
+          "jordan_copies": 0,
+          "multiplicity": 4
+        },
+        {
+          "all_generator_compression_entries_checked": 375948,
+          "ambient_dimension": 768,
+          "annihilated_span_dimension": 481,
+          "compression_dimension": 177,
+          "constructed_left_covectors_sha256": "3f3a03cef2a5792b4318f0f068aa6bbb5d41c42bba232e33aa249e5465c3d1a2",
+          "jordan_copies": 1,
+          "multiplicity": 4
+        },
+        {
+          "all_generator_compression_entries_checked": 954288,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 968,
+          "compression_dimension": 282,
+          "constructed_left_covectors_sha256": "91985299c1f46f2ce35beba409e81a16d7c4513b6a5dcfc3fff227d4341eabe5",
+          "jordan_copies": 2,
+          "multiplicity": 1
+        }
+      ],
+      "weighted_compression_dimension": 1486
+    },
+    {
+      "core_pairs": 5,
+      "core_syndrome": 6,
+      "cut": "column",
+      "modules": [
+        {
+          "all_generator_compression_entries_checked": 0,
+          "compression_dimension": 0,
+          "jordan_copies": 0,
+          "multiplicity": 4
+        },
+        {
+          "all_generator_compression_entries_checked": 0,
+          "compression_dimension": 0,
+          "jordan_copies": 1,
+          "multiplicity": 4
+        },
+        {
+          "all_generator_compression_entries_checked": 768,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 76,
+          "compression_dimension": 8,
+          "constructed_left_covectors_sha256": "efbc3bbf30d366c19c01373535f2adf6319539f598ff1aa095ff0d9dc2929284",
+          "jordan_copies": 2,
+          "multiplicity": 1
+        }
+      ],
+      "weighted_compression_dimension": 8
+    },
+    {
+      "core_pairs": 5,
+      "core_syndrome": 9,
+      "cut": "row",
+      "modules": [
+        {
+          "all_generator_compression_entries_checked": 90828,
+          "ambient_dimension": 384,
+          "annihilated_span_dimension": 210,
+          "compression_dimension": 87,
+          "constructed_left_covectors_sha256": "4ef000f289d672e076b343a4da6a2566cfd0ed47576393e32062efbc34f3e16e",
+          "jordan_copies": 0,
+          "multiplicity": 4
+        },
+        {
+          "all_generator_compression_entries_checked": 334668,
+          "ambient_dimension": 768,
+          "annihilated_span_dimension": 521,
+          "compression_dimension": 167,
+          "constructed_left_covectors_sha256": "ff02dd1850751e621a5eae145b873f2374e5997e0b6a0abefca39a58aa3f1e3e",
+          "jordan_copies": 1,
+          "multiplicity": 4
+        },
+        {
+          "all_generator_compression_entries_checked": 868332,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 987,
+          "compression_dimension": 269,
+          "constructed_left_covectors_sha256": "0b269e0fef96a3a606324b18b34008de151e18fc12e6ea6873e5b16951f7fe07",
+          "jordan_copies": 2,
+          "multiplicity": 1
+        }
+      ],
+      "weighted_compression_dimension": 1285
+    },
+    {
+      "core_pairs": 5,
+      "core_syndrome": 9,
+      "cut": "column",
+      "modules": [
+        {
+          "all_generator_compression_entries_checked": 0,
+          "compression_dimension": 0,
+          "jordan_copies": 0,
+          "multiplicity": 4
+        },
+        {
+          "all_generator_compression_entries_checked": 192,
+          "ambient_dimension": 768,
+          "annihilated_span_dimension": 36,
+          "compression_dimension": 4,
+          "constructed_left_covectors_sha256": "34cad93482eb89729892c0a4caeb71996081ccafad55c9bf51ae27c3e9c984c3",
+          "jordan_copies": 1,
+          "multiplicity": 4
+        },
+        {
+          "all_generator_compression_entries_checked": 5808,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 200,
+          "compression_dimension": 22,
+          "constructed_left_covectors_sha256": "72d2df353aea28a90f602cccc6ae08752a1ecb280f4d112b1c24792257b80345",
+          "jordan_copies": 2,
+          "multiplicity": 1
+        }
+      ],
+      "weighted_compression_dimension": 38
+    },
+    {
+      "core_pairs": 5,
+      "core_syndrome": 10,
+      "cut": "row",
+      "modules": [
+        {
+          "all_generator_compression_entries_checked": 117612,
+          "ambient_dimension": 384,
+          "annihilated_span_dimension": 235,
+          "compression_dimension": 99,
+          "constructed_left_covectors_sha256": "53605c39ef79963b8ad908447819ff7ca7bad5a128cb8edb9fd802e4a11d29d4",
+          "jordan_copies": 0,
+          "multiplicity": 4
+        },
+        {
+          "all_generator_compression_entries_checked": 326700,
+          "ambient_dimension": 768,
+          "annihilated_span_dimension": 503,
+          "compression_dimension": 165,
+          "constructed_left_covectors_sha256": "45028721494894f7d92da0433278d25ca2dc1c46ac8a4f2c9d3f1b05c7641125",
+          "jordan_copies": 1,
+          "multiplicity": 4
+        },
+        {
+          "all_generator_compression_entries_checked": 900912,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 997,
+          "compression_dimension": 274,
+          "constructed_left_covectors_sha256": "3fd8697ef14346b2dc050dc3336db388d5605cc6cf55e715b817d084dcf5ca99",
+          "jordan_copies": 2,
+          "multiplicity": 1
+        }
+      ],
+      "weighted_compression_dimension": 1330
+    },
+    {
+      "core_pairs": 5,
+      "core_syndrome": 10,
+      "cut": "column",
+      "modules": [
+        {
+          "all_generator_compression_entries_checked": 0,
+          "compression_dimension": 0,
+          "jordan_copies": 0,
+          "multiplicity": 4
+        },
+        {
+          "all_generator_compression_entries_checked": 192,
+          "ambient_dimension": 768,
+          "annihilated_span_dimension": 36,
+          "compression_dimension": 4,
+          "constructed_left_covectors_sha256": "c0069e261291ef9a7e972b050ba460470cc930fb1e57f98691073bdb0fad06db",
+          "jordan_copies": 1,
+          "multiplicity": 4
+        },
+        {
+          "all_generator_compression_entries_checked": 5808,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 200,
+          "compression_dimension": 22,
+          "constructed_left_covectors_sha256": "8cb6e95f28d46b28c2785fe83b152fd433e4b30e1f09c69c3086fdb59a6ec08b",
+          "jordan_copies": 2,
+          "multiplicity": 1
+        }
+      ],
+      "weighted_compression_dimension": 38
+    },
+    {
+      "core_pairs": 5,
+      "core_syndrome": 12,
+      "cut": "row",
+      "modules": [
+        {
+          "all_generator_compression_entries_checked": 187500,
+          "ambient_dimension": 384,
+          "annihilated_span_dimension": 242,
+          "compression_dimension": 125,
+          "constructed_left_covectors_sha256": "3729323e22d0094b9256f1beda2c1d3bcd5b4ffbb45f45d48660a9b67956be8a",
+          "jordan_copies": 0,
+          "multiplicity": 4
+        },
+        {
+          "all_generator_compression_entries_checked": 367500,
+          "ambient_dimension": 768,
+          "annihilated_span_dimension": 479,
+          "compression_dimension": 175,
+          "constructed_left_covectors_sha256": "f0ca85c10257e7b22ebbe014d9d5e44db9120f5da9c0fd17d8f70cb78f2fbfc2",
+          "jordan_copies": 1,
+          "multiplicity": 4
+        },
+        {
+          "all_generator_compression_entries_checked": 1009200,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 995,
+          "compression_dimension": 290,
+          "constructed_left_covectors_sha256": "3d6beb63fdaa6c65b7899fa34b267990270f8fba0a5abafc675adc2c5e1993d4",
+          "jordan_copies": 2,
+          "multiplicity": 1
+        }
+      ],
+      "weighted_compression_dimension": 1490
+    },
+    {
+      "core_pairs": 5,
+      "core_syndrome": 12,
+      "cut": "column",
+      "modules": [
+        {
+          "all_generator_compression_entries_checked": 0,
+          "compression_dimension": 0,
+          "jordan_copies": 0,
+          "multiplicity": 4
+        },
+        {
+          "all_generator_compression_entries_checked": 0,
+          "compression_dimension": 0,
+          "jordan_copies": 1,
+          "multiplicity": 4
+        },
+        {
+          "all_generator_compression_entries_checked": 768,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 76,
+          "compression_dimension": 8,
+          "constructed_left_covectors_sha256": "73598160dd407cd727ac65e57b0f8434a7a764aea614156d68a453d1e5c1699e",
+          "jordan_copies": 2,
+          "multiplicity": 1
+        }
+      ],
+      "weighted_compression_dimension": 8
+    },
+    {
+      "core_pairs": 5,
+      "core_syndrome": 17,
+      "cut": "row",
+      "modules": [
+        {
+          "all_generator_compression_entries_checked": 58800,
+          "ambient_dimension": 384,
+          "annihilated_span_dimension": 183,
+          "compression_dimension": 70,
+          "constructed_left_covectors_sha256": "e14b8281e0c32ae9e09b80146eaa9e5f1131fa8e9ad20f5bb8eff5ba4f55e563",
+          "jordan_copies": 0,
+          "multiplicity": 4
+        },
+        {
+          "all_generator_compression_entries_checked": 295788,
+          "ambient_dimension": 768,
+          "annihilated_span_dimension": 521,
+          "compression_dimension": 157,
+          "constructed_left_covectors_sha256": "59acda887220ec9aa55f5980c07e98bbd4685e8110b3608230cbfd50dea34a01",
+          "jordan_copies": 1,
+          "multiplicity": 4
+        },
+        {
+          "all_generator_compression_entries_checked": 780300,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 946,
+          "compression_dimension": 255,
+          "constructed_left_covectors_sha256": "e5b4ad5b549591a0e66b816d611fcf0aa8a1560178c0534bf2fec851a6cc4a75",
+          "jordan_copies": 2,
+          "multiplicity": 1
+        }
+      ],
+      "weighted_compression_dimension": 1163
+    },
+    {
+      "core_pairs": 5,
+      "core_syndrome": 17,
+      "cut": "column",
+      "modules": [
+        {
+          "all_generator_compression_entries_checked": 0,
+          "compression_dimension": 0,
+          "jordan_copies": 0,
+          "multiplicity": 4
+        },
+        {
+          "all_generator_compression_entries_checked": 0,
+          "compression_dimension": 0,
+          "jordan_copies": 1,
+          "multiplicity": 4
+        },
+        {
+          "all_generator_compression_entries_checked": 768,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 76,
+          "compression_dimension": 8,
+          "constructed_left_covectors_sha256": "1f8508678446a771adc745162cfb54c6481aaad1e5391ff66419f56d0aa48c02",
+          "jordan_copies": 2,
+          "multiplicity": 1
+        }
+      ],
+      "weighted_compression_dimension": 8
+    },
+    {
+      "core_pairs": 5,
+      "core_syndrome": 18,
+      "cut": "row",
+      "modules": [
+        {
+          "all_generator_compression_entries_checked": 86700,
+          "ambient_dimension": 384,
+          "annihilated_span_dimension": 200,
+          "compression_dimension": 85,
+          "constructed_left_covectors_sha256": "f9f2762959ce6f09de8c3a5df8689245b89d3ec5f4f3ed5ad488ffa4281b9333",
+          "jordan_copies": 0,
+          "multiplicity": 4
+        },
+        {
+          "all_generator_compression_entries_checked": 311052,
+          "ambient_dimension": 768,
+          "annihilated_span_dimension": 524,
+          "compression_dimension": 161,
+          "constructed_left_covectors_sha256": "528b3d48e5f2a9d1785d94a2c8537e41c8d12cfd86f1469978ebe368f27c3091",
+          "jordan_copies": 1,
+          "multiplicity": 4
+        },
+        {
+          "all_generator_compression_entries_checked": 780300,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 922,
+          "compression_dimension": 255,
+          "constructed_left_covectors_sha256": "1e2988315302a142b014c82a3f146ba2f22a7bb53cc7bb742ba7388ed93636bd",
+          "jordan_copies": 2,
+          "multiplicity": 1
+        }
+      ],
+      "weighted_compression_dimension": 1239
+    },
+    {
+      "core_pairs": 5,
+      "core_syndrome": 18,
+      "cut": "column",
+      "modules": [
+        {
+          "all_generator_compression_entries_checked": 0,
+          "compression_dimension": 0,
+          "jordan_copies": 0,
+          "multiplicity": 4
+        },
+        {
+          "all_generator_compression_entries_checked": 192,
+          "ambient_dimension": 768,
+          "annihilated_span_dimension": 36,
+          "compression_dimension": 4,
+          "constructed_left_covectors_sha256": "0e893a9294ad77dc3f283baf0d56c97ca2c2f99a0582da1d1d40dbc1d01f4162",
+          "jordan_copies": 1,
+          "multiplicity": 4
+        },
+        {
+          "all_generator_compression_entries_checked": 4800,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 180,
+          "compression_dimension": 20,
+          "constructed_left_covectors_sha256": "6b3d035448e76750ffffc27e672b0459fd2bf9c48ddd9771762a7301394a878d",
+          "jordan_copies": 2,
+          "multiplicity": 1
+        }
+      ],
+      "weighted_compression_dimension": 36
+    },
+    {
+      "core_pairs": 5,
+      "core_syndrome": 20,
+      "cut": "row",
+      "modules": [
+        {
+          "all_generator_compression_entries_checked": 150528,
+          "ambient_dimension": 384,
+          "annihilated_span_dimension": 220,
+          "compression_dimension": 112,
+          "constructed_left_covectors_sha256": "047200a6186f25b85c46663adc5164048e8f311c435c87f6674e98c181297891",
+          "jordan_copies": 0,
+          "multiplicity": 4
+        },
+        {
+          "all_generator_compression_entries_checked": 397488,
+          "ambient_dimension": 768,
+          "annihilated_span_dimension": 487,
+          "compression_dimension": 182,
+          "constructed_left_covectors_sha256": "888527a40b6472264a60f02cbf2e63bd7579476fa54de7969024954d0750acca",
+          "jordan_copies": 1,
+          "multiplicity": 4
+        },
+        {
+          "all_generator_compression_entries_checked": 1002252,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 968,
+          "compression_dimension": 289,
+          "constructed_left_covectors_sha256": "e473f42d5f2a5a4e7defbb99b3667bbf8068978bed19f7108ece156359e41851",
+          "jordan_copies": 2,
+          "multiplicity": 1
+        }
+      ],
+      "weighted_compression_dimension": 1465
+    },
+    {
+      "core_pairs": 5,
+      "core_syndrome": 20,
+      "cut": "column",
+      "modules": [
+        {
+          "all_generator_compression_entries_checked": 0,
+          "compression_dimension": 0,
+          "jordan_copies": 0,
+          "multiplicity": 4
+        },
+        {
+          "all_generator_compression_entries_checked": 192,
+          "ambient_dimension": 768,
+          "annihilated_span_dimension": 36,
+          "compression_dimension": 4,
+          "constructed_left_covectors_sha256": "b096679a15828cac6c451c79e3be5de87e731291412de694a8a722c60dddf1de",
+          "jordan_copies": 1,
+          "multiplicity": 4
+        },
+        {
+          "all_generator_compression_entries_checked": 5808,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 200,
+          "compression_dimension": 22,
+          "constructed_left_covectors_sha256": "482df589d7688436d95569dc1468447eea7208f5a59531f7ccdb8cb3462e5b12",
+          "jordan_copies": 2,
+          "multiplicity": 1
+        }
+      ],
+      "weighted_compression_dimension": 38
+    },
+    {
+      "core_pairs": 5,
+      "core_syndrome": 24,
+      "cut": "row",
+      "modules": [
+        {
+          "all_generator_compression_entries_checked": 262848,
+          "ambient_dimension": 384,
+          "annihilated_span_dimension": 224,
+          "compression_dimension": 148,
+          "constructed_left_covectors_sha256": "0e5fecf2838a14e04ecdb5024b6708048d22aa438a7a3f0c5af8e23716929ecb",
+          "jordan_copies": 0,
+          "multiplicity": 4
+        },
+        {
+          "all_generator_compression_entries_checked": 499392,
+          "ambient_dimension": 768,
+          "annihilated_span_dimension": 443,
+          "compression_dimension": 204,
+          "constructed_left_covectors_sha256": "ccf105b735b964bdbf61e97dceba9cc6cbfca7a0e1064b87e22bbbc15b4e4d36",
+          "jordan_copies": 1,
+          "multiplicity": 4
+        },
+        {
+          "all_generator_compression_entries_checked": 1338672,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 926,
+          "compression_dimension": 334,
+          "constructed_left_covectors_sha256": "09bb851d85ff11f18144edbfff8ddc1a5eb7d5b10663e45f4d0e73d7ea6c1ea5",
+          "jordan_copies": 2,
+          "multiplicity": 1
+        }
+      ],
+      "weighted_compression_dimension": 1742
+    },
+    {
+      "core_pairs": 5,
+      "core_syndrome": 24,
+      "cut": "column",
+      "modules": [
+        {
+          "all_generator_compression_entries_checked": 0,
+          "compression_dimension": 0,
+          "jordan_copies": 0,
+          "multiplicity": 4
+        },
+        {
+          "all_generator_compression_entries_checked": 0,
+          "compression_dimension": 0,
+          "jordan_copies": 1,
+          "multiplicity": 4
+        },
+        {
+          "all_generator_compression_entries_checked": 768,
+          "ambient_dimension": 1536,
+          "annihilated_span_dimension": 76,
+          "compression_dimension": 8,
+          "constructed_left_covectors_sha256": "667067d6d54303869efa19145aa2b8c855a76d568f2998367f72faa965077bbd",
+          "jordan_copies": 2,
+          "multiplicity": 1
+        }
+      ],
+      "weighted_compression_dimension": 8
+    }
+  ],
+  "rank_product": 124562250,
+  "scope": "All characteristic-two fields, every tensor power, arbitrary coefficient-space recombinations.",
+  "source_sha256": {
+    "assemble_two_even_site_cores.py": "3b0ad33919e8d0c316203c1737d9762f1d10fb515f86a15372df375d667d4d00",
+    "check_common_character_compressions.py": "ab56e9b53ce0710c7bd6f390547e503ac47c7534fe7091e4ad1b8cd014bb2d46",
+    "check_noncommutative_crossing_character_compression.py": "3767998bfb8acd571c47ab641d00aff8a6a661ce3278cda7c3233b19898661d2",
+    "check_two_even_site_jordan_compressions.py": "3f1c9d326ed0b42c0d9f188c53489c81757225393806d7d61da752c1a57b4fed",
+    "explore_symplectic_boundary_codes.py": "33995930c5d2181dc13a9ac9da661be201c2f1cfbd6be07b1411c08f3f5d8720",
+    "find_tagged_common_character_compressions.py": "3f34d60ff8f52cabdc19ebffd95fe56bda3ddc09ab60978828f3bbd17097efa8"
+  },
+  "status": "pass",
+  "two_anchor_plus_weight_four_compressions": [
+    72483,
+    990
+  ],
+  "weight_four_only_compressions": [
+    50785,
+    560
+  ],
+  "weight_four_row_triangular_certificate": {
+    "algebra_sha256": "9514894202c764e2ffe919c1097fecf0c2277d6a19b0a03289b87d14235f8005",
+    "basis_sha256": "46231666bc0466fab98b32fe3567df4b46ff7981cb890a7a72a0d2059955f900",
+    "core_character_dimension": 32,
+    "core_syndrome": 15,
+    "independent_algebra_reconstruction": {
+      "algebra_dimension": 22,
+      "all_basis_products_reconstructed": 484,
+      "character_multiplicities_by_depth": [
+        [
+          384,
+          192
+        ],
+        [
+          209,
+          112
+        ],
+        [
+          30,
+          16
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "cut": "row",
+      "direct_change_of_basis_column_identities": 3456,
+      "module_filtration_dimensions": [
+        576,
+        321,
+        46,
+        0
+      ],
+      "quotient_is_split_field_product_of_size": 2,
+      "radical_power_dimensions": [
+        20,
+        9,
+        0
+      ]
+    },
+    "triangular_matrix_entries_checked": 3168
+  }
+}

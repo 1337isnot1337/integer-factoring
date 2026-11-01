@@ -1,0 +1,616 @@
+{
+  "status": "Exact Ward identities, power sandwiches, homogeneous image dimensions, and nested collapse all passed.",
+  "scope": "All-size characteristic-two crossing construction and factor theorem; no rank-sum improvement claimed.",
+  "local_Ward": {
+    "exact_generic_polynomial_equations": 512,
+    "identity": "[c_i,M]=(q+r) A_i M",
+    "Clifford_relations_checked": true
+  },
+  "power_sandwich_controls": [
+    {
+      "pairs": 2,
+      "form_weights": [
+        3
+      ],
+      "external_coefficients_tested": 32,
+      "polynomial_matrix_entries_checked": 8192,
+      "nonzero_sandwich_entries": 308,
+      "guaranteed_q_plus_r_power": 1
+    },
+    {
+      "pairs": 2,
+      "form_weights": [
+        1,
+        2
+      ],
+      "external_coefficients_tested": 32,
+      "polynomial_matrix_entries_checked": 8192,
+      "nonzero_sandwich_entries": 0,
+      "guaranteed_q_plus_r_power": 2
+    },
+    {
+      "pairs": 3,
+      "form_weights": [
+        3,
+        6
+      ],
+      "external_coefficients_tested": 16,
+      "polynomial_matrix_entries_checked": 65536,
+      "nonzero_sandwich_entries": 256,
+      "guaranteed_q_plus_r_power": 2
+    }
+  ],
+  "weighted_form_dimension_controls": [
+    {
+      "pairs": 2,
+      "form_count": 1,
+      "column_types": [
+        1,
+        1
+      ],
+      "syndromes_checked": 4,
+      "full_homogeneous_dimensions": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "J_fixed_dimensions": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "J_half_dimensions": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "pairs": 4,
+      "form_count": 1,
+      "column_types": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "syndromes_checked": 16,
+      "full_homogeneous_dimensions": [
+        0,
+        0,
+        1,
+        0,
+        26,
+        0,
+        1,
+        0,
+        0
+      ],
+      "J_fixed_dimensions": [
+        0,
+        0,
+        1,
+        0,
+        2,
+        0,
+        1,
+        0,
+        0
+      ],
+      "J_half_dimensions": [
+        0,
+        0,
+        0,
+        0,
+        12,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "pairs": 4,
+      "form_count": 2,
+      "column_types": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "syndromes_checked": 16,
+      "full_homogeneous_dimensions": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "J_fixed_dimensions": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "J_half_dimensions": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "pairs": 5,
+      "form_count": 2,
+      "column_types": [
+        1,
+        1,
+        2,
+        3,
+        3
+      ],
+      "syndromes_checked": 32,
+      "full_homogeneous_dimensions": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "J_fixed_dimensions": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "J_half_dimensions": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "pairs": 6,
+      "form_count": 2,
+      "column_types": [
+        1,
+        1,
+        2,
+        2,
+        3,
+        3
+      ],
+      "syndromes_checked": 64,
+      "full_homogeneous_dimensions": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        14,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "J_fixed_dimensions": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "J_half_dimensions": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        6,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "pairs": 6,
+      "form_count": 3,
+      "column_types": [
+        1,
+        1,
+        2,
+        2,
+        4,
+        4
+      ],
+      "syndromes_checked": 64,
+      "full_homogeneous_dimensions": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "J_fixed_dimensions": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "J_half_dimensions": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "pairs": 7,
+      "form_count": 2,
+      "column_types": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        3,
+        3
+      ],
+      "syndromes_checked": 128,
+      "full_homogeneous_dimensions": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        6,
+        0,
+        68,
+        0,
+        6,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "J_fixed_dimensions": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "J_half_dimensions": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        34,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "pairs": 8,
+      "form_count": 2,
+      "column_types": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3
+      ],
+      "syndromes_checked": 256,
+      "full_homogeneous_dimensions": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        36,
+        0,
+        312,
+        0,
+        36,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "J_fixed_dimensions": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "J_half_dimensions": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        18,
+        0,
+        156,
+        0,
+        18,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "pairs": 7,
+      "form_count": 3,
+      "column_types": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "syndromes_checked": 128,
+      "full_homogeneous_dimensions": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "J_fixed_dimensions": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "J_half_dimensions": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "pairs": 6,
+      "form_count": 2,
+      "column_types": [
+        0,
+        1,
+        1,
+        2,
+        2,
+        3
+      ],
+      "syndromes_checked": 64,
+      "full_homogeneous_dimensions": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        4,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "J_fixed_dimensions": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "J_half_dimensions": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        2,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "nested_scalar_collapse": {
+    "vector_controls": [
+      {
+        "inner_pairs": 2,
+        "inner_grade": 2,
+        "basis_vectors_checked": 1
+      },
+      {
+        "inner_pairs": 3,
+        "inner_grade": 3,
+        "basis_vectors_checked": 6
+      },
+      {
+        "inner_pairs": 4,
+        "inner_grade": 4,
+        "basis_vectors_checked": 8
+      },
+      {
+        "inner_pairs": 5,
+        "inner_grade": 3,
+        "basis_vectors_checked": 8
+      }
+    ],
+    "two_pair_scalar_is_q_plus_r_squared": true
+  },
+  "source_sha256": "40a7c3440f451a13247d1732392ca6905f610c2a016abf9a0021921e0fcc35c3"
+}

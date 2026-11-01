@@ -1,0 +1,191 @@
+{
+  "status": "Exact integer gates, convolution units, and orbit-support audits passed.",
+  "scope": "Universal d<=5 and non-elementary-group orbit d<=8 gates over every field; stronger constant-augmentation 2-group gate in characteristic two.",
+  "integer_certificates": {
+    "sqrt_two_upper": [
+      99,
+      70
+    ],
+    "universal_d2_through_d5": [
+      {
+        "labels": 2,
+        "lower_power": "3488889569322095618800250852305904679826716343134391016285174746322068045824",
+        "target_upper_power": "401734511064747568885490523085290650630550748445698208825344",
+        "strictly_excluded": true
+      },
+      {
+        "labels": 3,
+        "lower_power": "2293498615990071511610820895302086940796564989168281123737588839386922876088484808070018553110125686554624",
+        "target_upper_power": "29512665430652752148753480226197736314359272517043832886063884637676943433478020332709411004889",
+        "strictly_excluded": true
+      },
+      {
+        "labels": 4,
+        "lower_power": "29552044145476812446587076597904553816713293230516469760000000000000000000000000000000000000000000000000000000000000000000000",
+        "target_upper_power": "161390617380431786853494948250188242145606612051826469551916209783790476376052574664352834580008614464743948248296718336",
+        "strictly_excluded": true
+      },
+      {
+        "labels": 5,
+        "lower_power": "5740983686309928151603252971663581289400722466869310711137727054149897095796090293339016365739973382824595542625046778094631373228291915776",
+        "target_upper_power": "2489206111144456682857625621512049696236100867488466853240446645915879533614153376473577929250285446782786635822048992849886417388916015625",
+        "strictly_excluded": true
+      }
+    ],
+    "non_elementary_orbit_d6_through_d8": [
+      {
+        "labels": 6,
+        "rank_sum_strictly_above": 13,
+        "target_strictly_below": 13,
+        "first_radical_lower": [
+          8,
+          1
+        ],
+        "second_radical_lower": [
+          5,
+          1
+        ],
+        "lower_integer_power": "946312684517285425602088507550312255344648571553386120579525970592441865195449",
+        "target_upper_integer_power": "108886437250011817682781711193009636756190618412159145257178661061582856912896"
+      },
+      {
+        "labels": 7,
+        "rank_sum_strictly_above": 16,
+        "target_strictly_below": 16,
+        "first_radical_lower": [
+          48,
+          5
+        ],
+        "second_radical_lower": [
+          32,
+          5
+        ],
+        "lower_integer_power": "1942668892225729070919461906823518906642406839052139521251812409738904285205208498176",
+        "target_upper_integer_power": "462068072803536855906378252728602401551029028414946485847699333055955922805275437143"
+      },
+      {
+        "labels": 8,
+        "rank_sum_strictly_above": 19,
+        "target_strictly_below": 19,
+        "first_radical_lower": [
+          56,
+          5
+        ],
+        "second_radical_lower": [
+          39,
+          5
+        ],
+        "lower_integer_power": "325650737981196211817040643482760123711113829069928887581850461693742906986845870061444601",
+        "target_upper_integer_power": "254629497041810760783555711051172270131433549208242031329517556169297662470417088272924672"
+      }
+    ],
+    "order_eight": {
+      "rank_sum_strictly_above": 19,
+      "target_strictly_below": 19,
+      "nineteen_power_seventy": "325650737981196211817040643482760123711113829069928887581850461693742906986845870061444601",
+      "eight_power_ninety_nine": "254629497041810760783555711051172270131433549208242031329517556169297662470417088272924672"
+    }
+  },
+  "rank_one_orbit_and_unit_audits": [
+    {
+      "group": "D8",
+      "order": 8,
+      "abelian": false,
+      "elementary_abelian": false,
+      "rank_one_support_candidates": 0,
+      "rank_one_orbit_candidates": 0,
+      "augmentation_one_convolution_units_checked": 128
+    },
+    {
+      "group": "Q8",
+      "order": 8,
+      "abelian": false,
+      "elementary_abelian": false,
+      "rank_one_support_candidates": 0,
+      "rank_one_orbit_candidates": 0,
+      "augmentation_one_convolution_units_checked": 128
+    },
+    {
+      "group": "C4_times_C2",
+      "order": 8,
+      "abelian": true,
+      "elementary_abelian": false,
+      "rank_one_support_candidates": 8,
+      "rank_one_orbit_candidates": 0,
+      "augmentation_one_convolution_units_checked": 128
+    },
+    {
+      "group": "C8",
+      "order": 8,
+      "abelian": true,
+      "elementary_abelian": false,
+      "rank_one_support_candidates": 8,
+      "rank_one_orbit_candidates": 0,
+      "augmentation_one_convolution_units_checked": 128
+    },
+    {
+      "group": "C2_cubed",
+      "order": 8,
+      "abelian": true,
+      "elementary_abelian": true,
+      "rank_one_support_candidates": 8,
+      "rank_one_orbit_candidates": 8,
+      "augmentation_one_convolution_units_checked": 128
+    },
+    {
+      "group": "S3",
+      "order": 6,
+      "abelian": false,
+      "elementary_abelian": false,
+      "rank_one_support_candidates": 0,
+      "rank_one_orbit_candidates": 0,
+      "augmentation_one_convolution_units_checked": 0
+    },
+    {
+      "group": "D10",
+      "order": 10,
+      "abelian": false,
+      "elementary_abelian": false,
+      "rank_one_support_candidates": 0,
+      "rank_one_orbit_candidates": 0,
+      "augmentation_one_convolution_units_checked": 0
+    },
+    {
+      "group": "C3",
+      "order": 3,
+      "abelian": true,
+      "elementary_abelian": false,
+      "rank_one_support_candidates": 3,
+      "rank_one_orbit_candidates": 0,
+      "augmentation_one_convolution_units_checked": 0
+    },
+    {
+      "group": "C9",
+      "order": 9,
+      "abelian": true,
+      "elementary_abelian": false,
+      "rank_one_support_candidates": 9,
+      "rank_one_orbit_candidates": 0,
+      "augmentation_one_convolution_units_checked": 0
+    }
+  ],
+  "arbitrary_control_audits": [
+    {
+      "group": "D8",
+      "arbitrary_control_maps": 16,
+      "weight_assignments": 3,
+      "unit_recombinations_checked": 2432,
+      "minimum_column_rank_seen": 5,
+      "all_unit_row_ranks": 64
+    },
+    {
+      "group": "Q8",
+      "arbitrary_control_maps": 16,
+      "weight_assignments": 3,
+      "unit_recombinations_checked": 2432,
+      "minimum_column_rank_seen": 4,
+      "all_unit_row_ranks": 64
+    }
+  ],
+  "source_sha256": "4ba1c3e163e918511e43ebddad3d279eb0882d1f48b9c016006e5f8827d55852"
+}

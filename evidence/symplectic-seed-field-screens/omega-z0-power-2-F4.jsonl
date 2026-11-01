@@ -1,0 +1,7 @@
+{"event":"start","labels":676,"dimension":7,"field_size":4,"integer_cost_gate":10055,"all_ranks":false,"code_start":1,"code_count":16383}
+{"event":"eligible","index":1092,"code":1092,"row_rank":124,"column_rank":190966,"product":23679784,"eligible":true}
+{"event":"eligible","index":4369,"code":4369,"row_rank":125,"column_rank":449152,"product":56144000,"eligible":true}
+{"event":"eligible","index":5461,"code":5461,"row_rank":1,"column_rank":456976,"product":456976,"eligible":true}
+{"event":"eligible","index":6553,"code":6553,"row_rank":125,"column_rank":456976,"product":57122000,"eligible":true}
+{"event":"eligible","index":7645,"code":7645,"row_rank":125,"column_rank":456976,"product":57122000,"eligible":true}
+{"event":"complete","projective_tested":5461,"eligible":5,"milliseconds":6}

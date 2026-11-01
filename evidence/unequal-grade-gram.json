@@ -1,0 +1,269 @@
+{
+  "checker_sha256": "7cda2d075d7d66d629da7b901c718e5a9ae220f21b151fb3ffb03e4475081f3d",
+  "complete_source_cases": [
+    {
+      "complete_entry_polynomials_in_both_cuts": 256,
+      "exact_nonzero_profile_in_modulus_units": [
+        [
+          -2,
+          4,
+          12
+        ],
+        [
+          -1,
+          1,
+          1
+        ],
+        [
+          0,
+          11,
+          11
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          12,
+          4
+        ]
+      ],
+      "independent_native_Pfaffian_comparisons": 32,
+      "mode_cutoff": 16,
+      "operator_energy": 16,
+      "operator_length": 2,
+      "selected_labels": 4,
+      "state_energy": 32,
+      "state_length": 4
+    },
+    {
+      "complete_entry_polynomials_in_both_cuts": 256,
+      "exact_nonzero_profile_in_modulus_units": [
+        [
+          -2,
+          4,
+          12
+        ],
+        [
+          -1,
+          1,
+          1
+        ],
+        [
+          0,
+          11,
+          11
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          12,
+          4
+        ]
+      ],
+      "independent_native_Pfaffian_comparisons": 32,
+      "mode_cutoff": 16,
+      "operator_energy": 32,
+      "operator_length": 4,
+      "selected_labels": 4,
+      "state_energy": 16,
+      "state_length": 2
+    },
+    {
+      "complete_entry_polynomials_in_both_cuts": 1296,
+      "exact_nonzero_profile_in_modulus_units": [
+        [
+          -3,
+          1,
+          4
+        ],
+        [
+          -2,
+          7,
+          21
+        ],
+        [
+          -1,
+          13,
+          18
+        ],
+        [
+          0,
+          23,
+          23
+        ],
+        [
+          1,
+          18,
+          13
+        ],
+        [
+          2,
+          21,
+          7
+        ],
+        [
+          3,
+          4,
+          1
+        ]
+      ],
+      "independent_native_Pfaffian_comparisons": 33,
+      "mode_cutoff": 16,
+      "operator_energy": 23,
+      "operator_length": 3,
+      "selected_labels": 6,
+      "state_energy": 32,
+      "state_length": 4
+    },
+    {
+      "complete_entry_polynomials_in_both_cuts": 256,
+      "exact_nonzero_profile_in_modulus_units": [
+        [
+          -2,
+          1,
+          4
+        ],
+        [
+          -1,
+          4,
+          4
+        ],
+        [
+          0,
+          14,
+          14
+        ],
+        [
+          1,
+          4,
+          4
+        ],
+        [
+          2,
+          4,
+          1
+        ]
+      ],
+      "independent_native_Pfaffian_comparisons": 32,
+      "mode_cutoff": 16,
+      "operator_energy": 16,
+      "operator_length": 2,
+      "selected_labels": 4,
+      "state_energy": 23,
+      "state_length": 3
+    },
+    {
+      "complete_entry_polynomials_in_both_cuts": 256,
+      "exact_nonzero_profile_in_modulus_units": [
+        [
+          -2,
+          1,
+          4
+        ],
+        [
+          -1,
+          4,
+          4
+        ],
+        [
+          0,
+          14,
+          14
+        ],
+        [
+          1,
+          4,
+          4
+        ],
+        [
+          2,
+          4,
+          1
+        ]
+      ],
+      "independent_native_Pfaffian_comparisons": 32,
+      "mode_cutoff": 16,
+      "operator_energy": 23,
+      "operator_length": 3,
+      "selected_labels": 4,
+      "state_energy": 16,
+      "state_length": 2
+    },
+    {
+      "complete_entry_polynomials_in_both_cuts": 81,
+      "exact_nonzero_profile_in_modulus_units": [
+        [
+          -2,
+          1,
+          9
+        ],
+        [
+          -1,
+          2,
+          4
+        ],
+        [
+          0,
+          4,
+          5
+        ],
+        [
+          1,
+          6,
+          2
+        ]
+      ],
+      "independent_native_Pfaffian_comparisons": 41,
+      "mode_cutoff": 16,
+      "operator_energy": 12,
+      "operator_length": 2,
+      "selected_labels": 3,
+      "state_energy": 20,
+      "state_length": 2
+    }
+  ],
+  "module_sha256": "89391c22106ac10ee3d8fc90ee3480ef4d8143b5c790b0ff1a9496d3444ea68d",
+  "noncentral_block_rank_checks": {
+    "dense_Johnson_comparisons": 240,
+    "noncentral_weight_slices": 205
+  },
+  "scope": "all-grade complete folded-Gram channels; no improved factoring exponent",
+  "specializations_and_symmetries": {
+    "equal_grade_profile_comparisons": [
+      [
+        16,
+        4,
+        32
+      ],
+      [
+        32,
+        3,
+        47
+      ],
+      [
+        32,
+        8,
+        128
+      ],
+      [
+        64,
+        16,
+        512
+      ]
+    ],
+    "operator_state_exchange_checks": 4,
+    "state_energy_reflection_checks": 4
+  },
+  "status": "pass",
+  "weighted_multiplicity_checks": {
+    "all_weighted_multiplicities": 1994,
+    "odd_exterior_grades": 903
+  }
+}

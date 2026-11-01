@@ -1,0 +1,32 @@
+{
+  "additional_central_piece": {
+    "column_rank": 14,
+    "dual_family": "original filtered source duals reduced in the parameter quotient",
+    "labels": 5,
+    "row_rank": 15,
+    "weight": 16
+  },
+  "checks": {
+    "endpoint_transpose_entries": 2420,
+    "full_angle_polynomials": 1210,
+    "operator_parameter_ideal_entries": 21348,
+    "source_boolean_zeta_expansions": 10
+  },
+  "normalized_central_pieces": [
+    {
+      "column_rank": 1,
+      "labels": 1,
+      "row_rank": 1,
+      "weight": 6
+    },
+    {
+      "column_rank": 2,
+      "labels": 2,
+      "row_rank": 2,
+      "weight": 8
+    }
+  ],
+  "scope": "finite exact quotient, angle-symbol, transpose, and complete-piece checks; no improved exponent",
+  "source_revision": "16a5ce41304fcdaea4e0be7c132e1c361dc26da5",
+  "status": "pass"
+}

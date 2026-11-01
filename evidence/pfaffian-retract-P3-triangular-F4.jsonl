@@ -1,0 +1,6 @@
+{"event":"start","labels":9,"dimension":8,"field_size":4,"blocks":1,"integer_cost_gate":23,"product_cap":528,"code_start":1,"code_count":65535}
+{"event":"eligible","code":21,"row_rank":1,"column_rank":25,"product":25}
+{"event":"eligible","code":4161,"row_rank":25,"column_rank":1,"product":25}
+{"event":"progress","projective_tested":10000,"eligible":2,"code":20922}
+{"event":"progress","projective_tested":20000,"eligible":2,"code":30922}
+{"event":"complete","projective_tested":21845,"eligible":2,"milliseconds":1027}

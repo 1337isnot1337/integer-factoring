@@ -1,0 +1,155 @@
+{
+  "status": "All block identities, both-cut comparisons, and exact target certificates passed.",
+  "scope": "Every finite abelian group and every coefficient field; numerical audits over F2 and F3.",
+  "group_audits": [
+    {
+      "cyclic_factor_orders": [
+        2
+      ],
+      "order": 2,
+      "doubling_image_size": 1,
+      "two_torsion_size": 2,
+      "kernels_checked": 16,
+      "dense_both_cut_checks": 4,
+      "minimum_column_rank_seen": 1
+    },
+    {
+      "cyclic_factor_orders": [
+        3
+      ],
+      "order": 3,
+      "doubling_image_size": 3,
+      "two_torsion_size": 1,
+      "kernels_checked": 16,
+      "dense_both_cut_checks": 4,
+      "minimum_column_rank_seen": 3
+    },
+    {
+      "cyclic_factor_orders": [
+        4
+      ],
+      "order": 4,
+      "doubling_image_size": 2,
+      "two_torsion_size": 2,
+      "kernels_checked": 16,
+      "dense_both_cut_checks": 4,
+      "minimum_column_rank_seen": 4
+    },
+    {
+      "cyclic_factor_orders": [
+        6
+      ],
+      "order": 6,
+      "doubling_image_size": 3,
+      "two_torsion_size": 2,
+      "kernels_checked": 16,
+      "dense_both_cut_checks": 4,
+      "minimum_column_rank_seen": 6
+    },
+    {
+      "cyclic_factor_orders": [
+        8
+      ],
+      "order": 8,
+      "doubling_image_size": 4,
+      "two_torsion_size": 2,
+      "kernels_checked": 16,
+      "dense_both_cut_checks": 4,
+      "minimum_column_rank_seen": 8
+    },
+    {
+      "cyclic_factor_orders": [
+        9
+      ],
+      "order": 9,
+      "doubling_image_size": 9,
+      "two_torsion_size": 1,
+      "kernels_checked": 16,
+      "dense_both_cut_checks": 4,
+      "minimum_column_rank_seen": 9
+    },
+    {
+      "cyclic_factor_orders": [
+        12
+      ],
+      "order": 12,
+      "doubling_image_size": 6,
+      "two_torsion_size": 2,
+      "kernels_checked": 16,
+      "dense_both_cut_checks": 4,
+      "minimum_column_rank_seen": 12
+    },
+    {
+      "cyclic_factor_orders": [
+        16
+      ],
+      "order": 16,
+      "doubling_image_size": 8,
+      "two_torsion_size": 2,
+      "kernels_checked": 16,
+      "dense_both_cut_checks": 4,
+      "minimum_column_rank_seen": 16
+    },
+    {
+      "cyclic_factor_orders": [
+        2,
+        2
+      ],
+      "order": 4,
+      "doubling_image_size": 1,
+      "two_torsion_size": 4,
+      "kernels_checked": 16,
+      "dense_both_cut_checks": 4,
+      "minimum_column_rank_seen": 4
+    },
+    {
+      "cyclic_factor_orders": [
+        2,
+        4
+      ],
+      "order": 8,
+      "doubling_image_size": 2,
+      "two_torsion_size": 4,
+      "kernels_checked": 16,
+      "dense_both_cut_checks": 4,
+      "minimum_column_rank_seen": 8
+    },
+    {
+      "cyclic_factor_orders": [
+        3,
+        3
+      ],
+      "order": 9,
+      "doubling_image_size": 9,
+      "two_torsion_size": 1,
+      "kernels_checked": 16,
+      "dense_both_cut_checks": 4,
+      "minimum_column_rank_seen": 9
+    },
+    {
+      "cyclic_factor_orders": [
+        2,
+        2,
+        3
+      ],
+      "order": 12,
+      "doubling_image_size": 3,
+      "two_torsion_size": 4,
+      "kernels_checked": 16,
+      "dense_both_cut_checks": 4,
+      "minimum_column_rank_seen": 12
+    }
+  ],
+  "target_certificate": {
+    "sqrt_two_upper": [
+      17,
+      12
+    ],
+    "weighted_amgm_constant_twelfth_power": [
+      387420489,
+      312500000
+    ],
+    "consequence": "Every abelian group with at most two elements killed by doubling misses the strict finite-seed target."
+  },
+  "source_sha256": "bd6083c194a933c76ee462deed417606467ba570fbba17ea9f452cce450c3e1e"
+}

@@ -1,0 +1,5 @@
+{"event":"start","labels":10,"dimension":4,"field_size":2,"blocks":11,"integer_cost_gate":26,"product_cap":675,"code_start":1,"code_count":15}
+{"event":"eligible","code":21,"row_rank":1,"column_rank":100,"product":100}
+{"event":"eligible","code":81,"row_rank":100,"column_rank":1,"product":100}
+{"event":"eligible","code":85,"row_rank":26,"column_rank":12,"product":312}
+{"event":"complete","projective_tested":15,"eligible":3,"milliseconds":0}
