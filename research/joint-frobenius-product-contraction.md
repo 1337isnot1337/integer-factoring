@@ -317,3 +317,45 @@ circuit is not an explicit product. Expanding one can erase the gain.
 Continue this route only if a concrete representation preserves those
 correlations at a charged cost. The present result bypasses repeated-star
 closure for the stated network class; it supplies no new factoring bound.
+
+### A direct bit-decoding substitution loses the parameter advantage
+
+One tempting bridge represents an integer digit by a field element and
+recovers its individual binary digits with a dual basis. A nonzero bit
+functional on `F_(2^w)` has the exact form
+
+```math
+\beta(U)=\mathrm{Tr}(aU)
+       =\sum_{e=0}^{w-1}a^{2^e}U^{2^e},\qquad a\ne0.
+```
+
+For `w>=2`, every coefficient is nonzero. If one explicit factor retains
+this trace expression, its incidence graph has parallel edges at exponents
+zero and one. Their difference forces `t_max=1`. A Frobenius change of
+variable cannot remove this difference. The resulting relative dimension
+is `D=w`, not one.
+
+If `v` digit variables carry `Theta(vw)` free bits, the theorem then gives
+only `(S+2)^O(vw)` operations. For a number of free bits proportional to
+`n`, this bound supplies no subexponential factoring improvement. Introducing
+each bit as a separate variable also leaves a linear number of variables.
+Thus neither naive encoding establishes the missing arithmetic transfer.
+This is a limitation of these explicit representations and this cost bound,
+not an impossibility theorem for every representation or algorithm.
+
+Do not expand this route by merely increasing field widths or enumerating
+more bit-decoded examples. A further attempt needs an identity that handles
+the arithmetic phases without this loss, or a new bound that exploits the
+trace factors jointly without charging `D=w`.
+
+## Background and attribution
+
+Finite-field coefficient selection and trace operators have a substantial
+prior literature. In particular, Beukers and Vlasenko's
+[*Dwork crystals I*, Appendix A](https://arxiv.org/html/1903.11155v4)
+relates a Cartier-operator trace to point counts on a torus complement.
+This note does not claim to introduce the general trace-operator principle
+or finite-field power-sum orthogonality. Its elementary argument specifies
+the synchronized product input, cyclic-carry representation, mixed domains,
+and weighted box-network reduction used here. A full novelty comparison
+with the broader literature remains separate from the correctness checks.
