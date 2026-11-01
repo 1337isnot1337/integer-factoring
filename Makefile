@@ -49,8 +49,11 @@ verify-divisor-moments:
 verify-sparse-divisor-residues:
 	python3 tools/check_sparse_divisor_residues.py
 
-.PHONY: verify-odd-character-residues
-verify-odd-character-residues:
+.PHONY: verify-odd-character-residues verify-cyclotomic-decoder
+verify-cyclotomic-decoder:
+	python3 tools/check_cyclotomic_character_decoder.py
+
+verify-odd-character-residues: verify-cyclotomic-decoder
 	python3 tools/check_odd_character_residues.py
 
 verify-neutral-duals:
