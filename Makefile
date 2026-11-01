@@ -2178,3 +2178,9 @@ verify-coherent-moving-pair:
 .PHONY: verify-cube-f4-generic-frames
 verify-cube-f4-generic-frames:
 	python3 tools/check_cube_f4_bivariate_smith.py --output /tmp/integer-factoring-cube-f4-generic-frames.json
+
+
+.PHONY: verify-cube-flat-low-order
+verify-cube-flat-low-order:
+	python3 tools/cube_flat_seeds.py
+	python3 tools/check_cube_flat_low_order_floors.py

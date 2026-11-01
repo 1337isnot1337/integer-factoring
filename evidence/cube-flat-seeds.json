@@ -1,0 +1,23 @@
+{
+  "generic_smith_profiles_checked_by_this_module": false,
+  "negative_validation_controls": 2,
+  "odd_edge_face_seed": {
+    "degree": 6,
+    "endpoint_entries_checked": 256,
+    "monomials": 378,
+    "nonzero_coefficients": 163,
+    "nonzero_even_coefficients": 99,
+    "nonzero_odd_coefficients": 64,
+    "polynomial_sha256": "6324fbcc983f2dcf3b31e00099067c048ba6990804d56df0792339bf6c69213b"
+  },
+  "odd_seed_face_entries_checked": 768,
+  "rank_two_seed": {
+    "degree": 6,
+    "endpoint_entries_checked": 256,
+    "monomials": 176,
+    "nonzero_coefficients": 70,
+    "nonzero_even_coefficients": 70,
+    "nonzero_odd_coefficients": 0,
+    "polynomial_sha256": "68b3eea0327bc38772ed1ddfe8aec7144f2581cc71835a3d40b65cd808036708"
+  }
+}

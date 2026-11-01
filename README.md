@@ -39,9 +39,12 @@ below the exponential scales relevant to the present score.
 
 The [small-word Fourier constructor](research/small-word-fourier-constructor.md)
 uses `O(log n)`-bit arithmetic words and `O(n/log n)` gates, with total
-label mass `O(n)`. Its CRT version and carry-column grouping give
-`P^2 lambda <= (24+o(1))n` in the stated grouping regime, with polynomial-time
-`O(n/P)`-space table queries. These are ordinary-proof improvements to the
+label mass `O(n)`. The [routed rectangular refinement](research/routed-rectangular-fourier-constructor.md)
+gives `P^2 lambda <= (12+4P^2/T+o(1))n` throughout `P<=sqrt(T)`, with
+polynomial-time `O(n/P)`-space table queries. The constant is twelve for
+every fixed range `P<=n^delta`, `delta<1/2`, and at most sixteen at maximum
+grouping. A fixed `epsilon` gives constant `16+epsilon` there with
+`O_epsilon(sqrt(n log n))` extra workspace. These are ordinary-proof improvements to the
 constructor and transfer; the logarithmic saving exponent remains **1/2**.
 Run `make verify-output-space-transfer verify-small-word-fourier`.
 <!-- arithmetic-space-checkpoint:end -->
@@ -1790,6 +1793,8 @@ The [flat-tensor parity theorem](research/cube-flat-parity-floor.md) proves the 
 The [moving-pair construction](research/coherent-moving-pair-core.md) constrains physical modes `0` and `M-1` while keeping the middle interval free. A uniform eight-mode core and explicit spectators give complete natural profiles beyond the fixed-support hypotheses. The exact core profiles are replayed through `M=512`; their numerical pressures remain slightly worse than the corresponding full Gaussian. Parameter-dependent maps and larger moving supports remain constructive directions.
 
 The [generic F4 frame engine](research/cube-f4-generic-frames.md) computes complete sixteen-by-sixteen flat-cube profiles with arbitrary physical parity. It returns exact polynomial row certificates and verifies their two unit determinants over `F4(y)`, so no finite-field point substitution is used. This supports nonbinary coefficient searches and rational-frame coefficient transfer; it does not supply a stronger factoring score.
+
+The [low-order flat-cube filters](research/cube-flat-low-order-floors.md) apply over every field and allow odd physical coefficients. After common coordinate factors are removed, either a face of rank at least two or an average second Smith order at most one third of the remaining degree forces `rho>29/50>1/sqrt(3)`. Exact integer entropy certificates prove both tests. Deterministic even and odd reference constructors retain all 512 endpoint and 768 rank-one face identities. Run `make verify-cube-flat-low-order`.
 
 ## Contribution and attribution
 

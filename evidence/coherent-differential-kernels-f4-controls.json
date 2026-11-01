@@ -1,0 +1,59 @@
+{
+  "status": "passed",
+  "cases": [
+    {
+      "cap": 8,
+      "coefficient": 1,
+      "q": 8
+    },
+    {
+      "cap": 8,
+      "coefficient": 2,
+      "q": 8
+    },
+    {
+      "cap": 8,
+      "coefficient": 3,
+      "q": 8
+    },
+    {
+      "cap": 12,
+      "coefficient": 1,
+      "q": 10
+    },
+    {
+      "cap": 12,
+      "coefficient": 2,
+      "q": 10
+    },
+    {
+      "cap": 12,
+      "coefficient": 3,
+      "q": 10
+    },
+    {
+      "cap": 16,
+      "coefficient": 1,
+      "q": 10
+    },
+    {
+      "cap": 16,
+      "coefficient": 2,
+      "q": 10
+    },
+    {
+      "cap": 16,
+      "coefficient": 3,
+      "q": 10
+    }
+  ],
+  "binary_basis_comparisons": 3,
+  "independent_dense_nullities": 9,
+  "literal_F4_annihilation_equations": 1344,
+  "source_sha256": {
+    "check_coherent_differential_kernels_f4.py": "e34dfa8078f3815a8dda7df23012b2c42f5f071d5d7409fde5d0adeb822a55f6",
+    "coherent_differential_kernels_f4.py": "972b1dc0b59543b624707bb20ba077650ba1338830ea00702a30f54be81c9d89",
+    "coherent_hot_compounds_f4.py": "1a8798f6b9a038413ce1f8d27d435c7a642e84affc9ffb4461298c64d2708d76",
+    "coherent_differential_kernels.py": "f922edeba9dad54f6a6fc4e8f2a7a974437b80b1e602d72268f1706f60e441c6"
+  }
+}
