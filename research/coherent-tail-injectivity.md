@@ -70,7 +70,7 @@ the physical degree above the largest degree seen by `alpha`.
 Consequently the extracted coefficient is exactly
 
 \[
-[b_A](\alpha\otimes I)\mathcal E(g)=\alpha_A\,g(Cf).
+[b_A]\bigl(\alpha\otimes I\bigr)\mathcal E(g)=\alpha_A\,g(Cf).
 \tag{3}
 \]
 

@@ -1,0 +1,26 @@
+{
+  "source": "38bb52ba47f5195d0c43b2b6406449e543bb2027",
+  "commands": [
+    [
+      "make",
+      "verify-fused-scalar-projection",
+      "verify-fused-primary-code"
+    ],
+    [
+      "make",
+      "verify"
+    ]
+  ],
+  "exit_codes": [
+    0,
+    0
+  ],
+  "local_author_verification": true,
+  "documentation_files": 895,
+  "unit_tests": 63,
+  "crossing_tests": 5,
+  "default_python_command_blocks": 335,
+  "log_sha256": "ec71d43fc507b50d606c7d90639f94959f02d263dd9d32083c56f5a841766e3a",
+  "source_scope": "Exact frozen source 38bb52b; later main merges and the Newton/zero-prefix checkpoints are outside this full-suite pin.",
+  "new_lean": false
+}

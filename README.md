@@ -944,6 +944,11 @@ code distance of three; tensorizing that distance bounds every nonzero
 piece's opposite-cut rank. This theorem retains the nonsemisimple blocks
 and leaves scalar projections and physical type restrictions open.
 Run `make verify-fused-primary-code`.
+Both coefficient-space targets and the full default suite passed at exact
+source `38bb52b`: 895 Markdown files, 63 unit tests and five crossing tests.
+The [local verification receipt](evidence/coefficient-research-verification.json)
+retains commands and the log fingerprint; later integrations are outside
+that whole-suite pin.
 The [energy-refined Newton ceiling](research/joint-graded-newton-ceiling.md)
 constrains the zero Smith profile under every rational energy gauge,
 including gauges singular at zero. An explicit block-scalar diagonal
