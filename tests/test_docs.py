@@ -43,6 +43,27 @@ class LinkCheckerTests(unittest.TestCase):
             MODULE.link_targets("research/INDEX.md", "[data](data%20table.md)", files), []
         )
 
+    def test_tex_coefficient_extractors_are_not_links(self):
+        markdown = "\\[\nv_2([T^j](P^*)^{\\pm1})\\ge j\n\\]\n[missing](absent.md)"
+        self.assertEqual(
+            MODULE.link_targets("research/INDEX.md", markdown, self.files),
+            ["research/INDEX.md:4: missing research/absent.md (from absent.md)"],
+        )
+
+    def test_dollar_math_preserves_links_after_the_closing_delimiter(self):
+        markdown = "$$\n[x](not-a-file)\n$$ [missing](absent.md)"
+        self.assertEqual(
+            MODULE.link_targets("research/INDEX.md", markdown, self.files),
+            ["research/INDEX.md:3: missing research/absent.md (from absent.md)"],
+        )
+
+    def test_code_and_math_fences_do_not_change_each_others_state(self):
+        markdown = "```tex\n\\[\n```\n\\[\n```\n[x](not-a-file)\n\\]\n[missing](absent.md)"
+        self.assertEqual(
+            MODULE.link_targets("research/INDEX.md", markdown, self.files),
+            ["research/INDEX.md:8: missing research/absent.md (from absent.md)"],
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

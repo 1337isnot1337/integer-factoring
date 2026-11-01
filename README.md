@@ -1728,6 +1728,17 @@ excludes polynomial-size common linear section spaces even at phase order
 three, where a direct square test is cheap. This is a restriction on that
 representation, not a factoring lower bound. Run `make verify-lambert-theta`.
 
+The [Tate-coordinate compiler](research/tate-coordinate-coefficients.md)
+expresses odd-index signed divisor coefficients as coefficients of
+`X_q(Delta(t))`. The inner algebraic coefficients are cheap, and one scalar
+trace of the original composition has a square-test formula. Extracting the
+remaining trace-zero coordinates at the original index is still open.
+Run `make verify-tate-coordinate`.
+At [phase five](research/q5-quadratic-coefficients.md), the remaining bit
+reduces to four binary quadratic-form parity counts. The explicit evaluator
+still costs `O(sqrt(N) poly(log N))`; it supplies no faster unrestricted bound.
+Run `make verify-q5-quadratic`.
+
 The [Bell-diagonal seed construction](research/bell-diagonal-crossings.md)
 gives exact two-cut transforms and excludes its complete symmetric
 coefficient spans at local dimensions two and four. Dimension eight
@@ -1810,6 +1821,10 @@ The [generic F4 frame engine](research/cube-f4-generic-frames.md) computes compl
 
 The [low-order flat-cube filters](research/cube-flat-low-order-floors.md) apply over every field and allow odd physical coefficients. After common coordinate factors are removed, either a face of rank at least two or an average second Smith order at most one third of the remaining degree forces `rho>29/50>1/sqrt(3)`. Exact integer entropy certificates prove both tests. Deterministic even and odd reference constructors retain all 512 endpoint and 768 rank-one face identities. Run `make verify-cube-flat-low-order`.
 
+The [complete flat-cube coefficient engine](research/cube-flat-coefficient-fibers.md) covers all 6,912 degree-six endpoint coordinates with no parity restriction, or 13,824 binary coordinates over F4. Exact generic row frames define complete affine fibers; independent polynomial products and full Smith certificates validate retained assignments. The included bounded search exposes source hashes, complete references, second-order feasibility tests, and replayable improvements. These tools and fixed-frame rigidity results leave the factoring score unchanged.
+
+The [constant local parity-gauge theorem](research/local-parity-gauge-test.md) recognizes when a polynomial binary tensor can be made even by constant local basis changes over a coefficient-field extension. It uses seventeen linear unknowns for a general eight-leg tensor and eight with the equality endpoint, constructs paired endpoint-preserving gauges, and returns exact contradiction certificates. Thus the existing even-tensor pressure floor also excludes every positive instance. A retained F4 reference lies outside this entire constant-gauge family, although its pressure does not improve the seed.
+
 ## Contribution and attribution
 
 Start with the [contributor quickstart](docs/START_HERE.md) and
@@ -1858,3 +1873,13 @@ The [complete modular Bézout compiler](research/balanced-bezout-modular.md) now
 A [deeply matched progression construction](research/matched-progression-bezout.md) computes complete primitive Bézout polynomials modulo a requested power of two for reflected arithmetic progressions with binary encoded, exponentially large counts. The proof controls reciprocal perturbations and accounts for the complete polynomial tails; its stable coprime family does not change the factoring exponent.
 
 [Tensor-product Pascal boxes](research/tensor-pascal-box-crossings.md) give an exact multi-coordinate crossing construction and coherent energy types. The accompanying pressure calculations and integer-polynomial certificates delimit the tested inherited gauges; they do not supply a score above one half.
+
+The [rectangular Bézout denominator theorem](research/rectangular-bezout-denominator.md) determines every inverse Newton coefficient valuation for two independent dyadic isometry prefixes of unequal sizes. A double Mahler expansion proves the formula, and a binary-size maximization gives the exact primitive scale and short supports for both complete normalized polynomials.
+
+The [rectangular modular compiler](research/rectangular-bezout-modular.md) constructs those complete primitive Bézout pairs on independent arithmetic domains in polynomial time in their binary descriptions and requested precision. Exact rational controls and independently sized domains through 257-bit counts verify signs, precision guards, nonmonotone coefficient windows, and the complete polynomial identity.
+
+[Weighted Pascal flags](research/weighted-pascal-flag-crossings.md) enlarge the exact crossing search to arbitrary positive integer weights, different energy spectra at the two cuts, and independent physical gauges. Explicit Clifford matrices recover both full Fock profiles from much smaller matrices; the checked constructors do not yet cross the half-score threshold.
+
+The [entrywise Cauchy-power theorem](research/pole-cauchy-hadamard-rank.md) gives exact Smith profiles and optimal separation ranks at every finite precision. Standard trace padding can retain exponentially many nonfactor rows; a larger polynomial displacement reduces the optimal rank exactly to the factor count. Constructing that small-rank representation remains a separate algorithmic problem.
+
+A [quadratic coalescence testbed](research/quadratic-coalescence-bezout.md) now handles reflected progressions with two different matching depths. A normalized weighted reciprocal sum has an odd unit computable from only linearly many Mahler coefficients in the requested precision; this determines the exact primitive scale and complete coefficient residues in the proved stability range.

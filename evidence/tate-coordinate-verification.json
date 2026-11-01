@@ -1,0 +1,40 @@
+{
+  "tested_commit": "c87e49f52f47f93108ed0d12b72ce95536ef236a",
+  "started_at_utc": "2026-11-01T05:06:46.054720+00:00",
+  "completed_at_utc": "2026-11-01T05:23:35.897714+00:00",
+  "command": [
+    "make",
+    "-j2",
+    "--output-sync=target",
+    "verify"
+  ],
+  "exit_code": 0,
+  "status_before": "",
+  "status_after": "",
+  "python_command_blocks": 338,
+  "log_sha256": "a40cae06110425f8125f1ed169d2af7b428bd666adff05d1bcef617fcbfe0a64",
+  "log_bytes": 1100939,
+  "test_summaries": [
+    "Checked local links in 939 Markdown files.",
+    "Ran 66 tests in 5.773s",
+    "OK",
+    "Ran 5 tests in 2.974s",
+    "OK"
+  ],
+  "source_sha256": {
+    "tools/tate_coordinate_compiler.py": "4abb1d071debcd045b110780c8472d215fe44d89103f0033474250e6cb4c37d1",
+    "tools/check_tate_coordinate_compiler.py": "dc720bc8164b95d66c073718c492669871b56c51065466315e71431775aea326",
+    "tools/lambert_theta_sections.py": "9f6ff2937fdaadd0430acf27893652f38a68bdcd3af70e189a47d40c96d32c94",
+    "tools/cyclotomic_character_decoder.py": "6dbe7906b53b99ef830a5cb7115f1be5a2dd94e3d3d4083c366e01add8e9f4df",
+    "tools/check_docs.py": "7eb9dbb11bcf827a1ec2b4460a50164b105cc35547bed0af1ab9a7a1935c477c",
+    "tests/test_docs.py": "93ad36cebc20e39d23ac267da2955435acd2a5ceeecad46aa6f780e9032bd2b9",
+    "research/tate-coordinate-coefficients.md": "d09eddfbc99704974ca3f1e8ca034f1ec33edd8669b1870020d71a3419d7358d"
+  },
+  "local_compressed_log": "build/verification/c87e49f.make-verify.log.gz",
+  "scope": "Frozen Tate construction and documentation-checker source only. Later phase-five quadratic files and other main integrations are not covered by this full run.",
+  "not_run": [
+    "make verify-formal",
+    "make verify-k6",
+    "make verify-half-appendix"
+  ]
+}

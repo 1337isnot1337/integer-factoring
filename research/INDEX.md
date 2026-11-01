@@ -179,6 +179,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Fixed weight-one coefficient target](weight-one-divisor-coefficients.md): one bit per cyclotomic coordinate supplies signed divisor residues at every prime level, by an injective binary decoder retaining nilpotent coordinates; paired sparse recovery preserves every fixed saving exponent, conditional on a faster composite-index weight-one coefficient engine.
 - [Explicit polynomial character decoder](cyclotomic-character-decoder.md): Galois substitutions, an odd-order Fourier transform and exact nilpotent divisions invert the same one-bit map without a stored Gaussian system; each sampled character order is necessary for arbitrary paired binary vectors. The faster coefficient engine remains open.
 - [Exact Lambert/theta section engine](lambert-theta-sections.md): a divisor-free binary coefficient recurrence with charged exponential cost; level three has a polynomial-time square test but exponentially large common linear section spaces, so that compression architecture cannot supply the faster engine.
+- [Tate coordinates and quadratic composition](tate-coordinate-coefficients.md): uniform nodal algebras and rational-diagonal compilers make coefficients in the algebraic variable cheap; the original Delta composition remains open, with one scalar trace uniformly reduced to a square test.
+- [Nonlinear phase-five quadratic engine](q5-quadratic-coefficients.md): the order-five group law gives four positive binary quadratic parity counts and an explicitly charged square-root-time evaluator; an alternative exact description isolates one divisor-count-mod-four query, and squarefree promises remain separate.
 - [Polynomial divisor-gap extraction](smooth-norm-gap.md): integer multiplicative trimming converts promised inner-radius balanced norms at a specified outer radius, without enumerating all divisors.
 - [Relations from small smooth norms](smooth-norm-relations.md): primitive smooth norms yield bounded prime-form words directly, removing the balanced-factor condition and strictly enlarging the accepted target set.
 - [Exact search for a factored norm](factored-norm-search.md): ideal-lattice composition and deterministic meet-in-the-middle decide one primitive representation and recover coordinates in `Y poly(b)+2^O(b/log b)` bit time; selecting candidate norms remains open.
@@ -1226,3 +1228,23 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 - [Deeply matched reflected progressions](matched-progression-bezout.md): exact primitive denominator and complete modular Bézout compiler at binary huge degree, with reciprocal perturbations retained.
 
 - [Tensor-product Pascal box crossings](tensor-pascal-box-crossings.md): exact crossing matrices, coherent energy labels, and all-scale certificates for 150 finite restriction screens.
+
+
+## Complete flat coefficient spaces
+
+- [All physical words over F2 and F4, with exact generic row constraints](cube-flat-coefficient-fibers.md)
+
+
+## Exact recognition of constant local parity gauges
+
+- [Linear recognition, endpoint-preserving gauges, and a certified nongauge reference](local-parity-gauge-test.md)
+
+- [Exact rectangular Bézout denominators](rectangular-bezout-denominator.md): unequal isometric prefixes, a two-variable proof, exact binary scale computation, and complete shifted polynomial supports of at most `p+defect` coefficients.
+
+- [Complete rectangular modular Bézout pairs](rectangular-bezout-modular.md): a polynomial-time compiler for both entire normalized polynomials on independently sized arithmetic domains, with exact tail bounds and all precision costs charged.
+
+- [Weighted Pascal flags](weighted-pascal-flag-crossings.md): arbitrary integer coordinate weights, independent zero and infinity energies, constant flag changes, and exact unrestricted-gauge Clifford profiles.
+
+- [Exact separation ranks of Cauchy powers](pole-cauchy-hadamard-rank.md): all positive Hadamard powers, precision-dependent overlap thresholds, an exponential standard-padding example, and a larger-padding rank-equals-factor-count corollary.
+
+- [Quadratic coalescence and two-depth Bézout pairs](quadratic-coalescence-bezout.md): an exact weighted-moment valuation, a binary-size quadratic trace unit, and complete primitive residues in a nonuniform matching testbed.

@@ -1,0 +1,2530 @@
+{
+  "coefficient_field": "F4",
+  "gauge_field": "F16",
+  "independent_obstruction_count": 2,
+  "linear_equations_checked": 32278,
+  "necessary_quadratic_extension_control": {
+    "general_verification": {
+      "eq_endpoint_preserved": false,
+      "local_invertible_maps": 8,
+      "odd_coefficients_zero": true,
+      "transformed_nonzero_coefficients": 482
+    },
+    "record": {
+      "equivalent": true,
+      "f4_embedding": [
+        0,
+        1,
+        6,
+        7
+      ],
+      "field": "F2[t]/(t^4+t+1)",
+      "gauges_f16": [
+        [
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            9
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            3,
+            6
+          ],
+          [
+            2,
+            6
+          ]
+        ]
+      ],
+      "rank": 8,
+      "scalar_shifts_f16": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "solution": [
+        1,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "solution_dimension": 0,
+      "tested_equations": 1024,
+      "variables": 8
+    },
+    "tensor_sha256": "abbfc74ab71667fc6e0c825173f1d0739796d99bc9182abf163338a16f048183",
+    "unique_paired_parameters": [
+      1,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "verification": {
+      "eq_endpoint_preserved": true,
+      "local_invertible_maps": 8,
+      "odd_coefficients_zero": true,
+      "transformed_nonzero_coefficients": 482
+    }
+  },
+  "nongauge_reference": {
+    "complete_generic_profiles": [
+      {
+        "axis": 0,
+        "orders": [
+          0,
+          2,
+          2,
+          3,
+          4,
+          4,
+          5,
+          5,
+          6,
+          6,
+          7,
+          8,
+          9,
+          11,
+          11,
+          13
+        ],
+        "verification": {
+          "complete_orders": 16,
+          "polynomial_product_entries": 256,
+          "right_frame_sha256": "e9481d1bd8c615f097e429f5c511fbfe9478af8cfe1639812962acbe3d932b31",
+          "unit_determinants": [
+            [
+              "0",
+              "240240240240240240240240000000000000"
+            ],
+            [
+              "0",
+              "240240240240240240240240000000000000"
+            ]
+          ]
+        }
+      },
+      {
+        "axis": 1,
+        "orders": [
+          0,
+          0,
+          2,
+          2,
+          3,
+          3,
+          4,
+          5,
+          5,
+          6,
+          6,
+          8,
+          11,
+          13,
+          13,
+          15
+        ],
+        "verification": {
+          "complete_orders": 16,
+          "polynomial_product_entries": 256,
+          "right_frame_sha256": "1be0a3d8932ae0850602acc023513230c951aca604ce2de55f64b85d55134420",
+          "unit_determinants": [
+            [
+              "455145514551000045514551455100000000000000000000000000000000000",
+              "414100410041410041410041004141000000000000000000000000000000000"
+            ],
+            [
+              "455145514551000045514551455100000000000000000000000000000000000",
+              "414100410041410041410041004141000000000000000000000000000000000"
+            ]
+          ]
+        }
+      },
+      {
+        "axis": 2,
+        "orders": [
+          0,
+          0,
+          2,
+          2,
+          3,
+          3,
+          4,
+          5,
+          5,
+          6,
+          6,
+          8,
+          11,
+          13,
+          13,
+          15
+        ],
+        "verification": {
+          "complete_orders": 16,
+          "polynomial_product_entries": 256,
+          "right_frame_sha256": "e0c2c9eb11b7ded0f4fb0c8869f811c102cf7d21ff489b799c1739cdd657bbbb",
+          "unit_determinants": [
+            [
+              "410410000000410410000000000000000000000000000000000000000000000",
+              "410000410000410000410000000000000000000000000000000000000000000"
+            ],
+            [
+              "410410000000410410000000000000000000000000000000000000000000000",
+              "410000410000410000410000000000000000000000000000000000000000000"
+            ]
+          ]
+        }
+      }
+    ],
+    "obstructions": [
+      {
+        "paired": false,
+        "record": {
+          "equivalent": false,
+          "obstruction": [
+            {
+              "coefficient": 1,
+              "exponent": [
+                0,
+                0,
+                6
+              ],
+              "mask": 0
+            },
+            {
+              "coefficient": 1,
+              "exponent": [
+                0,
+                0,
+                6
+              ],
+              "mask": 12
+            },
+            {
+              "coefficient": 1,
+              "exponent": [
+                0,
+                3,
+                3
+              ],
+              "mask": 0
+            },
+            {
+              "coefficient": 1,
+              "exponent": [
+                0,
+                3,
+                3
+              ],
+              "mask": 12
+            },
+            {
+              "coefficient": 1,
+              "exponent": [
+                2,
+                0,
+                4
+              ],
+              "mask": 8
+            }
+          ],
+          "rank": 14,
+          "tested_equations": 777,
+          "variables": 17
+        },
+        "verification": {
+          "certificate_terms": 5,
+          "right_hand_side": 1,
+          "verified_zero_coefficients": 17
+        }
+      },
+      {
+        "paired": true,
+        "record": {
+          "equivalent": false,
+          "obstruction": [
+            {
+              "coefficient": 1,
+              "exponent": [
+                0,
+                0,
+                6
+              ],
+              "mask": 10
+            },
+            {
+              "coefficient": 1,
+              "exponent": [
+                2,
+                0,
+                4
+              ],
+              "mask": 8
+            }
+          ],
+          "rank": 7,
+          "tested_equations": 777,
+          "variables": 8
+        },
+        "verification": {
+          "certificate_terms": 2,
+          "right_hand_side": 1,
+          "verified_zero_coefficients": 8
+        }
+      }
+    ],
+    "tensor_sha256": "a9f52287bbf06c7da922a11bf9d80e645c84ec345bcfc7a85fdc5a88247d79c4"
+  },
+  "odd_support_positive_control": {
+    "record": {
+      "equivalent": true,
+      "f4_embedding": [
+        0,
+        1,
+        6,
+        7
+      ],
+      "field": "F2[t]/(t^4+t+1)",
+      "gauges_f16": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      ],
+      "rank": 3,
+      "scalar_shifts_f16": [
+        0,
+        0
+      ],
+      "solution": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "solution_dimension": 2,
+      "tested_equations": 4,
+      "variables": 5
+    },
+    "verification": {
+      "eq_endpoint_preserved": false,
+      "local_invertible_maps": 2,
+      "odd_coefficients_zero": true,
+      "transformed_nonzero_coefficients": 1
+    }
+  },
+  "positive_controls": [
+    {
+      "paired": false,
+      "record": {
+        "equivalent": true,
+        "f4_embedding": [
+          0,
+          1,
+          6,
+          7
+        ],
+        "field": "F2[t]/(t^4+t+1)",
+        "gauges_f16": [
+          [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              7
+            ]
+          ],
+          [
+            [
+              1,
+              6
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              7
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              6
+            ],
+            [
+              1,
+              7
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              6
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              7
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        ],
+        "rank": 15,
+        "scalar_shifts_f16": [
+          0,
+          0,
+          0,
+          6,
+          6,
+          0,
+          0,
+          0
+        ],
+        "solution": [
+          1,
+          0,
+          0,
+          2,
+          2,
+          1,
+          0,
+          2,
+          3,
+          0,
+          2,
+          0,
+          3,
+          1,
+          0,
+          0,
+          0
+        ],
+        "solution_dimension": 2,
+        "tested_equations": 1792,
+        "variables": 17
+      },
+      "tensor_sha256": "0fcc8473e6b18c5a4c00071c3727d0c62ffeb88d330f671cbc9e75f62d93542e",
+      "trial": 0,
+      "verification": {
+        "eq_endpoint_preserved": false,
+        "local_invertible_maps": 8,
+        "odd_coefficients_zero": true,
+        "transformed_nonzero_coefficients": 176
+      }
+    },
+    {
+      "paired": false,
+      "record": {
+        "equivalent": true,
+        "f4_embedding": [
+          0,
+          1,
+          6,
+          7
+        ],
+        "field": "F2[t]/(t^4+t+1)",
+        "gauges_f16": [
+          [
+            [
+              1,
+              6
+            ],
+            [
+              1,
+              7
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              7
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              6
+            ]
+          ],
+          [
+            [
+              1,
+              7
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        ],
+        "rank": 15,
+        "scalar_shifts_f16": [
+          6,
+          0,
+          0,
+          0,
+          0,
+          6,
+          0,
+          0
+        ],
+        "solution": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          3,
+          3,
+          3,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ],
+        "solution_dimension": 2,
+        "tested_equations": 1792,
+        "variables": 17
+      },
+      "tensor_sha256": "008baf565389662c7aec0ec90481407e360944bd7c52a31dac5c4896a8fe9767",
+      "trial": 1,
+      "verification": {
+        "eq_endpoint_preserved": false,
+        "local_invertible_maps": 8,
+        "odd_coefficients_zero": true,
+        "transformed_nonzero_coefficients": 176
+      }
+    },
+    {
+      "paired": false,
+      "record": {
+        "equivalent": true,
+        "f4_embedding": [
+          0,
+          1,
+          6,
+          7
+        ],
+        "field": "F2[t]/(t^4+t+1)",
+        "gauges_f16": [
+          [
+            [
+              1,
+              6
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              6
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        ],
+        "rank": 15,
+        "scalar_shifts_f16": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "solution": [
+          3,
+          3,
+          1,
+          1,
+          0,
+          0,
+          0,
+          2,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "solution_dimension": 2,
+        "tested_equations": 1792,
+        "variables": 17
+      },
+      "tensor_sha256": "e121889e295090105cb101d27ca8e8f9370aa50d91dba50c88285874e7b790f8",
+      "trial": 2,
+      "verification": {
+        "eq_endpoint_preserved": false,
+        "local_invertible_maps": 8,
+        "odd_coefficients_zero": true,
+        "transformed_nonzero_coefficients": 176
+      }
+    },
+    {
+      "paired": false,
+      "record": {
+        "equivalent": true,
+        "f4_embedding": [
+          0,
+          1,
+          6,
+          7
+        ],
+        "field": "F2[t]/(t^4+t+1)",
+        "gauges_f16": [
+          [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              7
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              6
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              7
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        ],
+        "rank": 15,
+        "scalar_shifts_f16": [
+          6,
+          0,
+          0,
+          0,
+          6,
+          0,
+          0,
+          0
+        ],
+        "solution": [
+          3,
+          0,
+          1,
+          1,
+          0,
+          2,
+          2,
+          3,
+          1,
+          0,
+          0,
+          0,
+          1,
+          3,
+          0,
+          0,
+          0
+        ],
+        "solution_dimension": 2,
+        "tested_equations": 1792,
+        "variables": 17
+      },
+      "tensor_sha256": "a7c4944882a9b325dcc46b46c3f43db405d3d7fa5a05caa02946af2075981112",
+      "trial": 3,
+      "verification": {
+        "eq_endpoint_preserved": false,
+        "local_invertible_maps": 8,
+        "odd_coefficients_zero": true,
+        "transformed_nonzero_coefficients": 176
+      }
+    },
+    {
+      "paired": false,
+      "record": {
+        "equivalent": true,
+        "f4_embedding": [
+          0,
+          1,
+          6,
+          7
+        ],
+        "field": "F2[t]/(t^4+t+1)",
+        "gauges_f16": [
+          [
+            [
+              1,
+              7
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              6
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              7
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              7
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        ],
+        "rank": 15,
+        "scalar_shifts_f16": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "solution": [
+          0,
+          3,
+          0,
+          2,
+          0,
+          3,
+          0,
+          3,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "solution_dimension": 2,
+        "tested_equations": 1792,
+        "variables": 17
+      },
+      "tensor_sha256": "f5cfee3a5ce5551c57d37f5a37828910951bbb727a7a3364851f364d223c4a9a",
+      "trial": 4,
+      "verification": {
+        "eq_endpoint_preserved": false,
+        "local_invertible_maps": 8,
+        "odd_coefficients_zero": true,
+        "transformed_nonzero_coefficients": 176
+      }
+    },
+    {
+      "paired": false,
+      "record": {
+        "equivalent": true,
+        "f4_embedding": [
+          0,
+          1,
+          6,
+          7
+        ],
+        "field": "F2[t]/(t^4+t+1)",
+        "gauges_f16": [
+          [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              6
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              7
+            ]
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              7
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              6
+            ]
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              6
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        ],
+        "rank": 15,
+        "scalar_shifts_f16": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "solution": [
+          0,
+          0,
+          2,
+          0,
+          1,
+          3,
+          0,
+          1,
+          2,
+          1,
+          0,
+          2,
+          0,
+          0,
+          3,
+          0,
+          0
+        ],
+        "solution_dimension": 2,
+        "tested_equations": 1792,
+        "variables": 17
+      },
+      "tensor_sha256": "40361803b3370144084427e9d0f46ff03c95b29b8cd55696c4b7215f111537aa",
+      "trial": 5,
+      "verification": {
+        "eq_endpoint_preserved": false,
+        "local_invertible_maps": 8,
+        "odd_coefficients_zero": true,
+        "transformed_nonzero_coefficients": 176
+      }
+    },
+    {
+      "paired": false,
+      "record": {
+        "equivalent": true,
+        "f4_embedding": [
+          0,
+          1,
+          6,
+          7
+        ],
+        "field": "F2[t]/(t^4+t+1)",
+        "gauges_f16": [
+          [
+            [
+              1,
+              6
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              6
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              7
+            ]
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              6
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              7
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              7
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        ],
+        "rank": 15,
+        "scalar_shifts_f16": [
+          0,
+          0,
+          0,
+          6,
+          0,
+          6,
+          0,
+          0
+        ],
+        "solution": [
+          0,
+          2,
+          0,
+          0,
+          3,
+          0,
+          2,
+          3,
+          1,
+          0,
+          3,
+          2,
+          2,
+          0,
+          3,
+          0,
+          0
+        ],
+        "solution_dimension": 2,
+        "tested_equations": 1792,
+        "variables": 17
+      },
+      "tensor_sha256": "cdd3aded68270e44c9f7d7d2ec75c5f253b742f174f5b57bedf04f6e838802c1",
+      "trial": 6,
+      "verification": {
+        "eq_endpoint_preserved": false,
+        "local_invertible_maps": 8,
+        "odd_coefficients_zero": true,
+        "transformed_nonzero_coefficients": 176
+      }
+    },
+    {
+      "paired": false,
+      "record": {
+        "equivalent": true,
+        "f4_embedding": [
+          0,
+          1,
+          6,
+          7
+        ],
+        "field": "F2[t]/(t^4+t+1)",
+        "gauges_f16": [
+          [
+            [
+              1,
+              7
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              7
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              7
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              6
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              7
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        ],
+        "rank": 15,
+        "scalar_shifts_f16": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "solution": [
+          2,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          3,
+          3,
+          2,
+          2,
+          3,
+          1,
+          0,
+          0,
+          0
+        ],
+        "solution_dimension": 2,
+        "tested_equations": 1792,
+        "variables": 17
+      },
+      "tensor_sha256": "19e6a8d9198412e977a5b5cd2ce575968fed6799677c2275e98b8e65f92b74fa",
+      "trial": 7,
+      "verification": {
+        "eq_endpoint_preserved": false,
+        "local_invertible_maps": 8,
+        "odd_coefficients_zero": true,
+        "transformed_nonzero_coefficients": 176
+      }
+    },
+    {
+      "paired": true,
+      "record": {
+        "equivalent": true,
+        "f4_embedding": [
+          0,
+          1,
+          6,
+          7
+        ],
+        "field": "F2[t]/(t^4+t+1)",
+        "gauges_f16": [
+          [
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              6
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              7
+            ],
+            [
+              0,
+              7
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        ],
+        "rank": 6,
+        "scalar_shifts_f16": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "solution": [
+          1,
+          0,
+          0,
+          3,
+          0,
+          1,
+          0,
+          0
+        ],
+        "solution_dimension": 2,
+        "tested_equations": 1792,
+        "variables": 8
+      },
+      "tensor_sha256": "58b1b33715932a7739644daca63421717ade89a99a73616b99501eb0518ced63",
+      "trial": 0,
+      "verification": {
+        "eq_endpoint_preserved": true,
+        "local_invertible_maps": 8,
+        "odd_coefficients_zero": true,
+        "transformed_nonzero_coefficients": 176
+      }
+    },
+    {
+      "paired": true,
+      "record": {
+        "equivalent": true,
+        "f4_embedding": [
+          0,
+          1,
+          6,
+          7
+        ],
+        "field": "F2[t]/(t^4+t+1)",
+        "gauges_f16": [
+          [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              6
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              6
+            ]
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              6
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              7,
+              6
+            ],
+            [
+              6,
+              6
+            ]
+          ],
+          [
+            [
+              1,
+              7
+            ],
+            [
+              0,
+              7
+            ]
+          ],
+          [
+            [
+              1,
+              7
+            ],
+            [
+              0,
+              7
+            ]
+          ]
+        ],
+        "rank": 6,
+        "scalar_shifts_f16": [
+          0,
+          0,
+          6,
+          0,
+          0,
+          6,
+          0,
+          0
+        ],
+        "solution": [
+          0,
+          3,
+          0,
+          3,
+          3,
+          2,
+          0,
+          0
+        ],
+        "solution_dimension": 2,
+        "tested_equations": 1792,
+        "variables": 8
+      },
+      "tensor_sha256": "c97416c92b557fc89ba96b58e39d657ee4dc341257394ccbc3d851af44100787",
+      "trial": 1,
+      "verification": {
+        "eq_endpoint_preserved": true,
+        "local_invertible_maps": 8,
+        "odd_coefficients_zero": true,
+        "transformed_nonzero_coefficients": 176
+      }
+    },
+    {
+      "paired": true,
+      "record": {
+        "equivalent": true,
+        "f4_embedding": [
+          0,
+          1,
+          6,
+          7
+        ],
+        "field": "F2[t]/(t^4+t+1)",
+        "gauges_f16": [
+          [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              7
+            ]
+          ],
+          [
+            [
+              1,
+              7
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              6
+            ],
+            [
+              1,
+              7
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              7,
+              1
+            ],
+            [
+              6,
+              1
+            ]
+          ],
+          [
+            [
+              7,
+              7
+            ],
+            [
+              6,
+              7
+            ]
+          ],
+          [
+            [
+              1,
+              6
+            ],
+            [
+              0,
+              6
+            ]
+          ]
+        ],
+        "rank": 6,
+        "scalar_shifts_f16": [
+          0,
+          6,
+          6,
+          0,
+          0,
+          6,
+          6,
+          0
+        ],
+        "solution": [
+          0,
+          2,
+          2,
+          3,
+          1,
+          1,
+          0,
+          0
+        ],
+        "solution_dimension": 2,
+        "tested_equations": 1792,
+        "variables": 8
+      },
+      "tensor_sha256": "bcfc064972b2a5b3d386ff0e1118b57871b34c445f14200aaecf4e001dc1a0e7",
+      "trial": 2,
+      "verification": {
+        "eq_endpoint_preserved": true,
+        "local_invertible_maps": 8,
+        "odd_coefficients_zero": true,
+        "transformed_nonzero_coefficients": 176
+      }
+    },
+    {
+      "paired": true,
+      "record": {
+        "equivalent": true,
+        "f4_embedding": [
+          0,
+          1,
+          6,
+          7
+        ],
+        "field": "F2[t]/(t^4+t+1)",
+        "gauges_f16": [
+          [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              7
+            ]
+          ],
+          [
+            [
+              1,
+              7
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              6
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              6,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              7,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              6
+            ],
+            [
+              0,
+              6
+            ]
+          ]
+        ],
+        "rank": 6,
+        "scalar_shifts_f16": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "solution": [
+          0,
+          2,
+          3,
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        "solution_dimension": 2,
+        "tested_equations": 1792,
+        "variables": 8
+      },
+      "tensor_sha256": "7b57ca5435362fc746cc27d170be3a691761fe6cc414602d43757e042d04529d",
+      "trial": 3,
+      "verification": {
+        "eq_endpoint_preserved": true,
+        "local_invertible_maps": 8,
+        "odd_coefficients_zero": true,
+        "transformed_nonzero_coefficients": 176
+      }
+    },
+    {
+      "paired": true,
+      "record": {
+        "equivalent": true,
+        "f4_embedding": [
+          0,
+          1,
+          6,
+          7
+        ],
+        "field": "F2[t]/(t^4+t+1)",
+        "gauges_f16": [
+          [
+            [
+              1,
+              7
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              6
+            ],
+            [
+              1,
+              7
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              7,
+              1
+            ],
+            [
+              6,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              7,
+              7
+            ],
+            [
+              6,
+              7
+            ]
+          ]
+        ],
+        "rank": 6,
+        "scalar_shifts_f16": [
+          6,
+          0,
+          6,
+          0,
+          0,
+          6,
+          0,
+          6
+        ],
+        "solution": [
+          2,
+          3,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "solution_dimension": 2,
+        "tested_equations": 1792,
+        "variables": 8
+      },
+      "tensor_sha256": "b65751621ce0e08b40bdeeca1d479167745e841164856496e990c59cf60d5d91",
+      "trial": 4,
+      "verification": {
+        "eq_endpoint_preserved": true,
+        "local_invertible_maps": 8,
+        "odd_coefficients_zero": true,
+        "transformed_nonzero_coefficients": 176
+      }
+    },
+    {
+      "paired": true,
+      "record": {
+        "equivalent": true,
+        "f4_embedding": [
+          0,
+          1,
+          6,
+          7
+        ],
+        "field": "F2[t]/(t^4+t+1)",
+        "gauges_f16": [
+          [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              7
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              7
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              7,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              6
+            ],
+            [
+              0,
+              6
+            ]
+          ]
+        ],
+        "rank": 6,
+        "scalar_shifts_f16": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "solution": [
+          0,
+          2,
+          0,
+          1,
+          3,
+          0,
+          0,
+          0
+        ],
+        "solution_dimension": 2,
+        "tested_equations": 1792,
+        "variables": 8
+      },
+      "tensor_sha256": "4afa6e2dc65c453832da6755e026d4d68e64617987bbdca90989c42d47b92ab8",
+      "trial": 5,
+      "verification": {
+        "eq_endpoint_preserved": true,
+        "local_invertible_maps": 8,
+        "odd_coefficients_zero": true,
+        "transformed_nonzero_coefficients": 176
+      }
+    },
+    {
+      "paired": true,
+      "record": {
+        "equivalent": true,
+        "f4_embedding": [
+          0,
+          1,
+          6,
+          7
+        ],
+        "field": "F2[t]/(t^4+t+1)",
+        "gauges_f16": [
+          [
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              6
+            ],
+            [
+              1,
+              7
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              6
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              7
+            ],
+            [
+              0,
+              7
+            ]
+          ],
+          [
+            [
+              7,
+              1
+            ],
+            [
+              6,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        ],
+        "rank": 6,
+        "scalar_shifts_f16": [
+          0,
+          6,
+          0,
+          0,
+          0,
+          0,
+          6,
+          0
+        ],
+        "solution": [
+          1,
+          0,
+          1,
+          1,
+          0,
+          3,
+          0,
+          0
+        ],
+        "solution_dimension": 2,
+        "tested_equations": 1792,
+        "variables": 8
+      },
+      "tensor_sha256": "43de6319b319d32d7351011b6ade05542a0f0f2b7091072487dd68d1fde21a73",
+      "trial": 6,
+      "verification": {
+        "eq_endpoint_preserved": true,
+        "local_invertible_maps": 8,
+        "odd_coefficients_zero": true,
+        "transformed_nonzero_coefficients": 176
+      }
+    },
+    {
+      "paired": true,
+      "record": {
+        "equivalent": true,
+        "f4_embedding": [
+          0,
+          1,
+          6,
+          7
+        ],
+        "field": "F2[t]/(t^4+t+1)",
+        "gauges_f16": [
+          [
+            [
+              1,
+              7
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              7
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              6
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              6,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              7,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              7,
+              1
+            ]
+          ]
+        ],
+        "rank": 6,
+        "scalar_shifts_f16": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "solution": [
+          3,
+          0,
+          3,
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        "solution_dimension": 2,
+        "tested_equations": 1792,
+        "variables": 8
+      },
+      "tensor_sha256": "169efbf386a78d511748844b278407e10a0732ce5ff4090d1ae16fd698ccaf8a",
+      "trial": 7,
+      "verification": {
+        "eq_endpoint_preserved": true,
+        "local_invertible_maps": 8,
+        "odd_coefficients_zero": true,
+        "transformed_nonzero_coefficients": 176
+      }
+    }
+  ],
+  "positive_gauge_count": 19,
+  "rejected_controls": 4,
+  "schema": 1,
+  "scope": "Exact constant local parity-gauge equivalence over coefficient-field extensions; no new factoring exponent",
+  "source_sha256": {
+    "check_cube_f4_bivariate_smith.py": "9e74a6dac5a1e6bd717e6a19336d6800b833a1b417cb95df29ced564b548e9b2",
+    "check_local_parity_gauge.py": "ec981918b69307e5a9da9875708ab93dab80d0ec4a98bd8a0afb52e42359e927",
+    "cube_f4_bivariate_smith.cpp": "c4919a9ea356a9c6aaee9340fd3aa68ae5095a15ee0e57b7b9c53579e48b51f2",
+    "cube_f4_bivariate_smith.py": "5eed7b79c017771a4aaf846b7fe68865179989ae7568ebf7cb367da67a233fe1",
+    "local-parity-nongauge-reference.json": "f5b0434ff983b7ac446c539602b94dc120d19bbe876f2785a3151937a3bb490e",
+    "local_parity_gauge.py": "29fe7460047c33b190bdefcc975328b762182c55c65c9a1e9d4136c27daae194"
+  }
+}

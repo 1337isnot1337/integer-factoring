@@ -1,0 +1,469 @@
+{
+  "arithmetic": "Exact rational divided differences and independent modular Hensel inverses",
+  "certificate_examples": [
+    {
+      "column_count": 1,
+      "dyadic_denominator": 1,
+      "height": 1,
+      "n": 111,
+      "newton_valuations": [
+        -1
+      ],
+      "row_count": 1
+    },
+    {
+      "column_count": 1,
+      "dyadic_denominator": 2,
+      "height": 2,
+      "n": 269,
+      "newton_valuations": [
+        -2
+      ],
+      "row_count": 1
+    },
+    {
+      "column_count": 1,
+      "dyadic_denominator": 4,
+      "height": 4,
+      "n": 945,
+      "newton_valuations": [
+        -4
+      ],
+      "row_count": 1
+    },
+    {
+      "column_count": 3,
+      "dyadic_denominator": 3,
+      "height": 1,
+      "n": 39,
+      "newton_valuations": [
+        -3
+      ],
+      "row_count": 1
+    },
+    {
+      "column_count": 3,
+      "dyadic_denominator": 6,
+      "height": 2,
+      "n": 5,
+      "newton_valuations": [
+        -6
+      ],
+      "row_count": 1
+    },
+    {
+      "column_count": 3,
+      "dyadic_denominator": 12,
+      "height": 4,
+      "n": 1105,
+      "newton_valuations": [
+        -12
+      ],
+      "row_count": 1
+    },
+    {
+      "column_count": 8,
+      "dyadic_denominator": 8,
+      "height": 1,
+      "n": 199,
+      "newton_valuations": [
+        -8
+      ],
+      "row_count": 1
+    },
+    {
+      "column_count": 8,
+      "dyadic_denominator": 16,
+      "height": 2,
+      "n": 37,
+      "newton_valuations": [
+        -16
+      ],
+      "row_count": 1
+    },
+    {
+      "column_count": 8,
+      "dyadic_denominator": 32,
+      "height": 4,
+      "n": 785,
+      "newton_valuations": [
+        -32
+      ],
+      "row_count": 1
+    },
+    {
+      "column_count": 1,
+      "dyadic_denominator": 4,
+      "height": 1,
+      "n": 187,
+      "newton_valuations": [
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "row_count": 4
+    },
+    {
+      "column_count": 1,
+      "dyadic_denominator": 8,
+      "height": 2,
+      "n": 77,
+      "newton_valuations": [
+        -2,
+        -4,
+        -6,
+        -8
+      ],
+      "row_count": 4
+    },
+    {
+      "column_count": 1,
+      "dyadic_denominator": 16,
+      "height": 4,
+      "n": 1489,
+      "newton_valuations": [
+        -4,
+        -8,
+        -12,
+        -16
+      ],
+      "row_count": 4
+    },
+    {
+      "column_count": 3,
+      "dyadic_denominator": 5,
+      "height": 1,
+      "n": 15,
+      "newton_valuations": [
+        -3,
+        -4,
+        -4,
+        -5
+      ],
+      "row_count": 4
+    },
+    {
+      "column_count": 3,
+      "dyadic_denominator": 11,
+      "height": 2,
+      "n": 317,
+      "newton_valuations": [
+        -6,
+        -8,
+        -9,
+        -11
+      ],
+      "row_count": 4
+    },
+    {
+      "column_count": 3,
+      "dyadic_denominator": 23,
+      "height": 4,
+      "n": 1553,
+      "newton_valuations": [
+        -12,
+        -16,
+        -19,
+        -23
+      ],
+      "row_count": 4
+    },
+    {
+      "column_count": 8,
+      "dyadic_denominator": 8,
+      "height": 1,
+      "n": 43,
+      "newton_valuations": [
+        -8,
+        -6,
+        -8,
+        -8
+      ],
+      "row_count": 4
+    },
+    {
+      "column_count": 8,
+      "dyadic_denominator": 19,
+      "height": 2,
+      "n": 141,
+      "newton_valuations": [
+        -16,
+        -15,
+        -18,
+        -19
+      ],
+      "row_count": 4
+    },
+    {
+      "column_count": 8,
+      "dyadic_denominator": 41,
+      "height": 4,
+      "n": 529,
+      "newton_valuations": [
+        -32,
+        -33,
+        -38,
+        -41
+      ],
+      "row_count": 4
+    },
+    {
+      "column_count": 1,
+      "dyadic_denominator": 8,
+      "height": 1,
+      "n": 91,
+      "newton_valuations": [
+        -1,
+        -2,
+        -3,
+        -4,
+        -5,
+        -6,
+        -7,
+        -8
+      ],
+      "row_count": 8
+    },
+    {
+      "column_count": 1,
+      "dyadic_denominator": 16,
+      "height": 2,
+      "n": 69,
+      "newton_valuations": [
+        -2,
+        -4,
+        -6,
+        -8,
+        -10,
+        -12,
+        -14,
+        -16
+      ],
+      "row_count": 8
+    },
+    {
+      "column_count": 1,
+      "dyadic_denominator": 32,
+      "height": 4,
+      "n": 241,
+      "newton_valuations": [
+        -4,
+        -8,
+        -12,
+        -16,
+        -20,
+        -24,
+        -28,
+        -32
+      ],
+      "row_count": 8
+    },
+    {
+      "column_count": 3,
+      "dyadic_denominator": 8,
+      "height": 1,
+      "n": 127,
+      "newton_valuations": [
+        -3,
+        -4,
+        -4,
+        -5,
+        -7,
+        -8,
+        -7,
+        -8
+      ],
+      "row_count": 8
+    },
+    {
+      "column_count": 3,
+      "dyadic_denominator": 18,
+      "height": 2,
+      "n": 349,
+      "newton_valuations": [
+        -6,
+        -8,
+        -9,
+        -11,
+        -14,
+        -16,
+        -16,
+        -18
+      ],
+      "row_count": 8
+    },
+    {
+      "column_count": 3,
+      "dyadic_denominator": 38,
+      "height": 4,
+      "n": 785,
+      "newton_valuations": [
+        -12,
+        -16,
+        -19,
+        -23,
+        -28,
+        -32,
+        -34,
+        -38
+      ],
+      "row_count": 8
+    },
+    {
+      "column_count": 8,
+      "dyadic_denominator": 12,
+      "height": 1,
+      "n": 3,
+      "newton_valuations": [
+        -8,
+        -6,
+        -8,
+        -8,
+        -11,
+        -10,
+        -12,
+        -12
+      ],
+      "row_count": 8
+    },
+    {
+      "column_count": 8,
+      "dyadic_denominator": 27,
+      "height": 2,
+      "n": 29,
+      "newton_valuations": [
+        -16,
+        -15,
+        -18,
+        -19,
+        -23,
+        -23,
+        -26,
+        -27
+      ],
+      "row_count": 8
+    },
+    {
+      "column_count": 8,
+      "dyadic_denominator": 57,
+      "height": 4,
+      "n": 657,
+      "newton_valuations": [
+        -32,
+        -33,
+        -38,
+        -41,
+        -47,
+        -49,
+        -54,
+        -57
+      ],
+      "row_count": 8
+    }
+  ],
+  "double_forward_difference_identities": 81,
+  "exact_inverse_newton_coefficients": 864,
+  "finite_double_mahler_reconstructions": 64,
+  "independent_hensel_certificates": 192,
+  "integral_normalized_functionals": 1536,
+  "large_binary_scales": [
+    {
+      "binary_window_bound": 202,
+      "columns": 174224571863520493293247799005065324265479,
+      "defect": 2,
+      "examined_indices": 202,
+      "exponent": 1606938044258990275716186664204683095815450792787858159566865,
+      "first_examined_index": 1606938044258990275541962092341162602522202993782792835301187,
+      "maximizing_index": 1606938044258990275541962092341162602522202993782792835301388,
+      "rows": 1606938044258990275541962092341162602522202993782792835301389,
+      "scope": "Binary scale computation only; no nodes enumerated"
+    },
+    {
+      "binary_window_bound": 202,
+      "columns": 1606938044258990275541962092341162602522202993782792835301376,
+      "defect": 200,
+      "examined_indices": 202,
+      "exponent": 3213876088517980551083924184682325205044405987565585670602551,
+      "first_examined_index": 1606938044258990275541962092341162602522202993782792835301174,
+      "maximizing_index": 1606938044258990275541962092341162602522202993782792835301374,
+      "rows": 1606938044258990275541962092341162602522202993782792835301376,
+      "scope": "Binary scale computation only; no nodes enumerated"
+    },
+    {
+      "binary_window_bound": 402,
+      "columns": 2582249878086908589655919172003011874329705792829223512830659356540647622016841194629645353280137831435903171972747493376,
+      "defect": 0,
+      "examined_indices": 1,
+      "exponent": 2582249878086908589655919172003011874329705792829223512830659356540647622016841194629645353280137831435903171972747493376,
+      "first_examined_index": 0,
+      "maximizing_index": 0,
+      "rows": 1,
+      "scope": "Binary scale computation only; no nodes enumerated"
+    },
+    {
+      "binary_window_bound": 202,
+      "columns": 3,
+      "defect": 0,
+      "examined_indices": 202,
+      "exponent": 1606938044258990275541962092341162602522202993782792835301379,
+      "first_examined_index": 1606938044258990275541962092341162602522202993782792835301175,
+      "maximizing_index": 1606938044258990275541962092341162602522202993782792835301376,
+      "rows": 1606938044258990275541962092341162602522202993782792835301377,
+      "scope": "Binary scale computation only; no nodes enumerated"
+    }
+  ],
+  "low_moment_identities": 1536,
+  "normalized_unit_truncations": 384,
+  "parity_divided_difference_valuations": 128,
+  "parity_examples": [
+    {
+      "even_count": 1,
+      "odd_count": 1,
+      "valuation": 0
+    },
+    {
+      "even_count": 1,
+      "odd_count": 3,
+      "valuation": 0
+    },
+    {
+      "even_count": 1,
+      "odd_count": 8,
+      "valuation": 0
+    },
+    {
+      "even_count": 4,
+      "odd_count": 1,
+      "valuation": 0
+    },
+    {
+      "even_count": 4,
+      "odd_count": 3,
+      "valuation": 1
+    },
+    {
+      "even_count": 4,
+      "odd_count": 8,
+      "valuation": 3
+    },
+    {
+      "even_count": 8,
+      "odd_count": 1,
+      "valuation": 0
+    },
+    {
+      "even_count": 8,
+      "odd_count": 3,
+      "valuation": 2
+    },
+    {
+      "even_count": 8,
+      "odd_count": 8,
+      "valuation": 3
+    }
+  ],
+  "scope": "Separated residue classes, with no factor incidence. No general compressed GCD or improved factoring exponent.",
+  "shifted_polynomial_tail_bounds": 576,
+  "theorem": "Exact rectangular isometric-prefix Bezout denominators"
+}

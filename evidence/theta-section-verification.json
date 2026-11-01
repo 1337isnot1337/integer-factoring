@@ -1,0 +1,38 @@
+{
+  "tested_commit": "4d73ddd662fa8c8cccd32dc783019a5687ec0a1c",
+  "started_at_utc": "2026-11-01T04:35:17.619460+00:00",
+  "completed_at_utc": "2026-11-01T04:51:15.389472+00:00",
+  "command": [
+    "make",
+    "-j2",
+    "--output-sync=target",
+    "verify"
+  ],
+  "exit_code": 0,
+  "status_before": "",
+  "status_after": "",
+  "python_command_blocks": 337,
+  "log_sha256": "cc89d335c91ccf648af23986d2da5ef055f734536a728d3a9802a188318cb7e2",
+  "log_bytes": 1078054,
+  "test_summaries": [
+    "Checked local links in 919 Markdown files.",
+    "Ran 63 tests in 5.688s",
+    "OK",
+    "Ran 5 tests in 3.049s",
+    "OK"
+  ],
+  "source_sha256": {
+    "tools/lambert_theta_sections.py": "9f6ff2937fdaadd0430acf27893652f38a68bdcd3af70e189a47d40c96d32c94",
+    "tools/check_lambert_theta_sections.py": "7aea81550d229a8bc05181fec95fa0e7123832bd9364fec39e57afd9ca58dfcf",
+    "tools/cyclotomic_character_decoder.py": "6dbe7906b53b99ef830a5cb7115f1be5a2dd94e3d3d4083c366e01add8e9f4df",
+    "research/lambert-theta-sections.md": "eb99171d3a11ba3c380d4ce51cf689a1d5e263e236f5262506c1a7f07ed392f9"
+  },
+  "local_compressed_log": "build/verification/4d73ddd.make-verify.log.gz",
+  "excluded_launch": "An earlier launch ran before worktree checkout completion and failed immediately; it is not counted as verification. This clean run started only after checkout completion.",
+  "scope": "Frozen theta-section checkpoint only. New Tate compiler files and later concurrent main changes are not covered by this full run.",
+  "not_run": [
+    "make verify-formal",
+    "make verify-k6",
+    "make verify-half-appendix"
+  ]
+}
