@@ -1445,3 +1445,21 @@ optimizer. The registered panel is stopped. This is not a theorem about
 all non-Gaussian tensors, other types or actual coefficient-rank estimates.
 Focused checks and docs are its local gate; no new Lean, score improvement
 or independent mathematical acceptance is claimed.
+
+## Registered weighted-type quartic diagnostic at 3ddcf36
+
+The [fixed weighted-type question](../research/quartic-weighted-type-question.md)
+changed physical gauges and allowed a correlated four-letter Gibbs type
+for only the S149 quartic tensor and its Gaussian control. Clean frozen
+source `3ddcf36f9ab335893f0662010e5b5783340dc37f`, tree
+`e119e09624810d814a9f91588f715a53c3805fee`, completed its registered
+64-start diagnostic: 5,995 native queries, zero rejections and no strict
+negative witness. Four independent finite-difference gradient controls
+had maximum coordinate error below 1.7e-9. Seven Gaussian/cut-one starts
+reached their iteration limit and one had abnormal line-search termination;
+these are retained, not labeled convergence. The smallest positive margin
+is at a nearly pure type and the height bounds. No all-gauge lower bound,
+exact pressure certificate or score improvement follows. The receipt and
+complete compressed query/stdout archives are linked from the note;
+`make verify-quartic-weighted-run` checks archive integrity and recorded
+arithmetic. The one registered run is closed without additional starts.

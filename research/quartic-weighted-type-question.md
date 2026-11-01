@@ -3,7 +3,7 @@
 The [registered question](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19338662)
 changes the physical restriction of one fixed tensor from the
 [completed quartic panel](quartic-interaction-panel.md). Its complete
-factoring score remains **1/2**. This document registers a search, not
+factoring score remains **1/2**. This document registers and closes a search, not
 a pressure inequality or an improved bound.
 
 The support `S149={X0,Y0,U0,V1}` flips the occupation parity of both
@@ -67,3 +67,32 @@ uniform construction/transfer before a stronger bound can be claimed.
 Otherwise stop after this one budgeted run and preserve the scoped
 numerical negative. Do not add random starts to polish the decimal.
 No Lean formalization or subagents are used.
+
+## Recorded result: no strict witness, panel closed
+
+The clean frozen source was `3ddcf36f9ab335893f0662010e5b5783340dc37f`,
+tree `e119e09624810d814a9f91588f715a53c3805fee`. The
+[run receipt](../evidence/quartic-weighted-run.json),
+[all 5,995 query records](../evidence/quartic-weighted-run.queries.jsonl.gz)
+and [complete stdout](../evidence/quartic-weighted-run.stdout.txt.xz)
+retain the full experiment. All 64 starts were attempted, with 5,995
+completed queries, zero native rejections and no margin below `-1e-7`.
+The four finite-difference controls have maximum coordinate error below
+`1.7e-9`. Wall time was 1.90 seconds on this machine.
+
+All sixteen starts finished normally in each group except the Gaussian
+control at cut one: eight finished normally, seven reached the iteration
+limit and one had abnormal line-search termination. Every query remains
+in the archive; numerical convergence is not asserted for those starts.
+The minimum recorded margin was about `5.78570e-5`. Its heights all
+equal the upper bound six and its Gibbs probability of letter zero is
+about `0.9999998721`, with entropy about `2.30e-6` nats. This small
+absolute margin arises near a pure-type boundary, not from a certified
+near-critical pressure ratio.
+
+Run `make verify-quartic-weighted-run` to check the archive's hashes,
+source hashes, query counts, bounds, all recorded partition arithmetic
+and the per-start accounting. This is an integrity check of numerical
+evidence, not an independent exact weighted-Smith replay or a proof of
+global optimality. The registered experiment is closed without expanding
+the start/height budget. The complete factoring score remains **1/2**.

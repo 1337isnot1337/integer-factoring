@@ -3186,3 +3186,7 @@ verify-mixed-direction-carries:
 .PHONY: verify-quartic-interactions
 verify-quartic-interactions:
 	python3 tools/check_quartic_interaction_panel.py
+
+.PHONY: verify-quartic-weighted-run
+verify-quartic-weighted-run:
+	python3 tools/check_quartic_weighted_run.py
