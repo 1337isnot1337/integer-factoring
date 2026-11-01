@@ -37,6 +37,11 @@ The composition uses the existing clique evaluator from [Anthropic's Appendix B]
 | Sharper k6 saving `log(12/11)/log(12) > 1/29` | Ordinary proof, not Lean-verified at this rate | [Rate derivation](research/k6-sharp-rate.md) |
 | Saving exponent above `1/2` | **Not established** | [Research index](research/INDEX.md) |
 
+The [uniformity perspective](research/uniformity-and-half-frontier.md)
+addresses the hard-limit question: assuming `P=BPP`, standard padding gives
+deterministic `exp(O(sqrt(n log n)))` factoring. This conditional argument
+and the existence of nonuniform successful tapes give no new qualifying score.
+
 Arithmetic research now uses [inverse sections](research/dyadic-inverse-sections.md)
 and an [interval orbit-gcd interface with a rational-part projection](research/interval-orbit-gcd.md).
 It supplies [exact complete-orbit aggregation](research/dyadic-orbit-aggregation.md)
