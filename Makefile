@@ -2164,3 +2164,8 @@ verify-cube-flat-parity-floor:
 .PHONY: verify-balanced-bezout-modular
 verify-balanced-bezout-modular:
 	python3 tools/check_balanced_bezout_modular.py --output /tmp/integer-factoring-balanced-bezout-modular.json
+
+
+.PHONY: verify-coherent-moving-pair
+verify-coherent-moving-pair:
+	python3 tools/check_coherent_moving_pair_core.py --evidence evidence/coherent-moving-pair-core.json --output /tmp/integer-factoring-coherent-moving-pair.json

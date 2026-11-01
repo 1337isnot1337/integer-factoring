@@ -1780,6 +1780,8 @@ The [routed rectangular Fourier constructor](research/routed-rectangular-fourier
 
 The [flat-tensor parity theorem](research/cube-flat-parity-floor.md) proves the exact pressure floor `rho>289/500>1/sqrt(3)` for every homogeneous flat binary cube tensor whose odd-occupation coefficients vanish, over any field. It allows arbitrary even coefficients and an arbitrary vacuum polynomial. Shared parity minors and two integer entropy inequalities establish the uniform bound; parity-breaking coefficients remain outside it.
 
+The [moving-pair construction](research/coherent-moving-pair-core.md) constrains physical modes `0` and `M-1` while keeping the middle interval free. A uniform eight-mode core and explicit spectators give complete natural profiles beyond the fixed-support hypotheses. The exact core profiles are replayed through `M=512`; their numerical pressures remain slightly worse than the corresponding full Gaussian. Parameter-dependent maps and larger moving supports remain constructive directions.
+
 ## Contribution and attribution
 
 Start with the [contributor quickstart](docs/START_HERE.md) and
