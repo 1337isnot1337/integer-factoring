@@ -20,8 +20,9 @@ catalogue statement. It includes the
 The conclusion concerns this natural two-place pressure method with
 the lower 92-label core retained. It does not exclude changes to that
 core, more general physical weights, other valuation places, or better
-coefficient recombinations. In particular, it is not a lower bound on
-integer factoring. The complete factoring exponent remains 1/2.
+coefficient recombinations. Asymmetric supporting-line criteria are also
+outside this balanced-pressure statement. In particular, it is not a lower
+bound on integer factoring. The complete factoring exponent remains 1/2.
 
 ## 1. A common polynomial submatrix
 
