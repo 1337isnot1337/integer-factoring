@@ -115,6 +115,7 @@
 - [Reusable semiprime work in RiemannGaussian](riemann-gaussian-semiprime-source-audit.md): exact-source audit of deterministic boundary contraction, factor moments, semiprime count recovery and coefficient-ring compatibility; no imported score improvement or independent Lean rebuild.
 - [All-input minimum-factor adapters](sanftenberg-all-input-prefix-adapter.md): exact prefix counts or a truncated min-plus semiring recover the smallest factor for arbitrary `N`; direct whole-root boundary contraction has only a linear width guarantee, and recursive cost remains open.
 - [Treewidth floors for the public semiprime macro network](sanftenberg-transform-treewidth-floor.md): the dense macro graph has linear treewidth, while radix-2 four-word butterfly tables have a `Q_d` clique-blow-up minor and treewidth `Omega(ell/sqrt(log ell))`, matching the half-rate scale; bit-level arithmetic circuits remain open.
+- [Root-four bit circuits for the semiprime transform](sanftenberg-root-four-bit-circuits.md): exact root-four twiddles reduce to signed cyclic rotations with `O(T)` carry normalization; modular pointwise products have `O(T^2)`-gate local circuits, but the full-network separator and factoring cost remain open.
 
 - [Literal hot tensors for low-cell retractions](tensor-literal-low-cell-retractions.md): original Gaussian/Pfaffian evaluation without deletion closure, a proved cache bound, complete independent kernel controls and a retained 55-label capped pilot; no frontier gain.
 
