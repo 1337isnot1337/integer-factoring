@@ -1,0 +1,24 @@
+{
+  "checkout_initially_clean": true,
+  "command": "make verify verify-joint-zero-prefix verify-joint-two-place-obstruction verify-fused-ordered-projection verify-coherent-inverse-f4 verify-coherent-gram-f4 verify-coherent-divided-powers verify-coherent-divided-probes verify-pencil-principal-alphabets verify-pascal-coordinate-bundle",
+  "compressed_stdout_sha256": "0d775900972a340d6a1bc21af76bfbdab6d2cd69b56e78654c25feb640ce621c",
+  "exit_code": 0,
+  "logged_python_command_blocks": 357,
+  "scope": "Full defaults and nine named focused targets at exact clean a458e9c, including all seven imported PR57-60 gates. The binary ordered-envelope gate validates its retained audit and ranks; the full billions-state native replay was not repeated. The divided-power gate replays all 48 retained large integer comparisons but does not rebuild the large native profiles. Later main additions are covered separately by focused checks. Integration is not independent mathematical acceptance or a new factoring bound.",
+  "seconds": 1359.2847381490283,
+  "source_commit": "a458e9c27495c958e2ac853c67f7ea2cfa0ae2a6",
+  "source_prs": {
+    "57": "8a3ea3e6aeacba7d0a53764de5579e3707bb2ca7",
+    "58": "1917a4e4c9b1c943ce224cdca5731e5cf239cce8",
+    "59": "4c7805d6279f4f3742a90fb0b0138c337dda031e",
+    "60": "d9551a61198093d770430944b65e27c4f6ad98b8"
+  },
+  "source_tree": "152d86c1855b7d10cbc2f53b310d04821c2b2700",
+  "status": "pass",
+  "stdout_path": "evidence/verify-pr57-60-a458e9c.stdout.txt.xz",
+  "stdout_sha256": "07d679011f211faeb54dd392e187ce52ea4d7a26c77c8c1efaa8aa654d8ec947",
+  "unittest_suites_reported": [
+    66,
+    5
+  ]
+}
