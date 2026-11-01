@@ -232,6 +232,24 @@ The open problem is an effective decomposition of the crossing into
 coefficient-span pieces with favorable simultaneous cut ranks, uniformly
 as the selected label width grows. Arbitrary invertible splittings from
 section 1 remain available if the specialization (2) is too rigid.
+The [universal finite rank-sum exclusion](geometric-cut-rank-budget.md)
+already rules out a strict seed through 95 labels, over every field.
+Thus the 13-, 34- and 89-label checks here verify structure and entry
+algorithms; they cannot provide a strict finite seed. A binary-label
+seed would need at least 128 labels.
+
+There is also a useful necessary condition for the uniform problem.
+Suppose `E_L=sum_(j=1)^m H_j`, with `m=poly(n)` and
+`r(H_j)c(H_j)<=L^(2 gamma)` for every piece. Rank subadditivity
+forces some piece to have `r>=L^2/m`, hence `c<=m L^(2 gamma-2)`;
+another piece has the reversed inequalities. At the post-half
+threshold `gamma=sqrt(2)`, the small cut must therefore grow at
+most as `L^(2 sqrt(2)-2+o(1))`, whose exponent is about 0.828.
+Several pieces with both ranks subquadratic do not replace these
+asymmetric directions. Classifying low-opposite-cut directions in
+the enlarged span, together with their compatible combinations,
+is a more specific next question than finding further cheap corners.
+
 The construction and finite span certificates establish neither such
 a rank theorem nor a higher score. The strongest complete score remains
 `1/2`. These arguments and tools used substantial Codex AI assistance;
