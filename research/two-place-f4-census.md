@@ -23,12 +23,33 @@ polynomials and asymmetric supporting lines. The
 closes one sufficient asymmetric escape over all fields; it does not
 settle the full asymmetric criterion.
 
-The full census is **in progress at this checkpoint**. Its
+The full census is **complete**. Its
 [manifest](../evidence/two-place-f4-census-manifest.json) fixes the
 complete candidate family, OS-random seed, source and binary hashes,
 mathematical input hash, and enumeration order before execution.
-No completed coverage claim is made here. The factoring score remains
+All **4,194,304** cases completed in 128 contiguous chunks, with **zero
+unresolved cases**, zero endpoint failures and **67 complete profile
+classes**. Every class representative has an independent full
+fraction-free replay, comprising **3,350 orders**. The best bounded
+numerical supporting fit was `R=1.0029756804809635`, above one. That
+number is not a certified global minimum. The factoring score remains
 **1/2**.
+
+The [complete packet](../evidence/two-place-f4-census-complete.json.xz)
+contains the manifest, all chunks, frequencies, representatives, progress
+log and exact as-run source texts. Its canonical profile-frequency hash is
+`4b4374370389556f69b366d20f8f35081b68e1813249d23c4d58709fffeb606c`.
+The [completion checker](../tools/check_two_place_census_complete.py)
+validates the whole coverage ledger and independently replays all 67
+representatives. It does not repeat every native profile computation.
+Run `make verify-two-place-f4-census-complete`; the retained
+[receipt](../evidence/two-place-f4-census-complete-controls.json) records
+the actual checks.
+
+An additional independent control matches the entire opposite-order-sum
+histogram to the all-field determinant classification. Sums `44,48,52`
+occur `12,3,1` times respectively; for every degree `3<=d<=11`, sum
+`52-4*d` occurs `3*4^(d-1)` times. These counts total `4^11`.
 
 ## Exact enumeration and coverage
 

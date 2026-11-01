@@ -1,0 +1,873 @@
+{
+  "archive_sha256": "15c21825bd780e7bea7dd9f13dadfd2a00740cd919a2d71351680d35df731dde",
+  "canonical_profile_frequencies_sha256": "4b4374370389556f69b366d20f8f35081b68e1813249d23c4d58709fffeb606c",
+  "complete_profile_classes": 67,
+  "construction": {
+    "coefficient_family": "q=(1+t)r, deg(r)<=10 over F4",
+    "commutator_factor": "t^8*(t+1)^4*(K+t^4*L)",
+    "commutes_with_physical_energy": true,
+    "equivalent_determinant_degree_target": "strictly less than 70",
+    "exact_number_of_coefficient_vectors": 4194304,
+    "generator_square_zero": true,
+    "input_sha256": "7a67c5054f1b628e0a2798e3dc9d1da9535a0dbbf79bc4b617296f69fa75e009",
+    "nonzero_commutator_degrees": [
+      8,
+      12,
+      16
+    ],
+    "opposite_cut_total_height": 130,
+    "pencil": "A_q=A+q(t)(K+t^4*L), deg(q)<=11, q(1)=0",
+    "physical_pair_energies": [
+      [
+        0,
+        10,
+        6,
+        2,
+        8
+      ],
+      [
+        0,
+        10,
+        6,
+        2,
+        8
+      ]
+    ],
+    "predecessor_commit": "8a3ea3e6aeacba7d0a53764de5579e3707bb2ca7",
+    "predecessor_pr": 57,
+    "sandwich_coefficients_checked": 19,
+    "sufficient_infinity_sum_for_asymmetric_improvement": "strictly greater than 60",
+    "uniform_zero_minimum_order": 8
+  },
+  "contiguous_chunks": 128,
+  "independent_class_replays": [
+    {
+      "q_planes": [
+        1793,
+        3730
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 2545149
+    },
+    {
+      "q_planes": [
+        3262,
+        4068
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 3290852
+    },
+    {
+      "q_planes": [
+        876,
+        2848
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 2731024
+    },
+    {
+      "q_planes": [
+        2376,
+        864
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 1510720
+    },
+    {
+      "q_planes": [
+        1232,
+        2352
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 3098368
+    },
+    {
+      "q_planes": [
+        2848,
+        2560
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 3953664
+    },
+    {
+      "q_planes": [
+        2112,
+        2112
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 4190208
+    },
+    {
+      "q_planes": [
+        3840,
+        3456
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 3244032
+    },
+    {
+      "q_planes": [
+        765,
+        1224
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 773829
+    },
+    {
+      "q_planes": [
+        1768,
+        374
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 308040
+    },
+    {
+      "q_planes": [
+        1532,
+        1604
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 859056
+    },
+    {
+      "q_planes": [
+        1304,
+        664
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 491712
+    },
+    {
+      "q_planes": [
+        1728,
+        1968
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 823808
+    },
+    {
+      "q_planes": [
+        480,
+        1152
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 705536
+    },
+    {
+      "q_planes": [
+        1920,
+        1472
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 942080
+    },
+    {
+      "q_planes": [
+        679,
+        804
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 214001
+    },
+    {
+      "q_planes": [
+        686,
+        444
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 115556
+    },
+    {
+      "q_planes": [
+        768,
+        924
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 207392
+    },
+    {
+      "q_planes": [
+        760,
+        600
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 255168
+    },
+    {
+      "q_planes": [
+        928,
+        272
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 114176
+    },
+    {
+      "q_planes": [
+        864,
+        736
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 232448
+    },
+    {
+      "q_planes": [
+        450,
+        189
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 28126
+    },
+    {
+      "q_planes": [
+        288,
+        114
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 23720
+    },
+    {
+      "q_planes": [
+        340,
+        444
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 53872
+    },
+    {
+      "q_planes": [
+        408,
+        120
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 18624
+    },
+    {
+      "q_planes": [
+        368,
+        80
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 23296
+    },
+    {
+      "q_planes": [
+        243,
+        212
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 12705
+    },
+    {
+      "q_planes": [
+        202,
+        154
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 14908
+    },
+    {
+      "q_planes": [
+        132,
+        40
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 6096
+    },
+    {
+      "q_planes": [
+        160,
+        24
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 5248
+    },
+    {
+      "q_planes": [
+        89,
+        92
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 3893
+    },
+    {
+      "q_planes": [
+        80,
+        102
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 3336
+    },
+    {
+      "q_planes": [
+        40,
+        92
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 2912
+    },
+    {
+      "q_planes": [
+        58,
+        15
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 310
+    },
+    {
+      "q_planes": [
+        40,
+        34
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 1000
+    },
+    {
+      "q_planes": [
+        24,
+        48
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 576
+    },
+    {
+      "q_planes": [
+        12,
+        30
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 152
+    },
+    {
+      "q_planes": [
+        15,
+        3
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 19
+    },
+    {
+      "q_planes": [
+        2560,
+        2304
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 4063232
+    },
+    {
+      "q_planes": [
+        1920,
+        0
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 278528
+    },
+    {
+      "q_planes": [
+        96,
+        320
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 41984
+    },
+    {
+      "q_planes": [
+        240,
+        160
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 14592
+    },
+    {
+      "q_planes": [
+        17,
+        9
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 127
+    },
+    {
+      "q_planes": [
+        320,
+        768
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 151552
+    },
+    {
+      "q_planes": [
+        120,
+        24
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 1216
+    },
+    {
+      "q_planes": [
+        36,
+        12
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 368
+    },
+    {
+      "q_planes": [
+        384,
+        192
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 24576
+    },
+    {
+      "q_planes": [
+        10,
+        12
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 52
+    },
+    {
+      "q_planes": [
+        0,
+        20
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 160
+    },
+    {
+      "q_planes": [
+        384,
+        640
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 180224
+    },
+    {
+      "q_planes": [
+        160,
+        96
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 7168
+    },
+    {
+      "q_planes": [
+        0,
+        3
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 2
+    },
+    {
+      "q_planes": [
+        768,
+        1536
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 589824
+    },
+    {
+      "q_planes": [
+        0,
+        5
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 10
+    },
+    {
+      "q_planes": [
+        96,
+        0
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 1024
+    },
+    {
+      "q_planes": [
+        48,
+        96
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 2304
+    },
+    {
+      "q_planes": [
+        192,
+        192
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 12288
+    },
+    {
+      "q_planes": [
+        24,
+        24
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 192
+    },
+    {
+      "q_planes": [
+        768,
+        768
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 196608
+    },
+    {
+      "q_planes": [
+        0,
+        0
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 0
+    },
+    {
+      "q_planes": [
+        0,
+        6
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 8
+    },
+    {
+      "q_planes": [
+        12,
+        0
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 16
+    },
+    {
+      "q_planes": [
+        384,
+        0
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 16384
+    },
+    {
+      "q_planes": [
+        5,
+        3
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 7
+    },
+    {
+      "q_planes": [
+        48,
+        0
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 256
+    },
+    {
+      "q_planes": [
+        5,
+        0
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 5
+    },
+    {
+      "q_planes": [
+        6,
+        0
+      ],
+      "replay": {
+        "complete_integer_orders": 50,
+        "method": "Packed-F4 fraction-free exact polynomial elimination; no series truncation.",
+        "status": "pass"
+      },
+      "representative": 4
+    }
+  ],
+  "independent_fraction_free_complete_orders": 3350,
+  "opposite_order_sum_histogram": {
+    "8": 3145728,
+    "12": 786432,
+    "16": 196608,
+    "20": 49152,
+    "24": 12288,
+    "28": 3072,
+    "32": 768,
+    "36": 192,
+    "40": 48,
+    "44": 12,
+    "48": 3,
+    "52": 1
+  },
+  "registered_coefficients_covered": 4194304,
+  "scope": "Checks the entire registered coverage/count/hash ledger and independently replays every distinct complete profile representative. It does not repeat all 4,194,304 native profile computations or certify numerical supporting-line minima. No all-field asymmetric obstruction or improved factoring exponent is claimed.",
+  "source_sha256": {
+    "tools/check_joint_energy_conjugations.py": "66d44df5e6be905f902819540795dfb4d9ad3ea7876bacb4bd5bc1104d9d66b7",
+    "tools/check_two_place_census_complete.py": "81248faf1185432c69a4ec943603a6117c307f4a4b16745767b68a435a82942e",
+    "tools/two_place_f4_census.py": "141f066a09f7c68c55ce13af3ad646d50db3d9351b5ba52c09dc36d655f878f0",
+    "tools/weighted_smith_oracle_f4.py": "d277f46caa98dab48d243af64c18e42e09e917bf1e862057a55cb35f74a6d572"
+  },
+  "status": "pass"
+}

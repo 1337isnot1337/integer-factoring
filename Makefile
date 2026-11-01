@@ -2378,6 +2378,15 @@ verify-two-place-f4-census:
 
 verify-frontier: verify-two-place-determinant
 
+.PHONY: verify-graded-zero-lattice verify-two-place-f4-census-complete
+verify-graded-zero-lattice:
+	python3 tools/check_graded_zero_lattice.py --output /tmp/graded-zero-lattice.json
+
+verify-two-place-f4-census-complete:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_two_place_census_complete.py --output /tmp/two-place-census-complete-controls.json
+
+verify-frontier: verify-graded-zero-lattice
+
 .PHONY: verify-coherent-f4-partial
 verify-coherent-f4-partial:
 	python3 tools/check_coherent_hot_f4_partial.py

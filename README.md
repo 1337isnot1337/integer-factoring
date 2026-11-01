@@ -36,8 +36,11 @@ and physical costs are retained. The focused exact controls and registered
 finite searches do not establish a stronger factoring exponent.
 An [all-field determinant classification](research/two-place-determinant-target.md)
 now isolates a sufficient asymmetric target and excludes that particular
-escape for the retained pencil. A [registered full F4 census](research/two-place-f4-census.md)
-continues to test its other asymmetric profile possibilities.
+escape for the retained pencil. The [full F4 census](research/two-place-f4-census.md)
+has completed all 4,194,304 registered cases with zero unresolved cases
+and 67 complete profile classes; its numerical fits give no stronger bound.
+A [constructive graded lattice](research/graded-zero-lattice.md) improves
+the zero prefix to 8,10,10, but its actual opposite profile is worse.
 
 ## Arithmetic construction and space bounds
 

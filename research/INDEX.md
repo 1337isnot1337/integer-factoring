@@ -1,7 +1,8 @@
 # Research index
 
 - [An asymmetric determinant target and an all-field pencil ceiling](two-place-determinant-target.md): determinant degree below 70 would suffice at the retained heights; the full eleven-parameter pencil has exact minimum degree 78 over every characteristic-two field, with a fresh whole-determinant replay.
-- [Registered full F4 two-place census](two-place-f4-census.md): all 4,194,304 coefficient vectors registered, exact endpoint and complete integer profiles, independent class replays, and separate numerical asymmetric fits; the full run is in progress and no score improvement is claimed.
+- [Completed full F4 two-place census](two-place-f4-census.md): all 4,194,304 registered coefficient vectors, zero unresolved cases, 67 complete profile classes and 3,350 independent representative orders; bounded numerical fits give no score improvement.
+- [A constructive graded zero lattice](graded-zero-lattice.md): an explicit degree-38 kernel with normalized zero prefix 8,10,10, complete paired profiles and a zero-preserving polynomial-unit family; its opposite cost is worse and no stronger factoring bound follows.
 
 - [Constant F4 Pascal flags](f4-pascal-flags.md): exact constant-field extension, all 180 invertible two-by-two flags, 448 independent original-Fock orders, a scale-gradient guard repair, and pinned default verification at 566b596; no score improvement.
 
