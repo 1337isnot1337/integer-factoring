@@ -49,6 +49,25 @@ quota checks; add `--replay-search` to the selector checker to repeat every
 large-run query.
 <!-- cofactor-collision-checkpoint:end -->
 
+<!-- coherent-compound-checkpoint:start -->
+## Coherent crossing profiles
+
+The [deletion-closed physical-space construction](research/coherent-hot-compound-retractions.md)
+computes both complete crossing cuts by separate compressed compound matrices.
+A 32-letter coherent map strictly improves its coordinate counterpart at every
+scale and has the exact rational certificate **`rho < 1781/2501`**.
+It also minimizes the product pressure at every scale in the complete
+121-map binary occupation-preserving height-16 boundary class.
+
+The [mixed-occupation extension](research/coherent-hot-mixed-boundary.md)
+supports all 496 binary height-preserving rank-four retractions on that
+boundary. Exact constructors, literal Pfaffian controls, full profile receipts,
+and the 121-map all-scale proof are retained. The certified contraction remains
+above `1/sqrt(2)`; the complete factoring score remains **1/2**.
+Run `make verify-coherent-retractions` for focused exact controls and
+`make verify-coherent-q32-catalogue` to recompute the complete catalogue proof.
+<!-- coherent-compound-checkpoint:end -->
+
 ## Results and evidence
 
 | Claim | Status | Details |
