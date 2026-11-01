@@ -493,6 +493,19 @@ endpoints and linearly many coefficients. Its complete binary spans fail
 the finite half target at lengths two and three; useful uniform rank
 bounds remain open. Run `make verify-ordered-charge-area`.
 
+[Joint-pair energy conjugations](research/joint-energy-conjugations.md)
+preserve one full weighted Smith profile while changing the other cut.
+For the five-letter Gaussian reference, exact commutants reduce the
+leading-coefficient-preserving F4 family to 1,296 distinct tensors.
+Fraction-free profiles and prefix dominance show that none improves the
+reference at its natural heights at any scale. Fixing its next complete
+coefficient forces a trivial conjugation. A tangent-space identity also
+classifies every formal leading-rank-one deformation near the identity
+as a centralizer motion and separate physical diagonal changes.
+Other constant components and weaker order-preserving changes remain
+open. Run `make verify-joint-energy-conjugations` and
+`make verify-joint-leading-tangent`.
+
 The [group-shear extension](research/group-shear-crossings.md) implements
 the swap through three multiplication/division shears over any finite
 `p`-group, with a constant nonzero determinant in characteristic `p`.

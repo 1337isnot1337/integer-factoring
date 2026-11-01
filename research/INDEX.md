@@ -387,6 +387,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 - [Ordered charge-area crossings](ordered-charge-area-crossings.md): growing clocks have an exact integer charge-walk normal form; polynomial-degree field descent preserves the exponent, and a binary area-zero filter retains both strict endpoints with linearly many coefficients; complete binary spans fail at two selected lengths.
 
+- [Joint energy conjugations](joint-energy-conjugations.md): joint-pair changes preserve one entire weighted Smith profile; a 16-dimensional bimodule enumerates the complete 1,296-member F4 orbit fixing the five-letter reference's leading coefficient, and exact prefix dominance excludes any scale improvement at its natural heights; a tangent identity classifies all formal leading-rank-one motions near the identity.
+
 - [Group-shear crossings](group-shear-crossings.md): multiplication/division shears give cubic swap paths over every finite `p`-group in characteristic `p`; exact early-jet certificates exclude six displayed binary seeds, without an all-group claim.
 
 - [All-degree homogeneous Boolean charge bands](homogeneous-boolean-charge-bands.md): a degree-independent loss cap and stronger Gaussian floors exclude all exterior charges and a linearly growing interior band, including overlapping monomials.

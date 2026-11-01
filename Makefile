@@ -137,6 +137,14 @@ verify-subgroup-return:
 verify-ordered-charge-area:
 	python3 tools/check_ordered_charge_area.py
 
+.PHONY: verify-joint-energy-conjugations
+verify-joint-energy-conjugations:
+	python3 tools/check_joint_energy_conjugations.py
+
+.PHONY: verify-joint-leading-tangent
+verify-joint-leading-tangent:
+	python3 tools/check_joint_leading_tangent.py
+
 .PHONY: verify-group-shears
 verify-group-shears:
 	python3 tools/check_group_shear_crossings.py
