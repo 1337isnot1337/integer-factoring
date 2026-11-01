@@ -1,0 +1,48 @@
+{
+  "source_commit": "e9e5817977752e14cee6840f1bd5d59a95332cc9",
+  "source_tree": "404c4bac2dedbc2525fb89e0234f7bb81758f789",
+  "started_utc": "2026-11-01T21:52:46.730668+00:00",
+  "commands": [
+    [
+      "make",
+      "verify",
+      "verify-normal-basis-and",
+      "verify-fixed-cube-projection",
+      "verify-two-axis-global-pairing",
+      "verify-two-axis-cube-regrouping",
+      "verify-block-gaussian-floor",
+      "verify-trace-selection-weil",
+      "verify-mixed-direction-carries",
+      "verify-quartic-interactions",
+      "verify-quartic-weighted-run",
+      "verify-cube-favorable-reweighting",
+      "verify-cube-global-functional-profile"
+    ]
+  ],
+  "pre_status": "",
+  "status": "pass",
+  "results": [
+    {
+      "command": [
+        "make",
+        "verify",
+        "verify-normal-basis-and",
+        "verify-fixed-cube-projection",
+        "verify-two-axis-global-pairing",
+        "verify-two-axis-cube-regrouping",
+        "verify-block-gaussian-floor",
+        "verify-trace-selection-weil",
+        "verify-mixed-direction-carries",
+        "verify-quartic-interactions",
+        "verify-quartic-weighted-run",
+        "verify-cube-favorable-reweighting",
+        "verify-cube-global-functional-profile"
+      ],
+      "returncode": 0,
+      "seconds": 793.7150129522197
+    }
+  ],
+  "seconds": 793.7152242902666,
+  "finished_utc": "2026-11-01T22:06:02.243535+00:00",
+  "post_status": ""
+}

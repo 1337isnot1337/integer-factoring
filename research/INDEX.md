@@ -1,5 +1,7 @@
 # Research index
 
+- [Self-dual Pfaffian codes and uniform crossing blocks](pfaffian-derivative-codes.md): a strict equal-copy Gaussian compression has self-dual deletion codes, a uniform subset constructor, and two explicit Hamming kernels giving every vertex-degree block. Complete finite profiles with independent literal/Toeplitz controls are above the critical target; no score improvement.
+
 - [Determinant derivative physical codes](determinant-inverse-codes.md): all minors give a deletion-closed space of dimension binomial(2k,k), compatible diagonal/antidiagonal retractions and a dense Cauchy dual. Exact finite map acquisition changes the protected low core; favorable complete cut ranks and a score improvement are not inferred from the height character.
 
 - [All-block global-orientation functional profile](cube-global-functional-profile.md): a product-support lemma and all 66 actual oriented functional values exclude every scalar reweighting of globally favorable common-orientation products of the fixed two-word base family, for every block count. Larger native alphabets/new recombinations remain outside scope.

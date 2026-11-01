@@ -1,5 +1,38 @@
 # Contribution review and disposition ledger
 
+## Self-dual Pfaffian codes and uniform representative blocks
+
+The [ordinary construction](../research/pfaffian-derivative-codes.md)
+uses even vertex-subset Pfaffians on edge modes. Odd matching counts give
+P^T P=I over F2 and deletion closure. Identical degree-two Gaussian copies
+supply a strict homogeneous crossing, and a square-zero vertex-subset
+algorithm acquires its entire tensor in 2^O(n) time and space. Both natural
+profiles are the same compressed compound by explicit within-cut unit
+factorization. Vertex-degree conservation and permutation symmetry reduce
+the matrix to O(n²) block types; transposing two internal vertices proves
+M_(a,d)=t⁴ M_(a-2,d), leaving two explicit Hamming kernels.
+
+The finite receipt has 1,092 pairings, 530 deletions, 1,240 direct block
+entries, 108 independent Toeplitz checks, and 4,112 literal/subset tensor
+entries. Four complete literal profiles independently check both cuts for
+n=2,4; the n=6 opposite profile is derived by the proved identity. Sampled
+natural rhos are 0.76023,0.82640,0.83945. No global scale optimum, all-scale
+floor, new Lean or score improvement is asserted. The fixed finite panel
+is closed; further work needs uniform rank structure, not a larger sweep.
+
+## Exact expanded full gate at e9e5817
+
+Clean frozen source `e9e5817977752e14cee6840f1bd5d59a95332cc9`, tree
+`404c4bac2dedbc2525fb89e0234f7bb81758f789`, passed the default suite and
+all eleven listed optional structural/audit targets in 793.72 seconds.
+The [receipt](../evidence/verify-structural-e9e5817.json) and
+[complete log](../evidence/verify-structural-e9e5817.stdout.txt.xz) retain
+the exact command and clean pre/post status. This covers the block floor,
+Weil selector, mixed carries, quartic panel, weighted archive and all-block
+functional separator. It predates the determinant/Pfaffian code work,
+whose focused gates are recorded separately. No hosted or Lean replay is
+inferred from this local Python gate.
+
 ## Completed determinant-code profile panel at 4fcd81c
 
 Clean frozen source4fcd81c666c56a998e1437d3ed57e1940ebd6b8a, tree
