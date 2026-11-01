@@ -1990,6 +1990,12 @@ linear certificate. The sharp binary bound is `256/27`; the scalar bound
 in odd characteristic is `12`. All 65,536 binary scalar pencils are catalogued.
 Higher degree, blocks, and cancellation refinements remain separate routes.
 
+The [unequal-pair extension](research/linear-smith-barrier.md) proves
+`B >= q_X*q_Y*max(q_X,q_Y)` when both alphabets have size at least two.
+A [finite-cover invoice](research/finite-cover-linearization-invoice.md)
+charges the physical states introduced by Artin--Schreier degree compression;
+the resulting bare linear pencil is covered before any large profile search.
+
 For the nilpotent-path construction, a [controlled monomial obstruction](research/controlled-permutation-smith-floor.md)
 extends the existing permutation calculation to dependent and noncommuting
 controls. It gives `B >= q^3/sqrt(2)` in its stated scope. A separate
