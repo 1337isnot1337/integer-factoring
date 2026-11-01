@@ -1,0 +1,24 @@
+{
+  "status": "literal coefficient normal forms and complete polynomial profiles certified",
+  "record_sha256": "767fb52cdd30e0d51fcd2cb56d27b976f3d1c1e1fbf8c58ed82bc6fbae7be502",
+  "source_record_sha256": "9b2e59f48c53d0ddeb7ea53f1f924ebf306cee459660fb577d918053919faa23",
+  "independent_slab_directions": 424,
+  "completed_trials": 300,
+  "distinct_nonreference_profile_queries": 111,
+  "retained_witnesses": 24,
+  "literal_endpoint_entries": 15000,
+  "complete_profiles_certified_by_polynomial_frames": 52,
+  "gauges": {
+    "natural": {
+      "retained_witnesses": 12,
+      "best_rho": 0.7263479477044683,
+      "best_nonzero_witness_rho": 1.0001418639915907
+    },
+    "two_zero": {
+      "retained_witnesses": 12,
+      "best_rho": 0.8335422390094076,
+      "best_nonzero_witness_rho": 1.000141879312495
+    }
+  },
+  "factoring_bound_improved": false
+}
