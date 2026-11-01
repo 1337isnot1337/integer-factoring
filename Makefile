@@ -2689,3 +2689,7 @@ verify-equivalent-norm-stencils:
 .PHONY: verify-compact-power-witnesses
 verify-compact-power-witnesses:
 	python3 tools/check_compact_witness_oriented_power_search.py --replay evidence/compact-witness-oriented-power-search.json
+
+.PHONY: verify-compact-oriented-basis
+verify-compact-oriented-basis:
+	python3 tools/check_compact_oriented_basis.py --output /tmp/compact-oriented-basis-replay.json

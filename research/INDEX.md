@@ -1,5 +1,7 @@
 # Research index
 
+- [Essentially linear compact oriented ideals](compact-oriented-basis-input-bound.md): total-input bit bound, batch discriminant checks, complete arithmetic verification, and independent HNF controls.
+
 - [Global balanced floor for the natural five-letter energy shape](natural-five-letter-pressure-floor.md): every scalar Laurent-polynomial kernel over any field at this paired-energy ray has rho at least 5/7; all 2,456 compact boxes and analytic tails are certified, with changed energy shapes and asymmetric criteria left open.
 
 - [Compact reconstructible power witnesses](compact-reconstructible-power-witnesses.md): unchanged query syntax, independent reconstruction, complete 64/80 comparisons, and earlier checkpoint release.
