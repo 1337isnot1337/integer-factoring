@@ -1,0 +1,16 @@
+{
+  "scope": "Exact finite controls; no stronger factoring bound",
+  "counts": {
+    "queries": 320,
+    "direct_assignments": 10344,
+    "inconsistent": 56,
+    "redundant": 92,
+    "unsplit_controls": 160,
+    "nonzero_answers": 54
+  },
+  "sha256": {
+    "tools/trace_constraint_contraction.py": "cbd50816a984c5cbe7048e2aa849612d6c8b071893f62281e2c4b398c9c0e21a",
+    "tools/check_trace_constraint_contraction.py": "504c73d18a8f30d8ced7271839a5e59a1db0593dcde1c657d1610b1326b34dbf",
+    "tools/joint_frobenius_carries.py": "a383d3db131fce1e932b23dddde55c2c747c5bb117823d2e6c686e26135c75b8"
+  }
+}

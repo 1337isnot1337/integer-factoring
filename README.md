@@ -106,6 +106,12 @@ a strict shared-minor variance floor; moving gauges and interior angles remain o
 
 ## Arithmetic construction and space bounds
 
+A [sparse binary-constraint interface](research/trace-constraint-contraction.md)
+keeps affine bit restrictions outside a synchronized Frobenius product.
+Its cost depends on the binary rank of those restrictions and can retain
+relative dimension one. A complete arithmetic phase representation meeting
+that budget remains open; the factoring score stays `1/2`.
+
 The [output-sensitive space transfer](research/output-sensitive-space-transfer.md)
 recovers a complete factorization from a scalar phase evaluator in time
 `A(n) exp(O(s+n/s+log n))` and space `S(n)+O(s+n/s+log n)`.

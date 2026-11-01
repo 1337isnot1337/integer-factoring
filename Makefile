@@ -2999,3 +2999,7 @@ verify-cyclic-pauli-crossings:
 verify-joint-frobenius:
 	python3 tools/check_joint_frobenius_carries.py
 	python3 tools/check_joint_geometric_box_network.py
+
+.PHONY: verify-trace-constraints
+verify-trace-constraints:
+	python3 tools/check_trace_constraint_contraction.py
