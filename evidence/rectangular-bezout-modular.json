@@ -1,0 +1,1318 @@
+{
+  "claim": "Complete primitive modular Bezout pairs on arbitrary separated arithmetic rectangles",
+  "controls": {
+    "complete_rational_rectangles": 64,
+    "complete_coefficient_comparisons": 612,
+    "low_surplus_rational_checks": 194,
+    "general_increment_product_checks": 96,
+    "invalid_contract_rejections": 5,
+    "examples": [
+      {
+        "parameters": {
+          "n": 7,
+          "first_a": 9,
+          "step_a": 12,
+          "rows": 4,
+          "first_b": 17,
+          "step_b": 12,
+          "columns": 2,
+          "precision": 1
+        },
+        "bezout_exponent": 4,
+        "scale_and_window": {
+          "exponent": 4,
+          "maximizing_index": 2,
+          "defect": 1,
+          "first_examined_index": 0,
+          "examined_indices": 4,
+          "binary_window_bound": 4,
+          "precision": 1,
+          "first_newton_index": 2,
+          "examined_newton_indices": 2,
+          "retained_newton_terms": [
+            {
+              "index": 2,
+              "valuation_gap": 0
+            }
+          ],
+          "reverse_v_depth": 1,
+          "reverse_u_depth": 1
+        },
+        "basis_center": 1,
+        "u_degree": 1,
+        "v_degree": 3,
+        "u_reversed_coefficients": [
+          0,
+          1
+        ],
+        "v_reversed_coefficients": [
+          0,
+          1
+        ],
+        "u_terms": [
+          [
+            0,
+            1
+          ]
+        ],
+        "v_terms": [
+          [
+            2,
+            1
+          ]
+        ],
+        "newton_records": [
+          {
+            "index": 2,
+            "valuation_gap": 0,
+            "scaled_newton_coefficient": 1,
+            "local_precision": 1,
+            "normalized_difference_unit": 1,
+            "row_working_precision": 1
+          }
+        ],
+        "column_surplus_working_precision": 1,
+        "maximum_working_precision": 1,
+        "enumerated_progression_nodes": 0,
+        "scope": "Complete primitive modular Bezout pairs on independent separated arithmetic rectangles; no unknown-root search."
+      },
+      {
+        "parameters": {
+          "n": 43,
+          "first_a": 9,
+          "step_a": 28,
+          "rows": 5,
+          "first_b": 13,
+          "step_b": 12,
+          "columns": 2,
+          "precision": 3
+        },
+        "bezout_exponent": 6,
+        "scale_and_window": {
+          "exponent": 6,
+          "maximizing_index": 4,
+          "defect": 0,
+          "first_examined_index": 1,
+          "examined_indices": 4,
+          "binary_window_bound": 4,
+          "precision": 3,
+          "first_newton_index": 2,
+          "examined_newton_indices": 3,
+          "retained_newton_terms": [
+            {
+              "index": 2,
+              "valuation_gap": 2
+            },
+            {
+              "index": 4,
+              "valuation_gap": 0
+            }
+          ],
+          "reverse_v_depth": 2,
+          "reverse_u_depth": 1
+        },
+        "basis_center": 1,
+        "u_degree": 1,
+        "v_degree": 4,
+        "u_reversed_coefficients": [
+          1
+        ],
+        "v_reversed_coefficients": [
+          3,
+          0,
+          4
+        ],
+        "u_terms": [
+          [
+            1,
+            1
+          ]
+        ],
+        "v_terms": [
+          [
+            4,
+            3
+          ],
+          [
+            2,
+            4
+          ]
+        ],
+        "newton_records": [
+          {
+            "index": 4,
+            "valuation_gap": 0,
+            "scaled_newton_coefficient": 3,
+            "local_precision": 3,
+            "normalized_difference_unit": 1,
+            "row_working_precision": 4
+          },
+          {
+            "index": 2,
+            "valuation_gap": 2,
+            "scaled_newton_coefficient": 4,
+            "local_precision": 1,
+            "normalized_difference_unit": 1,
+            "row_working_precision": 1
+          }
+        ],
+        "column_surplus_working_precision": 4,
+        "maximum_working_precision": 4,
+        "enumerated_progression_nodes": 0,
+        "scope": "Complete primitive modular Bezout pairs on independent separated arithmetic rectangles; no unknown-root search."
+      },
+      {
+        "parameters": {
+          "n": 43,
+          "first_a": 9,
+          "step_a": 12,
+          "rows": 1,
+          "first_b": 1,
+          "step_b": 12,
+          "columns": 1,
+          "precision": 4
+        },
+        "bezout_exponent": 1,
+        "scale_and_window": {
+          "exponent": 1,
+          "maximizing_index": 0,
+          "defect": 0,
+          "first_examined_index": 0,
+          "examined_indices": 1,
+          "binary_window_bound": 2,
+          "precision": 4,
+          "first_newton_index": 0,
+          "examined_newton_indices": 1,
+          "retained_newton_terms": [
+            {
+              "index": 0,
+              "valuation_gap": 0
+            }
+          ],
+          "reverse_v_depth": 0,
+          "reverse_u_depth": 0
+        },
+        "basis_center": 1,
+        "u_degree": 0,
+        "v_degree": 0,
+        "u_reversed_coefficients": [
+          1
+        ],
+        "v_reversed_coefficients": [
+          1
+        ],
+        "u_terms": [
+          [
+            0,
+            1
+          ]
+        ],
+        "v_terms": [
+          [
+            0,
+            1
+          ]
+        ],
+        "newton_records": [
+          {
+            "index": 0,
+            "valuation_gap": 0,
+            "scaled_newton_coefficient": 1,
+            "local_precision": 4,
+            "normalized_difference_unit": 1,
+            "row_working_precision": 5
+          }
+        ],
+        "column_surplus_working_precision": 5,
+        "maximum_working_precision": 5,
+        "enumerated_progression_nodes": 0,
+        "scope": "Complete primitive modular Bezout pairs on independent separated arithmetic rectangles; no unknown-root search."
+      },
+      {
+        "parameters": {
+          "n": 23,
+          "first_a": 17,
+          "step_a": 20,
+          "rows": 1,
+          "first_b": 1,
+          "step_b": 4,
+          "columns": 7,
+          "precision": 5
+        },
+        "bezout_exponent": 7,
+        "scale_and_window": {
+          "exponent": 7,
+          "maximizing_index": 0,
+          "defect": 0,
+          "first_examined_index": 0,
+          "examined_indices": 1,
+          "binary_window_bound": 4,
+          "precision": 5,
+          "first_newton_index": 0,
+          "examined_newton_indices": 1,
+          "retained_newton_terms": [
+            {
+              "index": 0,
+              "valuation_gap": 0
+            }
+          ],
+          "reverse_v_depth": 0,
+          "reverse_u_depth": 4
+        },
+        "basis_center": 1,
+        "u_degree": 6,
+        "v_degree": 0,
+        "u_reversed_coefficients": [
+          25,
+          2,
+          20,
+          8,
+          16
+        ],
+        "v_reversed_coefficients": [
+          5
+        ],
+        "u_terms": [
+          [
+            6,
+            25
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            4,
+            20
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            2,
+            16
+          ]
+        ],
+        "v_terms": [
+          [
+            0,
+            5
+          ]
+        ],
+        "newton_records": [
+          {
+            "index": 0,
+            "valuation_gap": 0,
+            "scaled_newton_coefficient": 5,
+            "local_precision": 5,
+            "normalized_difference_unit": 7,
+            "row_working_precision": 8
+          }
+        ],
+        "column_surplus_working_precision": 9,
+        "maximum_working_precision": 9,
+        "enumerated_progression_nodes": 0,
+        "scope": "Complete primitive modular Bezout pairs on independent separated arithmetic rectangles; no unknown-root search."
+      },
+      {
+        "parameters": {
+          "n": 35,
+          "first_a": 13,
+          "step_a": 20,
+          "rows": 7,
+          "first_b": 13,
+          "step_b": 20,
+          "columns": 1,
+          "precision": 5
+        },
+        "bezout_exponent": 7,
+        "scale_and_window": {
+          "exponent": 7,
+          "maximizing_index": 6,
+          "defect": 0,
+          "first_examined_index": 3,
+          "examined_indices": 4,
+          "binary_window_bound": 4,
+          "precision": 5,
+          "first_newton_index": 2,
+          "examined_newton_indices": 5,
+          "retained_newton_terms": [
+            {
+              "index": 2,
+              "valuation_gap": 4
+            },
+            {
+              "index": 3,
+              "valuation_gap": 3
+            },
+            {
+              "index": 4,
+              "valuation_gap": 2
+            },
+            {
+              "index": 5,
+              "valuation_gap": 1
+            },
+            {
+              "index": 6,
+              "valuation_gap": 0
+            }
+          ],
+          "reverse_v_depth": 4,
+          "reverse_u_depth": 0
+        },
+        "basis_center": 1,
+        "u_degree": 0,
+        "v_degree": 6,
+        "u_reversed_coefficients": [
+          11
+        ],
+        "v_reversed_coefficients": [
+          23,
+          26,
+          12,
+          8,
+          16
+        ],
+        "u_terms": [
+          [
+            0,
+            11
+          ]
+        ],
+        "v_terms": [
+          [
+            6,
+            23
+          ],
+          [
+            5,
+            26
+          ],
+          [
+            4,
+            12
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            2,
+            16
+          ]
+        ],
+        "newton_records": [
+          {
+            "index": 6,
+            "valuation_gap": 0,
+            "scaled_newton_coefficient": 23,
+            "local_precision": 5,
+            "normalized_difference_unit": 9,
+            "row_working_precision": 9
+          },
+          {
+            "index": 5,
+            "valuation_gap": 1,
+            "scaled_newton_coefficient": 6,
+            "local_precision": 4,
+            "normalized_difference_unit": 9,
+            "row_working_precision": 8
+          },
+          {
+            "index": 4,
+            "valuation_gap": 2,
+            "scaled_newton_coefficient": 20,
+            "local_precision": 3,
+            "normalized_difference_unit": 1,
+            "row_working_precision": 4
+          },
+          {
+            "index": 3,
+            "valuation_gap": 3,
+            "scaled_newton_coefficient": 8,
+            "local_precision": 2,
+            "normalized_difference_unit": 1,
+            "row_working_precision": 4
+          },
+          {
+            "index": 2,
+            "valuation_gap": 4,
+            "scaled_newton_coefficient": 16,
+            "local_precision": 1,
+            "normalized_difference_unit": 1,
+            "row_working_precision": 1
+          }
+        ],
+        "column_surplus_working_precision": 8,
+        "maximum_working_precision": 9,
+        "enumerated_progression_nodes": 0,
+        "scope": "Complete primitive modular Bezout pairs on independent separated arithmetic rectangles; no unknown-root search."
+      }
+    ]
+  },
+  "factoring_exponent_improved": false,
+  "implicit_controls": [
+    {
+      "lower_seconds": 0.27651248700203723,
+      "lower": {
+        "parameters": {
+          "n": 5164499756173817179311838344006023748659411585658447025661318713081295244033682389259290706560275662871806343945494986755,
+          "first_a": 1,
+          "step_a": 12,
+          "rows": 1606938044258990275541962092341162602522202993782792835301389,
+          "first_b": 9,
+          "step_b": 20,
+          "columns": 11972621413014756705924586149611790497021399392059397,
+          "precision": 5
+        },
+        "bezout_exponent": 1606938056231611688556718798265748752133993490804192227360784,
+        "scale_and_window": {
+          "exponent": 1606938056231611688556718798265748752133993490804192227360784,
+          "maximizing_index": 1606938044258990275541962092341162602522202993782792835301387,
+          "defect": 1,
+          "first_examined_index": 1606938044258990275541962092341162602522202993782792835301187,
+          "examined_indices": 202,
+          "binary_window_bound": 202,
+          "precision": 5,
+          "first_newton_index": 1606938044258990275541962092341162602522202993782792835301383,
+          "examined_newton_indices": 6,
+          "retained_newton_terms": [
+            {
+              "index": 1606938044258990275541962092341162602522202993782792835301384,
+              "valuation_gap": 3
+            },
+            {
+              "index": 1606938044258990275541962092341162602522202993782792835301385,
+              "valuation_gap": 2
+            },
+            {
+              "index": 1606938044258990275541962092341162602522202993782792835301386,
+              "valuation_gap": 1
+            },
+            {
+              "index": 1606938044258990275541962092341162602522202993782792835301387,
+              "valuation_gap": 0
+            },
+            {
+              "index": 1606938044258990275541962092341162602522202993782792835301388,
+              "valuation_gap": 1
+            }
+          ],
+          "reverse_v_depth": 5,
+          "reverse_u_depth": 5
+        },
+        "basis_center": 1,
+        "u_degree": 11972621413014756705924586149611790497021399392059396,
+        "v_degree": 1606938044258990275541962092341162602522202993782792835301388,
+        "u_reversed_coefficients": [
+          22,
+          25,
+          24,
+          16
+        ],
+        "v_reversed_coefficients": [
+          22,
+          5,
+          2,
+          28,
+          24
+        ],
+        "u_terms": [
+          [
+            11972621413014756705924586149611790497021399392059396,
+            22
+          ],
+          [
+            11972621413014756705924586149611790497021399392059395,
+            25
+          ],
+          [
+            11972621413014756705924586149611790497021399392059394,
+            24
+          ],
+          [
+            11972621413014756705924586149611790497021399392059393,
+            16
+          ]
+        ],
+        "v_terms": [
+          [
+            1606938044258990275541962092341162602522202993782792835301388,
+            22
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301387,
+            5
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301386,
+            2
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301385,
+            28
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301384,
+            24
+          ]
+        ],
+        "newton_records": [
+          {
+            "index": 1606938044258990275541962092341162602522202993782792835301388,
+            "valuation_gap": 1,
+            "scaled_newton_coefficient": 22,
+            "local_precision": 4,
+            "normalized_difference_unit": 5,
+            "row_working_precision": 5
+          },
+          {
+            "index": 1606938044258990275541962092341162602522202993782792835301387,
+            "valuation_gap": 0,
+            "scaled_newton_coefficient": 21,
+            "local_precision": 5,
+            "normalized_difference_unit": 1,
+            "row_working_precision": 8
+          },
+          {
+            "index": 1606938044258990275541962092341162602522202993782792835301386,
+            "valuation_gap": 1,
+            "scaled_newton_coefficient": 6,
+            "local_precision": 4,
+            "normalized_difference_unit": 1,
+            "row_working_precision": 6
+          },
+          {
+            "index": 1606938044258990275541962092341162602522202993782792835301385,
+            "valuation_gap": 2,
+            "scaled_newton_coefficient": 4,
+            "local_precision": 3,
+            "normalized_difference_unit": 5,
+            "row_working_precision": 4
+          },
+          {
+            "index": 1606938044258990275541962092341162602522202993782792835301384,
+            "valuation_gap": 3,
+            "scaled_newton_coefficient": 24,
+            "local_precision": 2,
+            "normalized_difference_unit": 1,
+            "row_working_precision": 2
+          }
+        ],
+        "column_surplus_working_precision": 9,
+        "maximum_working_precision": 9,
+        "enumerated_progression_nodes": 0,
+        "scope": "Complete primitive modular Bezout pairs on independent separated arithmetic rectangles; no unknown-root search."
+      },
+      "higher": {
+        "parameters": {
+          "n": 5164499756173817179311838344006023748659411585658447025661318713081295244033682389259290706560275662871806343945494986755,
+          "first_a": 1,
+          "step_a": 12,
+          "rows": 1606938044258990275541962092341162602522202993782792835301389,
+          "first_b": 9,
+          "step_b": 20,
+          "columns": 11972621413014756705924586149611790497021399392059397,
+          "precision": 7
+        },
+        "bezout_exponent": 1606938056231611688556718798265748752133993490804192227360784,
+        "scale_and_window": {
+          "exponent": 1606938056231611688556718798265748752133993490804192227360784,
+          "maximizing_index": 1606938044258990275541962092341162602522202993782792835301387,
+          "defect": 1,
+          "first_examined_index": 1606938044258990275541962092341162602522202993782792835301187,
+          "examined_indices": 202,
+          "binary_window_bound": 202,
+          "precision": 7,
+          "first_newton_index": 1606938044258990275541962092341162602522202993782792835301381,
+          "examined_newton_indices": 8,
+          "retained_newton_terms": [
+            {
+              "index": 1606938044258990275541962092341162602522202993782792835301382,
+              "valuation_gap": 6
+            },
+            {
+              "index": 1606938044258990275541962092341162602522202993782792835301383,
+              "valuation_gap": 5
+            },
+            {
+              "index": 1606938044258990275541962092341162602522202993782792835301384,
+              "valuation_gap": 3
+            },
+            {
+              "index": 1606938044258990275541962092341162602522202993782792835301385,
+              "valuation_gap": 2
+            },
+            {
+              "index": 1606938044258990275541962092341162602522202993782792835301386,
+              "valuation_gap": 1
+            },
+            {
+              "index": 1606938044258990275541962092341162602522202993782792835301387,
+              "valuation_gap": 0
+            },
+            {
+              "index": 1606938044258990275541962092341162602522202993782792835301388,
+              "valuation_gap": 1
+            }
+          ],
+          "reverse_v_depth": 7,
+          "reverse_u_depth": 7
+        },
+        "basis_center": 1,
+        "u_degree": 11972621413014756705924586149611790497021399392059396,
+        "v_degree": 1606938044258990275541962092341162602522202993782792835301388,
+        "u_reversed_coefficients": [
+          86,
+          25,
+          120,
+          16,
+          96
+        ],
+        "v_reversed_coefficients": [
+          22,
+          69,
+          98,
+          124,
+          24,
+          32,
+          64
+        ],
+        "u_terms": [
+          [
+            11972621413014756705924586149611790497021399392059396,
+            86
+          ],
+          [
+            11972621413014756705924586149611790497021399392059395,
+            25
+          ],
+          [
+            11972621413014756705924586149611790497021399392059394,
+            120
+          ],
+          [
+            11972621413014756705924586149611790497021399392059393,
+            16
+          ],
+          [
+            11972621413014756705924586149611790497021399392059392,
+            96
+          ]
+        ],
+        "v_terms": [
+          [
+            1606938044258990275541962092341162602522202993782792835301388,
+            22
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301387,
+            69
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301386,
+            98
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301385,
+            124
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301384,
+            24
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301383,
+            32
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301382,
+            64
+          ]
+        ],
+        "newton_records": [
+          {
+            "index": 1606938044258990275541962092341162602522202993782792835301388,
+            "valuation_gap": 1,
+            "scaled_newton_coefficient": 22,
+            "local_precision": 6,
+            "normalized_difference_unit": 5,
+            "row_working_precision": 11
+          },
+          {
+            "index": 1606938044258990275541962092341162602522202993782792835301387,
+            "valuation_gap": 0,
+            "scaled_newton_coefficient": 85,
+            "local_precision": 7,
+            "normalized_difference_unit": 97,
+            "row_working_precision": 14
+          },
+          {
+            "index": 1606938044258990275541962092341162602522202993782792835301386,
+            "valuation_gap": 1,
+            "scaled_newton_coefficient": 38,
+            "local_precision": 6,
+            "normalized_difference_unit": 49,
+            "row_working_precision": 9
+          },
+          {
+            "index": 1606938044258990275541962092341162602522202993782792835301385,
+            "valuation_gap": 2,
+            "scaled_newton_coefficient": 36,
+            "local_precision": 5,
+            "normalized_difference_unit": 21,
+            "row_working_precision": 8
+          },
+          {
+            "index": 1606938044258990275541962092341162602522202993782792835301384,
+            "valuation_gap": 3,
+            "scaled_newton_coefficient": 24,
+            "local_precision": 4,
+            "normalized_difference_unit": 13,
+            "row_working_precision": 5
+          },
+          {
+            "index": 1606938044258990275541962092341162602522202993782792835301383,
+            "valuation_gap": 5,
+            "scaled_newton_coefficient": 32,
+            "local_precision": 2,
+            "normalized_difference_unit": 1,
+            "row_working_precision": 5
+          },
+          {
+            "index": 1606938044258990275541962092341162602522202993782792835301382,
+            "valuation_gap": 6,
+            "scaled_newton_coefficient": 64,
+            "local_precision": 1,
+            "normalized_difference_unit": 1,
+            "row_working_precision": 1
+          }
+        ],
+        "column_surplus_working_precision": 12,
+        "maximum_working_precision": 14,
+        "enumerated_progression_nodes": 0,
+        "scope": "Complete primitive modular Bezout pairs on independent separated arithmetic rectangles; no unknown-root search."
+      },
+      "complete_modular_identity_verified": true
+    },
+    {
+      "lower_seconds": 1.1527183990001504,
+      "lower": {
+        "parameters": {
+          "n": 5164499756173817179311838344006023748659411585658447025661318713081295244033682389259290706560275662871806343945494986755,
+          "first_a": 1,
+          "step_a": 12,
+          "rows": 1361129467683753853853498429727072845824,
+          "first_b": 9,
+          "step_b": 20,
+          "columns": 1606938044258990275541962092341162602522202993782792835301376,
+          "precision": 4
+        },
+        "bezout_exponent": 1606938044258990275543323221808846356376056492212519908146999,
+        "scale_and_window": {
+          "exponent": 1606938044258990275543323221808846356376056492212519908146999,
+          "maximizing_index": 1361129467683753853853498429727072845822,
+          "defect": 200,
+          "first_examined_index": 1361129467683753853853498429727072845622,
+          "examined_indices": 202,
+          "binary_window_bound": 202,
+          "precision": 4,
+          "first_newton_index": 1361129467683753853853498429727072845620,
+          "examined_newton_indices": 204,
+          "retained_newton_terms": [
+            {
+              "index": 1361129467683753853853498429727072845820,
+              "valuation_gap": 1
+            },
+            {
+              "index": 1361129467683753853853498429727072845821,
+              "valuation_gap": 2
+            },
+            {
+              "index": 1361129467683753853853498429727072845822,
+              "valuation_gap": 0
+            },
+            {
+              "index": 1361129467683753853853498429727072845823,
+              "valuation_gap": 0
+            }
+          ],
+          "reverse_v_depth": 203,
+          "reverse_u_depth": 203
+        },
+        "basis_center": 1,
+        "u_degree": 1606938044258990275541962092341162602522202993782792835301375,
+        "v_degree": 1361129467683753853853498429727072845823,
+        "u_reversed_coefficients": [
+          11,
+          7,
+          0,
+          2
+        ],
+        "v_reversed_coefficients": [
+          5,
+          9,
+          0,
+          14
+        ],
+        "u_terms": [
+          [
+            1606938044258990275541962092341162602522202993782792835301375,
+            11
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301374,
+            7
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301372,
+            2
+          ]
+        ],
+        "v_terms": [
+          [
+            1361129467683753853853498429727072845823,
+            5
+          ],
+          [
+            1361129467683753853853498429727072845822,
+            9
+          ],
+          [
+            1361129467683753853853498429727072845820,
+            14
+          ]
+        ],
+        "newton_records": [
+          {
+            "index": 1361129467683753853853498429727072845823,
+            "valuation_gap": 0,
+            "scaled_newton_coefficient": 5,
+            "local_precision": 4,
+            "normalized_difference_unit": 11,
+            "row_working_precision": 135
+          },
+          {
+            "index": 1361129467683753853853498429727072845822,
+            "valuation_gap": 0,
+            "scaled_newton_coefficient": 5,
+            "local_precision": 4,
+            "normalized_difference_unit": 9,
+            "row_working_precision": 134
+          },
+          {
+            "index": 1361129467683753853853498429727072845821,
+            "valuation_gap": 2,
+            "scaled_newton_coefficient": 4,
+            "local_precision": 2,
+            "normalized_difference_unit": 3,
+            "row_working_precision": 3
+          },
+          {
+            "index": 1361129467683753853853498429727072845820,
+            "valuation_gap": 1,
+            "scaled_newton_coefficient": 14,
+            "local_precision": 3,
+            "normalized_difference_unit": 1,
+            "row_working_precision": 4
+          }
+        ],
+        "column_surplus_working_precision": 205,
+        "maximum_working_precision": 205,
+        "enumerated_progression_nodes": 0,
+        "scope": "Complete primitive modular Bezout pairs on independent separated arithmetic rectangles; no unknown-root search."
+      },
+      "higher": {
+        "parameters": {
+          "n": 5164499756173817179311838344006023748659411585658447025661318713081295244033682389259290706560275662871806343945494986755,
+          "first_a": 1,
+          "step_a": 12,
+          "rows": 1361129467683753853853498429727072845824,
+          "first_b": 9,
+          "step_b": 20,
+          "columns": 1606938044258990275541962092341162602522202993782792835301376,
+          "precision": 6
+        },
+        "bezout_exponent": 1606938044258990275543323221808846356376056492212519908146999,
+        "scale_and_window": {
+          "exponent": 1606938044258990275543323221808846356376056492212519908146999,
+          "maximizing_index": 1361129467683753853853498429727072845822,
+          "defect": 200,
+          "first_examined_index": 1361129467683753853853498429727072845622,
+          "examined_indices": 202,
+          "binary_window_bound": 202,
+          "precision": 6,
+          "first_newton_index": 1361129467683753853853498429727072845618,
+          "examined_newton_indices": 206,
+          "retained_newton_terms": [
+            {
+              "index": 1361129467683753853853498429727072845816,
+              "valuation_gap": 4
+            },
+            {
+              "index": 1361129467683753853853498429727072845818,
+              "valuation_gap": 4
+            },
+            {
+              "index": 1361129467683753853853498429727072845819,
+              "valuation_gap": 4
+            },
+            {
+              "index": 1361129467683753853853498429727072845820,
+              "valuation_gap": 1
+            },
+            {
+              "index": 1361129467683753853853498429727072845821,
+              "valuation_gap": 2
+            },
+            {
+              "index": 1361129467683753853853498429727072845822,
+              "valuation_gap": 0
+            },
+            {
+              "index": 1361129467683753853853498429727072845823,
+              "valuation_gap": 0
+            }
+          ],
+          "reverse_v_depth": 205,
+          "reverse_u_depth": 205
+        },
+        "basis_center": 1,
+        "u_degree": 1606938044258990275541962092341162602522202993782792835301375,
+        "v_degree": 1361129467683753853853498429727072845823,
+        "u_reversed_coefficients": [
+          59,
+          39,
+          32,
+          34,
+          0,
+          48,
+          0,
+          16
+        ],
+        "v_reversed_coefficients": [
+          5,
+          25,
+          32,
+          30,
+          0,
+          16,
+          0,
+          48
+        ],
+        "u_terms": [
+          [
+            1606938044258990275541962092341162602522202993782792835301375,
+            59
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301374,
+            39
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301373,
+            32
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301372,
+            34
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301370,
+            48
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301368,
+            16
+          ]
+        ],
+        "v_terms": [
+          [
+            1361129467683753853853498429727072845823,
+            5
+          ],
+          [
+            1361129467683753853853498429727072845822,
+            25
+          ],
+          [
+            1361129467683753853853498429727072845821,
+            32
+          ],
+          [
+            1361129467683753853853498429727072845820,
+            30
+          ],
+          [
+            1361129467683753853853498429727072845818,
+            16
+          ],
+          [
+            1361129467683753853853498429727072845816,
+            48
+          ]
+        ],
+        "newton_records": [
+          {
+            "index": 1361129467683753853853498429727072845823,
+            "valuation_gap": 0,
+            "scaled_newton_coefficient": 5,
+            "local_precision": 6,
+            "normalized_difference_unit": 59,
+            "row_working_precision": 139
+          },
+          {
+            "index": 1361129467683753853853498429727072845822,
+            "valuation_gap": 0,
+            "scaled_newton_coefficient": 21,
+            "local_precision": 6,
+            "normalized_difference_unit": 57,
+            "row_working_precision": 137
+          },
+          {
+            "index": 1361129467683753853853498429727072845821,
+            "valuation_gap": 2,
+            "scaled_newton_coefficient": 4,
+            "local_precision": 4,
+            "normalized_difference_unit": 3,
+            "row_working_precision": 135
+          },
+          {
+            "index": 1361129467683753853853498429727072845820,
+            "valuation_gap": 1,
+            "scaled_newton_coefficient": 14,
+            "local_precision": 5,
+            "normalized_difference_unit": 17,
+            "row_working_precision": 136
+          },
+          {
+            "index": 1361129467683753853853498429727072845819,
+            "valuation_gap": 4,
+            "scaled_newton_coefficient": 16,
+            "local_precision": 2,
+            "normalized_difference_unit": 3,
+            "row_working_precision": 4
+          },
+          {
+            "index": 1361129467683753853853498429727072845818,
+            "valuation_gap": 4,
+            "scaled_newton_coefficient": 48,
+            "local_precision": 2,
+            "normalized_difference_unit": 1,
+            "row_working_precision": 2
+          },
+          {
+            "index": 1361129467683753853853498429727072845816,
+            "valuation_gap": 4,
+            "scaled_newton_coefficient": 48,
+            "local_precision": 2,
+            "normalized_difference_unit": 1,
+            "row_working_precision": 2
+          }
+        ],
+        "column_surplus_working_precision": 209,
+        "maximum_working_precision": 209,
+        "enumerated_progression_nodes": 0,
+        "scope": "Complete primitive modular Bezout pairs on independent separated arithmetic rectangles; no unknown-root search."
+      },
+      "complete_modular_identity_verified": true
+    },
+    {
+      "lower_seconds": 0.32880929799648584,
+      "lower": {
+        "parameters": {
+          "n": 5164499756173817179311838344006023748659411585658447025661318713081295244033682389259290706560275662871806343945494986755,
+          "first_a": 1,
+          "step_a": 12,
+          "rows": 1,
+          "first_b": 9,
+          "step_b": 20,
+          "columns": 115792089237316195423570985008687907853269984665640564039457584007913129639943,
+          "precision": 5
+        },
+        "bezout_exponent": 115792089237316195423570985008687907853269984665640564039457584007913129639943,
+        "scale_and_window": {
+          "exponent": 115792089237316195423570985008687907853269984665640564039457584007913129639943,
+          "maximizing_index": 0,
+          "defect": 0,
+          "first_examined_index": 0,
+          "examined_indices": 1,
+          "binary_window_bound": 258,
+          "precision": 5,
+          "first_newton_index": 0,
+          "examined_newton_indices": 1,
+          "retained_newton_terms": [
+            {
+              "index": 0,
+              "valuation_gap": 0
+            }
+          ],
+          "reverse_v_depth": 0,
+          "reverse_u_depth": 4
+        },
+        "basis_center": 1,
+        "u_degree": 115792089237316195423570985008687907853269984665640564039457584007913129639942,
+        "v_degree": 0,
+        "u_reversed_coefficients": [
+          11,
+          18,
+          28,
+          8,
+          16
+        ],
+        "v_reversed_coefficients": [
+          23
+        ],
+        "u_terms": [
+          [
+            115792089237316195423570985008687907853269984665640564039457584007913129639942,
+            11
+          ],
+          [
+            115792089237316195423570985008687907853269984665640564039457584007913129639941,
+            18
+          ],
+          [
+            115792089237316195423570985008687907853269984665640564039457584007913129639940,
+            28
+          ],
+          [
+            115792089237316195423570985008687907853269984665640564039457584007913129639939,
+            8
+          ],
+          [
+            115792089237316195423570985008687907853269984665640564039457584007913129639938,
+            16
+          ]
+        ],
+        "v_terms": [
+          [
+            0,
+            23
+          ]
+        ],
+        "newton_records": [
+          {
+            "index": 0,
+            "valuation_gap": 0,
+            "scaled_newton_coefficient": 23,
+            "local_precision": 5,
+            "normalized_difference_unit": 21,
+            "row_working_precision": 8
+          }
+        ],
+        "column_surplus_working_precision": 9,
+        "maximum_working_precision": 9,
+        "enumerated_progression_nodes": 0,
+        "scope": "Complete primitive modular Bezout pairs on independent separated arithmetic rectangles; no unknown-root search."
+      },
+      "higher": {
+        "parameters": {
+          "n": 5164499756173817179311838344006023748659411585658447025661318713081295244033682389259290706560275662871806343945494986755,
+          "first_a": 1,
+          "step_a": 12,
+          "rows": 1,
+          "first_b": 9,
+          "step_b": 20,
+          "columns": 115792089237316195423570985008687907853269984665640564039457584007913129639943,
+          "precision": 7
+        },
+        "bezout_exponent": 115792089237316195423570985008687907853269984665640564039457584007913129639943,
+        "scale_and_window": {
+          "exponent": 115792089237316195423570985008687907853269984665640564039457584007913129639943,
+          "maximizing_index": 0,
+          "defect": 0,
+          "first_examined_index": 0,
+          "examined_indices": 1,
+          "binary_window_bound": 258,
+          "precision": 7,
+          "first_newton_index": 0,
+          "examined_newton_indices": 1,
+          "retained_newton_terms": [
+            {
+              "index": 0,
+              "valuation_gap": 0
+            }
+          ],
+          "reverse_v_depth": 0,
+          "reverse_u_depth": 6
+        },
+        "basis_center": 1,
+        "u_degree": 115792089237316195423570985008687907853269984665640564039457584007913129639942,
+        "v_degree": 0,
+        "u_reversed_coefficients": [
+          75,
+          82,
+          92,
+          104,
+          16,
+          96,
+          64
+        ],
+        "v_reversed_coefficients": [
+          55
+        ],
+        "u_terms": [
+          [
+            115792089237316195423570985008687907853269984665640564039457584007913129639942,
+            75
+          ],
+          [
+            115792089237316195423570985008687907853269984665640564039457584007913129639941,
+            82
+          ],
+          [
+            115792089237316195423570985008687907853269984665640564039457584007913129639940,
+            92
+          ],
+          [
+            115792089237316195423570985008687907853269984665640564039457584007913129639939,
+            104
+          ],
+          [
+            115792089237316195423570985008687907853269984665640564039457584007913129639938,
+            16
+          ],
+          [
+            115792089237316195423570985008687907853269984665640564039457584007913129639937,
+            96
+          ],
+          [
+            115792089237316195423570985008687907853269984665640564039457584007913129639936,
+            64
+          ]
+        ],
+        "v_terms": [
+          [
+            0,
+            55
+          ]
+        ],
+        "newton_records": [
+          {
+            "index": 0,
+            "valuation_gap": 0,
+            "scaled_newton_coefficient": 55,
+            "local_precision": 7,
+            "normalized_difference_unit": 85,
+            "row_working_precision": 11
+          }
+        ],
+        "column_surplus_working_precision": 13,
+        "maximum_working_precision": 13,
+        "enumerated_progression_nodes": 0,
+        "scope": "Complete primitive modular Bezout pairs on independent separated arithmetic rectangles; no unknown-root search."
+      },
+      "complete_modular_identity_verified": true
+    }
+  ],
+  "source_sha256": {
+    "check_rectangular_bezout_modular.py": "7cbb9c0429a3a49e6e044e20ec50688cb650c4dc69d398f5fb11111eb62abb8e",
+    "rectangular_bezout_modular.py": "14d9afc65c009a8836ae8cd932f9a6ca5036f627987ccae21957ce1cd328c6c7",
+    "rectangular_bezout_scale.py": "b524b98f5bbe777a3a43c84772c29d1484ab028ba59b98871d1979791bc010e2",
+    "interval_unit_jets.py": "264d9583e1cb6a46f8e141387445c6b43db9045d4724af0ab316dc60fe53c256",
+    "pole_cauchy_conditioning.py": "9277946eed975969a63ee7c7f251c0422d3101d4ca2e945fc458b8ae7a015f7c"
+  }
+}

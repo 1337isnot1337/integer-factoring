@@ -2217,3 +2217,7 @@ verify-local-parity-gauge:
 verify-rectangular-bezout-denominator:
 	python3 tools/check_rectangular_bezout_denominator.py --output /tmp/rectangular-bezout-denominator.json
 	python3 tools/check_rectangular_bezout_scale.py --output /tmp/rectangular-bezout-scale.json
+
+.PHONY: verify-rectangular-bezout-modular
+verify-rectangular-bezout-modular:
+	python3 tools/check_rectangular_bezout_modular.py --output /tmp/rectangular-bezout-modular.json
