@@ -1,5 +1,7 @@
 # Research index
 
+- [Determinant derivative physical codes](determinant-inverse-codes.md): all minors give a deletion-closed space of dimension binomial(2k,k), compatible diagonal/antidiagonal retractions and a dense Cauchy dual. Exact finite map acquisition changes the protected low core; favorable complete cut ranks and a score improvement are not inferred from the height character.
+
 - [All-block global-orientation functional profile](cube-global-functional-profile.md): a product-support lemma and all 66 actual oriented functional values exclude every scalar reweighting of globally favorable common-orientation products of the fixed two-word base family, for every block count. Larger native alphabets/new recombinations remain outside scope.
 
 - [Scalar reweighting of favorable cube orientations](cube-favorable-reweighting.md): all 30 tied favorable generators of the actual single-block audit family lie in an eight-dimensional span excluding the endpoint, certified by two entries over every characteristic-two extension. Global coupled-block selection is outside this finite certificate.

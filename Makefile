@@ -3198,3 +3198,7 @@ verify-cube-favorable-reweighting:
 .PHONY: verify-cube-global-functional-profile
 verify-cube-global-functional-profile:
 	python3 tools/check_cube_global_functional_profile.py
+
+.PHONY: verify-determinant-inverse-codes
+verify-determinant-inverse-codes:
+	python3 tools/check_determinant_inverse_codes.py

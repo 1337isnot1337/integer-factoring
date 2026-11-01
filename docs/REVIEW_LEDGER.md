@@ -1,5 +1,23 @@
 # Contribution review and disposition ledger
 
+## Determinant derivative physical-map acquisition
+
+The [determinant code construction](../research/determinant-inverse-codes.md)
+uses the classical all-minor derivative space, with a direct squarefree
+proof in characteristic two. The dimension is binomial(2k,k), and the
+explicit physical height character is computed without enumerating a
+basis. Diagonal and antidiagonal matching retractions, plus a dense dual
+from a fixed totally nonsingular F8 Cauchy matrix, preserve both gradings
+and deletion closure and satisfy LP=I. The finite implementation acquires
+all six k=2,3 map pairs. Controls retain 612 deletions on each side,1308
+pairing entries,26 independently eliminated Cauchy minors and1056 complete
+top derivatives. Character identities through k=12 do not determine cut
+ranks or provide a growing-k evaluator. Complete finite profiles and
+pressure remain a separate registered diagnostic; no score improvement
+is asserted. The source paper's different characteristic assumptions are
+explicit, and its apolar-ideal theorem is not imported. Focused map checks
+and docs are the local gate.
+
 ## Global common-orientation products at every block count
 
 The [functional-profile proof](../research/cube-global-functional-profile.md)
