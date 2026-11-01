@@ -1,0 +1,1355 @@
+{
+  "claim": "Complete modular optimal Bezout polynomials on separated arithmetic progressions",
+  "controls": {
+    "dense_rational_cases": 36,
+    "complete_coefficient_comparisons": 308,
+    "literal_parity_divided_differences": 171,
+    "complete_polynomial_identities": 36,
+    "invalid_contract_rejections": 5,
+    "examples": [
+      {
+        "parameters": {
+          "n": 3,
+          "first_a": 5,
+          "step_a": 4,
+          "first_b": 1,
+          "step_b": 28,
+          "count": 1,
+          "height": 1,
+          "precision": 1
+        },
+        "bezout_exponent": 1,
+        "polynomial_degree": 0,
+        "basis_center": 1,
+        "u_reversed_coefficients": [
+          1
+        ],
+        "v_reversed_coefficients": [
+          1
+        ],
+        "u_terms": [
+          [
+            0,
+            1
+          ]
+        ],
+        "v_terms": [
+          [
+            0,
+            1
+          ]
+        ],
+        "normalized_interpolant_degree": 1,
+        "normalized_interpolant_reversed_coefficients": [
+          1
+        ],
+        "retained_newton_coefficients": [
+          {
+            "unit": 1,
+            "precision": 1,
+            "order": 1,
+            "working_precision": 1,
+            "mahler_terms": 1,
+            "factorial_ratio_guard_bits": 0,
+            "enumerated_nodes": 0,
+            "valuation_gap": 0,
+            "scaled_newton_coefficient": 1
+          }
+        ],
+        "maximum_working_precision": 1,
+        "enumerated_progression_nodes": 0,
+        "scope": "Complete modular optimal Bezout polynomials on the declared separated progressions; no unknown-root search."
+      },
+      {
+        "parameters": {
+          "n": 69,
+          "first_a": 1,
+          "step_a": 24,
+          "first_b": 17,
+          "step_b": 56,
+          "count": 2,
+          "height": 2,
+          "precision": 2
+        },
+        "bezout_exponent": 5,
+        "polynomial_degree": 1,
+        "basis_center": 1,
+        "u_reversed_coefficients": [
+          1,
+          2
+        ],
+        "v_reversed_coefficients": [
+          3,
+          2
+        ],
+        "u_terms": [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        "v_terms": [
+          [
+            1,
+            3
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        "normalized_interpolant_degree": 3,
+        "normalized_interpolant_reversed_coefficients": [
+          1,
+          2
+        ],
+        "retained_newton_coefficients": [
+          {
+            "unit": 3,
+            "precision": 2,
+            "order": 3,
+            "working_precision": 4,
+            "mahler_terms": 2,
+            "factorial_ratio_guard_bits": 2,
+            "enumerated_nodes": 0,
+            "valuation_gap": 0,
+            "scaled_newton_coefficient": 1
+          },
+          {
+            "unit": 1,
+            "precision": 1,
+            "order": 2,
+            "working_precision": 1,
+            "mahler_terms": 1,
+            "factorial_ratio_guard_bits": 0,
+            "enumerated_nodes": 0,
+            "valuation_gap": 1,
+            "scaled_newton_coefficient": 2
+          }
+        ],
+        "maximum_working_precision": 4,
+        "enumerated_progression_nodes": 0,
+        "scope": "Complete modular optimal Bezout polynomials on the declared separated progressions; no unknown-root search."
+      },
+      {
+        "parameters": {
+          "n": 153,
+          "first_a": 81,
+          "step_a": 112,
+          "first_b": 49,
+          "step_b": 112,
+          "count": 3,
+          "height": 3,
+          "precision": 3
+        },
+        "bezout_exponent": 14,
+        "polynomial_degree": 2,
+        "basis_center": 1,
+        "u_reversed_coefficients": [
+          1,
+          4
+        ],
+        "v_reversed_coefficients": [
+          1,
+          4
+        ],
+        "u_terms": [
+          [
+            2,
+            1
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        "v_terms": [
+          [
+            2,
+            1
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        "normalized_interpolant_degree": 5,
+        "normalized_interpolant_reversed_coefficients": [
+          1,
+          4
+        ],
+        "retained_newton_coefficients": [
+          {
+            "unit": 7,
+            "precision": 3,
+            "order": 5,
+            "working_precision": 4,
+            "mahler_terms": 3,
+            "factorial_ratio_guard_bits": 1,
+            "enumerated_nodes": 0,
+            "valuation_gap": 0,
+            "scaled_newton_coefficient": 1
+          },
+          {
+            "unit": 1,
+            "precision": 1,
+            "order": 4,
+            "working_precision": 1,
+            "mahler_terms": 1,
+            "factorial_ratio_guard_bits": 0,
+            "enumerated_nodes": 0,
+            "valuation_gap": 2,
+            "scaled_newton_coefficient": 4
+          }
+        ],
+        "maximum_working_precision": 4,
+        "enumerated_progression_nodes": 0,
+        "scope": "Complete modular optimal Bezout polynomials on the declared separated progressions; no unknown-root search."
+      },
+      {
+        "parameters": {
+          "n": 71,
+          "first_a": 13,
+          "step_a": 12,
+          "first_b": 13,
+          "step_b": 12,
+          "count": 4,
+          "height": 1,
+          "precision": 4
+        },
+        "bezout_exponent": 5,
+        "polynomial_degree": 3,
+        "basis_center": 1,
+        "u_reversed_coefficients": [
+          13,
+          1,
+          8,
+          6
+        ],
+        "v_reversed_coefficients": [
+          11,
+          15,
+          8,
+          2
+        ],
+        "u_terms": [
+          [
+            3,
+            13
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            0,
+            6
+          ]
+        ],
+        "v_terms": [
+          [
+            3,
+            11
+          ],
+          [
+            2,
+            15
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        "normalized_interpolant_degree": 7,
+        "normalized_interpolant_reversed_coefficients": [
+          13,
+          9,
+          0,
+          6,
+          0,
+          0,
+          0,
+          0
+        ],
+        "retained_newton_coefficients": [
+          {
+            "unit": 15,
+            "precision": 4,
+            "order": 7,
+            "working_precision": 8,
+            "mahler_terms": 4,
+            "factorial_ratio_guard_bits": 4,
+            "enumerated_nodes": 0,
+            "valuation_gap": 0,
+            "scaled_newton_coefficient": 13
+          },
+          {
+            "unit": 9,
+            "precision": 4,
+            "order": 6,
+            "working_precision": 7,
+            "mahler_terms": 4,
+            "factorial_ratio_guard_bits": 3,
+            "enumerated_nodes": 0,
+            "valuation_gap": 0,
+            "scaled_newton_coefficient": 3
+          },
+          {
+            "unit": 3,
+            "precision": 3,
+            "order": 5,
+            "working_precision": 4,
+            "mahler_terms": 3,
+            "factorial_ratio_guard_bits": 1,
+            "enumerated_nodes": 0,
+            "valuation_gap": 1,
+            "scaled_newton_coefficient": 10
+          },
+          {
+            "unit": 1,
+            "precision": 3,
+            "order": 4,
+            "working_precision": 4,
+            "mahler_terms": 3,
+            "factorial_ratio_guard_bits": 1,
+            "enumerated_nodes": 0,
+            "valuation_gap": 1,
+            "scaled_newton_coefficient": 10
+          },
+          {
+            "unit": 1,
+            "precision": 1,
+            "order": 3,
+            "working_precision": 1,
+            "mahler_terms": 1,
+            "factorial_ratio_guard_bits": 0,
+            "enumerated_nodes": 0,
+            "valuation_gap": 3,
+            "scaled_newton_coefficient": 8
+          },
+          {
+            "unit": 1,
+            "precision": 1,
+            "order": 2,
+            "working_precision": 1,
+            "mahler_terms": 1,
+            "factorial_ratio_guard_bits": 0,
+            "enumerated_nodes": 0,
+            "valuation_gap": 3,
+            "scaled_newton_coefficient": 8
+          }
+        ],
+        "maximum_working_precision": 8,
+        "enumerated_progression_nodes": 0,
+        "scope": "Complete modular optimal Bezout polynomials on the declared separated progressions; no unknown-root search."
+      }
+    ]
+  },
+  "factoring_exponent_improved": false,
+  "implicit_controls": [
+    {
+      "lower_seconds": 0.08232107699950575,
+      "lower": {
+        "parameters": {
+          "n": 5164499756173817179311838344006023748659411585658447025661318713081295244033682389259290706560275662871806343945494986755,
+          "first_a": 1,
+          "step_a": 4,
+          "first_b": 9,
+          "step_b": 12,
+          "count": 1606938044258990275541962092341162602522202993782792835301389,
+          "height": 1,
+          "precision": 5
+        },
+        "bezout_exponent": 3213876088517980551083924184682325205044405987565585670602774,
+        "polynomial_degree": 1606938044258990275541962092341162602522202993782792835301388,
+        "basis_center": 1,
+        "u_reversed_coefficients": [
+          1,
+          27,
+          16,
+          0,
+          16,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "v_reversed_coefficients": [
+          1,
+          13,
+          18,
+          12,
+          24,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "u_terms": [
+          [
+            1606938044258990275541962092341162602522202993782792835301388,
+            1
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301387,
+            27
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301386,
+            16
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301384,
+            16
+          ]
+        ],
+        "v_terms": [
+          [
+            1606938044258990275541962092341162602522202993782792835301388,
+            1
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301387,
+            13
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301386,
+            18
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301385,
+            12
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301384,
+            24
+          ]
+        ],
+        "normalized_interpolant_degree": 3213876088517980551083924184682325205044405987565585670602777,
+        "normalized_interpolant_reversed_coefficients": [
+          1,
+          3,
+          24,
+          16,
+          16,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "retained_newton_coefficients": [
+          {
+            "unit": 5,
+            "precision": 5,
+            "order": 3213876088517980551083924184682325205044405987565585670602777,
+            "working_precision": 8,
+            "mahler_terms": 5,
+            "factorial_ratio_guard_bits": 3,
+            "enumerated_nodes": 0,
+            "valuation_gap": 0,
+            "scaled_newton_coefficient": 1
+          },
+          {
+            "unit": 17,
+            "precision": 5,
+            "order": 3213876088517980551083924184682325205044405987565585670602776,
+            "working_precision": 8,
+            "mahler_terms": 5,
+            "factorial_ratio_guard_bits": 3,
+            "enumerated_nodes": 0,
+            "valuation_gap": 0,
+            "scaled_newton_coefficient": 11
+          },
+          {
+            "unit": 3,
+            "precision": 2,
+            "order": 3213876088517980551083924184682325205044405987565585670602775,
+            "working_precision": 5,
+            "mahler_terms": 2,
+            "factorial_ratio_guard_bits": 3,
+            "enumerated_nodes": 0,
+            "valuation_gap": 3,
+            "scaled_newton_coefficient": 8
+          },
+          {
+            "unit": 1,
+            "precision": 2,
+            "order": 3213876088517980551083924184682325205044405987565585670602774,
+            "working_precision": 2,
+            "mahler_terms": 2,
+            "factorial_ratio_guard_bits": 0,
+            "enumerated_nodes": 0,
+            "valuation_gap": 3,
+            "scaled_newton_coefficient": 24
+          },
+          {
+            "unit": 1,
+            "precision": 1,
+            "order": 3213876088517980551083924184682325205044405987565585670602773,
+            "working_precision": 1,
+            "mahler_terms": 1,
+            "factorial_ratio_guard_bits": 0,
+            "enumerated_nodes": 0,
+            "valuation_gap": 4,
+            "scaled_newton_coefficient": 16
+          },
+          {
+            "unit": 1,
+            "precision": 1,
+            "order": 3213876088517980551083924184682325205044405987565585670602772,
+            "working_precision": 1,
+            "mahler_terms": 1,
+            "factorial_ratio_guard_bits": 0,
+            "enumerated_nodes": 0,
+            "valuation_gap": 4,
+            "scaled_newton_coefficient": 16
+          }
+        ],
+        "maximum_working_precision": 8,
+        "enumerated_progression_nodes": 0,
+        "scope": "Complete modular optimal Bezout polynomials on the declared separated progressions; no unknown-root search."
+      },
+      "higher": {
+        "parameters": {
+          "n": 5164499756173817179311838344006023748659411585658447025661318713081295244033682389259290706560275662871806343945494986755,
+          "first_a": 1,
+          "step_a": 4,
+          "first_b": 9,
+          "step_b": 12,
+          "count": 1606938044258990275541962092341162602522202993782792835301389,
+          "height": 1,
+          "precision": 7
+        },
+        "bezout_exponent": 3213876088517980551083924184682325205044405987565585670602774,
+        "polynomial_degree": 1606938044258990275541962092341162602522202993782792835301388,
+        "basis_center": 1,
+        "u_reversed_coefficients": [
+          97,
+          59,
+          112,
+          32,
+          112,
+          64,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "v_reversed_coefficients": [
+          1,
+          109,
+          18,
+          44,
+          56,
+          96,
+          64,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "u_terms": [
+          [
+            1606938044258990275541962092341162602522202993782792835301388,
+            97
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301387,
+            59
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301386,
+            112
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301385,
+            32
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301384,
+            112
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301383,
+            64
+          ]
+        ],
+        "v_terms": [
+          [
+            1606938044258990275541962092341162602522202993782792835301388,
+            1
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301387,
+            109
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301386,
+            18
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301385,
+            44
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301384,
+            56
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301383,
+            96
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301382,
+            64
+          ]
+        ],
+        "normalized_interpolant_degree": 3213876088517980551083924184682325205044405987565585670602777,
+        "normalized_interpolant_reversed_coefficients": [
+          97,
+          3,
+          88,
+          16,
+          112,
+          64,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "retained_newton_coefficients": [
+          {
+            "unit": 37,
+            "precision": 7,
+            "order": 3213876088517980551083924184682325205044405987565585670602777,
+            "working_precision": 11,
+            "mahler_terms": 7,
+            "factorial_ratio_guard_bits": 4,
+            "enumerated_nodes": 0,
+            "valuation_gap": 0,
+            "scaled_newton_coefficient": 97
+          },
+          {
+            "unit": 49,
+            "precision": 7,
+            "order": 3213876088517980551083924184682325205044405987565585670602776,
+            "working_precision": 11,
+            "mahler_terms": 7,
+            "factorial_ratio_guard_bits": 4,
+            "enumerated_nodes": 0,
+            "valuation_gap": 0,
+            "scaled_newton_coefficient": 75
+          },
+          {
+            "unit": 11,
+            "precision": 4,
+            "order": 3213876088517980551083924184682325205044405987565585670602775,
+            "working_precision": 8,
+            "mahler_terms": 4,
+            "factorial_ratio_guard_bits": 4,
+            "enumerated_nodes": 0,
+            "valuation_gap": 3,
+            "scaled_newton_coefficient": 40
+          },
+          {
+            "unit": 1,
+            "precision": 4,
+            "order": 3213876088517980551083924184682325205044405987565585670602774,
+            "working_precision": 7,
+            "mahler_terms": 4,
+            "factorial_ratio_guard_bits": 3,
+            "enumerated_nodes": 0,
+            "valuation_gap": 3,
+            "scaled_newton_coefficient": 56
+          },
+          {
+            "unit": 1,
+            "precision": 3,
+            "order": 3213876088517980551083924184682325205044405987565585670602773,
+            "working_precision": 4,
+            "mahler_terms": 3,
+            "factorial_ratio_guard_bits": 1,
+            "enumerated_nodes": 0,
+            "valuation_gap": 4,
+            "scaled_newton_coefficient": 48
+          },
+          {
+            "unit": 1,
+            "precision": 3,
+            "order": 3213876088517980551083924184682325205044405987565585670602772,
+            "working_precision": 4,
+            "mahler_terms": 3,
+            "factorial_ratio_guard_bits": 1,
+            "enumerated_nodes": 0,
+            "valuation_gap": 4,
+            "scaled_newton_coefficient": 16
+          },
+          {
+            "unit": 1,
+            "precision": 1,
+            "order": 3213876088517980551083924184682325205044405987565585670602771,
+            "working_precision": 1,
+            "mahler_terms": 1,
+            "factorial_ratio_guard_bits": 0,
+            "enumerated_nodes": 0,
+            "valuation_gap": 6,
+            "scaled_newton_coefficient": 64
+          },
+          {
+            "unit": 1,
+            "precision": 1,
+            "order": 3213876088517980551083924184682325205044405987565585670602770,
+            "working_precision": 1,
+            "mahler_terms": 1,
+            "factorial_ratio_guard_bits": 0,
+            "enumerated_nodes": 0,
+            "valuation_gap": 6,
+            "scaled_newton_coefficient": 64
+          }
+        ],
+        "maximum_working_precision": 11,
+        "enumerated_progression_nodes": 0,
+        "scope": "Complete modular optimal Bezout polynomials on the declared separated progressions; no unknown-root search."
+      },
+      "complete_modular_identity_verified": true,
+      "input_nodes_enumerated": 0
+    },
+    {
+      "lower_seconds": 3.103729786002077,
+      "lower": {
+        "parameters": {
+          "n": 5164499756173817179311838344006023748659411585658447025661318713081295244033682389259290706560275662871806343945494986755,
+          "first_a": 1,
+          "step_a": 4,
+          "first_b": 9,
+          "step_b": 12,
+          "count": 1606938044258990275541962092341162602522202993782792835301376,
+          "height": 1,
+          "precision": 4
+        },
+        "bezout_exponent": 3213876088517980551083924184682325205044405987565585670602551,
+        "polynomial_degree": 1606938044258990275541962092341162602522202993782792835301375,
+        "basis_center": 1,
+        "u_reversed_coefficients": [
+          9,
+          1,
+          8,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "v_reversed_coefficients": [
+          7,
+          15,
+          8,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "u_terms": [
+          [
+            1606938044258990275541962092341162602522202993782792835301375,
+            9
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301374,
+            1
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301373,
+            8
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301372,
+            6
+          ]
+        ],
+        "v_terms": [
+          [
+            1606938044258990275541962092341162602522202993782792835301375,
+            7
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301374,
+            15
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301373,
+            8
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301372,
+            10
+          ]
+        ],
+        "normalized_interpolant_degree": 3213876088517980551083924184682325205044405987565585670602751,
+        "normalized_interpolant_reversed_coefficients": [
+          9,
+          1,
+          8,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "retained_newton_coefficients": [
+          {
+            "unit": 3,
+            "precision": 4,
+            "order": 3213876088517980551083924184682325205044405987565585670602751,
+            "working_precision": 206,
+            "mahler_terms": 4,
+            "factorial_ratio_guard_bits": 202,
+            "enumerated_nodes": 0,
+            "valuation_gap": 0,
+            "scaled_newton_coefficient": 9
+          },
+          {
+            "unit": 1,
+            "precision": 4,
+            "order": 3213876088517980551083924184682325205044405987565585670602750,
+            "working_precision": 205,
+            "mahler_terms": 4,
+            "factorial_ratio_guard_bits": 201,
+            "enumerated_nodes": 0,
+            "valuation_gap": 0,
+            "scaled_newton_coefficient": 3
+          },
+          {
+            "unit": 1,
+            "precision": 3,
+            "order": 3213876088517980551083924184682325205044405987565585670602749,
+            "working_precision": 4,
+            "mahler_terms": 3,
+            "factorial_ratio_guard_bits": 1,
+            "enumerated_nodes": 0,
+            "valuation_gap": 1,
+            "scaled_newton_coefficient": 6
+          },
+          {
+            "unit": 1,
+            "precision": 3,
+            "order": 3213876088517980551083924184682325205044405987565585670602748,
+            "working_precision": 4,
+            "mahler_terms": 3,
+            "factorial_ratio_guard_bits": 1,
+            "enumerated_nodes": 0,
+            "valuation_gap": 1,
+            "scaled_newton_coefficient": 2
+          },
+          {
+            "unit": 1,
+            "precision": 1,
+            "order": 3213876088517980551083924184682325205044405987565585670602747,
+            "working_precision": 1,
+            "mahler_terms": 1,
+            "factorial_ratio_guard_bits": 0,
+            "enumerated_nodes": 0,
+            "valuation_gap": 3,
+            "scaled_newton_coefficient": 8
+          },
+          {
+            "unit": 1,
+            "precision": 1,
+            "order": 3213876088517980551083924184682325205044405987565585670602746,
+            "working_precision": 1,
+            "mahler_terms": 1,
+            "factorial_ratio_guard_bits": 0,
+            "enumerated_nodes": 0,
+            "valuation_gap": 3,
+            "scaled_newton_coefficient": 8
+          }
+        ],
+        "maximum_working_precision": 206,
+        "enumerated_progression_nodes": 0,
+        "scope": "Complete modular optimal Bezout polynomials on the declared separated progressions; no unknown-root search."
+      },
+      "higher": {
+        "parameters": {
+          "n": 5164499756173817179311838344006023748659411585658447025661318713081295244033682389259290706560275662871806343945494986755,
+          "first_a": 1,
+          "step_a": 4,
+          "first_b": 9,
+          "step_b": 12,
+          "count": 1606938044258990275541962092341162602522202993782792835301376,
+          "height": 1,
+          "precision": 6
+        },
+        "bezout_exponent": 3213876088517980551083924184682325205044405987565585670602551,
+        "polynomial_degree": 1606938044258990275541962092341162602522202993782792835301375,
+        "basis_center": 1,
+        "u_reversed_coefficients": [
+          25,
+          17,
+          24,
+          22,
+          32,
+          16,
+          0,
+          48,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "v_reversed_coefficients": [
+          39,
+          47,
+          40,
+          42,
+          32,
+          48,
+          0,
+          16,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "u_terms": [
+          [
+            1606938044258990275541962092341162602522202993782792835301375,
+            25
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301374,
+            17
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301373,
+            24
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301372,
+            22
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301371,
+            32
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301370,
+            16
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301368,
+            48
+          ]
+        ],
+        "v_terms": [
+          [
+            1606938044258990275541962092341162602522202993782792835301375,
+            39
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301374,
+            47
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301373,
+            40
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301372,
+            42
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301371,
+            32
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301370,
+            48
+          ],
+          [
+            1606938044258990275541962092341162602522202993782792835301368,
+            16
+          ]
+        ],
+        "normalized_interpolant_degree": 3213876088517980551083924184682325205044405987565585670602751,
+        "normalized_interpolant_reversed_coefficients": [
+          25,
+          17,
+          24,
+          22,
+          32,
+          16,
+          0,
+          48,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "retained_newton_coefficients": [
+          {
+            "unit": 19,
+            "precision": 6,
+            "order": 3213876088517980551083924184682325205044405987565585670602751,
+            "working_precision": 210,
+            "mahler_terms": 6,
+            "factorial_ratio_guard_bits": 204,
+            "enumerated_nodes": 0,
+            "valuation_gap": 0,
+            "scaled_newton_coefficient": 25
+          },
+          {
+            "unit": 33,
+            "precision": 6,
+            "order": 3213876088517980551083924184682325205044405987565585670602750,
+            "working_precision": 208,
+            "mahler_terms": 6,
+            "factorial_ratio_guard_bits": 202,
+            "enumerated_nodes": 0,
+            "valuation_gap": 0,
+            "scaled_newton_coefficient": 3
+          },
+          {
+            "unit": 1,
+            "precision": 5,
+            "order": 3213876088517980551083924184682325205044405987565585670602749,
+            "working_precision": 207,
+            "mahler_terms": 5,
+            "factorial_ratio_guard_bits": 202,
+            "enumerated_nodes": 0,
+            "valuation_gap": 1,
+            "scaled_newton_coefficient": 6
+          },
+          {
+            "unit": 25,
+            "precision": 5,
+            "order": 3213876088517980551083924184682325205044405987565585670602748,
+            "working_precision": 207,
+            "mahler_terms": 5,
+            "factorial_ratio_guard_bits": 202,
+            "enumerated_nodes": 0,
+            "valuation_gap": 1,
+            "scaled_newton_coefficient": 2
+          },
+          {
+            "unit": 7,
+            "precision": 3,
+            "order": 3213876088517980551083924184682325205044405987565585670602747,
+            "working_precision": 5,
+            "mahler_terms": 3,
+            "factorial_ratio_guard_bits": 2,
+            "enumerated_nodes": 0,
+            "valuation_gap": 3,
+            "scaled_newton_coefficient": 56
+          },
+          {
+            "unit": 1,
+            "precision": 3,
+            "order": 3213876088517980551083924184682325205044405987565585670602746,
+            "working_precision": 5,
+            "mahler_terms": 3,
+            "factorial_ratio_guard_bits": 2,
+            "enumerated_nodes": 0,
+            "valuation_gap": 3,
+            "scaled_newton_coefficient": 40
+          },
+          {
+            "unit": 1,
+            "precision": 2,
+            "order": 3213876088517980551083924184682325205044405987565585670602745,
+            "working_precision": 3,
+            "mahler_terms": 2,
+            "factorial_ratio_guard_bits": 1,
+            "enumerated_nodes": 0,
+            "valuation_gap": 4,
+            "scaled_newton_coefficient": 48
+          },
+          {
+            "unit": 1,
+            "precision": 2,
+            "order": 3213876088517980551083924184682325205044405987565585670602744,
+            "working_precision": 2,
+            "mahler_terms": 2,
+            "factorial_ratio_guard_bits": 0,
+            "enumerated_nodes": 0,
+            "valuation_gap": 4,
+            "scaled_newton_coefficient": 16
+          }
+        ],
+        "maximum_working_precision": 210,
+        "enumerated_progression_nodes": 0,
+        "scope": "Complete modular optimal Bezout polynomials on the declared separated progressions; no unknown-root search."
+      },
+      "complete_modular_identity_verified": true,
+      "input_nodes_enumerated": 0
+    },
+    {
+      "lower_seconds": 0.024097579000226688,
+      "lower": {
+        "parameters": {
+          "n": 5164499756173817179311838344006023748659411585658447025661318713081295244033682389259290706560275662871806343945494986757,
+          "first_a": 1,
+          "step_a": 8,
+          "first_b": 17,
+          "step_b": 24,
+          "count": 340282366920938463463374607431768211465,
+          "height": 2,
+          "precision": 5
+        },
+        "bezout_exponent": 1361129467683753853853498429727072845856,
+        "polynomial_degree": 340282366920938463463374607431768211464,
+        "basis_center": 1,
+        "u_reversed_coefficients": [
+          29,
+          14,
+          0,
+          0,
+          0
+        ],
+        "v_reversed_coefficients": [
+          13,
+          18,
+          8,
+          0,
+          0,
+          0
+        ],
+        "u_terms": [
+          [
+            340282366920938463463374607431768211464,
+            29
+          ],
+          [
+            340282366920938463463374607431768211463,
+            14
+          ]
+        ],
+        "v_terms": [
+          [
+            340282366920938463463374607431768211464,
+            13
+          ],
+          [
+            340282366920938463463374607431768211463,
+            18
+          ],
+          [
+            340282366920938463463374607431768211462,
+            8
+          ]
+        ],
+        "normalized_interpolant_degree": 680564733841876926926749214863536422929,
+        "normalized_interpolant_reversed_coefficients": [
+          29,
+          14,
+          0,
+          0
+        ],
+        "retained_newton_coefficients": [
+          {
+            "unit": 5,
+            "precision": 5,
+            "order": 680564733841876926926749214863536422929,
+            "working_precision": 8,
+            "mahler_terms": 5,
+            "factorial_ratio_guard_bits": 3,
+            "enumerated_nodes": 0,
+            "valuation_gap": 0,
+            "scaled_newton_coefficient": 29
+          },
+          {
+            "unit": 1,
+            "precision": 4,
+            "order": 680564733841876926926749214863536422928,
+            "working_precision": 5,
+            "mahler_terms": 4,
+            "factorial_ratio_guard_bits": 1,
+            "enumerated_nodes": 0,
+            "valuation_gap": 1,
+            "scaled_newton_coefficient": 14
+          }
+        ],
+        "maximum_working_precision": 8,
+        "enumerated_progression_nodes": 0,
+        "scope": "Complete modular optimal Bezout polynomials on the declared separated progressions; no unknown-root search."
+      },
+      "higher": {
+        "parameters": {
+          "n": 5164499756173817179311838344006023748659411585658447025661318713081295244033682389259290706560275662871806343945494986757,
+          "first_a": 1,
+          "step_a": 8,
+          "first_b": 17,
+          "step_b": 24,
+          "count": 340282366920938463463374607431768211465,
+          "height": 2,
+          "precision": 7
+        },
+        "bezout_exponent": 1361129467683753853853498429727072845856,
+        "polynomial_degree": 340282366920938463463374607431768211464,
+        "basis_center": 1,
+        "u_reversed_coefficients": [
+          29,
+          46,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "v_reversed_coefficients": [
+          109,
+          82,
+          40,
+          32,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "u_terms": [
+          [
+            340282366920938463463374607431768211464,
+            29
+          ],
+          [
+            340282366920938463463374607431768211463,
+            46
+          ]
+        ],
+        "v_terms": [
+          [
+            340282366920938463463374607431768211464,
+            109
+          ],
+          [
+            340282366920938463463374607431768211463,
+            82
+          ],
+          [
+            340282366920938463463374607431768211462,
+            40
+          ],
+          [
+            340282366920938463463374607431768211461,
+            32
+          ]
+        ],
+        "normalized_interpolant_degree": 680564733841876926926749214863536422929,
+        "normalized_interpolant_reversed_coefficients": [
+          29,
+          14,
+          64,
+          0,
+          0,
+          0
+        ],
+        "retained_newton_coefficients": [
+          {
+            "unit": 37,
+            "precision": 7,
+            "order": 680564733841876926926749214863536422929,
+            "working_precision": 11,
+            "mahler_terms": 7,
+            "factorial_ratio_guard_bits": 4,
+            "enumerated_nodes": 0,
+            "valuation_gap": 0,
+            "scaled_newton_coefficient": 29
+          },
+          {
+            "unit": 1,
+            "precision": 6,
+            "order": 680564733841876926926749214863536422928,
+            "working_precision": 9,
+            "mahler_terms": 6,
+            "factorial_ratio_guard_bits": 3,
+            "enumerated_nodes": 0,
+            "valuation_gap": 1,
+            "scaled_newton_coefficient": 46
+          },
+          {
+            "unit": 1,
+            "precision": 1,
+            "order": 680564733841876926926749214863536422927,
+            "working_precision": 1,
+            "mahler_terms": 1,
+            "factorial_ratio_guard_bits": 0,
+            "enumerated_nodes": 0,
+            "valuation_gap": 6,
+            "scaled_newton_coefficient": 64
+          }
+        ],
+        "maximum_working_precision": 11,
+        "enumerated_progression_nodes": 0,
+        "scope": "Complete modular optimal Bezout polynomials on the declared separated progressions; no unknown-root search."
+      },
+      "complete_modular_identity_verified": true,
+      "input_nodes_enumerated": 0
+    }
+  ],
+  "source_sha256": {
+    "check_balanced_bezout_modular.py": "d67e5ca2ddc5365f440bf8a8304ffee070c1428f7b22a8454d84a82f46542a67",
+    "balanced_bezout_modular.py": "082af5136189964fd9944dc94efa9805cf4c60bdbc66f2df17bd69fe205be6e8",
+    "interval_unit_jets.py": "264d9583e1cb6a46f8e141387445c6b43db9045d4724af0ab316dc60fe53c256",
+    "pole_cauchy_conditioning.py": "9277946eed975969a63ee7c7f251c0422d3101d4ca2e945fc458b8ae7a015f7c"
+  }
+}

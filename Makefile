@@ -2160,3 +2160,7 @@ verify-balanced-bezout:
 .PHONY: verify-cube-flat-parity-floor
 verify-cube-flat-parity-floor:
 	python3 tools/check_cube_flat_parity_floor.py
+
+.PHONY: verify-balanced-bezout-modular
+verify-balanced-bezout-modular:
+	python3 tools/check_balanced_bezout_modular.py --output /tmp/integer-factoring-balanced-bezout-modular.json
