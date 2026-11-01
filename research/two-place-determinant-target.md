@@ -1,5 +1,11 @@
 # A determinant target for asymmetric improvement, and this pencil's exact ceiling
 
+**Later extension:** [uniform-marginal transport](pencil-uniform-transport-endpoints.md)
+proves that arbitrary physical heights cannot improve the pencil's two
+entry-minimum versus opposite-determinant mean gaps beyond `-8/25` and
+`-16/25`. This excludes both fixed-gauge, fixed-scale-ratio endpoint
+escapes; it does not exclude every interior asymmetric criterion.
+
 ## Result and boundary
 
 At the retained five-letter physical heights, an opposite-cut determinant

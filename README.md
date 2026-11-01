@@ -45,9 +45,11 @@ now isolates a sufficient asymmetric target and excludes that particular
 escape for the retained pencil. The [full F4 census](research/two-place-f4-census.md)
 has completed all 4,194,304 registered cases with zero unresolved cases
 and 67 complete profile classes; its numerical fits give no stronger bound.
-A [registered free-height asymmetric search](research/two-place-free-gauge-asymmetric-search.md)
-now allows new paired energies and supporting angles on representatives of
-those classes. Its registration and derivative controls are not an improvement.
+The [free-height asymmetric search](research/two-place-free-gauge-asymmetric-search.md)
+completed all 469 registered trials without finding support below one.
+[Uniform-marginal transport](research/pencil-uniform-transport-endpoints.md)
+also closes both fixed-gauge endpoint escapes over the entire pencil and every
+characteristic-two field. Interior angles remain open.
 A [constructive graded lattice](research/graded-zero-lattice.md) improves
 the zero prefix to 8,10,10, but its actual opposite profile is worse.
 The [ordered fused envelope now has an exact F4 interface](research/fused-f4-envelope.md),

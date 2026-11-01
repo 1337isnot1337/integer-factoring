@@ -2468,6 +2468,12 @@ verify-frontier: verify-rectangular-adjugate-jets
 verify-scaled-asymmetric-pressure:
 	OPENBLAS_NUM_THREADS=1 python3 tools/check_scaled_asymmetric_pressure.py --output /tmp/scaled-asymmetric-pressure.json
 
+.PHONY: verify-pencil-uniform-transport
+verify-pencil-uniform-transport:
+	python3 tools/check_pencil_uniform_transport.py --output /tmp/pencil-uniform-transport.json
+
+verify-frontier: verify-pencil-uniform-transport
+
 .PHONY: verify-coherent-f4-partial
 verify-coherent-f4-partial:
 	python3 tools/check_coherent_hot_f4_partial.py

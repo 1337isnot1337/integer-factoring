@@ -1,5 +1,7 @@
 # Research index
 
+- [Uniform-marginal transport closes both fixed-gauge endpoint escapes](pencil-uniform-transport-endpoints.md): full all-field pencil entry optima `14/5,-66/5`, exact determinant means and endpoint gaps `-8/25,-16/25`, plus the completed 469-trial asymmetric search. Interior angles and other generators remain open.
+
 - [Free physical heights and supporting angles on the retained F4 pencil](two-place-free-gauge-asymmetric-search.md): 67 fixed-profile representatives, 469 registered free-height asymmetric trials, 150 independently reconstructed new-gauge orders and 204 derivative controls; registration supplies no new contraction.
 
 - [The first possible rectangular cofactor jet has bounded crossed rank](rectangular-adjugate-first-jet.md): stronger all-field adjugate prefixes and a nine-letter bare floor `709/1000`, with 416 interpolated cofactors, 6,168 lifted checks and an explicit binary counterexample to a stronger tail.

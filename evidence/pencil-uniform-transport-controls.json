@@ -1,0 +1,139 @@
+{
+  "all_field_endpoint_mean_gaps": {
+    "infinity_minimum_vs_zero_mean": "-16/25",
+    "zero_minimum_vs_infinity_mean": "-8/25"
+  },
+  "construction": {
+    "coefficient_family": "q=(1+t)r, deg(r)<=10 over F4",
+    "commutator_factor": "t^8*(t+1)^4*(K+t^4*L)",
+    "commutes_with_physical_energy": true,
+    "equivalent_determinant_degree_target": "strictly less than 70",
+    "exact_number_of_coefficient_vectors": 4194304,
+    "generator_square_zero": true,
+    "input_sha256": "7a67c5054f1b628e0a2798e3dc9d1da9535a0dbbf79bc4b617296f69fa75e009",
+    "nonzero_commutator_degrees": [
+      8,
+      12,
+      16
+    ],
+    "opposite_cut_total_height": 130,
+    "pencil": "A_q=A+q(t)(K+t^4*L), deg(q)<=11, q(1)=0",
+    "physical_pair_energies": [
+      [
+        0,
+        10,
+        6,
+        2,
+        8
+      ],
+      [
+        0,
+        10,
+        6,
+        2,
+        8
+      ]
+    ],
+    "predecessor_commit": "8a3ea3e6aeacba7d0a53764de5579e3707bb2ca7",
+    "predecessor_pr": 57,
+    "sandwich_coefficients_checked": 19,
+    "sufficient_infinity_sum_for_asymmetric_improvement": "strictly greater than 60",
+    "uniform_zero_minimum_order": 8
+  },
+  "fresh_row_determinant": 2907645727444775113880260719737461715254722198316155405789940811173118823902112271227351249625022464,
+  "opposite_degree_bound_reused": 78,
+  "rational_conjugation_identity": "A_q=(I+fG)A(I+fG), f=q/(t^8*(1+t)^4)",
+  "row_determinant_formula": "t^314*(1+t^4+t^6+t^10+t^12+t^14+t^16)",
+  "scope": "All characteristic-two fields, full degree<=11 pencil and arbitrary physical gauges for the two uniform-type endpoint scalings. No all-angle support exclusion or stronger factoring exponent.",
+  "source_sha256": {
+    "evidence/pencil-uniform-transport-witnesses.json": "64244b9236971403c660e6cd68b92302aa18cdb89c0552113bf40db9312cc621",
+    "evidence/two-place-determinant.json": "16fc50f5a1692e9054fc8823a4fd426546f5b4e46fd2fa021e15aeabb1f1267c",
+    "tools/check_pencil_uniform_transport.py": "af41ca0ca4ab8d9e86682f87bc3f49437c713f9b691d999b553581306c52de94",
+    "tools/check_two_place_determinant.py": "9bbac7a25b786d7c7b718ccfcdeac376d1f4f078cd98947b7675e8bc75833d92",
+    "tools/joint_energy_conjugations.py": "929ba0d8e745fc2a4692367f10bf1e898884d58598c97a2617193ac8cf20bf1d",
+    "tools/search_f4_recentered_crossings.py": "aaa200699ed3630f941bf694af79d0465a277b3dc570e5cc3a4a5c5703c284cd",
+    "tools/tensor_pascal_box_crossings.py": "3cd6bcd473cac20647cf87d96bb4ccd17a5cf46d9339a1be33e69cfddddb4fce",
+    "tools/two_place_f4_census.py": "141f066a09f7c68c55ce13af3ad646d50db3d9351b5ba52c09dc36d655f878f0"
+  },
+  "status": "pass",
+  "transport_certificates": [
+    {
+      "all_field_optimum": "14/5",
+      "natural_perturbation_lower_bound": "8",
+      "natural_source_minimum": "8",
+      "natural_uniform_height": "26/5",
+      "place": "zero",
+      "positive_support_entries": 11,
+      "uniform_marginals": [
+        [
+          "1/5",
+          "1/5",
+          "1/5",
+          "1/5",
+          "1/5"
+        ],
+        [
+          "1/5",
+          "1/5",
+          "1/5",
+          "1/5",
+          "1/5"
+        ],
+        [
+          "1/5",
+          "1/5",
+          "1/5",
+          "1/5",
+          "1/5"
+        ],
+        [
+          "1/5",
+          "1/5",
+          "1/5",
+          "1/5",
+          "1/5"
+        ]
+      ],
+      "uniform_transport_cost": "14/5"
+    },
+    {
+      "all_field_optimum": "-66/5",
+      "natural_perturbation_lower_bound": "-7",
+      "natural_source_minimum": "-8",
+      "natural_uniform_height": "26/5",
+      "place": "infinity",
+      "positive_support_entries": 9,
+      "uniform_marginals": [
+        [
+          "1/5",
+          "1/5",
+          "1/5",
+          "1/5",
+          "1/5"
+        ],
+        [
+          "1/5",
+          "1/5",
+          "1/5",
+          "1/5",
+          "1/5"
+        ],
+        [
+          "1/5",
+          "1/5",
+          "1/5",
+          "1/5",
+          "1/5"
+        ],
+        [
+          "1/5",
+          "1/5",
+          "1/5",
+          "1/5",
+          "1/5"
+        ]
+      ],
+      "uniform_transport_cost": "-66/5"
+    }
+  ]
+}

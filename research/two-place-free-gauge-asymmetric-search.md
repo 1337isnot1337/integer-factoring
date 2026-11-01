@@ -1,5 +1,15 @@
 # Free physical heights and supporting angles on the retained F4 pencil
 
+**Completed checkpoint:** all 469 registered optimizer calls completed
+successfully, with 82,388 resolved objective evaluations and no rejected
+queries. The best numerical support is `1.0000749992800997`, above one;
+the trial list finished in about 189 seconds, before the two-hour ceiling.
+The [complete packet](../evidence/two-place-free-gauge-asymmetric-complete.json.xz)
+is a finite local search, not a global exclusion. A separate
+[uniform transport argument](pencil-uniform-transport-endpoints.md) closes
+both fixed-gauge, fixed-scale-ratio endpoint escapes over every
+characteristic-two field for the full pencil.
+
 The completed pencil census used fixed physical heights. Its determinant
 ceiling excludes a sufficient asymmetric escape at those heights; it does
 not exclude other paired energies or free physical gauges. A new registered
