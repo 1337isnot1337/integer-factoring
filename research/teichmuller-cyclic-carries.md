@@ -196,6 +196,12 @@ Applying (6) to `v+m` variables and degree `delta+1` proves (1). The case
 
 The extra variables and precision can be costly. No unchanged-width claim
 for an arbitrary verifier or integer arithmetic program is inferred.
+For equations of common ordinary degree with coefficients represented in
+an explicitly supplied extension, the
+[packed-system alternative](precision-efficient-residue-indicators.md#acquired-ordinary-polynomial-system-packing)
+instead charges the larger ring and the relative extension degree inside
+the carry base. It introduces no linear-combination variables or division
+precision, while retaining every original equation variable and degree cost.
 
 ## 5. What this does and does not supply
 
