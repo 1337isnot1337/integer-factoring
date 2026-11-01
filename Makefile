@@ -2606,3 +2606,12 @@ verify-tensor-literal-height15-gate:
 
 verify-tensor-literal-rank-one-cells:
 	python3 tools/check_tensor_literal_rank_one_cells.py --output /tmp/tensor-literal-rank-one-cells-verify.json
+
+.PHONY: verify-small-pivot-integer-rows verify-prepared-oriented-power-search
+verify-small-pivot-integer-rows:
+	python3 tools/check_small_pivot_integer_row_basis.py --controls-only --output /tmp/small-pivot-integer-row-verify.json
+
+verify-prepared-oriented-power-search:
+	python3 tools/check_prepared_oriented_power_search.py --replay evidence/prepared-oriented-power-search.json
+
+verify-oriented-coprime-basis: verify-small-pivot-integer-rows verify-prepared-oriented-power-search

@@ -1,0 +1,20 @@
+{
+  "controls": {
+    "matrices": 680,
+    "acceptance_decisions": 17000,
+    "every_original_row_subsequence_matches_rational_elimination": true,
+    "insertion_order_triangularity_checked_after_every_row": true,
+    "original_relation_content_trap_passed": true,
+    "nonmonotone_pivot_column_control_passed": true,
+    "invalid_rows_rejected": 3
+  },
+  "benchmarks": [],
+  "source_sha256": {
+    "tools/small_pivot_integer_row_basis.py": "66c8f7abc6bb9058f2ec3d8da83a2692e6c7adf8d4065743cdf1ea4db09ac75b",
+    "tools/check_small_pivot_integer_row_basis.py": "6e1dddd10a69e214c3001f732bc684d69edc334ad93b87c18114a98ecd202827",
+    "tools/primitive_integer_row_basis.py": "656bdfa439ca96dfa997fce614f3c2f8700d6954ad59c6c2a80133743a6459ff",
+    "tools/cofactor_collision_relations.py": "e3ca86c6e2208edf1f5edc980ed954c6fb3919f21a4cce40a8681d0d908022c5"
+  },
+  "scope": "Exact original-row selection with changed internal pivots; no uniform factoring exponent gain.",
+  "timing_scope": "Rank selection only; complete search and certificate replay costs remain separate."
+}
