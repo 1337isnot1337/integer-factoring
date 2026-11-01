@@ -1,0 +1,74 @@
+dropped 0 degenerate instances with delta >= 0.5 (Y too large for H)
+instances (Delta,Y): 136   targets (Delta,Y,p): 892
+distinct Delta: 48   |Delta| range: 1.13e+09 .. 3.96e+11
+h range: 6108 .. 396256   non-cyclic Cl: 101   [Cl:H]>1: 18   certified by reduced-form count: 0
+m range: 2 .. 18   delta range: 0.0006 .. 0.274
+tags: {'random': 136}
+
+== PROVEN statements, exact checks ==
+Lemma 1(ii) injectivity on B_{R/2} and phi(B_R) in S: asserted in every instance (script aborts otherwise)
+S inside H = <g_q>: asserted in every instance
+  (Thm 1 tightest at D=-4926756580 h=11648 Y=27 p=23 W_ball=722)
+Thm 1 (failure => sum c_a^2 min(W,1/2||th||) >= [Cl:H] W): min ratio LHS/RHS = 5.251 over 831 targets (must be >= 1); median 150.1
+Thm 2 (c_a(chi)|1-chi(g_q)| <= 2 eps_q(a)): max ratio = 1.000 over all chi, q, instances (must be <= 1); median of per-instance max 0.694
+Thm 3 (sum_{chi|H!=1} c_a^4 >= h_H/|B_2a| - 1): violations = 0 / 136; median LHS/RHS = 2.96
+Cor 1 minor-arc threshold W_* = h_H/(eta |B_a|) at eta=1/4: median W_*/max_p W = 18.8 (min 0.80); W_* exceeds every observed window in 133/136 instances; median W_* / sqrt(h_H) = 9.89
+max_{chi|H!=1} c_a(chi): median 0.891, min 0.586  (a low-frequency character with c_a >= 1/2 exists in 136/136 instances)
+Fourier identity exactness max |E_all - E_exact| = 5.87e-13
+
+== Fourier bias of S on low-frequency characters (lowest 1% of F among chi|H != 1) ==
+mean|s(chi)| on low-F chars, S vs random S': median ratio 6.20 (IQR 5.48-7.24)
+mean|s(chi)| on low-F vs other chars (S): median ratio 13.30
+max|s| S vs random: median ratio 8.21
+
+== Windows ==
+targets with orbit missing S entirely (coset miss): 0; random-control coset misses: 1
+W*delta (real S): median 1.10, 90% 4.20, max 18.7;  random S': median 0.72, 90% 2.32, max 6.6
+W == W_ball (first hit already in phi(B_R)): 870 / 892
+
+== Conjecture test A: long windows vs existence of a low-frequency chi in the p-major arc ==
+G_p = min F(chi) over chi|H != 1 with ||theta_p(chi)|| <= delta (S-independent); "exists" := G_p <= F_cut (1% quantile)
+n=891  Spearman(log W delta, G_p/F_cut): real S -0.267, random S' 0.051
+      Spearman(log W delta, pretentious G_p): real S -0.254, random S' 0.038
+P(exists | long, top10%) = 1.000   P(exists | not long) = 1.000   (real S)
+P(exists | long, top10%) = 1.000   P(exists | not long) = 1.000   (random S')
+counterexamples to "long => exists" (real S top-10% windows with no 1%-low chi in the p-arc): 0 / 90
+partial Spearman(log W delta, G_p/F_cut (ball weights) | log delta, m, log p, log h): real 0.029, random 0.077   [raw Spearman 95% bootstrap CI real -0.328..-0.210]
+partial Spearman(log W delta, pretentious G_p | log delta, m, log p, log h): real 0.014, random 0.052   [raw Spearman 95% bootstrap CI real -0.315..-0.192]
+partial check: Spearman(G_p/F_cut, delta) = 0.588, Spearman(G_p/F_cut, m) = 0.807
+
+== Conjecture test B: which characters carry the deficit at W0 = ceil(1/delta) ==
+E_all = count_{W0}/(delta W0) - 1 exactly; E_L = contribution of character set L
+  lowF            corr(E_all,E_L): real 0.895  random 0.106 | mean|E_L|: real 0.872 random 0.124 | R^2 of E_all ~ E_L real 0.795 random 0.002
+  major           corr(E_all,E_L): real 0.742  random 0.941 | mean|E_L|: real 1.494 random 0.678 | R^2 of E_all ~ E_L real -0.324 random 0.886
+  lowF_major      corr(E_all,E_L): real 0.691  random 0.089 | mean|E_L|: real 1.333 random 0.123 | R^2 of E_all ~ E_L real -0.098 random -0.005
+  major_not_lowF  corr(E_all,E_L): real 0.302  random 0.921 | mean|E_L|: real 0.629 random 0.679 | R^2 of E_all ~ E_L real 0.018 random 0.846
+targets with zero hits in the first W0 steps: 453 / 892 (random S': 304)
+  in those: E_major median 0.217 (deficit carried by p-major arc if ~ -1), E_lowF_major median 0.299, frac with E_lowF_major < 0: 0.424
+
+== Path B stratum: real (genus) characters ==
+instances with a real character nontrivial on H: 131; real chars trivial on all of B_Y but not on Cl (exact Path B stratum): 18 instances with [Cl:H]>1
+Spearman(max_p log W delta, min pretentious dist of REAL chars / median): real S 0.157, random S' 0.096
+Spearman(max_p log W delta, min pretentious dist of ALL chars / median): real S -0.288, random S' 0.437
+  partial (| log delta, m, log h): REAL chars real S 0.163 random 0.063; ALL chars real S 0.003 random 0.063
+fraction of instances whose most pretentious character is real (order 2): 0.000
+median W delta when [Cl:H]>1: 3.60 (n=18); when H=Cl: 1.18 (n=118)
+  m=2: median W delta [Cl:H]>1 6.94 (n=9) vs H=Cl 7.02 (n=2)
+  m=3: median W delta [Cl:H]>1 3.41 (n=6) vs H=Cl 4.54 (n=8)
+  m=4: median W delta [Cl:H]>1 2.15 (n=3) vs H=Cl 1.92 (n=18)
+
+== By size ==
+  |Delta| in [1e+08,1e+10): n=291  Spearman(log W delta, G_p/F_cut) real -0.270 random 0.085; median W delta 1.27
+  |Delta| in [1e+10,1e+12): n=600  Spearman(log W delta, G_p/F_cut) real -0.261 random 0.039; median W delta 1.06
+
+== Ten longest normalized windows (real S) ==
+  D=-3166093599 h=34060 Y=13 m=2 p=2 W=3378 Wdelta=18.7 W_rand=209 G_p/F_cut=0.00 E_major=7.75 E_lowF_major=3.20 random
+  D=-16348907815 h=35674 Y=89 m=6 p=2 W=851 Wdelta=16.8 W_rand=6 G_p/F_cut=0.23 E_major=1.35 E_lowF_major=0.31 random
+  D=-9639770111 h=133868 Y=15 m=5 p=2 W=255 Wdelta=15.1 W_rand=1 G_p/F_cut=0.07 E_major=-0.22 E_lowF_major=-1.07 random
+  D=-1265653159 h=19410 Y=53 m=8 p=2 W=103 Wdelta=14.4 W_rand=18 G_p/F_cut=0.27 E_major=-0.67 E_lowF_major=0.89 random
+  D=-1265653159 h=19410 Y=12 m=2 p=2 W=250 Wdelta=13.4 W_rand=1 G_p/F_cut=0.09 E_major=-0.10 E_lowF_major=-0.80 random
+  D=-21842489519 h=134598 Y=44 m=8 p=2 W=128 Wdelta=12.5 W_rand=12 G_p/F_cut=0.20 E_major=-0.52 E_lowF_major=-1.48 random
+  D=-78304292895 h=191888 Y=121 m=12 p=2 W=210 Wdelta=12.2 W_rand=7 G_p/F_cut=0.35 E_major=-0.18 E_lowF_major=0.55 random
+  D=-6694697812 h=22696 Y=12 m=2 p=7 W=5664 Wdelta=11.0 W_rand=2649 G_p/F_cut=0.00 E_major=3.75 E_lowF_major=3.75 random
+  D=-21842489519 h=134598 Y=17 m=3 p=2 W=797 Wdelta=9.4 W_rand=138 G_p/F_cut=0.01 E_major=4.00 E_lowF_major=3.06 random
+  D=-1387278143 h=33140 Y=28 m=5 p=2 W=99 Wdelta=9.2 W_rand=32 G_p/F_cut=0.11 E_major=-0.49 E_lowF_major=-1.19 random

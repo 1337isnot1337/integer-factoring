@@ -1,5 +1,38 @@
 # Contribution review and disposition ledger
 
+## PR75 Fourier window duality, with scope repairs and orbit normalization
+
+Inspected source `0462759d46485c439fc751c88f7d6e134c9a2fb3`, tree
+`918e5dcceb120fb13a2a7f9f4e366110bcabff5f`, based on `420202d`, for
+integration onto `d8ae218`. Original author orda-aska and the source's
+Grok Bot assistance disclosure are retained, as are all numerical data
+and outputs. Both saved-data analyses reproduce byte-for-byte, matching
+the supplied SHA256SUMS. A new PARI scan is not run: cypari2 is absent.
+The source labels large group structures GRH-conditional and 411 smaller
+class numbers exhaustively certified; the integration analysis does not
+independently re-enumerate those groups.
+
+The [integrated note](../research/window-lemma-character-duality.md)
+repairs the ramified-prime domain: the integer relation 2e2 at D=-20
+violates the original norm claim, whereas the quotient Z^s⊕Z/2 removes
+the known torsion relation. It distinguishes the valid fourth-moment
+bound from unconditional simultaneous phase closeness, makes the
+pigeonhole size hypothesis explicit, and treats the Parseval threshold
+as a minor-arc threshold rather than a proved window bound. A one-radius
+mass conjecture is not promoted to full short-orbit equidistribution.
+
+The [continuation proof](../research/window-orbit-normalization.md)
+groups characters by restriction to the actual target cycle. Zero phases
+contribute to its positive mean C0, with an exact quotient-coset collision
+formula. The complete weighted error E(W)<C0 is sufficient for a window;
+an exact all-scale mass integral displays the remaining quantitative task.
+Rational controls cover ten group/target cases, 37 Fourier restriction
+values, 74 integrals and 69 strictly certified finite windows. These are
+abstract group controls, not a new arithmetic window or score result.
+Focused orbit/saved-analysis checks and docs are the integration gate;
+the prior full e9e5817 replay predates this merge. No new Lean or
+independent mathematical acceptance is claimed.
+
 ## Self-dual Pfaffian codes and uniform representative blocks
 
 The [ordinary construction](../research/pfaffian-derivative-codes.md)

@@ -3210,3 +3210,10 @@ verify-determinant-inverse-profiles:
 .PHONY: verify-pfaffian-derivative-codes
 verify-pfaffian-derivative-codes:
 	python3 tools/check_pfaffian_derivative_codes.py
+
+.PHONY: verify-window-orbit-duality verify-window-duality-analysis
+verify-window-orbit-duality:
+	python3 tools/check_window_orbit_duality.py
+
+verify-window-duality-analysis:
+	python3 tools/check_window_duality_analysis.py

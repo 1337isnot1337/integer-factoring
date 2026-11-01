@@ -31,6 +31,10 @@ work retain credit even when they do not advance the selected exponent.
   including the balanced-separator lower bound and finite checker scripts.
   The contribution discloses AI research-agent assistance; its hand proof
   requires independent human review.
+  The same contributor supplied the Fourier window-duality note and saved
+  arithmetic experiments in [PR #75](https://github.com/1337isnot1337/integer-factoring/pull/75),
+  with Grok Bot assistance disclosed in the source. The integration retains
+  that credit and data, with explicit domain and quantifier repairs.
 
 The [research index](research/INDEX.md), individual PRs, and
 [review ledger](docs/REVIEW_LEDGER.md) retain the provenance and status of

@@ -1,0 +1,63 @@
+{
+  "byte_preserved_numerical_files": [
+    "tools/window_duality/SHA256SUMS",
+    "tools/window_duality/analyze_scan.py",
+    "tools/window_duality/clgroup.py",
+    "tools/window_duality/data/scan.jsonl",
+    "tools/window_duality/data/scan.log",
+    "tools/window_duality/data/scan_large.jsonl",
+    "tools/window_duality/data/scan_large.log",
+    "tools/window_duality/duality_scan.py",
+    "tools/window_duality/output_scan.txt",
+    "tools/window_duality/output_scan_large.txt",
+    "tools/window_duality/run_all.sh"
+  ],
+  "factoring_exponent_improved": false,
+  "imported_source_sha256": {
+    "research/INDEX.md": "ba6f24428f12c1a0cafc3c1c7a18e387016b81e017ba7d2a1ce0ac17ffbbefc5",
+    "research/window-lemma-character-duality.md": "d0775d67d116ef82eb7e0f911d13fc37f7397691fa10efc482d160a40e548f8f",
+    "tools/window_duality/SHA256SUMS": "2f5f5ef49c741bc331c1e0ed5e4fcc1122171149899061d2a75e8f3a9d277d29",
+    "tools/window_duality/analyze_scan.py": "a9725452e1e20b76302a09e099db5edb5b7329b0ac9a440cd7f7ee911edbcf94",
+    "tools/window_duality/clgroup.py": "10e406a43098c4b132a634b7e0b5aab51cee72f339ae3f26612cae625ea362f9",
+    "tools/window_duality/data/scan.jsonl": "081b16abbaf375598cd20fd7611c669bd7785656e40350ea242e9399f9f7a973",
+    "tools/window_duality/data/scan.log": "b77cb3266d99cde451d0ba96330417fd32ecc5ea212797b88d0ee9329c04ab11",
+    "tools/window_duality/data/scan_large.jsonl": "bc9283d7bea013a2d26137a952de4788cf13993045c183dddc1470b181327e0a",
+    "tools/window_duality/data/scan_large.log": "bb529cd4ba025b3e7f654f3e20c57c557f21fc8cdf34a54376fac192dbe25dae",
+    "tools/window_duality/duality_scan.py": "5582461847f8c0164ce19dc111cc7b2828688a45f94cc284a9a1590196518185",
+    "tools/window_duality/output_scan.txt": "72a3734f5036f3a1cfee96210159ff4c9f314b825a7da2b77ecc8764cec85209",
+    "tools/window_duality/output_scan_large.txt": "f7c0ce21aa14edf9f85b09c4116f384c004065af750c1107314aef6a3582bdb9",
+    "tools/window_duality/run_all.sh": "1b8ab202ce450aec48ac3093f65e1bcdab7c854c34d22081dc99a91867bb1803"
+  },
+  "integration_base": "d8ae218f119e33b48aa17869fe42991fb62159fb",
+  "new_proof": "research/window-orbit-normalization.md",
+  "pari_scan": {
+    "reason": "cypari2 unavailable; saved-data reanalysis passes byte-for-byte",
+    "status": "not_run"
+  },
+  "reviewed_utc": "2026-11-01T22:32:13.442022+00:00",
+  "saved_analysis": [
+    {
+      "data": "scan.jsonl",
+      "records": 1032,
+      "sha256": "72a3734f5036f3a1cfee96210159ff4c9f314b825a7da2b77ecc8764cec85209",
+      "targets": 4093
+    },
+    {
+      "data": "scan_large.jsonl",
+      "records": 136,
+      "sha256": "f7c0ce21aa14edf9f85b09c4116f384c004065af750c1107314aef6a3582bdb9",
+      "targets": 892
+    }
+  ],
+  "scope_repairs": [
+    "quotient known ramified order-two relation",
+    "fourth moment does not alone imply simultaneous phase closeness",
+    "pigeonhole h>L^m condition",
+    "Parseval minor-arc threshold is not a window upper bound",
+    "single-radius mass is not full all-scale equidistribution"
+  ],
+  "source_base": "420202d0f18bcfbdcec3e026fa1fbe07de35c25d",
+  "source_commit": "0462759d46485c439fc751c88f7d6e134c9a2fb3",
+  "source_pre_post_status": "",
+  "source_tree": "918e5dcceb120fb13a2a7f9f4e366110bcabff5f"
+}
