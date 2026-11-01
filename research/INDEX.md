@@ -1468,3 +1468,5 @@ The [paired MDS family extension](orthogonal-pair-core-floor.md#5-a-stronger-all
 ## Global orthogonal joint-energy rigidity
 
 [All-field two-parameter normal form](orthogonal-joint-global-rigidity.md) proves that constant orthogonal energy-preserving gauges retaining rank-one leading realignment fix that coefficient globally. The remaining tensor orbit has two parameters. Finite F4/F8/F16 profile controls do not establish an all-field dominance theorem.
+
+The [symbolic profile classification](orthogonal-joint-global-rigidity.md#5-all-field-classification-of-the-natural-profiles) now gives all five natural-profile strata over every characteristic-two field. Every stratum is prefix-dominated by the reference; this is not an arbitrary-weight or nonorthogonal exclusion.

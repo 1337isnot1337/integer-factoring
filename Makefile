@@ -2746,3 +2746,7 @@ check-singular-affine-clifford:
 verify-orthogonal-joint-global:
 	python3 tools/check_orthogonal_joint_global_rigidity.py
 	python3 tools/check_orthogonal_joint_finite_profiles.py
+
+.PHONY: verify-orthogonal-joint-symbolic
+verify-orthogonal-joint-symbolic:
+	python3 tools/check_orthogonal_joint_symbolic_profiles.py
