@@ -2228,3 +2228,10 @@ lattice lines once `R^3` exceeds the rectangle's product height. Streaming
 these queries gives `2^(n/3)*poly(n)` time and polynomial space, removing
 the preceding divisor-bound overhead. This is a classical cube-root scale,
 not an improvement over the main theorem or the scoring exponent.
+
+[Primitive integer row selection](research/primitive-integer-row-selection.md)
+replaces rational-entry rank tests while retaining exactly the same original
+integer relations. Only temporary test vectors are divided by their content.
+On the 96-bit core, five paired runs reduce median selection CPU time from
+0.606 to 0.141 seconds; 17,000 finite acceptance decisions agree with the
+reference. This changes component cost without weakening torsion information.

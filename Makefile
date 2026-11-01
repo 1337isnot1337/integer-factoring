@@ -2567,3 +2567,10 @@ verify-circuit-box-normalization: verify-circuit-box-ratio-lattice
 
 verify-circuit-box-ratio-lattice:
 	python3 tools/check_circuit_box_ratio_lattice.py --output /tmp/integer-factoring-ratio-lattice.json
+
+.PHONY: verify-primitive-integer-row-basis
+
+verify-oriented-refinement: verify-primitive-integer-row-basis
+
+verify-primitive-integer-row-basis:
+	python3 tools/check_primitive_integer_row_basis.py --repetitions 1
