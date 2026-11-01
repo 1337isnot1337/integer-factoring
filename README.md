@@ -221,6 +221,10 @@ proved by a strict integer comparison; its numerical natural optimum is
 about `0.71059036`. This remains above `1/sqrt(2)`, so the factoring score
 is unchanged. An [explicit integrality cone](research/weighted-hot-compound-profiles.md)
 also permits complete full-letter weighted profiles through the same blocks.
+At a fixed energy boundary, [coherent paired compressions](research/coherent-hot-boundary-crossings.md)
+allow linear combinations of physical states. An explicit eight-letter
+code has the exact certificate `rho < 18/25`; the complete declared
+396-idempotent grid and its literal winner replays are archived.
 
 The [multiplicative-monoid decomposition](research/multiplicative-monoid-blocks.md)
 retains the characteristic-two nilpotent coordinates and decomposes every
@@ -300,6 +304,13 @@ make verify-frobenius-stars # Exact field/torus sums, infinity correction, and c
 make verify-finite-crossing-certificates # Exact finite block to all-width amplification and adaptive gates
 make verify-stable-hot-codes # Exact restrictions, natural duality, charge blocks, and weighted-cone controls
 make verify-hot64-certificate # Reconstruct all 4096 channels and the exact rho < 32/45 comparison
+make verify-paired-affine-space # Saturate the exact 5175-dimensional paired-trace space
+make verify-bell-jets # Entrywise jets, Bell CRT, transversality, and ramified minors
+make verify-finite-fibers # Complete F4 regular-frame and finite-jet controls
+make verify-closed-place-oracles # All-channel unequal-alphabet local-order controls
+make verify-filtered-affine-search # Reconstruct complete sixteen-letter search tensors
+make verify-laurent-search # Replay the complete 65536-word Laurent screen
+make verify-coherent-boundary # Exact small-code certificate and complete finite boundary grid
 make verify-coupled-searches # Completed search replays and exact affine determinant change
 make verify-schur-fermion # Complete Schur entry formulas and exact comparisons
 make verify-schur-central # Hook-residue identities and full Schur ranks through weight 8

@@ -16,6 +16,9 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Coherent hot-boundary crossings](coherent-hot-boundary-crossings.md): exact paired compression at equal energy gives `rho < 18/25` on eight letters, with a complete 396-idempotent finite grid and independent literal winner checks.
+- [Bounded polynomial-shift closure](polynomial-shift-affine-closure.md): the subsidiary constant-companion space closes at dimension 3,674 under degree-preserving shifts, with a complete compressed basis and fixed-point checks.
+
 - [Completed fused physical-basis search](fused-physical-search-checkpoint.md): the declared two-hour budget retains all 1,049 proposal outcomes, interruption lineage, complete winning tensors, and exact local-order replays.
 - [Complete Laurent-series screen](laurent-series-search-checkpoint.md): all 65,536 four-letter parameter words are accounted for, with full retained-witness replays and no pressure gain.
 - [Filtered sixteen-letter affine search](filtered-reflection16-affine-search.md): 1,386 one-direction choices give 211 complete tensors; full reconstruction and finite-place controls retain the baseline.

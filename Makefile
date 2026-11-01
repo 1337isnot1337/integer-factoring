@@ -861,3 +861,9 @@ verify-filtered-affine-search:
 verify-laurent-search:
 	OPENBLAS_NUM_THREADS=1 python3 tools/check_laurent_series_search.py --output /tmp/integer-factoring-laurent-series-search.json
 
+.PHONY: verify-coherent-boundary
+
+verify-coherent-boundary:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_coherent_hot_boundary.py --output /tmp/integer-factoring-coherent-hot8.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/checkpoint_coherent_hot_boundaries.py --output /tmp/integer-factoring-coherent-boundary-search.json
+
