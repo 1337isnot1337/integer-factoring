@@ -615,10 +615,11 @@ every positive depth under the stated conditions; the only four
 projectors preserve the tensor. The one-step infinity conditions alone
 also close every normalized scalar multiplier `f(t)=t+O(1)`.
 The [single-evaluation algebra theorem](research/joint-evaluation-algebra.md)
-also closes every scalar-rational projector gauge regular at zero,
-one and infinity: a polynomial minor `t^1452(t+1)^350` proves that
-every other finite evaluation generates the full coefficient algebra.
-Interacting subspaces remain open. Run `make verify-joint-monomial-lattices`,
+also reduces every rational energy-preserving matrix gauge regular at
+zero, one and infinity to a constant conjugation: a polynomial minor
+`t^1452(t+1)^350` proves a localized algebra identity. A gauge equal to
+the identity at infinity leaves the tensor unchanged. Gauges singular
+at the distinguished places remain open. Run `make verify-joint-monomial-lattices`,
 `make verify-joint-projector-lattices` and `make verify-joint-evaluation-algebra`.
 
 The [group-shear extension](research/group-shear-crossings.md) implements

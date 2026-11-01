@@ -7,11 +7,13 @@ together with the integer energy projections, generates the same
 triangular minor equal to `t^1452(t+1)^350`.
 
 Consequently the graded invariant-subspace lattice is independent of
-the evaluation point away from zero and one. This closes an entire
-rational-gauge construction: every nonconstant scalar-rational
-projector gauge regular and invertible at zero, one and infinity that
-produces a polynomial seed leaves the tensor unchanged. The result
-does not improve the complete factoring score `1/2`.
+the evaluation point away from zero and one. More strongly, every
+rational energy-preserving **matrix** gauge regular and invertible at
+zero, one and infinity that produces a polynomial seed reduces to a
+constant conjugation. A gauge equal to the identity at infinity leaves
+the tensor unchanged. This is a global theorem, without a formal-family
+or single-projector assumption. It does not improve the complete
+factoring score `1/2`.
 
 ## 1. The constant coefficient algebra
 
@@ -133,9 +135,63 @@ conjugates agreeing at one good point agree identically as polynomial
 tensors. These statements concern exact algebra, not numerical
 reconstruction from approximate matrix values.
 
-## 4. Rational projector gauges regular at three places
+## 4. Global rational energy gauges regular at three places
 
-**Theorem.** Let `K` be any characteristic-two field and let `P` be any
+The same polynomial certificate proves the localization identity
+
+```math
+\operatorname{alg}_{S}(E_h,A(t))=\mathscr A\otimes S,
+\qquad S=K[t,t^{-1},(t+1)^{-1}].
+```
+
+To see this, restrict the constant algebra to the 169 selected pivot
+columns. That binary coordinate map has full rank 169, also checked
+directly. The polynomial basis has determinant (3) in those coordinates,
+which is a unit in `S`. Its inverse therefore has entries in `S`, and
+every constant member of `A` is an `S`-linear combination of the
+polynomial algebra members. The reverse inclusion was already clear.
+
+**Global theorem.** Let `U(t)` be any invertible rational energy-block
+matrix over `K(t)`. Assume that both `U` and its inverse are regular
+at `t=0`, `t=1` and infinity, and that `A_U=UAU^-1` is polynomial.
+Then
+
+```math
+U(t)=U(0)W(t),\qquad [W(t),X]=0\quad(X\in\mathscr A),
+\qquad A_U=U(0)A(t)U(0)^{-1}.
+```
+
+In particular if `U(infinity)=I`, then `A_U=A`. There is no generator,
+idempotence, nilpotency, leading-rank, or identity-component hypothesis.
+
+For any constant `X in A`, use the localization identity to express
+`X` as an `S`-linear combination of words in `A(t)` and the `E_h`.
+Energy preservation gives `UE_hU^-1=E_h`. Conjugating that expression
+shows that
+
+```math
+U(t)XU(t)^{-1}\in\operatorname{Mat}_{25}(S),
+```
+
+because the substituted `A_U` is polynomial. Thus these rational
+entries have no finite poles except possibly at zero and one. The
+assumed regularity of `U,U^-1` removes those two possibilities.
+Their regularity at infinity removes a pole there as well. A rational
+function with no poles on the projective line is constant; equivalently
+the absence of finite poles makes it a polynomial, and regularity at
+infinity makes its degree zero. This argument is valid over arbitrary
+`K`, without requiring its algebraic closure.
+
+Evaluating at zero proves
+`UXU^-1=U(0)XU(0)^-1` for every `X`. This is precisely the stated
+factorization with a full-commutant rational unit. Evaluating at
+infinity instead proves the normalized conclusion when `U(infinity)=I`.
+The full graded commutant is the four-dimensional algebra from the
+predecessor note, now extended to the field `K(t)`.
+
+## 5. Scalar-projector corollary and its invariant-subspace proof
+
+**Corollary.** Let `K` be any characteristic-two field and let `P` be any
 constant energy-block idempotent. Put `Q=I-P`. Let `f(t) in K(t)` be
 nonconstant and have nonzero finite values at `0`, `1` and infinity.
 If
@@ -186,7 +242,7 @@ irreducible numerator and denominator factors, and nonnormalized
 nonzero constant value at infinity. Passing to algebraic roots in the
 proof makes no algorithmic assumption about finding those roots.
 
-## 5. Replay and remaining scope
+## 6. Replay and remaining scope
 
 ```sh
 make verify-joint-evaluation-algebra
@@ -201,11 +257,12 @@ finite-point dimensions. It records source hashes and the full
 polynomial basis in the evidence. Neither SAT nor a finite-field
 census is a dependency of (4) or the rational-gauge theorem.
 
-This closes scalar-rational gauges with one fixed projector and the
-stated three-place regularity. Several interacting projector
-directions, projectors depending on `t`, singularities at the
-distinguished places, other energy assignments and other seeds stay
-outside it. The coefficient algebra theorem concerns this exact
+The global theorem covers all rational matrix directions and their
+interactions under three-place regularity. Gauges singular at a
+distinguished place, other energy assignments and other seeds stay
+outside it. In particular strict crossing at one does not itself
+imply that the gauge is regular there; that hypothesis cannot simply
+be dropped. The coefficient algebra theorem concerns this exact
 25-state reference, not a general factoring lower bound. This work
 used substantial OpenAI assistant support and retains the Gaussian
 reference attribution. No new Lean, independent review or improved

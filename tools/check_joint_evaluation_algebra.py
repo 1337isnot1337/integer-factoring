@@ -198,6 +198,9 @@ def certificate():
     data = model()
     full = constant_algebra(data)
     basis, statistics = polynomial_algebra(data)
+    columns = [record['pivot'] for record in basis]
+    assert len(Space([sum(((value >> p) & 1) << i for i, p in enumerate(columns))
+                      for value in full.basis]).basis) == 169
     coefficient_controls = 0
     for record in basis:
         coefficients = {}
@@ -225,12 +228,14 @@ def certificate():
     assert len(Space(radical+[first, second]+commutant).basis) == 4
     assert len(Space(radical+[first, second]).basis) == 4
     return dict(coefficient_algebra_dimension=169, polynomial_basis=basis, statistics=statistics,
+                localized_coefficient_algebra_generation=True,
                 coefficient_membership_controls=coefficient_controls, direct_F4_point_dimensions=dimensions,
                 full_commutant_dimension=4, commutant_idempotents=[0, first, second, IDENTITY],
                 source_sha256={name: sha256((ROOT/'tools'/name).read_bytes()).hexdigest()
                                for name in ('check_joint_evaluation_algebra.py', 'joint_energy_conjugations.py',
                                             'f4_recentered_lattices.py', 'search_f4_recentered_crossings.py')},
                 scope='Every characteristic-two field and every finite point a other than zero and one; the energy projections and A(a) generate the complete constant coefficient algebra.',
+                global_rational_gauge_conclusion='Every rational energy-block matrix gauge regular and invertible at zero, one and infinity which yields a polynomial seed equals its constant value at zero times a full-commutant rational unit. Its tensor is a constant conjugate; if its value at infinity is identity, the tensor is unchanged.',
                 rational_gauge_conclusion='Every nonconstant scalar-rational projector gauge regular and invertible at zero, one and infinity that yields a polynomial transformed seed uses one of four neutral projectors and leaves the tensor unchanged.',
                 factoring_exponent='1/2; unchanged')
 
