@@ -150,6 +150,8 @@ jump on `ab=1`; all sixteen F4 members and four Gram-paired probes retain
 complete profiles. The numerical fits give no improvement in this finite
 family. Run `make verify-coherent-inverse-f4 verify-coherent-gram-f4` for the
 exact small controls and symbolic catalecticant calculation.
+The [complete default-suite receipt](evidence/coherent-inverse-f4-verification.json)
+pins the successful clean replay, including both new targets, to `47d6533`.
 <!-- coherent-compound-checkpoint:end -->
 
 The [quadratic-parity Walsh construction](research/bell-walsh-constructions.md)
