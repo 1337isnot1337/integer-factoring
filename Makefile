@@ -2357,3 +2357,7 @@ verify-pascal-letter-gauges:
 .PHONY: verify-coherent-f4-partial
 verify-coherent-f4-partial:
 	python3 tools/check_coherent_hot_f4_partial.py
+
+.PHONY: verify-orthogonal-pair-core-floor
+verify-orthogonal-pair-core-floor:
+	python3 tools/check_orthogonal_pair_core_floor.py
