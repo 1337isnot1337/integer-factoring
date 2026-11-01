@@ -212,6 +212,57 @@ crossing has no Laurent powers below `u^(-4M_r)`. Every nonzero Laurent grade
 other than zero vanishes at both strict endpoints. The window is polynomial
 in the strand count, but it does not bound the two-cut ranks of the pieces.
 
+### Mean pole order and path-stratified support
+
+The worst path is much more singular than a typical path. Let `T_(r,h)` be
+the total number of down-steps from height `h`, summed over all Dyck paths of
+semilength `r`. Marking a depth-`h` vertex in a plane rooted tree gives the
+generating function `z^h C(z)^(2h+1)`, where `C=1+zC^2` is the Catalan
+generating function. Lagrange inversion therefore gives the exact count
+
+```math
+T_{r,h} = [z^r]z^h C(z)^{2h+1}
+        = \frac{2h+1}{2r+1}\binom{2r+1}{r-h}.
+```
+
+Consequently the exact mean path-norm valuation is
+
+```math
+\mathbb E W_r
+ = \frac1{C_r}\sum_{h=1}^r
+    w(h)\frac{2h+1}{2r+1}\binom{2r+1}{r-h}.             \tag{11}
+```
+
+It has order `Theta(r log r)`. To see the upper bound, choose a uniformly
+random down-step from a uniformly random Dyck path. Its height distribution
+is `p_(r,h)=T_(r,h)/(r C_r)`. The binomial ratio formula gives
+
+```math
+p_{r,h}\le \frac{2h+1}{r}\exp\!\left(-\frac{h^2}{2r}\right).
+```
+
+Write `w(2m-1)=w(2m)=sum_(a>=0)2^a [2^a divides m]`. At dyadic level `a`,
+the contributing heights lie in two residue classes of spacing
+`d=2^(a+1)`. Summing the displayed Gaussian envelope on those classes gives
+probability `O(1/d)` for `d<=sqrt(r)` and
+`O((d/r) exp(-c d^2/r))` for `d>sqrt(r)`. Multiplying by the level weight
+`2^a=d/2` costs `O(1)` per level, and there are `O(log r)` levels. For the
+lower bound, throughout `sqrt(r)<=h<=2sqrt(r)` the same binomial ratio is
+bounded below by a positive constant, so `p_(r,h)=Theta(1/sqrt(r))`. Each
+dyadic spacing `d<=sqrt(r)/2` then contributes `Theta(1)`; there are
+`Theta(log r)` such levels. Thus the mean weight per down-step is
+`Theta(log r)`, proving the claim.
+
+This yields a path-dependent precision invoice. The diagonal factors
+`nu_P^(-1)` have `2W(P)` possible negative Laurent grades in `u`; across all
+paths their total principal-part slots are
+`sum_P 2W(P)=2 C_r E[W_r]=Theta(C_r r log r)`, instead of the uniform
+`O(C_r r^2)` padding. For a pair of paths, the corresponding sum is
+`Theta(C_r^2 r log r)`. These are scalar support counts, not cut ranks: the
+missing step is a two-cut factorization that preserves the path strata and
+turns their lower support into a favorable rank sum. No factoring score
+improvement follows from (11) alone.
+
 The checker verifies the unrestricted path vectors, their nonzero
 orthogonal norms, and their coordinates in the full cup frame through eight
 physical strands. The uniform pole estimate (10) follows from the displayed
@@ -228,3 +279,6 @@ make verify-catalan-gram-smith
 
 The recorded profiles are in
 [`catalan-gram-dual-smith.json`](../evidence/catalan-gram-dual-smith.json).
+The same checker cross-checks (11) against the independently enumerated path
+valuation distributions at semilengths `1,2,4,8,16,24,32` and records exact
+means at powers of two through 512.

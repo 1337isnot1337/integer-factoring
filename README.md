@@ -1002,6 +1002,8 @@ decoder for the full Catalan cup frame. A tree-profile argument gives the
 exact maximum path-norm valuation `M_r` over dyadic candidate heights and a
 paired pole bound `4M_r <= r^2+4(r+1)log_2(r+1)` at `q=1+u`. Exact path-
 valuation distributions match the closed form through semilength 32;
+their exact mean is `Theta(r log r)`, from marked plane-tree levels, reducing
+the total path-resolved principal-part slots but not yet the cut ranks.
 truncated-series Smith profiles pass through sixteen physical strands, with
 valuation jumps from three to seven at fourteen strands. Its two-cut rank sum
 remains unresolved. Run
