@@ -11,8 +11,9 @@ from normalized_support_gap import normalized_gap
 from scaled_asymmetric_crossing_pressure import ScaledAsymmetricPressure
 
 
-def fit(seed, start, *, seconds=15., maxiter=100, balanced=False, height_bound=128.):
-    model = ScaledAsymmetricPressure(seed)
+def fit(seed, start, *, seconds=15., maxiter=100, balanced=False, height_bound=128., model=None):
+    if model is None:
+        model = ScaledAsymmetricPressure(seed)
     started = time.monotonic()
     point = np.asarray(start, dtype=float).copy()
     if balanced:

@@ -2991,3 +2991,7 @@ verify-rectangular-coordinate-support:
 .PHONY: verify-regularized-transpose-words
 verify-regularized-transpose-words:
 	python3 tools/check_regularized_transpose_words.py
+
+.PHONY: verify-cyclic-pauli-crossings
+verify-cyclic-pauli-crossings:
+	python3 tools/check_cyclic_pauli_crossings.py

@@ -1,5 +1,7 @@
 # Research index
 
+- [Cyclic Pauli crossings with unrestricted physical types](cyclic-pauli-crossing-diagnostic.md): a three-gate F4 qutrit cell has two nondegenerate leading rank-one cuts; coupled degree-two loops retain the structure and exact charge blocks. All 1,458 orders of a q27 fixture are independently replayed. Bare obstructions gate a registered typed diagnostic; no stronger score is claimed.
+
 - [Weighted transpose words around a rank-one bottleneck](regularized-transpose-sandwiches.md): a three-factor F4 construction gives rank one at zero at every alphabet size; non-diagonal sandwiches retain the bottleneck and an odd-factor opposite leading rank. Literal controls include 913 independent entries and a complete q12 degree-23 profile; an eight-input pressure pilot is registered. No favorable rate is claimed.
 
 - [Coordinate support on different physical alphabets](rectangular-coordinate-support.md): the credited XOR/projection proof gives an all-field rank-sum lower bound for any piece count and independent coordinate alphabets, forcing balanced rho at least 3/4 in that support class. Non-diagonal channels and arbitrary retractions remain outside it.

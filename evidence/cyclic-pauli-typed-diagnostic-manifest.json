@@ -1,0 +1,83 @@
+{
+  "status": "registered_before_typed_diagnostic",
+  "base": "0791061",
+  "question": "Can coupled noncommuting ternary Weyl words and nonadditive whole-symbol potentials cross support one?",
+  "mechanism": "A new literal cyclic source with rank-one leading cuts; all charge blocks are retained while whole physical types need not factor over modes.",
+  "obstructions": "Bare product excluded by three entropy planes; nonpositive raw mean sum excludes bare all-angle improvement on each source where it holds. Fixed-gauge axis theorem remains. Protected Fock-core and binary support hypotheses are not asserted for the new source.",
+  "continuation": "Continue only for a threshold candidate or an identified structural profile mechanism; otherwise change approach rather than grow the same loop/field search.",
+  "total_seconds": 420,
+  "trial_seconds": 30,
+  "maxiter": 200,
+  "precision": 512,
+  "height_bound": 128,
+  "log_scale_bounds": [
+    -9,
+    "log(4)"
+  ],
+  "log_tangent_bounds": [
+    -2,
+    2
+  ],
+  "free_heights": 208,
+  "starting_scale_floor": 0.05,
+  "cases": [
+    {
+      "label": "product-control",
+      "k": 3,
+      "loop_count": 0,
+      "bare_exclusion": "three-plane tensor-product certificate",
+      "seed": 203172396720331921207547957634927868507
+    },
+    {
+      "label": "checked-one-loop",
+      "k": 3,
+      "loops": [
+        {
+          "position": 1,
+          "a": [
+            1,
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "b": [
+            1,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "coefficient": 2
+        }
+      ],
+      "expected_planes_sha256": "756d4cbc0dfd60602ac1b8ac22d8aaee583d9a42f5fb1e566c77290df927ee06",
+      "seed": 276415071322566719079789873526645553648
+    },
+    {
+      "label": "four-coupled-loops",
+      "k": 3,
+      "loop_count": 4,
+      "seed": 137553198437781335193076506747611960883
+    }
+  ],
+  "source_sha256": {
+    "tools/cyclic_pauli_crossings.py": "4d3c84c9fd95b147ff5dbf91bd38fbcb7da611499e76133e014f07a453b5f41b",
+    "tools/cyclic_pauli_pressure.py": "e8198492274fa9be648ccbd8b17c1d2f883f865f994cd9101ed93cf6426d085e",
+    "tools/check_cyclic_pauli_crossings.py": "11d4ebd8cba93ebaf117c3276785d85aad501ab0d36414d046a46340bc8e483b",
+    "tools/screen_cyclic_pauli_crossings.py": "028d1e78df763f2cc0e9236d1c13ee340b5193491325a4c4550a92fa58136d72",
+    "tools/bounded_complete_support_fit.py": "2c4ac3b3eaccccca9a7a0835f99162926f925724594912ae37052d1f0d2bfdc9",
+    "tools/normalized_support_gap.py": "b7cfce4d812d5652168047bd8983cb8f0cd3c96e673fce59ec1494f634bcf25d",
+    "tools/asymmetric_crossing_pressure.py": "de017ff2d5c352505aa2b3ec9a2541f8fb4db0bdd2e70b3ec74de91c4713ca42",
+    "tools/scaled_asymmetric_crossing_pressure.py": "50231d3a2de45fea2a86c5019a9aada8c88d08966e413efee1f8c7f566108a77",
+    "tools/native_matrix_smith_f4.py": "c08da20f1938a371b438e32fbc6a8f6766b48c2cfee5bcd1c956ce137dc70203",
+    "tools/native_matrix_smith_f4.cpp": "5ec995cd04563c2fa99b69afd71bf476d5ca885f1f90377490c30e5a1a55f330",
+    "tools/native_rectangular_smith_f4.cpp": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6",
+    "tools/regularized_transpose_words.py": "3f0dd03d41973f707100371768aee256196c107d4dcc22545fb4ccc695471771",
+    "tools/mixed_graph_retractions.py": "d4f6f15d2ca5afa0e82f8294363cef1105318357d7613ad830557caee0ed8144",
+    "tools/search_f4_recentered_crossings.py": "aaa200699ed3630f941bf694af79d0465a277b3dc570e5cc3a4a5c5703c284cd"
+  },
+  "claim": "Finite structural diagnostic, no favorable support, exact pressure certificate or stronger score at registration."
+}
