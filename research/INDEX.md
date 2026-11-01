@@ -726,7 +726,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Exact leading ranks from a fusion automaton](nilpotent-leading-rank-automaton.md): five four-letter generators close on22 projective matrices. Exact44-counter identities prove rational generating functions for every even length and refine the leading central auxiliary rank bound; boundary contractions and the complete favorable crossing sum remain separate.
 - [Full Catalan cup codes with coordinate duals](catalan-cup-crossings.md): a unitriangular physical minor retains every noncrossing cup, including the Gram radical, with a strict F2 crossing and `n=lambda+O(log(lambda+2))`. Independent full physical coefficients and both small cut profiles pass; favorable uniform ranks remain open.
 - [Nilpotent parameter jets of the Catalan crossing](catalan-cup-jets.md): simultaneous primal, decoder and braid deformation over `F2[u]/u^s` exposes additional zero-endpoint F2 directions without a Gram inverse. An effective series compiler and complete small controls enlarge the space; a favorable uniform recombination remains open.
-- [Laurent Gram-dual pole budget](catalan-gram-dual-smith.md): unrestricted spin paths bound the Gram decoder pole by `2r^2` in `u` and the paired crossing pole by `4r^2`; exact Toeplitz Smith profiles through 16 strands expose the jumps `1,3,7`. The polynomial-size jet window has no favorable rank-sum theorem yet.
+- [Laurent Gram-dual pole budget](catalan-gram-dual-smith.md): a height-sensitive down-step estimate bounds the Gram decoder pole by `r(r+1)` in `u` and the paired crossing pole by `2r(r+1)`; exact Dyck-path valuation distributions extend through semilength 32, and Toeplitz Smith profiles expose jumps `1,3,7` through 16 strands. The window has no favorable rank-sum theorem yet.
 - [Binary site-symmetry actual-rank barrier](binary-site-symmetry-barrier.md): a universal degree-four certificate forces `rho>=3/4` over any fixed field, including all scalar polynomial degrees, coefficient recombinations, and common partitions into sublinearly many position classes.
 - [Full auxiliary coefficient-span optimization](auxiliary-coefficient-span.md): all 2,588 binary functionals in 15 finite cases, strict recombination gains, exact minmax certificates, and rational rank-sum optima certified by shortest-path dual potentials.
 - [Nonlinear downset-code crossings](downset-code-crossings.md): exact global characteristic-two Smith factors and a constant basis normal form for actual coefficient ranks on every downset and every paired-downset encoding, with complete small-domain controls and nonlinear regular-code searches.
@@ -1497,3 +1497,15 @@ The [symbolic profile classification](orthogonal-joint-global-rigidity.md#5-all-
 ## F8 coherent retraction engine
 
 [Three-plane construction and independent controls](coherent-hot-f8-retractions.md) extends the coherent code interface to F8, with exact low orders and explicit unresolved tails. The check covers 16,884 complete polynomial entries and 70 independent full block profiles. No factoring improvement follows from the engine alone.
+
+## Ten-point F8 hyperoval crossing
+
+[Exact 96-letter bound rho < 0.710005835](f8-hyperoval-crossing-bound.md) improves both complete natural profiles over the F4 code at every positive scale. The source-pinned clean replay resolves all 18,432 channel orders, with an explicit rational physical type and independent polynomial-entry controls. The factoring exponent remains 1/2.
+
+## All-algebraic two-point Hecke barrier
+
+[Determinant and Frobenius-orbit budgets](hecke-all-algebraic-place-barrier.md) exclude every two-geometric-point shift of the retained five-/nine-letter Hecke tensors over algebraic extensions, at every unweighted supporting angle. All rational-place profiles have independent Toeplitz determinant-order controls. Physical gauges and mixed-place groupings remain outside scope.
+
+## Jensen bounds for unresolved core orders
+
+[All-mode protected-core floors](jensen-tail-protected-core-floor.md) use a determinant-degree bound on 3,202 unresolved orders, rather than assigning individual values. Retaining the height-below-24 core forces rho >= 17/24 through height37, and >=29/41 through height38, over all characteristic-two fields. Separate alphabets/types and arbitrary homogeneous high splits are allowed; unequal cut scales and other gauges are not excluded.

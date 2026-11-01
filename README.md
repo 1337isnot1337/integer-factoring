@@ -273,8 +273,9 @@ A [96-letter binary construction](research/coherent-q96-pressure.md) certifies
 **`rho < 0.7100058652501`**, improving its matched coordinate construction.
 The exact comparison holds for `0 < r <= 4/5`; it is not an all-scale
 improvement. Both 9,216-order profiles and an outward-rounded rational
-pressure certificate are retained. The separate F4 hyperoval result below
-gives a still smaller bound.
+pressure certificate are retained. The F4 hyperoval result below gives a
+smaller bound; the new F8 hyperoval improves it to `rho < 0.710005835`
+with the same 96-letter size and both natural profiles improved at every scale.
 
 [Graded quotient codes](research/coherent-graded-quotients.md) supply explicit
 mixed-occupation physical maps. Their complete zero-cut profiles equal the
@@ -623,6 +624,8 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs five groups on 
 | [`tools/`](tools/) and [`tests/`](tests/) | Exact checkers, reproduction scripts, and unit tests |
 
 ## Current research frontier
+
+- [F8 hyperoval crossing](research/f8-hyperoval-crossing-bound.md): exact rho < 0.710005835 at the same 96-letter size. Both 9,216-order natural profiles strictly improve the retained F4 profiles at every positive scale. A source-pinned full reconstruction, independent entry controls and an explicit rational type certify the result. This remains above 1/sqrt(2); the factoring exponent stays 1/2.
 
 - [F4 hyperoval crossing](research/f4-hyperoval-crossing-bound.md): exact rho < 0.710005861, slightly improving the pinned coordinate 96-letter bound. Both complete cuts and an explicit type with denominator 2^36 are certified. This remains above 1/sqrt(2), so the complete factoring exponent stays 1/2.
 
@@ -984,11 +987,12 @@ Run `make verify-catalan-cup-jets`.
 
 The [Laurent Gram dual](research/catalan-gram-dual-smith.md) is another
 decoder for the full Catalan cup frame. An unrestricted orthogonal spin-path
-basis bounds its pole by `2r^2` at `q=1+u`, so its paired crossing has a
-polynomial-size Laurent window. Exact truncated-series Smith profiles pass
-through sixteen physical strands, with valuation jumps from three to seven
-at fourteen strands. This opens a larger coefficient-recombination space;
-its two-cut rank sum remains unresolved. Run
+basis bounds its pole by `r(r+1)` at `q=1+u`, so its paired crossing has
+pole order at most `2r(r+1)`. An exact Dyck-path valuation dynamic program
+checks distributions through semilength 32; exact truncated-series Smith
+profiles pass through sixteen physical strands, with valuation jumps from
+three to seven at fourteen strands. This opens a larger coefficient
+recombination space; its two-cut rank sum remains unresolved. Run
 `make verify-catalan-gram-smith`.
 
 The [exact nonlinear charge theorem](research/nonlinear-symbol-charge-lattices.md)
@@ -2373,3 +2377,5 @@ The [declared compact-witness 128-bit policy](evidence/compact-witness-oriented-
 [Compact oriented construction and verification](research/compact-oriented-basis-input-bound.md) now have a deterministic B^(1+o(1)) bit bound in total supplied input size, counting the discriminant once. Batched discriminant validation, two coprime passes, and a balanced arithmetic verifier avoid per-key large-discriminant work and reduced-form output. Controls include 3146 independent HNF identities and constructed large-discriminant inputs. Relation supply and the factoring score remain unchanged.
 
 The [auxiliary-mode Clifford theorem](research/tensor-affine-clifford-profiles.md) recovers complete Smith profiles for Gaussian circuits interleaved with arbitrary invertible one-mode maps over characteristic-two fields. One auxiliary mode gives a matrix of order 2n+2, with scalar valuations and both cut clearings retained. The 18-row implementation matches all 131072 prior binary orders and independent original F4 kernels. A completed 1792-case F4 degree census finds no pressure improvement.
+
+The [Jensen tail-degree extension](research/jensen-tail-protected-core-floor.md) gives complementary all-field protected-core floors: retaining all 81 states below height24 forces natural rho >= 17/24 through height37, or >=29/41 through height38. All hot modes, separate paired alphabets/types and homogeneous high splits without deletion closure are allowed. These are method-specific barriers, not a stronger factoring exponent.

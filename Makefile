@@ -2806,3 +2806,21 @@ verify-height36-core-replay:
 .PHONY: verify-coherent-f8
 verify-coherent-f8:
 	python3 tools/check_coherent_hot_f8.py
+
+.PHONY: verify-f8-hyperoval verify-f8-hyperoval-full
+verify-f8-hyperoval:
+	python3 tools/replay_f8_hyperoval_q96.py
+	python3 tools/certify_f8_hyperoval_q96.py
+verify-f8-hyperoval-full:
+	python3 tools/replay_f8_hyperoval_q96.py --full
+	python3 tools/certify_f8_hyperoval_q96.py
+
+.PHONY: verify-hecke-all-places verify-hecke-all-places-full
+verify-hecke-all-places:
+	python3 tools/check_hecke_all_algebraic_places.py --alphabet 5
+verify-hecke-all-places-full:
+	python3 tools/check_hecke_all_algebraic_places.py --alphabet 9
+
+.PHONY: verify-jensen-core-floors
+verify-jensen-core-floors:
+	python3 tools/check_jensen_tail_core_floor.py

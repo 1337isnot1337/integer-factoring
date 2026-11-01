@@ -104,3 +104,27 @@ def smith_valuation_profile(length, precision=8):
         "gram_exponent_counts": counts,
         "unresolved_at_least": at_least[precision],
     }
+
+
+def dyck_path_valuation_distribution(semilength):
+    """Count return paths by the delta-valuation of their spin-path norm."""
+    assert semilength >= 0
+    current = {0: {0: 1}}
+    for step in range(2 * semilength):
+        following = {}
+        for height, histogram in current.items():
+            up_count = (step + height) // 2
+            down_count = (step - height) // 2
+            if up_count < semilength and height < semilength:
+                target = following.setdefault(height + 1, {})
+                for valuation, count in histogram.items():
+                    target[valuation] = target.get(valuation, 0) + count
+            if down_count < semilength and height > 0:
+                even_index = height if height % 2 == 0 else height + 1
+                local_valuation = (even_index & -even_index) - 1
+                target = following.setdefault(height - 1, {})
+                for valuation, count in histogram.items():
+                    total = valuation + local_valuation
+                    target[total] = target.get(total, 0) + count
+        current = following
+    return current.get(0, {})

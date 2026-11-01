@@ -1,0 +1,131 @@
+{
+  "completed": true,
+  "core_q": 81,
+  "known_orders_per_cut": 3359,
+  "unknown_orders_per_cut": 3202,
+  "known_order_sum": 173663,
+  "core_determinant_degree_bound": 433836,
+  "unknown_sum_upper_bound": 260173,
+  "jensen_tail_exponent": 82,
+  "tail_orders_claimed_individually": false,
+  "cases": [
+    {
+      "maximum_height": 37,
+      "ambient_height_inventory_q": 372,
+      "rho_floor": [
+        17,
+        24
+      ],
+      "derivative_degree": 2265,
+      "sign_variations": 2,
+      "root_controls": [
+        {
+          "box": [
+            [
+              9081026427,
+              10000000000
+            ],
+            [
+              2270256607,
+              2500000000
+            ]
+          ],
+          "signs": [
+            1,
+            -1
+          ],
+          "value_hashes": [
+            "963b66526a7c6981a30de911a739aea1c6ba13b0abd81a3db30cf526d815de04",
+            "b507bed699a8a67335259fe8eee6c3e78a00a93573ca28b36b200b3e33c3945b"
+          ]
+        },
+        {
+          "box": [
+            [
+              9902443571,
+              10000000000
+            ],
+            [
+              2475610893,
+              2500000000
+            ]
+          ],
+          "signs": [
+            -1,
+            1
+          ],
+          "value_hashes": [
+            "63ea9a81f3ec348fa509e32e34e43efa5e2bf17c06c99b8f70ba3d357ab3f2ef",
+            "ae6aadff595ae2572d8070a5e6ed7287b03079d65aa2d114a40e69fd0aaf4086"
+          ]
+        }
+      ],
+      "minimum_gap_lower": 92644388874548077358731501525204811948974023560611873500,
+      "precision_bits": 192,
+      "endpoint_integer_power_gap_positive": true
+    },
+    {
+      "maximum_height": 38,
+      "ambient_height_inventory_q": 409,
+      "rho_floor": [
+        29,
+        41
+      ],
+      "derivative_degree": 3907,
+      "sign_variations": 2,
+      "root_controls": [
+        {
+          "box": [
+            [
+              9454699347,
+              10000000000
+            ],
+            [
+              2363674837,
+              2500000000
+            ]
+          ],
+          "signs": [
+            1,
+            -1
+          ],
+          "value_hashes": [
+            "ed831e24ebb6f8a95c6bc01fcf501acae10f3bb430e064b85522d00d0a6d4291",
+            "91a7437cd6c708eb210adec422be3c791062a0fcd2811b54a6fca9bab04b7d05"
+          ]
+        },
+        {
+          "box": [
+            [
+              9946866891,
+              10000000000
+            ],
+            [
+              2486716723,
+              2500000000
+            ]
+          ],
+          "signs": [
+            -1,
+            1
+          ],
+          "value_hashes": [
+            "bb2c93d6e8a0beaadb262bf8dc36c3ca163c7573fb75bc4fac95d4b452f5d5e6",
+            "21869e2b8d2eb669394dad6147c0c2ee8771d13880309851252b0cba8f97af06"
+          ]
+        }
+      ],
+      "minimum_gap_lower": 1621993596990300437167347334071110315149903522757303494094,
+      "precision_bits": 192,
+      "endpoint_integer_power_gap_positive": true
+    }
+  ],
+  "core_receipt_sha256": "13ad5470f1a4d75c0fd9b428974111f4eb7a69df1caa1c50eec797917178c4ca",
+  "source_sha256": {
+    "check_jensen_tail_core_floor.py": "2086a98baf51aa7665bd7928de8594600bd0d8d4eb592496ae039af00eca0850",
+    "coherent_hot_compounds.py": "43971c67f7fb938a836863ddf13794df4bc772ff20e043a5190174552231554a",
+    "check_hot_boundary_core_barrier.py": "1d1f9062226b080ec584ccbcad7b954ec000035c622aba632b0960478b9aa8fe",
+    "certify_natural_pressure_interval.py": "2eed70fa1c32ddf190aca7f97b6fbcd541fd748101f92c6b0899933978e02c67"
+  },
+  "scope": "Constant height-homogeneous paired splits retaining the full height<24 coordinate core, over any characteristic-two field and with all hot modes allowed. Separate alphabets/types allowed; common balanced natural cut scale only. No deletion closure required above the core."
+}
