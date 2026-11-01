@@ -1,0 +1,330 @@
+{
+  "status": "passed",
+  "scope": "Independent exact selected-entry controls for the F4 q96 hyperoval code.\n\nSubset dynamic programming computes determinants of the original B(t), not\nof the native height-factored K(t). This is not another full Smith replay.\n",
+  "profile_sha256": "b50063336be144180e018906b900c954abffaa9aec462c2b1e390541697b3005",
+  "complete_F4_entries": 76,
+  "nonbinary_entries": 3,
+  "independent_determinants": 107,
+  "blocks": [
+    {
+      "charge": 0,
+      "cut": "zero",
+      "pairs": [
+        [
+          0,
+          0
+        ]
+      ],
+      "degree_bound_t": 0
+    },
+    {
+      "charge": 0,
+      "cut": "infinity",
+      "pairs": [
+        [
+          0,
+          0
+        ]
+      ],
+      "degree_bound_t": 0
+    },
+    {
+      "charge": 1,
+      "cut": "zero",
+      "pairs": [
+        [
+          6,
+          0
+        ],
+        [
+          27,
+          0
+        ]
+      ],
+      "degree_bound_t": 30
+    },
+    {
+      "charge": 1,
+      "cut": "infinity",
+      "pairs": [
+        [
+          6,
+          0
+        ],
+        [
+          27,
+          0
+        ]
+      ],
+      "degree_bound_t": 30
+    },
+    {
+      "charge": 2,
+      "cut": "zero",
+      "pairs": [
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "degree_bound_t": 12
+    },
+    {
+      "charge": 2,
+      "cut": "infinity",
+      "pairs": [
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "degree_bound_t": 12
+    },
+    {
+      "charge": 3,
+      "cut": "zero",
+      "pairs": [
+        [
+          0,
+          93
+        ],
+        [
+          30,
+          1
+        ]
+      ],
+      "degree_bound_t": 50
+    },
+    {
+      "charge": 3,
+      "cut": "infinity",
+      "pairs": [
+        [
+          0,
+          93
+        ],
+        [
+          30,
+          1
+        ]
+      ],
+      "degree_bound_t": 50
+    },
+    {
+      "charge": 4,
+      "cut": "zero",
+      "pairs": [
+        [
+          63,
+          93
+        ],
+        [
+          37,
+          9
+        ]
+      ],
+      "degree_bound_t": 92
+    },
+    {
+      "charge": 4,
+      "cut": "infinity",
+      "pairs": [
+        [
+          63,
+          93
+        ],
+        [
+          37,
+          9
+        ]
+      ],
+      "degree_bound_t": 92
+    },
+    {
+      "charge": 5,
+      "cut": "zero",
+      "pairs": [
+        [
+          85,
+          94
+        ],
+        [
+          94,
+          42
+        ]
+      ],
+      "degree_bound_t": 98
+    },
+    {
+      "charge": 5,
+      "cut": "infinity",
+      "pairs": [
+        [
+          85,
+          94
+        ],
+        [
+          94,
+          42
+        ]
+      ],
+      "degree_bound_t": 98
+    },
+    {
+      "charge": 6,
+      "cut": "zero",
+      "pairs": [
+        [
+          93,
+          45
+        ],
+        [
+          87,
+          38
+        ]
+      ],
+      "degree_bound_t": 88
+    },
+    {
+      "charge": 6,
+      "cut": "infinity",
+      "pairs": [
+        [
+          93,
+          45
+        ],
+        [
+          87,
+          38
+        ]
+      ],
+      "degree_bound_t": 88
+    },
+    {
+      "charge": 7,
+      "cut": "zero",
+      "pairs": [
+        [
+          93,
+          28
+        ],
+        [
+          13,
+          84
+        ]
+      ],
+      "degree_bound_t": 82
+    },
+    {
+      "charge": 7,
+      "cut": "infinity",
+      "pairs": [
+        [
+          93,
+          28
+        ],
+        [
+          13,
+          84
+        ]
+      ],
+      "degree_bound_t": 82
+    },
+    {
+      "charge": 8,
+      "cut": "zero",
+      "pairs": [
+        [
+          94,
+          92
+        ],
+        [
+          92,
+          46
+        ]
+      ],
+      "degree_bound_t": 100
+    },
+    {
+      "charge": 8,
+      "cut": "infinity",
+      "pairs": [
+        [
+          94,
+          92
+        ],
+        [
+          92,
+          46
+        ]
+      ],
+      "degree_bound_t": 100
+    },
+    {
+      "charge": 9,
+      "cut": "zero",
+      "pairs": [
+        [
+          84,
+          92
+        ],
+        [
+          92,
+          81
+        ]
+      ],
+      "degree_bound_t": 98
+    },
+    {
+      "charge": 9,
+      "cut": "infinity",
+      "pairs": [
+        [
+          84,
+          92
+        ],
+        [
+          92,
+          81
+        ]
+      ],
+      "degree_bound_t": 98
+    },
+    {
+      "charge": 10,
+      "cut": "zero",
+      "pairs": [
+        [
+          92,
+          92
+        ]
+      ],
+      "degree_bound_t": 100
+    },
+    {
+      "charge": 10,
+      "cut": "infinity",
+      "pairs": [
+        [
+          92,
+          92
+        ]
+      ],
+      "degree_bound_t": 100
+    }
+  ],
+  "source_sha256": {
+    "check_coherent_hot_f4_hyperoval_entries.py": "4120241ad38593c5d8b38b388e9853c302e81df78cf7d487c7dfd82043216c2e",
+    "coherent_hot_compounds_f4.py": "1a8798f6b9a038413ce1f8d27d435c7a642e84affc9ffb4461298c64d2708d76",
+    "coherent_hot_compounds_f4.cpp": "d1790e5034fd77f17b4ef9c4e9f98db03f6b4133da403ddba2994d2207df6810",
+    "coherent_hot_compounds.py": "43971c67f7fb938a836863ddf13794df4bc772ff20e043a5190174552231554a"
+  }
+}

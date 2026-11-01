@@ -1,0 +1,1010 @@
+{
+  "statement": "B(s) >= d^(m+E)/J for every full-cycle reversible shift register.",
+  "explicit_even_digit_cutoff": 380,
+  "bare_rate_lower_bound": "17/24",
+  "asymptotic_bare_rate_lower_bound": "3/4",
+  "counts": {
+    "known_smith_toeplitz_ranks": 336,
+    "coefficient_projection_rank_cases": 672,
+    "complete_register_coefficient_cases": 20,
+    "exact_rational_channel_cases": 1416,
+    "register_window_size_controls": 999,
+    "finite_cutoff_witnesses": 98,
+    "last_failure_all_window_checks": 377
+  },
+  "register_controls": [
+    {
+      "radix": 2,
+      "digits": 2,
+      "prime": 2,
+      "first": [
+        0
+      ],
+      "power": 1,
+      "power_rank": 1,
+      "toeplitz_budget": 1,
+      "early_channels": 1
+    },
+    {
+      "radix": 2,
+      "digits": 4,
+      "prime": 2,
+      "first": [
+        0,
+        1
+      ],
+      "power": 1,
+      "power_rank": 5,
+      "toeplitz_budget": 5,
+      "early_channels": 5
+    },
+    {
+      "radix": 2,
+      "digits": 4,
+      "prime": 2,
+      "first": [
+        0,
+        1
+      ],
+      "power": 2,
+      "power_rank": 3,
+      "toeplitz_budget": 12,
+      "early_channels": 7
+    },
+    {
+      "radix": 2,
+      "digits": 4,
+      "prime": 2,
+      "first": [
+        0,
+        1
+      ],
+      "power": 3,
+      "power_rank": 8,
+      "toeplitz_budget": 24,
+      "early_channels": 12
+    },
+    {
+      "radix": 2,
+      "digits": 4,
+      "prime": 2,
+      "first": [
+        0,
+        2
+      ],
+      "power": 1,
+      "power_rank": 3,
+      "toeplitz_budget": 3,
+      "early_channels": 3
+    },
+    {
+      "radix": 2,
+      "digits": 4,
+      "prime": 2,
+      "first": [
+        0,
+        2
+      ],
+      "power": 2,
+      "power_rank": 16,
+      "toeplitz_budget": 18,
+      "early_channels": 15
+    },
+    {
+      "radix": 2,
+      "digits": 4,
+      "prime": 2,
+      "first": [
+        0,
+        2
+      ],
+      "power": 3,
+      "power_rank": 7,
+      "toeplitz_budget": 33,
+      "early_channels": 15
+    },
+    {
+      "radix": 2,
+      "digits": 4,
+      "prime": 2,
+      "first": [
+        0,
+        3
+      ],
+      "power": 1,
+      "power_rank": 5,
+      "toeplitz_budget": 5,
+      "early_channels": 5
+    },
+    {
+      "radix": 2,
+      "digits": 4,
+      "prime": 2,
+      "first": [
+        0,
+        3
+      ],
+      "power": 2,
+      "power_rank": 4,
+      "toeplitz_budget": 14,
+      "early_channels": 9
+    },
+    {
+      "radix": 2,
+      "digits": 4,
+      "prime": 2,
+      "first": [
+        0,
+        3
+      ],
+      "power": 3,
+      "power_rank": 9,
+      "toeplitz_budget": 27,
+      "early_channels": 13
+    },
+    {
+      "radix": 2,
+      "digits": 6,
+      "prime": 2,
+      "first": [
+        0,
+        1,
+        2
+      ],
+      "power": 1,
+      "power_rank": 21,
+      "toeplitz_budget": 21,
+      "early_channels": 21
+    },
+    {
+      "radix": 2,
+      "digits": 6,
+      "prime": 2,
+      "first": [
+        0,
+        1,
+        2
+      ],
+      "power": 2,
+      "power_rank": 10,
+      "toeplitz_budget": 51,
+      "early_channels": 30
+    },
+    {
+      "radix": 2,
+      "digits": 6,
+      "prime": 2,
+      "first": [
+        0,
+        1,
+        2
+      ],
+      "power": 3,
+      "power_rank": 7,
+      "toeplitz_budget": 87,
+      "early_channels": 36
+    },
+    {
+      "radix": 2,
+      "digits": 6,
+      "prime": 2,
+      "first": [
+        0,
+        1,
+        2
+      ],
+      "power": 4,
+      "power_rank": 16,
+      "toeplitz_budget": 130,
+      "early_channels": 43
+    },
+    {
+      "radix": 2,
+      "digits": 6,
+      "prime": 2,
+      "first": [
+        0,
+        1,
+        2
+      ],
+      "power": 5,
+      "power_rank": 30,
+      "toeplitz_budget": 182,
+      "early_channels": 52
+    },
+    {
+      "radix": 3,
+      "digits": 2,
+      "prime": 3,
+      "first": [
+        0
+      ],
+      "power": 1,
+      "power_rank": 2,
+      "toeplitz_budget": 2,
+      "early_channels": 2
+    },
+    {
+      "radix": 3,
+      "digits": 4,
+      "prime": 3,
+      "first": [
+        0,
+        1
+      ],
+      "power": 1,
+      "power_rank": 15,
+      "toeplitz_budget": 15,
+      "early_channels": 15
+    },
+    {
+      "radix": 3,
+      "digits": 4,
+      "prime": 3,
+      "first": [
+        0,
+        1
+      ],
+      "power": 2,
+      "power_rank": 9,
+      "toeplitz_budget": 37,
+      "early_channels": 22
+    },
+    {
+      "radix": 3,
+      "digits": 4,
+      "prime": 3,
+      "first": [
+        0,
+        1
+      ],
+      "power": 3,
+      "power_rank": 23,
+      "toeplitz_budget": 74,
+      "early_channels": 37
+    },
+    {
+      "radix": 4,
+      "digits": 2,
+      "prime": 2,
+      "first": [
+        0
+      ],
+      "power": 1,
+      "power_rank": 3,
+      "toeplitz_budget": 3,
+      "early_channels": 3
+    }
+  ],
+  "cutoff": {
+    "finite_witnesses": [
+      {
+        "digits": 380,
+        "J": 12,
+        "E": 162,
+        "binary_exponent": 44,
+        "right_side": "8916100448256"
+      },
+      {
+        "digits": 382,
+        "J": 12,
+        "E": 163,
+        "binary_exponent": 46,
+        "right_side": "8916100448256"
+      },
+      {
+        "digits": 384,
+        "J": 12,
+        "E": 164,
+        "binary_exponent": 48,
+        "right_side": "8916100448256"
+      },
+      {
+        "digits": 386,
+        "J": 13,
+        "E": 165,
+        "binary_exponent": 50,
+        "right_side": "23298085122481"
+      },
+      {
+        "digits": 388,
+        "J": 13,
+        "E": 166,
+        "binary_exponent": 52,
+        "right_side": "23298085122481"
+      },
+      {
+        "digits": 390,
+        "J": 13,
+        "E": 167,
+        "binary_exponent": 54,
+        "right_side": "23298085122481"
+      },
+      {
+        "digits": 392,
+        "J": 14,
+        "E": 168,
+        "binary_exponent": 56,
+        "right_side": "56693912375296"
+      },
+      {
+        "digits": 394,
+        "J": 11,
+        "E": 168,
+        "binary_exponent": 46,
+        "right_side": "3138428376721"
+      },
+      {
+        "digits": 396,
+        "J": 11,
+        "E": 169,
+        "binary_exponent": 48,
+        "right_side": "3138428376721"
+      },
+      {
+        "digits": 398,
+        "J": 12,
+        "E": 170,
+        "binary_exponent": 50,
+        "right_side": "8916100448256"
+      },
+      {
+        "digits": 400,
+        "J": 12,
+        "E": 171,
+        "binary_exponent": 52,
+        "right_side": "8916100448256"
+      },
+      {
+        "digits": 402,
+        "J": 12,
+        "E": 172,
+        "binary_exponent": 54,
+        "right_side": "8916100448256"
+      },
+      {
+        "digits": 404,
+        "J": 12,
+        "E": 173,
+        "binary_exponent": 56,
+        "right_side": "8916100448256"
+      },
+      {
+        "digits": 406,
+        "J": 12,
+        "E": 174,
+        "binary_exponent": 58,
+        "right_side": "8916100448256"
+      },
+      {
+        "digits": 408,
+        "J": 12,
+        "E": 175,
+        "binary_exponent": 60,
+        "right_side": "8916100448256"
+      },
+      {
+        "digits": 410,
+        "J": 13,
+        "E": 176,
+        "binary_exponent": 62,
+        "right_side": "23298085122481"
+      },
+      {
+        "digits": 412,
+        "J": 13,
+        "E": 177,
+        "binary_exponent": 64,
+        "right_side": "23298085122481"
+      },
+      {
+        "digits": 414,
+        "J": 13,
+        "E": 178,
+        "binary_exponent": 66,
+        "right_side": "23298085122481"
+      },
+      {
+        "digits": 416,
+        "J": 13,
+        "E": 179,
+        "binary_exponent": 68,
+        "right_side": "23298085122481"
+      },
+      {
+        "digits": 418,
+        "J": 14,
+        "E": 180,
+        "binary_exponent": 70,
+        "right_side": "56693912375296"
+      },
+      {
+        "digits": 420,
+        "J": 14,
+        "E": 181,
+        "binary_exponent": 72,
+        "right_side": "56693912375296"
+      },
+      {
+        "digits": 422,
+        "J": 12,
+        "E": 181,
+        "binary_exponent": 62,
+        "right_side": "8916100448256"
+      },
+      {
+        "digits": 424,
+        "J": 12,
+        "E": 182,
+        "binary_exponent": 64,
+        "right_side": "8916100448256"
+      },
+      {
+        "digits": 426,
+        "J": 12,
+        "E": 183,
+        "binary_exponent": 66,
+        "right_side": "8916100448256"
+      },
+      {
+        "digits": 428,
+        "J": 12,
+        "E": 184,
+        "binary_exponent": 68,
+        "right_side": "8916100448256"
+      },
+      {
+        "digits": 430,
+        "J": 12,
+        "E": 185,
+        "binary_exponent": 70,
+        "right_side": "8916100448256"
+      },
+      {
+        "digits": 432,
+        "J": 12,
+        "E": 186,
+        "binary_exponent": 72,
+        "right_side": "8916100448256"
+      },
+      {
+        "digits": 434,
+        "J": 13,
+        "E": 187,
+        "binary_exponent": 74,
+        "right_side": "23298085122481"
+      },
+      {
+        "digits": 436,
+        "J": 13,
+        "E": 188,
+        "binary_exponent": 76,
+        "right_side": "23298085122481"
+      },
+      {
+        "digits": 438,
+        "J": 13,
+        "E": 189,
+        "binary_exponent": 78,
+        "right_side": "23298085122481"
+      },
+      {
+        "digits": 440,
+        "J": 13,
+        "E": 190,
+        "binary_exponent": 80,
+        "right_side": "23298085122481"
+      },
+      {
+        "digits": 442,
+        "J": 13,
+        "E": 191,
+        "binary_exponent": 82,
+        "right_side": "23298085122481"
+      },
+      {
+        "digits": 444,
+        "J": 14,
+        "E": 192,
+        "binary_exponent": 84,
+        "right_side": "56693912375296"
+      },
+      {
+        "digits": 446,
+        "J": 14,
+        "E": 193,
+        "binary_exponent": 86,
+        "right_side": "56693912375296"
+      },
+      {
+        "digits": 448,
+        "J": 14,
+        "E": 194,
+        "binary_exponent": 88,
+        "right_side": "56693912375296"
+      },
+      {
+        "digits": 450,
+        "J": 15,
+        "E": 195,
+        "binary_exponent": 90,
+        "right_side": "129746337890625"
+      },
+      {
+        "digits": 452,
+        "J": 12,
+        "E": 195,
+        "binary_exponent": 80,
+        "right_side": "8916100448256"
+      },
+      {
+        "digits": 454,
+        "J": 12,
+        "E": 196,
+        "binary_exponent": 82,
+        "right_side": "8916100448256"
+      },
+      {
+        "digits": 456,
+        "J": 12,
+        "E": 197,
+        "binary_exponent": 84,
+        "right_side": "8916100448256"
+      },
+      {
+        "digits": 458,
+        "J": 13,
+        "E": 198,
+        "binary_exponent": 86,
+        "right_side": "23298085122481"
+      },
+      {
+        "digits": 460,
+        "J": 13,
+        "E": 199,
+        "binary_exponent": 88,
+        "right_side": "23298085122481"
+      },
+      {
+        "digits": 462,
+        "J": 13,
+        "E": 200,
+        "binary_exponent": 90,
+        "right_side": "23298085122481"
+      },
+      {
+        "digits": 464,
+        "J": 13,
+        "E": 201,
+        "binary_exponent": 92,
+        "right_side": "23298085122481"
+      },
+      {
+        "digits": 466,
+        "J": 13,
+        "E": 202,
+        "binary_exponent": 94,
+        "right_side": "23298085122481"
+      },
+      {
+        "digits": 468,
+        "J": 13,
+        "E": 203,
+        "binary_exponent": 96,
+        "right_side": "23298085122481"
+      },
+      {
+        "digits": 470,
+        "J": 14,
+        "E": 204,
+        "binary_exponent": 98,
+        "right_side": "56693912375296"
+      },
+      {
+        "digits": 472,
+        "J": 14,
+        "E": 205,
+        "binary_exponent": 100,
+        "right_side": "56693912375296"
+      },
+      {
+        "digits": 474,
+        "J": 14,
+        "E": 206,
+        "binary_exponent": 102,
+        "right_side": "56693912375296"
+      },
+      {
+        "digits": 476,
+        "J": 14,
+        "E": 207,
+        "binary_exponent": 104,
+        "right_side": "56693912375296"
+      },
+      {
+        "digits": 478,
+        "J": 15,
+        "E": 208,
+        "binary_exponent": 106,
+        "right_side": "129746337890625"
+      },
+      {
+        "digits": 480,
+        "J": 15,
+        "E": 209,
+        "binary_exponent": 108,
+        "right_side": "129746337890625"
+      },
+      {
+        "digits": 482,
+        "J": 13,
+        "E": 209,
+        "binary_exponent": 98,
+        "right_side": "23298085122481"
+      },
+      {
+        "digits": 484,
+        "J": 13,
+        "E": 210,
+        "binary_exponent": 100,
+        "right_side": "23298085122481"
+      },
+      {
+        "digits": 486,
+        "J": 13,
+        "E": 211,
+        "binary_exponent": 102,
+        "right_side": "23298085122481"
+      },
+      {
+        "digits": 488,
+        "J": 13,
+        "E": 212,
+        "binary_exponent": 104,
+        "right_side": "23298085122481"
+      },
+      {
+        "digits": 490,
+        "J": 13,
+        "E": 213,
+        "binary_exponent": 106,
+        "right_side": "23298085122481"
+      },
+      {
+        "digits": 492,
+        "J": 13,
+        "E": 214,
+        "binary_exponent": 108,
+        "right_side": "23298085122481"
+      },
+      {
+        "digits": 494,
+        "J": 13,
+        "E": 215,
+        "binary_exponent": 110,
+        "right_side": "23298085122481"
+      },
+      {
+        "digits": 496,
+        "J": 14,
+        "E": 216,
+        "binary_exponent": 112,
+        "right_side": "56693912375296"
+      },
+      {
+        "digits": 498,
+        "J": 14,
+        "E": 217,
+        "binary_exponent": 114,
+        "right_side": "56693912375296"
+      },
+      {
+        "digits": 500,
+        "J": 14,
+        "E": 218,
+        "binary_exponent": 116,
+        "right_side": "56693912375296"
+      },
+      {
+        "digits": 502,
+        "J": 14,
+        "E": 219,
+        "binary_exponent": 118,
+        "right_side": "56693912375296"
+      },
+      {
+        "digits": 504,
+        "J": 14,
+        "E": 220,
+        "binary_exponent": 120,
+        "right_side": "56693912375296"
+      },
+      {
+        "digits": 506,
+        "J": 15,
+        "E": 221,
+        "binary_exponent": 122,
+        "right_side": "129746337890625"
+      },
+      {
+        "digits": 508,
+        "J": 15,
+        "E": 222,
+        "binary_exponent": 124,
+        "right_side": "129746337890625"
+      },
+      {
+        "digits": 510,
+        "J": 15,
+        "E": 223,
+        "binary_exponent": 126,
+        "right_side": "129746337890625"
+      },
+      {
+        "digits": 512,
+        "J": 16,
+        "E": 224,
+        "binary_exponent": 128,
+        "right_side": "281474976710656"
+      },
+      {
+        "digits": 514,
+        "J": 13,
+        "E": 224,
+        "binary_exponent": 118,
+        "right_side": "23298085122481"
+      },
+      {
+        "digits": 516,
+        "J": 13,
+        "E": 225,
+        "binary_exponent": 120,
+        "right_side": "23298085122481"
+      },
+      {
+        "digits": 518,
+        "J": 13,
+        "E": 226,
+        "binary_exponent": 122,
+        "right_side": "23298085122481"
+      },
+      {
+        "digits": 520,
+        "J": 13,
+        "E": 227,
+        "binary_exponent": 124,
+        "right_side": "23298085122481"
+      },
+      {
+        "digits": 522,
+        "J": 14,
+        "E": 228,
+        "binary_exponent": 126,
+        "right_side": "56693912375296"
+      },
+      {
+        "digits": 524,
+        "J": 14,
+        "E": 229,
+        "binary_exponent": 128,
+        "right_side": "56693912375296"
+      },
+      {
+        "digits": 526,
+        "J": 14,
+        "E": 230,
+        "binary_exponent": 130,
+        "right_side": "56693912375296"
+      },
+      {
+        "digits": 528,
+        "J": 14,
+        "E": 231,
+        "binary_exponent": 132,
+        "right_side": "56693912375296"
+      },
+      {
+        "digits": 530,
+        "J": 14,
+        "E": 232,
+        "binary_exponent": 134,
+        "right_side": "56693912375296"
+      },
+      {
+        "digits": 532,
+        "J": 14,
+        "E": 233,
+        "binary_exponent": 136,
+        "right_side": "56693912375296"
+      },
+      {
+        "digits": 534,
+        "J": 15,
+        "E": 234,
+        "binary_exponent": 138,
+        "right_side": "129746337890625"
+      },
+      {
+        "digits": 536,
+        "J": 15,
+        "E": 235,
+        "binary_exponent": 140,
+        "right_side": "129746337890625"
+      },
+      {
+        "digits": 538,
+        "J": 15,
+        "E": 236,
+        "binary_exponent": 142,
+        "right_side": "129746337890625"
+      },
+      {
+        "digits": 540,
+        "J": 15,
+        "E": 237,
+        "binary_exponent": 144,
+        "right_side": "129746337890625"
+      },
+      {
+        "digits": 542,
+        "J": 16,
+        "E": 238,
+        "binary_exponent": 146,
+        "right_side": "281474976710656"
+      },
+      {
+        "digits": 544,
+        "J": 16,
+        "E": 239,
+        "binary_exponent": 148,
+        "right_side": "281474976710656"
+      },
+      {
+        "digits": 546,
+        "J": 13,
+        "E": 239,
+        "binary_exponent": 138,
+        "right_side": "23298085122481"
+      },
+      {
+        "digits": 548,
+        "J": 14,
+        "E": 240,
+        "binary_exponent": 140,
+        "right_side": "56693912375296"
+      },
+      {
+        "digits": 550,
+        "J": 14,
+        "E": 241,
+        "binary_exponent": 142,
+        "right_side": "56693912375296"
+      },
+      {
+        "digits": 552,
+        "J": 14,
+        "E": 242,
+        "binary_exponent": 144,
+        "right_side": "56693912375296"
+      },
+      {
+        "digits": 554,
+        "J": 14,
+        "E": 243,
+        "binary_exponent": 146,
+        "right_side": "56693912375296"
+      },
+      {
+        "digits": 556,
+        "J": 14,
+        "E": 244,
+        "binary_exponent": 148,
+        "right_side": "56693912375296"
+      },
+      {
+        "digits": 558,
+        "J": 14,
+        "E": 245,
+        "binary_exponent": 150,
+        "right_side": "56693912375296"
+      },
+      {
+        "digits": 560,
+        "J": 14,
+        "E": 246,
+        "binary_exponent": 152,
+        "right_side": "56693912375296"
+      },
+      {
+        "digits": 562,
+        "J": 15,
+        "E": 247,
+        "binary_exponent": 154,
+        "right_side": "129746337890625"
+      },
+      {
+        "digits": 564,
+        "J": 15,
+        "E": 248,
+        "binary_exponent": 156,
+        "right_side": "129746337890625"
+      },
+      {
+        "digits": 566,
+        "J": 15,
+        "E": 249,
+        "binary_exponent": 158,
+        "right_side": "129746337890625"
+      },
+      {
+        "digits": 568,
+        "J": 15,
+        "E": 250,
+        "binary_exponent": 160,
+        "right_side": "129746337890625"
+      },
+      {
+        "digits": 570,
+        "J": 15,
+        "E": 251,
+        "binary_exponent": 162,
+        "right_side": "129746337890625"
+      },
+      {
+        "digits": 572,
+        "J": 16,
+        "E": 252,
+        "binary_exponent": 164,
+        "right_side": "281474976710656"
+      },
+      {
+        "digits": 574,
+        "J": 16,
+        "E": 253,
+        "binary_exponent": 166,
+        "right_side": "281474976710656"
+      }
+    ],
+    "analytic_tail_from": 576,
+    "tail_controls": [
+      {
+        "digits": 576,
+        "J": 24,
+        "E": 252
+      },
+      {
+        "digits": 578,
+        "J": 24,
+        "E": 252
+      },
+      {
+        "digits": 1024,
+        "J": 32,
+        "E": 464
+      },
+      {
+        "digits": 1296,
+        "J": 36,
+        "E": 594
+      },
+      {
+        "digits": 2048,
+        "J": 45,
+        "E": 956
+      },
+      {
+        "digits": 4096,
+        "J": 64,
+        "E": 1952
+      },
+      {
+        "digits": 16384,
+        "J": 128,
+        "E": 8000
+      }
+    ],
+    "last_failed_integer_certificate": 378
+  },
+  "source_sha256": "1a1ab480190853be455e0ae3ec62da8dc8f58c2b3591b54bdd09f0178f5fda14",
+  "scope": "Bare two-place Smith profiles and balanced coordinate partitions; factoring exponent unchanged."
+}

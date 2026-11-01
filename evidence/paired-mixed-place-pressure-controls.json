@@ -1,0 +1,63 @@
+{
+  "scope": "Cross-check unequal paired pressure, gradients, and tensor symmetrization.",
+  "passed": true,
+  "input_sha256": "8abb33965b19b8141f261926bb8d70067a79aac9fbffed789199d207f07b73b8",
+  "source_sha256": {
+    "check_paired_mixed_place_pressure.py": "fb05f53fc1b82c2d05bc6f339afd6cf438141f5c5f22240e9dd5ff6a64326b01",
+    "paired_mixed_place_pressure.py": "f61fcd3b59d6a8f2fa4ede8d04efc4f374d5a32d110e63d5816818501c771134",
+    "f4_closed_place_oracle.py": "c8707bce631263728d17c4d82b7e470ebbbbc12c2889dd2c17c3202762044554",
+    "search_fused_mixed_weighted.py": "f8cd9699a7154e9b3a625b6e3d169468d656422d7dcdfc0ccdb374e80187af9b",
+    "search_fused_physical_bases.py": "d8cbc3ccdc02ad252d722989dd531bd41e97901906fbd96e64f35325a506463b",
+    "search_finite_fiber_restrictions.py": "0072dcb2a208b359a8e31d2a1d52cbdb367ddae32902100de4d85b1398f9f35b",
+    "f4_regular_smith_frames.py": "625745e48ee72d0f1029f0391dfa8b253a89cdfbc3a33e4571c51d5ee1c2dbca",
+    "native_matrix_smith_f4.py": "c08da20f1938a371b438e32fbc6a8f6766b48c2cfee5bcd1c956ce137dc70203",
+    "native_matrix_smith_f4.cpp": "5ec995cd04563c2fa99b69afd71bf476d5ca885f1f90377490c30e5a1a55f330"
+  },
+  "equal_alphabet_controls": 12,
+  "largest_equal_error": 0.0,
+  "unequal_gradient_coordinates": 360,
+  "largest_gradient_error": 4.666449032741937e-10,
+  "unequal_controls": [
+    {
+      "paired_dimensions": [
+        2,
+        3
+      ],
+      "class": "PairedMixedPressure",
+      "parameter_count": 30,
+      "gradient_vectors": 3
+    },
+    {
+      "paired_dimensions": [
+        2,
+        3
+      ],
+      "class": "ScaledPairedMixedPressure",
+      "parameter_count": 30,
+      "gradient_vectors": 3
+    },
+    {
+      "paired_dimensions": [
+        3,
+        2
+      ],
+      "class": "PairedMixedPressure",
+      "parameter_count": 30,
+      "gradient_vectors": 3
+    },
+    {
+      "paired_dimensions": [
+        3,
+        2
+      ],
+      "class": "ScaledPairedMixedPressure",
+      "parameter_count": 30,
+      "gradient_vectors": 3
+    }
+  ],
+  "pair_swapped_pressure_error": 0.0,
+  "pair_swapped_profile_count": 4,
+  "largest_convolution_error": 3.552713678800501e-15,
+  "pair_swapped_endpoint_entries": 1296,
+  "invalid_place_rejections": 5
+}

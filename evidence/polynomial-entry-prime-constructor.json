@@ -1,0 +1,65 @@
+{
+  "bounds": {
+    "largest_observed_F_P_over_n": "1816378587/68719476736",
+    "proved_uniform_F_P_over_n_bound": "904050/1048576"
+  },
+  "claim": "elementary polynomial-time adaptive prime entries",
+  "counts": {
+    "complete_paired_height_deficiency_controls": 93406,
+    "decoded_internal_assignments": 36,
+    "exact_constant_block_schedule_controls": 119,
+    "exact_explicit_schedule_controls": 5121,
+    "exact_mutated_entry_comparisons": 72,
+    "exact_valid_entry_comparisons": 36,
+    "invalid_padding_rejections": 36,
+    "out_of_range_label_rejections": 36,
+    "positive_free_digit_entry_controls": 12,
+    "reference_local_assignments": 55902
+  },
+  "models": [
+    {
+      "N": 15,
+      "Q": 97,
+      "digit_width": 1,
+      "left": 3,
+      "right": 5
+    },
+    {
+      "N": 269,
+      "Q": 97,
+      "digit_width": 1,
+      "left": 1,
+      "right": 269
+    },
+    {
+      "N": 617,
+      "Q": 97,
+      "digit_width": 1,
+      "left": 617,
+      "right": 1
+    },
+    {
+      "N": 267013,
+      "Q": 193,
+      "digit_width": 2,
+      "left": 1,
+      "right": 267013
+    },
+    {
+      "N": 267013,
+      "Q": 193,
+      "digit_width": 2,
+      "left": 267013,
+      "right": 1
+    },
+    {
+      "N": 1043269,
+      "Q": 193,
+      "digit_width": 2,
+      "left": 719,
+      "right": 1451
+    }
+  ],
+  "scope": "No lattice search is used by this decoder; full label enumeration is still charged.",
+  "status": "passed"
+}

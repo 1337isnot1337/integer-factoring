@@ -1,0 +1,1007 @@
+{
+  "schema_version": 1,
+  "claim": "Mixed-place opposite-flag reconstruction and a strict rho < 9/10 ternary seed; factoring score unchanged.",
+  "checker_sha256": "c36c22464da1fda8c3b0016fba21e6e5fd673df17ad3db6bf67d4677ad02cb8c",
+  "cases": [
+    {
+      "prime": 2,
+      "alphabet": 2,
+      "seed_degree_bound": 1,
+      "copies": 3,
+      "row_pattern": [
+        null
+      ],
+      "column_pattern": [
+        0
+      ],
+      "complete_endpoint_entries": 4096,
+      "representation_entries": 1728,
+      "flag_dimension_checks": 25,
+      "exact_rank_checks": 8,
+      "pieces": [
+        {
+          "index": 0,
+          "weight": 1,
+          "ranks": [
+            1,
+            64
+          ],
+          "profile_rank_bounds": [
+            1,
+            168
+          ]
+        },
+        {
+          "index": 1,
+          "weight": 1,
+          "ranks": [
+            8,
+            28
+          ],
+          "profile_rank_bounds": [
+            14,
+            66
+          ]
+        },
+        {
+          "index": 2,
+          "weight": 1,
+          "ranks": [
+            28,
+            8
+          ],
+          "profile_rank_bounds": [
+            66,
+            14
+          ]
+        },
+        {
+          "index": 3,
+          "weight": 1,
+          "ranks": [
+            64,
+            1
+          ],
+          "profile_rank_bounds": [
+            168,
+            1
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "vector": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "row_coefficients": [
+            1
+          ],
+          "column_coefficients": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "vector": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "row_coefficients": [
+            0,
+            1
+          ],
+          "column_coefficients": [
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "vector": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "row_coefficients": [
+            0,
+            0,
+            1
+          ],
+          "column_coefficients": [
+            0,
+            1
+          ]
+        },
+        {
+          "vector": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "row_coefficients": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "column_coefficients": [
+            1
+          ]
+        }
+      ],
+      "weights": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "prime": 3,
+      "alphabet": 3,
+      "seed_degree_bound": 2,
+      "copies": 1,
+      "row_pattern": [
+        2,
+        null
+      ],
+      "column_pattern": [
+        0
+      ],
+      "complete_endpoint_entries": 81,
+      "representation_entries": 126,
+      "flag_dimension_checks": 16,
+      "exact_rank_checks": 6,
+      "pieces": [
+        {
+          "index": 0,
+          "weight": 1,
+          "ranks": [
+            3,
+            9
+          ],
+          "profile_rank_bounds": [
+            3,
+            29
+          ]
+        },
+        {
+          "index": 1,
+          "weight": 1,
+          "ranks": [
+            6,
+            5
+          ],
+          "profile_rank_bounds": [
+            6,
+            11
+          ]
+        },
+        {
+          "index": 2,
+          "weight": 2,
+          "ranks": [
+            9,
+            1
+          ],
+          "profile_rank_bounds": [
+            18,
+            1
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "vector": [
+            1,
+            2,
+            1
+          ],
+          "row_coefficients": [
+            1
+          ],
+          "column_coefficients": [
+            1,
+            2,
+            1
+          ]
+        },
+        {
+          "vector": [
+            1,
+            2,
+            0
+          ],
+          "row_coefficients": [
+            1,
+            2
+          ],
+          "column_coefficients": [
+            1,
+            2
+          ]
+        },
+        {
+          "vector": [
+            1,
+            0,
+            0
+          ],
+          "row_coefficients": [
+            1,
+            1,
+            1
+          ],
+          "column_coefficients": [
+            1
+          ]
+        }
+      ],
+      "weights": [
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "prime": 3,
+      "alphabet": 3,
+      "seed_degree_bound": 2,
+      "copies": 2,
+      "row_pattern": [
+        2,
+        null
+      ],
+      "column_pattern": [
+        0
+      ],
+      "complete_endpoint_entries": 6561,
+      "representation_entries": 4410,
+      "flag_dimension_checks": 36,
+      "exact_rank_checks": 10,
+      "pieces": [
+        {
+          "index": 0,
+          "weight": 1,
+          "ranks": [
+            9,
+            81
+          ],
+          "profile_rank_bounds": [
+            9,
+            450
+          ]
+        },
+        {
+          "index": 1,
+          "weight": 1,
+          "ranks": [
+            18,
+            52
+          ],
+          "profile_rank_bounds": [
+            18,
+            240
+          ]
+        },
+        {
+          "index": 2,
+          "weight": 2,
+          "ranks": [
+            27,
+            32
+          ],
+          "profile_rank_bounds": [
+            63,
+            99
+          ]
+        },
+        {
+          "index": 3,
+          "weight": 1,
+          "ranks": [
+            54,
+            9
+          ],
+          "profile_rank_bounds": [
+            126,
+            19
+          ]
+        },
+        {
+          "index": 4,
+          "weight": 1,
+          "ranks": [
+            81,
+            1
+          ],
+          "profile_rank_bounds": [
+            279,
+            1
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "vector": [
+            1,
+            2,
+            1,
+            2,
+            1
+          ],
+          "row_coefficients": [
+            1
+          ],
+          "column_coefficients": [
+            1,
+            2,
+            1,
+            2,
+            1
+          ]
+        },
+        {
+          "vector": [
+            1,
+            2,
+            1,
+            2,
+            0
+          ],
+          "row_coefficients": [
+            1,
+            2
+          ],
+          "column_coefficients": [
+            1,
+            2,
+            1,
+            2
+          ]
+        },
+        {
+          "vector": [
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "row_coefficients": [
+            0,
+            1,
+            1
+          ],
+          "column_coefficients": [
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "vector": [
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "row_coefficients": [
+            1,
+            1,
+            2,
+            1
+          ],
+          "column_coefficients": [
+            1,
+            1
+          ]
+        },
+        {
+          "vector": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "row_coefficients": [
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "column_coefficients": [
+            1
+          ]
+        }
+      ],
+      "weights": [
+        1,
+        1,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "prime": 5,
+      "alphabet": 2,
+      "seed_degree_bound": 2,
+      "copies": 2,
+      "row_pattern": [
+        0,
+        2
+      ],
+      "column_pattern": [
+        null,
+        3
+      ],
+      "complete_endpoint_entries": 256,
+      "representation_entries": 360,
+      "flag_dimension_checks": 36,
+      "exact_rank_checks": 10,
+      "pieces": [
+        {
+          "index": 0,
+          "weight": 1,
+          "ranks": [
+            16,
+            1
+          ],
+          "profile_rank_bounds": [
+            16,
+            144
+          ]
+        },
+        {
+          "index": 1,
+          "weight": 2,
+          "ranks": [
+            16,
+            1
+          ],
+          "profile_rank_bounds": [
+            16,
+            96
+          ]
+        },
+        {
+          "index": 2,
+          "weight": 2,
+          "ranks": [
+            15,
+            7
+          ],
+          "profile_rank_bounds": [
+            32,
+            48
+          ]
+        },
+        {
+          "index": 3,
+          "weight": 1,
+          "ranks": [
+            10,
+            7
+          ],
+          "profile_rank_bounds": [
+            48,
+            32
+          ]
+        },
+        {
+          "index": 4,
+          "weight": 1,
+          "ranks": [
+            1,
+            16
+          ],
+          "profile_rank_bounds": [
+            96,
+            16
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "vector": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "row_coefficients": [
+            1
+          ],
+          "column_coefficients": [
+            3,
+            1,
+            4,
+            2,
+            4
+          ]
+        },
+        {
+          "vector": [
+            1,
+            1,
+            2,
+            4,
+            3
+          ],
+          "row_coefficients": [
+            3,
+            3
+          ],
+          "column_coefficients": [
+            3,
+            1,
+            1,
+            3
+          ]
+        },
+        {
+          "vector": [
+            1,
+            3,
+            4,
+            3,
+            1
+          ],
+          "row_coefficients": [
+            0,
+            1,
+            1
+          ],
+          "column_coefficients": [
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "vector": [
+            1,
+            3,
+            4,
+            2,
+            2
+          ],
+          "row_coefficients": [
+            1,
+            0,
+            2,
+            1
+          ],
+          "column_coefficients": [
+            1,
+            1
+          ]
+        },
+        {
+          "vector": [
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "row_coefficients": [
+            3,
+            2,
+            4,
+            2,
+            4
+          ],
+          "column_coefficients": [
+            1
+          ]
+        }
+      ],
+      "weights": [
+        1,
+        2,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "prime": 5,
+      "alphabet": 2,
+      "seed_degree_bound": 3,
+      "copies": 2,
+      "row_pattern": [
+        0,
+        2
+      ],
+      "column_pattern": [
+        null,
+        3
+      ],
+      "complete_endpoint_entries": 256,
+      "representation_entries": 504,
+      "flag_dimension_checks": 64,
+      "exact_rank_checks": 14,
+      "pieces": [
+        {
+          "index": 0,
+          "weight": 4,
+          "ranks": [
+            16,
+            1
+          ],
+          "profile_rank_bounds": [
+            16,
+            96
+          ]
+        },
+        {
+          "index": 1,
+          "weight": 1,
+          "ranks": [
+            16,
+            10
+          ],
+          "profile_rank_bounds": [
+            32,
+            96
+          ]
+        },
+        {
+          "index": 2,
+          "weight": 1,
+          "ranks": [
+            6,
+            16
+          ],
+          "profile_rank_bounds": [
+            64,
+            32
+          ]
+        },
+        {
+          "index": 3,
+          "weight": 2,
+          "ranks": [
+            15,
+            16
+          ],
+          "profile_rank_bounds": [
+            80,
+            48
+          ]
+        },
+        {
+          "index": 4,
+          "weight": 1,
+          "ranks": [
+            9,
+            16
+          ],
+          "profile_rank_bounds": [
+            144,
+            16
+          ]
+        },
+        {
+          "index": 5,
+          "weight": 3,
+          "ranks": [
+            9,
+            16
+          ],
+          "profile_rank_bounds": [
+            192,
+            16
+          ]
+        },
+        {
+          "index": 6,
+          "weight": 4,
+          "ranks": [
+            0,
+            0
+          ],
+          "profile_rank_bounds": [
+            224,
+            0
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "vector": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "row_coefficients": [
+            1
+          ],
+          "column_coefficients": [
+            0,
+            1,
+            2,
+            2,
+            2,
+            4,
+            3
+          ]
+        },
+        {
+          "vector": [
+            1,
+            4,
+            3,
+            1,
+            2,
+            4,
+            3
+          ],
+          "row_coefficients": [
+            4,
+            2
+          ],
+          "column_coefficients": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            3
+          ]
+        },
+        {
+          "vector": [
+            0,
+            1,
+            1,
+            2,
+            4,
+            3,
+            1
+          ],
+          "row_coefficients": [
+            1,
+            4,
+            3
+          ],
+          "column_coefficients": [
+            3,
+            0,
+            3,
+            1,
+            1
+          ]
+        },
+        {
+          "vector": [
+            1,
+            2,
+            3,
+            0,
+            3,
+            2,
+            1
+          ],
+          "row_coefficients": [
+            0,
+            1,
+            4,
+            1
+          ],
+          "column_coefficients": [
+            0,
+            1,
+            4,
+            4
+          ]
+        },
+        {
+          "vector": [
+            1,
+            3,
+            4,
+            2,
+            1,
+            1,
+            0
+          ],
+          "row_coefficients": [
+            3,
+            3,
+            3,
+            4,
+            1
+          ],
+          "column_coefficients": [
+            1,
+            1,
+            3
+          ]
+        },
+        {
+          "vector": [
+            1,
+            3,
+            4,
+            2,
+            1,
+            3,
+            2
+          ],
+          "row_coefficients": [
+            2,
+            4,
+            2,
+            3,
+            2,
+            4
+          ],
+          "column_coefficients": [
+            3,
+            1
+          ]
+        },
+        {
+          "vector": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "row_coefficients": [
+            0,
+            0,
+            2,
+            3,
+            2,
+            1,
+            3
+          ],
+          "column_coefficients": [
+            1
+          ]
+        }
+      ],
+      "weights": [
+        4,
+        1,
+        1,
+        2,
+        1,
+        3,
+        4
+      ]
+    }
+  ],
+  "ternary_certificate": {
+    "scale": "5/3",
+    "row_bound": "2793/625",
+    "column_bound": "2593/625",
+    "complete_bound": "2414083/46875",
+    "rho": "9/10",
+    "strict_power_inequality": {
+      "left": "81990019320880218907752393510643",
+      "right": "87677667687647044658660888671875"
+    },
+    "old_same_place_lower_bound_base": 54,
+    "old_criterion_at_9_over_10_rejected": true,
+    "profiles": [
+      {
+        "point": 0,
+        "cuts": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1,
+            1,
+            1,
+            2,
+            4,
+            4,
+            4
+          ]
+        ]
+      },
+      {
+        "point": 2,
+        "cuts": [
+          [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            2,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "point": null,
+        "cuts": [
+          [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            2,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    ]
+  },
+  "overlap_negative_control": {
+    "overlapping_point": 0,
+    "actual_intersection_dimension": 2,
+    "disjoint_formula_dimension": 1,
+    "rejected": true
+  },
+  "totals": {
+    "complete_endpoint_entries": 11250,
+    "representation_entries": 7128,
+    "flag_dimension_checks": 177,
+    "exact_rank_checks": 48
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "full_coefficient_comparisons": 1200,
+  "large_affine_product_control": {
+    "circuit_sha256": "276be3b3bcb6ab2c216300a17687514d9df74a3f2c85b0315413e464d541bc06",
+    "coefficients": [
+      3,
+      15,
+      12884901909,
+      64424509528
+    ],
+    "input_degree": 26959946667150639794667015086339065940429092795727937966988425428976,
+    "interval_u": [
+      3,
+      340282366920938463463374607431768211467
+    ],
+    "interval_v": [
+      5,
+      79228162514264337593543950339
+    ],
+    "nodes": 1022,
+    "precision": 32
+  },
+  "large_separable_controls": [
+    {
+      "circuit_sha256": "522072aedd6558d4c8db9d384947b7f6cda7e5d6f5bb85f49d72e51a0c4d092e",
+      "input_degree": 2462625387274654950767440006258975862817483704404090426388413460770248788747790159077665909464544996377515280826434,
+      "interval_u": [
+        1,
+        1606938044258990275541962092341162602522202993782792835301388
+      ],
+      "interval_v": [
+        1,
+        1532495540865888858358347027150309183618739122183602183
+      ],
+      "nodes": 1144,
+      "precision": 32,
+      "unit_trace_jet": [
+        [
+          3987439442,
+          4175254382
+        ],
+        [
+          856190910,
+          1235912018
+        ],
+        [
+          1031340596,
+          55555136
+        ],
+        [
+          1092786040,
+          3655306542
+        ]
+      ]
+    },
+    {
+      "circuit_sha256": "3de1d689342b968dc11d666604630bed53d38e86da34a21586bfcc73e39fb72e",
+      "input_degree": 1496577676626844588240575725238739269054157926957024,
+      "interval_u": [
+        1329227995784915872903807060280344579,
+        1329227995786124798723421689455050757
+      ],
+      "interval_v": [
+        1496577676626844588240573268701473812127674924007441,
+        1496577676626844588240574506641513097507949823131649
+      ],
+      "nodes": 753,
+      "precision": 40,
+      "unit_trace_jet": [
+        [
+          544216009568,
+          332264570800
+        ],
+        [
+          555686518856,
+          335256630992
+        ],
+        [
+          750513747832,
+          38840866640
+        ],
+        [
+          983801910920,
+          930328103408
+        ]
+      ]
+    },
+    {
+      "circuit_sha256": "c1bf02882902ea5706adfadf3e5ae8ccc10fea5196327c01119161399631bb3c",
+      "input_degree": 14134776518227074636666380006010250362215463678254858933905495443210502147,
+      "interval_u": [
+        0,
+        22300745198530623141535718272648361505980417
+      ],
+      "interval_v": [
+        633825300114114700748351602694,
+        1267650600228229401496703205385
+      ],
+      "nodes": 1016,
+      "precision": 48,
+      "unit_trace_jet": [
+        [
+          281474976710653,
+          281474976710653
+        ],
+        [
+          0,
+          281474976710653
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          3
+        ]
+      ]
+    }
+  ],
+  "parity_moment_comparisons": 600,
+  "raw_content_controls": [
+    {
+      "exact_product_valuation": 133,
+      "factor_pairs": 0,
+      "filter_displacement_exponent": 41,
+      "number": 289,
+      "raw_modulus_precision": 32
+    },
+    {
+      "exact_product_valuation": 163,
+      "factor_pairs": 1,
+      "filter_displacement_exponent": 40,
+      "number": 225,
+      "raw_modulus_precision": 32
+    }
+  ],
+  "schema": 1,
+  "singular_argument_rejected": true,
+  "small_bilinear_cases": 300,
+  "status": "exact controls passed; no factoring-bound improvement",
+  "unit_trace_and_log_derivative_jet_comparisons": 512
+}

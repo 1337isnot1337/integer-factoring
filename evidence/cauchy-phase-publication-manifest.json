@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "cauchy-bilinear-phase-counterexample",
+  "status": "frozen; exact arithmetic and all general claims independently audited",
+  "depends_on": [
+    "bilinear-cauchy-two-stage-closure"
+  ],
+  "files": [
+    {
+      "path": "research/cauchy-bilinear-phase-counterexample.md",
+      "bytes": 6469,
+      "sha256": "5fe8c996531a52e0aa71ab2507bd7a727b3c4662b53a3317140d999c3ade18c5"
+    },
+    {
+      "path": "tools/check_cauchy_bilinear_phase_counterexample.py",
+      "bytes": 4179,
+      "sha256": "c0f54583cf7e649f93cef05643e8441367b14976c1810386f187dd0a3bc73fc9"
+    },
+    {
+      "path": "evidence/cauchy-bilinear-phase-counterexample.json",
+      "bytes": 2587,
+      "sha256": "dee133496644cdc04397cf560dc602687429f372c12b2d9ae442ef47c535d830"
+    }
+  ],
+  "checker_command": [
+    "python",
+    "tools/check_cauchy_bilinear_phase_counterexample.py",
+    "--output",
+    "evidence/cauchy-bilinear-phase-counterexample.json"
+  ],
+  "source_dependencies": [
+    {
+      "path": "tools/check_frobenius_rational_trace.py",
+      "bytes": 15069,
+      "sha256": "d5cdf093a71fa6f3528b58359d8bb5307e94972aab12642d6818d45d1398c1f3"
+    },
+    {
+      "path": "tools/check_carry_fourier_elimination.py",
+      "bytes": 21667,
+      "sha256": "ad1065db63bc74779105964c2ed8c3cf5e91f82d514fa70580fa8eb31a091763"
+    }
+  ],
+  "scope": "Twenty-term exact counterexample to dropping the formal-degree hypothesis when a jointly varying integer Fourier phase is inserted. No defect in the proved restricted theorem and no general representation lower bound."
+}

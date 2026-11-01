@@ -27,6 +27,25 @@ The complete Lean endpoint is [`IntegerFactoring.HalfAppendix.sqrtLogLog_factori
 
 The composition uses the existing clique evaluator from [Anthropic's Appendix B](https://github.com/anthropics/formal-math) and the multiplication-network reduction by [Isaac Rudich and Louis-Martin Rousseau](https://github.com/IsaacRudich/SubexponentialDeterministicFactoring). See the [written proof](research/half-rate-factoring.md), the [constructor](research/half-top-constructor.md), and the [evaluator audit](research/half-evaluator-audit.md).
 
+<!-- arithmetic-space-checkpoint:start -->
+## Arithmetic construction and space bounds
+
+The [output-sensitive space transfer](research/output-sensitive-space-transfer.md)
+recovers a complete factorization from a scalar phase evaluator in time
+`A(n) exp(O(s+n/s+log n))` and space `S(n)+O(s+n/s+log n)`.
+The proof streams the rough cofactor, reconstructs isolated factors, and
+charges the output explicitly. Choosing `s` near `sqrt(n)` keeps recovery
+below the exponential scales relevant to the present score.
+
+The [small-word Fourier constructor](research/small-word-fourier-constructor.md)
+uses `O(log n)`-bit arithmetic words and `O(n/log n)` gates, with total
+label mass `O(n)`. Its CRT version and carry-column grouping give
+`P^2 lambda <= (24+o(1))n` in the stated grouping regime, with polynomial-time
+`O(n/P)`-space table queries. These are ordinary-proof improvements to the
+constructor and transfer; the logarithmic saving exponent remains **1/2**.
+Run `make verify-output-space-transfer verify-small-word-fourier`.
+<!-- arithmetic-space-checkpoint:end -->
+
 <!-- cofactor-collision-checkpoint:start -->
 ## Composite-cofactor relation selection
 
@@ -34,8 +53,11 @@ The [exact selector](research/cofactor-collision-selection.md) cancels equal
 or conjugate residual ideals without factoring their composite norms or testing
 them for primality. It retains genuine relations in the fixed prime-form base.
 Matched finite controls reduce leading-norm queries from 227,593 to 88,234 on
-a 92-bit input and from 3,553,722 to 1,400,316 on a 124-bit input. These are
-query counts, not wall-clock speedups or uniform complexity bounds.
+a 92-bit input and from 3,553,722 to 1,400,316 on a 124-bit input. A 144-bit matched control reduces
+8,120,765 queries to 3,440,025 at the square cofactor cap; its retained
+relation rank increases from 502 to 510. The present implementation is slower
+in wall-clock time on that input. These finite query counts do not establish
+a uniform complexity improvement.
 
 The [admissible-quota theorem](research/cofactor-collision-quota.md) proves
 that an explicit per-generator quota forces complete rational relation rank,
@@ -54,6 +76,19 @@ rational-rank selection. Exact 92/124/144-bit controls use 81,430 / 1,391,826 /
 3,395,784 norm queries. Their 16,618 selected ideal identities, dominance
 inequalities, and integer eliminations are replayed. Uniform admissibility
 and reached-key bounds remain open. Run `make verify-cofactor-ideal-closure`.
+
+[Prime-cofactor saturation](research/prime-cofactor-saturation.md) further
+promotes certified residual primes into the smoothness product. For a cap at
+most `Y^2`, roughness itself proves primality, so this step needs no primality
+test. The algorithm retains exact dominance and integer elimination through a
+definition DAG. On matched 92/124/144-bit controls, all-promotion uses
+54,584 / 807,221 / 2,246,996 norm queries. Its larger saturation product can
+make it slower; selective promotion trades queries against product size.
+All retained identities and elimination rows are independently replayed.
+The [cyclic-subgroup moment criterion](research/cofactor-orbit-moment-criterion.md)
+states a precise sufficient uniform lower-tail hypothesis for the remaining
+window-hitting problem. The finite moment controls do not prove that hypothesis.
+Run `make verify-prime-cofactor-saturation`.
 
 <!-- cofactor-collision-checkpoint:end -->
 
@@ -74,19 +109,53 @@ and the 121-map all-scale proof are retained. The certified contraction remains
 above `1/sqrt(2)`; the complete factoring score remains **1/2**.
 Run `make verify-coherent-retractions` for focused exact controls and
 `make verify-coherent-q32-catalogue` to recompute the complete catalogue proof.
+[Graded quotient codes](research/coherent-graded-quotients.md) now supply
+explicit mixed-occupation physical maps. For every dyadic virtual dimension,
+their full zero-cut profile equals the coordinate profile; the other cut remains
+a construction variable. A [complete letter-gauge cone](research/coherent-shared-letter-gauges.md)
+also permits negative potentials while charging both profile changes and
+physical type costs. Six literal rational-gauge cut profiles and all sixteen
+four-mode quotient maps are independently checked.
 <!-- coherent-compound-checkpoint:end -->
+
+The [quadratic-parity Walsh construction](research/bell-walsh-constructions.md)
+allows arbitrary admissible energy tables and proves the exact full-radial
+obstruction `rho >= H_2(1/4)`. Reciprocal coefficient retiming strictly
+improves every fixed folded seed of dimension at least eight; the retained
+16-letter example has `rho_new < 64/75 < rho_old`.
+The [monotone retiming theorem](research/isotonic-coefficient-retiming.md)
+optimizes every constant-basis diagonal profile by exact adjacent pooling.
+A literal counterexample shows why arbitrary Smith profiles require a fresh
+physical calculation; all thirty retained one-pair perturbations of the
+eight-letter seed are strictly worse at every scale. These results do not
+improve the factoring exponent. Run
+`make verify-bell-walsh verify-isotonic-retiming`.
+
+
 
 <!-- cube-transfer-checkpoint:start -->
 The [three-axis cube transfer](research/cube-crossing-transfer.md) gives
 `alpha = log_3(1/rho)` from a uniform common eight-leg crossing family.
 An [explicit homogeneous Gaussian family](research/cube-homogeneous-gaussian.md)
-now meets this interface with **`rho = 5/8`**, using one three-variable
-coefficient decomposition at all three cuts. Its exact rational certificate,
-complete Laurent-polynomial factorizations, and full evaluation costs are retained.
-This gives `alpha = log_3(8/5)`, below the existing **1/2**.
-The same note proves an all-scale `rho > 3/5` floor for its specified
-homogeneous Cayley/common-profile method; crossing the target
-`1/sqrt(3)` needs a different construction or stronger rank estimate.
+meets this interface with the [sharper exact certificate](research/cube-gaussian-tight-pressure.md)
+**`rho = 278/445`**, improving `5/8` for the same kernel.
+Complete Laurent-polynomial factorizations, the common coefficient decomposition,
+and evaluation costs are retained. Its exponent `log_3(445/278)` remains below **1/2**.
+A [shared endpoint-minor argument](research/cube-gaussian-profile-budget.md)
+proves `rho > 3/5` for every homogeneous eight-by-eight Gaussian kernel
+under the common-scale, unweighted Smith-profile method. Multiple physical modes
+and stronger coefficient-rank estimates remain outside that obstruction.
+
+The [four-axis shared-minor proof](research/four-axis-gaussian-profile-floor.md)
+excludes the corresponding homogeneous Gaussian profile target. Its
+[weighted extension](research/weighted-four-axis-gaussian-profile-floor.md)
+also covers arbitrary coupled modes, common subalphabets and types, and
+vertex-dependent additive degree caps, including nonhomogeneous entries.
+The [general shared-minor budgets](research/multiaxis-gaussian-profile-floor.md)
+exclude the common-scale unweighted degree-cap criterion through eight axes.
+At nine axes an explicit integer profile satisfies these budgets and has
+pressure below `1/3`; constructing a realizing kernel remains open.
+Run `make verify-four-axis-floor verify-weighted-four-axis-floor verify-multiaxis-floor`.
 <!-- cube-transfer-checkpoint:end -->
 
 ## Results and evidence
@@ -110,12 +179,29 @@ and [global modular input circuits](research/interval-packet-circuits.md)
 with `O(n+p)` arithmetic nodes and polynomial generation cost.
 Recovering the genuine rational common factor within the desired time
 bound remains open; these results do not improve the factoring score.
+The [deadline reduction](research/output-sensitive-gcd-deadline.md) sharpens
+the conditional consequence: the proposed output-sensitive rational gcd
+primitive would imply polynomial-time factoring. It is enough to prove a
+fast termination bound on coprime inputs; that bound is also unresolved.
 [Normalized integer-center jets](research/normalized-interval-jets.md)
 also separate huge local powers of two from polynomial-cost unit data.
 The [global pole trace](research/interval-pole-trace.md) gives an exact
 polynomial-precision factor-pair filter and closed bilinear reduction rules.
 Its current implementation still enumerates the dyadic state tree; efficient
 global state reduction remains open.
+The [bilinear pole-product packets](research/bilinear-pole-packets.md) now
+construct the whole product over that state family modulo `2^p` with
+`O(n+p)` ordinary arithmetic nodes and polynomial generation cost.
+The unit-trace evaluator is exact; the singular factor-count normalization
+remains unresolved. Run `make verify-bilinear-pole-packets`.
+The [circuit moment theorem](research/pole-cauchy-circuit-moments.md) extends
+inverse contractions to division-free polynomial circuits of unrestricted
+degree, using a quotient algebra of dimension polynomial in precision.
+The [rational resolvent theorem](research/pole-cauchy-rational-resolvents.md)
+computes complete two-axis contractions from four normalized affine products,
+including even integer denominators. A polynomial combination that recovers
+the factor-count scalar remains unconstructed. Run
+`make verify-pole-cauchy-circuit-moments verify-pole-cauchy-resolvents`.
 The [Cauchy content-slope reduction](research/pole-cauchy-content.md) gives
 a second global target using two implicit determinant contents, with cheap
 padding and explicit Vandermonde normalization.
@@ -127,15 +213,31 @@ rectangular maximal-minor slope. It does not identify the unknown factor pivots
 or supply a compressed global evaluator. Run `make verify-pole-smith`.
 
 <!-- pole-implicit-checkpoint:start -->
-The pole-Cauchy route now has [linear explicit Smith-profile computation](research/pole-smith-residue-flow.md),
-a [balanced overlap histogram](research/pole-smith-overlap-spectrum.md), and
-[dimension-independent inverse conditioning](research/pole-cauchy-conditioning.md).
-Individual inverse entries and [complete low-degree polynomial bilinear moments](research/pole-cauchy-polynomial-moments.md)
-are computable from binary-encoded progressions in polynomial bit time.
-[Precision-bounded Newton arithmetic](research/modular-interval-jet-arithmetic.md)
-keeps the interval-jet coefficient sizes controlled. These are exact ordinary
-results with independent finite controls; the factor-count Hadamard-square trace
-and implicit reciprocal-overlap counts remain open. Run `make verify-pole-arithmetic`.
+The [pole-Cauchy stabilization theorem](research/pole-smith-stabilization.md)
+and [inverse conditioning bounds](research/pole-cauchy-conditioning.md) give exact
+structural and precision controls. [Polynomial inverse moments](research/pole-cauchy-polynomial-moments.md)
+reduce complete contractions to short product jets.
+[Regular analytic weights](research/pole-cauchy-analytic-weights.md) and
+[joint analytic kernels](research/pole-cauchy-analytic-kernels.md) now extend
+that algorithm to succinct arithmetic circuits, including binary-encoded powers
+and unit inverses, without enumerating the matrix indices.
+The [sharp selector precision theorem](research/regular-analytic-selector-precision.md)
+also proves the exact denominator cost `2^(h+1)-h-2` for a residue-class
+parity selector in this circuit representation. It is a representation bound,
+and the complete factoring score remains **1/2**.
+[Explicit arithmetic-progression unions](research/pole-cauchy-domain-precision.md)
+also admit polynomial precision: for `c_A,c_B` component intervals the
+inverse loss is at most `(k-1)(2c_A+2c_B-3)`, with a sharper exact residue sweep.
+This extends the implicit joint-contraction algorithm beyond balanced domains.
+[External rational poles](research/pole-cauchy-rational-poles.md) and
+[higher pole orders](research/pole-cauchy-repeated-poles.md) are now evaluable
+with all denominator losses charged. [Quadratic poles](research/pole-cauchy-quadratic-selectors.md)
+give exact dyadic residue selectors outside the regular unit-inverse circuit
+model. A [polynomial selector lift](research/pole-cauchy-residue-blocks.md)
+computes complete residue-block sums of `2^L M^-1` modulo `2^p`, in time
+polynomial in the encoded domains and numerical precision parameters.
+The missing step is a sufficiently compressed rank or Smith-count algorithm;
+inverse block sums do not by themselves count factor pairs.
 <!-- pole-implicit-checkpoint:end -->
 
 The [research index](research/INDEX.md) links proofs, exact evidence, and replay commands.
@@ -250,6 +352,10 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs five groups on 
 | [`tools/`](tools/) and [`tests/`](tests/) | Exact checkers, reproduction scripts, and unit tests |
 
 ## Current research frontier
+
+- [F4 hyperoval crossing](research/f4-hyperoval-crossing-bound.md): exact rho < 0.710005861, slightly improving the pinned coordinate 96-letter bound. Both complete cuts and an explicit type with denominator 2^36 are certified. This remains above 1/sqrt(2), so the complete factoring exponent stays 1/2.
+
+- [Exact 96-letter pressure certificate](research/exact-natural-pressure-intervals.md): the complete saved profile certifies rho < 0.710005874881191, still above the required 1/sqrt(2). [Width-sensitive Boolean constructors](research/width-sensitive-prime-constructor.md) reduce preparation cost without supplying the missing crossing improvement. See the [session record](research/escape-half-session-20261031.md) for scope and replay costs.
 
 - [Fixed-prime scalar transfer](research/fixed-prime-factor-transfer.md): polynomially many scalar clique-count queries suffice under the stated evaluator hypothesis. [Certified divisor preprocessing](research/certified-divisor-oracle.md) concerns the maximum divisor count below a bound. These interfaces and the accompanying finite construction controls do not improve the complete 1/2 exponent. The parallel [fixed-characteristic recovery proof](research/fixed-characteristic-factor-recovery.md) is retained; the two notes share the power-tuple and cyclic-orbit mechanism.
 
@@ -501,6 +607,18 @@ within the allowed `2^O(lambda)` construction budget. Its complete
 six-site coefficient span has dimension 33; favorable two-cut ranks
 remain open. Run `make verify-quantum-braid` and the optional complete
 `make verify-quantum-braid-profiles`.
+The [exact path quotient and phase descent](research/quantum-braid-path-quotient.md)
+replace the ambient order-five braid calculation by a bounded-path
+calculation over F4. A period-five weighting gives a strict crossing
+of degree at most `n^2`, omits one residue class of coefficients and
+preserves both ranks of every retained piece. A favorable uniform rank
+bound remains open. Run `make verify-braid-path`.
+The optional `make verify-braid-path-profiles` compares all four- and
+six-site coefficients with the ambient constructor and computes the
+complete eight-site profile. The strict F4 span has dimension 51 at
+eight sites; its retained central coefficient has full rank in both
+cuts. This remains a structural checkpoint, without a favorable
+recombination. The optional batch replay needs NumPy.
 
 The [exact nonlinear charge theorem](research/nonlinear-symbol-charge-lattices.md)
 characterizes every admissible pair of full-symbol potentials for the
@@ -1550,3 +1668,16 @@ proof status, reproduction commands, and remaining gaps. The
 superseded work as well as incorporated results.
 
 The source factoring reduction and counting infrastructure are credited to Rudich and Rousseau. The Appendix B evaluator is credited to Anthropic. This repository's new integration and proof files used substantial OpenAI assistant support. The source-compatible license is [Apache-2.0](LICENSE).
+
+## Further exact profile restrictions
+
+The [regular-resolvent determinant budget](research/regular-resolvent-determinant-budget.md)
+excludes the bare Smith criterion at every alphabet size from 2 through 18,
+and also 21, over every field and at every leading rank. Endpoint-preserving
+fractional-linear moves remain in this family. Leading rank at most two is
+excluded at every size. A separate [complete binary four-label census](research/binary-rank-two-channels.md)
+checks 117,532,800 normalized rank-two parameters and proves at least eleven
+order-one pivots in every regular case. The [truncated multiplication argument](research/shift-register-toeplitz-budget.md)
+improves the copied-register bound from a division by `J^3` to `J`, reducing
+its complete even-register cutoff from 576 to 380. These results constrain
+the declared profile methods; they do not change the factoring score.

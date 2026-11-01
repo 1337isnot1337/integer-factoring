@@ -1,0 +1,35 @@
+{
+  "archive_sha256": "98a77ee8a175948f8b6a314ebf576a8e5f91914db6cba01658764f948676f2c4",
+  "checker_sha256": "347dafb4331781d6b2fa627ab5988f51fe5aee0486aeb18a54d2d8df02eac8cd",
+  "counts": {
+    "bases": 316,
+    "completed_optimizations": 2528,
+    "exact_weighted_profile_controls": 1008,
+    "finite_difference_gradient_controls": 336,
+    "stages": 2
+  },
+  "scope": "candidate replay and complete recorded-trial accounting; no global optimum claim",
+  "stages": [
+    {
+      "bases": 48,
+      "complete": false,
+      "completed_optimizations": 384,
+      "name": "initial",
+      "recorded_best": 0.8209477018467242,
+      "recorded_elapsed_seconds": 257.74283249799964,
+      "replayed_best": 0.8209477018467242,
+      "replayed_nonzero_minor_valuations": 26763
+    },
+    {
+      "bases": 268,
+      "complete": true,
+      "completed_optimizations": 2144,
+      "name": "warm",
+      "recorded_best": 0.8203391769145085,
+      "recorded_elapsed_seconds": 1540.2544013470006,
+      "replayed_best": 0.8203391769145085,
+      "replayed_nonzero_minor_valuations": 13426
+    }
+  ],
+  "status": "pass"
+}

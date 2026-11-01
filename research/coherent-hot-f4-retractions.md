@@ -122,3 +122,39 @@ complete factoring exponent remains 1/2.
 
 Substantial OpenAI assistant support was used for this construction,
 implementation, tests, and text.
+
+## 5. Initial completed experiments and the next candidate
+
+The first [eight-label search](../evidence/coherent-hot-f4-q8.json)
+exhausts all 20 codimension-one retracts of its two-dimensional F4
+boundary. Both full profiles were computed for every map. The best
+numerical pressure is approximately 0.7199753178555384 and is already
+attained by a binary map. This does not improve the earlier construction.
+
+The first [32-label sample](../evidence/coherent-hot-f4-q32.json)
+contains 100 distinct maps from the 5,440-map class. Its best numerical
+pressure is approximately 0.7121151184168554, worse than the existing
+binary winner, approximately 0.7121150125007152.
+
+For those 100 saved complete profile pairs, there is a stronger exact
+conclusion. The [comparison checker](../tools/check_coherent_hot_f4_sample.py)
+factors the integer difference between each sampled product counting
+polynomial and the binary winner's product. After removing powers of r
+and 1-r, 95 quotients have nonnegative power coefficients; the other
+five have nonnegative Bernstein coefficients. Each quotient is nonzero.
+Thus every sampled product is strictly larger for every 0<r<1.
+The physical heights agree, so none of these 100 maps beats the binary
+winner at any pressure scale. This is a finite sample conclusion,
+not an exclusion of the full F4 catalogue or other physical codes.
+The [receipt](../evidence/coherent-hot-f4-sample-comparisons.json)
+checks the saved profile polynomials and their source bindings; it does
+not describe that check as another native profile recomputation.
+
+A different positive candidate uses a rank-three F4 code across six of
+the ten height-25, three-particle words in a 96-label code. Take columns
+(1,t,t squared) for t in F4, followed by (0,1,0) and (0,0,1). All twenty
+three-column minors are nonzero. Selecting columns 0, 4, 5 gives an
+explicit left inverse. Keeping all lower-height words ensures deletion
+closure. The [probe](../tools/probe_coherent_hot_f4_hyperoval.py) checks
+these identities and computes both full cuts. This is a specified
+candidate, not a claimed favorable profile or completed bound.

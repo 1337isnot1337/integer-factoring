@@ -1,0 +1,445 @@
+{
+  "bounded_injectivity_models": [
+    {
+      "A": 4,
+      "M": "257",
+      "digit_width": 1,
+      "largest_proved_height": 3
+    },
+    {
+      "A": 4,
+      "M": "257",
+      "digit_width": 2,
+      "largest_proved_height": 3
+    },
+    {
+      "A": 4,
+      "M": "65537",
+      "digit_width": 3,
+      "largest_proved_height": 3
+    },
+    {
+      "A": 8,
+      "M": "4294967297",
+      "digit_width": 1,
+      "largest_proved_height": 7
+    }
+  ],
+  "counts": {
+    "complete_bounded_input_fibers": 10832,
+    "complete_contiguous_injective_maps": 2000,
+    "complete_relay_colorings": 73,
+    "composite_ring_unit_root_differences": 41,
+    "contiguous_boundary_distinct_images": 72220,
+    "decoder_local_input_settings": 48,
+    "exact_large_parameter_cases": 6028,
+    "explicitly_counted_original_edges": 3998407,
+    "mutated_boundary_entry_comparisons": 96,
+    "noncontiguous_hidden_set_collisions": 4,
+    "nonzero_padding_rejections": 48,
+    "out_of_range_boundary_rejections": 96,
+    "reference_local_input_settings": 108702,
+    "sharp_excluded_height_A_collisions": 8,
+    "strictly_positive_free_digit_cases": 12,
+    "undersized_modulus_observability_collisions": 1,
+    "valid_boundary_entry_comparisons": 48
+  },
+  "large_parameter_examples": [
+    {
+      "A": 1024,
+      "B_tab": "1",
+      "D": 524288,
+      "F": "275147390976",
+      "P": 2,
+      "enumeration_bit_bound": "275147390977",
+      "k": 512,
+      "lambda": "4128004160512",
+      "m": "2621440",
+      "n": "1099511627776",
+      "scaled_entry_bits_ratio": [
+        "4",
+        "1099511627776"
+      ],
+      "top_volume_ratio": [
+        "16512016642048",
+        "1099511627776"
+      ],
+      "w": "1049604"
+    },
+    {
+      "A": 65536,
+      "B_tab": "1",
+      "D": 2147483648,
+      "F": "1350954783492403320",
+      "P": 3,
+      "enumeration_bit_bound": "1350954783492403321",
+      "k": 21846,
+      "lambda": "18448398836889221244",
+      "m": "6442450944",
+      "n": "12157665459056928801",
+      "scaled_entry_bits_ratio": [
+        "9",
+        "12157665459056928801"
+      ],
+      "top_volume_ratio": [
+        "166035589532002991196",
+        "12157665459056928801"
+      ],
+      "w": "2830720270"
+    },
+    {
+      "A": 524288,
+      "B_tab": "1",
+      "D": 137438953472,
+      "F": "75558007841686514827264",
+      "P": 4,
+      "enumeration_bit_bound": "75558007841686514827265",
+      "k": 131072,
+      "lambda": "920866111878897426235392",
+      "m": "8933531975680",
+      "n": "1208925819614629174706176",
+      "scaled_entry_bits_ratio": [
+        "16",
+        "1208925819614629174706176"
+      ],
+      "top_volume_ratio": [
+        "14733857790062358819766272",
+        "1208925819614629174706176"
+      ],
+      "w": "4398054899746"
+    },
+    {
+      "A": 268435456,
+      "B_tab": "1",
+      "D": 36028797018963968,
+      "F": "20769187511510563548170804615184384",
+      "P": 8,
+      "enumeration_bit_bound": "20769187511510563548170804615184385",
+      "k": 33554432,
+      "lambda": "249473643079093564225429061496733696",
+      "m": "36929516944438067200",
+      "n": "1329227995784915872903807060280344576",
+      "scaled_entry_bits_ratio": [
+        "64",
+        "1329227995784915872903807060280344576"
+      ],
+      "top_volume_ratio": [
+        "15966313157061988110427459935790956544",
+        "1329227995784915872903807060280344576"
+      ],
+      "w": "18446744142429028866"
+    },
+    {
+      "A": 137438953472,
+      "B_tab": "1",
+      "D": 9444732965739290427392,
+      "F": "5708990770865377899102027109309984420428513280",
+      "P": 16,
+      "enumeration_bit_bound": "5708990770865377899102027109309984420428513281",
+      "k": 8589934592,
+      "lambda": "68512070644927873025072600441566483838247370752",
+      "m": "154751949643638273652817920",
+      "n": "1461501637330902918203684832716283019655932542976",
+      "scaled_entry_bits_ratio": [
+        "256",
+        "1461501637330902918203684832716283019655932542976"
+      ],
+      "top_volume_ratio": [
+        "17539090085101535494418585713041019862591326912512",
+        "1461501637330902918203684832716283019655932542976"
+      ],
+      "w": "77371252455899217134624770"
+    },
+    {
+      "A": 18446744073709551616,
+      "B_tab": "1",
+      "D": 170141183460469231731687303715884105728,
+      "F": "118571099379011784120164440825932378744613210995973044827944990223498448023322624",
+      "P": 128,
+      "enumeration_bit_bound": "118571099379011784120164440825932378744613210995973044827944990223498448023322625",
+      "k": 144115188075855872,
+      "lambda": "1422853213750306193287470497111008497122729920910565011921584125113902609834442752",
+      "m": "11417981711788862508935519487283264806946078720",
+      "n": "1942668892225729070919461906823518906642406839052139521251812409738904285205208498176",
+      "scaled_entry_bits_ratio": [
+        "16384",
+        "1942668892225729070919461906823518906642406839052139521251812409738904285205208498176"
+      ],
+      "top_volume_ratio": [
+        "23312027054085016670821916624666763216858807024198697155323234305866180359527510048768",
+        "1942668892225729070919461906823518906642406839052139521251812409738904285205208498176"
+      ],
+      "w": "5708990770823839524542628887619325614289321986"
+    }
+  ],
+  "relay_colorings": [
+    {
+      "A": 4,
+      "P": 2,
+      "max_IB_carry_edges": 4,
+      "max_carry_chain_edges": 7,
+      "max_transform_edges": 24,
+      "maximum_block_size": 2
+    },
+    {
+      "A": 8,
+      "P": 2,
+      "max_IB_carry_edges": 8,
+      "max_carry_chain_edges": 15,
+      "max_transform_edges": 96,
+      "maximum_block_size": 4
+    },
+    {
+      "A": 8,
+      "P": 3,
+      "max_IB_carry_edges": 6,
+      "max_carry_chain_edges": 12,
+      "max_transform_edges": 54,
+      "maximum_block_size": 3
+    },
+    {
+      "A": 16,
+      "P": 2,
+      "max_IB_carry_edges": 16,
+      "max_carry_chain_edges": 31,
+      "max_transform_edges": 384,
+      "maximum_block_size": 8
+    },
+    {
+      "A": 16,
+      "P": 3,
+      "max_IB_carry_edges": 11,
+      "max_carry_chain_edges": 22,
+      "max_transform_edges": 180,
+      "maximum_block_size": 6
+    },
+    {
+      "A": 16,
+      "P": 5,
+      "max_IB_carry_edges": 7,
+      "max_carry_chain_edges": 14,
+      "max_transform_edges": 72,
+      "maximum_block_size": 4
+    },
+    {
+      "A": 32,
+      "P": 2,
+      "max_IB_carry_edges": 32,
+      "max_carry_chain_edges": 63,
+      "max_transform_edges": 1536,
+      "maximum_block_size": 16
+    },
+    {
+      "A": 32,
+      "P": 3,
+      "max_IB_carry_edges": 22,
+      "max_carry_chain_edges": 44,
+      "max_transform_edges": 726,
+      "maximum_block_size": 11
+    },
+    {
+      "A": 32,
+      "P": 5,
+      "max_IB_carry_edges": 14,
+      "max_carry_chain_edges": 28,
+      "max_transform_edges": 294,
+      "maximum_block_size": 7
+    }
+  ],
+  "scope": "explicit group widths, Boolean grouped tables, and per-entry input decoding; all boundary labels remain written; factoring exponent unchanged",
+  "status": "all exact checks passed",
+  "table_entry_examples": [
+    {
+      "N": 15,
+      "decoded_settings": 1,
+      "digit_width": 1,
+      "entry_value": 1,
+      "free_digits": 0,
+      "group": 0,
+      "kind": "first constructor",
+      "p": 3,
+      "q": 5,
+      "reference_settings": 64
+    },
+    {
+      "N": 15,
+      "decoded_settings": 1,
+      "digit_width": 1,
+      "entry_value": 1,
+      "free_digits": 0,
+      "group": 1,
+      "kind": "first constructor",
+      "p": 3,
+      "q": 5,
+      "reference_settings": 64
+    },
+    {
+      "N": 63,
+      "decoded_settings": 1,
+      "digit_width": 1,
+      "entry_value": 1,
+      "free_digits": 0,
+      "group": 0,
+      "kind": "first constructor",
+      "p": 7,
+      "q": 9,
+      "reference_settings": 256
+    },
+    {
+      "N": 63,
+      "decoded_settings": 1,
+      "digit_width": 1,
+      "entry_value": 1,
+      "free_digits": 0,
+      "group": 1,
+      "kind": "first constructor",
+      "p": 7,
+      "q": 9,
+      "reference_settings": 64
+    },
+    {
+      "N": 391,
+      "decoded_settings": 1,
+      "digit_width": 2,
+      "entry_value": 1,
+      "free_digits": 0,
+      "group": 0,
+      "kind": "first constructor",
+      "p": 17,
+      "q": 23,
+      "reference_settings": 8192
+    },
+    {
+      "N": 391,
+      "decoded_settings": 1,
+      "digit_width": 2,
+      "entry_value": 1,
+      "free_digits": 0,
+      "group": 1,
+      "kind": "first constructor",
+      "p": 17,
+      "q": 23,
+      "reference_settings": 4096
+    },
+    {
+      "N": 269,
+      "decoded_settings": 1,
+      "digit_width": 1,
+      "entry_value": 1,
+      "free_digits": 1,
+      "group": 0,
+      "kind": "operand length",
+      "p": 1,
+      "q": 269,
+      "reference_settings": 32
+    },
+    {
+      "N": 269,
+      "decoded_settings": 1,
+      "digit_width": 1,
+      "entry_value": 1,
+      "free_digits": 0,
+      "group": 1,
+      "kind": "operand length",
+      "p": 1,
+      "q": 269,
+      "reference_settings": 16
+    },
+    {
+      "N": 617,
+      "decoded_settings": 1,
+      "digit_width": 1,
+      "entry_value": 1,
+      "free_digits": 2,
+      "group": 0,
+      "kind": "operand length",
+      "p": 617,
+      "q": 1,
+      "reference_settings": 64
+    },
+    {
+      "N": 617,
+      "decoded_settings": 1,
+      "digit_width": 1,
+      "entry_value": 1,
+      "free_digits": 0,
+      "group": 1,
+      "kind": "operand length",
+      "p": 617,
+      "q": 1,
+      "reference_settings": 16
+    },
+    {
+      "N": 267013,
+      "decoded_settings": 1,
+      "digit_width": 2,
+      "entry_value": 1,
+      "free_digits": 2,
+      "group": 0,
+      "kind": "operand length",
+      "p": 1,
+      "q": 267013,
+      "reference_settings": 2048
+    },
+    {
+      "N": 267013,
+      "decoded_settings": 1,
+      "digit_width": 2,
+      "entry_value": 1,
+      "free_digits": 0,
+      "group": 1,
+      "kind": "operand length",
+      "p": 1,
+      "q": 267013,
+      "reference_settings": 256
+    },
+    {
+      "N": 267013,
+      "decoded_settings": 1,
+      "digit_width": 2,
+      "entry_value": 1,
+      "free_digits": 2,
+      "group": 0,
+      "kind": "operand length",
+      "p": 267013,
+      "q": 1,
+      "reference_settings": 2048
+    },
+    {
+      "N": 267013,
+      "decoded_settings": 1,
+      "digit_width": 2,
+      "entry_value": 1,
+      "free_digits": 0,
+      "group": 1,
+      "kind": "operand length",
+      "p": 267013,
+      "q": 1,
+      "reference_settings": 256
+    },
+    {
+      "N": 1043269,
+      "decoded_settings": 1,
+      "digit_width": 2,
+      "entry_value": 1,
+      "free_digits": 0,
+      "group": 0,
+      "kind": "operand length",
+      "p": 719,
+      "q": 1451,
+      "reference_settings": 4096
+    },
+    {
+      "N": 1043269,
+      "decoded_settings": 1,
+      "digit_width": 2,
+      "entry_value": 1,
+      "free_digits": 0,
+      "group": 1,
+      "kind": "operand length",
+      "p": 719,
+      "q": 1451,
+      "reference_settings": 256
+    }
+  ]
+}

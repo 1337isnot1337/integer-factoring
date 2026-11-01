@@ -8,7 +8,7 @@ may be composite. The selector neither factors those norms nor tests them
 for primality. It retains a fixed prime-form base and obtains genuine
 relations in that base.
 
-The completed 92-bit and 124-bit controls use fewer leading-norm queries
+The completed 92-bit, 124-bit, and 144-bit controls use fewer leading-norm queries
 than a smooth-only run with the same round-robin traversal. These finite
 results do not prove a uniform short-window estimate. The accepted
 factoring exponent remains one half. The
@@ -172,13 +172,31 @@ relation spans develop differently.
 | 124 | 4093 | 1 | 3,553,722 | 0 | 0 |
 | 124 | 4093 | 16,752,649 | 1,429,783 | 4,959 | 179 |
 | 124 | 4093 | 68,568,592,357 | 1,400,316 | 51,108 | 180 |
+| 144 | 8191 | 1 | 8,120,765 | 0 | 0 |
+| 144 | 8191 | 67,092,481 | 3,440,025 | 9,601 | 295 |
 
 The 92-bit integer is `4951760154835678088235319297`; the returned
 proper factor is `2147483647`. The 124-bit integer is
 `21267647932558653899591465697288388633`; the returned proper factor
-is `2305843009213693951`. All six runs return verified divisors.
+is `2305843009213693951`. The 144-bit integer is
+`17355670471043633865640786569418441084204301`; the returned proper
+factor is `4108225714090758818561`. All eight runs return verified divisors.
 These are query-count comparisons. Additional decoding, storage, and
 linear algebra mean that the query ratios are not wall-clock speedups.
+
+A second 124-bit input, `16690589162031198237853308486068400277`,
+supplies a distinct matched control. With cutoff 4093, the smooth-only
+run uses 2,430,565 queries; cap 16,752,649 uses 1,055,883 queries,
+4,588 residual keys, and 156 independent collision rows. Both return
+the verified factor `3701143448763469987`. These two additional receipts
+are retained alongside the eight table rows.
+
+The [composite-ideal closure](cofactor-ideal-closure.md) is a separate
+traversal. It selects one dominant relation for each reached generator,
+then eliminates new ideal definitions over the integers. On the same
+144-bit input its completed control uses 3,395,784 norm queries and
+avoids the rational-rank selection performed by the present selector.
+Its count is not presented as a matched-traversal comparison.
 
 ## 6. Verification and reproduction
 
@@ -191,6 +209,15 @@ orientation, checks the collision row, checks rational independence,
 and verifies the class identity and returned divisor. The
 [retained evidence](../evidence/cofactor-collision-relations.json)
 contains the exact inputs, counters, relation rows, and witnesses.
+
+For larger certificates, row independence is first checked modulo the
+fixed prime `2147483647`, whose primality is checked by trial division.
+A nonzero minor modulo that prime is a nonzero integer minor. If the
+modular rank is deficient, the checker falls back to exact rational
+elimination; it never infers rational dependence from modular dependence.
+The controls include a genuine independent family that collapses modulo
+the selected prime and a genuinely dependent family. This changes only
+certificate verification, not the selector or its recorded traversal.
 
 The default checker verifies those retained certificates. Pass
 `--replay-search` to repeat all rejected and accepted large queries and

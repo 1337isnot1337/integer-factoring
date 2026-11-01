@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "exact_deletion_module_controls": {
+    "intertwining_vectors": 64,
+    "square_zero_operators": 8,
+    "commuting_pairs": 12
+  },
+  "cone_inequalities": 288,
+  "binary_weighted_wrapper_comparisons": 2,
+  "smooth_chamber_gradient_coordinates": 33,
+  "maximum_gradient_error": 8.547546936736594e-11,
+  "outside_cone_control_rejected": true,
+  "source_sha256": {
+    "check_weighted_coherent_hot_f4.py": "619e8af67189d503193cfac891679b34d9c605bb7803a770e3863e79fc7297fa",
+    "weighted_coherent_hot_f4.py": "fdece50992b42626ca391e4b54b1116d5721997079735623df07ddfdd1f04803",
+    "coherent_hot_compounds_f4.py": "1a8798f6b9a038413ce1f8d27d435c7a642e84affc9ffb4461298c64d2708d76",
+    "coherent_hot_compounds_f4.cpp": "d1790e5034fd77f17b4ef9c4e9f98db03f6b4133da403ddba2994d2207df6810",
+    "weighted_hot_code_oracle.py": "a9c9e58f280ebe0ee5827d3dbc0ac590cf0001c2d40c2d6bbe3c6d363d9536ab",
+    "native_matrix_smith_f4.py": "c08da20f1938a371b438e32fbc6a8f6766b48c2cfee5bcd1c956ce137dc70203",
+    "native_matrix_smith_f4.cpp": "5ec995cd04563c2fa99b69afd71bf476d5ca885f1f90377490c30e5a1a55f330",
+    "native_rectangular_smith_f4.cpp": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6"
+  },
+  "scope": "Exact module identities; numerical weighted-wrapper and derivative controls. No exact pressure improvement claimed."
+}

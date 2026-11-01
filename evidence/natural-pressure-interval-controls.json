@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "counts": {
+    "exact_power_enclosures": 911,
+    "independent_log_enclosures": 125,
+    "exact_pressure_signs": 24,
+    "published_integer_bound_controls": 2,
+    "rejection_controls": 7
+  },
+  "input_sha256": {
+    "evidence/hot64-charge-rational-pressure.json": "1b7663e5c725b457c244a1cf2fbba431459938e6f82db0a006cc55515e04edbd",
+    "evidence/hot96-charge-profile.json": "0623bf18f2dab0766c9137ccf05b41c8cd54a9c7be8118a74c3d918b023865d4"
+  },
+  "source_sha256": {
+    "check_natural_pressure_intervals.py": "f6aa83299a95c411eeacea97096861762b6e96a7ede6623020f918caf96cb282",
+    "certify_natural_pressure_interval.py": "2eed70fa1c32ddf190aca7f97b6fbcd541fd748101f92c6b0899933978e02c67"
+  },
+  "scope": "Exact powers and independent alternating-series controls; large polynomial profiles are loaded, not reconstructed."
+}

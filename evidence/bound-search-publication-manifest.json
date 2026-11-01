@@ -1,0 +1,1273 @@
+{
+  "schema_version": 1,
+  "scope": "Dependency-ordered frozen constructor, arithmetic-interface, and trace packages from bound_search, with independently audited companion packages. Mathematical dependencies guide publication; numerical score remains 0.5. No stages or commits are performed by this manifest. The completed root-worker archive is appended with all 36 recorded source dependencies.",
+  "repository": "https://github.com/1337isnot1337/integer-factoring",
+  "package_count": 26,
+  "files_count": 117,
+  "packages": [
+    {
+      "id": "network-structure",
+      "title": "Exact joint channels for the multiplication network's Fourier fan-out",
+      "depends_on": [],
+      "freeze_status": "frozen; independent mathematical review completed",
+      "checker_command": [
+        "python",
+        "tools/check_factoring_network_structure.py",
+        "--output",
+        "evidence/factoring-network-structure.json"
+      ],
+      "files": [
+        {
+          "path": "research/factoring-network-structure.md",
+          "sha256": "7b40b058ca07107573690157b57b64fd8c527b1a1a9e45efc4726ad996901d35",
+          "bytes": 15886,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "tools/check_factoring_network_structure.py",
+          "sha256": "64ab9aa171e9534d1edb93e3cadc8c5bdf12d3aa94f420ebd70f2107851f69b3",
+          "bytes": 22040,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "evidence/factoring-network-structure.json",
+          "sha256": "14c838059dda8f448a768a1ca9bcb3af0c784e31a5911915287ee4c016325bb9",
+          "bytes": 5988,
+          "tracked_in_local_index": true
+        }
+      ]
+    },
+    {
+      "id": "primitive-recipients",
+      "title": "Arbitrary primitive recipient sets have a sharp full-range threshold",
+      "depends_on": [
+        "network-structure"
+      ],
+      "freeze_status": "frozen; independent mathematical review completed",
+      "checker_command": [
+        "python",
+        "tools/check_factoring_primitive_recipients.py",
+        "--output",
+        "evidence/factoring-primitive-recipients.json"
+      ],
+      "files": [
+        {
+          "path": "research/factoring-primitive-recipient-codec.md",
+          "sha256": "51991cff2c859a8657dbb508a608d9a0a38708a35b683b3a6fc7a70dc2013efc",
+          "bytes": 11323,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "tools/check_factoring_primitive_recipients.py",
+          "sha256": "f796136614c2bf699cc62f1bfbe5cca462740f0c21924c0f4f4215c89e585dc4",
+          "bytes": 16296,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "evidence/factoring-primitive-recipients.json",
+          "sha256": "142a499e97176b3acd644e92e437ff5bca30ecb2cba87e59218214e009e2935d",
+          "bytes": 20774,
+          "tracked_in_local_index": true
+        }
+      ]
+    },
+    {
+      "id": "recipient-rank-envelope",
+      "title": "Every primitive recipient set has maximal leading rank entropy",
+      "depends_on": [
+        "primitive-recipients"
+      ],
+      "freeze_status": "frozen; independent mathematical review completed",
+      "checker_command": [
+        "python",
+        "tools/check_factoring_recipient_rank_envelope.py",
+        "--output",
+        "evidence/factoring-recipient-rank-envelope.json"
+      ],
+      "files": [
+        {
+          "path": "research/factoring-recipient-rank-envelope.md",
+          "sha256": "35476f61ce3975877545f8fae477ba7ae639cc235ebae86a527be3682ea3b1cf",
+          "bytes": 11426,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "tools/check_factoring_recipient_rank_envelope.py",
+          "sha256": "8a6854e2b3d4263a6e56d47bdd236b987e307519af7a7ac9b76c3be51f81eaec",
+          "bytes": 9466,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "evidence/factoring-recipient-rank-envelope.json",
+          "sha256": "a4c536adf5a1abdd214cf88cc78ec5622c4407c35d74445b82910e63c1f32d8d",
+          "bytes": 26280,
+          "tracked_in_local_index": true
+        }
+      ]
+    },
+    {
+      "id": "adaptive-transform",
+      "title": "An adaptive multiplication network with smaller written top instances",
+      "depends_on": [],
+      "freeze_status": "frozen; independent mathematical review completed",
+      "checker_command": [
+        "python",
+        "tools/check_adaptive_transform_constructor.py",
+        "--output",
+        "evidence/adaptive-transform-constructor.json"
+      ],
+      "files": [
+        {
+          "path": "research/adaptive-transform-constructor.md",
+          "sha256": "7fc77ac193cf1728f6f66554addd729007ad2dff076f2b710df5574713f28719",
+          "bytes": 17747,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "tools/check_adaptive_transform_constructor.py",
+          "sha256": "ab45de123fe41a514db689fdfc75ff2bbee292865ecc565667c62e6f4a3d4769",
+          "bytes": 17557,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "evidence/adaptive-transform-constructor.json",
+          "sha256": "0db962d0efd7acb479611cfe0b614522412e35c4ba9e84d6be42f2c9d6ccc54d",
+          "bytes": 113737,
+          "tracked_in_local_index": true
+        }
+      ]
+    },
+    {
+      "id": "operand-length-transform",
+      "title": "Smaller multiplication instances from the two operand bit lengths",
+      "depends_on": [
+        "adaptive-transform"
+      ],
+      "freeze_status": "frozen; independent mathematical review completed",
+      "checker_command": [
+        "python",
+        "tools/check_operand_length_transform.py",
+        "--output",
+        "evidence/operand-length-transform.json"
+      ],
+      "files": [
+        {
+          "path": "research/operand-length-transform-constructor.md",
+          "sha256": "3e083d832d26b93411c80581b9fd36cabaf25be16e82470c7507adb90fbe1450",
+          "bytes": 13019,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "tools/check_operand_length_transform.py",
+          "sha256": "56e5566874dec74ddf08fcda12e53520108ad309d302daf1e99f05fa4c052945",
+          "bytes": 13621,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "evidence/operand-length-transform.json",
+          "sha256": "4fd2abffcccccb18efd153b8ae7445abfeb4eb50e884e5320b4cc22a26b0d871",
+          "bytes": 239479,
+          "tracked_in_local_index": true
+        }
+      ]
+    },
+    {
+      "id": "carry-fourier",
+      "title": "Exact Fourier evaluation of the whole bounded carry tensor",
+      "depends_on": [
+        "adaptive-transform"
+      ],
+      "freeze_status": "frozen; independent mathematical review completed",
+      "checker_command": [
+        "python",
+        "tools/check_carry_fourier_elimination.py",
+        "--output",
+        "evidence/carry-fourier-elimination.json"
+      ],
+      "files": [
+        {
+          "path": "research/carry-fourier-elimination.md",
+          "sha256": "888655018a7888700e5987091ffd4ca854d5b874bb44713e27042e8f001cd0f2",
+          "bytes": 16631,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "tools/check_carry_fourier_elimination.py",
+          "sha256": "ad1065db63bc74779105964c2ed8c3cf5e91f82d514fa70580fa8eb31a091763",
+          "bytes": 21667,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "evidence/carry-fourier-elimination.json",
+          "sha256": "a299facca528f6af63a040c326eba0caaa0bba456563b9136ce4a151e9068111",
+          "bytes": 13170,
+          "tracked_in_local_index": true
+        }
+      ]
+    },
+    {
+      "id": "frobenius-sparse-recovery",
+      "title": "Sparse recovery compatible with weighted Frobenius digit boxes",
+      "depends_on": [
+        "adaptive-transform"
+      ],
+      "freeze_status": "frozen; independent mathematical review completed",
+      "checker_command": [
+        "python",
+        "tools/check_frobenius_sparse_recovery.py",
+        "--output",
+        "evidence/frobenius-sparse-recovery.json"
+      ],
+      "files": [
+        {
+          "path": "research/frobenius-compatible-sparse-recovery.md",
+          "sha256": "189628fa5747113e2a13234bd8596141d7e40b99583d508bab584e634fc095dc",
+          "bytes": 17721,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "tools/check_frobenius_sparse_recovery.py",
+          "sha256": "8cb46d91504009c850224816f3229eaf6032ebcf48c33883c80420849d264e31",
+          "bytes": 22469,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "evidence/frobenius-sparse-recovery.json",
+          "sha256": "0417f762eb6a1799118e70e5a2cf702e8eba82841965e83ea97566da332515d6",
+          "bytes": 8165,
+          "tracked_in_local_index": true
+        }
+      ]
+    },
+    {
+      "id": "weighted-dyadic-carry",
+      "title": "Weighted dyadic carries and one joint Frobenius quotient",
+      "depends_on": [
+        "operand-length-transform",
+        "carry-fourier",
+        "frobenius-sparse-recovery"
+      ],
+      "freeze_status": "frozen; independent mathematical review completed",
+      "checker_command": [
+        "python",
+        "tools/check_weighted_dyadic_carry.py",
+        "--output",
+        "evidence/weighted-dyadic-carry.json"
+      ],
+      "files": [
+        {
+          "path": "research/weighted-dyadic-carry-contraction.md",
+          "sha256": "21989e072bee3bbf0415dafd6517a6d607099719f6174b446aed5396b278829b",
+          "bytes": 15631,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "tools/check_weighted_dyadic_carry.py",
+          "sha256": "3ea481e576dd9fd5694dd11892a380225c73522c5afa2763ed9f3999dbd565e5",
+          "bytes": 24987,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "evidence/weighted-dyadic-carry.json",
+          "sha256": "015192dbeeb905e4ca1365ed75923aa1669db920771451d01488300a82f0fd3c",
+          "bytes": 21893,
+          "tracked_in_local_index": true
+        }
+      ]
+    },
+    {
+      "id": "constant-field-carry",
+      "title": "Constant-field carry weights and exact operand separation",
+      "depends_on": [
+        "weighted-dyadic-carry"
+      ],
+      "freeze_status": "frozen; independent mathematical review completed",
+      "checker_command": [
+        "python",
+        "tools/check_constant_field_carry_weights.py",
+        "--output",
+        "evidence/constant-field-carry-weights.json"
+      ],
+      "files": [
+        {
+          "path": "research/constant-field-carry-weights.md",
+          "sha256": "114c21a660f9851923f23fd03f253d3bde18315b2af7e08e86cf6b6438093c01",
+          "bytes": 12035,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "tools/check_constant_field_carry_weights.py",
+          "sha256": "90bb010d07071a88b0c02e09b17a082d52e5db086ec9eb19d83f288cef108d6f",
+          "bytes": 15705,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "evidence/constant-field-carry-weights.json",
+          "sha256": "259777fe6f85748df0205587dd574a2e3f6f67d71b4354ecaed5a4210b276b05",
+          "bytes": 7087,
+          "tracked_in_local_index": true
+        }
+      ]
+    },
+    {
+      "id": "first-jet-carry",
+      "title": "First-jet separation of constant-field carry weights",
+      "depends_on": [
+        "constant-field-carry"
+      ],
+      "freeze_status": "frozen; independent mathematical review completed",
+      "checker_command": [
+        "python",
+        "tools/check_first_jet_carry_weights.py",
+        "--output",
+        "evidence/first-jet-carry-weights.json"
+      ],
+      "files": [
+        {
+          "path": "research/first-jet-carry-weights.md",
+          "sha256": "109b6da62823f35e446897d37496595754856d694a7c7c2e2468a3965bedd945",
+          "bytes": 8306,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "tools/check_first_jet_carry_weights.py",
+          "sha256": "4d4eb6dfddb1fca28c76579d004efaf05130167917dce0d46fafe3767e455cc7",
+          "bytes": 10392,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "evidence/first-jet-carry-weights.json",
+          "sha256": "e2523b16687514a043a2b7c6d630aac6affd537dfa45709e835ac312b52ee48a",
+          "bytes": 9075,
+          "tracked_in_local_index": true
+        }
+      ]
+    },
+    {
+      "id": "multiplicative-monoid",
+      "title": "Explicit multiplication blocks and Fourier--Mellin closure",
+      "depends_on": [
+        "weighted-dyadic-carry"
+      ],
+      "freeze_status": "frozen; independent mathematical review completed",
+      "checker_command": [
+        "python",
+        "tools/check_multiplicative_monoid_blocks.py",
+        "--output",
+        "evidence/multiplicative-monoid-blocks.json"
+      ],
+      "files": [
+        {
+          "path": "research/multiplicative-monoid-blocks.md",
+          "sha256": "cf29591269ea8d421b93e0829112291d716471c7bbff5fb2c2c755e386276085",
+          "bytes": 21583,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "tools/check_multiplicative_monoid_blocks.py",
+          "sha256": "417d6e47f39daa94d7d56303eaa1beedb7a7d234f1425aa17c81e715e970b535",
+          "bytes": 29364,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "evidence/multiplicative-monoid-blocks.json",
+          "sha256": "bc463491bb1e42bbc9061694140740b5bb0268e197e5ebbe6f0aebd069aa6c63",
+          "bytes": 10008,
+          "tracked_in_local_index": true
+        }
+      ]
+    },
+    {
+      "id": "unsplit-monoid",
+      "title": "Original-field multiplication blocks and a bundled middle-layer algorithm",
+      "depends_on": [
+        "multiplicative-monoid"
+      ],
+      "freeze_status": "frozen; independent mathematical review completed",
+      "checker_command": [
+        "python",
+        "tools/check_unsplit_monoid_contraction.py",
+        "--output",
+        "evidence/unsplit-monoid-contraction.json"
+      ],
+      "files": [
+        {
+          "path": "research/unsplit-monoid-contraction.md",
+          "sha256": "73cc014e555197765dde88b12af80c080989909a13a98271ad0f3cd323a10da2",
+          "bytes": 18824,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "tools/check_unsplit_monoid_contraction.py",
+          "sha256": "86307a039ebd3785cacb72458dba3545160c8973c225f19f958338f51225c7d6",
+          "bytes": 28965,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "evidence/unsplit-monoid-contraction.json",
+          "sha256": "80bb06278c80124cde59bc62e6678e639d2abfa3b172eb1a77e2660241d7bd11",
+          "bytes": 5373,
+          "tracked_in_local_index": true
+        }
+      ]
+    },
+    {
+      "id": "observable-boundary",
+      "title": "A multiplication constructor with directly decoded boundary tables",
+      "depends_on": [
+        "operand-length-transform",
+        "network-structure"
+      ],
+      "freeze_status": "frozen; independent mathematical review completed",
+      "checker_command": [
+        "python",
+        "tools/check_observable_boundary_constructor.py",
+        "--output",
+        "evidence/observable-boundary-constructor.json"
+      ],
+      "files": [
+        {
+          "path": "research/observable-boundary-constructor.md",
+          "sha256": "4bbc7a1cb75975113a740e0acf028b2530b40675ee863389e30cbf0afe2097c6",
+          "bytes": 21454,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "tools/check_observable_boundary_constructor.py",
+          "sha256": "b7ae1fe5d858e24475ca7ec944152957c4023bf210d61536cb387c3c1a2e79fb",
+          "bytes": 26359,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "evidence/observable-boundary-constructor.json",
+          "sha256": "809d53d37ac9928654d74699150571d52ff4a22751ea49acbb85b18b6240651e",
+          "bytes": 11007,
+          "tracked_in_local_index": true
+        }
+      ]
+    },
+    {
+      "id": "lattice-decoded-boundary",
+      "title": "Polynomial-time decoding of every grouped boundary entry",
+      "depends_on": [
+        "observable-boundary"
+      ],
+      "freeze_status": "frozen; independent mathematical review completed",
+      "checker_command": [
+        "python",
+        "tools/check_lattice_boundary_decoder.py",
+        "--output",
+        "evidence/lattice-boundary-decoder.json"
+      ],
+      "files": [
+        {
+          "path": "research/lattice-decoded-boundary-constructor.md",
+          "sha256": "9283202597e272a5a5176858001a0e98c143851bb7b21042fee54376bea7ce3c",
+          "bytes": 11772,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "tools/check_lattice_boundary_decoder.py",
+          "sha256": "ed993fea2a8a98a61759fa2a0037c7bc272e54fdcaa7ba7c26ea387279eefb48",
+          "bytes": 14297,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "evidence/lattice-boundary-decoder.json",
+          "sha256": "708a0b044ff6377b61ab08c478adb9abc8b2b29c618d0abc27649c6b48c57fcc",
+          "bytes": 4741,
+          "tracked_in_local_index": true
+        }
+      ]
+    },
+    {
+      "id": "power-two-progression-prime",
+      "title": "A narrow prime modulus in a power-of-two progression",
+      "depends_on": [],
+      "freeze_status": "frozen; independent mathematical review completed",
+      "checker_command": [
+        "python",
+        "tools/check_power_two_progression_dyadic_prime.py",
+        "--output",
+        "evidence/power-two-progression-dyadic-prime.json"
+      ],
+      "files": [
+        {
+          "path": "research/power-two-progression-dyadic-prime.md",
+          "sha256": "0e6d8339260ba746386bdf62d00474d09778ea9c93391016aaaf13096c697351",
+          "bytes": 8770,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "tools/check_power_two_progression_dyadic_prime.py",
+          "sha256": "3c794b2da3659f46b43ca0816b3834b610a1132459f91f801589fa1355e43a71",
+          "bytes": 3947,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "evidence/power-two-progression-dyadic-prime.json",
+          "sha256": "3c51392bc6c34d29b08fdcc17c12d9f7a1582f602530a17a0edd0719ceb9d9a1",
+          "bytes": 2093,
+          "tracked_in_local_index": true
+        }
+      ]
+    },
+    {
+      "id": "prime-boundary",
+      "title": "A narrow-prime constructor at nearly square-root clique size",
+      "depends_on": [
+        "lattice-decoded-boundary",
+        "power-two-progression-prime"
+      ],
+      "freeze_status": "frozen; independent mathematical review completed",
+      "checker_command": [
+        "python",
+        "tools/check_prime_transform_boundary_constructor.py",
+        "--output",
+        "evidence/prime-transform-boundary-constructor.json"
+      ],
+      "files": [
+        {
+          "path": "research/prime-transform-boundary-constructor.md",
+          "sha256": "4d7ab3244fc7d6ef4e436b27daa26e78628c2d56553db935d2f7a1ca99ac65c5",
+          "bytes": 12617,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "tools/check_prime_transform_boundary_constructor.py",
+          "sha256": "89c1d6ea8e15b14e8f28a4078588d74ca7cc1e49b546e721d25f017c06e50cb3",
+          "bytes": 16857,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "evidence/prime-transform-boundary-constructor.json",
+          "sha256": "19a2812415c55ddf8f5941ff60d7bb91f933cc1a5f911a69621f0134c7b5151f",
+          "bytes": 12704,
+          "tracked_in_local_index": true
+        }
+      ]
+    },
+    {
+      "id": "width-sensitive-prime",
+      "title": "A width-sensitive evaluator and a faster prime-constructor schedule",
+      "depends_on": [
+        "prime-boundary"
+      ],
+      "freeze_status": "frozen; independent mathematical review completed",
+      "checker_command": [
+        "python",
+        "tools/check_width_sensitive_prime_constructor.py",
+        "--output",
+        "evidence/width-sensitive-prime-constructor.json"
+      ],
+      "files": [
+        {
+          "path": "research/width-sensitive-prime-constructor.md",
+          "sha256": "6a92994dff07ca954c1095c38c5d569f9dcae4468a7f1c85a7d09ee3ee02dc7a",
+          "bytes": 12750,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "tools/check_width_sensitive_prime_constructor.py",
+          "sha256": "9f340c3d2871befdb9280f305939f78c301a692a4fffe50d62914143b74305dc",
+          "bytes": 7501,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "evidence/width-sensitive-prime-constructor.json",
+          "sha256": "56e48bee8efe8944e2bb75a5de62f4d88343755fa16e6f6ef2acb27558cb0330",
+          "bytes": 744,
+          "tracked_in_local_index": true
+        }
+      ]
+    },
+    {
+      "id": "polynomial-entry-prime",
+      "title": "Polynomial-time entries for the adaptive prime constructor",
+      "depends_on": [
+        "width-sensitive-prime",
+        "observable-boundary"
+      ],
+      "freeze_status": "frozen; independent mathematical review completed",
+      "checker_command": [
+        "python",
+        "tools/check_polynomial_entry_prime_constructor.py",
+        "--output",
+        "evidence/polynomial-entry-prime-constructor.json"
+      ],
+      "files": [
+        {
+          "path": "research/polynomial-entry-prime-constructor.md",
+          "sha256": "d4d6831df9efdedb58c89d5708d2f2b34f4580e3c04688719c0a7227fa462b18",
+          "bytes": 7788,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "tools/check_polynomial_entry_prime_constructor.py",
+          "sha256": "00db6fa5f231906fa1f1a517d218ed16e5d7ae7b053c8393abc4b32babaee477",
+          "bytes": 6804,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "evidence/polynomial-entry-prime-constructor.json",
+          "sha256": "86311d1e3e2a2c5350463faa1414154d343b7b5ae7f637c2c0ce0298cafc761b",
+          "bytes": 1447,
+          "tracked_in_local_index": true
+        }
+      ]
+    },
+    {
+      "id": "rough-observable",
+      "title": "Rough inputs make every local operand directly observable",
+      "depends_on": [
+        "polynomial-entry-prime"
+      ],
+      "freeze_status": "frozen; independent mathematical review completed",
+      "checker_command": [
+        "python",
+        "tools/check_rough_observable_factor_constructor.py",
+        "--output",
+        "evidence/rough-observable-factor-constructor.json"
+      ],
+      "files": [
+        {
+          "path": "research/rough-observable-factor-constructor.md",
+          "sha256": "a5383979c0644e4536670686fcade0343af2b2d825e75f69b073f4de45fbc4de",
+          "bytes": 9382,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "tools/check_rough_observable_factor_constructor.py",
+          "sha256": "5d4d071d18f40603bc898e2f2c3405142b9483da20412e18db1069166c487f5c",
+          "bytes": 7513,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "evidence/rough-observable-factor-constructor.json",
+          "sha256": "4487ac06876155e9c503222421cc827b6188fd28baf379ad0b2a57d18bdc36ec",
+          "bytes": 738,
+          "tracked_in_local_index": true
+        }
+      ]
+    },
+    {
+      "id": "prime-root-field",
+      "title": "A prescribed binary subfield and a primitive prime-order root",
+      "depends_on": [
+        "prime-boundary"
+      ],
+      "freeze_status": "frozen; independent mathematical review completed",
+      "checker_command": [
+        "python",
+        "tools/check_prime_root_field_construction.py",
+        "--output",
+        "evidence/prime-root-field-construction.json"
+      ],
+      "files": [
+        {
+          "path": "research/prime-root-field-construction.md",
+          "sha256": "dce6846baaddac10a53d5e4c90e996590b241880b87bbbdc3bddb44f65a2c23b",
+          "bytes": 7526,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "tools/check_prime_root_field_construction.py",
+          "sha256": "f8cd2734cb7c3fc3f1a7e16d6b4c8cae27fac4396068f477e90001f725e90816",
+          "bytes": 7055,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "evidence/prime-root-field-construction.json",
+          "sha256": "997c00a53de4bf23dd387f493878d1bc75a8922970cd585241cce5b8aeaf0bac",
+          "bytes": 10506,
+          "tracked_in_local_index": true
+        }
+      ]
+    },
+    {
+      "id": "frobenius-rational-trace",
+      "title": "Exact contraction of a Frobenius rational star",
+      "depends_on": [
+        "weighted-dyadic-carry"
+      ],
+      "freeze_status": "frozen; independent mathematical review completed",
+      "checker_command": [
+        "python",
+        "tools/check_frobenius_rational_trace.py",
+        "--output",
+        "evidence/frobenius-rational-trace.json"
+      ],
+      "files": [
+        {
+          "path": "research/frobenius-rational-trace-contraction.md",
+          "sha256": "652c0a255971d693452af43777d8f6a3518c19efb950d66c27097cc0413a1d77",
+          "bytes": 12475,
+          "tracked_in_local_index": false
+        },
+        {
+          "path": "tools/check_frobenius_rational_trace.py",
+          "sha256": "d5cdf093a71fa6f3528b58359d8bb5307e94972aab12642d6818d45d1398c1f3",
+          "bytes": 15069,
+          "tracked_in_local_index": false
+        },
+        {
+          "path": "evidence/frobenius-rational-trace.json",
+          "sha256": "9635b90c775b5dc8248f28d974f9a388b00bbca3ada9df0a945af5ed48059fa3",
+          "bytes": 1560,
+          "tracked_in_local_index": false
+        }
+      ]
+    },
+    {
+      "id": "relative-frobenius-trace",
+      "title": "Summing relative Frobenius factors by a vector of carries",
+      "depends_on": [
+        "frobenius-rational-trace"
+      ],
+      "freeze_status": "frozen; independent mathematical review completed",
+      "checker_command": [
+        "python",
+        "tools/check_relative_frobenius_trace.py",
+        "--output",
+        "evidence/relative-frobenius-trace.json"
+      ],
+      "files": [
+        {
+          "path": "research/relative-frobenius-trace-contraction.md",
+          "sha256": "1fca509d79c52daa71b33a968a2408fde99e47a6796a3796770583f5822a4e84",
+          "bytes": 9163,
+          "tracked_in_local_index": false
+        },
+        {
+          "path": "tools/check_relative_frobenius_trace.py",
+          "sha256": "7038d8ab1255f952b4c41aa4a44557740159b354354ebbba5068728f275d35e6",
+          "bytes": 11121,
+          "tracked_in_local_index": false
+        },
+        {
+          "path": "evidence/relative-frobenius-trace.json",
+          "sha256": "ad533a55d7a9d3074044059fe71658aa76220ef4b88e3b2c4c44e6aa2324fc6c",
+          "bytes": 1357,
+          "tracked_in_local_index": false
+        }
+      ]
+    },
+    {
+      "id": "fermat-torus",
+      "title": "A division-free contraction for Fermat-torus dyadic boxes",
+      "depends_on": [
+        "frobenius-rational-trace"
+      ],
+      "freeze_status": "frozen; independent mathematical review completed",
+      "checker_command": [
+        "python",
+        "tools/check_fermat_torus_binomials.py",
+        "--output",
+        "evidence/fermat-torus-binomial-contraction.json"
+      ],
+      "files": [
+        {
+          "path": "research/fermat-torus-binomial-contraction.md",
+          "sha256": "f1fe1d4172800fe8c2ed24ab650d9836b06f774c5f51d4cf3ced5f0c8e6ce75f",
+          "bytes": 8265,
+          "tracked_in_local_index": false
+        },
+        {
+          "path": "tools/check_fermat_torus_binomials.py",
+          "sha256": "489882ed116892013be13d62c0151a724084fad20101c6c3fc3b9fe5c1b01bbd",
+          "bytes": 8064,
+          "tracked_in_local_index": false
+        },
+        {
+          "path": "tools/fermat_torus_binomial_contraction.py",
+          "sha256": "e802013431c9251ed3fbccfcfeb6da2c17a16b46170402fa98f7cb5d60265380",
+          "bytes": 3920,
+          "tracked_in_local_index": false
+        },
+        {
+          "path": "evidence/fermat-torus-binomial-contraction.json",
+          "sha256": "5a13e9b400c79e2fc7b8d0b843ee80cef9b7bf6327ecf6cc525b99ef8ccb9796",
+          "bytes": 1760,
+          "tracked_in_local_index": false
+        }
+      ]
+    },
+    {
+      "id": "frobenius-infinity-correction",
+      "title": "Remove the degree restriction from the Frobenius rational-star trace",
+      "depends_on": [
+        "frobenius-rational-trace",
+        "relative-frobenius-trace"
+      ],
+      "freeze_status": "frozen; independent mathematical review completed",
+      "checker_command": [
+        "python",
+        "tools/check_frobenius_trace_infinity.py",
+        "--output",
+        "evidence/frobenius-trace-infinity-correction.json"
+      ],
+      "files": [
+        {
+          "path": "research/frobenius-trace-infinity-correction.md",
+          "sha256": "1b42a4a4423ae4ff8c96c936af2a60711d8f6e4845cabc738dce0487da81c052",
+          "bytes": 8300,
+          "tracked_in_local_index": false
+        },
+        {
+          "path": "tools/check_frobenius_trace_infinity.py",
+          "sha256": "d4f8e340b773ae29b44c6d1cf97e25bdb8e97b88b66cf6de4a969da57cb6faa3",
+          "bytes": 10317,
+          "tracked_in_local_index": false
+        },
+        {
+          "path": "tools/frobenius_trace_infinity_correction.py",
+          "sha256": "d95a321c5a0d5459dd68121b83c8d5b35e07997d67edc346c62d6b3f6e198bdd",
+          "bytes": 6083,
+          "tracked_in_local_index": false
+        },
+        {
+          "path": "evidence/frobenius-trace-infinity-correction.json",
+          "sha256": "12f0db87abec27f55959a7cf4f78896ca26df6294af096d06e109e3905d38f79",
+          "bytes": 2629,
+          "tracked_in_local_index": false
+        }
+      ]
+    },
+    {
+      "id": "semisimple-cyclic",
+      "title": "Zero-safe box contraction in the cyclic recovery algebra",
+      "depends_on": [
+        "rough-observable",
+        "prime-root-field",
+        "relative-frobenius-trace",
+        "fermat-torus",
+        "frobenius-infinity-correction"
+      ],
+      "freeze_status": "frozen; independent mathematical review completed",
+      "checker_command": [
+        "python",
+        "tools/check_semisimple_cyclic_box_contraction.py",
+        "--output",
+        "evidence/semisimple-cyclic-box-contraction.json"
+      ],
+      "files": [
+        {
+          "path": "research/semisimple-cyclic-box-contraction.md",
+          "sha256": "a2ac8168c3ab3822a28cf4d0ab2f500db285be4384ce1d5891664082478c7d9d",
+          "bytes": 6727,
+          "tracked_in_local_index": false
+        },
+        {
+          "path": "tools/check_semisimple_cyclic_box_contraction.py",
+          "sha256": "44ea63e79f597a8835d9e35bac94c0ac07d680c664ef529b04e6fec22e68f55e",
+          "bytes": 6229,
+          "tracked_in_local_index": false
+        },
+        {
+          "path": "evidence/semisimple-cyclic-box-contraction.json",
+          "sha256": "a9ff92ce4b863c50139622c65bbcb92a2a92d0d08398e304b888174f1f8acacc",
+          "bytes": 1409,
+          "tracked_in_local_index": false
+        }
+      ]
+    },
+    {
+      "id": "root-worker-archive",
+      "title": "Completed root-worker searches and resumed physical-frame runs",
+      "depends_on": [],
+      "freeze_status": "frozen; independent scope/provenance review and hardened full replay passed",
+      "checker_command": [
+        "python",
+        "tools/checkpoint_root_worker_searches.py"
+      ],
+      "files": [
+        {
+          "path": "research/root-worker-search-checkpoint.md",
+          "sha256": "168fe925f8b624145a6e9d0bdd8543060d985e9f563bab464fd168de8905a60c",
+          "bytes": 7531,
+          "tracked_in_local_index": false
+        },
+        {
+          "path": "tools/checkpoint_root_worker_searches.py",
+          "sha256": "52f781bf956d45d426ae2a24f79ef698e3e3806caa57678f75a019c905073c07",
+          "bytes": 25282,
+          "tracked_in_local_index": false
+        },
+        {
+          "path": "evidence/root-worker-search-archive.json.gz",
+          "sha256": "f3dcd67657f3de2242ef6d438e9412ca14da517ff9683435a9063dc61a47676a",
+          "bytes": 1064172,
+          "tracked_in_local_index": false
+        },
+        {
+          "path": "evidence/root-worker-search-replay.json",
+          "sha256": "71be3e939b33ad760b813e13774c1bcdefc9e924a1199a8163748cb39202a8fc",
+          "bytes": 61180,
+          "tracked_in_local_index": false
+        },
+        {
+          "path": "tools/affine_place_profile_oracle.py",
+          "sha256": "4d65e6ac7adc6d6d2cb5935b5f89d5b39b4ce2c09150f1f90ac814561d5eff90",
+          "bytes": 4490,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "tools/asymmetric_crossing_pressure.py",
+          "sha256": "de017ff2d5c352505aa2b3ec9a2541f8fb4db0bdd2e70b3ec74de91c4713ca42",
+          "bytes": 4990,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "tools/continue_physical_frame_search.py",
+          "sha256": "3f66b936df37db5f3b595a1db62fcb319a575f5a4d032aebf7e289963650863a",
+          "bytes": 11701,
+          "tracked_in_local_index": false
+        },
+        {
+          "path": "tools/dense_coupled_reflection_frames.py",
+          "sha256": "ce0b2dcc390a4c7f1a7fdaf88016132b0f6fca70b7b96406b92792420aeeebe0",
+          "bytes": 9705,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "tools/full_alphabet_two_cut_lattices.py",
+          "sha256": "cbc67b9e3f4f422a34e1474e0dc02eba9c741b3b7b836b315123d061571f0caf",
+          "bytes": 11453,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "tools/laurent_series_coupled_frames.py",
+          "sha256": "7fdcab4e01306cc957b305c1e404a73991adaef0e57f800d3de6c652dbbf5887",
+          "bytes": 6151,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "tools/native_matrix_smith_f4.cpp",
+          "sha256": "5ec995cd04563c2fa99b69afd71bf476d5ca885f1f90377490c30e5a1a55f330",
+          "bytes": 1572,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "tools/native_matrix_smith_f4.py",
+          "sha256": "c08da20f1938a371b438e32fbc6a8f6766b48c2cfee5bcd1c956ce137dc70203",
+          "bytes": 5921,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "tools/native_rectangular_smith_f4.cpp",
+          "sha256": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6",
+          "bytes": 13518,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "tools/native_rectangular_smith_f4.py",
+          "sha256": "5c96128e3713138a08752c22036154cb65983a0b47ca66aa2ca18949d765ce4a",
+          "bytes": 10360,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "tools/physical_polynomial_frames.py",
+          "sha256": "168034f78dd81eb19b30868f79ad003c144ece51bfb90b7b1a865c408ee65e52",
+          "bytes": 2864,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "tools/physical_split_crossings.py",
+          "sha256": "f80920838d10cd0ad8d907bd671a10795749d830cce256399661d959ad40efb8",
+          "bytes": 8309,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "tools/reflection_dual_rail_gaussian.py",
+          "sha256": "6d4780f02b9479d2473c823f74c4749f47e1db0bd32e5318bd601bdd51010a38",
+          "bytes": 4819,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "tools/reflection_laurent_physical_frames.py",
+          "sha256": "e4396ed1a78303893adce6a4f931d8a1866f79ae09fc9f8b0ac6aea164352563",
+          "bytes": 13211,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "tools/search_affine_coupled_reflection_frames.py",
+          "sha256": "bf4d360a7da1554e03858f1876d231fcb25f7e78f3abb5629e623d64d87481c6",
+          "bytes": 11544,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "tools/search_affine_hasse_rank_targets.py",
+          "sha256": "2ebc863bddd75834db1722ecc561b9e0773f4cfb53771b6df8c605b8a7c57984",
+          "bytes": 11325,
+          "tracked_in_local_index": false
+        },
+        {
+          "path": "tools/search_asymmetric_physical_bases.py",
+          "sha256": "f25222f1152c8c72604c8937ca2a3fecb65a7ecdeb0c35eb61a76a82e6136682",
+          "bytes": 7727,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "tools/search_dense_affine_rank_targets.py",
+          "sha256": "ef08bf9c3815927992fb56d3cee4e874d56ab59730e4915f741cde004a827986",
+          "bytes": 9505,
+          "tracked_in_local_index": false
+        },
+        {
+          "path": "tools/search_dense_coupled_reflection_frames.py",
+          "sha256": "525d26e6f931834d8cb661f506f48698e94da1e3b0c1301f8d0a26d36df3f776",
+          "bytes": 12455,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "tools/search_filtered_laurent_series16.py",
+          "sha256": "ceff4bb16914a6b15f8d340dd7c3749bf0f9cfca9a4d8742673607c605905473",
+          "bytes": 9931,
+          "tracked_in_local_index": false
+        },
+        {
+          "path": "tools/search_full_alphabet_two_cut_lattices.py",
+          "sha256": "4bfaa5f4281e6f934e0aeb4811bd74a8660c1ca767fd1130bbe79f9191b43d67",
+          "bytes": 8218,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "tools/search_fused_mixed_weighted.py",
+          "sha256": "f8cd9699a7154e9b3a625b6e3d169468d656422d7dcdfc0ccdb374e80187af9b",
+          "bytes": 16313,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "tools/search_physical_code_gauges.py",
+          "sha256": "71e1b87a45a9b2551546b9671b07e8ebf9b6d9531bfb927c4c8ed2a03c6bd422",
+          "bytes": 11378,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "tools/search_physical_polynomial_frames.py",
+          "sha256": "eae9ab7aaa79ba4be27730d01044654f8d002f78ebaac492f573625a5a76782a",
+          "bytes": 10003,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "tools/search_reflection16_local_bases.py",
+          "sha256": "f2a4d57697071e04a5cad0f1e89ad1eeb132e22ac5134810e0cf4509321c6861",
+          "bytes": 9753,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "tools/search_reflection4_coupled_frames.py",
+          "sha256": "ceec63c6e0d19161336347cef2f5c7d530a6529a95ffc08c1302e3deb94966fe",
+          "bytes": 9228,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "tools/search_reflection4_square_zero_frames.py",
+          "sha256": "29bb8ef25574293bae8dca80f76d7b22c075e2fd4f0d03c64ee6316e2919d927",
+          "bytes": 10040,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "tools/search_reflection_independent_charges.py",
+          "sha256": "881a1f62b21a37175ef7089ca1b1264c8737e96e63dba617a18826ba01350c2b",
+          "bytes": 9238,
+          "tracked_in_local_index": false
+        },
+        {
+          "path": "tools/search_reflection_physical_bases.py",
+          "sha256": "33234abfb35605ca5eefabe24dc90f27ca0f230efb8eb37d694a1616eda7f424",
+          "bytes": 13547,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "tools/search_truncated_affine_lattices.py",
+          "sha256": "70c186a3ac09e043c52059806ae4ca09b6c209ac04cf15e5513b7772d798e38e",
+          "bytes": 7998,
+          "tracked_in_local_index": false
+        },
+        {
+          "path": "tools/solve_dense_affine_scalar_content.py",
+          "sha256": "05fb51d3917bd3ddbe9b1c1168d674648cc4f593f86b8b76a1a3dfe6ff520514",
+          "bytes": 5845,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "tools/solve_dense_affine_targets.py",
+          "sha256": "347c864a47d29f9017dbbce1a21076ba21c3445c05427247d8c048594674c7b3",
+          "bytes": 7332,
+          "tracked_in_local_index": false
+        },
+        {
+          "path": "tools/square_zero_coupled_reflection_frames.py",
+          "sha256": "69e1e72251b3a1d7c51e710de717dee73079e2a7c878a1cac4abff0d43d990bf",
+          "bytes": 8965,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "tools/truncate_reflection_crossings.py",
+          "sha256": "38bd6cd85ffcb9035bb7fba0301c39d43cdbe7ad52e23cc227fb236a4d7ad67d",
+          "bytes": 4047,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "tools/weighted_smith_oracle_f4.py",
+          "sha256": "d277f46caa98dab48d243af64c18e42e09e917bf1e862057a55cb35f74a6d572",
+          "bytes": 5622,
+          "tracked_in_local_index": true
+        },
+        {
+          "path": "tools/weyl_lattice_filter_synthesis.py",
+          "sha256": "5aef949234535ddb72e9f3d5560557bb9f0e06aeffd7b59b82fd5def6aa6c284",
+          "bytes": 17418,
+          "tracked_in_local_index": true
+        }
+      ],
+      "external_input_dependencies": [
+        {
+          "bytes": 1430224,
+          "path": "evidence/companion-affine-polynomial-span.json.gz",
+          "sha256": "b42acea8a5ff1f5fa4df883f1c1164e97add5713bec6b98d716dc80f8eb64411"
+        },
+        {
+          "bytes": 89117,
+          "path": "evidence/dense-affine-scalar-content.json",
+          "sha256": "b0e393c81d72752d3bc6f4033d0b9a58f77ae25c48a281aa047d6d694f3e5eda"
+        },
+        {
+          "bytes": 2130961,
+          "path": "evidence/dense-rank-one-coupled-frames.json",
+          "sha256": "1e6b46b06c86500f0d9ed061383e02722d707f7e5f95c243c3ea340b1db6c09c"
+        }
+      ],
+      "source_scope": "Recorded frozen worker source dependencies are listed explicitly, including already tracked files. Original raw physical logs are summarized in the gzip archive and are not required for replay."
+    }
+  ],
+  "shared_checker_dependencies": [],
+  "publication_files_in_order": [
+    "research/factoring-network-structure.md",
+    "tools/check_factoring_network_structure.py",
+    "evidence/factoring-network-structure.json",
+    "research/factoring-primitive-recipient-codec.md",
+    "tools/check_factoring_primitive_recipients.py",
+    "evidence/factoring-primitive-recipients.json",
+    "research/factoring-recipient-rank-envelope.md",
+    "tools/check_factoring_recipient_rank_envelope.py",
+    "evidence/factoring-recipient-rank-envelope.json",
+    "research/adaptive-transform-constructor.md",
+    "tools/check_adaptive_transform_constructor.py",
+    "evidence/adaptive-transform-constructor.json",
+    "research/operand-length-transform-constructor.md",
+    "tools/check_operand_length_transform.py",
+    "evidence/operand-length-transform.json",
+    "research/carry-fourier-elimination.md",
+    "tools/check_carry_fourier_elimination.py",
+    "evidence/carry-fourier-elimination.json",
+    "research/frobenius-compatible-sparse-recovery.md",
+    "tools/check_frobenius_sparse_recovery.py",
+    "evidence/frobenius-sparse-recovery.json",
+    "research/weighted-dyadic-carry-contraction.md",
+    "tools/check_weighted_dyadic_carry.py",
+    "evidence/weighted-dyadic-carry.json",
+    "research/constant-field-carry-weights.md",
+    "tools/check_constant_field_carry_weights.py",
+    "evidence/constant-field-carry-weights.json",
+    "research/first-jet-carry-weights.md",
+    "tools/check_first_jet_carry_weights.py",
+    "evidence/first-jet-carry-weights.json",
+    "research/multiplicative-monoid-blocks.md",
+    "tools/check_multiplicative_monoid_blocks.py",
+    "evidence/multiplicative-monoid-blocks.json",
+    "research/unsplit-monoid-contraction.md",
+    "tools/check_unsplit_monoid_contraction.py",
+    "evidence/unsplit-monoid-contraction.json",
+    "research/observable-boundary-constructor.md",
+    "tools/check_observable_boundary_constructor.py",
+    "evidence/observable-boundary-constructor.json",
+    "research/lattice-decoded-boundary-constructor.md",
+    "tools/check_lattice_boundary_decoder.py",
+    "evidence/lattice-boundary-decoder.json",
+    "research/power-two-progression-dyadic-prime.md",
+    "tools/check_power_two_progression_dyadic_prime.py",
+    "evidence/power-two-progression-dyadic-prime.json",
+    "research/prime-transform-boundary-constructor.md",
+    "tools/check_prime_transform_boundary_constructor.py",
+    "evidence/prime-transform-boundary-constructor.json",
+    "research/width-sensitive-prime-constructor.md",
+    "tools/check_width_sensitive_prime_constructor.py",
+    "evidence/width-sensitive-prime-constructor.json",
+    "research/polynomial-entry-prime-constructor.md",
+    "tools/check_polynomial_entry_prime_constructor.py",
+    "evidence/polynomial-entry-prime-constructor.json",
+    "research/rough-observable-factor-constructor.md",
+    "tools/check_rough_observable_factor_constructor.py",
+    "evidence/rough-observable-factor-constructor.json",
+    "research/prime-root-field-construction.md",
+    "tools/check_prime_root_field_construction.py",
+    "evidence/prime-root-field-construction.json",
+    "research/frobenius-rational-trace-contraction.md",
+    "tools/check_frobenius_rational_trace.py",
+    "evidence/frobenius-rational-trace.json",
+    "research/relative-frobenius-trace-contraction.md",
+    "tools/check_relative_frobenius_trace.py",
+    "evidence/relative-frobenius-trace.json",
+    "research/fermat-torus-binomial-contraction.md",
+    "tools/check_fermat_torus_binomials.py",
+    "tools/fermat_torus_binomial_contraction.py",
+    "evidence/fermat-torus-binomial-contraction.json",
+    "research/frobenius-trace-infinity-correction.md",
+    "tools/check_frobenius_trace_infinity.py",
+    "tools/frobenius_trace_infinity_correction.py",
+    "evidence/frobenius-trace-infinity-correction.json",
+    "research/semisimple-cyclic-box-contraction.md",
+    "tools/check_semisimple_cyclic_box_contraction.py",
+    "evidence/semisimple-cyclic-box-contraction.json",
+    "research/root-worker-search-checkpoint.md",
+    "tools/checkpoint_root_worker_searches.py",
+    "evidence/root-worker-search-archive.json.gz",
+    "evidence/root-worker-search-replay.json",
+    "tools/affine_place_profile_oracle.py",
+    "tools/asymmetric_crossing_pressure.py",
+    "tools/continue_physical_frame_search.py",
+    "tools/dense_coupled_reflection_frames.py",
+    "tools/full_alphabet_two_cut_lattices.py",
+    "tools/laurent_series_coupled_frames.py",
+    "tools/native_matrix_smith_f4.cpp",
+    "tools/native_matrix_smith_f4.py",
+    "tools/native_rectangular_smith_f4.cpp",
+    "tools/native_rectangular_smith_f4.py",
+    "tools/physical_polynomial_frames.py",
+    "tools/physical_split_crossings.py",
+    "tools/reflection_dual_rail_gaussian.py",
+    "tools/reflection_laurent_physical_frames.py",
+    "tools/search_affine_coupled_reflection_frames.py",
+    "tools/search_affine_hasse_rank_targets.py",
+    "tools/search_asymmetric_physical_bases.py",
+    "tools/search_dense_affine_rank_targets.py",
+    "tools/search_dense_coupled_reflection_frames.py",
+    "tools/search_filtered_laurent_series16.py",
+    "tools/search_full_alphabet_two_cut_lattices.py",
+    "tools/search_fused_mixed_weighted.py",
+    "tools/search_physical_code_gauges.py",
+    "tools/search_physical_polynomial_frames.py",
+    "tools/search_reflection16_local_bases.py",
+    "tools/search_reflection4_coupled_frames.py",
+    "tools/search_reflection4_square_zero_frames.py",
+    "tools/search_reflection_independent_charges.py",
+    "tools/search_reflection_physical_bases.py",
+    "tools/search_truncated_affine_lattices.py",
+    "tools/solve_dense_affine_scalar_content.py",
+    "tools/solve_dense_affine_targets.py",
+    "tools/square_zero_coupled_reflection_frames.py",
+    "tools/truncate_reflection_crossings.py",
+    "tools/weighted_smith_oracle_f4.py",
+    "tools/weyl_lattice_filter_synthesis.py"
+  ],
+  "scope_cautions": [
+    "The relative-linearized contraction retains (s+2)^{O(J)} arithmetic operations.",
+    "Rough-input support transfer is attributed to prior PR #31; the new application enforces direct local operand observability.",
+    "Local contraction and constructor improvements do not by themselves establish alpha greater than one half."
+  ],
+  "verification": "File presence, byte hashes, and topological dependency ordering verified at manifest creation. Checker evidence records prior successful runs; this manifest does not claim those runs were repeated.",
+  "arithmetic_package_count": 25,
+  "arithmetic_package_files": 77
+}

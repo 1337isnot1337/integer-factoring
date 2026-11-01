@@ -1,0 +1,430 @@
+{
+  "status": "passed",
+  "scope": "Exact scalar CRT and full tensor endpoint, derivative, traces, and seventh-order Bell jets; no pressure or optimality claim.",
+  "scalar_Hasse_controls": 64,
+  "full_tensor_cases": 32,
+  "independent_endpoint_entries": 8192,
+  "independent_derivative_entries": 8192,
+  "independent_finite_Hasse_entries": 114688,
+  "independent_polynomial_traces": 1024,
+  "constant_trace_rank": 31,
+  "carrier_affine_dimension": 225,
+  "matrices": {
+    "identity": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "source_Bell": [
+      [
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        1
+      ]
+    ],
+    "source_Bell_inverse": [
+      [
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0
+      ]
+    ],
+    "Pascal": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "evaluation": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        3,
+        1
+      ],
+      [
+        1,
+        3,
+        2,
+        1
+      ]
+    ],
+    "alternating": [
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ]
+    ],
+    "nonsymmetric": [
+      [
+        1,
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ]
+  },
+  "cases": [
+    {
+      "row_matrix": "identity",
+      "column_matrix": "identity",
+      "carrier": "row",
+      "tensor_sha256": "ca010a5089b597ab3f2766c7b0006a0560c6ef5b052817349715682c7326d6cc",
+      "degree": 16
+    },
+    {
+      "row_matrix": "identity",
+      "column_matrix": "identity",
+      "carrier": "column",
+      "tensor_sha256": "0e288e9f958031cd14e6b90fd2802c97e33a8b89d135885f178b6369132d1a85",
+      "degree": 16
+    },
+    {
+      "row_matrix": "identity",
+      "column_matrix": "identity",
+      "carrier": "minimal",
+      "tensor_sha256": "7674e0c89d8c351ab36571bbd13f12138ecfc704afc14e17bac09103c8f4f501",
+      "degree": 16
+    },
+    {
+      "row_matrix": "identity",
+      "column_matrix": "identity",
+      "carrier": "perturbed",
+      "tensor_sha256": "be9f5768275f5bd7e1112ca68f5507e5d7f7849cd665661579072afd9d5e33aa",
+      "degree": 16
+    },
+    {
+      "row_matrix": "source_Bell",
+      "column_matrix": "identity",
+      "carrier": "row",
+      "tensor_sha256": "4a667f41ac9ca522b05f572278b7a31cd2336f74d10597070cfff704a33793ba",
+      "degree": 16
+    },
+    {
+      "row_matrix": "source_Bell",
+      "column_matrix": "identity",
+      "carrier": "column",
+      "tensor_sha256": "d480e06e003581b749b17c35c0bf813a42e0b1b06c930ff89fde82dd8f4d9de6",
+      "degree": 16
+    },
+    {
+      "row_matrix": "source_Bell",
+      "column_matrix": "identity",
+      "carrier": "minimal",
+      "tensor_sha256": "01386abe9a8adfc0503d1661be2bfdcd535a4760082ecf3a9119d04bcad422d9",
+      "degree": 16
+    },
+    {
+      "row_matrix": "source_Bell",
+      "column_matrix": "identity",
+      "carrier": "perturbed",
+      "tensor_sha256": "2cfb55a0270e669c055f167e8e78516a71c4892d991dd06d460af9af3ef0381d",
+      "degree": 16
+    },
+    {
+      "row_matrix": "identity",
+      "column_matrix": "source_Bell",
+      "carrier": "row",
+      "tensor_sha256": "1e595555aeeb120d01a73b37baa64c87cbcc01d8faa0ad103ac0a4bbfa2279ec",
+      "degree": 16
+    },
+    {
+      "row_matrix": "identity",
+      "column_matrix": "source_Bell",
+      "carrier": "column",
+      "tensor_sha256": "2576727beb09f74f005b764c5557bca51075f18c765bbf2d4d723d8658bfa981",
+      "degree": 16
+    },
+    {
+      "row_matrix": "identity",
+      "column_matrix": "source_Bell",
+      "carrier": "minimal",
+      "tensor_sha256": "d58452aab997778171a7dbca5926518f358ae066e79dbaf6d7680496dba35637",
+      "degree": 16
+    },
+    {
+      "row_matrix": "identity",
+      "column_matrix": "source_Bell",
+      "carrier": "perturbed",
+      "tensor_sha256": "23171e353d3b8314e8c3f4df521f5e3f689df6abb2605fdbe24d06021823539b",
+      "degree": 16
+    },
+    {
+      "row_matrix": "source_Bell",
+      "column_matrix": "source_Bell_inverse",
+      "carrier": "row",
+      "tensor_sha256": "8eaee0216f751d2cfd334f55db133a520ce2f8d3c94677885637e258eae64b07",
+      "degree": 16
+    },
+    {
+      "row_matrix": "source_Bell",
+      "column_matrix": "source_Bell_inverse",
+      "carrier": "column",
+      "tensor_sha256": "b252c40247091072d24c110118daf016ab8836d59e92aa6b364dba83da9ded6e",
+      "degree": 16
+    },
+    {
+      "row_matrix": "source_Bell",
+      "column_matrix": "source_Bell_inverse",
+      "carrier": "minimal",
+      "tensor_sha256": "bc34a42558acf4e32a1622e28d6846292fe52dc261795441368f36d2838daa1b",
+      "degree": 16
+    },
+    {
+      "row_matrix": "source_Bell",
+      "column_matrix": "source_Bell_inverse",
+      "carrier": "perturbed",
+      "tensor_sha256": "67bbe2bacec0e40721f34b341a001ed5fe15076a3aa7c6cfb8a005f51cbae074",
+      "degree": 16
+    },
+    {
+      "row_matrix": "alternating",
+      "column_matrix": "identity",
+      "carrier": "row",
+      "tensor_sha256": "b86095802e89d1b1c681eed8f3b33e1aeeac7569a359052184cb13a2890ef9e5",
+      "degree": 16
+    },
+    {
+      "row_matrix": "alternating",
+      "column_matrix": "identity",
+      "carrier": "column",
+      "tensor_sha256": "9bad1902012de7d272d3b82df0e605d2a556e78700306a5d0b82de1da8e01c50",
+      "degree": 16
+    },
+    {
+      "row_matrix": "alternating",
+      "column_matrix": "identity",
+      "carrier": "minimal",
+      "tensor_sha256": "37ae6dc8d0c7c27388819b15b29744f75fb5d3c6c6087aa3402275080bbff76a",
+      "degree": 16
+    },
+    {
+      "row_matrix": "alternating",
+      "column_matrix": "identity",
+      "carrier": "perturbed",
+      "tensor_sha256": "ba2a44815366e2ba70391492faf14a89c71af89c8d98a5236e29c9568c58e68d",
+      "degree": 16
+    },
+    {
+      "row_matrix": "nonsymmetric",
+      "column_matrix": "identity",
+      "carrier": "row",
+      "tensor_sha256": "2a15a26dc95585218cad82981a7931e437f99f5c46d5bcf453cb55b864e60323",
+      "degree": 16
+    },
+    {
+      "row_matrix": "nonsymmetric",
+      "column_matrix": "identity",
+      "carrier": "column",
+      "tensor_sha256": "bd40b5a75cbd4721cc678b9a0935d4c129cbf35d162ce31757063ccd6ae2eb4b",
+      "degree": 16
+    },
+    {
+      "row_matrix": "nonsymmetric",
+      "column_matrix": "identity",
+      "carrier": "minimal",
+      "tensor_sha256": "de0250af5ceed08852d838c59791c37bddc7c6acc44c75c82c14755b210de7a8",
+      "degree": 16
+    },
+    {
+      "row_matrix": "nonsymmetric",
+      "column_matrix": "identity",
+      "carrier": "perturbed",
+      "tensor_sha256": "df9cd37b04ad2f6079bf40fe1c12fa4243140735ad93ef737e62e5c68194dc97",
+      "degree": 16
+    },
+    {
+      "row_matrix": "nonsymmetric",
+      "column_matrix": "alternating",
+      "carrier": "row",
+      "tensor_sha256": "9aa3f5eff9dbce11d5ca10cac489504672c053773f1c15f45f6f06013eb33b87",
+      "degree": 16
+    },
+    {
+      "row_matrix": "nonsymmetric",
+      "column_matrix": "alternating",
+      "carrier": "column",
+      "tensor_sha256": "dd5e9d7a90e14053ee0a636b94ae028f93cdcc7c402e7901ce0eb019d2ccb6fb",
+      "degree": 16
+    },
+    {
+      "row_matrix": "nonsymmetric",
+      "column_matrix": "alternating",
+      "carrier": "minimal",
+      "tensor_sha256": "fa914d7611004366d6164e23916fe0bf344281970a0c9419e348fcae6cbfc5d5",
+      "degree": 16
+    },
+    {
+      "row_matrix": "nonsymmetric",
+      "column_matrix": "alternating",
+      "carrier": "perturbed",
+      "tensor_sha256": "57f13a0c3960bdbefaf0d582c3e9a223dc2bb5349a304113ca41da4da2ba5b69",
+      "degree": 16
+    },
+    {
+      "row_matrix": "evaluation",
+      "column_matrix": "Pascal",
+      "carrier": "row",
+      "tensor_sha256": "58979dc27d630c6a36265b557207b3dc7c9bd03dc546b54b7db521593a4a09fc",
+      "degree": 16
+    },
+    {
+      "row_matrix": "evaluation",
+      "column_matrix": "Pascal",
+      "carrier": "column",
+      "tensor_sha256": "0173a6b4dfc333c96243655d8488d1f6b64cfc920ef75013b104f991da2a2d0b",
+      "degree": 16
+    },
+    {
+      "row_matrix": "evaluation",
+      "column_matrix": "Pascal",
+      "carrier": "minimal",
+      "tensor_sha256": "799755b38885fe30dc9f583957e99e31aea2e4c4cf3fce86cab3ec1f2a1e3c6c",
+      "degree": 16
+    },
+    {
+      "row_matrix": "evaluation",
+      "column_matrix": "Pascal",
+      "carrier": "perturbed",
+      "tensor_sha256": "90e5c9e993b8ad906e640b58a9b1b2915cdcadb59e1993fc9cb777f7fef68ed2",
+      "degree": 16
+    }
+  ],
+  "source_sha256": {
+    "check_bell_jet_crt_crossings.py": "2e2b4c5d6d8f94e334c8888688a4159a6cee0b776cbfdccac5310140573df212",
+    "bell_jet_crt_crossings.py": "837b5bd9c5e2fe41cf3b242b42019ea97ff90405d9c9401aeb54f618d08a9b16",
+    "check_dense_coupled_reflection_frames.py": "3ca7c1117cc7c5a36b3da9db567194c29e82d22a0cf7c6fad49bbc220151b178",
+    "entrywise_reflection_constraints.py": "279580457967dae06c02f87dac199c935834f8c8b869fa9fb3c7037a75337e6b",
+    "search_entrywise_reflection_jets.py": "79ff0cd52ee9999153cba7c93043b909f0b0787ae77f73e7658e5f040bd73e59",
+    "screen_affine_finite_places.py": "041c5b4176d3c090f0c9ad0724ef71a99b57dc75256bfb2d203096898959d5d8"
+  }
+}

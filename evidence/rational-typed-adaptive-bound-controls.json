@@ -1,0 +1,1108 @@
+{
+  "status": "pass",
+  "scope": "Exact rational finite rank upper bounds and actual typed reconstruction; no threshold-crossing block.",
+  "source_sha256": {
+    "check_rational_typed_adaptive_bounds.py": "8445b3aa4d6fcdc5a353d1bfa718017475f34f6a423b1e70da4a78688b4823c5",
+    "rational_typed_adaptive_bounds.py": "ca9713916aa8e7b43b089fc2e2646a485646da2a4ee3bbbab76dfcd8f2cafe0c",
+    "finite_typed_adaptive_certificate.py": "1f1e03bc1f7de4a17e57658ff6ba432a9cd07132fe4b331aeef4cdfa72ca0b1c",
+    "check_finite_typed_adaptive_certificate.py": "5f2387538877600c04995ecd4a3a655826989d32ef137119848158f9ea598ae2",
+    "weighted_adaptive_mixed_place.py": "87abd3a7a1486754f54f6b9347e62d9459b0139f9f27633ba21a1bb5150aab6a",
+    "adaptive_mixed_place.py": "5fd35064a2d79e72cf993cd4d251cd95d931295bc2108e9c37fd6400425f7e4f",
+    "check_weighted_adaptive_catalogues.py": "9fbd6812c6a9b64bcd89fcc56712c9c253d0c9ba8d280995ec24213041d51fa8",
+    "check_weighted_multipoint_hermite.py": "8ae62959bdda71f00ea4ac520bad9f24fcf6465eb0aafd30b33c8ae98bcf6da8",
+    "check_ternary_basis_mixed.py": "d9c20891419652d9e5bfd3ccd855cb490e9037734dc91a0e8824634eaf3f2090",
+    "check_multipoint_hermite_crossings.py": "1d3422c882a0e17bd8613065242d6765e74bac2219200d5b1cbab9e6dcaa9fed",
+    "check_mixed_place_hermite.py": "c36c22464da1fda8c3b0016fba21e6e5fd673df17ad3db6bf67d4677ad02cb8c"
+  },
+  "coefficient_upper_bounds": 1824,
+  "translation_invariance_checks": 1824,
+  "positive_free_prefix_boundary": [
+    0,
+    0,
+    0,
+    32,
+    64,
+    128
+  ],
+  "invalid_parameters_rejected": 4,
+  "complete_local_profiles": 24,
+  "actual_piece_cut_ranks": 52,
+  "endpoint_entries": 1960,
+  "typed_cases": [
+    {
+      "type_counts_x": [
+        1,
+        1,
+        0
+      ],
+      "type_counts_y": [
+        0,
+        1,
+        1
+      ],
+      "typed_dimensions": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "actual_pieces": [
+        {
+          "index": 0,
+          "actual_ranks": [
+            1,
+            4
+          ],
+          "bounds": [
+            4,
+            4
+          ]
+        },
+        {
+          "index": 1,
+          "actual_ranks": [
+            3,
+            3
+          ],
+          "bounds": [
+            4,
+            4
+          ]
+        },
+        {
+          "index": 2,
+          "actual_ranks": [
+            3,
+            3
+          ],
+          "bounds": [
+            4,
+            4
+          ]
+        },
+        {
+          "index": 3,
+          "actual_ranks": [
+            0,
+            0
+          ],
+          "bounds": [
+            4,
+            4
+          ]
+        },
+        {
+          "index": 4,
+          "actual_ranks": [
+            0,
+            0
+          ],
+          "bounds": [
+            4,
+            4
+          ]
+        }
+      ],
+      "finite_rational_certificate": {
+        "copies": 2,
+        "seed_degree": 2,
+        "tensor_degree": 4,
+        "type_counts_x": [
+          1,
+          1,
+          0
+        ],
+        "type_counts_y": [
+          0,
+          1,
+          1
+        ],
+        "external_label_counts": [
+          2,
+          2
+        ],
+        "cut_dimension": 4,
+        "rank_pairs": [
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "amplification": {
+          "active_piece_upper_bound": 5,
+          "zero_piece_bounds": 0,
+          "maximum_rank_product": 16,
+          "coarse_base": 400,
+          "square_root_sum_upper_numerator": 368934881474191032320,
+          "square_root_sum_upper_denominator": 18446744073709551616,
+          "rational_sqrt2_lower_bound": [
+            140,
+            99
+          ],
+          "exponent_square_test": true,
+          "coarse_gate_passed": false,
+          "rank_sum_gate_passed": false,
+          "certified_rho_strict_upper_bound_if_passed": [
+            140,
+            198
+          ]
+        },
+        "row_flag": [
+          {
+            "place_index": 0,
+            "order": 0,
+            "gauge_index": 0,
+            "parameter_index": 0,
+            "cost": 4,
+            "prefix_cost": 4
+          },
+          {
+            "place_index": 0,
+            "order": 1,
+            "gauge_index": 0,
+            "parameter_index": 0,
+            "cost": 4,
+            "prefix_cost": 4
+          },
+          {
+            "place_index": 0,
+            "order": 2,
+            "gauge_index": 0,
+            "parameter_index": 0,
+            "cost": 4,
+            "prefix_cost": 4
+          },
+          {
+            "place_index": 0,
+            "order": 3,
+            "gauge_index": 0,
+            "parameter_index": 0,
+            "cost": 4,
+            "prefix_cost": 4
+          },
+          {
+            "place_index": 0,
+            "order": 4,
+            "gauge_index": 0,
+            "parameter_index": 0,
+            "cost": 4,
+            "prefix_cost": 4
+          }
+        ],
+        "column_flag": [
+          {
+            "place_index": 0,
+            "order": 0,
+            "gauge_index": 0,
+            "parameter_index": 0,
+            "cost": 4,
+            "prefix_cost": 4
+          },
+          {
+            "place_index": 0,
+            "order": 1,
+            "gauge_index": 0,
+            "parameter_index": 0,
+            "cost": 4,
+            "prefix_cost": 4
+          },
+          {
+            "place_index": 0,
+            "order": 2,
+            "gauge_index": 0,
+            "parameter_index": 0,
+            "cost": 4,
+            "prefix_cost": 4
+          },
+          {
+            "place_index": 0,
+            "order": 3,
+            "gauge_index": 0,
+            "parameter_index": 0,
+            "cost": 4,
+            "prefix_cost": 4
+          },
+          {
+            "place_index": 0,
+            "order": 4,
+            "gauge_index": 0,
+            "parameter_index": 0,
+            "cost": 4,
+            "prefix_cost": 4
+          }
+        ]
+      }
+    },
+    {
+      "type_counts_x": [
+        1,
+        1,
+        1
+      ],
+      "type_counts_y": [
+        1,
+        1,
+        1
+      ],
+      "typed_dimensions": [
+        6,
+        6,
+        6,
+        6
+      ],
+      "actual_pieces": [
+        {
+          "index": 0,
+          "actual_ranks": [
+            1,
+            36
+          ],
+          "bounds": [
+            36,
+            36
+          ]
+        },
+        {
+          "index": 1,
+          "actual_ranks": [
+            7,
+            28
+          ],
+          "bounds": [
+            36,
+            36
+          ]
+        },
+        {
+          "index": 2,
+          "actual_ranks": [
+            28,
+            28
+          ],
+          "bounds": [
+            36,
+            36
+          ]
+        },
+        {
+          "index": 3,
+          "actual_ranks": [
+            36,
+            8
+          ],
+          "bounds": [
+            36,
+            36
+          ]
+        },
+        {
+          "index": 4,
+          "actual_ranks": [
+            28,
+            7
+          ],
+          "bounds": [
+            36,
+            36
+          ]
+        },
+        {
+          "index": 5,
+          "actual_ranks": [
+            0,
+            0
+          ],
+          "bounds": [
+            36,
+            36
+          ]
+        },
+        {
+          "index": 6,
+          "actual_ranks": [
+            36,
+            1
+          ],
+          "bounds": [
+            36,
+            21
+          ]
+        }
+      ],
+      "finite_rational_certificate": {
+        "copies": 3,
+        "seed_degree": 2,
+        "tensor_degree": 6,
+        "type_counts_x": [
+          1,
+          1,
+          1
+        ],
+        "type_counts_y": [
+          1,
+          1,
+          1
+        ],
+        "external_label_counts": [
+          6,
+          6
+        ],
+        "cut_dimension": 36,
+        "rank_pairs": [
+          [
+            36,
+            36
+          ],
+          [
+            36,
+            36
+          ],
+          [
+            36,
+            36
+          ],
+          [
+            36,
+            36
+          ],
+          [
+            36,
+            36
+          ],
+          [
+            36,
+            36
+          ],
+          [
+            36,
+            21
+          ]
+        ],
+        "amplification": {
+          "active_piece_upper_bound": 7,
+          "zero_piece_bounds": 0,
+          "maximum_rank_product": 1296,
+          "coarse_base": 63504,
+          "square_root_sum_upper_numerator": 4491698326180775578825,
+          "square_root_sum_upper_denominator": 18446744073709551616,
+          "rational_sqrt2_lower_bound": [
+            140,
+            99
+          ],
+          "exponent_square_test": true,
+          "coarse_gate_passed": false,
+          "rank_sum_gate_passed": false,
+          "certified_rho_strict_upper_bound_if_passed": [
+            140,
+            198
+          ]
+        },
+        "row_flag": [
+          {
+            "place_index": 0,
+            "order": 0,
+            "gauge_index": 0,
+            "parameter_index": 0,
+            "cost": 36,
+            "prefix_cost": 36
+          },
+          {
+            "place_index": 0,
+            "order": 1,
+            "gauge_index": 0,
+            "parameter_index": 0,
+            "cost": 36,
+            "prefix_cost": 36
+          },
+          {
+            "place_index": 0,
+            "order": 2,
+            "gauge_index": 0,
+            "parameter_index": 0,
+            "cost": 36,
+            "prefix_cost": 36
+          },
+          {
+            "place_index": 0,
+            "order": 3,
+            "gauge_index": 0,
+            "parameter_index": 0,
+            "cost": 36,
+            "prefix_cost": 36
+          },
+          {
+            "place_index": 0,
+            "order": 4,
+            "gauge_index": 0,
+            "parameter_index": 0,
+            "cost": 36,
+            "prefix_cost": 36
+          },
+          {
+            "place_index": 0,
+            "order": 5,
+            "gauge_index": 0,
+            "parameter_index": 0,
+            "cost": 36,
+            "prefix_cost": 36
+          },
+          {
+            "place_index": 0,
+            "order": 6,
+            "gauge_index": 0,
+            "parameter_index": 0,
+            "cost": 36,
+            "prefix_cost": 36
+          }
+        ],
+        "column_flag": [
+          {
+            "place_index": 0,
+            "order": 0,
+            "gauge_index": 1,
+            "parameter_index": 0,
+            "cost": 21,
+            "prefix_cost": 21
+          },
+          {
+            "place_index": 0,
+            "order": 1,
+            "gauge_index": 0,
+            "parameter_index": 0,
+            "cost": 36,
+            "prefix_cost": 36
+          },
+          {
+            "place_index": 0,
+            "order": 2,
+            "gauge_index": 0,
+            "parameter_index": 0,
+            "cost": 36,
+            "prefix_cost": 36
+          },
+          {
+            "place_index": 0,
+            "order": 3,
+            "gauge_index": 0,
+            "parameter_index": 0,
+            "cost": 36,
+            "prefix_cost": 36
+          },
+          {
+            "place_index": 0,
+            "order": 4,
+            "gauge_index": 0,
+            "parameter_index": 0,
+            "cost": 36,
+            "prefix_cost": 36
+          },
+          {
+            "place_index": 0,
+            "order": 5,
+            "gauge_index": 0,
+            "parameter_index": 0,
+            "cost": 36,
+            "prefix_cost": 36
+          },
+          {
+            "place_index": 0,
+            "order": 6,
+            "gauge_index": 0,
+            "parameter_index": 0,
+            "cost": 36,
+            "prefix_cost": 36
+          }
+        ]
+      }
+    },
+    {
+      "type_counts_x": [
+        2,
+        1
+      ],
+      "type_counts_y": [
+        1,
+        1,
+        1
+      ],
+      "typed_dimensions": [
+        3,
+        6,
+        6,
+        3
+      ],
+      "actual_pieces": [
+        {
+          "index": 0,
+          "actual_ranks": [
+            0,
+            0
+          ],
+          "bounds": [
+            0,
+            18
+          ]
+        },
+        {
+          "index": 1,
+          "actual_ranks": [
+            0,
+            0
+          ],
+          "bounds": [
+            18,
+            18
+          ]
+        },
+        {
+          "index": 2,
+          "actual_ranks": [
+            6,
+            15
+          ],
+          "bounds": [
+            18,
+            18
+          ]
+        },
+        {
+          "index": 3,
+          "actual_ranks": [
+            15,
+            6
+          ],
+          "bounds": [
+            18,
+            18
+          ]
+        },
+        {
+          "index": 4,
+          "actual_ranks": [
+            15,
+            6
+          ],
+          "bounds": [
+            18,
+            18
+          ]
+        },
+        {
+          "index": 5,
+          "actual_ranks": [
+            0,
+            0
+          ],
+          "bounds": [
+            18,
+            18
+          ]
+        },
+        {
+          "index": 6,
+          "actual_ranks": [
+            0,
+            0
+          ],
+          "bounds": [
+            18,
+            18
+          ]
+        }
+      ],
+      "finite_rational_certificate": {
+        "copies": 3,
+        "seed_degree": 2,
+        "tensor_degree": 6,
+        "type_counts_x": [
+          2,
+          1
+        ],
+        "type_counts_y": [
+          1,
+          1,
+          1
+        ],
+        "external_label_counts": [
+          3,
+          6
+        ],
+        "cut_dimension": 18,
+        "rank_pairs": [
+          [
+            0,
+            18
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            18,
+            18
+          ]
+        ],
+        "amplification": {
+          "active_piece_upper_bound": 6,
+          "zero_piece_bounds": 1,
+          "maximum_rank_product": 324,
+          "coarse_base": 11664,
+          "square_root_sum_upper_numerator": 1992248359960631574528,
+          "square_root_sum_upper_denominator": 18446744073709551616,
+          "rational_sqrt2_lower_bound": [
+            140,
+            99
+          ],
+          "exponent_square_test": true,
+          "coarse_gate_passed": false,
+          "rank_sum_gate_passed": false,
+          "certified_rho_strict_upper_bound_if_passed": [
+            140,
+            198
+          ]
+        },
+        "row_flag": [
+          {
+            "place_index": 0,
+            "order": 0,
+            "gauge_index": 1,
+            "parameter_index": 0,
+            "cost": 0,
+            "prefix_cost": 0
+          },
+          {
+            "place_index": 0,
+            "order": 1,
+            "gauge_index": 0,
+            "parameter_index": 0,
+            "cost": 18,
+            "prefix_cost": 18
+          },
+          {
+            "place_index": 0,
+            "order": 2,
+            "gauge_index": 0,
+            "parameter_index": 0,
+            "cost": 18,
+            "prefix_cost": 18
+          },
+          {
+            "place_index": 0,
+            "order": 3,
+            "gauge_index": 0,
+            "parameter_index": 0,
+            "cost": 18,
+            "prefix_cost": 18
+          },
+          {
+            "place_index": 0,
+            "order": 4,
+            "gauge_index": 0,
+            "parameter_index": 0,
+            "cost": 18,
+            "prefix_cost": 18
+          },
+          {
+            "place_index": 0,
+            "order": 5,
+            "gauge_index": 0,
+            "parameter_index": 0,
+            "cost": 18,
+            "prefix_cost": 18
+          },
+          {
+            "place_index": 0,
+            "order": 6,
+            "gauge_index": 0,
+            "parameter_index": 0,
+            "cost": 18,
+            "prefix_cost": 18
+          }
+        ],
+        "column_flag": [
+          {
+            "place_index": 0,
+            "order": 0,
+            "gauge_index": 0,
+            "parameter_index": 0,
+            "cost": 18,
+            "prefix_cost": 18
+          },
+          {
+            "place_index": 0,
+            "order": 1,
+            "gauge_index": 0,
+            "parameter_index": 0,
+            "cost": 18,
+            "prefix_cost": 18
+          },
+          {
+            "place_index": 0,
+            "order": 2,
+            "gauge_index": 0,
+            "parameter_index": 0,
+            "cost": 18,
+            "prefix_cost": 18
+          },
+          {
+            "place_index": 0,
+            "order": 3,
+            "gauge_index": 0,
+            "parameter_index": 0,
+            "cost": 18,
+            "prefix_cost": 18
+          },
+          {
+            "place_index": 0,
+            "order": 4,
+            "gauge_index": 0,
+            "parameter_index": 0,
+            "cost": 18,
+            "prefix_cost": 18
+          },
+          {
+            "place_index": 0,
+            "order": 5,
+            "gauge_index": 0,
+            "parameter_index": 0,
+            "cost": 18,
+            "prefix_cost": 18
+          },
+          {
+            "place_index": 0,
+            "order": 6,
+            "gauge_index": 0,
+            "parameter_index": 0,
+            "cost": 18,
+            "prefix_cost": 18
+          }
+        ]
+      }
+    },
+    {
+      "type_counts_x": [
+        1,
+        1,
+        1
+      ],
+      "type_counts_y": [
+        2,
+        1
+      ],
+      "typed_dimensions": [
+        6,
+        3,
+        3,
+        6
+      ],
+      "actual_pieces": [
+        {
+          "index": 0,
+          "actual_ranks": [
+            0,
+            0
+          ],
+          "bounds": [
+            0,
+            18
+          ]
+        },
+        {
+          "index": 1,
+          "actual_ranks": [
+            0,
+            0
+          ],
+          "bounds": [
+            18,
+            18
+          ]
+        },
+        {
+          "index": 2,
+          "actual_ranks": [
+            6,
+            15
+          ],
+          "bounds": [
+            18,
+            18
+          ]
+        },
+        {
+          "index": 3,
+          "actual_ranks": [
+            15,
+            6
+          ],
+          "bounds": [
+            18,
+            18
+          ]
+        },
+        {
+          "index": 4,
+          "actual_ranks": [
+            15,
+            6
+          ],
+          "bounds": [
+            18,
+            18
+          ]
+        },
+        {
+          "index": 5,
+          "actual_ranks": [
+            0,
+            0
+          ],
+          "bounds": [
+            18,
+            18
+          ]
+        },
+        {
+          "index": 6,
+          "actual_ranks": [
+            0,
+            0
+          ],
+          "bounds": [
+            18,
+            18
+          ]
+        }
+      ],
+      "finite_rational_certificate": {
+        "copies": 3,
+        "seed_degree": 2,
+        "tensor_degree": 6,
+        "type_counts_x": [
+          1,
+          1,
+          1
+        ],
+        "type_counts_y": [
+          2,
+          1
+        ],
+        "external_label_counts": [
+          6,
+          3
+        ],
+        "cut_dimension": 18,
+        "rank_pairs": [
+          [
+            0,
+            18
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            18,
+            18
+          ]
+        ],
+        "amplification": {
+          "active_piece_upper_bound": 6,
+          "zero_piece_bounds": 1,
+          "maximum_rank_product": 324,
+          "coarse_base": 11664,
+          "square_root_sum_upper_numerator": 1992248359960631574528,
+          "square_root_sum_upper_denominator": 18446744073709551616,
+          "rational_sqrt2_lower_bound": [
+            140,
+            99
+          ],
+          "exponent_square_test": true,
+          "coarse_gate_passed": false,
+          "rank_sum_gate_passed": false,
+          "certified_rho_strict_upper_bound_if_passed": [
+            140,
+            198
+          ]
+        },
+        "row_flag": [
+          {
+            "place_index": 0,
+            "order": 0,
+            "gauge_index": 1,
+            "parameter_index": 0,
+            "cost": 0,
+            "prefix_cost": 0
+          },
+          {
+            "place_index": 0,
+            "order": 1,
+            "gauge_index": 0,
+            "parameter_index": 0,
+            "cost": 18,
+            "prefix_cost": 18
+          },
+          {
+            "place_index": 0,
+            "order": 2,
+            "gauge_index": 0,
+            "parameter_index": 0,
+            "cost": 18,
+            "prefix_cost": 18
+          },
+          {
+            "place_index": 0,
+            "order": 3,
+            "gauge_index": 0,
+            "parameter_index": 0,
+            "cost": 18,
+            "prefix_cost": 18
+          },
+          {
+            "place_index": 0,
+            "order": 4,
+            "gauge_index": 0,
+            "parameter_index": 0,
+            "cost": 18,
+            "prefix_cost": 18
+          },
+          {
+            "place_index": 0,
+            "order": 5,
+            "gauge_index": 0,
+            "parameter_index": 0,
+            "cost": 18,
+            "prefix_cost": 18
+          },
+          {
+            "place_index": 0,
+            "order": 6,
+            "gauge_index": 0,
+            "parameter_index": 0,
+            "cost": 18,
+            "prefix_cost": 18
+          }
+        ],
+        "column_flag": [
+          {
+            "place_index": 0,
+            "order": 0,
+            "gauge_index": 0,
+            "parameter_index": 0,
+            "cost": 18,
+            "prefix_cost": 18
+          },
+          {
+            "place_index": 0,
+            "order": 1,
+            "gauge_index": 0,
+            "parameter_index": 0,
+            "cost": 18,
+            "prefix_cost": 18
+          },
+          {
+            "place_index": 0,
+            "order": 2,
+            "gauge_index": 0,
+            "parameter_index": 0,
+            "cost": 18,
+            "prefix_cost": 18
+          },
+          {
+            "place_index": 0,
+            "order": 3,
+            "gauge_index": 0,
+            "parameter_index": 0,
+            "cost": 18,
+            "prefix_cost": 18
+          },
+          {
+            "place_index": 0,
+            "order": 4,
+            "gauge_index": 0,
+            "parameter_index": 0,
+            "cost": 18,
+            "prefix_cost": 18
+          },
+          {
+            "place_index": 0,
+            "order": 5,
+            "gauge_index": 0,
+            "parameter_index": 0,
+            "cost": 18,
+            "prefix_cost": 18
+          },
+          {
+            "place_index": 0,
+            "order": 6,
+            "gauge_index": 0,
+            "parameter_index": 0,
+            "cost": 18,
+            "prefix_cost": 18
+          }
+        ]
+      }
+    }
+  ],
+  "large_block_control": {
+    "copies": 600,
+    "tensor_degree": 1200,
+    "external_label_count_bits": [
+      942,
+      942
+    ],
+    "maximum_rank_product_bits": 3159,
+    "rank_pairs": 1201,
+    "rank_table_sha256": "357b557c5c3c025338aa86428d3b46ece9c3567d1a572ac1d7f2b6ed847c0e89",
+    "rank_sum_gate_passed": false,
+    "seconds": 0.32375560499895073
+  }
+}

@@ -1,0 +1,247 @@
+{
+  "constant_crossing": {
+    "alphabets": [
+      2,
+      3,
+      3,
+      2
+    ],
+    "comparisons": [
+      {
+        "left_vs_right": 1,
+        "monomial_shifts_checked": [
+          1,
+          7,
+          31
+        ],
+        "target": [
+          4,
+          3
+        ]
+      },
+      {
+        "left_vs_right": 0,
+        "monomial_shifts_checked": [
+          1,
+          7,
+          31
+        ],
+        "target": [
+          7,
+          5
+        ]
+      },
+      {
+        "left_vs_right": -1,
+        "monomial_shifts_checked": [
+          1,
+          7,
+          31
+        ],
+        "target": [
+          3,
+          2
+        ]
+      }
+    ],
+    "complete_cut_ranks": [
+      6,
+      6
+    ],
+    "optimal_support_value": [
+      7,
+      5
+    ],
+    "weight_sum": [
+      7,
+      5
+    ]
+  },
+  "geometry": {
+    "aspect": [
+      9,
+      25
+    ],
+    "close_margin": {
+      "column_power_interval": [
+        [
+          796437658227,
+          1000000000000
+        ],
+        [
+          199109414557,
+          250000000000
+        ]
+      ],
+      "denominator_interval": [
+        [
+          4967454530769,
+          5000000000000
+        ],
+        [
+          620931816347,
+          625000000000
+        ]
+      ],
+      "exponent": [
+        51,
+        100
+      ],
+      "orientation_factor_upper": [
+        1650000000000,
+        1655818176923
+      ],
+      "row_power_interval": [
+        [
+          593901299287,
+          1000000000000
+        ],
+        [
+          74237662411,
+          125000000000
+        ]
+      ],
+      "target": [
+        99,
+        100
+      ],
+      "unit_target_rejected": true
+    },
+    "conditional_geometry_only_no_seed_claim": true,
+    "fifth_power_margin": {
+      "denominator_lower": [
+        233,
+        250
+      ],
+      "exponent": [
+        3,
+        5
+      ],
+      "orientation_factor_upper": [
+        225,
+        233
+      ],
+      "target": [
+        9,
+        10
+      ]
+    },
+    "half_exponent_equalizer": {
+      "column": [
+        18,
+        25
+      ],
+      "exact": true,
+      "row": [
+        27,
+        50
+      ],
+      "target": [
+        9,
+        10
+      ]
+    },
+    "weights": [
+      [
+        3,
+        5
+      ],
+      [
+        4,
+        5
+      ]
+    ]
+  },
+  "gibbs_identity": {
+    "base": [
+      3,
+      2
+    ],
+    "comparison_integer_bits": 119824,
+    "entropy_identity_equal": true,
+    "formal_profile_control_only": true,
+    "gibbs_x": [
+      [
+        42391158275216203514294433201,
+        42391158276369125018901280177
+      ],
+      [
+        1152921504606846976,
+        42391158276369125018901280177
+      ]
+    ],
+    "gibbs_y": [
+      [
+        76177348045866392339289727720615561750424801402395196724001565744957137343033038019601,
+        76177348047938204158061075089375123635225602606188847088984405005249708298716922715153
+      ],
+      [
+        2071811818771347368758029389259935314935292017955688951108952216561701093376,
+        76177348047938204158061075089375123635225602606188847088984405005249708298716922715153
+      ],
+      [
+        1532495540865888858358347027150309183618739122183602176,
+        76177348047938204158061075089375123635225602606188847088984405005249708298716922715153
+      ]
+    ],
+    "profiles_infinity": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "profiles_zero": [
+      0,
+      1,
+      3
+    ],
+    "target": [
+      7,
+      5
+    ],
+    "test_type_x": [
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "test_type_y": [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        6
+      ]
+    ],
+    "total_heights_x": [
+      0,
+      1
+    ],
+    "total_heights_y": [
+      -1,
+      0,
+      2
+    ],
+    "weights_triple": [
+      3,
+      4,
+      5
+    ]
+  },
+  "scope": "exact supporting-line algebra and conditional geometry",
+  "source_sha256": {
+    "check_asymmetric_support_line.py": "1c97226d5984c55c1b2dcb7313a39533ea2a224ee2a765514533f94aaa1ee453",
+    "check_paired_type_crossing_pressure.py": "b4943bd0bde522bc419f3ec8fec0c35b2da73fe390af9a49ae7ecae8b97dddf1"
+  },
+  "status": "pass"
+}

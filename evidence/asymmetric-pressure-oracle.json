@@ -1,0 +1,85 @@
+{
+  "records": [
+    {
+      "balanced_normalization_error": 5.10702591327572e-14,
+      "basis": "natural",
+      "cut_at_infinity": 0,
+      "finite_difference_coordinates": 26,
+      "maximum_derivative_error": 3.561783160077603e-10,
+      "monomial_shift_controls": [
+        {
+          "absolute_error": 0.0,
+          "shift": 1
+        },
+        {
+          "absolute_error": 0.0,
+          "shift": 7
+        }
+      ],
+      "support_value_at_test": 2.195934406031953
+    },
+    {
+      "balanced_normalization_error": 3.4017233474514796e-13,
+      "basis": "natural",
+      "cut_at_infinity": 1,
+      "finite_difference_coordinates": 26,
+      "maximum_derivative_error": 1.86062564661027e-10,
+      "monomial_shift_controls": [
+        {
+          "absolute_error": 0.0,
+          "shift": 1
+        },
+        {
+          "absolute_error": 0.0,
+          "shift": 7
+        }
+      ],
+      "support_value_at_test": 1.2990516068901055
+    },
+    {
+      "balanced_normalization_error": 8.881784197001252e-16,
+      "basis": "nontrivial-basis",
+      "cut_at_infinity": 0,
+      "finite_difference_coordinates": 26,
+      "maximum_derivative_error": 3.4476911603409377e-10,
+      "monomial_shift_controls": [
+        {
+          "absolute_error": 0.0,
+          "shift": 1
+        },
+        {
+          "absolute_error": 0.0,
+          "shift": 7
+        }
+      ],
+      "support_value_at_test": 2.800601591793311
+    },
+    {
+      "balanced_normalization_error": 2.220446049250313e-16,
+      "basis": "nontrivial-basis",
+      "cut_at_infinity": 1,
+      "finite_difference_coordinates": 26,
+      "maximum_derivative_error": 3.55417167918759e-10,
+      "monomial_shift_controls": [
+        {
+          "absolute_error": 0.0,
+          "shift": 1
+        },
+        {
+          "absolute_error": 0.0,
+          "shift": 7
+        }
+      ],
+      "support_value_at_test": 2.3556769799585577
+    }
+  ],
+  "scope": "numerical search-interface controls; no rate certificate",
+  "source_sha256": {
+    "asymmetric_crossing_pressure.py": "de017ff2d5c352505aa2b3ec9a2541f8fb4db0bdd2e70b3ec74de91c4713ca42",
+    "check_asymmetric_pressure_oracle.py": "2a36a0c75938342cbce6c1f1b06630c41293ffe26cc73a4eaff3b67b96b6c35a",
+    "native_rectangular_smith_f4.cpp": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6",
+    "native_rectangular_smith_f4.py": "5c96128e3713138a08752c22036154cb65983a0b47ca66aa2ca18949d765ce4a",
+    "search_reflection_physical_bases.py": "33234abfb35605ca5eefabe24dc90f27ca0f230efb8eb37d694a1616eda7f424"
+  },
+  "status": "pass"
+}

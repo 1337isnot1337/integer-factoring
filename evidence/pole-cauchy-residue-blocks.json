@@ -1,0 +1,265 @@
+{
+  "claim": "Arbitrary-precision residue-block sums from polynomial-degree rational selectors",
+  "controls": {
+    "exact_selector_polynomial_identities": 16,
+    "integer_selector_values": 528,
+    "quadratic_selector_values": 784,
+    "dense_residue_block_sums": 18,
+    "earlier_parity_interface_agreements": 6,
+    "higher_precision_unit_direction_controls": 3,
+    "examples": [
+      {
+        "n": 35,
+        "size": 3,
+        "precision": 1,
+        "residue": [
+          0,
+          0
+        ],
+        "inverse_normalization_exponent": 6,
+        "maximum_pole_order": 3,
+        "maximum_working_precision": 12
+      },
+      {
+        "n": 133,
+        "size": 3,
+        "precision": 2,
+        "residue": [
+          0,
+          0
+        ],
+        "inverse_normalization_exponent": 7,
+        "maximum_pole_order": 9,
+        "maximum_working_precision": 26
+      },
+      {
+        "n": 117,
+        "size": 1,
+        "precision": 3,
+        "residue": [
+          0,
+          0
+        ],
+        "inverse_normalization_exponent": 7,
+        "maximum_pole_order": 15,
+        "maximum_working_precision": 39
+      },
+      {
+        "n": 125,
+        "size": 3,
+        "precision": 1,
+        "residue": [
+          0,
+          0
+        ],
+        "inverse_normalization_exponent": 7,
+        "maximum_pole_order": 3,
+        "maximum_working_precision": 26
+      },
+      {
+        "n": 135,
+        "size": 1,
+        "precision": 2,
+        "residue": [
+          0,
+          0
+        ],
+        "inverse_normalization_exponent": 7,
+        "maximum_pole_order": 9,
+        "maximum_working_precision": 42
+      },
+      {
+        "n": 67,
+        "size": 1,
+        "precision": 3,
+        "residue": [
+          0,
+          0
+        ],
+        "inverse_normalization_exponent": 6,
+        "maximum_pole_order": 15,
+        "maximum_working_precision": 38
+      },
+      {
+        "n": 149,
+        "size": 3,
+        "precision": 1,
+        "residue": [
+          0,
+          0
+        ],
+        "inverse_normalization_exponent": 8,
+        "maximum_pole_order": 3,
+        "maximum_working_precision": 22
+      },
+      {
+        "n": 137,
+        "size": 1,
+        "precision": 2,
+        "residue": [
+          0,
+          0
+        ],
+        "inverse_normalization_exponent": 7,
+        "maximum_pole_order": 9,
+        "maximum_working_precision": 42
+      },
+      {
+        "n": 119,
+        "size": 1,
+        "precision": 3,
+        "residue": [
+          0,
+          0
+        ],
+        "inverse_normalization_exponent": 7,
+        "maximum_pole_order": 15,
+        "maximum_working_precision": 39
+      },
+      {
+        "n": 31,
+        "size": 1,
+        "precision": 1,
+        "residue": [
+          0,
+          0
+        ],
+        "inverse_normalization_exponent": 5,
+        "maximum_pole_order": 3,
+        "maximum_working_precision": 19
+      },
+      {
+        "n": 135,
+        "size": 3,
+        "precision": 2,
+        "residue": [
+          0,
+          0
+        ],
+        "inverse_normalization_exponent": 12,
+        "maximum_pole_order": 9,
+        "maximum_working_precision": 59
+      },
+      {
+        "n": 121,
+        "size": 2,
+        "precision": 3,
+        "residue": [
+          0,
+          0
+        ],
+        "inverse_normalization_exponent": 7,
+        "maximum_pole_order": 15,
+        "maximum_working_precision": 96
+      },
+      {
+        "n": 75,
+        "size": 1,
+        "precision": 1,
+        "residue": [
+          0,
+          0
+        ],
+        "inverse_normalization_exponent": 5,
+        "maximum_pole_order": 3,
+        "maximum_working_precision": 11
+      },
+      {
+        "n": 31,
+        "size": 3,
+        "precision": 2,
+        "residue": [
+          3,
+          3
+        ],
+        "inverse_normalization_exponent": 6,
+        "maximum_pole_order": 9,
+        "maximum_working_precision": 76
+      },
+      {
+        "n": 21,
+        "size": 1,
+        "precision": 3,
+        "residue": [
+          0,
+          0
+        ],
+        "inverse_normalization_exponent": 6,
+        "maximum_pole_order": 15,
+        "maximum_working_precision": 124
+      },
+      {
+        "n": 57,
+        "size": 2,
+        "precision": 1,
+        "residue": [
+          0,
+          0
+        ],
+        "inverse_normalization_exponent": 5,
+        "maximum_pole_order": 3,
+        "maximum_working_precision": 12
+      },
+      {
+        "n": 27,
+        "size": 3,
+        "precision": 2,
+        "residue": [
+          0,
+          0
+        ],
+        "inverse_normalization_exponent": 10,
+        "maximum_pole_order": 9,
+        "maximum_working_precision": 25
+      },
+      {
+        "n": 145,
+        "size": 3,
+        "precision": 3,
+        "residue": [
+          0,
+          0
+        ],
+        "inverse_normalization_exponent": 8,
+        "maximum_pole_order": 15,
+        "maximum_working_precision": 40
+      }
+    ],
+    "higher_precision_examples": [
+      {
+        "a": 1,
+        "b": 1,
+        "precision": 5,
+        "normalized_inverse_residue": [
+          25,
+          25
+        ]
+      },
+      {
+        "a": 3,
+        "b": 5,
+        "precision": 5,
+        "normalized_inverse_residue": [
+          16,
+          0
+        ]
+      },
+      {
+        "a": 5,
+        "b": 3,
+        "precision": 5,
+        "normalized_inverse_residue": [
+          16,
+          0
+        ]
+      }
+    ]
+  },
+  "factoring_exponent_improved": false,
+  "source_sha256": {
+    "check_pole_cauchy_residue_blocks.py": "091dddab3509a37138c4f4f6fdd7c4ca16ab4d5022cd39cc40e79897c23874ed",
+    "pole_cauchy_residue_blocks.py": "743d245b18fa0e4b62e064ee003a418ee99ec957579fd5a7efd61cdb370f4ff6",
+    "pole_cauchy_quadratic_selectors.py": "855aabad2cb01a0e96d73913450933221a8fd2eca84b378e0b6011161aa0da35"
+  },
+  "scope": "An implicit block-sum oracle does not itself count Smith unit directions."
+}

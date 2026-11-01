@@ -1,0 +1,1258 @@
+{
+  "scope": "Exact weighted catalogue jet bounds and typed opposite-flag reconstruction; no improved asymptotic rho or factoring score claimed.",
+  "source_sha256": {
+    "check_weighted_adaptive_catalogues.py": "9fbd6812c6a9b64bcd89fcc56712c9c253d0c9ba8d280995ec24213041d51fa8",
+    "weighted_adaptive_mixed_place.py": "87abd3a7a1486754f54f6b9347e62d9459b0139f9f27633ba21a1bb5150aab6a",
+    "adaptive_mixed_place.py": "5fd35064a2d79e72cf993cd4d251cd95d931295bc2108e9c37fd6400425f7e4f",
+    "check_ternary_basis_mixed.py": "d9c20891419652d9e5bfd3ccd855cb490e9037734dc91a0e8824634eaf3f2090",
+    "check_weighted_multipoint_hermite.py": "8ae62959bdda71f00ea4ac520bad9f24fcf6465eb0aafd30b33c8ae98bcf6da8",
+    "check_mixed_place_hermite.py": "c36c22464da1fda8c3b0016fba21e6e5fd673df17ad3db6bf67d4677ad02cb8c",
+    "check_multipoint_hermite_crossings.py": "1d3422c882a0e17bd8613065242d6765e74bac2219200d5b1cbab9e6dcaa9fed"
+  },
+  "arithmetic_controls": {
+    "word_sum_coefficients": 208,
+    "translated_gauge_coefficients": 208,
+    "initial_segment_prefixes": 9,
+    "gauge_switch_control": [
+      {
+        "place_index": 0,
+        "order": 0,
+        "gauge_index": 0,
+        "cost": 0,
+        "prefix_cost": 0
+      },
+      {
+        "place_index": 0,
+        "order": 1,
+        "gauge_index": 0,
+        "cost": 0,
+        "prefix_cost": 0
+      },
+      {
+        "place_index": 1,
+        "order": 0,
+        "gauge_index": 0,
+        "cost": 4,
+        "prefix_cost": 4
+      },
+      {
+        "place_index": 1,
+        "order": 1,
+        "gauge_index": 0,
+        "cost": 8,
+        "prefix_cost": 12
+      },
+      {
+        "place_index": 0,
+        "order": 2,
+        "gauge_index": 1,
+        "cost": 12,
+        "prefix_cost": 24
+      },
+      {
+        "place_index": 0,
+        "order": 3,
+        "gauge_index": 1,
+        "cost": 16,
+        "prefix_cost": 40
+      },
+      {
+        "place_index": 1,
+        "order": 2,
+        "gauge_index": 0,
+        "cost": 16,
+        "prefix_cost": 56
+      },
+      {
+        "place_index": 0,
+        "order": 4,
+        "gauge_index": 1,
+        "cost": 20,
+        "prefix_cost": 76
+      },
+      {
+        "place_index": 1,
+        "order": 3,
+        "gauge_index": 0,
+        "cost": 24,
+        "prefix_cost": 100
+      }
+    ]
+  },
+  "physical_basis": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      2,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      1
+    ]
+  ],
+  "local_profiles": [
+    {
+      "point": 2,
+      "cut": 0,
+      "gauges": [
+        {
+          "slopes": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "orders": [
+            0,
+            0,
+            0,
+            2,
+            2,
+            2,
+            4,
+            4,
+            4
+          ],
+          "ramification": 2,
+          "clearing": 0
+        },
+        {
+          "slopes": [
+            "0",
+            "0",
+            "1/2",
+            "1/2"
+          ],
+          "orders": [
+            2,
+            3,
+            3,
+            4,
+            4,
+            4,
+            5,
+            5,
+            6
+          ],
+          "ramification": 2,
+          "clearing": 0
+        },
+        {
+          "slopes": [
+            "0",
+            "1/2",
+            "0",
+            "1/2"
+          ],
+          "orders": [
+            0,
+            2,
+            2,
+            3,
+            4,
+            5,
+            5,
+            7,
+            8
+          ],
+          "ramification": 2,
+          "clearing": 0
+        },
+        {
+          "slopes": [
+            "1",
+            "-1",
+            "0",
+            "0"
+          ],
+          "orders": [
+            -4,
+            -2,
+            0,
+            0,
+            2,
+            2,
+            6,
+            6,
+            8
+          ],
+          "ramification": 2,
+          "clearing": 4
+        }
+      ]
+    },
+    {
+      "point": null,
+      "cut": 0,
+      "gauges": [
+        {
+          "slopes": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "orders": [
+            0,
+            0,
+            0,
+            2,
+            2,
+            2,
+            4,
+            4,
+            4
+          ],
+          "ramification": 2,
+          "clearing": 0
+        },
+        {
+          "slopes": [
+            "-1/2",
+            "-1/2",
+            "0",
+            "0"
+          ],
+          "orders": [
+            -2,
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            2
+          ],
+          "ramification": 2,
+          "clearing": 2
+        },
+        {
+          "slopes": [
+            "-1/2",
+            "0",
+            "-1/2",
+            "0"
+          ],
+          "orders": [
+            -4,
+            -3,
+            -1,
+            -1,
+            0,
+            1,
+            2,
+            2,
+            4
+          ],
+          "ramification": 2,
+          "clearing": 4
+        },
+        {
+          "slopes": [
+            "0",
+            "0",
+            "1",
+            "-1"
+          ],
+          "orders": [
+            -4,
+            -2,
+            -2,
+            2,
+            2,
+            4,
+            4,
+            6,
+            8
+          ],
+          "ramification": 2,
+          "clearing": 4
+        }
+      ]
+    },
+    {
+      "point": 0,
+      "cut": 1,
+      "gauges": [
+        {
+          "slopes": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "orders": [
+            0,
+            2,
+            2,
+            2,
+            2,
+            4,
+            8,
+            8,
+            8
+          ],
+          "ramification": 2,
+          "clearing": 0
+        },
+        {
+          "slopes": [
+            "-1",
+            "-1",
+            "1",
+            "1"
+          ],
+          "orders": [
+            0,
+            2,
+            2,
+            4,
+            4,
+            4,
+            6,
+            6,
+            8
+          ],
+          "ramification": 2,
+          "clearing": 0
+        },
+        {
+          "slopes": [
+            "-1/2",
+            "-1/2",
+            "1/2",
+            "1/2"
+          ],
+          "orders": [
+            0,
+            2,
+            2,
+            4,
+            4,
+            4,
+            6,
+            6,
+            8
+          ],
+          "ramification": 2,
+          "clearing": 0
+        },
+        {
+          "slopes": [
+            "1",
+            "0",
+            "0",
+            "-1"
+          ],
+          "orders": [
+            -4,
+            -2,
+            0,
+            0,
+            2,
+            4,
+            12,
+            12,
+            12
+          ],
+          "ramification": 2,
+          "clearing": 4
+        }
+      ]
+    }
+  ],
+  "typed_cases": [
+    {
+      "copies": 2,
+      "xcounts": [
+        1,
+        1,
+        0
+      ],
+      "ycounts": [
+        0,
+        1,
+        1
+      ],
+      "dimensions": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "mean_shifts": [
+        [
+          "0",
+          "2",
+          "2",
+          "-2"
+        ],
+        [
+          "0",
+          "-2",
+          "-2",
+          "2"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "jet_rank_checks": 15,
+      "jets": [
+        {
+          "point": 2,
+          "cut": 0,
+          "jet": 0,
+          "actual_rank": 1,
+          "catalogue_bound": 1,
+          "individual_gauge_costs": [
+            9,
+            1,
+            27,
+            16
+          ]
+        },
+        {
+          "point": 2,
+          "cut": 0,
+          "jet": 1,
+          "actual_rank": 4,
+          "catalogue_bound": 4,
+          "individual_gauge_costs": [
+            45,
+            21,
+            74,
+            40
+          ]
+        },
+        {
+          "point": 2,
+          "cut": 0,
+          "jet": 2,
+          "actual_rank": 3,
+          "catalogue_bound": 4,
+          "individual_gauge_costs": [
+            126,
+            102,
+            157,
+            80
+          ]
+        },
+        {
+          "point": 2,
+          "cut": 0,
+          "jet": 3,
+          "actual_rank": 4,
+          "catalogue_bound": 4,
+          "individual_gauge_costs": [
+            252,
+            244,
+            273,
+            140
+          ]
+        },
+        {
+          "point": 2,
+          "cut": 0,
+          "jet": 4,
+          "actual_rank": 1,
+          "catalogue_bound": 4,
+          "individual_gauge_costs": [
+            405,
+            405,
+            413,
+            222
+          ]
+        },
+        {
+          "point": null,
+          "cut": 0,
+          "jet": 0,
+          "actual_rank": 1,
+          "catalogue_bound": 1,
+          "individual_gauge_costs": [
+            9,
+            1,
+            30,
+            221
+          ]
+        },
+        {
+          "point": null,
+          "cut": 0,
+          "jet": 1,
+          "actual_rank": 3,
+          "catalogue_bound": 4,
+          "individual_gauge_costs": [
+            45,
+            21,
+            76,
+            323
+          ]
+        },
+        {
+          "point": null,
+          "cut": 0,
+          "jet": 2,
+          "actual_rank": 3,
+          "catalogue_bound": 4,
+          "individual_gauge_costs": [
+            126,
+            102,
+            155,
+            445
+          ]
+        },
+        {
+          "point": null,
+          "cut": 0,
+          "jet": 3,
+          "actual_rank": 0,
+          "catalogue_bound": 4,
+          "individual_gauge_costs": [
+            252,
+            244,
+            270,
+            583
+          ]
+        },
+        {
+          "point": null,
+          "cut": 0,
+          "jet": 4,
+          "actual_rank": 0,
+          "catalogue_bound": 4,
+          "individual_gauge_costs": [
+            405,
+            405,
+            412,
+            734
+          ]
+        },
+        {
+          "point": 0,
+          "cut": 1,
+          "jet": 0,
+          "actual_rank": 0,
+          "catalogue_bound": 1,
+          "individual_gauge_costs": [
+            1,
+            1,
+            1,
+            74
+          ]
+        },
+        {
+          "point": 0,
+          "cut": 1,
+          "jet": 1,
+          "actual_rank": 0,
+          "catalogue_bound": 4,
+          "individual_gauge_costs": [
+            11,
+            7,
+            7,
+            124
+          ]
+        },
+        {
+          "point": 0,
+          "cut": 1,
+          "jet": 2,
+          "actual_rank": 3,
+          "catalogue_bound": 4,
+          "individual_gauge_costs": [
+            47,
+            27,
+            27,
+            185
+          ]
+        },
+        {
+          "point": 0,
+          "cut": 1,
+          "jet": 3,
+          "actual_rank": 3,
+          "catalogue_bound": 4,
+          "individual_gauge_costs": [
+            109,
+            73,
+            73,
+            253
+          ]
+        },
+        {
+          "point": 0,
+          "cut": 1,
+          "jet": 4,
+          "actual_rank": 4,
+          "catalogue_bound": 4,
+          "individual_gauge_costs": [
+            186,
+            154,
+            154,
+            330
+          ]
+        }
+      ],
+      "adaptive_bound": {
+        "product": 16,
+        "critical_index": 2,
+        "cut_dimension": 4,
+        "row_flag": [
+          {
+            "place_index": 0,
+            "order": 0,
+            "gauge_index": 1,
+            "cost": 1,
+            "prefix_cost": 1
+          },
+          {
+            "place_index": 1,
+            "order": 0,
+            "gauge_index": 1,
+            "cost": 1,
+            "prefix_cost": 2
+          },
+          {
+            "place_index": 0,
+            "order": 1,
+            "gauge_index": 1,
+            "cost": 21,
+            "prefix_cost": 4
+          },
+          {
+            "place_index": 1,
+            "order": 1,
+            "gauge_index": 1,
+            "cost": 21,
+            "prefix_cost": 4
+          },
+          {
+            "place_index": 0,
+            "order": 2,
+            "gauge_index": 3,
+            "cost": 80,
+            "prefix_cost": 4
+          }
+        ],
+        "column_flag": [
+          {
+            "place_index": 0,
+            "order": 0,
+            "gauge_index": 0,
+            "cost": 1,
+            "prefix_cost": 1
+          },
+          {
+            "place_index": 0,
+            "order": 1,
+            "gauge_index": 1,
+            "cost": 7,
+            "prefix_cost": 4
+          },
+          {
+            "place_index": 0,
+            "order": 2,
+            "gauge_index": 1,
+            "cost": 27,
+            "prefix_cost": 4
+          },
+          {
+            "place_index": 0,
+            "order": 3,
+            "gauge_index": 1,
+            "cost": 73,
+            "prefix_cost": 4
+          },
+          {
+            "place_index": 0,
+            "order": 4,
+            "gauge_index": 1,
+            "cost": 154,
+            "prefix_cost": 4
+          }
+        ]
+      },
+      "piece_rank_checks": 10,
+      "pieces": [
+        {
+          "index": 0,
+          "ranks": [
+            1,
+            4
+          ],
+          "bounds": [
+            1,
+            4
+          ]
+        },
+        {
+          "index": 1,
+          "ranks": [
+            0,
+            0
+          ],
+          "bounds": [
+            2,
+            4
+          ]
+        },
+        {
+          "index": 2,
+          "ranks": [
+            3,
+            3
+          ],
+          "bounds": [
+            4,
+            4
+          ]
+        },
+        {
+          "index": 3,
+          "ranks": [
+            0,
+            0
+          ],
+          "bounds": [
+            4,
+            4
+          ]
+        },
+        {
+          "index": 4,
+          "ranks": [
+            0,
+            0
+          ],
+          "bounds": [
+            4,
+            1
+          ]
+        }
+      ],
+      "endpoint_entries": 16
+    },
+    {
+      "copies": 3,
+      "xcounts": [
+        1,
+        1,
+        1
+      ],
+      "ycounts": [
+        1,
+        1,
+        1
+      ],
+      "dimensions": [
+        6,
+        6,
+        6,
+        6
+      ],
+      "mean_shifts": [
+        [
+          "0",
+          "2",
+          "2",
+          "0"
+        ],
+        [
+          "0",
+          "-2",
+          "-2",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "jet_rank_checks": 21,
+      "jets": [
+        {
+          "point": 2,
+          "cut": 0,
+          "jet": 0,
+          "actual_rank": 1,
+          "catalogue_bound": 1,
+          "individual_gauge_costs": [
+            27,
+            1,
+            153,
+            613
+          ]
+        },
+        {
+          "point": 2,
+          "cut": 0,
+          "jet": 1,
+          "actual_rank": 7,
+          "catalogue_bound": 36,
+          "individual_gauge_costs": [
+            162,
+            36,
+            411,
+            1023
+          ]
+        },
+        {
+          "point": 2,
+          "cut": 0,
+          "jet": 2,
+          "actual_rank": 21,
+          "catalogue_bound": 36,
+          "individual_gauge_costs": [
+            540,
+            282,
+            890,
+            1592
+          ]
+        },
+        {
+          "point": 2,
+          "cut": 0,
+          "jet": 3,
+          "actual_rank": 9,
+          "catalogue_bound": 36,
+          "individual_gauge_costs": [
+            1269,
+            1011,
+            1625,
+            2328
+          ]
+        },
+        {
+          "point": 2,
+          "cut": 0,
+          "jet": 4,
+          "actual_rank": 21,
+          "catalogue_bound": 36,
+          "individual_gauge_costs": [
+            2349,
+            2223,
+            2613,
+            3228
+          ]
+        },
+        {
+          "point": 2,
+          "cut": 0,
+          "jet": 5,
+          "actual_rank": 7,
+          "catalogue_bound": 36,
+          "individual_gauge_costs": [
+            3672,
+            3646,
+            3815,
+            4284
+          ]
+        },
+        {
+          "point": 2,
+          "cut": 0,
+          "jet": 6,
+          "actual_rank": 1,
+          "catalogue_bound": 36,
+          "individual_gauge_costs": [
+            5103,
+            5103,
+            5158,
+            5463
+          ]
+        },
+        {
+          "point": null,
+          "cut": 0,
+          "jet": 0,
+          "actual_rank": 1,
+          "catalogue_bound": 1,
+          "individual_gauge_costs": [
+            27,
+            1,
+            170,
+            639
+          ]
+        },
+        {
+          "point": null,
+          "cut": 0,
+          "jet": 1,
+          "actual_rank": 7,
+          "catalogue_bound": 36,
+          "individual_gauge_costs": [
+            162,
+            36,
+            426,
+            1041
+          ]
+        },
+        {
+          "point": null,
+          "cut": 0,
+          "jet": 2,
+          "actual_rank": 28,
+          "catalogue_bound": 36,
+          "individual_gauge_costs": [
+            540,
+            282,
+            896,
+            1599
+          ]
+        },
+        {
+          "point": null,
+          "cut": 0,
+          "jet": 3,
+          "actual_rank": 36,
+          "catalogue_bound": 36,
+          "individual_gauge_costs": [
+            1269,
+            1011,
+            1619,
+            2321
+          ]
+        },
+        {
+          "point": null,
+          "cut": 0,
+          "jet": 4,
+          "actual_rank": 28,
+          "catalogue_bound": 36,
+          "individual_gauge_costs": [
+            2349,
+            2223,
+            2598,
+            3210
+          ]
+        },
+        {
+          "point": null,
+          "cut": 0,
+          "jet": 5,
+          "actual_rank": 0,
+          "catalogue_bound": 36,
+          "individual_gauge_costs": [
+            3672,
+            3646,
+            3798,
+            4258
+          ]
+        },
+        {
+          "point": null,
+          "cut": 0,
+          "jet": 6,
+          "actual_rank": 36,
+          "catalogue_bound": 36,
+          "individual_gauge_costs": [
+            5103,
+            5103,
+            5147,
+            5437
+          ]
+        },
+        {
+          "point": 0,
+          "cut": 1,
+          "jet": 0,
+          "actual_rank": 1,
+          "catalogue_bound": 1,
+          "individual_gauge_costs": [
+            1,
+            1,
+            1,
+            511
+          ]
+        },
+        {
+          "point": 0,
+          "cut": 1,
+          "jet": 1,
+          "actual_rank": 0,
+          "catalogue_bound": 9,
+          "individual_gauge_costs": [
+            15,
+            9,
+            9,
+            798
+          ]
+        },
+        {
+          "point": 0,
+          "cut": 1,
+          "jet": 2,
+          "actual_rank": 7,
+          "catalogue_bound": 36,
+          "individual_gauge_costs": [
+            92,
+            44,
+            44,
+            1154
+          ]
+        },
+        {
+          "point": 0,
+          "cut": 1,
+          "jet": 3,
+          "actual_rank": 8,
+          "catalogue_bound": 36,
+          "individual_gauge_costs": [
+            308,
+            150,
+            150,
+            1580
+          ]
+        },
+        {
+          "point": 0,
+          "cut": 1,
+          "jet": 4,
+          "actual_rank": 28,
+          "catalogue_bound": 36,
+          "individual_gauge_costs": [
+            672,
+            396,
+            396,
+            2094
+          ]
+        },
+        {
+          "point": 0,
+          "cut": 1,
+          "jet": 5,
+          "actual_rank": 28,
+          "catalogue_bound": 36,
+          "individual_gauge_costs": [
+            1180,
+            858,
+            858,
+            2719
+          ]
+        },
+        {
+          "point": 0,
+          "cut": 1,
+          "jet": 6,
+          "actual_rank": 36,
+          "catalogue_bound": 36,
+          "individual_gauge_costs": [
+            1935,
+            1587,
+            1587,
+            3474
+          ]
+        }
+      ],
+      "adaptive_bound": {
+        "product": 1296,
+        "critical_index": 2,
+        "cut_dimension": 36,
+        "row_flag": [
+          {
+            "place_index": 0,
+            "order": 0,
+            "gauge_index": 1,
+            "cost": 1,
+            "prefix_cost": 1
+          },
+          {
+            "place_index": 1,
+            "order": 0,
+            "gauge_index": 1,
+            "cost": 1,
+            "prefix_cost": 2
+          },
+          {
+            "place_index": 0,
+            "order": 1,
+            "gauge_index": 1,
+            "cost": 36,
+            "prefix_cost": 36
+          },
+          {
+            "place_index": 1,
+            "order": 1,
+            "gauge_index": 1,
+            "cost": 36,
+            "prefix_cost": 36
+          },
+          {
+            "place_index": 0,
+            "order": 2,
+            "gauge_index": 1,
+            "cost": 282,
+            "prefix_cost": 36
+          },
+          {
+            "place_index": 1,
+            "order": 2,
+            "gauge_index": 1,
+            "cost": 282,
+            "prefix_cost": 36
+          },
+          {
+            "place_index": 0,
+            "order": 3,
+            "gauge_index": 1,
+            "cost": 1011,
+            "prefix_cost": 36
+          }
+        ],
+        "column_flag": [
+          {
+            "place_index": 0,
+            "order": 0,
+            "gauge_index": 0,
+            "cost": 1,
+            "prefix_cost": 1
+          },
+          {
+            "place_index": 0,
+            "order": 1,
+            "gauge_index": 1,
+            "cost": 9,
+            "prefix_cost": 10
+          },
+          {
+            "place_index": 0,
+            "order": 2,
+            "gauge_index": 1,
+            "cost": 44,
+            "prefix_cost": 36
+          },
+          {
+            "place_index": 0,
+            "order": 3,
+            "gauge_index": 1,
+            "cost": 150,
+            "prefix_cost": 36
+          },
+          {
+            "place_index": 0,
+            "order": 4,
+            "gauge_index": 1,
+            "cost": 396,
+            "prefix_cost": 36
+          },
+          {
+            "place_index": 0,
+            "order": 5,
+            "gauge_index": 1,
+            "cost": 858,
+            "prefix_cost": 36
+          },
+          {
+            "place_index": 0,
+            "order": 6,
+            "gauge_index": 1,
+            "cost": 1587,
+            "prefix_cost": 36
+          }
+        ]
+      },
+      "piece_rank_checks": 14,
+      "pieces": [
+        {
+          "index": 0,
+          "ranks": [
+            1,
+            36
+          ],
+          "bounds": [
+            1,
+            36
+          ]
+        },
+        {
+          "index": 1,
+          "ranks": [
+            0,
+            0
+          ],
+          "bounds": [
+            2,
+            36
+          ]
+        },
+        {
+          "index": 2,
+          "ranks": [
+            7,
+            28
+          ],
+          "bounds": [
+            36,
+            36
+          ]
+        },
+        {
+          "index": 3,
+          "ranks": [
+            0,
+            0
+          ],
+          "bounds": [
+            36,
+            36
+          ]
+        },
+        {
+          "index": 4,
+          "ranks": [
+            28,
+            7
+          ],
+          "bounds": [
+            36,
+            36
+          ]
+        },
+        {
+          "index": 5,
+          "ranks": [
+            0,
+            0
+          ],
+          "bounds": [
+            36,
+            10
+          ]
+        },
+        {
+          "index": 6,
+          "ranks": [
+            36,
+            1
+          ],
+          "bounds": [
+            36,
+            1
+          ]
+        }
+      ],
+      "endpoint_entries": 1296
+    }
+  ],
+  "missing_mean_shift_rejected": true,
+  "totals": {
+    "exact_local_profiles": 12,
+    "typed_jet_rank_checks": 36,
+    "piece_rank_checks": 24,
+    "endpoint_entries": 1312
+  }
+}

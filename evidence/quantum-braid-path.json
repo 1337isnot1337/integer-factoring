@@ -1,0 +1,24 @@
+{
+  "status": "pass",
+  "field": "F4",
+  "metric_identity_entries": 120,
+  "height_four_projector_rank": 5,
+  "height_four_partial_quantum_trace_zero": true,
+  "exact_recoupling_entries": 388,
+  "local_TL_and_wall_relations": 20,
+  "norm_dual_word_controls": 38500,
+  "complete_small_endpoint_entries": 642,
+  "ambient_reference_polynomials": 20,
+  "independent_phase_projection_controls": 11500,
+  "scope": "Local quotient and phase descent identities support an all-length F4 path compiler; no favorable uniform two-cut rank bound.",
+  "source_sha256": {
+    "tools/quantum_braid_path.py": "4a6ce2cbad920cbe6dde6b6abf4642675a1d3d13955c8be67e6d0b6c97eae946",
+    "tools/check_quantum_braid_path.py": "bdb2caebdc17c2be87e24261114b7620c1aaa05d7f128fa275cf11c4a08ac9c1",
+    "tools/quantum_block_braid.py": "116d689f620a5d8fb784387d3eccc311497f56fbfc05a400ac8188f2c13cfc94",
+    "tools/paired_path_crossing.py": "309fb3f10a230475d5fae68625fcee5f5cfb50fc52491cc63f0765a7627c5c4b",
+    "tools/bounded_spin_crossing.py": "cefc38c88cdf76650f4966fa9e49d0edbc9ce4c2eec3848dd2716f35ee3819bd",
+    "tools/bounded_spin_support.py": "d3771564da3fb1d88ebdc2444f4e62db6754b2f72ad11101ed72a078a2d4a678",
+    "tools/check_fixed_field_descent.py": "831c1fe850b9d21b8d0050e310adaed2586251950542bb7d274e2ffd334ea8ac",
+    "tools/check_fourier_multiplication_gates.py": "b094e9101f867d624aafa7bd851cb00b1ea411d1dc69cb700e742e609f94efc9"
+  }
+}

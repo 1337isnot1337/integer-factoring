@@ -5,8 +5,16 @@
 - [An actual common three-cut Gaussian family](cube-homogeneous-gaussian.md): one homogeneous multivariate endpoint, exact three-cut Smith factors, a rational `rho=5/8` certificate, and an all-scale floor for its declared Cayley method; no score improvement.
 - [Cube geometry and a complete conditional transfer](cube-crossing-transfer.md): antipodal cube edges, equitable regrouping, effective entry queries, and `alpha=log_3(1/rho)`; a new local family below `1/sqrt(3)` is still required to improve the score.
 
+## Higher-dimensional Gaussian constraints
+
+- [Four-axis shared endpoint minors](four-axis-gaussian-profile-floor.md): a short non-Cayley proof gives common-scale unweighted profile pressure strictly above one half.
+- [Weighted four-axis degree caps](weighted-four-axis-gaussian-profile-floor.md): the floor survives arbitrary coupled modes, common subalphabets and correlated types, and vertex-dependent additive degree bounds, including nonhomogeneous entries.
+- [Shared endpoint budgets through eight axes](multiaxis-gaussian-profile-floor.md): exact all-scale certificates exclude the unweighted degree-cap criterion for dimensions two through eight; a fully rational nine-axis relaxed profile first passes these budgets, without a realizing kernel.
+
 ## Coherent physical crossing spaces
 
+- [Quadratic-parity Walsh paths and the full radial obstruction](bell-walsh-constructions.md): arbitrary positive energy tables, an exact radial optimum `H_2(1/4)`, and strict reciprocal retiming improvements for fixed folded seeds.
+- [Exact monotone coefficient retiming](isotonic-coefficient-retiming.md): adjacent pooling gives the optimal constant-basis profile pressure; physical Smith retimings require recomputation, and all thirty declared eight-letter perturbations have exact all-scale dominance certificates.
 - [Deletion-closed spaces and complete compound profiles](coherent-hot-compound-retractions.md): derivative inverse systems, differential kernels, separate cut compressions, exact `rho < 1781/2501`, and all-scale optimality in a declared 121-map binary boundary class.
 - [Mixed-occupation height boundaries](coherent-hot-mixed-boundary.md): exact parity-block evaluation expands the height-16 boundary family to 496 maps; the extension alone does not improve the factoring exponent.
 
@@ -18,6 +26,9 @@
 
 ## Exact pole-Cauchy algorithms
 
+- [Unrestricted-degree circuit inverse moments](pole-cauchy-circuit-moments.md): a small quotient algebra evaluates every division-free polynomial circuit weight; a sharp finite-difference bound explains the denominator cost of entrywise factor interpolation.
+- [Normalized rational inverse resolvents](pole-cauchy-rational-resolvents.md): four affine products evaluate complete rational contractions at polynomial absolute precision, without a rectangle-separation assumption; the final factoring scalar remains open.
+- [Complete bilinear pole-product packets](bilinear-pole-packets.md): global polynomial circuits modulo `2^p` with `O(n+p)` arithmetic nodes, polynomial generation, and full unit traces; singular factor-count normalization remains open.
 - [Explicit residue-flow profiles](pole-smith-residue-flow.md): every Smith order in `(r+s) poly(b)` bit operations on explicit node lists, without constructing the matrix.
 - [Balanced overlap spectra](pole-smith-overlap-spectrum.md): one tree pass gives the full histogram; power-of-two padding gives a diagonal Smith formula.
 - [Inverse conditioning and entry queries](pole-cauchy-conditioning.md): balanced padding controls precision independently of dimension and permits polynomial-cost individual inverse entries.
@@ -100,6 +111,10 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Baseline audit](baseline-audit.md): source recurrence and the unchanged reference's machine-cost analysis.
 
 ## Transfers and proposed stronger evaluators
+
+- [Output-sensitive space transfer](output-sensitive-space-transfer.md): streamed rough cofactors and scalar isolation give factorization recovery in time `A(n) exp(O(s+n/s+log n))` and space `S(n)+O(s+n/s+log n)`; output-sensitive divisor listing is charged separately.
+- [Small-word Fourier construction](small-word-fourier-constructor.md): logarithmic arithmetic words, linear total label mass, an explicit CRT constructor, and carry-column grouping with volume constant `24+o(1)` in the stated regime.
+- [Output-sensitive orbit-gcd deadline transfer](output-sensitive-gcd-deadline.md): the existing polynomial zero-degree runtime target already implies polynomial-time factoring by bounded simulation and interval bisection; the primitive remains unproved.
 
 - [Weighted fixed-characteristic transfer](fixed-characteristic-transfer.md): uniform factoring from a modular evaluator.
 
@@ -550,6 +565,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Paired path encoders beyond classical spin](paired-path-crossings.md): arbitrary local invertible splittings and inverse duals give uniform Fibonacci-size crossings; explicit F16 splittings have polynomial-time entries and three independent extreme tensors with uniform `O(L^(4/3))` support factors, while a complete favorable decomposition remains open.
 - [Height cutoffs and almost-linear extreme pieces](paired-path-height-tradeoff.md): any fixed cutoff has exact label/support entropy rates; choosing a larger fixed cutoff makes the extreme-piece rank exponent arbitrarily close to one, with a fixed field and the same unresolved asymmetric decomposition obligation.
 - [Quantum block-braid crossing compiler](quantum-block-braid-crossings.md): constant-dimensional cup/projector identities prove an all-length braided endpoint, with degree `O(lambda^2)`, allowed exponential entry construction and a complete six-site coefficient span of dimension 33; favorable uniform cut ranks remain open.
+- [Exact block-braid path quotient and F4 descent](quantum-braid-path-quotient.md): a negligible-wall and orthogonal-frame argument identifies the ambient coefficients with local bounded-path matrices; explicit period-five weights give a strict F4 crossing and omit one residue class without inflating retained cut ranks.
 - [Binary site-symmetry actual-rank barrier](binary-site-symmetry-barrier.md): a universal degree-four certificate forces `rho>=3/4` over any fixed field, including all scalar polynomial degrees, coefficient recombinations, and common partitions into sublinearly many position classes.
 - [Full auxiliary coefficient-span optimization](auxiliary-coefficient-span.md): all 2,588 binary functionals in 15 finite cases, strict recombination gains, exact minmax certificates, and rational rank-sum optima certified by shortest-path dual potentials.
 - [Nonlinear downset-code crossings](downset-code-crossings.md): exact global characteristic-two Smith factors and a constant basis normal form for actual coefficient ranks on every downset and every paired-downset encoding, with complete small-domain controls and nonlinear regular-code searches.
@@ -918,3 +934,141 @@ These research notes and finite checks do not establish an exponent above 1/2. T
 - [Rough inputs remove the sparse-transfer exponent ceiling](rough-sparse-transfer.md)
 - [A strict mixed-cut budget excludes every local crossing through q=12](strict-mixed-cut-gate.md)
 - [A witness for the tapered Hermite precision scale](tapered-hermite-precision-witness.md)
+
+## PR #46 constructors and exact physical-code certificates
+
+The [session record](escape-half-session-20261031.md) gives the reading path and source verification scopes. These constructor improvements, complete finite profiles and conditional transfers do not establish a factoring exponent above 1/2.
+
+- [Adaptive opposite flags for crossing reconstruction](adaptive-mixed-place-crossings.md)
+- [An adaptive multiplication network with smaller written top instances](adaptive-transform-constructor.md)
+- [An affine reflection path with eight additional singular places](affine-quadratic-place-crossings.md)
+- [Completed entrywise, finite-frame, mixed-place, and hot-code searches](algorithm-final-search-checkpoint.md)
+- [Supporting lines from opposite flags at several places](asymmetric-mixed-place-crossings.md)
+- [A weighted two-cut bound gives a complete rectangular factoring transfer](asymmetric-modular-transfer.md)
+- [Asymmetric supporting lines for crossing pieces](asymmetric-support-line-crossings.md)
+- [Opposite Bell jets have a unique simultaneous eighth-order carrier](bell-jet-transversality.md)
+- [Two eliminations for a bounded-degree Cauchy interaction](bilinear-cauchy-two-stage-closure.md)
+- [Exact Fourier evaluation of the whole bounded carry tensor](carry-fourier-elimination.md)
+- [A bilinear Fourier phase that defeats the naive Cauchy substitution](cauchy-bilinear-phase-counterexample.md)
+- [Complete weighted local profiles at arbitrary closed points over F4](closed-place-weighted-oracles.md)
+- [Coherent energy-boundary codes and an eight-letter certificate](coherent-hot-boundary-crossings.md)
+- [The complete four-letter paired-trace affine space](complete-paired-trace-affine-space.md)
+- [Exact compressed fusion and root-of-unity normalization](compressed-fusion-root-resonance.md)
+- [Constant companions of the complete dense rank-one catalogue](constant-companion-reflection-search.md)
+- [Constant-field carry weights and exact operand separation](constant-field-carry-weights.md)
+- [Coupled rational physical frames without an added degree cost](coupled-rational-physical-frames.md)
+- [An explicit degree-sixteen affine reflection crossing](degree16-affine-reflection-crossing.md)
+- [Dense rank-one coupled frames on complete physical alphabets](dense-rank-one-coupled-frames.md)
+- [Direct interpolation with prescribed crossing jets](entrywise-reflection-jet-interpolation.md)
+- [Ordinary-proof frontier session, 31 October–1 November 2026](escape-half-session-20261031.md)
+- [Exact pressure certificates without large integer powers](exact-natural-pressure-intervals.md)
+- [A closed fusion row and an all-degree invariance proof](explicit-fused-row-formula.md)
+- [Iterating exact Smith fibers over F4](f4-iterated-smith-fibers.md)
+- [Exact joint channels for the multiplication network's Fourier fan-out](factoring-network-structure.md)
+- [Arbitrary primitive recipient sets have a sharp full-range threshold](factoring-primitive-recipient-codec.md)
+- [Every primitive recipient set has maximal leading rank entropy](factoring-recipient-rank-envelope.md)
+- [A division-free contraction for Fermat-torus dyadic boxes](fermat-torus-binomial-contraction.md)
+- [Affine combinations across filtered sixteen-letter directions](filtered-reflection16-affine-combinations.md)
+- [Affine combinations of filtered sixteen-letter reflection frames](filtered-reflection16-affine-search.md)
+- [Amplify an exact finite crossing block to every label width](finite-block-crossing-amplification.md)
+- [Exact paired restrictions of the primitive finite-fiber cores](finite-fiber-paired-restrictions.md)
+- [Completed finite-fiber basis and iteration searches](finite-fiber-search-checkpoint.md)
+- [Complete singular-place catalogues of two finite-fiber cores](finite-fiber-singular-catalogues.md)
+- [Finite crossing jets inside regular Smith-frame fibers](finite-jet-smith-fibers.md)
+- [Exact finite certificates for weighted adaptive crossings](finite-typed-adaptive-certificates.md)
+- [First-jet separation of constant-field carry weights](first-jet-carry-weights.md)
+- [Sparse recovery compatible with weighted Frobenius digit boxes](frobenius-compatible-sparse-recovery.md)
+- [Exact contraction of a Frobenius rational star](frobenius-rational-trace-contraction.md)
+- [Remove the degree restriction from the Frobenius rational-star trace](frobenius-trace-infinity-correction.md)
+- [Complete singular-place profiles for finite fused crossings](fused-all-place-profiles.md)
+- [An exact spectator factor at every complete root-of-unity block](fused-frobenius-spectators.md)
+- [Completed fused physical-basis search](fused-physical-search-checkpoint.md)
+- [Complete physical-letter gauges at every fused singular place](fused-weighted-place-profiles.md)
+- [Completed fused gauge search and physical-basis controls](fused-weighted-search-checkpoint.md)
+- [Complete natural profiles from occupation blocks](hot-code-charge-profile-constructor.md)
+- [An exact sixty-four-letter natural pressure bound](hot64-rational-pressure.md)
+- [A complete q96 hot-code profile and a rational pressure certificate](hot96-rational-pressure.md)
+- [A small exact common type for the q96 certificate](hot96-small-denominator-type.md)
+- [Polynomial-time decoding of every grouped boundary entry](lattice-decoded-boundary-constructor.md)
+- [Completed four-letter Laurent-series family search](laurent-series-search-checkpoint.md)
+- [Reflection degree truncations that preserve the low jets](low-jet-reflection-degree-truncations.md)
+- [Crossing pieces from opposite flags at several places](mixed-place-hermite-crossings.md)
+- [Explicit multiplication blocks and Fourier--Mellin closure](multiplicative-monoid-blocks.md)
+- [A multiplication constructor with directly decoded boundary tables](observable-boundary-constructor.md)
+- [Smaller multiplication instances from the two operand bit lengths](operand-length-transform-constructor.md)
+- [Mixed-place pressure for unequal paired alphabets](paired-alphabet-mixed-place-crossings.md)
+- [Polynomial changes of basis on complete physical alphabets](physical-polynomial-frames.md)
+- [Polynomial-time entries for the adaptive prime constructor](polynomial-entry-prime-constructor.md)
+- [Polynomial shifts of endpoint-zero affine directions](polynomial-shift-affine-closure.md)
+- [A narrow prime modulus in a power-of-two progression](power-two-progression-dyadic-prime.md)
+- [A prescribed binary subfield and a primitive prime-order root](prime-root-field-construction.md)
+- [A narrow-prime constructor at nearly square-root clique size](prime-transform-boundary-constructor.md)
+- [Rank requirements for perturbing a ramified crossing](ramified-carrier-minor-domination.md)
+- [Rational finite adaptive bounds without channel convolution](rational-finite-adaptive-bounds.md)
+- [Completed coordinate-frame search and affine crossing paths](reflection-coupled-search-checkpoint.md)
+- [Natural cut duality and downset compound blocks](reflection-natural-cut-duality.md)
+- [A uniform paired-trace identity for reflection crossings](reflection-paired-trace-invariant.md)
+- [Summing relative Frobenius factors by a vector of carries](relative-frobenius-trace-contraction.md)
+- [Weighted closed-place refinement of paired restrictions](restricted-closed-place-search.md)
+- [Completed root-worker searches and resumed physical-frame runs](root-worker-search-checkpoint.md)
+- [Rough inputs make every local operand directly observable](rough-observable-factor-constructor.md)
+- [Zero-safe box contraction in the cyclic recovery algebra](semisimple-cyclic-box-contraction.md)
+- [A first-jet theorem for arbitrary square-zero physical frames](square-zero-first-jet-frames.md)
+- [An exact pole-two criterion for arbitrary square-zero physical maps](square-zero-pole-two-criterion.md)
+- [An exact rational pressure bound for a stabilized hot code](stable-hot-code-rational-pressure.md)
+- [Completed searches on stabilized reflection codes](stable-hot-code-search.md)
+- [Stable small physical codes from larger reflection intervals](stable-hot-reflection-codes.md)
+- [A ternary mixed crossing below 821/1000](ternary-basis-mixed-crossing.md)
+- [Bounded ternary physical-basis search](ternary-physical-basis-search.md)
+- [Sharp gauge profiles for two uniform ternary bases](ternary-uniform-gauge-majorization.md)
+- [Large linear families of polynomial reflection frames](triangular-reflection-jet-families.md)
+- [Unequal paired alphabets at a coherent energy boundary](unequal-coherent-hot-codes.md)
+- [A uniform physical-matrix criterion for coupled Laurent poles](uniform-reflection-jet-criterion.md)
+- [Original-field multiplication blocks and a bundled middle-layer algorithm](unsplit-monoid-contraction.md)
+- [Weighted adaptive flags with a catalogue of local gauges](weighted-adaptive-gauge-catalogues.md)
+- [Weighted dyadic carries and one joint Frobenius quotient](weighted-dyadic-carry-contraction.md)
+- [Weighted profiles inside the hot compound integrality cone](weighted-hot-compound-profiles.md)
+- [Weighted hot-code profile and search interfaces](weighted-hot-compound-search.md)
+- [Physical types in same-place Hermite reconstruction](weighted-multipoint-hermite-crossings.md)
+- [A width-sensitive evaluator and a faster prime-constructor schedule](width-sensitive-prime-constructor.md)
+
+## Cube profile and pressure checkpoints
+
+- [Endpoint-minor budgets beyond the Cayley kernel class](cube-gaussian-profile-budget.md)
+- [A sharper rational certificate for the common cube family](cube-gaussian-tight-pressure.md)
+
+## Implicit analytic inverse contractions
+
+- [Regular analytic weights for complete pole-Cauchy inverse contractions](pole-cauchy-analytic-weights.md)
+- [Joint regular analytic kernels and a two-dimensional moment recurrence](pole-cauchy-analytic-kernels.md)
+- [The sharp precision cost of analytic residue selectors](regular-analytic-selector-precision.md)
+
+- [Polynomial precision for explicit unions of odd arithmetic progressions](pole-cauchy-domain-precision.md)
+
+## Dynamic prime saturation and uniform hitting criteria
+
+- [Prime-cofactor saturation with exact integer elimination](prime-cofactor-saturation.md)
+- [Cyclic-subgroup lower-tail moments force every shifted window to hit](cofactor-orbit-moment-criterion.md)
+
+## Regular resolvents and copied-register profile budgets
+
+- [A determinant budget for every regular nilpotent resolvent](regular-resolvent-determinant-budget.md)
+- [Complete binary four-label normalized rank-two search](binary-rank-two-channels.md)
+- [A sharper copied-wire obstruction from one truncated multiplication map](shift-register-toeplitz-budget.md)
+
+## Coherent graded quotients and complete letter gauges
+
+- [Coherent quotient codes and an exact zero-cut invariant](coherent-graded-quotients.md)
+- [Shared letter gauges for coherent physical maps](coherent-shared-letter-gauges.md)
+
+## F4 hyperoval and coherent weights
+
+- [Stronger F4 hyperoval crossing bound](f4-hyperoval-crossing-bound.md): exact rho < 0.710005861 with both complete profiles and an explicit positive type; no stronger factoring exponent.
+- [Coherent deletion-operator weight cone](weighted-coherent-hot-f4.md): a sufficient cone for both weighted cuts of non-coordinate physical retracts.
+
+## Rational poles and full-precision inverse residue blocks
+
+- [Implicit inverse contractions with external rational poles](pole-cauchy-rational-poles.md)
+- [Higher external poles with explicit precision costs](pole-cauchy-repeated-poles.md)
+- [Quadratic poles give inverse residue-block sums](pole-cauchy-quadratic-selectors.md)
+- [Inverse residue-block sums at arbitrary precision](pole-cauchy-residue-blocks.md)

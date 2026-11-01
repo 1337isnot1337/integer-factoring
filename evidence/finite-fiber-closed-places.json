@@ -1,0 +1,656 @@
+{
+  "scope": "Complete singular-place catalogues of two explicit primitive cores; no pressure or factoring improvement.",
+  "input_path": "evidence/deflated-finite-fiber-input.json",
+  "input_sha256": "8abb33965b19b8141f261926bb8d70067a79aac9fbffed789199d207f07b73b8",
+  "independent_field": {
+    "degree": 8,
+    "irreducible_polynomial": 283,
+    "F4_embedding": [
+      0,
+      1,
+      188,
+      189
+    ]
+  },
+  "cases": [
+    {
+      "label": "infinity4_primitive_degree20_deflated",
+      "degree": 10,
+      "tensor_sha256": "cb796f650714d5b8f4952c0b87bb0097337582b66e9674bc16e80bae22e580ed",
+      "parent_tensor_sha256": "1cdf87a796e13132e34cbc8ba34b36bb7a0f8ef8a4149ccee5da16a547e1602b",
+      "parent_degree": 20,
+      "parameter_ramification": 2,
+      "cuts": [
+        {
+          "cut": 0,
+          "determinant": {
+            "112": 1
+          },
+          "determinant_evaluation_count": 161,
+          "local_profiles": [
+            {
+              "place": "zero",
+              "orders": [
+                0,
+                2,
+                4,
+                4,
+                4,
+                6,
+                6,
+                6,
+                8,
+                8,
+                8,
+                10,
+                10,
+                10,
+                12,
+                14
+              ],
+              "independent_toeplitz_ranks": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  2,
+                  2
+                ],
+                [
+                  3,
+                  4
+                ],
+                [
+                  4,
+                  6
+                ],
+                [
+                  5,
+                  11
+                ],
+                [
+                  6,
+                  16
+                ],
+                [
+                  7,
+                  24
+                ],
+                [
+                  8,
+                  32
+                ],
+                [
+                  9,
+                  43
+                ],
+                [
+                  10,
+                  54
+                ],
+                [
+                  11,
+                  68
+                ],
+                [
+                  12,
+                  82
+                ],
+                [
+                  13,
+                  97
+                ],
+                [
+                  14,
+                  112
+                ],
+                [
+                  15,
+                  128
+                ]
+              ]
+            },
+            {
+              "place": "homogeneous_infinity",
+              "orders": [
+                0,
+                0,
+                1,
+                1,
+                2,
+                2,
+                3,
+                3,
+                3,
+                3,
+                4,
+                4,
+                5,
+                5,
+                6,
+                6
+              ],
+              "independent_toeplitz_ranks": [
+                [
+                  1,
+                  2
+                ],
+                [
+                  2,
+                  6
+                ],
+                [
+                  3,
+                  12
+                ],
+                [
+                  4,
+                  22
+                ],
+                [
+                  5,
+                  34
+                ],
+                [
+                  6,
+                  48
+                ],
+                [
+                  7,
+                  64
+                ]
+              ]
+            }
+          ],
+          "other_finite_singular_places": []
+        },
+        {
+          "cut": 1,
+          "determinant": {
+            "0": 1
+          },
+          "determinant_evaluation_count": 161,
+          "local_profiles": [
+            {
+              "place": "zero",
+              "orders": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "independent_toeplitz_ranks": [
+                [
+                  1,
+                  16
+                ]
+              ]
+            },
+            {
+              "place": "homogeneous_infinity",
+              "orders": [
+                0,
+                2,
+                4,
+                5,
+                6,
+                7,
+                9,
+                9,
+                11,
+                11,
+                13,
+                14,
+                15,
+                16,
+                18,
+                20
+              ],
+              "independent_toeplitz_ranks": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  2,
+                  2
+                ],
+                [
+                  3,
+                  4
+                ],
+                [
+                  4,
+                  6
+                ],
+                [
+                  5,
+                  9
+                ],
+                [
+                  6,
+                  13
+                ],
+                [
+                  7,
+                  18
+                ],
+                [
+                  8,
+                  24
+                ],
+                [
+                  9,
+                  30
+                ],
+                [
+                  10,
+                  38
+                ],
+                [
+                  11,
+                  46
+                ],
+                [
+                  12,
+                  56
+                ],
+                [
+                  13,
+                  66
+                ],
+                [
+                  14,
+                  77
+                ],
+                [
+                  15,
+                  89
+                ],
+                [
+                  16,
+                  102
+                ],
+                [
+                  17,
+                  116
+                ],
+                [
+                  18,
+                  130
+                ],
+                [
+                  19,
+                  145
+                ],
+                [
+                  20,
+                  160
+                ],
+                [
+                  21,
+                  176
+                ]
+              ]
+            }
+          ],
+          "other_finite_singular_places": []
+        }
+      ]
+    },
+    {
+      "label": "infinity4_primitive_degree22_deflated",
+      "degree": 11,
+      "tensor_sha256": "30fa0b9badc2f0e7853faab8686db7d902a835f15754cfa9d1c67f2af62a2d47",
+      "parent_tensor_sha256": "d25cadc73bf64352bf3a4e95af18f2a6f01abf75ce96ed217298deb754697536",
+      "parent_degree": 22,
+      "parameter_ramification": 2,
+      "cuts": [
+        {
+          "cut": 0,
+          "determinant": {
+            "120": 1
+          },
+          "determinant_evaluation_count": 177,
+          "local_profiles": [
+            {
+              "place": "zero",
+              "orders": [
+                0,
+                2,
+                4,
+                4,
+                4,
+                6,
+                6,
+                8,
+                8,
+                8,
+                8,
+                10,
+                12,
+                12,
+                12,
+                16
+              ],
+              "independent_toeplitz_ranks": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  2,
+                  2
+                ],
+                [
+                  3,
+                  4
+                ],
+                [
+                  4,
+                  6
+                ],
+                [
+                  5,
+                  11
+                ],
+                [
+                  6,
+                  16
+                ],
+                [
+                  7,
+                  23
+                ],
+                [
+                  8,
+                  30
+                ],
+                [
+                  9,
+                  41
+                ],
+                [
+                  10,
+                  52
+                ],
+                [
+                  11,
+                  64
+                ],
+                [
+                  12,
+                  76
+                ],
+                [
+                  13,
+                  91
+                ],
+                [
+                  14,
+                  106
+                ],
+                [
+                  15,
+                  121
+                ],
+                [
+                  16,
+                  136
+                ],
+                [
+                  17,
+                  152
+                ]
+              ]
+            },
+            {
+              "place": "homogeneous_infinity",
+              "orders": [
+                0,
+                1,
+                1,
+                2,
+                2,
+                3,
+                3,
+                3,
+                4,
+                4,
+                4,
+                5,
+                5,
+                6,
+                6,
+                7
+              ],
+              "independent_toeplitz_ranks": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  3,
+                  9
+                ],
+                [
+                  4,
+                  17
+                ],
+                [
+                  5,
+                  28
+                ],
+                [
+                  6,
+                  41
+                ],
+                [
+                  7,
+                  56
+                ],
+                [
+                  8,
+                  72
+                ]
+              ]
+            }
+          ],
+          "other_finite_singular_places": []
+        },
+        {
+          "cut": 1,
+          "determinant": {
+            "0": 1
+          },
+          "determinant_evaluation_count": 177,
+          "local_profiles": [
+            {
+              "place": "zero",
+              "orders": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "independent_toeplitz_ranks": [
+                [
+                  1,
+                  16
+                ]
+              ]
+            },
+            {
+              "place": "homogeneous_infinity",
+              "orders": [
+                0,
+                3,
+                4,
+                6,
+                7,
+                7,
+                8,
+                11,
+                11,
+                13,
+                13,
+                15,
+                17,
+                19,
+                19,
+                23
+              ],
+              "independent_toeplitz_ranks": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  2,
+                  2
+                ],
+                [
+                  3,
+                  3
+                ],
+                [
+                  4,
+                  5
+                ],
+                [
+                  5,
+                  8
+                ],
+                [
+                  6,
+                  11
+                ],
+                [
+                  7,
+                  15
+                ],
+                [
+                  8,
+                  21
+                ],
+                [
+                  9,
+                  28
+                ],
+                [
+                  10,
+                  35
+                ],
+                [
+                  11,
+                  42
+                ],
+                [
+                  12,
+                  51
+                ],
+                [
+                  13,
+                  60
+                ],
+                [
+                  14,
+                  71
+                ],
+                [
+                  15,
+                  82
+                ],
+                [
+                  16,
+                  94
+                ],
+                [
+                  17,
+                  106
+                ],
+                [
+                  18,
+                  119
+                ],
+                [
+                  19,
+                  132
+                ],
+                [
+                  20,
+                  147
+                ],
+                [
+                  21,
+                  162
+                ],
+                [
+                  22,
+                  177
+                ],
+                [
+                  23,
+                  192
+                ],
+                [
+                  24,
+                  208
+                ]
+              ]
+            }
+          ],
+          "other_finite_singular_places": []
+        }
+      ]
+    }
+  ],
+  "counts": {
+    "independent_determinant_evaluations": 676,
+    "independent_block_Toeplitz_ranks": 94,
+    "strict_endpoint_entries": 512
+  },
+  "source_sha256": {
+    "check_finite_fiber_closed_places.py": "25b51af59b0319b1131fac3155da06cfcc663e01835d4bd2a3d90281c451ec84",
+    "check_frobenius_rational_trace.py": "d5cdf093a71fa6f3528b58359d8bb5307e94972aab12642d6818d45d1398c1f3",
+    "check_carry_fourier_elimination.py": "ad1065db63bc74779105964c2ed8c3cf5e91f82d514fa70580fa8eb31a091763",
+    "check_fused_multipoint_profiles.py": "c163e3fa6bdc32efbb1a027aa78a1c1fbf405f0c3b15a0327ca3e0aed65b3ce6",
+    "check_reflection_laurent_frames.py": "ea281b0acdc2f1a333b00d90ed54b12bf6e10a541f0b53ceb1159e7d3f7411c9",
+    "f16_weighted_local_oracle.py": "f31a7f9a73a7d7002a2dc61db83695f665b7fc67bc488c6b6f23c2b8bc4d3322",
+    "check_fused_closed_profiles.py": "601ef47f8ea7cae609eeffdbefdb278b29d85c654fd132ad7c33fb9709e35460",
+    "f16_identity_operator_profiles.py": "3095c293971c4fff43f2a71052e49c526ded05aa9d087531124d246a05c67c8b",
+    "fused_six_vertex_crossings.py": "90b016b84e57b2b6d1134c61016c2de5183edc2b2f2943ef9964d5d82dbaf109",
+    "reflection_laurent_physical_frames.py": "e4396ed1a78303893adce6a4f931d8a1866f79ae09fc9f8b0ac6aea164352563"
+  },
+  "elapsed_seconds": 1.903876862999823,
+  "passed": true
+}

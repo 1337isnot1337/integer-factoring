@@ -1,0 +1,343 @@
+{
+  "status": "passed",
+  "scope": "Exact local regular frames and complete Smith orders to sufficient precision; no tensor pressure claim.",
+  "constructed_profile_controls": 24,
+  "independent_coefficient_matrix_entries": 1274,
+  "nonsingular_constant_frame_checks": 56,
+  "complete_CRT_cut_controls": [
+    {
+      "relative_form": "identity",
+      "cut": 0,
+      "point": [
+        2,
+        1
+      ],
+      "tensor_sha256": "b55fb12ea71998a239c7bc38d979adacdd49203687deb08b1e3fc7725b72fb06",
+      "orders": [
+        0,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        16,
+        16,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        32
+      ]
+    },
+    {
+      "relative_form": "identity",
+      "cut": 1,
+      "point": [
+        3,
+        1
+      ],
+      "tensor_sha256": "b55fb12ea71998a239c7bc38d979adacdd49203687deb08b1e3fc7725b72fb06",
+      "orders": [
+        0,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        16,
+        16,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        32
+      ]
+    },
+    {
+      "relative_form": "alternating",
+      "cut": 0,
+      "point": [
+        2,
+        1
+      ],
+      "tensor_sha256": "65d942e5b611681635d1b169fa24296a3d014893c7ac0bf9b989a0c61cef5145",
+      "orders": [
+        0,
+        7,
+        7,
+        7,
+        7,
+        14,
+        16,
+        16,
+        16,
+        16,
+        18,
+        25,
+        25,
+        25,
+        25,
+        32
+      ]
+    },
+    {
+      "relative_form": "alternating",
+      "cut": 1,
+      "point": [
+        3,
+        1
+      ],
+      "tensor_sha256": "65d942e5b611681635d1b169fa24296a3d014893c7ac0bf9b989a0c61cef5145",
+      "orders": [
+        0,
+        7,
+        7,
+        7,
+        7,
+        14,
+        16,
+        16,
+        16,
+        16,
+        18,
+        25,
+        25,
+        25,
+        25,
+        32
+      ]
+    }
+  ],
+  "random_controls": [
+    {
+      "size": 1,
+      "orders": [
+        1
+      ],
+      "precision": 5
+    },
+    {
+      "size": 2,
+      "orders": [
+        8,
+        8
+      ],
+      "precision": 12
+    },
+    {
+      "size": 3,
+      "orders": [
+        0,
+        0,
+        7
+      ],
+      "precision": 11
+    },
+    {
+      "size": 4,
+      "orders": [
+        0,
+        3,
+        7,
+        11
+      ],
+      "precision": 15
+    },
+    {
+      "size": 5,
+      "orders": [
+        0,
+        2,
+        2,
+        5,
+        11
+      ],
+      "precision": 15
+    },
+    {
+      "size": 1,
+      "orders": [
+        11
+      ],
+      "precision": 15
+    },
+    {
+      "size": 2,
+      "orders": [
+        7,
+        8
+      ],
+      "precision": 12
+    },
+    {
+      "size": 3,
+      "orders": [
+        1,
+        10,
+        12
+      ],
+      "precision": 16
+    },
+    {
+      "size": 4,
+      "orders": [
+        0,
+        0,
+        5,
+        7
+      ],
+      "precision": 11
+    },
+    {
+      "size": 5,
+      "orders": [
+        0,
+        3,
+        5,
+        9,
+        10
+      ],
+      "precision": 14
+    },
+    {
+      "size": 1,
+      "orders": [
+        0
+      ],
+      "precision": 4
+    },
+    {
+      "size": 2,
+      "orders": [
+        5,
+        10
+      ],
+      "precision": 14
+    },
+    {
+      "size": 3,
+      "orders": [
+        0,
+        2,
+        5
+      ],
+      "precision": 9
+    },
+    {
+      "size": 4,
+      "orders": [
+        3,
+        4,
+        10,
+        12
+      ],
+      "precision": 16
+    },
+    {
+      "size": 5,
+      "orders": [
+        0,
+        3,
+        4,
+        5,
+        11
+      ],
+      "precision": 15
+    },
+    {
+      "size": 1,
+      "orders": [
+        5
+      ],
+      "precision": 9
+    },
+    {
+      "size": 2,
+      "orders": [
+        0,
+        8
+      ],
+      "precision": 12
+    },
+    {
+      "size": 3,
+      "orders": [
+        1,
+        10,
+        12
+      ],
+      "precision": 16
+    },
+    {
+      "size": 4,
+      "orders": [
+        2,
+        6,
+        7,
+        9
+      ],
+      "precision": 13
+    },
+    {
+      "size": 5,
+      "orders": [
+        1,
+        1,
+        8,
+        10,
+        12
+      ],
+      "precision": 16
+    },
+    {
+      "size": 1,
+      "orders": [
+        8
+      ],
+      "precision": 12
+    },
+    {
+      "size": 2,
+      "orders": [
+        12,
+        12
+      ],
+      "precision": 16
+    },
+    {
+      "size": 3,
+      "orders": [
+        0,
+        10,
+        11
+      ],
+      "precision": 15
+    },
+    {
+      "size": 4,
+      "orders": [
+        2,
+        5,
+        10,
+        11
+      ],
+      "precision": 15
+    }
+  ],
+  "insufficient_precision_rejected": true,
+  "source_sha256": {
+    "check_f4_regular_smith_frames.py": "e6a4bb6efe2c373ffc1642dbd064b9a2d41903047728747b9877edf662f6019f",
+    "f4_regular_smith_frames.py": "625745e48ee72d0f1029f0391dfa8b253a89cdfbc3a33e4571c51d5ee1c2dbca",
+    "check_dense_coupled_reflection_frames.py": "3ca7c1117cc7c5a36b3da9db567194c29e82d22a0cf7c6fad49bbc220151b178",
+    "affine_place_profile_oracle.py": "4d65e6ac7adc6d6d2cb5935b5f89d5b39b4ce2c09150f1f90ac814561d5eff90",
+    "bell_jet_crt_crossings.py": "837b5bd9c5e2fe41cf3b242b42019ea97ff90405d9c9401aeb54f618d08a9b16",
+    "native_matrix_smith_f4.py": "c08da20f1938a371b438e32fbc6a8f6766b48c2cfee5bcd1c956ce137dc70203",
+    "native_matrix_smith_f4.cpp": "5ec995cd04563c2fa99b69afd71bf476d5ca885f1f90377490c30e5a1a55f330"
+  }
+}

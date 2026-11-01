@@ -1,0 +1,57 @@
+{
+  "claim": "zero-safe box contractions in odd-prime cyclic recovery algebras",
+  "counts": {
+    "even_cyclic_nilpotent_countercontrols": 1,
+    "exact_Frobenius_and_reflexive_inverse_controls": 54,
+    "exact_all_point_geometric_controls": 162,
+    "exact_zero_safe_algebra_trace_controls": 18,
+    "genuine_zero_divisor_controls": 6,
+    "reference_scalar_field_evaluations": 72
+  },
+  "models": [
+    {
+      "Frobenius_period": 2,
+      "binary_dimension": 3,
+      "cyclic_prime": 3,
+      "root_degree": 1,
+      "scalar_degree": 1
+    },
+    {
+      "Frobenius_period": 4,
+      "binary_dimension": 6,
+      "cyclic_prime": 3,
+      "root_degree": 2,
+      "scalar_degree": 1
+    },
+    {
+      "Frobenius_period": 8,
+      "binary_dimension": 12,
+      "cyclic_prime": 3,
+      "root_degree": 2,
+      "scalar_degree": 2
+    },
+    {
+      "Frobenius_period": 12,
+      "binary_dimension": 18,
+      "cyclic_prime": 3,
+      "root_degree": 2,
+      "scalar_degree": 3
+    },
+    {
+      "Frobenius_period": 16,
+      "binary_dimension": 20,
+      "cyclic_prime": 5,
+      "root_degree": 2,
+      "scalar_degree": 2
+    },
+    {
+      "Frobenius_period": 12,
+      "binary_dimension": 18,
+      "cyclic_prime": 3,
+      "root_degree": 3,
+      "scalar_degree": 2
+    }
+  ],
+  "scope": "The Frobenius-period hypothesis is essential; arbitrary nilpotent algebras are excluded.",
+  "status": "passed"
+}

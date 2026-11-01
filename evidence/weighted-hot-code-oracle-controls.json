@@ -1,0 +1,96 @@
+{
+  "scope": "Complete block profiles bound to the independently checked literal reflection records; derivatives checked inside generic Smith chambers.",
+  "source_sha256": {
+    "check_weighted_hot_code_oracle.py": "822bcf6212416dd0ec9a3fe555d5c93f3f400069cf149efaf44008cf9db1d225",
+    "weighted_hot_code_oracle.py": "a9c9e58f280ebe0ee5827d3dbc0ac590cf0001c2d40c2d6bbe3c6d363d9536ab",
+    "hot_code_charge_profiles.py": "b2ef347df71c799e9589f74add7f6306ef4cac1699ff265169af8d2424e03c59",
+    "hot_code_charge_profiles.cpp": "ba655c2d9debdb872139074e6f5825c0b5858218479e23e66218628e474bb776",
+    "selected_gaussian_coefficients.cpp": "b648c25e65907b8528bd0491ef2a67442cc1c6982f95e1d5335bc41246a51a15",
+    "native_matrix_smith_f4.py": "c08da20f1938a371b438e32fbc6a8f6766b48c2cfee5bcd1c956ce137dc70203",
+    "native_matrix_smith_f4.cpp": "5ec995cd04563c2fa99b69afd71bf476d5ca885f1f90377490c30e5a1a55f330",
+    "native_rectangular_smith_f4.cpp": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6",
+    "restrict_implicit_reflection.py": "c4c974317bbb30ec7fdc5e9c3abeb0857bc4d61231837bc7f99bb890d13afbd3",
+    "hot_compound_pressure.py": "30f6da03ea09d4ee7062bd87e4cd963200ea92bdfdd1f06db031b52dc5396327",
+    "asymmetric_crossing_pressure.py": "de017ff2d5c352505aa2b3ec9a2541f8fb4db0bdd2e70b3ec74de91c4713ca42",
+    "search_affine_coupled_reflection_frames.py": "bf4d360a7da1554e03858f1876d231fcb25f7e78f3abb5629e623d64d87481c6"
+  },
+  "literal_control_sha256": "c915510a8147d0837c7fcc1676511b6bf07d9fc7d289cb51d4cba3322933e144",
+  "counts": {
+    "literal_profile_channels": 1240,
+    "cone_inequalities": 2480,
+    "gradient_coordinates": 102,
+    "literal_common_type_pressure_controls": 4
+  },
+  "pressure_controls": [
+    {
+      "interval": 4,
+      "x_letters": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "y_letters": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rho": 0.8015980393104564,
+      "literal_rho": 0.8015980393104566
+    },
+    {
+      "interval": 8,
+      "x_letters": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "y_letters": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rho": 0.8020698932298576,
+      "literal_rho": 0.8020698932298577
+    },
+    {
+      "interval": 8,
+      "x_letters": [
+        0,
+        1,
+        2
+      ],
+      "y_letters": [
+        0,
+        1
+      ],
+      "rho": 0.8474710352039733,
+      "literal_rho": 0.8474710352039736
+    },
+    {
+      "interval": 16,
+      "x_letters": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "y_letters": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rho": 0.7921714577982635,
+      "literal_rho": 0.7921714577982634
+    }
+  ],
+  "maximum_order_error": 0.0,
+  "maximum_gradient_error": 6.098421212463734e-10,
+  "passed": true
+}

@@ -1,0 +1,276 @@
+[
+  {
+    "m": 2,
+    "theta": 2,
+    "alphabet": 3,
+    "degree": 2,
+    "source_profiles_sha256": "e47ebb7b14e5caca20bfacd68185d76a37beefa9588aa89d2fe3bf22ad3a1ef8",
+    "partitions": 2,
+    "best": {
+      "rho": 0.9732205573897214,
+      "critical_prefix": 1.517578125,
+      "row_rate": 2.130970975491039,
+      "column_rate": 2.1457972802400613,
+      "entropy_grid_points": 8193,
+      "prefix_grid_points": 4097,
+      "scope": "floating interpolated rate; not an exact certificate",
+      "row_places": [
+        "root:[2, 1]:0",
+        "root:[3, 1]:0"
+      ],
+      "column_places": [
+        "root:[0, 1]:0",
+        null
+      ]
+    },
+    "finite_checks": [
+      {
+        "copies": 4,
+        "critical_index": 6,
+        "exact_max_product_hex": "0x290d741",
+        "normalized_log_product": 1.0,
+        "scope": "exact greedy-flag bound for the displayed selected partition"
+      },
+      {
+        "copies": 16,
+        "critical_index": 23,
+        "exact_max_product_hex": "0x2b56d4af8f7932278c797ebd01",
+        "normalized_log_product": 1.0,
+        "scope": "exact greedy-flag bound for the displayed selected partition"
+      },
+      {
+        "copies": 64,
+        "critical_index": 96,
+        "exact_max_product_hex": "0x6b06d3c64609c99b2278e8504930248bdfa63994aea749b529a6b7dfd61ab2254e1218112193f18deb9a28800000000000000",
+        "normalized_log_product": 0.9925851615646764,
+        "scope": "exact greedy-flag bound for the displayed selected partition"
+      },
+      {
+        "copies": 256,
+        "critical_index": 388,
+        "exact_max_product_hex": "0x39f5f9200954e754f5aa669250d43c47dd12af2aa3ec1ca328af46cde9f0dc10259a74b5cfb23ea5fa71887c0153af7476edaf0a721c90a7ca62064007068d7418b787a3581a47836985ef1944f6895b08b65632b6c0262565797088fa1ead7fbf63b85b39118e709c50a61c5090f664109db8ceed634a72ff18117e687e50ef61706f87bcb8c64ab869e80402dbb1d78022be0dae5736849836016c2d9233679f86ab97e05744f7942e0000000000000000000000000000000000000000000000000000000000",
+        "normalized_log_product": 0.9795782121783669,
+        "scope": "exact greedy-flag bound for the displayed selected partition"
+      }
+    ],
+    "elapsed_seconds": 0.05690236600003118
+  },
+  {
+    "m": 3,
+    "theta": 4,
+    "alphabet": 4,
+    "degree": 3,
+    "source_profiles_sha256": "e47ebb7b14e5caca20bfacd68185d76a37beefa9588aa89d2fe3bf22ad3a1ef8",
+    "partitions": 1,
+    "best": {
+      "rho": 0.9662720702862008,
+      "critical_prefix": 2.139404296875,
+      "row_rate": 2.701936261183175,
+      "column_rate": 2.6562138281984358,
+      "entropy_grid_points": 8193,
+      "prefix_grid_points": 4097,
+      "scope": "floating interpolated rate; not an exact certificate",
+      "row_places": [
+        "root:[5, 1]:0",
+        "root:[6, 1]:0",
+        "root:[8, 1]:0",
+        "root:[9, 1]:0",
+        "root:[10, 1]:0",
+        "root:[12, 1]:0"
+      ],
+      "column_places": [
+        "root:[0, 1]:0",
+        "root:[15, 1]:0",
+        "root:[9, 2, 1]:0",
+        "root:[9, 2, 1]:1",
+        "root:[12, 10, 15, 12, 1]:0",
+        "root:[12, 10, 15, 12, 1]:1",
+        "root:[12, 10, 15, 12, 1]:2",
+        "root:[12, 10, 15, 12, 1]:3",
+        null
+      ]
+    },
+    "finite_checks": [
+      {
+        "copies": 4,
+        "critical_index": 8,
+        "exact_max_product_hex": "0x100000000",
+        "normalized_log_product": 1.0,
+        "scope": "exact greedy-flag bound for the displayed selected partition"
+      },
+      {
+        "copies": 16,
+        "critical_index": 32,
+        "exact_max_product_hex": "0xe936250c88a169b80000000000000000",
+        "normalized_log_product": 0.9989491807728743,
+        "scope": "exact greedy-flag bound for the displayed selected partition"
+      },
+      {
+        "copies": 64,
+        "critical_index": 131,
+        "exact_max_product_hex": "0x38ffd4285eacf33f66cff85604152bb724ba9ca772f9e7648a99f3aadae96c23bb30ddfd10f9d8fa7d3c005a9757eb26ae00d2c37af0a3adb0000000000000",
+        "normalized_log_product": 0.9801423302380377,
+        "scope": "exact greedy-flag bound for the displayed selected partition"
+      },
+      {
+        "copies": 256,
+        "critical_index": 540,
+        "exact_max_product_hex": "0x157beec322851631953bb19c7a867ea49189971ff0e2ed8a69d74af6c5ab4fff7b09168d10cfb40512d0cd1890e53a4bd7ed291e37f6991459f8b9e9da1cc0cb54c203fe4f7aac302c19060c58264db68b594d662336877d2cfad5b200e0a43c9e4d15e88f848eec021b9791516a65463837b7e7b8aff0345886d1e31d31aefc75fc387e36bfe5e71fdfa68617aa7a60bf7738fa8962ba8913e290217b79f7046d2f8b5d3c22224366c7f8abfe55e709ae17e3f2cfc3d6f366be4699e953dd390cef04bdb89fb233aeb4522bee157dfe76ca9fdd2c05b489863aa33dfbcff51000000000000000000000000000000000000000000000000000",
+        "normalized_log_product": 0.9709107413284546,
+        "scope": "exact greedy-flag bound for the displayed selected partition"
+      }
+    ],
+    "elapsed_seconds": 0.22728459699965242
+  },
+  {
+    "m": 4,
+    "theta": 4,
+    "alphabet": 5,
+    "degree": 4,
+    "source_profiles_sha256": "e47ebb7b14e5caca20bfacd68185d76a37beefa9588aa89d2fe3bf22ad3a1ef8",
+    "partitions": 16,
+    "best": {
+      "rho": 0.9719255195811353,
+      "critical_prefix": 2.826171875,
+      "row_rate": 3.1401775039899023,
+      "column_rate": 3.1168376131144604,
+      "entropy_grid_points": 8193,
+      "prefix_grid_points": 4097,
+      "scope": "floating interpolated rate; not an exact certificate",
+      "row_places": [
+        "root:[5, 1]:0",
+        "root:[7, 1]:0",
+        "root:[9, 1]:0",
+        "root:[10, 1]:0",
+        "root:[8, 1]:0",
+        "root:[11, 1]:0",
+        "root:[12, 1]:0"
+      ],
+      "column_places": [
+        "root:[0, 1]:0",
+        "root:[15, 1]:0",
+        "root:[9, 12, 1]:0",
+        "root:[9, 12, 1]:1",
+        "root:[12, 1, 3, 6, 1]:0",
+        "root:[12, 1, 3, 6, 1]:1",
+        "root:[12, 1, 3, 6, 1]:2",
+        "root:[12, 1, 3, 6, 1]:3",
+        null,
+        "root:[6, 1]:0"
+      ]
+    },
+    "finite_checks": [
+      {
+        "copies": 4,
+        "critical_index": 11,
+        "exact_max_product_hex": "0x2386f26fc1",
+        "normalized_log_product": 1.0,
+        "scope": "exact greedy-flag bound for the displayed selected partition"
+      },
+      {
+        "copies": 16,
+        "critical_index": 44,
+        "exact_max_product_hex": "0x184f03e93ff9f4daa797ed6e38ed64bf6a1f01",
+        "normalized_log_product": 1.0,
+        "scope": "exact greedy-flag bound for the displayed selected partition"
+      },
+      {
+        "copies": 64,
+        "critical_index": 182,
+        "exact_max_product_hex": "0x3c1e4057dea4cc3341281f9aec9ff4b3574eaa533c8fa12bf079cb2de6baf1e645fdc83337b3ad68c779fe57573d826dc274aa6de5e3cf876094eeb595829d5d585c50bcd299cc16442",
+        "normalized_log_product": 0.9856936933657874,
+        "scope": "exact greedy-flag bound for the displayed selected partition"
+      },
+      {
+        "copies": 256,
+        "critical_index": 723,
+        "exact_max_product_hex": "0x2de0a6f9f9125dc1b113703628eb5b299a2bf4bb05bd0e8caf20e4245a5c95839c582381022db97dc9052024fb0fde7f92b9cac01fc81cabab1c6b21c8fe495af6da7391ad0dd42e90a1ae5dcae78f27415162f96b19964e4a6f917eb59d5ee604222deeff98518e9f215820563a4406717d6a0132b729edc51ad4c8ffa68e30e2831727d5bf41cabeb9269b768db99913b1d8e4a64203289192e62b7fde82b5f72a1da31aca68abb2cf60e8390cdd3d09abb353b93e3097d2795a264cf43c6ff5a6a514989cf59e8e7a40e18fe0621a0e070ffa8f095b364430aca62bd417c83ed2d49fe05743dd78d567bc70b1e7daefd4dbc444b5710a5b8e5621faf2a7ceb1c648b95660fe506cf31a5bc3eebdcb8110a51ec97658e6dc3cd698b9f751883adbb",
+        "normalized_log_product": 0.9763907431138927,
+        "scope": "exact greedy-flag bound for the displayed selected partition"
+      }
+    ],
+    "elapsed_seconds": 0.4438756790000298
+  },
+  {
+    "m": 5,
+    "theta": 4,
+    "alphabet": 6,
+    "degree": 5,
+    "source_profiles_sha256": "e47ebb7b14e5caca20bfacd68185d76a37beefa9588aa89d2fe3bf22ad3a1ef8",
+    "partitions": 4,
+    "best": {
+      "rho": 0.9763587910683695,
+      "critical_prefix": 3.504638671875,
+      "row_rate": 3.498689546960655,
+      "column_rate": 3.498910890082573,
+      "entropy_grid_points": 8193,
+      "prefix_grid_points": 4097,
+      "scope": "floating interpolated rate; not an exact certificate",
+      "row_places": [
+        "root:[3, 1]:0",
+        "root:[5, 1]:0",
+        "root:[6, 1]:0",
+        "root:[8, 1]:0",
+        "root:[9, 1]:0",
+        "root:[10, 1]:0",
+        "root:[11, 1]:0",
+        "root:[12, 1]:0",
+        "root:[2, 1]:0",
+        "root:[7, 1]:0"
+      ],
+      "column_places": [
+        "root:[0, 1]:0",
+        "root:[4, 1]:0",
+        "root:[13, 1]:0",
+        "root:[15, 1]:0",
+        "root:[9, 4, 1]:0",
+        "root:[9, 4, 1]:1",
+        "root:[3, 7, 11, 1]:0",
+        "root:[3, 7, 11, 1]:1",
+        "root:[3, 7, 11, 1]:2",
+        "root:[6, 11, 8, 1]:0",
+        "root:[6, 11, 8, 1]:1",
+        "root:[6, 11, 8, 1]:2",
+        "root:[11, 1, 14, 1]:0",
+        "root:[11, 1, 14, 1]:1",
+        "root:[11, 1, 14, 1]:2",
+        "root:[15, 7, 12, 1]:0",
+        "root:[15, 7, 12, 1]:1",
+        "root:[15, 7, 12, 1]:2",
+        "root:[12, 3, 13, 13, 1]:0",
+        "root:[12, 3, 13, 13, 1]:1",
+        "root:[12, 3, 13, 13, 1]:2",
+        "root:[12, 3, 13, 13, 1]:3",
+        "root:[12, 10, 4, 12, 1]:0",
+        "root:[12, 10, 4, 12, 1]:1",
+        "root:[12, 10, 4, 12, 1]:2",
+        "root:[12, 10, 4, 12, 1]:3",
+        null
+      ]
+    },
+    "finite_checks": [
+      {
+        "copies": 4,
+        "critical_index": 13,
+        "exact_max_product_hex": "0x290d7410000",
+        "normalized_log_product": 1.0,
+        "scope": "exact greedy-flag bound for the displayed selected partition"
+      },
+      {
+        "copies": 16,
+        "critical_index": 54,
+        "exact_max_product_hex": "0x2b56d4af8f7932278c797ebd010000000000000000",
+        "normalized_log_product": 1.0,
+        "scope": "exact greedy-flag bound for the displayed selected partition"
+      },
+      {
+        "copies": 64,
+        "critical_index": 224,
+        "exact_max_product_hex": "0x9c945ef03e20515cf03dd42ae7169c41987ce6331180f3e2cd35badacb6c5f7b1bb515e484c5f28bf4d56932ba95d35bcf29507a86888aefb25f164a183a4cb5c3ca41d8218bacb8a3128f052b267267382b",
+        "normalized_log_product": 0.9902385431534904,
+        "scope": "exact greedy-flag bound for the displayed selected partition"
+      }
+    ],
+    "elapsed_seconds": 0.5196146230000522
+  }
+]
