@@ -127,11 +127,13 @@ This lower bound is not an upper bound for the butterfly evaluator, and it
 does not rule out a compact bit-level circuit for each add, subtract, or
 twiddle multiplication.
 
-The remaining structural question changes that local representation: expand
-the exact butterfly arithmetic into Boolean gates with explicit carry and
-constant-multiply circuits, then bound the treewidth or separator cost of
-the whole bit circuit. Only a sub-`ell/sqrt(log ell)` contraction cost could
-improve the score; the dense-table models above cannot cross that threshold.
+The root-four twiddles do simplify at bit level: they are signed cyclic
+rotations with carry normalization, as derived in
+[`sanftenberg-root-four-bit-circuits.md`](sanftenberg-root-four-bit-circuits.md).
+The unresolved issue is the separator for the *whole* circuit, especially
+its pointwise variable products and coefficient/carry recovery. Only a
+sub-`ell/sqrt(log ell)` contraction cost could improve the score; the
+dense-table models above cannot cross that threshold.
 
 No upstream code was copied and no Lean rebuild was run. This ordinary
 argument does not establish a stronger factoring exponent; the repository's

@@ -2367,10 +2367,12 @@ the smallest factor for arbitrary inputs; the direct whole-root contractor
 is only certified at linear width, and the recursive all-input cost remains
 open.
 The unmodified public macro network has linear treewidth under dense-table
-elimination. Its radix-2 expansion into four-word butterfly tables still has
-a treewidth lower bound of `Omega(ell/sqrt(log ell))`, matching the half-rate
-scale; whether bit-level arithmetic circuits reduce the width remains open
-([treewidth analysis](research/sanftenberg-transform-treewidth-floor.md)).
+elimination. Its radix-2 four-word butterfly tables still have a treewidth
+floor of `Omega(ell/sqrt(log ell))`, matching the half-rate scale. At bit
+level the root-four twiddles become signed rotations and each butterfly has
+an `O(T)`-gate circuit; the full separator, including pointwise products and
+carry recovery, remains open ([treewidth analysis](research/sanftenberg-transform-treewidth-floor.md),
+[bit-circuit analysis](research/sanftenberg-root-four-bit-circuits.md)).
 
 ## Sparse oriented power prefixes
 
