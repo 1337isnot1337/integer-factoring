@@ -20,6 +20,13 @@ generation and existence results use the
 The exact algebraic decoders, relation checks, and finite factorization
 certificates do not need that analytic input.
 
+A further [consecutive-power selector](smooth-leading-power-selection.md)
+now constructs its own candidate norms and coordinates. Its
+[adaptive continuation](adaptive-power-window-selection.md) factors a fresh
+144-bit semiprime after 8,232,730 norm tests, including the exhausted first
+phase. This finite search uses no intermediate norm-factoring oracle.
+A uniform bound on the required exponent window remains open.
+
 | Stage | Established result | Main reference |
 | --- | --- | --- |
 | Generate prime forms | An explicit polynomial cutoff generates the full proper class group, including nonfundamental orders. Modular roots and primes are constructed deterministically. | [Cutoffs](explicit-prime-form-cutoffs.md), [factor base](prime-form-root-construction.md) |
@@ -124,6 +131,42 @@ exercise the relaxed contracts. These experiments validate particular
 inputs and implementation behavior. Their practical cutoffs are not the
 enormous cutoffs in the uniform analytic theorems.
 
+### A constructed selector, including failed windows
+
+The newer power selector reduces consecutive powers of each prime form,
+tests the leading coefficient by an exact modular primorial power, and
+divides successful values only by the known base primes. CRT composition
+with an HNF fallback accelerates the consecutive powers. The coordinate
+witness is automatically `(1,0)` in the reduced target form.
+
+| Control | Base generators | Accepted rows | Norm candidates tested |
+| --- | ---: | ---: | ---: |
+| 60-bit input | 18 | 18 | 2,610 |
+| 92-bit input | 85 | 82 | 218,738 |
+| Original 124-bit input | 283 | 274 | 3,650,183 |
+| [Fresh fixed-seed 124-bit input](fresh-leading-power-control.md) | 262 | 248 | 2,301,916 |
+| [Fresh fixed-seed 144-bit input](adaptive-power-window-selection.md) | 513 | 499 | 8,232,730 |
+
+These counts include all rejected candidates in the stated executions.
+The 144-bit search first exhausted a 50,000-step window with 494 rows.
+Continuing only unfinished targets added five rows and a factor after
+154,884 more candidates. If every target has its first success within
+`W` candidates, the retained search tests at most `mW` norms across all
+phases. Doubling uses at most `1+ceil(log_2 W)` phases; base reconstruction
+and retained-state validation are also charged.
+
+The existence theorem for represented smooth values does not imply that
+a reduced leading coefficient is smooth. It therefore does not prove
+the short-window or sparse-exponent-list hypothesis needed by this selector.
+Finite success is not used to claim a worst-case bound.
+
+A separate [dynamic leading-norm constructor](dynamic-leading-norm-closure.md)
+factors smaller norms recursively and grows its prime base. Fresh unit
+elimination keeps every newly retained prime at most the square root of the
+leading-norm height. [Odd-pivot elimination](odd-pivot-two-primary-elimination.md)
+extends this compression while retaining genuine full-group identities.
+The number of introduced and pending primes still needs a uniform bound.
+
 ## 2. Tensor certificates: constructive improvements
 
 The new optimization changes channel bases at each declared lattice
@@ -146,6 +189,22 @@ every chosen boundary start.
 
 These are improvements to the certificate machinery. They do not yet
 beat the best factoring construction or give a larger saving exponent.
+
+### An actual eight-letter crossing
+
+The [nonorthogonal reflection retraction](eight-letter-reflection-retraction.md)
+is an explicit characteristic-two crossing of actual degree 32. Its
+rational common type and exact scale `s=(73/71)^18` certify `rho<18/25`.
+It has strictly lower two-cut pressure than its matched coordinate
+restriction for every finite `s>=10/9`, by the
+[factored pressure identity](eight-letter-pressure-gain-factorization.md).
+Both complete cut profiles,
+the swap endpoint, and the scalar restorations are checked exactly.
+
+This is a constructive gain within that family. The certified trial rate
+`0.72` remains above `1/sqrt(2)`, and the unrestricted ambient reflection
+seed remains numerically stronger. No global optimum or improved
+factoring exponent is asserted.
 
 ## 3. Scoped obstructions guide the next construction
 
@@ -223,6 +282,10 @@ Every linked packet includes an ordinary proof, an executable checker,
 or a precisely scoped source audit. Evidence records include exact
 arithmetic controls and source hashes where applicable. The research
 index links the full packet set and replay commands.
+
+The [verification record](../evidence/beyond-half-verification-20261101.json)
+pins the executed suites, source hashes, finite replays, and analytic
+dependency. `make verify-beyond-half` runs the core checkpoint checks.
 
 Independent agent review and passing finite checks do not turn the
 uniform selector obligation into a theorem. This checkpoint records

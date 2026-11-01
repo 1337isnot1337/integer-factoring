@@ -1325,6 +1325,11 @@ verify-norm-processing:
 	python3 tools/check_selected_norm_factoring.py
 	python3 tools/check_selected_norm_factoring_124_bit.py
 	python3 tools/check_arbitrary_selected_norm_factoring.py
+	python3 tools/check_dynamic_leading_norm_relations.py
+	python3 tools/check_leading_power_smooth_relations.py
+	python3 tools/check_fresh_leading_power_control.py
+	python3 tools/check_odd_pivot_two_primary_elimination.py
+	python3 tools/check_adaptive_leading_power_windows.py
 
 verify-adaptive-channels:
 	python3 tools/check_adaptive_smith_lattices.py
@@ -1344,6 +1349,9 @@ verify-crossing-pressure-certificates:
 	python3 tools/check_clifford_threshold_sharpness.py
 	python3 tools/check_homogeneous_restriction_floor.py
 	python3 tools/check_joint_height_conjugations.py
+	python3 tools/check_eight_letter_reflection_retraction.py
+	python3 tools/check_eight_letter_pressure_factorization.py
+	python3 tools/check_polynomial_joint_height_rigidity.py
 
 verify-protected-scalar-pressure:
 	python3 tools/check_triangular_auxiliary_row_fiber.py
@@ -1352,6 +1360,10 @@ verify-protected-scalar-pressure:
 
 verify-reflection-codes-full:
 	python3 tools/check_reflection_coordinate_codes.py --full --progress --output evidence/reflection-coordinate-codes.json
+
+.PHONY: verify-adaptive-power-full
+verify-adaptive-power-full:
+	python3 tools/check_adaptive_leading_power_windows.py --full
 
 # beyond-half-checks:end
 

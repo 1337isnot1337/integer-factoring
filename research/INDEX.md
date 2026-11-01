@@ -7,7 +7,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 <!-- beyond-half-index:start -->
 ## November 1 arithmetic and tensor checkpoint
 
-[Overview and exact selector contract](beyond-half-research-checkpoint.md). Ordinary proofs and executable evidence; complete score remains 1/2.
+[Overview and exact selector contracts](beyond-half-research-checkpoint.md). Ordinary proofs and executable evidence; complete score remains 1/2.
 
 - [Prove polynomial-size prime-form generation and exact biased samples](polylog-prime-form-generators.md).
 - [Make prime-form generator and bias cutoffs explicit](explicit-prime-form-cutoffs.md).
@@ -21,7 +21,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Replay powered-prime smooth-norm existence on finite class groups](powered-prime-finite-replay.md).
 - [Complete the selected-integer factoring consumer](selected-norm-factoring-interface.md).
 - [Remove the multiplicity promise from the unsigned consumer](height-only-selected-integers.md).
-- [Decode arbitrary factored norms and minimize primitive content](arbitrary-factored-norm-representation.md).
+- [Decode arbitrary factored norms with a bound on primitive norm](arbitrary-factored-norm-representation.md).
 - [Bound coverage of one target-independent norm list](norm-selector-coverage.md).
 - [Prove the elementary crossing floor after all binary type restrictions](direct-type-elementary-pressure-floor.md).
 - [Classify all rank-seven constant restrictions of three elementary sites](linear-physical-restriction-crossings.md).
@@ -29,6 +29,9 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Pin the scope of the recent rigorous ideal sampler](rigorous-ideal-sampling-scope.md).
 - [Show the row-frame threshold is sharp and exhibit the cubic induction obstruction](clifford-threshold-sharpness.md).
 - [Sharpen supplied-norm processing to a uniform one-half leading coefficient](quasipolynomial-base-norm-processing.md).
+- [Construct dynamic half-size leading norms with certified fresh-unit elimination](dynamic-leading-norm-closure.md).
+- [Search fixed prime-form power windows and factor 92-bit and 124-bit controls](smooth-leading-power-selection.md).
+- [Replay an unrelated fixed-seed 124-bit smooth-power factorization](fresh-leading-power-control.md).
 - [Direct supplied smooth norms give signed short prime words](smooth-norm-short-words.md).
 - [Polynomial ideal HNF and uniform Delta=-4N extraction structure](direct-discriminant-short-norms.md).
 - [Complete finite norm sieve and original 60/92-bit factoring certificates](complete-smooth-norm-sieve.md).
@@ -43,6 +46,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Exact homogeneous physical restrictions of the two-site reflection seed](reflection-homogeneous-restrictions.md).
 - [All-scale 5/7 floor for every homogeneous middle-fiber restriction](homogeneous-restriction-pressure-floor.md).
 - [Complete joint physical conjugations cannot improve the four-letter reflection seed](joint-height-conjugation-floor.md).
+- [Fresh odd pivots preserve exact identities and the presented two-primary torsion](odd-pivot-two-primary-elimination.md).
+- [All-degree binary nilpotent joint frames of the four-letter reflection seed are rigid](polynomial-joint-height-rigidity.md).
 - [State-adaptive physical Smith channels](state-adaptive-smith-channels.md).
 - [Matroid optimization within equal-order channel blocks](matroid-adaptive-smith-channels.md).
 - [Complete regular channel bases through finite jets](dvr-adaptive-smith-channels.md).
@@ -54,6 +59,9 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [All-degree seven-letter adjugate floor and capped jets](adjugate-seven-letter-pressure-floor.md).
 - [All coordinate codes of two reflection sites have an exact pressure floor](reflection-coordinate-code-pressure-floor.md).
 - [Smith orders bounded by degree close alphabets through ten](bounded-order-smith-pressure-floor.md).
+- [An explicit eight-letter nonorthogonal reflection crossing](eight-letter-reflection-retraction.md).
+- [A wider exact pressure-gain interval for the eight-letter retraction](eight-letter-pressure-gain-factorization.md).
+- [Adaptive power windows and a fresh 144-bit factorization](adaptive-power-window-selection.md).
 
 <!-- beyond-half-index:end -->
 
