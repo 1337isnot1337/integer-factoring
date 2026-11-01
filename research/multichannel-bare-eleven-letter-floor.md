@@ -93,8 +93,10 @@ previous pressure comparison; it does not assert scalar cofactor identities
 for arbitrary matrix-valued entries or rule out independently gauged designs.
 
 Run `make verify-multichannel-bare-entropy`. The receipt pins all compiler,
-arithmetic, witness and checker sources. The full default replay at
-`7e1c1d8` predates this entropy package; its focused replay is separate.
+arithmetic, witness and checker sources. The later
+[clean full replay](../evidence/higher-words-full-verification.json) at
+`269efb8` includes this entropy package and passed defaults plus fifteen
+joint/cofactor targets.
 The twelve-letter bare interface remains unresolved by these witnesses.
 No new Lean formalization, independent mathematical review or improved
 factoring algorithm is claimed. Substantial OpenAI assistant support was used.

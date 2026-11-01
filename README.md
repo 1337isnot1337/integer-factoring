@@ -2523,9 +2523,9 @@ scale `17/14`, direct integer arithmetic proves its formal bare rate is below
 `707/1000<1/sqrt(2)`. No polynomial tensor realizing it is known. Run
 `make verify-q12-integer-word-target`; the factoring score remains **1/2**.
 
-The [latest full verification receipt](evidence/multichannel-full-verification.json)
-pins a successful clean default replay and eleven named joint/cofactor
-targets to exact `7e1c1d8`: 352 Python command blocks, 66 unit tests,
-five crossing tests and 985 Markdown files. The later entropy and inherited
-second-jet packages have separate focused passes, outside that full-source
-pin. These checks supply no realizing tensor or independent mathematical review.
+The [latest full verification receipt](evidence/higher-words-full-verification.json)
+pins a successful clean default replay and fifteen named joint/cofactor
+targets to exact `269efb8`: 356 Python command blocks, 66 unit tests,
+five crossing tests and 988 Markdown files. Later main integration and
+integer-degree point packages have separate focused passes, outside that
+full-source pin. These checks supply no realizing tensor or independent review.

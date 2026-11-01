@@ -151,7 +151,10 @@ normalization. The point and its historical weaker-relaxation receipt are
 retained; it is no longer a construction target under (3).
 
 The written argument supplies the all-field claim; the finite controls
-test the implementation. This package postdates the clean full replay at
-`7e1c1d8` and has a separate focused replay. No uniform twelve-letter
-obstruction, realizing tensor, new Lean proof or independent mathematical
-review is claimed. Substantial OpenAI assistant support was used.
+test the implementation. A [clean full replay](../evidence/higher-words-full-verification.json)
+at exact `269efb8` passed defaults and fifteen named joint/cofactor targets:
+356 Python command blocks, 66 unit tests, five crossing tests and 988
+Markdown files. Later main integration and integer targets are outside that
+source pin. No uniform twelve-letter obstruction, realizing tensor, new Lean
+proof or independent mathematical review is claimed. Substantial OpenAI
+assistant support was used.
