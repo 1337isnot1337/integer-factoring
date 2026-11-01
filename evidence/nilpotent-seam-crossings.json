@@ -2,6 +2,26 @@
   "status": "pass",
   "field": "F4; independent sampled entry controls over F16",
   "central_eigensector_polynomial_degree_controls": 80,
+  "mandatory_cup_projector_controls": [
+    {
+      "length": 4,
+      "free_pairs": 1,
+      "placements_checked": 4,
+      "exact_projector_rank": 1
+    },
+    {
+      "length": 6,
+      "free_pairs": 1,
+      "placements_checked": 6,
+      "exact_projector_rank": 1
+    },
+    {
+      "length": 8,
+      "free_pairs": 2,
+      "placements_checked": 28,
+      "exact_projector_rank": 2
+    }
+  ],
   "packed_rank_reference_controls": 24,
   "independent_scalar_evaluations": 512,
   "independent_complete_bivariate_entries": 4,
@@ -376,9 +396,9 @@
   ],
   "scope": "Uniform complementary asymmetric edge bounds, not a whole-crossing decomposition; finite edge spans miss the crossing; no stronger factoring score.",
   "source_sha256": {
-    "research/nilpotent-seam-crossings.md": "baccbd167f519373d9727087c72ac72f45a36288a72f8b06623b93477520d05c",
+    "research/nilpotent-seam-crossings.md": "f3458286f8ae2a8e909eb9048319fdae702b17993f2692dafe14bc6352e89c11",
     "tools/quantum_braid_nilpotent_seam.py": "d1b32af8841288e739d9b089f2439c03f34502d933f4c377f29dca10bc3363d6",
-    "tools/check_quantum_braid_nilpotent_seam.py": "2332ca617ff53ec4aa8eea59732cdb0da6f3e1344048e89acd1fea090dd2b5d4",
+    "tools/check_quantum_braid_nilpotent_seam.py": "4381cc0e444cf74c36884137ed3d20c9f91d896476bc6242448ad6fe231a26ff",
     "tools/quantum_braid_rank_one.py": "793ba42f93afe8ffbf524d56bebfe7185887da72d94c9ca30c0515f57730d3e5",
     "tools/quantum_braid_path.py": "4a6ce2cbad920cbe6dde6b6abf4642675a1d3d13955c8be67e6d0b6c97eae946",
     "tools/check_quantum_braid_path_profiles.py": "edbc7f1ed7ff0ca35da5ff5603a08cfd528b549b7cf4e9d3ca828c7f447e0af7",

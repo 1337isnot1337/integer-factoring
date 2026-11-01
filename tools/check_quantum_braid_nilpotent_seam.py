@@ -5,7 +5,7 @@ from __future__ import annotations
 
 import argparse
 from hashlib import sha256
-from itertools import product
+from itertools import combinations, product
 import json
 from pathlib import Path
 from random import Random
@@ -68,6 +68,45 @@ def auxiliary_controls(random):
         )
         assert rank(matrix) == field.rank(matrix.tolist())
     return count
+
+
+def cup_image_controls():
+    """Full global path matrices, not only the middle-zero boundary block."""
+    records = []
+    for length in (4, 6, 8):
+        ps = paths(2 * length)
+        indices = {p: i for i, p in enumerate(ps)}
+        free = length // 4
+        cases = 0
+        for selected in combinations(range(length), length - free):
+            matrix = np.eye(len(ps), dtype=np.uint8)
+            for pair in selected:
+                diagonal = np.zeros(len(ps), dtype=np.uint8)
+                source, target = [], []
+                for i, p in enumerate(ps):
+                    for q, c in local_action(p, 2 * pair):
+                        if q == p:
+                            diagonal[i] = c
+                        else:
+                            source.append(i)
+                            target.append(indices[q])
+                source, target = np.array(source, dtype=int), np.array(
+                    target, dtype=int
+                )
+                following = FIELD[diagonal[:, None], matrix]
+                following[target] ^= FIELD[diagonal[source, None], matrix[source]]
+                matrix = following
+            assert rank(matrix) == len(paths(2 * free))
+            cases += 1
+        records.append(
+            {
+                "length": length,
+                "free_pairs": free,
+                "placements_checked": cases,
+                "exact_projector_rank": len(paths(2 * free)),
+            }
+        )
+    return records
 
 
 def direct_entry(four_paths, x, y):
@@ -172,6 +211,7 @@ def strip_profiles(tensor, identity, swap):
 def check():
     random = Random(912438)
     degree_controls = auxiliary_controls(random)
+    cup_controls = cup_image_controls()
     profiles, scalar_controls = [], 0
     for length, expected_span, first_width in ((4, 10, 2), (6, 69, 6), (8, 118, 8)):
         ps = paths(length)
@@ -189,7 +229,9 @@ def check():
         top_pairs = [cut_ranks(v) for v in tensor[-1]]
         low_pairs = [cut_ranks(v) for v in tensor[:, 0]]
         for j, pair in enumerate(top_pairs):
-            assert pair[0] <= 8 * (length + 1) ** 3 * (j + 1) * 4 ** (length // 4)
+            assert pair[0] <= 8 * (length + 1) ** 3 * (j + 1) * len(
+                paths(2 * (length // 4))
+            )
         for i, pair in enumerate(low_pairs):
             assert pair[1] <= 16 * (i + 1)
         strips = strip_profiles(tensor, identity, swap)
@@ -239,6 +281,7 @@ def check():
         "status": "pass",
         "field": "F4; independent sampled entry controls over F16",
         "central_eigensector_polynomial_degree_controls": degree_controls,
+        "mandatory_cup_projector_controls": cup_controls,
         "packed_rank_reference_controls": 24,
         "independent_scalar_evaluations": scalar_controls,
         "independent_complete_bivariate_entries": 4,

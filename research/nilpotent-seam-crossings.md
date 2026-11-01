@@ -10,9 +10,7 @@ For an L-letter alphabet at its least physical length n, the highest
 allowed central-degree coefficients have row rank
 
 ```math
-L^{\beta+o(1)},\qquad
-\beta=\frac{\log2}{2\log\varphi}=0.72021\ldots<\frac34,
-\qquad \varphi=(1+\sqrt5)/2,                    \tag{1}
+L^{1/2+o(1)},\qquad \varphi=(1+\sqrt5)/2,        \tag{1}
 ```
 
 and column rank at most `L^2`. The zero boundary-degree coefficients
@@ -122,12 +120,30 @@ The alternative N letter in that exceptional position would give
 four consecutive N's and vanish.
 
 For every such position set, the mandatory `e_i` factors project
-`n-m` disjoint central physical pairs onto one-dimensional cups.
-The remaining m pairs have total dimension `4^m`. All additional
-central physical factors commute with these projections, so summing
-the remaining auxiliary choices does not enlarge their image.
-Including the four-state auxiliary, this central operator has rank
-at most `4*4^m` for each position set.
+`n-m` disjoint central pairs onto cups. The relevant image dimension
+is smaller than the ordinary physical bound `4^m`: it is exactly
+the dimension of the **2m-strand vacuum quotient**.
+
+Write `v_(2m)` for the number of height-three return paths of length
+2m, with `v_0=1`. Insert the `n-m` adjacent cups to obtain
+`C:V_(2m)->V_(2n)`, and remove them with caps to obtain D in the
+opposite direction. These maps are well defined on the same
+negligible-wall quotient: its defining ideal is killed by every
+closed vacuum pairing, including after inserting or removing cups.
+The explicit cup/cap identities give
+
+```math
+DC=\alpha^{n-m}I,\qquad
+CD=\prod_{\text{mandatory sites}}e_i.
+```
+
+The scalar is nonzero, so C is injective, D is surjective, and the
+displayed central projector has exact rank `v_(2m)`. This argument
+uses the quotient representation, without an ordinary ambient
+invariance assumption. All additional central physical factors
+commute with the mandatory projectors, so their common image is
+preserved. Including the auxiliary, each position set therefore
+contributes rank at most `4*v_(2m)`.
 
 The circuits before and after A are polynomials in y. Extracting
 degree b is a convolution of at most b+1 left/right factors.
@@ -137,13 +153,13 @@ bound
 
 ```math
 \boxed{\quad r(G_{a_*,b})
- \le8(n+1)^3(b+1)4^{\lfloor n/4\rfloor}.\quad}  \tag{4}
+ \le8(n+1)^3(b+1)v_{2\lfloor n/4\rfloor}.\quad} \tag{4}
 ```
 
-This bound is proved on physical matrices over F16, and gives the
-same rank for their F4 path entries: matrix rank is unchanged by
-extension of the coefficient field. No extension-degree penalty is
-needed for (4). The highest allowed coefficient can vanish: at six
+The quotient matrices and their constant rank factors are over F4;
+the earlier quotient comparison identifies their boundary blocks
+with the ambient encoder calculation. No extension-degree penalty
+is needed for (4). The highest allowed coefficient can vanish: at six
 sites `a_*=11` is zero and the actual degree is10. This is recorded,
 not replaced by an unsupported bound on the lower coefficient.
 
@@ -171,15 +187,13 @@ Again rank over F4 equals rank after the temporary F16 extension.
 
 ## 4. The remaining spanning problem
 
-Since `L=Theta(phi^n)`, equation (4) gives (1), while (5) is
-`L^o(1)`. The exact inequality `phi^3=2+sqrt(5)>4` implies
-`beta<3/4`. Thus the union of these two O(n)-size edge families has
+Since `v_(2m)=O(phi^(2m))` and `L=Theta(phi^n)`, equation (4) gives
+(1), while (5) is `L^o(1)`. Thus the union of these two O(n)-size edge families has
 the favorable rank budget
 
 ```math
 \sum_{\text{edges}}\sqrt{r(T)c(T)}
- \le L^{1+\beta/2+o(1)}
- < L^{11/8+o(1)},\qquad 11/8<\sqrt2.            \tag{6}
+ \le L^{5/4+o(1)},\qquad 5/4<\sqrt2.            \tag{6}
 ```
 
 Equation (6) is a budget **for the listed pieces**. To use the
@@ -203,7 +217,8 @@ open task.
 [The implementation](../tools/quantum_braid_nilpotent_seam.py) constructs
 the complete bivariate tensors. The
 [replay](../tools/check_quantum_braid_nilpotent_seam.py) checks endpoints,
-degree bounds, constant auxiliary identities, independent scalar
+degree bounds, exact ranks of all mandatory-cup placements at4/6/8sites,
+constant auxiliary identities, independent scalar
 propagation over F16, exact cut profiles and strip-span membership.
 The [source-pinned receipt](../evidence/nilpotent-seam-crossings.json)
 records full4/6/8-site results. These have coefficient-span dimensions

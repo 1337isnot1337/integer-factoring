@@ -713,7 +713,7 @@ the constant column-rank-one line. Higher ranks and longer paths
 remain open. Run `make verify-braid-rank-one` (NumPy).
 The [nilpotent central-seam family](research/nilpotent-seam-crossings.md)
 now gives complementary asymmetric coefficient families: the highest
-allowed central edge has row rank `L^(0.72022...+o(1))`, below the
+allowed central edge has row rank `L^(1/2+o(1))`, below the
 post-half small-cut threshold, and the opposite edge has polynomial
 column rank. Exact eight-site pairs include `(8,169)` and `(134,2)`.
 Their checked edge spans still miss the crossing; a spanning identity
