@@ -2615,3 +2615,9 @@ verify-prepared-oriented-power-search:
 	python3 tools/check_prepared_oriented_power_search.py --replay evidence/prepared-oriented-power-search.json
 
 verify-oriented-coprime-basis: verify-small-pivot-integer-rows verify-prepared-oriented-power-search
+
+.PHONY: verify-oriented-basis-linear-charges
+verify-oriented-basis-linear-charges:
+	python3 tools/check_oriented_norm_basis_lift.py --output /tmp/oriented-norm-basis-lift-verify.json
+
+verify-oriented-coprime-basis: verify-oriented-basis-linear-charges

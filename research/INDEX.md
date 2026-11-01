@@ -1,5 +1,7 @@
 # Research index
 
+- [Linear oriented supplied-data charges](oriented-basis-linear-charges.md): a constructive norm-to-orientation transfer, batch coprimality validation, and a global amortized bound for sparse usage rewrites.
+
 - [Prepared oriented selector controls](../evidence/prepared-oriented-power-search.json) and [declared 128-bit policy](../evidence/prepared-oriented-fresh-128-policy.json): exact component substitutions and bounded fresh-run provenance.
 
 - [Completed larger F16 profiles](tensor-f16-capped-search.md#5-completed-larger-profiles-and-nearby-controls): full capped 108-label runs and nearby coordinate controls.

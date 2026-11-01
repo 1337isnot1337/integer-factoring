@@ -148,9 +148,9 @@ replayable acceleration of this repository's oriented streaming basis.
 
 The [receipt](../evidence/batched-coprime-bucket-basis.json) uses three
 repetitions of each method and rotates their execution order. The
-measured interval includes all insertions and result export. Complete
-payload comparison and independent literal-ideal verification follow
-outside that interval for every method. Other research processes were
+measured interval includes all insertions and result export. Every
+method's complete payload is compared outside that interval, and the
+common payload receives independent literal-ideal verification. Other research processes were
 active, so CPU measurements are more useful than cross-run wall times.
 
 | Complete supplied prefix | Global quotient tree CPU | Local buckets CPU | Prepared buckets CPU |
@@ -173,8 +173,9 @@ and return the same 27,584 final usage entries.
 ## 6. Verification
 
 The focused checker covers 1,476 prepared overlap queries with 2,239
-interleaved mutable-leaf transitions. It checks every bucket node and
-both delta invariants after every query. The cases include prime powers,
+interleaved mutable-leaf transitions. It checks every bucket node, the
+current-product invariant, and coprimality of retained and added leaves
+after every query. The cases include prime powers,
 slot reuse, removal of frozen and new leaves, growth, and batch sizes
 that differ from bucket sizes.
 
