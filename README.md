@@ -242,6 +242,12 @@ computes complete residue-block sums of `2^L M^-1` modulo `2^p`, in time
 polynomial in the encoded domains and numerical precision parameters.
 The missing step is a sufficiently compressed rank or Smith-count algorithm;
 inverse block sums do not by themselves count factor pairs.
+
+A [batched rational-pole engine](research/pole-cauchy-pole-polynomials.md) contracts explicit quadratic
+coefficient arrays using just two product jets. It incorporates coefficient
+divisibility before choosing precision and replaces the `p^2` termwise
+residue-block calls by one contraction. Exact dense checks and nonzero
+402-bit-domain controls through nine output bits are retained.
 <!-- pole-implicit-checkpoint:end -->
 
 The [research index](research/INDEX.md) links proofs, exact evidence, and replay commands.

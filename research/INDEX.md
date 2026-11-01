@@ -1082,3 +1082,5 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 
 - [A 96-letter coherent pressure certificate](coherent-q96-pressure.md)
 - [The complete 496-map boundary optimum](coherent-q32-complete-boundary-optimum.md)
+
+- [Batched proper rational weights and normalized inverse blocks](pole-cauchy-pole-polynomials.md)
