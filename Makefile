@@ -3137,3 +3137,9 @@ verify-multiplier-treewidth-controls:
 
 verify-multiplier-treewidth-brackets:
 	python3 tools/multiplier_treewidth/tw_multipliers.py
+
+.PHONY: verify-witt-trace-words
+verify-witt-trace-words:
+	python3 tools/check_witt_trace_word_circuits.py
+
+verify-arithmetic: verify-witt-trace-words

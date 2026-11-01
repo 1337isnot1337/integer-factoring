@@ -1,0 +1,317 @@
+{
+  "scope": "Pointwise known-exact-division word circuits and finite trace images. Weighted small-query controls use complete measured fibres; no fast contraction or larger-field enumeration is claimed.",
+  "models": [
+    {
+      "degree": 5,
+      "polynomial": 37,
+      "precision": 15,
+      "complete_field_points": 32,
+      "point_trace_sha256": "4ecb5d3a12d26905b4ca4a0103c0afbe7c284c5338df783cd3e221edfa1e0b27"
+    },
+    {
+      "degree": 9,
+      "polynomial": 529,
+      "precision": 29,
+      "complete_field_points": 512,
+      "point_trace_sha256": "a208f16e6323ba1893c91456ecc2189fedf0249455594618f623178720263b6b"
+    }
+  ],
+  "trace_images": [
+    {
+      "parameters": {
+        "bits": 1,
+        "degree": 5,
+        "genus": 0,
+        "hasse_gap": 32,
+        "count_precision": 11,
+        "zero_bits": 3,
+        "starting_precision": 15
+      },
+      "complete_trace_inputs": 32,
+      "word_multiplicities": [
+        16,
+        16
+      ]
+    },
+    {
+      "parameters": {
+        "bits": 2,
+        "degree": 9,
+        "genus": 1,
+        "hasse_gap": 508,
+        "count_precision": 19,
+        "zero_bits": 5,
+        "starting_precision": 26
+      },
+      "complete_trace_inputs": 512,
+      "word_multiplicities": [
+        136,
+        136,
+        120,
+        120
+      ]
+    },
+    {
+      "parameters": {
+        "bits": 3,
+        "degree": 9,
+        "genus": 7,
+        "hasse_gap": 316,
+        "count_precision": 19,
+        "zero_bits": 7,
+        "starting_precision": 29
+      },
+      "complete_trace_inputs": 512,
+      "word_multiplicities": [
+        64,
+        82,
+        54,
+        72,
+        72,
+        54,
+        66,
+        48
+      ]
+    }
+  ],
+  "weighted_native_queries": [
+    {
+      "target": 2,
+      "degree": 9,
+      "count_precision": 19,
+      "weighted_counts": {
+        "": 0,
+        "0": 0,
+        "1": 0,
+        "00": 0,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      },
+      "recovered_factor": 2,
+      "recovery_queries": 1
+    },
+    {
+      "target": 3,
+      "degree": 9,
+      "count_precision": 19,
+      "weighted_counts": {
+        "": 0,
+        "0": 0,
+        "1": 0,
+        "00": 0,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      },
+      "recovered_factor": 3,
+      "recovery_queries": 1
+    },
+    {
+      "target": 4,
+      "degree": 9,
+      "count_precision": 19,
+      "weighted_counts": {
+        "": 2916,
+        "0": 2916,
+        "1": 0,
+        "00": 0,
+        "01": 2916,
+        "10": 0,
+        "11": 0,
+        "000": 0,
+        "001": 0,
+        "010": 2916,
+        "011": 0,
+        "100": 0,
+        "101": 0,
+        "110": 0,
+        "111": 0
+      },
+      "recovered_factor": 2,
+      "recovery_queries": 4
+    },
+    {
+      "target": 5,
+      "degree": 9,
+      "count_precision": 19,
+      "weighted_counts": {
+        "": 0,
+        "0": 0,
+        "1": 0,
+        "00": 0,
+        "01": 0,
+        "10": 0,
+        "11": 0,
+        "000": 0,
+        "001": 0,
+        "010": 0,
+        "011": 0,
+        "100": 0,
+        "101": 0,
+        "110": 0,
+        "111": 0
+      },
+      "recovered_factor": 5,
+      "recovery_queries": 1
+    },
+    {
+      "target": 6,
+      "degree": 9,
+      "count_precision": 19,
+      "weighted_counts": {
+        "": 7776,
+        "0": 7776,
+        "1": 0,
+        "00": 0,
+        "01": 7776,
+        "10": 0,
+        "11": 0,
+        "000": 0,
+        "001": 0,
+        "010": 3888,
+        "011": 3888,
+        "100": 0,
+        "101": 0,
+        "110": 0,
+        "111": 0
+      },
+      "recovered_factor": 2,
+      "recovery_queries": 4
+    },
+    {
+      "target": 7,
+      "degree": 9,
+      "count_precision": 19,
+      "weighted_counts": {
+        "": 0,
+        "0": 0,
+        "1": 0,
+        "00": 0,
+        "01": 0,
+        "10": 0,
+        "11": 0,
+        "000": 0,
+        "001": 0,
+        "010": 0,
+        "011": 0,
+        "100": 0,
+        "101": 0,
+        "110": 0,
+        "111": 0
+      },
+      "recovered_factor": 7,
+      "recovery_queries": 1
+    }
+  ],
+  "scalar_word_controls": [
+    {
+      "target": 9,
+      "degree": 17,
+      "counts": {
+        "": 1,
+        "0": 1,
+        "1": 0,
+        "00": 1,
+        "01": 0,
+        "10": 0,
+        "11": 0,
+        "000": 0,
+        "001": 1,
+        "010": 0,
+        "011": 0,
+        "100": 0,
+        "101": 0,
+        "110": 0,
+        "111": 0,
+        "0000": 0,
+        "0001": 0,
+        "0010": 0,
+        "0011": 1,
+        "0100": 0,
+        "0101": 0,
+        "0110": 0,
+        "0111": 0,
+        "1000": 0,
+        "1001": 0,
+        "1010": 0,
+        "1011": 0,
+        "1100": 0,
+        "1101": 0,
+        "1110": 0,
+        "1111": 0
+      },
+      "recovered_factor": 3,
+      "scope": "Scalar word-pair circuit controls; the field domain is not enumerated."
+    },
+    {
+      "target": 15,
+      "degree": 17,
+      "counts": {
+        "": 2,
+        "0": 2,
+        "1": 0,
+        "00": 1,
+        "01": 1,
+        "10": 0,
+        "11": 0,
+        "000": 0,
+        "001": 1,
+        "010": 1,
+        "011": 0,
+        "100": 0,
+        "101": 0,
+        "110": 0,
+        "111": 0,
+        "0000": 0,
+        "0001": 0,
+        "0010": 0,
+        "0011": 1,
+        "0100": 0,
+        "0101": 1,
+        "0110": 0,
+        "0111": 0,
+        "1000": 0,
+        "1001": 0,
+        "1010": 0,
+        "1011": 0,
+        "1100": 0,
+        "1101": 0,
+        "1110": 0,
+        "1111": 0
+      },
+      "recovered_factor": 3,
+      "scope": "Scalar word-pair circuit controls; the field domain is not enumerated."
+    }
+  ],
+  "rejected_parameter_pairs": [
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      4
+    ]
+  ],
+  "negative_missing_words": [
+    2,
+    3
+  ],
+  "counts": {
+    "complete_field_points": 544,
+    "decoded_trace_words": 1056,
+    "pointwise_word_pair_circuits": 19936,
+    "weighted_prefix_queries": 74,
+    "scalar_prefix_queries": 62,
+    "recovery_queries": 22
+  },
+  "query_sha256": "c549d418f462c2c8bc8b17ff032a7353110cca8dfa4fccffd2c976ac438b0774",
+  "source_sha256": {
+    "tools/witt_trace_word_circuits.py": "358f8ee944ed966e3b56526abae756e7ee35be9fef868b24f44b44a3ccf72954",
+    "tools/check_witt_trace_word_circuits.py": "7ad737b00bab19ec855882470463760e6f414dc69486b5ac0558dc3a3cb116b9",
+    "tools/teichmuller_cyclic_carries.py": "dd79f4fc588d3caf1249439a05ffc37a9e10d3d52de9723d3fa0a10a7d7557d1",
+    "tools/check_carry_fourier_elimination.py": "ad1065db63bc74779105964c2ed8c3cf5e91f82d514fa70580fa8eb31a091763"
+  },
+  "factoring_exponent": "1/2; unchanged"
+}
