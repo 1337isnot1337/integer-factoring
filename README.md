@@ -27,6 +27,12 @@ The complete Lean endpoint is [`IntegerFactoring.HalfAppendix.sqrtLogLog_factori
 
 The composition uses the existing clique evaluator from [Anthropic's Appendix B](https://github.com/anthropics/formal-math) and the multiplication-network reduction by [Isaac Rudich and Louis-Martin Rousseau](https://github.com/IsaacRudich/SubexponentialDeterministicFactoring). See the [written proof](research/half-rate-factoring.md), the [constructor](research/half-top-constructor.md), and the [evaluator audit](research/half-evaluator-audit.md).
 
+An [intake of David Sanftenberg's semiprime work](research/sanftenberg-semiprime-intake.md)
+identifies a reusable deterministic boundary contractor and packed-moment
+scalar. Its target has the same logarithmic saving exponent; its complete
+primitive-machine runtime remains open. The pinned Python prototype replay
+passes, without a new Lean build or stronger bound here.
+
 <!-- arithmetic-space-checkpoint:start -->
 The Pascal search now supports [arbitrary exponent permutations](research/permuted-pascal-free-gauges.md),
 [correlated symbol potentials](research/pascal-symbol-potentials.md),
