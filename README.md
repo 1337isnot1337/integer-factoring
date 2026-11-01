@@ -1981,3 +1981,11 @@ independent binary-polynomial Smith implementation. This closes boundary-only
 natural-pressure searches in that family; changes to lower states and other
 gauges remain open. The factoring score stays `1/2`. Run
 `make verify-moving-boundary` for the construction and all-scale certificates.
+
+The same [moving-map note](research/moving-boundary-crossings.md#codimension-one-frames-with-no-protected-lower-coordinate-core)
+now gives polynomial and Laurent physical frames that can move all eight
+states. Common monomial clearing preserves the coefficient ranks and
+opposite-cut product pressure. A complete 1,696-evaluation interior-pair
+screen and 144 declared frame pilot cases give no improved bound. Dense
+Laurent contraction checks and all complete finite profiles are retained;
+the larger frame search remains open.

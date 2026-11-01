@@ -1321,6 +1321,8 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 
 - [Moving physical maps and a seven-letter core obstruction](moving-boundary-crossings.md): explicit polynomial paired maps, a complete 256-pair affine F4 screen, and an exact all-degree natural-pressure floor `rho >= 5/7` for every tensor retaining the specified lower subtensor.
 
+- [Interior moving frames and reciprocal Laurent flows](moving-boundary-crossings.md#codimension-one-frames-with-no-protected-lower-coordinate-core): codimension-one physical maps with an exact split identity, monomial-clearing invariance, a complete 1,696-evaluation interior screen, and 144 finite frame controls. The full positive-construction target remains open.
+
 ## First orthogonal candidate: exact natural-pressure floor
 
 [Low-core exclusion](orthogonal-pair-core-floor.md) proves balanced natural rho >= 32/45 for the specified92-letter candidate without completing its full profile. Other gauges, asymmetric criteria and low-core changes remain outside this result.

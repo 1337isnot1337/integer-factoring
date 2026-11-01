@@ -24,6 +24,8 @@ verify-docs:
 verify-moving-boundary:
 	python3 tools/check_moving_boundary_crossings.py --output /tmp/moving-boundary-controls.json
 	python3 tools/check_moving_boundary_core_floor.py --output /tmp/moving-boundary-core-floor.json
+	python3 tools/check_moving_interior_crossings.py --output /tmp/moving-interior-controls.json
+	python3 tools/check_moving_physical_frames.py --output /tmp/moving-physical-frame-controls.json
 
 .PHONY: verify-pole-smith verify-joint-top-boundary
 verify-pole-smith:
