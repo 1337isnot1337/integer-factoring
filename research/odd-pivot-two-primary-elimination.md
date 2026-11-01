@@ -16,7 +16,8 @@ The algorithm below keeps exact identities in the full group throughout.
 This is a presentation compression theorem, not a bound on how quickly
 useful relations can be selected. It leaves the uniform closure and
 short-power-window questions in
-[dynamic leading-norm closure](dynamic-leading-norm-closure.md) open.
+[dynamic leading-norm closure](dynamic-leading-norm-closure.md) and
+[smooth leading powers](smooth-leading-power-selection.md) open.
 
 ## 1. An exact common multiplier
 
@@ -95,6 +96,24 @@ Replacing `3q=0` by the rational-looking assignment `q=0` would instead
 produce `2g=0`, which is false. Its proposed half `g` has order six.
 In particular, even the expression `V_q=0` does not permit cancelling
 the common odd multiplier. The engine never performs this cancellation.
+
+The same issue occurs in an actual quadratic class group. For
+`N=6743=11*613`, `Delta=-6743`, let
+
+\[
+ g_2=(2,1,843),\qquad g_3=(3,1,562).
+\]
+
+Exact reduction gives `g_2^6=(27,-13,64)=g_3^-3` and
+`g_3^7=(16,13,108)=g_2^4`. Starting with `g_2` alone, the first row
+introduces the fresh prime `3` with odd coefficient three. The two rows
+`(6,3)` and `(-4,7)` compress to the genuine one-generator relation
+`-54 g_2=0`, with common multiplier three. Its half gives a useful
+ambiguous class and the proper factor 11. In contrast,
+`g_3+2g_2=(12,-11,143)` is a nonidentity class of order three.
+Cancelling the multiplier would produce the false row `-18 g_2=0`.
+The checker verifies all these identities directly, without a supplied
+class-group order.
 
 ## 3. The preserved object
 
@@ -191,7 +210,8 @@ the full-group invariant after each update. Small product groups have an
 independently constructed saturated relation lattice, so their complete
 torsion-image involution sets can be compared before and after compression.
 It also checks negative and higher odd pivots, deep multiplier growth,
-the order-six counterexample, and every stored dynamic history.
+the order-six counterexample, the actual fresh cubic-prime class-group
+example, and every stored dynamic history.
 
 ```sh
 python3 tools/check_odd_pivot_two_primary_elimination.py \
