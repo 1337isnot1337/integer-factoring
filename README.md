@@ -2177,3 +2177,10 @@ gives `2^(n/3+O(n/log n))` bit time and polynomial space, including direct
 smallest-prime-factor recovery. This improves that representation's earlier
 half-exponent enumeration, while remaining weaker than the repository's main
 theorem and older general factoring algorithms. The scoring exponent stays `1/2`.
+
+[Compact unit traces](research/unit-presentation-traces.md) preserve the same
+integer presentation by independently checking each elementary substitution.
+On the 80-bit fixture, the additional unit certificate shrinks from 3,113,278
+to 21,638 JSON bytes while sharing the complete graph certificate. The final
+rows, retained generators and torsion image agree with the expanded maps.
+The full relation-search and factoring exponents remain unchanged.

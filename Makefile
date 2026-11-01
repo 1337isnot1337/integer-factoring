@@ -2532,3 +2532,10 @@ verify-circuit-box-normalization: verify-circuit-box-ratio-lookahead
 
 verify-circuit-box-ratio-lookahead:
 	python3 tools/check_circuit_box_ratio_lookahead.py --output /tmp/integer-factoring-ratio-lookahead.json
+
+.PHONY: verify-unit-presentation-trace
+
+verify-oriented-refinement: verify-unit-presentation-trace
+
+verify-unit-presentation-trace:
+	python3 tools/check_unit_presentation_trace.py
