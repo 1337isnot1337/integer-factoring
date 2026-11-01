@@ -1904,3 +1904,6 @@ A [prime-adic precision-one refinement](research/prime-bezout-counting.md) turns
 
 
 The [one-prime recovery refinement](research/one-prime-bezout-recovery.md) uses a chosen field and an explicit trial budget. Counts become exact on certified prime-only intervals, so a single characteristic suffices even when the total divisor count vanishes modulo that prime. The resulting conditional cost is exponential only in the charged trial budget and the still-missing coefficient provider.
+
+
+The [complete filtered-unit curve family](research/filtered-unit-crossings.md) extends nonlinear group-direction selectors. It gives explicit independent coordinates, full endpoint and generic-rank proofs, and exact coefficient-cut formulas. The larger family is now available for searches; its retained finite examples do not improve the factoring exponent.

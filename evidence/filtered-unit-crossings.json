@@ -1,0 +1,611 @@
+{
+  "all_selector_products_through_width_three": 138,
+  "binary_zero_state_selector_kernels": 16,
+  "complete_width_two_GF4_families": 256,
+  "finite_candidate": {
+    "affine_coefficients": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "column_ranks": [
+      64,
+      0,
+      28,
+      1
+    ],
+    "histogram_cost": 44,
+    "row_ranks": [
+      1,
+      0,
+      28,
+      64
+    ]
+  },
+  "independent_dense_cut_ranks": 1616,
+  "literal_group_polynomial_squares": 88,
+  "random_constructor_states": 504,
+  "random_profiles": [
+    {
+      "column_ranks": [
+        4,
+        1
+      ],
+      "row_ranks": [
+        1,
+        4
+      ],
+      "width": 1
+    },
+    {
+      "column_ranks": [
+        4,
+        1
+      ],
+      "row_ranks": [
+        1,
+        4
+      ],
+      "width": 1
+    },
+    {
+      "column_ranks": [
+        4,
+        1
+      ],
+      "row_ranks": [
+        1,
+        4
+      ],
+      "width": 1
+    },
+    {
+      "column_ranks": [
+        4,
+        1
+      ],
+      "row_ranks": [
+        1,
+        4
+      ],
+      "width": 1
+    },
+    {
+      "column_ranks": [
+        0,
+        16,
+        1
+      ],
+      "row_ranks": [
+        0,
+        6,
+        16
+      ],
+      "width": 2
+    },
+    {
+      "column_ranks": [
+        8,
+        16,
+        1
+      ],
+      "row_ranks": [
+        2,
+        6,
+        16
+      ],
+      "width": 2
+    },
+    {
+      "column_ranks": [
+        8,
+        16,
+        1
+      ],
+      "row_ranks": [
+        3,
+        6,
+        16
+      ],
+      "width": 2
+    },
+    {
+      "column_ranks": [
+        8,
+        16,
+        1
+      ],
+      "row_ranks": [
+        2,
+        6,
+        16
+      ],
+      "width": 2
+    },
+    {
+      "column_ranks": [
+        64,
+        56,
+        56,
+        1
+      ],
+      "row_ranks": [
+        7,
+        16,
+        30,
+        64
+      ],
+      "width": 3
+    },
+    {
+      "column_ranks": [
+        64,
+        56,
+        56,
+        1
+      ],
+      "row_ranks": [
+        7,
+        16,
+        30,
+        64
+      ],
+      "width": 3
+    },
+    {
+      "column_ranks": [
+        64,
+        48,
+        48,
+        1
+      ],
+      "row_ranks": [
+        6,
+        15,
+        30,
+        64
+      ],
+      "width": 3
+    },
+    {
+      "column_ranks": [
+        32,
+        56,
+        56,
+        1
+      ],
+      "row_ranks": [
+        6,
+        15,
+        30,
+        64
+      ],
+      "width": 3
+    }
+  ],
+  "scope": "Exact construction and finite controls only; no improved factoring score or certified weighted pressure.",
+  "source_sha256": {
+    "tools/check_filtered_unit_crossings.py": "44578fc7f9a82d80283de26c85af49f9c2d08b48e22c0defad841eb477446dc5",
+    "tools/filtered_unit_crossings.py": "3959ed66804a3ea83a030d03a14535aabd0fb7659a69459a32f51f4ae920bf69"
+  },
+  "strict_enlargement_witness": {
+    "free_parameters": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "group_coefficients": [
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "state": 0,
+    "width": 3
+  },
+  "width_two_rank_profile_counts": [
+    {
+      "column_ranks": [
+        0,
+        16,
+        1
+      ],
+      "count": 1,
+      "row_ranks": [
+        0,
+        6,
+        16
+      ]
+    },
+    {
+      "column_ranks": [
+        16,
+        6,
+        1
+      ],
+      "count": 3,
+      "row_ranks": [
+        1,
+        6,
+        16
+      ]
+    },
+    {
+      "column_ranks": [
+        16,
+        16,
+        1
+      ],
+      "count": 6,
+      "row_ranks": [
+        1,
+        6,
+        16
+      ]
+    },
+    {
+      "column_ranks": [
+        16,
+        7,
+        1
+      ],
+      "count": 1,
+      "row_ranks": [
+        1,
+        7,
+        16
+      ]
+    },
+    {
+      "column_ranks": [
+        16,
+        16,
+        1
+      ],
+      "count": 2,
+      "row_ranks": [
+        1,
+        7,
+        16
+      ]
+    },
+    {
+      "column_ranks": [
+        8,
+        16,
+        1
+      ],
+      "count": 9,
+      "row_ranks": [
+        2,
+        6,
+        16
+      ]
+    },
+    {
+      "column_ranks": [
+        16,
+        8,
+        1
+      ],
+      "count": 6,
+      "row_ranks": [
+        2,
+        6,
+        16
+      ]
+    },
+    {
+      "column_ranks": [
+        16,
+        16,
+        1
+      ],
+      "count": 12,
+      "row_ranks": [
+        2,
+        6,
+        16
+      ]
+    },
+    {
+      "column_ranks": [
+        8,
+        16,
+        1
+      ],
+      "count": 9,
+      "row_ranks": [
+        2,
+        7,
+        16
+      ]
+    },
+    {
+      "column_ranks": [
+        16,
+        8,
+        1
+      ],
+      "count": 6,
+      "row_ranks": [
+        2,
+        7,
+        16
+      ]
+    },
+    {
+      "column_ranks": [
+        16,
+        16,
+        1
+      ],
+      "count": 12,
+      "row_ranks": [
+        2,
+        7,
+        16
+      ]
+    },
+    {
+      "column_ranks": [
+        8,
+        16,
+        1
+      ],
+      "count": 6,
+      "row_ranks": [
+        3,
+        6,
+        16
+      ]
+    },
+    {
+      "column_ranks": [
+        16,
+        6,
+        1
+      ],
+      "count": 1,
+      "row_ranks": [
+        3,
+        6,
+        16
+      ]
+    },
+    {
+      "column_ranks": [
+        16,
+        8,
+        1
+      ],
+      "count": 6,
+      "row_ranks": [
+        3,
+        6,
+        16
+      ]
+    },
+    {
+      "column_ranks": [
+        16,
+        16,
+        1
+      ],
+      "count": 14,
+      "row_ranks": [
+        3,
+        6,
+        16
+      ]
+    },
+    {
+      "column_ranks": [
+        8,
+        16,
+        1
+      ],
+      "count": 18,
+      "row_ranks": [
+        3,
+        7,
+        16
+      ]
+    },
+    {
+      "column_ranks": [
+        16,
+        7,
+        1
+      ],
+      "count": 3,
+      "row_ranks": [
+        3,
+        7,
+        16
+      ]
+    },
+    {
+      "column_ranks": [
+        16,
+        8,
+        1
+      ],
+      "count": 18,
+      "row_ranks": [
+        3,
+        7,
+        16
+      ]
+    },
+    {
+      "column_ranks": [
+        16,
+        16,
+        1
+      ],
+      "count": 42,
+      "row_ranks": [
+        3,
+        7,
+        16
+      ]
+    },
+    {
+      "column_ranks": [
+        4,
+        16,
+        1
+      ],
+      "count": 3,
+      "row_ranks": [
+        4,
+        7,
+        16
+      ]
+    },
+    {
+      "column_ranks": [
+        8,
+        16,
+        1
+      ],
+      "count": 18,
+      "row_ranks": [
+        4,
+        7,
+        16
+      ]
+    },
+    {
+      "column_ranks": [
+        16,
+        7,
+        1
+      ],
+      "count": 8,
+      "row_ranks": [
+        4,
+        7,
+        16
+      ]
+    },
+    {
+      "column_ranks": [
+        16,
+        8,
+        1
+      ],
+      "count": 12,
+      "row_ranks": [
+        4,
+        7,
+        16
+      ]
+    },
+    {
+      "column_ranks": [
+        16,
+        16,
+        1
+      ],
+      "count": 40,
+      "row_ranks": [
+        4,
+        7,
+        16
+      ]
+    }
+  ]
+}

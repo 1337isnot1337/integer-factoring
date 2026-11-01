@@ -1274,3 +1274,6 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 
 
 - [One prime field with a chosen trial budget](one-prime-bezout-recovery.md): prime-only interval counts, a single-field smallest-prime decoder, and a uniform tradeoff between trial division and the hypothesized global coefficient provider.
+
+
+- [Complete filtered unit curves for crossing searches](filtered-unit-crossings.md): a strict extension of nonlinear selector products, exact free coordinates, equivalent loop factors, and independently checked complete coefficient cuts.

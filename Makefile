@@ -2288,3 +2288,8 @@ verify-cube-optimized-type:
 .PHONY: verify-one-prime-bezout-recovery
 verify-one-prime-bezout-recovery:
 	python3 tools/check_one_prime_bezout_recovery.py --output /tmp/one-prime-bezout-recovery.json
+
+
+.PHONY: verify-filtered-unit-crossings
+verify-filtered-unit-crossings:
+	python3 tools/check_filtered_unit_crossings.py --output /tmp/filtered-unit-crossings.json
