@@ -1,0 +1,7252 @@
+{
+  "status": "PASS",
+  "source_revision": "c91cc3f4947caca8977e81a5d14244f73b5ae2b1",
+  "scope": "raw group-pair edge constraints; local weights and internal constraints excluded",
+  "factoring_score_improved": false,
+  "counts": {
+    "bidirectional_minors": 16,
+    "complete_boundary_minors": 111,
+    "complete_count_compositions": 30951,
+    "edge_type_CC": 138,
+    "edge_type_CI": 185,
+    "edge_type_IM": 190,
+    "edge_type_MP": 174,
+    "edge_type_MQ": 199,
+    "literal_boundary_entries": 159516,
+    "local_predicate_negative_entries": 256,
+    "nonzero_first_operand_negative_controls": 1,
+    "source_unit_differences": 651,
+    "uncached_boundary_entries": 261
+  },
+  "minor_records": [
+    {
+      "s": 0,
+      "case": 0,
+      "groups": [
+        [
+          [
+            "Q",
+            0
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "C",
+            1
+          ],
+          [
+            "C",
+            2
+          ]
+        ],
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "I",
+            1
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 0,
+      "identity_order": 1,
+      "all_edge_count": 8
+    },
+    {
+      "s": 0,
+      "case": 1,
+      "groups": [
+        [
+          [
+            "P",
+            1
+          ],
+          [
+            "Q",
+            0
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            3
+          ]
+        ],
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "C",
+            1
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 2,
+      "identity_order": 16,
+      "all_edge_count": 6
+    },
+    {
+      "s": 0,
+      "case": 2,
+      "groups": [
+        [
+          [
+            "Q",
+            0
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "C",
+            1
+          ]
+        ],
+        [
+          [
+            "P",
+            1
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            3
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 0,
+      "identity_order": 1,
+      "all_edge_count": 5
+    },
+    {
+      "s": 0,
+      "case": 3,
+      "groups": [
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "Q",
+            0
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "C",
+            0
+          ]
+        ],
+        [
+          [
+            "M",
+            0
+          ],
+          [
+            "I",
+            1
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 2,
+      "identity_order": 16,
+      "all_edge_count": 5
+    },
+    {
+      "s": 0,
+      "case": 4,
+      "groups": [
+        [
+          [
+            "Q",
+            0
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "C",
+            0
+          ]
+        ],
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            1
+          ],
+          [
+            "C",
+            3
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 2,
+      "identity_order": 16,
+      "all_edge_count": 6
+    },
+    {
+      "s": 0,
+      "case": 5,
+      "groups": [
+        [
+          [
+            "Q",
+            0
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "I",
+            0
+          ]
+        ],
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "P",
+            1
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "C",
+            2
+          ],
+          [
+            "C",
+            3
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 2,
+      "identity_order": 16,
+      "all_edge_count": 4
+    },
+    {
+      "s": 0,
+      "case": 6,
+      "groups": [
+        [
+          [
+            "Q",
+            0
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "C",
+            2
+          ],
+          [
+            "C",
+            3
+          ]
+        ],
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            1
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 0,
+      "identity_order": 1,
+      "all_edge_count": 4
+    },
+    {
+      "s": 0,
+      "case": 7,
+      "groups": [
+        [
+          [
+            "Q",
+            0
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            1
+          ],
+          [
+            "C",
+            2
+          ]
+        ],
+        [
+          [
+            "P",
+            1
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "C",
+            3
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 2,
+      "identity_order": 16,
+      "all_edge_count": 6
+    },
+    {
+      "s": 0,
+      "case": 8,
+      "groups": [
+        [
+          [
+            "Q",
+            0
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "C",
+            3
+          ]
+        ],
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "P",
+            1
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            1
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 0,
+      "identity_order": 1,
+      "all_edge_count": 1
+    },
+    {
+      "s": 0,
+      "case": 9,
+      "groups": [
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "Q",
+            0
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            0
+          ]
+        ],
+        [
+          [
+            "Q",
+            1
+          ],
+          [
+            "C",
+            2
+          ],
+          [
+            "C",
+            3
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 1,
+      "identity_order": 4,
+      "all_edge_count": 3
+    },
+    {
+      "s": 0,
+      "case": 10,
+      "groups": [
+        [
+          [
+            "Q",
+            0
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            2
+          ],
+          [
+            "C",
+            3
+          ]
+        ],
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "M",
+            1
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 2,
+      "identity_order": 16,
+      "all_edge_count": 4
+    },
+    {
+      "s": 0,
+      "case": 11,
+      "groups": [
+        [
+          [
+            "P",
+            1
+          ],
+          [
+            "Q",
+            0
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            0
+          ]
+        ],
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "C",
+            2
+          ],
+          [
+            "C",
+            3
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 1,
+      "identity_order": 4,
+      "all_edge_count": 4
+    },
+    {
+      "s": 0,
+      "case": 12,
+      "groups": [
+        [
+          [
+            "Q",
+            0
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            1
+          ],
+          [
+            "C",
+            2
+          ]
+        ],
+        [
+          [
+            "P",
+            1
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "C",
+            3
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 2,
+      "identity_order": 16,
+      "all_edge_count": 7
+    },
+    {
+      "s": 0,
+      "case": 13,
+      "groups": [
+        [
+          [
+            "Q",
+            0
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            1
+          ]
+        ],
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "C",
+            0
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 1,
+      "identity_order": 4,
+      "all_edge_count": 8
+    },
+    {
+      "s": 0,
+      "case": 14,
+      "groups": [
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "Q",
+            0
+          ],
+          [
+            "C",
+            0
+          ]
+        ],
+        [
+          [
+            "Q",
+            1
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "I",
+            0
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 1,
+      "identity_order": 4,
+      "all_edge_count": 3
+    },
+    {
+      "s": 0,
+      "case": 15,
+      "groups": [
+        [
+          [
+            "Q",
+            0
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            2
+          ]
+        ],
+        [
+          [
+            "Q",
+            1
+          ],
+          [
+            "C",
+            1
+          ],
+          [
+            "C",
+            3
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 1,
+      "identity_order": 4,
+      "all_edge_count": 6
+    },
+    {
+      "s": 0,
+      "case": 16,
+      "groups": [
+        [
+          [
+            "Q",
+            0
+          ]
+        ],
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "I",
+            0
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 1,
+      "identity_order": 4,
+      "all_edge_count": 1
+    },
+    {
+      "s": 0,
+      "case": 17,
+      "groups": [
+        [
+          [
+            "Q",
+            0
+          ],
+          [
+            "C",
+            3
+          ]
+        ],
+        [
+          [
+            "Q",
+            1
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "I",
+            1
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 0,
+      "identity_order": 1,
+      "all_edge_count": 1
+    },
+    {
+      "s": 0,
+      "case": 18,
+      "groups": [
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "P",
+            1
+          ],
+          [
+            "Q",
+            0
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            0
+          ]
+        ],
+        [
+          [
+            "C",
+            1
+          ],
+          [
+            "C",
+            2
+          ],
+          [
+            "C",
+            3
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 0,
+      "identity_order": 1,
+      "all_edge_count": 3
+    },
+    {
+      "s": 0,
+      "case": 19,
+      "groups": [
+        [
+          [
+            "Q",
+            0
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "C",
+            2
+          ]
+        ],
+        [
+          [
+            "M",
+            1
+          ],
+          [
+            "C",
+            1
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 1,
+      "identity_order": 4,
+      "all_edge_count": 3
+    },
+    {
+      "s": 0,
+      "case": 20,
+      "groups": [
+        [
+          [
+            "Q",
+            0
+          ],
+          [
+            "M",
+            0
+          ]
+        ],
+        [
+          [
+            "P",
+            1
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            2
+          ],
+          [
+            "C",
+            3
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 0,
+      "identity_order": 1,
+      "all_edge_count": 3
+    },
+    {
+      "s": 0,
+      "case": 21,
+      "groups": [
+        [
+          [
+            "Q",
+            0
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "C",
+            3
+          ]
+        ],
+        [
+          [
+            "M",
+            0
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            2
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 1,
+      "identity_order": 4,
+      "all_edge_count": 2
+    },
+    {
+      "s": 0,
+      "case": 22,
+      "groups": [
+        [
+          [
+            "Q",
+            0
+          ],
+          [
+            "C",
+            3
+          ]
+        ],
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            2
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 1,
+      "identity_order": 4,
+      "all_edge_count": 3
+    },
+    {
+      "s": 0,
+      "case": 23,
+      "groups": [
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "Q",
+            0
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            3
+          ]
+        ],
+        [
+          [
+            "M",
+            0
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            1
+          ],
+          [
+            "C",
+            2
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 1,
+      "identity_order": 4,
+      "all_edge_count": 5
+    },
+    {
+      "s": 0,
+      "case": 24,
+      "groups": [
+        [
+          [
+            "Q",
+            0
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "I",
+            0
+          ]
+        ],
+        [
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            1
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 0,
+      "identity_order": 1,
+      "all_edge_count": 2
+    },
+    {
+      "s": 0,
+      "case": 25,
+      "groups": [
+        [
+          [
+            "Q",
+            0
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            1
+          ],
+          [
+            "C",
+            3
+          ]
+        ],
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "I",
+            1
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 1,
+      "identity_order": 4,
+      "all_edge_count": 4
+    },
+    {
+      "s": 0,
+      "case": 26,
+      "groups": [
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "Q",
+            0
+          ]
+        ],
+        [
+          [
+            "I",
+            0
+          ],
+          [
+            "C",
+            1
+          ],
+          [
+            "C",
+            3
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 0,
+      "identity_order": 1,
+      "all_edge_count": 0
+    },
+    {
+      "s": 0,
+      "case": 27,
+      "groups": [
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "P",
+            1
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "C",
+            2
+          ]
+        ],
+        [
+          [
+            "Q",
+            0
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            3
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 1,
+      "identity_order": 4,
+      "all_edge_count": 8
+    },
+    {
+      "s": 0,
+      "case": 28,
+      "groups": [
+        [
+          [
+            "Q",
+            1
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "C",
+            3
+          ]
+        ],
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "P",
+            1
+          ],
+          [
+            "Q",
+            0
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            1
+          ],
+          [
+            "C",
+            2
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 2,
+      "identity_order": 16,
+      "all_edge_count": 10
+    },
+    {
+      "s": 0,
+      "case": 29,
+      "groups": [
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "I",
+            0
+          ]
+        ],
+        [
+          [
+            "P",
+            1
+          ],
+          [
+            "Q",
+            0
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            2
+          ],
+          [
+            "C",
+            3
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 1,
+      "identity_order": 4,
+      "all_edge_count": 4
+    },
+    {
+      "s": 0,
+      "case": 30,
+      "groups": [
+        [
+          [
+            "P",
+            1
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "I",
+            1
+          ]
+        ],
+        [
+          [
+            "Q",
+            0
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "C",
+            2
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 2,
+      "identity_order": 16,
+      "all_edge_count": 4
+    },
+    {
+      "s": 0,
+      "case": 31,
+      "groups": [
+        [
+          [
+            "Q",
+            1
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            2
+          ]
+        ],
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "P",
+            1
+          ],
+          [
+            "Q",
+            0
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "I",
+            1
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 1,
+      "identity_order": 4,
+      "all_edge_count": 2
+    },
+    {
+      "s": 0,
+      "case": 32,
+      "groups": [
+        [
+          [
+            "Q",
+            1
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            2
+          ],
+          [
+            "C",
+            3
+          ]
+        ],
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "P",
+            1
+          ],
+          [
+            "Q",
+            0
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "C",
+            0
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 1,
+      "identity_order": 4,
+      "all_edge_count": 3
+    },
+    {
+      "s": 0,
+      "case": 33,
+      "groups": [
+        [
+          [
+            "Q",
+            1
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            1
+          ],
+          [
+            "C",
+            3
+          ]
+        ],
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "P",
+            1
+          ],
+          [
+            "Q",
+            0
+          ],
+          [
+            "I",
+            1
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 1,
+      "identity_order": 4,
+      "all_edge_count": 6
+    },
+    {
+      "s": 0,
+      "case": 34,
+      "groups": [
+        [
+          [
+            "Q",
+            1
+          ],
+          [
+            "C",
+            1
+          ],
+          [
+            "C",
+            3
+          ]
+        ],
+        [
+          [
+            "Q",
+            0
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "C",
+            0
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 1,
+      "identity_order": 4,
+      "all_edge_count": 2
+    },
+    {
+      "s": 0,
+      "case": 35,
+      "groups": [
+        [
+          [
+            "P",
+            1
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            2
+          ]
+        ],
+        [
+          [
+            "Q",
+            0
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            1
+          ],
+          [
+            "C",
+            3
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 0,
+      "identity_order": 1,
+      "all_edge_count": 4
+    },
+    {
+      "s": 0,
+      "case": 36,
+      "groups": [
+        [
+          [
+            "M",
+            0
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "C",
+            3
+          ]
+        ],
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "P",
+            1
+          ],
+          [
+            "Q",
+            0
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "C",
+            1
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 2,
+      "identity_order": 16,
+      "all_edge_count": 10
+    },
+    {
+      "s": 0,
+      "case": 37,
+      "groups": [
+        [
+          [
+            "P",
+            1
+          ],
+          [
+            "M",
+            0
+          ]
+        ],
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "Q",
+            0
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "C",
+            2
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 2,
+      "identity_order": 16,
+      "all_edge_count": 5
+    },
+    {
+      "s": 0,
+      "case": 38,
+      "groups": [
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            1
+          ]
+        ],
+        [
+          [
+            "Q",
+            0
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "C",
+            2
+          ],
+          [
+            "C",
+            3
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 2,
+      "identity_order": 16,
+      "all_edge_count": 3
+    },
+    {
+      "s": 0,
+      "case": 39,
+      "groups": [
+        [
+          [
+            "M",
+            1
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            1
+          ]
+        ],
+        [
+          [
+            "P",
+            1
+          ],
+          [
+            "Q",
+            0
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "I",
+            0
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 2,
+      "identity_order": 16,
+      "all_edge_count": 5
+    },
+    {
+      "s": 0,
+      "case": 40,
+      "groups": [
+        [
+          [
+            "I",
+            0
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            2
+          ],
+          [
+            "C",
+            3
+          ]
+        ],
+        [
+          [
+            "P",
+            1
+          ],
+          [
+            "Q",
+            0
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "C",
+            1
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 0,
+      "identity_order": 1,
+      "all_edge_count": 6
+    },
+    {
+      "s": 0,
+      "case": 41,
+      "groups": [
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "C",
+            2
+          ]
+        ],
+        [
+          [
+            "Q",
+            0
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            0
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 0,
+      "identity_order": 1,
+      "all_edge_count": 3
+    },
+    {
+      "s": 0,
+      "case": 42,
+      "groups": [
+        [
+          [
+            "M",
+            1
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "C",
+            2
+          ]
+        ],
+        [
+          [
+            "Q",
+            0
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "C",
+            1
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 2,
+      "identity_order": 16,
+      "all_edge_count": 3
+    },
+    {
+      "s": 0,
+      "case": 43,
+      "groups": [
+        [
+          [
+            "P",
+            1
+          ],
+          [
+            "I",
+            1
+          ]
+        ],
+        [
+          [
+            "Q",
+            0
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            1
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 0,
+      "identity_order": 1,
+      "all_edge_count": 3
+    },
+    {
+      "s": 0,
+      "case": 44,
+      "groups": [
+        [
+          [
+            "P",
+            1
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            2
+          ]
+        ],
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "Q",
+            0
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "I",
+            0
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 0,
+      "identity_order": 1,
+      "all_edge_count": 2
+    },
+    {
+      "s": 0,
+      "case": 45,
+      "groups": [
+        [
+          [
+            "M",
+            0
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            2
+          ]
+        ],
+        [
+          [
+            "Q",
+            0
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            3
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 1,
+      "identity_order": 4,
+      "all_edge_count": 5
+    },
+    {
+      "s": 0,
+      "case": 46,
+      "groups": [
+        [
+          [
+            "M",
+            0
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            2
+          ]
+        ],
+        [
+          [
+            "P",
+            1
+          ],
+          [
+            "Q",
+            0
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "C",
+            1
+          ],
+          [
+            "C",
+            3
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 1,
+      "identity_order": 4,
+      "all_edge_count": 11
+    },
+    {
+      "s": 0,
+      "case": 47,
+      "groups": [
+        [
+          [
+            "M",
+            0
+          ],
+          [
+            "I",
+            0
+          ]
+        ],
+        [
+          [
+            "Q",
+            0
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            1
+          ],
+          [
+            "C",
+            3
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 1,
+      "identity_order": 4,
+      "all_edge_count": 2
+    },
+    {
+      "s": 0,
+      "case": 48,
+      "groups": [
+        [
+          [
+            "M",
+            1
+          ],
+          [
+            "C",
+            2
+          ]
+        ],
+        [
+          [
+            "Q",
+            0
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            1
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 1,
+      "identity_order": 4,
+      "all_edge_count": 5
+    },
+    {
+      "s": 0,
+      "case": 49,
+      "groups": [
+        [
+          [
+            "I",
+            0
+          ],
+          [
+            "C",
+            1
+          ],
+          [
+            "C",
+            2
+          ]
+        ],
+        [
+          [
+            "Q",
+            0
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            3
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 0,
+      "identity_order": 1,
+      "all_edge_count": 5
+    },
+    {
+      "s": 0,
+      "case": 50,
+      "groups": [
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "I",
+            0
+          ]
+        ],
+        [
+          [
+            "P",
+            1
+          ],
+          [
+            "Q",
+            0
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            2
+          ],
+          [
+            "C",
+            3
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 0,
+      "identity_order": 1,
+      "all_edge_count": 4
+    },
+    {
+      "s": 0,
+      "case": 51,
+      "groups": [
+        [
+          [
+            "M",
+            1
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            3
+          ]
+        ],
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "Q",
+            0
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            1
+          ],
+          [
+            "C",
+            2
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 1,
+      "identity_order": 4,
+      "all_edge_count": 7
+    },
+    {
+      "s": 0,
+      "case": 52,
+      "groups": [
+        [
+          [
+            "P",
+            1
+          ],
+          [
+            "I",
+            1
+          ]
+        ],
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "Q",
+            0
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            2
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 0,
+      "identity_order": 1,
+      "all_edge_count": 2
+    },
+    {
+      "s": 0,
+      "case": 53,
+      "groups": [
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "P",
+            1
+          ],
+          [
+            "C",
+            1
+          ]
+        ],
+        [
+          [
+            "Q",
+            0
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            2
+          ],
+          [
+            "C",
+            3
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 0,
+      "identity_order": 1,
+      "all_edge_count": 3
+    },
+    {
+      "s": 0,
+      "case": 54,
+      "groups": [
+        [
+          [
+            "Q",
+            1
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "C",
+            3
+          ]
+        ],
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "P",
+            1
+          ],
+          [
+            "C",
+            0
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 0,
+      "identity_order": 1,
+      "all_edge_count": 5
+    },
+    {
+      "s": 0,
+      "case": 55,
+      "groups": [
+        [
+          [
+            "Q",
+            1
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            1
+          ]
+        ],
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "C",
+            3
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 1,
+      "identity_order": 4,
+      "all_edge_count": 4
+    },
+    {
+      "s": 0,
+      "case": 56,
+      "groups": [
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "C",
+            3
+          ]
+        ],
+        [
+          [
+            "I",
+            1
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 0,
+      "identity_order": 1,
+      "all_edge_count": 2
+    },
+    {
+      "s": 0,
+      "case": 57,
+      "groups": [
+        [
+          [
+            "Q",
+            1
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "C",
+            1
+          ],
+          [
+            "C",
+            2
+          ],
+          [
+            "C",
+            3
+          ]
+        ],
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "P",
+            1
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "I",
+            1
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 1,
+      "identity_order": 4,
+      "all_edge_count": 8
+    },
+    {
+      "s": 0,
+      "case": 58,
+      "groups": [
+        [
+          [
+            "Q",
+            1
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            1
+          ],
+          [
+            "C",
+            3
+          ]
+        ],
+        [
+          [
+            "P",
+            1
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "M",
+            1
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 1,
+      "identity_order": 4,
+      "all_edge_count": 4
+    },
+    {
+      "s": 0,
+      "case": 59,
+      "groups": [
+        [
+          [
+            "Q",
+            1
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            2
+          ]
+        ],
+        [
+          [
+            "P",
+            1
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            3
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 1,
+      "identity_order": 4,
+      "all_edge_count": 4
+    },
+    {
+      "s": 0,
+      "case": 60,
+      "groups": [
+        [
+          [
+            "Q",
+            1
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "C",
+            1
+          ],
+          [
+            "C",
+            2
+          ],
+          [
+            "C",
+            3
+          ]
+        ],
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "P",
+            1
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 0,
+      "identity_order": 1,
+      "all_edge_count": 2
+    },
+    {
+      "s": 0,
+      "case": 61,
+      "groups": [
+        [
+          [
+            "P",
+            1
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "C",
+            1
+          ]
+        ],
+        [
+          [
+            "M",
+            1
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            2
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 1,
+      "identity_order": 4,
+      "all_edge_count": 6
+    },
+    {
+      "s": 0,
+      "case": 62,
+      "groups": [
+        [
+          [
+            "Q",
+            1
+          ],
+          [
+            "C",
+            3
+          ]
+        ],
+        [
+          [
+            "P",
+            1
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "C",
+            2
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 0,
+      "identity_order": 1,
+      "all_edge_count": 1
+    },
+    {
+      "s": 0,
+      "case": 63,
+      "groups": [
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "M",
+            1
+          ]
+        ],
+        [
+          [
+            "P",
+            1
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            1
+          ],
+          [
+            "C",
+            2
+          ],
+          [
+            "C",
+            3
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 1,
+      "identity_order": 4,
+      "all_edge_count": 6
+    },
+    {
+      "s": 0,
+      "case": 64,
+      "groups": [
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "P",
+            1
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            2
+          ],
+          [
+            "C",
+            3
+          ]
+        ],
+        [
+          [
+            "Q",
+            1
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            1
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 1,
+      "identity_order": 4,
+      "all_edge_count": 8
+    },
+    {
+      "s": 0,
+      "case": 65,
+      "groups": [
+        [
+          [
+            "M",
+            0
+          ],
+          [
+            "C",
+            1
+          ]
+        ],
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "C",
+            2
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 1,
+      "identity_order": 4,
+      "all_edge_count": 3
+    },
+    {
+      "s": 0,
+      "case": 66,
+      "groups": [
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "C",
+            3
+          ]
+        ],
+        [
+          [
+            "P",
+            1
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            1
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 1,
+      "identity_order": 4,
+      "all_edge_count": 6
+    },
+    {
+      "s": 0,
+      "case": 67,
+      "groups": [
+        [
+          [
+            "I",
+            0
+          ],
+          [
+            "C",
+            2
+          ]
+        ],
+        [
+          [
+            "Q",
+            1
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "C",
+            0
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 0,
+      "identity_order": 1,
+      "all_edge_count": 3
+    },
+    {
+      "s": 0,
+      "case": 68,
+      "groups": [
+        [
+          [
+            "I",
+            0
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            0
+          ]
+        ],
+        [
+          [
+            "Q",
+            1
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "C",
+            1
+          ],
+          [
+            "C",
+            3
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 0,
+      "identity_order": 1,
+      "all_edge_count": 5
+    },
+    {
+      "s": 0,
+      "case": 69,
+      "groups": [
+        [
+          [
+            "P",
+            1
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "C",
+            2
+          ],
+          [
+            "C",
+            3
+          ]
+        ],
+        [
+          [
+            "Q",
+            1
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            1
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 1,
+      "identity_order": 4,
+      "all_edge_count": 5
+    },
+    {
+      "s": 0,
+      "case": 70,
+      "groups": [
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "C",
+            1
+          ]
+        ],
+        [
+          [
+            "P",
+            1
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "M",
+            1
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 0,
+      "identity_order": 1,
+      "all_edge_count": 1
+    },
+    {
+      "s": 0,
+      "case": 71,
+      "groups": [
+        [
+          [
+            "C",
+            3
+          ]
+        ],
+        [
+          [
+            "P",
+            1
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            2
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 0,
+      "identity_order": 1,
+      "all_edge_count": 2
+    },
+    {
+      "s": 0,
+      "case": 72,
+      "groups": [
+        [
+          [
+            "M",
+            0
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "C",
+            0
+          ]
+        ],
+        [
+          [
+            "P",
+            1
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "C",
+            3
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 0,
+      "identity_order": 1,
+      "all_edge_count": 5
+    },
+    {
+      "s": 0,
+      "case": 73,
+      "groups": [
+        [
+          [
+            "M",
+            0
+          ],
+          [
+            "I",
+            1
+          ]
+        ],
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            1
+          ],
+          [
+            "C",
+            3
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 0,
+      "identity_order": 1,
+      "all_edge_count": 4
+    },
+    {
+      "s": 0,
+      "case": 74,
+      "groups": [
+        [
+          [
+            "P",
+            1
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            3
+          ]
+        ],
+        [
+          [
+            "C",
+            2
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 0,
+      "identity_order": 1,
+      "all_edge_count": 1
+    },
+    {
+      "s": 0,
+      "case": 75,
+      "groups": [
+        [
+          [
+            "M",
+            1
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            1
+          ]
+        ],
+        [
+          [
+            "P",
+            1
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "C",
+            2
+          ],
+          [
+            "C",
+            3
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 0,
+      "identity_order": 1,
+      "all_edge_count": 4
+    },
+    {
+      "s": 0,
+      "case": 76,
+      "groups": [
+        [
+          [
+            "C",
+            0
+          ]
+        ],
+        [
+          [
+            "M",
+            0
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "C",
+            1
+          ],
+          [
+            "C",
+            3
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 0,
+      "identity_order": 1,
+      "all_edge_count": 2
+    },
+    {
+      "s": 0,
+      "case": 77,
+      "groups": [
+        [
+          [
+            "C",
+            0
+          ]
+        ],
+        [
+          [
+            "M",
+            0
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            1
+          ],
+          [
+            "C",
+            2
+          ],
+          [
+            "C",
+            3
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 0,
+      "identity_order": 1,
+      "all_edge_count": 1
+    },
+    {
+      "s": 0,
+      "case": 78,
+      "groups": [
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "C",
+            0
+          ]
+        ],
+        [
+          [
+            "P",
+            1
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            1
+          ],
+          [
+            "C",
+            2
+          ],
+          [
+            "C",
+            3
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 0,
+      "identity_order": 1,
+      "all_edge_count": 4
+    },
+    {
+      "s": 0,
+      "case": 79,
+      "groups": [
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "C",
+            0
+          ]
+        ],
+        [
+          [
+            "M",
+            1
+          ],
+          [
+            "C",
+            3
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 0,
+      "identity_order": 1,
+      "all_edge_count": 2
+    },
+    {
+      "s": 0,
+      "case": 80,
+      "groups": [
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "P",
+            1
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            3
+          ]
+        ],
+        [
+          [
+            "C",
+            2
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "free_digit_count": 0,
+      "identity_order": 1,
+      "all_edge_count": 1
+    },
+    {
+      "s": 1,
+      "case": 0,
+      "groups": [
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "P",
+            1
+          ],
+          [
+            "P",
+            3
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "M",
+            3
+          ],
+          [
+            "I",
+            3
+          ],
+          [
+            "C",
+            1
+          ],
+          [
+            "C",
+            4
+          ],
+          [
+            "C",
+            5
+          ],
+          [
+            "C",
+            10
+          ],
+          [
+            "C",
+            15
+          ]
+        ],
+        [
+          [
+            "Q",
+            1
+          ],
+          [
+            "Q",
+            2
+          ],
+          [
+            "Q",
+            3
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "M",
+            2
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            2
+          ],
+          [
+            "C",
+            6
+          ],
+          [
+            "C",
+            7
+          ],
+          [
+            "C",
+            9
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1
+      ],
+      "free_digit_count": 6,
+      "identity_order": 64,
+      "all_edge_count": 22
+    },
+    {
+      "s": 1,
+      "case": 1,
+      "groups": [
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "P",
+            3
+          ],
+          [
+            "Q",
+            0
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "C",
+            4
+          ],
+          [
+            "C",
+            5
+          ],
+          [
+            "C",
+            9
+          ],
+          [
+            "C",
+            11
+          ],
+          [
+            "C",
+            15
+          ]
+        ],
+        [
+          [
+            "P",
+            2
+          ],
+          [
+            "Q",
+            2
+          ],
+          [
+            "Q",
+            3
+          ],
+          [
+            "M",
+            3
+          ],
+          [
+            "I",
+            2
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            1
+          ],
+          [
+            "C",
+            2
+          ],
+          [
+            "C",
+            3
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1
+      ],
+      "free_digit_count": 6,
+      "identity_order": 64,
+      "all_edge_count": 15
+    },
+    {
+      "s": 1,
+      "case": 2,
+      "groups": [
+        [
+          [
+            "Q",
+            1
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "M",
+            2
+          ],
+          [
+            "C",
+            7
+          ],
+          [
+            "C",
+            9
+          ],
+          [
+            "C",
+            12
+          ],
+          [
+            "C",
+            13
+          ],
+          [
+            "C",
+            14
+          ]
+        ],
+        [
+          [
+            "P",
+            2
+          ],
+          [
+            "Q",
+            2
+          ],
+          [
+            "Q",
+            3
+          ],
+          [
+            "I",
+            3
+          ],
+          [
+            "C",
+            5
+          ],
+          [
+            "C",
+            10
+          ],
+          [
+            "C",
+            15
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1
+      ],
+      "free_digit_count": 4,
+      "identity_order": 16,
+      "all_edge_count": 11
+    },
+    {
+      "s": 1,
+      "case": 3,
+      "groups": [
+        [
+          [
+            "P",
+            3
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "C",
+            3
+          ],
+          [
+            "C",
+            8
+          ],
+          [
+            "C",
+            9
+          ],
+          [
+            "C",
+            10
+          ],
+          [
+            "C",
+            12
+          ],
+          [
+            "C",
+            13
+          ]
+        ],
+        [
+          [
+            "Q",
+            0
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "Q",
+            2
+          ],
+          [
+            "Q",
+            3
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "M",
+            3
+          ],
+          [
+            "I",
+            2
+          ],
+          [
+            "I",
+            3
+          ],
+          [
+            "C",
+            5
+          ],
+          [
+            "C",
+            6
+          ],
+          [
+            "C",
+            7
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1
+      ],
+      "free_digit_count": 4,
+      "identity_order": 16,
+      "all_edge_count": 11
+    },
+    {
+      "s": 1,
+      "case": 4,
+      "groups": [
+        [
+          [
+            "P",
+            2
+          ],
+          [
+            "P",
+            3
+          ],
+          [
+            "Q",
+            3
+          ],
+          [
+            "M",
+            2
+          ],
+          [
+            "C",
+            1
+          ],
+          [
+            "C",
+            3
+          ],
+          [
+            "C",
+            4
+          ],
+          [
+            "C",
+            5
+          ],
+          [
+            "C",
+            6
+          ],
+          [
+            "C",
+            10
+          ],
+          [
+            "C",
+            15
+          ]
+        ],
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "P",
+            1
+          ],
+          [
+            "Q",
+            0
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "I",
+            3
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            8
+          ],
+          [
+            "C",
+            12
+          ],
+          [
+            "C",
+            13
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1
+      ],
+      "free_digit_count": 2,
+      "identity_order": 4,
+      "all_edge_count": 15
+    },
+    {
+      "s": 1,
+      "case": 5,
+      "groups": [
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "I",
+            2
+          ],
+          [
+            "C",
+            1
+          ],
+          [
+            "C",
+            6
+          ],
+          [
+            "C",
+            11
+          ],
+          [
+            "C",
+            13
+          ]
+        ],
+        [
+          [
+            "P",
+            1
+          ],
+          [
+            "P",
+            3
+          ],
+          [
+            "Q",
+            0
+          ],
+          [
+            "Q",
+            2
+          ],
+          [
+            "Q",
+            3
+          ],
+          [
+            "M",
+            3
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            2
+          ],
+          [
+            "C",
+            4
+          ],
+          [
+            "C",
+            5
+          ],
+          [
+            "C",
+            8
+          ],
+          [
+            "C",
+            9
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1
+      ],
+      "free_digit_count": 4,
+      "identity_order": 16,
+      "all_edge_count": 17
+    },
+    {
+      "s": 1,
+      "case": 6,
+      "groups": [
+        [
+          [
+            "M",
+            1
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "I",
+            3
+          ],
+          [
+            "C",
+            4
+          ],
+          [
+            "C",
+            5
+          ],
+          [
+            "C",
+            6
+          ],
+          [
+            "C",
+            7
+          ],
+          [
+            "C",
+            8
+          ],
+          [
+            "C",
+            11
+          ],
+          [
+            "C",
+            14
+          ]
+        ],
+        [
+          [
+            "P",
+            1
+          ],
+          [
+            "P",
+            2
+          ],
+          [
+            "Q",
+            0
+          ],
+          [
+            "Q",
+            3
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "M",
+            2
+          ],
+          [
+            "M",
+            3
+          ],
+          [
+            "I",
+            2
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            3
+          ],
+          [
+            "C",
+            12
+          ],
+          [
+            "C",
+            15
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1
+      ],
+      "free_digit_count": 2,
+      "identity_order": 4,
+      "all_edge_count": 23
+    },
+    {
+      "s": 1,
+      "case": 7,
+      "groups": [
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "P",
+            3
+          ],
+          [
+            "Q",
+            0
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            1
+          ],
+          [
+            "C",
+            2
+          ],
+          [
+            "C",
+            5
+          ],
+          [
+            "C",
+            9
+          ],
+          [
+            "C",
+            11
+          ]
+        ],
+        [
+          [
+            "P",
+            1
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "Q",
+            3
+          ],
+          [
+            "M",
+            3
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "I",
+            3
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            3
+          ],
+          [
+            "C",
+            7
+          ],
+          [
+            "C",
+            13
+          ],
+          [
+            "C",
+            14
+          ],
+          [
+            "C",
+            15
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1
+      ],
+      "free_digit_count": 5,
+      "identity_order": 32,
+      "all_edge_count": 18
+    },
+    {
+      "s": 1,
+      "case": 8,
+      "groups": [
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "P",
+            2
+          ],
+          [
+            "Q",
+            0
+          ],
+          [
+            "Q",
+            2
+          ],
+          [
+            "Q",
+            3
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "C",
+            4
+          ],
+          [
+            "C",
+            14
+          ],
+          [
+            "C",
+            15
+          ]
+        ],
+        [
+          [
+            "P",
+            1
+          ],
+          [
+            "P",
+            3
+          ],
+          [
+            "M",
+            2
+          ],
+          [
+            "M",
+            3
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "I",
+            2
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            1
+          ],
+          [
+            "C",
+            3
+          ],
+          [
+            "C",
+            5
+          ],
+          [
+            "C",
+            6
+          ],
+          [
+            "C",
+            8
+          ],
+          [
+            "C",
+            10
+          ],
+          [
+            "C",
+            11
+          ],
+          [
+            "C",
+            12
+          ],
+          [
+            "C",
+            13
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1
+      ],
+      "free_digit_count": 6,
+      "identity_order": 64,
+      "all_edge_count": 19
+    },
+    {
+      "s": 1,
+      "case": 9,
+      "groups": [
+        [
+          [
+            "P",
+            1
+          ],
+          [
+            "Q",
+            0
+          ],
+          [
+            "I",
+            3
+          ],
+          [
+            "C",
+            1
+          ],
+          [
+            "C",
+            2
+          ],
+          [
+            "C",
+            9
+          ],
+          [
+            "C",
+            13
+          ],
+          [
+            "C",
+            14
+          ]
+        ],
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "P",
+            2
+          ],
+          [
+            "P",
+            3
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "Q",
+            3
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "M",
+            2
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            4
+          ],
+          [
+            "C",
+            5
+          ],
+          [
+            "C",
+            6
+          ],
+          [
+            "C",
+            8
+          ],
+          [
+            "C",
+            10
+          ],
+          [
+            "C",
+            11
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1
+      ],
+      "free_digit_count": 2,
+      "identity_order": 4,
+      "all_edge_count": 13
+    },
+    {
+      "s": 1,
+      "case": 10,
+      "groups": [
+        [
+          [
+            "P",
+            1
+          ],
+          [
+            "P",
+            2
+          ],
+          [
+            "P",
+            3
+          ],
+          [
+            "Q",
+            0
+          ],
+          [
+            "Q",
+            2
+          ],
+          [
+            "M",
+            2
+          ],
+          [
+            "I",
+            3
+          ],
+          [
+            "C",
+            1
+          ],
+          [
+            "C",
+            3
+          ],
+          [
+            "C",
+            4
+          ],
+          [
+            "C",
+            11
+          ],
+          [
+            "C",
+            14
+          ]
+        ],
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "M",
+            3
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            2
+          ],
+          [
+            "C",
+            5
+          ],
+          [
+            "C",
+            10
+          ],
+          [
+            "C",
+            12
+          ],
+          [
+            "C",
+            13
+          ],
+          [
+            "C",
+            15
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1
+      ],
+      "free_digit_count": 4,
+      "identity_order": 16,
+      "all_edge_count": 25
+    },
+    {
+      "s": 1,
+      "case": 11,
+      "groups": [
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "P",
+            1
+          ],
+          [
+            "Q",
+            0
+          ],
+          [
+            "Q",
+            3
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "M",
+            2
+          ],
+          [
+            "C",
+            6
+          ],
+          [
+            "C",
+            9
+          ],
+          [
+            "C",
+            12
+          ]
+        ],
+        [
+          [
+            "P",
+            2
+          ],
+          [
+            "P",
+            3
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "M",
+            3
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "I",
+            2
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            1
+          ],
+          [
+            "C",
+            2
+          ],
+          [
+            "C",
+            7
+          ],
+          [
+            "C",
+            8
+          ],
+          [
+            "C",
+            10
+          ],
+          [
+            "C",
+            13
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1
+      ],
+      "free_digit_count": 4,
+      "identity_order": 16,
+      "all_edge_count": 20
+    },
+    {
+      "s": 1,
+      "case": 12,
+      "groups": [
+        [
+          [
+            "P",
+            1
+          ],
+          [
+            "P",
+            3
+          ],
+          [
+            "Q",
+            3
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "M",
+            3
+          ],
+          [
+            "C",
+            13
+          ]
+        ],
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "P",
+            2
+          ],
+          [
+            "Q",
+            0
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "Q",
+            2
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "I",
+            2
+          ],
+          [
+            "I",
+            3
+          ],
+          [
+            "C",
+            1
+          ],
+          [
+            "C",
+            2
+          ],
+          [
+            "C",
+            3
+          ],
+          [
+            "C",
+            5
+          ],
+          [
+            "C",
+            7
+          ],
+          [
+            "C",
+            8
+          ],
+          [
+            "C",
+            9
+          ],
+          [
+            "C",
+            12
+          ],
+          [
+            "C",
+            14
+          ],
+          [
+            "C",
+            15
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1
+      ],
+      "free_digit_count": 6,
+      "identity_order": 64,
+      "all_edge_count": 19
+    },
+    {
+      "s": 1,
+      "case": 13,
+      "groups": [
+        [
+          [
+            "Q",
+            0
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "M",
+            2
+          ],
+          [
+            "M",
+            3
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            2
+          ],
+          [
+            "C",
+            4
+          ],
+          [
+            "C",
+            12
+          ],
+          [
+            "C",
+            14
+          ]
+        ],
+        [
+          [
+            "C",
+            3
+          ],
+          [
+            "C",
+            5
+          ],
+          [
+            "C",
+            6
+          ],
+          [
+            "C",
+            9
+          ],
+          [
+            "C",
+            10
+          ],
+          [
+            "C",
+            11
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1
+      ],
+      "free_digit_count": 0,
+      "identity_order": 1,
+      "all_edge_count": 6
+    },
+    {
+      "s": 1,
+      "case": 14,
+      "groups": [
+        [
+          [
+            "P",
+            2
+          ],
+          [
+            "Q",
+            3
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            1
+          ],
+          [
+            "C",
+            3
+          ],
+          [
+            "C",
+            5
+          ],
+          [
+            "C",
+            8
+          ],
+          [
+            "C",
+            11
+          ],
+          [
+            "C",
+            12
+          ]
+        ],
+        [
+          [
+            "P",
+            1
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "M",
+            2
+          ],
+          [
+            "M",
+            3
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "I",
+            3
+          ],
+          [
+            "C",
+            2
+          ],
+          [
+            "C",
+            6
+          ],
+          [
+            "C",
+            9
+          ],
+          [
+            "C",
+            13
+          ],
+          [
+            "C",
+            14
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1
+      ],
+      "free_digit_count": 3,
+      "identity_order": 8,
+      "all_edge_count": 20
+    },
+    {
+      "s": 1,
+      "case": 15,
+      "groups": [
+        [
+          [
+            "P",
+            1
+          ],
+          [
+            "P",
+            2
+          ],
+          [
+            "P",
+            3
+          ],
+          [
+            "Q",
+            0
+          ],
+          [
+            "Q",
+            2
+          ],
+          [
+            "M",
+            2
+          ],
+          [
+            "M",
+            3
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "I",
+            2
+          ],
+          [
+            "I",
+            3
+          ],
+          [
+            "C",
+            1
+          ],
+          [
+            "C",
+            4
+          ],
+          [
+            "C",
+            10
+          ],
+          [
+            "C",
+            11
+          ],
+          [
+            "C",
+            13
+          ]
+        ],
+        [
+          [
+            "Q",
+            1
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            2
+          ],
+          [
+            "C",
+            8
+          ],
+          [
+            "C",
+            9
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1
+      ],
+      "free_digit_count": 4,
+      "identity_order": 16,
+      "all_edge_count": 20
+    },
+    {
+      "s": 1,
+      "case": 16,
+      "groups": [
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "P",
+            2
+          ],
+          [
+            "P",
+            3
+          ],
+          [
+            "Q",
+            3
+          ],
+          [
+            "M",
+            2
+          ],
+          [
+            "I",
+            2
+          ],
+          [
+            "I",
+            3
+          ],
+          [
+            "C",
+            2
+          ],
+          [
+            "C",
+            3
+          ],
+          [
+            "C",
+            7
+          ],
+          [
+            "C",
+            9
+          ],
+          [
+            "C",
+            12
+          ],
+          [
+            "C",
+            14
+          ],
+          [
+            "C",
+            15
+          ]
+        ],
+        [
+          [
+            "Q",
+            1
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            5
+          ],
+          [
+            "C",
+            6
+          ],
+          [
+            "C",
+            11
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1
+      ],
+      "free_digit_count": 1,
+      "identity_order": 2,
+      "all_edge_count": 9
+    },
+    {
+      "s": 1,
+      "case": 17,
+      "groups": [
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "P",
+            1
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "Q",
+            3
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "M",
+            3
+          ],
+          [
+            "I",
+            2
+          ],
+          [
+            "I",
+            3
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            1
+          ],
+          [
+            "C",
+            2
+          ],
+          [
+            "C",
+            4
+          ],
+          [
+            "C",
+            6
+          ],
+          [
+            "C",
+            10
+          ],
+          [
+            "C",
+            12
+          ],
+          [
+            "C",
+            13
+          ],
+          [
+            "C",
+            15
+          ]
+        ],
+        [
+          [
+            "P",
+            2
+          ],
+          [
+            "P",
+            3
+          ],
+          [
+            "Q",
+            2
+          ],
+          [
+            "M",
+            2
+          ],
+          [
+            "C",
+            5
+          ],
+          [
+            "C",
+            7
+          ],
+          [
+            "C",
+            8
+          ],
+          [
+            "C",
+            11
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1
+      ],
+      "free_digit_count": 4,
+      "identity_order": 16,
+      "all_edge_count": 19
+    },
+    {
+      "s": 1,
+      "case": 18,
+      "groups": [
+        [
+          [
+            "P",
+            1
+          ],
+          [
+            "P",
+            3
+          ],
+          [
+            "Q",
+            3
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            2
+          ],
+          [
+            "C",
+            4
+          ],
+          [
+            "C",
+            5
+          ],
+          [
+            "C",
+            7
+          ],
+          [
+            "C",
+            8
+          ],
+          [
+            "C",
+            10
+          ],
+          [
+            "C",
+            14
+          ]
+        ],
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "Q",
+            0
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "M",
+            2
+          ],
+          [
+            "I",
+            3
+          ],
+          [
+            "C",
+            1
+          ],
+          [
+            "C",
+            6
+          ],
+          [
+            "C",
+            12
+          ],
+          [
+            "C",
+            15
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1
+      ],
+      "free_digit_count": 1,
+      "identity_order": 2,
+      "all_edge_count": 13
+    },
+    {
+      "s": 1,
+      "case": 19,
+      "groups": [
+        [
+          [
+            "Q",
+            2
+          ],
+          [
+            "Q",
+            3
+          ],
+          [
+            "M",
+            2
+          ],
+          [
+            "M",
+            3
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            2
+          ],
+          [
+            "C",
+            5
+          ],
+          [
+            "C",
+            6
+          ],
+          [
+            "C",
+            7
+          ],
+          [
+            "C",
+            8
+          ],
+          [
+            "C",
+            9
+          ]
+        ],
+        [
+          [
+            "Q",
+            1
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "I",
+            2
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            4
+          ],
+          [
+            "C",
+            11
+          ],
+          [
+            "C",
+            13
+          ],
+          [
+            "C",
+            15
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1
+      ],
+      "free_digit_count": 4,
+      "identity_order": 16,
+      "all_edge_count": 11
+    },
+    {
+      "s": 1,
+      "case": 20,
+      "groups": [
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "P",
+            2
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "I",
+            2
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            1
+          ],
+          [
+            "C",
+            5
+          ],
+          [
+            "C",
+            6
+          ],
+          [
+            "C",
+            12
+          ],
+          [
+            "C",
+            15
+          ]
+        ],
+        [
+          [
+            "M",
+            0
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "M",
+            2
+          ],
+          [
+            "M",
+            3
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            2
+          ],
+          [
+            "C",
+            7
+          ],
+          [
+            "C",
+            8
+          ],
+          [
+            "C",
+            10
+          ],
+          [
+            "C",
+            11
+          ],
+          [
+            "C",
+            13
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1
+      ],
+      "free_digit_count": 2,
+      "identity_order": 4,
+      "all_edge_count": 26
+    },
+    {
+      "s": 1,
+      "case": 21,
+      "groups": [
+        [
+          [
+            "P",
+            2
+          ],
+          [
+            "Q",
+            3
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "M",
+            3
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            5
+          ],
+          [
+            "C",
+            7
+          ],
+          [
+            "C",
+            8
+          ],
+          [
+            "C",
+            12
+          ],
+          [
+            "C",
+            14
+          ]
+        ],
+        [
+          [
+            "P",
+            1
+          ],
+          [
+            "P",
+            3
+          ],
+          [
+            "Q",
+            2
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "M",
+            2
+          ],
+          [
+            "I",
+            2
+          ],
+          [
+            "I",
+            3
+          ],
+          [
+            "C",
+            1
+          ],
+          [
+            "C",
+            3
+          ],
+          [
+            "C",
+            4
+          ],
+          [
+            "C",
+            9
+          ],
+          [
+            "C",
+            10
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1
+      ],
+      "free_digit_count": 4,
+      "identity_order": 16,
+      "all_edge_count": 23
+    },
+    {
+      "s": 1,
+      "case": 22,
+      "groups": [
+        [
+          [
+            "P",
+            1
+          ],
+          [
+            "Q",
+            0
+          ],
+          [
+            "Q",
+            2
+          ],
+          [
+            "Q",
+            3
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "I",
+            3
+          ],
+          [
+            "C",
+            1
+          ],
+          [
+            "C",
+            3
+          ],
+          [
+            "C",
+            4
+          ],
+          [
+            "C",
+            5
+          ],
+          [
+            "C",
+            7
+          ],
+          [
+            "C",
+            8
+          ],
+          [
+            "C",
+            13
+          ]
+        ],
+        [
+          [
+            "P",
+            2
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "M",
+            3
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            6
+          ],
+          [
+            "C",
+            9
+          ],
+          [
+            "C",
+            10
+          ],
+          [
+            "C",
+            11
+          ],
+          [
+            "C",
+            12
+          ],
+          [
+            "C",
+            15
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1
+      ],
+      "free_digit_count": 6,
+      "identity_order": 64,
+      "all_edge_count": 24
+    },
+    {
+      "s": 1,
+      "case": 23,
+      "groups": [
+        [
+          [
+            "P",
+            1
+          ],
+          [
+            "Q",
+            2
+          ],
+          [
+            "I",
+            3
+          ],
+          [
+            "C",
+            2
+          ],
+          [
+            "C",
+            3
+          ],
+          [
+            "C",
+            4
+          ],
+          [
+            "C",
+            5
+          ],
+          [
+            "C",
+            6
+          ],
+          [
+            "C",
+            14
+          ]
+        ],
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "P",
+            2
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "Q",
+            3
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "M",
+            3
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            1
+          ],
+          [
+            "C",
+            7
+          ],
+          [
+            "C",
+            9
+          ],
+          [
+            "C",
+            10
+          ],
+          [
+            "C",
+            11
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1
+      ],
+      "free_digit_count": 2,
+      "identity_order": 4,
+      "all_edge_count": 12
+    },
+    {
+      "s": 1,
+      "case": 24,
+      "groups": [
+        [
+          [
+            "P",
+            3
+          ],
+          [
+            "Q",
+            2
+          ],
+          [
+            "Q",
+            3
+          ],
+          [
+            "M",
+            3
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "I",
+            2
+          ],
+          [
+            "I",
+            3
+          ],
+          [
+            "C",
+            1
+          ],
+          [
+            "C",
+            2
+          ],
+          [
+            "C",
+            8
+          ],
+          [
+            "C",
+            10
+          ],
+          [
+            "C",
+            11
+          ],
+          [
+            "C",
+            12
+          ],
+          [
+            "C",
+            14
+          ]
+        ],
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "P",
+            1
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "C",
+            5
+          ],
+          [
+            "C",
+            6
+          ],
+          [
+            "C",
+            15
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1
+      ],
+      "free_digit_count": 2,
+      "identity_order": 4,
+      "all_edge_count": 12
+    },
+    {
+      "s": 1,
+      "case": 25,
+      "groups": [
+        [
+          [
+            "P",
+            3
+          ],
+          [
+            "Q",
+            0
+          ],
+          [
+            "Q",
+            2
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "M",
+            2
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "I",
+            3
+          ],
+          [
+            "C",
+            1
+          ],
+          [
+            "C",
+            2
+          ],
+          [
+            "C",
+            7
+          ],
+          [
+            "C",
+            9
+          ]
+        ],
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "P",
+            1
+          ],
+          [
+            "P",
+            2
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "Q",
+            3
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            4
+          ],
+          [
+            "C",
+            10
+          ],
+          [
+            "C",
+            11
+          ],
+          [
+            "C",
+            12
+          ],
+          [
+            "C",
+            13
+          ],
+          [
+            "C",
+            14
+          ],
+          [
+            "C",
+            15
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1
+      ],
+      "free_digit_count": 4,
+      "identity_order": 16,
+      "all_edge_count": 27
+    },
+    {
+      "s": 1,
+      "case": 26,
+      "groups": [
+        [
+          [
+            "P",
+            3
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "M",
+            3
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "I",
+            3
+          ],
+          [
+            "C",
+            1
+          ],
+          [
+            "C",
+            5
+          ],
+          [
+            "C",
+            6
+          ],
+          [
+            "C",
+            7
+          ],
+          [
+            "C",
+            10
+          ],
+          [
+            "C",
+            11
+          ],
+          [
+            "C",
+            12
+          ]
+        ],
+        [
+          [
+            "P",
+            2
+          ],
+          [
+            "Q",
+            0
+          ],
+          [
+            "M",
+            2
+          ],
+          [
+            "I",
+            2
+          ],
+          [
+            "C",
+            14
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1
+      ],
+      "free_digit_count": 3,
+      "identity_order": 8,
+      "all_edge_count": 12
+    },
+    {
+      "s": 1,
+      "case": 27,
+      "groups": [
+        [
+          [
+            "Q",
+            0
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "Q",
+            2
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "M",
+            3
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            6
+          ],
+          [
+            "C",
+            8
+          ],
+          [
+            "C",
+            10
+          ],
+          [
+            "C",
+            12
+          ],
+          [
+            "C",
+            14
+          ]
+        ],
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "P",
+            1
+          ],
+          [
+            "P",
+            3
+          ],
+          [
+            "Q",
+            3
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "I",
+            2
+          ],
+          [
+            "I",
+            3
+          ],
+          [
+            "C",
+            1
+          ],
+          [
+            "C",
+            2
+          ],
+          [
+            "C",
+            3
+          ],
+          [
+            "C",
+            4
+          ],
+          [
+            "C",
+            5
+          ],
+          [
+            "C",
+            11
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1
+      ],
+      "free_digit_count": 2,
+      "identity_order": 4,
+      "all_edge_count": 28
+    },
+    {
+      "s": 1,
+      "case": 28,
+      "groups": [
+        [
+          [
+            "P",
+            3
+          ],
+          [
+            "Q",
+            0
+          ],
+          [
+            "Q",
+            2
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "M",
+            2
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "I",
+            2
+          ],
+          [
+            "C",
+            0
+          ],
+          [
+            "C",
+            6
+          ],
+          [
+            "C",
+            9
+          ],
+          [
+            "C",
+            12
+          ],
+          [
+            "C",
+            13
+          ]
+        ],
+        [
+          [
+            "P",
+            0
+          ],
+          [
+            "P",
+            2
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "Q",
+            3
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "M",
+            3
+          ],
+          [
+            "C",
+            2
+          ],
+          [
+            "C",
+            3
+          ],
+          [
+            "C",
+            4
+          ],
+          [
+            "C",
+            5
+          ],
+          [
+            "C",
+            8
+          ],
+          [
+            "C",
+            10
+          ],
+          [
+            "C",
+            14
+          ],
+          [
+            "C",
+            15
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1
+      ],
+      "free_digit_count": 8,
+      "identity_order": 256,
+      "all_edge_count": 30
+    },
+    {
+      "s": 1,
+      "case": 29,
+      "groups": [
+        [
+          [
+            "P",
+            1
+          ],
+          [
+            "Q",
+            0
+          ],
+          [
+            "Q",
+            1
+          ],
+          [
+            "Q",
+            2
+          ],
+          [
+            "Q",
+            3
+          ],
+          [
+            "I",
+            2
+          ],
+          [
+            "C",
+            2
+          ],
+          [
+            "C",
+            5
+          ],
+          [
+            "C",
+            7
+          ],
+          [
+            "C",
+            12
+          ],
+          [
+            "C",
+            14
+          ]
+        ],
+        [
+          [
+            "P",
+            2
+          ],
+          [
+            "P",
+            3
+          ],
+          [
+            "M",
+            0
+          ],
+          [
+            "M",
+            1
+          ],
+          [
+            "M",
+            2
+          ],
+          [
+            "M",
+            3
+          ],
+          [
+            "I",
+            1
+          ],
+          [
+            "I",
+            3
+          ],
+          [
+            "C",
+            1
+          ],
+          [
+            "C",
+            4
+          ],
+          [
+            "C",
+            8
+          ],
+          [
+            "C",
+            9
+          ],
+          [
+            "C",
+            10
+          ],
+          [
+            "C",
+            11
+          ],
+          [
+            "C",
+            13
+          ]
+        ]
+      ],
+      "digit_alphabet": [
+        0,
+        1
+      ],
+      "free_digit_count": 8,
+      "identity_order": 256,
+      "all_edge_count": 33
+    }
+  ]
+}

@@ -60,7 +60,17 @@ a second global target using two implicit determinant contents, with cheap
 padding and explicit Vandermonde normalization.
 An exact trace involving the inverse and entrywise square gives the count directly;
 efficient evaluation of that normalized scalar is unproved.
+The [full Cauchy Smith-profile theorem](research/pole-smith-stabilization.md)
+removes any matrix-size-dependent stabilization precision and gives a direct
+rectangular maximal-minor slope. It does not identify the unknown factor pivots
+or supply a compressed global evaluator. Run `make verify-pole-smith`.
 The [research index](research/INDEX.md) links proofs, exact evidence, and replay commands.
+
+The [joint raw-boundary theorem](research/joint-top-boundary-rank.md) extends
+the original separate-wire obstruction to arbitrary joint factorizations of
+all original edges between each group pair. Its exact tradeoff is
+`H + V/4 >= n`; internal constraint solving and new weighted representations
+remain outside its hypotheses. Run `make verify-joint-top-boundary`.
 
 The result table distinguishes verified machine bounds from conditional constructions and finite experiments. A merged PR or a passing finite test does not imply independent mathematical review.
 
