@@ -140,16 +140,17 @@ product, giving
 S_unit_inverse <= ((2L+1)*w-1)*delta.                    (9)
 ```
 
-If a polynomial Galois-ring carry evaluator with the companion interface
-is available, (8)-(9) give its input budgets. For t dividing w, its
+The [polynomial Galois-ring carry evaluator](teichmuller-cyclic-carries.md)
+integrated from PR71 supplies the companion interface. Equations (8)-(9)
+give its input budgets. For t dividing w, its
 exponent parameter is `v*(w/t)`; the resulting cost has the form
 
 ```
 O(L) * (S+2)^O(v*w/t) * poly(w,L,input length),          (10)
 ```
 
-with polynomial bit overhead for the explicit ring operations. This is
-a conditional interface to that evaluator, not a new proof of it. It
+with polynomial bit overhead for the explicit ring operations. This uses
+the credited evaluator, rather than supplying a new proof of it. It
 does not assert a precision-independent S: precision appears linearly
 inside the base in (10). Constants are summed with the actual cardinality
 q^v, which can be nonzero modulo `2^L`.
@@ -213,7 +214,55 @@ for norm predicates and products of total unit inverses. Whether the remaining
 degree, variable and representation costs can improve a complete factoring
 algorithm is open; no such bound is claimed.
 
-## Exact controls
+## 5. Implemented compilers and the system-count bound
+
+The [compiler](../tools/precision_rational_carries.py) implements (11)-(12)
+as `rational_sum` and the equation-packing construction as
+`packed_system_count`. Its Frobenius-factor transform rotates relative
+columns, wraps the binary row modulo the summation width, and applies
+the actual ring automorphism to the coefficients. It does not enumerate
+the Teichmuller domain. Both functions return an explicit resource invoice.
+
+For a concrete system bound, let the explicit coefficient ring have degree
+`m*w` and precision h, and let m equations in v variables have ordinary
+degree at most delta. Their coefficients are supplied in the subring fixed
+by `sigma^w`. The residues of
+
+```
+1, z, ..., z^(m-1)
+```
+
+form a basis over `F_(2^w)`, where z is the power-basis generator of
+the supplied basic irreducible quotient. Indeed its residue generates
+the whole degree-m*w field over F2, so also generates the degree-m
+extension over `F_(2^w)`. A linear dependence of fewer than m powers
+would contradict that minimal degree. This justifies the compiler's
+particular packing basis without finding or averaging characters.
+
+Choose `t=w`, so there is only one relative column per summation variable.
+The exact modulo-`2^h` count has cost
+
+```
+(h*m*w*delta+2)^O(v) poly(input_length,h,m,w,v).          (13)
+```
+
+There are at most h+1 polynomial queries, each with
+`S<=(2h-1)*m*w*delta`. The coefficient extension changes ring bit cost
+and S, **without adding summation variables or precision**. The field
+models and coefficient embeddings must already be supplied or acquired
+at separately charged cost; (13) does not silently construct them.
+For m=0 the known domain cardinality is returned. For h>v*w the count
+is recovered exactly as an integer, with no nonunit precision division.
+
+This complements PR71's additive-character compiler, whose alternative
+invoice uses v+m variables and precision `h+w*(m-1)`. Both are retained.
+Their relative cost depends on the available coefficient representation.
+Equation (13) is a bound for explicit finite-field polynomial systems,
+not for arbitrary word arithmetic. In particular trace predicates that
+mix many binary rows can still enlarge the relative-column exponent;
+the integer multiplication representation has not been supplied.
+
+## 6. Exact controls
 
 The [checker](../tools/check_precision_residue_indicators.py) expands both
 versions of E_L and verifies the exact polynomial identities. It tests
@@ -233,3 +282,14 @@ degree budgets and source hashes. Run `make verify-precision-indicators`.
 No large parameter search, Lean or independent mathematical review is
 included. Substantial OpenAI assistant support; the existing cyclic-carry
 and active Galois-ring lift work retain their distinct source credit.
+
+The separate [compiler checker](../tools/check_precision_rational_carries.py)
+compares collected rational sums against literal ring unit inverses,
+checks Frobenius-factor transforms pointwise, and compares packed system
+counts with direct simultaneous root tests. Its
+[receipt](../evidence/precision-rational-carry-controls.json) retains each
+explicit factor, equation, output and invoice, including coefficient
+extensions larger than the summation field and an exact count with
+precision exceeding the domain bits. Run
+`make verify-precision-rational-carries`. These are finite integration
+controls for the ordinary compiler argument; no score gain is inferred.

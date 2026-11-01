@@ -3101,3 +3101,7 @@ verify-multiaxis-face-rank:
 .PHONY: verify-precision-indicators
 verify-precision-indicators:
 	python3 tools/check_precision_residue_indicators.py
+
+.PHONY: verify-precision-rational-carries
+verify-precision-rational-carries:
+	python3 tools/check_precision_rational_carries.py

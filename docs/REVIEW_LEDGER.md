@@ -879,3 +879,25 @@ denominators and two packed binary predicates are included. Source hashes,
 expanded coefficients and explicit input budgets are retained. The
 earlier full `5c2e66d` replay predates this source. No Lean, independent
 mathematical review or stronger factoring score is claimed.
+
+## PR71 backend and implemented inverse/system companions
+
+PR71 source `b9cd96f1f767cd71c8bad123fdb9e1d450bd5f92` is retained
+by merge `3d20c83`. Its ordinary moment/carry argument, norm fixed-ring
+argument and entry points were inspected; the focused backend, indicator
+and documentation checks pass. The original 384 polynomial queries,
+7,060 assignments and residue-count controls remain source-pinned to that
+backend. This is integration, not independent mathematical acceptance.
+
+The [new compiler](../tools/precision_rational_carries.py) implements
+collected total unit inverses and coefficient-extension packing of residue
+systems. At coefficient degree m*w, m ordinary equations retain v variables
+and precision h, with input budget `(2h-1)*m*w*delta`; supplied field models
+and coefficient embeddings are required or must be separately acquired.
+The [receipt](../evidence/precision-rational-carry-controls.json) compares
+18 rational-sum controls, 512 pointwise Frobenius transforms and 35 packed
+system controls with literal evaluation. Constants, nonunits, punctured
+domains, relative-column rotation, subfield coefficients and exact-count
+precision are included. The inherited additive-character compiler is
+preserved. The complete integer arithmetic representation and a stronger
+factoring score remain open. No Lean is included.

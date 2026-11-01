@@ -2739,7 +2739,9 @@ Neither supplies the missing uniform window theorem or a stronger score.
 supplies exact residue-root indicators and total unit inverses modulo
 `2^L` with degree linear in L. Collecting all denominators gives `L+1`
 synchronized polynomial queries, with precision explicitly charged inside
-their degree budget. Multiple equations can share an extension-field norm
-when their row representation permits it. This is a constructive interface
-for the active Galois-ring carry lift; a complete arithmetic representation
-and stronger factoring bound remain open.
+their degree budget. The implemented packed-system compiler keeps v
+summation variables and precision h, using a coefficient extension of
+degree m*w for m equations over a width-w field. Its counting cost after
+field/embedding acquisition is `(h*m*w*delta+2)^O(v)` with polynomial
+bit overhead. This uses the integrated Galois-ring carry backend; a
+complete arithmetic representation and stronger factoring bound remain open.
