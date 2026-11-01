@@ -24,6 +24,8 @@
 
 ## Coherent physical crossing spaces
 
+- [Accelerated capped F16 profiles](tensor-f16-capped-search.md): exact binary subset minors, conservative one-word jets, a completed twelve-profile pilot, and the inherited-height label-count pruning rule.
+
 - [Exact F16 coherent profiles](tensor-f16-coherent-profiles.md): explicit extension-field codes, independent literal/Toeplitz controls, and conservative capped-order pressure bounds.
 - [An all-field coupled-quadratic floor](tensor-coupled-quadratic-field-floor.md): a 21-state coordinate core and 124 integer intervals prove `rho >= 5/7` for the specified height-8/12 retractions.
 

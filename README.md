@@ -198,6 +198,15 @@ over every characteristic-two field. Its exact integer certificate stopped
 the F16 pilot after 24 of 851 classes; the catalogue is explicitly incomplete.
 Search continues in different lower-core families.
 Run `make verify-tensor-f16`.
+
+The [accelerated capped-profile path](research/tensor-f16-capped-search.md)
+uses binary subset determinants and exact 64-coefficient jets.
+Independent polynomial and Toeplitz checks validate the path, and a larger
+47-letter control reproduces all 2,209 capped orders. The completed
+12-profile three-pair pilot reaches a best numerical pressure fit near
+0.71273154736, which does not improve the existing frontier.
+The same note extends the old protected-core exclusion to all qualifying
+alphabets with at most 104 labels, regardless of their maximum height.
 <!-- tensor-orthogonal-checkpoint:end -->
 
 <!-- coherent-compound-checkpoint:start -->

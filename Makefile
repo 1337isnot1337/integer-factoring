@@ -2478,3 +2478,10 @@ verify-oriented-refinement: verify-incremental-oriented-basis
 
 verify-incremental-oriented-basis:
 	python3 tools/check_incremental_oriented_coprime_basis.py
+
+.PHONY: verify-tensor-f16-fast
+
+verify-tensor-f16: verify-tensor-f16-fast
+
+verify-tensor-f16-fast:
+	python3 tools/check_tensor_hot_compounds_f16_fast.py --output /tmp/integer-factoring-tensor-f16-fast-check.json
