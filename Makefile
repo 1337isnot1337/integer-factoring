@@ -2560,3 +2560,10 @@ verify-tensor-f16: verify-tensor-literal-hot
 
 verify-tensor-literal-hot:
 	python3 tools/check_tensor_literal_hot_pfaffians_f16.py --output /tmp/integer-factoring-tensor-literal-hot.json
+
+.PHONY: verify-circuit-box-ratio-lattice
+
+verify-circuit-box-normalization: verify-circuit-box-ratio-lattice
+
+verify-circuit-box-ratio-lattice:
+	python3 tools/check_circuit_box_ratio_lattice.py --output /tmp/integer-factoring-ratio-lattice.json

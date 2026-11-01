@@ -2221,3 +2221,10 @@ retaining every within-cut Gaussian term. Independent original-kernel,
 Pfaffian, endpoint and Toeplitz controls accompany a complete capped 55-label
 pilot. It keeps more upper states than the coherent kernel construction,
 but this first numerical profile does not improve the pressure frontier.
+
+A [lattice terminal for ratio classes](research/circuit-box-ratio-lattice.md)
+recovers every local factor pair using at most four residue roots and twenty
+lattice lines once `R^3` exceeds the rectangle's product height. Streaming
+these queries gives `2^(n/3)*poly(n)` time and polynomial space, removing
+the preceding divisor-bound overhead. This is a classical cube-root scale,
+not an improvement over the main theorem or the scoring exponent.
