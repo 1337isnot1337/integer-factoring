@@ -1,5 +1,7 @@
 # Research index
 
+- [Free physical heights and supporting angles on the retained F4 pencil](two-place-free-gauge-asymmetric-search.md): 67 fixed-profile representatives, 469 registered free-height asymmetric trials, 150 independently reconstructed new-gauge orders and 204 derivative controls; registration supplies no new contraction.
+
 - [The first possible rectangular cofactor jet has bounded crossed rank](rectangular-adjugate-first-jet.md): stronger all-field adjugate prefixes and a nine-letter bare floor `709/1000`, with 416 interpolated cofactors, 6,168 lifted checks and an explicit binary counterexample to a stronger tail.
 
 - [Nonbinary flags with complete coordinate Fock profiles](f4-pascal-coordinate-flags.md): original F4 minors and occupation sectors with arbitrary whole-symbol potentials; 4,977 entry/endpoint controls, 210 independent nonbinary orders, and a registered eight-case thirty-two-letter screen with two one-hour follow-ons.

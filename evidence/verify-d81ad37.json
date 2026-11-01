@@ -1,0 +1,16 @@
+{
+  "command": "make verify",
+  "compressed_stdout_sha256": "3cf6fca748470642fe0016c1857ef197037530a853104df0e51ab63647f4f614",
+  "exit_code": 0,
+  "logged_python_command_blocks": 346,
+  "scope": "Full default pass at exact clean frozen d81ad37, including graded adjugate and first subalphabet caps. Predates the later bare entropy, rectangular jet, nonbinary coordinate and free-asymmetric search checkpoints; their focused controls are separate. No new Lean or stronger factoring bound.",
+  "source_commit": "d81ad37872d8239b18dc0b43fd4af7799e7a71fc",
+  "source_tree": "2412292e9669fe3475c0db0bbf140fcf7fd63a5e",
+  "status": "pass",
+  "stdout_path": "evidence/verify-d81ad37.stdout.txt.xz",
+  "stdout_sha256": "567c7fdc6030c6ac1395d0081ac61eec174941d0472333d04ca0c302291eb96c",
+  "unittest_suites_reported": [
+    66,
+    5
+  ]
+}
