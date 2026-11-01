@@ -1142,3 +1142,8 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 ## Explicit spectral aggregation contracts
 
 - [A degree-linear spectral trace interface and padded one-trace reduction](pole-cauchy-spectral-trace.md)
+
+
+## Fixed rational local frames
+
+- [Polynomial coefficient-transfer cost for fixed rational frames](fixed-rational-frame-transfer.md)

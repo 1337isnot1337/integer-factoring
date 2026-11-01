@@ -1,0 +1,2299 @@
+{
+  "coefficient_matrix_controls": [
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 1,
+      "prime": 2,
+      "proved_split_coordinate_bound": 9,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 1,
+      "prime": 2,
+      "proved_split_coordinate_bound": 9,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 1,
+      "prime": 2,
+      "proved_split_coordinate_bound": 9,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "channel_words": 2,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 2,
+      "length": 1,
+      "prime": 2,
+      "proved_split_coordinate_bound": 9,
+      "rank_one_terms": 2,
+      "target": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "channel_words": 0,
+      "coefficient_rank": 0,
+      "largest_splits_for_one_word": 0,
+      "length": 1,
+      "prime": 2,
+      "proved_split_coordinate_bound": 9,
+      "rank_one_terms": 0,
+      "target": [
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "channel_words": 2,
+      "coefficient_rank": 0,
+      "largest_splits_for_one_word": 1,
+      "length": 1,
+      "prime": 2,
+      "proved_split_coordinate_bound": 9,
+      "rank_one_terms": 2,
+      "target": [
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "channel_words": 2,
+      "coefficient_rank": 0,
+      "largest_splits_for_one_word": 1,
+      "length": 1,
+      "prime": 2,
+      "proved_split_coordinate_bound": 9,
+      "rank_one_terms": 2,
+      "target": [
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 2,
+      "prime": 2,
+      "proved_split_coordinate_bound": 18,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 2,
+      "prime": 2,
+      "proved_split_coordinate_bound": 18,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 2,
+      "prime": 2,
+      "proved_split_coordinate_bound": 18,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 2,
+      "prime": 2,
+      "proved_split_coordinate_bound": 18,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 0,
+      "largest_splits_for_one_word": 0,
+      "length": 2,
+      "prime": 2,
+      "proved_split_coordinate_bound": 18,
+      "rank_one_terms": 0,
+      "target": [
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 2,
+      "prime": 2,
+      "proved_split_coordinate_bound": 18,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "channel_words": 3,
+      "coefficient_rank": 2,
+      "largest_splits_for_one_word": 2,
+      "length": 2,
+      "prime": 2,
+      "proved_split_coordinate_bound": 18,
+      "rank_one_terms": 4,
+      "target": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "channel_words": 3,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 2,
+      "prime": 2,
+      "proved_split_coordinate_bound": 18,
+      "rank_one_terms": 1,
+      "target": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "channel_words": 3,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 2,
+      "prime": 2,
+      "proved_split_coordinate_bound": 18,
+      "rank_one_terms": 1,
+      "target": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "channel_words": 4,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 2,
+      "length": 2,
+      "prime": 2,
+      "proved_split_coordinate_bound": 18,
+      "rank_one_terms": 2,
+      "target": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "channel_words": 0,
+      "coefficient_rank": 0,
+      "largest_splits_for_one_word": 0,
+      "length": 2,
+      "prime": 2,
+      "proved_split_coordinate_bound": 18,
+      "rank_one_terms": 0,
+      "target": [
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "channel_words": 3,
+      "coefficient_rank": 0,
+      "largest_splits_for_one_word": 1,
+      "length": 2,
+      "prime": 2,
+      "proved_split_coordinate_bound": 18,
+      "rank_one_terms": 3,
+      "target": [
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "channel_words": 4,
+      "coefficient_rank": 0,
+      "largest_splits_for_one_word": 2,
+      "length": 2,
+      "prime": 2,
+      "proved_split_coordinate_bound": 18,
+      "rank_one_terms": 6,
+      "target": [
+        2,
+        -2,
+        0
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 3,
+      "prime": 2,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 3,
+      "prime": 2,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 3,
+      "prime": 2,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 3,
+      "prime": 2,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        0,
+        3
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 3,
+      "prime": 2,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 0,
+      "largest_splits_for_one_word": 0,
+      "length": 3,
+      "prime": 2,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 0,
+      "target": [
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 3,
+      "prime": 2,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 3,
+      "prime": 2,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 3,
+      "prime": 2,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 3,
+      "prime": 2,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "channel_words": 4,
+      "coefficient_rank": 3,
+      "largest_splits_for_one_word": 2,
+      "length": 3,
+      "prime": 2,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 5,
+      "target": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "channel_words": 4,
+      "coefficient_rank": 2,
+      "largest_splits_for_one_word": 1,
+      "length": 3,
+      "prime": 2,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 4,
+      "target": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "channel_words": 4,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 4,
+      "length": 3,
+      "prime": 2,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 4,
+      "target": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "channel_words": 4,
+      "coefficient_rank": 2,
+      "largest_splits_for_one_word": 1,
+      "length": 3,
+      "prime": 2,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 4,
+      "target": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "channel_words": 4,
+      "coefficient_rank": 0,
+      "largest_splits_for_one_word": 2,
+      "length": 3,
+      "prime": 2,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 2,
+      "target": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "channel_words": 4,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 2,
+      "length": 3,
+      "prime": 2,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 2,
+      "target": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "channel_words": 7,
+      "coefficient_rank": 3,
+      "largest_splits_for_one_word": 2,
+      "length": 3,
+      "prime": 2,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 8,
+      "target": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "channel_words": 7,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 3,
+      "length": 3,
+      "prime": 2,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 3,
+      "target": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "channel_words": 7,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 3,
+      "length": 3,
+      "prime": 2,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 3,
+      "target": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "channel_words": 8,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 4,
+      "length": 3,
+      "prime": 2,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 4,
+      "target": [
+        3,
+        0,
+        0
+      ]
+    },
+    {
+      "channel_words": 0,
+      "coefficient_rank": 0,
+      "largest_splits_for_one_word": 0,
+      "length": 3,
+      "prime": 2,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 0,
+      "target": [
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "channel_words": 4,
+      "coefficient_rank": 0,
+      "largest_splits_for_one_word": 1,
+      "length": 3,
+      "prime": 2,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 4,
+      "target": [
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "channel_words": 8,
+      "coefficient_rank": 0,
+      "largest_splits_for_one_word": 3,
+      "length": 3,
+      "prime": 2,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 14,
+      "target": [
+        3,
+        -3,
+        0
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 4,
+      "prime": 2,
+      "proved_split_coordinate_bound": 36,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "channel_words": 5,
+      "coefficient_rank": 0,
+      "largest_splits_for_one_word": 2,
+      "length": 4,
+      "prime": 2,
+      "proved_split_coordinate_bound": 36,
+      "rank_one_terms": 2,
+      "target": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "channel_words": 11,
+      "coefficient_rank": 0,
+      "largest_splits_for_one_word": 0,
+      "length": 4,
+      "prime": 2,
+      "proved_split_coordinate_bound": 36,
+      "rank_one_terms": 0,
+      "target": [
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "channel_words": 16,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 2,
+      "length": 4,
+      "prime": 2,
+      "proved_split_coordinate_bound": 36,
+      "rank_one_terms": 2,
+      "target": [
+        4,
+        0,
+        0
+      ]
+    },
+    {
+      "channel_words": 0,
+      "coefficient_rank": 0,
+      "largest_splits_for_one_word": 0,
+      "length": 4,
+      "prime": 2,
+      "proved_split_coordinate_bound": 36,
+      "rank_one_terms": 0,
+      "target": [
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "channel_words": 5,
+      "coefficient_rank": 0,
+      "largest_splits_for_one_word": 1,
+      "length": 4,
+      "prime": 2,
+      "proved_split_coordinate_bound": 36,
+      "rank_one_terms": 5,
+      "target": [
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "channel_words": 16,
+      "coefficient_rank": 0,
+      "largest_splits_for_one_word": 4,
+      "length": 4,
+      "prime": 2,
+      "proved_split_coordinate_bound": 36,
+      "rank_one_terms": 38,
+      "target": [
+        4,
+        -4,
+        0
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 1,
+      "prime": 5,
+      "proved_split_coordinate_bound": 9,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 1,
+      "prime": 5,
+      "proved_split_coordinate_bound": 9,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 1,
+      "prime": 5,
+      "proved_split_coordinate_bound": 9,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "channel_words": 2,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 2,
+      "length": 1,
+      "prime": 5,
+      "proved_split_coordinate_bound": 9,
+      "rank_one_terms": 2,
+      "target": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "channel_words": 0,
+      "coefficient_rank": 0,
+      "largest_splits_for_one_word": 0,
+      "length": 1,
+      "prime": 5,
+      "proved_split_coordinate_bound": 9,
+      "rank_one_terms": 0,
+      "target": [
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "channel_words": 2,
+      "coefficient_rank": 0,
+      "largest_splits_for_one_word": 1,
+      "length": 1,
+      "prime": 5,
+      "proved_split_coordinate_bound": 9,
+      "rank_one_terms": 2,
+      "target": [
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "channel_words": 2,
+      "coefficient_rank": 0,
+      "largest_splits_for_one_word": 1,
+      "length": 1,
+      "prime": 5,
+      "proved_split_coordinate_bound": 9,
+      "rank_one_terms": 2,
+      "target": [
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 2,
+      "prime": 5,
+      "proved_split_coordinate_bound": 18,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 2,
+      "prime": 5,
+      "proved_split_coordinate_bound": 18,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 2,
+      "prime": 5,
+      "proved_split_coordinate_bound": 18,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 2,
+      "prime": 5,
+      "proved_split_coordinate_bound": 18,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 2,
+      "prime": 5,
+      "proved_split_coordinate_bound": 18,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 2,
+      "prime": 5,
+      "proved_split_coordinate_bound": 18,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "channel_words": 3,
+      "coefficient_rank": 2,
+      "largest_splits_for_one_word": 2,
+      "length": 2,
+      "prime": 5,
+      "proved_split_coordinate_bound": 18,
+      "rank_one_terms": 4,
+      "target": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "channel_words": 3,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 3,
+      "length": 2,
+      "prime": 5,
+      "proved_split_coordinate_bound": 18,
+      "rank_one_terms": 3,
+      "target": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "channel_words": 3,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 2,
+      "length": 2,
+      "prime": 5,
+      "proved_split_coordinate_bound": 18,
+      "rank_one_terms": 2,
+      "target": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "channel_words": 4,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 3,
+      "length": 2,
+      "prime": 5,
+      "proved_split_coordinate_bound": 18,
+      "rank_one_terms": 3,
+      "target": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "channel_words": 0,
+      "coefficient_rank": 0,
+      "largest_splits_for_one_word": 0,
+      "length": 2,
+      "prime": 5,
+      "proved_split_coordinate_bound": 18,
+      "rank_one_terms": 0,
+      "target": [
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "channel_words": 3,
+      "coefficient_rank": 0,
+      "largest_splits_for_one_word": 1,
+      "length": 2,
+      "prime": 5,
+      "proved_split_coordinate_bound": 18,
+      "rank_one_terms": 3,
+      "target": [
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "channel_words": 4,
+      "coefficient_rank": 0,
+      "largest_splits_for_one_word": 2,
+      "length": 2,
+      "prime": 5,
+      "proved_split_coordinate_bound": 18,
+      "rank_one_terms": 6,
+      "target": [
+        2,
+        -2,
+        0
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 3,
+      "prime": 5,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 3,
+      "prime": 5,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 3,
+      "prime": 5,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 3,
+      "prime": 5,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        0,
+        3
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 3,
+      "prime": 5,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 3,
+      "prime": 5,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 3,
+      "prime": 5,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 3,
+      "prime": 5,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 3,
+      "prime": 5,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 3,
+      "prime": 5,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "channel_words": 4,
+      "coefficient_rank": 3,
+      "largest_splits_for_one_word": 2,
+      "length": 3,
+      "prime": 5,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 5,
+      "target": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "channel_words": 4,
+      "coefficient_rank": 3,
+      "largest_splits_for_one_word": 3,
+      "length": 3,
+      "prime": 5,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 6,
+      "target": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "channel_words": 4,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 4,
+      "length": 3,
+      "prime": 5,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 4,
+      "target": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "channel_words": 4,
+      "coefficient_rank": 3,
+      "largest_splits_for_one_word": 2,
+      "length": 3,
+      "prime": 5,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 5,
+      "target": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "channel_words": 4,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 3,
+      "length": 3,
+      "prime": 5,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 3,
+      "target": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "channel_words": 4,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 2,
+      "length": 3,
+      "prime": 5,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 2,
+      "target": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "channel_words": 7,
+      "coefficient_rank": 3,
+      "largest_splits_for_one_word": 3,
+      "length": 3,
+      "prime": 5,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 9,
+      "target": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "channel_words": 7,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 5,
+      "length": 3,
+      "prime": 5,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 5,
+      "target": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "channel_words": 7,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 3,
+      "length": 3,
+      "prime": 5,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 3,
+      "target": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "channel_words": 8,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 4,
+      "length": 3,
+      "prime": 5,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 4,
+      "target": [
+        3,
+        0,
+        0
+      ]
+    },
+    {
+      "channel_words": 0,
+      "coefficient_rank": 0,
+      "largest_splits_for_one_word": 0,
+      "length": 3,
+      "prime": 5,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 0,
+      "target": [
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "channel_words": 4,
+      "coefficient_rank": 0,
+      "largest_splits_for_one_word": 1,
+      "length": 3,
+      "prime": 5,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 4,
+      "target": [
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "channel_words": 8,
+      "coefficient_rank": 0,
+      "largest_splits_for_one_word": 3,
+      "length": 3,
+      "prime": 5,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 17,
+      "target": [
+        3,
+        -3,
+        0
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 4,
+      "prime": 5,
+      "proved_split_coordinate_bound": 36,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "channel_words": 5,
+      "coefficient_rank": 4,
+      "largest_splits_for_one_word": 3,
+      "length": 4,
+      "prime": 5,
+      "proved_split_coordinate_bound": 36,
+      "rank_one_terms": 7,
+      "target": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "channel_words": 11,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 5,
+      "length": 4,
+      "prime": 5,
+      "proved_split_coordinate_bound": 36,
+      "rank_one_terms": 5,
+      "target": [
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "channel_words": 16,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 5,
+      "length": 4,
+      "prime": 5,
+      "proved_split_coordinate_bound": 36,
+      "rank_one_terms": 5,
+      "target": [
+        4,
+        0,
+        0
+      ]
+    },
+    {
+      "channel_words": 0,
+      "coefficient_rank": 0,
+      "largest_splits_for_one_word": 0,
+      "length": 4,
+      "prime": 5,
+      "proved_split_coordinate_bound": 36,
+      "rank_one_terms": 0,
+      "target": [
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "channel_words": 5,
+      "coefficient_rank": 0,
+      "largest_splits_for_one_word": 1,
+      "length": 4,
+      "prime": 5,
+      "proved_split_coordinate_bound": 36,
+      "rank_one_terms": 5,
+      "target": [
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "channel_words": 16,
+      "coefficient_rank": 0,
+      "largest_splits_for_one_word": 4,
+      "length": 4,
+      "prime": 5,
+      "proved_split_coordinate_bound": 36,
+      "rank_one_terms": 44,
+      "target": [
+        4,
+        -4,
+        0
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 1,
+      "prime": 7,
+      "proved_split_coordinate_bound": 9,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 1,
+      "prime": 7,
+      "proved_split_coordinate_bound": 9,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 1,
+      "prime": 7,
+      "proved_split_coordinate_bound": 9,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "channel_words": 2,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 2,
+      "length": 1,
+      "prime": 7,
+      "proved_split_coordinate_bound": 9,
+      "rank_one_terms": 2,
+      "target": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "channel_words": 0,
+      "coefficient_rank": 0,
+      "largest_splits_for_one_word": 0,
+      "length": 1,
+      "prime": 7,
+      "proved_split_coordinate_bound": 9,
+      "rank_one_terms": 0,
+      "target": [
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "channel_words": 2,
+      "coefficient_rank": 0,
+      "largest_splits_for_one_word": 1,
+      "length": 1,
+      "prime": 7,
+      "proved_split_coordinate_bound": 9,
+      "rank_one_terms": 2,
+      "target": [
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "channel_words": 2,
+      "coefficient_rank": 0,
+      "largest_splits_for_one_word": 1,
+      "length": 1,
+      "prime": 7,
+      "proved_split_coordinate_bound": 9,
+      "rank_one_terms": 2,
+      "target": [
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 2,
+      "prime": 7,
+      "proved_split_coordinate_bound": 18,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 2,
+      "prime": 7,
+      "proved_split_coordinate_bound": 18,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 2,
+      "prime": 7,
+      "proved_split_coordinate_bound": 18,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 2,
+      "prime": 7,
+      "proved_split_coordinate_bound": 18,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 2,
+      "prime": 7,
+      "proved_split_coordinate_bound": 18,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 2,
+      "prime": 7,
+      "proved_split_coordinate_bound": 18,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "channel_words": 3,
+      "coefficient_rank": 2,
+      "largest_splits_for_one_word": 2,
+      "length": 2,
+      "prime": 7,
+      "proved_split_coordinate_bound": 18,
+      "rank_one_terms": 4,
+      "target": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "channel_words": 3,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 3,
+      "length": 2,
+      "prime": 7,
+      "proved_split_coordinate_bound": 18,
+      "rank_one_terms": 3,
+      "target": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "channel_words": 3,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 2,
+      "length": 2,
+      "prime": 7,
+      "proved_split_coordinate_bound": 18,
+      "rank_one_terms": 2,
+      "target": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "channel_words": 4,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 3,
+      "length": 2,
+      "prime": 7,
+      "proved_split_coordinate_bound": 18,
+      "rank_one_terms": 3,
+      "target": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "channel_words": 0,
+      "coefficient_rank": 0,
+      "largest_splits_for_one_word": 0,
+      "length": 2,
+      "prime": 7,
+      "proved_split_coordinate_bound": 18,
+      "rank_one_terms": 0,
+      "target": [
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "channel_words": 3,
+      "coefficient_rank": 0,
+      "largest_splits_for_one_word": 1,
+      "length": 2,
+      "prime": 7,
+      "proved_split_coordinate_bound": 18,
+      "rank_one_terms": 3,
+      "target": [
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "channel_words": 4,
+      "coefficient_rank": 0,
+      "largest_splits_for_one_word": 2,
+      "length": 2,
+      "prime": 7,
+      "proved_split_coordinate_bound": 18,
+      "rank_one_terms": 6,
+      "target": [
+        2,
+        -2,
+        0
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 3,
+      "prime": 7,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 3,
+      "prime": 7,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 3,
+      "prime": 7,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 3,
+      "prime": 7,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        0,
+        3
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 3,
+      "prime": 7,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 3,
+      "prime": 7,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 3,
+      "prime": 7,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 3,
+      "prime": 7,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 3,
+      "prime": 7,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 3,
+      "prime": 7,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "channel_words": 4,
+      "coefficient_rank": 3,
+      "largest_splits_for_one_word": 2,
+      "length": 3,
+      "prime": 7,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 5,
+      "target": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "channel_words": 4,
+      "coefficient_rank": 3,
+      "largest_splits_for_one_word": 3,
+      "length": 3,
+      "prime": 7,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 6,
+      "target": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "channel_words": 4,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 4,
+      "length": 3,
+      "prime": 7,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 4,
+      "target": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "channel_words": 4,
+      "coefficient_rank": 3,
+      "largest_splits_for_one_word": 2,
+      "length": 3,
+      "prime": 7,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 5,
+      "target": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "channel_words": 4,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 3,
+      "length": 3,
+      "prime": 7,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 3,
+      "target": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "channel_words": 4,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 2,
+      "length": 3,
+      "prime": 7,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 2,
+      "target": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "channel_words": 7,
+      "coefficient_rank": 3,
+      "largest_splits_for_one_word": 3,
+      "length": 3,
+      "prime": 7,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 9,
+      "target": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "channel_words": 7,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 5,
+      "length": 3,
+      "prime": 7,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 5,
+      "target": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "channel_words": 7,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 3,
+      "length": 3,
+      "prime": 7,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 3,
+      "target": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "channel_words": 8,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 4,
+      "length": 3,
+      "prime": 7,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 4,
+      "target": [
+        3,
+        0,
+        0
+      ]
+    },
+    {
+      "channel_words": 0,
+      "coefficient_rank": 0,
+      "largest_splits_for_one_word": 0,
+      "length": 3,
+      "prime": 7,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 0,
+      "target": [
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "channel_words": 4,
+      "coefficient_rank": 0,
+      "largest_splits_for_one_word": 1,
+      "length": 3,
+      "prime": 7,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 4,
+      "target": [
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "channel_words": 8,
+      "coefficient_rank": 0,
+      "largest_splits_for_one_word": 3,
+      "length": 3,
+      "prime": 7,
+      "proved_split_coordinate_bound": 27,
+      "rank_one_terms": 17,
+      "target": [
+        3,
+        -3,
+        0
+      ]
+    },
+    {
+      "channel_words": 1,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 1,
+      "length": 4,
+      "prime": 7,
+      "proved_split_coordinate_bound": 36,
+      "rank_one_terms": 1,
+      "target": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "channel_words": 5,
+      "coefficient_rank": 4,
+      "largest_splits_for_one_word": 3,
+      "length": 4,
+      "prime": 7,
+      "proved_split_coordinate_bound": 36,
+      "rank_one_terms": 7,
+      "target": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "channel_words": 11,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 5,
+      "length": 4,
+      "prime": 7,
+      "proved_split_coordinate_bound": 36,
+      "rank_one_terms": 5,
+      "target": [
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "channel_words": 16,
+      "coefficient_rank": 1,
+      "largest_splits_for_one_word": 5,
+      "length": 4,
+      "prime": 7,
+      "proved_split_coordinate_bound": 36,
+      "rank_one_terms": 5,
+      "target": [
+        4,
+        0,
+        0
+      ]
+    },
+    {
+      "channel_words": 0,
+      "coefficient_rank": 0,
+      "largest_splits_for_one_word": 0,
+      "length": 4,
+      "prime": 7,
+      "proved_split_coordinate_bound": 36,
+      "rank_one_terms": 0,
+      "target": [
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "channel_words": 5,
+      "coefficient_rank": 0,
+      "largest_splits_for_one_word": 1,
+      "length": 4,
+      "prime": 7,
+      "proved_split_coordinate_bound": 36,
+      "rank_one_terms": 5,
+      "target": [
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "channel_words": 16,
+      "coefficient_rank": 0,
+      "largest_splits_for_one_word": 4,
+      "length": 4,
+      "prime": 7,
+      "proved_split_coordinate_bound": 36,
+      "rank_one_terms": 44,
+      "target": [
+        4,
+        -4,
+        0
+      ]
+    }
+  ],
+  "cone_certificates": [
+    {
+      "generators": [
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          0
+        ]
+      ],
+      "prime": 2,
+      "shifts": [
+        [
+          0,
+          -1,
+          -1
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          -1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "weights": [
+        4,
+        1,
+        2
+      ]
+    },
+    {
+      "generators": [
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          0
+        ]
+      ],
+      "prime": 5,
+      "shifts": [
+        [
+          0,
+          -1,
+          -1
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          -1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "weights": [
+        4,
+        1,
+        2
+      ]
+    },
+    {
+      "generators": [
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          0
+        ]
+      ],
+      "prime": 7,
+      "shifts": [
+        [
+          0,
+          -1,
+          -1
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          -1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "weights": [
+        4,
+        1,
+        2
+      ]
+    }
+  ],
+  "controls_sha256": "f64bfb0b24008f6e6f06cd02fe7c76d6ca5052d25912a03863df7072ea3a77b6",
+  "exact_scalar_coefficient_checks": 75,
+  "factoring_exponent_improvement": false,
+  "literal_matrix_entries_compared": 10500,
+  "rejected_x_pole_controls": 1,
+  "schema": "fixed-rational-frame-transfer-v1",
+  "scope": "Fixed rational x-adically regular frames, not arbitrary formal series"
+}

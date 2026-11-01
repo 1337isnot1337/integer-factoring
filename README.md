@@ -1755,6 +1755,8 @@ The [height-25 protected-state theorem](research/coherent-protected-height25.md)
 
 The [full-tail active-core reduction](research/coherent-full-tail-core.md) replaces an exponentially large compressed compound calculation by a fixed `4k`-mode core and explicit Gaussian spectators. Under the stated height and deletion hypotheses it computes the actual reflection profiles. The complete forbidden-pair example is checked through 512 physical modes and gives no gain over the unmodified Gaussian; all physical entropy and degree costs remain charged.
 
+The [fixed rational-frame transfer](research/fixed-rational-frame-transfer.md) proves polynomial coefficient-splitting overhead for a fixed rational local factorization that is regular at the selected cut variable. It permits generic multivariate Smith calculations beyond finite Laurent frames, with uniform coefficient algorithms and separate expansion cones for different cuts. It supplies an additional construction tool, not a stronger local spectrum or factoring score.
+
 ## Contribution and attribution
 
 Start with the [contributor quickstart](docs/START_HERE.md) and

@@ -2087,3 +2087,7 @@ verify-pole-cauchy-spectral-trace:
 .PHONY: verify-prime-cofactor-fresh-176
 verify-prime-cofactor-fresh-176:
 	python3 tools/check_fresh_prime_cofactor_control.py --bits 176 --replay evidence/prime-cofactor-fresh-176-selective.json.xz
+
+.PHONY: verify-fixed-rational-frames
+verify-fixed-rational-frames:
+	python3 tools/check_fixed_rational_frame_transfer.py --output /tmp/integer-factoring-fixed-rational-frame-transfer.json
