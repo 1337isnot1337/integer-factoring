@@ -153,3 +153,10 @@ for the one-hour whole-symbol follow-on. Its last-bit advantage over the
 unswapped case is numerical roundoff, not evidence of a structural
 orientation advantage. The follow-on is running separately from this
 completed screen. No exact stronger crossing or factoring bound follows.
+
+Full default verification plus six named focused gates passed in a clean
+checkout at exact `7dd1903`; the [receipt](../evidence/verify-7dd1903.json)
+and [compressed log](../evidence/verify-7dd1903.stdout.txt.xz) retain its
+source tree and command. That pin includes the rectangular constructor
+and cache controls, but predates the completed-screen archive and bundle
+adapter. Their focused checks and source pins are separate.

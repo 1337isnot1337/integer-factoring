@@ -1,0 +1,18 @@
+{
+  "checkout_initially_clean": true,
+  "command": "make verify verify-smith-chambers-f4 verify-rectangular-pascal-coordinates verify-f8-hyperoval verify-hecke-all-places verify-jensen-core-floors",
+  "compressed_stdout_sha256": "0f52cb9ad807ad1706c666d0289b1151cbabe075ed0122cf226b07acfcfbd2b0",
+  "exit_code": 0,
+  "logged_python_command_blocks": 353,
+  "scope": "Complete defaults and the six named focused gates at exact clean7dd1903, including adaptive regularLDUcontrols, rectangularcoordinatecontrols,F8hyperoval exact pressure/selectedentry replay,Hecke all-place andJensen core floors. Predates the bundleadapter and completed rectangularscreenarchive; focusedchecks cover those separately. No newLean or improvedfactoring score.",
+  "seconds": 918.2375002591871,
+  "source_commit": "7dd1903eae76d2d638ad21590b33e8f36db5be1a",
+  "source_tree": "264d95980548adc4d9f67c7d6e50bd40d222d626",
+  "status": "pass",
+  "stdout_path": "evidence/verify-7dd1903.stdout.txt.xz",
+  "stdout_sha256": "651802e0a53a1b796e8a204f3c1f5ec08ac060d29c313e80c1a42f182954dda9",
+  "unittest_suites_reported": [
+    66,
+    5
+  ]
+}
