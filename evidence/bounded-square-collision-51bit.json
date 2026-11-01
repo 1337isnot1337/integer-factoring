@@ -1,0 +1,178 @@
+{
+  "annihilator_supplied": false,
+  "class_number_supplied": false,
+  "collision": {
+    "ambiguous_difference": [
+      32452843,
+      0,
+      49979687
+    ],
+    "factor_data": {
+      "coprime_factors": [
+        32452843,
+        49979687
+      ],
+      "form": [
+        32452843,
+        0,
+        49979687
+      ],
+      "proper_factor": 32452843,
+      "shape": "zero_middle"
+    },
+    "factorization": [
+      32452843,
+      49979687
+    ],
+    "key": [
+      14421465,
+      -1512494,
+      112509710
+    ],
+    "kind": "two_generated_roots",
+    "left": {
+      "depth": 9,
+      "orientation": 1,
+      "root": [
+        3363738,
+        -1212706,
+        482305875
+      ],
+      "word": [
+        0,
+        2,
+        0,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        2
+      ]
+    },
+    "right": {
+      "depth": 9,
+      "orientation": 1,
+      "root": [
+        29439693,
+        -2606354,
+        55152790
+      ],
+      "word": [
+        0,
+        -5,
+        0,
+        0,
+        -3,
+        1,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "complete_generation_claimed": false,
+  "count_scope": "Move, squaring, and collision-comparison loops; setup and certificate replay are separate",
+  "depth_bound": 32,
+  "factor_base_primes": [
+    3,
+    5,
+    7,
+    11,
+    23,
+    31,
+    37,
+    41,
+    43
+  ],
+  "factorization": [
+    32452843,
+    49979687
+  ],
+  "input_bits": 51,
+  "input_factors_supplied": false,
+  "odd_n": 1621982935400141,
+  "roots": {
+    "3": 2,
+    "5": 4,
+    "7": 2,
+    "11": 8,
+    "23": 18,
+    "31": 22,
+    "37": 36,
+    "41": 16,
+    "43": 8
+  },
+  "selection": "stratified",
+  "statistics": {
+    "comparison_compositions": 39807,
+    "layers": [
+      {
+        "depth": 1,
+        "distinct_new_keys": 9,
+        "input_frontier": 1,
+        "pruned_new_keys": 0,
+        "retained_frontier": 9
+      },
+      {
+        "depth": 2,
+        "distinct_new_keys": 81,
+        "input_frontier": 9,
+        "pruned_new_keys": 0,
+        "retained_frontier": 81
+      },
+      {
+        "depth": 3,
+        "distinct_new_keys": 489,
+        "input_frontier": 81,
+        "pruned_new_keys": 0,
+        "retained_frontier": 489
+      },
+      {
+        "depth": 4,
+        "distinct_new_keys": 2241,
+        "input_frontier": 489,
+        "pruned_new_keys": 1217,
+        "retained_frontier": 1024
+      },
+      {
+        "depth": 5,
+        "distinct_new_keys": 7309,
+        "input_frontier": 1024,
+        "pruned_new_keys": 6285,
+        "retained_frontier": 1024
+      },
+      {
+        "depth": 6,
+        "distinct_new_keys": 11600,
+        "input_frontier": 1024,
+        "pruned_new_keys": 10576,
+        "retained_frontier": 1024
+      },
+      {
+        "depth": 7,
+        "distinct_new_keys": 12471,
+        "input_frontier": 1024,
+        "pruned_new_keys": 11447,
+        "retained_frontier": 1024
+      },
+      {
+        "depth": 8,
+        "distinct_new_keys": 13480,
+        "input_frontier": 1024,
+        "pruned_new_keys": 12456,
+        "retained_frontier": 1024
+      }
+    ],
+    "maximum_frontier": 1024,
+    "move_compositions": 102600,
+    "pruned_key_occurrences": 41981,
+    "retained_keys": 5700,
+    "squaring_compositions": 102600,
+    "stopped_depth": 9,
+    "unhelpful_collisions": 39806
+  },
+  "status": "factored",
+  "uniform_success_guarantee_claimed": false,
+  "width": 1024
+}
