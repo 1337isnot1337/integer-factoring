@@ -1,0 +1,39 @@
+{
+  "source_commit": "a3df51d8fa9e5975da22dbe51f4e64ae75fbdaa3",
+  "source_tree": "5cf1f02ac5cbcd660e38828d201f9af0dcb20381",
+  "started_utc": "2026-11-01T16:18:08.172715+00:00",
+  "commands": [
+    [
+      "make",
+      "verify"
+    ],
+    [
+      "make",
+      "verify-cold-gap",
+      "verify-uniform-axis-window"
+    ]
+  ],
+  "status": "pass",
+  "results": [
+    {
+      "command": [
+        "make",
+        "verify"
+      ],
+      "returncode": 0,
+      "seconds": 724.7200976880267
+    },
+    {
+      "command": [
+        "make",
+        "verify-cold-gap",
+        "verify-uniform-axis-window"
+      ],
+      "returncode": 0,
+      "seconds": 1.1663448521867394
+    }
+  ],
+  "seconds": 725.8894775151275,
+  "finished_utc": "2026-11-01T16:30:14.059660+00:00",
+  "post_status": ""
+}
