@@ -594,7 +594,7 @@ verify-post-half: verify-pr29-extended
 verify-arithmetic-sieve:
 	python3 tools/check_arithmetic_sieve_certificate.py
 
-verify-frontier: verify-bell verify-class-square-conic verify-divisor-moments verify-sparse-divisor-residues verify-odd-character-residues verify-pr31-frontier
+verify-frontier: verify-bell verify-class-square-conic verify-divisor-moments verify-sparse-divisor-residues verify-odd-character-residues verify-pr31-frontier verify-f4-hyperoval
 	python3 tools/check_direct_sublinear_counts.py
 	python3 tools/check_rational_simultaneous_transfer.py
 	python3 tools/check_minimum_cut_rank_budget.py
@@ -1958,3 +1958,34 @@ verify-register-toeplitz-budget:
 	python3 tools/check_shift_register_toeplitz_budget.py --output /tmp/integer-factoring-shift-register-toeplitz-budget.json
 verify-binary-rank-two-channels:
 	python3 tools/check_binary_rank_two_channels.py
+
+.PHONY: verify-coherent-graded-quotients verify-coherent-shared-gauges
+verify-coherent-graded-quotients:
+	python3 tools/check_coherent_graded_quotients.py --output /tmp/integer-factoring-coherent-graded-quotients.json
+verify-coherent-shared-gauges:
+	python3 tools/check_coherent_shared_gauges.py --output /tmp/integer-factoring-coherent-shared-gauges.json
+
+.PHONY: verify-f4-hyperoval
+verify-f4-hyperoval:
+	python3 tools/check_coherent_hot_f4_hyperoval_entries.py
+	python3 tools/certify_coherent_hot_f4_hyperoval.py
+
+.PHONY: verify-four-axis-floor
+verify-four-axis-floor:
+	python3 tools/check_four_axis_gaussian_profile_floor.py
+
+.PHONY: verify-weighted-four-axis-floor
+verify-weighted-four-axis-floor:
+	python3 tools/check_weighted_four_axis_gaussian_profile_floor.py
+
+.PHONY: verify-multiaxis-floor
+verify-multiaxis-floor:
+	python3 tools/check_multiaxis_gaussian_profile_floor.py
+
+
+.PHONY: verify-pole-cauchy-rational-blocks
+verify-pole-cauchy-rational-blocks:
+	python3 tools/check_pole_cauchy_rational_poles.py --small-only --output /tmp/integer-factoring-pole-cauchy-rational-poles.json
+	python3 tools/check_pole_cauchy_repeated_poles.py --output /tmp/integer-factoring-pole-cauchy-repeated-poles.json
+	python3 tools/check_pole_cauchy_quadratic_selectors.py --output /tmp/integer-factoring-pole-cauchy-quadratic-selectors.json
+	python3 tools/check_pole_cauchy_residue_blocks.py --output /tmp/integer-factoring-pole-cauchy-residue-blocks.json

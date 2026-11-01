@@ -109,6 +109,13 @@ and the 121-map all-scale proof are retained. The certified contraction remains
 above `1/sqrt(2)`; the complete factoring score remains **1/2**.
 Run `make verify-coherent-retractions` for focused exact controls and
 `make verify-coherent-q32-catalogue` to recompute the complete catalogue proof.
+[Graded quotient codes](research/coherent-graded-quotients.md) now supply
+explicit mixed-occupation physical maps. For every dyadic virtual dimension,
+their full zero-cut profile equals the coordinate profile; the other cut remains
+a construction variable. A [complete letter-gauge cone](research/coherent-shared-letter-gauges.md)
+also permits negative potentials while charging both profile changes and
+physical type costs. Six literal rational-gauge cut profiles and all sixteen
+four-mode quotient maps are independently checked.
 <!-- coherent-compound-checkpoint:end -->
 
 The [quadratic-parity Walsh construction](research/bell-walsh-constructions.md)
@@ -138,6 +145,17 @@ A [shared endpoint-minor argument](research/cube-gaussian-profile-budget.md)
 proves `rho > 3/5` for every homogeneous eight-by-eight Gaussian kernel
 under the common-scale, unweighted Smith-profile method. Multiple physical modes
 and stronger coefficient-rank estimates remain outside that obstruction.
+
+The [four-axis shared-minor proof](research/four-axis-gaussian-profile-floor.md)
+excludes the corresponding homogeneous Gaussian profile target. Its
+[weighted extension](research/weighted-four-axis-gaussian-profile-floor.md)
+also covers arbitrary coupled modes, common subalphabets and types, and
+vertex-dependent additive degree caps, including nonhomogeneous entries.
+The [general shared-minor budgets](research/multiaxis-gaussian-profile-floor.md)
+exclude the common-scale unweighted degree-cap criterion through eight axes.
+At nine axes an explicit integer profile satisfies these budgets and has
+pressure below `1/3`; constructing a realizing kernel remains open.
+Run `make verify-four-axis-floor verify-weighted-four-axis-floor verify-multiaxis-floor`.
 <!-- cube-transfer-checkpoint:end -->
 
 ## Results and evidence
@@ -211,6 +229,15 @@ and the complete factoring score remains **1/2**.
 also admit polynomial precision: for `c_A,c_B` component intervals the
 inverse loss is at most `(k-1)(2c_A+2c_B-3)`, with a sharper exact residue sweep.
 This extends the implicit joint-contraction algorithm beyond balanced domains.
+[External rational poles](research/pole-cauchy-rational-poles.md) and
+[higher pole orders](research/pole-cauchy-repeated-poles.md) are now evaluable
+with all denominator losses charged. [Quadratic poles](research/pole-cauchy-quadratic-selectors.md)
+give exact dyadic residue selectors outside the regular unit-inverse circuit
+model. A [polynomial selector lift](research/pole-cauchy-residue-blocks.md)
+computes complete residue-block sums of `2^L M^-1` modulo `2^p`, in time
+polynomial in the encoded domains and numerical precision parameters.
+The missing step is a sufficiently compressed rank or Smith-count algorithm;
+inverse block sums do not by themselves count factor pairs.
 <!-- pole-implicit-checkpoint:end -->
 
 The [research index](research/INDEX.md) links proofs, exact evidence, and replay commands.
@@ -325,6 +352,8 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs five groups on 
 | [`tools/`](tools/) and [`tests/`](tests/) | Exact checkers, reproduction scripts, and unit tests |
 
 ## Current research frontier
+
+- [F4 hyperoval crossing](research/f4-hyperoval-crossing-bound.md): exact rho < 0.710005861, slightly improving the pinned coordinate 96-letter bound. Both complete cuts and an explicit type with denominator 2^36 are certified. This remains above 1/sqrt(2), so the complete factoring exponent stays 1/2.
 
 - [Exact 96-letter pressure certificate](research/exact-natural-pressure-intervals.md): the complete saved profile certifies rho < 0.710005874881191, still above the required 1/sqrt(2). [Width-sensitive Boolean constructors](research/width-sensitive-prime-constructor.md) reduce preparation cost without supplying the missing crossing improvement. See the [session record](research/escape-half-session-20261031.md) for scope and replay costs.
 

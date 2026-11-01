@@ -172,3 +172,14 @@ they do not substitute finite sampling for (1).
 python3 tools/check_regular_analytic_selector_precision.py \
   --output evidence/regular-analytic-selector-precision.json
 ```
+
+## Extension outside this circuit representation
+
+The later [quadratic-pole selector](pole-cauchy-quadratic-selectors.md)
+uses an inverse denominator that is not a unit on the full odd domain.
+Exact affine valuations and a rational product identity evaluate its
+contractions directly. A [polynomial lift](pole-cauchy-residue-blocks.md)
+then selects residue blocks to any requested precision at polynomial
+cost. These algorithms extend the accepted representation; the sharp
+bound above continues to apply to the regular unit-inverse circuits
+specified here.

@@ -5,6 +5,12 @@
 - [An actual common three-cut Gaussian family](cube-homogeneous-gaussian.md): one homogeneous multivariate endpoint, exact three-cut Smith factors, a rational `rho=5/8` certificate, and an all-scale floor for its declared Cayley method; no score improvement.
 - [Cube geometry and a complete conditional transfer](cube-crossing-transfer.md): antipodal cube edges, equitable regrouping, effective entry queries, and `alpha=log_3(1/rho)`; a new local family below `1/sqrt(3)` is still required to improve the score.
 
+## Higher-dimensional Gaussian constraints
+
+- [Four-axis shared endpoint minors](four-axis-gaussian-profile-floor.md): a short non-Cayley proof gives common-scale unweighted profile pressure strictly above one half.
+- [Weighted four-axis degree caps](weighted-four-axis-gaussian-profile-floor.md): the floor survives arbitrary coupled modes, common subalphabets and correlated types, and vertex-dependent additive degree bounds, including nonhomogeneous entries.
+- [Shared endpoint budgets through eight axes](multiaxis-gaussian-profile-floor.md): exact all-scale certificates exclude the unweighted degree-cap criterion for dimensions two through eight; a fully rational nine-axis relaxed profile first passes these budgets, without a realizing kernel.
+
 ## Coherent physical crossing spaces
 
 - [Quadratic-parity Walsh paths and the full radial obstruction](bell-walsh-constructions.md): arbitrary positive energy tables, an exact radial optimum `H_2(1/4)`, and strict reciprocal retiming improvements for fixed folded seeds.
@@ -1049,3 +1055,20 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 - [A determinant budget for every regular nilpotent resolvent](regular-resolvent-determinant-budget.md)
 - [Complete binary four-label normalized rank-two search](binary-rank-two-channels.md)
 - [A sharper copied-wire obstruction from one truncated multiplication map](shift-register-toeplitz-budget.md)
+
+## Coherent graded quotients and complete letter gauges
+
+- [Coherent quotient codes and an exact zero-cut invariant](coherent-graded-quotients.md)
+- [Shared letter gauges for coherent physical maps](coherent-shared-letter-gauges.md)
+
+## F4 hyperoval and coherent weights
+
+- [Stronger F4 hyperoval crossing bound](f4-hyperoval-crossing-bound.md): exact rho < 0.710005861 with both complete profiles and an explicit positive type; no stronger factoring exponent.
+- [Coherent deletion-operator weight cone](weighted-coherent-hot-f4.md): a sufficient cone for both weighted cuts of non-coordinate physical retracts.
+
+## Rational poles and full-precision inverse residue blocks
+
+- [Implicit inverse contractions with external rational poles](pole-cauchy-rational-poles.md)
+- [Higher external poles with explicit precision costs](pole-cauchy-repeated-poles.md)
+- [Quadratic poles give inverse residue-block sums](pole-cauchy-quadratic-selectors.md)
+- [Inverse residue-block sums at arbitrary precision](pole-cauchy-residue-blocks.md)

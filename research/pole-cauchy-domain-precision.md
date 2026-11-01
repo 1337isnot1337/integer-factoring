@@ -100,9 +100,10 @@ does not assume that the two residue-count patterns are aligned.
 ### Every explicit progression union has a polynomial loss bound
 
 For a domain of `c>=1` pieces and total size `m`, (2) shows that
-every count lies strictly between `m/Q-c` and `m/Q+c`. Indeed its
-constant part is a sum of floors, differing from `m/Q` by less
-than `c`, and its extra part lies between zero and `c`.
+every count lies strictly between `m/Q-c` and `m/Q+c`. Each individual
+component count lies strictly between `m_i/Q-1` and `m_i/Q+1`,
+including the case when `Q` divides `m_i`. Sum these strict bounds
+over the `c` components.
 Consequently the difference between any row count and any column
 count has absolute value strictly below `c_A+c_B`. Because these
 counts are integers,
