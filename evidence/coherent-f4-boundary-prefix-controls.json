@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "factoring_exponent_improved": false,
+  "catalogue_readback": {
+    "complete": false,
+    "checked_orbits": 153,
+    "covered_projectors": 530,
+    "distinct_profile_pairs": 153,
+    "exact_comparisons": {
+      "equal": 1,
+      "strictly positive on 0 < r < 1": 152
+    }
+  }
+}
