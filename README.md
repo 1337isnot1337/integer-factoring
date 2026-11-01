@@ -37,6 +37,11 @@ The composition uses the existing clique evaluator from [Anthropic's Appendix B]
 | Sharper k6 saving `log(12/11)/log(12) > 1/29` | Ordinary proof, not Lean-verified at this rate | [Rate derivation](research/k6-sharp-rate.md) |
 | Saving exponent above `1/2` | **Not established** | [Research index](research/INDEX.md) |
 
+The [uniformity perspective](research/uniformity-and-half-frontier.md)
+addresses the hard-limit question: assuming `P=BPP`, standard padding gives
+deterministic `exp(O(sqrt(n log n)))` factoring. This conditional argument
+and the existence of nonuniform successful tapes give no new qualifying score.
+
 Arithmetic research now uses [inverse sections](research/dyadic-inverse-sections.md)
 and an [interval orbit-gcd interface with a rational-part projection](research/interval-orbit-gcd.md).
 It supplies [exact complete-orbit aggregation](research/dyadic-orbit-aggregation.md)
@@ -115,6 +120,8 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs five groups on 
 | [`tools/`](tools/) and [`tests/`](tests/) | Exact checkers, reproduction scripts, and unit tests |
 
 ## Current research frontier
+
+- [Weighted fixed-characteristic transfer](research/fixed-characteristic-transfer.md), [polynomial Pfaffian profiles](research/modular-pfaffian.md), and [shared-mode Schur reduction](research/fermi-sea-schur.md): retained PR #22 constructions, effective evaluation, and scoped obstructions. No improved exponent is claimed. Run `make verify-modular` for the extended exact controls.
 
 - [Coarsened grid check](research/coarsened-grid-validation.md): a finite signed network-to-padded-clique check, including internal edges and grouping.
 
@@ -456,6 +463,15 @@ selected boundaries, with rank-product floors 576 and 1950. These tests
 leave other boundaries and longer ordered words open. Run
 `make verify-weyl-ordered-boundaries` and
 `make verify-weyl-middle-coefficients` for the standard-library replays.
+
+The [subgroup-return construction](research/subgroup-return-crossings.md)
+preserves both endpoints using noncommuting group words and has a rank-one
+starting cut at every length. Its free-group version has an auxiliary
+return functional of infinite Hankel rank, yet word reduction gives
+effective complete construction in `2^O(m)` time. Exact full binary
+coefficient spans fail the finite half target at lengths one through three
+for that example and a four-state analogue; useful uniform rank bounds
+remain open. Run `make verify-subgroup-return`.
 
 The [group-shear extension](research/group-shear-crossings.md) implements
 the swap through three multiplication/division shears over any finite
@@ -1161,6 +1177,17 @@ controls. Three explicit rational points also give a polynomial algorithm for
 solving every modular square-norm instance without a prime factorization of the modulus.
 An exact negative integer example is soluble at every modulus, separating
 this local information from the required global search. The score remains `1/2`.
+
+An [exact counting alternative](research/divisor-moment-recovery.md)
+recovers the smallest prime factor from a family of divisor moments by
+positive Hankel reconstruction and integer root isolation. After small-factor
+trial division, recovery costs `exp(O(sqrt(b)))`. The moments are coefficients
+of level-one Eisenstein series with explicitly bounded growing weights.
+A suitably uniform fast coefficient engine would preserve its saving exponent
+in the complete factoring bound. At the trial budget for `1/2 < beta <= 1`,
+the required weights, query count and recovery work are polynomial in `b`.
+The coefficient engine remains unproved. Run
+`make verify-divisor-moments` for the supplied-moment controls.
 
 The [Bell-diagonal seed construction](research/bell-diagonal-crossings.md)
 gives exact two-cut transforms and excludes its complete symmetric

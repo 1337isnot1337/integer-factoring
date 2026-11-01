@@ -164,6 +164,13 @@ cross-lane question in
 
 ## 7. Exact finite controls
 
+A [Discussion #53 contribution](https://github.com/1337isnot1337/integer-factoring/discussions/53#discussioncomment-19324116)
+independently supplied the same Cauchy determinant normalization and
+reported exact rational checks at sizes one through four. Its section
+invariant and counterexample are retained with credit in the pole-trace
+note. That check concerns the determinant formula, rather than independent
+review of the entire global evaluation target.
+
 Run `make verify-interval-pole-trace`. The
 [dense checker](../tools/check_pole_cauchy_slope.py) performs exact
 Gaussian elimination in `Q(w)`, compares the whole determinant with
