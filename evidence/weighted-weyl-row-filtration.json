@@ -1,0 +1,36 @@
+{
+  "source_sha256": "e6cfcdb8990cd5db260d713cdc168350b14c0507ed03e54df709d53f29fb6441",
+  "local_quotient_invariance_coefficients": 51276,
+  "local_source_to_sl2_coefficient_identities": 27849,
+  "simple_weight_bit_exclusions": 4107,
+  "column_block_no_carry_witnesses": 2055,
+  "finite_row_filtrations": [
+    {
+      "energy": 2,
+      "blocks": 3,
+      "maximum_filtration_length": 2,
+      "all_common_nilpotent_filtrations": true
+    },
+    {
+      "energy": 4,
+      "blocks": 11,
+      "maximum_filtration_length": 2,
+      "all_common_nilpotent_filtrations": true
+    },
+    {
+      "energy": 8,
+      "blocks": 51,
+      "maximum_filtration_length": 3,
+      "all_common_nilpotent_filtrations": true
+    }
+  ],
+  "non_prime_power_energy_six_negative_control": true,
+  "all_energy_parity_sector_checks": {
+    "local_odd_even_coefficients": 2000,
+    "embedded_supported_entries": 6010,
+    "complete_embedded_shells": 30,
+    "dimension_comparisons": 1023
+  },
+  "scope": "Structural finite checks supplement the written power-of-two quotient proof and all-energy parity restriction; no asymptotic claim is inferred from a finite matrix table.",
+  "elapsed_seconds": 0.514
+}

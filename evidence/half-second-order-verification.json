@@ -1,0 +1,72 @@
+{
+  "checker_sha256": "996ecfbe32ddd6f9da6c0968d06b636a67c460460ce8a24af179f1b35412fede",
+  "independent_partition_dp_comparisons": 81,
+  "maximum_energy": 65536,
+  "profiles": [
+    {
+      "central_channel_count": 66273,
+      "central_channel_width": 17,
+      "h": 17,
+      "lambda": 8,
+      "partition_count": 297,
+      "second_order_residual_estimate": -0.7828562658671938,
+      "top_energy_residual_estimate": -0.21144673185151275
+    },
+    {
+      "central_channel_count": 359042451,
+      "central_channel_width": 29,
+      "h": 44,
+      "lambda": 16,
+      "partition_count": 75175,
+      "second_order_residual_estimate": -1.521546308217955,
+      "top_energy_residual_estimate": -0.5465849221154198
+    },
+    {
+      "central_channel_count": 4861560552351727,
+      "central_channel_width": 53,
+      "h": 128,
+      "lambda": 32,
+      "partition_count": 4351078600,
+      "second_order_residual_estimate": -2.286628705624736,
+      "top_energy_residual_estimate": -1.0191201353554646
+    },
+    {
+      "central_channel_count": 590102421147820604453387444174,
+      "central_channel_width": 99,
+      "h": 417,
+      "lambda": 64,
+      "partition_count": 18987964267331664557,
+      "second_order_residual_estimate": -2.5833506109979183,
+      "top_energy_residual_estimate": -1.1273457567405023
+    },
+    {
+      "central_channel_count": 3166186006094169649881194058448283942586033832855900252450,
+      "central_channel_width": 192,
+      "h": 1459,
+      "lambda": 128,
+      "partition_count": 348259884310914705271679879631949049780,
+      "second_order_residual_estimate": -2.805678435443083,
+      "top_energy_residual_estimate": -1.2294544498688094
+    },
+    {
+      "central_channel_count": 31484790895605911715831253106162897270470984292702537702433560797084096920574438157841504189620189011678086602440,
+      "central_channel_width": 374,
+      "h": 5371,
+      "lambda": 256,
+      "partition_count": 117263714945541655621248755702844024994602699840738148353943627695769507279775,
+      "second_order_residual_estimate": -2.9554872522888225,
+      "top_energy_residual_estimate": -1.3062775535182034
+    },
+    {
+      "central_channel_count": 1018628678403886592468943771780043240247332886502661438390801840148210755818157055544980736776797558122387103304836540163083131838970665827209518472048894374237661587288167070086674168148179128986901964627454954767605443364,
+      "central_channel_width": 738,
+      "h": 20444,
+      "lambda": 512,
+      "partition_count": 13527678529621111330896717390204505449018601987957167751383085509243829325992038510346078386720897398021601950367640448978828353212127890872316589610836615,
+      "second_order_residual_estimate": -3.0385227522861236,
+      "top_energy_residual_estimate": -1.3465502958248639
+    }
+  ],
+  "scope": "Counts, minimal energies, and bit widths are exact. Residuals are numerical diagnostics; the asymptotic theorem has a separate proof.",
+  "status": "passed"
+}

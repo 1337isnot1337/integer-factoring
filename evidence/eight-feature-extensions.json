@@ -1,0 +1,2478 @@
+{
+  "completed_models": 11,
+  "models": [
+    {
+      "boundary": 0,
+      "growth_increments": [
+        {
+          "from_t": 4,
+          "maximum_product_increment_rho": 0.964329383632857,
+          "rank_sum_increment_rho": 1.0332079282055775,
+          "to_t": 6
+        },
+        {
+          "from_t": 6,
+          "maximum_product_increment_rho": 0.9953665484655468,
+          "rank_sum_increment_rho": 1.0315369666948204,
+          "to_t": 8
+        }
+      ],
+      "id": "model-00",
+      "matrices": [
+        9,
+        6,
+        9,
+        8,
+        1,
+        0,
+        1,
+        0
+      ],
+      "off_shift": 0,
+      "profiles": [
+        {
+          "bit_flip_witness": [
+            1,
+            1
+          ],
+          "boundary": 0,
+          "column_ranks": [
+            256,
+            125,
+            75,
+            39,
+            12
+          ],
+          "identity_letters": [
+            7
+          ],
+          "matrices": [
+            9,
+            6,
+            9,
+            8,
+            1,
+            0,
+            1,
+            0
+          ],
+          "maximum_product_rho": 0.778602336311985,
+          "maximum_rank_product": 5625,
+          "native_profile_sha256": "1db1509f171730eb34f8b9fe8226ea253569c40e6a44fde0fea34b7472b1031e",
+          "off_crossing_witness": [
+            2
+          ],
+          "off_shift": 0,
+          "order_swap": 0,
+          "order_witness": [
+            3,
+            1,
+            1
+          ],
+          "paired_identity_letters": [],
+          "rank_sum_estimate": 325.49365212209756,
+          "rank_sum_integer_lower_bound": 323,
+          "rank_sum_integer_upper_bound": 327,
+          "rank_sum_rho": 1.0433106996943715,
+          "row_ranks": [
+            12,
+            39,
+            75,
+            125,
+            256
+          ],
+          "t": 4
+        },
+        {
+          "bit_flip_witness": [
+            1,
+            1
+          ],
+          "boundary": 0,
+          "column_ranks": [
+            4096,
+            2173,
+            1638,
+            1087,
+            649,
+            269,
+            65
+          ],
+          "identity_letters": [
+            7
+          ],
+          "matrices": [
+            9,
+            6,
+            9,
+            8,
+            1,
+            0,
+            1,
+            0
+          ],
+          "maximum_product_rho": 0.8405113520856091,
+          "maximum_rank_product": 1181569,
+          "native_profile_sha256": "598f6f7b850c9bd93b453d585dc76daa8185c28041faa02259e832d5ab3ec686",
+          "off_crossing_witness": [
+            2
+          ],
+          "off_shift": 0,
+          "order_swap": 0,
+          "order_witness": [
+            3,
+            1,
+            1
+          ],
+          "paired_identity_letters": [],
+          "rank_sum_estimate": 5710.167341715582,
+          "rank_sum_integer_lower_bound": 5707,
+          "rank_sum_integer_upper_bound": 5713,
+          "rank_sum_rho": 1.0399431091981068,
+          "row_ranks": [
+            65,
+            269,
+            649,
+            1087,
+            1638,
+            2173,
+            4096
+          ],
+          "t": 6
+        },
+        {
+          "bit_flip_witness": [
+            1,
+            1
+          ],
+          "boundary": 0,
+          "column_ranks": [
+            65536,
+            36732,
+            30284,
+            22317,
+            17170,
+            10790,
+            5367,
+            1834,
+            351
+          ],
+          "identity_letters": [
+            7
+          ],
+          "matrices": [
+            9,
+            6,
+            9,
+            8,
+            1,
+            0,
+            1,
+            0
+          ],
+          "maximum_product_rho": 0.8792251511805935,
+          "maximum_rank_product": 294808900,
+          "native_profile_sha256": "b714636fad9dbd2abadb79c1d4f8906e35c07c3ed117efeb45814b29ffa8dfd2",
+          "off_crossing_witness": [
+            2
+          ],
+          "off_shift": 0,
+          "order_swap": 0,
+          "order_witness": [
+            3,
+            1,
+            1
+          ],
+          "paired_identity_letters": [],
+          "rank_sum_estimate": 99711.00883195532,
+          "rank_sum_integer_lower_bound": 99706,
+          "rank_sum_integer_upper_bound": 99714,
+          "rank_sum_rho": 1.0378415735722852,
+          "row_ranks": [
+            351,
+            1834,
+            5367,
+            10790,
+            17170,
+            22317,
+            30284,
+            36732,
+            65536
+          ],
+          "t": 8
+        }
+      ]
+    },
+    {
+      "boundary": 0,
+      "growth_increments": [
+        {
+          "from_t": 4,
+          "maximum_product_increment_rho": 0.9287805036931464,
+          "rank_sum_increment_rho": 1.0378447009390745,
+          "to_t": 6
+        },
+        {
+          "from_t": 6,
+          "maximum_product_increment_rho": 0.9876002283104816,
+          "rank_sum_increment_rho": 1.0316320853323824,
+          "to_t": 8
+        }
+      ],
+      "id": "model-01",
+      "matrices": [
+        9,
+        1,
+        6,
+        0,
+        9,
+        1,
+        0,
+        0
+      ],
+      "off_shift": 0,
+      "profiles": [
+        {
+          "bit_flip_witness": [
+            2,
+            2
+          ],
+          "boundary": 0,
+          "column_ranks": [
+            13,
+            36,
+            76,
+            120,
+            256
+          ],
+          "identity_letters": [
+            3,
+            7
+          ],
+          "matrices": [
+            9,
+            1,
+            6,
+            0,
+            9,
+            1,
+            0,
+            0
+          ],
+          "maximum_product_rho": 0.7809909391804482,
+          "maximum_rank_product": 5776,
+          "native_profile_sha256": "efefb873c6b47bd3d4d4d6b8379a4225300ef12aa4ba344f670ec78ed745f3b8",
+          "off_crossing_witness": [
+            1
+          ],
+          "off_shift": 0,
+          "order_swap": 1,
+          "order_witness": [
+            2,
+            2,
+            1
+          ],
+          "paired_identity_letters": [
+            3,
+            7
+          ],
+          "rank_sum_estimate": 322.8310546160875,
+          "rank_sum_integer_lower_bound": 320,
+          "rank_sum_integer_upper_bound": 324,
+          "rank_sum_rho": 1.041829444323928,
+          "row_ranks": [
+            256,
+            120,
+            76,
+            36,
+            13
+          ],
+          "t": 4
+        },
+        {
+          "bit_flip_witness": [
+            2,
+            2
+          ],
+          "boundary": 0,
+          "column_ranks": [
+            89,
+            296,
+            618,
+            988,
+            1612,
+            2016,
+            4096
+          ],
+          "identity_letters": [
+            3,
+            7
+          ],
+          "matrices": [
+            9,
+            1,
+            6,
+            0,
+            9,
+            1,
+            0,
+            0
+          ],
+          "maximum_product_rho": 0.8302541273513476,
+          "maximum_rank_product": 996216,
+          "native_profile_sha256": "96d4690c90b482c6868c2ed67343938aedc4a844a88f03a85d889036b2c3fc68",
+          "off_crossing_witness": [
+            1
+          ],
+          "off_shift": 0,
+          "order_swap": 1,
+          "order_witness": [
+            2,
+            2,
+            1
+          ],
+          "paired_identity_letters": [
+            3,
+            7
+          ],
+          "rank_sum_estimate": 5736.7357846358445,
+          "rank_sum_integer_lower_bound": 5734,
+          "rank_sum_integer_upper_bound": 5740,
+          "rank_sum_rho": 1.0405011965289768,
+          "row_ranks": [
+            4096,
+            2016,
+            1612,
+            988,
+            618,
+            296,
+            89
+          ],
+          "t": 6
+        },
+        {
+          "bit_flip_witness": [
+            2,
+            2
+          ],
+          "boundary": 0,
+          "column_ranks": [
+            610,
+            2482,
+            5772,
+            10172,
+            15430,
+            19568,
+            29072,
+            32640,
+            65536
+          ],
+          "identity_letters": [
+            3,
+            7
+          ],
+          "matrices": [
+            9,
+            1,
+            6,
+            0,
+            9,
+            1,
+            0,
+            0
+          ],
+          "maximum_product_rho": 0.8695906525911311,
+          "maximum_rank_product": 238084900,
+          "native_profile_sha256": "63edc09b395576aed0c030c1ca09c1b53928ac82238f2cd95c68b5b25c63eef6",
+          "off_crossing_witness": [
+            1
+          ],
+          "off_shift": 0,
+          "order_swap": 1,
+          "order_witness": [
+            2,
+            2,
+            1
+          ],
+          "paired_identity_letters": [
+            3,
+            7
+          ],
+          "rank_sum_estimate": 100201.36940068226,
+          "rank_sum_integer_lower_bound": 100196,
+          "rank_sum_integer_upper_bound": 100204,
+          "rank_sum_rho": 1.0382839187298283,
+          "row_ranks": [
+            65536,
+            32640,
+            29072,
+            19568,
+            15430,
+            10172,
+            5772,
+            2482,
+            610
+          ],
+          "t": 8
+        }
+      ]
+    },
+    {
+      "boundary": 0,
+      "growth_increments": [
+        {
+          "from_t": 4,
+          "maximum_product_increment_rho": 0.8900546303386542,
+          "rank_sum_increment_rho": 1.0409143410226784,
+          "to_t": 6
+        },
+        {
+          "from_t": 6,
+          "maximum_product_increment_rho": 0.9910768542333493,
+          "rank_sum_increment_rho": 1.0377074931417916,
+          "to_t": 8
+        }
+      ],
+      "id": "model-02",
+      "matrices": [
+        9,
+        8,
+        0,
+        15,
+        0,
+        0,
+        0,
+        0
+      ],
+      "off_shift": 1,
+      "profiles": [
+        {
+          "bit_flip_witness": [
+            0
+          ],
+          "boundary": 0,
+          "column_ranks": [
+            16,
+            64,
+            79,
+            43,
+            33,
+            32,
+            11,
+            0,
+            1
+          ],
+          "identity_letters": [
+            4,
+            7
+          ],
+          "matrices": [
+            9,
+            8,
+            0,
+            15,
+            0,
+            0,
+            0,
+            0
+          ],
+          "maximum_product_rho": 0.7879725935221379,
+          "maximum_rank_product": 6241,
+          "native_profile_sha256": "56e70ada7bec1ec25d58be8f57321edbce02fc5e9fd49739be5843f9eb7f32f9",
+          "off_crossing_witness": [
+            3,
+            1,
+            3
+          ],
+          "off_shift": 1,
+          "order_swap": 1,
+          "order_witness": [
+            3,
+            3,
+            1
+          ],
+          "paired_identity_letters": [],
+          "rank_sum_estimate": 277.4813008219969,
+          "rank_sum_integer_lower_bound": 276,
+          "rank_sum_integer_upper_bound": 279,
+          "rank_sum_rho": 1.0145308428482256,
+          "row_ranks": [
+            16,
+            64,
+            79,
+            42,
+            32,
+            32,
+            10,
+            0,
+            1
+          ],
+          "t": 4
+        },
+        {
+          "bit_flip_witness": [
+            0
+          ],
+          "boundary": 0,
+          "column_ranks": [
+            64,
+            384,
+            831,
+            947,
+            838,
+            837,
+            679,
+            307,
+            117,
+            72,
+            22,
+            0,
+            1
+          ],
+          "identity_letters": [
+            4,
+            7
+          ],
+          "matrices": [
+            9,
+            8,
+            0,
+            15,
+            0,
+            0,
+            0,
+            0
+          ],
+          "maximum_product_rho": 0.8219999391276434,
+          "maximum_rank_product": 868399,
+          "native_profile_sha256": "0847f86610be7da8b16485fba8c5a83dd431a648068725ce4e0f55020426e65f",
+          "off_crossing_witness": [
+            3,
+            1,
+            3
+          ],
+          "off_shift": 1,
+          "order_swap": 1,
+          "order_witness": [
+            3,
+            3,
+            1
+          ],
+          "paired_identity_letters": [],
+          "rank_sum_estimate": 4973.011689115951,
+          "rank_sum_integer_lower_bound": 4970,
+          "rank_sum_integer_upper_bound": 4977,
+          "rank_sum_rho": 1.02332534223971,
+          "row_ranks": [
+            64,
+            384,
+            831,
+            917,
+            760,
+            788,
+            638,
+            272,
+            104,
+            72,
+            21,
+            0,
+            1
+          ],
+          "t": 6
+        },
+        {
+          "bit_flip_witness": [
+            0
+          ],
+          "boundary": 0,
+          "column_ranks": [
+            256,
+            2048,
+            6399,
+            11267,
+            13863,
+            15089,
+            15283,
+            12089,
+            7403,
+            4563,
+            2723,
+            1033,
+            275,
+            128,
+            37,
+            0,
+            1
+          ],
+          "identity_letters": [
+            4,
+            7
+          ],
+          "matrices": [
+            9,
+            8,
+            0,
+            15,
+            0,
+            0,
+            0,
+            0
+          ],
+          "maximum_product_rho": 0.8642691679040698,
+          "maximum_rank_product": 211577852,
+          "native_profile_sha256": "6382011272e5ad8f09468f5cf6c6ccdb2007876efadfa0f77353ba4683142041",
+          "off_crossing_witness": [
+            3,
+            1,
+            3
+          ],
+          "off_shift": 1,
+          "order_swap": 1,
+          "order_witness": [
+            3,
+            3,
+            1
+          ],
+          "paired_identity_letters": [],
+          "rank_sum_estimate": 88337.23646290756,
+          "rank_sum_integer_lower_bound": 88331,
+          "rank_sum_integer_upper_bound": 88342,
+          "rank_sum_rho": 1.0269208799652303,
+          "row_ranks": [
+            256,
+            2048,
+            6399,
+            10964,
+            12430,
+            13190,
+            13844,
+            10990,
+            6385,
+            4020,
+            2533,
+            964,
+            256,
+            128,
+            36,
+            0,
+            1
+          ],
+          "t": 8
+        }
+      ]
+    },
+    {
+      "boundary": 0,
+      "growth_increments": [
+        {
+          "from_t": 4,
+          "maximum_product_increment_rho": 0.9342413985415515,
+          "rank_sum_increment_rho": 1.0,
+          "to_t": 6
+        },
+        {
+          "from_t": 6,
+          "maximum_product_increment_rho": 0.951838730514401,
+          "rank_sum_increment_rho": 1.0,
+          "to_t": 8
+        }
+      ],
+      "id": "model-03",
+      "matrices": [
+        9,
+        2,
+        4,
+        9,
+        0,
+        0,
+        0,
+        0
+      ],
+      "off_shift": 0,
+      "profiles": [
+        {
+          "bit_flip_witness": [
+            0
+          ],
+          "boundary": 0,
+          "column_ranks": [
+            16,
+            64,
+            96,
+            64,
+            16
+          ],
+          "identity_letters": [
+            4,
+            7
+          ],
+          "matrices": [
+            9,
+            2,
+            4,
+            9,
+            0,
+            0,
+            0,
+            0
+          ],
+          "maximum_product_rho": 0.8231203125901445,
+          "maximum_rank_product": 9216,
+          "native_profile_sha256": "9d324b0c14a56cc9848ad08265c16706a399caa05b4e64d85dabab72a82b39cd",
+          "off_crossing_witness": [
+            1,
+            2
+          ],
+          "off_shift": 0,
+          "order_swap": 0,
+          "order_witness": [
+            2,
+            1
+          ],
+          "paired_identity_letters": [],
+          "rank_sum_estimate": 256,
+          "rank_sum_integer_lower_bound": 256,
+          "rank_sum_integer_upper_bound": 256,
+          "rank_sum_rho": 1,
+          "row_ranks": [
+            16,
+            64,
+            96,
+            64,
+            16
+          ],
+          "t": 4
+        },
+        {
+          "bit_flip_witness": [
+            0
+          ],
+          "boundary": 0,
+          "column_ranks": [
+            64,
+            384,
+            960,
+            1280,
+            960,
+            384,
+            64
+          ],
+          "identity_letters": [
+            4,
+            7
+          ],
+          "matrices": [
+            9,
+            2,
+            4,
+            9,
+            0,
+            0,
+            0,
+            0
+          ],
+          "maximum_product_rho": 0.8601606745739468,
+          "maximum_rank_product": 1638400,
+          "native_profile_sha256": "11a84cdf5877dd8c57c70cf5a9323cdde8332e6555fbf5a34fb58f7ba9bbc4b1",
+          "off_crossing_witness": [
+            1,
+            2
+          ],
+          "off_shift": 0,
+          "order_swap": 0,
+          "order_witness": [
+            2,
+            1
+          ],
+          "paired_identity_letters": [],
+          "rank_sum_estimate": 4096,
+          "rank_sum_integer_lower_bound": 4096,
+          "rank_sum_integer_upper_bound": 4096,
+          "rank_sum_rho": 1,
+          "row_ranks": [
+            64,
+            384,
+            960,
+            1280,
+            960,
+            384,
+            64
+          ],
+          "t": 6
+        },
+        {
+          "bit_flip_witness": [
+            0
+          ],
+          "boundary": 0,
+          "column_ranks": [
+            256,
+            2048,
+            7168,
+            14336,
+            17920,
+            14336,
+            7168,
+            2048,
+            256
+          ],
+          "identity_letters": [
+            4,
+            7
+          ],
+          "matrices": [
+            9,
+            2,
+            4,
+            9,
+            0,
+            0,
+            0,
+            0
+          ],
+          "maximum_product_rho": 0.8830801885590605,
+          "maximum_rank_product": 321126400,
+          "native_profile_sha256": "6f49c68c328a6947631894e987014d60a5838425a6624b2c181588b3ff797f99",
+          "off_crossing_witness": [
+            1,
+            2
+          ],
+          "off_shift": 0,
+          "order_swap": 0,
+          "order_witness": [
+            2,
+            1
+          ],
+          "paired_identity_letters": [],
+          "rank_sum_estimate": 65536,
+          "rank_sum_integer_lower_bound": 65536,
+          "rank_sum_integer_upper_bound": 65536,
+          "rank_sum_rho": 1,
+          "row_ranks": [
+            256,
+            2048,
+            7168,
+            14336,
+            17920,
+            14336,
+            7168,
+            2048,
+            256
+          ],
+          "t": 8
+        }
+      ]
+    },
+    {
+      "boundary": 0,
+      "growth_increments": [
+        {
+          "from_t": 4,
+          "maximum_product_increment_rho": 0.9231738661266471,
+          "rank_sum_increment_rho": 1.0262695848276597,
+          "to_t": 6
+        },
+        {
+          "from_t": 6,
+          "maximum_product_increment_rho": 0.9812933391150129,
+          "rank_sum_increment_rho": 1.0229808313276272,
+          "to_t": 8
+        }
+      ],
+      "id": "model-04",
+      "matrices": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        6
+      ],
+      "off_shift": 0,
+      "profiles": [
+        {
+          "bit_flip_witness": [
+            2,
+            3
+          ],
+          "boundary": 0,
+          "column_ranks": [
+            199,
+            0,
+            100,
+            0,
+            4
+          ],
+          "identity_letters": [
+            0,
+            3,
+            4
+          ],
+          "matrices": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            6
+          ],
+          "maximum_product_rho": 0.9550300506448983,
+          "maximum_rank_product": 39800,
+          "native_profile_sha256": "7bb91dbd760e5d83c1856ff708c25f89c3d7d070569ca10eaf3c27a2d63ebfef",
+          "off_crossing_witness": [
+            6,
+            7
+          ],
+          "off_shift": 0,
+          "order_swap": 0,
+          "order_witness": [
+            7,
+            6
+          ],
+          "paired_identity_letters": [
+            0,
+            4
+          ],
+          "rank_sum_estimate": 282.73975747895963,
+          "rank_sum_integer_lower_bound": 282,
+          "rank_sum_integer_upper_bound": 284,
+          "rank_sum_rho": 1.01791636898924,
+          "row_ranks": [
+            200,
+            0,
+            66,
+            0,
+            1
+          ],
+          "t": 4
+        },
+        {
+          "bit_flip_witness": [
+            2,
+            3
+          ],
+          "boundary": 0,
+          "column_ranks": [
+            2535,
+            0,
+            2332,
+            0,
+            406,
+            0,
+            8
+          ],
+          "identity_letters": [
+            0,
+            3,
+            4
+          ],
+          "matrices": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            6
+          ],
+          "maximum_product_rho": 0.9444113224721479,
+          "maximum_rank_product": 6654375,
+          "native_profile_sha256": "844243567816d6ffbeb91d06fbe85a92ef2d364c0969a4e5eaee421bf5874b10",
+          "off_crossing_witness": [
+            6,
+            7
+          ],
+          "off_shift": 0,
+          "order_swap": 0,
+          "order_witness": [
+            7,
+            6
+          ],
+          "paired_identity_letters": [
+            0,
+            4
+          ],
+          "rank_sum_estimate": 4865.6245695585085,
+          "rank_sum_integer_lower_bound": 4863,
+          "rank_sum_integer_upper_bound": 4867,
+          "rank_sum_rho": 1.0207007742687133,
+          "row_ranks": [
+            2625,
+            0,
+            1774,
+            0,
+            153,
+            0,
+            1
+          ],
+          "t": 6
+        },
+        {
+          "bit_flip_witness": [
+            2,
+            3
+          ],
+          "boundary": 0,
+          "column_ranks": [
+            31487,
+            0,
+            43040,
+            0,
+            14636,
+            0,
+            1350,
+            0,
+            16
+          ],
+          "identity_letters": [
+            0,
+            3,
+            4
+          ],
+          "matrices": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            6
+          ],
+          "maximum_product_rho": 0.9536318266328642,
+          "maximum_rank_product": 1535667200,
+          "native_profile_sha256": "c1f4fe597ab45fdc2b7b9828eedf9118665b7ce160d02b556cd7e5add5f4ea7a",
+          "off_crossing_witness": [
+            6,
+            7
+          ],
+          "off_shift": 0,
+          "order_swap": 0,
+          "order_witness": [
+            7,
+            6
+          ],
+          "paired_identity_letters": [
+            0,
+            4
+          ],
+          "rank_sum_estimate": 82971.75125836191,
+          "rank_sum_integer_lower_bound": 82970,
+          "rank_sum_integer_upper_bound": 82974,
+          "rank_sum_rho": 1.0212707885334418,
+          "row_ranks": [
+            34375,
+            0,
+            35680,
+            0,
+            7207,
+            0,
+            276,
+            0,
+            1
+          ],
+          "t": 8
+        }
+      ]
+    },
+    {
+      "boundary": 0,
+      "growth_increments": [
+        {
+          "from_t": 4,
+          "maximum_product_increment_rho": 0.964329383632857,
+          "rank_sum_increment_rho": 1.0332079282055775,
+          "to_t": 6
+        },
+        {
+          "from_t": 6,
+          "maximum_product_increment_rho": 0.9953665484655468,
+          "rank_sum_increment_rho": 1.0315369666948204,
+          "to_t": 8
+        }
+      ],
+      "id": "model-05",
+      "matrices": [
+        9,
+        9,
+        6,
+        8,
+        1,
+        1,
+        0,
+        0
+      ],
+      "off_shift": 0,
+      "profiles": [
+        {
+          "bit_flip_witness": [
+            2,
+            2
+          ],
+          "boundary": 0,
+          "column_ranks": [
+            12,
+            39,
+            75,
+            125,
+            256
+          ],
+          "identity_letters": [
+            7
+          ],
+          "matrices": [
+            9,
+            9,
+            6,
+            8,
+            1,
+            1,
+            0,
+            0
+          ],
+          "maximum_product_rho": 0.778602336311985,
+          "maximum_rank_product": 5625,
+          "native_profile_sha256": "1e7538b800140cc76414533c7a0b9e10cac80018851c2d149bc7c246ea9d1b3c",
+          "off_crossing_witness": [
+            1
+          ],
+          "off_shift": 0,
+          "order_swap": 0,
+          "order_witness": [
+            3,
+            2,
+            2
+          ],
+          "paired_identity_letters": [],
+          "rank_sum_estimate": 325.49365212209756,
+          "rank_sum_integer_lower_bound": 323,
+          "rank_sum_integer_upper_bound": 327,
+          "rank_sum_rho": 1.0433106996943715,
+          "row_ranks": [
+            256,
+            125,
+            75,
+            39,
+            12
+          ],
+          "t": 4
+        },
+        {
+          "bit_flip_witness": [
+            2,
+            2
+          ],
+          "boundary": 0,
+          "column_ranks": [
+            65,
+            269,
+            649,
+            1087,
+            1638,
+            2173,
+            4096
+          ],
+          "identity_letters": [
+            7
+          ],
+          "matrices": [
+            9,
+            9,
+            6,
+            8,
+            1,
+            1,
+            0,
+            0
+          ],
+          "maximum_product_rho": 0.8405113520856091,
+          "maximum_rank_product": 1181569,
+          "native_profile_sha256": "4bb52f1b80fac2448c41039de5bb43022133e7819b65ee84454fc7485830d4b6",
+          "off_crossing_witness": [
+            1
+          ],
+          "off_shift": 0,
+          "order_swap": 0,
+          "order_witness": [
+            3,
+            2,
+            2
+          ],
+          "paired_identity_letters": [],
+          "rank_sum_estimate": 5710.167341715582,
+          "rank_sum_integer_lower_bound": 5707,
+          "rank_sum_integer_upper_bound": 5713,
+          "rank_sum_rho": 1.0399431091981068,
+          "row_ranks": [
+            4096,
+            2173,
+            1638,
+            1087,
+            649,
+            269,
+            65
+          ],
+          "t": 6
+        },
+        {
+          "bit_flip_witness": [
+            2,
+            2
+          ],
+          "boundary": 0,
+          "column_ranks": [
+            351,
+            1834,
+            5367,
+            10790,
+            17170,
+            22317,
+            30284,
+            36732,
+            65536
+          ],
+          "identity_letters": [
+            7
+          ],
+          "matrices": [
+            9,
+            9,
+            6,
+            8,
+            1,
+            1,
+            0,
+            0
+          ],
+          "maximum_product_rho": 0.8792251511805935,
+          "maximum_rank_product": 294808900,
+          "native_profile_sha256": "0bdd00b9917b0ade1678dea2eff3bb55915a1851e772cd3af5efe5dcc2f75dc6",
+          "off_crossing_witness": [
+            1
+          ],
+          "off_shift": 0,
+          "order_swap": 0,
+          "order_witness": [
+            3,
+            2,
+            2
+          ],
+          "paired_identity_letters": [],
+          "rank_sum_estimate": 99711.00883195532,
+          "rank_sum_integer_lower_bound": 99706,
+          "rank_sum_integer_upper_bound": 99714,
+          "rank_sum_rho": 1.0378415735722852,
+          "row_ranks": [
+            65536,
+            36732,
+            30284,
+            22317,
+            17170,
+            10790,
+            5367,
+            1834,
+            351
+          ],
+          "t": 8
+        }
+      ]
+    },
+    {
+      "boundary": 0,
+      "growth_increments": [
+        {
+          "from_t": 4,
+          "maximum_product_increment_rho": 0.8900546303386542,
+          "rank_sum_increment_rho": 1.0409143410226784,
+          "to_t": 6
+        },
+        {
+          "from_t": 6,
+          "maximum_product_increment_rho": 0.9910768542333493,
+          "rank_sum_increment_rho": 1.0377074931417916,
+          "to_t": 8
+        }
+      ],
+      "id": "model-06",
+      "matrices": [
+        15,
+        8,
+        0,
+        9,
+        0,
+        0,
+        0,
+        0
+      ],
+      "off_shift": 1,
+      "profiles": [
+        {
+          "bit_flip_witness": [
+            0
+          ],
+          "boundary": 0,
+          "column_ranks": [
+            16,
+            64,
+            79,
+            42,
+            32,
+            32,
+            10,
+            0,
+            1
+          ],
+          "identity_letters": [
+            4,
+            7
+          ],
+          "matrices": [
+            15,
+            8,
+            0,
+            9,
+            0,
+            0,
+            0,
+            0
+          ],
+          "maximum_product_rho": 0.7879725935221379,
+          "maximum_rank_product": 6241,
+          "native_profile_sha256": "ff307578a9082783c42784371d98b5d9733caa44a996847f9da3b76e39bb9aea",
+          "off_crossing_witness": [
+            0,
+            1,
+            0
+          ],
+          "off_shift": 1,
+          "order_swap": 0,
+          "order_witness": [
+            1,
+            0,
+            0
+          ],
+          "paired_identity_letters": [],
+          "rank_sum_estimate": 277.4813008219969,
+          "rank_sum_integer_lower_bound": 276,
+          "rank_sum_integer_upper_bound": 279,
+          "rank_sum_rho": 1.0145308428482256,
+          "row_ranks": [
+            16,
+            64,
+            79,
+            43,
+            33,
+            32,
+            11,
+            0,
+            1
+          ],
+          "t": 4
+        },
+        {
+          "bit_flip_witness": [
+            0
+          ],
+          "boundary": 0,
+          "column_ranks": [
+            64,
+            384,
+            831,
+            917,
+            760,
+            788,
+            638,
+            272,
+            104,
+            72,
+            21,
+            0,
+            1
+          ],
+          "identity_letters": [
+            4,
+            7
+          ],
+          "matrices": [
+            15,
+            8,
+            0,
+            9,
+            0,
+            0,
+            0,
+            0
+          ],
+          "maximum_product_rho": 0.8219999391276434,
+          "maximum_rank_product": 868399,
+          "native_profile_sha256": "8b00b4fef3b2eb5ef97a883f7c8d85e0f270505b41919d3ca107fb6f0b5d5310",
+          "off_crossing_witness": [
+            0,
+            1,
+            0
+          ],
+          "off_shift": 1,
+          "order_swap": 0,
+          "order_witness": [
+            1,
+            0,
+            0
+          ],
+          "paired_identity_letters": [],
+          "rank_sum_estimate": 4973.011689115951,
+          "rank_sum_integer_lower_bound": 4970,
+          "rank_sum_integer_upper_bound": 4977,
+          "rank_sum_rho": 1.02332534223971,
+          "row_ranks": [
+            64,
+            384,
+            831,
+            947,
+            838,
+            837,
+            679,
+            307,
+            117,
+            72,
+            22,
+            0,
+            1
+          ],
+          "t": 6
+        },
+        {
+          "bit_flip_witness": [
+            0
+          ],
+          "boundary": 0,
+          "column_ranks": [
+            256,
+            2048,
+            6399,
+            10964,
+            12430,
+            13190,
+            13844,
+            10990,
+            6385,
+            4020,
+            2533,
+            964,
+            256,
+            128,
+            36,
+            0,
+            1
+          ],
+          "identity_letters": [
+            4,
+            7
+          ],
+          "matrices": [
+            15,
+            8,
+            0,
+            9,
+            0,
+            0,
+            0,
+            0
+          ],
+          "maximum_product_rho": 0.8642691679040698,
+          "maximum_rank_product": 211577852,
+          "native_profile_sha256": "df74b53e613d3bd58387de8007cedc9e203ed3d6392cac4b009868a4cac11c11",
+          "off_crossing_witness": [
+            0,
+            1,
+            0
+          ],
+          "off_shift": 1,
+          "order_swap": 0,
+          "order_witness": [
+            1,
+            0,
+            0
+          ],
+          "paired_identity_letters": [],
+          "rank_sum_estimate": 88337.23646290756,
+          "rank_sum_integer_lower_bound": 88331,
+          "rank_sum_integer_upper_bound": 88342,
+          "rank_sum_rho": 1.0269208799652303,
+          "row_ranks": [
+            256,
+            2048,
+            6399,
+            11267,
+            13863,
+            15089,
+            15283,
+            12089,
+            7403,
+            4563,
+            2723,
+            1033,
+            275,
+            128,
+            37,
+            0,
+            1
+          ],
+          "t": 8
+        }
+      ]
+    },
+    {
+      "boundary": 0,
+      "growth_increments": [
+        {
+          "from_t": 4,
+          "maximum_product_increment_rho": 0.9342413985415515,
+          "rank_sum_increment_rho": 1.0477816001059825,
+          "to_t": 6
+        },
+        {
+          "from_t": 6,
+          "maximum_product_increment_rho": 0.9567761212640701,
+          "rank_sum_increment_rho": 1.0352139070636794,
+          "to_t": 8
+        }
+      ],
+      "id": "model-07",
+      "matrices": [
+        9,
+        2,
+        4,
+        9,
+        0,
+        0,
+        0,
+        0
+      ],
+      "off_shift": 2,
+      "profiles": [
+        {
+          "bit_flip_witness": [
+            0
+          ],
+          "boundary": 0,
+          "column_ranks": [
+            16,
+            64,
+            96,
+            64,
+            27,
+            24,
+            22,
+            24,
+            11,
+            0,
+            0,
+            0,
+            1
+          ],
+          "identity_letters": [
+            4,
+            7
+          ],
+          "matrices": [
+            9,
+            2,
+            4,
+            9,
+            0,
+            0,
+            0,
+            0
+          ],
+          "maximum_product_rho": 0.8231203125901445,
+          "maximum_rank_product": 9216,
+          "native_profile_sha256": "997d5bbf392b23b1d0b5f6f53cecede3702202d4855107cb00a56af7b148a5d9",
+          "off_crossing_witness": [
+            1,
+            2
+          ],
+          "off_shift": 2,
+          "order_swap": 0,
+          "order_witness": [
+            2,
+            1
+          ],
+          "paired_identity_letters": [],
+          "rank_sum_estimate": 349,
+          "rank_sum_integer_lower_bound": 349,
+          "rank_sum_integer_upper_bound": 349,
+          "rank_sum_rho": 1.0558854032762066,
+          "row_ranks": [
+            16,
+            64,
+            96,
+            64,
+            27,
+            24,
+            22,
+            24,
+            11,
+            0,
+            0,
+            0,
+            1
+          ],
+          "t": 4
+        },
+        {
+          "bit_flip_witness": [
+            0
+          ],
+          "boundary": 0,
+          "column_ranks": [
+            64,
+            384,
+            960,
+            1280,
+            1017,
+            656,
+            555,
+            544,
+            492,
+            272,
+            57,
+            0,
+            22,
+            48,
+            22,
+            0,
+            1,
+            0,
+            1
+          ],
+          "identity_letters": [
+            4,
+            7
+          ],
+          "matrices": [
+            9,
+            2,
+            4,
+            9,
+            0,
+            0,
+            0,
+            0
+          ],
+          "maximum_product_rho": 0.8601606745739468,
+          "maximum_rank_product": 1638400,
+          "native_profile_sha256": "6eae4ded6f6e6262468948e4ecabe595cc4e735fff7ec1ec0a3c07f7d669251d",
+          "off_crossing_witness": [
+            1,
+            2
+          ],
+          "off_shift": 2,
+          "order_swap": 0,
+          "order_witness": [
+            2,
+            1
+          ],
+          "paired_identity_letters": [],
+          "rank_sum_estimate": 6375,
+          "rank_sum_integer_lower_bound": 6375,
+          "rank_sum_integer_upper_bound": 6375,
+          "rank_sum_rho": 1.0531841355527984,
+          "row_ranks": [
+            64,
+            384,
+            960,
+            1280,
+            1017,
+            656,
+            555,
+            544,
+            492,
+            272,
+            57,
+            0,
+            22,
+            48,
+            22,
+            0,
+            1,
+            0,
+            1
+          ],
+          "t": 6
+        },
+        {
+          "bit_flip_witness": [
+            0
+          ],
+          "boundary": 0,
+          "column_ranks": [
+            256,
+            2048,
+            7168,
+            14336,
+            18167,
+            16144,
+            12572,
+            11056,
+            10607,
+            9088,
+            5441,
+            1808,
+            410,
+            800,
+            1288,
+            800,
+            200,
+            80,
+            74,
+            80,
+            37,
+            0,
+            0,
+            0,
+            1
+          ],
+          "identity_letters": [
+            4,
+            7
+          ],
+          "matrices": [
+            9,
+            2,
+            4,
+            9,
+            0,
+            0,
+            0,
+            0
+          ],
+          "maximum_product_rho": 0.8843145362464777,
+          "maximum_rank_product": 330039889,
+          "native_profile_sha256": "b516dfbbef72c59f6d4b7a34ddaa78df114815f8b17235742e0e4d7a815e1f47",
+          "off_crossing_witness": [
+            1,
+            2
+          ],
+          "off_shift": 2,
+          "order_swap": 0,
+          "order_witness": [
+            2,
+            1
+          ],
+          "paired_identity_letters": [],
+          "rank_sum_estimate": 112461,
+          "rank_sum_integer_lower_bound": 112461,
+          "rank_sum_integer_upper_bound": 112461,
+          "rank_sum_rho": 1.0486915784305189,
+          "row_ranks": [
+            256,
+            2048,
+            7168,
+            14336,
+            18167,
+            16144,
+            12572,
+            11056,
+            10607,
+            9088,
+            5441,
+            1808,
+            410,
+            800,
+            1288,
+            800,
+            200,
+            80,
+            74,
+            80,
+            37,
+            0,
+            0,
+            0,
+            1
+          ],
+          "t": 8
+        }
+      ]
+    },
+    {
+      "boundary": 0,
+      "growth_increments": [
+        {
+          "from_t": 4,
+          "maximum_product_increment_rho": 1.0844064232562824,
+          "rank_sum_increment_rho": 1.1069678482175502,
+          "to_t": 6
+        },
+        {
+          "from_t": 6,
+          "maximum_product_increment_rho": 0.9672970678717392,
+          "rank_sum_increment_rho": 1.059693343081507,
+          "to_t": 8
+        }
+      ],
+      "id": "model-08",
+      "matrices": [
+        1,
+        1,
+        6,
+        0,
+        9,
+        1,
+        0,
+        0
+      ],
+      "off_shift": 2,
+      "profiles": [
+        {
+          "bit_flip_witness": [
+            2,
+            2
+          ],
+          "boundary": 0,
+          "column_ranks": [
+            1,
+            10,
+            46,
+            120,
+            256,
+            31,
+            41,
+            31,
+            33,
+            0,
+            0,
+            0,
+            1
+          ],
+          "identity_letters": [
+            3,
+            7
+          ],
+          "matrices": [
+            1,
+            1,
+            6,
+            0,
+            9,
+            1,
+            0,
+            0
+          ],
+          "maximum_product_rho": 0.8326205059304601,
+          "maximum_rank_product": 10240,
+          "native_profile_sha256": "9b9bbe9a571982bfcd7b766dac7e948aa83dfda5b7a304bf6de9cfcb1651f910",
+          "off_crossing_witness": [
+            1
+          ],
+          "off_shift": 2,
+          "order_swap": 1,
+          "order_witness": [
+            2,
+            2,
+            0
+          ],
+          "paired_identity_letters": [
+            3,
+            7
+          ],
+          "rank_sum_estimate": 346.9508676905203,
+          "rank_sum_integer_lower_bound": 344,
+          "rank_sum_integer_upper_bound": 351,
+          "rank_sum_rho": 1.0548234455643848,
+          "row_ranks": [
+            256,
+            120,
+            46,
+            10,
+            40,
+            26,
+            42,
+            26,
+            7,
+            0,
+            0,
+            0,
+            1
+          ],
+          "t": 4
+        },
+        {
+          "bit_flip_witness": [
+            2,
+            2
+          ],
+          "boundary": 0,
+          "column_ranks": [
+            1,
+            14,
+            92,
+            364,
+            1147,
+            2021,
+            4096,
+            884,
+            937,
+            765,
+            768,
+            0,
+            41,
+            62,
+            54,
+            0,
+            1,
+            0,
+            1
+          ],
+          "identity_letters": [
+            3,
+            7
+          ],
+          "matrices": [
+            1,
+            1,
+            6,
+            0,
+            9,
+            1,
+            0,
+            0
+          ],
+          "maximum_product_rho": 0.9165491450390676,
+          "maximum_rank_product": 4186112,
+          "native_profile_sha256": "cef4a2f53df62bb05368f301ca7f3e34e7f647a77a8c04c946bceb9d287e8f54",
+          "off_crossing_witness": [
+            1
+          ],
+          "off_shift": 2,
+          "order_swap": 1,
+          "order_witness": [
+            2,
+            2,
+            0
+          ],
+          "paired_identity_letters": [
+            3,
+            7
+          ],
+          "rank_sum_estimate": 7467.755392953779,
+          "rank_sum_integer_lower_bound": 7460,
+          "rank_sum_integer_upper_bound": 7471,
+          "rank_sum_rho": 1.0722049131154399,
+          "row_ranks": [
+            4096,
+            2016,
+            1092,
+            364,
+            1001,
+            780,
+            1022,
+            790,
+            486,
+            184,
+            30,
+            0,
+            71,
+            56,
+            16,
+            0,
+            1,
+            0,
+            1
+          ],
+          "t": 6
+        },
+        {
+          "bit_flip_witness": [
+            2,
+            2
+          ],
+          "boundary": 0,
+          "column_ranks": [
+            1,
+            18,
+            154,
+            816,
+            4456,
+            11703,
+            24388,
+            33183,
+            65536,
+            18109,
+            18835,
+            15888,
+            15611,
+            1511,
+            2099,
+            2102,
+            1709,
+            103,
+            127,
+            103,
+            79,
+            0,
+            0,
+            0,
+            1
+          ],
+          "identity_letters": [
+            3,
+            7
+          ],
+          "matrices": [
+            1,
+            1,
+            6,
+            0,
+            9,
+            1,
+            0,
+            0
+          ],
+          "maximum_product_rho": 0.9292361257472355,
+          "maximum_rank_product": 893911040,
+          "native_profile_sha256": "a6bfe9fc5f4cb87d991c920894dbe620f6e88cb25d848ac8be6243b1017abd5c",
+          "off_crossing_witness": [
+            1
+          ],
+          "off_shift": 2,
+          "order_swap": 1,
+          "order_witness": [
+            2,
+            2,
+            0
+          ],
+          "paired_identity_letters": [
+            3,
+            7
+          ],
+          "rank_sum_estimate": 140989.90374655608,
+          "rank_sum_integer_lower_bound": 140980,
+          "rank_sum_integer_upper_bound": 141000,
+          "rank_sum_rho": 1.0690770206069566,
+          "row_ranks": [
+            65536,
+            32640,
+            21624,
+            8568,
+            20987,
+            17054,
+            20710,
+            16958,
+            13640,
+            7884,
+            3360,
+            884,
+            2430,
+            2314,
+            1589,
+            618,
+            200,
+            96,
+            130,
+            96,
+            28,
+            0,
+            0,
+            0,
+            1
+          ],
+          "t": 8
+        }
+      ]
+    },
+    {
+      "boundary": 1,
+      "growth_increments": [
+        {
+          "from_t": 4,
+          "maximum_product_increment_rho": 0.9684602565882483,
+          "rank_sum_increment_rho": 1.0158867156287483,
+          "to_t": 6
+        },
+        {
+          "from_t": 6,
+          "maximum_product_increment_rho": 0.9141157276471235,
+          "rank_sum_increment_rho": 0.9993762609343091,
+          "to_t": 8
+        }
+      ],
+      "id": "model-09",
+      "matrices": [
+        11,
+        11,
+        2,
+        2,
+        15,
+        15,
+        6,
+        6
+      ],
+      "off_shift": 0,
+      "profiles": [
+        {
+          "bit_flip_witness": [
+            0
+          ],
+          "boundary": 1,
+          "column_ranks": [
+            16,
+            62,
+            80,
+            128,
+            128
+          ],
+          "identity_letters": [],
+          "matrices": [
+            11,
+            11,
+            2,
+            2,
+            15,
+            15,
+            6,
+            6
+          ],
+          "maximum_product_rho": 0.8096372693991797,
+          "maximum_rank_product": 7936,
+          "native_profile_sha256": "af427b3e654b207479d47c59b1f60399e2cade27d265d4db8a8fdcfb3e0458b6",
+          "off_crossing_witness": [
+            2
+          ],
+          "off_shift": 0,
+          "order_swap": 0,
+          "order_witness": [
+            4,
+            0
+          ],
+          "paired_identity_letters": [],
+          "rank_sum_estimate": 348.6781276024388,
+          "rank_sum_integer_lower_bound": 348,
+          "rank_sum_integer_upper_bound": 352,
+          "rank_sum_rho": 1.055719007152287,
+          "row_ranks": [
+            128,
+            128,
+            80,
+            62,
+            16
+          ],
+          "t": 4
+        },
+        {
+          "bit_flip_witness": [
+            0
+          ],
+          "boundary": 1,
+          "column_ranks": [
+            64,
+            376,
+            724,
+            1306,
+            1444,
+            2048,
+            2048
+          ],
+          "identity_letters": [],
+          "matrices": [
+            11,
+            11,
+            2,
+            2,
+            15,
+            15,
+            6,
+            6
+          ],
+          "maximum_product_rho": 0.8625782651288693,
+          "maximum_rank_product": 1705636,
+          "native_profile_sha256": "396376edbee4f6a35efffb9362e03c6e3d95549d94c48ee7e7860653d3bd7143",
+          "off_crossing_witness": [
+            2
+          ],
+          "off_shift": 0,
+          "order_swap": 0,
+          "order_witness": [
+            4,
+            0
+          ],
+          "paired_identity_letters": [],
+          "rank_sum_estimate": 5830.075776792896,
+          "rank_sum_integer_lower_bound": 5828,
+          "rank_sum_integer_upper_bound": 5834,
+          "rank_sum_rho": 1.0424415766444408,
+          "row_ranks": [
+            2048,
+            2048,
+            1444,
+            1306,
+            724,
+            376,
+            64
+          ],
+          "t": 6
+        },
+        {
+          "bit_flip_witness": [
+            0
+          ],
+          "boundary": 1,
+          "column_ranks": [
+            256,
+            2024,
+            5496,
+            11481,
+            14104,
+            23622,
+            26199,
+            32768,
+            32768
+          ],
+          "identity_letters": [],
+          "matrices": [
+            11,
+            11,
+            2,
+            2,
+            15,
+            15,
+            6,
+            6
+          ],
+          "maximum_product_rho": 0.8754626307584328,
+          "maximum_rank_product": 271204182,
+          "native_profile_sha256": "8e77d72cab1cafca15ee9658d2d7a5f34ebfdba7afb03350320fd2615cb200ee",
+          "off_crossing_witness": [
+            2
+          ],
+          "off_shift": 0,
+          "order_swap": 0,
+          "order_witness": [
+            4,
+            0
+          ],
+          "paired_identity_letters": [],
+          "rank_sum_estimate": 93120.03393014621,
+          "rank_sum_integer_lower_bound": 93116,
+          "rank_sum_integer_upper_bound": 93124,
+          "rank_sum_rho": 1.0316752477169078,
+          "row_ranks": [
+            32768,
+            32768,
+            26199,
+            23622,
+            14104,
+            11481,
+            5496,
+            2024,
+            256
+          ],
+          "t": 8
+        }
+      ]
+    },
+    {
+      "boundary": 1,
+      "growth_increments": [
+        {
+          "from_t": 4,
+          "maximum_product_increment_rho": 0.9190766608314922,
+          "rank_sum_increment_rho": 1.029521999403545,
+          "to_t": 6
+        },
+        {
+          "from_t": 6,
+          "maximum_product_increment_rho": 1.0177428977908882,
+          "rank_sum_increment_rho": 1.019602248284073,
+          "to_t": 8
+        }
+      ],
+      "id": "model-10",
+      "matrices": [
+        9,
+        13,
+        11,
+        15,
+        4,
+        0,
+        6,
+        2
+      ],
+      "off_shift": 0,
+      "profiles": [
+        {
+          "bit_flip_witness": [
+            0,
+            0
+          ],
+          "boundary": 1,
+          "column_ranks": [
+            176,
+            0,
+            160,
+            0,
+            61
+          ],
+          "identity_letters": [],
+          "matrices": [
+            9,
+            13,
+            11,
+            15,
+            4,
+            0,
+            6,
+            2
+          ],
+          "maximum_product_rho": 0.9180156443208236,
+          "maximum_rank_product": 26400,
+          "native_profile_sha256": "8ecf63a63b15c33471b67d7c42cea28ed064b1eaf927dd57fd9dff692eba30b4",
+          "off_crossing_witness": [
+            1,
+            1
+          ],
+          "off_shift": 0,
+          "order_swap": 0,
+          "order_witness": [
+            2,
+            1
+          ],
+          "paired_identity_letters": [],
+          "rank_sum_estimate": 296.7132602892177,
+          "rank_sum_integer_lower_bound": 296,
+          "rank_sum_integer_upper_bound": 299,
+          "rank_sum_rho": 1.0266156991148996,
+          "row_ranks": [
+            16,
+            0,
+            165,
+            0,
+            108
+          ],
+          "t": 4
+        },
+        {
+          "bit_flip_witness": [
+            0,
+            0
+          ],
+          "boundary": 1,
+          "column_ranks": [
+            2752,
+            0,
+            2848,
+            0,
+            1627,
+            0,
+            460
+          ],
+          "identity_letters": [],
+          "matrices": [
+            9,
+            13,
+            11,
+            15,
+            4,
+            0,
+            6,
+            2
+          ],
+          "maximum_product_rho": 0.9183693164910465,
+          "maximum_rank_product": 4314804,
+          "native_profile_sha256": "907ea3b9388c985990e6bc3894fc52e9d96a6eeb30611d3a4a4f6cfddd1160b1",
+          "off_crossing_witness": [
+            1,
+            1
+          ],
+          "off_shift": 0,
+          "order_swap": 0,
+          "order_witness": [
+            2,
+            1
+          ],
+          "paired_identity_letters": [],
+          "rank_sum_estimate": 5152.3453807412125,
+          "rank_sum_integer_lower_bound": 5150,
+          "rank_sum_integer_upper_bound": 5154,
+          "rank_sum_rho": 1.0275844658777813,
+          "row_ranks": [
+            64,
+            0,
+            1386,
+            0,
+            2652,
+            0,
+            972
+          ],
+          "t": 6
+        },
+        {
+          "bit_flip_witness": [
+            0,
+            0
+          ],
+          "boundary": 1,
+          "column_ranks": [
+            43776,
+            0,
+            48668,
+            0,
+            33105,
+            0,
+            14712,
+            0,
+            3451
+          ],
+          "identity_letters": [],
+          "matrices": [
+            9,
+            13,
+            11,
+            15,
+            4,
+            0,
+            6,
+            2
+          ],
+          "maximum_product_rho": 0.943212711816007,
+          "maximum_rank_product": 1218793680,
+          "native_profile_sha256": "fc223a687a09ccf59abc400de7dffc5c37ceb671ed684d9e023542e1f952e5eb",
+          "off_crossing_witness": [
+            1,
+            1
+          ],
+          "off_shift": 0,
+          "order_swap": 0,
+          "order_witness": [
+            2,
+            1
+          ],
+          "paired_identity_letters": [],
+          "rank_sum_estimate": 87041.90936498532,
+          "rank_sum_integer_lower_bound": 87040,
+          "rank_sum_integer_upper_bound": 87045,
+          "rank_sum_rho": 1.0255889114793542,
+          "row_ranks": [
+            256,
+            0,
+            9435,
+            0,
+            36816,
+            0,
+            32481,
+            0,
+            8748
+          ],
+          "t": 8
+        }
+      ]
+    }
+  ],
+  "scope": "Finite exact ranks and numerical growth comparisons; no asymptotic contraction claim.",
+  "source_sha256": "b74a8bf6bbd68972e86fbf6dbeacf024c19d31111320b8fe9e4bc58517ca4ea5"
+}

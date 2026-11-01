@@ -1,0 +1,88 @@
+{
+  "positive_rank_profiles_checked": 35979,
+  "equality_rank_profiles": [
+    [
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ]
+  ],
+  "F4_free_tensor_families_checked": 69,
+  "forced_zero_cases": [
+    "F=G=0",
+    "F=0",
+    "G=0",
+    "A=0",
+    "B=0"
+  ],
+  "vector_endpoint_checks": 1104,
+  "transition_entry_checks": 17664,
+  "triple_identity_checks": 17664,
+  "exact_lower_vector_rows": 276,
+  "initial_boundary_ranks": [
+    2,
+    2,
+    0,
+    0
+  ],
+  "terminal_boundary_ranks": [
+    1,
+    1,
+    2,
+    2
+  ],
+  "lower_vector": [
+    1,
+    1,
+    2,
+    2
+  ],
+  "attaining_construction": {
+    "rank_products": [
+      [
+        4,
+        4,
+        0,
+        0
+      ],
+      [
+        4,
+        4,
+        0,
+        0
+      ],
+      [
+        16,
+        16,
+        0,
+        0
+      ],
+      [
+        16,
+        16,
+        0,
+        0
+      ]
+    ],
+    "live_states": [
+      0,
+      1
+    ],
+    "exact_base": 4
+  },
+  "scope": "Exact finite controls; the arbitrary-tensor extension-field statement is proved in the companion note.",
+  "seconds": 1.9743203969992464
+}

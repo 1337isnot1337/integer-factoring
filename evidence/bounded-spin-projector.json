@@ -1,0 +1,59 @@
+{
+  "status": "pass",
+  "prime": 5,
+  "full_auxiliary_states": 30,
+  "selected_auxiliary_states": 60,
+  "full_projector_cases": [
+    {
+      "length": 0,
+      "ambient_dimension": 1,
+      "projector_rank": 1
+    },
+    {
+      "length": 2,
+      "ambient_dimension": 4,
+      "projector_rank": 1
+    },
+    {
+      "length": 4,
+      "ambient_dimension": 16,
+      "projector_rank": 2
+    },
+    {
+      "length": 6,
+      "ambient_dimension": 64,
+      "projector_rank": 5
+    },
+    {
+      "length": 8,
+      "ambient_dimension": 256,
+      "projector_rank": 13
+    }
+  ],
+  "binary_projector_cases": [
+    {
+      "binary_width": 1,
+      "length": 4,
+      "projector_rank": 2
+    },
+    {
+      "binary_width": 2,
+      "length": 6,
+      "projector_rank": 4
+    },
+    {
+      "binary_width": 3,
+      "length": 8,
+      "projector_rank": 8
+    }
+  ],
+  "complete_word_pair_controls": 139793,
+  "additional_width_four_controls": 128,
+  "missing_norm_negative_control": "unnormalized two-site matrix is not idempotent",
+  "scope": "Uniform finite-state projectors and exact finite identities; no favorable crossing cut-rank bound or factoring improvement.",
+  "source_sha256": {
+    "tools/bounded_spin_crossing.py": "cefc38c88cdf76650f4966fa9e49d0edbc9ce4c2eec3848dd2716f35ee3819bd",
+    "tools/bounded_spin_projector.py": "177ad741f60a1288ededa94b9be943564175c951adfa97eaff4d198d0b2319e8",
+    "tools/check_bounded_spin_projector.py": "66409483f04a0389390ea2e823061d2a11a39f6e19590d639a3a82775e71c9e8"
+  }
+}

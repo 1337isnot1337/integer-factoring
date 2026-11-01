@@ -1,0 +1,60 @@
+{
+  "energy": 32,
+  "labels": 202,
+  "parity_zero_dimension": 4154,
+  "nonzero_polynomial_entries": [
+    152054,
+    57426
+  ],
+  "left_orbit": 1912,
+  "right_orbit": 1894,
+  "pairing_rank": 0,
+  "maximum_word_lengths": [
+    7,
+    7
+  ],
+  "nonsymmetric_orbit_vectors": [
+    1869,
+    1810
+  ],
+  "nonconstant_diagonal_orbit_vectors": [
+    1609,
+    1678
+  ],
+  "seconds": 5.01397,
+  "ideal_dimension": 3621328,
+  "maximum_ideal_row_rank": 1894,
+  "middle_quotient_dimension": 348,
+  "square_zero_ideal_verified": true,
+  "parity_zero_affine_minor": {
+    "protected_minor": 165,
+    "verified_minor_entries": 27225,
+    "row_rank_bound": 36650,
+    "rank_product_bound": 6047250
+  },
+  "full_crossing_symmetry_algebra": {
+    "energy": 32,
+    "labels": 202,
+    "parity_zero_dimension": 4154,
+    "transpose_closed_orbit": 2051,
+    "pairing_rank": 0,
+    "maximum_word_length": 6,
+    "seconds": 8.26428,
+    "ideal_dimension": 4206601,
+    "middle_quotient_dimension": 52,
+    "square_zero_ideal_verified": true
+  },
+  "source_sha256": {
+    "checker": "18ca001590896391d18d6f07ab0e8feea4cbab186fb8ed25bc223498ebb1533b",
+    "generator": "353f7a41b8eb45860ccba6513dc28070caafa4e194ace9ce1036999c9d36e35c",
+    "orbit_engine": "fdaf42279175e1b2e2e88e5a439c3e2f30ded99ac01590483b19e5cd47d84573",
+    "symmetry_engine": "39a8df81dcf68f87b1a28616d1412e712d03441dac7575f9c4a5110a0c51a506"
+  },
+  "generator_dump_sha256": {
+    "row": "d68dd50ef62b3405d54457dd16f3f2cb9fc1121a1af787ae19bd4cc661e03e35",
+    "col": "dd2f1870a68cebb29f8898035d1f83d8a30a9a43c86bd5ccd4f9b3794f8fc627"
+  },
+  "fresh_generator_replay": true,
+  "scope": "Exact finite orbit closure for P,Q and for P,P^T,Q,Q^T. The latter generates all eight crossing-preserving external images. The rank-one generated ideals are square-zero for arbitrary words and extension-field coefficients at this energy; no all-energy radical theorem or score gain is claimed.",
+  "total_seconds": 22.536
+}

@@ -1,0 +1,15 @@
+{
+  "arithmetic": "Python integers and fractions only",
+  "checker_sha256": "1d8cf915264316117052c4361ad0db20e013790ccb353ca830f588ac1e1729c7",
+  "exact_schedule_cases": 1028,
+  "expanded_grid_calls": 84,
+  "largest_log2_of_input_bit_length": 73919,
+  "paths_reaching_early_cutoff": 18,
+  "query_series_with_exact_tail_cases": 1024,
+  "rough_support_and_threshold_cases": 27722,
+  "rounded_grid_paths": 60,
+  "scope": "Exact finite recurrence checks; no new crossing family or improved factoring exponent.",
+  "status": "passed",
+  "unbounded_constant_ratio_cases": 15,
+  "vanishing_score_loss_certificates": 24
+}

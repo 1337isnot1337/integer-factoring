@@ -1,0 +1,308 @@
+{
+  "status": "passed",
+  "profiles": [
+    {
+      "t": 2,
+      "k": 1,
+      "field_polynomial": 7,
+      "ordinary_kernel_rank": 2,
+      "binomial_rank_lower": 2,
+      "row_cut_rank": 6,
+      "column_cut_rank": 6,
+      "top_coefficients_checked": 2,
+      "controlled_prefactor_degrees": [
+        2,
+        1
+      ],
+      "controlled_cut_ranks": [
+        2,
+        8
+      ],
+      "kernel_sha256": "c51c7cf164ee6c213bb62200d3777f9c687a77dd4df1c0a583cbd9abe723ae16"
+    },
+    {
+      "t": 3,
+      "k": 1,
+      "field_polynomial": 11,
+      "ordinary_kernel_rank": 3,
+      "binomial_rank_lower": 3,
+      "row_cut_rank": 14,
+      "column_cut_rank": 14,
+      "top_coefficients_checked": 3,
+      "controlled_prefactor_degrees": [
+        2,
+        1
+      ],
+      "controlled_cut_ranks": [
+        8,
+        20
+      ],
+      "kernel_sha256": "ba6bd597d1ae0d1c211b525374ca2a39195dc462766b07819cf86b73ee36df53"
+    },
+    {
+      "t": 3,
+      "k": 2,
+      "field_polynomial": 11,
+      "ordinary_kernel_rank": 6,
+      "binomial_rank_lower": 3,
+      "row_cut_rank": 28,
+      "column_cut_rank": 28,
+      "top_coefficients_checked": 3,
+      "controlled_prefactor_degrees": [
+        2,
+        1
+      ],
+      "controlled_cut_ranks": [
+        16,
+        16
+      ],
+      "kernel_sha256": "0e2d56cad698857d73a80b8b7e2ef008de63ede25ac1db1d8116c02bedfc5f2b"
+    },
+    {
+      "t": 4,
+      "k": 1,
+      "field_polynomial": 19,
+      "ordinary_kernel_rank": 4,
+      "binomial_rank_lower": 4,
+      "row_cut_rank": 30,
+      "column_cut_rank": 30,
+      "top_coefficients_checked": 4,
+      "controlled_prefactor_degrees": [
+        2,
+        1
+      ],
+      "controlled_cut_ranks": [
+        16,
+        52
+      ],
+      "kernel_sha256": "1f83ccfbe17f1c8cb0bff0f2f15cf867a5ca8dbdcf273b67bc306bcd85d20540"
+    },
+    {
+      "t": 4,
+      "k": 2,
+      "field_polynomial": 19,
+      "ordinary_kernel_rank": 10,
+      "binomial_rank_lower": 6,
+      "row_cut_rank": 60,
+      "column_cut_rank": 60,
+      "top_coefficients_checked": 6,
+      "controlled_prefactor_degrees": [
+        2,
+        1
+      ],
+      "controlled_cut_ranks": [
+        24,
+        72
+      ],
+      "kernel_sha256": "3400935b0c9ec2222213a8bda057cb5a1dd2a32f71235d895d3b571560f92e73"
+    },
+    {
+      "t": 4,
+      "k": 3,
+      "field_polynomial": 19,
+      "ordinary_kernel_rank": 14,
+      "binomial_rank_lower": 4,
+      "row_cut_rank": 120,
+      "column_cut_rank": 120,
+      "top_coefficients_checked": 4,
+      "controlled_prefactor_degrees": [
+        2,
+        1
+      ],
+      "controlled_cut_ranks": [
+        32,
+        80
+      ],
+      "kernel_sha256": "ba6f8ce996d2df861ce63fc61146c880733406d4b0d9837ba4cfed9ba626f7d8"
+    },
+    {
+      "t": 5,
+      "k": 1,
+      "field_polynomial": 37,
+      "ordinary_kernel_rank": 5,
+      "binomial_rank_lower": 5,
+      "row_cut_rank": 62,
+      "column_cut_rank": 62,
+      "top_coefficients_checked": 5,
+      "controlled_prefactor_degrees": [
+        2,
+        1
+      ],
+      "controlled_cut_ranks": [
+        30,
+        120
+      ],
+      "kernel_sha256": "b726b88547aabe644033adae1b2a0b6c344890a3913d14b214264ce2f3c74f45"
+    },
+    {
+      "t": 5,
+      "k": 2,
+      "field_polynomial": 37,
+      "ordinary_kernel_rank": 15,
+      "binomial_rank_lower": 10,
+      "row_cut_rank": 124,
+      "column_cut_rank": 124,
+      "top_coefficients_checked": 10,
+      "controlled_prefactor_degrees": [
+        2,
+        1
+      ],
+      "controlled_cut_ranks": [
+        60,
+        204
+      ],
+      "kernel_sha256": "9af41ffcf8a19ec4367005f43073bee74a2d576b65c076e04ad7f8c062cdd824"
+    },
+    {
+      "t": 5,
+      "k": 3,
+      "field_polynomial": 37,
+      "ordinary_kernel_rank": 25,
+      "binomial_rank_lower": 10,
+      "row_cut_rank": 248,
+      "column_cut_rank": 248,
+      "top_coefficients_checked": 10,
+      "controlled_prefactor_degrees": [
+        2,
+        1
+      ],
+      "controlled_cut_ranks": [
+        112,
+        328
+      ],
+      "kernel_sha256": "e44d746cd723081a22873280d359f7127f73eff29a578a805afc452edfb04010"
+    },
+    {
+      "t": 6,
+      "k": 1,
+      "field_polynomial": 67,
+      "ordinary_kernel_rank": 6,
+      "binomial_rank_lower": 6,
+      "row_cut_rank": 126,
+      "column_cut_rank": 126,
+      "top_coefficients_checked": 6,
+      "controlled_prefactor_degrees": [
+        2,
+        1
+      ],
+      "controlled_cut_ranks": [
+        64,
+        244
+      ],
+      "kernel_sha256": "12c74c449fbd968c9f623fcc7eeb6aacebc14be9005f44b64d41ba03c66fc8ca"
+    },
+    {
+      "t": 6,
+      "k": 2,
+      "field_polynomial": 67,
+      "ordinary_kernel_rank": 21,
+      "binomial_rank_lower": 15,
+      "row_cut_rank": 252,
+      "column_cut_rank": 252,
+      "top_coefficients_checked": 15,
+      "controlled_prefactor_degrees": [
+        2,
+        1
+      ],
+      "controlled_cut_ranks": [
+        120,
+        456
+      ],
+      "kernel_sha256": "6dd977d261dba4cb88fe763c792799b8047f708012c66cfb5911ac80f24d05b3"
+    },
+    {
+      "t": 6,
+      "k": 3,
+      "field_polynomial": 67,
+      "ordinary_kernel_rank": 41,
+      "binomial_rank_lower": 20,
+      "row_cut_rank": 504,
+      "column_cut_rank": 504,
+      "top_coefficients_checked": 20,
+      "controlled_prefactor_degrees": [
+        2,
+        1
+      ],
+      "controlled_cut_ranks": [
+        240,
+        816
+      ],
+      "kernel_sha256": "e804098596136ffd643a08e616fea1230f2604eaf14b69798562fbd3263091e0"
+    },
+    {
+      "t": 7,
+      "k": 1,
+      "field_polynomial": 131,
+      "ordinary_kernel_rank": 7,
+      "binomial_rank_lower": 7,
+      "row_cut_rank": 254,
+      "column_cut_rank": 254,
+      "top_coefficients_checked": 7,
+      "controlled_prefactor_degrees": [
+        2,
+        1
+      ],
+      "controlled_cut_ranks": [
+        128,
+        500
+      ],
+      "kernel_sha256": "2043a86191c2a6f0eb087e23692d1d1e9d07cf793c881c0586f72874cc52ccbb"
+    },
+    {
+      "t": 7,
+      "k": 2,
+      "field_polynomial": 131,
+      "ordinary_kernel_rank": 28,
+      "binomial_rank_lower": 21,
+      "row_cut_rank": 508,
+      "column_cut_rank": 508,
+      "top_coefficients_checked": 21,
+      "controlled_prefactor_degrees": [
+        2,
+        1
+      ],
+      "controlled_cut_ranks": [
+        256,
+        976
+      ],
+      "kernel_sha256": "11e03838aa989f47c13bbfc4c1b2b6952b5bb093354ac9e0918eab78fd59b733"
+    },
+    {
+      "t": 7,
+      "k": 3,
+      "field_polynomial": 131,
+      "ordinary_kernel_rank": 63,
+      "binomial_rank_lower": 35,
+      "row_cut_rank": 1016,
+      "column_cut_rank": 1016,
+      "top_coefficients_checked": 35,
+      "controlled_prefactor_degrees": [
+        2,
+        1
+      ],
+      "controlled_cut_ranks": [
+        496,
+        1840
+      ],
+      "kernel_sha256": "2ea9149b7d1158d9e86008022154a8efa4ffaa72820e98dae08d9345e890803b"
+    }
+  ],
+  "large_symbolic_witness": {
+    "t": 33,
+    "k": 11,
+    "label_dimension": 8589934592,
+    "irreducible_polynomial": 8589935617,
+    "polynomial_hex": "0x200000401",
+    "candidate_divisors_checked": 65535,
+    "distinct_conjugates": 33,
+    "exact_row_cut_rank": 17592186042368,
+    "exact_column_cut_rank": 17592186042368,
+    "ordinary_kernel_rank_lower": 193536720,
+    "kernel_rank_lower_squared": 37456461988358400,
+    "binomial_comparison_power": 36028797018963968,
+    "exact_cut_rank_product": 309485009749287474691047424,
+    "rejected_bound_lower": 321748558527732921453772800,
+    "full_large_tensor_materialized": false
+  },
+  "scope": "Binary candidate pieces and a rank-inequality counterexample; no crossing synthesis."
+}

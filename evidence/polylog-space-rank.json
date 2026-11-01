@@ -1,0 +1,67 @@
+{
+  "affine_consistency_comparisons": 3,
+  "characteristic_coefficients_vs_weighted_minor_sums": 2276,
+  "checker_sha256": "42c821ef696289b50a57f41770f0410e19bafe240bc8e4c93dcd0fab9f6d2445",
+  "exhaustive_f2_2_by_3_matrices": 64,
+  "extension_required_example": {
+    "coefficient_exponents": [
+      2,
+      4
+    ],
+    "field_order": 8,
+    "matrix": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "nonbase_witnesses": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  "field_arithmetic_checks": 322,
+  "lexicographic_prefix_basis_comparisons": 21,
+  "nonzero_nilpotent_evaluation": {
+    "point": 1,
+    "source": [
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "weighted_matrix": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ]
+  },
+  "rank_comparisons": 87,
+  "recomputation_counters": {
+    "base_entry_queries": 234002,
+    "coefficient_calls": 4112,
+    "extension_presentations": 436,
+    "field_presentations": 467,
+    "rank_calls": 395
+  },
+  "requested_cramer_coordinates": 9,
+  "scope": "Uncached scalar entry/rank/basis recomputation with dense independent finite references; no Python memory claim.",
+  "seconds": 2.0932429750000665,
+  "status": "passed"
+}

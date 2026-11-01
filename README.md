@@ -127,6 +127,8 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs five groups on 
 
 ## Current research frontier
 
+- [Vanishing-slack transfer](research/vanishing-slack-score-transfer.md), [optimized divisor bound](research/optimized-divisor-count-bound.md), and the [PR #26 checkpoint](research/INDEX.md#retained-pr-26-effective-transfer-and-crossing-checkpoint): effective interfaces, arithmetic bounds and scoped crossing work. Universal verified search does not supply a new numerical exponent. See `make verify-further` and the retained optional targets; no new Lean or stronger complete factoring bound is claimed.
+
 - [Rational-family specialization](research/rational-family-transfer.md), [exact modular half endpoint](research/modular-half-endpoint.md), and the [PR #24 checkpoint](research/INDEX.md#retained-pr-24-effective-family-and-finite-rank-checkpoint): effective interfaces and scoped finite or uniform rank barriers. No exponent above `1/2` or new Lean result is claimed. Run `make verify-pr24` for the checkpoint checks.
 
 - [Sublinear working-space refinement](research/sublinear-space-half-rate.md) and [direct exact divisor counts](research/direct-sublinear-divisor-counts.md): PR #23 supplies ordinary time-space proofs and exact finite controls, retaining the half-rate time bound. Its [full checkpoint index](research/INDEX.md#retained-pr-23-time-space-and-crossing-checkpoint) also preserves related crossing constructions and scoped obstructions. Integration is not independent mathematical acceptance; no new Lean or stronger exponent is claimed. Run `make verify-pr23` for the source checkpoint checks.
@@ -322,8 +324,19 @@ dimension 28. Uniform favorable ranks remain open. Run the optional
 The [modular interface](research/bounded-spin-modular-interface.md)
 connects these constructors to the existing fixed-characteristic transfer:
 dense rank factors meet its cost bound, and the original coefficient
-space also permits automatic selection. A favorable uniform rank
+space permits automatic selection even from existential decompositions
+over extensions of degree `2^o(lambda)`. A favorable uniform rank
 estimate is still missing.
+The [constant-state spin projector](research/bounded-spin-projector.md)
+uses thirty states, or sixty for exact binary label selection, and
+preserves the encoded rank problem under ambient extension. An exact
+coefficient involution also identifies the two cut operator spaces.
+Run the optional `make verify-bounded-spin-projector`.
+The [bounded-support rank factors](research/bounded-spin-support-ranks.md)
+give explicit `O(L^(4/3))` channels for the shared extreme coefficient,
+below the post-half scale for that piece. Sublinear corner bands still
+cannot span the crossing; a complete favorable decomposition remains
+open. Run `make verify-bounded-spin-support`.
 
 The [exact nonlinear charge theorem](research/nonlinear-symbol-charge-lattices.md)
 characterizes every admissible pair of full-symbol potentials for the

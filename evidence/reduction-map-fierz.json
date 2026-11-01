@@ -1,0 +1,98 @@
+{
+  "auxiliary_transition_identity_checks": 1088,
+  "checker_sha256": "0be6645059688cfc052f01b55d673407f12e1e90f70e2e65e2c6b42b7b60959b",
+  "exact_extended_factor_rows": 1088,
+  "exact_markov_path_and_type_checks": 14,
+  "full_individual_word_rank_profiles": 14,
+  "matrix_vector_endpoint_checks": 272,
+  "profiles": [
+    {
+      "extended_cut_profiles": [
+        [
+          1,
+          4
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "external_base": 2,
+      "markov_base": "2+2 sqrt(1)",
+      "raw_base": "4 sqrt(1)",
+      "transition_rank_profiles": [
+        [
+          [
+            1,
+            4
+          ],
+          [
+            4,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            4
+          ],
+          [
+            4,
+            1
+          ]
+        ]
+      ]
+    },
+    {
+      "extended_cut_profiles": [
+        [
+          1,
+          96
+        ],
+        [
+          96,
+          1
+        ]
+      ],
+      "external_base": 4,
+      "markov_base": "4+4 sqrt(6)",
+      "raw_base": "8 sqrt(6)",
+      "transition_rank_profiles": [
+        [
+          [
+            1,
+            16
+          ],
+          [
+            16,
+            6
+          ]
+        ],
+        [
+          [
+            6,
+            16
+          ],
+          [
+            16,
+            1
+          ]
+        ]
+      ]
+    }
+  ],
+  "scope": "Exact concrete crossing and sharper word accounting; its common terminal projection reduces its base to an ordinary transition-row seed.",
+  "seconds": 0.619141025999852,
+  "status": "passed",
+  "symbol_count_only_negative_control": {
+    "AAB": [
+      64,
+      384
+    ],
+    "ABA": [
+      384,
+      384
+    ],
+    "strict_cauchy_gap_verified": true
+  }
+}

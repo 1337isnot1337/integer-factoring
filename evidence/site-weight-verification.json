@@ -1,0 +1,16 @@
+{
+  "asymmetric_weight_negative_control": [
+    0,
+    1,
+    1,
+    1
+  ],
+  "checker_sha256": "e47a03b73e709403116c18808f6364efcb2398b95e20c82445467832cecad102",
+  "field": "F_2",
+  "independent_eight_position_uniform_profile": 1,
+  "independent_full_tensor_cases": 24,
+  "scope": "Exact finite coefficient identities and ranks; no asymptotic contraction claim.",
+  "source_sha256": "4fe6b6c89846f425e5584d68af5b01731a7acb8a2b07ff936d90077c067a0d76",
+  "status": "passed",
+  "symmetric_weight_recombination_checks": 24
+}
