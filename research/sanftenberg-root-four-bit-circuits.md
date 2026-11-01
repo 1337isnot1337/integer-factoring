@@ -59,13 +59,18 @@ subtracts `M` once. Subtraction computes the signed difference in
 sign/comparison chain, and per-bit selection use `O(T)` Boolean gates for
 either operation. Therefore one radix-2 butterfly—two modular add/subtract
 outputs and its root-four twiddle—has an `O(T)`-gate implementation.
+The `T+1`-bit canonical-word condition is `h=1` only when every low bit is
+zero; checking it takes `O(T)` one-bit gates per word.
 
 For a pointwise product, schoolbook multiplication computes an integer
 `P=x*y` with `O(T^2)` gates. Write `P=L+H2^T` with `0<=L<2^T` and
 `0<=H<=2^T`. Since `2^T=-1`, the residue is `L-H mod M`; one signed
 correction by `M` returns its canonical `T+1`-bit word. The usual row-wise
 schoolbook circuit keeps one `O(T)`-bit accumulator and the multiplier word,
-so an individual product gadget has a path decomposition of width `O(T)`.
+so an individual product gadget has a path decomposition of width `O(T)`:
+process multiplier rows in order, keeping both operand words and the current
+and next accumulator rows in each bag. Each partial-product row and its add
+carry then meets only adjacent row bags.
 
 With `T` transform positions and `log_2 T` butterfly stages, the transform
 circuits have `O(T^2 log T)` gates. The `T` pointwise product gadgets have
