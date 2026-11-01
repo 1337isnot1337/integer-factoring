@@ -19,11 +19,12 @@ complementary asymmetric families, rather than bounds requiring both
 ranks to be small. At eight sites one highest-degree coefficient has
 the exact pair **(8,169)** on the full13-letter alphabet.
 
-The crucial remaining obligation is a spanning theorem: these cheap
-edge families do **not** span the crossing in the checked small
-alphabets. Thus (1) is a uniform bound for selected coefficients,
-not a rank-sum bound for a complete crossing. The strongest complete
-factoring score remains `1/2`.
+These cheap edges cannot span the crossing by themselves at all
+large widths: the existing minimum-cut budget forces additional
+balanced-rank pieces. The remaining task is a mixed decomposition
+combining the asymmetric channels with such middle pieces. Thus (1)
+is a uniform bound for selected coefficients, not a rank-sum bound
+for a complete crossing. The strongest complete factoring score remains `1/2`.
 
 ## 1. Two disjoint seams and a strict crossing
 
@@ -185,7 +186,7 @@ most a+1 products. This is exactly the column partition, so
 The coefficient `I+G_00` in (3) therefore has column rank at most17.
 Again rank over F4 equals rank after the temporary F16 extension.
 
-## 4. The remaining spanning problem
+## 4. A mixed decomposition is necessary
 
 Since `v_(2m)=O(phi^(2m))` and `L=Theta(phi^n)`, equation (4) gives
 (1), while (5) is `L^o(1)`. Thus the union of these two O(n)-size edge families has
@@ -196,21 +197,61 @@ the favorable rank budget
  \le L^{5/4+o(1)},\qquad 5/4<\sqrt2.            \tag{6}
 ```
 
-Equation (6) is a budget **for the listed pieces**. To use the
-[strict amplification criterion](geometric-cut-rank-budget.md), the
-crossing must belong to their span, possibly after a changed seam
-template or an enlarged family with the same rank bounds. If it did
-at every sufficiently large binary width, exact dense linear solving
-would construct the coefficients in `2^O(lambda)` time. Expose a
-solution for `SWAP+I` in distinct positive monomial degrees and use
-constant coefficient I. This makes a strict crossing with precisely
-these cheap pieces and polynomial degree.
+Equation (6) is a budget **for the listed pieces**. The earlier
+[minimum-cut theorem](minimum-cut-rank-budget.md) gives the independent
+necessary condition
 
-The current small edge spans miss SWAP. There is no claim that (6)
-already applies to a whole crossing. The new positive object is the
-pair of complementary asymmetric edge families. Controlling the
-interior through another auxiliary or a spanning identity is the
-open task.
+```math
+\sum_i\min(r(T_i),c(T_i))\ge L                 \tag{7}
+```
+
+for every decomposition of SWAP. One can also see (7) directly by
+fixing `Q=R=q`: SWAP becomes the L-by-L identity on P,S, whereas
+each piece's slice rank is at most either of its two cut ranks.
+
+The sum of the chosen small ranks of the two edges, including I,
+is bounded by
+
+```math
+B_n=1+4(n+1)^4(n+2)v_{2\lfloor n/4\rfloor}
+       +8(a_*+1)(a_*+2)=o(L).                  \tag{8}
+```
+
+Thus they **cannot** span SWAP for all large widths. Any polynomial
+number of changed auxiliary templates having these same edge bounds
+still gives `poly(n)B_n=o(L)` and cannot fix this by itself. This
+consequence supersedes the earlier edge-only spanning target; no
+larger scan of that target is warranted.
+
+A complete decomposition must add middle pieces whose minimum ranks
+sum to at least `L-o(L)`. With polynomially many such pieces, at least
+one must have **both** ranks at least `L^(1-o(1))`. That is compatible
+with the strict rank-sum threshold: a piece with both ranks O(L)
+costs O(L), rather than `L^sqrt(2)`. The task is to find compatible
+balanced pieces and exact coefficients, while retaining the cheap
+asymmetric corrections and respecting all other cut budgets.
+
+One available source of balanced pieces, already present in the
+[finite-state pairing family](finite-state-pairing-crossings.md), is
+the group-sum tensor. For any cyclic label group put
+`K_sigma(P,Q,R,S)=[P+sigma*Q=S+sigma*R]`. Both cut ranks equal L,
+because each cut groups rows and columns by their displayed linear
+sum; coefficient one on P and S makes every class nonempty.
+For binary labels XOR gives the analogous F2-vector-space version.
+Such known cheap cores may be appended to a strict crossing by
+`(t^k+t^(k+1))K_sigma`, beyond its old degree. Both endpoints are
+preserved. This supplies an effective hybrid design space, not an
+assertion that any chosen core completes the decomposition. In
+particular, neither the pairing-only barriers nor an edge-only
+exclusion settles a hybrid with the new path channels.
+
+Once a mixed favorable spanning identity is found, expose a solution
+for `SWAP+I` in distinct positive monomial degrees and use constant
+coefficient I. Exact dense solving and factors have the allowed
+`2^O(lambda)` cost. Finding that identity, with middle-rank mass and
+the [other necessary budgets](geometric-cut-rank-budget.md) satisfied,
+is the open positive task. No claim that (6) already applies to a
+whole crossing is made.
 
 ## 5. Reproduction and finite scope
 

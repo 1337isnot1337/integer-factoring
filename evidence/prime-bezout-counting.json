@@ -1,0 +1,284 @@
+{
+  "complete_pairs_and_maximal_scales": 18,
+  "conditional_wrapper_inputs": 261,
+  "dense_exact_quadratic_coefficients": 75,
+  "examples": [
+    {
+      "count": 3,
+      "factor_pairs": [
+        [
+          7,
+          5
+        ]
+      ],
+      "first_a": 1,
+      "first_b": 2,
+      "leading_coefficient": 1,
+      "n": 35,
+      "prime": 3
+    },
+    {
+      "count": 3,
+      "factor_pairs": [
+        [
+          5,
+          7
+        ]
+      ],
+      "first_a": 2,
+      "first_b": 1,
+      "leading_coefficient": 1,
+      "n": 35,
+      "prime": 3
+    },
+    {
+      "count": 3,
+      "factor_pairs": [
+        [
+          7,
+          5
+        ]
+      ],
+      "first_a": 4,
+      "first_b": 2,
+      "leading_coefficient": 1,
+      "n": 35,
+      "prime": 3
+    },
+    {
+      "count": 9,
+      "factor_pairs": [
+        [
+          1,
+          11
+        ]
+      ],
+      "first_a": 1,
+      "first_b": 2,
+      "leading_coefficient": 1,
+      "n": 11,
+      "prime": 3
+    },
+    {
+      "count": 9,
+      "factor_pairs": [
+        [
+          11,
+          1
+        ]
+      ],
+      "first_a": 2,
+      "first_b": 1,
+      "leading_coefficient": 1,
+      "n": 11,
+      "prime": 3
+    },
+    {
+      "count": 9,
+      "factor_pairs": [
+        [
+          7,
+          5
+        ]
+      ],
+      "first_a": 1,
+      "first_b": 2,
+      "leading_coefficient": 1,
+      "n": 35,
+      "prime": 3
+    },
+    {
+      "count": 9,
+      "factor_pairs": [
+        [
+          5,
+          7
+        ]
+      ],
+      "first_a": 2,
+      "first_b": 1,
+      "leading_coefficient": 1,
+      "n": 35,
+      "prime": 3
+    },
+    {
+      "count": 9,
+      "factor_pairs": [
+        [
+          7,
+          5
+        ]
+      ],
+      "first_a": 4,
+      "first_b": 2,
+      "leading_coefficient": 1,
+      "n": 35,
+      "prime": 3
+    }
+  ],
+  "finite_known_factor_oracle_queries": 2096,
+  "independent_padding_controls": 8,
+  "inputs_requiring_supplied_oracle": 60,
+  "large_encoded_contract": {
+    "clearing_exponent_bits": 403,
+    "count_bits": 402,
+    "input_bits": 402,
+    "padding_exponent": 236,
+    "precision": 1,
+    "prime": 11,
+    "scope": "Contract construction only; no large coefficient computed"
+  },
+  "literal_derivative_unit_controls": 966,
+  "primorial_lucas_and_factorial_controls": 2136,
+  "scope": "Exact dense controls and explicitly supplied finite factor-count oracles; no global compressed coefficient provider or improved factoring score.",
+  "selected_controls": [
+    {
+      "coefficient_queries": 94,
+      "largest_proper_divisor": 13,
+      "n": 169,
+      "prime_limit": 1024,
+      "primes": [
+        3,
+        5,
+        7,
+        11
+      ],
+      "product": 1155,
+      "proper_divisors": [
+        13
+      ],
+      "scope": "Conditional on the supplied leading coefficient provider",
+      "smallest_prime_factor": 13
+    },
+    {
+      "coefficient_queries": 96,
+      "largest_proper_divisor": 17,
+      "n": 221,
+      "prime_limit": 1024,
+      "primes": [
+        3,
+        5,
+        7,
+        11
+      ],
+      "product": 1155,
+      "proper_divisors": [
+        13,
+        17
+      ],
+      "scope": "Conditional on the supplied leading coefficient provider",
+      "smallest_prime_factor": 13
+    },
+    {
+      "coefficient_queries": 22,
+      "n": 257,
+      "prime_limit": 1296,
+      "primes": [
+        3,
+        5,
+        7,
+        11
+      ],
+      "product": 1155,
+      "proper_divisors": [],
+      "scope": "Conditional on the supplied leading coefficient provider",
+      "smallest_prime_factor": 257
+    },
+    {
+      "coefficient_queries": 96,
+      "largest_proper_divisor": 19,
+      "n": 323,
+      "prime_limit": 1296,
+      "primes": [
+        3,
+        5,
+        7,
+        11
+      ],
+      "product": 1155,
+      "proper_divisors": [
+        17,
+        19
+      ],
+      "scope": "Conditional on the supplied leading coefficient provider",
+      "smallest_prime_factor": 17
+    },
+    {
+      "coefficient_queries": 118,
+      "largest_proper_divisor": 29,
+      "n": 667,
+      "prime_limit": 1600,
+      "primes": [
+        3,
+        5,
+        7,
+        11
+      ],
+      "product": 1155,
+      "proper_divisors": [
+        23,
+        29
+      ],
+      "scope": "Conditional on the supplied leading coefficient provider",
+      "smallest_prime_factor": 23
+    },
+    {
+      "coefficient_queries": 346,
+      "largest_proper_divisor": 103,
+      "n": 10403,
+      "prime_limit": 3136,
+      "primes": [
+        3,
+        5,
+        7,
+        11,
+        13
+      ],
+      "product": 15015,
+      "proper_divisors": [
+        101,
+        103
+      ],
+      "scope": "Conditional on the supplied leading coefficient provider",
+      "smallest_prime_factor": 101
+    },
+    {
+      "coefficient_queries": 314,
+      "largest_proper_divisor": 109,
+      "n": 11663,
+      "prime_limit": 3136,
+      "primes": [
+        3,
+        5,
+        7,
+        11,
+        13
+      ],
+      "product": 15015,
+      "proper_divisors": [
+        107,
+        109
+      ],
+      "scope": "Conditional on the supplied leading coefficient provider",
+      "smallest_prime_factor": 107
+    },
+    {
+      "coefficient_queries": 50,
+      "n": 104729,
+      "prime_limit": 4624,
+      "primes": [
+        3,
+        5,
+        7,
+        11,
+        13,
+        17
+      ],
+      "product": 255255,
+      "proper_divisors": [],
+      "scope": "Conditional on the supplied leading coefficient provider",
+      "smallest_prime_factor": 104729
+    }
+  ],
+  "theorem": "Prime-adic precision one returns factor counts"
+}

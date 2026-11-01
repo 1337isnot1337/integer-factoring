@@ -716,8 +716,9 @@ now gives complementary asymmetric coefficient families: the highest
 allowed central edge has row rank `L^(1/2+o(1))`, below the
 post-half small-cut threshold, and the opposite edge has polynomial
 column rank. Exact eight-site pairs include `(8,169)` and `(134,2)`.
-Their checked edge spans still miss the crossing; a spanning identity
-or changed template remains necessary. Run the NumPy replay
+The minimum-cut budget rules out an edge-only completion at large
+widths; a mixed decomposition must supply balanced middle pieces.
+Their checked edge spans also miss the small crossing. Run the NumPy replay
 `make verify-braid-nilpotent-seam`.
 
 The [exact nonlinear charge theorem](research/nonlinear-symbol-charge-lattices.md)
@@ -1896,3 +1897,6 @@ For arbitrary odd inputs, the [fixed-scale global Bézout interface](research/re
 
 
 The [filtered Pascal exponent classification](research/filtered-pascal-exponents.md) supplies nonlinear and noninjective exponent maps that preserve a complete zero-cut profile. It characterizes the fixed regularity cone exactly and verifies the actual polynomial and Fock matrices. The other cut still requires its own profile calculation; no exponent improvement is inferred from the preserved spectrum alone.
+
+
+A [prime-adic precision-one refinement](research/prime-bezout-counting.md) turns each normalized leading coefficient into a rectangle factor count modulo a small prime. Polynomially bounded primes and disjoint residue rectangles yield a uniform conditional factoring reduction with only logarithmically many output bits per query. Exact rational controls verify the normalization; computing the global coefficient remains unresolved.
