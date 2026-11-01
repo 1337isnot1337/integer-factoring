@@ -104,6 +104,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Output-sensitive space transfer](output-sensitive-space-transfer.md): streamed rough cofactors and scalar isolation give factorization recovery in time `A(n) exp(O(s+n/s+log n))` and space `S(n)+O(s+n/s+log n)`; output-sensitive divisor listing is charged separately.
+- [Small-word Fourier construction](small-word-fourier-constructor.md): logarithmic arithmetic words, linear total label mass, an explicit CRT constructor, and carry-column grouping with volume constant `24+o(1)` in the stated regime.
 - [Output-sensitive orbit-gcd deadline transfer](output-sensitive-gcd-deadline.md): the existing polynomial zero-degree runtime target already implies polynomial-time factoring by bounded simulation and interval bisection; the primitive remains unproved.
 
 - [Weighted fixed-characteristic transfer](fixed-characteristic-transfer.md): uniform factoring from a modular evaluator.

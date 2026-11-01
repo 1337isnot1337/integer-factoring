@@ -27,6 +27,25 @@ The complete Lean endpoint is [`IntegerFactoring.HalfAppendix.sqrtLogLog_factori
 
 The composition uses the existing clique evaluator from [Anthropic's Appendix B](https://github.com/anthropics/formal-math) and the multiplication-network reduction by [Isaac Rudich and Louis-Martin Rousseau](https://github.com/IsaacRudich/SubexponentialDeterministicFactoring). See the [written proof](research/half-rate-factoring.md), the [constructor](research/half-top-constructor.md), and the [evaluator audit](research/half-evaluator-audit.md).
 
+<!-- arithmetic-space-checkpoint:start -->
+## Arithmetic construction and space bounds
+
+The [output-sensitive space transfer](research/output-sensitive-space-transfer.md)
+recovers a complete factorization from a scalar phase evaluator in time
+`A(n) exp(O(s+n/s+log n))` and space `S(n)+O(s+n/s+log n)`.
+The proof streams the rough cofactor, reconstructs isolated factors, and
+charges the output explicitly. Choosing `s` near `sqrt(n)` keeps recovery
+below the exponential scales relevant to the present score.
+
+The [small-word Fourier constructor](research/small-word-fourier-constructor.md)
+uses `O(log n)`-bit arithmetic words and `O(n/log n)` gates, with total
+label mass `O(n)`. Its CRT version and carry-column grouping give
+`P^2 lambda <= (24+o(1))n` in the stated grouping regime, with polynomial-time
+`O(n/P)`-space table queries. These are ordinary-proof improvements to the
+constructor and transfer; the logarithmic saving exponent remains **1/2**.
+Run `make verify-output-space-transfer verify-small-word-fourier`.
+<!-- arithmetic-space-checkpoint:end -->
+
 <!-- cofactor-collision-checkpoint:start -->
 ## Composite-cofactor relation selection
 

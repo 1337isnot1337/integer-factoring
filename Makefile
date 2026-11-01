@@ -1925,3 +1925,12 @@ verify-prime-cofactor-saturation:
 .PHONY: verify-cofactor-orbit-moments
 verify-cofactor-orbit-moments:
 	python3 tools/check_cofactor_orbit_moments.py --output /tmp/integer-factoring-cofactor-orbit-moments.json
+
+.PHONY: verify-output-space-transfer
+verify-output-space-transfer:
+	python3 tools/check_output_sensitive_space_transfer.py
+
+.PHONY: verify-small-word-fourier
+verify-small-word-fourier:
+	python3 tools/check_small_word_fourier_constructor.py
+

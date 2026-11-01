@@ -1,0 +1,1139 @@
+{
+  "adaptive_thresholds": {
+    "examples": [
+      {
+        "N": "12",
+        "input_bits": 4,
+        "optimal_visible_cost": {
+          "denominator": 2,
+          "numerator": 4
+        },
+        "rough_bits": 0,
+        "rough_part": "1",
+        "stopping_threshold": 2
+      },
+      {
+        "N": "231",
+        "input_bits": 8,
+        "optimal_visible_cost": {
+          "denominator": 4,
+          "numerator": 16
+        },
+        "rough_bits": 4,
+        "rough_part": "11",
+        "stopping_threshold": 3
+      },
+      {
+        "N": "511",
+        "input_bits": 9,
+        "optimal_visible_cost": {
+          "denominator": 3,
+          "numerator": 16
+        },
+        "rough_bits": 7,
+        "rough_part": "73",
+        "stopping_threshold": 3
+      },
+      {
+        "N": "1024",
+        "input_bits": 11,
+        "optimal_visible_cost": {
+          "denominator": 1,
+          "numerator": 1
+        },
+        "rough_bits": 0,
+        "rough_part": "1",
+        "stopping_threshold": 1
+      },
+      {
+        "N": "340282366920938463463374607431768211456",
+        "input_bits": 129,
+        "optimal_visible_cost": {
+          "denominator": 1,
+          "numerator": 1
+        },
+        "rough_bits": 0,
+        "rough_part": "1",
+        "stopping_threshold": 1
+      },
+      {
+        "N": "147808829414345923316083210206383297601",
+        "input_bits": 127,
+        "optimal_visible_cost": {
+          "denominator": 2,
+          "numerator": 4
+        },
+        "rough_bits": 0,
+        "rough_part": "1",
+        "stopping_threshold": 2
+      },
+      {
+        "N": "343344908223226909634544978898654125359104",
+        "input_bits": 138,
+        "optimal_visible_cost": {
+          "denominator": 3,
+          "numerator": 19
+        },
+        "rough_bits": 10,
+        "rough_part": "1009",
+        "stopping_threshold": 4
+      },
+      {
+        "N": "1432684427011355147943777427316007909929779200000000000000000000",
+        "input_bits": 210,
+        "optimal_visible_cost": {
+          "denominator": 4,
+          "numerator": 36
+        },
+        "rough_bits": 20,
+        "rough_part": "1022117",
+        "stopping_threshold": 5
+      }
+    ],
+    "inputs": 1027
+  },
+  "checker_sha256": "a13b193a566e1fa7411cb4ee7fe43796d84f8cc71bca060879481b029c17265e",
+  "coefficient_extensions": {
+    "fields": [
+      {
+        "characteristic": 2,
+        "control_order": 9,
+        "degree": 2,
+        "order": 4,
+        "roots_of_X2_plus_X_plus_1": [
+          2,
+          3
+        ],
+        "scalar_filter_works_without_adjoining_roots": true
+      },
+      {
+        "characteristic": 2,
+        "control_order": 9,
+        "degree": 3,
+        "order": 8,
+        "roots_of_X2_plus_X_plus_1": [],
+        "scalar_filter_works_without_adjoining_roots": true
+      },
+      {
+        "characteristic": 3,
+        "control_order": 4,
+        "degree": 2,
+        "order": 9,
+        "roots_of_X2_plus_X_plus_1": [
+          1
+        ],
+        "scalar_filter_works_without_adjoining_roots": true
+      },
+      {
+        "characteristic": 5,
+        "control_order": 4,
+        "degree": 2,
+        "order": 25,
+        "roots_of_X2_plus_X_plus_1": [
+          7,
+          22
+        ],
+        "scalar_filter_works_without_adjoining_roots": true
+      },
+      {
+        "characteristic": 7,
+        "control_order": 4,
+        "degree": 2,
+        "order": 49,
+        "roots_of_X2_plus_X_plus_1": [
+          2,
+          4
+        ],
+        "scalar_filter_works_without_adjoining_roots": true
+      }
+    ],
+    "linear_form_cases": 30
+  },
+  "composite_coefficient_rings": {
+    "linear_form_cases": 85,
+    "rings": [
+      {
+        "all_linear_forms_checked": true,
+        "coefficient_modulus": 4,
+        "control_order": 9,
+        "hash_characteristic": 3
+      },
+      {
+        "all_linear_forms_checked": true,
+        "coefficient_modulus": 6,
+        "control_order": 25,
+        "hash_characteristic": 5
+      },
+      {
+        "all_linear_forms_checked": true,
+        "coefficient_modulus": 8,
+        "control_order": 9,
+        "hash_characteristic": 3
+      },
+      {
+        "all_linear_forms_checked": true,
+        "coefficient_modulus": 9,
+        "control_order": 4,
+        "hash_characteristic": 2
+      },
+      {
+        "all_linear_forms_checked": true,
+        "coefficient_modulus": 10,
+        "control_order": 9,
+        "hash_characteristic": 3
+      },
+      {
+        "all_linear_forms_checked": true,
+        "coefficient_modulus": 12,
+        "control_order": 25,
+        "hash_characteristic": 5
+      },
+      {
+        "all_linear_forms_checked": true,
+        "coefficient_modulus": 15,
+        "control_order": 4,
+        "hash_characteristic": 2
+      }
+    ]
+  },
+  "direct_scalar_hash_paths": {
+    "scalar_bucket_vectors": 960,
+    "scope": "Direct group hash paths and bit pins; no original multiplier gates simulated.",
+    "unique_control_extensions": 288
+  },
+  "explicit_group_phase_path": {
+    "balanced_hash_width_cases": 15361,
+    "group_path_contractions": 108,
+    "invalid_encoding_negative_control": {
+      "coefficient_prime": 2,
+      "correct_path_count": 1,
+      "forbidden_encoding": 3,
+      "incorrect_modular_path_count": 0,
+      "valid_encoding": 0
+    },
+    "largest_checked_mass_ratio": {
+      "denominator": 1025,
+      "example": {
+        "mass": 1181952,
+        "n": 1025,
+        "vertices": 16,
+        "width": 4617
+      },
+      "numerator": 1181952
+    },
+    "scope": "Additional phase channels and exact parameter bounds only; no multiplier table reimplementation.",
+    "volume_cases": 64443
+  },
+  "output_sensitive_enumeration": {
+    "inputs": 510,
+    "interval_cases": 1530,
+    "mixed_radix_is_not_sorted_control": {
+      "N": 12,
+      "mixed_order": [
+        1,
+        2,
+        4,
+        3,
+        6,
+        12
+      ],
+      "sorted_order": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        12
+      ]
+    },
+    "successor_scan_comparisons": 30325
+  },
+  "output_size": {
+    "examples": [
+      {
+        "divisor_output_count": "2",
+        "input_bits": 2,
+        "largest_prime": 2,
+        "log2_divisor_output_count": 1,
+        "number_of_prime_factors": 1,
+        "prime_supply_bound": 16
+      },
+      {
+        "divisor_output_count": "4",
+        "input_bits": 3,
+        "largest_prime": 3,
+        "log2_divisor_output_count": 2,
+        "number_of_prime_factors": 2,
+        "prime_supply_bound": 32
+      },
+      {
+        "divisor_output_count": "16",
+        "input_bits": 8,
+        "largest_prime": 7,
+        "log2_divisor_output_count": 4,
+        "number_of_prime_factors": 4,
+        "prime_supply_bound": 96
+      },
+      {
+        "divisor_output_count": "256",
+        "input_bits": 24,
+        "largest_prime": 19,
+        "log2_divisor_output_count": 8,
+        "number_of_prime_factors": 8,
+        "prime_supply_bound": 256
+      },
+      {
+        "divisor_output_count": "65536",
+        "input_bits": 65,
+        "largest_prime": 53,
+        "log2_divisor_output_count": 16,
+        "number_of_prime_factors": 16,
+        "prime_supply_bound": 640
+      },
+      {
+        "divisor_output_count": "4294967296",
+        "input_bits": 169,
+        "largest_prime": 131,
+        "log2_divisor_output_count": 32,
+        "number_of_prime_factors": 32,
+        "prime_supply_bound": 1536
+      },
+      {
+        "divisor_output_count": "18446744073709551616",
+        "input_bits": 417,
+        "largest_prime": 311,
+        "log2_divisor_output_count": 64,
+        "number_of_prime_factors": 64,
+        "prime_supply_bound": 3584
+      },
+      {
+        "divisor_output_count": "340282366920938463463374607431768211456",
+        "input_bits": 990,
+        "largest_prime": 719,
+        "log2_divisor_output_count": 128,
+        "number_of_prime_factors": 128,
+        "prime_supply_bound": 8192
+      }
+    ],
+    "primorial_cases": 128
+  },
+  "rough_preprocessing": {
+    "cases": 3008,
+    "composite_slot_negative_control": {
+      "B": 4,
+      "N": 12,
+      "incorrect_product": 48
+    },
+    "examples": [
+      {
+        "N": 12,
+        "factorization": [
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        "q": 2,
+        "rough": 1,
+        "rough_divisors": 1,
+        "s": 2,
+        "smooth": 12,
+        "threshold": 4
+      },
+      {
+        "N": 45,
+        "factorization": [
+          [
+            3,
+            2
+          ],
+          [
+            5,
+            1
+          ]
+        ],
+        "q": 6,
+        "rough": 45,
+        "rough_divisors": 6,
+        "s": 1,
+        "smooth": 1,
+        "threshold": 2
+      },
+      {
+        "N": 210,
+        "factorization": [
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            7,
+            1
+          ]
+        ],
+        "q": 4,
+        "rough": 35,
+        "rough_divisors": 4,
+        "s": 2,
+        "smooth": 6,
+        "threshold": 4
+      },
+      {
+        "N": 385,
+        "factorization": [
+          [
+            5,
+            1
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            11,
+            1
+          ]
+        ],
+        "q": 5,
+        "rough": 385,
+        "rough_divisors": 8,
+        "s": 2,
+        "smooth": 1,
+        "threshold": 4
+      },
+      {
+        "N": 511,
+        "factorization": [
+          [
+            7,
+            1
+          ],
+          [
+            73,
+            1
+          ]
+        ],
+        "q": 5,
+        "rough": 511,
+        "rough_divisors": 4,
+        "s": 2,
+        "smooth": 1,
+        "threshold": 4
+      }
+    ],
+    "nonrough_support_negative_control": {
+      "N": 1048576,
+      "incorrect_unconditional_bound": 8,
+      "s": 10,
+      "tau": 21
+    }
+  },
+  "scalar_phase_recovery": {
+    "cases": [
+      {
+        "N": 6,
+        "all_divisors_have_singleton_handles": true,
+        "coefficient_prime": 2,
+        "control_order": 27,
+        "control_polynomial": [
+          1,
+          2,
+          0,
+          1
+        ],
+        "divisors": 4,
+        "hash_characteristic": 3,
+        "projection_cases": 16
+      },
+      {
+        "N": 12,
+        "all_divisors_have_singleton_handles": true,
+        "coefficient_prime": 2,
+        "control_order": 27,
+        "control_polynomial": [
+          1,
+          2,
+          0,
+          1
+        ],
+        "divisors": 6,
+        "hash_characteristic": 3,
+        "projection_cases": 16
+      },
+      {
+        "N": 15,
+        "all_divisors_have_singleton_handles": true,
+        "coefficient_prime": 2,
+        "control_order": 27,
+        "control_polynomial": [
+          1,
+          2,
+          0,
+          1
+        ],
+        "divisors": 4,
+        "hash_characteristic": 3,
+        "projection_cases": 12
+      },
+      {
+        "N": 35,
+        "all_divisors_have_singleton_handles": true,
+        "coefficient_prime": 2,
+        "control_order": 27,
+        "control_polynomial": [
+          1,
+          2,
+          0,
+          1
+        ],
+        "divisors": 4,
+        "hash_characteristic": 3,
+        "projection_cases": 12
+      },
+      {
+        "N": 45,
+        "all_divisors_have_singleton_handles": true,
+        "coefficient_prime": 2,
+        "control_order": 81,
+        "control_polynomial": [
+          2,
+          1,
+          0,
+          0,
+          1
+        ],
+        "divisors": 6,
+        "hash_characteristic": 3,
+        "projection_cases": 12
+      },
+      {
+        "N": 49,
+        "all_divisors_have_singleton_handles": true,
+        "coefficient_prime": 2,
+        "control_order": 27,
+        "control_polynomial": [
+          1,
+          2,
+          0,
+          1
+        ],
+        "divisors": 3,
+        "hash_characteristic": 3,
+        "projection_cases": 10
+      },
+      {
+        "N": 77,
+        "all_divisors_have_singleton_handles": true,
+        "coefficient_prime": 2,
+        "control_order": 27,
+        "control_polynomial": [
+          1,
+          2,
+          0,
+          1
+        ],
+        "divisors": 4,
+        "hash_characteristic": 3,
+        "projection_cases": 11
+      },
+      {
+        "N": 105,
+        "all_divisors_have_singleton_handles": true,
+        "coefficient_prime": 2,
+        "control_order": 81,
+        "control_polynomial": [
+          2,
+          1,
+          0,
+          0,
+          1
+        ],
+        "divisors": 8,
+        "hash_characteristic": 3,
+        "projection_cases": 12
+      },
+      {
+        "N": 225,
+        "all_divisors_have_singleton_handles": true,
+        "coefficient_prime": 2,
+        "control_order": 81,
+        "control_polynomial": [
+          2,
+          1,
+          0,
+          0,
+          1
+        ],
+        "divisors": 9,
+        "hash_characteristic": 3,
+        "projection_cases": 12
+      },
+      {
+        "N": 231,
+        "all_divisors_have_singleton_handles": true,
+        "coefficient_prime": 2,
+        "control_order": 81,
+        "control_polynomial": [
+          2,
+          1,
+          0,
+          0,
+          1
+        ],
+        "divisors": 8,
+        "hash_characteristic": 3,
+        "projection_cases": 12
+      },
+      {
+        "N": 6,
+        "all_divisors_have_singleton_handles": true,
+        "coefficient_prime": 3,
+        "control_order": 16,
+        "control_polynomial": [
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "divisors": 4,
+        "hash_characteristic": 2,
+        "projection_cases": 11
+      },
+      {
+        "N": 12,
+        "all_divisors_have_singleton_handles": true,
+        "coefficient_prime": 3,
+        "control_order": 32,
+        "control_polynomial": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "divisors": 6,
+        "hash_characteristic": 2,
+        "projection_cases": 11
+      },
+      {
+        "N": 15,
+        "all_divisors_have_singleton_handles": true,
+        "coefficient_prime": 3,
+        "control_order": 16,
+        "control_polynomial": [
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "divisors": 4,
+        "hash_characteristic": 2,
+        "projection_cases": 10
+      },
+      {
+        "N": 35,
+        "all_divisors_have_singleton_handles": true,
+        "coefficient_prime": 3,
+        "control_order": 32,
+        "control_polynomial": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "divisors": 4,
+        "hash_characteristic": 2,
+        "projection_cases": 11
+      },
+      {
+        "N": 45,
+        "all_divisors_have_singleton_handles": true,
+        "coefficient_prime": 3,
+        "control_order": 32,
+        "control_polynomial": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "divisors": 6,
+        "hash_characteristic": 2,
+        "projection_cases": 11
+      },
+      {
+        "N": 49,
+        "all_divisors_have_singleton_handles": true,
+        "coefficient_prime": 3,
+        "control_order": 16,
+        "control_polynomial": [
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "divisors": 3,
+        "hash_characteristic": 2,
+        "projection_cases": 11
+      },
+      {
+        "N": 77,
+        "all_divisors_have_singleton_handles": true,
+        "coefficient_prime": 3,
+        "control_order": 32,
+        "control_polynomial": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "divisors": 4,
+        "hash_characteristic": 2,
+        "projection_cases": 11
+      },
+      {
+        "N": 105,
+        "all_divisors_have_singleton_handles": true,
+        "coefficient_prime": 3,
+        "control_order": 64,
+        "control_polynomial": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "divisors": 8,
+        "hash_characteristic": 2,
+        "projection_cases": 11
+      },
+      {
+        "N": 225,
+        "all_divisors_have_singleton_handles": true,
+        "coefficient_prime": 3,
+        "control_order": 128,
+        "control_polynomial": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "divisors": 9,
+        "hash_characteristic": 2,
+        "projection_cases": 11
+      },
+      {
+        "N": 231,
+        "all_divisors_have_singleton_handles": true,
+        "coefficient_prime": 3,
+        "control_order": 64,
+        "control_polynomial": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "divisors": 8,
+        "hash_characteristic": 2,
+        "projection_cases": 11
+      },
+      {
+        "N": 6,
+        "all_divisors_have_singleton_handles": true,
+        "coefficient_prime": 5,
+        "control_order": 16,
+        "control_polynomial": [
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "divisors": 4,
+        "hash_characteristic": 2,
+        "projection_cases": 11
+      },
+      {
+        "N": 12,
+        "all_divisors_have_singleton_handles": true,
+        "coefficient_prime": 5,
+        "control_order": 32,
+        "control_polynomial": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "divisors": 6,
+        "hash_characteristic": 2,
+        "projection_cases": 11
+      },
+      {
+        "N": 15,
+        "all_divisors_have_singleton_handles": true,
+        "coefficient_prime": 5,
+        "control_order": 16,
+        "control_polynomial": [
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "divisors": 4,
+        "hash_characteristic": 2,
+        "projection_cases": 10
+      },
+      {
+        "N": 35,
+        "all_divisors_have_singleton_handles": true,
+        "coefficient_prime": 5,
+        "control_order": 32,
+        "control_polynomial": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "divisors": 4,
+        "hash_characteristic": 2,
+        "projection_cases": 11
+      },
+      {
+        "N": 45,
+        "all_divisors_have_singleton_handles": true,
+        "coefficient_prime": 5,
+        "control_order": 32,
+        "control_polynomial": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "divisors": 6,
+        "hash_characteristic": 2,
+        "projection_cases": 11
+      },
+      {
+        "N": 49,
+        "all_divisors_have_singleton_handles": true,
+        "coefficient_prime": 5,
+        "control_order": 16,
+        "control_polynomial": [
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "divisors": 3,
+        "hash_characteristic": 2,
+        "projection_cases": 11
+      },
+      {
+        "N": 77,
+        "all_divisors_have_singleton_handles": true,
+        "coefficient_prime": 5,
+        "control_order": 32,
+        "control_polynomial": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "divisors": 4,
+        "hash_characteristic": 2,
+        "projection_cases": 11
+      },
+      {
+        "N": 105,
+        "all_divisors_have_singleton_handles": true,
+        "coefficient_prime": 5,
+        "control_order": 64,
+        "control_polynomial": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "divisors": 8,
+        "hash_characteristic": 2,
+        "projection_cases": 11
+      },
+      {
+        "N": 225,
+        "all_divisors_have_singleton_handles": true,
+        "coefficient_prime": 5,
+        "control_order": 128,
+        "control_polynomial": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "divisors": 9,
+        "hash_characteristic": 2,
+        "projection_cases": 11
+      },
+      {
+        "N": 231,
+        "all_divisors_have_singleton_handles": true,
+        "coefficient_prime": 5,
+        "control_order": 64,
+        "control_polynomial": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "divisors": 8,
+        "hash_characteristic": 2,
+        "projection_cases": 11
+      },
+      {
+        "N": 6,
+        "all_divisors_have_singleton_handles": true,
+        "coefficient_prime": 7,
+        "control_order": 16,
+        "control_polynomial": [
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "divisors": 4,
+        "hash_characteristic": 2,
+        "projection_cases": 11
+      },
+      {
+        "N": 12,
+        "all_divisors_have_singleton_handles": true,
+        "coefficient_prime": 7,
+        "control_order": 32,
+        "control_polynomial": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "divisors": 6,
+        "hash_characteristic": 2,
+        "projection_cases": 11
+      },
+      {
+        "N": 15,
+        "all_divisors_have_singleton_handles": true,
+        "coefficient_prime": 7,
+        "control_order": 16,
+        "control_polynomial": [
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "divisors": 4,
+        "hash_characteristic": 2,
+        "projection_cases": 10
+      },
+      {
+        "N": 35,
+        "all_divisors_have_singleton_handles": true,
+        "coefficient_prime": 7,
+        "control_order": 32,
+        "control_polynomial": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "divisors": 4,
+        "hash_characteristic": 2,
+        "projection_cases": 11
+      },
+      {
+        "N": 45,
+        "all_divisors_have_singleton_handles": true,
+        "coefficient_prime": 7,
+        "control_order": 32,
+        "control_polynomial": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "divisors": 6,
+        "hash_characteristic": 2,
+        "projection_cases": 11
+      },
+      {
+        "N": 49,
+        "all_divisors_have_singleton_handles": true,
+        "coefficient_prime": 7,
+        "control_order": 16,
+        "control_polynomial": [
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "divisors": 3,
+        "hash_characteristic": 2,
+        "projection_cases": 11
+      },
+      {
+        "N": 77,
+        "all_divisors_have_singleton_handles": true,
+        "coefficient_prime": 7,
+        "control_order": 32,
+        "control_polynomial": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "divisors": 4,
+        "hash_characteristic": 2,
+        "projection_cases": 11
+      },
+      {
+        "N": 105,
+        "all_divisors_have_singleton_handles": true,
+        "coefficient_prime": 7,
+        "control_order": 64,
+        "control_polynomial": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "divisors": 8,
+        "hash_characteristic": 2,
+        "projection_cases": 11
+      },
+      {
+        "N": 225,
+        "all_divisors_have_singleton_handles": true,
+        "coefficient_prime": 7,
+        "control_order": 128,
+        "control_polynomial": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "divisors": 9,
+        "hash_characteristic": 2,
+        "projection_cases": 11
+      },
+      {
+        "N": 231,
+        "all_divisors_have_singleton_handles": true,
+        "coefficient_prime": 7,
+        "control_order": 64,
+        "control_polynomial": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "divisors": 8,
+        "hash_characteristic": 2,
+        "projection_cases": 11
+      }
+    ],
+    "colliding_scalar_one_negative_control": {
+      "N": 12,
+      "actual_bucket": [
+        1,
+        2,
+        4
+      ],
+      "bucket": 1,
+      "candidate_a": 7,
+      "candidate_b": 9,
+      "coefficient_prime": 2,
+      "multiplication_rejects": true,
+      "product": 63,
+      "t": 1
+    },
+    "independent_transfer_matrix_cases": 7614,
+    "isolated_divisors": 224,
+    "projection_cases": 452
+  },
+  "scope": "Exact finite identities; not a space benchmark or a faster factoring evaluator.",
+  "spare_carry_codec": {
+    "carry_transitions": 22102,
+    "control_bits_fit_without_increasing_original_width": true,
+    "packed_carry_control_values": 392
+  },
+  "status": "passed"
+}
