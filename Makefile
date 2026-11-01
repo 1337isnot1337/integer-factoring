@@ -1989,3 +1989,11 @@ verify-pole-cauchy-rational-blocks:
 	python3 tools/check_pole_cauchy_repeated_poles.py --output /tmp/integer-factoring-pole-cauchy-repeated-poles.json
 	python3 tools/check_pole_cauchy_quadratic_selectors.py --output /tmp/integer-factoring-pole-cauchy-quadratic-selectors.json
 	python3 tools/check_pole_cauchy_residue_blocks.py --output /tmp/integer-factoring-pole-cauchy-residue-blocks.json
+
+.PHONY: verify-coherent-boundary-floor
+verify-coherent-boundary-floor:
+	python3 tools/check_coherent_boundary_protected_floor.py --recompute-profiles
+
+.PHONY: verify-coherent-f4-boundary
+verify-coherent-f4-boundary:
+	python3 tools/check_coherent_f4_boundary.py --catalogue evidence/coherent-f4-boundary-orbits.json

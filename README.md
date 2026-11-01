@@ -116,6 +116,18 @@ a construction variable. A [complete letter-gauge cone](research/coherent-shared
 also permits negative potentials while charging both profile changes and
 physical type costs. Six literal rational-gauge cut profiles and all sixteen
 four-mode quotient maps are independently checked.
+
+The [protected lower-space theorem](research/coherent-boundary-protected-floor.md)
+proves a natural common-scale pressure infimum of at least **`17/24`**
+for every homogeneous height-16 boundary retraction retaining the 28 lower
+coordinate states, over every characteristic-two field and every common
+physical type. This is already above `1/sqrt(2)`.
+The [F4 boundary evaluator](research/coherent-f4-boundary.md) retains an exact
+partial catalogue of 153 symmetry representatives covering 530 projectors;
+152 profile pairs are strictly worse than the binary reference at every scale.
+The run stopped once the structural theorem excluded a scoring improvement
+from the entire family. Run
+`make verify-coherent-boundary-floor verify-coherent-f4-boundary`.
 <!-- coherent-compound-checkpoint:end -->
 
 The [quadratic-parity Walsh construction](research/bell-walsh-constructions.md)
@@ -149,7 +161,8 @@ and stronger coefficient-rank estimates remain outside that obstruction.
 The [four-axis shared-minor proof](research/four-axis-gaussian-profile-floor.md)
 excludes the corresponding homogeneous Gaussian profile target. Its
 [weighted extension](research/weighted-four-axis-gaussian-profile-floor.md)
-also covers arbitrary coupled modes, common subalphabets and types, and
+bounds the full ambient profile estimate for arbitrary coupled modes,
+common subalphabets and types, and
 vertex-dependent additive degree caps, including nonhomogeneous entries.
 The [general shared-minor budgets](research/multiaxis-gaussian-profile-floor.md)
 exclude the common-scale unweighted degree-cap criterion through eight axes.
