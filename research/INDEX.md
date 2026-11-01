@@ -212,6 +212,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Binary scalar projection and a complete fused coefficient envelope](fused-scalar-projection-envelope.md): exhaustive rank-span separation excludes every binary decomposition in the 21-dimensional symmetric two-copy space, with an independent affine-hyperplane replay.
 - [A primary-character code bounds every unprojected tensor length](fused-primary-character-code.md): weighted distance three tensorizes to an opposite-cut rank bound for every nonzero coefficient recombination and a uniform `rho>=3/4` obstruction before scalar or physical projection.
 - [An energy-refined Newton ceiling for arbitrary rational gauges](joint-graded-newton-ceiling.md): block-scalar characteristic coefficients bound every zero Smith prefix over all characteristic-two fields, without restrictions on gauge degree or distinguished-place poles; attainability and opposite-cut costs remain open.
+- [Zero-loop reachability and a coupled two-place pencil](joint-zero-rational-loops.md): an all-field affine/Frobenius contradiction excludes zero orders `(8,10)` for any square-zero simple-pole energy move, while an exact eleven-parameter pencil couples the two distinguished finite places.
 
 - [Exact F4 regular row fibers](colored-regular-row-fibers.md): nonbinary polynomial row operations preserve a common binary affine floor, allowing exact compressed F4 synthesis with complete coefficient windows and literal untruncated tensor replays.
 

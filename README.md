@@ -951,6 +951,13 @@ reveals characteristic-polynomial invariants hidden by cancellations in
 the ordinary characteristic polynomial. The exact ceiling still leaves
 room to improve the current zero profile; its attainability and the effect
 on the infinity cut remain open. Run `make verify-joint-graded-newton`.
+The [zero-loop reachability theorem](research/joint-zero-rational-loops.md)
+rules out improving zero orders `(8,9)` to `(8,10)` with any square-zero
+simple-pole energy gauge over any characteristic-two field. Exact affine
+and Frobenius elimination allows the leading rank-one coefficient to
+change. The same note constructs an eleven-parameter polynomial pencil
+coupling modifications at zero and one; its first finite profiles remain
+uncompetitive. Run `make verify-joint-zero-prefix`.
 
 The [group-shear extension](research/group-shear-crossings.md) implements
 the swap through three multiplication/division shears over any finite
