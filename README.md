@@ -310,6 +310,9 @@ product 2304; that finite block cannot improve the rate. Run
 The [spin-zero jet identities](research/bounded-spin-three-jets.md)
 hold at every length and bound the coefficient span by `n-2` for even
 `n>=6`; ordinary cut-rank growth remains open.
+A [direct orthogonal-group argument](research/four-qubit-orthogonal-generators.md)
+now supplies the degree `2,4,4,6` four-qubit generators in characteristic
+five, with explicit restrictions to the pencil. It supplies no cut-rank bound.
 An [enlarged six-vertex construction](research/bounded-spin-six-vertex.md)
 exposes the complete monomial span with degree `O(n^2)` and the same
 strict endpoint. At eight sites it adds a seventh tensor direction;
