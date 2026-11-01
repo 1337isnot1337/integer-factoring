@@ -60,6 +60,20 @@ rechecking the live branch SHA immediately before deletion. Preserve local
 worktrees and ongoing work. Do not delete branches as part of routine PR
 merging unless they are demonstrably unused.
 
+GitHub's automatic head-branch deletion is enabled for merged PRs. The
+[branch cleanup workflow](../.github/workflows/cleanup-branches.yml) also runs
+every six hours to remove remote branches whose exact tips are ancestors of
+the current default branch and whose latest commits are at least 24 hours old.
+It preserves the default branch, protected branches, and all open PR heads and
+bases. It rechecks live tips and PR references, then uses an atomic push with
+exact SHA leases so concurrent updates abort deletion. Unique unmerged commits
+are retained; squash-merged branches are handled by GitHub's merge setting.
+Local branches, worktrees, and uncommitted files are outside this automation.
+
+Preview with `python3 tools/cleanup_branches.py`; add `--apply` to delete.
+The workflow's manual Run workflow button previews by default; check `apply`
+to delete eligible branches. Both commands require authenticated Git and `gh`.
+
 This workflow adapts the contribution, exact-head review, scoped-result, and
 credit practices of
 [CrocSwap/integer-mult-bounds at `2485805a`](https://github.com/CrocSwap/integer-mult-bounds/blob/2485805a6d47f36ea83ddde6327d453ac82d44dc/CONTRIBUTING.md).
