@@ -192,3 +192,10 @@ axis results using the new cold-tail lemma and a quantified Bregman
 partition deficit. Directed by Cinna Davis / 1337isnot1337 with
 substantial OpenAI assistant support. No new Lean, external novelty
 claim, or complete factoring improvement is asserted.
+
+The subsequent [approximate rational strictification](approximate-rational-strictification.md)
+also excludes a negative axis margin for scalar rational kernels over finite
+fields when every paired-type word is globally Laurent-regular. That
+corollary charges and removes their extra poles. Arbitrary rational poles,
+selected-type-only constructions and matrix auxiliaries are not assumed
+to satisfy those hypotheses.

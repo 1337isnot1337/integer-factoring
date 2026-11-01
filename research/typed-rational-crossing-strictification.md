@@ -1,5 +1,12 @@
 # Typed rational scalar crossings reduce to strict crossings without a pressure change
 
+The later [approximate extension](approximate-rational-strictification.md)
+also treats other finite poles when every paired-type word is globally
+Laurent-regular. It uses weak potentials, Frobenius rounding and a bounded
+charged correction; negative pressure witnesses survive, although finite-D
+pressure is no longer identical. The exact theorem below retains its
+original endpoint-pole hypotheses.
+
 ## Result and scope
 
 Let K be a finite scalar rational crossing kernel over a field of positive
