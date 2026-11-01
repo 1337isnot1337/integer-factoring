@@ -1,0 +1,94 @@
+{
+  "absolute_precision_control": {
+    "absolute_error_bits": 4,
+    "circuit_sha256": "5da4b4c535e9a77db8871df11cfc93e6e3ed6b08e28ab4e80b6c38177bdba617",
+    "matrix_dimension": 16,
+    "number": 105,
+    "precision": 14,
+    "quotient_degree": 13,
+    "result": {
+      "circuit_nodes": 47,
+      "precision": 14,
+      "quotient_degree": 13,
+      "reduced_terms": 64,
+      "residue": [
+        6496,
+        6496
+      ],
+      "scale_exponent": -10
+    }
+  },
+  "binary_large_denominator_control": {
+    "minimum_denominator_bits": 3213876088517980551083924184682325205044405987565585670602550,
+    "odd_row_count": 1606938044258990275541962092341162602522202993782792835301376
+  },
+  "cardinal_polynomial_value_checks": 341,
+  "exact_matrix_instances": 48,
+  "genuinely_compressed_instances": 24,
+  "implicit_complete_cycle_control": {
+    "circuit_sha256": "dfcb748b18f5f1ecd67e212de886eb5a966e929aabb252ca144e37d39372db0a",
+    "column_exponent_bits": 145,
+    "context_sha256": "0acce8aa6fe3056aff9b34f5468f012f6be9337fe907570c480e221a0d70e63f",
+    "independent_remainder_dimension": 3,
+    "matrix_dimension": 1267650600228229401496703205379,
+    "number_bits": 202,
+    "result": {
+      "circuit_nodes": 284,
+      "precision": 16,
+      "quotient_degree": 15,
+      "reduced_terms": 223,
+      "residue": [
+        65322,
+        65322
+      ],
+      "scale_exponent": -211
+    },
+    "row_exponent_bits": 129
+  },
+  "integer_step_two_difference_checks": 128,
+  "literal_inverse_circuit_comparisons": 144,
+  "schema": 1,
+  "scope": "Polynomial-circuit inverse moments; no factoring-bound improvement",
+  "sharp_denominator_rows": [
+    {
+      "minimum_denominator_bits": 0,
+      "odd_row_count": 1
+    },
+    {
+      "minimum_denominator_bits": 1,
+      "odd_row_count": 2
+    },
+    {
+      "minimum_denominator_bits": 4,
+      "odd_row_count": 4
+    },
+    {
+      "minimum_denominator_bits": 11,
+      "odd_row_count": 8
+    },
+    {
+      "minimum_denominator_bits": 26,
+      "odd_row_count": 16
+    },
+    {
+      "minimum_denominator_bits": 57,
+      "odd_row_count": 32
+    },
+    {
+      "minimum_denominator_bits": 120,
+      "odd_row_count": 64
+    },
+    {
+      "minimum_denominator_bits": 247,
+      "odd_row_count": 128
+    },
+    {
+      "minimum_denominator_bits": 502,
+      "odd_row_count": 256
+    },
+    {
+      "minimum_denominator_bits": 1013,
+      "odd_row_count": 512
+    }
+  ]
+}

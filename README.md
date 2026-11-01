@@ -58,6 +58,19 @@ rational-rank selection. Exact 92/124/144-bit controls use 81,430 / 1,391,826 /
 inequalities, and integer eliminations are replayed. Uniform admissibility
 and reached-key bounds remain open. Run `make verify-cofactor-ideal-closure`.
 
+[Prime-cofactor saturation](research/prime-cofactor-saturation.md) further
+promotes certified residual primes into the smoothness product. For a cap at
+most `Y^2`, roughness itself proves primality, so this step needs no primality
+test. The algorithm retains exact dominance and integer elimination through a
+definition DAG. On matched 92/124/144-bit controls, all-promotion uses
+54,584 / 807,221 / 2,246,996 norm queries. Its larger saturation product can
+make it slower; selective promotion trades queries against product size.
+All retained identities and elimination rows are independently replayed.
+The [cyclic-subgroup moment criterion](research/cofactor-orbit-moment-criterion.md)
+states a precise sufficient uniform lower-tail hypothesis for the remaining
+window-hitting problem. The finite moment controls do not prove that hypothesis.
+Run `make verify-prime-cofactor-saturation`.
+
 <!-- cofactor-collision-checkpoint:end -->
 
 <!-- coherent-compound-checkpoint:start -->
@@ -129,6 +142,14 @@ construct the whole product over that state family modulo `2^p` with
 `O(n+p)` ordinary arithmetic nodes and polynomial generation cost.
 The unit-trace evaluator is exact; the singular factor-count normalization
 remains unresolved. Run `make verify-bilinear-pole-packets`.
+The [circuit moment theorem](research/pole-cauchy-circuit-moments.md) extends
+inverse contractions to division-free polynomial circuits of unrestricted
+degree, using a quotient algebra of dimension polynomial in precision.
+The [rational resolvent theorem](research/pole-cauchy-rational-resolvents.md)
+computes complete two-axis contractions from four normalized affine products,
+including even integer denominators. A polynomial combination that recovers
+the factor-count scalar remains unconstructed. Run
+`make verify-pole-cauchy-circuit-moments verify-pole-cauchy-resolvents`.
 The [Cauchy content-slope reduction](research/pole-cauchy-content.md) gives
 a second global target using two implicit determinant contents, with cheap
 padding and explicit Vandermonde normalization.

@@ -1909,3 +1909,23 @@ verify-pole-cauchy-analytic:
 .PHONY: verify-pole-cauchy-domains
 verify-pole-cauchy-domains:
 	python3 tools/check_pole_cauchy_domain_precision.py --output /tmp/integer-factoring-pole-cauchy-domain-precision.json
+
+.PHONY: verify-pole-cauchy-circuit-moments
+verify-pole-cauchy-circuit-moments:
+	python3 tools/check_pole_cauchy_circuit_moments.py
+
+.PHONY: verify-pole-cauchy-resolvents
+verify-pole-cauchy-resolvents:
+	python3 tools/check_pole_cauchy_rational_resolvents.py
+
+.PHONY: verify-prime-cofactor-saturation
+verify-prime-cofactor-saturation:
+	python3 tools/check_prime_cofactor_saturation.py --output /tmp/integer-factoring-prime-cofactor-saturation.json
+	python3 tools/check_prime_cofactor_saturation.py --replay evidence/prime-cofactor-saturation-92.json
+	python3 tools/check_prime_cofactor_saturation.py --replay evidence/prime-cofactor-saturation-124.json
+	python3 tools/check_prime_cofactor_saturation.py --replay evidence/prime-cofactor-saturation-144.json
+	python3 tools/check_prime_cofactor_saturation.py --replay evidence/prime-cofactor-saturation-selective-144.json
+
+.PHONY: verify-cofactor-orbit-moments
+verify-cofactor-orbit-moments:
+	python3 tools/check_cofactor_orbit_moments.py --output /tmp/integer-factoring-cofactor-orbit-moments.json

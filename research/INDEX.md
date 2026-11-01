@@ -18,6 +18,8 @@
 
 ## Exact pole-Cauchy algorithms
 
+- [Unrestricted-degree circuit inverse moments](pole-cauchy-circuit-moments.md): a small quotient algebra evaluates every division-free polynomial circuit weight; a sharp finite-difference bound explains the denominator cost of entrywise factor interpolation.
+- [Normalized rational inverse resolvents](pole-cauchy-rational-resolvents.md): four affine products evaluate complete rational contractions at polynomial absolute precision, without a rectangle-separation assumption; the final factoring scalar remains open.
 - [Complete bilinear pole-product packets](bilinear-pole-packets.md): global polynomial circuits modulo `2^p` with `O(n+p)` arithmetic nodes, polynomial generation, and full unit traces; singular factor-count normalization remains open.
 - [Explicit residue-flow profiles](pole-smith-residue-flow.md): every Smith order in `(r+s) poly(b)` bit operations on explicit node lists, without constructing the matrix.
 - [Balanced overlap spectra](pole-smith-overlap-spectrum.md): one tree pass gives the full histogram; power-of-two padding gives a diagonal Smith formula.
@@ -1032,3 +1034,8 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 - [The sharp precision cost of analytic residue selectors](regular-analytic-selector-precision.md)
 
 - [Polynomial precision for explicit unions of odd arithmetic progressions](pole-cauchy-domain-precision.md)
+
+## Dynamic prime saturation and uniform hitting criteria
+
+- [Prime-cofactor saturation with exact integer elimination](prime-cofactor-saturation.md)
+- [Cyclic-subgroup lower-tail moments force every shifted window to hit](cofactor-orbit-moment-criterion.md)
