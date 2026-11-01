@@ -597,8 +597,10 @@ original pole bound into 12 effective tensors; both profiles are
 dominated by the reference at every scale. A subsequent all-field
 classification also closes every energy-projector modification at
 every positive depth under the stated conditions; the only four
-projectors preserve the tensor. Interacting subspaces and other
-finite places remain open. Run `make verify-joint-monomial-lattices`
+projectors preserve the tensor. The one-step infinity conditions alone
+also close every normalized scalar multiplier `f(t)=t+O(1)`.
+Interacting subspaces and rational changes of degree zero at infinity
+remain open. Run `make verify-joint-monomial-lattices`
 and `make verify-joint-projector-lattices`.
 
 The [group-shear extension](research/group-shear-crossings.md) implements

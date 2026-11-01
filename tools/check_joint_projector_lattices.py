@@ -132,12 +132,14 @@ def certificate():
     cold_next = sum(((data['operator'][r][c][0] >> 1) & 1) << (N*r+c) for r in range(N) for c in range(N))
     initial = [1 << (N*r+c) for r, c in data['positions']]
     cases = []
-    for label in ('depth_one_with_leading_rank', 'depth_at_least_two_without_leading_rank'):
+    for label in ('depth_one_with_leading_rank', 'depth_at_least_two_without_leading_rank',
+                  'depth_one_infinity_only_with_leading_rank'):
         basis, stages = initial[:], []
         while True:
             size = len(basis)
-            blocks, quadratic_monomials = quadratic_system(basis, cold, c0, c1)
-            if label == 'depth_one_with_leading_rank':
+            blocks, quadratic_monomials = quadratic_system(
+                basis, 0 if label == 'depth_one_infinity_only_with_leading_rank' else cold, c0, c1)
+            if label != 'depth_at_least_two_without_leading_rank':
                 polynomials = reduced_polynomials(blocks, quadratic_monomials, c0)
             else:
                 second, other_monomials = quadratic_system(basis, cold_next, c1, 0)
@@ -162,7 +164,9 @@ def certificate():
         cases.append(dict(label=label, stages=stages, terminal_basis=basis))
     assert [s['input_dimension'] for s in cases[0]['stages']] == [69, 13, 2]
     assert [s['input_dimension'] for s in cases[1]['stages']] == [69, 33, 10, 3, 2]
+    assert [s['input_dimension'] for s in cases[2]['stages']] == [69, 14, 2]
     assert binary_rank(cases[0]['terminal_basis']+basis) == 2
+    assert binary_rank(cases[1]['terminal_basis']+basis) == 2
     assert basis[0] ^ basis[1] == IDENTITY
     assert all(binary_product(a, a) == a for a in basis)
     assert binary_product(basis[0], basis[1]) == binary_product(basis[1], basis[0]) == 0
@@ -180,7 +184,7 @@ def certificate():
                                for name in ('check_joint_projector_lattices.py', 'check_joint_energy_riccati.py',
                                             'joint_energy_conjugations.py', 'check_joint_leading_tangent.py',
                                             'search_f4_recentered_crossings.py')},
-                scope='Every energy-block idempotent over every characteristic-two field and every positive integer depth k; U=t^k P+(I-P) must preserve polynomiality and no infinity pole below -8. Only depth one needs the rank-one leading condition.',
+                scope='Every energy-block idempotent over every characteristic-two field. All positive depths preserve polynomiality and the pole bound; depth one requires leading rank one. The infinity-only depth-one theorem also covers every scalar rational f(t)=t+O(1), without a polynomiality assumption.',
                 conclusion='Exactly four projectors: zero, identity, and the two neutral coordinate support-component projections. Every resulting tensor is the reference.',
                 factoring_exponent='1/2; unchanged')
 
