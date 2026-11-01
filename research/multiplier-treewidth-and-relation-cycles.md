@@ -143,12 +143,28 @@ With `ell = 2n`, the bound is `tw >= ell/240 - O(1)`. That is
 the transforms, twiddles, pointwise products and carry recovery look like
 inside.
 
-Scope caveat: I did not inspect the upstream Lean sources. The claim applies
-if x and y occur as binary variables and N enters only as pinned product
-bits, which is how the repository notes describe the circuit ("canonical-word
-checks", "coefficient/carry recovery"). If x or y exist only in transform
-coordinates, T1 needs a re-check (CONJECTURE: the same bound holds whenever
-the binary x is recoverable by local constraints).
+Original PR scope caveat: its author did not inspect the upstream Lean
+sources. The claim applies if x and y occur as binary variables and N enters
+only as pinned product bits, which is how the repository notes describe the
+circuit ("canonical-word checks", "coefficient/carry recovery"). If x or y
+exist only in transform coordinates, T1 needs a re-check (CONJECTURE: the
+same bound holds whenever the binary x is recoverable by local constraints).
+
+### Later source-specific application to RiemannGaussian D1
+
+A separate source audit at the pinned upstream commit
+[`f5fd3ddb407972f9ca65298fbe9be3225fe06635`](https://github.com/dbsanfte/RiemannGaussian/tree/f5fd3ddb407972f9ca65298fbe9be3225fe06635)
+resolves this caveat for the current D1 network. Its two operands are explicit
+input digit words; the target digits of `N` occur only in separate local carry
+factors. The uniform arithmetic-network equivalence exposes those target
+digits as product variables, and each such bit is simplicial in a factor of
+arity `O(sqrt(ell))`. Since the operand width is `ell` and the target provides
+at least `2*ell` product bits, T1.1 gives `Omega(ell)` treewidth after these
+local output bits are pinned. The exact source mapping and its limitations are
+recorded in
+[`riemann-gaussian-semiprime-source-audit.md`](riemann-gaussian-semiprime-source-audit.md).
+This is a treewidth statement about the D1 representation, not a factoring
+lower bound and not an obstruction to structured contraction.
 
 ### Upper bound and growth (PROVEN / VERIFIED)
 

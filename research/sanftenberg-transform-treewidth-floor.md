@@ -130,10 +130,17 @@ twiddle multiplication.
 The root-four twiddles do simplify at bit level: they are signed cyclic
 rotations with carry normalization, as derived in
 [`sanftenberg-root-four-bit-circuits.md`](sanftenberg-root-four-bit-circuits.md).
-The unresolved issue is the separator for the *whole* circuit, especially
-its pointwise variable products and coefficient/carry recovery. Only a
-sub-`ell/sqrt(log ell)` contraction cost could improve the score; the
-dense-table models above cannot cross that threshold.
+The later generic multiplier theorem in
+[`multiplier-treewidth-and-relation-cycles.md`](multiplier-treewidth-and-relation-cycles.md)
+rules out sublinear treewidth for whole bit-variable multiplication networks
+with explicit operand and product bits, even when the product is then pinned
+to `N`. The source audit in
+[`riemann-gaussian-semiprime-source-audit.md`](riemann-gaussian-semiprime-source-audit.md)
+checks that the current D1 carry-target representation satisfies those
+hypotheses. The remaining open evaluator question is whether structured
+arithmetic contraction can exploit its local tables; this treewidth floor does
+not bound such evaluators or networks whose operands exist only in transform
+coordinates.
 
 No upstream code was copied and no Lean rebuild was run. This ordinary
 argument does not establish a stronger factoring exponent; the repository's
