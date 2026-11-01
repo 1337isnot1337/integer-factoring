@@ -46,9 +46,10 @@ particular profile violates the newer second-jet and higher-word constraints
 and cannot be a polynomial crossing. Section 6 retains it as an exact
 witness to the limits of the constraints proved here. The bare thirteen-letter
 criterion itself remains open. A later
-[replacement point](joint-bare-profile-feasibility.md) satisfies all combined
-declared constraints with exact formal rate below `7061/10000`; it is not
-an actual crossing.
+[replacement point](joint-bare-profile-feasibility.md) satisfies seven
+combined constraint families with exact formal rate below `7061/10000`,
+but the newer [box-adjugate composition](box-adjugate-word-caps.md) excludes
+it too. The bare thirteen-letter criterion itself remains open.
 
 This is a lower bound on one sufficient certificate. It is not a lower bound
 on actual coefficient ranks or on factoring time. Independent physical
@@ -376,8 +377,9 @@ The original profile and its formal pressure certificate are preserved.
 
 This rejects the recorded target, rather than proving a new universal
 thirteen-letter floor. A future construction proposal must first pass
-the combined constraints. The [replacement target](joint-bare-profile-feasibility.md)
-does pass them, but still has no polynomial realization. The historical
+the combined constraints. The [replacement point](joint-bare-profile-feasibility.md)
+passes the seven families tested there, but fails the subsequent
+[box-adjugate constraints](box-adjugate-word-caps.md). The historical
 staircase had:
 
 - a single leading channel in each cut;

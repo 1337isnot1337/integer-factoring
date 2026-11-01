@@ -1,5 +1,7 @@
 # Research index
 
+- [Box budgets on the word-controlled adjugate](box-adjugate-word-caps.md): all-field scalar bare constraints at every physical subalphabet, with complete polynomial controls; 52 oriented violations exclude the recorded q13 seven-family point. No universal q13 rate floor follows.
+
 - [A local order-five twist of the CSS crossing code](nonclifford-css-crossing.md): preserves rate, split and 32 one-site annihilations, while nonzero odd coefficients break the old Frobenius identity. All 6561 polynomials and 162 untruncated weighted orders pass independent checks; three registered fits remain above support one.
 
 - [A thirteen-letter global negation sector](negation-odd-qutrit-crossing.md): explicit F7 split crossing; exact early Toeplitz ranks give 70 and 169 orders at most four in degree nine, excluding its bare balanced rate at every scale. Higher orders and weighted criteria are not asserted.
@@ -329,7 +331,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 - [Coarsened grid check](coarsened-grid-validation.md): exact finite integration checks for signed network grouping, orientation, composite moduli, and padded clique tables.
 
-- [Bare criterion through twelve letters](bare-seven-to-twelve-letters.md): exact box-budget certificates give rho_bare>1/sqrt(2) for 7<=q<=12 at every degree and field, with fixed auxiliaries. The old thirteen-letter box witness violates newer jet constraints; a [replacement combined target](joint-bare-profile-feasibility.md) passes all declared families with formal rho below `7061/10000`, without a realizing tensor.
+- [Bare criterion through twelve letters](bare-seven-to-twelve-letters.md): exact box-budget certificates give rho_bare>1/sqrt(2) for 7<=q<=12 at every degree and field, with fixed auxiliaries. The old thirteen-letter witness fails newer jets; a [replacement point](joint-bare-profile-feasibility.md) passes seven families but fails the later [box-adjugate composition](box-adjugate-word-caps.md). No universal thirteen-letter floor is proved.
 
 - [Auxiliary binary gauge floor](auxiliary-binary-gauge-floor.md): the gauged binary floor extends to matrix-valued Laurent seeds of every fixed auxiliary dimension with independent rational auxiliary conjugation gauges at the two places, by dominating the rectangular Smith orders coordinatewise with a twisted scalar boundary contraction; an explicit seed shows that no constant contraction dominates at both places and that a boundary contraction `f^T K e` can have strictly larger pressure.
 

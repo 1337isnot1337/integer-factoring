@@ -2167,7 +2167,7 @@ The current ordinary-proof campaign establishes these scoped results:
 | Scope | Result and evidence |
 | --- | --- |
 | Bare ungauged local Smith profiles, every field and degree, fixed auxiliaries | [Degree budgets](research/all-degree-small-alphabet-smith-floor.md) and [shared minors](research/shared-minor-smith-floor.md) exclude a half-rate improvement through six letters. |
-| The same certificate on 7 through 12 letters | [Box-minor Kronecker budgets](research/bare-seven-to-twelve-letters.md) exclude a half-rate improvement through twelve letters. At 13 letters the old box witness fails newer jets, but a [replacement combined target](research/joint-bare-profile-feasibility.md) passes all declared families with exact formal rate below `7061/10000`; polynomial realization remains open. |
+| The same certificate on 7 through 12 letters | [Box-minor Kronecker budgets](research/bare-seven-to-twelve-letters.md) exclude a half-rate improvement through twelve letters. At 13 letters both recorded targets are excluded: the old point by newer jets, and the [seven-family replacement](research/joint-bare-profile-feasibility.md) by [box budgets applied to its adjugate](research/box-adjugate-word-caps.md). A universal thirteen-letter floor remains open. |
 | Scalar paths with a monomial column determinant | [Inverse-degree compatibility](research/inverse-degree-crossing-compatibility.md) rules out the formal seven-letter optimum at every integer ramification. |
 | Polynomial inverse paths on 7 through 10 letters | [Inverse-degree aspect bounds](research/inverse-degree-aspect-bounds.md) cap the useful degree; they also exclude all `2^31` binary level-weight assignments of the fixed nine-letter flag. |
 | Noncommuting quadratic-inverse constructions | A [general two-jet tradeoff and complete nine-letter schedule](research/nine-letter-quadratic-inverse-probe.md) show why suppressing order one alone fails; all 31 tested level choices are excluded at every scale. Other pencils remain open. |
@@ -2632,9 +2632,11 @@ rates below `7071/10000` and `707/1000`, both below `1/sqrt(2)`.
 Those formal rates cannot be realized by bare polynomial crossings. Run
 `make verify-q12-integer-word-target`; the factoring score remains **1/2**.
 
-The [combined thirteen-letter target](research/joint-bare-profile-feasibility.md)
-passes every declared box and cofactor family, with exact formal rate below
-`7061/10000`; it still needs an actual polynomial realization. One concrete
+The [historical combined thirteen-letter point](research/joint-bare-profile-feasibility.md)
+passes seven declared families, with exact formal rate below `7061/10000`,
+but the newer [box-adjugate word theorem](research/box-adjugate-word-caps.md)
+excludes it in 52 oriented checks, including `30588956>30576000`.
+One concrete
 [global negation-odd construction](research/negation-odd-qutrit-crossing.md)
 does preserve the thirteen-letter endpoint, but its retained early channels
 already exclude the bare balanced target at every scale. Neither result

@@ -626,6 +626,34 @@ Focused replay and documentation checks validate this finite audit. The
 separate full run at `d159502` predates this addition. No new Lean or
 independent mathematical review is claimed.
 
+## Box budgets applied to the word-controlled adjugate
+
+The [composition proof](../research/box-adjugate-word-caps.md) applies the
+earlier all-field box theorem to the scalar adjugate crossing. It uses the
+exact complement profile at one place and the higher-word lower profile
+at the other, including physical restrictions and positive minima. The
+[receipt](../evidence/box-adjugate-word-controls.json) retains twelve actual
+controls, all 322 complete cofactor polynomials, coefficientwise adjugate
+identities, 232 complete source/adjugate orders, 192 composed checks and
+84 literal box checks. A new `7 by 13` inequality excludes the historical
+seven-family q13 point: `30588956>30576000`, among 52 violations. Original
+point data and formal rate proofs are preserved; their earlier successful
+checks concerned a smaller relaxation. No universal q13 floor or stronger
+complete factoring bound follows. Focused replay and docs checks are the
+local gate; no Lean or independent mathematical review is claimed.
+
+## Exact q13 integration replay at `07faf95`
+
+A clean frozen checkout of `07faf95b002c6c7232ec178c6ba28000a60825c1`,
+tree `9f13800052975bd9ed8cc02a7c572bd435f58d0c`, passed the default suite
+in 726.20 seconds and the q13 historical-target, combined-target and
+negation-sector focused targets in 32.68 seconds. Its
+[receipt](../evidence/verify-q13-integration-07faf95.json) and
+[complete compressed log](../evidence/verify-q13-integration-07faf95.stdout.txt.xz)
+record clean pre-run/post-run status and exact commands. This predates
+the code twist, peer bit-circuit additions and new box-adjugate constraints;
+their later checks remain separate. No new Lean is included.
+
 ## Combined thirteen-letter necessary-profile target
 
 The [replacement target](../research/joint-bare-profile-feasibility.md) at

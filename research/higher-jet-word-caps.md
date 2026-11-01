@@ -9,9 +9,13 @@ restriction and restoration of its minima.
 
 These necessary conditions exclude the twelve-letter point that survives
 the [preceding linear and second-jet checks](inherited-second-jet-caps.md#5-a-successor-point-survives-the-declared-nonlinear-checks).
-They do not exclude every twelve-letter crossing or improve the factoring
-score **1/2**. The existing uniform bare coverage remains through eleven
-letters until a further entropy argument is supplied.
+These word conditions alone do not exclude every twelve-letter crossing
+or improve the factoring score **1/2**. The separate earlier
+[box-budget entropy certificates](bare-seven-to-twelve-letters.md) already
+give uniform bare coverage through twelve letters. The later
+[historical thirteen-letter point](joint-bare-profile-feasibility.md) passes
+both those original budgets and the word conditions, but the subsequent
+[box-adjugate composition](box-adjugate-word-caps.md) excludes it.
 
 ## 1. The integral low-jet identity
 

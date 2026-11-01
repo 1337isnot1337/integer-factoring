@@ -2303,6 +2303,10 @@ verify-negation-odd-qutrit:
 verify-nonclifford-css:
 	python3 tools/check_nonclifford_css_crossing.py
 
+.PHONY: verify-box-adjugate-words
+verify-box-adjugate-words:
+	python3 tools/check_box_adjugate_word_caps.py
+
 .PHONY: verify-multiaxis-cube
 verify-multiaxis-cube:
 	python3 tools/check_multiaxis_cube_transfer.py

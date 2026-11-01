@@ -1,5 +1,5 @@
 {
-  "scope": "Exact q13 necessary-profile target, not an actual polynomial crossing or factoring improvement.",
+  "scope": "Historical q13 point passes its original seven families but is excluded by later box-adjugate word constraints; formal rate only.",
   "alphabet": 13,
   "degree": 2000,
   "profile_length": 169,
@@ -33,6 +33,12 @@
       "compiled_checks": 8918,
       "minimum_slack": "592",
       "identical_orientations": true
+    },
+    "later_box_adjugate_word": {
+      "status": "excluded",
+      "oriented_checks": 1816,
+      "violated_checks": 52,
+      "minimum_slack": -12956
     }
   },
   "exact_rate_certificate": {
@@ -50,7 +56,7 @@
   "original_square_box_adjugates": "pass",
   "input_sha256": "7154167176722e0dd8568107ca13133abe9be34d282d2b033c94964bbce5bcab",
   "source_sha256": {
-    "tools/check_q13_joint_word_target.py": "73f533fdbf2f415c76d6e7eb014d45543c795dbe39fc0fbf600b6a06cb6941f4",
+    "tools/check_q13_joint_word_target.py": "284e338029f8ae214b6ac163c6dde96c4c4c2d6e9db5273061addb5c09eb36b8",
     "tools/check_bare_seven_to_twelve_letters.py": "d1b0df7e2fd1c39715c0511440f8f0732d0f15d1a16d2520cbce2eb9fd1418f6",
     "tools/check_cell_minor_caps.py": "92856996bc0fb7e213e5228e1697d2f1cfb5727e10a9e572c764731114e2f6bc",
     "tools/charged_gaussian_floor.py": "5321193eda456b922ae947f55a492de675de2d08a90ccb2a87a0fd89a60805cc",
@@ -58,6 +64,7 @@
     "tools/higher_jet_word_caps.py": "63521f298b00324d49d9f3cb78d37be88698a67949d41d13085794d851d663cc",
     "tools/inherited_second_jet_caps.py": "3407c44bda2796daabc957cf0653077c034ba4c1f16019debf7dfc9c26d77231",
     "tools/multichannel_cofactor_caps.py": "f0561973de6ff525674c7b52621221788bd8e32d45dc2b09c8d286b39b5df358",
-    "tools/rectangular_adjugate_jet_caps.py": "d59773c82318246f10bde91158dbf84a77daab62ac27481e43a0d48baf47075f"
+    "tools/rectangular_adjugate_jet_caps.py": "d59773c82318246f10bde91158dbf84a77daab62ac27481e43a0d48baf47075f",
+    "tools/box_adjugate_word_caps.py": "b1cc269a814ca44c14cf54476e6b2ad8bc4c6e04b6c0714c5ee842795c19f506"
   }
 }
