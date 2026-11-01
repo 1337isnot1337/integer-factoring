@@ -1,0 +1,205 @@
+{
+  "source_sha256": {
+    "check_witt_interfaces.py": "10662fbb97c69c4ce45796734018b641f682724f6dd40cdfb3c36ad123e0ceda",
+    "witt_artin_hasse.py": "fc9f0ce07f635c34e1fd6d87c06e2e702c8d19cd90c504f31af1b6955c4d3176",
+    "witt_exchange_jets.py": "c1b0d0a0f09970f32b5de2d85e98799b1ce32f10da48d91640bc7e89ad5b66de",
+    "weighted_energy_pencil.py": "3e20d8fb04e37ea8b65de0fb08c44e9312441c8e5a9b49d78c382148bb1cd6eb",
+    "check_modular_crossing.py": "3422aa9dba53f475551943df76c7a2419c1eefa0b37cc67562a56c4b812cacae"
+  },
+  "checked_grades": [
+    {
+      "h": 1,
+      "dimension": 1,
+      "hall_gram_rank": 1,
+      "charged_vacuum_rank": 1,
+      "neutral_vacuum_rank": 1
+    },
+    {
+      "h": 2,
+      "dimension": 2,
+      "hall_gram_rank": 2,
+      "charged_vacuum_rank": 2,
+      "neutral_vacuum_rank": 2
+    },
+    {
+      "h": 3,
+      "dimension": 2,
+      "hall_gram_rank": 2,
+      "charged_vacuum_rank": 2,
+      "neutral_vacuum_rank": 2
+    },
+    {
+      "h": 4,
+      "dimension": 4,
+      "hall_gram_rank": 4,
+      "charged_vacuum_rank": 4,
+      "neutral_vacuum_rank": 4
+    },
+    {
+      "h": 5,
+      "dimension": 4,
+      "hall_gram_rank": 4,
+      "charged_vacuum_rank": 4,
+      "neutral_vacuum_rank": 4
+    },
+    {
+      "h": 6,
+      "dimension": 6,
+      "hall_gram_rank": 6,
+      "charged_vacuum_rank": 6,
+      "neutral_vacuum_rank": 6
+    },
+    {
+      "h": 7,
+      "dimension": 6,
+      "hall_gram_rank": 6,
+      "charged_vacuum_rank": 6,
+      "neutral_vacuum_rank": 6
+    },
+    {
+      "h": 8,
+      "dimension": 10,
+      "hall_gram_rank": 10,
+      "charged_vacuum_rank": 10,
+      "neutral_vacuum_rank": 10
+    },
+    {
+      "h": 9,
+      "dimension": 10,
+      "hall_gram_rank": 10,
+      "charged_vacuum_rank": 10,
+      "neutral_vacuum_rank": 10
+    },
+    {
+      "h": 10,
+      "dimension": 14,
+      "hall_gram_rank": 14,
+      "charged_vacuum_rank": 14,
+      "neutral_vacuum_rank": 14
+    },
+    {
+      "h": 11,
+      "dimension": 14,
+      "hall_gram_rank": 14,
+      "charged_vacuum_rank": 14,
+      "neutral_vacuum_rank": 14
+    },
+    {
+      "h": 12,
+      "dimension": 20,
+      "hall_gram_rank": 20,
+      "charged_vacuum_rank": 20,
+      "neutral_vacuum_rank": 20
+    },
+    {
+      "h": 13,
+      "dimension": 20,
+      "hall_gram_rank": 20,
+      "charged_vacuum_rank": 20,
+      "neutral_vacuum_rank": 20
+    },
+    {
+      "h": 14,
+      "dimension": 26,
+      "hall_gram_rank": 26,
+      "charged_vacuum_rank": 26,
+      "neutral_vacuum_rank": 26
+    },
+    {
+      "h": 15,
+      "dimension": 26,
+      "hall_gram_rank": 26,
+      "charged_vacuum_rank": 26,
+      "neutral_vacuum_rank": 26
+    },
+    {
+      "h": 16,
+      "dimension": 36,
+      "hall_gram_rank": 36,
+      "charged_vacuum_rank": 36,
+      "neutral_vacuum_rank": 36
+    }
+  ],
+  "full_rank_gram_checks": 16,
+  "full_rank_vacuum_checks": 32,
+  "length_unitriangular_maps": 32,
+  "strict_length_increasing_entries": 1487,
+  "independent_integer_determinants": 12,
+  "artin_hasse_euler_product_coefficient_checks": 33,
+  "charged_and_neutral_exchange": [
+    {
+      "neutral": false,
+      "energy_window": 16,
+      "state_count": 202,
+      "vacuum_rank": 2,
+      "inconsistent_angle_degrees": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "system_ranks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "neutral": true,
+      "energy_window": 16,
+      "state_count": 202,
+      "vacuum_rank": 2,
+      "inconsistent_angle_degrees": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "system_ranks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    }
+  ],
+  "scope": "Exact finite verification of the all-weight duality proofs; finite exchange failure only at h=2 and listed windows/degrees.",
+  "elapsed_seconds": 2.069
+}

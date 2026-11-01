@@ -1,0 +1,17 @@
+{
+  "checker_sha256": "2dd736ff69775ed6e32ea8b0a756e94fcc62086d76e98b3bb609c8636d110542",
+  "exact_circulant_shortcut_cases": 65536,
+  "independent_tensor_word_cases": 24,
+  "position_symmetry_counterexample_degrees": [
+    6,
+    7
+  ],
+  "scope": "Exact finite-state crossing identities and rank engine; no improved factoring exponent or asymptotic rank certificate.",
+  "source_sha256": {
+    "markov_pairing_profile.cpp": "96e8b2e998ea52c4aced5c540c479984c37d68304f7582c6a493d6a94b015d93",
+    "markov_pairing_search.cpp": "7013614d5849b22c7743fe3b98ceb093f8cfe64cd3101035a765bd557c970a81"
+  },
+  "status": "passed",
+  "wide_polynomial_degree_case": 100,
+  "wide_vs_single_word_cases": 2
+}

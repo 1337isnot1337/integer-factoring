@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "control_fields": 4,
+  "independent_field_operations": 14760,
+  "on_demand_power_checks": 180,
+  "coordinatewise_bucket_comparisons": 3564,
+  "least_factor_cases": 10,
+  "recovery_bit_queries": 3924,
+  "invalid_collision_candidates_rejected": 1,
+  "factor_to_divisor_enumerations": 1023,
+  "exact_divisor_prefix_counts": 27681,
+  "coefficient_ring_cardinality": 16,
+  "scope": "Finite recovery and enumeration checks; global bounds use the proof."
+}

@@ -1,0 +1,56 @@
+{
+  "asymptotic_rho_lower_bound": "log(6)/(2log(3))",
+  "basis_rows": [
+    5,
+    4,
+    2
+  ],
+  "exact_entropy_bound_cases": 256,
+  "first_charge_surviving_pieces": [
+    0,
+    5,
+    10,
+    12,
+    15,
+    16,
+    17,
+    19
+  ],
+  "first_charge_survivor_entries": 29,
+  "limitation": "the proved restriction uses equal counts of all three symbols",
+  "literal_rank_profiles": [
+    {
+      "balanced_literal_leaves": 12,
+      "column_rank": 12,
+      "dimension": 6,
+      "length": 3,
+      "m": 1,
+      "mod_two_entry_additions": 12,
+      "rank_product": 144,
+      "row_rank": 12,
+      "type_allocations": 6
+    },
+    {
+      "balanced_literal_leaves": 1620,
+      "column_rank": 540,
+      "dimension": 90,
+      "length": 6,
+      "m": 2,
+      "mod_two_entry_additions": 1620,
+      "rank_product": 874800,
+      "row_rank": 1620,
+      "type_allocations": 90
+    }
+  ],
+  "scope": "exact isotropic-basis type ranks; no improved factoring exponent",
+  "second_charge_surviving_pieces": [
+    12,
+    15,
+    16,
+    17,
+    19
+  ],
+  "second_charge_survivor_entries": 13,
+  "source_seed_commit": "e96ee50560284301428d72421330d8773155d25b",
+  "transformed_nonzero_entries": 107
+}

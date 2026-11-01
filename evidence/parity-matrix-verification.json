@@ -1,0 +1,27 @@
+{
+  "checker_sha256": "56850cf082cf975473207ec24295a720aab176f758f3ec44ecf1acc719002c15",
+  "field": "F_2",
+  "identity_padding_verified_lengths": [
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "identity_padding_witness_matrix_masks": [
+    0,
+    2,
+    4,
+    0
+  ],
+  "independent_endpoint_entries": 98304,
+  "independent_full_tensor_rank_cases": 24,
+  "nonzero_mixed_feature_matrix_mask": 15,
+  "position_order_witness_polynomial_masks": [
+    5,
+    0
+  ],
+  "scope": "Exact endpoint and finite ranks; no asymptotic rank or factoring-score claim.",
+  "source_sha256": "98305a19b65389de07a6a133dddf5ccf9e7a83c4a1e555a60ae4ffc9b5c90bf8",
+  "status": "passed"
+}

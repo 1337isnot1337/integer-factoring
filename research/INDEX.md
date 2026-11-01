@@ -72,6 +72,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Conic denominator audit](conic-denominator-descent.md): for discriminant -4N, cancellation is one explicit linear gcd and a parity factor; nonsplitting cases preserve the root class up to the exceptional ambiguous class, with exact failures of monotone descent.
 - [Divisor moments and Eisenstein coefficients](divisor-moment-recovery.md): positive Hankel recovery gives a deterministic smallest-factor reduction to a uniform family of level-one coefficients; a trial/weight tradeoff makes the weights and recovery polynomial in b for target scores through one, while the fast coefficient engine remains open.
 - [Global sparse divisor residues](sparse-divisor-residues.md): Garg--Schost interpolation and a chosen trial budget preserve every fixed-characteristic saving exponent, with polynomial cyclic degrees through score one and a global-only query contract; a faster evaluator remains open.
+- [Fixed weight-one coefficient target](weight-one-divisor-coefficients.md): odd-character Fourier inversion supplies signed divisor residues from weight-one Eisenstein coefficients at small prime levels; signed sparse recovery preserves every fixed saving exponent, conditional on a faster composite-index coefficient engine.
 - [Polynomial divisor-gap extraction](smooth-norm-gap.md): integer multiplicative trimming converts promised inner-radius balanced norms at a specified outer radius, without enumerating all divisors.
 - [Relations from small smooth norms](smooth-norm-relations.md): primitive smooth norms yield bounded prime-form words directly, removing the balanced-factor condition and strictly enlarging the accepted target set.
 - [Exact search for a factored norm](factored-norm-search.md): ideal-lattice composition and deterministic meet-in-the-middle decide one primitive representation and recover coordinates in `Y poly(b)+2^O(b/log b)` bit time; selecting candidate norms remains open.
@@ -385,6 +386,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 - [Subgroup-return crossings](subgroup-return-crossings.md): group-word membership preserves the crossing and a rank-one starting cut at every length, including an effective free-group filter with infinite Hankel rank; complete binary coefficient spans at lengths one through three reject two examples without a uniform no-go claim.
 
+- [Ordered charge-area crossings](ordered-charge-area-crossings.md): growing clocks have an exact integer charge-walk normal form; polynomial-degree field descent preserves the exponent, and a binary area-zero filter retains both strict endpoints with linearly many coefficients; complete binary spans fail at two selected lengths.
+
 - [Group-shear crossings](group-shear-crossings.md): multiplication/division shears give cubic swap paths over every finite `p`-group in characteristic `p`; exact early-jet certificates exclude six displayed binary seeds, without an all-group claim.
 
 - [All-degree homogeneous Boolean charge bands](homogeneous-boolean-charge-bands.md): a degree-independent loss cap and stronger Gaussian floors exclude all exterior charges and a linearly growing interior band, including overlapping monomials.
@@ -440,6 +443,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Coherent bounded-spin crossing](bounded-spin-crossing.md): uniform height-three path encoders over F5, Fibonacci growth, strict endpoint, exact binary widths and a finite-state entry constructor; a post-half actual-rank bound remains open.
 - [Bounded-spin primary rank algebra](bounded-spin-rank-algebra.md): exact six-dimensional cut algebras at length eight, a rank formula over every characteristic-five extension, and a sharp minmax product 2304 certified by 759 common kernels and a separating hyperplane.
 - [Three uniform spin-zero jets](bounded-spin-three-jets.md): integral scalar one-site transition matrices force three coefficient relations and an `n-2` span bound at every even length at least six; a four-qubit invariant model separates this from the open rank-growth problem.
+- [Four-qubit generators in odd characteristic](four-qubit-orthogonal-generators.md): a direct `SO_4 x SO_4` proof of the free degree `2,4,4,6` invariant ring, complete F5 pencil relations and the exact universal `n-2` scalar Hilbert function; ordinary cut ranks remain open.
 - [Enlarged coherent six-vertex crossing](bounded-spin-six-vertex.md): a uniform degree-`O(n^2)` substitution exposes the full monomial span and adds a seventh direction at eight sites; each cut has an exact invariant commutator module of dimension 28, with uniform favorable ranks still open.
 - [Spin-family modular interface](bounded-spin-modular-interface.md): the existing fixed-characteristic transfer applies without rational rank lifts; dense factorization has the permitted cost, while automatic coefficient selection is proved for the original linear-size span and remains an obligation for arbitrary enlarged-space recombinations.
 - [Constant-state spin projectors and cut reciprocity](bounded-spin-projector.md): exact thirty-state full and sixty-state binary-selected projectors preserve both ambient cut ranks; swapping the two balanced-product exponents identifies the normalized cut operators at every length.
@@ -467,3 +471,163 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [`../tools/`](../tools/) contains the checkers. Run `make verify` from the repository root.
 
 No finite certificate alone proves a new asymptotic factoring exponent. Distinguish an exact finite identity from a completed uniform machine theorem.
+
+## Retained PR #23 time-space and crossing checkpoint
+
+These ordinary proofs and finite controls were integrated from [exact PR #23 source](https://github.com/1337isnot1337/integer-factoring/tree/147652574e7ce1ff68b2c378712846cbf438da34). Integration is not independent mathematical acceptance. The complete time exponent remains `1/2`.
+
+- [Crossings from partitions into blocks of total weight zero](balanced-partition-crossings.md)
+- [The original constant-weight three-label restriction](balanced-three-label-barrier.md)
+- [Exact ranks of the elementary binary coefficient family](binary-coefficient-entropy.md)
+- [Recover witnesses with bit tags and deterministic isolation](bit-tagged-witness-recovery.md)
+- [A half-rate family with nearly linear-time factor queries](blocked-half-family.md)
+- [Conserved convolution crossings and a two-cut obstruction](conserved-convolution-crossings.md)
+- [A rank obstruction for coordinate matching support](coordinate-support-rank.md)
+- [Odd cyclic orbit sums of a finite crossing seed](cyclic-orbit-crossing.md)
+- [Direct exact divisor counts in sublinear workspace](direct-sublinear-divisor-counts.md)
+- [A sharp rank-sum budget with one distinguished piece](distinguished-piece-rank-budget.md)
+- [Dual gauges and exact mode filters](dual-gauge-filters.md)
+- [Faster baselines for the recursive clique evaluator](fast-matrix-clique.md)
+- [Reflected monomial duals and a four-piece crossing certificate](fermionic-piece-polynomial.md)
+- [Exact crossings from finite-order algebraic approximations](finite-order-crossing-transfer.md)
+- [Amplifying a finite crossing certificate](finite-seed-amplification.md)
+- [A rank obstruction for permutation-invariant defect families](fixed-defect-invariant-barrier.md)
+- [Fourier queries for every original multiplication gate](fourier-multiplication-gates.md)
+- [Compact arithmetic-gate Fourier queries in odd characteristic](fourier-odd-characteristic.md)
+- [The ideal Hankel row profile cannot have a rank-one opposite endpoint](ideal-hankel-endpoint.md)
+- [Exact divisor counts in polynomial space](integral-counting-transfer.md)
+- [Integral Schur crossing families and prime-power block composition](integral-schur-crossing.md)
+- [Matching crossings with monomial duals](intersection-matching-crossing.md)
+- [A constant-composition obstruction after an isotropic basis change](isotropic-three-label-barrier.md)
+- [Interpolation, addition, and carry blocks close under Fourier queries](linear-carry-blocks.md)
+- [Half-rate deterministic factoring in linear space](linear-space-half-rate.md)
+- [A multiplication network with logarithmic wire widths](logarithmic-wire-network.md)
+- [A multigraded crossing on uniform set partitions](matching-code-lift.md)
+- [Homogeneous matching duals from Jack integrality](matching-gram-unipotence.md)
+- [A minimum-cut rank budget and a twenty-one-label cutoff](minimum-cut-rank-budget.md)
+- [Streamed modular factors in every fixed characteristic](modular-factor-space-odd.md)
+- [Polynomial-space evaluation of the ambient modular factors](modular-factor-space.md)
+- [Linear space for the regular modular factors](near-linear-factor-space.md)
+- [Self-dual nilpotent cycle labels](nilpotent-cycle-labels.md)
+- [Research progress: 30 October 2026](oct30-progress.md)
+- [Complementary-pair labels give exact subset-intersection blocks](paired-mode-johnson.md)
+- [Disjointness minors from paths and cycles](partial-matching-minors.md)
+- [Coordinate restrictions of the four-permutation seed](permutation-coordinate-restrictions.md)
+- [Large homogeneous permutation label spaces](permutation-homogeneous-labels.md)
+- [Single-cycle blocks obstruct the full permutation coefficient span](permutation-span-cycle-obstruction.md)
+- [An explicit top clique with polynomial-time table queries](polynomial-top-queries.md)
+- [Prime-power Gram involutions and streamed Schur factors](prime-power-gram-involution.md)
+- [Rational crossings need no separate polynomial coefficient-height bound](rational-height-transfer.md)
+- [Simultaneous time and workspace from rational crossing families](rational-simultaneous-transfer.md)
+- [Far-reflected labels reduce to coordinate matching](reflected-support-reduction.md)
+- [The regular homogeneous central piece has the half-rate exponent](regular-fusion-rank.md)
+- [Small-factor preprocessing improves the modular transfer](rough-input-transfer.md)
+- [The homogeneous Schur central piece as a fusion Gram matrix](schur-fusion-gram.md)
+- [Asymptotically full Schur fusion rank](schur-fusion-rank.md)
+- [Exact rank-sum searches and dual label restrictions](seed-subspace-recombination.md)
+- [A simultaneous time and workspace transfer for crossing families](simultaneous-time-space-transfer.md)
+- [Six labels cannot pass the rank-sum amplification criterion](six-label-rank-sum-obstruction.md)
+- [Sum-of-squares identities and the two crossing ranks](sos-partial-transpose-profile.md)
+- [A six-label permutation crossing with rank product 150](split-permutation-seed.md)
+- [Streamed finite seeds and exact polynomial certificates](streamed-seed-transfer.md)
+- [Sublinear workspace for the original top-table queries](streamed-top-space.md)
+- [A transfer theorem with more than polynomially many crossing pieces](subexponential-piece-transfer.md)
+- [Half-rate factoring with sublinear working space](sublinear-space-half-rate.md)
+- [A swap/product rank bound and the finite rank-sum cutoff](swap-product-rank-sum.md)
+- [A sharp rate barrier for symmetric three-matching pieces](symmetric-three-matching-barrier.md)
+- [Two pieces cannot pass the finite rank-sum criterion](two-piece-rank-sum-obstruction.md)
+
+## Retained PR #24 effective-family and finite-rank checkpoint
+
+Integrated from [exact PR #24 source](https://github.com/1337isnot1337/integer-factoring/tree/05d9c1b8aed4f8494ce230f0869f9048ef879474), preserving its attribution and scope. Conditional transfers and finite barriers do not establish an exponent above `1/2`; integration is not independent mathematical acceptance.
+
+- [Binary code restrictions: an affine-code obstruction](affine-code-barrier.md)
+- [The full three-pairing type route is obstructed over every field](all-field-pairing-barrier.md)
+- [Current crossing frontier and resolved shortcuts](frontier-search-ledger.md)
+- [Exact finite cutoff 25 for the joint antipodal-sector span](hamming-joint-optimum.md)
+- [Polynomial crossing profiles with bounded bit weights](hamming-pfaffian.md)
+- [Exact cutoff four in the relabeled width-two span](hamming-relabeling-optimum.md)
+- [Joint label relabelings and a product-sixteen seed](hamming-relabeling.md)
+- [Crossing sectors on several antipodal pairs](hamming-sectors.md)
+- [Local tensor powers and weight symmetry of the crossing deformation](hamming-tensor-power.md)
+- [Complete central ranks from the small kernels of the two factors](modular-central-rank.md)
+- [The exact half endpoint for the normalized modular family](modular-half-endpoint.md)
+- [A reflected particle-hole identity for the complete modular profile](modular-particle-hole.md)
+- [Effective recombinations of the complete modular pieces](modular-recombination.md)
+- [Closing the small characteristic-two pairing seeds](pairing-small-seeds.md)
+- [A characteristic-two barrier for the full pairing type span](pairing-word-barrier.md)
+- [From rational-function crossings to one fixed prime field](rational-family-transfer.md)
+- [Polynomial-size rank blocks and an exactly analyzed reciprocal pencil](sl2-coefficient-ranks.md)
+- [Crossing families from a sparse sequence of widths](sparse-width-interpolation.md)
+- [A rank barrier for position-invariant word families](word-symmetry-barrier.md)
+
+## Retained PR #26 effective-transfer and crossing checkpoint
+
+Integrated from [exact PR #26 source](https://github.com/1337isnot1337/integer-factoring/tree/dd28d375ea65863356c67b051f5d4f217562475d), with original credits and scope retained. Conditional transfers, universal-search observations and finite certificates do not prove a new numerical factoring bound. Integration is not independent mathematical acceptance.
+
+- [A uniform all-field barrier for binary word and balanced-layer tensors](all-field-binary-word-barrier.md)
+- [A uniform all-field barrier for symmetric binary-energy shells](binary-energy-symmetry-barrier.md)
+- [An all-field binary two-piece inequality and an F4 boundary pencil](binary-two-piece-rank-sum-and-f4-boundary.md)
+- [An exact bivariate trace-span control at eight labels](bivariate-two-patch-span-control.md)
+- [Constructive extraction from border and nonunit crossing certificates](border-and-nonunit-seed-transfer.md)
+- [Catalytic crossing seeds with a common boundary vector](boundary-stable-catalytic-seeds.md)
+- [Exact flow certificates for channel-walk bounds](channel-flow-dual-certificates.md)
+- [Matrix-valued crossing seeds with commuting factor halves](commuting-halves-matrix-seed-transfer.md)
+- [Component-path refinement of channel-walk bounds](component-channel-walk-transfer.md)
+- [Diagonal-pair rank-one auxiliary transfers](diagonal-rank-one-word-transfer.md)
+- [Eight local parity features in a constant-bond crossing](eight-feature-parity-crossings.md)
+- [Exact exponential growth of matching channel types](exact-channel-type-growth.md)
+- [The exact finite divisor-count parameter](exact-divisor-count-parameter.md)
+- [Exterior monodromy and occupation-graph rank certificates](exterior-monodromy-and-occupation-graphs.md)
+- [Exact channel-support feasibility by bounded binary carries](finite-carry-channel-feasibility.md)
+- [Finite crossing rank profiles can be realized over finite fields](finite-field-rank-specialization.md)
+- [Finite-field functional certificates for observable transfers](finite-functional-rank-detector-certificates.md)
+- [Finite-state polynomial crossing families](finite-state-pairing-crossings.md)
+- [Four-feature matrix-product crossing identities](four-feature-parity-crossings.md)
+- [A four-piece F4 boundary pencil with two free ket functions](four-piece-f4-boundary-pencil.md)
+- [A uniform score transfer from arbitrarily sparse finite seeds](gap-free-seed-score-transfer.md)
+- [Generic full factor pairs need not admit a common scalarization](generic-full-factor-nonscalarization.md)
+- [The logarithmic correction in the existing half-rate channels](half-rate-second-order-audit.md)
+- [Rank-sensitive Fourier contraction with digit restrictions](hankel-digit-box-contraction.md)
+- [What a lacunary characteristic-two kernel would still need](lacunary-kernel-boundary.md)
+- [Linear rank detectors for observable transition tables](linear-rank-detectors-for-observable-tables.md)
+- [Local alphabet bounds for observable word-rank transfers](local-alphabet-and-pairing-spectral-barriers.md)
+- [A matrix-unit monodromy crossing and its product-boundary restriction](matrix-unit-monodromy.md)
+- [A constructive commutator projector for weights 1 and 3](mismatched-commutator-projector.md)
+- [Mismatched mode weights: a noncommutative Weyl family and a spectral obstruction](mismatched-mode-weyl-crossings.md)
+- [A characteristic-two barrier for all binary position-invariant word tensors](modular-binary-word-barrier.md)
+- [Realizing an observable matrix table as a crossing transfer](observable-transition-realization.md)
+- [Odd-characteristic Weyl spectra and a finite component certificate](odd-characteristic-weyl-spectra.md)
+- [An integer divisor-count bound with leading coefficient one](optimized-divisor-count-bound.md)
+- [Exact certificates for overlapping three-label subalphabets](overlapping-subalphabet-spectral-certificates.md)
+- [Base-prime digits, exact carries, and the cost of lifting Fourier queries](padic-digit-carry-transfer.md)
+- [Partial-mode Weyl curves and an exact ordered endpoint construction](partial-mode-weyl-sweeps.md)
+- [Minimum-channel jet factorizations with polylogarithmic workspace](polylog-space-jet-factorization.md)
+- [Matrix rank and affine recovery with polylogarithmic workspace](polylog-space-rank-recovery.md)
+- [Polynomial shear controls and a partial long-profile checkpoint](polynomial-shear-diagnostics.md)
+- [A reduction-map Fierz crossing and its exact word bound](reduction-map-fierz-crossing.md)
+- [Product-subspace automata and joint scalarization](scalarized-channel-automata.md)
+- [Further-bound research session: 30 October 2026](session-2026-10-30-further-bounds.md)
+- [Bivariate site-weighted crossing identities](site-weighted-pairing-crossings.md)
+- [Quasipolynomial-time matrix queries with linear auxiliary space](small-space-berkowitz-rank.md)
+- [Complete small controls for a tagged trace coordinate](tagged-two-patch-span-controls.md)
+- [An exact binary control for three rank-one boundary pieces](three-piece-binary-boundary-control.md)
+- [Binary trace kernels with small crossing ranks and large ordinary rank](trace-bilinear-conservation-kernels.md)
+- [Exact syndrome ranks for restricted bilinear trace kernels](trace-kernel-restriction-and-composition.md)
+- [A smaller binary trace-kernel counterexample with exact support](trace-kernel-small-certificate.md)
+- [Scalar twists and finite channel walks for matrix-valued seeds](twisted-channel-walk-transfer.md)
+- [Five-label twisted-pairing preflight](twisted-pairing-observable-preflight.md)
+- [Exact recombination controls for two small trace spans](two-patch-span-recombination.md)
+- [A complete two-patch trace crossing and its finite rank control](two-patch-trace-crossing.md)
+- [Exact rank compression for two-state path crossings](two-state-run-rank-compression.md)
+- [One factoring machine can select its finite field with its seed](universal-field-seed-selection.md)
+- [Universal verified search already attains the supremum factoring score](universal-verified-factoring-search.md)
+- [A score-preserving transfer for arbitrary vanishing width error](vanishing-slack-score-transfer.md)
+- [Weighted binary-energy shells do not rescue the reciprocal pencil](weighted-energy-reciprocal-pencil.md)
+- [The exact multiplication law of the weighted Weyl coefficients](weighted-weyl-additive-row-law.md)
+- [Weighted Weyl crossings and multivariate coefficient extraction](weighted-weyl-and-multivariate-extraction.md)
+- [A protected minor in the weighted Weyl symmetry span](weighted-weyl-protected-minor.md)
+- [A finite square-zero ideal in the full parameterized Weyl algebra](weighted-weyl-rank-one-ideal.md)
+- [An all-energy row filtration for the binary weighted Weyl curve](weighted-weyl-row-filtration.md)
+- [The constant alternate-order Weyl algebra](weyl-alternate-order-algebra.md)
+- [A p-typical Witt state space with perfect modular duality](witt-duality-and-vertex-jets.md)

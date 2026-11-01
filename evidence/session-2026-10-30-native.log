@@ -1,0 +1,619 @@
+python3 tools/check_markov_pairing_transfer.py
+{
+  "checker_sha256": "2dd736ff69775ed6e32ea8b0a756e94fcc62086d76e98b3bb609c8636d110542",
+  "exact_circulant_shortcut_cases": 65536,
+  "independent_tensor_word_cases": 24,
+  "position_symmetry_counterexample_degrees": [
+    6,
+    7
+  ],
+  "scope": "Exact finite-state crossing identities and rank engine; no improved factoring exponent or asymptotic rank certificate.",
+  "source_sha256": {
+    "markov_pairing_profile.cpp": "96e8b2e998ea52c4aced5c540c479984c37d68304f7582c6a493d6a94b015d93",
+    "markov_pairing_search.cpp": "7013614d5849b22c7743fe3b98ceb093f8cfe64cd3101035a765bd557c970a81"
+  },
+  "status": "passed",
+  "wide_polynomial_degree_case": 100,
+  "wide_vs_single_word_cases": 2
+}
+python3 tools/check_square_zero_rank_reduction.py
+{
+  "all_four_variable_polynomials": 65536,
+  "branch_counts_including_recursive_calls": {
+    "gaussian": 31,
+    "linear": 30720,
+    "quadratic": 2912,
+    "unit": 32768,
+    "zero": 2017
+  },
+  "checker_sha256": "38986389653997a62451a07743824bf2323875cc5372504e9bac87792b762eb2",
+  "constant_and_linear_residual_guards": 2,
+  "random_larger_cases": 60,
+  "status": "passed"
+}
+python3 tools/check_two_state_run_profile.py
+{
+  "checker_sha256": "ddf78dd3214748d6dac1d7ab23076ab020ed3b6183f5b3ca6fa33b665d857a06",
+  "exhaustive_four_variable_polynomials": 65536,
+  "independent_full_tensor_cases": 12,
+  "independent_six_position_kernel_cases": 12,
+  "maximum_independent_comparison_length": 12,
+  "scope": "Exact compression and rank checks; no asymptotic contraction claim.",
+  "source_sha256": "408a3b7c6c5094bac92b5b37ba90dcc2a3c668e04de96b4cbdcf8aa70113e2f6",
+  "status": "passed",
+  "stored_independent_larger_profiles": 3
+}
+python3 tools/check_parity_matrix_crossings.py
+{
+  "checker_sha256": "56850cf082cf975473207ec24295a720aab176f758f3ec44ecf1acc719002c15",
+  "field": "F_2",
+  "identity_padding_verified_lengths": [
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "identity_padding_witness_matrix_masks": [
+    0,
+    2,
+    4,
+    0
+  ],
+  "independent_endpoint_entries": 98304,
+  "independent_full_tensor_rank_cases": 24,
+  "nonzero_mixed_feature_matrix_mask": 15,
+  "position_order_witness_polynomial_masks": [
+    5,
+    0
+  ],
+  "scope": "Exact endpoint and finite ranks; no asymptotic rank or factoring-score claim.",
+  "source_sha256": "98305a19b65389de07a6a133dddf5ccf9e7a83c4a1e555a60ae4ffc9b5c90bf8",
+  "status": "passed"
+}
+python3 tools/check_site_weight_crossings.py
+{
+  "asymmetric_weight_negative_control": [
+    0,
+    1,
+    1,
+    1
+  ],
+  "checker_sha256": "e47a03b73e709403116c18808f6364efcb2398b95e20c82445467832cecad102",
+  "field": "F_2",
+  "independent_eight_position_uniform_profile": 1,
+  "independent_full_tensor_cases": 24,
+  "scope": "Exact finite coefficient identities and ranks; no asymptotic contraction claim.",
+  "source_sha256": "4fe6b6c89846f425e5584d68af5b01731a7acb8a2b07ff936d90077c067a0d76",
+  "status": "passed",
+  "symmetric_weight_recombination_checks": 24
+}
+python3 tools/check_eight_feature_crossings.py
+{
+  "checker_sha256": "8ed5bcf7a7c376ee232682edf85fe77390b71df5dfa03367226a2db85d806fb6",
+  "field": "F_2",
+  "independent_delayed_transition_cases": 8,
+  "independent_endpoint_entries": 131072,
+  "independent_full_tensor_cases": 24,
+  "independent_six_position_circulant_profiles": 6,
+  "independently_checked_short_witness_profiles": 39,
+  "packed_eight_position_baseline": 1,
+  "persistent_order_and_bit_flip_witness_lengths": [
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "persistent_witness_offdiagonal_shifts": [
+    0,
+    1,
+    2
+  ],
+  "scope": "Exact endpoint and finite ranks only; no asymptotic contraction claim.",
+  "source_sha256": "b74a8bf6bbd68972e86fbf6dbeacf024c19d31111320b8fe9e4bc58517ca4ea5",
+  "status": "passed"
+}
+python3 tools/check_matrix_unit_monodromy.py
+{
+  "checker_sha256": "ee3f20854704f3ec1f984a590b6a7264b200d80df1c74ccac1515593f7e45beb",
+  "endpoint_checks": 8736,
+  "entry_algorithm_comparisons": 8736,
+  "full_cut_rank_profile_comparisons": 12,
+  "outside_local_even_parity_span": true,
+  "protected_row_identity_and_column_triangular_checks": 14760,
+  "scope": "Finite verification only; the full coefficient-span restriction is proved in the companion note.",
+  "seconds": 5.96916950800005,
+  "status": "passed"
+}
+python3 tools/check_exterior_monodromy.py
+{
+  "binary_seven_site_lower_square": 2508800,
+  "checker_sha256": "b11f33bf2aa3c8e1da7f6a775b114b9c0a2216dd1560d79b56c3592a29888933",
+  "endpoint_checks": 5600,
+  "exterior_operator_walk_comparisons": 5600,
+  "full_cut_rank_profile_comparisons": 12,
+  "scope": "The exact witnesses and arithmetic support the stated finite classes; all-length rank bounds follow from the companion triangular proof.",
+  "seconds": 8.15046130599876,
+  "status": "passed",
+  "ternary_four_particle_occupations_checked": 126,
+  "triangular_entry_checks": 19835
+}
+python3 tools/check_weyl_rank_one_ideal.py --energy 8
+{
+  "energy": 8,
+  "labels": 10,
+  "parity_zero_dimension": 26,
+  "nonzero_polynomial_entries": [
+    130,
+    66
+  ],
+  "left_orbit": 6,
+  "right_orbit": 6,
+  "pairing_rank": 0,
+  "maximum_word_lengths": [
+    3,
+    4
+  ],
+  "nonsymmetric_orbit_vectors": [
+    1,
+    2
+  ],
+  "nonconstant_diagonal_orbit_vectors": [
+    0,
+    3
+  ],
+  "seconds": 0.000248138,
+  "ideal_dimension": 36,
+  "maximum_ideal_row_rank": 6,
+  "middle_quotient_dimension": 14,
+  "square_zero_ideal_verified": true,
+  "parity_zero_affine_minor": {
+    "protected_minor": 5,
+    "verified_minor_entries": 25,
+    "row_rank_bound": 74,
+    "rank_product_bound": 370
+  },
+  "full_crossing_symmetry_algebra": {
+    "energy": 8,
+    "labels": 10,
+    "parity_zero_dimension": 26,
+    "transpose_closed_orbit": 10,
+    "pairing_rank": 0,
+    "maximum_word_length": 5,
+    "seconds": 0.000241018,
+    "ideal_dimension": 100,
+    "middle_quotient_dimension": 6,
+    "square_zero_ideal_verified": true
+  },
+  "source_sha256": {
+    "checker": "18ca001590896391d18d6f07ab0e8feea4cbab186fb8ed25bc223498ebb1533b",
+    "generator": "353f7a41b8eb45860ccba6513dc28070caafa4e194ace9ce1036999c9d36e35c",
+    "orbit_engine": "fdaf42279175e1b2e2e88e5a439c3e2f30ded99ac01590483b19e5cd47d84573",
+    "symmetry_engine": "39a8df81dcf68f87b1a28616d1412e712d03441dac7575f9c4a5110a0c51a506"
+  },
+  "generator_dump_sha256": {
+    "row": "70fc44d78d37a9978cff98e5c7b7eac6c7a1bb2589baa01fcee495729b991daf",
+    "col": "0894ce8ab85ded10d8d5f9da592966be504cedeeb0c41dfa0a0e881b60b50c75"
+  },
+  "fresh_generator_replay": true,
+  "scope": "Exact finite orbit closure for P,Q and for P,P^T,Q,Q^T. The latter generates all eight crossing-preserving external images. The rank-one generated ideals are square-zero for arbitrary words and extension-field coefficients at this energy; no all-energy radical theorem or score gain is claimed.",
+  "total_seconds": 27.526
+}
+python3 tools/check_odd_weyl_spectrum.py
+{
+  "characteristic": 3,
+  "energy": 81,
+  "reduced_energy": 27,
+  "weights": [
+    1,
+    1,
+    3,
+    9,
+    27
+  ],
+  "labels": 239,
+  "abstract_dimension": 28,
+  "basis_associativity_checks": 21952,
+  "spectral_projectors": 9,
+  "frobenius_exponent": 81,
+  "zero_character_projector": [
+    1,
+    0,
+    2,
+    0,
+    0,
+    0,
+    2,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    2,
+    1
+  ],
+  "local_unit_and_nilpotence_verified": true,
+  "constant_operator_ranks": {
+    "row": 33933,
+    "column": 1632
+  },
+  "constant_one_column_blocks": 1617,
+  "eligible_digit_disjoint_pairs": 5304,
+  "forced_rank_product": 54869661,
+  "strict_target_inequality": "product > d^3 > d^(2 sqrt(2))",
+  "native_rank_evidence": {
+    "prime": 3,
+    "energy": 81,
+    "reduced_energy": 27,
+    "labels": 239,
+    "row_blocks": 3273,
+    "column_blocks": 1632,
+    "entries": 7122902,
+    "distinct_entry_polynomials": 7806,
+    "pieces": [
+      {
+        "name": "raw_0",
+        "row": 33933,
+        "col": 1632
+      }
+    ],
+    "rank_sums": {
+      "raw": 7441.683680458341,
+      "projectors": 0,
+      "refined": 0
+    },
+    "threshold": 2309.737195780736,
+    "seconds": 10.157611033
+  },
+  "source_sha256": {
+    "check_odd_weyl_spectrum.py": "a68b314786eab5f686e1c0d7515022b6bbe7d9e55ce5682a09a7ba246fc92999",
+    "odd_weyl_projectors.py": "95b12a3785c5b475123716cf88e4d4eaaaa7b836a663faa2ac599fbe6d430e5c",
+    "explore_odd_weyl.cpp": "eaf8cd5e45d49a3375cde58d4a360e3867b034087e091b2fa7c53c4300f2a177"
+  },
+  "scope": "All decompositions from this original coefficient span over every characteristic-three extension field; opposite symmetries and mixed products are not covered.",
+  "elapsed_seconds": 22.213
+}
+python3 tools/check_mismatched_weyl_spectrum.py
+{
+  "energy": 63,
+  "labels": 132,
+  "weights": [
+    1,
+    3,
+    9,
+    27
+  ],
+  "row_blocks": 1341,
+  "endpoint_entries_checked": 632732,
+  "power_ranks": {
+    "1": 11924,
+    "32": 7280,
+    "64": 7280
+  },
+  "zero_rows": 2531,
+  "protected_column_sum_blocks": 496,
+  "nilpotent_kernel_dimension": 10144,
+  "same_piece_rank_product_lower": 5031424,
+  "dimension_cubed": 2299968,
+  "witness_sha256": "492a9ba664b6c863ea78b2d74c513d40d7ab8e7dcf4df6ad5602bc2c47d39b1d",
+  "dump_sha256": "59424b8d6ee9ad5e4389e41bfa820ba07782d8df775b06a3ee6e2e97e5e426e3",
+  "source_sha256": {
+    "check_mismatched_weyl_spectrum.py": "738b8a6f2a35a4cc0b51299478a92b09179963bbf308a21e01e424bce737eb9d",
+    "explore_mismatched_weyl.cpp": "c53c398e80ae0d2a1c55d6d2ce5ca5960d5d609cd4f07085e96a73e12dc22e35"
+  },
+  "seconds": 14.202,
+  "scope": "All decompositions of I inside K[A0], over every characteristic-two extension K, at the one fixed shell h=63; not the full coefficient or word algebra."
+}
+python3 tools/check_trace_kernel_support.py
+{
+  "coefficient_sha256": "151ef535603bc1fdf05edd3bde23dba339dabe780d6a12684d8d7a5fb91421d3",
+  "coefficient_slots_checked": 524287,
+  "cut_rank_product": 4503582447517696,
+  "exact_column_cut_rank": 67108736,
+  "exact_row_cut_rank": 67108736,
+  "field_polynomial": 524327,
+  "independent_full_polynomial_evaluations": [
+    [
+      1,
+      0
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      3,
+      0
+    ],
+    [
+      417792,
+      1
+    ],
+    [
+      313345,
+      1
+    ]
+  ],
+  "independent_small_coefficients": 246,
+  "independent_small_rank_profiles": 15,
+  "irreducibility_divisors_checked": 511,
+  "k": 7,
+  "labels": 524288,
+  "native_profiles": [
+    {
+      "k": 1,
+      "rank": 19,
+      "t": 19,
+      "weights": [
+        0,
+        19,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "k": 2,
+      "rank": 190,
+      "t": 19,
+      "weights": [
+        0,
+        19,
+        171,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "k": 3,
+      "rank": 1159,
+      "t": 19,
+      "weights": [
+        0,
+        19,
+        171,
+        969,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "k": 4,
+      "rank": 5035,
+      "t": 19,
+      "weights": [
+        0,
+        19,
+        171,
+        969,
+        3876,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "k": 5,
+      "rank": 16663,
+      "t": 19,
+      "weights": [
+        0,
+        19,
+        171,
+        969,
+        3876,
+        11628,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "k": 6,
+      "rank": 43795,
+      "t": 19,
+      "weights": [
+        0,
+        19,
+        171,
+        969,
+        3876,
+        11628,
+        27132,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "k": 7,
+      "rank": 94183,
+      "t": 19,
+      "weights": [
+        0,
+        19,
+        171,
+        969,
+        3876,
+        11628,
+        27132,
+        50388,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "nonzero_coefficient_frobenius_checks": 94183,
+  "ordinary_kernel_rank": 94183,
+  "polynomial_hex": "0x80027",
+  "rejected_bound": 4650663930232832,
+  "scope": "Exact rank-inequality counterexample at t=19; minimal t only in the stated trace-product family. No crossing synthesis or improved factoring score.",
+  "seconds": 33.3841412999991,
+  "smaller_family_parameter_pairs_excluded": 153,
+  "source_sha256": {
+    "check_trace_bilinear_kernel.py": "63f4fa4dc682a8be64740f284d3ba785f4d152723ad3a7da3d26aa6aa18d723c",
+    "check_trace_kernel_support.py": "3a9380ea7ebce61bad4176af33bc6eccb019e287d512a0f63c54d9254109cb7f",
+    "trace_kernel_support.cpp": "a3260eebcad2024fa4d60fe50ab9d67951e583e733fd8eed1e8f14ea497efea6"
+  },
+  "status": "passed",
+  "t": 19
+}
+python3 tools/check_trace_weight_restriction.py --output /tmp/integer-factoring-trace-restriction.json
+{
+  "status": "passed",
+  "native_source_sha256": "c27a3239f7a31f7abf4795e84d764076e0a7bab87d84b66ae81b10b2218c3447",
+  "independent_restricted_profiles": 9,
+  "ordinary_composition_checks": 55,
+  "full_screen": false,
+  "screen_profiles": 0,
+  "scope": "Exact ranks of individual restricted pieces; no crossing synthesis."
+}
+python3 tools/check_partial_mode_sweep.py
+{
+  "profiles": [
+    {
+      "energy": 9,
+      "labels": 5,
+      "application_order": [
+        0,
+        1
+      ],
+      "direct_nonzero_polynomial_products": 87,
+      "supported_entries": 61,
+      "native_endpoint_checks": 122,
+      "rank_sum": 109.83913426292541,
+      "finite_target": 9.73851774233542
+    },
+    {
+      "energy": 27,
+      "labels": 23,
+      "application_order": [
+        0,
+        1,
+        2
+      ],
+      "direct_nonzero_polynomial_products": 4766,
+      "supported_entries": 4551,
+      "native_endpoint_checks": 9102,
+      "rank_sum": 6263.4506813260905,
+      "finite_target": 84.28959632772816
+    },
+    {
+      "energy": 27,
+      "labels": 23,
+      "application_order": [
+        0,
+        2,
+        1
+      ],
+      "direct_nonzero_polynomial_products": 4234,
+      "supported_entries": 4551,
+      "native_endpoint_checks": 9102,
+      "rank_sum": 5253.33925633434,
+      "finite_target": 84.28959632772816
+    }
+  ],
+  "seconds": 12.725
+}

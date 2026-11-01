@@ -1,0 +1,21 @@
+{
+  "both_operator_order_piece_entries": 149,
+  "composite_moduli": [
+    4,
+    8,
+    9,
+    16,
+    25
+  ],
+  "composite_ring_piece_entries": 745,
+  "exact_prefix_queries": 45069,
+  "independent_integral_factor_entries": 3312,
+  "independent_translated_monomial_coefficients": 1230,
+  "integer_crossing_entries": 17,
+  "least_factor_recoveries": 4095,
+  "negative_controls": {
+    "nontrivial_zero_divisors_allowed": true,
+    "small_characteristic_can_erase_counts": true
+  },
+  "scope": "integral factor and exact prefix-recovery checks; no full-size runtime experiment"
+}

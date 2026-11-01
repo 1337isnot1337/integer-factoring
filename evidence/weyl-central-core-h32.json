@@ -1,0 +1,206 @@
+{
+  "energy": 32,
+  "labels": 202,
+  "core_dimension": 1821,
+  "core_rank": 1022,
+  "core_minimal_polynomial": "0x1c6adb76ac76aadb1c1ab006b701b706dadaaac7076dc6c6ab701c76db07776db1b6ddc1adddc71c71c6b0000",
+  "core_minimal_degree": 352,
+  "central_annihilator": "0x38d5b6ed58ed55b63835600d6e036e0db5b5558e0edb8d8d56e038edb60eeedb636dbb835bbb8e38e38d60000",
+  "word_algebra_dimension_upper": 1412,
+  "parity_blocks": [
+    {
+      "dimension": 166,
+      "rank": 100,
+      "minimal_polynomial": "0xbd992f4b6ff40bfd0",
+      "minimal_degree": 67
+    },
+    {
+      "dimension": 196,
+      "rank": 98,
+      "minimal_polynomial": "0x28a80080",
+      "minimal_degree": 29
+    },
+    {
+      "dimension": 166,
+      "rank": 100,
+      "minimal_polynomial": "0x61e19981987fe60",
+      "minimal_degree": 58
+    },
+    {
+      "dimension": 140,
+      "rank": 101,
+      "minimal_polynomial": "0x2082a888a80082a88a20",
+      "minimal_degree": 77
+    },
+    {
+      "dimension": 140,
+      "rank": 92,
+      "minimal_polynomial": "0x3cccfc033ccc000",
+      "minimal_degree": 57
+    },
+    {
+      "dimension": 114,
+      "rank": 92,
+      "minimal_polynomial": "0x3c3300cffccf0330cfcc0",
+      "minimal_degree": 81
+    },
+    {
+      "dimension": 114,
+      "rank": 92,
+      "minimal_polynomial": "0x1c6db6b006c6ac1b0",
+      "minimal_degree": 64
+    },
+    {
+      "dimension": 94,
+      "rank": 84,
+      "minimal_polynomial": "0xdb8e03b80e0eedb6358",
+      "minimal_degree": 75
+    },
+    {
+      "dimension": 94,
+      "rank": 38,
+      "minimal_polynomial": "0x11440",
+      "minimal_degree": 16
+    },
+    {
+      "dimension": 74,
+      "rank": 36,
+      "minimal_polynomial": "0x1e7e18198",
+      "minimal_degree": 32
+    },
+    {
+      "dimension": 74,
+      "rank": 36,
+      "minimal_polynomial": "0x20a008",
+      "minimal_degree": 21
+    },
+    {
+      "dimension": 60,
+      "rank": 40,
+      "minimal_polynomial": "0x678199e18",
+      "minimal_degree": 34
+    },
+    {
+      "dimension": 60,
+      "rank": 27,
+      "minimal_polynomial": "0x280",
+      "minimal_degree": 9
+    },
+    {
+      "dimension": 46,
+      "rank": 29,
+      "minimal_polynomial": "0x2a0288",
+      "minimal_degree": 21
+    },
+    {
+      "dimension": 46,
+      "rank": 30,
+      "minimal_polynomial": "0xa00",
+      "minimal_degree": 11
+    },
+    {
+      "dimension": 36,
+      "rank": 27,
+      "minimal_polynomial": "0xf0000",
+      "minimal_degree": 19
+    },
+    {
+      "dimension": 36,
+      "rank": 0,
+      "minimal_polynomial": "0x2",
+      "minimal_degree": 1
+    },
+    {
+      "dimension": 26,
+      "rank": 0,
+      "minimal_polynomial": "0x2",
+      "minimal_degree": 1
+    },
+    {
+      "dimension": 26,
+      "rank": 0,
+      "minimal_polynomial": "0x2",
+      "minimal_degree": 1
+    },
+    {
+      "dimension": 20,
+      "rank": 0,
+      "minimal_polynomial": "0x2",
+      "minimal_degree": 1
+    },
+    {
+      "dimension": 20,
+      "rank": 0,
+      "minimal_polynomial": "0x2",
+      "minimal_degree": 1
+    },
+    {
+      "dimension": 14,
+      "rank": 0,
+      "minimal_polynomial": "0x2",
+      "minimal_degree": 1
+    },
+    {
+      "dimension": 14,
+      "rank": 0,
+      "minimal_polynomial": "0x2",
+      "minimal_degree": 1
+    },
+    {
+      "dimension": 10,
+      "rank": 0,
+      "minimal_polynomial": "0x2",
+      "minimal_degree": 1
+    },
+    {
+      "dimension": 10,
+      "rank": 0,
+      "minimal_polynomial": "0x2",
+      "minimal_degree": 1
+    },
+    {
+      "dimension": 6,
+      "rank": 0,
+      "minimal_polynomial": "0x2",
+      "minimal_degree": 1
+    },
+    {
+      "dimension": 6,
+      "rank": 0,
+      "minimal_polynomial": "0x2",
+      "minimal_degree": 1
+    },
+    {
+      "dimension": 4,
+      "rank": 0,
+      "minimal_polynomial": "0x2",
+      "minimal_degree": 1
+    },
+    {
+      "dimension": 4,
+      "rank": 0,
+      "minimal_polynomial": "0x2",
+      "minimal_degree": 1
+    },
+    {
+      "dimension": 2,
+      "rank": 0,
+      "minimal_polynomial": "0x2",
+      "minimal_degree": 1
+    },
+    {
+      "dimension": 2,
+      "rank": 0,
+      "minimal_polynomial": "0x2",
+      "minimal_degree": 1
+    },
+    {
+      "dimension": 1,
+      "rank": 0,
+      "minimal_polynomial": "0x2",
+      "minimal_degree": 1
+    }
+  ],
+  "row_rank_for_nonzero_identity_coefficient_lower": 37162,
+  "seconds": 1.455
+}

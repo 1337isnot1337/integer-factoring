@@ -1,0 +1,67 @@
+{
+  "homogeneous_pairing_entries": 88,
+  "integer_character_orthogonality_entries": 27068,
+  "integral_adjoint_entries": 4332,
+  "integral_homogenization_entries": 1454,
+  "integral_involutions": 12,
+  "negative_controls": [
+    "omitted adjoint involution",
+    "ordinary multiplication image containment"
+  ],
+  "new_factoring_exponent_claimed": false,
+  "scope": "exact finite checks of the integral adjoint and central fusion-Gram theorem; asymptotic fusion rank remains open",
+  "weights": [
+    {
+      "ambient_dimension": 2,
+      "central_rank": 1,
+      "dimension": 1,
+      "fusion_gram_rank": 0,
+      "fusion_rank": 1,
+      "h": 1,
+      "independent_direct_central_entries": 1,
+      "integral_fusion_entries": 2,
+      "proved_lower_bound": 0,
+      "proved_upper_bound": 1,
+      "row_column_identity_entries": 1
+    },
+    {
+      "ambient_dimension": 5,
+      "central_rank": 2,
+      "dimension": 2,
+      "fusion_gram_rank": 1,
+      "fusion_rank": 3,
+      "h": 2,
+      "independent_direct_central_entries": 16,
+      "integral_fusion_entries": 20,
+      "proved_lower_bound": 0,
+      "proved_upper_bound": 4,
+      "row_column_identity_entries": 16
+    },
+    {
+      "ambient_dimension": 22,
+      "central_rank": 12,
+      "dimension": 5,
+      "fusion_gram_rank": 12,
+      "fusion_rank": 16,
+      "h": 4,
+      "independent_direct_central_entries": 625,
+      "integral_fusion_entries": 550,
+      "proved_lower_bound": 9,
+      "proved_upper_bound": 17,
+      "row_column_identity_entries": 625
+    },
+    {
+      "ambient_dimension": 231,
+      "central_rank": 228,
+      "dimension": 22,
+      "fusion_gram_rank": 227,
+      "fusion_rank": 229,
+      "h": 8,
+      "independent_direct_central_entries": 0,
+      "integral_fusion_entries": 111804,
+      "proved_lower_bound": 226,
+      "proved_upper_bound": 230,
+      "row_column_identity_entries": 234256
+    }
+  ]
+}

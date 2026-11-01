@@ -1,0 +1,139 @@
+{
+  "checker_sha256": "958fdb82844d2adb3f374552dab44fb0f4c7ca7a0afcc2b9c82ad5681371a682",
+  "dimension_tables": [
+    {
+      "auxiliary_dimension": 12,
+      "dimension_gap": 2,
+      "factor_dimensions": [
+        3,
+        4
+      ],
+      "full_rank_row": {
+        "centralizer_bound": 90,
+        "eigenvalue_multiplicity_cap": 9,
+        "incidence_bound": 136,
+        "product_stratum_dimension": 23,
+        "rank": 12
+      },
+      "general_linear_group_dimension": 144,
+      "maximum_incidence_dimension": 142,
+      "nonfull_rank_rows": [
+        {
+          "centralizer_bound": 122,
+          "incidence_bound": 142,
+          "product_stratum_dimension": 10,
+          "rank": 1
+        },
+        {
+          "centralizer_bound": 104,
+          "incidence_bound": 134,
+          "product_stratum_dimension": 15,
+          "rank": 2
+        },
+        {
+          "centralizer_bound": 90,
+          "incidence_bound": 126,
+          "product_stratum_dimension": 18,
+          "rank": 3
+        },
+        {
+          "centralizer_bound": 80,
+          "incidence_bound": 118,
+          "product_stratum_dimension": 19,
+          "rank": 4
+        },
+        {
+          "centralizer_bound": 72,
+          "incidence_bound": 114,
+          "product_stratum_dimension": 21,
+          "rank": 6
+        },
+        {
+          "centralizer_bound": 80,
+          "incidence_bound": 124,
+          "product_stratum_dimension": 22,
+          "rank": 8
+        },
+        {
+          "centralizer_bound": 90,
+          "incidence_bound": 134,
+          "product_stratum_dimension": 22,
+          "rank": 9
+        }
+      ]
+    },
+    {
+      "auxiliary_dimension": 16,
+      "dimension_gap": 6,
+      "factor_dimensions": [
+        4,
+        4
+      ],
+      "full_rank_row": {
+        "centralizer_bound": 160,
+        "eigenvalue_multiplicity_cap": 12,
+        "incidence_bound": 220,
+        "product_stratum_dimension": 30,
+        "rank": 16
+      },
+      "general_linear_group_dimension": 256,
+      "maximum_incidence_dimension": 250,
+      "nonfull_rank_rows": [
+        {
+          "centralizer_bound": 226,
+          "incidence_bound": 250,
+          "product_stratum_dimension": 12,
+          "rank": 1
+        },
+        {
+          "centralizer_bound": 200,
+          "incidence_bound": 234,
+          "product_stratum_dimension": 17,
+          "rank": 2
+        },
+        {
+          "centralizer_bound": 178,
+          "incidence_bound": 218,
+          "product_stratum_dimension": 20,
+          "rank": 3
+        },
+        {
+          "centralizer_bound": 160,
+          "incidence_bound": 204,
+          "product_stratum_dimension": 22,
+          "rank": 4
+        },
+        {
+          "centralizer_bound": 136,
+          "incidence_bound": 186,
+          "product_stratum_dimension": 25,
+          "rank": 6
+        },
+        {
+          "centralizer_bound": 128,
+          "incidence_bound": 180,
+          "product_stratum_dimension": 26,
+          "rank": 8
+        },
+        {
+          "centralizer_bound": 130,
+          "incidence_bound": 186,
+          "product_stratum_dimension": 28,
+          "rank": 9
+        },
+        {
+          "centralizer_bound": 160,
+          "incidence_bound": 218,
+          "product_stratum_dimension": 29,
+          "rank": 12
+        }
+      ]
+    }
+  ],
+  "jordan_block_column_identity_checks": 3369,
+  "maximum_matrix_order_in_jordan_checks": 16,
+  "rank_centralizer_bound_checks": 3369,
+  "scope": "Finite arithmetic verification only; generic existence follows from the companion incidence-dimension proof.",
+  "seconds": 0.04032234799979051,
+  "status": "passed"
+}

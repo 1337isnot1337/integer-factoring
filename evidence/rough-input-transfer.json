@@ -1,0 +1,27 @@
+{
+  "cyclic_cancellation_control": {
+    "nonvanishing_modulus": 5,
+    "support": [
+      3,
+      15
+    ],
+    "vanishing_modulus": 3
+  },
+  "cyclic_queries": 2738093,
+  "full_recovery_cases": 4096,
+  "half_rate_polynomial_ring_parameter_cases": 99999,
+  "largest_prime_used": 44203,
+  "missing_pretrial_negative_control": {
+    "actual_divisor_count": 16,
+    "invalid_unconditional_bound": 4,
+    "number": 210,
+    "threshold_bits": 4
+  },
+  "prime_endpoint_cases_using_cyclic_queries": 649,
+  "rough_support_cases": 17497,
+  "scope": "finite support, parameter, and recovery checks; arithmetic evaluator is separate",
+  "sharper_prime_supply_actual_cases": 6000,
+  "sharper_prime_supply_inequality_cases": 99999,
+  "small_factor_cases": 80807,
+  "sqrt_overhead_parameter_cases": 99999
+}

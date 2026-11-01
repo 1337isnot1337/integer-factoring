@@ -1,0 +1,44 @@
+{
+  "F4_scalar_gram_checks": 288,
+  "binary_gram_checks": 4459,
+  "coefficient_extraction_checks": 2304,
+  "incidence_rank_and_square_checks": 6,
+  "independent_polynomial_checks": 144,
+  "label_counts": [
+    [
+      4,
+      2,
+      3
+    ],
+    [
+      6,
+      2,
+      15
+    ],
+    [
+      8,
+      2,
+      105
+    ],
+    [
+      8,
+      4,
+      35
+    ],
+    [
+      12,
+      4,
+      5775
+    ],
+    [
+      12,
+      6,
+      462
+    ]
+  ],
+  "matching_source_comparisons": 96,
+  "negative_control_nonbalanced_block": "passed",
+  "rank_one_deformation_gram_checks": 192,
+  "scope": "exact constructors and effectivity; no improved asymptotic rank profile",
+  "weighted_multipartite_gram_checks": 2312
+}

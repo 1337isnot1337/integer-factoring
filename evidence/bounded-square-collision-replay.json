@@ -1,0 +1,2512 @@
+{
+  "certificates": [
+    {
+      "certificate": "bounded-square-collision-51bit.json",
+      "comparison_compositions": 39807,
+      "factorization": [
+        32452843,
+        49979687
+      ],
+      "input_bits": 51,
+      "integer_congruence_certificate": {
+        "factorization_of_root_norm": [
+          [
+            5,
+            7
+          ],
+          [
+            11,
+            1
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            37,
+            1
+          ],
+          [
+            41,
+            1
+          ],
+          [
+            43,
+            2
+          ]
+        ],
+        "gcd_minus_and_plus_sorted": [
+          32452843,
+          49979687
+        ],
+        "input_factors_supplied_to_constructor": false,
+        "primitive": true,
+        "root_norm": 1275148838046875,
+        "root_norm_bits": 51,
+        "x": -14573386450661,
+        "y": 31659888
+      },
+      "move_compositions": 102600,
+      "odd_n": 1621982935400141,
+      "retained_keys": 5700,
+      "returned_factors_checked_prime": true,
+      "search_rerun": false,
+      "squaring_compositions": 102600,
+      "status": "factored",
+      "stopped_depth": 9,
+      "word_lengths": [
+        9,
+        9
+      ]
+    },
+    {
+      "certificate": "bounded-square-collision-60bit.json",
+      "comparison_compositions": 126455,
+      "factorization": [
+        1000000007,
+        1000000009
+      ],
+      "input_bits": 60,
+      "integer_congruence_certificate": {
+        "factorization_of_root_norm": [
+          [
+            3,
+            1
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            31,
+            1
+          ],
+          [
+            47,
+            2
+          ],
+          [
+            59,
+            3
+          ],
+          [
+            79,
+            2
+          ],
+          [
+            89,
+            2
+          ],
+          [
+            101,
+            1
+          ]
+        ],
+        "gcd_minus_and_plus_sorted": [
+          1000000007,
+          1000000009
+        ],
+        "input_factors_supplied_to_constructor": false,
+        "primitive": true,
+        "root_norm": 10322534642240879604147,
+        "root_norm_bits": 74,
+        "x": 6544396967525640837739,
+        "y": -7982830873324
+      },
+      "move_compositions": 436308,
+      "odd_n": 1000000016000000063,
+      "retained_keys": 19745,
+      "returned_factors_checked_prime": true,
+      "search_rerun": false,
+      "squaring_compositions": 436308,
+      "status": "factored",
+      "stopped_depth": 13,
+      "word_lengths": [
+        5,
+        11
+      ]
+    },
+    {
+      "certificate": "bounded-square-collision-80bit.json",
+      "comparison_compositions": 2855737,
+      "factorization": [
+        824633708473,
+        1099511627689
+      ],
+      "input_bits": 80,
+      "integer_congruence_certificate": {
+        "factorization_of_root_norm": [
+          [
+            7,
+            7
+          ],
+          [
+            19,
+            5
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            29,
+            5
+          ],
+          [
+            31,
+            4
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            53,
+            4
+          ],
+          [
+            61,
+            1
+          ],
+          [
+            79,
+            1
+          ],
+          [
+            83,
+            2
+          ],
+          [
+            89,
+            2
+          ]
+        ],
+        "gcd_minus_and_plus_sorted": [
+          824633708473,
+          1099511627689
+        ],
+        "input_factors_supplied_to_constructor": false,
+        "primitive": true,
+        "root_norm": 1334979536644048256106903406430501273448026710733029,
+        "root_norm_bits": 170,
+        "x": -674777976666562725944106629841846063782006605272733,
+        "y": 1209705481515201547283113718212162031796
+      },
+      "move_compositions": 11677262,
+      "odd_n": 906694351050364540708897,
+      "retained_keys": 488737,
+      "returned_factors_checked_prime": true,
+      "search_rerun": false,
+      "squaring_compositions": 11677262,
+      "status": "factored",
+      "stopped_depth": 123,
+      "word_lengths": [
+        25,
+        31
+      ]
+    }
+  ],
+  "finite_controls": {
+    "narrow_frontier_control": {
+      "annihilator_supplied": false,
+      "class_number_supplied": false,
+      "complete_generation_claimed": false,
+      "count_scope": "Move, squaring, and collision-comparison loops; setup and certificate replay are separate",
+      "depth_bound": 32,
+      "factor_base_primes": [
+        3,
+        5,
+        7,
+        11,
+        23,
+        31,
+        37,
+        41,
+        43
+      ],
+      "input_bits": 51,
+      "input_factors_supplied": false,
+      "negative_answer_is_exact": false,
+      "odd_n": 1621982935400141,
+      "roots": {
+        "3": 2,
+        "5": 4,
+        "7": 2,
+        "11": 8,
+        "23": 18,
+        "31": 22,
+        "37": 36,
+        "41": 16,
+        "43": 8
+      },
+      "selection": "stratified",
+      "statistics": {
+        "comparison_compositions": 52,
+        "layers": [
+          {
+            "depth": 1,
+            "distinct_new_keys": 9,
+            "input_frontier": 1,
+            "pruned_new_keys": 8,
+            "retained_frontier": 1
+          },
+          {
+            "depth": 2,
+            "distinct_new_keys": 17,
+            "input_frontier": 1,
+            "pruned_new_keys": 16,
+            "retained_frontier": 1
+          },
+          {
+            "depth": 3,
+            "distinct_new_keys": 17,
+            "input_frontier": 1,
+            "pruned_new_keys": 16,
+            "retained_frontier": 1
+          },
+          {
+            "depth": 4,
+            "distinct_new_keys": 17,
+            "input_frontier": 1,
+            "pruned_new_keys": 16,
+            "retained_frontier": 1
+          },
+          {
+            "depth": 5,
+            "distinct_new_keys": 17,
+            "input_frontier": 1,
+            "pruned_new_keys": 16,
+            "retained_frontier": 1
+          },
+          {
+            "depth": 6,
+            "distinct_new_keys": 17,
+            "input_frontier": 1,
+            "pruned_new_keys": 16,
+            "retained_frontier": 1
+          },
+          {
+            "depth": 7,
+            "distinct_new_keys": 17,
+            "input_frontier": 1,
+            "pruned_new_keys": 16,
+            "retained_frontier": 1
+          },
+          {
+            "depth": 8,
+            "distinct_new_keys": 17,
+            "input_frontier": 1,
+            "pruned_new_keys": 16,
+            "retained_frontier": 1
+          },
+          {
+            "depth": 9,
+            "distinct_new_keys": 17,
+            "input_frontier": 1,
+            "pruned_new_keys": 16,
+            "retained_frontier": 1
+          },
+          {
+            "depth": 10,
+            "distinct_new_keys": 17,
+            "input_frontier": 1,
+            "pruned_new_keys": 16,
+            "retained_frontier": 1
+          },
+          {
+            "depth": 11,
+            "distinct_new_keys": 17,
+            "input_frontier": 1,
+            "pruned_new_keys": 16,
+            "retained_frontier": 1
+          },
+          {
+            "depth": 12,
+            "distinct_new_keys": 17,
+            "input_frontier": 1,
+            "pruned_new_keys": 16,
+            "retained_frontier": 1
+          },
+          {
+            "depth": 13,
+            "distinct_new_keys": 17,
+            "input_frontier": 1,
+            "pruned_new_keys": 16,
+            "retained_frontier": 1
+          },
+          {
+            "depth": 14,
+            "distinct_new_keys": 17,
+            "input_frontier": 1,
+            "pruned_new_keys": 16,
+            "retained_frontier": 1
+          },
+          {
+            "depth": 15,
+            "distinct_new_keys": 17,
+            "input_frontier": 1,
+            "pruned_new_keys": 16,
+            "retained_frontier": 1
+          },
+          {
+            "depth": 16,
+            "distinct_new_keys": 17,
+            "input_frontier": 1,
+            "pruned_new_keys": 16,
+            "retained_frontier": 1
+          },
+          {
+            "depth": 17,
+            "distinct_new_keys": 17,
+            "input_frontier": 1,
+            "pruned_new_keys": 16,
+            "retained_frontier": 1
+          },
+          {
+            "depth": 18,
+            "distinct_new_keys": 17,
+            "input_frontier": 1,
+            "pruned_new_keys": 16,
+            "retained_frontier": 1
+          },
+          {
+            "depth": 19,
+            "distinct_new_keys": 17,
+            "input_frontier": 1,
+            "pruned_new_keys": 16,
+            "retained_frontier": 1
+          },
+          {
+            "depth": 20,
+            "distinct_new_keys": 17,
+            "input_frontier": 1,
+            "pruned_new_keys": 16,
+            "retained_frontier": 1
+          },
+          {
+            "depth": 21,
+            "distinct_new_keys": 16,
+            "input_frontier": 1,
+            "pruned_new_keys": 15,
+            "retained_frontier": 1
+          },
+          {
+            "depth": 22,
+            "distinct_new_keys": 16,
+            "input_frontier": 1,
+            "pruned_new_keys": 15,
+            "retained_frontier": 1
+          },
+          {
+            "depth": 23,
+            "distinct_new_keys": 16,
+            "input_frontier": 1,
+            "pruned_new_keys": 15,
+            "retained_frontier": 1
+          },
+          {
+            "depth": 24,
+            "distinct_new_keys": 16,
+            "input_frontier": 1,
+            "pruned_new_keys": 15,
+            "retained_frontier": 1
+          },
+          {
+            "depth": 25,
+            "distinct_new_keys": 16,
+            "input_frontier": 1,
+            "pruned_new_keys": 15,
+            "retained_frontier": 1
+          },
+          {
+            "depth": 26,
+            "distinct_new_keys": 16,
+            "input_frontier": 1,
+            "pruned_new_keys": 15,
+            "retained_frontier": 1
+          },
+          {
+            "depth": 27,
+            "distinct_new_keys": 16,
+            "input_frontier": 1,
+            "pruned_new_keys": 15,
+            "retained_frontier": 1
+          },
+          {
+            "depth": 28,
+            "distinct_new_keys": 16,
+            "input_frontier": 1,
+            "pruned_new_keys": 15,
+            "retained_frontier": 1
+          },
+          {
+            "depth": 29,
+            "distinct_new_keys": 16,
+            "input_frontier": 1,
+            "pruned_new_keys": 15,
+            "retained_frontier": 1
+          },
+          {
+            "depth": 30,
+            "distinct_new_keys": 16,
+            "input_frontier": 1,
+            "pruned_new_keys": 15,
+            "retained_frontier": 1
+          },
+          {
+            "depth": 31,
+            "distinct_new_keys": 16,
+            "input_frontier": 1,
+            "pruned_new_keys": 15,
+            "retained_frontier": 1
+          },
+          {
+            "depth": 32,
+            "distinct_new_keys": 16,
+            "input_frontier": 1,
+            "pruned_new_keys": 15,
+            "retained_frontier": 1
+          }
+        ],
+        "maximum_frontier": 1,
+        "move_compositions": 576,
+        "pruned_key_occurrences": 492,
+        "retained_keys": 33,
+        "squaring_compositions": 576,
+        "stopped_depth": 32,
+        "unhelpful_collisions": 52
+      },
+      "status": "bounded_search_found_no_helpful_collision",
+      "uniform_success_guarantee_claimed": false,
+      "width": 1
+    },
+    "odd_inputs_checked": 128,
+    "other_composite_misses": 0,
+    "prime_power_misses": 63,
+    "proper_subgroup_control": {
+      "annihilator_supplied": false,
+      "class_number_supplied": false,
+      "complete_generation_claimed": false,
+      "count_scope": "Move, squaring, and collision-comparison loops; setup and certificate replay are separate",
+      "depth_bound": 16,
+      "factor_base_primes": [
+        7
+      ],
+      "input_bits": 7,
+      "input_factors_supplied": false,
+      "negative_answer_is_exact": false,
+      "odd_n": 87,
+      "roots": {
+        "7": 4
+      },
+      "selection": "stratified",
+      "statistics": {
+        "comparison_compositions": 3,
+        "layers": [
+          {
+            "depth": 1,
+            "distinct_new_keys": 1,
+            "input_frontier": 1,
+            "pruned_new_keys": 0,
+            "retained_frontier": 1
+          },
+          {
+            "depth": 2,
+            "distinct_new_keys": 0,
+            "input_frontier": 1,
+            "pruned_new_keys": 0,
+            "retained_frontier": 0
+          }
+        ],
+        "maximum_frontier": 1,
+        "move_compositions": 4,
+        "pruned_key_occurrences": 0,
+        "retained_keys": 2,
+        "squaring_compositions": 4,
+        "stopped_depth": 2,
+        "unhelpful_collisions": 3
+      },
+      "status": "bounded_search_found_no_helpful_collision",
+      "uniform_success_guarantee_claimed": false,
+      "width": 32
+    },
+    "records": [
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 3,
+        "retained_keys": 1,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 5,
+        "retained_keys": 1,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 7,
+        "retained_keys": 1,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 9,
+        "retained_keys": 1,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 11,
+        "retained_keys": 2,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 13,
+        "retained_keys": 1,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "comparison_compositions": 1,
+        "factorization": [
+          3,
+          5
+        ],
+        "input_bits": 4,
+        "move_compositions": 1,
+        "odd_n": 15,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 1,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          0,
+          1
+        ]
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 17,
+        "retained_keys": 2,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 19,
+        "retained_keys": 2,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "comparison_compositions": 1,
+        "factorization": [
+          3,
+          7
+        ],
+        "input_bits": 5,
+        "move_compositions": 1,
+        "odd_n": 21,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 1,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          0,
+          1
+        ]
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 23,
+        "retained_keys": 2,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 25,
+        "retained_keys": 1,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 27,
+        "retained_keys": 2,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 29,
+        "retained_keys": 2,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 31,
+        "retained_keys": 2,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "comparison_compositions": 1,
+        "factorization": [
+          3,
+          11
+        ],
+        "input_bits": 6,
+        "move_compositions": 1,
+        "odd_n": 33,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 1,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          0,
+          1
+        ]
+      },
+      {
+        "comparison_compositions": 6,
+        "factorization": [
+          5,
+          7
+        ],
+        "input_bits": 6,
+        "move_compositions": 8,
+        "odd_n": 35,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 8,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 37,
+        "retained_keys": 1,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "comparison_compositions": 0,
+        "factorization": [
+          3,
+          13
+        ],
+        "input_bits": 6,
+        "move_compositions": 1,
+        "odd_n": 39,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 1,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 41,
+        "retained_keys": 3,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 43,
+        "retained_keys": 2,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "comparison_compositions": 1,
+        "factorization": [
+          5,
+          9
+        ],
+        "input_bits": 6,
+        "move_compositions": 1,
+        "odd_n": 45,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 1,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          0,
+          1
+        ]
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 47,
+        "retained_keys": 3,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 49,
+        "retained_keys": 2,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "comparison_compositions": 4,
+        "factorization": [
+          3,
+          17
+        ],
+        "input_bits": 6,
+        "move_compositions": 8,
+        "odd_n": 51,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 8,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 53,
+        "retained_keys": 2,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "comparison_compositions": 0,
+        "factorization": [
+          5,
+          11
+        ],
+        "input_bits": 6,
+        "move_compositions": 1,
+        "odd_n": 55,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 1,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "comparison_compositions": 1,
+        "factorization": [
+          3,
+          19
+        ],
+        "input_bits": 6,
+        "move_compositions": 1,
+        "odd_n": 57,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 1,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          0,
+          1
+        ]
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 59,
+        "retained_keys": 5,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 61,
+        "retained_keys": 2,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "comparison_compositions": 0,
+        "factorization": [
+          7,
+          9
+        ],
+        "input_bits": 6,
+        "move_compositions": 1,
+        "odd_n": 63,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 1,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "comparison_compositions": 0,
+        "factorization": [
+          5,
+          13
+        ],
+        "input_bits": 7,
+        "move_compositions": 1,
+        "odd_n": 65,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 1,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 67,
+        "retained_keys": 2,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "comparison_compositions": 0,
+        "factorization": [
+          3,
+          23
+        ],
+        "input_bits": 7,
+        "move_compositions": 1,
+        "odd_n": 69,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 1,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 71,
+        "retained_keys": 4,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 73,
+        "retained_keys": 2,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "comparison_compositions": 4,
+        "factorization": [
+          3,
+          25
+        ],
+        "input_bits": 7,
+        "move_compositions": 8,
+        "odd_n": 75,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 8,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "comparison_compositions": 0,
+        "factorization": [
+          7,
+          11
+        ],
+        "input_bits": 7,
+        "move_compositions": 1,
+        "odd_n": 77,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 1,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 79,
+        "retained_keys": 3,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 81,
+        "retained_keys": 2,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 83,
+        "retained_keys": 5,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "comparison_compositions": 1,
+        "factorization": [
+          5,
+          17
+        ],
+        "input_bits": 7,
+        "move_compositions": 1,
+        "odd_n": 85,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 1,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          0,
+          1
+        ]
+      },
+      {
+        "comparison_compositions": 4,
+        "factorization": [
+          3,
+          29
+        ],
+        "input_bits": 7,
+        "move_compositions": 8,
+        "odd_n": 87,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 8,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 89,
+        "retained_keys": 4,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "comparison_compositions": 4,
+        "factorization": [
+          7,
+          13
+        ],
+        "input_bits": 7,
+        "move_compositions": 8,
+        "odd_n": 91,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 8,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "comparison_compositions": 1,
+        "factorization": [
+          3,
+          31
+        ],
+        "input_bits": 7,
+        "move_compositions": 1,
+        "odd_n": 93,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 1,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          0,
+          1
+        ]
+      },
+      {
+        "comparison_compositions": 0,
+        "factorization": [
+          5,
+          19
+        ],
+        "input_bits": 7,
+        "move_compositions": 3,
+        "odd_n": 95,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 3,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 97,
+        "retained_keys": 2,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "comparison_compositions": 4,
+        "factorization": [
+          9,
+          11
+        ],
+        "input_bits": 7,
+        "move_compositions": 8,
+        "odd_n": 99,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 8,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 101,
+        "retained_keys": 4,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 103,
+        "retained_keys": 3,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "comparison_compositions": 1,
+        "factorization": [
+          7,
+          15
+        ],
+        "input_bits": 7,
+        "move_compositions": 1,
+        "odd_n": 105,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 1,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          0,
+          1
+        ]
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 107,
+        "retained_keys": 5,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 109,
+        "retained_keys": 2,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "comparison_compositions": 0,
+        "factorization": [
+          3,
+          37
+        ],
+        "input_bits": 7,
+        "move_compositions": 3,
+        "odd_n": 111,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 3,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 113,
+        "retained_keys": 3,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "comparison_compositions": 4,
+        "factorization": [
+          5,
+          23
+        ],
+        "input_bits": 7,
+        "move_compositions": 8,
+        "odd_n": 115,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 8,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "comparison_compositions": 0,
+        "factorization": [
+          9,
+          13
+        ],
+        "input_bits": 7,
+        "move_compositions": 1,
+        "odd_n": 117,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 1,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "comparison_compositions": 7,
+        "factorization": [
+          7,
+          17
+        ],
+        "input_bits": 7,
+        "move_compositions": 9,
+        "odd_n": 119,
+        "retained_keys": 3,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 9,
+        "status": "factored",
+        "stopped_depth": 2,
+        "word_lengths": [
+          1,
+          2
+        ]
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 121,
+        "retained_keys": 2,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "comparison_compositions": 2,
+        "factorization": [
+          3,
+          41
+        ],
+        "input_bits": 7,
+        "move_compositions": 8,
+        "odd_n": 123,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 8,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 125,
+        "retained_keys": 3,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 127,
+        "retained_keys": 3,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "comparison_compositions": 2,
+        "factorization": [
+          3,
+          43
+        ],
+        "input_bits": 8,
+        "move_compositions": 8,
+        "odd_n": 129,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 8,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 131,
+        "retained_keys": 8,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "comparison_compositions": 1,
+        "factorization": [
+          7,
+          19
+        ],
+        "input_bits": 8,
+        "move_compositions": 1,
+        "odd_n": 133,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 1,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          0,
+          1
+        ]
+      },
+      {
+        "comparison_compositions": 4,
+        "factorization": [
+          5,
+          27
+        ],
+        "input_bits": 8,
+        "move_compositions": 8,
+        "odd_n": 135,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 8,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 137,
+        "retained_keys": 3,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 139,
+        "retained_keys": 5,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "comparison_compositions": 0,
+        "factorization": [
+          3,
+          47
+        ],
+        "input_bits": 8,
+        "move_compositions": 1,
+        "odd_n": 141,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 1,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "comparison_compositions": 2,
+        "factorization": [
+          11,
+          13
+        ],
+        "input_bits": 8,
+        "move_compositions": 8,
+        "odd_n": 143,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 8,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "comparison_compositions": 0,
+        "factorization": [
+          5,
+          29
+        ],
+        "input_bits": 8,
+        "move_compositions": 1,
+        "odd_n": 145,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 1,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "comparison_compositions": 2,
+        "factorization": [
+          3,
+          49
+        ],
+        "input_bits": 8,
+        "move_compositions": 8,
+        "odd_n": 147,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 8,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 149,
+        "retained_keys": 4,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 151,
+        "retained_keys": 4,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "comparison_compositions": 0,
+        "factorization": [
+          9,
+          17
+        ],
+        "input_bits": 8,
+        "move_compositions": 1,
+        "odd_n": 153,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 1,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "comparison_compositions": 0,
+        "factorization": [
+          5,
+          31
+        ],
+        "input_bits": 8,
+        "move_compositions": 3,
+        "odd_n": 155,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 3,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 157,
+        "retained_keys": 2,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "comparison_compositions": 2,
+        "factorization": [
+          3,
+          53
+        ],
+        "input_bits": 8,
+        "move_compositions": 8,
+        "odd_n": 159,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 8,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "comparison_compositions": 3,
+        "factorization": [
+          7,
+          23
+        ],
+        "input_bits": 8,
+        "move_compositions": 8,
+        "odd_n": 161,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 8,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 163,
+        "retained_keys": 2,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "comparison_compositions": 1,
+        "factorization": [
+          11,
+          15
+        ],
+        "input_bits": 8,
+        "move_compositions": 1,
+        "odd_n": 165,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 1,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          0,
+          1
+        ]
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 167,
+        "retained_keys": 6,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 169,
+        "retained_keys": 2,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "comparison_compositions": 3,
+        "factorization": [
+          9,
+          19
+        ],
+        "input_bits": 8,
+        "move_compositions": 8,
+        "odd_n": 171,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 8,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 173,
+        "retained_keys": 4,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "comparison_compositions": 4,
+        "factorization": [
+          7,
+          25
+        ],
+        "input_bits": 8,
+        "move_compositions": 8,
+        "odd_n": 175,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 8,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "comparison_compositions": 1,
+        "factorization": [
+          3,
+          59
+        ],
+        "input_bits": 8,
+        "move_compositions": 1,
+        "odd_n": 177,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 1,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          0,
+          1
+        ]
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 179,
+        "retained_keys": 8,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 181,
+        "retained_keys": 3,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "comparison_compositions": 0,
+        "factorization": [
+          3,
+          61
+        ],
+        "input_bits": 8,
+        "move_compositions": 3,
+        "odd_n": 183,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 3,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "comparison_compositions": 0,
+        "factorization": [
+          5,
+          37
+        ],
+        "input_bits": 8,
+        "move_compositions": 5,
+        "odd_n": 185,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 5,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "comparison_compositions": 2,
+        "factorization": [
+          11,
+          17
+        ],
+        "input_bits": 8,
+        "move_compositions": 8,
+        "odd_n": 187,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 8,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "comparison_compositions": 1,
+        "factorization": [
+          7,
+          27
+        ],
+        "input_bits": 8,
+        "move_compositions": 5,
+        "odd_n": 189,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 5,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          0,
+          1
+        ]
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 191,
+        "retained_keys": 7,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 193,
+        "retained_keys": 2,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "comparison_compositions": 2,
+        "factorization": [
+          3,
+          65
+        ],
+        "input_bits": 8,
+        "move_compositions": 8,
+        "odd_n": 195,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 8,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 197,
+        "retained_keys": 3,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 199,
+        "retained_keys": 5,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "comparison_compositions": 2,
+        "factorization": [
+          3,
+          67
+        ],
+        "input_bits": 8,
+        "move_compositions": 8,
+        "odd_n": 201,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 8,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "comparison_compositions": 0,
+        "factorization": [
+          7,
+          29
+        ],
+        "input_bits": 8,
+        "move_compositions": 3,
+        "odd_n": 203,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 3,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "comparison_compositions": 0,
+        "factorization": [
+          5,
+          41
+        ],
+        "input_bits": 8,
+        "move_compositions": 1,
+        "odd_n": 205,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 1,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "comparison_compositions": 4,
+        "factorization": [
+          9,
+          23
+        ],
+        "input_bits": 8,
+        "move_compositions": 8,
+        "odd_n": 207,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 8,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "comparison_compositions": 2,
+        "factorization": [
+          11,
+          19
+        ],
+        "input_bits": 8,
+        "move_compositions": 8,
+        "odd_n": 209,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 8,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 211,
+        "retained_keys": 5,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "comparison_compositions": 0,
+        "factorization": [
+          3,
+          71
+        ],
+        "input_bits": 8,
+        "move_compositions": 1,
+        "odd_n": 213,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 1,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "comparison_compositions": 3,
+        "factorization": [
+          5,
+          43
+        ],
+        "input_bits": 8,
+        "move_compositions": 8,
+        "odd_n": 215,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 8,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "comparison_compositions": 1,
+        "factorization": [
+          7,
+          31
+        ],
+        "input_bits": 8,
+        "move_compositions": 7,
+        "odd_n": 217,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 7,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          0,
+          1
+        ]
+      },
+      {
+        "comparison_compositions": 0,
+        "factorization": [
+          3,
+          73
+        ],
+        "input_bits": 8,
+        "move_compositions": 3,
+        "odd_n": 219,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 3,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "comparison_compositions": 0,
+        "factorization": [
+          13,
+          17
+        ],
+        "input_bits": 8,
+        "move_compositions": 5,
+        "odd_n": 221,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 5,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 223,
+        "retained_keys": 4,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "comparison_compositions": 0,
+        "factorization": [
+          9,
+          25
+        ],
+        "input_bits": 8,
+        "move_compositions": 1,
+        "odd_n": 225,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 1,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 227,
+        "retained_keys": 8,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 229,
+        "retained_keys": 3,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "comparison_compositions": 2,
+        "factorization": [
+          7,
+          33
+        ],
+        "input_bits": 8,
+        "move_compositions": 8,
+        "odd_n": 231,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 8,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 233,
+        "retained_keys": 4,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "comparison_compositions": 2,
+        "factorization": [
+          5,
+          47
+        ],
+        "input_bits": 8,
+        "move_compositions": 8,
+        "odd_n": 235,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 8,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "comparison_compositions": 2,
+        "factorization": [
+          3,
+          79
+        ],
+        "input_bits": 8,
+        "move_compositions": 8,
+        "odd_n": 237,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 8,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 239,
+        "retained_keys": 8,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 241,
+        "retained_keys": 4,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 243,
+        "retained_keys": 5,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "comparison_compositions": 4,
+        "factorization": [
+          5,
+          49
+        ],
+        "input_bits": 8,
+        "move_compositions": 8,
+        "odd_n": 245,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 8,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "comparison_compositions": 4,
+        "factorization": [
+          13,
+          19
+        ],
+        "input_bits": 8,
+        "move_compositions": 8,
+        "odd_n": 247,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 8,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "comparison_compositions": 2,
+        "factorization": [
+          3,
+          83
+        ],
+        "input_bits": 8,
+        "move_compositions": 8,
+        "odd_n": 249,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 8,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 251,
+        "retained_keys": 11,
+        "status": "bounded_search_found_no_helpful_collision"
+      },
+      {
+        "comparison_compositions": 1,
+        "factorization": [
+          11,
+          23
+        ],
+        "input_bits": 8,
+        "move_compositions": 1,
+        "odd_n": 253,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 1,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          0,
+          1
+        ]
+      },
+      {
+        "comparison_compositions": 2,
+        "factorization": [
+          15,
+          17
+        ],
+        "input_bits": 8,
+        "move_compositions": 8,
+        "odd_n": 255,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 8,
+        "status": "factored",
+        "stopped_depth": 1,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "miss_is_inconclusive": true,
+        "odd_n": 257,
+        "retained_keys": 5,
+        "status": "bounded_search_found_no_helpful_collision"
+      }
+    ],
+    "self_inverse_key_control": {
+      "annihilator_supplied": false,
+      "class_number_supplied": false,
+      "collision": {
+        "ambiguous_difference": [
+          81,
+          4,
+          81
+        ],
+        "factor_data": {
+          "coprime_factors": [
+            79,
+            83
+          ],
+          "form": [
+            81,
+            4,
+            81
+          ],
+          "proper_factor": 79,
+          "shape": "equal_outer_coefficients"
+        },
+        "factorization": [
+          79,
+          83
+        ],
+        "key": [
+          81,
+          4,
+          81
+        ],
+        "kind": "self_inverse_square_key",
+        "left": {
+          "depth": 2,
+          "orientation": 1,
+          "root": [
+            9,
+            4,
+            729
+          ],
+          "word": [
+            -2
+          ]
+        },
+        "right": {
+          "depth": 2,
+          "orientation": 1,
+          "root": [
+            9,
+            -4,
+            729
+          ],
+          "word": [
+            2
+          ]
+        }
+      },
+      "complete_generation_claimed": false,
+      "count_scope": "Move, squaring, and collision-comparison loops; setup and certificate replay are separate",
+      "depth_bound": 2,
+      "factor_base_primes": [
+        3
+      ],
+      "factorization": [
+        79,
+        83
+      ],
+      "input_bits": 13,
+      "input_factors_supplied": false,
+      "odd_n": 6557,
+      "roots": {
+        "3": 2
+      },
+      "selection": "stratified",
+      "statistics": {
+        "comparison_compositions": 1,
+        "layers": [
+          {
+            "depth": 1,
+            "distinct_new_keys": 1,
+            "input_frontier": 1,
+            "pruned_new_keys": 0,
+            "retained_frontier": 1
+          }
+        ],
+        "maximum_frontier": 1,
+        "move_compositions": 3,
+        "pruned_key_occurrences": 0,
+        "retained_keys": 2,
+        "squaring_compositions": 3,
+        "stopped_depth": 2,
+        "unhelpful_collisions": 1
+      },
+      "status": "factored",
+      "uniform_success_guarantee_claimed": false,
+      "width": 1
+    },
+    "successful_coprime_splits": 65
+  },
+  "injectivity_and_boundary_controls": {
+    "boundary_controls": [
+      {
+        "comparison_compositions": 0,
+        "factorization": [
+          7,
+          11
+        ],
+        "input_bits": 7,
+        "move_compositions": 1,
+        "odd_n": 77,
+        "radius": 1,
+        "retained_keys": 1,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 1,
+        "status": "factored",
+        "stopped_depth": 1,
+        "threshold": 81,
+        "word_lengths": [
+          1,
+          1
+        ]
+      },
+      {
+        "comparison_compositions": 1,
+        "factorization": [
+          79,
+          83
+        ],
+        "input_bits": 13,
+        "move_compositions": 3,
+        "odd_n": 6557,
+        "radius": 2,
+        "retained_keys": 2,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 3,
+        "status": "factored",
+        "stopped_depth": 2,
+        "threshold": 6561,
+        "word_lengths": [
+          2,
+          2
+        ]
+      },
+      {
+        "comparison_compositions": 2,
+        "factorization": [
+          727,
+          731
+        ],
+        "input_bits": 20,
+        "move_compositions": 5,
+        "odd_n": 531437,
+        "radius": 3,
+        "retained_keys": 3,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 5,
+        "status": "factored",
+        "stopped_depth": 3,
+        "threshold": 531441,
+        "word_lengths": [
+          3,
+          3
+        ]
+      },
+      {
+        "comparison_compositions": 3,
+        "factorization": [
+          6559,
+          6563
+        ],
+        "input_bits": 26,
+        "move_compositions": 7,
+        "odd_n": 43046717,
+        "radius": 4,
+        "retained_keys": 4,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 7,
+        "status": "factored",
+        "stopped_depth": 4,
+        "threshold": 43046721,
+        "word_lengths": [
+          4,
+          4
+        ]
+      },
+      {
+        "comparison_compositions": 4,
+        "factorization": [
+          59047,
+          59051
+        ],
+        "input_bits": 32,
+        "move_compositions": 9,
+        "odd_n": 3486784397,
+        "radius": 5,
+        "retained_keys": 5,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 9,
+        "status": "factored",
+        "stopped_depth": 5,
+        "threshold": 3486784401,
+        "word_lengths": [
+          5,
+          5
+        ]
+      },
+      {
+        "comparison_compositions": 5,
+        "factorization": [
+          531439,
+          531443
+        ],
+        "input_bits": 39,
+        "move_compositions": 11,
+        "odd_n": 282429536477,
+        "radius": 6,
+        "retained_keys": 6,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 11,
+        "status": "factored",
+        "stopped_depth": 6,
+        "threshold": 282429536481,
+        "word_lengths": [
+          6,
+          6
+        ]
+      },
+      {
+        "comparison_compositions": 6,
+        "factorization": [
+          4782967,
+          4782971
+        ],
+        "input_bits": 45,
+        "move_compositions": 13,
+        "odd_n": 22876792454957,
+        "radius": 7,
+        "retained_keys": 7,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 13,
+        "status": "factored",
+        "stopped_depth": 7,
+        "threshold": 22876792454961,
+        "word_lengths": [
+          7,
+          7
+        ]
+      },
+      {
+        "comparison_compositions": 7,
+        "factorization": [
+          43046719,
+          43046723
+        ],
+        "input_bits": 51,
+        "move_compositions": 15,
+        "odd_n": 1853020188851837,
+        "radius": 8,
+        "retained_keys": 8,
+        "returned_factors_checked_prime": false,
+        "search_rerun": false,
+        "squaring_compositions": 15,
+        "status": "factored",
+        "stopped_depth": 8,
+        "threshold": 1853020188851841,
+        "word_lengths": [
+          8,
+          8
+        ]
+      }
+    ],
+    "boundary_family": "N=3^(4r)-4; the helpful square key appears exactly at radius r",
+    "injective_ball_subset": {
+      "distinct_square_keys": 560,
+      "exact_support_count": 560,
+      "factor_base_primes": [
+        3,
+        5,
+        7,
+        11,
+        13,
+        17,
+        19,
+        23
+      ],
+      "odd_n": 6132610415681596506659,
+      "prime_bound_four_radius_power": 6132610415680998648961,
+      "radius": 4
+    }
+  },
+  "scope": "Independent signed-word, square-key and ambiguous-factor replay",
+  "uniform_success_guarantee_claimed": false
+}

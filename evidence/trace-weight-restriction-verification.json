@@ -1,0 +1,453 @@
+{
+  "status": "passed",
+  "native_source_sha256": "c27a3239f7a31f7abf4795e84d764076e0a7bab87d84b66ae81b10b2218c3447",
+  "independent_restricted_profiles": 9,
+  "small_results": [
+    {
+      "t": 4,
+      "weight": 2,
+      "label_count": 6,
+      "field_polynomial": 19,
+      "primitive_element": 2,
+      "unordered_label_pairs": 15,
+      "profiles": [
+        {
+          "k": 1,
+          "row_rank": 8,
+          "column_rank": 8,
+          "block_size_cap": 16,
+          "syndrome_image_total": 12,
+          "nonzero_blocks": 4
+        },
+        {
+          "k": 2,
+          "row_rank": 14,
+          "column_rank": 14,
+          "block_size_cap": 32,
+          "syndrome_image_total": 21,
+          "nonzero_blocks": 4
+        },
+        {
+          "k": 3,
+          "row_rank": 12,
+          "column_rank": 12,
+          "block_size_cap": 36,
+          "syndrome_image_total": 31,
+          "nonzero_blocks": 3
+        }
+      ]
+    },
+    {
+      "t": 7,
+      "weight": 2,
+      "label_count": 21,
+      "field_polynomial": 131,
+      "primitive_element": 2,
+      "unordered_label_pairs": 210,
+      "profiles": [
+        {
+          "k": 1,
+          "row_rank": 100,
+          "column_rank": 100,
+          "block_size_cap": 114,
+          "syndrome_image_total": 107,
+          "nonzero_blocks": 50
+        },
+        {
+          "k": 2,
+          "row_rank": 164,
+          "column_rank": 164,
+          "block_size_cap": 228,
+          "syndrome_image_total": 191,
+          "nonzero_blocks": 45
+        },
+        {
+          "k": 3,
+          "row_rank": 174,
+          "column_rank": 174,
+          "block_size_cap": 386,
+          "syndrome_image_total": 275,
+          "nonzero_blocks": 40
+        },
+        {
+          "k": 4,
+          "row_rank": 148,
+          "column_rank": 148,
+          "block_size_cap": 436,
+          "syndrome_image_total": 355,
+          "nonzero_blocks": 31
+        },
+        {
+          "k": 5,
+          "row_rank": 70,
+          "column_rank": 70,
+          "block_size_cap": 441,
+          "syndrome_image_total": 391,
+          "nonzero_blocks": 17
+        },
+        {
+          "k": 6,
+          "row_rank": 44,
+          "column_rank": 44,
+          "block_size_cap": 441,
+          "syndrome_image_total": 408,
+          "nonzero_blocks": 10
+        }
+      ]
+    }
+  ],
+  "ordinary_composition_checks": 55,
+  "full_screen": true,
+  "screen_profiles": 36,
+  "screen_results": [
+    {
+      "t": 12,
+      "weight": 3,
+      "label_count": 220,
+      "field_polynomial": 4105,
+      "primitive_element": 3,
+      "unordered_label_pairs": 24090,
+      "profiles": [
+        {
+          "k": 1,
+          "row_rank": 2910,
+          "column_rank": 2910,
+          "block_size_cap": 2972,
+          "syndrome_image_total": 2941,
+          "nonzero_blocks": 1455
+        },
+        {
+          "k": 2,
+          "row_rank": 5684,
+          "column_rank": 5684,
+          "block_size_cap": 5944,
+          "syndrome_image_total": 5793,
+          "nonzero_blocks": 1436
+        },
+        {
+          "k": 3,
+          "row_rank": 10584,
+          "column_rank": 10584,
+          "block_size_cap": 11888,
+          "syndrome_image_total": 11107,
+          "nonzero_blocks": 1390
+        },
+        {
+          "k": 4,
+          "row_rank": 16064,
+          "column_rank": 16064,
+          "block_size_cap": 23776,
+          "syndrome_image_total": 19035,
+          "nonzero_blocks": 1316
+        },
+        {
+          "k": 5,
+          "row_rank": 17906,
+          "column_rank": 17906,
+          "block_size_cap": 36464,
+          "syndrome_image_total": 27996,
+          "nonzero_blocks": 1149
+        },
+        {
+          "k": 6,
+          "row_rank": 15236,
+          "column_rank": 15236,
+          "block_size_cap": 46528,
+          "syndrome_image_total": 35943,
+          "nonzero_blocks": 908
+        }
+      ]
+    },
+    {
+      "t": 12,
+      "weight": 4,
+      "label_count": 495,
+      "field_polynomial": 4105,
+      "primitive_element": 3,
+      "unordered_label_pairs": 122265,
+      "profiles": [
+        {
+          "k": 1,
+          "row_rank": 3948,
+          "column_rank": 3948,
+          "block_size_cap": 3962,
+          "syndrome_image_total": 3955,
+          "nonzero_blocks": 1974
+        },
+        {
+          "k": 2,
+          "row_rank": 7856,
+          "column_rank": 7856,
+          "block_size_cap": 7924,
+          "syndrome_image_total": 7883,
+          "nonzero_blocks": 1967
+        },
+        {
+          "k": 3,
+          "row_rank": 15560,
+          "column_rank": 15560,
+          "block_size_cap": 15848,
+          "syndrome_image_total": 15673,
+          "nonzero_blocks": 1955
+        },
+        {
+          "k": 4,
+          "row_rank": 30550,
+          "column_rank": 30550,
+          "block_size_cap": 31696,
+          "syndrome_image_total": 30971,
+          "nonzero_blocks": 1939
+        },
+        {
+          "k": 5,
+          "row_rank": 57250,
+          "column_rank": 57250,
+          "block_size_cap": 63392,
+          "syndrome_image_total": 59652,
+          "nonzero_blocks": 1905
+        },
+        {
+          "k": 6,
+          "row_rank": 88772,
+          "column_rank": 88772,
+          "block_size_cap": 126784,
+          "syndrome_image_total": 104205,
+          "nonzero_blocks": 1834
+        }
+      ]
+    },
+    {
+      "t": 12,
+      "weight": 5,
+      "label_count": 792,
+      "field_polynomial": 4105,
+      "primitive_element": 3,
+      "unordered_label_pairs": 313236,
+      "profiles": [
+        {
+          "k": 1,
+          "row_rank": 4086,
+          "column_rank": 4086,
+          "block_size_cap": 4094,
+          "syndrome_image_total": 4090,
+          "nonzero_blocks": 2043
+        },
+        {
+          "k": 2,
+          "row_rank": 8164,
+          "column_rank": 8164,
+          "block_size_cap": 8188,
+          "syndrome_image_total": 8173,
+          "nonzero_blocks": 2042
+        },
+        {
+          "k": 3,
+          "row_rank": 16294,
+          "column_rank": 16294,
+          "block_size_cap": 16376,
+          "syndrome_image_total": 16323,
+          "nonzero_blocks": 2040
+        },
+        {
+          "k": 4,
+          "row_rank": 32444,
+          "column_rank": 32444,
+          "block_size_cap": 32752,
+          "syndrome_image_total": 32546,
+          "nonzero_blocks": 2035
+        },
+        {
+          "k": 5,
+          "row_rank": 64374,
+          "column_rank": 64374,
+          "block_size_cap": 65504,
+          "syndrome_image_total": 64764,
+          "nonzero_blocks": 2026
+        },
+        {
+          "k": 6,
+          "row_rank": 124854,
+          "column_rank": 124854,
+          "block_size_cap": 131008,
+          "syndrome_image_total": 127129,
+          "nonzero_blocks": 2002
+        }
+      ]
+    },
+    {
+      "t": 14,
+      "weight": 4,
+      "label_count": 1001,
+      "field_polynomial": 16417,
+      "primitive_element": 7,
+      "unordered_label_pairs": 500500,
+      "profiles": [
+        {
+          "k": 1,
+          "row_rank": 14178,
+          "column_rank": 14178,
+          "block_size_cap": 14198,
+          "syndrome_image_total": 14188,
+          "nonzero_blocks": 7089
+        },
+        {
+          "k": 2,
+          "row_rank": 28258,
+          "column_rank": 28258,
+          "block_size_cap": 28396,
+          "syndrome_image_total": 28310,
+          "nonzero_blocks": 7073
+        },
+        {
+          "k": 3,
+          "row_rank": 55934,
+          "column_rank": 55934,
+          "block_size_cap": 56792,
+          "syndrome_image_total": 56261,
+          "nonzero_blocks": 7021
+        },
+        {
+          "k": 4,
+          "row_rank": 109212,
+          "column_rank": 109212,
+          "block_size_cap": 113584,
+          "syndrome_image_total": 110784,
+          "nonzero_blocks": 6932
+        },
+        {
+          "k": 5,
+          "row_rank": 201816,
+          "column_rank": 201816,
+          "block_size_cap": 227168,
+          "syndrome_image_total": 211713,
+          "nonzero_blocks": 6726
+        },
+        {
+          "k": 6,
+          "row_rank": 317824,
+          "column_rank": 317824,
+          "block_size_cap": 454336,
+          "syndrome_image_total": 371012,
+          "nonzero_blocks": 6405
+        }
+      ]
+    },
+    {
+      "t": 14,
+      "weight": 5,
+      "label_count": 2002,
+      "field_polynomial": 16417,
+      "primitive_element": 7,
+      "unordered_label_pairs": 2003001,
+      "profiles": [
+        {
+          "k": 1,
+          "row_rank": 16198,
+          "column_rank": 16198,
+          "block_size_cap": 16200,
+          "syndrome_image_total": 16199,
+          "nonzero_blocks": 8099
+        },
+        {
+          "k": 2,
+          "row_rank": 32388,
+          "column_rank": 32388,
+          "block_size_cap": 32400,
+          "syndrome_image_total": 32391,
+          "nonzero_blocks": 8098
+        },
+        {
+          "k": 3,
+          "row_rank": 64726,
+          "column_rank": 64726,
+          "block_size_cap": 64800,
+          "syndrome_image_total": 64748,
+          "nonzero_blocks": 8094
+        },
+        {
+          "k": 4,
+          "row_rank": 129206,
+          "column_rank": 129206,
+          "block_size_cap": 129600,
+          "syndrome_image_total": 129310,
+          "nonzero_blocks": 8088
+        },
+        {
+          "k": 5,
+          "row_rank": 256964,
+          "column_rank": 256964,
+          "block_size_cap": 259200,
+          "syndrome_image_total": 257691,
+          "nonzero_blocks": 8062
+        },
+        {
+          "k": 6,
+          "row_rank": 505754,
+          "column_rank": 505754,
+          "block_size_cap": 518400,
+          "syndrome_image_total": 510444,
+          "nonzero_blocks": 8005
+        }
+      ]
+    },
+    {
+      "t": 14,
+      "weight": 6,
+      "label_count": 3003,
+      "field_polynomial": 16417,
+      "primitive_element": 7,
+      "unordered_label_pairs": 4507503,
+      "profiles": [
+        {
+          "k": 1,
+          "row_rank": 16380,
+          "column_rank": 16380,
+          "block_size_cap": 16382,
+          "syndrome_image_total": 16381,
+          "nonzero_blocks": 8190
+        },
+        {
+          "k": 2,
+          "row_rank": 32754,
+          "column_rank": 32754,
+          "block_size_cap": 32764,
+          "syndrome_image_total": 32757,
+          "nonzero_blocks": 8189
+        },
+        {
+          "k": 3,
+          "row_rank": 65492,
+          "column_rank": 65492,
+          "block_size_cap": 65528,
+          "syndrome_image_total": 65501,
+          "nonzero_blocks": 8188
+        },
+        {
+          "k": 4,
+          "row_rank": 130908,
+          "column_rank": 130908,
+          "block_size_cap": 131056,
+          "syndrome_image_total": 130949,
+          "nonzero_blocks": 8185
+        },
+        {
+          "k": 5,
+          "row_rank": 261184,
+          "column_rank": 261184,
+          "block_size_cap": 262112,
+          "syndrome_image_total": 261501,
+          "nonzero_blocks": 8171
+        },
+        {
+          "k": 6,
+          "row_rank": 519618,
+          "column_rank": 519618,
+          "block_size_cap": 524224,
+          "syndrome_image_total": 521258,
+          "nonzero_blocks": 8142
+        }
+      ]
+    }
+  ],
+  "scope": "Exact ranks of individual restricted pieces; no crossing synthesis."
+}

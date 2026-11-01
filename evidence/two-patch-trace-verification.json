@@ -1,0 +1,193 @@
+{
+  "coefficient_cuts_checked": 42,
+  "dense_checks": [
+    {
+      "coefficient_cuts_checked": 10,
+      "endpoint_entries_checked": 64,
+      "field_polynomial": 7,
+      "t": 2
+    },
+    {
+      "coefficient_cuts_checked": 14,
+      "endpoint_entries_checked": 512,
+      "field_polynomial": 11,
+      "t": 3
+    },
+    {
+      "coefficient_cuts_checked": 18,
+      "endpoint_entries_checked": 4096,
+      "field_polynomial": 19,
+      "t": 4
+    }
+  ],
+  "endpoint_entries_checked": 4672,
+  "profiles": [
+    {
+      "cached_circulant_kernels": 11,
+      "column_ranks": [
+        4,
+        8,
+        8,
+        16,
+        0
+      ],
+      "field_polynomial": 7,
+      "maximum_product_rho": 0.875,
+      "maximum_rank_product": 128,
+      "rank_sum_estimate": 31.31370849898476,
+      "rank_sum_floor": 31,
+      "rank_sum_rho": 1.2421806181538775,
+      "row_ranks": [
+        4,
+        8,
+        16,
+        4,
+        0
+      ],
+      "t": 2
+    },
+    {
+      "cached_circulant_kernels": 40,
+      "column_ranks": [
+        8,
+        16,
+        28,
+        48,
+        40,
+        24,
+        0
+      ],
+      "field_polynomial": 11,
+      "maximum_product_rho": 0.9203661766132045,
+      "maximum_rank_product": 2112,
+      "rank_sum_estimate": 165.77430577271753,
+      "rank_sum_floor": 164,
+      "rank_sum_rho": 1.2288461005134552,
+      "row_ranks": [
+        8,
+        16,
+        28,
+        44,
+        48,
+        24,
+        0
+      ],
+      "t": 3
+    },
+    {
+      "cached_circulant_kernels": 157,
+      "column_ranks": [
+        16,
+        32,
+        80,
+        128,
+        184,
+        192,
+        192,
+        80,
+        0
+      ],
+      "field_polynomial": 19,
+      "maximum_product_rho": 0.9442827785486355,
+      "maximum_rank_product": 35328,
+      "rank_sum_estimate": 865.793360584127,
+      "rank_sum_floor": 863,
+      "rank_sum_rho": 1.219734865866005,
+      "row_ranks": [
+        16,
+        32,
+        80,
+        112,
+        192,
+        144,
+        176,
+        80,
+        0
+      ],
+      "t": 4
+    },
+    {
+      "cached_circulant_kernels": 428,
+      "column_ranks": [
+        32,
+        64,
+        188,
+        288,
+        496,
+        624,
+        816,
+        736,
+        544,
+        320,
+        0
+      ],
+      "field_polynomial": 37,
+      "maximum_product_rho": 0.9597993649014255,
+      "maximum_rank_product": 600576,
+      "rank_sum_estimate": 4073.9681973786273,
+      "rank_sum_floor": 4070,
+      "rank_sum_rho": 1.1992219002898332,
+      "row_ranks": [
+        32,
+        64,
+        168,
+        312,
+        444,
+        752,
+        736,
+        736,
+        592,
+        224,
+        0
+      ],
+      "t": 5
+    },
+    {
+      "cached_circulant_kernels": 1078,
+      "column_ranks": [
+        64,
+        128,
+        464,
+        752,
+        1592,
+        2000,
+        3328,
+        3200,
+        2648,
+        2848,
+        1920,
+        576,
+        0
+      ],
+      "field_polynomial": 67,
+      "maximum_product_rho": 0.9692784225984236,
+      "maximum_rank_product": 10063872,
+      "rank_sum_estimate": 19183.887871095227,
+      "rank_sum_floor": 19180,
+      "rank_sum_rho": 1.185633959246294,
+      "row_ranks": [
+        64,
+        128,
+        436,
+        680,
+        1468,
+        1824,
+        3024,
+        2632,
+        3008,
+        2720,
+        2368,
+        576,
+        0
+      ],
+      "t": 6
+    }
+  ],
+  "scope": "Exact endpoint and finite ranks; all five tested raw rank sums exceed d^2. No asymptotic barrier or score improvement.",
+  "source_sha256": {
+    "check_trace_bilinear_kernel.py": "63f4fa4dc682a8be64740f284d3ba785f4d152723ad3a7da3d26aa6aa18d723c",
+    "check_two_patch_trace.py": "ada3bab846392cded6be4ebcc03172c6b025407cc3eaf91e300baa3dabc6afb2",
+    "two_patch_trace_probe.py": "910c92e8d1ddfa8a787ba2c0bf0d26c3fb031b7975ef2093b178c6d3808fa823"
+  },
+  "status": "passed"
+}

@@ -1,0 +1,62 @@
+{
+  "energy": 8,
+  "labels": 10,
+  "core_dimension": 31,
+  "core_rank": 13,
+  "core_minimal_polynomial": "0x14",
+  "core_minimal_degree": 4,
+  "central_annihilator": "0x28",
+  "word_algebra_dimension_upper": 20,
+  "parity_blocks": [
+    {
+      "dimension": 6,
+      "rank": 4,
+      "minimal_polynomial": "0xa",
+      "minimal_degree": 3
+    },
+    {
+      "dimension": 6,
+      "rank": 2,
+      "minimal_polynomial": "0xa",
+      "minimal_degree": 3
+    },
+    {
+      "dimension": 6,
+      "rank": 4,
+      "minimal_polynomial": "0xa",
+      "minimal_degree": 3
+    },
+    {
+      "dimension": 4,
+      "rank": 3,
+      "minimal_polynomial": "0x14",
+      "minimal_degree": 4
+    },
+    {
+      "dimension": 4,
+      "rank": 0,
+      "minimal_polynomial": "0x2",
+      "minimal_degree": 1
+    },
+    {
+      "dimension": 2,
+      "rank": 0,
+      "minimal_polynomial": "0x2",
+      "minimal_degree": 1
+    },
+    {
+      "dimension": 2,
+      "rank": 0,
+      "minimal_polynomial": "0x2",
+      "minimal_degree": 1
+    },
+    {
+      "dimension": 1,
+      "rank": 0,
+      "minimal_polynomial": "0x2",
+      "minimal_degree": 1
+    }
+  ],
+  "row_rank_for_nonzero_identity_coefficient_lower": 38,
+  "seconds": 0.001
+}

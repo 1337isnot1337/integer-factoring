@@ -1,0 +1,175 @@
+{
+  "additive_hash_parameters": 122,
+  "binary_polynomial_hash_parameters": 56,
+  "characteristic_two_additive_buckets": 891,
+  "complete_factor_recovery_cases": 766,
+  "constructed_additive_fields": [
+    {
+      "coefficient_polynomial": [
+        1,
+        1,
+        1
+      ],
+      "coefficient_prime": 2,
+      "control_degree": 2,
+      "control_polynomial": [
+        1,
+        0,
+        1
+      ],
+      "control_prime": 3,
+      "root": 2
+    },
+    {
+      "coefficient_polynomial": [
+        1,
+        1,
+        1
+      ],
+      "coefficient_prime": 2,
+      "control_degree": 3,
+      "control_polynomial": [
+        1,
+        2,
+        0,
+        1
+      ],
+      "control_prime": 3,
+      "root": 2
+    },
+    {
+      "coefficient_polynomial": [
+        1,
+        1,
+        1
+      ],
+      "coefficient_prime": 2,
+      "control_degree": 2,
+      "control_polynomial": [
+        1,
+        0,
+        1
+      ],
+      "control_prime": 3,
+      "root": 2
+    },
+    {
+      "coefficient_polynomial": [
+        0,
+        1
+      ],
+      "coefficient_prime": 3,
+      "control_degree": 3,
+      "control_polynomial": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "control_prime": 2,
+      "root": 2
+    },
+    {
+      "coefficient_polynomial": [
+        0,
+        1
+      ],
+      "coefficient_prime": 3,
+      "control_degree": 4,
+      "control_polynomial": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "control_prime": 2,
+      "root": 2
+    },
+    {
+      "coefficient_polynomial": [
+        0,
+        1
+      ],
+      "coefficient_prime": 3,
+      "control_degree": 3,
+      "control_polynomial": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "control_prime": 2,
+      "root": 2
+    },
+    {
+      "coefficient_polynomial": [
+        2,
+        0,
+        1
+      ],
+      "coefficient_prime": 5,
+      "control_degree": 2,
+      "control_polynomial": [
+        1,
+        0,
+        1
+      ],
+      "control_prime": 3,
+      "root": 7
+    },
+    {
+      "coefficient_polynomial": [
+        2,
+        0,
+        1
+      ],
+      "coefficient_prime": 5,
+      "control_degree": 3,
+      "control_polynomial": [
+        1,
+        2,
+        0,
+        1
+      ],
+      "control_prime": 3,
+      "root": 7
+    },
+    {
+      "coefficient_polynomial": [
+        2,
+        0,
+        1
+      ],
+      "coefficient_prime": 5,
+      "control_degree": 2,
+      "control_polynomial": [
+        1,
+        0,
+        1
+      ],
+      "control_prime": 3,
+      "root": 7
+    }
+  ],
+  "constructed_binary_fields": {
+    "3": 11,
+    "4": 19
+  },
+  "cyclic_all_divisor_cases": 762,
+  "cyclic_buckets_examined": 220578,
+  "cylinder_inclusion_exclusion_entries": 15327,
+  "cylinder_witness_sets": 765,
+  "different_characteristic_additive_buckets": 2166,
+  "factor_recovery_cylinders": 283164,
+  "negative_controls": {
+    "characteristic_two_walsh_projection_collapses": true,
+    "collision_candidate_needs_verification": 15,
+    "digit_power_tagging_is_wrong": true,
+    "small_cylinders_need_not_isolate_every_witness": true
+  },
+  "odd_characteristic_walsh_buckets": 2112,
+  "polynomial_space_time_balancing_cases": 99999,
+  "scope": "exact recovery transforms with explicit finite witness-polynomial evaluator",
+  "square_zero_tag_cases": 378
+}

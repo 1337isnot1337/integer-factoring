@@ -1,0 +1,57 @@
+{
+  "checker_sha256": "f9333669512ae93814bc952088f56bad2e070dd8de83373adf02b030f0e4aa72",
+  "independent_shell_counts": [
+    {
+      "R": 1,
+      "shell_size": 2
+    },
+    {
+      "R": 2,
+      "shell_size": 4
+    },
+    {
+      "R": 3,
+      "shell_size": 10
+    },
+    {
+      "R": 4,
+      "shell_size": 36
+    },
+    {
+      "R": 5,
+      "shell_size": 202
+    },
+    {
+      "R": 6,
+      "shell_size": 1828
+    },
+    {
+      "R": 7,
+      "shell_size": 27338
+    },
+    {
+      "R": 8,
+      "shell_size": 692004
+    },
+    {
+      "R": 9,
+      "shell_size": 30251722
+    },
+    {
+      "R": 10,
+      "shell_size": 2320518948
+    },
+    {
+      "R": 11,
+      "shell_size": 316359580362
+    },
+    {
+      "R": 12,
+      "shell_size": 77477180493604
+    }
+  ],
+  "integer_resource_envelopes": 1024,
+  "reserved_bit_embedding_checks": 896,
+  "scope": "Exact shell counts, integer envelopes, and reserved-bit embeddings; the all-field rank theorem is proved separately.",
+  "status": "passed"
+}

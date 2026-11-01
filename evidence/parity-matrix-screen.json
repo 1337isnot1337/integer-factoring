@@ -1,0 +1,735 @@
+{
+  "auditor_sha256": "7630316afeec1c9d87cc90617df23a602c8b44ac54ebe01f281c604b753f651b",
+  "field": "F_2",
+  "scope": "Exact finite screen; no asymptotic rank or factoring-score claim. Order dependence is certified by a length-two or length-three word witness when supplied; the classes overlap.",
+  "screens": [
+    {
+      "boundary": 0,
+      "classes": {
+        "all": {
+          "best_maximum_product": 132496,
+          "best_rank_sum_estimate": 1364.5971693868362,
+          "count": 65536,
+          "minimum_integer_rank_sum_lower_bound": 1363,
+          "pareto_profiles": [
+            {
+              "boundary": 0,
+              "column_ranks": [
+                1,
+                14,
+                92,
+                364,
+                1092,
+                2016,
+                4096
+              ],
+              "integer_rank_sum_lower_bound": 1460,
+              "matrices": [
+                1,
+                1,
+                0,
+                0
+              ],
+              "maximum_product_rho": 0.7089828866832247,
+              "maximum_rank_product": 132496,
+              "rank_sum_estimate": 1461.921130741041,
+              "rank_sum_rho": 0.8761374805018504,
+              "row_ranks": [
+                4096,
+                2016,
+                1092,
+                364,
+                92,
+                14,
+                1
+              ],
+              "t": 6
+            },
+            {
+              "boundary": 0,
+              "column_ranks": [
+                14,
+                0,
+                364,
+                0,
+                2016,
+                0,
+                4096
+              ],
+              "integer_rank_sum_lower_bound": 1363,
+              "matrices": [
+                6,
+                6,
+                0,
+                0
+              ],
+              "maximum_product_rho": 0.7750229908799395,
+              "maximum_rank_product": 397488,
+              "rank_sum_estimate": 1364.5971693868362,
+              "rank_sum_rho": 0.8678549511219512,
+              "row_ranks": [
+                4096,
+                0,
+                1092,
+                0,
+                92,
+                0,
+                1
+              ],
+              "t": 6
+            }
+          ]
+        },
+        "mixed_and_witnessed": {
+          "best_maximum_product": 1638400,
+          "best_rank_sum_estimate": 4096,
+          "count": 54096,
+          "minimum_integer_rank_sum_lower_bound": 4096,
+          "pareto_profiles": [
+            {
+              "boundary": 0,
+              "column_ranks": [
+                3040,
+                2668,
+                1984,
+                1280,
+                476,
+                108,
+                12
+              ],
+              "integer_rank_sum_lower_bound": 4674,
+              "matrices": [
+                10,
+                12,
+                10,
+                3
+              ],
+              "maximum_product_rho": 0.8601606745739468,
+              "maximum_rank_product": 1638400,
+              "order_witness": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "rank_sum_estimate": 4679.164121986296,
+              "rank_sum_rho": 1.0160029264058572,
+              "row_ranks": [
+                12,
+                108,
+                476,
+                1280,
+                1984,
+                2668,
+                3040
+              ],
+              "t": 6
+            },
+            {
+              "boundary": 0,
+              "column_ranks": [
+                512,
+                0,
+                1536,
+                0,
+                1536,
+                0,
+                512
+              ],
+              "integer_rank_sum_lower_bound": 4096,
+              "matrices": [
+                6,
+                0,
+                0,
+                2
+              ],
+              "maximum_product_rho": 0.8820802083934297,
+              "maximum_rank_product": 2359296,
+              "order_witness": [
+                [
+                  0,
+                  3
+                ],
+                [
+                  3,
+                  0
+                ]
+              ],
+              "rank_sum_estimate": 4096,
+              "rank_sum_rho": 1,
+              "row_ranks": [
+                512,
+                0,
+                1536,
+                0,
+                1536,
+                0,
+                512
+              ],
+              "t": 6
+            }
+          ]
+        },
+        "mixed_ordered_with_identity_padding": {
+          "best_maximum_product": 2253824,
+          "best_rank_sum_estimate": 4923.164043016368,
+          "count": 5688,
+          "minimum_integer_rank_sum_lower_bound": 4922,
+          "pareto_profiles": [
+            {
+              "boundary": 0,
+              "column_ranks": [
+                656,
+                1088,
+                2272,
+                2272,
+                2288,
+                1056,
+                512
+              ],
+              "identity_padding_letter": 3,
+              "integer_rank_sum_lower_bound": 6673,
+              "matrices": [
+                13,
+                2,
+                0,
+                0
+              ],
+              "maximum_product_rho": 0.8793309762454815,
+              "maximum_rank_product": 2253824,
+              "order_witness": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "rank_sum_estimate": 6675.695043501515,
+              "rank_sum_rho": 1.0587251946862866,
+              "row_ranks": [
+                2048,
+                2048,
+                992,
+                832,
+                256,
+                96,
+                8
+              ],
+              "t": 6
+            },
+            {
+              "boundary": 0,
+              "column_ranks": [
+                912,
+                0,
+                2336,
+                0,
+                2112,
+                0,
+                512
+              ],
+              "identity_padding_letter": 3,
+              "integer_rank_sum_lower_bound": 4922,
+              "matrices": [
+                6,
+                2,
+                0,
+                0
+              ],
+              "maximum_product_rho": 0.9176131072101983,
+              "maximum_rank_product": 4260864,
+              "order_witness": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "rank_sum_estimate": 4923.164043016368,
+              "rank_sum_rho": 1.022114174714123,
+              "row_ranks": [
+                4096,
+                0,
+                1824,
+                0,
+                352,
+                0,
+                8
+              ],
+              "t": 6
+            }
+          ]
+        },
+        "nonzero_mixed_feature": {
+          "best_maximum_product": 132496,
+          "best_rank_sum_estimate": 1461.921130741041,
+          "count": 61440,
+          "minimum_integer_rank_sum_lower_bound": 1460,
+          "pareto_profiles": [
+            {
+              "boundary": 0,
+              "column_ranks": [
+                1,
+                14,
+                92,
+                364,
+                1092,
+                2016,
+                4096
+              ],
+              "integer_rank_sum_lower_bound": 1460,
+              "matrices": [
+                3,
+                1,
+                0,
+                0
+              ],
+              "maximum_product_rho": 0.7089828866832247,
+              "maximum_rank_product": 132496,
+              "rank_sum_estimate": 1461.921130741041,
+              "rank_sum_rho": 0.8761374805018504,
+              "row_ranks": [
+                4096,
+                2016,
+                1092,
+                364,
+                92,
+                14,
+                1
+              ],
+              "t": 6
+            }
+          ]
+        },
+        "witnessed_order_dependence": {
+          "best_maximum_product": 819840,
+          "best_rank_sum_estimate": 2939.728582028258,
+          "count": 57120,
+          "minimum_integer_rank_sum_lower_bound": 2938,
+          "pareto_profiles": [
+            {
+              "boundary": 0,
+              "column_ranks": [
+                4096,
+                1464,
+                2040,
+                1464,
+                620,
+                144,
+                14
+              ],
+              "integer_rank_sum_lower_bound": 3271,
+              "matrices": [
+                5,
+                12,
+                10,
+                3
+              ],
+              "maximum_product_rho": 0.8185409523012087,
+              "maximum_rank_product": 819840,
+              "order_witness": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  2,
+                  0
+                ]
+              ],
+              "rank_sum_estimate": 3275.220482969743,
+              "rank_sum_rho": 0.973114692888741,
+              "row_ranks": [
+                5,
+                44,
+                192,
+                560,
+                1094,
+                560,
+                4096
+              ],
+              "t": 6
+            },
+            {
+              "boundary": 0,
+              "column_ranks": [
+                64,
+                0,
+                512,
+                0,
+                1792,
+                0,
+                4096
+              ],
+              "integer_rank_sum_lower_bound": 2938,
+              "matrices": [
+                6,
+                4,
+                0,
+                2
+              ],
+              "maximum_product_rho": 0.8253064550857335,
+              "maximum_rank_product": 917504,
+              "order_witness": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "rank_sum_estimate": 2939.728582028258,
+              "rank_sum_rho": 0.9601222704464276,
+              "row_ranks": [
+                4096,
+                0,
+                1792,
+                0,
+                512,
+                0,
+                64
+              ],
+              "t": 6
+            }
+          ]
+        }
+      },
+      "file": "parity-matrix-screen-b0-t6.jsonl",
+      "sha256": "09fdb4762b7fcf48b3b2738e0b9d4c3fcc6c86bd4940c498d58209e5fc3286b1"
+    },
+    {
+      "boundary": 1,
+      "classes": {
+        "all": {
+          "best_maximum_product": 132496,
+          "best_rank_sum_estimate": 1364.5971693868362,
+          "count": 65536,
+          "minimum_integer_rank_sum_lower_bound": 1363,
+          "pareto_profiles": [
+            {
+              "boundary": 1,
+              "column_ranks": [
+                1,
+                14,
+                92,
+                364,
+                1092,
+                2016,
+                4096
+              ],
+              "integer_rank_sum_lower_bound": 1460,
+              "matrices": [
+                3,
+                3,
+                0,
+                0
+              ],
+              "maximum_product_rho": 0.7089828866832247,
+              "maximum_rank_product": 132496,
+              "rank_sum_estimate": 1461.921130741041,
+              "rank_sum_rho": 0.8761374805018504,
+              "row_ranks": [
+                4096,
+                2016,
+                1092,
+                364,
+                92,
+                14,
+                1
+              ],
+              "t": 6
+            },
+            {
+              "boundary": 1,
+              "column_ranks": [
+                14,
+                0,
+                364,
+                0,
+                2016,
+                0,
+                4096
+              ],
+              "integer_rank_sum_lower_bound": 1363,
+              "matrices": [
+                6,
+                6,
+                0,
+                0
+              ],
+              "maximum_product_rho": 0.7750229908799395,
+              "maximum_rank_product": 397488,
+              "rank_sum_estimate": 1364.5971693868362,
+              "rank_sum_rho": 0.8678549511219512,
+              "row_ranks": [
+                4096,
+                0,
+                1092,
+                0,
+                92,
+                0,
+                1
+              ],
+              "t": 6
+            }
+          ]
+        },
+        "mixed_and_witnessed": {
+          "best_maximum_product": 1638400,
+          "best_rank_sum_estimate": 4679.164121986296,
+          "count": 60144,
+          "minimum_integer_rank_sum_lower_bound": 4674,
+          "pareto_profiles": [
+            {
+              "boundary": 1,
+              "column_ranks": [
+                12,
+                108,
+                476,
+                1280,
+                1984,
+                2668,
+                3040
+              ],
+              "integer_rank_sum_lower_bound": 4674,
+              "matrices": [
+                8,
+                10,
+                1,
+                1
+              ],
+              "maximum_product_rho": 0.8601606745739468,
+              "maximum_rank_product": 1638400,
+              "order_witness": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "rank_sum_estimate": 4679.164121986296,
+              "rank_sum_rho": 1.0160029264058572,
+              "row_ranks": [
+                3040,
+                2668,
+                1984,
+                1280,
+                476,
+                108,
+                12
+              ],
+              "t": 6
+            }
+          ]
+        },
+        "mixed_ordered_with_identity_padding": {
+          "best_maximum_product": 2896512,
+          "best_rank_sum_estimate": 5382.952758446976,
+          "count": 6888,
+          "minimum_integer_rank_sum_lower_bound": 5381,
+          "pareto_profiles": [
+            {
+              "boundary": 1,
+              "column_ranks": [
+                190,
+                648,
+                1588,
+                1872,
+                2528,
+                1728,
+                1408
+              ],
+              "identity_padding_letter": 3,
+              "integer_rank_sum_lower_bound": 7270,
+              "matrices": [
+                11,
+                1,
+                0,
+                0
+              ],
+              "maximum_product_rho": 0.8944118838044874,
+              "maximum_rank_product": 2896512,
+              "order_witness": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "rank_sum_estimate": 7271.973877840633,
+              "rank_sum_rho": 1.0690109418165805,
+              "row_ranks": [
+                4096,
+                1344,
+                1824,
+                1344,
+                704,
+                224,
+                32
+              ],
+              "t": 6
+            },
+            {
+              "boundary": 1,
+              "column_ranks": [
+                376,
+                0,
+                1528,
+                0,
+                2888,
+                0,
+                2752
+              ],
+              "identity_padding_letter": 3,
+              "integer_rank_sum_lower_bound": 5381,
+              "matrices": [
+                11,
+                6,
+                0,
+                0
+              ],
+              "maximum_product_rho": 0.9206290923403984,
+              "maximum_rank_product": 4480096,
+              "order_witness": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "rank_sum_estimate": 5382.952758446976,
+              "rank_sum_rho": 1.032848504064977,
+              "row_ranks": [
+                1936,
+                0,
+                2932,
+                0,
+                1376,
+                0,
+                64
+              ],
+              "t": 6
+            }
+          ]
+        },
+        "nonzero_mixed_feature": {
+          "best_maximum_product": 132496,
+          "best_rank_sum_estimate": 1461.921130741041,
+          "count": 61440,
+          "minimum_integer_rank_sum_lower_bound": 1460,
+          "pareto_profiles": [
+            {
+              "boundary": 1,
+              "column_ranks": [
+                1,
+                14,
+                92,
+                364,
+                1092,
+                2016,
+                4096
+              ],
+              "integer_rank_sum_lower_bound": 1460,
+              "matrices": [
+                9,
+                3,
+                0,
+                0
+              ],
+              "maximum_product_rho": 0.7089828866832247,
+              "maximum_rank_product": 132496,
+              "rank_sum_estimate": 1461.921130741041,
+              "rank_sum_rho": 0.8761374805018504,
+              "row_ranks": [
+                4096,
+                2016,
+                1092,
+                364,
+                92,
+                14,
+                1
+              ],
+              "t": 6
+            }
+          ]
+        },
+        "witnessed_order_dependence": {
+          "best_maximum_product": 819840,
+          "best_rank_sum_estimate": 3275.220482969743,
+          "count": 63840,
+          "minimum_integer_rank_sum_lower_bound": 3271,
+          "pareto_profiles": [
+            {
+              "boundary": 1,
+              "column_ranks": [
+                14,
+                144,
+                620,
+                1464,
+                2040,
+                1464,
+                4096
+              ],
+              "integer_rank_sum_lower_bound": 3271,
+              "matrices": [
+                10,
+                10,
+                1,
+                1
+              ],
+              "maximum_product_rho": 0.8185409523012087,
+              "maximum_rank_product": 819840,
+              "order_witness": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  2,
+                  0
+                ]
+              ],
+              "rank_sum_estimate": 3275.220482969743,
+              "rank_sum_rho": 0.973114692888741,
+              "row_ranks": [
+                4096,
+                560,
+                1094,
+                560,
+                192,
+                44,
+                5
+              ],
+              "t": 6
+            }
+          ]
+        }
+      },
+      "file": "parity-matrix-screen-b1-t6.jsonl",
+      "sha256": "718ddce70c8f7414af9d10cc06420688f533756b4a5464c06200156a13e31dfb"
+    }
+  ],
+  "status": "passed",
+  "total_cases": 131072
+}

@@ -1,0 +1,1132 @@
+{
+  "scope": "Direct supplied-smooth-norm to short-word conversion; finite witness and subgroup searches are exhaustive",
+  "smooth_bound": 7,
+  "coordinate_scan": [
+    -4,
+    4
+  ],
+  "totals": {
+    "accepted_primitive_representations": 2366,
+    "word_replays": 2366,
+    "normalized_scaled_controls": 4732,
+    "strict_budget_rejections": 2332,
+    "coprimality_rejections": 2388,
+    "nonsmooth_rejections": 8000,
+    "accepted_beyond_old_norm_bound": 592,
+    "accepted_without_old_balanced_split": 244
+  },
+  "both_orientations_above_two_checked": true,
+  "unbalanced_125_control": {
+    "discriminant": -999,
+    "form": [
+      2,
+      -1,
+      125
+    ],
+    "primitive_norm": 125,
+    "multiplicity": 3,
+    "word": [
+      {
+        "prime": 5,
+        "exponent": 3,
+        "form": [
+          5,
+          1,
+          50
+        ]
+      }
+    ],
+    "balanced_converter_accepts": false,
+    "direct_converter_accepts": true
+  },
+  "records": [
+    {
+      "discriminant": -23,
+      "class_number": 3,
+      "old_radius": 2,
+      "old_norm_bound": 4,
+      "multiplicity_budget": 2,
+      "counts": {
+        "accepted_primitive_representations": 26,
+        "word_replays": 26,
+        "normalized_scaled_controls": 52,
+        "strict_budget_rejections": 24,
+        "coprimality_rejections": 6,
+        "nonsmooth_rejections": 58,
+        "accepted_beyond_old_norm_bound": 12,
+        "accepted_without_old_balanced_split": 4
+      },
+      "finite_relation_control": {
+        "factor_base_primes": [
+          2,
+          3
+        ],
+        "generated_subgroup_size": 3,
+        "full_class_group_generated": true,
+        "sample_word_budget": 1,
+        "target_word_budget": 2,
+        "diagonal_parameter": 4,
+        "relation_matrix": [
+          [
+            3,
+            0
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        "annihilator": 12,
+        "annihilator_bit_bound": 7,
+        "witnesses": [
+          {
+            "norm": 2,
+            "multiplicity": 1,
+            "sample_word": [
+              0,
+              0
+            ],
+            "target_word": [
+              1,
+              0
+            ]
+          },
+          {
+            "norm": 2,
+            "multiplicity": 1,
+            "sample_word": [
+              0,
+              0
+            ],
+            "target_word": [
+              -1,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": -31,
+      "class_number": 3,
+      "old_radius": 2,
+      "old_norm_bound": 4,
+      "multiplicity_budget": 2,
+      "counts": {
+        "accepted_primitive_representations": 46,
+        "word_replays": 46,
+        "normalized_scaled_controls": 92,
+        "strict_budget_rejections": 44,
+        "coprimality_rejections": 6,
+        "nonsmooth_rejections": 28,
+        "accepted_beyond_old_norm_bound": 36,
+        "accepted_without_old_balanced_split": 0
+      },
+      "finite_relation_control": {
+        "factor_base_primes": [
+          2,
+          5,
+          7
+        ],
+        "generated_subgroup_size": 3,
+        "full_class_group_generated": true,
+        "sample_word_budget": 1,
+        "target_word_budget": 2,
+        "diagonal_parameter": 4,
+        "relation_matrix": [
+          [
+            3,
+            0,
+            0
+          ],
+          [
+            -1,
+            4,
+            0
+          ],
+          [
+            1,
+            0,
+            4
+          ]
+        ],
+        "annihilator": 48,
+        "annihilator_bit_bound": 10,
+        "witnesses": [
+          {
+            "norm": 2,
+            "multiplicity": 1,
+            "sample_word": [
+              0,
+              0,
+              0
+            ],
+            "target_word": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "norm": 2,
+            "multiplicity": 1,
+            "sample_word": [
+              0,
+              0,
+              0
+            ],
+            "target_word": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "norm": 2,
+            "multiplicity": 1,
+            "sample_word": [
+              0,
+              0,
+              0
+            ],
+            "target_word": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": -47,
+      "class_number": 5,
+      "old_radius": 3,
+      "old_norm_bound": 9,
+      "multiplicity_budget": 3,
+      "counts": {
+        "accepted_primitive_representations": 104,
+        "word_replays": 104,
+        "normalized_scaled_controls": 208,
+        "strict_budget_rejections": 102,
+        "coprimality_rejections": 6,
+        "nonsmooth_rejections": 68,
+        "accepted_beyond_old_norm_bound": 70,
+        "accepted_without_old_balanced_split": 8
+      },
+      "finite_relation_control": {
+        "factor_base_primes": [
+          2,
+          3,
+          7
+        ],
+        "generated_subgroup_size": 5,
+        "full_class_group_generated": true,
+        "sample_word_budget": 1,
+        "target_word_budget": 3,
+        "diagonal_parameter": 5,
+        "relation_matrix": [
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            0,
+            5,
+            0
+          ],
+          [
+            0,
+            0,
+            5
+          ]
+        ],
+        "annihilator": 125,
+        "annihilator_bit_bound": 13,
+        "witnesses": [
+          {
+            "norm": 1,
+            "multiplicity": 0,
+            "sample_word": [
+              0,
+              0,
+              0
+            ],
+            "target_word": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "norm": 1,
+            "multiplicity": 0,
+            "sample_word": [
+              0,
+              0,
+              0
+            ],
+            "target_word": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "norm": 1,
+            "multiplicity": 0,
+            "sample_word": [
+              0,
+              0,
+              0
+            ],
+            "target_word": [
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": -71,
+      "class_number": 7,
+      "old_radius": 4,
+      "old_norm_bound": 16,
+      "multiplicity_budget": 4,
+      "counts": {
+        "accepted_primitive_representations": 186,
+        "word_replays": 186,
+        "normalized_scaled_controls": 372,
+        "strict_budget_rejections": 184,
+        "coprimality_rejections": 6,
+        "nonsmooth_rejections": 112,
+        "accepted_beyond_old_norm_bound": 124,
+        "accepted_without_old_balanced_split": 20
+      },
+      "finite_relation_control": {
+        "factor_base_primes": [
+          2,
+          3,
+          5
+        ],
+        "generated_subgroup_size": 7,
+        "full_class_group_generated": true,
+        "sample_word_budget": 1,
+        "target_word_budget": 4,
+        "diagonal_parameter": 6,
+        "relation_matrix": [
+          [
+            7,
+            0,
+            0
+          ],
+          [
+            0,
+            7,
+            0
+          ],
+          [
+            2,
+            0,
+            6
+          ]
+        ],
+        "annihilator": 294,
+        "annihilator_bit_bound": 13,
+        "witnesses": [
+          {
+            "norm": 2,
+            "multiplicity": 1,
+            "sample_word": [
+              0,
+              0,
+              0
+            ],
+            "target_word": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "norm": 3,
+            "multiplicity": 1,
+            "sample_word": [
+              0,
+              0,
+              0
+            ],
+            "target_word": [
+              0,
+              -1,
+              0
+            ]
+          },
+          {
+            "norm": 4,
+            "multiplicity": 2,
+            "sample_word": [
+              0,
+              0,
+              0
+            ],
+            "target_word": [
+              -2,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": -80,
+      "class_number": 4,
+      "old_radius": 4,
+      "old_norm_bound": 16,
+      "multiplicity_budget": 4,
+      "counts": {
+        "accepted_primitive_representations": 42,
+        "word_replays": 42,
+        "normalized_scaled_controls": 84,
+        "strict_budget_rejections": 40,
+        "coprimality_rejections": 78,
+        "nonsmooth_rejections": 72,
+        "accepted_beyond_old_norm_bound": 28,
+        "accepted_without_old_balanced_split": 4
+      },
+      "finite_relation_control": {
+        "factor_base_primes": [
+          3,
+          7
+        ],
+        "generated_subgroup_size": 4,
+        "full_class_group_generated": true,
+        "sample_word_budget": 2,
+        "target_word_budget": 4,
+        "diagonal_parameter": 7,
+        "relation_matrix": [
+          [
+            8,
+            0
+          ],
+          [
+            -1,
+            7
+          ]
+        ],
+        "annihilator": 56,
+        "annihilator_bit_bound": 9,
+        "witnesses": [
+          {
+            "norm": 3,
+            "multiplicity": 1,
+            "sample_word": [
+              0,
+              0
+            ],
+            "target_word": [
+              -1,
+              0
+            ]
+          },
+          {
+            "norm": 3,
+            "multiplicity": 1,
+            "sample_word": [
+              0,
+              0
+            ],
+            "target_word": [
+              1,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": -84,
+      "class_number": 4,
+      "old_radius": 4,
+      "old_norm_bound": 16,
+      "multiplicity_budget": 4,
+      "counts": {
+        "accepted_primitive_representations": 10,
+        "word_replays": 10,
+        "normalized_scaled_controls": 20,
+        "strict_budget_rejections": 8,
+        "coprimality_rejections": 100,
+        "nonsmooth_rejections": 82,
+        "accepted_beyond_old_norm_bound": 4,
+        "accepted_without_old_balanced_split": 4
+      },
+      "finite_relation_control": {
+        "factor_base_primes": [
+          5
+        ],
+        "generated_subgroup_size": 2,
+        "full_class_group_generated": false,
+        "sample_word_budget": 1,
+        "target_word_budget": 4,
+        "diagonal_parameter": 6,
+        "relation_matrix": [
+          [
+            6
+          ]
+        ],
+        "annihilator": 6,
+        "annihilator_bit_bound": 5,
+        "witnesses": [
+          {
+            "norm": 1,
+            "multiplicity": 0,
+            "sample_word": [
+              0
+            ],
+            "target_word": [
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": -120,
+      "class_number": 4,
+      "old_radius": 5,
+      "old_norm_bound": 25,
+      "multiplicity_budget": 4,
+      "counts": {
+        "accepted_primitive_representations": 2,
+        "word_replays": 2,
+        "normalized_scaled_controls": 4,
+        "strict_budget_rejections": 0,
+        "coprimality_rejections": 110,
+        "nonsmooth_rejections": 80,
+        "accepted_beyond_old_norm_bound": 0,
+        "accepted_without_old_balanced_split": 0
+      },
+      "finite_relation_control": null
+    },
+    {
+      "discriminant": -144,
+      "class_number": 4,
+      "old_radius": 5,
+      "old_norm_bound": 25,
+      "multiplicity_budget": 4,
+      "counts": {
+        "accepted_primitive_representations": 14,
+        "word_replays": 14,
+        "normalized_scaled_controls": 28,
+        "strict_budget_rejections": 12,
+        "coprimality_rejections": 102,
+        "nonsmooth_rejections": 76,
+        "accepted_beyond_old_norm_bound": 4,
+        "accepted_without_old_balanced_split": 0
+      },
+      "finite_relation_control": {
+        "factor_base_primes": [
+          5
+        ],
+        "generated_subgroup_size": 4,
+        "full_class_group_generated": true,
+        "sample_word_budget": 2,
+        "target_word_budget": 4,
+        "diagonal_parameter": 7,
+        "relation_matrix": [
+          [
+            8
+          ]
+        ],
+        "annihilator": 8,
+        "annihilator_bit_bound": 5,
+        "witnesses": [
+          {
+            "norm": 5,
+            "multiplicity": 1,
+            "sample_word": [
+              0
+            ],
+            "target_word": [
+              -1
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": -180,
+      "class_number": 4,
+      "old_radius": 6,
+      "old_norm_bound": 36,
+      "multiplicity_budget": 5,
+      "counts": {
+        "accepted_primitive_representations": 10,
+        "word_replays": 10,
+        "normalized_scaled_controls": 20,
+        "strict_budget_rejections": 8,
+        "coprimality_rejections": 102,
+        "nonsmooth_rejections": 80,
+        "accepted_beyond_old_norm_bound": 4,
+        "accepted_without_old_balanced_split": 4
+      },
+      "finite_relation_control": {
+        "factor_base_primes": [
+          7
+        ],
+        "generated_subgroup_size": 2,
+        "full_class_group_generated": false,
+        "sample_word_budget": 1,
+        "target_word_budget": 5,
+        "diagonal_parameter": 7,
+        "relation_matrix": [
+          [
+            6
+          ]
+        ],
+        "annihilator": 6,
+        "annihilator_bit_bound": 5,
+        "witnesses": [
+          {
+            "norm": 7,
+            "multiplicity": 1,
+            "sample_word": [
+              0
+            ],
+            "target_word": [
+              1
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": -231,
+      "class_number": 12,
+      "old_radius": 7,
+      "old_norm_bound": 49,
+      "multiplicity_budget": 5,
+      "counts": {
+        "accepted_primitive_representations": 74,
+        "word_replays": 74,
+        "normalized_scaled_controls": 148,
+        "strict_budget_rejections": 72,
+        "coprimality_rejections": 240,
+        "nonsmooth_rejections": 248,
+        "accepted_beyond_old_norm_bound": 20,
+        "accepted_without_old_balanced_split": 12
+      },
+      "finite_relation_control": {
+        "factor_base_primes": [
+          2,
+          5
+        ],
+        "generated_subgroup_size": 12,
+        "full_class_group_generated": true,
+        "sample_word_budget": 3,
+        "target_word_budget": 5,
+        "diagonal_parameter": 9,
+        "relation_matrix": [
+          [
+            6,
+            0
+          ],
+          [
+            2,
+            8
+          ]
+        ],
+        "annihilator": 48,
+        "annihilator_bit_bound": 11,
+        "witnesses": [
+          {
+            "norm": 8,
+            "multiplicity": 3,
+            "sample_word": [
+              0,
+              0
+            ],
+            "target_word": [
+              3,
+              0
+            ]
+          },
+          {
+            "norm": 20,
+            "multiplicity": 3,
+            "sample_word": [
+              0,
+              0
+            ],
+            "target_word": [
+              -2,
+              1
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": -348,
+      "class_number": 6,
+      "old_radius": 9,
+      "old_norm_bound": 81,
+      "multiplicity_budget": 6,
+      "counts": {
+        "accepted_primitive_representations": 10,
+        "word_replays": 10,
+        "normalized_scaled_controls": 20,
+        "strict_budget_rejections": 8,
+        "coprimality_rejections": 142,
+        "nonsmooth_rejections": 136,
+        "accepted_beyond_old_norm_bound": 0,
+        "accepted_without_old_balanced_split": 0
+      },
+      "finite_relation_control": {
+        "factor_base_primes": [
+          7
+        ],
+        "generated_subgroup_size": 3,
+        "full_class_group_generated": false,
+        "sample_word_budget": 1,
+        "target_word_budget": 6,
+        "diagonal_parameter": 8,
+        "relation_matrix": [
+          [
+            9
+          ]
+        ],
+        "annihilator": 9,
+        "annihilator_bit_bound": 5,
+        "witnesses": [
+          {
+            "norm": 7,
+            "multiplicity": 1,
+            "sample_word": [
+              0
+            ],
+            "target_word": [
+              -1
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": -420,
+      "class_number": 8,
+      "old_radius": 10,
+      "old_norm_bound": 100,
+      "multiplicity_budget": 6,
+      "counts": {
+        "accepted_primitive_representations": 2,
+        "word_replays": 2,
+        "normalized_scaled_controls": 4,
+        "strict_budget_rejections": 0,
+        "coprimality_rejections": 232,
+        "nonsmooth_rejections": 150,
+        "accepted_beyond_old_norm_bound": 0,
+        "accepted_without_old_balanced_split": 0
+      },
+      "finite_relation_control": null
+    },
+    {
+      "discriminant": -999,
+      "class_number": 24,
+      "old_radius": 15,
+      "old_norm_bound": 225,
+      "multiplicity_budget": 7,
+      "counts": {
+        "accepted_primitive_representations": 258,
+        "word_replays": 258,
+        "normalized_scaled_controls": 516,
+        "strict_budget_rejections": 256,
+        "coprimality_rejections": 310,
+        "nonsmooth_rejections": 572,
+        "accepted_beyond_old_norm_bound": 48,
+        "accepted_without_old_balanced_split": 36
+      },
+      "finite_relation_control": {
+        "factor_base_primes": [
+          2,
+          5,
+          7
+        ],
+        "generated_subgroup_size": 24,
+        "full_class_group_generated": true,
+        "sample_word_budget": 3,
+        "target_word_budget": 7,
+        "diagonal_parameter": 11,
+        "relation_matrix": [
+          [
+            8,
+            0,
+            0
+          ],
+          [
+            -1,
+            11,
+            1
+          ],
+          [
+            0,
+            0,
+            12
+          ]
+        ],
+        "annihilator": 1056,
+        "annihilator_bit_bound": 16,
+        "witnesses": [
+          {
+            "norm": 8,
+            "multiplicity": 3,
+            "sample_word": [
+              0,
+              0,
+              0
+            ],
+            "target_word": [
+              3,
+              0,
+              0
+            ]
+          },
+          {
+            "norm": 14,
+            "multiplicity": 2,
+            "sample_word": [
+              0,
+              0,
+              0
+            ],
+            "target_word": [
+              1,
+              0,
+              -1
+            ]
+          },
+          {
+            "norm": 7,
+            "multiplicity": 1,
+            "sample_word": [
+              0,
+              0,
+              0
+            ],
+            "target_word": [
+              0,
+              0,
+              -1
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": -1007,
+      "class_number": 30,
+      "old_radius": 15,
+      "old_norm_bound": 225,
+      "multiplicity_budget": 7,
+      "counts": {
+        "accepted_primitive_representations": 378,
+        "word_replays": 378,
+        "normalized_scaled_controls": 756,
+        "strict_budget_rejections": 376,
+        "coprimality_rejections": 102,
+        "nonsmooth_rejections": 952,
+        "accepted_beyond_old_norm_bound": 80,
+        "accepted_without_old_balanced_split": 40
+      },
+      "finite_relation_control": {
+        "factor_base_primes": [
+          2,
+          3,
+          7
+        ],
+        "generated_subgroup_size": 30,
+        "full_class_group_generated": true,
+        "sample_word_budget": 3,
+        "target_word_budget": 7,
+        "diagonal_parameter": 11,
+        "relation_matrix": [
+          [
+            12,
+            0,
+            -1
+          ],
+          [
+            -1,
+            11,
+            -1
+          ],
+          [
+            0,
+            0,
+            10
+          ]
+        ],
+        "annihilator": 1320,
+        "annihilator_bit_bound": 16,
+        "witnesses": [
+          {
+            "norm": 14,
+            "multiplicity": 2,
+            "sample_word": [
+              0,
+              0,
+              0
+            ],
+            "target_word": [
+              -1,
+              0,
+              1
+            ]
+          },
+          {
+            "norm": 14,
+            "multiplicity": 2,
+            "sample_word": [
+              0,
+              0,
+              0
+            ],
+            "target_word": [
+              1,
+              0,
+              1
+            ]
+          },
+          {
+            "norm": 7,
+            "multiplicity": 1,
+            "sample_word": [
+              0,
+              0,
+              0
+            ],
+            "target_word": [
+              0,
+              0,
+              1
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": -1679,
+      "class_number": 52,
+      "old_radius": 20,
+      "old_norm_bound": 400,
+      "multiplicity_budget": 8,
+      "counts": {
+        "accepted_primitive_representations": 928,
+        "word_replays": 928,
+        "normalized_scaled_controls": 1856,
+        "strict_budget_rejections": 926,
+        "coprimality_rejections": 114,
+        "nonsmooth_rejections": 1446,
+        "accepted_beyond_old_norm_bound": 162,
+        "accepted_without_old_balanced_split": 100
+      },
+      "finite_relation_control": {
+        "factor_base_primes": [
+          2,
+          3,
+          5,
+          7
+        ],
+        "generated_subgroup_size": 52,
+        "full_class_group_generated": true,
+        "sample_word_budget": 3,
+        "target_word_budget": 8,
+        "diagonal_parameter": 12,
+        "relation_matrix": [
+          [
+            10,
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            13,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            12,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            12
+          ]
+        ],
+        "annihilator": 18720,
+        "annihilator_bit_bound": 21,
+        "witnesses": [
+          {
+            "norm": 12,
+            "multiplicity": 3,
+            "sample_word": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "target_word": [
+              2,
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "norm": 3,
+            "multiplicity": 1,
+            "sample_word": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "target_word": [
+              0,
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "norm": 16,
+            "multiplicity": 4,
+            "sample_word": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "target_word": [
+              -4,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "norm": 3,
+            "multiplicity": 1,
+            "sample_word": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "target_word": [
+              0,
+              -1,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": -4620,
+      "class_number": 24,
+      "old_radius": 33,
+      "old_norm_bound": 1089,
+      "multiplicity_budget": 10,
+      "counts": {
+        "accepted_primitive_representations": 2,
+        "word_replays": 2,
+        "normalized_scaled_controls": 4,
+        "strict_budget_rejections": 0,
+        "coprimality_rejections": 726,
+        "nonsmooth_rejections": 424,
+        "accepted_beyond_old_norm_bound": 0,
+        "accepted_without_old_balanced_split": 0
+      },
+      "finite_relation_control": null
+    },
+    {
+      "discriminant": -10007,
+      "class_number": 77,
+      "old_radius": 50,
+      "old_norm_bound": 2500,
+      "multiplicity_budget": 11,
+      "counts": {
+        "accepted_primitive_representations": 274,
+        "word_replays": 274,
+        "normalized_scaled_controls": 548,
+        "strict_budget_rejections": 272,
+        "coprimality_rejections": 6,
+        "nonsmooth_rejections": 3416,
+        "accepted_beyond_old_norm_bound": 0,
+        "accepted_without_old_balanced_split": 12
+      },
+      "finite_relation_control": {
+        "factor_base_primes": [
+          2,
+          3
+        ],
+        "generated_subgroup_size": 77,
+        "full_class_group_generated": true,
+        "sample_word_budget": 8,
+        "target_word_budget": 11,
+        "diagonal_parameter": 20,
+        "relation_matrix": [
+          [
+            18,
+            1
+          ],
+          [
+            -2,
+            17
+          ]
+        ],
+        "annihilator": 308,
+        "annihilator_bit_bound": 13,
+        "witnesses": [
+          {
+            "norm": 12,
+            "multiplicity": 3,
+            "sample_word": [
+              0,
+              0
+            ],
+            "target_word": [
+              2,
+              -1
+            ]
+          },
+          {
+            "norm": 108,
+            "multiplicity": 5,
+            "sample_word": [
+              0,
+              0
+            ],
+            "target_word": [
+              2,
+              3
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "fast_witness_search_supplied": false,
+  "new_factoring_exponent_established": false
+}

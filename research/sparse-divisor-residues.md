@@ -25,6 +25,12 @@ and exact implementation. It does not claim a new general sparse
 interpolation algorithm. The existing weighted constructor and its source
 attribution are retained.
 
+The newly integrated [rough-input transfer](rough-input-transfer.md)
+already proves the same trial-budget improvement for prefix arithmetic
+circuits, together with stronger space bounds. That overlapping result
+is retained with its own proof and credit. The additional interface here
+uses only global cyclic residues and reconstructs their full divisor support.
+
 ## 1. The exact global query and recovery parameters
 
 Fix one prime characteristic p. For every prime q the oracle returns
@@ -147,6 +153,11 @@ The hypothesis concerns complete weighted query evaluation. A fast
 algorithm on unwritten tables must still pay their constructor, encoding
 and scalar-ring costs, as specified in the original notes. The present
 postprocessing does not establish such an algorithm.
+
+The [weight-one coefficient realization](weight-one-divisor-coefficients.md)
+constructs signed cyclic images from odd Dirichlet-character coefficients.
+Its signed interpolation uses exponent bit bound b+1 and sparsity cap 2D,
+with the same complete cost conclusion.
 
 ## 4. Executable controls and limits
 

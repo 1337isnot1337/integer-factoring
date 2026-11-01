@@ -1,0 +1,87 @@
+{
+  "characteristic": 3,
+  "energy": 81,
+  "reduced_energy": 27,
+  "weights": [
+    1,
+    1,
+    3,
+    9,
+    27
+  ],
+  "labels": 239,
+  "abstract_dimension": 28,
+  "basis_associativity_checks": 21952,
+  "spectral_projectors": 9,
+  "frobenius_exponent": 81,
+  "zero_character_projector": [
+    1,
+    0,
+    2,
+    0,
+    0,
+    0,
+    2,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    2,
+    1
+  ],
+  "local_unit_and_nilpotence_verified": true,
+  "constant_operator_ranks": {
+    "row": 33933,
+    "column": 1632
+  },
+  "constant_one_column_blocks": 1617,
+  "eligible_digit_disjoint_pairs": 5304,
+  "forced_rank_product": 54869661,
+  "strict_target_inequality": "product > d^3 > d^(2 sqrt(2))",
+  "native_rank_evidence": {
+    "prime": 3,
+    "energy": 81,
+    "reduced_energy": 27,
+    "labels": 239,
+    "row_blocks": 3273,
+    "column_blocks": 1632,
+    "entries": 7122902,
+    "distinct_entry_polynomials": 7806,
+    "pieces": [
+      {
+        "name": "raw_0",
+        "row": 33933,
+        "col": 1632
+      }
+    ],
+    "rank_sums": {
+      "raw": 7441.683680458341,
+      "projectors": 0,
+      "refined": 0
+    },
+    "threshold": 2309.737195780736,
+    "seconds": 6.379251316
+  },
+  "source_sha256": {
+    "check_odd_weyl_spectrum.py": "a68b314786eab5f686e1c0d7515022b6bbe7d9e55ce5682a09a7ba246fc92999",
+    "odd_weyl_projectors.py": "95b12a3785c5b475123716cf88e4d4eaaaa7b836a663faa2ac599fbe6d430e5c",
+    "explore_odd_weyl.cpp": "eaf8cd5e45d49a3375cde58d4a360e3867b034087e091b2fa7c53c4300f2a177"
+  },
+  "scope": "All decompositions from this original coefficient span over every characteristic-three extension field; opposite symmetries and mixed products are not covered.",
+  "elapsed_seconds": 12.978
+}

@@ -1,0 +1,21 @@
+{
+  "status": "counterexample to extending the F2 row-rank lemma; no product improvement",
+  "binary_width": 2,
+  "pair_counts": [
+    1,
+    2
+  ],
+  "field_modulus": 7,
+  "field_basis": "1, omega with omega^2=omega+1",
+  "coefficient_encoding": "two bits per canonical source coefficient, low bit then omega bit",
+  "coefficient_mask": "0x34d90c101a00000",
+  "separator_value": 1,
+  "row_rank": 4,
+  "column_rank": 10,
+  "rank_product": 40,
+  "sha256": {
+    "tools/check_hamming_f4_probe.py": "30ac71372203a1f22baa17108a11d08412d9d3e6e03066d2c26e91852a0cc9f9",
+    "tools/check_extension_descent.py": "00a5109ff1ef791f48a8e23e48fa86678ce13298b7bbc8e8b0281185e79e0a9e",
+    "tools/check_hamming_joint_lower.py": "d197c02648e538854f4815563ea1c9ac0a5121fef9bffc93e192f91dcceab0d6"
+  }
+}

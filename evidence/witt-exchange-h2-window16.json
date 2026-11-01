@@ -1,0 +1,115 @@
+{
+  "h": 2,
+  "energy_window": 16,
+  "total_states": 202,
+  "vacuum_gram_rows": [
+    2,
+    3
+  ],
+  "left_energy_tensors": [
+    36873,
+    0,
+    0,
+    0,
+    19475,
+    0,
+    0,
+    0,
+    1264,
+    0,
+    0,
+    0,
+    55330,
+    0,
+    0,
+    0,
+    34862
+  ],
+  "right_energy_tensors": [
+    21756,
+    0,
+    0,
+    0,
+    19475,
+    0,
+    0,
+    0,
+    49157,
+    0,
+    0,
+    0,
+    55330,
+    0,
+    0,
+    0,
+    34862
+  ],
+  "finite_exchange_systems": [
+    {
+      "angle_degree": 0,
+      "rank": 1,
+      "solution": null
+    },
+    {
+      "angle_degree": 1,
+      "rank": 2,
+      "solution": null
+    },
+    {
+      "angle_degree": 2,
+      "rank": 3,
+      "solution": null
+    },
+    {
+      "angle_degree": 3,
+      "rank": 4,
+      "solution": null
+    },
+    {
+      "angle_degree": 4,
+      "rank": 5,
+      "solution": null
+    },
+    {
+      "angle_degree": 5,
+      "rank": 6,
+      "solution": null
+    },
+    {
+      "angle_degree": 6,
+      "rank": 7,
+      "solution": null
+    },
+    {
+      "angle_degree": 7,
+      "rank": 8,
+      "solution": null
+    },
+    {
+      "angle_degree": 8,
+      "rank": 9,
+      "solution": null
+    },
+    {
+      "angle_degree": 9,
+      "rank": 10,
+      "solution": null
+    },
+    {
+      "angle_degree": 10,
+      "rank": 11,
+      "solution": null
+    },
+    {
+      "angle_degree": 11,
+      "rank": 12,
+      "solution": null
+    },
+    {
+      "angle_degree": 12,
+      "rank": 13,
+      "solution": null
+    }
+  ],
+  "seconds": 0.278
+}

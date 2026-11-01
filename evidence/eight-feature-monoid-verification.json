@@ -1,0 +1,71 @@
+{
+  "checker_sha256": "e36f072934ec4c0a58121c9fd623ece4b958c1c6e27c9c31eef2a20e6c69513b",
+  "exact_coefficient_products_checked": 54,
+  "field": "F_2",
+  "formal_two_auxiliary_moments_checked": 511,
+  "independent_profiles": [
+    {
+      "column_ranks": [
+        2,
+        2
+      ],
+      "row_ranks": [
+        2,
+        2
+      ],
+      "t": 1
+    },
+    {
+      "column_ranks": [
+        4,
+        8,
+        4
+      ],
+      "row_ranks": [
+        4,
+        8,
+        4
+      ],
+      "t": 2
+    },
+    {
+      "column_ranks": [
+        8,
+        24,
+        24,
+        8
+      ],
+      "row_ranks": [
+        8,
+        24,
+        24,
+        8
+      ],
+      "t": 3
+    },
+    {
+      "column_ranks": [
+        16,
+        64,
+        96,
+        64,
+        16
+      ],
+      "row_ranks": [
+        16,
+        64,
+        96,
+        64,
+        16
+      ],
+      "t": 4
+    }
+  ],
+  "native_profile_lengths": [
+    4,
+    6,
+    8
+  ],
+  "scope": "Finite verification of the all-length proof. The exact rank sum is 4**t; no improved factoring bound.",
+  "status": "passed"
+}

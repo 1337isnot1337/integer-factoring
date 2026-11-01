@@ -1,0 +1,1032 @@
+{
+  "digit_fourier_support": [
+    {
+      "coefficient_prime": 3,
+      "nonzero_frequencies": 1,
+      "p": 2,
+      "precision": 1,
+      "unit_frequencies": 1
+    },
+    {
+      "coefficient_prime": 3,
+      "nonzero_frequencies": 3,
+      "p": 2,
+      "precision": 2,
+      "unit_frequencies": 3
+    },
+    {
+      "coefficient_prime": 3,
+      "nonzero_frequencies": 7,
+      "p": 2,
+      "precision": 3,
+      "unit_frequencies": 7
+    },
+    {
+      "coefficient_prime": 2,
+      "nonzero_frequencies": 7,
+      "p": 3,
+      "precision": 2,
+      "unit_frequencies": 7
+    },
+    {
+      "coefficient_prime": 2,
+      "nonzero_frequencies": 21,
+      "p": 5,
+      "precision": 2,
+      "unit_frequencies": 21
+    }
+  ],
+  "digit_lift_cases": 320,
+  "no_wrap_checks": 15346,
+  "nonzero_carry_hankel_cases": [
+    {
+      "N": 1,
+      "invertible_nonzero_extensions": 2,
+      "m": 2,
+      "p": 2,
+      "precision": 2,
+      "selected_nonzero_lower_frequency": [
+        0,
+        1
+      ]
+    },
+    {
+      "N": 2,
+      "invertible_nonzero_extensions": 2,
+      "m": 2,
+      "p": 2,
+      "precision": 2,
+      "selected_nonzero_lower_frequency": [
+        0,
+        1
+      ]
+    },
+    {
+      "N": 3,
+      "invertible_nonzero_extensions": 2,
+      "m": 2,
+      "p": 2,
+      "precision": 2,
+      "selected_nonzero_lower_frequency": [
+        0,
+        1
+      ]
+    },
+    {
+      "N": 1,
+      "invertible_nonzero_extensions": 16,
+      "m": 3,
+      "p": 2,
+      "precision": 3,
+      "selected_nonzero_lower_frequency": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "N": 2,
+      "invertible_nonzero_extensions": 16,
+      "m": 3,
+      "p": 2,
+      "precision": 3,
+      "selected_nonzero_lower_frequency": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "N": 3,
+      "invertible_nonzero_extensions": 16,
+      "m": 3,
+      "p": 2,
+      "precision": 3,
+      "selected_nonzero_lower_frequency": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "N": 4,
+      "invertible_nonzero_extensions": 16,
+      "m": 3,
+      "p": 2,
+      "precision": 3,
+      "selected_nonzero_lower_frequency": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "N": 5,
+      "invertible_nonzero_extensions": 16,
+      "m": 3,
+      "p": 2,
+      "precision": 3,
+      "selected_nonzero_lower_frequency": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "N": 6,
+      "invertible_nonzero_extensions": 16,
+      "m": 3,
+      "p": 2,
+      "precision": 3,
+      "selected_nonzero_lower_frequency": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "N": 7,
+      "invertible_nonzero_extensions": 16,
+      "m": 3,
+      "p": 2,
+      "precision": 3,
+      "selected_nonzero_lower_frequency": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "N": 1,
+      "invertible_nonzero_extensions": 3,
+      "m": 2,
+      "p": 3,
+      "precision": 2,
+      "selected_nonzero_lower_frequency": [
+        0,
+        1
+      ]
+    },
+    {
+      "N": 2,
+      "invertible_nonzero_extensions": 3,
+      "m": 2,
+      "p": 3,
+      "precision": 2,
+      "selected_nonzero_lower_frequency": [
+        0,
+        1
+      ]
+    },
+    {
+      "N": 3,
+      "invertible_nonzero_extensions": 3,
+      "m": 2,
+      "p": 3,
+      "precision": 2,
+      "selected_nonzero_lower_frequency": [
+        0,
+        1
+      ]
+    },
+    {
+      "N": 4,
+      "invertible_nonzero_extensions": 3,
+      "m": 2,
+      "p": 3,
+      "precision": 2,
+      "selected_nonzero_lower_frequency": [
+        0,
+        1
+      ]
+    },
+    {
+      "N": 5,
+      "invertible_nonzero_extensions": 3,
+      "m": 2,
+      "p": 3,
+      "precision": 2,
+      "selected_nonzero_lower_frequency": [
+        0,
+        1
+      ]
+    },
+    {
+      "N": 6,
+      "invertible_nonzero_extensions": 3,
+      "m": 2,
+      "p": 3,
+      "precision": 2,
+      "selected_nonzero_lower_frequency": [
+        0,
+        1
+      ]
+    },
+    {
+      "N": 7,
+      "invertible_nonzero_extensions": 3,
+      "m": 2,
+      "p": 3,
+      "precision": 2,
+      "selected_nonzero_lower_frequency": [
+        0,
+        1
+      ]
+    },
+    {
+      "N": 8,
+      "invertible_nonzero_extensions": 3,
+      "m": 2,
+      "p": 3,
+      "precision": 2,
+      "selected_nonzero_lower_frequency": [
+        0,
+        1
+      ]
+    }
+  ],
+  "reduced_convolution_collisions": [
+    {
+      "N": 5,
+      "common_reduced_convolution": [
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "false_pair": [
+        3,
+        3
+      ],
+      "p": 2,
+      "true_pair": [
+        1,
+        5
+      ]
+    },
+    {
+      "N": 133,
+      "common_reduced_convolution": [
+        1,
+        2,
+        2,
+        1,
+        0
+      ],
+      "false_pair": [
+        5,
+        11
+      ],
+      "p": 3,
+      "true_pair": [
+        7,
+        19
+      ]
+    },
+    {
+      "N": 143,
+      "common_reduced_convolution": [
+        3,
+        3,
+        4
+      ],
+      "false_pair": [
+        19,
+        17
+      ],
+      "p": 5,
+      "true_pair": [
+        11,
+        13
+      ]
+    }
+  ],
+  "relaxed_carry_cases": 32,
+  "relaxed_carry_examples": [
+    {
+      "N": 1,
+      "actual_factor_pairs": 1,
+      "first_false": {
+        "a": 1,
+        "b": 3,
+        "convolution": [
+          1,
+          1,
+          0
+        ],
+        "relaxed_carries": [
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      "m": 2,
+      "p": 2,
+      "relaxed": 4
+    },
+    {
+      "N": 3,
+      "actual_factor_pairs": 2,
+      "first_false": {
+        "a": 1,
+        "b": 1,
+        "convolution": [
+          1,
+          0,
+          0
+        ],
+        "relaxed_carries": [
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      "m": 2,
+      "p": 2,
+      "relaxed": 4
+    },
+    {
+      "N": 1,
+      "actual_factor_pairs": 1,
+      "first_false": {
+        "a": 1,
+        "b": 3,
+        "convolution": [
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "relaxed_carries": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "m": 3,
+      "p": 2,
+      "relaxed": 16
+    },
+    {
+      "N": 3,
+      "actual_factor_pairs": 2,
+      "first_false": {
+        "a": 1,
+        "b": 1,
+        "convolution": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "relaxed_carries": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "m": 3,
+      "p": 2,
+      "relaxed": 16
+    },
+    {
+      "N": 5,
+      "actual_factor_pairs": 2,
+      "first_false": {
+        "a": 1,
+        "b": 1,
+        "convolution": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "relaxed_carries": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "m": 3,
+      "p": 2,
+      "relaxed": 16
+    },
+    {
+      "N": 7,
+      "actual_factor_pairs": 2,
+      "first_false": {
+        "a": 1,
+        "b": 1,
+        "convolution": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "relaxed_carries": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "m": 3,
+      "p": 2,
+      "relaxed": 16
+    },
+    {
+      "N": 1,
+      "actual_factor_pairs": 1,
+      "first_false": {
+        "a": 1,
+        "b": 4,
+        "convolution": [
+          1,
+          1,
+          0
+        ],
+        "relaxed_carries": [
+          0,
+          2,
+          0,
+          0
+        ]
+      },
+      "m": 2,
+      "p": 3,
+      "relaxed": 18
+    },
+    {
+      "N": 2,
+      "actual_factor_pairs": 2,
+      "first_false": {
+        "a": 1,
+        "b": 5,
+        "convolution": [
+          2,
+          1,
+          0
+        ],
+        "relaxed_carries": [
+          0,
+          2,
+          0,
+          0
+        ]
+      },
+      "m": 2,
+      "p": 3,
+      "relaxed": 18
+    },
+    {
+      "N": 4,
+      "actual_factor_pairs": 3,
+      "first_false": {
+        "a": 1,
+        "b": 1,
+        "convolution": [
+          1,
+          0,
+          0
+        ],
+        "relaxed_carries": [
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      "m": 2,
+      "p": 3,
+      "relaxed": 18
+    },
+    {
+      "N": 5,
+      "actual_factor_pairs": 2,
+      "first_false": {
+        "a": 1,
+        "b": 2,
+        "convolution": [
+          2,
+          0,
+          0
+        ],
+        "relaxed_carries": [
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      "m": 2,
+      "p": 3,
+      "relaxed": 18
+    },
+    {
+      "N": 7,
+      "actual_factor_pairs": 2,
+      "first_false": {
+        "a": 1,
+        "b": 1,
+        "convolution": [
+          1,
+          0,
+          0
+        ],
+        "relaxed_carries": [
+          0,
+          2,
+          0,
+          0
+        ]
+      },
+      "m": 2,
+      "p": 3,
+      "relaxed": 18
+    },
+    {
+      "N": 8,
+      "actual_factor_pairs": 4,
+      "first_false": {
+        "a": 1,
+        "b": 2,
+        "convolution": [
+          2,
+          0,
+          0
+        ],
+        "relaxed_carries": [
+          0,
+          2,
+          0,
+          0
+        ]
+      },
+      "m": 2,
+      "p": 3,
+      "relaxed": 18
+    },
+    {
+      "N": 1,
+      "actual_factor_pairs": 1,
+      "first_false": {
+        "a": 1,
+        "b": 6,
+        "convolution": [
+          1,
+          1,
+          0
+        ],
+        "relaxed_carries": [
+          0,
+          4,
+          0,
+          0
+        ]
+      },
+      "m": 2,
+      "p": 5,
+      "relaxed": 100
+    },
+    {
+      "N": 2,
+      "actual_factor_pairs": 2,
+      "first_false": {
+        "a": 1,
+        "b": 7,
+        "convolution": [
+          2,
+          1,
+          0
+        ],
+        "relaxed_carries": [
+          0,
+          4,
+          0,
+          0
+        ]
+      },
+      "m": 2,
+      "p": 5,
+      "relaxed": 100
+    },
+    {
+      "N": 3,
+      "actual_factor_pairs": 2,
+      "first_false": {
+        "a": 1,
+        "b": 8,
+        "convolution": [
+          3,
+          1,
+          0
+        ],
+        "relaxed_carries": [
+          0,
+          4,
+          0,
+          0
+        ]
+      },
+      "m": 2,
+      "p": 5,
+      "relaxed": 100
+    },
+    {
+      "N": 4,
+      "actual_factor_pairs": 3,
+      "first_false": {
+        "a": 1,
+        "b": 9,
+        "convolution": [
+          4,
+          1,
+          0
+        ],
+        "relaxed_carries": [
+          0,
+          4,
+          0,
+          0
+        ]
+      },
+      "m": 2,
+      "p": 5,
+      "relaxed": 100
+    },
+    {
+      "N": 6,
+      "actual_factor_pairs": 4,
+      "first_false": {
+        "a": 1,
+        "b": 1,
+        "convolution": [
+          1,
+          0,
+          0
+        ],
+        "relaxed_carries": [
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      "m": 2,
+      "p": 5,
+      "relaxed": 100
+    },
+    {
+      "N": 7,
+      "actual_factor_pairs": 2,
+      "first_false": {
+        "a": 1,
+        "b": 2,
+        "convolution": [
+          2,
+          0,
+          0
+        ],
+        "relaxed_carries": [
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      "m": 2,
+      "p": 5,
+      "relaxed": 100
+    },
+    {
+      "N": 8,
+      "actual_factor_pairs": 4,
+      "first_false": {
+        "a": 1,
+        "b": 3,
+        "convolution": [
+          3,
+          0,
+          0
+        ],
+        "relaxed_carries": [
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      "m": 2,
+      "p": 5,
+      "relaxed": 100
+    },
+    {
+      "N": 9,
+      "actual_factor_pairs": 3,
+      "first_false": {
+        "a": 1,
+        "b": 4,
+        "convolution": [
+          4,
+          0,
+          0
+        ],
+        "relaxed_carries": [
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      "m": 2,
+      "p": 5,
+      "relaxed": 100
+    },
+    {
+      "N": 11,
+      "actual_factor_pairs": 2,
+      "first_false": {
+        "a": 1,
+        "b": 1,
+        "convolution": [
+          1,
+          0,
+          0
+        ],
+        "relaxed_carries": [
+          0,
+          2,
+          0,
+          0
+        ]
+      },
+      "m": 2,
+      "p": 5,
+      "relaxed": 100
+    },
+    {
+      "N": 12,
+      "actual_factor_pairs": 6,
+      "first_false": {
+        "a": 1,
+        "b": 2,
+        "convolution": [
+          2,
+          0,
+          0
+        ],
+        "relaxed_carries": [
+          0,
+          2,
+          0,
+          0
+        ]
+      },
+      "m": 2,
+      "p": 5,
+      "relaxed": 100
+    },
+    {
+      "N": 13,
+      "actual_factor_pairs": 2,
+      "first_false": {
+        "a": 1,
+        "b": 3,
+        "convolution": [
+          3,
+          0,
+          0
+        ],
+        "relaxed_carries": [
+          0,
+          2,
+          0,
+          0
+        ]
+      },
+      "m": 2,
+      "p": 5,
+      "relaxed": 100
+    },
+    {
+      "N": 14,
+      "actual_factor_pairs": 4,
+      "first_false": {
+        "a": 1,
+        "b": 4,
+        "convolution": [
+          4,
+          0,
+          0
+        ],
+        "relaxed_carries": [
+          0,
+          2,
+          0,
+          0
+        ]
+      },
+      "m": 2,
+      "p": 5,
+      "relaxed": 100
+    },
+    {
+      "N": 16,
+      "actual_factor_pairs": 5,
+      "first_false": {
+        "a": 1,
+        "b": 1,
+        "convolution": [
+          1,
+          0,
+          0
+        ],
+        "relaxed_carries": [
+          0,
+          3,
+          0,
+          0
+        ]
+      },
+      "m": 2,
+      "p": 5,
+      "relaxed": 100
+    },
+    {
+      "N": 17,
+      "actual_factor_pairs": 2,
+      "first_false": {
+        "a": 1,
+        "b": 2,
+        "convolution": [
+          2,
+          0,
+          0
+        ],
+        "relaxed_carries": [
+          0,
+          3,
+          0,
+          0
+        ]
+      },
+      "m": 2,
+      "p": 5,
+      "relaxed": 100
+    },
+    {
+      "N": 18,
+      "actual_factor_pairs": 6,
+      "first_false": {
+        "a": 1,
+        "b": 3,
+        "convolution": [
+          3,
+          0,
+          0
+        ],
+        "relaxed_carries": [
+          0,
+          3,
+          0,
+          0
+        ]
+      },
+      "m": 2,
+      "p": 5,
+      "relaxed": 100
+    },
+    {
+      "N": 19,
+      "actual_factor_pairs": 2,
+      "first_false": {
+        "a": 1,
+        "b": 4,
+        "convolution": [
+          4,
+          0,
+          0
+        ],
+        "relaxed_carries": [
+          0,
+          3,
+          0,
+          0
+        ]
+      },
+      "m": 2,
+      "p": 5,
+      "relaxed": 100
+    },
+    {
+      "N": 21,
+      "actual_factor_pairs": 4,
+      "first_false": {
+        "a": 1,
+        "b": 1,
+        "convolution": [
+          1,
+          0,
+          0
+        ],
+        "relaxed_carries": [
+          0,
+          4,
+          0,
+          0
+        ]
+      },
+      "m": 2,
+      "p": 5,
+      "relaxed": 100
+    },
+    {
+      "N": 22,
+      "actual_factor_pairs": 4,
+      "first_false": {
+        "a": 1,
+        "b": 2,
+        "convolution": [
+          2,
+          0,
+          0
+        ],
+        "relaxed_carries": [
+          0,
+          4,
+          0,
+          0
+        ]
+      },
+      "m": 2,
+      "p": 5,
+      "relaxed": 100
+    },
+    {
+      "N": 23,
+      "actual_factor_pairs": 2,
+      "first_false": {
+        "a": 1,
+        "b": 3,
+        "convolution": [
+          3,
+          0,
+          0
+        ],
+        "relaxed_carries": [
+          0,
+          4,
+          0,
+          0
+        ]
+      },
+      "m": 2,
+      "p": 5,
+      "relaxed": 100
+    },
+    {
+      "N": 24,
+      "actual_factor_pairs": 8,
+      "first_false": {
+        "a": 1,
+        "b": 4,
+        "convolution": [
+          4,
+          0,
+          0
+        ],
+        "relaxed_carries": [
+          0,
+          4,
+          0,
+          0
+        ]
+      },
+      "m": 2,
+      "p": 5,
+      "relaxed": 100
+    }
+  ],
+  "scope": "Finite exact identities; no factoring exponent improvement and no measured bit-space claim.",
+  "small_characteristic_determinant_cases": 560,
+  "status": "passed",
+  "virtual_integer_power_bit_cases": 77
+}
