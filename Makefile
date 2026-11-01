@@ -2518,3 +2518,10 @@ verify-oriented-refinement: verify-sparse-unit-presentation
 
 verify-sparse-unit-presentation:
 	python3 tools/check_sparse_unit_presentation.py
+
+.PHONY: verify-quotient-update-oriented-basis
+
+verify-oriented-refinement: verify-quotient-update-oriented-basis
+
+verify-quotient-update-oriented-basis:
+	python3 tools/check_quotient_update_oriented_basis.py --repetitions 1

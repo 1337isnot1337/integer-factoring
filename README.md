@@ -2162,3 +2162,10 @@ Stable identifiers and incidence updates reduce the matched 80-bit final-pass
 median from 13.116 seconds to 0.853 seconds, with verification included.
 This is a measured implementation improvement; the relation-search bound is
 unchanged.
+
+[Exact quotient tree updates](research/quotient-update-oriented-basis.md)
+replace large ancestor recomputations with exact division or multiplication
+by the changed leaf. Every atom, signed word and gcd decision is preserved.
+On the retained 80-bit prefix, three matched component runs reduce the
+construction-and-export median from 17.864 seconds to 1.171 seconds; all
+9,776 literal ideal identities replay independently.
