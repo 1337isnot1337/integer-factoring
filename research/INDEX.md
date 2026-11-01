@@ -1600,3 +1600,4 @@ The [symbolic profile classification](orthogonal-joint-global-rigidity.md#5-all-
 - [Prefix and interval closure for synchronized word sums](frobenius-prefix-contraction.md): substitute fully fixed words, retain only one partial word per operand, and decompose integer intervals into disjoint prefixes. The integer phase representation remains open.
 
 - [Square-zero aggregation of trace constraints](square-zero-trace-contraction.md): one carry contraction over an explicit subset algebra gives `2^O(r) (S+rt+2)^O(vw/t)` cost, retaining scalar-only denominator inversion. The prefix implementation uses this sharper bound; the complete arithmetic phase representation remains open.
+- [Deterministic smooth relations: scope and wall](deterministic-smooth-relations-scope.md): genus invariance and least-nonresidue reductions showing where unconditional analytic input is needed; p-adic CFRAC view of the leading-power window.
