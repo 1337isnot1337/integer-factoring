@@ -1,0 +1,145 @@
+{
+  "status": "exact asymmetric Gaussian controls passed",
+  "baseline_permutation_identities": 625,
+  "records": [
+    {
+      "record": "evidence/asymmetric-four-particle-codes-q5.json",
+      "record_sha256": "af54e7d262565fac2a06a646d52b9680083629e112072f7ee9ccdeb0e95725a6",
+      "status": "passed",
+      "source_provenance": {
+        "search_asymmetric_four_particle_codes.py": {
+          "location": "worktree",
+          "sha256": "b2b1a8c870b26f50e3f62abf33fbbc93c47599fd7e59df6348162ab8b0ebff91"
+        },
+        "asymmetric_four_particle_codes.py": {
+          "location": "worktree",
+          "sha256": "839a922baac851b22ea779e48bab2571bcb9959309231441321b0fe0043a85e9"
+        },
+        "balanced_four_particle_codes.py": {
+          "location": "worktree",
+          "sha256": "b1164944d90556e1a52b694e618dcc8f33cf4c1c51af26fdabb53caae831d008"
+        },
+        "selected_gaussian_coefficients.py": {
+          "location": "worktree",
+          "sha256": "eba892e833a2b61abc8af15fe57a31a7781670fe7287277371f5de9e89f91354"
+        },
+        "selected_gaussian_coefficients.cpp": {
+          "location": "worktree",
+          "sha256": "b648c25e65907b8528bd0491ef2a67442cc1c6982f95e1d5335bc41246a51a15"
+        },
+        "native_rectangular_smith_f4.cpp": {
+          "location": "worktree",
+          "sha256": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6"
+        },
+        "saturated_dual_kernel_directions.py": {
+          "location": "worktree",
+          "sha256": "a8034b7acda20c986619e55e5f71873371f38adedc9d2366d1e2c4a6f13745eb"
+        },
+        "search_f4_recentered_crossings.py": {
+          "location": "worktree",
+          "sha256": "8715f1a28b0cb68ad4d3fd29adc53fe082f6181882ed4bce7ce0e9ff582b0be4"
+        },
+        "native_matrix_smith_f4.py": {
+          "location": "worktree",
+          "sha256": "c08da20f1938a371b438e32fbc6a8f6766b48c2cfee5bcd1c956ce137dc70203"
+        },
+        "native_matrix_smith_f4.cpp": {
+          "location": "worktree",
+          "sha256": "5ec995cd04563c2fa99b69afd71bf476d5ca885f1f90377490c30e5a1a55f330"
+        },
+        "weighted_smith_oracle_f4.py": {
+          "location": "worktree",
+          "sha256": "d277f46caa98dab48d243af64c18e42e09e917bf1e862057a55cb35f74a6d572"
+        }
+      },
+      "complete_declared_alphabets": 326,
+      "retained_literal_tensors": 24,
+      "independent_complete_polynomial_minors": 15000,
+      "complete_profiles_certified_by_polynomial_frames": 48,
+      "best_recorded_rho": 0.7263479477044683,
+      "best_nonreflection_control": {
+        "code_y": [
+          15,
+          23,
+          43,
+          51,
+          228
+        ],
+        "degree": 35,
+        "digest": "890e819ddee37323da525dee31e214410c3db3d4106d67cf64876dd614ad2ce4",
+        "rho": 0.7415036109683197
+      },
+      "strict_pressure_candidate_found": false
+    },
+    {
+      "record": "evidence/asymmetric-four-particle-shell16-q5.json",
+      "record_sha256": "0461dd408647274219605082fc47cb8d79cc0710573c82911c680d5744b333e0",
+      "status": "passed",
+      "source_provenance": {
+        "search_asymmetric_four_particle_shell.py": {
+          "location": "worktree",
+          "sha256": "a990d0a064b5a94a4e8f4b6546ad19e51bbc6995e290180fd32d807049af605c"
+        },
+        "asymmetric_four_particle_codes.py": {
+          "location": "worktree",
+          "sha256": "839a922baac851b22ea779e48bab2571bcb9959309231441321b0fe0043a85e9"
+        },
+        "balanced_four_particle_codes.py": {
+          "location": "worktree",
+          "sha256": "b1164944d90556e1a52b694e618dcc8f33cf4c1c51af26fdabb53caae831d008"
+        },
+        "selected_gaussian_coefficients.py": {
+          "location": "worktree",
+          "sha256": "eba892e833a2b61abc8af15fe57a31a7781670fe7287277371f5de9e89f91354"
+        },
+        "selected_gaussian_coefficients.cpp": {
+          "location": "worktree",
+          "sha256": "b648c25e65907b8528bd0491ef2a67442cc1c6982f95e1d5335bc41246a51a15"
+        },
+        "native_rectangular_smith_f4.cpp": {
+          "location": "worktree",
+          "sha256": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6"
+        },
+        "saturated_dual_kernel_directions.py": {
+          "location": "worktree",
+          "sha256": "a8034b7acda20c986619e55e5f71873371f38adedc9d2366d1e2c4a6f13745eb"
+        },
+        "search_f4_recentered_crossings.py": {
+          "location": "worktree",
+          "sha256": "8715f1a28b0cb68ad4d3fd29adc53fe082f6181882ed4bce7ce0e9ff582b0be4"
+        },
+        "native_matrix_smith_f4.py": {
+          "location": "worktree",
+          "sha256": "c08da20f1938a371b438e32fbc6a8f6766b48c2cfee5bcd1c956ce137dc70203"
+        },
+        "native_matrix_smith_f4.cpp": {
+          "location": "worktree",
+          "sha256": "5ec995cd04563c2fa99b69afd71bf476d5ca885f1f90377490c30e5a1a55f330"
+        },
+        "weighted_smith_oracle_f4.py": {
+          "location": "worktree",
+          "sha256": "d277f46caa98dab48d243af64c18e42e09e917bf1e862057a55cb35f74a6d572"
+        }
+      },
+      "complete_declared_alphabets": 4368,
+      "retained_literal_tensors": 24,
+      "independent_complete_polynomial_minors": 15000,
+      "complete_profiles_certified_by_polynomial_frames": 48,
+      "best_recorded_rho": 0.7263479477044683,
+      "best_nonreflection_control": {
+        "code_y": [
+          15,
+          23,
+          27,
+          39,
+          43
+        ],
+        "degree": 16,
+        "digest": "5cdbfdb47ef67412e0dc56b494d86d90ed33457cba8e7686d0b9e70c4bec249c",
+        "rho": 0.8433425419176845
+      },
+      "strict_pressure_candidate_found": false
+    }
+  ],
+  "factoring_bound_improved": false
+}
