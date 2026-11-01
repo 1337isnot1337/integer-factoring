@@ -9,7 +9,7 @@ from __future__ import annotations
 import math
 
 import numpy as np
-from scipy.optimize import brentq
+from scipy.optimize import brentq, minimize_scalar
 from scipy.special import logsumexp, softmax
 
 from native_matrix_smith_f4 import MatrixOracle
@@ -59,6 +59,40 @@ class PascalLetterPressure:
         mode_parameters = np.r_[[scale * value for place in natural_heights(self.seed)
                                 for value in place], scale]
         return self.lift_mode_parameters(mode_parameters)
+
+    def fitted_natural_start(self):
+        """Fit a common scale from one complete profile query.
+
+        Scaling every height and the valuation parameter by t multiplies
+        every Smith order by t. This initialization avoids recomputing the
+        same exact pivot problem at each scalar optimizer query.
+        """
+        unit = self.natural(1.)
+        self.evaluate(unit)
+        profiles = [np.asarray(cut['orders'])
+                    for cut in self.last['complete_original_profiles']]
+        heights = unit[:-1].reshape(2, 4, self.q)
+        energies = np.asarray([heights[:, 0, :].sum(axis=0) + heights[:, 3, :].sum(axis=0),
+                               heights[:, 1, :].sum(axis=0) + heights[:, 2, :].sum(axis=0)])
+
+        def value(log_scale):
+            scale = math.exp(log_scale)
+            log_b = sum(float(logsumexp(-scale * orders)) for orders in profiles)
+
+            def equation(rate):
+                return log_b - rate * float(logsumexp(-scale * energies / rate, axis=1).sum())
+
+            if equation(1e-8) <= 0:
+                raise ArithmeticError('The common-scale Gibbs root is unresolved.')
+            high = 4.
+            while equation(high) > 0:
+                high *= 2
+                if high > 1e8:
+                    raise ArithmeticError('The common-scale Gibbs root was not bracketed.')
+            return brentq(equation, 1e-8, high, xtol=1e-13) / 2
+
+        fit = minimize_scalar(value, bounds=(-8., math.log(2.)), method='bounded')
+        return unit * math.exp(fit.x)
 
     def evaluate(self, parameters, gradient=False):
         parameters = np.asarray(parameters, dtype=float)

@@ -5,6 +5,10 @@ allows correlated occupation-word weights and arbitrary coordinate
 subalphabets. Its 740 independent integer-order comparisons and registered
 339-case screen support a further constructive search; they establish no
 stronger uniform bound.
+The [occupation-sector backend](research/pascal-coordinate-sectors.md)
+extends this calculation to selected words from larger ambient Fock
+spaces, with 1,782 complete integer-order comparisons and actual
+eight-mode coordinate constructions.
 
 The [free-gauge Pascal search](research/permuted-pascal-free-gauges.md)
 now supports arbitrary exponent permutations with both complete cut

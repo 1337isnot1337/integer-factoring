@@ -10,7 +10,7 @@ from pathlib import Path
 import time
 
 import numpy as np
-from scipy.optimize import minimize, minimize_scalar
+from scipy.optimize import minimize
 
 from pascal_letter_gauges import PascalLetterPressure
 from permuted_pascal_kernels import permuted_pascal_kernel
@@ -21,6 +21,8 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--images', type=int, nargs='+', required=True)
     parser.add_argument('--alphabet', type=int, nargs='+')
+    parser.add_argument('--backend', choices=('literal', 'sectors'), default='literal')
+    parser.add_argument('--precision', type=int, default=512)
     parser.add_argument('--mode-start', type=Path,
                         help='Lift a retained best mode-gauge record, including its constant flag.')
     parser.add_argument('--restarts', type=int, default=4)
@@ -39,13 +41,16 @@ def main():
             parser.error('The mode-start record belongs to a different exponent permutation.')
         if mode['constant_flag'] is not None:
             seed = change_flag(seed, mode['constant_flag'])
-    pressure = PascalLetterPressure(seed, alphabet=args.alphabet)
+    if args.backend == 'sectors':
+        from pascal_coordinate_sectors import SectorPascalLetterPressure
+        alphabet = list(range(1 << seed['n'])) if args.alphabet is None else args.alphabet
+        pressure = SectorPascalLetterPressure(seed, alphabet, precision=args.precision)
+    else:
+        pressure = PascalLetterPressure(seed, alphabet=args.alphabet, precision=args.precision)
     if mode is not None:
         natural = pressure.lift_mode_parameters(mode['best']['parameters'])
     else:
-        fit = minimize_scalar(lambda x: pressure.evaluate(pressure.natural(math.exp(x))),
-                              bounds=(-8., math.log(2.)), method='bounded')
-        natural = pressure.natural(math.exp(fit.x))
+        natural = pressure.fitted_natural_start()
     pressure.evaluate(natural)
     baseline = pressure.last.copy()
     best = baseline.copy()
@@ -67,8 +72,11 @@ def main():
                'tools/tensor_pascal_box_crossings.py', 'tools/native_matrix_smith_f4.py',
                'tools/native_matrix_smith_f4.cpp', 'tools/native_rectangular_smith_f4.cpp',
                'tools/native_weighted_smith_f4.py']
+    if args.backend == 'sectors':
+        sources += ['tools/pascal_coordinate_sectors.py']
     report = {'status': 'exploratory floating search', 'exponent_images': args.images,
               'alphabet': pressure.alphabet, 'constant_flag': seed.get('constant_flag'),
+              'backend': args.backend, 'precision': args.precision,
               'random_seed': args.seed, 'baseline': baseline, 'best': best, 'runs': [],
               'gradient_max_error': error, 'rejected_queries': 0, 'budget_exhausted': False,
               'scope': 'Finite numerical optimization of complete original-polynomial profiles '
@@ -76,6 +84,8 @@ def main():
               'certificate, universal exclusion, or stronger factoring exponent is claimed.',
               'source_sha256': {name: sha256((root / name).read_bytes()).hexdigest()
                                 for name in sources}}
+    if hasattr(pressure, 'construction'):
+        report['construction'] = pressure.construction
     if args.mode_start:
         report['mode_start_sha256'] = sha256(args.mode_start.read_bytes()).hexdigest()
     start = time.monotonic()

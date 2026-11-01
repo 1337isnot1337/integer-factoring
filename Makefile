@@ -2349,6 +2349,10 @@ verify-permuted-pascal-free-gauges:
 verify-pascal-letter-gauges:
 	python3 tools/check_pascal_letter_gauges.py --output /tmp/pascal-letter-gauge-controls.json
 
+.PHONY: verify-pascal-coordinate-sectors
+verify-pascal-coordinate-sectors:
+	python3 tools/check_pascal_coordinate_sectors.py --output /tmp/pascal-coordinate-sectors-controls.json
+
 .PHONY: verify-coherent-f4-partial
 verify-coherent-f4-partial:
 	python3 tools/check_coherent_hot_f4_partial.py
