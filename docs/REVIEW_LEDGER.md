@@ -493,3 +493,30 @@ The [ordinary argument](../research/joint-split-jet-guards.md) combines the prot
 At the coordinate 25-to-16 split, the complete first-order system for the retraction identity and both first matrix jets at both places has 88 variables, rank 81 and seven kernel directions. Every direction is an internal height-preserving basis change commuting with the entire compressed polynomial. An ordinary formal-gauge induction proves no tensor deformation in that frozen-jet formal neighborhood, over any characteristic-two field. Other components, moving spectral maps and changing the jet factors while retaining ranks are outside the theorem.
 
 The focused checker passes: all 625 source entry bounds, the complete tangent kernel and polynomial commutators, the symbolic residual pattern, all three pressure certificates, 512 independently replayed F4 fiber orders and eight protected-core orders. The new documentation gate passes. No new full default run, independent mathematical review, Lean work or factoring exponent above `1/2` is claimed for this follow-up. Substantial OpenAI assistant support.
+
+## 2026-11-01: Integrate PR61 with an exact full-suite receipt
+
+PR61 head `e4c4ffca53656b90ba24d144b0c3af11625f49df` is integrated with
+all source history and contributor credit preserved. Index and ledger
+conflicts retain both sides. The [receipt](../evidence/verify-pr61-44b4b6a.json)
+and [full compressed log](../evidence/verify-pr61-44b4b6a.stdout.txt.xz) pin
+a clean default run plus all sixteen imported focused targets and the
+mixed-graph controls to `44b4b6ab7fca38443de96edd53056148f2471568`, tree
+`9e44af4d5837aa1c210d3034d0260f78071e4e13`: exit zero, 366 Python command
+blocks, 66 plus five unit tests, 1,091 Markdown files, 883.98 seconds.
+The working tree remained clean after that run.
+
+Current main then retained the later mixed-graph attempt archive, asymmetric
+bundle comparison and q12 literal-graph constructor at integration
+`959a6616fb9c944b835a6c722d193a8dde36afcb`. The integer twelve-letter target,
+asymmetric bundle ingredient and q12 constructor quick gates passed on
+that later source; the latter includes 36 independent principal orders,
+576 full native orders and 180 derivative controls. The earlier separate
+q12 full-control receipt includes all 288 coordinate orders as well.
+The full-suite receipt is not a new full pass for this later source.
+
+Necessary degree-22 and degree-24 twelve-letter profile targets remain
+without realizing tensors. Integration implies no independent mathematical
+acceptance, new Lean build or exponent beyond the complete score 1/2.
+The source branch is preserved. Substantial OpenAI assistant support was
+used under the owner's direction.

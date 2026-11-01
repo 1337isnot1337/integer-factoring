@@ -1,0 +1,43 @@
+{
+  "status": "pass",
+  "source_commit": "44b4b6ab7fca38443de96edd53056148f2471568",
+  "source_tree": "9e44af4d5837aa1c210d3034d0260f78071e4e13",
+  "command": [
+    "make",
+    "verify",
+    "verify-joint-grid-compressions",
+    "verify-joint-split-jet-guards",
+    "verify-joint-split-flags",
+    "verify-joint-moving-retractions",
+    "verify-joint-small-rational",
+    "verify-joint-six-to-five",
+    "verify-zero-energy-parity-core",
+    "verify-zero-energy-hereditary",
+    "verify-hereditary-adjugate",
+    "verify-hereditary-q6-rejection",
+    "verify-multichannel-cofactors",
+    "verify-multichannel-bare-entropy",
+    "verify-inherited-second-jet",
+    "verify-q12-second-jet-target",
+    "verify-higher-jet-words",
+    "verify-q12-integer-word-target",
+    "verify-mixed-graph-retractions"
+  ],
+  "started_utc": "2026-11-01T13:27:31Z",
+  "scope": "Clean exact source; no new Lean build. Focused PR61 checks and defaults; no independent mathematical acceptance.",
+  "exit_code": 0,
+  "seconds": 883.9765388020314,
+  "final_porcelain": "",
+  "python_command_blocks": 366,
+  "unit_test_counts": [
+    66,
+    5
+  ],
+  "markdown_files": 1091,
+  "integration_commit": "959a6616fb9c944b835a6c722d193a8dde36afcb",
+  "source_head": "e4c4ffca53656b90ba24d144b0c3af11625f49df",
+  "limitations": [
+    "Receipt applies to exact clean44b4b6a source/tree. Later bundle/q12 constructor additions have separate focused controls.",
+    "No new Lean build or independent mathematical acceptance. Necessary q12 points are not realizing tensors."
+  ]
+}
