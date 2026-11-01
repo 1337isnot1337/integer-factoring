@@ -2786,3 +2786,7 @@ verify-height36-core-floor:
 	python3 tools/check_height36_core_floor.py
 verify-height36-core-replay:
 	python3 tools/check_height36_core_floor.py --replay-core
+
+.PHONY: verify-coherent-f8
+verify-coherent-f8:
+	python3 tools/check_coherent_hot_f8.py
