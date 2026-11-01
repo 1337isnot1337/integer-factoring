@@ -1085,3 +1085,8 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 - [The complete 496-map boundary optimum](coherent-q32-complete-boundary-optimum.md)
 
 - [Batched proper rational weights and normalized inverse blocks](pole-cauchy-pole-polynomials.md)
+
+
+## A shorter Fourier constructor with charged small-prime removal
+
+- [A shorter Fourier constructor with charged small-prime removal](rough-length-fourier-constructor.md)

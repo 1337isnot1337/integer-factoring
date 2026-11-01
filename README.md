@@ -1680,6 +1680,8 @@ These results restrict the stated certificates. Independent gauges,
 coefficient recombinations, cancellation refinements, and larger alphabets
 remain constructive routes; no stronger factoring score follows here.
 
+The [rough-length Fourier constructor](research/rough-length-fourier-constructor.md) removes small prime factors and branches on the exact two operand lengths. Its carry-column width satisfies `P^2 lambda <= (12+o(1))n`, improving the earlier constant 24, with the full preprocessing and factor recovery costs included. The complete factoring score remains `1/2`.
+
 ## Contribution and attribution
 
 Start with the [contributor quickstart](docs/START_HERE.md) and

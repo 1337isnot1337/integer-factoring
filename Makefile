@@ -2020,3 +2020,7 @@ verify-coherent-mixed-catalogue:
 .PHONY: verify-pole-cauchy-batched-poles
 verify-pole-cauchy-batched-poles:
 	python3 tools/check_pole_cauchy_pole_polynomials.py --output /tmp/integer-factoring-pole-cauchy-pole-polynomials.json
+
+.PHONY: verify-rough-length-fourier
+verify-rough-length-fourier:
+	python3 tools/check_rough_length_fourier_constructor.py --output /tmp/integer-factoring-rough-length-fourier-constructor.json
