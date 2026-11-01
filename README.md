@@ -2111,8 +2111,8 @@ The [moving-map construction](research/moving-boundary-crossings.md) permits
 polynomial physical embeddings and retractions with an exact paired identity.
 All 256 affine F4 parameter pairs of its first eight-letter boundary family
 have complete cut profiles. A separate exact theorem proves natural pressure
-`rho >= 5/7` for every polynomial deformation retaining its seven-letter
-coordinate subtensor, with no degree bound. Both core profiles agree with an
+`rho >= 5/7` for every polynomial deformation retaining its first five
+coordinate letters, with no degree bound. Both core profiles agree with an
 independent binary-polynomial Smith implementation. This closes boundary-only
 natural-pressure searches in that family; changes to lower states and other
 gauges remain open. The factoring score stays `1/2`. Run
@@ -2131,6 +2131,14 @@ retains the full default pass at `410e3e2` (341 Python command blocks,
 66 unit tests, five crossing tests, 973 Markdown files) and four focused
 moving-map checks at `1dba7ba`. These are source-specific ordinary checks;
 later integrations and the full frame search have separate status.
+
+The [same construction now permits endpoint-only splits](research/moving-boundary-crossings.md#only-the-endpoint-split-is-necessary),
+including intermediate rank loss, with 100 complete finite controls.
+An [exact quarter-prefix certificate](research/moving-boundary-crossings.md#an-exact-quarter-prefix-exclusion)
+proves natural pressure at least `5/7` for all 16,384 retained height-flow
+frames at every common scale and physical type; the full 65,536-case run
+is separate and incomplete at that snapshot. Full-gauge fits remain
+iteration-limited evidence. No improved factoring exponent is claimed.
 
 ## Sparse oriented power prefixes
 

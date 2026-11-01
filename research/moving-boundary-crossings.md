@@ -1,4 +1,4 @@
-# Moving physical maps and the seven-letter core obstruction
+# Moving physical maps and protected-core obstructions
 
 ## Construction and research outcome
 
@@ -21,6 +21,11 @@ failure of the finite screen, but concerns the stated common-scale,
 natural physical gauges. Other gauges, changes to the lower subtensor,
 and different coefficient-rank arguments remain open. The complete
 factoring score stays **1/2**; no new Lean work is included.
+
+The subsequent [five-letter certificate](#five-protected-letters-already-suffice)
+strengthens the protected-subtensor scope. A separate finite-prefix
+certificate covers 16,384 completed frames at every common natural scale
+and physical type; it does not exhaust the 65,536-case search.
 
 This work starts from repository commit `941cc1d` and builds on the
 [coherent boundary construction](coherent-hot-boundary-crossings.md),
@@ -330,3 +335,124 @@ A numerical pressure below `1/sqrt(2)` would trigger an exact candidate
 audit and uniform-transfer accounting. None is established by the
 completed controls above. The next positive task is a realizing frame,
 tensor, or coefficient decomposition with a complete strict bound.
+
+## Only the endpoint split is necessary
+
+The all-parameter identity LP=I is a sufficient construction rule, not a
+requirement of the crossing transfer. One may instead use
+
+```math
+L=[I,a],\qquad P=\begin{bmatrix}I+r b^{\mathsf T}\\b^{\mathsf T}\end{bmatrix},
+\qquad LP=I+(a+r)b^{\mathsf T},
+```
+
+with independent polynomial vectors a,r, provided `a(1)=r(1)`.
+The endpoint is still exactly the crossing after all four physical maps.
+The [constructor](../tools/moving_physical_frames.py) supports this case
+and continues to check every complete endpoint entry.
+
+An explicit binary family is
+
+```math
+a=e_7+wA,\qquad r=w(A+e_7),\qquad b=B.
+```
+
+It has `LP=I+(1+w)e_7B^T`. If `B_7=1`, its determinant is w, so it
+loses one rank at zero while remaining the identity at one. This
+intermediate degeneration was disallowed by the earlier all-parameter
+split constraint. It is not itself a favorable crossing-rank estimate.
+
+The [endpoint-only pilot](../tools/search_endpoint_physical_frames.py)
+covers all 100 pairs in the declared ten-by-ten mask grid. Its
+[complete archive](../evidence/endpoint-moving-frame-pilot.json.gz) retains
+both complete profiles for every tensor. The best numerical pressure is
+approximately `0.7199780715909008`, so this pilot gives no improved bound.
+Independent dense controls include 24 separate endpoint-only frames and
+384 complete polynomial entries. Four full reflection controls compare
+all 512 natural Smith orders with independent binary-polynomial
+elimination, including an endpoint-only dense frame.
+
+## Five protected letters already suffice
+
+The protected-core obstruction extends from seven letters to just the
+five original hot words `0,1,2,3,4`, of heights `0,1,3,4,5`.
+Allow arbitrary polynomial changes to every other entry of an
+eight-letter tensor, keeping the physical heights
+`0,1,3,4,5,6,7,8` and the crossing endpoint. If the tensor retains this
+five-letter reflection subtensor, its natural common-scale pressure is
+still at least **5/7**, over every characteristic-two field, at any
+polynomial degree and for all physical types. This includes independent
+types on the two paired alphabets. Other physical gauges and better
+coefficient-rank methods remain outside the theorem.
+
+The common core has the following 25 complete orders in the deflated
+variable:
+
+```text
+0,1,3,4,5,6,7,8,8,9,9,10,10,11,11,12,12,12,13,13,14,15,15,16,20.
+```
+
+Both cuts are independently checked against native F4 profiles. With Z
+the counting polynomial of this list and Q the unchanged eight-height
+polynomial, the proof again establishes `Z(z^5)^7>Q(z^7)^10` for
+every `0<z<1`. Its derivative-sign polynomial has degree 151 and exactly
+two Descartes sign variations after the same interval transformation.
+The sole interior minimum is enclosed by
+`91056849/10^8` and `91056850/10^8`; the signs and the strict lower
+power comparison are integer calculations. The
+[checker](../tools/check_moving_five_core_floor.py) and
+[certificate](../evidence/moving-five-core-floor.json) retain all 50
+independent order comparisons and the complete all-scale data.
+
+The submatrix and Gibbs entropy arguments are identical to the
+seven-letter proof above. The smaller protected set broadens the
+excluded class: moving only higher states cannot suffice by this
+natural-pressure route. A positive construction must change the stated
+low subtensor or use information outside that pressure criterion.
+
+## An exact quarter-prefix exclusion
+
+The source-frozen height-flow-one run has an immutable
+[16,384-case archive](../evidence/moving-frame-height1-prefix16384.jsonl.gz)
+and [source/order manifest](../evidence/moving-frame-height1-prefix16384.json).
+It covers the first 64 declared A masks and all 256 B masks at source
+`1dba7ba`. This is a quarter of the planned finite search; the remaining
+cases are not claimed covered by this snapshot.
+
+For every retained frame, let P(r) be the product of its two complete
+natural profile counting functions, using the original w orders. Let
+C(r)=Z_7(r^2)^2 for the previously certified seven-letter core.
+The [prefix checker](../tools/check_moving_frame_prefix.py) proves
+`P(r)>C(r)` for all `0<r<1` by exact integer coefficients.
+
+Specifically, write `P-C=sum_k d_k r^k`, allowing negative integer
+exponents, and let `S_k=sum_(j<=k)d_j`. Every S_k is nonnegative in
+every one of the 16,384 cases, and the final cumulative excess is
+`64^2-49^2=1695`. For smallest/largest exponents m,M,
+
+```math
+P(r)-C(r)=(1-r)\sum_{k=m}^{M-1}S_k r^k+S_Mr^M>0.
+```
+
+The inherited core theorem therefore gives natural pressure at least
+5/7 for **every retained frame, every common positive scale, and every
+physical type**. No numerical fit is used in this finite exclusion.
+The [replay receipt](../evidence/moving-frame-height1-prefix16384-floor.json)
+binds the complete integer profiles, their exact source and parameter
+order, and the core certificate. It does not exclude other flows,
+nonbinary coefficients, other physical gauges, or the unfinished cases.
+
+## Bounded full-gauge refinements
+
+The [refinement driver](../tools/refine_moving_physical_frames.py) tested
+12 declared height-flow frames with three full-gauge starts each, at an
+80-iteration budget. Its [archive](../evidence/moving-frame-gauge-refinements.json.gz)
+retains all 36 attempts. One optimizer reported convergence and 35 reached
+their iteration limit. There were no arithmetic failures; the 7,826
+objective evaluations did not produce a pressure below the old constant
+control. The best retained numerical value is approximately
+`0.7199753178555406`.
+
+Those iteration-limited fits are not optimization exclusions or global
+optimality certificates. They remain distinct from the exact natural
+quarter-prefix obstruction and the all-degree protected-subtensor proofs.

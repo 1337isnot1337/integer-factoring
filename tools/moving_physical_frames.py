@@ -8,32 +8,37 @@ import numpy as np
 from moving_boundary_crossings import evaluate_at_one, multiply_arrays
 
 
-def compress_frame(seed, a, b, a_shifts=None, b_shifts=None):
+def compress_frame(seed, a, b, a_shifts=None, b_shifts=None,
+                   right_a=None, right_a_shifts=None):
     """L=[I,a], P=[I+a*b^T;b^T], so LP=I in characteristic two.
 
     Rank-one updates avoid constructing or applying dense polynomial maps.
-    Neither a represented lower coordinate core nor homogeneity is assumed.
+    A separate right_a gives LP=I+(a+right_a)*b^T. Only the endpoint
+    split is then required; complete polynomial endpoint checks stay active.
     """
     q = len(a)
     if len(b) != q or seed['dimensions'] != [q + 1] * 4:
         raise ValueError('Supply two vectors and an ambient alphabet one dimension larger.')
     a_shifts = [0] * q if a_shifts is None else list(a_shifts)
     b_shifts = [0] * q if b_shifts is None else list(b_shifts)
-    if len(a_shifts) != q or len(b_shifts) != q or any(type(v) is not int for v in a_shifts + b_shifts):
+    right_a = a if right_a is None else right_a
+    right_a_shifts = a_shifts if right_a_shifts is None else list(right_a_shifts)
+    if len(right_a) != q or len(a_shifts) != q or len(b_shifts) != q or len(right_a_shifts) != q or any(type(v) is not int for v in a_shifts + b_shifts + right_a_shifts):
         raise ValueError('Supply one integer Laurent shift per vector coordinate.')
     left_shift = max([0] + [-shift for value, shift in zip(a, a_shifts) if value != (0, 0)])
-    right_shift = max([0] + [left_shift - shift for value, shift in zip(b, b_shifts) if value != (0, 0)])
+    common_shift = max([0] + [-shift for value, shift in zip(right_a, right_a_shifts) if value != (0, 0)])
+    right_shift = max([0] + [common_shift - shift for value, shift in zip(b, b_shifts) if value != (0, 0)])
     dimensions = [q + 1] * 4
     planes = [np.asarray([value[p] for value in seed['values']], dtype=object)
               .reshape(dimensions, order='F') for p in (0, 1)]
     for axis in range(4):
         moved = [np.moveaxis(plane, axis, 0) for plane in planes]
-        common = [plane[-1] << left_shift for plane in moved]
+        common = [plane[-1] << common_shift for plane in moved]
         if axis >= 2:
-            for i, scalar in enumerate(a):
+            for i, scalar in enumerate(right_a):
                 if scalar == (0, 0):
                     continue
-                shift = left_shift + a_shifts[i]
+                shift = common_shift + right_a_shifts[i]
                 term = multiply_arrays([moved[0][i], moved[1][i]], (scalar[0] << shift, scalar[1] << shift))
                 common[0] ^= term[0]
                 common[1] ^= term[1]
@@ -51,7 +56,7 @@ def compress_frame(seed, a, b, a_shifts=None, b_shifts=None):
                 shift += left_shift
             else:
                 source = common
-                shift = right_shift + b_shifts[i] - left_shift
+                shift = right_shift + b_shifts[i] - common_shift
             term = multiply_arrays(source, (scalar[0] << shift, scalar[1] << shift))
             outputs[0].append((moved[0][i] << base_shift) ^ term[0])
             outputs[1].append((moved[1][i] << base_shift) ^ term[1])

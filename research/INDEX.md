@@ -1370,9 +1370,11 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 
 [Truncated profiles and tail bounds](coherent-hot-low-order-certificates.md) compute exact low Smith orders and bound every unknown channel contribution. The original full engine stays unchanged; no new numerical factoring bound is claimed.
 
-- [Moving physical maps and a seven-letter core obstruction](moving-boundary-crossings.md): explicit polynomial paired maps, a complete 256-pair affine F4 screen, and an exact all-degree natural-pressure floor `rho >= 5/7` for every tensor retaining the specified lower subtensor.
+- [Moving physical maps and protected-core obstructions](moving-boundary-crossings.md): explicit polynomial paired maps, a complete 256-pair affine F4 screen, and an exact all-degree natural-pressure floor `rho >= 5/7` for every tensor retaining just the specified five lower letters. The earlier seven-letter certificate is retained.
 
 - [Interior moving frames and reciprocal Laurent flows](moving-boundary-crossings.md#codimension-one-frames-with-no-protected-lower-coordinate-core): codimension-one physical maps with an exact split identity, monomial-clearing invariance, a complete 1,696-evaluation interior screen, and 144 finite frame controls. The full positive-construction target remains open.
+
+- [Endpoint-only frames and a quarter-prefix certificate](moving-boundary-crossings.md#only-the-endpoint-split-is-necessary): intermediate split rank loss, 100 complete finite controls, and an exact all-scale natural-pressure exclusion for 16,384 frozen frames. The larger search and unrestricted gauge optimization remain open.
 
 ## First orthogonal candidate: exact natural-pressure floor
 

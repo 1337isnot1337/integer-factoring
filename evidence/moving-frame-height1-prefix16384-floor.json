@@ -1,0 +1,21 @@
+{
+  "all_common_positive_scales_and_physical_types": true,
+  "archive_sha256": "3fa263f629f7a2e8d96e628065977702ab31739b2a82aedffad57160bde4fc0f",
+  "checked_cases": 16384,
+  "final_cumulative_excess_each_case": 1695,
+  "full_planned_cases": 65536,
+  "full_search_exhausted": false,
+  "manifest_sha256": "2446fd0627f8964ca00142eed58981d6ca13416631d4aed3f33e8bde48943c3f",
+  "minimum_cumulative_coefficient": 0,
+  "numerical_fits_used": false,
+  "rho_natural_floor": [
+    5,
+    7
+  ],
+  "scope": "Exact all-scale natural-pressure exclusion for a frozen finite prefix.\n\nThis checker uses only the complete integer profiles, not their fitted\npressures. It does not exclude other flows, fields, gauges or tensors.\n",
+  "source_commit_of_profile_run": "1dba7bad8628b7ce3b3448da76bb79361c316cb5",
+  "source_sha256": {
+    "tools/check_moving_frame_prefix.py": "583e03dd548592d192ab6c13df5e2cd21cc4d969176be0282c5c80d6e6d459de"
+  },
+  "status": "passed"
+}
