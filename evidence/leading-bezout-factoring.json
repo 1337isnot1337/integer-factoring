@@ -1,0 +1,130 @@
+{
+  "exact_relative_factor_weight_controls": 471,
+  "finite_known_factor_oracle_queries": 460,
+  "large_encoded_contract": {
+    "clearing_exponent_bits": 1210,
+    "domain_log2_size": 1207,
+    "input_bits": 402,
+    "padding_exponent": 3222,
+    "precision": 805,
+    "requested_coefficients": 1,
+    "scope": "Contract construction only; no large coefficient or factor computed"
+  },
+  "literal_factorial_unit_controls": 60,
+  "odd_integer_reduction_controls": 128,
+  "scope": "The oracle is explicitly supplied with finite divisor lists. No fast global coefficient provider or improved factoring score is claimed.",
+  "selected_controls": [
+    {
+      "coefficient_queries": 1,
+      "n": 3,
+      "proper_divisors": [],
+      "scope": "Conditional on the supplied global coefficient oracle",
+      "smallest_prime_factor": 3
+    },
+    {
+      "coefficient_queries": 1,
+      "largest_proper_divisor": 3,
+      "n": 9,
+      "proper_divisors": [
+        3
+      ],
+      "scope": "Conditional on the supplied global coefficient oracle",
+      "smallest_prime_factor": 3
+    },
+    {
+      "coefficient_queries": 2,
+      "largest_proper_divisor": 5,
+      "n": 15,
+      "proper_divisors": [
+        3,
+        5
+      ],
+      "scope": "Conditional on the supplied global coefficient oracle",
+      "smallest_prime_factor": 3
+    },
+    {
+      "coefficient_queries": 3,
+      "largest_proper_divisor": 5,
+      "n": 25,
+      "proper_divisors": [
+        5
+      ],
+      "scope": "Conditional on the supplied global coefficient oracle",
+      "smallest_prime_factor": 5
+    },
+    {
+      "coefficient_queries": 4,
+      "largest_proper_divisor": 15,
+      "n": 45,
+      "proper_divisors": [
+        3,
+        5,
+        9,
+        15
+      ],
+      "scope": "Conditional on the supplied global coefficient oracle",
+      "smallest_prime_factor": 3
+    },
+    {
+      "coefficient_queries": 5,
+      "largest_proper_divisor": 27,
+      "n": 81,
+      "proper_divisors": [
+        3,
+        9,
+        27
+      ],
+      "scope": "Conditional on the supplied global coefficient oracle",
+      "smallest_prime_factor": 3
+    },
+    {
+      "coefficient_queries": 6,
+      "largest_proper_divisor": 35,
+      "n": 105,
+      "proper_divisors": [
+        3,
+        5,
+        7,
+        15,
+        21,
+        35
+      ],
+      "scope": "Conditional on the supplied global coefficient oracle",
+      "smallest_prime_factor": 3
+    },
+    {
+      "coefficient_queries": 6,
+      "largest_proper_divisor": 13,
+      "n": 169,
+      "proper_divisors": [
+        13
+      ],
+      "scope": "Conditional on the supplied global coefficient oracle",
+      "smallest_prime_factor": 13
+    },
+    {
+      "coefficient_queries": 7,
+      "largest_proper_divisor": 75,
+      "n": 225,
+      "proper_divisors": [
+        3,
+        5,
+        9,
+        15,
+        25,
+        45,
+        75
+      ],
+      "scope": "Conditional on the supplied global coefficient oracle",
+      "smallest_prime_factor": 3
+    },
+    {
+      "coefficient_queries": 1,
+      "n": 257,
+      "proper_divisors": [],
+      "scope": "Conditional on the supplied global coefficient oracle",
+      "smallest_prime_factor": 257
+    }
+  ],
+  "theorem": "One global leading Bezout coefficient suffices for factoring"
+}

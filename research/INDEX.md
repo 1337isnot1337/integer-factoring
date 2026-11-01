@@ -1251,3 +1251,8 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 
 
 - [Exact eight-wire signed affine-code visibility](canonical-affine-code-visibility.md): complete enumeration of 2,013,762,304 pairs, exact necessary projections, original-polynomial controls, and the matching 31-bit lower example.
+
+
+- [Fixed-scale factor moments from global Bézout data](regularized-bezout-factor-moments.md): arbitrary odd inputs, independent power-of-two interval sizes, known normalization, complete short reverse supports, and polynomial-time postprocessing of a supplied jet.
+- [Displaced Bézout extraction](displaced-bezout-extraction.md): factor-count-sensitive primitive stabilization and an exact modular Hankel decoder that permits vanishing early minors.
+- [One leading coefficient suffices for factoring](leading-bezout-factoring.md): flat derivative units turn one normalized scalar into a positive proper-divisor sum; a linear-precision, polynomial-query reduction isolates the remaining coefficient evaluator.

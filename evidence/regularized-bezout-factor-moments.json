@@ -1,0 +1,437 @@
+{
+  "claim": "Fixed-scale global Bezout coefficients contain factor-supported moments",
+  "controls": {
+    "complete_regularized_pairs": 60,
+    "complete_coefficient_bounds": 433,
+    "factor_support_moments": 362,
+    "independent_padding_comparisons": 6,
+    "nonempty_zero_at_low_precision_controls": 1,
+    "examples": [
+      {
+        "contract": {
+          "n": 9,
+          "first_a": 1,
+          "first_b": 1,
+          "rows": 1,
+          "columns": 1,
+          "precision": 1,
+          "height_bound": 4,
+          "padding_exponent": 5,
+          "row_derivative_order": 0,
+          "column_derivative_order": 0,
+          "clearing_exponent": 5,
+          "unit_multiplier": "omega",
+          "reverse_v_degree": 0,
+          "reverse_u_degree": 0,
+          "provider_obligation": "Supply the globally correct cleared V jet; this function computes only its contract."
+        },
+        "factor_pairs": [],
+        "v_jet": [
+          0
+        ],
+        "ordinary_moments": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "contract": {
+          "n": 15,
+          "first_a": 3,
+          "first_b": 1,
+          "rows": 2,
+          "columns": 1,
+          "precision": 3,
+          "height_bound": 4,
+          "padding_exponent": 7,
+          "row_derivative_order": 1,
+          "column_derivative_order": 0,
+          "clearing_exponent": 8,
+          "unit_multiplier": "omega",
+          "reverse_v_degree": 1,
+          "reverse_u_degree": 0,
+          "provider_obligation": "Supply the globally correct cleared V jet; this function computes only its contract."
+        },
+        "factor_pairs": [],
+        "v_jet": [
+          0,
+          0
+        ],
+        "ordinary_moments": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "contract": {
+          "n": 21,
+          "first_a": 5,
+          "first_b": 1,
+          "rows": 4,
+          "columns": 1,
+          "precision": 6,
+          "height_bound": 5,
+          "padding_exponent": 11,
+          "row_derivative_order": 4,
+          "column_derivative_order": 0,
+          "clearing_exponent": 15,
+          "unit_multiplier": "omega",
+          "reverse_v_degree": 3,
+          "reverse_u_degree": 0,
+          "provider_obligation": "Supply the globally correct cleared V jet; this function computes only its contract."
+        },
+        "factor_pairs": [],
+        "v_jet": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ordinary_moments": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "contract": {
+          "n": 25,
+          "first_a": 1,
+          "first_b": 3,
+          "rows": 8,
+          "columns": 1,
+          "precision": 1,
+          "height_bound": 5,
+          "padding_exponent": 6,
+          "row_derivative_order": 11,
+          "column_derivative_order": 0,
+          "clearing_exponent": 17,
+          "unit_multiplier": "omega",
+          "reverse_v_degree": 0,
+          "reverse_u_degree": 0,
+          "provider_obligation": "Supply the globally correct cleared V jet; this function computes only its contract."
+        },
+        "factor_pairs": [],
+        "v_jet": [
+          0
+        ],
+        "ordinary_moments": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "contract": {
+          "n": 35,
+          "first_a": 3,
+          "first_b": 3,
+          "rows": 1,
+          "columns": 2,
+          "precision": 3,
+          "height_bound": 5,
+          "padding_exponent": 8,
+          "row_derivative_order": 0,
+          "column_derivative_order": 1,
+          "clearing_exponent": 9,
+          "unit_multiplier": "omega",
+          "reverse_v_degree": 0,
+          "reverse_u_degree": 1,
+          "provider_obligation": "Supply the globally correct cleared V jet; this function computes only its contract."
+        },
+        "factor_pairs": [],
+        "v_jet": [
+          0
+        ],
+        "ordinary_moments": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "contract": {
+          "n": 45,
+          "first_a": 5,
+          "first_b": 3,
+          "rows": 2,
+          "columns": 2,
+          "precision": 6,
+          "height_bound": 5,
+          "padding_exponent": 11,
+          "row_derivative_order": 1,
+          "column_derivative_order": 1,
+          "clearing_exponent": 13,
+          "unit_multiplier": "omega",
+          "reverse_v_degree": 1,
+          "reverse_u_degree": 1,
+          "provider_obligation": "Supply the globally correct cleared V jet; this function computes only its contract."
+        },
+        "factor_pairs": [],
+        "v_jet": [
+          0,
+          0
+        ],
+        "ordinary_moments": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "contract": {
+          "n": 49,
+          "first_a": 1,
+          "first_b": 5,
+          "rows": 4,
+          "columns": 2,
+          "precision": 1,
+          "height_bound": 6,
+          "padding_exponent": 7,
+          "row_derivative_order": 4,
+          "column_derivative_order": 1,
+          "clearing_exponent": 12,
+          "unit_multiplier": "omega",
+          "reverse_v_degree": 0,
+          "reverse_u_degree": 0,
+          "provider_obligation": "Supply the globally correct cleared V jet; this function computes only its contract."
+        },
+        "factor_pairs": [
+          [
+            7,
+            7
+          ]
+        ],
+        "v_jet": [
+          1
+        ],
+        "ordinary_moments": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "contract": {
+          "n": 63,
+          "first_a": 3,
+          "first_b": 5,
+          "rows": 8,
+          "columns": 2,
+          "precision": 3,
+          "height_bound": 6,
+          "padding_exponent": 9,
+          "row_derivative_order": 11,
+          "column_derivative_order": 1,
+          "clearing_exponent": 21,
+          "unit_multiplier": "omega",
+          "reverse_v_degree": 2,
+          "reverse_u_degree": 1,
+          "provider_obligation": "Supply the globally correct cleared V jet; this function computes only its contract."
+        },
+        "factor_pairs": [
+          [
+            9,
+            7
+          ]
+        ],
+        "v_jet": [
+          1,
+          0,
+          0
+        ],
+        "ordinary_moments": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "contract": {
+          "n": 15,
+          "first_a": 5,
+          "first_b": 1,
+          "rows": 8,
+          "columns": 4,
+          "precision": 6,
+          "height_bound": 7,
+          "padding_exponent": 13,
+          "row_derivative_order": 11,
+          "column_derivative_order": 4,
+          "clearing_exponent": 28,
+          "unit_multiplier": "omega",
+          "reverse_v_degree": 5,
+          "reverse_u_degree": 3,
+          "provider_obligation": "Supply the globally correct cleared V jet; this function computes only its contract."
+        },
+        "factor_pairs": [
+          [
+            5,
+            3
+          ],
+          [
+            15,
+            1
+          ]
+        ],
+        "v_jet": [
+          38,
+          26,
+          36,
+          8,
+          16,
+          0
+        ],
+        "ordinary_moments": [
+          38,
+          16,
+          30,
+          40,
+          22,
+          0
+        ]
+      },
+      {
+        "contract": {
+          "n": 25,
+          "first_a": 3,
+          "first_b": 3,
+          "rows": 2,
+          "columns": 8,
+          "precision": 3,
+          "height_bound": 6,
+          "padding_exponent": 9,
+          "row_derivative_order": 1,
+          "column_derivative_order": 11,
+          "clearing_exponent": 21,
+          "unit_multiplier": "omega",
+          "reverse_v_degree": 1,
+          "reverse_u_degree": 2,
+          "provider_obligation": "Supply the globally correct cleared V jet; this function computes only its contract."
+        },
+        "factor_pairs": [
+          [
+            5,
+            5
+          ]
+        ],
+        "v_jet": [
+          1,
+          6
+        ],
+        "ordinary_moments": [
+          1,
+          5,
+          1,
+          5,
+          1,
+          5
+        ]
+      }
+    ]
+  },
+  "row_product_controls": {
+    "normalized_row_product_identities": 192,
+    "reciprocal_carry_values": 192
+  },
+  "implicit_postprocessor_control": {
+    "dimension_bits": 301,
+    "precision": 17,
+    "moment_count": 12,
+    "supplied_jet": [
+      8,
+      242,
+      8588,
+      66088,
+      70192,
+      73376,
+      44224,
+      94848,
+      17152,
+      109056,
+      84992,
+      10240
+    ],
+    "prescribed_support": [
+      [
+        15,
+        3
+      ],
+      [
+        41,
+        5
+      ]
+    ],
+    "result": {
+      "ordinary_moments": [
+        8,
+        250,
+        9080,
+        92586,
+        124904,
+        123738,
+        105816,
+        81418,
+        37832,
+        18874,
+        72504,
+        54890
+      ],
+      "shifted_moments": [
+        8,
+        242,
+        8588,
+        66088,
+        70192,
+        73376,
+        44224,
+        94848,
+        17152,
+        109056,
+        84992,
+        10240
+      ],
+      "precision": 17,
+      "supplied_coefficients_used": 12,
+      "interval_product_degree": 11,
+      "enumerated_domain_nodes": 0,
+      "scope": "Polynomial conversion of a supplied global Bezout jet; no global jet provider is implemented."
+    },
+    "scope": "Known-support synthetic input tests only the postprocessor; no global provider is claimed."
+  },
+  "fast_global_provider_implemented": false,
+  "factoring_exponent_improved": false,
+  "source_sha256": {
+    "check_regularized_bezout_factor_moments.py": "9ee211aa1f766130b125b9f26c04f8e2e4ff4506e9b0c8e56a08448c236469c4",
+    "regularized_bezout_factor_moments.py": "6e7b863b2c40a8705528c3809d61967aae2e22cc6e3496884d5291ef8281e48a",
+    "balanced_bezout_modular.py": "082af5136189964fd9944dc94efa9805cf4c60bdbc66f2df17bd69fe205be6e8",
+    "interval_unit_jets.py": "264d9583e1cb6a46f8e141387445c6b43db9045d4724af0ab316dc60fe53c256",
+    "check_pole_smith_stabilization.py": "1944a54935cf975786e095342f44eafaab1aa68272c95fad3d1622335b3142e4"
+  }
+}
