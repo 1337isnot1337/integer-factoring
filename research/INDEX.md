@@ -1231,3 +1231,8 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 ## Complete flat coefficient spaces
 
 - [All physical words over F2 and F4, with exact generic row constraints](cube-flat-coefficient-fibers.md)
+
+
+## Exact recognition of constant local parity gauges
+
+- [Linear recognition, endpoint-preserving gauges, and a certified nongauge reference](local-parity-gauge-test.md)

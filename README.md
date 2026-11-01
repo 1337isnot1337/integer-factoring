@@ -1811,6 +1811,8 @@ The [low-order flat-cube filters](research/cube-flat-low-order-floors.md) apply 
 
 The [complete flat-cube coefficient engine](research/cube-flat-coefficient-fibers.md) covers all 6,912 degree-six endpoint coordinates with no parity restriction, or 13,824 binary coordinates over F4. Exact generic row frames define complete affine fibers; independent polynomial products and full Smith certificates validate retained assignments. The included bounded search exposes source hashes, complete references, second-order feasibility tests, and replayable improvements. These tools and fixed-frame rigidity results leave the factoring score unchanged.
 
+The [constant local parity-gauge theorem](research/local-parity-gauge-test.md) recognizes when a polynomial binary tensor can be made even by constant local basis changes over a coefficient-field extension. It uses seventeen linear unknowns for a general eight-leg tensor and eight with the equality endpoint, constructs paired endpoint-preserving gauges, and returns exact contradiction certificates. Thus the existing even-tensor pressure floor also excludes every positive instance. A retained F4 reference lies outside this entire constant-gauge family, although its pressure does not improve the seed.
+
 ## Contribution and attribution
 
 Start with the [contributor quickstart](docs/START_HERE.md) and

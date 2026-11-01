@@ -2207,3 +2207,8 @@ verify-tensor-pascal-boxes:
 .PHONY: verify-cube-flat-coefficient-fibers
 verify-cube-flat-coefficient-fibers:
 	python3 tools/check_cube_flat_coefficient_fibers.py --compare evidence/cube-flat-coefficient-fibers.json --output /tmp/integer-factoring-cube-flat-coefficient-fibers.json
+
+
+.PHONY: verify-local-parity-gauge
+verify-local-parity-gauge:
+	python3 tools/check_local_parity_gauge.py --output /tmp/integer-factoring-local-parity-gauge.json
