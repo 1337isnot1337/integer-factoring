@@ -1339,7 +1339,7 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 
 ## Orthogonal paired differential retractions
 
-[Subset Gram criterion and construction](orthogonal-differential-pair-codes.md) gives orthogonal, deletion-closed interior maps and identical natural cut profiles. Exact F4 controls find18valid column scalings among81. No new pressure or factoring claim.
+[Subset Gram criterion and construction](orthogonal-differential-pair-codes.md) gives orthogonal, deletion-closed interior maps and identical natural cut profiles. Exact F4 controls find 18 valid column scalings among 81. No new pressure or factoring claim.
 
 
 - [Pascal zero spectra from binary linear maps](linear-pascal-matroid-energies.md): exact Boolean-subcube orders, a supermodular projected-basis weight, explicit polynomial kernels, and complete zero profiles with their physical charges.
@@ -1349,7 +1349,7 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 
 ## Rational row-module first-residual rigidity
 
-[All-field first-residual theorem](joint-hot-first-residual-rigidity.md) classifies the simultaneous rank-one residual images at four protected raw jets. A quadratic-output quotient and64literal Smith controls support the scoped result; higher profiles remain open.
+[All-field first-residual theorem](joint-hot-first-residual-rigidity.md) classifies the simultaneous rank-one residual images at four protected raw jets. A quadratic-output quotient and 64 literal Smith controls support the scoped result; higher profiles remain open.
 
 
 - [All-scale dominance of the explicit permutation cone](permuted-pascal-cone-dominance.md): an all-size filtration and rearrangement proof, with exact rational checks of both physical charges; its conclusion is restricted to the stated common-scale gauges.
@@ -1364,6 +1364,10 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 
 ## First orthogonal candidate: exact natural-pressure floor
 
-[Low-core exclusion](orthogonal-pair-core-floor.md) proves balanced natural rho >= 32/45 for the specified92-letter candidate without completing its full profile. Other gauges, asymmetric criteria and low-core changes remain outside this result.
+[Low-core exclusion](orthogonal-pair-core-floor.md) proves balanced natural rho >= 32/45 for the specified 92-letter candidate without completing its full profile. Other gauges, asymmetric criteria and low-core changes remain outside this result.
 
-The [paired MDS family extension](orthogonal-pair-core-floor.md#5-a-stronger-all-field-consequence-from-only-28-coordinate-states) gives the same32/45 floor from a binary28-label core and a symbolic92-label height inventory, over every characteristic-two field.
+The [paired MDS family extension](orthogonal-pair-core-floor.md#5-a-stronger-all-field-consequence-from-only-28-coordinate-states) gives the same 32/45 floor from a binary 28-label core and a symbolic 92-label height inventory, over every characteristic-two field.
+
+## Binary-extension local Smith profiles
+
+[Scalar restriction and exact checks](binary-extension-smith-restriction.md) computes local profiles over binary extension fields with explicit d-fold matrix enlargement. Independent Toeplitz and determinant controls cover F2, F4, F8 and F16; no new factoring bound is asserted.

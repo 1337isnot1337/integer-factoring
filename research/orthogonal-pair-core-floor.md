@@ -14,7 +14,7 @@ Its balanced two-cut Smith-profile pressure satisfies
 
 Thus this candidate cannot beat the certified hyperoval bound by the
 balanced natural-profile criterion. This does not exclude other letter
-gauges, asymmetric supporting weights, different coefficient matrices,
+gauges, asymmetric supporting weights, coefficient matrices with different graded rank data,
 or changes to the low-height physical maps. Section 5 strengthens the
 coefficient-matrix scope to an entire fixed graded MDS family.
 

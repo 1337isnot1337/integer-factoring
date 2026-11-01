@@ -2493,3 +2493,7 @@ verify-oriented-refinement: verify-sparse-oriented-power
 verify-sparse-oriented-power:
 	python3 tools/check_sparse_oriented_power_search.py --replay evidence/sparse-oriented-power-64.json.xz
 	python3 tools/check_sparse_oriented_power_search.py --replay evidence/sparse-oriented-power-80.json.xz
+
+.PHONY: verify-binary-extension-smith
+verify-binary-extension-smith:
+	python3 tools/check_binary_extension_smith.py
