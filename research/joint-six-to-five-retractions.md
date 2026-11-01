@@ -1,5 +1,10 @@
 # A regraded six-to-five Laurent retraction space
 
+**Target update:** the [hereditary two-letter adjugate cap](zero-energy-hereditary-adjugate.md)
+excludes the formerly compatible target used to motivate this interface,
+regardless of parity. The construction below remains valid for other
+profile choices, which must also satisfy the new cap.
+
 This constructive interface compresses a 36-state joint reflection source
 onto 25 states, then assigns the five physical labels the paired energies
 `(0,0,12,16,18)` with declared deficit six. These differ from the natural

@@ -2199,6 +2199,10 @@ verify-joint-six-to-five:
 verify-zero-energy-parity-core:
 	python3 tools/check_zero_energy_parity_core.py
 
+.PHONY: verify-zero-energy-hereditary
+verify-zero-energy-hereditary:
+	python3 tools/check_zero_energy_hereditary_adjugate.py
+
 .PHONY: verify-multiaxis-cube
 verify-multiaxis-cube:
 	python3 tools/check_multiaxis_cube_transfer.py

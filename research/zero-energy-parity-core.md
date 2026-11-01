@@ -1,5 +1,10 @@
 # A parity obstruction at the saturated zero-energy core
 
+**Stronger update:** the [hereditary adjugate cap](zero-energy-hereditary-adjugate.md)
+now excludes the retained target without any parity assumption. The
+elementary argument below remains valid. Its listed escapes avoid only
+the parity hypothesis, not the stronger target obstruction.
+
 The current compatible five-letter target starts with normalized orders
 `0,6,9,9` at both cuts, has deficit six, and gives two physical labels
 energy zero on each paired alphabet. If these two labels have opposite

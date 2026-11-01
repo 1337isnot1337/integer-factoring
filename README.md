@@ -2042,7 +2042,15 @@ For this particular target, the [zero-energy parity-core argument](research/zero
 proves an additional all-field obstruction: opposite parities on the two
 zero-energy labels are incompatible with a parity-preserving core and
 the prescribed two profile sectors. The rational family admits explicit
-parity-mixing corrections; placing the zero energies on same-parity
-labels is another open option. This does not exclude other favorable
+parity-mixing corrections. This elementary argument does not exclude other
 profile shapes. Run `make verify-zero-energy-parity-core` for the exact
 core and literal tensor controls; the factoring score stays **1/2**.
+
+The stronger [hereditary adjugate cap](research/zero-energy-hereditary-adjugate.md)
+now excludes the retained five-letter target **regardless of parity**.
+Applying the existing graded adjugate theorem to a two-zero-energy-label
+restriction gives `4 S3(r)+3 S2(s)<=12d` and its reverse. The target demands
+`78<=72`. This also excludes its dominating averaged-prefix sector and
+any local-frame choice implying those bounds. Other profiles and energy
+shapes remain open. Run `make verify-zero-energy-hereditary`; the exact
+rational construction interfaces remain available, and the score is **1/2**.
