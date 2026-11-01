@@ -6,9 +6,11 @@ Allowing a gauge to be singular at the crossing point `t=1` produces
 genuine new strict polynomial crossings with the original complete
 zero-place Smith profile and leading infinity coefficient.
 
-For the five-letter reference, the nilpotent sector of the first
-endpoint-jet commutant reduces every such rational gauge to three
-effective scalar parameters. Every **nontrivial** tensor in this family
+For the five-letter reference, every scalar-rational energy gauge
+`I+h(t)P` with a constant square-zero generator of arbitrary rank,
+regular at zero and identity at infinity, reduces to three effective
+endpoint parameters if its transformed seed is polynomial and strict.
+Every **nontrivial** tensor in this family
 has typed Smith parameter `rho>=3/4` at the inherited heights, over
 every characteristic-two field. Since `3/4>1/sqrt(2)`, this family
 cannot improve the half-rate criterion. Here `rho` is a cost parameter,
@@ -208,12 +210,108 @@ Strict positive pressure at `r=3/2` therefore forces the required
 typed parameter to exceed `3/4` at every finite scale. Its infimum is
 at least `3/4`, excluding the target `1/sqrt(2)` uniformly.
 
-## 5. Replay and precise limits
+## 5. Every constant square-zero generator and every rational multiplier
+
+The generator need not initially lie in the endpoint commutant, and
+the rational multiplier need not initially have its poles at one.
+
+**Theorem.** Let `P` be any constant energy-block matrix with `P^2=0`
+over any characteristic-two field, and let `h(t)` be any rational
+function. Suppose `U=I+hP` is regular at zero, equals the identity at
+infinity, and gives a strict polynomial crossing. Then its tensor is
+unchanged, or it is a nontrivial member of (3)--(4). In the latter
+case its typed Smith parameter is at least `3/4` at the inherited
+heights. This covers every generator rank and every rational degree.
+
+### 5.1 A pole at any good finite point forces a trivial generator
+
+Suppose `h` has a pole of order `d>=1` at `a!=0,1`, possibly after
+extending the field. Write `A(a+s)=sum s^j E_j`, and absorb the
+nonzero leading principal-part coefficient into `P`. The general
+formula before any commutant reduction is
+
+```math
+A_U=A+h[P,A]+h^2PAP.                                 \tag{10}
+```
+
+Starting at its highest pole, polynomiality forces
+
+```math
+PE_0P=\cdots=PE_{d-1}P=0,
+\qquad [P,E_0]+PE_dP=0.                              \tag{11}
+```
+
+Lower terms in `h^2` only involve already vanishing sandwiches in
+this induction, since squaring has no cross terms in characteristic
+two. The last equation implies that both `ker P` and `im P` are
+invariant under `E_0=A(a)`: apply it to a vector killed by `P`, or
+rewrite `A(a)P=P A(a)+P E_dP` respectively. Both subspaces are graded
+because `P` preserves energy.
+
+The single-evaluation algebra theorem makes those subspaces invariant
+under every coefficient of `A(t)`, hence under `E_d`. Since
+`im P` lies in `ker P`, this gives `PE_dP=0`. Equation (11) now says
+that `P` commutes with `A(a)`, so the same algebra theorem makes it
+commute with the entire family. Its conjugation is trivial.
+
+Thus a nontrivial generator permits no pole of `h` at any good point,
+including algebraic points. Regularity at zero and the normalization
+at infinity imply that `h` is a principal part supported only at one.
+
+### 5.2 All endpoint pole orders force the three-dimensional sector
+
+Let `d` be that pole order, again absorbing its leading coefficient
+into `P`. Since `D_0=I` and `P^2=0`, the next top-pole window gives
+the necessary equations
+
+```math
+P^2=0,\qquad PD_jP=0\quad(1\le j\le d),
+\qquad [P,D_1]+PD_{d+1}P=0.                          \tag{12}
+```
+
+The last coefficient is at order `s^(1-d)`. At `d=1` this is the
+constant coefficient, where the **strict** crossing condition makes
+the perturbation zero. For larger `d` it is a forbidden pole.
+
+If `d>=18`, the reference degree gives `D_(d+1)=0`. Equation (12)
+therefore puts `P` in the endpoint centralizer. Its square zero
+puts it in `R_1`. For every remaining integer pole order `1<=d<=17`,
+exact quadratic/Frobenius elimination of (12) starts from the full
+69-dimensional energy-block matrix space and terminates at exactly
+the same sector `R_1`:
+
+| Pole order | Dimension chain |
+| --- | --- |
+| 1, 6--8, 10--17 | `69 -> 4 -> 3` |
+| 2, 3, 5 | `69 -> 6 -> 3` |
+| 4 | `69 -> 7 -> 3` |
+| 9 | `69 -> 11 -> 3` |
+
+The checker uses distinct formal linear and quadratic monomials,
+extracts row-space consequences supported on linear monomials or
+pure squares, and takes valid Frobenius roots of the latter. All
+operations are binary and preserve solutions over every field in
+scope. At each terminal space the original equations vanish
+identically. This is the same method as the
+[all-rank polynomial Riccati reduction](joint-energy-polynomial-dressings.md#62-exact-quadratic-elimination-for-degrees-1-through-17),
+now applied to `D_1,...,D_18`. It imposes no finite-field identities
+on the parameters. A separate literal dense `F4` replay checks
+58,125 assembled entries for these new systems.
+
+Consequently `P` lies in `R_1` for every possible pole order. Sections
+1--2 then reduce (10) to the three principal parts (3), or to an
+unchanged tensor if its effective quotient coefficient is zero.
+The all-field cost floor of sections 3--4 applies. This proves the
+theorem without a generator-rank, pole-order or coefficient-field
+cutoff.
+
+## 6. Replay and precise limits
 
 The [checker](../tools/check_joint_endpoint_loops.py) recomputes the
 five-dimensional endpoint commutant, its three-dimensional nilpotent
-sector, all 114 identities, (2), both complete symbolic minors and the
-positive Bernstein certificate. It also independently checks every
+sector, all 114 identities, (2), both complete symbolic minors, the
+positive Bernstein certificate and all seventeen all-rank endpoint
+Riccati reductions. It also independently checks every
 strict endpoint and both complete weighted Smith profiles for all
 64 triples over `F4`: 130 fraction-free profiles including the two
 reference computations. There are four infinity profile classes;
@@ -229,8 +327,9 @@ python3 tools/check_joint_endpoint_loops.py --generate
 The [evidence](../evidence/joint-endpoint-loops.json) stores the
 generator, symbolic determinants, all 67 positive Bernstein integers,
 the complete finite profile catalogue and source hashes. All proof
-checks use only Python's standard library. Arbitrary gauges leaving
-this nilpotent sector, other physical energies and stronger
+checks use only Python's standard library. General rational matrices
+with several independent directions outside this sector, generators
+of higher nilpotency, other physical energies and stronger
 coefficient recombinations remain outside the theorem. This work
 used substantial OpenAI assistant support and retains the Gaussian
 reference attribution. No new Lean, independent review, general

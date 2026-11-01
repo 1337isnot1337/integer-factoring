@@ -10,6 +10,7 @@ from math import comb
 from pathlib import Path
 
 from check_joint_energy_conjugations import cut_matrix, weighted_coefficient
+from check_joint_energy_riccati import assembly_controls, equations as riccati_equations, supported_rows
 from check_joint_evaluation_algebra import polynomial_product
 from check_joint_leading_tangent import realign
 from joint_energy_conjugations import (N, Space, binary_product, commutator_equations,
@@ -121,6 +122,32 @@ def pressure_certificate(zero, half):
                 rho_floor='3/4')
 
 
+def all_rank_reduction(data, jets, radical):
+    # Shift D_1,...,D_18 to the generic quadratic builder's C_0,...,C_17.
+    weighted = {-8+j: value for j, value in enumerate(jets[1:])}
+    initial = [1 << (N*r+c) for r, c in data['positions']]
+    records = []
+    for pole_order in range(1, 18):
+        basis, stages = initial[:], []
+        while True:
+            size = len(basis)
+            blocks, monomials, dimension = riccati_equations(basis, pole_order, weighted)
+            rows = [row for block in blocks for row in block if row]
+            linear = supported_rows(rows, list(range(size)), dimension)
+            square = supported_rows(rows, [monomials[i, i] for i in range(size)], dimension)
+            remaining = kernel(linear+square, size)
+            stages.append(dict(input_dimension=size, linear_consequences=linear,
+                               square_root_consequences=square, remaining_dimension=len(remaining)))
+            if len(remaining) == size:
+                assert size == 3 and not rows
+                break
+            space = Space(basis)
+            basis = [space.matrix((v, 0))[0] for v in remaining]
+        assert len(Space(basis+radical).basis) == 3
+        records.append(dict(pole_order=pole_order, stages=stages, terminal_basis=basis))
+    return records, assembly_controls(initial, weighted)
+
+
 def certificate():
     data = model()
     coefficients = operator_coefficients(data)
@@ -151,6 +178,7 @@ def certificate():
                 identities += 1
     changes = [binary_product(generator, a) ^ binary_product(a, generator) for a in jets]
     assert changes[:4] == [0]*4 and changes[4]
+    all_rank_cases, all_rank_controls = all_rank_reduction(data, jets, radical)
     source, change = regular_matrices(data, generator)
     minors = []
     for rows, expected in (([0, 3], [1]), ([0, 2, 3, 7, 8, 11, 12, 13, 17], [52, None, 34, None, 18, None, 4])):
@@ -190,16 +218,18 @@ def certificate():
     return dict(endpoint_commutant_dimension=5, nilpotent_sector_dimension=3,
                 trivial_sector_dimension=2, effective_parameters=3, generator=generator,
                 quadratic_matrix_identities=identities, commutator_zero_order_at_one=4,
+                all_rank_pole_cases=all_rank_cases, all_rank_dense_F4_entry_controls=all_rank_controls,
                 symbolic_minors=minors, pressure_certificate=pressure,
                 reference_zero=list(zero), F4_profiles=[list(p) for p in profiles], F4_records=records,
                 fraction_free_profiles=130, all_F4_profiles_prefix_dominated=True,
                 source_sha256={name: sha256((ROOT/'tools'/name).read_bytes()).hexdigest()
                                for name in ('check_joint_endpoint_loops.py', 'joint_energy_conjugations.py',
                                             'check_joint_evaluation_algebra.py', 'check_joint_energy_conjugations.py',
+                                            'check_joint_energy_riccati.py',
                                             'check_joint_leading_tangent.py', 'weighted_smith_oracle_f4.py',
                                             'search_f4_recentered_crossings.py')},
-                scope='All characteristic-two fields: rational gauges in the nilpotent sector of the first endpoint-jet commutant, regular at zero and identity at infinity, yielding strict polynomial crossings.',
-                conclusion='Modulo tensor-preserving terms they reduce to three endpoint principal parts. Every nontrivial resulting tensor has typed Smith parameter at least 3/4 at the natural heights, so cannot beat the half target.',
+                scope='All characteristic-two fields and every rank: U=I+h(t)P with any constant energy-block P satisfying P^2=0, rational h, regular at zero and identity at infinity, yielding a strict polynomial crossing. Also arbitrary rational gauges valued in the endpoint nilpotent sector.',
+                conclusion='Every nontrivial gauge reduces to the three endpoint principal parts. Other finite poles force a trivial generator by single-evaluation algebra; all endpoint pole orders reduce by quadratic/Frobenius elimination or the degree bound. Every nontrivial tensor has typed Smith parameter at least 3/4 at the natural heights.',
                 factoring_exponent='1/2; unchanged')
 
 
@@ -214,7 +244,8 @@ def main():
     else:
         assert json.loads(args.evidence.read_text()) == result
     print(json.dumps({k: v for k, v in result.items() if k not in (
-        'source_sha256', 'symbolic_minors', 'pressure_certificate', 'generator', 'F4_profiles', 'F4_records', 'reference_zero')}))
+        'source_sha256', 'symbolic_minors', 'pressure_certificate', 'generator', 'F4_profiles', 'F4_records',
+        'reference_zero', 'all_rank_pole_cases')}))
 
 
 if __name__ == '__main__':

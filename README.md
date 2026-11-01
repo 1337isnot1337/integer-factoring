@@ -699,9 +699,11 @@ at the distinguished places remain open. Run `make verify-joint-monomial-lattice
 `make verify-joint-projector-lattices` and `make verify-joint-evaluation-algebra`.
 The [singular endpoint loop construction](research/joint-endpoint-rational-loops.md)
 evades three-place regularity and gives genuine new polynomial crossings.
-Its nilpotent sector reduces to three effective parameters; two symbolic
-minors and a positive Bernstein certificate prove `rho>=3/4` for every
-nontrivial member over every characteristic-two field at the natural heights.
+Every scalar-rational gauge with a constant square-zero energy generator,
+of any rank, reduces to three effective endpoint parameters under the stated
+conditions. Two symbolic minors and a positive Bernstein certificate prove
+`rho>=3/4` for every nontrivial member over every characteristic-two field
+at the natural heights.
 Thus it gives no half-rate improvement. Run `make verify-joint-endpoint-loops`.
 
 The [group-shear extension](research/group-shear-crossings.md) implements
