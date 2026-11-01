@@ -38,6 +38,7 @@
 - [Primitive temporary rows for exact relation selection](primitive-integer-row-selection.md): an all-matrix equivalence proof, charged coefficient bounds, 17,000 matched decisions and measured 96-bit core selection; original relations remain intact.
 
 - [A lattice terminal for exact ratio-class factors](circuit-box-ratio-lattice.md): weighted two-dimensional reduction, a uniform twenty-line local bound, exact quadratic recovery and fully charged `2^(n/3)*poly(n)` smallest-factor search; representation-specific scope.
+- [Reusable semiprime work in RiemannGaussian](riemann-gaussian-semiprime-source-audit.md): exact-source audit of deterministic boundary contraction, factor moments, semiprime count recovery and coefficient-ring compatibility; no imported score improvement or independent Lean rebuild.
 
 - [Literal hot tensors for low-cell retractions](tensor-literal-low-cell-retractions.md): original Gaussian/Pfaffian evaluation without deletion closure, a proved cache bound, complete independent kernel controls and a retained 55-label capped pilot; no frontier gain.
 

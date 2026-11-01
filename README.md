@@ -2178,6 +2178,12 @@ All complete profiles are retained. A further 860,160 asymmetric grid points
 and twenty bounded refinements give no support value below one. The full
 binary frame run and more general gauge choices retain their separate scope.
 
+A [pinned source audit of RiemannGaussian's semiprime work](research/riemann-gaussian-semiprime-source-audit.md)
+identifies reusable deterministic boundary contraction and exact factor-moment
+encodings. Its current target has the same logarithmic saving exponent `1/2`.
+The semiprime promise, coefficient-ring interface, and complete evaluation
+cost remain explicit obligations before importing a factoring consequence.
+
 ## Sparse oriented power prefixes
 
 The [sparse residual selector](research/sparse-oriented-power-prefixes.md)
