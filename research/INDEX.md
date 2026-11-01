@@ -1528,3 +1528,7 @@ The [symbolic profile classification](orthogonal-joint-global-rigidity.md#5-all-
 ## Exact Hecke determinant factors and closed places
 
 [Complete F8 determinant factorizations](hecke-q5-closed-place-factorization.md) exclude the unweighted supporting criterion with one irreducible closed place per cut for the five-letter tensor, including conjugate-orbit degree weights. All 33 factors have exact reconstruction and Rabin certificates. General mixed-place allocations and physical gauges remain open.
+
+## Fixed-image F8 retraction refinement
+
+[Exact rho < 0.710005787198](f8-hyperoval-retraction-refinement.md) follows from a rank-one retraction change with the same 96-letter hyperoval image. Both complete natural profiles improve over the earlier F8 construction at every positive scale. The 120-case low-order census found four tied leading candidates; only two complete candidates were reconstructed, so no global optimum is claimed. The factoring exponent remains 1/2.
