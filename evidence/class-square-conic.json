@@ -184,5 +184,96 @@
       "denominator": 703135247427,
       "smooth_bound_rejected": 1000
     }
+  },
+  "modular_unit_points": {
+    "uniform_construction_cases": 4496,
+    "nontrivial_partition_sizes_observed": [
+      1,
+      2,
+      3
+    ],
+    "every_modulus_but_no_integer_unit_point": {
+      "root": [
+        2,
+        -1,
+        3
+      ],
+      "target": [
+        2,
+        1,
+        3
+      ],
+      "integer_minimum": 2,
+      "examples": [
+        {
+          "modulus": 2,
+          "vector": [
+            0,
+            1
+          ],
+          "denominators": [
+            2,
+            3,
+            4
+          ],
+          "coprime_parts": [
+            1,
+            2,
+            1
+          ]
+        },
+        {
+          "modulus": 9,
+          "vector": [
+            5,
+            4
+          ],
+          "denominators": [
+            2,
+            3,
+            4
+          ],
+          "coprime_parts": [
+            9,
+            1,
+            1
+          ]
+        },
+        {
+          "modulus": 18,
+          "vector": [
+            14,
+            13
+          ],
+          "denominators": [
+            2,
+            3,
+            4
+          ],
+          "coprime_parts": [
+            9,
+            2,
+            1
+          ]
+        },
+        {
+          "modulus": 213579670020653096702941067957754779763212368537110546802230415954280448,
+          "vector": [
+            127499339471837933179267773309457466706010283902893518658749268285369002,
+            153020094686576443961027096730678700653663932683202397303442426601056939
+          ],
+          "denominators": [
+            2,
+            3,
+            4
+          ],
+          "coprime_parts": [
+            88334481138278674740879234864592663902080545149,
+            2417851639229258349412352,
+            1
+          ]
+        }
+      ]
+    }
   }
 }

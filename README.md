@@ -1135,7 +1135,10 @@ determinant `|Delta|`. Its exact cancellation bound gives direct gcd splitting
 certificates and rewrites prescribed-square search as a smooth denominator
 problem. Finding that denominator remains open. Run
 `make verify-class-square-conic` for independent conic-point and large-certificate
-controls; the factoring score remains `1/2`.
+controls. Three explicit rational points also give a polynomial algorithm for
+solving every modular square-norm instance without a prime factorization of the modulus.
+An exact negative integer example is soluble at every modulus, separating
+this local information from the required global search. The score remains `1/2`.
 
 The [Bell-diagonal seed construction](research/bell-diagonal-crossings.md)
 gives exact two-cut transforms and excludes its complete symmetric
