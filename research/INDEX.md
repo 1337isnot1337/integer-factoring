@@ -1029,3 +1029,5 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 - [Regular analytic weights for complete pole-Cauchy inverse contractions](pole-cauchy-analytic-weights.md)
 - [Joint regular analytic kernels and a two-dimensional moment recurrence](pole-cauchy-analytic-kernels.md)
 - [The sharp precision cost of analytic residue selectors](regular-analytic-selector-precision.md)
+
+- [Polynomial precision for explicit unions of odd arithmetic progressions](pole-cauchy-domain-precision.md)

@@ -1901,3 +1901,7 @@ verify-pole-cauchy-analytic:
 	python3 tools/check_pole_cauchy_analytic_weights.py --output /tmp/integer-factoring-pole-cauchy-analytic-weights.json
 	python3 tools/check_pole_cauchy_analytic_kernels.py --output /tmp/integer-factoring-pole-cauchy-analytic-kernels.json
 	python3 tools/check_regular_analytic_selector_precision.py --output /tmp/integer-factoring-regular-analytic-selector-precision.json
+
+.PHONY: verify-pole-cauchy-domains
+verify-pole-cauchy-domains:
+	python3 tools/check_pole_cauchy_domain_precision.py --output /tmp/integer-factoring-pole-cauchy-domain-precision.json

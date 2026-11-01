@@ -137,7 +137,7 @@ rectangular maximal-minor slope. It does not identify the unknown factor pivots
 or supply a compressed global evaluator. Run `make verify-pole-smith`.
 
 <!-- pole-implicit-checkpoint:start -->
-The [pole-Cauchy stabilization theorem](research/pole-cauchy-smith-stabilization.md)
+The [pole-Cauchy stabilization theorem](research/pole-smith-stabilization.md)
 and [inverse conditioning bounds](research/pole-cauchy-conditioning.md) give exact
 structural and precision controls. [Polynomial inverse moments](research/pole-cauchy-polynomial-moments.md)
 reduce complete contractions to short product jets.
@@ -149,6 +149,10 @@ The [sharp selector precision theorem](research/regular-analytic-selector-precis
 also proves the exact denominator cost `2^(h+1)-h-2` for a residue-class
 parity selector in this circuit representation. It is a representation bound,
 and the complete factoring score remains **1/2**.
+[Explicit arithmetic-progression unions](research/pole-cauchy-domain-precision.md)
+also admit polynomial precision: for `c_A,c_B` component intervals the
+inverse loss is at most `(k-1)(2c_A+2c_B-3)`, with a sharper exact residue sweep.
+This extends the implicit joint-contraction algorithm beyond balanced domains.
 <!-- pole-implicit-checkpoint:end -->
 
 The [research index](research/INDEX.md) links proofs, exact evidence, and replay commands.
