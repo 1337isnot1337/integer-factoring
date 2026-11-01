@@ -3162,3 +3162,7 @@ verify-arithmetic: verify-artin-hasse-traces
 .PHONY: verify-normal-basis-and
 verify-normal-basis-and:
 	python3 tools/check_normal_basis_and_tradeoff.py
+
+.PHONY: verify-fixed-cube-projection
+verify-fixed-cube-projection:
+	python3 tools/check_fixed_cube_projection_floor.py

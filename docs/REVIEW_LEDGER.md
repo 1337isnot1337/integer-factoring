@@ -1253,3 +1253,24 @@ parameter criterion, not a runtime lower bound for factoring or every
 structured contractor. Row polynomials are added; no free sum-to-product
 compiler is claimed. The full replay at `fc695a0` predates this diagnostic.
 No new Lean or independent mathematical review is claimed.
+
+## Fixed-bundle homogeneous cube projection profile floor
+
+The [ordinary proof](../research/fixed-cube-projection-profile-floor.md)
+tests a valid fixed parent grouping under
+`x=X^a,y=Y^a,z=X^bY^(a-b)`, preserving the endpoint and homogeneity.
+The all-parameter one-particle profiles follow from first/two-minors and
+inverse Smith pairing. Convexity makes the balanced projection pointwise
+best in the common-type, common-scale envelope, and an exact degree-64
+Bernstein certificate proves its floor `rho>=3/4>1/sqrt(2)`.
+
+The [receipt](../evidence/fixed-cube-projection-floor.json) retains every
+positive Bernstein coefficient and its exact monomial reconstruction,
+plus six fixed projection controls: 828 minors, 12 finite Laurent Smith
+transformations, 12 physical Gaussian cut reconstructions and 1,536
+endpoint/homogeneity assignments. The focused target and docs are the
+local gate. The result bounds this profile envelope, not actual ranks or
+all possible two-axis uses of the cube. Different types, joint support,
+parameter maps and evaluators remain outside the claim. This closes the
+registered projection route without a numerical parameter sweep or score
+promotion; no new Lean or independent mathematical review is claimed.

@@ -1,5 +1,7 @@
 # Research index
 
+- [A profile floor for fixed homogeneous cube projections](fixed-cube-projection-profile-floor.md): a valid fixed-bundle monomial projection retains the endpoint at two parent axes, but its common-type Smith-profile envelope is at least 3/4 for every projection and scale. Convexity reduces to a balanced profile and an exact Bernstein certificate; actual ranks and other representations remain outside the floor.
+
 - [Exact degree/column tradeoff for direct normal-basis AND](normal-basis-and-degree-tradeoff.md): every normal basis requires all cyclic Frobenius offsets. With t rows, the exact minimum formal degree is 2^floor(t/2)+1, with a matching acquired representation. This closes a direct Boolean-word gate route under the current degree/dimension estimate; arbitrary bases, auxiliaries and structured global predicates remain outside the claim.
 
 - [Exact trace projection with classical Artin--Hasse characters](artin-hasse-trace-projection.md): monomialwise splitting and binary Fourier projection replace the growing-precision algebra cost by 2^r scalar queries, spending r additional precision bits. Full Frobenius orbits sharpen the carry bound; native integer digit evaluation and a stronger factoring score remain open.
