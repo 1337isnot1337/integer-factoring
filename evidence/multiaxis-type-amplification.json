@@ -1,0 +1,75 @@
+{
+  "cases": [
+    {
+      "axes": 2,
+      "blocks": 2,
+      "capped_cuts": 2,
+      "cut_comparisons": 3072,
+      "endpoint_checks": 256,
+      "seed_kind": "dense_three",
+      "seed_length": 1,
+      "seed_pieces": 3,
+      "seed_quality": "2",
+      "tail": 0,
+      "type_words": 9,
+      "types": 6
+    },
+    {
+      "axes": 3,
+      "blocks": 2,
+      "capped_cuts": 0,
+      "cut_comparisons": 5664,
+      "endpoint_checks": 256,
+      "seed_kind": "supported_basis",
+      "seed_length": 1,
+      "seed_pieces": 16,
+      "seed_quality": "1",
+      "tail": 0,
+      "type_words": 256,
+      "types": 136
+    },
+    {
+      "axes": 2,
+      "blocks": 2,
+      "capped_cuts": 0,
+      "cut_comparisons": 5312,
+      "endpoint_checks": 1024,
+      "seed_kind": "supported_basis",
+      "seed_length": 2,
+      "seed_pieces": 16,
+      "seed_quality": "1",
+      "tail": 1,
+      "type_words": 256,
+      "types": 136
+    }
+  ],
+  "complete_factoring_score": "1/2 unchanged",
+  "integer_controls": {
+    "selector_inequalities": 24,
+    "type_count_inequalities": 256
+  },
+  "rank_sum_controls": {
+    "multinomial_rank_sum_inequalities": 144,
+    "strict_quality_comparison": [
+      {
+        "actual_cut_ranks": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            15,
+            15,
+            15
+          ]
+        ],
+        "axes": 3,
+        "exact_rank_sum": 16,
+        "rank_sum_quality": "1",
+        "rounded_maximum_quality": "5/4"
+      }
+    ]
+  },
+  "status": "exact finite amplification controls; no improved seed supplied"
+}

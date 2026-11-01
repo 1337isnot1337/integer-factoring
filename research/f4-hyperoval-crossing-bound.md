@@ -190,3 +190,7 @@ post-half threshold.
 
 Substantial OpenAI assistant support was used for the construction,
 computation, proof, verification, and text.
+
+## Subsequent scope result
+
+The [common-core theorem](hot-boundary-natural-pressure-floor.md) proves a natural-pressure floor of 17/24 for all boundary retractions retaining the same 92 lower-height labels, over characteristic two. Thus more boundary-only variants cannot pass the post-half threshold by this particular pressure route. This does not exclude interior changes, general gauges, other places or different coefficient recombinations.

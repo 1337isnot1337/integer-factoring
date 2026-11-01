@@ -18,7 +18,7 @@ This construction and its checks were developed with OpenAI Codex assistance.
 Let q be an odd prime and write
 
 ```math
-q-1=2eu,\qquad e=2^a,\qquad u\text{ odd},\qquad h=eu.
+q-1=2eu,\qquad e=2^\nu,\qquad u\text{ odd},\qquad h=eu.
 ```
 
 Set phi(T)=Phi_u(T) modulo two and use the full algebra
@@ -157,7 +157,9 @@ check the implementation.
 
 ## 5. Every sampled character order is necessary for the full binary map
 
-For j|u put d=u/j. The kernel, as an ideal of F_2[X], of substitution
+The root-multiplicity argument in the earlier weight-one injectivity proof
+also gives the following exact kernel and omission witnesses. For j|u put
+d=u/j. The kernel, as an ideal of F_2[X], of substitution
 
 ```math
 P(X)\longmapsto P(T^j)\pmod{\phi(T)^e}

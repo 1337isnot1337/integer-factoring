@@ -1,0 +1,620 @@
+{
+  "claim": "Sharp dyadic Bezout denominator 2m-2 for m=2^s+1 in the declared residue-ball family",
+  "controls": {
+    "independent_lagrange_and_hensel_cases": 54,
+    "sharp_power_plus_one_cases": 18,
+    "exact_rational_coefficient_cases": 12,
+    "examples": [
+      {
+        "n": 3,
+        "dimension": 2,
+        "a_progression": [
+          1,
+          4,
+          2
+        ],
+        "b_progression": [
+          1,
+          4,
+          2
+        ],
+        "dyadic_denominator": 2,
+        "ordinary_resultant_valuation": 4,
+        "parity_profile": [
+          1,
+          0
+        ],
+        "interpolation_scale": 4
+      },
+      {
+        "n": 3,
+        "dimension": 3,
+        "a_progression": [
+          1,
+          4,
+          3
+        ],
+        "b_progression": [
+          1,
+          4,
+          3
+        ],
+        "dyadic_denominator": 4,
+        "ordinary_resultant_valuation": 9,
+        "parity_profile": [
+          1,
+          1,
+          0
+        ],
+        "interpolation_scale": 8
+      },
+      {
+        "n": 3,
+        "dimension": 4,
+        "a_progression": [
+          1,
+          4,
+          4
+        ],
+        "b_progression": [
+          1,
+          4,
+          4
+        ],
+        "dyadic_denominator": 5,
+        "ordinary_resultant_valuation": 16,
+        "parity_profile": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "interpolation_scale": 11
+      },
+      {
+        "n": 3,
+        "dimension": 5,
+        "a_progression": [
+          1,
+          4,
+          5
+        ],
+        "b_progression": [
+          1,
+          4,
+          5
+        ],
+        "dyadic_denominator": 8,
+        "ordinary_resultant_valuation": 25,
+        "parity_profile": [
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        "interpolation_scale": 16
+      },
+      {
+        "n": 3,
+        "dimension": 6,
+        "a_progression": [
+          1,
+          4,
+          6
+        ],
+        "b_progression": [
+          1,
+          4,
+          6
+        ],
+        "dyadic_denominator": 9,
+        "ordinary_resultant_valuation": 36,
+        "parity_profile": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "interpolation_scale": 19
+      },
+      {
+        "n": 3,
+        "dimension": 7,
+        "a_progression": [
+          1,
+          4,
+          7
+        ],
+        "b_progression": [
+          1,
+          4,
+          7
+        ],
+        "dyadic_denominator": 11,
+        "ordinary_resultant_valuation": 49,
+        "parity_profile": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "interpolation_scale": 23
+      },
+      {
+        "n": 3,
+        "dimension": 8,
+        "a_progression": [
+          1,
+          4,
+          8
+        ],
+        "b_progression": [
+          1,
+          4,
+          8
+        ],
+        "dyadic_denominator": 12,
+        "ordinary_resultant_valuation": 64,
+        "parity_profile": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "interpolation_scale": 26
+      },
+      {
+        "n": 3,
+        "dimension": 9,
+        "a_progression": [
+          1,
+          4,
+          9
+        ],
+        "b_progression": [
+          1,
+          4,
+          9
+        ],
+        "dyadic_denominator": 16,
+        "ordinary_resultant_valuation": 81,
+        "parity_profile": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        "interpolation_scale": 32
+      },
+      {
+        "n": 3,
+        "dimension": 10,
+        "a_progression": [
+          1,
+          4,
+          10
+        ],
+        "b_progression": [
+          1,
+          4,
+          10
+        ],
+        "dyadic_denominator": 17,
+        "ordinary_resultant_valuation": 100,
+        "parity_profile": [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "interpolation_scale": 35
+      },
+      {
+        "n": 3,
+        "dimension": 11,
+        "a_progression": [
+          1,
+          4,
+          11
+        ],
+        "b_progression": [
+          1,
+          4,
+          11
+        ],
+        "dyadic_denominator": 19,
+        "ordinary_resultant_valuation": 121,
+        "parity_profile": [
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "interpolation_scale": 39
+      },
+      {
+        "n": 3,
+        "dimension": 12,
+        "a_progression": [
+          1,
+          4,
+          12
+        ],
+        "b_progression": [
+          1,
+          4,
+          12
+        ],
+        "dyadic_denominator": 20,
+        "ordinary_resultant_valuation": 144,
+        "parity_profile": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "interpolation_scale": 42
+      },
+      {
+        "n": 3,
+        "dimension": 13,
+        "a_progression": [
+          1,
+          4,
+          13
+        ],
+        "b_progression": [
+          1,
+          4,
+          13
+        ],
+        "dyadic_denominator": 23,
+        "ordinary_resultant_valuation": 169,
+        "parity_profile": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "interpolation_scale": 47
+      },
+      {
+        "n": 3,
+        "dimension": 14,
+        "a_progression": [
+          1,
+          4,
+          14
+        ],
+        "b_progression": [
+          1,
+          4,
+          14
+        ],
+        "dyadic_denominator": 24,
+        "ordinary_resultant_valuation": 196,
+        "parity_profile": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "interpolation_scale": 50
+      },
+      {
+        "n": 3,
+        "dimension": 15,
+        "a_progression": [
+          1,
+          4,
+          15
+        ],
+        "b_progression": [
+          1,
+          4,
+          15
+        ],
+        "dyadic_denominator": 26,
+        "ordinary_resultant_valuation": 225,
+        "parity_profile": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "interpolation_scale": 54
+      },
+      {
+        "n": 3,
+        "dimension": 16,
+        "a_progression": [
+          1,
+          4,
+          16
+        ],
+        "b_progression": [
+          1,
+          4,
+          16
+        ],
+        "dyadic_denominator": 27,
+        "ordinary_resultant_valuation": 256,
+        "parity_profile": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "interpolation_scale": 57
+      },
+      {
+        "n": 3,
+        "dimension": 17,
+        "a_progression": [
+          1,
+          4,
+          17
+        ],
+        "b_progression": [
+          1,
+          4,
+          17
+        ],
+        "dyadic_denominator": 32,
+        "ordinary_resultant_valuation": 289,
+        "parity_profile": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        "interpolation_scale": 64
+      },
+      {
+        "n": 3,
+        "dimension": 18,
+        "a_progression": [
+          1,
+          4,
+          18
+        ],
+        "b_progression": [
+          1,
+          4,
+          18
+        ],
+        "dyadic_denominator": 33,
+        "ordinary_resultant_valuation": 324,
+        "parity_profile": [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "interpolation_scale": 67
+      },
+      {
+        "n": 3,
+        "dimension": 33,
+        "a_progression": [
+          1,
+          4,
+          33
+        ],
+        "b_progression": [
+          1,
+          4,
+          33
+        ],
+        "dyadic_denominator": 64,
+        "ordinary_resultant_valuation": 1089,
+        "parity_profile": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        "interpolation_scale": 128
+      }
+    ],
+    "irregular_node_counterexample": {
+      "n": 3,
+      "rows": [
+        1,
+        5,
+        9,
+        13
+      ],
+      "columns": [
+        1,
+        5,
+        9,
+        17
+      ],
+      "lagrange": {
+        "dyadic_denominator": 6,
+        "interpolation_scale": 11,
+        "ordinary_resultant_valuation": 16,
+        "scaled_inverse_modulus_bits": 12,
+        "scaled_inverse_coefficients": [
+          1440,
+          160,
+          224,
+          2656
+        ]
+      },
+      "hensel": {
+        "dyadic_denominator": 6,
+        "normalized_inverse_precision": 5,
+        "normalized_inverse_coefficients": [
+          3,
+          6,
+          0,
+          6
+        ],
+        "normalized_inverse_parities": [
+          1,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "implicit_family": {
+      "n": 3,
+      "dimension": 1606938044258990275541962092341162602522202993782792835301377,
+      "a_progression": [
+        1,
+        4,
+        1606938044258990275541962092341162602522202993782792835301377
+      ],
+      "b_progression": [
+        1,
+        4,
+        1606938044258990275541962092341162602522202993782792835301377
+      ],
+      "endpoint_encoding_bits": 203,
+      "exact_dyadic_denominator": 3213876088517980551083924184682325205044405987565585670602752,
+      "ordinary_resultant_valuation": 2582249878086908589655919172003011874329705792829223512830662570416736139997392278553830035605342875841890737558418096129,
+      "denominator_exponent_encoding_bits": 202,
+      "enumerated_nodes": 0,
+      "scope": "Closed-form application of the proved family, not a dense inverse computation."
+    }
+  },
+  "factoring_exponent_improved": false,
+  "source_sha256": "d040e4886ca8ec098e360405620db32a1346c254c9d93890a43a6c44d54347de"
+}

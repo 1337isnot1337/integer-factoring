@@ -118,6 +118,11 @@ The [checker](../tools/check_pole_cauchy_restricted_kernels.py) verifies
 240 exact polynomial-times-selector identities in the quadratic field.
 Thirty complete restricted joint-kernel contractions are compared with
 dense exact inverse matrices, including external dyadic divisions.
+Six additional singleton controls force nonzero answers at five-bit
+absolute precision. They use `N=15`, the kernel `a+2b`, and the positions
+`(1,1)`, `(3,5)`, and `(5,3)`, both with and without external division
+by two. This checks the scaled output on actual factor positions and on
+a nonfactor position, without relying on empty or vanishing blocks.
 
 The implicit example has a 402-bit input and dimension `2^200+13`.
 Its joint kernel contains a signed 513-bit exponent. The selected

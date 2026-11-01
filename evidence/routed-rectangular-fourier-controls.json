@@ -1,0 +1,118 @@
+{
+  "factoring_exponent_improved": false,
+  "routing": {
+    "parameter_cases": 54,
+    "relay_vertices": 109368,
+    "routed_segments": 223974
+  },
+  "scope": "Exact constructor identities, balanced carry routes, complete local boundary reconstruction, and scalar phase propagation; asymptotic bounds are proved in the companion note.",
+  "source_sha256": {
+    "check_rough_length_fourier_constructor.py": "086219f4ad0b3ae39dbebd75bf191cc91bace66ccd869eb8b9478a1fa60c231a",
+    "check_routed_rectangular_fourier.py": "df1d1be86391b8a3c831d79fb49731334b71d57dada424374b19563c2bf1d62b",
+    "check_small_word_fourier_constructor.py": "bb3bd0f85ffac5afadb772267a71effd29bb93565f261c737b940c947b51f1c0"
+  },
+  "status": "passed",
+  "transforms": {
+    "complete_group_queries": 264,
+    "parameters": [
+      {
+        "A": 4,
+        "P": 4,
+        "R": 4,
+        "S": 4,
+        "arithmetic_modulus": "1649",
+        "carry_bits_with_phase": 6,
+        "cases": 6,
+        "crt_primes": [
+          17,
+          97
+        ],
+        "d": 1,
+        "f": 11,
+        "width": 90
+      },
+      {
+        "A": 8,
+        "P": 4,
+        "R": 16,
+        "S": 4,
+        "arithmetic_modulus": "49601",
+        "carry_bits_with_phase": 9,
+        "cases": 6,
+        "crt_primes": [
+          193,
+          257
+        ],
+        "d": 2,
+        "f": 16,
+        "width": 420
+      },
+      {
+        "A": 8,
+        "P": 8,
+        "R": 8,
+        "S": 8,
+        "arithmetic_modulus": "49601",
+        "carry_bits_with_phase": 9,
+        "cases": 6,
+        "crt_primes": [
+          193,
+          257
+        ],
+        "d": 2,
+        "f": 16,
+        "width": 132
+      },
+      {
+        "A": 16,
+        "P": 4,
+        "R": 64,
+        "S": 4,
+        "arithmetic_modulus": "197633",
+        "carry_bits_with_phase": 11,
+        "cases": 6,
+        "crt_primes": [
+          257,
+          769
+        ],
+        "d": 2,
+        "f": 18,
+        "width": 1772
+      },
+      {
+        "A": 16,
+        "P": 8,
+        "R": 32,
+        "S": 8,
+        "arithmetic_modulus": "197633",
+        "carry_bits_with_phase": 11,
+        "cases": 6,
+        "crt_primes": [
+          257,
+          769
+        ],
+        "d": 2,
+        "f": 18,
+        "width": 476
+      },
+      {
+        "A": 16,
+        "P": 16,
+        "R": 16,
+        "S": 16,
+        "arithmetic_modulus": "197633",
+        "carry_bits_with_phase": 11,
+        "cases": 6,
+        "crt_primes": [
+          257,
+          769
+        ],
+        "d": 2,
+        "f": 18,
+        "width": 152
+      }
+    ],
+    "rejected_false_targets_or_relays": 72,
+    "transform_pairs": 36
+  }
+}

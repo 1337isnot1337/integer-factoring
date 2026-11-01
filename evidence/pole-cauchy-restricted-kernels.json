@@ -124,6 +124,69 @@
           0
         ]
       }
+    ],
+    "nonzero_singleton_kernel_controls": 6,
+    "nonzero_singleton_examples": [
+      {
+        "row": 1,
+        "column": 1,
+        "denominator_bits": 0,
+        "residue": [
+          11,
+          11
+        ],
+        "absolute_precision": 5
+      },
+      {
+        "row": 1,
+        "column": 1,
+        "denominator_bits": 1,
+        "residue": [
+          43,
+          43
+        ],
+        "absolute_precision": 5
+      },
+      {
+        "row": 3,
+        "column": 5,
+        "denominator_bits": 0,
+        "residue": [
+          16,
+          0
+        ],
+        "absolute_precision": 5
+      },
+      {
+        "row": 3,
+        "column": 5,
+        "denominator_bits": 1,
+        "residue": [
+          16,
+          0
+        ],
+        "absolute_precision": 5
+      },
+      {
+        "row": 5,
+        "column": 3,
+        "denominator_bits": 0,
+        "residue": [
+          16,
+          0
+        ],
+        "absolute_precision": 5
+      },
+      {
+        "row": 5,
+        "column": 3,
+        "denominator_bits": 1,
+        "residue": [
+          48,
+          0
+        ],
+        "absolute_precision": 5
+      }
     ]
   },
   "factoring_exponent_improved": false,
@@ -11894,11 +11957,11 @@
       "enumerated_matrix_nodes": 0,
       "scope": "Regular joint kernels restricted to normalized inverse residue blocks; no singular joint kernel."
     },
-    "lower_precision_seconds": 0.11353895700085559,
+    "lower_precision_seconds": 0.12929845299731824,
     "enumerated_matrix_nodes": 0
   },
   "source_sha256": {
-    "check_pole_cauchy_restricted_kernels.py": "d4c62130032961a50d8cdc3dbc8de5083df92954bc12bcd72b2bd56b8c2dc791",
+    "check_pole_cauchy_restricted_kernels.py": "906c854b37e2a19f113e4ef036d9333341637152d5eb6b3c515b6c1bc0172f28",
     "pole_cauchy_restricted_kernels.py": "f9f625a67a27385770f8e9f036ac20726c8fede6830a77684cc240d9ec160818",
     "pole_cauchy_pole_polynomials.py": "d934048d44d76d0808f66fc3744867677931b5f0b97f76979bacd53b2f5ffa96",
     "pole_cauchy_analytic_kernels.py": "b55fb05c2ee0dee6231783c69a5500defa906c6e8ea822541940812861968e99"

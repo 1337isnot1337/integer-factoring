@@ -172,6 +172,8 @@ def main():
     parser.add_argument('--lower-window', type=int, default=4)
     parser.add_argument('--upper-window', type=int, default=5)
     parser.add_argument('--samples', type=int, default=3)
+    parser.add_argument('--restart-every', type=int, default=0,
+                        help='Periodically restart from every allowed row floor; zero keeps local-only walks.')
     parser.add_argument('--source', choices=('reflection-five', 'brauer-five'), default='reflection-five')
     parser.add_argument('--degree', type=int, help='Allowed polynomial degree; defaults to 18 for reflection and 6 for Brauer.')
     parser.add_argument('--initial-record', type=Path, help='Restart at a retained literal witness from an earlier record.')
@@ -182,6 +184,8 @@ def main():
     args = parser.parse_args()
     if min(args.rounds, args.trials_per_round, args.samples, args.lower_window, args.upper_window) < 1:
         parser.error('All counts and windows must be positive.')
+    if args.restart_every < 0:
+        parser.error('The global restart period must be nonnegative.')
     started = time.monotonic()
     deadline = started+args.seconds
     rng = random.Random(args.seed)
@@ -258,6 +262,7 @@ def main():
                   'fiber_compression': fiber.compression, 'frame_construction_seconds': frame_seconds,
                   'floor_targets': floors, 'ceiling_targets': lattice.caps, 'reference_targets': lattice.orders,
                   'construction_seconds': time.monotonic()-round_started, 'completed_trials': 0,
+                  'global_restarts': 0,
                   'profile_classes': [], 'literal_replays': 1}
         rounds.append(record)
         print(json.dumps({'event': 'constructed', 'round': round_index,
@@ -280,7 +285,10 @@ def main():
                                   'targets': len(seen), 'profile_classes': len(classes),
                                   'best_rho': best, 'seconds': time.monotonic()-started}), flush=True)
             targets = list(lattice.orders if trial == 0 else rng.choice(parents))
-            if trial:
+            if trial and args.restart_every and trial % args.restart_every == 0:
+                targets = list(floors)
+                record['global_restarts'] += 1
+            elif trial:
                 for row in rng.sample(range(2*q*q), rng.randrange(2, q*q+1)):
                     targets[row] = max(floors[row], targets[row]-rng.randrange(1, args.lower_window+1))
             pivots = fiber.solve(targets)

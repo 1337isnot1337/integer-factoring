@@ -1,0 +1,70 @@
+{
+  "scope": "Local verification of the explicit supplied-character decoder; no fast coefficient engine or improved factoring exponent",
+  "completed_at_utc": "2026-11-01T04:09:48.123639+00:00",
+  "tested_commit": "e51a9c1aabd8a428daa4612545f1b11610af67b9",
+  "working_directory": "/tmp/integer-factoring-verify-e51a9c1",
+  "working_tree_before": "clean",
+  "working_tree_after": "clean",
+  "command": "make -j2 --output-sync=target verify",
+  "exit_code": 0,
+  "python_command_blocks": 335,
+  "unit_test_groups": [
+    {
+      "tests": 63,
+      "seconds": "5.761"
+    },
+    {
+      "tests": 5,
+      "seconds": "2.994"
+    }
+  ],
+  "markdown_files_checked": 890,
+  "log_sha256": "4182a395eec4094310ce9dd0fd950f0f3bc91fa952f3856f8142e021c0850c12",
+  "log_bytes": 990148,
+  "local_log_archive": "build/verification/e51a9c1.make-verify.log.gz",
+  "local_log_archive_sha256": "800a37415d38a3860f5fce2cd1dc50d995ecadc13f9450c3e909e38f3c9ea8a9",
+  "source_sha256": {
+    "tools/cyclotomic_character_decoder.py": "6dbe7906b53b99ef830a5cb7115f1be5a2dd94e3d3d4083c366e01add8e9f4df",
+    "tools/check_cyclotomic_character_decoder.py": "f6f17d6ba76af9bc4401ef6e684671cae1a02b54722e8892eefa9eec7bc7902d",
+    "tools/odd_character_residues.py": "6703866bd7a7960a4fa6635442ee62c9449e463ab5b03334882c134578bab623",
+    "tools/find_overlap.py": "054292cd70e08880100c8051381bde696398a42b1fc5f03bcda9df9c08dcffa9",
+    "tests/test_find_overlap.py": "96844b63c201f5ca86238fd858ad122c5571b068f02bb2f1c0febc101c62e4b5",
+    "research/cyclotomic-character-decoder.md": "20cd2336f8c0edfb6161c5bdfa05364886e821b2d0f6198d7327493b1b49ebf2",
+    "Makefile": "0db57ed20d3a5a299849333ff94a9d024a3923c0c5dc52c9b8170fdb601289b4"
+  },
+  "focused_evidence": "evidence/cyclotomic-character-decoder.json",
+  "focused_controls": {
+    "prime_vectors": 1036,
+    "other_even_order_vectors": 120,
+    "divisor_vectors": 504,
+    "essential_character_witnesses": 114,
+    "invalid_inputs_rejected": 11
+  },
+  "compatibility_controls": {
+    "targeted_overlap_tests": 8,
+    "live_scan_completed": true,
+    "scan_snapshot_utc": "2026-11-01T03:45:25.465087+00:00",
+    "discussion_posts": 2,
+    "discussion_comments_and_replies": 75,
+    "historical_issue_8_comments": 157,
+    "cli_version": "gh 2.45.0"
+  },
+  "post_pin_changes": "Notation and attribution clarification in the research note; verification receipt and review ledger. The five tested implementation/test sources above remain byte-identical.",
+  "later_main_integrations": "The frozen full run does not cover later concurrent main changes.",
+  "excluded_run": "The initial make verify on the changing primary checkout was terminated before completion and is not counted as a pass.",
+  "ci": {
+    "status": "completed",
+    "conclusion": "cancelled",
+    "url": "https://github.com/1337isnot1337/integer-factoring/actions/runs/41270865568"
+  },
+  "not_run": [
+    "make verify-formal",
+    "make verify-k6",
+    "make verify-half-appendix"
+  ],
+  "limits": [
+    "Supplied coefficient data only; no faster composite-index coefficient provider.",
+    "Ordinary proof and finite implementation controls; no independent mathematical acceptance or new Lean theorem.",
+    "Complete factoring saving exponent remains 1/2."
+  ]
+}

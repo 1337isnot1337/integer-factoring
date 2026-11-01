@@ -97,6 +97,12 @@ integer-graph replay. Selective promotion reduces norm queries from
 **7,792,462 to 5,453,561** (30.01%), but increases recorded time from
 221 to 357 seconds. Complete compressed certificates retain both results;
 these are finite controls and do not strengthen the uniform exponent.
+
+The same [fresh-input programme](research/prime-cofactor-fresh-controls.md)
+also completes a **176-bit** selective-promotion run in **23,998,215 norm
+queries**, reaching full rank in a 1,776-prime base. Its complete 51,902-identity
+certificate is retained in XZ form and independently replayed, including all
+50,126 residual-prime certificates and 1,776 integer graph eliminations.
 <!-- cofactor-collision-checkpoint:end -->
 
 <!-- coherent-compound-checkpoint:start -->
@@ -126,6 +132,15 @@ above `1/sqrt(2)`; the complete factoring score remains **1/2**.
 Run `make verify-coherent-q96-pressure verify-coherent-mixed-catalogue`
 for the exact saved-profile certificates. The checkers expose
 `--recompute-profiles` for full native profile reconstruction.
+
+A [free-tail reduction](research/coherent-free-tail-reduction.md) preserves both complete
+Smith profiles while replacing every dyadic extension of a fixed core by a fixed
+active matrix and explicit spectator factors. It gives finite limiting profile
+polynomials and an explicit tail-error bound. A proper fixed core retains a
+positive small-scale entropy deficit, so its determinant gain alone does not
+prove a better exponent. [Independent cut gauges](research/coherent-asymmetric-letter-gauges.md)
+are also implemented with both physical costs charged; six exact literal profiles
+validate them, while the retained 317-evaluation q32 search found no improvement.
 <!-- coherent-compound-checkpoint:end -->
 
 The [quadratic-parity Walsh construction](research/bell-walsh-constructions.md)
@@ -179,6 +194,12 @@ below `72/125 < 1/sqrt(3)`; no tensor realizing it is claimed.
 [Scalar color clones](research/cube-scalar-color-clone-floor.md) cannot
 realize that target: for at least 33 colors their profile pressure exceeds
 `3/4`. Proper interacting codes remain a constructive direction.
+
+The [generic specialization engine](research/cube-generic-smith-specialization.md)
+preserves every homogeneous minor valuation by evaluating in an extension field
+whose degree exceeds the complete minor-degree budget. Its F2 implementation
+uses degree 128, rejects larger budgets, and is checked against 96 known profiles
+and 12,869 independently enumerated minors.
 <!-- cube-transfer-checkpoint:end -->
 
 ## Results and evidence
@@ -279,6 +300,14 @@ proves `2^K <= 4 D_* H` for a single rational upper-half selector, where
 `D_*` and `H` measure its explicit denominator. This distinguishes low-bit
 selection from ordinary interval selection without asserting a factoring
 lower bound.
+
+The [spectral trace interface](research/pole-cauchy-spectral-trace.md)
+recovers the exact factor-pair count from `r` supplied traces of `S=M M^T`,
+with largest numerical power `2r-1` and `r=bits(m)`. Increasing the displacement
+reduces the requirement to one trace or one entry sum. Those global joint-kernel
+aggregations remain unevaluated at a qualifying compressed cost. Explicit rank-two
+displacement generators and a leading inverse partial involution `K^3=K` are also
+proved, while their unknown integer multiplicities remain explicit.
 <!-- pole-implicit-checkpoint:end -->
 
 The [research index](research/INDEX.md) links proofs, exact evidence, and replay commands.
@@ -921,6 +950,13 @@ code distance of three; tensorizing that distance bounds every nonzero
 piece's opposite-cut rank. This theorem retains the nonsemisimple blocks
 and leaves scalar projections and physical type restrictions open.
 Run `make verify-fused-primary-code`.
+The [energy-refined Newton ceiling](research/joint-graded-newton-ceiling.md)
+constrains the zero Smith profile under every rational energy gauge,
+including gauges singular at zero. An explicit block-scalar diagonal
+reveals characteristic-polynomial invariants hidden by cancellations in
+the ordinary characteristic polynomial. The exact ceiling still leaves
+room to improve the current zero profile; its attainability and the effect
+on the infinity cut remain open. Run `make verify-joint-graded-newton`.
 
 The [group-shear extension](research/group-shear-crossings.md) implements
 the swap through three multiplication/division shears over any finite
@@ -1661,6 +1697,13 @@ inversion and exact nilpotent divisions, avoiding a stored Gaussian system.
 Run `make verify-odd-character-residues` for both decoders and the component
 checks, or `make verify-cyclotomic-decoder` for the new construction alone.
 
+The [theta-section engine](research/lambert-theta-sections.md) computes the
+signed divisor coefficients without enumerating divisors, but its current
+state cost is exponential in the input length. A uniform rank argument
+excludes polynomial-size common linear section spaces even at phase order
+three, where a direct square test is cheap. This is a restriction on that
+representation, not a factoring lower bound. Run `make verify-lambert-theta`.
+
 The [Bell-diagonal seed construction](research/bell-diagonal-crossings.md)
 gives exact two-cut transforms and excludes its complete symmetric
 coefficient spans at local dimensions two and four. Dimension eight
@@ -1723,6 +1766,18 @@ The [moment-quotient localization analysis](research/pole-cauchy-localization-ob
 
 The [height-25 protected-state theorem](research/coherent-protected-height25.md) gives the exact natural-pressure floor `17/24 > 1/sqrt(2)` for every constant height-homogeneous split that retains the 28 states below height 16 and uses only states through height 25. It covers separate paired alphabets and types over every characteristic-two field, including the 96-letter hyperoval family. Changing the protected lower states or the stated gauge assumptions remains outside the theorem.
 
+The [full-tail active-core reduction](research/coherent-full-tail-core.md) replaces an exponentially large compressed compound calculation by a fixed `4k`-mode core and explicit Gaussian spectators. Under the stated height and deletion hypotheses it computes the actual reflection profiles. The complete forbidden-pair example is checked through 512 physical modes and gives no gain over the unmodified Gaussian; all physical entropy and degree costs remain charged.
+
+The [fixed rational-frame transfer](research/fixed-rational-frame-transfer.md) proves polynomial coefficient-splitting overhead for a fixed rational local factorization that is regular at the selected cut variable. It permits generic multivariate Smith calculations beyond finite Laurent frames, with uniform coefficient algorithms and separate expansion cones for different cuts. It supplies an additional construction tool, not a stronger local spectrum or factoring score.
+
+The [physical full-tail reduction](research/coherent-physical-tail-low-band.md) retains the internal Gaussian factors for arbitrary constant low-mode physical maps and bounded label gauges, reducing a long tail to an explicit `8k`-mode core. The [all-field injectivity theorem](research/coherent-tail-injectivity.md) now proves that every nonzero fixed physical restriction retains all `2^(2k)` leading channels, over every characteristic-two field. A proper fixed code therefore approaches the critical pressure from above in the stated asymptotic window. Growing physical support, finite-tail scales, and broader constructions remain open.
+
+The [encoded-cube specialization control](research/cube-pair-encoding-specialization.md) gives a concrete tensor whose diagonal specializations appear to beat the cube target, while independent coordinates expose lower generic orders and reject it. Its exact integer pressure certificate and direct sixteen-mode Pfaffian replay provide a search control against this false positive; every nonzero diagonal specialization remains misleading even over larger fields.
+
+The [complete Gaussian coefficient fibers](research/cube-complete-coefficient-fibers.md) parameterize all 12,672 even homogeneous binary coefficients with the required endpoint. A loss of at most three in every fixed-frame row floor leaves only the seed, over every characteristic-two field. The complete 22-dimensional binary fiber at loss four has 4,194,304 checked points, all dominated by the seed at every scale. The accompanying engine returns exact generic polynomial row certificates for further weighted searches.
+
+The [routed rectangular Fourier constructor](research/routed-rectangular-fourier-constructor.md) extends the improved constant twelve to every fixed grouping range `P<=n^delta` with `delta<1/2`. Its exact width is `lambda=6Tf/P^2+4(r+2)`, giving `P^2 lambda<=(12+4P^2/T+o(1))n` and `O(n/P)` table-query space throughout `P<=sqrt(T)`. Balanced equality relays preserve the factor-pair bijection and scalar phase recovery. This is a stronger constructor bound; the complete factoring score remains `1/2`.
+
 ## Contribution and attribution
 
 Start with the [contributor quickstart](docs/START_HERE.md) and
@@ -1755,3 +1810,13 @@ order-one pivots in every regular case. The [truncated multiplication argument](
 improves the copied-register bound from a division by `J^3` to `J`, reducing
 its complete even-register cutoff from 576 to 380. These results constrain
 the declared profile methods; they do not change the factoring score.
+
+The [fixed-dimensional cube transfer](research/multiaxis-cube-transfer.md) now supplies a complete evaluator reduction for every fixed number `d >= 2` of axes. A common-piece family with total cut-width coefficient `rho` gives score `log_d(1/rho)` after all regrouping, table queries, and recovery costs are charged. It also permits explicitly bounded subexponential piece counts. An actual nine-axis family with `rho < 1/3` would beat one half; the existing relaxed profiles do not construct that family. The achieved factoring score remains `1/2`. Run `make verify-multiaxis-cube`.
+
+[Multi-axis type amplification](research/multiaxis-type-amplification.md) strengthens that transfer: subexponential local piece entropy and a vanishing relative width slack suffice for the full limiting score `log_d(1/rho)`, with matching workspace, on one uniform machine. A sharper finite-seed test uses the sum of the geometric means of all cut ranks. This removes the direct piece-enumeration score cap; no improved numerical seed is supplied. Run `make verify-multiaxis-types`.
+
+[Binary product-power weights](research/pole-cauchy-product-power-weights.md) extend the normalized inverse-contraction engine to products of explicit nonvanishing polynomial bases with signed binary exponents, including nonunit bases and exponentially large expanded degrees. Common dyadic partitions charge each base once, and the output retains its potentially enormous normalization exponent in binary. This is a scaled-precision guarantee; absolute precision after a large negative scale remains charged. The singular joint factor-count contraction is still open. Run `make verify-product-power-weights`.
+
+[Symplectic exterior blocks](research/cube-symmetric-exterior-blocks.md) reduce every symmetric characteristic-two multiplication operator on `r` square-zero generators to at most `floor(r/2)+1` distinct blocks, of order at most `2^(floor(r/2)+1)`, with exact multiplicities. The resulting complete Smith profiles give rational all-scale exclusions for the natural homogeneous Cayley family through twelve axes. This narrows that construction search; it does not exclude other cube tensors or raise the factoring score. Run `make verify-symmetric-exterior`.
+
+[Exact dyadic Bézout denominators](research/interval-bezout-precision.md) determine the least global polynomial normalization for residue-separated product domains. The [balanced-node refinement](research/balanced-bezout-denominator.md) proves `r=m+v2((m-1)!)` for every size, including independently deformed dyadic isometries. Its parity interpolation proof also reduces enormous-index normalized coefficients to low symmetric moments and shows that only `2p` terminal Newton terms survive modulo `2^p`. The normalization exponent is stored in binary; general factor extraction remains open. Run `make verify-interval-bezout verify-balanced-bezout`.

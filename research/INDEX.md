@@ -178,6 +178,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Global sparse divisor residues](sparse-divisor-residues.md): Garg--Schost interpolation and a chosen trial budget preserve every fixed-characteristic saving exponent, with polynomial cyclic degrees through score one and a global-only query contract; a faster evaluator remains open.
 - [Fixed weight-one coefficient target](weight-one-divisor-coefficients.md): one bit per cyclotomic coordinate supplies signed divisor residues at every prime level, by an injective binary decoder retaining nilpotent coordinates; paired sparse recovery preserves every fixed saving exponent, conditional on a faster composite-index weight-one coefficient engine.
 - [Explicit polynomial character decoder](cyclotomic-character-decoder.md): Galois substitutions, an odd-order Fourier transform and exact nilpotent divisions invert the same one-bit map without a stored Gaussian system; each sampled character order is necessary for arbitrary paired binary vectors. The faster coefficient engine remains open.
+- [Exact Lambert/theta section engine](lambert-theta-sections.md): a divisor-free binary coefficient recurrence with charged exponential cost; level three has a polynomial-time square test but exponentially large common linear section spaces, so that compression architecture cannot supply the faster engine.
 - [Polynomial divisor-gap extraction](smooth-norm-gap.md): integer multiplicative trimming converts promised inner-radius balanced norms at a specified outer radius, without enumerating all divisors.
 - [Relations from small smooth norms](smooth-norm-relations.md): primitive smooth norms yield bounded prime-form words directly, removing the balanced-factor condition and strictly enlarging the accepted target set.
 - [Exact search for a factored norm](factored-norm-search.md): ideal-lattice composition and deterministic meet-in-the-middle decide one primitive representation and recover coordinates in `Y poly(b)+2^O(b/log b)` bit time; selecting candidate norms remains open.
@@ -211,6 +212,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Finite fused six-vertex crossings](finite-fused-six-vertex-crossings.md): literal three- and four-symbol F16 fusion, exact common-factor cancellation, 24 independent binary profiles, and 144 replayed full-gauge starts; the completed finite searches remain uncompetitive.
 - [Binary scalar projection and a complete fused coefficient envelope](fused-scalar-projection-envelope.md): exhaustive rank-span separation excludes every binary decomposition in the 21-dimensional symmetric two-copy space, with an independent affine-hyperplane replay.
 - [A primary-character code bounds every unprojected tensor length](fused-primary-character-code.md): weighted distance three tensorizes to an opposite-cut rank bound for every nonzero coefficient recombination and a uniform `rho>=3/4` obstruction before scalar or physical projection.
+- [An energy-refined Newton ceiling for arbitrary rational gauges](joint-graded-newton-ceiling.md): block-scalar characteristic coefficients bound every zero Smith prefix over all characteristic-two fields, without restrictions on gauge degree or distinguished-place poles; attainability and opposite-cut costs remain open.
 
 - [Exact F4 regular row fibers](colored-regular-row-fibers.md): nonbinary polynomial row operations preserve a common binary affine floor, allowing exact compressed F4 synthesis with complete coefficient windows and literal untruncated tensor replays.
 
@@ -1105,7 +1107,7 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 
 ## Fresh certified prime-cofactor controls
 
-- [Matched fresh 160-bit factoring runs and exact replays](prime-cofactor-fresh-controls.md)
+- [Fresh 160-bit comparisons and a complete 176-bit factoring replay](prime-cofactor-fresh-controls.md)
 
 
 ## General rational weights and a representation boundary
@@ -1121,3 +1123,73 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 - [Shared-minor budgets for graded cube alphabets](cube-graded-minor-budget.md)
 - [A uniform floor for scalar Gaussian color clones](cube-scalar-color-clone-floor.md)
 - [A Gaussian cube floor for every equally weighted Fock alphabet](cube-equal-height-fock-floor.md)
+
+
+## Fixed physical codes with a full Gaussian tail
+
+- [A fixed physical code with a full Gaussian tail](coherent-full-tail-core.md)
+
+
+## Free tails and independent coherent gauges
+
+- [A fixed active matrix for an arbitrarily long free tail](coherent-free-tail-reduction.md)
+- [Independent letter gauges at the two crossing cuts](coherent-asymmetric-letter-gauges.md)
+
+
+## Exact generic cube profile computation
+
+- [Generic Smith profiles from homogeneous finite-field specialization](cube-generic-smith-specialization.md)
+
+
+## Explicit spectral aggregation contracts
+
+- [A degree-linear spectral trace interface and padded one-trace reduction](pole-cauchy-spectral-trace.md)
+
+
+## Fixed rational local frames
+
+- [Polynomial coefficient-transfer cost for fixed rational frames](fixed-rational-frame-transfer.md)
+
+## Boundary-only natural-pressure limit
+
+- [Common-core pressure floor](hot-boundary-natural-pressure-floor.md): every height-25 boundary retraction retaining the 92 lower labels has natural two-place typed pressure at least 17/24, over characteristic two. Interior changes, general gauges, other places and different recombinations are outside this result.
+
+
+## Physical full-tail cores and surviving low channels
+
+- [Physical full-tail cores and an exact low-band calculation](coherent-physical-tail-low-band.md)
+
+
+## A diagonal-specialization false positive
+
+- [An encoded cube tensor that passes only the diagonal screen](cube-pair-encoding-specialization.md)
+
+
+## All-field survival of the full-tail band
+
+- [An explicit left inverse for every nonzero hot functional](coherent-tail-injectivity.md)
+
+- [Uniform transfer for every fixed cube dimension](multiaxis-cube-transfer.md): exact clique-edge coverage, oriented-volume bounds, complete query and recursion costs, and the conditional exponent `log_d(1/rho)`; bounded subexponential piece sets are allowed. A stronger local family remains unconstructed.
+
+
+## Complete coefficient fibers and polynomial row certificates
+
+- [Exact rigidity and a complete binary Gaussian-frame fiber](cube-complete-coefficient-fibers.md)
+
+- [Multi-axis type amplification and matched workspace](multiaxis-type-amplification.md): one bounded finite-seed selector attains the full limiting score from any fixed-dimensional family with subexponential piece entropy and vanishing relative width error; exact multi-cut rank sums sharpen the finite-seed threshold. Actual tensors and all channels are checked.
+
+- [Normalized binary product-power weights](pole-cauchy-product-power-weights.md): polynomial-cost scaled inverse contractions for products of explicit nonunit polynomial bases with signed binary exponents; common valuation partitions, huge binary scales, dense rational controls, and a nonzero 402-bit implicit example. No singular joint-pole evaluator is claimed.
+
+
+## Wider grouping range with balanced carry relays
+
+- [A rectangular Fourier constructor with balanced carry relays](routed-rectangular-fourier-constructor.md)
+
+## Symmetric exterior operators and exact higher-axis profiles
+
+- [Symplectic block reduction for symmetric cube cut operators](cube-symmetric-exterior-blocks.md): one constant binary basis gives exact small blocks over every characteristic-two coefficient ring; full matrix and Toeplitz controls independently check the Smith profiles, and exact all-scale certificates reject the natural Cayley profile method through twelve axes.
+
+## Exact dyadic interpolation and Bézout normalization
+
+- [Sharp all-node Bézout precision](interval-bezout-precision.md): the least denominator exponent is between `m` and `2m-2`, attaining the upper bound at every power-of-two-plus-one size, even for irregular residue-separated domains.
+- [Balanced parity interpolation](balanced-bezout-denominator.md): exact divided-difference valuations on ordered dyadic isometries prove `r=m+v2((m-1)!)` at every size; a low-moment formula and terminal-term truncation make normalized coefficient construction a precise next target.

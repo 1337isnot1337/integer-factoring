@@ -1,0 +1,418 @@
+{
+  "complete_factoring_score": "1/2 unchanged",
+  "geometry": [
+    {
+      "axes": 2,
+      "cubes": 1,
+      "generic_edges": 2,
+      "other_edges": 4,
+      "plane_pair_other_edges": 2,
+      "pure_piece_exponent": 14,
+      "side": 2,
+      "vertices": 4,
+      "width_assignments": 5
+    },
+    {
+      "axes": 3,
+      "cubes": 1,
+      "generic_edges": 4,
+      "other_edges": 24,
+      "plane_pair_other_edges": 12,
+      "pure_piece_exponent": 28,
+      "side": 2,
+      "vertices": 8,
+      "width_assignments": 5
+    },
+    {
+      "axes": 4,
+      "cubes": 1,
+      "generic_edges": 8,
+      "other_edges": 112,
+      "plane_pair_other_edges": 56,
+      "pure_piece_exponent": 56,
+      "side": 2,
+      "vertices": 16,
+      "width_assignments": 5
+    },
+    {
+      "axes": 5,
+      "cubes": 1,
+      "generic_edges": 16,
+      "other_edges": 480,
+      "plane_pair_other_edges": 240,
+      "pure_piece_exponent": 112,
+      "side": 2,
+      "vertices": 32,
+      "width_assignments": 5
+    },
+    {
+      "axes": 6,
+      "cubes": 1,
+      "generic_edges": 32,
+      "other_edges": 1984,
+      "plane_pair_other_edges": 992,
+      "pure_piece_exponent": 224,
+      "side": 2,
+      "vertices": 64,
+      "width_assignments": 5
+    },
+    {
+      "axes": 7,
+      "cubes": 1,
+      "generic_edges": 64,
+      "other_edges": 8064,
+      "plane_pair_other_edges": 4032,
+      "pure_piece_exponent": 448,
+      "side": 2,
+      "vertices": 128,
+      "width_assignments": 5
+    },
+    {
+      "axes": 8,
+      "cubes": 1,
+      "generic_edges": 128,
+      "other_edges": 32512,
+      "plane_pair_other_edges": 16256,
+      "pure_piece_exponent": 896,
+      "side": 2,
+      "vertices": 256,
+      "width_assignments": 5
+    },
+    {
+      "axes": 9,
+      "cubes": 1,
+      "generic_edges": 256,
+      "other_edges": 130560,
+      "plane_pair_other_edges": 65280,
+      "pure_piece_exponent": 1792,
+      "side": 2,
+      "vertices": 512,
+      "width_assignments": 5
+    },
+    {
+      "axes": 2,
+      "cubes": 9,
+      "generic_edges": 18,
+      "other_edges": 18,
+      "plane_pair_other_edges": 3,
+      "pure_piece_exponent": 126,
+      "side": 3,
+      "vertices": 9,
+      "width_assignments": 5
+    },
+    {
+      "axes": 3,
+      "cubes": 27,
+      "generic_edges": 108,
+      "other_edges": 243,
+      "plane_pair_other_edges": 45,
+      "pure_piece_exponent": 756,
+      "side": 3,
+      "vertices": 27,
+      "width_assignments": 5
+    },
+    {
+      "axes": 4,
+      "cubes": 81,
+      "generic_edges": 648,
+      "other_edges": 2592,
+      "plane_pair_other_edges": 513,
+      "pure_piece_exponent": 4536,
+      "side": 3,
+      "vertices": 81,
+      "width_assignments": 5
+    },
+    {
+      "axes": 5,
+      "cubes": 243,
+      "generic_edges": 3888,
+      "other_edges": 25515,
+      "plane_pair_other_edges": 5265,
+      "pure_piece_exponent": 27216,
+      "side": 3,
+      "vertices": 243,
+      "width_assignments": 5
+    },
+    {
+      "axes": 2,
+      "cubes": 36,
+      "generic_edges": 72,
+      "other_edges": 48,
+      "plane_pair_other_edges": 4,
+      "pure_piece_exponent": 504,
+      "side": 4,
+      "vertices": 16,
+      "width_assignments": 5
+    },
+    {
+      "axes": 3,
+      "cubes": 216,
+      "generic_edges": 864,
+      "other_edges": 1152,
+      "plane_pair_other_edges": 112,
+      "pure_piece_exponent": 6048,
+      "side": 4,
+      "vertices": 64,
+      "width_assignments": 5
+    }
+  ],
+  "schedules": [
+    {
+      "a": 4,
+      "axes": 2,
+      "log2_K": [
+        32,
+        136,
+        352,
+        792,
+        1680,
+        3464,
+        7040,
+        14200,
+        28528,
+        57192
+      ],
+      "x0": 32
+    },
+    {
+      "a": 4,
+      "axes": 3,
+      "log2_K": [
+        32,
+        204,
+        732,
+        2328,
+        7128,
+        21540,
+        64788,
+        194544,
+        583824,
+        1751676
+      ],
+      "x0": 32
+    },
+    {
+      "a": 5,
+      "axes": 4,
+      "log2_K": [
+        32,
+        276,
+        1272,
+        5276,
+        21312,
+        85476,
+        342152,
+        1368876,
+        5475792,
+        21903476
+      ],
+      "x0": 32
+    },
+    {
+      "a": 5,
+      "axes": 5,
+      "log2_K": [
+        32,
+        345,
+        1935,
+        9910,
+        49810,
+        249335,
+        1246985,
+        6235260,
+        31176660,
+        155883685
+      ],
+      "x0": 32
+    },
+    {
+      "a": 5,
+      "axes": 6,
+      "log2_K": [
+        32,
+        414,
+        2736,
+        16698,
+        100500,
+        603342,
+        3620424,
+        21722946,
+        130338108,
+        782029110
+      ],
+      "x0": 32
+    },
+    {
+      "a": 5,
+      "axes": 7,
+      "log2_K": [
+        32,
+        483,
+        3675,
+        26054,
+        182742,
+        1279593,
+        8957585,
+        62703564,
+        438925452,
+        3072478703
+      ],
+      "x0": 32
+    },
+    {
+      "a": 6,
+      "axes": 8,
+      "log2_K": [
+        32,
+        560,
+        4832,
+        39056,
+        312896,
+        2503664,
+        20029856,
+        160239440,
+        1281916160,
+        10255329968
+      ],
+      "x0": 32
+    },
+    {
+      "a": 6,
+      "axes": 9,
+      "log2_K": [
+        32,
+        630,
+        6066,
+        55044,
+        495900,
+        4463658,
+        40173534,
+        361562472,
+        3254062968,
+        29286567486
+      ],
+      "x0": 32
+    },
+    {
+      "a": 6,
+      "axes": 10,
+      "log2_K": [
+        32,
+        700,
+        7440,
+        74900,
+        749560,
+        7496220,
+        74962880,
+        749629540,
+        7496296200,
+        74962962860
+      ],
+      "x0": 32
+    },
+    {
+      "a": 6,
+      "axes": 11,
+      "log2_K": [
+        32,
+        770,
+        8954,
+        99044,
+        1090100,
+        11991782,
+        131910350,
+        1451014664,
+        15961162184,
+        175572784970
+      ],
+      "x0": 32
+    },
+    {
+      "a": 6,
+      "axes": 12,
+      "log2_K": [
+        32,
+        840,
+        10608,
+        127896,
+        1535424,
+        18425832,
+        221110800,
+        2653330488,
+        31839966816,
+        382079602824
+      ],
+      "x0": 32
+    },
+    {
+      "a": 6,
+      "axes": 13,
+      "log2_K": [
+        32,
+        910,
+        12402,
+        161876,
+        2105116,
+        27367314,
+        355775966,
+        4625088520,
+        60126151800,
+        781639974518
+      ],
+      "x0": 32
+    },
+    {
+      "a": 6,
+      "axes": 14,
+      "log2_K": [
+        32,
+        980,
+        14336,
+        201404,
+        2820440,
+        39487028,
+        552819344,
+        7739471852,
+        108352607048,
+        1516936499876
+      ],
+      "x0": 32
+    },
+    {
+      "a": 6,
+      "axes": 15,
+      "log2_K": [
+        32,
+        1050,
+        16410,
+        246900,
+        3704340,
+        55566030,
+        833491470,
+        12502373160,
+        187535598600,
+        2813033980290
+      ],
+      "x0": 32
+    },
+    {
+      "a": 7,
+      "axes": 16,
+      "log2_K": [
+        32,
+        1136,
+        18912,
+        303440,
+        4856000,
+        77697072,
+        1243154336,
+        19890470672,
+        318247532160,
+        5091960516080
+      ],
+      "x0": 32
+    }
+  ],
+  "status": "exact finite geometry and cost controls; local tensor family remains conditional",
+  "transfer_exponent": "log_d(1/rho)"
+}

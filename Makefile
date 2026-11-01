@@ -53,6 +53,12 @@ verify-sparse-divisor-residues:
 verify-cyclotomic-decoder:
 	python3 tools/check_cyclotomic_character_decoder.py
 
+.PHONY: verify-lambert-theta
+verify-lambert-theta:
+	python3 tools/check_lambert_theta_sections.py
+
+verify-frontier: verify-lambert-theta
+
 verify-odd-character-residues: verify-cyclotomic-decoder
 	python3 tools/check_odd_character_residues.py
 
@@ -202,6 +208,10 @@ verify-fused-scalar-projection:
 .PHONY: verify-fused-primary-code
 verify-fused-primary-code:
 	python3 tools/check_fused_primary_code.py
+
+.PHONY: verify-joint-graded-newton
+verify-joint-graded-newton:
+	python3 tools/check_joint_graded_newton.py
 
 .PHONY: verify-group-shears
 verify-group-shears:
@@ -609,7 +619,7 @@ verify-post-half: verify-pr29-extended
 verify-arithmetic-sieve:
 	python3 tools/check_arithmetic_sieve_certificate.py
 
-verify-frontier: verify-bell verify-class-square-conic verify-divisor-moments verify-sparse-divisor-residues verify-odd-character-residues verify-pr31-frontier verify-f4-hyperoval
+verify-frontier: verify-bell verify-class-square-conic verify-divisor-moments verify-sparse-divisor-residues verify-odd-character-residues verify-pr31-frontier verify-f4-hyperoval verify-hot-boundary-floor
 	python3 tools/check_direct_sublinear_counts.py
 	python3 tools/check_rational_simultaneous_transfer.py
 	python3 tools/check_minimum_cut_rank_budget.py
@@ -2057,3 +2067,91 @@ verify-cube-shared-budgets:
 	python3 tools/check_cube_graded_minor_budget.py --output /tmp/integer-factoring-cube-graded-minor-budget.json
 	python3 tools/check_cube_scalar_color_clone_floor.py --output /tmp/integer-factoring-cube-scalar-color-clone-floor.json
 	python3 tools/check_cube_equal_height_fock_floor.py --output /tmp/integer-factoring-cube-equal-height-fock-floor.json
+
+.PHONY: verify-coherent-full-tail
+verify-coherent-full-tail:
+	python3 tools/check_coherent_full_tail_core.py --evidence evidence/coherent-full-tail-core.json --output /tmp/integer-factoring-coherent-full-tail-controls.json
+
+
+.PHONY: verify-coherent-free-tail verify-coherent-asymmetric-gauges
+verify-coherent-free-tail:
+	python3 tools/check_coherent_free_tail.py --output /tmp/integer-factoring-coherent-free-tail-controls.json
+verify-coherent-asymmetric-gauges:
+	python3 tools/check_coherent_asymmetric_gauges.py --output /tmp/integer-factoring-coherent-asymmetric-gauge-controls.json
+
+
+.PHONY: verify-cube-generic-smith
+verify-cube-generic-smith:
+	python3 tools/check_cube_generic_smith128.py --output /tmp/integer-factoring-cube-generic-smith128.json
+
+.PHONY: verify-f4-global-restarts
+verify-f4-global-restarts:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_f4_recentered_walks.py evidence/f4-global-restart-controls-search.json --output /tmp/integer-factoring-f4-global-restart-controls.json
+
+
+.PHONY: verify-pole-cauchy-spectral-trace
+verify-pole-cauchy-spectral-trace:
+	python3 tools/check_pole_cauchy_spectral_trace.py --output /tmp/integer-factoring-pole-cauchy-spectral-trace.json
+
+
+.PHONY: verify-prime-cofactor-fresh-176
+verify-prime-cofactor-fresh-176:
+	python3 tools/check_fresh_prime_cofactor_control.py --bits 176 --replay evidence/prime-cofactor-fresh-176-selective.json.xz
+
+.PHONY: verify-fixed-rational-frames
+verify-fixed-rational-frames:
+	python3 tools/check_fixed_rational_frame_transfer.py --output /tmp/integer-factoring-fixed-rational-frame-transfer.json
+
+.PHONY: verify-hot-boundary-floor
+verify-hot-boundary-floor:
+	python3 tools/check_hot_boundary_core_barrier.py
+
+
+.PHONY: verify-coherent-physical-tail
+verify-coherent-physical-tail:
+	python3 tools/check_coherent_physical_tail_core.py --output /tmp/integer-factoring-coherent-physical-tail-core.json
+	python3 tools/check_coherent_physical_tail_low_band.py --evidence evidence/coherent-physical-tail-low-band.json --output /tmp/integer-factoring-coherent-physical-tail-low-band.json
+
+
+.PHONY: verify-cube-pair-specialization
+verify-cube-pair-specialization:
+	python3 tools/check_cube_pair_encoding_specialization.py --output /tmp/integer-factoring-cube-pair-specialization.json
+
+
+.PHONY: verify-coherent-tail-injectivity
+verify-coherent-tail-injectivity:
+	python3 tools/check_coherent_tail_injectivity.py --output /tmp/integer-factoring-coherent-tail-injectivity.json
+
+.PHONY: verify-multiaxis-cube
+verify-multiaxis-cube:
+	python3 tools/check_multiaxis_cube_transfer.py
+
+
+.PHONY: verify-cube-coefficient-fibers verify-cube-coefficient-fibers-full
+verify-cube-coefficient-fibers:
+	python3 tools/check_cube_coefficient_fibers.py --output /tmp/integer-factoring-cube-coefficient-fibers.json
+verify-cube-coefficient-fibers-full:
+	python3 tools/check_cube_coefficient_fibers.py --recompute-census --census /tmp/integer-factoring-cube-coefficient-census.json --output /tmp/integer-factoring-cube-coefficient-fibers-full.json
+
+.PHONY: verify-multiaxis-types
+verify-multiaxis-types:
+	python3 tools/check_multiaxis_type_amplification.py
+
+.PHONY: verify-product-power-weights
+verify-product-power-weights:
+	python3 tools/check_pole_cauchy_product_power_weights.py
+
+
+.PHONY: verify-routed-rectangular-fourier
+verify-routed-rectangular-fourier:
+	python3 tools/check_routed_rectangular_fourier.py --output /tmp/integer-factoring-routed-rectangular-fourier.json
+
+.PHONY: verify-symmetric-exterior
+verify-symmetric-exterior:
+	python3 tools/check_cube_symmetric_exterior_blocks.py --output /tmp/integer-factoring-cube-symmetric-exterior-blocks.json
+
+.PHONY: verify-interval-bezout verify-balanced-bezout
+verify-interval-bezout:
+	python3 tools/check_interval_bezout_precision.py --output /tmp/integer-factoring-interval-bezout-precision.json
+verify-balanced-bezout:
+	python3 tools/check_balanced_bezout_denominator.py --output /tmp/integer-factoring-balanced-bezout-denominator.json
