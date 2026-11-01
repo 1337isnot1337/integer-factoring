@@ -1886,3 +1886,7 @@ verify-bilinear-cauchy:
 .PHONY: verify-hot96-type
 verify-hot96-type:
 	python3 tools/certify_hot_rational_type_rounding.py --output /tmp/integer-factoring-hot96-small-type.json
+
+.PHONY: verify-bilinear-pole-packets
+verify-bilinear-pole-packets:
+	python3 tools/check_bilinear_pole_packets.py

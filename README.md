@@ -120,6 +120,11 @@ The [global pole trace](research/interval-pole-trace.md) gives an exact
 polynomial-precision factor-pair filter and closed bilinear reduction rules.
 Its current implementation still enumerates the dyadic state tree; efficient
 global state reduction remains open.
+The [bilinear pole-product packets](research/bilinear-pole-packets.md) now
+construct the whole product over that state family modulo `2^p` with
+`O(n+p)` ordinary arithmetic nodes and polynomial generation cost.
+The unit-trace evaluator is exact; the singular factor-count normalization
+remains unresolved. Run `make verify-bilinear-pole-packets`.
 The [Cauchy content-slope reduction](research/pole-cauchy-content.md) gives
 a second global target using two implicit determinant contents, with cheap
 padding and explicit Vandermonde normalization.

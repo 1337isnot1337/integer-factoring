@@ -18,6 +18,7 @@
 
 ## Exact pole-Cauchy algorithms
 
+- [Complete bilinear pole-product packets](bilinear-pole-packets.md): global polynomial circuits modulo `2^p` with `O(n+p)` arithmetic nodes, polynomial generation, and full unit traces; singular factor-count normalization remains open.
 - [Explicit residue-flow profiles](pole-smith-residue-flow.md): every Smith order in `(r+s) poly(b)` bit operations on explicit node lists, without constructing the matrix.
 - [Balanced overlap spectra](pole-smith-overlap-spectrum.md): one tree pass gives the full histogram; power-of-two padding gives a diagonal Smith formula.
 - [Inverse conditioning and entry queries](pole-cauchy-conditioning.md): balanced padding controls precision independently of dimension and permits polynomial-cost individual inverse entries.
