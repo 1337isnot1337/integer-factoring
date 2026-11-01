@@ -2057,3 +2057,10 @@ verify-cube-shared-budgets:
 .PHONY: verify-coherent-full-tail
 verify-coherent-full-tail:
 	python3 tools/check_coherent_full_tail_core.py --evidence evidence/coherent-full-tail-core.json --output /tmp/integer-factoring-coherent-full-tail-controls.json
+
+
+.PHONY: verify-coherent-free-tail verify-coherent-asymmetric-gauges
+verify-coherent-free-tail:
+	python3 tools/check_coherent_free_tail.py --output /tmp/integer-factoring-coherent-free-tail-controls.json
+verify-coherent-asymmetric-gauges:
+	python3 tools/check_coherent_asymmetric_gauges.py --output /tmp/integer-factoring-coherent-asymmetric-gauge-controls.json

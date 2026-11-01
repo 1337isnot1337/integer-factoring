@@ -1125,3 +1125,9 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 ## Fixed physical codes with a full Gaussian tail
 
 - [A fixed physical code with a full Gaussian tail](coherent-full-tail-core.md)
+
+
+## Free tails and independent coherent gauges
+
+- [A fixed active matrix for an arbitrarily long free tail](coherent-free-tail-reduction.md)
+- [Independent letter gauges at the two crossing cuts](coherent-asymmetric-letter-gauges.md)

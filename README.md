@@ -126,6 +126,15 @@ above `1/sqrt(2)`; the complete factoring score remains **1/2**.
 Run `make verify-coherent-q96-pressure verify-coherent-mixed-catalogue`
 for the exact saved-profile certificates. The checkers expose
 `--recompute-profiles` for full native profile reconstruction.
+
+A [free-tail reduction](research/coherent-free-tail-reduction.md) preserves both complete
+Smith profiles while replacing every dyadic extension of a fixed core by a fixed
+active matrix and explicit spectator factors. It gives finite limiting profile
+polynomials and an explicit tail-error bound. A proper fixed core retains a
+positive small-scale entropy deficit, so its determinant gain alone does not
+prove a better exponent. [Independent cut gauges](research/coherent-asymmetric-letter-gauges.md)
+are also implemented with both physical costs charged; six exact literal profiles
+validate them, while the retained 317-evaluation q32 search found no improvement.
 <!-- coherent-compound-checkpoint:end -->
 
 The [quadratic-parity Walsh construction](research/bell-walsh-constructions.md)
