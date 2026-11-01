@@ -129,6 +129,10 @@ verify-weyl-middle-coefficients:
 verify-subgroup-return:
 	python3 tools/check_subgroup_return_crossings.py
 
+.PHONY: verify-ordered-charge-area
+verify-ordered-charge-area:
+	python3 tools/check_ordered_charge_area.py
+
 .PHONY: verify-group-shears
 verify-group-shears:
 	python3 tools/check_group_shear_crossings.py

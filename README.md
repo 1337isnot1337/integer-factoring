@@ -467,6 +467,15 @@ coefficient spans fail the finite half target at lengths one through three
 for that example and a four-state analogue; useful uniform rank bounds
 remain open. Run `make verify-subgroup-return`.
 
+The [growing-clock normal form](research/ordered-charge-area-crossings.md)
+expresses ordered Weyl words as integer charge walks with an area weight.
+Uniformly generated polynomial-degree fields preserve the exponent under
+[whole-piece descent](research/fixed-field-descent.md#4-polynomial-degree-extensions-with-uniform-presentations).
+Selecting charge zero and area zero gives a binary family with strict
+endpoints and linearly many coefficients. Its complete binary spans fail
+the finite half target at lengths two and three; useful uniform rank
+bounds remain open. Run `make verify-ordered-charge-area`.
+
 The [group-shear extension](research/group-shear-crossings.md) implements
 the swap through three multiplication/division shears over any finite
 `p`-group, with a constant nonzero determinant in characteristic `p`.

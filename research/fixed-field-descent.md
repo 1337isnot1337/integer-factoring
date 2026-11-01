@@ -14,6 +14,10 @@ not itself improve any pressure inequality. The explicit local descent in
 useful because it supplies a binary local seed and additional choices of
 physical weights.
 
+Section 4 extends the cost analysis to uniformly constructed extensions
+of polynomial degree. A fixed coefficient field is not necessary under
+those additional hypotheses.
+
 ## 1. A rank bound for a linear coefficient projection
 
 Let \(L/F\) be a finite field extension of degree \(d\). Choose an
@@ -98,7 +102,8 @@ It changes only a constant in the coefficient-cost bound.
 
 Consequently, a valid fixed-extension pressure certificate with width
 parameter \(\rho\) transfers to the base field with the same \(\rho\).
-The [effective crossing transfer](pieces-to-factoring.md) then gives the
+For a prime base field, the
+[scale-one modular transfer](scale-one-modular-transfer.md) then gives the
 same exponent \(\alpha=\log_2(1/\rho)\). The extension must be fixed
 for this statement; a growing extension degree needs a separate cost
 analysis.
@@ -107,6 +112,63 @@ One must choose a linear projection with \(\lambda(1)=1\). The usual
 field trace is not always suitable: the trace of one from
 \(\mathbb F_4\) to \(\mathbb F_2\) is zero. A basis containing one
 always supplies the required projection.
+
+## 4. Polynomial-degree extensions with uniform presentations
+
+Fix a prime `p`. At binary label width `lambda`, allow a different field
+
+```math
+L_\lambda=\mathbb F_p[X]/(f_\lambda),\qquad
+e_\lambda=\deg f_\lambda\le(2\lambda)^A,
+```
+
+where `A` is fixed. Require a deterministic `2^O(lambda)` algorithm for
+the monic irreducible modulus and for the proposed crossing pieces and
+their two factorizations. Field elements use the polynomial basis starting
+with one. Assume polynomially many pieces, scale one, and extension-field
+channel widths with sum at most
+
+```math
+4\rho\lambda+C\log_2(2\lambda).
+```
+
+Then there is an effective family **over the one fixed field `Fp`** with
+the same leading `rho`. Indeed, let `ell` select the constant coordinate.
+For every supplied factorization `A=UV` with `r` inner indices, the explicit
+descent is
+
+```math
+\ell(A)_{ij}=
+\sum_{k=1}^{r}\sum_{a=0}^{e_\lambda-1}
+ U_{ik,a}\,\ell(X^a V_{kj}).                            \tag{5}
+```
+
+This uses `e_lambda*r` channels, once for the whole piece. Consequently
+each width increases by at most `ceil(log2(e_lambda))`, and the sum
+increases by at most `2A log2(2lambda)+2`. If a width exceeds `2lambda`,
+use the direct factorization through its two physical input labels as
+in the modular interface. That cap only decreases the width.
+
+Arithmetic in the supplied polynomial presentation takes a polynomial
+number of bit operations in `e_lambda` for fixed `p`, using ordinary
+polynomial multiplication, reduction and Euclidean inversion. The
+coordinate factors in (5) have the same polynomial overhead. This
+preserves the full `2^O(lambda)` construction bound, the polynomial piece
+count, and the exact endpoint because `ell(1)=1`.
+
+Thus the hypotheses of the existing fixed-prime modular transfer hold
+after descent; the field used by the factoring machine does not change
+with its input. A claimed variable-field family still has to provide its
+uniform modulus constructor and all rank factors. Polynomial extension
+degree alone does not establish those algorithms. A varying characteristic
+is outside this argument.
+
+The [growing clock construction](ordered-charge-area-crossings.md) gives
+a concrete uniformly generated example with `e_lambda=O(log lambda)`.
+Its loss is only `O(log log lambda)` channel bits. It supplies no improved
+uniform rank bound. The accompanying
+[checker](../tools/check_ordered_charge_area.py) also replays (5), including
+sharp rank increases, in extension degrees two through eight.
 
 ## Exact controls
 

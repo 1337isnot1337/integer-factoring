@@ -384,6 +384,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 - [Subgroup-return crossings](subgroup-return-crossings.md): group-word membership preserves the crossing and a rank-one starting cut at every length, including an effective free-group filter with infinite Hankel rank; complete binary coefficient spans at lengths one through three reject two examples without a uniform no-go claim.
 
+- [Ordered charge-area crossings](ordered-charge-area-crossings.md): growing clocks have an exact integer charge-walk normal form; polynomial-degree field descent preserves the exponent, and a binary area-zero filter retains both strict endpoints with linearly many coefficients; complete binary spans fail at two selected lengths.
+
 - [Group-shear crossings](group-shear-crossings.md): multiplication/division shears give cubic swap paths over every finite `p`-group in characteristic `p`; exact early-jet certificates exclude six displayed binary seeds, without an all-group claim.
 
 - [All-degree homogeneous Boolean charge bands](homogeneous-boolean-charge-bands.md): a degree-independent loss cap and stronger Gaussian floors exclude all exterior charges and a linearly growing interior band, including overlapping monomials.
