@@ -2316,6 +2316,11 @@ identifies reusable deterministic boundary contraction and exact factor-moment
 encodings. Its current target has the same logarithmic saving exponent `1/2`.
 The semiprime promise, coefficient-ring interface, and complete evaluation
 cost remain explicit obligations before importing a factoring consequence.
+The [all-input adapters](research/sanftenberg-all-input-prefix-adapter.md)
+show how exact prefix counts or a truncated min-plus contraction can select
+the smallest factor for arbitrary inputs; the direct whole-root contractor
+is only certified at linear width, and the recursive all-input cost remains
+open.
 
 ## Sparse oriented power prefixes
 

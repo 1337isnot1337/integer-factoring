@@ -114,9 +114,14 @@ An ordinary proper factor pair is determined by its first factor, which is
 strictly below N; hence the number of pairs is at most N<2^ell. At that
 precision the root count cannot wrap to zero on a composite. Extending the
 actual prefix counter, its source compiler, and its full cost bounds to
-this precision remains a proof obligation. The network identities and
-full-context leaf accounting make this a specific question to investigate,
-not an established reduction of arbitrary factoring to a semiprime oracle.
+this precision remains a proof obligation. The
+[all-input prefix adapter](sanftenberg-all-input-prefix-adapter.md) adds an
+ordinary minimum-factor argument: order the operand-0 wires by descending
+numeric significance so exact zero-first prefix search selects the least
+divisor. It also computes that a direct whole-root application of the boundary
+contractor gets only a linear width bound. A recursive exact-count or
+Boolean-existence implementation remains open; this is not an established
+all-input runtime reduction.
 
 ## Consequence for this campaign
 

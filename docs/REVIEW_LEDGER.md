@@ -449,3 +449,17 @@ Pinned source heads `8a3ea3e` (PR57), `1917a4e` (PR58), `4c7805d` (PR59) and `d9
 The [exact-source full receipt](../evidence/verify-pr57-60-a458e9c.json) and [compressed log](../evidence/verify-pr57-60-a458e9c.stdout.txt.xz) record a clean full default run plus nine named focused targets at `a458e9c27495c958e2ac853c67f7ea2cfa0ae2a6`: 357 Python command blocks and 66 plus five unit tests, exit zero. All seven imported focused targets passed. The ordered binary gate validates the retained audit and full ranks; its billions-state native replay was not repeated. The divided-power gate reconstructs maps and repeats all 48 large exact integer comparisons, without rebuilding the large native profiles.
 
 Concurrent main work was then preserved at `8fe8d1edd982d5537074d140b55733ef20ec1bf2`. Focused Catalan Gram, exact Hecke determinants, complete principal-screen ledger, endpoint-moment controls and documentation gates passed there; tracked files remained unchanged by those checks. The whole-suite receipt applies to a458e9c, while this later delta has the stated focused coverage. No new Lean build, independent mathematical acceptance or stronger factoring exponent follows from integration. The complete score remains 1/2.
+
+## 2026-11-01: All-input prefix adapter for semiprime work
+
+At base `e76115730548e79883e1ac7538c4ebf39c2b55cc`, the
+[ordinary adapter note](../research/sanftenberg-all-input-prefix-adapter.md)
+shows that exact prefix counts, or a truncated min-plus coefficient system,
+on the pinned RiemannGaussian factor-pair graph can recover the smallest
+prime factor for every `N`. It also applies the acquired boundary-width
+bound to the actual whole root graph, using `M <= 6400 ell` and
+`Delta <= 512 ell^(3/4)`, obtaining only an `O(ell)` width guarantee. The D1
+counter at larger precision, tropical/min-plus or Boolean recursion, and
+complete primitive-bit cost remain open. Full `make verify` passed. Source
+pin: `f5fd3ddb407972f9ca65298fbe9be3225fe06635`. No Lean rebuild or improved
+factoring exponent is claimed.
