@@ -1,5 +1,7 @@
 # Research index
 
+- [Coordinate support on different physical alphabets](rectangular-coordinate-support.md): the credited XOR/projection proof gives an all-field rank-sum lower bound for any piece count and independent coordinate alphabets, forcing balanced rho at least 3/4 in that support class. Non-diagonal channels and arbitrary retractions remain outside it.
+
 - [Normalize the angle scale of the support gap](normalized-support-gap-search.md): sign-preserving heuristic on actual twelve-letter graph tensors, 54 independent derivative comparisons and separate fixed-balanced/free-angle timed tracks. It changes the search landscape, not the critical threshold or score.
 
 - [Arbitrary twelve-letter reflection graphs](q12-reflection-graph-search.md): 192 independent F4 image/readout coordinates in the full sixteen-letter source, literal endpoints and independent contraction controls, with separate quick and full untruncated replay levels. Two timed free-height tracks are registered; no favorable tensor or score improvement is claimed.

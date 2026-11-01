@@ -2983,3 +2983,7 @@ verify-q12-reflection-graphs-independent:
 .PHONY: verify-normalized-support-gap
 verify-normalized-support-gap:
 	python3 tools/check_normalized_support_gap.py
+
+.PHONY: verify-rectangular-coordinate-support
+verify-rectangular-coordinate-support:
+	python3 tools/check_rectangular_coordinate_support.py

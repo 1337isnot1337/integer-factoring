@@ -1,0 +1,10950 @@
+{
+  "status": "pass",
+  "one_bit_truth_cases": 32,
+  "arbitrary_unequal_supported_cases": 600,
+  "cases": [
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 1,
+      "field": 2
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 1,
+      "field": 2
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        0
+      ],
+      "mask": 1,
+      "field": 2
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        0
+      ],
+      "mask": 1,
+      "field": 2
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 1,
+      "field": 2
+    },
+    {
+      "rank_row": 0,
+      "rank_column": 0,
+      "crossing_diagonal_count": 0,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        0
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        0
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 0,
+      "rank_column": 0,
+      "crossing_diagonal_count": 0,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        0
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 1,
+      "field": 2
+    },
+    {
+      "rank_row": 0,
+      "rank_column": 0,
+      "crossing_diagonal_count": 0,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 1,
+      "field": 2
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        0
+      ],
+      "mask": 1,
+      "field": 2
+    },
+    {
+      "rank_row": 0,
+      "rank_column": 0,
+      "crossing_diagonal_count": 0,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 1,
+      "field": 2
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 1,
+      "field": 2
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 1,
+      "field": 2
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 1,
+      "field": 2
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 1,
+      "field": 2
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 1,
+      "field": 2
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 0,
+      "rank_column": 0,
+      "crossing_diagonal_count": 0,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 1,
+      "field": 2
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 1,
+      "field": 2
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        0
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        0
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 0,
+      "rank_column": 0,
+      "crossing_diagonal_count": 0,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        0
+      ],
+      "mask": 1,
+      "field": 2
+    },
+    {
+      "rank_row": 0,
+      "rank_column": 0,
+      "crossing_diagonal_count": 0,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 1,
+      "field": 2
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        0
+      ],
+      "mask": 1,
+      "field": 2
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        0
+      ],
+      "mask": 1,
+      "field": 2
+    },
+    {
+      "rank_row": 0,
+      "rank_column": 0,
+      "crossing_diagonal_count": 0,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 1,
+      "field": 2
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 0,
+      "rank_column": 0,
+      "crossing_diagonal_count": 0,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 1,
+      "field": 2
+    },
+    {
+      "rank_row": 0,
+      "rank_column": 0,
+      "crossing_diagonal_count": 0,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        0
+      ],
+      "mask": 1,
+      "field": 2
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        0
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 0,
+      "rank_column": 0,
+      "crossing_diagonal_count": 0,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 1,
+      "field": 2
+    },
+    {
+      "rank_row": 0,
+      "rank_column": 0,
+      "crossing_diagonal_count": 0,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 0,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 0,
+      "field": 3
+    },
+    {
+      "rank_row": 0,
+      "rank_column": 0,
+      "crossing_diagonal_count": 0,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 0,
+      "rank_column": 0,
+      "crossing_diagonal_count": 0,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        0
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 0,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 0,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        0
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 0,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        0
+      ],
+      "mask": 0,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 0,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 0,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 0,
+      "field": 3
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 0,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 0,
+      "field": 3
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 0,
+      "field": 3
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 0,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 0,
+      "field": 3
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 0,
+      "field": 3
+    },
+    {
+      "rank_row": 0,
+      "rank_column": 0,
+      "crossing_diagonal_count": 0,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        0
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 0,
+      "rank_column": 0,
+      "crossing_diagonal_count": 0,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 0,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        0
+      ],
+      "mask": 0,
+      "field": 3
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 0,
+      "field": 3
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        0
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 0,
+      "rank_column": 0,
+      "crossing_diagonal_count": 0,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        0
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 0,
+      "field": 3
+    },
+    {
+      "rank_row": 0,
+      "rank_column": 0,
+      "crossing_diagonal_count": 0,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        0
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 0,
+      "rank_column": 0,
+      "crossing_diagonal_count": 0,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 0,
+      "field": 3
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 0,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        0
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 0,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 1,
+      "field": 5
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 0,
+      "field": 5
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 0,
+      "field": 5
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 0,
+      "field": 5
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 1,
+      "field": 5
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        0
+      ],
+      "mask": 1,
+      "field": 5
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 0,
+      "field": 5
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 0,
+      "field": 5
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 1,
+      "field": 5
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        0
+      ],
+      "mask": 0,
+      "field": 5
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 0,
+      "field": 5
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        0
+      ],
+      "mask": 0,
+      "field": 5
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 1,
+      "field": 5
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 0,
+      "field": 5
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 0,
+      "field": 5
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 1,
+      "field": 5
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        0
+      ],
+      "mask": 1,
+      "field": 5
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        0
+      ],
+      "mask": 0,
+      "field": 5
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 0,
+      "field": 5
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 1,
+      "field": 5
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 1,
+      "field": 5
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        0
+      ],
+      "mask": 1,
+      "field": 5
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 0,
+      "field": 5
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 1,
+      "field": 5
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 0,
+      "field": 5
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        0
+      ],
+      "mask": 0,
+      "field": 5
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        0
+      ],
+      "mask": 0,
+      "field": 5
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        0
+      ],
+      "mask": 1,
+      "field": 5
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 0,
+      "field": 5
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 0,
+      "field": 5
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 1,
+      "field": 5
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 1,
+      "field": 5
+    },
+    {
+      "rank_row": 0,
+      "rank_column": 0,
+      "crossing_diagonal_count": 0,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        0
+      ],
+      "mask": 1,
+      "field": 5
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        0
+      ],
+      "mask": 1,
+      "field": 5
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 1,
+      "field": 5
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 1,
+      "field": 5
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 1,
+      "field": 5
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 1,
+      "field": 5
+    },
+    {
+      "rank_row": 0,
+      "rank_column": 0,
+      "crossing_diagonal_count": 0,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 1,
+      "field": 5
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 1,
+      "field": 5
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 1,
+      "field": 5
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 1,
+      "field": 5
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 1,
+      "field": 5
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 0,
+      "field": 5
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 0,
+      "field": 5
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 1,
+      "field": 5
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        0
+      ],
+      "mask": 0,
+      "field": 5
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 1,
+      "field": 5
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 0,
+      "field": 5
+    },
+    {
+      "rank_row": 0,
+      "rank_column": 0,
+      "crossing_diagonal_count": 0,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 0,
+      "field": 5
+    },
+    {
+      "rank_row": 4,
+      "rank_column": 4,
+      "crossing_diagonal_count": 4,
+      "integer_slack": 16,
+      "alphabet_x": [
+        0,
+        2
+      ],
+      "alphabet_y": [
+        1,
+        2,
+        3
+      ],
+      "mask": 2,
+      "field": 2
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        1,
+        2,
+        3
+      ],
+      "mask": 2,
+      "field": 2
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        0
+      ],
+      "mask": 3,
+      "field": 2
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 5,
+      "rank_column": 5,
+      "crossing_diagonal_count": 5,
+      "integer_slack": 25,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 5,
+      "rank_column": 3,
+      "crossing_diagonal_count": 4,
+      "integer_slack": 14,
+      "alphabet_x": [
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 2,
+      "field": 2
+    },
+    {
+      "rank_row": 8,
+      "rank_column": 8,
+      "crossing_diagonal_count": 6,
+      "integer_slack": 156,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        1,
+        2,
+        3
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        2
+      ],
+      "mask": 1,
+      "field": 2
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        3
+      ],
+      "alphabet_y": [
+        0,
+        2,
+        3
+      ],
+      "mask": 3,
+      "field": 2
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 3,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 14,
+      "alphabet_x": [
+        0,
+        1,
+        2
+      ],
+      "alphabet_y": [
+        1,
+        3
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 7,
+      "rank_column": 8,
+      "crossing_diagonal_count": 6,
+      "integer_slack": 132,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        2,
+        3
+      ],
+      "mask": 1,
+      "field": 2
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        3
+      ],
+      "alphabet_y": [
+        0,
+        2
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 6,
+      "rank_column": 6,
+      "crossing_diagonal_count": 4,
+      "integer_slack": 92,
+      "alphabet_x": [
+        0,
+        1,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "mask": 3,
+      "field": 2
+    },
+    {
+      "rank_row": 5,
+      "rank_column": 5,
+      "crossing_diagonal_count": 5,
+      "integer_slack": 25,
+      "alphabet_x": [
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 2,
+      "field": 2
+    },
+    {
+      "rank_row": 6,
+      "rank_column": 7,
+      "crossing_diagonal_count": 6,
+      "integer_slack": 90,
+      "alphabet_x": [
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "mask": 2,
+      "field": 2
+    },
+    {
+      "rank_row": 6,
+      "rank_column": 3,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 53,
+      "alphabet_x": [
+        0,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "mask": 2,
+      "field": 2
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        0
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 6,
+      "rank_column": 7,
+      "crossing_diagonal_count": 5,
+      "integer_slack": 101,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        3
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 3,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 9,
+      "alphabet_x": [
+        0,
+        1,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        2
+      ],
+      "mask": 1,
+      "field": 2
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        2
+      ],
+      "alphabet_y": [
+        0,
+        3
+      ],
+      "mask": 3,
+      "field": 2
+    },
+    {
+      "rank_row": 0,
+      "rank_column": 0,
+      "crossing_diagonal_count": 0,
+      "integer_slack": 0,
+      "alphabet_x": [
+        3
+      ],
+      "alphabet_y": [
+        0,
+        2
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        2,
+        3
+      ],
+      "alphabet_y": [
+        2
+      ],
+      "mask": 2,
+      "field": 2
+    },
+    {
+      "rank_row": 0,
+      "rank_column": 0,
+      "crossing_diagonal_count": 0,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        1,
+        2,
+        3
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 3,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        3
+      ],
+      "mask": 3,
+      "field": 2
+    },
+    {
+      "rank_row": 6,
+      "rank_column": 10,
+      "crossing_diagonal_count": 6,
+      "integer_slack": 144,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        1,
+        2,
+        3
+      ],
+      "mask": 2,
+      "field": 2
+    },
+    {
+      "rank_row": 5,
+      "rank_column": 5,
+      "crossing_diagonal_count": 4,
+      "integer_slack": 34,
+      "alphabet_x": [
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 3,
+      "field": 2
+    },
+    {
+      "rank_row": 6,
+      "rank_column": 6,
+      "crossing_diagonal_count": 4,
+      "integer_slack": 92,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        3
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 3,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 9,
+      "alphabet_x": [
+        0,
+        1,
+        2
+      ],
+      "alphabet_y": [
+        0,
+        3
+      ],
+      "mask": 1,
+      "field": 2
+    },
+    {
+      "rank_row": 4,
+      "rank_column": 4,
+      "crossing_diagonal_count": 4,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        2
+      ],
+      "mask": 3,
+      "field": 2
+    },
+    {
+      "rank_row": 4,
+      "rank_column": 4,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 23,
+      "alphabet_x": [
+        1,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2
+      ],
+      "mask": 3,
+      "field": 2
+    },
+    {
+      "rank_row": 4,
+      "rank_column": 3,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 27,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        2,
+        3
+      ],
+      "mask": 3,
+      "field": 2
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 3,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "mask": 1,
+      "field": 2
+    },
+    {
+      "rank_row": 8,
+      "rank_column": 6,
+      "crossing_diagonal_count": 7,
+      "integer_slack": 95,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        3
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1,
+        2
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 5,
+      "rank_column": 5,
+      "crossing_diagonal_count": 5,
+      "integer_slack": 25,
+      "alphabet_x": [
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        2
+      ],
+      "mask": 2,
+      "field": 2
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        3
+      ],
+      "alphabet_y": [
+        1,
+        3
+      ],
+      "mask": 1,
+      "field": 2
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        3
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 5,
+      "crossing_diagonal_count": 4,
+      "integer_slack": 14,
+      "alphabet_x": [
+        1,
+        2
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 9,
+      "rank_column": 7,
+      "crossing_diagonal_count": 5,
+      "integer_slack": 164,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        1,
+        2,
+        3
+      ],
+      "mask": 2,
+      "field": 2
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        1,
+        3
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "mask": 1,
+      "field": 2
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1,
+        2
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 3,
+      "field": 2
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        3
+      ],
+      "mask": 1,
+      "field": 2
+    },
+    {
+      "rank_row": 4,
+      "rank_column": 3,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 20,
+      "alphabet_x": [
+        1,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "mask": 1,
+      "field": 2
+    },
+    {
+      "rank_row": 0,
+      "rank_column": 0,
+      "crossing_diagonal_count": 0,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 1,
+      "field": 2
+    },
+    {
+      "rank_row": 9,
+      "rank_column": 9,
+      "crossing_diagonal_count": 8,
+      "integer_slack": 179,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        2,
+        3
+      ],
+      "mask": 2,
+      "field": 2
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 3,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 9,
+      "alphabet_x": [
+        2,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 4,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 15,
+      "alphabet_x": [
+        0,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "mask": 2,
+      "field": 2
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        2
+      ],
+      "mask": 3,
+      "field": 2
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        2
+      ],
+      "alphabet_y": [
+        0,
+        2
+      ],
+      "mask": 3,
+      "field": 2
+    },
+    {
+      "rank_row": 10,
+      "rank_column": 9,
+      "crossing_diagonal_count": 9,
+      "integer_slack": 189,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        3
+      ],
+      "mask": 3,
+      "field": 3
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 3,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        3
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 0,
+      "rank_column": 0,
+      "crossing_diagonal_count": 0,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        2
+      ],
+      "alphabet_y": [
+        2
+      ],
+      "mask": 2,
+      "field": 3
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 3,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        3
+      ],
+      "mask": 0,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1,
+        2
+      ],
+      "alphabet_y": [
+        0
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 3,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 9,
+      "alphabet_x": [
+        1,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 10,
+      "rank_column": 9,
+      "crossing_diagonal_count": 10,
+      "integer_slack": 170,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        1,
+        3
+      ],
+      "mask": 3,
+      "field": 3
+    },
+    {
+      "rank_row": 6,
+      "rank_column": 6,
+      "crossing_diagonal_count": 5,
+      "integer_slack": 47,
+      "alphabet_x": [
+        0,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 9,
+      "rank_column": 11,
+      "crossing_diagonal_count": 8,
+      "integer_slack": 233,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2
+      ],
+      "mask": 2,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1,
+        3
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 12,
+      "rank_column": 9,
+      "crossing_diagonal_count": 10,
+      "integer_slack": 224,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        3
+      ],
+      "mask": 0,
+      "field": 3
+    },
+    {
+      "rank_row": 0,
+      "rank_column": 0,
+      "crossing_diagonal_count": 0,
+      "integer_slack": 0,
+      "alphabet_x": [
+        3
+      ],
+      "alphabet_y": [
+        1,
+        2,
+        3
+      ],
+      "mask": 2,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1,
+        3
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 3,
+      "field": 3
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 3,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 2,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        0,
+        2
+      ],
+      "mask": 2,
+      "field": 3
+    },
+    {
+      "rank_row": 9,
+      "rank_column": 8,
+      "crossing_diagonal_count": 8,
+      "integer_slack": 152,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        2,
+        3
+      ],
+      "mask": 0,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        2
+      ],
+      "alphabet_y": [
+        1,
+        2,
+        3
+      ],
+      "mask": 3,
+      "field": 3
+    },
+    {
+      "rank_row": 9,
+      "rank_column": 7,
+      "crossing_diagonal_count": 8,
+      "integer_slack": 125,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        3
+      ],
+      "mask": 3,
+      "field": 3
+    },
+    {
+      "rank_row": 6,
+      "rank_column": 4,
+      "crossing_diagonal_count": 5,
+      "integer_slack": 23,
+      "alphabet_x": [
+        1,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        3
+      ],
+      "mask": 0,
+      "field": 3
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        1,
+        3
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 5,
+      "rank_column": 4,
+      "crossing_diagonal_count": 4,
+      "integer_slack": 24,
+      "alphabet_x": [
+        0,
+        2
+      ],
+      "alphabet_y": [
+        1,
+        2,
+        3
+      ],
+      "mask": 3,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        3
+      ],
+      "alphabet_y": [
+        0
+      ],
+      "mask": 0,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1,
+        3
+      ],
+      "alphabet_y": [
+        3
+      ],
+      "mask": 3,
+      "field": 3
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        1,
+        3
+      ],
+      "mask": 2,
+      "field": 3
+    },
+    {
+      "rank_row": 4,
+      "rank_column": 4,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 23,
+      "alphabet_x": [
+        0,
+        1,
+        2
+      ],
+      "alphabet_y": [
+        0,
+        2
+      ],
+      "mask": 3,
+      "field": 3
+    },
+    {
+      "rank_row": 8,
+      "rank_column": 11,
+      "crossing_diagonal_count": 9,
+      "integer_slack": 183,
+      "alphabet_x": [
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        2
+      ],
+      "mask": 0,
+      "field": 3
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 3,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 0,
+      "alphabet_x": [
+        2
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "mask": 0,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 4,
+      "alphabet_x": [
+        0,
+        1,
+        2
+      ],
+      "alphabet_y": [
+        1,
+        2
+      ],
+      "mask": 3,
+      "field": 3
+    },
+    {
+      "rank_row": 4,
+      "rank_column": 4,
+      "crossing_diagonal_count": 4,
+      "integer_slack": 0,
+      "alphabet_x": [
+        3
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        0
+      ],
+      "mask": 0,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        2
+      ],
+      "mask": 2,
+      "field": 3
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 3,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "mask": 3,
+      "field": 3
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 3,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 0,
+      "alphabet_x": [
+        2
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "mask": 2,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 3,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 8,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 3,
+      "field": 3
+    },
+    {
+      "rank_row": 9,
+      "rank_column": 7,
+      "crossing_diagonal_count": 8,
+      "integer_slack": 125,
+      "alphabet_x": [
+        0,
+        1,
+        2
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "mask": 3,
+      "field": 3
+    },
+    {
+      "rank_row": 9,
+      "rank_column": 9,
+      "crossing_diagonal_count": 8,
+      "integer_slack": 179,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        1,
+        2,
+        3
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 4,
+      "rank_column": 6,
+      "crossing_diagonal_count": 5,
+      "integer_slack": 23,
+      "alphabet_x": [
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 4,
+      "rank_column": 5,
+      "crossing_diagonal_count": 5,
+      "integer_slack": 15,
+      "alphabet_x": [
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        1,
+        3
+      ],
+      "mask": 0,
+      "field": 3
+    },
+    {
+      "rank_row": 0,
+      "rank_column": 0,
+      "crossing_diagonal_count": 0,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 5,
+      "rank_column": 6,
+      "crossing_diagonal_count": 4,
+      "integer_slack": 44,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        1,
+        3
+      ],
+      "mask": 0,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        2,
+        3
+      ],
+      "mask": 2,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        0
+      ],
+      "mask": 3,
+      "field": 3
+    },
+    {
+      "rank_row": 8,
+      "rank_column": 8,
+      "crossing_diagonal_count": 8,
+      "integer_slack": 64,
+      "alphabet_x": [
+        1,
+        2
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "mask": 3,
+      "field": 3
+    },
+    {
+      "rank_row": 5,
+      "rank_column": 5,
+      "crossing_diagonal_count": 5,
+      "integer_slack": 25,
+      "alphabet_x": [
+        0,
+        2
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "mask": 0,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 4,
+      "alphabet_x": [
+        0,
+        1,
+        2
+      ],
+      "alphabet_y": [
+        1,
+        2
+      ],
+      "mask": 2,
+      "field": 3
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 3,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        0
+      ],
+      "mask": 3,
+      "field": 3
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1,
+        2
+      ],
+      "alphabet_y": [
+        2
+      ],
+      "mask": 0,
+      "field": 3
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 3,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        3
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 5,
+      "rank_column": 7,
+      "crossing_diagonal_count": 5,
+      "integer_slack": 45,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        2
+      ],
+      "mask": 0,
+      "field": 5
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 3,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        2
+      ],
+      "mask": 2,
+      "field": 5
+    },
+    {
+      "rank_row": 10,
+      "rank_column": 8,
+      "crossing_diagonal_count": 7,
+      "integer_slack": 191,
+      "alphabet_x": [
+        0,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "mask": 2,
+      "field": 5
+    },
+    {
+      "rank_row": 10,
+      "rank_column": 10,
+      "crossing_diagonal_count": 8,
+      "integer_slack": 236,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        3
+      ],
+      "mask": 0,
+      "field": 5
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        3
+      ],
+      "mask": 0,
+      "field": 5
+    },
+    {
+      "rank_row": 11,
+      "rank_column": 12,
+      "crossing_diagonal_count": 12,
+      "integer_slack": 252,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        3
+      ],
+      "mask": 1,
+      "field": 5
+    },
+    {
+      "rank_row": 5,
+      "rank_column": 5,
+      "crossing_diagonal_count": 5,
+      "integer_slack": 25,
+      "alphabet_x": [
+        0,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        1,
+        2
+      ],
+      "mask": 0,
+      "field": 5
+    },
+    {
+      "rank_row": 0,
+      "rank_column": 0,
+      "crossing_diagonal_count": 0,
+      "integer_slack": 0,
+      "alphabet_x": [
+        2
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 0,
+      "field": 5
+    },
+    {
+      "rank_row": 8,
+      "rank_column": 8,
+      "crossing_diagonal_count": 8,
+      "integer_slack": 64,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        3
+      ],
+      "mask": 2,
+      "field": 5
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 3,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1,
+        2
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 3,
+      "field": 5
+    },
+    {
+      "rank_row": 6,
+      "rank_column": 6,
+      "crossing_diagonal_count": 5,
+      "integer_slack": 47,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        1,
+        3
+      ],
+      "mask": 2,
+      "field": 5
+    },
+    {
+      "rank_row": 11,
+      "rank_column": 12,
+      "crossing_diagonal_count": 11,
+      "integer_slack": 275,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2
+      ],
+      "mask": 2,
+      "field": 5
+    },
+    {
+      "rank_row": 5,
+      "rank_column": 4,
+      "crossing_diagonal_count": 5,
+      "integer_slack": 15,
+      "alphabet_x": [
+        0,
+        1,
+        2
+      ],
+      "alphabet_y": [
+        2,
+        3
+      ],
+      "mask": 3,
+      "field": 5
+    },
+    {
+      "rank_row": 9,
+      "rank_column": 10,
+      "crossing_diagonal_count": 8,
+      "integer_slack": 206,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        2,
+        3
+      ],
+      "mask": 2,
+      "field": 5
+    },
+    {
+      "rank_row": 11,
+      "rank_column": 11,
+      "crossing_diagonal_count": 11,
+      "integer_slack": 242,
+      "alphabet_x": [
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "mask": 1,
+      "field": 5
+    },
+    {
+      "rank_row": 5,
+      "rank_column": 6,
+      "crossing_diagonal_count": 6,
+      "integer_slack": 24,
+      "alphabet_x": [
+        0,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        3
+      ],
+      "mask": 0,
+      "field": 5
+    },
+    {
+      "rank_row": 12,
+      "rank_column": 11,
+      "crossing_diagonal_count": 10,
+      "integer_slack": 296,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        2,
+        3
+      ],
+      "mask": 3,
+      "field": 5
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 3,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 0,
+      "alphabet_x": [
+        3
+      ],
+      "alphabet_y": [
+        0,
+        2,
+        3
+      ],
+      "mask": 0,
+      "field": 5
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        3
+      ],
+      "alphabet_y": [
+        0,
+        2,
+        3
+      ],
+      "mask": 0,
+      "field": 5
+    },
+    {
+      "rank_row": 4,
+      "rank_column": 4,
+      "crossing_diagonal_count": 4,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        0
+      ],
+      "mask": 2,
+      "field": 5
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 3,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1,
+        2
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 3,
+      "field": 5
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 3,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1,
+        3
+      ],
+      "alphabet_y": [
+        2
+      ],
+      "mask": 3,
+      "field": 5
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        0,
+        3
+      ],
+      "mask": 3,
+      "field": 5
+    },
+    {
+      "rank_row": 5,
+      "rank_column": 5,
+      "crossing_diagonal_count": 5,
+      "integer_slack": 25,
+      "alphabet_x": [
+        0,
+        1,
+        2
+      ],
+      "alphabet_y": [
+        1,
+        2
+      ],
+      "mask": 2,
+      "field": 5
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        2
+      ],
+      "alphabet_y": [
+        3
+      ],
+      "mask": 3,
+      "field": 5
+    },
+    {
+      "rank_row": 8,
+      "rank_column": 7,
+      "crossing_diagonal_count": 7,
+      "integer_slack": 63,
+      "alphabet_x": [
+        1,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "mask": 3,
+      "field": 5
+    },
+    {
+      "rank_row": 4,
+      "rank_column": 5,
+      "crossing_diagonal_count": 4,
+      "integer_slack": 24,
+      "alphabet_x": [
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "mask": 1,
+      "field": 5
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 3,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 9,
+      "alphabet_x": [
+        0,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        2,
+        3
+      ],
+      "mask": 1,
+      "field": 5
+    },
+    {
+      "rank_row": 6,
+      "rank_column": 7,
+      "crossing_diagonal_count": 7,
+      "integer_slack": 35,
+      "alphabet_x": [
+        0,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "mask": 2,
+      "field": 5
+    },
+    {
+      "rank_row": 7,
+      "rank_column": 8,
+      "crossing_diagonal_count": 7,
+      "integer_slack": 63,
+      "alphabet_x": [
+        0,
+        2
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "mask": 0,
+      "field": 5
+    },
+    {
+      "rank_row": 6,
+      "rank_column": 7,
+      "crossing_diagonal_count": 6,
+      "integer_slack": 48,
+      "alphabet_x": [
+        1,
+        2
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "mask": 1,
+      "field": 5
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1,
+        2
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 1,
+      "field": 5
+    },
+    {
+      "rank_row": 11,
+      "rank_column": 10,
+      "crossing_diagonal_count": 9,
+      "integer_slack": 249,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        3
+      ],
+      "mask": 2,
+      "field": 5
+    },
+    {
+      "rank_row": 9,
+      "rank_column": 9,
+      "crossing_diagonal_count": 7,
+      "integer_slack": 194,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        1,
+        2,
+        3
+      ],
+      "mask": 0,
+      "field": 5
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        2
+      ],
+      "alphabet_y": [
+        0,
+        3
+      ],
+      "mask": 1,
+      "field": 5
+    },
+    {
+      "rank_row": 8,
+      "rank_column": 8,
+      "crossing_diagonal_count": 8,
+      "integer_slack": 64,
+      "alphabet_x": [
+        2,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "mask": 0,
+      "field": 5
+    },
+    {
+      "rank_row": 10,
+      "rank_column": 10,
+      "crossing_diagonal_count": 9,
+      "integer_slack": 219,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        2,
+        3
+      ],
+      "mask": 1,
+      "field": 5
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 3,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "mask": 0,
+      "field": 5
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1,
+        3
+      ],
+      "alphabet_y": [
+        2
+      ],
+      "mask": 0,
+      "field": 5
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        3
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "mask": 2,
+      "field": 5
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        0,
+        2
+      ],
+      "mask": 2,
+      "field": 5
+    },
+    {
+      "rank_row": 6,
+      "rank_column": 5,
+      "crossing_diagonal_count": 5,
+      "integer_slack": 35,
+      "alphabet_x": [
+        1,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        2,
+        3
+      ],
+      "mask": 0,
+      "field": 5
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        3
+      ],
+      "alphabet_y": [
+        1,
+        2
+      ],
+      "mask": 0,
+      "field": 5
+    },
+    {
+      "rank_row": 4,
+      "rank_column": 4,
+      "crossing_diagonal_count": 4,
+      "integer_slack": 16,
+      "alphabet_x": [
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        3
+      ],
+      "mask": 0,
+      "field": 5
+    },
+    {
+      "rank_row": 9,
+      "rank_column": 11,
+      "crossing_diagonal_count": 9,
+      "integer_slack": 216,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2
+      ],
+      "mask": 3,
+      "field": 5
+    },
+    {
+      "rank_row": 10,
+      "rank_column": 12,
+      "crossing_diagonal_count": 11,
+      "integer_slack": 239,
+      "alphabet_x": [
+        0,
+        1,
+        2
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "mask": 1,
+      "field": 5
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 3,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 0,
+      "alphabet_x": [
+        2
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        3
+      ],
+      "mask": 2,
+      "field": 5
+    },
+    {
+      "rank_row": 8,
+      "rank_column": 6,
+      "crossing_diagonal_count": 8,
+      "integer_slack": 32,
+      "alphabet_x": [
+        2,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "mask": 1,
+      "field": 5
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 3,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 1,
+      "field": 5
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 3,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        3
+      ],
+      "mask": 3,
+      "field": 5
+    },
+    {
+      "rank_row": 6,
+      "rank_column": 6,
+      "crossing_diagonal_count": 6,
+      "integer_slack": 36,
+      "alphabet_x": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "alphabet_y": [
+        3,
+        7
+      ],
+      "mask": 1,
+      "field": 2
+    },
+    {
+      "rank_row": 4,
+      "rank_column": 4,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 23,
+      "alphabet_x": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "alphabet_y": [
+        6,
+        7
+      ],
+      "mask": 7,
+      "field": 2
+    },
+    {
+      "rank_row": 5,
+      "rank_column": 4,
+      "crossing_diagonal_count": 4,
+      "integer_slack": 24,
+      "alphabet_x": [
+        3,
+        7
+      ],
+      "alphabet_y": [
+        1,
+        2,
+        4,
+        6,
+        7
+      ],
+      "mask": 4,
+      "field": 2
+    },
+    {
+      "rank_row": 12,
+      "rank_column": 15,
+      "crossing_diagonal_count": 12,
+      "integer_slack": 576,
+      "alphabet_x": [
+        0,
+        1,
+        3,
+        5,
+        7
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        5,
+        6
+      ],
+      "mask": 1,
+      "field": 2
+    },
+    {
+      "rank_row": 19,
+      "rank_column": 16,
+      "crossing_diagonal_count": 13,
+      "integer_slack": 1351,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      "alphabet_y": [
+        1,
+        4,
+        5,
+        6,
+        7
+      ],
+      "mask": 6,
+      "field": 2
+    },
+    {
+      "rank_row": 9,
+      "rank_column": 11,
+      "crossing_diagonal_count": 8,
+      "integer_slack": 233,
+      "alphabet_x": [
+        0,
+        2,
+        3,
+        4,
+        7
+      ],
+      "alphabet_y": [
+        3,
+        6,
+        7
+      ],
+      "mask": 6,
+      "field": 2
+    },
+    {
+      "rank_row": 16,
+      "rank_column": 19,
+      "crossing_diagonal_count": 12,
+      "integer_slack": 1376,
+      "alphabet_x": [
+        0,
+        2,
+        4,
+        6,
+        7
+      ],
+      "alphabet_y": [
+        0,
+        2,
+        3,
+        4,
+        6,
+        7
+      ],
+      "mask": 7,
+      "field": 2
+    },
+    {
+      "rank_row": 7,
+      "rank_column": 7,
+      "crossing_diagonal_count": 7,
+      "integer_slack": 49,
+      "alphabet_x": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "alphabet_y": [
+        1,
+        2
+      ],
+      "mask": 1,
+      "field": 2
+    },
+    {
+      "rank_row": 13,
+      "rank_column": 16,
+      "crossing_diagonal_count": 13,
+      "integer_slack": 663,
+      "alphabet_x": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "mask": 1,
+      "field": 2
+    },
+    {
+      "rank_row": 6,
+      "rank_column": 6,
+      "crossing_diagonal_count": 6,
+      "integer_slack": 36,
+      "alphabet_x": [
+        1,
+        6
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        7
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 21,
+      "rank_column": 21,
+      "crossing_diagonal_count": 17,
+      "integer_slack": 1916,
+      "alphabet_x": [
+        0,
+        1,
+        4,
+        5,
+        6
+      ],
+      "alphabet_y": [
+        0,
+        2,
+        3,
+        5,
+        6,
+        7
+      ],
+      "mask": 1,
+      "field": 2
+    },
+    {
+      "rank_row": 10,
+      "rank_column": 11,
+      "crossing_diagonal_count": 8,
+      "integer_slack": 266,
+      "alphabet_x": [
+        3,
+        5,
+        6
+      ],
+      "alphabet_y": [
+        0,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "mask": 6,
+      "field": 2
+    },
+    {
+      "rank_row": 12,
+      "rank_column": 11,
+      "crossing_diagonal_count": 7,
+      "integer_slack": 479,
+      "alphabet_x": [
+        0,
+        2,
+        5,
+        7
+      ],
+      "alphabet_y": [
+        1,
+        3,
+        4,
+        5,
+        6
+      ],
+      "mask": 6,
+      "field": 2
+    },
+    {
+      "rank_row": 9,
+      "rank_column": 12,
+      "crossing_diagonal_count": 10,
+      "integer_slack": 224,
+      "alphabet_x": [
+        3,
+        5,
+        6
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        7
+      ],
+      "mask": 7,
+      "field": 2
+    },
+    {
+      "rank_row": 10,
+      "rank_column": 12,
+      "crossing_diagonal_count": 10,
+      "integer_slack": 260,
+      "alphabet_x": [
+        0,
+        1,
+        3,
+        4,
+        6
+      ],
+      "alphabet_y": [
+        1,
+        5,
+        6
+      ],
+      "mask": 6,
+      "field": 2
+    },
+    {
+      "rank_row": 4,
+      "rank_column": 4,
+      "crossing_diagonal_count": 4,
+      "integer_slack": 16,
+      "alphabet_x": [
+        5,
+        6
+      ],
+      "alphabet_y": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "mask": 4,
+      "field": 2
+    },
+    {
+      "rank_row": 5,
+      "rank_column": 5,
+      "crossing_diagonal_count": 5,
+      "integer_slack": 25,
+      "alphabet_x": [
+        0,
+        3,
+        4
+      ],
+      "alphabet_y": [
+        1,
+        3
+      ],
+      "mask": 2,
+      "field": 2
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 4,
+      "alphabet_x": [
+        0,
+        5,
+        7
+      ],
+      "alphabet_y": [
+        2,
+        6
+      ],
+      "mask": 1,
+      "field": 2
+    },
+    {
+      "rank_row": 8,
+      "rank_column": 8,
+      "crossing_diagonal_count": 7,
+      "integer_slack": 143,
+      "alphabet_x": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "alphabet_y": [
+        1,
+        2,
+        3
+      ],
+      "mask": 5,
+      "field": 2
+    },
+    {
+      "rank_row": 6,
+      "rank_column": 6,
+      "crossing_diagonal_count": 6,
+      "integer_slack": 36,
+      "alphabet_x": [
+        2,
+        6,
+        7
+      ],
+      "alphabet_y": [
+        1,
+        6
+      ],
+      "mask": 5,
+      "field": 2
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 3,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        1,
+        2,
+        3,
+        4,
+        7
+      ],
+      "mask": 6,
+      "field": 2
+    },
+    {
+      "rank_row": 8,
+      "rank_column": 9,
+      "crossing_diagonal_count": 8,
+      "integer_slack": 152,
+      "alphabet_x": [
+        0,
+        4,
+        5,
+        6,
+        7
+      ],
+      "alphabet_y": [
+        4,
+        6,
+        7
+      ],
+      "mask": 6,
+      "field": 2
+    },
+    {
+      "rank_row": 6,
+      "rank_column": 6,
+      "crossing_diagonal_count": 6,
+      "integer_slack": 36,
+      "alphabet_x": [
+        1,
+        2,
+        3,
+        6
+      ],
+      "alphabet_y": [
+        2,
+        3
+      ],
+      "mask": 4,
+      "field": 2
+    },
+    {
+      "rank_row": 5,
+      "rank_column": 5,
+      "crossing_diagonal_count": 5,
+      "integer_slack": 0,
+      "alphabet_x": [
+        3
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "mask": 6,
+      "field": 2
+    },
+    {
+      "rank_row": 5,
+      "rank_column": 4,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 51,
+      "alphabet_x": [
+        0,
+        6,
+        7
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        3,
+        6
+      ],
+      "mask": 6,
+      "field": 2
+    },
+    {
+      "rank_row": 7,
+      "rank_column": 6,
+      "crossing_diagonal_count": 6,
+      "integer_slack": 90,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        6
+      ],
+      "alphabet_y": [
+        2,
+        3,
+        7
+      ],
+      "mask": 7,
+      "field": 2
+    },
+    {
+      "rank_row": 20,
+      "rank_column": 15,
+      "crossing_diagonal_count": 13,
+      "integer_slack": 1031,
+      "alphabet_x": [
+        2,
+        3,
+        6,
+        7
+      ],
+      "alphabet_y": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "mask": 7,
+      "field": 2
+    },
+    {
+      "rank_row": 16,
+      "rank_column": 19,
+      "crossing_diagonal_count": 12,
+      "integer_slack": 1376,
+      "alphabet_x": [
+        1,
+        2,
+        3,
+        4,
+        7
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 11,
+      "rank_column": 11,
+      "crossing_diagonal_count": 11,
+      "integer_slack": 121,
+      "alphabet_x": [
+        2,
+        7
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6
+      ],
+      "mask": 6,
+      "field": 2
+    },
+    {
+      "rank_row": 26,
+      "rank_column": 22,
+      "crossing_diagonal_count": 21,
+      "integer_slack": 2419,
+      "alphabet_x": [
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "mask": 6,
+      "field": 2
+    },
+    {
+      "rank_row": 4,
+      "rank_column": 5,
+      "crossing_diagonal_count": 4,
+      "integer_slack": 24,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        4,
+        7
+      ],
+      "alphabet_y": [
+        4,
+        5
+      ],
+      "mask": 3,
+      "field": 2
+    },
+    {
+      "rank_row": 12,
+      "rank_column": 9,
+      "crossing_diagonal_count": 10,
+      "integer_slack": 224,
+      "alphabet_x": [
+        0,
+        3,
+        7
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        4,
+        7
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 10,
+      "rank_column": 11,
+      "crossing_diagonal_count": 9,
+      "integer_slack": 249,
+      "alphabet_x": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "alphabet_y": [
+        0,
+        3,
+        6
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 4,
+      "rank_column": 2,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 7,
+      "alphabet_x": [
+        3,
+        6
+      ],
+      "alphabet_y": [
+        1,
+        4,
+        5,
+        7
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 18,
+      "rank_column": 18,
+      "crossing_diagonal_count": 14,
+      "integer_slack": 1100,
+      "alphabet_x": [
+        3,
+        4,
+        5,
+        7
+      ],
+      "alphabet_y": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "mask": 6,
+      "field": 2
+    },
+    {
+      "rank_row": 23,
+      "rank_column": 16,
+      "crossing_diagonal_count": 16,
+      "integer_slack": 1584,
+      "alphabet_x": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "alphabet_y": [
+        0,
+        2,
+        3,
+        4,
+        7
+      ],
+      "mask": 4,
+      "field": 2
+    },
+    {
+      "rank_row": 4,
+      "rank_column": 3,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 27,
+      "alphabet_x": [
+        1,
+        2,
+        4,
+        6
+      ],
+      "alphabet_y": [
+        0,
+        5,
+        6
+      ],
+      "mask": 1,
+      "field": 2
+    },
+    {
+      "rank_row": 7,
+      "rank_column": 8,
+      "crossing_diagonal_count": 7,
+      "integer_slack": 63,
+      "alphabet_x": [
+        4,
+        5
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 10,
+      "rank_column": 11,
+      "crossing_diagonal_count": 9,
+      "integer_slack": 249,
+      "alphabet_x": [
+        0,
+        2,
+        5
+      ],
+      "alphabet_y": [
+        0,
+        2,
+        3,
+        4,
+        6,
+        7
+      ],
+      "mask": 2,
+      "field": 2
+    },
+    {
+      "rank_row": 17,
+      "rank_column": 15,
+      "crossing_diagonal_count": 13,
+      "integer_slack": 1106,
+      "alphabet_x": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7
+      ],
+      "alphabet_y": [
+        0,
+        2,
+        3,
+        4,
+        6
+      ],
+      "mask": 2,
+      "field": 2
+    },
+    {
+      "rank_row": 4,
+      "rank_column": 4,
+      "crossing_diagonal_count": 4,
+      "integer_slack": 16,
+      "alphabet_x": [
+        0,
+        6,
+        7
+      ],
+      "alphabet_y": [
+        1,
+        5
+      ],
+      "mask": 2,
+      "field": 2
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        5
+      ],
+      "alphabet_y": [
+        0,
+        2,
+        7
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 5,
+      "rank_column": 5,
+      "crossing_diagonal_count": 5,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7
+      ],
+      "mask": 5,
+      "field": 2
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        7
+      ],
+      "alphabet_y": [
+        2
+      ],
+      "mask": 5,
+      "field": 2
+    },
+    {
+      "rank_row": 6,
+      "rank_column": 6,
+      "crossing_diagonal_count": 6,
+      "integer_slack": 72,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        4,
+        5
+      ],
+      "alphabet_y": [
+        4,
+        5,
+        6
+      ],
+      "mask": 1,
+      "field": 2
+    },
+    {
+      "rank_row": 4,
+      "rank_column": 4,
+      "crossing_diagonal_count": 4,
+      "integer_slack": 16,
+      "alphabet_x": [
+        1,
+        2,
+        5,
+        7
+      ],
+      "alphabet_y": [
+        3,
+        5
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 3,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 0,
+      "alphabet_x": [
+        2
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 6,
+      "rank_column": 6,
+      "crossing_diagonal_count": 5,
+      "integer_slack": 47,
+      "alphabet_x": [
+        0,
+        7
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "mask": 3,
+      "field": 2
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 3,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 9,
+      "alphabet_x": [
+        1,
+        6,
+        7
+      ],
+      "alphabet_y": [
+        0,
+        7
+      ],
+      "mask": 4,
+      "field": 2
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        2,
+        6
+      ],
+      "mask": 2,
+      "field": 2
+    },
+    {
+      "rank_row": 26,
+      "rank_column": 26,
+      "crossing_diagonal_count": 22,
+      "integer_slack": 2896,
+      "alphabet_x": [
+        0,
+        2,
+        3,
+        5,
+        6
+      ],
+      "alphabet_y": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "mask": 2,
+      "field": 3
+    },
+    {
+      "rank_row": 16,
+      "rank_column": 13,
+      "crossing_diagonal_count": 13,
+      "integer_slack": 455,
+      "alphabet_x": [
+        0,
+        2,
+        4
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "mask": 4,
+      "field": 3
+    },
+    {
+      "rank_row": 21,
+      "rank_column": 22,
+      "crossing_diagonal_count": 21,
+      "integer_slack": 1869,
+      "alphabet_x": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        7
+      ],
+      "alphabet_y": [
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        4,
+        5,
+        6
+      ],
+      "alphabet_y": [
+        5
+      ],
+      "mask": 6,
+      "field": 3
+    },
+    {
+      "rank_row": 22,
+      "rank_column": 17,
+      "crossing_diagonal_count": 15,
+      "integer_slack": 1271,
+      "alphabet_x": [
+        0,
+        3,
+        5,
+        6
+      ],
+      "alphabet_y": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "mask": 0,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        2,
+        6,
+        7
+      ],
+      "alphabet_y": [
+        7
+      ],
+      "mask": 3,
+      "field": 3
+    },
+    {
+      "rank_row": 14,
+      "rank_column": 13,
+      "crossing_diagonal_count": 13,
+      "integer_slack": 377,
+      "alphabet_x": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        7
+      ],
+      "alphabet_y": [
+        0,
+        2,
+        3
+      ],
+      "mask": 3,
+      "field": 3
+    },
+    {
+      "rank_row": 18,
+      "rank_column": 19,
+      "crossing_diagonal_count": 15,
+      "integer_slack": 1143,
+      "alphabet_x": [
+        0,
+        3,
+        5,
+        7
+      ],
+      "alphabet_y": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 21,
+      "rank_column": 23,
+      "crossing_diagonal_count": 18,
+      "integer_slack": 2091,
+      "alphabet_x": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "alphabet_y": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 6,
+      "rank_column": 7,
+      "crossing_diagonal_count": 6,
+      "integer_slack": 90,
+      "alphabet_x": [
+        0,
+        3,
+        5,
+        7
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        4
+      ],
+      "mask": 6,
+      "field": 3
+    },
+    {
+      "rank_row": 28,
+      "rank_column": 25,
+      "crossing_diagonal_count": 23,
+      "integer_slack": 2971,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        4,
+        5
+      ],
+      "alphabet_y": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "mask": 3,
+      "field": 3
+    },
+    {
+      "rank_row": 6,
+      "rank_column": 6,
+      "crossing_diagonal_count": 6,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        2,
+        3,
+        5,
+        6,
+        7
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 12,
+      "rank_column": 12,
+      "crossing_diagonal_count": 12,
+      "integer_slack": 288,
+      "alphabet_x": [
+        1,
+        5,
+        6
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        4,
+        5
+      ],
+      "mask": 2,
+      "field": 3
+    },
+    {
+      "rank_row": 17,
+      "rank_column": 12,
+      "crossing_diagonal_count": 13,
+      "integer_slack": 647,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        4,
+        7
+      ],
+      "alphabet_y": [
+        0,
+        2,
+        5,
+        7
+      ],
+      "mask": 4,
+      "field": 3
+    },
+    {
+      "rank_row": 36,
+      "rank_column": 35,
+      "crossing_diagonal_count": 29,
+      "integer_slack": 6719,
+      "alphabet_x": [
+        0,
+        2,
+        3,
+        5,
+        6,
+        7
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7
+      ],
+      "mask": 7,
+      "field": 3
+    },
+    {
+      "rank_row": 10,
+      "rank_column": 11,
+      "crossing_diagonal_count": 9,
+      "integer_slack": 139,
+      "alphabet_x": [
+        0,
+        6
+      ],
+      "alphabet_y": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "mask": 2,
+      "field": 3
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 3,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 0,
+      "alphabet_x": [
+        6
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        7
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 13,
+      "rank_column": 15,
+      "crossing_diagonal_count": 13,
+      "integer_slack": 416,
+      "alphabet_x": [
+        1,
+        4,
+        7
+      ],
+      "alphabet_y": [
+        0,
+        2,
+        3,
+        5,
+        6,
+        7
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 5,
+      "rank_column": 5,
+      "crossing_diagonal_count": 4,
+      "integer_slack": 34,
+      "alphabet_x": [
+        6,
+        7
+      ],
+      "alphabet_y": [
+        1,
+        2,
+        4,
+        5,
+        7
+      ],
+      "mask": 0,
+      "field": 3
+    },
+    {
+      "rank_row": 7,
+      "rank_column": 6,
+      "crossing_diagonal_count": 6,
+      "integer_slack": 48,
+      "alphabet_x": [
+        0,
+        4
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        4,
+        5,
+        7
+      ],
+      "mask": 0,
+      "field": 3
+    },
+    {
+      "rank_row": 17,
+      "rank_column": 17,
+      "crossing_diagonal_count": 16,
+      "integer_slack": 900,
+      "alphabet_x": [
+        0,
+        4,
+        5,
+        6,
+        7
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        6
+      ],
+      "mask": 0,
+      "field": 3
+    },
+    {
+      "rank_row": 5,
+      "rank_column": 5,
+      "crossing_diagonal_count": 5,
+      "integer_slack": 0,
+      "alphabet_x": [
+        5
+      ],
+      "alphabet_y": [
+        0,
+        2,
+        3,
+        5,
+        6,
+        7
+      ],
+      "mask": 3,
+      "field": 3
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 3,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 0,
+      "alphabet_x": [
+        7
+      ],
+      "alphabet_y": [
+        2,
+        3,
+        5,
+        6,
+        7
+      ],
+      "mask": 6,
+      "field": 3
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 3,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        3,
+        5
+      ],
+      "alphabet_y": [
+        5
+      ],
+      "mask": 4,
+      "field": 3
+    },
+    {
+      "rank_row": 5,
+      "rank_column": 5,
+      "crossing_diagonal_count": 5,
+      "integer_slack": 25,
+      "alphabet_x": [
+        0,
+        2,
+        3,
+        7
+      ],
+      "alphabet_y": [
+        2,
+        4
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 25,
+      "rank_column": 30,
+      "crossing_diagonal_count": 26,
+      "integer_slack": 3074,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        5,
+        6
+      ],
+      "alphabet_y": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "mask": 6,
+      "field": 3
+    },
+    {
+      "rank_row": 7,
+      "rank_column": 7,
+      "crossing_diagonal_count": 7,
+      "integer_slack": 49,
+      "alphabet_x": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "alphabet_y": [
+        3,
+        6
+      ],
+      "mask": 4,
+      "field": 3
+    },
+    {
+      "rank_row": 22,
+      "rank_column": 19,
+      "crossing_diagonal_count": 16,
+      "integer_slack": 1834,
+      "alphabet_x": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7
+      ],
+      "alphabet_y": [
+        0,
+        3,
+        5,
+        6,
+        7
+      ],
+      "mask": 0,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 7,
+      "rank_column": 8,
+      "crossing_diagonal_count": 8,
+      "integer_slack": 48,
+      "alphabet_x": [
+        4,
+        5
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        4,
+        7
+      ],
+      "mask": 3,
+      "field": 3
+    },
+    {
+      "rank_row": 15,
+      "rank_column": 16,
+      "crossing_diagonal_count": 16,
+      "integer_slack": 464,
+      "alphabet_x": [
+        0,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "alphabet_y": [
+        0,
+        2,
+        7
+      ],
+      "mask": 6,
+      "field": 3
+    },
+    {
+      "rank_row": 12,
+      "rank_column": 11,
+      "crossing_diagonal_count": 11,
+      "integer_slack": 275,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        3,
+        6
+      ],
+      "alphabet_y": [
+        0,
+        2,
+        7
+      ],
+      "mask": 3,
+      "field": 3
+    },
+    {
+      "rank_row": 14,
+      "rank_column": 13,
+      "crossing_diagonal_count": 13,
+      "integer_slack": 377,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        3,
+        5
+      ],
+      "alphabet_y": [
+        0,
+        3,
+        4
+      ],
+      "mask": 5,
+      "field": 3
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        4,
+        5
+      ],
+      "mask": 0,
+      "field": 3
+    },
+    {
+      "rank_row": 23,
+      "rank_column": 22,
+      "crossing_diagonal_count": 20,
+      "integer_slack": 2130,
+      "alphabet_x": [
+        0,
+        1,
+        3,
+        4,
+        6
+      ],
+      "alphabet_y": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "mask": 4,
+      "field": 3
+    },
+    {
+      "rank_row": 7,
+      "rank_column": 7,
+      "crossing_diagonal_count": 7,
+      "integer_slack": 49,
+      "alphabet_x": [
+        2,
+        5,
+        6,
+        7
+      ],
+      "alphabet_y": [
+        0,
+        6
+      ],
+      "mask": 3,
+      "field": 3
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 3,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7
+      ],
+      "alphabet_y": [
+        5
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 7,
+      "rank_column": 6,
+      "crossing_diagonal_count": 7,
+      "integer_slack": 35,
+      "alphabet_x": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7
+      ],
+      "alphabet_y": [
+        0,
+        5
+      ],
+      "mask": 0,
+      "field": 3
+    },
+    {
+      "rank_row": 6,
+      "rank_column": 9,
+      "crossing_diagonal_count": 7,
+      "integer_slack": 113,
+      "alphabet_x": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "alphabet_y": [
+        1,
+        5,
+        6
+      ],
+      "mask": 6,
+      "field": 3
+    },
+    {
+      "rank_row": 10,
+      "rank_column": 10,
+      "crossing_diagonal_count": 9,
+      "integer_slack": 219,
+      "alphabet_x": [
+        0,
+        3,
+        5,
+        6,
+        7
+      ],
+      "alphabet_y": [
+        3,
+        5,
+        7
+      ],
+      "mask": 6,
+      "field": 3
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        7
+      ],
+      "alphabet_y": [
+        0,
+        2,
+        6
+      ],
+      "mask": 4,
+      "field": 3
+    },
+    {
+      "rank_row": 5,
+      "rank_column": 5,
+      "crossing_diagonal_count": 5,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 4,
+      "field": 3
+    },
+    {
+      "rank_row": 4,
+      "rank_column": 4,
+      "crossing_diagonal_count": 4,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1,
+        4,
+        5,
+        6
+      ],
+      "alphabet_y": [
+        2
+      ],
+      "mask": 3,
+      "field": 3
+    },
+    {
+      "rank_row": 6,
+      "rank_column": 6,
+      "crossing_diagonal_count": 6,
+      "integer_slack": 36,
+      "alphabet_x": [
+        1,
+        3,
+        5,
+        6,
+        7
+      ],
+      "alphabet_y": [
+        1,
+        4
+      ],
+      "mask": 6,
+      "field": 3
+    },
+    {
+      "rank_row": 15,
+      "rank_column": 16,
+      "crossing_diagonal_count": 16,
+      "integer_slack": 704,
+      "alphabet_x": [
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "alphabet_y": [
+        3,
+        4,
+        6,
+        7
+      ],
+      "mask": 4,
+      "field": 3
+    },
+    {
+      "rank_row": 15,
+      "rank_column": 14,
+      "crossing_diagonal_count": 14,
+      "integer_slack": 434,
+      "alphabet_x": [
+        0,
+        5,
+        7
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        7
+      ],
+      "mask": 5,
+      "field": 3
+    },
+    {
+      "rank_row": 5,
+      "rank_column": 5,
+      "crossing_diagonal_count": 5,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "alphabet_y": [
+        1
+      ],
+      "mask": 5,
+      "field": 3
+    },
+    {
+      "rank_row": 6,
+      "rank_column": 6,
+      "crossing_diagonal_count": 6,
+      "integer_slack": 0,
+      "alphabet_x": [
+        5
+      ],
+      "alphabet_y": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "mask": 3,
+      "field": 3
+    },
+    {
+      "rank_row": 4,
+      "rank_column": 4,
+      "crossing_diagonal_count": 4,
+      "integer_slack": 0,
+      "alphabet_x": [
+        7
+      ],
+      "alphabet_y": [
+        2,
+        5,
+        6,
+        7
+      ],
+      "mask": 2,
+      "field": 3
+    },
+    {
+      "rank_row": 8,
+      "rank_column": 11,
+      "crossing_diagonal_count": 9,
+      "integer_slack": 183,
+      "alphabet_x": [
+        0,
+        2,
+        4,
+        6
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        6
+      ],
+      "mask": 4,
+      "field": 3
+    },
+    {
+      "rank_row": 23,
+      "rank_column": 26,
+      "crossing_diagonal_count": 22,
+      "integer_slack": 2506,
+      "alphabet_x": [
+        0,
+        1,
+        4,
+        5,
+        6
+      ],
+      "alphabet_y": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "mask": 3,
+      "field": 5
+    },
+    {
+      "rank_row": 7,
+      "rank_column": 7,
+      "crossing_diagonal_count": 7,
+      "integer_slack": 49,
+      "alphabet_x": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "alphabet_y": [
+        0,
+        5
+      ],
+      "mask": 1,
+      "field": 5
+    },
+    {
+      "rank_row": 4,
+      "rank_column": 4,
+      "crossing_diagonal_count": 4,
+      "integer_slack": 0,
+      "alphabet_x": [
+        2
+      ],
+      "alphabet_y": [
+        0,
+        3,
+        6,
+        7
+      ],
+      "mask": 3,
+      "field": 5
+    },
+    {
+      "rank_row": 4,
+      "rank_column": 4,
+      "crossing_diagonal_count": 4,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1,
+        2,
+        3,
+        6,
+        7
+      ],
+      "alphabet_y": [
+        7
+      ],
+      "mask": 7,
+      "field": 5
+    },
+    {
+      "rank_row": 9,
+      "rank_column": 9,
+      "crossing_diagonal_count": 9,
+      "integer_slack": 81,
+      "alphabet_x": [
+        0,
+        2,
+        3,
+        5,
+        6
+      ],
+      "alphabet_y": [
+        4,
+        7
+      ],
+      "mask": 4,
+      "field": 5
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        2
+      ],
+      "alphabet_y": [
+        2
+      ],
+      "mask": 4,
+      "field": 5
+    },
+    {
+      "rank_row": 22,
+      "rank_column": 20,
+      "crossing_diagonal_count": 20,
+      "integer_slack": 1360,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        7
+      ],
+      "mask": 5,
+      "field": 5
+    },
+    {
+      "rank_row": 10,
+      "rank_column": 12,
+      "crossing_diagonal_count": 11,
+      "integer_slack": 119,
+      "alphabet_x": [
+        3,
+        6
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "mask": 5,
+      "field": 5
+    },
+    {
+      "rank_row": 5,
+      "rank_column": 5,
+      "crossing_diagonal_count": 5,
+      "integer_slack": 25,
+      "alphabet_x": [
+        4,
+        7
+      ],
+      "alphabet_y": [
+        1,
+        3,
+        6
+      ],
+      "mask": 5,
+      "field": 5
+    },
+    {
+      "rank_row": 6,
+      "rank_column": 6,
+      "crossing_diagonal_count": 6,
+      "integer_slack": 36,
+      "alphabet_x": [
+        1,
+        2,
+        5,
+        7
+      ],
+      "alphabet_y": [
+        4,
+        6
+      ],
+      "mask": 5,
+      "field": 5
+    },
+    {
+      "rank_row": 5,
+      "rank_column": 5,
+      "crossing_diagonal_count": 5,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7
+      ],
+      "mask": 4,
+      "field": 5
+    },
+    {
+      "rank_row": 9,
+      "rank_column": 11,
+      "crossing_diagonal_count": 9,
+      "integer_slack": 117,
+      "alphabet_x": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7
+      ],
+      "alphabet_y": [
+        1,
+        4
+      ],
+      "mask": 1,
+      "field": 5
+    },
+    {
+      "rank_row": 10,
+      "rank_column": 10,
+      "crossing_diagonal_count": 10,
+      "integer_slack": 100,
+      "alphabet_x": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7
+      ],
+      "alphabet_y": [
+        1,
+        2
+      ],
+      "mask": 4,
+      "field": 5
+    },
+    {
+      "rank_row": 4,
+      "rank_column": 4,
+      "crossing_diagonal_count": 4,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        4,
+        7
+      ],
+      "mask": 6,
+      "field": 5
+    },
+    {
+      "rank_row": 30,
+      "rank_column": 27,
+      "crossing_diagonal_count": 24,
+      "integer_slack": 3474,
+      "alphabet_x": [
+        0,
+        2,
+        5,
+        6,
+        7
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "mask": 2,
+      "field": 5
+    },
+    {
+      "rank_row": 11,
+      "rank_column": 11,
+      "crossing_diagonal_count": 11,
+      "integer_slack": 242,
+      "alphabet_x": [
+        0,
+        2,
+        6,
+        7
+      ],
+      "alphabet_y": [
+        1,
+        2,
+        7
+      ],
+      "mask": 4,
+      "field": 5
+    },
+    {
+      "rank_row": 5,
+      "rank_column": 5,
+      "crossing_diagonal_count": 5,
+      "integer_slack": 25,
+      "alphabet_x": [
+        1,
+        4,
+        7
+      ],
+      "alphabet_y": [
+        1,
+        2
+      ],
+      "mask": 4,
+      "field": 5
+    },
+    {
+      "rank_row": 23,
+      "rank_column": 26,
+      "crossing_diagonal_count": 23,
+      "integer_slack": 1863,
+      "alphabet_x": [
+        2,
+        3,
+        6,
+        7
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "mask": 4,
+      "field": 5
+    },
+    {
+      "rank_row": 4,
+      "rank_column": 4,
+      "crossing_diagonal_count": 4,
+      "integer_slack": 16,
+      "alphabet_x": [
+        4,
+        5,
+        7
+      ],
+      "alphabet_y": [
+        0,
+        2
+      ],
+      "mask": 0,
+      "field": 5
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        5
+      ],
+      "alphabet_y": [
+        4
+      ],
+      "mask": 3,
+      "field": 5
+    },
+    {
+      "rank_row": 24,
+      "rank_column": 25,
+      "crossing_diagonal_count": 23,
+      "integer_slack": 2471,
+      "alphabet_x": [
+        0,
+        3,
+        5,
+        6,
+        7
+      ],
+      "alphabet_y": [
+        0,
+        2,
+        3,
+        4,
+        6,
+        7
+      ],
+      "mask": 7,
+      "field": 5
+    },
+    {
+      "rank_row": 12,
+      "rank_column": 13,
+      "crossing_diagonal_count": 12,
+      "integer_slack": 324,
+      "alphabet_x": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "alphabet_y": [
+        3,
+        6,
+        7
+      ],
+      "mask": 5,
+      "field": 5
+    },
+    {
+      "rank_row": 8,
+      "rank_column": 8,
+      "crossing_diagonal_count": 8,
+      "integer_slack": 64,
+      "alphabet_x": [
+        1,
+        2
+      ],
+      "alphabet_y": [
+        2,
+        3,
+        4,
+        6
+      ],
+      "mask": 0,
+      "field": 5
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        4,
+        7
+      ],
+      "alphabet_y": [
+        3
+      ],
+      "mask": 5,
+      "field": 5
+    },
+    {
+      "rank_row": 12,
+      "rank_column": 10,
+      "crossing_diagonal_count": 10,
+      "integer_slack": 260,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        4,
+        5
+      ],
+      "alphabet_y": [
+        0,
+        2,
+        4
+      ],
+      "mask": 4,
+      "field": 5
+    },
+    {
+      "rank_row": 13,
+      "rank_column": 11,
+      "crossing_diagonal_count": 12,
+      "integer_slack": 142,
+      "alphabet_x": [
+        4,
+        6
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "mask": 2,
+      "field": 5
+    },
+    {
+      "rank_row": 5,
+      "rank_column": 5,
+      "crossing_diagonal_count": 5,
+      "integer_slack": 25,
+      "alphabet_x": [
+        3,
+        4
+      ],
+      "alphabet_y": [
+        0,
+        2,
+        6
+      ],
+      "mask": 5,
+      "field": 5
+    },
+    {
+      "rank_row": 4,
+      "rank_column": 4,
+      "crossing_diagonal_count": 4,
+      "integer_slack": 16,
+      "alphabet_x": [
+        1,
+        3,
+        6
+      ],
+      "alphabet_y": [
+        4,
+        5
+      ],
+      "mask": 7,
+      "field": 5
+    },
+    {
+      "rank_row": 4,
+      "rank_column": 4,
+      "crossing_diagonal_count": 4,
+      "integer_slack": 0,
+      "alphabet_x": [
+        3
+      ],
+      "alphabet_y": [
+        2,
+        4,
+        6,
+        7
+      ],
+      "mask": 4,
+      "field": 5
+    },
+    {
+      "rank_row": 11,
+      "rank_column": 11,
+      "crossing_diagonal_count": 11,
+      "integer_slack": 242,
+      "alphabet_x": [
+        0,
+        2,
+        3,
+        6,
+        7
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        4
+      ],
+      "mask": 0,
+      "field": 5
+    },
+    {
+      "rank_row": 4,
+      "rank_column": 4,
+      "crossing_diagonal_count": 4,
+      "integer_slack": 16,
+      "alphabet_x": [
+        0,
+        2,
+        7
+      ],
+      "alphabet_y": [
+        2,
+        3
+      ],
+      "mask": 2,
+      "field": 5
+    },
+    {
+      "rank_row": 4,
+      "rank_column": 4,
+      "crossing_diagonal_count": 4,
+      "integer_slack": 0,
+      "alphabet_x": [
+        5
+      ],
+      "alphabet_y": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "mask": 7,
+      "field": 5
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        6
+      ],
+      "mask": 5,
+      "field": 5
+    },
+    {
+      "rank_row": 7,
+      "rank_column": 7,
+      "crossing_diagonal_count": 6,
+      "integer_slack": 62,
+      "alphabet_x": [
+        6,
+        7
+      ],
+      "alphabet_y": [
+        1,
+        2,
+        4,
+        5,
+        7
+      ],
+      "mask": 7,
+      "field": 5
+    },
+    {
+      "rank_row": 22,
+      "rank_column": 18,
+      "crossing_diagonal_count": 19,
+      "integer_slack": 1223,
+      "alphabet_x": [
+        2,
+        3,
+        4,
+        6
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        3,
+        5,
+        6,
+        7
+      ],
+      "mask": 2,
+      "field": 5
+    },
+    {
+      "rank_row": 10,
+      "rank_column": 11,
+      "crossing_diagonal_count": 10,
+      "integer_slack": 230,
+      "alphabet_x": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "alphabet_y": [
+        0,
+        2,
+        4
+      ],
+      "mask": 1,
+      "field": 5
+    },
+    {
+      "rank_row": 4,
+      "rank_column": 4,
+      "crossing_diagonal_count": 4,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6
+      ],
+      "mask": 1,
+      "field": 5
+    },
+    {
+      "rank_row": 17,
+      "rank_column": 16,
+      "crossing_diagonal_count": 16,
+      "integer_slack": 832,
+      "alphabet_x": [
+        1,
+        3,
+        4,
+        7
+      ],
+      "alphabet_y": [
+        1,
+        2,
+        3,
+        4,
+        7
+      ],
+      "mask": 1,
+      "field": 5
+    },
+    {
+      "rank_row": 19,
+      "rank_column": 19,
+      "crossing_diagonal_count": 19,
+      "integer_slack": 1083,
+      "alphabet_x": [
+        1,
+        2,
+        3,
+        5,
+        7
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        3,
+        5
+      ],
+      "mask": 6,
+      "field": 5
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        2,
+        3
+      ],
+      "alphabet_y": [
+        2
+      ],
+      "mask": 1,
+      "field": 5
+    },
+    {
+      "rank_row": 4,
+      "rank_column": 4,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 23,
+      "alphabet_x": [
+        4,
+        6,
+        7
+      ],
+      "alphabet_y": [
+        2,
+        3
+      ],
+      "mask": 2,
+      "field": 5
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        4
+      ],
+      "alphabet_y": [
+        0,
+        4
+      ],
+      "mask": 7,
+      "field": 5
+    },
+    {
+      "rank_row": 6,
+      "rank_column": 6,
+      "crossing_diagonal_count": 6,
+      "integer_slack": 36,
+      "alphabet_x": [
+        2,
+        3,
+        4
+      ],
+      "alphabet_y": [
+        1,
+        3
+      ],
+      "mask": 4,
+      "field": 5
+    },
+    {
+      "rank_row": 21,
+      "rank_column": 18,
+      "crossing_diagonal_count": 19,
+      "integer_slack": 1151,
+      "alphabet_x": [
+        0,
+        1,
+        6,
+        7
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        3,
+        5,
+        6,
+        7
+      ],
+      "mask": 1,
+      "field": 5
+    },
+    {
+      "rank_row": 17,
+      "rank_column": 17,
+      "crossing_diagonal_count": 14,
+      "integer_slack": 960,
+      "alphabet_x": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "alphabet_y": [
+        1,
+        3,
+        4,
+        5,
+        7
+      ],
+      "mask": 0,
+      "field": 5
+    },
+    {
+      "rank_row": 15,
+      "rank_column": 18,
+      "crossing_diagonal_count": 18,
+      "integer_slack": 756,
+      "alphabet_x": [
+        0,
+        5,
+        6,
+        7
+      ],
+      "alphabet_y": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7
+      ],
+      "mask": 4,
+      "field": 5
+    },
+    {
+      "rank_row": 9,
+      "rank_column": 9,
+      "crossing_diagonal_count": 9,
+      "integer_slack": 81,
+      "alphabet_x": [
+        5,
+        6
+      ],
+      "alphabet_y": [
+        0,
+        2,
+        4,
+        5,
+        6
+      ],
+      "mask": 2,
+      "field": 5
+    },
+    {
+      "rank_row": 13,
+      "rank_column": 13,
+      "crossing_diagonal_count": 12,
+      "integer_slack": 194,
+      "alphabet_x": [
+        3,
+        7
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "mask": 2,
+      "field": 5
+    },
+    {
+      "rank_row": 5,
+      "rank_column": 5,
+      "crossing_diagonal_count": 5,
+      "integer_slack": 0,
+      "alphabet_x": [
+        6
+      ],
+      "alphabet_y": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "mask": 2,
+      "field": 5
+    },
+    {
+      "rank_row": 8,
+      "rank_column": 8,
+      "crossing_diagonal_count": 8,
+      "integer_slack": 128,
+      "alphabet_x": [
+        1,
+        2,
+        6,
+        7
+      ],
+      "alphabet_y": [
+        2,
+        3,
+        5
+      ],
+      "mask": 1,
+      "field": 5
+    },
+    {
+      "rank_row": 16,
+      "rank_column": 16,
+      "crossing_diagonal_count": 16,
+      "integer_slack": 1024,
+      "alphabet_x": [
+        0,
+        3,
+        4,
+        5,
+        7,
+        15
+      ],
+      "alphabet_y": [
+        6,
+        8,
+        10,
+        11,
+        13
+      ],
+      "mask": 1,
+      "field": 2
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 1,
+      "alphabet_x": [
+        7,
+        13
+      ],
+      "alphabet_y": [
+        5,
+        9,
+        11
+      ],
+      "mask": 5,
+      "field": 2
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1,
+        4,
+        6,
+        10,
+        14
+      ],
+      "alphabet_y": [
+        9
+      ],
+      "mask": 1,
+      "field": 2
+    },
+    {
+      "rank_row": 9,
+      "rank_column": 9,
+      "crossing_diagonal_count": 9,
+      "integer_slack": 162,
+      "alphabet_x": [
+        8,
+        12,
+        15
+      ],
+      "alphabet_y": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        14
+      ],
+      "mask": 13,
+      "field": 2
+    },
+    {
+      "rank_row": 6,
+      "rank_column": 6,
+      "crossing_diagonal_count": 7,
+      "integer_slack": 59,
+      "alphabet_x": [
+        4,
+        6,
+        7
+      ],
+      "alphabet_y": [
+        2,
+        3,
+        7,
+        11
+      ],
+      "mask": 8,
+      "field": 2
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 3,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 0,
+      "alphabet_x": [
+        3,
+        6,
+        8,
+        11
+      ],
+      "alphabet_y": [
+        9
+      ],
+      "mask": 9,
+      "field": 2
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        6
+      ],
+      "alphabet_y": [
+        0
+      ],
+      "mask": 11,
+      "field": 2
+    },
+    {
+      "rank_row": 7,
+      "rank_column": 8,
+      "crossing_diagonal_count": 7,
+      "integer_slack": 119,
+      "alphabet_x": [
+        0,
+        3,
+        5,
+        7,
+        10,
+        13
+      ],
+      "alphabet_y": [
+        0,
+        6,
+        13
+      ],
+      "mask": 7,
+      "field": 2
+    },
+    {
+      "rank_row": 11,
+      "rank_column": 11,
+      "crossing_diagonal_count": 11,
+      "integer_slack": 242,
+      "alphabet_x": [
+        0,
+        3,
+        13
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        4,
+        5,
+        8,
+        9,
+        12
+      ],
+      "mask": 13,
+      "field": 2
+    },
+    {
+      "rank_row": 11,
+      "rank_column": 12,
+      "crossing_diagonal_count": 10,
+      "integer_slack": 428,
+      "alphabet_x": [
+        1,
+        3,
+        9,
+        10,
+        15
+      ],
+      "alphabet_y": [
+        3,
+        4,
+        7,
+        15
+      ],
+      "mask": 8,
+      "field": 2
+    },
+    {
+      "rank_row": 21,
+      "rank_column": 23,
+      "crossing_diagonal_count": 20,
+      "integer_slack": 2498,
+      "alphabet_x": [
+        1,
+        2,
+        10,
+        11,
+        12,
+        14
+      ],
+      "alphabet_y": [
+        1,
+        3,
+        5,
+        7,
+        8,
+        11,
+        15
+      ],
+      "mask": 1,
+      "field": 2
+    },
+    {
+      "rank_row": 15,
+      "rank_column": 15,
+      "crossing_diagonal_count": 15,
+      "integer_slack": 675,
+      "alphabet_x": [
+        0,
+        7,
+        9,
+        12
+      ],
+      "alphabet_y": [
+        0,
+        3,
+        4,
+        5,
+        7,
+        10,
+        15
+      ],
+      "mask": 2,
+      "field": 2
+    },
+    {
+      "rank_row": 5,
+      "rank_column": 5,
+      "crossing_diagonal_count": 5,
+      "integer_slack": 25,
+      "alphabet_x": [
+        2,
+        4,
+        9,
+        11,
+        12
+      ],
+      "alphabet_y": [
+        2,
+        3
+      ],
+      "mask": 11,
+      "field": 2
+    },
+    {
+      "rank_row": 8,
+      "rank_column": 8,
+      "crossing_diagonal_count": 8,
+      "integer_slack": 128,
+      "alphabet_x": [
+        4,
+        9,
+        11,
+        14
+      ],
+      "alphabet_y": [
+        1,
+        8,
+        10
+      ],
+      "mask": 9,
+      "field": 2
+    },
+    {
+      "rank_row": 6,
+      "rank_column": 6,
+      "crossing_diagonal_count": 6,
+      "integer_slack": 72,
+      "alphabet_x": [
+        0,
+        1,
+        3,
+        14
+      ],
+      "alphabet_y": [
+        2,
+        9,
+        13
+      ],
+      "mask": 9,
+      "field": 2
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 4,
+      "alphabet_x": [
+        8,
+        13,
+        14
+      ],
+      "alphabet_y": [
+        0,
+        2
+      ],
+      "mask": 3,
+      "field": 2
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        5,
+        6,
+        9,
+        11,
+        12,
+        13
+      ],
+      "alphabet_y": [
+        4
+      ],
+      "mask": 15,
+      "field": 2
+    },
+    {
+      "rank_row": 14,
+      "rank_column": 16,
+      "crossing_diagonal_count": 13,
+      "integer_slack": 951,
+      "alphabet_x": [
+        1,
+        3,
+        4,
+        6,
+        7,
+        11
+      ],
+      "alphabet_y": [
+        3,
+        4,
+        7,
+        9,
+        10
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 7,
+      "rank_column": 10,
+      "crossing_diagonal_count": 8,
+      "integer_slack": 146,
+      "alphabet_x": [
+        0,
+        4,
+        10
+      ],
+      "alphabet_y": [
+        0,
+        4,
+        6,
+        9,
+        15
+      ],
+      "mask": 8,
+      "field": 2
+    },
+    {
+      "rank_row": 11,
+      "rank_column": 12,
+      "crossing_diagonal_count": 9,
+      "integer_slack": 315,
+      "alphabet_x": [
+        9,
+        10,
+        12
+      ],
+      "alphabet_y": [
+        2,
+        4,
+        5,
+        8,
+        9,
+        14,
+        15
+      ],
+      "mask": 10,
+      "field": 2
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 3,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 0,
+      "alphabet_x": [
+        6,
+        11,
+        14
+      ],
+      "alphabet_y": [
+        3
+      ],
+      "mask": 13,
+      "field": 2
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        9,
+        14
+      ],
+      "alphabet_y": [
+        7
+      ],
+      "mask": 15,
+      "field": 2
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 4,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 15,
+      "alphabet_x": [
+        7,
+        9,
+        10
+      ],
+      "alphabet_y": [
+        9,
+        10
+      ],
+      "mask": 7,
+      "field": 2
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 3,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 9,
+      "alphabet_x": [
+        3,
+        12,
+        15
+      ],
+      "alphabet_y": [
+        3,
+        5
+      ],
+      "mask": 10,
+      "field": 2
+    },
+    {
+      "rank_row": 4,
+      "rank_column": 4,
+      "crossing_diagonal_count": 4,
+      "integer_slack": 16,
+      "alphabet_x": [
+        4,
+        8,
+        10,
+        14
+      ],
+      "alphabet_y": [
+        5,
+        12
+      ],
+      "mask": 8,
+      "field": 2
+    },
+    {
+      "rank_row": 5,
+      "rank_column": 5,
+      "crossing_diagonal_count": 5,
+      "integer_slack": 25,
+      "alphabet_x": [
+        1,
+        7,
+        11,
+        12,
+        13
+      ],
+      "alphabet_y": [
+        5,
+        6
+      ],
+      "mask": 4,
+      "field": 2
+    },
+    {
+      "rank_row": 5,
+      "rank_column": 5,
+      "crossing_diagonal_count": 5,
+      "integer_slack": 50,
+      "alphabet_x": [
+        5,
+        6,
+        8,
+        11
+      ],
+      "alphabet_y": [
+        3,
+        4,
+        15
+      ],
+      "mask": 5,
+      "field": 2
+    },
+    {
+      "rank_row": 0,
+      "rank_column": 0,
+      "crossing_diagonal_count": 0,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        0,
+        4,
+        6,
+        9,
+        13
+      ],
+      "mask": 11,
+      "field": 2
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 3,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 0,
+      "alphabet_x": [
+        10
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        3,
+        12,
+        13
+      ],
+      "mask": 11,
+      "field": 2
+    },
+    {
+      "rank_row": 10,
+      "rank_column": 10,
+      "crossing_diagonal_count": 10,
+      "integer_slack": 300,
+      "alphabet_x": [
+        4,
+        8,
+        11,
+        15
+      ],
+      "alphabet_y": [
+        3,
+        7,
+        11,
+        12,
+        15
+      ],
+      "mask": 14,
+      "field": 2
+    },
+    {
+      "rank_row": 14,
+      "rank_column": 16,
+      "crossing_diagonal_count": 15,
+      "integer_slack": 447,
+      "alphabet_x": [
+        5,
+        7,
+        12
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        6,
+        7,
+        8,
+        10,
+        11
+      ],
+      "mask": 11,
+      "field": 2
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        7,
+        15
+      ],
+      "alphabet_y": [
+        7
+      ],
+      "mask": 11,
+      "field": 2
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        4
+      ],
+      "alphabet_y": [
+        10,
+        12,
+        13
+      ],
+      "mask": 10,
+      "field": 2
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 3,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 0,
+      "alphabet_x": [
+        2,
+        3,
+        13
+      ],
+      "alphabet_y": [
+        2
+      ],
+      "mask": 10,
+      "field": 2
+    },
+    {
+      "rank_row": 14,
+      "rank_column": 15,
+      "crossing_diagonal_count": 14,
+      "integer_slack": 644,
+      "alphabet_x": [
+        3,
+        9,
+        14,
+        15
+      ],
+      "alphabet_y": [
+        0,
+        3,
+        5,
+        6,
+        7,
+        12,
+        15
+      ],
+      "mask": 8,
+      "field": 2
+    },
+    {
+      "rank_row": 4,
+      "rank_column": 4,
+      "crossing_diagonal_count": 4,
+      "integer_slack": 16,
+      "alphabet_x": [
+        0,
+        1,
+        5
+      ],
+      "alphabet_y": [
+        7,
+        12
+      ],
+      "mask": 13,
+      "field": 2
+    },
+    {
+      "rank_row": 12,
+      "rank_column": 12,
+      "crossing_diagonal_count": 12,
+      "integer_slack": 576,
+      "alphabet_x": [
+        5,
+        7,
+        8,
+        13,
+        14,
+        15
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        7,
+        11,
+        14
+      ],
+      "mask": 13,
+      "field": 2
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        8
+      ],
+      "alphabet_y": [
+        1,
+        13
+      ],
+      "mask": 14,
+      "field": 2
+    },
+    {
+      "rank_row": 16,
+      "rank_column": 16,
+      "crossing_diagonal_count": 15,
+      "integer_slack": 1055,
+      "alphabet_x": [
+        1,
+        5,
+        6,
+        10,
+        13,
+        15
+      ],
+      "alphabet_y": [
+        2,
+        8,
+        9,
+        13,
+        15
+      ],
+      "mask": 7,
+      "field": 2
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 3,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 0,
+      "alphabet_x": [
+        12
+      ],
+      "alphabet_y": [
+        6,
+        8,
+        10,
+        14
+      ],
+      "mask": 7,
+      "field": 2
+    },
+    {
+      "rank_row": 4,
+      "rank_column": 5,
+      "crossing_diagonal_count": 4,
+      "integer_slack": 44,
+      "alphabet_x": [
+        1,
+        7,
+        8
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        5,
+        6,
+        14,
+        15
+      ],
+      "mask": 10,
+      "field": 2
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        6,
+        11
+      ],
+      "alphabet_y": [
+        13
+      ],
+      "mask": 1,
+      "field": 2
+    },
+    {
+      "rank_row": 4,
+      "rank_column": 4,
+      "crossing_diagonal_count": 4,
+      "integer_slack": 16,
+      "alphabet_x": [
+        0,
+        5
+      ],
+      "alphabet_y": [
+        2,
+        5,
+        8,
+        15
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 12,
+      "rank_column": 12,
+      "crossing_diagonal_count": 11,
+      "integer_slack": 455,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        9,
+        12,
+        13
+      ],
+      "alphabet_y": [
+        1,
+        2,
+        5,
+        13
+      ],
+      "mask": 13,
+      "field": 2
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 3,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 9,
+      "alphabet_x": [
+        0,
+        1,
+        9
+      ],
+      "alphabet_y": [
+        3,
+        5
+      ],
+      "mask": 3,
+      "field": 2
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        13
+      ],
+      "alphabet_y": [
+        10,
+        14
+      ],
+      "mask": 12,
+      "field": 2
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        2,
+        8,
+        11,
+        12,
+        15
+      ],
+      "alphabet_y": [
+        6
+      ],
+      "mask": 1,
+      "field": 2
+    },
+    {
+      "rank_row": 5,
+      "rank_column": 6,
+      "crossing_diagonal_count": 5,
+      "integer_slack": 65,
+      "alphabet_x": [
+        10,
+        11,
+        13,
+        15
+      ],
+      "alphabet_y": [
+        6,
+        11,
+        15
+      ],
+      "mask": 5,
+      "field": 2
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 4,
+      "alphabet_x": [
+        4,
+        6,
+        14
+      ],
+      "alphabet_y": [
+        4,
+        9
+      ],
+      "mask": 3,
+      "field": 2
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        7,
+        11,
+        15
+      ],
+      "alphabet_y": [
+        8
+      ],
+      "mask": 0,
+      "field": 2
+    },
+    {
+      "rank_row": 29,
+      "rank_column": 29,
+      "crossing_diagonal_count": 26,
+      "integer_slack": 4370,
+      "alphabet_x": [
+        2,
+        6,
+        7,
+        9,
+        11,
+        14
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        3,
+        9,
+        13,
+        14,
+        15
+      ],
+      "mask": 6,
+      "field": 3
+    },
+    {
+      "rank_row": 29,
+      "rank_column": 27,
+      "crossing_diagonal_count": 25,
+      "integer_slack": 4073,
+      "alphabet_x": [
+        0,
+        3,
+        4,
+        7,
+        12,
+        13
+      ],
+      "alphabet_y": [
+        0,
+        5,
+        7,
+        10,
+        11,
+        13,
+        15
+      ],
+      "mask": 12,
+      "field": 3
+    },
+    {
+      "rank_row": 11,
+      "rank_column": 11,
+      "crossing_diagonal_count": 11,
+      "integer_slack": 121,
+      "alphabet_x": [
+        3,
+        6
+      ],
+      "alphabet_y": [
+        1,
+        7,
+        9,
+        11,
+        12,
+        13
+      ],
+      "mask": 9,
+      "field": 3
+    },
+    {
+      "rank_row": 10,
+      "rank_column": 10,
+      "crossing_diagonal_count": 10,
+      "integer_slack": 200,
+      "alphabet_x": [
+        1,
+        5,
+        6,
+        13
+      ],
+      "alphabet_y": [
+        3,
+        14,
+        15
+      ],
+      "mask": 6,
+      "field": 3
+    },
+    {
+      "rank_row": 13,
+      "rank_column": 13,
+      "crossing_diagonal_count": 12,
+      "integer_slack": 363,
+      "alphabet_x": [
+        6,
+        10,
+        15
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        3,
+        4,
+        8,
+        12,
+        14
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 22,
+      "rank_column": 22,
+      "crossing_diagonal_count": 22,
+      "integer_slack": 1936,
+      "alphabet_x": [
+        4,
+        6,
+        9,
+        13,
+        15
+      ],
+      "alphabet_y": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        8
+      ],
+      "mask": 0,
+      "field": 3
+    },
+    {
+      "rank_row": 16,
+      "rank_column": 16,
+      "crossing_diagonal_count": 15,
+      "integer_slack": 799,
+      "alphabet_x": [
+        2,
+        5,
+        11,
+        14
+      ],
+      "alphabet_y": [
+        1,
+        4,
+        11,
+        14,
+        15
+      ],
+      "mask": 7,
+      "field": 3
+    },
+    {
+      "rank_row": 27,
+      "rank_column": 28,
+      "crossing_diagonal_count": 26,
+      "integer_slack": 3104,
+      "alphabet_x": [
+        3,
+        4,
+        5,
+        8,
+        14
+      ],
+      "alphabet_y": [
+        1,
+        2,
+        3,
+        5,
+        9,
+        10,
+        15
+      ],
+      "mask": 14,
+      "field": 3
+    },
+    {
+      "rank_row": 4,
+      "rank_column": 4,
+      "crossing_diagonal_count": 4,
+      "integer_slack": 16,
+      "alphabet_x": [
+        0,
+        4,
+        10
+      ],
+      "alphabet_y": [
+        7,
+        8
+      ],
+      "mask": 3,
+      "field": 3
+    },
+    {
+      "rank_row": 14,
+      "rank_column": 14,
+      "crossing_diagonal_count": 14,
+      "integer_slack": 588,
+      "alphabet_x": [
+        0,
+        2,
+        5,
+        9,
+        10
+      ],
+      "alphabet_y": [
+        0,
+        11,
+        12,
+        14
+      ],
+      "mask": 14,
+      "field": 3
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 3,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 9,
+      "alphabet_x": [
+        1,
+        6
+      ],
+      "alphabet_y": [
+        4,
+        10,
+        11
+      ],
+      "mask": 11,
+      "field": 3
+    },
+    {
+      "rank_row": 15,
+      "rank_column": 15,
+      "crossing_diagonal_count": 15,
+      "integer_slack": 675,
+      "alphabet_x": [
+        0,
+        6,
+        7,
+        10,
+        14
+      ],
+      "alphabet_y": [
+        1,
+        8,
+        13,
+        15
+      ],
+      "mask": 13,
+      "field": 3
+    },
+    {
+      "rank_row": 4,
+      "rank_column": 4,
+      "crossing_diagonal_count": 4,
+      "integer_slack": 0,
+      "alphabet_x": [
+        3,
+        4,
+        14,
+        15
+      ],
+      "alphabet_y": [
+        10
+      ],
+      "mask": 9,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        4,
+        6,
+        10
+      ],
+      "alphabet_y": [
+        3
+      ],
+      "mask": 0,
+      "field": 3
+    },
+    {
+      "rank_row": 6,
+      "rank_column": 6,
+      "crossing_diagonal_count": 6,
+      "integer_slack": 0,
+      "alphabet_x": [
+        13
+      ],
+      "alphabet_y": [
+        1,
+        3,
+        7,
+        8,
+        10,
+        11,
+        15
+      ],
+      "mask": 8,
+      "field": 3
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        2,
+        4,
+        6,
+        12,
+        13
+      ],
+      "alphabet_y": [
+        15
+      ],
+      "mask": 11,
+      "field": 3
+    },
+    {
+      "rank_row": 4,
+      "rank_column": 4,
+      "crossing_diagonal_count": 4,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1,
+        8,
+        9,
+        13,
+        15
+      ],
+      "alphabet_y": [
+        5
+      ],
+      "mask": 0,
+      "field": 3
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        8
+      ],
+      "alphabet_y": [
+        8,
+        15
+      ],
+      "mask": 10,
+      "field": 3
+    },
+    {
+      "rank_row": 4,
+      "rank_column": 4,
+      "crossing_diagonal_count": 4,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        1,
+        3,
+        6,
+        8,
+        10,
+        11
+      ],
+      "mask": 9,
+      "field": 3
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        10,
+        11
+      ],
+      "mask": 4,
+      "field": 3
+    },
+    {
+      "rank_row": 6,
+      "rank_column": 6,
+      "crossing_diagonal_count": 6,
+      "integer_slack": 36,
+      "alphabet_x": [
+        2,
+        9
+      ],
+      "alphabet_y": [
+        6,
+        8,
+        12
+      ],
+      "mask": 2,
+      "field": 3
+    },
+    {
+      "rank_row": 8,
+      "rank_column": 8,
+      "crossing_diagonal_count": 8,
+      "integer_slack": 64,
+      "alphabet_x": [
+        1,
+        4,
+        5,
+        11,
+        13
+      ],
+      "alphabet_y": [
+        10,
+        15
+      ],
+      "mask": 4,
+      "field": 3
+    },
+    {
+      "rank_row": 5,
+      "rank_column": 5,
+      "crossing_diagonal_count": 5,
+      "integer_slack": 25,
+      "alphabet_x": [
+        7,
+        11
+      ],
+      "alphabet_y": [
+        6,
+        7,
+        12,
+        14
+      ],
+      "mask": 0,
+      "field": 3
+    },
+    {
+      "rank_row": 7,
+      "rank_column": 7,
+      "crossing_diagonal_count": 7,
+      "integer_slack": 98,
+      "alphabet_x": [
+        11,
+        13,
+        14
+      ],
+      "alphabet_y": [
+        1,
+        2,
+        4,
+        5,
+        9
+      ],
+      "mask": 11,
+      "field": 3
+    },
+    {
+      "rank_row": 23,
+      "rank_column": 23,
+      "crossing_diagonal_count": 21,
+      "integer_slack": 2204,
+      "alphabet_x": [
+        1,
+        4,
+        5,
+        10,
+        14,
+        15
+      ],
+      "alphabet_y": [
+        0,
+        2,
+        4,
+        9,
+        12
+      ],
+      "mask": 13,
+      "field": 3
+    },
+    {
+      "rank_row": 12,
+      "rank_column": 12,
+      "crossing_diagonal_count": 12,
+      "integer_slack": 288,
+      "alphabet_x": [
+        3,
+        4,
+        5,
+        13,
+        14
+      ],
+      "alphabet_y": [
+        2,
+        5,
+        14
+      ],
+      "mask": 8,
+      "field": 3
+    },
+    {
+      "rank_row": 13,
+      "rank_column": 12,
+      "crossing_diagonal_count": 11,
+      "integer_slack": 347,
+      "alphabet_x": [
+        3,
+        4,
+        9
+      ],
+      "alphabet_y": [
+        2,
+        4,
+        6,
+        11,
+        12
+      ],
+      "mask": 11,
+      "field": 3
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 3,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1,
+        12,
+        15
+      ],
+      "alphabet_y": [
+        7
+      ],
+      "mask": 12,
+      "field": 3
+    },
+    {
+      "rank_row": 28,
+      "rank_column": 27,
+      "crossing_diagonal_count": 27,
+      "integer_slack": 3051,
+      "alphabet_x": [
+        0,
+        9,
+        11,
+        13,
+        15
+      ],
+      "alphabet_y": [
+        3,
+        4,
+        5,
+        7,
+        9,
+        12,
+        13
+      ],
+      "mask": 13,
+      "field": 3
+    },
+    {
+      "rank_row": 7,
+      "rank_column": 7,
+      "crossing_diagonal_count": 7,
+      "integer_slack": 98,
+      "alphabet_x": [
+        2,
+        4,
+        8
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        4,
+        10
+      ],
+      "mask": 9,
+      "field": 3
+    },
+    {
+      "rank_row": 17,
+      "rank_column": 15,
+      "crossing_diagonal_count": 12,
+      "integer_slack": 1131,
+      "alphabet_x": [
+        3,
+        4,
+        7,
+        8,
+        11,
+        15
+      ],
+      "alphabet_y": [
+        2,
+        4,
+        8,
+        10,
+        15
+      ],
+      "mask": 14,
+      "field": 3
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 3,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 0,
+      "alphabet_x": [
+        2,
+        4,
+        5,
+        12
+      ],
+      "alphabet_y": [
+        9
+      ],
+      "mask": 3,
+      "field": 3
+    },
+    {
+      "rank_row": 25,
+      "rank_column": 21,
+      "crossing_diagonal_count": 21,
+      "integer_slack": 2184,
+      "alphabet_x": [
+        7,
+        9,
+        10,
+        13,
+        15
+      ],
+      "alphabet_y": [
+        2,
+        7,
+        8,
+        10,
+        11,
+        13,
+        14
+      ],
+      "mask": 13,
+      "field": 3
+    },
+    {
+      "rank_row": 14,
+      "rank_column": 14,
+      "crossing_diagonal_count": 14,
+      "integer_slack": 392,
+      "alphabet_x": [
+        2,
+        4,
+        6,
+        7,
+        9,
+        15
+      ],
+      "alphabet_y": [
+        5,
+        8,
+        10
+      ],
+      "mask": 6,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1,
+        9,
+        10
+      ],
+      "alphabet_y": [
+        14
+      ],
+      "mask": 2,
+      "field": 3
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 3,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 9,
+      "alphabet_x": [
+        5,
+        7,
+        13
+      ],
+      "alphabet_y": [
+        0,
+        15
+      ],
+      "mask": 7,
+      "field": 3
+    },
+    {
+      "rank_row": 8,
+      "rank_column": 8,
+      "crossing_diagonal_count": 8,
+      "integer_slack": 128,
+      "alphabet_x": [
+        2,
+        5,
+        14,
+        15
+      ],
+      "alphabet_y": [
+        7,
+        10,
+        15
+      ],
+      "mask": 13,
+      "field": 3
+    },
+    {
+      "rank_row": 5,
+      "rank_column": 5,
+      "crossing_diagonal_count": 5,
+      "integer_slack": 25,
+      "alphabet_x": [
+        4,
+        5,
+        6,
+        8
+      ],
+      "alphabet_y": [
+        2,
+        11
+      ],
+      "mask": 10,
+      "field": 3
+    },
+    {
+      "rank_row": 14,
+      "rank_column": 13,
+      "crossing_diagonal_count": 12,
+      "integer_slack": 584,
+      "alphabet_x": [
+        0,
+        1,
+        4,
+        7,
+        8
+      ],
+      "alphabet_y": [
+        2,
+        3,
+        5,
+        15
+      ],
+      "mask": 3,
+      "field": 3
+    },
+    {
+      "rank_row": 11,
+      "rank_column": 11,
+      "crossing_diagonal_count": 11,
+      "integer_slack": 121,
+      "alphabet_x": [
+        4,
+        15
+      ],
+      "alphabet_y": [
+        0,
+        6,
+        7,
+        8,
+        9,
+        10,
+        14
+      ],
+      "mask": 0,
+      "field": 3
+    },
+    {
+      "rank_row": 0,
+      "rank_column": 0,
+      "crossing_diagonal_count": 0,
+      "integer_slack": 0,
+      "alphabet_x": [
+        15
+      ],
+      "alphabet_y": [
+        2,
+        3
+      ],
+      "mask": 11,
+      "field": 3
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 3,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 9,
+      "alphabet_x": [
+        2,
+        9,
+        10,
+        11
+      ],
+      "alphabet_y": [
+        6,
+        15
+      ],
+      "mask": 2,
+      "field": 3
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        10,
+        15
+      ],
+      "alphabet_y": [
+        7
+      ],
+      "mask": 3,
+      "field": 3
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        8
+      ],
+      "alphabet_y": [
+        9,
+        10
+      ],
+      "mask": 7,
+      "field": 3
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        10,
+        13
+      ],
+      "alphabet_y": [
+        4
+      ],
+      "mask": 14,
+      "field": 3
+    },
+    {
+      "rank_row": 5,
+      "rank_column": 5,
+      "crossing_diagonal_count": 5,
+      "integer_slack": 50,
+      "alphabet_x": [
+        0,
+        11,
+        12
+      ],
+      "alphabet_y": [
+        1,
+        5,
+        8,
+        10
+      ],
+      "mask": 4,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        13
+      ],
+      "alphabet_y": [
+        6,
+        14
+      ],
+      "mask": 3,
+      "field": 3
+    },
+    {
+      "rank_row": 10,
+      "rank_column": 8,
+      "crossing_diagonal_count": 9,
+      "integer_slack": 79,
+      "alphabet_x": [
+        6,
+        14
+      ],
+      "alphabet_y": [
+        4,
+        5,
+        6,
+        7,
+        13,
+        14
+      ],
+      "mask": 6,
+      "field": 3
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        3,
+        6,
+        10
+      ],
+      "alphabet_y": [
+        0
+      ],
+      "mask": 11,
+      "field": 3
+    },
+    {
+      "rank_row": 11,
+      "rank_column": 11,
+      "crossing_diagonal_count": 11,
+      "integer_slack": 242,
+      "alphabet_x": [
+        1,
+        5,
+        6,
+        8,
+        12,
+        15
+      ],
+      "alphabet_y": [
+        5,
+        8,
+        14
+      ],
+      "mask": 1,
+      "field": 3
+    },
+    {
+      "rank_row": 34,
+      "rank_column": 37,
+      "crossing_diagonal_count": 34,
+      "integer_slack": 6392,
+      "alphabet_x": [
+        1,
+        2,
+        4,
+        5,
+        9,
+        14
+      ],
+      "alphabet_y": [
+        2,
+        5,
+        7,
+        9,
+        10,
+        11,
+        14
+      ],
+      "mask": 6,
+      "field": 5
+    },
+    {
+      "rank_row": 11,
+      "rank_column": 12,
+      "crossing_diagonal_count": 11,
+      "integer_slack": 275,
+      "alphabet_x": [
+        0,
+        3,
+        6,
+        10
+      ],
+      "alphabet_y": [
+        1,
+        6,
+        13
+      ],
+      "mask": 5,
+      "field": 5
+    },
+    {
+      "rank_row": 9,
+      "rank_column": 9,
+      "crossing_diagonal_count": 9,
+      "integer_slack": 81,
+      "alphabet_x": [
+        2,
+        8
+      ],
+      "alphabet_y": [
+        0,
+        3,
+        8,
+        11,
+        12
+      ],
+      "mask": 7,
+      "field": 5
+    },
+    {
+      "rank_row": 1,
+      "rank_column": 1,
+      "crossing_diagonal_count": 1,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0,
+        11
+      ],
+      "alphabet_y": [
+        4
+      ],
+      "mask": 9,
+      "field": 5
+    },
+    {
+      "rank_row": 5,
+      "rank_column": 5,
+      "crossing_diagonal_count": 5,
+      "integer_slack": 0,
+      "alphabet_x": [
+        14
+      ],
+      "alphabet_y": [
+        0,
+        3,
+        6,
+        7,
+        8,
+        15
+      ],
+      "mask": 13,
+      "field": 5
+    },
+    {
+      "rank_row": 27,
+      "rank_column": 25,
+      "crossing_diagonal_count": 25,
+      "integer_slack": 2750,
+      "alphabet_x": [
+        5,
+        6,
+        7,
+        8,
+        11,
+        13
+      ],
+      "alphabet_y": [
+        1,
+        4,
+        11,
+        13,
+        14
+      ],
+      "mask": 10,
+      "field": 5
+    },
+    {
+      "rank_row": 5,
+      "rank_column": 5,
+      "crossing_diagonal_count": 5,
+      "integer_slack": 25,
+      "alphabet_x": [
+        3,
+        15
+      ],
+      "alphabet_y": [
+        3,
+        8,
+        10
+      ],
+      "mask": 4,
+      "field": 5
+    },
+    {
+      "rank_row": 26,
+      "rank_column": 31,
+      "crossing_diagonal_count": 26,
+      "integer_slack": 3354,
+      "alphabet_x": [
+        2,
+        5,
+        6,
+        11,
+        12
+      ],
+      "alphabet_y": [
+        1,
+        2,
+        4,
+        7,
+        9,
+        10,
+        13
+      ],
+      "mask": 15,
+      "field": 5
+    },
+    {
+      "rank_row": 7,
+      "rank_column": 7,
+      "crossing_diagonal_count": 7,
+      "integer_slack": 49,
+      "alphabet_x": [
+        7,
+        10,
+        12,
+        13
+      ],
+      "alphabet_y": [
+        9,
+        12
+      ],
+      "mask": 15,
+      "field": 5
+    },
+    {
+      "rank_row": 9,
+      "rank_column": 9,
+      "crossing_diagonal_count": 8,
+      "integer_slack": 179,
+      "alphabet_x": [
+        3,
+        12,
+        13,
+        14
+      ],
+      "alphabet_y": [
+        0,
+        5,
+        13
+      ],
+      "mask": 14,
+      "field": 5
+    },
+    {
+      "rank_row": 9,
+      "rank_column": 9,
+      "crossing_diagonal_count": 9,
+      "integer_slack": 81,
+      "alphabet_x": [
+        7,
+        13
+      ],
+      "alphabet_y": [
+        0,
+        2,
+        3,
+        6,
+        8,
+        14
+      ],
+      "mask": 5,
+      "field": 5
+    },
+    {
+      "rank_row": 13,
+      "rank_column": 11,
+      "crossing_diagonal_count": 12,
+      "integer_slack": 285,
+      "alphabet_x": [
+        7,
+        9,
+        13
+      ],
+      "alphabet_y": [
+        8,
+        10,
+        12,
+        13,
+        15
+      ],
+      "mask": 3,
+      "field": 5
+    },
+    {
+      "rank_row": 7,
+      "rank_column": 7,
+      "crossing_diagonal_count": 7,
+      "integer_slack": 49,
+      "alphabet_x": [
+        6,
+        7,
+        9,
+        10,
+        12,
+        15
+      ],
+      "alphabet_y": [
+        4,
+        15
+      ],
+      "mask": 14,
+      "field": 5
+    },
+    {
+      "rank_row": 6,
+      "rank_column": 6,
+      "crossing_diagonal_count": 6,
+      "integer_slack": 36,
+      "alphabet_x": [
+        1,
+        3,
+        4,
+        8
+      ],
+      "alphabet_y": [
+        2,
+        12
+      ],
+      "mask": 10,
+      "field": 5
+    },
+    {
+      "rank_row": 11,
+      "rank_column": 9,
+      "crossing_diagonal_count": 10,
+      "integer_slack": 98,
+      "alphabet_x": [
+        0,
+        1,
+        3,
+        4,
+        8,
+        12
+      ],
+      "alphabet_y": [
+        7,
+        15
+      ],
+      "mask": 15,
+      "field": 5
+    },
+    {
+      "rank_row": 15,
+      "rank_column": 15,
+      "crossing_diagonal_count": 15,
+      "integer_slack": 450,
+      "alphabet_x": [
+        2,
+        5,
+        7
+      ],
+      "alphabet_y": [
+        3,
+        6,
+        8,
+        10,
+        11,
+        12
+      ],
+      "mask": 10,
+      "field": 5
+    },
+    {
+      "rank_row": 11,
+      "rank_column": 11,
+      "crossing_diagonal_count": 11,
+      "integer_slack": 121,
+      "alphabet_x": [
+        0,
+        5,
+        6,
+        7,
+        10,
+        11
+      ],
+      "alphabet_y": [
+        6,
+        8
+      ],
+      "mask": 12,
+      "field": 5
+    },
+    {
+      "rank_row": 21,
+      "rank_column": 21,
+      "crossing_diagonal_count": 21,
+      "integer_slack": 1323,
+      "alphabet_x": [
+        0,
+        4,
+        5,
+        7,
+        9,
+        15
+      ],
+      "alphabet_y": [
+        5,
+        6,
+        8,
+        9
+      ],
+      "mask": 8,
+      "field": 5
+    },
+    {
+      "rank_row": 6,
+      "rank_column": 6,
+      "crossing_diagonal_count": 6,
+      "integer_slack": 0,
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        2,
+        3,
+        5,
+        10,
+        11,
+        12,
+        13
+      ],
+      "mask": 10,
+      "field": 5
+    },
+    {
+      "rank_row": 21,
+      "rank_column": 23,
+      "crossing_diagonal_count": 21,
+      "integer_slack": 1491,
+      "alphabet_x": [
+        2,
+        3,
+        13,
+        15
+      ],
+      "alphabet_y": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        9
+      ],
+      "mask": 3,
+      "field": 5
+    },
+    {
+      "rank_row": 24,
+      "rank_column": 25,
+      "crossing_diagonal_count": 22,
+      "integer_slack": 2516,
+      "alphabet_x": [
+        0,
+        3,
+        9,
+        11,
+        13,
+        15
+      ],
+      "alphabet_y": [
+        0,
+        4,
+        8,
+        10,
+        15
+      ],
+      "mask": 2,
+      "field": 5
+    },
+    {
+      "rank_row": 10,
+      "rank_column": 10,
+      "crossing_diagonal_count": 10,
+      "integer_slack": 200,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        7,
+        13
+      ],
+      "alphabet_y": [
+        0,
+        3,
+        14
+      ],
+      "mask": 6,
+      "field": 5
+    },
+    {
+      "rank_row": 10,
+      "rank_column": 10,
+      "crossing_diagonal_count": 10,
+      "integer_slack": 100,
+      "alphabet_x": [
+        1,
+        3,
+        8,
+        10,
+        13
+      ],
+      "alphabet_y": [
+        1,
+        5
+      ],
+      "mask": 9,
+      "field": 5
+    },
+    {
+      "rank_row": 12,
+      "rank_column": 12,
+      "crossing_diagonal_count": 13,
+      "integer_slack": 263,
+      "alphabet_x": [
+        1,
+        3,
+        15
+      ],
+      "alphabet_y": [
+        0,
+        2,
+        4,
+        13,
+        15
+      ],
+      "mask": 2,
+      "field": 5
+    },
+    {
+      "rank_row": 9,
+      "rank_column": 9,
+      "crossing_diagonal_count": 9,
+      "integer_slack": 162,
+      "alphabet_x": [
+        0,
+        5,
+        11
+      ],
+      "alphabet_y": [
+        4,
+        10,
+        12,
+        14
+      ],
+      "mask": 9,
+      "field": 5
+    },
+    {
+      "rank_row": 24,
+      "rank_column": 23,
+      "crossing_diagonal_count": 22,
+      "integer_slack": 2276,
+      "alphabet_x": [
+        1,
+        10,
+        13,
+        14,
+        15
+      ],
+      "alphabet_y": [
+        1,
+        4,
+        8,
+        10,
+        11,
+        12
+      ],
+      "mask": 0,
+      "field": 5
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 3,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1
+      ],
+      "alphabet_y": [
+        1,
+        5,
+        8,
+        10,
+        11,
+        12,
+        15
+      ],
+      "mask": 1,
+      "field": 5
+    },
+    {
+      "rank_row": 27,
+      "rank_column": 28,
+      "crossing_diagonal_count": 27,
+      "integer_slack": 3051,
+      "alphabet_x": [
+        3,
+        4,
+        6,
+        9,
+        10,
+        14
+      ],
+      "alphabet_y": [
+        0,
+        3,
+        5,
+        7,
+        8
+      ],
+      "mask": 13,
+      "field": 5
+    },
+    {
+      "rank_row": 6,
+      "rank_column": 6,
+      "crossing_diagonal_count": 6,
+      "integer_slack": 36,
+      "alphabet_x": [
+        1,
+        2,
+        11,
+        12
+      ],
+      "alphabet_y": [
+        13,
+        15
+      ],
+      "mask": 1,
+      "field": 5
+    },
+    {
+      "rank_row": 16,
+      "rank_column": 17,
+      "crossing_diagonal_count": 17,
+      "integer_slack": 799,
+      "alphabet_x": [
+        0,
+        3,
+        10,
+        12,
+        15
+      ],
+      "alphabet_y": [
+        4,
+        7,
+        8,
+        15
+      ],
+      "mask": 5,
+      "field": 5
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 3,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 0,
+      "alphabet_x": [
+        10
+      ],
+      "alphabet_y": [
+        2,
+        11,
+        12
+      ],
+      "mask": 6,
+      "field": 5
+    },
+    {
+      "rank_row": 7,
+      "rank_column": 7,
+      "crossing_diagonal_count": 7,
+      "integer_slack": 49,
+      "alphabet_x": [
+        5,
+        6
+      ],
+      "alphabet_y": [
+        5,
+        6,
+        11,
+        12,
+        13
+      ],
+      "mask": 2,
+      "field": 5
+    },
+    {
+      "rank_row": 9,
+      "rank_column": 9,
+      "crossing_diagonal_count": 9,
+      "integer_slack": 162,
+      "alphabet_x": [
+        3,
+        5,
+        12,
+        14
+      ],
+      "alphabet_y": [
+        7,
+        8,
+        13
+      ],
+      "mask": 12,
+      "field": 5
+    },
+    {
+      "rank_row": 5,
+      "rank_column": 5,
+      "crossing_diagonal_count": 5,
+      "integer_slack": 25,
+      "alphabet_x": [
+        10,
+        12
+      ],
+      "alphabet_y": [
+        2,
+        5,
+        10
+      ],
+      "mask": 3,
+      "field": 5
+    },
+    {
+      "rank_row": 6,
+      "rank_column": 6,
+      "crossing_diagonal_count": 6,
+      "integer_slack": 0,
+      "alphabet_x": [
+        1,
+        3,
+        6,
+        9,
+        11,
+        13
+      ],
+      "alphabet_y": [
+        10
+      ],
+      "mask": 6,
+      "field": 5
+    },
+    {
+      "rank_row": 8,
+      "rank_column": 8,
+      "crossing_diagonal_count": 8,
+      "integer_slack": 64,
+      "alphabet_x": [
+        2,
+        4,
+        10,
+        14,
+        15
+      ],
+      "alphabet_y": [
+        8,
+        15
+      ],
+      "mask": 9,
+      "field": 5
+    },
+    {
+      "rank_row": 21,
+      "rank_column": 22,
+      "crossing_diagonal_count": 19,
+      "integer_slack": 1949,
+      "alphabet_x": [
+        0,
+        1,
+        3,
+        7,
+        10,
+        15
+      ],
+      "alphabet_y": [
+        7,
+        9,
+        12,
+        14,
+        15
+      ],
+      "mask": 12,
+      "field": 5
+    },
+    {
+      "rank_row": 28,
+      "rank_column": 22,
+      "crossing_diagonal_count": 23,
+      "integer_slack": 2551,
+      "alphabet_x": [
+        6,
+        7,
+        10,
+        11,
+        13,
+        14
+      ],
+      "alphabet_y": [
+        1,
+        3,
+        4,
+        5,
+        7
+      ],
+      "mask": 15,
+      "field": 5
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        2,
+        7
+      ],
+      "alphabet_y": [
+        13
+      ],
+      "mask": 11,
+      "field": 5
+    },
+    {
+      "rank_row": 10,
+      "rank_column": 10,
+      "crossing_diagonal_count": 10,
+      "integer_slack": 200,
+      "alphabet_x": [
+        1,
+        7,
+        8,
+        9
+      ],
+      "alphabet_y": [
+        1,
+        2,
+        13
+      ],
+      "mask": 9,
+      "field": 5
+    },
+    {
+      "rank_row": 13,
+      "rank_column": 14,
+      "crossing_diagonal_count": 13,
+      "integer_slack": 377,
+      "alphabet_x": [
+        4,
+        5,
+        6,
+        11,
+        14,
+        15
+      ],
+      "alphabet_y": [
+        1,
+        8,
+        13
+      ],
+      "mask": 14,
+      "field": 5
+    },
+    {
+      "rank_row": 30,
+      "rank_column": 27,
+      "crossing_diagonal_count": 27,
+      "integer_slack": 3321,
+      "alphabet_x": [
+        0,
+        4,
+        5,
+        6,
+        12
+      ],
+      "alphabet_y": [
+        2,
+        3,
+        4,
+        5,
+        9,
+        11,
+        14
+      ],
+      "mask": 7,
+      "field": 5
+    },
+    {
+      "rank_row": 7,
+      "rank_column": 8,
+      "crossing_diagonal_count": 7,
+      "integer_slack": 63,
+      "alphabet_x": [
+        5,
+        7,
+        10,
+        12
+      ],
+      "alphabet_y": [
+        8,
+        14
+      ],
+      "mask": 5,
+      "field": 5
+    },
+    {
+      "rank_row": 6,
+      "rank_column": 6,
+      "crossing_diagonal_count": 6,
+      "integer_slack": 36,
+      "alphabet_x": [
+        4,
+        5,
+        6,
+        9
+      ],
+      "alphabet_y": [
+        3,
+        13
+      ],
+      "mask": 15,
+      "field": 5
+    },
+    {
+      "rank_row": 25,
+      "rank_column": 24,
+      "crossing_diagonal_count": 24,
+      "integer_slack": 2424,
+      "alphabet_x": [
+        2,
+        3,
+        9,
+        12,
+        13,
+        15
+      ],
+      "alphabet_y": [
+        2,
+        3,
+        4,
+        11,
+        15
+      ],
+      "mask": 6,
+      "field": 5
+    },
+    {
+      "rank_row": 2,
+      "rank_column": 2,
+      "crossing_diagonal_count": 2,
+      "integer_slack": 0,
+      "alphabet_x": [
+        3,
+        8,
+        11,
+        15
+      ],
+      "alphabet_y": [
+        15
+      ],
+      "mask": 13,
+      "field": 5
+    },
+    {
+      "rank_row": 20,
+      "rank_column": 19,
+      "crossing_diagonal_count": 19,
+      "integer_slack": 779,
+      "alphabet_x": [
+        1,
+        2,
+        9
+      ],
+      "alphabet_y": [
+        0,
+        2,
+        3,
+        4,
+        6,
+        7,
+        11
+      ],
+      "mask": 12,
+      "field": 5
+    },
+    {
+      "rank_row": 23,
+      "rank_column": 25,
+      "crossing_diagonal_count": 22,
+      "integer_slack": 2391,
+      "alphabet_x": [
+        0,
+        3,
+        4,
+        5,
+        10
+      ],
+      "alphabet_y": [
+        4,
+        9,
+        10,
+        12,
+        14,
+        15
+      ],
+      "mask": 1,
+      "field": 5
+    },
+    {
+      "rank_row": 3,
+      "rank_column": 3,
+      "crossing_diagonal_count": 3,
+      "integer_slack": 0,
+      "alphabet_x": [
+        8
+      ],
+      "alphabet_y": [
+        7,
+        8,
+        14
+      ],
+      "mask": 7,
+      "field": 5
+    },
+    {
+      "rank_row": 7,
+      "rank_column": 7,
+      "crossing_diagonal_count": 6,
+      "integer_slack": 62,
+      "alphabet_x": [
+        2,
+        3,
+        9,
+        10,
+        13
+      ],
+      "alphabet_y": [
+        6,
+        14
+      ],
+      "mask": 15,
+      "field": 5
+    }
+  ],
+  "regularized_diagonal_transpose_families": [
+    {
+      "q": 2,
+      "degree": 1,
+      "diagonals": [
+        [
+          3,
+          3
+        ]
+      ],
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        0,
+        1
+      ],
+      "coefficients": [
+        {
+          "rank_row": 1,
+          "rank_column": 1,
+          "crossing_diagonal_count": 1,
+          "integer_slack": 0
+        },
+        {
+          "rank_row": 1,
+          "rank_column": 1,
+          "crossing_diagonal_count": 1,
+          "integer_slack": 0
+        }
+      ],
+      "integer_crossing_diagonal_coverage": 2
+    },
+    {
+      "q": 3,
+      "degree": 3,
+      "diagonals": [
+        [
+          3,
+          3,
+          3
+        ],
+        [
+          3,
+          2,
+          1
+        ],
+        [
+          3,
+          1,
+          1
+        ]
+      ],
+      "alphabet_x": [
+        0
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2
+      ],
+      "coefficients": [
+        {
+          "rank_row": 1,
+          "rank_column": 1,
+          "crossing_diagonal_count": 1,
+          "integer_slack": 0
+        },
+        {
+          "rank_row": 0,
+          "rank_column": 0,
+          "crossing_diagonal_count": 0,
+          "integer_slack": 0
+        },
+        {
+          "rank_row": 2,
+          "rank_column": 2,
+          "crossing_diagonal_count": 2,
+          "integer_slack": 0
+        },
+        {
+          "rank_row": 1,
+          "rank_column": 1,
+          "crossing_diagonal_count": 1,
+          "integer_slack": 0
+        }
+      ],
+      "integer_crossing_diagonal_coverage": 4
+    },
+    {
+      "q": 4,
+      "degree": 5,
+      "diagonals": [
+        [
+          3,
+          3,
+          2,
+          3
+        ],
+        [
+          1,
+          1,
+          3,
+          3
+        ],
+        [
+          2,
+          2,
+          1,
+          3
+        ],
+        [
+          2,
+          3,
+          2,
+          3
+        ],
+        [
+          3,
+          1,
+          2,
+          2
+        ]
+      ],
+      "alphabet_x": [
+        0,
+        1
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "coefficients": [
+        {
+          "rank_row": 1,
+          "rank_column": 1,
+          "crossing_diagonal_count": 1,
+          "integer_slack": 1
+        },
+        {
+          "rank_row": 0,
+          "rank_column": 0,
+          "crossing_diagonal_count": 0,
+          "integer_slack": 0
+        },
+        {
+          "rank_row": 1,
+          "rank_column": 1,
+          "crossing_diagonal_count": 1,
+          "integer_slack": 1
+        },
+        {
+          "rank_row": 0,
+          "rank_column": 0,
+          "crossing_diagonal_count": 0,
+          "integer_slack": 0
+        },
+        {
+          "rank_row": 4,
+          "rank_column": 7,
+          "crossing_diagonal_count": 5,
+          "integer_slack": 31
+        },
+        {
+          "rank_row": 4,
+          "rank_column": 1,
+          "crossing_diagonal_count": 2,
+          "integer_slack": 4
+        }
+      ],
+      "integer_crossing_diagonal_coverage": 9
+    },
+    {
+      "q": 5,
+      "degree": 7,
+      "diagonals": [
+        [
+          1,
+          2,
+          1,
+          3,
+          2
+        ],
+        [
+          2,
+          3,
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          3,
+          3,
+          2,
+          1
+        ],
+        [
+          1,
+          3,
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          1,
+          3,
+          3,
+          2
+        ],
+        [
+          1,
+          3,
+          3,
+          1,
+          2
+        ],
+        [
+          1,
+          3,
+          1,
+          2,
+          3
+        ]
+      ],
+      "alphabet_x": [
+        0,
+        1,
+        2
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "coefficients": [
+        {
+          "rank_row": 0,
+          "rank_column": 0,
+          "crossing_diagonal_count": 0,
+          "integer_slack": 0
+        },
+        {
+          "rank_row": 0,
+          "rank_column": 0,
+          "crossing_diagonal_count": 0,
+          "integer_slack": 0
+        },
+        {
+          "rank_row": 6,
+          "rank_column": 9,
+          "crossing_diagonal_count": 7,
+          "integer_slack": 113
+        },
+        {
+          "rank_row": 2,
+          "rank_column": 2,
+          "crossing_diagonal_count": 0,
+          "integer_slack": 12
+        },
+        {
+          "rank_row": 4,
+          "rank_column": 8,
+          "crossing_diagonal_count": 6,
+          "integer_slack": 60
+        },
+        {
+          "rank_row": 4,
+          "rank_column": 2,
+          "crossing_diagonal_count": 0,
+          "integer_slack": 24
+        },
+        {
+          "rank_row": 8,
+          "rank_column": 13,
+          "crossing_diagonal_count": 11,
+          "integer_slack": 191
+        },
+        {
+          "rank_row": 9,
+          "rank_column": 1,
+          "crossing_diagonal_count": 3,
+          "integer_slack": 18
+        }
+      ],
+      "integer_crossing_diagonal_coverage": 27
+    }
+  ],
+  "mixed_support_negative_control": {
+    "ranks": [
+      2,
+      2
+    ],
+    "diagonal": 4
+  },
+  "source_sha256": {
+    "check_rectangular_coordinate_support.py": "4b94cdf7d311a09b218ec7ba97f2f43ae86009637e625d1117d501ff5716a458",
+    "check_coordinate_support_rank.py": "3cdbde1a024288d41a8b80bd61b6dd896f30c23a81c89110a8138ffdf1a52817",
+    "check_partition_channels.py": "413c99d6d61e3c8ce11238b6a91fc00b00b061600cb8cab14caa3d73b3fd80ab",
+    "physical_split_crossings.py": "f80920838d10cd0ad8d907bd671a10795749d830cce256399661d959ad40efb8",
+    "weighted_smith_oracle_f4.py": "d277f46caa98dab48d243af64c18e42e09e917bf1e862057a55cb35f74a6d572"
+  },
+  "scope": "Exact finite controls. The companion proof gives the all-field, all-size unequal-alphabet support/rank-sum theorem. Only support-preserving pieces are covered; no all-angle or general crossing obstruction and no stronger factoring score."
+}
