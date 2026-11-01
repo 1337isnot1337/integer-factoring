@@ -2619,3 +2619,11 @@ closure required by repeated one-variable elimination. Weighted geometric-box
 networks give a concrete global application, with explicit field and boundary
 costs. This does not represent the remaining `zeta^(sxy)` arithmetic phases or
 improve the factoring exponent. Run `make verify-joint-frobenius`.
+
+The [fused twelve-letter endpoint block cover](research/fused-q12-endpoint-block-cover.md)
+proves bare two-place Smith pressure `rho>=3/4` for all fifteen nonzero F16
+parameters and all 123 regular base-field endpoint normalizations. Exact
+polynomial identities cover every algebraic spectral place and every scale.
+This ends that bare endpoint diagnostic; charged types and other tensor
+representations remain open. Run `make verify-fused-q12-endpoints`. The
+complete factoring exponent remains **1/2**.
