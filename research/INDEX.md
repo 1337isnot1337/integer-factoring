@@ -38,6 +38,10 @@
 
 ## Exact pole-Cauchy algorithms
 
+- [Known-count normalized circuit averages](circuit-box-averages.md): unrestricted degree and globally odd inverses, with `p` coefficient bits independent of the count valuation.
+- [Complete circuit-isometric Bezout pairs](circuit-box-bezout.md) and [count-independent precision](circuit-box-bezout-averages.md): exact optimal normalization on certified separated domains, fewer than `4p` stored coefficients and fewer than `2p` coefficient bits.
+- [Complete one-variable singular pole traces](circuit-box-pole-trace.md): polynomial-time circuit compression, valuation partition, normalized trace and exact congruence-root counts; no two-variable factor-box algorithm.
+
 - [Global products of unrestricted-degree circuit values](circuit-box-products.md): fixed-dimensional boxes, polynomial-time generation, `O(p+log(M+1))` output nodes, and sharp `p-1` normalized moment precision; singular normalization remains open.
 
 - [Unrestricted-degree circuit inverse moments](pole-cauchy-circuit-moments.md): a small quotient algebra evaluates every division-free polynomial circuit weight; a sharp finite-difference bound explains the denominator cost of entrywise factor interpolation.

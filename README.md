@@ -212,7 +212,7 @@ uses degree 128, rejects larger budgets, and is checked against 96 known profile
 and 12,869 independently enumerated minors.
 <!-- cube-transfer-checkpoint:end -->
 
-## Unrestricted-degree modular products
+## Circuit products, normalized averages, and one-variable poles
 
 The [circuit-box product theorem](research/circuit-box-products.md) constructs
 `product (Z-q(a)) mod 2^p` over any fixed-dimensional integer box when `q`
@@ -224,6 +224,18 @@ Exact coefficient checks include a 161-node input of degree above `2^81`
 over more than `2^204` points. Singular normalization remains open, and
 the complete factoring score remains **1/2**.
 Run `make verify-circuit-box-products`.
+
+The [normalized-average theorem](research/circuit-box-averages.md) computes
+`(2^d/|B|) sum q(a)` for fixed-dimensional boxes at `p` coefficient bits,
+independent of the count valuation, including globally odd-unit rational
+circuits. Applied to [complete normalized Bezout pairs](research/circuit-box-bezout.md),
+it gives [fewer than `2p` coefficient bits](research/circuit-box-bezout-averages.md)
+for certified separated isometric domains. A six-bit `2^80`-node example
+now uses ten bits instead of 86. The [one-variable pole-trace compiler](research/circuit-box-pole-trace.md)
+also handles singular centers by a polynomial-size valuation partition and
+returns exact congruence-root counts. The two-variable factor rectangle
+remains outside these proved algorithms; no higher factoring score is claimed.
+Run `make verify-circuit-box-normalization` for all four new exact suites.
 
 ## Batched exact smooth-part filtering
 

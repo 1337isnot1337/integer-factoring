@@ -2383,3 +2383,18 @@ verify-circuit-box-products:
 .PHONY: verify-batch-smooth
 verify-batch-smooth:
 	python3 tools/batch_smooth_check.py
+
+.PHONY: verify-circuit-box-normalization verify-circuit-box-bezout verify-circuit-box-averages verify-circuit-box-bezout-averages verify-circuit-box-pole-trace
+verify-circuit-box-normalization: verify-circuit-box-bezout verify-circuit-box-averages verify-circuit-box-bezout-averages verify-circuit-box-pole-trace
+
+verify-circuit-box-bezout:
+	python3 tools/check_circuit_box_bezout.py
+
+verify-circuit-box-averages:
+	python3 tools/check_circuit_box_averages.py
+
+verify-circuit-box-bezout-averages:
+	python3 tools/check_circuit_box_bezout_averages.py
+
+verify-circuit-box-pole-trace:
+	python3 tools/check_circuit_box_pole_trace.py
