@@ -1,0 +1,268 @@
+{
+  "checker_sha256": "c70bb10f47eb97d1a1f149cdc306ca223c9d698cb61e28f7ef218b393b2441a8",
+  "f101_direct_eight_site_rank_pairs": [
+    [
+      0,
+      0,
+      4,
+      35,
+      35
+    ],
+    [
+      0,
+      1,
+      3,
+      35,
+      182
+    ],
+    [
+      0,
+      2,
+      2,
+      35,
+      196
+    ],
+    [
+      0,
+      3,
+      1,
+      35,
+      182
+    ],
+    [
+      0,
+      4,
+      0,
+      35,
+      35
+    ],
+    [
+      1,
+      0,
+      3,
+      182,
+      182
+    ],
+    [
+      1,
+      1,
+      2,
+      182,
+      105
+    ],
+    [
+      1,
+      2,
+      1,
+      182,
+      182
+    ],
+    [
+      1,
+      3,
+      0,
+      182,
+      35
+    ],
+    [
+      2,
+      0,
+      2,
+      196,
+      196
+    ],
+    [
+      2,
+      1,
+      1,
+      105,
+      182
+    ],
+    [
+      2,
+      2,
+      0,
+      196,
+      35
+    ],
+    [
+      3,
+      0,
+      1,
+      182,
+      182
+    ],
+    [
+      3,
+      1,
+      0,
+      182,
+      35
+    ],
+    [
+      4,
+      0,
+      0,
+      35,
+      35
+    ]
+  ],
+  "f101_direct_rank_cost": "1608.377200168389",
+  "jack_parameter": 2,
+  "research_note_sha256": "2fc60ad4791d5332be42a05a8c00987697511df954d6fb3a8cda6f4d181f1a82",
+  "scope": "full Catalan paths, characteristic-zero zonal rank formula; direct F101 control at eight sites",
+  "semilength_four_rank_pairs": {
+    "0,0,4": [
+      35,
+      35
+    ],
+    "0,1,3": [
+      35,
+      182
+    ],
+    "0,2,2": [
+      35,
+      196
+    ],
+    "0,3,1": [
+      35,
+      182
+    ],
+    "0,4,0": [
+      35,
+      35
+    ],
+    "1,0,3": [
+      182,
+      182
+    ],
+    "1,1,2": [
+      182,
+      105
+    ],
+    "1,2,1": [
+      182,
+      182
+    ],
+    "1,3,0": [
+      182,
+      35
+    ],
+    "2,0,2": [
+      196,
+      196
+    ],
+    "2,1,1": [
+      105,
+      182
+    ],
+    "2,2,0": [
+      196,
+      35
+    ],
+    "3,0,1": [
+      182,
+      182
+    ],
+    "3,1,0": [
+      182,
+      35
+    ],
+    "4,0,0": [
+      35,
+      35
+    ]
+  },
+  "spherical_eigenvalues": [
+    "1",
+    "1",
+    "(t+sqrt(w))^2",
+    "(t-sqrt(w))^2"
+  ],
+  "summaries": [
+    {
+      "block_dimension": 1,
+      "catalan_labels": 1,
+      "coefficient_count": 3,
+      "natural_piece_rank_cost": "3.000000000000",
+      "semilength": 1
+    },
+    {
+      "block_dimension": 4,
+      "catalan_labels": 2,
+      "coefficient_count": 6,
+      "natural_piece_rank_cost": "19.928203230276",
+      "semilength": 2
+    },
+    {
+      "block_dimension": 25,
+      "catalan_labels": 5,
+      "coefficient_count": 10,
+      "natural_piece_rank_cost": "158.245553203368",
+      "semilength": 3
+    },
+    {
+      "block_dimension": 196,
+      "catalan_labels": 14,
+      "coefficient_count": 15,
+      "natural_piece_rank_cost": "1608.377200168389",
+      "semilength": 4
+    },
+    {
+      "block_dimension": 1764,
+      "catalan_labels": 42,
+      "coefficient_count": 21,
+      "natural_piece_rank_cost": "17098.742885967479",
+      "semilength": 5
+    },
+    {
+      "block_dimension": 17424,
+      "catalan_labels": 132,
+      "coefficient_count": 28,
+      "natural_piece_rank_cost": "203698.468736847152",
+      "semilength": 6
+    },
+    {
+      "block_dimension": 184041,
+      "catalan_labels": 429,
+      "coefficient_count": 36,
+      "natural_piece_rank_cost": "2476242.543569896540",
+      "semilength": 7
+    },
+    {
+      "block_dimension": 2044900,
+      "catalan_labels": 1430,
+      "coefficient_count": 45,
+      "natural_piece_rank_cost": "31432181.152234977114",
+      "semilength": 8
+    },
+    {
+      "block_dimension": 23639044,
+      "catalan_labels": 4862,
+      "coefficient_count": 55,
+      "natural_piece_rank_cost": "415004676.449732770104",
+      "semilength": 9
+    },
+    {
+      "block_dimension": 282105616,
+      "catalan_labels": 16796,
+      "coefficient_count": 66,
+      "natural_piece_rank_cost": "5548867606.126827608719",
+      "semilength": 10
+    },
+    {
+      "block_dimension": 3455793796,
+      "catalan_labels": 58786,
+      "coefficient_count": 78,
+      "natural_piece_rank_cost": "75104947809.342237579008",
+      "semilength": 11
+    },
+    {
+      "block_dimension": 43268992144,
+      "catalan_labels": 208012,
+      "coefficient_count": 91,
+      "natural_piece_rank_cost": "1034173106197.841373251718",
+      "semilength": 12
+    }
+  ]
+}

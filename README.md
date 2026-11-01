@@ -889,6 +889,12 @@ strict endpoint. At eight sites it adds a seventh tensor direction;
 the noncommuting cut operators have invariant commutator modules of
 dimension 28. Uniform favorable ranks remain open. Run the optional
 `make verify-bounded-spin-six-vertex`.
+For the full Catalan path space, the [SO(4) spherical decomposition](research/catalan-spherical-ranks.md)
+gives exact characteristic-zero rank formulas for every coefficient and
+every recombination in its span, via Jack polynomials with parameter two.
+The natural coefficient pieces are already costly at eight sites; arbitrary
+recombination support is the next open rank problem. Run
+`make verify-catalan-spherical-ranks`.
 The [modular interface](research/bounded-spin-modular-interface.md)
 connects these constructors to the existing fixed-characteristic transfer:
 dense rank factors meet its cost bound, and the original coefficient

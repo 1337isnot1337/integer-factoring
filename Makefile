@@ -391,6 +391,10 @@ verify-catalan-cup-jets:
 verify-catalan-gram-smith:
 	python3 tools/check_catalan_gram_smith.py --output evidence/catalan-gram-dual-smith.json
 
+.PHONY: verify-catalan-spherical-ranks
+verify-catalan-spherical-ranks:
+	python3 tools/check_catalan_spherical_ranks.py --output evidence/catalan-spherical-ranks.json
+
 .PHONY: verify-downset-crossings verify-regular-code-crossings
 verify-downset-crossings:
 	python3 tools/check_downset_crossing_normal_form.py
