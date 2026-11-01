@@ -2821,6 +2821,10 @@ verify-hecke-all-places:
 verify-hecke-all-places-full:
 	python3 tools/check_hecke_all_algebraic_places.py --alphabet 9
 
+.PHONY: verify-pascal-coordinate-bundle
+verify-pascal-coordinate-bundle:
+	python3 tools/check_pascal_coordinate_bundle.py
+
 .PHONY: verify-rectangular-pascal-coordinates
 verify-rectangular-pascal-coordinates:
 	python3 tools/check_rectangular_pascal_sectors.py

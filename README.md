@@ -92,6 +92,9 @@ allows different alphabets on the two matched physical pairs, including
 one-pair occupation restrictions, with complete original Fock profiles.
 Its nineteen-case screen completed 34,304 channel orders without passing the
 threshold; the selected unequal-alphabet whole-symbol follow-on is running.
+A [fixed-type bundle comparison](research/pascal-coordinate-bundle-search.md)
+checks supporting planes at every complete profile query and targets the
+valuation ties encountered by the direct coordinate optimizer.
 
 ## Arithmetic construction and space bounds
 
