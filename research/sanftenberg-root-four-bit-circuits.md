@@ -72,11 +72,83 @@ process multiplier rows in order, keeping both operand words and the current
 and next accumulator rows in each bag. Each partial-product row and its add
 carry then meets only adjacent row bags.
 
-With `T` transform positions and `log_2 T` butterfly stages, the transform
-circuits have `O(T^2 log T)` gates. The `T` pointwise product gadgets have
-`O(T^3)` gates in total. These are polynomial in the original input length
-because `T^2=Theta(ell)`. This gate-count result does not bound the treewidth
-of their composition.
+## Redundant signed base-four digits defer transform carries
+
+There is a second exact representation that removes canonical carry
+normalization from the transform itself. Put `q=T/2`, so
+`M=2^T+1=4^q+1`, and define
+
+```math
+\Phi(d)=\sum_{i=0}^{q-1}d_i4^i\pmod M,
+\qquad d\in\mathbb Z^q.
+```
+
+Every residue has a representative with digits in `{0,1,2,3}`, except the
+top residue `4^q`, represented by `(-1,0,...,0)`. Since `4^q=-1 mod M`,
+the signed rotation
+
+```math
+R(d)_0=-d_{q-1},\qquad R(d)_i=d_{i-1}\quad(1\le i<q)
+```
+
+satisfies `Phi(R(d))=4 Phi(d)` for every integer digit vector, with no carry
+or size growth. Thus every root-four twiddle is a wire permutation and sign
+change in this representation, even after digits have become redundant.
+Addition is coordinatewise. Multiplication is the negacyclic convolution
+
+```math
+c_k=\sum_{i+j=k}d_i e_j-\sum_{i+j=k+q}d_i e_j,
+\qquad 0\le k<q,
+```
+
+because each wrap by `q` powers of four contributes `4^q=-1`. If
+`|d_i|<=A` and `|e_i|<=B`, then `|c_k|<=qAB`.
+
+For example, a `t`-term transform of canonical input words has digit bound
+`3t`: rotations preserve the input bound three and summing `t` terms adds
+their digit vectors. A following pointwise product has digit bound at most
+`9q t^2`, and an `r`-term transform then has bound at most `9rq t^2`.
+Any final scalar ring multiplier can be charged as one more negacyclic
+convolution. These bounds are polynomial in `T`, so every signed digit needs
+only `O(log T)` bits. Canonicalization can be postponed to the interface
+with the pointwise multiplier and to final output; those conversions cost
+polynomially many bit operations. This gives a valid ordinary arithmetic
+representation, not a faster evaluator by itself.
+
+The representation changes the separator question rather than removing it.
+Using the direct negacyclic-convolution implementation creates all `q^2`
+digit products. Its factor graph contains `K_{q,q}` between the two sets of
+digit inputs; contracting `q-1` edges of a matching gives a `K_{q+1}` minor,
+so each product gadget has treewidth at least `q`. Converting to canonical
+binary words before multiplication instead retains the existing `O(T)`-width
+schoolbook product gadget. Either choice leaves at least order-`T` local
+multiplier width at each of the `T` frequency positions. This local bound is
+not a lower bound for the whole network and does not determine its treewidth.
+
+There is also an exact gauge obstruction in the top-level twiddle array.
+Its signed-rotation offset is `a(j,k)=jk mod T`; on every in-range unit
+plaquette,
+
+```math
+a(j+1,k+1)-a(j+1,k)-a(j,k+1)+a(j,k)=1\pmod T.
+```
+
+Adding independent row and column offsets `u(j)+v(k)` leaves this mixed
+difference unchanged. Therefore such row/column reindexings cannot remove
+all cell rotations at once. A general per-cell reindexing can move the
+rotations onto neighboring transform wires, so this is not a lower bound on
+all circuit representations or on their separators.
+
+With `T` transform positions and `log_2 T` butterfly stages, canonical
+`T+1`-bit words give `O(T^2 log T)` transform gates and `O(T^3)` gates for
+all `T` pointwise products. Keeping `q` redundant digits of `O(log T)` bits
+instead gives `O(T^2 (log T)^2)` transform gates. Direct schoolbook
+negacyclic convolution uses `O(T^3 (log T)^2)` gates for all pointwise
+products; canonicalizing at the product interface retains the `O(T^3)`
+binary multiplication count and adds polynomial conversion work. Each
+variant is polynomial in the original input length because
+`T^2=Theta(ell)`. These gate-count bounds do not bound the treewidth of the
+full composition.
 
 ## The global separator is still the question
 

@@ -1,0 +1,47 @@
+{
+  "source_commit": "3709a9e71f5ba6614f8a40318cf5921baadf931b",
+  "source_tree": "a9ece4ec6b6d0147e817eaa88511af1abf383dc8",
+  "started_utc": "2026-11-01T18:15:11.035075+00:00",
+  "commands": [
+    [
+      "make",
+      "verify"
+    ],
+    [
+      "make",
+      "verify-elliptic-word-costs",
+      "verify-graded-box-minors",
+      "verify-high-axis-frobenius-residues"
+    ]
+  ],
+  "pre_status": "",
+  "status": "pass",
+  "results": [
+    {
+      "command": [
+        "make",
+        "verify"
+      ],
+      "returncode": 0,
+      "seconds": 730.3004241702147
+    },
+    {
+      "command": [
+        "make",
+        "verify-elliptic-word-costs",
+        "verify-graded-box-minors",
+        "verify-high-axis-frobenius-residues"
+      ],
+      "returncode": 0,
+      "seconds": 2.0330794318579137
+    }
+  ],
+  "seconds": 732.3339398861863,
+  "finished_utc": "2026-11-01T18:27:25.298372+00:00",
+  "post_status": "",
+  "stdout": {
+    "path": "evidence/verify-pr65-67-default-3709a9e.stdout.txt.xz",
+    "uncompressed_sha256": "7cfce54ce30c7982f18c6f4988380c9f42a490791f89a1322ed2d540805f57c9",
+    "compressed_sha256": "d0f2c94c466ac89742bb4f8c614e93a23d0496c4a694cad1d80c7d8d7042ab72"
+  }
+}

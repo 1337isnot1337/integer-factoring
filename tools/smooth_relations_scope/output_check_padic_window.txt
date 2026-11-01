@@ -1,0 +1,12 @@
+[1] A_(p,k) from composition == Gauss reduction of (p^k,b_k,c_k) and L_(k+1) subset L_k: 7575 (N,p,k) cases (k=K..K+24); brute-force lattice minimum also equal in 909 cases (k=K..K+2): OK
+[2] N=69805489216239: window smooth rate 289/3200=0.0903; random-class leading coeff rate 257/3200=0.0803; first hit offsets [41, 16, 23, 13, 1, 26, 13, 24]
+[2] N=72231027377999: window smooth rate 521/3200=0.1628; random-class leading coeff rate 576/3200=0.1800; first hit offsets [5, 0, 0, 11, 16, 2, 3, 1]
+[2] N=90954531051191: window smooth rate 372/3200=0.1163; random-class leading coeff rate 373/3200=0.1166; first hit offsets [0, 103, 9, 2, 0, 4, 19, 11]
+[2] N=85602995291459: window smooth rate 316/3200=0.0988; random-class leading coeff rate 336/3200=0.1050; first hit offsets [6, 30, 2, 7, 34, 21, 8, 9]
+[2] N=99083338803587: window smooth rate 136/3200=0.0425; random-class leading coeff rate 142/3200=0.0444; first hit offsets [41, 43, 24, 77, 39, 8, 22, 19]
+[2] N=86791465842875: window smooth rate 428/3200=0.1338; random-class leading coeff rate 451/3200=0.1409; first hit offsets [0, 4, 0, 15, 8, 8, 2, 0]
+RESULT: PASS
+
+real	0m12.699s
+user	0m12.682s
+sys	0m0.016s

@@ -2384,9 +2384,11 @@ The unmodified public macro network has linear treewidth under dense-table
 elimination. Its radix-2 four-word butterfly tables still have a treewidth
 floor of `Omega(ell/sqrt(log ell))`, matching the half-rate scale. At bit
 level the root-four twiddles become signed rotations and each butterfly has
-an `O(T)`-gate circuit; the full separator, including pointwise products and
-carry recovery, remains open ([treewidth analysis](research/sanftenberg-transform-treewidth-floor.md),
-[bit-circuit analysis](research/sanftenberg-root-four-bit-circuits.md)).
+an `O(T)`-gate circuit. A redundant signed base-four representation removes
+intermediate transform carries, but direct digit convolution retains an
+order-`T` local multiplier-width obstruction; the full separator remains
+open ([treewidth analysis](research/sanftenberg-transform-treewidth-floor.md),
+[bit-circuit and redundant-digit analysis](research/sanftenberg-root-four-bit-circuits.md)).
 
 ## Sparse oriented power prefixes
 
@@ -2675,6 +2677,22 @@ kernel. An independent 120-channel prefix still excludes its desired rate
 at every scale and common occupied frequency. This kernel stops; the
 result does not exclude every high-axis construction.
 
+A [global alignment obstruction](research/global-axis-alignment-obstruction.md)
+uses homogeneity, coefficient locality and the endpoint to rule out a
+shared linear flag through the required low jets, with explicit quotient
+Smith-prefix bounds. A separate exact module counterexample shows why
+those quotient bounds alone are insufficient for the full pressure target.
+The remaining proof must retain the complete crossing endpoint.
+
+The [generic axis-face floor](research/multiaxis-face-rank-floor.md)
+combines complementary Smith pairs with average face-rank fraction `c`
+to force pressure above `min(1/2,c+1/d)`. For symmetric subset-local
+Cayley kernels in every dimension `d>=4`, a winning kernel must therefore
+have all pair and triple coefficients divisible by all their variables.
+A degree-eight endpoint fixture has a generic quarter-rank face hidden
+by the all-one specialization. This is a necessary condition for this
+profile route; it supplies no stronger complete factoring bound.
+
 A [routing-rank argument](research/generic-engine-routing-rank-nogo.md)
 limits matrices with the generic engine's stated Step-2 support on its
 schedule-pair array. Under that engine's accounting it retains the half-rate
@@ -2683,12 +2701,13 @@ factoring-specific algorithms are outside the conclusion. The contribution
 is integrated with ordinary proofs and finite controls, without independent
 mathematical acceptance.
 
-The [latest full verification receipt](evidence/higher-words-full-verification.json)
-pins a successful clean default replay and fifteen named joint/cofactor
-targets to exact `269efb8`: 356 Python command blocks, 66 unit tests,
-five crossing tests and 988 Markdown files. Later main integration and
-integer-degree point packages have separate focused passes, outside that
-full-source pin. These checks supply no realizing tensor or independent review.
+The [clean default integration receipt](evidence/verify-pr65-67-default-3709a9e.json)
+pins a successful `make verify` replay and elliptic, graded-box and higher-axis
+Frobenius focused checks to exact `3709a9e`, tree `a9ece4ec6b6d0147e817eaa88511af1abf383dc8`.
+The separately archived routing checks also pass there. Later global-alignment,
+root-four and arithmetic-scope changes have separate integration gates;
+this receipt is not a full replay of their later source. These checks supply
+no realizing tensor or independent mathematical review.
 
 ### Joint contraction instead of repeated local elimination
 
@@ -2707,3 +2726,11 @@ polynomial identities cover every algebraic spectral place and every scale.
 This ends that bare endpoint diagnostic; charged types and other tensor
 representations remain open. Run `make verify-fused-q12-endpoints`. The
 complete factoring exponent remains **1/2**.
+
+The [genus and p-adic window audit](research/deterministic-smooth-relations-scope.md)
+identifies the least-nonresidue input needed by the stated deterministic
+smooth-relation coverage route. The [leading-power window study](research/leading-power-window-barrier.md)
+retains an explicit linear lower-bound family and finite orbit data. Its
+Fourier obstruction concerns completion with a uniform absolute character-sum
+bound; it does not exclude arguments using phases or other character data.
+Neither supplies the missing uniform window theorem or a stronger score.

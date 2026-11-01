@@ -1,5 +1,9 @@
 # Research index
 
+- [A global floor from generic axis-face ranks](multiaxis-face-rank-floor.md): complementary Smith pairing and average face-rank fraction c force common-scale pressure above min(1/2,c+1/d). Every symmetric winning Cayley kernel in d>=4 must have pair/triple coefficients divisible by all their variables. A full endpoint fixture shows why the all-one specialization can hide this obstruction.
+
+- [Global homogeneous axis alignment and its quotient limits](global-axis-alignment-obstruction.md): all-field characteristic-two locality/endpoint forces transverse coefficients and quotient prefixes at depths D/4,D/6,D/8. An exact exterior-module counterexample shows those quotient bounds alone do not lift to the needed full prefix; the crossing endpoint remains essential.
+
 - [Frobenius residues in the higher axis flags](high-axis-frobenius-residues.md): degree-64 endpoint coefficients reduce generic quartic rank from 46 to 28; independent Toeplitz ranks 840/960 give 120 orders of total 2520, excluding this explicit nine-axis kernel at every scale and common occupied frequency.
 
 - [Independent physical energies in box-minor budgets](graded-box-minor-caps.md): all-field scalar original and word-adjugate constraints with exact low/top energy charges; 36 signed Laurent controls retain 348 determinant polynomials and 696 complete orders. No global weighted pressure floor is claimed.
@@ -123,7 +127,7 @@
 - [Reusable semiprime work in RiemannGaussian](riemann-gaussian-semiprime-source-audit.md): exact-source audit of deterministic boundary contraction, factor moments, semiprime count recovery and coefficient-ring compatibility; no imported score improvement or independent Lean rebuild.
 - [All-input minimum-factor adapters](sanftenberg-all-input-prefix-adapter.md): exact prefix counts or a truncated min-plus semiring recover the smallest factor for arbitrary `N`; direct whole-root boundary contraction has only a linear width guarantee, and recursive cost remains open.
 - [Treewidth floors for the public semiprime macro network](sanftenberg-transform-treewidth-floor.md): the dense macro graph has linear treewidth, while radix-2 four-word butterfly tables have a `Q_d` clique-blow-up minor and treewidth `Omega(ell/sqrt(log ell))`, matching the half-rate scale; bit-level arithmetic circuits remain open.
-- [Root-four bit circuits for the semiprime transform](sanftenberg-root-four-bit-circuits.md): exact root-four twiddles reduce to signed cyclic rotations with `O(T)` carry normalization; modular pointwise products have `O(T^2)`-gate local circuits, but the full-network separator and factoring cost remain open.
+- [Root-four bit circuits for the semiprime transform](sanftenberg-root-four-bit-circuits.md): canonical words give `O(T)` add/subtract and signed-rotation circuits; redundant signed base-four digits defer transform carries, but schoolbook products retain an order-`T` local width and the full-network separator remains open.
 
 - [Literal hot tensors for low-cell retractions](tensor-literal-low-cell-retractions.md): original Gaussian/Pfaffian evaluation without deletion closure, a proved cache bound, complete independent kernel controls and a retained 55-label capped pilot; no frontier gain.
 
@@ -1605,3 +1609,5 @@ The [symbolic profile classification](orthogonal-joint-global-rigidity.md#5-all-
 
 - [Square-zero aggregation of trace constraints](square-zero-trace-contraction.md): one carry contraction over an explicit subset algebra gives `2^O(r) (S+rt+2)^O(vw/t)` cost, retaining scalar-only denominator inversion. The prefix implementation uses this sharper bound; the complete arithmetic phase representation remains open.
 - [Generic engine routing-rank no-go (scoped)](generic-engine-routing-rank-nogo.md): every Step-2 matrix on the OpenAI engine's schedule-pair array keeps α ≤ 1/2 within the preprint's accounting; open doors listed.
+- [Deterministic smooth relations: scope and wall](deterministic-smooth-relations-scope.md): genus invariance and least-nonresidue reductions showing where unconditional analytic input is needed; p-adic CFRAC view of the leading-power window.
+- [Leading-power window lemma: barrier and empirics](leading-power-window-barrier.md): exact window lemma, linear lower-bound family, character-sum method barrier W ≥ (h/δ)^{1/2}, and Dickman-ρ empirics over 70,465 orbits (conjectural growth fit).

@@ -626,6 +626,43 @@ Focused replay and documentation checks validate this finite audit. The
 separate full run at `d159502` predates this addition. No new Lean or
 independent mathematical review is claimed.
 
+## PR65 and PR67 integration scope
+
+PR65's original source `956d971` and final head `392e5bb` are preserved;
+GitHub merged it at `4cb9dcc`. Our earlier merge `bf39bff` and subsequent
+merge of canonical main retain both versions of the compatibility status
+correction. Its geometric result concerns the stated elliptic chart/direct
+equation models; finite-field auxiliary fibre selection remains outside it.
+The existing peer full receipt is pinned to `956d971`, rather than later main.
+
+PR67 source `8e16df686b4379e22c8cb603a4de2cbdaf0f0f4f` is preserved by
+merge `1bb7688`. Commit `3709a9e` makes the tail/spectral diagnostics exit
+nonzero on failure. At that clean frozen integration, all three routing
+scripts pass in 465.89 seconds. The
+[receipt](../evidence/verify-routing-integration-3709a9e.json) and
+[complete compressed log](../evidence/verify-routing-integration-3709a9e.stdout.txt.xz)
+retain commands and source tree. Routing ranks use exact arithmetic; the
+tail script's finite comparisons use floating logarithms of exact rational
+probabilities, as disclosed by that script. The ordinary proofs are separate.
+The result concerns the specified schedule-pair support and accounting,
+with no arbitrary algorithm or factoring lower bound. Elliptic, graded-box,
+Frobenius and docs focused checks pass; the separate default replay at
+`3709a9e` is still running at this checkpoint. No new Lean or independent
+mathematical acceptance is claimed.
+
+## Global alignment theorem and quotient counterexample
+
+The [homogeneous proof](../research/global-axis-alignment-obstruction.md)
+uses a nonzero endpoint polynomial to force transverse coefficients over
+every characteristic-two field. It supplies quotient prefixes, not a full
+axis pressure floor. The [receipt](../evidence/global-axis-alignment-controls.json.xz)
+retains 96 coefficient tables, sharp depth fixtures, an explicit nonzero
+quotient minor and an exact exterior-module counterexample to lifting the
+quotient bounds alone. The counterexample lacks the crossing endpoint;
+its profiles are not a factoring seed. The focused replay and docs checks
+validate this addition; earlier full receipts predate it. No new Lean or
+independent mathematical review is claimed.
+
 ## Frobenius residue kernel and exact high-axis stop
 
 The [new fixed coefficient relation](../research/high-axis-frobenius-residues.md)
@@ -743,3 +780,54 @@ retain all commands and hashes. This includes PR64 and the q12 box
 correction, but predates the q13 audits/target and later peer treewidth
 delta, whose checks remain separate. No new Lean or stronger complete
 factoring bound is implied.
+
+## Exact PR65/67 default integration replay at `3709a9e`
+
+The clean frozen source `3709a9e71f5ba6614f8a40318cf5921baadf931b`,
+tree `a9ece4ec6b6d0147e817eaa88511af1abf383dc8`, passed `make verify`
+in 730.30 seconds, then the elliptic-word, graded-box and higher-axis
+Frobenius targets in 2.03 seconds. The
+[receipt](../evidence/verify-pr65-67-default-3709a9e.json) and
+[complete compressed log](../evidence/verify-pr65-67-default-3709a9e.stdout.txt.xz)
+retain exact commands, clean pre/post status and hashes. The separately
+archived routing replay at the same source also passed. This source
+includes the routing failure-exit fixes but predates the final PR65
+documentation/receipt merge and global-axis-alignment extension; their
+focused checks remain separate. No Lean or stronger factoring bound
+is claimed.
+
+## Arithmetic scope integration: PR68 and PR69
+
+PR68 source `6d47d99749a952b9480f70a48d8f6d095d21ffd6` is retained
+in merge `6a63f3d`; PR69 source `7cb4576c2082019c8249da0e8abb637c27af0e08`
+is retained in merge `1d03900`. Both additive index conflicts preserve all
+entries. Concurrent main `dd0388c` is preserved by an intervening merge.
+The ordinary arguments and script entry points were inspected for scope;
+this is not independent proof acceptance. PR69's summary now limits its
+Fourier obstruction to completion with a uniform absolute smooth-set
+character-sum bound. Its source hashes remain intact, with hashes of all
+committed data artifacts appended to the manifest. Full numerical scans
+are not rerun as an integration requirement. Exact focused replay and a
+new frozen default suite are the next integrity gate; the previous full
+`3709a9e` receipt predates these sources. No Lean or score gain is claimed.
+PR69 retains Grok Bot / Alkindus Arifuddin credit; PR68 retains its author
+and predecessor disclosures.
+
+## Global generic face-rank floor
+
+The [ordinary proof](../research/multiaxis-face-rank-floor.md) pools
+fractional low-half channels across all axes. Complementary Smith pairing
+and average face-rank fraction c give the exact pressure floor
+`min(1/2,c+1/d)`. The supported-monomial triangular minor makes nonvanishing
+pair/triple faces an obstruction in every symmetric Cayley dimension
+at least four. This is independent of coefficient degree and field size;
+strictly positive low jets, other physical types and non-Cayley kernels
+remain outside the new conclusion. The
+[receipt](../evidence/multiaxis-face-rank-controls.json) retains 56 unequal
+paired-profile budget controls, exact threshold comparisons, a literal
+64-by-64 F4 minor and scalar-restricted face rank 64. Four untruncated
+small-block profiles, 44 orders, reconstruct all 256 specialized orders;
+their first 86 sum to 258 while the generic floor is 13/36. These controls
+illustrate the ordinary theorem and the limit of the all-one specialization.
+No independent mathematical review, Lean or stronger factoring score
+is claimed. The frozen default run at `5c2e66d` predates this delta.

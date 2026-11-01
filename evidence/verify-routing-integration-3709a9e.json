@@ -1,0 +1,55 @@
+{
+  "source_commit": "3709a9e71f5ba6614f8a40318cf5921baadf931b",
+  "source_tree": "a9ece4ec6b6d0147e817eaa88511af1abf383dc8",
+  "started_utc": "2026-11-01T18:15:11.033603+00:00",
+  "commands": [
+    [
+      "python3",
+      "tools/routing_rank_nogo/check_routing_rank.py"
+    ],
+    [
+      "python3",
+      "tools/routing_rank_nogo/check_tail_lemma.py"
+    ],
+    [
+      "python3",
+      "tools/routing_rank_nogo/check_spectral_points.py"
+    ]
+  ],
+  "pre_status": "",
+  "status": "pass",
+  "results": [
+    {
+      "command": [
+        "python3",
+        "tools/routing_rank_nogo/check_routing_rank.py"
+      ],
+      "returncode": 0,
+      "seconds": 353.89876830298454
+    },
+    {
+      "command": [
+        "python3",
+        "tools/routing_rank_nogo/check_tail_lemma.py"
+      ],
+      "returncode": 0,
+      "seconds": 111.96298474399373
+    },
+    {
+      "command": [
+        "python3",
+        "tools/routing_rank_nogo/check_spectral_points.py"
+      ],
+      "returncode": 0,
+      "seconds": 0.025266143959015608
+    }
+  ],
+  "seconds": 465.8876090119593,
+  "finished_utc": "2026-11-01T18:22:58.854195+00:00",
+  "post_status": "",
+  "stdout": {
+    "path": "evidence/verify-routing-integration-3709a9e.stdout.txt.xz",
+    "uncompressed_sha256": "ec2ca3d621d74df2c0aea1527314fe87d1d162e3b072d81c80b7268b8317883e",
+    "compressed_sha256": "63269d77cd840de229793b111041cbd8cdbe9354d0313ddfa60044426c7794ed"
+  }
+}

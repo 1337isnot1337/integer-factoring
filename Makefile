@@ -2315,6 +2315,10 @@ verify-graded-box-minors:
 verify-high-axis-frobenius-residues:
 	python3 tools/check_high_axis_frobenius_residues.py
 
+.PHONY: verify-global-axis-alignment
+verify-global-axis-alignment:
+	python3 tools/check_global_axis_alignment.py
+
 .PHONY: verify-multiaxis-cube
 verify-multiaxis-cube:
 	python3 tools/check_multiaxis_cube_transfer.py
@@ -3089,3 +3093,7 @@ verify-teichmuller-carries:
 	python3 tools/check_teichmuller_cyclic_carries.py
 
 verify-arithmetic: verify-teichmuller-carries
+
+.PHONY: verify-multiaxis-face-rank
+verify-multiaxis-face-rank:
+	python3 tools/check_multiaxis_face_rank_floor.py
