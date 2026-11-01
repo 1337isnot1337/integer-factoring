@@ -251,3 +251,10 @@ Standard geometric results retain their attribution to Milne and their
 original sources. The finite-grid bounds and cost separation were developed
 with substantial OpenAI assistant support; no independent mathematical
 review or new Lean formalization is claimed.
+
+The [full code replay receipt](../evidence/elliptic-word-full-verification.json)
+pins a clean successful default gate plus thirty focused targets at
+`956d97122e04fb9d8fe44fd809f232d6d46efeba`, in 2,389.43 seconds. This
+includes the finite controls and preceding main integration. It is not a
+formal or independent verification of the ordinary geometric arguments;
+later source additions remain outside that full-run pin.
