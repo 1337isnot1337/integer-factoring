@@ -9,10 +9,12 @@ restriction and restoration of its minima.
 
 These necessary conditions exclude the twelve-letter point that survives
 the [preceding linear and second-jet checks](inherited-second-jet-caps.md#5-a-successor-point-survives-the-declared-nonlinear-checks).
-These word conditions alone do not exclude every twelve-letter crossing
-or improve the factoring score **1/2**. The separate earlier
-[box-budget entropy certificates](bare-seven-to-twelve-letters.md) already
-give uniform bare coverage through twelve letters. The later
+These jet constraints alone do not establish a uniform twelve-letter bare
+floor or improve the factoring score **1/2**. The earlier
+[box-minor theorem](bare-seven-to-twelve-letters.md) already closes the bare
+criterion through twelve letters. It must be included before treating any
+point of the cofactor relaxation as a live polynomial construction target.
+The later
 [historical thirteen-letter point](joint-bare-profile-feasibility.md) passes
 both those original budgets and the word conditions, but the subsequent
 [box-adjugate composition](box-adjugate-word-caps.md) excludes it.
@@ -159,6 +161,6 @@ test the implementation. A [clean full replay](../evidence/higher-words-full-ver
 at exact `269efb8` passed defaults and fifteen named joint/cofactor targets:
 356 Python command blocks, 66 unit tests, five crossing tests and 988
 Markdown files. Later main integration and integer targets are outside that
-source pin. No uniform twelve-letter obstruction, realizing tensor, new Lean
-proof or independent mathematical review is claimed. Substantial OpenAI
+source pin. This word package supplies no stronger factoring bound,
+realizing tensor, new Lean proof or independent mathematical review. Substantial OpenAI
 assistant support was used.

@@ -15,6 +15,11 @@ input is the [multichannel cofactor inequality](multichannel-rectangular-cofacto
 The entropy transfer and earlier prefix/adjugate/first-jet rows are retained
 from the preceding work.
 
+The earlier [box-minor budgets](bare-seven-to-twelve-letters.md) provide
+stronger uniform bare coverage through twelve letters. The cofactor
+certificate here is an alternative argument through eleven, rather than
+the current frontier for all available necessary constraints.
+
 This restricts one crossing construction interface. Independently gauged
 energies, other endpoints and other factoring mechanisms remain open.
 The complete factoring score remains **1/2**.
@@ -97,6 +102,7 @@ arithmetic, witness and checker sources. The later
 [clean full replay](../evidence/higher-words-full-verification.json) at
 `269efb8` includes this entropy package and passed defaults plus fifteen
 joint/cofactor targets.
-The twelve-letter bare interface remains unresolved by these witnesses.
+These witnesses only cover through eleven; the linked box theorem already
+settles the desired bare exclusion through twelve.
 No new Lean formalization, independent mathematical review or improved
 factoring algorithm is claimed. Substantial OpenAI assistant support was used.
