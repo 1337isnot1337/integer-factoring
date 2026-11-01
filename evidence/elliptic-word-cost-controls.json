@@ -1,0 +1,180 @@
+{
+  "scope": "Finite cyclic-group and integer-constant controls; the geometric all-size statements use the ordinary proofs and cited standard theorems.",
+  "cyclic_product_controls": [
+    {
+      "width": 1,
+      "order": 2,
+      "grid_points": 4,
+      "maximum_agreement": 3,
+      "histogram_sha256": "89eeaab05ce8dfc3d0eae291847be513d2cf1eb27c14b670b4fc63f4895d9968"
+    },
+    {
+      "width": 2,
+      "order": 4,
+      "grid_points": 16,
+      "maximum_agreement": 8,
+      "histogram_sha256": "6b9a10e332b08cc809618512f0fbccb02bac3556272761111ba614e89eccc188"
+    },
+    {
+      "width": 3,
+      "order": 8,
+      "grid_points": 64,
+      "maximum_agreement": 20,
+      "histogram_sha256": "70fcfc7f8eb7933d0f39f6eaed6b406f298058dce5bab07936acc0e9104c7315"
+    },
+    {
+      "width": 4,
+      "order": 16,
+      "grid_points": 256,
+      "maximum_agreement": 48,
+      "histogram_sha256": "09400aecea170cd5483fdd953ae04a943ba87acfb3c53ad25608d770b5b6d5e4"
+    },
+    {
+      "width": 5,
+      "order": 32,
+      "grid_points": 1024,
+      "maximum_agreement": 112,
+      "histogram_sha256": "d39a1a0ebc6736fa8b5962ac1f6fc6d8df85faee0051a520c3dd745bb57984d7"
+    },
+    {
+      "width": 6,
+      "order": 64,
+      "grid_points": 4096,
+      "maximum_agreement": 256,
+      "histogram_sha256": "8778db828d6cf832536083732961528ca1ea2930a2ac23ec3cda6b578f460014"
+    },
+    {
+      "width": 7,
+      "order": 128,
+      "grid_points": 16384,
+      "maximum_agreement": 576,
+      "histogram_sha256": "567b748f9cc2f14999c961ebc08b042c65f70b5577b31806d6bae16fda4164fc"
+    },
+    {
+      "width": 8,
+      "order": 256,
+      "grid_points": 65536,
+      "maximum_agreement": 1280,
+      "histogram_sha256": "96c4c4257ec02db78f47f9727da8132eaf1a5a3a49631ee176c3cf8bbd0a10d8"
+    }
+  ],
+  "outside_subgroup_controls": [
+    {
+      "width": 1,
+      "ambient_order": 4,
+      "outside_slope_cases": 32,
+      "maximum_agreement": 2,
+      "agreement_upper": 2
+    },
+    {
+      "width": 1,
+      "ambient_order": 8,
+      "outside_slope_cases": 384,
+      "maximum_agreement": 2,
+      "agreement_upper": 2
+    },
+    {
+      "width": 2,
+      "ambient_order": 8,
+      "outside_slope_cases": 256,
+      "maximum_agreement": 4,
+      "agreement_upper": 4
+    },
+    {
+      "width": 2,
+      "ambient_order": 16,
+      "outside_slope_cases": 3072,
+      "maximum_agreement": 4,
+      "agreement_upper": 4
+    },
+    {
+      "width": 3,
+      "ambient_order": 16,
+      "outside_slope_cases": 2048,
+      "maximum_agreement": 8,
+      "agreement_upper": 8
+    },
+    {
+      "width": 3,
+      "ambient_order": 32,
+      "outside_slope_cases": 24576,
+      "maximum_agreement": 8,
+      "agreement_upper": 8
+    }
+  ],
+  "divisor_slice_controls": [
+    {
+      "degree": 1,
+      "distinct_slices": 4,
+      "maximum_slope": 9,
+      "maximum_pullback_degree": 246,
+      "declared_bound": 246,
+      "affine_slices": 5,
+      "affine_pullback_degree": 366,
+      "affine_declared_bound": 368
+    },
+    {
+      "degree": 2,
+      "distinct_slices": 7,
+      "maximum_slope": 17,
+      "maximum_pullback_degree": 1740,
+      "declared_bound": 1968,
+      "affine_slices": 8,
+      "affine_pullback_degree": 2172,
+      "affine_declared_bound": 2930
+    },
+    {
+      "degree": 3,
+      "distinct_slices": 10,
+      "maximum_slope": 25,
+      "maximum_pullback_degree": 5634,
+      "declared_bound": 6642,
+      "affine_slices": 11,
+      "affine_pullback_degree": 6570,
+      "affine_declared_bound": 9884
+    },
+    {
+      "degree": 8,
+      "distinct_slices": 25,
+      "maximum_slope": 65,
+      "maximum_pullback_degree": 101424,
+      "declared_bound": 125952,
+      "affine_slices": 26,
+      "affine_pullback_degree": 107760,
+      "affine_declared_bound": 187394
+    },
+    {
+      "degree": 31,
+      "distinct_slices": 94,
+      "maximum_slope": 249,
+      "maximum_pullback_degree": 5766186,
+      "declared_bound": 7328586,
+      "affine_slices": 95,
+      "affine_pullback_degree": 5859186,
+      "affine_declared_bound": 10903508
+    },
+    {
+      "degree": 256,
+      "distinct_slices": 769,
+      "maximum_slope": 2049,
+      "maximum_pullback_degree": 3224372736,
+      "declared_bound": 4127195136,
+      "affine_slices": 770,
+      "affine_pullback_degree": 3230670336,
+      "affine_declared_bound": 6140461058
+    }
+  ],
+  "source": {
+    "author": "J. S. Milne",
+    "title": "Abelian Varieties",
+    "version": "2.00, March 2008",
+    "url": "https://www.jmilne.org/math/CourseNotes/AVc.pdf",
+    "standard_results": [
+      "I Theorem 3.2",
+      "I Corollary 3.7",
+      "I Theorem 7.2"
+    ]
+  },
+  "checker_sha256": "1df44a89efc3ce838dd5180cb360187787e99213fc8d34117525abff0fa07a43",
+  "factoring_exponent": "1/2; unchanged"
+}
