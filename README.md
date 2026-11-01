@@ -2366,11 +2366,11 @@ show how exact prefix counts or a truncated min-plus contraction can select
 the smallest factor for arbitrary inputs; the direct whole-root contractor
 is only certified at linear width, and the recursive all-input cost remains
 open.
-The unmodified public macro network also has a line-graph-of-complete-bipartite
-minor in its bit-variable primal graph, forcing linear treewidth and ruling
-out a subexponential gain from dense-table elimination alone. This is
-specific to that representation; structured transform circuits remain an
-open route to test ([treewidth analysis](research/sanftenberg-transform-treewidth-floor.md)).
+The unmodified public macro network has linear treewidth under dense-table
+elimination. Its radix-2 expansion into four-word butterfly tables still has
+a treewidth lower bound of `Omega(ell/sqrt(log ell))`, matching the half-rate
+scale; whether bit-level arithmetic circuits reduce the width remains open
+([treewidth analysis](research/sanftenberg-transform-treewidth-floor.md)).
 
 ## Sparse oriented power prefixes
 
