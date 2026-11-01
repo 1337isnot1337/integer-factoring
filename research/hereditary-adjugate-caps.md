@@ -8,10 +8,11 @@ always uses the smallest paired energies, so no subset enumeration is
 needed when compiling the constraints.
 
 The [zero-energy instance](zero-energy-hereditary-adjugate.md) rules out
-the formerly retained five-letter target. A new **integer six-letter
-point of the stronger relaxation** survives every compiled inequality and
-has rigorously negative pressure. It is not a realizing tensor or a
-factoring algorithm. The established score remains `1/2`.
+the formerly retained five-letter target. The integer six-letter point
+below survives these square-subalphabet inequalities and has rigorously
+negative relaxed pressure. **It is nevertheless impossible:** the later
+[rectangular cofactor-jet cap](https://github.com/1337isnot1337/integer-factoring/blob/365f319fbb62c734bb409c93d39323d566b87c49/research/rectangular-adjugate-first-jet.md)
+excludes it by the exact calculation below. The established score remains `1/2`.
 
 ## 1. The inherited constraints
 
@@ -96,7 +97,7 @@ bound for those profile indices.
 The [compiler](../tools/hereditary_adjugate_caps.py) constructs all these
 constraints exactly using rational arithmetic.
 
-## 4. A surviving integer six-letter target
+## 4. A square-relaxation point excluded by rectangular restrictions
 
 Take deficit six, both paired lists `(0,0,12,16,18,24)`, and both target
 profiles equal to
@@ -112,16 +113,31 @@ inequalities hold exactly. At scale `1/6`, 100-bit outward dyadic
 arithmetic proves critical pressure **less than `-1/250`**. Its numerical
 value is approximately `-0.00467945`.
 
-This is a point of necessary inequalities, not a tensor. A balanced
-splitting of the paired energies suggests a degree-54 coefficient window
-for an attempted realization. Neither feasibility of that realization
-nor global optimality of this relaxed point is claimed.
+This is a point of the declared square-subalphabet relaxation. It cannot
+be realized, regardless of polynomial degree, coefficient field or local
+frames. Apply equation (5) of the credited rectangular cofactor-jet note
+to the two smallest X energies and all six Y energies. Here `n=12`,
+operator-channel rank bound `h=4`, nullity `c=8`, and
+`W=6*sum(X[:2])+2*sum(Y)=140`. At `k=n`, its inequality is
+
+```
+12 S11(r) + 88 s2 <= 12*(11*6+140)-140 = 2332.
+```
+
+Our point has `S11=162` and `s2=6`, so its left side is **2472**,
+exceeding the cap by **140**. The reverse orientation also holds; averaging
+therefore excludes the entire sector with `S11(gamma)>=162` and
+`S2(gamma)>=6`, where `gamma=(r+s)/2`. The
+[specialization checker](../tools/check_hereditary_q6_rectangular_rejection.py)
+and [rejection receipt](../evidence/hereditary-q6-rectangular-rejection.json)
+pin this arithmetic and its source theorem. No new cofactor theorem is
+claimed here; the rectangular result is the input that resolves this point.
 
 Its saturated four-prefix and third prefix 13 still trigger the
 [elementary parity-core obstruction](zero-energy-parity-core.md) if the
 two zero-energy labels have opposite parity and their core preserves
-parity. Same-parity zero labels or parity mixing in that core remain
-available for this six-letter target.
+parity. Those restrictions are weaker than the rectangular rejection:
+same-parity labels and parity mixing cannot rescue this target.
 
 The [discovery driver](../tools/search_integer_hereditary_q6.py) uses a
 bounded integer convex search. Its solver status does not establish the
@@ -146,7 +162,9 @@ Run `make verify-hereditary-adjugate`. To repeat the optional discovery:
 python tools/search_integer_hereditary_q6.py --output /tmp/hereditary-q6.json
 ```
 
-The six-letter point requires a new crossing construction. A later
+Run `make verify-hereditary-q6-rejection` for the later rectangular rejection.
+The historical square-relaxation replay remains valid within its stated
+constraint list; its negative pressure does not imply realizability. A later
 [clean full replay](../evidence/hereditary-full-verification.json) at exact
 `d31ffec` passed defaults and all nine named joint/hereditary targets:
 350 Python command blocks, 66 unit tests, five crossing tests and

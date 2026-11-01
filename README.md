@@ -2057,12 +2057,13 @@ rational construction interfaces remain available, and the score is **1/2**.
 
 [Hereditary adjugate caps for every smaller alphabet](research/hereditary-adjugate-caps.md)
 extend the restriction argument to all subalphabet sizes. Exact rational
-constraints reduce to the smallest paired energies. A new 36-order integer
-six-letter target passes every compiled cell/shared and inherited adjugate
-cap; 100-bit outward arithmetic certifies pressure below `-1/250`.
-This restores a concrete open target after the five-letter rejection,
-but supplies no tensor or stronger factoring algorithm. Run
-`make verify-hereditary-adjugate` for the complete cap and pressure replay.
+constraints reduce to the smallest paired energies. A 36-order integer
+six-letter point passes these square constraints and has relaxed pressure
+below `-1/250`, but the later credited rectangular cofactor-jet theorem
+**excludes that point**: its `2x6` restriction demands `2472<=2332`.
+Run `make verify-hereditary-adjugate verify-hereditary-q6-rejection` for
+the historical relaxation and the exact rejection. No realizing tensor or
+stronger factoring algorithm is supplied.
 
 The [latest full verification receipt](evidence/hereditary-full-verification.json)
 pins a successful clean default replay and all nine named joint/hereditary
