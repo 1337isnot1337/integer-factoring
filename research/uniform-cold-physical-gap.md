@@ -1,5 +1,10 @@
 # A uniform cold-tail bound for moving physical gauges
 
+Combined with the full endpoint prefixes, this lemma now gives a
+[dimension-uniform axis window](uniform-polynomial-axis-window.md),
+including the intermediate moving-height regimes near either axis.
+The quantitative cold bound below is also valid at interior angles.
+
 ## Question, result and scope
 
 The [fixed-gauge axis theorem](polynomial-crossing-axis-obstruction.md)

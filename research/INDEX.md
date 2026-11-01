@@ -1,5 +1,7 @@
 # Research index
 
+- [A universal axis window for strict polynomial crossings](uniform-polynomial-axis-window.md): endpoint majorization, a quantified partition deficit and the cold bound give a neighborhood depending only on alphabet size, uniformly over all physical heights, tensors, degrees and scales. It closes the moving-gauge axis escape for this pressure framework; interior weights and other methods remain open.
+
 - [A uniform cold-tail bound for moving gauges](uniform-cold-physical-gap.md): the first two shared prefixes imply a joint two-gap bound at every angle. Arbitrary strict Laurent-polynomial crossings and moving physical heights cannot meet the critical target when the scaled first physical gap exceeds an explicit O(1/min(a,b)) threshold; 408 fresh untruncated orders and exact rational threshold controls are retained. Degenerate grounds and intermediate regimes remain open.
 
 - [A decomposable high-axis quadratic flag](high-axis-plucker-kernel.md): degree-64 homogeneous coefficients reduce the offending quadratic rank from 120 to 64 while preserving the endpoint. An independent binary Toeplitz certificate shows 94 channels of total order 1,608, still forcing rho at least 1/3 at every common scale and frequency.

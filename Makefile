@@ -3034,3 +3034,7 @@ verify-high-axis-plucker:
 .PHONY: verify-cold-gap
 verify-cold-gap:
 	python3 tools/check_cold_gap_bound.py
+
+.PHONY: verify-uniform-axis-window
+verify-uniform-axis-window:
+	python3 tools/check_uniform_axis_window.py

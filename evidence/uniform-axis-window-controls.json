@@ -1,0 +1,57 @@
+{
+  "status": "pass",
+  "source_receipt_sha256": "454ca1d0f2e0514dccb09926adaddcebc4321e02e49499ab56f085bbe316bab1",
+  "source_independent_orders_reused_not_recomputed": 408,
+  "source_partition_gap_controls": 576,
+  "abstract_vector_cases_not_tensors": 512,
+  "abstract_partition_gap_controls": 6144,
+  "exact_rational_Abel_controls": 512,
+  "coarse_constant_controls": [
+    {
+      "n": 2,
+      "X": 4096,
+      "log_universal_window": -8192
+    },
+    {
+      "n": 4,
+      "X": 16384,
+      "log_universal_window": -32768
+    },
+    {
+      "n": 6,
+      "X": 36864,
+      "log_universal_window": -73728
+    },
+    {
+      "n": 9,
+      "X": 82944,
+      "log_universal_window": -165888
+    },
+    {
+      "n": 15,
+      "X": 230400,
+      "log_universal_window": -460800
+    },
+    {
+      "n": 25,
+      "X": 640000,
+      "log_universal_window": -1280000
+    },
+    {
+      "n": 144,
+      "X": 21233664,
+      "log_universal_window": -42467328
+    },
+    {
+      "n": 9216,
+      "X": 86973087744,
+      "log_universal_window": -173946175488
+    }
+  ],
+  "source_sha256": {
+    "check_uniform_axis_window.py": "f202b25b2f5d96b56435539bd3645db7513ccac6c9c872ebf512037146fd824a",
+    "check_cold_gap_bound.py": "74856331b0082f1d11dc49aef90e82df6a064c24b44fd23e2dab38bf5f9d3e0b",
+    "cold_gap_bound.py": "be8e3855d897a5c02a3c6e9c84e25dd355db8eeef5dc175a59302198c11a6f3d"
+  },
+  "scope": "Analytic proof establishes the uniform window. These finite floating checks test ingredient formulas, not the exponentially small window. Abstract spectra are not tensors or favorable construction candidates. No factoring improvement or independent mathematical review."
+}
