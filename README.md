@@ -594,8 +594,12 @@ The [discrete coordinate lattice calculation](research/joint-monomial-lattice-mo
 allows singular joint monomial gauges that change both profiles. Exact
 difference constraints classify every integer charge preserving the
 original pole bound into 12 effective tensors; both profiles are
-dominated by the reference at every scale. Noncoordinate lattice
-subspaces remain open. Run `make verify-joint-monomial-lattices`.
+dominated by the reference at every scale. A subsequent all-field
+classification also closes every energy-projector modification at
+every positive depth under the stated conditions; the only four
+projectors preserve the tensor. Interacting subspaces and other
+finite places remain open. Run `make verify-joint-monomial-lattices`
+and `make verify-joint-projector-lattices`.
 
 The [group-shear extension](research/group-shear-crossings.md) implements
 the swap through three multiplication/division shears over any finite

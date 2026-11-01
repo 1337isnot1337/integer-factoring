@@ -10,8 +10,10 @@ prefix-dominated by the reference. None improves its cost at any scale
 at the inherited physical heights.
 
 The finite classification covers every integer charge in this class;
-it does not bound charges by an experimental window. It leaves
-noncoordinate lattice subspaces and changes allowing a worse pole open.
+it does not bound charges by an experimental window. Section 4 also
+classifies every energy-block projector at every positive lattice depth:
+under the stated conditions only four tensor-preserving projectors remain.
+Multiple interacting subspaces and changes allowing a worse pole stay open.
 The strongest complete factoring score remains `1/2`.
 
 ## 1. Entrywise valuations give exact difference constraints
@@ -147,11 +149,142 @@ the new leading coefficient is
 ```
 
 Thus complementary graded subspaces with these two invariant-subspace
-conditions give an explicit next search space. Equations (7)--(9) are
-ordinary block multiplication identities, not a claim that a useful
-noncoordinate projection exists. Such a projection changes the
-zero-place profile too; preserving it must not be assumed.
-Constructions allowing a worse infinity pole also remain outside this
-checkpoint. This work used substantial OpenAI assistant support and
-retains the Gaussian reference attribution. No new Lean work, improved
-coefficient-rank bound or factoring exponent is claimed.
+conditions give an explicit noncoordinate search space. A general such
+projection can change the zero-place profile too; preserving it must
+not be assumed. The next section classifies this space when the leading
+rank is also retained.
+
+## 4. Every projector and every positive depth
+
+**Theorem.** Over any characteristic-two field, let `P` be any
+energy-block idempotent, `Q=I-P`, and `k>=1` an integer. If
+
+```math
+U(t)=t^kP+Q
+```
+
+gives a polynomial seed and introduces no infinity pole below `-8`,
+then for `k>=2` the transformed seed is unchanged. For `k=1` the same
+conclusion holds if the leading realignment has rank one.
+In either case there are exactly four possible projectors: zero,
+identity, and the two coordinate projections onto the neutral support
+components in section 1. Their ranks are `0,25,13,12` respectively.
+The dimensions 13 and 12 refer to joint-state subspaces.
+
+### 4.1 One-step equations over an arbitrary field
+
+At `k=1`, the necessary and sufficient equations are
+
+```math
+P^2=P,\quad (I-P)A_0P=0,\quad PC_0(I-P)=0,             \tag{10}
+```
+
+together with leading rank one for (9). Here `A_j=[t^j]A(t)`.
+Using the last equation of (10) in characteristic two rewrites (9) as
+
+```math
+C'_0=C_0+[P,C_0]+PC_1+PC_1P.                          \tag{11}
+```
+
+The zero-energy state is a singleton block. On that state `P` is a
+scalar idempotent, hence zero or one. Therefore the `(0,0)` entry of
+the realignment `D=R(C'_0)` is exactly one. Leading rank one is
+equivalent to the complete set of pivot-minor equations
+
+```math
+D_{rc}+D_{r0}D_{0c}=0\qquad(1\le r,c\le24).            \tag{12}
+```
+
+Expand all 69 energy-block entries of `P` in a binary basis with
+arbitrary field parameters `alpha_i`. Equations (10) have degree two;
+(12) has degree at most four. Treat repeated variables as formal
+monomials: `alpha_i^2`, `alpha_i alpha_j` and higher powers are distinct.
+
+The checker first reduces each entry in (11) by the binary row space
+of (10). This preserves its value at every solution. Forming (12)
+from those reduced entries is therefore an equivalent condition in
+the presence of (10). It then performs the same all-field procedure
+as the [quadratic/Frobenius proof](joint-energy-polynomial-dressings.md#62-exact-quadratic-elimination-for-degrees-1-through-17):
+extract linear row-space consequences and pure-square consequences,
+take the valid Frobenius roots of the latter, restrict to their common
+linear kernel, and reconstruct the original equations in the new basis.
+Quartic monomials are never replaced by binary-field values.
+
+The exact chain is
+
+```text
+69 -> 13 -> 2.
+```
+
+The first stage has 1,191 distinct formal monomials and row rank 486;
+it supplies 52 independent pure-linear and 20 pure-square consequences.
+Their combined rank is 56. The next stage has 54 monomials and row
+rank 35; its consequences have combined rank 11. Every solution over
+every field in scope survives both restrictions.
+
+### 4.2 Two jets handle every larger depth without a rank hypothesis
+
+For general `k`, polynomiality is exactly
+
+```math
+QA_jP=0\quad(0\le j<k),                               \tag{13}
+```
+
+and no new infinity pole is exactly
+
+```math
+PC_jQ=0\quad(0\le j<k).                               \tag{14}
+```
+
+For `k>=2` it suffices to use the **necessary** subset with `j=0,1`
+in both (13) and (14), together with `P^2=P`. This is only a quadratic
+system, independent of `k`, and requires no leading-rank equation.
+Exact linear/pure-square row-space elimination gives
+
+```text
+69 -> 33 -> 10 -> 3 -> 2.
+```
+
+This second terminal space is the same two-dimensional space as the
+one-step quartic calculation. Thus one fixed two-jet proof covers
+every `k>=2`; no cutoff or extrapolation from finitely many depths is
+used.
+
+### 4.3 The terminal space has exactly four idempotents
+
+In both calculations the terminal basis is the pair of literal
+coordinate projections `E,F` onto
+`G0 union G2 union G3` and `G1 union G4`. Exact multiplication verifies
+
+```math
+E^2=E,\quad F^2=F,\quad EF=FE=0,\quad E+F=I,
+\quad [E,C_j]=[F,C_j]=0\quad\text{for every }j.         \tag{15}
+```
+
+They preserve energy, so they commute with `A(t)` as well. Write any
+surviving matrix as `P=alpha E+beta F`. The remaining idempotence
+equations are `alpha^2=alpha` and `beta^2=beta`. Over a field these
+force `alpha,beta in {0,1}`. Thus the only solutions are `0,E,F,I`,
+and all four satisfy every original condition and leave the tensor
+unchanged at every depth. This proves both necessity and sufficiency.
+
+The [projector checker](../tools/check_joint_projector_lattices.py)
+reconstructs both systems, both entire elimination chains, every
+terminal identity (15), and 20,000 independent dense `F4` entry
+controls for the assembled quadratic formulas. Its
+[certificate](../evidence/joint-projector-lattices.json) retains all
+linear and square-root consequences, terminal bases and source hashes.
+The initial finite-field SAT experiments are not dependencies.
+
+```sh
+make verify-joint-projector-lattices
+python3 tools/check_joint_projector_lattices.py --generate
+```
+
+This theorem leaves interacting sequences of different lattice
+subspaces, modifications at other finite places, one-step changes
+allowing a higher leading rank, and changes allowing a worse pole
+outside its scope. This work used substantial OpenAI assistant support
+and retains the Gaussian reference attribution. No new Lean work,
+independent review, improved coefficient-rank bound or factoring
+exponent is claimed.
