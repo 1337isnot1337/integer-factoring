@@ -49,6 +49,12 @@ weighted R-valued sum is not automatically an integer count or existence test.
 The complete integer multiplication representation is not supplied, and
 the factoring score remains **1/2**.
 
+The later [Artin--Hasse projection](artin-hasse-trace-projection.md) handles
+this polynomial trace input class through 2^r scalar Fourier queries at
+precision H+r. It charges r division bits and uses classical monomialwise
+splitting, giving an alternative to the growing coefficient algebra here.
+Neither construction evaluates native integer digit/division circuits.
+
 ## 1. The projector needs only a Boolean residue
 
 Retain the standard integer Hermite polynomial from the

@@ -1164,3 +1164,28 @@ contraction results are identical. The combined divided-power, packed-system,
 canonical rational and documentation targets pass at this integration
 (1,136 Markdown files). A new clean default replay is required for this
 combined source; the preceding `80835e8` receipt remains scoped as written.
+
+## Binary trace projection through classical splitting functions
+
+The [ordinary proof](../research/artin-hasse-trace-projection.md) and
+[compiler](../tools/artin_hasse_trace_carries.py) reuse the existing
+Artin--Hasse coefficient acquisition, canonical scalar ring carries and
+total unit inverses. Monomialwise Teichmuller splitting gives binary trace
+characters. Fourier projection takes 2^r scalar queries at precision P=H+r,
+then performs a known-exact coefficientwise division by 2^r. Thus no
+divided-power coefficient algebra is required for this input class.
+Full conjugacy orbits give the explicit row/carry bound
+`S_A+(2P+1)(d/w)S_B+(P-1)D` at t=w. Standard splitting-function and Fourier
+facts retain their external and repository credits.
+
+The [receipt](../evidence/artin-hasse-trace-controls.json) records 120
+full-field and four proper-subfield characters, 14 contractions against
+80 assignments, 116 pointwise polynomial characters, 14 comparisons with
+the divided-power path and five invalid-input controls. A mandatory
+counterexample shows why applying theta directly to a non-Teichmuller
+polynomial sum is wrong. Nonlinear predicates, scalar poles, punctures,
+higher coefficient digits and nonscalar weighted quotients are covered.
+The focused target and documentation checks are the local gate. A full
+default replay at `21f0790` predates this addition. Native integer digit or
+exact-division circuits and a stronger complete factoring result remain open;
+no Lean or independent mathematical review is claimed.
