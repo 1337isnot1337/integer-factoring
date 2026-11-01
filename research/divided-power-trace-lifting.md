@@ -139,7 +139,7 @@ constants have polynomial acquisition cost. Numerical degrees are parameters,
 not free binary exponents, and no arithmetic-circuit closure is assumed.
 
 By (5), their product equals product_i Exp_i(T_i). Put
-ell_k=[X^k](1-E_H(X)), and define the **R-linear** functional
+ell_k equal to the coefficient of X^k in 1-E_H(X), and define the **R-linear** functional
 
 ~~~
 Phi(gamma_e) = product_i ell_(e_i).
