@@ -1778,6 +1778,8 @@ The [complete Gaussian coefficient fibers](research/cube-complete-coefficient-fi
 
 The [routed rectangular Fourier constructor](research/routed-rectangular-fourier-constructor.md) extends the improved constant twelve to every fixed grouping range `P<=n^delta` with `delta<1/2`. Its exact width is `lambda=6Tf/P^2+4(r+2)`, giving `P^2 lambda<=(12+4P^2/T+o(1))n` and `O(n/P)` table-query space throughout `P<=sqrt(T)`. Balanced equality relays preserve the factor-pair bijection and scalar phase recovery. This is a stronger constructor bound; the complete factoring score remains `1/2`.
 
+The [flat-tensor parity theorem](research/cube-flat-parity-floor.md) proves the exact pressure floor `rho>289/500>1/sqrt(3)` for every homogeneous flat binary cube tensor whose odd-occupation coefficients vanish, over any field. It allows arbitrary even coefficients and an arbitrary vacuum polynomial. Shared parity minors and two integer entropy inequalities establish the uniform bound; parity-breaking coefficients remain outside it.
+
 ## Contribution and attribution
 
 Start with the [contributor quickstart](docs/START_HERE.md) and

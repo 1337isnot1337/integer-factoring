@@ -2155,3 +2155,8 @@ verify-interval-bezout:
 	python3 tools/check_interval_bezout_precision.py --output /tmp/integer-factoring-interval-bezout-precision.json
 verify-balanced-bezout:
 	python3 tools/check_balanced_bezout_denominator.py --output /tmp/integer-factoring-balanced-bezout-denominator.json
+
+
+.PHONY: verify-cube-flat-parity-floor
+verify-cube-flat-parity-floor:
+	python3 tools/check_cube_flat_parity_floor.py

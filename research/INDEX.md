@@ -1193,3 +1193,8 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 
 - [Sharp all-node Bézout precision](interval-bezout-precision.md): the least denominator exponent is between `m` and `2m-2`, attaining the upper bound at every power-of-two-plus-one size, even for irregular residue-separated domains.
 - [Balanced parity interpolation](balanced-bezout-denominator.md): exact divided-difference valuations on ordered dyadic isometries prove `r=m+v2((m-1)!)` at every size; a low-moment formula and terminal-term truncation make normalized coefficient construction a precise next target.
+
+
+## A parity floor for every homogeneous flat cube tensor
+
+- [Shared parity minors and an exact entropy certificate](cube-flat-parity-floor.md)
