@@ -21,6 +21,13 @@ larger-spin, adjacent-prime or thermal-scale sweep follows. It does not
 exclude all integral spin constructions, physical types, joint endpoint
 inversions, multipoint opposite flags, or factoring algorithms.
 
+The existing [box-minor theorem](bare-seven-to-twelve-letters.md) already
+excludes a post-half bare certificate on every twelve-letter crossing.
+The inverse witnesses here explain this integral limit's stronger failure;
+they do not create an escape from that earlier uniform obstruction. Changing
+the prime or module while keeping the same bare twelve-letter interface
+cannot evade the box theorem.
+
 ## 1. Combine over the integers before reducing
 
 Use the explicit [rational Casimir construction](modular-spin-crossings.md)
