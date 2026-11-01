@@ -35,6 +35,10 @@ The composition uses the existing clique evaluator from [Anthropic's Appendix B]
 
 The result table distinguishes verified machine bounds from conditional constructions and finite experiments. A merged PR or a passing finite test does not imply independent mathematical review.
 
+The [31 October–1 November session record](research/escape-half-session-20261031.md)
+gives a reading path through the latest ordinary proofs, complete
+constructor bounds, exact crossing certificates, and finished searches.
+
 The [mixed-place Hermite construction](research/mixed-place-hermite-crossings.md)
 allows the two ranks of each piece to use different sets of interpolation
 points. An [exact basis and gauge witness](research/ternary-basis-mixed-crossing.md)

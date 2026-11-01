@@ -1,6 +1,6 @@
 # Research index
 
-Latest: [31 October ordinary-proof research session](frontier-session-20261031.md) — complete score unchanged at 1/2; exact constructors, global charge obstructions, completed finite searches, and final validation.
+Latest: [31 October–1 November ordinary-proof frontier session](escape-half-session-20261031.md) — Boolean constructors at square-root scale, exact small-code bounds, complete affine geometry, and archived searches; score remains 1/2. The [preceding 31 October session](frontier-session-20261031.md) retains its separate results and validation.
 
 This index covers research notes on `main`. Open PRs can contain later work. Each note states its own assumptions, proof scope, and evidence. An obstruction to a specific construction is not a factoring lower bound.
 
