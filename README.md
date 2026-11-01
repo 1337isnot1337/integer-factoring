@@ -2655,6 +2655,12 @@ determinant charges and complete derived profiles. This supplies stronger
 necessary constraints for weighted constructions; a global weighted
 pressure floor and a stronger factoring bound remain unproved.
 
+A [Frobenius change to the higher axis flags](research/high-axis-frobenius-residues.md)
+lowers the generic quartic rank from 46 to 28 in a degree-64 nine-axis
+kernel. An independent 120-channel prefix still excludes its desired rate
+at every scale and common occupied frequency. This kernel stops; the
+result does not exclude every high-axis construction.
+
 The [latest full verification receipt](evidence/higher-words-full-verification.json)
 pins a successful clean default replay and fifteen named joint/cofactor
 targets to exact `269efb8`: 356 Python command blocks, 66 unit tests,

@@ -1,5 +1,7 @@
 # Research index
 
+- [Frobenius residues in the higher axis flags](high-axis-frobenius-residues.md): degree-64 endpoint coefficients reduce generic quartic rank from 46 to 28; independent Toeplitz ranks 840/960 give 120 orders of total 2520, excluding this explicit nine-axis kernel at every scale and common occupied frequency.
+
 - [Independent physical energies in box-minor budgets](graded-box-minor-caps.md): all-field scalar original and word-adjugate constraints with exact low/top energy charges; 36 signed Laurent controls retain 348 determinant polynomials and 696 complete orders. No global weighted pressure floor is claimed.
 
 - [Box budgets on the word-controlled adjugate](box-adjugate-word-caps.md): all-field scalar bare constraints at every physical subalphabet, with complete polynomial controls; 52 oriented violations exclude the recorded q13 seven-family point. No universal q13 rate floor follows.

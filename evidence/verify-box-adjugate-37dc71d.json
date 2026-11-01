@@ -1,0 +1,47 @@
+{
+  "source_commit": "37dc71d968122bc75db06c53f7a6a4dd3b2ee060",
+  "source_tree": "0617454556ee1fe9bd0c3fae33294a264504456c",
+  "started_utc": "2026-11-01T17:36:04.717814+00:00",
+  "commands": [
+    [
+      "make",
+      "verify"
+    ],
+    [
+      "make",
+      "verify-box-adjugate-words",
+      "verify-q13-joint-word-target",
+      "verify-nonclifford-css"
+    ]
+  ],
+  "pre_status": "",
+  "status": "pass",
+  "results": [
+    {
+      "command": [
+        "make",
+        "verify"
+      ],
+      "returncode": 0,
+      "seconds": 726.0865043438971
+    },
+    {
+      "command": [
+        "make",
+        "verify-box-adjugate-words",
+        "verify-q13-joint-word-target",
+        "verify-nonclifford-css"
+      ],
+      "returncode": 0,
+      "seconds": 31.132756534032524
+    }
+  ],
+  "seconds": 757.2196398340166,
+  "finished_utc": "2026-11-01T17:48:43.937477+00:00",
+  "post_status": "",
+  "stdout": {
+    "path": "evidence/verify-box-adjugate-37dc71d.stdout.txt.xz",
+    "uncompressed_sha256": "ecd98022ce98cd7cc990902bf81b4f1cc4cc19938070de064d42490b6163caf4",
+    "compressed_sha256": "64ba1f83e9cd369ce422f2b67a1ae0fca14bf0d22542d3f6ca553c1a5e9a9120"
+  }
+}

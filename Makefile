@@ -2311,6 +2311,10 @@ verify-box-adjugate-words:
 verify-graded-box-minors:
 	python3 tools/check_graded_box_minor_caps.py
 
+.PHONY: verify-high-axis-frobenius-residues
+verify-high-axis-frobenius-residues:
+	python3 tools/check_high_axis_frobenius_residues.py
+
 .PHONY: verify-multiaxis-cube
 verify-multiaxis-cube:
 	python3 tools/check_multiaxis_cube_transfer.py

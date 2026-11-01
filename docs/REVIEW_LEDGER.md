@@ -626,6 +626,33 @@ Focused replay and documentation checks validate this finite audit. The
 separate full run at `d159502` predates this addition. No new Lean or
 independent mathematical review is claimed.
 
+## Frobenius residue kernel and exact high-axis stop
+
+The [new fixed coefficient relation](../research/high-axis-frobenius-residues.md)
+has generic quartic rank 28 rather than 46, with complete symbolic factor
+identities. Its first registered specialization already stops the kernel:
+independent binary Toeplitz ranks 840/960 imply 120 orders of total 2520,
+and the retained-channel entropy argument proves the all-scale/common-frequency
+floor `1/3`. The [controls](../evidence/high-axis-frobenius-residue-controls.json)
+retain 280/560 symbolic monomial counts, 13122 literal entry comparisons,
+96 independent complete small orders and all 29 Toeplitz ranks. The
+[diagnostic](../evidence/high-axis-frobenius-residues.json) retains the
+complete specialized native profile and explicit early stop; later field
+patterns were not run. No generic favorable profile, broader high-axis
+exclusion or stronger factoring score is claimed. No new Lean.
+
+## Exact box-adjugate integration replay at `37dc71d`
+
+The clean frozen source `37dc71d968122bc75db06c53f7a6a4dd3b2ee060`,
+tree `0617454556ee1fe9bd0c3fae33294a264504456c`, passed the default suite
+in 726.09 seconds and the box-adjugate, updated q13 point and non-Clifford
+CSS focused targets in 31.13 seconds. The
+[receipt](../evidence/verify-box-adjugate-37dc71d.json) and
+[complete compressed log](../evidence/verify-box-adjugate-37dc71d.stdout.txt.xz)
+retain exact commands and clean pre-run/post-run status. Later graded
+boxes and the Frobenius kernel have separate focused checks; this receipt
+is not a full run of their later source. No new Lean is included.
+
 ## Graded original and word-adjugate box budgets
 
 The [ordinary extension](../research/graded-box-minor-caps.md) retains
