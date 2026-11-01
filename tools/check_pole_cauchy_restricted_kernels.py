@@ -78,8 +78,28 @@ def controls():
                              "compiler_total_degree": actual["compiler"]["total_degree"],
                              "pole_polynomial_contractions": actual["pole_polynomial_contractions"],
                              "residue": actual["residue"]})
+    # Force nonzero restricted values, including an external dyadic division.
+    # Random residue classes above can be empty or vanish at low precision.
+    nonzero = []
+    circuit = [('var', 0), ('var', 1), ('const', 2), ('mul', 1, 2), ('add', 0, 3)]
+    nodes = [1, 3, 5]
+    dense = inverse(matrix_at(15, nodes, nodes, 5))
+    for a, b in ((1, 1), (3, 5), (5, 3)):
+        for division in (0, 1):
+            actual = inverse_restricted_analytic_kernel(
+                15, ((1, 3),), ((1, 3),), 5, circuit, a, 3, b, 3,
+                5, denominator_bits=division)
+            expected = dense[nodes.index(b)][nodes.index(a)] * (a + 2 * b)
+            expected *= 1 << actual['inverse_normalization_exponent']
+            residue = mod_pair(expected, 5 + division)
+            assert tuple(actual['residue']) == residue != (0, 0)
+            assert actual['scale_exponent'] == -division
+            nonzero.append({'row': a, 'column': b, 'denominator_bits': division,
+                            'residue': list(residue), 'absolute_precision': 5})
     return {"exact_polynomial_selector_products": polynomial_checks,
-            "dense_restricted_joint_kernel_contractions": dense_checks, "examples": examples}
+            "dense_restricted_joint_kernel_contractions": dense_checks, "examples": examples,
+            "nonzero_singleton_kernel_controls": len(nonzero),
+            "nonzero_singleton_examples": nonzero}
 
 
 def large_control():

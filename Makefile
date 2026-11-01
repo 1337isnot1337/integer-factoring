@@ -2073,3 +2073,8 @@ verify-cube-generic-smith:
 .PHONY: verify-f4-global-restarts
 verify-f4-global-restarts:
 	OPENBLAS_NUM_THREADS=1 python3 tools/check_f4_recentered_walks.py evidence/f4-global-restart-controls-search.json --output /tmp/integer-factoring-f4-global-restart-controls.json
+
+
+.PHONY: verify-pole-cauchy-spectral-trace
+verify-pole-cauchy-spectral-trace:
+	python3 tools/check_pole_cauchy_spectral_trace.py --output /tmp/integer-factoring-pole-cauchy-spectral-trace.json

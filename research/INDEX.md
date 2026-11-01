@@ -1136,3 +1136,8 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 ## Exact generic cube profile computation
 
 - [Generic Smith profiles from homogeneous finite-field specialization](cube-generic-smith-specialization.md)
+
+
+## Explicit spectral aggregation contracts
+
+- [A degree-linear spectral trace interface and padded one-trace reduction](pole-cauchy-spectral-trace.md)
