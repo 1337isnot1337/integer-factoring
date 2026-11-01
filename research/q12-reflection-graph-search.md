@@ -113,6 +113,22 @@ make verify-q12-reflection-graphs-independent
 python3 tools/search_q12_reflection_graphs.py --manifest evidence/q12-reflection-graphs-manifest.json --output /path/q12-walk.json
 ```
 
+## Completed raw-support tracks at `10aed41`
+
+The [complete registered ledger](../evidence/q12-reflection-graphs-search-complete.json.xz)
+retains the three starts and every proposal of both 1,800-second tracks.
+The single-coordinate track attempted 173 proposals and 7,797 successful
+complete queries; the multi-coordinate track attempted 170 proposals and
+5,178 queries. Including the initial fits, there were 13,254 successful
+queries and no rejected query. Elapsed time, including the initial fits,
+was 3,617.23 seconds.
+
+Only two initial fits reported convergence. Across the entire ledger,
+340 attempts hit the trial/global time cap and four hit the iteration
+cap. Every partial status and best/last point is retained. Both tracks
+kept the initial best support `1.0053988159437441`, above one. This is a
+completed timed attempt ledger, not a global gauge or chart exclusion.
+
 Cinna Davis / 1337isnot1337 directed this work with substantial OpenAI
 assistant support. Existing reflection, split, Smith and asymmetric/Gibbs
 pressure implementations are reused with their attribution preserved.

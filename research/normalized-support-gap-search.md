@@ -73,6 +73,24 @@ make verify-normalized-support-gap
 python3 tools/search_q12_reflection_graphs.py --manifest evidence/q12-normalized-gap-manifest.json --output /path/normalized-gap.json
 ```
 
+## Completed normalized-gap tracks at `67a0666`
+
+The [complete ledger](../evidence/q12-normalized-gap-complete.json.xz)
+retains both 1,800-second tracks and all initial/fixed-angle starts.
+The balanced track attempted 174 proposals and 11,166 complete queries;
+the free-angle track attempted 173 proposals and 6,423 queries. Including
+starts, the run made 18,246 successful complete queries with zero
+rejections in 3,631.94 seconds.
+
+No optimizer reported convergence: 347 attempts reached the time cap,
+and four reached the iteration cap. Their bounded best/last points and
+statuses are retained. Neither track improved its initial normalized
+objective. Its retained best support is about `1.013947250012`, with
+normalized gap about `0.0278945000234`, above zero. The separately
+recorded minimum-support query must not be confused with this best-gap
+point. These outcomes provide no exact pressure certificate, global
+optimum or improved factoring score.
+
 Directed by Cinna Davis / 1337isnot1337 with substantial OpenAI assistant
 support. The existing complete Smith, Gibbs/support gradient and literal
 reflection/split implementations retain their attribution. No new Lean
