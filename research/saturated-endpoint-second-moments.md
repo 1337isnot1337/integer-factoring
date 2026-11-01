@@ -110,3 +110,20 @@ when the weak minimum is multiple: for large fixed `x`, the coefficient
 such case and every saturated simple case with `V<=0` for independent
 profile replay. It does not vary the recorded heights or certify an
 unseen profile. No result of this filter is asserted at registration.
+
+The [completed exact filter](../evidence/principal-endpoint-moment-filter.json)
+checks all **90,584** registered endpoint states: 89,645 have positive
+first-order gap and 939 have zero gap. Every zero-gap weak minimum is
+simple; the least variance difference among them is exactly `1/2`.
+No candidate satisfies either sufficient criterion. These are exact
+arithmetic statements about the retained inherited profiles, not a
+free-height exclusion.
+
+The later [polynomial-axis theorem](polynomial-crossing-axis-obstruction.md)
+now proves a global positive variance floor
+`V >= (s_2-s_1)^2/(2*(AB-2))` whenever `D=0` and the weak minimum is
+simple in a strict Laurent-polynomial crossing. It therefore prevents
+the nonpositive-variance condition throughout that class and excludes
+both axes at every scale for each fixed physical gauge. Rational paths
+with additional poles, general type-only endpoints, moving heights and
+interior angles retain their separate obligations.

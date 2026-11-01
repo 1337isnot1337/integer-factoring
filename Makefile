@@ -2493,6 +2493,12 @@ verify-pencil-uniform-transport:
 
 verify-frontier: verify-pencil-uniform-transport
 
+.PHONY: verify-polynomial-crossing-axis
+verify-polynomial-crossing-axis:
+	python3 tools/check_polynomial_crossing_axis.py --recorded-principal
+
+verify-frontier: verify-polynomial-crossing-axis
+
 .PHONY: verify-smith-chambers-f4
 verify-smith-chambers-f4:
 	OPENBLAS_NUM_THREADS=1 python3 tools/check_smith_chambers_f4.py --output /tmp/smith-chambers-f4.json

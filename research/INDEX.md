@@ -1,5 +1,7 @@
 # Research index
 
+- [Fixed physical heights exclude both supporting axes at every scale](polynomial-crossing-axis-obstruction.md): all-field strict Laurent-polynomial endpoint majorization and a positive saturated variance floor imply a scale-uniform axis neighborhood for each fixed gauge. Interior angles and moving heights remain open; 496 independent orders and every recorded principal prefix are checked.
+
 - [A second-moment test at a saturated supporting endpoint](saturated-endpoint-second-moments.md): a simple weak minimum, zero mean gap and nonpositive variance difference suffice for a coupled angle/scale improvement. The four-letter reference has exact variance gap one; a registered search tests free strong-place heights, without claiming a new bound.
 
 - [Principal paired alphabets on the retained five-letter pencil](pencil-principal-alphabets.md): exact physical restrictions explore the boundary outside the previous bounded-height run; fifty independent orders and a registered 45,292-case screen with explicit follow-on selection. No new contraction.

@@ -99,6 +99,10 @@ The [principal-pencil screen](research/pencil-principal-alphabets.md)
 completed all 45,292 independently paired subsets of the 67 retained
 five-letter points and 753,750 channel orders. Its 140 proper-alphabet
 free-height asymmetric trials remain above the threshold; all data are retained.
+A [polynomial-axis theorem](research/polynomial-crossing-axis-obstruction.md)
+excludes either supporting axis at every intrinsic scale for each fixed
+physical gauge over every field. The proof uses endpoint majorization and
+a strict shared-minor variance floor; moving gauges and interior angles remain open.
 
 ## Arithmetic construction and space bounds
 
