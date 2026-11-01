@@ -211,6 +211,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Finite fused six-vertex crossings](finite-fused-six-vertex-crossings.md): literal three- and four-symbol F16 fusion, exact common-factor cancellation, 24 independent binary profiles, and 144 replayed full-gauge starts; the completed finite searches remain uncompetitive.
 - [Binary scalar projection and a complete fused coefficient envelope](fused-scalar-projection-envelope.md): exhaustive rank-span separation excludes every binary decomposition in the 21-dimensional symmetric two-copy space, with an independent affine-hyperplane replay.
 - [A primary-character code bounds every unprojected tensor length](fused-primary-character-code.md): weighted distance three tensorizes to an opposite-cut rank bound for every nonzero coefficient recombination and a uniform `rho>=3/4` obstruction before scalar or physical projection.
+- [An energy-refined Newton ceiling for arbitrary rational gauges](joint-graded-newton-ceiling.md): block-scalar characteristic coefficients bound every zero Smith prefix over all characteristic-two fields, without restrictions on gauge degree or distinguished-place poles; attainability and opposite-cut costs remain open.
 
 - [Exact F4 regular row fibers](colored-regular-row-fibers.md): nonbinary polynomial row operations preserve a common binary affine floor, allowing exact compressed F4 synthesis with complete coefficient windows and literal untruncated tensor replays.
 

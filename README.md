@@ -884,6 +884,13 @@ code distance of three; tensorizing that distance bounds every nonzero
 piece's opposite-cut rank. This theorem retains the nonsemisimple blocks
 and leaves scalar projections and physical type restrictions open.
 Run `make verify-fused-primary-code`.
+The [energy-refined Newton ceiling](research/joint-graded-newton-ceiling.md)
+constrains the zero Smith profile under every rational energy gauge,
+including gauges singular at zero. An explicit block-scalar diagonal
+reveals characteristic-polynomial invariants hidden by cancellations in
+the ordinary characteristic polynomial. The exact ceiling still leaves
+room to improve the current zero profile; its attainability and the effect
+on the infinity cut remain open. Run `make verify-joint-graded-newton`.
 
 The [group-shear extension](research/group-shear-crossings.md) implements
 the swap through three multiplication/division shears over any finite

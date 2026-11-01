@@ -203,6 +203,10 @@ verify-fused-scalar-projection:
 verify-fused-primary-code:
 	python3 tools/check_fused_primary_code.py
 
+.PHONY: verify-joint-graded-newton
+verify-joint-graded-newton:
+	python3 tools/check_joint_graded_newton.py
+
 .PHONY: verify-group-shears
 verify-group-shears:
 	python3 tools/check_group_shear_crossings.py
