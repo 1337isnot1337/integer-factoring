@@ -1,0 +1,3499 @@
+{
+  "scope": "Complete finite norm-search controls and bounded exact factoring runs; no asymptotic search or generation claim",
+  "discriminants": [
+    -23,
+    -31,
+    -47,
+    -71,
+    -84,
+    -144,
+    -999,
+    -1007
+  ],
+  "smooth_bounds": [
+    2,
+    3,
+    5,
+    7,
+    11
+  ],
+  "norm_caps": [
+    20,
+    100,
+    500
+  ],
+  "multiplicity_budgets": [
+    0,
+    1,
+    2,
+    4,
+    8
+  ],
+  "brute_force_existence_controls": 6000,
+  "successful_search_controls": 3252,
+  "exhausted_search_controls": 2748,
+  "modular_root_controls": 6264,
+  "all_root_progression_controls": 242,
+  "multiplicity_obstruction": {
+    "integer": 10000001,
+    "form": [
+      81,
+      8,
+      123457
+    ],
+    "search": {
+      "vector": null,
+      "norm": null,
+      "multiplicity": null,
+      "maximum_norm": 29791,
+      "rows_visited": 1,
+      "coordinate_points_visited": 1,
+      "primitive_coprime_candidates": 1,
+      "modular_strikes": 1,
+      "prime_divisions": 4,
+      "exhausted": true
+    },
+    "nonzero_second_coordinate_norm_lower_bound": [
+      10000001,
+      81
+    ]
+  },
+  "factoring_pipeline_records": [
+    {
+      "integer": 1022117,
+      "input_bits": 20,
+      "discriminant": -4088468,
+      "smooth_bound": 127,
+      "word_budget": 20,
+      "diagonal_parameter": 21,
+      "maximum_expansions_per_target": 8,
+      "complete_class_group_enumerated": false,
+      "generator_orders_searched": false,
+      "finite_cutoff_certified_to_generate_full_group": false,
+      "factor_base_primes": [
+        3,
+        7,
+        11,
+        17,
+        19,
+        23,
+        43,
+        61,
+        67,
+        79,
+        83,
+        103,
+        113
+      ],
+      "status": "factor",
+      "method": "searched short norms, relation determinant, early ambiguous extraction",
+      "relation_rows_completed": 13,
+      "relation_determinant_bits": 57,
+      "ambiguous_extraction": {
+        "factor": 1009,
+        "ambiguous_form": [
+          1011,
+          4,
+          1011
+        ],
+        "stats": {
+          "generators_processed": 1,
+          "group_multiplications": 81,
+          "group_inversions": 0,
+          "tested_tops": 1,
+          "cancellations": 0,
+          "order_swaps": 0,
+          "peak_retained_cyclic_directions": 0
+        }
+      },
+      "coordinate_points_visited": 103,
+      "modular_strikes": 121,
+      "prime_divisions": 154,
+      "maximum_witness_norm": 13041,
+      "factor": 1009,
+      "witnesses": [
+        {
+          "generator_prime": 3,
+          "target_form": [
+            874,
+            -814,
+            1359
+          ],
+          "represented_norm": 1419,
+          "primitive_vector": [
+            1,
+            1
+          ],
+          "multiplicity": 3,
+          "prime_word": [
+            [
+              3,
+              1
+            ],
+            [
+              11,
+              -1
+            ],
+            [
+              43,
+              1
+            ]
+          ],
+          "search_attempts": [
+            {
+              "vector": [
+                1,
+                1
+              ],
+              "norm": 1419,
+              "multiplicity": 3,
+              "maximum_norm": 5436,
+              "rows_visited": 2,
+              "coordinate_points_visited": 5,
+              "primitive_coprime_candidates": 4,
+              "modular_strikes": 6,
+              "prime_divisions": 7,
+              "exhausted": false
+            }
+          ]
+        },
+        {
+          "generator_prime": 7,
+          "target_form": [
+            567,
+            230,
+            1826
+          ],
+          "represented_norm": 567,
+          "primitive_vector": [
+            1,
+            0
+          ],
+          "multiplicity": 5,
+          "prime_word": [
+            [
+              3,
+              4
+            ],
+            [
+              7,
+              1
+            ]
+          ],
+          "search_attempts": [
+            {
+              "vector": [
+                1,
+                0
+              ],
+              "norm": 567,
+              "multiplicity": 5,
+              "maximum_norm": 7304,
+              "rows_visited": 1,
+              "coordinate_points_visited": 1,
+              "primitive_coprime_candidates": 1,
+              "modular_strikes": 2,
+              "prime_divisions": 5,
+              "exhausted": false
+            }
+          ]
+        },
+        {
+          "generator_prime": 11,
+          "target_form": [
+            823,
+            -14,
+            1242
+          ],
+          "represented_norm": 2079,
+          "primitive_vector": [
+            -1,
+            1
+          ],
+          "multiplicity": 5,
+          "prime_word": [
+            [
+              3,
+              -3
+            ],
+            [
+              7,
+              -1
+            ],
+            [
+              11,
+              1
+            ]
+          ],
+          "search_attempts": [
+            {
+              "vector": [
+                -1,
+                1
+              ],
+              "norm": 2079,
+              "multiplicity": 5,
+              "maximum_norm": 4968,
+              "rows_visited": 2,
+              "coordinate_points_visited": 6,
+              "primitive_coprime_candidates": 3,
+              "modular_strikes": 4,
+              "prime_divisions": 6,
+              "exhausted": false
+            }
+          ]
+        },
+        {
+          "generator_prime": 17,
+          "target_form": [
+            941,
+            236,
+            1101
+          ],
+          "represented_norm": 11457,
+          "primitive_vector": [
+            -3,
+            2
+          ],
+          "multiplicity": 4,
+          "prime_word": [
+            [
+              3,
+              -2
+            ],
+            [
+              19,
+              -1
+            ],
+            [
+              67,
+              -1
+            ]
+          ],
+          "search_attempts": [
+            {
+              "vector": null,
+              "norm": null,
+              "multiplicity": null,
+              "maximum_norm": 4404,
+              "rows_visited": 3,
+              "coordinate_points_visited": 6,
+              "primitive_coprime_candidates": 3,
+              "modular_strikes": 2,
+              "prime_divisions": 2,
+              "exhausted": true
+            },
+            {
+              "vector": [
+                -3,
+                2
+              ],
+              "norm": 11457,
+              "multiplicity": 4,
+              "maximum_norm": 17616,
+              "rows_visited": 3,
+              "coordinate_points_visited": 18,
+              "primitive_coprime_candidates": 10,
+              "modular_strikes": 14,
+              "prime_divisions": 17,
+              "exhausted": false
+            }
+          ]
+        },
+        {
+          "generator_prime": 19,
+          "target_form": [
+            459,
+            418,
+            2322
+          ],
+          "represented_norm": 459,
+          "primitive_vector": [
+            1,
+            0
+          ],
+          "multiplicity": 4,
+          "prime_word": [
+            [
+              3,
+              -3
+            ],
+            [
+              17,
+              1
+            ]
+          ],
+          "search_attempts": [
+            {
+              "vector": [
+                1,
+                0
+              ],
+              "norm": 459,
+              "multiplicity": 4,
+              "maximum_norm": 9288,
+              "rows_visited": 1,
+              "coordinate_points_visited": 1,
+              "primitive_coprime_candidates": 1,
+              "modular_strikes": 2,
+              "prime_divisions": 4,
+              "exhausted": false
+            }
+          ]
+        },
+        {
+          "generator_prime": 23,
+          "target_form": [
+            11,
+            10,
+            92922
+          ],
+          "represented_norm": 11,
+          "primitive_vector": [
+            1,
+            0
+          ],
+          "multiplicity": 1,
+          "prime_word": [
+            [
+              11,
+              1
+            ]
+          ],
+          "search_attempts": [
+            {
+              "vector": [
+                1,
+                0
+              ],
+              "norm": 11,
+              "multiplicity": 1,
+              "maximum_norm": 371688,
+              "rows_visited": 1,
+              "coordinate_points_visited": 1,
+              "primitive_coprime_candidates": 1,
+              "modular_strikes": 1,
+              "prime_divisions": 1,
+              "exhausted": false
+            }
+          ]
+        },
+        {
+          "generator_prime": 43,
+          "target_form": [
+            1071,
+            860,
+            1127
+          ],
+          "represented_norm": 1071,
+          "primitive_vector": [
+            1,
+            0
+          ],
+          "multiplicity": 4,
+          "prime_word": [
+            [
+              3,
+              2
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              17,
+              1
+            ]
+          ],
+          "search_attempts": [
+            {
+              "vector": [
+                1,
+                0
+              ],
+              "norm": 1071,
+              "multiplicity": 4,
+              "maximum_norm": 4508,
+              "rows_visited": 1,
+              "coordinate_points_visited": 1,
+              "primitive_coprime_candidates": 1,
+              "modular_strikes": 3,
+              "prime_divisions": 4,
+              "exhausted": false
+            }
+          ]
+        },
+        {
+          "generator_prime": 61,
+          "target_form": [
+            198,
+            -122,
+            5181
+          ],
+          "represented_norm": 13041,
+          "primitive_vector": [
+            -6,
+            1
+          ],
+          "multiplicity": 6,
+          "prime_word": [
+            [
+              3,
+              4
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              23,
+              1
+            ]
+          ],
+          "search_attempts": [
+            {
+              "vector": [
+                -6,
+                1
+              ],
+              "norm": 13041,
+              "multiplicity": 6,
+              "maximum_norm": 20724,
+              "rows_visited": 2,
+              "coordinate_points_visited": 19,
+              "primitive_coprime_candidates": 18,
+              "modular_strikes": 18,
+              "prime_divisions": 22,
+              "exhausted": false
+            }
+          ]
+        },
+        {
+          "generator_prime": 67,
+          "target_form": [
+            578,
+            -78,
+            1771
+          ],
+          "represented_norm": 1771,
+          "primitive_vector": [
+            0,
+            1
+          ],
+          "multiplicity": 3,
+          "prime_word": [
+            [
+              7,
+              -1
+            ],
+            [
+              11,
+              -1
+            ],
+            [
+              23,
+              -1
+            ]
+          ],
+          "search_attempts": [
+            {
+              "vector": [
+                0,
+                1
+              ],
+              "norm": 1771,
+              "multiplicity": 3,
+              "maximum_norm": 7084,
+              "rows_visited": 2,
+              "coordinate_points_visited": 7,
+              "primitive_coprime_candidates": 6,
+              "modular_strikes": 11,
+              "prime_divisions": 13,
+              "exhausted": false
+            }
+          ]
+        },
+        {
+          "generator_prime": 79,
+          "target_form": [
+            1026,
+            -554,
+            1071
+          ],
+          "represented_norm": 1071,
+          "primitive_vector": [
+            0,
+            1
+          ],
+          "multiplicity": 4,
+          "prime_word": [
+            [
+              3,
+              2
+            ],
+            [
+              7,
+              -1
+            ],
+            [
+              17,
+              1
+            ]
+          ],
+          "search_attempts": [
+            {
+              "vector": [
+                0,
+                1
+              ],
+              "norm": 1071,
+              "multiplicity": 4,
+              "maximum_norm": 4284,
+              "rows_visited": 2,
+              "coordinate_points_visited": 5,
+              "primitive_coprime_candidates": 4,
+              "modular_strikes": 6,
+              "prime_divisions": 8,
+              "exhausted": false
+            }
+          ]
+        },
+        {
+          "generator_prime": 83,
+          "target_form": [
+            51,
+            -44,
+            20051
+          ],
+          "represented_norm": 51,
+          "primitive_vector": [
+            1,
+            0
+          ],
+          "multiplicity": 2,
+          "prime_word": [
+            [
+              3,
+              -1
+            ],
+            [
+              17,
+              -1
+            ]
+          ],
+          "search_attempts": [
+            {
+              "vector": [
+                1,
+                0
+              ],
+              "norm": 51,
+              "multiplicity": 2,
+              "maximum_norm": 80204,
+              "rows_visited": 1,
+              "coordinate_points_visited": 1,
+              "primitive_coprime_candidates": 1,
+              "modular_strikes": 2,
+              "prime_divisions": 2,
+              "exhausted": false
+            }
+          ]
+        },
+        {
+          "generator_prime": 103,
+          "target_form": [
+            946,
+            934,
+            1311
+          ],
+          "represented_norm": 1323,
+          "primitive_vector": [
+            -1,
+            1
+          ],
+          "multiplicity": 5,
+          "prime_word": [
+            [
+              3,
+              -3
+            ],
+            [
+              7,
+              2
+            ]
+          ],
+          "search_attempts": [
+            {
+              "vector": [
+                -1,
+                1
+              ],
+              "norm": 1323,
+              "multiplicity": 5,
+              "maximum_norm": 5244,
+              "rows_visited": 2,
+              "coordinate_points_visited": 5,
+              "primitive_coprime_candidates": 4,
+              "modular_strikes": 6,
+              "prime_divisions": 9,
+              "exhausted": false
+            }
+          ]
+        },
+        {
+          "generator_prime": 113,
+          "target_form": [
+            134,
+            -26,
+            7629
+          ],
+          "represented_norm": 11109,
+          "primitive_vector": [
+            -5,
+            1
+          ],
+          "multiplicity": 4,
+          "prime_word": [
+            [
+              3,
+              -1
+            ],
+            [
+              7,
+              -1
+            ],
+            [
+              23,
+              -2
+            ]
+          ],
+          "search_attempts": [
+            {
+              "vector": [
+                -5,
+                1
+              ],
+              "norm": 11109,
+              "multiplicity": 4,
+              "maximum_norm": 30516,
+              "rows_visited": 2,
+              "coordinate_points_visited": 27,
+              "primitive_coprime_candidates": 26,
+              "modular_strikes": 44,
+              "prime_divisions": 54,
+              "exhausted": false
+            }
+          ]
+        }
+      ],
+      "relation_matrix": [
+        [
+          20,
+          0,
+          1,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          -4,
+          20,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          1,
+          20,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          21,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0,
+          -1,
+          21,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1,
+          0,
+          0,
+          21,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          -2,
+          -1,
+          0,
+          -1,
+          0,
+          0,
+          21,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          -4,
+          -1,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          21,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          21,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          -2,
+          1,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          21,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          21,
+          0,
+          0
+        ],
+        [
+          3,
+          -2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          21,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          21
+        ]
+      ],
+      "relation_determinant": 131999219908839360
+    },
+    {
+      "integer": 100160063,
+      "input_bits": 27,
+      "discriminant": -400640252,
+      "smooth_bound": 127,
+      "word_budget": 27,
+      "diagonal_parameter": 28,
+      "maximum_expansions_per_target": 8,
+      "complete_class_group_enumerated": false,
+      "generator_orders_searched": false,
+      "finite_cutoff_certified_to_generate_full_group": false,
+      "factor_base_primes": [
+        3,
+        7,
+        13,
+        31,
+        37,
+        43,
+        59,
+        61,
+        73,
+        79,
+        83,
+        97,
+        101,
+        107,
+        127
+      ],
+      "status": "factor",
+      "method": "searched short norms, relation determinant, early ambiguous extraction",
+      "relation_rows_completed": 15,
+      "relation_determinant_bits": 73,
+      "ambiguous_extraction": {
+        "factor": 10007,
+        "ambiguous_form": [
+          10007,
+          0,
+          10009
+        ],
+        "stats": {
+          "generators_processed": 2,
+          "group_multiplications": 210,
+          "group_inversions": 0,
+          "tested_tops": 1,
+          "cancellations": 0,
+          "order_swaps": 0,
+          "peak_retained_cyclic_directions": 0
+        }
+      },
+      "coordinate_points_visited": 330,
+      "modular_strikes": 266,
+      "prime_divisions": 332,
+      "maximum_witness_norm": 751581,
+      "factor": 10007,
+      "witnesses": [
+        {
+          "generator_prime": 3,
+          "target_form": [
+            9853,
+            -7464,
+            11579
+          ],
+          "represented_norm": 65919,
+          "primitive_vector": [
+            -2,
+            1
+          ],
+          "multiplicity": 4,
+          "prime_word": [
+            [
+              3,
+              -1
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              43,
+              1
+            ],
+            [
+              73,
+              1
+            ]
+          ],
+          "search_attempts": [
+            {
+              "vector": null,
+              "norm": null,
+              "multiplicity": null,
+              "maximum_norm": 46316,
+              "rows_visited": 3,
+              "coordinate_points_visited": 7,
+              "primitive_coprime_candidates": 4,
+              "modular_strikes": 4,
+              "prime_divisions": 5,
+              "exhausted": true
+            },
+            {
+              "vector": [
+                -2,
+                1
+              ],
+              "norm": 65919,
+              "multiplicity": 4,
+              "maximum_norm": 185264,
+              "rows_visited": 2,
+              "coordinate_points_visited": 9,
+              "primitive_coprime_candidates": 5,
+              "modular_strikes": 7,
+              "prime_divisions": 8,
+              "exhausted": false
+            }
+          ]
+        },
+        {
+          "generator_prime": 7,
+          "target_form": [
+            8169,
+            4924,
+            13003
+          ],
+          "represented_norm": 120159,
+          "primitive_vector": [
+            -2,
+            3
+          ],
+          "multiplicity": 5,
+          "prime_word": [
+            [
+              3,
+              -2
+            ],
+            [
+              13,
+              -2
+            ],
+            [
+              79,
+              -1
+            ]
+          ],
+          "search_attempts": [
+            {
+              "vector": null,
+              "norm": null,
+              "multiplicity": null,
+              "maximum_norm": 52012,
+              "rows_visited": 3,
+              "coordinate_points_visited": 7,
+              "primitive_coprime_candidates": 4,
+              "modular_strikes": 2,
+              "prime_divisions": 2,
+              "exhausted": true
+            },
+            {
+              "vector": [
+                -2,
+                3
+              ],
+              "norm": 120159,
+              "multiplicity": 5,
+              "maximum_norm": 208048,
+              "rows_visited": 4,
+              "coordinate_points_visited": 27,
+              "primitive_coprime_candidates": 14,
+              "modular_strikes": 18,
+              "prime_divisions": 24,
+              "exhausted": false
+            }
+          ]
+        },
+        {
+          "generator_prime": 13,
+          "target_form": [
+            5992,
+            522,
+            16727
+          ],
+          "represented_norm": 23241,
+          "primitive_vector": [
+            1,
+            1
+          ],
+          "multiplicity": 3,
+          "prime_word": [
+            [
+              3,
+              -1
+            ],
+            [
+              61,
+              1
+            ],
+            [
+              127,
+              -1
+            ]
+          ],
+          "search_attempts": [
+            {
+              "vector": [
+                1,
+                1
+              ],
+              "norm": 23241,
+              "multiplicity": 3,
+              "maximum_norm": 66908,
+              "rows_visited": 2,
+              "coordinate_points_visited": 6,
+              "primitive_coprime_candidates": 5,
+              "modular_strikes": 8,
+              "prime_divisions": 9,
+              "exhausted": false
+            }
+          ]
+        },
+        {
+          "generator_prime": 31,
+          "target_form": [
+            8021,
+            5734,
+            13512
+          ],
+          "represented_norm": 15799,
+          "primitive_vector": [
+            -1,
+            1
+          ],
+          "multiplicity": 3,
+          "prime_word": [
+            [
+              7,
+              1
+            ],
+            [
+              37,
+              1
+            ],
+            [
+              61,
+              1
+            ]
+          ],
+          "search_attempts": [
+            {
+              "vector": [
+                -1,
+                1
+              ],
+              "norm": 15799,
+              "multiplicity": 3,
+              "maximum_norm": 54048,
+              "rows_visited": 2,
+              "coordinate_points_visited": 5,
+              "primitive_coprime_candidates": 3,
+              "modular_strikes": 6,
+              "prime_divisions": 6,
+              "exhausted": false
+            }
+          ]
+        },
+        {
+          "generator_prime": 37,
+          "target_form": [
+            3744,
+            2846,
+            27293
+          ],
+          "represented_norm": 52451,
+          "primitive_vector": [
+            -3,
+            1
+          ],
+          "multiplicity": 3,
+          "prime_word": [
+            [
+              7,
+              1
+            ],
+            [
+              59,
+              1
+            ],
+            [
+              127,
+              1
+            ]
+          ],
+          "search_attempts": [
+            {
+              "vector": [
+                -3,
+                1
+              ],
+              "norm": 52451,
+              "multiplicity": 3,
+              "maximum_norm": 109172,
+              "rows_visited": 2,
+              "coordinate_points_visited": 11,
+              "primitive_coprime_candidates": 10,
+              "modular_strikes": 12,
+              "prime_divisions": 15,
+              "exhausted": false
+            }
+          ]
+        },
+        {
+          "generator_prime": 43,
+          "target_form": [
+            2399,
+            966,
+            41848
+          ],
+          "represented_norm": 751581,
+          "primitive_vector": [
+            17,
+            1
+          ],
+          "multiplicity": 5,
+          "prime_word": [
+            [
+              3,
+              -2
+            ],
+            [
+              37,
+              -2
+            ],
+            [
+              61,
+              -1
+            ]
+          ],
+          "search_attempts": [
+            {
+              "vector": null,
+              "norm": null,
+              "multiplicity": null,
+              "maximum_norm": 167392,
+              "rows_visited": 3,
+              "coordinate_points_visited": 17,
+              "primitive_coprime_candidates": 9,
+              "modular_strikes": 13,
+              "prime_divisions": 16,
+              "exhausted": true
+            },
+            {
+              "vector": null,
+              "norm": null,
+              "multiplicity": null,
+              "maximum_norm": 669568,
+              "rows_visited": 5,
+              "coordinate_points_visited": 86,
+              "primitive_coprime_candidates": 39,
+              "modular_strikes": 48,
+              "prime_divisions": 60,
+              "exhausted": true
+            },
+            {
+              "vector": [
+                17,
+                1
+              ],
+              "norm": 751581,
+              "multiplicity": 5,
+              "maximum_norm": 2678272,
+              "rows_visited": 2,
+              "coordinate_points_visited": 67,
+              "primitive_coprime_candidates": 34,
+              "modular_strikes": 48,
+              "prime_divisions": 62,
+              "exhausted": false
+            }
+          ]
+        },
+        {
+          "generator_prime": 59,
+          "target_form": [
+            79,
+            -36,
+            1267853
+          ],
+          "represented_norm": 79,
+          "primitive_vector": [
+            1,
+            0
+          ],
+          "multiplicity": 1,
+          "prime_word": [
+            [
+              79,
+              -1
+            ]
+          ],
+          "search_attempts": [
+            {
+              "vector": [
+                1,
+                0
+              ],
+              "norm": 79,
+              "multiplicity": 1,
+              "maximum_norm": 5071412,
+              "rows_visited": 1,
+              "coordinate_points_visited": 1,
+              "primitive_coprime_candidates": 1,
+              "modular_strikes": 1,
+              "prime_divisions": 1,
+              "exhausted": false
+            }
+          ]
+        },
+        {
+          "generator_prime": 61,
+          "target_form": [
+            2336,
+            -866,
+            42957
+          ],
+          "represented_norm": 54033,
+          "primitive_vector": [
+            -2,
+            1
+          ],
+          "multiplicity": 4,
+          "prime_word": [
+            [
+              3,
+              -1
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              31,
+              -1
+            ],
+            [
+              83,
+              -1
+            ]
+          ],
+          "search_attempts": [
+            {
+              "vector": [
+                -2,
+                1
+              ],
+              "norm": 54033,
+              "multiplicity": 4,
+              "maximum_norm": 171828,
+              "rows_visited": 2,
+              "coordinate_points_visited": 16,
+              "primitive_coprime_candidates": 15,
+              "modular_strikes": 28,
+              "prime_divisions": 34,
+              "exhausted": false
+            }
+          ]
+        },
+        {
+          "generator_prime": 73,
+          "target_form": [
+            2408,
+            -522,
+            41623
+          ],
+          "represented_norm": 155961,
+          "primitive_vector": [
+            7,
+            1
+          ],
+          "multiplicity": 5,
+          "prime_word": [
+            [
+              3,
+              2
+            ],
+            [
+              13,
+              1
+            ],
+            [
+              31,
+              -1
+            ],
+            [
+              43,
+              1
+            ]
+          ],
+          "search_attempts": [
+            {
+              "vector": [
+                7,
+                1
+              ],
+              "norm": 155961,
+              "multiplicity": 5,
+              "maximum_norm": 166492,
+              "rows_visited": 2,
+              "coordinate_points_visited": 16,
+              "primitive_coprime_candidates": 15,
+              "modular_strikes": 20,
+              "prime_divisions": 26,
+              "exhausted": false
+            }
+          ]
+        },
+        {
+          "generator_prime": 79,
+          "target_form": [
+            4463,
+            3124,
+            22989
+          ],
+          "represented_norm": 22989,
+          "primitive_vector": [
+            0,
+            1
+          ],
+          "multiplicity": 3,
+          "prime_word": [
+            [
+              3,
+              1
+            ],
+            [
+              79,
+              1
+            ],
+            [
+              97,
+              -1
+            ]
+          ],
+          "search_attempts": [
+            {
+              "vector": [
+                0,
+                1
+              ],
+              "norm": 22989,
+              "multiplicity": 3,
+              "maximum_norm": 91956,
+              "rows_visited": 2,
+              "coordinate_points_visited": 9,
+              "primitive_coprime_candidates": 5,
+              "modular_strikes": 7,
+              "prime_divisions": 9,
+              "exhausted": false
+            }
+          ]
+        },
+        {
+          "generator_prime": 83,
+          "target_form": [
+            2989,
+            1768,
+            33771
+          ],
+          "represented_norm": 2989,
+          "primitive_vector": [
+            1,
+            0
+          ],
+          "multiplicity": 3,
+          "prime_word": [
+            [
+              7,
+              2
+            ],
+            [
+              61,
+              1
+            ]
+          ],
+          "search_attempts": [
+            {
+              "vector": [
+                1,
+                0
+              ],
+              "norm": 2989,
+              "multiplicity": 3,
+              "maximum_norm": 135084,
+              "rows_visited": 1,
+              "coordinate_points_visited": 1,
+              "primitive_coprime_candidates": 1,
+              "modular_strikes": 2,
+              "prime_divisions": 3,
+              "exhausted": false
+            }
+          ]
+        },
+        {
+          "generator_prime": 97,
+          "target_form": [
+            9279,
+            898,
+            10816
+          ],
+          "represented_norm": 19197,
+          "primitive_vector": [
+            -1,
+            1
+          ],
+          "multiplicity": 6,
+          "prime_word": [
+            [
+              3,
+              5
+            ],
+            [
+              79,
+              -1
+            ]
+          ],
+          "search_attempts": [
+            {
+              "vector": [
+                -1,
+                1
+              ],
+              "norm": 19197,
+              "multiplicity": 6,
+              "maximum_norm": 43264,
+              "rows_visited": 2,
+              "coordinate_points_visited": 4,
+              "primitive_coprime_candidates": 3,
+              "modular_strikes": 4,
+              "prime_divisions": 9,
+              "exhausted": false
+            }
+          ]
+        },
+        {
+          "generator_prime": 101,
+          "target_form": [
+            3048,
+            -2854,
+            33529
+          ],
+          "represented_norm": 51429,
+          "primitive_vector": [
+            -2,
+            1
+          ],
+          "multiplicity": 4,
+          "prime_word": [
+            [
+              3,
+              -1
+            ],
+            [
+              7,
+              -1
+            ],
+            [
+              31,
+              -1
+            ],
+            [
+              79,
+              1
+            ]
+          ],
+          "search_attempts": [
+            {
+              "vector": [
+                -2,
+                1
+              ],
+              "norm": 51429,
+              "multiplicity": 4,
+              "maximum_norm": 134116,
+              "rows_visited": 2,
+              "coordinate_points_visited": 13,
+              "primitive_coprime_candidates": 12,
+              "modular_strikes": 16,
+              "prime_divisions": 18,
+              "exhausted": false
+            }
+          ]
+        },
+        {
+          "generator_prime": 107,
+          "target_form": [
+            9737,
+            6514,
+            11376
+          ],
+          "represented_norm": 9737,
+          "primitive_vector": [
+            1,
+            0
+          ],
+          "multiplicity": 3,
+          "prime_word": [
+            [
+              7,
+              1
+            ],
+            [
+              13,
+              -1
+            ],
+            [
+              107,
+              1
+            ]
+          ],
+          "search_attempts": [
+            {
+              "vector": [
+                1,
+                0
+              ],
+              "norm": 9737,
+              "multiplicity": 3,
+              "maximum_norm": 45504,
+              "rows_visited": 1,
+              "coordinate_points_visited": 1,
+              "primitive_coprime_candidates": 1,
+              "modular_strikes": 3,
+              "prime_divisions": 3,
+              "exhausted": false
+            }
+          ]
+        },
+        {
+          "generator_prime": 127,
+          "target_form": [
+            8009,
+            6654,
+            13888
+          ],
+          "represented_norm": 76869,
+          "primitive_vector": [
+            1,
+            2
+          ],
+          "multiplicity": 6,
+          "prime_word": [
+            [
+              3,
+              -4
+            ],
+            [
+              13,
+              -1
+            ],
+            [
+              73,
+              1
+            ]
+          ],
+          "search_attempts": [
+            {
+              "vector": null,
+              "norm": null,
+              "multiplicity": null,
+              "maximum_norm": 55552,
+              "rows_visited": 3,
+              "coordinate_points_visited": 7,
+              "primitive_coprime_candidates": 4,
+              "modular_strikes": 5,
+              "prime_divisions": 5,
+              "exhausted": true
+            },
+            {
+              "vector": [
+                1,
+                2
+              ],
+              "norm": 76869,
+              "multiplicity": 6,
+              "maximum_norm": 222208,
+              "rows_visited": 3,
+              "coordinate_points_visited": 20,
+              "primitive_coprime_candidates": 11,
+              "modular_strikes": 14,
+              "prime_divisions": 17,
+              "exhausted": false
+            }
+          ]
+        }
+      ],
+      "relation_matrix": [
+        [
+          29,
+          -1,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          28,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          28,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          -1,
+          0,
+          28,
+          -1,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0,
+          0,
+          28,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          2,
+          28,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          28,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          -1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          28,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          -2,
+          0,
+          -1,
+          1,
+          0,
+          -1,
+          0,
+          0,
+          28,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          27,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          -2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          28,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          -5,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          28,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          28,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          27,
+          0
+        ],
+        [
+          4,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          28
+        ]
+      ],
+      "relation_determinant": 4921875485239279744800
+    },
+    {
+      "integer": 10002200057,
+      "input_bits": 34,
+      "discriminant": -40008800228,
+      "smooth_bound": 127,
+      "word_budget": 34,
+      "diagonal_parameter": 35,
+      "maximum_expansions_per_target": 8,
+      "complete_class_group_enumerated": false,
+      "generator_orders_searched": false,
+      "finite_cutoff_certified_to_generate_full_group": false,
+      "factor_base_primes": [
+        3,
+        7,
+        17,
+        19,
+        29,
+        31,
+        37,
+        41,
+        43,
+        53,
+        59,
+        61,
+        79,
+        83,
+        97,
+        103,
+        107,
+        113,
+        127
+      ],
+      "status": "factor",
+      "method": "searched short norms, relation determinant, early ambiguous extraction",
+      "relation_rows_completed": 19,
+      "relation_determinant_bits": 98,
+      "ambiguous_extraction": {
+        "factor": 100003,
+        "ambiguous_form": [
+          100011,
+          16,
+          100011
+        ],
+        "stats": {
+          "generators_processed": 1,
+          "group_multiplications": 137,
+          "group_inversions": 0,
+          "tested_tops": 1,
+          "cancellations": 0,
+          "order_swaps": 0,
+          "peak_retained_cyclic_directions": 0
+        }
+      },
+      "coordinate_points_visited": 744,
+      "modular_strikes": 684,
+      "prime_divisions": 835,
+      "maximum_witness_norm": 10558653,
+      "factor": 100003,
+      "witnesses": [
+        {
+          "generator_prime": 3,
+          "target_form": [
+            11487,
+            6590,
+            871686
+          ],
+          "represented_norm": 2898659,
+          "primitive_vector": [
+            13,
+            1
+          ],
+          "multiplicity": 4,
+          "prime_word": [
+            [
+              19,
+              1
+            ],
+            [
+              41,
+              1
+            ],
+            [
+              61,
+              -2
+            ]
+          ],
+          "search_attempts": [
+            {
+              "vector": [
+                13,
+                1
+              ],
+              "norm": 2898659,
+              "multiplicity": 4,
+              "maximum_norm": 3486744,
+              "rows_visited": 2,
+              "coordinate_points_visited": 31,
+              "primitive_coprime_candidates": 16,
+              "modular_strikes": 19,
+              "prime_divisions": 24,
+              "exhausted": false
+            }
+          ]
+        },
+        {
+          "generator_prime": 7,
+          "target_form": [
+            25502,
+            16530,
+            394891
+          ],
+          "represented_norm": 5624703,
+          "primitive_vector": [
+            14,
+            1
+          ],
+          "multiplicity": 6,
+          "prime_word": [
+            [
+              3,
+              -2
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              19,
+              1
+            ],
+            [
+              37,
+              1
+            ],
+            [
+              127,
+              -1
+            ]
+          ],
+          "search_attempts": [
+            {
+              "vector": null,
+              "norm": null,
+              "multiplicity": null,
+              "maximum_norm": 1579564,
+              "rows_visited": 3,
+              "coordinate_points_visited": 17,
+              "primitive_coprime_candidates": 14,
+              "modular_strikes": 24,
+              "prime_divisions": 31,
+              "exhausted": true
+            },
+            {
+              "vector": [
+                14,
+                1
+              ],
+              "norm": 5624703,
+              "multiplicity": 6,
+              "maximum_norm": 6318256,
+              "rows_visited": 2,
+              "coordinate_points_visited": 31,
+              "primitive_coprime_candidates": 30,
+              "modular_strikes": 53,
+              "prime_divisions": 65,
+              "exhausted": false
+            }
+          ]
+        },
+        {
+          "generator_prime": 17,
+          "target_form": [
+            10458,
+            2054,
+            956517
+          ],
+          "represented_norm": 4381881,
+          "primitive_vector": [
+            18,
+            1
+          ],
+          "multiplicity": 5,
+          "prime_word": [
+            [
+              3,
+              -1
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              31,
+              1
+            ],
+            [
+              53,
+              -1
+            ],
+            [
+              127,
+              -1
+            ]
+          ],
+          "search_attempts": [
+            {
+              "vector": null,
+              "norm": null,
+              "multiplicity": null,
+              "maximum_norm": 3826068,
+              "rows_visited": 3,
+              "coordinate_points_visited": 35,
+              "primitive_coprime_candidates": 33,
+              "modular_strikes": 36,
+              "prime_divisions": 42,
+              "exhausted": true
+            },
+            {
+              "vector": [
+                18,
+                1
+              ],
+              "norm": 4381881,
+              "multiplicity": 5,
+              "maximum_norm": 15304272,
+              "rows_visited": 2,
+              "coordinate_points_visited": 75,
+              "primitive_coprime_candidates": 74,
+              "modular_strikes": 88,
+              "prime_divisions": 104,
+              "exhausted": false
+            }
+          ]
+        },
+        {
+          "generator_prime": 19,
+          "target_form": [
+            21079,
+            19762,
+            479142
+          ],
+          "represented_norm": 907307,
+          "primitive_vector": [
+            -5,
+            1
+          ],
+          "multiplicity": 4,
+          "prime_word": [
+            [
+              17,
+              1
+            ],
+            [
+              19,
+              1
+            ],
+            [
+              53,
+              2
+            ]
+          ],
+          "search_attempts": [
+            {
+              "vector": [
+                -5,
+                1
+              ],
+              "norm": 907307,
+              "multiplicity": 4,
+              "maximum_norm": 1916568,
+              "rows_visited": 2,
+              "coordinate_points_visited": 17,
+              "primitive_coprime_candidates": 9,
+              "modular_strikes": 14,
+              "prime_divisions": 19,
+              "exhausted": false
+            }
+          ]
+        },
+        {
+          "generator_prime": 29,
+          "target_form": [
+            85914,
+            -50114,
+            123729
+          ],
+          "represented_norm": 367157,
+          "primitive_vector": [
+            2,
+            1
+          ],
+          "multiplicity": 4,
+          "prime_word": [
+            [
+              7,
+              -2
+            ],
+            [
+              59,
+              1
+            ],
+            [
+              127,
+              1
+            ]
+          ],
+          "search_attempts": [
+            {
+              "vector": [
+                2,
+                1
+              ],
+              "norm": 367157,
+              "multiplicity": 4,
+              "maximum_norm": 494916,
+              "rows_visited": 2,
+              "coordinate_points_visited": 5,
+              "primitive_coprime_candidates": 4,
+              "modular_strikes": 5,
+              "prime_divisions": 6,
+              "exhausted": false
+            }
+          ]
+        },
+        {
+          "generator_prime": 31,
+          "target_form": [
+            98422,
+            -85474,
+            120183
+          ],
+          "represented_norm": 120183,
+          "primitive_vector": [
+            0,
+            1
+          ],
+          "multiplicity": 4,
+          "prime_word": [
+            [
+              3,
+              -1
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              59,
+              1
+            ],
+            [
+              97,
+              -1
+            ]
+          ],
+          "search_attempts": [
+            {
+              "vector": [
+                0,
+                1
+              ],
+              "norm": 120183,
+              "multiplicity": 4,
+              "maximum_norm": 480732,
+              "rows_visited": 2,
+              "coordinate_points_visited": 5,
+              "primitive_coprime_candidates": 4,
+              "modular_strikes": 8,
+              "prime_divisions": 8,
+              "exhausted": false
+            }
+          ]
+        },
+        {
+          "generator_prime": 37,
+          "target_form": [
+            29313,
+            -20810,
+            344914
+          ],
+          "represented_norm": 10558653,
+          "primitive_vector": [
+            -17,
+            2
+          ],
+          "multiplicity": 5,
+          "prime_word": [
+            [
+              3,
+              1
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              37,
+              -1
+            ],
+            [
+              107,
+              1
+            ],
+            [
+              127,
+              1
+            ]
+          ],
+          "search_attempts": [
+            {
+              "vector": null,
+              "norm": null,
+              "multiplicity": null,
+              "maximum_norm": 1379656,
+              "rows_visited": 3,
+              "coordinate_points_visited": 15,
+              "primitive_coprime_candidates": 8,
+              "modular_strikes": 8,
+              "prime_divisions": 13,
+              "exhausted": true
+            },
+            {
+              "vector": null,
+              "norm": null,
+              "multiplicity": null,
+              "maximum_norm": 5518624,
+              "rows_visited": 5,
+              "coordinate_points_visited": 73,
+              "primitive_coprime_candidates": 33,
+              "modular_strikes": 44,
+              "prime_divisions": 52,
+              "exhausted": true
+            },
+            {
+              "vector": [
+                -17,
+                2
+              ],
+              "norm": 10558653,
+              "multiplicity": 5,
+              "maximum_norm": 22074496,
+              "rows_visited": 3,
+              "coordinate_points_visited": 108,
+              "primitive_coprime_candidates": 55,
+              "modular_strikes": 70,
+              "prime_divisions": 83,
+              "exhausted": false
+            }
+          ]
+        },
+        {
+          "generator_prime": 41,
+          "target_form": [
+            40234,
+            20598,
+            251237
+          ],
+          "represented_norm": 10221573,
+          "primitive_vector": [
+            -16,
+            1
+          ],
+          "multiplicity": 5,
+          "prime_word": [
+            [
+              3,
+              1
+            ],
+            [
+              17,
+              1
+            ],
+            [
+              43,
+              1
+            ],
+            [
+              59,
+              1
+            ],
+            [
+              79,
+              1
+            ]
+          ],
+          "search_attempts": [
+            {
+              "vector": null,
+              "norm": null,
+              "multiplicity": null,
+              "maximum_norm": 1004948,
+              "rows_visited": 3,
+              "coordinate_points_visited": 12,
+              "primitive_coprime_candidates": 9,
+              "modular_strikes": 14,
+              "prime_divisions": 17,
+              "exhausted": true
+            },
+            {
+              "vector": null,
+              "norm": null,
+              "multiplicity": null,
+              "maximum_norm": 4019792,
+              "rows_visited": 5,
+              "coordinate_points_visited": 54,
+              "primitive_coprime_candidates": 28,
+              "modular_strikes": 41,
+              "prime_divisions": 47,
+              "exhausted": true
+            },
+            {
+              "vector": [
+                -16,
+                1
+              ],
+              "norm": 10221573,
+              "multiplicity": 5,
+              "maximum_norm": 16079168,
+              "rows_visited": 2,
+              "coordinate_points_visited": 41,
+              "primitive_coprime_candidates": 40,
+              "modular_strikes": 69,
+              "prime_divisions": 82,
+              "exhausted": false
+            }
+          ]
+        },
+        {
+          "generator_prime": 43,
+          "target_form": [
+            99031,
+            71124,
+            113771
+          ],
+          "represented_norm": 367647,
+          "primitive_vector": [
+            -2,
+            1
+          ],
+          "multiplicity": 5,
+          "prime_word": [
+            [
+              3,
+              -1
+            ],
+            [
+              7,
+              2
+            ],
+            [
+              41,
+              1
+            ],
+            [
+              61,
+              -1
+            ]
+          ],
+          "search_attempts": [
+            {
+              "vector": [
+                -2,
+                1
+              ],
+              "norm": 367647,
+              "multiplicity": 5,
+              "maximum_norm": 455084,
+              "rows_visited": 2,
+              "coordinate_points_visited": 5,
+              "primitive_coprime_candidates": 3,
+              "modular_strikes": 5,
+              "prime_divisions": 6,
+              "exhausted": false
+            }
+          ]
+        },
+        {
+          "generator_prime": 53,
+          "target_form": [
+            15957,
+            11882,
+            629034
+          ],
+          "represented_norm": 1327753,
+          "primitive_vector": [
+            -7,
+            1
+          ],
+          "multiplicity": 6,
+          "prime_word": [
+            [
+              7,
+              5
+            ],
+            [
+              79,
+              -1
+            ]
+          ],
+          "search_attempts": [
+            {
+              "vector": [
+                -7,
+                1
+              ],
+              "norm": 1327753,
+              "multiplicity": 6,
+              "maximum_norm": 2516136,
+              "rows_visited": 2,
+              "coordinate_points_visited": 23,
+              "primitive_coprime_candidates": 12,
+              "modular_strikes": 15,
+              "prime_divisions": 23,
+              "exhausted": false
+            }
+          ]
+        },
+        {
+          "generator_prime": 59,
+          "target_form": [
+            91783,
+            -8620,
+            109179
+          ],
+          "represented_norm": 493551,
+          "primitive_vector": [
+            -2,
+            1
+          ],
+          "multiplicity": 5,
+          "prime_word": [
+            [
+              3,
+              2
+            ],
+            [
+              29,
+              1
+            ],
+            [
+              31,
+              -1
+            ],
+            [
+              61,
+              -1
+            ]
+          ],
+          "search_attempts": [
+            {
+              "vector": null,
+              "norm": null,
+              "multiplicity": null,
+              "maximum_norm": 436716,
+              "rows_visited": 3,
+              "coordinate_points_visited": 5,
+              "primitive_coprime_candidates": 2,
+              "modular_strikes": 3,
+              "prime_divisions": 4,
+              "exhausted": true
+            },
+            {
+              "vector": [
+                -2,
+                1
+              ],
+              "norm": 493551,
+              "multiplicity": 5,
+              "maximum_norm": 1746864,
+              "rows_visited": 2,
+              "coordinate_points_visited": 10,
+              "primitive_coprime_candidates": 6,
+              "modular_strikes": 11,
+              "prime_divisions": 13,
+              "exhausted": false
+            }
+          ]
+        },
+        {
+          "generator_prime": 61,
+          "target_form": [
+            23477,
+            -1206,
+            426058
+          ],
+          "represented_norm": 640969,
+          "primitive_vector": [
+            -3,
+            1
+          ],
+          "multiplicity": 4,
+          "prime_word": [
+            [
+              7,
+              -2
+            ],
+            [
+              103,
+              -1
+            ],
+            [
+              127,
+              1
+            ]
+          ],
+          "search_attempts": [
+            {
+              "vector": [
+                -3,
+                1
+              ],
+              "norm": 640969,
+              "multiplicity": 4,
+              "maximum_norm": 1704232,
+              "rows_visited": 2,
+              "coordinate_points_visited": 16,
+              "primitive_coprime_candidates": 9,
+              "modular_strikes": 14,
+              "prime_divisions": 18,
+              "exhausted": false
+            }
+          ]
+        },
+        {
+          "generator_prime": 79,
+          "target_form": [
+            109359,
+            -98804,
+            113779
+          ],
+          "represented_norm": 2258739,
+          "primitive_vector": [
+            -4,
+            1
+          ],
+          "multiplicity": 7,
+          "prime_word": [
+            [
+              3,
+              3
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              17,
+              -1
+            ],
+            [
+              19,
+              1
+            ],
+            [
+              37,
+              -1
+            ]
+          ],
+          "search_attempts": [
+            {
+              "vector": null,
+              "norm": null,
+              "multiplicity": null,
+              "maximum_norm": 455116,
+              "rows_visited": 3,
+              "coordinate_points_visited": 7,
+              "primitive_coprime_candidates": 4,
+              "modular_strikes": 4,
+              "prime_divisions": 6,
+              "exhausted": true
+            },
+            {
+              "vector": null,
+              "norm": null,
+              "multiplicity": null,
+              "maximum_norm": 1820464,
+              "rows_visited": 5,
+              "coordinate_points_visited": 26,
+              "primitive_coprime_candidates": 12,
+              "modular_strikes": 13,
+              "prime_divisions": 16,
+              "exhausted": true
+            },
+            {
+              "vector": [
+                -4,
+                1
+              ],
+              "norm": 2258739,
+              "multiplicity": 7,
+              "maximum_norm": 7281856,
+              "rows_visited": 2,
+              "coordinate_points_visited": 17,
+              "primitive_coprime_candidates": 9,
+              "modular_strikes": 15,
+              "prime_divisions": 20,
+              "exhausted": false
+            }
+          ]
+        },
+        {
+          "generator_prime": 83,
+          "target_form": [
+            49779,
+            -41978,
+            209782
+          ],
+          "represented_norm": 3300787,
+          "primitive_vector": [
+            3,
+            4
+          ],
+          "multiplicity": 5,
+          "prime_word": [
+            [
+              7,
+              -2
+            ],
+            [
+              31,
+              1
+            ],
+            [
+              41,
+              -1
+            ],
+            [
+              53,
+              -1
+            ]
+          ],
+          "search_attempts": [
+            {
+              "vector": null,
+              "norm": null,
+              "multiplicity": null,
+              "maximum_norm": 839128,
+              "rows_visited": 3,
+              "coordinate_points_visited": 11,
+              "primitive_coprime_candidates": 6,
+              "modular_strikes": 10,
+              "prime_divisions": 13,
+              "exhausted": true
+            },
+            {
+              "vector": [
+                3,
+                4
+              ],
+              "norm": 3300787,
+              "multiplicity": 5,
+              "maximum_norm": 3356512,
+              "rows_visited": 5,
+              "coordinate_points_visited": 47,
+              "primitive_coprime_candidates": 21,
+              "modular_strikes": 35,
+              "prime_divisions": 42,
+              "exhausted": false
+            }
+          ]
+        },
+        {
+          "generator_prime": 97,
+          "target_form": [
+            3813,
+            -280,
+            2623189
+          ],
+          "represented_norm": 3813,
+          "primitive_vector": [
+            1,
+            0
+          ],
+          "multiplicity": 3,
+          "prime_word": [
+            [
+              3,
+              1
+            ],
+            [
+              31,
+              1
+            ],
+            [
+              41,
+              -1
+            ]
+          ],
+          "search_attempts": [
+            {
+              "vector": [
+                1,
+                0
+              ],
+              "norm": 3813,
+              "multiplicity": 3,
+              "maximum_norm": 10492756,
+              "rows_visited": 1,
+              "coordinate_points_visited": 1,
+              "primitive_coprime_candidates": 1,
+              "modular_strikes": 3,
+              "prime_divisions": 3,
+              "exhausted": false
+            }
+          ]
+        },
+        {
+          "generator_prime": 103,
+          "target_form": [
+            52814,
+            51678,
+            202027
+          ],
+          "represented_norm": 522319,
+          "primitive_vector": [
+            -3,
+            1
+          ],
+          "multiplicity": 4,
+          "prime_word": [
+            [
+              7,
+              1
+            ],
+            [
+              29,
+              -1
+            ],
+            [
+              31,
+              -1
+            ],
+            [
+              83,
+              -1
+            ]
+          ],
+          "search_attempts": [
+            {
+              "vector": [
+                -3,
+                1
+              ],
+              "norm": 522319,
+              "multiplicity": 4,
+              "maximum_norm": 808108,
+              "rows_visited": 2,
+              "coordinate_points_visited": 7,
+              "primitive_coprime_candidates": 6,
+              "modular_strikes": 15,
+              "prime_divisions": 17,
+              "exhausted": false
+            }
+          ]
+        },
+        {
+          "generator_prime": 107,
+          "target_form": [
+            61903,
+            -46072,
+            170151
+          ],
+          "represented_norm": 961299,
+          "primitive_vector": [
+            3,
+            2
+          ],
+          "multiplicity": 5,
+          "prime_word": [
+            [
+              3,
+              -2
+            ],
+            [
+              17,
+              -1
+            ],
+            [
+              61,
+              -1
+            ],
+            [
+              103,
+              -1
+            ]
+          ],
+          "search_attempts": [
+            {
+              "vector": null,
+              "norm": null,
+              "multiplicity": null,
+              "maximum_norm": 680604,
+              "rows_visited": 3,
+              "coordinate_points_visited": 9,
+              "primitive_coprime_candidates": 5,
+              "modular_strikes": 8,
+              "prime_divisions": 8,
+              "exhausted": true
+            },
+            {
+              "vector": [
+                3,
+                2
+              ],
+              "norm": 961299,
+              "multiplicity": 5,
+              "maximum_norm": 2722416,
+              "rows_visited": 3,
+              "coordinate_points_visited": 26,
+              "primitive_coprime_candidates": 14,
+              "modular_strikes": 25,
+              "prime_divisions": 31,
+              "exhausted": false
+            }
+          ]
+        },
+        {
+          "generator_prime": 113,
+          "target_form": [
+            59849,
+            -14630,
+            168018
+          ],
+          "represented_norm": 213237,
+          "primitive_vector": [
+            1,
+            1
+          ],
+          "multiplicity": 5,
+          "prime_word": [
+            [
+              3,
+              -2
+            ],
+            [
+              19,
+              1
+            ],
+            [
+              29,
+              1
+            ],
+            [
+              43,
+              1
+            ]
+          ],
+          "search_attempts": [
+            {
+              "vector": [
+                1,
+                1
+              ],
+              "norm": 213237,
+              "multiplicity": 5,
+              "maximum_norm": 672072,
+              "rows_visited": 2,
+              "coordinate_points_visited": 7,
+              "primitive_coprime_candidates": 4,
+              "modular_strikes": 7,
+              "prime_divisions": 10,
+              "exhausted": false
+            }
+          ]
+        },
+        {
+          "generator_prime": 127,
+          "target_form": [
+            49527,
+            -1510,
+            201966
+          ],
+          "represented_norm": 652239,
+          "primitive_vector": [
+            -3,
+            1
+          ],
+          "multiplicity": 7,
+          "prime_word": [
+            [
+              3,
+              -3
+            ],
+            [
+              7,
+              -2
+            ],
+            [
+              17,
+              1
+            ],
+            [
+              29,
+              -1
+            ]
+          ],
+          "search_attempts": [
+            {
+              "vector": [
+                -3,
+                1
+              ],
+              "norm": 652239,
+              "multiplicity": 7,
+              "maximum_norm": 807864,
+              "rows_visited": 2,
+              "coordinate_points_visited": 8,
+              "primitive_coprime_candidates": 5,
+              "modular_strikes": 8,
+              "prime_divisions": 12,
+              "exhausted": false
+            }
+          ]
+        }
+      ],
+      "relation_matrix": [
+        [
+          35,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          34,
+          0,
+          -1,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          -1,
+          35,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          -1,
+          34,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          35,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1
+        ],
+        [
+          1,
+          -1,
+          0,
+          0,
+          0,
+          35,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          -1,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          36,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          -1
+        ],
+        [
+          -1,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          35,
+          -1,
+          0,
+          -1,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          -2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          35,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          -5,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          35,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          -2,
+          0,
+          0,
+          0,
+          -1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          35,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          35,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          -1
+        ],
+        [
+          -3,
+          -1,
+          1,
+          -1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          35,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          35,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          35,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          35,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          35,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          -1,
+          -1,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          35,
+          0
+        ],
+        [
+          3,
+          2,
+          -1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          35
+        ]
+      ],
+      "relation_determinant": 210663877805746791702451795620
+    }
+  ],
+  "prime_input_control": {
+    "integer": 1009,
+    "input_bits": 10,
+    "discriminant": -4036,
+    "smooth_bound": 31,
+    "word_budget": 10,
+    "diagonal_parameter": 11,
+    "maximum_expansions_per_target": 4,
+    "complete_class_group_enumerated": false,
+    "generator_orders_searched": false,
+    "finite_cutoff_certified_to_generate_full_group": false,
+    "factor_base_primes": [
+      5,
+      11,
+      19,
+      23,
+      29,
+      31
+    ],
+    "status": "unresolved",
+    "method": "searched short norms, relation determinant, early ambiguous extraction",
+    "relation_rows_completed": 6,
+    "relation_determinant_bits": 21,
+    "ambiguous_extraction": {
+      "factor": null,
+      "ambiguous_form": null,
+      "stats": {
+        "generators_processed": 6,
+        "group_multiplications": 143,
+        "group_inversions": 5,
+        "tested_tops": 6,
+        "cancellations": 5,
+        "order_swaps": 0,
+        "peak_retained_cyclic_directions": 1
+      }
+    },
+    "coordinate_points_visited": 11,
+    "modular_strikes": 9,
+    "prime_divisions": 9,
+    "maximum_witness_norm": 115,
+    "reason": "no proper factor in the computed subgroup two-part"
+  }
+}

@@ -173,6 +173,10 @@ verify-joint-determinant:
 verify-bounded-spin:
 	python3 tools/check_bounded_spin_crossing.py
 
+.PHONY: verify-bounded-spin-second
+verify-bounded-spin-second:
+	python3 tools/check_bounded_spin_second.py
+
 .PHONY: verify-bounded-spin-algebra
 verify-bounded-spin-algebra:
 	python3 tools/check_bounded_spin_rank_algebra.py

@@ -1,0 +1,244 @@
+{
+  "claim_scope": "Full small-class enumeration verifies absorption and decoding; no fast norm selector.",
+  "cases": [
+    {
+      "discriminant": -41612,
+      "class_number": 90,
+      "prime_cutoff": 32,
+      "radius": 101,
+      "smooth_form_multiplicity": 1,
+      "smooth_classes": 12,
+      "difference_classes": 55,
+      "one_prime_covered_targets": 88,
+      "walk_steps": 11,
+      "walk_support_sizes": [
+        12,
+        55,
+        88,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90
+      ],
+      "exact_l1_below_density_over_four": true,
+      "multiplicity_budget": 13,
+      "primitive_norms_decoded": 90,
+      "largest_norm_bits": 30,
+      "largest_actual_multiplicity": 13,
+      "largest_distinct_prime_support": 4,
+      "decoder_group_multiplications": 1597,
+      "examples": [
+        {
+          "target": [
+            1,
+            0,
+            10403
+          ],
+          "norm": 10097379,
+          "coordinates": [
+            3176,
+            -1
+          ],
+          "factorization": [
+            [
+              3,
+              12,
+              4
+            ],
+            [
+              19,
+              1,
+              6
+            ]
+          ]
+        },
+        {
+          "target": [
+            3,
+            -2,
+            3468
+          ],
+          "norm": 43755309,
+          "coordinates": [
+            -623,
+            -111
+          ],
+          "factorization": [
+            [
+              3,
+              11,
+              4
+            ],
+            [
+              13,
+              1,
+              14
+            ],
+            [
+              19,
+              1,
+              6
+            ]
+          ]
+        },
+        {
+          "target": [
+            3,
+            2,
+            3468
+          ],
+          "norm": 4861701,
+          "coordinates": [
+            183,
+            37
+          ],
+          "factorization": [
+            [
+              3,
+              9,
+              4
+            ],
+            [
+              13,
+              1,
+              14
+            ],
+            [
+              19,
+              1,
+              6
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "discriminant": -300004,
+      "class_number": 180,
+      "prime_cutoff": 32,
+      "radius": 273,
+      "smooth_form_multiplicity": 2,
+      "smooth_classes": 48,
+      "difference_classes": 179,
+      "one_prime_covered_targets": 180,
+      "walk_steps": 9,
+      "walk_support_sizes": [
+        14,
+        86,
+        172,
+        180,
+        180,
+        180,
+        180,
+        180,
+        180
+      ],
+      "exact_l1_below_density_over_four": true,
+      "multiplicity_budget": 13,
+      "primitive_norms_decoded": 180,
+      "largest_norm_bits": 37,
+      "largest_actual_multiplicity": 13,
+      "largest_distinct_prime_support": 5,
+      "decoder_group_multiplications": 3603,
+      "examples": [
+        {
+          "target": [
+            1,
+            0,
+            75001
+          ],
+          "norm": 13876953125,
+          "coordinates": [
+            -101551,
+            218
+          ],
+          "factorization": [
+            [
+              5,
+              10,
+              6
+            ],
+            [
+              7,
+              2,
+              4
+            ],
+            [
+              29,
+              1,
+              30
+            ]
+          ]
+        },
+        {
+          "target": [
+            2,
+            2,
+            37501
+          ],
+          "norm": 16884765625,
+          "coordinates": [
+            837,
+            -671
+          ],
+          "factorization": [
+            [
+              5,
+              10,
+              6
+            ],
+            [
+              7,
+              1,
+              4
+            ],
+            [
+              13,
+              1,
+              20
+            ],
+            [
+              19,
+              1,
+              24
+            ]
+          ]
+        },
+        {
+          "target": [
+            5,
+            -4,
+            15001
+          ],
+          "norm": 12578125,
+          "coordinates": [
+            1139,
+            -20
+          ],
+          "factorization": [
+            [
+              5,
+              7,
+              6
+            ],
+            [
+              7,
+              1,
+              4
+            ],
+            [
+              23,
+              1,
+              36
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "total_primitive_norms_decoded": 270
+}
