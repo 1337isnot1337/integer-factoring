@@ -852,3 +852,12 @@ verify-closed-place-oracles:
 	OPENBLAS_NUM_THREADS=1 python3 tools/check_f4_closed_place_oracle.py --output /tmp/integer-factoring-f4-closed-oracle.json
 	OPENBLAS_NUM_THREADS=1 python3 tools/check_paired_mixed_place_pressure.py --output /tmp/integer-factoring-paired-mixed-pressure.json
 
+.PHONY: verify-filtered-affine-search verify-laurent-search
+
+verify-filtered-affine-search:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_filtered_reflection16_affine_search.py --output /tmp/integer-factoring-filtered-affine-search.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_filtered_reflection16_affine_combinations.py --output /tmp/integer-factoring-filtered-affine-combinations.json
+
+verify-laurent-search:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_laurent_series_search.py --output /tmp/integer-factoring-laurent-series-search.json
+

@@ -16,6 +16,13 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Completed fused physical-basis search](fused-physical-search-checkpoint.md): the declared two-hour budget retains all 1,049 proposal outcomes, interruption lineage, complete winning tensors, and exact local-order replays.
+- [Complete Laurent-series screen](laurent-series-search-checkpoint.md): all 65,536 four-letter parameter words are accounted for, with full retained-witness replays and no pressure gain.
+- [Filtered sixteen-letter affine search](filtered-reflection16-affine-search.md): 1,386 one-direction choices give 211 complete tensors; full reconstruction and finite-place controls retain the baseline.
+- [Cross-direction filtered affine combinations](filtered-reflection16-affine-combinations.md): the bounded larger search records all proposals and independently reconstructs its 849 distinct complete tensors.
+- [Completed weighted closed-place search](restricted-closed-place-search.md): 1,978 unweighted partitions and 402 full weighted refinements retain exact complete local-profile replays without a threshold candidate.
+- [Completed finite-fiber workers](finite-fiber-search-checkpoint.md): two thirty-minute runs preserve every proposal outcome, all retained witnesses, full winner profiles, and unresolved-call accounting.
+
 - [Complete paired affine space](complete-paired-trace-affine-space.md): an exact 5,175-dimensional closure equals the full paired-trace space, with a canonical sparse basis and a sharp 3,375-dimensional degree-sixteen slice.
 - [Affine quadratic-place crossing](affine-quadratic-place-crossings.md): an explicit physical affine combination creates new finite singular places, with complete local profiles and independent determinant checks.
 - [Asymmetric mixed-place crossings](asymmetric-mixed-place-crossings.md): unequal supporting weights use complete local profiles, common physical types, and full opposite-flag costs.

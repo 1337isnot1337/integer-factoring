@@ -1,0 +1,41 @@
+{
+  "actual_search_seconds": 2400.8451536269995,
+  "archive_sha256": "74e64cacb9743f185c0c54c12ac6963b95cea7e623e48ee54bbe9695b658ac4c",
+  "complete_polynomial_entries_reconstructed": 55640064,
+  "complete_retained_tensors_reconstructed": 849,
+  "counters": {
+    "duplicate_tensors": 7,
+    "proposed": 856,
+    "unresolved_profiles": 0
+  },
+  "declared_seconds": 2400.0,
+  "elapsed_seconds": 258.40467563399943,
+  "exact_components_reconstructed": 52,
+  "finished_utc": "2026-10-31T23:40:38.817577+00:00",
+  "fresh_profile_replays": [
+    {
+      "complete_channel_count": 512,
+      "label": "original",
+      "rho": 0.7166536597281867,
+      "scale": 0.21663539396092982,
+      "seed_sha256": "f24556bed6d9c77d869f27f416d2fec12f9a3661c7b8ba96687428fc05c067cd"
+    },
+    {
+      "complete_channel_count": 512,
+      "label": "best_retained",
+      "rho": 0.8128910933978555,
+      "scale": 0.10382931782560552,
+      "seed_sha256": "dedc96dd29bd7d7aa6f4e15e86847fc90a67becd3876a5265b4da2b44785e7f9"
+    }
+  ],
+  "independent_three_scalar_component_entries": 131072,
+  "no_natural_pressure_improvement_over_original": true,
+  "recorded_search_source_hashes_checked": 9,
+  "scope": "all retained complete tensor hashes, endpoints, degrees, source bindings; independent three-scalar winner reconstruction; fresh original and winner numerical profiles",
+  "source_sha256": {
+    "check_filtered_reflection16_affine_combinations.py": "4a3b219cd9d0c2423e497b25f9e0df1327def906622d2d2bd0efcb0ea1447f14"
+  },
+  "started_utc": "2026-10-31T23:00:37.972447+00:00",
+  "status": "passed",
+  "uncompressed_archive_sha256": "d9103756611a4f5af3302ea2c36656aeb1fb0eacaa88ed254eb4929842852ca6"
+}
