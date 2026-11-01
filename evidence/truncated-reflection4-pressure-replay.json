@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "scope": "complete exact tensor reconstruction and fresh numerical minimum replays; no exact pressure certificate",
+  "source_record_sha256": "951a301dd8090e5cc3b7bb01b049a79a2eebfb39bedd810a39d9a291eebcb674",
+  "reconstructed_tensors": 24,
+  "endpoint_entries": 6144,
+  "fresh_complete_profile_minima": 48,
+  "maximum_replay_error": 0.0,
+  "best_rho": 0.7310809359734763,
+  "best_support_value": 1.000532340966415
+}

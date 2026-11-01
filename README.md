@@ -161,6 +161,14 @@ It proves scalar content one and the degree floor `M^2` throughout that
 family. The [constant-companion search](research/constant-companion-reflection-search.md)
 completes 21,528 additional exact tensors and 80 full refinements, with
 independent coefficient controls and fresh winner replays.
+The degree floor is attained: an [exact degree-sixteen affine crossing](research/degree16-affine-reflection-crossing.md)
+reduces the four-letter reflection degree from 24 to 16.
+A [uniform truncation formula](research/low-jet-reflection-degree-truncations.md)
+does the same at every reflection interval, reducing degree `3M^2/2`
+to `M^2` while retaining all coefficients below `M^2` and both paired
+traces. Every even degree cap also gives an explicit strict crossing
+with scalar content one. Complete profiles remain necessary: the finished
+four-letter cap search does not improve the best crossing parameter.
 
 The [multiplicative-monoid decomposition](research/multiplicative-monoid-blocks.md)
 retains the characteristic-two nilpotent coordinates and decomposes every
@@ -220,6 +228,8 @@ make verify-paired-trace # Uniform paired contraction, scalar-content and degree
 make verify-companion-search # Complete 21,528-frame archive and fresh winner replays
 make verify-monoid-blocks # Explicit multiplication blocks and full Fourier/copy closure
 make verify-unsplit-monoid # Original-field fast convolution and whole-middle bundle controls
+make verify-degree16-crossing # Exact sharp degree16 crossing and affine provenance
+make verify-reflection-truncations # Uniform truncations, all coefficients, and 48 fresh minima
 make verify-coupled-searches # Completed search replays and exact affine determinant change
 make verify-schur-fermion # Complete Schur entry formulas and exact comparisons
 make verify-schur-central # Hook-residue identities and full Schur ranks through weight 8

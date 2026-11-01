@@ -718,6 +718,14 @@ verify-joint-residue-retiming:
 .PHONY: verify-triangular-series
 .PHONY: verify-paired-trace verify-companion-search verify-monoid-blocks
 .PHONY: verify-unsplit-monoid
+.PHONY: verify-degree16-crossing verify-reflection-truncations
+verify-degree16-crossing:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_degree16_reflection_crossing.py --output /tmp/integer-factoring-degree16-replay.json
+
+verify-reflection-truncations:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_truncated_reflection_crossings.py --output /tmp/integer-factoring-truncation-replay.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_truncated_reflection4_search.py --output /tmp/integer-factoring-truncation-pressure-replay.json
+
 verify-unsplit-monoid:
 	python3 tools/check_unsplit_monoid_contraction.py --output /tmp/integer-factoring-unsplit-monoid-replay.json
 

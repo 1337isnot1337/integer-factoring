@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "scope": "exact strict crossing, degree16, sharp paired-trace floor, basis reconstruction and independent physical-action controls; no pressure certificate",
+  "crossing_sha256": "881f0a0f679d99420e15120c69ea6a044230bcdb6aa06e12b6a2f72945c4c5fc",
+  "tensor_sha256": "4ac27b8fa50b35c1211bd220ca2aac67593154b9afc3776ac4e237d5bb078ae7",
+  "exact_degree": 16,
+  "endpoint_entries": 256,
+  "paired_trace_polynomial_entries": 32,
+  "basis_vectors_with_zero_endpoint_and_paired_traces": 3035,
+  "affine_witness_terms": 1168,
+  "independent_physical_action_entries": 2048,
+  "original_coupled_bell_double_trace_bitplanes": [
+    17830144,
+    0
+  ],
+  "source_sha256": {
+    "check_degree16_reflection_crossing.py": "1d3dd53d0624fd2ef08b2dbf4f43786f0f5e2f16c97253dc7123d53a530cbdd5",
+    "solve_companion_affine_degree.py": "646d8333e47515d4aad46391f777f2d5d2978ece7b0992a04e45a4eb8424e156",
+    "close_independent_paired_affine_span.py": "797e08cd336c8ae1a784a867a404dbf476ac10d6c4d17ff503e079ff42665546",
+    "check_dense_coupled_reflection_frames.py": "3ca7c1117cc7c5a36b3da9db567194c29e82d22a0cf7c6fad49bbc220151b178"
+  }
+}

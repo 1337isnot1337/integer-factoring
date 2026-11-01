@@ -1,0 +1,372 @@
+{
+  "status": "passed",
+  "scope": "Exact degree reduction with unchanged low jets and paired traces; no pressure or factoring certificate.",
+  "seeds_checked": 21,
+  "independent_dictionary_entries": 592896,
+  "independent_quotient_entries": 592896,
+  "records": [
+    {
+      "interval": 4,
+      "alphabet": 4,
+      "requested_degree": 2,
+      "actual_degree": 2,
+      "unchanged_coefficients_through": 1,
+      "tensor_sha256": "f8a604de38b15a95d93ac7f103020230fc04945b220621377d9dec17f30f98b0",
+      "endpoint_entries": 256,
+      "paired_trace": {
+        "trace_degree": 2,
+        "polynomial_entries": 32,
+        "trace_sha256": [
+          "45edc5b8b61e5f4fb1ac1d45686be6f2e249e7ba8df0e227c4c07b20421f8741",
+          "45edc5b8b61e5f4fb1ac1d45686be6f2e249e7ba8df0e227c4c07b20421f8741"
+        ]
+      }
+    },
+    {
+      "interval": 4,
+      "alphabet": 4,
+      "requested_degree": 4,
+      "actual_degree": 4,
+      "unchanged_coefficients_through": 3,
+      "tensor_sha256": "e0d594f0f4724068d08bfda36451515ee0f948ad3a034968310bbcc858800e30",
+      "endpoint_entries": 256,
+      "paired_trace": {
+        "trace_degree": 4,
+        "polynomial_entries": 32,
+        "trace_sha256": [
+          "dbfb49d66ee9aeecf8e49fbb8e07557a31e3fd839dd7d8f4f007bb93f1a647e7",
+          "dbfb49d66ee9aeecf8e49fbb8e07557a31e3fd839dd7d8f4f007bb93f1a647e7"
+        ]
+      }
+    },
+    {
+      "interval": 4,
+      "alphabet": 4,
+      "requested_degree": 6,
+      "actual_degree": 6,
+      "unchanged_coefficients_through": 5,
+      "tensor_sha256": "4034a42c9354bda535154bbb0c9aa4fcdf9cdc3c8207b0f06429404a4e9d8962",
+      "endpoint_entries": 256,
+      "paired_trace": {
+        "trace_degree": 6,
+        "polynomial_entries": 32,
+        "trace_sha256": [
+          "9bf8e068dfa3ec5c22abe48e09a7af5156a9c73791f307e00d38b6935ffdda54",
+          "9bf8e068dfa3ec5c22abe48e09a7af5156a9c73791f307e00d38b6935ffdda54"
+        ]
+      }
+    },
+    {
+      "interval": 4,
+      "alphabet": 4,
+      "requested_degree": 8,
+      "actual_degree": 8,
+      "unchanged_coefficients_through": 7,
+      "tensor_sha256": "cc37dc39daad8428541319839ad8b62f00b4784d9430747e6b33c0bd99e94154",
+      "endpoint_entries": 256,
+      "paired_trace": {
+        "trace_degree": 8,
+        "polynomial_entries": 32,
+        "trace_sha256": [
+          "e08f354ea2966f13f1f95ea9013412b674b26a37cf308cfeff32b3427efe0863",
+          "e08f354ea2966f13f1f95ea9013412b674b26a37cf308cfeff32b3427efe0863"
+        ]
+      }
+    },
+    {
+      "interval": 4,
+      "alphabet": 4,
+      "requested_degree": 10,
+      "actual_degree": 10,
+      "unchanged_coefficients_through": 9,
+      "tensor_sha256": "04da1e6e52fae655e44f0672dc6bc3a85fb0435407ae65f6360088f69d309b51",
+      "endpoint_entries": 256,
+      "paired_trace": {
+        "trace_degree": 10,
+        "polynomial_entries": 32,
+        "trace_sha256": [
+          "cb54cff88f02f396d403896ff28c1f148d76efee2368fc5ebb86a2f5ad3ac2c0",
+          "cb54cff88f02f396d403896ff28c1f148d76efee2368fc5ebb86a2f5ad3ac2c0"
+        ]
+      }
+    },
+    {
+      "interval": 4,
+      "alphabet": 4,
+      "requested_degree": 12,
+      "actual_degree": 12,
+      "unchanged_coefficients_through": 11,
+      "tensor_sha256": "371ccdabe6bedaaf5265ffe0f5d53b334ff9830116c4c0d9782308c79114dbf1",
+      "endpoint_entries": 256,
+      "paired_trace": {
+        "trace_degree": 12,
+        "polynomial_entries": 32,
+        "trace_sha256": [
+          "0ce4bef2a6ec938f53a0d4a2faffeabdd9775c58baba80501fc664a4692ad79d",
+          "0ce4bef2a6ec938f53a0d4a2faffeabdd9775c58baba80501fc664a4692ad79d"
+        ]
+      }
+    },
+    {
+      "interval": 4,
+      "alphabet": 4,
+      "requested_degree": 14,
+      "actual_degree": 14,
+      "unchanged_coefficients_through": 13,
+      "tensor_sha256": "6fe0c778718019e7abc3fcd780d7af158e9f4025000fa7ced2afbe65d81f00fa",
+      "endpoint_entries": 256,
+      "paired_trace": {
+        "trace_degree": 14,
+        "polynomial_entries": 32,
+        "trace_sha256": [
+          "c758d9a49d3e3eff88f0f1dda660fef6224574e9e71f93c66995b40f54d24fa9",
+          "c758d9a49d3e3eff88f0f1dda660fef6224574e9e71f93c66995b40f54d24fa9"
+        ]
+      }
+    },
+    {
+      "interval": 4,
+      "alphabet": 4,
+      "requested_degree": 16,
+      "actual_degree": 16,
+      "unchanged_coefficients_through": 15,
+      "tensor_sha256": "e5128c7f1c70a7c2036d6e1526aba4f6dfba1f3871437b01043f8e77205e7f3d",
+      "endpoint_entries": 256,
+      "paired_trace": {
+        "trace_degree": 16,
+        "polynomial_entries": 32,
+        "trace_sha256": [
+          "5f56d6ea92de28e409fb39de9b6221a153392d5aaac6fadcf4da065f840dfaa1",
+          "5f56d6ea92de28e409fb39de9b6221a153392d5aaac6fadcf4da065f840dfaa1"
+        ]
+      }
+    },
+    {
+      "interval": 4,
+      "alphabet": 4,
+      "requested_degree": 18,
+      "actual_degree": 18,
+      "unchanged_coefficients_through": 17,
+      "tensor_sha256": "1534ce7255db490d1cd8673bfd57feb7637218c1a1d723f816fbd04dcee77d41",
+      "endpoint_entries": 256,
+      "paired_trace": {
+        "trace_degree": 16,
+        "polynomial_entries": 32,
+        "trace_sha256": [
+          "5f56d6ea92de28e409fb39de9b6221a153392d5aaac6fadcf4da065f840dfaa1",
+          "5f56d6ea92de28e409fb39de9b6221a153392d5aaac6fadcf4da065f840dfaa1"
+        ]
+      }
+    },
+    {
+      "interval": 4,
+      "alphabet": 4,
+      "requested_degree": 20,
+      "actual_degree": 20,
+      "unchanged_coefficients_through": 19,
+      "tensor_sha256": "af6f4a1d7ff07a137b4dfd31c15241bf44290d21a4c7ca8d1e8563739b8f98f9",
+      "endpoint_entries": 256,
+      "paired_trace": {
+        "trace_degree": 16,
+        "polynomial_entries": 32,
+        "trace_sha256": [
+          "5f56d6ea92de28e409fb39de9b6221a153392d5aaac6fadcf4da065f840dfaa1",
+          "5f56d6ea92de28e409fb39de9b6221a153392d5aaac6fadcf4da065f840dfaa1"
+        ]
+      }
+    },
+    {
+      "interval": 4,
+      "alphabet": 4,
+      "requested_degree": 22,
+      "actual_degree": 22,
+      "unchanged_coefficients_through": 21,
+      "tensor_sha256": "7c7abddf76d4d58c311b4b80876d8b0466a017d8430d3a72601a5bcb1b548a2b",
+      "endpoint_entries": 256,
+      "paired_trace": {
+        "trace_degree": 16,
+        "polynomial_entries": 32,
+        "trace_sha256": [
+          "5f56d6ea92de28e409fb39de9b6221a153392d5aaac6fadcf4da065f840dfaa1",
+          "5f56d6ea92de28e409fb39de9b6221a153392d5aaac6fadcf4da065f840dfaa1"
+        ]
+      }
+    },
+    {
+      "interval": 4,
+      "alphabet": 4,
+      "requested_degree": 24,
+      "actual_degree": 24,
+      "unchanged_coefficients_through": 23,
+      "tensor_sha256": "c0a850cf9561d4e4ad5fe697507f746fcc091cf7f8caeb8355fab726cba4e494",
+      "endpoint_entries": 256,
+      "paired_trace": {
+        "trace_degree": 16,
+        "polynomial_entries": 32,
+        "trace_sha256": [
+          "5f56d6ea92de28e409fb39de9b6221a153392d5aaac6fadcf4da065f840dfaa1",
+          "5f56d6ea92de28e409fb39de9b6221a153392d5aaac6fadcf4da065f840dfaa1"
+        ]
+      }
+    },
+    {
+      "interval": 8,
+      "alphabet": 16,
+      "requested_degree": 16,
+      "actual_degree": 16,
+      "unchanged_coefficients_through": 15,
+      "tensor_sha256": "ad6d5cb77e27fabd1549632d7892fb58f350c014a8c22531b4108bb014c1201f",
+      "endpoint_entries": 65536,
+      "paired_trace": {
+        "trace_degree": 16,
+        "polynomial_entries": 512,
+        "trace_sha256": [
+          "7e4e88e61ba0b44855bcb57e9b07e197e50b103c473988fb6088d75117784958",
+          "7e4e88e61ba0b44855bcb57e9b07e197e50b103c473988fb6088d75117784958"
+        ]
+      }
+    },
+    {
+      "interval": 8,
+      "alphabet": 16,
+      "requested_degree": 32,
+      "actual_degree": 32,
+      "unchanged_coefficients_through": 31,
+      "tensor_sha256": "5adabdb8cd97202b8e5725aeeab5d67f10be19f2fc00213dc4c22072968b08d8",
+      "endpoint_entries": 65536,
+      "paired_trace": {
+        "trace_degree": 32,
+        "polynomial_entries": 512,
+        "trace_sha256": [
+          "7819873037dc06abc69c5ea515191cd8021612542d32e3284de4fc0612618873",
+          "7819873037dc06abc69c5ea515191cd8021612542d32e3284de4fc0612618873"
+        ]
+      }
+    },
+    {
+      "interval": 8,
+      "alphabet": 16,
+      "requested_degree": 48,
+      "actual_degree": 48,
+      "unchanged_coefficients_through": 47,
+      "tensor_sha256": "5d6a6bbe038a4469c3e0b7910b99458065d067bd27c278467508d8468431baa1",
+      "endpoint_entries": 65536,
+      "paired_trace": {
+        "trace_degree": 48,
+        "polynomial_entries": 512,
+        "trace_sha256": [
+          "8271f42af80abd518db3ef319580c58c9fdaa10dc37ef291f3541c60694145ab",
+          "8271f42af80abd518db3ef319580c58c9fdaa10dc37ef291f3541c60694145ab"
+        ]
+      }
+    },
+    {
+      "interval": 8,
+      "alphabet": 16,
+      "requested_degree": 64,
+      "actual_degree": 64,
+      "unchanged_coefficients_through": 63,
+      "tensor_sha256": "8025422b735f9513d26b15b9ad35a08f475c070ec512a01b1689f24e74282351",
+      "endpoint_entries": 65536,
+      "paired_trace": {
+        "trace_degree": 64,
+        "polynomial_entries": 512,
+        "trace_sha256": [
+          "8e1fa866bca17d7a8ff15f53d1a5120f7737fce93d3432ea5abc18f7750c874d",
+          "8e1fa866bca17d7a8ff15f53d1a5120f7737fce93d3432ea5abc18f7750c874d"
+        ]
+      }
+    },
+    {
+      "interval": 8,
+      "alphabet": 16,
+      "requested_degree": 68,
+      "actual_degree": 68,
+      "unchanged_coefficients_through": 67,
+      "tensor_sha256": "fc8dd5731fc95f940390da6b7e2132eb5445dbc8f2a864e27162c526b40b1062",
+      "endpoint_entries": 65536,
+      "paired_trace": {
+        "trace_degree": 64,
+        "polynomial_entries": 512,
+        "trace_sha256": [
+          "8e1fa866bca17d7a8ff15f53d1a5120f7737fce93d3432ea5abc18f7750c874d",
+          "8e1fa866bca17d7a8ff15f53d1a5120f7737fce93d3432ea5abc18f7750c874d"
+        ]
+      }
+    },
+    {
+      "interval": 8,
+      "alphabet": 16,
+      "requested_degree": 72,
+      "actual_degree": 72,
+      "unchanged_coefficients_through": 71,
+      "tensor_sha256": "e66a48f99201ebb2a3bbc7c9cda9cadacac4a31b9d27519d7da1802d34574a14",
+      "endpoint_entries": 65536,
+      "paired_trace": {
+        "trace_degree": 64,
+        "polynomial_entries": 512,
+        "trace_sha256": [
+          "8e1fa866bca17d7a8ff15f53d1a5120f7737fce93d3432ea5abc18f7750c874d",
+          "8e1fa866bca17d7a8ff15f53d1a5120f7737fce93d3432ea5abc18f7750c874d"
+        ]
+      }
+    },
+    {
+      "interval": 8,
+      "alphabet": 16,
+      "requested_degree": 80,
+      "actual_degree": 80,
+      "unchanged_coefficients_through": 79,
+      "tensor_sha256": "390ece3f3714c6c5318091611d496d8ab323377f9cc1bfa288feacfd5c96b5c3",
+      "endpoint_entries": 65536,
+      "paired_trace": {
+        "trace_degree": 64,
+        "polynomial_entries": 512,
+        "trace_sha256": [
+          "8e1fa866bca17d7a8ff15f53d1a5120f7737fce93d3432ea5abc18f7750c874d",
+          "8e1fa866bca17d7a8ff15f53d1a5120f7737fce93d3432ea5abc18f7750c874d"
+        ]
+      }
+    },
+    {
+      "interval": 8,
+      "alphabet": 16,
+      "requested_degree": 88,
+      "actual_degree": 88,
+      "unchanged_coefficients_through": 87,
+      "tensor_sha256": "dfe80bd9686ffcfd6c4f194fa17ddd6b64b12dfb0c201598a6ed4398f87a070d",
+      "endpoint_entries": 65536,
+      "paired_trace": {
+        "trace_degree": 64,
+        "polynomial_entries": 512,
+        "trace_sha256": [
+          "8e1fa866bca17d7a8ff15f53d1a5120f7737fce93d3432ea5abc18f7750c874d",
+          "8e1fa866bca17d7a8ff15f53d1a5120f7737fce93d3432ea5abc18f7750c874d"
+        ]
+      }
+    },
+    {
+      "interval": 8,
+      "alphabet": 16,
+      "requested_degree": 96,
+      "actual_degree": 96,
+      "unchanged_coefficients_through": 95,
+      "tensor_sha256": "f24556bed6d9c77d869f27f416d2fec12f9a3661c7b8ba96687428fc05c067cd",
+      "endpoint_entries": 65536,
+      "paired_trace": {
+        "trace_degree": 64,
+        "polynomial_entries": 512,
+        "trace_sha256": [
+          "8e1fa866bca17d7a8ff15f53d1a5120f7737fce93d3432ea5abc18f7750c874d",
+          "8e1fa866bca17d7a8ff15f53d1a5120f7737fce93d3432ea5abc18f7750c874d"
+        ]
+      }
+    }
+  ],
+  "source_sha256": {
+    "check_truncated_reflection_crossings.py": "b4069b35a574cfb7d1ddae9dcc38805b83a8755f6e2595c76a80dd8aeca1c46d",
+    "truncate_reflection_crossings.py": "38bd6cd85ffcb9035bb7fba0301c39d43cdbe7ad52e23cc227fb236a4d7ad67d",
+    "reflection_dual_rail_gaussian.py": "6d4780f02b9479d2473c823f74c4749f47e1db0bd32e5318bd601bdd51010a38",
+    "reflection_laurent_physical_frames.py": "e4396ed1a78303893adce6a4f931d8a1866f79ae09fc9f8b0ac6aea164352563"
+  }
+}
