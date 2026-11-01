@@ -1,0 +1,306 @@
+{
+  "status": "pass",
+  "scope": "All 120 stored homogeneous middle-fiber restrictions, with inherited type energies",
+  "rho_floor": "5/7",
+  "strictly_above_one_over_sqrt_two": true,
+  "retractions_checked": 120,
+  "distinct_profile_certificates": 24,
+  "maximum_polynomial_degree": 3150,
+  "certificates": [
+    {
+      "representative_pair": [
+        1,
+        1
+      ],
+      "polynomial_degree": 2380,
+      "minimum_second_cumulative_coefficient": 0,
+      "terminal_first_sum": 852226929591403601074218750000000,
+      "terminal_second_sum": 1114959022625837152853393554687500000,
+      "polynomial_sha256": "09a644d0a894a3dd8ec776191d7b053966fa616b79ff927a7b15bb25b773d263",
+      "strictly_positive_for_zero_less_than_x_at_most_one": true
+    },
+    {
+      "representative_pair": [
+        1,
+        3
+      ],
+      "polynomial_degree": 2450,
+      "minimum_second_cumulative_coefficient": 0,
+      "terminal_first_sum": 852226929591403601074218750000000,
+      "terminal_second_sum": 1183629574778208523472213745117187500,
+      "polynomial_sha256": "7dfc8c088c2111a4f549bbc2cf362f271e5e8b4f77274fc4cef1876a293c1e87",
+      "strictly_positive_for_zero_less_than_x_at_most_one": true
+    },
+    {
+      "representative_pair": [
+        1,
+        5
+      ],
+      "polynomial_degree": 2450,
+      "minimum_second_cumulative_coefficient": 0,
+      "terminal_first_sum": 852226929591403601074218750000000,
+      "terminal_second_sum": 1183629574778208523472213745117187500,
+      "polynomial_sha256": "f0c4597a4068ac5e6384b1a7006862c290c44bd84e94dd4ac2fd6f9f0c219eeb",
+      "strictly_positive_for_zero_less_than_x_at_most_one": true
+    },
+    {
+      "representative_pair": [
+        1,
+        7
+      ],
+      "polynomial_degree": 2870,
+      "minimum_second_cumulative_coefficient": 0,
+      "terminal_first_sum": 852226929591403601074218750000000,
+      "terminal_second_sum": 1528308021852225802770996093750000000,
+      "polynomial_sha256": "f7da762a88839eaffbd70b1d72b05da6a040927356d68ab882e9c8415878fe04",
+      "strictly_positive_for_zero_less_than_x_at_most_one": true
+    },
+    {
+      "representative_pair": [
+        1,
+        9
+      ],
+      "polynomial_degree": 2800,
+      "minimum_second_cumulative_coefficient": 0,
+      "terminal_first_sum": 852226929591403601074218750000000,
+      "terminal_second_sum": 1470773234917527108000183105468750000,
+      "polynomial_sha256": "cda6d96931d5ec7d27238b0ebd1b0378cf9015351cf69668f6b4d58f3418322c",
+      "strictly_positive_for_zero_less_than_x_at_most_one": true
+    },
+    {
+      "representative_pair": [
+        1,
+        11
+      ],
+      "polynomial_degree": 3150,
+      "minimum_second_cumulative_coefficient": 0,
+      "terminal_first_sum": 852226929591403601074218750000000,
+      "terminal_second_sum": 1776211366485879374278450012207031250,
+      "polynomial_sha256": "6d3a17394ccb26493deb42affa029752954bdb16e2ed10e13e7e4a1924a222cb",
+      "strictly_positive_for_zero_less_than_x_at_most_one": true
+    },
+    {
+      "representative_pair": [
+        1,
+        15
+      ],
+      "polynomial_degree": 2730,
+      "minimum_second_cumulative_coefficient": 0,
+      "terminal_first_sum": 852226929591403601074218750000000,
+      "terminal_second_sum": 1413238447982828413229370117187500000,
+      "polynomial_sha256": "e82425266c8153aaba4600aefdba9d38596687267ab78f3fb4e9f92c3bf3dd03",
+      "strictly_positive_for_zero_less_than_x_at_most_one": true
+    },
+    {
+      "representative_pair": [
+        2,
+        2
+      ],
+      "polynomial_degree": 2240,
+      "minimum_second_cumulative_coefficient": 0,
+      "terminal_first_sum": 852226929591403601074218750000000,
+      "terminal_second_sum": 1007313292234888213877105712890625000,
+      "polynomial_sha256": "a03e834cca9489cfd8efbe00e40da12bd5b5d902049f84e4bc516c399ddc0177",
+      "strictly_positive_for_zero_less_than_x_at_most_one": true
+    },
+    {
+      "representative_pair": [
+        2,
+        3
+      ],
+      "polynomial_degree": 2100,
+      "minimum_second_cumulative_coefficient": 0,
+      "terminal_first_sum": 852226929591403601074218750000000,
+      "terminal_second_sum": 892243718365490824335479736328125000,
+      "polynomial_sha256": "75dfe536d932a6dd7b89e708c1d312e97992ea4ee6e828c9a98bbf90932c5343",
+      "strictly_positive_for_zero_less_than_x_at_most_one": true
+    },
+    {
+      "representative_pair": [
+        2,
+        6
+      ],
+      "polynomial_degree": 2800,
+      "minimum_second_cumulative_coefficient": 0,
+      "terminal_first_sum": 852226929591403601074218750000000,
+      "terminal_second_sum": 1471833783985876886652374267578125000,
+      "polynomial_sha256": "c3de317090abbe20608065e3b5b201028984c6a3dc9ee40422b49f630ab640f8",
+      "strictly_positive_for_zero_less_than_x_at_most_one": true
+    },
+    {
+      "representative_pair": [
+        2,
+        7
+      ],
+      "polynomial_degree": 3150,
+      "minimum_second_cumulative_coefficient": 0,
+      "terminal_first_sum": 852226929591403601074218750000000,
+      "terminal_second_sum": 1776211366485879374278450012207031250,
+      "polynomial_sha256": "3dfcc3562f3d1b01426d15dca68a0a69f03256c7186b39d51be9ba864aa5afc8",
+      "strictly_positive_for_zero_less_than_x_at_most_one": true
+    },
+    {
+      "representative_pair": [
+        2,
+        10
+      ],
+      "polynomial_degree": 2100,
+      "minimum_second_cumulative_coefficient": 0,
+      "terminal_first_sum": 852226929591403601074218750000000,
+      "terminal_second_sum": 892243718365490824335479736328125000,
+      "polynomial_sha256": "1a9178b579d8cbf685f91d843e3d4baebf2db2fbf4576f27a81085c5a5d1657d",
+      "strictly_positive_for_zero_less_than_x_at_most_one": true
+    },
+    {
+      "representative_pair": [
+        2,
+        11
+      ],
+      "polynomial_degree": 2520,
+      "minimum_second_cumulative_coefficient": 0,
+      "terminal_first_sum": 852226929591403601074218750000000,
+      "terminal_second_sum": 1243815734383781664873504638671875000,
+      "polynomial_sha256": "16fc8e2daf8e0c2bc027fa05387e7c670cd8aa910cfc8db55d0e0f33c8a00a6b",
+      "strictly_positive_for_zero_less_than_x_at_most_one": true
+    },
+    {
+      "representative_pair": [
+        2,
+        15
+      ],
+      "polynomial_degree": 2730,
+      "minimum_second_cumulative_coefficient": 0,
+      "terminal_first_sum": 852226929591403601074218750000000,
+      "terminal_second_sum": 1413238447982828413229370117187500000,
+      "polynomial_sha256": "559232f5b40f01e3210b49f94b3b495d3070c3a45f86880eb075c2cc3f21dfaf",
+      "strictly_positive_for_zero_less_than_x_at_most_one": true
+    },
+    {
+      "representative_pair": [
+        3,
+        5
+      ],
+      "polynomial_degree": 2170,
+      "minimum_second_cumulative_coefficient": 0,
+      "terminal_first_sum": 852226929591403601074218750000000,
+      "terminal_second_sum": 953490427039413744388961791992187500,
+      "polynomial_sha256": "d666d9c57b279b90e4d266c7c4e7e8d7c97fe3eb6810bef5b02c531d6df9d79b",
+      "strictly_positive_for_zero_less_than_x_at_most_one": true
+    },
+    {
+      "representative_pair": [
+        3,
+        6
+      ],
+      "polynomial_degree": 2730,
+      "minimum_second_cumulative_coefficient": 0,
+      "terminal_first_sum": 852226929591403601074218750000000,
+      "terminal_second_sum": 1413238447982828413229370117187500000,
+      "polynomial_sha256": "5a2b582389f92ed377d1986f0fe1b4cf69e271d4648c1072733104e939af46bd",
+      "strictly_positive_for_zero_less_than_x_at_most_one": true
+    },
+    {
+      "representative_pair": [
+        3,
+        13
+      ],
+      "polynomial_degree": 2100,
+      "minimum_second_cumulative_coefficient": 0,
+      "terminal_first_sum": 852226929591403601074218750000000,
+      "terminal_second_sum": 891713443831315935009384155273437500,
+      "polynomial_sha256": "621c1c7836f27ba0a4f58df9f8d1e9c912389496389f28ebeebb57867c9fafbc",
+      "strictly_positive_for_zero_less_than_x_at_most_one": true
+    },
+    {
+      "representative_pair": [
+        3,
+        14
+      ],
+      "polynomial_degree": 2450,
+      "minimum_second_cumulative_coefficient": 0,
+      "terminal_first_sum": 852226929591403601074218750000000,
+      "terminal_second_sum": 1185220398380733191450500488281250000,
+      "polynomial_sha256": "79f87119c4ebbf082316d216ecbac37cd4e9a0ac1c45f2315c357bacda156059",
+      "strictly_positive_for_zero_less_than_x_at_most_one": true
+    },
+    {
+      "representative_pair": [
+        5,
+        11
+      ],
+      "polynomial_degree": 2100,
+      "minimum_second_cumulative_coefficient": 0,
+      "terminal_first_sum": 852226929591403601074218750000000,
+      "terminal_second_sum": 891713443831315935009384155273437500,
+      "polynomial_sha256": "6f6595d965dc39b72f257b969d527d02a107fce37e72dc6f500f931d33499382",
+      "strictly_positive_for_zero_less_than_x_at_most_one": true
+    },
+    {
+      "representative_pair": [
+        5,
+        14
+      ],
+      "polynomial_degree": 2450,
+      "minimum_second_cumulative_coefficient": 0,
+      "terminal_first_sum": 852226929591403601074218750000000,
+      "terminal_second_sum": 1185220398380733191450500488281250000,
+      "polynomial_sha256": "a78bfc533d080766d3eb7720be34a43c31fb52715e45e14513e5847f5c044f52",
+      "strictly_positive_for_zero_less_than_x_at_most_one": true
+    },
+    {
+      "representative_pair": [
+        6,
+        11
+      ],
+      "polynomial_degree": 2800,
+      "minimum_second_cumulative_coefficient": 0,
+      "terminal_first_sum": 852226929591403601074218750000000,
+      "terminal_second_sum": 1481378725601024894522094726562500000,
+      "polynomial_sha256": "f89d50acc438f3f705dcc8d37496fc34af501abcf28bb9d494ca158263b30ada",
+      "strictly_positive_for_zero_less_than_x_at_most_one": true
+    },
+    {
+      "representative_pair": [
+        7,
+        7
+      ],
+      "polynomial_degree": 2380,
+      "minimum_second_cumulative_coefficient": 0,
+      "terminal_first_sum": 852226929591403601074218750000000,
+      "terminal_second_sum": 1123443415172635382070922851562500000,
+      "polynomial_sha256": "c383905134dfd4f0c681df38d9ca911cf8a2b7e67d455527805a0402872ea7d9",
+      "strictly_positive_for_zero_less_than_x_at_most_one": true
+    },
+    {
+      "representative_pair": [
+        7,
+        9
+      ],
+      "polynomial_degree": 2800,
+      "minimum_second_cumulative_coefficient": 0,
+      "terminal_first_sum": 852226929591403601074218750000000,
+      "terminal_second_sum": 1481378725601024894522094726562500000,
+      "polynomial_sha256": "6965cc97fff161ef85b4027ef2f7a48da63f7353ba1e19eaaf9687c668161a4f",
+      "strictly_positive_for_zero_less_than_x_at_most_one": true
+    },
+    {
+      "representative_pair": [
+        11,
+        11
+      ],
+      "polynomial_degree": 2240,
+      "minimum_second_cumulative_coefficient": 0,
+      "terminal_first_sum": 852226929591403601074218750000000,
+      "terminal_second_sum": 1011555488508287328485870361328125000,
+      "polynomial_sha256": "9429651879082daa87f1203d5b5e876e0fd0c43b31785cd340246c03229f84fb",
+      "strictly_positive_for_zero_less_than_x_at_most_one": true
+    }
+  ],
+  "source_evidence_sha256": "8820468c980697f9a22b2338d794117306f3962fe6af940fc9fb4d22ba2363ae",
+  "profile_engine_sha256": "1bb46d9d0a109746e132e0cd848f413ea95777b40d24f647ba9457fddc0fbff1",
+  "profile_checker_sha256": "178a7a1bc882fe0ce6fe3589805cb31fe6948442a7374b2cc153ba7e04fc922f",
+  "checker_sha256": "68faaf6ffeb8ea173a38457459fa359d0883940b05c46f3005a501c6e996d559",
+  "profile_matrices_recomputed_by_this_replay": false,
+  "floating_arithmetic_used_for_certification": false,
+  "factoring_exponent_improved": false
+}
