@@ -39,6 +39,8 @@ Smith order by two at characteristics 5, 7 and 11, excluding their bare
 two-place target at every scale and angle. Characteristic three gives an
 exact old seed with spectator labels. This closes that construction's bare
 lane; it supplies no factoring improvement or new Lean work.
+The [clean full replay receipt](evidence/integral-spin-full-verification.json)
+pins verification through source `ad91127`; subsequent additions are separate.
 
 <!-- arithmetic-space-checkpoint:start -->
 The Pascal search now supports [arbitrary exponent permutations](research/permuted-pascal-free-gauges.md),

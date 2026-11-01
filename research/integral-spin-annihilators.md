@@ -137,6 +137,12 @@ and records 6,936 polynomial inverse entries, 20,736 spectator entries and
 python3 tools/check_integral_spin_annihilators.py --generate
 ```
 
+The [full replay receipt](../evidence/integral-spin-full-verification.json)
+records a clean successful default gate plus twenty-three focused targets
+at exact `ad91127df0772f94e4d0107f0c1e48ebcdd24c95`, in 708.48 seconds.
+It includes the integral-spin checker and preceding main integration.
+Later finite-cover changes and subsequent main additions are outside this pin.
+
 The initial native Smith diagnostic discovered the witness. The conclusion
 uses neither a numerical pressure optimization nor that diagnostic's jet
 window. No larger parameter sweep is pending.
