@@ -3158,3 +3158,7 @@ verify-artin-hasse-traces:
 	python3 tools/check_artin_hasse_trace_carries.py
 
 verify-arithmetic: verify-artin-hasse-traces
+
+.PHONY: verify-normal-basis-and
+verify-normal-basis-and:
+	python3 tools/check_normal_basis_and_tradeoff.py

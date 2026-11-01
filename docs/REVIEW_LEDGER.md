@@ -1232,3 +1232,24 @@ are preserved and clearly marked rejected. README and the index no longer
 advertise the unsupported score. Gaussian profiles and the original
 three-axis transfer remain unchanged. A different global construction
 would need its own exact identity and full cost argument.
+
+## Exact direct normal-basis AND tradeoff
+
+The [ordinary proof](../research/normal-basis-and-degree-tradeoff.md) shows
+that the unique bilinear polynomial of bitwise AND has a nonzero entry in
+every cyclic Frobenius-offset class for every normal basis. Subthreshold
+row monomials miss an antipodal offset, while the
+[acquisition module](../tools/normal_basis_and_tradeoff.py) constructs a
+matching representation of exact minimum degree `2^floor(t/2)+1` with
+`w/t` relative columns. Positive exponents are reduced without identifying
+the nonzero-point indicator with a constant at zero.
+
+The [receipt](../evidence/normal-basis-and-tradeoff.json) retains all 13
+normal bases in the fixed F4/F8/F16 panel, 2,272 literal bilinear word
+pairs, 6,592 synchronized-row word pairs and 141 subthreshold row
+monomials. The focused target and docs are the local gate. This is an
+obstruction to the direct gate and the specified degree/dimension
+parameter criterion, not a runtime lower bound for factoring or every
+structured contractor. Row polynomials are added; no free sum-to-product
+compiler is claimed. The full replay at `fc695a0` predates this diagnostic.
+No new Lean or independent mathematical review is claimed.

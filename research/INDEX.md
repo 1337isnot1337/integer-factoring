@@ -1,5 +1,7 @@
 # Research index
 
+- [Exact degree/column tradeoff for direct normal-basis AND](normal-basis-and-degree-tradeoff.md): every normal basis requires all cyclic Frobenius offsets. With t rows, the exact minimum formal degree is 2^floor(t/2)+1, with a matching acquired representation. This closes a direct Boolean-word gate route under the current degree/dimension estimate; arbitrary bases, auxiliaries and structured global predicates remain outside the claim.
+
 - [Exact trace projection with classical Artin--Hasse characters](artin-hasse-trace-projection.md): monomialwise splitting and binary Fourier projection replace the growing-precision algebra cost by 2^r scalar queries, spending r additional precision bits. Full Frobenius orbits sharpen the carry bound; native integer digit evaluation and a stronger factoring score remain open.
 
 - [Trace-constrained exact counts at growing precision](divided-power-trace-lifting.md): a divided-power coefficient algebra of charged dimension (2H)^r retains the Hermite moments of r polynomial trace predicates. The compiler preserves v*w/t carry dimensions, handles scalar unit inverses, and recovers exact counts at H>v*w; no complete integer arithmetic representation is supplied.
