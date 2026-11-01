@@ -2027,3 +2027,13 @@ The [new full-suite receipt](evidence/joint-moving-full-verification.json)
 pins a successful clean replay of defaults and three joint focused targets
 to `f2a16c0` (344 Python command blocks, 66+5 tests, 979 Markdown files).
 The rational-module additions postdate that full-suite source.
+
+A [six-to-five Laurent compression](research/joint-six-to-five-retractions.md)
+now targets the different paired energy shape `(0,0,12,16,18)` and a
+positive deficit of six. Its eleven discarded rows span a rank-nine
+module with a degree-five polynomial right inverse, covering all strict
+Laurent outputs of the rational retraction. The checker compares 70
+bounded spaces, 63 earlier-space regressions and 400 independently
+computed complete orders, with every pole charged. This is a constructive
+search interface; no favorable crossing or score increase is claimed.
+Run `make verify-joint-six-to-five` for the new focused controls.
