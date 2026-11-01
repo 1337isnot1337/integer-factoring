@@ -1,0 +1,117 @@
+{
+  "elementary_combination_identifications": 124,
+  "crossing_symmetries": {
+    "identity_on_kernel": 4,
+    "transpose_kernel": 4
+  },
+  "frames": {
+    "frame_profiles": 160,
+    "structural_coefficient_checks": 640,
+    "mixed_frame_and_symmetry_rank_comparisons": 1500
+  },
+  "entropy": {
+    "direct_inclusion_cases": 165,
+    "exact_tail_bounds": 4752,
+    "limiting_rho": 0.8112781244591329,
+    "selected_exact_bounds": [
+      {
+        "width": 8,
+        "forced_row_tail": 2517,
+        "forced_column_tail": 2517,
+        "denominator_per_rank": 9,
+        "central_literal_ranks": [
+          3214,
+          3214
+        ]
+      },
+      {
+        "width": 16,
+        "forced_row_tail": 15033173,
+        "forced_column_tail": 15033173,
+        "denominator_per_rank": 17,
+        "central_literal_ranks": [
+          19548046,
+          19548046
+        ]
+      },
+      {
+        "width": 32,
+        "forced_row_tail": 713250450657109,
+        "forced_column_tail": 713250450657109,
+        "denominator_per_rank": 33,
+        "central_literal_ranks": [
+          937973964234638,
+          937973964234638
+        ]
+      },
+      {
+        "width": 64,
+        "forced_row_tail": 2184912901896973526753699999573,
+        "forced_column_tail": 2184912901896973526753699999573,
+        "denominator_per_rank": 65,
+        "central_literal_ranks": [
+          2892018882291666386824925224846,
+          2892018882291666386824925224846
+        ]
+      },
+      {
+        "width": 96,
+        "forced_row_tail": 7652504655241828326741009010589014809186417811,
+        "forced_column_tail": 7652504655241828326741009010589014809186417811,
+        "denominator_per_rank": 97,
+        "central_literal_ranks": [
+          10152726821364697906417695659368290504799398652,
+          10152726821364697906417695659368290504799398652
+        ]
+      }
+    ],
+    "characteristic_two_negative_control": {
+      "n": 4,
+      "low": 1,
+      "high": 2,
+      "rank": 3
+    }
+  },
+  "nonlinear_selector_negative_control": {
+    "width": 3,
+    "toggle_relation": [
+      1,
+      2,
+      3
+    ],
+    "quadratic_selector_monomial": 5,
+    "offdiagonal_equal_degree_witness": {
+      "S_monomial": 5,
+      "N_monomial": 3
+    },
+    "crossing_identity": true,
+    "rank_profile": [
+      [
+        64,
+        1
+      ],
+      [
+        28,
+        18
+      ],
+      [
+        8,
+        28
+      ],
+      [
+        1,
+        64
+      ]
+    ]
+  },
+  "source_pins": {
+    "binary_entropy": "147652574e7ce1ff68b2c378712846cbf438da34",
+    "binary_entropy_path": "research/binary-coefficient-entropy.md"
+  },
+  "sha256": {
+    "check_frame_filtration.py": "86311b613b7b324b877e96a290530f7fd9d1fc098b72bd74329cc465c77e9433",
+    "code_kernel_crossing.py": "0387af9d540d2f48f8b6945eb915ec054c06440bf364ffe4724727f8078d44da",
+    "general_section_crossing.py": "e9594235c5338b56f67ada0af0049dadb8e4968a569496601424500fe511edc2"
+  },
+  "seconds": 8.589310310000656
+}

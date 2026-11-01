@@ -1,0 +1,95 @@
+{
+  "status": "PASS",
+  "tensor_realization_asserted": false,
+  "scope": "scalar limitation including integer and half-integer geometric splits",
+  "checker_sha256": "11d8bf664adb424d10486530c96c77136ca170d8975d1449deb3f0343b232508",
+  "all_split_envelope_checks": 264,
+  "subset_budget_classes": 32760,
+  "weighted_inequalities": 16404,
+  "dimensions": [
+    {
+      "d": 2,
+      "pieces": 4,
+      "cost": 8,
+      "subset_budget_classes": 8,
+      "weighted_inequalities": 6
+    },
+    {
+      "d": 4,
+      "pieces": 6,
+      "cost": 24,
+      "subset_budget_classes": 16,
+      "weighted_inequalities": 10
+    },
+    {
+      "d": 8,
+      "pieces": 8,
+      "cost": 64,
+      "subset_budget_classes": 32,
+      "weighted_inequalities": 18
+    },
+    {
+      "d": 16,
+      "pieces": 10,
+      "cost": 160,
+      "subset_budget_classes": 64,
+      "weighted_inequalities": 34
+    },
+    {
+      "d": 32,
+      "pieces": 12,
+      "cost": 384,
+      "subset_budget_classes": 128,
+      "weighted_inequalities": 66
+    },
+    {
+      "d": 64,
+      "pieces": 14,
+      "cost": 896,
+      "subset_budget_classes": 256,
+      "weighted_inequalities": 130
+    },
+    {
+      "d": 128,
+      "pieces": 16,
+      "cost": 2048,
+      "subset_budget_classes": 512,
+      "weighted_inequalities": 258
+    },
+    {
+      "d": 256,
+      "pieces": 18,
+      "cost": 4608,
+      "subset_budget_classes": 1024,
+      "weighted_inequalities": 514
+    },
+    {
+      "d": 512,
+      "pieces": 20,
+      "cost": 10240,
+      "subset_budget_classes": 2048,
+      "weighted_inequalities": 1026
+    },
+    {
+      "d": 1024,
+      "pieces": 22,
+      "cost": 22528,
+      "subset_budget_classes": 4096,
+      "weighted_inequalities": 2050
+    },
+    {
+      "d": 2048,
+      "pieces": 24,
+      "cost": 49152,
+      "subset_budget_classes": 8192,
+      "weighted_inequalities": 4098
+    },
+    {
+      "d": 4096,
+      "pieces": 26,
+      "cost": 106496,
+      "subset_budget_classes": 16384,
+      "weighted_inequalities": 8194
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "repository": "1337isnot1337/integer-factoring",
+  "commit": "05d9c1b8aed4f8494ce230f0869f9048ef879474",
+  "scope": "Unchanged source helper modules reused for the quadratic Boolean-code oracle",
+  "files": {
+    "tools/modular_pfaffian.py": {
+      "git_blob_sha": "1eaeb13fba9e5f3e3d96e6f2c9dacb2bd3a976e7",
+      "sha256": "390e718fb0066401bbe72870b61272b0d0736a385602b487fa3f56a84abe0a61",
+      "bytes": 5083
+    },
+    "tools/hamming_tensor_power.py": {
+      "git_blob_sha": "220653e36899c015030cf80c57b1b5c5963b3708",
+      "sha256": "21d69583085bcbf55fb48f1007754a40bd71b43d6333db910f4412970d077c27",
+      "bytes": 3700
+    },
+    "tools/hamming_restrictions.py": {
+      "git_blob_sha": "8dbbe3ec2413f64a7f53882a2007b46bb5742c7f",
+      "sha256": "94d6d1012b337b79cda3585cc96c75a368331d65d569cb8f274890a3c688b072",
+      "bytes": 3115
+    }
+  }
+}

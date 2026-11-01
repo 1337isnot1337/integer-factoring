@@ -246,3 +246,9 @@ The arbitrary-code entry formula and source credit follow
 and block amplification are in
 [auxiliary-coefficient-span.md](auxiliary-coefficient-span.md).
 This work used substantial OpenAI assistant support.
+
+## Relation to the earlier full-conservation theorem
+
+The [full-conservation theorem](full-conservation-rank-sum-barrier.md), retained from [PR #27](https://github.com/1337isnot1337/integer-factoring/pull/27), proves the same `d^(3/2)` rank-sum floor on the full binary cube for every kernel `[x+y=u+v] K(x+y,x+u)` over every field of characteristic two. Its matched Cauchy--Binet and Boolean-degree argument allows a broader kernel space than the elementary pencil span studied here.
+
+The present result instead allows arbitrary coordinate-code pairs and every coefficient field, but retains the elementary multivariate coefficient-span hypothesis. Restricting to code subsets need not preserve the convolution blocks used by the full-conservation proof. Thus neither result generally supersedes the other, and the common full-cube bound is not claimed as new relative to PR #27. Both are restrictions on construction classes, not lower bounds on factoring.

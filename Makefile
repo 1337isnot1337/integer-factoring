@@ -592,6 +592,36 @@ verify-frontier: verify-bell verify-class-square-conic verify-divisor-moments ve
 	python3 tools/check_arithmetic_class_groups.py
 	python3 tools/check_arithmetic_density_lift.py
 	python3 tools/check_bounded_smooth_norm.py
+	python3 tools/check_weighted_cut_rank_budget.py
+	python3 tools/check_weighted_cut_residual_budget.py
+	python3 tools/check_weighted_cut_dual_certificate.py
+	python3 tools/check_two_product_complement.py
+	python3 tools/check_two_product_seed_cutoff.py
+	python3 tools/check_flagged_cut_rank_budget.py
+	python3 tools/check_geometric_subspace_compression.py
+	python3 tools/check_geometric_cut_rank_budget.py
+	python3 tools/check_weighted_cut_relaxation_limit.py
+	python3 tools/check_geometric_cut_relaxation_limit.py
+	python3 tools/check_weighted_cut_border_stability.py
+	python3 tools/check_geometric_border_cutoff.py
+	python3 tools/check_rank_one_formal_cutoff.py
+	python3 tools/check_quadratic_crossing.py
+	python3 tools/check_word_restriction_barrier.py
+	python3 tools/check_code_sections.py
+	python3 tools/check_frame_filtration.py
+	python3 tools/check_feistel_filtration.py
+	python3 tools/check_diagonal_word_rank_sum.py
+	python3 tools/check_incidence_kernel_rank_sum.py
+	python3 tools/check_full_conservation_rank_sum.py
+	python3 tools/check_p_group_convolution_degree.py
+	python3 tools/check_bi_exterior_crossing_algebra.py
+	python3 tools/check_bi_exterior_degree_budget.py
+	python3 tools/check_nonlinear_layer_probe.py
+	python3 tools/check_pauli_walsh_dictionary.py
+	python3 tools/check_pauli_walsh_pairs.py
+	python3 tools/check_growing_number_field_transfer.py
+	python3 tools/check_rank_sum_global_transfer.py
+	python3 tools/check_characteristic_independent_recovery.py
 	python3 tools/check_piece_transfer.py
 	python3 tools/check_boson_truncation.py
 	python3 tools/check_graded_space.py
@@ -1209,3 +1239,41 @@ verify-weyl-orbit:
 
 verify-witt-full:
 	python3 tools/witt_artin_hasse.py --h 32 --gram
+
+.PHONY: verify-pr27 verify-code-width5
+verify-pr27:
+	python3 tools/check_weighted_cut_rank_budget.py
+	python3 tools/check_weighted_cut_residual_budget.py
+	python3 tools/check_weighted_cut_dual_certificate.py
+	python3 tools/check_two_product_complement.py
+	python3 tools/check_two_product_seed_cutoff.py
+	python3 tools/check_flagged_cut_rank_budget.py
+	python3 tools/check_geometric_subspace_compression.py
+	python3 tools/check_geometric_cut_rank_budget.py
+	python3 tools/check_weighted_cut_relaxation_limit.py
+	python3 tools/check_geometric_cut_relaxation_limit.py
+	python3 tools/check_weighted_cut_border_stability.py
+	python3 tools/check_geometric_border_cutoff.py
+	python3 tools/check_rank_one_formal_cutoff.py
+	python3 tools/check_quadratic_crossing.py
+	python3 tools/check_word_restriction_barrier.py
+	python3 tools/check_code_sections.py
+	python3 tools/check_frame_filtration.py
+	python3 tools/check_feistel_filtration.py
+	python3 tools/check_diagonal_word_rank_sum.py
+	python3 tools/check_incidence_kernel_rank_sum.py
+	python3 tools/check_full_conservation_rank_sum.py
+	python3 tools/check_p_group_convolution_degree.py
+	python3 tools/check_bi_exterior_crossing_algebra.py
+	python3 tools/check_bi_exterior_degree_budget.py
+	python3 tools/check_nonlinear_layer_probe.py
+	python3 tools/check_pauli_walsh_dictionary.py
+	python3 tools/check_pauli_walsh_pairs.py
+	python3 tools/check_growing_number_field_transfer.py
+	python3 tools/check_rank_sum_global_transfer.py
+	python3 tools/check_characteristic_independent_recovery.py
+
+verify-code-width5:
+	g++ -O3 -std=c++20 -fopenmp tools/check_code_kernel_width5.cpp -o /tmp/integer-factoring-code-width5
+	/tmp/integer-factoring-code-width5 0 64 4 /tmp/integer-factoring-code-width5
+	python3 tools/check_code_sections.py --full-classifier --native-prefix /tmp/integer-factoring-code-width5

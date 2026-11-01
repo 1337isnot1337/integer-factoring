@@ -1,0 +1,452 @@
+{
+  "source_support": {
+    "local_product_equation_sets": 23,
+    "affine_hyperplanes": 30,
+    "full_spaces": 1,
+    "contained_hyperplanes": [
+      {
+        "normal": 3,
+        "offset": 0,
+        "terms": [
+          13,
+          14
+        ]
+      },
+      {
+        "normal": 5,
+        "offset": 0,
+        "terms": [
+          0,
+          5
+        ]
+      }
+    ],
+    "crossing_symmetries": [
+      [
+        0,
+        1,
+        2,
+        3
+      ],
+      [
+        0,
+        2,
+        1,
+        3
+      ],
+      [
+        1,
+        0,
+        3,
+        2
+      ],
+      [
+        1,
+        3,
+        0,
+        2
+      ],
+      [
+        2,
+        0,
+        3,
+        1
+      ],
+      [
+        2,
+        3,
+        0,
+        1
+      ],
+      [
+        3,
+        1,
+        2,
+        0
+      ],
+      [
+        3,
+        2,
+        1,
+        0
+      ]
+    ],
+    "exceptional_equality_orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "noncrossing_term_projection_witnesses": [
+      {
+        "term": 0,
+        "pair": [
+          3,
+          1
+        ],
+        "missing_pattern": 1
+      },
+      {
+        "term": 1,
+        "pair": [
+          3,
+          2
+        ],
+        "missing_pattern": 3
+      },
+      {
+        "term": 2,
+        "pair": [
+          3,
+          1
+        ],
+        "missing_pattern": 2
+      },
+      {
+        "term": 3,
+        "pair": [
+          3,
+          1
+        ],
+        "missing_pattern": 3
+      },
+      {
+        "term": 4,
+        "pair": [
+          3,
+          2
+        ],
+        "missing_pattern": 3
+      },
+      {
+        "term": 5,
+        "pair": [
+          3,
+          1
+        ],
+        "missing_pattern": 1
+      },
+      {
+        "term": 6,
+        "pair": [
+          3,
+          2
+        ],
+        "missing_pattern": 3
+      },
+      {
+        "term": 7,
+        "pair": [
+          3,
+          1
+        ],
+        "missing_pattern": 2
+      },
+      {
+        "term": 8,
+        "pair": [
+          3,
+          1
+        ],
+        "missing_pattern": 3
+      },
+      {
+        "term": 9,
+        "pair": [
+          3,
+          2
+        ],
+        "missing_pattern": 1
+      },
+      {
+        "term": 10,
+        "pair": [
+          3,
+          2
+        ],
+        "missing_pattern": 3
+      },
+      {
+        "term": 11,
+        "pair": [
+          3,
+          2
+        ],
+        "missing_pattern": 2
+      },
+      {
+        "term": 12,
+        "pair": [
+          3,
+          2
+        ],
+        "missing_pattern": 2
+      },
+      {
+        "term": 13,
+        "pair": [
+          3,
+          2
+        ],
+        "missing_pattern": 1
+      },
+      {
+        "term": 14,
+        "pair": [
+          3,
+          2
+        ],
+        "missing_pattern": 1
+      },
+      {
+        "term": 15,
+        "pair": [
+          3,
+          2
+        ],
+        "missing_pattern": 2
+      },
+      {
+        "term": 16,
+        "pair": [
+          3,
+          2
+        ],
+        "missing_pattern": 2
+      },
+      {
+        "term": 17,
+        "pair": [
+          3,
+          2
+        ],
+        "missing_pattern": 2
+      },
+      {
+        "term": 18,
+        "pair": [
+          3,
+          2
+        ],
+        "missing_pattern": 2
+      },
+      {
+        "term": 19,
+        "pair": [
+          3,
+          2
+        ],
+        "missing_pattern": 3
+      },
+      {
+        "term": 20,
+        "pair": [
+          3,
+          2
+        ],
+        "missing_pattern": 3
+      },
+      {
+        "term": 21,
+        "pair": [
+          3,
+          2
+        ],
+        "missing_pattern": 1
+      }
+    ],
+    "crossing_term": {
+      "index": 22,
+      "local_polynomial": "z^2 E",
+      "low_scalar": "z^4",
+      "leading_entry": "z^2"
+    }
+  },
+  "balanced_example": {
+    "variables": 6,
+    "label_dimension": 4,
+    "quadratic_generators": [
+      [
+        3,
+        12,
+        48
+      ],
+      [
+        3,
+        5,
+        6,
+        9,
+        20,
+        34,
+        36,
+        48
+      ],
+      [
+        9,
+        10,
+        17,
+        18,
+        24,
+        34,
+        36,
+        40,
+        48
+      ]
+    ],
+    "nonzero_quadratic_ranks": [
+      6,
+      4,
+      6,
+      4,
+      4,
+      6,
+      6
+    ],
+    "weight_distribution": {
+      "0": 1,
+      "28": 4,
+      "32": 6,
+      "36": 4,
+      "64": 1
+    },
+    "disjoint_pairs": 45,
+    "complete_independent_pair_projections": 168,
+    "all_affine_extension_words": 1024,
+    "all_affine_extension_weight_distribution": {
+      "0": 1,
+      "24": 48,
+      "28": 256,
+      "32": 414,
+      "36": 256,
+      "40": 48,
+      "64": 1
+    }
+  },
+  "rectangle": {
+    "dimension": 16,
+    "rectangular_quartets": 2304,
+    "retained_crossing_entries": 48,
+    "blocks_per_cut": 6,
+    "block_size": 8,
+    "quartets_of_joint_quotient_rank_above_two": 1920,
+    "source_profile_evaluations_including_symmetries": 18432,
+    "unique_coefficient_degree": 134,
+    "both_restricted_crossing_ranks": [
+      48,
+      48
+    ],
+    "distinct_histograms_checked_by_both_algorithms": 1976,
+    "nonuniform_original_histograms": 2304,
+    "nonzero_coefficient_images_per_symmetry": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "collective_three_piece_decompositions": 32,
+    "crossing_sha256": "08a3f5e7ee9ac9c229a2a1875abbdcc36ecc040d9b205f935b9bb647eec669b0"
+  },
+  "harmonic_fiber_bound": [
+    {
+      "word_length": 2,
+      "all_label_subsets": 16,
+      "harmonic_denominator": [
+        2,
+        1
+      ],
+      "nontrivial_lower_bounds": 0
+    },
+    {
+      "word_length": 3,
+      "all_label_subsets": 256,
+      "harmonic_denominator": [
+        6,
+        1
+      ],
+      "nontrivial_lower_bounds": 0
+    },
+    {
+      "word_length": 4,
+      "all_label_subsets": 65536,
+      "harmonic_denominator": [
+        11,
+        1
+      ],
+      "nontrivial_lower_bounds": 424
+    }
+  ],
+  "arbitrary_word_rectangle": {
+    "word_length": 8,
+    "input_words": 256,
+    "input_is_balanced": false,
+    "fiber_weight_and_coordinates": [
+      4,
+      0,
+      1
+    ],
+    "fiber_size": 20,
+    "harmonic_guaranteed_fiber_size": 7,
+    "rectangle_sizes": [
+      10,
+      10
+    ],
+    "source_profile_evaluations_including_symmetries": 80000,
+    "distinct_histograms_checked_by_both_algorithms": 154,
+    "weighted_source_profile_checks": 1024,
+    "unique_coefficient_degree": 22,
+    "both_restricted_crossing_ranks": [
+      100,
+      100
+    ]
+  },
+  "unbalanced_negative_control": {
+    "variables": 3,
+    "quartet_labels": [
+      2,
+      4,
+      8,
+      2
+    ],
+    "word_weights": [
+      4,
+      2,
+      2,
+      4
+    ],
+    "joint_quotient_rank": 3,
+    "binomial_profile": [
+      [
+        11,
+        13
+      ],
+      [
+        15,
+        13
+      ]
+    ],
+    "expanded_polynomial_integer": 402659328
+  },
+  "source_commit": "05d9c1b8aed4f8494ce230f0869f9048ef879474",
+  "sha256": {
+    "check_word_restriction_barrier.py": "2a73280279a62b296a987da9ab65e2a97efd2a4c241a215488c6fa6ee6c16415",
+    "check_quadratic_crossing.py": "6bac96b9beee64791590a5e48a72e0b3a37864b02cac1cbf218c11d3c2248f7f",
+    "quadratic_crossing.py": "aa0a6f9ae7ee1dcce4fd00856d8a35b4bbe788571c770628647ffe8fd4ff9393"
+  },
+  "seconds": 1.455215058000249
+}
