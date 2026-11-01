@@ -116,6 +116,8 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs five groups on 
 
 ## Current research frontier
 
+- [Coarsened grid check](research/coarsened-grid-validation.md): a finite signed network-to-padded-clique check, including internal edges and grouping.
+
 The [auxiliary extension](research/auxiliary-binary-gauge-floor.md) carries
 the same floor to matrix-valued binary seeds of every fixed auxiliary
 dimension, including independent rational auxiliary gauges at the two

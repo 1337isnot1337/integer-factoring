@@ -179,3 +179,7 @@ Exact head ba5974a05a998572d14763c3c40997aabf65f217 after its #40 prerequisite. 
 ## 2026-11-01: PR #44 glossary integration
 
 Exact source head `b89916cde2b30c9d1c5bfc9500482856999f6b4e`, by Hao Yan / FanPUYen with disclosed OpenAI Codex assistance. Retained the seven-term glossary and quickstart link. Preserved main's newer contribution policy, discussion links, and precise distinction between the existing Lean endpoint and the ordinary general transfer. All glossary fragment targets resolved. `make verify-docs` and the full `make verify` passed on the integration tree (339 Markdown files, 50 unit tests and five crossing tests). No theorem change, new Lean work, PR approval, or independent mathematical acceptance.
+
+## 2026-11-01: PR #4 coarsening checker integration
+
+Exact head `16b9dba1839aa671a68802309d08d9817ee8f799`, by Cinna Davis / 1337isnot1337 with disclosed AI assistance. Retained the exact finite network-to-padded-clique reference, four unit tests, orientation negative control, and scoped note; added current README/index links without reverting later work. All four focused tests passed. Full `make verify` passed on the integration tree (340 Markdown files, 54 unit tests and five crossing tests). These are finite integration checks, not a uniform machine proof or a new exponent. No Lean rebuild, PR approval, or independent mathematical acceptance.
