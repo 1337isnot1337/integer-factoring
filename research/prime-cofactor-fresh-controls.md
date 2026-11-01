@@ -65,11 +65,11 @@ eliminations for each run. The selective replay additionally checks
 promoted-prime occurrences. Both extracted divisors divide the original
 integer exactly.
 
-The full evidence is compressed deterministically with gzip timestamp
-zero. Compression changes no mathematical data. The driver reads both
-plain JSON and `.json.gz` replay files. Source hashes inside the run
-records identify the search implementation before gzip transport support
-was added; that update changes only file input and output.
+The 160-bit evidence uses gzip with timestamp zero; the larger 176-bit
+certificate uses XZ compression. Compression changes no mathematical data.
+The driver reads plain JSON, `.json.gz`, and `.json.xz` replay files.
+Source hashes inside the run records identify the search implementation
+before these transport updates, which change only file input and output.
 
 - [Certified input](../evidence/prime-cofactor-fresh-160-input.json)
 - [Fixed-base certificate](../evidence/prime-cofactor-fresh-160-fixed.json.gz)
@@ -84,6 +84,39 @@ python3 tools/check_fresh_prime_cofactor_control.py \
   --replay evidence/prime-cofactor-fresh-160-selective.json.gz
 ```
 
-The separately committed 176-bit input is a further test target. A
-completed result is added only after its search and exact replay finish.
-The established complete factoring score remains `alpha=1/2`.
+## Fresh 176-bit completion
+
+Selective promotion also factors the separately committed 176-bit input:
+
+```text
+74210458568770352552128983761565394602512667014226413
+  = 291627194339293422246369983 * 254470296355250926433520211.
+```
+
+This run uses `Y=32749`, residual bound `Y^2`, promotion cutoff `16Y`,
+and a power window of 800,000. It completes after 23,998,215 norm queries
+and 1,423.76 recorded search seconds. Its 1,776-prime initial base reaches
+full rank. The augmented system has 51,902 generators and the same rank.
+The largest definition depth is 148, the largest elimination coefficient
+has 1,143 bits, and the largest saturation product has 115,022 bits.
+
+An independent replay verifies all 51,902 partial identities and their
+dominance bounds, 50,126 residual-prime certificates, and 1,776 integer
+graph eliminations. It also checks 20,022 definitions with multiple
+noninitial dependencies and 25,708 promoted-prime occurrences. The
+37 recursive input-prime certificates and 100 rejected input candidates
+are verified again. This is one completed policy run, not a matched
+176-bit comparison with fixed-base traversal.
+
+The [full 176-bit certificate](../evidence/prime-cofactor-fresh-176-selective.json.xz)
+retains all witnesses. Its uncompressed SHA-256 is
+`158148dddac3263de8a9e116a730fd1b169ff4608ea696676a10f01dc1a9aacb`.
+
+```sh
+python3 tools/check_fresh_prime_cofactor_control.py --bits 176 \
+  --replay evidence/prime-cofactor-fresh-176-selective.json.xz
+```
+
+A fresh certified 192-bit input was also committed before its search.
+Further completed results are added only after exact replay. The
+established complete factoring score remains `alpha=1/2`.

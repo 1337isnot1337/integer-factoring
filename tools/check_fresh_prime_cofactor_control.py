@@ -9,6 +9,7 @@ import argparse
 import gzip
 from hashlib import sha256
 import json
+import lzma
 from math import prod
 from pathlib import Path
 from time import perf_counter
@@ -90,8 +91,12 @@ def main():
     input_verification = verify_input(data)
     hashes = {name: sha256((ROOT/name).read_bytes()).hexdigest() for name in SOURCES}
     if args.replay:
-        encoded = (gzip.decompress(args.replay.read_bytes()).decode()
-                   if args.replay.suffix == '.gz' else args.replay.read_text())
+        if args.replay.suffix == '.gz':
+            encoded = gzip.decompress(args.replay.read_bytes()).decode()
+        elif args.replay.suffix == '.xz':
+            encoded = lzma.decompress(args.replay.read_bytes()).decode()
+        else:
+            encoded = args.replay.read_text()
         report = json.loads(encoded)
         assert report['input_file'] == input_path.name
         assert report['input_sha256'] == sha256(input_path.read_bytes()).hexdigest()
@@ -135,6 +140,8 @@ def main():
     encoded = json.dumps(report, sort_keys=True, separators=(',', ':'))+'\n'
     if args.output.suffix == '.gz':
         args.output.write_bytes(gzip.compress(encoded.encode(), mtime=0))
+    elif args.output.suffix == '.xz':
+        args.output.write_bytes(lzma.compress(encoded.encode(), preset=6))
     else:
         args.output.write_text(encoded)
     print(json.dumps({'mode': args.mode, 'elapsed_seconds': elapsed,

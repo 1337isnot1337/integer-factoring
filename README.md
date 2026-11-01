@@ -97,6 +97,12 @@ integer-graph replay. Selective promotion reduces norm queries from
 **7,792,462 to 5,453,561** (30.01%), but increases recorded time from
 221 to 357 seconds. Complete compressed certificates retain both results;
 these are finite controls and do not strengthen the uniform exponent.
+
+The same [fresh-input programme](research/prime-cofactor-fresh-controls.md)
+also completes a **176-bit** selective-promotion run in **23,998,215 norm
+queries**, reaching full rank in a 1,776-prime base. Its complete 51,902-identity
+certificate is retained in XZ form and independently replayed, including all
+50,126 residual-prime certificates and 1,776 integer graph eliminations.
 <!-- cofactor-collision-checkpoint:end -->
 
 <!-- coherent-compound-checkpoint:start -->
@@ -294,6 +300,14 @@ proves `2^K <= 4 D_* H` for a single rational upper-half selector, where
 `D_*` and `H` measure its explicit denominator. This distinguishes low-bit
 selection from ordinary interval selection without asserting a factoring
 lower bound.
+
+The [spectral trace interface](research/pole-cauchy-spectral-trace.md)
+recovers the exact factor-pair count from `r` supplied traces of `S=M M^T`,
+with largest numerical power `2r-1` and `r=bits(m)`. Increasing the displacement
+reduces the requirement to one trace or one entry sum. Those global joint-kernel
+aggregations remain unevaluated at a qualifying compressed cost. Explicit rank-two
+displacement generators and a leading inverse partial involution `K^3=K` are also
+proved, while their unknown integer multiplicities remain explicit.
 <!-- pole-implicit-checkpoint:end -->
 
 The [research index](research/INDEX.md) links proofs, exact evidence, and replay commands.

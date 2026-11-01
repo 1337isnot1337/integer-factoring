@@ -61,9 +61,40 @@
         "tools/check_prime_cofactor_saturation.py": "a4754f0860e0d204f48ccaa948f8d729523af8d8812666f096d096f3cbf402a3",
         "tools/prime_cofactor_saturation.py": "576c5885ffdbad32c015973ce7ad3f883e4aeb9882dbae16801f05b8bff7463a"
       }
+    },
+    {
+      "bits": 176,
+      "mode": "selective",
+      "integer": 74210458568770352552128983761565394602512667014226413,
+      "factor": 254470296355250926433520211,
+      "cofactor": 291627194339293422246369983,
+      "norm_queries": 23998215,
+      "initial_base_size": 1776,
+      "relation_rank": 1776,
+      "generator_count": 51902,
+      "elapsed_seconds": 1423.7555053150027,
+      "verification": {
+        "integer_dag_eliminations": 1776,
+        "multiple_noninitial_dependencies": 20022,
+        "negative_residual_orientations": 25249,
+        "partial_identity_checks": 51902,
+        "prime_residual_certificates": 50126,
+        "promoted_prime_occurrences": 25708,
+        "weighted_dominance_checks": 51902
+      },
+      "evidence": "prime-cofactor-fresh-176-selective.json.xz",
+      "uncompressed_sha256": "158148dddac3263de8a9e116a730fd1b169ff4608ea696676a10f01dc1a9aacb",
+      "compressed_sha256": "edc738fdbfe2045c3dd8dbe5fe654f066202c2fe48a6f5fef4874ce944615262",
+      "source_sha256": {
+        "tools/certified_small_factor.py": "9dd321ac2ae19bb49a5ffb9033ed58b746c57d3bc78f4ed89c3fd2e74a552cc9",
+        "tools/check_fresh_prime_cofactor_control.py": "df096835a69d06e16f32c72ee6b034f2906c505c1e9b0afe359828efa89f5b89",
+        "tools/check_prime_cofactor_saturation.py": "a4754f0860e0d204f48ccaa948f8d729523af8d8812666f096d096f3cbf402a3",
+        "tools/prime_cofactor_saturation.py": "576c5885ffdbad32c015973ce7ad3f883e4aeb9882dbae16801f05b8bff7463a"
+      }
     }
   ],
   "query_reduction": 0.3001491698002505,
   "recorded_time_ratio": 1.6121753658297473,
-  "factoring_exponent_improved": false
+  "factoring_exponent_improved": false,
+  "matched_comparison_bits": 160
 }
