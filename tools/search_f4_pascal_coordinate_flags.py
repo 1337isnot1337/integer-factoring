@@ -26,6 +26,8 @@ def main():
     parser.add_argument('--iterations', type=int, default=500)
     parser.add_argument('--restarts', type=int, default=12)
     parser.add_argument('--precision', type=int, default=512)
+    parser.add_argument('--cached-profiles', action='store_true',
+                        help='Check adaptive regular LDU cones before rebuilding a profile.')
     parser.add_argument('--seed', type=int, required=True)
     parser.add_argument('--output', type=Path, required=True)
     args = parser.parse_args()
@@ -39,9 +41,14 @@ def main():
              'tools/native_matrix_smith_f4.cpp', 'tools/native_rectangular_smith_f4.cpp',
              'tools/native_weighted_smith_f4.py', 'tools/weighted_pascal_flags.py',
              'tools/tensor_pascal_box_crossings.py']
+    if args.cached_profiles:
+        names += ['tools/native_smith_chambers_f4.py','tools/native_smith_chambers_f4.cpp',
+                  'tools/native_matrix_smith_f4.cpp']
+    model = None
     flag = json.loads(args.flag.read_text())
     report = {'status':'registered_incomplete', 'images':args.images, 'alphabet':args.alphabet,
               'constant_f4_flag':flag, 'seed':args.seed, 'seconds_budget':args.seconds,
+              'cached_profiles':args.cached_profiles,
               'restarts_ceiling':args.restarts, 'iterations_ceiling':args.iterations,
               'source_sha256':{n:sha256((root/n).read_bytes()).hexdigest() for n in names},
               'as_run_sources':{n:(root/n).read_text() for n in names}, 'runs':[],
@@ -50,6 +57,11 @@ def main():
 
     def save():
         report['total_seconds'] = time.monotonic()-start
+        if model is not None:
+            report['queries'] = model.queries
+            if args.cached_profiles:
+                from native_smith_chambers_f4 import sector_cache_statistics
+                report['profile_cache_statistics'] = sector_cache_statistics(model)
         args.output.parent.mkdir(parents=True, exist_ok=True)
         tmp = args.output.with_suffix('.tmp')
         tmp.write_text(json.dumps(report,indent=2)+'\n')
@@ -57,6 +69,9 @@ def main():
     save()
     seed = change_flag(permuted_pascal_kernel(args.images), flag)
     model = F4SectorPascalLetterPressure(seed, args.alphabet, precision=args.precision)
+    if args.cached_profiles:
+        from native_smith_chambers_f4 import cache_sector_pressure
+        cache_sector_pressure(model)
     report['construction_seconds'] = time.monotonic()-start
     report['construction'] = model.construction
     natural = model.fitted_natural_start()
@@ -117,6 +132,9 @@ def main():
             if value < best['rho']-1e-12:
                 best = model.last.copy()
                 report['best'] = best
+                save()
+            elif model.queries % 25 == 0:
+                report['search_seconds'] = time.monotonic()-search_start
                 save()
             transformed = np.r_[derivative[:-1]*scale*seed['outer'], derivative @ current]
             return value, transformed

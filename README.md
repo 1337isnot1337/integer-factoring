@@ -84,6 +84,9 @@ checked nonbinary references and complete affine equations. Neither supplies
 a new contraction.
 The [coordinate Pascal constructor now also accepts nonbinary F4 flags](research/f4-pascal-coordinate-flags.md),
 with independent original-entry controls and a registered larger constructive search.
+An [optional regular-LDU chamber cache](research/adaptive-smith-chambers.md)
+reuses complete profiles under checked conditions. Its larger moving-trajectory
+pilot is slower than the legacy evaluator; no search speedup is claimed.
 
 ## Arithmetic construction and space bounds
 

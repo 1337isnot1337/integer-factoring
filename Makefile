@@ -2478,6 +2478,12 @@ verify-pencil-uniform-transport:
 
 verify-frontier: verify-pencil-uniform-transport
 
+.PHONY: verify-smith-chambers-f4
+verify-smith-chambers-f4:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_smith_chambers_f4.py --output /tmp/smith-chambers-f4.json
+
+verify-frontier: verify-smith-chambers-f4
+
 .PHONY: verify-coherent-f4-partial
 verify-coherent-f4-partial:
 	python3 tools/check_coherent_hot_f4_partial.py

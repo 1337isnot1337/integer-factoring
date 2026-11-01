@@ -1,5 +1,7 @@
 # Research index
 
+- [Adaptive regular LDU chambers for complete profile queries](adaptive-smith-chambers.md): explicit coefficient knowledge, exact cone signs, diagonal reordering and certified prefix reuse; 1,848 independent orders and an actual q32 comparison. Repeats are fast but the measured moving trajectory is slower, so the backend is optional.
+
 - [Uniform-marginal transport closes both fixed-gauge endpoint escapes](pencil-uniform-transport-endpoints.md): full all-field pencil entry optima `14/5,-66/5`, exact determinant means and endpoint gaps `-8/25,-16/25`, plus the completed 469-trial asymmetric search. Interior angles and other generators remain open.
 
 - [Free physical heights and supporting angles on the retained F4 pencil](two-place-free-gauge-asymmetric-search.md): 67 fixed-profile representatives, 469 registered free-height asymmetric trials, 150 independently reconstructed new-gauge orders and 204 derivative controls; registration supplies no new contraction.
