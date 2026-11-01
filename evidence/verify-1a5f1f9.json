@@ -1,0 +1,18 @@
+{
+  "checkout_initially_clean": true,
+  "command": "make verify verify-pencil-principal-screen verify-pencil-endpoint-moments verify-pascal-coordinate-bundle",
+  "compressed_stdout_sha256": "9bfabe81f1a0850cca7d3ec4a49bbe21d4723b4e7bff42c4109c39d618e0d088",
+  "exit_code": 0,
+  "logged_python_command_blocks": 352,
+  "scope": "Full defaults and three named focused targets at exact clean 1a5f1f9, including the new global polynomial-axis gate and all recorded principal prefix inequalities. This source includes PR57-60; their optional imported gates have the separate a458e9c full receipt. Predates the completed F4 W18 proof, final bundle/coordinate archives and later F8 retraction refinement; these have separate focused checks. No new Lean or factoring improvement.",
+  "seconds": 786.0039812028408,
+  "source_commit": "1a5f1f90f6225e9435e82722416295b137a59777",
+  "source_tree": "4a7fffa0c2fd6c21edb050e52f6e5aa6fe23856f",
+  "status": "pass",
+  "stdout_path": "evidence/verify-1a5f1f9.stdout.txt.xz",
+  "stdout_sha256": "4abbd7e6f2b15ee916f827d221fd79dae27310de5d635f09e9a993c2246f6cc2",
+  "unittest_suites_reported": [
+    66,
+    5
+  ]
+}

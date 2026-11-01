@@ -57,3 +57,28 @@ OPENBLAS_NUM_THREADS=1 python3 tools/search_pascal_coordinate_bundle.py \
 ```
 
 No new Lean formalization or improved complete factoring score is included.
+
+## Completed comparison
+
+The frozen `1285852` [full archive](../evidence/pascal-coordinate-bundle-complete.json.xz)
+contains both completed thirty-minute runs, every successful supporting
+plane with its query heights and subgradient, best complete profiles,
+steps, source texts and stdout.
+
+| Start | Successful full-profile queries | Native rejections | Lowest observed rho |
+| --- | ---: | ---: | ---: |
+| Equal 32-letter control | 414 | 1 | 0.7216933250053 |
+| Selected 48 by 24 restriction | 359 | 1 | 0.7218724642968 |
+
+Both exhausted time budgets, at 1,801.57 and 1,802.31 seconds of search.
+Neither improved its starting rate. There were no unresolved masters.
+Both rejected native calls reported a missing promised pivot and supplied
+no accepted profile. The frozen prototype retained their error messages
+but not their candidate coordinates; these two calls are outside the
+saved successful-plane trace.
+
+A post-run matrix calculation rechecks all **299,504 directed held-out
+plane inequalities** among the 773 saved successful points. Its lowest
+floating slack is approximately `-1.34e-14`, within the original `2e-7`
+tolerance. These numerical checks neither reconstruct every large native
+profile nor prove global optimality. No exact improved crossing bound follows.

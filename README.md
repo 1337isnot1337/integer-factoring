@@ -93,8 +93,8 @@ Its nineteen-case screen completed 34,304 channel orders without passing the
 threshold; the selected unequal-alphabet one-hour follow-on completed 805
 successful profile queries without improving its inherited rate.
 A [fixed-type bundle comparison](research/pascal-coordinate-bundle-search.md)
-checks supporting planes at every complete profile query and targets the
-valuation ties encountered by the direct coordinate optimizer.
+completed 773 successful queries and rechecked 299,504 held-out plane
+inequalities, with two rejected native calls and no improved starting rate.
 The [principal-pencil screen](research/pencil-principal-alphabets.md)
 completed all 45,292 independently paired subsets of the 67 retained
 five-letter points and 753,750 channel orders. Its 140 proper-alphabet

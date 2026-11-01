@@ -214,3 +214,11 @@ python3 tools/check_polynomial_crossing_axis.py --recorded-principal
 The complete factoring score remains `1/2`. Interior supporting angles,
 physical heights varying with the angle, and other admissible path
 frameworks remain open. No new Lean formalization is included.
+
+The [full verification receipt](../evidence/verify-1a5f1f9.json) and
+[compressed log](../evidence/verify-1a5f1f9.stdout.txt.xz) record clean
+exact source `1a5f1f9`: full defaults and three named focused gates passed,
+352 Python command blocks and 66 plus five unit tests. The polynomial-axis
+gate is part of those defaults. Later completed-search archives, the F4
+piece-count proof and the subsequent F8 refinement have their separate
+focused checks; this whole-suite pin is not extended to later trees.

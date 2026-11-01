@@ -1,0 +1,11 @@
+{
+  "status": "pass",
+  "source_commit": "37f92730a26eaef0f4154bb77b39ab613f203a8d",
+  "source_tree": "42b4270b6e35608cdfd7cfca85c661086d474434",
+  "command": "make verify-f8-retraction-refinement",
+  "exit_code": 0,
+  "stdout_path": "evidence/f8-retraction-integration-check.stdout.txt.xz",
+  "stdout_sha256": "03dda0e80197bd2570ac74511f6a41db02f1647df8ed30a4731193e45a546788",
+  "compressed_stdout_sha256": "431db4ab9be889c2c49ba3e8441b601dc9885c598bc2763b1c5db1064812b186",
+  "scope": "Integrated selected-entry checks, declared cutoff census ledger and exact pressure arithmetic. Neither large native profile nor the complete truncated census was rebuilt. The refined finite rho bound remains above1/sqrt2 and factoring stays1/2."
+}
