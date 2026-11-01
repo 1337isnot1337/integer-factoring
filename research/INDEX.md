@@ -1,5 +1,9 @@
 # Research index
 
+- [Exact finite windows for adaptive Smith frames](windowed-smith-frames.md): proven coefficient adequacy, complete affine-system equivalence controls, and a 7.66-second dense five-letter construction; the unfinished untruncated baseline and all mathematical limits are retained.
+
+- [Graded adjugate compatibility at independent physical heights](graded-adjugate-caps.md): two all-field upper-tail families exclude the previous negative five- and six-letter cell-cap profiles; a nearby certified negative integer profile satisfies the stronger constraints but has no realizing tensor.
+
 - [Gaussian circuits with arbitrary one-mode factors](tensor-affine-clifford-profiles.md): integral auxiliary permutation, complete profile theorem, determinant mean, 18-row evaluator, and F4 census.
 
 - [Essentially linear compact oriented ideals](compact-oriented-basis-input-bound.md): total-input bit bound, batch discriminant checks, complete arithmetic verification, and independent HNF controls.
@@ -1460,3 +1464,7 @@ The [paired MDS family extension](orthogonal-pair-core-floor.md#5-a-stronger-all
 - [Exact cached LLL](circuit-box-cached-lll.md): derived rational cache updates, identical complete small-root/window receipts, and a dimension-19 control reducing full Gram–Schmidt computations from 3,370 to one.
 
 - [Singular affine Clifford profiles](tensor-singular-affine-clifford.md): lexicographic regularization proves power-of-two rank and complete nonzero subset-sum profiles; exact bounded substitution and independent Fock controls, including compact 32-mode examples.
+
+## Global orthogonal joint-energy rigidity
+
+[All-field two-parameter normal form](orthogonal-joint-global-rigidity.md) proves that constant orthogonal energy-preserving gauges retaining rank-one leading realignment fix that coefficient globally. The remaining tensor orbit has two parameters. Finite F4/F8/F16 profile controls do not establish an all-field dominance theorem.

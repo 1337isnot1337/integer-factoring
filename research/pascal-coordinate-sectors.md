@@ -103,6 +103,19 @@ These values are exploratory common-scale fits. They remain above
 certificate. Arbitrary symbol-potential optimization, different flags,
 and changes to the physical maps remain constructive next questions.
 
+The registered two-hour whole-symbol search on the 24-letter filled-sea
+alphabet has now finished its requested time budget from frozen `a3b2a8a`.
+It made 11,647 successful complete-profile evaluations, recorded two
+rejected queries, and completed four restarts before its budget expired
+during the following restart. The numerical rate moved from
+`0.7237993864917117` to `0.7237868887538473`, still above `1/sqrt(2)`.
+This is a small local numerical change, not an exact contraction certificate
+or improved factoring exponent. The
+[packet](../evidence/pascal-q24-two-hour-symbol-search.json.xz) retains
+the command, exact source pin and texts, complete result, both physical
+costs, gradient controls and full log, including its warnings. The
+process exited successfully; the twelve-restart ceiling was not exhausted.
+
 This work retains the preceding Pascal, original-Fock, paired-type,
 and native Smith provenance. Substantial OpenAI assistant support was
 used for the construction, proof, computations and text. No new Lean

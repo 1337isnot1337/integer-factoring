@@ -2424,6 +2424,16 @@ verify-natural-five-letter-floor:
 
 verify-frontier: verify-natural-five-letter-floor
 
+.PHONY: verify-graded-adjugate-caps
+verify-graded-adjugate-caps:
+	python3 tools/check_graded_adjugate_caps.py --output /tmp/graded-adjugate-caps.json
+
+verify-frontier: verify-graded-adjugate-caps
+
+.PHONY: verify-windowed-smith-frames
+verify-windowed-smith-frames:
+	python3 tools/check_windowed_binary_smith.py --output /tmp/windowed-binary-smith.json
+
 .PHONY: verify-coherent-f4-partial
 verify-coherent-f4-partial:
 	python3 tools/check_coherent_hot_f4_partial.py
@@ -2727,3 +2737,8 @@ check-cached-lll:
 .PHONY: check-singular-affine-clifford
 check-singular-affine-clifford:
 	python3 tools/check_tensor_singular_affine_clifford.py
+
+.PHONY: verify-orthogonal-joint-global
+verify-orthogonal-joint-global:
+	python3 tools/check_orthogonal_joint_global_rigidity.py
+	python3 tools/check_orthogonal_joint_finite_profiles.py
