@@ -3007,6 +3007,9 @@ verify-joint-frobenius:
 .PHONY: verify-trace-constraints
 verify-trace-constraints:
 	python3 tools/check_trace_constraint_contraction.py
+.PHONY: verify-fused-q12-endpoints
+verify-fused-q12-endpoints:
+	python3 tools/check_fused_q12_endpoint_block_cover.py
 
 .PHONY: verify-frobenius-prefix
 verify-frobenius-prefix:
