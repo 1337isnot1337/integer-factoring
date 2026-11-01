@@ -195,3 +195,42 @@ comparisons. A negative finite test does not establish a global optimum.
 Larger occupation blocks can exceed the native implementation's limit
 of 4,096 and are not silently treated as complete. These author controls
 do not constitute independent review or a new Lean theorem.
+
+## 6. Completed larger probes
+
+The [retained native results](../evidence/coherent-divided-power-probes.json)
+now include the ten-mode divided square with 66 physical letters and
+both complete 4,356-order profiles. Its numerical balanced fit is
+`rho approximately 0.7155596412`, compared with `0.7155813177` for the
+eight-mode member. This small within-family gain remains above
+`1/sqrt(2)` and does not improve the existing 96-letter construction.
+
+Eight unequal paired codes also completed both profiles and continuous
+supporting-weight searches. Their support parameter `R` must be below
+one to pass the asymmetric criterion; it is not the balanced `rho`.
+
+| Modes | Divided powers | Alphabet sizes | Best numerical R |
+|---|---|---|---:|
+| 4 | 1, 2 | 6, 16 | 1.034130641 |
+| 6 | 1, 2 | 8, 28 | 1.034444645 |
+| 6 | 1, 3 | 8, 64 | 1.034320701 |
+| 8 | 1, 2 | 10, 46 | 1.034358972 |
+| 8 | 1, 3 | 10, 120 | 1.034317806 |
+| 10 | 1, 2 | 12, 66 | 1.034345401 |
+| 10 | 1, 3 | 12, 232 | 1.034316851 |
+| 8 | 2, 3 | 46, 120 | 1.009658920 |
+
+Each retains six rational Pythagorean supporting weights and its exact
+integer comparison at the declared rational scale. All 48 retained
+points fail the strict threshold. The numerical minimizations do not
+prove global exclusions, and those six rational points need not coincide
+with the best continuous weight.
+
+The [receipt checker](../tools/check_coherent_divided_probes.py) rebuilds
+all maps, checks the complete native receipts, evaluates the fixed
+numerical equations, and recomputes all 48 integer comparisons. Its
+[replay receipt](../evidence/coherent-divided-probes-replay.json) covers
+31,888 recorded complete orders across nine pairs. It explicitly does
+not rerun the large native profiles. Reproduce that receipt with
+`make verify-coherent-divided-probes`; use the discovery drivers above
+to repeat a full native construction.

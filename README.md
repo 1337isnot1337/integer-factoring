@@ -158,6 +158,10 @@ without enumerating a basis, and a protected coordinate band fixes both
 low Smith segments. Full cut profiles and an improving pressure remain
 separate obligations. Run `make verify-coherent-divided-powers` for the
 exact graded, symplectic and unequal-alphabet controls.
+The [larger native probes](research/coherent-divided-power-families.md)
+retain nine complete paired codes, including a 66-letter numerical
+`rho` of about `0.7155596412`; all 48 specified rational asymmetric tests
+fail the strict threshold. These finite results give no score improvement.
 <!-- coherent-compound-checkpoint:end -->
 
 The [quadratic-parity Walsh construction](research/bell-walsh-constructions.md)

@@ -2122,3 +2122,7 @@ verify-coherent-gram-f4:
 .PHONY: verify-coherent-divided-powers
 verify-coherent-divided-powers:
 	python3 tools/check_coherent_divided_powers.py
+
+.PHONY: verify-coherent-divided-probes
+verify-coherent-divided-probes:
+	python3 tools/check_coherent_divided_probes.py
