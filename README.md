@@ -950,7 +950,9 @@ coefficient. Positive jets have zero endpoints and enlarge the scalar F2
 candidate space with polynomially many pieces for polynomial s. Independent
 physical truncated-ring evolution and complete small profiles pass; the
 current filtered jet list still misses the crossing at five and fourteen
-labels. Run `make verify-catalan-cup-jets`.
+labels. An exact local split identifies the q=1 bulk as an exterior lift;
+its non-Gaussian occupation correction starts at the second jet order.
+Run `make verify-catalan-cup-jets`.
 
 The [exact nonlinear charge theorem](research/nonlinear-symbol-charge-lattices.md)
 characterizes every admissible pair of full-symbol potentials for the

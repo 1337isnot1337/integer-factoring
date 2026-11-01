@@ -14,6 +14,8 @@ from catalan_cup_crossing import binary_product, crossing_tensor, cup_basis
 from catalan_cup_jets import crossing_jets, cup_series, inverse_series
 from check_catalan_cup_crossing import binary_rank
 from quantum_block_braid import braid_word
+from quantum_braid_spectral_fusion import FIELD, physical_generator
+from paired_path_crossing import power
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -134,7 +136,36 @@ def profile(tensor):
     }
 
 
+def gaussian_split_controls():
+    entries = 0
+    identity = np.eye(4, dtype=np.uint8)
+    for q in range(1, 16):
+        e = physical_generator(2, 0, q)
+        delta = q ^ power(q, -1)
+        for t in range(16):
+            gate = FIELD[q, identity] ^ FIELD[t, e]
+            u = FIELD[power(q, -1), gate[1:3, 1:3]]
+            lifted = np.zeros_like(gate)
+            lifted[0, 0] = 1
+            lifted[1:3, 1:3] = u
+            lifted[3, 3] = FIELD[u[0, 0], u[1, 1]] ^ FIELD[u[0, 1], u[1, 0]]
+            expected = FIELD[q, lifted]
+            expected[3, 3] ^= FIELD[t, delta]
+            assert np.array_equal(gate, expected)
+            entries += gate.size
+    defects = []
+    for order in (2, 4, 8):
+        ring = ReferenceRing(order)
+        defect = int(ring.table[3, 3]) ^ 1
+        assert defect == (4 if order > 2 else 0)
+        defects.append(
+            {"jet_order": order, "parity_determinant_defect_t_coefficient": defect}
+        )
+    return {"local_split_entries": entries, "truncated_ring_defects": defects}
+
+
 def check():
+    gaussian = gaussian_split_controls()
     profiles = []
     physical_entries = coefficient_pairs = inverse_controls = 0
     for n, order in ((4, 2), (4, 4), (4, 8), (6, 2), (6, 4), (6, 8), (8, 4)):
@@ -203,6 +234,7 @@ def check():
     )
     return {
         "status": "pass",
+        "gaussian_limit_controls": gaussian,
         "independent_physical_binary_jet_entries": physical_entries,
         "inverse_series_coefficients_checked": inverse_controls,
         "complete_coefficient_rank_pairs_checked": coefficient_pairs,

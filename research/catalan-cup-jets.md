@@ -84,7 +84,38 @@ Construction and dense factors therefore cost 2^O(lambda)poly(s) at
 n=lambda+O(log(lambda+2)), and (1) has polynomial degree for polynomial s.
 This is an effective family construction, not a faster factoring theorem.
 
-## 3. Evidence and present limit
+## 3. The Gaussian limit and the interaction order
+
+The bulk gate has an explicit decomposition. Let M be its one-particle
+block, in the order10,01, and let Gamma(U)=diag(1,U,det(U)) be the exterior
+lift of a two-by-two matrix. In characteristic two,
+
+```math
+M=\begin{pmatrix}q+tq^{-1}&t\\t&q+tq\end{pmatrix},
+\qquad
+qI+t e_q=q\,\Gamma(M/q)+t\delta\,|11\rangle\langle11|.       \tag{3}
+```
+
+Indeed det(M)=q^2+t(q^2+1). The two sides agree on vacuum and on the
+one-particle block; the exterior lift's occupied-pair entry is q+t*delta,
+and the rank-one occupation term restores q. This is an identity over
+the full Laurent coefficient ring, so it also holds over every R_s.
+
+At q=1 the bulk is exactly an exterior lift. For q=1+u, the difference
+between the determinants of the even and odd parity blocks is exactly
+t*u^2. Thus the first departure from the local Gaussian condition has
+order two. Expanding a product of gates using (3), a contribution with
+d occupation defects is divisible by u^(2d). The u^j coefficient can
+therefore use at most floor(j/2) such defects, with all intervening
+deformed exterior gates retained.
+
+This identifies a concrete grading for a future rank estimate. The
+coordinate decoder is a separate boundary tensor and can itself be
+non-Gaussian; (3) is not a Gaussian classification of the whole compressed
+crossing. Neither the interaction count nor a low fixed jet order proves
+a favorable complete rank sum.
+
+## 4. Evidence and present limit
 
 The [checker](../tools/check_catalan_cup_jets.py) verifies inverse-series
 identities, all jet endpoints, the baseline specialization and both actual
