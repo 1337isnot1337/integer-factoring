@@ -2627,3 +2627,7 @@ verify-three-row-hecke:
 	python3 tools/check_three_row_hecke_crossing.py --alphabet 5
 verify-three-row-hecke-full:
 	python3 tools/check_three_row_hecke_crossing.py --alphabet 9
+
+.PHONY: verify-oriented-power-112
+verify-oriented-power-112:
+	python3 tools/check_optimized_oriented_fresh_run.py --replay evidence/optimized-oriented-power-112.json.xz

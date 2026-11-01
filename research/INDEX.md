@@ -1,5 +1,7 @@
 # Research index
 
+- [Complete 112-bit oriented prefix](oriented-power-112-prefix.md): 73,728 queries, all ideal and integer-presentation identities replayed, and the complete 96,752-query original comparison.
+
 - [Linear oriented supplied-data charges](oriented-basis-linear-charges.md): a constructive norm-to-orientation transfer, batch coprimality validation, and a global amortized bound for sparse usage rewrites.
 
 - [Prepared oriented selector controls](../evidence/prepared-oriented-power-search.json) and [declared 128-bit policy](../evidence/prepared-oriented-fresh-128-policy.json): exact component substitutions and bounded fresh-run provenance.
