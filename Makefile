@@ -2248,3 +2248,28 @@ verify-quadratic-coalescence-bezout:
 .PHONY: verify-canonical-affine-codes
 verify-canonical-affine-codes:
 	python3 tools/check_canonical_affine_codes.py --full --output /tmp/canonical-affine-codes.json
+
+
+.PHONY: verify-regularized-bezout-factor-moments verify-displaced-bezout-extraction verify-leading-bezout-factoring
+verify-regularized-bezout-factor-moments:
+	python3 tools/check_regularized_bezout_factor_moments.py --output /tmp/regularized-bezout-factor-moments.json
+
+verify-displaced-bezout-extraction:
+	python3 tools/check_displaced_bezout_extraction.py --output /tmp/displaced-bezout-extraction.json
+
+verify-leading-bezout-factoring:
+	python3 tools/check_leading_bezout_factoring.py --output /tmp/leading-bezout-factoring.json
+
+.PHONY: verify-joint-retraction-module
+verify-joint-retraction-module:
+	python3 tools/check_joint_hot_retraction_module.py
+
+
+.PHONY: verify-filtered-pascal-exponents
+verify-filtered-pascal-exponents:
+	python3 tools/check_filtered_pascal_exponents.py --output /tmp/filtered-pascal-exponents.json
+
+
+.PHONY: verify-prime-bezout-counting
+verify-prime-bezout-counting:
+	python3 tools/check_prime_bezout_counting.py --output /tmp/prime-bezout-counting.json

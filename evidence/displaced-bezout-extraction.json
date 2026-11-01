@@ -1,0 +1,566 @@
+{
+  "exact_interval_cases": [
+    {
+      "columns": 1,
+      "decoded_factor_polynomial": [
+        1
+      ],
+      "decoded_hankel_order": null,
+      "factor_bound": 1,
+      "factor_derivative_orders": [],
+      "factor_rows": [],
+      "first_a": 1,
+      "first_b": 1,
+      "moment_count": 2,
+      "n": 3,
+      "primitive_scale": 1,
+      "regularization_contract": {
+        "clearing_exponent": 7,
+        "column_derivative_order": 0,
+        "columns": 1,
+        "first_a": 1,
+        "first_b": 1,
+        "height_bound": 2,
+        "n": 3,
+        "padding_exponent": 7,
+        "precision": 5,
+        "provider_obligation": "Supply the globally correct cleared V jet; this function computes only its contract.",
+        "reverse_u_degree": 0,
+        "reverse_v_degree": 0,
+        "row_derivative_order": 0,
+        "rows": 1,
+        "unit_multiplier": "omega"
+      },
+      "residue_content": null,
+      "rows": 1,
+      "scope": "Finite provider explicitly interpolates the complete small interval.",
+      "supplied_jet_coefficients": 1
+    },
+    {
+      "columns": 2,
+      "decoded_factor_polynomial": [
+        -3,
+        1
+      ],
+      "decoded_hankel_order": 0,
+      "factor_bound": 1,
+      "factor_derivative_orders": [
+        0
+      ],
+      "factor_rows": [
+        3
+      ],
+      "first_a": 3,
+      "first_b": 1,
+      "moment_count": 2,
+      "n": 3,
+      "primitive_scale": 10,
+      "regularization_contract": {
+        "clearing_exponent": 10,
+        "column_derivative_order": 1,
+        "columns": 2,
+        "first_a": 3,
+        "first_b": 1,
+        "height_bound": 3,
+        "n": 3,
+        "padding_exponent": 9,
+        "precision": 6,
+        "provider_obligation": "Supply the globally correct cleared V jet; this function computes only its contract.",
+        "reverse_u_degree": 1,
+        "reverse_v_degree": 0,
+        "row_derivative_order": 0,
+        "rows": 1,
+        "unit_multiplier": "omega"
+      },
+      "residue_content": 0,
+      "rows": 1,
+      "scope": "Finite provider explicitly interpolates the complete small interval.",
+      "supplied_jet_coefficients": 1
+    },
+    {
+      "columns": 2,
+      "decoded_factor_polynomial": [
+        3,
+        -4,
+        1
+      ],
+      "decoded_hankel_order": 2,
+      "factor_bound": 2,
+      "factor_derivative_orders": [
+        1,
+        1
+      ],
+      "factor_rows": [
+        1,
+        3
+      ],
+      "first_a": 1,
+      "first_b": 1,
+      "moment_count": 4,
+      "n": 3,
+      "primitive_scale": 17,
+      "regularization_contract": {
+        "clearing_exponent": 18,
+        "column_derivative_order": 1,
+        "columns": 2,
+        "first_a": 1,
+        "first_b": 1,
+        "height_bound": 3,
+        "n": 3,
+        "padding_exponent": 16,
+        "precision": 13,
+        "provider_obligation": "Supply the globally correct cleared V jet; this function computes only its contract.",
+        "reverse_u_degree": 1,
+        "reverse_v_degree": 1,
+        "row_derivative_order": 1,
+        "rows": 2,
+        "unit_multiplier": "omega"
+      },
+      "residue_content": 1,
+      "rows": 2,
+      "scope": "Finite provider explicitly interpolates the complete small interval.",
+      "supplied_jet_coefficients": 2
+    },
+    {
+      "columns": 2,
+      "decoded_factor_polynomial": [
+        -5,
+        1
+      ],
+      "decoded_hankel_order": 0,
+      "factor_bound": 2,
+      "factor_derivative_orders": [
+        0
+      ],
+      "factor_rows": [
+        5
+      ],
+      "first_a": 1,
+      "first_b": 1,
+      "moment_count": 4,
+      "n": 5,
+      "primitive_scale": 27,
+      "regularization_contract": {
+        "clearing_exponent": 27,
+        "column_derivative_order": 1,
+        "columns": 2,
+        "first_a": 1,
+        "first_b": 1,
+        "height_bound": 5,
+        "n": 5,
+        "padding_exponent": 22,
+        "precision": 17,
+        "provider_obligation": "Supply the globally correct cleared V jet; this function computes only its contract.",
+        "reverse_u_degree": 1,
+        "reverse_v_degree": 3,
+        "row_derivative_order": 4,
+        "rows": 4,
+        "unit_multiplier": "omega"
+      },
+      "residue_content": 0,
+      "rows": 4,
+      "scope": "Finite provider explicitly interpolates the complete small interval.",
+      "supplied_jet_coefficients": 4
+    },
+    {
+      "columns": 8,
+      "decoded_factor_polynomial": [
+        225,
+        -360,
+        158,
+        -24,
+        1
+      ],
+      "decoded_hankel_order": 16,
+      "factor_bound": 4,
+      "factor_derivative_orders": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "factor_rows": [
+        1,
+        3,
+        5,
+        15
+      ],
+      "first_a": 1,
+      "first_b": 1,
+      "moment_count": 8,
+      "n": 15,
+      "primitive_scale": 98,
+      "regularization_contract": {
+        "clearing_exponent": 101,
+        "column_derivative_order": 11,
+        "columns": 8,
+        "first_a": 1,
+        "first_b": 1,
+        "height_bound": 8,
+        "n": 15,
+        "padding_exponent": 79,
+        "precision": 71,
+        "provider_obligation": "Supply the globally correct cleared V jet; this function computes only its contract.",
+        "reverse_u_degree": 7,
+        "reverse_v_degree": 7,
+        "row_derivative_order": 11,
+        "rows": 8,
+        "unit_multiplier": "omega"
+      },
+      "residue_content": 3,
+      "rows": 8,
+      "scope": "Finite provider explicitly interpolates the complete small interval.",
+      "supplied_jet_coefficients": 8
+    },
+    {
+      "columns": 8,
+      "decoded_factor_polynomial": [
+        2025,
+        -1440,
+        342,
+        -32,
+        1
+      ],
+      "decoded_hankel_order": 16,
+      "factor_bound": 4,
+      "factor_derivative_orders": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "factor_rows": [
+        3,
+        5,
+        9,
+        15
+      ],
+      "first_a": 1,
+      "first_b": 1,
+      "moment_count": 8,
+      "n": 45,
+      "primitive_scale": 99,
+      "regularization_contract": {
+        "clearing_exponent": 101,
+        "column_derivative_order": 11,
+        "columns": 8,
+        "first_a": 1,
+        "first_b": 1,
+        "height_bound": 8,
+        "n": 45,
+        "padding_exponent": 79,
+        "precision": 71,
+        "provider_obligation": "Supply the globally correct cleared V jet; this function computes only its contract.",
+        "reverse_u_degree": 7,
+        "reverse_v_degree": 7,
+        "row_derivative_order": 11,
+        "rows": 8,
+        "unit_multiplier": "omega"
+      },
+      "residue_content": 2,
+      "rows": 8,
+      "scope": "Finite provider explicitly interpolates the complete small interval.",
+      "supplied_jet_coefficients": 8
+    },
+    {
+      "columns": 8,
+      "decoded_factor_polynomial": [
+        -9,
+        1
+      ],
+      "decoded_hankel_order": 0,
+      "factor_bound": 2,
+      "factor_derivative_orders": [
+        0
+      ],
+      "factor_rows": [
+        9
+      ],
+      "first_a": 1,
+      "first_b": 1,
+      "moment_count": 4,
+      "n": 81,
+      "primitive_scale": 51,
+      "regularization_contract": {
+        "clearing_exponent": 51,
+        "column_derivative_order": 11,
+        "columns": 8,
+        "first_a": 1,
+        "first_b": 1,
+        "height_bound": 8,
+        "n": 81,
+        "padding_exponent": 29,
+        "precision": 21,
+        "provider_obligation": "Supply the globally correct cleared V jet; this function computes only its contract.",
+        "reverse_u_degree": 7,
+        "reverse_v_degree": 7,
+        "row_derivative_order": 11,
+        "rows": 8,
+        "unit_multiplier": "omega"
+      },
+      "residue_content": 0,
+      "rows": 8,
+      "scope": "Finite provider explicitly interpolates the complete small interval.",
+      "supplied_jet_coefficients": 4
+    },
+    {
+      "columns": 8,
+      "decoded_factor_polynomial": [
+        1
+      ],
+      "decoded_hankel_order": null,
+      "factor_bound": 3,
+      "factor_derivative_orders": [],
+      "factor_rows": [],
+      "first_a": 1,
+      "first_b": 1,
+      "moment_count": 6,
+      "n": 17,
+      "primitive_scale": 28,
+      "regularization_contract": {
+        "clearing_exponent": 72,
+        "column_derivative_order": 11,
+        "columns": 8,
+        "first_a": 1,
+        "first_b": 1,
+        "height_bound": 8,
+        "n": 17,
+        "padding_exponent": 50,
+        "precision": 42,
+        "provider_obligation": "Supply the globally correct cleared V jet; this function computes only its contract.",
+        "reverse_u_degree": 7,
+        "reverse_v_degree": 7,
+        "row_derivative_order": 11,
+        "rows": 8,
+        "unit_multiplier": "omega"
+      },
+      "residue_content": null,
+      "rows": 8,
+      "scope": "Finite provider explicitly interpolates the complete small interval.",
+      "supplied_jet_coefficients": 6
+    },
+    {
+      "columns": 8,
+      "decoded_factor_polynomial": [
+        35,
+        -12,
+        1
+      ],
+      "decoded_hankel_order": 2,
+      "factor_bound": 3,
+      "factor_derivative_orders": [
+        1,
+        1
+      ],
+      "factor_rows": [
+        5,
+        7
+      ],
+      "first_a": 3,
+      "first_b": 1,
+      "moment_count": 6,
+      "n": 35,
+      "primitive_scale": 54,
+      "regularization_contract": {
+        "clearing_exponent": 55,
+        "column_derivative_order": 11,
+        "columns": 8,
+        "first_a": 3,
+        "first_b": 1,
+        "height_bound": 7,
+        "n": 35,
+        "padding_exponent": 40,
+        "precision": 33,
+        "provider_obligation": "Supply the globally correct cleared V jet; this function computes only its contract.",
+        "reverse_u_degree": 7,
+        "reverse_v_degree": 3,
+        "row_derivative_order": 4,
+        "rows": 4,
+        "unit_multiplier": "omega"
+      },
+      "residue_content": 1,
+      "rows": 4,
+      "scope": "Finite provider explicitly interpolates the complete small interval.",
+      "supplied_jet_coefficients": 4
+    },
+    {
+      "columns": 4,
+      "decoded_factor_polynomial": [
+        -11,
+        1
+      ],
+      "decoded_hankel_order": 0,
+      "factor_bound": 2,
+      "factor_derivative_orders": [
+        0
+      ],
+      "factor_rows": [
+        11
+      ],
+      "first_a": 3,
+      "first_b": 3,
+      "moment_count": 4,
+      "n": 77,
+      "primitive_scale": 43,
+      "regularization_contract": {
+        "clearing_exponent": 43,
+        "column_derivative_order": 4,
+        "columns": 4,
+        "first_a": 3,
+        "first_b": 3,
+        "height_bound": 7,
+        "n": 77,
+        "padding_exponent": 28,
+        "precision": 21,
+        "provider_obligation": "Supply the globally correct cleared V jet; this function computes only its contract.",
+        "reverse_u_degree": 3,
+        "reverse_v_degree": 7,
+        "row_derivative_order": 11,
+        "rows": 8,
+        "unit_multiplier": "omega"
+      },
+      "residue_content": 0,
+      "rows": 8,
+      "scope": "Finite provider explicitly interpolates the complete small interval.",
+      "supplied_jet_coefficients": 4
+    },
+    {
+      "columns": 8,
+      "decoded_factor_polynomial": [
+        1
+      ],
+      "decoded_hankel_order": null,
+      "factor_bound": 2,
+      "factor_derivative_orders": [],
+      "factor_rows": [],
+      "first_a": 1,
+      "first_b": 1,
+      "moment_count": 4,
+      "n": 101,
+      "primitive_scale": 18,
+      "regularization_contract": {
+        "clearing_exponent": 39,
+        "column_derivative_order": 11,
+        "columns": 8,
+        "first_a": 1,
+        "first_b": 1,
+        "height_bound": 7,
+        "n": 101,
+        "padding_exponent": 24,
+        "precision": 17,
+        "provider_obligation": "Supply the globally correct cleared V jet; this function computes only its contract.",
+        "reverse_u_degree": 7,
+        "reverse_v_degree": 3,
+        "row_derivative_order": 4,
+        "rows": 4,
+        "unit_multiplier": "omega"
+      },
+      "residue_content": null,
+      "rows": 4,
+      "scope": "Finite provider explicitly interpolates the complete small interval.",
+      "supplied_jet_coefficients": 4
+    },
+    {
+      "columns": 8,
+      "decoded_factor_polynomial": [
+        105,
+        -22,
+        1
+      ],
+      "decoded_hankel_order": 6,
+      "factor_bound": 5,
+      "factor_derivative_orders": [
+        3,
+        3
+      ],
+      "factor_rows": [
+        7,
+        15
+      ],
+      "first_a": 3,
+      "first_b": 1,
+      "moment_count": 10,
+      "n": 105,
+      "primitive_scale": 137,
+      "regularization_contract": {
+        "clearing_exponent": 138,
+        "column_derivative_order": 11,
+        "columns": 8,
+        "first_a": 3,
+        "first_b": 1,
+        "height_bound": 8,
+        "n": 105,
+        "padding_exponent": 116,
+        "precision": 108,
+        "provider_obligation": "Supply the globally correct cleared V jet; this function computes only its contract.",
+        "reverse_u_degree": 7,
+        "reverse_v_degree": 7,
+        "row_derivative_order": 11,
+        "rows": 8,
+        "unit_multiplier": "omega"
+      },
+      "residue_content": 1,
+      "rows": 8,
+      "scope": "Finite provider explicitly interpolates the complete small interval.",
+      "supplied_jet_coefficients": 8
+    }
+  ],
+  "finite_exact_interval_providers": 12,
+  "generic_unit_moment_decodings": 35,
+  "large_integer_node_control": {
+    "coefficient_bits": 414,
+    "decision_moment_count": 4,
+    "decision_precision": 310,
+    "degree": 3,
+    "determinant_guard_bits": 1236,
+    "factor_bound": 4,
+    "factor_polynomial": [
+      -2037035976334486086268445688432678762693223752661294700975174141157068876887189726464835689,
+      5624283154906465964396867323234633928035013819087669426126919,
+      -4436777100798802905238461218831,
+      1
+    ],
+    "hankel_determinant_valuation": 8,
+    "max_factor": 5070602400912917605986812821504,
+    "moment_count": 8,
+    "nodes": [
+      633825300114114700748351602691,
+      1267650600228229401496703205381,
+      2535301200456458802993406410759
+    ],
+    "nonzero_leading_hankel_sizes": [
+      1,
+      2,
+      3
+    ],
+    "precision": 1651,
+    "scope": "Supplied unit-weight moments, not an implicit interval jet provider",
+    "separation_bits": 103,
+    "supplied_precision": 1651
+  },
+  "primitive_scale_boundary_pairs": 9,
+  "scope": "The decoder is polynomial in the supplied factor bound and bit parameters. Computing a global regularized Bezout jet remains unimplemented.",
+  "theorem": "Primitive displaced Bezout sensitivity and supplied-moment factor recovery",
+  "vanishing_leading_hankel_control": {
+    "coefficient_bits": 14,
+    "decision_moment_count": 3,
+    "decision_precision": 9,
+    "degree": 2,
+    "determinant_guard_bits": 24,
+    "factor_bound": 3,
+    "factor_polynomial": [
+      21,
+      -10,
+      1
+    ],
+    "hankel_determinant_valuation": 4,
+    "max_factor": 12,
+    "moment_count": 6,
+    "nonzero_leading_hankel_sizes": [
+      2
+    ],
+    "precision": 39,
+    "separation_bits": 4,
+    "supplied_precision": 39
+  }
+}

@@ -1887,3 +1887,12 @@ A [quadratic coalescence testbed](research/quadratic-coalescence-bezout.md) now 
 
 
 The [exact signed affine-code screen](research/canonical-affine-code-visibility.md) proves the sharp 32-bit visibility threshold for all 2,013,762,304 eight-wire point-row and signed affine-code column pairs. Original-coefficient replays and positive controls accompany the exhaustive finite result; a general efficient decoder is still required.
+
+
+For arbitrary odd inputs, the [fixed-scale global Bézout interface](research/regularized-bezout-factor-moments.md) now isolates factor-supported moments in a short complete reverse jet. The [displaced extraction theorem](research/displaced-bezout-extraction.md) supplies explicit primitive-scale and conditioned reconstruction bounds. With additional ordinary interval padding, [one leading coefficient](research/leading-bezout-factoring.md) at linear bit precision becomes a unit times a positive divisor sum, giving a polynomial-query factoring reduction without any factor-count bound. The normalized global coefficient evaluator remains the missing algorithm; the current factoring score is unchanged.
+
+
+The [filtered Pascal exponent classification](research/filtered-pascal-exponents.md) supplies nonlinear and noninjective exponent maps that preserve a complete zero-cut profile. It characterizes the fixed regularity cone exactly and verifies the actual polynomial and Fock matrices. The other cut still requires its own profile calculation; no exponent improvement is inferred from the preserved spectrum alone.
+
+
+A [prime-adic precision-one refinement](research/prime-bezout-counting.md) turns each normalized leading coefficient into a rectangle factor count modulo a small prime. Polynomially bounded primes and disjoint residue rectangles yield a uniform conditional factoring reduction with only logarithmically many output bits per query. Exact rational controls verify the normalization; computing the global coefficient remains unresolved.
