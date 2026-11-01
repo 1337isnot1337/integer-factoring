@@ -17,6 +17,26 @@
   ],
   "block_determinant_valuation": 12,
   "parity_block_profile_allocations": 49,
+  "new_q6_core_possibilities": [
+    [
+      0,
+      6,
+      7,
+      11
+    ],
+    [
+      0,
+      6,
+      8,
+      10
+    ],
+    [
+      0,
+      6,
+      9,
+      9
+    ]
+  ],
   "formal_charge_identities": [
     [
       0,
@@ -843,7 +863,7 @@
     ]
   ],
   "source_sha256": {
-    "check_zero_energy_parity_core.py": "015e070561c85c65d0cebd31ba925231ddcc15da0ad5d92037581e88cc599b92",
+    "check_zero_energy_parity_core.py": "bad4de37837834a34450186d56ffbd6a40e95e796fcc92af9a23a0f83f75d5a5",
     "check_fixed_field_descent.py": "831c1fe850b9d21b8d0050e310adaed2586251950542bb7d274e2ffd334ea8ac",
     "weighted_smith_oracle_f4.py": "d277f46caa98dab48d243af64c18e42e09e917bf1e862057a55cb35f74a6d572",
     "joint_six_to_five_retractions.py": "1cc35d7f1ce7ff65a826377c63dbb394e413a5fb974c60183a66b58568adea10",

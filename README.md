@@ -2054,3 +2054,12 @@ restriction gives `4 S3(r)+3 S2(s)<=12d` and its reverse. The target demands
 any local-frame choice implying those bounds. Other profiles and energy
 shapes remain open. Run `make verify-zero-energy-hereditary`; the exact
 rational construction interfaces remain available, and the score is **1/2**.
+
+[Hereditary adjugate caps for every smaller alphabet](research/hereditary-adjugate-caps.md)
+extend the restriction argument to all subalphabet sizes. Exact rational
+constraints reduce to the smallest paired energies. A new 36-order integer
+six-letter target passes every compiled cell/shared and inherited adjugate
+cap; 100-bit outward arithmetic certifies pressure below `-1/250`.
+This restores a concrete open target after the five-letter rejection,
+but supplies no tensor or stronger factoring algorithm. Run
+`make verify-hereditary-adjugate` for the complete cap and pressure replay.

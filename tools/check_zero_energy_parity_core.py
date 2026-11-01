@@ -57,6 +57,11 @@ def certificate():
     assert profiles == [[0, 6, 9, 9]]
     parity_profiles = [sorted((a, 12-a, b, 12-b)) for a, b in product(range(7), repeat=2)]
     assert [0, 6, 9, 9] not in parity_profiles
+    six_letter = json.loads((ROOT/'evidence/hereditary-q6-integer-target.json').read_text())
+    target = six_letter['target']
+    assert target[:4] == [0, 6, 7, 11] and six_letter['deficit'] == 6
+    possible_core = [[0, 6, c, 18-c] for c in range(7, 10)]
+    assert all(p not in parity_profiles for p in possible_core)
     # Formal coefficients of the two independent zero-paired leg charges.
     # At entry (x,y)|(v,u) they are (x-v,y-u).
     identities = []
@@ -114,6 +119,7 @@ def certificate():
     return dict(scope='All-field proof applies to the stated opposite-parity zero-energy core and both target prefix sectors; controls do not exclude other favorable profiles or same-parity zero labels.',
                 deficit=d, target_prefixes=[0, 6, 15, 24], forced_core_profiles=profiles,
                 block_determinant_valuation=12, parity_block_profile_allocations=len(parity_profiles),
+                new_q6_core_possibilities=possible_core,
                 formal_charge_identities=identities, literal_two_letter_tensors=24,
                 independent_four_order_profiles=len(controls), independent_orders=4*len(controls),
                 block_determinant_controls=2*len(controls), endpoint_entries=16*len(controls),

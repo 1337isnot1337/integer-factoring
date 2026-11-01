@@ -2203,6 +2203,10 @@ verify-zero-energy-parity-core:
 verify-zero-energy-hereditary:
 	python3 tools/check_zero_energy_hereditary_adjugate.py
 
+.PHONY: verify-hereditary-adjugate
+verify-hereditary-adjugate:
+	python3 tools/check_hereditary_adjugate_caps.py
+
 .PHONY: verify-multiaxis-cube
 verify-multiaxis-cube:
 	python3 tools/check_multiaxis_cube_transfer.py

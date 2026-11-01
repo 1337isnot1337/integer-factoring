@@ -97,6 +97,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Regraded six-to-five Laurent output space](joint-six-to-five-retractions.md): a degree-five polynomial inverse gives a complete rank-nine rational correction module at paired energies `(0,0,12,16,18)` and deficit six, with independent Laurent profile replay; a favorable combination remains open.
 - [Saturated zero-energy parity core](zero-energy-parity-core.md): an elementary block argument excludes the specified target for opposite-parity zero labels; the stronger hereditary cap below now excludes that target without a parity assumption.
 - [Hereditary zero-energy adjugate cap](zero-energy-hereditary-adjugate.md): restricting the existing adjugate theorem gives `4 S3(r)+3 S2(s)<=12d` and its reverse over every field; the formerly compatible five-letter target violates it by six, regardless of parity or frames.
+- [Adjugate caps from every smaller alphabet](hereditary-adjugate-caps.md): all-field inherited inequalities need only the smallest-energy subsets; a new integer six-letter point passes the full compiled relaxation with outward pressure below `-1/250`, without a realizing tensor.
 - [Fresh odd pivots preserve exact identities and the presented two-primary torsion](odd-pivot-two-primary-elimination.md).
 - [All-degree binary nilpotent joint frames of the four-letter reflection seed are rigid](polynomial-joint-height-rigidity.md).
 - [State-adaptive physical Smith channels](state-adaptive-smith-channels.md).

@@ -77,6 +77,17 @@ prefix bounds `S2>=d`, `S3>=5d/2`, `S4>=4d` at both cuts when the two
 zero-energy symbols have opposite parity. The forced core profile would
 be `(0,d,3d/2,3d/2)`, whereas a parity block supplies order `2d`.
 
+The same block argument also applies to the new
+[six-letter target](hereditary-adjugate-caps.md). Its first four orders
+are `0,6,7,11`. Saturation of the fourth prefix still forces core totals
+24 and zero minima, and the shared second prefix is still six. The core
+third order must be at least seven, so its only possible profiles are
+`(0,6,7,11)`, `(0,6,8,10)` and `(0,6,9,9)`. None contains the unavoidable
+parity-block order 12. Thus a realization of this symmetric target needs
+parity mixing in an opposite-parity zero-energy core, or a same-parity
+assignment of the two zero energies. This does not contradict its
+survival of the stronger universal hereditary inequalities.
+
 ## 3. Exact controls and constructive consequence
 
 The [checker](../tools/check_zero_energy_parity_core.py) reconstructs the
