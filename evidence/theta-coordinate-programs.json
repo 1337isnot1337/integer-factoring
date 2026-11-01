@@ -1,0 +1,373 @@
+{
+  "scope": "Partial compiler with ordinary modular/Sturm certificates at six listed phases; no uniform success theorem or faster factoring bound",
+  "phase_results": [
+    {
+      "phase": 3,
+      "fit_limit": 96,
+      "columns": 6,
+      "binary_rank": 2,
+      "missing_coordinates": [],
+      "separating_covectors": [],
+      "Sturm_bound_inclusive": 96,
+      "validation": {
+        "checked_limit": 224,
+        "odd_coefficients_per_coordinate": 112,
+        "failures": []
+      },
+      "status": "certified_by_ordinary_modular_Sturm_proof",
+      "program_instructions": 1,
+      "maximum_quadratic_variables": 0,
+      "original_evaluator_controls": 8,
+      "charged_original_evaluator_steps": 16
+    },
+    {
+      "phase": 5,
+      "fit_limit": 480,
+      "columns": 16,
+      "binary_rank": 9,
+      "missing_coordinates": [
+        0
+      ],
+      "separating_covectors": [
+        {
+          "coordinate": 0,
+          "target_pairing": 1,
+          "indices": [
+            15
+          ]
+        }
+      ],
+      "Sturm_bound_inclusive": 480,
+      "status": "bounded_module_excluded",
+      "program_instructions": 1,
+      "maximum_quadratic_variables": 0
+    },
+    {
+      "phase": 7,
+      "fit_limit": 1344,
+      "columns": 36,
+      "binary_rank": 25,
+      "missing_coordinates": [],
+      "separating_covectors": [],
+      "Sturm_bound_inclusive": 1344,
+      "validation": {
+        "checked_limit": 1472,
+        "odd_coefficients_per_coordinate": 736,
+        "failures": []
+      },
+      "status": "certified_by_ordinary_modular_Sturm_proof",
+      "program_instructions": 21,
+      "maximum_quadratic_variables": 3,
+      "original_evaluator_controls": 8,
+      "charged_original_evaluator_steps": 1734
+    },
+    {
+      "phase": 11,
+      "fit_limit": 4096,
+      "columns": 127,
+      "binary_rank": 100,
+      "missing_coordinates": [],
+      "separating_covectors": [],
+      "Sturm_bound_inclusive": 5280,
+      "validation": {
+        "checked_limit": 5408,
+        "odd_coefficients_per_coordinate": 2704,
+        "failures": []
+      },
+      "status": "certified_by_ordinary_modular_Sturm_proof",
+      "program_instructions": 78,
+      "maximum_quadratic_variables": 4,
+      "original_evaluator_controls": 8,
+      "charged_original_evaluator_steps": 5206
+    },
+    {
+      "phase": 13,
+      "fit_limit": 4096,
+      "columns": 211,
+      "binary_rank": 167,
+      "missing_coordinates": [
+        0
+      ],
+      "separating_covectors": [
+        {
+          "coordinate": 0,
+          "target_pairing": 1,
+          "indices": [
+            13,
+            169,
+            195,
+            221,
+            247
+          ]
+        }
+      ],
+      "Sturm_bound_inclusive": 8736,
+      "status": "bounded_module_excluded",
+      "program_instructions": 134,
+      "maximum_quadratic_variables": 4
+    },
+    {
+      "phase": 17,
+      "fit_limit": 4096,
+      "columns": 496,
+      "binary_rank": 371,
+      "missing_coordinates": [
+        0
+      ],
+      "separating_covectors": [
+        {
+          "coordinate": 0,
+          "target_pairing": 1,
+          "indices": [
+            51,
+            85,
+            119,
+            153,
+            187,
+            221,
+            289,
+            323,
+            357,
+            391,
+            561,
+            595,
+            663
+          ]
+        }
+      ],
+      "Sturm_bound_inclusive": 19584,
+      "status": "bounded_module_excluded",
+      "program_instructions": 341,
+      "maximum_quadratic_variables": 4
+    },
+    {
+      "phase": 19,
+      "fit_limit": 4096,
+      "columns": 716,
+      "binary_rank": 534,
+      "missing_coordinates": [],
+      "separating_covectors": [],
+      "Sturm_bound_inclusive": 27360,
+      "validation": {
+        "checked_limit": 27488,
+        "odd_coefficients_per_coordinate": 13744,
+        "failures": []
+      },
+      "status": "certified_by_ordinary_modular_Sturm_proof",
+      "program_instructions": 484,
+      "maximum_quadratic_variables": 4,
+      "original_evaluator_controls": 8,
+      "charged_original_evaluator_steps": 17372
+    },
+    {
+      "phase": 23,
+      "fit_limit": 4096,
+      "columns": 1366,
+      "binary_rank": 913,
+      "missing_coordinates": [],
+      "separating_covectors": [],
+      "Sturm_bound_inclusive": 48576,
+      "validation": {
+        "checked_limit": 48704,
+        "odd_coefficients_per_coordinate": 24352,
+        "failures": []
+      },
+      "status": "certified_by_ordinary_modular_Sturm_proof",
+      "program_instructions": 890,
+      "maximum_quadratic_variables": 4,
+      "original_evaluator_controls": 8,
+      "charged_original_evaluator_steps": 25234
+    },
+    {
+      "phase": 31,
+      "fit_limit": 7754,
+      "columns": 3877,
+      "binary_rank": 2311,
+      "missing_coordinates": [],
+      "separating_covectors": [],
+      "Sturm_bound_inclusive": 119040,
+      "validation": {
+        "checked_limit": 119168,
+        "odd_coefficients_per_coordinate": 59584,
+        "failures": []
+      },
+      "status": "certified_by_ordinary_modular_Sturm_proof",
+      "program_instructions": 2281,
+      "maximum_quadratic_variables": 4,
+      "original_evaluator_controls": 8,
+      "charged_original_evaluator_steps": 31862
+    }
+  ],
+  "certified_phases": [
+    3,
+    7,
+    11,
+    19,
+    23,
+    31
+  ],
+  "bounded_module_excluded_phases": [
+    5,
+    13,
+    17
+  ],
+  "original_evaluator_controls": 48,
+  "charged_original_evaluator_steps": 81424,
+  "large_phase_three_original_controls": [
+    {
+      "bits": 257,
+      "value": 1
+    },
+    {
+      "bits": 259,
+      "value": 0
+    },
+    {
+      "bits": 258,
+      "value": 1
+    },
+    {
+      "bits": 260,
+      "value": 0
+    },
+    {
+      "bits": 261,
+      "value": 1
+    },
+    {
+      "bits": 264,
+      "value": 0
+    },
+    {
+      "bits": 513,
+      "value": 1
+    },
+    {
+      "bits": 515,
+      "value": 0
+    },
+    {
+      "bits": 514,
+      "value": 1
+    },
+    {
+      "bits": 516,
+      "value": 0
+    },
+    {
+      "bits": 517,
+      "value": 1
+    },
+    {
+      "bits": 520,
+      "value": 0
+    },
+    {
+      "bits": 1025,
+      "value": 1
+    },
+    {
+      "bits": 1027,
+      "value": 0
+    },
+    {
+      "bits": 1026,
+      "value": 1
+    },
+    {
+      "bits": 1028,
+      "value": 0
+    },
+    {
+      "bits": 1029,
+      "value": 1
+    },
+    {
+      "bits": 1032,
+      "value": 0
+    }
+  ],
+  "underfit_regression": {
+    "phase": 31,
+    "fit_limit": 4096,
+    "binary_rank": 2048,
+    "missing_training_coordinates": [],
+    "validation": {
+      "checked_limit": 8192,
+      "odd_coefficients_per_coordinate": 4096,
+      "failures": [
+        {
+          "coordinate": 1,
+          "first_failed_index": 4097
+        },
+        {
+          "coordinate": 2,
+          "first_failed_index": 4097
+        },
+        {
+          "coordinate": 3,
+          "first_failed_index": 4097
+        },
+        {
+          "coordinate": 4,
+          "first_failed_index": 4109
+        },
+        {
+          "coordinate": 5,
+          "first_failed_index": 4097
+        },
+        {
+          "coordinate": 6,
+          "first_failed_index": 4099
+        },
+        {
+          "coordinate": 7,
+          "first_failed_index": 4097
+        },
+        {
+          "coordinate": 8,
+          "first_failed_index": 4097
+        },
+        {
+          "coordinate": 9,
+          "first_failed_index": 4097
+        },
+        {
+          "coordinate": 10,
+          "first_failed_index": 4099
+        },
+        {
+          "coordinate": 11,
+          "first_failed_index": 4097
+        },
+        {
+          "coordinate": 12,
+          "first_failed_index": 4109
+        },
+        {
+          "coordinate": 13,
+          "first_failed_index": 4101
+        },
+        {
+          "coordinate": 14,
+          "first_failed_index": 4101
+        }
+      ]
+    },
+    "uncertified_evaluator_refused": true
+  },
+  "program_artifact": {
+    "path": "evidence/theta-coordinate-programs.json.gz",
+    "uncompressed_bytes": 207965,
+    "compressed_bytes": 22729,
+    "uncompressed_sha256": "ac91eb9339b076d13dc6b85646780ae043a64d93cb4603e61453a9ac26e13f86",
+    "compressed_sha256": "3ae6d4f96b61782a5418b7678b5fde45b2b313f1d2f3fa1c0386ac1b5d1fdaf7"
+  },
+  "source_sha256": {
+    "tools/theta_coordinate_program.py": "656bd94de0bb3401c494c54af803b4165a9a27174aa068729d6d78933771bc0a",
+    "tools/check_theta_coordinate_program.py": "e7a6b8e552511f5bdcac96c93de9960a5579c8eb8868e125d3a19fcb497ec8b9",
+    "research/theta-coordinate-programs.md": "83a3b08de59b0842a54719a3ed86ea6ae380667a67d27dfe6d343689ae1e40fe",
+    "tools/tate_coordinate_compiler.py": "4abb1d071debcd045b110780c8472d215fe44d89103f0033474250e6cb4c37d1",
+    "tools/cyclotomic_character_decoder.py": "6dbe7906b53b99ef830a5cb7115f1be5a2dd94e3d3d4083c366e01add8e9f4df"
+  }
+}

@@ -65,6 +65,12 @@ verify-tate-coordinate:
 
 verify-frontier: verify-tate-coordinate
 
+.PHONY: verify-theta-programs
+verify-theta-programs:
+	python3 tools/check_theta_coordinate_program.py
+
+verify-frontier: verify-theta-programs
+
 .PHONY: verify-q7-parameter
 verify-q7-parameter:
 	python3 tools/check_q7_cubic_parameter.py

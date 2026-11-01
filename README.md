@@ -1744,6 +1744,11 @@ identifies a seven-regular partition series. A degree-four theta identity
 computes the odd-index value; its modular/Sturm proof is covered by 65,536
 exact controls. The explicit evaluator costs `O(N poly(log N))`.
 Run `make verify-q7-parameter`.
+A [partial theta-program compiler](research/theta-coordinate-programs.md)
+certifies the odd-index identity at six listed phases using a uniform modular
+congruence bound, and gives exact exclusions for its module at three others.
+Neither uniform success nor a sufficiently fast evaluator is proved.
+Run `make verify-theta-programs`.
 
 The [Bell-diagonal seed construction](research/bell-diagonal-crossings.md)
 gives exact two-cut transforms and excludes its complete symmetric
