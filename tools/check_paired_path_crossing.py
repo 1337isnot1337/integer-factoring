@@ -12,7 +12,8 @@ from pathlib import Path
 from random import Random
 
 from bounded_spin_crossing import paths
-from paired_path_crossing import MULTIPLY as M,power,splitting_blocks,path_entry,polynomial_entry
+from paired_path_crossing import (MULTIPLY as M,power,splitting_blocks,path_entry,polynomial_entry,
+                                  monomial_entry,corner_channel_count,corner_words,exposed_six_vertex_entry)
 from check_fixed_field_descent import Field
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -109,13 +110,70 @@ def check():
                 break
         assert rank(rows) == n//2+1
         certificates.append({'length':n,'entry_labels':labels,'span_dimension':n//2+1})
+    exposure_dimensions = []
+    for n in range(2,13,2):
+        r = n//2
+        rows = []
+        for a in range(r+1):
+            for b in range(r-a+1):
+                c = r-a-b
+                row = [0]*(r*(n+1)+1)
+                for j in range(2*b+1):
+                    row[(n+1)*c+j] = comb(2*b,j)&1
+                rows.append(row)
+        assert rank(rows) == len(rows)
+        exposure_dimensions.append(len(rows))
+    factor_entries = 0
+    for n in (2,4,6):
+        ps = paths(n)
+        f = [[path_entry(p,w,8) for w in range(1 << n)] for p in ps]
+        d = [[path_entry(p,w,8,True) for w in range(1 << n)] for p in ps]
+        r = n//2
+        monomials = {(r,0,0),(0,r,0),(0,0,r)}
+        if n >= 4:
+            monomials |= {(r-1,1,0),(r-1,0,1)}
+        channels = {m:[corner_words(n,m[1],m[2],i)
+                       for i in range(corner_channel_count(n,m[1],m[2]))] for m in monomials}
+        for p,q,u,v in product(range(len(ps)),repeat=4):
+            four = tuple(ps[i] for i in (p,q,u,v))
+            actual = monomial_entry(four,8)
+            exposed = exposed_six_vertex_entry(four,8)
+            total = 0
+            for value in exposed:
+                total ^= value
+            assert total == int(p == v and q == u)
+            for m,words in channels.items():
+                value = 0
+                for x,y,z,w in words:
+                    value ^= M[M[f[p][x]][f[q][y]]][M[d[u][z]][d[v][w]]]
+                assert value == actual.get(m,0)
+                factor_entries += 1
+    # Three distinct cheap vertices; an entry minor certifies independence.
+    ps = paths(8)
+    random = Random(58)
+    rows,vertex_labels = [],[]
+    for i in range(100):
+        ids = [random.randrange(len(ps)) for _ in range(4)]
+        if i % 3 == 0:
+            ids = [ids[0],ids[0],ids[1],ids[1]]
+        elif i % 3 == 1:
+            ids[2:] = ids[:2]
+        value = monomial_entry(tuple(ps[j] for j in ids),8)
+        rows.append([value.get(m,0) for m in ((4,0,0),(0,4,0),(0,0,4))])
+        vertex_labels.append(ids)
+        if rank(rows) == 3:
+            break
+    assert rank(rows) == 3
     files = ('tools/paired_path_crossing.py','tools/check_paired_path_crossing.py',
              'tools/check_fourier_multiplication_gates.py','tools/bounded_spin_crossing.py',
-             'tools/check_fixed_field_descent.py')
+             'tools/check_fixed_field_descent.py','tools/bounded_spin_support.py')
     return {'status':'pass','field':'F2[a]/(a^4+a+1)','parameters':models,
             'local_inverse_blocks':blocks,'biorthogonal_frame_pairs':frame_pairs,
             'independent_word_polynomials':entries,
             'q8_coefficient_span_certificates':certificates,
+            'complete_corner_factor_entries':factor_entries,
+            'six_vertex_exposure_dimensions':exposure_dimensions,
+            'three_independent_vertices':{'length':8,'entry_labels':vertex_labels,'rank':3},
             'scope':'Uniform paired path crossing construction; no favorable uniform rank decomposition.',
             'source_sha256':{f:sha256((ROOT/f).read_bytes()).hexdigest() for f in files}}
 

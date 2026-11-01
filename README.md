@@ -401,6 +401,9 @@ and their inverse duals. An explicit F16 family retains Fibonacci label
 growth, polynomial-time entries and both strict endpoints. Exact small
 checks cover all twelve valid field parameters; favorable uniform
 two-cut ranks remain open. Run `make verify-paired-paths`.
+Its enlarged six-vertex span has explicit uniform support factors:
+all three extreme pieces have `O(L^(4/3))` channels and can be
+independent. A complete favorable decomposition still remains open.
 
 The [exact nonlinear charge theorem](research/nonlinear-symbol-charge-lattices.md)
 characterizes every admissible pair of full-symbol potentials for the
