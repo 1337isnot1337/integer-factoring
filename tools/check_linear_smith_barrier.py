@@ -138,6 +138,75 @@ def equality_masks():
     return sorted(result)
 
 
+def check_unequal_pencils():
+    from check_all_field_pascal_crossings import smith_orders
+    randomizer = random.Random(20261101)
+    controls = []
+    for prime in (2, 3, 5):
+        for qx, qy in ((2, 3), (3, 2), (2, 4), (4, 2), (3, 4), (4, 3)):
+            n = qx*qy
+            for channels in (0, 1, 2, n):
+                left = [[randomizer.randrange(prime) for _ in range(channels)] for _ in range(n)]
+                right = [[randomizer.randrange(prime) for _ in range(n)] for _ in range(channels)]
+                B = [[sum(left[i][k]*right[k][j] for k in range(channels)) % prime
+                      for j in range(n)] for i in range(n)]
+                infinity = [[None]*n for _ in range(n)]
+                zero = [[None]*n for _ in range(n)]
+                for x, y, u, v in product(range(qx), range(qy), range(qy), range(qx)):
+                    b = B[qy*x+y][qx*u+v]
+                    a = (int(x == v and y == u)-b) % prime
+                    infinity[qy*x+y][qx*u+v] = (b, a)
+                    zero[qy*x+u][qx*y+v] = (a, b)
+                profiles = []
+                for matrix in (infinity, zero):
+                    orders, _ = smith_orders(matrix, prime)
+                    assert len(orders) == n and sum(orders) <= n
+                    for precision in range(1, max(orders)+3):
+                        toeplitz = [[0]*(precision*n) for _ in range(precision*n)]
+                        for degree in range(precision):
+                            for input_degree in range(degree+1):
+                                k = degree-input_degree
+                                for i, j in product(range(n), repeat=2):
+                                    if k < len(matrix[i][j]):
+                                        toeplitz[n*degree+i][n*input_degree+j] = matrix[i][j][k]
+                        assert prime_rank(toeplitz, prime) == sum(max(precision-o, 0) for o in orders)
+                    profiles.append(orders)
+                r, c = (orders.count(0) for orders in profiles)
+                assert r+c >= max(qx, qy)
+                for x in map(Fraction, ('1', '1/2', '1/3', '2/3', '1/10')):
+                    actual = sum(x**o for o in profiles[0])*sum(x**o for o in profiles[1])/x
+                    lower = n*max(qx, qy)*(1+(min(qx, qy)-2)*x+x*x)
+                    assert actual >= lower >= n*max(qx, qy)
+                controls.append(dict(prime=prime, alphabets=[qx, qy],
+                                     source_channels=channels, profiles=profiles,
+                                     endpoint_ranks=[r, c], bare_lower=n*max(qx, qy)))
+    return controls
+
+
+def check_artin_schreier_companions():
+    from check_all_field_pascal_crossings import add, multiply
+    controls = []
+    for p in (3, 5, 7, 11):
+        J = [[()] * p for _ in range(p)]
+        for b in range(p-1):
+            J[b+1][b] = (1,)
+        J[0][p-1], J[1][p-1] = (0, 1), (1,)
+        power = [[(1,) if i == j else () for j in range(p)] for i in range(p)]
+        for exponent in range(1, p+1):
+            result = [[()] * p for _ in range(p)]
+            for i, j, k in product(range(p), repeat=3):
+                result[i][j] = add(result[i][j], multiply(power[i][k], J[k][j], p), p)
+            power = result
+            if exponent < p:
+                assert all(len(v) <= 2 for row in power for v in row)
+                assert all(len(power[i][0]) <= 1 for i in range(p))
+        assert all(add(power[i][j], J[i][j], p, -1) == ((0, 1) if i == j else ())
+                   for i, j in product(range(p), repeat=2))
+        controls.append(dict(prime=p, module_rank=p, relation='J^p-J=w I',
+                             degree_below_p='at most one'))
+    return controls
+
+
 def run():
     source = Path(__file__).with_name('enumerate_binary_linear_crossings.cpp')
     with tempfile.TemporaryDirectory(prefix='linear-smith-') as directory:
@@ -172,6 +241,9 @@ def run():
         'independent_toeplitz_profile_checks': reference_checks,
         'integral_budget_checks': check_integral_budget(),
         'rank_lemma_controls': [check_small_rank_lemma(p) for p in (2, 3)],
+        'unequal_pencil_controls': check_unequal_pencils(),
+        'artin_schreier_companion_controls': check_artin_schreier_companions(),
+        'degree_one_unequal_alphabet_lower_B': 'q_x*q_y*max(q_x,q_y), min(q_x,q_y)>=2',
         'binary_sharp_B': '256/27', 'odd_characteristic_scalar_sharp_B': '12',
         'degree_one_all_alphabet_lower_B': 'q^3',
         'enumerator_sha256': sha256(source.read_bytes()).hexdigest(),

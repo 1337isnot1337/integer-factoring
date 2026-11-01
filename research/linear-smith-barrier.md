@@ -147,6 +147,47 @@ This proves (1). The consequence \(\rho\ge3/4\) uses
 \(\rho=\log B/(4\log q)\) from the existing transfer; it is a lower
 bound on this sufficient width parameter only.
 
+## 3a. Unequal paired alphabets and physical state linearization
+
+The argument also covers physical dimensions `(q_X,q_Y,q_Y,q_X)`, with
+`q_X,q_Y>=2`. Put `n=q_X q_Y`, `m=max(q_X,q_Y)` and `ell=min(q_X,q_Y)`.
+Both cut matrices still have `n` channels, and the degree-one budget is
+unchanged. Fixing `x=v` gives an identity slice of size `q_Y`; fixing
+`y=u` gives an identity slice of size `q_X`. Thus the same rank-one
+decomposition argument proves
+
+```
+r+c >= max(q_X,q_Y) = m.                                  (15)
+```
+
+Contracting a fixed auxiliary on one side of each cut cannot increase
+rank, so the auxiliary variant holds too. Repeating (8)--(9) gives
+
+```
+B(s) >= n*m*(1+(ell-2)x+x^2) >= n*m,      x=1/s,
+rho_bare >= log(n*m)/(2 log n) >= 3/4.                     (16)
+```
+
+The denominator is twice the sum of the two uniform paired entropies;
+it agrees with `4 log q` when the alphabets are equal. Imbalance strengthens
+the floor. This excludes bare balanced degree-one certificates obtained by
+moving a finite algebra state into just one physical pair. It does not
+exclude weighted physical types, arbitrary actual coefficient-rank bounds,
+asymmetric supporting angles, or higher-degree constructions.
+
+The [finite-cover invoice](finite-cover-linearization-invoice.md) gives a
+concrete application: Artin--Schreier degree compression produces a linear
+pencil with physical alphabets `(p q,q)`. Its state cost is therefore
+covered by (16), before computing any large Smith profiles.
+
+Independent finite controls retain 72 actual unequal-alphabet pencils over
+F2, F3 and F5, with both complete profiles checked by block-Toeplitz ranks.
+Four companion-module controls verify the Artin--Schreier relation and
+linear coefficient degree. The universal conclusion follows from the
+slice and degree argument, not these finite examples. The extension uses
+the credited endpoint-slice and discrete-convexity proof above, with
+substantial OpenAI assistant support and no new Lean formalization.
+
 ## 4. The sharp binary bound with arbitrary auxiliaries
 
 Now \(n=4\). If both \(A\) and \(B\) are nonzero, then \(r,c\ge1\),
