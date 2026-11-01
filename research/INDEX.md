@@ -1,5 +1,7 @@
 # Research index
 
+- [Global balanced floor for the natural five-letter energy shape](natural-five-letter-pressure-floor.md): every scalar Laurent-polynomial kernel over any field at this paired-energy ray has rho at least 5/7; all 2,456 compact boxes and analytic tails are certified, with changed energy shapes and asymmetric criteria left open.
+
 - [F4 extension of the ordered fused coefficient envelope](fused-f4-envelope.md): exact full-matrix controls, completed 484-point and 61,440-point finite families, and two registered large scans in a specified 18-dimensional subspace; no completed large-scan or stronger factoring claim.
 
 - [Two classical passes for all supplied orientations](circuit-box-orientation-batch.md): normalized root differences, sparse incidence signs, and essentially linear integer-data construction.

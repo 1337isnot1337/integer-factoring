@@ -50,6 +50,11 @@ the zero prefix to 8,10,10, but its actual opposite profile is worse.
 The [ordered fused envelope now has an exact F4 interface](research/fused-f4-envelope.md),
 with complete finite controls and registered larger subspace scans.
 These registrations do not establish a stronger bound.
+A [global natural-energy floor](research/natural-five-letter-pressure-floor.md)
+now excludes the balanced criterion for every scalar Laurent-polynomial
+kernel over any field with the reference five-letter paired-energy shape.
+Its exact compact certificate and unbounded tails give `rho >= 5/7`;
+changed energy shapes and asymmetric criteria remain open.
 
 ## Arithmetic construction and space bounds
 

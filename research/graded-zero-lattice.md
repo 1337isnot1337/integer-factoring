@@ -67,6 +67,12 @@ Substituting the *old* infinity profile would yield a numerical value
 near `0.6944141674`. That profile belongs to a different kernel and is
 an unrealized target; it cannot be used in the construction's cost.
 The actual paired value is the poorer `0.9964095025` stated above.
+The later [shared-prefix application and global natural-energy floor](natural-five-letter-pressure-floor.md)
+also exclude that optimistic pairing independently of the construction:
+its first two combined orders sum to three, exceeding the shared-minor
+cap two. The new floor applies to every scalar Laurent-polynomial kernel
+at this balanced paired-energy shape, while leaving changed energy shapes
+and asymmetric criteria open.
 
 ## Polynomial units preserving the improved zero profile
 

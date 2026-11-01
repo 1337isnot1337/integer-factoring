@@ -2410,6 +2410,12 @@ verify-fused-f4-envelope:
 verify-fused-f4-finite-controls:
 	python3 tools/check_fused_f4_finite_controls.py --output /tmp/fused-f4-finite-controls.json
 
+.PHONY: verify-natural-five-letter-floor
+verify-natural-five-letter-floor:
+	python3 tools/check_natural_five_letter_floor.py --replay evidence/natural-five-letter-floor.json.xz
+
+verify-frontier: verify-natural-five-letter-floor
+
 .PHONY: verify-coherent-f4-partial
 verify-coherent-f4-partial:
 	python3 tools/check_coherent_hot_f4_partial.py
