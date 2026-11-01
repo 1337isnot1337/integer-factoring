@@ -1,5 +1,7 @@
 # Research index
 
+- [Mixed occupation and height in six-to-five split graphs](mixed-graph-retractions.md): literal F4 compression with independent images on the matched pairs; 1,295 determinant identities, 1,875 direct contraction entries and 150 independent complete orders. A sparse screen and timed free-height walk are registered; no stronger bound is claimed.
+
 - [Fixed physical heights exclude both supporting axes at every scale](polynomial-crossing-axis-obstruction.md): all-field strict Laurent-polynomial endpoint majorization and a positive saturated variance floor imply a scale-uniform axis neighborhood for each fixed gauge. Interior angles and moving heights remain open; 496 independent orders and every recorded principal prefix are checked.
 
 - [A second-moment test at a saturated supporting endpoint](saturated-endpoint-second-moments.md): a simple weak minimum, zero mean gap and nonpositive variance difference suffice for a coupled angle/scale improvement. The four-letter reference has exact variance gap one; a registered search tests free strong-place heights, without claiming a new bound.

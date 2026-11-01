@@ -463,3 +463,18 @@ counter at larger precision, tropical/min-plus or Boolean recursion, and
 complete primitive-bit cost remain open. Full `make verify` passed. Source
 pin: `f5fd3ddb407972f9ca65298fbe9be3225fe06635`. No Lean rebuild or improved
 factoring exponent is claimed.
+
+## Mixed occupation split-graph registration, 2026-11-01
+
+The [six-to-five chart](../research/mixed-graph-retractions.md) reuses the
+existing physical F4 split identity and reflection source. The new literal
+constructor passes 1,295 independent determinant identities, 1,875 direct
+packed contraction comparisons, 150 independently recomputed complete orders,
+102 finite derivative comparisons and three balanced normalizations. Its
+[manifest](../evidence/mixed-graph-retractions-manifest.json) registers a
+436-orbit sparse screen, 51 selected free-height fits and a two-hour walk
+before their pressure results. These finite controls do not establish a
+strict support improvement or a new factoring bound. Both physical costs are
+charged, all unresolved native queries must be rejected, and the complete
+score remains 1/2. No new Lean build is claimed. Substantial OpenAI assistant
+support was used under the owner's direction.

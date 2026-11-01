@@ -2901,3 +2901,7 @@ verify-f8-retraction-refinement-full:
 verify-f8-retraction-census-full:
 	python3 tools/search_f8_hyperoval_retractions.py
 	python3 tools/check_f8_hyperoval_retraction_census.py
+
+.PHONY: verify-mixed-graph-retractions
+verify-mixed-graph-retractions:
+	python3 tools/check_mixed_graph_retractions.py
