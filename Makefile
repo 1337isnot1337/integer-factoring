@@ -1289,3 +1289,56 @@ verify-code-width5:
 	g++ -O3 -std=c++20 -fopenmp tools/check_code_kernel_width5.cpp -o /tmp/integer-factoring-code-width5
 	/tmp/integer-factoring-code-width5 0 64 4 /tmp/integer-factoring-code-width5
 	python3 tools/check_code_sections.py --full-classifier --native-prefix /tmp/integer-factoring-code-width5
+
+# beyond-half-checks:start
+.PHONY: verify-beyond-half verify-norm-processing verify-adaptive-channels verify-crossing-pressure-certificates verify-protected-scalar-pressure verify-reflection-codes-full
+
+# Core exact replays; exhaustive coordinate-code classification has its own target.
+verify-beyond-half: verify-norm-processing verify-adaptive-channels verify-crossing-pressure-certificates verify-protected-scalar-pressure
+
+verify-norm-processing:
+	python3 tools/check_prime_form_bias.py
+	python3 tools/check_prime_form_cutoffs.py
+	python3 tools/check_direct_discriminant_short_norms.py
+	python3 tools/check_early_ambiguous_factor.py
+	python3 tools/check_factored_norm_representation.py
+	python3 tools/check_prime_form_factor_base.py
+	python3 tools/check_smooth_band_density.py
+	python3 tools/check_powered_prime_norm_parameters.py
+	python3 tools/check_powered_prime_norm_witnesses.py
+	python3 tools/check_quasipolynomial_norm_parameters.py
+	python3 tools/check_relation_two_saturation.py
+	python3 tools/check_weighted_norm_relations.py
+	python3 tools/check_arbitrary_norm_representation.py
+	python3 tools/check_selected_norm_factoring.py
+	python3 tools/check_selected_norm_factoring_124_bit.py
+	python3 tools/check_arbitrary_selected_norm_factoring.py
+
+verify-adaptive-channels:
+	python3 tools/check_adaptive_smith_lattices.py
+	python3 tools/check_matroid_smith_channels.py
+	python3 tools/check_dvr_smith_channels.py
+	python3 tools/check_subspace_smith_channels.py
+	python3 tools/check_channel_pressure_separation.py
+	python3 tools/check_block_subspace_channels.py
+
+verify-crossing-pressure-certificates:
+	python3 tools/check_direct_type_elementary_floor.py
+	python3 tools/check_arbitrary_binary_code_pressure.py
+	python3 tools/check_integer_shared_minor_floor.py
+	python3 tools/check_adjugate_seven_letter_floor.py
+	python3 tools/check_bounded_order_smith_floor.py
+	python3 tools/check_clifford_compression.py
+	python3 tools/check_clifford_threshold_sharpness.py
+	python3 tools/check_homogeneous_restriction_floor.py
+	python3 tools/check_joint_height_conjugations.py
+
+verify-protected-scalar-pressure:
+	python3 tools/check_triangular_auxiliary_row_fiber.py
+	python3 tools/check_protected_subtensor_pressure.py
+	python3 tools/check_scalar_terminal_projections.py
+
+verify-reflection-codes-full:
+	python3 tools/check_reflection_coordinate_codes.py --full --progress --output evidence/reflection-coordinate-codes.json
+
+# beyond-half-checks:end

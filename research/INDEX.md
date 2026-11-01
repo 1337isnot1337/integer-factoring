@@ -1,8 +1,61 @@
 # Research index
 
-Latest: [31 October ordinary-proof research session](frontier-session-20261031.md) — complete score unchanged at 1/2; exact constructors, global charge obstructions, completed finite searches, and final validation.
+Related checkpoint: [31 October ordinary-proof research session](frontier-session-20261031.md) — complete score unchanged at 1/2; exact constructors, global charge obstructions, completed finite searches, and final validation.
 
 This index covers research notes on `main`. Open PRs can contain later work. Each note states its own assumptions, proof scope, and evidence. An obstruction to a specific construction is not a factoring lower bound.
+
+<!-- beyond-half-index:start -->
+## November 1 arithmetic and tensor checkpoint
+
+[Overview and exact selector contract](beyond-half-research-checkpoint.md). Ordinary proofs and executable evidence; complete score remains 1/2.
+
+- [Prove polynomial-size prime-form generation and exact biased samples](polylog-prime-form-generators.md).
+- [Make prime-form generator and bias cutoffs explicit](explicit-prime-form-cutoffs.md).
+- [Record prime-translation and smooth-set Fourier obstructions](prime-translates-miss-smooth-forms.md).
+- [Smooth set fourier norm](smooth-set-fourier-norm.md).
+- [Extract useful ambiguous forms in polynomial time from an annihilator](polynomial-ambiguous-extraction.md).
+- [Decode primitive factored norms by exact orientation matching](factored-norm-orientation-search.md).
+- [Prove explicit multiband smooth-ideal density](smooth-band-density.md).
+- [Construct the prime-form base deterministically](prime-form-root-construction.md).
+- [Amplify prime bias to obtain short smooth norms in every class](powered-prime-smooth-norms.md).
+- [Replay powered-prime smooth-norm existence on finite class groups](powered-prime-finite-replay.md).
+- [Complete the selected-integer factoring consumer](selected-norm-factoring-interface.md).
+- [Remove the multiplicity promise from the unsigned consumer](height-only-selected-integers.md).
+- [Decode arbitrary factored norms and minimize primitive content](arbitrary-factored-norm-representation.md).
+- [Bound coverage of one target-independent norm list](norm-selector-coverage.md).
+- [Prove the elementary crossing floor after all binary type restrictions](direct-type-elementary-pressure-floor.md).
+- [Classify all rank-seven constant restrictions of three elementary sites](linear-physical-restriction-crossings.md).
+- [Prove Clifford compression layers and near-full pressure floors](clifford-compression-pressure-floor.md).
+- [Pin the scope of the recent rigorous ideal sampler](rigorous-ideal-sampling-scope.md).
+- [Show the row-frame threshold is sharp and exhibit the cubic induction obstruction](clifford-threshold-sharpness.md).
+- [Sharpen supplied-norm processing to a uniform one-half leading coefficient](quasipolynomial-base-norm-processing.md).
+- [Direct supplied smooth norms give signed short prime words](smooth-norm-short-words.md).
+- [Polynomial ideal HNF and uniform Delta=-4N extraction structure](direct-discriminant-short-norms.md).
+- [Complete finite norm sieve and original 60/92-bit factoring certificates](complete-smooth-norm-sieve.md).
+- [Determinant-free full and partial relation halving](determinant-free-ambiguous-extraction.md).
+- [Finite partial norm search and 124-bit certificate](partial-norm-search.md).
+- [Height-only norms and logarithm-weighted relation independence](height-only-smooth-norm-relations.md).
+- [Adaptive target exponents improve the finite height search](adaptive-height-norm-selection.md).
+- [Polynomial-size complete subspace Smith-channel oracle](subspace-smith-channel-oracle.md).
+- [Exact all-state channel-pressure separation](channel-pressure-separation.md).
+- [Exact block and precision hierarchy for complete subspace channels](block-subspace-channel-hierarchy.md).
+- [Exact modular higher-spin crossing exclusions](modular-spin-crossings.md).
+- [Exact homogeneous physical restrictions of the two-site reflection seed](reflection-homogeneous-restrictions.md).
+- [All-scale 5/7 floor for every homogeneous middle-fiber restriction](homogeneous-restriction-pressure-floor.md).
+- [Complete joint physical conjugations cannot improve the four-letter reflection seed](joint-height-conjugation-floor.md).
+- [State-adaptive physical Smith channels](state-adaptive-smith-channels.md).
+- [Matroid optimization within equal-order channel blocks](matroid-adaptive-smith-channels.md).
+- [Complete regular channel bases through finite jets](dvr-adaptive-smith-channels.md).
+- [Complete triangular auxiliary row fiber and word obstruction](triangular-auxiliary-row-fiber.md).
+- [Protected subtensor and maximal regular left projection](protected-subtensor-pressure.md).
+- [Bounded boundary extraction of protected scalar lines](boundary-extracted-scalar-pressure.md).
+- [All binary code embeddings with arbitrary diagonal gauges](arbitrary-binary-code-pressure-floor.md).
+- [Integer shared-minor floors and the universal affine exclusion](integer-shared-minor-pressure-floor.md).
+- [All-degree seven-letter adjugate floor and capped jets](adjugate-seven-letter-pressure-floor.md).
+- [All coordinate codes of two reflection sites have an exact pressure floor](reflection-coordinate-code-pressure-floor.md).
+- [Smith orders bounded by degree close alphabets through ten](bounded-order-smith-pressure-floor.md).
+
+<!-- beyond-half-index:end -->
 
 ## Proved machine bounds and their foundations
 

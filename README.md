@@ -64,6 +64,37 @@ The [research index](research/INDEX.md) links proofs, exact evidence, and replay
 
 The result table distinguishes verified machine bounds from conditional constructions and finite experiments. A merged PR or a passing finite test does not imply independent mathematical review.
 
+
+<!-- beyond-half-checkpoint:start -->
+## Arithmetic and tensor checkpoint, November 1
+
+The [consolidated research guide](research/beyond-half-research-checkpoint.md)
+connects the ordinary proofs, exact programs, and remaining obligations.
+The complete factoring score remains **1/2**; this checkpoint adds no Lean
+formalization.
+
+The arithmetic route now has explicit prime-form generators, uniform smooth-norm
+existence, complete unsigned-norm decoding, height-weighted independent relations,
+and determinant-free factor extraction. With a quasipolynomial factor base, a
+full batch of supplied norms can be processed in
+`2^((1/2+o(1))b/log_2 b)` time. A uniform fast norm selector remains open.
+Generation and existence use the pinned all-number-field Hecke zero-free theorem;
+the finite algebraic replays do not require that analytic input. Stored examples
+include a 124-bit factorization with 942 independently reconstructed relations.
+
+State-dependent channel bases, a polynomial subspace oracle, and blocking improve
+exact tensor certificates. New all-degree pressure restrictions close the bare
+seven-letter interface and the stated bounded-order families through ten letters.
+Their hypotheses leave other constructions open. None establishes a factoring
+lower bound or a larger complete score.
+
+Run `make verify-beyond-half` for the core processing and pressure replays.
+`make verify-reflection-codes-full` repeats the separate exhaustive 65,519-code
+classification. Individual notes give additional finite-search commands and
+state which checks replay certificates instead of regenerating searched witnesses.
+<!-- beyond-half-checkpoint:end -->
+
+
 ## Verification
 
 Before starting overlapping work, run `python3 tools/find_overlap.py KEYWORD`
@@ -1207,9 +1238,11 @@ deterministic class-group relation generation outside the crossing evaluator.
 It proves a positive Fourier hitting lemma and deterministic extraction of
 two-torsion from unsaturated relation data. A powering seed with published
 expander amplification supplies biased words from generators without a group
-decomposition. The fast generator and smooth-pair
-construction steps remain open, so the score is still `1/2`. Reproduce the
-current exact controls with `make verify-arithmetic-framework`.
+decomposition. Full prime-form generation now has an [explicit polynomial cutoff](research/explicit-prime-form-cutoffs.md)
+under the pinned finite-order Hecke zero-free theorem. Fast norm selection
+remains open; the [completed processing stack](research/beyond-half-research-checkpoint.md)
+states its precise contract. The score remains `1/2`. Reproduce the earlier
+framework controls with `make verify-arithmetic-framework`.
 The [actual quadratic-form controls](research/arithmetic-class-group-controls.md)
 also recover proper factors for 18 finite targets and check complete
 two-torsion recovery; their generator and order searches enumerate classes.
