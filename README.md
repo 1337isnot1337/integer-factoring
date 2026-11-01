@@ -68,6 +68,16 @@ Run `make verify-coherent-retractions` for focused exact controls and
 `make verify-coherent-q32-catalogue` to recompute the complete catalogue proof.
 <!-- coherent-compound-checkpoint:end -->
 
+<!-- cube-transfer-checkpoint:start -->
+The [three-axis cube transfer](research/cube-crossing-transfer.md) supplies a
+second fully costed sufficient interface: one common eight-leg crossing family
+with polynomially many pieces and total three-cut width at most
+`12 rho lambda + O(log lambda)` would give
+`alpha = log_3(1/rho)`. Its target is `rho < 1/sqrt(3)`.
+Exact cube edge coverage, equitable grouping, entry-query costs, and recursion
+are proved; the required improved local family remains unconstructed.
+<!-- cube-transfer-checkpoint:end -->
+
 ## Results and evidence
 
 | Claim | Status | Details |

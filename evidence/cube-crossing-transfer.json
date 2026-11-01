@@ -1,0 +1,206 @@
+{
+  "equitable_partition": {
+    "exact_cut_means": 88,
+    "graphs": 72,
+    "permutation_swap_bounds": 95616
+  },
+  "geometry": [
+    {
+      "axis_residual_edges_per_plane_pair": 12,
+      "cubes": 1,
+      "generic_edges": 4,
+      "residual_edges": 24,
+      "side": 2,
+      "vertices": 8,
+      "width_controls": [
+        {
+          "label_bits": 1,
+          "maximum_observed_edge_width": 15,
+          "oriented_volume": 24,
+          "selected_axis": 1,
+          "volume_bound_denominator": 1,
+          "volume_bound_numerator": 30
+        },
+        {
+          "label_bits": 2,
+          "maximum_observed_edge_width": 30,
+          "oriented_volume": 50,
+          "selected_axis": 1,
+          "volume_bound_denominator": 1,
+          "volume_bound_numerator": 60
+        },
+        {
+          "label_bits": 3,
+          "maximum_observed_edge_width": 45,
+          "oriented_volume": 88,
+          "selected_axis": 0,
+          "volume_bound_denominator": 1,
+          "volume_bound_numerator": 90
+        }
+      ]
+    },
+    {
+      "axis_residual_edges_per_plane_pair": 45,
+      "cubes": 27,
+      "generic_edges": 108,
+      "residual_edges": 243,
+      "side": 3,
+      "vertices": 27,
+      "width_controls": [
+        {
+          "label_bits": 1,
+          "maximum_observed_edge_width": 66,
+          "oriented_volume": 366,
+          "selected_axis": 0,
+          "volume_bound_denominator": 1,
+          "volume_bound_numerator": 432
+        },
+        {
+          "label_bits": 2,
+          "maximum_observed_edge_width": 128,
+          "oriented_volume": 712,
+          "selected_axis": 1,
+          "volume_bound_denominator": 1,
+          "volume_bound_numerator": 864
+        },
+        {
+          "label_bits": 3,
+          "maximum_observed_edge_width": 205,
+          "oriented_volume": 1066,
+          "selected_axis": 2,
+          "volume_bound_denominator": 1,
+          "volume_bound_numerator": 1296
+        }
+      ]
+    },
+    {
+      "axis_residual_edges_per_plane_pair": 112,
+      "cubes": 216,
+      "generic_edges": 864,
+      "residual_edges": 1152,
+      "side": 4,
+      "vertices": 64,
+      "width_controls": [
+        {
+          "label_bits": 1,
+          "maximum_observed_edge_width": 194,
+          "oriented_volume": 2132,
+          "selected_axis": 0,
+          "volume_bound_denominator": 1,
+          "volume_bound_numerator": 2640
+        },
+        {
+          "label_bits": 2,
+          "maximum_observed_edge_width": 392,
+          "oriented_volume": 4260,
+          "selected_axis": 2,
+          "volume_bound_denominator": 1,
+          "volume_bound_numerator": 5280
+        },
+        {
+          "label_bits": 3,
+          "maximum_observed_edge_width": 596,
+          "oriented_volume": 6446,
+          "selected_axis": 1,
+          "volume_bound_denominator": 1,
+          "volume_bound_numerator": 7920
+        }
+      ]
+    },
+    {
+      "axis_residual_edges_per_plane_pair": 225,
+      "cubes": 1000,
+      "generic_edges": 4000,
+      "residual_edges": 3750,
+      "side": 5,
+      "vertices": 125,
+      "width_controls": [
+        {
+          "label_bits": 1,
+          "maximum_observed_edge_width": 437,
+          "oriented_volume": 8136,
+          "selected_axis": 2,
+          "volume_bound_denominator": 1,
+          "volume_bound_numerator": 10500
+        },
+        {
+          "label_bits": 2,
+          "maximum_observed_edge_width": 868,
+          "oriented_volume": 16520,
+          "selected_axis": 2,
+          "volume_bound_denominator": 1,
+          "volume_bound_numerator": 21000
+        },
+        {
+          "label_bits": 3,
+          "maximum_observed_edge_width": 1318,
+          "oriented_volume": 24528,
+          "selected_axis": 0,
+          "volume_bound_denominator": 1,
+          "volume_bound_numerator": 31500
+        }
+      ]
+    },
+    {
+      "axis_residual_edges_per_plane_pair": 396,
+      "cubes": 3375,
+      "generic_edges": 13500,
+      "residual_edges": 9720,
+      "side": 6,
+      "vertices": 216,
+      "width_controls": [
+        {
+          "label_bits": 1,
+          "maximum_observed_edge_width": 843,
+          "oriented_volume": 24276,
+          "selected_axis": 2,
+          "volume_bound_denominator": 1,
+          "volume_bound_numerator": 32130
+        },
+        {
+          "label_bits": 2,
+          "maximum_observed_edge_width": 1700,
+          "oriented_volume": 48982,
+          "selected_axis": 0,
+          "volume_bound_denominator": 1,
+          "volume_bound_numerator": 64260
+        },
+        {
+          "label_bits": 3,
+          "maximum_observed_edge_width": 2607,
+          "oriented_volume": 73870,
+          "selected_axis": 2,
+          "volume_bound_denominator": 1,
+          "volume_bound_numerator": 96390
+        }
+      ]
+    }
+  ],
+  "new_factoring_exponent_established": false,
+  "new_local_crossing_family_constructed": false,
+  "pure_tensor_negative_control": {
+    "all_cut_factor_entries": 12288,
+    "endpoint_entries": 256,
+    "piece_log2_at_lambda_bits": "4*lambda",
+    "pieces_at_one_bit": 16,
+    "qualifying_polynomial_piece_family": false
+  },
+  "schedule": {
+    "cutoff_label_lower_exponent": [
+      12,
+      25
+    ],
+    "equitable_schedule_inequalities": 13,
+    "exact_logarithm_and_growth_checks": 52,
+    "piece_enumeration_upper_exponent": [
+      13,
+      25
+    ]
+  },
+  "scope": "Exact controls for the conditional three-axis cube crossing transfer.\n\nThis checks the geometry and cost interface. It does not construct an\neight-leg family meeting the required width and polynomial-piece bounds.\n",
+  "source_sha256": {
+    "research/cube-crossing-transfer.md": "5f7564e76a8632c59093e054ead047c062e7b44577caf57068a669f68f5a9602",
+    "tools/check_cube_crossing_transfer.py": "ca53b873bd245aa1535b4bdf5a598be624a28bbad35f2c5ea5084e8de0cdbd83"
+  },
+  "status": "pass"
+}

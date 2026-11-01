@@ -1572,3 +1572,7 @@ verify-coherent-retractions:
 
 verify-coherent-q32-catalogue:
 	python3 tools/check_coherent_q32_catalogue.py --output /tmp/coherent-q32-catalogue-optimum.json
+
+.PHONY: verify-cube-transfer
+verify-cube-transfer:
+	python3 tools/check_cube_crossing_transfer.py --output /tmp/cube-crossing-transfer.json
