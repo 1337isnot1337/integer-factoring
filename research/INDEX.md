@@ -1,5 +1,7 @@
 # Research index
 
+- [Arbitrary twelve-letter reflection graphs](q12-reflection-graph-search.md): 192 independent F4 image/readout coordinates in the full sixteen-letter source, literal endpoints and independent contraction controls, with separate quick and full untruncated replay levels. Two timed free-height tracks are registered; no favorable tensor or score improvement is claimed.
+
 - [Fixed-type bundles for complete asymmetric pressure](asymmetric-profile-bundle-search.md): a raw-height adapter of the existing proximal method, 99 derivative and 168 held-out plane controls, and a registered three-tensor comparison. Root gradients are not used as convex planes; no bound improvement.
 
 - [Mixed occupation and height in six-to-five split graphs](mixed-graph-retractions.md): literal F4 compression with independent images on the matched pairs; 1,295 determinant identities, 1,875 direct contraction entries and 150 independent complete orders. A sparse screen and timed free-height walk are registered; no stronger bound is claimed.

@@ -2909,3 +2909,9 @@ verify-mixed-graph-retractions:
 .PHONY: verify-asymmetric-profile-bundle
 verify-asymmetric-profile-bundle:
 	python3 tools/check_asymmetric_profile_bundle.py
+
+.PHONY: verify-q12-reflection-graphs verify-q12-reflection-graphs-independent
+verify-q12-reflection-graphs:
+	python3 tools/check_q12_reflection_graphs.py
+verify-q12-reflection-graphs-independent:
+	python3 tools/check_q12_reflection_graphs.py --full-independent

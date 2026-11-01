@@ -1,0 +1,62 @@
+{
+  "status": "registered_before_pressure_search",
+  "base": "4fe7980",
+  "field": "F4, omega^2=omega+1",
+  "graph_coefficients": 192,
+  "chart_tuples": "39402006196394479212279040100143613805079739270465446667948293404245721771497210611414266254884915640806627990306816",
+  "physical_letters": 12,
+  "ambient_letters": 16,
+  "ambient_degree": 48,
+  "coordinate_degree": 38,
+  "free_heights": 88,
+  "height_bound": 128,
+  "log_scale_bounds": [
+    -9,
+    "log(4)"
+  ],
+  "log_tangent_bounds": [
+    -2,
+    2
+  ],
+  "trial_seconds": 10,
+  "maxiter": 100,
+  "initial_total_seconds": 90,
+  "initial_trials": 3,
+  "temperature_block": 25,
+  "temperatures": [
+    0.001,
+    0.01,
+    0.05,
+    0.2
+  ],
+  "restart_period": 100,
+  "tracks": [
+    {
+      "label": "single-coordinate",
+      "mutation": "single",
+      "seconds": 1800,
+      "seed": 259599222100485888668656062640267619244
+    },
+    {
+      "label": "multi-coordinate",
+      "mutation": "multi",
+      "seconds": 1800,
+      "seed": 175722504861042682667828852654259164814
+    }
+  ],
+  "retention": "all proposals, initial/best/last parameters, full best/last details, digest, rejected coordinates and errors; intermediate successful queries counted only",
+  "source_sha256": {
+    "tools/q12_reflection_graphs.py": "b1e0df109d0c28f1422d7e564181133ce3c617858e7061892a8cb70768841119",
+    "tools/check_q12_reflection_graphs.py": "af65735fcc35d6c593d7429f4ff7b388aa78c221dbcc1292a9fd631ed1efef35",
+    "tools/search_q12_reflection_graphs.py": "22cab1b68110aaeb0e0fda3f2fff81833290b220272e3c1bf2b4622cdad40522",
+    "tools/physical_split_crossings.py": "f80920838d10cd0ad8d907bd671a10795749d830cce256399661d959ad40efb8",
+    "tools/reflection_dual_rail_gaussian.py": "6d4780f02b9479d2473c823f74c4749f47e1db0bd32e5318bd601bdd51010a38",
+    "tools/scaled_asymmetric_crossing_pressure.py": "50231d3a2de45fea2a86c5019a9aada8c88d08966e413efee1f8c7f566108a77",
+    "tools/asymmetric_crossing_pressure.py": "de017ff2d5c352505aa2b3ec9a2541f8fb4db0bdd2e70b3ec74de91c4713ca42",
+    "tools/native_rectangular_smith_f4.py": "5c96128e3713138a08752c22036154cb65983a0b47ca66aa2ca18949d765ce4a",
+    "tools/native_rectangular_smith_f4.cpp": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6",
+    "tools/mixed_graph_retractions.py": "d4f6f15d2ca5afa0e82f8294363cef1105318357d7613ad830557caee0ed8144",
+    "tools/search_f4_recentered_crossings.py": "aaa200699ed3630f941bf694af79d0465a277b3dc570e5cc3a4a5c5703c284cd"
+  },
+  "claim": "Numerical actual polynomial tensor search; no favorable tensor, exact pressure, global minimum or score improvement is claimed at registration."
+}
