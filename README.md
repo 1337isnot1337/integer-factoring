@@ -154,6 +154,13 @@ Both comparisons preserve complete mathematical payloads and charge all
 generated-ahead candidates. A separate bounded 192-bit search driver retains
 its policy and streams a compressed, independently replayed certificate on
 completion; no 192-bit success is claimed here.
+
+A [certified 208-bit input](evidence/prime-cofactor-fresh-208-input.json) and
+[bounded follow-on policy](evidence/batch-smooth-fresh-208-policy.json)
+are retained before that search starts. The input has 38 recursive prime
+certificates and 32 checked rejected candidates. Its start gate requires
+a successful, independently replayed 192-bit run; no 208-bit search result
+is claimed by this checkpoint.
 <!-- cofactor-collision-checkpoint:end -->
 
 <!-- tensor-orthogonal-checkpoint:start -->
