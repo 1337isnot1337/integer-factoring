@@ -160,3 +160,91 @@ These are exact scalar identities for the pencil. The generation theorem
 does not assert that every allowed invariant occurs as an entry of a
 selected crossing, or identify the ordinary ranks of its tensor
 coefficients. Those require the remaining representation and rank analysis.
+
+## 6. Complete pencil relations over F5
+
+The two relations in (4) generate the entire kernel of the pencil map
+over `F_5`. Here is a proof that also fixes the scalar Hilbert function.
+Write the four generator variables as `a,b,c,d` and put
+
+```math
+F_8=ac-2b^2+d^2,\qquad
+F_{12}=c^2+(a^2+b)d^2+2b^3.
+```
+
+Let `R=F_5[a,b,c,d]/(F_8,F_12)` and `L=a^2-b`.
+The first relation is irreducible: viewed as a polynomial in `a`,
+its two coefficients `c` and `d^2-2b^2` are relatively prime.
+Modulo it, the second relation has the nonzero remainder
+
+```math
+c^2-a^3c-abc+2a^2b^2-b^3.
+```
+
+Thus the two polynomials form a regular sequence. In particular `R`
+is a two-dimensional Cohen--Macaulay complete intersection with no
+embedded associated primes. Setting `L=0` gives `b=a^2` and, set
+theoretically, `c=a^3`, `d^2=a^4`. This quotient has dimension one,
+so no two-dimensional component of `R` lies in `L=0`. Consequently `L`
+is a nonzerodivisor.
+
+In `R[L^(-1)]`, set `u=(c-ab)/(2L)`. Substitution gives the mutually
+inverse presentation
+
+```math
+b=3au-u^2,\quad c=3au^2+2u^3,\quad
+d^2=u^3(a+2u),\quad L=(u+a)^2.
+```
+
+The last identity has no factor two because `L=a^2-b`; only the formula
+for `u` uses `2L`. The localized ring is therefore
+
+```math
+F_5[a,u,d,(u+a)^{-1}]/(d^2-u^3(a+2u)).
+```
+
+It is a domain: `u^3(a+2u)` is not a square in `F_5(a,u)`.
+Since `L` is a nonzerodivisor, `R` embeds in this domain and is a domain
+itself. The actual pencil image has dimension two, as is also seen from
+`u=s^2`, `a=3s^2+t^2`. Hence its prime kernel has height two and is
+exactly `(F_8,F_12)`. This proves completeness of the two relations.
+
+Record half the ordinary polynomial degree by a variable `q`, so that
+`a,b,c,d` have weights `1,2,3,2`. The ordinary vector-space dimensions
+over `F_5` are encoded by
+
+```math
+\frac{(1-q^4)(1-q^6)}{(1-q)(1-q^2)^2(1-q^3)}
+=\frac{(1+q^2)(1+q^3)}{(1-q)(1-q^2)}.
+```
+
+Its coefficient at `q^m` is `2m-2` for `m>=3`. Thus the scalar space
+obtained by restricting **all** homogeneous degree-`n` invariants to
+`s=1,t=1-2z` has dimension exactly `n-2` for even `n>=6`.
+Setting `s=1` is injective on a fixed homogeneous degree.
+
+For a generator of ordinary degree `e`, differentiating (3) gives
+`f'(0)=-e*f(0)/2`, `f'(1)=e*f(1)/2`, and the corresponding first
+identity for its reversed degree-`e` polynomial. The Leibniz rule adds
+these weights. Thus every weighted-homogeneous monomial satisfies the
+three [jet constraints](bounded-spin-three-jets.md). Those constraints are
+independent at even lengths at least six. The universal scalar space
+is therefore precisely the three-jet constraint space. A selected
+crossing's actual tensor entries can span a smaller subspace; this
+calculation supplies no ordinary cut-rank bound.
+
+The kernel also has the following optional exact SymPy replay over `F_5`.
+The ordinary proof above supplies the geometric and Hilbert conclusions.
+
+```python
+from sympy import symbols, groebner
+u, a, b, c, d = symbols("u a b c d")
+graph = [b - 3*a*u + u**2, c - 3*a*u**2 - 2*u**3,
+         d**2 - a*u**3 - 2*u**4]
+G = groebner(graph, u, a, b, c, d, modulus=5, order="lex")
+eliminated = [p.as_expr() for p in G.polys if not p.as_expr().has(u)]
+H = groebner([a*c - 2*b**2 + d**2,
+              c**2 + (a**2+b)*d**2 + 2*b**3],
+             a, b, c, d, modulus=5, order="lex")
+assert eliminated == [p.as_expr() for p in H.polys]
+```
