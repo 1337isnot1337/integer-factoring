@@ -324,6 +324,11 @@ zero-place Smith profile and the strict crossing endpoint; its
 leading infinity coefficient is also unchanged. These conditions give
 a distinct rational-gauge construction target. They do not establish
 the existence of a nontrivial projector or an improved profile.
+The subsequent [single-evaluation algebra theorem](joint-evaluation-algebra.md)
+closes this entire scalar-rational projector family over every
+characteristic-two field, including higher multiplicities and
+irreducible numerator/denominator factors, under regularity at zero,
+one and infinity. Interacting projector directions remain outside it.
 
 This theorem leaves interacting sequences of different lattice
 subspaces, rational changes of degree zero at infinity, one-step changes

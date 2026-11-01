@@ -60,7 +60,17 @@ a second global target using two implicit determinant contents, with cheap
 padding and explicit Vandermonde normalization.
 An exact trace involving the inverse and entrywise square gives the count directly;
 efficient evaluation of that normalized scalar is unproved.
+The [full Cauchy Smith-profile theorem](research/pole-smith-stabilization.md)
+removes any matrix-size-dependent stabilization precision and gives a direct
+rectangular maximal-minor slope. It does not identify the unknown factor pivots
+or supply a compressed global evaluator. Run `make verify-pole-smith`.
 The [research index](research/INDEX.md) links proofs, exact evidence, and replay commands.
+
+The [joint raw-boundary theorem](research/joint-top-boundary-rank.md) extends
+the original separate-wire obstruction to arbitrary joint factorizations of
+all original edges between each group pair. Its exact tradeoff is
+`H + V/4 >= n`; internal constraint solving and new weighted representations
+remain outside its hypotheses. Run `make verify-joint-top-boundary`.
 
 The result table distinguishes verified machine bounds from conditional constructions and finite experiments. A merged PR or a passing finite test does not imply independent mathematical review.
 
@@ -617,9 +627,13 @@ classification also closes every energy-projector modification at
 every positive depth under the stated conditions; the only four
 projectors preserve the tensor. The one-step infinity conditions alone
 also close every normalized scalar multiplier `f(t)=t+O(1)`.
-Interacting subspaces and rational changes of degree zero at infinity
-remain open. Run `make verify-joint-monomial-lattices`
-and `make verify-joint-projector-lattices`.
+The [single-evaluation algebra theorem](research/joint-evaluation-algebra.md)
+also reduces every rational energy-preserving matrix gauge regular at
+zero, one and infinity to a constant conjugation: a polynomial minor
+`t^1452(t+1)^350` proves a localized algebra identity. A gauge equal to
+the identity at infinity leaves the tensor unchanged. Gauges singular
+at the distinguished places remain open. Run `make verify-joint-monomial-lattices`,
+`make verify-joint-projector-lattices` and `make verify-joint-evaluation-algebra`.
 
 The [group-shear extension](research/group-shear-crossings.md) implements
 the swap through three multiplication/division shears over any finite

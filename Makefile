@@ -20,6 +20,13 @@ verify: verify-docs verify-frontier verify-arithmetic verify-further verify-cons
 verify-docs:
 	python3 tools/check_docs.py
 
+.PHONY: verify-pole-smith verify-joint-top-boundary
+verify-pole-smith:
+	python3 tools/check_pole_smith_stabilization.py
+
+verify-joint-top-boundary:
+	python3 tools/check_joint_top_boundary_rank.py
+
 .PHONY: verify-modular-descent
 verify-modular-descent:
 	python3 tools/check_modular_parameter_descent.py
@@ -168,6 +175,10 @@ verify-joint-monomial-lattices:
 .PHONY: verify-joint-projector-lattices
 verify-joint-projector-lattices:
 	python3 tools/check_joint_projector_lattices.py
+
+.PHONY: verify-joint-evaluation-algebra
+verify-joint-evaluation-algebra:
+	python3 tools/check_joint_evaluation_algebra.py
 
 .PHONY: verify-group-shears
 verify-group-shears:
