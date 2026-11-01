@@ -1,0 +1,161 @@
+{
+  "actual_implicit_parity_providers": [
+    {
+      "column_count_bits": 201,
+      "input_bits": 301,
+      "interior_nodes_enumerated": 0,
+      "leading_coefficient_mod2": 1,
+      "raw_boundary_nodes": 0,
+      "row_count_bits": 201,
+      "scope": "Exact precision-one provider with cost linear in the explicit symmetric difference",
+      "value_at_zero_mod2": 1,
+      "visited_boundary_nodes": 0
+    },
+    {
+      "column_count_bits": 201,
+      "input_bits": 301,
+      "interior_nodes_enumerated": 0,
+      "leading_coefficient_mod2": 0,
+      "raw_boundary_nodes": 0,
+      "row_count_bits": 201,
+      "scope": "Exact precision-one provider with cost linear in the explicit symmetric difference",
+      "value_at_zero_mod2": 0,
+      "visited_boundary_nodes": 0
+    },
+    {
+      "column_count_bits": 301,
+      "input_bits": 303,
+      "interior_nodes_enumerated": 0,
+      "leading_coefficient_mod2": 1,
+      "raw_boundary_nodes": 6,
+      "row_count_bits": 301,
+      "scope": "Exact precision-one provider with cost linear in the explicit symmetric difference",
+      "value_at_zero_mod2": 1,
+      "visited_boundary_nodes": 3
+    }
+  ],
+  "dense_boundary_provider_controls": 48,
+  "dense_exact_value_and_jet_controls": 48,
+  "exact_flat_inverse_weight_controls": 683,
+  "known_factor_value_queries": 795,
+  "known_factor_window_value_queries": 675,
+  "large_general_value_contract": {
+    "domain_size_exponent": 424,
+    "input_bits": 402,
+    "padding_exponent": 873,
+    "precision": 22,
+    "scope": "Contract construction only; no general large value computed"
+  },
+  "prime_window_wrapper_controls": 393,
+  "rejected_excessive_boundary_controls": 1,
+  "roughness_wrapper_controls": 393,
+  "scope": "General count values are supplied by finite known-factor test oracles. The bounded-symmetric-difference precision-one provider is implemented and exercised on implicit large domains. No improved complete factoring score.",
+  "selected_controls": [
+    {
+      "largest_proper_divisor": 15,
+      "n": 45,
+      "precision": 7,
+      "scope": "Conditional on the supplied normalized value provider",
+      "smallest_prime_factor": 3,
+      "trial_bits": 1,
+      "trial_divisions": 0,
+      "value_queries": 4
+    },
+    {
+      "n": 45,
+      "scope": "Direct initial trial division",
+      "smallest_prime_factor": 3,
+      "trial_bits": 4,
+      "trial_divisions": 1,
+      "value_queries": 0
+    },
+    {
+      "largest_proper_divisor": 13,
+      "n": 169,
+      "precision": 9,
+      "scope": "Conditional on the supplied normalized value provider",
+      "smallest_prime_factor": 13,
+      "trial_bits": 1,
+      "trial_divisions": 0,
+      "value_queries": 6
+    },
+    {
+      "n": 169,
+      "scope": "Direct initial trial division",
+      "smallest_prime_factor": 13,
+      "trial_bits": 4,
+      "trial_divisions": 6,
+      "value_queries": 0
+    },
+    {
+      "largest_proper_divisor": 19,
+      "n": 323,
+      "precision": 10,
+      "scope": "Conditional on the supplied normalized value provider",
+      "smallest_prime_factor": 17,
+      "trial_bits": 1,
+      "trial_divisions": 0,
+      "value_queries": 7
+    },
+    {
+      "largest_proper_divisor": 19,
+      "n": 323,
+      "precision": 4,
+      "scope": "Conditional on the supplied normalized value provider",
+      "smallest_prime_factor": 17,
+      "trial_bits": 4,
+      "trial_divisions": 7,
+      "value_queries": 7
+    },
+    {
+      "largest_proper_divisor": 103,
+      "n": 10403,
+      "precision": 15,
+      "scope": "Conditional on the supplied normalized value provider",
+      "smallest_prime_factor": 101,
+      "trial_bits": 1,
+      "trial_divisions": 0,
+      "value_queries": 12
+    },
+    {
+      "largest_proper_divisor": 103,
+      "n": 10403,
+      "precision": 5,
+      "scope": "Conditional on the supplied normalized value provider",
+      "smallest_prime_factor": 101,
+      "trial_bits": 4,
+      "trial_divisions": 7,
+      "value_queries": 12
+    },
+    {
+      "largest_proper_divisor": 1013,
+      "n": 1022117,
+      "precision": 21,
+      "scope": "Conditional on the supplied normalized value provider",
+      "smallest_prime_factor": 1009,
+      "trial_bits": 1,
+      "trial_divisions": 0,
+      "value_queries": 18
+    },
+    {
+      "largest_proper_divisor": 1013,
+      "n": 1022117,
+      "precision": 6,
+      "scope": "Conditional on the supplied normalized value provider",
+      "smallest_prime_factor": 1009,
+      "trial_bits": 4,
+      "trial_divisions": 7,
+      "value_queries": 18
+    }
+  ],
+  "theorem": "Fixed-field count values and a boundary parity provider",
+  "wrapped_suffix_prime_window_control": {
+    "initial_nonempty_suffix_value": 0,
+    "n": 215233605,
+    "next_suffix_value": 9,
+    "precision": 5,
+    "proper_divisor_count": 32,
+    "scope": "Known-factor oracle control; nonempty suffix wraps to zero, but its prime-window difference detects the factor",
+    "smallest_prime_factor": 3
+  }
+}

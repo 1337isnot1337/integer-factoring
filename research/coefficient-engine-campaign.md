@@ -41,6 +41,16 @@ and do not spawn subagents without an explicit user request.
   credited in Discussion #51, reply 19327344. The polynomial-in-unary-squares
   identity follows here from the order-five group law.
 
+- [Phase seven](q7-cubic-parameter.md): exact cubic parameter with
+  `v=u/(1+u+u^2)^4`, `X=Y/(1+u+u^2)` and the septic kernel. The original
+  parameter is `u=t*B_7(t^4)`, identifying partition parities without a fast
+  oracle. A degree-six full-series theta exclusion uses even coefficients;
+  the actual odd-index task instead has a degree-four theta identity.
+  Integral weight-two lifts on Gamma_1(784) give the Sturm bound 75,264;
+  65,536 exact odd controls through 131,072 cover it. Twenty quadratic
+  predicates use at most three positive variables each. The explicit
+  evaluator costs O(N poly(log N)) time, so no stronger bound follows.
+
 ## Active next construction
 
 Seek a nonlinear representation of the trace-zero Delta composition. Do not
@@ -54,11 +64,13 @@ The q=5 scalar is now reduced to four binary quadratic predicates with its
 cost charged. Do not repeat that derivation or replace its divisor-count
 query with an unproved squarefree-part oracle.
 
-Next concrete target: phase seven. Check a cubic parametrization of its
-canonical kernel and test finite polynomial expressions using several
-unary-square residue series. Use the known q3/q5 identities as controls,
-hold out larger prefixes, and require an ordinary proof before asserting
-any identity at all indices. A finite prefix fit is only a candidate.
+Next concrete target: determine whether the phase-seven theta construction
+extends to a uniform phase family, with the full construction and coefficient
+cost charged. Rank-four coset theta forms provide a polynomial-sized
+candidate module at general q, and the integral torsion differences have
+weight two. Construct the actual map or identify the first missing phase;
+do not infer a uniform identity merely from q3/q5/q7. A sufficiently fast
+original-index representation-count evaluator is still needed.
 
 Other useful representation to examine: weighted algebraic coefficient
 automata composed with odd-square theta series, using parameterized

@@ -65,6 +65,12 @@ verify-tate-coordinate:
 
 verify-frontier: verify-tate-coordinate
 
+.PHONY: verify-q7-parameter
+verify-q7-parameter:
+	python3 tools/check_q7_cubic_parameter.py
+
+verify-frontier: verify-q7-parameter
+
 .PHONY: verify-q5-quadratic
 verify-q5-quadratic:
 	python3 tools/check_q5_trace_zero.py
@@ -2277,3 +2283,41 @@ verify-filtered-pascal-exponents:
 .PHONY: verify-prime-bezout-counting
 verify-prime-bezout-counting:
 	python3 tools/check_prime_bezout_counting.py --output /tmp/prime-bezout-counting.json
+
+.PHONY: verify-cube-optimized-type
+verify-cube-optimized-type:
+	python3 tools/certify_cube_optimized_type.py
+
+
+.PHONY: verify-one-prime-bezout-recovery
+verify-one-prime-bezout-recovery:
+	python3 tools/check_one_prime_bezout_recovery.py --output /tmp/one-prime-bezout-recovery.json
+
+
+.PHONY: verify-filtered-unit-crossings
+verify-filtered-unit-crossings:
+	python3 tools/check_filtered_unit_crossings.py --output /tmp/filtered-unit-crossings.json
+
+
+.PHONY: verify-recursive-symmetric-exterior-blocks
+verify-recursive-symmetric-exterior-blocks:
+	python3 tools/check_recursive_symmetric_exterior_blocks.py --large --output /tmp/recursive-symmetric-exterior-blocks.json
+
+
+.PHONY: verify-bezout-count-values
+verify-bezout-count-values:
+	python3 tools/check_bezout_count_values.py --output /tmp/bezout-count-values.json
+
+.PHONY: verify-orthogonal-differential-pairs
+verify-orthogonal-differential-pairs:
+	python3 tools/check_orthogonal_differential_pairs_f4.py
+
+
+.PHONY: verify-linear-pascal-matroid
+verify-linear-pascal-matroid:
+	python3 tools/check_linear_pascal_matroid.py --output /tmp/linear-pascal-matroid-energies.json
+
+
+.PHONY: verify-permuted-pascal-kernels
+verify-permuted-pascal-kernels:
+	python3 tools/check_permuted_pascal_kernels.py --output /tmp/permuted-pascal-zero-spectra.json

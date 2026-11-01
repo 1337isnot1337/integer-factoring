@@ -1747,6 +1747,11 @@ At [phase five](research/q5-quadratic-coefficients.md), the remaining bit
 reduces to four binary quadratic-form parity counts. The explicit evaluator
 still costs `O(sqrt(N) poly(log N))`; it supplies no faster unrestricted bound.
 Run `make verify-q5-quadratic`.
+At [phase seven](research/q7-cubic-parameter.md), an exact cubic parameter
+identifies a seven-regular partition series. A degree-four theta identity
+computes the odd-index value; its modular/Sturm proof is covered by 65,536
+exact controls. The explicit evaluator costs `O(N poly(log N))`.
+Run `make verify-q7-parameter`.
 
 The [Bell-diagonal seed construction](research/bell-diagonal-crossings.md)
 gives exact two-cut transforms and excludes its complete symmetric
@@ -1904,3 +1909,21 @@ The [filtered Pascal exponent classification](research/filtered-pascal-exponents
 
 
 A [prime-adic precision-one refinement](research/prime-bezout-counting.md) turns each normalized leading coefficient into a rectangle factor count modulo a small prime. Polynomially bounded primes and disjoint residue rectangles yield a uniform conditional factoring reduction with only logarithmically many output bits per query. Exact rational controls verify the normalization; computing the global coefficient remains unresolved.
+
+
+The [one-prime recovery refinement](research/one-prime-bezout-recovery.md) uses a chosen field and an explicit trial budget. Counts become exact on certified prime-only intervals, so a single characteristic suffices even when the total divisor count vanishes modulo that prime. The resulting conditional cost is exponential only in the charged trial budget and the still-missing coefficient provider.
+
+
+The [complete filtered-unit curve family](research/filtered-unit-crossings.md) extends nonlinear group-direction selectors. It gives explicit independent coordinates, full endpoint and generic-rank proofs, and exact coefficient-cut formulas. The larger family is now available for searches; its retained finite examples do not improve the factoring exponent.
+
+
+Repeating the symplectic reduction gives [polynomial-size blocks for symmetric exterior multiplication](research/recursive-symmetric-exterior-blocks.md): exactly `ceil(r/2)` block types, each of order at most `(r+2)^2/4`, retain the complete `2^r`-dimensional operator. This makes exact symmetric specialization profiles practical through 64 axes; it is a matrix-computation improvement, with no new factoring exponent claimed.
+
+
+The [fixed-field count-value refinement](research/bezout-count-values.md) reduces the precision requirement to `O(log n)` bits: differences of two normalized inverse values detect prime divisors in certified windows. It also implements an exact precision-one provider for intervals with a small symmetric difference, including implicit large singular examples. The general value provider remains open, and its full cost is included in every conditional bound.
+
+
+The [binary-linear Pascal extension](research/linear-pascal-matroid-energies.md) computes complete zero-cut spectra from minimum-weight projected row bases. It supplies actual kernels outside the earlier filtered class and charges their changed physical energies. The other cut remains part of the required contraction calculation.
+
+
+The [arbitrary-permutation Pascal theorem](research/permuted-pascal-zero-spectra.md) removes the linearity restriction: every exponent permutation now has a proved complete zero spectrum. A compatible cone supplies explicit infinity spectra for the same kernel. Both matching-pair energies are retained in the pressure calculation; an improving contraction certificate is still required.

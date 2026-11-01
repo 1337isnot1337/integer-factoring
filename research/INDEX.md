@@ -180,6 +180,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Explicit polynomial character decoder](cyclotomic-character-decoder.md): Galois substitutions, an odd-order Fourier transform and exact nilpotent divisions invert the same one-bit map without a stored Gaussian system; each sampled character order is necessary for arbitrary paired binary vectors. The faster coefficient engine remains open.
 - [Exact Lambert/theta section engine](lambert-theta-sections.md): a divisor-free binary coefficient recurrence with charged exponential cost; level three has a polynomial-time square test but exponentially large common linear section spaces, so that compression architecture cannot supply the faster engine.
 - [Tate coordinates and quadratic composition](tate-coordinate-coefficients.md): uniform nodal algebras and rational-diagonal compilers make coefficients in the algebraic variable cheap; the original Delta composition remains open, with one scalar trace uniformly reduced to a square test.
+- [Phase-seven cubic parameter and theta engine](q7-cubic-parameter.md): an exact parameter identifies seven-regular partition parities; the actual odd-index coefficients have a degree-four theta identity, proved by integral modular lifts and a finite Sturm certificate. The charged ternary-count evaluator remains exponential in the input length.
 - [Nonlinear phase-five quadratic engine](q5-quadratic-coefficients.md): the order-five group law gives four positive binary quadratic parity counts and an explicitly charged square-root-time evaluator; an alternative exact description isolates one divisor-count-mod-four query, and squarefree promises remain separate.
 - [Polynomial divisor-gap extraction](smooth-norm-gap.md): integer multiplicative trimming converts promised inner-radius balanced norms at a specified outer radius, without enumerating all divisors.
 - [Relations from small smooth norms](smooth-norm-relations.md): primitive smooth norms yield bounded prime-form words directly, removing the balanced-factor condition and strictly enlarging the accepted target set.
@@ -1267,3 +1268,29 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 
 
 - [Factoring from prime-adic precision-one coefficients](prime-bezout-counting.md): constant derivative units on full prime-power grids, exact modular factor counts, an elementary polynomial prime bound, and a uniform supplied-oracle reduction.
+
+## Optimized rational type for the existing cube kernel
+
+[Exact rational-type certificate](cube-optimized-rational-type.md) sharpens the existing cube interface to rho < 0.624718442. This changes only the type and scale; the complete factoring exponent stays 1/2.
+
+
+- [One prime field with a chosen trial budget](one-prime-bezout-recovery.md): prime-only interval counts, a single-field smallest-prime decoder, and a uniform tradeoff between trial division and the hypothesized global coefficient provider.
+
+
+- [Complete filtered unit curves for crossing searches](filtered-unit-crossings.md): a strict extension of nonlinear selector products, exact free coordinates, equivalent loop factors, and independently checked complete coefficient cuts.
+
+
+- [Polynomial-size recursive symmetric blocks](recursive-symmetric-exterior-blocks.md): simultaneous conjugacy, an exact word classification, a sharp quadratic block-size bound, full integer multiplicities, and complete specialized profiles through 64 axes.
+
+
+- [Fixed-field count values and a boundary parity provider](bezout-count-values.md): common-unit suffix values, logarithmic-precision prime-window recovery, explicit provider-cost tradeoffs, and an implemented evaluator that visits only the product-feasible interval boundary.
+
+## Orthogonal paired differential retractions
+
+[Subset Gram criterion and construction](orthogonal-differential-pair-codes.md) gives orthogonal, deletion-closed interior maps and identical natural cut profiles. Exact F4 controls find18valid column scalings among81. No new pressure or factoring claim.
+
+
+- [Pascal zero spectra from binary linear maps](linear-pascal-matroid-energies.md): exact Boolean-subcube orders, a supermodular projected-basis weight, explicit polynomial kernels, and complete zero profiles with their physical charges.
+
+
+- [Complete Pascal profiles for arbitrary exponent permutations](permuted-pascal-zero-spectra.md): a coefficientwise-product valuation inequality, explicit zero spectra without monotonicity assumptions, and a compatible infinity cone with both physical charges.
