@@ -954,6 +954,8 @@ retain exact commands, hashes and clean pre/post status. Later cube-fiber
 notes and graph follow-ups have separate checks outside this full pin.
 No Lean or stronger complete factoring bound is implied.
 
+
+
 ## Precision carry replay and acquired collected inverses
 
 The [full receipt](../evidence/teichmuller-carry-full-verification.json)
@@ -973,10 +975,18 @@ recorded in its separate receipt. The existing companion supplies the
 collected identity and smaller inverse polynomial; this extension acquires
 their actual carry queries. Current main `d4c3fad` was integrated without
 conflict at `ed83f94`, and `make verify-docs` passed for 1,130 Markdown
-files. A new full run at clean frozen `ed83f94` is in progress; no full
-PASS is claimed for it here. These are author implementation checks and
+files. The [full inverse receipt](../evidence/teichmuller-inverse-full-verification.json)
+now records an exit-zero default-plus-37-focused run at clean frozen
+`ed83f945d4defec3dcf17c0b8dfd60854492ed09`, tree
+`d28bc45b823eb985472e377c9dfb85cebe67e7b3`, in 823.66 seconds.
+It retains 386 Python command blocks, 66 unit tests, five crossing tests
+and 1,130 Markdown files. Later receipt/docs changes and the packed-system
+implementation are outside that exact pin. These are author implementation checks and
 ordinary proofs, with no independent mathematical review, new Lean work,
 integer-word compiler or stronger factoring bound.
+
+## PR71 backend and implemented inverse/system companions
+
 
 
 ## PR73/74 integration and multiplier scope repairs
@@ -984,8 +994,9 @@ integer-word compiler or stronger factoring bound.
 PR73 head `ab0dc947a4ad1d6fa9fa13aa459cc4cc779da332` is retained by
 `f406934`; PR74 head `329a2edcef84d0b738647df3a9a8d20bdc92e7de` by
 `d958a43`. The additive index conflict preserves both sources. The PR74
-precision-note conflict retains both implementations and the packed-system
-bound; its additional inverse bound is numbered (14). The concise README
+precision-note conflict initially retained both implementations and the packed
+system bound; the later canonical consolidation preserves both source heads
+and control panels while using one implementation. The concise README
 overview from concurrent `ebfd7e5` is preserved with stable backend links.
 
 The multiplier separator proof now explicitly requires Boolean auxiliary
@@ -1010,5 +1021,31 @@ queries against 675 assignments, 60 field reductions and 3,240 Frobenius
 comparisons. Its 324 acquired queries satisfy the stated count/degree
 budgets. The inherited interpolation and the separate packed-system
 controls also pass. These later sources are outside the full `2a1daeb`
-verification pin. Source/concurrent credits and both useful implementations
-are retained; no Lean or stronger factoring score is claimed.
+verification pin. Source/concurrent credits and both source implementations remain in history;
+the current tree uses the canonical compiler with both control panels. No
+Lean or stronger factoring score is claimed.
+
+The [new compiler](../tools/precision_rational_carries.py) implements
+collected total unit inverses and coefficient-extension packing of residue
+systems. At coefficient degree m*w, m ordinary equations retain v variables
+and precision h, with input budget `(2h-1)*m*w*delta`; supplied field models
+and coefficient embeddings are required or must be separately acquired.
+The [receipt](../evidence/precision-rational-carry-controls.json) compares
+18 rational-sum controls, 512 pointwise Frobenius transforms and 35 packed
+system controls with literal evaluation. Constants, nonunits, punctured
+domains, relative-column rotation, subfield coefficients and exact-count
+precision are included. The inherited additive-character compiler is
+preserved. The complete integer arithmetic representation and a stronger
+factoring score remain open. No Lean is included.
+
+The later PR74 integration consolidates the concurrent unit-inverse module
+into `tools/precision_rational_carries.py` from `2a1daeb`; the duplicate
+module is removed. The additional complete-small-ring, proper-subfield,
+eight-denominator and precision-one controls now call that canonical
+compiler and inspect its actual carry acquisitions and returned invoice.
+They pass with 180 rational queries, 468 carry calls and the same direct
+values. The older `ed83f94` full replay is preserved as an exact historical
+source check and does not cover this consolidation. The short README and
+concurrent separator work from `ebfd7e5` are retained. No stronger score
+or independent mathematical review is inferred.
+

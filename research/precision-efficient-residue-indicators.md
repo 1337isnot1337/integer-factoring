@@ -214,49 +214,6 @@ for norm predicates and products of total unit inverses. Whether the remaining
 degree, variable and representation costs can improve a complete factoring
 algorithm is open; no such bound is claimed.
 
-### Acquired collected-denominator carry interface
-
-The [unit-inverse backend](../tools/teichmuller_unit_inverses.py) now supplies
-the polynomial queries in (11)-(12), using the implemented
-[precision-preserving carry evaluator](teichmuller-cyclic-carries.md).
-Its coefficient ring may have degree `d` while the summation set is the
-Teichmuller copy of `F_(2^w)`, for `w|d`. Replace the norm length `w` in
-(12) by `d` in this case. For `t|w`, the full bound is
-
-```
-O(L+1) * (S_A+((2L+1)*d-1)*S_B+2)^O(v*w/t)
-         * poly(input length,L,d,w,v).                  (14)
-```
-
-The supplied basic irreducible polynomial, its acquisition, and any
-coefficient extension remain part of the invoice. The denominator list
-is retained as factors, not expanded into one polynomial. A Frobenius
-conjugate shifts variable exponents modulo `w` on this summation domain
-and applies the actual lifted automorphism to each coefficient. Different
-rows are allowed and no extra summation variables are introduced.
-
-Constant denominators are evaluated directly: units contribute their
-ring inverses and a nonunit makes the whole sum zero. For nonconstant
-denominators, each nonzero coefficient of the **one** polynomial
-`E_(L+1)(X)/X` supplies one carry query for the whole list. There are at
-most `L+1` such queries, independent of the denominator count. The
-coefficient acquisition and total factor-list length are polynomial in
-the written input and `L,d`. This is unit inversion with zero assigned
-to nonunits, not division at a nonunit or an integer-word compiler.
-
-Run `make verify-teichmuller-inverses` for direct carry controls, including
-eight denominators in one query. The checker also inspects the actual
-number and degree budgets of the acquired queries against (14). The
-[receipt](../evidence/teichmuller-unit-inverse-controls.json) pins the
-sources, seed and query digest. Its finite panel covers all 402 elements
-of five small unramified rings, 180 rational queries against 675 direct
-assignments, 60 precision-one reductions to the field evaluator, and
-3,240 conjugate evaluations. The 324 acquired carry queries satisfy the
-per-query count and degree invoice. The identity, smaller inverse polynomial
-and collection invoice above retain this note's preceding credit; this
-extension implements their interface to the separate carry backend.
-
-
 ## 5. Implemented compilers and the system-count bound
 
 The [compiler](../tools/precision_rational_carries.py) implements (11)-(12)
@@ -304,6 +261,30 @@ Equation (13) is a bound for explicit finite-field polynomial systems,
 not for arbitrary word arithmetic. In particular trace predicates that
 mix many binary rows can still enlarge the relative-column exponent;
 the integer multiplication representation has not been supplied.
+
+### Acquired collected-denominator carry interface
+
+The canonical [compiler](../tools/precision_rational_carries.py) supplies
+all collected unit-inverse queries; the earlier concurrent implementation
+is consolidated into it. For a degree-d coefficient ring and width-w
+summation subfield with w|d, (12) uses norm length d and cost
+`O(h+1)*(S_A+((2h+1)*d-1)*S_B+2)^O(v*w/t)` times polynomial bit overhead.
+Constants, degree acquisition and the coefficient representation are charged.
+
+Run `make verify-teichmuller-inverses` for the additional complete-small-ring,
+direct-sum, field-reduction and actual acquisition-budget controls, including
+eight denominators. Its [receipt](../evidence/teichmuller-unit-inverse-controls.json)
+pins the current canonical implementation and finite panel. This retains
+credit to the preceding interpolation, collection identity and carry backend.
+The panel covers all 402 elements in five rings, 180 rational queries
+against 675 direct assignments, 60 field reductions and 3,240 conjugate
+evaluations. Its 468 acquired carry queries satisfy the checked count
+and degree budgets.
+
+The [full inverse replay](../evidence/teichmuller-inverse-full-verification.json)
+pins the earlier concurrent implementation at clean `ed83f94`, before
+canonical-compiler consolidation. It passed the default and 37 focused
+targets; it does not cover the later integration or packed-system controls.
 
 ## 6. Exact controls
 

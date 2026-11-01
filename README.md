@@ -35,7 +35,7 @@ This is an asymptotic worst-case bound, not a practical factoring speedup.
 
 **Tensor and crossing route.** This work searches for a complete crossing with pressure `rho < 1/sqrt(2)`, the threshold needed to improve the current transfer. Some relaxed profiles meet the numerical target, but no admissible construction has established the required crossing. See [directions beyond the half-rate result](research/post-half-directions.md).
 
-**Exact sum backend.** [Precision-preserving carry sums](research/teichmuller-cyclic-carries.md) and the [unit-inverse and packed-system compilers](research/precision-efficient-residue-indicators.md) evaluate explicit finite-field polynomial inputs with precision, degree and coefficient embeddings charged. A small representation of the complete integer arithmetic query remains open.
+An [exact residue-system backend](research/precision-efficient-residue-indicators.md#5-implemented-compilers-and-the-system-count-bound) retains counts at growing 2-adic precision and handles collected unit inverses. A low-cost representation of the complete integer factoring query remains open.
 
 The [research index](research/INDEX.md) is the full catalogue of proofs, constructions, finite searches, obstructions, and open questions. It contains the detailed research log; this README is only a summary.
 
@@ -51,7 +51,7 @@ make verify-k6            # Lean 4.35.0; separate k6 theorem
 make verify-formal        # Original supporting Lean lemmas
 ```
 
-The default `make verify` gate does not rebuild the Lean proofs. Research notes list their own focused replay commands and dependencies. Exact source commits and replay receipts are recorded in the [review ledger](docs/REVIEW_LEDGER.md).
+The default `make verify` gate does not rebuild the Lean proofs. Research notes list their own focused replay commands and dependencies.
 
 ## Repository map
 
