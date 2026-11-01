@@ -26,6 +26,8 @@ verify-moving-boundary:
 	python3 tools/check_moving_boundary_core_floor.py --output /tmp/moving-boundary-core-floor.json
 	python3 tools/check_moving_interior_crossings.py --output /tmp/moving-interior-controls.json
 	python3 tools/check_moving_physical_frames.py --output /tmp/moving-physical-frame-controls.json
+	python3 tools/check_moving_five_core_floor.py --output /tmp/moving-five-core-floor.json
+	python3 tools/check_moving_frame_prefix.py --output /tmp/moving-frame-height1-prefix16384-floor.json
 
 .PHONY: verify-pole-smith verify-joint-top-boundary
 verify-pole-smith:
@@ -349,6 +351,18 @@ verify-braid-fusion-seam:
 .PHONY: verify-braid-graded-seam
 verify-braid-graded-seam:
 	python3 tools/check_quantum_braid_graded_seam.py
+
+.PHONY: verify-braid-spectral-fusion
+verify-braid-spectral-fusion:
+	python3 tools/check_quantum_braid_spectral_fusion.py
+
+.PHONY: verify-braid-fusion-occupancy
+verify-braid-fusion-occupancy:
+	python3 tools/check_quantum_braid_fusion_occupancy.py
+
+.PHONY: verify-braid-leading-automaton
+verify-braid-leading-automaton:
+	python3 tools/check_nilpotent_seam_top_rank.py
 
 .PHONY: verify-downset-crossings verify-regular-code-crossings
 verify-downset-crossings:
@@ -2459,3 +2473,136 @@ verify-tensor-orthogonal: verify-tensor-f16
 verify-tensor-f16:
 	python3 tools/check_tensor_hot_compounds_f16.py --output /tmp/integer-factoring-tensor-f16-check.json
 	python3 tools/check_tensor_coupled_quadratic_core_floor.py --recompute-profiles --output /tmp/integer-factoring-tensor-field-floor-check.json
+
+.PHONY: verify-oriented-refinement verify-oriented-cofactor-prefixes verify-signed-residual-graph
+
+verify-oriented-refinement: verify-oriented-coprime-basis verify-oriented-cofactor-prefixes verify-signed-residual-graph
+
+verify-oriented-cofactor-prefixes:
+	python3 tools/check_oriented_cofactor_prefixes.py
+
+verify-signed-residual-graph:
+	python3 tools/check_signed_residual_graph.py --prefix evidence/oriented-cofactor-prefixes.json
+
+.PHONY: verify-circuit-box-inverse-windows
+
+verify-circuit-box-normalization: verify-circuit-box-inverse-windows
+
+verify-circuit-box-inverse-windows:
+	python3 tools/check_circuit_box_inverse_windows.py --output /tmp/integer-factoring-inverse-window-check.json
+
+.PHONY: verify-incremental-oriented-basis
+
+verify-oriented-refinement: verify-incremental-oriented-basis
+
+verify-incremental-oriented-basis:
+	python3 tools/check_incremental_oriented_coprime_basis.py
+
+.PHONY: verify-tensor-f16-fast
+
+verify-tensor-f16: verify-tensor-f16-fast
+
+verify-tensor-f16-fast:
+	python3 tools/check_tensor_hot_compounds_f16_fast.py --output /tmp/integer-factoring-tensor-f16-fast-check.json
+
+.PHONY: verify-sparse-oriented-power
+
+verify-oriented-refinement: verify-sparse-oriented-power
+
+verify-sparse-oriented-power:
+	python3 tools/check_sparse_oriented_power_search.py --replay evidence/sparse-oriented-power-64.json.xz
+	python3 tools/check_sparse_oriented_power_search.py --replay evidence/sparse-oriented-power-80.json.xz
+
+.PHONY: verify-binary-extension-smith
+verify-binary-extension-smith:
+	python3 tools/check_binary_extension_smith.py
+
+.PHONY: verify-circuit-box-kloosterman-blocks
+
+verify-circuit-box-normalization: verify-circuit-box-kloosterman-blocks
+
+verify-circuit-box-kloosterman-blocks:
+	python3 tools/check_circuit_box_kloosterman_blocks.py --output /tmp/integer-factoring-kloosterman-blocks.json
+
+.PHONY: verify-tensor-cubic-graph
+
+verify-tensor-f16: verify-tensor-cubic-graph
+
+verify-tensor-cubic-graph:
+	python3 tools/check_tensor_hot_compounds_f16_mixed.py --output /tmp/integer-factoring-tensor-cubic-graph.json
+
+.PHONY: verify-sparse-unit-presentation
+
+verify-oriented-refinement: verify-sparse-unit-presentation
+
+verify-sparse-unit-presentation:
+	python3 tools/check_sparse_unit_presentation.py
+
+.PHONY: verify-quotient-update-oriented-basis
+
+verify-oriented-refinement: verify-quotient-update-oriented-basis
+
+verify-quotient-update-oriented-basis:
+	python3 tools/check_quotient_update_oriented_basis.py --repetitions 1
+
+.PHONY: verify-circuit-box-ratio-lookahead
+
+verify-circuit-box-normalization: verify-circuit-box-ratio-lookahead
+
+verify-circuit-box-ratio-lookahead:
+	python3 tools/check_circuit_box_ratio_lookahead.py --output /tmp/integer-factoring-ratio-lookahead.json
+
+.PHONY: verify-unit-presentation-trace
+
+verify-oriented-refinement: verify-unit-presentation-trace
+
+verify-unit-presentation-trace:
+	python3 tools/check_unit_presentation_trace.py
+
+.PHONY: verify-optimized-oriented-power
+
+verify-oriented-refinement: verify-optimized-oriented-power
+
+verify-optimized-oriented-power:
+	python3 tools/check_optimized_oriented_power_search.py --replay evidence/optimized-oriented-power-search.json
+	python3 tools/check_optimized_oriented_fresh_run.py --replay evidence/optimized-oriented-power-96.json.xz
+
+.PHONY: verify-tensor-literal-hot
+
+verify-tensor-f16: verify-tensor-literal-hot
+
+verify-tensor-literal-hot:
+	python3 tools/check_tensor_literal_hot_pfaffians_f16.py --output /tmp/integer-factoring-tensor-literal-hot.json
+
+.PHONY: verify-circuit-box-ratio-lattice
+
+verify-circuit-box-normalization: verify-circuit-box-ratio-lattice
+
+verify-circuit-box-ratio-lattice:
+	python3 tools/check_circuit_box_ratio_lattice.py --output /tmp/integer-factoring-ratio-lattice.json
+
+.PHONY: verify-primitive-integer-row-basis
+
+verify-oriented-refinement: verify-primitive-integer-row-basis
+
+verify-primitive-integer-row-basis:
+	python3 tools/check_primitive_integer_row_basis.py --repetitions 1
+
+.PHONY: verify-batched-coprime-bucket-basis
+verify-batched-coprime-bucket-basis:
+	python3 tools/check_batched_coprime_bucket_basis.py --output /tmp/batched-coprime-bucket-basis-verify.json
+
+verify-oriented-coprime-basis: verify-batched-coprime-bucket-basis
+
+.PHONY: verify-compact-oriented-power-search
+verify-compact-oriented-power-search:
+	python3 tools/check_compact_oriented_power_search.py --replay evidence/compact-oriented-power-search.json
+
+verify-oriented-coprime-basis: verify-compact-oriented-power-search
+
+.PHONY: verify-tensor-literal-height15-gate verify-tensor-literal-rank-one-cells
+verify-tensor-literal-height15-gate:
+	python3 tools/check_tensor_literal_height15_pressure_gate.py --recompute-profiles --output /tmp/tensor-literal-height15-gate-verify.json
+
+verify-tensor-literal-rank-one-cells:
+	python3 tools/check_tensor_literal_rank_one_cells.py --output /tmp/tensor-literal-rank-one-cells-verify.json

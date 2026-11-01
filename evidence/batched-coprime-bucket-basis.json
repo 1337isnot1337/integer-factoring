@@ -1,0 +1,354 @@
+{
+  "scope": "Exact supplied-basis acceleration; no bound on relation-search queries.",
+  "mutable_trees": {
+    "prepared_overlap_queries": 1476,
+    "mutable_leaf_transitions": 2239,
+    "all_bucket_node_and_delta_checks": 1476,
+    "bucket_sizes": [
+      2,
+      8,
+      64
+    ],
+    "batch_sizes": [
+      2,
+      7,
+      32
+    ]
+  },
+  "ideals": {
+    "ordered_ideal_batches": 8,
+    "complete_prefix_equalities": 44,
+    "literal_ideal_identities": 1134,
+    "unit_norms_and_repeated_keys_included": true
+  },
+  "fixtures": [
+    {
+      "bits": 80,
+      "input_path": "evidence/sparse-oriented-power-80.json.xz",
+      "input_sha256": "f55879f2bcd0c8077c715fa1675e547e669cf9e8bfb25fe510efc5c310ebe2b7",
+      "keys": 9776,
+      "atoms": 10079,
+      "identical_complete_payload_sha256": "b2ef3e5c2d296400e7ecf72f23c2322ca3567c625abc891b4f47efda719c09a5",
+      "verification": {
+        "literal_ideal_identities": 9776,
+        "pairwise_coprime_atoms": 10079,
+        "sparse_usage_entries": 15045
+      },
+      "methods": {
+        "global_quotient_tree": {
+          "samples": [
+            {
+              "wall_seconds": 2.8540960190002806,
+              "cpu_seconds": 1.273017892
+            },
+            {
+              "wall_seconds": 2.827832306997152,
+              "cpu_seconds": 1.2401778120000007
+            },
+            {
+              "wall_seconds": 2.851536157002556,
+              "cpu_seconds": 1.2734208570000005
+            }
+          ],
+          "medians": {
+            "wall_seconds": 2.851536157002556,
+            "cpu_seconds": 1.273017892
+          },
+          "statistics": {
+            "tree_gcd_calls": 128120,
+            "tree_gcd_operand_bits": 2862245271,
+            "local_gcd_calls": 44606,
+            "local_refinements": 3846,
+            "maximum_local_inputs": 5,
+            "maximum_local_norm_bits": 130,
+            "tree_multiplications": 166691,
+            "tree_multiplication_operand_bits": 2430806372,
+            "tree_leaf_updates": 11587,
+            "tree_capacity_doublings": 14,
+            "tree_capacity": 16384,
+            "tree_product_bits": 271098,
+            "maximum_atoms": 10079,
+            "usage_entries": 15045,
+            "usage_writes": 15799,
+            "maximum_usage_entries": 15045,
+            "tree_exact_divisions": 9216,
+            "tree_division_operand_bits": 222101360,
+            "tree_maximum_divisor_bits": 40,
+            "tree_maximum_update_multiplier_bits": 40
+          }
+        },
+        "local_buckets": {
+          "samples": [
+            {
+              "wall_seconds": 1.7040799840033287,
+              "cpu_seconds": 0.7379698909999999
+            },
+            {
+              "wall_seconds": 1.588612227998965,
+              "cpu_seconds": 0.7111877580000003
+            },
+            {
+              "wall_seconds": 1.676700404001167,
+              "cpu_seconds": 0.7497917860000012
+            }
+          ],
+          "medians": {
+            "wall_seconds": 1.676700404001167,
+            "cpu_seconds": 0.7379698909999999
+          },
+          "statistics": {
+            "tree_gcd_calls": 143748,
+            "tree_gcd_operand_bits": 1382165281,
+            "local_gcd_calls": 44606,
+            "local_refinements": 3846,
+            "maximum_local_inputs": 5,
+            "maximum_local_norm_bits": 130,
+            "tree_multiplications": 97516,
+            "tree_multiplication_operand_bits": 167726209,
+            "tree_leaf_updates": 11587,
+            "tree_capacity_doublings": 5,
+            "tree_capacity": 16384,
+            "tree_product_bits": 271098,
+            "maximum_atoms": 10079,
+            "usage_entries": 15045,
+            "usage_writes": 15799,
+            "maximum_usage_entries": 15045,
+            "bucket_size": 512,
+            "bucket_count": 32,
+            "tree_exact_divisions": 6786,
+            "tree_division_operand_bits": 20616983,
+            "tree_routing_divisions": 48479,
+            "tree_export_multiplications": 19,
+            "tree_export_multiplication_operand_bits": 1249739
+          }
+        },
+        "prepared_buckets": {
+          "samples": [
+            {
+              "wall_seconds": 1.2835442809955566,
+              "cpu_seconds": 0.5713670080000002
+            },
+            {
+              "wall_seconds": 1.280960085998231,
+              "cpu_seconds": 0.5690095420000008
+            },
+            {
+              "wall_seconds": 1.4041193560042302,
+              "cpu_seconds": 0.6211792599999999
+            }
+          ],
+          "medians": {
+            "wall_seconds": 1.2835442809955566,
+            "cpu_seconds": 0.5713670080000002
+          },
+          "statistics": {
+            "tree_gcd_calls": 213084,
+            "tree_gcd_operand_bits": 142149847,
+            "local_gcd_calls": 44606,
+            "local_refinements": 3846,
+            "maximum_local_inputs": 5,
+            "maximum_local_norm_bits": 130,
+            "tree_multiplications": 97516,
+            "tree_multiplication_operand_bits": 167726209,
+            "tree_leaf_updates": 11587,
+            "tree_capacity_doublings": 5,
+            "tree_capacity": 16384,
+            "tree_product_bits": 271098,
+            "maximum_atoms": 10079,
+            "usage_entries": 15045,
+            "usage_writes": 15799,
+            "maximum_usage_entries": 15045,
+            "bucket_size": 512,
+            "bucket_count": 32,
+            "tree_exact_divisions": 6786,
+            "tree_division_operand_bits": 20616983,
+            "tree_routing_divisions": 48479,
+            "tree_export_multiplications": 19,
+            "tree_export_multiplication_operand_bits": 1249739,
+            "prepared_batches": 20,
+            "prepared_candidates": 9776,
+            "prepared_product_multiplications": 9756,
+            "prepared_product_operand_bits": 2934489,
+            "prepared_remainders": 195019,
+            "prepared_remainder_operand_bits": 85838792,
+            "delta_multiplications": 11489,
+            "delta_multiplication_operand_bits": 44074749,
+            "delta_divisions": 3187,
+            "delta_division_operand_bits": 908295,
+            "maximum_prepared_remainders": 9728,
+            "maximum_batch_size": 512,
+            "configured_batch_size": 512
+          }
+        }
+      }
+    },
+    {
+      "bits": 96,
+      "input_path": "evidence/optimized-oriented-power-96.json.xz",
+      "input_sha256": "46ec21d6af643d6c9a9fddd759e854910efc9425ceba8e02c674f9e88b841a9b",
+      "keys": 19705,
+      "atoms": 20402,
+      "identical_complete_payload_sha256": "14c6c1443fd7835cdeaafae753cc0fed77e7202daafc000edebec3303960ae28",
+      "verification": {
+        "literal_ideal_identities": 19705,
+        "pairwise_coprime_atoms": 20402,
+        "sparse_usage_entries": 27584
+      },
+      "methods": {
+        "global_quotient_tree": {
+          "samples": [
+            {
+              "wall_seconds": 10.888208976997703,
+              "cpu_seconds": 4.811190901
+            },
+            {
+              "wall_seconds": 10.989860715999384,
+              "cpu_seconds": 4.890622425
+            },
+            {
+              "wall_seconds": 10.680998092000664,
+              "cpu_seconds": 4.749481641000003
+            }
+          ],
+          "medians": {
+            "wall_seconds": 10.888208976997703,
+            "cpu_seconds": 4.811190901
+          },
+          "statistics": {
+            "tree_gcd_calls": 209182,
+            "tree_gcd_operand_bits": 11819337591,
+            "local_gcd_calls": 64196,
+            "local_refinements": 5957,
+            "maximum_local_inputs": 5,
+            "maximum_local_norm_bits": 169,
+            "tree_multiplications": 357516,
+            "tree_multiplication_operand_bits": 11435461731,
+            "tree_leaf_updates": 23220,
+            "tree_capacity_doublings": 15,
+            "tree_capacity": 32768,
+            "tree_product_bits": 633029,
+            "maximum_atoms": 20402,
+            "usage_entries": 27584,
+            "usage_writes": 28993,
+            "maximum_usage_entries": 27584,
+            "tree_exact_divisions": 18734,
+            "tree_division_operand_bits": 996866266,
+            "tree_maximum_divisor_bits": 48,
+            "tree_maximum_update_multiplier_bits": 49
+          }
+        },
+        "local_buckets": {
+          "samples": [
+            {
+              "wall_seconds": 6.121571839001263,
+              "cpu_seconds": 2.7234088760000006
+            },
+            {
+              "wall_seconds": 6.210761622001883,
+              "cpu_seconds": 2.7699195040000006
+            },
+            {
+              "wall_seconds": 6.225422749994323,
+              "cpu_seconds": 2.757883624999998
+            }
+          ],
+          "medians": {
+            "wall_seconds": 6.210761622001883,
+            "cpu_seconds": 2.757883624999998
+          },
+          "statistics": {
+            "tree_gcd_calls": 461716,
+            "tree_gcd_operand_bits": 6321809473,
+            "local_gcd_calls": 64196,
+            "local_refinements": 5957,
+            "maximum_local_inputs": 5,
+            "maximum_local_norm_bits": 169,
+            "tree_multiplications": 196338,
+            "tree_multiplication_operand_bits": 390763266,
+            "tree_leaf_updates": 23220,
+            "tree_capacity_doublings": 6,
+            "tree_capacity": 32768,
+            "tree_product_bits": 633029,
+            "maximum_atoms": 20402,
+            "usage_entries": 27584,
+            "usage_writes": 28993,
+            "maximum_usage_entries": 27584,
+            "bucket_size": 512,
+            "bucket_count": 64,
+            "tree_exact_divisions": 12681,
+            "tree_division_operand_bits": 45416964,
+            "tree_routing_divisions": 71215,
+            "tree_export_multiplications": 39,
+            "tree_export_multiplication_operand_bits": 3540704
+          }
+        },
+        "prepared_buckets": {
+          "samples": [
+            {
+              "wall_seconds": 3.8779347540039453,
+              "cpu_seconds": 1.7320329979999975
+            },
+            {
+              "wall_seconds": 3.8558732889941894,
+              "cpu_seconds": 1.7159538030000014
+            },
+            {
+              "wall_seconds": 4.2704343299992615,
+              "cpu_seconds": 1.8967743530000014
+            }
+          ],
+          "medians": {
+            "wall_seconds": 3.8779347540039453,
+            "cpu_seconds": 1.7320329979999975
+          },
+          "statistics": {
+            "tree_gcd_calls": 652613,
+            "tree_gcd_operand_bits": 308434845,
+            "local_gcd_calls": 64196,
+            "local_refinements": 5957,
+            "maximum_local_inputs": 5,
+            "maximum_local_norm_bits": 169,
+            "tree_multiplications": 196338,
+            "tree_multiplication_operand_bits": 390763266,
+            "tree_leaf_updates": 23220,
+            "tree_capacity_doublings": 6,
+            "tree_capacity": 32768,
+            "tree_product_bits": 633029,
+            "maximum_atoms": 20402,
+            "usage_entries": 27584,
+            "usage_writes": 28993,
+            "maximum_usage_entries": 27584,
+            "bucket_size": 512,
+            "bucket_count": 64,
+            "tree_exact_divisions": 12681,
+            "tree_division_operand_bits": 45416964,
+            "tree_routing_divisions": 71215,
+            "tree_export_multiplications": 39,
+            "tree_export_multiplication_operand_bits": 3540704,
+            "prepared_batches": 39,
+            "prepared_candidates": 19705,
+            "prepared_product_multiplications": 19666,
+            "prepared_product_operand_bits": 6518547,
+            "prepared_remainders": 797342,
+            "prepared_remainder_operand_bits": 388203658,
+            "delta_multiplications": 23123,
+            "delta_multiplication_operand_bits": 122967587,
+            "delta_divisions": 3638,
+            "delta_division_operand_bits": 1088954,
+            "maximum_prepared_remainders": 19968,
+            "maximum_batch_size": 512,
+            "configured_batch_size": 512
+          }
+        }
+      }
+    }
+  ],
+  "source_sha256": {
+    "tools/coprime_bucket_forest.py": "e9448f84426ef4344eca51c1fc83f08e962ab40cd1aba127dafe5fd808f7efff",
+    "tools/batched_coprime_bucket_basis.py": "38d9ab4c55fddbf1eb418131df227a50dde9db89c8353998a1cc12285c6279e2",
+    "tools/check_batched_coprime_bucket_basis.py": "e19b909dbb997f8156e8e671997b17e836a1428b619004e96d53c07f73c5459f",
+    "tools/incremental_oriented_coprime_basis.py": "e669db7d6d6acae9eca39304d2b4ad6bd1936adba5dab929faca51ec3005a154",
+    "tools/quotient_update_oriented_basis.py": "7a9641624a8fe95f6ff44f4c13d9bbb670f1986f26e06cb0d3e513f4b612c227",
+    "tools/oriented_coprime_basis.py": "dba31b12ce2a93b7de9a79f69e4ffb2a8f0aec8218f3ab6082ad25817117571d"
+  }
+}

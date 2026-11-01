@@ -1,0 +1,1619 @@
+{
+  "status": "pass",
+  "field_multiplication_controls": 256,
+  "ambient_slide_coefficient_entries": 4096,
+  "yang_baxter_coefficient_matrices": 28,
+  "independent_literal_scalar_matrix_entries": 16384,
+  "longer_slide_coefficient_entries": 113544,
+  "models": [
+    {
+      "q": 8,
+      "faithful_TL4_words_application_order": [
+        [],
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          2,
+          1
+        ]
+      ],
+      "faithful_minor_columns": [
+        0,
+        17,
+        18,
+        20,
+        33,
+        34,
+        36,
+        51,
+        53,
+        65,
+        66,
+        68,
+        83,
+        85
+      ],
+      "faithful_minor": [
+        [
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          15,
+          1,
+          0,
+          1,
+          8,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          15
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          15,
+          1,
+          15,
+          1,
+          0,
+          1,
+          8,
+          1,
+          8
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          15,
+          0,
+          15
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          15,
+          1,
+          0,
+          0,
+          15,
+          1,
+          8,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10
+        ],
+        [
+          0,
+          0,
+          15,
+          1,
+          0,
+          1,
+          8,
+          0,
+          0,
+          0,
+          0,
+          0,
+          15,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          15,
+          1,
+          15,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          15,
+          0,
+          15,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          15,
+          1,
+          0,
+          0,
+          15
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          15
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          15
+        ],
+        [
+          0,
+          0,
+          0,
+          15,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          15
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          15,
+          0,
+          0,
+          0,
+          15,
+          1
+        ]
+      ],
+      "faithful_minor_determinant": 10,
+      "quotient_scalar": [
+        12,
+        5,
+        6,
+        15
+      ],
+      "negligible_residual": [
+        13,
+        6,
+        11,
+        0
+      ],
+      "ordinary_channel_ranks": [
+        8,
+        5,
+        3
+      ],
+      "exceptional_ambient_rank_at_z_q": 5,
+      "unshifted_negative_control": true,
+      "raw_double_braid_phase": 10,
+      "raw_self_braid_phase": 12,
+      "longer_transport_controls": [
+        {
+          "free_strands": 3,
+          "vacuum_states": 5,
+          "input_channel_rank": 1,
+          "degree": 9
+        },
+        {
+          "free_strands": 5,
+          "vacuum_states": 13,
+          "input_channel_rank": 3,
+          "degree": 15
+        },
+        {
+          "free_strands": 7,
+          "vacuum_states": 34,
+          "input_channel_rank": 8,
+          "degree": 21
+        }
+      ],
+      "sparse_scalar_controls": [
+        {
+          "free_strands": 5,
+          "raw_support": [
+            0,
+            5,
+            10,
+            15
+          ],
+          "normalized_support": [
+            0,
+            5
+          ]
+        },
+        {
+          "free_strands": 10,
+          "raw_support": [
+            0,
+            10,
+            20,
+            30
+          ],
+          "normalized_support": [
+            0,
+            10
+          ]
+        },
+        {
+          "free_strands": 20,
+          "raw_support": [
+            0,
+            20,
+            40,
+            60
+          ],
+          "normalized_support": [
+            0,
+            20
+          ]
+        },
+        {
+          "free_strands": 40,
+          "raw_support": [
+            0,
+            40,
+            80,
+            120
+          ],
+          "normalized_support": [
+            0,
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "q": 10,
+      "faithful_TL4_words_application_order": [
+        [],
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          2,
+          1
+        ]
+      ],
+      "faithful_minor_columns": [
+        0,
+        17,
+        18,
+        20,
+        33,
+        34,
+        36,
+        51,
+        53,
+        65,
+        66,
+        68,
+        83,
+        85
+      ],
+      "faithful_minor": [
+        [
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          12,
+          1,
+          0,
+          1,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          12
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          12,
+          1,
+          12,
+          1,
+          0,
+          1,
+          10,
+          1,
+          10
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          12,
+          0,
+          12
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          12,
+          1,
+          0,
+          0,
+          12,
+          1,
+          10,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          15
+        ],
+        [
+          0,
+          0,
+          12,
+          1,
+          0,
+          1,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          12,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          12,
+          1,
+          12,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          12,
+          0,
+          12,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          12,
+          1,
+          0,
+          0,
+          12
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          15,
+          0,
+          0,
+          0,
+          0,
+          12
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          15,
+          12
+        ],
+        [
+          0,
+          0,
+          0,
+          12,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          12
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          15,
+          12,
+          0,
+          0,
+          0,
+          12,
+          1
+        ]
+      ],
+      "faithful_minor_determinant": 15,
+      "quotient_scalar": [
+        8,
+        3,
+        7,
+        12
+      ],
+      "negligible_residual": [
+        9,
+        7,
+        14,
+        0
+      ],
+      "ordinary_channel_ranks": [
+        8,
+        5,
+        3
+      ],
+      "exceptional_ambient_rank_at_z_q": 5,
+      "unshifted_negative_control": true,
+      "raw_double_braid_phase": 15,
+      "raw_self_braid_phase": 8,
+      "longer_transport_controls": [
+        {
+          "free_strands": 3,
+          "vacuum_states": 5,
+          "input_channel_rank": 1,
+          "degree": 9
+        },
+        {
+          "free_strands": 5,
+          "vacuum_states": 13,
+          "input_channel_rank": 3,
+          "degree": 15
+        },
+        {
+          "free_strands": 7,
+          "vacuum_states": 34,
+          "input_channel_rank": 8,
+          "degree": 21
+        }
+      ],
+      "sparse_scalar_controls": [
+        {
+          "free_strands": 5,
+          "raw_support": [
+            0,
+            5,
+            10,
+            15
+          ],
+          "normalized_support": [
+            0,
+            5
+          ]
+        },
+        {
+          "free_strands": 10,
+          "raw_support": [
+            0,
+            10,
+            20,
+            30
+          ],
+          "normalized_support": [
+            0,
+            10
+          ]
+        },
+        {
+          "free_strands": 20,
+          "raw_support": [
+            0,
+            20,
+            40,
+            60
+          ],
+          "normalized_support": [
+            0,
+            20
+          ]
+        },
+        {
+          "free_strands": 40,
+          "raw_support": [
+            0,
+            40,
+            80,
+            120
+          ],
+          "normalized_support": [
+            0,
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "q": 12,
+      "faithful_TL4_words_application_order": [
+        [],
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          2,
+          1
+        ]
+      ],
+      "faithful_minor_columns": [
+        0,
+        17,
+        18,
+        20,
+        33,
+        34,
+        36,
+        51,
+        53,
+        65,
+        66,
+        68,
+        83,
+        85
+      ],
+      "faithful_minor": [
+        [
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          10,
+          1,
+          0,
+          1,
+          12,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          1,
+          10,
+          1,
+          0,
+          1,
+          12,
+          1,
+          12
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          10
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          10,
+          1,
+          0,
+          0,
+          10,
+          1,
+          12,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          8
+        ],
+        [
+          0,
+          0,
+          10,
+          1,
+          0,
+          1,
+          12,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          1,
+          10,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          10,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          1,
+          0,
+          0,
+          10
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          8,
+          0,
+          0,
+          0,
+          0,
+          10
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          8,
+          10
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          8,
+          10,
+          0,
+          0,
+          0,
+          10,
+          1
+        ]
+      ],
+      "faithful_minor_determinant": 8,
+      "quotient_scalar": [
+        15,
+        2,
+        7,
+        10
+      ],
+      "negligible_residual": [
+        14,
+        7,
+        9,
+        0
+      ],
+      "ordinary_channel_ranks": [
+        8,
+        5,
+        3
+      ],
+      "exceptional_ambient_rank_at_z_q": 5,
+      "unshifted_negative_control": true,
+      "raw_double_braid_phase": 8,
+      "raw_self_braid_phase": 15,
+      "longer_transport_controls": [
+        {
+          "free_strands": 3,
+          "vacuum_states": 5,
+          "input_channel_rank": 1,
+          "degree": 9
+        },
+        {
+          "free_strands": 5,
+          "vacuum_states": 13,
+          "input_channel_rank": 3,
+          "degree": 15
+        },
+        {
+          "free_strands": 7,
+          "vacuum_states": 34,
+          "input_channel_rank": 8,
+          "degree": 21
+        }
+      ],
+      "sparse_scalar_controls": [
+        {
+          "free_strands": 5,
+          "raw_support": [
+            0,
+            5,
+            10,
+            15
+          ],
+          "normalized_support": [
+            0,
+            5
+          ]
+        },
+        {
+          "free_strands": 10,
+          "raw_support": [
+            0,
+            10,
+            20,
+            30
+          ],
+          "normalized_support": [
+            0,
+            10
+          ]
+        },
+        {
+          "free_strands": 20,
+          "raw_support": [
+            0,
+            20,
+            40,
+            60
+          ],
+          "normalized_support": [
+            0,
+            20
+          ]
+        },
+        {
+          "free_strands": 40,
+          "raw_support": [
+            0,
+            40,
+            80,
+            120
+          ],
+          "normalized_support": [
+            0,
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "q": 15,
+      "faithful_TL4_words_application_order": [
+        [],
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          2,
+          1
+        ]
+      ],
+      "faithful_minor_columns": [
+        0,
+        17,
+        18,
+        20,
+        33,
+        34,
+        36,
+        51,
+        53,
+        65,
+        66,
+        68,
+        83,
+        85
+      ],
+      "faithful_minor": [
+        [
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          8,
+          1,
+          0,
+          1,
+          15,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          8
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          8,
+          1,
+          8,
+          1,
+          0,
+          1,
+          15,
+          1,
+          15
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          8,
+          0,
+          8
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          8,
+          1,
+          0,
+          0,
+          8,
+          1,
+          15,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          12
+        ],
+        [
+          0,
+          0,
+          8,
+          1,
+          0,
+          1,
+          15,
+          0,
+          0,
+          0,
+          0,
+          0,
+          8,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          8,
+          1,
+          8,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          8,
+          0,
+          8,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          8,
+          1,
+          0,
+          0,
+          8
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          12,
+          0,
+          0,
+          0,
+          0,
+          8
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          12,
+          8
+        ],
+        [
+          0,
+          0,
+          0,
+          8,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          8
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          12,
+          8,
+          0,
+          0,
+          0,
+          8,
+          1
+        ]
+      ],
+      "faithful_minor_determinant": 12,
+      "quotient_scalar": [
+        10,
+        4,
+        6,
+        8
+      ],
+      "negligible_residual": [
+        11,
+        6,
+        13,
+        0
+      ],
+      "ordinary_channel_ranks": [
+        8,
+        5,
+        3
+      ],
+      "exceptional_ambient_rank_at_z_q": 5,
+      "unshifted_negative_control": true,
+      "raw_double_braid_phase": 12,
+      "raw_self_braid_phase": 10,
+      "longer_transport_controls": [
+        {
+          "free_strands": 3,
+          "vacuum_states": 5,
+          "input_channel_rank": 1,
+          "degree": 9
+        },
+        {
+          "free_strands": 5,
+          "vacuum_states": 13,
+          "input_channel_rank": 3,
+          "degree": 15
+        },
+        {
+          "free_strands": 7,
+          "vacuum_states": 34,
+          "input_channel_rank": 8,
+          "degree": 21
+        }
+      ],
+      "sparse_scalar_controls": [
+        {
+          "free_strands": 5,
+          "raw_support": [
+            0,
+            5,
+            10,
+            15
+          ],
+          "normalized_support": [
+            0,
+            5
+          ]
+        },
+        {
+          "free_strands": 10,
+          "raw_support": [
+            0,
+            10,
+            20,
+            30
+          ],
+          "normalized_support": [
+            0,
+            10
+          ]
+        },
+        {
+          "free_strands": 20,
+          "raw_support": [
+            0,
+            20,
+            40,
+            60
+          ],
+          "normalized_support": [
+            0,
+            20
+          ]
+        },
+        {
+          "free_strands": 40,
+          "raw_support": [
+            0,
+            40,
+            80,
+            120
+          ],
+          "normalized_support": [
+            0,
+            40
+          ]
+        }
+      ]
+    }
+  ],
+  "scope": "Exact local TL polynomial fusion, explicit nonzero negligible residual, and uniform transport by composition; no complete crossing rank-sum or stronger factoring bound.",
+  "source_sha256": {
+    "research/fused-spectral-transport.md": "b41ab3226065601ca11709be36667c10dcd644d10d7e35931102b55e1d3d0d47",
+    "tools/quantum_braid_spectral_fusion.py": "fbfb582940bbffce5ad943ad5645ff0344a95f7e1b19d81b19c8f57c3b513eb6",
+    "tools/check_quantum_braid_spectral_fusion.py": "25b5bb0bddebbab87715e59d9f9f88219da13427369a69c989f42b8a45e55081",
+    "tools/quantum_braid_path.py": "4a6ce2cbad920cbe6dde6b6abf4642675a1d3d13955c8be67e6d0b6c97eae946",
+    "tools/check_fixed_field_descent.py": "831c1fe850b9d21b8d0050e310adaed2586251950542bb7d274e2ffd334ea8ac",
+    "tools/paired_path_crossing.py": "309fb3f10a230475d5fae68625fcee5f5cfb50fc52491cc63f0765a7627c5c4b",
+    "tools/quantum_block_braid.py": "116d689f620a5d8fb784387d3eccc311497f56fbfc05a400ac8188f2c13cfc94",
+    "tools/bounded_spin_crossing.py": "cefc38c88cdf76650f4966fa9e49d0edbc9ce4c2eec3848dd2716f35ee3819bd",
+    "tools/bounded_spin_support.py": "d3771564da3fb1d88ebdc2444f4e62db6754b2f72ad11101ed72a078a2d4a678",
+    "tools/check_fourier_multiplication_gates.py": "b094e9101f867d624aafa7bd851cb00b1ea411d1dc69cb700e742e609f94efc9"
+  }
+}
