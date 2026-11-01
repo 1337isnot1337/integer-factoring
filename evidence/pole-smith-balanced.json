@@ -1,0 +1,225 @@
+{
+  "claim": "Balanced pole Smith orders are the conjugate overlap-count partition",
+  "dyadic_diagonal_comparisons": 200,
+  "full_profile_comparisons": 1000,
+  "huge_displacement_control": {
+    "base_precision": 6,
+    "dimension": 4,
+    "factor_count": 1,
+    "histogram": [
+      {
+        "multiplicity": 1,
+        "order": 0
+      },
+      {
+        "multiplicity": 1,
+        "order": 99999999999999999999999999999999999999999999999999999999999999999999999999999995
+      },
+      {
+        "multiplicity": 2,
+        "order": 99999999999999999999999999999999999999999999999999999999999999999999999999999997
+      }
+    ],
+    "k": 100000000000000000000000000000000000000000000000000000000000000000000000000000000,
+    "overlap_counts": [
+      4,
+      4,
+      4,
+      2,
+      2,
+      1
+    ],
+    "postorder_visits": 14,
+    "tree_vertices": 14
+  },
+  "independent_dense_Qw_comparisons": 200,
+  "large_control": {
+    "base_precision": 118,
+    "dimension": 65536,
+    "factor_count": 1,
+    "histogram": [
+      {
+        "multiplicity": 1,
+        "order": 0
+      },
+      {
+        "multiplicity": 14,
+        "order": 89
+      },
+      {
+        "multiplicity": 2,
+        "order": 90
+      },
+      {
+        "multiplicity": 32,
+        "order": 91
+      },
+      {
+        "multiplicity": 104,
+        "order": 92
+      },
+      {
+        "multiplicity": 138,
+        "order": 93
+      },
+      {
+        "multiplicity": 244,
+        "order": 94
+      },
+      {
+        "multiplicity": 464,
+        "order": 95
+      },
+      {
+        "multiplicity": 1046,
+        "order": 96
+      },
+      {
+        "multiplicity": 2064,
+        "order": 97
+      },
+      {
+        "multiplicity": 4220,
+        "order": 98
+      },
+      {
+        "multiplicity": 8054,
+        "order": 99
+      },
+      {
+        "multiplicity": 16385,
+        "order": 100
+      },
+      {
+        "multiplicity": 32768,
+        "order": 101
+      }
+    ],
+    "k": 118,
+    "overlap_counts": [
+      65536,
+      65536,
+      65536,
+      65536,
+      65536,
+      65536,
+      65536,
+      65536,
+      65536,
+      65536,
+      65536,
+      65536,
+      65536,
+      65536,
+      65536,
+      65536,
+      65536,
+      32768,
+      16383,
+      8329,
+      4109,
+      2045,
+      999,
+      535,
+      291,
+      153,
+      49,
+      17,
+      15,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "postorder_visits": 262142,
+    "profile_sha256": "5119a2e4c7efcd01771df1906c0608e5a40d88465147b05081747ee83d4a6b5f",
+    "tree_vertices": 262142
+  },
+  "scope": "One pass over explicit node-tree; implicit overlap counts remain unresolved.",
+  "scope_failure_rejected": true
+}

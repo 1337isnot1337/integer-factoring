@@ -64,6 +64,19 @@ The [full Cauchy Smith-profile theorem](research/pole-smith-stabilization.md)
 removes any matrix-size-dependent stabilization precision and gives a direct
 rectangular maximal-minor slope. It does not identify the unknown factor pivots
 or supply a compressed global evaluator. Run `make verify-pole-smith`.
+
+<!-- pole-implicit-checkpoint:start -->
+The pole-Cauchy route now has [linear explicit Smith-profile computation](research/pole-smith-residue-flow.md),
+a [balanced overlap histogram](research/pole-smith-overlap-spectrum.md), and
+[dimension-independent inverse conditioning](research/pole-cauchy-conditioning.md).
+Individual inverse entries and [complete low-degree polynomial bilinear moments](research/pole-cauchy-polynomial-moments.md)
+are computable from binary-encoded progressions in polynomial bit time.
+[Precision-bounded Newton arithmetic](research/modular-interval-jet-arithmetic.md)
+keeps the interval-jet coefficient sizes controlled. These are exact ordinary
+results with independent finite controls; the factor-count Hadamard-square trace
+and implicit reciprocal-overlap counts remain open. Run `make verify-pole-arithmetic`.
+<!-- pole-implicit-checkpoint:end -->
+
 The [research index](research/INDEX.md) links proofs, exact evidence, and replay commands.
 
 The [joint raw-boundary theorem](research/joint-top-boundary-rank.md) extends

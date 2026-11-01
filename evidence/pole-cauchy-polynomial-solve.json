@@ -1,0 +1,93 @@
+{
+  "claim": "Polynomial-cost entries of inverse pole Cauchy matrices applied to polynomial vectors",
+  "exact_constant_vector_entries": 518,
+  "exact_polynomial_bilinear_forms": 600,
+  "exact_polynomial_vector_entries": 2072,
+  "implicit_control": {
+    "absolute_precision_bilinear_form": {
+      "absolute_precision": 12,
+      "column_degree": 8,
+      "precision": 627,
+      "residue": [
+        517876937149998854954670955031678759362086790465431581162872394301601777253403856553636182356499580887326082724612063182878515901930129885504661911100969870803472263542826487353145153119392,
+        51223345765129816182788273460332243139324913975403149695226370031832812788137962900949921166287252332925268952631777362803134068503162526617372933916476356084437659637016688257621073683616
+      ],
+      "row_degree": 8,
+      "scale_exponent": -615
+    },
+    "bilinear_form": {
+      "column_degree": 8,
+      "precision": 12,
+      "residue": [
+        1184,
+        1184
+      ],
+      "row_degree": 8,
+      "scale_exponent": -615
+    },
+    "coefficients": [
+      3,
+      -2,
+      0,
+      5,
+      1,
+      0,
+      -1,
+      0,
+      2
+    ],
+    "domain_size": 1606938044258990275541962092341162602522202993782792835301389,
+    "input_bits": 402,
+    "k": 615,
+    "left": [
+      [
+        1,
+        1532495540865888858358347027150309183618739122183602183
+      ],
+      [
+        5164499756173817179311838344006023748659411585658447025661318713084360235115414166976007400614576281239043822189862191119,
+        1606936511763449409653103733994135452213019375043670651699206
+      ]
+    ],
+    "queries": [
+      {
+        "column": 3,
+        "polynomial_degree": 8,
+        "precision": 12,
+        "residue": [
+          768,
+          768
+        ],
+        "scale_exponent": -217
+      },
+      {
+        "column": 5,
+        "polynomial_degree": 8,
+        "precision": 12,
+        "residue": [
+          3642,
+          3642
+        ],
+        "scale_exponent": -212
+      },
+      {
+        "column": 2854495385411919762116571938898990272765493251,
+        "polynomial_degree": 8,
+        "precision": 12,
+        "residue": [
+          3328,
+          3328
+        ],
+        "scale_exponent": -417
+      }
+    ],
+    "right": [
+      [
+        3,
+        1606938044258990275541962092341162602522202993782792835301389
+      ]
+    ]
+  },
+  "matrix_controls": 150,
+  "scope": "Polynomial-weight inverse moments sum both axes; the Hadamard-square trace and factor count remain open."
+}

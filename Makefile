@@ -1549,3 +1549,11 @@ verify-exterior:
 .PHONY: verify-entangler-density
 verify-entangler-density:
 	python3 tools/check_density16_certificate.py
+
+.PHONY: verify-pole-arithmetic
+verify-pole-arithmetic:
+	python3 tools/check_pole_smith_flow.py
+	python3 tools/check_pole_smith_balanced.py
+	python3 tools/check_pole_cauchy_conditioning.py
+	python3 tools/check_pole_cauchy_polynomial_solve.py
+	python3 tools/check_modular_interval_jets.py
