@@ -1,0 +1,1674 @@
+{
+  "completed": true,
+  "ordinary_characteristic_two_polynomials": true,
+  "strata": [
+    {
+      "stratum": "origin",
+      "orders": [
+        -8,
+        -7,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        3,
+        3,
+        4,
+        4,
+        4,
+        5,
+        5,
+        6,
+        7,
+        7,
+        8,
+        12
+      ],
+      "prefix_minors": [
+        {
+          "row": 0,
+          "column": 0,
+          "valuation": 0,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            0,
+            0
+          ],
+          "terms": 1,
+          "polynomial_sha256": "d0bca111f8628137adc4c16f123496dcdd1d590d06cb5d9acd68b39fe656fb97"
+        },
+        {
+          "row": 3,
+          "column": 15,
+          "valuation": 1,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            0,
+            0
+          ],
+          "terms": 1,
+          "polynomial_sha256": "080a9ed428559ef602668b4c00f114f1a11c3f6b02a435f0bdc154578e4d7f22"
+        },
+        {
+          "row": 2,
+          "column": 10,
+          "valuation": 4,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            0,
+            0
+          ],
+          "terms": 1,
+          "polynomial_sha256": "46b1884167c4edd308bcf0c04163dd02d05c9742b35e86b57b5f7ed1b82f3850"
+        },
+        {
+          "row": 4,
+          "column": 20,
+          "valuation": 8,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            0,
+            0
+          ],
+          "terms": 1,
+          "polynomial_sha256": "a8f2ecf6c811b67c050190173c8b89ce2c99b7993d29235ff3bf656b6a2c505e"
+        },
+        {
+          "row": 1,
+          "column": 5,
+          "valuation": 13,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            0,
+            0
+          ],
+          "terms": 1,
+          "polynomial_sha256": "525ec3b5ad9afc0f09a5f7e0eb865e97f5b4b614a85cf93f3ae644f8e5f874f0"
+        },
+        {
+          "row": 18,
+          "column": 18,
+          "valuation": 19,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            0,
+            0
+          ],
+          "terms": 1,
+          "polynomial_sha256": "691f362eb14915823efa2d8ac4afde3c22b30cedf95389e4d6c70ae8db9636a3"
+        },
+        {
+          "row": 15,
+          "column": 3,
+          "valuation": 26,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            0,
+            0
+          ],
+          "terms": 1,
+          "polynomial_sha256": "9cab0519f56f13acec86572516e8ebe7b99aa40011ec3171c9c8af90c08cae7a"
+        },
+        {
+          "row": 13,
+          "column": 17,
+          "valuation": 34,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            0,
+            0
+          ],
+          "terms": 1,
+          "polynomial_sha256": "cf898e079ee71e303468636c3d556a4b0748b4d896c226e31cbdc1f1c20932e5"
+        },
+        {
+          "row": 16,
+          "column": 8,
+          "valuation": 42,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            0,
+            0
+          ],
+          "terms": 1,
+          "polynomial_sha256": "b86b1ea11b28136fe5224b9d1e3017b7efb68d4fae0b90c4940e0c0f89b3907a"
+        },
+        {
+          "row": 10,
+          "column": 2,
+          "valuation": 51,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            0,
+            0
+          ],
+          "terms": 1,
+          "polynomial_sha256": "4982ba8cd50f8f24b3ef7453b753d3cf8e1b05ab79794e14168d8010c31fc3d7"
+        },
+        {
+          "row": 19,
+          "column": 23,
+          "valuation": 60,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            0,
+            0
+          ],
+          "terms": 1,
+          "polynomial_sha256": "b3fdec1080bd5304b17453ce58e9cf4d2e259632d07e23a213a353f15294d602"
+        },
+        {
+          "row": 11,
+          "column": 7,
+          "valuation": 70,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            0,
+            0
+          ],
+          "terms": 1,
+          "polynomial_sha256": "9a3616dcd8bba762f4b0414e0e4a3e7f5c71fbc56d43b6f2701d55d05b100d20"
+        },
+        {
+          "row": 7,
+          "column": 13,
+          "valuation": 80,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            0,
+            0
+          ],
+          "terms": 2,
+          "polynomial_sha256": "d6a71515c818e973f02377f20803612883e79151350dd3f933332ff1d7f1c9e3"
+        },
+        {
+          "row": 5,
+          "column": 1,
+          "valuation": 91,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            0,
+            0
+          ],
+          "terms": 2,
+          "polynomial_sha256": "b087e88419a3ef8fd9cf2f9e0cc8be799356a230f3f00b347a9226345b274d97"
+        },
+        {
+          "row": 14,
+          "column": 22,
+          "valuation": 102,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            0,
+            0
+          ],
+          "terms": 2,
+          "polynomial_sha256": "3bf61426c56d4c6295f49f073de3c0c4dab6109b1411619e73d9f2d15d7867a8"
+        },
+        {
+          "row": 20,
+          "column": 4,
+          "valuation": 114,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            0,
+            0
+          ],
+          "terms": 2,
+          "polynomial_sha256": "b9edbd8ee1abd0b204597d3d8beda50723899b4480d10142e1bf2689f4e82de2"
+        },
+        {
+          "row": 12,
+          "column": 12,
+          "valuation": 126,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            0,
+            0
+          ],
+          "terms": 2,
+          "polynomial_sha256": "38994b0d91f721eaa8f134723bea4c73cafcddbd0c159ac24aa82051f58a514b"
+        },
+        {
+          "row": 8,
+          "column": 16,
+          "valuation": 138,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            0,
+            0
+          ],
+          "terms": 4,
+          "polynomial_sha256": "968ae54233ddbe295f8d78ea1c62989f3f2db4e3c3cfb6fde0c18e91694951bb"
+        },
+        {
+          "row": 9,
+          "column": 21,
+          "valuation": 151,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            0,
+            0
+          ],
+          "terms": 4,
+          "polynomial_sha256": "c6501716c2eb7f17c85ef9568505c8b88452403df608c4188d496cdc367179b2"
+        },
+        {
+          "row": 23,
+          "column": 19,
+          "valuation": 164,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            0,
+            0
+          ],
+          "terms": 4,
+          "polynomial_sha256": "714db5a4e9e6ebbe8050ba09378f1259476d7a753fe78388af7ddfe529ee3e8d"
+        },
+        {
+          "row": 17,
+          "column": 11,
+          "valuation": 178,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            0,
+            0
+          ],
+          "terms": 3,
+          "polynomial_sha256": "47995f6a38385f940a42d58f0dbd30c7a9082e29b0bee3de61558e0d42fffdd8"
+        },
+        {
+          "row": 22,
+          "column": 14,
+          "valuation": 193,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            0,
+            0
+          ],
+          "terms": 3,
+          "polynomial_sha256": "c574717e29b825e331a7caa597f07a859f10cf2eb55a953f5b370231f0fa21e5"
+        },
+        {
+          "row": 21,
+          "column": 9,
+          "valuation": 208,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            0,
+            0
+          ],
+          "terms": 7,
+          "polynomial_sha256": "b9b5981e02facdd98304bebca7e60ead6ff60137ed915fc67067be89750f1000"
+        },
+        {
+          "row": 24,
+          "column": 24,
+          "valuation": 224,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            0,
+            0
+          ],
+          "terms": 7,
+          "polynomial_sha256": "18ed1f01f0466b6da02051a3b4c9d2e0accffd277858db3682ce0f0440b83067"
+        },
+        {
+          "row": 6,
+          "column": 6,
+          "valuation": 244,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            0,
+            0
+          ],
+          "terms": 7,
+          "polynomial_sha256": "ed3b1cf8668a2b2b158e8a0d9eb3e829dba65c058943ae0d4303d8f3a7aaffc9"
+        }
+      ]
+    },
+    {
+      "stratum": "a0",
+      "orders": [
+        -8,
+        -7,
+        -7,
+        -7,
+        -7,
+        -7,
+        -7,
+        -7,
+        -7,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        0,
+        0,
+        1,
+        2,
+        2,
+        4,
+        4,
+        4,
+        6,
+        8,
+        12
+      ],
+      "prefix_minors": [
+        {
+          "row": 0,
+          "column": 0,
+          "valuation": 0,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            0,
+            0
+          ],
+          "terms": 1,
+          "polynomial_sha256": "d0bca111f8628137adc4c16f123496dcdd1d590d06cb5d9acd68b39fe656fb97"
+        },
+        {
+          "row": 3,
+          "column": 15,
+          "valuation": 1,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            0,
+            0
+          ],
+          "terms": 1,
+          "polynomial_sha256": "080a9ed428559ef602668b4c00f114f1a11c3f6b02a435f0bdc154578e4d7f22"
+        },
+        {
+          "row": 1,
+          "column": 23,
+          "valuation": 2,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            1,
+            0
+          ],
+          "terms": 2,
+          "polynomial_sha256": "14bcce07787b476b8aa3494bd88d945cfc662ff116628e1d0553ab55fb6f51f6"
+        },
+        {
+          "row": 19,
+          "column": 5,
+          "valuation": 3,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            2,
+            0
+          ],
+          "terms": 5,
+          "polynomial_sha256": "421f27171f5b9a41751b95f0d0ec29ce0a606936d2c074844625e9e7813fe85e"
+        },
+        {
+          "row": 9,
+          "column": 21,
+          "valuation": 4,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            4,
+            0
+          ],
+          "terms": 9,
+          "polynomial_sha256": "2d0a627f6f50720a89d542ae29ac1b3c8404d63862e9fe3598ce27cc2bc5e42d"
+        },
+        {
+          "row": 15,
+          "column": 3,
+          "valuation": 5,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            4,
+            0
+          ],
+          "terms": 9,
+          "polynomial_sha256": "ca810b9d279c7b7fb36b07bcb66ada22dc0915b45ede8adbbc8f477d99c25d70"
+        },
+        {
+          "row": 21,
+          "column": 19,
+          "valuation": 6,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            5,
+            0
+          ],
+          "terms": 16,
+          "polynomial_sha256": "2a2db66cd8d6dcbed48e0d03101b808cbb7b0709b3a70b4fbdfae32a3bd0a05f"
+        },
+        {
+          "row": 23,
+          "column": 9,
+          "valuation": 7,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            6,
+            0
+          ],
+          "terms": 17,
+          "polynomial_sha256": "15cfa3984a6a01b12b67ccf4e118b37035616a04ff0469900fd1f52f5ef10d40"
+        },
+        {
+          "row": 5,
+          "column": 1,
+          "valuation": 8,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            8,
+            0
+          ],
+          "terms": 9,
+          "polynomial_sha256": "631bf6d8ad863638d08129cb8d38f167315fd100b9a637a89c858956a54ceed1"
+        },
+        {
+          "row": 2,
+          "column": 10,
+          "valuation": 11,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            8,
+            0
+          ],
+          "terms": 15,
+          "polynomial_sha256": "fe6220f25a0a9518f163836d58d3001674fdbbfdd733b0b6ef4535f54f2a5b52"
+        },
+        {
+          "row": 4,
+          "column": 20,
+          "valuation": 15,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            8,
+            0
+          ],
+          "terms": 15,
+          "polynomial_sha256": "c2793c6ac81cc0be9b9ab510278b59721e0038bba5c97fedf85d08f3b97fcb07"
+        },
+        {
+          "row": 10,
+          "column": 2,
+          "valuation": 20,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            8,
+            0
+          ],
+          "terms": 11,
+          "polynomial_sha256": "cd8478f868f454f047f41f9d8dbfcfca502757cbfbaffb76a8952b795ff43e2a"
+        },
+        {
+          "row": 18,
+          "column": 18,
+          "valuation": 26,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            8,
+            0
+          ],
+          "terms": 11,
+          "polynomial_sha256": "7072955d0d7d109b09ef0e90bb25b274acd4aa1caf1f2bb6d229022e20d345e1"
+        },
+        {
+          "row": 14,
+          "column": 22,
+          "valuation": 33,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            8,
+            0
+          ],
+          "terms": 27,
+          "polynomial_sha256": "b7293dda7a2c59e39a65b93000fdeb75d211bd5a997fcfae9702c09b1c3ccf5f"
+        },
+        {
+          "row": 7,
+          "column": 7,
+          "valuation": 41,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            8,
+            0
+          ],
+          "terms": 24,
+          "polynomial_sha256": "809e959d195d1f5a29442cfc99e34510fb153a088c0269e190ce65f27f42da02"
+        },
+        {
+          "row": 13,
+          "column": 17,
+          "valuation": 49,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            8,
+            0
+          ],
+          "terms": 24,
+          "polynomial_sha256": "643b4bd31bcefd98ce0ce01eae08d66518ce297f4f1d7313b852d59e97cbc18e"
+        },
+        {
+          "row": 22,
+          "column": 14,
+          "valuation": 58,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            8,
+            0
+          ],
+          "terms": 26,
+          "polynomial_sha256": "23b692087e48040b965d800d6d9189f8e03c0f6283dee03862892dbd101dae23"
+        },
+        {
+          "row": 8,
+          "column": 8,
+          "valuation": 68,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            8,
+            0
+          ],
+          "terms": 18,
+          "polynomial_sha256": "3e2b2fc9911acb9ba91b95c31d1445512e3f19de291e2dfb01f40220264164cf"
+        },
+        {
+          "row": 11,
+          "column": 12,
+          "valuation": 78,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            8,
+            0
+          ],
+          "terms": 18,
+          "polynomial_sha256": "c91371338fa5e603023978fbd76f3e6b0bfc22233d47a3aa7d657337105c8965"
+        },
+        {
+          "row": 6,
+          "column": 13,
+          "valuation": 90,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            8,
+            0
+          ],
+          "terms": 18,
+          "polynomial_sha256": "13679f14e99b1b962ded63cbfd26e8c1bb6324bf06f851465ec873663d57fd4d"
+        },
+        {
+          "row": 17,
+          "column": 11,
+          "valuation": 102,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            8,
+            0
+          ],
+          "terms": 18,
+          "polynomial_sha256": "a4ce2288c7c9abb9e868820dee9e7677e0fd5847eee9824d60cc147f952c7c34"
+        },
+        {
+          "row": 16,
+          "column": 16,
+          "valuation": 114,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            8,
+            0
+          ],
+          "terms": 24,
+          "polynomial_sha256": "ab9f6ae0bad51235b2652c306eae2860c84a804da3218176f494a3dd85260de4"
+        },
+        {
+          "row": 20,
+          "column": 4,
+          "valuation": 128,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            8,
+            0
+          ],
+          "terms": 22,
+          "polynomial_sha256": "db6bf6cf2da0fa8dc643b5e6ef0554134f7eb3cccfca9c93857e9230f19f219b"
+        },
+        {
+          "row": 24,
+          "column": 24,
+          "valuation": 144,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            8,
+            0
+          ],
+          "terms": 22,
+          "polynomial_sha256": "53c7d3fd69b465b529375516569d6a14ccf5cb2bd4cc1221bbf2151b0ca479aa"
+        },
+        {
+          "row": 12,
+          "column": 6,
+          "valuation": 164,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            8,
+            0
+          ],
+          "terms": 21,
+          "polynomial_sha256": "872f4e4151274401ac5d0400840280e57bf7d3633d863db0bfd121fe5d74dc95"
+        }
+      ]
+    },
+    {
+      "stratum": "b0",
+      "orders": [
+        -8,
+        -7,
+        -7,
+        -7,
+        -7,
+        -7,
+        -7,
+        -7,
+        -7,
+        -5,
+        -5,
+        -5,
+        -5,
+        -4,
+        -3,
+        -3,
+        -2,
+        -1,
+        -1,
+        0,
+        0,
+        2,
+        4,
+        8,
+        12
+      ],
+      "prefix_minors": [
+        {
+          "row": 0,
+          "column": 0,
+          "valuation": 0,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            0,
+            0
+          ],
+          "terms": 1,
+          "polynomial_sha256": "d0bca111f8628137adc4c16f123496dcdd1d590d06cb5d9acd68b39fe656fb97"
+        },
+        {
+          "row": 3,
+          "column": 15,
+          "valuation": 1,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            0,
+            0
+          ],
+          "terms": 1,
+          "polynomial_sha256": "080a9ed428559ef602668b4c00f114f1a11c3f6b02a435f0bdc154578e4d7f22"
+        },
+        {
+          "row": 4,
+          "column": 8,
+          "valuation": 2,
+          "leading_factor_powers_a_b_a_plus_b": [
+            1,
+            0,
+            0
+          ],
+          "terms": 2,
+          "polynomial_sha256": "db63550455e26e574b4edba1776ae3d8c18ad9c20cc0eb70ed17f48023cccf28"
+        },
+        {
+          "row": 20,
+          "column": 16,
+          "valuation": 3,
+          "leading_factor_powers_a_b_a_plus_b": [
+            2,
+            0,
+            0
+          ],
+          "terms": 4,
+          "polynomial_sha256": "b8302c2e3362775ff6aeb2ea17a177b6f8bb47c0aa48a841ec5073ae9f82c9e8"
+        },
+        {
+          "row": 23,
+          "column": 19,
+          "valuation": 4,
+          "leading_factor_powers_a_b_a_plus_b": [
+            4,
+            0,
+            0
+          ],
+          "terms": 12,
+          "polynomial_sha256": "f59e4641592d1f9f23f777d63ebb403624c363d06841abfede815f898c1c4e68"
+        },
+        {
+          "row": 15,
+          "column": 3,
+          "valuation": 5,
+          "leading_factor_powers_a_b_a_plus_b": [
+            4,
+            0,
+            0
+          ],
+          "terms": 12,
+          "polynomial_sha256": "73d1bd11933abd4ad80c85236b20e85abaf5a57e71423928deb0efb954f7d53f"
+        },
+        {
+          "row": 19,
+          "column": 23,
+          "valuation": 6,
+          "leading_factor_powers_a_b_a_plus_b": [
+            6,
+            0,
+            0
+          ],
+          "terms": 20,
+          "polynomial_sha256": "2d9c6fa97541acd7375739e632f025929eb1313036b2f1a970119ff3e9436583"
+        },
+        {
+          "row": 18,
+          "column": 4,
+          "valuation": 7,
+          "leading_factor_powers_a_b_a_plus_b": [
+            7,
+            0,
+            0
+          ],
+          "terms": 64,
+          "polynomial_sha256": "59fb685cc5f318bad75b9f3bd7a52a79ecb292a3d0c134e56fcf88134e0c8aa0"
+        },
+        {
+          "row": 8,
+          "column": 20,
+          "valuation": 8,
+          "leading_factor_powers_a_b_a_plus_b": [
+            8,
+            0,
+            0
+          ],
+          "terms": 86,
+          "polynomial_sha256": "7a6f52ab65b1af8f66dba87159d32b50569d883a2ab8b4d8182c2478f7d010ff"
+        },
+        {
+          "row": 2,
+          "column": 10,
+          "valuation": 11,
+          "leading_factor_powers_a_b_a_plus_b": [
+            8,
+            0,
+            0
+          ],
+          "terms": 112,
+          "polynomial_sha256": "6480559bb1f45cc276f1c33bb00cf4626b454a11a445eb0e47161f529cfc6ee1"
+        },
+        {
+          "row": 14,
+          "column": 14,
+          "valuation": 14,
+          "leading_factor_powers_a_b_a_plus_b": [
+            9,
+            0,
+            0
+          ],
+          "terms": 104,
+          "polynomial_sha256": "c500369cbe5b0781863c3c51e9f78ca07ae2d860eca5cb790e39109509ba125e"
+        },
+        {
+          "row": 10,
+          "column": 2,
+          "valuation": 17,
+          "leading_factor_powers_a_b_a_plus_b": [
+            10,
+            0,
+            0
+          ],
+          "terms": 124,
+          "polynomial_sha256": "43cda9d0ad325168e03d12d031a8411feea80e6c654e3d2cc17c65079a7cd8cb"
+        },
+        {
+          "row": 22,
+          "column": 22,
+          "valuation": 20,
+          "leading_factor_powers_a_b_a_plus_b": [
+            12,
+            0,
+            0
+          ],
+          "terms": 84,
+          "polynomial_sha256": "da4c1a5180822caa7957128ec7cb671fa809950ff039f95ff30d488724cf884f"
+        },
+        {
+          "row": 16,
+          "column": 18,
+          "valuation": 24,
+          "leading_factor_powers_a_b_a_plus_b": [
+            12,
+            0,
+            0
+          ],
+          "terms": 9,
+          "polynomial_sha256": "780c15c3633c11601f2233bb20a56534186349344ce472e1ab311b9fbb881fdb"
+        },
+        {
+          "row": 1,
+          "column": 5,
+          "valuation": 29,
+          "leading_factor_powers_a_b_a_plus_b": [
+            12,
+            0,
+            0
+          ],
+          "terms": 37,
+          "polynomial_sha256": "47e190c7923ec2fb04591ba78402863a0d3ca8472a4c5ad0e8ac74587b6bcf54"
+        },
+        {
+          "row": 21,
+          "column": 9,
+          "valuation": 34,
+          "leading_factor_powers_a_b_a_plus_b": [
+            12,
+            0,
+            0
+          ],
+          "terms": 51,
+          "polynomial_sha256": "435b1f20db486c4c305d3a6908474d05d031640481643018b02197e4e93fd663"
+        },
+        {
+          "row": 13,
+          "column": 17,
+          "valuation": 40,
+          "leading_factor_powers_a_b_a_plus_b": [
+            12,
+            0,
+            0
+          ],
+          "terms": 51,
+          "polynomial_sha256": "6f5e301712f2c0cce58045900de72d9d1db797ab38e23b60bc4900c15f40585a"
+        },
+        {
+          "row": 5,
+          "column": 1,
+          "valuation": 47,
+          "leading_factor_powers_a_b_a_plus_b": [
+            12,
+            0,
+            0
+          ],
+          "terms": 77,
+          "polynomial_sha256": "95be7d7831310c7c3e5653f6881c2ba0e537f2c09018b3a115051d13841226d6"
+        },
+        {
+          "row": 9,
+          "column": 21,
+          "valuation": 54,
+          "leading_factor_powers_a_b_a_plus_b": [
+            12,
+            0,
+            0
+          ],
+          "terms": 39,
+          "polynomial_sha256": "e1f0c40814ac2d6dd72f9d7d00dcdc40c8d431c120096ec5f524f60815491261"
+        },
+        {
+          "row": 7,
+          "column": 11,
+          "valuation": 62,
+          "leading_factor_powers_a_b_a_plus_b": [
+            12,
+            0,
+            0
+          ],
+          "terms": 83,
+          "polynomial_sha256": "b370fd87f922ac43b79a97ea406f95e38b693ca19ebd7522038655944bf2e61a"
+        },
+        {
+          "row": 24,
+          "column": 24,
+          "valuation": 70,
+          "leading_factor_powers_a_b_a_plus_b": [
+            12,
+            0,
+            0
+          ],
+          "terms": 89,
+          "polynomial_sha256": "409dc60e2c98d902c2c5ac072bbc2857f4313e17391e19a93b7d8818ab8578f7"
+        },
+        {
+          "row": 11,
+          "column": 13,
+          "valuation": 80,
+          "leading_factor_powers_a_b_a_plus_b": [
+            12,
+            0,
+            0
+          ],
+          "terms": 102,
+          "polynomial_sha256": "ca911138a27c47e4a763a6b9e36f62bb7b2da08e50144da7987ee3e02c61885d"
+        },
+        {
+          "row": 17,
+          "column": 7,
+          "valuation": 92,
+          "leading_factor_powers_a_b_a_plus_b": [
+            12,
+            0,
+            0
+          ],
+          "terms": 51,
+          "polynomial_sha256": "10b398f50f765f0dd20b00219dd6ab887675f58b2ff1ee22cd5effeb107b7314"
+        },
+        {
+          "row": 12,
+          "column": 12,
+          "valuation": 108,
+          "leading_factor_powers_a_b_a_plus_b": [
+            12,
+            0,
+            0
+          ],
+          "terms": 49,
+          "polynomial_sha256": "6791924f992ff48b3dd8dea78da0defdbed7b0c73e07109fd9fb0ec6f5291078"
+        },
+        {
+          "row": 6,
+          "column": 6,
+          "valuation": 128,
+          "leading_factor_powers_a_b_a_plus_b": [
+            12,
+            0,
+            0
+          ],
+          "terms": 49,
+          "polynomial_sha256": "fcdcdd412b1333a37ee2de249bba1eee82abe3a69eeeba18cf059ea76c0b9cd1"
+        }
+      ]
+    },
+    {
+      "stratum": "equal",
+      "orders": [
+        -8,
+        -7,
+        -7,
+        -7,
+        -7,
+        -7,
+        -7,
+        -7,
+        -7,
+        -7,
+        -7,
+        -5,
+        -5,
+        -5,
+        -5,
+        -5,
+        -5,
+        -4,
+        -2,
+        0,
+        0,
+        2,
+        4,
+        8,
+        12
+      ],
+      "prefix_minors": [
+        {
+          "row": 0,
+          "column": 0,
+          "valuation": 0,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            0,
+            0
+          ],
+          "terms": 1,
+          "polynomial_sha256": "d0bca111f8628137adc4c16f123496dcdd1d590d06cb5d9acd68b39fe656fb97"
+        },
+        {
+          "row": 3,
+          "column": 15,
+          "valuation": 1,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            0,
+            0
+          ],
+          "terms": 1,
+          "polynomial_sha256": "080a9ed428559ef602668b4c00f114f1a11c3f6b02a435f0bdc154578e4d7f22"
+        },
+        {
+          "row": 1,
+          "column": 23,
+          "valuation": 2,
+          "leading_factor_powers_a_b_a_plus_b": [
+            1,
+            0,
+            0
+          ],
+          "terms": 2,
+          "polynomial_sha256": "5fabdaf95841430074d9f94f0223f7d061418b77d1e450f4eb7fca1593925034"
+        },
+        {
+          "row": 4,
+          "column": 8,
+          "valuation": 3,
+          "leading_factor_powers_a_b_a_plus_b": [
+            2,
+            0,
+            0
+          ],
+          "terms": 4,
+          "polynomial_sha256": "18309d938392fff2fae49bbd4c105a18fb8bb9db2cb1cad5c13451dfc5601c31"
+        },
+        {
+          "row": 19,
+          "column": 5,
+          "valuation": 4,
+          "leading_factor_powers_a_b_a_plus_b": [
+            3,
+            0,
+            0
+          ],
+          "terms": 8,
+          "polynomial_sha256": "6eefd50294332deaaddc9bb82d994241f244d98b4612cb41056932c9e4e4daab"
+        },
+        {
+          "row": 8,
+          "column": 4,
+          "valuation": 5,
+          "leading_factor_powers_a_b_a_plus_b": [
+            4,
+            0,
+            0
+          ],
+          "terms": 12,
+          "polynomial_sha256": "90bbea37b101c89f247c6e1654e0287775830c81de84c136f7f38a8709b81d4b"
+        },
+        {
+          "row": 23,
+          "column": 19,
+          "valuation": 6,
+          "leading_factor_powers_a_b_a_plus_b": [
+            6,
+            0,
+            0
+          ],
+          "terms": 20,
+          "polynomial_sha256": "2830d38d266410566c8b5f16285bc449417abf96a64601f71168d693433a3d4e"
+        },
+        {
+          "row": 15,
+          "column": 3,
+          "valuation": 7,
+          "leading_factor_powers_a_b_a_plus_b": [
+            6,
+            0,
+            0
+          ],
+          "terms": 32,
+          "polynomial_sha256": "8b26d62bce005f11cc6c42e551a49189f7e4050a8f50d64464351dbce5173a2c"
+        },
+        {
+          "row": 21,
+          "column": 9,
+          "valuation": 8,
+          "leading_factor_powers_a_b_a_plus_b": [
+            8,
+            0,
+            0
+          ],
+          "terms": 40,
+          "polynomial_sha256": "561332699fded01e64039445b4c0a5e2b637d6de87de5f9b21cf534dc7a4a3de"
+        },
+        {
+          "row": 16,
+          "column": 20,
+          "valuation": 9,
+          "leading_factor_powers_a_b_a_plus_b": [
+            9,
+            0,
+            0
+          ],
+          "terms": 136,
+          "polynomial_sha256": "08be688e28c15297249c8c9c836b7f4c2b51c9c4e4f16c5168a41d20698a5fb4"
+        },
+        {
+          "row": 20,
+          "column": 16,
+          "valuation": 10,
+          "leading_factor_powers_a_b_a_plus_b": [
+            10,
+            0,
+            0
+          ],
+          "terms": 45,
+          "polynomial_sha256": "1319fb2729be0a8a2793e753737bfa60d35ec52cfa50b65daffc725c061e9687"
+        },
+        {
+          "row": 22,
+          "column": 14,
+          "valuation": 13,
+          "leading_factor_powers_a_b_a_plus_b": [
+            10,
+            0,
+            0
+          ],
+          "terms": 55,
+          "polynomial_sha256": "dae95613e61fda77d65aac28c7a142a4831824c6eb0393d3b8c7418fc2417030"
+        },
+        {
+          "row": 5,
+          "column": 1,
+          "valuation": 16,
+          "leading_factor_powers_a_b_a_plus_b": [
+            12,
+            0,
+            0
+          ],
+          "terms": 77,
+          "polynomial_sha256": "93d513a8633b3d6929680999c9f86bf064c505777070b2457c799c44308fb53b"
+        },
+        {
+          "row": 10,
+          "column": 2,
+          "valuation": 19,
+          "leading_factor_powers_a_b_a_plus_b": [
+            12,
+            0,
+            0
+          ],
+          "terms": 69,
+          "polynomial_sha256": "92a8d7c6ab0347ee751c554c961af0d59cbaeed03c999028f36159f4eaea297c"
+        },
+        {
+          "row": 14,
+          "column": 22,
+          "valuation": 22,
+          "leading_factor_powers_a_b_a_plus_b": [
+            14,
+            0,
+            0
+          ],
+          "terms": 99,
+          "polynomial_sha256": "f55896fdc9358ef6aefb38c95e9cb92f00f3ef96fd20ecaae2c5ee09947dc4b2"
+        },
+        {
+          "row": 2,
+          "column": 10,
+          "valuation": 25,
+          "leading_factor_powers_a_b_a_plus_b": [
+            14,
+            0,
+            0
+          ],
+          "terms": 91,
+          "polynomial_sha256": "01b99d8b9e39eced63579091f547c7da86cc3856b46507247035f04965db843a"
+        },
+        {
+          "row": 9,
+          "column": 21,
+          "valuation": 28,
+          "leading_factor_powers_a_b_a_plus_b": [
+            16,
+            0,
+            0
+          ],
+          "terms": 59,
+          "polynomial_sha256": "eaf9537c1af9b5ccbbbf9b88fcbb0bbb8481a0847843130bfd421fb2d519abf5"
+        },
+        {
+          "row": 18,
+          "column": 18,
+          "valuation": 32,
+          "leading_factor_powers_a_b_a_plus_b": [
+            16,
+            0,
+            0
+          ],
+          "terms": 59,
+          "polynomial_sha256": "7ac9f050050b35dbd8e6297ff84bf7a3e8d017bdd4e376c91cbf94592551f1ce"
+        },
+        {
+          "row": 13,
+          "column": 17,
+          "valuation": 38,
+          "leading_factor_powers_a_b_a_plus_b": [
+            16,
+            0,
+            0
+          ],
+          "terms": 59,
+          "polynomial_sha256": "da7f5602c27adf4a34661d411fe91c9b60677ce00e71e090043182df6f3394ad"
+        },
+        {
+          "row": 11,
+          "column": 7,
+          "valuation": 46,
+          "leading_factor_powers_a_b_a_plus_b": [
+            16,
+            0,
+            0
+          ],
+          "terms": 125,
+          "polynomial_sha256": "ef34765f60b672a82b443639e8076432fd59107f4e281191d763cb614b000d74"
+        },
+        {
+          "row": 17,
+          "column": 13,
+          "valuation": 54,
+          "leading_factor_powers_a_b_a_plus_b": [
+            16,
+            0,
+            0
+          ],
+          "terms": 141,
+          "polynomial_sha256": "8df593a94004cb4d1f0fdc9c3c6742168c598b0cdb40857acf8483e054593205"
+        },
+        {
+          "row": 7,
+          "column": 11,
+          "valuation": 64,
+          "leading_factor_powers_a_b_a_plus_b": [
+            16,
+            0,
+            0
+          ],
+          "terms": 69,
+          "polynomial_sha256": "662f0d09a7db3096f5ea37fdbf2345302614ce855ed571b4bf7a964903e02da7"
+        },
+        {
+          "row": 6,
+          "column": 6,
+          "valuation": 76,
+          "leading_factor_powers_a_b_a_plus_b": [
+            16,
+            0,
+            0
+          ],
+          "terms": 69,
+          "polynomial_sha256": "a5c8d5ad118c89fd3a97242122df6976d09ea4fc0b0be55a8bb11aee54723de6"
+        },
+        {
+          "row": 24,
+          "column": 24,
+          "valuation": 92,
+          "leading_factor_powers_a_b_a_plus_b": [
+            16,
+            0,
+            0
+          ],
+          "terms": 73,
+          "polynomial_sha256": "8c1fdf402b96ae9dbff907cbf7e9e68c4310e33a5dd06c7805440090df40eee2"
+        },
+        {
+          "row": 12,
+          "column": 12,
+          "valuation": 112,
+          "leading_factor_powers_a_b_a_plus_b": [
+            16,
+            0,
+            0
+          ],
+          "terms": 69,
+          "polynomial_sha256": "086d8bcb1a288c720adddb9239e0a435caa5394194a90be28ffc53634600bdaa"
+        }
+      ]
+    },
+    {
+      "stratum": "generic",
+      "orders": [
+        -8,
+        -7,
+        -7,
+        -7,
+        -7,
+        -7,
+        -7,
+        -7,
+        -7,
+        -7,
+        -7,
+        -7,
+        -7,
+        -5,
+        -5,
+        -5,
+        -5,
+        -4,
+        -2,
+        0,
+        0,
+        2,
+        4,
+        8,
+        12
+      ],
+      "prefix_minors": [
+        {
+          "row": 0,
+          "column": 0,
+          "valuation": 0,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            0,
+            0
+          ],
+          "terms": 1,
+          "polynomial_sha256": "d0bca111f8628137adc4c16f123496dcdd1d590d06cb5d9acd68b39fe656fb97"
+        },
+        {
+          "row": 3,
+          "column": 15,
+          "valuation": 1,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            0,
+            0
+          ],
+          "terms": 1,
+          "polynomial_sha256": "080a9ed428559ef602668b4c00f114f1a11c3f6b02a435f0bdc154578e4d7f22"
+        },
+        {
+          "row": 1,
+          "column": 23,
+          "valuation": 2,
+          "leading_factor_powers_a_b_a_plus_b": [
+            0,
+            1,
+            0
+          ],
+          "terms": 2,
+          "polynomial_sha256": "14bcce07787b476b8aa3494bd88d945cfc662ff116628e1d0553ab55fb6f51f6"
+        },
+        {
+          "row": 4,
+          "column": 8,
+          "valuation": 3,
+          "leading_factor_powers_a_b_a_plus_b": [
+            1,
+            1,
+            0
+          ],
+          "terms": 4,
+          "polynomial_sha256": "277b405e8559b6464986d3de4b79354a1566a0027cc81d98d646e52c12dfbf35"
+        },
+        {
+          "row": 19,
+          "column": 5,
+          "valuation": 4,
+          "leading_factor_powers_a_b_a_plus_b": [
+            1,
+            2,
+            0
+          ],
+          "terms": 8,
+          "polynomial_sha256": "ce94ab8e82675eb1bdcc6b75ca375e4c9412f085ff9058fa81ff5869751a93d8"
+        },
+        {
+          "row": 9,
+          "column": 21,
+          "valuation": 5,
+          "leading_factor_powers_a_b_a_plus_b": [
+            1,
+            4,
+            0
+          ],
+          "terms": 14,
+          "polynomial_sha256": "9285f1e7af431916d9ccc56e19b7dff6562529727765a330d8b696fb9f87aa11"
+        },
+        {
+          "row": 15,
+          "column": 3,
+          "valuation": 6,
+          "leading_factor_powers_a_b_a_plus_b": [
+            1,
+            2,
+            2
+          ],
+          "terms": 16,
+          "polynomial_sha256": "723d2284d2230d15feeb655dd4c78c5bd2220f729c034ebe4a0ecdf9caa2d688"
+        },
+        {
+          "row": 16,
+          "column": 20,
+          "valuation": 7,
+          "leading_factor_powers_a_b_a_plus_b": [
+            2,
+            2,
+            2
+          ],
+          "terms": 37,
+          "polynomial_sha256": "bd3029d004c45e1bb4ab79cd5bd3938175369541a9b1fd5c1d66b55c5534dc04"
+        },
+        {
+          "row": 23,
+          "column": 19,
+          "valuation": 8,
+          "leading_factor_powers_a_b_a_plus_b": [
+            6,
+            2,
+            0
+          ],
+          "terms": 67,
+          "polynomial_sha256": "06814db479059dd004124ee73a0d675e7d7d0eaec5863dbd5e4e763462850979"
+        },
+        {
+          "row": 5,
+          "column": 1,
+          "valuation": 9,
+          "leading_factor_powers_a_b_a_plus_b": [
+            2,
+            4,
+            2
+          ],
+          "terms": 99,
+          "polynomial_sha256": "412f08d62b874130334ab7ef5b61b31ed885b4d4c8094b2bf0390d2b4208f6f3"
+        },
+        {
+          "row": 21,
+          "column": 9,
+          "valuation": 10,
+          "leading_factor_powers_a_b_a_plus_b": [
+            2,
+            4,
+            4
+          ],
+          "terms": 65,
+          "polynomial_sha256": "9b24ced3fc574b759e1311d44cebe54965b05177779cf3b866c24bab78d5412f"
+        },
+        {
+          "row": 8,
+          "column": 4,
+          "valuation": 11,
+          "leading_factor_powers_a_b_a_plus_b": [
+            3,
+            4,
+            4
+          ],
+          "terms": 208,
+          "polynomial_sha256": "6a73c8e9d0f17ebdd4fa90c425f61cb1ced0b2b7ed9b5f7a5b30e35ad1f27f62"
+        },
+        {
+          "row": 20,
+          "column": 16,
+          "valuation": 12,
+          "leading_factor_powers_a_b_a_plus_b": [
+            4,
+            4,
+            4
+          ],
+          "terms": 51,
+          "polynomial_sha256": "ccbf3afc20599449e84bd981b853f35674386b9dcac0384d72edc85b9a63c577"
+        },
+        {
+          "row": 2,
+          "column": 10,
+          "valuation": 15,
+          "leading_factor_powers_a_b_a_plus_b": [
+            4,
+            4,
+            4
+          ],
+          "terms": 221,
+          "polynomial_sha256": "3260cade199d317a727ecbb1a4c033f15cfe6b86732e4a43e343d2df99668231"
+        },
+        {
+          "row": 22,
+          "column": 14,
+          "valuation": 18,
+          "leading_factor_powers_a_b_a_plus_b": [
+            6,
+            4,
+            4
+          ],
+          "terms": 275,
+          "polynomial_sha256": "bc565fe9d25c8f10ae63cdf65a200550562d12f9df7878c5b26974ec91cecfec"
+        },
+        {
+          "row": 10,
+          "column": 2,
+          "valuation": 21,
+          "leading_factor_powers_a_b_a_plus_b": [
+            6,
+            4,
+            4
+          ],
+          "terms": 325,
+          "polynomial_sha256": "bbf04466d15a0471460a6eea567e73f7179da26a7a41caaf340d71e9062ca952"
+        },
+        {
+          "row": 14,
+          "column": 22,
+          "valuation": 24,
+          "leading_factor_powers_a_b_a_plus_b": [
+            8,
+            4,
+            4
+          ],
+          "terms": 99,
+          "polynomial_sha256": "d6565afe80c9addac3cc88aaa539f8bff3dd64b3e81ba9a60296cfa19d63d51b"
+        },
+        {
+          "row": 18,
+          "column": 18,
+          "valuation": 28,
+          "leading_factor_powers_a_b_a_plus_b": [
+            8,
+            4,
+            4
+          ],
+          "terms": 99,
+          "polynomial_sha256": "a000915c4f262b06d499d7672cc0d73a2c30fc6e3da6f768b78a8ade5a93653a"
+        },
+        {
+          "row": 13,
+          "column": 17,
+          "valuation": 34,
+          "leading_factor_powers_a_b_a_plus_b": [
+            8,
+            4,
+            4
+          ],
+          "terms": 99,
+          "polynomial_sha256": "f78cc6f9538250c814b8ba3f536f011279adea6d5c65a9c42b4db67bce82fe72"
+        },
+        {
+          "row": 7,
+          "column": 11,
+          "valuation": 42,
+          "leading_factor_powers_a_b_a_plus_b": [
+            8,
+            4,
+            4
+          ],
+          "terms": 259,
+          "polynomial_sha256": "39e04827b428e6b77f944941452024cc45fdc16db6489b6e13291a636fbf6433"
+        },
+        {
+          "row": 24,
+          "column": 24,
+          "valuation": 50,
+          "leading_factor_powers_a_b_a_plus_b": [
+            8,
+            4,
+            4
+          ],
+          "terms": 269,
+          "polynomial_sha256": "b403daa48d150f2edfa2b601a37cc0c7b44e5a79313c4085d3997efd995d5cf9"
+        },
+        {
+          "row": 17,
+          "column": 13,
+          "valuation": 60,
+          "leading_factor_powers_a_b_a_plus_b": [
+            8,
+            4,
+            4
+          ],
+          "terms": 283,
+          "polynomial_sha256": "67cf4d724cc45968fe159e94bdb3df64b4cefb94e3eb084b9524033af632ec22"
+        },
+        {
+          "row": 11,
+          "column": 7,
+          "valuation": 72,
+          "leading_factor_powers_a_b_a_plus_b": [
+            8,
+            4,
+            4
+          ],
+          "terms": 169,
+          "polynomial_sha256": "aed29585f70d9cf034c6e01e6bcbedb958b111653bca034c136ca6d7e1849e8c"
+        },
+        {
+          "row": 12,
+          "column": 12,
+          "valuation": 88,
+          "leading_factor_powers_a_b_a_plus_b": [
+            8,
+            4,
+            4
+          ],
+          "terms": 127,
+          "polynomial_sha256": "1f503900d0c4f748cb48e24058d9082f8fd43a234d3d8917eea0946d5c0fef98"
+        },
+        {
+          "row": 6,
+          "column": 6,
+          "valuation": 108,
+          "leading_factor_powers_a_b_a_plus_b": [
+            8,
+            4,
+            4
+          ],
+          "terms": 127,
+          "polynomial_sha256": "cbe6f30e4df371cbe2d6fa10d678cca7a1999eb867d708c0b6bd0f6eca6965ed"
+        }
+      ]
+    }
+  ],
+  "source_sha256": {
+    "check_orthogonal_joint_symbolic_profiles.py": "edfd72b0d2845f84bbe702d2a5bea6fa9243fcbeb11ff36eadf77799c3c2aac5",
+    "sparse_f2_trivariate.py": "38abfccf3ce0a299c01b40ce1bd37363690690215b9b6a5837e74f9169052135",
+    "joint_energy_conjugations.py": "929ba0d8e745fc2a4692367f10bf1e898884d58598c97a2617193ac8cf20bf1d",
+    "search_f4_recentered_crossings.py": "8715f1a28b0cb68ad4d3fd29adc53fe082f6181882ed4bce7ce0e9ff582b0be4"
+  },
+  "scope": "Every constant orthogonal energy-preserving gauge retaining rank-one leading realignment, over every characteristic-two field, at the stated natural heights. No arbitrary-weight or nonorthogonal exclusion.",
+  "factoring_exponent": "1/2; unchanged"
+}

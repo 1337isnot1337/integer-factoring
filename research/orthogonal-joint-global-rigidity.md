@@ -168,6 +168,79 @@ separate complete experiment over F4, F8 and F16. It finds five profile
 classes, distinguished by `(a,b)=(0,0)`, exactly one zero, equal nonzero
 parameters, or distinct nonzero parameters. All 336 tested pairs are
 prefix-dominated by the reference profile. These finite experiments are
-**not** an all-field Smith-profile theorem. Proving that dominance over
-arbitrary extensions, or escaping the stated orthogonal restrictions,
-remains open.
+**not** an all-field Smith-profile theorem. The symbolic calculation below now proves that dominance over arbitrary
+extensions. Escaping the orthogonal or natural-height restrictions remains
+open.
+
+
+## 5. All-field classification of the natural profiles
+
+The finite experiment can be replaced by an exact polynomial calculation.
+The five strata are the origin; `a=0,b!=0`; `b=0,a!=0`;
+`a=b!=0`; and `ab(a+b)!=0`. They partition every characteristic-two field.
+Some strata can be empty in small fields.
+
+Form the opposite realignment of `z^8 U(a,b) B(z) U(a,b)` over the
+**ordinary** polynomial ring `F2[a,b,z]`. On each stratum, perform the
+indicated substitution before fraction-free elimination. At every step,
+choose an entry of minimum `z` valuation. The Bareiss update is
+
+```math
+M'_{ij}=(pM_{ij}+M_{ic}M_{rj})/p_{\mathrm{previous}}.
+```
+
+Every division is checked exactly in the polynomial ring. The selected
+bordered minors give the determinantal-prefix valuations; the original
+Laurent Smith orders are their successive differences minus eight.
+
+All 125 pivot leading coefficients factor completely into powers of
+`a`, `b` and `a+b`. The checker verifies that the factors used on each
+stratum are nonzero there. Thus specialization to **any** field point
+of that stratum preserves every chosen pivot valuation. Other entries
+cannot acquire lower valuations on specialization. Induction through
+the exact Bareiss identities proves that the same Smith profile holds
+throughout each stratum, including over infinite or imperfect fields.
+No finite-field interpolation, Boolean simplification or random identity
+test is used for this conclusion.
+
+The complete profiles are:
+
+```text
+origin:
+ -8,-7,-5,-4,-3,-2,-1,0,0,1,1,2,2,3,3,4,4,4,5,5,6,7,7,8,12
+
+a=0, b!=0:
+ -8,-7,-7,-7,-7,-7,-7,-7,-7,-5,-4,-3,-2,-1,0,0,1,2,2,4,4,4,6,8,12
+
+b=0, a!=0:
+ -8,-7,-7,-7,-7,-7,-7,-7,-7,-5,-5,-5,-5,-4,-3,-3,-2,-1,-1,0,0,2,4,8,12
+
+a=b!=0:
+ -8,-7,-7,-7,-7,-7,-7,-7,-7,-7,-7,-5,-5,-5,-5,-5,-5,-4,-2,0,0,2,4,8,12
+
+ab(a+b)!=0:
+ -8,-7,-7,-7,-7,-7,-7,-7,-7,-7,-7,-7,-7,-5,-5,-5,-5,-4,-2,0,0,2,4,8,12
+```
+
+Every prefix sum in the four nonidentity profiles is at most the
+corresponding reference prefix sum. The zero profile is unchanged by
+energy-preserving conjugation. The hinge-sum argument in
+[joint energy conjugations, Section 4](joint-energy-conjugations.md#4-exact-profile-dominance-at-every-scale)
+therefore proves **no improvement over the reference at any natural scale**
+for this entire orthogonal family over any characteristic-two field.
+The physical height inventory is unchanged. Independent physical weights
+outside this natural ray are not covered by this comparison.
+
+Run the standard-library-only symbolic replay with:
+
+```sh
+python3 tools/check_orthogonal_joint_symbolic_profiles.py
+```
+
+Its [receipt](../evidence/orthogonal-joint-symbolic-profiles.json) records
+all 125 pivot positions, valuations, leading-factor powers and polynomial
+hashes, together with source hashes. The sparse arithmetic uses ordinary
+exponents, checks overflow before packing exponent sums, and tests exact
+division, distributivity and Frobenius identities. A separate exploratory
+SymPy implementation agreed on all 100 nonidentity pivot positions,
+valuations and leading-factor powers; SymPy is not a replay dependency.
