@@ -128,3 +128,39 @@ def dyck_path_valuation_distribution(semilength):
                     target[total] = target.get(total, 0) + count
         current = following
     return current.get(0, {})
+
+
+def maximum_path_norm_delta_valuation(semilength):
+    """Closed-form maximum over the dyadic record-height profiles."""
+    assert semilength >= 1
+    maximum = 0
+    exponent = 1
+    while (1 << exponent) - 1 <= semilength:
+        height = (1 << exponent) - 1
+        profile_sum = (exponent - 1) * (1 << exponent) + 1
+        maximum = max(maximum, profile_sum + (semilength - height) * height)
+        exponent += 1
+    return maximum
+
+
+def max_path_norm_delta_valuation_dp(semilength):
+    """Independent max-plus walk recurrence for the path-norm valuation."""
+    assert semilength >= 0
+    current = {0: 0}
+    for step in range(2 * semilength):
+        following = {}
+        for height, valuation in current.items():
+            up_count = (step + height) // 2
+            down_count = (step - height) // 2
+            if up_count < semilength and height < semilength:
+                following[height + 1] = max(
+                    following.get(height + 1, -1), valuation
+                )
+            if down_count < semilength and height > 0:
+                even_index = height if height % 2 == 0 else height + 1
+                local_valuation = (even_index & -even_index) - 1
+                following[height - 1] = max(
+                    following.get(height - 1, -1), valuation + local_valuation
+                )
+        current = following
+    return current.get(0, -1)
