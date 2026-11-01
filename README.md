@@ -2669,6 +2669,13 @@ kernel. An independent 120-channel prefix still excludes its desired rate
 at every scale and common occupied frequency. This kernel stops; the
 result does not exclude every high-axis construction.
 
+A [global alignment obstruction](research/global-axis-alignment-obstruction.md)
+uses homogeneity, coefficient locality and the endpoint to rule out a
+shared linear flag through the required low jets, with explicit quotient
+Smith-prefix bounds. A separate exact module counterexample shows why
+those quotient bounds alone are insufficient for the full pressure target.
+The remaining proof must retain the complete crossing endpoint.
+
 A [routing-rank argument](research/generic-engine-routing-rank-nogo.md)
 limits matrices with the generic engine's stated Step-2 support on its
 schedule-pair array. Under that engine's accounting it retains the half-rate

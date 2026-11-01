@@ -1,5 +1,7 @@
 # Research index
 
+- [Global homogeneous axis alignment and its quotient limits](global-axis-alignment-obstruction.md): all-field characteristic-two locality/endpoint forces transverse coefficients and quotient prefixes at depths D/4,D/6,D/8. An exact exterior-module counterexample shows those quotient bounds alone do not lift to the needed full prefix; the crossing endpoint remains essential.
+
 - [Frobenius residues in the higher axis flags](high-axis-frobenius-residues.md): degree-64 endpoint coefficients reduce generic quartic rank from 46 to 28; independent Toeplitz ranks 840/960 give 120 orders of total 2520, excluding this explicit nine-axis kernel at every scale and common occupied frequency.
 
 - [Independent physical energies in box-minor budgets](graded-box-minor-caps.md): all-field scalar original and word-adjugate constraints with exact low/top energy charges; 36 signed Laurent controls retain 348 determinant polynomials and 696 complete orders. No global weighted pressure floor is claimed.
