@@ -1800,3 +1800,5 @@ order-one pivots in every regular case. The [truncated multiplication argument](
 improves the copied-register bound from a division by `J^3` to `J`, reducing
 its complete even-register cutoff from 576 to 380. These results constrain
 the declared profile methods; they do not change the factoring score.
+
+The [fixed-dimensional cube transfer](research/multiaxis-cube-transfer.md) now supplies a complete evaluator reduction for every fixed number `d >= 2` of axes. A common-piece family with total cut-width coefficient `rho` gives score `log_d(1/rho)` after all regrouping, table queries, and recovery costs are charged. It also permits explicitly bounded subexponential piece counts. An actual nine-axis family with `rho < 1/3` would beat one half; the existing relaxed profiles do not construct that family. The achieved factoring score remains `1/2`. Run `make verify-multiaxis-cube`.

@@ -1167,3 +1167,5 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 ## All-field survival of the full-tail band
 
 - [An explicit left inverse for every nonzero hot functional](coherent-tail-injectivity.md)
+
+- [Uniform transfer for every fixed cube dimension](multiaxis-cube-transfer.md): exact clique-edge coverage, oriented-volume bounds, complete query and recursion costs, and the conditional exponent `log_d(1/rho)`; bounded subexponential piece sets are allowed. A stronger local family remains unconstructed.

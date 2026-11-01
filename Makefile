@@ -2117,3 +2117,7 @@ verify-cube-pair-specialization:
 .PHONY: verify-coherent-tail-injectivity
 verify-coherent-tail-injectivity:
 	python3 tools/check_coherent_tail_injectivity.py --output /tmp/integer-factoring-coherent-tail-injectivity.json
+
+.PHONY: verify-multiaxis-cube
+verify-multiaxis-cube:
+	python3 tools/check_multiaxis_cube_transfer.py
