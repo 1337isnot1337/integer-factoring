@@ -1,0 +1,46 @@
+{
+  "scope": "Fixed integral n=11 seeds only; polynomial inverse witnesses, no jet-window or runtime claim.",
+  "counts": {
+    "polynomial_inverse_entries": 6936,
+    "spectator_entries": 20736,
+    "blocks": 138,
+    "primitive_entries": 4624,
+    "strict_endpoint_entries": 82944
+  },
+  "cases": [
+    {
+      "prime": 3,
+      "degree": 2,
+      "factorization": "spin2 tensor spectator4"
+    },
+    {
+      "prime": 5,
+      "degree": 4,
+      "inverse_degree_at_most": 6,
+      "all_place_orders_at_most": 2,
+      "bare_rho_lower": "1"
+    },
+    {
+      "prime": 7,
+      "degree": 6,
+      "inverse_degree_at_most": 8,
+      "all_place_orders_at_most": 2,
+      "bare_rho_lower": "1"
+    },
+    {
+      "prime": 11,
+      "degree": 10,
+      "inverse_degree_at_most": 12,
+      "all_place_orders_at_most": 2,
+      "bare_rho_lower": "1"
+    }
+  ],
+  "source_sha256": {
+    "tools/check_modular_spin_crossings.py": "e2aebde93d739f16e2e76495d93173b8576fadc107264ed8e4f2ea353af25aa5",
+    "tools/check_all_field_pascal_crossings.py": "19733bb7da5e3040f496bad6a5e02d8d2c0c7dee6de622efd34c8cdad0e6e551",
+    "tools/integral_spin_annihilators.py": "dbd6be33b3620d36af00c5012f7801362d6c4c762e24acbc5c5d420087c49645",
+    "tools/check_integral_spin_annihilators.py": "b8679918fc595b961a2a2a4584a1521ec3c9781d82243658094c4859d0b95d87"
+  },
+  "packet_sha256": "ee81e495924d7b5c1acf80c81c4021fea6a7c8e697ee24e23023e3dd9bcb0540",
+  "factoring_exponent": "1/2; unchanged"
+}

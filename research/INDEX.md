@@ -2,6 +2,8 @@
 
 - [Globally type-removable poles have polynomial pressure limits](approximate-rational-strictification.md): rounded weak charge potentials and Frobenius substitution clear extra finite scalar poles at cost 4Lt/p^k, preserving every strict negative witness in a polynomial representative on the same alphabets and finite field. All-type global regularity is required; auxiliary matrices and selected-type-only endpoints remain outside scope.
 
+- [Integral bad-prime spin annihilators](integral-spin-annihilators.md): denominator-cleared spin-eleven seeds have an exact spectator factor at characteristic three; polynomial inverse witnesses bound all local orders by two at 5, 7 and 11, excluding their bare two-place critical target.
+
 - [A universal axis window for strict polynomial crossings](uniform-polynomial-axis-window.md): endpoint majorization, a quantified partition deficit and the cold bound give a neighborhood depending only on alphabet size, uniformly over all physical heights, tensors, degrees and scales. It closes the moving-gauge axis escape for this pressure framework; interior weights and other methods remain open.
 
 - [A uniform cold-tail bound for moving gauges](uniform-cold-physical-gap.md): the first two shared prefixes imply a joint two-gap bound at every angle. Arbitrary strict Laurent-polynomial crossings and moving physical heights cannot meet the critical target when the scaled first physical gap exceeds an explicit O(1/min(a,b)) threshold; 408 fresh untruncated orders and exact rational threshold controls are retained. Degenerate grounds and intermediate regimes remain open.
