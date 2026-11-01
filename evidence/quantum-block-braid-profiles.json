@@ -1,0 +1,257 @@
+{
+  "status": "pass",
+  "field": "F16",
+  "q": 8,
+  "profiles": [
+    {
+      "length": 4,
+      "labels": 2,
+      "complete_tensor_entries": 16,
+      "coefficient_span_dimension": 5,
+      "rank_pairs": [
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          4
+        ]
+      ]
+    },
+    {
+      "length": 6,
+      "labels": 5,
+      "complete_tensor_entries": 625,
+      "coefficient_span_dimension": 33,
+      "rank_pairs": [
+        [
+          25,
+          1
+        ],
+        [
+          17,
+          2
+        ],
+        [
+          25,
+          3
+        ],
+        [
+          25,
+          3
+        ],
+        [
+          24,
+          5
+        ],
+        [
+          22,
+          5
+        ],
+        [
+          23,
+          7
+        ],
+        [
+          23,
+          7
+        ],
+        [
+          24,
+          9
+        ],
+        [
+          24,
+          8
+        ],
+        [
+          22,
+          17
+        ],
+        [
+          20,
+          21
+        ],
+        [
+          23,
+          23
+        ],
+        [
+          24,
+          20
+        ],
+        [
+          23,
+          22
+        ],
+        [
+          22,
+          25
+        ],
+        [
+          25,
+          25
+        ],
+        [
+          24,
+          23
+        ],
+        [
+          24,
+          22
+        ],
+        [
+          23,
+          24
+        ],
+        [
+          24,
+          23
+        ],
+        [
+          23,
+          24
+        ],
+        [
+          25,
+          22
+        ],
+        [
+          24,
+          21
+        ],
+        [
+          22,
+          25
+        ],
+        [
+          23,
+          25
+        ],
+        [
+          21,
+          22
+        ],
+        [
+          16,
+          23
+        ],
+        [
+          9,
+          24
+        ],
+        [
+          8,
+          24
+        ],
+        [
+          6,
+          21
+        ],
+        [
+          7,
+          23
+        ],
+        [
+          5,
+          24
+        ],
+        [
+          4,
+          24
+        ],
+        [
+          2,
+          23
+        ],
+        [
+          3,
+          23
+        ],
+        [
+          2,
+          25
+        ],
+        [
+          1,
+          25
+        ]
+      ]
+    }
+  ],
+  "scope": "Complete finite coefficient profiles, without a rank-sum optimum or a uniform favorable rank bound.",
+  "source_sha256": {
+    "tools/check_quantum_block_braid_profile.py": "f70836ac95ad86330e0223e2682166fdfe1bf34ce34d00242094ed7156c7a753",
+    "tools/quantum_block_braid.py": "116d689f620a5d8fb784387d3eccc311497f56fbfc05a400ac8188f2c13cfc94",
+    "tools/paired_path_crossing.py": "309fb3f10a230475d5fae68625fcee5f5cfb50fc52491cc63f0765a7627c5c4b",
+    "tools/bounded_spin_crossing.py": "cefc38c88cdf76650f4966fa9e49d0edbc9ce4c2eec3848dd2716f35ee3819bd",
+    "tools/bounded_spin_support.py": "d3771564da3fb1d88ebdc2444f4e62db6754b2f72ad11101ed72a078a2d4a678",
+    "tools/check_fourier_multiplication_gates.py": "b094e9101f867d624aafa7bd851cb00b1ea411d1dc69cb700e742e609f94efc9",
+    "tools/check_fixed_field_descent.py": "831c1fe850b9d21b8d0050e310adaed2586251950542bb7d274e2ffd334ea8ac"
+  }
+}

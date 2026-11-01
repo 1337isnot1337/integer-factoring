@@ -494,6 +494,13 @@ The [height-cutoff tradeoff](research/paired-path-height-tradeoff.md)
 extends the construction to any fixed cutoff: the individual extreme
 rank exponent approaches one as the cutoff grows. The field stays fixed
 for each chosen cutoff. Run `make verify-paired-height`.
+The [quantum block-braid compiler](research/quantum-block-braid-crossings.md)
+uses local cup and projector identities to prove a different all-length
+crossing endpoint. It has degree `O(lambda^2)` and entries computable
+within the allowed `2^O(lambda)` construction budget. Its complete
+six-site coefficient span has dimension 33; favorable two-cut ranks
+remain open. Run `make verify-quantum-braid` and the optional complete
+`make verify-quantum-braid-profiles`.
 
 The [exact nonlinear charge theorem](research/nonlinear-symbol-charge-lattices.md)
 characterizes every admissible pair of full-symbol potentials for the

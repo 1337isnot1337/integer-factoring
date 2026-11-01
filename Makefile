@@ -248,6 +248,13 @@ verify-paired-paths:
 verify-paired-height:
 	python3 tools/check_paired_path_height.py
 
+.PHONY: verify-quantum-braid verify-quantum-braid-profiles
+verify-quantum-braid:
+	python3 tools/check_quantum_block_braid.py
+
+verify-quantum-braid-profiles:
+	python3 tools/check_quantum_block_braid_profile.py
+
 .PHONY: verify-downset-crossings verify-regular-code-crossings
 verify-downset-crossings:
 	python3 tools/check_downset_crossing_normal_form.py
