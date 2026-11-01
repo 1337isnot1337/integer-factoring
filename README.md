@@ -33,6 +33,15 @@ scalar. Its target has the same logarithmic saving exponent; its complete
 primitive-machine runtime remains open. The pinned Python prototype replay
 passes, without a new Lean build or stronger bound here.
 
+The [integral bad-prime spin limit](research/integral-spin-annihilators.md)
+has a compact all-place diagnostic: polynomial inverse witnesses bound every
+Smith order by two at characteristics 5, 7 and 11, excluding their bare
+two-place target at every scale and angle. Characteristic three gives an
+exact old seed with spectator labels. This closes that construction's bare
+lane; it supplies no factoring improvement or new Lean work.
+The [clean full replay receipt](evidence/integral-spin-full-verification.json)
+pins verification through source `ad91127`; subsequent additions are separate.
+
 <!-- arithmetic-space-checkpoint:start -->
 The Pascal search now supports [arbitrary exponent permutations](research/permuted-pascal-free-gauges.md),
 [correlated symbol potentials](research/pascal-symbol-potentials.md),
