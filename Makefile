@@ -188,6 +188,10 @@ verify-joint-endpoint-loops:
 verify-joint-nilpotent-depths:
 	python3 tools/check_joint_nilpotent_depths.py
 
+.PHONY: verify-joint-filtered-gauges
+verify-joint-filtered-gauges:
+	python3 tools/check_joint_filtered_gauges.py
+
 .PHONY: verify-group-shears
 verify-group-shears:
 	python3 tools/check_group_shear_crossings.py

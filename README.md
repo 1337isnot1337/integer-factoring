@@ -733,6 +733,12 @@ At a monomial endpoint pole, exact quartic/Frobenius elimination also
 reduces every higher-nilpotency energy generator to that square-zero
 sector or a tensor-preserving direction, at every positive depth.
 Run `make verify-joint-nilpotent-depths`.
+The [opposite-filtration lemma](research/joint-filtered-gauge-rigidity.md)
+extends zero-profile preservation to a 347-dimensional constant gauge
+group, then proves that retaining the original infinity pole forces it
+back to the 69-dimensional energy-block group. It also gives the exact
+extra pole in terms of the largest energy difference in the inverse gauge.
+Run `make verify-joint-filtered-gauges`.
 
 The [group-shear extension](research/group-shear-crossings.md) implements
 the swap through three multiplication/division shears over any finite
