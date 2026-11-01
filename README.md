@@ -291,8 +291,9 @@ A [96-letter binary construction](research/coherent-q96-pressure.md) certifies
 The exact comparison holds for `0 < r <= 4/5`; it is not an all-scale
 improvement. Both 9,216-order profiles and an outward-rounded rational
 pressure certificate are retained. The F4 hyperoval result below gives a
-smaller bound; the new F8 hyperoval improves it to `rho < 0.710005835`
-with the same 96-letter size and both natural profiles improved at every scale.
+smaller bound; the [F8 retraction refinement](research/f8-hyperoval-retraction-refinement.md)
+reaches `rho < 0.710005787198` at the same 96-letter size, with both natural
+profiles improved at every positive scale.
 
 [Graded quotient codes](research/coherent-graded-quotients.md) supply explicit
 mixed-occupation physical maps. Their complete zero-cut profiles equal the
@@ -663,7 +664,7 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs five groups on 
 
 ## Current research frontier
 
-- [F8 hyperoval crossing](research/f8-hyperoval-crossing-bound.md): exact rho < 0.710005835 at the same 96-letter size. Both 9,216-order natural profiles strictly improve the retained F4 profiles at every positive scale. A source-pinned full reconstruction, independent entry controls and an explicit rational type certify the result. This remains above 1/sqrt(2); the factoring exponent stays 1/2.
+- [F8 hyperoval retraction refinement](research/f8-hyperoval-retraction-refinement.md): exact rho < 0.710005787198 at the same 96-letter size and with the same hyperoval image. A rank-one change of retraction improves both complete natural profiles at every positive scale over the earlier F8 and F4 constructions. Full profiles, independent entries and a rational physical type certify the result. The factoring exponent remains 1/2.
 
 - [F4 hyperoval crossing](research/f4-hyperoval-crossing-bound.md): exact rho < 0.710005861, slightly improving the pinned coordinate 96-letter bound. Both complete cuts and an explicit type with denominator 2^36 are certified. This remains above 1/sqrt(2), so the complete factoring exponent stays 1/2.
 

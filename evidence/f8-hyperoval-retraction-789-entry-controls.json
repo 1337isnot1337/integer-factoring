@@ -1,0 +1,390 @@
+{
+  "completed": true,
+  "pivot_columns": [
+    7,
+    8,
+    9
+  ],
+  "full_polynomial_entries": 166,
+  "nonbinary_entries": 17,
+  "third_plane_entries": 15,
+  "independent_binary_determinants": 342,
+  "blocks": [
+    {
+      "charge": 0,
+      "cut": "zero",
+      "pairs": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "charge": 0,
+      "cut": "infinity",
+      "pairs": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "charge": 1,
+      "cut": "zero",
+      "pairs": [
+        [
+          90,
+          0
+        ],
+        [
+          87,
+          0
+        ],
+        [
+          0,
+          87
+        ]
+      ]
+    },
+    {
+      "charge": 1,
+      "cut": "infinity",
+      "pairs": [
+        [
+          90,
+          0
+        ],
+        [
+          87,
+          0
+        ],
+        [
+          0,
+          87
+        ]
+      ]
+    },
+    {
+      "charge": 2,
+      "cut": "zero",
+      "pairs": [
+        [
+          49,
+          75
+        ],
+        [
+          82,
+          1
+        ],
+        [
+          12,
+          0
+        ]
+      ]
+    },
+    {
+      "charge": 2,
+      "cut": "infinity",
+      "pairs": [
+        [
+          49,
+          75
+        ],
+        [
+          82,
+          1
+        ],
+        [
+          12,
+          0
+        ]
+      ]
+    },
+    {
+      "charge": 3,
+      "cut": "zero",
+      "pairs": [
+        [
+          94,
+          0
+        ],
+        [
+          8,
+          88
+        ],
+        [
+          77,
+          4
+        ]
+      ]
+    },
+    {
+      "charge": 3,
+      "cut": "infinity",
+      "pairs": [
+        [
+          94,
+          0
+        ],
+        [
+          8,
+          88
+        ],
+        [
+          77,
+          4
+        ]
+      ]
+    },
+    {
+      "charge": 4,
+      "cut": "zero",
+      "pairs": [
+        [
+          49,
+          93
+        ],
+        [
+          28,
+          16
+        ],
+        [
+          50,
+          32
+        ]
+      ]
+    },
+    {
+      "charge": 4,
+      "cut": "infinity",
+      "pairs": [
+        [
+          49,
+          93
+        ],
+        [
+          28,
+          16
+        ],
+        [
+          50,
+          32
+        ]
+      ]
+    },
+    {
+      "charge": 5,
+      "cut": "zero",
+      "pairs": [
+        [
+          35,
+          94
+        ],
+        [
+          59,
+          32
+        ],
+        [
+          93,
+          74
+        ]
+      ]
+    },
+    {
+      "charge": 5,
+      "cut": "infinity",
+      "pairs": [
+        [
+          35,
+          94
+        ],
+        [
+          59,
+          32
+        ],
+        [
+          93,
+          74
+        ]
+      ]
+    },
+    {
+      "charge": 6,
+      "cut": "zero",
+      "pairs": [
+        [
+          94,
+          19
+        ],
+        [
+          22,
+          78
+        ],
+        [
+          80,
+          47
+        ]
+      ]
+    },
+    {
+      "charge": 6,
+      "cut": "infinity",
+      "pairs": [
+        [
+          94,
+          19
+        ],
+        [
+          22,
+          78
+        ],
+        [
+          80,
+          47
+        ]
+      ]
+    },
+    {
+      "charge": 7,
+      "cut": "zero",
+      "pairs": [
+        [
+          30,
+          94
+        ],
+        [
+          27,
+          85
+        ],
+        [
+          47,
+          38
+        ]
+      ]
+    },
+    {
+      "charge": 7,
+      "cut": "infinity",
+      "pairs": [
+        [
+          30,
+          94
+        ],
+        [
+          27,
+          85
+        ],
+        [
+          47,
+          38
+        ]
+      ]
+    },
+    {
+      "charge": 8,
+      "cut": "zero",
+      "pairs": [
+        [
+          93,
+          92
+        ],
+        [
+          56,
+          27
+        ],
+        [
+          71,
+          30
+        ]
+      ]
+    },
+    {
+      "charge": 8,
+      "cut": "infinity",
+      "pairs": [
+        [
+          93,
+          92
+        ],
+        [
+          56,
+          27
+        ],
+        [
+          71,
+          30
+        ]
+      ]
+    },
+    {
+      "charge": 9,
+      "cut": "zero",
+      "pairs": [
+        [
+          29,
+          92
+        ],
+        [
+          92,
+          29
+        ],
+        [
+          92,
+          38
+        ]
+      ]
+    },
+    {
+      "charge": 9,
+      "cut": "infinity",
+      "pairs": [
+        [
+          29,
+          92
+        ],
+        [
+          92,
+          29
+        ],
+        [
+          92,
+          38
+        ]
+      ]
+    },
+    {
+      "charge": 10,
+      "cut": "zero",
+      "pairs": [
+        [
+          92,
+          92
+        ]
+      ]
+    },
+    {
+      "charge": 10,
+      "cut": "infinity",
+      "pairs": [
+        [
+          92,
+          92
+        ]
+      ]
+    }
+  ],
+  "profile_sha256": "8843740e917d0b47ff82b09c37e64993256e69c5704bd9b950cb7439577ced8e",
+  "source_sha256": {
+    "check_f8_hyperoval_retraction_entries.py": "637a582daefcd23defb55d8b26a86148edb180ddfccaff698a73ede8fd5336b0",
+    "probe_f8_hyperoval_retraction.py": "b6049a51a7499203746956e1e4b83936267bd676c641febce45ac3efa8fe4801",
+    "coherent_f8_maps.py": "8311c760387befd0d7ca709397063d4498dbbfb9a66c74f882c9e924f4c2cfa4",
+    "coherent_hot_compounds_f8.py": "6194da70ba852a0251d26efe1ce509f5b834d6c44b9585847f6040d3c456cc4a",
+    "coherent_hot_compounds_f8.cpp": "f7dd6ae710456b7430e898144dca9d0118fa9a5e9ac0df9966b8663a75262f73",
+    "coherent_hot_compounds.py": "43971c67f7fb938a836863ddf13794df4bc772ff20e043a5190174552231554a",
+    "selected_gaussian_coefficients.cpp": "b648c25e65907b8528bd0491ef2a67442cc1c6982f95e1d5335bc41246a51a15",
+    "native_rectangular_smith_f4.cpp": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6"
+  },
+  "scope": "Independent selected complete entries from original-B subset determinants, not a second full matrix/profile reconstruction."
+}
