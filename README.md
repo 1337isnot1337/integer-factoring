@@ -2169,3 +2169,11 @@ by the changed leaf. Every atom, signed word and gcd decision is preserved.
 On the retained 80-bit prefix, three matched component runs reduce the
 construction-and-export median from 17.864 seconds to 1.171 seconds; all
 9,776 literal ideal identities replay independently.
+
+[Positive ratio lookahead](research/circuit-box-ratio-lookahead.md) turns the
+inverse-window point query into a complete adaptive search: each ratio bit
+checks two product bits with exact affine counts. A divisor-count argument
+gives `2^(n/3+O(n/log n))` bit time and polynomial space, including direct
+smallest-prime-factor recovery. This improves that representation's earlier
+half-exponent enumeration, while remaining weaker than the repository's main
+theorem and older general factoring algorithms. The scoring exponent stays `1/2`.

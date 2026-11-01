@@ -1,5 +1,7 @@
 # Research index
 
+- [Positive ratio lookahead and complete adaptive factoring](circuit-box-ratio-lookahead.md): exact positive counts, a fully charged `2^(n/3+O(n/log n))` smallest-prime-factor algorithm with polynomial space, and complete checks through the declared 51-bit empty rectangles; a representation-specific advance, not a scoring improvement.
+
 - [Exact quotient updates for oriented product trees](quotient-update-oriented-basis.md): identical products and overlap decisions, charged unequal-operand arithmetic, 9,776 literal ideal replays, and matched component timings.
 
 - [Sparse unit elimination with complete integer certificates](sparse-unit-presentation.md): identical deterministic pivots and all four presentation maps, 606 small controls, complete 64/80-bit replays and matched component timings.

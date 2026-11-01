@@ -2525,3 +2525,10 @@ verify-oriented-refinement: verify-quotient-update-oriented-basis
 
 verify-quotient-update-oriented-basis:
 	python3 tools/check_quotient_update_oriented_basis.py --repetitions 1
+
+.PHONY: verify-circuit-box-ratio-lookahead
+
+verify-circuit-box-normalization: verify-circuit-box-ratio-lookahead
+
+verify-circuit-box-ratio-lookahead:
+	python3 tools/check_circuit_box_ratio_lookahead.py --output /tmp/integer-factoring-ratio-lookahead.json
