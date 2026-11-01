@@ -1,0 +1,26 @@
+{
+  "source_commit": "21f0790621d0893a0c19d0251fb34b85e36f9a57",
+  "source_tree": "c8bd5aa00500636bd20dcfe54f7c3e35acf9a3ef",
+  "started_utc": "2026-11-01T20:12:48.824597+00:00",
+  "commands": [
+    [
+      "make",
+      "verify"
+    ]
+  ],
+  "pre_status": "",
+  "status": "pass",
+  "results": [
+    {
+      "command": [
+        "make",
+        "verify"
+      ],
+      "returncode": 0,
+      "seconds": 783.9441017261706
+    }
+  ],
+  "seconds": 783.9443329549395,
+  "finished_utc": "2026-11-01T20:25:54.842198+00:00",
+  "post_status": ""
+}

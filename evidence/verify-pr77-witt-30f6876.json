@@ -1,0 +1,28 @@
+{
+  "source_commit": "30f687683b7d2eea4c8777fec301e04a51c629f0",
+  "source_tree": "d08eaae010b996b1168f696667b2d4c9cbc920c3",
+  "started_utc": "2026-11-01T20:25:36.665225+00:00",
+  "commands": [
+    [
+      "make",
+      "verify-witt-trace-words",
+      "verify-docs"
+    ]
+  ],
+  "pre_status": "",
+  "status": "pass",
+  "results": [
+    {
+      "command": [
+        "make",
+        "verify-witt-trace-words",
+        "verify-docs"
+      ],
+      "returncode": 0,
+      "seconds": 12.225938007701188
+    }
+  ],
+  "seconds": 12.226149033289403,
+  "finished_utc": "2026-11-01T20:25:50.606453+00:00",
+  "post_status": ""
+}

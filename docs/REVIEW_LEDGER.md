@@ -1189,3 +1189,23 @@ The focused target and documentation checks are the local gate. A full
 default replay at `21f0790` predates this addition. Native integer digit or
 exact-division circuits and a stronger complete factoring result remain open;
 no Lean or independent mathematical review is claimed.
+
+## Exact divided-power integration and native-word source replay
+
+The clean frozen source `21f0790621d0893a0c19d0251fb34b85e36f9a57`,
+tree `c8bd5aa00500636bd20dcfe54f7c3e35acf9a3ef`, passed `make verify` in
+783.94 seconds. The [receipt](../evidence/verify-divided-power-integrated-21f0790.json)
+and [complete compressed log](../evidence/verify-divided-power-integrated-21f0790.stdout.txt.xz)
+record the exact source and clean pre/post state. This covers the
+divided-power implementation and PR #76 integration, and **predates** the
+Artin--Hasse addition and PR #77 native-word circuits.
+
+Separately, PR #77 source `30f687683b7d2eea4c8777fec301e04a51c629f0`
+passed its native-word and documentation targets in 12.23 seconds on a
+clean frozen checkout. Its [receipt](../evidence/verify-pr77-witt-30f6876.json)
+and [complete compressed log](../evidence/verify-pr77-witt-30f6876.stdout.txt.xz)
+retain the exact commands and source scope. The ordinary source review
+checked the cited ASW cover/genus/point bound, constant twist and trace
+kernel, precision depth, fibre-weighted existence and prefix recovery.
+This does not implement the missing query counter or establish a stronger
+factoring bound; no independent mathematical acceptance is claimed.
