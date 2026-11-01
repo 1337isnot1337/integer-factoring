@@ -1,0 +1,142 @@
+{
+  "integer": 14132880935215926553,
+  "bits": 64,
+  "cutoff": 127,
+  "max_queries": 8192,
+  "checkpoint_interval": 256,
+  "factor": 3332910829,
+  "queries": 2048,
+  "elapsed_seconds": 1.2320807709984365,
+  "phase_seconds": {
+    "extraction_seconds": 0.05528209997282829,
+    "graph_seconds": 0.1707072489807615,
+    "incremental_basis_seconds": 0.22575850001885556,
+    "transport_seconds": 0.02763774199411273,
+    "unit_seconds": 0.6096158920190646
+  },
+  "keys": 1806,
+  "old_base_rank": 6,
+  "core_columns": 17,
+  "core_rows": 140,
+  "independent_rank": 17,
+  "graph_counts": {
+    "anchored_components": 1030,
+    "extra_rows": 93,
+    "free_components": 60,
+    "graph_rows": 1955,
+    "input_residual_generators": 1854,
+    "input_rows": 2048,
+    "later_unit_columns_eliminated": 81,
+    "output_rows": 140,
+    "remaining_nonfree_residual_generators": 0,
+    "torsion_generator_count": 17,
+    "tree_rows_eliminated": 683,
+    "unbalanced_components": 1
+  },
+  "basis_statistics": {
+    "local_gcd_calls": 7174,
+    "local_refinements": 645,
+    "maximum_atoms": 1854,
+    "maximum_local_inputs": 4,
+    "maximum_local_norm_bits": 96,
+    "maximum_usage_entries": 2664,
+    "tree_capacity": 2048,
+    "tree_capacity_doublings": 11,
+    "tree_gcd_calls": 17450,
+    "tree_gcd_operand_bits": 72939765,
+    "tree_leaf_updates": 2172,
+    "tree_multiplication_operand_bits": 75550814,
+    "tree_multiplications": 25598,
+    "tree_product_bits": 39082,
+    "usage_entries": 2664,
+    "usage_writes": 2823
+  },
+  "verification": {
+    "input": {
+      "prime_certificates": 20,
+      "rejected_candidates": 13
+    },
+    "literal_power_checks": 2048,
+    "ideals": {
+      "literal_ideal_identities": 1806,
+      "pairwise_coprime_atoms": 1854,
+      "sparse_usage_entries": 2664
+    },
+    "graph": {
+      "inverse_generator_identities": 158,
+      "old_generator_identities": 1871,
+      "output_relation_identities": 227,
+      "input_relation_identities": 2048,
+      "integer_presentation_isomorphism": true
+    },
+    "units": {
+      "inverse_generator_identities": 77,
+      "old_generator_identities": 1871,
+      "output_relation_identities": 140,
+      "input_relation_identities": 2048,
+      "integer_presentation_isomorphism": true
+    },
+    "independent_rank": 17,
+    "extraction": {
+      "relation_dimension": 17,
+      "relation_rows": 17,
+      "relation_deficiency": 0,
+      "initial_relations_verified": 17,
+      "determinant_computed": false,
+      "annihilator_supplied": false,
+      "saturation_bound": 146,
+      "saturations": 4,
+      "kernel_passes": 5,
+      "tops_evaluated": 6,
+      "identity_tops": 4,
+      "rejected_nonidentity_tops": 1,
+      "paired_bad_top_updates": 0,
+      "group_multiplications": 683,
+      "group_inversions": 16,
+      "maximum_entry_bits": 9,
+      "termination": "useful involution"
+    },
+    "ambiguous_form": [
+      3786656293,
+      907490928,
+      3786656293
+    ],
+    "legacy_comparison": {
+      "factor": null,
+      "norm_queries": 2048,
+      "relation_rank": 6,
+      "retained_cofactor_keys": 1806,
+      "candidate_relations": 242,
+      "dependent_relations": 236,
+      "elapsed_seconds": 0.12366074800229399,
+      "cap": 2048
+    },
+    "full_legacy_comparison": {
+      "factor": 3332910829,
+      "norm_queries": 3983,
+      "relation_rank": 17,
+      "retained_cofactor_keys": 3509,
+      "candidate_relations": 474,
+      "dependent_relations": 457,
+      "recorded_elapsed_seconds": 0.262098433006031,
+      "recorded_cpu_seconds": 0.261931056,
+      "independent_replay_elapsed_seconds": 0.31113052999717183,
+      "complete_original_traversal_reproduced": true
+    }
+  },
+  "source_sha256": {
+    "tools/sparse_oriented_power_search.py": "57a5178c9afb628ef102776e4353c68763366e80cb104a70287cb306c0000c07",
+    "tools/check_sparse_oriented_power_search.py": "06c58bc8af09fe2d76af3b0d847aee0f95fdec3b8606fa9e644caa131b2cba99",
+    "tools/incremental_oriented_coprime_basis.py": "e669db7d6d6acae9eca39304d2b4ad6bd1936adba5dab929faca51ec3005a154",
+    "tools/oriented_coprime_basis.py": "dba31b12ce2a93b7de9a79f69e4ffb2a8f0aec8218f3ab6082ad25817117571d",
+    "tools/signed_residual_graph.py": "f7374233f0b6d2284316b5ddd7a5d9c32e24f7d2f9e81b2121ce77d8f142d025",
+    "tools/signed_residual_unit_elimination.py": "210bd09709f265403efc0359c64fc3f13b8504ca8f27222144f268eb548193a3",
+    "tools/cofactor_collision_relations.py": "e3ca86c6e2208edf1f5edc980ed954c6fb3919f21a4cce40a8681d0d908022c5",
+    "tools/leading_power_smooth_relations.py": "ab10b90877e39b8174164c1d201d5e1da35472b7079453acf741166142543791",
+    "tools/relation_two_saturation.py": "c1fdbfbc88029eeece010c8da63e6d864bd19e8adb58493f6977958ed3aa50f0",
+    "tools/quadratic_ideal_hnf.py": "fd9c4217f1c751c1d2f20485a35ae36ae749c24980d90a6aae13fbc471634a74",
+    "tools/check_fresh_prime_cofactor_control.py": "0bd1ff8dca962902d6bc4b0770f616bcb3afb2d58d2e9cd48711ee1c624d891d",
+    "tools/certified_small_factor.py": "d377c6a58bfc0e22f0feef4879945e45f534ee2fe8c2e4b6c1f93c63b8b732c6"
+  },
+  "scope": "Finite matched-prefix factor gain on a certified input; no uniform exponent claim."
+}

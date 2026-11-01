@@ -198,6 +198,15 @@ over every characteristic-two field. Its exact integer certificate stopped
 the F16 pilot after 24 of 851 classes; the catalogue is explicitly incomplete.
 Search continues in different lower-core families.
 Run `make verify-tensor-f16`.
+
+The [accelerated capped-profile path](research/tensor-f16-capped-search.md)
+uses binary subset determinants and exact 64-coefficient jets.
+Independent polynomial and Toeplitz checks validate the path, and a larger
+47-letter control reproduces all 2,209 capped orders. The completed
+12-profile three-pair pilot reaches a best numerical pressure fit near
+0.71273154736, which does not improve the existing frontier.
+The same note extends the old protected-core exclusion to all qualifying
+alphabets with at most 104 labels, regardless of their maximum height.
 <!-- tensor-orthogonal-checkpoint:end -->
 
 <!-- coherent-compound-checkpoint:start -->
@@ -2109,8 +2118,8 @@ The [moving-map construction](research/moving-boundary-crossings.md) permits
 polynomial physical embeddings and retractions with an exact paired identity.
 All 256 affine F4 parameter pairs of its first eight-letter boundary family
 have complete cut profiles. A separate exact theorem proves natural pressure
-`rho >= 5/7` for every polynomial deformation retaining its seven-letter
-coordinate subtensor, with no degree bound. Both core profiles agree with an
+`rho >= 5/7` for every polynomial deformation retaining its first five
+coordinate letters, with no degree bound. Both core profiles agree with an
 independent binary-polynomial Smith implementation. This closes boundary-only
 natural-pressure searches in that family; changes to lower states and other
 gauges remain open. The factoring score stays `1/2`. Run
@@ -2129,3 +2138,72 @@ retains the full default pass at `410e3e2` (341 Python command blocks,
 66 unit tests, five crossing tests, 973 Markdown files) and four focused
 moving-map checks at `1dba7ba`. These are source-specific ordinary checks;
 later integrations and the full frame search have separate status.
+
+The [same construction now permits endpoint-only splits](research/moving-boundary-crossings.md#only-the-endpoint-split-is-necessary),
+including intermediate rank loss, with 100 complete finite controls.
+An [exact quarter-prefix certificate](research/moving-boundary-crossings.md#an-exact-quarter-prefix-exclusion)
+proves natural pressure at least `5/7` for all 16,384 retained height-flow
+frames at every common scale and physical type; the full 65,536-case run
+is separate and incomplete at that snapshot. Full-gauge fits remain
+iteration-limited evidence. No improved factoring exponent is claimed.
+
+## Sparse oriented power prefixes
+
+The [sparse residual selector](research/sparse-oriented-power-prefixes.md)
+finds factors on certified 64-bit and 80-bit inputs after 2,048 and 10,240
+queries from the unchanged prime-power stream. The original selector needs
+3,983 and 38,818 queries respectively. Every power, ideal identity and integer
+presentation map is retained in a compressed replayable certificate. These
+are finite query gains: the baseline implementation is slower in wall time,
+and the uniform factoring exponent remains `1/2`.
+
+An [exact Kloosterman block evaluator](research/circuit-box-kloosterman-blocks.md)
+contracts an entire unit-frequency orbit and a ratio progression while keeping
+both ordinary interval weights. At conductor `2^1024`, the retained control
+aggregates `2^1535` frequency pairs with at most eight roots and sixteen affine
+counts. In the no-wrap range it is a positive factor-count query for one ratio
+class. The full outer sum still costs `2^(m/2)*poly(m)`, so no score improves.
+
+A [cubic graph construction](research/tensor-cubic-graph-orthogonality.md)
+provides coherent orthogonal maps at every inherited-height cutoff precisely
+when `1` is outside the binary span of three field coefficients. Its explicit
+Gram determinant proof works in every characteristic-two field. Exact mixed
+constructors and two completed 51-letter profiles are retained. These pilots
+do not improve the pressure frontier or the factoring exponent.
+
+[Sparse unit elimination](research/sparse-unit-presentation.md) preserves the
+entire reference pivot sequence and all integer presentation certificates.
+Stable identifiers and incidence updates reduce the matched 80-bit final-pass
+median from 13.116 seconds to 0.853 seconds, with verification included.
+This is a measured implementation improvement; the relation-search bound is
+unchanged.
+
+[Exact quotient tree updates](research/quotient-update-oriented-basis.md)
+replace large ancestor recomputations with exact division or multiplication
+by the changed leaf. Every atom, signed word and gcd decision is preserved.
+On the retained 80-bit prefix, three matched component runs reduce the
+construction-and-export median from 17.864 seconds to 1.171 seconds; all
+9,776 literal ideal identities replay independently.
+
+[Positive ratio lookahead](research/circuit-box-ratio-lookahead.md) turns the
+inverse-window point query into a complete adaptive search: each ratio bit
+checks two product bits with exact affine counts. A divisor-count argument
+gives `2^(n/3+O(n/log n))` bit time and polynomial space, including direct
+smallest-prime-factor recovery. This improves that representation's earlier
+half-exponent enumeration, while remaining weaker than the repository's main
+theorem and older general factoring algorithms. The scoring exponent stays `1/2`.
+
+[Compact unit traces](research/unit-presentation-traces.md) preserve the same
+integer presentation by independently checking each elementary substitution.
+On the 80-bit fixture, the additional unit certificate shrinks from 3,113,278
+to 21,638 JSON bytes while sharing the complete graph certificate. The final
+rows, retained generators and torsion image agree with the expanded maps.
+The full relation-search and factoring exponents remain unchanged.
+
+The [optimized oriented selector](research/optimized-oriented-power-search.md)
+reuses the unchanged search body with the two exact component replacements.
+Its complete 80-bit result matches the baseline while reducing the retained
+search time from 67.006 to 9.694 seconds. A new certified 96-bit input factors
+after 20,480 queries versus 35,106 for the original exact-key selector. Full
+witnesses, both integer presentation maps and the original comparison replay;
+the original selector remains faster in total time, and the score is unchanged.

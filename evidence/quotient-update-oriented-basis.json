@@ -1,0 +1,112 @@
+{
+  "claim": "Exact quotient updates preserve every atom and improve the measured component cost",
+  "tree_controls": {
+    "exact_tree_state_comparisons": 96,
+    "overlap_comparisons": 12192,
+    "capacity_doublings": 6,
+    "exact_divisions": 135
+  },
+  "ideal_controls": {
+    "literal_ideal_identities": 332,
+    "identical_refinement_batches": 8
+  },
+  "benchmark": {
+    "input_path": "evidence/sparse-oriented-power-80.json.xz",
+    "input_sha256": "f55879f2bcd0c8077c715fa1675e547e669cf9e8bfb25fe510efc5c310ebe2b7",
+    "integer": 1035490702726305096363691,
+    "keys": 9776,
+    "atoms": 10079,
+    "repetitions": 3,
+    "identical_mathematical_payload_sha256": "16dd0ed0f9a8a08cff09e06dea363b790cfc3a5b3cab821322c670ee45fecea9",
+    "verification": {
+      "literal_ideal_identities": 9776,
+      "pairwise_coprime_atoms": 10079,
+      "sparse_usage_entries": 15045
+    },
+    "methods": {
+      "ancestor_products": {
+        "runs": [
+          {
+            "wall_seconds": 18.381031741002516,
+            "cpu_seconds": 18.338786209
+          },
+          {
+            "wall_seconds": 17.512716386001557,
+            "cpu_seconds": 17.426502679000002
+          },
+          {
+            "wall_seconds": 17.863552891998552,
+            "cpu_seconds": 17.681334999999997
+          }
+        ],
+        "median_wall_seconds": 17.863552891998552,
+        "median_cpu_seconds": 17.681334999999997,
+        "statistics": {
+          "tree_gcd_calls": 128120,
+          "tree_gcd_operand_bits": 2862245271,
+          "local_gcd_calls": 44606,
+          "local_refinements": 3846,
+          "maximum_local_inputs": 5,
+          "maximum_local_norm_bits": 130,
+          "tree_multiplications": 175907,
+          "tree_multiplication_operand_bits": 2652319010,
+          "tree_leaf_updates": 11587,
+          "tree_capacity_doublings": 14,
+          "tree_capacity": 16384,
+          "tree_product_bits": 271098,
+          "maximum_atoms": 10079,
+          "usage_entries": 15045,
+          "usage_writes": 15799,
+          "maximum_usage_entries": 15045
+        }
+      },
+      "exact_quotients": {
+        "runs": [
+          {
+            "wall_seconds": 1.1714827000032528,
+            "cpu_seconds": 1.16856091
+          },
+          {
+            "wall_seconds": 1.15558142199734,
+            "cpu_seconds": 1.1555112640000011
+          },
+          {
+            "wall_seconds": 1.2090222889964934,
+            "cpu_seconds": 1.2052167989999987
+          }
+        ],
+        "median_wall_seconds": 1.1714827000032528,
+        "median_cpu_seconds": 1.16856091,
+        "statistics": {
+          "tree_gcd_calls": 128120,
+          "tree_gcd_operand_bits": 2862245271,
+          "local_gcd_calls": 44606,
+          "local_refinements": 3846,
+          "maximum_local_inputs": 5,
+          "maximum_local_norm_bits": 130,
+          "tree_multiplications": 166691,
+          "tree_multiplication_operand_bits": 2430806372,
+          "tree_leaf_updates": 11587,
+          "tree_capacity_doublings": 14,
+          "tree_capacity": 16384,
+          "tree_product_bits": 271098,
+          "maximum_atoms": 10079,
+          "usage_entries": 15045,
+          "usage_writes": 15799,
+          "maximum_usage_entries": 15045,
+          "tree_exact_divisions": 9216,
+          "tree_division_operand_bits": 222101360,
+          "tree_maximum_divisor_bits": 40,
+          "tree_maximum_update_multiplier_bits": 40
+        }
+      }
+    },
+    "scope": "Supplied-basis construction and sparse export; no complete-search timing claim."
+  },
+  "source_sha256": {
+    "tools/quotient_update_oriented_basis.py": "7a9641624a8fe95f6ff44f4c13d9bbb670f1986f26e06cb0d3e513f4b612c227",
+    "tools/check_quotient_update_oriented_basis.py": "a15d900bc511093c8d676a7a64ce39e9053879a5d60256b81525441243de9391",
+    "tools/incremental_oriented_coprime_basis.py": "e669db7d6d6acae9eca39304d2b4ad6bd1936adba5dab929faca51ec3005a154",
+    "tools/oriented_coprime_basis.py": "dba31b12ce2a93b7de9a79f69e4ffb2a8f0aec8218f3ab6082ad25817117571d"
+  }
+}

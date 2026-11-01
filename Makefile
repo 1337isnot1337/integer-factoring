@@ -26,6 +26,8 @@ verify-moving-boundary:
 	python3 tools/check_moving_boundary_core_floor.py --output /tmp/moving-boundary-core-floor.json
 	python3 tools/check_moving_interior_crossings.py --output /tmp/moving-interior-controls.json
 	python3 tools/check_moving_physical_frames.py --output /tmp/moving-physical-frame-controls.json
+	python3 tools/check_moving_five_core_floor.py --output /tmp/moving-five-core-floor.json
+	python3 tools/check_moving_frame_prefix.py --output /tmp/moving-frame-height1-prefix16384-floor.json
 
 .PHONY: verify-pole-smith verify-joint-top-boundary
 verify-pole-smith:
@@ -2482,3 +2484,72 @@ verify-oriented-refinement: verify-incremental-oriented-basis
 
 verify-incremental-oriented-basis:
 	python3 tools/check_incremental_oriented_coprime_basis.py
+
+.PHONY: verify-tensor-f16-fast
+
+verify-tensor-f16: verify-tensor-f16-fast
+
+verify-tensor-f16-fast:
+	python3 tools/check_tensor_hot_compounds_f16_fast.py --output /tmp/integer-factoring-tensor-f16-fast-check.json
+
+.PHONY: verify-sparse-oriented-power
+
+verify-oriented-refinement: verify-sparse-oriented-power
+
+verify-sparse-oriented-power:
+	python3 tools/check_sparse_oriented_power_search.py --replay evidence/sparse-oriented-power-64.json.xz
+	python3 tools/check_sparse_oriented_power_search.py --replay evidence/sparse-oriented-power-80.json.xz
+
+.PHONY: verify-binary-extension-smith
+verify-binary-extension-smith:
+	python3 tools/check_binary_extension_smith.py
+
+.PHONY: verify-circuit-box-kloosterman-blocks
+
+verify-circuit-box-normalization: verify-circuit-box-kloosterman-blocks
+
+verify-circuit-box-kloosterman-blocks:
+	python3 tools/check_circuit_box_kloosterman_blocks.py --output /tmp/integer-factoring-kloosterman-blocks.json
+
+.PHONY: verify-tensor-cubic-graph
+
+verify-tensor-f16: verify-tensor-cubic-graph
+
+verify-tensor-cubic-graph:
+	python3 tools/check_tensor_hot_compounds_f16_mixed.py --output /tmp/integer-factoring-tensor-cubic-graph.json
+
+.PHONY: verify-sparse-unit-presentation
+
+verify-oriented-refinement: verify-sparse-unit-presentation
+
+verify-sparse-unit-presentation:
+	python3 tools/check_sparse_unit_presentation.py
+
+.PHONY: verify-quotient-update-oriented-basis
+
+verify-oriented-refinement: verify-quotient-update-oriented-basis
+
+verify-quotient-update-oriented-basis:
+	python3 tools/check_quotient_update_oriented_basis.py --repetitions 1
+
+.PHONY: verify-circuit-box-ratio-lookahead
+
+verify-circuit-box-normalization: verify-circuit-box-ratio-lookahead
+
+verify-circuit-box-ratio-lookahead:
+	python3 tools/check_circuit_box_ratio_lookahead.py --output /tmp/integer-factoring-ratio-lookahead.json
+
+.PHONY: verify-unit-presentation-trace
+
+verify-oriented-refinement: verify-unit-presentation-trace
+
+verify-unit-presentation-trace:
+	python3 tools/check_unit_presentation_trace.py
+
+.PHONY: verify-optimized-oriented-power
+
+verify-oriented-refinement: verify-optimized-oriented-power
+
+verify-optimized-oriented-power:
+	python3 tools/check_optimized_oriented_power_search.py --replay evidence/optimized-oriented-power-search.json
+	python3 tools/check_optimized_oriented_fresh_run.py --replay evidence/optimized-oriented-power-96.json.xz
