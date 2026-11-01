@@ -906,6 +906,12 @@ degrees gives an explicit scale-one crossing sum at every length, with
 both cut bounds and every occupancy convolution channel retained.
 A favorable complete rank sum remains unproved. Run
 `make verify-braid-fusion-occupancy` (NumPy).
+This also gives [exact leading auxiliary ranks](research/nilpotent-leading-rank-automaton.md):
+a closed 22-state fusion automaton proves rational generating functions
+at every even length. The leading central ranks have half-power scale
+in the label count and sharpen the earlier counting envelope; full
+contracted coefficients can still vanish. This does not close the
+complete crossing rank sum. Run `make verify-braid-leading-automaton` (NumPy).
 
 The [exact nonlinear charge theorem](research/nonlinear-symbol-charge-lattices.md)
 characterizes every admissible pair of full-symbol potentials for the

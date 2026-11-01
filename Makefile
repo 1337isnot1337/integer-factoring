@@ -360,6 +360,10 @@ verify-braid-spectral-fusion:
 verify-braid-fusion-occupancy:
 	python3 tools/check_quantum_braid_fusion_occupancy.py
 
+.PHONY: verify-braid-leading-automaton
+verify-braid-leading-automaton:
+	python3 tools/check_nilpotent_seam_top_rank.py
+
 .PHONY: verify-downset-crossings verify-regular-code-crossings
 verify-downset-crossings:
 	python3 tools/check_downset_crossing_normal_form.py
