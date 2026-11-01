@@ -832,3 +832,23 @@ verify-explicit-fusion:
 verify-carry-fourier:
 	python3 tools/check_carry_fourier_elimination.py --output /tmp/integer-factoring-carry-fourier-replay.json
 
+.PHONY: verify-paired-affine-space verify-bell-jets verify-finite-fibers verify-closed-place-oracles
+
+verify-paired-affine-space:
+	OPENBLAS_NUM_THREADS=1 python3 tools/saturate_paired_trace_affine_space.py evidence/independent-paired-affine-degree-basis.json.gz --output /tmp/integer-factoring-paired-affine-saturation.json --basis-output /tmp/integer-factoring-paired-affine-basis.json.gz
+
+verify-bell-jets:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_entrywise_reflection_constraints.py --output /tmp/integer-factoring-entrywise-jets.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_bell_jet_crt_crossings.py --output /tmp/integer-factoring-bell-crt.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_bell_jet_transversality.py --output /tmp/integer-factoring-bell-transversality.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_ramified_carrier_minors.py --output /tmp/integer-factoring-ramified-carrier-minors.json
+
+verify-finite-fibers:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_f4_regular_smith_frames.py --output /tmp/integer-factoring-f4-regular-frames.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_finite_jet_smith_fibers.py --output /tmp/integer-factoring-finite-jet-fibers.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_f4_two_cut_smith_fibers.py --output /tmp/integer-factoring-f4-two-cut-fibers.json
+
+verify-closed-place-oracles:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_f4_closed_place_oracle.py --output /tmp/integer-factoring-f4-closed-oracle.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_paired_mixed_place_pressure.py --output /tmp/integer-factoring-paired-mixed-pressure.json
+

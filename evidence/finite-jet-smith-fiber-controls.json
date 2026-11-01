@@ -1,0 +1,506 @@
+{
+  "status": "passed",
+  "scope": "Exact F4 equation reduction, complete fixed-frame replay, independent Hasse/endpoint controls, and complete-oracle pressure agreement; no global optimization claim.",
+  "small_systems": [
+    {
+      "variables": 2,
+      "equations": 1,
+      "solutions": 4
+    },
+    {
+      "variables": 3,
+      "equations": 2,
+      "solutions": 4
+    },
+    {
+      "variables": 4,
+      "equations": 3,
+      "solutions": 4
+    },
+    {
+      "variables": 5,
+      "equations": 4,
+      "solutions": 4
+    },
+    {
+      "variables": 2,
+      "equations": 5,
+      "solutions": 0
+    },
+    {
+      "variables": 3,
+      "equations": 6,
+      "solutions": 0
+    },
+    {
+      "variables": 4,
+      "equations": 7,
+      "solutions": 0
+    },
+    {
+      "variables": 5,
+      "equations": 1,
+      "solutions": 256
+    },
+    {
+      "variables": 2,
+      "equations": 2,
+      "solutions": 0
+    },
+    {
+      "variables": 3,
+      "equations": 3,
+      "solutions": 0
+    },
+    {
+      "variables": 4,
+      "equations": 4,
+      "solutions": 1
+    },
+    {
+      "variables": 5,
+      "equations": 5,
+      "solutions": 1
+    },
+    {
+      "variables": 2,
+      "equations": 6,
+      "solutions": 0
+    },
+    {
+      "variables": 3,
+      "equations": 7,
+      "solutions": 0
+    },
+    {
+      "variables": 4,
+      "equations": 1,
+      "solutions": 64
+    },
+    {
+      "variables": 5,
+      "equations": 2,
+      "solutions": 64
+    },
+    {
+      "variables": 2,
+      "equations": 3,
+      "solutions": 0
+    },
+    {
+      "variables": 3,
+      "equations": 4,
+      "solutions": 0
+    },
+    {
+      "variables": 4,
+      "equations": 5,
+      "solutions": 1
+    },
+    {
+      "variables": 5,
+      "equations": 6,
+      "solutions": 1
+    },
+    {
+      "variables": 2,
+      "equations": 7,
+      "solutions": 0
+    },
+    {
+      "variables": 3,
+      "equations": 1,
+      "solutions": 16
+    },
+    {
+      "variables": 4,
+      "equations": 2,
+      "solutions": 16
+    },
+    {
+      "variables": 5,
+      "equations": 3,
+      "solutions": 16
+    }
+  ],
+  "brute_force_assignments": 8160,
+  "fiber_variables": 394,
+  "full_tensor_controls": [
+    {
+      "requests": 0,
+      "sample": 0,
+      "solution_dimension": 28,
+      "tensor_sha256": "c0a850cf9561d4e4ad5fe697507f746fcc091cf7f8caeb8355fab726cba4e494",
+      "complete_frame_profiles": [
+        [
+          -8,
+          -6,
+          -2,
+          0,
+          2,
+          4,
+          6,
+          8,
+          8,
+          10,
+          12,
+          14,
+          16,
+          18,
+          22,
+          24
+        ],
+        [
+          8,
+          10,
+          14,
+          16,
+          18,
+          20,
+          22,
+          24,
+          24,
+          26,
+          28,
+          30,
+          32,
+          34,
+          38,
+          40
+        ]
+      ],
+      "fixed_gauge_cost_replay": {
+        "fast_rho": 1.0000007508864541,
+        "complete_oracle_rho": 1.0000007508864541,
+        "absolute_difference": 0.0
+      }
+    },
+    {
+      "requests": 0,
+      "sample": 1,
+      "solution_dimension": 28,
+      "tensor_sha256": "ec4f3608c7963b1dbcefba86add2e3209dbb39d904f86802cfac68c00a6c91f6",
+      "complete_frame_profiles": [
+        [
+          -8,
+          -6,
+          -2,
+          0,
+          2,
+          4,
+          6,
+          8,
+          8,
+          10,
+          12,
+          14,
+          16,
+          18,
+          22,
+          24
+        ],
+        [
+          8,
+          10,
+          14,
+          16,
+          18,
+          20,
+          22,
+          24,
+          24,
+          26,
+          28,
+          30,
+          32,
+          34,
+          38,
+          40
+        ]
+      ]
+    },
+    {
+      "requests": 256,
+      "sample": 0,
+      "solution_dimension": 22,
+      "tensor_sha256": "c0a850cf9561d4e4ad5fe697507f746fcc091cf7f8caeb8355fab726cba4e494",
+      "complete_frame_profiles": [
+        [
+          -8,
+          -6,
+          -2,
+          0,
+          2,
+          4,
+          6,
+          8,
+          8,
+          10,
+          12,
+          14,
+          16,
+          18,
+          22,
+          24
+        ],
+        [
+          8,
+          10,
+          14,
+          16,
+          18,
+          20,
+          22,
+          24,
+          24,
+          26,
+          28,
+          30,
+          32,
+          34,
+          38,
+          40
+        ]
+      ]
+    },
+    {
+      "requests": 256,
+      "sample": 1,
+      "solution_dimension": 22,
+      "tensor_sha256": "bae6429aa28a10fafcd27bf3bf4dbf501924db978b7dfdf95ff0407e84eaf3b0",
+      "complete_frame_profiles": [
+        [
+          -8,
+          -6,
+          -2,
+          0,
+          2,
+          4,
+          6,
+          8,
+          8,
+          10,
+          12,
+          14,
+          16,
+          18,
+          22,
+          24
+        ],
+        [
+          8,
+          10,
+          14,
+          16,
+          18,
+          20,
+          22,
+          24,
+          24,
+          26,
+          28,
+          30,
+          32,
+          34,
+          38,
+          40
+        ]
+      ]
+    },
+    {
+      "requests": 192,
+      "sample": 0,
+      "solution_dimension": 315,
+      "tensor_sha256": "875bcd834c37e3ab3c2a44add36f82f19b35abfc5acab588c558db2c15d7c0b4",
+      "complete_frame_profiles": [
+        [
+          -14,
+          -12,
+          -8,
+          -6,
+          -4,
+          -2,
+          0,
+          2,
+          2,
+          4,
+          6,
+          8,
+          10,
+          12,
+          16,
+          18
+        ],
+        [
+          8,
+          10,
+          13,
+          15,
+          15,
+          17,
+          19,
+          21,
+          21,
+          23,
+          25,
+          27,
+          31,
+          33,
+          38,
+          40
+        ]
+      ],
+      "fixed_gauge_cost_replay": {
+        "fast_rho": 0.9349551204909136,
+        "complete_oracle_rho": 0.9349551204909136,
+        "absolute_difference": 0.0
+      }
+    },
+    {
+      "requests": 192,
+      "sample": 1,
+      "solution_dimension": 315,
+      "tensor_sha256": "16c749eaedfec24caac4c68c68bc597e28f801e7e2b551d8650f064a7786b263",
+      "complete_frame_profiles": [
+        [
+          -14,
+          -12,
+          -8,
+          -6,
+          -4,
+          -2,
+          0,
+          2,
+          2,
+          4,
+          6,
+          8,
+          10,
+          12,
+          16,
+          18
+        ],
+        [
+          4,
+          8,
+          8,
+          10,
+          12,
+          14,
+          16,
+          18,
+          18,
+          20,
+          22,
+          24,
+          26,
+          28,
+          32,
+          34
+        ]
+      ]
+    },
+    {
+      "requests": 96,
+      "sample": 0,
+      "solution_dimension": 374,
+      "tensor_sha256": "c0a850cf9561d4e4ad5fe697507f746fcc091cf7f8caeb8355fab726cba4e494",
+      "complete_frame_profiles": [
+        [
+          -8,
+          -6,
+          -2,
+          0,
+          2,
+          4,
+          6,
+          8,
+          8,
+          10,
+          12,
+          14,
+          16,
+          18,
+          22,
+          24
+        ],
+        [
+          8,
+          10,
+          14,
+          16,
+          18,
+          20,
+          22,
+          24,
+          24,
+          26,
+          28,
+          30,
+          32,
+          34,
+          38,
+          40
+        ]
+      ]
+    },
+    {
+      "requests": 96,
+      "sample": 1,
+      "solution_dimension": 374,
+      "tensor_sha256": "378e9aafcbaa1f98018d7d23a98a999a825a45d4821572a286c78b06896aaa16",
+      "complete_frame_profiles": [
+        [
+          -14,
+          -12,
+          -8,
+          -6,
+          -4,
+          -2,
+          0,
+          2,
+          2,
+          4,
+          6,
+          8,
+          10,
+          12,
+          16,
+          18
+        ],
+        [
+          4,
+          8,
+          8,
+          10,
+          12,
+          14,
+          16,
+          18,
+          18,
+          20,
+          22,
+          24,
+          26,
+          28,
+          32,
+          35
+        ]
+      ]
+    }
+  ],
+  "independent_Hasse_entries": 1088,
+  "independent_endpoint_entries": 2048,
+  "inconsistent_target_rejected": true,
+  "source_sha256": {
+    "check_finite_jet_smith_fibers.py": "f061443ea13f1d0731c5d1c38e728d469f8c98a154f36f3504b206a7f9c8b170",
+    "finite_jet_smith_fibers.py": "28c2b4c2559c62f9a79fe5c91d76f9fb3077bf46c27e48c46dffbc2e8f3645d0",
+    "finite_precision_smith_frames.py": "99f275da5775c4438b272929840a6942a7eb7489480f76d4f129b39aaf955e8c",
+    "full_alphabet_two_cut_lattices.py": "cbc67b9e3f4f422a34e1474e0dc02eba9c741b3b7b836b315123d061571f0caf",
+    "search_finite_jet_smith_fibers.py": "e746bced8cde4b0317fd8a82d8924dc477469a328eb3280883f77c8a30413235",
+    "check_bell_jet_crt_crossings.py": "2e2b4c5d6d8f94e334c8888688a4159a6cee0b776cbfdccac5310140573df212",
+    "check_dense_coupled_reflection_frames.py": "3ca7c1117cc7c5a36b3da9db567194c29e82d22a0cf7c6fad49bbc220151b178",
+    "search_fused_mixed_weighted.py": "f8cd9699a7154e9b3a625b6e3d169468d656422d7dcdfc0ccdb374e80187af9b",
+    "affine_place_profile_oracle.py": "4d65e6ac7adc6d6d2cb5935b5f89d5b39b4ce2c09150f1f90ac814561d5eff90"
+  }
+}

@@ -16,6 +16,19 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Complete paired affine space](complete-paired-trace-affine-space.md): an exact 5,175-dimensional closure equals the full paired-trace space, with a canonical sparse basis and a sharp 3,375-dimensional degree-sixteen slice.
+- [Affine quadratic-place crossing](affine-quadratic-place-crossings.md): an explicit physical affine combination creates new finite singular places, with complete local profiles and independent determinant checks.
+- [Asymmetric mixed-place crossings](asymmetric-mixed-place-crossings.md): unequal supporting weights use complete local profiles, common physical types, and full opposite-flag costs.
+- [Direct entrywise Hermite interpolation](entrywise-reflection-jet-interpolation.md): solve local entry constraints first, then at most `31(d-1)` independent trace equations; exact Bell CRT constructions provide opposite high-order jets.
+- [Opposite Bell-jet transversality](bell-jet-transversality.md): for every invertible pair of Bell forms, a unique carrier reaches eighth order simultaneously at the two designated cuts.
+- [Ramified carrier minors](ramified-carrier-minor-domination.md): residue separation proves weighted determinantal domination for low-rank updates, with a separate all-carrier unweighted result for the alternating Bell form.
+- [Finite jets in regular Smith fibers](finite-jet-smith-fibers.md): complete entry coordinates and exact finite-precision regular frames impose finite Hasse targets over `F4`.
+- [Iterated F4 Smith fibers](f4-iterated-smith-fibers.md): general coefficient fields and exact parameter deflation expand the feasible family while preserving the stated endpoint and frame constraints.
+- [Finite-fiber singular catalogues](finite-fiber-singular-catalogues.md): full determinant factorization accounts for finite closed places and homogeneous infinity in the retained examples.
+- [Complete weighted closed-place oracles](closed-place-weighted-oracles.md): restriction of scalars and independent extension-field replay compute every channel over `F4`, including unequal paired alphabets.
+- [Paired finite-fiber restrictions](finite-fiber-paired-restrictions.md): all 200 declared restrictions, new places through degree seven, and complete bounded weighted replays are recorded with their precise search scope.
+- [Unequal-alphabet mixed-place pressure](paired-alphabet-mixed-place-crossings.md): paired dimensions and common-type entropy remain explicit throughout the asymmetric pressure calculation.
+
 - [Mixed-place Hermite crossings](mixed-place-hermite-crossings.md): opposite jet flags give two representations of every piece using disjoint point sets, with a strict exact improvement over the older unweighted same-place criterion for a ternary seed.
 - [Ternary basis and gauge witness](ternary-basis-mixed-crossing.md): an explicit endpoint-preserving basis and three complete local profiles give the exact strict certificate `rho < 821/1000`.
 - [Adaptive opposite flags](adaptive-mixed-place-crossings.md): exact cheapest-jet merges, a uniform rational interval criterion, and a fully checked four-letter fused certificate at `rho < 31/32`.

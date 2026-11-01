@@ -1,0 +1,183 @@
+{
+  "scope": "Floating objective equivalence and derivative controls. No numerical optimum or factoring improvement certified.",
+  "balanced_controls": [
+    {
+      "seed": "base",
+      "partition": 0,
+      "old_balanced_rho": 0.9712352379217927,
+      "balanced_support": 1.3735340457236591,
+      "absolute_error": 0.0
+    },
+    {
+      "seed": "base",
+      "partition": 1,
+      "old_balanced_rho": 1.6057569121919928,
+      "balanced_support": 2.2708832030962594,
+      "absolute_error": 0.0
+    },
+    {
+      "seed": "base",
+      "partition": 2,
+      "old_balanced_rho": 1.589952769897851,
+      "balanced_support": 2.24853277072221,
+      "absolute_error": 0.0
+    },
+    {
+      "seed": "finite_F4",
+      "partition": 0,
+      "old_balanced_rho": 1.1212125053408541,
+      "balanced_support": 1.5856339313553522,
+      "absolute_error": 0.0
+    },
+    {
+      "seed": "finite_F4",
+      "partition": 1,
+      "old_balanced_rho": 1.5628811896673127,
+      "balanced_support": 2.210247774805311,
+      "absolute_error": 4.440892098500626e-16
+    },
+    {
+      "seed": "finite_F4",
+      "partition": 2,
+      "old_balanced_rho": 1.604692720005163,
+      "balanced_support": 2.269378208072673,
+      "absolute_error": 4.440892098500626e-16
+    },
+    {
+      "seed": "quadratic",
+      "partition": 0,
+      "old_balanced_rho": 1.102930587107565,
+      "balanced_support": 1.5597793946436387,
+      "absolute_error": 0.0
+    },
+    {
+      "seed": "quadratic",
+      "partition": 1,
+      "old_balanced_rho": 1.6091206133125255,
+      "balanced_support": 2.275640194840686,
+      "absolute_error": 4.440892098500626e-16
+    },
+    {
+      "seed": "quadratic",
+      "partition": 2,
+      "old_balanced_rho": 1.5237022060843723,
+      "balanced_support": 2.154840324862324,
+      "absolute_error": 4.440892098500626e-16
+    }
+  ],
+  "derivative_controls": [
+    {
+      "seed": "base",
+      "parameterization": "branch-weighted heights",
+      "coordinates": 58,
+      "maximum_error": 1.431628929987605e-10
+    },
+    {
+      "seed": "base",
+      "parameterization": "b=t*B",
+      "coordinates": 58,
+      "maximum_error": 1.7864882706844498e-10
+    },
+    {
+      "seed": "finite_F4",
+      "parameterization": "branch-weighted heights",
+      "coordinates": 58,
+      "maximum_error": 1.8428537862380523e-10
+    },
+    {
+      "seed": "finite_F4",
+      "parameterization": "b=t*B",
+      "coordinates": 58,
+      "maximum_error": 2.062426670418338e-10
+    },
+    {
+      "seed": "quadratic",
+      "parameterization": "branch-weighted heights",
+      "coordinates": 58,
+      "maximum_error": 1.3289228051327484e-10
+    },
+    {
+      "seed": "quadratic",
+      "parameterization": "b=t*B",
+      "coordinates": 58,
+      "maximum_error": 1.730224852281026e-10
+    }
+  ],
+  "native_two_place_controls": [
+    {
+      "seed": "base",
+      "native_angle": 0.24,
+      "native_support": 1.0540059071040753,
+      "mixed_support": 1.054005907104083,
+      "absolute_error": 7.771561172376096e-15
+    },
+    {
+      "seed": "base",
+      "native_angle": 0.7853981633974483,
+      "native_support": 1.1365875800734335,
+      "mixed_support": 1.136587580073436,
+      "absolute_error": 2.4424906541753444e-15
+    },
+    {
+      "seed": "base",
+      "native_angle": 1.21,
+      "native_support": 1.0725249752963766,
+      "mixed_support": 1.0725249752963866,
+      "absolute_error": 9.992007221626409e-15
+    },
+    {
+      "seed": "finite_F4",
+      "native_angle": 0.24,
+      "native_support": 1.2944132745108454,
+      "mixed_support": 1.2944132745108454,
+      "absolute_error": 0.0
+    },
+    {
+      "seed": "finite_F4",
+      "native_angle": 0.7853981633974483,
+      "native_support": 1.4165423974306843,
+      "mixed_support": 1.4165423974306843,
+      "absolute_error": 0.0
+    },
+    {
+      "seed": "finite_F4",
+      "native_angle": 1.21,
+      "native_support": 1.3521367420856454,
+      "mixed_support": 1.3521367420856454,
+      "absolute_error": 0.0
+    },
+    {
+      "seed": "quadratic",
+      "native_angle": 0.24,
+      "native_support": 1.4409868119719937,
+      "mixed_support": 1.4409868119719935,
+      "absolute_error": 2.220446049250313e-16
+    },
+    {
+      "seed": "quadratic",
+      "native_angle": 0.7853981633974483,
+      "native_support": 1.4899862084136386,
+      "mixed_support": 1.4899862084136386,
+      "absolute_error": 0.0
+    },
+    {
+      "seed": "quadratic",
+      "native_angle": 1.21,
+      "native_support": 1.4397683489532476,
+      "mixed_support": 1.439768348953248,
+      "absolute_error": 4.440892098500626e-16
+    }
+  ],
+  "total_derivative_coordinates": 348,
+  "source_sha256": {
+    "check_asymmetric_mixed_place_pressure.py": "d2eadac1e5dbd2028eaed096874719ede3899e807f8924cc68140b7375945350",
+    "asymmetric_mixed_place_pressure.py": "396c90196417fb184bd52d1623183f013fc73dba453d0f8b38d0ec8aa006df39",
+    "asymmetric_crossing_pressure.py": "de017ff2d5c352505aa2b3ec9a2541f8fb4db0bdd2e70b3ec74de91c4713ca42",
+    "search_fused_mixed_weighted.py": "f8cd9699a7154e9b3a625b6e3d169468d656422d7dcdfc0ccdb374e80187af9b",
+    "affine_place_profile_oracle.py": "4d65e6ac7adc6d6d2cb5935b5f89d5b39b4ce2c09150f1f90ac814561d5eff90",
+    "native_matrix_smith_f4.py": "c08da20f1938a371b438e32fbc6a8f6766b48c2cfee5bcd1c956ce137dc70203",
+    "native_matrix_smith_f4.cpp": "5ec995cd04563c2fa99b69afd71bf476d5ca885f1f90377490c30e5a1a55f330",
+    "native_rectangular_smith_f4.py": "5c96128e3713138a08752c22036154cb65983a0b47ca66aa2ca18949d765ce4a",
+    "native_rectangular_smith_f4.cpp": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6"
+  }
+}

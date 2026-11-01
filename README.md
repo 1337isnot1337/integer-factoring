@@ -194,6 +194,21 @@ traces. Every even degree cap also gives an explicit strict crossing
 with scalar content one. Complete profiles remain necessary: the finished
 four-letter cap search does not improve the best crossing parameter.
 
+The [complete paired affine space](research/complete-paired-trace-affine-space.md)
+has exactly 5,175 directions, with a 3,375-dimensional degree-sixteen
+slice. [Entrywise Hermite interpolation](research/entrywise-reflection-jet-interpolation.md)
+constructs arbitrary feasible jets directly in this space. An
+[opposite Bell-jet theorem](research/bell-jet-transversality.md) identifies
+the unique simultaneous eighth-order carrier, while a
+[ramified-minor theorem](research/ramified-carrier-minor-domination.md)
+rules out the stated low-rank improvements at the two existing places.
+[Finite Smith-frame fibers](research/f4-iterated-smith-fibers.md) and
+[paired restrictions](research/finite-fiber-paired-restrictions.md) supply
+additional explicit inputs, with complete
+[weighted closed-place profiles](research/closed-place-weighted-oracles.md).
+These results describe and test specific crossing families; they do not
+establish a factoring exponent above one half.
+
 [Small physical codes in larger reflection intervals](research/stable-hot-reflection-codes.md)
 give stronger finite-alphabet inputs. Their primitive tensors stabilize
 once the retained energies lie below an explicit bound. Exact
