@@ -4,6 +4,7 @@ import argparse
 from hashlib import sha256
 from itertools import product
 import json
+import math
 from pathlib import Path
 
 import numpy as np
@@ -11,6 +12,7 @@ import numpy as np
 from check_scaled_asymmetric_pressure import inputs
 from native_rectangular_smith_f4 import RectangularOracle
 from pencil_principal_alphabets import restrict
+from scaled_asymmetric_crossing_pressure import ScaledAsymmetricPressure
 from weighted_smith_oracle_f4 import WeightedSmithOracle
 from windowed_f4_smith import pack
 
@@ -22,6 +24,7 @@ def main():
     root = Path(__file__).resolve().parents[1]
     manifest,cases = inputs(root)
     rng,records,orders,entries = np.random.default_rng(575026),[],0,0
+    derivatives = []
     for index,ax,ay in ((0,[0,4],[0,1,2,3]),(33,[1,2,4],[0,2,3]),(66,[0,1,2,4],[1,3])):
         case,values = cases[index]
         seed,parameters,gx,gy = restrict(values,manifest['natural_heights_and_scale'],ax,ay)
@@ -53,18 +56,30 @@ def main():
         orders += len(exact)
         records.append({'case_index':index,'alphabet_x':ax,'alphabet_y':ay,
                         'parameters':trial.tolist(),'independent_orders':exact})
+        support = ScaledAsymmetricPressure(seed)
+        point = np.r_[np.asarray(parameters[:-1])+rng.normal(size=len(parameters)-1)*.05,math.log(.12),.3]
+        _,gradient,_ = support.evaluate(point)
+        for coordinate in sorted(set((0,a-1,len(point)//2,len(point)-3,len(point)-2,len(point)-1))):
+            delta = np.zeros_like(point)
+            delta[coordinate] = 1e-6
+            finite = (support.evaluate(point+delta,False)[0]-support.evaluate(point-delta,False)[0])/2e-6
+            error = abs(float(finite-gradient[coordinate]))
+            assert error < 1e-5
+            derivatives.append({'case_index':index,'coordinate':coordinate,'error':error})
     names = ['tools/pencil_principal_alphabets.py','tools/check_pencil_principal_alphabets.py',
              'tools/check_scaled_asymmetric_pressure.py','tools/weighted_smith_oracle_f4.py',
-             'tools/native_rectangular_smith_f4.py','tools/native_rectangular_smith_f4.cpp']
+             'tools/native_rectangular_smith_f4.py','tools/native_rectangular_smith_f4.cpp',
+             'tools/scaled_asymmetric_crossing_pressure.py','tools/asymmetric_crossing_pressure.py']
     report = {'status':'pass','selected_literal_entries_and_endpoints':entries,
               'independent_untruncated_orders':orders,'records':records,
+              'finite_asymmetric_derivatives':len(derivatives),'derivatives':derivatives,
               'source_sha256':{n:sha256((root/n).read_bytes()).hexdigest() for n in names},
               'scope':'Exact unequal principal restrictions, endpoints and new-gauge full profiles. '
                       'No improving pressure or all-gauge exclusion.'}
     if args.output:
         args.output.write_text(json.dumps(report,indent=2)+'\n')
     print(json.dumps({k:report[k] for k in ('status','selected_literal_entries_and_endpoints',
-                                         'independent_untruncated_orders')}))
+                                         'independent_untruncated_orders','finite_asymmetric_derivatives')}))
 
 
 if __name__ == '__main__':

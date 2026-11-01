@@ -27,6 +27,8 @@ including nonbinary sources. Fifty complete orders at new integer gauges
 agree with separate untruncated, fraction-free Smith elimination. The
 [receipt](../evidence/pencil-principal-alphabets-controls.json) retains
 all tested heights, orders and source hashes.
+Eighteen additional finite differences check the asymmetric free-height,
+scale and angle derivatives on these unequal restricted tensors.
 
 ```sh
 python3 tools/check_pencil_principal_alphabets.py
@@ -68,3 +70,12 @@ OPENBLAS_NUM_THREADS=1 python3 tools/screen_pencil_principal_alphabets.py \
 ```
 
 No completed screen or improved score is asserted at registration.
+
+The [follow-on driver](../tools/search_pencil_principal_asymmetric.py)
+requires all 45,292 cases and 753,750 orders before selecting proper
+restrictions. Its [expanded registration](../evidence/pencil-principal-follow-on-manifest.json)
+preserves the screen's selection rule, angles and budgets, and fixes the
+actual height/scale/angle bounds before those trials run. Every selected
+literal input hash and inherited profile is replayed. Successful queries,
+rejections, completed optimizer calls and trial/global timeouts remain
+separate counters.
