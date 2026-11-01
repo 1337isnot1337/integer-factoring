@@ -90,6 +90,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [All-scale 5/7 floor for every homogeneous middle-fiber restriction](homogeneous-restriction-pressure-floor.md).
 - [Complete joint physical conjugations cannot improve the four-letter reflection seed](joint-height-conjugation-floor.md).
 - [Joint pair compression and a new physical grid](joint-grid-compressions.md): rectangular joint splits preserve the literal endpoint; all 1,232 declared 2-by-3 coordinate maps have balanced `rho >= 3/4`, and all 1,152 full 4-by-4 maps are dominated by the original source at every scale and supporting weights.
+- [Rank guards and formal rigidity for rectangular joint splits](joint-split-jet-guards.md): a protected-core degree budget forces rank one at both leading and first residual matrices for a balanced improvement; four frozen jets give a rank-81 deformation system and formal rigidity at the coordinate split, while every nonzero member of an explicit two-parameter fiber has `rho >= 3/4` over every characteristic-two field.
 - [Fresh odd pivots preserve exact identities and the presented two-primary torsion](odd-pivot-two-primary-elimination.md).
 - [All-degree binary nilpotent joint frames of the four-letter reflection seed are rigid](polynomial-joint-height-rigidity.md).
 - [State-adaptive physical Smith channels](state-adaptive-smith-channels.md).

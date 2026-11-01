@@ -1980,3 +1980,16 @@ by the original source at every scale and supporting weights. A separate
 native replay checks 51,648 orders and 339,264 endpoint entries. Field-valued
 joint projections remain open; the complete score stays **1/2**. Run
 `make verify-joint-grid-compressions` for both complete coordinate families.
+The [full-suite receipt](evidence/joint-grid-full-verification.json) pins
+the successful clean default and focused replay to `decce64` (342 Python
+command blocks, 66 unit tests, five crossing tests and 976 Markdown files).
+
+[Joint-split rank guards](research/joint-split-jet-guards.md) further prove
+a balanced `rho >= 5/7` floor when the declared protected core and degree
+budget hold but either cut loses its rank-one leading or first residual
+pattern. At the coordinate split, fixing both first matrix jets at both
+cuts gives formal rigidity; a separate two-parameter fiber has an exact
+all-field `rho >= 3/4` obstruction away from its zero parameter. Different
+jet factors and asymmetric weights remain open. Run
+`make verify-joint-split-jet-guards` for the new focused certificates;
+this follow-up is outside the earlier full-suite pin.
