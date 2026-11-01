@@ -1,0 +1,84 @@
+{
+  "affine_exact_comparisons": 320,
+  "affine_rational_parts_at_or_above_shift": 458,
+  "affine_zero_rational_parts": 10,
+  "equal_query_product_cases": 10,
+  "inverse_exact_comparisons": 72,
+  "large_controls_sha256": "0fca9dc25310b6d3ec54f98297310a5e57b4b935d421f6b37f0b476dd8a1955b",
+  "large_independent_control": {
+    "dimension": 1267650600228229401496703205379,
+    "dimension_bits": 101,
+    "displacement": 1,
+    "number_bits": 202,
+    "queries": [
+      2,
+      4
+    ],
+    "reference": "complete unit cycles and a literal 3x3 inverse",
+    "result": {
+      "absolute_precision": 16,
+      "integer_distance_horizon": 0,
+      "precision": 17,
+      "query_displacement_valuation": 0,
+      "ratio_valuation": 0,
+      "residue": [
+        16280,
+        52218
+      ],
+      "scale_exponent": -1
+    }
+  },
+  "large_odd_query_execution": {
+    "dimension": 1152921504606846979,
+    "dimension_bits": 61,
+    "displacement": 64,
+    "number_bits": 123,
+    "queries": [
+      2305843009213693963,
+      2305843009213693965
+    ],
+    "reference": "no independent large-dimension inverse",
+    "result": {
+      "absolute_precision": 8,
+      "integer_distance_horizon": 62,
+      "precision": 73,
+      "query_displacement_valuation": 1,
+      "ratio_valuation": 11,
+      "residue": [
+        9406187605932906895219,
+        4462088599919077379955
+      ],
+      "scale_exponent": -65
+    }
+  },
+  "largest_small_test_precision": 20,
+  "missing_horizon_counterexamples": [
+    {
+      "dimension": 2,
+      "exact_scalar_valuation": -4,
+      "query": 5
+    },
+    {
+      "dimension": 4,
+      "exact_scalar_valuation": -8,
+      "query": 9
+    },
+    {
+      "dimension": 8,
+      "exact_scalar_valuation": -16,
+      "query": 17
+    }
+  ],
+  "negative_ratio_valuation_cases": 14,
+  "original_rectangle_not_separated_cases": 71,
+  "query_parity_cases": {
+    "even_even": 18,
+    "even_odd": 18,
+    "odd_even": 18,
+    "odd_odd": 18
+  },
+  "rejected_invalid_inputs": 5,
+  "seed": 20261101,
+  "smallest_output_scale": -14,
+  "status": "passed"
+}

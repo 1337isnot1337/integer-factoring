@@ -1905,3 +1905,11 @@ verify-pole-cauchy-analytic:
 .PHONY: verify-pole-cauchy-domains
 verify-pole-cauchy-domains:
 	python3 tools/check_pole_cauchy_domain_precision.py --output /tmp/integer-factoring-pole-cauchy-domain-precision.json
+
+.PHONY: verify-pole-cauchy-circuit-moments
+verify-pole-cauchy-circuit-moments:
+	python3 tools/check_pole_cauchy_circuit_moments.py
+
+.PHONY: verify-pole-cauchy-resolvents
+verify-pole-cauchy-resolvents:
+	python3 tools/check_pole_cauchy_rational_resolvents.py

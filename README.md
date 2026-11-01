@@ -129,6 +129,14 @@ construct the whole product over that state family modulo `2^p` with
 `O(n+p)` ordinary arithmetic nodes and polynomial generation cost.
 The unit-trace evaluator is exact; the singular factor-count normalization
 remains unresolved. Run `make verify-bilinear-pole-packets`.
+The [circuit moment theorem](research/pole-cauchy-circuit-moments.md) extends
+inverse contractions to division-free polynomial circuits of unrestricted
+degree, using a quotient algebra of dimension polynomial in precision.
+The [rational resolvent theorem](research/pole-cauchy-rational-resolvents.md)
+computes complete two-axis contractions from four normalized affine products,
+including even integer denominators. A polynomial combination that recovers
+the factor-count scalar remains unconstructed. Run
+`make verify-pole-cauchy-circuit-moments verify-pole-cauchy-resolvents`.
 The [Cauchy content-slope reduction](research/pole-cauchy-content.md) gives
 a second global target using two implicit determinant contents, with cheap
 padding and explicit Vandermonde normalization.
