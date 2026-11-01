@@ -1,0 +1,258 @@
+{
+  "scope": "all-field finite rank-sum criterion; not a factoring lower bound",
+  "all_field_lemma": "rank(Swap-P tensor Q)>=d^2-r(r+1)/2, r=rank((QP)^d)",
+  "rational_root_scale": 10000000,
+  "rank_maximum_pairs_checked": 6203,
+  "unrounded_dual_endpoints_checked": 43104,
+  "exact_certificates": [
+    {
+      "dimension": 2,
+      "possible_maxima": 4,
+      "unordered_maximum_pairs": 9,
+      "rational_lower_bound": "3828427/1000000",
+      "decimal_summary": 3.828427,
+      "worst_pair": {
+        "a": 1,
+        "b": 1,
+        "method": "one_row_maximum",
+        "dual_u": "28284271/60000000",
+        "dual_v": "28284271/60000000"
+      },
+      "winning_bound_counts": {
+        "both_cut_minima_two": 1,
+        "dual": 3,
+        "one_row_maximum": 3,
+        "two_distinct_maxima": 2
+      },
+      "exact_lower_bound_power_408_exceeds_d_power_577": true
+    },
+    {
+      "dimension": 3,
+      "possible_maxima": 7,
+      "unordered_maximum_pairs": 27,
+      "rational_lower_bound": "2813711007/395000000",
+      "decimal_summary": 7.1233190050632915,
+      "worst_pair": {
+        "a": 0,
+        "b": 9,
+        "method": "dual",
+        "dual_u": "160918827/395000000",
+        "dual_v": "113786797/395000000"
+      },
+      "winning_bound_counts": {
+        "both_cut_minima_two": 1,
+        "dual": 5,
+        "no_column_rank_one_remainder": 4,
+        "shared_rank_one_pieces": 1,
+        "two_distinct_maxima": 16
+      },
+      "exact_lower_bound_power_408_exceeds_d_power_577": true
+    },
+    {
+      "dimension": 4,
+      "possible_maxima": 10,
+      "unordered_maximum_pairs": 54,
+      "rational_lower_bound": "311126981/30000000",
+      "decimal_summary": 10.370899366666666,
+      "worst_pair": {
+        "a": 0,
+        "b": 2,
+        "method": "dual",
+        "dual_u": "28284271/90000000",
+        "dual_v": "28284271/90000000"
+      },
+      "winning_bound_counts": {
+        "both_cut_minima_two": 1,
+        "dual": 29,
+        "no_column_rank_one_remainder": 5,
+        "shared_rank_one_pieces": 1,
+        "two_distinct_maxima": 18
+      },
+      "exact_lower_bound_power_408_exceeds_d_power_577": true
+    },
+    {
+      "dimension": 5,
+      "possible_maxima": 15,
+      "unordered_maximum_pairs": 119,
+      "rational_lower_bound": "66782307/5000000",
+      "decimal_summary": 13.3564614,
+      "worst_pair": {
+        "a": 0,
+        "b": 2,
+        "method": "dual",
+        "dual_u": "1309457/5000000",
+        "dual_v": "1309457/5000000"
+      },
+      "winning_bound_counts": {
+        "both_cut_minima_two": 1,
+        "dual": 87,
+        "no_column_rank_one_remainder": 5,
+        "shared_rank_one_pieces": 1,
+        "two_distinct_maxima": 25
+      },
+      "exact_lower_bound_power_408_exceeds_d_power_577": true
+    },
+    {
+      "dimension": 6,
+      "possible_maxima": 19,
+      "unordered_maximum_pairs": 189,
+      "rational_lower_bound": "6194255349/380000000",
+      "decimal_summary": 16.300671971052633,
+      "worst_pair": {
+        "a": 0,
+        "b": 2,
+        "method": "dual",
+        "dual_u": "84852813/380000000",
+        "dual_v": "84852813/380000000"
+      },
+      "winning_bound_counts": {
+        "both_cut_minima_two": 1,
+        "dual": 150,
+        "no_column_rank_one_remainder": 4,
+        "shared_rank_one_pieces": 1,
+        "two_distinct_maxima": 33
+      },
+      "exact_lower_bound_power_408_exceeds_d_power_577": true
+    },
+    {
+      "dimension": 7,
+      "possible_maxima": 26,
+      "unordered_maximum_pairs": 350,
+      "rational_lower_bound": "3266833317/170000000",
+      "decimal_summary": 19.216666570588234,
+      "worst_pair": {
+        "a": 0,
+        "b": 2,
+        "method": "dual",
+        "dual_u": "98994949/510000000",
+        "dual_v": "98994949/510000000"
+      },
+      "winning_bound_counts": {
+        "both_cut_minima_two": 1,
+        "dual": 300,
+        "no_column_rank_one_remainder": 5,
+        "shared_rank_one_pieces": 1,
+        "two_distinct_maxima": 43
+      },
+      "exact_lower_bound_power_408_exceeds_d_power_577": true
+    },
+    {
+      "dimension": 8,
+      "possible_maxima": 31,
+      "unordered_maximum_pairs": 495,
+      "rational_lower_bound": "1216223653/55000000",
+      "decimal_summary": 22.113157327272727,
+      "worst_pair": {
+        "a": 0,
+        "b": 2,
+        "method": "dual",
+        "dual_u": "28284271/165000000",
+        "dual_v": "28284271/165000000"
+      },
+      "winning_bound_counts": {
+        "both_cut_minima_two": 1,
+        "dual": 438,
+        "no_column_rank_one_remainder": 5,
+        "shared_rank_one_pieces": 1,
+        "two_distinct_maxima": 50
+      },
+      "exact_lower_bound_power_408_exceeds_d_power_577": true
+    },
+    {
+      "dimension": 9,
+      "possible_maxima": 37,
+      "unordered_maximum_pairs": 702,
+      "rational_lower_bound": "1037325643/41500000",
+      "decimal_summary": 24.995798626506023,
+      "worst_pair": {
+        "a": 0,
+        "b": 2,
+        "method": "dual",
+        "dual_u": "6363961/41500000",
+        "dual_v": "6363961/41500000"
+      },
+      "winning_bound_counts": {
+        "both_cut_minima_two": 1,
+        "dual": 629,
+        "no_column_rank_one_remainder": 6,
+        "shared_rank_one_pieces": 1,
+        "two_distinct_maxima": 65
+      },
+      "exact_lower_bound_power_408_exceeds_d_power_577": true
+    },
+    {
+      "dimension": 10,
+      "possible_maxima": 43,
+      "unordered_maximum_pairs": 945,
+      "rational_lower_bound": "2368807713/85000000",
+      "decimal_summary": 27.868326035294118,
+      "worst_pair": {
+        "a": 0,
+        "b": 2,
+        "method": "dual",
+        "dual_u": "11785113/85000000",
+        "dual_v": "11785113/85000000"
+      },
+      "winning_bound_counts": {
+        "both_cut_minima_two": 1,
+        "dual": 862,
+        "no_column_rank_one_remainder": 7,
+        "shared_rank_one_pieces": 1,
+        "two_distinct_maxima": 74
+      },
+      "exact_lower_bound_power_408_exceeds_d_power_577": true
+    },
+    {
+      "dimension": 11,
+      "possible_maxima": 54,
+      "unordered_maximum_pairs": 1484,
+      "rational_lower_bound": "12600642771/410000000",
+      "decimal_summary": 30.73327505121951,
+      "worst_pair": {
+        "a": 0,
+        "b": 2,
+        "method": "dual",
+        "dual_u": "51854497/410000000",
+        "dual_v": "51854497/410000000"
+      },
+      "winning_bound_counts": {
+        "both_cut_minima_two": 1,
+        "dual": 1382,
+        "no_column_rank_one_remainder": 7,
+        "shared_rank_one_pieces": 1,
+        "two_distinct_maxima": 93
+      },
+      "exact_lower_bound_power_408_exceeds_d_power_577": true
+    },
+    {
+      "dimension": 12,
+      "possible_maxima": 60,
+      "unordered_maximum_pairs": 1829,
+      "rational_lower_bound": "49044926203/1460000000",
+      "decimal_summary": 33.592415207534245,
+      "worst_pair": {
+        "a": 0,
+        "b": 2,
+        "method": "dual",
+        "dual_u": "169705627/1460000000",
+        "dual_v": "169705627/1460000000"
+      },
+      "winning_bound_counts": {
+        "both_cut_minima_two": 1,
+        "dual": 1703,
+        "no_column_rank_one_remainder": 8,
+        "shared_rank_one_pieces": 1,
+        "two_distinct_maxima": 116
+      },
+      "exact_lower_bound_power_408_exceeds_d_power_577": true
+    }
+  ],
+  "finite_field_controls": {
+    "exhaustive_two_by_two_pairs": 6817,
+    "seeded_larger_pairs": 336,
+    "sharpness_controls": 56,
+    "nilpotent_fitting_controls": 28,
+    "negative_invertible_singular_bound_control": true
+  },
+  "minimum_seed_dimension_for_a_strict_rank_sum_win": 13
+}

@@ -1,0 +1,51 @@
+{
+  "compiled_vs_exhaustive_block_queries": 135,
+  "disconnected_carry_block_queries": 45,
+  "fiber_scalars": [
+    [
+      2,
+      1
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      5,
+      3
+    ],
+    [
+      5,
+      4
+    ],
+    [
+      7,
+      1
+    ],
+    [
+      7,
+      3
+    ],
+    [
+      7,
+      4
+    ],
+    [
+      7,
+      5
+    ]
+  ],
+  "negative_controls": {
+    "coefficient_zero_divisors_allowed": true,
+    "surjectivity_cannot_be_dropped": true
+  },
+  "nonzero_block_values": 72,
+  "original_interpolation_input_settings_checked": 885735,
+  "row_space_negative_cases": 45,
+  "scope": "exact mixed linear/carry boundary queries; no full-network contraction claim",
+  "surjective_coefficient_maps": 45
+}

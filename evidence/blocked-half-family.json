@@ -1,0 +1,18 @@
+{
+  "default_schedule_small_cases": 3,
+  "explicit_two_block_crossing_entries": 256,
+  "explicit_two_block_piece_entries": 278784,
+  "identity_cap_factorizations": 96,
+  "independent_local_factorizations": 128,
+  "integer_schedule_and_entropy_cases": 5318,
+  "negative_controls": [
+    "padded factor channel",
+    "out-of-range tuple digit"
+  ],
+  "piece_tuple_codes_and_odometer_steps": 1089,
+  "production_wrapped_factorizations": 40,
+  "production_wrapped_piece_entries": 20,
+  "scope": "exact block construction and indexing; asymptotic rate follows from the accompanying proof",
+  "source_revision": "16a5ce41304fcdaea4e0be7c132e1c361dc26da5",
+  "status": "pass"
+}

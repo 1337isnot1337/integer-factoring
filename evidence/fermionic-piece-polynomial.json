@@ -1,0 +1,112 @@
+{
+  "certificate": {
+    "characteristic": 2,
+    "dual_monomials": [
+      [
+        5,
+        15
+      ],
+      [
+        7,
+        13
+      ],
+      [
+        9,
+        11
+      ]
+    ],
+    "dual_weight": 20,
+    "input_weight": 12,
+    "labels": [
+      [
+        1,
+        11
+      ],
+      [
+        3,
+        9
+      ],
+      [
+        5,
+        7
+      ]
+    ],
+    "locality_parameter": 32,
+    "maximum_rank_product": 20,
+    "row_bitsets": {
+      "-16": [
+        256,
+        0,
+        0,
+        0,
+        256,
+        0,
+        0,
+        0,
+        17
+      ],
+      "-32": [
+        273,
+        0,
+        0,
+        0,
+        273,
+        0,
+        0,
+        0,
+        273
+      ],
+      "0": [
+        272,
+        2,
+        0,
+        8,
+        257,
+        0,
+        0,
+        0,
+        17
+      ],
+      "16": [
+        256,
+        0,
+        4,
+        0,
+        256,
+        32,
+        64,
+        128,
+        17
+      ]
+    },
+    "row_column_rank_profile": [
+      [
+        -32,
+        1,
+        9
+      ],
+      [
+        -16,
+        2,
+        4
+      ],
+      [
+        0,
+        4,
+        5
+      ],
+      [
+        16,
+        6,
+        2
+      ]
+    ]
+  },
+  "generalized_both_order_entry_comparisons": 4617,
+  "reflected_duality_entries": 9,
+  "scope": "exact finite tensor improvement; no asymptotic contraction claim",
+  "source_entry_comparisons": 550,
+  "source_revision": "16a5ce41304fcdaea4e0be7c132e1c361dc26da5",
+  "status": "pass",
+  "summed_crossing_entries": 81
+}

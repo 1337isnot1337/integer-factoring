@@ -1,0 +1,38 @@
+{
+  "bilinear_gauss_sum_cases": 5826,
+  "carry_settings_summed": 1059368,
+  "carry_transform_cases": 192,
+  "nonunit_bilinear_cases": 567,
+  "nonunit_kloosterman_negative_control": {
+    "a": 0,
+    "b": 1,
+    "direct_value": 1,
+    "modulus": 5,
+    "quadratic_fixed_points": 0
+  },
+  "phase_closure_negative_control": {
+    "modulus": 5,
+    "multiplicative_order": 3,
+    "outside_zero_or_Mth_roots": true,
+    "value": 7
+  },
+  "prefix_interval_cases": 510,
+  "scope": "exact local Fourier-gate and small contraction identities; no faster global contraction theorem",
+  "unit_kloosterman_fixed_point_cases": 5640,
+  "verified_binary_field_degrees": [
+    2,
+    4,
+    6,
+    8,
+    16
+  ],
+  "weighted_fixed_point_negative_control": {
+    "different": true,
+    "direct_value": 6,
+    "fixed_point_value": 0,
+    "interval_length": 2,
+    "modulus": 5
+  },
+  "whole_product_network_cases": 14,
+  "zero_divisor_geometric_sum_cases": 1320
+}

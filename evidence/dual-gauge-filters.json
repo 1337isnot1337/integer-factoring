@@ -1,0 +1,120 @@
+{
+  "bounded_weight_projection_cases": [
+    {
+      "dimension": 1,
+      "direct_exceptional_mode_entries": 10,
+      "direct_vacuum_entries": 2,
+      "integral_projection_coordinates": 2,
+      "kernel_dimension": 1,
+      "parameter_dimension": 2,
+      "prime": 2,
+      "weight": 1
+    },
+    {
+      "dimension": 2,
+      "direct_exceptional_mode_entries": 32,
+      "direct_vacuum_entries": 8,
+      "integral_projection_coordinates": 8,
+      "kernel_dimension": 2,
+      "parameter_dimension": 4,
+      "prime": 2,
+      "weight": 2
+    },
+    {
+      "dimension": 5,
+      "direct_exceptional_mode_entries": 228,
+      "direct_vacuum_entries": 60,
+      "integral_projection_coordinates": 60,
+      "kernel_dimension": 7,
+      "parameter_dimension": 12,
+      "prime": 2,
+      "weight": 4
+    },
+    {
+      "dimension": 1,
+      "direct_exceptional_mode_entries": 10,
+      "direct_vacuum_entries": 2,
+      "integral_projection_coordinates": 2,
+      "kernel_dimension": 1,
+      "parameter_dimension": 2,
+      "prime": 3,
+      "weight": 1
+    },
+    {
+      "dimension": 3,
+      "direct_exceptional_mode_entries": 91,
+      "direct_vacuum_entries": 21,
+      "integral_projection_coordinates": 21,
+      "kernel_dimension": 4,
+      "parameter_dimension": 7,
+      "prime": 3,
+      "weight": 3
+    },
+    {
+      "dimension": 1,
+      "direct_exceptional_mode_entries": 10,
+      "direct_vacuum_entries": 2,
+      "integral_projection_coordinates": 2,
+      "kernel_dimension": 1,
+      "parameter_dimension": 2,
+      "prime": 5,
+      "weight": 1
+    },
+    {
+      "dimension": 7,
+      "direct_exceptional_mode_entries": 551,
+      "direct_vacuum_entries": 133,
+      "integral_projection_coordinates": 133,
+      "kernel_dimension": 12,
+      "parameter_dimension": 19,
+      "prime": 5,
+      "weight": 5
+    }
+  ],
+  "direct_filtered_schur_crossings": [
+    {
+      "complete_integrality_entries": 8,
+      "interval_identity_entries": 8,
+      "maximum_parameter_weight": 4,
+      "nonzero_shifts": [
+        -4
+      ],
+      "period": 4,
+      "weight": 1
+    },
+    {
+      "complete_integrality_entries": 192,
+      "interval_identity_entries": 192,
+      "maximum_parameter_weight": 5,
+      "nonzero_shifts": [
+        -4,
+        0,
+        4
+      ],
+      "period": 4,
+      "weight": 2
+    },
+    {
+      "complete_integrality_entries": 256,
+      "interval_identity_entries": 256,
+      "maximum_parameter_weight": 9,
+      "nonzero_shifts": [
+        -8,
+        0
+      ],
+      "period": 8,
+      "weight": 2
+    }
+  ],
+  "independent_divided_Leibniz_cases": 1722,
+  "non_prime_power_negative_control": {
+    "original_and_projected_vacuum": [
+      2,
+      0
+    ],
+    "prime": 3,
+    "weight": 2
+  },
+  "periodic_mode_filter_cases": 2548,
+  "scope": "exact dual parametrization and coefficient coarsening; no improved asymptotic rank"
+}

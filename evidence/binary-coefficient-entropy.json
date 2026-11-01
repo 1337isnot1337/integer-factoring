@@ -1,0 +1,84 @@
+{
+  "complete_crossing_profiles": 14,
+  "direct_inclusion_rank_cases": 286,
+  "exact_tail_bound_cases": 8384,
+  "limiting_rho": 0.8112781244591328,
+  "negative_control": "characteristic-zero full inclusion rank fails over F2",
+  "new_factoring_exponent_claimed": false,
+  "scope": "exact ranks for the literal full-cube coefficient family only",
+  "selected_profiles": [
+    {
+      "bits": 1,
+      "central_ranks": [
+        1,
+        4
+      ],
+      "finite_rho": 0.5,
+      "maximum_rank_product": 4
+    },
+    {
+      "bits": 2,
+      "central_ranks": [
+        6,
+        6
+      ],
+      "finite_rho": 0.646240625180289,
+      "maximum_rank_product": 36
+    },
+    {
+      "bits": 4,
+      "central_ranks": [
+        46,
+        46
+      ],
+      "finite_rho": 0.6904452445071266,
+      "maximum_rank_product": 2116
+    },
+    {
+      "bits": 8,
+      "central_ranks": [
+        3214,
+        3214
+      ],
+      "finite_rho": 0.7281346383546934,
+      "maximum_rank_product": 10329796
+    },
+    {
+      "bits": 16,
+      "central_ranks": [
+        19548046,
+        19548046
+      ],
+      "finite_rho": 0.756891283400895,
+      "maximum_rank_product": 382126102418116
+    },
+    {
+      "bits": 32,
+      "central_ranks": [
+        937973964234638,
+        937973964234638
+      ],
+      "finite_rho": 0.7771334563466268,
+      "maximum_rank_product": 879795157582041965985118991044
+    },
+    {
+      "bits": 64,
+      "central_ranks": [
+        2892018882291666386824925224846,
+        2892018882291666386824925224846
+      ],
+      "finite_rho": 0.7905462485816127,
+      "maximum_rank_product": 8363773215531539319969868838188961999126642079699223655723716
+    },
+    {
+      "bits": 128,
+      "central_ranks": [
+        37660758616746433935176827862363591798859900085681683848568718,
+        37660758616746433935176827862363591798859900085681683848568718
+      ],
+      "finite_rho": 0.7990260775359233,
+      "maximum_rank_product": 1418332739588840771967528174421700568786514498804692751301067663573742356565541479457734519032469356342481518853657168163524
+    }
+  ],
+  "status": "pass"
+}

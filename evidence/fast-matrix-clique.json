@@ -1,0 +1,1131 @@
+{
+  "status": "pass",
+  "scope": "exact finite identities and arithmetic counts; no improved logarithmic exponent",
+  "matrix_multiplication_cases": [
+    {
+      "ring": "F2",
+      "dimension": 1,
+      "multiplications": 1,
+      "additions": 0
+    },
+    {
+      "ring": "F2",
+      "dimension": 2,
+      "multiplications": 7,
+      "additions": 18
+    },
+    {
+      "ring": "F2",
+      "dimension": 4,
+      "multiplications": 49,
+      "additions": 198
+    },
+    {
+      "ring": "F2",
+      "dimension": 8,
+      "multiplications": 343,
+      "additions": 1674
+    },
+    {
+      "ring": "F2",
+      "dimension": 16,
+      "multiplications": 2401,
+      "additions": 12870
+    },
+    {
+      "ring": "F3",
+      "dimension": 1,
+      "multiplications": 1,
+      "additions": 0
+    },
+    {
+      "ring": "F3",
+      "dimension": 2,
+      "multiplications": 7,
+      "additions": 18
+    },
+    {
+      "ring": "F3",
+      "dimension": 4,
+      "multiplications": 49,
+      "additions": 198
+    },
+    {
+      "ring": "F3",
+      "dimension": 8,
+      "multiplications": 343,
+      "additions": 1674
+    },
+    {
+      "ring": "F3",
+      "dimension": 16,
+      "multiplications": 2401,
+      "additions": 12870
+    },
+    {
+      "ring": "Z/6Z",
+      "dimension": 1,
+      "multiplications": 1,
+      "additions": 0
+    },
+    {
+      "ring": "Z/6Z",
+      "dimension": 2,
+      "multiplications": 7,
+      "additions": 18
+    },
+    {
+      "ring": "Z/6Z",
+      "dimension": 4,
+      "multiplications": 49,
+      "additions": 198
+    },
+    {
+      "ring": "Z/6Z",
+      "dimension": 8,
+      "multiplications": 343,
+      "additions": 1674
+    },
+    {
+      "ring": "Z/6Z",
+      "dimension": 16,
+      "multiplications": 2401,
+      "additions": 12870
+    },
+    {
+      "ring": "F2[eps]/eps^2",
+      "dimension": 1,
+      "multiplications": 1,
+      "additions": 0
+    },
+    {
+      "ring": "F2[eps]/eps^2",
+      "dimension": 2,
+      "multiplications": 7,
+      "additions": 18
+    },
+    {
+      "ring": "F2[eps]/eps^2",
+      "dimension": 4,
+      "multiplications": 49,
+      "additions": 198
+    },
+    {
+      "ring": "F2[eps]/eps^2",
+      "dimension": 8,
+      "multiplications": 343,
+      "additions": 1674
+    },
+    {
+      "ring": "F2[eps]/eps^2",
+      "dimension": 16,
+      "multiplications": 2401,
+      "additions": 12870
+    }
+  ],
+  "clique_cases": [
+    {
+      "vertices": 2,
+      "edge_bits": 1,
+      "ring": "F2",
+      "group_sizes": [
+        1,
+        1,
+        0
+      ],
+      "matrix_dimension": 2,
+      "table_queries": 4,
+      "streamed_rectangular_blocks": false,
+      "recursive_conditioning_queries": 4,
+      "value": 0
+    },
+    {
+      "vertices": 3,
+      "edge_bits": 1,
+      "ring": "F2",
+      "group_sizes": [
+        1,
+        1,
+        1
+      ],
+      "matrix_dimension": 2,
+      "table_queries": 12,
+      "streamed_rectangular_blocks": true,
+      "recursive_conditioning_queries": null,
+      "value": 0
+    },
+    {
+      "vertices": 3,
+      "edge_bits": 2,
+      "ring": "F2",
+      "group_sizes": [
+        1,
+        1,
+        1
+      ],
+      "matrix_dimension": 4,
+      "table_queries": 48,
+      "streamed_rectangular_blocks": true,
+      "recursive_conditioning_queries": null,
+      "value": 0
+    },
+    {
+      "vertices": 4,
+      "edge_bits": 1,
+      "ring": "F2",
+      "group_sizes": [
+        2,
+        1,
+        1
+      ],
+      "matrix_dimension": 4,
+      "table_queries": 80,
+      "streamed_rectangular_blocks": false,
+      "recursive_conditioning_queries": 128,
+      "value": 0
+    },
+    {
+      "vertices": 4,
+      "edge_bits": 2,
+      "ring": "F2",
+      "group_sizes": [
+        2,
+        1,
+        1
+      ],
+      "matrix_dimension": 16,
+      "table_queries": 2176,
+      "streamed_rectangular_blocks": false,
+      "recursive_conditioning_queries": 4096,
+      "value": 1
+    },
+    {
+      "vertices": 5,
+      "edge_bits": 1,
+      "ring": "F2",
+      "group_sizes": [
+        2,
+        2,
+        1
+      ],
+      "matrix_dimension": 16,
+      "table_queries": 528,
+      "streamed_rectangular_blocks": false,
+      "recursive_conditioning_queries": null,
+      "value": 1
+    },
+    {
+      "vertices": 6,
+      "edge_bits": 1,
+      "ring": "F2",
+      "group_sizes": [
+        2,
+        2,
+        2
+      ],
+      "matrix_dimension": 16,
+      "table_queries": 3072,
+      "streamed_rectangular_blocks": true,
+      "recursive_conditioning_queries": null,
+      "value": 0
+    },
+    {
+      "vertices": 2,
+      "edge_bits": 1,
+      "ring": "F3",
+      "group_sizes": [
+        1,
+        1,
+        0
+      ],
+      "matrix_dimension": 2,
+      "table_queries": 4,
+      "streamed_rectangular_blocks": false,
+      "recursive_conditioning_queries": 4,
+      "value": 1
+    },
+    {
+      "vertices": 3,
+      "edge_bits": 1,
+      "ring": "F3",
+      "group_sizes": [
+        1,
+        1,
+        1
+      ],
+      "matrix_dimension": 2,
+      "table_queries": 12,
+      "streamed_rectangular_blocks": true,
+      "recursive_conditioning_queries": null,
+      "value": 1
+    },
+    {
+      "vertices": 3,
+      "edge_bits": 2,
+      "ring": "F3",
+      "group_sizes": [
+        1,
+        1,
+        1
+      ],
+      "matrix_dimension": 4,
+      "table_queries": 48,
+      "streamed_rectangular_blocks": true,
+      "recursive_conditioning_queries": null,
+      "value": 2
+    },
+    {
+      "vertices": 4,
+      "edge_bits": 1,
+      "ring": "F3",
+      "group_sizes": [
+        2,
+        1,
+        1
+      ],
+      "matrix_dimension": 4,
+      "table_queries": 80,
+      "streamed_rectangular_blocks": false,
+      "recursive_conditioning_queries": 128,
+      "value": 0
+    },
+    {
+      "vertices": 4,
+      "edge_bits": 2,
+      "ring": "F3",
+      "group_sizes": [
+        2,
+        1,
+        1
+      ],
+      "matrix_dimension": 16,
+      "table_queries": 2176,
+      "streamed_rectangular_blocks": false,
+      "recursive_conditioning_queries": 4096,
+      "value": 0
+    },
+    {
+      "vertices": 5,
+      "edge_bits": 1,
+      "ring": "F3",
+      "group_sizes": [
+        2,
+        2,
+        1
+      ],
+      "matrix_dimension": 16,
+      "table_queries": 528,
+      "streamed_rectangular_blocks": false,
+      "recursive_conditioning_queries": null,
+      "value": 2
+    },
+    {
+      "vertices": 6,
+      "edge_bits": 1,
+      "ring": "F3",
+      "group_sizes": [
+        2,
+        2,
+        2
+      ],
+      "matrix_dimension": 16,
+      "table_queries": 3072,
+      "streamed_rectangular_blocks": true,
+      "recursive_conditioning_queries": null,
+      "value": 2
+    },
+    {
+      "vertices": 2,
+      "edge_bits": 1,
+      "ring": "Z/6Z",
+      "group_sizes": [
+        1,
+        1,
+        0
+      ],
+      "matrix_dimension": 2,
+      "table_queries": 4,
+      "streamed_rectangular_blocks": false,
+      "recursive_conditioning_queries": 4,
+      "value": 0
+    },
+    {
+      "vertices": 3,
+      "edge_bits": 1,
+      "ring": "Z/6Z",
+      "group_sizes": [
+        1,
+        1,
+        1
+      ],
+      "matrix_dimension": 2,
+      "table_queries": 12,
+      "streamed_rectangular_blocks": true,
+      "recursive_conditioning_queries": null,
+      "value": 5
+    },
+    {
+      "vertices": 3,
+      "edge_bits": 2,
+      "ring": "Z/6Z",
+      "group_sizes": [
+        1,
+        1,
+        1
+      ],
+      "matrix_dimension": 4,
+      "table_queries": 48,
+      "streamed_rectangular_blocks": true,
+      "recursive_conditioning_queries": null,
+      "value": 1
+    },
+    {
+      "vertices": 4,
+      "edge_bits": 1,
+      "ring": "Z/6Z",
+      "group_sizes": [
+        2,
+        1,
+        1
+      ],
+      "matrix_dimension": 4,
+      "table_queries": 80,
+      "streamed_rectangular_blocks": false,
+      "recursive_conditioning_queries": 128,
+      "value": 4
+    },
+    {
+      "vertices": 4,
+      "edge_bits": 2,
+      "ring": "Z/6Z",
+      "group_sizes": [
+        2,
+        1,
+        1
+      ],
+      "matrix_dimension": 16,
+      "table_queries": 2176,
+      "streamed_rectangular_blocks": false,
+      "recursive_conditioning_queries": 4096,
+      "value": 4
+    },
+    {
+      "vertices": 5,
+      "edge_bits": 1,
+      "ring": "Z/6Z",
+      "group_sizes": [
+        2,
+        2,
+        1
+      ],
+      "matrix_dimension": 16,
+      "table_queries": 528,
+      "streamed_rectangular_blocks": false,
+      "recursive_conditioning_queries": null,
+      "value": 3
+    },
+    {
+      "vertices": 6,
+      "edge_bits": 1,
+      "ring": "Z/6Z",
+      "group_sizes": [
+        2,
+        2,
+        2
+      ],
+      "matrix_dimension": 16,
+      "table_queries": 3072,
+      "streamed_rectangular_blocks": true,
+      "recursive_conditioning_queries": null,
+      "value": 4
+    },
+    {
+      "vertices": 2,
+      "edge_bits": 1,
+      "ring": "F2[eps]/eps^2",
+      "group_sizes": [
+        1,
+        1,
+        0
+      ],
+      "matrix_dimension": 2,
+      "table_queries": 4,
+      "streamed_rectangular_blocks": false,
+      "recursive_conditioning_queries": 4,
+      "value": 0
+    },
+    {
+      "vertices": 3,
+      "edge_bits": 1,
+      "ring": "F2[eps]/eps^2",
+      "group_sizes": [
+        1,
+        1,
+        1
+      ],
+      "matrix_dimension": 2,
+      "table_queries": 12,
+      "streamed_rectangular_blocks": true,
+      "recursive_conditioning_queries": null,
+      "value": 3
+    },
+    {
+      "vertices": 3,
+      "edge_bits": 2,
+      "ring": "F2[eps]/eps^2",
+      "group_sizes": [
+        1,
+        1,
+        1
+      ],
+      "matrix_dimension": 4,
+      "table_queries": 48,
+      "streamed_rectangular_blocks": true,
+      "recursive_conditioning_queries": null,
+      "value": 2
+    },
+    {
+      "vertices": 4,
+      "edge_bits": 1,
+      "ring": "F2[eps]/eps^2",
+      "group_sizes": [
+        2,
+        1,
+        1
+      ],
+      "matrix_dimension": 4,
+      "table_queries": 80,
+      "streamed_rectangular_blocks": false,
+      "recursive_conditioning_queries": 128,
+      "value": 0
+    },
+    {
+      "vertices": 4,
+      "edge_bits": 2,
+      "ring": "F2[eps]/eps^2",
+      "group_sizes": [
+        2,
+        1,
+        1
+      ],
+      "matrix_dimension": 16,
+      "table_queries": 2176,
+      "streamed_rectangular_blocks": false,
+      "recursive_conditioning_queries": 4096,
+      "value": 3
+    },
+    {
+      "vertices": 5,
+      "edge_bits": 1,
+      "ring": "F2[eps]/eps^2",
+      "group_sizes": [
+        2,
+        2,
+        1
+      ],
+      "matrix_dimension": 16,
+      "table_queries": 528,
+      "streamed_rectangular_blocks": false,
+      "recursive_conditioning_queries": null,
+      "value": 3
+    },
+    {
+      "vertices": 6,
+      "edge_bits": 1,
+      "ring": "F2[eps]/eps^2",
+      "group_sizes": [
+        2,
+        2,
+        2
+      ],
+      "matrix_dimension": 16,
+      "table_queries": 3072,
+      "streamed_rectangular_blocks": true,
+      "recursive_conditioning_queries": null,
+      "value": 1
+    },
+    {
+      "vertices": 5,
+      "edge_bits": 1,
+      "ring": "F2",
+      "group_sizes": [
+        1,
+        2,
+        2
+      ],
+      "matrix_dimension": 16,
+      "table_queries": 528,
+      "streamed_rectangular_blocks": true,
+      "recursive_conditioning_queries": null,
+      "value": 0
+    },
+    {
+      "vertices": 5,
+      "edge_bits": 1,
+      "ring": "F3",
+      "group_sizes": [
+        1,
+        2,
+        2
+      ],
+      "matrix_dimension": 16,
+      "table_queries": 528,
+      "streamed_rectangular_blocks": true,
+      "recursive_conditioning_queries": null,
+      "value": 0
+    },
+    {
+      "vertices": 5,
+      "edge_bits": 1,
+      "ring": "Z/6Z",
+      "group_sizes": [
+        1,
+        2,
+        2
+      ],
+      "matrix_dimension": 16,
+      "table_queries": 528,
+      "streamed_rectangular_blocks": true,
+      "recursive_conditioning_queries": null,
+      "value": 4
+    },
+    {
+      "vertices": 5,
+      "edge_bits": 1,
+      "ring": "F2[eps]/eps^2",
+      "group_sizes": [
+        1,
+        2,
+        2
+      ],
+      "matrix_dimension": 16,
+      "table_queries": 528,
+      "streamed_rectangular_blocks": true,
+      "recursive_conditioning_queries": null,
+      "value": 0
+    }
+  ],
+  "grouped_entry_cases": [
+    {
+      "nodes": 1,
+      "domain": 2,
+      "ring": "F2",
+      "matrix_dimension": 2,
+      "value": 1
+    },
+    {
+      "nodes": 1,
+      "domain": 3,
+      "ring": "F2",
+      "matrix_dimension": 4,
+      "value": 1
+    },
+    {
+      "nodes": 2,
+      "domain": 2,
+      "ring": "F2",
+      "matrix_dimension": 2,
+      "value": 0
+    },
+    {
+      "nodes": 2,
+      "domain": 3,
+      "ring": "F2",
+      "matrix_dimension": 4,
+      "value": 0
+    },
+    {
+      "nodes": 3,
+      "domain": 2,
+      "ring": "F2",
+      "matrix_dimension": 2,
+      "value": 0
+    },
+    {
+      "nodes": 3,
+      "domain": 3,
+      "ring": "F2",
+      "matrix_dimension": 4,
+      "value": 1
+    },
+    {
+      "nodes": 4,
+      "domain": 2,
+      "ring": "F2",
+      "matrix_dimension": 4,
+      "value": 0
+    },
+    {
+      "nodes": 4,
+      "domain": 3,
+      "ring": "F2",
+      "matrix_dimension": 16,
+      "value": 0
+    },
+    {
+      "nodes": 5,
+      "domain": 2,
+      "ring": "F2",
+      "matrix_dimension": 4,
+      "value": 0
+    },
+    {
+      "nodes": 5,
+      "domain": 3,
+      "ring": "F2",
+      "matrix_dimension": 16,
+      "value": 0
+    },
+    {
+      "nodes": 6,
+      "domain": 2,
+      "ring": "F2",
+      "matrix_dimension": 4,
+      "value": 0
+    },
+    {
+      "nodes": 6,
+      "domain": 3,
+      "ring": "F2",
+      "matrix_dimension": 16,
+      "value": 0
+    },
+    {
+      "nodes": 7,
+      "domain": 2,
+      "ring": "F2",
+      "matrix_dimension": 8,
+      "value": 0
+    },
+    {
+      "nodes": 7,
+      "domain": 3,
+      "ring": "F2",
+      "matrix_dimension": 32,
+      "value": 0
+    },
+    {
+      "nodes": 1,
+      "domain": 2,
+      "ring": "F3",
+      "matrix_dimension": 2,
+      "value": 2
+    },
+    {
+      "nodes": 1,
+      "domain": 3,
+      "ring": "F3",
+      "matrix_dimension": 4,
+      "value": 0
+    },
+    {
+      "nodes": 2,
+      "domain": 2,
+      "ring": "F3",
+      "matrix_dimension": 2,
+      "value": 0
+    },
+    {
+      "nodes": 2,
+      "domain": 3,
+      "ring": "F3",
+      "matrix_dimension": 4,
+      "value": 2
+    },
+    {
+      "nodes": 3,
+      "domain": 2,
+      "ring": "F3",
+      "matrix_dimension": 2,
+      "value": 0
+    },
+    {
+      "nodes": 3,
+      "domain": 3,
+      "ring": "F3",
+      "matrix_dimension": 4,
+      "value": 1
+    },
+    {
+      "nodes": 4,
+      "domain": 2,
+      "ring": "F3",
+      "matrix_dimension": 4,
+      "value": 0
+    },
+    {
+      "nodes": 4,
+      "domain": 3,
+      "ring": "F3",
+      "matrix_dimension": 16,
+      "value": 0
+    },
+    {
+      "nodes": 5,
+      "domain": 2,
+      "ring": "F3",
+      "matrix_dimension": 4,
+      "value": 0
+    },
+    {
+      "nodes": 5,
+      "domain": 3,
+      "ring": "F3",
+      "matrix_dimension": 16,
+      "value": 2
+    },
+    {
+      "nodes": 6,
+      "domain": 2,
+      "ring": "F3",
+      "matrix_dimension": 4,
+      "value": 0
+    },
+    {
+      "nodes": 6,
+      "domain": 3,
+      "ring": "F3",
+      "matrix_dimension": 16,
+      "value": 0
+    },
+    {
+      "nodes": 7,
+      "domain": 2,
+      "ring": "F3",
+      "matrix_dimension": 8,
+      "value": 0
+    },
+    {
+      "nodes": 7,
+      "domain": 3,
+      "ring": "F3",
+      "matrix_dimension": 32,
+      "value": 0
+    },
+    {
+      "nodes": 1,
+      "domain": 2,
+      "ring": "Z/6Z",
+      "matrix_dimension": 2,
+      "value": 5
+    },
+    {
+      "nodes": 1,
+      "domain": 3,
+      "ring": "Z/6Z",
+      "matrix_dimension": 4,
+      "value": 1
+    },
+    {
+      "nodes": 2,
+      "domain": 2,
+      "ring": "Z/6Z",
+      "matrix_dimension": 2,
+      "value": 0
+    },
+    {
+      "nodes": 2,
+      "domain": 3,
+      "ring": "Z/6Z",
+      "matrix_dimension": 4,
+      "value": 4
+    },
+    {
+      "nodes": 3,
+      "domain": 2,
+      "ring": "Z/6Z",
+      "matrix_dimension": 2,
+      "value": 0
+    },
+    {
+      "nodes": 3,
+      "domain": 3,
+      "ring": "Z/6Z",
+      "matrix_dimension": 4,
+      "value": 0
+    },
+    {
+      "nodes": 4,
+      "domain": 2,
+      "ring": "Z/6Z",
+      "matrix_dimension": 4,
+      "value": 0
+    },
+    {
+      "nodes": 4,
+      "domain": 3,
+      "ring": "Z/6Z",
+      "matrix_dimension": 16,
+      "value": 4
+    },
+    {
+      "nodes": 5,
+      "domain": 2,
+      "ring": "Z/6Z",
+      "matrix_dimension": 4,
+      "value": 0
+    },
+    {
+      "nodes": 5,
+      "domain": 3,
+      "ring": "Z/6Z",
+      "matrix_dimension": 16,
+      "value": 2
+    },
+    {
+      "nodes": 6,
+      "domain": 2,
+      "ring": "Z/6Z",
+      "matrix_dimension": 4,
+      "value": 0
+    },
+    {
+      "nodes": 6,
+      "domain": 3,
+      "ring": "Z/6Z",
+      "matrix_dimension": 16,
+      "value": 0
+    },
+    {
+      "nodes": 7,
+      "domain": 2,
+      "ring": "Z/6Z",
+      "matrix_dimension": 8,
+      "value": 0
+    },
+    {
+      "nodes": 7,
+      "domain": 3,
+      "ring": "Z/6Z",
+      "matrix_dimension": 32,
+      "value": 0
+    },
+    {
+      "nodes": 1,
+      "domain": 2,
+      "ring": "F2[eps]/eps^2",
+      "matrix_dimension": 2,
+      "value": 0
+    },
+    {
+      "nodes": 1,
+      "domain": 3,
+      "ring": "F2[eps]/eps^2",
+      "matrix_dimension": 4,
+      "value": 3
+    },
+    {
+      "nodes": 2,
+      "domain": 2,
+      "ring": "F2[eps]/eps^2",
+      "matrix_dimension": 2,
+      "value": 2
+    },
+    {
+      "nodes": 2,
+      "domain": 3,
+      "ring": "F2[eps]/eps^2",
+      "matrix_dimension": 4,
+      "value": 0
+    },
+    {
+      "nodes": 3,
+      "domain": 2,
+      "ring": "F2[eps]/eps^2",
+      "matrix_dimension": 2,
+      "value": 2
+    },
+    {
+      "nodes": 3,
+      "domain": 3,
+      "ring": "F2[eps]/eps^2",
+      "matrix_dimension": 4,
+      "value": 2
+    },
+    {
+      "nodes": 4,
+      "domain": 2,
+      "ring": "F2[eps]/eps^2",
+      "matrix_dimension": 4,
+      "value": 2
+    },
+    {
+      "nodes": 4,
+      "domain": 3,
+      "ring": "F2[eps]/eps^2",
+      "matrix_dimension": 16,
+      "value": 0
+    },
+    {
+      "nodes": 5,
+      "domain": 2,
+      "ring": "F2[eps]/eps^2",
+      "matrix_dimension": 4,
+      "value": 0
+    },
+    {
+      "nodes": 5,
+      "domain": 3,
+      "ring": "F2[eps]/eps^2",
+      "matrix_dimension": 16,
+      "value": 0
+    },
+    {
+      "nodes": 6,
+      "domain": 2,
+      "ring": "F2[eps]/eps^2",
+      "matrix_dimension": 4,
+      "value": 0
+    },
+    {
+      "nodes": 6,
+      "domain": 3,
+      "ring": "F2[eps]/eps^2",
+      "matrix_dimension": 16,
+      "value": 0
+    },
+    {
+      "nodes": 7,
+      "domain": 2,
+      "ring": "F2[eps]/eps^2",
+      "matrix_dimension": 8,
+      "value": 0
+    },
+    {
+      "nodes": 7,
+      "domain": 3,
+      "ring": "F2[eps]/eps^2",
+      "matrix_dimension": 32,
+      "value": 0
+    }
+  ],
+  "schedule_cases": [
+    {
+      "x0": 6,
+      "level": 0,
+      "log2_K": 6,
+      "construction_term_dominated": true
+    },
+    {
+      "x0": 6,
+      "level": 1,
+      "log2_K": 24,
+      "construction_term_dominated": true
+    },
+    {
+      "x0": 6,
+      "level": 2,
+      "log2_K": 66,
+      "construction_term_dominated": true
+    },
+    {
+      "x0": 6,
+      "level": 3,
+      "log2_K": 156,
+      "construction_term_dominated": true
+    },
+    {
+      "x0": 6,
+      "level": 4,
+      "log2_K": 342,
+      "construction_term_dominated": true
+    },
+    {
+      "x0": 6,
+      "level": 5,
+      "log2_K": 720,
+      "construction_term_dominated": true
+    },
+    {
+      "x0": 6,
+      "level": 6,
+      "log2_K": 1482,
+      "construction_term_dominated": true
+    },
+    {
+      "x0": 8,
+      "level": 0,
+      "log2_K": 8,
+      "construction_term_dominated": true
+    },
+    {
+      "x0": 8,
+      "level": 1,
+      "log2_K": 32,
+      "construction_term_dominated": true
+    },
+    {
+      "x0": 8,
+      "level": 2,
+      "log2_K": 86,
+      "construction_term_dominated": true
+    },
+    {
+      "x0": 8,
+      "level": 3,
+      "log2_K": 200,
+      "construction_term_dominated": true
+    },
+    {
+      "x0": 8,
+      "level": 4,
+      "log2_K": 434,
+      "construction_term_dominated": true
+    },
+    {
+      "x0": 8,
+      "level": 5,
+      "log2_K": 908,
+      "construction_term_dominated": true
+    },
+    {
+      "x0": 8,
+      "level": 6,
+      "log2_K": 1862,
+      "construction_term_dominated": true
+    },
+    {
+      "x0": 18,
+      "level": 0,
+      "log2_K": 18,
+      "construction_term_dominated": true
+    },
+    {
+      "x0": 18,
+      "level": 1,
+      "log2_K": 72,
+      "construction_term_dominated": true
+    },
+    {
+      "x0": 18,
+      "level": 2,
+      "log2_K": 186,
+      "construction_term_dominated": true
+    },
+    {
+      "x0": 18,
+      "level": 3,
+      "log2_K": 420,
+      "construction_term_dominated": true
+    },
+    {
+      "x0": 18,
+      "level": 4,
+      "log2_K": 894,
+      "construction_term_dominated": true
+    },
+    {
+      "x0": 18,
+      "level": 5,
+      "log2_K": 1848,
+      "construction_term_dominated": true
+    },
+    {
+      "x0": 18,
+      "level": 6,
+      "log2_K": 3762,
+      "construction_term_dominated": true
+    }
+  ],
+  "space": "recursive conditioning: linear assignment storage; matrix variants: exponential ring storage"
+}
