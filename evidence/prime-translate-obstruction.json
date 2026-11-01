@@ -1,0 +1,3365 @@
+{
+  "scope": "Exact finite arithmetic counterexamples to the stated single-smooth-form prime-translate rule; not a factoring lower bound",
+  "targets_checked": 10,
+  "prime_translates_checked": 242,
+  "two_prime_words_checked": 248,
+  "primitive_coordinate_checks": 32956,
+  "records": [
+    {
+      "prime_parameter": 13,
+      "discriminant": -114243,
+      "radius": 168,
+      "smooth_bound": 12,
+      "target": [
+        13,
+        1,
+        2197
+      ],
+      "prime_sample_classes": 4,
+      "oriented_prime_records": 4,
+      "single_translate_failures": {
+        "leading_coefficient_not_smooth": 4
+      },
+      "two_prime_words_checked": 0,
+      "distinct_two_prime_word_values": 0,
+      "primitive_coordinate_checks": 284,
+      "prime_controls": [
+        {
+          "sample": [
+            7,
+            5,
+            4081
+          ],
+          "translate": [
+            91,
+            -51,
+            321
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            7,
+            -5,
+            4081
+          ],
+          "translate": [
+            91,
+            79,
+            331
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            11,
+            5,
+            2597
+          ],
+          "translate": [
+            143,
+            27,
+            201
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            11,
+            -5,
+            2597
+          ],
+          "translate": [
+            143,
+            105,
+            219
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        }
+      ]
+    },
+    {
+      "prime_parameter": 17,
+      "discriminant": -334083,
+      "radius": 288,
+      "smooth_bound": 16,
+      "target": [
+        17,
+        1,
+        4913
+      ],
+      "prime_sample_classes": 4,
+      "oriented_prime_records": 4,
+      "single_translate_failures": {
+        "leading_coefficient_not_smooth": 4
+      },
+      "two_prime_words_checked": 0,
+      "distinct_two_prime_word_values": 0,
+      "primitive_coordinate_checks": 368,
+      "prime_controls": [
+        {
+          "sample": [
+            11,
+            3,
+            7593
+          ],
+          "translate": [
+            187,
+            69,
+            453
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            11,
+            -3,
+            7593
+          ],
+          "translate": [
+            187,
+            -135,
+            471
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            13,
+            11,
+            6427
+          ],
+          "translate": [
+            221,
+            -67,
+            383
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            13,
+            -11,
+            6427
+          ],
+          "translate": [
+            221,
+            171,
+            411
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        }
+      ]
+    },
+    {
+      "prime_parameter": 19,
+      "discriminant": -521283,
+      "radius": 360,
+      "smooth_bound": 18,
+      "target": [
+        19,
+        1,
+        6859
+      ],
+      "prime_sample_classes": 2,
+      "oriented_prime_records": 2,
+      "single_translate_failures": {
+        "leading_coefficient_not_smooth": 2
+      },
+      "two_prime_words_checked": 0,
+      "distinct_two_prime_word_values": 0,
+      "primitive_coordinate_checks": 412,
+      "prime_controls": [
+        {
+          "sample": [
+            13,
+            11,
+            10027
+          ],
+          "translate": [
+            247,
+            115,
+            541
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            13,
+            -11,
+            10027
+          ],
+          "translate": [
+            247,
+            -37,
+            529
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        }
+      ]
+    },
+    {
+      "prime_parameter": 23,
+      "discriminant": -1119363,
+      "radius": 528,
+      "smooth_bound": 22,
+      "target": [
+        23,
+        1,
+        12167
+      ],
+      "prime_sample_classes": 2,
+      "oriented_prime_records": 2,
+      "single_translate_failures": {
+        "leading_coefficient_not_smooth": 2
+      },
+      "two_prime_words_checked": 0,
+      "distinct_two_prime_word_values": 0,
+      "primitive_coordinate_checks": 496,
+      "prime_controls": [
+        {
+          "sample": [
+            17,
+            11,
+            16463
+          ],
+          "translate": [
+            391,
+            -91,
+            721
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            17,
+            -11,
+            16463
+          ],
+          "translate": [
+            391,
+            -45,
+            717
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        }
+      ]
+    },
+    {
+      "prime_parameter": 29,
+      "discriminant": -2829123,
+      "radius": 840,
+      "smooth_bound": 28,
+      "target": [
+        29,
+        1,
+        24389
+      ],
+      "prime_sample_classes": 2,
+      "oriented_prime_records": 2,
+      "single_translate_failures": {
+        "leading_coefficient_not_smooth": 2
+      },
+      "two_prime_words_checked": 0,
+      "distinct_two_prime_word_values": 0,
+      "primitive_coordinate_checks": 624,
+      "prime_controls": [
+        {
+          "sample": [
+            7,
+            5,
+            101041
+          ],
+          "translate": [
+            203,
+            117,
+            3501
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            7,
+            -5,
+            101041
+          ],
+          "translate": [
+            203,
+            -173,
+            3521
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        }
+      ]
+    },
+    {
+      "prime_parameter": 31,
+      "discriminant": -3694083,
+      "radius": 960,
+      "smooth_bound": 30,
+      "target": [
+        31,
+        1,
+        29791
+      ],
+      "prime_sample_classes": 10,
+      "oriented_prime_records": 10,
+      "single_translate_failures": {
+        "leading_coefficient_not_smooth": 10
+      },
+      "two_prime_words_checked": 0,
+      "distinct_two_prime_word_values": 0,
+      "primitive_coordinate_checks": 668,
+      "prime_controls": [
+        {
+          "sample": [
+            11,
+            5,
+            83957
+          ],
+          "translate": [
+            341,
+            -61,
+            2711
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            11,
+            -5,
+            83957
+          ],
+          "translate": [
+            341,
+            -247,
+            2753
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            13,
+            7,
+            71041
+          ],
+          "translate": [
+            403,
+            -123,
+            2301
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            13,
+            -7,
+            71041
+          ],
+          "translate": [
+            403,
+            -371,
+            2377
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            19,
+            7,
+            48607
+          ],
+          "translate": [
+            589,
+            311,
+            1609
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            19,
+            -7,
+            48607
+          ],
+          "translate": [
+            589,
+            373,
+            1627
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            23,
+            19,
+            40157
+          ],
+          "translate": [
+            713,
+            249,
+            1317
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            23,
+            -19,
+            40157
+          ],
+          "translate": [
+            713,
+            -433,
+            1361
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            29,
+            13,
+            31847
+          ],
+          "translate": [
+            899,
+            187,
+            1037
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            29,
+            -13,
+            31847
+          ],
+          "translate": [
+            899,
+            683,
+            1157
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        }
+      ]
+    },
+    {
+      "prime_parameter": 43,
+      "discriminant": -13675203,
+      "radius": 1848,
+      "smooth_bound": 42,
+      "target": [
+        43,
+        1,
+        79507
+      ],
+      "prime_sample_classes": 8,
+      "oriented_prime_records": 8,
+      "single_translate_failures": {
+        "leading_coefficient_not_smooth": 8
+      },
+      "two_prime_words_checked": 0,
+      "distinct_two_prime_word_values": 0,
+      "primitive_coordinate_checks": 924,
+      "prime_controls": [
+        {
+          "sample": [
+            7,
+            5,
+            488401
+          ],
+          "translate": [
+            301,
+            173,
+            11383
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            7,
+            -5,
+            488401
+          ],
+          "translate": [
+            301,
+            -257,
+            11413
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            13,
+            11,
+            262987
+          ],
+          "translate": [
+            559,
+            -171,
+            6129
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            13,
+            -11,
+            262987
+          ],
+          "translate": [
+            559,
+            431,
+            6199
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            19,
+            3,
+            179937
+          ],
+          "translate": [
+            817,
+            345,
+            4221
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            19,
+            -3,
+            179937
+          ],
+          "translate": [
+            817,
+            -687,
+            4329
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            37,
+            21,
+            92403
+          ],
+          "translate": [
+            1591,
+            1205,
+            2377
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            37,
+            -21,
+            92403
+          ],
+          "translate": [
+            1591,
+            -687,
+            2223
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        }
+      ]
+    },
+    {
+      "prime_parameter": 101,
+      "discriminant": -416241603,
+      "radius": 10200,
+      "smooth_bound": 100,
+      "target": [
+        101,
+        1,
+        1030301
+      ],
+      "prime_sample_classes": 20,
+      "oriented_prime_records": 20,
+      "single_translate_failures": {
+        "leading_coefficient_not_smooth": 20
+      },
+      "two_prime_words_checked": 0,
+      "distinct_two_prime_word_values": 0,
+      "primitive_coordinate_checks": 2160,
+      "prime_controls": [
+        {
+          "sample": [
+            11,
+            5,
+            9460037
+          ],
+          "translate": [
+            1111,
+            203,
+            93673
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            11,
+            -5,
+            9460037
+          ],
+          "translate": [
+            1111,
+            809,
+            93811
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            19,
+            17,
+            5476867
+          ],
+          "translate": [
+            1919,
+            -1009,
+            54359
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            19,
+            -17,
+            5476867
+          ],
+          "translate": [
+            1919,
+            1617,
+            54567
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            31,
+            27,
+            3356793
+          ],
+          "translate": [
+            3131,
+            -2019,
+            33561
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            31,
+            -27,
+            3356793
+          ],
+          "translate": [
+            3131,
+            1213,
+            33353
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            41,
+            27,
+            2538063
+          ],
+          "translate": [
+            4141,
+            1011,
+            25191
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            41,
+            -27,
+            2538063
+          ],
+          "translate": [
+            4141,
+            -3635,
+            25927
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            43,
+            17,
+            2420011
+          ],
+          "translate": [
+            4343,
+            2425,
+            24299
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            43,
+            -17,
+            2420011
+          ],
+          "translate": [
+            4343,
+            1617,
+            24111
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            47,
+            19,
+            2214053
+          ],
+          "translate": [
+            4747,
+            1617,
+            22059
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            47,
+            -19,
+            2214053
+          ],
+          "translate": [
+            4747,
+            2425,
+            22231
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            71,
+            21,
+            1465641
+          ],
+          "translate": [
+            7171,
+            4849,
+            15331
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            71,
+            -21,
+            1465641
+          ],
+          "translate": [
+            7171,
+            405,
+            14517
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            83,
+            49,
+            1253747
+          ],
+          "translate": [
+            8383,
+            5859,
+            13437
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            83,
+            -49,
+            1253747
+          ],
+          "translate": [
+            8383,
+            -1211,
+            12457
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            89,
+            19,
+            1169219
+          ],
+          "translate": [
+            8989,
+            4647,
+            12177
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            89,
+            -19,
+            1169219
+          ],
+          "translate": [
+            8989,
+            2829,
+            11799
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            97,
+            23,
+            1072789
+          ],
+          "translate": [
+            9797,
+            5455,
+            11381
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            97,
+            -23,
+            1072789
+          ],
+          "translate": [
+            9797,
+            -605,
+            10631
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        }
+      ]
+    },
+    {
+      "prime_parameter": 257,
+      "discriminant": -17449881603,
+      "radius": 66048,
+      "smooth_bound": 256,
+      "target": [
+        257,
+        1,
+        16974593
+      ],
+      "prime_sample_classes": 42,
+      "oriented_prime_records": 42,
+      "single_translate_failures": {
+        "leading_coefficient_not_smooth": 42
+      },
+      "two_prime_words_checked": 0,
+      "distinct_two_prime_word_values": 0,
+      "primitive_coordinate_checks": 5488,
+      "prime_controls": [
+        {
+          "sample": [
+            23,
+            9,
+            189672627
+          ],
+          "translate": [
+            5911,
+            515,
+            738037
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            23,
+            -9,
+            189672627
+          ],
+          "translate": [
+            5911,
+            -3597,
+            738573
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            31,
+            13,
+            140724853
+          ],
+          "translate": [
+            7967,
+            5655,
+            548571
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            31,
+            -13,
+            140724853
+          ],
+          "translate": [
+            7967,
+            6683,
+            548969
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            37,
+            23,
+            117904609
+          ],
+          "translate": [
+            9509,
+            6683,
+            459947
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            37,
+            -23,
+            117904609
+          ],
+          "translate": [
+            9509,
+            3085,
+            459023
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            43,
+            13,
+            101452801
+          ],
+          "translate": [
+            11051,
+            -3083,
+            394973
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            43,
+            -13,
+            101452801
+          ],
+          "translate": [
+            11051,
+            3599,
+            395051
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            47,
+            43,
+            92818529
+          ],
+          "translate": [
+            12079,
+            -7195,
+            362233
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            47,
+            -43,
+            92818529
+          ],
+          "translate": [
+            12079,
+            -513,
+            361167
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            53,
+            43,
+            82310771
+          ],
+          "translate": [
+            13621,
+            2057,
+            320353
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            53,
+            -43,
+            82310771
+          ],
+          "translate": [
+            13621,
+            8225,
+            321517
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            59,
+            13,
+            73940177
+          ],
+          "translate": [
+            15163,
+            -12849,
+            290427
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            59,
+            -13,
+            73940177
+          ],
+          "translate": [
+            15163,
+            -10279,
+            289447
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            67,
+            53,
+            65111509
+          ],
+          "translate": [
+            17219,
+            11309,
+            255209
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            67,
+            -53,
+            65111509
+          ],
+          "translate": [
+            17219,
+            -14391,
+            256359
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            71,
+            41,
+            61443251
+          ],
+          "translate": [
+            18247,
+            -3083,
+            239209
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            71,
+            -41,
+            61443251
+          ],
+          "translate": [
+            18247,
+            -7709,
+            239893
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            73,
+            27,
+            59759871
+          ],
+          "translate": [
+            18761,
+            16963,
+            236363
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            73,
+            -27,
+            59759871
+          ],
+          "translate": [
+            18761,
+            7711,
+            233321
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            83,
+            47,
+            52559891
+          ],
+          "translate": [
+            21331,
+            17477,
+            208093
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            83,
+            -47,
+            52559891
+          ],
+          "translate": [
+            21331,
+            -1541,
+            204541
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            97,
+            91,
+            44973943
+          ],
+          "translate": [
+            24929,
+            -13877,
+            176927
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            97,
+            -91,
+            44973943
+          ],
+          "translate": [
+            24929,
+            24159,
+            180849
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            107,
+            57,
+            40770759
+          ],
+          "translate": [
+            27499,
+            16963,
+            161257
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            107,
+            -57,
+            40770759
+          ],
+          "translate": [
+            27499,
+            -19531,
+            162109
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            131,
+            11,
+            33301301
+          ],
+          "translate": [
+            33667,
+            -513,
+            129579
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            131,
+            -11,
+            33301301
+          ],
+          "translate": [
+            33667,
+            -12849,
+            130803
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            137,
+            103,
+            31842869
+          ],
+          "translate": [
+            35209,
+            -1541,
+            123919
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            137,
+            -103,
+            31842869
+          ],
+          "translate": [
+            35209,
+            -2569,
+            123949
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            157,
+            131,
+            27786463
+          ],
+          "translate": [
+            40349,
+            -35979,
+            116139
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            157,
+            -131,
+            27786463
+          ],
+          "translate": [
+            40349,
+            30327,
+            113817
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            163,
+            105,
+            26763639
+          ],
+          "translate": [
+            41891,
+            -24671,
+            107771
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            163,
+            -105,
+            26763639
+          ],
+          "translate": [
+            41891,
+            38037,
+            112773
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            191,
+            183,
+            22840203
+          ],
+          "translate": [
+            49087,
+            20047,
+            90919
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            191,
+            -183,
+            22840203
+          ],
+          "translate": [
+            49087,
+            -48315,
+            100761
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            197,
+            123,
+            22144539
+          ],
+          "translate": [
+            50629,
+            12337,
+            86917
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            197,
+            -123,
+            22144539
+          ],
+          "translate": [
+            50629,
+            -24157,
+            89047
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            239,
+            177,
+            18253047
+          ],
+          "translate": [
+            61423,
+            29813,
+            74641
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            239,
+            -177,
+            18253047
+          ],
+          "translate": [
+            61423,
+            45233,
+            79351
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            251,
+            29,
+            17380361
+          ],
+          "translate": [
+            64507,
+            44205,
+            75201
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            251,
+            -29,
+            17380361
+          ],
+          "translate": [
+            64507,
+            63223,
+            83119
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        }
+      ]
+    },
+    {
+      "prime_parameter": 1009,
+      "discriminant": -4145955690243,
+      "radius": 1018080,
+      "smooth_bound": 1008,
+      "target": [
+        1009,
+        1,
+        1027243729
+      ],
+      "prime_sample_classes": 148,
+      "oriented_prime_records": 148,
+      "single_translate_failures": {
+        "leading_coefficient_not_smooth": 148
+      },
+      "two_prime_words_checked": 248,
+      "distinct_two_prime_word_values": 125,
+      "primitive_coordinate_checks": 21532,
+      "prime_controls": [
+        {
+          "sample": [
+            7,
+            5,
+            148069846081
+          ],
+          "translate": [
+            7063,
+            4037,
+            146749681
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            7,
+            -5,
+            148069846081
+          ],
+          "translate": [
+            7063,
+            -6053,
+            146750401
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            13,
+            7,
+            79729917121
+          ],
+          "translate": [
+            13117,
+            4037,
+            79019059
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            13,
+            -7,
+            79729917121
+          ],
+          "translate": [
+            13117,
+            12109,
+            79021543
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            17,
+            11,
+            60969936623
+          ],
+          "translate": [
+            17153,
+            -4035,
+            60426339
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            17,
+            -11,
+            60969936623
+          ],
+          "translate": [
+            17153,
+            -2017,
+            60426161
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            31,
+            29,
+            33435126541
+          ],
+          "translate": [
+            31279,
+            -2017,
+            33136927
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            31,
+            -29,
+            33435126541
+          ],
+          "translate": [
+            31279,
+            -20179,
+            33140149
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            43,
+            23,
+            24104393551
+          ],
+          "translate": [
+            43387,
+            14127,
+            23890539
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            43,
+            -23,
+            24104393551
+          ],
+          "translate": [
+            43387,
+            16145,
+            23890891
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            47,
+            43,
+            22052955809
+          ],
+          "translate": [
+            47423,
+            -28251,
+            21860457
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            47,
+            -43,
+            22052955809
+          ],
+          "translate": [
+            47423,
+            -2017,
+            21856271
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            53,
+            19,
+            19556394767
+          ],
+          "translate": [
+            53477,
+            -44395,
+            19391171
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            53,
+            -19,
+            19556394767
+          ],
+          "translate": [
+            53477,
+            -10089,
+            19382433
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            59,
+            3,
+            17567608857
+          ],
+          "translate": [
+            59531,
+            20181,
+            17412621
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            59,
+            -3,
+            17567608857
+          ],
+          "translate": [
+            59531,
+            -40359,
+            17417751
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            67,
+            7,
+            15469983919
+          ],
+          "translate": [
+            67603,
+            -32287,
+            15335851
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            67,
+            -7,
+            15469983919
+          ],
+          "translate": [
+            67603,
+            -2017,
+            15332011
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            71,
+            63,
+            14598435543
+          ],
+          "translate": [
+            71639,
+            42379,
+            14474489
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            71,
+            -63,
+            14598435543
+          ],
+          "translate": [
+            71639,
+            62559,
+            14481879
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            73,
+            41,
+            14198478397
+          ],
+          "translate": [
+            73657,
+            -48431,
+            14079793
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            73,
+            -41,
+            14198478397
+          ],
+          "translate": [
+            73657,
+            -8071,
+            14072053
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            83,
+            31,
+            12487818347
+          ],
+          "translate": [
+            83747,
+            -36323,
+            12380369
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            83,
+            -31,
+            12487818347
+          ],
+          "translate": [
+            83747,
+            -28251,
+            12378813
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            103,
+            97,
+            10062999271
+          ],
+          "translate": [
+            103927,
+            -34305,
+            9976071
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            103,
+            -97,
+            10062999271
+          ],
+          "translate": [
+            103927,
+            -64575,
+            9983271
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            113,
+            51,
+            9172468347
+          ],
+          "translate": [
+            114017,
+            22199,
+            9091733
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            113,
+            -51,
+            9172468347
+          ],
+          "translate": [
+            114017,
+            -50449,
+            9096233
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            127,
+            7,
+            8161330099
+          ],
+          "translate": [
+            128143,
+            108973,
+            8111701
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            127,
+            -7,
+            8161330099
+          ],
+          "translate": [
+            128143,
+            110991,
+            8112567
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            131,
+            83,
+            7912129193
+          ],
+          "translate": [
+            132179,
+            -76683,
+            7852677
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            131,
+            -83,
+            7912129193
+          ],
+          "translate": [
+            132179,
+            -18161,
+            7842179
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            173,
+            43,
+            5991265451
+          ],
+          "translate": [
+            174557,
+            94847,
+            5950709
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            173,
+            -43,
+            5991265451
+          ],
+          "translate": [
+            174557,
+            -82737,
+            5947629
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            179,
+            171,
+            5790440949
+          ],
+          "translate": [
+            180611,
+            80721,
+            5747811
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            179,
+            -171,
+            5790440949
+          ],
+          "translate": [
+            180611,
+            -102917,
+            5753453
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            191,
+            169,
+            5426643611
+          ],
+          "translate": [
+            192719,
+            88793,
+            5388467
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            191,
+            -169,
+            5426643611
+          ],
+          "translate": [
+            192719,
+            -181619,
+            5421029
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            193,
+            67,
+            5370408931
+          ],
+          "translate": [
+            194737,
+            98883,
+            5335059
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            193,
+            -67,
+            5370408931
+          ],
+          "translate": [
+            194737,
+            16145,
+            5322841
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            223,
+            107,
+            4647932401
+          ],
+          "translate": [
+            225007,
+            223999,
+            4662223
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            223,
+            -107,
+            4647932401
+          ],
+          "translate": [
+            225007,
+            102919,
+            4618243
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            229,
+            131,
+            4526152519
+          ],
+          "translate": [
+            231061,
+            -38341,
+            4487371
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            229,
+            -131,
+            4526152519
+          ],
+          "translate": [
+            231061,
+            102919,
+            4497241
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            263,
+            43,
+            3941022521
+          ],
+          "translate": [
+            265367,
+            -161439,
+            3930423
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            263,
+            -43,
+            3941022521
+          ],
+          "translate": [
+            265367,
+            -159421,
+            3929813
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            277,
+            139,
+            3741837283
+          ],
+          "translate": [
+            279493,
+            -272429,
+            3774847
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            277,
+            -139,
+            3741837283
+          ],
+          "translate": [
+            279493,
+            -258303,
+            3768141
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            283,
+            197,
+            3662505061
+          ],
+          "translate": [
+            285547,
+            -20179,
+            3630193
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            283,
+            -197,
+            3662505061
+          ],
+          "translate": [
+            285547,
+            -26233,
+            3630439
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            313,
+            77,
+            3311466211
+          ],
+          "translate": [
+            315817,
+            -143277,
+            3298179
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            313,
+            -77,
+            3311466211
+          ],
+          "translate": [
+            315817,
+            296647,
+            3351589
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            331,
+            3,
+            3131386473
+          ],
+          "translate": [
+            333979,
+            -125115,
+            3115173
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            331,
+            -3,
+            3131386473
+          ],
+          "translate": [
+            333979,
+            250233,
+            3150327
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            337,
+            73,
+            3075634789
+          ],
+          "translate": [
+            340033,
+            -36323,
+            3049171
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            337,
+            -73,
+            3075634789
+          ],
+          "translate": [
+            340033,
+            -302699,
+            3115567
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            353,
+            251,
+            2936229287
+          ],
+          "translate": [
+            356177,
+            351133,
+            2996579
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            353,
+            -251,
+            2936229287
+          ],
+          "translate": [
+            356177,
+            119063,
+            2919989
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            359,
+            347,
+            2887155857
+          ],
+          "translate": [
+            362231,
+            282521,
+            2916491
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            359,
+            -347,
+            2887155857
+          ],
+          "translate": [
+            362231,
+            -16143,
+            2861583
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            367,
+            247,
+            2824220539
+          ],
+          "translate": [
+            370303,
+            -252249,
+            2841987
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            367,
+            -247,
+            2824220539
+          ],
+          "translate": [
+            370303,
+            260323,
+            2844781
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            379,
+            117,
+            2734799277
+          ],
+          "translate": [
+            382411,
+            82739,
+            2714881
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            379,
+            -117,
+            2734799277
+          ],
+          "translate": [
+            382411,
+            377367,
+            2803503
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            383,
+            153,
+            2706237411
+          ],
+          "translate": [
+            386447,
+            175567,
+            2702039
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            383,
+            -153,
+            2706237411
+          ],
+          "translate": [
+            386447,
+            117045,
+            2690961
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            397,
+            373,
+            2610803419
+          ],
+          "translate": [
+            400573,
+            -195745,
+            2611429
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            397,
+            -373,
+            2610803419
+          ],
+          "translate": [
+            400573,
+            244179,
+            2624727
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            401,
+            239,
+            2584760441
+          ],
+          "translate": [
+            404609,
+            161441,
+            2577809
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            401,
+            -239,
+            2584760441
+          ],
+          "translate": [
+            404609,
+            -223997,
+            2592707
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            419,
+            217,
+            2473720607
+          ],
+          "translate": [
+            422771,
+            312791,
+            2509511
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            419,
+            -217,
+            2473720607
+          ],
+          "translate": [
+            422771,
+            -213907,
+            2478713
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            421,
+            301,
+            2461968991
+          ],
+          "translate": [
+            424789,
+            -94845,
+            2445303
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            421,
+            -301,
+            2461968991
+          ],
+          "translate": [
+            424789,
+            339025,
+            2507653
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            431,
+            71,
+            2404846691
+          ],
+          "translate": [
+            434879,
+            -413689,
+            2481779
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            431,
+            -71,
+            2404846691
+          ],
+          "translate": [
+            434879,
+            -195745,
+            2405423
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            439,
+            25,
+            2361022603
+          ],
+          "translate": [
+            442951,
+            345079,
+            2407171
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            439,
+            -25,
+            2361022603
+          ],
+          "translate": [
+            442951,
+            290593,
+            2387623
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            443,
+            151,
+            2339704127
+          ],
+          "translate": [
+            446987,
+            -42377,
+            2319839
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            443,
+            -151,
+            2339704127
+          ],
+          "translate": [
+            446987,
+            78703,
+            2322299
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            449,
+            421,
+            2308438679
+          ],
+          "translate": [
+            453041,
+            -339023,
+            2351273
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            449,
+            -421,
+            2308438679
+          ],
+          "translate": [
+            453041,
+            159423,
+            2301873
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            461,
+            193,
+            2248349093
+          ],
+          "translate": [
+            465149,
+            34307,
+            2228927
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            461,
+            -193,
+            2248349093
+          ],
+          "translate": [
+            465149,
+            -141259,
+            2239019
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            479,
+            253,
+            2163859997
+          ],
+          "translate": [
+            483311,
+            175567,
+            2160503
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            479,
+            -253,
+            2163859997
+          ],
+          "translate": [
+            483311,
+            260323,
+            2179613
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            487,
+            137,
+            2128314019
+          ],
+          "translate": [
+            491383,
+            312791,
+            2159107
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            487,
+            -137,
+            2128314019
+          ],
+          "translate": [
+            491383,
+            332971,
+            2165737
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            509,
+            15,
+            2036324013
+          ],
+          "translate": [
+            513581,
+            -458085,
+            2120307
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            509,
+            -15,
+            2036324013
+          ],
+          "translate": [
+            513581,
+            230053,
+            2043923
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            521,
+            373,
+            1989422183
+          ],
+          "translate": [
+            525689,
+            -106953,
+            1977117
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            521,
+            -373,
+            1989422183
+          ],
+          "translate": [
+            525689,
+            -339023,
+            2026337
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            547,
+            23,
+            1894860919
+          ],
+          "translate": [
+            551923,
+            -26233,
+            1878271
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            547,
+            -23,
+            1894860919
+          ],
+          "translate": [
+            551923,
+            -272429,
+            1911577
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            557,
+            553,
+            1860842009
+          ],
+          "translate": [
+            562013,
+            508537,
+            1959281
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            557,
+            -553,
+            1860842009
+          ],
+          "translate": [
+            562013,
+            369295,
+            1904909
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            577,
+            419,
+            1796341363
+          ],
+          "translate": [
+            582193,
+            213909,
+            1799967
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            577,
+            -419,
+            1796341363
+          ],
+          "translate": [
+            582193,
+            565041,
+            1917417
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            587,
+            527,
+            1765739339
+          ],
+          "translate": [
+            592283,
+            133189,
+            1757477
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            587,
+            -527,
+            1765739339
+          ],
+          "translate": [
+            592283,
+            240143,
+            1774331
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            601,
+            467,
+            1724607283
+          ],
+          "translate": [
+            606409,
+            450015,
+            1792713
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            601,
+            -467,
+            1724607283
+          ],
+          "translate": [
+            606409,
+            266377,
+            1738477
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            607,
+            255,
+            1707560031
+          ],
+          "translate": [
+            612463,
+            363241,
+            1746187
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            607,
+            -255,
+            1707560031
+          ],
+          "translate": [
+            612463,
+            96865,
+            1696159
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            619,
+            459,
+            1674457149
+          ],
+          "translate": [
+            624571,
+            -2017,
+            1659523
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            619,
+            -459,
+            1674457149
+          ],
+          "translate": [
+            624571,
+            351133,
+            1708873
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            653,
+            287,
+            1587272501
+          ],
+          "translate": [
+            658877,
+            389475,
+            1630671
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            653,
+            -287,
+            1587272501
+          ],
+          "translate": [
+            658877,
+            280503,
+            1602969
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            673,
+            13,
+            1540102411
+          ],
+          "translate": [
+            679057,
+            -24215,
+            1526581
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            673,
+            -13,
+            1540102411
+          ],
+          "translate": [
+            679057,
+            28253,
+            1526659
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            701,
+            271,
+            1478586221
+          ],
+          "translate": [
+            707309,
+            409655,
+            1524713
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            701,
+            -271,
+            1478586221
+          ],
+          "translate": [
+            707309,
+            -276465,
+            1492413
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            719,
+            653,
+            1441570277
+          ],
+          "translate": [
+            725471,
+            32289,
+            1429071
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            719,
+            -653,
+            1441570277
+          ],
+          "translate": [
+            725471,
+            -637687,
+            1568843
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            743,
+            229,
+            1395005297
+          ],
+          "translate": [
+            749687,
+            -641723,
+            1519889
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            743,
+            -229,
+            1395005297
+          ],
+          "translate": [
+            749687,
+            -694191,
+            1543263
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            751,
+            321,
+            1380145071
+          ],
+          "translate": [
+            757759,
+            -550913,
+            1467967
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            751,
+            -321,
+            1380145071
+          ],
+          "translate": [
+            757759,
+            -42377,
+            1368427
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            757,
+            563,
+            1369206079
+          ],
+          "translate": [
+            763813,
+            -173547,
+            1366851
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            757,
+            -563,
+            1369206079
+          ],
+          "translate": [
+            763813,
+            179603,
+            1367551
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            761,
+            223,
+            1362009113
+          ],
+          "translate": [
+            767849,
+            502483,
+            1432067
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            761,
+            -223,
+            1362009113
+          ],
+          "translate": [
+            767849,
+            -50449,
+            1350689
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            773,
+            465,
+            1340865429
+          ],
+          "translate": [
+            779957,
+            266377,
+            1351649
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            773,
+            -465,
+            1340865429
+          ],
+          "translate": [
+            779957,
+            189693,
+            1340439
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            809,
+            401,
+            1281197729
+          ],
+          "translate": [
+            816281,
+            2019,
+            1269771
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            809,
+            -401,
+            1281197729
+          ],
+          "translate": [
+            816281,
+            724463,
+            1430513
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            811,
+            411,
+            1278038181
+          ],
+          "translate": [
+            818299,
+            688139,
+            1411309
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            811,
+            -411,
+            1278038181
+          ],
+          "translate": [
+            818299,
+            -84755,
+            1268833
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            823,
+            541,
+            1259403397
+          ],
+          "translate": [
+            830407,
+            56505,
+            1249131
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            823,
+            -541,
+            1259403397
+          ],
+          "translate": [
+            830407,
+            595311,
+            1354863
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            853,
+            277,
+            1215110131
+          ],
+          "translate": [
+            860677,
+            -726479,
+            1357573
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            853,
+            -277,
+            1215110131
+          ],
+          "translate": [
+            860677,
+            207855,
+            1216821
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            863,
+            489,
+            1201030107
+          ],
+          "translate": [
+            870767,
+            361223,
+            1227779
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            863,
+            -489,
+            1201030107
+          ],
+          "translate": [
+            870767,
+            843525,
+            1394601
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            883,
+            503,
+            1173826711
+          ],
+          "translate": [
+            890947,
+            18163,
+            1163449
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            883,
+            -503,
+            1173826711
+          ],
+          "translate": [
+            890947,
+            -4035,
+            1163361
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            887,
+            817,
+            1168533359
+          ],
+          "translate": [
+            894983,
+            476249,
+            1221467
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            887,
+            -817,
+            1168533359
+          ],
+          "translate": [
+            894983,
+            66595,
+            1159349
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            941,
+            313,
+            1101476033
+          ],
+          "translate": [
+            949469,
+            228035,
+            1105343
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            941,
+            -313,
+            1101476033
+          ],
+          "translate": [
+            949469,
+            805183,
+            1262357
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            953,
+            235,
+            1087606439
+          ],
+          "translate": [
+            961577,
+            -167493,
+            1085199
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            953,
+            -235,
+            1087606439
+          ],
+          "translate": [
+            961577,
+            201801,
+            1088493
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            967,
+            21,
+            1071860313
+          ],
+          "translate": [
+            975703,
+            -464139,
+            1117497
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            967,
+            -21,
+            1071860313
+          ],
+          "translate": [
+            975703,
+            510555,
+            1129089
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            983,
+            649,
+            1054414067
+          ],
+          "translate": [
+            991847,
+            -585219,
+            1131333
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            983,
+            -649,
+            1054414067
+          ],
+          "translate": [
+            991847,
+            966623,
+            1280519
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            997,
+            113,
+            1039607749
+          ],
+          "translate": [
+            1005973,
+            680067,
+            1145271
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        },
+        {
+          "sample": [
+            997,
+            -113,
+            1039607749
+          ],
+          "translate": [
+            1005973,
+            -512571,
+            1095627
+          ],
+          "failure": "leading_coefficient_not_smooth"
+        }
+      ]
+    }
+  ]
+}
