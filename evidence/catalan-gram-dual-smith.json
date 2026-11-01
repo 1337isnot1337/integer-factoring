@@ -38,6 +38,7 @@
       "valuation_levels": 1,
       "minimum_delta_order": 1,
       "maximum_delta_order": 1,
+      "closed_form_maximum_delta_order": 1,
       "uniform_delta_order_bound": 1,
       "mean_delta_order": "1",
       "paths_at_or_below_2r": 1
@@ -48,6 +49,7 @@
       "valuation_levels": 1,
       "minimum_delta_order": 2,
       "maximum_delta_order": 2,
+      "closed_form_maximum_delta_order": 2,
       "uniform_delta_order_bound": 3,
       "mean_delta_order": "2",
       "paths_at_or_below_2r": 2
@@ -58,6 +60,7 @@
       "valuation_levels": 3,
       "minimum_delta_order": 4,
       "maximum_delta_order": 8,
+      "closed_form_maximum_delta_order": 8,
       "uniform_delta_order_bound": 10,
       "mean_delta_order": "36/7",
       "paths_at_or_below_2r": 14
@@ -68,6 +71,7 @@
       "valuation_levels": 8,
       "minimum_delta_order": 8,
       "maximum_delta_order": 24,
+      "closed_form_maximum_delta_order": 24,
       "uniform_delta_order_bound": 36,
       "mean_delta_order": "9576/715",
       "paths_at_or_below_2r": 1256
@@ -78,6 +82,7 @@
       "valuation_levels": 32,
       "minimum_delta_order": 16,
       "maximum_delta_order": 80,
+      "closed_form_maximum_delta_order": 80,
       "uniform_delta_order_bound": 136,
       "mean_delta_order": "25019824/768645",
       "paths_at_or_below_2r": 21442176
@@ -88,6 +93,7 @@
       "valuation_levels": 76,
       "minimum_delta_order": 24,
       "maximum_delta_order": 184,
+      "closed_form_maximum_delta_order": 184,
       "uniform_delta_order_bound": 300,
       "mean_delta_order": "437637615128/7865269191",
       "paths_at_or_below_2r": 449862776832
@@ -98,11 +104,28 @@
       "valuation_levels": 132,
       "minimum_delta_order": 32,
       "maximum_delta_order": 304,
+      "closed_form_maximum_delta_order": 304,
       "uniform_delta_order_bound": 528,
       "mean_delta_order": "2234617328785128352/27767032438524099",
       "paths_at_or_below_2r": 10194648368971776
     }
   ],
+  "closed_form_maximum_path_valuation_controls": {
+    "semilength_range": [
+      1,
+      512
+    ],
+    "closed_form_matches_independent_max_plus_dp": true,
+    "selected_maxima": {
+      "32": 304,
+      "64": 1152,
+      "96": 2400,
+      "128": 4416,
+      "192": 9024,
+      "256": 17152,
+      "512": 67328
+    }
+  },
   "truncated_toeplitz_profiles": [
     {
       "length": 2,
@@ -265,11 +288,11 @@
       "unresolved_at_least": 0
     }
   ],
-  "scope": "Exact Smith valuations through 16 strands and unrestricted path controls through 8 strands; exact path-norm valuation distributions through semilength 32; no favorable rank sum or factoring gain.",
+  "scope": "Exact Smith valuations through 16 strands and unrestricted path controls through 8 strands; exact path-norm valuation distributions through semilength 32; closed-form maximum agrees with an independent max-plus recurrence through semilength 512; no favorable rank sum or factoring gain.",
   "source_sha256": {
-    "research/catalan-gram-dual-smith.md": "6bec9147d354cc1e4c1f841f2291f6aff3807e324d714a46ad0ff17ebd549a52",
-    "tools/catalan_gram_smith.py": "0b38bc21f7c8cebd81ae24467325a8f8b23dea56374645b7e9ba5d0e9fdaf3ee",
-    "tools/check_catalan_gram_smith.py": "d0bec095009c2e8f972d258a69ac495283821bd79560a1fc1c17a773ac8246a1",
+    "research/catalan-gram-dual-smith.md": "015bb7f748312f729eb31b4d4bdc4e58ad0e255a6818bdae355fc2da2a5252f7",
+    "tools/catalan_gram_smith.py": "40a33f53af084056cbac179feaf9d6ccda590500ea8217ec51151a6ec43409e0",
+    "tools/check_catalan_gram_smith.py": "8fd9f76953db9b5b15bfc555db89b9aa09336fb2e32bdb0a2eba663a999bc2db",
     "tools/catalan_cup_crossing.py": "b11d03f25f201700e02fb117bf2fec9d17cec4156ee7370dba1f11bccad7fe05",
     "tools/paired_path_crossing.py": "309fb3f10a230475d5fae68625fcee5f5cfb50fc52491cc63f0765a7627c5c4b",
     "tools/quantum_braid_spectral_fusion.py": "fbfb582940bbffce5ad943ad5645ff0344a95f7e1b19d81b19c8f57c3b513eb6"

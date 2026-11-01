@@ -146,31 +146,71 @@ v_\delta([k]_q)=2^{v_2(k)}-1.                          \tag{9}
 
 The identity follows from `[2m]_q=delta[m]_q^2` and the fact that odd
 quantum integers are units at `delta=0`. At a down-step from height `h`,
-exactly one of `h,h+1` is even. If that even index is `k`, then
-`2^(v_2(k))-1 <= k-1 <= h`. On the `j`th down-step, at most `r` up-steps
-and exactly `j-1` down-steps have occurred, so `h <= r-j+1`. Summing these
-height-sensitive bounds yields
+exactly one of `h,h+1` is even. Its contribution is
+`w(h)=2^(v_2(k))-1`, where `k` is that even index; equivalently,
+`w(2m-1)=w(2m)=2^(1+v_2(m))-1`.
+
+A Dyck path of semilength `r` is the contour walk of a plane rooted tree with
+`r` edges. The number `c_h` of down-steps from height `h` is the number of
+tree vertices at depth `h`. If the maximum height is `H`, then
+`c_1,...,c_H >= 1` and `sum c_h=r`. Conversely, realize any such profile
+by attaching `c_1` children to the root, then attaching all `c_(h+1)` next-
+level children to one vertex at depth `h`. Thus for fixed `H`, the maximum
+path-norm valuation is
 
 \[
-v_\delta(\nu_P)\le\sum_{j=1}^r(r-j+1)=\frac{r(r+1)}2,
-\qquad \operatorname{pole}_u(D^{\rm G})\le r(r+1),
-\qquad \operatorname{pole}_u(D^{\rm G}\otimes D^{\rm G})\le2r(r+1).
-                                                               \tag{10}
+S_H+(r-H)W_H,\qquad S_H=\sum_{h=1}^H w(h),\quad
+W_H=\max_{1\le h\le H}w(h).
 \]
 
-Here `delta=u^2/(1+u)`. This sharpens the immediate per-step estimate
-`v_delta(nu_P)<=r^2` by using the order of the down-steps. The checker also
-computes the exact valuation distribution over Dyck paths by a height/step
-dynamic program; through semilength 32 it confirms the Catalan path counts
-and the uniform bound (10). The maximum observed valuation is 304 at
-semilength 32, below the bound 528; this finite profile is not an
-all-length maximum formula.
+The prefix records of `w(h)` occur at `H_k=2^k-1`, with `W_{H_k}=H_k`.
+Between consecutive records `W_H` is constant and each added `w(h)` is at
+most that record, so the objective cannot increase by extending `H` past a
+record. Pairing heights `2m-1,2m` gives
 
-The braid word and crossing normalization are regular at `q=1`; hence the
-full strict crossing has no Laurent powers below `u^(-2r(r+1))`. Every
-nonzero Laurent grade other than zero vanishes at both strict endpoints.
-This gives an effective polynomial-size jet window for rank recombination.
-It does not bound the two-cut ranks of the pieces.
+\[
+S_{2^k-1}=2\sum_{m=1}^{2^{k-1}-1}(2^{1+v_2(m)}-1)+(2^k-1).
+\]
+
+For `k=1`, this is `S_1=1`. For `k>=2`, set `d=k-1`. For each
+`j=0,...,d-1`, there are `2^(d-j-1)` integers `m` with `v_2(m)=j` in
+`1,...,2^d-1`, so
+
+\[
+\sum_{m=1}^{2^d-1}2^{v_2(m)}=d2^{d-1}.
+\]
+
+Substitution gives `S_{H_k}=(k-1)2^k+1`. Therefore the exact maximum
+path-norm valuation is
+
+\[
+M_r=\max_{k\ge1,\ 2^k-1\le r}
+\left((k-1)2^k+1+(r-2^k+1)(2^k-1)\right).
+\]
+
+Since `C` and `V` in (8) are regular at `q=1`, this yields
+
+\[
+v_\delta(\nu_P)\le M_r,\quad
+\operatorname{pole}_u(D^{\rm G})\le2M_r,\quad
+\operatorname{pole}_u(D^{\rm G}\otimes D^{\rm G})\le4M_r.
+\tag{10}
+\]
+
+A simpler envelope is `M_r <= r^2/4+(r+1)log_2(r+1)`, since
+`S_{H_k}<=k2^k<=(r+1)log_2(r+1)` and `H_k(r-H_k)<=r^2/4`. In particular
+the paired pole is at most `r^2+4(r+1)log_2(r+1)`, improving its leading
+quadratic coefficient by half over the height-only estimate.
+
+The checker computes the exact path-norm valuation distribution by a
+height/step dynamic program. Through semilength 32, it confirms the Catalan
+path counts and that the observed maximum equals the closed form; an
+independent max-plus recurrence matches the closed form through semilength
+512. At semilength 32, `M_32=304` versus the coarse height bound `528`. The braid
+word and crossing normalization are regular at `q=1`, so the full strict
+crossing has no Laurent powers below `u^(-4M_r)`. Every nonzero Laurent grade
+other than zero vanishes at both strict endpoints. The window is polynomial
+in the strand count, but it does not bound the two-cut ranks of the pieces.
 
 The checker verifies the unrestricted path vectors, their nonzero
 orthogonal norms, and their coordinates in the full cup frame through eight
