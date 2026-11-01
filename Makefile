@@ -299,6 +299,10 @@ verify-braid-reversal:
 verify-braid-matrix-aux:
 	python3 tools/check_quantum_braid_matrix_aux.py
 
+.PHONY: verify-braid-rank-one
+verify-braid-rank-one:
+	python3 tools/check_quantum_braid_rank_one.py
+
 .PHONY: verify-downset-crossings verify-regular-code-crossings
 verify-downset-crossings:
 	python3 tools/check_downset_crossing_normal_form.py

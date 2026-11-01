@@ -705,6 +705,12 @@ as its leading coefficient. Both cut ranks of this piece are exactly
 The whole polynomial has degree `3n^2/2`; its remaining coefficients
 still need a favorable decomposition. Complete small spans have
 dimensions16,55,97. Run the NumPy check `make verify-braid-matrix-aux`.
+An [all-extension minor certificate](research/quantum-braid-rank-one-loci.md)
+determines both six-site rank-one loci: the scalar family has only
+its top row-rank-one line and constant column-rank-one line; the
+matrix auxiliary has no nonzero row-rank-one direction and only
+the constant column-rank-one line. Higher ranks and longer paths
+remain open. Run `make verify-braid-rank-one` (NumPy).
 
 The [exact nonlinear charge theorem](research/nonlinear-symbol-charge-lattices.md)
 characterizes every admissible pair of full-symbol potentials for the
