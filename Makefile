@@ -65,6 +65,12 @@ verify-tate-coordinate:
 
 verify-frontier: verify-tate-coordinate
 
+.PHONY: verify-q7-parameter
+verify-q7-parameter:
+	python3 tools/check_q7_cubic_parameter.py
+
+verify-frontier: verify-q7-parameter
+
 .PHONY: verify-q5-quadratic
 verify-q5-quadratic:
 	python3 tools/check_q5_trace_zero.py

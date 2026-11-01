@@ -1,0 +1,375 @@
+{
+  "scope": "Exact cubic parameter; finite coefficient controls and bounded ansatz exclusion; no faster factoring bound",
+  "polynomial_identity": {
+    "cleared_D_power": 24,
+    "cleared_terms": 49,
+    "kernel_Y_degree": 3,
+    "quotient_Y_degree": 21,
+    "quotient_terms": 77,
+    "quotient_u_masks_by_Y_degree": {
+      "0": "0x40",
+      "1": "0xc0",
+      "2": "0x1c0",
+      "3": "0x380",
+      "4": "0x7c0",
+      "5": "0x830",
+      "6": "0x1500",
+      "7": "0x1318",
+      "8": "0x1f80",
+      "9": "0x13b0",
+      "10": "0x18c8",
+      "11": "0x11b8",
+      "12": "0x10e8",
+      "13": "0xa80",
+      "14": "0x762",
+      "15": "0x2a0",
+      "16": "0x182",
+      "17": "0xa4",
+      "18": "0x48",
+      "19": "0x12",
+      "20": "0x2",
+      "21": "0x1"
+    },
+    "remainder": 0
+  },
+  "kummer_identity": {
+    "coefficient_field_modulus": "w^2+w+1",
+    "exact_cleared_identity": true
+  },
+  "original_parameter_controls": {
+    "original_coefficients_including_constant": 8194,
+    "partition_coefficients": 2049,
+    "partition_scalar_XOR_updates": 1799314,
+    "cubic_and_parameter_residuals": [
+      0,
+      0,
+      0
+    ],
+    "trace_identity": true
+  },
+  "theta_span_exclusion": {
+    "scope": "Only polynomials of total degree at most six in these eight series",
+    "prefix_limit": 4096,
+    "total_degree": 6,
+    "variables": [
+      {
+        "scale": 1,
+        "unsigned_residue": 0
+      },
+      {
+        "scale": 1,
+        "unsigned_residue": 1
+      },
+      {
+        "scale": 1,
+        "unsigned_residue": 2
+      },
+      {
+        "scale": 1,
+        "unsigned_residue": 3
+      },
+      {
+        "scale": 7,
+        "unsigned_residue": 0
+      },
+      {
+        "scale": 7,
+        "unsigned_residue": 1
+      },
+      {
+        "scale": 7,
+        "unsigned_residue": 2
+      },
+      {
+        "scale": 7,
+        "unsigned_residue": 3
+      }
+    ],
+    "columns": 3003,
+    "binary_rank": 2108,
+    "covector_indices": [
+      6,
+      13,
+      20,
+      27,
+      34,
+      41,
+      48,
+      83,
+      97,
+      118,
+      132,
+      146,
+      160,
+      167,
+      174,
+      195,
+      202,
+      209,
+      230,
+      237,
+      251,
+      286,
+      293,
+      328,
+      335,
+      342,
+      349,
+      356,
+      377,
+      412,
+      461,
+      475,
+      489,
+      510,
+      517,
+      524,
+      531,
+      538,
+      545,
+      559,
+      573,
+      594,
+      601,
+      608,
+      615,
+      622,
+      650,
+      678,
+      685,
+      692,
+      699,
+      706,
+      727,
+      734,
+      748,
+      755,
+      762,
+      783,
+      790,
+      804,
+      818,
+      825,
+      832,
+      839,
+      853,
+      860,
+      888,
+      902,
+      909,
+      916,
+      930,
+      937,
+      944,
+      965,
+      972,
+      979,
+      993,
+      1042,
+      1056,
+      1063,
+      1070,
+      1091,
+      1112,
+      1119,
+      1126,
+      1147,
+      1168,
+      1175,
+      1182,
+      1210,
+      1217,
+      1238,
+      1252,
+      1266,
+      1287,
+      1301,
+      1308,
+      1336,
+      1343,
+      1350,
+      1371,
+      1392,
+      1406,
+      1413,
+      1420,
+      1434,
+      1455,
+      1469,
+      1476,
+      1504,
+      1511,
+      1518,
+      1525,
+      1546,
+      1574,
+      1595
+    ],
+    "largest_covector_index": 1595,
+    "monomial_pairings_nonzero": 0,
+    "target_pairing_native_F8": 6
+  },
+  "positive_calibration": {
+    "phase": 5,
+    "degree": 3,
+    "checked_coefficients_including_constant": 16385
+  },
+  "odd_index_candidates": {
+    "status": "Finite odd-index candidate; modular/Sturm proof not yet completed",
+    "largest_index": 131072,
+    "odd_indices": 65536,
+    "training_largest_index": 4096,
+    "candidate_total_degree": 4,
+    "trace_checked": true,
+    "candidates": [
+      {
+        "native_coordinate": 1,
+        "polynomial_monomials": [
+          [
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            1,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2,
+            2
+          ],
+          [
+            1,
+            2,
+            2,
+            2
+          ]
+        ]
+      },
+      {
+        "native_coordinate": 2,
+        "polynomial_monomials": [
+          [
+            2
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            2
+          ],
+          [
+            2,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            2,
+            2
+          ],
+          [
+            1,
+            2,
+            2,
+            2
+          ]
+        ]
+      }
+    ]
+  },
+  "source_sha256": {
+    "tools/check_q7_cubic_parameter.py": "e5c9c0570aaac74169f4e06f1c399da58f79332573668b8c3983070226aea1b9",
+    "tools/tate_coordinate_compiler.py": "4abb1d071debcd045b110780c8472d215fe44d89103f0033474250e6cb4c37d1",
+    "tools/lambert_theta_sections.py": "9f6ff2937fdaadd0430acf27893652f38a68bdcd3af70e189a47d40c96d32c94",
+    "tools/cyclotomic_character_decoder.py": "6dbe7906b53b99ef830a5cb7115f1be5a2dd94e3d3d4083c366e01add8e9f4df"
+  }
+}

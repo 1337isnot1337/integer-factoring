@@ -41,6 +41,13 @@ and do not spawn subagents without an explicit user request.
   credited in Discussion #51, reply 19327344. The polynomial-in-unary-squares
   identity follows here from the order-five group law.
 
+- [Phase seven](q7-cubic-parameter.md): exact cubic parameter with
+  `v=u/(1+u+u^2)^4`, `X=Y/(1+u+u^2)` and the septic kernel. The original
+  parameter is `u=t*B_7(t^4)`, identifying partition parities without a fast
+  oracle. A degree-six full-series theta exclusion uses even coefficients;
+  the actual odd-index task instead has a degree-four candidate passing
+  65,536 odd controls through 131,072. Its modular/Sturm proof is unfinished.
+
 ## Active next construction
 
 Seek a nonlinear representation of the trace-zero Delta composition. Do not
@@ -54,11 +61,12 @@ The q=5 scalar is now reduced to four binary quadratic predicates with its
 cost charged. Do not repeat that derivation or replace its divisor-count
 query with an unproved squarefree-part oracle.
 
-Next concrete target: phase seven. Check a cubic parametrization of its
-canonical kernel and test finite polynomial expressions using several
-unary-square residue series. Use the known q3/q5 identities as controls,
-hold out larger prefixes, and require an ordinary proof before asserting
-any identity at all indices. A finite prefix fit is only a candidate.
+Next concrete target: prove or refute the phase-seven odd-index candidate.
+Check integral weight-two torsion/Eisenstein lifts, rank-four lattice-coset
+modularity, the level after odd projection, and the applicable congruence
+Sturm bound. The 131,072 prefix is evidence only until those hypotheses
+are established. If proved, charge its representation-counting cost and
+seek a uniform family rather than merely extending finite fits.
 
 Other useful representation to examine: weighted algebraic coefficient
 automata composed with odd-square theta series, using parameterized

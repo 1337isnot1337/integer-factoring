@@ -1738,6 +1738,10 @@ At [phase five](research/q5-quadratic-coefficients.md), the remaining bit
 reduces to four binary quadratic-form parity counts. The explicit evaluator
 still costs `O(sqrt(N) poly(log N))`; it supplies no faster unrestricted bound.
 Run `make verify-q5-quadratic`.
+At [phase seven](research/q7-cubic-parameter.md), an exact cubic parameter
+identifies a seven-regular partition series. A degree-four theta candidate
+passes 65,536 odd-index controls; its all-index modular proof is unfinished.
+Run `make verify-q7-parameter`.
 
 The [Bell-diagonal seed construction](research/bell-diagonal-crossings.md)
 gives exact two-cut transforms and excludes its complete symmetric
