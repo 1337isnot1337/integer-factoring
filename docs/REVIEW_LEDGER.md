@@ -805,8 +805,8 @@ entries. Concurrent main `dd0388c` is preserved by an intervening merge.
 The ordinary arguments and script entry points were inspected for scope;
 this is not independent proof acceptance. PR69's summary now limits its
 Fourier obstruction to completion with a uniform absolute smooth-set
-character-sum bound. Its source hashes remain intact, with hashes of all
-committed data artifacts appended to the manifest. Full numerical scans
+character-sum bound. Its supplied source manifest is preserved in the original commit; hashes of
+all committed data artifacts were appended during integration. Full numerical scans
 are not rerun as an integration requirement. Exact focused replay and a
 new frozen default suite are the next integrity gate; the previous full
 `3709a9e` receipt predates these sources. No Lean or score gain is claimed.
@@ -831,3 +831,31 @@ their first 86 sum to 258 while the generic floor is 13/36. These controls
 illustrate the ordinary theorem and the limit of the all-one specialization.
 No independent mathematical review, Lean or stronger factoring score
 is claimed. The frozen default run at `5c2e66d` predates this delta.
+
+## PR69 manifest and failure-exit repair
+
+A direct `sha256sum --check data/SHA256SUMS` at clean `5c2e66d` found
+three stale source hashes already present in PR69's supplied manifest:
+`adversary.py`, `window_scan.py` and `run_all.sh`. All ten data artifacts
+matched. The [integrity receipt](../evidence/window-lemma-pr69-integrity.json)
+retains the supplied values, actual original-head hashes and repaired
+values. The adversary entry point now asserts both prediction agreement
+and the initial-exponent identity, so a failed control exits nonzero.
+The manifest is refreshed for that change. This does not rerun or validate
+the full empirical scan, and the frozen `5c2e66d` default-suite receipt
+does not cover this later repair.
+
+## Exact PR68/69 integration replay at `5c2e66d`
+
+The clean frozen source `5c2e66de15946aedff90b2372a1564f34a43d0c7`,
+tree `13420a7c52ac3978353030bda88105aabe511621`, passed `make verify`
+in 727.86 seconds and the two PR68 controls, PR69 adversary/orbit smoke
+commands and global-alignment target in 25.17 seconds. The
+[receipt](../evidence/verify-pr68-69-default-5c2e66d.json) and
+[complete compressed log](../evidence/verify-pr68-69-default-5c2e66d.stdout.txt.xz)
+retain clean pre/post status and exact commands. The generated adversary
+record also has both prediction flags true; the orbit smoke wrote two
+records. The separately failed source-manifest check is recorded above
+and was not part of `make verify`; no all-artifact integrity PASS is
+claimed at this pin. This source predates `b11cc97` and the later manifest
+and adversary-exit repair. Their focused checks remain separate.

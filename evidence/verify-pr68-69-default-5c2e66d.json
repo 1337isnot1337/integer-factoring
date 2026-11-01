@@ -1,0 +1,140 @@
+{
+  "source_commit": "5c2e66de15946aedff90b2372a1564f34a43d0c7",
+  "source_tree": "13420a7c52ac3978353030bda88105aabe511621",
+  "started_utc": "2026-11-01T18:34:10.348005+00:00",
+  "commands": [
+    [
+      "make",
+      "verify"
+    ],
+    [
+      "python3",
+      "tools/smooth_relations_scope/check_genus_invariance.py"
+    ],
+    [
+      "python3",
+      "tools/smooth_relations_scope/check_padic_window.py"
+    ],
+    [
+      "python3",
+      "tools/window_lemma/adversary.py",
+      "--p",
+      "3",
+      "--bits",
+      "64",
+      "--cutoff",
+      "4093",
+      "--out",
+      "/home/cinna/.local/state/intfact-solo-01a195c2/pr69-adversary-smoke.json"
+    ],
+    [
+      "python3",
+      "tools/window_lemma/window_scan.py",
+      "--bits",
+      "60",
+      "--per-size",
+      "2",
+      "--schedule",
+      "fixed4093",
+      "--targets",
+      "4",
+      "--hits",
+      "2",
+      "--cap",
+      "400000",
+      "--jobs",
+      "1",
+      "--out",
+      "/home/cinna/.local/state/intfact-solo-01a195c2/pr69-orbit-smoke.jsonl"
+    ],
+    [
+      "make",
+      "verify-global-axis-alignment"
+    ]
+  ],
+  "pre_status": "",
+  "status": "pass",
+  "results": [
+    {
+      "command": [
+        "make",
+        "verify"
+      ],
+      "returncode": 0,
+      "seconds": 727.8641830729321
+    },
+    {
+      "command": [
+        "python3",
+        "tools/smooth_relations_scope/check_genus_invariance.py"
+      ],
+      "returncode": 0,
+      "seconds": 6.1095533343032
+    },
+    {
+      "command": [
+        "python3",
+        "tools/smooth_relations_scope/check_padic_window.py"
+      ],
+      "returncode": 0,
+      "seconds": 18.50940600084141
+    },
+    {
+      "command": [
+        "python3",
+        "tools/window_lemma/adversary.py",
+        "--p",
+        "3",
+        "--bits",
+        "64",
+        "--cutoff",
+        "4093",
+        "--out",
+        "/home/cinna/.local/state/intfact-solo-01a195c2/pr69-adversary-smoke.json"
+      ],
+      "returncode": 0,
+      "seconds": 0.06147363968193531
+    },
+    {
+      "command": [
+        "python3",
+        "tools/window_lemma/window_scan.py",
+        "--bits",
+        "60",
+        "--per-size",
+        "2",
+        "--schedule",
+        "fixed4093",
+        "--targets",
+        "4",
+        "--hits",
+        "2",
+        "--cap",
+        "400000",
+        "--jobs",
+        "1",
+        "--out",
+        "/home/cinna/.local/state/intfact-solo-01a195c2/pr69-orbit-smoke.jsonl"
+      ],
+      "returncode": 0,
+      "seconds": 0.06277985824272037
+    },
+    {
+      "command": [
+        "make",
+        "verify-global-axis-alignment"
+      ],
+      "returncode": 0,
+      "seconds": 0.43002336006611586
+    }
+  ],
+  "seconds": 753.0386185259558,
+  "finished_utc": "2026-11-01T18:46:44.023000+00:00",
+  "post_status": "",
+  "stdout": {
+    "path": "evidence/verify-pr68-69-default-5c2e66d.stdout.txt.xz",
+    "uncompressed_sha256": "8f4247cafc856e8e45f5f7d64e12d2add77cc09e9da7d3ec1dcbefed35ed9f6a",
+    "compressed_sha256": "a623cee31e227be103b7b22633dc25910dced305da4a614e53ddc1303fcc738a"
+  },
+  "separate_integrity_check": "Three supplied source-manifest entries failed at this pin; the full-suite commands above did not check that manifest. Later repair is recorded in evidence/window-lemma-pr69-integrity.json."
+}

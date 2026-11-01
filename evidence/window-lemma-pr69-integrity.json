@@ -1,0 +1,27 @@
+{
+  "scope": "Integrity repair only; three supplied source checksums were stale before integration. All ten committed data hashes matched. The adversary checker now exits unsuccessfully on a failed prediction. No empirical scan or mathematical bound is newly verified by these hashes.",
+  "original_pr_head": "7cb4576c2082019c8249da0e8abb637c27af0e08",
+  "source_manifest_sha256": "b83a405d092a6bec6400223724dc687e8e7795e15b6800bf647740163bc0c9f4",
+  "failed_check_source_commit": "5c2e66de15946aedff90b2372a1564f34a43d0c7",
+  "repaired_manifest_sha256": "756a86d8b06dca671eb6a097d7422d218a6b5518fff199e5e11b44eaa9075d5f",
+  "mismatches": [
+    {
+      "path": "tools/window_lemma/adversary.py",
+      "supplied_manifest_sha256": "c57973dde2196fc4966e56b689264aa2b5bd3b1b5a9e602619a10d9281c02ff2",
+      "original_pr_head_sha256": "d7d45e13b2bd712d400d346dd8191672664424b15aa3514674efe30e72e64169",
+      "repaired_source_sha256": "99c4b0768cf9fff8396addc8bb85c8241dfe6b8b6833e64e1a65d055b2505269"
+    },
+    {
+      "path": "tools/window_lemma/window_scan.py",
+      "supplied_manifest_sha256": "11ee8076d28687c170cad05bf893a1a252ade544b7486e5aa736538de46a65b2",
+      "original_pr_head_sha256": "64e04f9c6a0ab0bae2869911244b47817c5d30599a6efdcd48db184dc0a5d510",
+      "repaired_source_sha256": "64e04f9c6a0ab0bae2869911244b47817c5d30599a6efdcd48db184dc0a5d510"
+    },
+    {
+      "path": "tools/window_lemma/run_all.sh",
+      "supplied_manifest_sha256": "5e20f888c8934578a0f4d8edc54d94b3b9b99c13e68401030c0e73cb8eb9c8c3",
+      "original_pr_head_sha256": "a65a3bc6b33d249c83afb9d36836f8e018fc814253de818389e3299482092fbc",
+      "repaired_source_sha256": "a65a3bc6b33d249c83afb9d36836f8e018fc814253de818389e3299482092fbc"
+    }
+  ]
+}

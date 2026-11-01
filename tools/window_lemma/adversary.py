@@ -118,6 +118,7 @@ def main():
         for b in a.bits:
             c = build(p, b, a.cutoff, a.semiprime)
             r = verify(c, a.cutoff)
+            assert r['predictions_match'] and r['K_p_equals_K'], r
             rows.append(r)
             print(json.dumps({k: r[k] for k in ('bits', 'p', 'K', 'K_p', 'W', 'A', 'x',
                   'predicted_misses', 'predictions_match', 'observed_first_hit',
