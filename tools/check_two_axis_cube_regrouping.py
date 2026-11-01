@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
-"""Checks for the two-axis regrouping of the three-axis Gaussian cube.
+"""Audit the rejected two-axis regrouping of the Gaussian cube.
 
 The Gaussian factorization, the three one-particle Smith profiles, and the
 rational pressure certificate are inherited from the cited modules.  This
-checker verifies the new combinatorial regrouping and the width arithmetic.
+checker retains the valid endpoint/arithmetic controls and adds exact
+counterexamples to independent summand relabeling and the fixed-bundle cut.
+None of these controls establishes the rejected one-cut transfer.
 """
 from __future__ import annotations
 
@@ -75,6 +77,80 @@ def check_pairings() -> list[dict]:
                      "endpoint_assignments": 1 << 8,
                      "identity": "E8 = [X=V][Y=U]"})
     return rows
+
+
+def check_independent_relabeling() -> dict:
+    """A common endpoint symmetry is not an independent summand symmetry."""
+    def transpose(v):
+        return ((v & 1) << 2) | (v & 2) | ((v >> 2) & 1)
+    assert all(transpose(v ^ 7) == (transpose(v) ^ 7) for v in range(8))
+    failures=[]
+    for mask in range(256):
+        vals=tuple((mask >> v) & 1 for v in range(8))
+        permuted=tuple(vals[transpose(v)] for v in range(8))
+        original=endpoint(vals)
+        assert endpoint(permuted)==original
+        # T0=E8+A, T1=A, A=x_001. Their original sum is exactly E8.
+        t0=original ^ vals[1]
+        t1=vals[1]
+        assert (t0 ^ t1)==original
+        rotated_t1=permuted[1]
+        changed=t0 ^ rotated_t1
+        if changed!=original:
+            failures.append(dict(mask=mask,endpoint=original,relabelled_sum=changed))
+    assert len(failures)==128
+    return dict(assignments=256,mismatches=len(failures),first=failures[0],
+                decomposition='T0=E8+x_001, T1=x_001 over F2',
+                relabeling='Swap cube coordinates 0 and 2 in T1 only',
+                conclusion='Independent summand relabeling does not preserve the endpoint')
+
+
+def check_fixed_bundle_cuts() -> dict:
+    axes=(0,1);hidden=2
+    labels={q:[] for q in range(4)}
+    for v in range(8):
+        q,h=ilabel(v,axes,hidden)
+        labels[q].append(v)
+    rows=[]
+    for axis in range(3):
+        split=[q for q,vertices in labels.items()
+               if len({bits(v)[axis] for v in vertices})>1]
+        rows.append(dict(axis=axis,split_superlegs=split,
+                         cut_on_whole_parent_labels=not split))
+    assert rows[0]['split_superlegs']==rows[1]['split_superlegs']==[]
+    assert rows[2]['split_superlegs']==[0,1,2,3]
+    triples=[(0,3,4),(3,0,4)]
+    local=sum(min(x) for x in triples)
+    global_best=min(sum(x[a] for x in triples) for a in range(3))
+    assert local==0 and global_best==3
+    return dict(pairing_axes=axes,hidden_axis=hidden,cuts=rows,
+                width_triples=triples,sum_independent_minima=local,
+                minimum_global_axis_sum=global_best,
+                conclusion='Hidden-axis cut splits all labels; independent minima are not one global cut')
+
+
+def check_fixed_cut_rank() -> dict:
+    # E4 is a permutation matrix at the fixed row flattening, for every
+    # alphabet size. Here Q={0,1}^2 gives rank |Q|^2=16.
+    size=4
+    rows=[]
+    for x in range(size):
+        for y in range(size):
+            row=sum(int(x==v and y==u) << (size*u+v)
+                    for u in range(size) for v in range(size))
+            rows.append(row)
+    assert len(set(rows))==16 and all(r and r&(r-1)==0 for r in rows)
+    lam_prime=32;exponent=4;rho=F(5,8)
+    piece_bound=(lam_prime+1)**exponent
+    channel_width=int(2*rho*lam_prime)
+    upper=piece_bound*(1 << channel_width)
+    endpoint_rank=1 << (2*lam_prime)
+    assert upper<endpoint_rank
+    return dict(finite_endpoint_rank=16,lambda_prime=lam_prime,
+                illustrative_piece_exponent=exponent,piece_bound=piece_bound,
+                claimed_channel_width=channel_width,summed_rank_upper=upper,
+                endpoint_rank=endpoint_rank,
+                conclusion='A polynomial-piece fixed-cut decomposition cannot have uniform width 2*rho*lambda+O(log lambda) for rho<1')
 
 
 def check_widths() -> dict:
@@ -172,30 +248,36 @@ def main() -> None:
     widths = check_widths()
     geometry = check_geometry()
     certificate = check_certificate()
+    relabeling = check_independent_relabeling()
+    bundle_cuts = check_fixed_bundle_cuts()
+    fixed_cut_rank = check_fixed_cut_rank()
     sources = ["check_two_axis_cube_regrouping.py",
                "certify_cube_optimized_type.py", "cube_homogeneous_gaussian.py"]
     report = {
-        "status": "passed",
+        "status": "audit_passed_proposed_transfer_rejected",
         "pairings": pairing,
         "widths": widths,
         "geometry": geometry,
         "certificate": certificate,
+        "independent_relabeling": relabeling,
+        "fixed_bundle_cuts": bundle_cuts,
+        "fixed_cut_rank": fixed_cut_rank,
+        "factoring_exponent_improved": False,
         "source_sha256": {name: sha256(Path("tools", name).read_bytes()).hexdigest()
                           for name in sources},
-        "scope": ("Exact regrouping and width arithmetic for the two-axis use of "
-                  "the existing three-axis Gaussian cube; the local tensor family, "
-                  "its factorizations, and the two-axis evaluator are inherited. "
-                  "The improved factoring exponent is an ordinary proof, not Lean-verified "
-                  "and not independently reviewed."),
+        "scope": ("Endpoint pairings and formal width inequalities survive, but "
+                  "the one-cut transfer is rejected: independently relabeling pieces "
+                  "does not preserve their sum, and the hidden cut splits parent labels. "
+                  "Uniform submaximal fixed-cut widths also contradict endpoint rank. "
+                  "No improved complete factoring exponent follows."),
     }
     Path("evidence/two-axis-cube-regrouping.json").write_text(
         json.dumps(report, indent=2, sort_keys=True) + "\n")
-    print(json.dumps({"status": "passed",
+    print(json.dumps({"status": report['status'],
                       "pairing_cases": len(pairing),
                       "geometry_cases": len(geometry),
-                      "coarse_score": "log_2(8/5) > 1/2",
-                      "optimized_score": "log_2(500000000/312359221) > 1/2",
-                      "factoring_exponent_improved": True}, sort_keys=True))
+                      "independent_relabeling_mismatches": relabeling['mismatches'],
+                      "factoring_exponent_improved": False}, sort_keys=True))
 
 
 if __name__ == "__main__":

@@ -1209,3 +1209,26 @@ checked the cited ASW cover/genus/point bound, constant twist and trace
 kernel, precision depth, fibre-weighted existence and prefix recovery.
 This does not implement the missing query counter or establish a stronger
 factoring bound; no independent mathematical acceptance is claimed.
+
+## Reject the concurrent one-cut Gaussian regrouping claim
+
+The proposal in `ddb303e` and `00e00c9` does not prove a stronger complete
+factoring exponent. Its per-piece minimum is not the established transfer's
+single global axis choice. A hidden cube cut splits all four fixed parent
+labels; independently permuting summands need not preserve their sum.
+The [audit](../research/two-axis-cube-regrouping.md) supplies an exact
+128-of-256-assignment counterexample and the all-parameter fixed-cut rank
+contradiction. Polynomially many pieces of uniformly submaximal row width
+cannot sum to the full-rank endpoint permutation matrix.
+
+The [revised checker](../tools/check_two_axis_cube_regrouping.py) retains
+the valid endpoint pairings, formal arithmetic and inherited Gaussian
+certificate, and now requires the rejection controls. Its current
+[receipt](../evidence/two-axis-cube-regrouping.json) explicitly reports
+`factoring_exponent_improved: false`. The original
+[proposal text](../research/two-axis-cube-regrouping-proposal-rejected.md)
+and [historical receipt](../evidence/two-axis-cube-regrouping-proposal-rejected.json)
+are preserved and clearly marked rejected. README and the index no longer
+advertise the unsupported score. Gaussian profiles and the original
+three-axis transfer remain unchanged. A different global construction
+would need its own exact identity and full cost argument.
