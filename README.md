@@ -2175,7 +2175,7 @@ The current ordinary-proof campaign establishes these scoped results:
 | Scope | Result and evidence |
 | --- | --- |
 | Bare ungauged local Smith profiles, every field and degree, fixed auxiliaries | [Degree budgets](research/all-degree-small-alphabet-smith-floor.md) and [shared minors](research/shared-minor-smith-floor.md) exclude a half-rate improvement through six letters. |
-| The same certificate on 7 through 12 letters | [Box-minor Kronecker budgets](research/bare-seven-to-twelve-letters.md) exclude a half-rate improvement through twelve letters. At 13 letters the old box witness fails newer jets, but a [replacement combined target](research/joint-bare-profile-feasibility.md) passes all declared families with exact formal rate below `7061/10000`; polynomial realization remains open. |
+| The same certificate on 7 through 12 letters | [Box-minor Kronecker budgets](research/bare-seven-to-twelve-letters.md) exclude a half-rate improvement through twelve letters. At 13 letters both recorded targets are excluded: the old point by newer jets, and the [seven-family replacement](research/joint-bare-profile-feasibility.md) by [box budgets applied to its adjugate](research/box-adjugate-word-caps.md). A universal thirteen-letter floor remains open. |
 | Scalar paths with a monomial column determinant | [Inverse-degree compatibility](research/inverse-degree-crossing-compatibility.md) rules out the formal seven-letter optimum at every integer ramification. |
 | Polynomial inverse paths on 7 through 10 letters | [Inverse-degree aspect bounds](research/inverse-degree-aspect-bounds.md) cap the useful degree; they also exclude all `2^31` binary level-weight assignments of the fixed nine-letter flag. |
 | Noncommuting quadratic-inverse constructions | A [general two-jet tradeoff and complete nine-letter schedule](research/nine-letter-quadratic-inverse-probe.md) show why suppressing order one alone fails; all 31 tested level choices are excluded at every scale. Other pencils remain open. |
@@ -2375,10 +2375,12 @@ the smallest factor for arbitrary inputs; the direct whole-root contractor
 is only certified at linear width, and the recursive all-input cost remains
 open.
 The unmodified public macro network has linear treewidth under dense-table
-elimination. Its radix-2 expansion into four-word butterfly tables still has
-a treewidth lower bound of `Omega(ell/sqrt(log ell))`, matching the half-rate
-scale; whether bit-level arithmetic circuits reduce the width remains open
-([treewidth analysis](research/sanftenberg-transform-treewidth-floor.md)).
+elimination. Its radix-2 four-word butterfly tables still have a treewidth
+floor of `Omega(ell/sqrt(log ell))`, matching the half-rate scale. At bit
+level the root-four twiddles become signed rotations and each butterfly has
+an `O(T)`-gate circuit; the full separator, including pointwise products and
+carry recovery, remains open ([treewidth analysis](research/sanftenberg-transform-treewidth-floor.md),
+[bit-circuit analysis](research/sanftenberg-root-four-bit-circuits.md)).
 
 ## Sparse oriented power prefixes
 
@@ -2638,13 +2640,28 @@ rates below `7071/10000` and `707/1000`, both below `1/sqrt(2)`.
 Those formal rates cannot be realized by bare polynomial crossings. Run
 `make verify-q12-integer-word-target`; the factoring score remains **1/2**.
 
-The [combined thirteen-letter target](research/joint-bare-profile-feasibility.md)
-passes every declared box and cofactor family, with exact formal rate below
-`7061/10000`; it still needs an actual polynomial realization. One concrete
+The [historical combined thirteen-letter point](research/joint-bare-profile-feasibility.md)
+passes seven declared families, with exact formal rate below `7061/10000`,
+but the newer [box-adjugate word theorem](research/box-adjugate-word-caps.md)
+excludes it in 52 oriented checks, including `30588956>30576000`.
+One concrete
 [global negation-odd construction](research/negation-odd-qutrit-crossing.md)
 does preserve the thirteen-letter endpoint, but its retained early channels
 already exclude the bare balanced target at every scale. Neither result
 changes the complete factoring score.
+
+A [local order-five code twist](research/nonclifford-css-crossing.md)
+preserves the earlier CSS split and one-site detection while breaking its
+exact Frobenius identity. Complete polynomial and weighted-order controls
+pass; three bounded weighted-type fits remain above the required support.
+The specified code stops without a factoring improvement.
+
+The [graded box-minor theorem](research/graded-box-minor-caps.md) extends
+the box and word-adjugate compatibility budgets to independent physical
+energies over every field. Exact signed Laurent controls verify the
+determinant charges and complete derived profiles. This supplies stronger
+necessary constraints for weighted constructions; a global weighted
+pressure floor and a stronger factoring bound remain unproved.
 
 The [latest full verification receipt](evidence/higher-words-full-verification.json)
 pins a successful clean default replay and fifteen named joint/cofactor

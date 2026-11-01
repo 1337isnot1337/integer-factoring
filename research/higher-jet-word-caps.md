@@ -14,6 +14,10 @@ floor or improve the factoring score **1/2**. The earlier
 [box-minor theorem](bare-seven-to-twelve-letters.md) already closes the bare
 criterion through twelve letters. It must be included before treating any
 point of the cofactor relaxation as a live polynomial construction target.
+The later
+[historical thirteen-letter point](joint-bare-profile-feasibility.md) passes
+both those original budgets and the word conditions, but the subsequent
+[box-adjugate composition](box-adjugate-word-caps.md) excludes it.
 
 ## 1. The integral low-jet identity
 

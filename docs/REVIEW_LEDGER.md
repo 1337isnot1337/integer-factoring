@@ -626,6 +626,50 @@ Focused replay and documentation checks validate this finite audit. The
 separate full run at `d159502` predates this addition. No new Lean or
 independent mathematical review is claimed.
 
+## Graded original and word-adjugate box budgets
+
+The [ordinary extension](../research/graded-box-minor-caps.md) retains
+independent physical energies in both box orientations, then applies the
+budget to the graded adjugate with negative energies. The low-energy term
+for the original crossing becomes a top-energy subtraction for the
+adjugate. The [receipt](../evidence/graded-box-minor-controls.json) retains
+36 exact Laurent controls over F2/F3/F5/F7, 696 complete source/adjugate
+orders, 348 full determinant polynomials, 252 original and 576 composed
+checks. Actual adjugates satisfy the coefficientwise determinant identity,
+exact complement profiles and word bounds. Zero energies reproduce the
+bare compiler. The earlier full run at `37dc71d` predates this extension;
+its focused replay and documentation checks are separate. No global
+weighted entropy floor, new factoring score, Lean or independent
+mathematical review is claimed.
+
+## Box budgets applied to the word-controlled adjugate
+
+The [composition proof](../research/box-adjugate-word-caps.md) applies the
+earlier all-field box theorem to the scalar adjugate crossing. It uses the
+exact complement profile at one place and the higher-word lower profile
+at the other, including physical restrictions and positive minima. The
+[receipt](../evidence/box-adjugate-word-controls.json) retains twelve actual
+controls, all 322 complete cofactor polynomials, coefficientwise adjugate
+identities, 232 complete source/adjugate orders, 192 composed checks and
+84 literal box checks. A new `7 by 13` inequality excludes the historical
+seven-family q13 point: `30588956>30576000`, among 52 violations. Original
+point data and formal rate proofs are preserved; their earlier successful
+checks concerned a smaller relaxation. No universal q13 floor or stronger
+complete factoring bound follows. Focused replay and docs checks are the
+local gate; no Lean or independent mathematical review is claimed.
+
+## Exact q13 integration replay at `07faf95`
+
+A clean frozen checkout of `07faf95b002c6c7232ec178c6ba28000a60825c1`,
+tree `9f13800052975bd9ed8cc02a7c572bd435f58d0c`, passed the default suite
+in 726.20 seconds and the q13 historical-target, combined-target and
+negation-sector focused targets in 32.68 seconds. Its
+[receipt](../evidence/verify-q13-integration-07faf95.json) and
+[complete compressed log](../evidence/verify-q13-integration-07faf95.stdout.txt.xz)
+record clean pre-run/post-run status and exact commands. This predates
+the code twist, peer bit-circuit additions and new box-adjugate constraints;
+their later checks remain separate. No new Lean is included.
+
 ## Combined thirteen-letter necessary-profile target
 
 The [replacement target](../research/joint-bare-profile-feasibility.md) at
@@ -641,6 +685,22 @@ The focused replay also checks 1296 affine word-majorant comparisons on
 60 abstract profiles; documentation checks pass. The ongoing full run at
 `d159502` predates this target. No new Lean or independent mathematical
 review is claimed.
+
+## Fixed order-five CSS code twist
+
+The [explicit code change](../research/nonclifford-css-crossing.md) preserves
+the transpose split and all 32 one-site Weyl annihilations, and produces
+nonzero odd coefficients beyond the earlier Frobenius identity. The
+[exact controls](../evidence/nonclifford-css-controls.json) independently
+check all 6561 full polynomials, 531441 coset summands and 162 complete
+weighted orders. The tuple/list receipt comparison was normalized through
+JSON before replay; no mathematical values were changed. Three registered
+fits converged in 39 queries with no rejected query, best support about
+1.414385533173. Their [archive](../evidence/nonclifford-css-fit.json) retains
+all starts and best/last complete profiles. This finite negative stops the
+specified code without a global weighted exclusion or a score improvement.
+The frozen full run at `07faf95` predates this delta. No new Lean or
+independent mathematical review is claimed.
 
 ## Integrated default and focused replay at `d159502`
 

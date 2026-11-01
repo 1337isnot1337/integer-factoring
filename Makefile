@@ -2299,6 +2299,18 @@ verify-q13-joint-word-target:
 verify-negation-odd-qutrit:
 	python3 tools/check_negation_odd_qutrit.py
 
+.PHONY: verify-nonclifford-css
+verify-nonclifford-css:
+	python3 tools/check_nonclifford_css_crossing.py
+
+.PHONY: verify-box-adjugate-words
+verify-box-adjugate-words:
+	python3 tools/check_box_adjugate_word_caps.py
+
+.PHONY: verify-graded-box-minors
+verify-graded-box-minors:
+	python3 tools/check_graded_box_minor_caps.py
+
 .PHONY: verify-multiaxis-cube
 verify-multiaxis-cube:
 	python3 tools/check_multiaxis_cube_transfer.py

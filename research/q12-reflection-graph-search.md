@@ -2,9 +2,11 @@
 
 **Registered constructive search, 2026-11-01.** This is an actual polynomial
 tensor family, rather than a choice of necessary spectral data. No member
-is claimed to improve the factoring score **1/2**. The surviving twelve-letter
-necessary targets motivate the alphabet size; they do not imply realizability
-in this source or in any source. No new Lean formalization is attempted.
+is claimed to improve the factoring score **1/2**. Historical twelve-letter
+relaxation targets motivated the alphabet size. Their bare zero-energy
+versions are now [excluded by box budgets](q12-integer-word-target.md);
+the nonuniform physical-type search here has a different scope. No new
+Lean formalization is attempted.
 
 Use the original [interval-eight reflection tensor](../tools/reflection_dual_rail_gaussian.py)
 on all sixteen occupation words. It is polynomial, even in `w`, and has

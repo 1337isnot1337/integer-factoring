@@ -1,5 +1,11 @@
 # Research index
 
+- [Independent physical energies in box-minor budgets](graded-box-minor-caps.md): all-field scalar original and word-adjugate constraints with exact low/top energy charges; 36 signed Laurent controls retain 348 determinant polynomials and 696 complete orders. No global weighted pressure floor is claimed.
+
+- [Box budgets on the word-controlled adjugate](box-adjugate-word-caps.md): all-field scalar bare constraints at every physical subalphabet, with complete polynomial controls; 52 oriented violations exclude the recorded q13 seven-family point. No universal q13 rate floor follows.
+
+- [A local order-five twist of the CSS crossing code](nonclifford-css-crossing.md): preserves rate, split and 32 one-site annihilations, while nonzero odd coefficients break the old Frobenius identity. All 6561 polynomials and 162 untruncated weighted orders pass independent checks; three registered fits remain above support one.
+
 - [A thirteen-letter global negation sector](negation-odd-qutrit-crossing.md): explicit F7 split crossing; exact early Toeplitz ranks give 70 and 169 orders at most four in degree nine, excluding its bare balanced rate at every scale. Higher orders and weighted criteria are not asserted.
 
 - [Binary prefixes at unequal supporting weights](asymmetric-binary-prefix-relaxation.md): all binary endpoint prefixes reduce the necessary real-profile problem to one convex allocation. Twelve bounded outer fits find no negative margin; near-zero cold limits stop the diagnostic. These profiles are not tensors, and no global asymmetric binary theorem follows.
@@ -115,6 +121,7 @@
 - [Reusable semiprime work in RiemannGaussian](riemann-gaussian-semiprime-source-audit.md): exact-source audit of deterministic boundary contraction, factor moments, semiprime count recovery and coefficient-ring compatibility; no imported score improvement or independent Lean rebuild.
 - [All-input minimum-factor adapters](sanftenberg-all-input-prefix-adapter.md): exact prefix counts or a truncated min-plus semiring recover the smallest factor for arbitrary `N`; direct whole-root boundary contraction has only a linear width guarantee, and recursive cost remains open.
 - [Treewidth floors for the public semiprime macro network](sanftenberg-transform-treewidth-floor.md): the dense macro graph has linear treewidth, while radix-2 four-word butterfly tables have a `Q_d` clique-blow-up minor and treewidth `Omega(ell/sqrt(log ell))`, matching the half-rate scale; bit-level arithmetic circuits remain open.
+- [Root-four bit circuits for the semiprime transform](sanftenberg-root-four-bit-circuits.md): exact root-four twiddles reduce to signed cyclic rotations with `O(T)` carry normalization; modular pointwise products have `O(T^2)`-gate local circuits, but the full-network separator and factoring cost remain open.
 
 - [Literal hot tensors for low-cell retractions](tensor-literal-low-cell-retractions.md): original Gaussian/Pfaffian evaluation without deletion closure, a proved cache bound, complete independent kernel controls and a retained 55-label capped pilot; no frontier gain.
 
@@ -326,7 +333,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 - [Coarsened grid check](coarsened-grid-validation.md): exact finite integration checks for signed network grouping, orientation, composite moduli, and padded clique tables.
 
-- [Bare criterion through twelve letters](bare-seven-to-twelve-letters.md): exact box-budget certificates give rho_bare>1/sqrt(2) for 7<=q<=12 at every degree and field, with fixed auxiliaries. The old thirteen-letter box witness violates newer jet constraints; a [replacement combined target](joint-bare-profile-feasibility.md) passes all declared families with formal rho below `7061/10000`, without a realizing tensor.
+- [Bare criterion through twelve letters](bare-seven-to-twelve-letters.md): exact box-budget certificates give rho_bare>1/sqrt(2) for 7<=q<=12 at every degree and field, with fixed auxiliaries. The old thirteen-letter witness fails newer jets; a [replacement point](joint-bare-profile-feasibility.md) passes seven families but fails the later [box-adjugate composition](box-adjugate-word-caps.md). No universal thirteen-letter floor is proved.
 
 - [Auxiliary binary gauge floor](auxiliary-binary-gauge-floor.md): the gauged binary floor extends to matrix-valued Laurent seeds of every fixed auxiliary dimension with independent rational auxiliary conjugation gauges at the two places, by dominating the rectangular Smith orders coordinatewise with a twisted scalar boundary contraction; an explicit seed shows that no constant contraction dominates at both places and that a boundary contraction `f^T K e` can have strictly larger pressure.
 

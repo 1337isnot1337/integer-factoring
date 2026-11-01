@@ -1,5 +1,13 @@
 # A combined compatibility gate before bare tensor construction
 
+**Later theorem:** the [box-adjugate word inequalities](box-adjugate-word-caps.md)
+exclude the integer point below in 52 oriented checks. They apply the
+box theorem to the derived adjugate crossing, extending the families
+used in this experiment. The original seven-family checks and exact rate
+certificate remain valid historical calculations. This point is no longer
+an open polynomial construction target; the bare thirteen-letter criterion
+itself remains open.
+
 ## Registered question
 
 Base: `d159502`, followed by the historical thirteen-letter target audit.
@@ -109,10 +117,12 @@ upper bound into the necessary word inequality supplies a sufficient
 linear condition for that inequality; it does not characterize the entire
 necessary relaxation.
 
-This replaces the rejected historical point with a target passing the
-**combined declared constraints**. Undiscovered compatibility conditions
-may still reject it. The next task is an actual polynomial crossing with
-complete two-cut profiles and the literal endpoint, or a structural reason
-this proposed staircase cannot occur. No further profile-only optimization
-is needed to establish that this combined relaxation remains open. The
-complete factoring score is unchanged at `1/2`.
+At the experiment's source this replaced the old point with one passing
+the **seven declared constraint families**. The subsequently composed
+box-adjugate theorem supplies a further structural obstruction: the
+`7 by 13` box requires `30588956<=30576000`, which is false. The focused
+checker now replays that exclusion as well as all original successful
+checks and the formal rate certificate. No profile data or discovery
+history is removed. The seven-family relaxation remains open, but this
+point cannot be a polynomial crossing. No further profile-only optimization
+is run here. The complete factoring score remains `1/2`.

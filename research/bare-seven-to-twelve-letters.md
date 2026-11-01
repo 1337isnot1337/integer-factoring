@@ -46,15 +46,21 @@ particular profile violates the newer second-jet and higher-word constraints
 and cannot be a polynomial crossing. Section 6 retains it as an exact
 witness to the limits of the constraints proved here. The bare thirteen-letter
 criterion itself remains open. A later
-[replacement point](joint-bare-profile-feasibility.md) satisfies all combined
-declared constraints with exact formal rate below `7061/10000`; it is not
-an actual crossing.
+[replacement point](joint-bare-profile-feasibility.md) satisfies seven
+combined constraint families with exact formal rate below `7061/10000`,
+but the newer [box-adjugate composition](box-adjugate-word-caps.md) excludes
+it too. The bare thirteen-letter criterion itself remains open.
 
 This is a lower bound on one sufficient certificate. It is not a lower bound
 on actual coefficient ranks or on factoring time. Independent physical
 gauges and types, multipoint jets, cancellation modules, coefficient
 recombination, and alphabets q>=13 remain outside it. The proved factoring
 score remains 1/2.
+
+The later [graded box extension](graded-box-minor-caps.md) retains independent
+physical energies in the necessary box inequalities and applies them to
+the word-controlled adjugate. It does not extend the entropy floors in this
+table to arbitrary physical types.
 
 **Relation to the inverse-degree aspect bounds.** The
 [aspect-bound note](inverse-degree-aspect-bounds.md) treats q=7,8,9,10. It
@@ -376,8 +382,9 @@ The original profile and its formal pressure certificate are preserved.
 
 This rejects the recorded target, rather than proving a new universal
 thirteen-letter floor. A future construction proposal must first pass
-the combined constraints. The [replacement target](joint-bare-profile-feasibility.md)
-does pass them, but still has no polynomial realization. The historical
+the combined constraints. The [replacement point](joint-bare-profile-feasibility.md)
+passes the seven families tested there, but fails the subsequent
+[box-adjugate constraints](box-adjugate-word-caps.md). The historical
 staircase had:
 
 - a single leading channel in each cut;

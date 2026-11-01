@@ -6,6 +6,7 @@ from hashlib import sha256
 import json
 from pathlib import Path
 
+from box_adjugate_word_caps import inequalities as box_adjugate_word_caps
 from check_bare_seven_to_twelve_letters import adjugate_violations, constraints, ln_bounds
 from check_cell_minor_caps import all_caps
 from hereditary_adjugate_caps import inequalities as square_caps
@@ -45,6 +46,13 @@ def run():
                   for cap in caps]
         assert len(caps) == 8918 and min(slacks) >= 0
         checks[label] = dict(compiled_checks=len(caps), minimum_slack=str(min(slacks)), identical_orientations=True)
+    # The original seven families remain valid checks of an incomplete
+    # relaxation. A later composition applies box budgets to the adjugate too.
+    later = box_adjugate_word_caps(degree, profile, profile)
+    bad = [cap for cap in later if cap['slack'] < 0]
+    assert len(later) == 1816 and len(bad) == 52 and min(cap['slack'] for cap in later) == -12956
+    checks['later_box_adjugate_word'] = dict(status='excluded',oriented_checks=len(later),
+                                            violated_checks=len(bad),minimum_slack=-12956)
     # Compute B exactly; round it upward before taking small rational log bounds.
     s = F(data['s'])
     assert s == F(414548, 413547)
@@ -67,8 +75,8 @@ def run():
              'tools/check_cell_minor_caps.py', 'tools/charged_gaussian_floor.py',
              'tools/hereditary_adjugate_caps.py', 'tools/higher_jet_word_caps.py',
              'tools/inherited_second_jet_caps.py', 'tools/multichannel_cofactor_caps.py',
-             'tools/rectangular_adjugate_jet_caps.py']
-    return dict(scope='Exact q13 necessary-profile target, not an actual polynomial crossing or factoring improvement.',
+             'tools/rectangular_adjugate_jet_caps.py', 'tools/box_adjugate_word_caps.py']
+    return dict(scope='Historical q13 point passes its original seven families but is excluded by later box-adjugate word constraints; formal rate only.',
                 alphabet=q, degree=degree, profile_length=len(profile), checks=checks,
                 exact_rate_certificate=exact_rate, original_square_box_adjugates='pass',
                 input_sha256=sha256(path.read_bytes()).hexdigest(),
