@@ -1,0 +1,30 @@
+== (A) exact MAIS of routing digraph (full array) ==
+   MAIS <= minrank(I-M) over every field <= construction rank
+r=2 Q=1 k=0 D=4: score=1 best_product_potential=1 MAIS=1 construction_rank=1 ilp_rounds=1 OK
+r=2 Q=2 k=0 D=16: score=5 best_product_potential=5 MAIS=6 construction_rank=6 ilp_rounds=4 OK
+r=2 Q=2 k=1 D=16: score=1 best_product_potential=1 MAIS=1 construction_rank=1 ilp_rounds=1 OK
+r=2 Q=3 k=1 D=64: score=7 best_product_potential=7 MAIS=8 construction_rank=10 ilp_rounds=1 OK
+r=3 Q=2 k=1 D=81: score=4 best_product_potential=4 MAIS=8 construction_rank=9 ilp_rounds=1 OK
+r=2 Q=4 k=2 D=256: score=9 best_product_potential=9 MAIS=10 construction_rank=13 ilp_rounds=1 OK
+r=4 Q=2 k=1 D=256: score=16 best_product_potential=16 MAIS=30 construction_rank=36 ilp_rounds=1 OK
+r=2 Q=4 k=1 D=256: score=37 best_product_potential=37 MAIS=45 construction_rank=94 ilp_rounds=1 OK
+== (B) occurrence/variable-level potential bound, random instances ==
+trials=60: sum_h c_(t,h) >= #{v: some A_phi occurrence of v cut at t} for every t, phi: OK; max_t bound equals max_t c_t in 3/60
+== (C) support-contained crossing pieces have cut ranks = support size ==
+N=2..4, 60 random weighted supports: r1 = r2 = |S|: OK => sum_j sqrt(r1 r2) = sum_j |S_j| >= N^2, rho = 1 without cancellation
+== (D) host-graph potential width at eps=0.05 (illustration; distance potentials only) ==
+Hamming H(10,2)            V= 1024 diam>=  10 width(eps)~  4 width/diam=0.40
+Johnson J(12,6)            V=  924 diam>=   6 width(eps)~  2 width/diam=0.33
+random 4-regular, 1024     V= 1024 diam>=   8 width(eps)~  3 width/diam=0.38
+torus 32x32                V= 1024 diam>=  32 width(eps)~ 15 width/diam=0.47
+cycle C_1024               V= 1024 diam>= 512 width(eps)~350 width/diam=0.68
+   Theorem A' forces the schedule metric to be Hamming; these numbers only show what a free host metric would allow, they are not realizable in the preprint.
+== (E) random sparse codes: clause schedules with no variable schedule within k ==
+n=256 Q=8 k=ceil(2sqrt(Q))=6: fraction of clause schedules with empty k-ball = 0.00
+n=256 Q=16 k=ceil(2sqrt(Q))=8: fraction of clause schedules with empty k-ball = 0.00
+n=256 Q=32 k=ceil(2sqrt(Q))=12: fraction of clause schedules with empty k-ball = 0.00
+n=256 Q=64 k=ceil(2sqrt(Q))=16: fraction of clause schedules with empty k-ball = 0.98
+   empty k-ball => every occurrence of that clause has rho_o = e_v (unroutable), so it is counted directly; random codes need structure to use Q >> log n
+== (F) Lemma B' for Z_w: Pr[Z_w > k] >= 1/2 exp(-9(k+1)^2/(2w)-72), k+1 <= w/4 ==
+r in {2,3,4,5,16}, w in {64,100,256}, all k: OK; min log-margin 71.96
+ALL CHECKS PASS
