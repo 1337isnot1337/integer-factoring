@@ -642,6 +642,22 @@ The focused replay also checks 1296 affine word-majorant comparisons on
 `d159502` predates this target. No new Lean or independent mathematical
 review is claimed.
 
+## Fixed order-five CSS code twist
+
+The [explicit code change](../research/nonclifford-css-crossing.md) preserves
+the transpose split and all 32 one-site Weyl annihilations, and produces
+nonzero odd coefficients beyond the earlier Frobenius identity. The
+[exact controls](../evidence/nonclifford-css-controls.json) independently
+check all 6561 full polynomials, 531441 coset summands and 162 complete
+weighted orders. The tuple/list receipt comparison was normalized through
+JSON before replay; no mathematical values were changed. Three registered
+fits converged in 39 queries with no rejected query, best support about
+1.414385533173. Their [archive](../evidence/nonclifford-css-fit.json) retains
+all starts and best/last complete profiles. This finite negative stops the
+specified code without a global weighted exclusion or a score improvement.
+The frozen full run at `07faf95` predates this delta. No new Lean or
+independent mathematical review is claimed.
+
 ## Integrated default and focused replay at `d159502`
 
 The clean frozen integration

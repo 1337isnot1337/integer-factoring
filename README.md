@@ -2638,6 +2638,12 @@ does preserve the thirteen-letter endpoint, but its retained early channels
 already exclude the bare balanced target at every scale. Neither result
 changes the complete factoring score.
 
+A [local order-five code twist](research/nonclifford-css-crossing.md)
+preserves the earlier CSS split and one-site detection while breaking its
+exact Frobenius identity. Complete polynomial and weighted-order controls
+pass; three bounded weighted-type fits remain above the required support.
+The specified code stops without a factoring improvement.
+
 The [latest full verification receipt](evidence/higher-words-full-verification.json)
 pins a successful clean default replay and fifteen named joint/cofactor
 targets to exact `269efb8`: 356 Python command blocks, 66 unit tests,

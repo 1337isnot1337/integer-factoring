@@ -1,5 +1,7 @@
 # Research index
 
+- [A local order-five twist of the CSS crossing code](nonclifford-css-crossing.md): preserves rate, split and 32 one-site annihilations, while nonzero odd coefficients break the old Frobenius identity. All 6561 polynomials and 162 untruncated weighted orders pass independent checks; three registered fits remain above support one.
+
 - [A thirteen-letter global negation sector](negation-odd-qutrit-crossing.md): explicit F7 split crossing; exact early Toeplitz ranks give 70 and 169 orders at most four in degree nine, excluding its bare balanced rate at every scale. Higher orders and weighted criteria are not asserted.
 
 - [Binary prefixes at unequal supporting weights](asymmetric-binary-prefix-relaxation.md): all binary endpoint prefixes reduce the necessary real-profile problem to one convex allocation. Twelve bounded outer fits find no negative margin; near-zero cold limits stop the diagnostic. These profiles are not tensors, and no global asymmetric binary theorem follows.
