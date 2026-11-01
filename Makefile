@@ -2159,3 +2159,22 @@ verify-interval-bezout:
 	python3 tools/check_interval_bezout_precision.py --output /tmp/integer-factoring-interval-bezout-precision.json
 verify-balanced-bezout:
 	python3 tools/check_balanced_bezout_denominator.py --output /tmp/integer-factoring-balanced-bezout-denominator.json
+
+
+.PHONY: verify-cube-flat-parity-floor
+verify-cube-flat-parity-floor:
+	python3 tools/check_cube_flat_parity_floor.py
+
+.PHONY: verify-balanced-bezout-modular
+verify-balanced-bezout-modular:
+	python3 tools/check_balanced_bezout_modular.py --output /tmp/integer-factoring-balanced-bezout-modular.json
+
+
+.PHONY: verify-coherent-moving-pair
+verify-coherent-moving-pair:
+	python3 tools/check_coherent_moving_pair_core.py --evidence evidence/coherent-moving-pair-core.json --output /tmp/integer-factoring-coherent-moving-pair.json
+
+
+.PHONY: verify-cube-f4-generic-frames
+verify-cube-f4-generic-frames:
+	python3 tools/check_cube_f4_bivariate_smith.py --output /tmp/integer-factoring-cube-f4-generic-frames.json

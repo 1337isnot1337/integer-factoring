@@ -1194,3 +1194,20 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 
 - [Sharp all-node Bézout precision](interval-bezout-precision.md): the least denominator exponent is between `m` and `2m-2`, attaining the upper bound at every power-of-two-plus-one size, even for irregular residue-separated domains.
 - [Balanced parity interpolation](balanced-bezout-denominator.md): exact divided-difference valuations on ordered dyadic isometries prove `r=m+v2((m-1)!)` at every size; a low-moment formula and terminal-term truncation make normalized coefficient construction a precise next target.
+
+
+## A parity floor for every homogeneous flat cube tensor
+
+- [Shared parity minors and an exact entropy certificate](cube-flat-parity-floor.md)
+
+- [Complete normalized modular Bézout polynomials](balanced-bezout-modular.md): a polynomial-time constructor returns every coefficient of the optimal pair modulo `2^p` using fewer than `4p` high powers of `X-1` per polynomial; encoded degrees and scales can be exponential. The proof handles all discarded tails and all even-denominator precision losses.
+
+
+## Complete profiles with a moving physical constraint
+
+- [A moving physical pair with an eight-mode active core](coherent-moving-pair-core.md)
+
+
+## Full generic cube frames over F4
+
+- [Exact polynomial row certificates without a parity restriction](cube-f4-generic-frames.md)

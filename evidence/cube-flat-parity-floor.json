@@ -1,0 +1,1243 @@
+{
+  "entropy_certificates": [
+    {
+      "difference_sha256": "d60995d3a746d60891a53c6c62f89386ece3bc7a2e34db03dd54b0b6e0efe8ea",
+      "left_bits": 5422,
+      "name": "same_parity",
+      "positive_difference_bits": 5422,
+      "right_bits": 5408,
+      "strict_integer_comparison": true
+    },
+    {
+      "difference_sha256": "b3079171eb6b3f87f5f2365d50d291a31f115b0abe54a57e47444e45c46e508c",
+      "left_bits": 13449,
+      "name": "mixed_parity",
+      "positive_difference_bits": 13449,
+      "right_bits": 13444,
+      "strict_integer_comparison": true
+    }
+  ],
+  "floating_point_used_for_certificate": false,
+  "mixed_nonnegative_combination": {
+    "constant": "82/125",
+    "pair_even": "17/250",
+    "pair_odd_mixed": "1/125",
+    "pair_odd_repeated": "24/125"
+  },
+  "mixed_parity_weights": {
+    "A_multiplicities": [
+      1,
+      1,
+      2,
+      6,
+      6
+    ],
+    "A_numerators": [
+      285,
+      23,
+      57,
+      6,
+      7
+    ],
+    "B_multiplicities": [
+      1,
+      2,
+      6,
+      1,
+      6
+    ],
+    "B_numerators": [
+      315,
+      42,
+      8,
+      11,
+      7
+    ],
+    "denominator": 500
+  },
+  "polynomial_replay": {
+    "cases": [
+      {
+        "degree": 1,
+        "minors": [
+          {
+            "axes": [
+              0,
+              1
+            ],
+            "monomials": 3,
+            "parity": 0,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              0,
+              1
+            ],
+            "monomials": 3,
+            "parity": 1,
+            "valuations": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "axes": [
+              0,
+              2
+            ],
+            "monomials": 3,
+            "parity": 0,
+            "valuations": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              0,
+              2
+            ],
+            "monomials": 3,
+            "parity": 1,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              1,
+              2
+            ],
+            "monomials": 1,
+            "parity": 0,
+            "valuations": [
+              2,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              1,
+              2
+            ],
+            "monomials": 1,
+            "parity": 1,
+            "valuations": [
+              1,
+              1,
+              0
+            ]
+          }
+        ],
+        "repetition": 0
+      },
+      {
+        "degree": 1,
+        "minors": [
+          {
+            "axes": [
+              0,
+              1
+            ],
+            "monomials": 1,
+            "parity": 0,
+            "valuations": [
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "axes": [
+              0,
+              1
+            ],
+            "monomials": 3,
+            "parity": 1,
+            "valuations": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              0,
+              2
+            ],
+            "monomials": 1,
+            "parity": 0,
+            "valuations": [
+              0,
+              1,
+              1
+            ]
+          },
+          {
+            "axes": [
+              0,
+              2
+            ],
+            "monomials": 3,
+            "parity": 1,
+            "valuations": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              1,
+              2
+            ],
+            "monomials": 3,
+            "parity": 0,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              1,
+              2
+            ],
+            "monomials": 3,
+            "parity": 1,
+            "valuations": [
+              0,
+              1,
+              0
+            ]
+          }
+        ],
+        "repetition": 1
+      },
+      {
+        "degree": 2,
+        "minors": [
+          {
+            "axes": [
+              0,
+              1
+            ],
+            "monomials": 7,
+            "parity": 0,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              0,
+              1
+            ],
+            "monomials": 5,
+            "parity": 1,
+            "valuations": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "axes": [
+              0,
+              2
+            ],
+            "monomials": 7,
+            "parity": 0,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              0,
+              2
+            ],
+            "monomials": 7,
+            "parity": 1,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              1,
+              2
+            ],
+            "monomials": 7,
+            "parity": 0,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              1,
+              2
+            ],
+            "monomials": 5,
+            "parity": 1,
+            "valuations": [
+              0,
+              0,
+              1
+            ]
+          }
+        ],
+        "repetition": 0
+      },
+      {
+        "degree": 2,
+        "minors": [
+          {
+            "axes": [
+              0,
+              1
+            ],
+            "monomials": 5,
+            "parity": 0,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              0,
+              1
+            ],
+            "monomials": 7,
+            "parity": 1,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              0,
+              2
+            ],
+            "monomials": 5,
+            "parity": 0,
+            "valuations": [
+              0,
+              1,
+              1
+            ]
+          },
+          {
+            "axes": [
+              0,
+              2
+            ],
+            "monomials": 9,
+            "parity": 1,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              1,
+              2
+            ],
+            "monomials": 9,
+            "parity": 0,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              1,
+              2
+            ],
+            "monomials": 7,
+            "parity": 1,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "repetition": 1
+      },
+      {
+        "degree": 3,
+        "minors": [
+          {
+            "axes": [
+              0,
+              1
+            ],
+            "monomials": 15,
+            "parity": 0,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              0,
+              1
+            ],
+            "monomials": 13,
+            "parity": 1,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              0,
+              2
+            ],
+            "monomials": 13,
+            "parity": 0,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              0,
+              2
+            ],
+            "monomials": 13,
+            "parity": 1,
+            "valuations": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "axes": [
+              1,
+              2
+            ],
+            "monomials": 15,
+            "parity": 0,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              1,
+              2
+            ],
+            "monomials": 9,
+            "parity": 1,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "repetition": 0
+      },
+      {
+        "degree": 3,
+        "minors": [
+          {
+            "axes": [
+              0,
+              1
+            ],
+            "monomials": 11,
+            "parity": 0,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              0,
+              1
+            ],
+            "monomials": 13,
+            "parity": 1,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              0,
+              2
+            ],
+            "monomials": 13,
+            "parity": 0,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              0,
+              2
+            ],
+            "monomials": 9,
+            "parity": 1,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              1,
+              2
+            ],
+            "monomials": 11,
+            "parity": 0,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              1,
+              2
+            ],
+            "monomials": 13,
+            "parity": 1,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "repetition": 1
+      },
+      {
+        "degree": 4,
+        "minors": [
+          {
+            "axes": [
+              0,
+              1
+            ],
+            "monomials": 23,
+            "parity": 0,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              0,
+              1
+            ],
+            "monomials": 21,
+            "parity": 1,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              0,
+              2
+            ],
+            "monomials": 23,
+            "parity": 0,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              0,
+              2
+            ],
+            "monomials": 21,
+            "parity": 1,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              1,
+              2
+            ],
+            "monomials": 25,
+            "parity": 0,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              1,
+              2
+            ],
+            "monomials": 23,
+            "parity": 1,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "repetition": 0
+      },
+      {
+        "degree": 4,
+        "minors": [
+          {
+            "axes": [
+              0,
+              1
+            ],
+            "monomials": 21,
+            "parity": 0,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              0,
+              1
+            ],
+            "monomials": 19,
+            "parity": 1,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              0,
+              2
+            ],
+            "monomials": 19,
+            "parity": 0,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              0,
+              2
+            ],
+            "monomials": 21,
+            "parity": 1,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              1,
+              2
+            ],
+            "monomials": 27,
+            "parity": 0,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              1,
+              2
+            ],
+            "monomials": 21,
+            "parity": 1,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "repetition": 1
+      },
+      {
+        "degree": 5,
+        "minors": [
+          {
+            "axes": [
+              0,
+              1
+            ],
+            "monomials": 31,
+            "parity": 0,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              0,
+              1
+            ],
+            "monomials": 35,
+            "parity": 1,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              0,
+              2
+            ],
+            "monomials": 35,
+            "parity": 0,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              0,
+              2
+            ],
+            "monomials": 27,
+            "parity": 1,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              1,
+              2
+            ],
+            "monomials": 31,
+            "parity": 0,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              1,
+              2
+            ],
+            "monomials": 31,
+            "parity": 1,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "repetition": 0
+      },
+      {
+        "degree": 5,
+        "minors": [
+          {
+            "axes": [
+              0,
+              1
+            ],
+            "monomials": 33,
+            "parity": 0,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              0,
+              1
+            ],
+            "monomials": 33,
+            "parity": 1,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              0,
+              2
+            ],
+            "monomials": 31,
+            "parity": 0,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              0,
+              2
+            ],
+            "monomials": 29,
+            "parity": 1,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              1,
+              2
+            ],
+            "monomials": 41,
+            "parity": 0,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              1,
+              2
+            ],
+            "monomials": 35,
+            "parity": 1,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "repetition": 1
+      },
+      {
+        "degree": 6,
+        "minors": [
+          {
+            "axes": [
+              0,
+              1
+            ],
+            "monomials": 41,
+            "parity": 0,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              0,
+              1
+            ],
+            "monomials": 43,
+            "parity": 1,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              0,
+              2
+            ],
+            "monomials": 45,
+            "parity": 0,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              0,
+              2
+            ],
+            "monomials": 45,
+            "parity": 1,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              1,
+              2
+            ],
+            "monomials": 45,
+            "parity": 0,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              1,
+              2
+            ],
+            "monomials": 45,
+            "parity": 1,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "repetition": 0
+      },
+      {
+        "degree": 6,
+        "minors": [
+          {
+            "axes": [
+              0,
+              1
+            ],
+            "monomials": 45,
+            "parity": 0,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              0,
+              1
+            ],
+            "monomials": 39,
+            "parity": 1,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              0,
+              2
+            ],
+            "monomials": 49,
+            "parity": 0,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              0,
+              2
+            ],
+            "monomials": 49,
+            "parity": 1,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              1,
+              2
+            ],
+            "monomials": 39,
+            "parity": 0,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "axes": [
+              1,
+              2
+            ],
+            "monomials": 59,
+            "parity": 1,
+            "valuations": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "repetition": 1
+      }
+    ],
+    "endpoint_entries": 3072,
+    "field": "F2",
+    "shared_minor_determinants": 72,
+    "tensors": 12
+  },
+  "proved_floor": "rho > 289/500 > 1/sqrt(3)",
+  "same_parity_weights": {
+    "denominator": 150,
+    "multiplicities": [
+      1,
+      1,
+      2,
+      12
+    ],
+    "numerators": [
+      86,
+      4,
+      18,
+      2
+    ]
+  },
+  "scope": "All even-occupation homogeneous flat binary cube tensors with antipodal equality endpoint; the common-degree pressure only.",
+  "shared_minor_layouts": [
+    {
+      "axes": [
+        0,
+        1
+      ],
+      "column_words": [
+        0,
+        136
+      ],
+      "parity": 0,
+      "physical_entries": [
+        [
+          0,
+          136
+        ],
+        [
+          17,
+          153
+        ]
+      ],
+      "row_words": [
+        0,
+        17
+      ]
+    },
+    {
+      "axes": [
+        0,
+        1
+      ],
+      "column_words": [
+        128,
+        8
+      ],
+      "parity": 1,
+      "physical_entries": [
+        [
+          129,
+          9
+        ],
+        [
+          144,
+          24
+        ]
+      ],
+      "row_words": [
+        1,
+        16
+      ]
+    },
+    {
+      "axes": [
+        0,
+        2
+      ],
+      "column_words": [
+        0,
+        160
+      ],
+      "parity": 0,
+      "physical_entries": [
+        [
+          0,
+          160
+        ],
+        [
+          5,
+          165
+        ]
+      ],
+      "row_words": [
+        0,
+        5
+      ]
+    },
+    {
+      "axes": [
+        0,
+        2
+      ],
+      "column_words": [
+        128,
+        32
+      ],
+      "parity": 1,
+      "physical_entries": [
+        [
+          129,
+          33
+        ],
+        [
+          132,
+          36
+        ]
+      ],
+      "row_words": [
+        1,
+        4
+      ]
+    },
+    {
+      "axes": [
+        1,
+        2
+      ],
+      "column_words": [
+        0,
+        192
+      ],
+      "parity": 0,
+      "physical_entries": [
+        [
+          0,
+          192
+        ],
+        [
+          3,
+          195
+        ]
+      ],
+      "row_words": [
+        0,
+        3
+      ]
+    },
+    {
+      "axes": [
+        1,
+        2
+      ],
+      "column_words": [
+        128,
+        64
+      ],
+      "parity": 1,
+      "physical_entries": [
+        [
+          129,
+          65
+        ],
+        [
+          130,
+          66
+        ]
+      ],
+      "row_words": [
+        1,
+        2
+      ]
+    }
+  ]
+}

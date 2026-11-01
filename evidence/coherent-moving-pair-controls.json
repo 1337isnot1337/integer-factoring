@@ -1,0 +1,67 @@
+{
+  "status": "passed",
+  "factoring_exponent_improved": false,
+  "concentration": {
+    "weighted_polynomial_entries": 21840,
+    "constant_unit_ranks": 12,
+    "full_operator_entries": 8064,
+    "canonical_pairings": 192
+  },
+  "literal_control": {
+    "literal_endpoint_entries": 20736,
+    "independent_python_smith_orders": 144,
+    "original_compound_orders": 288,
+    "active_core_orders": 144,
+    "physical_forbidden_pair": [
+      0,
+      3
+    ]
+  },
+  "complete_profile_replay": {
+    "intervals": 8,
+    "recomputed_active_orders": 1152,
+    "finite_first_counting_differences": [
+      {
+        "M": 4,
+        "degree": 22,
+        "coefficient": 1
+      },
+      {
+        "M": 8,
+        "degree": 46,
+        "coefficient": 1
+      },
+      {
+        "M": 16,
+        "degree": 94,
+        "coefficient": 1
+      },
+      {
+        "M": 32,
+        "degree": 190,
+        "coefficient": 1
+      },
+      {
+        "M": 64,
+        "degree": 382,
+        "coefficient": 1
+      },
+      {
+        "M": 128,
+        "degree": 766,
+        "coefficient": 1
+      },
+      {
+        "M": 256,
+        "degree": 1534,
+        "coefficient": 1
+      },
+      {
+        "M": 512,
+        "degree": 3070,
+        "coefficient": 1
+      }
+    ],
+    "finite_pressure_values_are_numerical": true
+  }
+}

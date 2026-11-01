@@ -221,6 +221,50 @@ Small-prime removal and recovery cost `exp(O(s+P+log n))`, with workspace
 the fixed-depth query routines proves (2). At `P=A`, the added workspace
 is `O(sqrt(n log n log log n))`. No evaluator at that point is assumed.
 
+### 6.1. A sharper constant-versus-workspace tradeoff
+
+The displayed choice `g=ceil(log_2(mu+2))` may be replaced by any
+polynomial-time integer function with `g(n)->infinity` and `g(n)=n^o(1)`.
+Choose `A` by the same inequality `A^2 mu g(n)<=n`. Then
+`log T=(1+o(1))log n`, the CRT construction needs `O(g(n))` primes,
+and its error remains `O(T log n)=O(n/g(n))`. Equations (1)--(3)
+and the full grouping range remain valid. At the largest `P`, the
+added workspace becomes
+
+```math
+O\!\left(\sqrt{n\log n\,g(n)}\right).                \tag{9}
+```
+
+Thus an arbitrarily slowly growing explicitly computable factor is
+permitted in (9) while retaining the exact leading constants.
+
+For a fixed-accuracy version, take `g(n)=G`, a sufficiently large
+constant. If `ell` is an effective Linnik exponent from the CRT proof,
+its word-width estimate gives
+
+```math
+Tf\le\left(2+\frac{\ell+1}{G}+o(1)\right)n,
+\qquad
+T(r+2)\le\left(1+\frac1G+o(1)\right)n.
+```
+
+Therefore, uniformly for `P<=sqrt(T)`,
+
+```math
+P^2\lambda\le
+\left(12+4\frac{P^2}{T}+\frac{6\ell+10}{G}+o(1)\right)n.
+\tag{10}
+```
+
+For each fixed `epsilon>0`, choose `G>(6ell+10)/epsilon` with a fixed
+positive margin. For all sufficiently large `n`, the margin absorbs
+the vanishing error and gives `(12+4P^2/T+epsilon)n`. The largest `P`
+is now `Theta(sqrt(n/log n))`, with additional workspace
+`O_epsilon(sqrt(n log n))`. Its constructor constant is at most
+`16+epsilon`, and the constant is at most `12+epsilon` whenever
+`P=o(sqrt(T))`. The transform, relay, and recovery constructions
+are exactly the same.
+
 ## 7. Exact controls and attribution
 
 The [checker](../tools/check_routed_rectangular_fourier.py) compares the
