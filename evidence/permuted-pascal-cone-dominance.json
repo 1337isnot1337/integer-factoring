@@ -1,0 +1,13 @@
+{
+  "all_length_eight_permutations": 40320,
+  "exact_affine_derivative_sign_controls": 11016,
+  "exact_rational_full_pressure_comparisons": 216,
+  "scope": "All-scale comparison in the stated common-scale explicit cone. No assertion about arbitrary physical gauges or restricted alphabets.",
+  "source_sha256": {
+    "research/permuted-pascal-cone-dominance.md": "e89485594d92ea5c7d55b25bbacf202922100b0df27ccf51a8a44d002e0ff071",
+    "tools/check_permuted_pascal_dominance.py": "c111e0c2eff2ae6f8749dbe13a767ed5e22ce4851195807a721f828eeac2a8ed",
+    "tools/permuted_pascal_kernels.py": "5ce6d3b45b56e51aba33bdaab0a7e2f9059adf2e52dbbd811e2514fb5d215039"
+  },
+  "status": "pass",
+  "strict_comparisons_to_ordered_kernel": 214
+}

@@ -2325,3 +2325,8 @@ verify-permuted-pascal-kernels:
 .PHONY: verify-joint-hot-jet-rankone
 verify-joint-hot-jet-rankone:
 	python3 tools/check_joint_hot_jet_rankone.py
+
+
+.PHONY: verify-permuted-pascal-dominance
+verify-permuted-pascal-dominance:
+	python3 tools/check_permuted_pascal_dominance.py --output /tmp/permuted-pascal-cone-dominance.json
