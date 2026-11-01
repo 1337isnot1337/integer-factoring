@@ -685,6 +685,8 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs five groups on 
 ## Current research frontier
 
 - [Mixed occupation and height in six-to-five split graphs](research/mixed-graph-retractions.md): a literal degree-22 reflection source with arbitrary paired F4 graph maps. The completed two-hour walk retained all 19,059 proposals and 86 rejections; 3,054,386 successful complete queries gave best support 1.009745055, above one. No factoring improvement.
+- [A decomposable nine-axis quadratic flag](research/high-axis-plucker-kernel.md): an elementary-symmetric coefficient changes the problematic rank-120 jet to rank 64. Independent Toeplitz ranks show that higher jets still force rho at least 1/3 for this degree-64 source, at every common scale and frequency. No stronger bound.
+- [Nine-axis Cayley realization test](research/high-axis-cayley-realization.md): a rank-120 quadratic augmentation minor proves rho at least 1/3 at every common scale and frequency for the explicit balanced monomial kernel, closing this attempted realization of the admitted high-axis target. Other kernels remain open.
 - [Collective CSS Pauli compression](research/collective-css-pauli-compression.md): a nine-letter error-detecting code annihilates all one-site Pauli errors across four cells. All 6,561 full polynomial entries equal a relabeled, coefficient-Frobenius two-cell source at parameter z^2. Doubled endpoint gaps therefore give exactly the old support family, including arbitrary physical heights; this specific code does not improve the bound.
 
 - [F8 hyperoval retraction refinement](research/f8-hyperoval-retraction-refinement.md): exact rho < 0.710005787198 at the same 96-letter size and with the same hyperoval image. A rank-one change of retraction improves both complete natural profiles at every positive scale over the earlier F8 and F4 constructions. Full profiles, independent entries and a rational physical type certify the result. The factoring exponent remains 1/2.
@@ -2624,3 +2626,11 @@ closure required by repeated one-variable elimination. Weighted geometric-box
 networks give a concrete global application, with explicit field and boundary
 costs. This does not represent the remaining `zeta^(sxy)` arithmetic phases or
 improve the factoring exponent. Run `make verify-joint-frobenius`.
+
+The [fused twelve-letter endpoint block cover](research/fused-q12-endpoint-block-cover.md)
+proves bare two-place Smith pressure `rho>=3/4` for all fifteen nonzero F16
+parameters and all 123 regular base-field endpoint normalizations. Exact
+polynomial identities cover every algebraic spectral place and every scale.
+This ends that bare endpoint diagnostic; charged types and other tensor
+representations remain open. Run `make verify-fused-q12-endpoints`. The
+complete factoring exponent remains **1/2**.

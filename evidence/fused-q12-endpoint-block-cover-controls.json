@@ -1,0 +1,135 @@
+{
+  "scope": "All algebraic spectral places and scales for these fixed q12 F16 seeds and regular base-field endpoint normalizations; bare rho>=3/4, not a factoring lower bound.",
+  "alphabet": 12,
+  "fusion_parameter": 11,
+  "parameter_cases": 15,
+  "counters": {
+    "endpoint_block_determinants": 5865,
+    "strict_endpoint_entries": 2550528,
+    "polynomial_bezout_identities": 2829,
+    "independent_infinity_minors": 607,
+    "normalised_endpoint_instances": 123
+  },
+  "distinct_irreducible_factors": 80,
+  "cases": [
+    {
+      "theta": 1,
+      "degree": 0,
+      "regular_endpoints": 17,
+      "finite_block_lower": 23,
+      "infinity_rank_lower": 15
+    },
+    {
+      "theta": 2,
+      "degree": 2,
+      "regular_endpoints": 15,
+      "finite_block_lower": 21,
+      "infinity_rank_lower": 12
+    },
+    {
+      "theta": 3,
+      "degree": 2,
+      "regular_endpoints": 15,
+      "finite_block_lower": 21,
+      "infinity_rank_lower": 12
+    },
+    {
+      "theta": 4,
+      "degree": 11,
+      "regular_endpoints": 3,
+      "finite_block_lower": 12,
+      "infinity_rank_lower": 14
+    },
+    {
+      "theta": 5,
+      "degree": 11,
+      "regular_endpoints": 3,
+      "finite_block_lower": 12,
+      "infinity_rank_lower": 14
+    },
+    {
+      "theta": 6,
+      "degree": 11,
+      "regular_endpoints": 3,
+      "finite_block_lower": 12,
+      "infinity_rank_lower": 14
+    },
+    {
+      "theta": 7,
+      "degree": 11,
+      "regular_endpoints": 3,
+      "finite_block_lower": 12,
+      "infinity_rank_lower": 14
+    },
+    {
+      "theta": 8,
+      "degree": 4,
+      "regular_endpoints": 13,
+      "finite_block_lower": 12,
+      "infinity_rank_lower": 14
+    },
+    {
+      "theta": 9,
+      "degree": 11,
+      "regular_endpoints": 3,
+      "finite_block_lower": 12,
+      "infinity_rank_lower": 15
+    },
+    {
+      "theta": 10,
+      "degree": 4,
+      "regular_endpoints": 13,
+      "finite_block_lower": 12,
+      "infinity_rank_lower": 14
+    },
+    {
+      "theta": 11,
+      "degree": 11,
+      "regular_endpoints": 3,
+      "finite_block_lower": 12,
+      "infinity_rank_lower": 15
+    },
+    {
+      "theta": 12,
+      "degree": 11,
+      "regular_endpoints": 3,
+      "finite_block_lower": 12,
+      "infinity_rank_lower": 15
+    },
+    {
+      "theta": 13,
+      "degree": 4,
+      "regular_endpoints": 13,
+      "finite_block_lower": 12,
+      "infinity_rank_lower": 14
+    },
+    {
+      "theta": 14,
+      "degree": 4,
+      "regular_endpoints": 13,
+      "finite_block_lower": 12,
+      "infinity_rank_lower": 14
+    },
+    {
+      "theta": 15,
+      "degree": 11,
+      "regular_endpoints": 3,
+      "finite_block_lower": 12,
+      "infinity_rank_lower": 15
+    }
+  ],
+  "opposite_rank_lower": 12,
+  "restored_bare_product_lower": 1728,
+  "bare_rho_lower": "3/4",
+  "packet_sha256": "cefcaceb9a9bb4eddd37ee47ea5686b732742bcd2c8b2878b5e411161a4495a7",
+  "source_sha256": {
+    "tools/fused_q12_endpoint_block_cover.py": "54188a58194d7f49c0c1ca7124d0951b2506e7fa61bc86f398087f879ef14e67",
+    "tools/check_fused_q12_endpoint_block_cover.py": "eb566908b98483460fe1343c00f416da80f632f08af5bee8d7088b984c4a68b9",
+    "tools/compressed_fused_six_vertex.py": "5c17d1371b5e5e48ec9b141e0b45aa3650092207e03b412209c9fee66b91bb3e",
+    "tools/f16_identity_operator_profiles.py": "3095c293971c4fff43f2a71052e49c526ded05aa9d087531124d246a05c67c8b",
+    "tools/fused_six_vertex_crossings.py": "90b016b84e57b2b6d1134c61016c2de5183edc2b2f2943ef9964d5d82dbaf109",
+    "tools/f4_lattice_linear.py": "fc27ccbcf4a82cb3c2643eac6a8a53fb7e08ced4700a30c0b5abca1a3f3aab8e",
+    "tools/check_fused_multipoint_profiles.py": "c163e3fa6bdc32efbb1a027aa78a1c1fbf405f0c3b15a0327ca3e0aed65b3ce6",
+    "tools/check_fused_closed_profiles.py": "601ef47f8ea7cae609eeffdbefdb278b29d85c654fd132ad7c33fb9709e35460"
+  }
+}

@@ -521,6 +521,18 @@ acceptance, new Lean build or exponent beyond the complete score 1/2.
 The source branch is preserved. Substantial OpenAI assistant support was
 used under the owner's direction.
 
+## Exact default-suite checkpoint at `2a39ec1`
+
+A clean detached checkout of `2a39ec10574274208f2ab368745d5a28817c3687`,
+tree `790e7cbb128ccb6a1ee6c17153185207c2d562ff`, passed `make verify`
+in 723.75 seconds with an empty post-run worktree status. The
+[receipt](../evidence/verify-2a39ec1.json) and
+[full compressed log](../evidence/verify-2a39ec1.stdout.txt.xz) preserve the
+actual command and outcome. This applies to that exact commit, before
+the later collective-CSS and high-axis additions; those have separate
+focused controls and documentation checks. No new Lean build or stronger
+complete factoring bound is implied.
+
 ## 2026-11-01: Sparse trace constraints and exact operand boundaries
 
 Commit `318c748038d0a12493e8fa5744541d8955f8fe6d` adds the ordinary

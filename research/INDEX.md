@@ -2,6 +2,10 @@
 
 - [Integral bad-prime spin annihilators](integral-spin-annihilators.md): denominator-cleared spin-eleven seeds have an exact spectator factor at characteristic three; polynomial inverse witnesses bound all local orders by two at 5, 7 and 11, excluding their bare two-place critical target.
 
+- [A decomposable high-axis quadratic flag](high-axis-plucker-kernel.md): degree-64 homogeneous coefficients reduce the offending quadratic rank from 120 to 64 while preserving the endpoint. An independent binary Toeplitz certificate shows 94 channels of total order 1,608, still forcing rho at least 1/3 at every common scale and frequency.
+
+- [Realizing a high-axis Cayley profile](high-axis-cayley-realization.md): the explicit balanced monomial nine-axis kernel is excluded at every common scale and frequency by a rank-120 quadratic augmentation minor, giving rho at least 1/3 over every characteristic-two field. The relaxed target remains unrealized.
+
 - [Collective CSS Pauli compression](collective-css-pauli-compression.md): exact full contraction detects every one-site Pauli error but reproduces a Frobenius/relabelled two-cell source at parameter z^2. All 6,561 polynomial entries and 324 independent orders are checked; even unrestricted physical heights give no new support family.
 
 - [Cyclic Pauli crossings with unrestricted physical types](cyclic-pauli-crossing-diagnostic.md): a three-gate F4 qutrit cell has two nondegenerate leading rank-one cuts; coupled degree-two loops retain the structure and exact charge blocks. All 1,458 orders of a q27 fixture are independently replayed. Bare obstructions gate the completed nine-trial typed diagnostic, whose best support is 1.412832752, above one; this local loop search stops.
@@ -1572,6 +1576,7 @@ The [symbolic profile classification](orthogonal-joint-global-rigidity.md#5-all-
 - [Integer twelve-letter word targets](q12-integer-word-target.md): degree-22 and degree-24 points survive the declared linear and nonlinear caps; direct integer comparisons prove formal rates below `7071/10000` and `707/1000`; no realizing polynomial tensor is supplied.
 
 - [Joint Frobenius product contraction](joint-frobenius-product-contraction.md): a simultaneous cyclic-carry algorithm sums synchronized multivariate products in `(S+2)^O(vD)` field operations. A cycle-residual gcd finds the largest admissible row modulus. Weighted geometric-box networks give a concrete global application without repeated-star closure. The complete arithmetic-query representation remains open; the factoring exponent stays `1/2`.
+- [Fused q12 endpoint block cover](fused-q12-endpoint-block-cover.md): polynomial Bézout covers and finite factor certificates force opposite rank at least twelve at every algebraic place for all F16 parameters and 123 regular endpoint instances, hence bare pressure `rho>=3/4`; no claim about charged types or arbitrary decompositions.
 
 - [Prefix and interval closure for synchronized word sums](frobenius-prefix-contraction.md): substitute fully fixed words, retain only one partial word per operand, and decompose integer intervals into disjoint prefixes. The integer phase representation remains open.
 

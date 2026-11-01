@@ -3007,6 +3007,9 @@ verify-joint-frobenius:
 .PHONY: verify-trace-constraints
 verify-trace-constraints:
 	python3 tools/check_trace_constraint_contraction.py
+.PHONY: verify-fused-q12-endpoints
+verify-fused-q12-endpoints:
+	python3 tools/check_fused_q12_endpoint_block_cover.py
 
 .PHONY: verify-frobenius-prefix
 verify-frobenius-prefix:
@@ -3025,3 +3028,11 @@ verify-integral-spin-annihilators:
 	python3 tools/check_integral_spin_annihilators.py
 
 verify-constructions: verify-integral-spin-annihilators
+
+.PHONY: verify-high-axis-cayley
+verify-high-axis-cayley:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_high_axis_cayley.py
+
+.PHONY: verify-high-axis-plucker
+verify-high-axis-plucker:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_high_axis_plucker.py
