@@ -3094,6 +3094,12 @@ verify-teichmuller-carries:
 
 verify-arithmetic: verify-teichmuller-carries
 
+.PHONY: verify-teichmuller-inverses
+verify-teichmuller-inverses:
+	python3 tools/check_teichmuller_unit_inverses.py
+
+verify-arithmetic: verify-teichmuller-inverses
+
 .PHONY: verify-multiaxis-face-rank
 verify-multiaxis-face-rank:
 	python3 tools/check_multiaxis_face_rank_floor.py

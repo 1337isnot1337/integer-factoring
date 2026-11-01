@@ -262,6 +262,30 @@ not for arbitrary word arithmetic. In particular trace predicates that
 mix many binary rows can still enlarge the relative-column exponent;
 the integer multiplication representation has not been supplied.
 
+### Acquired collected-denominator carry interface
+
+The canonical [compiler](../tools/precision_rational_carries.py) supplies
+all collected unit-inverse queries; the earlier concurrent implementation
+is consolidated into it. For a degree-d coefficient ring and width-w
+summation subfield with w|d, (12) uses norm length d and cost
+`O(h+1)*(S_A+((2h+1)*d-1)*S_B+2)^O(v*w/t)` times polynomial bit overhead.
+Constants, degree acquisition and the coefficient representation are charged.
+
+Run `make verify-teichmuller-inverses` for the additional complete-small-ring,
+direct-sum, field-reduction and actual acquisition-budget controls, including
+eight denominators. Its [receipt](../evidence/teichmuller-unit-inverse-controls.json)
+pins the current canonical implementation and finite panel. This retains
+credit to the preceding interpolation, collection identity and carry backend.
+The panel covers all 402 elements in five rings, 180 rational queries
+against 675 direct assignments, 60 field reductions and 3,240 conjugate
+evaluations. Its 468 acquired carry queries satisfy the checked count
+and degree budgets.
+
+The [full inverse replay](../evidence/teichmuller-inverse-full-verification.json)
+pins the earlier concurrent implementation at clean `ed83f94`, before
+canonical-compiler consolidation. It passed the default and 37 focused
+targets; it does not cover the later integration or packed-system controls.
+
 ## 6. Exact controls
 
 The [checker](../tools/check_precision_residue_indicators.py) expands both

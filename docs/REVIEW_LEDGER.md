@@ -880,6 +880,34 @@ expanded coefficients and explicit input budgets are retained. The
 earlier full `5c2e66d` replay predates this source. No Lean, independent
 mathematical review or stronger factoring score is claimed.
 
+## Precision carry replay and acquired collected inverses
+
+The [full receipt](../evidence/teichmuller-carry-full-verification.json)
+records an exit-zero default-plus-35-focused run at clean frozen
+`b9cd96f1f767cd71c8bad123fdb9e1d450bd5f92`, tree
+`d722e7d4e16cb00674ddbf919e92813f8f698237`, in 710.09 seconds.
+The log has 384 Python command blocks, 66 unit tests, five crossing tests
+and 1,129 Markdown files. This verifies code at the PR71 source, which
+was subsequently integrated at `3d20c83`; it predates the interpolation
+companion and acquired inverse extension.
+
+At `c6e7b68661e0d40e0872f5e64622d8eb1ebb169e`, the
+[collected-unit-inverse implementation](../research/precision-efficient-residue-indicators.md#acquired-collected-denominator-carry-interface)
+passed `make verify-teichmuller-inverses verify-precision-indicators`,
+with the direct-sum, conjugation, query-count and degree-budget controls
+recorded in its separate receipt. The existing companion supplies the
+collected identity and smaller inverse polynomial; this extension acquires
+their actual carry queries. Current main `d4c3fad` was integrated without
+conflict at `ed83f94`, and `make verify-docs` passed for 1,130 Markdown
+files. The [full inverse receipt](../evidence/teichmuller-inverse-full-verification.json)
+now records an exit-zero default-plus-37-focused run at clean frozen
+`ed83f945d4defec3dcf17c0b8dfd60854492ed09`, tree
+`d28bc45b823eb985472e377c9dfb85cebe67e7b3`, in 823.66 seconds.
+It retains 386 Python command blocks, 66 unit tests, five crossing tests
+and 1,130 Markdown files. Later receipt/docs changes and the packed-system
+implementation are outside that exact pin. These are author implementation checks and
+ordinary proofs, with no independent mathematical review, new Lean work,
+integer-word compiler or stronger factoring bound.
 ## PR71 backend and implemented inverse/system companions
 
 PR71 source `b9cd96f1f767cd71c8bad123fdb9e1d450bd5f92` is retained
@@ -901,3 +929,14 @@ domains, relative-column rotation, subfield coefficients and exact-count
 precision are included. The inherited additive-character compiler is
 preserved. The complete integer arithmetic representation and a stronger
 factoring score remain open. No Lean is included.
+
+The later PR74 integration consolidates the concurrent unit-inverse module
+into `tools/precision_rational_carries.py` from `2a1daeb`; the duplicate
+module is removed. The additional complete-small-ring, proper-subfield,
+eight-denominator and precision-one controls now call that canonical
+compiler and inspect its actual carry acquisitions and returned invoice.
+They pass with 180 rational queries, 468 carry calls and the same direct
+values. The older `ed83f94` full replay is preserved as an exact historical
+source check and does not cover this consolidation. The short README and
+concurrent separator work from `ebfd7e5` are retained. No stronger score
+or independent mathematical review is inferred.

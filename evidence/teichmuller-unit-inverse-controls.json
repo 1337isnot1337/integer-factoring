@@ -1,0 +1,151 @@
+{
+  "scope": "Collected unit inverses with zero on nonunits, acquired by at most h+1 norm-polynomial branches; denominator degree and count remain charged.",
+  "seed": 202611019,
+  "complete_ring_controls": [
+    {
+      "precision": 1,
+      "degree": 1,
+      "elements": 2,
+      "units": 1,
+      "inverse_polynomial_degree": 2
+    },
+    {
+      "precision": 2,
+      "degree": 2,
+      "elements": 16,
+      "units": 12,
+      "inverse_polynomial_degree": 4
+    },
+    {
+      "precision": 3,
+      "degree": 2,
+      "elements": 64,
+      "units": 48,
+      "inverse_polynomial_degree": 6
+    },
+    {
+      "precision": 4,
+      "degree": 2,
+      "elements": 256,
+      "units": 192,
+      "inverse_polynomial_degree": 8
+    },
+    {
+      "precision": 2,
+      "degree": 3,
+      "elements": 64,
+      "units": 56,
+      "inverse_polynomial_degree": 4
+    }
+  ],
+  "counts": {
+    "rational_queries": 180,
+    "direct_assignments": 675,
+    "nonunit_values": 467,
+    "field_reductions": 60,
+    "conjugate_evaluations": 3240,
+    "carry_queries": 468
+  },
+  "branches": [
+    {
+      "precision": 1,
+      "nonzero_positions": [
+        1
+      ],
+      "one_factor_branches": 1
+    },
+    {
+      "precision": 2,
+      "nonzero_positions": [
+        2,
+        3,
+        4
+      ],
+      "one_factor_branches": 3
+    },
+    {
+      "precision": 3,
+      "nonzero_positions": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "one_factor_branches": 4
+    },
+    {
+      "precision": 4,
+      "nonzero_positions": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "one_factor_branches": 5
+    },
+    {
+      "precision": 5,
+      "nonzero_positions": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "one_factor_branches": 6
+    },
+    {
+      "precision": 6,
+      "nonzero_positions": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "one_factor_branches": 7
+    },
+    {
+      "precision": 7,
+      "nonzero_positions": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "one_factor_branches": 8
+    },
+    {
+      "precision": 8,
+      "nonzero_positions": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "one_factor_branches": 9
+    }
+  ],
+  "query_sha256": "1a14f14450489e39e86df821e1c5551f6c149b455982c47d33530cd6f02e6ca2",
+  "source_sha256": {
+    "tools/teichmuller_cyclic_carries.py": "dd79f4fc588d3caf1249439a05ffc37a9e10d3d52de9723d3fa0a10a7d7557d1",
+    "tools/precision_rational_carries.py": "4e3a27bc8c51bfe2c03b956976b35388c7fb7f23df7b475515d9f3864ccb7492",
+    "tools/check_teichmuller_unit_inverses.py": "209b4a5c78dfa27e9d554e0c86d02cd789bfaeda3e98a0a7cb04d49740a44f7e",
+    "tools/check_teichmuller_cyclic_carries.py": "fd2dbc89319864dbf7de4b38bf38633bb4e8fe2ee0af1cef0515b3c1f07c648b",
+    "tools/joint_frobenius_carries.py": "a383d3db131fce1e932b23dddde55c2c747c5bb117823d2e6c686e26135c75b8"
+  },
+  "factoring_exponent": "1/2; unchanged"
+}
