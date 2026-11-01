@@ -2423,3 +2423,8 @@ verify-tensor-orthogonal-comparisons:
 
 verify-oriented-coprime-basis:
 	python3 tools/check_oriented_coprime_basis.py
+
+.PHONY: benchmark-batch-cofactor-policies
+
+benchmark-batch-cofactor-policies:
+	python3 tools/batch_smooth_policy_check.py --output /tmp/integer-factoring-batch-cofactor-policies.json

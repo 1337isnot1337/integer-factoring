@@ -123,6 +123,15 @@ yet its refined cycle extracts 1009 from 1022117. The proof includes literal
 integral-ideal identities and polynomial bit cost for the supplied-witness
 transformation. Witness search remains charged separately.
 Run `make verify-oriented-coprime-basis`.
+
+The [matched batch-policy controls](research/batch-smooth-filtering.md#matched-existing-cofactor-policies)
+also test the faster existing 144-bit policies. Selective promotion takes
+60.848 versus 51.755 seconds with scalar versus batch-32 filtering;
+the unpromoted pair is essentially tied at 53.327 versus 53.064 seconds.
+Both comparisons preserve complete mathematical payloads and charge all
+generated-ahead candidates. A separate bounded 192-bit search driver retains
+its policy and streams a compressed, independently replayed certificate on
+completion; no 192-bit success is claimed here.
 <!-- cofactor-collision-checkpoint:end -->
 
 <!-- tensor-orthogonal-checkpoint:start -->

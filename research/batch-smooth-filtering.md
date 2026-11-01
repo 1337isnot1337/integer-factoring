@@ -181,6 +181,18 @@ No equality of completion behavior is claimed at the same insufficient cap.
 
 ### A size-balanced amortized filtering bound
 
+For an arbitrary geometric cap `B`, a search with prime-product length
+`R`, norm bit bound `b`, and first stop `q>=1` has
+
+$$\widetilde O\left(R+qb+\frac{qR}{B}\right)$$
+
+filtering cost with quasi-linear arithmetic. There are
+`O(log(B+1)+q/B)` blocks, their total leaf bit length is below `2qb`,
+and each block costs soft-O of `R` plus its leaf bit length. The extra
+tree storage is `O(Bb log(B+1))` bits. This is a time-space tradeoff for
+the filtering component; state generation and the other selector work
+remain charged separately.
+
 The geometric schedule also gives a useful asymptotic consequence without
 any promise on where the first acceptable norm occurs. Consider one nonempty
 search with a frozen `R`-bit prime product, candidate norms of at most `b`
@@ -291,6 +303,34 @@ The 92-bit times are close enough that a single run does not establish a
 stable improvement at the smaller size. These finite observations support
 an opt-in implementation, not a universal timing threshold or automatic
 batch-size policy.
+
+### Matched existing cofactor policies
+
+The fully promoted 144-bit comparison above concerns one traversal policy.
+The repository also has faster unpromoted and selectively promoted policies
+on that input. The [separate matched policy control](../evidence/batch-smooth-cofactor-policies-144.json)
+checks these with the same scalar and batch-32 filters:
+
+| 144-bit cofactor policy | Scalar wall seconds | Batched wall seconds | Generated-ahead norms |
+| --- | ---: | ---: | ---: |
+| Unpromoted product | 53.327 | 53.064 | 149,926 |
+| Promotion up to `16Y` | 60.848 | 51.755 | 163,680 |
+
+The unpromoted pair has essentially equal times. The selective pair is
+about `1.18` times as fast; its CPU times are `60.735` and `51.745` seconds.
+Within each pair, every selected witness, augmented relation, generator
+definition, and extraction result agrees. The scalar inspected counts are
+3,395,784 and 2,305,811 respectively, and all ahead work is charged.
+
+Thus the fully promoted speedup is not an overall best-policy runtime
+record. The selective improvement brings that policy close to the
+unpromoted run on this fixture. These measurements further support an
+explicit option rather than automatic policy selection.
+
+```sh
+python3 tools/batch_smooth_policy_check.py \
+  --output evidence/batch-smooth-cofactor-policies-144.json
+```
 
 The large retained records report their own run times and source hashes.
 Timings depend on the machine and current load. The arithmetic equalities,

@@ -37,6 +37,8 @@
 
 ## Composite-cofactor relations
 
+- [Batch filtering and matched policy timings](batch-smooth-filtering.md): exact first-success preservation, a size-balanced amortized filtering bound, and separate scalar/batched comparisons for unpromoted and selective 144-bit policies.
+
 - [Oriented coprime residual atoms](oriented-coprime-basis.md): polynomial gcd and root refinement, literal HNF identities, torsion-image preservation, and a strict four-cycle factor gain without an old residual-key collision.
 
 - [Batched exact smooth-part filtering](batch-smooth-filtering.md): classical remainder trees integrated with charged first-success selection, a size-balanced amortized bound, and matched 124-/144-bit timings; no new score.
