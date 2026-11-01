@@ -1227,3 +1227,23 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 - [Deeply matched reflected progressions](matched-progression-bezout.md): exact primitive denominator and complete modular Bézout compiler at binary huge degree, with reciprocal perturbations retained.
 
 - [Tensor-product Pascal box crossings](tensor-pascal-box-crossings.md): exact crossing matrices, coherent energy labels, and all-scale certificates for 150 finite restriction screens.
+
+
+## Complete flat coefficient spaces
+
+- [All physical words over F2 and F4, with exact generic row constraints](cube-flat-coefficient-fibers.md)
+
+
+## Exact recognition of constant local parity gauges
+
+- [Linear recognition, endpoint-preserving gauges, and a certified nongauge reference](local-parity-gauge-test.md)
+
+- [Exact rectangular Bézout denominators](rectangular-bezout-denominator.md): unequal isometric prefixes, a two-variable proof, exact binary scale computation, and complete shifted polynomial supports of at most `p+defect` coefficients.
+
+- [Complete rectangular modular Bézout pairs](rectangular-bezout-modular.md): a polynomial-time compiler for both entire normalized polynomials on independently sized arithmetic domains, with exact tail bounds and all precision costs charged.
+
+- [Weighted Pascal flags](weighted-pascal-flag-crossings.md): arbitrary integer coordinate weights, independent zero and infinity energies, constant flag changes, and exact unrestricted-gauge Clifford profiles.
+
+- [Exact separation ranks of Cauchy powers](pole-cauchy-hadamard-rank.md): all positive Hadamard powers, precision-dependent overlap thresholds, an exponential standard-padding example, and a larger-padding rank-equals-factor-count corollary.
+
+- [Quadratic coalescence and two-depth Bézout pairs](quadratic-coalescence-bezout.md): an exact weighted-moment valuation, a binary-size quadratic trace unit, and complete primitive residues in a nonuniform matching testbed.

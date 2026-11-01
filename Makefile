@@ -2208,3 +2208,34 @@ verify-matched-progression-bezout:
 .PHONY: verify-tensor-pascal-boxes
 verify-tensor-pascal-boxes:
 	python3 tools/check_tensor_pascal_box_crossings.py --output /tmp/tensor-pascal-box-crossings.json
+
+
+.PHONY: verify-cube-flat-coefficient-fibers
+verify-cube-flat-coefficient-fibers:
+	python3 tools/check_cube_flat_coefficient_fibers.py --compare evidence/cube-flat-coefficient-fibers.json --output /tmp/integer-factoring-cube-flat-coefficient-fibers.json
+
+
+.PHONY: verify-local-parity-gauge
+verify-local-parity-gauge:
+	python3 tools/check_local_parity_gauge.py --output /tmp/integer-factoring-local-parity-gauge.json
+
+.PHONY: verify-rectangular-bezout-denominator
+verify-rectangular-bezout-denominator:
+	python3 tools/check_rectangular_bezout_denominator.py --output /tmp/rectangular-bezout-denominator.json
+	python3 tools/check_rectangular_bezout_scale.py --output /tmp/rectangular-bezout-scale.json
+
+.PHONY: verify-rectangular-bezout-modular
+verify-rectangular-bezout-modular:
+	python3 tools/check_rectangular_bezout_modular.py --output /tmp/rectangular-bezout-modular.json
+
+.PHONY: verify-weighted-pascal-flags
+verify-weighted-pascal-flags:
+	python3 tools/check_weighted_pascal_flags.py --output /tmp/weighted-pascal-flags.json
+
+.PHONY: verify-pole-cauchy-hadamard-rank
+verify-pole-cauchy-hadamard-rank:
+	python3 tools/check_pole_cauchy_hadamard_rank.py --output /tmp/pole-cauchy-hadamard-rank.json
+
+.PHONY: verify-quadratic-coalescence-bezout
+verify-quadratic-coalescence-bezout:
+	python3 tools/check_quadratic_coalescence_bezout.py --output /tmp/quadratic-coalescence-bezout.json
