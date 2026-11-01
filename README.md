@@ -2131,3 +2131,13 @@ retains the full default pass at `410e3e2` (341 Python command blocks,
 66 unit tests, five crossing tests, 973 Markdown files) and four focused
 moving-map checks at `1dba7ba`. These are source-specific ordinary checks;
 later integrations and the full frame search have separate status.
+
+## Sparse oriented power prefixes
+
+The [sparse residual selector](research/sparse-oriented-power-prefixes.md)
+finds factors on certified 64-bit and 80-bit inputs after 2,048 and 10,240
+queries from the unchanged prime-power stream. The original selector needs
+3,983 and 38,818 queries respectively. Every power, ideal identity and integer
+presentation map is retained in a compressed replayable certificate. These
+are finite query gains: the baseline implementation is slower in wall time,
+and the uniform factoring exponent remains `1/2`.

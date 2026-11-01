@@ -2485,3 +2485,11 @@ verify-tensor-f16: verify-tensor-f16-fast
 
 verify-tensor-f16-fast:
 	python3 tools/check_tensor_hot_compounds_f16_fast.py --output /tmp/integer-factoring-tensor-f16-fast-check.json
+
+.PHONY: verify-sparse-oriented-power
+
+verify-oriented-refinement: verify-sparse-oriented-power
+
+verify-sparse-oriented-power:
+	python3 tools/check_sparse_oriented_power_search.py --replay evidence/sparse-oriented-power-64.json.xz
+	python3 tools/check_sparse_oriented_power_search.py --replay evidence/sparse-oriented-power-80.json.xz
