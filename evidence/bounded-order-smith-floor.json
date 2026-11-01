@@ -1,0 +1,286 @@
+{
+  "scope": "all fields and degrees; both bare Smith profiles must have orders at most actual degree",
+  "entropy_certificates": [
+    {
+      "alphabet": 2,
+      "probability_denominator": 40,
+      "probability_counts": [
+        [
+          20,
+          1
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          6,
+          1
+        ]
+      ],
+      "prefix_weight": "3/20",
+      "tail_weight": "7/40",
+      "weighted_order_budget": "1/2",
+      "integer_comparison_multiplier": 125,
+      "left_integer_bits": 26610,
+      "right_integer_bits": 24729,
+      "left_sha256": "fd47a99db4c1fa6c1058ecc74fac1bc32efa9a2bd606f1fd3ca5213e5f3bb751",
+      "right_sha256": "3ab9b81ea2d560e8cab1011457f89bfbb8c276a0790c9b5edd9027d771148df0",
+      "strict_entropy_inequality": true,
+      "rho_lower_bound": "442/625"
+    },
+    {
+      "alphabet": 3,
+      "probability_denominator": 120,
+      "probability_counts": [
+        [
+          54,
+          1
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          7,
+          6
+        ]
+      ],
+      "prefix_weight": "1/10",
+      "tail_weight": "7/120",
+      "weighted_order_budget": "1/2",
+      "integer_comparison_multiplier": 125,
+      "left_integer_bits": 103604,
+      "right_integer_bits": 97966,
+      "left_sha256": "d2a20889bb1d167ef19a5494c33b35e075f3c28cb404142496f11fa556e3237a",
+      "right_sha256": "164307541d2da0fa3563e9730cace40a76f06fead3736e43a31b154e9e9aa9d1",
+      "strict_entropy_inequality": true,
+      "rho_lower_bound": "442/625"
+    },
+    {
+      "alphabet": 4,
+      "probability_denominator": 240,
+      "probability_counts": [
+        [
+          102,
+          1
+        ],
+        [
+          18,
+          3
+        ],
+        [
+          7,
+          12
+        ]
+      ],
+      "prefix_weight": "3/40",
+      "tail_weight": "7/240",
+      "weighted_order_budget": "1/2",
+      "integer_comparison_multiplier": 125,
+      "left_integer_bits": 237207,
+      "right_integer_bits": 227562,
+      "left_sha256": "e8914c3be6f2ea889643f55cee9ad42adfcccf421f8244adb6966c42dad5e1f9",
+      "right_sha256": "867c1ac886196b7a4105668e9592b64dce6647d356b978f92a36f0c80b8688b8",
+      "strict_entropy_inequality": true,
+      "rho_lower_bound": "442/625"
+    },
+    {
+      "alphabet": 5,
+      "probability_denominator": 400,
+      "probability_counts": [
+        [
+          164,
+          1
+        ],
+        [
+          24,
+          4
+        ],
+        [
+          7,
+          20
+        ]
+      ],
+      "prefix_weight": "3/50",
+      "tail_weight": "7/400",
+      "weighted_order_budget": "1/2",
+      "integer_comparison_multiplier": 25,
+      "left_integer_bits": 86439,
+      "right_integer_bits": 83837,
+      "left_sha256": "d4dae0cc1508ec7fffab76699c044986198d1afe1eaf559c88b4b2168580b0e5",
+      "right_sha256": "85b1a3f0a5ccbcf8af284a11fefdbdf0a89937a1fa3e0173cf0d4f2fbe5bf949",
+      "strict_entropy_inequality": true,
+      "rho_lower_bound": "442/625"
+    },
+    {
+      "alphabet": 6,
+      "probability_denominator": 600,
+      "probability_counts": [
+        [
+          240,
+          1
+        ],
+        [
+          30,
+          5
+        ],
+        [
+          7,
+          30
+        ]
+      ],
+      "prefix_weight": "1/20",
+      "tail_weight": "7/600",
+      "weighted_order_budget": "1/2",
+      "integer_comparison_multiplier": 25,
+      "left_integer_bits": 138433,
+      "right_integer_bits": 135424,
+      "left_sha256": "8cb6ab6918f3d6a4314896a1117d025e561fcd4bf62149f5942fdbff65f9df6a",
+      "right_sha256": "8f7cc18457329f054289c6b5d70f9269c60b510cadf1c0278c7a9563c9c55487",
+      "strict_entropy_inequality": true,
+      "rho_lower_bound": "442/625"
+    },
+    {
+      "alphabet": 7,
+      "probability_denominator": 840,
+      "probability_counts": [
+        [
+          330,
+          1
+        ],
+        [
+          36,
+          6
+        ],
+        [
+          7,
+          42
+        ]
+      ],
+      "prefix_weight": "3/70",
+      "tail_weight": "1/120",
+      "weighted_order_budget": "1/2",
+      "integer_comparison_multiplier": 125,
+      "left_integer_bits": 1019996,
+      "right_integer_bits": 1004795,
+      "left_sha256": "c732333352dde9c75fa175ec2aeb999caf3b863900005d24ae96a7ff41074534",
+      "right_sha256": "89ca9242ff7832fe8b9783843a5860e84458170e0bfab138d9c825291e70cce5",
+      "strict_entropy_inequality": true,
+      "rho_lower_bound": "442/625"
+    },
+    {
+      "alphabet": 8,
+      "probability_denominator": 1120,
+      "probability_counts": [
+        [
+          434,
+          1
+        ],
+        [
+          42,
+          7
+        ],
+        [
+          7,
+          56
+        ]
+      ],
+      "prefix_weight": "3/80",
+      "tail_weight": "1/160",
+      "weighted_order_budget": "1/2",
+      "integer_comparison_multiplier": 125,
+      "left_integer_bits": 1418100,
+      "right_integer_bits": 1405091,
+      "left_sha256": "01f4aad555cef5e9b3d847d8234ff8648edd5592bace10fdbe62afeff40973b4",
+      "right_sha256": "67b4ff5dcd40dade35656ce0d7302cdcf5bb2496b6f5afc9babba087f2fd995b",
+      "strict_entropy_inequality": true,
+      "rho_lower_bound": "442/625"
+    },
+    {
+      "alphabet": 9,
+      "probability_denominator": 1440,
+      "probability_counts": [
+        [
+          552,
+          1
+        ],
+        [
+          48,
+          8
+        ],
+        [
+          7,
+          72
+        ]
+      ],
+      "prefix_weight": "1/30",
+      "tail_weight": "7/1440",
+      "weighted_order_budget": "1/2",
+      "integer_comparison_multiplier": 125,
+      "left_integer_bits": 1888534,
+      "right_integer_bits": 1880468,
+      "left_sha256": "606cb60db1779c79dac2ac0329abed5f1ec6b74df3f539cd08613246752c71a4",
+      "right_sha256": "1cac4347c452574f5277afb7324e6b4506560990fa6e9e162bccdef5c4775972",
+      "strict_entropy_inequality": true,
+      "rho_lower_bound": "442/625"
+    },
+    {
+      "alphabet": 10,
+      "probability_denominator": 1800,
+      "probability_counts": [
+        [
+          684,
+          1
+        ],
+        [
+          54,
+          9
+        ],
+        [
+          7,
+          90
+        ]
+      ],
+      "prefix_weight": "3/100",
+      "tail_weight": "7/1800",
+      "weighted_order_budget": "1/2",
+      "integer_comparison_multiplier": 25,
+      "left_integer_bits": 486621,
+      "right_integer_bits": 486618,
+      "left_sha256": "a93c030e716b78bd9995be092f2d458c2b939d05d76a2349506147e022cd86cd",
+      "right_sha256": "d5ec488fcf22740d922b0e34142d9b3eb0bdb92091d2aad53a7391ca5b8e824e",
+      "strict_entropy_inequality": true,
+      "rho_lower_bound": "442/625"
+    }
+  ],
+  "strictly_above_one_over_sqrt_two": 103,
+  "eleven_letter_formal_relaxation_witness": {
+    "alphabet": 11,
+    "degree": 20,
+    "both_profiles": [
+      [
+        0,
+        1
+      ],
+      [
+        11,
+        10
+      ],
+      [
+        20,
+        110
+      ]
+    ],
+    "scale": "5/4",
+    "strict_formal_rho_upper_bound": "707/1000",
+    "left_integer_bits": 24042,
+    "right_integer_bits": 24056,
+    "left_sha256": "6fcf64ed0dcc730d787be62606a78291042cd7df7bbb0c6af89b2b7c8f2b7264",
+    "right_sha256": "6b16e6d6a6879eb67e4538383ea7fd4473227a6bb1823a379aa03d61b1ef674f",
+    "crossing_realization_claimed": false
+  },
+  "bell_consequence": "eight-letter polynomial order/degree pressure only, every characteristic different from two",
+  "floating_arithmetic_used": false,
+  "factoring_exponent_improved": false
+}
