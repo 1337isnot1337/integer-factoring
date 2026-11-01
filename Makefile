@@ -2321,3 +2321,7 @@ verify-linear-pascal-matroid:
 .PHONY: verify-permuted-pascal-kernels
 verify-permuted-pascal-kernels:
 	python3 tools/check_permuted_pascal_kernels.py --output /tmp/permuted-pascal-zero-spectra.json
+
+.PHONY: verify-joint-hot-jet-rankone
+verify-joint-hot-jet-rankone:
+	python3 tools/check_joint_hot_jet_rankone.py

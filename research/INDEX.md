@@ -1294,3 +1294,7 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 
 
 - [Complete Pascal profiles for arbitrary exponent permutations](permuted-pascal-zero-spectra.md): a coefficientwise-product valuation inequality, explicit zero spectra without monotonicity assumptions, and a compatible infinity cone with both physical charges.
+
+## Rational row-module first-residual rigidity
+
+[All-field first-residual theorem](joint-hot-first-residual-rigidity.md) classifies the simultaneous rank-one residual images at four protected raw jets. A quadratic-output quotient and64literal Smith controls support the scoped result; higher profiles remain open.
