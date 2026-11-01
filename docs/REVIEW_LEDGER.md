@@ -859,3 +859,23 @@ records. The separately failed source-manifest check is recorded above
 and was not part of `make verify`; no all-artifact integrity PASS is
 claimed at this pin. This source predates `b11cc97` and the later manifest
 and adversary-exit repair. Their focused checks remain separate.
+
+## Linear-precision norm interpolation
+
+The [ordinary proof](../research/precision-efficient-residue-indicators.md)
+uses integer Hermite interpolation to construct exact residue-root
+indicators and total unit inverses modulo `2^L`. Total unit inverses
+multiply, so all denominator factors use one interpolation and L+1
+synchronized polynomial queries; the degree budget grows linearly in
+precision and in the sum of denominator row degrees. This is an explicit
+interface to the separately developed polynomial ring-carry algorithm,
+not a proof that its complete factoring costs pass the target. The
+[receipt](../evidence/precision-residue-indicator-controls.json) retains
+24 exact integer polynomial identities, 16,382 scalar residues, all
+5,460 elements in the quadratic rings through precision six, 4,368
+inverse-multiplicativity pairs and 96 direct Teichmuller polynomial
+values. Nonzero even constants, non-Teichmuller coefficients, collected
+denominators and two packed binary predicates are included. Source hashes,
+expanded coefficients and explicit input budgets are retained. The
+earlier full `5c2e66d` replay predates this source. No Lean, independent
+mathematical review or stronger factoring score is claimed.

@@ -3091,3 +3091,7 @@ verify-arithmetic: verify-elliptic-word-costs
 .PHONY: verify-multiaxis-face-rank
 verify-multiaxis-face-rank:
 	python3 tools/check_multiaxis_face_rank_floor.py
+
+.PHONY: verify-precision-indicators
+verify-precision-indicators:
+	python3 tools/check_precision_residue_indicators.py

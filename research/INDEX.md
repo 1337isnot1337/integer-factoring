@@ -1,5 +1,7 @@
 # Research index
 
+- [Linear-precision residue indicators and total unit inverses](precision-efficient-residue-indicators.md): integer Hermite interpolation lifts finite-field root predicates and unit inverses exactly modulo 2^L with linear precision degree. All denominator factors share one norm interpolation, giving L+1 polynomial carry queries with an explicit degree invoice. A complete factoring representation remains open.
+
 - [A global floor from generic axis-face ranks](multiaxis-face-rank-floor.md): complementary Smith pairing and average face-rank fraction c force common-scale pressure above min(1/2,c+1/d). Every symmetric winning Cayley kernel in d>=4 must have pair/triple coefficients divisible by all their variables. A full endpoint fixture shows why the all-one specialization can hide this obstruction.
 
 - [Global homogeneous axis alignment and its quotient limits](global-axis-alignment-obstruction.md): all-field characteristic-two locality/endpoint forces transverse coefficients and quotient prefixes at depths D/4,D/6,D/8. An exact exterior-module counterexample shows those quotient bounds alone do not lift to the needed full prefix; the crossing endpoint remains essential.

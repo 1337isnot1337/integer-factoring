@@ -2728,3 +2728,12 @@ retains an explicit linear lower-bound family and finite orbit data. Its
 Fourier obstruction concerns completion with a uniform absolute character-sum
 bound; it does not exclude arguments using phases or other character data.
 Neither supplies the missing uniform window theorem or a stronger score.
+
+[Integer norm interpolation](research/precision-efficient-residue-indicators.md)
+supplies exact residue-root indicators and total unit inverses modulo
+`2^L` with degree linear in L. Collecting all denominators gives `L+1`
+synchronized polynomial queries, with precision explicitly charged inside
+their degree budget. Multiple equations can share an extension-field norm
+when their row representation permits it. This is a constructive interface
+for the active Galois-ring carry lift; a complete arithmetic representation
+and stronger factoring bound remain open.
