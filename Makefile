@@ -2263,6 +2263,10 @@ verify-q12-second-jet-target:
 verify-higher-jet-words:
 	python3 tools/check_higher_jet_word_caps.py
 
+.PHONY: verify-q12-integer-word-target
+verify-q12-integer-word-target:
+	python3 tools/check_q12_integer_word_target.py
+
 .PHONY: verify-multiaxis-cube
 verify-multiaxis-cube:
 	python3 tools/check_multiaxis_cube_transfer.py

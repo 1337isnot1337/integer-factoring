@@ -2517,6 +2517,12 @@ singular channels and extends the old second-jet bound. Run
 `make verify-q12-second-jet-target verify-higher-jet-words` for the historical
 relaxation and its rejection. No stronger factoring bound is established.
 
+A [degree-24 integer twelve-letter point](research/q12-integer-word-target.md)
+survives every declared cofactor and higher-word constraint. At the rational
+scale `17/14`, direct integer arithmetic proves its formal bare rate is below
+`707/1000<1/sqrt(2)`. No polynomial tensor realizing it is known. Run
+`make verify-q12-integer-word-target`; the factoring score remains **1/2**.
+
 The [latest full verification receipt](evidence/multichannel-full-verification.json)
 pins a successful clean default replay and eleven named joint/cofactor
 targets to exact `7e1c1d8`: 352 Python command blocks, 66 unit tests,
