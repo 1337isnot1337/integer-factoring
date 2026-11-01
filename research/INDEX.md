@@ -1,5 +1,9 @@
 # Research index
 
+- [Binary prefixes at unequal supporting weights](asymmetric-binary-prefix-relaxation.md): all binary endpoint prefixes reduce the necessary real-profile problem to one convex allocation. Twelve bounded outer fits find no negative margin; near-zero cold limits stop the diagnostic. These profiles are not tensors, and no global asymmetric binary theorem follows.
+
+- [Globally type-removable poles have polynomial pressure limits](approximate-rational-strictification.md): rounded weak charge potentials and Frobenius substitution clear extra finite scalar poles at cost 4Lt/p^k, preserving every strict negative witness in a polynomial representative on the same alphabets and finite field. All-type global regularity is required; auxiliary matrices and selected-type-only endpoints remain outside scope.
+
 - [Integral bad-prime spin annihilators](integral-spin-annihilators.md): denominator-cleared spin-eleven seeds have an exact spectator factor at characteristic three; polynomial inverse witnesses bound all local orders by two at 5, 7 and 11, excluding their bare two-place critical target.
 
 - [A universal axis window for strict polynomial crossings](uniform-polynomial-axis-window.md): endpoint majorization, a quantified partition deficit and the cold bound give a neighborhood depending only on alphabet size, uniformly over all physical heights, tensors, degrees and scales. It closes the moving-gauge axis escape for this pressure framework; interior weights and other methods remain open.
@@ -108,6 +112,7 @@
 - [A lattice terminal for exact ratio-class factors](circuit-box-ratio-lattice.md): weighted two-dimensional reduction, a uniform twenty-line local bound, exact quadratic recovery and fully charged `2^(n/3)*poly(n)` smallest-factor search; representation-specific scope.
 - [Reusable semiprime work in RiemannGaussian](riemann-gaussian-semiprime-source-audit.md): exact-source audit of deterministic boundary contraction, factor moments, semiprime count recovery and coefficient-ring compatibility; no imported score improvement or independent Lean rebuild.
 - [All-input minimum-factor adapters](sanftenberg-all-input-prefix-adapter.md): exact prefix counts or a truncated min-plus semiring recover the smallest factor for arbitrary `N`; direct whole-root boundary contraction has only a linear width guarantee, and recursive cost remains open.
+- [Treewidth floor for the public semiprime macro network](sanftenberg-transform-treewidth-floor.md): its ordinary bit-variable primal graph has a line-graph-of-complete-bipartite minor and therefore linear treewidth; this rules out subexponential table elimination on that graph, not compressed arithmetic or circuit representations.
 
 - [Literal hot tensors for low-cell retractions](tensor-literal-low-cell-retractions.md): original Gaussian/Pfaffian evaluation without deletion closure, a proved cache bound, complete independent kernel controls and a retained 55-label capped pilot; no frontier gain.
 

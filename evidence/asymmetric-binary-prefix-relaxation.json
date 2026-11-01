@@ -1,0 +1,1188 @@
+{
+  "status": "complete_registered_attempts",
+  "registered_starts": [
+    [
+      0,
+      0,
+      0,
+      -2
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      2
+    ],
+    [
+      1,
+      1,
+      1,
+      -2
+    ],
+    [
+      1,
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      2
+    ],
+    [
+      1,
+      2,
+      1,
+      -2
+    ],
+    [
+      1,
+      2,
+      1,
+      0
+    ],
+    [
+      1,
+      2,
+      1,
+      2
+    ],
+    [
+      4,
+      1,
+      1,
+      -2
+    ],
+    [
+      4,
+      1,
+      1,
+      0
+    ],
+    [
+      4,
+      1,
+      1,
+      2
+    ]
+  ],
+  "attempts": [
+    {
+      "initial_parameters": [
+        0,
+        0,
+        0,
+        -2
+      ],
+      "queries": 115,
+      "best": {
+        "parameters": [
+          0.06931455098624212,
+          8.953019239703275e-18,
+          0.0,
+          -4.0
+        ],
+        "weights": [
+          0.9998323108749456,
+          0.018312567555274113
+        ],
+        "zero_infinity_normalized_profiles": [
+          [
+            0.0,
+            0.062329248644225795,
+            0.10746447765037137,
+            0.10746447765037137
+          ],
+          [
+            0.0,
+            0.07629985332825845,
+            0.10047917530835504,
+            0.10047917530835504
+          ]
+        ],
+        "physical_ground_slack": 0.06931455098624212,
+        "physical_excitation_energies": [
+          1.790603847940655e-17,
+          0.0
+        ],
+        "allocation_interval": [
+          0.04620970065749473,
+          0.0924194013149895
+        ],
+        "allocated_second_order": 0.062329248644225795,
+        "margin": 0.0011777937523806958,
+        "scope": "Necessary real profiles only; not a tensor or a bound."
+      },
+      "last": {
+        "parameters": [
+          0.06931455098624212,
+          8.953019239703275e-18,
+          0.0,
+          -4.0
+        ],
+        "weights": [
+          0.9998323108749456,
+          0.018312567555274113
+        ],
+        "zero_infinity_normalized_profiles": [
+          [
+            0.0,
+            0.062329248644225795,
+            0.10746447765037137,
+            0.10746447765037137
+          ],
+          [
+            0.0,
+            0.07629985332825845,
+            0.10047917530835504,
+            0.10047917530835504
+          ]
+        ],
+        "physical_ground_slack": 0.06931455098624212,
+        "physical_excitation_energies": [
+          1.790603847940655e-17,
+          0.0
+        ],
+        "allocation_interval": [
+          0.04620970065749473,
+          0.0924194013149895
+        ],
+        "allocated_second_order": 0.062329248644225795,
+        "margin": 0.0011777937523806958,
+        "scope": "Necessary real profiles only; not a tensor or a bound."
+      },
+      "status": "optimizer_returned",
+      "message": "Optimization terminated successfully",
+      "optimizer_success": true,
+      "seconds": 0.0271060592494905
+    },
+    {
+      "initial_parameters": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "queries": 1538,
+      "best": {
+        "parameters": [
+          1.1406574259365258e-17,
+          0.3504621355946699,
+          0.35046214121795527,
+          4.0
+        ],
+        "weights": [
+          0.018312567555274113,
+          0.9998323108749455
+        ],
+        "zero_infinity_normalized_profiles": [
+          [
+            0.0,
+            0.06455030903880017,
+            1.33729824458645,
+            1.4018485536252505
+          ],
+          [
+            0.0,
+            0.6363739621505395,
+            0.7654745914747108,
+            1.4018485536252503
+          ]
+        ],
+        "physical_ground_slack": 1.1406574259365258e-17,
+        "physical_excitation_energies": [
+          0.7009242711893398,
+          0.7009242824359105
+        ],
+        "allocation_interval": [
+          0.0,
+          0.7009242711893398
+        ],
+        "allocated_second_order": 0.06455030903880017,
+        "margin": 0.0012420705220085315,
+        "scope": "Necessary real profiles only; not a tensor or a bound."
+      },
+      "last": {
+        "parameters": [
+          1.140657404472828e-17,
+          0.3504621355946677,
+          0.3504621412179549,
+          4.0
+        ],
+        "weights": [
+          0.018312567555274113,
+          0.9998323108749455
+        ],
+        "zero_infinity_normalized_profiles": [
+          [
+            0.0,
+            0.06455030644774455,
+            1.3372982471775006,
+            1.4018485536252452
+          ],
+          [
+            0.0,
+            0.6363739647415909,
+            0.7654745888836543,
+            1.4018485536252452
+          ]
+        ],
+        "physical_ground_slack": 1.140657404472828e-17,
+        "physical_excitation_energies": [
+          0.7009242711893354,
+          0.7009242824359098
+        ],
+        "allocation_interval": [
+          0.0,
+          0.7009242711893354
+        ],
+        "allocated_second_order": 0.06455030644774455,
+        "margin": 0.0012420705220086425,
+        "scope": "Necessary real profiles only; not a tensor or a bound."
+      },
+      "status": "optimizer_returned",
+      "message": "Optimization terminated successfully",
+      "optimizer_success": true,
+      "seconds": 0.32884531700983644
+    },
+    {
+      "initial_parameters": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "queries": 115,
+      "best": {
+        "parameters": [
+          0.06931455079476216,
+          0.0,
+          1.216207323753462e-17,
+          4.0
+        ],
+        "weights": [
+          0.018312567555274113,
+          0.9998323108749455
+        ],
+        "zero_infinity_normalized_profiles": [
+          [
+            0.0,
+            0.07629985243979213,
+            0.10047917536962828,
+            0.10047917536962828
+          ],
+          [
+            0.0,
+            0.06232924914973219,
+            0.10746447701465825,
+            0.10746447701465825
+          ]
+        ],
+        "physical_ground_slack": 0.06931455079476216,
+        "physical_excitation_energies": [
+          0.0,
+          2.432414647506924e-17
+        ],
+        "allocation_interval": [
+          0.04620970052984143,
+          0.0924194010596829
+        ],
+        "allocated_second_order": 0.07629985243979213,
+        "margin": 0.0011777937523804738,
+        "scope": "Necessary real profiles only; not a tensor or a bound."
+      },
+      "last": {
+        "parameters": [
+          0.06931455079476216,
+          0.0,
+          1.216207323753462e-17,
+          4.0
+        ],
+        "weights": [
+          0.018312567555274113,
+          0.9998323108749455
+        ],
+        "zero_infinity_normalized_profiles": [
+          [
+            0.0,
+            0.07629985243979213,
+            0.10047917536962828,
+            0.10047917536962828
+          ],
+          [
+            0.0,
+            0.06232924914973219,
+            0.10746447701465825,
+            0.10746447701465825
+          ]
+        ],
+        "physical_ground_slack": 0.06931455079476216,
+        "physical_excitation_energies": [
+          0.0,
+          2.432414647506924e-17
+        ],
+        "allocation_interval": [
+          0.04620970052984143,
+          0.0924194010596829
+        ],
+        "allocated_second_order": 0.07629985243979213,
+        "margin": 0.0011777937523804738,
+        "scope": "Necessary real profiles only; not a tensor or a bound."
+      },
+      "status": "optimizer_returned",
+      "message": "Optimization terminated successfully",
+      "optimizer_success": true,
+      "seconds": 0.029060683213174343
+    },
+    {
+      "initial_parameters": [
+        1,
+        1,
+        1,
+        -2
+      ],
+      "queries": 513,
+      "best": {
+        "parameters": [
+          2.013270227267574e-15,
+          14.82351007667764,
+          14.782461748959959,
+          -2.4259712262780924
+        ],
+        "weights": [
+          0.9961161511364386,
+          0.08804892642802654
+        ],
+        "zero_infinity_normalized_profiles": [
+          [
+            0.0,
+            27.163248189415775,
+            32.04869546185943,
+            59.2119436512752
+          ],
+          [
+            0.0,
+            2.401675308504146,
+            56.81026834277106,
+            59.21194365127521
+          ]
+        ],
+        "physical_ground_slack": 2.013270227267574e-15,
+        "physical_excitation_energies": [
+          29.64702015335528,
+          29.564923497919917
+        ],
+        "allocation_interval": [
+          0.0,
+          29.56492349791992
+        ],
+        "allocated_second_order": 27.163248189415775,
+        "margin": 1.2907740753000908e-12,
+        "scope": "Necessary real profiles only; not a tensor or a bound."
+      },
+      "last": {
+        "parameters": [
+          2.013270227267574e-15,
+          14.82351007667764,
+          14.782461734058797,
+          -2.425971211376931
+        ],
+        "weights": [
+          0.9961161510213642,
+          0.08804892772988612
+        ],
+        "zero_infinity_normalized_profiles": [
+          [
+            0.0,
+            27.16324812921228,
+            32.048695492260606,
+            59.211943621472884
+          ],
+          [
+            0.0,
+            2.401675338905317,
+            56.81026828256756,
+            59.211943621472884
+          ]
+        ],
+        "physical_ground_slack": 2.013270227267574e-15,
+        "physical_excitation_energies": [
+          29.64702015335528,
+          29.564923468117595
+        ],
+        "allocation_interval": [
+          0.0,
+          29.5649234681176
+        ],
+        "allocated_second_order": 27.16324812921228,
+        "margin": 1.2907741615458715e-12,
+        "scope": "Necessary real profiles only; not a tensor or a bound."
+      },
+      "status": "optimizer_returned",
+      "message": "Optimization terminated successfully",
+      "optimizer_success": true,
+      "seconds": 0.13493350893259048
+    },
+    {
+      "initial_parameters": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "queries": 4270,
+      "best": {
+        "parameters": [
+          0.0,
+          0.6013209420774757,
+          0.6013209405015109,
+          3.9999999999999996
+        ],
+        "weights": [
+          0.01831256755527412,
+          0.9998323108749455
+        ],
+        "zero_infinity_normalized_profiles": [
+          [
+            0.0,
+            0.06778943019618207,
+            2.337494334961791,
+            2.4052837651579733
+          ],
+          [
+            0.0,
+            1.1348524508068396,
+            1.2704313143511337,
+            2.4052837651579733
+          ]
+        ],
+        "physical_ground_slack": 0.0,
+        "physical_excitation_energies": [
+          1.2026418841549513,
+          1.2026418810030217
+        ],
+        "allocation_interval": [
+          0.0,
+          1.2026418810030217
+        ],
+        "allocated_second_order": 0.06778943019618207,
+        "margin": 0.0010815553544730738,
+        "scope": "Necessary real profiles only; not a tensor or a bound."
+      },
+      "last": {
+        "parameters": [
+          5.10048019528501e-25,
+          0.6013209420774763,
+          0.6013209405013046,
+          3.9999999999999996
+        ],
+        "weights": [
+          0.01831256755527412,
+          0.9998323108749455
+        ],
+        "zero_infinity_normalized_profiles": [
+          [
+            0.0,
+            0.06778943207110891,
+            2.337494333086453,
+            2.405283765157562
+          ],
+          [
+            0.0,
+            1.1348524489315002,
+            1.2704313162260619,
+            2.405283765157562
+          ]
+        ],
+        "physical_ground_slack": 5.10048019528501e-25,
+        "physical_excitation_energies": [
+          1.2026418841549527,
+          1.2026418810026092
+        ],
+        "allocation_interval": [
+          0.0,
+          1.2026418810026092
+        ],
+        "allocated_second_order": 0.06778943207110891,
+        "margin": 0.0010815553544780698,
+        "scope": "Necessary real profiles only; not a tensor or a bound."
+      },
+      "status": "optimizer_returned",
+      "message": "Optimization terminated successfully",
+      "optimizer_success": true,
+      "seconds": 0.9024224630557001
+    },
+    {
+      "initial_parameters": [
+        1,
+        1,
+        1,
+        2
+      ],
+      "queries": 308,
+      "best": {
+        "parameters": [
+          2.453632784618742e-16,
+          0.7062694924896691,
+          0.7062694878409151,
+          3.9999999999999987
+        ],
+        "weights": [
+          0.018312567555274138,
+          0.9998323108749455
+        ],
+        "zero_infinity_normalized_profiles": [
+          [
+            0.0,
+            0.06956216149079078,
+            2.7555157991703787,
+            2.825077960661168
+          ],
+          [
+            0.0,
+            1.3429768141910399,
+            1.4821011464701297,
+            2.825077960661168
+          ]
+        ],
+        "physical_ground_slack": 2.453632784618742e-16,
+        "physical_excitation_energies": [
+          1.4125389849793382,
+          1.4125389756818303
+        ],
+        "allocation_interval": [
+          0.0,
+          1.4125389756818307
+        ],
+        "allocated_second_order": 0.06956216149079078,
+        "margin": 0.001001930166546705,
+        "scope": "Necessary real profiles only; not a tensor or a bound."
+      },
+      "last": {
+        "parameters": [
+          2.453627055698141e-16,
+          0.706269492488667,
+          0.7062694878384722,
+          3.9999999999999987
+        ],
+        "weights": [
+          0.018312567555274138,
+          0.9998323108749455
+        ],
+        "zero_infinity_normalized_profiles": [
+          [
+            0.0,
+            0.0695621643180312,
+            2.755515796336248,
+            2.8250779606542786
+          ],
+          [
+            0.0,
+            1.3429768113589136,
+            1.4821011492953655,
+            2.825077960654279
+          ]
+        ],
+        "physical_ground_slack": 2.453627055698141e-16,
+        "physical_excitation_energies": [
+          1.412538984977334,
+          1.4125389756769444
+        ],
+        "allocation_interval": [
+          0.0,
+          1.4125389756769449
+        ],
+        "allocated_second_order": 0.0695621643180312,
+        "margin": 0.0010019301665796787,
+        "scope": "Necessary real profiles only; not a tensor or a bound."
+      },
+      "status": "optimizer_returned",
+      "message": "Optimization terminated successfully",
+      "optimizer_success": true,
+      "seconds": 0.08293707063421607
+    },
+    {
+      "initial_parameters": [
+        1,
+        2,
+        1,
+        -2
+      ],
+      "queries": 263,
+      "best": {
+        "parameters": [
+          0.0,
+          15.083685236756896,
+          15.345838628072837,
+          -2.3388162788708327
+        ],
+        "weights": [
+          0.995381687643067,
+          0.09599633276766285
+        ],
+        "zero_infinity_normalized_profiles": [
+          [
+            0.0,
+            27.513633548456838,
+            33.34541418120263,
+            60.859047729659466
+          ],
+          [
+            0.0,
+            2.653736925056954,
+            58.20531080460251,
+            60.85904772965946
+          ]
+        ],
+        "physical_ground_slack": 0.0,
+        "physical_excitation_energies": [
+          30.16737047351379,
+          30.691677256145674
+        ],
+        "allocation_interval": [
+          0.0,
+          30.16737047351379
+        ],
+        "allocated_second_order": 27.513633548456838,
+        "margin": 9.567577761151172e-13,
+        "scope": "Necessary real profiles only; not a tensor or a bound."
+      },
+      "last": {
+        "parameters": [
+          0.0,
+          15.083685236756896,
+          15.345838628072837,
+          -2.3388162788708327
+        ],
+        "weights": [
+          0.995381687643067,
+          0.09599633276766285
+        ],
+        "zero_infinity_normalized_profiles": [
+          [
+            0.0,
+            27.513633548456838,
+            33.34541418120263,
+            60.859047729659466
+          ],
+          [
+            0.0,
+            2.653736925056954,
+            58.20531080460251,
+            60.85904772965946
+          ]
+        ],
+        "physical_ground_slack": 0.0,
+        "physical_excitation_energies": [
+          30.16737047351379,
+          30.691677256145674
+        ],
+        "allocation_interval": [
+          0.0,
+          30.16737047351379
+        ],
+        "allocated_second_order": 27.513633548456838,
+        "margin": 9.567577761151172e-13,
+        "scope": "Necessary real profiles only; not a tensor or a bound."
+      },
+      "status": "optimizer_returned",
+      "message": "Optimization terminated successfully",
+      "optimizer_success": true,
+      "seconds": 0.08315791701897979
+    },
+    {
+      "initial_parameters": [
+        1,
+        2,
+        1,
+        0
+      ],
+      "queries": 182,
+      "best": {
+        "parameters": [
+          3.5326348410487155e-15,
+          15.523165833401237,
+          16.0,
+          -6.047822093141598e-07
+        ],
+        "weights": [
+          0.707106995009316,
+          0.7071065673637146
+        ],
+        "zero_infinity_normalized_profiles": [
+          [
+            0.0,
+            15.523170527503238,
+            47.52316113929924,
+            63.04633166680248
+          ],
+          [
+            0.0,
+            15.523161139299242,
+            47.52317052750324,
+            63.04633166680247
+          ]
+        ],
+        "physical_ground_slack": 3.5326348410487155e-15,
+        "physical_excitation_energies": [
+          31.046331666802473,
+          32.0
+        ],
+        "allocation_interval": [
+          0.0,
+          31.04633166680248
+        ],
+        "allocated_second_order": 15.523170527503238,
+        "margin": 4.1340240639954193e-10,
+        "scope": "Necessary real profiles only; not a tensor or a bound."
+      },
+      "last": {
+        "parameters": [
+          3.5326348410487155e-15,
+          15.523165818500075,
+          16.0,
+          -5.898810481203122e-07
+        ],
+        "weights": [
+          0.7071069897409613,
+          0.7071065726320721
+        ],
+        "zero_infinity_normalized_profiles": [
+          [
+            0.0,
+            15.523170396855997,
+            47.52316124014416,
+            63.04633163700015
+          ],
+          [
+            0.0,
+            15.52316124014416,
+            47.523170396855996,
+            63.04633163700016
+          ]
+        ],
+        "physical_ground_slack": 3.5326348410487155e-15,
+        "physical_excitation_energies": [
+          31.04633163700015,
+          32.0
+        ],
+        "allocation_interval": [
+          0.0,
+          31.046331637000158
+        ],
+        "allocated_second_order": 15.523170396855997,
+        "margin": 4.1340241511127093e-10,
+        "scope": "Necessary real profiles only; not a tensor or a bound."
+      },
+      "status": "optimizer_returned",
+      "message": "Optimization terminated successfully",
+      "optimizer_success": true,
+      "seconds": 0.03245117561891675
+    },
+    {
+      "initial_parameters": [
+        1,
+        2,
+        1,
+        2
+      ],
+      "queries": 263,
+      "best": {
+        "parameters": [
+          0.0,
+          15.08389777995268,
+          15.34606679774067,
+          2.3386550218587403
+        ],
+        "weights": [
+          0.0960116713984277,
+          0.9953802082396858
+        ],
+        "zero_infinity_normalized_profiles": [
+          [
+            0.0,
+            2.6541643543094326,
+            58.20576480107727,
+            60.8599291553867
+          ],
+          [
+            0.0,
+            27.513631205595928,
+            33.346297949790774,
+            60.8599291553867
+          ]
+        ],
+        "physical_ground_slack": 0.0,
+        "physical_excitation_energies": [
+          30.16779555990536,
+          30.69213359548134
+        ],
+        "allocation_interval": [
+          0.0,
+          30.16779555990536
+        ],
+        "allocated_second_order": 2.6541643543094326,
+        "margin": 9.56782312150754e-13,
+        "scope": "Necessary real profiles only; not a tensor or a bound."
+      },
+      "last": {
+        "parameters": [
+          0.0,
+          15.08389777995268,
+          15.34606679774067,
+          2.3386550218587403
+        ],
+        "weights": [
+          0.0960116713984277,
+          0.9953802082396858
+        ],
+        "zero_infinity_normalized_profiles": [
+          [
+            0.0,
+            2.6541643543094326,
+            58.20576480107727,
+            60.8599291553867
+          ],
+          [
+            0.0,
+            27.513631205595928,
+            33.346297949790774,
+            60.8599291553867
+          ]
+        ],
+        "physical_ground_slack": 0.0,
+        "physical_excitation_energies": [
+          30.16779555990536,
+          30.69213359548134
+        ],
+        "allocation_interval": [
+          0.0,
+          30.16779555990536
+        ],
+        "allocated_second_order": 2.6541643543094326,
+        "margin": 9.56782312150754e-13,
+        "scope": "Necessary real profiles only; not a tensor or a bound."
+      },
+      "status": "optimizer_returned",
+      "message": "Optimization terminated successfully",
+      "optimizer_success": true,
+      "seconds": 0.09153482597321272
+    },
+    {
+      "initial_parameters": [
+        4,
+        1,
+        1,
+        -2
+      ],
+      "queries": 98,
+      "best": {
+        "parameters": [
+          0.06931454873534691,
+          0.0,
+          0.0,
+          -4.0
+        ],
+        "weights": [
+          0.9998323108749456,
+          0.018312567555274113
+        ],
+        "zero_infinity_normalized_profiles": [
+          [
+            0.0,
+            0.06232923977637248,
+            0.10746447758250759,
+            0.10746447758250759
+          ],
+          [
+            0.0,
+            0.07629985769432135,
+            0.10047916862353315,
+            0.10047916862353315
+          ]
+        ],
+        "physical_ground_slack": 0.06931454873534691,
+        "physical_excitation_energies": [
+          0.0,
+          0.0
+        ],
+        "allocation_interval": [
+          0.046209699156897946,
+          0.09241939831379588
+        ],
+        "allocated_second_order": 0.06232923977637248,
+        "margin": 0.0011777937523806958,
+        "scope": "Necessary real profiles only; not a tensor or a bound."
+      },
+      "last": {
+        "parameters": [
+          0.06931454873534691,
+          0.0,
+          0.0,
+          -3.999999985098839
+        ],
+        "weights": [
+          0.9998323108699491,
+          0.018312567828061125
+        ],
+        "zero_infinity_normalized_profiles": [
+          [
+            0.0,
+            0.06232923045314763,
+            0.10746448224412,
+            0.10746448224412
+          ],
+          [
+            0.0,
+            0.0762998670175462,
+            0.10047916396192072,
+            0.10047916396192072
+          ]
+        ],
+        "physical_ground_slack": 0.06931454873534691,
+        "physical_excitation_energies": [
+          0.0,
+          0.0
+        ],
+        "allocation_interval": [
+          0.046209699156897946,
+          0.09241939831379588
+        ],
+        "allocated_second_order": 0.06232923045314763,
+        "margin": 0.0011777937811934258,
+        "scope": "Necessary real profiles only; not a tensor or a bound."
+      },
+      "status": "optimizer_returned",
+      "message": "Optimization terminated successfully",
+      "optimizer_success": true,
+      "seconds": 0.024178509134799242
+    },
+    {
+      "initial_parameters": [
+        4,
+        1,
+        1,
+        0
+      ],
+      "queries": 90,
+      "best": {
+        "parameters": [
+          0.45176723128015134,
+          0.1906837478437918,
+          0.19068374993089843,
+          3.098914590108434e-08
+        ],
+        "weights": [
+          0.7071067702302299,
+          0.7071067921428651
+        ],
+        "zero_infinity_normalized_profiles": [
+          [
+            0.0,
+            0.6424509710376657,
+            1.3450439725908503,
+            1.3450439725908503
+          ],
+          [
+            0.0,
+            0.6424509872102205,
+            1.3450439645045729,
+            1.3450439645045729
+          ]
+        ],
+        "physical_ground_slack": 0.45176723128015134,
+        "physical_excitation_energies": [
+          0.3813674956875836,
+          0.38136749986179685
+        ],
+        "allocation_interval": [
+          0.22588361355296893,
+          1.0590183446949173
+        ],
+        "allocated_second_order": 0.6424509710376657,
+        "margin": 0.1624413284148465,
+        "scope": "Necessary real profiles only; not a tensor or a bound."
+      },
+      "last": {
+        "parameters": [
+          0.45176728706317654,
+          0.19068374485327344,
+          0.1906837472949897,
+          3.2863026900819575e-08
+        ],
+        "weights": [
+          0.7071067695677129,
+          0.707106792805382
+        ],
+        "zero_infinity_normalized_profiles": [
+          [
+            0.0,
+            0.6424510239176184,
+            1.3450440464640703,
+            1.3450440464640703
+          ],
+          [
+            0.0,
+            0.6424510399152816,
+            1.3450440384652387,
+            1.3450440384652387
+          ]
+        ],
+        "physical_ground_slack": 0.45176728706317654,
+        "physical_excitation_energies": [
+          0.3813674897065469,
+          0.3813674945899794
+        ],
+        "allocation_interval": [
+          0.22588364108987213,
+          1.059018422743028
+        ],
+        "allocated_second_order": 0.6424510239176184,
+        "margin": 0.16244132868618222,
+        "scope": "Necessary real profiles only; not a tensor or a bound."
+      },
+      "status": "optimizer_returned",
+      "message": "Optimization terminated successfully",
+      "optimizer_success": true,
+      "seconds": 0.015921160113066435
+    },
+    {
+      "initial_parameters": [
+        4,
+        1,
+        1,
+        2
+      ],
+      "queries": 98,
+      "best": {
+        "parameters": [
+          0.06931455648750146,
+          9.098776276060254e-18,
+          9.989865746696756e-18,
+          4.0
+        ],
+        "weights": [
+          0.018312567555274113,
+          0.9998323108749455
+        ],
+        "zero_infinity_normalized_profiles": [
+          [
+            0.0,
+            0.0762998616465355,
+            0.10047918215173521,
+            0.10047918215173521
+          ],
+          [
+            0.0,
+            0.062329251328467436,
+            0.10746448731076924,
+            0.10746448731076924
+          ]
+        ],
+        "physical_ground_slack": 0.06931455648750146,
+        "physical_excitation_energies": [
+          1.8197552552120507e-17,
+          1.9979731493393513e-17
+        ],
+        "allocation_interval": [
+          0.04620970432500096,
+          0.09241940865000198
+        ],
+        "allocated_second_order": 0.0762998616465355,
+        "margin": 0.0011777937523804738,
+        "scope": "Necessary real profiles only; not a tensor or a bound."
+      },
+      "last": {
+        "parameters": [
+          0.06931454158634026,
+          9.098776276060254e-18,
+          9.989865746696756e-18,
+          3.999999985098839
+        ],
+        "weights": [
+          0.018312567828061125,
+          0.9998323108699492
+        ],
+        "zero_infinity_normalized_profiles": [
+          [
+            0.0,
+            0.07629985370632604,
+            0.10047915631951757,
+            0.10047915631951757
+          ],
+          [
+            0.0,
+            0.06232922946635451,
+            0.10746446843950333,
+            0.10746446843950333
+          ]
+        ],
+        "physical_ground_slack": 0.06931454158634026,
+        "physical_excitation_energies": [
+          1.8197552552120507e-17,
+          1.9979731493393513e-17
+        ],
+        "allocation_interval": [
+          0.046209694390893494,
+          0.09241938878178706
+        ],
+        "allocated_second_order": 0.07629985370632604,
+        "margin": 0.0011777937811936479,
+        "scope": "Necessary real profiles only; not a tensor or a bound."
+      },
+      "status": "optimizer_returned",
+      "message": "Optimization terminated successfully",
+      "optimizer_success": true,
+      "seconds": 0.02517708297818899
+    }
+  ],
+  "source_sha256": "338dadb0773c4b7704f6209acc70a2b2d9c9e59e97bf6789a7f460879678342e",
+  "scope": "Necessary profile relaxation, no realized tensor, global optimum or factoring improvement.",
+  "best": {
+    "parameters": [
+      0.0,
+      15.083685236756896,
+      15.345838628072837,
+      -2.3388162788708327
+    ],
+    "weights": [
+      0.995381687643067,
+      0.09599633276766285
+    ],
+    "zero_infinity_normalized_profiles": [
+      [
+        0.0,
+        27.513633548456838,
+        33.34541418120263,
+        60.859047729659466
+      ],
+      [
+        0.0,
+        2.653736925056954,
+        58.20531080460251,
+        60.85904772965946
+      ]
+    ],
+    "physical_ground_slack": 0.0,
+    "physical_excitation_energies": [
+      30.16737047351379,
+      30.691677256145674
+    ],
+    "allocation_interval": [
+      0.0,
+      30.16737047351379
+    ],
+    "allocated_second_order": 27.513633548456838,
+    "margin": 9.567577761151172e-13,
+    "scope": "Necessary real profiles only; not a tensor or a bound."
+  },
+  "seconds": 1.7848768350668252
+}

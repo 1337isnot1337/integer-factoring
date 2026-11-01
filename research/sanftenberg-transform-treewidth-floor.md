@@ -1,0 +1,84 @@
+# A treewidth floor for the public semiprime macro network
+
+## Scope and source
+
+This is an ordinary graph argument about the **unmodified** bit-variable
+primal graph of the public `RiemannGaussian` macro network, at
+[`dbsanfte/RiemannGaussian` commit `f5fd3ddb407972f9ca65298fbe9be3225fe06635`](https://github.com/dbsanfte/RiemannGaussian/tree/f5fd3ddb407972f9ca65298fbe9be3225fe06635).
+The repository's current `main` still points to this source revision. The
+claim concerns standard dense-table variable elimination (or a tree
+decomposition of that primal graph). It is not a lower bound on factoring,
+arithmetic circuits, structured tensor contraction, or representations that
+compress the transform relations.
+
+## A complete-bipartite line-graph minor
+
+Write `ell` for the input bit length, `T = transformLength(ell)`, and let
+`r` and `t` be the source's balanced transform axes, so `r*t=T` and
+`r <= t <= 2r`. A word has `w=T+1` bit positions in this macro graph.
+These are the literal source parameters in
+[`SemiprimeMacroGraph.lean`](https://github.com/dbsanfte/RiemannGaussian/blob/f5fd3ddb407972f9ca65298fbe9be3225fe06635/RiemannGaussian/SemiprimeMacroGraph.lean)
+and
+[`SemiprimeMacroParameters.lean`](https://github.com/dbsanfte/RiemannGaussian/blob/f5fd3ddb407972f9ca65298fbe9be3225fe06635/RiemannGaussian/SemiprimeMacroParameters.lean).
+
+Use one of the two forward transforms. In its bit-variable primal graph,
+variables appearing together in one local table scope are adjacent. For each
+cell `(j,k)` and bit position `s < w`, the first-transform output bit and
+the corresponding scaled-word output bit are both in the scale factor's
+scope, hence adjacent. Contract this edge. The contracted vertex is now in
+both:
+
+* the first-transform table at row `j`, whose scope contains all `t` input
+  and all `t` output words; and
+* the second-transform table at column `k`, whose scope contains all `r`
+  input and all `r` output words.
+
+The resulting selected vertices are indexed by `(j,(k,s))`. For fixed `j`
+they form a clique, and for fixed `(k,s)` they form a clique. Therefore the
+contracted primal graph contains the line graph `L(K_{r,t w})` as a subgraph:
+the vertices of `K_{r,t w}` are row indices `j` and pairs `(k,s)`, and each
+selected vertex represents their incident edge. Additional primal edges do
+not affect this minor.
+
+Harvey and Wood's Theorem 2 for the line graph of a complete multipartite
+graph, specialized to `K_{a,b}`, gives
+
+```math
+\operatorname{tw}(L(K_{a,b})) \geq \frac{ab}{2}-a-b+\frac12.
+```
+
+With `a=r`, `b=t w`, we have `ab=rtw=T(T+1)` and `r+t w=O(T^{3/2})`.
+Thus the source primal graph has treewidth at least
+
+```math
+\frac12T^2-O(T^{3/2})=\Omega(T^2)=\Omega(ell),
+```
+
+because the source proves `16*ell <= T^2 < 64*ell`. The external theorem is
+in Harvey and Wood,
+[*Treewidth of the Line Graph of Complete and Complete Multipartite Graphs*](https://arxiv.org/html/1210.8205v2),
+Theorem 2.
+
+## Consequence and next representation to test
+
+Every elimination order therefore has width `Omega(ell)` and dense
+intermediate tables of size `2^Omega(ell)`. Merely choosing a better
+elimination order for the public network's ordinary dense local tables cannot
+give a subexponential evaluation. This is a method-specific obstruction,
+consistent with the separate acquired-boundary width estimate in
+[`sanftenberg-all-input-prefix-adapter.md`](sanftenberg-all-input-prefix-adapter.md).
+It does **not** rule out exploiting the Fourier/arithmetic structure inside
+those tables, factoring each dense transform relation into a circuit, or
+using a compressed tensor representation.
+
+The structural assumption to change is therefore the dense-table interface.
+A useful next test is to factor the two transform relations into their
+butterfly stages and determine whether stagewise elimination can keep an
+exact boundary of `o(ell)` bits (including carry precision and all stage
+costs). If it cannot, this semiprime route still offers reusable contraction
+and output-adapter tools, but no evaluator that changes the complete bound.
+
+No upstream code was copied and no Lean rebuild was run. This ordinary
+argument does not establish a stronger factoring exponent; the repository's
+score remains `1/2`. Substantial OpenAI assistant support was used in this
+source audit and graph analysis.

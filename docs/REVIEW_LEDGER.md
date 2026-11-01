@@ -581,3 +581,16 @@ history. A concurrent contributor merged PR62 at `42dac3c`; GitHub confirms
 it merged, with final source head `0618f57` preserved. This replay predates
 the cold-gap and universal-axis additions, whose focused controls are
 separate. No new Lean or independent mathematical review is claimed.
+
+## Universal-axis exact-head verification at `a3df51d`
+
+A clean detached checkout of `a3df51d8fa9e5975da22dbe51f4e64ae75fbdaa3`,
+tree `5cf1f02ac5cbcd660e38828d201f9af0dcb20381`, passed the default suite
+in 724.72 seconds and both cold-gap/uniform-axis focused targets in
+1.17 seconds, with clean post-run status. The
+[receipt](../evidence/verify-uniform-axis-a3df51d.json) and
+[complete compressed log](../evidence/verify-uniform-axis-a3df51d.stdout.txt.xz)
+pin that claim. Later approximate rational strictification and PR63 have
+separate focused checks; this is not a full pass for their later integration.
+No new Lean, independent mathematical acceptance, or stronger factoring
+score is implied.

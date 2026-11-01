@@ -3044,3 +3044,7 @@ verify-cold-gap:
 .PHONY: verify-uniform-axis-window
 verify-uniform-axis-window:
 	python3 tools/check_uniform_axis_window.py
+
+.PHONY: verify-approximate-strictification
+verify-approximate-strictification:
+	python3 tools/check_approximate_strictification.py
