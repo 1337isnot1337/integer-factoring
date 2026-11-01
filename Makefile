@@ -368,6 +368,10 @@ verify-braid-leading-automaton:
 verify-catalan-cup-crossing:
 	python3 tools/check_catalan_cup_crossing.py
 
+.PHONY: verify-catalan-cup-jets
+verify-catalan-cup-jets:
+	python3 tools/check_catalan_cup_jets.py
+
 .PHONY: verify-downset-crossings verify-regular-code-crossings
 verify-downset-crossings:
 	python3 tools/check_downset_crossing_normal_form.py
