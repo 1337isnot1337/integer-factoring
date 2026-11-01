@@ -2729,3 +2729,8 @@ check-cached-lll:
 .PHONY: check-singular-affine-clifford
 check-singular-affine-clifford:
 	python3 tools/check_tensor_singular_affine_clifford.py
+
+.PHONY: verify-orthogonal-joint-global
+verify-orthogonal-joint-global:
+	python3 tools/check_orthogonal_joint_global_rigidity.py
+	python3 tools/check_orthogonal_joint_finite_profiles.py
