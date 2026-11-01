@@ -928,3 +928,16 @@ the system and task interpreters. The full `2a1daeb` replay predates these
 follow-ups. A focused graph replay uses an isolated interpreter with PuLP
 2.9.0, HiGHS 1.15.1 and NetworkX 3.7; its result is recorded separately.
 No arbitrary-algorithm lower bound, Lean or stronger factoring score follows.
+
+## Exact graph follow-up replay at `b67384b`
+
+The clean frozen source `b67384bbe974838868d75cc862522ad5d525ab2a`
+passed the full routing graph checker, uniform-tail exact controls, window
+data hashes, source syntax and documentation checks in 49.65 seconds. The
+[receipt](../evidence/verify-graph-followups-b67384b.json) and
+[complete compressed log](../evidence/verify-graph-followups-b67384b.stdout.txt.xz)
+retain the exact tree, commands and clean pre/post status. HiGHS reported
+optimal solutions and the selected sets were checked for acyclicity; this
+is not an independent exact MILP upper-bound certificate. The full PARI
+window scan remains unrun. The separate full `2a1daeb` gate is still running
+and predates these graph sources.
