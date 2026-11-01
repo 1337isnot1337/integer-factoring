@@ -168,3 +168,39 @@ profiles; these are not a second reconstruction of the full k=3 matrices.
 Credit: classical determinant derivative/minor spaces; existing coherent
 inverse-system, dual-space and F8 compound constructors. This application,
 maps and diagnostic were developed with substantial OpenAI assistant support.
+
+## 6. Completed prescribed panel
+
+Clean frozen source `4fcd81c666c56a998e1437d3ed57e1940ebd6b8a`, tree
+`b21bc8ba7d4cac31c3a56ad3de1bdcf5ff91e840`, completed all six cases in
+3.08 seconds. Every profile resolved at cutoff127, with zero tails:
+2,616 orders in total. The [complete receipt](../evidence/determinant-code-panel.json)
+and [stdout](../evidence/determinant-code-panel.stdout.txt.xz) retain the
+maps, source hashes, all profiles, fit parameters and independent controls.
+
+| k | Retraction | Sampled natural rho | Scale | Largest orders, zero/infinity |
+| --- | --- | --- | --- | --- |
+| 2 | diagonal | 0.7396376854 | 0.7448092 | 32 / 28 |
+| 2 | antidiagonal | 0.7398150736 | 0.7491456 | 32 / 28 |
+| 2 | Cauchy | 0.7398254876 | 0.7495885 | 32 / 28 |
+| 3 | diagonal | 0.7395361375 | 0.7433047 | 98 / 60 |
+| 3 | antidiagonal | 0.7396161355 | 0.7462613 | 84 / 63 |
+| 3 | Cauchy | 0.7396313296 | 0.7469230 | 68 / 56 |
+
+These are numerical scale fits, all above the critical target. They are
+not certified global minima or rigorous all-scale floors. The independent
+controls compare 3,006 **complete polynomial entries**, including179 with
+nonbinary coefficients, using3,816 distinct original one-particle minors.
+All supported k=2 charge-block entries and profiles have independent
+binary-restriction reconstruction. For k=3 only the stated selected-entry
+submatrices have that independent reconstruction; the full native profiles
+are exact but have not been recomputed by a second full-matrix algorithm.
+
+Run `make verify-determinant-inverse-profiles` to reconstruct both native
+profiles for every case, repeat all independent controls and check the
+recorded numerical pressure points. It does not repeat or certify a
+global optimizer. No strict witness triggers exact rational pressure
+certification. The registered finite panel is closed without extending
+its k, field or retraction choices. A new uniform rank mechanism would
+be needed to justify continuing the growing family. Complete score **1/2**
+is unchanged.

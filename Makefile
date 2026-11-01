@@ -3202,3 +3202,7 @@ verify-cube-global-functional-profile:
 .PHONY: verify-determinant-inverse-codes
 verify-determinant-inverse-codes:
 	python3 tools/check_determinant_inverse_codes.py
+
+.PHONY: verify-determinant-inverse-profiles
+verify-determinant-inverse-profiles:
+	python3 tools/check_determinant_inverse_profiles.py

@@ -1,5 +1,20 @@
 # Contribution review and disposition ledger
 
+## Completed determinant-code profile panel at 4fcd81c
+
+Clean frozen source4fcd81c666c56a998e1437d3ed57e1940ebd6b8a, tree
+b21bc8ba7d4cac31c3a56ad3de1bdcf5ff91e840, completed the six prescribed
+k=2,3 retractions in3.08 seconds. All2616 native orders resolve at cutoff127.
+Independent controls retain3006 complete polynomial entries,179 nonbinary,
+from3816 distinct original-matrix minors. All supported k=2 blocks have
+independent full-profile reconstruction; k=3 has selected submatrix controls.
+The [panel note](../research/determinant-inverse-codes.md#6-completed-prescribed-panel)
+and complete receipt retain the exact scope. Best sampled rho is0.73953614,
+above1/sqrt2; no global scale optimum or all-scale lower bound is asserted.
+The registered finite panel is stopped. The optional focused replay checks
+all native profiles, independent controls and recorded pressure arithmetic;
+no stronger score, new Lean or independent mathematical acceptance follows.
+
 ## Determinant derivative physical-map acquisition
 
 The [determinant code construction](../research/determinant-inverse-codes.md)
