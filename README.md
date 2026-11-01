@@ -2686,12 +2686,13 @@ factoring-specific algorithms are outside the conclusion. The contribution
 is integrated with ordinary proofs and finite controls, without independent
 mathematical acceptance.
 
-The [latest full verification receipt](evidence/higher-words-full-verification.json)
-pins a successful clean default replay and fifteen named joint/cofactor
-targets to exact `269efb8`: 356 Python command blocks, 66 unit tests,
-five crossing tests and 988 Markdown files. Later main integration and
-integer-degree point packages have separate focused passes, outside that
-full-source pin. These checks supply no realizing tensor or independent review.
+The [clean default integration receipt](evidence/verify-pr65-67-default-3709a9e.json)
+pins a successful `make verify` replay and elliptic, graded-box and higher-axis
+Frobenius focused checks to exact `3709a9e`, tree `a9ece4ec6b6d0147e817eaa88511af1abf383dc8`.
+The separately archived routing checks also pass there. Later global-alignment,
+root-four and arithmetic-scope changes have separate integration gates;
+this receipt is not a full replay of their later source. These checks supply
+no realizing tensor or independent mathematical review.
 
 ### Joint contraction instead of repeated local elimination
 
@@ -2710,3 +2711,11 @@ polynomial identities cover every algebraic spectral place and every scale.
 This ends that bare endpoint diagnostic; charged types and other tensor
 representations remain open. Run `make verify-fused-q12-endpoints`. The
 complete factoring exponent remains **1/2**.
+
+The [genus and p-adic window audit](research/deterministic-smooth-relations-scope.md)
+identifies the least-nonresidue input needed by the stated deterministic
+smooth-relation coverage route. The [leading-power window study](research/leading-power-window-barrier.md)
+retains an explicit linear lower-bound family and finite orbit data. Its
+Fourier obstruction concerns completion with a uniform absolute character-sum
+bound; it does not exclude arguments using phases or other character data.
+Neither supplies the missing uniform window theorem or a stronger score.

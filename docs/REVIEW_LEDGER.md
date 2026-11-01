@@ -795,3 +795,20 @@ includes the routing failure-exit fixes but predates the final PR65
 documentation/receipt merge and global-axis-alignment extension; their
 focused checks remain separate. No Lean or stronger factoring bound
 is claimed.
+
+## Arithmetic scope integration: PR68 and PR69
+
+PR68 source `6d47d99749a952b9480f70a48d8f6d095d21ffd6` is retained
+in merge `6a63f3d`; PR69 source `7cb4576c2082019c8249da0e8abb637c27af0e08`
+is retained in merge `1d03900`. Both additive index conflicts preserve all
+entries. Concurrent main `dd0388c` is preserved by an intervening merge.
+The ordinary arguments and script entry points were inspected for scope;
+this is not independent proof acceptance. PR69's summary now limits its
+Fourier obstruction to completion with a uniform absolute smooth-set
+character-sum bound. Its source hashes remain intact, with hashes of all
+committed data artifacts appended to the manifest. Full numerical scans
+are not rerun as an integration requirement. Exact focused replay and a
+new frozen default suite are the next integrity gate; the previous full
+`3709a9e` receipt predates these sources. No Lean or score gain is claimed.
+PR69 retains Grok Bot / Alkindus Arifuddin credit; PR68 retains its author
+and predecessor disclosures.

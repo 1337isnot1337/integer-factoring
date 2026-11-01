@@ -2,7 +2,7 @@
 
 - **Base commit:** `4c3d135aab2f454d09887875d86674e6ed00569b` of https://github.com/1337isnot1337/integer-factoring (pulled on 2026-11-01).
 - **Scope:** the open window theorem in `research/smooth-leading-power-selection.md` §3, for the selector `tools/leading_power_smooth_relations.py`.
-- **Status:** working note on the box only. Nothing was posted.
+- **Status:** integrated research checkpoint from PR69; author proof labels below do not denote independent mathematical review.
 - **Labels:**
   - **PROVEN:** proved here, with the proof given.
   - **VERIFIED:** checked by an exact script in this directory.
@@ -127,7 +127,7 @@ In total that is 70,465 (N, p) orbits and about 4.0·10⁸ composition steps. No
 - **Unconditional bounds:** the upper bound is h(Δ) and the lower bound is about b/log₂p (both PROVEN).
 - **Data:** the orbits behave like random walks with density ρ(u) (VERIFIED on 70k orbits, 60–160 bits).
 - **Status of a proof: walled.** No unconditional or strip/GRH-conditional route is visible.
-  - Every Fourier or character-sum method stops at W ≳ (h/δ)^{1/2} (B1, PROVEN).
+  - Completion using only a uniform absolute bound for the nontrivial smooth-set character sums stops at W ≳ (h/δ)^{1/2} (B1, author proof). Phase information, character-dependent bounds and other Fourier arguments are outside this statement.
   - The covering reformulation sits past the open Dirichlet barrier "kϑ > 2" (B3).
   - Not even GRH is known to give deterministic subexponential factoring.
 - **Status of the conjecture: alive.** As a heuristic it is consistent with all data.
