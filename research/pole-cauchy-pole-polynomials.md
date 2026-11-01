@@ -92,7 +92,7 @@ Set
 Reordering finite sums gives the exact identity
 
 \[
- \sum_{i,j}W_iH_j[X^iY^j](E^{-1}UV)
+ \sum_{i,j}W_iH_j[X^iY^j]\bigl(E^{-1}UV\bigr)
  =\sum_{u,v}e_{uv}\widehat W_u\widehat H_v.
 \]
 
