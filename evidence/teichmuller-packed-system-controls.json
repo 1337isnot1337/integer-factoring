@@ -1,0 +1,1750 @@
+{
+  "scope": "Acquired coefficient-extension packing for residue systems; no extra summation variables or division precision. Supplied ring degree and carry budget charged; no integer-word compiler.",
+  "counts": {
+    "system_queries": 92,
+    "direct_assignments": 501,
+    "carry_queries": 274,
+    "tag_combinations": 248,
+    "exact_integer_queries": 34
+  },
+  "rejected": [
+    "coefficient-subfield",
+    "extension-capacity",
+    "domain-width",
+    "negative-exponent",
+    "exponent-dimension"
+  ],
+  "controls": [
+    {
+      "name": "empty",
+      "precision": 1,
+      "degree": 1,
+      "width": 1,
+      "variables": 2,
+      "equations": 0,
+      "delta": 0,
+      "mask": [
+        false,
+        false
+      ],
+      "exact_count": 4,
+      "residue": 0,
+      "carry_bound": 0,
+      "acquired_queries": 1,
+      "max_row_degree": 0,
+      "max_carry_bound": 0
+    },
+    {
+      "name": "empty",
+      "precision": 1,
+      "degree": 1,
+      "width": 1,
+      "variables": 2,
+      "equations": 0,
+      "delta": 0,
+      "mask": [
+        false,
+        true
+      ],
+      "exact_count": 2,
+      "residue": 0,
+      "carry_bound": 0,
+      "acquired_queries": 1,
+      "max_row_degree": 0,
+      "max_carry_bound": 0
+    },
+    {
+      "name": "empty",
+      "precision": 1,
+      "degree": 1,
+      "width": 1,
+      "variables": 2,
+      "equations": 0,
+      "delta": 0,
+      "mask": [
+        true,
+        false
+      ],
+      "exact_count": 2,
+      "residue": 0,
+      "carry_bound": 0,
+      "acquired_queries": 1,
+      "max_row_degree": 0,
+      "max_carry_bound": 0
+    },
+    {
+      "name": "empty",
+      "precision": 1,
+      "degree": 1,
+      "width": 1,
+      "variables": 2,
+      "equations": 0,
+      "delta": 0,
+      "mask": [
+        true,
+        true
+      ],
+      "exact_count": 1,
+      "residue": 1,
+      "carry_bound": 0,
+      "acquired_queries": 1,
+      "max_row_degree": 0,
+      "max_carry_bound": 0
+    },
+    {
+      "name": "binary-intersection",
+      "precision": 1,
+      "degree": 2,
+      "width": 1,
+      "variables": 2,
+      "equations": 2,
+      "delta": 2,
+      "mask": [
+        false,
+        false
+      ],
+      "exact_count": 1,
+      "residue": 1,
+      "carry_bound": 4,
+      "acquired_queries": 2,
+      "max_row_degree": 4,
+      "max_carry_bound": 2
+    },
+    {
+      "name": "binary-intersection",
+      "precision": 1,
+      "degree": 2,
+      "width": 1,
+      "variables": 2,
+      "equations": 2,
+      "delta": 2,
+      "mask": [
+        false,
+        true
+      ],
+      "exact_count": 0,
+      "residue": 0,
+      "carry_bound": 4,
+      "acquired_queries": 2,
+      "max_row_degree": 4,
+      "max_carry_bound": 2
+    },
+    {
+      "name": "binary-intersection",
+      "precision": 1,
+      "degree": 2,
+      "width": 1,
+      "variables": 2,
+      "equations": 2,
+      "delta": 2,
+      "mask": [
+        true,
+        false
+      ],
+      "exact_count": 0,
+      "residue": 0,
+      "carry_bound": 4,
+      "acquired_queries": 2,
+      "max_row_degree": 4,
+      "max_carry_bound": 2
+    },
+    {
+      "name": "binary-intersection",
+      "precision": 1,
+      "degree": 2,
+      "width": 1,
+      "variables": 2,
+      "equations": 2,
+      "delta": 2,
+      "mask": [
+        true,
+        true
+      ],
+      "exact_count": 0,
+      "residue": 0,
+      "carry_bound": 4,
+      "acquired_queries": 2,
+      "max_row_degree": 4,
+      "max_carry_bound": 2
+    },
+    {
+      "name": "redundant-binary",
+      "precision": 1,
+      "degree": 3,
+      "width": 1,
+      "variables": 2,
+      "equations": 3,
+      "delta": 2,
+      "mask": [
+        false,
+        false
+      ],
+      "exact_count": 2,
+      "residue": 0,
+      "carry_bound": 6,
+      "acquired_queries": 2,
+      "max_row_degree": 6,
+      "max_carry_bound": 6
+    },
+    {
+      "name": "redundant-binary",
+      "precision": 1,
+      "degree": 3,
+      "width": 1,
+      "variables": 2,
+      "equations": 3,
+      "delta": 2,
+      "mask": [
+        false,
+        true
+      ],
+      "exact_count": 1,
+      "residue": 1,
+      "carry_bound": 6,
+      "acquired_queries": 2,
+      "max_row_degree": 6,
+      "max_carry_bound": 6
+    },
+    {
+      "name": "redundant-binary",
+      "precision": 1,
+      "degree": 3,
+      "width": 1,
+      "variables": 2,
+      "equations": 3,
+      "delta": 2,
+      "mask": [
+        true,
+        false
+      ],
+      "exact_count": 1,
+      "residue": 1,
+      "carry_bound": 6,
+      "acquired_queries": 2,
+      "max_row_degree": 6,
+      "max_carry_bound": 6
+    },
+    {
+      "name": "redundant-binary",
+      "precision": 1,
+      "degree": 3,
+      "width": 1,
+      "variables": 2,
+      "equations": 3,
+      "delta": 2,
+      "mask": [
+        true,
+        true
+      ],
+      "exact_count": 1,
+      "residue": 1,
+      "carry_bound": 6,
+      "acquired_queries": 2,
+      "max_row_degree": 6,
+      "max_carry_bound": 6
+    },
+    {
+      "name": "subfield-two-roots",
+      "precision": 1,
+      "degree": 4,
+      "width": 2,
+      "variables": 2,
+      "equations": 2,
+      "delta": 2,
+      "mask": [
+        false,
+        false
+      ],
+      "exact_count": 2,
+      "residue": 0,
+      "carry_bound": 4,
+      "acquired_queries": 2,
+      "max_row_degree": 4,
+      "max_carry_bound": 2
+    },
+    {
+      "name": "subfield-two-roots",
+      "precision": 1,
+      "degree": 4,
+      "width": 2,
+      "variables": 2,
+      "equations": 2,
+      "delta": 2,
+      "mask": [
+        false,
+        true
+      ],
+      "exact_count": 1,
+      "residue": 1,
+      "carry_bound": 4,
+      "acquired_queries": 2,
+      "max_row_degree": 4,
+      "max_carry_bound": 2
+    },
+    {
+      "name": "subfield-two-roots",
+      "precision": 1,
+      "degree": 4,
+      "width": 2,
+      "variables": 2,
+      "equations": 2,
+      "delta": 2,
+      "mask": [
+        true,
+        false
+      ],
+      "exact_count": 1,
+      "residue": 1,
+      "carry_bound": 4,
+      "acquired_queries": 2,
+      "max_row_degree": 4,
+      "max_carry_bound": 2
+    },
+    {
+      "name": "subfield-two-roots",
+      "precision": 1,
+      "degree": 4,
+      "width": 2,
+      "variables": 2,
+      "equations": 2,
+      "delta": 2,
+      "mask": [
+        true,
+        true
+      ],
+      "exact_count": 1,
+      "residue": 1,
+      "carry_bound": 4,
+      "acquired_queries": 2,
+      "max_row_degree": 4,
+      "max_carry_bound": 2
+    },
+    {
+      "name": "four-tags",
+      "precision": 1,
+      "degree": 4,
+      "width": 1,
+      "variables": 1,
+      "equations": 4,
+      "delta": 3,
+      "mask": [
+        false
+      ],
+      "exact_count": 1,
+      "residue": 1,
+      "carry_bound": 12,
+      "acquired_queries": 2,
+      "max_row_degree": 12,
+      "max_carry_bound": 12
+    },
+    {
+      "name": "four-tags",
+      "precision": 1,
+      "degree": 4,
+      "width": 1,
+      "variables": 1,
+      "equations": 4,
+      "delta": 3,
+      "mask": [
+        true
+      ],
+      "exact_count": 0,
+      "residue": 0,
+      "carry_bound": 12,
+      "acquired_queries": 2,
+      "max_row_degree": 12,
+      "max_carry_bound": 12
+    },
+    {
+      "name": "full-field-quadratic",
+      "precision": 1,
+      "degree": 2,
+      "width": 2,
+      "variables": 1,
+      "equations": 1,
+      "delta": 2,
+      "mask": [
+        false
+      ],
+      "exact_count": 2,
+      "residue": 0,
+      "carry_bound": 2,
+      "acquired_queries": 2,
+      "max_row_degree": 2,
+      "max_carry_bound": 2
+    },
+    {
+      "name": "full-field-quadratic",
+      "precision": 1,
+      "degree": 2,
+      "width": 2,
+      "variables": 1,
+      "equations": 1,
+      "delta": 2,
+      "mask": [
+        true
+      ],
+      "exact_count": 2,
+      "residue": 0,
+      "carry_bound": 2,
+      "acquired_queries": 2,
+      "max_row_degree": 2,
+      "max_carry_bound": 2
+    },
+    {
+      "name": "inconsistent",
+      "precision": 1,
+      "degree": 4,
+      "width": 2,
+      "variables": 1,
+      "equations": 2,
+      "delta": 1,
+      "mask": [
+        false
+      ],
+      "exact_count": 0,
+      "residue": 0,
+      "carry_bound": 2,
+      "acquired_queries": 2,
+      "max_row_degree": 2,
+      "max_carry_bound": 2
+    },
+    {
+      "name": "inconsistent",
+      "precision": 1,
+      "degree": 4,
+      "width": 2,
+      "variables": 1,
+      "equations": 2,
+      "delta": 1,
+      "mask": [
+        true
+      ],
+      "exact_count": 0,
+      "residue": 0,
+      "carry_bound": 2,
+      "acquired_queries": 2,
+      "max_row_degree": 2,
+      "max_carry_bound": 2
+    },
+    {
+      "name": "nonzero-even-constant",
+      "precision": 1,
+      "degree": 4,
+      "width": 2,
+      "variables": 2,
+      "equations": 1,
+      "delta": 0,
+      "mask": [
+        false,
+        false
+      ],
+      "exact_count": 16,
+      "residue": 0,
+      "carry_bound": 0,
+      "acquired_queries": 2,
+      "max_row_degree": 0,
+      "max_carry_bound": 0
+    },
+    {
+      "name": "nonzero-even-constant",
+      "precision": 1,
+      "degree": 4,
+      "width": 2,
+      "variables": 2,
+      "equations": 1,
+      "delta": 0,
+      "mask": [
+        false,
+        true
+      ],
+      "exact_count": 12,
+      "residue": 0,
+      "carry_bound": 0,
+      "acquired_queries": 2,
+      "max_row_degree": 0,
+      "max_carry_bound": 0
+    },
+    {
+      "name": "nonzero-even-constant",
+      "precision": 1,
+      "degree": 4,
+      "width": 2,
+      "variables": 2,
+      "equations": 1,
+      "delta": 0,
+      "mask": [
+        true,
+        false
+      ],
+      "exact_count": 12,
+      "residue": 0,
+      "carry_bound": 0,
+      "acquired_queries": 2,
+      "max_row_degree": 0,
+      "max_carry_bound": 0
+    },
+    {
+      "name": "nonzero-even-constant",
+      "precision": 1,
+      "degree": 4,
+      "width": 2,
+      "variables": 2,
+      "equations": 1,
+      "delta": 0,
+      "mask": [
+        true,
+        true
+      ],
+      "exact_count": 9,
+      "residue": 1,
+      "carry_bound": 0,
+      "acquired_queries": 2,
+      "max_row_degree": 0,
+      "max_carry_bound": 0
+    },
+    {
+      "name": "empty",
+      "precision": 2,
+      "degree": 1,
+      "width": 1,
+      "variables": 2,
+      "equations": 0,
+      "delta": 0,
+      "mask": [
+        false,
+        false
+      ],
+      "exact_count": 4,
+      "residue": 0,
+      "carry_bound": 0,
+      "acquired_queries": 1,
+      "max_row_degree": 0,
+      "max_carry_bound": 0
+    },
+    {
+      "name": "empty",
+      "precision": 2,
+      "degree": 1,
+      "width": 1,
+      "variables": 2,
+      "equations": 0,
+      "delta": 0,
+      "mask": [
+        false,
+        true
+      ],
+      "exact_count": 2,
+      "residue": 2,
+      "carry_bound": 0,
+      "acquired_queries": 1,
+      "max_row_degree": 0,
+      "max_carry_bound": 0
+    },
+    {
+      "name": "empty",
+      "precision": 2,
+      "degree": 1,
+      "width": 1,
+      "variables": 2,
+      "equations": 0,
+      "delta": 0,
+      "mask": [
+        true,
+        false
+      ],
+      "exact_count": 2,
+      "residue": 2,
+      "carry_bound": 0,
+      "acquired_queries": 1,
+      "max_row_degree": 0,
+      "max_carry_bound": 0
+    },
+    {
+      "name": "empty",
+      "precision": 2,
+      "degree": 1,
+      "width": 1,
+      "variables": 2,
+      "equations": 0,
+      "delta": 0,
+      "mask": [
+        true,
+        true
+      ],
+      "exact_count": 1,
+      "residue": 1,
+      "carry_bound": 0,
+      "acquired_queries": 1,
+      "max_row_degree": 0,
+      "max_carry_bound": 0
+    },
+    {
+      "name": "binary-intersection",
+      "precision": 2,
+      "degree": 2,
+      "width": 1,
+      "variables": 2,
+      "equations": 2,
+      "delta": 2,
+      "mask": [
+        false,
+        false
+      ],
+      "exact_count": 1,
+      "residue": 1,
+      "carry_bound": 12,
+      "acquired_queries": 3,
+      "max_row_degree": 12,
+      "max_carry_bound": 6
+    },
+    {
+      "name": "binary-intersection",
+      "precision": 2,
+      "degree": 2,
+      "width": 1,
+      "variables": 2,
+      "equations": 2,
+      "delta": 2,
+      "mask": [
+        false,
+        true
+      ],
+      "exact_count": 0,
+      "residue": 0,
+      "carry_bound": 12,
+      "acquired_queries": 3,
+      "max_row_degree": 12,
+      "max_carry_bound": 6
+    },
+    {
+      "name": "binary-intersection",
+      "precision": 2,
+      "degree": 2,
+      "width": 1,
+      "variables": 2,
+      "equations": 2,
+      "delta": 2,
+      "mask": [
+        true,
+        false
+      ],
+      "exact_count": 0,
+      "residue": 0,
+      "carry_bound": 12,
+      "acquired_queries": 3,
+      "max_row_degree": 12,
+      "max_carry_bound": 6
+    },
+    {
+      "name": "binary-intersection",
+      "precision": 2,
+      "degree": 2,
+      "width": 1,
+      "variables": 2,
+      "equations": 2,
+      "delta": 2,
+      "mask": [
+        true,
+        true
+      ],
+      "exact_count": 0,
+      "residue": 0,
+      "carry_bound": 12,
+      "acquired_queries": 3,
+      "max_row_degree": 12,
+      "max_carry_bound": 6
+    },
+    {
+      "name": "redundant-binary",
+      "precision": 2,
+      "degree": 3,
+      "width": 1,
+      "variables": 2,
+      "equations": 3,
+      "delta": 2,
+      "mask": [
+        false,
+        false
+      ],
+      "exact_count": 2,
+      "residue": 2,
+      "carry_bound": 18,
+      "acquired_queries": 3,
+      "max_row_degree": 18,
+      "max_carry_bound": 18
+    },
+    {
+      "name": "redundant-binary",
+      "precision": 2,
+      "degree": 3,
+      "width": 1,
+      "variables": 2,
+      "equations": 3,
+      "delta": 2,
+      "mask": [
+        false,
+        true
+      ],
+      "exact_count": 1,
+      "residue": 1,
+      "carry_bound": 18,
+      "acquired_queries": 3,
+      "max_row_degree": 18,
+      "max_carry_bound": 18
+    },
+    {
+      "name": "redundant-binary",
+      "precision": 2,
+      "degree": 3,
+      "width": 1,
+      "variables": 2,
+      "equations": 3,
+      "delta": 2,
+      "mask": [
+        true,
+        false
+      ],
+      "exact_count": 1,
+      "residue": 1,
+      "carry_bound": 18,
+      "acquired_queries": 3,
+      "max_row_degree": 18,
+      "max_carry_bound": 18
+    },
+    {
+      "name": "redundant-binary",
+      "precision": 2,
+      "degree": 3,
+      "width": 1,
+      "variables": 2,
+      "equations": 3,
+      "delta": 2,
+      "mask": [
+        true,
+        true
+      ],
+      "exact_count": 1,
+      "residue": 1,
+      "carry_bound": 18,
+      "acquired_queries": 3,
+      "max_row_degree": 18,
+      "max_carry_bound": 18
+    },
+    {
+      "name": "subfield-two-roots",
+      "precision": 2,
+      "degree": 4,
+      "width": 2,
+      "variables": 2,
+      "equations": 2,
+      "delta": 2,
+      "mask": [
+        false,
+        false
+      ],
+      "exact_count": 2,
+      "residue": 2,
+      "carry_bound": 12,
+      "acquired_queries": 3,
+      "max_row_degree": 12,
+      "max_carry_bound": 6
+    },
+    {
+      "name": "subfield-two-roots",
+      "precision": 2,
+      "degree": 4,
+      "width": 2,
+      "variables": 2,
+      "equations": 2,
+      "delta": 2,
+      "mask": [
+        false,
+        true
+      ],
+      "exact_count": 1,
+      "residue": 1,
+      "carry_bound": 12,
+      "acquired_queries": 3,
+      "max_row_degree": 12,
+      "max_carry_bound": 6
+    },
+    {
+      "name": "subfield-two-roots",
+      "precision": 2,
+      "degree": 4,
+      "width": 2,
+      "variables": 2,
+      "equations": 2,
+      "delta": 2,
+      "mask": [
+        true,
+        false
+      ],
+      "exact_count": 1,
+      "residue": 1,
+      "carry_bound": 12,
+      "acquired_queries": 3,
+      "max_row_degree": 12,
+      "max_carry_bound": 6
+    },
+    {
+      "name": "subfield-two-roots",
+      "precision": 2,
+      "degree": 4,
+      "width": 2,
+      "variables": 2,
+      "equations": 2,
+      "delta": 2,
+      "mask": [
+        true,
+        true
+      ],
+      "exact_count": 1,
+      "residue": 1,
+      "carry_bound": 12,
+      "acquired_queries": 3,
+      "max_row_degree": 12,
+      "max_carry_bound": 6
+    },
+    {
+      "name": "four-tags",
+      "precision": 2,
+      "degree": 4,
+      "width": 1,
+      "variables": 1,
+      "equations": 4,
+      "delta": 3,
+      "mask": [
+        false
+      ],
+      "exact_count": 1,
+      "residue": 1,
+      "carry_bound": 36,
+      "acquired_queries": 3,
+      "max_row_degree": 36,
+      "max_carry_bound": 36
+    },
+    {
+      "name": "four-tags",
+      "precision": 2,
+      "degree": 4,
+      "width": 1,
+      "variables": 1,
+      "equations": 4,
+      "delta": 3,
+      "mask": [
+        true
+      ],
+      "exact_count": 0,
+      "residue": 0,
+      "carry_bound": 36,
+      "acquired_queries": 3,
+      "max_row_degree": 36,
+      "max_carry_bound": 36
+    },
+    {
+      "name": "full-field-quadratic",
+      "precision": 2,
+      "degree": 2,
+      "width": 2,
+      "variables": 1,
+      "equations": 1,
+      "delta": 2,
+      "mask": [
+        false
+      ],
+      "exact_count": 2,
+      "residue": 2,
+      "carry_bound": 6,
+      "acquired_queries": 3,
+      "max_row_degree": 6,
+      "max_carry_bound": 6
+    },
+    {
+      "name": "full-field-quadratic",
+      "precision": 2,
+      "degree": 2,
+      "width": 2,
+      "variables": 1,
+      "equations": 1,
+      "delta": 2,
+      "mask": [
+        true
+      ],
+      "exact_count": 2,
+      "residue": 2,
+      "carry_bound": 6,
+      "acquired_queries": 3,
+      "max_row_degree": 6,
+      "max_carry_bound": 6
+    },
+    {
+      "name": "inconsistent",
+      "precision": 2,
+      "degree": 4,
+      "width": 2,
+      "variables": 1,
+      "equations": 2,
+      "delta": 1,
+      "mask": [
+        false
+      ],
+      "exact_count": 0,
+      "residue": 0,
+      "carry_bound": 6,
+      "acquired_queries": 3,
+      "max_row_degree": 6,
+      "max_carry_bound": 6
+    },
+    {
+      "name": "inconsistent",
+      "precision": 2,
+      "degree": 4,
+      "width": 2,
+      "variables": 1,
+      "equations": 2,
+      "delta": 1,
+      "mask": [
+        true
+      ],
+      "exact_count": 0,
+      "residue": 0,
+      "carry_bound": 6,
+      "acquired_queries": 3,
+      "max_row_degree": 6,
+      "max_carry_bound": 6
+    },
+    {
+      "name": "nonzero-even-constant",
+      "precision": 2,
+      "degree": 4,
+      "width": 2,
+      "variables": 2,
+      "equations": 1,
+      "delta": 0,
+      "mask": [
+        false,
+        false
+      ],
+      "exact_count": 16,
+      "residue": 0,
+      "carry_bound": 0,
+      "acquired_queries": 3,
+      "max_row_degree": 0,
+      "max_carry_bound": 0
+    },
+    {
+      "name": "nonzero-even-constant",
+      "precision": 2,
+      "degree": 4,
+      "width": 2,
+      "variables": 2,
+      "equations": 1,
+      "delta": 0,
+      "mask": [
+        false,
+        true
+      ],
+      "exact_count": 12,
+      "residue": 0,
+      "carry_bound": 0,
+      "acquired_queries": 3,
+      "max_row_degree": 0,
+      "max_carry_bound": 0
+    },
+    {
+      "name": "nonzero-even-constant",
+      "precision": 2,
+      "degree": 4,
+      "width": 2,
+      "variables": 2,
+      "equations": 1,
+      "delta": 0,
+      "mask": [
+        true,
+        false
+      ],
+      "exact_count": 12,
+      "residue": 0,
+      "carry_bound": 0,
+      "acquired_queries": 3,
+      "max_row_degree": 0,
+      "max_carry_bound": 0
+    },
+    {
+      "name": "nonzero-even-constant",
+      "precision": 2,
+      "degree": 4,
+      "width": 2,
+      "variables": 2,
+      "equations": 1,
+      "delta": 0,
+      "mask": [
+        true,
+        true
+      ],
+      "exact_count": 9,
+      "residue": 1,
+      "carry_bound": 0,
+      "acquired_queries": 3,
+      "max_row_degree": 0,
+      "max_carry_bound": 0
+    },
+    {
+      "name": "empty",
+      "precision": 3,
+      "degree": 1,
+      "width": 1,
+      "variables": 2,
+      "equations": 0,
+      "delta": 0,
+      "mask": [
+        false,
+        false
+      ],
+      "exact_count": 4,
+      "residue": 4,
+      "carry_bound": 0,
+      "acquired_queries": 1,
+      "max_row_degree": 0,
+      "max_carry_bound": 0
+    },
+    {
+      "name": "empty",
+      "precision": 3,
+      "degree": 1,
+      "width": 1,
+      "variables": 2,
+      "equations": 0,
+      "delta": 0,
+      "mask": [
+        false,
+        true
+      ],
+      "exact_count": 2,
+      "residue": 2,
+      "carry_bound": 0,
+      "acquired_queries": 1,
+      "max_row_degree": 0,
+      "max_carry_bound": 0
+    },
+    {
+      "name": "empty",
+      "precision": 3,
+      "degree": 1,
+      "width": 1,
+      "variables": 2,
+      "equations": 0,
+      "delta": 0,
+      "mask": [
+        true,
+        false
+      ],
+      "exact_count": 2,
+      "residue": 2,
+      "carry_bound": 0,
+      "acquired_queries": 1,
+      "max_row_degree": 0,
+      "max_carry_bound": 0
+    },
+    {
+      "name": "empty",
+      "precision": 3,
+      "degree": 1,
+      "width": 1,
+      "variables": 2,
+      "equations": 0,
+      "delta": 0,
+      "mask": [
+        true,
+        true
+      ],
+      "exact_count": 1,
+      "residue": 1,
+      "carry_bound": 0,
+      "acquired_queries": 1,
+      "max_row_degree": 0,
+      "max_carry_bound": 0
+    },
+    {
+      "name": "binary-intersection",
+      "precision": 3,
+      "degree": 2,
+      "width": 1,
+      "variables": 2,
+      "equations": 2,
+      "delta": 2,
+      "mask": [
+        false,
+        false
+      ],
+      "exact_count": 1,
+      "residue": 1,
+      "carry_bound": 20,
+      "acquired_queries": 4,
+      "max_row_degree": 20,
+      "max_carry_bound": 10
+    },
+    {
+      "name": "binary-intersection",
+      "precision": 3,
+      "degree": 2,
+      "width": 1,
+      "variables": 2,
+      "equations": 2,
+      "delta": 2,
+      "mask": [
+        false,
+        true
+      ],
+      "exact_count": 0,
+      "residue": 0,
+      "carry_bound": 20,
+      "acquired_queries": 4,
+      "max_row_degree": 20,
+      "max_carry_bound": 10
+    },
+    {
+      "name": "binary-intersection",
+      "precision": 3,
+      "degree": 2,
+      "width": 1,
+      "variables": 2,
+      "equations": 2,
+      "delta": 2,
+      "mask": [
+        true,
+        false
+      ],
+      "exact_count": 0,
+      "residue": 0,
+      "carry_bound": 20,
+      "acquired_queries": 4,
+      "max_row_degree": 20,
+      "max_carry_bound": 10
+    },
+    {
+      "name": "binary-intersection",
+      "precision": 3,
+      "degree": 2,
+      "width": 1,
+      "variables": 2,
+      "equations": 2,
+      "delta": 2,
+      "mask": [
+        true,
+        true
+      ],
+      "exact_count": 0,
+      "residue": 0,
+      "carry_bound": 20,
+      "acquired_queries": 4,
+      "max_row_degree": 20,
+      "max_carry_bound": 10
+    },
+    {
+      "name": "redundant-binary",
+      "precision": 3,
+      "degree": 3,
+      "width": 1,
+      "variables": 2,
+      "equations": 3,
+      "delta": 2,
+      "mask": [
+        false,
+        false
+      ],
+      "exact_count": 2,
+      "residue": 2,
+      "carry_bound": 30,
+      "acquired_queries": 4,
+      "max_row_degree": 30,
+      "max_carry_bound": 30
+    },
+    {
+      "name": "redundant-binary",
+      "precision": 3,
+      "degree": 3,
+      "width": 1,
+      "variables": 2,
+      "equations": 3,
+      "delta": 2,
+      "mask": [
+        false,
+        true
+      ],
+      "exact_count": 1,
+      "residue": 1,
+      "carry_bound": 30,
+      "acquired_queries": 4,
+      "max_row_degree": 30,
+      "max_carry_bound": 30
+    },
+    {
+      "name": "redundant-binary",
+      "precision": 3,
+      "degree": 3,
+      "width": 1,
+      "variables": 2,
+      "equations": 3,
+      "delta": 2,
+      "mask": [
+        true,
+        false
+      ],
+      "exact_count": 1,
+      "residue": 1,
+      "carry_bound": 30,
+      "acquired_queries": 4,
+      "max_row_degree": 30,
+      "max_carry_bound": 30
+    },
+    {
+      "name": "redundant-binary",
+      "precision": 3,
+      "degree": 3,
+      "width": 1,
+      "variables": 2,
+      "equations": 3,
+      "delta": 2,
+      "mask": [
+        true,
+        true
+      ],
+      "exact_count": 1,
+      "residue": 1,
+      "carry_bound": 30,
+      "acquired_queries": 4,
+      "max_row_degree": 30,
+      "max_carry_bound": 30
+    },
+    {
+      "name": "subfield-two-roots",
+      "precision": 3,
+      "degree": 4,
+      "width": 2,
+      "variables": 2,
+      "equations": 2,
+      "delta": 2,
+      "mask": [
+        false,
+        false
+      ],
+      "exact_count": 2,
+      "residue": 2,
+      "carry_bound": 20,
+      "acquired_queries": 4,
+      "max_row_degree": 20,
+      "max_carry_bound": 10
+    },
+    {
+      "name": "subfield-two-roots",
+      "precision": 3,
+      "degree": 4,
+      "width": 2,
+      "variables": 2,
+      "equations": 2,
+      "delta": 2,
+      "mask": [
+        false,
+        true
+      ],
+      "exact_count": 1,
+      "residue": 1,
+      "carry_bound": 20,
+      "acquired_queries": 4,
+      "max_row_degree": 20,
+      "max_carry_bound": 10
+    },
+    {
+      "name": "subfield-two-roots",
+      "precision": 3,
+      "degree": 4,
+      "width": 2,
+      "variables": 2,
+      "equations": 2,
+      "delta": 2,
+      "mask": [
+        true,
+        false
+      ],
+      "exact_count": 1,
+      "residue": 1,
+      "carry_bound": 20,
+      "acquired_queries": 4,
+      "max_row_degree": 20,
+      "max_carry_bound": 10
+    },
+    {
+      "name": "subfield-two-roots",
+      "precision": 3,
+      "degree": 4,
+      "width": 2,
+      "variables": 2,
+      "equations": 2,
+      "delta": 2,
+      "mask": [
+        true,
+        true
+      ],
+      "exact_count": 1,
+      "residue": 1,
+      "carry_bound": 20,
+      "acquired_queries": 4,
+      "max_row_degree": 20,
+      "max_carry_bound": 10
+    },
+    {
+      "name": "four-tags",
+      "precision": 3,
+      "degree": 4,
+      "width": 1,
+      "variables": 1,
+      "equations": 4,
+      "delta": 3,
+      "mask": [
+        false
+      ],
+      "exact_count": 1,
+      "residue": 1,
+      "carry_bound": 60,
+      "acquired_queries": 4,
+      "max_row_degree": 60,
+      "max_carry_bound": 60
+    },
+    {
+      "name": "four-tags",
+      "precision": 3,
+      "degree": 4,
+      "width": 1,
+      "variables": 1,
+      "equations": 4,
+      "delta": 3,
+      "mask": [
+        true
+      ],
+      "exact_count": 0,
+      "residue": 0,
+      "carry_bound": 60,
+      "acquired_queries": 4,
+      "max_row_degree": 60,
+      "max_carry_bound": 60
+    },
+    {
+      "name": "full-field-quadratic",
+      "precision": 3,
+      "degree": 2,
+      "width": 2,
+      "variables": 1,
+      "equations": 1,
+      "delta": 2,
+      "mask": [
+        false
+      ],
+      "exact_count": 2,
+      "residue": 2,
+      "carry_bound": 10,
+      "acquired_queries": 4,
+      "max_row_degree": 10,
+      "max_carry_bound": 10
+    },
+    {
+      "name": "full-field-quadratic",
+      "precision": 3,
+      "degree": 2,
+      "width": 2,
+      "variables": 1,
+      "equations": 1,
+      "delta": 2,
+      "mask": [
+        true
+      ],
+      "exact_count": 2,
+      "residue": 2,
+      "carry_bound": 10,
+      "acquired_queries": 4,
+      "max_row_degree": 10,
+      "max_carry_bound": 10
+    },
+    {
+      "name": "inconsistent",
+      "precision": 3,
+      "degree": 4,
+      "width": 2,
+      "variables": 1,
+      "equations": 2,
+      "delta": 1,
+      "mask": [
+        false
+      ],
+      "exact_count": 0,
+      "residue": 0,
+      "carry_bound": 10,
+      "acquired_queries": 4,
+      "max_row_degree": 10,
+      "max_carry_bound": 10
+    },
+    {
+      "name": "inconsistent",
+      "precision": 3,
+      "degree": 4,
+      "width": 2,
+      "variables": 1,
+      "equations": 2,
+      "delta": 1,
+      "mask": [
+        true
+      ],
+      "exact_count": 0,
+      "residue": 0,
+      "carry_bound": 10,
+      "acquired_queries": 4,
+      "max_row_degree": 10,
+      "max_carry_bound": 10
+    },
+    {
+      "name": "nonzero-even-constant",
+      "precision": 3,
+      "degree": 4,
+      "width": 2,
+      "variables": 2,
+      "equations": 1,
+      "delta": 0,
+      "mask": [
+        false,
+        false
+      ],
+      "exact_count": 16,
+      "residue": 0,
+      "carry_bound": 0,
+      "acquired_queries": 4,
+      "max_row_degree": 0,
+      "max_carry_bound": 0
+    },
+    {
+      "name": "nonzero-even-constant",
+      "precision": 3,
+      "degree": 4,
+      "width": 2,
+      "variables": 2,
+      "equations": 1,
+      "delta": 0,
+      "mask": [
+        false,
+        true
+      ],
+      "exact_count": 12,
+      "residue": 4,
+      "carry_bound": 0,
+      "acquired_queries": 4,
+      "max_row_degree": 0,
+      "max_carry_bound": 0
+    },
+    {
+      "name": "nonzero-even-constant",
+      "precision": 3,
+      "degree": 4,
+      "width": 2,
+      "variables": 2,
+      "equations": 1,
+      "delta": 0,
+      "mask": [
+        true,
+        false
+      ],
+      "exact_count": 12,
+      "residue": 4,
+      "carry_bound": 0,
+      "acquired_queries": 4,
+      "max_row_degree": 0,
+      "max_carry_bound": 0
+    },
+    {
+      "name": "nonzero-even-constant",
+      "precision": 3,
+      "degree": 4,
+      "width": 2,
+      "variables": 2,
+      "equations": 1,
+      "delta": 0,
+      "mask": [
+        true,
+        true
+      ],
+      "exact_count": 9,
+      "residue": 1,
+      "carry_bound": 0,
+      "acquired_queries": 4,
+      "max_row_degree": 0,
+      "max_carry_bound": 0
+    },
+    {
+      "name": "empty",
+      "precision": 5,
+      "degree": 1,
+      "width": 1,
+      "variables": 2,
+      "equations": 0,
+      "delta": 0,
+      "mask": [
+        false,
+        false
+      ],
+      "exact_count": 4,
+      "residue": 4,
+      "carry_bound": 0,
+      "acquired_queries": 1,
+      "max_row_degree": 0,
+      "max_carry_bound": 0
+    },
+    {
+      "name": "empty",
+      "precision": 5,
+      "degree": 1,
+      "width": 1,
+      "variables": 2,
+      "equations": 0,
+      "delta": 0,
+      "mask": [
+        false,
+        true
+      ],
+      "exact_count": 2,
+      "residue": 2,
+      "carry_bound": 0,
+      "acquired_queries": 1,
+      "max_row_degree": 0,
+      "max_carry_bound": 0
+    },
+    {
+      "name": "empty",
+      "precision": 5,
+      "degree": 1,
+      "width": 1,
+      "variables": 2,
+      "equations": 0,
+      "delta": 0,
+      "mask": [
+        true,
+        false
+      ],
+      "exact_count": 2,
+      "residue": 2,
+      "carry_bound": 0,
+      "acquired_queries": 1,
+      "max_row_degree": 0,
+      "max_carry_bound": 0
+    },
+    {
+      "name": "empty",
+      "precision": 5,
+      "degree": 1,
+      "width": 1,
+      "variables": 2,
+      "equations": 0,
+      "delta": 0,
+      "mask": [
+        true,
+        true
+      ],
+      "exact_count": 1,
+      "residue": 1,
+      "carry_bound": 0,
+      "acquired_queries": 1,
+      "max_row_degree": 0,
+      "max_carry_bound": 0
+    },
+    {
+      "name": "four-tags",
+      "precision": 5,
+      "degree": 4,
+      "width": 1,
+      "variables": 1,
+      "equations": 4,
+      "delta": 3,
+      "mask": [
+        false
+      ],
+      "exact_count": 1,
+      "residue": 1,
+      "carry_bound": 108,
+      "acquired_queries": 6,
+      "max_row_degree": 108,
+      "max_carry_bound": 108
+    },
+    {
+      "name": "four-tags",
+      "precision": 5,
+      "degree": 4,
+      "width": 1,
+      "variables": 1,
+      "equations": 4,
+      "delta": 3,
+      "mask": [
+        true
+      ],
+      "exact_count": 0,
+      "residue": 0,
+      "carry_bound": 108,
+      "acquired_queries": 6,
+      "max_row_degree": 108,
+      "max_carry_bound": 108
+    },
+    {
+      "name": "full-field-quadratic",
+      "precision": 5,
+      "degree": 2,
+      "width": 2,
+      "variables": 1,
+      "equations": 1,
+      "delta": 2,
+      "mask": [
+        false
+      ],
+      "exact_count": 2,
+      "residue": 2,
+      "carry_bound": 18,
+      "acquired_queries": 6,
+      "max_row_degree": 18,
+      "max_carry_bound": 18
+    },
+    {
+      "name": "full-field-quadratic",
+      "precision": 5,
+      "degree": 2,
+      "width": 2,
+      "variables": 1,
+      "equations": 1,
+      "delta": 2,
+      "mask": [
+        true
+      ],
+      "exact_count": 2,
+      "residue": 2,
+      "carry_bound": 18,
+      "acquired_queries": 6,
+      "max_row_degree": 18,
+      "max_carry_bound": 18
+    },
+    {
+      "name": "inconsistent",
+      "precision": 5,
+      "degree": 4,
+      "width": 2,
+      "variables": 1,
+      "equations": 2,
+      "delta": 1,
+      "mask": [
+        false
+      ],
+      "exact_count": 0,
+      "residue": 0,
+      "carry_bound": 18,
+      "acquired_queries": 6,
+      "max_row_degree": 18,
+      "max_carry_bound": 18
+    },
+    {
+      "name": "inconsistent",
+      "precision": 5,
+      "degree": 4,
+      "width": 2,
+      "variables": 1,
+      "equations": 2,
+      "delta": 1,
+      "mask": [
+        true
+      ],
+      "exact_count": 0,
+      "residue": 0,
+      "carry_bound": 18,
+      "acquired_queries": 6,
+      "max_row_degree": 18,
+      "max_carry_bound": 18
+    },
+    {
+      "name": "nonzero-even-constant",
+      "precision": 5,
+      "degree": 4,
+      "width": 2,
+      "variables": 2,
+      "equations": 1,
+      "delta": 0,
+      "mask": [
+        false,
+        false
+      ],
+      "exact_count": 16,
+      "residue": 16,
+      "carry_bound": 0,
+      "acquired_queries": 6,
+      "max_row_degree": 0,
+      "max_carry_bound": 0
+    },
+    {
+      "name": "nonzero-even-constant",
+      "precision": 5,
+      "degree": 4,
+      "width": 2,
+      "variables": 2,
+      "equations": 1,
+      "delta": 0,
+      "mask": [
+        false,
+        true
+      ],
+      "exact_count": 12,
+      "residue": 12,
+      "carry_bound": 0,
+      "acquired_queries": 6,
+      "max_row_degree": 0,
+      "max_carry_bound": 0
+    },
+    {
+      "name": "nonzero-even-constant",
+      "precision": 5,
+      "degree": 4,
+      "width": 2,
+      "variables": 2,
+      "equations": 1,
+      "delta": 0,
+      "mask": [
+        true,
+        false
+      ],
+      "exact_count": 12,
+      "residue": 12,
+      "carry_bound": 0,
+      "acquired_queries": 6,
+      "max_row_degree": 0,
+      "max_carry_bound": 0
+    },
+    {
+      "name": "nonzero-even-constant",
+      "precision": 5,
+      "degree": 4,
+      "width": 2,
+      "variables": 2,
+      "equations": 1,
+      "delta": 0,
+      "mask": [
+        true,
+        true
+      ],
+      "exact_count": 9,
+      "residue": 9,
+      "carry_bound": 0,
+      "acquired_queries": 6,
+      "max_row_degree": 0,
+      "max_carry_bound": 0
+    }
+  ],
+  "query_sha256": "ea586c9cb4a9b46bcf5cc9cd612a72c6ca3713e25a575d135f5266339846f27b",
+  "source_sha256": {
+    "tools/teichmuller_packed_systems.py": "181b140c0c823d39486fd0b8f421f5035fbc176871d4f7cd24bbd7fb3ee8469a",
+    "tools/check_teichmuller_packed_systems.py": "00829fa6b98390b44191a20f0cd01c3427a514876292f9efd171d3806311165e",
+    "tools/teichmuller_cyclic_carries.py": "dd79f4fc588d3caf1249439a05ffc37a9e10d3d52de9723d3fa0a10a7d7557d1"
+  },
+  "factoring_exponent": "1/2; unchanged"
+}

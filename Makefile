@@ -3100,6 +3100,12 @@ verify-teichmuller-inverses:
 
 verify-arithmetic: verify-teichmuller-inverses
 
+.PHONY: verify-teichmuller-packed-systems
+verify-teichmuller-packed-systems:
+	python3 tools/check_teichmuller_packed_systems.py
+
+verify-arithmetic: verify-teichmuller-packed-systems
+
 .PHONY: verify-multiaxis-face-rank
 verify-multiaxis-face-rank:
 	python3 tools/check_multiaxis_face_rank_floor.py

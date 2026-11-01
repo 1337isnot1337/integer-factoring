@@ -2029,6 +2029,9 @@ total degree charged inside the state budget and zero assigned to nonunits.
 The [full carry replay receipt](evidence/teichmuller-carry-full-verification.json)
 pins the preceding polynomial/root-count backend at `b9cd96f`; the inverse
 extension is outside that older source pin.
+The [packed residue-system compiler](research/precision-efficient-residue-indicators.md#acquired-ordinary-polynomial-system-packing)
+uses a supplied larger coefficient ring to avoid extra counting variables
+and division precision; its relative degree is charged in the carry budget.
 
 For the nilpotent-path construction, a [controlled monomial obstruction](research/controlled-permutation-smith-floor.md)
 extends the existing permutation calculation to dependent and noncommuting

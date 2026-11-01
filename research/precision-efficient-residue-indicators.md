@@ -255,6 +255,78 @@ per-query count and degree invoice. The identity, smaller inverse polynomial
 and collection invoice above retain this note's preceding credit; this
 extension implements their interface to the separate carry backend.
 
+### Acquired ordinary-polynomial system packing
+
+The [packed-system backend](../tools/teichmuller_packed_systems.py) acquires
+the preceding coefficient-extension construction for ordinary polynomial
+equations, including proper summation subfields. Supply an explicitly
+represented `R=GR(2^h,D)`, with `w|D` and `a=D/w>=m`, for `m` equations
+in `v` variables. Each equation has ordinary degree at most `delta` and
+coefficients represented in `R` whose **residues** lie in `F_(2^w)`.
+Higher coefficient digits need not lie in that subring. All variables
+range over its Teichmuller set, optionally punctured per variable.
+
+Let `beta` be the residue of the polynomial generator defining `R`.
+The basic-irreducible input hypothesis implies
+`F_2(beta)=F_(2^D)`, hence `[F_(2^w)(beta):F_(2^w)]=a`.
+The tags `1,beta,...,beta^(m-1)` are therefore independent over
+`F_(2^w)`. Use powers of the ring generator as lifts of those tags and
+form the explicit sum
+
+```
+F = sum_(i=0)^(m-1) beta_lift^i f_i.
+```
+
+The residue of `F` is zero exactly at the simultaneous residue zeros
+of all `f_i`. Its ordinary degree is still at most `delta`; the written
+term list grows by its actual input length. The implementation checks
+coefficient membership by reduction and Frobenius, and rejects insufficient
+relative extension degree. The field/ring representation and any embedding
+of original coefficients into it remain supplied, charged data.
+
+There is also a sharper carry invoice than the generic total-degree bound.
+For the norm power `N(F)^j`, there are exactly `a` conjugate factors in
+each of the `w` rows, each repeated `j` times. Every row table has degree
+at most `a*j*delta`. For each variable, the rotated exponent budget is
+at most
+
+```
+a*j*delta * sum_(r=0)^(w-1) 2^r = a*j*delta*(2^w-1).
+```
+
+Its initial carry is consequently at most `a*j*delta`, exactly the bound
+used by the acquired evaluator. Applying the `h` norm moments of the
+degree-`2h-1` indicator gives
+
+```
+(h*a*delta+2)^O(v) poly(input length,h,D,w,v).           (14)
+```
+
+The case `m=0` is the known domain size. This compiler uses no additional
+summation variables and no division-precision shift. For a full domain,
+`h>v*w` recovers the exact integer count. Formula (14) pays for the larger
+coefficient ring and the factor `a` inside the carry base. It does not
+eliminate circuit-wire variables: all such variables must be included in
+`v`, or genuinely eliminated with their resulting degree cost. Polynomials
+originally written in several Frobenius rows can have large ordinary degree;
+rewriting them here does not erase that cost. This is not a compiler for
+full ring congruences, native integer multiplication or integer prefixes.
+
+Run `make verify-teichmuller-packed-systems`. Its
+[checker](../tools/check_teichmuller_packed_systems.py) compares direct
+subfield counts with the acquired sums, verifies the tag injections on its
+small models, and checks the actual row degrees, carry bounds and query
+counts against (14). Controls include non-subfield higher digits,
+inconsistent equations, empty systems and even nonzero constants. Invalid
+subfield coefficients, insufficient extension capacity, incompatible widths
+and malformed exponents are rejected. The
+[receipt](../evidence/teichmuller-packed-system-controls.json) pins the finite
+panel and sources: 92 system queries against 501 direct assignments,
+274 acquired carry queries, 248 tag combinations and 34 queries at enough
+precision to recover the integer count from the domain-size bound. Five
+invalid-interface controls are rejected. This implements the earlier packing lemma; it supplies no
+new complete factoring bound or independent mathematical review.
+
 ## Exact controls
 
 The [checker](../tools/check_precision_residue_indicators.py) expands both
