@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-"""Exact phase-seven parameter identities and a bounded theta-span certificate.
+"""Exact phase-seven parameter, odd-index Sturm controls and charged evaluator.
 
 Finite prefix providers below are explicitly charged. They are not fast
 original-index coefficient oracles. The polynomial identity is checked
 without truncation; the theta exclusion uses a finite separating covector.
 """
 
+from collections import Counter
 from hashlib import sha256
 from itertools import combinations_with_replacement
 import json
@@ -239,8 +240,8 @@ def theta_span_certificate(limit=4096, degree=6):
 
 
 # Variables here are a=Theta_1, b=Theta_2, d=Theta_3, all at scale one.
-# These are candidates at this checkpoint. No Sturm conclusion is encoded.
-Q7_ODD_CANDIDATES = (
+# The ordinary modular/Sturm proof is in research/q7-cubic-parameter.md.
+Q7_ODD_POLYNOMIALS = (
     ((0,), (0, 1), (0, 2), (0, 0, 0), (0, 0, 2), (0, 1, 1),
      (0, 1, 2), (1, 1, 1), (0, 0, 0, 1), (0, 0, 0, 2),
      (0, 1, 1, 2), (0, 1, 2, 2), (1, 2, 2, 2)),
@@ -250,7 +251,7 @@ Q7_ODD_CANDIDATES = (
 )
 
 
-def check_odd_candidates(limit):
+def check_odd_identity(limit):
     cut = (1 << (limit+1))-1
     odd_mask = sum(1 << n for n in range(1, limit+1, 2))
     _, variables = square_residue_series(7, limit)
@@ -261,7 +262,7 @@ def check_odd_candidates(limit):
     targets = literal_coordinate_planes(7, limit)
     assert not (targets[0] ^ V) & odd_mask
     records = []
-    for coordinate, monomials in enumerate(Q7_ODD_CANDIDATES, 1):
+    for coordinate, monomials in enumerate(Q7_ODD_POLYNOMIALS, 1):
         value = V
         for monomial in monomials:
             term = 1
@@ -271,10 +272,116 @@ def check_odd_candidates(limit):
         assert not (targets[coordinate] ^ value) & odd_mask
         records.append({"native_coordinate": coordinate,
                         "polynomial_monomials": [list(m) for m in monomials]})
-    return {"status": "Finite odd-index candidate; modular/Sturm proof not yet completed",
+    return {"status": "Exact finite congruence covering the ordinary modular/Sturm proof bound",
             "largest_index": limit, "odd_indices": (limit+1)//2,
-            "training_largest_index": 4096, "candidate_total_degree": 4,
+            "training_largest_index": 4096, "polynomial_total_degree": 4,
             "trace_checked": True, "candidates": records}
+
+
+
+def sturm_lift_data():
+    # Native coefficient duals are 1,c^2,c under the F8/F2 trace.
+    def trace(value):
+        squared = modular_product(value, value, 11)
+        return value ^ squared ^ modular_product(squared, squared, 11)
+
+    for coordinate, dual in enumerate((1, 4, 2)):
+        assert [trace(modular_product(dual, 1 << i, 11))
+                for i in range(3)] == [int(i == coordinate) for i in range(3)]
+    level = 4*(4*7*7)
+    index = level*level*3//4*48//49
+    bound = 2*index//12
+    assert (level, index, bound) == (784, 451584, 75264)
+    assert 131072 >= bound
+    # An independent integer Eisenstein-prefix control, before reducing mod 2.
+    limit = 4096
+    sigma = [0]*(limit+1)
+    for divisor in range(1, limit+1):
+        for n in range(divisor, limit+1, divisor):
+            sigma[n] += divisor
+    for n in range(1, limit+1):
+        value = sigma[n] - (3*sigma[n//2] if n % 2 == 0 else 0)
+        value += 2*sigma[n//4] if n % 4 == 0 else 0
+        assert value % 2 == int(n % 2 == 1 and isqrt(n)**2 == n)
+    return {"proof": "research/q7-cubic-parameter.md, section 5; ordinary modularity and Sturm hypotheses",
+            "weight": 2, "theta_base_level": 196,
+            "subgroup_used_for_bound": "Gamma_1(784)",
+            "SL2_index": index, "Sturm_bound_inclusive": bound,
+            "required_odd_coefficients": bound//2,
+            "checked_odd_coefficients": 65536,
+            "native_trace_duals": [1, 4, 2],
+            "integer_Eisenstein_control_coefficients": limit}
+
+
+def normalized_factors(monomial):
+    # Frobenius: Theta_a^m = product over set bits j of Theta_a(t^(2^j)).
+    return tuple((variable+1, 1 << bit)
+                 for variable, multiplicity in sorted(Counter(monomial).items())
+                 for bit in range(multiplicity.bit_length())
+                 if multiplicity >> bit & 1)
+
+
+def constrained_quadratic_parity(integer, factors):
+    """Charged positive representations with unsigned residues modulo seven."""
+    residue, scale = factors[0]
+    if len(factors) == 1:
+        if integer <= 0 or integer % scale:
+            return 0, 1
+        root = isqrt(integer//scale)
+        return int(root*root*scale == integer and
+                   min(root % 7, (-root) % 7) == residue), 1
+    minimum_rest = sum(r*r*w for r, w in factors[1:])
+    bound = isqrt(max(0, (integer-minimum_rest)//scale))
+    parity = steps = 0
+    for root in range(1, bound+1):
+        steps += 1
+        if min(root % 7, (-root) % 7) == residue:
+            child, charged = constrained_quadratic_parity(
+                integer-scale*root*root, factors[1:])
+            parity ^= child
+            steps += charged
+    return parity, steps
+
+
+def q7_odd_original_coefficient(integer):
+    """All-index odd-input formula; O(N poly(log N)) explicit enumerator."""
+    if not isinstance(integer, int) or integer < 1 or integer % 2 == 0:
+        raise ValueError("a positive odd original index is required")
+    unary = int(isqrt(integer)**2 == integer)
+    if integer % 7 == 0:
+        unary ^= int(isqrt(integer//7)**2 == integer//7)
+    value = 7*unary  # 1+c+c^2 in the native basis
+    cache = {}
+    steps = 0
+    for coordinate, monomials in enumerate(Q7_ODD_POLYNOMIALS, 1):
+        bit_value = 0
+        for monomial in monomials:
+            factors = normalized_factors(monomial)
+            if factors not in cache:
+                cache[factors], charged = constrained_quadratic_parity(integer, factors)
+                steps += charged
+            bit_value ^= cache[factors]
+        value ^= bit_value << coordinate
+    return {"value": value, "charged_steps": steps,
+            "distinct_quadratic_predicates": len(cache)}
+
+
+def check_original_evaluator():
+    controls = sorted(set(range(1, 128, 2)) | set(range(129, 1024, 46)))
+    target = literal_coordinate_planes(7, max(controls))
+    charged = 0
+    for integer in controls:
+        result = q7_odd_original_coefficient(integer)
+        expected = sum(((plane >> integer) & 1) << i for i, plane in enumerate(target))
+        assert result['value'] == expected
+        charged += result['charged_steps']
+    factors = {normalized_factors(m) for P in Q7_ODD_POLYNOMIALS for m in P}
+    assert max(map(len, factors)) == 3
+    return {"literal_odd_controls": len(controls), "largest_control_index": max(controls),
+            "charged_enumeration_steps": charged,
+            "distinct_quadratic_predicates": len(factors),
+            "maximum_positive_variables_per_predicate": 3,
+            "time_bound": "O(N poly(log(N+1)))", "workspace_bound": "O(log(N+1)) bits"}
 
 
 def q5_calibration(limit):
@@ -289,18 +396,21 @@ def q5_calibration(limit):
 
 def main():
     result = {
-        "scope": "Exact cubic parameter; finite coefficient controls and bounded ansatz exclusion; no faster factoring bound",
+        "scope": "Exact cubic parameter and odd-index theta engine with an ordinary Sturm proof; exponential evaluator; no faster factoring bound",
         "polynomial_identity": parameter_identity(),
         "kummer_identity": kummer_identity(),
         "original_parameter_controls": check_original_parameter(8193),
         "theta_span_exclusion": theta_span_certificate(),
         "positive_calibration": q5_calibration(16384),
-        "odd_index_candidates": check_odd_candidates(131072),
+        "odd_index_identity_controls": check_odd_identity(131072),
+        "modular_lift_data": sturm_lift_data(),
+        "charged_original_evaluator": check_original_evaluator(),
         "source_sha256": {name: sha256((ROOT/name).read_bytes()).hexdigest()
                           for name in ('tools/check_q7_cubic_parameter.py',
                                        'tools/tate_coordinate_compiler.py',
                                        'tools/lambert_theta_sections.py',
-                                       'tools/cyclotomic_character_decoder.py')},
+                                       'tools/cyclotomic_character_decoder.py',
+                                       'research/q7-cubic-parameter.md')},
     }
     print(json.dumps(result, indent=2))
 

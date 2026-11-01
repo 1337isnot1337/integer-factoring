@@ -1,12 +1,13 @@
-# A cubic parameter for phase seven and an odd-index theta candidate
+# A phase-seven cubic parameter and a theta engine at odd indices
 
 The [Tate-coordinate construction](tate-coordinate-coefficients.md) at phase
 seven has two coordinates after the cheap scalar trace. This note gives an
 exact cubic parameter and identifies its original-nome series with a
-seven-regular partition generating function. It also records a degree-four
-candidate for the actual odd-index coefficients, checked through index
-131,072. The proposed modular-form proof of that candidate is unfinished at
-this checkpoint. No faster unrestricted factoring bound follows.
+seven-regular partition generating function. A degree-four theta formula gives the actual odd-index coefficients.
+An ordinary modular-form proof reduces it to a finite congruence through
+the conservative Sturm bound 75,264, which the exact checker covers.
+The explicit evaluator costs O(N poly(log(N+1))) time and O(log(N+1))
+workspace. No faster unrestricted factoring bound follows.
 
 The algebraic identities use standard division polynomials, Hensel lifting
 and the genus-zero modular curve X_0(7). The finite theta search and its
@@ -125,7 +126,7 @@ most two. X cannot belong to it.
 This excludes a particular rational representation of the full series.
 It says nothing about the complexity of individual odd-index coefficients.
 
-## 4. A bounded full-series exclusion, and a successful odd-index candidate
+## 4. A bounded full-series exclusion and the odd-index identity
 
 For scale e in {1,7} and a in {0,1,2,3}, define
 
@@ -144,7 +145,8 @@ coefficients. It excludes neither larger degree nor other series.
 
 The desired factoring coefficients have odd indices. The preceding
 covector uses even indices, and its exclusion does not apply to that task.
-Restricting the fit to odd indices produces a degree-four candidate.
+Restricting the fit to odd indices produces a degree-four formula, proved
+in the next section.
 Put a=Theta_(1,1), b=Theta_(1,2), d=Theta_(1,3), and define
 
 ```math
@@ -157,35 +159,173 @@ P_2=d+ad+bd+a^3+a^2d+abd+bd^2+d^3
        +a^2bd+ab^3+ab^2d+ad^3+bd^3.                \tag{6}
 ```
 
-Writing O for the projection onto odd exponents, the candidate is
+Writing O for the projection onto odd exponents, the identity is
 
 ```math
 O(X)=(1+c+c^2)O(V_7)+cO(P_1)+c^2O(P_2).           \tag{7}
 ```
 
-The fit used indices through 4,096. An independent larger prefix confirms
-all three coordinates at 65,536 odd indices through 131,072. The known
-phase-five degree-three identity is a positive calibration at every
-coefficient through 16,384. These finite checks do not by themselves prove
-(7) at all indices.
+The fit used indices through 4,096. A larger exact prefix confirms all three
+coordinates at 65,536 odd indices through 131,072. The known phase-five
+degree-three identity is a positive calibration at every coefficient through
+16,384. The following modular argument, rather than the size of that
+prefix alone, makes the conclusion uniform.
 
-A possible proof uses weight-two integral modular lifts. Homogenize each
-monomial of (6) to degree four by the full theta series
-h=sum over n in Z of t^(n^2), whose reduction modulo two is 1. The resulting
-products are rank-four lattice-coset theta series. Torsion-coordinate
-differences have weight-two elliptic lifts, and the scalar odd-square trace
-has an Eisenstein lift. The subgroup, integrality and congruence bound must
-all be justified before applying Sturm. This proof is the next checkpoint.
+## 5. Integral modular lifts and the finite congruence certificate
 
-## 5. Scope and replay
+Here t=exp(2*pi*i*tau) when discussing complex modular forms. All reductions
+are at a prime above two, and the formal nome is unchanged.
 
-Run `make verify-q7-parameter`. The checker emits the versioned receipt,
-including source hashes, the full polynomial quotient, the separating
-covector and the odd-index candidate. Its finite prefix providers enumerate
-divisors or partitions and are explicitly separate from a fast coefficient
-engine. No stronger complete factoring exponent follows from this note.
+### Torsion-coordinate lifts
 
-Even if (7) is proved, direct counting for its degree-four products would
-still be exponential in the input bit length. It would give a concrete
-nonlinear representation for another phase, and would leave the uniform
-phase family and a sufficiently fast evaluator unresolved.
+Let zeta be a complex primitive seventh root, and choose a prime above two
+in Z[zeta] giving the desired F_8 phase. For a nonzero residue a modulo
+seven, let L_a(t) be the integral Tate x-coordinate at zeta^a. Its positive
+coefficient is
+
+```math
+[t^n]L_a=\sum_{d\mid n}d
+ (\zeta^{ad}+\zeta^{-ad}-2).
+```
+
+Reducing gives the signed odd-divisor coefficients. The difference L_a-L_b
+is a normalized difference of Weierstrass p-values at nonzero seventh
+torsion. It is a holomorphic weight-two modular form on Gamma_1(7).
+The common coordinate shift cancels. At any cusp, a seventh-torsion point
+has multiplicative parameter zeta^a*t^(r/7), with 0<=r<7; its Tate expansion
+has no negative powers. This also verifies holomorphy at the cusps.
+The coefficients of each difference lie in Z[zeta,1/7].
+
+Write X=x_0+c*x_1+c^2*x_2 in the native F_8 basis. The trace-dual basis is
+(1,c^2,c):
+
+```math
+x_0=\operatorname{Tr}(X),\quad
+x_1=\operatorname{Tr}(c^2X),\quad
+x_2=\operatorname{Tr}(cX).
+```
+
+In particular Tr(c)=Tr(c^2)=0. For either lambda=c^2 or c, choose integral
+lifts w_0,w_1 of lambda,sigma(lambda) in Z[zeta,1/7], and set
+w_2=-w_0-w_1. Its reduction is sigma^2(lambda). Then
+
+```math
+F_\lambda=w_0L_1+w_1L_2+w_2L_4
+```
+
+is a linear combination of torsion-coordinate differences, and reduces to
+x_1 or x_2 respectively. Explicit lifts exist by taking the nodal coordinate
+zeta/(1-zeta)^2 and its conjugates; the denominator has odd norm seven.
+Thus these are weight-two lifts integral at two, without assuming that an
+individual shifted Tate coordinate is itself a modular form.
+
+### A weight-two lift of the scalar odd-square trace
+
+The series
+
+```math
+G(t)=\frac{-E_2(t)+3E_2(t^2)-2E_2(t^4)}{24}
+```
+
+is a holomorphic weight-two modular form on Gamma_0(4). It is the difference
+at t and t^2 of the standard corrected Eisenstein form
+(E_2(t)-2E_2(t^2))/24, with the appropriate sign. Its constant vanishes and
+its integer coefficient at n is
+
+```math
+\sigma_1(n)-3\sigma_1(n/2)+2\sigma_1(n/4),
+```
+
+where noninteger arguments give zero. Modulo two this is 1 exactly at odd
+squares: sigma_1(n) modulo two counts odd divisors, and the first two terms
+cancel when n is even. Consequently G(t)+G(t^7) is a weight-two lift of
+O(V_7), at level 28. The checker independently verifies the integer
+coefficient formula through 4,096.
+
+### Rank-four theta lifts
+
+Let h(t)=sum over n in Z of t^(n^2), an integer series with reduction 1.
+For a=1,2,3, our Theta_(1,a) has the integral lift
+sum over n congruent to a modulo seven, n in Z, of t^(n^2). Each positive
+absolute value in the unsigned residue pair occurs exactly once.
+Homogenize each degree-d monomial of P_j by multiplying by h^(4-d).
+Every resulting product is a finite sum of rank-four coset theta series
+for Q(v)=v_1^2+v_2^2+v_3^2+v_4^2, with congruences modulo seven.
+
+For this lattice the Gram matrix, discriminant and lattice level in the
+convention of Kane--Kim are I_4, 1 and 1. Their
+[Proposition 2.3](https://arxiv.org/html/2211.03987v2#S2.SS5)
+puts each coset series in weight two on
+Gamma_0(196) intersect Gamma_1(7); the character is trivial. Free coordinates
+are finite sums over their seven residue classes. Thus the homogeneous
+lifts H_1,H_2 are weight-two forms on Gamma_1(196), integral at two, reducing
+to P_1,P_2.
+
+### Odd projection, bound and exact check
+
+For an integer-exponent series f define
+O(f)=(f(tau)-f(tau+1/2))/2 in characteristic zero. This selects precisely
+its odd coefficients and preserves their integrality. If f is a modular
+form on Gamma_1(196), then O(f) is a modular form of the same weight on
+Gamma_1(784). Indeed, for gamma=(a,b;c,d) in Gamma_1(784), conjugation by
+tau to tau+1/2 gives
+
+```math
+\begin{pmatrix}
+a+c/2 & b+(d-a)/2-c/4\\ c & d-c/2
+\end{pmatrix}\in\Gamma_1(196).
+```
+
+These rational translations preserve holomorphy at all cusps. Hence each
+
+```math
+O\bigl(F_{\lambda_j}-G(t)-G(t^7)-H_j\bigr),\quad j=1,2,
+```
+
+is weight two on Gamma_1(784), with Fourier coefficients integral at two.
+A fixed odd denominator clears the coefficients to algebraic integers.
+The [Sturm congruence theorem](https://wstein.org/books/modform/stein-modform.pdf#page=185),
+Theorem 9.18, applies to an arbitrary prime ideal, including a prime above
+two; no good-level assumption is required. Use the conservative index
+
+```math
+[\mathrm{SL}_2(\mathbb Z):\Gamma_1(784)]
+ =784^2(1-2^{-2})(1-7^{-2})=451584.
+```
+
+The weight-two congruence bound is floor(2*451584/12)=75,264. The exact
+checker compares every odd coefficient through 131,072. The constant and
+even coefficients of each projected difference vanish identically, so this
+covers every coefficient through the required bound. Sturm therefore proves
+(7) at all odd indices. The scalar coordinate is already the proved trace
+identity. The subgroup, lifts and prime-integrality argument are ordinary
+mathematics; the versioned receipt checks the stated finite congruence and
+its arithmetic metadata. This is not an independent proof review.
+
+## 6. An explicit original-index evaluator and its cost
+
+For a monomial a^i*b^j*d^k, use Frobenius to replace every set binary digit
+in an exponent by a theta series at a power-of-two scale. For example,
+a^3*b=a(t)*a(t^2)*b(t). Every monomial in (6) becomes a positive quadratic
+representation parity in at most three variables, each constrained to an
+unsigned residue pair modulo seven. A square test handles the final
+variable after enumerating the preceding ones. With a constant number of
+forms this takes O(N poly(log(N+1))) time and O(log(N+1)) workspace.
+The unary V_7 coefficient is two square tests. Combine these scalar bits
+using the native values 7,2,4 for 1+c+c^2,c,c^2 in (7).
+
+The checker implements this evaluator and compares selected small original
+indices with the independent literal Lambert prefix. Enumeration steps are
+charged in the receipt. It does not replace a representation-count query
+by a supplied factorization or promise. For a positive even Tate index,
+first remove its powers of two, since the set of odd divisors is unchanged.
+
+Run `make verify-q7-parameter`. The checker emits source hashes, the full
+polynomial quotient, the separating covector, the finite Sturm controls
+and the charged evaluator controls. Its large-prefix providers enumerate
+divisors or partitions. They are not fast high-index coefficient oracles.
+
+The evaluator remains exponential in the input bit length and one fixed
+phase does not recover arbitrary factors. The goal is still a uniform
+phase family with a sufficiently fast original-index evaluator to improve
+the complete exponent beyond 1/2.

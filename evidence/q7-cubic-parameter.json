@@ -1,5 +1,5 @@
 {
-  "scope": "Exact cubic parameter; finite coefficient controls and bounded ansatz exclusion; no faster factoring bound",
+  "scope": "Exact cubic parameter and odd-index theta engine with an ordinary Sturm proof; exponential evaluator; no faster factoring bound",
   "polynomial_identity": {
     "cleared_D_power": 24,
     "cleared_terms": 49,
@@ -214,12 +214,12 @@
     "degree": 3,
     "checked_coefficients_including_constant": 16385
   },
-  "odd_index_candidates": {
-    "status": "Finite odd-index candidate; modular/Sturm proof not yet completed",
+  "odd_index_identity_controls": {
+    "status": "Exact finite congruence covering the ordinary modular/Sturm proof bound",
     "largest_index": 131072,
     "odd_indices": 65536,
     "training_largest_index": 4096,
-    "candidate_total_degree": 4,
+    "polynomial_total_degree": 4,
     "trace_checked": true,
     "candidates": [
       {
@@ -366,10 +366,36 @@
       }
     ]
   },
+  "modular_lift_data": {
+    "proof": "research/q7-cubic-parameter.md, section 5; ordinary modularity and Sturm hypotheses",
+    "weight": 2,
+    "theta_base_level": 196,
+    "subgroup_used_for_bound": "Gamma_1(784)",
+    "SL2_index": 451584,
+    "Sturm_bound_inclusive": 75264,
+    "required_odd_coefficients": 37632,
+    "checked_odd_coefficients": 65536,
+    "native_trace_duals": [
+      1,
+      4,
+      2
+    ],
+    "integer_Eisenstein_control_coefficients": 4096
+  },
+  "charged_original_evaluator": {
+    "literal_odd_controls": 84,
+    "largest_control_index": 1003,
+    "charged_enumeration_steps": 48506,
+    "distinct_quadratic_predicates": 20,
+    "maximum_positive_variables_per_predicate": 3,
+    "time_bound": "O(N poly(log(N+1)))",
+    "workspace_bound": "O(log(N+1)) bits"
+  },
   "source_sha256": {
-    "tools/check_q7_cubic_parameter.py": "e5c9c0570aaac74169f4e06f1c399da58f79332573668b8c3983070226aea1b9",
+    "tools/check_q7_cubic_parameter.py": "eb89ce08712e544c75cb16a7cf4278a2fa4f769827358b0bb66a82120e3121c5",
     "tools/tate_coordinate_compiler.py": "4abb1d071debcd045b110780c8472d215fe44d89103f0033474250e6cb4c37d1",
     "tools/lambert_theta_sections.py": "9f6ff2937fdaadd0430acf27893652f38a68bdcd3af70e189a47d40c96d32c94",
-    "tools/cyclotomic_character_decoder.py": "6dbe7906b53b99ef830a5cb7115f1be5a2dd94e3d3d4083c366e01add8e9f4df"
+    "tools/cyclotomic_character_decoder.py": "6dbe7906b53b99ef830a5cb7115f1be5a2dd94e3d3d4083c366e01add8e9f4df",
+    "research/q7-cubic-parameter.md": "edb92daafa41c66873c63803001b39aa0f8d38d59c674bb71eab1262abfcb40f"
   }
 }
