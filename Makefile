@@ -2223,6 +2223,10 @@ verify-multichannel-bare-entropy:
 verify-inherited-second-jet:
 	python3 tools/check_inherited_second_jet_caps.py
 
+.PHONY: verify-q12-second-jet-target
+verify-q12-second-jet-target:
+	python3 tools/check_q12_second_jet_target.py
+
 .PHONY: verify-multiaxis-cube
 verify-multiaxis-cube:
 	python3 tools/check_multiaxis_cube_transfer.py

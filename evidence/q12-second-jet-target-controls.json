@@ -1,0 +1,40 @@
+{
+  "scope": "A negative point of the declared necessary linear and second-jet inequalities; no tensor or stronger factoring algorithm.",
+  "alphabet": 12,
+  "integer_deficit": 4691,
+  "scale": "1/1000",
+  "checks": {
+    "square": {
+      "oriented_checks": 1452,
+      "minimum_slack": "318/125"
+    },
+    "second_jet": {
+      "oriented_checks": 1452,
+      "minimum_slack": "253/125"
+    },
+    "rectangular_jet": {
+      "compiled_checks": 6578,
+      "minimum_slack": "811/1000"
+    },
+    "multichannel": {
+      "compiled_checks": 6578,
+      "minimum_slack": "3/100"
+    }
+  },
+  "pressure_interval": [
+    -12808386233017168915231674390,
+    -12808386233017168915231672783
+  ],
+  "precision": 100,
+  "pressure_upper_bound": "-1/100",
+  "input_sha256": "319ea351be6de5da5de6fe55833f9635eaf50ad86e812f69cb3f6f68110451bc",
+  "source_sha256": {
+    "tools/check_q12_second_jet_target.py": "cf672c4d2e67cd274d0cf4ff3b072fac79d3f80b6d668a933c280556f5b905c4",
+    "tools/hereditary_adjugate_caps.py": "5e7f5b43bbd39e267629d2ef624d721228e46951bccbaac3fa4a56cca13d47fe",
+    "tools/inherited_second_jet_caps.py": "3407c44bda2796daabc957cf0653077c034ba4c1f16019debf7dfc9c26d77231",
+    "tools/multichannel_cofactor_caps.py": "f0561973de6ff525674c7b52621221788bd8e32d45dc2b09c8d286b39b5df358",
+    "tools/rectangular_adjugate_jet_caps.py": "d59773c82318246f10bde91158dbf84a77daab62ac27481e43a0d48baf47075f",
+    "tools/check_cell_minor_caps.py": "92856996bc0fb7e213e5228e1697d2f1cfb5727e10a9e572c764731114e2f6bc",
+    "tools/charged_gaussian_floor.py": "5321193eda456b922ae947f55a492de675de2d08a90ccb2a87a0fd89a60805cc"
+  }
+}

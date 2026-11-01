@@ -2086,6 +2086,12 @@ constraints but fails these nonlinear checks. The implementation evaluates
 the two actual profiles; concavity prevents substituting their average.
 Run `make verify-inherited-second-jet`; twelve letters remain unresolved.
 
+A [successor twelve-letter point](research/inherited-second-jet-caps.md#5-a-successor-point-survives-the-declared-nonlinear-checks)
+passes every declared linear and inherited second-jet condition, with exact
+pressure below `-1/100`. It supplies a further rational construction target,
+without a realizing tensor or stronger factoring bound. Run
+`make verify-q12-second-jet-target`.
+
 The [latest full verification receipt](evidence/multichannel-full-verification.json)
 pins a successful clean default replay and eleven named joint/cofactor
 targets to exact `7e1c1d8`: 352 Python command blocks, 66 unit tests,

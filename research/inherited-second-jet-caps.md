@@ -107,3 +107,28 @@ This extends and packages the preceding second-jet theorem; it does not
 replace its proof. It postdates the full default source `7e1c1d8` and has
 a separate focused replay. No new Lean work, independent review or improved
 factoring algorithm is claimed. Substantial OpenAI assistant support was used.
+
+## 5. A successor point survives the declared nonlinear checks
+
+A balanced cutoff-four search gives a different
+[exact twelve-letter point](../evidence/q12-second-jet-target.json).
+Its integer deficit is `4691`, its paired energies are all zero, its two
+144-order profiles are equal, and its thermal scale is `1/1000`. It passes
+every original cell/shared cap, all 1,452 oriented square adjugate caps,
+6,578 rectangular first-jet caps, 6,578 multichannel caps and all 1,452
+inherited second-jet caps. The equal pair makes the other rectangular cut
+orientation identical.
+
+100-bit outward arithmetic certifies pressure **below `-1/100`**, numerically
+about `-0.0101040`. This does not use the invalid average substitution:
+the two complete proposed profiles are checked separately. The
+[checker](../tools/check_q12_second_jet_target.py) and
+[receipt](../evidence/q12-second-jet-target-controls.json) pin the point,
+every constraint compiler and the exact pressure interval.
+
+This is a point of the declared necessary relaxation, not a polynomial
+crossing or an optimality theorem. The discovery searched one balanced
+sector; it says nothing about the optimal asymmetric profile pair. In the
+bare integer convention a proposed realization would have degree `4691`,
+so feasibility and a useful construction remain substantial open tasks.
+Run `make verify-q12-second-jet-target`. The factoring score remains `1/2`.
