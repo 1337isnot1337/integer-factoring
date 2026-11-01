@@ -1,0 +1,66 @@
+{
+  "scope": "Supplied norm-basis orientations and linear sparse write charges; no relation-supply bound.",
+  "small_controls": {
+    "coprime_batches": 800,
+    "ordered_ideal_batches": 15,
+    "literal_ideal_identities": 937,
+    "orientation_splits": 0,
+    "prefix_sparse_write_bounds": 937
+  },
+  "mixed_prime_powers": {
+    "keys": 256,
+    "maximum_norm_bits": 186,
+    "coarse_norms": 1,
+    "final_atoms": 8,
+    "orientation_splits": 7,
+    "orientation_gcd_calls": 1914,
+    "literal_ideal_identities": 256,
+    "sparse_write_control": {
+      "prefixes": 256,
+      "usage_writes": 2175,
+      "proved_integer_upper_bound": 56428
+    }
+  },
+  "corruptions_rejected": 7,
+  "fixtures": [
+    {
+      "bits": 80,
+      "input_path": "evidence/sparse-oriented-power-80.json.xz",
+      "input_sha256": "f55879f2bcd0c8077c715fa1675e547e669cf9e8bfb25fe510efc5c310ebe2b7",
+      "keys": 9776,
+      "original_atoms": 10079,
+      "original_atoms_and_words_identical": true,
+      "original_basis_orientation_gcds": 15045,
+      "merged_norm_basis": 10079,
+      "refined_merged_basis": 10079,
+      "merged_orientation_splits": 0,
+      "literal_ideal_identities": 19552,
+      "retained_incremental_usage_writes": 15799,
+      "proved_integer_usage_write_upper_bound": 631294
+    },
+    {
+      "bits": 96,
+      "input_path": "evidence/optimized-oriented-power-96.json.xz",
+      "input_sha256": "46ec21d6af643d6c9a9fddd759e854910efc9425ceba8e02c674f9e88b841a9b",
+      "keys": 19705,
+      "original_atoms": 20402,
+      "original_atoms_and_words_identical": true,
+      "original_basis_orientation_gcds": 27584,
+      "merged_norm_basis": 20402,
+      "refined_merged_basis": 20402,
+      "merged_orientation_splits": 0,
+      "literal_ideal_identities": 39410,
+      "retained_incremental_usage_writes": 28993,
+      "proved_integer_usage_write_upper_bound": 1406807
+    }
+  ],
+  "source_sha256": {
+    "tools/oriented_norm_basis_lift.py": "66118511f12e40e4a97dfc1bb0627fb551782971f7def3dc6e00414f22fcbc8a",
+    "tools/check_oriented_norm_basis_lift.py": "a0d19b2068280d4341abd3922ce14fb78fed525814d615514c6c193b8260444e",
+    "tools/incremental_oriented_coprime_basis.py": "e669db7d6d6acae9eca39304d2b4ad6bd1936adba5dab929faca51ec3005a154",
+    "tools/oriented_coprime_basis.py": "dba31b12ce2a93b7de9a79f69e4ffb2a8f0aec8218f3ab6082ad25817117571d",
+    "tools/binary_quadratic_forms.py": "cb8136aca2df9015c5433771ecce9f1855e179c7be316ae56deabdfc65870af8",
+    "tools/quadratic_ideal_hnf.py": "fd9c4217f1c751c1d2f20485a35ae36ae749c24980d90a6aae13fbc471634a74"
+  },
+  "seconds": 8.755212611999013
+}
