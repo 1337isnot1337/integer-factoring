@@ -78,6 +78,24 @@ make verify-asymmetric-profile-bundle
 python3 tools/search_asymmetric_profile_bundle.py --manifest evidence/asymmetric-profile-bundle-manifest.json --output /path/bundle.json
 ```
 
+## Completed comparison at `4fe7980`
+
+All three cases reached the registered **100-epoch ceiling**, before their
+600-second time caps. Total elapsed time was 266.64 seconds. Each made
+10,200 successful complete queries, with zero native rejections and zero
+unresolved masters. Every retained plane passed the declared held-out
+tests: 1,030,200 directed comparisons per case, 3,090,600 in all. The
+minimum reported slack was zero. This remains a numerical comparison,
+not an exact convex inequality certificate or a converged global minimum.
+
+Best numerical supports were `1.0108987278946815` for the reference,
+`1.0099473526508251` for the selected free-height tensor, and the unchanged
+`1.0097450661817486` for the walk snapshot. The latter is best overall
+and remains above one. The [complete summary](../evidence/asymmetric-profile-bundle-complete.json)
+and [all successful query points, planes and steps](../evidence/asymmetric-profile-bundle-complete.jsonl.xz)
+are retained. No master stopping condition is promoted to an optimum or
+a score improvement.
+
 Credit: original rectangular/core and coordinate bundle methods, generic
 asymmetric pressure, complete rectangular Smith backend and mixed-graph
 constructor. Directed by Cinna Davis / 1337isnot1337 with substantial OpenAI
