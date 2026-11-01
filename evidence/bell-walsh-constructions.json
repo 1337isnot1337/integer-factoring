@@ -1,0 +1,433 @@
+{
+  "status": "passed",
+  "counts": {
+    "independent_energy_polynomials": 270,
+    "literal_walsh_coefficient_comparisons": 6696,
+    "exact_endpoint_and_reciprocity_coefficients": 6696,
+    "physical_cut_rank_controls": 246,
+    "radial_histogram_controls": 96,
+    "invariant_covector_columns": 864,
+    "detected_piece_rank_bounds": 1092,
+    "literal_tensor_coefficient_bounds": 36,
+    "saved_search_receipts": 4,
+    "norm_constructors": 18,
+    "retimed_reciprocity_coefficients": 23164
+  },
+  "radial_rank_bound": "both ranks >= binom(m,floor(m/4)) in one common summand",
+  "radial_optimal_leading_parameter": "H_2(1/4), including arbitrary recombinations in the full radial Bell space",
+  "two_level_profiles": [
+    {
+      "physical_bits": 1,
+      "degree": 2,
+      "valuation_histogram": [
+        1,
+        2,
+        1
+      ],
+      "rho_pressure": 1.0
+    },
+    {
+      "physical_bits": 2,
+      "degree": 2,
+      "valuation_histogram": [
+        1,
+        6,
+        9
+      ],
+      "rho_pressure": 0.896240625180289
+    },
+    {
+      "physical_bits": 3,
+      "degree": 2,
+      "valuation_histogram": [
+        1,
+        35,
+        28
+      ],
+      "rho_pressure": 0.918404023023412
+    },
+    {
+      "physical_bits": 4,
+      "degree": 2,
+      "valuation_histogram": [
+        1,
+        120,
+        135
+      ],
+      "rho_pressure": 0.8952836829045201
+    },
+    {
+      "physical_bits": 5,
+      "degree": 2,
+      "valuation_histogram": [
+        1,
+        527,
+        496
+      ],
+      "rho_pressure": 0.9158715999190115
+    },
+    {
+      "physical_bits": 6,
+      "degree": 2,
+      "valuation_histogram": [
+        1,
+        2016,
+        2079
+      ],
+      "rho_pressure": 0.9200921774992814
+    }
+  ],
+  "norm_profiles": [
+    {
+      "physical_bits": 1,
+      "prime": 3,
+      "degree": 1,
+      "valuation_histogram": [
+        1,
+        3
+      ],
+      "rho_pressure": 0.896240625180289
+    },
+    {
+      "physical_bits": 1,
+      "prime": 5,
+      "degree": 1,
+      "valuation_histogram": [
+        1,
+        3
+      ],
+      "rho_pressure": 0.896240625180289
+    },
+    {
+      "physical_bits": 1,
+      "prime": 7,
+      "degree": 1,
+      "valuation_histogram": [
+        1,
+        3
+      ],
+      "rho_pressure": 0.896240625180289
+    },
+    {
+      "physical_bits": 2,
+      "prime": 3,
+      "degree": 2,
+      "valuation_histogram": [
+        1,
+        5,
+        10
+      ],
+      "rho_pressure": 0.8753456240437956
+    },
+    {
+      "physical_bits": 2,
+      "prime": 5,
+      "degree": 2,
+      "valuation_histogram": [
+        1,
+        5,
+        10
+      ],
+      "rho_pressure": 0.8753456240437956
+    },
+    {
+      "physical_bits": 2,
+      "prime": 7,
+      "degree": 2,
+      "valuation_histogram": [
+        1,
+        5,
+        10
+      ],
+      "rho_pressure": 0.8753456240437956
+    },
+    {
+      "physical_bits": 3,
+      "prime": 3,
+      "degree": 3,
+      "valuation_histogram": [
+        1,
+        54,
+        9,
+        0
+      ],
+      "rho_pressure": 1.0
+    },
+    {
+      "physical_bits": 3,
+      "prime": 5,
+      "degree": 3,
+      "valuation_histogram": [
+        1,
+        63,
+        0,
+        0
+      ],
+      "rho_pressure": 1.0
+    },
+    {
+      "physical_bits": 3,
+      "prime": 7,
+      "degree": 3,
+      "valuation_histogram": [
+        1,
+        63,
+        0,
+        0
+      ],
+      "rho_pressure": 1.0
+    },
+    {
+      "physical_bits": 4,
+      "prime": 3,
+      "degree": 4,
+      "valuation_histogram": [
+        1,
+        153,
+        34,
+        34,
+        34
+      ],
+      "rho_pressure": 1.0
+    },
+    {
+      "physical_bits": 4,
+      "prime": 5,
+      "degree": 4,
+      "valuation_histogram": [
+        1,
+        153,
+        34,
+        34,
+        34
+      ],
+      "rho_pressure": 1.0
+    },
+    {
+      "physical_bits": 4,
+      "prime": 7,
+      "degree": 4,
+      "valuation_histogram": [
+        1,
+        153,
+        34,
+        34,
+        34
+      ],
+      "rho_pressure": 1.0
+    },
+    {
+      "physical_bits": 5,
+      "prime": 3,
+      "degree": 5,
+      "valuation_histogram": [
+        1,
+        693,
+        297,
+        0,
+        33,
+        0
+      ],
+      "rho_pressure": 1.0
+    },
+    {
+      "physical_bits": 5,
+      "prime": 5,
+      "degree": 5,
+      "valuation_histogram": [
+        1,
+        990,
+        33,
+        0,
+        0,
+        0
+      ],
+      "rho_pressure": 1.0
+    },
+    {
+      "physical_bits": 5,
+      "prime": 7,
+      "degree": 5,
+      "valuation_histogram": [
+        1,
+        1023,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rho_pressure": 1.0
+    },
+    {
+      "physical_bits": 6,
+      "prime": 3,
+      "degree": 6,
+      "valuation_histogram": [
+        1,
+        2730,
+        910,
+        260,
+        65,
+        65,
+        65
+      ],
+      "rho_pressure": 1.0
+    },
+    {
+      "physical_bits": 6,
+      "prime": 5,
+      "degree": 6,
+      "valuation_histogram": [
+        1,
+        2795,
+        1040,
+        130,
+        65,
+        0,
+        65
+      ],
+      "rho_pressure": 1.0
+    },
+    {
+      "physical_bits": 6,
+      "prime": 7,
+      "degree": 6,
+      "valuation_histogram": [
+        1,
+        2795,
+        1170,
+        130,
+        0,
+        0,
+        0
+      ],
+      "rho_pressure": 1.0
+    }
+  ],
+  "folded_retimings": [
+    {
+      "physical_bits": 1,
+      "original_histogram": [
+        1,
+        3
+      ],
+      "retimed_degrees": [
+        0,
+        2
+      ],
+      "signed_exponents": [
+        1,
+        -1
+      ],
+      "scale": [
+        2,
+        1
+      ],
+      "pressure": [
+        49,
+        4
+      ],
+      "rho_pressure": 0.9036774610288021
+    },
+    {
+      "physical_bits": 2,
+      "original_histogram": [
+        1,
+        5,
+        10
+      ],
+      "retimed_degrees": [
+        0,
+        5,
+        10
+      ],
+      "signed_exponents": [
+        5,
+        0,
+        -5
+      ],
+      "scale": [
+        5,
+        4
+      ],
+      "pressure": [
+        52566516576729,
+        409600000000
+      ],
+      "rho_pressure": 0.8754730761873768
+    },
+    {
+      "physical_bits": 3,
+      "original_histogram": [
+        1,
+        7,
+        21,
+        35
+      ],
+      "retimed_degrees": [
+        0,
+        12,
+        22,
+        34
+      ],
+      "signed_exponents": [
+        17,
+        5,
+        -5,
+        -17
+      ],
+      "scale": [
+        10,
+        9
+      ],
+      "pressure": [
+        144888165928686737350037061956968149673046125190253494213122472894929,
+        111251355777477404502914310492704400000000000000000000000000000000
+      ],
+      "rho_pressure": 0.8622417609338555
+    },
+    {
+      "physical_bits": 4,
+      "original_histogram": [
+        1,
+        9,
+        36,
+        84,
+        126
+      ],
+      "retimed_degrees": [
+        0,
+        22,
+        40,
+        58,
+        80
+      ],
+      "signed_exponents": [
+        40,
+        18,
+        0,
+        -18,
+        -40
+      ],
+      "scale": [
+        17,
+        16
+      ],
+      "pressure": [
+        7502271416993268064314854949731997310944275172877260114472575157031949007670812704768990166773609198752899735946643344401623409202540221505399519749939602215994998617326509334361468867055062175169025,
+        582790310740289421445404372596779111596874059643066480021257586470548496488665224678814500217397032584936839678282555096940170165422701876855144033647626127062093604928429212662422386050361982976
+      ],
+      "rho_pressure": 0.8532539340875189
+    }
+  ],
+  "dimension_16_retiming": {
+    "strict_separation": "rho_retimed < 64/75 < rho_original",
+    "original_pressure_root_lower_bound": [
+      2192857863,
+      19307236
+    ],
+    "proof": "positive second derivative >= 2 and exact rational power comparisons"
+  },
+  "factoring_score": "1/2; unchanged",
+  "scope": "ordinary proof plus exact finite controls; no new Lean theorem or global nonradial search optimum"
+}
