@@ -251,6 +251,16 @@ retain an explicit dimension-dependent cost, and
 [semisimple cyclic recovery](semisimple-cyclic-box-contraction.md)
 handles componentwise inverse-or-zero values, including zero divisors.
 
+A [restricted two-elimination theorem](bilinear-cauchy-two-stage-closure.md)
+now handles a zero-safe Cauchy factor `iota(1+gamma UV)` with U in a
+binary subfield and V in its matching norm-one torus. A Frobenius-binomial
+input of formal degree below the subfield size yields one factorized
+torus star and at most one point correction. The second sum has an
+explicit polynomial-size division-free circuit. A fresh replay checks
+144 joint sums against 9,504 points, including the characteristic-two
+boundary case, zero tags, and the correction when a pole meets the torus.
+This is a positive closure result for the stated matching domains.
+
 These results do not yet close the full multiplication network. Its
 jointly varying bilinear multiplication phase and the representation
 after successive eliminations remain unbounded by the desired compact

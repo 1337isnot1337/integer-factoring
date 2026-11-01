@@ -271,6 +271,12 @@ retain an explicit dimension-dependent carry bound.
 also admit zero-safe quotient formulas, including zero-divisor denominators.
 The unresolved global step is controlling the jointly varying multiplication
 phase and the representation after successive frequency eliminations.
+A [restricted two-elimination theorem](research/bilinear-cauchy-two-stage-closure.md)
+does close a bounded-degree Cauchy interaction between a binary subfield
+and its matching norm-one torus. Its fixed division-free circuit keeps
+one factorized star and at most one point correction. The field-size,
+degree, and matching-domain conditions are charged explicitly; the
+integer multiplication phase remains outside this theorem.
 
 For two fixed ternary bases with uniform paired types, an
 [exact minor certificate](research/ternary-uniform-gauge-majorization.md)
@@ -332,6 +338,7 @@ make verify-laurent-search # Replay the complete 65536-word Laurent screen
 make verify-coherent-boundary # Exact small-code certificate and complete finite boundary grid
 make verify-root-worker-searches # Replay saved physical winners, target systems, and continuations
 make verify-final-searches # Portable final archive and exact unequal-coherent winner replay
+make verify-bilinear-cauchy # Exact two-elimination circuit and exceptional-point controls
 make verify-coupled-searches # Completed search replays and exact affine determinant change
 make verify-schur-fermion # Complete Schur entry formulas and exact comparisons
 make verify-schur-central # Hook-residue identities and full Schur ranks through weight 8

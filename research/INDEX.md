@@ -16,6 +16,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Two eliminations for a Cauchy interaction](bilinear-cauchy-two-stage-closure.md): a bounded-degree subfield input and a matching norm-one torus admit a fixed polynomial-size circuit, with exact exceptional-point and zero-tag corrections; the integer multiplication phase remains open.
+
 - [Final entrywise, finite-frame, and hot-code archive](algorithm-final-search-checkpoint.md): complete target lists, 279 reconstructed retained tensors, mixed/adaptive winners, full hot-search budgets, and the large natural profiles are preserved with portable inputs.
 - [Unequal coherent paired codes](unequal-coherent-hot-codes.md): 18 complete tensors, 108 numerical asymmetric costs, and 18 exact rational threshold tests retain all full-channel costs; none passes the strict post-half gate.
 

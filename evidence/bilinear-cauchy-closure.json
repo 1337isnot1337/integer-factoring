@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "scope": "Exact restricted two-variable closure and explicit excluded-case controls; no integer multiplication phase or factoring exponent claim.",
+  "counts": {
+    "absent_exceptional_points": 30,
+    "b2_complete_sums": 48,
+    "coefficient_independent_gate_schedules": 4,
+    "complete_two_stage_sums": 144,
+    "degree_bound_rejections": 1,
+    "distinct_simple_poles": 26,
+    "exact_formal_rational_identities": 4,
+    "exceptional_points_in_torus": 96,
+    "gamma_zero_cases": 18,
+    "joint_reference_points": 9504,
+    "missing_b2_correction_counterexamples": 1,
+    "multiplication_gates_in_each_schedule": 754,
+    "nonzero_point_corrections": 44,
+    "outer_reference_points": 1008,
+    "unrestricted_degree_formula_counterexamples": 1,
+    "zero_cauchy_denominator_points": 96
+  },
+  "models": [
+    {
+      "subfield_bits": 1,
+      "coefficient_field_bits": 2,
+      "irreducible_polynomial": 7
+    },
+    {
+      "subfield_bits": 1,
+      "coefficient_field_bits": 4,
+      "irreducible_polynomial": 19
+    },
+    {
+      "subfield_bits": 2,
+      "coefficient_field_bits": 4,
+      "irreducible_polynomial": 19
+    },
+    {
+      "subfield_bits": 2,
+      "coefficient_field_bits": 8,
+      "irreducible_polynomial": 283
+    },
+    {
+      "subfield_bits": 3,
+      "coefficient_field_bits": 6,
+      "irreducible_polynomial": 67
+    },
+    {
+      "subfield_bits": 4,
+      "coefficient_field_bits": 8,
+      "irreducible_polynomial": 283
+    }
+  ],
+  "source_sha256": {
+    "check_bilinear_cauchy_closure.py": "51f30124417c90913b6448b6bc6d5aef2a50cfff6fc8cc943fe5274633ac6b61",
+    "fermat_torus_binomial_contraction.py": "e802013431c9251ed3fbccfcfeb6da2c17a16b46170402fa98f7cb5d60265380",
+    "check_frobenius_rational_trace.py": "d5cdf093a71fa6f3528b58359d8bb5307e94972aab12642d6818d45d1398c1f3",
+    "check_carry_fourier_elimination.py": "ad1065db63bc74779105964c2ed8c3cf5e91f82d514fa70580fa8eb31a091763"
+  }
+}

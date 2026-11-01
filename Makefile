@@ -887,3 +887,8 @@ verify-final-searches:
 	OPENBLAS_NUM_THREADS=1 python3 tools/checkpoint_algorithm_final_searches.py --output /tmp/integer-factoring-final-searches.json
 	OPENBLAS_NUM_THREADS=1 python3 tools/check_unequal_coherent_hot_codes.py --output /tmp/integer-factoring-unequal-coherent-codes.json
 
+.PHONY: verify-bilinear-cauchy
+
+verify-bilinear-cauchy:
+	python3 tools/check_bilinear_cauchy_closure.py --output /tmp/integer-factoring-bilinear-cauchy-closure.json
+
