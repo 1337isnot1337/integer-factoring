@@ -146,6 +146,8 @@ Run `make verify-hereditary-adjugate`. To repeat the optional discovery:
 python tools/search_integer_hereditary_q6.py --output /tmp/hereditary-q6.json
 ```
 
-The six-letter point requires a new crossing construction. This checkpoint
-postdates the full-suite source `f2a16c0`, has its own focused verification,
-and adds no Lean result or independent review claim.
+The six-letter point requires a new crossing construction. A later
+[clean full replay](../evidence/hereditary-full-verification.json) at exact
+`d31ffec` passed defaults and all nine named joint/hereditary targets:
+350 Python command blocks, 66 unit tests, five crossing tests and
+984 Markdown files. It adds no Lean result or independent review claim.

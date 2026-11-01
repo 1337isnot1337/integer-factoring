@@ -1,0 +1,28 @@
+{
+  "source": "d31ffec528a27eadb9d27996daf8d30f7f26cebd",
+  "command": [
+    "make",
+    "-j2",
+    "--output-sync=target",
+    "verify",
+    "verify-joint-grid-compressions",
+    "verify-joint-split-jet-guards",
+    "verify-joint-split-flags",
+    "verify-joint-moving-retractions",
+    "verify-joint-small-rational",
+    "verify-joint-six-to-five",
+    "verify-zero-energy-parity-core",
+    "verify-zero-energy-hereditary",
+    "verify-hereditary-adjugate"
+  ],
+  "exit_code": 0,
+  "seconds": 598.933988571167,
+  "clean_after": true,
+  "log_sha256": "dae90a2dc4a89d8d18bc087d8e045f18a42ed7ebc2adec90c04861aaed8dc131",
+  "python_command_blocks": 350,
+  "unit_tests": 66,
+  "crossing_tests": 5,
+  "markdown_files": 984,
+  "scope": "Clean frozen default suite and all nine named joint/hereditary targets at exact d31ffec. This includes exact target and pressure replay, not a realizing tensor, solver proof certification or independent mathematical review.",
+  "factoring_exponent": "1/2; unchanged"
+}

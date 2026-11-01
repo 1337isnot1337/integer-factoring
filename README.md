@@ -2063,3 +2063,10 @@ cap; 100-bit outward arithmetic certifies pressure below `-1/250`.
 This restores a concrete open target after the five-letter rejection,
 but supplies no tensor or stronger factoring algorithm. Run
 `make verify-hereditary-adjugate` for the complete cap and pressure replay.
+
+The [latest full verification receipt](evidence/hereditary-full-verification.json)
+pins a successful clean default replay and all nine named joint/hereditary
+targets to exact `d31ffec`: 350 Python command blocks, 66 unit tests,
+five crossing tests and 984 Markdown files. It verifies the retained
+sources and certificates, without supplying a realizing tensor or
+independent mathematical review.
