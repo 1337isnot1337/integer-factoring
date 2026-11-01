@@ -1463,3 +1463,7 @@ The [paired MDS family extension](orthogonal-pair-core-floor.md#5-a-stronger-all
 - [Exact cached LLL](circuit-box-cached-lll.md): derived rational cache updates, identical complete small-root/window receipts, and a dimension-19 control reducing full Gram–Schmidt computations from 3,370 to one.
 
 - [Singular affine Clifford profiles](tensor-singular-affine-clifford.md): lexicographic regularization proves power-of-two rank and complete nonzero subset-sum profiles; exact bounded substitution and independent Fock controls, including compact 32-mode examples.
+
+## Global orthogonal joint-energy rigidity
+
+[All-field two-parameter normal form](orthogonal-joint-global-rigidity.md) proves that constant orthogonal energy-preserving gauges retaining rank-one leading realignment fix that coefficient globally. The remaining tensor orbit has two parameters. Finite F4/F8/F16 profile controls do not establish an all-field dominance theorem.
