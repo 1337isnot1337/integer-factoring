@@ -1457,3 +1457,5 @@ The [paired MDS family extension](orthogonal-pair-core-floor.md#5-a-stronger-all
 - [Centered unknown-divisor windows](circuit-box-centered-windows.md): signed root intervals remove two guard bits and aggregate shorter windows; complete exact LLL/Sturm controls, with the classical quarter-bit scope retained.
 
 - [Exact cached LLL](circuit-box-cached-lll.md): derived rational cache updates, identical complete small-root/window receipts, and a dimension-19 control reducing full Gram–Schmidt computations from 3,370 to one.
+
+- [Singular affine Clifford profiles](tensor-singular-affine-clifford.md): lexicographic regularization proves power-of-two rank and complete nonzero subset-sum profiles; exact bounded substitution and independent Fock controls, including compact 32-mode examples.

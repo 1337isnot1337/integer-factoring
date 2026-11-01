@@ -2719,3 +2719,7 @@ check-centered-windows:
 .PHONY: check-cached-lll
 check-cached-lll:
 	python3 tools/check_circuit_box_cached_lll.py
+
+.PHONY: check-singular-affine-clifford
+check-singular-affine-clifford:
+	python3 tools/check_tensor_singular_affine_clifford.py
