@@ -1049,3 +1049,8 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 - [A determinant budget for every regular nilpotent resolvent](regular-resolvent-determinant-budget.md)
 - [Complete binary four-label normalized rank-two search](binary-rank-two-channels.md)
 - [A sharper copied-wire obstruction from one truncated multiplication map](shift-register-toeplitz-budget.md)
+
+## Coherent graded quotients and complete letter gauges
+
+- [Coherent quotient codes and an exact zero-cut invariant](coherent-graded-quotients.md)
+- [Shared letter gauges for coherent physical maps](coherent-shared-letter-gauges.md)

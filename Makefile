@@ -1958,3 +1958,9 @@ verify-register-toeplitz-budget:
 	python3 tools/check_shift_register_toeplitz_budget.py --output /tmp/integer-factoring-shift-register-toeplitz-budget.json
 verify-binary-rank-two-channels:
 	python3 tools/check_binary_rank_two_channels.py
+
+.PHONY: verify-coherent-graded-quotients verify-coherent-shared-gauges
+verify-coherent-graded-quotients:
+	python3 tools/check_coherent_graded_quotients.py --output /tmp/integer-factoring-coherent-graded-quotients.json
+verify-coherent-shared-gauges:
+	python3 tools/check_coherent_shared_gauges.py --output /tmp/integer-factoring-coherent-shared-gauges.json

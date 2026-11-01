@@ -109,6 +109,13 @@ and the 121-map all-scale proof are retained. The certified contraction remains
 above `1/sqrt(2)`; the complete factoring score remains **1/2**.
 Run `make verify-coherent-retractions` for focused exact controls and
 `make verify-coherent-q32-catalogue` to recompute the complete catalogue proof.
+[Graded quotient codes](research/coherent-graded-quotients.md) now supply
+explicit mixed-occupation physical maps. For every dyadic virtual dimension,
+their full zero-cut profile equals the coordinate profile; the other cut remains
+a construction variable. A [complete letter-gauge cone](research/coherent-shared-letter-gauges.md)
+also permits negative potentials while charging both profile changes and
+physical type costs. Six literal rational-gauge cut profiles and all sixteen
+four-mode quotient maps are independently checked.
 <!-- coherent-compound-checkpoint:end -->
 
 The [quadratic-parity Walsh construction](research/bell-walsh-constructions.md)
