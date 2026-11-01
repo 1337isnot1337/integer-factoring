@@ -3,6 +3,7 @@
 import argparse
 from hashlib import sha256
 import json
+from math import gcd
 from pathlib import Path
 
 from check_cell_minor_caps import all_caps
@@ -19,8 +20,7 @@ def integer_digest(value):
     return sha256(value.to_bytes((value.bit_length()+7)//8, 'big')).hexdigest()
 
 
-def certificate():
-    path = ROOT/'evidence/q12-integer-word-target.json'
+def certificate(path):
     data = json.loads(path.read_text())
     q, degree, r, e = data['alphabet'], data['deficit'], data['orders'], data['paired_energies']
     assert q == 12 and degree > 0 and type(degree) is int and e == [0]*q
@@ -39,13 +39,15 @@ def certificate():
         checks[label] = dict(compiled_checks=len(caps), minimum_slack=str(min(slacks)))
     numerator, denominator = data['rational_thermal_scale']
     bound, divisor = data['rho_upper_bound']
-    assert (numerator, denominator, bound, divisor) == (17, 14, 707, 1000)
+    assert (degree, numerator, denominator, bound, divisor) in ((24, 17, 14, 707, 1000), (22, 57, 46, 7071, 10000))
     highest = max(r)
     assert 2*highest >= degree
     polynomial = sum(numerator**(highest-a)*denominator**a for a in r)
-    # B(s)=s^degree (sum s^(-r_i))^2. Clearing B(17/14)^250<12^707:
-    left = polynomial**500
-    right = q**707*numerator**(250*(2*highest-degree))*denominator**(250*degree)
+    # B(s)=s^degree (sum s^(-r_i))^2 < q^(4*bound/divisor).
+    common = gcd(4*bound, divisor)
+    power, exponent = divisor//common, 4*bound//common
+    left = polynomial**(2*power)
+    right = q**exponent*numerator**(power*(2*highest-degree))*denominator**(power*degree)
     assert left < right and 2*bound**2 < divisor**2
     exact = dict(max_order=highest, left_bits=left.bit_length(), right_bits=right.bit_length(),
                  left_sha256=integer_digest(left), right_sha256=integer_digest(right))
@@ -54,9 +56,9 @@ def certificate():
              'tools/higher_jet_word_caps.py', 'tools/inherited_second_jet_caps.py',
              'tools/multichannel_cofactor_caps.py', 'tools/rectangular_adjugate_jet_caps.py',
              'tools/check_cell_minor_caps.py', 'tools/charged_gaussian_floor.py']
-    return dict(scope='Exact integer point of declared necessary constraints, with formal rate below707/1000; no realizing tensor or factoring improvement.',
+    return dict(scope='Exact integer point of declared necessary constraints; no realizing tensor or factoring improvement.',
                 alphabet=q, integer_degree=degree, identical_profiles=True, checks=checks,
-                rational_thermal_scale=[numerator, denominator], formal_rho_upper_bound='707/1000',
+                rational_thermal_scale=[numerator, denominator], formal_rho_upper_bound=str(bound)+'/'+str(divisor),
                 exact_integer_comparison=exact, strict_half_comparison=[2*bound**2, divisor**2],
                 input_sha256=sha256(path.read_bytes()).hexdigest(),
                 source_sha256={name: sha256((ROOT/name).read_bytes()).hexdigest() for name in names})
@@ -66,7 +68,9 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path)
     args = parser.parse_args()
-    result = certificate()
+    paths = [ROOT/'evidence/q12-integer-word-target.json', ROOT/'evidence/q12-degree22-word-target.json']
+    result = dict(scope='Two integer q12 points of the declared necessary relaxation, without realizing tensors.',
+                  certificates=[certificate(path) for path in paths])
     if args.output:
         args.output.write_text(json.dumps(result, indent=2)+'\n')
     else:

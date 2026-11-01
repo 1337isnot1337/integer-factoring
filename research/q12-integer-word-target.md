@@ -1,10 +1,14 @@
-# A degree-24 integer target beyond the current cofactor constraints
+# Integer targets of degrees 22 and 24 beyond the cofactor constraints
 
 There is an integer twelve-letter profile point satisfying every declared
 cell/shared, inherited square adjugate, rectangular first-jet, multichannel,
 second-jet and [higher-word constraint](higher-jet-word-caps.md). Its formal
 bare rate at the rational scale `s=17/14` is **less than `707/1000`**, hence
 less than `1/sqrt(2)`.
+
+A smaller degree-22 point passes the same constraints and has formal rate
+below `7071/10000`, also less than `1/sqrt(2)`. The degree-24 point has
+the stronger certified rate margin; neither is a polynomial tensor.
 
 This is a spectral relaxation target. **No polynomial tensor with these
 profiles is known**, so it gives no stronger factoring bound. The complete
@@ -83,3 +87,32 @@ Run `make verify-q12-integer-word-target`. This point package has a separate
 focused replay; earlier full-suite source pins do not establish its checks.
 No new Lean work or independent mathematical review is claimed.
 Substantial OpenAI assistant support was used.
+
+## 4. A smaller degree-22 alternative
+
+The [smaller point](../evidence/q12-degree22-word-target.json) has `M=22`,
+the same zero energies, and equal profiles
+
+```
+0,6,9,10,11,12,14^6,17^5,18^9,19^7,20^3,21^12,22^12,
+23^28,24^14,25^12,26^25,27^4,36.
+```
+
+Its first twelve sum to 132 and its total is `3162<=3168`. All declared
+constraints pass: the square/first-jet/multichannel/second-jet/word minimum
+slacks are `20,0,0,14,4`. At `s=57/46`, put
+`P=sum_i 57^(36-r_i)46^(r_i)`. The independent checker verifies
+
+```
+P^5000 < 12^7071 * 57^(2500*(72-22)) * 46^(2500*22).
+```
+
+Both sides have 1,058,257 bits. This proves
+`rho_formal<7071/10000<1/sqrt(2)`; the threshold check is
+`2*7071^2=99998082<100000000`. The combined receipt retains both integer
+comparisons, complete profiles, all compiler hashes and input hashes.
+Both certificates run under the same verification target.
+
+The bounded degree-22 discovery also timed out with an incumbent; no
+optimality or minimum-degree result is claimed. Finding an actual tensor
+for either point, or a further compatibility obstruction, remains open.

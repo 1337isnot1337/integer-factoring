@@ -2517,10 +2517,11 @@ singular channels and extends the old second-jet bound. Run
 `make verify-q12-second-jet-target verify-higher-jet-words` for the historical
 relaxation and its rejection. No stronger factoring bound is established.
 
-A [degree-24 integer twelve-letter point](research/q12-integer-word-target.md)
-survives every declared cofactor and higher-word constraint. At the rational
-scale `17/14`, direct integer arithmetic proves its formal bare rate is below
-`707/1000<1/sqrt(2)`. No polynomial tensor realizing it is known. Run
+[Integer twelve-letter points of degrees 22 and 24](research/q12-integer-word-target.md)
+survive every declared cofactor and higher-word constraint. At rational
+scales `57/46` and `17/14`, direct integer arithmetic proves formal bare
+rates below `7071/10000` and `707/1000`, both below `1/sqrt(2)`.
+No polynomial tensor realizing either point is known. Run
 `make verify-q12-integer-word-target`; the factoring score remains **1/2**.
 
 The [latest full verification receipt](evidence/higher-words-full-verification.json)
