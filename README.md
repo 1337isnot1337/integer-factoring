@@ -870,6 +870,14 @@ crossing. A different elimination algorithm independently checks the separating
 affine hyperplane. This rules out that entire finite envelope, with the full
 ordered space, higher powers and physical type restrictions still open.
 Run `make verify-fused-scalar-projection` (requires a C++17 compiler).
+For the original unprojected coefficient span, the
+[primary-character code theorem](research/fused-primary-character-code.md)
+proves `rho>=3/4` for every tensor length and every extension of the fixed
+F16 field. Ten exact complement-rank certificates establish a weighted
+code distance of three; tensorizing that distance bounds every nonzero
+piece's opposite-cut rank. This theorem retains the nonsemisimple blocks
+and leaves scalar projections and physical type restrictions open.
+Run `make verify-fused-primary-code`.
 
 The [group-shear extension](research/group-shear-crossings.md) implements
 the swap through three multiplication/division shears over any finite

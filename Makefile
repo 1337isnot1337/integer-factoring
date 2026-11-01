@@ -199,6 +199,10 @@ verify-joint-filtered-gauges:
 verify-fused-scalar-projection:
 	python3 tools/check_fused_scalar_projection.py
 
+.PHONY: verify-fused-primary-code
+verify-fused-primary-code:
+	python3 tools/check_fused_primary_code.py
+
 .PHONY: verify-group-shears
 verify-group-shears:
 	python3 tools/check_group_shear_crossings.py
