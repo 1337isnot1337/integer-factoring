@@ -2106,3 +2106,8 @@ verify-coherent-physical-tail:
 .PHONY: verify-cube-pair-specialization
 verify-cube-pair-specialization:
 	python3 tools/check_cube_pair_encoding_specialization.py --output /tmp/integer-factoring-cube-pair-specialization.json
+
+
+.PHONY: verify-coherent-tail-injectivity
+verify-coherent-tail-injectivity:
+	python3 tools/check_coherent_tail_injectivity.py --output /tmp/integer-factoring-coherent-tail-injectivity.json

@@ -1161,3 +1161,8 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 ## A diagonal-specialization false positive
 
 - [An encoded cube tensor that passes only the diagonal screen](cube-pair-encoding-specialization.md)
+
+
+## All-field survival of the full-tail band
+
+- [An explicit left inverse for every nonzero hot functional](coherent-tail-injectivity.md)
