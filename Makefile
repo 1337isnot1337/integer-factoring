@@ -2987,3 +2987,7 @@ verify-normalized-support-gap:
 .PHONY: verify-rectangular-coordinate-support
 verify-rectangular-coordinate-support:
 	python3 tools/check_rectangular_coordinate_support.py
+
+.PHONY: verify-regularized-transpose-words
+verify-regularized-transpose-words:
+	python3 tools/check_regularized_transpose_words.py

@@ -1,5 +1,7 @@
 # Research index
 
+- [Weighted transpose words around a rank-one bottleneck](regularized-transpose-sandwiches.md): a three-factor F4 construction gives rank one at zero at every alphabet size; non-diagonal sandwiches retain the bottleneck and an odd-factor opposite leading rank. Literal controls include 913 independent entries and a complete q12 degree-23 profile; an eight-input pressure pilot is registered. No favorable rate is claimed.
+
 - [Coordinate support on different physical alphabets](rectangular-coordinate-support.md): the credited XOR/projection proof gives an all-field rank-sum lower bound for any piece count and independent coordinate alphabets, forcing balanced rho at least 3/4 in that support class. Non-diagonal channels and arbitrary retractions remain outside it.
 
 - [Normalize the angle scale of the support gap](normalized-support-gap-search.md): sign-preserving heuristic on actual twelve-letter graph tensors, 54 independent derivative comparisons and separate fixed-balanced/free-angle timed tracks. It changes the search landscape, not the critical threshold or score.
