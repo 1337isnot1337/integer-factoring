@@ -149,6 +149,10 @@ verify-joint-energy-conjugations:
 verify-joint-leading-tangent:
 	python3 tools/check_joint_leading_tangent.py
 
+.PHONY: verify-joint-energy-dressings
+verify-joint-energy-dressings:
+	python3 tools/check_joint_energy_dressings.py
+
 .PHONY: verify-group-shears
 verify-group-shears:
 	python3 tools/check_group_shear_crossings.py

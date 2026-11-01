@@ -514,6 +514,11 @@ as a centralizer motion and separate physical diagonal changes.
 Other constant components and weaker order-preserving changes remain
 open. Run `make verify-joint-energy-conjugations` and
 `make verify-joint-leading-tangent`.
+The [polynomial dressing reduction](research/joint-energy-polynomial-dressings.md)
+also handles arbitrary polynomial degrees in its four-dimensional
+nilpotent sector: retaining the original worst pole and rank-one leading
+coefficient reduces the seed to a constant conjugate, over every
+characteristic-two field. Run `make verify-joint-energy-dressings`.
 
 The [group-shear extension](research/group-shear-crossings.md) implements
 the swap through three multiplication/division shears over any finite

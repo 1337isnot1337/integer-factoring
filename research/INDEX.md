@@ -390,6 +390,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 - [Joint energy conjugations](joint-energy-conjugations.md): joint-pair changes preserve one entire weighted Smith profile; a 16-dimensional bimodule enumerates the complete 1,296-member F4 orbit fixing the five-letter reference's leading coefficient, and exact prefix dominance excludes any scale improvement at its natural heights; a tangent identity classifies all formal leading-rank-one motions near the identity.
 
+- [Polynomial joint-energy dressings](joint-energy-polynomial-dressings.md): a four-dimensional square-zero sector preserves one full profile; 180 quadratic identities and two explicit leading minors reduce every degree over every characteristic-two field to a constant conjugate when the original worst pole and leading rank are retained.
+
 - [Group-shear crossings](group-shear-crossings.md): multiplication/division shears give cubic swap paths over every finite `p`-group in characteristic `p`; exact early-jet certificates exclude six displayed binary seeds, without an all-group claim.
 
 - [All-degree homogeneous Boolean charge bands](homogeneous-boolean-charge-bands.md): a degree-independent loss cap and stronger Gaussian floors exclude all exterior charges and a linearly growing interior band, including overlapping monomials.
