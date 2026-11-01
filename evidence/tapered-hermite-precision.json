@@ -1,0 +1,341 @@
+{
+  "status": "PASS",
+  "literal_shifted_polynomial_expansions": 588,
+  "literal_coefficient_integrality_checks": 34812,
+  "literal_active_center_content_checks": 432,
+  "closed_formula_parameter_checks": 183040,
+  "small_witnesses": [
+    {
+      "a": 1,
+      "u": 1,
+      "M": 1,
+      "degree": 2,
+      "maximum_allowed_degree": 3,
+      "content_by_active_valuation": {
+        "0": 3
+      }
+    },
+    {
+      "a": 1,
+      "u": 1,
+      "M": 2,
+      "degree": 4,
+      "maximum_allowed_degree": 6,
+      "content_by_active_valuation": {
+        "0": 6
+      }
+    },
+    {
+      "a": 1,
+      "u": 1,
+      "M": 3,
+      "degree": 6,
+      "maximum_allowed_degree": 9,
+      "content_by_active_valuation": {
+        "0": 9
+      }
+    },
+    {
+      "a": 2,
+      "u": 1,
+      "M": 1,
+      "degree": 4,
+      "maximum_allowed_degree": 7,
+      "content_by_active_valuation": {
+        "0": 7
+      }
+    },
+    {
+      "a": 2,
+      "u": 1,
+      "M": 2,
+      "degree": 8,
+      "maximum_allowed_degree": 14,
+      "content_by_active_valuation": {
+        "0": 14
+      }
+    },
+    {
+      "a": 2,
+      "u": 1,
+      "M": 3,
+      "degree": 12,
+      "maximum_allowed_degree": 21,
+      "content_by_active_valuation": {
+        "0": 21
+      }
+    },
+    {
+      "a": 2,
+      "u": 2,
+      "M": 2,
+      "degree": 10,
+      "maximum_allowed_degree": 14,
+      "content_by_active_valuation": {
+        "0": 12,
+        "1": 3
+      }
+    },
+    {
+      "a": 2,
+      "u": 2,
+      "M": 3,
+      "degree": 10,
+      "maximum_allowed_degree": 21,
+      "content_by_active_valuation": {
+        "0": 12,
+        "1": 3
+      }
+    },
+    {
+      "a": 2,
+      "u": 2,
+      "M": 5,
+      "degree": 20,
+      "maximum_allowed_degree": 35,
+      "content_by_active_valuation": {
+        "0": 24,
+        "1": 6
+      }
+    },
+    {
+      "a": 3,
+      "u": 1,
+      "M": 1,
+      "degree": 8,
+      "maximum_allowed_degree": 15,
+      "content_by_active_valuation": {
+        "0": 15
+      }
+    },
+    {
+      "a": 3,
+      "u": 1,
+      "M": 2,
+      "degree": 16,
+      "maximum_allowed_degree": 30,
+      "content_by_active_valuation": {
+        "0": 30
+      }
+    },
+    {
+      "a": 3,
+      "u": 1,
+      "M": 3,
+      "degree": 24,
+      "maximum_allowed_degree": 45,
+      "content_by_active_valuation": {
+        "0": 45
+      }
+    },
+    {
+      "a": 3,
+      "u": 2,
+      "M": 2,
+      "degree": 20,
+      "maximum_allowed_degree": 30,
+      "content_by_active_valuation": {
+        "0": 26,
+        "1": 7
+      }
+    },
+    {
+      "a": 3,
+      "u": 2,
+      "M": 3,
+      "degree": 20,
+      "maximum_allowed_degree": 45,
+      "content_by_active_valuation": {
+        "0": 26,
+        "1": 7
+      }
+    },
+    {
+      "a": 3,
+      "u": 2,
+      "M": 5,
+      "degree": 40,
+      "maximum_allowed_degree": 75,
+      "content_by_active_valuation": {
+        "0": 52,
+        "1": 14
+      }
+    },
+    {
+      "a": 3,
+      "u": 3,
+      "M": 3,
+      "degree": 34,
+      "maximum_allowed_degree": 45,
+      "content_by_active_valuation": {
+        "0": 33,
+        "1": 12,
+        "2": 3
+      }
+    },
+    {
+      "a": 3,
+      "u": 3,
+      "M": 4,
+      "degree": 34,
+      "maximum_allowed_degree": 60,
+      "content_by_active_valuation": {
+        "0": 33,
+        "1": 12,
+        "2": 3
+      }
+    },
+    {
+      "a": 3,
+      "u": 3,
+      "M": 7,
+      "degree": 68,
+      "maximum_allowed_degree": 105,
+      "content_by_active_valuation": {
+        "0": 66,
+        "1": 24,
+        "2": 6
+      }
+    },
+    {
+      "a": 4,
+      "u": 1,
+      "M": 1,
+      "degree": 16,
+      "maximum_allowed_degree": 31,
+      "content_by_active_valuation": {
+        "0": 31
+      }
+    },
+    {
+      "a": 4,
+      "u": 1,
+      "M": 2,
+      "degree": 32,
+      "maximum_allowed_degree": 62,
+      "content_by_active_valuation": {
+        "0": 62
+      }
+    },
+    {
+      "a": 4,
+      "u": 1,
+      "M": 3,
+      "degree": 48,
+      "maximum_allowed_degree": 93,
+      "content_by_active_valuation": {
+        "0": 93
+      }
+    },
+    {
+      "a": 4,
+      "u": 2,
+      "M": 2,
+      "degree": 40,
+      "maximum_allowed_degree": 62,
+      "content_by_active_valuation": {
+        "0": 54,
+        "1": 15
+      }
+    },
+    {
+      "a": 4,
+      "u": 2,
+      "M": 3,
+      "degree": 40,
+      "maximum_allowed_degree": 93,
+      "content_by_active_valuation": {
+        "0": 54,
+        "1": 15
+      }
+    },
+    {
+      "a": 4,
+      "u": 2,
+      "M": 5,
+      "degree": 80,
+      "maximum_allowed_degree": 155,
+      "content_by_active_valuation": {
+        "0": 108,
+        "1": 30
+      }
+    },
+    {
+      "a": 4,
+      "u": 3,
+      "M": 3,
+      "degree": 68,
+      "maximum_allowed_degree": 93,
+      "content_by_active_valuation": {
+        "0": 69,
+        "1": 26,
+        "2": 7
+      }
+    },
+    {
+      "a": 4,
+      "u": 3,
+      "M": 4,
+      "degree": 68,
+      "maximum_allowed_degree": 124,
+      "content_by_active_valuation": {
+        "0": 69,
+        "1": 26,
+        "2": 7
+      }
+    },
+    {
+      "a": 4,
+      "u": 3,
+      "M": 7,
+      "degree": 136,
+      "maximum_allowed_degree": 217,
+      "content_by_active_valuation": {
+        "0": 138,
+        "1": 52,
+        "2": 14
+      }
+    },
+    {
+      "a": 4,
+      "u": 4,
+      "M": 4,
+      "degree": 98,
+      "maximum_allowed_degree": 124,
+      "content_by_active_valuation": {
+        "0": 78,
+        "1": 33,
+        "2": 12,
+        "3": 3
+      }
+    },
+    {
+      "a": 4,
+      "u": 4,
+      "M": 5,
+      "degree": 98,
+      "maximum_allowed_degree": 155,
+      "content_by_active_valuation": {
+        "0": 78,
+        "1": 33,
+        "2": 12,
+        "3": 3
+      }
+    },
+    {
+      "a": 4,
+      "u": 4,
+      "M": 9,
+      "degree": 196,
+      "maximum_allowed_degree": 279,
+      "content_by_active_valuation": {
+        "0": 156,
+        "1": 66,
+        "2": 24,
+        "3": 6
+      }
+    }
+  ],
+  "seconds": 3.05,
+  "scope": "An indistinguishability witness for the source polynomial class and residue grid, not a factoring lower bound."
+}

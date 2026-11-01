@@ -1,0 +1,41 @@
+{
+  "scope": "Finite exact controls for scalar-parity transfer; witness enumeration is a reference oracle, not a fast evaluator.",
+  "counts": {
+    "prime_completeness": 6542,
+    "completeness_cases": 65534,
+    "repeated_prime_completeness": 25691,
+    "squarefree_completeness": 33301,
+    "factor_calls": 90273,
+    "lower_root_queries": 78725,
+    "complete_factorizations": 16383,
+    "power_root_queries": 248101,
+    "prefix_queries": 483304,
+    "power_successes": 11548,
+    "power_count_controls": 48879,
+    "lower_successes": 25397,
+    "interval_controls": 52,
+    "power_width_controls": 113618,
+    "greedy_cluster_controls": 96,
+    "constructor_schedule_controls": 189,
+    "free_output_carry_controls": 1384
+  },
+  "nonleast_witness_control": {
+    "integer": 36,
+    "power": 2,
+    "support": [
+      2,
+      3,
+      6
+    ],
+    "recovered": 6
+  },
+  "overflow_negative_control": {
+    "integer": 17,
+    "root": 3,
+    "power": 4,
+    "full_power": 81,
+    "truncated_power": 17
+  },
+  "source_revision": "c91cc3f4947caca8977e81a5d14244f73b5ae2b1",
+  "checker_sha256": "ec1b7e496cdd51bf52885366b9b0d41d33a57afa0a843218c990a5f0425e5b5c"
+}

@@ -1,7 +1,18 @@
 # Research index
 
+## A three-axis crossing interface
+
+- [An actual common three-cut Gaussian family](cube-homogeneous-gaussian.md): one homogeneous multivariate endpoint, exact three-cut Smith factors, a rational `rho=5/8` certificate, and an all-scale floor for its declared Cayley method; no score improvement.
+- [Cube geometry and a complete conditional transfer](cube-crossing-transfer.md): antipodal cube edges, equitable regrouping, effective entry queries, and `alpha=log_3(1/rho)`; a new local family below `1/sqrt(3)` is still required to improve the score.
+
+## Coherent physical crossing spaces
+
+- [Deletion-closed spaces and complete compound profiles](coherent-hot-compound-retractions.md): derivative inverse systems, differential kernels, separate cut compressions, exact `rho < 1781/2501`, and all-scale optimality in a declared 121-map binary boundary class.
+- [Mixed-occupation height boundaries](coherent-hot-mixed-boundary.md): exact parity-block evaluation expands the height-16 boundary family to 496 maps; the extension alone does not improve the factoring exponent.
+
 ## Composite-cofactor relations
 
+- [Composite-ideal closure and integral elimination](cofactor-ideal-closure.md): fixed norm weights certify all augmented rows; a definition forest removes every residual generator over the integers, avoiding rational-rank selection; complete controls reach 144 bits.
 - [Exact composite-cofactor selection](cofactor-collision-selection.md): signed residual-ideal keys, fixed-base collision rows, exact rational-span retention, and matched 92-bit/124-bit finite controls.
 - [An explicit admissible quota](cofactor-collision-quota.md): a finite key count and weighted dominance force full relation rank; the uniform time to collect admissible hits remains open.
 
@@ -470,6 +481,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Formal polynomial energy-gauge rigidity](joint-polynomial-formal-rigidity.md): two exact direct sums classify all polynomial tangent degrees; every identity-based formal energy gauge retaining the original pole and leading rank factors into a constant gauge and a tensor-preserving full-commutant unit, without a generator or nilpotency assumption.
 - [Discrete joint lattice modifications](joint-monomial-lattice-modifications.md): difference constraints classify all integer joint coordinate charges into 12 effective tensors with dominated profiles; exact all-field polynomial/Frobenius elimination also classifies arbitrary energy-block projector modifications at every positive depth into four tensor-preserving projectors under the stated conditions.
 - [Single-evaluation energy algebra and global rational rigidity](joint-evaluation-algebra.md): a triangular minor `t^1452(t+1)^350` proves a localized 169-dimensional algebra identity over every characteristic-two field; every rational energy-preserving matrix gauge regular at zero, one and infinity that yields a polynomial seed reduces to a constant conjugation, without a generator or formal-family restriction.
+- [Singular endpoint rational loops](joint-endpoint-rational-loops.md): every scalar-rational gauge with a constant square-zero energy generator of arbitrary rank reduces to three endpoint principal parts under the stated conditions, by single-evaluation invariance and all-degree Riccati reduction; two symbolic minors and 67 positive Bernstein coefficients prove `rho>=3/4` over every characteristic-two field at the inherited heights, and 130 fraction-free profiles give the complete F4 comparison.
 
 - [Group-shear crossings](group-shear-crossings.md): multiplication/division shears give cubic swap paths over every finite `p`-group in characteristic `p`; exact early-jet certificates exclude six displayed binary seeds, without an all-group claim.
 
@@ -866,3 +878,40 @@ Integrated from [exact PR #30 source](https://github.com/1337isnot1337/integer-f
 - [Factoring from unitary orbit counts in every fixed characteristic](unitary-orbit-factor-recovery.md)
 - [A top-clique compiler for weighted deterministic gate networks](weighted-network-top-compiler.md)
 - [The complete partition crossing over the integral Schur lattice](integral-schur-crossing-pr30.md)
+
+## PR #31 scalar transfers and construction controls
+
+These research notes and finite checks do not establish an exponent above 1/2. The divisor-count oracle concerns the maximum below a bound, not the divisor count of a supplied integer.
+
+- [An explicit polynomial divisor oracle with computed benefit certificates](adaptive-benefit-divisor-preprocessing.md)
+- [Arithmetic initial forms of rational crossing paths](arithmetic-crossing-initial-forms.md)
+- [Carry-based row-unimodular swap circuits](carry-swap-circuits.md)
+- [Exact two-adic channels for Cauchy blocks](cauchy-two-adic-smith.md)
+- [Arbitrary-bound divisor maxima and logspace record membership](certified-divisor-oracle.md)
+- [A three-CNOT crossing path and its tensor modules](cnot-crossing-modules.md)
+- [Column-prefix budgets for polynomial crossings](cnot-cut-budgets.md)
+- [The full CNOT tensor span: exact ranks and rank-one structure](cnot-full-tensor-span.md)
+- [The full sixteen-label CNOT span misses the strict seed target](cnot-sixteen-label-span.md)
+- [Compatible integer compression cores extend the all-field cutoff to 97](compatible-compression-budget.md)
+- [Compatible compression and rational cuts exclude formal seeds through 73](compatible-formal-cutoff.md)
+- [Exact divisor-count preprocessing from next-prime exchanges](exchange-divisor-preprocessing.md)
+- [A majority-state precision witness for the exterior Cauchy lift](exterior-majority-precision-witness.md)
+- [Factoring from scalar counts in any fixed prime characteristic](fixed-prime-factor-transfer.md)
+- [Geometric transpose channels and their two-channel inverses](geometric-transpose-crossings.md)
+- [Binary interior Jacobians extend the finite crossing cutoff to 96 labels](interior-jacobian-budget.md)
+- [Exact divisor maxima through 32,768 input bits](large-divisor-checkpoints.md)
+- [Two finite searches for regular binary q8 cycle sources](low-choi-cycle-searches.md)
+- [A mixed-cut rank budget for every crossing decomposition](mixed-cut-rank-budget.md)
+- [Regular roots with a rank-two terminal power](modified-transpose-root-target.md)
+- [Nilpotent superoperators give exact crossing families](nilpotent-flag-crossings.md)
+- [Scalar parity suffices for the factoring transfer](parity-factor-transfer.md)
+- [Partial transpose bounds the early ranks of nilpotent crossings](partial-transpose-power-rank.md)
+- [Polynomial exact divisor preprocessing from Nicolas's exponent theorem](polynomial-divisor-preprocessing.md)
+- [Faster exact divisor-count preprocessing by primorial weights](primorial-weighted-divisor-preprocessing.md)
+- [Arithmetic initial forms of quantum-spin crossing paths](quantum-crossing-initial-forms.md)
+- [Rank-one fixed pairs of invertible rank-two transpose channels](rank-one-fixed-pairs.md)
+- [Regular pencils and the complete normalized rank-two channel form](rank-two-channel-normal-form.md)
+- [Rational cut meshes extend the exact finite-seed cutoffs](rational-cut-mesh-budget.md)
+- [Rough inputs remove the sparse-transfer exponent ceiling](rough-sparse-transfer.md)
+- [A strict mixed-cut budget excludes every local crossing through q=12](strict-mixed-cut-gate.md)
+- [A witness for the tapered Hermite precision scale](tapered-hermite-precision-witness.md)

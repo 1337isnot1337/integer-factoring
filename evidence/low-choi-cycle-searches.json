@@ -1,0 +1,71 @@
+{
+  "status": "completed finite searches; no local Smith-profile survivor",
+  "default_check_scope": "class sizes and representative witnesses; full native reruns are optional",
+  "quadratic_feedback": {
+    "feedback_choices": 65536,
+    "full_cycles": 1952,
+    "balanced_partitions": 10,
+    "full_cycle_partition_cases": 19520,
+    "leading_rank_histogram": {
+      "3": 80,
+      "4": 752,
+      "5": 1406,
+      "at_least_6": 17282
+    },
+    "first_jet_survivors": 0,
+    "representative_feedback_mask": 4244438269,
+    "representative_partition_mask": 13,
+    "representative": {
+      "full_cycle_length": 64,
+      "leading_rank": 5,
+      "square_rank": 8,
+      "order_one_count": 7,
+      "first_jet_cost_floor": 761
+    }
+  },
+  "linear_gauges": {
+    "primitive_taps": [
+      3,
+      27,
+      33,
+      39,
+      45,
+      51
+    ],
+    "row_subspaces": 1395,
+    "complements_per_subspace": 512,
+    "ordered_decompositions": 714240,
+    "cases": 4285440,
+    "conservative_linear_prefilter_passes": 258552,
+    "leading_rank_at_most_five": 3360,
+    "leading_rank_histogram": {
+      "3": 120,
+      "4": 96,
+      "5": 3144
+    },
+    "minimum_first_jet_floor_by_leading_rank": {
+      "3": 2145,
+      "4": 2272,
+      "5": 824
+    },
+    "first_jet_survivors": 0,
+    "representative_taps": 3,
+    "representative_row_basis": [
+      1,
+      2,
+      8
+    ],
+    "representative_column_basis": [
+      4,
+      16,
+      32
+    ],
+    "representative": {
+      "full_cycle_length": 64,
+      "leading_rank": 5,
+      "square_rank": 9,
+      "order_one_count": 8,
+      "first_jet_cost_floor": 824
+    }
+  }
+}
