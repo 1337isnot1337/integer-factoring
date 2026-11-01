@@ -127,6 +127,8 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs five groups on 
 
 ## Current research frontier
 
+- [Rational-family specialization](research/rational-family-transfer.md), [exact modular half endpoint](research/modular-half-endpoint.md), and the [PR #24 checkpoint](research/INDEX.md#retained-pr-24-effective-family-and-finite-rank-checkpoint): effective interfaces and scoped finite or uniform rank barriers. No exponent above `1/2` or new Lean result is claimed. Run `make verify-pr24` for the checkpoint checks.
+
 - [Sublinear working-space refinement](research/sublinear-space-half-rate.md) and [direct exact divisor counts](research/direct-sublinear-divisor-counts.md): PR #23 supplies ordinary time-space proofs and exact finite controls, retaining the half-rate time bound. Its [full checkpoint index](research/INDEX.md#retained-pr-23-time-space-and-crossing-checkpoint) also preserves related crossing constructions and scoped obstructions. Integration is not independent mathematical acceptance; no new Lean or stronger exponent is claimed. Run `make verify-pr23` for the source checkpoint checks.
 
 - [Weighted fixed-characteristic transfer](research/fixed-characteristic-transfer.md), [polynomial Pfaffian profiles](research/modular-pfaffian.md), and [shared-mode Schur reduction](research/fermi-sea-schur.md): retained PR #22 constructions, effective evaluation, and scoped obstructions. No improved exponent is claimed. Run `make verify-modular` for the extended exact controls.
@@ -308,6 +310,9 @@ product 2304; that finite block cannot improve the rate. Run
 The [spin-zero jet identities](research/bounded-spin-three-jets.md)
 hold at every length and bound the coefficient span by `n-2` for even
 `n>=6`; ordinary cut-rank growth remains open.
+A [direct orthogonal-group argument](research/four-qubit-orthogonal-generators.md)
+now supplies the degree `2,4,4,6` four-qubit generators in characteristic
+five, with explicit restrictions to the pencil. It supplies no cut-rank bound.
 An [enlarged six-vertex construction](research/bounded-spin-six-vertex.md)
 exposes the complete monomial span with degree `O(n^2)` and the same
 strict endpoint. At eight sites it adds a seventh tensor direction;

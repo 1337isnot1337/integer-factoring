@@ -1,0 +1,51 @@
+{
+  "status": "all-size characteristic-two pairing-type obstruction; no factoring lower bound",
+  "local_block_entries_checked": 151992,
+  "common_functional_cases": 88,
+  "multiplicity_cases": 960,
+  "rho_intervals": [
+    {
+      "seed_dimension": 2,
+      "rho_lower": "0.499999999999",
+      "rho_upper": "0.500000000001",
+      "half_threshold_excluded_by_this_bound": false
+    },
+    {
+      "seed_dimension": 3,
+      "rho_lower": "0.630929753571",
+      "rho_upper": "0.630929753572",
+      "half_threshold_excluded_by_this_bound": false
+    },
+    {
+      "seed_dimension": 4,
+      "rho_lower": "0.701838730514",
+      "rho_upper": "0.701838730515",
+      "half_threshold_excluded_by_this_bound": false
+    },
+    {
+      "seed_dimension": 5,
+      "rho_lower": "0.744948051202",
+      "rho_upper": "0.744948051203",
+      "half_threshold_excluded_by_this_bound": true
+    },
+    {
+      "seed_dimension": 6,
+      "rho_lower": "0.773705614469",
+      "rho_upper": "0.773705614470",
+      "half_threshold_excluded_by_this_bound": true
+    },
+    {
+      "seed_dimension": 7,
+      "rho_lower": "0.794240796487",
+      "rho_upper": "0.794240796488",
+      "half_threshold_excluded_by_this_bound": true
+    },
+    {
+      "seed_dimension": 8,
+      "rho_lower": "0.809663499187",
+      "rho_upper": "0.809663499188",
+      "half_threshold_excluded_by_this_bound": true
+    }
+  ],
+  "source_sha256": "a2d975c3f76e73f604691e51aae16c385aa09403b9e61e9159e3753854be70d4"
+}

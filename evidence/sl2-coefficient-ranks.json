@@ -1,0 +1,497 @@
+{
+  "status": "exact rank engine and solved reciprocal-pencil rate; no factoring improvement",
+  "full": true,
+  "exhaustive_direct_boolean_rank_cases": 2046,
+  "independent_global_pencil_rank_cases": 40,
+  "character_and_block_checks": 322,
+  "saddle_intervals": {
+    "minimizer": {
+      "lower": "1.948976630276",
+      "upper": "1.948976630277"
+    },
+    "rank_growth_base": {
+      "lower": "11.620139083019",
+      "upper": "11.620139083020"
+    },
+    "optimal_leading_rho": {
+      "lower": "0.884638857886",
+      "upper": "0.884638857887"
+    }
+  },
+  "exact_finite_span_optima": [
+    {
+      "word_length": 1,
+      "binary_width": 2,
+      "exact_full_span_cutoff": 49,
+      "witness": [
+        {
+          "coefficient_mask": "0x1",
+          "row_rank": 3,
+          "column_rank": 16
+        },
+        {
+          "coefficient_mask": "0x4",
+          "row_rank": 16,
+          "column_rank": 3
+        },
+        {
+          "coefficient_mask": "0x2",
+          "row_rank": 7,
+          "column_rank": 7
+        }
+      ]
+    },
+    {
+      "word_length": 2,
+      "binary_width": 4,
+      "exact_full_span_cutoff": 6241,
+      "witness": [
+        {
+          "coefficient_mask": "0x1",
+          "row_rank": 9,
+          "column_rank": 256
+        },
+        {
+          "coefficient_mask": "0x10",
+          "row_rank": 256,
+          "column_rank": 9
+        },
+        {
+          "coefficient_mask": "0x2",
+          "row_rank": 24,
+          "column_rank": 126
+        },
+        {
+          "coefficient_mask": "0x8",
+          "row_rank": 126,
+          "column_rank": 24
+        },
+        {
+          "coefficient_mask": "0x4",
+          "row_rank": 79,
+          "column_rank": 79
+        }
+      ]
+    },
+    {
+      "word_length": 3,
+      "binary_width": 6,
+      "exact_full_span_cutoff": 524142,
+      "witness": [
+        {
+          "coefficient_mask": "0x1",
+          "row_rank": 27,
+          "column_rank": 4096
+        },
+        {
+          "coefficient_mask": "0x40",
+          "row_rank": 4096,
+          "column_rank": 27
+        },
+        {
+          "coefficient_mask": "0x2",
+          "row_rank": 81,
+          "column_rank": 2044
+        },
+        {
+          "coefficient_mask": "0x20",
+          "row_rank": 2044,
+          "column_rank": 81
+        },
+        {
+          "coefficient_mask": "0x8",
+          "row_rank": 649,
+          "column_rank": 649
+        },
+        {
+          "coefficient_mask": "0x4",
+          "row_rank": 333,
+          "column_rank": 1574
+        },
+        {
+          "coefficient_mask": "0x10",
+          "row_rank": 1574,
+          "column_rank": 333
+        }
+      ]
+    },
+    {
+      "word_length": 4,
+      "binary_width": 8,
+      "exact_full_span_cutoff": 69872881,
+      "witness": [
+        {
+          "coefficient_mask": "0x1",
+          "row_rank": 81,
+          "column_rank": 65536
+        },
+        {
+          "coefficient_mask": "0x100",
+          "row_rank": 65536,
+          "column_rank": 81
+        },
+        {
+          "coefficient_mask": "0x2",
+          "row_rank": 270,
+          "column_rank": 32760
+        },
+        {
+          "coefficient_mask": "0x80",
+          "row_rank": 32760,
+          "column_rank": 270
+        },
+        {
+          "coefficient_mask": "0x4",
+          "row_rank": 1296,
+          "column_rank": 28222
+        },
+        {
+          "coefficient_mask": "0x40",
+          "row_rank": 28222,
+          "column_rank": 1296
+        },
+        {
+          "coefficient_mask": "0x8",
+          "row_rank": 2928,
+          "column_rank": 12898
+        },
+        {
+          "coefficient_mask": "0x20",
+          "row_rank": 12898,
+          "column_rank": 2928
+        },
+        {
+          "coefficient_mask": "0x10",
+          "row_rank": 8359,
+          "column_rank": 8359
+        }
+      ]
+    },
+    {
+      "word_length": 5,
+      "binary_width": 10,
+      "exact_full_span_cutoff": 6950173104,
+      "witness": [
+        {
+          "coefficient_mask": "0x1",
+          "row_rank": 243,
+          "column_rank": 1048576
+        },
+        {
+          "coefficient_mask": "0x400",
+          "row_rank": 1048576,
+          "column_rank": 243
+        },
+        {
+          "coefficient_mask": "0x2",
+          "row_rank": 891,
+          "column_rank": 524272
+        },
+        {
+          "coefficient_mask": "0x200",
+          "row_rank": 524272,
+          "column_rank": 891
+        },
+        {
+          "coefficient_mask": "0x4",
+          "row_rank": 4806,
+          "column_rank": 480940
+        },
+        {
+          "coefficient_mask": "0x100",
+          "row_rank": 480940,
+          "column_rank": 4806
+        },
+        {
+          "coefficient_mask": "0x8",
+          "row_rank": 12240,
+          "column_rank": 229686
+        },
+        {
+          "coefficient_mask": "0x80",
+          "row_rank": 229686,
+          "column_rank": 12240
+        },
+        {
+          "coefficient_mask": "0x20",
+          "row_rank": 72097,
+          "column_rank": 72097
+        },
+        {
+          "coefficient_mask": "0x10",
+          "row_rank": 38913,
+          "column_rank": 178608
+        },
+        {
+          "coefficient_mask": "0x40",
+          "row_rank": 178608,
+          "column_rank": 38913
+        }
+      ]
+    },
+    {
+      "word_length": 6,
+      "binary_width": 12,
+      "exact_full_span_cutoff": 890579127025,
+      "witness": [
+        {
+          "coefficient_mask": "0x1",
+          "row_rank": 729,
+          "column_rank": 16777216
+        },
+        {
+          "coefficient_mask": "0x1000",
+          "row_rank": 16777216,
+          "column_rank": 729
+        },
+        {
+          "coefficient_mask": "0x2",
+          "row_rank": 2916,
+          "column_rank": 8388576
+        },
+        {
+          "coefficient_mask": "0x800",
+          "row_rank": 8388576,
+          "column_rank": 2916
+        },
+        {
+          "coefficient_mask": "0x4",
+          "row_rank": 17253,
+          "column_rank": 7976892
+        },
+        {
+          "coefficient_mask": "0x400",
+          "row_rank": 7976892,
+          "column_rank": 17253
+        },
+        {
+          "coefficient_mask": "0x8",
+          "row_rank": 48654,
+          "column_rank": 3891244
+        },
+        {
+          "coefficient_mask": "0x200",
+          "row_rank": 3891244,
+          "column_rank": 48654
+        },
+        {
+          "coefficient_mask": "0x20",
+          "row_rank": 353124,
+          "column_rank": 1517882
+        },
+        {
+          "coefficient_mask": "0x80",
+          "row_rank": 1517882,
+          "column_rank": 353124
+        },
+        {
+          "coefficient_mask": "0x10",
+          "row_rank": 170667,
+          "column_rank": 3503522
+        },
+        {
+          "coefficient_mask": "0x100",
+          "row_rank": 3503522,
+          "column_rank": 170667
+        },
+        {
+          "coefficient_mask": "0x40",
+          "row_rank": 943705,
+          "column_rank": 943705
+        }
+      ]
+    },
+    {
+      "word_length": 7,
+      "binary_width": 14,
+      "exact_full_span_cutoff": 96477028266288,
+      "witness": [
+        {
+          "coefficient_mask": "0x1",
+          "row_rank": 2187,
+          "column_rank": 268435456
+        },
+        {
+          "coefficient_mask": "0x4000",
+          "row_rank": 268435456,
+          "column_rank": 2187
+        },
+        {
+          "coefficient_mask": "0x2",
+          "row_rank": 9477,
+          "column_rank": 134217664
+        },
+        {
+          "coefficient_mask": "0x2000",
+          "row_rank": 134217664,
+          "column_rank": 9477
+        },
+        {
+          "coefficient_mask": "0x4",
+          "row_rank": 60507,
+          "column_rank": 130317848
+        },
+        {
+          "coefficient_mask": "0x1000",
+          "row_rank": 130317848,
+          "column_rank": 60507
+        },
+        {
+          "coefficient_mask": "0x8",
+          "row_rank": 186543,
+          "column_rank": 64272572
+        },
+        {
+          "coefficient_mask": "0x800",
+          "row_rank": 64272572,
+          "column_rank": 186543
+        },
+        {
+          "coefficient_mask": "0x10",
+          "row_rank": 704511,
+          "column_rank": 65254338
+        },
+        {
+          "coefficient_mask": "0x400",
+          "row_rank": 65254338,
+          "column_rank": 704511
+        },
+        {
+          "coefficient_mask": "0x20",
+          "row_rank": 1636767,
+          "column_rank": 29439054
+        },
+        {
+          "coefficient_mask": "0x200",
+          "row_rank": 29439054,
+          "column_rank": 1636767
+        },
+        {
+          "coefficient_mask": "0x80",
+          "row_rank": 8322343,
+          "column_rank": 8322343
+        },
+        {
+          "coefficient_mask": "0x40",
+          "row_rank": 4756233,
+          "column_rank": 20284336
+        },
+        {
+          "coefficient_mask": "0x100",
+          "row_rank": 20284336,
+          "column_rank": 4756233
+        }
+      ]
+    },
+    {
+      "word_length": 8,
+      "binary_width": 16,
+      "exact_full_span_cutoff": 13250777839152529,
+      "witness": [
+        {
+          "coefficient_mask": "0x1",
+          "row_rank": 6561,
+          "column_rank": 4294967296
+        },
+        {
+          "coefficient_mask": "0x10000",
+          "row_rank": 4294967296,
+          "column_rank": 6561
+        },
+        {
+          "coefficient_mask": "0x2",
+          "row_rank": 30618,
+          "column_rank": 2147483520
+        },
+        {
+          "coefficient_mask": "0x8000",
+          "row_rank": 2147483520,
+          "column_rank": 30618
+        },
+        {
+          "coefficient_mask": "0x4",
+          "row_rank": 208494,
+          "column_rank": 2110611960
+        },
+        {
+          "coefficient_mask": "0x4000",
+          "row_rank": 2110611960,
+          "column_rank": 208494
+        },
+        {
+          "coefficient_mask": "0x8",
+          "row_rank": 695952,
+          "column_rank": 1047151416
+        },
+        {
+          "coefficient_mask": "0x2000",
+          "row_rank": 1047151416,
+          "column_rank": 695952
+        },
+        {
+          "coefficient_mask": "0x10",
+          "row_rank": 2816208,
+          "column_rank": 1174489630
+        },
+        {
+          "coefficient_mask": "0x1000",
+          "row_rank": 1174489630,
+          "column_rank": 2816208
+        },
+        {
+          "coefficient_mask": "0x20",
+          "row_rank": 7107156,
+          "column_rank": 543518544
+        },
+        {
+          "coefficient_mask": "0x800",
+          "row_rank": 543518544,
+          "column_rank": 7107156
+        },
+        {
+          "coefficient_mask": "0x80",
+          "row_rank": 43936656,
+          "column_rank": 175180242
+        },
+        {
+          "coefficient_mask": "0x200",
+          "row_rank": 175180242,
+          "column_rank": 43936656
+        },
+        {
+          "coefficient_mask": "0x40",
+          "row_rank": 21914640,
+          "column_rank": 404121442
+        },
+        {
+          "coefficient_mask": "0x400",
+          "row_rank": 404121442,
+          "column_rank": 21914640
+        },
+        {
+          "coefficient_mask": "0x100",
+          "row_rank": 115112023,
+          "column_rank": 115112023
+        }
+      ]
+    }
+  ],
+  "primary_sources": [
+    {
+      "title": "Schur-Weyl duality in positive characteristic",
+      "url": "https://arxiv.org/pdf/math/0610591v3",
+      "used": "Lemma 13",
+      "sha256": "187a84c35624b1713db2f1b4e581ac4938a5bb0e12f2d99f26f4da834014184a"
+    },
+    {
+      "title": "SL2 tilting modules in the mixed case",
+      "url": "https://arxiv.org/pdf/2105.07724v2",
+      "used": "Proposition 3.4 and Corollary 3.6, algebraic characteristic two",
+      "sha256": "bc649dfaa1e76ec4682ea6882578517d48dd1d307336c855fec8337cf3253623"
+    }
+  ],
+  "source_sha256": {
+    "check_sl2_boolean_rank.py": "e9e86137e1ab5704777173c1b891185577b766de9418a4b525ca655edbe040f6",
+    "sl2_boolean_rank.py": "325e334092b83a293ed52cfbe0bc76aa9d40756efc77fae1f3dcc2f406e560e8"
+  }
+}

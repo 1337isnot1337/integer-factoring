@@ -1,0 +1,72 @@
+{
+  "status": "all-field full pairing-type obstruction; no factoring lower bound",
+  "local_scalar_nilpotent_entries_checked": 157878,
+  "characteristic_three_certificate": {
+    "polynomial_terms_c_alpha_beta": [
+      [
+        4,
+        0,
+        0,
+        2
+      ],
+      [
+        1,
+        0,
+        3,
+        2
+      ],
+      [
+        3,
+        1,
+        0,
+        1
+      ],
+      [
+        2,
+        1,
+        1,
+        2
+      ],
+      [
+        1,
+        1,
+        2,
+        1
+      ]
+    ],
+    "five_rank_floors": [
+      1296,
+      648,
+      520,
+      912,
+      540
+    ],
+    "supermultiplicative_count_checks": 3025,
+    "repeated_certificate_monomials_checked": 769
+  },
+  "integer_determinant_sector_checks": 16993,
+  "independent_characteristic_three_global_rank_checks": 64,
+  "rho_intervals": {
+    "semisimple_seed_2": {
+      "lower": "0.774397470347",
+      "upper": "0.774397470348"
+    },
+    "semisimple_seed_3": {
+      "lower": "0.733269522816",
+      "upper": "0.733269522817"
+    },
+    "semisimple_seed_4": {
+      "lower": "0.707133841396",
+      "upper": "0.707133841397"
+    },
+    "characteristic_three_seed_three": {
+      "lower": "0.711560037613",
+      "upper": "0.711560037614"
+    },
+    "large_seed_five": {
+      "lower": "0.715338279036",
+      "upper": "0.715338279037"
+    }
+  },
+  "source_sha256": "d2711d9b4e5302bf741e5117af32186e0b02a2af11f3a4002921a4a3730f4f12"
+}

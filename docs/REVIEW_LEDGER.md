@@ -201,3 +201,9 @@ Full `make verify` passed on the reconciled tree: 424 Markdown files, 59 unit te
 ### PR #56 integration record
 
 Exact source `9c35bd30544a43291a1b63293c2c2656e97f098e` by Hao Yan / FanPUYen, merged at `db73b92725469b2e5ab4f49ac01f9c43f04d2f7d`. All eight focused offline overlap-search tests and the default gate passed (362 Markdown files, 59 unit tests and five crossing tests). A live read-only test of source blob `28d396324513a2de64a4264a704c002de3701763` scanned two discussion posts and 36 comments/replies and found a known nested reply. GitHub subsequently confirmed the PR merged. This repairs research coverage; it is not a novelty guarantee or mathematical result.
+
+## 2026-11-01: PR #24 effective-family and finite-rank integration
+
+Exact source head `05d9c1b8aed4f8494ce230f0869f9048ef879474`, with all source attribution and AI disclosures retained. Restored 85 missing files and indexed 19 notes. Preserved main's current half-rate evidence/leaderboard wording rather than restoring the source's outdated pending-acceptance statement. Retained the quantitative modular endpoint cross-reference and all existing default Makefile commands.
+
+All 23 focused checkpoint commands passed under `make verify-pr24`. This includes compilation of the retained C verifiers, independent RUP verification of 8,532 additions against 9,802 initial clauses with four negative proof controls, and the independent classification of 47,677 rank-one outer products in the declared three-label problem. These certify the stated finite problems, not a uniform new rate. Full `make verify` passed on the integration tree: 448 Markdown files, 59 unit tests, five crossing tests and all default gates. The source's conditional rational-family specialization and exact modular half-endpoint remain ordinary proofs. No new Lean work, PR approval review, independent mathematical acceptance, or exponent above `1/2` is claimed.

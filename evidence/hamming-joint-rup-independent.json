@@ -1,0 +1,11 @@
+{
+  "status": "s VERIFIED",
+  "source_url": "https://www.cs.utexas.edu/~marijn/drup/rup-forward.c",
+  "source_sha256": "9b6fb7de79a8a506861d68b607e82e00871ad9a0f7a8b64162b11d420b12a2a2",
+  "source_last_edit": "March 17, 2013 (source comment)",
+  "compile_command": "cc -std=c99 -O2 -mcmodel=large rup-forward.c -o rup-forward",
+  "verification_command": "./rup-forward rank4.cnf rank4.rup",
+  "cnf_sha256": "4857273848046eafd5d3e190af740e68b92af2de7ad670b816f5fdbaf1338281",
+  "rup_payload_sha256": "0ee8a79dd690c5d54c8ec432c4b6389678d4c77dcee9c9512df364b4ca432cdf",
+  "scope": "Independent historical replay of the retained finite certificate; not run by default checks."
+}

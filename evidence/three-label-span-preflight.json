@@ -1,0 +1,12 @@
+{
+  "classifier_cases": 243,
+  "accepted_classifier_cases": 42,
+  "independent_interval_vectors": 6742,
+  "independent_low_product_classification": {
+    "rank_one_outer_products_tested": 47677,
+    "all_product_below_four_tensors": 489,
+    "low_product_span_rank": 27,
+    "separating_functional": "0x120000000000000000"
+  },
+  "source_sha256": "f409a339a7307dd475b6076e2267be1f065a824a5d4a237412f8438794c9eb8f"
+}
