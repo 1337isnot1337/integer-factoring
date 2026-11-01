@@ -1740,6 +1740,10 @@ verify-cube-gaussian:
 verify-two-axis-cube-regrouping:
 	PYTHONPATH=tools python3 tools/check_two_axis_cube_regrouping.py
 
+.PHONY: verify-two-axis-all-dimensions
+verify-two-axis-all-dimensions:
+	PYTHONPATH=tools python3 tools/check_two_axis_all_dimensions.py
+
 .PHONY: verify-pr31-constructions
 verify-pr31-constructions:
 	python3 tools/check_interior_jacobian_budget.py --output /tmp/integer-factoring-interior-jacobian-budget.json

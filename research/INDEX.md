@@ -1,5 +1,7 @@
 # Research index
 
+- [Regrouping a d-axis cube as a two-axis crossing](two-axis-all-dimensions.md): for every d>=3, a global bundling of the 2^d legs by d-2 hidden coordinates turns the same d-cut pieces into a four-superleg crossing with lambda'=2^(d-2)lambda and pressure rho. The relaxed two-axis transfer needs only the total parent width, so the conditional exponent is log_2(1/rho) in every dimension. The d=3 instance matches worker 2's global-pairing repair; a realized d>=4 family with rho<0.607 is the open 0.72 target. No d>=4 family or integrated score is supplied.
+
 - [Exact trace projection with classical Artin--Hasse characters](artin-hasse-trace-projection.md): monomialwise splitting and binary Fourier projection replace the growing-precision algebra cost by 2^r scalar queries, spending r additional precision bits. Full Frobenius orbits sharpen the carry bound; native integer digit evaluation and a stronger factoring score remain open.
 
 - [Trace-constrained exact counts at growing precision](divided-power-trace-lifting.md): a divided-power coefficient algebra of charged dimension (2H)^r retains the Hermite moments of r polynomial trace predicates. The compiler preserves v*w/t carry dimensions, handles scalar unit inverses, and recovers exact counts at H>v*w; no complete integer arithmetic representation is supplied.

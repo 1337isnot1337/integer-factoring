@@ -1,0 +1,491 @@
+{
+  "cut_incidence": [
+    {
+      "dimension": 3,
+      "rows": [
+        {
+          "cut": 0,
+          "parents": [
+            0,
+            1
+          ],
+          "superlegs_split": 0
+        },
+        {
+          "cut": 1,
+          "parents": [
+            0,
+            1
+          ],
+          "superlegs_split": 0
+        },
+        {
+          "cut": 2,
+          "parents": [
+            0,
+            1
+          ],
+          "superlegs_split": 4
+        },
+        {
+          "cut": 0,
+          "parents": [
+            0,
+            2
+          ],
+          "superlegs_split": 0
+        },
+        {
+          "cut": 1,
+          "parents": [
+            0,
+            2
+          ],
+          "superlegs_split": 4
+        },
+        {
+          "cut": 2,
+          "parents": [
+            0,
+            2
+          ],
+          "superlegs_split": 0
+        },
+        {
+          "cut": 0,
+          "parents": [
+            1,
+            2
+          ],
+          "superlegs_split": 4
+        },
+        {
+          "cut": 1,
+          "parents": [
+            1,
+            2
+          ],
+          "superlegs_split": 0
+        },
+        {
+          "cut": 2,
+          "parents": [
+            1,
+            2
+          ],
+          "superlegs_split": 0
+        }
+      ]
+    },
+    {
+      "dimension": 4,
+      "rows": [
+        {
+          "cut": 0,
+          "parents": [
+            0,
+            1
+          ],
+          "superlegs_split": 0
+        },
+        {
+          "cut": 1,
+          "parents": [
+            0,
+            1
+          ],
+          "superlegs_split": 0
+        },
+        {
+          "cut": 2,
+          "parents": [
+            0,
+            1
+          ],
+          "superlegs_split": 4
+        },
+        {
+          "cut": 3,
+          "parents": [
+            0,
+            1
+          ],
+          "superlegs_split": 4
+        },
+        {
+          "cut": 0,
+          "parents": [
+            0,
+            2
+          ],
+          "superlegs_split": 0
+        },
+        {
+          "cut": 1,
+          "parents": [
+            0,
+            2
+          ],
+          "superlegs_split": 4
+        },
+        {
+          "cut": 2,
+          "parents": [
+            0,
+            2
+          ],
+          "superlegs_split": 0
+        },
+        {
+          "cut": 3,
+          "parents": [
+            0,
+            2
+          ],
+          "superlegs_split": 4
+        },
+        {
+          "cut": 0,
+          "parents": [
+            0,
+            3
+          ],
+          "superlegs_split": 0
+        },
+        {
+          "cut": 1,
+          "parents": [
+            0,
+            3
+          ],
+          "superlegs_split": 4
+        },
+        {
+          "cut": 2,
+          "parents": [
+            0,
+            3
+          ],
+          "superlegs_split": 4
+        },
+        {
+          "cut": 3,
+          "parents": [
+            0,
+            3
+          ],
+          "superlegs_split": 0
+        },
+        {
+          "cut": 0,
+          "parents": [
+            1,
+            2
+          ],
+          "superlegs_split": 4
+        },
+        {
+          "cut": 1,
+          "parents": [
+            1,
+            2
+          ],
+          "superlegs_split": 0
+        },
+        {
+          "cut": 2,
+          "parents": [
+            1,
+            2
+          ],
+          "superlegs_split": 0
+        },
+        {
+          "cut": 3,
+          "parents": [
+            1,
+            2
+          ],
+          "superlegs_split": 4
+        },
+        {
+          "cut": 0,
+          "parents": [
+            1,
+            3
+          ],
+          "superlegs_split": 4
+        },
+        {
+          "cut": 1,
+          "parents": [
+            1,
+            3
+          ],
+          "superlegs_split": 0
+        },
+        {
+          "cut": 2,
+          "parents": [
+            1,
+            3
+          ],
+          "superlegs_split": 4
+        },
+        {
+          "cut": 3,
+          "parents": [
+            1,
+            3
+          ],
+          "superlegs_split": 0
+        },
+        {
+          "cut": 0,
+          "parents": [
+            2,
+            3
+          ],
+          "superlegs_split": 4
+        },
+        {
+          "cut": 1,
+          "parents": [
+            2,
+            3
+          ],
+          "superlegs_split": 4
+        },
+        {
+          "cut": 2,
+          "parents": [
+            2,
+            3
+          ],
+          "superlegs_split": 0
+        },
+        {
+          "cut": 3,
+          "parents": [
+            2,
+            3
+          ],
+          "superlegs_split": 0
+        }
+      ]
+    }
+  ],
+  "endpoint_regrouping": [
+    {
+      "assignments": 256,
+      "dimension": 3,
+      "endpoint_cases": 768,
+      "pairings": 3
+    },
+    {
+      "assignments": 65536,
+      "dimension": 4,
+      "endpoint_cases": 393216,
+      "pairings": 6
+    }
+  ],
+  "factoring_exponent_improved": false,
+  "profile_diagnostic": {
+    "at": [
+      0.2075,
+      0.4325
+    ],
+    "grid": 400,
+    "minimum": 0.6247205350911228,
+    "scope": "bounded numerical diagnostic, not a global optimum proof"
+  },
+  "scope": "Exact endpoint regrouping and width arithmetic for a global two-axis use of a d-axis cube family, d>=3. No d>=4 family, no new factoring exponent, and no re-proof of the two-axis transfer are supplied.",
+  "source_sha256": {
+    "certify_cube_optimized_type.py": "5eb4f5d50ec6e031ace2bbc92e7a2eef3ce889a3733fefa0142f2b2c7ce2c827",
+    "check_two_axis_all_dimensions.py": "90ba973bcaf19622878b7bfd7eec3d0f239504b49f1d163495da4e047a4d69da",
+    "cube_homogeneous_gaussian.py": "2281e1013bca1e6d595e039562be856533d7732e50ab1018b8eed55b5fb24593"
+  },
+  "status": "passed",
+  "three_axis_certificate": {
+    "alpha_lower_bound_diagnostic": 0.6787219752781147,
+    "certificate": {
+      "bits": 192,
+      "bound": [
+        312359221,
+        500000000
+      ],
+      "gap_interval_numerators": [
+        [
+          53124861476837326999361952255972423274154812883902989579667003,
+          15625000000000
+        ],
+        [
+          53124861476837326999361952255972423274154812883970670294792003,
+          15625000000000
+        ]
+      ],
+      "gap_scale": 6277101735386680763835789423207666416102355444464034512896,
+      "passed": true,
+      "physical_type": [
+        208173,
+        1000000
+      ],
+      "rational_r": [
+        217022257,
+        500000000
+      ],
+      "rejected_at_this_point": false,
+      "terms": 96
+    },
+    "coarse_rho": [
+      5,
+      8
+    ],
+    "negative_control_rejected": true,
+    "one_particle_profiles": [
+      [
+        2,
+        4,
+        8,
+        10
+      ],
+      [
+        2,
+        4,
+        8,
+        10
+      ],
+      [
+        2,
+        4,
+        8,
+        10
+      ]
+    ],
+    "optimized_rho": [
+      312359221,
+      500000000
+    ]
+  },
+  "width_arithmetic": [
+    {
+      "d": 3,
+      "four_rho_lambda_prime": [
+        5,
+        1
+      ],
+      "lambda_prime": 2,
+      "parent_pair": [
+        5,
+        1
+      ],
+      "per_cube_total": [
+        15,
+        2
+      ],
+      "separate_width_cap": 4
+    },
+    {
+      "d": 4,
+      "four_rho_lambda_prime": [
+        10,
+        1
+      ],
+      "lambda_prime": 4,
+      "parent_pair": [
+        10,
+        1
+      ],
+      "per_cube_total": [
+        20,
+        1
+      ],
+      "separate_width_cap": 8
+    },
+    {
+      "d": 5,
+      "four_rho_lambda_prime": [
+        20,
+        1
+      ],
+      "lambda_prime": 8,
+      "parent_pair": [
+        20,
+        1
+      ],
+      "per_cube_total": [
+        50,
+        1
+      ],
+      "separate_width_cap": 16
+    },
+    {
+      "d": 6,
+      "four_rho_lambda_prime": [
+        40,
+        1
+      ],
+      "lambda_prime": 16,
+      "parent_pair": [
+        40,
+        1
+      ],
+      "per_cube_total": [
+        120,
+        1
+      ],
+      "separate_width_cap": 32
+    },
+    {
+      "d": 7,
+      "four_rho_lambda_prime": [
+        80,
+        1
+      ],
+      "lambda_prime": 32,
+      "parent_pair": [
+        80,
+        1
+      ],
+      "per_cube_total": [
+        280,
+        1
+      ],
+      "separate_width_cap": 64
+    },
+    {
+      "d": 8,
+      "four_rho_lambda_prime": [
+        160,
+        1
+      ],
+      "lambda_prime": 64,
+      "parent_pair": [
+        160,
+        1
+      ],
+      "per_cube_total": [
+        640,
+        1
+      ],
+      "separate_width_cap": 128
+    },
+    {
+      "d": 9,
+      "four_rho_lambda_prime": [
+        320,
+        1
+      ],
+      "lambda_prime": 128,
+      "parent_pair": [
+        320,
+        1
+      ],
+      "per_cube_total": [
+        1440,
+        1
+      ],
+      "separate_width_cap": 256
+    }
+  ]
+}
