@@ -1,5 +1,7 @@
 # Research index
 
+- [Integral bad-prime spin annihilators](integral-spin-annihilators.md): denominator-cleared spin-eleven seeds have an exact spectator factor at characteristic three; polynomial inverse witnesses bound all local orders by two at 5, 7 and 11, excluding their bare two-place critical target.
+
 - [Collective CSS Pauli compression](collective-css-pauli-compression.md): exact full contraction detects every one-site Pauli error but reproduces a Frobenius/relabelled two-cell source at parameter z^2. All 6,561 polynomial entries and 324 independent orders are checked; even unrestricted physical heights give no new support family.
 
 - [Cyclic Pauli crossings with unrestricted physical types](cyclic-pauli-crossing-diagnostic.md): a three-gate F4 qutrit cell has two nondegenerate leading rank-one cuts; coupled degree-two loops retain the structure and exact charge blocks. All 1,458 orders of a q27 fixture are independently replayed. Bare obstructions gate the completed nine-trial typed diagnostic, whose best support is 1.412832752, above one; this local loop search stops.
