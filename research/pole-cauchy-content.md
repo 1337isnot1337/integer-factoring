@@ -142,7 +142,59 @@ describe the next matrix; evaluating the global scalar remains open.
 One can target this trace or the determinant slope directly, without
 separately computing the potentially larger background contents.
 
-## 6. The exact remaining computational target
+## 6. Exact block elimination and the cross normalization
+
+There is a closed block rule, but its normalization must be charged.
+Partition both ordered node sets into prefixes `A_1,B_1` of the same
+size `r` and remaining sets `A_2,B_2`. Set
+`C_(a,b)=1/(z-a*b)`. Direct elimination gives
+
+```math
+(C_{22}-C_{21}C_{11}^{-1}C_{12})_{a,b}
+=\frac{z^r\prod_{u\in A_1}(a-u)\prod_{v\in B_1}(b-v)}
+ {\prod_{v\in B_1}(z-av)\prod_{u\in A_1}(z-ub)}
+ \frac1{z-ab},\quad a\in A_2,b\in B_2.              \tag{8}
+```
+
+For one pivot, subtracting the rank-one update leaves the numerator
+`z*(a-u)*(b-v)`. Iterating this identity proves (8); diagonal factors
+on eliminated rows and columns cancel from the next Schur update.
+For `M=c*C`, its Schur complement is `c` times (8).
+Thus the kernel remains Cauchy, with diagonal row and column factors
+described by products over the eliminated node intervals.
+
+Let `D_ij` count factor pairs in `A_i cross B_j` and use `z=z_k`.
+The determinant valuation of the row and column factors in (8) has
+`k`-slope exactly `-D_21-D_12`: the static differences and `z^r` have
+constant valuation, while each cross denominator contributes slope one
+precisely at a genuine factor pair. Therefore the Schur determinant's
+slope is
+
+```math
+(m-r)-D_{22}-D_{21}-D_{12}.                         \tag{9}
+```
+
+The eliminated block contributes `r-D_11`, recovering (4). These are
+global cross-rectangle counts. Plain block elimination has moved their
+evaluation into the diagonal normalization factors; dropping those
+factors would lose the answer. Formula (8) provides a compact block
+description, but no smaller bound on the remaining scalar queries.
+
+The normalization can be nonintegral even when the initial `M` is
+integral. Take `N=15`, both node sets `{3,4,5}`, and eliminate `{3,4}`.
+The resulting one-by-one Schur complement is
+
+```math
+\frac{4z_k^2}{2^k w\,(z_k-25)(z_k-20)^2}.
+```
+
+For `k>=3` its valuation is `1-k`, with slope `-1`. The exact checker
+obtains valuations `-6,-7` at `k=7,8`. The full determinant has slope
+one and the eliminated determinant slope two. This is a control for
+the required nonunit normalization, not a lower bound on every possible
+shared-work algorithm.
+
+## 7. The exact remaining computational target
 
 Given odd `N`, the two padded interval domains, and `k=O(n)`, compute
 the slope `E_(k+1)-E_k`, or the normalized scalar in (7) to the precision
@@ -162,7 +214,7 @@ Extending or replacing the normalization in this regime is the concrete
 cross-lane question in
 [Discussion #53](https://github.com/1337isnot1337/integer-factoring/discussions/53).
 
-## 7. Exact finite controls
+## 8. Exact finite controls
 
 A [Discussion #53 contribution](https://github.com/1337isnot1337/integer-factoring/discussions/53#discussioncomment-19324116)
 independently supplied the same Cauchy determinant normalization and
@@ -177,7 +229,8 @@ Gaussian elimination in `Q(w)`, compares the whole determinant with
 (3), and checks the slope against literal factor pairs after padding.
 It also solves for the inverse/Hadamard-square matrix over `Q(w)`,
 compares the exact scalar trace in (7), and checks the entrywise flow
-in (6). Explicit two-pair, square, empty, and padded unequal cases are
+in (6). Literal block solves check (8) and the nonintegral example.
+Explicit two-pair, square, empty, and padded unequal cases are
 included. It independently checks the one- and two-interval Vandermonde
 contents by literal differences. The
 [receipt](../evidence/pole-cauchy-slope.json) records finite controls;
