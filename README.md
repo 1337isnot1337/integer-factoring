@@ -720,6 +720,14 @@ The minimum-cut budget rules out an edge-only completion at large
 widths; a mixed decomposition must supply balanced middle pieces.
 Their checked edge spans also miss the small crossing. Run the NumPy replay
 `make verify-braid-nilpotent-seam`.
+An [exact all-degree rank envelope](research/nilpotent-seam-rank-envelope.md)
+now bounds both cuts throughout that coefficient grid. An eight-counter
+integer recurrence includes the residual vacuum dimensions; exact rational
+certificates give a middle window with both ranks at most `L^(5/4+o(1))`.
+Shoulder windows and cut reflection provide other candidate aspect ratios.
+A compatible graded spanning identity remains open; weighted cut budgets
+rule out completing the crossing from just the edges and middle window.
+Run `make verify-braid-rank-envelope` (NumPy for the complete finite replay).
 
 The [exact nonlinear charge theorem](research/nonlinear-symbol-charge-lattices.md)
 characterizes every admissible pair of full-symbol potentials for the

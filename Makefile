@@ -319,6 +319,10 @@ verify-braid-rank-one:
 verify-braid-nilpotent-seam:
 	python3 tools/check_quantum_braid_nilpotent_seam.py
 
+.PHONY: verify-braid-rank-envelope
+verify-braid-rank-envelope:
+	python3 tools/check_nilpotent_seam_rank_bounds.py
+
 .PHONY: verify-downset-crossings verify-regular-code-crossings
 verify-downset-crossings:
 	python3 tools/check_downset_crossing_normal_form.py

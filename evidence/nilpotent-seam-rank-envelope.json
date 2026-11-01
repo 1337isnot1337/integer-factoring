@@ -1,0 +1,971 @@
+{
+  "status": "pass",
+  "counter_controls": {
+    "literal_ternary_words": 9841,
+    "admissible_words": 8947,
+    "independent_path_dimensions": [
+      1,
+      1,
+      2,
+      5,
+      13,
+      34,
+      89,
+      233,
+      610
+    ],
+    "degree_bound_lengths": 65,
+    "histograms": [
+      {
+        "length": 0,
+        "weighted_degree_histogram": [
+          1
+        ]
+      },
+      {
+        "length": 1,
+        "weighted_degree_histogram": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "length": 2,
+        "weighted_degree_histogram": [
+          2,
+          4,
+          4,
+          2,
+          1
+        ]
+      },
+      {
+        "length": 3,
+        "weighted_degree_histogram": [
+          5,
+          15,
+          21,
+          17,
+          9,
+          3,
+          1
+        ]
+      },
+      {
+        "length": 4,
+        "weighted_degree_histogram": [
+          13,
+          52,
+          98,
+          112,
+          85,
+          44,
+          16,
+          4,
+          0
+        ]
+      },
+      {
+        "length": 5,
+        "weighted_degree_histogram": [
+          34,
+          170,
+          405,
+          600,
+          610,
+          444,
+          235,
+          90,
+          20,
+          3,
+          0
+        ]
+      },
+      {
+        "length": 6,
+        "weighted_degree_histogram": [
+          89,
+          534,
+          1539,
+          2800,
+          3570,
+          3354,
+          2379,
+          1284,
+          495,
+          136,
+          24,
+          2,
+          0
+        ]
+      },
+      {
+        "length": 7,
+        "weighted_degree_histogram": [
+          233,
+          1631,
+          5516,
+          11893,
+          18214,
+          20923,
+          18571,
+          12931,
+          6923,
+          2849,
+          875,
+          183,
+          24,
+          1,
+          0
+        ]
+      },
+      {
+        "length": 8,
+        "weighted_degree_histogram": [
+          610,
+          4880,
+          18944,
+          47208,
+          84336,
+          114352,
+          121604,
+          103384,
+          70078,
+          38040,
+          16380,
+          5408,
+          1325,
+          216,
+          20,
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  "exact_rational_certificates": {
+    "transfer_free_weight": "21/8",
+    "tilt": 256,
+    "transfer_upper_bound": 24000,
+    "positive_vector": [
+      "1",
+      "11/4",
+      "121/16",
+      "1331/64"
+    ],
+    "componentwise_slacks": [
+      "19359/8",
+      "14617/32",
+      "160787/128",
+      "1768657/512"
+    ],
+    "rate_inequalities": {
+      "middle_row": {
+        "lhs": 1287848924694931674961752883200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+        "rhs": 1598335257761788022467377781654101148543282249044465229239888363328190330275719997501596724768507889233831388734160190922469363547795602076820570112
+      },
+      "middle_column": {
+        "lhs": 4587520000000000,
+        "rhs": 6189907940737024
+      },
+      "shoulder_column": {
+        "lhs": 116640000,
+        "rhs": 134217728
+      }
+    },
+    "middle_window": "a>=ceil(12*n/7), b<=floor(n/8): both ranks <= L^(5/4+o(1))",
+    "shoulder_window": "a=2*n-floor(n/4), b<=floor(n/6): ranks <= (L^(1/2+o(1)),L^(3/2+o(1)))"
+  },
+  "independent_reflection_and_rank_controls": 12,
+  "complete_coefficient_rank_pairs_checked": 259,
+  "profiles": [
+    {
+      "length": 4,
+      "labels": 2,
+      "central_degree_bound": 7,
+      "boundary_degree_bound": 4,
+      "central_weight_histogram": [
+        13,
+        52,
+        98,
+        112,
+        85,
+        44,
+        16,
+        4,
+        0
+      ],
+      "row_ranks_by_a_b": [
+        [
+          2,
+          0,
+          2,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          2,
+          2
+        ],
+        [
+          0,
+          0,
+          4,
+          2,
+          4
+        ],
+        [
+          0,
+          0,
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          0,
+          4,
+          4,
+          3
+        ],
+        [
+          1,
+          0,
+          4,
+          2,
+          4
+        ],
+        [
+          1,
+          0,
+          4,
+          4,
+          4
+        ],
+        [
+          1,
+          0,
+          2,
+          0,
+          2
+        ]
+      ],
+      "column_ranks_by_a_b": [
+        [
+          2,
+          0,
+          2,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          2,
+          2
+        ],
+        [
+          0,
+          0,
+          4,
+          2,
+          4
+        ],
+        [
+          0,
+          0,
+          2,
+          2,
+          4
+        ],
+        [
+          2,
+          0,
+          3,
+          4,
+          3
+        ],
+        [
+          1,
+          0,
+          4,
+          2,
+          3
+        ],
+        [
+          1,
+          0,
+          4,
+          3,
+          4
+        ],
+        [
+          1,
+          0,
+          2,
+          0,
+          3
+        ]
+      ],
+      "all_joint_bounds_pass": true
+    },
+    {
+      "length": 6,
+      "labels": 5,
+      "central_degree_bound": 11,
+      "boundary_degree_bound": 6,
+      "central_weight_histogram": [
+        89,
+        534,
+        1539,
+        2800,
+        3570,
+        3354,
+        2379,
+        1284,
+        495,
+        136,
+        24,
+        2,
+        0
+      ],
+      "row_ranks_by_a_b": [
+        [
+          20,
+          0,
+          22,
+          24,
+          23,
+          24,
+          24
+        ],
+        [
+          14,
+          0,
+          18,
+          20,
+          20,
+          20,
+          20
+        ],
+        [
+          21,
+          0,
+          20,
+          24,
+          25,
+          24,
+          22
+        ],
+        [
+          8,
+          12,
+          20,
+          20,
+          20,
+          20,
+          20
+        ],
+        [
+          24,
+          16,
+          25,
+          25,
+          24,
+          24,
+          25
+        ],
+        [
+          18,
+          16,
+          25,
+          25,
+          25,
+          25,
+          25
+        ],
+        [
+          21,
+          19,
+          24,
+          25,
+          25,
+          25,
+          25
+        ],
+        [
+          13,
+          16,
+          25,
+          24,
+          24,
+          25,
+          25
+        ],
+        [
+          13,
+          18,
+          25,
+          25,
+          25,
+          25,
+          25
+        ],
+        [
+          8,
+          7,
+          24,
+          25,
+          25,
+          24,
+          23
+        ],
+        [
+          1,
+          1,
+          7,
+          12,
+          16,
+          12,
+          6
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "column_ranks_by_a_b": [
+        [
+          2,
+          0,
+          9,
+          14,
+          23,
+          20,
+          24
+        ],
+        [
+          4,
+          0,
+          18,
+          20,
+          24,
+          20,
+          24
+        ],
+        [
+          4,
+          0,
+          25,
+          20,
+          24,
+          20,
+          25
+        ],
+        [
+          4,
+          4,
+          24,
+          24,
+          24,
+          24,
+          24
+        ],
+        [
+          7,
+          5,
+          24,
+          25,
+          25,
+          24,
+          24
+        ],
+        [
+          6,
+          5,
+          25,
+          25,
+          25,
+          25,
+          25
+        ],
+        [
+          7,
+          5,
+          25,
+          25,
+          24,
+          25,
+          25
+        ],
+        [
+          7,
+          5,
+          24,
+          25,
+          25,
+          24,
+          25
+        ],
+        [
+          6,
+          6,
+          25,
+          24,
+          24,
+          25,
+          25
+        ],
+        [
+          2,
+          2,
+          25,
+          23,
+          25,
+          24,
+          25
+        ],
+        [
+          1,
+          1,
+          22,
+          24,
+          25,
+          25,
+          25
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "all_joint_bounds_pass": true
+    },
+    {
+      "length": 8,
+      "labels": 13,
+      "central_degree_bound": 14,
+      "boundary_degree_bound": 8,
+      "central_weight_histogram": [
+        610,
+        4880,
+        18944,
+        47208,
+        84336,
+        114352,
+        121604,
+        103384,
+        70078,
+        38040,
+        16380,
+        5408,
+        1325,
+        216,
+        20,
+        0,
+        0
+      ],
+      "row_ranks_by_a_b": [
+        [
+          134,
+          0,
+          162,
+          168,
+          169,
+          168,
+          166,
+          168,
+          167
+        ],
+        [
+          110,
+          0,
+          156,
+          156,
+          156,
+          156,
+          156,
+          156,
+          154
+        ],
+        [
+          144,
+          0,
+          169,
+          168,
+          169,
+          168,
+          169,
+          168,
+          168
+        ],
+        [
+          91,
+          0,
+          156,
+          156,
+          156,
+          156,
+          156,
+          156,
+          156
+        ],
+        [
+          142,
+          0,
+          169,
+          169,
+          169,
+          169,
+          168,
+          168,
+          169
+        ],
+        [
+          140,
+          0,
+          169,
+          168,
+          169,
+          169,
+          169,
+          169,
+          168
+        ],
+        [
+          149,
+          0,
+          168,
+          169,
+          169,
+          169,
+          169,
+          168,
+          168
+        ],
+        [
+          145,
+          0,
+          169,
+          169,
+          169,
+          169,
+          168,
+          168,
+          169
+        ],
+        [
+          147,
+          0,
+          169,
+          169,
+          169,
+          169,
+          169,
+          168,
+          168
+        ],
+        [
+          126,
+          0,
+          169,
+          169,
+          169,
+          169,
+          168,
+          169,
+          169
+        ],
+        [
+          122,
+          0,
+          169,
+          168,
+          169,
+          169,
+          169,
+          169,
+          169
+        ],
+        [
+          86,
+          0,
+          169,
+          169,
+          168,
+          169,
+          169,
+          168,
+          169
+        ],
+        [
+          41,
+          0,
+          169,
+          169,
+          169,
+          169,
+          169,
+          168,
+          110
+        ],
+        [
+          11,
+          0,
+          49,
+          76,
+          113,
+          119,
+          97,
+          60,
+          28
+        ],
+        [
+          1,
+          0,
+          9,
+          16,
+          25,
+          32,
+          25,
+          16,
+          8
+        ]
+      ],
+      "column_ranks_by_a_b": [
+        [
+          2,
+          0,
+          32,
+          52,
+          120,
+          136,
+          167,
+          156,
+          167
+        ],
+        [
+          4,
+          0,
+          80,
+          130,
+          166,
+          156,
+          168,
+          156,
+          168
+        ],
+        [
+          6,
+          0,
+          117,
+          152,
+          168,
+          156,
+          169,
+          156,
+          167
+        ],
+        [
+          14,
+          0,
+          154,
+          164,
+          168,
+          168,
+          168,
+          168,
+          168
+        ],
+        [
+          22,
+          0,
+          155,
+          165,
+          169,
+          169,
+          169,
+          169,
+          168
+        ],
+        [
+          23,
+          0,
+          155,
+          165,
+          169,
+          169,
+          168,
+          169,
+          169
+        ],
+        [
+          23,
+          0,
+          154,
+          165,
+          168,
+          169,
+          169,
+          169,
+          169
+        ],
+        [
+          23,
+          0,
+          155,
+          165,
+          168,
+          169,
+          169,
+          169,
+          169
+        ],
+        [
+          24,
+          0,
+          155,
+          165,
+          169,
+          168,
+          168,
+          168,
+          169
+        ],
+        [
+          24,
+          0,
+          155,
+          165,
+          168,
+          168,
+          168,
+          168,
+          169
+        ],
+        [
+          24,
+          0,
+          155,
+          165,
+          168,
+          169,
+          169,
+          169,
+          168
+        ],
+        [
+          22,
+          0,
+          155,
+          165,
+          169,
+          169,
+          169,
+          169,
+          168
+        ],
+        [
+          15,
+          0,
+          153,
+          164,
+          169,
+          169,
+          169,
+          168,
+          168
+        ],
+        [
+          2,
+          0,
+          116,
+          157,
+          169,
+          168,
+          168,
+          169,
+          169
+        ],
+        [
+          1,
+          0,
+          64,
+          118,
+          163,
+          168,
+          169,
+          169,
+          169
+        ]
+      ],
+      "all_joint_bounds_pass": true
+    }
+  ],
+  "large_exact_bound_examples": [
+    {
+      "length": 32,
+      "central_degree": 55,
+      "boundary_degree": 4,
+      "row_upper_bound": 295516000,
+      "column_upper_bound": 8248360960,
+      "scope": "Exact uncapped bounds with polynomial prefactors; not measured tensor ranks."
+    },
+    {
+      "length": 64,
+      "central_degree": 110,
+      "boundary_degree": 8,
+      "row_upper_bound": 8573606829204336,
+      "column_upper_bound": 515169956237672448,
+      "scope": "Exact uncapped bounds with polynomial prefactors; not measured tensor ranks."
+    },
+    {
+      "length": 128,
+      "central_degree": 220,
+      "boundary_degree": 16,
+      "row_upper_bound": 3679515209462519840396471195560,
+      "column_upper_bound": 1417600869833688105182397097574400,
+      "scope": "Exact uncapped bounds with polynomial prefactors; not measured tensor ranks."
+    },
+    {
+      "length": 256,
+      "central_degree": 439,
+      "boundary_degree": 32,
+      "row_upper_bound": 84002248008674282854996054669917366612363095129965157784058944,
+      "column_upper_bound": 7563938762929691623996363429441436982735498060501921111736320000,
+      "scope": "Exact uncapped bounds with polynomial prefactors; not measured tensor ranks."
+    }
+  ],
+  "scope": "All-degree uniform rank envelopes and certified candidate windows; no favorable complete spanning identity, rank-sum optimum or stronger factoring score.",
+  "source_sha256": {
+    "research/nilpotent-seam-rank-envelope.md": "b1ba68faa267b0e66b2a45f595bbfcb99b41e6fb8316c1b2d7864a8364cc6c1b",
+    "research/nilpotent-seam-crossings.md": "f7446975fd8894ee252602461d8efb13b05a8b45c648a1331805a04fb6ec6844",
+    "tools/nilpotent_seam_rank_bounds.py": "414435c158adfc974746a22c2592054ad93052cc70d8bfa87f34133f98294040",
+    "tools/check_nilpotent_seam_rank_bounds.py": "b59843fc964cfa1f67465d9c3aabaa6d3cb104e6d27a2ef8852cb0d69bd97ebe",
+    "tools/quantum_braid_nilpotent_seam.py": "d1b32af8841288e739d9b089f2439c03f34502d933f4c377f29dca10bc3363d6",
+    "tools/quantum_braid_path.py": "4a6ce2cbad920cbe6dde6b6abf4642675a1d3d13955c8be67e6d0b6c97eae946",
+    "tools/check_quantum_braid_path_profiles.py": "edbc7f1ed7ff0ca35da5ff5603a08cfd528b549b7cf4e9d3ca828c7f447e0af7",
+    "tools/check_fixed_field_descent.py": "831c1fe850b9d21b8d0050e310adaed2586251950542bb7d274e2ffd334ea8ac",
+    "tools/search_auxiliary_extension_span.py": "b819f76b73a6b15509af27de5784b1488c0affe077d4677064291c61ab7c574b",
+    "tools/bounded_spin_crossing.py": "cefc38c88cdf76650f4966fa9e49d0edbc9ce4c2eec3848dd2716f35ee3819bd",
+    "tools/bounded_spin_support.py": "d3771564da3fb1d88ebdc2444f4e62db6754b2f72ad11101ed72a078a2d4a678",
+    "tools/check_fourier_multiplication_gates.py": "b094e9101f867d624aafa7bd851cb00b1ea411d1dc69cb700e742e609f94efc9",
+    "tools/paired_path_crossing.py": "309fb3f10a230475d5fae68625fcee5f5cfb50fc52491cc63f0765a7627c5c4b",
+    "tools/quantum_block_braid.py": "116d689f620a5d8fb784387d3eccc311497f56fbfc05a400ac8188f2c13cfc94"
+  }
+}
