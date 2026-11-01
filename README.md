@@ -716,8 +716,9 @@ now gives complementary asymmetric coefficient families: the highest
 allowed central edge has row rank `L^(1/2+o(1))`, below the
 post-half small-cut threshold, and the opposite edge has polynomial
 column rank. Exact eight-site pairs include `(8,169)` and `(134,2)`.
-Their checked edge spans still miss the crossing; a spanning identity
-or changed template remains necessary. Run the NumPy replay
+The minimum-cut budget rules out an edge-only completion at large
+widths; a mixed decomposition must supply balanced middle pieces.
+Their checked edge spans also miss the small crossing. Run the NumPy replay
 `make verify-braid-nilpotent-seam`.
 
 The [exact nonlinear charge theorem](research/nonlinear-symbol-charge-lattices.md)
