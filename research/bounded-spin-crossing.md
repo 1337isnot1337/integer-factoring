@@ -176,8 +176,10 @@ binary label with that count, and select or skip the branch. Counts have
 The complete crossing entry polynomial therefore has degree `O(lambda)`
 and is computable in polynomial time in `lambda`. Generic dense rank
 factorization over the fixed field is possible in `2^O(lambda)` time,
-but a favorable uniform rank bound and factor algorithms compatible
-with the evaluator remain unproved.
+which meets the existing modular evaluator's factor-generation contract.
+The [modular interface](bounded-spin-modular-interface.md) verifies this
+and gives automatic coefficient-space selection for the original pencil.
+A favorable uniform rank bound remains unproved.
 
 ### Integral companion and coefficient bit bounds
 
@@ -209,9 +211,11 @@ constructor consequently takes polynomial bit time in `lambda`.
 Reducing (7) modulo five gives a nonzero scalar crossing and the same
 coefficient ranks as the normalized `F_5` construction. This supplies
 an integer identity, **not** a lift of favorable modular rank bounds
-to ranks over `Q`. A factoring improvement would still need the required
-uniform rank theorem over the relevant ring or a separate valid
-fixed-characteristic counting transfer, with complete costs.
+to ranks over `Q`. The existing
+[fixed-characteristic transfer](scale-one-modular-transfer.md) provides
+an alternative route. The [spin-family interface](bounded-spin-modular-interface.md)
+checks the constructor and dense factor costs; a favorable uniform rank
+bound is still missing.
 
 ## 5. Relation to fusion categories and the open rank problem
 

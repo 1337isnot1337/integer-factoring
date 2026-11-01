@@ -306,6 +306,11 @@ strict endpoint. At eight sites it adds a seventh tensor direction;
 the noncommuting cut operators have invariant commutator modules of
 dimension 28. Uniform favorable ranks remain open. Run the optional
 `make verify-bounded-spin-six-vertex`.
+The [modular interface](research/bounded-spin-modular-interface.md)
+connects these constructors to the existing fixed-characteristic transfer:
+dense rank factors meet its cost bound, and the original coefficient
+space also permits automatic selection. A favorable uniform rank
+estimate is still missing.
 
 The [exact nonlinear charge theorem](research/nonlinear-symbol-charge-lattices.md)
 characterizes every admissible pair of full-symbol potentials for the

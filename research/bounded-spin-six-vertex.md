@@ -125,9 +125,12 @@ bounded by `2^n`. The former bound `31104^n` on every cleared coefficient
 therefore still applies. Coefficient bit lengths remain `O(n)` and the
 integer entry construction has polynomial bit cost.
 
-These costs establish an effective crossing construction. Effective
-low-rank factors, a favorable uniform rank sum, and any required
-fixed-characteristic factoring transfer remain separate obligations.
+These costs establish an effective crossing construction. The
+[modular interface](bounded-spin-modular-interface.md) shows that dense
+factorization meets the existing fixed-characteristic transfer contract.
+A favorable uniform rank sum, and an effective selection rule if it
+uses recombinations, remain open. Exhausting all `5^O(lambda^2)`
+coefficient combinations would not meet that selection contract.
 
 ## 4. Exact finite structure and a smaller rank problem
 
