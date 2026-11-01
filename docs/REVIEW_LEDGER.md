@@ -532,3 +532,39 @@ actual command and outcome. This applies to that exact commit, before
 the later collective-CSS and high-axis additions; those have separate
 focused controls and documentation checks. No new Lean build or stronger
 complete factoring bound is implied.
+
+## 2026-11-01: Sparse trace constraints and exact operand boundaries
+
+Commit `318c748038d0a12493e8fa5744541d8955f8fe6d` adds the ordinary
+rank-sensitive affine trace interface. Its focused controls pass 320 joint
+queries against 10,344 literal assignments and 160 unsplit comparisons.
+A clean `make verify` at that exact commit passed 349 Python command blocks,
+66 plus five unit tests, and links in 1,099 Markdown files. Both pre-run and
+post-run working trees were clean. The [receipt](../evidence/verify-trace-constraints-318c748.json)
+and [compressed complete log](../evidence/verify-trace-constraints-318c748.log.xz)
+retain the source tree and hashes. No Lean targets were run.
+
+The subsequent prefix/interval extension uses fixed-word substitution and
+trace-dual coordinates. Its separate focused receipt is
+[here](../evidence/frobenius-prefix-contraction.json). The earlier full run
+does not claim to cover this later delta or concurrently integrated sources.
+These are author-checked ordinary results and exact finite controls, not
+independent mathematical review or a complete factoring improvement. The
+score remains 1/2. Substantial OpenAI Codex assistance.
+
+## 2026-11-01: Share trace-row choices in a square-zero algebra
+
+The [ordinary argument](../research/square-zero-trace-contraction.md) replaces
+`t^r` packet enumeration by one synchronized contraction over an explicit
+`2^r`-dimensional coefficient algebra, with cost
+`2^O(r) (S+rt+2)^O(vw/t)`. Only original scalar-valued denominators use the
+field inverse identity; no inverse or field Frobenius period is assumed
+for the nilpotent coefficients. The prefix implementation now uses this
+backend. Full arithmetic phase representation is still missing.
+
+The [focused algebra receipt](../evidence/square-zero-trace-contraction.json)
+and [updated prefix receipt](../evidence/frobenius-prefix-contraction.json)
+record literal comparisons and source hashes. The earlier full-suite run
+at `318c748` remains the full baseline, not a full run of this later delta.
+No Lean, independent mathematical review, or complete factoring exponent
+above 1/2 is claimed. Substantial OpenAI Codex assistance.

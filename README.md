@@ -111,6 +111,14 @@ keeps affine bit restrictions outside a synchronized Frobenius product.
 Its cost depends on the binary rank of those restrictions and can retain
 relative dimension one. A complete arithmetic phase representation meeting
 that budget remains open; the factoring score stays `1/2`.
+The [prefix and interval extension](research/frobenius-prefix-contraction.md)
+substitutes fully fixed operand words first, leaving at most one partially
+fixed word per operand. It preserves exact bounded domains under the same
+explicit representation hypothesis.
+The [square-zero coefficient construction](research/square-zero-trace-contraction.md)
+shares the trace-row choices in one contraction, replacing the `t^r`
+expansion by `2^O(r)` algebra cost. The prefix implementation uses this
+stronger interface; it still supplies no complete factoring improvement.
 
 The [output-sensitive space transfer](research/output-sensitive-space-transfer.md)
 recovers a complete factorization from a scalar phase evaluator in time
@@ -886,6 +894,12 @@ strict endpoint. At eight sites it adds a seventh tensor direction;
 the noncommuting cut operators have invariant commutator modules of
 dimension 28. Uniform favorable ranks remain open. Run the optional
 `make verify-bounded-spin-six-vertex`.
+For the full Catalan path space, the [SO(4) spherical decomposition](research/catalan-spherical-ranks.md)
+gives exact characteristic-zero rank formulas for every coefficient and
+every recombination in its span, via Jack polynomials with parameter two.
+The natural coefficient pieces are already costly at eight sites; arbitrary
+recombination support is the next open rank problem. Run
+`make verify-catalan-spherical-ranks`.
 The [modular interface](research/bounded-spin-modular-interface.md)
 connects these constructors to the existing fixed-characteristic transfer:
 dense rank factors meet its cost bound, and the original coefficient
