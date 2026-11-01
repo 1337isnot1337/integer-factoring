@@ -1,0 +1,16 @@
+{
+  "command": "OPENBLAS_NUM_THREADS=1 make verify",
+  "compressed_stdout_sha256": "8df8295006419c895d9246403e262595b1874350b687c6e64969cfefff14ac05",
+  "exit_code": 0,
+  "logged_python_command_blocks": 344,
+  "scope": "Full default pass at exact clean frozen 36b09fc, including the global natural-energy gate. Predates graded-adjugate, windowed-frame and completed affine-zero census additions; their focused checks are separate. No new Lean or stronger factoring bound.",
+  "source_commit": "36b09fcd1e6cc99c242d94f50962ffe8a278c8ca",
+  "source_tree": "3d85ac35ad47628bfe6b33f140c321603a7518a4",
+  "status": "pass",
+  "stdout_path": "evidence/verify-36b09fc.stdout.txt.xz",
+  "stdout_sha256": "2f00e9d0ebe7a46d102bb63029628d6c7e1645f486f164cafd0da1570c4091d3",
+  "unittest_suites_reported": [
+    66,
+    5
+  ]
+}

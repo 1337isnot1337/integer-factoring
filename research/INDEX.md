@@ -30,7 +30,7 @@
 
 - [Certified 192-bit batched selective promotion](batch-smooth-fresh-192.md): complete saved-artifact replay, charged generated-ahead work, checked archive reconstruction, and the gated 208-bit follow-on.
 
-- [F4 extension of the ordered fused coefficient envelope](fused-f4-envelope.md): exact full-matrix controls, completed 484-point and 61,440-point finite families, and two registered large scans in a specified 18-dimensional subspace; no completed large-scan or stronger factoring claim.
+- [F4 extension of the ordered fused coefficient envelope](fused-f4-envelope.md): exact controls and a completed 17,179,869,184-position affine-zero census in a specified 18-dimensional subspace, with independently reconstructed coverage counts; the affine-one half is still incomplete and no stronger factoring bound follows.
 
 - [Two classical passes for all supplied orientations](circuit-box-orientation-batch.md): normalized root differences, sparse incidence signs, and essentially linear integer-data construction.
 

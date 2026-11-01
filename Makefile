@@ -2430,6 +2430,10 @@ verify-frontier: verify-graded-adjugate-caps
 verify-windowed-smith-frames:
 	python3 tools/check_windowed_binary_smith.py --output /tmp/windowed-binary-smith.json
 
+.PHONY: verify-fused-f4-zero-census
+verify-fused-f4-zero-census:
+	python3 tools/check_fused_f4_zero_census.py --output /tmp/fused-f4-zero-census-controls.json
+
 .PHONY: verify-coherent-f4-partial
 verify-coherent-f4-partial:
 	python3 tools/check_coherent_hot_f4_partial.py

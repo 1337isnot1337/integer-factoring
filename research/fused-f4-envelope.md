@@ -12,6 +12,26 @@ exponent is claimed here; the complete score remains **1/2**.
 The completed controls and newly registered larger scans have different
 coverage. The large scans below are **not complete at registration**.
 
+The **affine-zero half is now complete**: all `4^17=17,179,869,184`
+coordinate positions, in 512 contiguous chunks, with no nonzero vector
+of rank product at most 55. This gives rank product **at least 56**
+on the specified 17-dimensional functional kernel inside `W`. It is
+not a claimed sharp minimum. The affine-one half remains incomplete.
+
+The run performed **5,726,623,061 exact native threshold tests**, skipped
+**11,453,246,122** other scalar representatives and counted zero once.
+The [complete packet](../evidence/fused-f4-zero-census.json.xz) retains
+all chunk summaries, hashes, registration and as-run sources. The
+[checker](../tools/check_fused_f4_zero_census.py) validates the entire
+ledger and independently reconstructs each chunk's zero and scalar-skip
+counts using [binary linear systems](../tools/fused_f4_coverage.py).
+Sixty-four brute-force small cases control that separate count algorithm.
+It does not independently repeat all native rank-product tests.
+Run `make verify-fused-f4-zero-census`; its
+[receipt](../evidence/fused-f4-zero-census-controls.json) records the
+actual checks. No full-envelope, all-field or factoring improvement
+follows from completing this half alone.
+
 ## Representation and genuine decomposition target
 
 Use the 33 retained binary basis tensors, in their original order. An F4
