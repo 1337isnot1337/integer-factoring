@@ -1,0 +1,268 @@
+{
+  "certificate": {
+    "certificate": {
+      "bits": 192,
+      "bound": [
+        312359221,
+        500000000
+      ],
+      "gap_interval_numerators": [
+        [
+          53124861476837326999361952255972423274154812883902989579667003,
+          15625000000000
+        ],
+        [
+          53124861476837326999361952255972423274154812883970670294792003,
+          15625000000000
+        ]
+      ],
+      "gap_scale": 6277101735386680763835789423207666416102355444464034512896,
+      "passed": true,
+      "physical_type": [
+        208173,
+        1000000
+      ],
+      "rational_r": [
+        217022257,
+        500000000
+      ],
+      "rejected_at_this_point": false,
+      "terms": 96
+    },
+    "coarse_rho": [
+      5,
+      8
+    ],
+    "coarse_score_lower_bound": "log_2(8/5)",
+    "coarse_threshold_check": "2*(5/8)^2 < 1",
+    "negative_control_rejected": true,
+    "one_particle_profiles": [
+      [
+        2,
+        4,
+        8,
+        10
+      ],
+      [
+        2,
+        4,
+        8,
+        10
+      ],
+      [
+        2,
+        4,
+        8,
+        10
+      ]
+    ],
+    "optimized_rho": [
+      312359221,
+      500000000
+    ],
+    "optimized_threshold_check": "2*(312359221/500000000)^2 < 1"
+  },
+  "common_map": [
+    {
+      "assignments_checked": 256,
+      "axes": [
+        0,
+        1
+      ],
+      "common_map_identity": "P_c(E8)=E8 and E8=sum_i P_c(T_i)"
+    },
+    {
+      "assignments_checked": 256,
+      "axes": [
+        0,
+        2
+      ],
+      "common_map_identity": "P_c(E8)=E8 and E8=sum_i P_c(T_i)"
+    },
+    {
+      "assignments_checked": 256,
+      "axes": [
+        1,
+        2
+      ],
+      "common_map_identity": "P_c(E8)=E8 and E8=sum_i P_c(T_i)"
+    }
+  ],
+  "geometry": [
+    {
+      "U": 72,
+      "U_over_V": [
+        9,
+        28
+      ],
+      "child_cap": 56,
+      "g": 2,
+      "internal": 1,
+      "selected_parent_width": 8,
+      "squares": 1,
+      "volume": 224
+    },
+    {
+      "U": 374,
+      "U_over_V": [
+        187,
+        567
+      ],
+      "child_cap": 126,
+      "g": 3,
+      "internal": 1,
+      "selected_parent_width": 61,
+      "squares": 9,
+      "volume": 1134
+    },
+    {
+      "U": 1460,
+      "U_over_V": [
+        365,
+        896
+      ],
+      "child_cap": 224,
+      "g": 4,
+      "internal": 2,
+      "selected_parent_width": 394,
+      "squares": 36,
+      "volume": 3584
+    },
+    {
+      "U": 3884,
+      "U_over_V": [
+        1942,
+        4375
+      ],
+      "child_cap": 350,
+      "g": 5,
+      "internal": 0,
+      "selected_parent_width": 1242,
+      "squares": 100,
+      "volume": 8750
+    },
+    {
+      "U": 7748,
+      "U_over_V": [
+        1937,
+        4536
+      ],
+      "child_cap": 504,
+      "g": 6,
+      "internal": 1,
+      "selected_parent_width": 2614,
+      "squares": 225,
+      "volume": 18144
+    },
+    {
+      "U": 13952,
+      "U_over_V": [
+        6976,
+        16807
+      ],
+      "child_cap": 686,
+      "g": 7,
+      "internal": 0,
+      "selected_parent_width": 4918,
+      "squares": 441,
+      "volume": 33614
+    }
+  ],
+  "global_widths": {
+    "audit_counterexample": [
+      [
+        0,
+        3,
+        4
+      ],
+      [
+        3,
+        0,
+        4
+      ]
+    ],
+    "established_global_minimum": 3,
+    "independent_minimum_sum": 0,
+    "interface": "common internal coordinate; pair_total <= (2/3) sum_i S_i <= 4 rho lambda' B",
+    "random_assignments": 200,
+    "selected_global_parent_width": 3
+  },
+  "hidden_incidence": {
+    "conclusion": "Hidden-axis cut splits all labels; independent minima are not one global cut",
+    "cuts": [
+      {
+        "axis": 0,
+        "cut_on_whole_parent_labels": true,
+        "split_superlegs": []
+      },
+      {
+        "axis": 1,
+        "cut_on_whole_parent_labels": true,
+        "split_superlegs": []
+      },
+      {
+        "axis": 2,
+        "cut_on_whole_parent_labels": false,
+        "split_superlegs": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    ],
+    "hidden_axis": 2,
+    "minimum_global_axis_sum": 3,
+    "pairing_axes": [
+      0,
+      1
+    ],
+    "sum_independent_minima": 0,
+    "width_triples": [
+      [
+        0,
+        3,
+        4
+      ],
+      [
+        3,
+        0,
+        4
+      ]
+    ]
+  },
+  "piecewise_counterexample_preserved": {
+    "assignments": 256,
+    "conclusion": "Independent summand relabeling does not preserve the endpoint",
+    "decomposition": "T0=E8+x_001, T1=x_001 over F2",
+    "first": {
+      "endpoint": 0,
+      "mask": 2,
+      "relabelled_sum": 1
+    },
+    "mismatches": 128,
+    "relabeling": "Swap cube coordinates 0 and 2 in T1 only"
+  },
+  "scope": "Global-pairing interface replacement for the rejected per-cube two-axis regrouping.  The common internal-coordinate map fixes the parent labels for a whole assignment; the width hypothesis is the total parent-axis bound, not a uniform per-piece fixed-cut bound.  The inherited Gaussian pieces, profiles, certificate and two-axis evaluator are not re-proved.  The claim is an ordinary proof, not Lean-verified and not independently accepted.",
+  "scoreboard": "remains 1/2 until independent acceptance",
+  "source_sha256": {
+    "certify_cube_optimized_type.py": "5eb4f5d50ec6e031ace2bbc92e7a2eef3ce889a3733fefa0142f2b2c7ce2c827",
+    "check_two_axis_cube_regrouping.py": "76ef5dd82a1fe510804489222f726dce658659168e052d75c39c188fc34b7cf3",
+    "check_two_axis_global_pairing.py": "c97aa6bc300aceb7898a0a36a3c6dc7044f07a97cbaf3a72595bb80613a0147e",
+    "cube_homogeneous_gaussian.py": "2281e1013bca1e6d595e039562be856533d7732e50ab1018b8eed55b5fb24593"
+  },
+  "status": "replacement_interface_checked",
+  "total_width_rank": {
+    "cap_width": 64,
+    "conclusion": "rank excludes the uniform per-piece fixed-cut bound, not the total-width interface",
+    "endpoint_rank": 18446744073709551616,
+    "lambda_prime": 32,
+    "piece_exponent": 4,
+    "pieces": 1185921,
+    "rank_with_one_cap_piece": 18446744073710737536,
+    "total_width_budget": 47436840,
+    "uniform_bound_below_endpoint": true,
+    "uniform_piece_width": 40,
+    "uniform_rank_upper": 1303933929123741696
+  }
+}

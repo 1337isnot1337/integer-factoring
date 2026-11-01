@@ -1,0 +1,28 @@
+{
+  "source_commit": "fc695a029df93ff4738ee3be45cdf25539fe8598",
+  "source_tree": "09bdad83a52d62ca24e89b0577c04360f44d0a0f",
+  "started_utc": "2026-11-01T20:32:46.531867+00:00",
+  "commands": [
+    [
+      "make",
+      "verify",
+      "verify-two-axis-cube-regrouping"
+    ]
+  ],
+  "pre_status": "",
+  "status": "pass",
+  "results": [
+    {
+      "command": [
+        "make",
+        "verify",
+        "verify-two-axis-cube-regrouping"
+      ],
+      "returncode": 0,
+      "seconds": 790.6096813273616
+    }
+  ],
+  "seconds": 790.6098892982118,
+  "finished_utc": "2026-11-01T20:45:58.290474+00:00",
+  "post_status": ""
+}

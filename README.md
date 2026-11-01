@@ -26,14 +26,14 @@ This is an asymptotic worst-case bound, not a practical factoring speedup.
 | Claim | Status | Reference |
 | --- | --- | --- |
 | Saving exponent `1/2` | **Lean-verified; accepted by Big O Speedrun** | [Theorem](formal-appendix/HalfTheorem.lean) |
-| Saving exponent above `1/2` | **Not established**; rejected per-cube proof, global-pairing replacement under review | [Regrouping audit](research/two-axis-cube-regrouping.md); [repair](research/two-axis-global-pairing-repair.md) |
+| Saving exponent above `1/2` | **Not established** | [Per-cube audit](research/two-axis-cube-regrouping.md); [global-pairing audit](research/two-axis-global-pairing-repair.md) |
 | Finite factorization experiments | Evidence for the stated inputs only; no uniform bound follows | [Latest checkpoint](research/beyond-half-research-checkpoint.md) |
 
 ## Current research frontier
 
 **Arithmetic route.** The project has deterministic prime-form generation, smooth-norm existence results, relation recovery, and determinant-free factor extraction. An adaptive selector factored a fresh 144-bit semiprime after 8,232,730 norm tests. The open step is a uniform bound on the number of candidate powers needed. Without that bound, the finite result does not improve the worst-case exponent. See the [research checkpoint](research/beyond-half-research-checkpoint.md) and [adaptive selector report](research/adaptive-power-window-selection.md).
 
-**Tensor and crossing route.** This work searches for a complete crossing with pressure `rho < 1/sqrt(2)`, or a different valid transfer. The proposed per-cube two-axis regrouping of the Gaussian cube fails its one-cut step; the [audit](research/two-axis-cube-regrouping.md) retains exact counterexamples and the unchanged local profiles. A [global-pairing replacement](research/two-axis-global-pairing-repair.md) chooses one internal coordinate per complete assignment, uses the two other cube cuts as the fixed parent cuts, and asserts the total parent-width interface rather than a uniform per-piece fixed-cut bound. Its exact interface checker passes, including the common-map positive control, the preserved piece-specific counterexample, the audit's `(0,3,4),(3,0,4)` width control, the hidden-cut incidence and a total-width rank-feasibility control. The full transfer has not been independently accepted, so no stronger complete exponent is claimed here. See [directions beyond the half-rate result](research/post-half-directions.md).
+**Tensor and crossing route.** This work seeks a complete crossing below the required pressure threshold or a different valid transfer. The proposed two-axis cube regroupings fail their adaptive relabeling steps: the [per-cube audit](research/two-axis-cube-regrouping.md) and [global-pairing audit](research/two-axis-global-pairing-repair.md) retain exact counterexamples, including coefficients of the actual Gaussian family. The local Gaussian profiles remain valid; no stronger complete exponent follows. See [directions beyond the half-rate result](research/post-half-directions.md).
 
 An [exact residue-system backend](research/precision-efficient-residue-indicators.md#5-implemented-compilers-and-the-system-count-bound) retains counts at growing 2-adic precision and handles collected unit inverses. A complete integer factoring query within that polynomial interface remains open.
 

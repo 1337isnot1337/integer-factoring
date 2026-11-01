@@ -2,12 +2,10 @@
 """Exact checks for the global-pairing replacement of the rejected two-axis
 regrouping.
 
-The audit in check_two_axis_cube_regrouping.py rejects the original per-cube
-minimum step.  This checker verifies a different interface: one common
-internal coordinate for the whole piece assignment, an exact identity on the
-fixed parent labels, and the total parent-width bound used by the multiaxis
-transfer.  The inherited Gaussian pieces, profiles and certificate are
-replayed from the audit checker.
+Fixed common maps and the width arithmetic are valid. Choosing the common
+map AFTER the complete piece assignment is a different identity; an exact
+coefficient-family counterexample below rejects that step. Gaussian pieces,
+profiles and certificates remain credited to the source construction.
 """
 from __future__ import annotations
 
@@ -18,6 +16,7 @@ import json
 import random
 
 import check_two_axis_cube_regrouping as audit
+from cube_homogeneous_gaussian import gaussian_tensor, kernel, multiply
 
 
 AXES = [(0, 1), (0, 2), (1, 2)]
@@ -97,6 +96,81 @@ def check_piecewise_failure() -> dict:
     assert control["assignments"] == 256
     assert control["mismatches"] == 128
     return control
+
+
+def check_assignment_dependent_pairing() -> dict:
+    """Actual Gaussian coefficients: m=5, weight1, alphabet {00001,00010}."""
+    seed=gaussian_tensor(kernel())
+    pieces={}
+    for mask in range(256):
+        for exponent in multiply(seed[mask],seed[mask ^ 255]):
+            pieces[exponent]=pieces.get(exponent,0) ^ (1 << mask)
+
+    def binary_rank(rows):
+        pivots={}
+        for value in rows:
+            while value:
+                lead=value.bit_length()-1
+                if lead in pivots:value^=pivots[lead]
+                else:
+                    pivots[lead]=value
+                    break
+        return len(pivots)
+
+    def rank_at_axis(tensor,axis):
+        # audit.bits uses coordinate0 as the most significant vertex bit.
+        left=[v for v in range(8) if not((v >> (2-axis)) & 1)]
+        right=[v for v in range(8) if (v >> (2-axis)) & 1]
+        rows=[0]*16
+        for mask in range(256):
+            if (tensor >> mask) & 1:
+                row=sum(((mask >> v)&1) << j for j,v in enumerate(left))
+                column=sum(((mask >> v)&1) << j for j,v in enumerate(right))
+                rows[row] ^= 1 << column
+        return binary_rank(rows)
+
+    def reorient(tensor,axes):
+        def value(vals):
+            mask=sum(bit << j for j,bit in enumerate(vals))
+            return (tensor >> mask)&1
+        return sum(bit << j for j,bit in enumerate(relabel_scalar(value,axes)))
+
+    original=0
+    for tensor in pieces.values():original ^= tensor
+    assert original==sum(audit.endpoint(tuple((mask >> j)&1 for j in range(8))) << mask
+                         for mask in range(256))
+    expected=sum(parent_endpoint(tuple((mask >> j)&1 for j in range(8))) << mask
+                 for mask in range(256))
+    fixed=[]
+    for axes in AXES:
+        result=0
+        for tensor in pieces.values():result ^= reorient(tensor,axes)
+        assert result==expected
+        fixed.append(dict(axes=axes,assignments=256,endpoint_preserved=True))
+    adaptive=0;records=[]
+    for exponent,tensor in sorted(pieces.items()):
+        ranks=[rank_at_axis(tensor,axis) for axis in range(3)]
+        widths=[(r-1).bit_length() if r else 0 for r in ranks]
+        hidden=max(range(3),key=lambda axis:widths[axis])
+        axes=tuple(axis for axis in range(3) if axis!=hidden)
+        changed=reorient(tensor,axes)
+        adaptive ^= changed
+        records.append(dict(exponent=exponent,ranks=ranks,widths=widths,
+                            selected_hidden_axis=hidden,parent_axes=axes,
+                            original_truth_bits=hex(tensor),reoriented_truth_bits=hex(changed)))
+    difference=adaptive ^ expected
+    first=(difference & -difference).bit_length()-1
+    assert len(pieces)==22 and difference.bit_count()==72 and first==3
+    assert ((expected >> first)&1)==0 and ((adaptive >> first)&1)==1
+    return dict(word_length=5,weight=1,physical_alphabet=[1,2],lambda_bits=1,
+                superletter_bits=2,squares=1,pieces=records,
+                fixed_pairing_positive_controls=fixed,assignments=256,
+                adaptive_pairing_mismatches=difference.bit_count(),
+                tie_rule='First axis maximizing ceil(log2 exact rank)',
+                hidden_axis_counts=[sum(r['selected_hidden_axis']==a for r in records) for a in range(3)],
+                first_failure=dict(mask=first,endpoint=0,adaptive_sum=1),
+                expected_truth_bits=hex(expected),adaptive_truth_bits=hex(adaptive),
+                scope='Exact identity counterexample in the cited finite coefficient family; not an asymptotic pressure lower bound')
 
 
 def check_global_widths() -> dict:
@@ -239,13 +313,14 @@ def main() -> None:
     rank = check_total_width_rank()
     geometry = check_geometry()
     certificate = audit.check_certificate()
+    adaptive_failure = check_assignment_dependent_pairing()
     sources = ["check_two_axis_global_pairing.py",
                "check_two_axis_cube_regrouping.py",
                "certify_cube_optimized_type.py",
                "cube_homogeneous_gaussian.py"]
     report = {
-        "status": "replacement_interface_checked",
-        "scoreboard": "remains 1/2 until independent acceptance",
+        "status": "audit_passed_assignment_dependent_identity_rejected",
+        "scoreboard": "1/2; the proposed identity step fails",
         "common_map": common,
         "piecewise_counterexample_preserved": piecewise,
         "global_widths": widths,
@@ -253,27 +328,27 @@ def main() -> None:
         "total_width_rank": rank,
         "geometry": geometry,
         "certificate": certificate,
+        "assignment_dependent_pairing": adaptive_failure,
+        "factoring_exponent_improved": False,
         "source_sha256": {name: sha256(Path("tools", name).read_bytes()).hexdigest()
                           for name in sources},
-        "scope": ("Global-pairing interface replacement for the rejected per-cube "
-                  "two-axis regrouping.  The common internal-coordinate map fixes "
-                  "the parent labels for a whole assignment; the width hypothesis "
-                  "is the total parent-axis bound, not a uniform per-piece fixed-cut "
-                  "bound.  The inherited Gaussian pieces, profiles, certificate and "
-                  "two-axis evaluator are not re-proved.  The claim is an ordinary "
-                  "proof, not Lean-verified and not independently accepted."),
+        "scope": ("Fixed common maps preserve the endpoint, but choosing that map "
+                  "after the piece assignment fails on the actual Gaussian word "
+                  "coefficient family: 72 of 256 assignments disagree. Valid width "
+                  "arithmetic and inherited certificates do not establish the missing "
+                  "adaptive identity. No stronger complete factoring bound follows."),
     }
     Path("evidence/two-axis-global-pairing-repair.json").write_text(
         json.dumps(report, indent=2, sort_keys=True) + "\n")
-    print(json.dumps({"status": "passed",
+    print(json.dumps({"status": report['status'],
                       "common_map_pairings": len(common),
                       "piecewise_mismatches": piecewise["mismatches"],
                       "geometry_cases": len(geometry),
                       "selected_global_parent_width": widths["selected_global_parent_width"],
                       "rank_feasible": rank["rank_with_one_cap_piece"] >= rank["endpoint_rank"],
-                      "coarse_score": "log_2(8/5) > 1/2",
-                      "optimized_score": "log_2(500000000/312359221) > 1/2",
-                      "scoreboard": "1/2 until independent acceptance"}, sort_keys=True))
+                      "actual_family_adaptive_mismatches": adaptive_failure['adaptive_pairing_mismatches'],
+                      "factoring_exponent_improved": False,
+                      "scoreboard": "1/2; proposed identity rejected"}, sort_keys=True))
 
 
 if __name__ == "__main__":

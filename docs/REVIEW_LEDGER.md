@@ -1277,6 +1277,8 @@ promotion; no new Lean or independent mathematical review is claimed.
 
 ## Check the global-pairing replacement for the rejected regrouping
 
+**Historical interface claim from e233eac; its adaptive identity is rejected by the actual-family audit below.** The positive controls in this entry test fixed maps and arithmetic, not the assignment-dependent expansion.
+
 The audit above remains valid for the original per-cube minimum proof.
 The [replacement note](../research/two-axis-global-pairing-repair.md)
 instead chooses one common internal coordinate per complete assignment,
@@ -1297,3 +1299,37 @@ Gaussian construction, its profiles or certificate, or the two-axis
 evaluator, and it has not received independent mathematical acceptance.
 The complete factoring score therefore remains `1/2`; the note is
 under review, not an accepted stronger bound.
+
+## Actual-family counterexample to assignment-dependent global pairing
+
+The proposed replacement's fixed common-map identity does not remain an
+identity when the map is chosen after the complete piece assignment.
+The [audit](../research/two-axis-global-pairing-repair.md) now gives a
+counterexample from the original Gaussian constant-weight word family:
+`m=5`, weight one, alphabet `{00001,00010}`. Its 22 coefficient tensors
+sum to the endpoint under each of the three fixed pairings. Choosing a
+pairing separately for each selected coefficient by the proposed maximum
+width rule gives 72 mismatches among 256 parent assignments; at mask3,
+endpoint zero becomes one. All exact ranks, selected axes and truth tables
+are retained in the [current receipt](../evidence/two-axis-global-pairing-repair.json).
+This targets the missing exact identity, not an asymptotic pressure lower
+bound or every possible global repair.
+
+The checker retains the valid prior controls and explicitly reports no
+factoring improvement. The [original proposal](../research/two-axis-global-pairing-proposal-rejected.md)
+and [historical receipt](../evidence/two-axis-global-pairing-proposal-rejected.json)
+are preserved with rejection labels. README/index state the substantive
+identity failure rather than suggesting that review alone would establish
+the score. A fixed-parent construction or a proved adaptive reassignment
+identity with charged wiring is still required.
+
+## Exact combined arithmetic replay at fc695a0
+
+Clean frozen source `fc695a0` passed `make verify verify-two-axis-cube-regrouping`
+in 790.61 seconds. The [receipt](../evidence/verify-combined-traces-regrouping-fc695a0.json)
+and [complete compressed stdout](../evidence/verify-combined-traces-regrouping-fc695a0.stdout.txt.xz)
+record the full commit/tree and clean pre/post state. This covers the
+combined packed-system, divided-power, Artin--Hasse, native-Witt circuit
+work and first regrouping audit. It predates the normal-basis AND diagnostic,
+fixed projection floor and global-pairing proposal/counterexample. Their
+focused checks remain separately scoped. No new score or Lean is claimed.
