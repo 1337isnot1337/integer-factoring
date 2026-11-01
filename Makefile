@@ -364,6 +364,10 @@ verify-braid-fusion-occupancy:
 verify-braid-leading-automaton:
 	python3 tools/check_nilpotent_seam_top_rank.py
 
+.PHONY: verify-catalan-cup-crossing
+verify-catalan-cup-crossing:
+	python3 tools/check_catalan_cup_crossing.py
+
 .PHONY: verify-downset-crossings verify-regular-code-crossings
 verify-downset-crossings:
 	python3 tools/check_downset_crossing_normal_form.py

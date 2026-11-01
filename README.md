@@ -921,6 +921,14 @@ at every even length. The leading central ranks have half-power scale
 in the label count and sharpen the earlier counting envelope; full
 contracted coefficients can still vanish. This does not close the
 complete crossing rank sum. Run `make verify-braid-leading-automaton` (NumPy).
+The [full Catalan cup frame](research/catalan-cup-crossings.md) retains
+all noncrossing primal cups using a unitriangular coordinate decoder.
+It gives a strict crossing over F2 even with zero primal Gram matrix,
+and binary width lambda uses only `lambda+O(log(lambda+2))` physical strands.
+At the old order-five parameter it retains nonzero radical channels,
+so quotient-only formulas require their ambient residuals. Complete
+small profiles and independent physical evolution pass; a favorable
+uniform two-cut rank sum remains open. Run `make verify-catalan-cup-crossing`.
 
 The [exact nonlinear charge theorem](research/nonlinear-symbol-charge-lattices.md)
 characterizes every admissible pair of full-symbol potentials for the

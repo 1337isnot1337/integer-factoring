@@ -1,0 +1,1044 @@
+{
+  "status": "pass",
+  "frame_controls": [
+    {
+      "q": 1,
+      "length": 2,
+      "labels": 1,
+      "primal_rank": 1,
+      "gram_rank": 0
+    },
+    {
+      "q": 1,
+      "length": 4,
+      "labels": 2,
+      "primal_rank": 2,
+      "gram_rank": 0
+    },
+    {
+      "q": 1,
+      "length": 6,
+      "labels": 5,
+      "primal_rank": 5,
+      "gram_rank": 0
+    },
+    {
+      "q": 1,
+      "length": 8,
+      "labels": 14,
+      "primal_rank": 14,
+      "gram_rank": 0
+    },
+    {
+      "q": 1,
+      "length": 10,
+      "labels": 42,
+      "primal_rank": 42,
+      "gram_rank": 0
+    },
+    {
+      "q": 8,
+      "length": 2,
+      "labels": 1,
+      "primal_rank": 1,
+      "gram_rank": 1
+    },
+    {
+      "q": 8,
+      "length": 4,
+      "labels": 2,
+      "primal_rank": 2,
+      "gram_rank": 2
+    },
+    {
+      "q": 8,
+      "length": 6,
+      "labels": 5,
+      "primal_rank": 5,
+      "gram_rank": 5
+    },
+    {
+      "q": 8,
+      "length": 8,
+      "labels": 14,
+      "primal_rank": 14,
+      "gram_rank": 13
+    },
+    {
+      "q": 8,
+      "length": 10,
+      "labels": 42,
+      "primal_rank": 42,
+      "gram_rank": 34
+    }
+  ],
+  "independent_physical_local_action_entries": 53576,
+  "independent_physical_polynomial_entries": 55832,
+  "complete_coefficient_rank_pairs_checked": 213,
+  "binary_selected_lengths": [
+    2,
+    4,
+    6,
+    8,
+    10,
+    10,
+    12,
+    12,
+    14,
+    16,
+    16,
+    18,
+    18,
+    20,
+    20,
+    22,
+    24,
+    24,
+    26,
+    26,
+    28,
+    28,
+    30,
+    30,
+    32
+  ],
+  "retained_negligible_wall_control": {
+    "physical_strands": 8,
+    "primal_rank": 14,
+    "gram_rank": 13,
+    "retained_f4_rank": 1,
+    "gram_annihilates_f4": true,
+    "coordinate_product_decoder_sees_f4": true
+  },
+  "complete_profiles": [
+    {
+      "q": 1,
+      "length": 4,
+      "labels": 2,
+      "polynomial_degree": 8,
+      "strict_endpoints": true,
+      "coefficient_span_dimension": 2,
+      "complete_coefficient_rank_pairs": [
+        [
+          4,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          4
+        ]
+      ]
+    },
+    {
+      "q": 1,
+      "length": 6,
+      "labels": 5,
+      "polynomial_degree": 32,
+      "strict_endpoints": true,
+      "coefficient_span_dimension": 29,
+      "complete_coefficient_rank_pairs": [
+        [
+          25,
+          1
+        ],
+        [
+          8,
+          2
+        ],
+        [
+          17,
+          3
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          22,
+          5
+        ],
+        [
+          11,
+          8
+        ],
+        [
+          19,
+          11
+        ],
+        [
+          12,
+          8
+        ],
+        [
+          23,
+          15
+        ],
+        [
+          11,
+          10
+        ],
+        [
+          18,
+          17
+        ],
+        [
+          13,
+          14
+        ],
+        [
+          21,
+          21
+        ],
+        [
+          13,
+          14
+        ],
+        [
+          20,
+          23
+        ],
+        [
+          13,
+          14
+        ],
+        [
+          20,
+          20
+        ],
+        [
+          11,
+          14
+        ],
+        [
+          15,
+          22
+        ],
+        [
+          12,
+          14
+        ],
+        [
+          16,
+          23
+        ],
+        [
+          12,
+          14
+        ],
+        [
+          12,
+          22
+        ],
+        [
+          9,
+          14
+        ],
+        [
+          9,
+          21
+        ],
+        [
+          5,
+          12
+        ],
+        [
+          5,
+          16
+        ],
+        [
+          4,
+          12
+        ],
+        [
+          5,
+          20
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          3,
+          16
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          2,
+          14
+        ]
+      ]
+    },
+    {
+      "q": 1,
+      "length": 8,
+      "labels": 14,
+      "polynomial_degree": 48,
+      "strict_endpoints": true,
+      "coefficient_span_dimension": 39,
+      "complete_coefficient_rank_pairs": [
+        [
+          196,
+          1
+        ],
+        [
+          80,
+          2
+        ],
+        [
+          90,
+          3
+        ],
+        [
+          80,
+          4
+        ],
+        [
+          90,
+          5
+        ],
+        [
+          80,
+          6
+        ],
+        [
+          90,
+          7
+        ],
+        [
+          80,
+          6
+        ],
+        [
+          81,
+          7
+        ],
+        [
+          80,
+          6
+        ],
+        [
+          90,
+          7
+        ],
+        [
+          80,
+          6
+        ],
+        [
+          90,
+          5
+        ],
+        [
+          80,
+          4
+        ],
+        [
+          90,
+          3
+        ],
+        [
+          80,
+          2
+        ],
+        [
+          95,
+          37
+        ],
+        [
+          30,
+          62
+        ],
+        [
+          46,
+          80
+        ],
+        [
+          41,
+          68
+        ],
+        [
+          53,
+          86
+        ],
+        [
+          42,
+          68
+        ],
+        [
+          54,
+          84
+        ],
+        [
+          42,
+          68
+        ],
+        [
+          46,
+          70
+        ],
+        [
+          41,
+          68
+        ],
+        [
+          54,
+          84
+        ],
+        [
+          42,
+          68
+        ],
+        [
+          54,
+          86
+        ],
+        [
+          42,
+          68
+        ],
+        [
+          47,
+          80
+        ],
+        [
+          32,
+          62
+        ],
+        [
+          23,
+          152
+        ],
+        [
+          1,
+          48
+        ],
+        [
+          2,
+          64
+        ],
+        [
+          2,
+          48
+        ],
+        [
+          3,
+          72
+        ],
+        [
+          3,
+          48
+        ],
+        [
+          3,
+          64
+        ],
+        [
+          2,
+          48
+        ],
+        [
+          4,
+          72
+        ],
+        [
+          2,
+          48
+        ],
+        [
+          3,
+          64
+        ],
+        [
+          3,
+          48
+        ],
+        [
+          3,
+          72
+        ],
+        [
+          2,
+          48
+        ],
+        [
+          2,
+          64
+        ],
+        [
+          1,
+          48
+        ],
+        [
+          1,
+          112
+        ]
+      ]
+    },
+    {
+      "q": 8,
+      "length": 4,
+      "labels": 2,
+      "polynomial_degree": 17,
+      "strict_endpoints": true,
+      "coefficient_span_dimension": 9,
+      "complete_coefficient_rank_pairs": [
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          4
+        ]
+      ]
+    },
+    {
+      "q": 8,
+      "length": 6,
+      "labels": 5,
+      "polynomial_degree": 37,
+      "strict_endpoints": true,
+      "coefficient_span_dimension": 36,
+      "complete_coefficient_rank_pairs": [
+        [
+          25,
+          1
+        ],
+        [
+          17,
+          2
+        ],
+        [
+          23,
+          3
+        ],
+        [
+          25,
+          5
+        ],
+        [
+          25,
+          8
+        ],
+        [
+          25,
+          10
+        ],
+        [
+          25,
+          14
+        ],
+        [
+          25,
+          16
+        ],
+        [
+          24,
+          23
+        ],
+        [
+          25,
+          22
+        ],
+        [
+          25,
+          25
+        ],
+        [
+          25,
+          24
+        ],
+        [
+          25,
+          25
+        ],
+        [
+          25,
+          25
+        ],
+        [
+          25,
+          25
+        ],
+        [
+          25,
+          25
+        ],
+        [
+          25,
+          25
+        ],
+        [
+          25,
+          25
+        ],
+        [
+          25,
+          25
+        ],
+        [
+          25,
+          25
+        ],
+        [
+          25,
+          25
+        ],
+        [
+          25,
+          24
+        ],
+        [
+          25,
+          25
+        ],
+        [
+          25,
+          25
+        ],
+        [
+          23,
+          25
+        ],
+        [
+          23,
+          25
+        ],
+        [
+          21,
+          25
+        ],
+        [
+          17,
+          24
+        ],
+        [
+          9,
+          25
+        ],
+        [
+          9,
+          25
+        ],
+        [
+          7,
+          25
+        ],
+        [
+          7,
+          25
+        ],
+        [
+          5,
+          25
+        ],
+        [
+          5,
+          25
+        ],
+        [
+          3,
+          25
+        ],
+        [
+          3,
+          25
+        ],
+        [
+          2,
+          25
+        ],
+        [
+          1,
+          25
+        ]
+      ]
+    },
+    {
+      "q": 8,
+      "length": 8,
+      "labels": 14,
+      "polynomial_degree": 65,
+      "strict_endpoints": true,
+      "coefficient_span_dimension": 64,
+      "complete_coefficient_rank_pairs": [
+        [
+          196,
+          1
+        ],
+        [
+          196,
+          2
+        ],
+        [
+          136,
+          3
+        ],
+        [
+          136,
+          4
+        ],
+        [
+          146,
+          5
+        ],
+        [
+          166,
+          6
+        ],
+        [
+          136,
+          7
+        ],
+        [
+          136,
+          8
+        ],
+        [
+          194,
+          15
+        ],
+        [
+          194,
+          22
+        ],
+        [
+          194,
+          29
+        ],
+        [
+          195,
+          36
+        ],
+        [
+          195,
+          43
+        ],
+        [
+          195,
+          50
+        ],
+        [
+          196,
+          57
+        ],
+        [
+          196,
+          65
+        ],
+        [
+          195,
+          128
+        ],
+        [
+          196,
+          166
+        ],
+        [
+          196,
+          195
+        ],
+        [
+          196,
+          195
+        ],
+        [
+          196,
+          195
+        ],
+        [
+          196,
+          195
+        ],
+        [
+          196,
+          195
+        ],
+        [
+          196,
+          195
+        ],
+        [
+          196,
+          196
+        ],
+        [
+          195,
+          196
+        ],
+        [
+          194,
+          196
+        ],
+        [
+          195,
+          196
+        ],
+        [
+          195,
+          196
+        ],
+        [
+          195,
+          196
+        ],
+        [
+          195,
+          196
+        ],
+        [
+          195,
+          196
+        ],
+        [
+          195,
+          196
+        ],
+        [
+          195,
+          196
+        ],
+        [
+          168,
+          182
+        ],
+        [
+          168,
+          182
+        ],
+        [
+          168,
+          182
+        ],
+        [
+          168,
+          182
+        ],
+        [
+          166,
+          182
+        ],
+        [
+          166,
+          182
+        ],
+        [
+          164,
+          181
+        ],
+        [
+          164,
+          182
+        ],
+        [
+          150,
+          182
+        ],
+        [
+          150,
+          182
+        ],
+        [
+          138,
+          181
+        ],
+        [
+          126,
+          182
+        ],
+        [
+          101,
+          182
+        ],
+        [
+          89,
+          182
+        ],
+        [
+          63,
+          182
+        ],
+        [
+          39,
+          182
+        ],
+        [
+          12,
+          177
+        ],
+        [
+          12,
+          177
+        ],
+        [
+          11,
+          181
+        ],
+        [
+          11,
+          182
+        ],
+        [
+          10,
+          177
+        ],
+        [
+          10,
+          176
+        ],
+        [
+          9,
+          181
+        ],
+        [
+          9,
+          182
+        ],
+        [
+          8,
+          177
+        ],
+        [
+          7,
+          169
+        ],
+        [
+          6,
+          182
+        ],
+        [
+          5,
+          179
+        ],
+        [
+          4,
+          167
+        ],
+        [
+          3,
+          163
+        ],
+        [
+          2,
+          182
+        ],
+        [
+          1,
+          182
+        ]
+      ]
+    }
+  ],
+  "scope": "Uniform Catalan primal frames and coordinate duals with strict crossings; no favorable complete rank sum or stronger factoring score.",
+  "source_sha256": {
+    "research/catalan-cup-crossings.md": "fd6b024a14b5e9b9c9ae519177f39a5e4e1500b1609de2fc956f43bf3085c5d7",
+    "tools/catalan_cup_crossing.py": "c38ced210a16bdc666fa5fb1405bb9c6ada16dbd96a0dc922c938ab1bef5ee2e",
+    "tools/check_catalan_cup_crossing.py": "7102b72c42295d75b2fa61628ad434867d50a775675400ea089631e5a50fbcb5",
+    "tools/quantum_braid_spectral_fusion.py": "fbfb582940bbffce5ad943ad5645ff0344a95f7e1b19d81b19c8f57c3b513eb6",
+    "tools/quantum_block_braid.py": "116d689f620a5d8fb784387d3eccc311497f56fbfc05a400ac8188f2c13cfc94",
+    "tools/paired_path_crossing.py": "309fb3f10a230475d5fae68625fcee5f5cfb50fc52491cc63f0765a7627c5c4b",
+    "tools/check_quantum_braid_fusion_seam.py": "bc31dda9402bf41bf09230693e60d44d1f6d3264b7ec8ed86e324fc6977eda14",
+    "tools/quantum_braid_fusion_seam.py": "5061f4a0eb82cb6b319650d552790f16d7ab18b392cc64ea5e3e4b328b6399bb",
+    "tools/quantum_braid_nilpotent_seam.py": "d1b32af8841288e739d9b089f2439c03f34502d933f4c377f29dca10bc3363d6",
+    "tools/quantum_braid_path.py": "4a6ce2cbad920cbe6dde6b6abf4642675a1d3d13955c8be67e6d0b6c97eae946",
+    "tools/check_fixed_field_descent.py": "831c1fe850b9d21b8d0050e310adaed2586251950542bb7d274e2ffd334ea8ac",
+    "tools/bounded_spin_crossing.py": "cefc38c88cdf76650f4966fa9e49d0edbc9ce4c2eec3848dd2716f35ee3819bd",
+    "tools/bounded_spin_support.py": "d3771564da3fb1d88ebdc2444f4e62db6754b2f72ad11101ed72a078a2d4a678",
+    "tools/check_fourier_multiplication_gates.py": "b094e9101f867d624aafa7bd851cb00b1ea411d1dc69cb700e742e609f94efc9"
+  }
+}
