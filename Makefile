@@ -115,6 +115,10 @@ verify-weyl-ordered-boundaries:
 verify-weyl-middle-coefficients:
 	python3 tools/check_weyl_middle_coefficients.py
 
+.PHONY: verify-subgroup-return
+verify-subgroup-return:
+	python3 tools/check_subgroup_return_crossings.py
+
 .PHONY: verify-group-shears
 verify-group-shears:
 	python3 tools/check_group_shear_crossings.py

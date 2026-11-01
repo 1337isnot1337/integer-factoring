@@ -451,6 +451,15 @@ leave other boundaries and longer ordered words open. Run
 `make verify-weyl-ordered-boundaries` and
 `make verify-weyl-middle-coefficients` for the standard-library replays.
 
+The [subgroup-return construction](research/subgroup-return-crossings.md)
+preserves both endpoints using noncommuting group words and has a rank-one
+starting cut at every length. Its free-group version has an auxiliary
+return functional of infinite Hankel rank, yet word reduction gives
+effective complete construction in `2^O(m)` time. Exact full binary
+coefficient spans fail the finite half target at lengths one through three
+for that example and a four-state analogue; useful uniform rank bounds
+remain open. Run `make verify-subgroup-return`.
+
 The [group-shear extension](research/group-shear-crossings.md) implements
 the swap through three multiplication/division shears over any finite
 `p`-group, with a constant nonzero determinant in characteristic `p`.

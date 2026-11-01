@@ -368,6 +368,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 - [Ordered Weyl boundaries](weyl-ordered-boundaries.md): explicit quadratic-phase word kernels and an all-length rank-one cold-boundary classification; exact four-jet certificates reject all 4,096 normalized F4 boundaries at two positions, and complete middle-coefficient tests reject actual F4 spans at two selected boundaries; longer ordered words remain open.
 
+- [Subgroup-return crossings](subgroup-return-crossings.md): group-word membership preserves the crossing and a rank-one starting cut at every length, including an effective free-group filter with infinite Hankel rank; complete binary coefficient spans at lengths one through three reject two examples without a uniform no-go claim.
+
 - [Group-shear crossings](group-shear-crossings.md): multiplication/division shears give cubic swap paths over every finite `p`-group in characteristic `p`; exact early-jet certificates exclude six displayed binary seeds, without an all-group claim.
 
 - [All-degree homogeneous Boolean charge bands](homogeneous-boolean-charge-bands.md): a degree-independent loss cap and stronger Gaussian floors exclude all exterior charges and a linearly growing interior band, including overlapping monomials.
