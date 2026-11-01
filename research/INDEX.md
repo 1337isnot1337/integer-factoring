@@ -1156,3 +1156,8 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 ## Physical full-tail cores and surviving low channels
 
 - [Physical full-tail cores and an exact low-band calculation](coherent-physical-tail-low-band.md)
+
+
+## A diagonal-specialization false positive
+
+- [An encoded cube tensor that passes only the diagonal screen](cube-pair-encoding-specialization.md)

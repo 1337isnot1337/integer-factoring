@@ -2101,3 +2101,8 @@ verify-hot-boundary-floor:
 verify-coherent-physical-tail:
 	python3 tools/check_coherent_physical_tail_core.py --output /tmp/integer-factoring-coherent-physical-tail-core.json
 	python3 tools/check_coherent_physical_tail_low_band.py --evidence evidence/coherent-physical-tail-low-band.json --output /tmp/integer-factoring-coherent-physical-tail-low-band.json
+
+
+.PHONY: verify-cube-pair-specialization
+verify-cube-pair-specialization:
+	python3 tools/check_cube_pair_encoding_specialization.py --output /tmp/integer-factoring-cube-pair-specialization.json

@@ -1759,6 +1759,8 @@ The [fixed rational-frame transfer](research/fixed-rational-frame-transfer.md) p
 
 The [physical full-tail reduction](research/coherent-physical-tail-low-band.md) retains the internal Gaussian factors for arbitrary constant low-mode physical maps and bounded label gauges. It reduces every sufficiently long tail to an explicit `8k`-mode core. Complete exact checks over the nonzero F4 functionals at `k=2` show that all 16 low channels survive; the resulting natural-pressure expansion approaches the critical value from above in the stated asymptotic window. Finite-tail, other-field, and broader-gauge constructions remain open.
 
+The [encoded-cube specialization control](research/cube-pair-encoding-specialization.md) gives a concrete tensor whose diagonal specializations appear to beat the cube target, while independent coordinates expose lower generic orders and reject it. Its exact integer pressure certificate and direct sixteen-mode Pfaffian replay provide a search control against this false positive; every nonzero diagonal specialization remains misleading even over larger fields.
+
 ## Contribution and attribution
 
 Start with the [contributor quickstart](docs/START_HERE.md) and
