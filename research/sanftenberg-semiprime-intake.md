@@ -82,6 +82,12 @@ It suggests another precise evaluator target. The efficient computation
 of the scalar remains the resource that must be proved; an exact encoding
 of factor information does not make that computation cheap.
 
+The [Teichmuller carry backend](teichmuller-cyclic-carries.md) now preserves
+2-adic coefficients on an explicit synchronized-polynomial input class,
+including a precision-linear residue-root count compiler. It may support
+these exact scalar targets if a small source representation is supplied.
+This does not provide that missing representation or the full network cost.
+
 ## 4. What was independently checked
 
 The two upstream Python files were downloaded at the pinned commit;

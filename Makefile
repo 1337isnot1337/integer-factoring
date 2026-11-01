@@ -3083,3 +3083,9 @@ verify-elliptic-word-costs:
 	python3 tools/check_elliptic_word_costs.py
 
 verify-arithmetic: verify-elliptic-word-costs
+
+.PHONY: verify-teichmuller-carries
+verify-teichmuller-carries:
+	python3 tools/check_teichmuller_cyclic_carries.py
+
+verify-arithmetic: verify-teichmuller-carries

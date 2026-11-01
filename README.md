@@ -2018,6 +2018,12 @@ selection remains open; the audit supplies no stronger factoring bound.
 Its [full code replay receipt](evidence/elliptic-word-full-verification.json)
 pins the successful default-plus-focused run at `956d971`.
 
+A [Teichmuller carry backend](research/teichmuller-cyclic-carries.md) retains
+2-adic coefficient precision with the polynomial evaluator's same carry
+states. Explicit degree-`2h-1` norm indicators also give finite-field root
+counts modulo `2^h`, with all extra variables and precision charged. A
+low-cost representation of the complete integer query is still missing.
+
 For the nilpotent-path construction, a [controlled monomial obstruction](research/controlled-permutation-smith-floor.md)
 extends the existing permutation calculation to dependent and noncommuting
 controls. It gives `B >= q^3/sqrt(2)` in its stated scope. A separate

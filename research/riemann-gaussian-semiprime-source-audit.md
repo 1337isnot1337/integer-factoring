@@ -100,6 +100,13 @@ an explicit encoding or recovery argument with its full precision cost.
 The generic boundary-contraction algorithm itself works over a commutative
 semiring and does not have this particular compatibility restriction.
 
+For the separate [synchronized polynomial backend](teichmuller-cyclic-carries.md),
+an unramified-ring lift now retains `2^h` coefficient precision and supplies
+residue-field root counts with explicitly acquired degree-`2h-1` indicators.
+That is a conditional backend interface, not a compiler for this public
+network: its source still needs a uniformly small representation in that
+polynomial input class, with the complete moment and prefix costs charged.
+
 There is a concrete general-input scope issue. The
 [public correctness join](https://github.com/dbsanfte/RiemannGaussian/blob/f5fd3ddb407972f9ca65298fbe9be3225fe06635/RiemannGaussian/SemiprimeD1PublicCorrectness.lean)
 uses a mod-4 count readout with semiprime hypotheses. For N=12 the four proper
