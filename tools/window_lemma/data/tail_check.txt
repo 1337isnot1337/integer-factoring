@@ -1,0 +1,7 @@
+pairs=67649 max z=21.23 expected max ~ ln(n)+0.577 = 11.70
+P(z>1) observed 3.70e-01  Exp(1) model 3.68e-01
+P(z>2) observed 1.37e-01  Exp(1) model 1.35e-01
+P(z>4) observed 1.90e-02  Exp(1) model 1.83e-02
+P(z>6) observed 3.02e-03  Exp(1) model 2.48e-03
+P(z>8) observed 5.32e-04  Exp(1) model 3.35e-04
+P(z>10) observed 7.39e-05  Exp(1) model 4.54e-05
