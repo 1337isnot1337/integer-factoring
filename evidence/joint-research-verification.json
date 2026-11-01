@@ -1,0 +1,44 @@
+{
+  "source_commit": "21c7cfb3d507a388ccc788ac301f8dc31d43ebfe",
+  "verification_kind": "local exact-source author replay",
+  "phases": [
+    {
+      "command": [
+        "make",
+        "verify-joint-energy-riccati",
+        "verify-joint-polynomial-tangent",
+        "verify-joint-monomial-lattices",
+        "verify-joint-projector-lattices",
+        "verify-joint-evaluation-algebra",
+        "verify-joint-endpoint-loops",
+        "verify-joint-nilpotent-depths",
+        "verify-joint-filtered-gauges"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "make",
+        "verify"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "counts": {
+    "markdown_files": 764,
+    "unit_tests": 63,
+    "crossing_tests": 5
+  },
+  "source_sha256": {
+    "check_joint_energy_riccati.py": "bdab04003cfd0da195707e6a5a43478a1ae2c96da6d5d004f85ed8fd9d9a59c5",
+    "check_joint_polynomial_tangent.py": "0f3bdd141989cbbdb6df7ec5be1ab325e154f1c760b37a940bf1399e357224c2",
+    "check_joint_monomial_lattices.py": "92ae7621a6f48eaf06752dae9279baee019c5385c916c56b7445ff16a73321b0",
+    "check_joint_projector_lattices.py": "0da013e1deff550b630f49445d2084cef74b90409aea965782262ea382131081",
+    "check_joint_evaluation_algebra.py": "246216c5b4133a6535c91735e671bf4e62c02b6fdbb853c864e4e76ab448d1c7",
+    "check_joint_endpoint_loops.py": "35307398f5a859eb894eb1a373538224dc7fbde29e8143ab3dac28849e41d78b",
+    "check_joint_nilpotent_depths.py": "2a6e8200bb9bf9758acfe58c46b5c0c50bdb31fe9b626a937fc883a178e0ec6a",
+    "check_joint_filtered_gauges.py": "b299489422759b8f1e715f7cfc99ce6858c183639d2c85fe36c81648db7963ff"
+  },
+  "log_sha256": "9e5bdfe50cf95b255b54dcf319fffc05ac1fe203afbb04c6251f8ec06f731043",
+  "scope": "The eight named focused mathematical replays and the entire default repository gate at the pinned source. No new Lean build, independent mathematical review, leaderboard submission or exponent improvement."
+}
