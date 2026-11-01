@@ -2658,3 +2658,8 @@ verify-classical-oriented-basis:
 verify-tensor-literal-full-tail:
 	python3 tools/check_tensor_literal_full_tail_core.py --output /tmp/tensor-full-tail-replay.json
 	python3 tools/check_tensor_literal_full_tail_rank_one.py --output /tmp/tensor-full-tail-rank-one-replay.json
+
+.PHONY: verify-sparse-projected-graph
+verify-sparse-projected-graph:
+	python3 tools/check_sparse_projected_signed_graph.py
+	python3 tools/check_projected_oriented_power_search.py --replay evidence/projected-oriented-power-search.json
