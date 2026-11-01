@@ -1,0 +1,15 @@
+L1 n= 6: min Sum_i min(#A,#B) over balanced z = 4  (lemma bound n^2/120 = 0.30; ratio 0.1111)  0.0s
+L1 n=12: min Sum_i min(#A,#B) over balanced z = 16  (lemma bound n^2/120 = 1.20; ratio 0.1111)  18.1s
+L2 n=3: min over balanced colourings of max_j Cross(j) = 1  (0.0s)
+L2 n=4: min over balanced colourings of max_j Cross(j) = 1  (0.0s)
+L2 n=5: min over balanced colourings of max_j Cross(j) = 2  (0.1s)
+L2 n=6: min over balanced colourings of max_j Cross(j) = 2  (0.9s)
+L3 n=4: odd variant min max_j Cross'(j) = 0  (0.0s)
+L3 n=5: odd variant min max_j Cross'(j) = 1  (0.0s)
+L3 n=6: odd variant min max_j Cross'(j) = 1  (0.5s)
+L4 bit-pattern facts: OK
+PASS
+
+real	0m19.588s
+user	0m14.467s
+sys	0m0.040s
