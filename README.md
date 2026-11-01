@@ -96,38 +96,29 @@ Run `make verify-prime-cofactor-saturation`.
 ## Coherent crossing profiles
 
 The [deletion-closed physical-space construction](research/coherent-hot-compound-retractions.md)
-computes both complete crossing cuts by separate compressed compound matrices.
-A 32-letter coherent map strictly improves its coordinate counterpart at every
-scale and has the exact rational certificate **`rho < 1781/2501`**.
-It also minimizes the product pressure at every scale in the complete
-121-map binary occupation-preserving height-16 boundary class.
+computes both complete crossing cuts by compressed compound matrices.
+The [32-letter binary map](research/coherent-q32-complete-boundary-optimum.md)
+has the exact certificate **`rho < 1781/2501`** and minimizes the product
+pressure at every scale in the complete class of **496** binary rank-four
+retractions on its five-dimensional height-16 boundary. The map and its
+transpose are the only ties.
 
-The [mixed-occupation extension](research/coherent-hot-mixed-boundary.md)
-supports all 496 binary height-preserving rank-four retractions on that
-boundary. Exact constructors, literal Pfaffian controls, full profile receipts,
-and the 121-map all-scale proof are retained. The certified contraction remains
+A [96-letter binary construction](research/coherent-q96-pressure.md) certifies
+**`rho < 0.7100058652501`**, improving its matched coordinate construction.
+The exact comparison holds for `0 < r <= 4/5`; it is not an all-scale
+improvement. Both 9,216-order profiles and an outward-rounded rational
+pressure certificate are retained. The separate F4 hyperoval result below
+gives a still smaller bound.
+
+[Graded quotient codes](research/coherent-graded-quotients.md) supply explicit
+mixed-occupation physical maps. Their complete zero-cut profiles equal the
+coordinate profiles in every dyadic virtual dimension. The
+[complete letter-gauge cone](research/coherent-shared-letter-gauges.md) charges
+both profile changes and physical type costs. These constructions remain
 above `1/sqrt(2)`; the complete factoring score remains **1/2**.
-Run `make verify-coherent-retractions` for focused exact controls and
-`make verify-coherent-q32-catalogue` to recompute the complete catalogue proof.
-[Graded quotient codes](research/coherent-graded-quotients.md) now supply
-explicit mixed-occupation physical maps. For every dyadic virtual dimension,
-their full zero-cut profile equals the coordinate profile; the other cut remains
-a construction variable. A [complete letter-gauge cone](research/coherent-shared-letter-gauges.md)
-also permits negative potentials while charging both profile changes and
-physical type costs. Six literal rational-gauge cut profiles and all sixteen
-four-mode quotient maps are independently checked.
-
-The [protected lower-space theorem](research/coherent-boundary-protected-floor.md)
-proves a natural common-scale pressure infimum of at least **`17/24`**
-for every homogeneous height-16 boundary retraction retaining the 28 lower
-coordinate states, over every characteristic-two field and every common
-physical type. This is already above `1/sqrt(2)`.
-The [F4 boundary evaluator](research/coherent-f4-boundary.md) retains an exact
-partial catalogue of 153 symmetry representatives covering 530 projectors;
-152 profile pairs are strictly worse than the binary reference at every scale.
-The run stopped once the structural theorem excluded a scoring improvement
-from the entire family. Run
-`make verify-coherent-boundary-floor verify-coherent-f4-boundary`.
+Run `make verify-coherent-q96-pressure verify-coherent-mixed-catalogue`
+for the exact saved-profile certificates. The checkers expose
+`--recompute-profiles` for full native profile reconstruction.
 <!-- coherent-compound-checkpoint:end -->
 
 The [quadratic-parity Walsh construction](research/bell-walsh-constructions.md)
