@@ -1174,3 +1174,5 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 ## Complete coefficient fibers and polynomial row certificates
 
 - [Exact rigidity and a complete binary Gaussian-frame fiber](cube-complete-coefficient-fibers.md)
+
+- [Multi-axis type amplification and matched workspace](multiaxis-type-amplification.md): one bounded finite-seed selector attains the full limiting score from any fixed-dimensional family with subexponential piece entropy and vanishing relative width error; exact multi-cut rank sums sharpen the finite-seed threshold. Actual tensors and all channels are checked.

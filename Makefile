@@ -2128,3 +2128,7 @@ verify-cube-coefficient-fibers:
 	python3 tools/check_cube_coefficient_fibers.py --output /tmp/integer-factoring-cube-coefficient-fibers.json
 verify-cube-coefficient-fibers-full:
 	python3 tools/check_cube_coefficient_fibers.py --recompute-census --census /tmp/integer-factoring-cube-coefficient-census.json --output /tmp/integer-factoring-cube-coefficient-fibers-full.json
+
+.PHONY: verify-multiaxis-types
+verify-multiaxis-types:
+	python3 tools/check_multiaxis_type_amplification.py
