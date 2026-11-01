@@ -16,8 +16,7 @@ The algorithm below keeps exact identities in the full group throughout.
 This is a presentation compression theorem, not a bound on how quickly
 useful relations can be selected. It leaves the uniform closure and
 short-power-window questions in
-[dynamic leading-norm closure](dynamic-leading-norm-closure.md) and
-[smooth leading powers](smooth-leading-power-selection.md) open.
+[dynamic leading-norm closure](dynamic-leading-norm-closure.md) open.
 
 ## 1. An exact common multiplier
 
