@@ -1,5 +1,7 @@
 # Research index
 
+- [Principal paired alphabets on the retained five-letter pencil](pencil-principal-alphabets.md): exact physical restrictions explore the boundary outside the previous bounded-height run; fifty independent orders and a registered 45,292-case screen with explicit follow-on selection. No new contraction.
+
 - [Fixed-type bundle steps on complete coordinate crossings](pascal-coordinate-bundle-search.md): adapt the existing proximal method to unequal Fock alphabets, retain and cross-check all supporting planes, and register two thirty-minute comparisons. Numerical stops are not global certificates.
 
 - [Independent coordinate alphabets on the two physical pairs](rectangular-pascal-coordinate-alphabets.md): complete original Fock blocks with separate physical costs, independent nonbinary controls and a registered nineteen-case rectangular screen. No stronger crossing or factoring bound is asserted.

@@ -1,0 +1,168 @@
+{
+  "status": "pass",
+  "selected_literal_entries_and_endpoints": 209,
+  "independent_untruncated_orders": 50,
+  "records": [
+    {
+      "case_index": 0,
+      "alphabet_x": [
+        0,
+        4
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "parameters": [
+        -2,
+        -3,
+        1,
+        -3,
+        2,
+        3,
+        -1,
+        1,
+        4,
+        8,
+        4,
+        -1,
+        3,
+        -1,
+        -2,
+        1,
+        1
+      ],
+      "independent_orders": [
+        -18,
+        -9,
+        -9,
+        -9,
+        -8,
+        -5,
+        0,
+        4,
+        5,
+        8,
+        10,
+        11,
+        13,
+        16,
+        27,
+        32
+      ]
+    },
+    {
+      "case_index": 33,
+      "alphabet_x": [
+        1,
+        2,
+        4
+      ],
+      "alphabet_y": [
+        0,
+        2,
+        3
+      ],
+      "parameters": [
+        2,
+        -3,
+        -2,
+        -2,
+        1,
+        -1,
+        0,
+        -1,
+        -4,
+        1,
+        4,
+        4,
+        -2,
+        -3,
+        2,
+        -2,
+        1
+      ],
+      "independent_orders": [
+        -19,
+        -17,
+        -17,
+        -12,
+        -11,
+        -11,
+        -8,
+        1,
+        2,
+        -1,
+        1,
+        2,
+        3,
+        5,
+        7,
+        8,
+        18,
+        19
+      ]
+    },
+    {
+      "case_index": 66,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "alphabet_y": [
+        1,
+        3
+      ],
+      "parameters": [
+        -3,
+        -1,
+        -2,
+        -1,
+        -2,
+        2,
+        3,
+        7,
+        2,
+        2,
+        4,
+        -7,
+        1,
+        3,
+        -1,
+        -3,
+        1
+      ],
+      "independent_orders": [
+        -18,
+        -15,
+        -14,
+        -11,
+        -8,
+        -7,
+        2,
+        9,
+        -4,
+        -2,
+        3,
+        5,
+        12,
+        14,
+        15,
+        21
+      ]
+    }
+  ],
+  "source_sha256": {
+    "tools/pencil_principal_alphabets.py": "e421d68a335111edd9910dd6025c4a313f6e7ff227638407343bcd254b1fe784",
+    "tools/check_pencil_principal_alphabets.py": "98f7ac9ff438a05511b47a5f03549a51aa3e590b816ea7a1133205cc74b8d85c",
+    "tools/check_scaled_asymmetric_pressure.py": "96112746f65f8ad573330ea9398c2c507739eb3deb042342be9e18c6b42d03da",
+    "tools/weighted_smith_oracle_f4.py": "d277f46caa98dab48d243af64c18e42e09e917bf1e862057a55cb35f74a6d572",
+    "tools/native_rectangular_smith_f4.py": "5c96128e3713138a08752c22036154cb65983a0b47ca66aa2ca18949d765ce4a",
+    "tools/native_rectangular_smith_f4.cpp": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6"
+  },
+  "scope": "Exact unequal principal restrictions, endpoints and new-gauge full profiles. No improving pressure or all-gauge exclusion."
+}
