@@ -2991,3 +2991,8 @@ verify-rectangular-coordinate-support:
 .PHONY: verify-regularized-transpose-words
 verify-regularized-transpose-words:
 	python3 tools/check_regularized_transpose_words.py
+
+.PHONY: verify-joint-frobenius
+verify-joint-frobenius:
+	python3 tools/check_joint_frobenius_carries.py
+	python3 tools/check_joint_geometric_box_network.py

@@ -2586,3 +2586,13 @@ targets to exact `269efb8`: 356 Python command blocks, 66 unit tests,
 five crossing tests and 988 Markdown files. Later main integration and
 integer-degree point packages have separate focused passes, outside that
 full-source pin. These checks supply no realizing tensor or independent review.
+
+### Joint contraction instead of repeated local elimination
+
+[Joint Frobenius product contraction](research/joint-frobenius-product-contraction.md)
+sums all variables of a synchronized product in one cyclic-carry computation,
+with cost `(S+2)^O(vD)` field operations. It avoids the product-representation
+closure required by repeated one-variable elimination. Weighted geometric-box
+networks give a concrete global application, with explicit field and boundary
+costs. This does not represent the remaining `zeta^(sxy)` arithmetic phases or
+improve the factoring exponent. Run `make verify-joint-frobenius`.

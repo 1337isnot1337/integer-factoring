@@ -1,0 +1,17 @@
+{
+  "completed": true,
+  "counts": {
+    "coefficient_queries": 477,
+    "joint_trace_queries": 104,
+    "direct_assignments": 2090,
+    "zero_denominators": 650,
+    "synchronization_graphs": 72
+  },
+  "source_sha256": {
+    "joint_frobenius_carries.py": "a383d3db131fce1e932b23dddde55c2c747c5bb117823d2e6c686e26135c75b8",
+    "check_joint_frobenius_carries.py": "6c410c87fe5abe0940bd0636ff04387ca50c11f322d88ba7f43bdc0a5cb592fd",
+    "check_frobenius_rational_trace.py": "d5cdf093a71fa6f3528b58359d8bb5307e94972aab12642d6818d45d1398c1f3",
+    "check_carry_fourier_elimination.py": "ad1065db63bc74779105964c2ed8c3cf5e91f82d514fa70580fa8eb31a091763"
+  },
+  "scope": "Exact finite controls for synchronized multivariate products, including coupled terms and zero denominators. No representation of the complete factoring network or improved factoring bound is claimed."
+}

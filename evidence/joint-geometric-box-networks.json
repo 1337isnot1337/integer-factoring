@@ -1,0 +1,175 @@
+{
+  "completed": true,
+  "records": [
+    {
+      "width": 1,
+      "left": 1,
+      "right": 1,
+      "edges": [
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sum": 1,
+      "left_charges": [
+        0
+      ],
+      "right_charges": [
+        2
+      ],
+      "direct_assignments": 3
+    },
+    {
+      "width": 2,
+      "left": 1,
+      "right": 1,
+      "edges": [
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sum": 1,
+      "left_charges": [
+        2
+      ],
+      "right_charges": [
+        4
+      ],
+      "direct_assignments": 15
+    },
+    {
+      "width": 3,
+      "left": 1,
+      "right": 1,
+      "edges": [
+        [
+          0,
+          0,
+          3
+        ]
+      ],
+      "sum": 3,
+      "left_charges": [
+        6
+      ],
+      "right_charges": [
+        8
+      ],
+      "direct_assignments": 63
+    },
+    {
+      "width": 2,
+      "left": 2,
+      "right": 1,
+      "edges": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ]
+      ],
+      "sum": 0,
+      "left_charges": [
+        2,
+        2
+      ],
+      "right_charges": [
+        4
+      ],
+      "direct_assignments": 45
+    },
+    {
+      "width": 2,
+      "left": 1,
+      "right": 2,
+      "edges": [
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          3
+        ]
+      ],
+      "sum": 0,
+      "left_charges": [
+        2
+      ],
+      "right_charges": [
+        4,
+        4
+      ],
+      "direct_assignments": 75
+    },
+    {
+      "width": 2,
+      "left": 2,
+      "right": 2,
+      "edges": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          0,
+          3
+        ],
+        [
+          1,
+          1,
+          4
+        ]
+      ],
+      "sum": 2,
+      "left_charges": [
+        2,
+        2
+      ],
+      "right_charges": [
+        4,
+        4
+      ],
+      "direct_assignments": 225
+    }
+  ],
+  "direct_assignments": 426,
+  "symbolic_large_width_controls": [
+    {
+      "width": 4,
+      "sum": 3,
+      "oracle": "Unique surviving edge digit1; no field assignments enumerated"
+    },
+    {
+      "width": 8,
+      "sum": 3,
+      "oracle": "Unique surviving edge digit1; no field assignments enumerated"
+    }
+  ],
+  "source_sha256": {
+    "joint_frobenius_carries.py": "a383d3db131fce1e932b23dddde55c2c747c5bb117823d2e6c686e26135c75b8",
+    "joint_geometric_box_network.py": "f0b3f73c6c44914ba6b79336497a0b6674a661b9bd8655e7901911331371d42c",
+    "check_joint_geometric_box_network.py": "0ac49d517585e1d023ff809dad14161b9380e96ac329ebada51eb8aef7741ca0",
+    "check_frobenius_rational_trace.py": "d5cdf093a71fa6f3528b58359d8bb5307e94972aab12642d6818d45d1398c1f3",
+    "check_carry_fourier_elimination.py": "ad1065db63bc74779105964c2ed8c3cf5e91f82d514fa70580fa8eb31a091763"
+  },
+  "scope": "Whole bipartite geometric-box products. This is not a representation of the complete factoring query or a stronger factoring bound."
+}
