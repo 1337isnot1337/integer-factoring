@@ -34,8 +34,11 @@ The [exact selector](research/cofactor-collision-selection.md) cancels equal
 or conjugate residual ideals without factoring their composite norms or testing
 them for primality. It retains genuine relations in the fixed prime-form base.
 Matched finite controls reduce leading-norm queries from 227,593 to 88,234 on
-a 92-bit input and from 3,553,722 to 1,400,316 on a 124-bit input. These are
-query counts, not wall-clock speedups or uniform complexity bounds.
+a 92-bit input and from 3,553,722 to 1,400,316 on a 124-bit input. A 144-bit matched control reduces
+8,120,765 queries to 3,440,025 at the square cofactor cap; its retained
+relation rank increases from 502 to 510. The present implementation is slower
+in wall-clock time on that input. These finite query counts do not establish
+a uniform complexity improvement.
 
 The [admissible-quota theorem](research/cofactor-collision-quota.md) proves
 that an explicit per-generator quota forces complete rational relation rank,
