@@ -1,0 +1,2090 @@
+{
+  "annihilator": 94161325139492316876528,
+  "annihilator_bits": 77,
+  "annihilator_supplied": false,
+  "class_number_supplied": false,
+  "complete_generation_claimed": false,
+  "diagonal_fixed_before_targets": 81,
+  "extraction": {
+    "annihilator": 94161325139492316876528,
+    "factor": 1000000007,
+    "factor_data": {
+      "coprime_factors": [
+        1000000007,
+        1000000009
+      ],
+      "form": [
+        1000000007,
+        0,
+        1000000009
+      ],
+      "proper_factor": 1000000007,
+      "shape": "zero_middle"
+    },
+    "odd_annihilator_part": 5885082821218269804783,
+    "odd_n": 1000000016000000063,
+    "statistics": {
+      "dependent_top_cancellations": 0,
+      "generator_count": 12,
+      "group_inversions": 0,
+      "group_multiplications": 237,
+      "maximum_cyclic_order_log": 2,
+      "maximum_retained_basis_rank": 0,
+      "order_bit_bound": 62,
+      "order_swaps": 0,
+      "processed_generators": 1,
+      "top_checks": 1
+    },
+    "status": "factored",
+    "trace": [
+      {
+        "candidate": [
+          779176307,
+          -689994244,
+          1436161521
+        ],
+        "candidate_order_log": 2,
+        "generator_index": 0,
+        "proper_factor": 1000000007,
+        "top": [
+          1000000007,
+          0,
+          1000000009
+        ]
+      }
+    ]
+  },
+  "factor_base_primes": [
+    3,
+    7,
+    13,
+    19,
+    31,
+    47,
+    59,
+    61,
+    67,
+    79,
+    89,
+    101
+  ],
+  "factorization": [
+    1000000007,
+    1000000009
+  ],
+  "input_bits": 60,
+  "input_factors_supplied": false,
+  "missing_relation_indices": [],
+  "odd_n": 1000000016000000063,
+  "relation_matrix": [
+    [
+      87,
+      3,
+      -1,
+      1,
+      -3,
+      -1,
+      0,
+      0,
+      -2,
+      0,
+      -1,
+      0
+    ],
+    [
+      -2,
+      84,
+      7,
+      -2,
+      0,
+      0,
+      2,
+      0,
+      0,
+      -1,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      83,
+      -1,
+      -1,
+      -1,
+      0,
+      0,
+      0,
+      -1,
+      1,
+      1
+    ],
+    [
+      6,
+      3,
+      2,
+      81,
+      0,
+      1,
+      -2,
+      -3,
+      7,
+      2,
+      1,
+      -1
+    ],
+    [
+      -8,
+      -4,
+      -3,
+      1,
+      82,
+      0,
+      -1,
+      -3,
+      0,
+      -1,
+      0,
+      3
+    ],
+    [
+      -1,
+      0,
+      -4,
+      -5,
+      0,
+      79,
+      0,
+      2,
+      -2,
+      1,
+      0,
+      -2
+    ],
+    [
+      -2,
+      4,
+      3,
+      1,
+      0,
+      2,
+      83,
+      0,
+      -2,
+      -1,
+      0,
+      1
+    ],
+    [
+      6,
+      4,
+      3,
+      -1,
+      2,
+      1,
+      1,
+      82,
+      1,
+      2,
+      0,
+      -3
+    ],
+    [
+      3,
+      -1,
+      0,
+      0,
+      3,
+      -2,
+      -1,
+      0,
+      83,
+      -2,
+      -1,
+      2
+    ],
+    [
+      -3,
+      2,
+      3,
+      0,
+      -1,
+      1,
+      3,
+      0,
+      2,
+      81,
+      0,
+      -4
+    ],
+    [
+      -7,
+      -2,
+      -2,
+      -1,
+      0,
+      -1,
+      0,
+      -3,
+      3,
+      -1,
+      79,
+      1
+    ],
+    [
+      1,
+      -1,
+      -1,
+      -2,
+      0,
+      3,
+      4,
+      1,
+      0,
+      -1,
+      2,
+      82
+    ]
+  ],
+  "roots": {
+    "3": 2,
+    "7": 2,
+    "13": 4,
+    "19": 6,
+    "31": 26,
+    "47": 38,
+    "59": 34,
+    "61": 18,
+    "67": 56,
+    "79": 16,
+    "89": 60,
+    "101": 18
+  },
+  "search": {
+    "left": {
+      "group_compositions": 1826136,
+      "layers": [
+        {
+          "depth": 1,
+          "distinct_new_classes": 24,
+          "input_frontier": 1,
+          "pruned_new_classes": 0,
+          "retained_frontier": 24
+        },
+        {
+          "depth": 2,
+          "distinct_new_classes": 288,
+          "input_frontier": 24,
+          "pruned_new_classes": 0,
+          "retained_frontier": 288
+        },
+        {
+          "depth": 3,
+          "distinct_new_classes": 2312,
+          "input_frontier": 288,
+          "pruned_new_classes": 264,
+          "retained_frontier": 2048
+        },
+        {
+          "depth": 4,
+          "distinct_new_classes": 13968,
+          "input_frontier": 2048,
+          "pruned_new_classes": 11920,
+          "retained_frontier": 2048
+        },
+        {
+          "depth": 5,
+          "distinct_new_classes": 31944,
+          "input_frontier": 2048,
+          "pruned_new_classes": 29896,
+          "retained_frontier": 2048
+        },
+        {
+          "depth": 6,
+          "distinct_new_classes": 37825,
+          "input_frontier": 2048,
+          "pruned_new_classes": 35777,
+          "retained_frontier": 2048
+        },
+        {
+          "depth": 7,
+          "distinct_new_classes": 39489,
+          "input_frontier": 2048,
+          "pruned_new_classes": 37441,
+          "retained_frontier": 2048
+        },
+        {
+          "depth": 8,
+          "distinct_new_classes": 39909,
+          "input_frontier": 2048,
+          "pruned_new_classes": 37861,
+          "retained_frontier": 2048
+        },
+        {
+          "depth": 9,
+          "distinct_new_classes": 40035,
+          "input_frontier": 2048,
+          "pruned_new_classes": 37987,
+          "retained_frontier": 2048
+        },
+        {
+          "depth": 10,
+          "distinct_new_classes": 41263,
+          "input_frontier": 2048,
+          "pruned_new_classes": 39215,
+          "retained_frontier": 2048
+        },
+        {
+          "depth": 11,
+          "distinct_new_classes": 39696,
+          "input_frontier": 2048,
+          "pruned_new_classes": 37648,
+          "retained_frontier": 2048
+        },
+        {
+          "depth": 12,
+          "distinct_new_classes": 40302,
+          "input_frontier": 2048,
+          "pruned_new_classes": 38254,
+          "retained_frontier": 2048
+        },
+        {
+          "depth": 13,
+          "distinct_new_classes": 39276,
+          "input_frontier": 2048,
+          "pruned_new_classes": 37228,
+          "retained_frontier": 2048
+        },
+        {
+          "depth": 14,
+          "distinct_new_classes": 39765,
+          "input_frontier": 2048,
+          "pruned_new_classes": 37717,
+          "retained_frontier": 2048
+        },
+        {
+          "depth": 15,
+          "distinct_new_classes": 39122,
+          "input_frontier": 2048,
+          "pruned_new_classes": 37074,
+          "retained_frontier": 2048
+        },
+        {
+          "depth": 16,
+          "distinct_new_classes": 39769,
+          "input_frontier": 2048,
+          "pruned_new_classes": 37721,
+          "retained_frontier": 2048
+        },
+        {
+          "depth": 17,
+          "distinct_new_classes": 38826,
+          "input_frontier": 2048,
+          "pruned_new_classes": 36778,
+          "retained_frontier": 2048
+        },
+        {
+          "depth": 18,
+          "distinct_new_classes": 39997,
+          "input_frontier": 2048,
+          "pruned_new_classes": 37949,
+          "retained_frontier": 2048
+        },
+        {
+          "depth": 19,
+          "distinct_new_classes": 39913,
+          "input_frontier": 2048,
+          "pruned_new_classes": 37865,
+          "retained_frontier": 2048
+        },
+        {
+          "depth": 20,
+          "distinct_new_classes": 40681,
+          "input_frontier": 2048,
+          "pruned_new_classes": 38633,
+          "retained_frontier": 2048
+        },
+        {
+          "depth": 21,
+          "distinct_new_classes": 39025,
+          "input_frontier": 2048,
+          "pruned_new_classes": 36977,
+          "retained_frontier": 2048
+        },
+        {
+          "depth": 22,
+          "distinct_new_classes": 38606,
+          "input_frontier": 2048,
+          "pruned_new_classes": 36558,
+          "retained_frontier": 2048
+        },
+        {
+          "depth": 23,
+          "distinct_new_classes": 38893,
+          "input_frontier": 2048,
+          "pruned_new_classes": 36845,
+          "retained_frontier": 2048
+        },
+        {
+          "depth": 24,
+          "distinct_new_classes": 39655,
+          "input_frontier": 2048,
+          "pruned_new_classes": 37607,
+          "retained_frontier": 2048
+        },
+        {
+          "depth": 25,
+          "distinct_new_classes": 39991,
+          "input_frontier": 2048,
+          "pruned_new_classes": 37943,
+          "retained_frontier": 2048
+        },
+        {
+          "depth": 26,
+          "distinct_new_classes": 40296,
+          "input_frontier": 2048,
+          "pruned_new_classes": 38248,
+          "retained_frontier": 2048
+        },
+        {
+          "depth": 27,
+          "distinct_new_classes": 41143,
+          "input_frontier": 2048,
+          "pruned_new_classes": 39095,
+          "retained_frontier": 2048
+        },
+        {
+          "depth": 28,
+          "distinct_new_classes": 42168,
+          "input_frontier": 2048,
+          "pruned_new_classes": 40120,
+          "retained_frontier": 2048
+        },
+        {
+          "depth": 29,
+          "distinct_new_classes": 41821,
+          "input_frontier": 2048,
+          "pruned_new_classes": 39773,
+          "retained_frontier": 2048
+        },
+        {
+          "depth": 30,
+          "distinct_new_classes": 41396,
+          "input_frontier": 2048,
+          "pruned_new_classes": 39348,
+          "retained_frontier": 2048
+        },
+        {
+          "depth": 31,
+          "distinct_new_classes": 40076,
+          "input_frontier": 2048,
+          "pruned_new_classes": 38028,
+          "retained_frontier": 2048
+        },
+        {
+          "depth": 32,
+          "distinct_new_classes": 38678,
+          "input_frontier": 2048,
+          "pruned_new_classes": 36630,
+          "retained_frontier": 2048
+        },
+        {
+          "depth": 33,
+          "distinct_new_classes": 38145,
+          "input_frontier": 2048,
+          "pruned_new_classes": 36097,
+          "retained_frontier": 2048
+        },
+        {
+          "depth": 34,
+          "distinct_new_classes": 38035,
+          "input_frontier": 2048,
+          "pruned_new_classes": 35987,
+          "retained_frontier": 2048
+        },
+        {
+          "depth": 35,
+          "distinct_new_classes": 38083,
+          "input_frontier": 2048,
+          "pruned_new_classes": 36035,
+          "retained_frontier": 2048
+        },
+        {
+          "depth": 36,
+          "distinct_new_classes": 39255,
+          "input_frontier": 2048,
+          "pruned_new_classes": 37207,
+          "retained_frontier": 2048
+        },
+        {
+          "depth": 37,
+          "distinct_new_classes": 39177,
+          "input_frontier": 2048,
+          "pruned_new_classes": 37129,
+          "retained_frontier": 2048
+        },
+        {
+          "depth": 38,
+          "distinct_new_classes": 40142,
+          "input_frontier": 2048,
+          "pruned_new_classes": 38094,
+          "retained_frontier": 2048
+        },
+        {
+          "depth": 39,
+          "distinct_new_classes": 40652,
+          "input_frontier": 2048,
+          "pruned_new_classes": 38604,
+          "retained_frontier": 2048
+        },
+        {
+          "depth": 40,
+          "distinct_new_classes": 40676,
+          "input_frontier": 2048,
+          "pruned_new_classes": 38628,
+          "retained_frontier": 2048
+        }
+      ],
+      "maximum_frontier": 2048,
+      "pruned_class_occurrences": 1362181,
+      "retained_classes": 78137
+    },
+    "left_depth": 40,
+    "right_depth": 40,
+    "selection": "stratified",
+    "width": 2048,
+    "word_length_bound": 80
+  },
+  "status": "factored",
+  "targets": [
+    {
+      "found": true,
+      "index": 0,
+      "left_path_depth": 19,
+      "left_word": [
+        -6,
+        -3,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        0,
+        1,
+        0
+      ],
+      "meeting_class": [
+        1096236671,
+        1012003884,
+        1145772637
+      ],
+      "relation_row": [
+        87,
+        3,
+        -1,
+        1,
+        -3,
+        -1,
+        0,
+        0,
+        -2,
+        0,
+        -1,
+        0
+      ],
+      "right_path_depth": 3,
+      "right_statistics": {
+        "group_compositions": 3633,
+        "layers": [
+          {
+            "depth": 1,
+            "distinct_new_classes": 24,
+            "input_frontier": 1,
+            "pruned_new_classes": 0,
+            "retained_frontier": 24
+          },
+          {
+            "depth": 2,
+            "distinct_new_classes": 288,
+            "input_frontier": 24,
+            "pruned_new_classes": 0,
+            "retained_frontier": 288
+          }
+        ],
+        "maximum_frontier": 288,
+        "meeting_in_partial_layer": 3,
+        "pruned_class_occurrences": 0,
+        "retained_classes": 313
+      },
+      "right_word": [
+        0,
+        0,
+        0,
+        1,
+        -2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "status": "found",
+      "target": [
+        796983493,
+        656671536,
+        1389996659
+      ],
+      "word": [
+        -6,
+        -3,
+        1,
+        -1,
+        3,
+        1,
+        0,
+        0,
+        2,
+        0,
+        1,
+        0
+      ],
+      "word_l1": 18
+    },
+    {
+      "found": true,
+      "index": 1,
+      "left_path_depth": 28,
+      "left_word": [
+        3,
+        -3,
+        -7,
+        2,
+        0,
+        -1,
+        -2,
+        0,
+        -1,
+        1,
+        0,
+        0
+      ],
+      "meeting_class": [
+        137199999,
+        -93376652,
+        7304517661
+      ],
+      "relation_row": [
+        -2,
+        84,
+        7,
+        -2,
+        0,
+        0,
+        2,
+        0,
+        0,
+        -1,
+        1,
+        0
+      ],
+      "right_path_depth": 4,
+      "right_statistics": {
+        "group_compositions": 18689,
+        "layers": [
+          {
+            "depth": 1,
+            "distinct_new_classes": 24,
+            "input_frontier": 1,
+            "pruned_new_classes": 0,
+            "retained_frontier": 24
+          },
+          {
+            "depth": 2,
+            "distinct_new_classes": 288,
+            "input_frontier": 24,
+            "pruned_new_classes": 0,
+            "retained_frontier": 288
+          },
+          {
+            "depth": 3,
+            "distinct_new_classes": 2312,
+            "input_frontier": 288,
+            "pruned_new_classes": 264,
+            "retained_frontier": 2048
+          }
+        ],
+        "maximum_frontier": 2048,
+        "meeting_in_partial_layer": 4,
+        "pruned_class_occurrences": 264,
+        "retained_classes": 2361
+      },
+      "right_word": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        0
+      ],
+      "status": "found",
+      "target": [
+        289255827,
+        -14421146,
+        3457327096
+      ],
+      "word": [
+        2,
+        -3,
+        -7,
+        2,
+        0,
+        0,
+        -2,
+        0,
+        0,
+        1,
+        -1,
+        0
+      ],
+      "word_l1": 18
+    },
+    {
+      "found": true,
+      "index": 2,
+      "left_path_depth": 15,
+      "left_word": [
+        0,
+        0,
+        -2,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "meeting_class": [
+        540187837,
+        352205058,
+        1908617792
+      ],
+      "relation_row": [
+        0,
+        0,
+        83,
+        -1,
+        -1,
+        -1,
+        0,
+        0,
+        0,
+        -1,
+        1,
+        1
+      ],
+      "right_path_depth": 3,
+      "right_statistics": {
+        "group_compositions": 1651,
+        "layers": [
+          {
+            "depth": 1,
+            "distinct_new_classes": 24,
+            "input_frontier": 1,
+            "pruned_new_classes": 0,
+            "retained_frontier": 24
+          },
+          {
+            "depth": 2,
+            "distinct_new_classes": 288,
+            "input_frontier": 24,
+            "pruned_new_classes": 0,
+            "retained_frontier": 288
+          }
+        ],
+        "maximum_frontier": 288,
+        "meeting_in_partial_layer": 3,
+        "pruned_class_occurrences": 0,
+        "retained_classes": 313
+      },
+      "right_word": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        1
+      ],
+      "status": "found",
+      "target": [
+        620387432,
+        -573277658,
+        1744332297
+      ],
+      "word": [
+        0,
+        0,
+        -2,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        -1,
+        -1
+      ],
+      "word_l1": 8
+    },
+    {
+      "found": true,
+      "index": 3,
+      "left_path_depth": 40,
+      "left_word": [
+        -6,
+        -2,
+        -2,
+        0,
+        0,
+        1,
+        1,
+        3,
+        -6,
+        -2,
+        0,
+        1
+      ],
+      "meeting_class": [
+        1089119287,
+        1043109254,
+        1167933816
+      ],
+      "relation_row": [
+        6,
+        3,
+        2,
+        81,
+        0,
+        1,
+        -2,
+        -3,
+        7,
+        2,
+        1,
+        -1
+      ],
+      "right_path_depth": 6,
+      "right_statistics": {
+        "group_compositions": 122086,
+        "layers": [
+          {
+            "depth": 1,
+            "distinct_new_classes": 24,
+            "input_frontier": 1,
+            "pruned_new_classes": 0,
+            "retained_frontier": 24
+          },
+          {
+            "depth": 2,
+            "distinct_new_classes": 288,
+            "input_frontier": 24,
+            "pruned_new_classes": 0,
+            "retained_frontier": 288
+          },
+          {
+            "depth": 3,
+            "distinct_new_classes": 2312,
+            "input_frontier": 288,
+            "pruned_new_classes": 264,
+            "retained_frontier": 2048
+          },
+          {
+            "depth": 4,
+            "distinct_new_classes": 13996,
+            "input_frontier": 2048,
+            "pruned_new_classes": 11948,
+            "retained_frontier": 2048
+          },
+          {
+            "depth": 5,
+            "distinct_new_classes": 33135,
+            "input_frontier": 2048,
+            "pruned_new_classes": 31087,
+            "retained_frontier": 2048
+          }
+        ],
+        "maximum_frontier": 2048,
+        "meeting_in_partial_layer": 6,
+        "pruned_class_occurrences": 43299,
+        "retained_classes": 6457
+      },
+      "right_word": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        2,
+        -1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "status": "found",
+      "target": [
+        397797267,
+        188260196,
+        2536117201
+      ],
+      "word": [
+        -6,
+        -3,
+        -2,
+        0,
+        0,
+        -1,
+        2,
+        3,
+        -7,
+        -2,
+        -1,
+        1
+      ],
+      "word_l1": 28
+    },
+    {
+      "found": true,
+      "index": 4,
+      "left_path_depth": 36,
+      "left_word": [
+        7,
+        3,
+        3,
+        0,
+        -1,
+        1,
+        2,
+        1,
+        0,
+        1,
+        0,
+        -3
+      ],
+      "meeting_class": [
+        562464,
+        381026,
+        1777891655813
+      ],
+      "relation_row": [
+        -8,
+        -4,
+        -3,
+        1,
+        82,
+        0,
+        -1,
+        -3,
+        0,
+        -1,
+        0,
+        3
+      ],
+      "right_path_depth": 7,
+      "right_statistics": {
+        "group_compositions": 184153,
+        "layers": [
+          {
+            "depth": 1,
+            "distinct_new_classes": 24,
+            "input_frontier": 1,
+            "pruned_new_classes": 0,
+            "retained_frontier": 24
+          },
+          {
+            "depth": 2,
+            "distinct_new_classes": 288,
+            "input_frontier": 24,
+            "pruned_new_classes": 0,
+            "retained_frontier": 288
+          },
+          {
+            "depth": 3,
+            "distinct_new_classes": 2312,
+            "input_frontier": 288,
+            "pruned_new_classes": 264,
+            "retained_frontier": 2048
+          },
+          {
+            "depth": 4,
+            "distinct_new_classes": 13996,
+            "input_frontier": 2048,
+            "pruned_new_classes": 11948,
+            "retained_frontier": 2048
+          },
+          {
+            "depth": 5,
+            "distinct_new_classes": 32899,
+            "input_frontier": 2048,
+            "pruned_new_classes": 30851,
+            "retained_frontier": 2048
+          },
+          {
+            "depth": 6,
+            "distinct_new_classes": 41237,
+            "input_frontier": 2048,
+            "pruned_new_classes": 39189,
+            "retained_frontier": 2048
+          }
+        ],
+        "maximum_frontier": 2048,
+        "meeting_in_partial_layer": 7,
+        "pruned_class_occurrences": 82252,
+        "retained_classes": 8505
+      },
+      "right_word": [
+        -1,
+        -1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        -2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "status": "found",
+      "target": [
+        161659743,
+        68805424,
+        6193153249
+      ],
+      "word": [
+        8,
+        4,
+        3,
+        -1,
+        -1,
+        0,
+        1,
+        3,
+        0,
+        1,
+        0,
+        -3
+      ],
+      "word_l1": 25
+    },
+    {
+      "found": true,
+      "index": 5,
+      "left_path_depth": 16,
+      "left_word": [
+        0,
+        1,
+        2,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        2
+      ],
+      "meeting_class": [
+        1083466432,
+        -1058623230,
+        1181550959
+      ],
+      "relation_row": [
+        -1,
+        0,
+        -4,
+        -5,
+        0,
+        79,
+        0,
+        2,
+        -2,
+        1,
+        0,
+        -2
+      ],
+      "right_path_depth": 23,
+      "right_statistics": {
+        "group_compositions": 979625,
+        "layers": [
+          {
+            "depth": 1,
+            "distinct_new_classes": 24,
+            "input_frontier": 1,
+            "pruned_new_classes": 0,
+            "retained_frontier": 24
+          },
+          {
+            "depth": 2,
+            "distinct_new_classes": 288,
+            "input_frontier": 24,
+            "pruned_new_classes": 0,
+            "retained_frontier": 288
+          },
+          {
+            "depth": 3,
+            "distinct_new_classes": 2312,
+            "input_frontier": 288,
+            "pruned_new_classes": 264,
+            "retained_frontier": 2048
+          },
+          {
+            "depth": 4,
+            "distinct_new_classes": 14005,
+            "input_frontier": 2048,
+            "pruned_new_classes": 11957,
+            "retained_frontier": 2048
+          },
+          {
+            "depth": 5,
+            "distinct_new_classes": 33410,
+            "input_frontier": 2048,
+            "pruned_new_classes": 31362,
+            "retained_frontier": 2048
+          },
+          {
+            "depth": 6,
+            "distinct_new_classes": 41333,
+            "input_frontier": 2048,
+            "pruned_new_classes": 39285,
+            "retained_frontier": 2048
+          },
+          {
+            "depth": 7,
+            "distinct_new_classes": 42395,
+            "input_frontier": 2048,
+            "pruned_new_classes": 40347,
+            "retained_frontier": 2048
+          },
+          {
+            "depth": 8,
+            "distinct_new_classes": 41842,
+            "input_frontier": 2048,
+            "pruned_new_classes": 39794,
+            "retained_frontier": 2048
+          },
+          {
+            "depth": 9,
+            "distinct_new_classes": 41577,
+            "input_frontier": 2048,
+            "pruned_new_classes": 39529,
+            "retained_frontier": 2048
+          },
+          {
+            "depth": 10,
+            "distinct_new_classes": 41279,
+            "input_frontier": 2048,
+            "pruned_new_classes": 39231,
+            "retained_frontier": 2048
+          },
+          {
+            "depth": 11,
+            "distinct_new_classes": 40299,
+            "input_frontier": 2048,
+            "pruned_new_classes": 38251,
+            "retained_frontier": 2048
+          },
+          {
+            "depth": 12,
+            "distinct_new_classes": 40167,
+            "input_frontier": 2048,
+            "pruned_new_classes": 38119,
+            "retained_frontier": 2048
+          },
+          {
+            "depth": 13,
+            "distinct_new_classes": 39803,
+            "input_frontier": 2048,
+            "pruned_new_classes": 37755,
+            "retained_frontier": 2048
+          },
+          {
+            "depth": 14,
+            "distinct_new_classes": 40002,
+            "input_frontier": 2048,
+            "pruned_new_classes": 37954,
+            "retained_frontier": 2048
+          },
+          {
+            "depth": 15,
+            "distinct_new_classes": 40101,
+            "input_frontier": 2048,
+            "pruned_new_classes": 38053,
+            "retained_frontier": 2048
+          },
+          {
+            "depth": 16,
+            "distinct_new_classes": 38985,
+            "input_frontier": 2048,
+            "pruned_new_classes": 36937,
+            "retained_frontier": 2048
+          },
+          {
+            "depth": 17,
+            "distinct_new_classes": 37701,
+            "input_frontier": 2048,
+            "pruned_new_classes": 35653,
+            "retained_frontier": 2048
+          },
+          {
+            "depth": 18,
+            "distinct_new_classes": 36872,
+            "input_frontier": 2048,
+            "pruned_new_classes": 34824,
+            "retained_frontier": 2048
+          },
+          {
+            "depth": 19,
+            "distinct_new_classes": 37148,
+            "input_frontier": 2048,
+            "pruned_new_classes": 35100,
+            "retained_frontier": 2048
+          },
+          {
+            "depth": 20,
+            "distinct_new_classes": 37458,
+            "input_frontier": 2048,
+            "pruned_new_classes": 35410,
+            "retained_frontier": 2048
+          },
+          {
+            "depth": 21,
+            "distinct_new_classes": 38502,
+            "input_frontier": 2048,
+            "pruned_new_classes": 36454,
+            "retained_frontier": 2048
+          },
+          {
+            "depth": 22,
+            "distinct_new_classes": 38638,
+            "input_frontier": 2048,
+            "pruned_new_classes": 36590,
+            "retained_frontier": 2048
+          }
+        ],
+        "maximum_frontier": 2048,
+        "meeting_in_partial_layer": 23,
+        "pruned_class_occurrences": 682869,
+        "retained_classes": 41273
+      },
+      "right_word": [
+        -1,
+        1,
+        -2,
+        -4,
+        0,
+        -2,
+        0,
+        2,
+        -1,
+        1,
+        -1,
+        0
+      ],
+      "status": "found",
+      "target": [
+        809357877,
+        68993300,
+        1237017719
+      ],
+      "word": [
+        1,
+        0,
+        4,
+        5,
+        0,
+        2,
+        0,
+        -2,
+        2,
+        -1,
+        0,
+        2
+      ],
+      "word_l1": 19
+    },
+    {
+      "found": true,
+      "index": 6,
+      "left_path_depth": 29,
+      "left_word": [
+        2,
+        -4,
+        -3,
+        0,
+        0,
+        -1,
+        -2,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "meeting_class": [
+        1188747,
+        360362,
+        841221932392
+      ],
+      "relation_row": [
+        -2,
+        4,
+        3,
+        1,
+        0,
+        2,
+        83,
+        0,
+        -2,
+        -1,
+        0,
+        1
+      ],
+      "right_path_depth": 5,
+      "right_statistics": {
+        "group_compositions": 71888,
+        "layers": [
+          {
+            "depth": 1,
+            "distinct_new_classes": 24,
+            "input_frontier": 1,
+            "pruned_new_classes": 0,
+            "retained_frontier": 24
+          },
+          {
+            "depth": 2,
+            "distinct_new_classes": 288,
+            "input_frontier": 24,
+            "pruned_new_classes": 0,
+            "retained_frontier": 288
+          },
+          {
+            "depth": 3,
+            "distinct_new_classes": 2312,
+            "input_frontier": 288,
+            "pruned_new_classes": 264,
+            "retained_frontier": 2048
+          },
+          {
+            "depth": 4,
+            "distinct_new_classes": 13980,
+            "input_frontier": 2048,
+            "pruned_new_classes": 11932,
+            "retained_frontier": 2048
+          }
+        ],
+        "maximum_frontier": 2048,
+        "meeting_in_partial_layer": 5,
+        "pruned_class_occurrences": 12196,
+        "retained_classes": 4409
+      },
+      "right_word": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        -2,
+        0,
+        0,
+        1
+      ],
+      "status": "found",
+      "target": [
+        999873896,
+        342930950,
+        1029530253
+      ],
+      "word": [
+        2,
+        -4,
+        -3,
+        -1,
+        0,
+        -2,
+        -2,
+        0,
+        2,
+        1,
+        0,
+        -1
+      ],
+      "word_l1": 18
+    },
+    {
+      "found": true,
+      "index": 7,
+      "left_path_depth": 35,
+      "left_word": [
+        -5,
+        -4,
+        -3,
+        1,
+        0,
+        -1,
+        -2,
+        -1,
+        0,
+        -1,
+        0,
+        3
+      ],
+      "meeting_class": [
+        268128,
+        -183458,
+        3729562091293
+      ],
+      "relation_row": [
+        6,
+        4,
+        3,
+        -1,
+        2,
+        1,
+        1,
+        82,
+        1,
+        2,
+        0,
+        -3
+      ],
+      "right_path_depth": 6,
+      "right_statistics": {
+        "group_compositions": 109826,
+        "layers": [
+          {
+            "depth": 1,
+            "distinct_new_classes": 24,
+            "input_frontier": 1,
+            "pruned_new_classes": 0,
+            "retained_frontier": 24
+          },
+          {
+            "depth": 2,
+            "distinct_new_classes": 288,
+            "input_frontier": 24,
+            "pruned_new_classes": 0,
+            "retained_frontier": 288
+          },
+          {
+            "depth": 3,
+            "distinct_new_classes": 2312,
+            "input_frontier": 288,
+            "pruned_new_classes": 264,
+            "retained_frontier": 2048
+          },
+          {
+            "depth": 4,
+            "distinct_new_classes": 13994,
+            "input_frontier": 2048,
+            "pruned_new_classes": 11946,
+            "retained_frontier": 2048
+          },
+          {
+            "depth": 5,
+            "distinct_new_classes": 33153,
+            "input_frontier": 2048,
+            "pruned_new_classes": 31105,
+            "retained_frontier": 2048
+          }
+        ],
+        "maximum_frontier": 2048,
+        "meeting_in_partial_layer": 6,
+        "pruned_class_occurrences": 43315,
+        "retained_classes": 6457
+      },
+      "right_word": [
+        1,
+        0,
+        0,
+        0,
+        2,
+        0,
+        -1,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "status": "found",
+      "target": [
+        487943001,
+        473135906,
+        2164114272
+      ],
+      "word": [
+        -6,
+        -4,
+        -3,
+        1,
+        -2,
+        -1,
+        -1,
+        -1,
+        -1,
+        -2,
+        0,
+        3
+      ],
+      "word_l1": 25
+    },
+    {
+      "found": true,
+      "index": 8,
+      "left_path_depth": 20,
+      "left_word": [
+        -3,
+        -1,
+        0,
+        0,
+        -3,
+        0,
+        0,
+        0,
+        -2,
+        2,
+        0,
+        -1
+      ],
+      "meeting_class": [
+        269431072,
+        135609250,
+        3728588079
+      ],
+      "relation_row": [
+        3,
+        -1,
+        0,
+        0,
+        3,
+        -2,
+        -1,
+        0,
+        83,
+        -2,
+        -1,
+        2
+      ],
+      "right_path_depth": 7,
+      "right_statistics": {
+        "group_compositions": 203099,
+        "layers": [
+          {
+            "depth": 1,
+            "distinct_new_classes": 24,
+            "input_frontier": 1,
+            "pruned_new_classes": 0,
+            "retained_frontier": 24
+          },
+          {
+            "depth": 2,
+            "distinct_new_classes": 288,
+            "input_frontier": 24,
+            "pruned_new_classes": 0,
+            "retained_frontier": 288
+          },
+          {
+            "depth": 3,
+            "distinct_new_classes": 2312,
+            "input_frontier": 288,
+            "pruned_new_classes": 264,
+            "retained_frontier": 2048
+          },
+          {
+            "depth": 4,
+            "distinct_new_classes": 13988,
+            "input_frontier": 2048,
+            "pruned_new_classes": 11940,
+            "retained_frontier": 2048
+          },
+          {
+            "depth": 5,
+            "distinct_new_classes": 32845,
+            "input_frontier": 2048,
+            "pruned_new_classes": 30797,
+            "retained_frontier": 2048
+          },
+          {
+            "depth": 6,
+            "distinct_new_classes": 40682,
+            "input_frontier": 2048,
+            "pruned_new_classes": 38634,
+            "retained_frontier": 2048
+          }
+        ],
+        "maximum_frontier": 2048,
+        "meeting_in_partial_layer": 7,
+        "pruned_class_occurrences": 81635,
+        "retained_classes": 8505
+      },
+      "right_word": [
+        0,
+        -2,
+        0,
+        0,
+        0,
+        -2,
+        -1,
+        0,
+        0,
+        0,
+        -1,
+        1
+      ],
+      "status": "found",
+      "target": [
+        496374267,
+        96330278,
+        2019282552
+      ],
+      "word": [
+        -3,
+        1,
+        0,
+        0,
+        -3,
+        2,
+        1,
+        0,
+        -2,
+        2,
+        1,
+        -2
+      ],
+      "word_l1": 17
+    },
+    {
+      "found": true,
+      "index": 9,
+      "left_path_depth": 39,
+      "left_word": [
+        1,
+        -2,
+        -3,
+        0,
+        0,
+        -1,
+        -2,
+        -1,
+        -1,
+        -1,
+        0,
+        3
+      ],
+      "meeting_class": [
+        173664,
+        -91042,
+        5758245912061
+      ],
+      "relation_row": [
+        -3,
+        2,
+        3,
+        0,
+        -1,
+        1,
+        3,
+        0,
+        2,
+        81,
+        0,
+        -4
+      ],
+      "right_path_depth": 8,
+      "right_statistics": {
+        "group_compositions": 229945,
+        "layers": [
+          {
+            "depth": 1,
+            "distinct_new_classes": 24,
+            "input_frontier": 1,
+            "pruned_new_classes": 0,
+            "retained_frontier": 24
+          },
+          {
+            "depth": 2,
+            "distinct_new_classes": 288,
+            "input_frontier": 24,
+            "pruned_new_classes": 0,
+            "retained_frontier": 288
+          },
+          {
+            "depth": 3,
+            "distinct_new_classes": 2312,
+            "input_frontier": 288,
+            "pruned_new_classes": 264,
+            "retained_frontier": 2048
+          },
+          {
+            "depth": 4,
+            "distinct_new_classes": 13988,
+            "input_frontier": 2048,
+            "pruned_new_classes": 11940,
+            "retained_frontier": 2048
+          },
+          {
+            "depth": 5,
+            "distinct_new_classes": 32942,
+            "input_frontier": 2048,
+            "pruned_new_classes": 30894,
+            "retained_frontier": 2048
+          },
+          {
+            "depth": 6,
+            "distinct_new_classes": 41373,
+            "input_frontier": 2048,
+            "pruned_new_classes": 39325,
+            "retained_frontier": 2048
+          },
+          {
+            "depth": 7,
+            "distinct_new_classes": 43089,
+            "input_frontier": 2048,
+            "pruned_new_classes": 41041,
+            "retained_frontier": 2048
+          }
+        ],
+        "maximum_frontier": 2048,
+        "meeting_in_partial_layer": 8,
+        "pruned_class_occurrences": 123464,
+        "retained_classes": 10553
+      },
+      "right_word": [
+        -2,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        -1,
+        1,
+        -1,
+        0,
+        -1
+      ],
+      "status": "found",
+      "target": [
+        89511981,
+        -40561928,
+        11176284139
+      ],
+      "word": [
+        3,
+        -2,
+        -3,
+        0,
+        1,
+        -1,
+        -3,
+        0,
+        -2,
+        0,
+        0,
+        4
+      ],
+      "word_l1": 19
+    },
+    {
+      "found": true,
+      "index": 10,
+      "left_path_depth": 31,
+      "left_word": [
+        3,
+        3,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        -3,
+        1,
+        2,
+        -1
+      ],
+      "meeting_class": [
+        55493,
+        6392,
+        18020291136003
+      ],
+      "relation_row": [
+        -7,
+        -2,
+        -2,
+        -1,
+        0,
+        -1,
+        0,
+        -3,
+        3,
+        -1,
+        79,
+        1
+      ],
+      "right_path_depth": 10,
+      "right_statistics": {
+        "group_compositions": 314905,
+        "layers": [
+          {
+            "depth": 1,
+            "distinct_new_classes": 24,
+            "input_frontier": 1,
+            "pruned_new_classes": 0,
+            "retained_frontier": 24
+          },
+          {
+            "depth": 2,
+            "distinct_new_classes": 288,
+            "input_frontier": 24,
+            "pruned_new_classes": 0,
+            "retained_frontier": 288
+          },
+          {
+            "depth": 3,
+            "distinct_new_classes": 2312,
+            "input_frontier": 288,
+            "pruned_new_classes": 264,
+            "retained_frontier": 2048
+          },
+          {
+            "depth": 4,
+            "distinct_new_classes": 13998,
+            "input_frontier": 2048,
+            "pruned_new_classes": 11950,
+            "retained_frontier": 2048
+          },
+          {
+            "depth": 5,
+            "distinct_new_classes": 32964,
+            "input_frontier": 2048,
+            "pruned_new_classes": 30916,
+            "retained_frontier": 2048
+          },
+          {
+            "depth": 6,
+            "distinct_new_classes": 41060,
+            "input_frontier": 2048,
+            "pruned_new_classes": 39012,
+            "retained_frontier": 2048
+          },
+          {
+            "depth": 7,
+            "distinct_new_classes": 41968,
+            "input_frontier": 2048,
+            "pruned_new_classes": 39920,
+            "retained_frontier": 2048
+          },
+          {
+            "depth": 8,
+            "distinct_new_classes": 42005,
+            "input_frontier": 2048,
+            "pruned_new_classes": 39957,
+            "retained_frontier": 2048
+          },
+          {
+            "depth": 9,
+            "distinct_new_classes": 41264,
+            "input_frontier": 2048,
+            "pruned_new_classes": 39216,
+            "retained_frontier": 2048
+          }
+        ],
+        "maximum_frontier": 2048,
+        "meeting_in_partial_layer": 10,
+        "pruned_class_occurrences": 201235,
+        "retained_classes": 14649
+      },
+      "right_word": [
+        -4,
+        1,
+        -2,
+        0,
+        0,
+        0,
+        1,
+        -2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "status": "found",
+      "target": [
+        665760521,
+        180400994,
+        1514262432
+      ],
+      "word": [
+        7,
+        2,
+        2,
+        1,
+        0,
+        1,
+        0,
+        3,
+        -3,
+        1,
+        2,
+        -1
+      ],
+      "word_l1": 23
+    },
+    {
+      "found": true,
+      "index": 11,
+      "left_path_depth": 25,
+      "left_word": [
+        -1,
+        0,
+        1,
+        2,
+        0,
+        -2,
+        -3,
+        -2,
+        0,
+        1,
+        0,
+        -1
+      ],
+      "meeting_class": [
+        540305727,
+        -68712952,
+        1852988657
+      ],
+      "relation_row": [
+        1,
+        -1,
+        -1,
+        -2,
+        0,
+        3,
+        4,
+        1,
+        0,
+        -1,
+        2,
+        82
+      ],
+      "right_path_depth": 6,
+      "right_statistics": {
+        "group_compositions": 154599,
+        "layers": [
+          {
+            "depth": 1,
+            "distinct_new_classes": 24,
+            "input_frontier": 1,
+            "pruned_new_classes": 0,
+            "retained_frontier": 24
+          },
+          {
+            "depth": 2,
+            "distinct_new_classes": 288,
+            "input_frontier": 24,
+            "pruned_new_classes": 0,
+            "retained_frontier": 288
+          },
+          {
+            "depth": 3,
+            "distinct_new_classes": 2312,
+            "input_frontier": 288,
+            "pruned_new_classes": 264,
+            "retained_frontier": 2048
+          },
+          {
+            "depth": 4,
+            "distinct_new_classes": 13991,
+            "input_frontier": 2048,
+            "pruned_new_classes": 11943,
+            "retained_frontier": 2048
+          },
+          {
+            "depth": 5,
+            "distinct_new_classes": 33184,
+            "input_frontier": 2048,
+            "pruned_new_classes": 31136,
+            "retained_frontier": 2048
+          }
+        ],
+        "maximum_frontier": 2048,
+        "meeting_in_partial_layer": 6,
+        "pruned_class_occurrences": 43343,
+        "retained_classes": 6457
+      },
+      "right_word": [
+        0,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        -1,
+        0,
+        0,
+        2,
+        0
+      ],
+      "status": "found",
+      "target": [
+        231400689,
+        39771260,
+        4323217267
+      ],
+      "word": [
+        -1,
+        1,
+        1,
+        2,
+        0,
+        -3,
+        -4,
+        -1,
+        0,
+        1,
+        -2,
+        -1
+      ],
+      "word_l1": 17
+    }
+  ],
+  "uniform_success_guarantee_claimed": false
+}

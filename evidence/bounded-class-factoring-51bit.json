@@ -1,0 +1,1329 @@
+{
+  "annihilator": 19727896832033528,
+  "annihilator_bits": 55,
+  "annihilator_supplied": false,
+  "class_number_supplied": false,
+  "complete_generation_claimed": false,
+  "diagonal_fixed_before_targets": 65,
+  "extraction": {
+    "annihilator": 19727896832033528,
+    "factor": 32452843,
+    "factor_data": {
+      "coprime_factors": [
+        32452843,
+        49979687
+      ],
+      "form": [
+        41216265,
+        17526844,
+        41216265
+      ],
+      "proper_factor": 32452843,
+      "shape": "equal_outer_coefficients"
+    },
+    "odd_annihilator_part": 2465987104004191,
+    "odd_n": 1621982935400141,
+    "statistics": {
+      "dependent_top_cancellations": 0,
+      "generator_count": 9,
+      "group_inversions": 0,
+      "group_multiplications": 334,
+      "maximum_cyclic_order_log": 2,
+      "maximum_retained_basis_rank": 1,
+      "order_bit_bound": 53,
+      "order_swaps": 0,
+      "processed_generators": 2,
+      "top_checks": 2
+    },
+    "status": "factored",
+    "trace": [
+      {
+        "candidate": [
+          2,
+          2,
+          810991467700071
+        ],
+        "candidate_order_log": 1,
+        "generator_index": 0,
+        "proper_factor": null,
+        "top": [
+          2,
+          2,
+          810991467700071
+        ]
+      },
+      {
+        "candidate": [
+          35241693,
+          8602466,
+          46549510
+        ],
+        "candidate_order_log": 2,
+        "generator_index": 1,
+        "proper_factor": 32452843,
+        "top": [
+          41216265,
+          17526844,
+          41216265
+        ]
+      }
+    ]
+  },
+  "factor_base_primes": [
+    3,
+    5,
+    7,
+    11,
+    23,
+    31,
+    37,
+    41,
+    43
+  ],
+  "factorization": [
+    32452843,
+    49979687
+  ],
+  "input_bits": 51,
+  "input_factors_supplied": false,
+  "missing_relation_indices": [],
+  "odd_n": 1621982935400141,
+  "relation_matrix": [
+    [
+      66,
+      -2,
+      0,
+      0,
+      -2,
+      -2,
+      2,
+      -1,
+      -2
+    ],
+    [
+      -2,
+      62,
+      1,
+      1,
+      0,
+      0,
+      1,
+      2,
+      2
+    ],
+    [
+      -6,
+      3,
+      69,
+      0,
+      -2,
+      0,
+      -1,
+      1,
+      -1
+    ],
+    [
+      1,
+      -2,
+      5,
+      63,
+      0,
+      3,
+      1,
+      1,
+      0
+    ],
+    [
+      -2,
+      1,
+      3,
+      1,
+      68,
+      -3,
+      1,
+      -1,
+      3
+    ],
+    [
+      7,
+      3,
+      2,
+      -3,
+      -1,
+      67,
+      1,
+      -1,
+      -2
+    ],
+    [
+      0,
+      6,
+      2,
+      0,
+      -1,
+      4,
+      59,
+      1,
+      3
+    ],
+    [
+      5,
+      -5,
+      2,
+      -3,
+      -2,
+      0,
+      -1,
+      64,
+      -4
+    ],
+    [
+      0,
+      -2,
+      0,
+      0,
+      0,
+      2,
+      0,
+      -1,
+      64
+    ]
+  ],
+  "roots": {
+    "3": 2,
+    "5": 4,
+    "7": 2,
+    "11": 8,
+    "23": 18,
+    "31": 22,
+    "37": 36,
+    "41": 16,
+    "43": 8
+  },
+  "search": {
+    "left": {
+      "group_compositions": 536958,
+      "layers": [
+        {
+          "depth": 1,
+          "distinct_new_classes": 18,
+          "input_frontier": 1,
+          "pruned_new_classes": 0,
+          "retained_frontier": 18
+        },
+        {
+          "depth": 2,
+          "distinct_new_classes": 162,
+          "input_frontier": 18,
+          "pruned_new_classes": 0,
+          "retained_frontier": 162
+        },
+        {
+          "depth": 3,
+          "distinct_new_classes": 978,
+          "input_frontier": 162,
+          "pruned_new_classes": 0,
+          "retained_frontier": 978
+        },
+        {
+          "depth": 4,
+          "distinct_new_classes": 4482,
+          "input_frontier": 978,
+          "pruned_new_classes": 3458,
+          "retained_frontier": 1024
+        },
+        {
+          "depth": 5,
+          "distinct_new_classes": 10072,
+          "input_frontier": 1024,
+          "pruned_new_classes": 9048,
+          "retained_frontier": 1024
+        },
+        {
+          "depth": 6,
+          "distinct_new_classes": 13235,
+          "input_frontier": 1024,
+          "pruned_new_classes": 12211,
+          "retained_frontier": 1024
+        },
+        {
+          "depth": 7,
+          "distinct_new_classes": 13861,
+          "input_frontier": 1024,
+          "pruned_new_classes": 12837,
+          "retained_frontier": 1024
+        },
+        {
+          "depth": 8,
+          "distinct_new_classes": 14435,
+          "input_frontier": 1024,
+          "pruned_new_classes": 13411,
+          "retained_frontier": 1024
+        },
+        {
+          "depth": 9,
+          "distinct_new_classes": 14152,
+          "input_frontier": 1024,
+          "pruned_new_classes": 13128,
+          "retained_frontier": 1024
+        },
+        {
+          "depth": 10,
+          "distinct_new_classes": 14639,
+          "input_frontier": 1024,
+          "pruned_new_classes": 13615,
+          "retained_frontier": 1024
+        },
+        {
+          "depth": 11,
+          "distinct_new_classes": 14171,
+          "input_frontier": 1024,
+          "pruned_new_classes": 13147,
+          "retained_frontier": 1024
+        },
+        {
+          "depth": 12,
+          "distinct_new_classes": 14594,
+          "input_frontier": 1024,
+          "pruned_new_classes": 13570,
+          "retained_frontier": 1024
+        },
+        {
+          "depth": 13,
+          "distinct_new_classes": 14198,
+          "input_frontier": 1024,
+          "pruned_new_classes": 13174,
+          "retained_frontier": 1024
+        },
+        {
+          "depth": 14,
+          "distinct_new_classes": 14369,
+          "input_frontier": 1024,
+          "pruned_new_classes": 13345,
+          "retained_frontier": 1024
+        },
+        {
+          "depth": 15,
+          "distinct_new_classes": 14062,
+          "input_frontier": 1024,
+          "pruned_new_classes": 13038,
+          "retained_frontier": 1024
+        },
+        {
+          "depth": 16,
+          "distinct_new_classes": 14345,
+          "input_frontier": 1024,
+          "pruned_new_classes": 13321,
+          "retained_frontier": 1024
+        },
+        {
+          "depth": 17,
+          "distinct_new_classes": 14032,
+          "input_frontier": 1024,
+          "pruned_new_classes": 13008,
+          "retained_frontier": 1024
+        },
+        {
+          "depth": 18,
+          "distinct_new_classes": 14356,
+          "input_frontier": 1024,
+          "pruned_new_classes": 13332,
+          "retained_frontier": 1024
+        },
+        {
+          "depth": 19,
+          "distinct_new_classes": 14254,
+          "input_frontier": 1024,
+          "pruned_new_classes": 13230,
+          "retained_frontier": 1024
+        },
+        {
+          "depth": 20,
+          "distinct_new_classes": 14495,
+          "input_frontier": 1024,
+          "pruned_new_classes": 13471,
+          "retained_frontier": 1024
+        },
+        {
+          "depth": 21,
+          "distinct_new_classes": 14229,
+          "input_frontier": 1024,
+          "pruned_new_classes": 13205,
+          "retained_frontier": 1024
+        },
+        {
+          "depth": 22,
+          "distinct_new_classes": 14105,
+          "input_frontier": 1024,
+          "pruned_new_classes": 13081,
+          "retained_frontier": 1024
+        },
+        {
+          "depth": 23,
+          "distinct_new_classes": 13891,
+          "input_frontier": 1024,
+          "pruned_new_classes": 12867,
+          "retained_frontier": 1024
+        },
+        {
+          "depth": 24,
+          "distinct_new_classes": 13791,
+          "input_frontier": 1024,
+          "pruned_new_classes": 12767,
+          "retained_frontier": 1024
+        },
+        {
+          "depth": 25,
+          "distinct_new_classes": 13520,
+          "input_frontier": 1024,
+          "pruned_new_classes": 12496,
+          "retained_frontier": 1024
+        },
+        {
+          "depth": 26,
+          "distinct_new_classes": 13246,
+          "input_frontier": 1024,
+          "pruned_new_classes": 12222,
+          "retained_frontier": 1024
+        },
+        {
+          "depth": 27,
+          "distinct_new_classes": 12867,
+          "input_frontier": 1024,
+          "pruned_new_classes": 11843,
+          "retained_frontier": 1024
+        },
+        {
+          "depth": 28,
+          "distinct_new_classes": 12820,
+          "input_frontier": 1024,
+          "pruned_new_classes": 11796,
+          "retained_frontier": 1024
+        },
+        {
+          "depth": 29,
+          "distinct_new_classes": 12708,
+          "input_frontier": 1024,
+          "pruned_new_classes": 11684,
+          "retained_frontier": 1024
+        },
+        {
+          "depth": 30,
+          "distinct_new_classes": 13244,
+          "input_frontier": 1024,
+          "pruned_new_classes": 12220,
+          "retained_frontier": 1024
+        },
+        {
+          "depth": 31,
+          "distinct_new_classes": 13723,
+          "input_frontier": 1024,
+          "pruned_new_classes": 12699,
+          "retained_frontier": 1024
+        },
+        {
+          "depth": 32,
+          "distinct_new_classes": 13996,
+          "input_frontier": 1024,
+          "pruned_new_classes": 12972,
+          "retained_frontier": 1024
+        }
+      ],
+      "maximum_frontier": 1024,
+      "pruned_class_occurrences": 360196,
+      "retained_classes": 30855
+    },
+    "left_depth": 32,
+    "right_depth": 32,
+    "selection": "stratified",
+    "width": 1024,
+    "word_length_bound": 64
+  },
+  "status": "factored",
+  "targets": [
+    {
+      "found": true,
+      "index": 0,
+      "left_path_depth": 20,
+      "left_word": [
+        -1,
+        2,
+        0,
+        -1,
+        2,
+        2,
+        0,
+        1,
+        1
+      ],
+      "meeting_class": [
+        2204503,
+        871866,
+        735845210
+      ],
+      "relation_row": [
+        66,
+        -2,
+        0,
+        0,
+        -2,
+        -2,
+        2,
+        -1,
+        -2
+      ],
+      "right_path_depth": 4,
+      "right_statistics": {
+        "group_compositions": 13931,
+        "layers": [
+          {
+            "depth": 1,
+            "distinct_new_classes": 18,
+            "input_frontier": 1,
+            "pruned_new_classes": 0,
+            "retained_frontier": 18
+          },
+          {
+            "depth": 2,
+            "distinct_new_classes": 162,
+            "input_frontier": 18,
+            "pruned_new_classes": 0,
+            "retained_frontier": 162
+          },
+          {
+            "depth": 3,
+            "distinct_new_classes": 978,
+            "input_frontier": 162,
+            "pruned_new_classes": 0,
+            "retained_frontier": 978
+          }
+        ],
+        "maximum_frontier": 978,
+        "meeting_in_partial_layer": 4,
+        "pruned_class_occurrences": 0,
+        "retained_classes": 1159
+      },
+      "right_word": [
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        2,
+        0,
+        -1
+      ],
+      "status": "found",
+      "target": [
+        23455826,
+        -18723834,
+        72887155
+      ],
+      "word": [
+        -1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        -2,
+        1,
+        2
+      ],
+      "word_l1": 12
+    },
+    {
+      "found": true,
+      "index": 1,
+      "left_path_depth": 15,
+      "left_word": [
+        1,
+        3,
+        -1,
+        -1,
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "meeting_class": [
+        1068375,
+        632294,
+        1518271098
+      ],
+      "relation_row": [
+        -2,
+        62,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        2
+      ],
+      "right_path_depth": 5,
+      "right_statistics": {
+        "group_compositions": 34741,
+        "layers": [
+          {
+            "depth": 1,
+            "distinct_new_classes": 18,
+            "input_frontier": 1,
+            "pruned_new_classes": 0,
+            "retained_frontier": 18
+          },
+          {
+            "depth": 2,
+            "distinct_new_classes": 162,
+            "input_frontier": 18,
+            "pruned_new_classes": 0,
+            "retained_frontier": 162
+          },
+          {
+            "depth": 3,
+            "distinct_new_classes": 978,
+            "input_frontier": 162,
+            "pruned_new_classes": 0,
+            "retained_frontier": 978
+          },
+          {
+            "depth": 4,
+            "distinct_new_classes": 4482,
+            "input_frontier": 978,
+            "pruned_new_classes": 3458,
+            "retained_frontier": 1024
+          }
+        ],
+        "maximum_frontier": 1024,
+        "meeting_in_partial_layer": 5,
+        "pruned_class_occurrences": 3458,
+        "retained_classes": 2183
+      },
+      "right_word": [
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2
+      ],
+      "status": "found",
+      "target": [
+        36197910,
+        23572414,
+        48646389
+      ],
+      "word": [
+        2,
+        3,
+        -1,
+        -1,
+        0,
+        0,
+        -1,
+        -2,
+        -2
+      ],
+      "word_l1": 12
+    },
+    {
+      "found": true,
+      "index": 2,
+      "left_path_depth": 24,
+      "left_word": [
+        4,
+        -3,
+        -3,
+        1,
+        0,
+        0,
+        1,
+        -1,
+        1
+      ],
+      "meeting_class": [
+        272043,
+        -240652,
+        5962283219
+      ],
+      "relation_row": [
+        -6,
+        3,
+        69,
+        0,
+        -2,
+        0,
+        -1,
+        1,
+        -1
+      ],
+      "right_path_depth": 6,
+      "right_statistics": {
+        "group_compositions": 54109,
+        "layers": [
+          {
+            "depth": 1,
+            "distinct_new_classes": 18,
+            "input_frontier": 1,
+            "pruned_new_classes": 0,
+            "retained_frontier": 18
+          },
+          {
+            "depth": 2,
+            "distinct_new_classes": 162,
+            "input_frontier": 18,
+            "pruned_new_classes": 0,
+            "retained_frontier": 162
+          },
+          {
+            "depth": 3,
+            "distinct_new_classes": 978,
+            "input_frontier": 162,
+            "pruned_new_classes": 0,
+            "retained_frontier": 978
+          },
+          {
+            "depth": 4,
+            "distinct_new_classes": 4482,
+            "input_frontier": 978,
+            "pruned_new_classes": 3458,
+            "retained_frontier": 1024
+          },
+          {
+            "depth": 5,
+            "distinct_new_classes": 10565,
+            "input_frontier": 1024,
+            "pruned_new_classes": 9541,
+            "retained_frontier": 1024
+          }
+        ],
+        "maximum_frontier": 1024,
+        "meeting_in_partial_layer": 6,
+        "pruned_class_occurrences": 12999,
+        "retained_classes": 3207
+      },
+      "right_word": [
+        -2,
+        0,
+        1,
+        1,
+        -2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "status": "found",
+      "target": [
+        30709955,
+        29783856,
+        60037615
+      ],
+      "word": [
+        6,
+        -3,
+        -4,
+        0,
+        2,
+        0,
+        1,
+        -1,
+        1
+      ],
+      "word_l1": 18
+    },
+    {
+      "found": true,
+      "index": 3,
+      "left_path_depth": 21,
+      "left_word": [
+        -1,
+        0,
+        -4,
+        2,
+        0,
+        -3,
+        0,
+        -1,
+        0
+      ],
+      "meeting_class": [
+        145829,
+        86732,
+        11122512093
+      ],
+      "relation_row": [
+        1,
+        -2,
+        5,
+        63,
+        0,
+        3,
+        1,
+        1,
+        0
+      ],
+      "right_path_depth": 4,
+      "right_statistics": {
+        "group_compositions": 4521,
+        "layers": [
+          {
+            "depth": 1,
+            "distinct_new_classes": 18,
+            "input_frontier": 1,
+            "pruned_new_classes": 0,
+            "retained_frontier": 18
+          },
+          {
+            "depth": 2,
+            "distinct_new_classes": 162,
+            "input_frontier": 18,
+            "pruned_new_classes": 0,
+            "retained_frontier": 162
+          },
+          {
+            "depth": 3,
+            "distinct_new_classes": 978,
+            "input_frontier": 162,
+            "pruned_new_classes": 0,
+            "retained_frontier": 978
+          }
+        ],
+        "maximum_frontier": 978,
+        "meeting_in_partial_layer": 4,
+        "pruned_class_occurrences": 0,
+        "retained_classes": 1159
+      },
+      "right_word": [
+        0,
+        -2,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "status": "found",
+      "target": [
+        32059890,
+        17929306,
+        53098995
+      ],
+      "word": [
+        -1,
+        2,
+        -5,
+        2,
+        0,
+        -3,
+        -1,
+        -1,
+        0
+      ],
+      "word_l1": 15
+    },
+    {
+      "found": true,
+      "index": 4,
+      "left_path_depth": 27,
+      "left_word": [
+        0,
+        -1,
+        -2,
+        -1,
+        -3,
+        2,
+        0,
+        1,
+        -1
+      ],
+      "meeting_class": [
+        2253867,
+        -579290,
+        719681698
+      ],
+      "relation_row": [
+        -2,
+        1,
+        3,
+        1,
+        68,
+        -3,
+        1,
+        -1,
+        3
+      ],
+      "right_path_depth": 7,
+      "right_statistics": {
+        "group_compositions": 65436,
+        "layers": [
+          {
+            "depth": 1,
+            "distinct_new_classes": 18,
+            "input_frontier": 1,
+            "pruned_new_classes": 0,
+            "retained_frontier": 18
+          },
+          {
+            "depth": 2,
+            "distinct_new_classes": 162,
+            "input_frontier": 18,
+            "pruned_new_classes": 0,
+            "retained_frontier": 162
+          },
+          {
+            "depth": 3,
+            "distinct_new_classes": 978,
+            "input_frontier": 162,
+            "pruned_new_classes": 0,
+            "retained_frontier": 978
+          },
+          {
+            "depth": 4,
+            "distinct_new_classes": 4482,
+            "input_frontier": 978,
+            "pruned_new_classes": 3458,
+            "retained_frontier": 1024
+          },
+          {
+            "depth": 5,
+            "distinct_new_classes": 10464,
+            "input_frontier": 1024,
+            "pruned_new_classes": 9440,
+            "retained_frontier": 1024
+          },
+          {
+            "depth": 6,
+            "distinct_new_classes": 13946,
+            "input_frontier": 1024,
+            "pruned_new_classes": 12922,
+            "retained_frontier": 1024
+          }
+        ],
+        "maximum_frontier": 1024,
+        "meeting_in_partial_layer": 7,
+        "pruned_class_occurrences": 25820,
+        "retained_classes": 4231
+      },
+      "right_word": [
+        -2,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        1,
+        0,
+        2
+      ],
+      "status": "found",
+      "target": [
+        26941831,
+        -8903592,
+        60938747
+      ],
+      "word": [
+        2,
+        -1,
+        -3,
+        -1,
+        -3,
+        3,
+        -1,
+        1,
+        -3
+      ],
+      "word_l1": 18
+    },
+    {
+      "found": true,
+      "index": 5,
+      "left_path_depth": 27,
+      "left_word": [
+        -6,
+        -3,
+        -2,
+        3,
+        1,
+        -2,
+        0,
+        1,
+        1
+      ],
+      "meeting_class": [
+        525690,
+        209206,
+        3085456975
+      ],
+      "relation_row": [
+        7,
+        3,
+        2,
+        -3,
+        -1,
+        67,
+        1,
+        -1,
+        -2
+      ],
+      "right_path_depth": 3,
+      "right_statistics": {
+        "group_compositions": 704,
+        "layers": [
+          {
+            "depth": 1,
+            "distinct_new_classes": 18,
+            "input_frontier": 1,
+            "pruned_new_classes": 0,
+            "retained_frontier": 18
+          },
+          {
+            "depth": 2,
+            "distinct_new_classes": 162,
+            "input_frontier": 18,
+            "pruned_new_classes": 0,
+            "retained_frontier": 162
+          }
+        ],
+        "maximum_frontier": 162,
+        "meeting_in_partial_layer": 3,
+        "pruned_class_occurrences": 0,
+        "retained_classes": 181
+      },
+      "right_word": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1
+      ],
+      "status": "found",
+      "target": [
+        31846247,
+        12281158,
+        52115706
+      ],
+      "word": [
+        -7,
+        -3,
+        -2,
+        3,
+        1,
+        -2,
+        -1,
+        1,
+        2
+      ],
+      "word_l1": 22
+    },
+    {
+      "found": true,
+      "index": 6,
+      "left_path_depth": 26,
+      "left_word": [
+        -1,
+        -5,
+        -2,
+        0,
+        1,
+        -4,
+        7,
+        0,
+        -2
+      ],
+      "meeting_class": [
+        16950342,
+        8394898,
+        96729701
+      ],
+      "relation_row": [
+        0,
+        6,
+        2,
+        0,
+        -1,
+        4,
+        59,
+        1,
+        3
+      ],
+      "right_path_depth": 5,
+      "right_statistics": {
+        "group_compositions": 22122,
+        "layers": [
+          {
+            "depth": 1,
+            "distinct_new_classes": 18,
+            "input_frontier": 1,
+            "pruned_new_classes": 0,
+            "retained_frontier": 18
+          },
+          {
+            "depth": 2,
+            "distinct_new_classes": 162,
+            "input_frontier": 18,
+            "pruned_new_classes": 0,
+            "retained_frontier": 162
+          },
+          {
+            "depth": 3,
+            "distinct_new_classes": 978,
+            "input_frontier": 162,
+            "pruned_new_classes": 0,
+            "retained_frontier": 978
+          },
+          {
+            "depth": 4,
+            "distinct_new_classes": 4482,
+            "input_frontier": 978,
+            "pruned_new_classes": 3458,
+            "retained_frontier": 1024
+          }
+        ],
+        "maximum_frontier": 1024,
+        "meeting_in_partial_layer": 5,
+        "pruned_class_occurrences": 3458,
+        "retained_classes": 2183
+      },
+      "right_word": [
+        -1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "status": "found",
+      "target": [
+        30012549,
+        -23757134,
+        58744870
+      ],
+      "word": [
+        0,
+        -6,
+        -2,
+        0,
+        1,
+        -4,
+        6,
+        -1,
+        -3
+      ],
+      "word_l1": 23
+    },
+    {
+      "found": true,
+      "index": 7,
+      "left_path_depth": 32,
+      "left_word": [
+        -6,
+        0,
+        -2,
+        2,
+        2,
+        0,
+        0,
+        1,
+        3
+      ],
+      "meeting_class": [
+        1386,
+        -982,
+        1170261858327
+      ],
+      "relation_row": [
+        5,
+        -5,
+        2,
+        -3,
+        -2,
+        0,
+        -1,
+        64,
+        -4
+      ],
+      "right_path_depth": 9,
+      "right_statistics": {
+        "group_compositions": 94663,
+        "layers": [
+          {
+            "depth": 1,
+            "distinct_new_classes": 18,
+            "input_frontier": 1,
+            "pruned_new_classes": 0,
+            "retained_frontier": 18
+          },
+          {
+            "depth": 2,
+            "distinct_new_classes": 162,
+            "input_frontier": 18,
+            "pruned_new_classes": 0,
+            "retained_frontier": 162
+          },
+          {
+            "depth": 3,
+            "distinct_new_classes": 978,
+            "input_frontier": 162,
+            "pruned_new_classes": 0,
+            "retained_frontier": 978
+          },
+          {
+            "depth": 4,
+            "distinct_new_classes": 4482,
+            "input_frontier": 978,
+            "pruned_new_classes": 3458,
+            "retained_frontier": 1024
+          },
+          {
+            "depth": 5,
+            "distinct_new_classes": 10477,
+            "input_frontier": 1024,
+            "pruned_new_classes": 9453,
+            "retained_frontier": 1024
+          },
+          {
+            "depth": 6,
+            "distinct_new_classes": 13940,
+            "input_frontier": 1024,
+            "pruned_new_classes": 12916,
+            "retained_frontier": 1024
+          },
+          {
+            "depth": 7,
+            "distinct_new_classes": 14751,
+            "input_frontier": 1024,
+            "pruned_new_classes": 13727,
+            "retained_frontier": 1024
+          },
+          {
+            "depth": 8,
+            "distinct_new_classes": 14442,
+            "input_frontier": 1024,
+            "pruned_new_classes": 13418,
+            "retained_frontier": 1024
+          }
+        ],
+        "maximum_frontier": 1024,
+        "meeting_in_partial_layer": 9,
+        "pruned_class_occurrences": 52972,
+        "retained_classes": 6279
+      },
+      "right_word": [
+        -1,
+        -5,
+        0,
+        -1,
+        0,
+        0,
+        -1,
+        0,
+        -1
+      ],
+      "status": "found",
+      "target": [
+        2682321,
+        -204656,
+        604697725
+      ],
+      "word": [
+        -5,
+        5,
+        -2,
+        3,
+        2,
+        0,
+        1,
+        1,
+        4
+      ],
+      "word_l1": 23
+    },
+    {
+      "found": true,
+      "index": 8,
+      "left_path_depth": 5,
+      "left_word": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        -2,
+        0,
+        1,
+        1
+      ],
+      "meeting_class": [
+        8471215,
+        -7972106,
+        193345530
+      ],
+      "relation_row": [
+        0,
+        -2,
+        0,
+        0,
+        0,
+        2,
+        0,
+        -1,
+        64
+      ],
+      "right_path_depth": 1,
+      "right_statistics": {
+        "group_compositions": 3,
+        "layers": [],
+        "maximum_frontier": 1,
+        "meeting_in_partial_layer": 1,
+        "pruned_class_occurrences": 0,
+        "retained_classes": 1
+      },
+      "right_word": [
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "status": "found",
+      "target": [
+        38669106,
+        7972106,
+        42356075
+      ],
+      "word": [
+        0,
+        2,
+        0,
+        0,
+        0,
+        -2,
+        0,
+        1,
+        1
+      ],
+      "word_l1": 6
+    }
+  ],
+  "uniform_success_guarantee_claimed": false
+}
