@@ -97,6 +97,12 @@ integer-graph replay. Selective promotion reduces norm queries from
 **7,792,462 to 5,453,561** (30.01%), but increases recorded time from
 221 to 357 seconds. Complete compressed certificates retain both results;
 these are finite controls and do not strengthen the uniform exponent.
+
+The same [fresh-input programme](research/prime-cofactor-fresh-controls.md)
+also completes a **176-bit** selective-promotion run in **23,998,215 norm
+queries**, reaching full rank in a 1,776-prime base. Its complete 51,902-identity
+certificate is retained in XZ form and independently replayed, including all
+50,126 residual-prime certificates and 1,776 integer graph eliminations.
 <!-- cofactor-collision-checkpoint:end -->
 
 <!-- coherent-compound-checkpoint:start -->
