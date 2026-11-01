@@ -71,12 +71,67 @@ It does **not** rule out exploiting the Fourier/arithmetic structure inside
 those tables, factoring each dense transform relation into a circuit, or
 using a compressed tensor representation.
 
-The structural assumption to change is therefore the dense-table interface.
-A useful next test is to factor the two transform relations into their
-butterfly stages and determine whether stagewise elimination can keep an
-exact boundary of `o(ell)` bits (including carry precision and all stage
-costs). If it cannot, this semiprime route still offers reusable contraction
-and output-adapter tools, but no evaluator that changes the complete bound.
+## Radix-2 butterfly tables reach the half-rate width floor
+
+The pinned compiler's two axes `r,t` are powers of two, with `r*t=T`, and its
+two-axis transform is a Cooley--Tukey factorization of the length-`T` DFT. This
+is proved in
+[`SemiprimeMacroFermatNetwork.lean`](https://github.com/dbsanfte/RiemannGaussian/blob/f5fd3ddb407972f9ca65298fbe9be3225fe06635/RiemannGaussian/SemiprimeMacroFermatNetwork.lean#L109-L138)
+and the axis powers are recorded in
+[`SemiprimeMacroParameters.lean`](https://github.com/dbsanfte/RiemannGaussian/blob/f5fd3ddb407972f9ca65298fbe9be3225fe06635/RiemannGaussian/SemiprimeMacroParameters.lean#L156-L171).
+Consider the standard radix-2 expansion of those two axes, and encode each
+butterfly as **one extensional Boolean table** on its two input and two output
+words, each of width `w=T+1`. This section is specifically about that
+four-word table model; it does not model a butterfly as a bit-level arithmetic
+circuit.
+
+There are
+
+```math
+d=\log_2 r+\log_2 t=\log_2 T
+```
+
+butterfly stages over `T=2^d` word positions. Index positions by
+`x\in\{0,1\}^d`; stage `i` pairs positions `x` and `x\oplus e_i`. In the
+primal graph of the four-word tables, take for each position `x` and bit
+`s<w` the connected branch set formed by the wire variables carrying that bit
+at that position through the stages; straight-through wires connect successive
+stages. Every butterfly table contains all bits of both input and both output
+words. Thus the branch sets form cliques of size `w` for each `x`, with
+complete joins between the cliques at `x` and `x\oplus e_i`. The resulting
+minor is
+
+```math
+Q_d\boxtimes K_w,
+```
+
+the strong product of the `d`-cube and a `w`-clique. Kaul's
+[Theorem 1](https://arxiv.org/html/2607.16778) gives
+`tw(G\boxtimes H) >= (tw(G)+1)(tw(H)+1)-1`; Chandran and Kavitha's
+[hypercube result](https://doi.org/10.1016/j.disc.2005.12.011) gives
+`tw(Q_d)=Theta(2^d/sqrt(d))`. Therefore
+
+```math
+\operatorname{tw}(Q_d\boxtimes K_w)
+  \ge w(\operatorname{tw}(Q_d)+1)-1
+  =\Omega\!\left(\frac{wT}{\sqrt{\log T}}\right)
+  =\Omega\!\left(\frac{\ell}{\sqrt{\log \ell}}\right).
+```
+
+Here `w=T+1` and `16*ell <= T^2 < 64*ell`. Thus a dense-table variable
+elimination on the radix-2-expanded network still has an intermediate table
+of size `2^Omega(ell/sqrt(log ell))`. This reaches the same asymptotic width
+scale as the current half-rate benchmark, so this table model cannot establish
+a better logarithmic saving exponent merely through stagewise elimination.
+This lower bound is not an upper bound for the butterfly evaluator, and it
+does not rule out a compact bit-level circuit for each add, subtract, or
+twiddle multiplication.
+
+The remaining structural question changes that local representation: expand
+the exact butterfly arithmetic into Boolean gates with explicit carry and
+constant-multiply circuits, then bound the treewidth or separator cost of
+the whole bit circuit. Only a sub-`ell/sqrt(log ell)` contraction cost could
+improve the score; the dense-table models above cannot cross that threshold.
 
 No upstream code was copied and no Lean rebuild was run. This ordinary
 argument does not establish a stronger factoring exponent; the repository's

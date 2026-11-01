@@ -1,5 +1,7 @@
 # Research index
 
+- [A thirteen-letter global negation sector](negation-odd-qutrit-crossing.md): explicit F7 split crossing; exact early Toeplitz ranks give 70 and 169 orders at most four in degree nine, excluding its bare balanced rate at every scale. Higher orders and weighted criteria are not asserted.
+
 - [Binary prefixes at unequal supporting weights](asymmetric-binary-prefix-relaxation.md): all binary endpoint prefixes reduce the necessary real-profile problem to one convex allocation. Twelve bounded outer fits find no negative margin; near-zero cold limits stop the diagnostic. These profiles are not tensors, and no global asymmetric binary theorem follows.
 
 - [Globally type-removable poles have polynomial pressure limits](approximate-rational-strictification.md): rounded weak charge potentials and Frobenius substitution clear extra finite scalar poles at cost 4Lt/p^k, preserving every strict negative witness in a polynomial representative on the same alphabets and finite field. All-type global regularity is required; auxiliary matrices and selected-type-only endpoints remain outside scope.
@@ -112,7 +114,7 @@
 - [A lattice terminal for exact ratio-class factors](circuit-box-ratio-lattice.md): weighted two-dimensional reduction, a uniform twenty-line local bound, exact quadratic recovery and fully charged `2^(n/3)*poly(n)` smallest-factor search; representation-specific scope.
 - [Reusable semiprime work in RiemannGaussian](riemann-gaussian-semiprime-source-audit.md): exact-source audit of deterministic boundary contraction, factor moments, semiprime count recovery and coefficient-ring compatibility; no imported score improvement or independent Lean rebuild.
 - [All-input minimum-factor adapters](sanftenberg-all-input-prefix-adapter.md): exact prefix counts or a truncated min-plus semiring recover the smallest factor for arbitrary `N`; direct whole-root boundary contraction has only a linear width guarantee, and recursive cost remains open.
-- [Treewidth floor for the public semiprime macro network](sanftenberg-transform-treewidth-floor.md): its ordinary bit-variable primal graph has a line-graph-of-complete-bipartite minor and therefore linear treewidth; this rules out subexponential table elimination on that graph, not compressed arithmetic or circuit representations.
+- [Treewidth floors for the public semiprime macro network](sanftenberg-transform-treewidth-floor.md): the dense macro graph has linear treewidth, while radix-2 four-word butterfly tables have a `Q_d` clique-blow-up minor and treewidth `Omega(ell/sqrt(log ell))`, matching the half-rate scale; bit-level arithmetic circuits remain open.
 
 - [Literal hot tensors for low-cell retractions](tensor-literal-low-cell-retractions.md): original Gaussian/Pfaffian evaluation without deletion closure, a proved cache bound, complete independent kernel controls and a retained 55-label capped pilot; no frontier gain.
 
@@ -324,7 +326,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 - [Coarsened grid check](coarsened-grid-validation.md): exact finite integration checks for signed network grouping, orientation, composite moduli, and padded clique tables.
 
-- [Bare criterion through twelve letters](bare-seven-to-twelve-letters.md): proved box-minor Kronecker budgets couple the two cuts; exact entropy-dual certificates give rho_bare>1/sqrt(2) for 7<=q<=12 at every degree and field, with fixed auxiliaries; an exact thirteen-letter profile satisfies every box budget and adjugate inequality and is the remaining construction target.
+- [Bare criterion through twelve letters](bare-seven-to-twelve-letters.md): exact box-budget certificates give rho_bare>1/sqrt(2) for 7<=q<=12 at every degree and field, with fixed auxiliaries. The old thirteen-letter box witness violates newer jet constraints; a [replacement combined target](joint-bare-profile-feasibility.md) passes all declared families with formal rho below `7061/10000`, without a realizing tensor.
 
 - [Auxiliary binary gauge floor](auxiliary-binary-gauge-floor.md): the gauged binary floor extends to matrix-valued Laurent seeds of every fixed auxiliary dimension with independent rational auxiliary conjugation gauges at the two places, by dominating the rectangular Smith orders coordinatewise with a twisted scalar boundary contraction; an explicit seed shows that no constant contraction dominates at both places and that a boundary contraction `f^T K e` can have strictly larger pressure.
 

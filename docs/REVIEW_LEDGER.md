@@ -610,3 +610,49 @@ and does not improve the complete score or introduce a new obstruction.
 The focused target and documentation checks are the correction's local
 validation; earlier full-suite receipts apply only to their exact sources.
 No new Lean or independent mathematical review is claimed.
+
+## Thirteen-letter historical target compatibility audit
+
+The original `M=2000` thirteen-letter point remains an exact witness for
+the box-only relaxation, but the newer second-jet and higher-word families
+each exclude it in 348 oriented checks. A size-five witness in both
+families is `1680456>1680000`. The
+[focused receipt](../evidence/q13-box-target-exclusion.json) retains every
+violation, successful checks of the other three newer cofactor families,
+the original box/adjugate pass and source hashes. The profile file and its
+original formal-rate proof are preserved. Its status is corrected in the
+note, index and README; no universal thirteen-letter exclusion follows.
+Focused replay and documentation checks validate this finite audit. The
+separate full run at `d159502` predates this addition. No new Lean or
+independent mathematical review is claimed.
+
+## Combined thirteen-letter necessary-profile target
+
+The [replacement target](../research/joint-bare-profile-feasibility.md) at
+degree 2000 passes the old box/adjugate and every declared newer cofactor
+family, including literal second-jet and higher-word replay. Exact rational
+arithmetic proves formal `rho<7061/10000<1/sqrt(2)`. Its
+[certificate](../evidence/q13-joint-word-target-controls.json) retains all
+minimum slacks, dyadic/rational logarithm bounds and source hashes.
+The numerical discovery is separate: one fixed-scale convex inner fit,
+32 iterations/queries, 9.03 seconds, followed by downward integer rounding.
+No optimality, polynomial realization or factoring improvement is claimed.
+The focused replay also checks 1296 affine word-majorant comparisons on
+60 abstract profiles; documentation checks pass. The ongoing full run at
+`d159502` predates this target. No new Lean or independent mathematical
+review is claimed.
+
+## Integrated default and focused replay at `d159502`
+
+The clean frozen integration
+`d159502a9787f7fe42712c6e1fe9f6b1728dc5a4`, tree
+`f9d64390a621b3f8f83b77c1d169106b9927d63b`, passed `make verify`
+in 734.43 seconds and the q12 target, unequal linear-Smith, approximate
+strictification, cold-gap and uniform-axis targets in 22.52 seconds.
+Pre-run and post-run working trees were clean. The
+[receipt](../evidence/verify-integrated-d159502.json) and
+[complete compressed log](../evidence/verify-integrated-d159502.stdout.txt.xz)
+retain all commands and hashes. This includes PR64 and the q12 box
+correction, but predates the q13 audits/target and later peer treewidth
+delta, whose checks remain separate. No new Lean or stronger complete
+factoring bound is implied.

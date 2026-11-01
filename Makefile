@@ -2286,6 +2286,19 @@ verify-higher-jet-words:
 verify-q12-integer-word-target:
 	python3 tools/check_q12_integer_word_target.py
 
+.PHONY: verify-q13-box-target-exclusion
+verify-q13-box-target-exclusion:
+	python3 tools/check_q13_box_target_exclusion.py
+
+.PHONY: verify-q13-joint-word-target
+verify-q13-joint-word-target:
+	PYTHONPATH=tools python3 -c 'from joint_bare_profile_search import majorant_controls; print(majorant_controls())'
+	python3 tools/check_q13_joint_word_target.py
+
+.PHONY: verify-negation-odd-qutrit
+verify-negation-odd-qutrit:
+	python3 tools/check_negation_odd_qutrit.py
+
 .PHONY: verify-multiaxis-cube
 verify-multiaxis-cube:
 	python3 tools/check_multiaxis_cube_transfer.py

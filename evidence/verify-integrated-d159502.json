@@ -1,0 +1,51 @@
+{
+  "source_commit": "d159502a9787f7fe42712c6e1fe9f6b1728dc5a4",
+  "source_tree": "f9d64390a621b3f8f83b77c1d169106b9927d63b",
+  "started_utc": "2026-11-01T16:49:36.308287+00:00",
+  "commands": [
+    [
+      "make",
+      "verify"
+    ],
+    [
+      "make",
+      "verify-q12-integer-word-target",
+      "verify-linear-smith",
+      "verify-approximate-strictification",
+      "verify-cold-gap",
+      "verify-uniform-axis-window"
+    ]
+  ],
+  "pre_status": "",
+  "status": "pass",
+  "results": [
+    {
+      "command": [
+        "make",
+        "verify"
+      ],
+      "returncode": 0,
+      "seconds": 734.4319880330004
+    },
+    {
+      "command": [
+        "make",
+        "verify-q12-integer-word-target",
+        "verify-linear-smith",
+        "verify-approximate-strictification",
+        "verify-cold-gap",
+        "verify-uniform-axis-window"
+      ],
+      "returncode": 0,
+      "seconds": 22.52015373390168
+    }
+  ],
+  "seconds": 756.9525512610562,
+  "finished_utc": "2026-11-01T17:02:15.134986+00:00",
+  "post_status": "",
+  "stdout": {
+    "path": "evidence/verify-integrated-d159502.stdout.txt.xz",
+    "uncompressed_sha256": "7274bb347d014a12047d7c64c90069225a7c39822c2c059b954c0081cfe81177",
+    "compressed_sha256": "2ec657e58737def0e13c466e47e57ef0ea3a585afbddfe8a65df025ec6b69a40"
+  }
+}

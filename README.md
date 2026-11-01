@@ -2173,7 +2173,7 @@ The current ordinary-proof campaign establishes these scoped results:
 | Scope | Result and evidence |
 | --- | --- |
 | Bare ungauged local Smith profiles, every field and degree, fixed auxiliaries | [Degree budgets](research/all-degree-small-alphabet-smith-floor.md) and [shared minors](research/shared-minor-smith-floor.md) exclude a half-rate improvement through six letters. |
-| The same certificate on 7 through 12 letters | [Box-minor Kronecker budgets](research/bare-seven-to-twelve-letters.md) exclude a half-rate improvement through twelve letters; at 13 letters an exact profile satisfies every box budget and adjugate inequality proved there, so the criterion remains open. |
+| The same certificate on 7 through 12 letters | [Box-minor Kronecker budgets](research/bare-seven-to-twelve-letters.md) exclude a half-rate improvement through twelve letters. At 13 letters the old box witness fails newer jets, but a [replacement combined target](research/joint-bare-profile-feasibility.md) passes all declared families with exact formal rate below `7061/10000`; polynomial realization remains open. |
 | Scalar paths with a monomial column determinant | [Inverse-degree compatibility](research/inverse-degree-crossing-compatibility.md) rules out the formal seven-letter optimum at every integer ramification. |
 | Polynomial inverse paths on 7 through 10 letters | [Inverse-degree aspect bounds](research/inverse-degree-aspect-bounds.md) cap the useful degree; they also exclude all `2^31` binary level-weight assignments of the fixed nine-letter flag. |
 | Noncommuting quadratic-inverse constructions | A [general two-jet tradeoff and complete nine-letter schedule](research/nine-letter-quadratic-inverse-probe.md) show why suppressing order one alone fails; all 31 tested level choices are excluded at every scale. Other pencils remain open. |
@@ -2372,11 +2372,11 @@ show how exact prefix counts or a truncated min-plus contraction can select
 the smallest factor for arbitrary inputs; the direct whole-root contractor
 is only certified at linear width, and the recursive all-input cost remains
 open.
-The unmodified public macro network also has a line-graph-of-complete-bipartite
-minor in its bit-variable primal graph, forcing linear treewidth and ruling
-out a subexponential gain from dense-table elimination alone. This is
-specific to that representation; structured transform circuits remain an
-open route to test ([treewidth analysis](research/sanftenberg-transform-treewidth-floor.md)).
+The unmodified public macro network has linear treewidth under dense-table
+elimination. Its radix-2 expansion into four-word butterfly tables still has
+a treewidth lower bound of `Omega(ell/sqrt(log ell))`, matching the half-rate
+scale; whether bit-level arithmetic circuits reduce the width remains open
+([treewidth analysis](research/sanftenberg-transform-treewidth-floor.md)).
 
 ## Sparse oriented power prefixes
 
@@ -2635,6 +2635,14 @@ scales `57/46` and `17/14`, direct integer arithmetic proves formal bare
 rates below `7071/10000` and `707/1000`, both below `1/sqrt(2)`.
 Those formal rates cannot be realized by bare polynomial crossings. Run
 `make verify-q12-integer-word-target`; the factoring score remains **1/2**.
+
+The [combined thirteen-letter target](research/joint-bare-profile-feasibility.md)
+passes every declared box and cofactor family, with exact formal rate below
+`7061/10000`; it still needs an actual polynomial realization. One concrete
+[global negation-odd construction](research/negation-odd-qutrit-crossing.md)
+does preserve the thirteen-letter endpoint, but its retained early channels
+already exclude the bare balanced target at every scale. Neither result
+changes the complete factoring score.
 
 The [latest full verification receipt](evidence/higher-words-full-verification.json)
 pins a successful clean default replay and fifteen named joint/cofactor

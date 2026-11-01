@@ -41,9 +41,14 @@ floor in the table (their pressures are evaluated in floating point). So the
 certificates are essentially sharp for all constraints proved here. At
 **q=13 these constraints do not close the criterion**: Section 6 gives an
 exact integer profile that satisfies every box budget and every adjugate
-inequality and has B(s)<13^(2 sqrt 2). That profile is the precise
-thirteen-letter construction target. It is not a tensor, and no realizing
-crossing is known.
+inequality and has B(s)<13^(2 sqrt 2). **Later compatibility audit:** that
+particular profile violates the newer second-jet and higher-word constraints
+and cannot be a polynomial crossing. Section 6 retains it as an exact
+witness to the limits of the constraints proved here. The bare thirteen-letter
+criterion itself remains open. A later
+[replacement point](joint-bare-profile-feasibility.md) satisfies all combined
+declared constraints with exact formal rate below `7061/10000`; it is not
+an actual crossing.
 
 This is a lower bound on one sufficient certificate. It is not a lower bound
 on actual coefficient ranks or on factoring time. Independent physical
@@ -337,7 +342,7 @@ has C-rank at most Σ(P−ν_i)^+, and the high part has R-rank at most
 Σ(P'−μ_i)^+. These rank bounds grow with the scale, so the split cannot move
 the scale-free relaxation.
 
-## 6. Thirteen letters: the remaining target
+## 6. Thirteen letters: the box relaxation remains open
 
 At q=13 the same relaxation has optimum about 0.705479<1/sqrt(2) [NUM].
 The record stores an exact witness: M=2000 with the profile below, used
@@ -357,8 +362,23 @@ checker computes B exactly and proves B<13^(2 sqrt 2) with rational
 logarithm bounds. Hence the thirteen-letter bare criterion is **not** closed
 by Theorem 1 together with (3).
 
-Closing q=13 needs a further proved coupling between the cuts. Otherwise,
-it needs a crossing whose profiles approach this staircase:
+The newer [second-jet](inherited-second-jet-caps.md) and
+[higher-word](higher-jet-word-caps.md) constraints exclude this particular
+profile. It violates 348 oriented constraints from each family; the
+whole-alphabet size-five inequality already requires
+`1680456<=1680000`, which is false. The maximum excesses are 76,060 and
+213,861, respectively. It continues to pass every original box and
+square-box adjugate inequality, as well as the newer square adjugate,
+rectangular-jet and multichannel families. Run
+`make verify-q13-box-target-exclusion` for the complete exact violation
+lists and source-pinned [receipt](../evidence/q13-box-target-exclusion.json).
+The original profile and its formal pressure certificate are preserved.
+
+This rejects the recorded target, rather than proving a new universal
+thirteen-letter floor. A future construction proposal must first pass
+the combined constraints. The [replacement target](joint-bare-profile-feasibility.md)
+does pass them, but still has no polynomial realization. The historical
+staircase had:
 
 - a single leading channel in each cut;
 - second-order channels spaced as above;
