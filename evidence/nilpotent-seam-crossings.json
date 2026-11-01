@@ -1,0 +1,393 @@
+{
+  "status": "pass",
+  "field": "F4; independent sampled entry controls over F16",
+  "central_eigensector_polynomial_degree_controls": 80,
+  "packed_rank_reference_controls": 24,
+  "independent_scalar_evaluations": 512,
+  "independent_complete_bivariate_entries": 4,
+  "profiles": [
+    {
+      "length": 4,
+      "labels": 2,
+      "central_degree_bound": 7,
+      "actual_central_degree": 7,
+      "boundary_degree_bound": 4,
+      "coefficient_span_dimension": 10,
+      "highest_allowed_central_edge_rank_pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "zero_boundary_edge_rank_pairs": [
+        [
+          2,
+          2
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "strip_membership": [
+        {
+          "width": 0,
+          "span_with_identity": 4,
+          "crossing_in_span": false
+        },
+        {
+          "width": 1,
+          "span_with_identity": 7,
+          "crossing_in_span": false
+        },
+        {
+          "width": 2,
+          "span_with_identity": 10,
+          "crossing_in_span": true
+        }
+      ],
+      "crossing_endpoint": true,
+      "strict_exposure": "(1+t)I+t*G(t,t^(2n+1))"
+    },
+    {
+      "length": 6,
+      "labels": 5,
+      "central_degree_bound": 11,
+      "actual_central_degree": 10,
+      "boundary_degree_bound": 6,
+      "coefficient_span_dimension": 69,
+      "highest_allowed_central_edge_rank_pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "zero_boundary_edge_rank_pairs": [
+        [
+          20,
+          2
+        ],
+        [
+          14,
+          4
+        ],
+        [
+          21,
+          4
+        ],
+        [
+          8,
+          4
+        ],
+        [
+          24,
+          7
+        ],
+        [
+          18,
+          6
+        ],
+        [
+          21,
+          7
+        ],
+        [
+          13,
+          7
+        ],
+        [
+          13,
+          6
+        ],
+        [
+          8,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "strip_membership": [
+        {
+          "width": 0,
+          "span_with_identity": 12,
+          "crossing_in_span": false
+        },
+        {
+          "width": 1,
+          "span_with_identity": 22,
+          "crossing_in_span": false
+        },
+        {
+          "width": 2,
+          "span_with_identity": 36,
+          "crossing_in_span": false
+        },
+        {
+          "width": 3,
+          "span_with_identity": 48,
+          "crossing_in_span": false
+        },
+        {
+          "width": 4,
+          "span_with_identity": 58,
+          "crossing_in_span": false
+        },
+        {
+          "width": 5,
+          "span_with_identity": 65,
+          "crossing_in_span": false
+        },
+        {
+          "width": 6,
+          "span_with_identity": 70,
+          "crossing_in_span": true
+        }
+      ],
+      "crossing_endpoint": true,
+      "strict_exposure": "(1+t)I+t*G(t,t^(2n+1))"
+    },
+    {
+      "length": 8,
+      "labels": 13,
+      "central_degree_bound": 14,
+      "actual_central_degree": 14,
+      "boundary_degree_bound": 8,
+      "coefficient_span_dimension": 118,
+      "highest_allowed_central_edge_rank_pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          9,
+          64
+        ],
+        [
+          16,
+          118
+        ],
+        [
+          25,
+          163
+        ],
+        [
+          32,
+          168
+        ],
+        [
+          25,
+          169
+        ],
+        [
+          16,
+          169
+        ],
+        [
+          8,
+          169
+        ]
+      ],
+      "zero_boundary_edge_rank_pairs": [
+        [
+          134,
+          2
+        ],
+        [
+          110,
+          4
+        ],
+        [
+          144,
+          6
+        ],
+        [
+          91,
+          14
+        ],
+        [
+          142,
+          22
+        ],
+        [
+          140,
+          23
+        ],
+        [
+          149,
+          23
+        ],
+        [
+          145,
+          23
+        ],
+        [
+          147,
+          24
+        ],
+        [
+          126,
+          24
+        ],
+        [
+          122,
+          24
+        ],
+        [
+          86,
+          22
+        ],
+        [
+          41,
+          15
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "strip_membership": [
+        {
+          "width": 0,
+          "span_with_identity": 23,
+          "crossing_in_span": false
+        },
+        {
+          "width": 1,
+          "span_with_identity": 30,
+          "crossing_in_span": false
+        },
+        {
+          "width": 2,
+          "span_with_identity": 49,
+          "crossing_in_span": false
+        },
+        {
+          "width": 3,
+          "span_with_identity": 66,
+          "crossing_in_span": false
+        },
+        {
+          "width": 4,
+          "span_with_identity": 81,
+          "crossing_in_span": false
+        },
+        {
+          "width": 5,
+          "span_with_identity": 94,
+          "crossing_in_span": false
+        },
+        {
+          "width": 6,
+          "span_with_identity": 105,
+          "crossing_in_span": false
+        },
+        {
+          "width": 7,
+          "span_with_identity": 113,
+          "crossing_in_span": false
+        },
+        {
+          "width": 8,
+          "span_with_identity": 119,
+          "crossing_in_span": true
+        }
+      ],
+      "crossing_endpoint": true,
+      "strict_exposure": "(1+t)I+t*G(t,t^(2n+1))"
+    }
+  ],
+  "scope": "Uniform complementary asymmetric edge bounds, not a whole-crossing decomposition; finite edge spans miss the crossing; no stronger factoring score.",
+  "source_sha256": {
+    "research/nilpotent-seam-crossings.md": "baccbd167f519373d9727087c72ac72f45a36288a72f8b06623b93477520d05c",
+    "tools/quantum_braid_nilpotent_seam.py": "d1b32af8841288e739d9b089f2439c03f34502d933f4c377f29dca10bc3363d6",
+    "tools/check_quantum_braid_nilpotent_seam.py": "2332ca617ff53ec4aa8eea59732cdb0da6f3e1344048e89acd1fea090dd2b5d4",
+    "tools/quantum_braid_rank_one.py": "793ba42f93afe8ffbf524d56bebfe7185887da72d94c9ca30c0515f57730d3e5",
+    "tools/quantum_braid_path.py": "4a6ce2cbad920cbe6dde6b6abf4642675a1d3d13955c8be67e6d0b6c97eae946",
+    "tools/check_quantum_braid_path_profiles.py": "edbc7f1ed7ff0ca35da5ff5603a08cfd528b549b7cf4e9d3ca828c7f447e0af7",
+    "tools/check_fixed_field_descent.py": "831c1fe850b9d21b8d0050e310adaed2586251950542bb7d274e2ffd334ea8ac",
+    "tools/search_auxiliary_extension_span.py": "b819f76b73a6b15509af27de5784b1488c0affe077d4677064291c61ab7c574b",
+    "tools/bounded_spin_crossing.py": "cefc38c88cdf76650f4966fa9e49d0edbc9ce4c2eec3848dd2716f35ee3819bd",
+    "tools/bounded_spin_support.py": "d3771564da3fb1d88ebdc2444f4e62db6754b2f72ad11101ed72a078a2d4a678",
+    "tools/check_fourier_multiplication_gates.py": "b094e9101f867d624aafa7bd851cb00b1ea411d1dc69cb700e742e609f94efc9",
+    "tools/paired_path_crossing.py": "309fb3f10a230475d5fae68625fcee5f5cfb50fc52491cc63f0765a7627c5c4b",
+    "tools/quantum_block_braid.py": "116d689f620a5d8fb784387d3eccc311497f56fbfc05a400ac8188f2c13cfc94"
+  }
+}

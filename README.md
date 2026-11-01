@@ -711,6 +711,14 @@ its top row-rank-one line and constant column-rank-one line; the
 matrix auxiliary has no nonzero row-rank-one direction and only
 the constant column-rank-one line. Higher ranks and longer paths
 remain open. Run `make verify-braid-rank-one` (NumPy).
+The [nilpotent central-seam family](research/nilpotent-seam-crossings.md)
+now gives complementary asymmetric coefficient families: the highest
+allowed central edge has row rank `L^(0.72022...+o(1))`, below the
+post-half small-cut threshold, and the opposite edge has polynomial
+column rank. Exact eight-site pairs include `(8,169)` and `(134,2)`.
+Their checked edge spans still miss the crossing; a spanning identity
+or changed template remains necessary. Run the NumPy replay
+`make verify-braid-nilpotent-seam`.
 
 The [exact nonlinear charge theorem](research/nonlinear-symbol-charge-lattices.md)
 characterizes every admissible pair of full-symbol potentials for the

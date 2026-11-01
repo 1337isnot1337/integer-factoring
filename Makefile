@@ -303,6 +303,10 @@ verify-braid-matrix-aux:
 verify-braid-rank-one:
 	python3 tools/check_quantum_braid_rank_one.py
 
+.PHONY: verify-braid-nilpotent-seam
+verify-braid-nilpotent-seam:
+	python3 tools/check_quantum_braid_nilpotent_seam.py
+
 .PHONY: verify-downset-crossings verify-regular-code-crossings
 verify-downset-crossings:
 	python3 tools/check_downset_crossing_normal_form.py
