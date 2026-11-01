@@ -939,5 +939,17 @@ data hashes, source syntax and documentation checks in 49.65 seconds. The
 retain the exact tree, commands and clean pre/post status. HiGHS reported
 optimal solutions and the selected sets were checked for acyclicity; this
 is not an independent exact MILP upper-bound certificate. The full PARI
-window scan remains unrun. The separate full `2a1daeb` gate is still running
-and predates these graph sources.
+window scan remains unrun. The separate full `2a1daeb` gate passed as recorded below; its source
+predates these graph additions.
+
+## Exact rational-carry default replay at `2a1daeb`
+
+The clean frozen source `2a1daeb017db91ba0573195c2a50bb21fc7a4b87`,
+tree `628291598d2e4650f210cd2c40ca6903360e06fa`, passed `make verify`
+in 728.57 seconds, followed by the Teichmuller, interpolation, implemented
+rational/packed-system and multiaxis-face targets in 13.05 seconds. Its
+[receipt](../evidence/verify-rational-carries-default-2a1daeb.json) and
+[complete compressed log](../evidence/verify-rational-carries-default-2a1daeb.stdout.txt.xz)
+retain exact commands, hashes and clean pre/post status. Later cube-fiber
+notes and graph follow-ups have separate checks outside this full pin.
+No Lean or stronger complete factoring bound is implied.
