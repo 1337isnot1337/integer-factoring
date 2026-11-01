@@ -1960,3 +1960,14 @@ The [arbitrary-permutation Pascal theorem](research/permuted-pascal-zero-spectra
 
 
 An [all-scale comparison](research/permuted-pascal-cone-dominance.md) shows that the explicit common-scale permutation cone is dominated by the original ordered Pascal kernel once both physical charges are included. This rules out that particular search region while leaving arbitrary physical gauges and alphabet restrictions open.
+
+The [moving-map construction](research/moving-boundary-crossings.md) permits
+polynomial physical embeddings and retractions with an exact paired identity.
+All 256 affine F4 parameter pairs of its first eight-letter boundary family
+have complete cut profiles. A separate exact theorem proves natural pressure
+`rho >= 5/7` for every polynomial deformation retaining its seven-letter
+coordinate subtensor, with no degree bound. Both core profiles agree with an
+independent binary-polynomial Smith implementation. This closes boundary-only
+natural-pressure searches in that family; changes to lower states and other
+gauges remain open. The factoring score stays `1/2`. Run
+`make verify-moving-boundary` for the construction and all-scale certificates.

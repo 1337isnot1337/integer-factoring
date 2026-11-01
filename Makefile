@@ -20,6 +20,11 @@ verify: verify-docs verify-frontier verify-arithmetic verify-further verify-cons
 verify-docs:
 	python3 tools/check_docs.py
 
+.PHONY: verify-moving-boundary
+verify-moving-boundary:
+	python3 tools/check_moving_boundary_crossings.py --output /tmp/moving-boundary-controls.json
+	python3 tools/check_moving_boundary_core_floor.py --output /tmp/moving-boundary-core-floor.json
+
 .PHONY: verify-pole-smith verify-joint-top-boundary
 verify-pole-smith:
 	python3 tools/check_pole_smith_stabilization.py
@@ -2356,3 +2361,7 @@ verify-pascal-coordinate-sectors:
 .PHONY: verify-coherent-f4-partial
 verify-coherent-f4-partial:
 	python3 tools/check_coherent_hot_f4_partial.py
+
+.PHONY: verify-orthogonal-pair-core-floor
+verify-orthogonal-pair-core-floor:
+	python3 tools/check_orthogonal_pair_core_floor.py
