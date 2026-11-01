@@ -96,8 +96,9 @@ A [fixed-type bundle comparison](research/pascal-coordinate-bundle-search.md)
 checks supporting planes at every complete profile query and targets the
 valuation ties encountered by the direct coordinate optimizer.
 The [principal-pencil screen](research/pencil-principal-alphabets.md)
-registers all 45,292 independently paired subsets of the 67 retained
-five-letter points, exploring the boundary outside bounded-height searches.
+completed all 45,292 independently paired subsets of the 67 retained
+five-letter points and 753,750 channel orders. Its 140 proper-alphabet
+free-height asymmetric trials remain above the threshold; all data are retained.
 
 ## Arithmetic construction and space bounds
 

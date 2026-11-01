@@ -2825,6 +2825,10 @@ verify-hecke-all-places-full:
 verify-pencil-principal-alphabets:
 	python3 tools/check_pencil_principal_alphabets.py
 
+.PHONY: verify-pencil-principal-screen
+verify-pencil-principal-screen:
+	python3 tools/check_pencil_principal_screen.py
+
 .PHONY: verify-pascal-coordinate-bundle
 verify-pascal-coordinate-bundle:
 	python3 tools/check_pascal_coordinate_bundle.py
