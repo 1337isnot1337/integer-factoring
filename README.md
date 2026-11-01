@@ -158,6 +158,17 @@ crossing contraction below `1/sqrt(2)`; the complete factoring score remains
 **1/2**. Run `make verify-tensor-orthogonal` for the focused theorem controls,
 finite catalogues, and saved-profile certificates. Full native profile
 reconstruction is available separately and is not part of that quick target.
+
+The [F16 profile engine](research/tensor-f16-coherent-profiles.md) adds explicit
+three-/four-pair orthogonal constructions and a hyperoval scaling that
+escapes the F4-only obstruction. Independent literal entries and binary
+Toeplitz ranks validate its complete and capped Smith orders.
+A [common-core proof](research/tensor-coupled-quadratic-field-floor.md)
+gives `rho >= 5/7` for the entire specified height-8/12 coefficient family
+over every characteristic-two field. Its exact integer certificate stopped
+the F16 pilot after 24 of 851 classes; the catalogue is explicitly incomplete.
+Search continues in different lower-core families.
+Run `make verify-tensor-f16`.
 <!-- tensor-orthogonal-checkpoint:end -->
 
 <!-- coherent-compound-checkpoint:start -->

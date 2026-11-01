@@ -2432,3 +2432,11 @@ benchmark-batch-cofactor-policies:
 .PHONY: verify-paired-mds-low-core
 verify-paired-mds-low-core:
 	python3 tools/check_paired_mds_low_core_floor.py
+
+.PHONY: verify-tensor-f16
+
+verify-tensor-orthogonal: verify-tensor-f16
+
+verify-tensor-f16:
+	python3 tools/check_tensor_hot_compounds_f16.py --output /tmp/integer-factoring-tensor-f16-check.json
+	python3 tools/check_tensor_coupled_quadratic_core_floor.py --recompute-profiles --output /tmp/integer-factoring-tensor-field-floor-check.json

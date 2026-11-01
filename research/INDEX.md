@@ -21,6 +21,9 @@
 
 ## Coherent physical crossing spaces
 
+- [Exact F16 coherent profiles](tensor-f16-coherent-profiles.md): explicit extension-field codes, independent literal/Toeplitz controls, and conservative capped-order pressure bounds.
+- [An all-field coupled-quadratic floor](tensor-coupled-quadratic-field-floor.md): a 21-state coordinate core and 124 integer intervals prove `rho >= 5/7` for the specified height-8/12 retractions.
+
 - [Deterministic all-subset Gram scalings](tensor-orthogonal-scaling.md): unique minimum-weight bases and an explicit quadratic tower give polynomial construction cost with a corank-dependent degree budget.
 - [All-subset coefficient capacity](tensor-orthogonal-capacity.md): a linear rank bound, exact binary classification, and exact rank-two capacities over every characteristic-two finite field.
 - [Complete F4 rank-two catalogue](tensor-f4-rank-two-limit.md) and [rank-three catalogue](tensor-f4-rank-three-catalogue.md): exact maximal sets, physical kernel dimensions, and complete five-pair ordering comparisons.
