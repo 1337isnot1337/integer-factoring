@@ -1156,3 +1156,11 @@ recovery above the domain bit count. The focused target and documentation
 checks are its local gate. The full `80835e8` pass predates this source.
 The integer arithmetic representation and stronger complete factoring score
 remain open; no Lean or independent mathematical review is claimed.
+
+Integration with PR #76 preserves its sharper packed-system acquisition and
+the single canonical rational compiler. Regenerating the divided-power
+receipt changed only that compiler's source hash; all algebra, pointwise and
+contraction results are identical. The combined divided-power, packed-system,
+canonical rational and documentation targets pass at this integration
+(1,136 Markdown files). A new clean default replay is required for this
+combined source; the preceding `80835e8` receipt remains scoped as written.
