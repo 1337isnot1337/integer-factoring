@@ -174,6 +174,7 @@
 - [An actual common three-cut Gaussian family](cube-homogeneous-gaussian.md): one homogeneous multivariate endpoint, exact three-cut Smith factors, a rational `rho=5/8` certificate, and an all-scale floor for its declared Cayley method; no score improvement.
 - [Cube geometry and a complete conditional transfer](cube-crossing-transfer.md): antipodal cube edges, equitable regrouping, effective entry queries, and `alpha=log_3(1/rho)`; a new local family below `1/sqrt(3)` is still required to improve the score.
 - [Audit of the rejected two-axis cube regrouping](two-axis-cube-regrouping.md): independent summand permutations need not preserve the endpoint, the hidden cut splits every parent label, and uniform submaximal fixed-cut widths contradict endpoint rank. The original proposal and arithmetic controls are preserved; no stronger complete exponent follows.
+- [A global-pairing replacement for the rejected regrouping](two-axis-global-pairing-repair.md): one common internal coordinate per complete assignment, an exact identity on the fixed parent labels, and the total parent-width interface used by the multiaxis transfer. The exact interface checker passes; the full transfer is not independently accepted, so the scoreboard remains `1/2` until review.
 
 ## Higher-dimensional Gaussian constraints
 

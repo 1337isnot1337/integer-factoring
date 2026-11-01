@@ -1253,3 +1253,26 @@ parameter criterion, not a runtime lower bound for factoring or every
 structured contractor. Row polynomials are added; no free sum-to-product
 compiler is claimed. The full replay at `fc695a0` predates this diagnostic.
 No new Lean or independent mathematical review is claimed.
+
+## Check the global-pairing replacement for the rejected regrouping
+
+The audit above remains valid for the original per-cube minimum proof.
+The [replacement note](../research/two-axis-global-pairing-repair.md)
+instead chooses one common internal coordinate per complete assignment,
+applies the same coordinate map to every summand, and asserts only the
+total parent-axis width `<=4 rho lambda' B+O(B log)` with the separate
+cap `2 lambda'`. The [checker](../tools/check_two_axis_global_pairing.py)
+passes at base `fc695a0` plus this change: three common-map pairings on
+all `2^8` assignments, the audit's 128-of-256 piece-specific counterexample
+preserved, the `(0,3,4),(3,0,4)` control selecting parent width `3` (the
+established global minimum, not the independent-minimum `0`), the
+hidden-cut incidence, total-width rank feasibility, and the inherited
+`(2,4,8,10)` profiles and rational certificate. The
+[receipt](../evidence/two-axis-global-pairing-repair.json) records the
+exact checks and their scope.
+
+This is an ordinary interface proof. It does not re-prove the inherited
+Gaussian construction, its profiles or certificate, or the two-axis
+evaluator, and it has not received independent mathematical acceptance.
+The complete factoring score therefore remains `1/2`; the note is
+under review, not an accepted stronger bound.
