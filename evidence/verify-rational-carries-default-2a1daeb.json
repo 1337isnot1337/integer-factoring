@@ -1,0 +1,49 @@
+{
+  "source_commit": "2a1daeb017db91ba0573195c2a50bb21fc7a4b87",
+  "source_tree": "628291598d2e4650f210cd2c40ca6903360e06fa",
+  "started_utc": "2026-11-01T19:08:04.098261+00:00",
+  "commands": [
+    [
+      "make",
+      "verify"
+    ],
+    [
+      "make",
+      "verify-teichmuller-carries",
+      "verify-precision-indicators",
+      "verify-precision-rational-carries",
+      "verify-multiaxis-face-rank"
+    ]
+  ],
+  "pre_status": "",
+  "status": "pass",
+  "results": [
+    {
+      "command": [
+        "make",
+        "verify"
+      ],
+      "returncode": 0,
+      "seconds": 728.5669547342695
+    },
+    {
+      "command": [
+        "make",
+        "verify-teichmuller-carries",
+        "verify-precision-indicators",
+        "verify-precision-rational-carries",
+        "verify-multiaxis-face-rank"
+      ],
+      "returncode": 0,
+      "seconds": 13.051682909019291
+    }
+  ],
+  "seconds": 741.6190290069208,
+  "finished_utc": "2026-11-01T19:20:25.819687+00:00",
+  "post_status": "",
+  "stdout": {
+    "path": "evidence/verify-rational-carries-default-2a1daeb.stdout.txt.xz",
+    "uncompressed_sha256": "feed4cd70fa54477d8fdb1def093d8b7ba93790ae524253757f167669cf68517",
+    "compressed_sha256": "b1c87080d2d990569d69f95e3a9f7ce5fdd2ac2b5e1b455770bb404245016ae6"
+  }
+}

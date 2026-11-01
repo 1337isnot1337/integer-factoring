@@ -3117,3 +3117,23 @@ verify-precision-indicators:
 .PHONY: verify-precision-rational-carries
 verify-precision-rational-carries:
 	python3 tools/check_precision_rational_carries.py
+
+.PHONY: verify-lazy-potential-tail verify-routing-graphs verify-window-graph-data
+verify-lazy-potential-tail:
+	python3 tools/check_lazy_potential_tail.py
+
+GRAPH_PYTHON ?= python3
+verify-routing-graphs:
+	$(GRAPH_PYTHON) tools/routing_rank_nogo/check_graph_minrank.py
+
+verify-window-graph-data:
+	cd tools/window_lemma/graph/data && sha256sum --check SHA256SUMS
+	python3 -m py_compile tools/window_lemma/graph/cayley_small.py tools/window_lemma/graph/summarize.py
+
+.PHONY: verify-multiplier-treewidth-controls verify-multiplier-treewidth-brackets
+verify-multiplier-treewidth-controls:
+	python3 tools/multiplier_treewidth/check_shift_lemma.py
+	python3 tools/multiplier_treewidth/check_cayley_relations.py
+
+verify-multiplier-treewidth-brackets:
+	python3 tools/multiplier_treewidth/tw_multipliers.py

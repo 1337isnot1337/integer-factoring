@@ -130,6 +130,53 @@ contractor gets only a linear width bound. A recursive exact-count or
 Boolean-existence implementation remains open; this is not an established
 all-input runtime reduction.
 
+## D1's target digits do not evade the multiplier treewidth floor
+
+The exact source pin above also makes it possible to check the output-encoding
+case in [the multiplier-network result](multiplier-treewidth-and-relation-cycles.md).
+[`SemiprimePublicFactorCount.lean`](https://github.com/dbsanfte/RiemannGaussian/blob/f5fd3ddb407972f9ca65298fbe9be3225fe06635/RiemannGaussian/SemiprimePublicFactorCount.lean#L27-L46)
+chooses the public shape from `ell = bitLength N` and sets `Config.target` to
+the radix digits of `N`. The local-table definition in
+[`SemiprimeMacroGraphSemantics.lean`](https://github.com/dbsanfte/RiemannGaussian/blob/f5fd3ddb407972f9ca65298fbe9be3225fe06635/RiemannGaussian/SemiprimeMacroGraphSemantics.lean#L122-L128)
+uses `p.target k` only in the integer-carry relation
+
+```text
+coefficient + previous = target[k] + 2^bits * next.
+```
+
+The input operands are explicit ordinary radix-digit words. The uniform
+[`arithmetic_network_iff` theorem](https://github.com/dbsanfte/RiemannGaussian/blob/f5fd3ddb407972f9ca65298fbe9be3225fe06635/RiemannGaussian/SemiprimeMacroFermatNetwork.lean#L413-L422)
+says that, for arbitrary target digits, the arithmetic network has witnesses
+exactly when the two input integers multiply to the target value. Thus one
+can expose each target digit as a fresh `bits`-bit product word `z_k`; this is
+a conventional multiplication network with explicit operand and product
+bits. The separate input-flag constraints can be removed for this lower-bound
+application, and the unused high padding bits are auxiliaries.
+
+For this source, the parameter bounds in
+[`SemiprimeMacroParameters.lean`](https://github.com/dbsanfte/RiemannGaussian/blob/f5fd3ddb407972f9ca65298fbe9be3225fe06635/RiemannGaussian/SemiprimeMacroParameters.lean#L26-L70)
+give `T = transformLength(ell) = 4*bits` and
+`16*ell <= T^2 < 64*ell`. The product words contain `T*bits = T^2/4 >= 4*ell`
+bits, enough to expose the `2*ell` product bits required by T1. Each fresh
+product bit occurs in just its own carry factor. The scope of that factor is
+`w = 3*(T+1) + bits = O(sqrt(ell))`: three existing carry/coefficient words,
+plus one target word. Hence each product bit is simplicial in the uniform
+network, and `w = o(ell)`. Under T1.1's stated theorem, pinning the product
+bits to `N` and deleting only those fresh output vertices, while retaining
+the declared scopes of the remaining carry factors, preserves an
+`Omega(ell)` treewidth lower bound for sufficiently large `ell`. This does
+not cover arbitrary additional propagation, semantic simplification or
+refactorization of those scopes.
+
+This resolves the source-specific caveat for D1: distributing the bits of
+`N` among these local carry tables is still local output pinning. It blocks
+dense variable elimination on this D1 bit-variable graph. It does not lower-
+bound factoring, rule out the structured boundary contraction above, or cover
+representations in which the operands exist only in transform coordinates.
+This is an ordinary source mapping; no Lean source was copied or rebuilt.
+PR #73's hand proof has not received independent mathematical review, and the
+complete score remains `1/2`.
+
 ## Consequence for this campaign
 
 Reuse the deterministic partition/contraction method and the exact

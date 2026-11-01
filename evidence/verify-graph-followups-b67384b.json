@@ -1,0 +1,49 @@
+{
+  "source_commit": "b67384bbe974838868d75cc862522ad5d525ab2a",
+  "source_tree": "9a8e3bd05449b3bfb6f5c34e91a5758efb45240a",
+  "started_utc": "2026-11-01T19:18:08.072805+00:00",
+  "commands": [
+    [
+      "make",
+      "verify-routing-graphs",
+      "GRAPH_PYTHON=/home/cinna/.local/state/intfact-solo-01a195c2/graph-check-env/bin/python"
+    ],
+    [
+      "make",
+      "verify-lazy-potential-tail",
+      "verify-window-graph-data",
+      "verify-docs"
+    ]
+  ],
+  "pre_status": "",
+  "status": "pass",
+  "results": [
+    {
+      "command": [
+        "make",
+        "verify-routing-graphs",
+        "GRAPH_PYTHON=/home/cinna/.local/state/intfact-solo-01a195c2/graph-check-env/bin/python"
+      ],
+      "returncode": 0,
+      "seconds": 44.282499025110155
+    },
+    {
+      "command": [
+        "make",
+        "verify-lazy-potential-tail",
+        "verify-window-graph-data",
+        "verify-docs"
+      ],
+      "returncode": 0,
+      "seconds": 5.366894230712205
+    }
+  ],
+  "seconds": 49.64980325382203,
+  "finished_utc": "2026-11-01T19:18:57.795217+00:00",
+  "post_status": "",
+  "stdout": {
+    "path": "evidence/verify-graph-followups-b67384b.stdout.txt.xz",
+    "uncompressed_sha256": "c405341e355dda2a02b3f90a1d9a25c4ac9122bdd5c454511c6abc084a95c114",
+    "compressed_sha256": "0f22b95f17b143e13075327cc27f6d7989fc975933d81bb597b07a2e3e647718"
+  }
+}

@@ -880,6 +880,82 @@ expanded coefficients and explicit input budgets are retained. The
 earlier full `5c2e66d` replay predates this source. No Lean, independent
 mathematical review or stronger factoring score is claimed.
 
+## PR71 backend and implemented inverse/system companions
+
+PR71 source `b9cd96f1f767cd71c8bad123fdb9e1d450bd5f92` is retained
+by merge `3d20c83`. Its ordinary moment/carry argument, norm fixed-ring
+argument and entry points were inspected; the focused backend, indicator
+and documentation checks pass. The original 384 polynomial queries,
+7,060 assignments and residue-count controls remain source-pinned to that
+backend. This is integration, not independent mathematical acceptance.
+
+The [new compiler](../tools/precision_rational_carries.py) implements
+collected total unit inverses and coefficient-extension packing of residue
+systems. At coefficient degree m*w, m ordinary equations retain v variables
+and precision h, with input budget `(2h-1)*m*w*delta`; supplied field models
+and coefficient embeddings are required or must be separately acquired.
+The [receipt](../evidence/precision-rational-carry-controls.json) compares
+18 rational-sum controls, 512 pointwise Frobenius transforms and 35 packed
+system controls with literal evaluation. Constants, nonunits, punctured
+domains, relative-column rotation, subfield coefficients and exact-count
+precision are included. The inherited additive-character compiler is
+preserved. The complete integer arithmetic representation and a stronger
+factoring score remain open. No Lean is included.
+
+## Graph follow-up integration and the uniform probability input
+
+PR70 head `e5133d81dcf3ca92a7f0decaf48a33ee1c430ccd` is retained in
+`9c77369`; PR72 head `a4274425ae7dfde4439f8e0fc892a74228cfad75` in
+`aead326`. The additive index conflict preserves both sources. PR70 now
+credits MAIS, and its checker requires HiGHS optimal status. Exact ranks
+and acyclicity are distinguished from floating MILP optimality and log
+comparisons; no independent solver upper-bound certificate is claimed.
+The [uniform companion](../research/lazy-potential-tail-proof.md) proves
+the previously finite-only lazy-walk input for all allowed w and p, with
+constant -70 instead of -72. Its [receipt](../evidence/lazy-potential-tail-controls.json)
+contains two rational exponential-series certificates, the completed square,
+32,896 exact Rademacher comparisons and 525 exact lazy-walk comparisons.
+The general statement follows from the written proof, not the grid.
+
+PR72's lattice lemma now explicitly excludes ramified generators; the
+relation lattice has index equal to the generated subgroup's size, which
+is h only when the base generates the full class group. The ball sandwich
+gives sufficient and necessary tube tests, not an exact intermediate-ball
+equivalence. Short zero-displacement grid walks include more than just
+four-cycles. Both committed data hashes pass and source syntax is checked;
+the numerical PARI/FFT scan is not rerun because cypari2 is unavailable in
+the system and task interpreters. The full `2a1daeb` replay predates these
+follow-ups. A focused graph replay uses an isolated interpreter with PuLP
+2.9.0, HiGHS 1.15.1 and NetworkX 3.7; its result is recorded separately.
+No arbitrary-algorithm lower bound, Lean or stronger factoring score follows.
+
+## Exact graph follow-up replay at `b67384b`
+
+The clean frozen source `b67384bbe974838868d75cc862522ad5d525ab2a`
+passed the full routing graph checker, uniform-tail exact controls, window
+data hashes, source syntax and documentation checks in 49.65 seconds. The
+[receipt](../evidence/verify-graph-followups-b67384b.json) and
+[complete compressed log](../evidence/verify-graph-followups-b67384b.stdout.txt.xz)
+retain the exact tree, commands and clean pre/post status. HiGHS reported
+optimal solutions and the selected sets were checked for acyclicity; this
+is not an independent exact MILP upper-bound certificate. The full PARI
+window scan remains unrun. The separate full `2a1daeb` gate passed as recorded below; its source
+predates these graph additions.
+
+## Exact rational-carry default replay at `2a1daeb`
+
+The clean frozen source `2a1daeb017db91ba0573195c2a50bb21fc7a4b87`,
+tree `628291598d2e4650f210cd2c40ca6903360e06fa`, passed `make verify`
+in 728.57 seconds, followed by the Teichmuller, interpolation, implemented
+rational/packed-system and multiaxis-face targets in 13.05 seconds. Its
+[receipt](../evidence/verify-rational-carries-default-2a1daeb.json) and
+[complete compressed log](../evidence/verify-rational-carries-default-2a1daeb.stdout.txt.xz)
+retain exact commands, hashes and clean pre/post status. Later cube-fiber
+notes and graph follow-ups have separate checks outside this full pin.
+No Lean or stronger complete factoring bound is implied.
+
+
+
 ## Precision carry replay and acquired collected inverses
 
 The [full receipt](../evidence/teichmuller-carry-full-verification.json)
@@ -908,14 +984,46 @@ and 1,130 Markdown files. Later receipt/docs changes and the packed-system
 implementation are outside that exact pin. These are author implementation checks and
 ordinary proofs, with no independent mathematical review, new Lean work,
 integer-word compiler or stronger factoring bound.
+
 ## PR71 backend and implemented inverse/system companions
 
-PR71 source `b9cd96f1f767cd71c8bad123fdb9e1d450bd5f92` is retained
-by merge `3d20c83`. Its ordinary moment/carry argument, norm fixed-ring
-argument and entry points were inspected; the focused backend, indicator
-and documentation checks pass. The original 384 polynomial queries,
-7,060 assignments and residue-count controls remain source-pinned to that
-backend. This is integration, not independent mathematical acceptance.
+
+
+## PR73/74 integration and multiplier scope repairs
+
+PR73 head `ab0dc947a4ad1d6fa9fa13aa459cc4cc779da332` is retained by
+`f406934`; PR74 head `329a2edcef84d0b738647df3a9a8d20bdc92e7de` by
+`d958a43`. The additive index conflict preserves both sources. The PR74
+precision-note conflict initially retained both implementations and the packed
+system bound; the later canonical consolidation preserves both source heads
+and control panels while using one implementation. The concise README
+overview from concurrent `ebfd7e5` is preserved with stable backend links.
+
+The multiplier separator proof now explicitly requires Boolean auxiliary
+variables, as its `2^(k+1)` rectangle cover counts bits. Its odd-only proof
+uses `h=6*floor(n/12)`, translated shifts starting at n'/2, and the corrected
+width bound `h/120-3`. The fixed-target transfer covers unchanged output-pin
+graphs or deletion only of bounded-degree simplicial outputs. Arbitrary
+propagation can remove more vertices/edges and is not identified with that
+deletion. The underlying unfixed-relation theorem and an array upper bound
+remain useful; no universal specialized-factoring treewidth result is claimed.
+
+The clean original PR73 source passed shift, relation-cycle and full finite
+multiplier-bracket commands in 207.15 seconds. Its
+[receipt](../evidence/verify-pr73-source-ab0dc94.json) and
+[complete compressed log](../evidence/verify-pr73-source-ab0dc94.stdout.txt.xz)
+retain exact source/tree and clean pre/post status. This source predates
+the scope/constant repairs, whose justification is the written argument;
+finite bracket fits are not exact treewidths or asymptotic proofs.
+
+PR74's focused backend passed all 402 small-ring elements, 180 rational
+queries against 675 assignments, 60 field reductions and 3,240 Frobenius
+comparisons. Its 324 acquired queries satisfy the stated count/degree
+budgets. The inherited interpolation and the separate packed-system
+controls also pass. These later sources are outside the full `2a1daeb`
+verification pin. Source/concurrent credits and both source implementations remain in history;
+the current tree uses the canonical compiler with both control panels. No
+Lean or stronger factoring score is claimed.
 
 The [new compiler](../tools/precision_rational_carries.py) implements
 collected total unit inverses and coefficient-extension packing of residue
@@ -979,3 +1087,39 @@ hashes are retained with the
 [complete compressed log](../evidence/teichmuller-packed-full-verification.stdout.txt.xz).
 This pin includes canonical consolidation and the refined packing interface;
 later receipt/docs changes and main integration deltas have separate scope.
+
+After integrating main `80835e8`, the canonical compiler, original carry
+backend and all three compiler checkers are byte-identical to the full
+`10d7610` pin. The new main integration passed
+`make verify-lazy-potential-tail verify-window-graph-data
+verify-multiplier-treewidth-controls verify-docs`, including 1,135 Markdown
+files. Concurrent graph proofs, their scope repairs, D1 source mapping and
+archived verification are retained. This does not claim a fresh full run
+of all later main changes or independent review of their mathematics.
+
+## PR #73: multiplier-network treewidth and relation cycles
+
+Integrated exact PR head `ab0dc947a4ad1d6fa9fa13aa459cc4cc779da332` at
+merge commit `f05a1919c28fa86110ab1d2f39b09f6a45bf09e2`. The ordinary note,
+finite checker scripts, and saved outputs are retained byte for byte. All
+hosted PR checks passed at that exact head; no local checker or Lean build was
+run during this integration. The separator/fooling-set proof is the author's
+hand proof and has not received independent mathematical review.
+
+A follow-up source audit maps the theorem's hard-wired-output corollary to
+RiemannGaussian D1: target digits occur only in local carry tables whose
+unspecialized scopes are `O(sqrt(ell))`, while the operands are explicit input
+bits. This closes the linear-treewidth applicability question for that
+representation only. It is a barrier to dense elimination, not a factoring
+lower bound, and it does not exclude the structured boundary contractor. The
+source mapping is ordinary prose; no upstream Lean was imported or rebuilt,
+and no stronger factoring score is claimed.
+
+
+During the subsequent merge, pinned upstream `localTable` carry scopes,
+`arithmetic_network_iff` and the public transform parameter formulas were
+read directly from the source. The D1 application is retained for the
+declared factor graph after deleting only the fresh product vertices. It
+does not identify arbitrary propagation with that deletion. The abstract
+arithmetic theorem itself distinguishes the Boolean compiler interface;
+this integration performs an ordinary source mapping, not a Lean replay.

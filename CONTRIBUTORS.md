@@ -26,6 +26,11 @@ work retain credit even when they do not advance the selected exponent.
   verifier rerun of the half-rate endpoint with Lean and nanoda, reported in
   [issue #28](https://github.com/1337isnot1337/integer-factoring/issues/28)
   and [run 41108289491](https://github.com/bigospeedrun/verifier/actions/runs/41108289491).
+- **orda-aska:** ordinary multiplier-network treewidth and relation-cycle
+  analysis in [PR #73](https://github.com/1337isnot1337/integer-factoring/pull/73),
+  including the balanced-separator lower bound and finite checker scripts.
+  The contribution discloses AI research-agent assistance; its hand proof
+  requires independent human review.
 
 The [research index](research/INDEX.md), individual PRs, and
 [review ledger](docs/REVIEW_LEDGER.md) retain the provenance and status of
