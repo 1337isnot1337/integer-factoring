@@ -18,6 +18,7 @@
 
 ## Exact pole-Cauchy algorithms
 
+- [Complete bilinear pole-product packets](bilinear-pole-packets.md): global polynomial circuits modulo `2^p` with `O(n+p)` arithmetic nodes, polynomial generation, and full unit traces; singular factor-count normalization remains open.
 - [Explicit residue-flow profiles](pole-smith-residue-flow.md): every Smith order in `(r+s) poly(b)` bit operations on explicit node lists, without constructing the matrix.
 - [Balanced overlap spectra](pole-smith-overlap-spectrum.md): one tree pass gives the full histogram; power-of-two padding gives a diagonal Smith formula.
 - [Inverse conditioning and entry queries](pole-cauchy-conditioning.md): balanced padding controls precision independently of dimension and permits polynomial-cost individual inverse entries.
@@ -1018,3 +1019,16 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 - [Weighted hot-code profile and search interfaces](weighted-hot-compound-search.md)
 - [Physical types in same-place Hermite reconstruction](weighted-multipoint-hermite-crossings.md)
 - [A width-sensitive evaluator and a faster prime-constructor schedule](width-sensitive-prime-constructor.md)
+
+## Cube profile and pressure checkpoints
+
+- [Endpoint-minor budgets beyond the Cayley kernel class](cube-gaussian-profile-budget.md)
+- [A sharper rational certificate for the common cube family](cube-gaussian-tight-pressure.md)
+
+## Implicit analytic inverse contractions
+
+- [Regular analytic weights for complete pole-Cauchy inverse contractions](pole-cauchy-analytic-weights.md)
+- [Joint regular analytic kernels and a two-dimensional moment recurrence](pole-cauchy-analytic-kernels.md)
+- [The sharp precision cost of analytic residue selectors](regular-analytic-selector-precision.md)
+
+- [Polynomial precision for explicit unions of odd arithmetic progressions](pole-cauchy-domain-precision.md)

@@ -11,7 +11,7 @@ from __future__ import annotations
 import argparse
 from hashlib import sha256
 import json
-from math import gcd, prod
+from math import gcd, isqrt, prod
 from pathlib import Path
 
 from arithmetic_two_group import power
@@ -46,7 +46,39 @@ def canonical(value):
     return json.loads(json.dumps(value))
 
 
+def independent_original_rows(rows):
+    """Certify a nonzero integer minor modulo a fixed prime, with fallback.
+
+    Modular independence proves rational independence. A modular dependence
+    does not prove rational dependence, so that branch uses exact elimination.
+    """
+    if not rows:
+        return True
+    prime = 2147483647
+    pivots = {}
+    for row in rows:
+        residual = [value % prime for value in row]
+        for pivot, previous in pivots.items():
+            multiplier = residual[pivot]
+            if multiplier:
+                for j in range(pivot, len(residual)):
+                    residual[j] = (residual[j] - multiplier * previous[j]) % prime
+        pivot = next((j for j, value in enumerate(residual) if value), None)
+        if pivot is None:
+            exact = RationalRowBasis(len(rows[0]))
+            return all(exact.add(original) for original in rows)
+        inverse = pow(residual[pivot], -1, prime)
+        pivots[pivot] = [value * inverse % prime for value in residual]
+        pivots = dict(sorted(pivots.items()))
+    return True
+
+
 def exact_controls():
+    prime = 2147483647
+    assert prime % 2 and all(prime % d for d in range(3, isqrt(prime) + 1, 2))
+    assert independent_original_rows([[prime, 0], [0, 1]])
+    assert not independent_original_rows([[1, 2], [2, 4]])
+    assert independent_original_rows([[0, 3, 1], [2, 0, 7], [4, 5, 0]])
     checks = 0
     for integer in range(3, 300, 2):
         delta = -integer if integer % 4 == 3 else -4 * integer
@@ -86,6 +118,7 @@ def exact_controls():
             assert splits[0]['smooth_part'] == 2 and splits[0]['residual'] == 35
         fixtures.append({'integer': integer, 'forms': forms, 'splits': splits})
     return {'exhaustive_partial_ideal_identities': checks,
+            'fixed_prime_independence_and_exact_fallback_controls': 3,
             'composite_residual_controls': fixtures,
             'wrong_norm_only_key_rejected': True,
             'ramified_two_and_conjugate_orientations_checked': True}
@@ -103,7 +136,6 @@ def verify_record(record):
     if integer % 4 == 1:
         expected[2] = (2, reduce_form((2, 2, (integer + 1) // 2)))
     assert records == expected and primes == sorted(expected)
-    basis = RationalRowBasis(len(primes))
     for witness, row in zip(record['witnesses'], record['relation_matrix']):
         vectors = []
         for item in (witness['current'], witness['previous']):
@@ -132,10 +164,11 @@ def verify_record(record):
         else:
             assert witness['current']['key'] == witness['previous']['key']
             reconstructed = [a - b for a, b in zip(*vectors)]
-        assert reconstructed == row and basis.add(row)
+        assert reconstructed == row
         word = {p: exponent for p, exponent in zip(primes, row) if exponent}
         assert word_value(word, records, identity) == identity
     assert len(record['witnesses']) == len(record['relation_matrix']) == record['relation_rank']
+    assert independent_original_rows(record['relation_matrix'])
     assert record['independent_collisions'] + record['independent_smooth_rows'] == record['relation_rank']
     assert record['factoring_oracle_calls'] == record['residual_primality_tests'] == 0
     assert record['new_primes_introduced'] == 0

@@ -34,8 +34,11 @@ The [exact selector](research/cofactor-collision-selection.md) cancels equal
 or conjugate residual ideals without factoring their composite norms or testing
 them for primality. It retains genuine relations in the fixed prime-form base.
 Matched finite controls reduce leading-norm queries from 227,593 to 88,234 on
-a 92-bit input and from 3,553,722 to 1,400,316 on a 124-bit input. These are
-query counts, not wall-clock speedups or uniform complexity bounds.
+a 92-bit input and from 3,553,722 to 1,400,316 on a 124-bit input. A 144-bit matched control reduces
+8,120,765 queries to 3,440,025 at the square cofactor cap; its retained
+relation rank increases from 502 to 510. The present implementation is slower
+in wall-clock time on that input. These finite query counts do not establish
+a uniform complexity improvement.
 
 The [admissible-quota theorem](research/cofactor-collision-quota.md) proves
 that an explicit per-generator quota forces complete rational relation rank,
@@ -80,13 +83,14 @@ Run `make verify-coherent-retractions` for focused exact controls and
 The [three-axis cube transfer](research/cube-crossing-transfer.md) gives
 `alpha = log_3(1/rho)` from a uniform common eight-leg crossing family.
 An [explicit homogeneous Gaussian family](research/cube-homogeneous-gaussian.md)
-now meets this interface with **`rho = 5/8`**, using one three-variable
-coefficient decomposition at all three cuts. Its exact rational certificate,
-complete Laurent-polynomial factorizations, and full evaluation costs are retained.
-This gives `alpha = log_3(8/5)`, below the existing **1/2**.
-The same note proves an all-scale `rho > 3/5` floor for its specified
-homogeneous Cayley/common-profile method; crossing the target
-`1/sqrt(3)` needs a different construction or stronger rank estimate.
+meets this interface with the [sharper exact certificate](research/cube-gaussian-tight-pressure.md)
+**`rho = 278/445`**, improving `5/8` for the same kernel.
+Complete Laurent-polynomial factorizations, the common coefficient decomposition,
+and evaluation costs are retained. Its exponent `log_3(445/278)` remains below **1/2**.
+A [shared endpoint-minor argument](research/cube-gaussian-profile-budget.md)
+proves `rho > 3/5` for every homogeneous eight-by-eight Gaussian kernel
+under the common-scale, unweighted Smith-profile method. Multiple physical modes
+and stronger coefficient-rank estimates remain outside that obstruction.
 <!-- cube-transfer-checkpoint:end -->
 
 ## Results and evidence
@@ -120,6 +124,11 @@ The [global pole trace](research/interval-pole-trace.md) gives an exact
 polynomial-precision factor-pair filter and closed bilinear reduction rules.
 Its current implementation still enumerates the dyadic state tree; efficient
 global state reduction remains open.
+The [bilinear pole-product packets](research/bilinear-pole-packets.md) now
+construct the whole product over that state family modulo `2^p` with
+`O(n+p)` ordinary arithmetic nodes and polynomial generation cost.
+The unit-trace evaluator is exact; the singular factor-count normalization
+remains unresolved. Run `make verify-bilinear-pole-packets`.
 The [Cauchy content-slope reduction](research/pole-cauchy-content.md) gives
 a second global target using two implicit determinant contents, with cheap
 padding and explicit Vandermonde normalization.
@@ -131,15 +140,22 @@ rectangular maximal-minor slope. It does not identify the unknown factor pivots
 or supply a compressed global evaluator. Run `make verify-pole-smith`.
 
 <!-- pole-implicit-checkpoint:start -->
-The pole-Cauchy route now has [linear explicit Smith-profile computation](research/pole-smith-residue-flow.md),
-a [balanced overlap histogram](research/pole-smith-overlap-spectrum.md), and
-[dimension-independent inverse conditioning](research/pole-cauchy-conditioning.md).
-Individual inverse entries and [complete low-degree polynomial bilinear moments](research/pole-cauchy-polynomial-moments.md)
-are computable from binary-encoded progressions in polynomial bit time.
-[Precision-bounded Newton arithmetic](research/modular-interval-jet-arithmetic.md)
-keeps the interval-jet coefficient sizes controlled. These are exact ordinary
-results with independent finite controls; the factor-count Hadamard-square trace
-and implicit reciprocal-overlap counts remain open. Run `make verify-pole-arithmetic`.
+The [pole-Cauchy stabilization theorem](research/pole-smith-stabilization.md)
+and [inverse conditioning bounds](research/pole-cauchy-conditioning.md) give exact
+structural and precision controls. [Polynomial inverse moments](research/pole-cauchy-polynomial-moments.md)
+reduce complete contractions to short product jets.
+[Regular analytic weights](research/pole-cauchy-analytic-weights.md) and
+[joint analytic kernels](research/pole-cauchy-analytic-kernels.md) now extend
+that algorithm to succinct arithmetic circuits, including binary-encoded powers
+and unit inverses, without enumerating the matrix indices.
+The [sharp selector precision theorem](research/regular-analytic-selector-precision.md)
+also proves the exact denominator cost `2^(h+1)-h-2` for a residue-class
+parity selector in this circuit representation. It is a representation bound,
+and the complete factoring score remains **1/2**.
+[Explicit arithmetic-progression unions](research/pole-cauchy-domain-precision.md)
+also admit polynomial precision: for `c_A,c_B` component intervals the
+inverse loss is at most `(k-1)(2c_A+2c_B-3)`, with a sharper exact residue sweep.
+This extends the implicit joint-contraction algorithm beyond balanced domains.
 <!-- pole-implicit-checkpoint:end -->
 
 The [research index](research/INDEX.md) links proofs, exact evidence, and replay commands.

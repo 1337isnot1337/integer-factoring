@@ -1,0 +1,72 @@
+{
+  "schema": "cube-gaussian-tight-pressure-v1",
+  "physical_frequency": "5/24",
+  "scale_after_deflation": "23/53",
+  "certified_uniform_rho": "278/445",
+  "previous_uniform_rho": "5/8",
+  "three_common_smith_profiles": [
+    [
+      2,
+      4,
+      8,
+      10
+    ],
+    [
+      2,
+      4,
+      8,
+      10
+    ],
+    [
+      2,
+      4,
+      8,
+      10
+    ]
+  ],
+  "partition_numerator": 880139777023632556096,
+  "partition_denominator": 491258904256726154641,
+  "left_integer_powers": [
+    [
+      880139777023632556096,
+      10680
+    ],
+    [
+      5,
+      5560
+    ],
+    [
+      19,
+      21128
+    ]
+  ],
+  "right_integer_powers": [
+    [
+      53,
+      119260
+    ],
+    [
+      23,
+      8900
+    ],
+    [
+      24,
+      26688
+    ]
+  ],
+  "strict_integer_inequality_verified": true,
+  "left_bits": 845735,
+  "right_bits": 845735,
+  "left_sha256": "d3351bfcabddfd727ceaefe3f67a765482a0cad9a36d8083b7a5aa6d4f10d0a8",
+  "right_sha256": "ebc1fc4a001865615f496c455edcbcf43a5fa72d361db01efd5589672b7f64e0",
+  "numerical_rho_at_selected_parameters": 0.6247186111166699,
+  "numerical_certified_rho": 0.6247191011235955,
+  "cube_transfer_alpha": 0.42822492823737823,
+  "scope": "A sharper uniform local cube certificate, still below the existing one-half factoring exponent.",
+  "new_factoring_score": false,
+  "source_sha256": {
+    "check_cube_gaussian_tight_pressure.py": "cbb80b441abc291e97ee60e8dcb0a5d44845c151d3ac3fdd910acd4819937c41",
+    "cube_homogeneous_gaussian.py": "2281e1013bca1e6d595e039562be856533d7732e50ab1018b8eed55b5fb24593"
+  },
+  "elapsed_seconds": 0.07697162799740909
+}
