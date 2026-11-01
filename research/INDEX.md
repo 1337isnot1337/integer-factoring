@@ -1,5 +1,7 @@
 # Research index
 
+- [Fixed-type bundles for complete asymmetric pressure](asymmetric-profile-bundle-search.md): a raw-height adapter of the existing proximal method, 99 derivative and 168 held-out plane controls, and a registered three-tensor comparison. Root gradients are not used as convex planes; no bound improvement.
+
 - [Mixed occupation and height in six-to-five split graphs](mixed-graph-retractions.md): literal F4 compression with independent images on the matched pairs; 1,295 determinant identities, 1,875 direct contraction entries and 150 independent complete orders. A sparse screen and timed free-height walk are registered; no stronger bound is claimed.
 
 - [Fixed physical heights exclude both supporting axes at every scale](polynomial-crossing-axis-obstruction.md): all-field strict Laurent-polynomial endpoint majorization and a positive saturated variance floor imply a scale-uniform axis neighborhood for each fixed gauge. Interior angles and moving heights remain open; 496 independent orders and every recorded principal prefix are checked.

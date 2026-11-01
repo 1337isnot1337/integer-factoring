@@ -2905,3 +2905,7 @@ verify-f8-retraction-census-full:
 .PHONY: verify-mixed-graph-retractions
 verify-mixed-graph-retractions:
 	python3 tools/check_mixed_graph_retractions.py
+
+.PHONY: verify-asymmetric-profile-bundle
+verify-asymmetric-profile-bundle:
+	python3 tools/check_asymmetric_profile_bundle.py
