@@ -1,0 +1,2775 @@
+{
+  "status": "exact finite amplification checks; no improved factoring exponent",
+  "seed_source_commit": "e96ee50560284301428d72421330d8773155d25b",
+  "seed_dimension": 3,
+  "seed_piece_count": 20,
+  "seed_rank_pairs": [
+    [
+      1,
+      3
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      2,
+      2
+    ]
+  ],
+  "rank_sum_expression": "26+5*sqrt(3)+2*sqrt(2)",
+  "rank_sum_decimal": 37.488681162590574,
+  "small_seed_exclusions": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "smith_three_label_lower_bound": 0.733269522816455,
+  "unrestricted_type_rank_lower_coefficient": 0.7324867603589634,
+  "flags": {
+    "row": {
+      "basis": [
+        27,
+        36,
+        192,
+        10,
+        256,
+        3,
+        4,
+        64,
+        1
+      ],
+      "characters": [
+        65536,
+        131072,
+        524288,
+        65536,
+        4096,
+        65536,
+        131072,
+        524288,
+        65536
+      ],
+      "individual_w_indicators": [
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          true
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          true
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          false,
+          false
+        ]
+      ],
+      "algebra_dimension": 30,
+      "triangular_operators": [
+        [
+          304,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          8,
+          128,
+          0,
+          256,
+          0,
+          256,
+          0,
+          0,
+          0
+        ],
+        [
+          40,
+          0,
+          64,
+          0,
+          0,
+          256,
+          0,
+          0,
+          0
+        ],
+        [
+          256,
+          0,
+          0,
+          256,
+          256,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          296,
+          0,
+          0,
+          0,
+          0,
+          256,
+          0
+        ],
+        [
+          132,
+          0,
+          0,
+          128,
+          0,
+          128,
+          0,
+          0,
+          0
+        ],
+        [
+          64,
+          256,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          104,
+          0,
+          104,
+          0,
+          0,
+          256,
+          0,
+          256,
+          0
+        ],
+        [
+          128,
+          320,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          320,
+          384,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          16,
+          144,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          384,
+          0,
+          192,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          368,
+          368,
+          368,
+          0,
+          368,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          32,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          296,
+          0,
+          0,
+          0,
+          0,
+          256,
+          0,
+          0,
+          0
+        ],
+        [
+          224,
+          224,
+          224,
+          224,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          40,
+          0,
+          32,
+          0,
+          0,
+          256
+        ],
+        [
+          0,
+          2,
+          0,
+          64,
+          0,
+          0,
+          64,
+          0,
+          0
+        ],
+        [
+          160,
+          0,
+          0,
+          0,
+          160,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          132,
+          0,
+          4,
+          0,
+          0,
+          128,
+          0,
+          128,
+          0
+        ]
+      ]
+    },
+    "column": {
+      "basis": [
+        27,
+        192,
+        36,
+        10,
+        3,
+        256,
+        64,
+        4,
+        1
+      ],
+      "characters": [
+        32768,
+        524288,
+        131072,
+        32768,
+        32768,
+        4096,
+        524288,
+        131072,
+        32768
+      ],
+      "individual_w_indicators": [
+        [
+          false,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          false,
+          true
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          false,
+          true
+        ],
+        [
+          false,
+          false
+        ]
+      ],
+      "algebra_dimension": 31,
+      "triangular_operators": [
+        [
+          8,
+          0,
+          64,
+          256,
+          256,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          304,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          256,
+          0,
+          0,
+          256,
+          0,
+          256,
+          0,
+          0,
+          0
+        ],
+        [
+          24,
+          128,
+          0,
+          0,
+          256,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          280,
+          0,
+          0,
+          0,
+          0,
+          256,
+          0,
+          0
+        ],
+        [
+          66,
+          0,
+          0,
+          64,
+          64,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          0,
+          256,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          256,
+          24,
+          256,
+          256,
+          0,
+          256,
+          256,
+          0,
+          0
+        ],
+        [
+          192,
+          0,
+          128,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          320,
+          128,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          64,
+          64,
+          32,
+          0,
+          0,
+          64,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          352,
+          0,
+          0,
+          0,
+          128,
+          0,
+          0,
+          0
+        ],
+        [
+          12,
+          12,
+          480,
+          384,
+          384,
+          480,
+          384,
+          0,
+          0
+        ],
+        [
+          264,
+          0,
+          0,
+          256,
+          256,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          256,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          191,
+          328,
+          152,
+          152,
+          464,
+          256,
+          256,
+          256,
+          256
+        ],
+        [
+          272,
+          0,
+          0,
+          272,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          284,
+          0,
+          0,
+          0,
+          0,
+          384,
+          0
+        ],
+        [
+          328,
+          164,
+          0,
+          256,
+          256,
+          0,
+          128,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          64,
+          0,
+          0,
+          64,
+          0,
+          0
+        ]
+      ]
+    }
+  },
+  "two_copy_piece_count": 210,
+  "two_copy_maximum_rank_product": 64,
+  "two_copy_profile": [
+    {
+      "indices": [
+        0,
+        0
+      ],
+      "row_rank": 1,
+      "column_rank": 9,
+      "row_bound": 1,
+      "column_bound": 9
+    },
+    {
+      "indices": [
+        0,
+        1
+      ],
+      "row_rank": 5,
+      "column_rank": 5,
+      "row_bound": 6,
+      "column_bound": 6
+    },
+    {
+      "indices": [
+        1,
+        1
+      ],
+      "row_rank": 9,
+      "column_rank": 1,
+      "row_bound": 9,
+      "column_bound": 1
+    },
+    {
+      "indices": [
+        0,
+        2
+      ],
+      "row_rank": 5,
+      "column_rank": 5,
+      "row_bound": 6,
+      "column_bound": 6
+    },
+    {
+      "indices": [
+        1,
+        2
+      ],
+      "row_rank": 16,
+      "column_rank": 2,
+      "row_bound": 18,
+      "column_bound": 2
+    },
+    {
+      "indices": [
+        2,
+        2
+      ],
+      "row_rank": 9,
+      "column_rank": 1,
+      "row_bound": 9,
+      "column_bound": 1
+    },
+    {
+      "indices": [
+        0,
+        3
+      ],
+      "row_rank": 2,
+      "column_rank": 16,
+      "row_bound": 2,
+      "column_bound": 18
+    },
+    {
+      "indices": [
+        1,
+        3
+      ],
+      "row_rank": 5,
+      "column_rank": 5,
+      "row_bound": 6,
+      "column_bound": 6
+    },
+    {
+      "indices": [
+        2,
+        3
+      ],
+      "row_rank": 5,
+      "column_rank": 5,
+      "row_bound": 6,
+      "column_bound": 6
+    },
+    {
+      "indices": [
+        3,
+        3
+      ],
+      "row_rank": 1,
+      "column_rank": 9,
+      "row_bound": 1,
+      "column_bound": 9
+    },
+    {
+      "indices": [
+        0,
+        4
+      ],
+      "row_rank": 4,
+      "column_rank": 11,
+      "row_bound": 4,
+      "column_bound": 12
+    },
+    {
+      "indices": [
+        1,
+        4
+      ],
+      "row_rank": 11,
+      "column_rank": 4,
+      "row_bound": 12,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        2,
+        4
+      ],
+      "row_rank": 7,
+      "column_rank": 3,
+      "row_bound": 12,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        3,
+        4
+      ],
+      "row_rank": 3,
+      "column_rank": 7,
+      "row_bound": 4,
+      "column_bound": 12
+    },
+    {
+      "indices": [
+        4,
+        4
+      ],
+      "row_rank": 4,
+      "column_rank": 4,
+      "row_bound": 4,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        0,
+        5
+      ],
+      "row_rank": 3,
+      "column_rank": 7,
+      "row_bound": 4,
+      "column_bound": 12
+    },
+    {
+      "indices": [
+        1,
+        5
+      ],
+      "row_rank": 7,
+      "column_rank": 3,
+      "row_bound": 12,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        2,
+        5
+      ],
+      "row_rank": 11,
+      "column_rank": 4,
+      "row_bound": 12,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        3,
+        5
+      ],
+      "row_rank": 4,
+      "column_rank": 11,
+      "row_bound": 4,
+      "column_bound": 12
+    },
+    {
+      "indices": [
+        4,
+        5
+      ],
+      "row_rank": 8,
+      "column_rank": 8,
+      "row_bound": 8,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        5,
+        5
+      ],
+      "row_rank": 4,
+      "column_rank": 4,
+      "row_bound": 4,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        0,
+        6
+      ],
+      "row_rank": 3,
+      "column_rank": 7,
+      "row_bound": 4,
+      "column_bound": 12
+    },
+    {
+      "indices": [
+        1,
+        6
+      ],
+      "row_rank": 7,
+      "column_rank": 3,
+      "row_bound": 12,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        2,
+        6
+      ],
+      "row_rank": 7,
+      "column_rank": 3,
+      "row_bound": 12,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        3,
+        6
+      ],
+      "row_rank": 3,
+      "column_rank": 7,
+      "row_bound": 4,
+      "column_bound": 12
+    },
+    {
+      "indices": [
+        4,
+        6
+      ],
+      "row_rank": 7,
+      "column_rank": 7,
+      "row_bound": 8,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        5,
+        6
+      ],
+      "row_rank": 7,
+      "column_rank": 7,
+      "row_bound": 8,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        6,
+        6
+      ],
+      "row_rank": 4,
+      "column_rank": 4,
+      "row_bound": 4,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        0,
+        7
+      ],
+      "row_rank": 4,
+      "column_rank": 11,
+      "row_bound": 4,
+      "column_bound": 12
+    },
+    {
+      "indices": [
+        1,
+        7
+      ],
+      "row_rank": 11,
+      "column_rank": 4,
+      "row_bound": 12,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        2,
+        7
+      ],
+      "row_rank": 7,
+      "column_rank": 3,
+      "row_bound": 12,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        3,
+        7
+      ],
+      "row_rank": 3,
+      "column_rank": 7,
+      "row_bound": 4,
+      "column_bound": 12
+    },
+    {
+      "indices": [
+        4,
+        7
+      ],
+      "row_rank": 7,
+      "column_rank": 3,
+      "row_bound": 8,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        5,
+        7
+      ],
+      "row_rank": 8,
+      "column_rank": 8,
+      "row_bound": 8,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        6,
+        7
+      ],
+      "row_rank": 7,
+      "column_rank": 7,
+      "row_bound": 8,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        7,
+        7
+      ],
+      "row_rank": 4,
+      "column_rank": 4,
+      "row_bound": 4,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        0,
+        8
+      ],
+      "row_rank": 3,
+      "column_rank": 8,
+      "row_bound": 4,
+      "column_bound": 12
+    },
+    {
+      "indices": [
+        1,
+        8
+      ],
+      "row_rank": 8,
+      "column_rank": 3,
+      "row_bound": 12,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        2,
+        8
+      ],
+      "row_rank": 10,
+      "column_rank": 4,
+      "row_bound": 12,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        3,
+        8
+      ],
+      "row_rank": 4,
+      "column_rank": 10,
+      "row_bound": 4,
+      "column_bound": 12
+    },
+    {
+      "indices": [
+        4,
+        8
+      ],
+      "row_rank": 8,
+      "column_rank": 8,
+      "row_bound": 8,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        5,
+        8
+      ],
+      "row_rank": 6,
+      "column_rank": 6,
+      "row_bound": 8,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        6,
+        8
+      ],
+      "row_rank": 4,
+      "column_rank": 4,
+      "row_bound": 8,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        7,
+        8
+      ],
+      "row_rank": 8,
+      "column_rank": 8,
+      "row_bound": 8,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        8,
+        8
+      ],
+      "row_rank": 4,
+      "column_rank": 4,
+      "row_bound": 4,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        0,
+        9
+      ],
+      "row_rank": 4,
+      "column_rank": 10,
+      "row_bound": 4,
+      "column_bound": 12
+    },
+    {
+      "indices": [
+        1,
+        9
+      ],
+      "row_rank": 10,
+      "column_rank": 4,
+      "row_bound": 12,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        2,
+        9
+      ],
+      "row_rank": 10,
+      "column_rank": 4,
+      "row_bound": 12,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        3,
+        9
+      ],
+      "row_rank": 4,
+      "column_rank": 10,
+      "row_bound": 4,
+      "column_bound": 12
+    },
+    {
+      "indices": [
+        4,
+        9
+      ],
+      "row_rank": 7,
+      "column_rank": 7,
+      "row_bound": 8,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        5,
+        9
+      ],
+      "row_rank": 8,
+      "column_rank": 8,
+      "row_bound": 8,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        6,
+        9
+      ],
+      "row_rank": 6,
+      "column_rank": 6,
+      "row_bound": 8,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        7,
+        9
+      ],
+      "row_rank": 8,
+      "column_rank": 7,
+      "row_bound": 8,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        8,
+        9
+      ],
+      "row_rank": 6,
+      "column_rank": 6,
+      "row_bound": 8,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        9,
+        9
+      ],
+      "row_rank": 4,
+      "column_rank": 4,
+      "row_bound": 4,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        0,
+        10
+      ],
+      "row_rank": 4,
+      "column_rank": 10,
+      "row_bound": 4,
+      "column_bound": 12
+    },
+    {
+      "indices": [
+        1,
+        10
+      ],
+      "row_rank": 10,
+      "column_rank": 4,
+      "row_bound": 12,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        2,
+        10
+      ],
+      "row_rank": 11,
+      "column_rank": 4,
+      "row_bound": 12,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        3,
+        10
+      ],
+      "row_rank": 4,
+      "column_rank": 12,
+      "row_bound": 4,
+      "column_bound": 12
+    },
+    {
+      "indices": [
+        4,
+        10
+      ],
+      "row_rank": 8,
+      "column_rank": 8,
+      "row_bound": 8,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        5,
+        10
+      ],
+      "row_rank": 7,
+      "column_rank": 7,
+      "row_bound": 8,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        6,
+        10
+      ],
+      "row_rank": 7,
+      "column_rank": 7,
+      "row_bound": 8,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        7,
+        10
+      ],
+      "row_rank": 7,
+      "column_rank": 8,
+      "row_bound": 8,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        8,
+        10
+      ],
+      "row_rank": 6,
+      "column_rank": 6,
+      "row_bound": 8,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        9,
+        10
+      ],
+      "row_rank": 7,
+      "column_rank": 8,
+      "row_bound": 8,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        10,
+        10
+      ],
+      "row_rank": 4,
+      "column_rank": 4,
+      "row_bound": 4,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        0,
+        11
+      ],
+      "row_rank": 4,
+      "column_rank": 12,
+      "row_bound": 4,
+      "column_bound": 12
+    },
+    {
+      "indices": [
+        1,
+        11
+      ],
+      "row_rank": 11,
+      "column_rank": 4,
+      "row_bound": 12,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        2,
+        11
+      ],
+      "row_rank": 10,
+      "column_rank": 4,
+      "row_bound": 12,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        3,
+        11
+      ],
+      "row_rank": 4,
+      "column_rank": 10,
+      "row_bound": 4,
+      "column_bound": 12
+    },
+    {
+      "indices": [
+        4,
+        11
+      ],
+      "row_rank": 7,
+      "column_rank": 7,
+      "row_bound": 8,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        5,
+        11
+      ],
+      "row_rank": 8,
+      "column_rank": 8,
+      "row_bound": 8,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        6,
+        11
+      ],
+      "row_rank": 7,
+      "column_rank": 7,
+      "row_bound": 8,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        7,
+        11
+      ],
+      "row_rank": 8,
+      "column_rank": 7,
+      "row_bound": 8,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        8,
+        11
+      ],
+      "row_rank": 7,
+      "column_rank": 7,
+      "row_bound": 8,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        9,
+        11
+      ],
+      "row_rank": 4,
+      "column_rank": 6,
+      "row_bound": 8,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        10,
+        11
+      ],
+      "row_rank": 8,
+      "column_rank": 8,
+      "row_bound": 8,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        11,
+        11
+      ],
+      "row_rank": 4,
+      "column_rank": 4,
+      "row_bound": 4,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        0,
+        12
+      ],
+      "row_rank": 2,
+      "column_rank": 18,
+      "row_bound": 2,
+      "column_bound": 18
+    },
+    {
+      "indices": [
+        1,
+        12
+      ],
+      "row_rank": 6,
+      "column_rank": 6,
+      "row_bound": 6,
+      "column_bound": 6
+    },
+    {
+      "indices": [
+        2,
+        12
+      ],
+      "row_rank": 6,
+      "column_rank": 6,
+      "row_bound": 6,
+      "column_bound": 6
+    },
+    {
+      "indices": [
+        3,
+        12
+      ],
+      "row_rank": 2,
+      "column_rank": 16,
+      "row_bound": 2,
+      "column_bound": 18
+    },
+    {
+      "indices": [
+        4,
+        12
+      ],
+      "row_rank": 4,
+      "column_rank": 12,
+      "row_bound": 4,
+      "column_bound": 12
+    },
+    {
+      "indices": [
+        5,
+        12
+      ],
+      "row_rank": 4,
+      "column_rank": 12,
+      "row_bound": 4,
+      "column_bound": 12
+    },
+    {
+      "indices": [
+        6,
+        12
+      ],
+      "row_rank": 4,
+      "column_rank": 11,
+      "row_bound": 4,
+      "column_bound": 12
+    },
+    {
+      "indices": [
+        7,
+        12
+      ],
+      "row_rank": 4,
+      "column_rank": 12,
+      "row_bound": 4,
+      "column_bound": 12
+    },
+    {
+      "indices": [
+        8,
+        12
+      ],
+      "row_rank": 4,
+      "column_rank": 12,
+      "row_bound": 4,
+      "column_bound": 12
+    },
+    {
+      "indices": [
+        9,
+        12
+      ],
+      "row_rank": 4,
+      "column_rank": 12,
+      "row_bound": 4,
+      "column_bound": 12
+    },
+    {
+      "indices": [
+        10,
+        12
+      ],
+      "row_rank": 4,
+      "column_rank": 10,
+      "row_bound": 4,
+      "column_bound": 12
+    },
+    {
+      "indices": [
+        11,
+        12
+      ],
+      "row_rank": 4,
+      "column_rank": 11,
+      "row_bound": 4,
+      "column_bound": 12
+    },
+    {
+      "indices": [
+        12,
+        12
+      ],
+      "row_rank": 1,
+      "column_rank": 9,
+      "row_bound": 1,
+      "column_bound": 9
+    },
+    {
+      "indices": [
+        0,
+        13
+      ],
+      "row_rank": 1,
+      "column_rank": 6,
+      "row_bound": 2,
+      "column_bound": 12
+    },
+    {
+      "indices": [
+        1,
+        13
+      ],
+      "row_rank": 5,
+      "column_rank": 3,
+      "row_bound": 6,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        2,
+        13
+      ],
+      "row_rank": 5,
+      "column_rank": 3,
+      "row_bound": 6,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        3,
+        13
+      ],
+      "row_rank": 2,
+      "column_rank": 10,
+      "row_bound": 2,
+      "column_bound": 12
+    },
+    {
+      "indices": [
+        4,
+        13
+      ],
+      "row_rank": 4,
+      "column_rank": 7,
+      "row_bound": 4,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        5,
+        13
+      ],
+      "row_rank": 3,
+      "column_rank": 4,
+      "row_bound": 4,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        6,
+        13
+      ],
+      "row_rank": 3,
+      "column_rank": 6,
+      "row_bound": 4,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        7,
+        13
+      ],
+      "row_rank": 4,
+      "column_rank": 7,
+      "row_bound": 4,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        8,
+        13
+      ],
+      "row_rank": 3,
+      "column_rank": 7,
+      "row_bound": 4,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        9,
+        13
+      ],
+      "row_rank": 4,
+      "column_rank": 8,
+      "row_bound": 4,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        10,
+        13
+      ],
+      "row_rank": 4,
+      "column_rank": 8,
+      "row_bound": 4,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        11,
+        13
+      ],
+      "row_rank": 4,
+      "column_rank": 8,
+      "row_bound": 4,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        12,
+        13
+      ],
+      "row_rank": 2,
+      "column_rank": 12,
+      "row_bound": 2,
+      "column_bound": 12
+    },
+    {
+      "indices": [
+        13,
+        13
+      ],
+      "row_rank": 1,
+      "column_rank": 4,
+      "row_bound": 1,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        0,
+        14
+      ],
+      "row_rank": 3,
+      "column_rank": 5,
+      "row_bound": 4,
+      "column_bound": 6
+    },
+    {
+      "indices": [
+        1,
+        14
+      ],
+      "row_rank": 10,
+      "column_rank": 2,
+      "row_bound": 12,
+      "column_bound": 2
+    },
+    {
+      "indices": [
+        2,
+        14
+      ],
+      "row_rank": 6,
+      "column_rank": 1,
+      "row_bound": 12,
+      "column_bound": 2
+    },
+    {
+      "indices": [
+        3,
+        14
+      ],
+      "row_rank": 3,
+      "column_rank": 5,
+      "row_bound": 4,
+      "column_bound": 6
+    },
+    {
+      "indices": [
+        4,
+        14
+      ],
+      "row_rank": 4,
+      "column_rank": 3,
+      "row_bound": 8,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        5,
+        14
+      ],
+      "row_rank": 7,
+      "column_rank": 4,
+      "row_bound": 8,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        6,
+        14
+      ],
+      "row_rank": 6,
+      "column_rank": 3,
+      "row_bound": 8,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        7,
+        14
+      ],
+      "row_rank": 7,
+      "column_rank": 3,
+      "row_bound": 8,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        8,
+        14
+      ],
+      "row_rank": 7,
+      "column_rank": 4,
+      "row_bound": 8,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        9,
+        14
+      ],
+      "row_rank": 8,
+      "column_rank": 4,
+      "row_bound": 8,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        10,
+        14
+      ],
+      "row_rank": 8,
+      "column_rank": 4,
+      "row_bound": 8,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        11,
+        14
+      ],
+      "row_rank": 8,
+      "column_rank": 4,
+      "row_bound": 8,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        12,
+        14
+      ],
+      "row_rank": 4,
+      "column_rank": 6,
+      "row_bound": 4,
+      "column_bound": 6
+    },
+    {
+      "indices": [
+        13,
+        14
+      ],
+      "row_rank": 3,
+      "column_rank": 3,
+      "row_bound": 4,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        14,
+        14
+      ],
+      "row_rank": 4,
+      "column_rank": 1,
+      "row_bound": 4,
+      "column_bound": 1
+    },
+    {
+      "indices": [
+        0,
+        15
+      ],
+      "row_rank": 2,
+      "column_rank": 16,
+      "row_bound": 2,
+      "column_bound": 24
+    },
+    {
+      "indices": [
+        1,
+        15
+      ],
+      "row_rank": 6,
+      "column_rank": 7,
+      "row_bound": 6,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        2,
+        15
+      ],
+      "row_rank": 6,
+      "column_rank": 7,
+      "row_bound": 6,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        3,
+        15
+      ],
+      "row_rank": 2,
+      "column_rank": 16,
+      "row_bound": 2,
+      "column_bound": 24
+    },
+    {
+      "indices": [
+        4,
+        15
+      ],
+      "row_rank": 4,
+      "column_rank": 15,
+      "row_bound": 4,
+      "column_bound": 16
+    },
+    {
+      "indices": [
+        5,
+        15
+      ],
+      "row_rank": 4,
+      "column_rank": 15,
+      "row_bound": 4,
+      "column_bound": 16
+    },
+    {
+      "indices": [
+        6,
+        15
+      ],
+      "row_rank": 4,
+      "column_rank": 14,
+      "row_bound": 4,
+      "column_bound": 16
+    },
+    {
+      "indices": [
+        7,
+        15
+      ],
+      "row_rank": 4,
+      "column_rank": 15,
+      "row_bound": 4,
+      "column_bound": 16
+    },
+    {
+      "indices": [
+        8,
+        15
+      ],
+      "row_rank": 4,
+      "column_rank": 15,
+      "row_bound": 4,
+      "column_bound": 16
+    },
+    {
+      "indices": [
+        9,
+        15
+      ],
+      "row_rank": 4,
+      "column_rank": 16,
+      "row_bound": 4,
+      "column_bound": 16
+    },
+    {
+      "indices": [
+        10,
+        15
+      ],
+      "row_rank": 4,
+      "column_rank": 16,
+      "row_bound": 4,
+      "column_bound": 16
+    },
+    {
+      "indices": [
+        11,
+        15
+      ],
+      "row_rank": 4,
+      "column_rank": 16,
+      "row_bound": 4,
+      "column_bound": 16
+    },
+    {
+      "indices": [
+        12,
+        15
+      ],
+      "row_rank": 2,
+      "column_rank": 24,
+      "row_bound": 2,
+      "column_bound": 24
+    },
+    {
+      "indices": [
+        13,
+        15
+      ],
+      "row_rank": 2,
+      "column_rank": 14,
+      "row_bound": 2,
+      "column_bound": 16
+    },
+    {
+      "indices": [
+        14,
+        15
+      ],
+      "row_rank": 4,
+      "column_rank": 7,
+      "row_bound": 4,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        15,
+        15
+      ],
+      "row_rank": 1,
+      "column_rank": 16,
+      "row_bound": 1,
+      "column_bound": 16
+    },
+    {
+      "indices": [
+        0,
+        16
+      ],
+      "row_rank": 7,
+      "column_rank": 6,
+      "row_bound": 8,
+      "column_bound": 6
+    },
+    {
+      "indices": [
+        1,
+        16
+      ],
+      "row_rank": 16,
+      "column_rank": 2,
+      "row_bound": 24,
+      "column_bound": 2
+    },
+    {
+      "indices": [
+        2,
+        16
+      ],
+      "row_rank": 16,
+      "column_rank": 2,
+      "row_bound": 24,
+      "column_bound": 2
+    },
+    {
+      "indices": [
+        3,
+        16
+      ],
+      "row_rank": 7,
+      "column_rank": 6,
+      "row_bound": 8,
+      "column_bound": 6
+    },
+    {
+      "indices": [
+        4,
+        16
+      ],
+      "row_rank": 12,
+      "column_rank": 4,
+      "row_bound": 16,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        5,
+        16
+      ],
+      "row_rank": 12,
+      "column_rank": 4,
+      "row_bound": 16,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        6,
+        16
+      ],
+      "row_rank": 14,
+      "column_rank": 4,
+      "row_bound": 16,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        7,
+        16
+      ],
+      "row_rank": 15,
+      "column_rank": 4,
+      "row_bound": 16,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        8,
+        16
+      ],
+      "row_rank": 15,
+      "column_rank": 4,
+      "row_bound": 16,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        9,
+        16
+      ],
+      "row_rank": 16,
+      "column_rank": 4,
+      "row_bound": 16,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        10,
+        16
+      ],
+      "row_rank": 16,
+      "column_rank": 4,
+      "row_bound": 16,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        11,
+        16
+      ],
+      "row_rank": 16,
+      "column_rank": 4,
+      "row_bound": 16,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        12,
+        16
+      ],
+      "row_rank": 8,
+      "column_rank": 6,
+      "row_bound": 8,
+      "column_bound": 6
+    },
+    {
+      "indices": [
+        13,
+        16
+      ],
+      "row_rank": 6,
+      "column_rank": 4,
+      "row_bound": 8,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        14,
+        16
+      ],
+      "row_rank": 8,
+      "column_rank": 2,
+      "row_bound": 16,
+      "column_bound": 2
+    },
+    {
+      "indices": [
+        15,
+        16
+      ],
+      "row_rank": 8,
+      "column_rank": 8,
+      "row_bound": 8,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        16,
+        16
+      ],
+      "row_rank": 16,
+      "column_rank": 1,
+      "row_bound": 16,
+      "column_bound": 1
+    },
+    {
+      "indices": [
+        0,
+        17
+      ],
+      "row_rank": 4,
+      "column_rank": 11,
+      "row_bound": 4,
+      "column_bound": 12
+    },
+    {
+      "indices": [
+        1,
+        17
+      ],
+      "row_rank": 11,
+      "column_rank": 4,
+      "row_bound": 12,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        2,
+        17
+      ],
+      "row_rank": 11,
+      "column_rank": 4,
+      "row_bound": 12,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        3,
+        17
+      ],
+      "row_rank": 4,
+      "column_rank": 11,
+      "row_bound": 4,
+      "column_bound": 12
+    },
+    {
+      "indices": [
+        4,
+        17
+      ],
+      "row_rank": 8,
+      "column_rank": 8,
+      "row_bound": 8,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        5,
+        17
+      ],
+      "row_rank": 8,
+      "column_rank": 8,
+      "row_bound": 8,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        6,
+        17
+      ],
+      "row_rank": 6,
+      "column_rank": 6,
+      "row_bound": 8,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        7,
+        17
+      ],
+      "row_rank": 8,
+      "column_rank": 8,
+      "row_bound": 8,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        8,
+        17
+      ],
+      "row_rank": 7,
+      "column_rank": 7,
+      "row_bound": 8,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        9,
+        17
+      ],
+      "row_rank": 7,
+      "column_rank": 8,
+      "row_bound": 8,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        10,
+        17
+      ],
+      "row_rank": 8,
+      "column_rank": 7,
+      "row_bound": 8,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        11,
+        17
+      ],
+      "row_rank": 8,
+      "column_rank": 8,
+      "row_bound": 8,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        12,
+        17
+      ],
+      "row_rank": 4,
+      "column_rank": 11,
+      "row_bound": 4,
+      "column_bound": 12
+    },
+    {
+      "indices": [
+        13,
+        17
+      ],
+      "row_rank": 4,
+      "column_rank": 8,
+      "row_bound": 4,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        14,
+        17
+      ],
+      "row_rank": 8,
+      "column_rank": 4,
+      "row_bound": 8,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        15,
+        17
+      ],
+      "row_rank": 4,
+      "column_rank": 16,
+      "row_bound": 4,
+      "column_bound": 16
+    },
+    {
+      "indices": [
+        16,
+        17
+      ],
+      "row_rank": 16,
+      "column_rank": 4,
+      "row_bound": 16,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        17,
+        17
+      ],
+      "row_rank": 4,
+      "column_rank": 4,
+      "row_bound": 4,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        0,
+        18
+      ],
+      "row_rank": 2,
+      "column_rank": 18,
+      "row_bound": 2,
+      "column_bound": 24
+    },
+    {
+      "indices": [
+        1,
+        18
+      ],
+      "row_rank": 6,
+      "column_rank": 7,
+      "row_bound": 6,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        2,
+        18
+      ],
+      "row_rank": 6,
+      "column_rank": 7,
+      "row_bound": 6,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        3,
+        18
+      ],
+      "row_rank": 2,
+      "column_rank": 16,
+      "row_bound": 2,
+      "column_bound": 24
+    },
+    {
+      "indices": [
+        4,
+        18
+      ],
+      "row_rank": 4,
+      "column_rank": 11,
+      "row_bound": 4,
+      "column_bound": 16
+    },
+    {
+      "indices": [
+        5,
+        18
+      ],
+      "row_rank": 4,
+      "column_rank": 12,
+      "row_bound": 4,
+      "column_bound": 16
+    },
+    {
+      "indices": [
+        6,
+        18
+      ],
+      "row_rank": 4,
+      "column_rank": 11,
+      "row_bound": 4,
+      "column_bound": 16
+    },
+    {
+      "indices": [
+        7,
+        18
+      ],
+      "row_rank": 4,
+      "column_rank": 14,
+      "row_bound": 4,
+      "column_bound": 16
+    },
+    {
+      "indices": [
+        8,
+        18
+      ],
+      "row_rank": 4,
+      "column_rank": 14,
+      "row_bound": 4,
+      "column_bound": 16
+    },
+    {
+      "indices": [
+        9,
+        18
+      ],
+      "row_rank": 4,
+      "column_rank": 14,
+      "row_bound": 4,
+      "column_bound": 16
+    },
+    {
+      "indices": [
+        10,
+        18
+      ],
+      "row_rank": 4,
+      "column_rank": 16,
+      "row_bound": 4,
+      "column_bound": 16
+    },
+    {
+      "indices": [
+        11,
+        18
+      ],
+      "row_rank": 4,
+      "column_rank": 14,
+      "row_bound": 4,
+      "column_bound": 16
+    },
+    {
+      "indices": [
+        12,
+        18
+      ],
+      "row_rank": 2,
+      "column_rank": 16,
+      "row_bound": 2,
+      "column_bound": 24
+    },
+    {
+      "indices": [
+        13,
+        18
+      ],
+      "row_rank": 2,
+      "column_rank": 11,
+      "row_bound": 2,
+      "column_bound": 16
+    },
+    {
+      "indices": [
+        14,
+        18
+      ],
+      "row_rank": 4,
+      "column_rank": 7,
+      "row_bound": 4,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        15,
+        18
+      ],
+      "row_rank": 2,
+      "column_rank": 27,
+      "row_bound": 2,
+      "column_bound": 32
+    },
+    {
+      "indices": [
+        16,
+        18
+      ],
+      "row_rank": 8,
+      "column_rank": 8,
+      "row_bound": 8,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        17,
+        18
+      ],
+      "row_rank": 4,
+      "column_rank": 15,
+      "row_bound": 4,
+      "column_bound": 16
+    },
+    {
+      "indices": [
+        18,
+        18
+      ],
+      "row_rank": 1,
+      "column_rank": 16,
+      "row_bound": 1,
+      "column_bound": 16
+    },
+    {
+      "indices": [
+        0,
+        19
+      ],
+      "row_rank": 4,
+      "column_rank": 11,
+      "row_bound": 4,
+      "column_bound": 12
+    },
+    {
+      "indices": [
+        1,
+        19
+      ],
+      "row_rank": 11,
+      "column_rank": 4,
+      "row_bound": 12,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        2,
+        19
+      ],
+      "row_rank": 11,
+      "column_rank": 4,
+      "row_bound": 12,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        3,
+        19
+      ],
+      "row_rank": 4,
+      "column_rank": 11,
+      "row_bound": 4,
+      "column_bound": 12
+    },
+    {
+      "indices": [
+        4,
+        19
+      ],
+      "row_rank": 8,
+      "column_rank": 7,
+      "row_bound": 8,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        5,
+        19
+      ],
+      "row_rank": 4,
+      "column_rank": 4,
+      "row_bound": 8,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        6,
+        19
+      ],
+      "row_rank": 8,
+      "column_rank": 8,
+      "row_bound": 8,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        7,
+        19
+      ],
+      "row_rank": 7,
+      "column_rank": 7,
+      "row_bound": 8,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        8,
+        19
+      ],
+      "row_rank": 7,
+      "column_rank": 7,
+      "row_bound": 8,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        9,
+        19
+      ],
+      "row_rank": 8,
+      "column_rank": 7,
+      "row_bound": 8,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        10,
+        19
+      ],
+      "row_rank": 6,
+      "column_rank": 7,
+      "row_bound": 8,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        11,
+        19
+      ],
+      "row_rank": 8,
+      "column_rank": 7,
+      "row_bound": 8,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        12,
+        19
+      ],
+      "row_rank": 4,
+      "column_rank": 12,
+      "row_bound": 4,
+      "column_bound": 12
+    },
+    {
+      "indices": [
+        13,
+        19
+      ],
+      "row_rank": 4,
+      "column_rank": 8,
+      "row_bound": 4,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        14,
+        19
+      ],
+      "row_rank": 8,
+      "column_rank": 4,
+      "row_bound": 8,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        15,
+        19
+      ],
+      "row_rank": 4,
+      "column_rank": 16,
+      "row_bound": 4,
+      "column_bound": 16
+    },
+    {
+      "indices": [
+        16,
+        19
+      ],
+      "row_rank": 16,
+      "column_rank": 4,
+      "row_bound": 16,
+      "column_bound": 4
+    },
+    {
+      "indices": [
+        17,
+        19
+      ],
+      "row_rank": 8,
+      "column_rank": 8,
+      "row_bound": 8,
+      "column_bound": 8
+    },
+    {
+      "indices": [
+        18,
+        19
+      ],
+      "row_rank": 4,
+      "column_rank": 15,
+      "row_bound": 4,
+      "column_bound": 16
+    },
+    {
+      "indices": [
+        19,
+        19
+      ],
+      "row_rank": 4,
+      "column_rank": 4,
+      "row_bound": 4,
+      "column_bound": 4
+    }
+  ],
+  "negative_control": "omitting one nonzero tensor-square changes crossing"
+}

@@ -1,0 +1,218 @@
+{
+  "annihilator_supplied": false,
+  "class_number_supplied": false,
+  "collision": {
+    "ambiguous_difference": [
+      1000000007,
+      0,
+      1000000009
+    ],
+    "factor_data": {
+      "coprime_factors": [
+        1000000007,
+        1000000009
+      ],
+      "form": [
+        1000000007,
+        0,
+        1000000009
+      ],
+      "proper_factor": 1000000007,
+      "shape": "zero_middle"
+    },
+    "factorization": [
+      1000000007,
+      1000000009
+    ],
+    "key": [
+      983839723,
+      -568950666,
+      1098681224
+    ],
+    "kind": "two_generated_roots",
+    "left": {
+      "depth": 5,
+      "orientation": -1,
+      "root": [
+        269155607,
+        69878044,
+        3719858421
+      ],
+      "word": [
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        2,
+        0,
+        -1
+      ]
+    },
+    "right": {
+      "depth": 13,
+      "orientation": -1,
+      "root": [
+        787760541,
+        555711190,
+        1367425368
+      ],
+      "word": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        -3,
+        -1,
+        0,
+        0,
+        2,
+        0
+      ]
+    }
+  },
+  "complete_generation_claimed": false,
+  "count_scope": "Move, squaring, and collision-comparison loops; setup and certificate replay are separate",
+  "depth_bound": 40,
+  "factor_base_primes": [
+    3,
+    7,
+    13,
+    19,
+    31,
+    47,
+    59,
+    61,
+    67,
+    79,
+    89,
+    101
+  ],
+  "factorization": [
+    1000000007,
+    1000000009
+  ],
+  "input_bits": 60,
+  "input_factors_supplied": false,
+  "odd_n": 1000000016000000063,
+  "roots": {
+    "3": 2,
+    "7": 2,
+    "13": 4,
+    "19": 6,
+    "31": 26,
+    "47": 38,
+    "59": 34,
+    "61": 18,
+    "67": 56,
+    "79": 16,
+    "89": 60,
+    "101": 18
+  },
+  "selection": "stratified",
+  "statistics": {
+    "comparison_compositions": 126455,
+    "layers": [
+      {
+        "depth": 1,
+        "distinct_new_keys": 12,
+        "input_frontier": 1,
+        "pruned_new_keys": 0,
+        "retained_frontier": 12
+      },
+      {
+        "depth": 2,
+        "distinct_new_keys": 144,
+        "input_frontier": 12,
+        "pruned_new_keys": 0,
+        "retained_frontier": 144
+      },
+      {
+        "depth": 3,
+        "distinct_new_keys": 1156,
+        "input_frontier": 144,
+        "pruned_new_keys": 0,
+        "retained_frontier": 1156
+      },
+      {
+        "depth": 4,
+        "distinct_new_keys": 7008,
+        "input_frontier": 1156,
+        "pruned_new_keys": 4960,
+        "retained_frontier": 2048
+      },
+      {
+        "depth": 5,
+        "distinct_new_keys": 25232,
+        "input_frontier": 2048,
+        "pruned_new_keys": 23184,
+        "retained_frontier": 2048
+      },
+      {
+        "depth": 6,
+        "distinct_new_keys": 34787,
+        "input_frontier": 2048,
+        "pruned_new_keys": 32739,
+        "retained_frontier": 2048
+      },
+      {
+        "depth": 7,
+        "distinct_new_keys": 37121,
+        "input_frontier": 2048,
+        "pruned_new_keys": 35073,
+        "retained_frontier": 2048
+      },
+      {
+        "depth": 8,
+        "distinct_new_keys": 38194,
+        "input_frontier": 2048,
+        "pruned_new_keys": 36146,
+        "retained_frontier": 2048
+      },
+      {
+        "depth": 9,
+        "distinct_new_keys": 37954,
+        "input_frontier": 2048,
+        "pruned_new_keys": 35906,
+        "retained_frontier": 2048
+      },
+      {
+        "depth": 10,
+        "distinct_new_keys": 39125,
+        "input_frontier": 2048,
+        "pruned_new_keys": 37077,
+        "retained_frontier": 2048
+      },
+      {
+        "depth": 11,
+        "distinct_new_keys": 39036,
+        "input_frontier": 2048,
+        "pruned_new_keys": 36988,
+        "retained_frontier": 2048
+      },
+      {
+        "depth": 12,
+        "distinct_new_keys": 39499,
+        "input_frontier": 2048,
+        "pruned_new_keys": 37451,
+        "retained_frontier": 2048
+      }
+    ],
+    "maximum_frontier": 2048,
+    "move_compositions": 436308,
+    "pruned_key_occurrences": 279524,
+    "retained_keys": 19745,
+    "squaring_compositions": 436308,
+    "stopped_depth": 13,
+    "unhelpful_collisions": 126454
+  },
+  "status": "factored",
+  "uniform_success_guarantee_claimed": false,
+  "width": 2048
+}

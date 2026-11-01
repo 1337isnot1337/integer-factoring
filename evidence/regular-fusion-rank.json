@@ -1,0 +1,107 @@
+{
+  "asymptotic_statement": "full regular homogeneous central ranks have rho=1/sqrt(2)",
+  "fusion_profiles": [
+    {
+      "central_column_rank": 1,
+      "central_gram_entries": 1,
+      "central_row_rank": 1,
+      "fusion_rank": 1,
+      "independent_source_recursion_entries": 2,
+      "labels": 1,
+      "output_dimension": 2,
+      "splittable_outputs": 0,
+      "top_length_entries": 0,
+      "weight": 4
+    },
+    {
+      "central_column_rank": 2,
+      "central_gram_entries": 16,
+      "central_row_rank": 2,
+      "fusion_rank": 3,
+      "independent_source_recursion_entries": 20,
+      "labels": 2,
+      "output_dimension": 5,
+      "splittable_outputs": 1,
+      "top_length_entries": 4,
+      "weight": 8
+    },
+    {
+      "central_column_rank": 12,
+      "central_gram_entries": 625,
+      "central_row_rank": 12,
+      "fusion_rank": 16,
+      "independent_source_recursion_entries": 575,
+      "labels": 5,
+      "output_dimension": 23,
+      "splittable_outputs": 6,
+      "top_length_entries": 240,
+      "weight": 16
+    },
+    {
+      "central_column_rank": 261,
+      "central_gram_entries": 279841,
+      "central_row_rank": 261,
+      "fusion_rank": 268,
+      "independent_source_recursion_entries": 559,
+      "labels": 23,
+      "output_dimension": 276,
+      "splittable_outputs": 89,
+      "top_length_entries": 38705,
+      "weight": 32
+    }
+  ],
+  "initial_pair_intervals": 78,
+  "limitations": [
+    "full regular label domain",
+    "no arbitrary-prefix claim",
+    "no improved factoring exponent"
+  ],
+  "parameter_ideal_entries": 2592,
+  "partition_profiles": [
+    {
+      "labels": 1,
+      "output_dimension": 2,
+      "splittable_outputs": 0,
+      "weight": 4
+    },
+    {
+      "labels": 2,
+      "output_dimension": 5,
+      "splittable_outputs": 1,
+      "weight": 8
+    },
+    {
+      "labels": 5,
+      "output_dimension": 23,
+      "splittable_outputs": 6,
+      "weight": 16
+    },
+    {
+      "labels": 11,
+      "output_dimension": 87,
+      "splittable_outputs": 25,
+      "weight": 24
+    },
+    {
+      "labels": 23,
+      "output_dimension": 276,
+      "splittable_outputs": 89,
+      "weight": 32
+    },
+    {
+      "labels": 87,
+      "output_dimension": 2048,
+      "splittable_outputs": 764,
+      "weight": 48
+    },
+    {
+      "labels": 276,
+      "output_dimension": 11564,
+      "splittable_outputs": 5387,
+      "weight": 64
+    }
+  ],
+  "scope": "exact local identities supporting an ordinary asymptotic proof",
+  "source_revision": "16a5ce41304fcdaea4e0be7c132e1c361dc26da5",
+  "successive_interval_extensions": 2253
+}

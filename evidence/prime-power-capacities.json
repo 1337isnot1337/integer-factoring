@@ -1,0 +1,311 @@
+{
+  "claim": "Finite checks of the exact prime-power block-capacity construction; no rank inference.",
+  "status": "passed",
+  "partition_cross_checks": 129,
+  "decomposition_cases": 1024,
+  "label_codec_cases": 135656,
+  "piece_index_codec_cases": 1263552,
+  "negative_controls": [
+    {
+      "prime": 2,
+      "control": "removed_block_rejected"
+    },
+    {
+      "prime": 3,
+      "control": "removed_block_rejected"
+    },
+    {
+      "prime": 5,
+      "control": "removed_block_rejected"
+    },
+    {
+      "prime": 5,
+      "control": "missing_one_bit_block_rejected"
+    },
+    {
+      "prime": 7,
+      "control": "removed_block_rejected"
+    },
+    {
+      "prime": 7,
+      "control": "missing_one_bit_block_rejected"
+    }
+  ],
+  "maximum_partition_energy_computed": 16807,
+  "prime_records": [
+    {
+      "prime": 2,
+      "max_label_length": 256,
+      "max_blocks_used": 5,
+      "max_sum_of_local_index_widths": 44,
+      "max_mixed_radix_index_width": 40,
+      "catalog": [
+        {
+          "energy": 2,
+          "dimension": "2",
+          "capacity": 1,
+          "restricted_to_one_bit": false,
+          "piece_count": 9
+        },
+        {
+          "energy": 4,
+          "dimension": "5",
+          "capacity": 2,
+          "restricted_to_one_bit": false,
+          "piece_count": 17
+        },
+        {
+          "energy": 8,
+          "dimension": "22",
+          "capacity": 4,
+          "restricted_to_one_bit": false,
+          "piece_count": 33
+        },
+        {
+          "energy": 16,
+          "dimension": "231",
+          "capacity": 7,
+          "restricted_to_one_bit": false,
+          "piece_count": 65
+        },
+        {
+          "energy": 32,
+          "dimension": "8349",
+          "capacity": 13,
+          "restricted_to_one_bit": false,
+          "piece_count": 129
+        },
+        {
+          "energy": 64,
+          "dimension": "1741630",
+          "capacity": 20,
+          "restricted_to_one_bit": false,
+          "piece_count": 257
+        },
+        {
+          "energy": 128,
+          "dimension": "4351078600",
+          "capacity": 32,
+          "restricted_to_one_bit": false,
+          "piece_count": 513
+        },
+        {
+          "energy": 256,
+          "dimension": "365749566870782",
+          "capacity": 48,
+          "restricted_to_one_bit": false,
+          "piece_count": 1025
+        },
+        {
+          "energy": 512,
+          "dimension": "4453575699570940947378",
+          "capacity": 71,
+          "restricted_to_one_bit": false,
+          "piece_count": 2049
+        },
+        {
+          "energy": 1024,
+          "dimension": "61847822068260244309086870983975",
+          "capacity": 105,
+          "restricted_to_one_bit": false,
+          "piece_count": 4097
+        },
+        {
+          "energy": 2048,
+          "dimension": "18116048323611252751541173214616030020513022685",
+          "capacity": 153,
+          "restricted_to_one_bit": false,
+          "piece_count": 8193
+        },
+        {
+          "energy": 4096,
+          "dimension": "6927233917602120527467409170319882882996950147283323368445315320451",
+          "capacity": 222,
+          "restricted_to_one_bit": false,
+          "piece_count": 16385
+        },
+        {
+          "energy": 8192,
+          "dimension": "1181439874128599109971249397860343958559859263335823651875555915473905892636341722762111648746675",
+          "capacity": 319,
+          "restricted_to_one_bit": false,
+          "piece_count": 32769
+        }
+      ]
+    },
+    {
+      "prime": 3,
+      "max_label_length": 256,
+      "max_blocks_used": 7,
+      "max_sum_of_local_index_widths": 53,
+      "max_mixed_radix_index_width": 50,
+      "catalog": [
+        {
+          "energy": 3,
+          "dimension": "3",
+          "capacity": 1,
+          "restricted_to_one_bit": false,
+          "piece_count": 13
+        },
+        {
+          "energy": 9,
+          "dimension": "30",
+          "capacity": 4,
+          "restricted_to_one_bit": false,
+          "piece_count": 37
+        },
+        {
+          "energy": 27,
+          "dimension": "3010",
+          "capacity": 11,
+          "restricted_to_one_bit": false,
+          "piece_count": 109
+        },
+        {
+          "energy": 81,
+          "dimension": "18004327",
+          "capacity": 24,
+          "restricted_to_one_bit": false,
+          "piece_count": 325
+        },
+        {
+          "energy": 243,
+          "dimension": "133978259344888",
+          "capacity": 46,
+          "restricted_to_one_bit": false,
+          "piece_count": 973
+        },
+        {
+          "energy": 729,
+          "dimension": "233202632378520643600875145",
+          "capacity": 87,
+          "restricted_to_one_bit": false,
+          "piece_count": 2917
+        },
+        {
+          "energy": 2187,
+          "dimension": "817400077628568283525440629036885986580578161120",
+          "capacity": 159,
+          "restricted_to_one_bit": false,
+          "piece_count": 8749
+        },
+        {
+          "energy": 6561,
+          "dimension": "37560309092871894517794668078727801667246369744545646936224413217138060330481863103169",
+          "capacity": 284,
+          "restricted_to_one_bit": false,
+          "piece_count": 26245
+        }
+      ]
+    },
+    {
+      "prime": 5,
+      "max_label_length": 256,
+      "max_blocks_used": 9,
+      "max_sum_of_local_index_widths": 63,
+      "max_mixed_radix_index_width": 58,
+      "catalog": [
+        {
+          "energy": 5,
+          "dimension": "7",
+          "capacity": 1,
+          "restricted_to_one_bit": true,
+          "piece_count": 21
+        },
+        {
+          "energy": 5,
+          "dimension": "7",
+          "capacity": 2,
+          "restricted_to_one_bit": false,
+          "piece_count": 21
+        },
+        {
+          "energy": 25,
+          "dimension": "1958",
+          "capacity": 10,
+          "restricted_to_one_bit": false,
+          "piece_count": 101
+        },
+        {
+          "energy": 125,
+          "dimension": "3163127352",
+          "capacity": 31,
+          "restricted_to_one_bit": false,
+          "piece_count": 501
+        },
+        {
+          "energy": 625,
+          "dimension": "1606903190858354689128371",
+          "capacity": 80,
+          "restricted_to_one_bit": false,
+          "piece_count": 2501
+        },
+        {
+          "energy": 3125,
+          "dimension": "8630901377559029573671524821295260243701883575513498104067",
+          "capacity": 192,
+          "restricted_to_one_bit": false,
+          "piece_count": 12501
+        },
+        {
+          "energy": 15625,
+          "dimension": "164095531936793103896179659766319896553581218073563628547964907833282757502301057010758574074237387765881192093262816530102510605068368",
+          "capacity": 445,
+          "restricted_to_one_bit": false,
+          "piece_count": 62501
+        }
+      ]
+    },
+    {
+      "prime": 7,
+      "max_label_length": 256,
+      "max_blocks_used": 10,
+      "max_sum_of_local_index_widths": 68,
+      "max_mixed_radix_index_width": 66,
+      "catalog": [
+        {
+          "energy": 7,
+          "dimension": "15",
+          "capacity": 1,
+          "restricted_to_one_bit": true,
+          "piece_count": 29
+        },
+        {
+          "energy": 7,
+          "dimension": "15",
+          "capacity": 3,
+          "restricted_to_one_bit": false,
+          "piece_count": 29
+        },
+        {
+          "energy": 49,
+          "dimension": "173525",
+          "capacity": 17,
+          "restricted_to_one_bit": false,
+          "piece_count": 197
+        },
+        {
+          "energy": 343,
+          "dimension": "175943559810422753",
+          "capacity": 57,
+          "restricted_to_one_bit": false,
+          "piece_count": 1373
+        },
+        {
+          "energy": 2401,
+          "dimension": "229866006383458830949778967121025947053151071434926",
+          "capacity": 167,
+          "restricted_to_one_bit": false,
+          "piece_count": 9605
+        },
+        {
+          "energy": 16807,
+          "dimension": "22620536952999956703966550088572970339413420806997427297130314269997033446732724268497429992341604061278110754315972264434139082698860499931",
+          "capacity": 462,
+          "restricted_to_one_bit": false,
+          "piece_count": 67229
+        }
+      ]
+    }
+  ]
+}

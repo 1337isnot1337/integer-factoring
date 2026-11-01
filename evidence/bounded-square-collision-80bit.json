@@ -1,0 +1,988 @@
+{
+  "annihilator_supplied": false,
+  "class_number_supplied": false,
+  "collision": {
+    "ambiguous_difference": [
+      824633708473,
+      0,
+      1099511627689
+    ],
+    "factor_data": {
+      "coprime_factors": [
+        824633708473,
+        1099511627689
+      ],
+      "form": [
+        824633708473,
+        0,
+        1099511627689
+      ],
+      "proper_factor": 824633708473,
+      "shape": "zero_middle"
+    },
+    "factorization": [
+      824633708473,
+      1099511627689
+    ],
+    "key": [
+      146381215778,
+      -140749370886,
+      6227895721157
+    ],
+    "kind": "two_generated_roots",
+    "left": {
+      "depth": 75,
+      "orientation": -1,
+      "root": [
+        550575495617,
+        204103641814,
+        1665727829338
+      ],
+      "word": [
+        -8,
+        4,
+        1,
+        0,
+        2,
+        -6,
+        0,
+        0,
+        -3,
+        -1,
+        0,
+        0
+      ]
+    },
+    "right": {
+      "depth": 123,
+      "orientation": -1,
+      "root": [
+        43695262369,
+        -25027861526,
+        20753987969114
+      ],
+      "word": [
+        -1,
+        4,
+        -4,
+        3,
+        -3,
+        -2,
+        2,
+        -4,
+        -2,
+        -2,
+        2,
+        -2
+      ]
+    }
+  },
+  "complete_generation_claimed": false,
+  "count_scope": "Move, squaring, and collision-comparison loops; setup and certificate replay are separate",
+  "depth_bound": 128,
+  "factor_base_primes": [
+    7,
+    11,
+    19,
+    23,
+    29,
+    31,
+    37,
+    53,
+    61,
+    79,
+    83,
+    89
+  ],
+  "factorization": [
+    824633708473,
+    1099511627689
+  ],
+  "input_bits": 80,
+  "input_factors_supplied": false,
+  "odd_n": 906694351050364540708897,
+  "roots": {
+    "7": 2,
+    "11": 8,
+    "19": 4,
+    "23": 14,
+    "29": 14,
+    "31": 28,
+    "37": 4,
+    "53": 34,
+    "61": 48,
+    "79": 12,
+    "83": 18,
+    "89": 34
+  },
+  "selection": "stratified",
+  "statistics": {
+    "comparison_compositions": 2855737,
+    "layers": [
+      {
+        "depth": 1,
+        "distinct_new_keys": 12,
+        "input_frontier": 1,
+        "pruned_new_keys": 0,
+        "retained_frontier": 12
+      },
+      {
+        "depth": 2,
+        "distinct_new_keys": 144,
+        "input_frontier": 12,
+        "pruned_new_keys": 0,
+        "retained_frontier": 144
+      },
+      {
+        "depth": 3,
+        "distinct_new_keys": 1156,
+        "input_frontier": 144,
+        "pruned_new_keys": 0,
+        "retained_frontier": 1156
+      },
+      {
+        "depth": 4,
+        "distinct_new_keys": 7008,
+        "input_frontier": 1156,
+        "pruned_new_keys": 2912,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 5,
+        "distinct_new_keys": 33393,
+        "input_frontier": 4096,
+        "pruned_new_keys": 29297,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 6,
+        "distinct_new_keys": 62301,
+        "input_frontier": 4096,
+        "pruned_new_keys": 58205,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 7,
+        "distinct_new_keys": 75303,
+        "input_frontier": 4096,
+        "pruned_new_keys": 71207,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 8,
+        "distinct_new_keys": 78420,
+        "input_frontier": 4096,
+        "pruned_new_keys": 74324,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 9,
+        "distinct_new_keys": 77162,
+        "input_frontier": 4096,
+        "pruned_new_keys": 73066,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 10,
+        "distinct_new_keys": 78671,
+        "input_frontier": 4096,
+        "pruned_new_keys": 74575,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 11,
+        "distinct_new_keys": 78796,
+        "input_frontier": 4096,
+        "pruned_new_keys": 74700,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 12,
+        "distinct_new_keys": 77627,
+        "input_frontier": 4096,
+        "pruned_new_keys": 73531,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 13,
+        "distinct_new_keys": 77415,
+        "input_frontier": 4096,
+        "pruned_new_keys": 73319,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 14,
+        "distinct_new_keys": 78279,
+        "input_frontier": 4096,
+        "pruned_new_keys": 74183,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 15,
+        "distinct_new_keys": 78076,
+        "input_frontier": 4096,
+        "pruned_new_keys": 73980,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 16,
+        "distinct_new_keys": 77261,
+        "input_frontier": 4096,
+        "pruned_new_keys": 73165,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 17,
+        "distinct_new_keys": 78519,
+        "input_frontier": 4096,
+        "pruned_new_keys": 74423,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 18,
+        "distinct_new_keys": 76456,
+        "input_frontier": 4096,
+        "pruned_new_keys": 72360,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 19,
+        "distinct_new_keys": 80092,
+        "input_frontier": 4096,
+        "pruned_new_keys": 75996,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 20,
+        "distinct_new_keys": 76016,
+        "input_frontier": 4096,
+        "pruned_new_keys": 71920,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 21,
+        "distinct_new_keys": 79940,
+        "input_frontier": 4096,
+        "pruned_new_keys": 75844,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 22,
+        "distinct_new_keys": 76659,
+        "input_frontier": 4096,
+        "pruned_new_keys": 72563,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 23,
+        "distinct_new_keys": 79281,
+        "input_frontier": 4096,
+        "pruned_new_keys": 75185,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 24,
+        "distinct_new_keys": 74964,
+        "input_frontier": 4096,
+        "pruned_new_keys": 70868,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 25,
+        "distinct_new_keys": 78822,
+        "input_frontier": 4096,
+        "pruned_new_keys": 74726,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 26,
+        "distinct_new_keys": 75355,
+        "input_frontier": 4096,
+        "pruned_new_keys": 71259,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 27,
+        "distinct_new_keys": 77200,
+        "input_frontier": 4096,
+        "pruned_new_keys": 73104,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 28,
+        "distinct_new_keys": 73965,
+        "input_frontier": 4096,
+        "pruned_new_keys": 69869,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 29,
+        "distinct_new_keys": 77668,
+        "input_frontier": 4096,
+        "pruned_new_keys": 73572,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 30,
+        "distinct_new_keys": 74350,
+        "input_frontier": 4096,
+        "pruned_new_keys": 70254,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 31,
+        "distinct_new_keys": 77439,
+        "input_frontier": 4096,
+        "pruned_new_keys": 73343,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 32,
+        "distinct_new_keys": 74671,
+        "input_frontier": 4096,
+        "pruned_new_keys": 70575,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 33,
+        "distinct_new_keys": 78136,
+        "input_frontier": 4096,
+        "pruned_new_keys": 74040,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 34,
+        "distinct_new_keys": 75009,
+        "input_frontier": 4096,
+        "pruned_new_keys": 70913,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 35,
+        "distinct_new_keys": 77920,
+        "input_frontier": 4096,
+        "pruned_new_keys": 73824,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 36,
+        "distinct_new_keys": 75243,
+        "input_frontier": 4096,
+        "pruned_new_keys": 71147,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 37,
+        "distinct_new_keys": 77212,
+        "input_frontier": 4096,
+        "pruned_new_keys": 73116,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 38,
+        "distinct_new_keys": 74150,
+        "input_frontier": 4096,
+        "pruned_new_keys": 70054,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 39,
+        "distinct_new_keys": 77048,
+        "input_frontier": 4096,
+        "pruned_new_keys": 72952,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 40,
+        "distinct_new_keys": 75672,
+        "input_frontier": 4096,
+        "pruned_new_keys": 71576,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 41,
+        "distinct_new_keys": 78192,
+        "input_frontier": 4096,
+        "pruned_new_keys": 74096,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 42,
+        "distinct_new_keys": 75211,
+        "input_frontier": 4096,
+        "pruned_new_keys": 71115,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 43,
+        "distinct_new_keys": 77167,
+        "input_frontier": 4096,
+        "pruned_new_keys": 73071,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 44,
+        "distinct_new_keys": 75049,
+        "input_frontier": 4096,
+        "pruned_new_keys": 70953,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 45,
+        "distinct_new_keys": 77365,
+        "input_frontier": 4096,
+        "pruned_new_keys": 73269,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 46,
+        "distinct_new_keys": 75496,
+        "input_frontier": 4096,
+        "pruned_new_keys": 71400,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 47,
+        "distinct_new_keys": 76620,
+        "input_frontier": 4096,
+        "pruned_new_keys": 72524,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 48,
+        "distinct_new_keys": 75185,
+        "input_frontier": 4096,
+        "pruned_new_keys": 71089,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 49,
+        "distinct_new_keys": 75732,
+        "input_frontier": 4096,
+        "pruned_new_keys": 71636,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 50,
+        "distinct_new_keys": 75180,
+        "input_frontier": 4096,
+        "pruned_new_keys": 71084,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 51,
+        "distinct_new_keys": 76552,
+        "input_frontier": 4096,
+        "pruned_new_keys": 72456,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 52,
+        "distinct_new_keys": 76588,
+        "input_frontier": 4096,
+        "pruned_new_keys": 72492,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 53,
+        "distinct_new_keys": 77079,
+        "input_frontier": 4096,
+        "pruned_new_keys": 72983,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 54,
+        "distinct_new_keys": 76036,
+        "input_frontier": 4096,
+        "pruned_new_keys": 71940,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 55,
+        "distinct_new_keys": 76817,
+        "input_frontier": 4096,
+        "pruned_new_keys": 72721,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 56,
+        "distinct_new_keys": 77231,
+        "input_frontier": 4096,
+        "pruned_new_keys": 73135,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 57,
+        "distinct_new_keys": 76990,
+        "input_frontier": 4096,
+        "pruned_new_keys": 72894,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 58,
+        "distinct_new_keys": 76471,
+        "input_frontier": 4096,
+        "pruned_new_keys": 72375,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 59,
+        "distinct_new_keys": 75115,
+        "input_frontier": 4096,
+        "pruned_new_keys": 71019,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 60,
+        "distinct_new_keys": 75424,
+        "input_frontier": 4096,
+        "pruned_new_keys": 71328,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 61,
+        "distinct_new_keys": 75639,
+        "input_frontier": 4096,
+        "pruned_new_keys": 71543,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 62,
+        "distinct_new_keys": 75105,
+        "input_frontier": 4096,
+        "pruned_new_keys": 71009,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 63,
+        "distinct_new_keys": 75469,
+        "input_frontier": 4096,
+        "pruned_new_keys": 71373,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 64,
+        "distinct_new_keys": 72318,
+        "input_frontier": 4096,
+        "pruned_new_keys": 68222,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 65,
+        "distinct_new_keys": 69914,
+        "input_frontier": 4096,
+        "pruned_new_keys": 65818,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 66,
+        "distinct_new_keys": 69085,
+        "input_frontier": 4096,
+        "pruned_new_keys": 64989,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 67,
+        "distinct_new_keys": 68512,
+        "input_frontier": 4096,
+        "pruned_new_keys": 64416,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 68,
+        "distinct_new_keys": 73040,
+        "input_frontier": 4096,
+        "pruned_new_keys": 68944,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 69,
+        "distinct_new_keys": 72783,
+        "input_frontier": 4096,
+        "pruned_new_keys": 68687,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 70,
+        "distinct_new_keys": 75043,
+        "input_frontier": 4096,
+        "pruned_new_keys": 70947,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 71,
+        "distinct_new_keys": 72140,
+        "input_frontier": 4096,
+        "pruned_new_keys": 68044,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 72,
+        "distinct_new_keys": 77770,
+        "input_frontier": 4096,
+        "pruned_new_keys": 73674,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 73,
+        "distinct_new_keys": 76603,
+        "input_frontier": 4096,
+        "pruned_new_keys": 72507,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 74,
+        "distinct_new_keys": 76494,
+        "input_frontier": 4096,
+        "pruned_new_keys": 72398,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 75,
+        "distinct_new_keys": 73039,
+        "input_frontier": 4096,
+        "pruned_new_keys": 68943,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 76,
+        "distinct_new_keys": 73237,
+        "input_frontier": 4096,
+        "pruned_new_keys": 69141,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 77,
+        "distinct_new_keys": 74274,
+        "input_frontier": 4096,
+        "pruned_new_keys": 70178,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 78,
+        "distinct_new_keys": 74200,
+        "input_frontier": 4096,
+        "pruned_new_keys": 70104,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 79,
+        "distinct_new_keys": 76600,
+        "input_frontier": 4096,
+        "pruned_new_keys": 72504,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 80,
+        "distinct_new_keys": 74914,
+        "input_frontier": 4096,
+        "pruned_new_keys": 70818,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 81,
+        "distinct_new_keys": 74908,
+        "input_frontier": 4096,
+        "pruned_new_keys": 70812,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 82,
+        "distinct_new_keys": 73712,
+        "input_frontier": 4096,
+        "pruned_new_keys": 69616,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 83,
+        "distinct_new_keys": 72747,
+        "input_frontier": 4096,
+        "pruned_new_keys": 68651,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 84,
+        "distinct_new_keys": 70001,
+        "input_frontier": 4096,
+        "pruned_new_keys": 65905,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 85,
+        "distinct_new_keys": 66392,
+        "input_frontier": 4096,
+        "pruned_new_keys": 62296,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 86,
+        "distinct_new_keys": 68623,
+        "input_frontier": 4096,
+        "pruned_new_keys": 64527,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 87,
+        "distinct_new_keys": 66717,
+        "input_frontier": 4096,
+        "pruned_new_keys": 62621,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 88,
+        "distinct_new_keys": 70514,
+        "input_frontier": 4096,
+        "pruned_new_keys": 66418,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 89,
+        "distinct_new_keys": 73078,
+        "input_frontier": 4096,
+        "pruned_new_keys": 68982,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 90,
+        "distinct_new_keys": 76587,
+        "input_frontier": 4096,
+        "pruned_new_keys": 72491,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 91,
+        "distinct_new_keys": 74972,
+        "input_frontier": 4096,
+        "pruned_new_keys": 70876,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 92,
+        "distinct_new_keys": 75808,
+        "input_frontier": 4096,
+        "pruned_new_keys": 71712,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 93,
+        "distinct_new_keys": 77154,
+        "input_frontier": 4096,
+        "pruned_new_keys": 73058,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 94,
+        "distinct_new_keys": 76420,
+        "input_frontier": 4096,
+        "pruned_new_keys": 72324,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 95,
+        "distinct_new_keys": 78719,
+        "input_frontier": 4096,
+        "pruned_new_keys": 74623,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 96,
+        "distinct_new_keys": 76036,
+        "input_frontier": 4096,
+        "pruned_new_keys": 71940,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 97,
+        "distinct_new_keys": 78328,
+        "input_frontier": 4096,
+        "pruned_new_keys": 74232,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 98,
+        "distinct_new_keys": 76965,
+        "input_frontier": 4096,
+        "pruned_new_keys": 72869,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 99,
+        "distinct_new_keys": 76731,
+        "input_frontier": 4096,
+        "pruned_new_keys": 72635,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 100,
+        "distinct_new_keys": 73785,
+        "input_frontier": 4096,
+        "pruned_new_keys": 69689,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 101,
+        "distinct_new_keys": 72953,
+        "input_frontier": 4096,
+        "pruned_new_keys": 68857,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 102,
+        "distinct_new_keys": 70952,
+        "input_frontier": 4096,
+        "pruned_new_keys": 66856,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 103,
+        "distinct_new_keys": 71515,
+        "input_frontier": 4096,
+        "pruned_new_keys": 67419,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 104,
+        "distinct_new_keys": 73072,
+        "input_frontier": 4096,
+        "pruned_new_keys": 68976,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 105,
+        "distinct_new_keys": 72896,
+        "input_frontier": 4096,
+        "pruned_new_keys": 68800,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 106,
+        "distinct_new_keys": 69997,
+        "input_frontier": 4096,
+        "pruned_new_keys": 65901,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 107,
+        "distinct_new_keys": 72898,
+        "input_frontier": 4096,
+        "pruned_new_keys": 68802,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 108,
+        "distinct_new_keys": 74817,
+        "input_frontier": 4096,
+        "pruned_new_keys": 70721,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 109,
+        "distinct_new_keys": 71487,
+        "input_frontier": 4096,
+        "pruned_new_keys": 67391,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 110,
+        "distinct_new_keys": 73612,
+        "input_frontier": 4096,
+        "pruned_new_keys": 69516,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 111,
+        "distinct_new_keys": 72412,
+        "input_frontier": 4096,
+        "pruned_new_keys": 68316,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 112,
+        "distinct_new_keys": 74657,
+        "input_frontier": 4096,
+        "pruned_new_keys": 70561,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 113,
+        "distinct_new_keys": 70888,
+        "input_frontier": 4096,
+        "pruned_new_keys": 66792,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 114,
+        "distinct_new_keys": 71974,
+        "input_frontier": 4096,
+        "pruned_new_keys": 67878,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 115,
+        "distinct_new_keys": 70344,
+        "input_frontier": 4096,
+        "pruned_new_keys": 66248,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 116,
+        "distinct_new_keys": 66180,
+        "input_frontier": 4096,
+        "pruned_new_keys": 62084,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 117,
+        "distinct_new_keys": 70953,
+        "input_frontier": 4096,
+        "pruned_new_keys": 66857,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 118,
+        "distinct_new_keys": 68034,
+        "input_frontier": 4096,
+        "pruned_new_keys": 63938,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 119,
+        "distinct_new_keys": 70852,
+        "input_frontier": 4096,
+        "pruned_new_keys": 66756,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 120,
+        "distinct_new_keys": 73263,
+        "input_frontier": 4096,
+        "pruned_new_keys": 69167,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 121,
+        "distinct_new_keys": 73058,
+        "input_frontier": 4096,
+        "pruned_new_keys": 68962,
+        "retained_frontier": 4096
+      },
+      {
+        "depth": 122,
+        "distinct_new_keys": 70529,
+        "input_frontier": 4096,
+        "pruned_new_keys": 66433,
+        "retained_frontier": 4096
+      }
+    ],
+    "maximum_frontier": 4096,
+    "move_compositions": 11677262,
+    "pruned_key_occurrences": 8291294,
+    "retained_keys": 488737,
+    "squaring_compositions": 11677262,
+    "stopped_depth": 123,
+    "unhelpful_collisions": 2855736
+  },
+  "status": "factored",
+  "uniform_success_guarantee_claimed": false,
+  "width": 4096
+}

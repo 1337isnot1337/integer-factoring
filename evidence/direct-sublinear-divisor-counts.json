@@ -1,0 +1,62 @@
+{
+  "scope": "Direct count interface controls; not a full asymptotic evaluator implementation",
+  "counts_and_read_only_prefixes": {
+    "small_prefix_queries": 89168,
+    "read_only_interval_queries": 17200,
+    "exact_interval_counts": 1024,
+    "strictly_shorter_modulus_cases": 3,
+    "long_known_factorization_cases": [
+      {
+        "input_bits": 1024,
+        "count_bound_bits": 922,
+        "ring_element_bits": 923,
+        "known_divisor_count": 1024,
+        "prefix_queries": 24
+      },
+      {
+        "input_bits": 2048,
+        "count_bound_bits": 1676,
+        "ring_element_bits": 1677,
+        "known_divisor_count": 2048,
+        "prefix_queries": 24
+      },
+      {
+        "input_bits": 4096,
+        "count_bound_bits": 3072,
+        "ring_element_bits": 3073,
+        "known_divisor_count": 4096,
+        "prefix_queries": 24
+      }
+    ],
+    "negative_small_modulus_erases_a_count": true
+  },
+  "integral_schur_ring_controls": {
+    "both_order_integer_pieces": 144,
+    "power_of_two_piece_reductions": 576,
+    "power_of_two_crossing_entries": 64,
+    "moduli_with_zero_divisors": [
+      4,
+      8,
+      16,
+      64
+    ]
+  },
+  "rational_modulus_controls": {
+    "rational_unit_and_count_checks": 150,
+    "vanishing_rational_terms_preserving_one": 50
+  },
+  "elementary_lcm_supply": {
+    "binomial_lcm_divisibilities": 4656,
+    "exact_small_modulus_supply_bounds": 768
+  },
+  "small_modulus_crt": {
+    "exhaustive_and_large_exact_reconstructions": 3629,
+    "direct_residue_queries": 11025,
+    "nontrivial_overlapping_merges": 783,
+    "nonunit_moduli_skipped": 25664,
+    "explicit_overlapping_composite_merges": 2052,
+    "incompatible_residue_negative_control": true,
+    "fixed_quadratic_ring_constant_residues": 160
+  },
+  "least_factor_prefix_self_reduction_not_claimed_sublinear": true
+}

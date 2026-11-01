@@ -1,0 +1,110 @@
+{
+  "status": "PASS",
+  "algebra": {
+    "two_cut_entry_checks": 300160,
+    "channel_unrankings": 1775,
+    "zero_padding_checks": 19456,
+    "capped_cuts": 13,
+    "crossing_entries": 8464,
+    "type_pieces": 50,
+    "finite_families": [
+      {
+        "block_bits": 1,
+        "blocks": 1,
+        "tail_bits": 0,
+        "label_dimension": 2,
+        "pieces": 4,
+        "capped_cuts": 0
+      },
+      {
+        "block_bits": 1,
+        "blocks": 2,
+        "tail_bits": 0,
+        "label_dimension": 4,
+        "pieces": 10,
+        "capped_cuts": 3
+      },
+      {
+        "block_bits": 1,
+        "blocks": 3,
+        "tail_bits": 0,
+        "label_dimension": 8,
+        "pieces": 20,
+        "capped_cuts": 10
+      },
+      {
+        "block_bits": 2,
+        "blocks": 1,
+        "tail_bits": 1,
+        "label_dimension": 8,
+        "pieces": 16,
+        "capped_cuts": 0
+      }
+    ]
+  },
+  "combinatorics": {
+    "type_and_factorial_inequalities": 3072,
+    "endpoint_samples": [
+      {
+        "label_bits": 256,
+        "block_bits": 2,
+        "seed_pieces": 9,
+        "index_bits_upper": 74,
+        "linear_workspace_budget": 256
+      },
+      {
+        "label_bits": 4096,
+        "block_bits": 3,
+        "seed_pieces": 16,
+        "index_bits_upper": 178,
+        "linear_workspace_budget": 4096
+      },
+      {
+        "label_bits": 65536,
+        "block_bits": 4,
+        "seed_pieces": 25,
+        "index_bits_upper": 377,
+        "linear_workspace_budget": 65536
+      },
+      {
+        "label_bits": 1048576,
+        "block_bits": 5,
+        "seed_pieces": 36,
+        "index_bits_upper": 650,
+        "linear_workspace_budget": 1048576
+      },
+      {
+        "label_bits": 16777216,
+        "block_bits": 6,
+        "seed_pieces": 49,
+        "index_bits_upper": 1081,
+        "linear_workspace_budget": 16777216
+      }
+    ]
+  },
+  "coefficient_extraction": {
+    "coefficient_checks": 48,
+    "field_vectors_evaluated": 7664,
+    "primes": [
+      2,
+      3
+    ],
+    "negative_controls": [
+      "degree aliasing",
+      "odd-characteristic sign"
+    ]
+  },
+  "packed_costs": {
+    "packed_paths": 56,
+    "rounded_grid_steps": 128,
+    "compact_index_sum_checks": 112,
+    "rhos_tested": [
+      "1/2",
+      "2/3",
+      "3/4",
+      "7/8"
+    ],
+    "scope": "Exact declared cost envelopes, including rho=1/2; no new crossing rate."
+  },
+  "scope": "Conditional transfer and exact type blocking; no better contracting seed is supplied."
+}

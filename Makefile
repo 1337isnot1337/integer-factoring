@@ -137,6 +137,10 @@ verify-weyl-middle-coefficients:
 verify-subgroup-return:
 	python3 tools/check_subgroup_return_crossings.py
 
+.PHONY: verify-ordered-charge-area
+verify-ordered-charge-area:
+	python3 tools/check_ordered_charge_area.py
+
 .PHONY: verify-group-shears
 verify-group-shears:
 	python3 tools/check_group_shear_crossings.py
@@ -501,6 +505,67 @@ verify-arithmetic-sieve:
 	python3 tools/check_arithmetic_sieve_certificate.py
 
 verify-frontier: verify-bell verify-class-square-conic verify-divisor-moments verify-sparse-divisor-residues verify-odd-character-residues
+	python3 tools/check_direct_sublinear_counts.py
+	python3 tools/check_rational_simultaneous_transfer.py
+	python3 tools/check_minimum_cut_rank_budget.py
+	python3 tools/check_two_piece_rank_sum.py
+	python3 tools/check_permutation_coordinate_restrictions.py
+	python3 tools/check_swap_product_rank_sum.py
+	python3 tools/check_conserved_convolution.py
+	python3 tools/check_ideal_hankel_endpoint.py
+	python3 tools/check_seed_subspace_recombination.py
+	python3 tools/check_permutation_span_cycles.py
+	python3 tools/check_distinguished_rank_budget.py
+	python3 tools/check_simultaneous_time_space_transfer.py
+	python3 tools/check_fast_matrix_clique.py
+	python3 tools/check_sublinear_space_recovery.py
+	python3 tools/check_streamed_top_space.py
+	python3 tools/check_blocked_half_family.py
+	python3 tools/check_near_linear_factor_space.py
+	python3 tools/check_linear_space_recovery.py
+	python3 tools/check_streamed_seed_transfer.py
+	python3 tools/check_six_label_rank_sum.py
+	python3 tools/check_cyclic_orbit_crossing.py
+	python3 tools/check_nilpotent_cycle_labels.py
+	python3 tools/check_split_permutation_seed.py
+	python3 tools/check_balanced_partition_crossings.py
+	python3 tools/check_schur_fusion_rank.py
+	python3 tools/check_regular_fusion_rank.py
+	python3 tools/check_permutation_homogeneous_labels.py
+	python3 tools/check_intersection_matching_lift.py
+	python3 tools/check_reflected_support_reduction.py
+	python3 tools/check_paired_mode_johnson.py
+	python3 tools/check_sos_partial_transpose.py
+	python3 tools/check_finite_seed_amplification.py
+	python3 tools/check_fixed_defect_invariants.py
+	python3 tools/check_balanced_three_label_barrier.py
+	python3 tools/check_one_defect_seed.py
+	python3 tools/check_isotropic_three_label_barrier.py
+	python3 tools/check_integral_counting_transfer.py
+	python3 tools/check_partial_matching_minors.py
+	python3 tools/check_prime_power_gram_involution.py
+	python3 tools/check_schur_fusion_gram.py
+	python3 tools/check_dual_gauge_filters.py
+	python3 tools/check_linear_carry_blocks.py
+	python3 tools/check_matching_code_lift.py
+	python3 tools/check_matching_gram_unipotence.py
+	python3 tools/check_logarithmic_wire_network.py
+	python3 tools/check_fourier_odd_characteristic.py
+	python3 tools/check_polynomial_top_queries.py
+	python3 tools/check_bit_tagged_witness_recovery.py
+	python3 tools/check_modular_factor_space_odd.py
+	python3 tools/check_binary_coefficient_entropy.py
+	python3 tools/check_symmetric_three_matching.py
+	python3 tools/check_fourier_multiplication_gates.py
+	python3 tools/check_integral_schur_crossing.py
+	python3 tools/check_prime_power_capacities.py
+	python3 tools/check_rough_input_transfer.py
+	python3 tools/check_modular_factor_space.py
+	python3 tools/check_fermionic_piece_polynomial.py
+	python3 tools/check_finite_order_crossing_transfer.py
+	python3 tools/check_coordinate_support_rank.py
+	python3 tools/check_rational_height_transfer.py
+	python3 tools/check_subexponential_piece_transfer.py
 	python3 tools/check_bare_seven_to_twelve_letters.py > /dev/null
 	python3 tools/check_quadratic_inverse_degree_caps.py > /dev/null
 	python3 tools/check_quadratic_inverse_paths.py --alphabet 9 > /dev/null
@@ -941,3 +1006,67 @@ verify-modular:
 	python3 tools/check_weighted_prefix.py
 	python3 tools/check_fixed_characteristic_transfer.py
 	python3 tools/check_sparse_grid_geometry.py
+
+.PHONY: verify-pr23
+verify-pr23:
+	python3 tools/check_direct_sublinear_counts.py
+	python3 tools/check_rational_simultaneous_transfer.py
+	python3 tools/check_minimum_cut_rank_budget.py
+	python3 tools/check_two_piece_rank_sum.py
+	python3 tools/check_permutation_coordinate_restrictions.py
+	python3 tools/check_swap_product_rank_sum.py
+	python3 tools/check_conserved_convolution.py
+	python3 tools/check_ideal_hankel_endpoint.py
+	python3 tools/check_seed_subspace_recombination.py
+	python3 tools/check_permutation_span_cycles.py
+	python3 tools/check_distinguished_rank_budget.py
+	python3 tools/check_simultaneous_time_space_transfer.py
+	python3 tools/check_fast_matrix_clique.py
+	python3 tools/check_sublinear_space_recovery.py
+	python3 tools/check_streamed_top_space.py
+	python3 tools/check_blocked_half_family.py
+	python3 tools/check_near_linear_factor_space.py
+	python3 tools/check_linear_space_recovery.py
+	python3 tools/check_streamed_seed_transfer.py
+	python3 tools/check_six_label_rank_sum.py
+	python3 tools/check_cyclic_orbit_crossing.py
+	python3 tools/check_nilpotent_cycle_labels.py
+	python3 tools/check_split_permutation_seed.py
+	python3 tools/check_balanced_partition_crossings.py
+	python3 tools/check_schur_fusion_rank.py
+	python3 tools/check_regular_fusion_rank.py
+	python3 tools/check_permutation_homogeneous_labels.py
+	python3 tools/check_intersection_matching_lift.py
+	python3 tools/check_reflected_support_reduction.py
+	python3 tools/check_paired_mode_johnson.py
+	python3 tools/check_sos_partial_transpose.py
+	python3 tools/check_finite_seed_amplification.py
+	python3 tools/check_fixed_defect_invariants.py
+	python3 tools/check_balanced_three_label_barrier.py
+	python3 tools/check_one_defect_seed.py
+	python3 tools/check_isotropic_three_label_barrier.py
+	python3 tools/check_integral_counting_transfer.py
+	python3 tools/check_partial_matching_minors.py
+	python3 tools/check_prime_power_gram_involution.py
+	python3 tools/check_schur_fusion_gram.py
+	python3 tools/check_dual_gauge_filters.py
+	python3 tools/check_linear_carry_blocks.py
+	python3 tools/check_matching_code_lift.py
+	python3 tools/check_matching_gram_unipotence.py
+	python3 tools/check_logarithmic_wire_network.py
+	python3 tools/check_fourier_odd_characteristic.py
+	python3 tools/check_polynomial_top_queries.py
+	python3 tools/check_bit_tagged_witness_recovery.py
+	python3 tools/check_modular_factor_space_odd.py
+	python3 tools/check_binary_coefficient_entropy.py
+	python3 tools/check_symmetric_three_matching.py
+	python3 tools/check_fourier_multiplication_gates.py
+	python3 tools/check_integral_schur_crossing.py
+	python3 tools/check_prime_power_capacities.py
+	python3 tools/check_rough_input_transfer.py
+	python3 tools/check_modular_factor_space.py
+	python3 tools/check_fermionic_piece_polynomial.py
+	python3 tools/check_finite_order_crossing_transfer.py
+	python3 tools/check_coordinate_support_rank.py
+	python3 tools/check_rational_height_transfer.py
+	python3 tools/check_subexponential_piece_transfer.py

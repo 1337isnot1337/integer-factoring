@@ -25,6 +25,12 @@ and exact implementation. It does not claim a new general sparse
 interpolation algorithm. The existing weighted constructor and its source
 attribution are retained.
 
+The newly integrated [rough-input transfer](rough-input-transfer.md)
+already proves the same trial-budget improvement for prefix arithmetic
+circuits, together with stronger space bounds. That overlapping result
+is retained with its own proof and credit. The additional interface here
+uses only global cyclic residues and reconstructs their full divisor support.
+
 ## 1. The exact global query and recovery parameters
 
 Fix one prime characteristic p. For every prime q the oracle returns

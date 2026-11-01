@@ -127,6 +127,8 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs five groups on 
 
 ## Current research frontier
 
+- [Sublinear working-space refinement](research/sublinear-space-half-rate.md) and [direct exact divisor counts](research/direct-sublinear-divisor-counts.md): PR #23 supplies ordinary time-space proofs and exact finite controls, retaining the half-rate time bound. Its [full checkpoint index](research/INDEX.md#retained-pr-23-time-space-and-crossing-checkpoint) also preserves related crossing constructions and scoped obstructions. Integration is not independent mathematical acceptance; no new Lean or stronger exponent is claimed. Run `make verify-pr23` for the source checkpoint checks.
+
 - [Weighted fixed-characteristic transfer](research/fixed-characteristic-transfer.md), [polynomial Pfaffian profiles](research/modular-pfaffian.md), and [shared-mode Schur reduction](research/fermi-sea-schur.md): retained PR #22 constructions, effective evaluation, and scoped obstructions. No improved exponent is claimed. Run `make verify-modular` for the extended exact controls.
 
 - [Coarsened grid check](research/coarsened-grid-validation.md): a finite signed network-to-padded-clique check, including internal edges and grouping.
@@ -483,6 +485,15 @@ effective complete construction in `2^O(m)` time. Exact full binary
 coefficient spans fail the finite half target at lengths one through three
 for that example and a four-state analogue; useful uniform rank bounds
 remain open. Run `make verify-subgroup-return`.
+
+The [growing-clock normal form](research/ordered-charge-area-crossings.md)
+expresses ordered Weyl words as integer charge walks with an area weight.
+Uniformly generated polynomial-degree fields preserve the exponent under
+[whole-piece descent](research/fixed-field-descent.md#4-polynomial-degree-extensions-with-uniform-presentations).
+Selecting charge zero and area zero gives a binary family with strict
+endpoints and linearly many coefficients. Its complete binary spans fail
+the finite half target at lengths two and three; useful uniform rank
+bounds remain open. Run `make verify-ordered-charge-area`.
 
 The [group-shear extension](research/group-shear-crossings.md) implements
 the swap through three multiplication/division shears over any finite

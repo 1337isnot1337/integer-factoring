@@ -386,6 +386,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 - [Subgroup-return crossings](subgroup-return-crossings.md): group-word membership preserves the crossing and a rank-one starting cut at every length, including an effective free-group filter with infinite Hankel rank; complete binary coefficient spans at lengths one through three reject two examples without a uniform no-go claim.
 
+- [Ordered charge-area crossings](ordered-charge-area-crossings.md): growing clocks have an exact integer charge-walk normal form; polynomial-degree field descent preserves the exponent, and a binary area-zero filter retains both strict endpoints with linearly many coefficients; complete binary spans fail at two selected lengths.
+
 - [Group-shear crossings](group-shear-crossings.md): multiplication/division shears give cubic swap paths over every finite `p`-group in characteristic `p`; exact early-jet certificates exclude six displayed binary seeds, without an all-group claim.
 
 - [All-degree homogeneous Boolean charge bands](homogeneous-boolean-charge-bands.md): a degree-independent loss cap and stronger Gaussian floors exclude all exterior charges and a linearly growing interior band, including overlapping monomials.
@@ -466,3 +468,68 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [`../tools/`](../tools/) contains the checkers. Run `make verify` from the repository root.
 
 No finite certificate alone proves a new asymptotic factoring exponent. Distinguish an exact finite identity from a completed uniform machine theorem.
+
+## Retained PR #23 time-space and crossing checkpoint
+
+These ordinary proofs and finite controls were integrated from [exact PR #23 source](https://github.com/1337isnot1337/integer-factoring/tree/147652574e7ce1ff68b2c378712846cbf438da34). Integration is not independent mathematical acceptance. The complete time exponent remains `1/2`.
+
+- [Crossings from partitions into blocks of total weight zero](balanced-partition-crossings.md)
+- [The original constant-weight three-label restriction](balanced-three-label-barrier.md)
+- [Exact ranks of the elementary binary coefficient family](binary-coefficient-entropy.md)
+- [Recover witnesses with bit tags and deterministic isolation](bit-tagged-witness-recovery.md)
+- [A half-rate family with nearly linear-time factor queries](blocked-half-family.md)
+- [Conserved convolution crossings and a two-cut obstruction](conserved-convolution-crossings.md)
+- [A rank obstruction for coordinate matching support](coordinate-support-rank.md)
+- [Odd cyclic orbit sums of a finite crossing seed](cyclic-orbit-crossing.md)
+- [Direct exact divisor counts in sublinear workspace](direct-sublinear-divisor-counts.md)
+- [A sharp rank-sum budget with one distinguished piece](distinguished-piece-rank-budget.md)
+- [Dual gauges and exact mode filters](dual-gauge-filters.md)
+- [Faster baselines for the recursive clique evaluator](fast-matrix-clique.md)
+- [Reflected monomial duals and a four-piece crossing certificate](fermionic-piece-polynomial.md)
+- [Exact crossings from finite-order algebraic approximations](finite-order-crossing-transfer.md)
+- [Amplifying a finite crossing certificate](finite-seed-amplification.md)
+- [A rank obstruction for permutation-invariant defect families](fixed-defect-invariant-barrier.md)
+- [Fourier queries for every original multiplication gate](fourier-multiplication-gates.md)
+- [Compact arithmetic-gate Fourier queries in odd characteristic](fourier-odd-characteristic.md)
+- [The ideal Hankel row profile cannot have a rank-one opposite endpoint](ideal-hankel-endpoint.md)
+- [Exact divisor counts in polynomial space](integral-counting-transfer.md)
+- [Integral Schur crossing families and prime-power block composition](integral-schur-crossing.md)
+- [Matching crossings with monomial duals](intersection-matching-crossing.md)
+- [A constant-composition obstruction after an isotropic basis change](isotropic-three-label-barrier.md)
+- [Interpolation, addition, and carry blocks close under Fourier queries](linear-carry-blocks.md)
+- [Half-rate deterministic factoring in linear space](linear-space-half-rate.md)
+- [A multiplication network with logarithmic wire widths](logarithmic-wire-network.md)
+- [A multigraded crossing on uniform set partitions](matching-code-lift.md)
+- [Homogeneous matching duals from Jack integrality](matching-gram-unipotence.md)
+- [A minimum-cut rank budget and a twenty-one-label cutoff](minimum-cut-rank-budget.md)
+- [Streamed modular factors in every fixed characteristic](modular-factor-space-odd.md)
+- [Polynomial-space evaluation of the ambient modular factors](modular-factor-space.md)
+- [Linear space for the regular modular factors](near-linear-factor-space.md)
+- [Self-dual nilpotent cycle labels](nilpotent-cycle-labels.md)
+- [Research progress: 30 October 2026](oct30-progress.md)
+- [Complementary-pair labels give exact subset-intersection blocks](paired-mode-johnson.md)
+- [Disjointness minors from paths and cycles](partial-matching-minors.md)
+- [Coordinate restrictions of the four-permutation seed](permutation-coordinate-restrictions.md)
+- [Large homogeneous permutation label spaces](permutation-homogeneous-labels.md)
+- [Single-cycle blocks obstruct the full permutation coefficient span](permutation-span-cycle-obstruction.md)
+- [An explicit top clique with polynomial-time table queries](polynomial-top-queries.md)
+- [Prime-power Gram involutions and streamed Schur factors](prime-power-gram-involution.md)
+- [Rational crossings need no separate polynomial coefficient-height bound](rational-height-transfer.md)
+- [Simultaneous time and workspace from rational crossing families](rational-simultaneous-transfer.md)
+- [Far-reflected labels reduce to coordinate matching](reflected-support-reduction.md)
+- [The regular homogeneous central piece has the half-rate exponent](regular-fusion-rank.md)
+- [Small-factor preprocessing improves the modular transfer](rough-input-transfer.md)
+- [The homogeneous Schur central piece as a fusion Gram matrix](schur-fusion-gram.md)
+- [Asymptotically full Schur fusion rank](schur-fusion-rank.md)
+- [Exact rank-sum searches and dual label restrictions](seed-subspace-recombination.md)
+- [A simultaneous time and workspace transfer for crossing families](simultaneous-time-space-transfer.md)
+- [Six labels cannot pass the rank-sum amplification criterion](six-label-rank-sum-obstruction.md)
+- [Sum-of-squares identities and the two crossing ranks](sos-partial-transpose-profile.md)
+- [A six-label permutation crossing with rank product 150](split-permutation-seed.md)
+- [Streamed finite seeds and exact polynomial certificates](streamed-seed-transfer.md)
+- [Sublinear workspace for the original top-table queries](streamed-top-space.md)
+- [A transfer theorem with more than polynomially many crossing pieces](subexponential-piece-transfer.md)
+- [Half-rate factoring with sublinear working space](sublinear-space-half-rate.md)
+- [A swap/product rank bound and the finite rank-sum cutoff](swap-product-rank-sum.md)
+- [A sharp rate barrier for symmetric three-matching pieces](symmetric-three-matching-barrier.md)
+- [Two pieces cannot pass the finite rank-sum criterion](two-piece-rank-sum-obstruction.md)

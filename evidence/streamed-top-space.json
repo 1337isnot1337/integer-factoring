@@ -1,0 +1,15 @@
+{
+  "status": "pass",
+  "interpolation_cases": 32,
+  "boundary_addresses": 2592,
+  "valid_queries": 44,
+  "malformed_queries": 88,
+  "prefix_queries": 88,
+  "nonzero_padding_rejections": 108,
+  "second_factor_tag_queries": 22,
+  "maximum_arithmetic_dependency_depth": 3,
+  "recomputed_interpolations_in_valid_queries": 8128,
+  "source_edge_set_comparisons": 5,
+  "integer_parameter_bounds": 38903,
+  "scope": "Exact finite transcriptions; asymptotic space follows from the manuscript."
+}
