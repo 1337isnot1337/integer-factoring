@@ -120,3 +120,38 @@ def content_factor(data, point, integer):
     divisor = gcd(result["content"], integer)
     result["factor"] = divisor if 1 < divisor < integer else None
     return result
+
+
+def modular_unit_point(data, modulus):
+    """Construct Q(x,y)=1 modulo any modulus, without prime factorizations.
+
+    Three primitive conic points have collectively coprime denominators.
+    Saturating gcds partition the modulus into at most three coprime parts.
+    This does not impose bounds on integer lifts or solve Q(x,y)=1 over Z.
+    """
+    if modulus < 2:
+        raise ValueError("a modulus at least two is required")
+    points = [parametrized_point(data, *pair)["primitive_point"]
+              for pair in ((1, 0), (0, 1), (1, 1))]
+    denominators = [point[2] for point in points]
+    assert gcd(gcd(*denominators[:2]), denominators[2]) == 1
+    remaining, combined, x, y = modulus, 1, 0, 0
+    parts = []
+    for point in points:
+        denominator = point[2]
+        bad = gcd(remaining, pow(denominator, remaining.bit_length(), remaining))
+        good = remaining//bad
+        assert gcd(good, bad) == 1
+        if good > 1:
+            unit = pow(denominator, -1, good)
+            local_x, local_y = point[0]*unit % good, point[1]*unit % good
+            inverse = pow(combined, -1, good)
+            x += combined*((local_x-x)*inverse % good)
+            y += combined*((local_y-y)*inverse % good)
+            combined *= good
+        parts.append(good)
+        remaining = bad
+    assert remaining == 1 and combined == modulus
+    assert (evaluate(data["target"], x, y)-1) % modulus == 0
+    return {"modulus": modulus, "vector": (x, y),
+            "denominators": denominators, "coprime_parts": parts}

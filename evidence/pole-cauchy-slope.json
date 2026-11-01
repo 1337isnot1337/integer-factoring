@@ -3,7 +3,11 @@
   "seed": 20261040,
   "dense_determinant_controls": 96,
   "slope_controls": 48,
-  "positive_rectangles": 20,
+  "positive_rectangles": 21,
+  "maximum_factor_pair_count": 2,
+  "empty_padded_domains": 2,
+  "literal_entry_flow_controls": 704,
+  "normalized_trace_controls": 96,
   "vandermonde_content_controls": 128,
   "two_interval_content_controls": 128,
   "huge_known_content_controls": [
@@ -18,106 +22,98 @@
   ],
   "examples": [
     {
-      "number": 27,
+      "number": 15,
       "original_left": [
-        2,
-        5
-      ],
-      "original_right": [
-        9,
-        10
-      ],
-      "padded_domains": [
-        [
-          [
-            2,
-            5
-          ]
-        ],
-        [
-          [
-            9,
-            10
-          ],
-          [
-            28,
-            30
-          ]
-        ]
-      ],
-      "pair_count": 1,
-      "scale_bits": 10,
-      "scaled_determinant_orders": [
-        21,
-        23
-      ]
-    },
-    {
-      "number": 143,
-      "original_left": [
-        10,
-        13
-      ],
-      "original_right": [
-        11,
-        14
-      ],
-      "padded_domains": [
-        [
-          [
-            10,
-            13
-          ]
-        ],
-        [
-          [
-            11,
-            14
-          ]
-        ]
-      ],
-      "pair_count": 1,
-      "scale_bits": 9,
-      "scaled_determinant_orders": [
-        19,
-        21
-      ]
-    },
-    {
-      "number": 33,
-      "original_left": [
-        10,
-        15
+        3,
+        6
       ],
       "original_right": [
         3,
-        5
+        6
       ],
       "padded_domains": [
         [
           [
-            10,
-            15
+            3,
+            6
           ]
         ],
         [
           [
             3,
-            5
-          ],
+            6
+          ]
+        ]
+      ],
+      "pair_count": 2,
+      "scale_bits": 7,
+      "scaled_determinant_orders": [
+        7,
+        8
+      ]
+    },
+    {
+      "number": 9,
+      "original_left": [
+        1,
+        4
+      ],
+      "original_right": [
+        1,
+        4
+      ],
+      "padded_domains": [
+        [
           [
-            34,
-            37
+            1,
+            4
+          ]
+        ],
+        [
+          [
+            1,
+            4
           ]
         ]
       ],
       "pair_count": 1,
-      "scale_bits": 12,
+      "scale_bits": 7,
       "scaled_determinant_orders": [
-        58,
-        62
+        11,
+        13
+      ]
+    },
+    {
+      "number": 45,
+      "original_left": [
+        5,
+        10
+      ],
+      "original_right": [
+        5,
+        10
+      ],
+      "padded_domains": [
+        [
+          [
+            5,
+            10
+          ]
+        ],
+        [
+          [
+            5,
+            10
+          ]
+        ]
+      ],
+      "pair_count": 2,
+      "scale_bits": 9,
+      "scaled_determinant_orders": [
+        27,
+        30
       ]
     }
   ],
-  "unresolved": "Compute the two normalized determinant contents without expanding the matrix or cross product."
+  "unresolved": "Evaluate the determinant-content difference or normalized inverse/Hadamard-square trace without expanding the matrix."
 }

@@ -53,6 +53,8 @@ global state reduction remains open.
 The [Cauchy content-slope reduction](research/pole-cauchy-content.md) gives
 a second global target using two implicit determinant contents, with cheap
 padding and explicit Vandermonde normalization.
+An exact trace involving the inverse and entrywise square gives the count directly;
+efficient evaluation of that normalized scalar is unproved.
 The [research index](research/INDEX.md) links proofs, exact evidence, and replay commands.
 
 The result table distinguishes verified machine bounds from conditional constructions and finite experiments. A merged PR or a passing finite test does not imply independent mathematical review.
@@ -113,6 +115,8 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs five groups on 
 | [`tools/`](tools/) and [`tests/`](tests/) | Exact checkers, reproduction scripts, and unit tests |
 
 ## Current research frontier
+
+- [Coarsened grid check](research/coarsened-grid-validation.md): a finite signed network-to-padded-clique check, including internal edges and grouping.
 
 The [auxiliary extension](research/auxiliary-binary-gauge-floor.md) carries
 the same floor to matrix-valued binary seeds of every fixed auxiliary
@@ -280,7 +284,15 @@ length, an exact crossing endpoint, and a finite-state entry algorithm.
 It also supports exactly `2^lambda` labels with degree `O(lambda)`.
 A companion integer identity has scale `12^n` and `O(lambda)` coefficient
 bits. Modular rank gains do not automatically lift to rational ranks.
-A uniform favorable rank bound remains open. Run `make verify-bounded-spin`.
+A uniform favorable rank bound remains open. The
+[eight-site rank algebra](research/bounded-spin-rank-algebra.md) gives
+exact ranks over every characteristic-five extension and minmax rank
+product 2304; that finite block cannot improve the rate. Run
+`make verify-bounded-spin` and the optional NumPy target
+`make verify-bounded-spin-algebra`.
+The [spin-zero jet identities](research/bounded-spin-three-jets.md)
+hold at every length and bound the coefficient span by `n-2` for even
+`n>=6`; ordinary cut-rank growth remains open.
 
 The [exact nonlinear charge theorem](research/nonlinear-symbol-charge-lattices.md)
 characterizes every admissible pair of full-symbol potentials for the
@@ -1139,7 +1151,10 @@ determinant `|Delta|`. Its exact cancellation bound gives direct gcd splitting
 certificates and rewrites prescribed-square search as a smooth denominator
 problem. Finding that denominator remains open. Run
 `make verify-class-square-conic` for independent conic-point and large-certificate
-controls; the factoring score remains `1/2`.
+controls. Three explicit rational points also give a polynomial algorithm for
+solving every modular square-norm instance without a prime factorization of the modulus.
+An exact negative integer example is soluble at every modulus, separating
+this local information from the required global search. The score remains `1/2`.
 
 The [Bell-diagonal seed construction](research/bell-diagonal-crossings.md)
 gives exact two-cut transforms and excludes its complete symmetric

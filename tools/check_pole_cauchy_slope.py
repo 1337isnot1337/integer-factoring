@@ -47,6 +47,28 @@ def determinant(matrix):
     return result
 
 
+def solve(matrix, right):
+    matrix = [row[:] for row in matrix]
+    right = [row[:] for row in right]
+    size = len(matrix)
+    for i in range(size):
+        pivot = next(j for j in range(i, size) if matrix[j][i] != (0, 0))
+        matrix[i], matrix[pivot] = matrix[pivot], matrix[i]
+        right[i], right[pivot] = right[pivot], right[i]
+        reciprocal = inverse(matrix[i][i])
+        matrix[i] = [multiply(entry, reciprocal) for entry in matrix[i]]
+        right[i] = [multiply(entry, reciprocal) for entry in right[i]]
+        for j in range(size):
+            if j == i:
+                continue
+            factor = matrix[j][i]
+            for row, source in ((matrix[j], matrix[i]), (right[j], right[i])):
+                for k in range(size):
+                    term = multiply(factor, source[k])
+                    row[k] = add(row[k], (-term[0], -term[1]))
+    return right
+
+
 def v2(value):
     value = F(value)
     assert value
@@ -61,7 +83,7 @@ def valuation(value):
 
 def check():
     rng = random.Random(20261040)
-    controls = positive = 0
+    controls = positive = flow_controls = trace_controls = max_pairs = empty_controls = 0
     examples = []
     for index in range(48):
         left_size, right_size = rng.randrange(1, 6), rng.randrange(1, 6)
@@ -75,16 +97,26 @@ def check():
             odd_right = [b for b in original_right if b % 2]
             if odd_left and odd_right:
                 number = rng.choice(odd_left) * rng.choice(odd_right)
+        if index == 0:
+            number, original_left, original_right = 15, range(3, 6), range(3, 6)
+        elif index == 1:
+            number, original_left, original_right = 3, range(9, 12), range(7, 10)
+        elif index == 2:
+            number, original_left, original_right = 9, range(1, 4), range(1, 4)
+        elif index == 4:
+            number, original_left, original_right = 45, range(5, 10), range(5, 10)
         domains = square_pole_domains(number, (original_left.start, original_left.stop),
                                       (original_right.start, original_right.stop))
         left, right = [[x for interval in domain for x in range(*interval)] for domain in domains]
         size = len(left)
         assert size == len(right)
         pairs = [(a, b) for a in original_left for b in original_right if a * b == number]
+        max_pairs = max(max_pairs, len(pairs))
+        empty_controls += size == 0
         assert pairs == [(a, b) for a in left for b in right if a * b == number]
         bound = max((abs(number - a * b) for a in left for b in right), default=0).bit_length()
         scale_bits = bound + 3
-        orders = []
+        orders, previous_matrix = [], None
         for k in (scale_bits, scale_bits + 1):
             z = (F(number), F(1 << k))
             matrix = [[inverse((F(number - a * b), F(1 << k))) for b in right]
@@ -112,6 +144,29 @@ def check():
             expected = known_content - nonzero_content - k * len(pairs)
             assert valuation(direct) == expected
             orders.append(size * k + valuation(direct))
+            scaled = [[multiply(entry, (F(0), F(1 << k))) for entry in row] for row in matrix]
+            if previous_matrix is not None:
+                for i, row in enumerate(previous_matrix):
+                    for j, entry in enumerate(row):
+                        flowed = multiply((F(2), F(0)),
+                                          multiply(entry, inverse(add((F(1), F(0)), entry))))
+                        assert scaled[i][j] == flowed
+                        flow_controls += 1
+            previous_matrix = scaled
+            quotient = solve(scaled, [[multiply(entry, entry) for entry in row] for row in scaled])
+            scalar_trace = (F(0), F(0))
+            total = (F(0), F(0))
+            for i, row in enumerate(scaled):
+                scalar_trace = add(scalar_trace, quotient[i][i])
+                for entry in row:
+                    total = add(total, entry)
+            correction = multiply((F(0), F(size * (size - 1) // 2 * (1 << k))), inverse(z))
+            assert scalar_trace == add(total, (-correction[0], -correction[1]))
+            for coefficient, expected_coefficient in zip(scalar_trace, (len(pairs), 0)):
+                assert coefficient.denominator % 2
+                residue = coefficient.numerator * pow(coefficient.denominator, -1, 8) % 8
+                assert residue == expected_coefficient % 8
+            trace_controls += 1
             controls += 1
         assert orders[1] - orders[0] == size - len(pairs)
         positive += bool(pairs)
@@ -139,9 +194,11 @@ def check():
     return {'scope': 'Exact square Cauchy determinant and valuation slope; no fast global valuation algorithm.',
             'seed': 20261040, 'dense_determinant_controls': controls,
             'slope_controls': controls // 2, 'positive_rectangles': positive,
+            'maximum_factor_pair_count': max_pairs, 'empty_padded_domains': empty_controls,
+            'literal_entry_flow_controls': flow_controls, 'normalized_trace_controls': trace_controls,
             'vandermonde_content_controls': 128, 'two_interval_content_controls': 128,
             'huge_known_content_controls': huge, 'examples': examples,
-            'unresolved': 'Compute the two normalized determinant contents without expanding the matrix or cross product.'}
+            'unresolved': 'Evaluate the determinant-content difference or normalized inverse/Hadamard-square trace without expanding the matrix.'}
 
 
 if __name__ == '__main__':

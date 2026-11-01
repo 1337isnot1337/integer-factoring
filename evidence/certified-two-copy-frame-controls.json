@@ -1,0 +1,141 @@
+{
+  "scope": "Certified tracked-error elimination through exact finite-jet frames, compared with separately retained original complete-matrix controls.",
+  "complete_profiles_checked": 40,
+  "comparisons": [
+    {
+      "source_record": "pure-two-copy-frame-controls.json",
+      "case_index": 24,
+      "work_precision": 256,
+      "complete_profile_count": 2
+    },
+    {
+      "source_record": "pure-two-copy-frame-controls.json",
+      "case_index": 24,
+      "work_precision": 512,
+      "complete_profile_count": 2
+    },
+    {
+      "source_record": "pure-two-copy-frame-controls.json",
+      "case_index": 25,
+      "work_precision": 256,
+      "complete_profile_count": 2
+    },
+    {
+      "source_record": "pure-two-copy-frame-controls.json",
+      "case_index": 25,
+      "work_precision": 512,
+      "complete_profile_count": 2
+    },
+    {
+      "source_record": "pure-two-copy-frame-controls.json",
+      "case_index": 26,
+      "work_precision": 256,
+      "complete_profile_count": 2
+    },
+    {
+      "source_record": "pure-two-copy-frame-controls.json",
+      "case_index": 26,
+      "work_precision": 512,
+      "complete_profile_count": 2
+    },
+    {
+      "source_record": "pure-two-copy-frame-controls.json",
+      "case_index": 27,
+      "work_precision": 256,
+      "complete_profile_count": 2
+    },
+    {
+      "source_record": "pure-two-copy-frame-controls.json",
+      "case_index": 27,
+      "work_precision": 512,
+      "complete_profile_count": 2
+    },
+    {
+      "source_record": "pure-two-copy-frame-controls.json",
+      "case_index": 28,
+      "work_precision": 256,
+      "complete_profile_count": 2
+    },
+    {
+      "source_record": "pure-two-copy-frame-controls.json",
+      "case_index": 28,
+      "work_precision": 512,
+      "complete_profile_count": 2
+    },
+    {
+      "source_record": "pure-two-copy-frame-controls.json",
+      "case_index": 29,
+      "work_precision": 256,
+      "complete_profile_count": 2
+    },
+    {
+      "source_record": "pure-two-copy-frame-controls.json",
+      "case_index": 29,
+      "work_precision": 512,
+      "complete_profile_count": 2
+    },
+    {
+      "source_record": "entangled-two-copy-frame-controls.json",
+      "case_index": 8,
+      "work_precision": 256,
+      "complete_profile_count": 2
+    },
+    {
+      "source_record": "entangled-two-copy-frame-controls.json",
+      "case_index": 8,
+      "work_precision": 512,
+      "complete_profile_count": 2
+    },
+    {
+      "source_record": "entangled-two-copy-frame-controls.json",
+      "case_index": 9,
+      "work_precision": 256,
+      "complete_profile_count": 2
+    },
+    {
+      "source_record": "entangled-two-copy-frame-controls.json",
+      "case_index": 9,
+      "work_precision": 512,
+      "complete_profile_count": 2
+    },
+    {
+      "source_record": "entangled-two-copy-frame-controls.json",
+      "case_index": 10,
+      "work_precision": 256,
+      "complete_profile_count": 2
+    },
+    {
+      "source_record": "entangled-two-copy-frame-controls.json",
+      "case_index": 10,
+      "work_precision": 512,
+      "complete_profile_count": 2
+    },
+    {
+      "source_record": "entangled-two-copy-frame-controls.json",
+      "case_index": 11,
+      "work_precision": 256,
+      "complete_profile_count": 2
+    },
+    {
+      "source_record": "entangled-two-copy-frame-controls.json",
+      "case_index": 11,
+      "work_precision": 512,
+      "complete_profile_count": 2
+    }
+  ],
+  "minimum_certified_pivot_error_margin": 216,
+  "pivot_counts": {
+    "diagonal_update": 17528,
+    "offdiagonal_to_arrow": 18,
+    "arrow_center": 18,
+    "arrow_leaf_diagonal": 7262,
+    "arrow_leaf_column": 68,
+    "arrow_leaf_row": 106
+  },
+  "source_sha256": {
+    "check_certified_two_copy_frames.py": "a39fca5800bb8dcec58fc4e438dcfe9bad371a65981d209bf8de18773dbd3f41",
+    "native_certified_rank_one_smith_f4.cpp": "1076b594201d7bde0b661705ecf205125b0c11b4bdaa004c021e5169f61a07fe",
+    "native_certified_rank_one_smith_f4.py": "513c19f323b7c2588e26b486fe0ab2ca6d941c838b21faaf0c6394749a6715fd",
+    "native_rectangular_smith_f4.cpp": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6"
+  }
+}

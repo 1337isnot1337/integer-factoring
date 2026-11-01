@@ -5,6 +5,8 @@
   "encoder_word_coefficients": 131891,
   "integer_gram_entries": 6766,
   "highest_weight_vectors": 232,
+  "integral_one_site_reduced_matrices": 13080,
+  "independent_integral_three_jet_controls": 16,
   "complete_path_unrank_controls": 232,
   "return_to_zero_dimensions": [
     1,
@@ -85,6 +87,6 @@
   "scope": "Uniform coherent crossing construction with finite encoder and endpoint controls; no uniform rank saving or factoring improvement.",
   "source_sha256": {
     "bounded_spin_crossing.py": "cefc38c88cdf76650f4966fa9e49d0edbc9ce4c2eec3848dd2716f35ee3819bd",
-    "check_bounded_spin_crossing.py": "db3434514d7bc00943eec62fb9a89f7dac6ff25e0528056e7d79874d085efd32"
+    "check_bounded_spin_crossing.py": "fc936c915428a51641d7cf522988e52dbb4d4e29c40404f178e99570f00a604c"
   }
 }
