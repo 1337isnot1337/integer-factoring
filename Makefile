@@ -169,6 +169,10 @@ verify-joint-monomial-lattices:
 verify-joint-projector-lattices:
 	python3 tools/check_joint_projector_lattices.py
 
+.PHONY: verify-joint-evaluation-algebra
+verify-joint-evaluation-algebra:
+	python3 tools/check_joint_evaluation_algebra.py
+
 .PHONY: verify-group-shears
 verify-group-shears:
 	python3 tools/check_group_shear_crossings.py
