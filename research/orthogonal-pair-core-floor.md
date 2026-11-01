@@ -1,4 +1,4 @@
-# The first orthogonal paired-code candidate has an uncompetitive natural pressure
+# The orthogonal paired candidate and a uniform MDS-family floor
 
 ## Result and scope
 
@@ -15,7 +15,8 @@ Its balanced two-cut Smith-profile pressure satisfies
 Thus this candidate cannot beat the certified hyperoval bound by the
 balanced natural-profile criterion. This does not exclude other letter
 gauges, asymmetric supporting weights, different coefficient matrices,
-or changes to the low-height physical maps.
+or changes to the low-height physical maps. Section 5 strengthens the
+coefficient-matrix scope to an entire fixed graded MDS family.
 
 The proof does not require completing the expensive 92-letter profile.
 It recomputes both complete profiles of the 43-letter height-at-most-20
@@ -134,3 +135,49 @@ source hashes and the explicit incomplete-full-profile status.
 
 This is a limitation of one tested construction and its stated pressure
 method, not a lower bound for factoring algorithms.
+
+
+## 5. A stronger all-field consequence from only 28 coordinate states
+
+The same floor `32/45` holds for every homogeneous coherent retraction
+that retains all coordinate labels of height below 16 and has the physical
+height inventory
+
+\[
+Q(t)=\sum_{S\subseteq\{0,1,2,3\}}
+ (1+t^{16})^{\max(|S|-2,0)}
+ \prod_{i\notin S}(t^{2i+1}+t^{15-2i}).               \tag{4}
+\]
+
+This inventory has 92 labels. It is the paired Hilbert polynomial for any
+rank-two four-column coefficient matrix whose every two columns are
+independent. The formula is independent of the coefficient field and the
+column values. Therefore the floor covers every split coherent realization
+of these full paired MDS kernels, including different compatible left and
+right kernels, not only the orthogonal choice. It also covers any other
+higher-height maps with the same inventory and unchanged low coordinates.
+
+Indeed, the 28 low coordinate labels give one fixed binary polynomial
+submatrix in both cuts. The [family checker](../tools/check_paired_mds_low_core_floor.py)
+recomputes its two complete profiles and uses exactly (4), derived from the
+uniform rank function `rank(C_S)=min(2,|S|)`. The same Toeplitz monotonicity
+and Gibbs argument reduce the claim to (2), now with this smaller core.
+
+For this certificate the derivative polynomial has degree 4752 and its
+Möbius transform has three sign variations. Its signs are positive at zero,
+negative at `990386623/10^9`, positive at `990386624/10^9`, and negative at
+one. Thus there are exactly three critical points: a maximum, a minimum
+in the displayed box, and another maximum. Both possible global minima
+are positive: the boxed minimum has exact lower dyadic numerator
+`486750183587970634117251261701408713264580234231861031644`
+with denominator `2^192`, and the endpoint comparison is
+`784^45 > 92^64`. The initial endpoint is zero with positive derivative.
+This proves the strict partition inequality throughout the open interval.
+
+The [family receipt](../evidence/paired-mds-low-core-floor.json) retains
+all polynomial coefficients, signs, endpoint and minimum-box integer
+comparisons, the binary core profile and the symbolic height inventory.
+Since the fixed core is binary, the conclusion holds over every
+characteristic-two field in which the proposed maps are defined.
+It remains a balanced natural-profile obstruction, not a statement about
+arbitrary gauges, asymmetric supports, or actual coefficient-rank methods.

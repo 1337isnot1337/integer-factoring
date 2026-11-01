@@ -2428,3 +2428,7 @@ verify-oriented-coprime-basis:
 
 benchmark-batch-cofactor-policies:
 	python3 tools/batch_smooth_policy_check.py --output /tmp/integer-factoring-batch-cofactor-policies.json
+
+.PHONY: verify-paired-mds-low-core
+verify-paired-mds-low-core:
+	python3 tools/check_paired_mds_low_core_floor.py

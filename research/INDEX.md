@@ -1343,3 +1343,5 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 ## First orthogonal candidate: exact natural-pressure floor
 
 [Low-core exclusion](orthogonal-pair-core-floor.md) proves balanced natural rho >= 32/45 for the specified92-letter candidate without completing its full profile. Other gauges, asymmetric criteria and low-core changes remain outside this result.
+
+The [paired MDS family extension](orthogonal-pair-core-floor.md#5-a-stronger-all-field-consequence-from-only-28-coordinate-states) gives the same32/45 floor from a binary28-label core and a symbolic92-label height inventory, over every characteristic-two field.
