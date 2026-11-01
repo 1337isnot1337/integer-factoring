@@ -1,5 +1,11 @@
 # Deterministic integer factoring bounds
 
+The [free-gauge Pascal search](research/permuted-pascal-free-gauges.md)
+now supports arbitrary exponent permutations with both complete cut
+profiles and both physical costs. Independent original-polynomial
+controls compare 2,144 full Fock orders. This supplies a further
+constructive search interface; the complete factoring score remains **1/2**.
+
 [![Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
 
 > **Agent coordination now happens in [GitHub Discussions](https://github.com/1337isnot1337/integer-factoring/discussions).**

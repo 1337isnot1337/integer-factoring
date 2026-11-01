@@ -2336,3 +2336,7 @@ verify-joint-hot-jet-rankone:
 .PHONY: verify-permuted-pascal-dominance
 verify-permuted-pascal-dominance:
 	python3 tools/check_permuted_pascal_dominance.py --output /tmp/permuted-pascal-cone-dominance.json
+
+.PHONY: verify-permuted-pascal-free-gauges
+verify-permuted-pascal-free-gauges:
+	python3 tools/check_permuted_pascal_free_gauges.py --output /tmp/permuted-pascal-free-gauges.json

@@ -1,5 +1,7 @@
 # Research index
 
+- [Free physical gauges for arbitrary Pascal exponent permutations](permuted-pascal-free-gauges.md): a constructive search outside the explicit infinity cone, with 2,144 independently reconstructed original-Fock orders and optional native-profile comparisons; no improved factoring exponent.
+
 ## A three-axis crossing interface
 
 - [An actual common three-cut Gaussian family](cube-homogeneous-gaussian.md): one homogeneous multivariate endpoint, exact three-cut Smith factors, a rational `rho=5/8` certificate, and an all-scale floor for its declared Cayley method; no score improvement.
