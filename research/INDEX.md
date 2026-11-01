@@ -1,5 +1,7 @@
 # Research index
 
+- [Scalar reweighting of favorable cube orientations](cube-favorable-reweighting.md): all 30 tied favorable generators of the actual single-block audit family lie in an eight-dimensional span excluding the endpoint, certified by two entries over every characteristic-two extension. Global coupled-block selection is outside this finite certificate.
+
 - [A fixed non-Gaussian four-fermion interaction panel](quartic-interaction-panel.md): six endpoint-preserving interactions couple two mode copies and violate the Gaussian Pfaffian relation. All 14 complete profiles and independent Toeplitz checks resolve; 1,536 paired-prefix inequalities prove all-scale domination by the baseline and a 3/4 floor for the tested common-type envelope. Other interactions/types/rank estimates are outside the conclusion.
 
 - [Polynomial carries with opposite Frobenius directions](mixed-direction-frobenius-carries.md): forward and reverse carry transitions process the same cycle, retaining one relative column and the charged polynomial degree/state bound. The fixed F16 normal-basis AND panel admits degree four instead of the aligned minimum five; no asymptotic family, inverse/projector closure or complete arithmetic query is claimed.

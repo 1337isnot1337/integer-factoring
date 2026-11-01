@@ -1,0 +1,1309 @@
+{
+  "alphabet": [
+    1,
+    2
+  ],
+  "expected_truth_bits": "0x8000080000800008400004000040000420000200002000021000010000100001",
+  "explicit_dual": {
+    "endpoint_values": [
+      0,
+      1
+    ],
+    "masks": [
+      240,
+      255
+    ]
+  },
+  "factoring_exponent_improved": false,
+  "generators": [
+    {
+      "exponent": [
+        0,
+        0,
+        24
+      ],
+      "favorable": true,
+      "first_choice": true,
+      "hidden_axis": 0,
+      "piece": 0,
+      "truth_bits": "0x9009000000009009000000000000000000000000000000009009000000009009",
+      "widths": [
+        4,
+        0,
+        0
+      ]
+    },
+    {
+      "exponent": [
+        0,
+        0,
+        24
+      ],
+      "favorable": false,
+      "first_choice": false,
+      "hidden_axis": 1,
+      "piece": 0,
+      "truth_bits": "0x8000200040001000008000200040001008000200040001000008000200040001",
+      "widths": [
+        4,
+        0,
+        0
+      ]
+    },
+    {
+      "exponent": [
+        0,
+        0,
+        24
+      ],
+      "favorable": false,
+      "first_choice": false,
+      "hidden_axis": 2,
+      "piece": 0,
+      "truth_bits": "0x8000200040001000008000200040001008000200040001000008000200040001",
+      "widths": [
+        4,
+        0,
+        0
+      ]
+    },
+    {
+      "exponent": [
+        0,
+        6,
+        18
+      ],
+      "favorable": true,
+      "first_choice": true,
+      "hidden_axis": 0,
+      "piece": 1,
+      "truth_bits": "0x600660060000099000000000099009900000000009900000600660060000",
+      "widths": [
+        3,
+        1,
+        1
+      ]
+    },
+    {
+      "exponent": [
+        0,
+        6,
+        18
+      ],
+      "favorable": false,
+      "first_choice": false,
+      "hidden_axis": 1,
+      "piece": 1,
+      "truth_bits": "0x1008400220048001081002400420018001800420024008108001200440021008",
+      "widths": [
+        3,
+        1,
+        1
+      ]
+    },
+    {
+      "exponent": [
+        0,
+        6,
+        18
+      ],
+      "favorable": false,
+      "first_choice": false,
+      "hidden_axis": 2,
+      "piece": 1,
+      "truth_bits": "0x420018008100240200480011008400240021008800120040240081001800420",
+      "widths": [
+        3,
+        1,
+        1
+      ]
+    },
+    {
+      "exponent": [
+        0,
+        12,
+        12
+      ],
+      "favorable": true,
+      "first_choice": true,
+      "hidden_axis": 0,
+      "piece": 2,
+      "truth_bits": "0x8001400420021008090006600660090000900660066000901008400420028001",
+      "widths": [
+        3,
+        3,
+        2
+      ]
+    },
+    {
+      "exponent": [
+        0,
+        12,
+        12
+      ],
+      "favorable": true,
+      "first_choice": false,
+      "hidden_axis": 1,
+      "piece": 2,
+      "truth_bits": "0x8001400420021008090006600660090000900660066000901008400420028001",
+      "widths": [
+        3,
+        3,
+        2
+      ]
+    },
+    {
+      "exponent": [
+        0,
+        12,
+        12
+      ],
+      "favorable": false,
+      "first_choice": false,
+      "hidden_axis": 2,
+      "piece": 2,
+      "truth_bits": "0x8001008408021248210004201248080240101248042000841248401021008001",
+      "widths": [
+        3,
+        3,
+        2
+      ]
+    },
+    {
+      "exponent": [
+        0,
+        18,
+        6
+      ],
+      "favorable": false,
+      "first_choice": false,
+      "hidden_axis": 0,
+      "piece": 3,
+      "truth_bits": "0x1008400220048001081002400420018001800420024008108001200440021008",
+      "widths": [
+        1,
+        3,
+        1
+      ]
+    },
+    {
+      "exponent": [
+        0,
+        18,
+        6
+      ],
+      "favorable": true,
+      "first_choice": true,
+      "hidden_axis": 1,
+      "piece": 3,
+      "truth_bits": "0x600660060000099000000000099009900000000009900000600660060000",
+      "widths": [
+        1,
+        3,
+        1
+      ]
+    },
+    {
+      "exponent": [
+        0,
+        18,
+        6
+      ],
+      "favorable": false,
+      "first_choice": false,
+      "hidden_axis": 2,
+      "piece": 3,
+      "truth_bits": "0x218448120000218400000000481248120000000021840000481221840000",
+      "widths": [
+        1,
+        3,
+        1
+      ]
+    },
+    {
+      "exponent": [
+        0,
+        24,
+        0
+      ],
+      "favorable": false,
+      "first_choice": false,
+      "hidden_axis": 0,
+      "piece": 4,
+      "truth_bits": "0x8000200040001000008000200040001008000200040001000008000200040001",
+      "widths": [
+        0,
+        4,
+        0
+      ]
+    },
+    {
+      "exponent": [
+        0,
+        24,
+        0
+      ],
+      "favorable": true,
+      "first_choice": true,
+      "hidden_axis": 1,
+      "piece": 4,
+      "truth_bits": "0x9009000000009009000000000000000000000000000000009009000000009009",
+      "widths": [
+        0,
+        4,
+        0
+      ]
+    },
+    {
+      "exponent": [
+        0,
+        24,
+        0
+      ],
+      "favorable": false,
+      "first_choice": false,
+      "hidden_axis": 2,
+      "piece": 4,
+      "truth_bits": "0x8421000000000000000084210000000000000000842100000000000000008421",
+      "widths": [
+        0,
+        4,
+        0
+      ]
+    },
+    {
+      "exponent": [
+        4,
+        4,
+        16
+      ],
+      "favorable": true,
+      "first_choice": true,
+      "hidden_axis": 0,
+      "piece": 5,
+      "truth_bits": "0x660699669960660699690099009699669969009900969960660699669960660",
+      "widths": [
+        3,
+        2,
+        2
+      ]
+    },
+    {
+      "exponent": [
+        4,
+        4,
+        16
+      ],
+      "favorable": false,
+      "first_choice": false,
+      "hidden_axis": 1,
+      "piece": 5,
+      "truth_bits": "0x1668499229948661681692499429618661869429924968168661299449921668",
+      "widths": [
+        3,
+        2,
+        2
+      ]
+    },
+    {
+      "exponent": [
+        4,
+        4,
+        16
+      ],
+      "favorable": false,
+      "first_choice": false,
+      "hidden_axis": 2,
+      "piece": 5,
+      "truth_bits": "0x1668499229948661681692499429618661869429924968168661299449921668",
+      "widths": [
+        3,
+        2,
+        2
+      ]
+    },
+    {
+      "exponent": [
+        4,
+        10,
+        10
+      ],
+      "favorable": true,
+      "first_choice": true,
+      "hidden_axis": 0,
+      "piece": 6,
+      "truth_bits": "0x660099009900660600690099009600660069009900960060660099009900660",
+      "widths": [
+        2,
+        2,
+        0
+      ]
+    },
+    {
+      "exponent": [
+        4,
+        10,
+        10
+      ],
+      "favorable": true,
+      "first_choice": false,
+      "hidden_axis": 1,
+      "piece": 6,
+      "truth_bits": "0x660099009900660600690099009600660069009900960060660099009900660",
+      "widths": [
+        2,
+        2,
+        0
+      ]
+    },
+    {
+      "exponent": [
+        4,
+        10,
+        10
+      ],
+      "favorable": false,
+      "first_choice": false,
+      "hidden_axis": 2,
+      "piece": 6,
+      "truth_bits": "0x1248481221848421481212488421218421848421124848128421218448121248",
+      "widths": [
+        2,
+        2,
+        0
+      ]
+    },
+    {
+      "exponent": [
+        4,
+        16,
+        4
+      ],
+      "favorable": false,
+      "first_choice": false,
+      "hidden_axis": 0,
+      "piece": 7,
+      "truth_bits": "0x1668499229948661681692499429618661869429924968168661299449921668",
+      "widths": [
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "exponent": [
+        4,
+        16,
+        4
+      ],
+      "favorable": true,
+      "first_choice": true,
+      "hidden_axis": 1,
+      "piece": 7,
+      "truth_bits": "0x660699669960660699690099009699669969009900969960660699669960660",
+      "widths": [
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "exponent": [
+        4,
+        16,
+        4
+      ],
+      "favorable": false,
+      "first_choice": false,
+      "hidden_axis": 2,
+      "piece": 7,
+      "truth_bits": "0x1248699669968421699612488421699669968421124869968421699669961248",
+      "widths": [
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "exponent": [
+        6,
+        0,
+        18
+      ],
+      "favorable": true,
+      "first_choice": true,
+      "hidden_axis": 0,
+      "piece": 8,
+      "truth_bits": "0x660000000000660000090099009000000009009900900000660000000000660",
+      "widths": [
+        3,
+        1,
+        1
+      ]
+    },
+    {
+      "exponent": [
+        6,
+        0,
+        18
+      ],
+      "favorable": false,
+      "first_choice": false,
+      "hidden_axis": 1,
+      "piece": 8,
+      "truth_bits": "0x420018008100240200480011008400240021008800120040240081001800420",
+      "widths": [
+        3,
+        1,
+        1
+      ]
+    },
+    {
+      "exponent": [
+        6,
+        0,
+        18
+      ],
+      "favorable": false,
+      "first_choice": false,
+      "hidden_axis": 2,
+      "piece": 8,
+      "truth_bits": "0x1008400220048001081002400420018001800420024008108001200440021008",
+      "widths": [
+        3,
+        1,
+        1
+      ]
+    },
+    {
+      "exponent": [
+        6,
+        6,
+        12
+      ],
+      "favorable": true,
+      "first_choice": true,
+      "hidden_axis": 0,
+      "piece": 9,
+      "truth_bits": "0x1248409429028241290200009009290240949009000040948241409429021248",
+      "widths": [
+        3,
+        2,
+        2
+      ]
+    },
+    {
+      "exponent": [
+        6,
+        6,
+        12
+      ],
+      "favorable": false,
+      "first_choice": false,
+      "hidden_axis": 1,
+      "piece": 9,
+      "truth_bits": "0x240609069000240288202409429211248849429024041140240009609060240",
+      "widths": [
+        3,
+        2,
+        2
+      ]
+    },
+    {
+      "exponent": [
+        6,
+        6,
+        12
+      ],
+      "favorable": false,
+      "first_choice": false,
+      "hidden_axis": 2,
+      "piece": 9,
+      "truth_bits": "0x240609069000240288202409429211248849429024041140240009609060240",
+      "widths": [
+        3,
+        2,
+        2
+      ]
+    },
+    {
+      "exponent": [
+        6,
+        12,
+        6
+      ],
+      "favorable": false,
+      "first_choice": false,
+      "hidden_axis": 0,
+      "piece": 10,
+      "truth_bits": "0x240609069000240288202409429211248849429024041140240009609060240",
+      "widths": [
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "exponent": [
+        6,
+        12,
+        6
+      ],
+      "favorable": true,
+      "first_choice": true,
+      "hidden_axis": 1,
+      "piece": 10,
+      "truth_bits": "0x1248409429028241290200009009290240949009000040948241409429021248",
+      "widths": [
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "exponent": [
+        6,
+        12,
+        6
+      ],
+      "favorable": false,
+      "first_choice": false,
+      "hidden_axis": 2,
+      "piece": 10,
+      "truth_bits": "0x660409429020000290282418421290240948421824140940000409429020660",
+      "widths": [
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "exponent": [
+        6,
+        18,
+        0
+      ],
+      "favorable": false,
+      "first_choice": false,
+      "hidden_axis": 0,
+      "piece": 11,
+      "truth_bits": "0x420018008100240200480011008400240021008800120040240081001800420",
+      "widths": [
+        1,
+        3,
+        1
+      ]
+    },
+    {
+      "exponent": [
+        6,
+        18,
+        0
+      ],
+      "favorable": true,
+      "first_choice": true,
+      "hidden_axis": 1,
+      "piece": 11,
+      "truth_bits": "0x660000000000660000090099009000000009009900900000660000000000660",
+      "widths": [
+        1,
+        3,
+        1
+      ]
+    },
+    {
+      "exponent": [
+        6,
+        18,
+        0
+      ],
+      "favorable": false,
+      "first_choice": false,
+      "hidden_axis": 2,
+      "piece": 11,
+      "truth_bits": "0x1248000000008421000012488421000000008421124800008421000000001248",
+      "widths": [
+        1,
+        3,
+        1
+      ]
+    },
+    {
+      "exponent": [
+        8,
+        8,
+        8
+      ],
+      "favorable": true,
+      "first_choice": true,
+      "hidden_axis": 0,
+      "piece": 12,
+      "truth_bits": "0x9669699669969669699696699669699669969669966969969669699669969669",
+      "widths": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "exponent": [
+        8,
+        8,
+        8
+      ],
+      "favorable": true,
+      "first_choice": false,
+      "hidden_axis": 1,
+      "piece": 12,
+      "truth_bits": "0x9669699669969669699696699669699669969669966969969669699669969669",
+      "widths": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "exponent": [
+        8,
+        8,
+        8
+      ],
+      "favorable": true,
+      "first_choice": false,
+      "hidden_axis": 2,
+      "piece": 12,
+      "truth_bits": "0x9669699669969669699696699669699669969669966969969669699669969669",
+      "widths": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "exponent": [
+        10,
+        4,
+        10
+      ],
+      "favorable": true,
+      "first_choice": true,
+      "hidden_axis": 0,
+      "piece": 13,
+      "truth_bits": "0x699669960000699600000000699669960000000069960000699669960000",
+      "widths": [
+        2,
+        0,
+        2
+      ]
+    },
+    {
+      "exponent": [
+        10,
+        4,
+        10
+      ],
+      "favorable": false,
+      "first_choice": false,
+      "hidden_axis": 1,
+      "piece": 13,
+      "truth_bits": "0x1248481221848421481212488421218421848421124848128421218448121248",
+      "widths": [
+        2,
+        0,
+        2
+      ]
+    },
+    {
+      "exponent": [
+        10,
+        4,
+        10
+      ],
+      "favorable": true,
+      "first_choice": false,
+      "hidden_axis": 2,
+      "piece": 13,
+      "truth_bits": "0x660099009900660600690099009600660069009900960060660099009900660",
+      "widths": [
+        2,
+        0,
+        2
+      ]
+    },
+    {
+      "exponent": [
+        10,
+        10,
+        4
+      ],
+      "favorable": false,
+      "first_choice": false,
+      "hidden_axis": 0,
+      "piece": 14,
+      "truth_bits": "0x1248481221848421481212488421218421848421124848128421218448121248",
+      "widths": [
+        0,
+        2,
+        2
+      ]
+    },
+    {
+      "exponent": [
+        10,
+        10,
+        4
+      ],
+      "favorable": true,
+      "first_choice": true,
+      "hidden_axis": 1,
+      "piece": 14,
+      "truth_bits": "0x699669960000699600000000699669960000000069960000699669960000",
+      "widths": [
+        0,
+        2,
+        2
+      ]
+    },
+    {
+      "exponent": [
+        10,
+        10,
+        4
+      ],
+      "favorable": true,
+      "first_choice": false,
+      "hidden_axis": 2,
+      "piece": 14,
+      "truth_bits": "0x699669960000699600000000699669960000000069960000699669960000",
+      "widths": [
+        0,
+        2,
+        2
+      ]
+    },
+    {
+      "exponent": [
+        12,
+        0,
+        12
+      ],
+      "favorable": true,
+      "first_choice": true,
+      "hidden_axis": 0,
+      "piece": 15,
+      "truth_bits": "0x8241000000001248000006609669000000009669066000001248000000008241",
+      "widths": [
+        3,
+        2,
+        3
+      ]
+    },
+    {
+      "exponent": [
+        12,
+        0,
+        12
+      ],
+      "favorable": false,
+      "first_choice": false,
+      "hidden_axis": 1,
+      "piece": 15,
+      "truth_bits": "0x8001008408021248210004201248080240101248042000841248401021008001",
+      "widths": [
+        3,
+        2,
+        3
+      ]
+    },
+    {
+      "exponent": [
+        12,
+        0,
+        12
+      ],
+      "favorable": true,
+      "first_choice": false,
+      "hidden_axis": 2,
+      "piece": 15,
+      "truth_bits": "0x8001400420021008090006600660090000900660066000901008400420028001",
+      "widths": [
+        3,
+        2,
+        3
+      ]
+    },
+    {
+      "exponent": [
+        12,
+        6,
+        6
+      ],
+      "favorable": false,
+      "first_choice": false,
+      "hidden_axis": 0,
+      "piece": 16,
+      "truth_bits": "0x660409429020000290282418421290240948421824140940000409429020660",
+      "widths": [
+        2,
+        2,
+        3
+      ]
+    },
+    {
+      "exponent": [
+        12,
+        6,
+        6
+      ],
+      "favorable": false,
+      "first_choice": false,
+      "hidden_axis": 1,
+      "piece": 16,
+      "truth_bits": "0x660409429020000290282418421290240948421824140940000409429020660",
+      "widths": [
+        2,
+        2,
+        3
+      ]
+    },
+    {
+      "exponent": [
+        12,
+        6,
+        6
+      ],
+      "favorable": true,
+      "first_choice": true,
+      "hidden_axis": 2,
+      "piece": 16,
+      "truth_bits": "0x1248409429028241290200009009290240949009000040948241409429021248",
+      "widths": [
+        2,
+        2,
+        3
+      ]
+    },
+    {
+      "exponent": [
+        12,
+        12,
+        0
+      ],
+      "favorable": false,
+      "first_choice": false,
+      "hidden_axis": 0,
+      "piece": 17,
+      "truth_bits": "0x8001008408021248210004201248080240101248042000841248401021008001",
+      "widths": [
+        2,
+        3,
+        3
+      ]
+    },
+    {
+      "exponent": [
+        12,
+        12,
+        0
+      ],
+      "favorable": true,
+      "first_choice": true,
+      "hidden_axis": 1,
+      "piece": 17,
+      "truth_bits": "0x8241000000001248000006609669000000009669066000001248000000008241",
+      "widths": [
+        2,
+        3,
+        3
+      ]
+    },
+    {
+      "exponent": [
+        12,
+        12,
+        0
+      ],
+      "favorable": true,
+      "first_choice": false,
+      "hidden_axis": 2,
+      "piece": 17,
+      "truth_bits": "0x8241000000001248000006609669000000009669066000001248000000008241",
+      "widths": [
+        2,
+        3,
+        3
+      ]
+    },
+    {
+      "exponent": [
+        16,
+        4,
+        4
+      ],
+      "favorable": false,
+      "first_choice": false,
+      "hidden_axis": 0,
+      "piece": 18,
+      "truth_bits": "0x1248699669968421699612488421699669968421124869968421699669961248",
+      "widths": [
+        2,
+        2,
+        3
+      ]
+    },
+    {
+      "exponent": [
+        16,
+        4,
+        4
+      ],
+      "favorable": false,
+      "first_choice": false,
+      "hidden_axis": 1,
+      "piece": 18,
+      "truth_bits": "0x1248699669968421699612488421699669968421124869968421699669961248",
+      "widths": [
+        2,
+        2,
+        3
+      ]
+    },
+    {
+      "exponent": [
+        16,
+        4,
+        4
+      ],
+      "favorable": true,
+      "first_choice": true,
+      "hidden_axis": 2,
+      "piece": 18,
+      "truth_bits": "0x660699669960660699690099009699669969009900969960660699669960660",
+      "widths": [
+        2,
+        2,
+        3
+      ]
+    },
+    {
+      "exponent": [
+        18,
+        0,
+        6
+      ],
+      "favorable": false,
+      "first_choice": false,
+      "hidden_axis": 0,
+      "piece": 19,
+      "truth_bits": "0x1248000000008421000012488421000000008421124800008421000000001248",
+      "widths": [
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "exponent": [
+        18,
+        0,
+        6
+      ],
+      "favorable": false,
+      "first_choice": false,
+      "hidden_axis": 1,
+      "piece": 19,
+      "truth_bits": "0x218448120000218400000000481248120000000021840000481221840000",
+      "widths": [
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "exponent": [
+        18,
+        0,
+        6
+      ],
+      "favorable": true,
+      "first_choice": true,
+      "hidden_axis": 2,
+      "piece": 19,
+      "truth_bits": "0x600660060000099000000000099009900000000009900000600660060000",
+      "widths": [
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "exponent": [
+        18,
+        6,
+        0
+      ],
+      "favorable": false,
+      "first_choice": false,
+      "hidden_axis": 0,
+      "piece": 20,
+      "truth_bits": "0x218448120000218400000000481248120000000021840000481221840000",
+      "widths": [
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "exponent": [
+        18,
+        6,
+        0
+      ],
+      "favorable": false,
+      "first_choice": false,
+      "hidden_axis": 1,
+      "piece": 20,
+      "truth_bits": "0x1248000000008421000012488421000000008421124800008421000000001248",
+      "widths": [
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "exponent": [
+        18,
+        6,
+        0
+      ],
+      "favorable": true,
+      "first_choice": true,
+      "hidden_axis": 2,
+      "piece": 20,
+      "truth_bits": "0x660000000000660000090099009000000009009900900000660000000000660",
+      "widths": [
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "exponent": [
+        24,
+        0,
+        0
+      ],
+      "favorable": false,
+      "first_choice": false,
+      "hidden_axis": 0,
+      "piece": 21,
+      "truth_bits": "0x8421000000000000000084210000000000000000842100000000000000008421",
+      "widths": [
+        0,
+        0,
+        4
+      ]
+    },
+    {
+      "exponent": [
+        24,
+        0,
+        0
+      ],
+      "favorable": false,
+      "first_choice": false,
+      "hidden_axis": 1,
+      "piece": 21,
+      "truth_bits": "0x8421000000000000000084210000000000000000842100000000000000008421",
+      "widths": [
+        0,
+        0,
+        4
+      ]
+    },
+    {
+      "exponent": [
+        24,
+        0,
+        0
+      ],
+      "favorable": true,
+      "first_choice": true,
+      "hidden_axis": 2,
+      "piece": 21,
+      "truth_bits": "0x9009000000009009000000000000000000000000000000009009000000009009",
+      "widths": [
+        0,
+        0,
+        4
+      ]
+    }
+  ],
+  "modes": {
+    "favorable": {
+      "dimension": 8,
+      "dual_truth_bits": "0x8001000000000000000000000000000000000000000000000000000000000000",
+      "endpoint_in_span": false,
+      "generator_indices": [
+        0,
+        3,
+        6,
+        7,
+        10,
+        13,
+        15,
+        18,
+        19,
+        22,
+        24,
+        27,
+        31,
+        34,
+        36,
+        37,
+        38,
+        39,
+        41,
+        43,
+        44,
+        45,
+        47,
+        50,
+        52,
+        53,
+        56,
+        59,
+        62,
+        65
+      ],
+      "generators": 30,
+      "solution": null
+    },
+    "first_choice": {
+      "dimension": 8,
+      "dual_truth_bits": "0x8001000000000000000000000000000000000000000000000000000000000000",
+      "endpoint_in_span": false,
+      "generator_indices": [
+        0,
+        3,
+        6,
+        10,
+        13,
+        15,
+        18,
+        22,
+        24,
+        27,
+        31,
+        34,
+        36,
+        39,
+        43,
+        45,
+        50,
+        52,
+        56,
+        59,
+        62,
+        65
+      ],
+      "generators": 22,
+      "solution": null
+    },
+    "unrestricted": {
+      "dimension": 14,
+      "dual_truth_bits": null,
+      "endpoint_in_span": true,
+      "generator_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "generators": 66,
+      "solution": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        8,
+        14,
+        24,
+        27,
+        36,
+        45
+      ]
+    }
+  },
+  "scope": "Only the fixed m5/weight1/two-word Gaussian coefficient family. All scalar reweightings of its favorable single-block orientations fail, over every characteristic-two extension. No asymptotic or multi-block exclusion.",
+  "source_sha256": {
+    "tools/check_cube_favorable_reweighting.py": "7a8e113b82e6e38b8cfa9c52b83b2a70e242888bcdf8686c4456ea8ec5a99eec",
+    "tools/check_two_axis_global_pairing.py": "4dbbcb8ac8cacd440138724301e42f5bfa05d6af60b8c0273d5b2fbd7eb56114",
+    "tools/cube_homogeneous_gaussian.py": "2281e1013bca1e6d595e039562be856533d7732e50ab1018b8eed55b5fb24593"
+  },
+  "weight": 1,
+  "word_length": 5
+}

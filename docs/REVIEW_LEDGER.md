@@ -1,5 +1,20 @@
 # Contribution review and disposition ledger
 
+## Scalar reweighting of the actual favorable cube pieces
+
+The [single-block diagnostic](../research/cube-favorable-reweighting.md)
+reconstructs the same 22 actual Gaussian coefficient tensors as the
+global-pairing counterexample. Allowing all tied maximum-width hidden
+axes gives 30 generators, but their span still excludes E4. The explicit
+functional T[240]+T[255] vanishes on every allowed tensor and equals one
+on E4, excluding all scalar reweightings over every characteristic-two
+extension for this fixed family. Binary elimination independently gives
+dimension eight; the unrestricted 66-generator span has dimension fourteen
+and contains E4. This is not an asymptotic or coupled-block obstruction:
+global sum-of-widths selection changes the premise. Focused receipt
+reconstruction and documentation links are the local gate. No stronger
+score, Lean or independent mathematical acceptance is claimed.
+
 This is the maintenance checkpoint of 2026-10-30 against `main`
 `e91442d3162cae7f775e008efb2ea998c4478344`. GitHub is the
 [live PR queue](https://github.com/1337isnot1337/integer-factoring/pulls).

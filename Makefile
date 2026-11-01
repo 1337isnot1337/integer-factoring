@@ -3190,3 +3190,7 @@ verify-quartic-interactions:
 .PHONY: verify-quartic-weighted-run
 verify-quartic-weighted-run:
 	python3 tools/check_quartic_weighted_run.py
+
+.PHONY: verify-cube-favorable-reweighting
+verify-cube-favorable-reweighting:
+	python3 tools/check_cube_favorable_reweighting.py
