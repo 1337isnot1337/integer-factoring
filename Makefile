@@ -2218,6 +2218,70 @@ verify-cube-pair-specialization:
 verify-coherent-tail-injectivity:
 	python3 tools/check_coherent_tail_injectivity.py --output /tmp/integer-factoring-coherent-tail-injectivity.json
 
+.PHONY: verify-joint-grid-compressions
+verify-joint-grid-compressions:
+	python3 tools/check_joint_grid_compressions.py
+
+.PHONY: verify-joint-split-jet-guards
+verify-joint-split-jet-guards:
+	python3 tools/check_joint_split_jet_guards.py
+
+.PHONY: verify-joint-split-flags
+verify-joint-split-flags:
+	python3 tools/check_joint_split_flag_queries.py
+
+.PHONY: verify-joint-moving-retractions
+verify-joint-moving-retractions:
+	python3 tools/check_joint_moving_retractions.py
+
+.PHONY: verify-joint-small-rational
+verify-joint-small-rational:
+	python3 tools/check_joint_small_rational_retractions.py
+
+.PHONY: verify-joint-six-to-five
+verify-joint-six-to-five:
+	python3 tools/check_joint_six_to_five_retractions.py
+
+.PHONY: verify-zero-energy-parity-core
+verify-zero-energy-parity-core:
+	python3 tools/check_zero_energy_parity_core.py
+
+.PHONY: verify-zero-energy-hereditary
+verify-zero-energy-hereditary:
+	python3 tools/check_zero_energy_hereditary_adjugate.py
+
+.PHONY: verify-hereditary-adjugate
+verify-hereditary-adjugate:
+	python3 tools/check_hereditary_adjugate_caps.py
+
+.PHONY: verify-hereditary-q6-rejection
+verify-hereditary-q6-rejection:
+	python3 tools/check_hereditary_q6_rectangular_rejection.py
+
+.PHONY: verify-multichannel-cofactors
+verify-multichannel-cofactors:
+	python3 tools/check_multichannel_cofactor_caps.py
+
+.PHONY: verify-multichannel-bare-entropy
+verify-multichannel-bare-entropy:
+	python3 tools/check_multichannel_bare_entropy.py
+
+.PHONY: verify-inherited-second-jet
+verify-inherited-second-jet:
+	python3 tools/check_inherited_second_jet_caps.py
+
+.PHONY: verify-q12-second-jet-target
+verify-q12-second-jet-target:
+	python3 tools/check_q12_second_jet_target.py
+
+.PHONY: verify-higher-jet-words
+verify-higher-jet-words:
+	python3 tools/check_higher_jet_word_caps.py
+
+.PHONY: verify-q12-integer-word-target
+verify-q12-integer-word-target:
+	python3 tools/check_q12_integer_word_target.py
+
 .PHONY: verify-multiaxis-cube
 verify-multiaxis-cube:
 	python3 tools/check_multiaxis_cube_transfer.py

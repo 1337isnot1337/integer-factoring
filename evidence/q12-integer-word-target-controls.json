@@ -1,0 +1,115 @@
+{
+  "scope": "Two integer q12 points of the declared necessary relaxation, without realizing tensors.",
+  "certificates": [
+    {
+      "scope": "Exact integer point of declared necessary constraints; no realizing tensor or factoring improvement.",
+      "alphabet": 12,
+      "integer_degree": 24,
+      "identical_profiles": true,
+      "checks": {
+        "square": {
+          "oriented_checks": 1452,
+          "minimum_slack": "22"
+        },
+        "second_jet": {
+          "oriented_checks": 1452,
+          "minimum_slack": "22"
+        },
+        "word_jet": {
+          "oriented_checks": 1452,
+          "minimum_slack": "4"
+        },
+        "rectangular_jet": {
+          "compiled_checks": 6578,
+          "minimum_slack": "0"
+        },
+        "multichannel": {
+          "compiled_checks": 6578,
+          "minimum_slack": "1"
+        }
+      },
+      "rational_thermal_scale": [
+        17,
+        14
+      ],
+      "formal_rho_upper_bound": "707/1000",
+      "exact_integer_comparison": {
+        "max_order": 39,
+        "left_bits": 80559,
+        "right_bits": 80560,
+        "left_sha256": "4a793805593c2c108ec04b499736b3521695238e3129c6ecd7b0edb96e0800f5",
+        "right_sha256": "27a8c51f83c2cb013bfadd3286f9e8e841ee169c12fcd988630770ebc898fadb"
+      },
+      "strict_half_comparison": [
+        999698,
+        1000000
+      ],
+      "input_sha256": "0fc93e56b992e78f7b8864006db783fc307fe91870922c9652d9fc1ee6302ac1",
+      "source_sha256": {
+        "tools/check_q12_integer_word_target.py": "7780af8250f749e257e303cdbb1b783be353dcf718872e5f7e07d0196886903b",
+        "tools/hereditary_adjugate_caps.py": "5e7f5b43bbd39e267629d2ef624d721228e46951bccbaac3fa4a56cca13d47fe",
+        "tools/higher_jet_word_caps.py": "63521f298b00324d49d9f3cb78d37be88698a67949d41d13085794d851d663cc",
+        "tools/inherited_second_jet_caps.py": "3407c44bda2796daabc957cf0653077c034ba4c1f16019debf7dfc9c26d77231",
+        "tools/multichannel_cofactor_caps.py": "f0561973de6ff525674c7b52621221788bd8e32d45dc2b09c8d286b39b5df358",
+        "tools/rectangular_adjugate_jet_caps.py": "d59773c82318246f10bde91158dbf84a77daab62ac27481e43a0d48baf47075f",
+        "tools/check_cell_minor_caps.py": "92856996bc0fb7e213e5228e1697d2f1cfb5727e10a9e572c764731114e2f6bc",
+        "tools/charged_gaussian_floor.py": "5321193eda456b922ae947f55a492de675de2d08a90ccb2a87a0fd89a60805cc"
+      }
+    },
+    {
+      "scope": "Exact integer point of declared necessary constraints; no realizing tensor or factoring improvement.",
+      "alphabet": 12,
+      "integer_degree": 22,
+      "identical_profiles": true,
+      "checks": {
+        "square": {
+          "oriented_checks": 1452,
+          "minimum_slack": "20"
+        },
+        "second_jet": {
+          "oriented_checks": 1452,
+          "minimum_slack": "14"
+        },
+        "word_jet": {
+          "oriented_checks": 1452,
+          "minimum_slack": "4"
+        },
+        "rectangular_jet": {
+          "compiled_checks": 6578,
+          "minimum_slack": "0"
+        },
+        "multichannel": {
+          "compiled_checks": 6578,
+          "minimum_slack": "0"
+        }
+      },
+      "rational_thermal_scale": [
+        57,
+        46
+      ],
+      "formal_rho_upper_bound": "7071/10000",
+      "exact_integer_comparison": {
+        "max_order": 36,
+        "left_bits": 1058257,
+        "right_bits": 1058257,
+        "left_sha256": "a81abc1d8502de35fd3ef93c140d5f49535458373abd04914793d9bfa867040c",
+        "right_sha256": "4bb25b0087164f4d0e51fe41cb17b19520994f491dd3657269e72922f4ef5a63"
+      },
+      "strict_half_comparison": [
+        99998082,
+        100000000
+      ],
+      "input_sha256": "336b813953a4540db9b138d162c2c9ca943f2daef8c61137db8ce79484d7617b",
+      "source_sha256": {
+        "tools/check_q12_integer_word_target.py": "7780af8250f749e257e303cdbb1b783be353dcf718872e5f7e07d0196886903b",
+        "tools/hereditary_adjugate_caps.py": "5e7f5b43bbd39e267629d2ef624d721228e46951bccbaac3fa4a56cca13d47fe",
+        "tools/higher_jet_word_caps.py": "63521f298b00324d49d9f3cb78d37be88698a67949d41d13085794d851d663cc",
+        "tools/inherited_second_jet_caps.py": "3407c44bda2796daabc957cf0653077c034ba4c1f16019debf7dfc9c26d77231",
+        "tools/multichannel_cofactor_caps.py": "f0561973de6ff525674c7b52621221788bd8e32d45dc2b09c8d286b39b5df358",
+        "tools/rectangular_adjugate_jet_caps.py": "d59773c82318246f10bde91158dbf84a77daab62ac27481e43a0d48baf47075f",
+        "tools/check_cell_minor_caps.py": "92856996bc0fb7e213e5228e1697d2f1cfb5727e10a9e572c764731114e2f6bc",
+        "tools/charged_gaussian_floor.py": "5321193eda456b922ae947f55a492de675de2d08a90ccb2a87a0fd89a60805cc"
+      }
+    }
+  ]
+}
