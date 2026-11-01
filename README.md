@@ -1907,3 +1907,6 @@ The [one-prime recovery refinement](research/one-prime-bezout-recovery.md) uses 
 
 
 The [complete filtered-unit curve family](research/filtered-unit-crossings.md) extends nonlinear group-direction selectors. It gives explicit independent coordinates, full endpoint and generic-rank proofs, and exact coefficient-cut formulas. The larger family is now available for searches; its retained finite examples do not improve the factoring exponent.
+
+
+Repeating the symplectic reduction gives [polynomial-size blocks for symmetric exterior multiplication](research/recursive-symmetric-exterior-blocks.md): exactly `ceil(r/2)` block types, each of order at most `(r+2)^2/4`, retain the complete `2^r`-dimensional operator. This makes exact symmetric specialization profiles practical through 64 axes; it is a matrix-computation improvement, with no new factoring exponent claimed.

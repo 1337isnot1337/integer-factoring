@@ -2293,3 +2293,8 @@ verify-one-prime-bezout-recovery:
 .PHONY: verify-filtered-unit-crossings
 verify-filtered-unit-crossings:
 	python3 tools/check_filtered_unit_crossings.py --output /tmp/filtered-unit-crossings.json
+
+
+.PHONY: verify-recursive-symmetric-exterior-blocks
+verify-recursive-symmetric-exterior-blocks:
+	python3 tools/check_recursive_symmetric_exterior_blocks.py --large --output /tmp/recursive-symmetric-exterior-blocks.json

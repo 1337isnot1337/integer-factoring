@@ -1277,3 +1277,6 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 
 
 - [Complete filtered unit curves for crossing searches](filtered-unit-crossings.md): a strict extension of nonlinear selector products, exact free coordinates, equivalent loop factors, and independently checked complete coefficient cuts.
+
+
+- [Polynomial-size recursive symmetric blocks](recursive-symmetric-exterior-blocks.md): simultaneous conjugacy, an exact word classification, a sharp quadratic block-size bound, full integer multiplicities, and complete specialized profiles through 64 axes.
