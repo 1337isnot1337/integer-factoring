@@ -1892,3 +1892,6 @@ For arbitrary odd inputs, the [fixed-scale global Bézout interface](research/re
 
 
 The [filtered Pascal exponent classification](research/filtered-pascal-exponents.md) supplies nonlinear and noninjective exponent maps that preserve a complete zero-cut profile. It characterizes the fixed regularity cone exactly and verifies the actual polynomial and Fock matrices. The other cut still requires its own profile calculation; no exponent improvement is inferred from the preserved spectrum alone.
+
+
+A [prime-adic precision-one refinement](research/prime-bezout-counting.md) turns each normalized leading coefficient into a rectangle factor count modulo a small prime. Polynomially bounded primes and disjoint residue rectangles yield a uniform conditional factoring reduction with only logarithmically many output bits per query. Exact rational controls verify the normalization; computing the global coefficient remains unresolved.

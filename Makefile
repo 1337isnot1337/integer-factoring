@@ -2268,3 +2268,8 @@ verify-joint-retraction-module:
 .PHONY: verify-filtered-pascal-exponents
 verify-filtered-pascal-exponents:
 	python3 tools/check_filtered_pascal_exponents.py --output /tmp/filtered-pascal-exponents.json
+
+
+.PHONY: verify-prime-bezout-counting
+verify-prime-bezout-counting:
+	python3 tools/check_prime_bezout_counting.py --output /tmp/prime-bezout-counting.json

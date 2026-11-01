@@ -1263,3 +1263,6 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 
 
 - [Nonlinear filtered Pascal exponent maps](filtered-pascal-exponents.md): an exact classification, a larger effective crossing family with a fixed complete zero spectrum, and independent checks of actual infinity and Fock profiles.
+
+
+- [Factoring from prime-adic precision-one coefficients](prime-bezout-counting.md): constant derivative units on full prime-power grids, exact modular factor counts, an elementary polynomial prime bound, and a uniform supplied-oracle reduction.
