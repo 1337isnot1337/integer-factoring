@@ -2136,3 +2136,8 @@ verify-multiaxis-types:
 .PHONY: verify-product-power-weights
 verify-product-power-weights:
 	python3 tools/check_pole_cauchy_product_power_weights.py
+
+
+.PHONY: verify-routed-rectangular-fourier
+verify-routed-rectangular-fourier:
+	python3 tools/check_routed_rectangular_fourier.py --output /tmp/integer-factoring-routed-rectangular-fourier.json

@@ -1178,3 +1178,8 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 - [Multi-axis type amplification and matched workspace](multiaxis-type-amplification.md): one bounded finite-seed selector attains the full limiting score from any fixed-dimensional family with subexponential piece entropy and vanishing relative width error; exact multi-cut rank sums sharpen the finite-seed threshold. Actual tensors and all channels are checked.
 
 - [Normalized binary product-power weights](pole-cauchy-product-power-weights.md): polynomial-cost scaled inverse contractions for products of explicit nonunit polynomial bases with signed binary exponents; common valuation partitions, huge binary scales, dense rational controls, and a nonzero 402-bit implicit example. No singular joint-pole evaluator is claimed.
+
+
+## Wider grouping range with balanced carry relays
+
+- [A rectangular Fourier constructor with balanced carry relays](routed-rectangular-fourier-constructor.md)
