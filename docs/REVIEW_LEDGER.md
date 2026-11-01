@@ -594,3 +594,19 @@ pin that claim. Later approximate rational strictification and PR63 have
 separate focused checks; this is not a full pass for their later integration.
 No new Lean, independent mathematical acceptance, or stronger factoring
 score is implied.
+
+## Twelve-letter target consistency correction
+
+The degree-22 and degree-24 points in
+[the historical target note](../research/q12-integer-word-target.md) each
+violate sixteen of the 156 oriented budgets proved earlier in
+[the box-minor note](../research/bare-seven-to-twelve-letters.md).
+The `2 by 12` witnesses are `535>528` and `585>576`. The focused checker
+now imports the existing box compiler and verifies all violations, while
+retaining the successful cofactor checks and exact formal rate arithmetic.
+Original point data and discovery provenance are preserved. Bare polynomial
+realization is excluded; this corrects an incomplete compatibility screen
+and does not improve the complete score or introduce a new obstruction.
+The focused target and documentation checks are the correction's local
+validation; earlier full-suite receipts apply only to their exact sources.
+No new Lean or independent mathematical review is claimed.

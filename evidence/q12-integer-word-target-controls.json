@@ -1,8 +1,8 @@
 {
-  "scope": "Two integer q12 points of the declared necessary relaxation, without realizing tensors.",
+  "scope": "Two historical integer q12 points: exact formal rates and certified box-minor exclusions.",
   "certificates": [
     {
-      "scope": "Exact integer point of declared necessary constraints; no realizing tensor or factoring improvement.",
+      "scope": "Historical cofactor relaxation point, excluded by proved box-minor budgets; formal rate only.",
       "alphabet": 12,
       "integer_degree": 24,
       "identical_profiles": true,
@@ -28,6 +28,142 @@
           "minimum_slack": "1"
         }
       },
+      "box_minors": {
+        "status": "excluded from bare polynomial realization",
+        "oriented_checks": 156,
+        "minimum_slack": -9,
+        "violated_checks": 16,
+        "violations": [
+          {
+            "orientation": "C",
+            "alpha": 2,
+            "beta": 12,
+            "lhs": 585,
+            "rhs": 576,
+            "excess": 9
+          },
+          {
+            "orientation": "R",
+            "alpha": 2,
+            "beta": 12,
+            "lhs": 585,
+            "rhs": 576,
+            "excess": 9
+          },
+          {
+            "orientation": "C",
+            "alpha": 3,
+            "beta": 12,
+            "lhs": 872,
+            "rhs": 864,
+            "excess": 8
+          },
+          {
+            "orientation": "R",
+            "alpha": 3,
+            "beta": 12,
+            "lhs": 872,
+            "rhs": 864,
+            "excess": 8
+          },
+          {
+            "orientation": "C",
+            "alpha": 4,
+            "beta": 12,
+            "lhs": 1160,
+            "rhs": 1152,
+            "excess": 8
+          },
+          {
+            "orientation": "R",
+            "alpha": 4,
+            "beta": 12,
+            "lhs": 1160,
+            "rhs": 1152,
+            "excess": 8
+          },
+          {
+            "orientation": "C",
+            "alpha": 5,
+            "beta": 12,
+            "lhs": 1449,
+            "rhs": 1440,
+            "excess": 9
+          },
+          {
+            "orientation": "R",
+            "alpha": 5,
+            "beta": 12,
+            "lhs": 1449,
+            "rhs": 1440,
+            "excess": 9
+          },
+          {
+            "orientation": "C",
+            "alpha": 7,
+            "beta": 12,
+            "lhs": 2019,
+            "rhs": 2016,
+            "excess": 3
+          },
+          {
+            "orientation": "R",
+            "alpha": 7,
+            "beta": 12,
+            "lhs": 2019,
+            "rhs": 2016,
+            "excess": 3
+          },
+          {
+            "orientation": "C",
+            "alpha": 8,
+            "beta": 12,
+            "lhs": 2308,
+            "rhs": 2304,
+            "excess": 4
+          },
+          {
+            "orientation": "R",
+            "alpha": 8,
+            "beta": 12,
+            "lhs": 2308,
+            "rhs": 2304,
+            "excess": 4
+          },
+          {
+            "orientation": "C",
+            "alpha": 9,
+            "beta": 12,
+            "lhs": 2596,
+            "rhs": 2592,
+            "excess": 4
+          },
+          {
+            "orientation": "R",
+            "alpha": 9,
+            "beta": 12,
+            "lhs": 2596,
+            "rhs": 2592,
+            "excess": 4
+          },
+          {
+            "orientation": "C",
+            "alpha": 10,
+            "beta": 12,
+            "lhs": 2885,
+            "rhs": 2880,
+            "excess": 5
+          },
+          {
+            "orientation": "R",
+            "alpha": 10,
+            "beta": 12,
+            "lhs": 2885,
+            "rhs": 2880,
+            "excess": 5
+          }
+        ]
+      },
       "rational_thermal_scale": [
         17,
         14
@@ -46,18 +182,19 @@
       ],
       "input_sha256": "0fc93e56b992e78f7b8864006db783fc307fe91870922c9652d9fc1ee6302ac1",
       "source_sha256": {
-        "tools/check_q12_integer_word_target.py": "7780af8250f749e257e303cdbb1b783be353dcf718872e5f7e07d0196886903b",
+        "tools/check_q12_integer_word_target.py": "855f64b3557f1d4b96731584e88cb22fe9862148973f29727cadb5615671fd61",
         "tools/hereditary_adjugate_caps.py": "5e7f5b43bbd39e267629d2ef624d721228e46951bccbaac3fa4a56cca13d47fe",
         "tools/higher_jet_word_caps.py": "63521f298b00324d49d9f3cb78d37be88698a67949d41d13085794d851d663cc",
         "tools/inherited_second_jet_caps.py": "3407c44bda2796daabc957cf0653077c034ba4c1f16019debf7dfc9c26d77231",
         "tools/multichannel_cofactor_caps.py": "f0561973de6ff525674c7b52621221788bd8e32d45dc2b09c8d286b39b5df358",
         "tools/rectangular_adjugate_jet_caps.py": "d59773c82318246f10bde91158dbf84a77daab62ac27481e43a0d48baf47075f",
         "tools/check_cell_minor_caps.py": "92856996bc0fb7e213e5228e1697d2f1cfb5727e10a9e572c764731114e2f6bc",
-        "tools/charged_gaussian_floor.py": "5321193eda456b922ae947f55a492de675de2d08a90ccb2a87a0fd89a60805cc"
+        "tools/charged_gaussian_floor.py": "5321193eda456b922ae947f55a492de675de2d08a90ccb2a87a0fd89a60805cc",
+        "tools/check_bare_seven_to_twelve_letters.py": "d1b0df7e2fd1c39715c0511440f8f0732d0f15d1a16d2520cbce2eb9fd1418f6"
       }
     },
     {
-      "scope": "Exact integer point of declared necessary constraints; no realizing tensor or factoring improvement.",
+      "scope": "Historical cofactor relaxation point, excluded by proved box-minor budgets; formal rate only.",
       "alphabet": 12,
       "integer_degree": 22,
       "identical_profiles": true,
@@ -83,6 +220,142 @@
           "minimum_slack": "0"
         }
       },
+      "box_minors": {
+        "status": "excluded from bare polynomial realization",
+        "oriented_checks": 156,
+        "minimum_slack": -8,
+        "violated_checks": 16,
+        "violations": [
+          {
+            "orientation": "C",
+            "alpha": 2,
+            "beta": 12,
+            "lhs": 535,
+            "rhs": 528,
+            "excess": 7
+          },
+          {
+            "orientation": "R",
+            "alpha": 2,
+            "beta": 12,
+            "lhs": 535,
+            "rhs": 528,
+            "excess": 7
+          },
+          {
+            "orientation": "C",
+            "alpha": 3,
+            "beta": 12,
+            "lhs": 797,
+            "rhs": 792,
+            "excess": 5
+          },
+          {
+            "orientation": "R",
+            "alpha": 3,
+            "beta": 12,
+            "lhs": 797,
+            "rhs": 792,
+            "excess": 5
+          },
+          {
+            "orientation": "C",
+            "alpha": 4,
+            "beta": 12,
+            "lhs": 1064,
+            "rhs": 1056,
+            "excess": 8
+          },
+          {
+            "orientation": "R",
+            "alpha": 4,
+            "beta": 12,
+            "lhs": 1064,
+            "rhs": 1056,
+            "excess": 8
+          },
+          {
+            "orientation": "C",
+            "alpha": 5,
+            "beta": 12,
+            "lhs": 1328,
+            "rhs": 1320,
+            "excess": 8
+          },
+          {
+            "orientation": "R",
+            "alpha": 5,
+            "beta": 12,
+            "lhs": 1328,
+            "rhs": 1320,
+            "excess": 8
+          },
+          {
+            "orientation": "C",
+            "alpha": 7,
+            "beta": 12,
+            "lhs": 1850,
+            "rhs": 1848,
+            "excess": 2
+          },
+          {
+            "orientation": "R",
+            "alpha": 7,
+            "beta": 12,
+            "lhs": 1850,
+            "rhs": 1848,
+            "excess": 2
+          },
+          {
+            "orientation": "C",
+            "alpha": 8,
+            "beta": 12,
+            "lhs": 2116,
+            "rhs": 2112,
+            "excess": 4
+          },
+          {
+            "orientation": "R",
+            "alpha": 8,
+            "beta": 12,
+            "lhs": 2116,
+            "rhs": 2112,
+            "excess": 4
+          },
+          {
+            "orientation": "C",
+            "alpha": 9,
+            "beta": 12,
+            "lhs": 2380,
+            "rhs": 2376,
+            "excess": 4
+          },
+          {
+            "orientation": "R",
+            "alpha": 9,
+            "beta": 12,
+            "lhs": 2380,
+            "rhs": 2376,
+            "excess": 4
+          },
+          {
+            "orientation": "C",
+            "alpha": 10,
+            "beta": 12,
+            "lhs": 2644,
+            "rhs": 2640,
+            "excess": 4
+          },
+          {
+            "orientation": "R",
+            "alpha": 10,
+            "beta": 12,
+            "lhs": 2644,
+            "rhs": 2640,
+            "excess": 4
+          }
+        ]
+      },
       "rational_thermal_scale": [
         57,
         46
@@ -101,14 +374,15 @@
       ],
       "input_sha256": "336b813953a4540db9b138d162c2c9ca943f2daef8c61137db8ce79484d7617b",
       "source_sha256": {
-        "tools/check_q12_integer_word_target.py": "7780af8250f749e257e303cdbb1b783be353dcf718872e5f7e07d0196886903b",
+        "tools/check_q12_integer_word_target.py": "855f64b3557f1d4b96731584e88cb22fe9862148973f29727cadb5615671fd61",
         "tools/hereditary_adjugate_caps.py": "5e7f5b43bbd39e267629d2ef624d721228e46951bccbaac3fa4a56cca13d47fe",
         "tools/higher_jet_word_caps.py": "63521f298b00324d49d9f3cb78d37be88698a67949d41d13085794d851d663cc",
         "tools/inherited_second_jet_caps.py": "3407c44bda2796daabc957cf0653077c034ba4c1f16019debf7dfc9c26d77231",
         "tools/multichannel_cofactor_caps.py": "f0561973de6ff525674c7b52621221788bd8e32d45dc2b09c8d286b39b5df358",
         "tools/rectangular_adjugate_jet_caps.py": "d59773c82318246f10bde91158dbf84a77daab62ac27481e43a0d48baf47075f",
         "tools/check_cell_minor_caps.py": "92856996bc0fb7e213e5228e1697d2f1cfb5727e10a9e572c764731114e2f6bc",
-        "tools/charged_gaussian_floor.py": "5321193eda456b922ae947f55a492de675de2d08a90ccb2a87a0fd89a60805cc"
+        "tools/charged_gaussian_floor.py": "5321193eda456b922ae947f55a492de675de2d08a90ccb2a87a0fd89a60805cc",
+        "tools/check_bare_seven_to_twelve_letters.py": "d1b0df7e2fd1c39715c0511440f8f0732d0f15d1a16d2520cbce2eb9fd1418f6"
       }
     }
   ]

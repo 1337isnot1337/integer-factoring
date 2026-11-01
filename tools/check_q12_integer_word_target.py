@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-"""Verify an integer q12 profile point and a rational-scale rate certificate."""
+"""Verify two historical q12 relaxation points and their box-minor exclusions."""
 import argparse
 from hashlib import sha256
 import json
 from math import gcd
 from pathlib import Path
 
+from check_bare_seven_to_twelve_letters import constraints as box_constraints
 from check_cell_minor_caps import all_caps
 from hereditary_adjugate_caps import inequalities as square_caps
 from higher_jet_word_caps import inequalities as word_caps
@@ -37,6 +38,26 @@ def certificate(path):
                   sum(c*v for c, v in zip(cap['second'], r)) for cap in caps]
         assert min(slacks) >= 0
         checks[label] = dict(compiled_checks=len(caps), minimum_slack=str(min(slacks)))
+    # Passing the newer cofactor families does not imply compatibility with
+    # the earlier box-minor budgets. Preserve these points as negative controls.
+    boxes = box_constraints(q)
+    violations = []
+    box_slacks = []
+    for name, first, second, size in boxes:
+        lhs = sum(c*v for c, v in zip(first, r)) + sum(c*v for c, v in zip(second, r))
+        rhs = size*degree
+        box_slacks.append(rhs-lhs)
+        if lhs > rhs:
+            violations.append(dict(orientation=name[0], alpha=name[1], beta=name[2],
+                                   lhs=lhs, rhs=rhs, excess=lhs-rhs))
+    assert len(boxes) == 156 and len(violations) == 16
+    assert min(box_slacks) == {22: -8, 24: -9}[degree]
+    assert violations[0] == dict(orientation='C', alpha=2, beta=12,
+                                 lhs={22: 535, 24: 585}[degree], rhs=24*degree,
+                                 excess={22: 7, 24: 9}[degree])
+    box_exclusion = dict(status='excluded from bare polynomial realization',
+                         oriented_checks=len(boxes), minimum_slack=min(box_slacks),
+                         violated_checks=len(violations), violations=violations)
     numerator, denominator = data['rational_thermal_scale']
     bound, divisor = data['rho_upper_bound']
     assert (degree, numerator, denominator, bound, divisor) in ((24, 17, 14, 707, 1000), (22, 57, 46, 7071, 10000))
@@ -55,9 +76,11 @@ def certificate(path):
     names = ['tools/check_q12_integer_word_target.py', 'tools/hereditary_adjugate_caps.py',
              'tools/higher_jet_word_caps.py', 'tools/inherited_second_jet_caps.py',
              'tools/multichannel_cofactor_caps.py', 'tools/rectangular_adjugate_jet_caps.py',
-             'tools/check_cell_minor_caps.py', 'tools/charged_gaussian_floor.py']
-    return dict(scope='Exact integer point of declared necessary constraints; no realizing tensor or factoring improvement.',
+             'tools/check_cell_minor_caps.py', 'tools/charged_gaussian_floor.py',
+             'tools/check_bare_seven_to_twelve_letters.py']
+    return dict(scope='Historical cofactor relaxation point, excluded by proved box-minor budgets; formal rate only.',
                 alphabet=q, integer_degree=degree, identical_profiles=True, checks=checks,
+                box_minors=box_exclusion,
                 rational_thermal_scale=[numerator, denominator], formal_rho_upper_bound=str(bound)+'/'+str(divisor),
                 exact_integer_comparison=exact, strict_half_comparison=[2*bound**2, divisor**2],
                 input_sha256=sha256(path.read_bytes()).hexdigest(),
@@ -69,7 +92,7 @@ def main():
     parser.add_argument('--output', type=Path)
     args = parser.parse_args()
     paths = [ROOT/'evidence/q12-integer-word-target.json', ROOT/'evidence/q12-degree22-word-target.json']
-    result = dict(scope='Two integer q12 points of the declared necessary relaxation, without realizing tensors.',
+    result = dict(scope='Two historical integer q12 points: exact formal rates and certified box-minor exclusions.',
                   certificates=[certificate(path) for path in paths])
     if args.output:
         args.output.write_text(json.dumps(result, indent=2)+'\n')

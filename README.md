@@ -2614,10 +2614,12 @@ singular channels and extends the old second-jet bound. Run
 relaxation and its rejection. No stronger factoring bound is established.
 
 [Integer twelve-letter points of degrees 22 and 24](research/q12-integer-word-target.md)
-survive every declared cofactor and higher-word constraint. At rational
+survive the newer cofactor and higher-word constraints but are **excluded
+by the earlier box-minor budgets**: their `2 by 12` boxes require
+`535<=528` and `585<=576`, respectively. At rational
 scales `57/46` and `17/14`, direct integer arithmetic proves formal bare
 rates below `7071/10000` and `707/1000`, both below `1/sqrt(2)`.
-No polynomial tensor realizing either point is known. Run
+Those formal rates cannot be realized by bare polynomial crossings. Run
 `make verify-q12-integer-word-target`; the factoring score remains **1/2**.
 
 The [latest full verification receipt](evidence/higher-words-full-verification.json)
