@@ -722,6 +722,17 @@ verify-joint-residue-retiming:
 .PHONY: verify-observable-constructors verify-prime-constructors
 .PHONY: verify-frobenius-stars
 .PHONY: verify-finite-crossing-certificates
+.PHONY: verify-stable-hot-codes verify-hot64-certificate
+verify-stable-hot-codes:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_implicit_reflection_codes.py --output /tmp/integer-factoring-implicit-hot.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_reflection_natural_cut_duality.py --output /tmp/integer-factoring-natural-duality.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_hot_code_charge_profiles.py --output /tmp/integer-factoring-hot-charge.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_weighted_hot_compounds.py --output /tmp/integer-factoring-weighted-compound.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_weighted_hot_code_oracle.py --output /tmp/integer-factoring-weighted-hot-oracle.json
+
+verify-hot64-certificate:
+	OPENBLAS_NUM_THREADS=1 python3 tools/certify_hot_charge_pressure.py --size 64 --modes 12 --base 459 460 --support 64 45 --output /tmp/integer-factoring-hot64-certificate.json
+
 verify-finite-crossing-certificates:
 	OPENBLAS_NUM_THREADS=1 python3 tools/check_finite_block_amplification.py --output /tmp/integer-factoring-finite-amplification.json
 	OPENBLAS_NUM_THREADS=1 python3 tools/check_finite_typed_adaptive_certificate.py --output /tmp/integer-factoring-finite-typed.json

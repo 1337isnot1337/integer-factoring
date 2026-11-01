@@ -1,0 +1,91 @@
+{
+  "scope": "Exact uniform natural-cut duality and downset compound reduction; no new factoring exponent.",
+  "source_sha256": {
+    "check_reflection_natural_cut_duality.py": "866ab3a45fd5f886679c00cb15b14040e995f687e094b4a621ec3d6448889653",
+    "restrict_implicit_reflection.py": "c4c974317bbb30ec7fdc5e9c3abeb0857bc4d61231837bc7f99bb890d13afbd3",
+    "reflection_dual_rail_gaussian.py": "6d4780f02b9479d2473c823f74c4749f47e1db0bd32e5318bd601bdd51010a38",
+    "check_schur_gaussian_reduction.py": "724d15fc83fad5bebade19ded5c6be49744f89aabbe52058c52089edcefd244c"
+  },
+  "counts": {
+    "kernel_entry_identities": 87360,
+    "complete_coefficient_dualities": 4388,
+    "polynomial_factorization_entries": 473,
+    "compound_endpoint_entries": 217,
+    "off_charge_zero_entries": 136,
+    "non_downset_countercontrols": 1
+  },
+  "downset_cases": [
+    {
+      "first_code": [
+        0,
+        1,
+        2
+      ],
+      "second_code": [
+        0,
+        1,
+        2
+      ],
+      "cut_dimension": 9
+    },
+    {
+      "first_code": [
+        0,
+        1,
+        2
+      ],
+      "second_code": [
+        0,
+        1
+      ],
+      "cut_dimension": 6
+    },
+    {
+      "first_code": [
+        0,
+        2
+      ],
+      "second_code": [
+        0,
+        1,
+        2
+      ],
+      "cut_dimension": 6
+    },
+    {
+      "first_code": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "second_code": [
+        0,
+        2
+      ],
+      "cut_dimension": 8
+    }
+  ],
+  "full_profile_symmetry_controls": [
+    {
+      "path": "evidence/implicit-reflection-code-controls.json",
+      "sha256": "c26c9cca4d8fe62f6176739350e935b70d8eb3dd1db83468409be3b49dd78f1c",
+      "channels_per_cut": 256,
+      "opposite_shifts": [
+        -40,
+        40
+      ]
+    },
+    {
+      "path": "evidence/stable-hot-code-rational-pressure.json",
+      "sha256": "61579297015dd7c94e19036b607707f0fa8edee02c4fa879b2d72283c06cbd3c",
+      "channels_per_cut": 576,
+      "opposite_shifts": [
+        -56,
+        56
+      ]
+    }
+  ],
+  "non_downset_difference": 4352,
+  "passed": true
+}

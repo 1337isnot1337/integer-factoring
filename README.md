@@ -194,6 +194,19 @@ traces. Every even degree cap also gives an explicit strict crossing
 with scalar content one. Complete profiles remain necessary: the finished
 four-letter cap search does not improve the best crossing parameter.
 
+[Small physical codes in larger reflection intervals](research/stable-hot-reflection-codes.md)
+give stronger finite-alphabet inputs. Their primitive tensors stabilize
+once the retained energies lie below an explicit bound. Exact
+[natural-cut duality](research/reflection-natural-cut-duality.md) and
+[occupation blocks](research/hot-code-charge-profile-constructor.md)
+compute both complete profiles without constructing the ambient tensor.
+The sixty-four-letter code has an
+[exact certificate `rho < 32/45`](research/hot64-rational-pressure.md),
+proved by a strict integer comparison; its numerical natural optimum is
+about `0.71059036`. This remains above `1/sqrt(2)`, so the factoring score
+is unchanged. An [explicit integrality cone](research/weighted-hot-compound-profiles.md)
+also permits complete full-letter weighted profiles through the same blocks.
+
 The [multiplicative-monoid decomposition](research/multiplicative-monoid-blocks.md)
 retains the characteristic-two nilpotent coordinates and decomposes every
 odd-modulus multiplication algebra into explicit truncated polynomial
@@ -270,6 +283,8 @@ make verify-observable-constructors # Boolean boundary tables and exact polynomi
 make verify-prime-constructors # Narrow primes, width-sensitive schedule, and elementary factor recovery
 make verify-frobenius-stars # Exact field/torus sums, infinity correction, and cyclic-algebra compatibility
 make verify-finite-crossing-certificates # Exact finite block to all-width amplification and adaptive gates
+make verify-stable-hot-codes # Exact restrictions, natural duality, charge blocks, and weighted-cone controls
+make verify-hot64-certificate # Reconstruct all 4096 channels and the exact rho < 32/45 comparison
 make verify-coupled-searches # Completed search replays and exact affine determinant change
 make verify-schur-fermion # Complete Schur entry formulas and exact comparisons
 make verify-schur-central # Hook-residue identities and full Schur ranks through weight 8
