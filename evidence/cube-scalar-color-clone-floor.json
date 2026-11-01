@@ -1,0 +1,748 @@
+{
+  "status": "passed",
+  "minimum_colors": 33,
+  "minimum_physical_alphabet": 34,
+  "strict_profile_floor": "3/4",
+  "quotient_degree": 9,
+  "newton_expansion_base": 33,
+  "positive_coefficient_newton_table": [
+    [
+      33,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      198,
+      6,
+      0,
+      0,
+      0
+    ],
+    [
+      396,
+      12,
+      0,
+      0,
+      0
+    ],
+    [
+      528,
+      33,
+      1,
+      0,
+      0
+    ],
+    [
+      1782,
+      156,
+      6,
+      0,
+      0
+    ],
+    [
+      1881,
+      210,
+      9,
+      0,
+      0
+    ],
+    [
+      176,
+      300,
+      29,
+      1,
+      0
+    ],
+    [
+      3102,
+      825,
+      78,
+      3,
+      0
+    ],
+    [
+      5973,
+      963,
+      81,
+      3,
+      0
+    ],
+    [
+      7634,
+      2447,
+      352,
+      28,
+      1
+    ]
+  ],
+  "additional_coefficient_controls": 80,
+  "color_blocks": {
+    "1": [
+      {
+        "partition": [],
+        "multiplicity": 1,
+        "block_size": 1
+      },
+      {
+        "partition": [
+          1
+        ],
+        "multiplicity": 1,
+        "block_size": 4
+      },
+      {
+        "partition": [
+          2
+        ],
+        "multiplicity": 1,
+        "block_size": 6
+      },
+      {
+        "partition": [
+          3
+        ],
+        "multiplicity": 1,
+        "block_size": 4
+      },
+      {
+        "partition": [
+          4
+        ],
+        "multiplicity": 1,
+        "block_size": 1
+      }
+    ],
+    "2": [
+      {
+        "partition": [],
+        "multiplicity": 1,
+        "block_size": 1
+      },
+      {
+        "partition": [
+          1
+        ],
+        "multiplicity": 2,
+        "block_size": 4
+      },
+      {
+        "partition": [
+          1,
+          1
+        ],
+        "multiplicity": 1,
+        "block_size": 12
+      },
+      {
+        "partition": [
+          2
+        ],
+        "multiplicity": 2,
+        "block_size": 6
+      },
+      {
+        "partition": [
+          1,
+          2
+        ],
+        "multiplicity": 2,
+        "block_size": 12
+      },
+      {
+        "partition": [
+          3
+        ],
+        "multiplicity": 2,
+        "block_size": 4
+      },
+      {
+        "partition": [
+          1,
+          3
+        ],
+        "multiplicity": 2,
+        "block_size": 4
+      },
+      {
+        "partition": [
+          2,
+          2
+        ],
+        "multiplicity": 1,
+        "block_size": 6
+      },
+      {
+        "partition": [
+          4
+        ],
+        "multiplicity": 2,
+        "block_size": 1
+      }
+    ],
+    "3": [
+      {
+        "partition": [],
+        "multiplicity": 1,
+        "block_size": 1
+      },
+      {
+        "partition": [
+          1
+        ],
+        "multiplicity": 3,
+        "block_size": 4
+      },
+      {
+        "partition": [
+          1,
+          1
+        ],
+        "multiplicity": 3,
+        "block_size": 12
+      },
+      {
+        "partition": [
+          2
+        ],
+        "multiplicity": 3,
+        "block_size": 6
+      },
+      {
+        "partition": [
+          1,
+          1,
+          1
+        ],
+        "multiplicity": 1,
+        "block_size": 24
+      },
+      {
+        "partition": [
+          1,
+          2
+        ],
+        "multiplicity": 6,
+        "block_size": 12
+      },
+      {
+        "partition": [
+          3
+        ],
+        "multiplicity": 3,
+        "block_size": 4
+      },
+      {
+        "partition": [
+          1,
+          1,
+          2
+        ],
+        "multiplicity": 3,
+        "block_size": 12
+      },
+      {
+        "partition": [
+          1,
+          3
+        ],
+        "multiplicity": 6,
+        "block_size": 4
+      },
+      {
+        "partition": [
+          2,
+          2
+        ],
+        "multiplicity": 3,
+        "block_size": 6
+      },
+      {
+        "partition": [
+          4
+        ],
+        "multiplicity": 3,
+        "block_size": 1
+      }
+    ],
+    "4": [
+      {
+        "partition": [],
+        "multiplicity": 1,
+        "block_size": 1
+      },
+      {
+        "partition": [
+          1
+        ],
+        "multiplicity": 4,
+        "block_size": 4
+      },
+      {
+        "partition": [
+          1,
+          1
+        ],
+        "multiplicity": 6,
+        "block_size": 12
+      },
+      {
+        "partition": [
+          2
+        ],
+        "multiplicity": 4,
+        "block_size": 6
+      },
+      {
+        "partition": [
+          1,
+          1,
+          1
+        ],
+        "multiplicity": 4,
+        "block_size": 24
+      },
+      {
+        "partition": [
+          1,
+          2
+        ],
+        "multiplicity": 12,
+        "block_size": 12
+      },
+      {
+        "partition": [
+          3
+        ],
+        "multiplicity": 4,
+        "block_size": 4
+      },
+      {
+        "partition": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "multiplicity": 1,
+        "block_size": 24
+      },
+      {
+        "partition": [
+          1,
+          1,
+          2
+        ],
+        "multiplicity": 12,
+        "block_size": 12
+      },
+      {
+        "partition": [
+          1,
+          3
+        ],
+        "multiplicity": 12,
+        "block_size": 4
+      },
+      {
+        "partition": [
+          2,
+          2
+        ],
+        "multiplicity": 6,
+        "block_size": 6
+      },
+      {
+        "partition": [
+          4
+        ],
+        "multiplicity": 4,
+        "block_size": 1
+      }
+    ],
+    "7": [
+      {
+        "partition": [],
+        "multiplicity": 1,
+        "block_size": 1
+      },
+      {
+        "partition": [
+          1
+        ],
+        "multiplicity": 7,
+        "block_size": 4
+      },
+      {
+        "partition": [
+          1,
+          1
+        ],
+        "multiplicity": 21,
+        "block_size": 12
+      },
+      {
+        "partition": [
+          2
+        ],
+        "multiplicity": 7,
+        "block_size": 6
+      },
+      {
+        "partition": [
+          1,
+          1,
+          1
+        ],
+        "multiplicity": 35,
+        "block_size": 24
+      },
+      {
+        "partition": [
+          1,
+          2
+        ],
+        "multiplicity": 42,
+        "block_size": 12
+      },
+      {
+        "partition": [
+          3
+        ],
+        "multiplicity": 7,
+        "block_size": 4
+      },
+      {
+        "partition": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "multiplicity": 35,
+        "block_size": 24
+      },
+      {
+        "partition": [
+          1,
+          1,
+          2
+        ],
+        "multiplicity": 105,
+        "block_size": 12
+      },
+      {
+        "partition": [
+          1,
+          3
+        ],
+        "multiplicity": 42,
+        "block_size": 4
+      },
+      {
+        "partition": [
+          2,
+          2
+        ],
+        "multiplicity": 21,
+        "block_size": 6
+      },
+      {
+        "partition": [
+          4
+        ],
+        "multiplicity": 7,
+        "block_size": 1
+      }
+    ],
+    "33": [
+      {
+        "partition": [],
+        "multiplicity": 1,
+        "block_size": 1
+      },
+      {
+        "partition": [
+          1
+        ],
+        "multiplicity": 33,
+        "block_size": 4
+      },
+      {
+        "partition": [
+          1,
+          1
+        ],
+        "multiplicity": 528,
+        "block_size": 12
+      },
+      {
+        "partition": [
+          2
+        ],
+        "multiplicity": 33,
+        "block_size": 6
+      },
+      {
+        "partition": [
+          1,
+          1,
+          1
+        ],
+        "multiplicity": 5456,
+        "block_size": 24
+      },
+      {
+        "partition": [
+          1,
+          2
+        ],
+        "multiplicity": 1056,
+        "block_size": 12
+      },
+      {
+        "partition": [
+          3
+        ],
+        "multiplicity": 33,
+        "block_size": 4
+      },
+      {
+        "partition": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "multiplicity": 40920,
+        "block_size": 24
+      },
+      {
+        "partition": [
+          1,
+          1,
+          2
+        ],
+        "multiplicity": 16368,
+        "block_size": 12
+      },
+      {
+        "partition": [
+          1,
+          3
+        ],
+        "multiplicity": 1056,
+        "block_size": 4
+      },
+      {
+        "partition": [
+          2,
+          2
+        ],
+        "multiplicity": 528,
+        "block_size": 6
+      },
+      {
+        "partition": [
+          4
+        ],
+        "multiplicity": 33,
+        "block_size": 1
+      }
+    ],
+    "255": [
+      {
+        "partition": [],
+        "multiplicity": 1,
+        "block_size": 1
+      },
+      {
+        "partition": [
+          1
+        ],
+        "multiplicity": 255,
+        "block_size": 4
+      },
+      {
+        "partition": [
+          1,
+          1
+        ],
+        "multiplicity": 32385,
+        "block_size": 12
+      },
+      {
+        "partition": [
+          2
+        ],
+        "multiplicity": 255,
+        "block_size": 6
+      },
+      {
+        "partition": [
+          1,
+          1,
+          1
+        ],
+        "multiplicity": 2731135,
+        "block_size": 24
+      },
+      {
+        "partition": [
+          1,
+          2
+        ],
+        "multiplicity": 64770,
+        "block_size": 12
+      },
+      {
+        "partition": [
+          3
+        ],
+        "multiplicity": 255,
+        "block_size": 4
+      },
+      {
+        "partition": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "multiplicity": 172061505,
+        "block_size": 24
+      },
+      {
+        "partition": [
+          1,
+          1,
+          2
+        ],
+        "multiplicity": 8193405,
+        "block_size": 12
+      },
+      {
+        "partition": [
+          1,
+          3
+        ],
+        "multiplicity": 64770,
+        "block_size": 4
+      },
+      {
+        "partition": [
+          2,
+          2
+        ],
+        "multiplicity": 32385,
+        "block_size": 6
+      },
+      {
+        "partition": [
+          4
+        ],
+        "multiplicity": 255,
+        "block_size": 1
+      }
+    ],
+    "1000000000": [
+      {
+        "partition": [],
+        "multiplicity": 1,
+        "block_size": 1
+      },
+      {
+        "partition": [
+          1
+        ],
+        "multiplicity": 1000000000,
+        "block_size": 4
+      },
+      {
+        "partition": [
+          1,
+          1
+        ],
+        "multiplicity": 499999999500000000,
+        "block_size": 12
+      },
+      {
+        "partition": [
+          2
+        ],
+        "multiplicity": 1000000000,
+        "block_size": 6
+      },
+      {
+        "partition": [
+          1,
+          1,
+          1
+        ],
+        "multiplicity": 166666666166666667000000000,
+        "block_size": 24
+      },
+      {
+        "partition": [
+          1,
+          2
+        ],
+        "multiplicity": 999999999000000000,
+        "block_size": 12
+      },
+      {
+        "partition": [
+          3
+        ],
+        "multiplicity": 1000000000,
+        "block_size": 4
+      },
+      {
+        "partition": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "multiplicity": 41666666416666667124999999750000000,
+        "block_size": 24
+      },
+      {
+        "partition": [
+          1,
+          1,
+          2
+        ],
+        "multiplicity": 499999998500000001000000000,
+        "block_size": 12
+      },
+      {
+        "partition": [
+          1,
+          3
+        ],
+        "multiplicity": 999999999000000000,
+        "block_size": 4
+      },
+      {
+        "partition": [
+          2,
+          2
+        ],
+        "multiplicity": 499999999500000000,
+        "block_size": 6
+      },
+      {
+        "partition": [
+          4
+        ],
+        "multiplicity": 1000000000,
+        "block_size": 1
+      }
+    ]
+  },
+  "source_sha256": "c84950243fa0a2d8402844ecc56a80f81bdb49f29ac07397173b97a0791eed15",
+  "scope": "Every homogeneous scalar Gaussian kernel replicated over independent colors; vacuum/single-particle letters; common physical type and common-scale unweighted profiles.",
+  "factoring_exponent": "1/2; unchanged"
+}

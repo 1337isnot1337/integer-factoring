@@ -167,6 +167,18 @@ exclude the common-scale unweighted degree-cap criterion through eight axes.
 At nine axes an explicit integer profile satisfies these budgets and has
 pressure below `1/3`; constructing a realizing kernel remains open.
 Run `make verify-four-axis-floor verify-weighted-four-axis-floor verify-multiaxis-floor`.
+
+[Shared endpoint minors](research/cube-homogeneous-profile-budget.md) now
+prove `rho > 3/5` for every homogeneous binary cube tensor under the common
+unweighted profile estimate, without a Gaussian assumption. The same floor
+holds for [arbitrarily many equally weighted full-Fock modes](research/cube-equal-height-fock-floor.md)
+with arbitrary Gaussian color mixing.
+[Graded prefix budgets](research/cube-graded-minor-budget.md) exclude the
+four-letter grading `0,1,3,4`, but admit a 256-letter **abstract profile**
+below `72/125 < 1/sqrt(3)`; no tensor realizing it is claimed.
+[Scalar color clones](research/cube-scalar-color-clone-floor.md) cannot
+realize that target: for at least 33 colors their profile pressure exceeds
+`3/4`. Proper interacting codes remain a constructive direction.
 <!-- cube-transfer-checkpoint:end -->
 
 ## Results and evidence

@@ -2045,3 +2045,11 @@ verify-pole-cauchy-general-weights:
 	python3 tools/check_pole_cauchy_rational_weights.py --output /tmp/integer-factoring-pole-cauchy-rational-weights.json
 	python3 tools/check_pole_cauchy_restricted_kernels.py --output /tmp/integer-factoring-pole-cauchy-restricted-kernels.json
 	python3 tools/check_rational_interval_selector_bound.py --output /tmp/integer-factoring-rational-interval-selector-bound.json
+
+
+.PHONY: verify-cube-shared-budgets
+verify-cube-shared-budgets:
+	python3 tools/check_cube_homogeneous_profile_budget.py --output /tmp/integer-factoring-cube-homogeneous-profile-budget.json
+	python3 tools/check_cube_graded_minor_budget.py --output /tmp/integer-factoring-cube-graded-minor-budget.json
+	python3 tools/check_cube_scalar_color_clone_floor.py --output /tmp/integer-factoring-cube-scalar-color-clone-floor.json
+	python3 tools/check_cube_equal_height_fock_floor.py --output /tmp/integer-factoring-cube-equal-height-fock-floor.json

@@ -1,0 +1,240 @@
+{
+  "status": "passed",
+  "compressed_prefix_controls": 19072,
+  "four_letter_obstruction": {
+    "letter_heights": [
+      0,
+      1,
+      3,
+      4
+    ],
+    "homogeneous_energy_multiplier": 3,
+    "profile_blocks": [
+      {
+        "multiplicity": 1,
+        "order": [
+          0,
+          1
+        ]
+      },
+      {
+        "multiplicity": 1,
+        "order": [
+          2,
+          1
+        ]
+      },
+      {
+        "multiplicity": 1,
+        "order": [
+          4,
+          1
+        ]
+      },
+      {
+        "multiplicity": 1,
+        "order": [
+          6,
+          1
+        ]
+      },
+      {
+        "multiplicity": 2,
+        "order": [
+          9,
+          1
+        ]
+      },
+      {
+        "multiplicity": 4,
+        "order": [
+          12,
+          1
+        ]
+      },
+      {
+        "multiplicity": 2,
+        "order": [
+          15,
+          1
+        ]
+      },
+      {
+        "multiplicity": 1,
+        "order": [
+          18,
+          1
+        ]
+      },
+      {
+        "multiplicity": 6,
+        "order": [
+          19,
+          1
+        ]
+      },
+      {
+        "multiplicity": 17,
+        "order": [
+          24,
+          1
+        ]
+      },
+      {
+        "multiplicity": 24,
+        "order": [
+          30,
+          1
+        ]
+      },
+      {
+        "multiplicity": 22,
+        "order": [
+          36,
+          1
+        ]
+      },
+      {
+        "multiplicity": 28,
+        "order": [
+          42,
+          1
+        ]
+      },
+      {
+        "multiplicity": 36,
+        "order": [
+          48,
+          1
+        ]
+      },
+      {
+        "multiplicity": 28,
+        "order": [
+          54,
+          1
+        ]
+      },
+      {
+        "multiplicity": 22,
+        "order": [
+          60,
+          1
+        ]
+      },
+      {
+        "multiplicity": 24,
+        "order": [
+          66,
+          1
+        ]
+      },
+      {
+        "multiplicity": 17,
+        "order": [
+          72,
+          1
+        ]
+      },
+      {
+        "multiplicity": 8,
+        "order": [
+          78,
+          1
+        ]
+      },
+      {
+        "multiplicity": 6,
+        "order": [
+          84,
+          1
+        ]
+      },
+      {
+        "multiplicity": 4,
+        "order": [
+          90,
+          1
+        ]
+      },
+      {
+        "multiplicity": 1,
+        "order": [
+          96,
+          1
+        ]
+      }
+    ],
+    "strict_pressure_floor": "7/12",
+    "all_scale_certificate": {
+      "leading_degree": 14,
+      "quotient_degree": 2002,
+      "positive_coefficients": 2003,
+      "minimum_positive_coefficient": 3,
+      "coefficient_encoding": "eight-byte length followed by unsigned big-endian integer",
+      "positive_coefficients_sha256": "fc128abf1b1582f532ce3c1f33630b9f129dcd0aba61ffaf070ec66dd5f1c193"
+    }
+  },
+  "large_abstract_profile": {
+    "alphabet": 256,
+    "nonzero_height": 1,
+    "homogeneous_energy_multiplier": 3,
+    "profile_order_multiplicity": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        255
+      ],
+      [
+        4,
+        255
+      ],
+      [
+        6,
+        65025
+      ],
+      [
+        13,
+        262650
+      ],
+      [
+        14,
+        62985
+      ],
+      [
+        18,
+        66325500
+      ],
+      [
+        24,
+        4228250625
+      ]
+    ],
+    "scale": [
+      6,
+      13
+    ],
+    "nonzero_fraction": [
+      19,
+      20
+    ],
+    "nonzero_letter_distribution": "uniform on all 255 nonzero letters",
+    "strict_pressure_upper_bound": "72/125",
+    "partition_numerator": "436852945423061196670294793101",
+    "partition_denominator": "542800770374370512771595361",
+    "comparison_left_bits": 269403,
+    "comparison_right_bits": 269472,
+    "comparison_left_sha256": "9d9874733de021c6eb1377326900a3be3614ed9039cbe8d013da9c9668f29901",
+    "comparison_right_sha256": "31c65f048bbaa9f3a1799c505f32c91205dce06372c2cca7c36395022944ebf2",
+    "satisfies_all_shared_prefix_budgets": true,
+    "actual_tensor_constructed": false,
+    "scope": "Feasibility of the abstract necessary profile budgets only."
+  },
+  "source_sha256": {
+    "cube_graded_minor_budget.py": "930d32ddec53b5692cef627f1d40986c8e5535beb6cd142a13b58af9d28bdc00",
+    "check_cube_graded_minor_budget.py": "26f8d36dd1da971bd9cb7855c6353dce95b8e8501d4e218796bff64701694df1"
+  }
+}

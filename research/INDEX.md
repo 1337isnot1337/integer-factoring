@@ -1112,3 +1112,11 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 - [All explicit separated rational weights](pole-cauchy-rational-weights.md)
 - [Regular joint kernels inside inverse residue blocks](pole-cauchy-restricted-kernels.md)
 - [Ordinary interval selectors require a large explicit rational representation](rational-interval-selector-bound.md)
+
+
+## Shared cube minors and larger-alphabet targets
+
+- [A profile floor for every homogeneous binary cube tensor](cube-homogeneous-profile-budget.md)
+- [Shared-minor budgets for graded cube alphabets](cube-graded-minor-budget.md)
+- [A uniform floor for scalar Gaussian color clones](cube-scalar-color-clone-floor.md)
+- [A Gaussian cube floor for every equally weighted Fock alphabet](cube-equal-height-fock-floor.md)
