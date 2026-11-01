@@ -1,0 +1,68 @@
+{
+  "source": "2307634",
+  "imported_code_AST_identical_to": "38bb52b after excluding CLI main",
+  "recomputed_records": [
+    {
+      "name": "energy_conjugations",
+      "mathematical_payload_identical": true,
+      "changed_sources": []
+    },
+    {
+      "name": "leading_tangent",
+      "mathematical_payload_identical": true,
+      "changed_sources": []
+    },
+    {
+      "name": "energy_dressings",
+      "mathematical_payload_identical": true,
+      "changed_sources": []
+    },
+    {
+      "name": "energy_riccati",
+      "mathematical_payload_identical": true,
+      "changed_sources": []
+    },
+    {
+      "name": "polynomial_tangent",
+      "mathematical_payload_identical": true,
+      "changed_sources": []
+    },
+    {
+      "name": "monomial_lattices",
+      "mathematical_payload_identical": true,
+      "changed_sources": []
+    },
+    {
+      "name": "projector_lattices",
+      "mathematical_payload_identical": true,
+      "changed_sources": []
+    },
+    {
+      "name": "evaluation_algebra",
+      "mathematical_payload_identical": true,
+      "changed_sources": []
+    },
+    {
+      "name": "endpoint_loops",
+      "mathematical_payload_identical": true,
+      "changed_sources": []
+    },
+    {
+      "name": "nilpotent_depths",
+      "mathematical_payload_identical": true,
+      "changed_sources": []
+    },
+    {
+      "name": "filtered_gauges",
+      "mathematical_payload_identical": true,
+      "changed_sources": []
+    },
+    {
+      "name": "graded_newton",
+      "mathematical_payload_identical": true,
+      "changed_sources": []
+    }
+  ],
+  "scope": "All twelve mathematical payloads were recomputed by the local author checkers and compared exactly, excluding source fingerprints; no independent mathematical review or new whole-suite pass for this integration.",
+  "local_author_replay": true
+}
