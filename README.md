@@ -225,6 +225,10 @@ At a fixed energy boundary, [coherent paired compressions](research/coherent-hot
 allow linear combinations of physical states. An explicit eight-letter
 code has the exact certificate `rho < 18/25`; the complete declared
 396-idempotent grid and its literal winner replays are archived.
+The [resumed physical-frame checkpoint](research/root-worker-search-checkpoint.md)
+preserves all 6,722 saved candidate outcomes, the declared continuation
+budgets, complete family winners, and separate exact replays of the
+independent-charge, dense-target, and truncated-affine results.
 
 The [multiplicative-monoid decomposition](research/multiplicative-monoid-blocks.md)
 retains the characteristic-two nilpotent coordinates and decomposes every
@@ -311,6 +315,7 @@ make verify-closed-place-oracles # All-channel unequal-alphabet local-order cont
 make verify-filtered-affine-search # Reconstruct complete sixteen-letter search tensors
 make verify-laurent-search # Replay the complete 65536-word Laurent screen
 make verify-coherent-boundary # Exact small-code certificate and complete finite boundary grid
+make verify-root-worker-searches # Replay saved physical winners, target systems, and continuations
 make verify-coupled-searches # Completed search replays and exact affine determinant change
 make verify-schur-fermion # Complete Schur entry formulas and exact comparisons
 make verify-schur-central # Hook-residue identities and full Schur ranks through weight 8

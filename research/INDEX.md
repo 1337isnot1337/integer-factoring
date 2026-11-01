@@ -16,6 +16,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Resumed physical-frame and target searches](root-worker-search-checkpoint.md): 6,722 saved candidate outcomes, explicit continuation lineage, complete winners, and separately scoped charge, Laurent, Hasse, dense-target, and truncated-fiber replays.
+
 - [Coherent hot-boundary crossings](coherent-hot-boundary-crossings.md): exact paired compression at equal energy gives `rho < 18/25` on eight letters, with a complete 396-idempotent finite grid and independent literal winner checks.
 - [Bounded polynomial-shift closure](polynomial-shift-affine-closure.md): the subsidiary constant-companion space closes at dimension 3,674 under degree-preserving shifts, with a complete compressed basis and fixed-point checks.
 

@@ -867,3 +867,8 @@ verify-coherent-boundary:
 	OPENBLAS_NUM_THREADS=1 python3 tools/check_coherent_hot_boundary.py --output /tmp/integer-factoring-coherent-hot8.json
 	OPENBLAS_NUM_THREADS=1 python3 tools/checkpoint_coherent_hot_boundaries.py --output /tmp/integer-factoring-coherent-boundary-search.json
 
+.PHONY: verify-root-worker-searches
+
+verify-root-worker-searches:
+	OPENBLAS_NUM_THREADS=1 python3 tools/checkpoint_root_worker_searches.py --output /tmp/integer-factoring-root-worker-searches.json
+
