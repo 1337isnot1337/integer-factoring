@@ -1033,3 +1033,8 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 - [The sharp precision cost of analytic residue selectors](regular-analytic-selector-precision.md)
 
 - [Polynomial precision for explicit unions of odd arithmetic progressions](pole-cauchy-domain-precision.md)
+
+## Dynamic prime saturation and uniform hitting criteria
+
+- [Prime-cofactor saturation with exact integer elimination](prime-cofactor-saturation.md)
+- [Cyclic-subgroup lower-tail moments force every shifted window to hit](cofactor-orbit-moment-criterion.md)
