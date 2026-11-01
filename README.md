@@ -1757,6 +1757,8 @@ The [full-tail active-core reduction](research/coherent-full-tail-core.md) repla
 
 The [fixed rational-frame transfer](research/fixed-rational-frame-transfer.md) proves polynomial coefficient-splitting overhead for a fixed rational local factorization that is regular at the selected cut variable. It permits generic multivariate Smith calculations beyond finite Laurent frames, with uniform coefficient algorithms and separate expansion cones for different cuts. It supplies an additional construction tool, not a stronger local spectrum or factoring score.
 
+The [physical full-tail reduction](research/coherent-physical-tail-low-band.md) retains the internal Gaussian factors for arbitrary constant low-mode physical maps and bounded label gauges. It reduces every sufficiently long tail to an explicit `8k`-mode core. Complete exact checks over the nonzero F4 functionals at `k=2` show that all 16 low channels survive; the resulting natural-pressure expansion approaches the critical value from above in the stated asymptotic window. Finite-tail, other-field, and broader-gauge constructions remain open.
+
 ## Contribution and attribution
 
 Start with the [contributor quickstart](docs/START_HERE.md) and

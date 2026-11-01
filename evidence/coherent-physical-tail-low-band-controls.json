@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "factoring_exponent_improved": false,
+  "exact_field_pair_checks": 57800,
+  "native_check": {
+    "independent_nonsingular_minors": 57800,
+    "minor_order": 16,
+    "field_order": 256
+  },
+  "witness_bytes_sha256": "d0cf6c6bf5c04a0e1d6aa2b2fb94abe20f7543899886806b9b1fd7908ba91b05",
+  "receipt_sha256": "6165b66335c0a3915d9ede1704aa5ef2d7a0680a15ac230ef3ee8ca58a0bdcbc",
+  "source_sha256": {
+    "check_coherent_physical_tail_low_band.py": "dac68095c65961800ab1efe9645db13d3850dc31219c0af753a03c63f94774f4",
+    "coherent_physical_tail_low_band_check.cpp": "7d307e3ad6a5e9d8dae35be0238b34be63dae44e106a857172abe0c10562f81b"
+  },
+  "scope": "All 85 by 85 nonzero F4 functional pairs, both sides and all four ambient-height weighting patterns; generic leading-band rank16, with no complete high-band profile claim."
+}

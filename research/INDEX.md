@@ -1151,3 +1151,8 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 ## Boundary-only natural-pressure limit
 
 - [Common-core pressure floor](hot-boundary-natural-pressure-floor.md): every height-25 boundary retraction retaining the 92 lower labels has natural two-place typed pressure at least 17/24, over characteristic two. Interior changes, general gauges, other places and different recombinations are outside this result.
+
+
+## Physical full-tail cores and surviving low channels
+
+- [Physical full-tail cores and an exact low-band calculation](coherent-physical-tail-low-band.md)

@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "factoring_exponent_improved": false,
+  "concentration": {
+    "weighted_polynomial_entries": 2704,
+    "constant_unit_ranks": 14,
+    "full_operator_entries": 20224,
+    "bivariate_specialization_entries": 11776,
+    "literal_internal_kernel_entries": 21632
+  },
+  "literal_control": {
+    "literal_transformed_matrix_entries": 262144,
+    "physical_code_rank": 1,
+    "physical_code_is_nonhomogeneous": true,
+    "opposite_cut_hot_weights_checked": true
+  }
+}
