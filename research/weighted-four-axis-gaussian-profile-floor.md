@@ -20,6 +20,11 @@ nonadditive physical degree bounds, coefficient-specific estimates,
 non-Gaussian tensors, and other methods of controlling actual ranks. It
 does not prove a factoring lower bound or improve the achieved exponent.
 
+The profiles in this estimate are those of the full ambient Gaussian
+cuts. A common subalphabet changes the entropy and degree charge in the
+formula. Computing smaller actual profiles after restricting the physical
+tensor is a different criterion and is not excluded by this theorem.
+
 ## 1. Weighted Gaussian setup
 
 Let each vertex `v in {0,1}^4` have `r>=1` modes. Work over a field of
