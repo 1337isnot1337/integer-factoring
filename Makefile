@@ -2303,3 +2303,7 @@ verify-recursive-symmetric-exterior-blocks:
 .PHONY: verify-bezout-count-values
 verify-bezout-count-values:
 	python3 tools/check_bezout_count_values.py --output /tmp/bezout-count-values.json
+
+.PHONY: verify-orthogonal-differential-pairs
+verify-orthogonal-differential-pairs:
+	python3 tools/check_orthogonal_differential_pairs_f4.py

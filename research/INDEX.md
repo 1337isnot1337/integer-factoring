@@ -1283,3 +1283,7 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 
 
 - [Fixed-field count values and a boundary parity provider](bezout-count-values.md): common-unit suffix values, logarithmic-precision prime-window recovery, explicit provider-cost tradeoffs, and an implemented evaluator that visits only the product-feasible interval boundary.
+
+## Orthogonal paired differential retractions
+
+[Subset Gram criterion and construction](orthogonal-differential-pair-codes.md) gives orthogonal, deletion-closed interior maps and identical natural cut profiles. Exact F4 controls find18valid column scalings among81. No new pressure or factoring claim.
