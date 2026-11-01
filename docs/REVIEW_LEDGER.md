@@ -625,3 +625,19 @@ note, index and README; no universal thirteen-letter exclusion follows.
 Focused replay and documentation checks validate this finite audit. The
 separate full run at `d159502` predates this addition. No new Lean or
 independent mathematical review is claimed.
+
+## Combined thirteen-letter necessary-profile target
+
+The [replacement target](../research/joint-bare-profile-feasibility.md) at
+degree 2000 passes the old box/adjugate and every declared newer cofactor
+family, including literal second-jet and higher-word replay. Exact rational
+arithmetic proves formal `rho<7061/10000<1/sqrt(2)`. Its
+[certificate](../evidence/q13-joint-word-target-controls.json) retains all
+minimum slacks, dyadic/rational logarithm bounds and source hashes.
+The numerical discovery is separate: one fixed-scale convex inner fit,
+32 iterations/queries, 9.03 seconds, followed by downward integer rounding.
+No optimality, polynomial realization or factoring improvement is claimed.
+The focused replay also checks 1296 affine word-majorant comparisons on
+60 abstract profiles; documentation checks pass. The ongoing full run at
+`d159502` predates this target. No new Lean or independent mathematical
+review is claimed.

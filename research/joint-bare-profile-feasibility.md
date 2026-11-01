@@ -39,3 +39,80 @@ and change mechanism; do not enlarge this profile fit or sweep alphabet sizes.
 
 No Lean or independent mathematical review is claimed. Substantial OpenAI
 assistant support.
+
+## Exact replacement target
+
+The registered fit finished after 32 iterations and 32 function queries in
+9.03 seconds; compiling the constraints took 12.14 seconds. The floating
+objective was `0.7059116982`. This is a numerical feasible fit, not an
+optimality certificate. The [complete fit receipt](../evidence/joint-q13-profile-fit.json)
+retains all iterates, the full proposed profile, limits, environment and
+source hash. Its 5,815 distinct linear rows include every compiled family;
+168 additional rows impose sortedness. Sixty abstract controls verify
+1,296 word-prefix majorant comparisons; these controls are not tensors.
+
+Multiplying the candidate by `2000*(1-1e-10)` and rounding every order
+down gives the following equal cut profiles, with `M=2000` and zero
+physical energies. Superscripts denote multiplicities:
+
+```
+0,498,727,867,983,1039,1145,1289^6,1557^13,1766^13,
+1900^13,1977^13,2080^6,2081^7,2091^26,2153^13,
+2230^13,2306^13,2365^13,2369^12,3260.
+```
+
+The [full integer point](../evidence/q13-joint-word-target.json) passes
+the original box and square-box adjugate constraints and all seven families
+in the following exact replay. Both cut orientations coincide for this
+equal-profile point.
+
+| Family | Checks | Minimum slack |
+| --- | ---: | ---: |
+| Cell/shared prefix | 170 | 0 |
+| Oriented box | 182 | 14 |
+| Oriented hereditary square adjugate | 1816 | 1864 |
+| Oriented inherited second jet | 1816 | 1864 |
+| Oriented higher-word jet | 1816 | 968 |
+| Rectangular first jet, one identical orientation | 8918 | 663 |
+| Multichannel cofactor, one identical orientation | 8918 | 592 |
+
+At the original rational scale `s=414548/413547`, the
+[independent exact checker](../tools/check_q13_joint_word_target.py) computes
+
+```
+B = s^2000 (sum_i s^(-mu_i))^2
+```
+
+as a rational number. It rounds `B` upward to denominator `2^96`, then
+uses the existing rational logarithm bounds to prove
+
+```
+10000 log(B) < 4*7061 log(13),
+2*7061^2 < 10000^2.
+```
+
+Consequently `rho_formal < 7061/10000 < 1/sqrt(2)`. The
+[receipt](../evidence/q13-joint-word-target-controls.json) retains the
+actual dyadic upper bound, rational logarithm bounds and compiler hashes;
+the numerical value about `0.7060680472` is display information only.
+Run `make verify-q13-joint-word-target` for the exact replay and the short
+majorant controls. This gate does not rerun the numerical optimizer.
+
+For completeness, the majorant construction selects actual ordered words
+of length at most `m-1`, together with arbitrarily many copies of the
+formal cap cost `m*s_2`. Each selected word has a fixed nonnegative integer
+count vector. The sum of any selected `k` costs bounds above the sum of the
+`k` smallest costs. Thus the chosen source-minimizing prefixes are global
+affine upper bounds even when the minimizing words change. Words with the
+same count vector retain their distinct multiplicities. Substituting an
+upper bound into the necessary word inequality supplies a sufficient
+linear condition for that inequality; it does not characterize the entire
+necessary relaxation.
+
+This replaces the rejected historical point with a target passing the
+**combined declared constraints**. Undiscovered compatibility conditions
+may still reject it. The next task is an actual polynomial crossing with
+complete two-cut profiles and the literal endpoint, or a structural reason
+this proposed staircase cannot occur. No further profile-only optimization
+is needed to establish that this combined relaxation remains open. The
+complete factoring score is unchanged at `1/2`.

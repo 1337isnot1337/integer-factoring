@@ -45,8 +45,10 @@ inequality and has B(s)<13^(2 sqrt 2). **Later compatibility audit:** that
 particular profile violates the newer second-jet and higher-word constraints
 and cannot be a polynomial crossing. Section 6 retains it as an exact
 witness to the limits of the constraints proved here. The bare thirteen-letter
-criterion itself remains open; no profile satisfying the combined newer
-constraints is asserted here.
+criterion itself remains open. A later
+[replacement point](joint-bare-profile-feasibility.md) satisfies all combined
+declared constraints with exact formal rate below `7061/10000`; it is not
+an actual crossing.
 
 This is a lower bound on one sufficient certificate. It is not a lower bound
 on actual coefficient ranks or on factoring time. Independent physical
@@ -374,7 +376,9 @@ The original profile and its formal pressure certificate are preserved.
 
 This rejects the recorded target, rather than proving a new universal
 thirteen-letter floor. A future construction proposal must first pass
-the combined constraints. The historical staircase had:
+the combined constraints. The [replacement target](joint-bare-profile-feasibility.md)
+does pass them, but still has no polynomial realization. The historical
+staircase had:
 
 - a single leading channel in each cut;
 - second-order channels spaced as above;

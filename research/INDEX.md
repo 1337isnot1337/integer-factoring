@@ -324,7 +324,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 - [Coarsened grid check](coarsened-grid-validation.md): exact finite integration checks for signed network grouping, orientation, composite moduli, and padded clique tables.
 
-- [Bare criterion through twelve letters](bare-seven-to-twelve-letters.md): exact box-budget certificates give rho_bare>1/sqrt(2) for 7<=q<=12 at every degree and field, with fixed auxiliaries. The recorded thirteen-letter box witness violates newer second-jet and higher-word constraints; the thirteen-letter criterion itself remains open.
+- [Bare criterion through twelve letters](bare-seven-to-twelve-letters.md): exact box-budget certificates give rho_bare>1/sqrt(2) for 7<=q<=12 at every degree and field, with fixed auxiliaries. The old thirteen-letter box witness violates newer jet constraints; a [replacement combined target](joint-bare-profile-feasibility.md) passes all declared families with formal rho below `7061/10000`, without a realizing tensor.
 
 - [Auxiliary binary gauge floor](auxiliary-binary-gauge-floor.md): the gauged binary floor extends to matrix-valued Laurent seeds of every fixed auxiliary dimension with independent rational auxiliary conjugation gauges at the two places, by dominating the rectangular Smith orders coordinatewise with a twisted scalar boundary contraction; an explicit seed shows that no constant contraction dominates at both places and that a boundary contraction `f^T K e` can have strictly larger pressure.
 
