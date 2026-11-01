@@ -1,5 +1,7 @@
 # Research index
 
+- [Correlated symbol potentials and coordinate Pascal alphabets](pascal-symbol-potentials.md): arbitrary whole-symbol gauges with the complete original-polynomial profiles, a typed endpoint proof for every coordinate restriction, 740 independent integer orders, and a registered 339-case numerical screen; no score improvement.
+
 - [Free physical gauges for arbitrary Pascal exponent permutations](permuted-pascal-free-gauges.md): a constructive search outside the explicit infinity cone, with 2,144 independently reconstructed original-Fock orders and optional native-profile comparisons; no improved factoring exponent.
 
 ## A three-axis crossing interface

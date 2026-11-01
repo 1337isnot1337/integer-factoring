@@ -1,5 +1,11 @@
 # Deterministic integer factoring bounds
 
+The [whole-symbol Pascal evaluator](research/pascal-symbol-potentials.md)
+allows correlated occupation-word weights and arbitrary coordinate
+subalphabets. Its 740 independent integer-order comparisons and registered
+339-case screen support a further constructive search; they establish no
+stronger uniform bound.
+
 The [free-gauge Pascal search](research/permuted-pascal-free-gauges.md)
 now supports arbitrary exponent permutations with both complete cut
 profiles and both physical costs. Independent original-polynomial

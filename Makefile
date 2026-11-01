@@ -2340,3 +2340,7 @@ verify-permuted-pascal-dominance:
 .PHONY: verify-permuted-pascal-free-gauges
 verify-permuted-pascal-free-gauges:
 	python3 tools/check_permuted_pascal_free_gauges.py --output /tmp/permuted-pascal-free-gauges.json
+
+.PHONY: verify-pascal-letter-gauges
+verify-pascal-letter-gauges:
+	python3 tools/check_pascal_letter_gauges.py --output /tmp/pascal-letter-gauge-controls.json
