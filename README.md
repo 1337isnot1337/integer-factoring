@@ -35,7 +35,9 @@ This is an asymptotic worst-case bound, not a practical factoring speedup.
 
 **Tensor and crossing route.** A new ordinary-proof regrouping uses the existing three-axis Gaussian cube family at growth base two: pair its eight legs into four super-legs and charge, per cube, the smallest of its three cut factorizations. The certified `rho < 5/8` (and the sharper `0.6247...`) then give `alpha >= log_2(8/5) > 1/2`. The one-cut regrouping lemma, its checks, and the inherited inputs are in [the two-axis regrouping note](research/two-axis-cube-regrouping.md). This claim has not been independently reviewed. Earlier searches for a crossing at `rho < 1/sqrt(2)` are summarized in [directions beyond the half-rate result](research/post-half-directions.md).
 
-An [exact residue-system backend](research/precision-efficient-residue-indicators.md#5-implemented-compilers-and-the-system-count-bound) retains counts at growing 2-adic precision and handles collected unit inverses. A low-cost representation of the complete integer factoring query remains open.
+An [exact residue-system backend](research/precision-efficient-residue-indicators.md#5-implemented-compilers-and-the-system-count-bound) retains counts at growing 2-adic precision and handles collected unit inverses. A complete integer factoring query within that polynomial interface remains open.
+
+A [Witt-trace word interface](research/witt-trace-native-word-circuits.md) gives a complete two-input factor/prefix predicate using explicitly charged exact divisions. Fast contraction of that extended circuit family remains open; the polynomial carry backend does not supply it.
 
 A [divided-power extension](research/divided-power-trace-lifting.md) handles polynomial trace constraints at growing precision, with its coefficient-algebra size charged explicitly. An [Artin--Hasse alternative](research/artin-hasse-trace-projection.md) uses classical binary characters and charges extra precision for Fourier projection. Both provide exact counts for their represented input class; a complete factoring representation remains open.
 
