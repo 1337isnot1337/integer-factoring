@@ -73,25 +73,34 @@ connects the ordinary proofs, exact programs, and remaining obligations.
 The complete factoring score remains **1/2**; this checkpoint adds no Lean
 formalization.
 
-The arithmetic route now has explicit prime-form generators, uniform smooth-norm
-existence, complete unsigned-norm decoding, height-weighted independent relations,
-and determinant-free factor extraction. With a quasipolynomial factor base, a
-full batch of supplied norms can be processed in
-`2^((1/2+o(1))b/log_2 b)` time. A uniform fast norm selector remains open.
-Generation and existence use the pinned all-number-field Hecke zero-free theorem;
-the finite algebraic replays do not require that analytic input. Stored examples
-include a 124-bit factorization with 942 independently reconstructed relations.
+A constructed prime-form power selector now finds smooth leading norms using
+an exact primorial filter and CRT composition. Its adaptive continuation
+[factors a fresh 144-bit semiprime](research/adaptive-power-window-selection.md)
+after 8,232,730 norm tests, including the exhausted first phase. It retains
+successful rows and extends only unfinished targets. Both input primes and all
+accepted relations are certified. A uniform bound on the required power window
+remains open.
 
-State-dependent channel bases, a polynomial subspace oracle, and blocking improve
-exact tensor certificates. New all-degree pressure restrictions close the bare
-seven-letter interface and the stated bounded-order families through ten letters.
-Their hypotheses leave other constructions open. None establishes a factoring
-lower bound or a larger complete score.
+The wider arithmetic route has explicit prime-form generators, uniform
+represented-smooth-norm existence, unsigned-norm decoding, weighted independent
+relations, and determinant-free extraction. With a quasipolynomial base, a full
+batch of supplied norms can be processed in `2^((1/2+o(1))b/log_2 b)` time.
+Generation and existence use the pinned all-number-field Hecke zero-free theorem.
+That existence result does not imply that a reduced leading coefficient is smooth.
 
-Run `make verify-beyond-half` for the core processing and pressure replays.
-`make verify-reflection-codes-full` repeats the separate exhaustive 65,519-code
-classification. Individual notes give additional finite-search commands and
-state which checks replay certificates instead of regenerating searched witnesses.
+State-dependent channels, a polynomial subspace oracle, and blocking improve
+exact tensor certificates. An [explicit eight-letter crossing](research/eight-letter-reflection-retraction.md)
+has a rational-type certificate `rho<0.72` and beats its matched coordinate
+restriction. The certified trial rate remains above `1/sqrt(2)`.
+The new pressure restrictions have their stated scope; they are not lower
+bounds on integer factoring.
+
+Run `make verify-beyond-half` for the core checkpoint replays. The
+[verification record](evidence/beyond-half-verification-20261101.json) pins the
+executed suites and source hashes. `make verify-adaptive-power-full` repeats
+all 8,232,730 candidates of the 144-bit search; `make verify-reflection-codes-full`
+repeats the separate exhaustive 65,519-code classification. Individual notes
+state which checks replay certificates and which regenerate the complete search.
 <!-- beyond-half-checkpoint:end -->
 
 

@@ -71,15 +71,36 @@ search. The implementation and checker state this distinction explicitly.
 
 ## 3. Doubling removes the need to know a successful window
 
-Run absolute windows `1,2,4,8,...`, resuming only unfinished targets.
-Suppose every generator has an acceptable norm within some window `W_*`.
-The first doubling boundary that covers it is less than `2W_*`, unless
-`W_*=1`, when the first boundary is one. With `m` generators, at most
+For each target prime `p`, index its candidate sequence by positive
+integers `j`, with exponent exactly `K_p+j-1`. Define its first-hit index
 
-$$2mW_*$$
+$$w_p=\min\{j\ge1:\text{the leading norm of }g_p^{K_p+j-1}
+       \text{ passes the fixed-base norm checks}\}.$$
 
-candidate norms are tested before all required rows are available. A
-proper factor may appear earlier from a partial matrix.
+The checks include coprimality to the input and complete smoothness over
+the known base. Suppose a positive integer `W_*` satisfies `w_p<=W_*`
+for every target. Equivalently, each target has an acceptable norm among
+the `W_*` exponents `K_p,...,K_p+W_*-1`.
+
+In an actual execution, let `t_p` count all candidates tested for target
+`p` across every phase. They form one prefix, with no repetitions. The
+algorithm retains the first successful row and never resumes that target,
+so `t_p<=w_p` at every time. A factor found by a gcd or partial extraction
+can stop the execution sooner; an unvisited target has `t_p=0`. Hence
+the cumulative number of candidate norms, including all rejected values,
+satisfies the sharper bound
+
+$$\sum_p t_p\le\sum_p w_p\le mW_*.$$
+
+This argument applies to any increasing absolute window schedule that
+eventually covers the first hits. It does not charge the unused part of
+a phase's nominal window: testing a target stops at its retained hit.
+
+To avoid knowing `W_*` in advance, run absolute windows `1,2,4,8,...`.
+The boundary `2^ceil(log_2 W_*)` covers every first hit. Thus at most
+`1+ceil(log_2 W_*)` phases and `ceil(log_2 W_*)` resumptions are needed;
+when `W_*=1`, exactly one phase suffices. The candidate bound remains
+`mW_*`, despite rounding the final phase boundary upward.
 
 All setup work must still be counted. Each resumed phase rebuilds the
 base and validates the retained state. If `C_base` is the base setup

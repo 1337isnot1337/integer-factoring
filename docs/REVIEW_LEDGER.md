@@ -255,3 +255,27 @@ Exact source head `7154cec09b982b54a0fcc0bb7a303318fc1f90da`, retaining original
 Restored the 53-command `verify-constructions` default dependency, the optional `verify-native-crossings` target, and 25 additional optional post-half commands under `verify-pr29-extended`, preserving the previous post-half checks. Full `make verify` passed on the integration tree: 678 Markdown files, 63 unit tests, five crossing tests, all 53 new default construction commands and all existing default gates.
 
 Not newly run: the larger native and optional extended screens or Lean targets. The source implementations and evidence for those remain available without a fresh-run claim. Ordinary `git diff --check` reports 21 source-inherited blank-at-EOF warnings; those bytes were preserved to retain source fingerprints. The same whitespace check with only blank-at-EOF warnings disabled passed. No other whitespace errors were ignored. Integration is not independent mathematical acceptance or a PR approval review; the complete time exponent remains `1/2`.
+
+<!-- beyond-half-review-20261101:start -->
+## November 1: smooth-norm processing and constructive selector checkpoint
+
+The [research guide](../research/beyond-half-research-checkpoint.md) connects the
+ordinary arithmetic reductions, constructed power selector, adaptive 144-bit
+factorization, exact channel improvements, and eight-letter nonorthogonal
+crossing. The complete factoring exponent remains 1/2. No new Lean formalization
+or Lean rebuild is claimed.
+
+The [verification record](../evidence/beyond-half-verification-20261101.json)
+records the 195-command baseline suite at d7913c7, all 30 verification additions
+at d42e464, focused core replays, source hashes, and later integration checks.
+The full 144-bit search was repeated, including both its exhausted first phase
+and 154,884-query continuation. Independent agents reviewed the scope and replayed
+the accepted norms, exact relations, partial extraction, and both crossing cuts.
+
+Uniform generation and represented-norm existence use the pinned Cureton--Thorner
+all-number-field finite-order Hecke strip. A fast deterministic norm selector,
+a uniform short power-window bound, and a fast dynamic prime-closure bound remain
+unproved. Small experimental bases are not presented as satisfying the enormous
+uniform analytic cutoff. Partial failure is not a primality certificate, and
+passing finite controls is not a proof of a stronger worst-case exponent.
+<!-- beyond-half-review-20261101:end -->

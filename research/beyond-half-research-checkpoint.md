@@ -150,9 +150,10 @@ witness is automatically `(1,0)` in the reduced target form.
 These counts include all rejected candidates in the stated executions.
 The 144-bit search first exhausted a 50,000-step window with 494 rows.
 Continuing only unfinished targets added five rows and a factor after
-154,884 more candidates. Doubling windows needs fewer than `2mW` norm
-tests whenever all `m` targets have a successful window of length `W`;
-base reconstruction and retained-state validation are also charged.
+154,884 more candidates. If every target has its first success within
+`W` candidates, the retained search tests at most `mW` norms across all
+phases. Doubling uses at most `1+ceil(log_2 W)` phases; base reconstruction
+and retained-state validation are also charged.
 
 The existence theorem for represented smooth values does not imply that
 a reduced leading coefficient is smooth. It therefore does not prove
@@ -161,7 +162,7 @@ Finite success is not used to claim a worst-case bound.
 
 A separate [dynamic leading-norm constructor](dynamic-leading-norm-closure.md)
 factors smaller norms recursively and grows its prime base. Fresh unit
-elimination keeps every newly retained prime below the square root of the
+elimination keeps every newly retained prime at most the square root of the
 leading-norm height. [Odd-pivot elimination](odd-pivot-two-primary-elimination.md)
 extends this compression while retaining genuine full-group identities.
 The number of introduced and pending primes still needs a uniform bound.
@@ -195,7 +196,9 @@ The [nonorthogonal reflection retraction](eight-letter-reflection-retraction.md)
 is an explicit characteristic-two crossing of actual degree 32. Its
 rational common type and exact scale `s=(73/71)^18` certify `rho<18/25`.
 It has strictly lower two-cut pressure than its matched coordinate
-restriction for every finite `s>=3/2`. Both complete cut profiles,
+restriction for every finite `s>=10/9`, by the
+[factored pressure identity](eight-letter-pressure-gain-factorization.md).
+Both complete cut profiles,
 the swap endpoint, and the scalar restorations are checked exactly.
 
 This is a constructive gain within that family. The certified trial rate
