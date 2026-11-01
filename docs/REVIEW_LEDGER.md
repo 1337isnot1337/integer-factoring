@@ -568,3 +568,16 @@ record literal comparisons and source hashes. The earlier full-suite run
 at `318c748` remains the full baseline, not a full run of this later delta.
 No Lean, independent mathematical review, or complete factoring exponent
 above 1/2 is claimed. Substantial OpenAI Codex assistance.
+
+## Exact PR62 integration replay at `ca10efd`
+
+The isolated merge `ca10efd19f5684efb5d07770bddcbaff2af5e0df`, tree
+`adb1ae379ccdc51a824156c4bf88c28090f182bf`, passed the full default suite
+in 726.76 seconds and seven named focused targets in 51.81 seconds, with
+a clean post-run status. The [receipt](../evidence/verify-pr62-ca10efd.json)
+and [complete compressed log](../evidence/verify-pr62-ca10efd.stdout.txt.xz)
+retain the exact command list. That merge head is preserved in canonical
+history. A concurrent contributor merged PR62 at `42dac3c`; GitHub confirms
+it merged, with final source head `0618f57` preserved. This replay predates
+the cold-gap and universal-axis additions, whose focused controls are
+separate. No new Lean or independent mathematical review is claimed.
