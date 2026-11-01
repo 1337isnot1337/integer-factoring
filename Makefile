@@ -3004,6 +3004,10 @@ verify-joint-frobenius:
 verify-trace-constraints:
 	python3 tools/check_trace_constraint_contraction.py
 
+.PHONY: verify-frobenius-prefix
+verify-frobenius-prefix:
+	python3 tools/check_frobenius_prefix_contraction.py
+
 .PHONY: verify-collective-css-pauli
 verify-collective-css-pauli:
 	OPENBLAS_NUM_THREADS=1 python3 tools/check_collective_css_pauli.py

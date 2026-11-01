@@ -1569,3 +1569,5 @@ The [symbolic profile classification](orthogonal-joint-global-rigidity.md#5-all-
 - [Integer twelve-letter word targets](q12-integer-word-target.md): degree-22 and degree-24 points survive the declared linear and nonlinear caps; direct integer comparisons prove formal rates below `7071/10000` and `707/1000`; no realizing polynomial tensor is supplied.
 
 - [Joint Frobenius product contraction](joint-frobenius-product-contraction.md): a simultaneous cyclic-carry algorithm sums synchronized multivariate products in `(S+2)^O(vD)` field operations. A cycle-residual gcd finds the largest admissible row modulus. Weighted geometric-box networks give a concrete global application without repeated-star closure. The complete arithmetic-query representation remains open; the factoring exponent stays `1/2`.
+
+- [Prefix and interval closure for synchronized word sums](frobenius-prefix-contraction.md): substitute fully fixed words, retain only one partial word per operand, and decompose integer intervals into disjoint prefixes. The integer phase representation remains open.

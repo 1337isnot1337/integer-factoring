@@ -1,0 +1,19 @@
+{
+  "scope": "Exact encoded-word prefix controls; arithmetic phase representation remains open",
+  "counts": {
+    "queries": 1168,
+    "direct_assignments": 46416,
+    "all_fixed": 340,
+    "empty_fixed_domains": 119,
+    "nonzero_answers": 290,
+    "dual_pairings": 34,
+    "dyadic_covers": 2928,
+    "interval_queries": 200
+  },
+  "sha256": {
+    "tools/frobenius_prefix_contraction.py": "dd8c54543759d13f5dc5e0847533441d1c8cc0f340cd8f1aebb58d14f1090f60",
+    "tools/check_frobenius_prefix_contraction.py": "134f11b839e3578922bb37b04c6f270672f080db043fa33ec55d15d7f2488a0d",
+    "tools/trace_constraint_contraction.py": "cbd50816a984c5cbe7048e2aa849612d6c8b071893f62281e2c4b398c9c0e21a",
+    "tools/joint_frobenius_carries.py": "a383d3db131fce1e932b23dddde55c2c747c5bb117823d2e6c686e26135c75b8"
+  }
+}

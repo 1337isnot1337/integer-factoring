@@ -111,6 +111,10 @@ keeps affine bit restrictions outside a synchronized Frobenius product.
 Its cost depends on the binary rank of those restrictions and can retain
 relative dimension one. A complete arithmetic phase representation meeting
 that budget remains open; the factoring score stays `1/2`.
+The [prefix and interval extension](research/frobenius-prefix-contraction.md)
+substitutes fully fixed operand words first, leaving at most one partially
+fixed word per operand. It preserves exact bounded domains under the same
+explicit representation hypothesis.
 
 The [output-sensitive space transfer](research/output-sensitive-space-transfer.md)
 recovers a complete factorization from a scalar phase evaluator in time

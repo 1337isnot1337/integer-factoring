@@ -520,3 +520,22 @@ without realizing tensors. Integration implies no independent mathematical
 acceptance, new Lean build or exponent beyond the complete score 1/2.
 The source branch is preserved. Substantial OpenAI assistant support was
 used under the owner's direction.
+
+## 2026-11-01: Sparse trace constraints and exact operand boundaries
+
+Commit `318c748038d0a12493e8fa5744541d8955f8fe6d` adds the ordinary
+rank-sensitive affine trace interface. Its focused controls pass 320 joint
+queries against 10,344 literal assignments and 160 unsplit comparisons.
+A clean `make verify` at that exact commit passed 349 Python command blocks,
+66 plus five unit tests, and links in 1,099 Markdown files. Both pre-run and
+post-run working trees were clean. The [receipt](../evidence/verify-trace-constraints-318c748.json)
+and [compressed complete log](../evidence/verify-trace-constraints-318c748.log.xz)
+retain the source tree and hashes. No Lean targets were run.
+
+The subsequent prefix/interval extension uses fixed-word substitution and
+trace-dual coordinates. Its separate focused receipt is
+[here](../evidence/frobenius-prefix-contraction.json). The earlier full run
+does not claim to cover this later delta or concurrently integrated sources.
+These are author-checked ordinary results and exact finite controls, not
+independent mathematical review or a complete factoring improvement. The
+score remains 1/2. Substantial OpenAI Codex assistance.
