@@ -1,0 +1,157 @@
+{
+  "integer": 3271277229293916941510651942419709,
+  "bits": 112,
+  "cutoff": 4093,
+  "max_queries": 131072,
+  "checkpoint_interval": 8192,
+  "factor": 54488953565822267,
+  "queries": 73728,
+  "elapsed_seconds": 573.0019490170016,
+  "phase_seconds": {
+    "extraction_seconds": 250.27555482899334,
+    "graph_seconds": 53.181854272996134,
+    "incremental_basis_seconds": 165.97933092083986,
+    "transport_seconds": 9.012457011995139,
+    "unit_seconds": 54.93984924098186
+  },
+  "keys": 72687,
+  "old_base_rank": 184,
+  "core_columns": 289,
+  "core_rows": 619,
+  "independent_rank": 289,
+  "graph_counts": {
+    "anchored_components": 49274,
+    "extra_rows": 2584,
+    "free_components": 2914,
+    "graph_rows": 71144,
+    "input_residual_generators": 75434,
+    "input_rows": 73728,
+    "later_unit_columns_eliminated": 2505,
+    "output_rows": 619,
+    "remaining_nonfree_residual_generators": 0,
+    "torsion_generator_count": 289,
+    "tree_rows_eliminated": 20741,
+    "unbalanced_components": 0
+  },
+  "basis_statistics": {
+    "local_gcd_calls": 206581,
+    "local_refinements": 19652,
+    "maximum_atoms": 75434,
+    "maximum_local_inputs": 5,
+    "maximum_local_norm_bits": 176,
+    "maximum_usage_entries": 98572,
+    "tree_capacity": 131072,
+    "tree_capacity_doublings": 17,
+    "tree_division_operand_bits": 15106684367,
+    "tree_exact_divisions": 74099,
+    "tree_gcd_calls": 771999,
+    "tree_gcd_operand_bits": 177713128553,
+    "tree_leaf_updates": 85176,
+    "tree_maximum_divisor_bits": 56,
+    "tree_maximum_update_multiplier_bits": 56,
+    "tree_multiplication_operand_bits": 181512372638,
+    "tree_multiplications": 1487531,
+    "tree_product_bits": 2743294,
+    "usage_entries": 98572,
+    "usage_writes": 103443
+  },
+  "verification": {
+    "input": {
+      "prime_certificates": 30,
+      "rejected_candidates": 8
+    },
+    "literal_power_checks": 73728,
+    "ideals": {
+      "literal_ideal_identities": 72687,
+      "pairwise_coprime_atoms": 75434,
+      "sparse_usage_entries": 98572
+    },
+    "graph": {
+      "inverse_generator_identities": 5708,
+      "old_generator_identities": 75723,
+      "output_relation_identities": 3141,
+      "input_relation_identities": 73728,
+      "integer_presentation_isomorphism": true
+    },
+    "units": {
+      "inverse_generator_identities": 3203,
+      "old_generator_identities": 75723,
+      "output_relation_identities": 619,
+      "input_relation_identities": 73728,
+      "integer_presentation_isomorphism": true
+    },
+    "independent_rank": 289,
+    "extraction": {
+      "relation_dimension": 289,
+      "relation_rows": 289,
+      "relation_deficiency": 0,
+      "initial_relations_verified": 289,
+      "determinant_computed": false,
+      "annihilator_supplied": false,
+      "saturation_bound": 2553,
+      "saturations": 2,
+      "kernel_passes": 3,
+      "tops_evaluated": 4,
+      "identity_tops": 2,
+      "rejected_nonidentity_tops": 1,
+      "paired_bad_top_updates": 0,
+      "group_multiplications": 12817,
+      "group_inversions": 277,
+      "maximum_entry_bits": 10,
+      "termination": "useful involution"
+    },
+    "ambiguous_form": [
+      54488953565822267,
+      0,
+      60035603828255527
+    ],
+    "legacy_comparison": {
+      "factor": null,
+      "norm_queries": 73728,
+      "relation_rank": 184,
+      "retained_cofactor_keys": 72687,
+      "candidate_relations": 1041,
+      "dependent_relations": 857,
+      "elapsed_seconds": 21.66838425500464,
+      "cap": 73728
+    },
+    "full_legacy_comparison": {
+      "factor": 54488953565822267,
+      "norm_queries": 96752,
+      "relation_rank": 277,
+      "retained_cofactor_keys": 95372,
+      "candidate_relations": 1380,
+      "dependent_relations": 1103,
+      "recorded_elapsed_seconds": 79.98924570899544,
+      "recorded_cpu_seconds": 35.58504608,
+      "independent_replay_elapsed_seconds": 37.741893005004385,
+      "complete_original_traversal_reproduced": true
+    }
+  },
+  "source_sha256": {
+    "tools/sparse_oriented_power_search.py": "57a5178c9afb628ef102776e4353c68763366e80cb104a70287cb306c0000c07",
+    "tools/check_sparse_oriented_power_search.py": "06c58bc8af09fe2d76af3b0d847aee0f95fdec3b8606fa9e644caa131b2cba99",
+    "tools/incremental_oriented_coprime_basis.py": "e669db7d6d6acae9eca39304d2b4ad6bd1936adba5dab929faca51ec3005a154",
+    "tools/oriented_coprime_basis.py": "dba31b12ce2a93b7de9a79f69e4ffb2a8f0aec8218f3ab6082ad25817117571d",
+    "tools/signed_residual_graph.py": "f7374233f0b6d2284316b5ddd7a5d9c32e24f7d2f9e81b2121ce77d8f142d025",
+    "tools/signed_residual_unit_elimination.py": "210bd09709f265403efc0359c64fc3f13b8504ca8f27222144f268eb548193a3",
+    "tools/cofactor_collision_relations.py": "e3ca86c6e2208edf1f5edc980ed954c6fb3919f21a4cce40a8681d0d908022c5",
+    "tools/leading_power_smooth_relations.py": "ab10b90877e39b8174164c1d201d5e1da35472b7079453acf741166142543791",
+    "tools/relation_two_saturation.py": "c1fdbfbc88029eeece010c8da63e6d864bd19e8adb58493f6977958ed3aa50f0",
+    "tools/quadratic_ideal_hnf.py": "fd9c4217f1c751c1d2f20485a35ae36ae749c24980d90a6aae13fbc471634a74",
+    "tools/check_fresh_prime_cofactor_control.py": "0bd1ff8dca962902d6bc4b0770f616bcb3afb2d58d2e9cd48711ee1c624d891d",
+    "tools/certified_small_factor.py": "d377c6a58bfc0e22f0feef4879945e45f534ee2fe8c2e4b6c1f93c63b8b732c6",
+    "tools/optimized_sparse_oriented_power_search.py": "8a551313269dd548f42830113be7169eb9d12998e667b6e50f034e1eff16ac61",
+    "tools/check_optimized_oriented_fresh_run.py": "af8854547ceaf85b977d718194a7d5196b489f431c9b327dcecbc2258e429eaf",
+    "tools/quotient_update_oriented_basis.py": "7a9641624a8fe95f6ff44f4c13d9bbb670f1986f26e06cb0d3e513f4b612c227",
+    "tools/sparse_unit_presentation.py": "af3060a98d78013be443afd6e1e79d30306c58e6e38a7897c5101266309dc29a"
+  },
+  "scope": "Certified finite optimized prefix with exact original-traversal comparison; no uniform exponent gain.",
+  "cpu_seconds": 259.12325908300005,
+  "component_replacements": {
+    "atom_tree": "exact leaf quotient updates",
+    "reference_module_globals_unchanged": true,
+    "reference_search_body_unchanged": true,
+    "unit_elimination": "sparse incidence with stable indices"
+  }
+}

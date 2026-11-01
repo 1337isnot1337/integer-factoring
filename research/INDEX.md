@@ -1,5 +1,13 @@
 # Research index
 
+- [Two classical passes for all supplied orientations](circuit-box-orientation-batch.md): normalized root differences, sparse incidence signs, and essentially linear integer-data construction.
+
+- [Classical quarter-bit residue terminal](circuit-box-ratio-small-roots.md): charged complete small-root recovery with exact LLL and Sturm certificates and honest outer-enumeration cost.
+
+- [Complete 112-bit oriented prefix](oriented-power-112-prefix.md): 73,728 queries, all ideal and integer-presentation identities replayed, and the complete 96,752-query original comparison.
+
+- [Linear oriented supplied-data charges](oriented-basis-linear-charges.md): a constructive norm-to-orientation transfer, batch coprimality validation, and a global amortized bound for sparse usage rewrites.
+
 - [Prepared oriented selector controls](../evidence/prepared-oriented-power-search.json) and [declared 128-bit policy](../evidence/prepared-oriented-fresh-128-policy.json): exact component substitutions and bounded fresh-run provenance.
 
 - [Completed larger F16 profiles](tensor-f16-capped-search.md#5-completed-larger-profiles-and-nearby-controls): full capped 108-label runs and nearby coordinate controls.
@@ -1407,3 +1415,7 @@ The [paired MDS family extension](orthogonal-pair-core-floor.md#5-a-stronger-all
 ## Binary-extension local Smith profiles
 
 [Scalar restriction and exact checks](binary-extension-smith-restriction.md) computes local profiles over binary extension fields with explicit d-fold matrix enlargement. Independent Toeplitz and determinant controls cover F2, F4, F8 and F16; no new factoring bound is asserted.
+
+## Three-row Hecke path crossings over F8
+
+[Construction and complete finite checks](three-row-hecke-crossings.md) gives strict five- and nine-letter tensors outside the Temperley–Lieb quotient. Uniform local relations, finite endpoints, confluent coefficient verification and complete profiles are separated. The bare zero/infinity profile infimum is exactly one; no factoring improvement is claimed.

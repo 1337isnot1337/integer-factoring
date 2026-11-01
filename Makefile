@@ -2615,3 +2615,23 @@ verify-prepared-oriented-power-search:
 	python3 tools/check_prepared_oriented_power_search.py --replay evidence/prepared-oriented-power-search.json
 
 verify-oriented-coprime-basis: verify-small-pivot-integer-rows verify-prepared-oriented-power-search
+
+.PHONY: verify-oriented-basis-linear-charges
+verify-oriented-basis-linear-charges:
+	python3 tools/check_oriented_norm_basis_lift.py --output /tmp/oriented-norm-basis-lift-verify.json
+
+verify-oriented-coprime-basis: verify-oriented-basis-linear-charges
+
+.PHONY: verify-three-row-hecke verify-three-row-hecke-full
+verify-three-row-hecke:
+	python3 tools/check_three_row_hecke_crossing.py --alphabet 5
+verify-three-row-hecke-full:
+	python3 tools/check_three_row_hecke_crossing.py --alphabet 9
+
+.PHONY: verify-oriented-power-112
+verify-oriented-power-112:
+	python3 tools/check_optimized_oriented_fresh_run.py --replay evidence/optimized-oriented-power-112.json.xz
+
+.PHONY: verify-circuit-box-ratio-small-roots
+verify-circuit-box-ratio-small-roots:
+	python3 tools/check_circuit_box_ratio_small_roots.py --output /tmp/circuit-box-ratio-small-roots-verify.json
