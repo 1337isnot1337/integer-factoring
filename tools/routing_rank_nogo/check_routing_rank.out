@@ -1,0 +1,33 @@
+== k=0: lex free-set bound vs r^Q(r^Q-1)/2 ==
+r=2 Q=1: bound=1 expected=1
+r=2 Q=2: bound=6 expected=6
+r=3 Q=1: bound=3 expected=3
+r=3 Q=2: bound=36 expected=36
+r=2 Q=3: bound=28 expected=28
+r=4 Q=1: bound=6 expected=6
+== exhaustive min rank(I-M), r=2 Q=1 k=0 (expect 1) ==
+GF(2): min rank = 1
+GF(3): min rank = 1
+== construction M=S g(W0): support, rank (GF(p)), eigen formula, lower bounds ==
+r=2 Q=1 I=[0] k=0: support_violations=0 rank=1 formula=1 score_LB=1 lex_LB=1 D*Pr[S-S'>k]=1
+r=2 Q=2 I=[0] k=0: support_violations=0 rank=6 formula=6 score_LB=6 lex_LB=6 D*Pr[S-S'>k]=5
+r=2 Q=2 I=[0, 1] k=1: support_violations=0 rank=1 formula=1 score_LB=1 lex_LB=1 D*Pr[S-S'>k]=1
+r=2 Q=3 I=[0, 1] k=1: support_violations=0 rank=10 formula=10 score_LB=8 lex_LB=7 D*Pr[S-S'>k]=7
+r=2 Q=3 I=[1, 2] k=1: support_violations=0 rank=28 formula=28 score_LB=8 lex_LB=7 D*Pr[S-S'>k]=7
+r=3 Q=2 I=[0, 1] k=1: support_violations=0 rank=9 formula=9 score_LB=6 lex_LB=6 D*Pr[S-S'>k]=4
+r=2 Q=4 I=[1, 2] k=1: support_violations=0 rank=94 formula=94 score_LB=45 lex_LB=35 D*Pr[S-S'>k]=37
+r=2 Q=4 I=[0, 1, 2] k=2: support_violations=0 rank=13 formula=13 score_LB=10 lex_LB=8 D*Pr[S-S'>k]=9
+r=4 Q=2 I=[0, 1] k=1: support_violations=0 rank=36 formula=36 score_LB=27 lex_LB=18 D*Pr[S-S'>k]=16
+== asymptotic comparison: smallest k with rank/D <= eps ==
+   LB: need Pr[S-S'>k] <= eps (any design);  construction: best R-window of Bin(Q,(r-1)/2r)
+r=2 Q=64 eps=1e-03: k_LB>=17  k_constr=22  ratio=1.294
+r=2 Q=64 eps=1e-06: k_LB>=27  k_constr=32  ratio=1.185
+r=2 Q=256 eps=1e-03: k_LB>=35  k_constr=45  ratio=1.286
+r=2 Q=256 eps=1e-06: k_LB>=54  k_constr=67  ratio=1.241
+r=4 Q=256 eps=1e-03: k_LB>=35  k_constr=50  ratio=1.429
+r=4 Q=256 eps=1e-06: k_LB>=54  k_constr=75  ratio=1.389
+r=16 Q=256 eps=1e-03: k_LB>=35  k_constr=52  ratio=1.486
+r=16 Q=256 eps=1e-06: k_LB>=54  k_constr=77  ratio=1.426
+r=2 Q=1024 eps=1e-03: k_LB>=70  k_constr=91  ratio=1.300
+r=2 Q=1024 eps=1e-06: k_LB>=107  k_constr=135  ratio=1.262
+ALL CHECKS PASS
