@@ -1244,3 +1244,5 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 - [Weighted Pascal flags](weighted-pascal-flag-crossings.md): arbitrary integer coordinate weights, independent zero and infinity energies, constant flag changes, and exact unrestricted-gauge Clifford profiles.
 
 - [Exact separation ranks of Cauchy powers](pole-cauchy-hadamard-rank.md): all positive Hadamard powers, precision-dependent overlap thresholds, an exponential standard-padding example, and a larger-padding rank-equals-factor-count corollary.
+
+- [Quadratic coalescence and two-depth Bézout pairs](quadratic-coalescence-bezout.md): an exact weighted-moment valuation, a binary-size quadratic trace unit, and complete primitive residues in a nonuniform matching testbed.

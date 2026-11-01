@@ -2229,3 +2229,7 @@ verify-weighted-pascal-flags:
 .PHONY: verify-pole-cauchy-hadamard-rank
 verify-pole-cauchy-hadamard-rank:
 	python3 tools/check_pole_cauchy_hadamard_rank.py --output /tmp/pole-cauchy-hadamard-rank.json
+
+.PHONY: verify-quadratic-coalescence-bezout
+verify-quadratic-coalescence-bezout:
+	python3 tools/check_quadratic_coalescence_bezout.py --output /tmp/quadratic-coalescence-bezout.json
