@@ -2184,3 +2184,7 @@ verify-cube-f4-generic-frames:
 verify-cube-flat-low-order:
 	python3 tools/cube_flat_seeds.py
 	python3 tools/check_cube_flat_low_order_floors.py
+
+.PHONY: verify-matched-progression-bezout
+verify-matched-progression-bezout:
+	python3 tools/check_matched_progression_bezout.py --output /tmp/matched-progression-bezout.json

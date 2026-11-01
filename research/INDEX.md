@@ -1220,3 +1220,5 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 ## Interior F4 differential modules
 
 - [F4 differential codes and a matroid Hilbert formula](f4-differential-pair-codes.md): exact graded dimensions, a binary/F4 difference, and six completed two-cut trials. The trials do not improve the current hyperoval pressure bound.
+
+- [Deeply matched reflected progressions](matched-progression-bezout.md): exact primitive denominator and complete modular Bézout compiler at binary huge degree, with reciprocal perturbations retained.

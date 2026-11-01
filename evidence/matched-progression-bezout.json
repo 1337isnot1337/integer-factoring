@@ -1,0 +1,549 @@
+{
+  "claim": "Primitive modular Bezout pairs for deeply matched reflected progressions",
+  "controls": {
+    "exact_newton_coefficients": 84,
+    "perturbation_path_controls": 54,
+    "complete_rational_bezout_pairs": 27,
+    "complete_coefficient_comparisons": 252,
+    "complete_polynomial_identities": 27,
+    "nonconstant_incidence_controls": 37,
+    "examples": [
+      {
+        "parameters": {
+          "count": 2,
+          "height": 3,
+          "center": 17,
+          "eta": -1,
+          "precision": 1
+        },
+        "n": 273,
+        "matched_residue_depth": 4,
+        "bezout_exponent": 9,
+        "polynomial_degree": 1,
+        "basis_center": 17,
+        "u_reversed_coefficients": [
+          1
+        ],
+        "v_reversed_coefficients": [
+          1
+        ],
+        "u_terms": [
+          [
+            1,
+            1
+          ]
+        ],
+        "v_terms": [
+          [
+            1,
+            1
+          ]
+        ],
+        "newton_records": [
+          {
+            "coefficient": 1,
+            "perturbation_terms": 1,
+            "working_precision": 1,
+            "factorial_ratio_jets": 1,
+            "retained_series_summands": 1,
+            "fallback_nodes": 0,
+            "newton_order": 3,
+            "translated_gap": 0,
+            "perturbation_floor": 1
+          }
+        ],
+        "maximum_working_precision": 1,
+        "enumerated_nodes": 0,
+        "scope": "Complete modular primitive pair for the stable deeply matched reflected family; no general inverse-graph aggregation."
+      },
+      {
+        "parameters": {
+          "count": 2,
+          "height": 3,
+          "center": 17,
+          "eta": -1,
+          "precision": 4
+        },
+        "n": 273,
+        "matched_residue_depth": 4,
+        "bezout_exponent": 9,
+        "polynomial_degree": 1,
+        "basis_center": 17,
+        "u_reversed_coefficients": [
+          5,
+          12
+        ],
+        "v_reversed_coefficients": [
+          3,
+          4
+        ],
+        "u_terms": [
+          [
+            1,
+            5
+          ],
+          [
+            0,
+            12
+          ]
+        ],
+        "v_terms": [
+          [
+            1,
+            3
+          ],
+          [
+            0,
+            4
+          ]
+        ],
+        "newton_records": [
+          {
+            "coefficient": 5,
+            "perturbation_terms": 3,
+            "working_precision": 4,
+            "fallback_nodes": 4,
+            "newton_order": 3,
+            "translated_gap": 0,
+            "perturbation_floor": 1
+          },
+          {
+            "coefficient": 12,
+            "perturbation_terms": 3,
+            "working_precision": 4,
+            "fallback_nodes": 3,
+            "newton_order": 2,
+            "translated_gap": 2,
+            "perturbation_floor": 4
+          }
+        ],
+        "maximum_working_precision": 4,
+        "enumerated_nodes": 4,
+        "scope": "Complete modular primitive pair for the stable deeply matched reflected family; no general inverse-graph aggregation."
+      },
+      {
+        "parameters": {
+          "count": 2,
+          "height": 3,
+          "center": 17,
+          "eta": -1,
+          "precision": 9
+        },
+        "n": 273,
+        "matched_residue_depth": 4,
+        "bezout_exponent": 9,
+        "polynomial_degree": 1,
+        "basis_center": 17,
+        "u_reversed_coefficients": [
+          325,
+          316
+        ],
+        "v_reversed_coefficients": [
+          115,
+          68
+        ],
+        "u_terms": [
+          [
+            1,
+            325
+          ],
+          [
+            0,
+            316
+          ]
+        ],
+        "v_terms": [
+          [
+            1,
+            115
+          ],
+          [
+            0,
+            68
+          ]
+        ],
+        "newton_records": [
+          {
+            "coefficient": 325,
+            "perturbation_terms": 5,
+            "working_precision": 9,
+            "fallback_nodes": 4,
+            "newton_order": 3,
+            "translated_gap": 0,
+            "perturbation_floor": 1
+          },
+          {
+            "coefficient": 492,
+            "perturbation_terms": 5,
+            "working_precision": 9,
+            "fallback_nodes": 3,
+            "newton_order": 2,
+            "translated_gap": 2,
+            "perturbation_floor": 4
+          }
+        ],
+        "maximum_working_precision": 9,
+        "enumerated_nodes": 4,
+        "scope": "Complete modular primitive pair for the stable deeply matched reflected family; no general inverse-graph aggregation."
+      }
+    ]
+  },
+  "factoring_exponent_improved": false,
+  "implicit_controls": [
+    {
+      "lower_seconds": 2.7356742760021007,
+      "lower": {
+        "parameters": {
+          "count": 4294967296,
+          "height": 65,
+          "center": 158456325028528675187087900673,
+          "eta": 3,
+          "precision": 70
+        },
+        "n": 25108406941546723055343157693622947289552065153791577554945,
+        "matched_residue_depth": 97,
+        "bezout_exponent": 566935682941,
+        "polynomial_degree": 4294967295,
+        "basis_center": 158456325028528675187087900673,
+        "u_reversed_coefficients": [
+          735479717730371379491,
+          534955578137576996864
+        ],
+        "v_reversed_coefficients": [
+          445111902987039923933,
+          645636042579834306560
+        ],
+        "u_terms": [
+          [
+            4294967295,
+            735479717730371379491
+          ],
+          [
+            4294967294,
+            534955578137576996864
+          ]
+        ],
+        "v_terms": [
+          [
+            4294967295,
+            445111902987039923933
+          ],
+          [
+            4294967294,
+            645636042579834306560
+          ]
+        ],
+        "newton_records": [
+          {
+            "coefficient": 735479717730371379491,
+            "perturbation_terms": 4,
+            "working_precision": 70,
+            "factorial_ratio_jets": 5,
+            "retained_series_summands": 10,
+            "fallback_nodes": 0,
+            "newton_order": 8589934591,
+            "translated_gap": 0,
+            "perturbation_floor": 1
+          },
+          {
+            "coefficient": 645636042579834306560,
+            "perturbation_terms": 4,
+            "working_precision": 70,
+            "factorial_ratio_jets": 1,
+            "retained_series_summands": 1,
+            "fallback_nodes": 0,
+            "newton_order": 8589934590,
+            "translated_gap": 64,
+            "perturbation_floor": 66
+          }
+        ],
+        "maximum_working_precision": 70,
+        "enumerated_nodes": 0,
+        "scope": "Complete modular primitive pair for the stable deeply matched reflected family; no general inverse-graph aggregation."
+      },
+      "higher": {
+        "parameters": {
+          "count": 4294967296,
+          "height": 65,
+          "center": 158456325028528675187087900673,
+          "eta": 3,
+          "precision": 73
+        },
+        "n": 25108406941546723055343157693622947289552065153791577554945,
+        "matched_residue_depth": 97,
+        "bezout_exponent": 566935682941,
+        "polynomial_degree": 4294967295,
+        "basis_center": 158456325028528675187087900673,
+        "u_reversed_coefficients": [
+          8999621062752250503459,
+          4076730440289810907136
+        ],
+        "v_reversed_coefficients": [
+          445111902987039923933,
+          5368002525449479520256
+        ],
+        "u_terms": [
+          [
+            4294967295,
+            8999621062752250503459
+          ],
+          [
+            4294967294,
+            4076730440289810907136
+          ]
+        ],
+        "v_terms": [
+          [
+            4294967295,
+            445111902987039923933
+          ],
+          [
+            4294967294,
+            5368002525449479520256
+          ]
+        ],
+        "newton_records": [
+          {
+            "coefficient": 8999621062752250503459,
+            "perturbation_terms": 4,
+            "working_precision": 73,
+            "factorial_ratio_jets": 5,
+            "retained_series_summands": 10,
+            "fallback_nodes": 0,
+            "newton_order": 8589934591,
+            "translated_gap": 0,
+            "perturbation_floor": 1
+          },
+          {
+            "coefficient": 5368002525449479520256,
+            "perturbation_terms": 4,
+            "working_precision": 73,
+            "factorial_ratio_jets": 1,
+            "retained_series_summands": 1,
+            "fallback_nodes": 0,
+            "newton_order": 8589934590,
+            "translated_gap": 64,
+            "perturbation_floor": 66
+          }
+        ],
+        "maximum_working_precision": 73,
+        "enumerated_nodes": 0,
+        "scope": "Complete modular primitive pair for the stable deeply matched reflected family; no general inverse-graph aggregation."
+      },
+      "translated_grid_leading_coefficient": 512865762386703425827,
+      "reciprocal_deformation_changes_output": true,
+      "complete_modular_identity_verified": true
+    },
+    {
+      "lower_seconds": 8.819480037000176,
+      "lower": {
+        "parameters": {
+          "count": 18446744073709551616,
+          "height": 129,
+          "center": 12554203470773361527671578846415332832204710888928069025793,
+          "eta": 3,
+          "precision": 74
+        },
+        "n": 157608024785577916849116160400574455220318957081861786671855944634336753893627200339889141683700686117671152306356225,
+        "matched_residue_depth": 193,
+        "bezout_exponent": 4796153459164483419901,
+        "polynomial_degree": 18446744073709551615,
+        "basis_center": 12554203470773361527671578846415332832204710888928069025793,
+        "u_reversed_coefficients": [
+          802776923918976033059
+        ],
+        "v_reversed_coefficients": [
+          18086689007559604821725
+        ],
+        "u_terms": [
+          [
+            18446744073709551615,
+            802776923918976033059
+          ]
+        ],
+        "v_terms": [
+          [
+            18446744073709551615,
+            18086689007559604821725
+          ]
+        ],
+        "newton_records": [
+          {
+            "coefficient": 802776923918976033059,
+            "perturbation_terms": 3,
+            "working_precision": 74,
+            "factorial_ratio_jets": 3,
+            "retained_series_summands": 3,
+            "fallback_nodes": 0,
+            "newton_order": 36893488147419103231,
+            "translated_gap": 0,
+            "perturbation_floor": 1
+          }
+        ],
+        "maximum_working_precision": 74,
+        "enumerated_nodes": 0,
+        "scope": "Complete modular primitive pair for the stable deeply matched reflected family; no general inverse-graph aggregation."
+      },
+      "higher": {
+        "parameters": {
+          "count": 18446744073709551616,
+          "height": 129,
+          "center": 12554203470773361527671578846415332832204710888928069025793,
+          "eta": 3,
+          "precision": 77
+        },
+        "n": 157608024785577916849116160400574455220318957081861786671855944634336753893627200339889141683700686117671152306356225,
+        "matched_residue_depth": 193,
+        "bezout_exponent": 4796153459164483419901,
+        "polynomial_degree": 18446744073709551615,
+        "basis_center": 12554203470773361527671578846415332832204710888928069025793,
+        "u_reversed_coefficients": [
+          95250106581311880306979
+        ],
+        "v_reversed_coefficients": [
+          55865620870516766531293
+        ],
+        "u_terms": [
+          [
+            18446744073709551615,
+            95250106581311880306979
+          ]
+        ],
+        "v_terms": [
+          [
+            18446744073709551615,
+            55865620870516766531293
+          ]
+        ],
+        "newton_records": [
+          {
+            "coefficient": 95250106581311880306979,
+            "perturbation_terms": 3,
+            "working_precision": 77,
+            "factorial_ratio_jets": 3,
+            "retained_series_summands": 3,
+            "fallback_nodes": 0,
+            "newton_order": 36893488147419103231,
+            "translated_gap": 0,
+            "perturbation_floor": 1
+          }
+        ],
+        "maximum_working_precision": 77,
+        "enumerated_nodes": 0,
+        "scope": "Complete modular primitive pair for the stable deeply matched reflected family; no general inverse-graph aggregation."
+      },
+      "translated_grid_leading_coefficient": 15320364509928393154851,
+      "reciprocal_deformation_changes_output": true,
+      "complete_modular_identity_verified": true
+    },
+    {
+      "lower_seconds": 0.3989907429968298,
+      "lower": {
+        "parameters": {
+          "count": 1606938044258990275541962092341162602522202993782792835301376,
+          "height": 401,
+          "center": 8299031137761985917024815727382322302024892464484873799991314659381305622825816292799414097894207588576395773222601578364790302150823550615773749668227927374122363606803019047370753,
+          "eta": 3,
+          "precision": 12
+        },
+        "n": 68873917825543002472269510784210541934319698981794759686932947265602962764966982477589938148944184693145483676127846351154339709163266644099966439530914869378638013886623963523538761081235909305555453381754863016536892865535284701208570251637448772867054864184421732985347785389073687502055076097802415449734700968738164320317251204458146269561688059659381899265,
+        "matched_residue_depth": 601,
+        "bezout_exponent": 1291978187584228181535737522242294732427851207001365439582305501,
+        "polynomial_degree": 1606938044258990275541962092341162602522202993782792835301375,
+        "basis_center": 8299031137761985917024815727382322302024892464484873799991314659381305622825816292799414097894207588576395773222601578364790302150823550615773749668227927374122363606803019047370753,
+        "u_reversed_coefficients": [
+          291
+        ],
+        "v_reversed_coefficients": [
+          3805
+        ],
+        "u_terms": [
+          [
+            1606938044258990275541962092341162602522202993782792835301375,
+            291
+          ]
+        ],
+        "v_terms": [
+          [
+            1606938044258990275541962092341162602522202993782792835301375,
+            3805
+          ]
+        ],
+        "newton_records": [
+          {
+            "coefficient": 291,
+            "perturbation_terms": 2,
+            "working_precision": 12,
+            "factorial_ratio_jets": 1,
+            "retained_series_summands": 1,
+            "fallback_nodes": 0,
+            "newton_order": 3213876088517980551083924184682325205044405987565585670602751,
+            "translated_gap": 0,
+            "perturbation_floor": 1
+          }
+        ],
+        "maximum_working_precision": 12,
+        "enumerated_nodes": 0,
+        "scope": "Complete modular primitive pair for the stable deeply matched reflected family; no general inverse-graph aggregation."
+      },
+      "higher": {
+        "parameters": {
+          "count": 1606938044258990275541962092341162602522202993782792835301376,
+          "height": 401,
+          "center": 8299031137761985917024815727382322302024892464484873799991314659381305622825816292799414097894207588576395773222601578364790302150823550615773749668227927374122363606803019047370753,
+          "eta": 3,
+          "precision": 15
+        },
+        "n": 68873917825543002472269510784210541934319698981794759686932947265602962764966982477589938148944184693145483676127846351154339709163266644099966439530914869378638013886623963523538761081235909305555453381754863016536892865535284701208570251637448772867054864184421732985347785389073687502055076097802415449734700968738164320317251204458146269561688059659381899265,
+        "matched_residue_depth": 601,
+        "bezout_exponent": 1291978187584228181535737522242294732427851207001365439582305501,
+        "polynomial_degree": 1606938044258990275541962092341162602522202993782792835301375,
+        "basis_center": 8299031137761985917024815727382322302024892464484873799991314659381305622825816292799414097894207588576395773222601578364790302150823550615773749668227927374122363606803019047370753,
+        "u_reversed_coefficients": [
+          8483
+        ],
+        "v_reversed_coefficients": [
+          24285
+        ],
+        "u_terms": [
+          [
+            1606938044258990275541962092341162602522202993782792835301375,
+            8483
+          ]
+        ],
+        "v_terms": [
+          [
+            1606938044258990275541962092341162602522202993782792835301375,
+            24285
+          ]
+        ],
+        "newton_records": [
+          {
+            "coefficient": 8483,
+            "perturbation_terms": 2,
+            "working_precision": 15,
+            "factorial_ratio_jets": 1,
+            "retained_series_summands": 1,
+            "fallback_nodes": 0,
+            "newton_order": 3213876088517980551083924184682325205044405987565585670602751,
+            "translated_gap": 0,
+            "perturbation_floor": 1
+          }
+        ],
+        "maximum_working_precision": 15,
+        "enumerated_nodes": 0,
+        "scope": "Complete modular primitive pair for the stable deeply matched reflected family; no general inverse-graph aggregation."
+      },
+      "translated_grid_leading_coefficient": 291,
+      "reciprocal_deformation_changes_output": false,
+      "complete_modular_identity_verified": true
+    }
+  ],
+  "source_sha256": {
+    "check_matched_progression_bezout.py": "27d6733ac7bf5b3450b283f0a5e37b7b2800d0f53b4afb5277d2e59a07414123",
+    "matched_progression_bezout.py": "a39e00766028d722bfef3508617a91298ec7bb512fd3ac52dcd50cb5a8cafb0d",
+    "balanced_bezout_modular.py": "082af5136189964fd9944dc94efa9805cf4c60bdbc66f2df17bd69fe205be6e8",
+    "interval_unit_jets.py": "264d9583e1cb6a46f8e141387445c6b43db9045d4724af0ab316dc60fe53c256",
+    "pole_cauchy_conditioning.py": "9277946eed975969a63ee7c7f251c0422d3101d4ca2e945fc458b8ae7a015f7c"
+  }
+}
