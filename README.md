@@ -705,6 +705,10 @@ conditions. Two symbolic minors and a positive Bernstein certificate prove
 `rho>=3/4` for every nontrivial member over every characteristic-two field
 at the natural heights.
 Thus it gives no half-rate improvement. Run `make verify-joint-endpoint-loops`.
+At a monomial endpoint pole, exact quartic/Frobenius elimination also
+reduces every higher-nilpotency energy generator to that square-zero
+sector or a tensor-preserving direction, at every positive depth.
+Run `make verify-joint-nilpotent-depths`.
 
 The [group-shear extension](research/group-shear-crossings.md) implements
 the swap through three multiplication/division shears over any finite

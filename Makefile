@@ -184,6 +184,10 @@ verify-joint-evaluation-algebra:
 verify-joint-endpoint-loops:
 	python3 tools/check_joint_endpoint_loops.py
 
+.PHONY: verify-joint-nilpotent-depths
+verify-joint-nilpotent-depths:
+	python3 tools/check_joint_nilpotent_depths.py
+
 .PHONY: verify-group-shears
 verify-group-shears:
 	python3 tools/check_group_shear_crossings.py
