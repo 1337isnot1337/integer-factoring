@@ -1,0 +1,5131 @@
+{
+  "packed_systems": {
+    "cases": [
+      {
+        "coefficient_degree": 1,
+        "direct_count": 1,
+        "direct_values": [
+          {
+            "equation_values": [
+              0
+            ],
+            "is_root": true,
+            "point": [
+              0
+            ]
+          },
+          {
+            "equation_values": [
+              1
+            ],
+            "is_root": false,
+            "point": [
+              1
+            ]
+          }
+        ],
+        "equations": [
+          [
+            [
+              1,
+              [
+                1
+              ]
+            ],
+            [
+              0,
+              [
+                0
+              ]
+            ]
+          ]
+        ],
+        "invoice": {
+          "coefficient_degree": 1,
+          "equations": 1,
+          "max_degree_budget": 1,
+          "max_initial_carry": 1,
+          "precision": 1,
+          "queries": 2,
+          "relative_columns": 1,
+          "summation_width": 1,
+          "variables": 1
+        },
+        "precision": 1,
+        "punctured": false,
+        "result": 1,
+        "variables": 1,
+        "width": 1
+      },
+      {
+        "coefficient_degree": 1,
+        "direct_count": 0,
+        "direct_values": [
+          {
+            "equation_values": [
+              1
+            ],
+            "is_root": false,
+            "point": [
+              1
+            ]
+          }
+        ],
+        "equations": [
+          [
+            [
+              1,
+              [
+                1
+              ]
+            ],
+            [
+              0,
+              [
+                0
+              ]
+            ]
+          ]
+        ],
+        "invoice": {
+          "coefficient_degree": 1,
+          "equations": 1,
+          "max_degree_budget": 1,
+          "max_initial_carry": 1,
+          "precision": 1,
+          "queries": 2,
+          "relative_columns": 1,
+          "summation_width": 1,
+          "variables": 1
+        },
+        "precision": 1,
+        "punctured": true,
+        "result": 0,
+        "variables": 1,
+        "width": 1
+      },
+      {
+        "coefficient_degree": 2,
+        "direct_count": 1,
+        "direct_values": [
+          {
+            "equation_values": [
+              0,
+              0
+            ],
+            "is_root": true,
+            "point": [
+              0,
+              0
+            ]
+          },
+          {
+            "equation_values": [
+              0,
+              1
+            ],
+            "is_root": false,
+            "point": [
+              0,
+              1
+            ]
+          },
+          {
+            "equation_values": [
+              1,
+              0
+            ],
+            "is_root": false,
+            "point": [
+              1,
+              0
+            ]
+          },
+          {
+            "equation_values": [
+              1,
+              1
+            ],
+            "is_root": false,
+            "point": [
+              1,
+              1
+            ]
+          }
+        ],
+        "equations": [
+          [
+            [
+              1,
+              [
+                1,
+                0
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                0,
+                1
+              ]
+            ]
+          ]
+        ],
+        "invoice": {
+          "coefficient_degree": 2,
+          "equations": 2,
+          "max_degree_budget": 2,
+          "max_initial_carry": 2,
+          "precision": 1,
+          "queries": 2,
+          "relative_columns": 1,
+          "summation_width": 1,
+          "variables": 2
+        },
+        "precision": 1,
+        "punctured": false,
+        "result": 1,
+        "variables": 2,
+        "width": 1
+      },
+      {
+        "coefficient_degree": 2,
+        "direct_count": 0,
+        "direct_values": [
+          {
+            "equation_values": [
+              1,
+              1
+            ],
+            "is_root": false,
+            "point": [
+              1,
+              1
+            ]
+          }
+        ],
+        "equations": [
+          [
+            [
+              1,
+              [
+                1,
+                0
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                0,
+                1
+              ]
+            ]
+          ]
+        ],
+        "invoice": {
+          "coefficient_degree": 2,
+          "equations": 2,
+          "max_degree_budget": 2,
+          "max_initial_carry": 2,
+          "precision": 1,
+          "queries": 2,
+          "relative_columns": 1,
+          "summation_width": 1,
+          "variables": 2
+        },
+        "precision": 1,
+        "punctured": true,
+        "result": 0,
+        "variables": 2,
+        "width": 1
+      },
+      {
+        "coefficient_degree": 3,
+        "direct_count": 0,
+        "direct_values": [
+          {
+            "equation_values": [
+              0,
+              1,
+              0
+            ],
+            "is_root": false,
+            "point": [
+              0
+            ]
+          },
+          {
+            "equation_values": [
+              1,
+              0,
+              1
+            ],
+            "is_root": false,
+            "point": [
+              1
+            ]
+          }
+        ],
+        "equations": [
+          [
+            [
+              1,
+              [
+                1
+              ]
+            ],
+            [
+              0,
+              [
+                0
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                0
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                1
+              ]
+            ],
+            [
+              0,
+              [
+                0
+              ]
+            ]
+          ]
+        ],
+        "invoice": {
+          "coefficient_degree": 3,
+          "equations": 3,
+          "max_degree_budget": 3,
+          "max_initial_carry": 3,
+          "precision": 1,
+          "queries": 2,
+          "relative_columns": 1,
+          "summation_width": 1,
+          "variables": 1
+        },
+        "precision": 1,
+        "punctured": false,
+        "result": 0,
+        "variables": 1,
+        "width": 1
+      },
+      {
+        "coefficient_degree": 3,
+        "direct_count": 0,
+        "direct_values": [
+          {
+            "equation_values": [
+              1,
+              0,
+              1
+            ],
+            "is_root": false,
+            "point": [
+              1
+            ]
+          }
+        ],
+        "equations": [
+          [
+            [
+              1,
+              [
+                1
+              ]
+            ],
+            [
+              0,
+              [
+                0
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                0
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                1
+              ]
+            ],
+            [
+              0,
+              [
+                0
+              ]
+            ]
+          ]
+        ],
+        "invoice": {
+          "coefficient_degree": 3,
+          "equations": 3,
+          "max_degree_budget": 3,
+          "max_initial_carry": 3,
+          "precision": 1,
+          "queries": 2,
+          "relative_columns": 1,
+          "summation_width": 1,
+          "variables": 1
+        },
+        "precision": 1,
+        "punctured": true,
+        "result": 0,
+        "variables": 1,
+        "width": 1
+      },
+      {
+        "coefficient_degree": 4,
+        "direct_count": 0,
+        "direct_values": [
+          {
+            "equation_values": [
+              0,
+              1
+            ],
+            "is_root": false,
+            "point": [
+              0
+            ]
+          },
+          {
+            "equation_values": [
+              1,
+              0
+            ],
+            "is_root": false,
+            "point": [
+              1
+            ]
+          },
+          {
+            "equation_values": [
+              6,
+              7
+            ],
+            "is_root": false,
+            "point": [
+              6
+            ]
+          },
+          {
+            "equation_values": [
+              7,
+              6
+            ],
+            "is_root": false,
+            "point": [
+              7
+            ]
+          }
+        ],
+        "equations": [
+          [
+            [
+              1,
+              [
+                1
+              ]
+            ],
+            [
+              0,
+              [
+                0
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                0
+              ]
+            ]
+          ]
+        ],
+        "invoice": {
+          "coefficient_degree": 4,
+          "equations": 2,
+          "max_degree_budget": 4,
+          "max_initial_carry": 2,
+          "precision": 1,
+          "queries": 2,
+          "relative_columns": 1,
+          "summation_width": 2,
+          "variables": 1
+        },
+        "precision": 1,
+        "punctured": false,
+        "result": 0,
+        "variables": 1,
+        "width": 2
+      },
+      {
+        "coefficient_degree": 4,
+        "direct_count": 0,
+        "direct_values": [
+          {
+            "equation_values": [
+              1,
+              0
+            ],
+            "is_root": false,
+            "point": [
+              1
+            ]
+          },
+          {
+            "equation_values": [
+              6,
+              7
+            ],
+            "is_root": false,
+            "point": [
+              6
+            ]
+          },
+          {
+            "equation_values": [
+              7,
+              6
+            ],
+            "is_root": false,
+            "point": [
+              7
+            ]
+          }
+        ],
+        "equations": [
+          [
+            [
+              1,
+              [
+                1
+              ]
+            ],
+            [
+              0,
+              [
+                0
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                0
+              ]
+            ]
+          ]
+        ],
+        "invoice": {
+          "coefficient_degree": 4,
+          "equations": 2,
+          "max_degree_budget": 4,
+          "max_initial_carry": 2,
+          "precision": 1,
+          "queries": 2,
+          "relative_columns": 1,
+          "summation_width": 2,
+          "variables": 1
+        },
+        "precision": 1,
+        "punctured": true,
+        "result": 0,
+        "variables": 1,
+        "width": 2
+      },
+      {
+        "coefficient_degree": 4,
+        "direct_count": 2,
+        "direct_values": [
+          {
+            "equation_values": [
+              1,
+              0
+            ],
+            "is_root": false,
+            "point": [
+              0,
+              0
+            ]
+          },
+          {
+            "equation_values": [
+              7,
+              0
+            ],
+            "is_root": false,
+            "point": [
+              0,
+              1
+            ]
+          },
+          {
+            "equation_values": [
+              6,
+              1
+            ],
+            "is_root": false,
+            "point": [
+              0,
+              6
+            ]
+          },
+          {
+            "equation_values": [
+              0,
+              1
+            ],
+            "is_root": false,
+            "point": [
+              0,
+              7
+            ]
+          },
+          {
+            "equation_values": [
+              0,
+              0
+            ],
+            "is_root": true,
+            "point": [
+              1,
+              0
+            ]
+          },
+          {
+            "equation_values": [
+              6,
+              0
+            ],
+            "is_root": false,
+            "point": [
+              1,
+              1
+            ]
+          },
+          {
+            "equation_values": [
+              7,
+              1
+            ],
+            "is_root": false,
+            "point": [
+              1,
+              6
+            ]
+          },
+          {
+            "equation_values": [
+              1,
+              1
+            ],
+            "is_root": false,
+            "point": [
+              1,
+              7
+            ]
+          },
+          {
+            "equation_values": [
+              7,
+              0
+            ],
+            "is_root": false,
+            "point": [
+              6,
+              0
+            ]
+          },
+          {
+            "equation_values": [
+              1,
+              0
+            ],
+            "is_root": false,
+            "point": [
+              6,
+              1
+            ]
+          },
+          {
+            "equation_values": [
+              0,
+              1
+            ],
+            "is_root": false,
+            "point": [
+              6,
+              6
+            ]
+          },
+          {
+            "equation_values": [
+              6,
+              1
+            ],
+            "is_root": false,
+            "point": [
+              6,
+              7
+            ]
+          },
+          {
+            "equation_values": [
+              6,
+              0
+            ],
+            "is_root": false,
+            "point": [
+              7,
+              0
+            ]
+          },
+          {
+            "equation_values": [
+              0,
+              0
+            ],
+            "is_root": true,
+            "point": [
+              7,
+              1
+            ]
+          },
+          {
+            "equation_values": [
+              1,
+              1
+            ],
+            "is_root": false,
+            "point": [
+              7,
+              6
+            ]
+          },
+          {
+            "equation_values": [
+              7,
+              1
+            ],
+            "is_root": false,
+            "point": [
+              7,
+              7
+            ]
+          }
+        ],
+        "equations": [
+          [
+            [
+              1,
+              [
+                1,
+                0
+              ]
+            ],
+            [
+              6,
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                0,
+                0
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                0,
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                0,
+                1
+              ]
+            ]
+          ]
+        ],
+        "invoice": {
+          "coefficient_degree": 4,
+          "equations": 2,
+          "max_degree_budget": 8,
+          "max_initial_carry": 4,
+          "precision": 1,
+          "queries": 2,
+          "relative_columns": 1,
+          "summation_width": 2,
+          "variables": 2
+        },
+        "precision": 1,
+        "punctured": false,
+        "result": 0,
+        "variables": 2,
+        "width": 2
+      },
+      {
+        "coefficient_degree": 4,
+        "direct_count": 1,
+        "direct_values": [
+          {
+            "equation_values": [
+              6,
+              0
+            ],
+            "is_root": false,
+            "point": [
+              1,
+              1
+            ]
+          },
+          {
+            "equation_values": [
+              7,
+              1
+            ],
+            "is_root": false,
+            "point": [
+              1,
+              6
+            ]
+          },
+          {
+            "equation_values": [
+              1,
+              1
+            ],
+            "is_root": false,
+            "point": [
+              1,
+              7
+            ]
+          },
+          {
+            "equation_values": [
+              1,
+              0
+            ],
+            "is_root": false,
+            "point": [
+              6,
+              1
+            ]
+          },
+          {
+            "equation_values": [
+              0,
+              1
+            ],
+            "is_root": false,
+            "point": [
+              6,
+              6
+            ]
+          },
+          {
+            "equation_values": [
+              6,
+              1
+            ],
+            "is_root": false,
+            "point": [
+              6,
+              7
+            ]
+          },
+          {
+            "equation_values": [
+              0,
+              0
+            ],
+            "is_root": true,
+            "point": [
+              7,
+              1
+            ]
+          },
+          {
+            "equation_values": [
+              1,
+              1
+            ],
+            "is_root": false,
+            "point": [
+              7,
+              6
+            ]
+          },
+          {
+            "equation_values": [
+              7,
+              1
+            ],
+            "is_root": false,
+            "point": [
+              7,
+              7
+            ]
+          }
+        ],
+        "equations": [
+          [
+            [
+              1,
+              [
+                1,
+                0
+              ]
+            ],
+            [
+              6,
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                0,
+                0
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                0,
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                0,
+                1
+              ]
+            ]
+          ]
+        ],
+        "invoice": {
+          "coefficient_degree": 4,
+          "equations": 2,
+          "max_degree_budget": 8,
+          "max_initial_carry": 4,
+          "precision": 1,
+          "queries": 2,
+          "relative_columns": 1,
+          "summation_width": 2,
+          "variables": 2
+        },
+        "precision": 1,
+        "punctured": true,
+        "result": 1,
+        "variables": 2,
+        "width": 2
+      },
+      {
+        "coefficient_degree": 1,
+        "direct_count": 1,
+        "direct_values": [
+          {
+            "equation_values": [
+              0
+            ],
+            "is_root": true,
+            "point": [
+              0
+            ]
+          },
+          {
+            "equation_values": [
+              1
+            ],
+            "is_root": false,
+            "point": [
+              1
+            ]
+          }
+        ],
+        "equations": [
+          [
+            [
+              1,
+              [
+                1
+              ]
+            ],
+            [
+              0,
+              [
+                0
+              ]
+            ]
+          ]
+        ],
+        "invoice": {
+          "coefficient_degree": 1,
+          "equations": 1,
+          "max_degree_budget": 3,
+          "max_initial_carry": 3,
+          "precision": 2,
+          "queries": 3,
+          "relative_columns": 1,
+          "summation_width": 1,
+          "variables": 1
+        },
+        "precision": 2,
+        "punctured": false,
+        "result": 1,
+        "variables": 1,
+        "width": 1
+      },
+      {
+        "coefficient_degree": 1,
+        "direct_count": 0,
+        "direct_values": [
+          {
+            "equation_values": [
+              1
+            ],
+            "is_root": false,
+            "point": [
+              1
+            ]
+          }
+        ],
+        "equations": [
+          [
+            [
+              1,
+              [
+                1
+              ]
+            ],
+            [
+              0,
+              [
+                0
+              ]
+            ]
+          ]
+        ],
+        "invoice": {
+          "coefficient_degree": 1,
+          "equations": 1,
+          "max_degree_budget": 3,
+          "max_initial_carry": 3,
+          "precision": 2,
+          "queries": 3,
+          "relative_columns": 1,
+          "summation_width": 1,
+          "variables": 1
+        },
+        "precision": 2,
+        "punctured": true,
+        "result": 0,
+        "variables": 1,
+        "width": 1
+      },
+      {
+        "coefficient_degree": 2,
+        "direct_count": 1,
+        "direct_values": [
+          {
+            "equation_values": [
+              0,
+              0
+            ],
+            "is_root": true,
+            "point": [
+              0,
+              0
+            ]
+          },
+          {
+            "equation_values": [
+              0,
+              1
+            ],
+            "is_root": false,
+            "point": [
+              0,
+              1
+            ]
+          },
+          {
+            "equation_values": [
+              1,
+              0
+            ],
+            "is_root": false,
+            "point": [
+              1,
+              0
+            ]
+          },
+          {
+            "equation_values": [
+              1,
+              1
+            ],
+            "is_root": false,
+            "point": [
+              1,
+              1
+            ]
+          }
+        ],
+        "equations": [
+          [
+            [
+              1,
+              [
+                1,
+                0
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                0,
+                1
+              ]
+            ]
+          ]
+        ],
+        "invoice": {
+          "coefficient_degree": 2,
+          "equations": 2,
+          "max_degree_budget": 6,
+          "max_initial_carry": 6,
+          "precision": 2,
+          "queries": 3,
+          "relative_columns": 1,
+          "summation_width": 1,
+          "variables": 2
+        },
+        "precision": 2,
+        "punctured": false,
+        "result": 1,
+        "variables": 2,
+        "width": 1
+      },
+      {
+        "coefficient_degree": 2,
+        "direct_count": 0,
+        "direct_values": [
+          {
+            "equation_values": [
+              1,
+              1
+            ],
+            "is_root": false,
+            "point": [
+              1,
+              1
+            ]
+          }
+        ],
+        "equations": [
+          [
+            [
+              1,
+              [
+                1,
+                0
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                0,
+                1
+              ]
+            ]
+          ]
+        ],
+        "invoice": {
+          "coefficient_degree": 2,
+          "equations": 2,
+          "max_degree_budget": 6,
+          "max_initial_carry": 6,
+          "precision": 2,
+          "queries": 3,
+          "relative_columns": 1,
+          "summation_width": 1,
+          "variables": 2
+        },
+        "precision": 2,
+        "punctured": true,
+        "result": 0,
+        "variables": 2,
+        "width": 1
+      },
+      {
+        "coefficient_degree": 3,
+        "direct_count": 0,
+        "direct_values": [
+          {
+            "equation_values": [
+              0,
+              1,
+              0
+            ],
+            "is_root": false,
+            "point": [
+              0
+            ]
+          },
+          {
+            "equation_values": [
+              1,
+              2,
+              1
+            ],
+            "is_root": false,
+            "point": [
+              1
+            ]
+          }
+        ],
+        "equations": [
+          [
+            [
+              1,
+              [
+                1
+              ]
+            ],
+            [
+              0,
+              [
+                0
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                0
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                1
+              ]
+            ],
+            [
+              0,
+              [
+                0
+              ]
+            ]
+          ]
+        ],
+        "invoice": {
+          "coefficient_degree": 3,
+          "equations": 3,
+          "max_degree_budget": 9,
+          "max_initial_carry": 9,
+          "precision": 2,
+          "queries": 3,
+          "relative_columns": 1,
+          "summation_width": 1,
+          "variables": 1
+        },
+        "precision": 2,
+        "punctured": false,
+        "result": 0,
+        "variables": 1,
+        "width": 1
+      },
+      {
+        "coefficient_degree": 3,
+        "direct_count": 0,
+        "direct_values": [
+          {
+            "equation_values": [
+              1,
+              2,
+              1
+            ],
+            "is_root": false,
+            "point": [
+              1
+            ]
+          }
+        ],
+        "equations": [
+          [
+            [
+              1,
+              [
+                1
+              ]
+            ],
+            [
+              0,
+              [
+                0
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                0
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                1
+              ]
+            ],
+            [
+              0,
+              [
+                0
+              ]
+            ]
+          ]
+        ],
+        "invoice": {
+          "coefficient_degree": 3,
+          "equations": 3,
+          "max_degree_budget": 9,
+          "max_initial_carry": 9,
+          "precision": 2,
+          "queries": 3,
+          "relative_columns": 1,
+          "summation_width": 1,
+          "variables": 1
+        },
+        "precision": 2,
+        "punctured": true,
+        "result": 0,
+        "variables": 1,
+        "width": 1
+      },
+      {
+        "coefficient_degree": 4,
+        "direct_count": 0,
+        "direct_values": [
+          {
+            "equation_values": [
+              0,
+              1
+            ],
+            "is_root": false,
+            "point": [
+              0
+            ]
+          },
+          {
+            "equation_values": [
+              1,
+              2
+            ],
+            "is_root": false,
+            "point": [
+              1
+            ]
+          },
+          {
+            "equation_values": [
+              180,
+              181
+            ],
+            "is_root": false,
+            "point": [
+              180
+            ]
+          },
+          {
+            "equation_values": [
+              159,
+              156
+            ],
+            "is_root": false,
+            "point": [
+              159
+            ]
+          }
+        ],
+        "equations": [
+          [
+            [
+              1,
+              [
+                1
+              ]
+            ],
+            [
+              0,
+              [
+                0
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                0
+              ]
+            ]
+          ]
+        ],
+        "invoice": {
+          "coefficient_degree": 4,
+          "equations": 2,
+          "max_degree_budget": 12,
+          "max_initial_carry": 6,
+          "precision": 2,
+          "queries": 3,
+          "relative_columns": 1,
+          "summation_width": 2,
+          "variables": 1
+        },
+        "precision": 2,
+        "punctured": false,
+        "result": 0,
+        "variables": 1,
+        "width": 2
+      },
+      {
+        "coefficient_degree": 4,
+        "direct_count": 0,
+        "direct_values": [
+          {
+            "equation_values": [
+              1,
+              2
+            ],
+            "is_root": false,
+            "point": [
+              1
+            ]
+          },
+          {
+            "equation_values": [
+              180,
+              181
+            ],
+            "is_root": false,
+            "point": [
+              180
+            ]
+          },
+          {
+            "equation_values": [
+              159,
+              156
+            ],
+            "is_root": false,
+            "point": [
+              159
+            ]
+          }
+        ],
+        "equations": [
+          [
+            [
+              1,
+              [
+                1
+              ]
+            ],
+            [
+              0,
+              [
+                0
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                0
+              ]
+            ]
+          ]
+        ],
+        "invoice": {
+          "coefficient_degree": 4,
+          "equations": 2,
+          "max_degree_budget": 12,
+          "max_initial_carry": 6,
+          "precision": 2,
+          "queries": 3,
+          "relative_columns": 1,
+          "summation_width": 2,
+          "variables": 1
+        },
+        "precision": 2,
+        "punctured": true,
+        "result": 0,
+        "variables": 1,
+        "width": 2
+      },
+      {
+        "coefficient_degree": 4,
+        "direct_count": 2,
+        "direct_values": [
+          {
+            "equation_values": [
+              1,
+              0
+            ],
+            "is_root": false,
+            "point": [
+              0,
+              0
+            ]
+          },
+          {
+            "equation_values": [
+              181,
+              2
+            ],
+            "is_root": false,
+            "point": [
+              0,
+              1
+            ]
+          },
+          {
+            "equation_values": [
+              156,
+              3
+            ],
+            "is_root": false,
+            "point": [
+              0,
+              180
+            ]
+          },
+          {
+            "equation_values": [
+              2,
+              3
+            ],
+            "is_root": false,
+            "point": [
+              0,
+              159
+            ]
+          },
+          {
+            "equation_values": [
+              2,
+              0
+            ],
+            "is_root": true,
+            "point": [
+              1,
+              0
+            ]
+          },
+          {
+            "equation_values": [
+              182,
+              2
+            ],
+            "is_root": false,
+            "point": [
+              1,
+              1
+            ]
+          },
+          {
+            "equation_values": [
+              157,
+              3
+            ],
+            "is_root": false,
+            "point": [
+              1,
+              180
+            ]
+          },
+          {
+            "equation_values": [
+              3,
+              3
+            ],
+            "is_root": false,
+            "point": [
+              1,
+              159
+            ]
+          },
+          {
+            "equation_values": [
+              181,
+              0
+            ],
+            "is_root": false,
+            "point": [
+              180,
+              0
+            ]
+          },
+          {
+            "equation_values": [
+              41,
+              2
+            ],
+            "is_root": false,
+            "point": [
+              180,
+              1
+            ]
+          },
+          {
+            "equation_values": [
+              0,
+              3
+            ],
+            "is_root": false,
+            "point": [
+              180,
+              180
+            ]
+          },
+          {
+            "equation_values": [
+              182,
+              3
+            ],
+            "is_root": false,
+            "point": [
+              180,
+              159
+            ]
+          },
+          {
+            "equation_values": [
+              156,
+              0
+            ],
+            "is_root": false,
+            "point": [
+              159,
+              0
+            ]
+          },
+          {
+            "equation_values": [
+              0,
+              2
+            ],
+            "is_root": true,
+            "point": [
+              159,
+              1
+            ]
+          },
+          {
+            "equation_values": [
+              43,
+              3
+            ],
+            "is_root": false,
+            "point": [
+              159,
+              180
+            ]
+          },
+          {
+            "equation_values": [
+              157,
+              3
+            ],
+            "is_root": false,
+            "point": [
+              159,
+              159
+            ]
+          }
+        ],
+        "equations": [
+          [
+            [
+              1,
+              [
+                1,
+                0
+              ]
+            ],
+            [
+              180,
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                0,
+                0
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                0,
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                0,
+                1
+              ]
+            ]
+          ]
+        ],
+        "invoice": {
+          "coefficient_degree": 4,
+          "equations": 2,
+          "max_degree_budget": 24,
+          "max_initial_carry": 12,
+          "precision": 2,
+          "queries": 3,
+          "relative_columns": 1,
+          "summation_width": 2,
+          "variables": 2
+        },
+        "precision": 2,
+        "punctured": false,
+        "result": 2,
+        "variables": 2,
+        "width": 2
+      },
+      {
+        "coefficient_degree": 4,
+        "direct_count": 1,
+        "direct_values": [
+          {
+            "equation_values": [
+              182,
+              2
+            ],
+            "is_root": false,
+            "point": [
+              1,
+              1
+            ]
+          },
+          {
+            "equation_values": [
+              157,
+              3
+            ],
+            "is_root": false,
+            "point": [
+              1,
+              180
+            ]
+          },
+          {
+            "equation_values": [
+              3,
+              3
+            ],
+            "is_root": false,
+            "point": [
+              1,
+              159
+            ]
+          },
+          {
+            "equation_values": [
+              41,
+              2
+            ],
+            "is_root": false,
+            "point": [
+              180,
+              1
+            ]
+          },
+          {
+            "equation_values": [
+              0,
+              3
+            ],
+            "is_root": false,
+            "point": [
+              180,
+              180
+            ]
+          },
+          {
+            "equation_values": [
+              182,
+              3
+            ],
+            "is_root": false,
+            "point": [
+              180,
+              159
+            ]
+          },
+          {
+            "equation_values": [
+              0,
+              2
+            ],
+            "is_root": true,
+            "point": [
+              159,
+              1
+            ]
+          },
+          {
+            "equation_values": [
+              43,
+              3
+            ],
+            "is_root": false,
+            "point": [
+              159,
+              180
+            ]
+          },
+          {
+            "equation_values": [
+              157,
+              3
+            ],
+            "is_root": false,
+            "point": [
+              159,
+              159
+            ]
+          }
+        ],
+        "equations": [
+          [
+            [
+              1,
+              [
+                1,
+                0
+              ]
+            ],
+            [
+              180,
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                0,
+                0
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                0,
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                0,
+                1
+              ]
+            ]
+          ]
+        ],
+        "invoice": {
+          "coefficient_degree": 4,
+          "equations": 2,
+          "max_degree_budget": 24,
+          "max_initial_carry": 12,
+          "precision": 2,
+          "queries": 3,
+          "relative_columns": 1,
+          "summation_width": 2,
+          "variables": 2
+        },
+        "precision": 2,
+        "punctured": true,
+        "result": 1,
+        "variables": 2,
+        "width": 2
+      },
+      {
+        "coefficient_degree": 1,
+        "direct_count": 1,
+        "direct_values": [
+          {
+            "equation_values": [
+              0
+            ],
+            "is_root": true,
+            "point": [
+              0
+            ]
+          },
+          {
+            "equation_values": [
+              1
+            ],
+            "is_root": false,
+            "point": [
+              1
+            ]
+          }
+        ],
+        "equations": [
+          [
+            [
+              1,
+              [
+                1
+              ]
+            ],
+            [
+              0,
+              [
+                0
+              ]
+            ]
+          ]
+        ],
+        "invoice": {
+          "coefficient_degree": 1,
+          "equations": 1,
+          "max_degree_budget": 5,
+          "max_initial_carry": 5,
+          "precision": 3,
+          "queries": 4,
+          "relative_columns": 1,
+          "summation_width": 1,
+          "variables": 1
+        },
+        "precision": 3,
+        "punctured": false,
+        "result": 1,
+        "variables": 1,
+        "width": 1
+      },
+      {
+        "coefficient_degree": 1,
+        "direct_count": 0,
+        "direct_values": [
+          {
+            "equation_values": [
+              1
+            ],
+            "is_root": false,
+            "point": [
+              1
+            ]
+          }
+        ],
+        "equations": [
+          [
+            [
+              1,
+              [
+                1
+              ]
+            ],
+            [
+              0,
+              [
+                0
+              ]
+            ]
+          ]
+        ],
+        "invoice": {
+          "coefficient_degree": 1,
+          "equations": 1,
+          "max_degree_budget": 5,
+          "max_initial_carry": 5,
+          "precision": 3,
+          "queries": 4,
+          "relative_columns": 1,
+          "summation_width": 1,
+          "variables": 1
+        },
+        "precision": 3,
+        "punctured": true,
+        "result": 0,
+        "variables": 1,
+        "width": 1
+      },
+      {
+        "coefficient_degree": 2,
+        "direct_count": 1,
+        "direct_values": [
+          {
+            "equation_values": [
+              0,
+              0
+            ],
+            "is_root": true,
+            "point": [
+              0,
+              0
+            ]
+          },
+          {
+            "equation_values": [
+              0,
+              1
+            ],
+            "is_root": false,
+            "point": [
+              0,
+              1
+            ]
+          },
+          {
+            "equation_values": [
+              1,
+              0
+            ],
+            "is_root": false,
+            "point": [
+              1,
+              0
+            ]
+          },
+          {
+            "equation_values": [
+              1,
+              1
+            ],
+            "is_root": false,
+            "point": [
+              1,
+              1
+            ]
+          }
+        ],
+        "equations": [
+          [
+            [
+              1,
+              [
+                1,
+                0
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                0,
+                1
+              ]
+            ]
+          ]
+        ],
+        "invoice": {
+          "coefficient_degree": 2,
+          "equations": 2,
+          "max_degree_budget": 10,
+          "max_initial_carry": 10,
+          "precision": 3,
+          "queries": 4,
+          "relative_columns": 1,
+          "summation_width": 1,
+          "variables": 2
+        },
+        "precision": 3,
+        "punctured": false,
+        "result": 1,
+        "variables": 2,
+        "width": 1
+      },
+      {
+        "coefficient_degree": 2,
+        "direct_count": 0,
+        "direct_values": [
+          {
+            "equation_values": [
+              1,
+              1
+            ],
+            "is_root": false,
+            "point": [
+              1,
+              1
+            ]
+          }
+        ],
+        "equations": [
+          [
+            [
+              1,
+              [
+                1,
+                0
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                0,
+                1
+              ]
+            ]
+          ]
+        ],
+        "invoice": {
+          "coefficient_degree": 2,
+          "equations": 2,
+          "max_degree_budget": 10,
+          "max_initial_carry": 10,
+          "precision": 3,
+          "queries": 4,
+          "relative_columns": 1,
+          "summation_width": 1,
+          "variables": 2
+        },
+        "precision": 3,
+        "punctured": true,
+        "result": 0,
+        "variables": 2,
+        "width": 1
+      },
+      {
+        "coefficient_degree": 3,
+        "direct_count": 0,
+        "direct_values": [
+          {
+            "equation_values": [
+              0,
+              1,
+              0
+            ],
+            "is_root": false,
+            "point": [
+              0
+            ]
+          },
+          {
+            "equation_values": [
+              1,
+              2,
+              1
+            ],
+            "is_root": false,
+            "point": [
+              1
+            ]
+          }
+        ],
+        "equations": [
+          [
+            [
+              1,
+              [
+                1
+              ]
+            ],
+            [
+              0,
+              [
+                0
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                0
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                1
+              ]
+            ],
+            [
+              0,
+              [
+                0
+              ]
+            ]
+          ]
+        ],
+        "invoice": {
+          "coefficient_degree": 3,
+          "equations": 3,
+          "max_degree_budget": 15,
+          "max_initial_carry": 15,
+          "precision": 3,
+          "queries": 4,
+          "relative_columns": 1,
+          "summation_width": 1,
+          "variables": 1
+        },
+        "precision": 3,
+        "punctured": false,
+        "result": 0,
+        "variables": 1,
+        "width": 1
+      },
+      {
+        "coefficient_degree": 3,
+        "direct_count": 0,
+        "direct_values": [
+          {
+            "equation_values": [
+              1,
+              2,
+              1
+            ],
+            "is_root": false,
+            "point": [
+              1
+            ]
+          }
+        ],
+        "equations": [
+          [
+            [
+              1,
+              [
+                1
+              ]
+            ],
+            [
+              0,
+              [
+                0
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                0
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                1
+              ]
+            ],
+            [
+              0,
+              [
+                0
+              ]
+            ]
+          ]
+        ],
+        "invoice": {
+          "coefficient_degree": 3,
+          "equations": 3,
+          "max_degree_budget": 15,
+          "max_initial_carry": 15,
+          "precision": 3,
+          "queries": 4,
+          "relative_columns": 1,
+          "summation_width": 1,
+          "variables": 1
+        },
+        "precision": 3,
+        "punctured": true,
+        "result": 0,
+        "variables": 1,
+        "width": 1
+      },
+      {
+        "coefficient_degree": 4,
+        "direct_count": 0,
+        "direct_values": [
+          {
+            "equation_values": [
+              0,
+              1
+            ],
+            "is_root": false,
+            "point": [
+              0
+            ]
+          },
+          {
+            "equation_values": [
+              1,
+              2
+            ],
+            "is_root": false,
+            "point": [
+              1
+            ]
+          },
+          {
+            "equation_values": [
+              3532,
+              3533
+            ],
+            "is_root": false,
+            "point": [
+              3532
+            ]
+          },
+          {
+            "equation_values": [
+              1147,
+              1148
+            ],
+            "is_root": false,
+            "point": [
+              1147
+            ]
+          }
+        ],
+        "equations": [
+          [
+            [
+              1,
+              [
+                1
+              ]
+            ],
+            [
+              0,
+              [
+                0
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                0
+              ]
+            ]
+          ]
+        ],
+        "invoice": {
+          "coefficient_degree": 4,
+          "equations": 2,
+          "max_degree_budget": 20,
+          "max_initial_carry": 10,
+          "precision": 3,
+          "queries": 4,
+          "relative_columns": 1,
+          "summation_width": 2,
+          "variables": 1
+        },
+        "precision": 3,
+        "punctured": false,
+        "result": 0,
+        "variables": 1,
+        "width": 2
+      },
+      {
+        "coefficient_degree": 4,
+        "direct_count": 0,
+        "direct_values": [
+          {
+            "equation_values": [
+              1,
+              2
+            ],
+            "is_root": false,
+            "point": [
+              1
+            ]
+          },
+          {
+            "equation_values": [
+              3532,
+              3533
+            ],
+            "is_root": false,
+            "point": [
+              3532
+            ]
+          },
+          {
+            "equation_values": [
+              1147,
+              1148
+            ],
+            "is_root": false,
+            "point": [
+              1147
+            ]
+          }
+        ],
+        "equations": [
+          [
+            [
+              1,
+              [
+                1
+              ]
+            ],
+            [
+              0,
+              [
+                0
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                0
+              ]
+            ]
+          ]
+        ],
+        "invoice": {
+          "coefficient_degree": 4,
+          "equations": 2,
+          "max_degree_budget": 20,
+          "max_initial_carry": 10,
+          "precision": 3,
+          "queries": 4,
+          "relative_columns": 1,
+          "summation_width": 2,
+          "variables": 1
+        },
+        "precision": 3,
+        "punctured": true,
+        "result": 0,
+        "variables": 1,
+        "width": 2
+      },
+      {
+        "coefficient_degree": 4,
+        "direct_count": 2,
+        "direct_values": [
+          {
+            "equation_values": [
+              1,
+              0
+            ],
+            "is_root": false,
+            "point": [
+              0,
+              0
+            ]
+          },
+          {
+            "equation_values": [
+              3533,
+              2
+            ],
+            "is_root": false,
+            "point": [
+              0,
+              1
+            ]
+          },
+          {
+            "equation_values": [
+              1148,
+              7
+            ],
+            "is_root": false,
+            "point": [
+              0,
+              3532
+            ]
+          },
+          {
+            "equation_values": [
+              2,
+              7
+            ],
+            "is_root": false,
+            "point": [
+              0,
+              1147
+            ]
+          },
+          {
+            "equation_values": [
+              2,
+              0
+            ],
+            "is_root": true,
+            "point": [
+              1,
+              0
+            ]
+          },
+          {
+            "equation_values": [
+              3534,
+              2
+            ],
+            "is_root": false,
+            "point": [
+              1,
+              1
+            ]
+          },
+          {
+            "equation_values": [
+              1149,
+              7
+            ],
+            "is_root": false,
+            "point": [
+              1,
+              3532
+            ]
+          },
+          {
+            "equation_values": [
+              3,
+              7
+            ],
+            "is_root": false,
+            "point": [
+              1,
+              1147
+            ]
+          },
+          {
+            "equation_values": [
+              3533,
+              0
+            ],
+            "is_root": false,
+            "point": [
+              3532,
+              0
+            ]
+          },
+          {
+            "equation_values": [
+              2449,
+              2
+            ],
+            "is_root": false,
+            "point": [
+              3532,
+              1
+            ]
+          },
+          {
+            "equation_values": [
+              0,
+              7
+            ],
+            "is_root": false,
+            "point": [
+              3532,
+              3532
+            ]
+          },
+          {
+            "equation_values": [
+              3534,
+              7
+            ],
+            "is_root": false,
+            "point": [
+              3532,
+              1147
+            ]
+          },
+          {
+            "equation_values": [
+              1148,
+              0
+            ],
+            "is_root": false,
+            "point": [
+              1147,
+              0
+            ]
+          },
+          {
+            "equation_values": [
+              0,
+              2
+            ],
+            "is_root": true,
+            "point": [
+              1147,
+              1
+            ]
+          },
+          {
+            "equation_values": [
+              2231,
+              7
+            ],
+            "is_root": false,
+            "point": [
+              1147,
+              3532
+            ]
+          },
+          {
+            "equation_values": [
+              1149,
+              7
+            ],
+            "is_root": false,
+            "point": [
+              1147,
+              1147
+            ]
+          }
+        ],
+        "equations": [
+          [
+            [
+              1,
+              [
+                1,
+                0
+              ]
+            ],
+            [
+              3532,
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                0,
+                0
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                0,
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                0,
+                1
+              ]
+            ]
+          ]
+        ],
+        "invoice": {
+          "coefficient_degree": 4,
+          "equations": 2,
+          "max_degree_budget": 40,
+          "max_initial_carry": 20,
+          "precision": 3,
+          "queries": 4,
+          "relative_columns": 1,
+          "summation_width": 2,
+          "variables": 2
+        },
+        "precision": 3,
+        "punctured": false,
+        "result": 2,
+        "variables": 2,
+        "width": 2
+      },
+      {
+        "coefficient_degree": 4,
+        "direct_count": 1,
+        "direct_values": [
+          {
+            "equation_values": [
+              3534,
+              2
+            ],
+            "is_root": false,
+            "point": [
+              1,
+              1
+            ]
+          },
+          {
+            "equation_values": [
+              1149,
+              7
+            ],
+            "is_root": false,
+            "point": [
+              1,
+              3532
+            ]
+          },
+          {
+            "equation_values": [
+              3,
+              7
+            ],
+            "is_root": false,
+            "point": [
+              1,
+              1147
+            ]
+          },
+          {
+            "equation_values": [
+              2449,
+              2
+            ],
+            "is_root": false,
+            "point": [
+              3532,
+              1
+            ]
+          },
+          {
+            "equation_values": [
+              0,
+              7
+            ],
+            "is_root": false,
+            "point": [
+              3532,
+              3532
+            ]
+          },
+          {
+            "equation_values": [
+              3534,
+              7
+            ],
+            "is_root": false,
+            "point": [
+              3532,
+              1147
+            ]
+          },
+          {
+            "equation_values": [
+              0,
+              2
+            ],
+            "is_root": true,
+            "point": [
+              1147,
+              1
+            ]
+          },
+          {
+            "equation_values": [
+              2231,
+              7
+            ],
+            "is_root": false,
+            "point": [
+              1147,
+              3532
+            ]
+          },
+          {
+            "equation_values": [
+              1149,
+              7
+            ],
+            "is_root": false,
+            "point": [
+              1147,
+              1147
+            ]
+          }
+        ],
+        "equations": [
+          [
+            [
+              1,
+              [
+                1,
+                0
+              ]
+            ],
+            [
+              3532,
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                0,
+                0
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                0,
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                0,
+                1
+              ]
+            ]
+          ]
+        ],
+        "invoice": {
+          "coefficient_degree": 4,
+          "equations": 2,
+          "max_degree_budget": 40,
+          "max_initial_carry": 20,
+          "precision": 3,
+          "queries": 4,
+          "relative_columns": 1,
+          "summation_width": 2,
+          "variables": 2
+        },
+        "precision": 3,
+        "punctured": true,
+        "result": 1,
+        "variables": 2,
+        "width": 2
+      },
+      {
+        "coefficient_degree": 4,
+        "direct_count": 1,
+        "equations": [
+          [
+            [
+              1,
+              [
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                0
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                0
+              ]
+            ]
+          ]
+        ],
+        "exact_count_precision_exceeds_domain_bits": true,
+        "invoice": {
+          "coefficient_degree": 4,
+          "equations": 2,
+          "max_degree_budget": 72,
+          "max_initial_carry": 36,
+          "precision": 5,
+          "queries": 6,
+          "relative_columns": 1,
+          "summation_width": 2,
+          "variables": 1
+        },
+        "precision": 5,
+        "result": 1,
+        "variables": 1,
+        "width": 2
+      },
+      {
+        "coefficient_degree": 2,
+        "constant_control": true,
+        "direct_count": 4,
+        "equations": [],
+        "invoice": {
+          "coefficient_degree": 2,
+          "max_degree_budget": 0,
+          "max_initial_carry": 0,
+          "precision": 3,
+          "queries": 1,
+          "variables": 2
+        },
+        "precision": 3,
+        "punctured": false,
+        "result": 4,
+        "variables": 2,
+        "width": 1
+      },
+      {
+        "coefficient_degree": 2,
+        "constant_control": true,
+        "direct_count": 1,
+        "equations": [],
+        "invoice": {
+          "coefficient_degree": 2,
+          "max_degree_budget": 0,
+          "max_initial_carry": 0,
+          "precision": 3,
+          "queries": 1,
+          "variables": 2
+        },
+        "precision": 3,
+        "punctured": true,
+        "result": 1,
+        "variables": 2,
+        "width": 1
+      },
+      {
+        "coefficient_degree": 2,
+        "constant_control": true,
+        "direct_count": 4,
+        "equations": [
+          []
+        ],
+        "invoice": {
+          "coefficient_degree": 2,
+          "equations": 1,
+          "max_degree_budget": 0,
+          "max_initial_carry": 0,
+          "precision": 3,
+          "queries": 4,
+          "relative_columns": 1,
+          "summation_width": 1,
+          "variables": 2
+        },
+        "precision": 3,
+        "punctured": false,
+        "result": 4,
+        "variables": 2,
+        "width": 1
+      },
+      {
+        "coefficient_degree": 2,
+        "constant_control": true,
+        "direct_count": 0,
+        "equations": [
+          [
+            [
+              1,
+              [
+                0,
+                0
+              ]
+            ]
+          ]
+        ],
+        "invoice": {
+          "coefficient_degree": 2,
+          "equations": 1,
+          "max_degree_budget": 0,
+          "max_initial_carry": 0,
+          "precision": 3,
+          "queries": 4,
+          "relative_columns": 1,
+          "summation_width": 1,
+          "variables": 2
+        },
+        "precision": 3,
+        "punctured": false,
+        "result": 0,
+        "variables": 2,
+        "width": 1
+      }
+    ],
+    "direct_assignments": 133,
+    "queries": 35
+  },
+  "rational": {
+    "cases": [
+      {
+        "denominators": [
+          [
+            0,
+            [
+              [
+                1,
+                [
+                  1,
+                  0
+                ]
+              ],
+              [
+                1,
+                [
+                  0,
+                  0
+                ]
+              ]
+            ]
+          ],
+          [
+            0,
+            [
+              [
+                2,
+                [
+                  1,
+                  0
+                ]
+              ],
+              [
+                1,
+                [
+                  0,
+                  0
+                ]
+              ]
+            ]
+          ],
+          [
+            0,
+            [
+              [
+                1,
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                2,
+                [
+                  0,
+                  0
+                ]
+              ]
+            ]
+          ]
+        ],
+        "direct_values": [
+          {
+            "denominators": [
+              1,
+              1,
+              2
+            ],
+            "input": 0,
+            "value": 0
+          },
+          {
+            "denominators": [
+              0,
+              3,
+              3
+            ],
+            "input": 1,
+            "value": 0
+          },
+          {
+            "denominators": [
+              3,
+              2,
+              1
+            ],
+            "input": 2,
+            "value": 2
+          },
+          {
+            "denominators": [
+              2,
+              0,
+              0
+            ],
+            "input": 3,
+            "value": 0
+          }
+        ],
+        "invoice": {
+          "adjugate_factors": 3,
+          "coefficient_degree": 2,
+          "denominator_factors": 3,
+          "max_degree_budget": 16,
+          "norm_factors": 6,
+          "queries": 2,
+          "relative_columns": 2,
+          "summation_width": 2
+        },
+        "numerator": [
+          0,
+          [
+            [
+              1,
+              [
+                1,
+                0
+              ]
+            ],
+            [
+              0,
+              [
+                0,
+                0
+              ]
+            ]
+          ]
+        ],
+        "precision": 1,
+        "punctured": false,
+        "result": 2,
+        "row_modulus": 1
+      },
+      {
+        "denominators": [
+          [
+            0,
+            [
+              [
+                1,
+                [
+                  1,
+                  0
+                ]
+              ],
+              [
+                1,
+                [
+                  0,
+                  0
+                ]
+              ]
+            ]
+          ],
+          [
+            0,
+            [
+              [
+                2,
+                [
+                  1,
+                  0
+                ]
+              ],
+              [
+                1,
+                [
+                  0,
+                  0
+                ]
+              ]
+            ]
+          ],
+          [
+            0,
+            [
+              [
+                1,
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                2,
+                [
+                  0,
+                  0
+                ]
+              ]
+            ]
+          ]
+        ],
+        "direct_values": [
+          {
+            "denominators": [
+              0,
+              3,
+              3
+            ],
+            "input": 1,
+            "value": 0
+          },
+          {
+            "denominators": [
+              3,
+              2,
+              1
+            ],
+            "input": 2,
+            "value": 2
+          },
+          {
+            "denominators": [
+              2,
+              0,
+              0
+            ],
+            "input": 3,
+            "value": 0
+          }
+        ],
+        "invoice": {
+          "adjugate_factors": 3,
+          "coefficient_degree": 2,
+          "denominator_factors": 3,
+          "max_degree_budget": 16,
+          "norm_factors": 6,
+          "queries": 2,
+          "relative_columns": 2,
+          "summation_width": 2
+        },
+        "numerator": [
+          0,
+          [
+            [
+              1,
+              [
+                1,
+                0
+              ]
+            ],
+            [
+              0,
+              [
+                0,
+                0
+              ]
+            ]
+          ]
+        ],
+        "precision": 1,
+        "punctured": true,
+        "result": 2,
+        "row_modulus": 1
+      },
+      {
+        "denominators": [
+          [
+            0,
+            [
+              [
+                1,
+                [
+                  1
+                ]
+              ],
+              [
+                1,
+                [
+                  0
+                ]
+              ]
+            ]
+          ],
+          [
+            1,
+            [
+              [
+                2,
+                [
+                  1
+                ]
+              ],
+              [
+                1,
+                [
+                  0
+                ]
+              ]
+            ]
+          ],
+          [
+            0,
+            [
+              [
+                1,
+                [
+                  1
+                ]
+              ],
+              [
+                2,
+                [
+                  0
+                ]
+              ]
+            ]
+          ]
+        ],
+        "direct_values": [
+          {
+            "denominators": [
+              1,
+              1,
+              2
+            ],
+            "input": 0,
+            "value": 0
+          },
+          {
+            "denominators": [
+              0,
+              3,
+              3
+            ],
+            "input": 1,
+            "value": 0
+          },
+          {
+            "denominators": [
+              3,
+              0,
+              0
+            ],
+            "input": 2,
+            "value": 0
+          },
+          {
+            "denominators": [
+              2,
+              2,
+              1
+            ],
+            "input": 3,
+            "value": 1
+          }
+        ],
+        "invoice": {
+          "adjugate_factors": 3,
+          "coefficient_degree": 2,
+          "denominator_factors": 3,
+          "max_degree_budget": 16,
+          "norm_factors": 6,
+          "queries": 2,
+          "relative_columns": 1,
+          "summation_width": 2
+        },
+        "numerator": [
+          0,
+          [
+            [
+              1,
+              [
+                1
+              ]
+            ],
+            [
+              0,
+              [
+                0
+              ]
+            ]
+          ]
+        ],
+        "precision": 1,
+        "punctured": false,
+        "result": 1,
+        "row_modulus": 2
+      },
+      {
+        "denominators": [
+          [
+            0,
+            [
+              [
+                1,
+                [
+                  1
+                ]
+              ],
+              [
+                1,
+                [
+                  0
+                ]
+              ]
+            ]
+          ],
+          [
+            1,
+            [
+              [
+                2,
+                [
+                  1
+                ]
+              ],
+              [
+                1,
+                [
+                  0
+                ]
+              ]
+            ]
+          ],
+          [
+            0,
+            [
+              [
+                1,
+                [
+                  1
+                ]
+              ],
+              [
+                2,
+                [
+                  0
+                ]
+              ]
+            ]
+          ]
+        ],
+        "direct_values": [
+          {
+            "denominators": [
+              0,
+              3,
+              3
+            ],
+            "input": 1,
+            "value": 0
+          },
+          {
+            "denominators": [
+              3,
+              0,
+              0
+            ],
+            "input": 2,
+            "value": 0
+          },
+          {
+            "denominators": [
+              2,
+              2,
+              1
+            ],
+            "input": 3,
+            "value": 1
+          }
+        ],
+        "invoice": {
+          "adjugate_factors": 3,
+          "coefficient_degree": 2,
+          "denominator_factors": 3,
+          "max_degree_budget": 16,
+          "norm_factors": 6,
+          "queries": 2,
+          "relative_columns": 1,
+          "summation_width": 2
+        },
+        "numerator": [
+          0,
+          [
+            [
+              1,
+              [
+                1
+              ]
+            ],
+            [
+              0,
+              [
+                0
+              ]
+            ]
+          ]
+        ],
+        "precision": 1,
+        "punctured": true,
+        "result": 1,
+        "row_modulus": 2
+      },
+      {
+        "denominators": [
+          [
+            0,
+            [
+              [
+                1,
+                [
+                  1,
+                  0
+                ]
+              ],
+              [
+                1,
+                [
+                  0,
+                  0
+                ]
+              ]
+            ]
+          ],
+          [
+            0,
+            [
+              [
+                4,
+                [
+                  1,
+                  0
+                ]
+              ],
+              [
+                1,
+                [
+                  0,
+                  0
+                ]
+              ]
+            ]
+          ],
+          [
+            0,
+            [
+              [
+                1,
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                4,
+                [
+                  0,
+                  0
+                ]
+              ]
+            ]
+          ]
+        ],
+        "direct_values": [
+          {
+            "denominators": [
+              1,
+              1,
+              4
+            ],
+            "input": 0,
+            "value": 10
+          },
+          {
+            "denominators": [
+              2,
+              5,
+              5
+            ],
+            "input": 1,
+            "value": 0
+          },
+          {
+            "denominators": [
+              5,
+              12,
+              3
+            ],
+            "input": 4,
+            "value": 14
+          },
+          {
+            "denominators": [
+              12,
+              2,
+              8
+            ],
+            "input": 15,
+            "value": 0
+          }
+        ],
+        "invoice": {
+          "adjugate_factors": 3,
+          "coefficient_degree": 2,
+          "denominator_factors": 3,
+          "max_degree_budget": 28,
+          "norm_factors": 6,
+          "queries": 3,
+          "relative_columns": 2,
+          "summation_width": 2
+        },
+        "numerator": [
+          0,
+          [
+            [
+              1,
+              [
+                1,
+                0
+              ]
+            ],
+            [
+              2,
+              [
+                0,
+                0
+              ]
+            ]
+          ]
+        ],
+        "precision": 2,
+        "punctured": false,
+        "result": 4,
+        "row_modulus": 1
+      },
+      {
+        "denominators": [
+          [
+            0,
+            [
+              [
+                1,
+                [
+                  1,
+                  0
+                ]
+              ],
+              [
+                1,
+                [
+                  0,
+                  0
+                ]
+              ]
+            ]
+          ],
+          [
+            0,
+            [
+              [
+                4,
+                [
+                  1,
+                  0
+                ]
+              ],
+              [
+                1,
+                [
+                  0,
+                  0
+                ]
+              ]
+            ]
+          ],
+          [
+            0,
+            [
+              [
+                1,
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                4,
+                [
+                  0,
+                  0
+                ]
+              ]
+            ]
+          ]
+        ],
+        "direct_values": [
+          {
+            "denominators": [
+              2,
+              5,
+              5
+            ],
+            "input": 1,
+            "value": 0
+          },
+          {
+            "denominators": [
+              5,
+              12,
+              3
+            ],
+            "input": 4,
+            "value": 14
+          },
+          {
+            "denominators": [
+              12,
+              2,
+              8
+            ],
+            "input": 15,
+            "value": 0
+          }
+        ],
+        "invoice": {
+          "adjugate_factors": 3,
+          "coefficient_degree": 2,
+          "denominator_factors": 3,
+          "max_degree_budget": 28,
+          "norm_factors": 6,
+          "queries": 3,
+          "relative_columns": 2,
+          "summation_width": 2
+        },
+        "numerator": [
+          0,
+          [
+            [
+              1,
+              [
+                1,
+                0
+              ]
+            ],
+            [
+              2,
+              [
+                0,
+                0
+              ]
+            ]
+          ]
+        ],
+        "precision": 2,
+        "punctured": true,
+        "result": 14,
+        "row_modulus": 1
+      },
+      {
+        "denominators": [
+          [
+            0,
+            [
+              [
+                1,
+                [
+                  1
+                ]
+              ],
+              [
+                1,
+                [
+                  0
+                ]
+              ]
+            ]
+          ],
+          [
+            1,
+            [
+              [
+                4,
+                [
+                  1
+                ]
+              ],
+              [
+                1,
+                [
+                  0
+                ]
+              ]
+            ]
+          ],
+          [
+            0,
+            [
+              [
+                1,
+                [
+                  1
+                ]
+              ],
+              [
+                4,
+                [
+                  0
+                ]
+              ]
+            ]
+          ]
+        ],
+        "direct_values": [
+          {
+            "denominators": [
+              1,
+              1,
+              4
+            ],
+            "input": 0,
+            "value": 10
+          },
+          {
+            "denominators": [
+              2,
+              5,
+              5
+            ],
+            "input": 1,
+            "value": 0
+          },
+          {
+            "denominators": [
+              5,
+              2,
+              8
+            ],
+            "input": 4,
+            "value": 0
+          },
+          {
+            "denominators": [
+              12,
+              12,
+              3
+            ],
+            "input": 15,
+            "value": 11
+          }
+        ],
+        "invoice": {
+          "adjugate_factors": 3,
+          "coefficient_degree": 2,
+          "denominator_factors": 3,
+          "max_degree_budget": 28,
+          "norm_factors": 6,
+          "queries": 3,
+          "relative_columns": 1,
+          "summation_width": 2
+        },
+        "numerator": [
+          0,
+          [
+            [
+              1,
+              [
+                1
+              ]
+            ],
+            [
+              2,
+              [
+                0
+              ]
+            ]
+          ]
+        ],
+        "precision": 2,
+        "punctured": false,
+        "result": 1,
+        "row_modulus": 2
+      },
+      {
+        "denominators": [
+          [
+            0,
+            [
+              [
+                1,
+                [
+                  1
+                ]
+              ],
+              [
+                1,
+                [
+                  0
+                ]
+              ]
+            ]
+          ],
+          [
+            1,
+            [
+              [
+                4,
+                [
+                  1
+                ]
+              ],
+              [
+                1,
+                [
+                  0
+                ]
+              ]
+            ]
+          ],
+          [
+            0,
+            [
+              [
+                1,
+                [
+                  1
+                ]
+              ],
+              [
+                4,
+                [
+                  0
+                ]
+              ]
+            ]
+          ]
+        ],
+        "direct_values": [
+          {
+            "denominators": [
+              2,
+              5,
+              5
+            ],
+            "input": 1,
+            "value": 0
+          },
+          {
+            "denominators": [
+              5,
+              2,
+              8
+            ],
+            "input": 4,
+            "value": 0
+          },
+          {
+            "denominators": [
+              12,
+              12,
+              3
+            ],
+            "input": 15,
+            "value": 11
+          }
+        ],
+        "invoice": {
+          "adjugate_factors": 3,
+          "coefficient_degree": 2,
+          "denominator_factors": 3,
+          "max_degree_budget": 28,
+          "norm_factors": 6,
+          "queries": 3,
+          "relative_columns": 1,
+          "summation_width": 2
+        },
+        "numerator": [
+          0,
+          [
+            [
+              1,
+              [
+                1
+              ]
+            ],
+            [
+              2,
+              [
+                0
+              ]
+            ]
+          ]
+        ],
+        "precision": 2,
+        "punctured": true,
+        "result": 11,
+        "row_modulus": 2
+      },
+      {
+        "denominators": [
+          [
+            0,
+            [
+              [
+                1,
+                [
+                  1,
+                  0
+                ]
+              ],
+              [
+                1,
+                [
+                  0,
+                  0
+                ]
+              ]
+            ]
+          ],
+          [
+            0,
+            [
+              [
+                8,
+                [
+                  1,
+                  0
+                ]
+              ],
+              [
+                1,
+                [
+                  0,
+                  0
+                ]
+              ]
+            ]
+          ],
+          [
+            0,
+            [
+              [
+                1,
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                8,
+                [
+                  0,
+                  0
+                ]
+              ]
+            ]
+          ]
+        ],
+        "direct_values": [
+          {
+            "denominators": [
+              1,
+              1,
+              8
+            ],
+            "input": 0,
+            "value": 54
+          },
+          {
+            "denominators": [
+              2,
+              9,
+              9
+            ],
+            "input": 1,
+            "value": 0
+          },
+          {
+            "denominators": [
+              9,
+              56,
+              7
+            ],
+            "input": 8,
+            "value": 62
+          },
+          {
+            "denominators": [
+              56,
+              2,
+              16
+            ],
+            "input": 63,
+            "value": 0
+          }
+        ],
+        "invoice": {
+          "adjugate_factors": 3,
+          "coefficient_degree": 2,
+          "denominator_factors": 3,
+          "max_degree_budget": 40,
+          "norm_factors": 6,
+          "queries": 4,
+          "relative_columns": 2,
+          "summation_width": 2
+        },
+        "numerator": [
+          0,
+          [
+            [
+              1,
+              [
+                1,
+                0
+              ]
+            ],
+            [
+              2,
+              [
+                0,
+                0
+              ]
+            ]
+          ]
+        ],
+        "precision": 3,
+        "punctured": false,
+        "result": 44,
+        "row_modulus": 1
+      },
+      {
+        "denominators": [
+          [
+            0,
+            [
+              [
+                1,
+                [
+                  1,
+                  0
+                ]
+              ],
+              [
+                1,
+                [
+                  0,
+                  0
+                ]
+              ]
+            ]
+          ],
+          [
+            0,
+            [
+              [
+                8,
+                [
+                  1,
+                  0
+                ]
+              ],
+              [
+                1,
+                [
+                  0,
+                  0
+                ]
+              ]
+            ]
+          ],
+          [
+            0,
+            [
+              [
+                1,
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                8,
+                [
+                  0,
+                  0
+                ]
+              ]
+            ]
+          ]
+        ],
+        "direct_values": [
+          {
+            "denominators": [
+              2,
+              9,
+              9
+            ],
+            "input": 1,
+            "value": 0
+          },
+          {
+            "denominators": [
+              9,
+              56,
+              7
+            ],
+            "input": 8,
+            "value": 62
+          },
+          {
+            "denominators": [
+              56,
+              2,
+              16
+            ],
+            "input": 63,
+            "value": 0
+          }
+        ],
+        "invoice": {
+          "adjugate_factors": 3,
+          "coefficient_degree": 2,
+          "denominator_factors": 3,
+          "max_degree_budget": 40,
+          "norm_factors": 6,
+          "queries": 4,
+          "relative_columns": 2,
+          "summation_width": 2
+        },
+        "numerator": [
+          0,
+          [
+            [
+              1,
+              [
+                1,
+                0
+              ]
+            ],
+            [
+              2,
+              [
+                0,
+                0
+              ]
+            ]
+          ]
+        ],
+        "precision": 3,
+        "punctured": true,
+        "result": 62,
+        "row_modulus": 1
+      },
+      {
+        "denominators": [
+          [
+            0,
+            [
+              [
+                1,
+                [
+                  1
+                ]
+              ],
+              [
+                1,
+                [
+                  0
+                ]
+              ]
+            ]
+          ],
+          [
+            1,
+            [
+              [
+                8,
+                [
+                  1
+                ]
+              ],
+              [
+                1,
+                [
+                  0
+                ]
+              ]
+            ]
+          ],
+          [
+            0,
+            [
+              [
+                1,
+                [
+                  1
+                ]
+              ],
+              [
+                8,
+                [
+                  0
+                ]
+              ]
+            ]
+          ]
+        ],
+        "direct_values": [
+          {
+            "denominators": [
+              1,
+              1,
+              8
+            ],
+            "input": 0,
+            "value": 54
+          },
+          {
+            "denominators": [
+              2,
+              9,
+              9
+            ],
+            "input": 1,
+            "value": 0
+          },
+          {
+            "denominators": [
+              9,
+              2,
+              16
+            ],
+            "input": 8,
+            "value": 0
+          },
+          {
+            "denominators": [
+              56,
+              56,
+              7
+            ],
+            "input": 63,
+            "value": 55
+          }
+        ],
+        "invoice": {
+          "adjugate_factors": 3,
+          "coefficient_degree": 2,
+          "denominator_factors": 3,
+          "max_degree_budget": 40,
+          "norm_factors": 6,
+          "queries": 4,
+          "relative_columns": 1,
+          "summation_width": 2
+        },
+        "numerator": [
+          0,
+          [
+            [
+              1,
+              [
+                1
+              ]
+            ],
+            [
+              2,
+              [
+                0
+              ]
+            ]
+          ]
+        ],
+        "precision": 3,
+        "punctured": false,
+        "result": 37,
+        "row_modulus": 2
+      },
+      {
+        "denominators": [
+          [
+            0,
+            [
+              [
+                1,
+                [
+                  1
+                ]
+              ],
+              [
+                1,
+                [
+                  0
+                ]
+              ]
+            ]
+          ],
+          [
+            1,
+            [
+              [
+                8,
+                [
+                  1
+                ]
+              ],
+              [
+                1,
+                [
+                  0
+                ]
+              ]
+            ]
+          ],
+          [
+            0,
+            [
+              [
+                1,
+                [
+                  1
+                ]
+              ],
+              [
+                8,
+                [
+                  0
+                ]
+              ]
+            ]
+          ]
+        ],
+        "direct_values": [
+          {
+            "denominators": [
+              2,
+              9,
+              9
+            ],
+            "input": 1,
+            "value": 0
+          },
+          {
+            "denominators": [
+              9,
+              2,
+              16
+            ],
+            "input": 8,
+            "value": 0
+          },
+          {
+            "denominators": [
+              56,
+              56,
+              7
+            ],
+            "input": 63,
+            "value": 55
+          }
+        ],
+        "invoice": {
+          "adjugate_factors": 3,
+          "coefficient_degree": 2,
+          "denominator_factors": 3,
+          "max_degree_budget": 40,
+          "norm_factors": 6,
+          "queries": 4,
+          "relative_columns": 1,
+          "summation_width": 2
+        },
+        "numerator": [
+          0,
+          [
+            [
+              1,
+              [
+                1
+              ]
+            ],
+            [
+              2,
+              [
+                0
+              ]
+            ]
+          ]
+        ],
+        "precision": 3,
+        "punctured": true,
+        "result": 55,
+        "row_modulus": 2
+      },
+      {
+        "denominators": [
+          [
+            0,
+            [
+              [
+                1,
+                [
+                  1,
+                  0
+                ]
+              ],
+              [
+                1,
+                [
+                  0,
+                  0
+                ]
+              ]
+            ]
+          ],
+          [
+            0,
+            [
+              [
+                16,
+                [
+                  1,
+                  0
+                ]
+              ],
+              [
+                1,
+                [
+                  0,
+                  0
+                ]
+              ]
+            ]
+          ],
+          [
+            0,
+            [
+              [
+                1,
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                16,
+                [
+                  0,
+                  0
+                ]
+              ]
+            ]
+          ]
+        ],
+        "direct_values": [
+          {
+            "denominators": [
+              1,
+              1,
+              16
+            ],
+            "input": 0,
+            "value": 238
+          },
+          {
+            "denominators": [
+              2,
+              17,
+              17
+            ],
+            "input": 1,
+            "value": 0
+          },
+          {
+            "denominators": [
+              17,
+              240,
+              15
+            ],
+            "input": 16,
+            "value": 254
+          },
+          {
+            "denominators": [
+              240,
+              2,
+              32
+            ],
+            "input": 255,
+            "value": 0
+          }
+        ],
+        "invoice": {
+          "adjugate_factors": 3,
+          "coefficient_degree": 2,
+          "denominator_factors": 3,
+          "max_degree_budget": 52,
+          "norm_factors": 6,
+          "queries": 5,
+          "relative_columns": 2,
+          "summation_width": 2
+        },
+        "numerator": [
+          0,
+          [
+            [
+              1,
+              [
+                1,
+                0
+              ]
+            ],
+            [
+              2,
+              [
+                0,
+                0
+              ]
+            ]
+          ]
+        ],
+        "precision": 4,
+        "punctured": false,
+        "result": 220,
+        "row_modulus": 1
+      },
+      {
+        "denominators": [
+          [
+            0,
+            [
+              [
+                1,
+                [
+                  1,
+                  0
+                ]
+              ],
+              [
+                1,
+                [
+                  0,
+                  0
+                ]
+              ]
+            ]
+          ],
+          [
+            0,
+            [
+              [
+                16,
+                [
+                  1,
+                  0
+                ]
+              ],
+              [
+                1,
+                [
+                  0,
+                  0
+                ]
+              ]
+            ]
+          ],
+          [
+            0,
+            [
+              [
+                1,
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                16,
+                [
+                  0,
+                  0
+                ]
+              ]
+            ]
+          ]
+        ],
+        "direct_values": [
+          {
+            "denominators": [
+              2,
+              17,
+              17
+            ],
+            "input": 1,
+            "value": 0
+          },
+          {
+            "denominators": [
+              17,
+              240,
+              15
+            ],
+            "input": 16,
+            "value": 254
+          },
+          {
+            "denominators": [
+              240,
+              2,
+              32
+            ],
+            "input": 255,
+            "value": 0
+          }
+        ],
+        "invoice": {
+          "adjugate_factors": 3,
+          "coefficient_degree": 2,
+          "denominator_factors": 3,
+          "max_degree_budget": 52,
+          "norm_factors": 6,
+          "queries": 5,
+          "relative_columns": 2,
+          "summation_width": 2
+        },
+        "numerator": [
+          0,
+          [
+            [
+              1,
+              [
+                1,
+                0
+              ]
+            ],
+            [
+              2,
+              [
+                0,
+                0
+              ]
+            ]
+          ]
+        ],
+        "precision": 4,
+        "punctured": true,
+        "result": 254,
+        "row_modulus": 1
+      },
+      {
+        "denominators": [
+          [
+            0,
+            [
+              [
+                1,
+                [
+                  1
+                ]
+              ],
+              [
+                1,
+                [
+                  0
+                ]
+              ]
+            ]
+          ],
+          [
+            1,
+            [
+              [
+                16,
+                [
+                  1
+                ]
+              ],
+              [
+                1,
+                [
+                  0
+                ]
+              ]
+            ]
+          ],
+          [
+            0,
+            [
+              [
+                1,
+                [
+                  1
+                ]
+              ],
+              [
+                16,
+                [
+                  0
+                ]
+              ]
+            ]
+          ]
+        ],
+        "direct_values": [
+          {
+            "denominators": [
+              1,
+              1,
+              16
+            ],
+            "input": 0,
+            "value": 238
+          },
+          {
+            "denominators": [
+              2,
+              17,
+              17
+            ],
+            "input": 1,
+            "value": 0
+          },
+          {
+            "denominators": [
+              17,
+              2,
+              32
+            ],
+            "input": 16,
+            "value": 0
+          },
+          {
+            "denominators": [
+              240,
+              240,
+              15
+            ],
+            "input": 255,
+            "value": 239
+          }
+        ],
+        "invoice": {
+          "adjugate_factors": 3,
+          "coefficient_degree": 2,
+          "denominator_factors": 3,
+          "max_degree_budget": 52,
+          "norm_factors": 6,
+          "queries": 5,
+          "relative_columns": 1,
+          "summation_width": 2
+        },
+        "numerator": [
+          0,
+          [
+            [
+              1,
+              [
+                1
+              ]
+            ],
+            [
+              2,
+              [
+                0
+              ]
+            ]
+          ]
+        ],
+        "precision": 4,
+        "punctured": false,
+        "result": 205,
+        "row_modulus": 2
+      },
+      {
+        "denominators": [
+          [
+            0,
+            [
+              [
+                1,
+                [
+                  1
+                ]
+              ],
+              [
+                1,
+                [
+                  0
+                ]
+              ]
+            ]
+          ],
+          [
+            1,
+            [
+              [
+                16,
+                [
+                  1
+                ]
+              ],
+              [
+                1,
+                [
+                  0
+                ]
+              ]
+            ]
+          ],
+          [
+            0,
+            [
+              [
+                1,
+                [
+                  1
+                ]
+              ],
+              [
+                16,
+                [
+                  0
+                ]
+              ]
+            ]
+          ]
+        ],
+        "direct_values": [
+          {
+            "denominators": [
+              2,
+              17,
+              17
+            ],
+            "input": 1,
+            "value": 0
+          },
+          {
+            "denominators": [
+              17,
+              2,
+              32
+            ],
+            "input": 16,
+            "value": 0
+          },
+          {
+            "denominators": [
+              240,
+              240,
+              15
+            ],
+            "input": 255,
+            "value": 239
+          }
+        ],
+        "invoice": {
+          "adjugate_factors": 3,
+          "coefficient_degree": 2,
+          "denominator_factors": 3,
+          "max_degree_budget": 52,
+          "norm_factors": 6,
+          "queries": 5,
+          "relative_columns": 1,
+          "summation_width": 2
+        },
+        "numerator": [
+          0,
+          [
+            [
+              1,
+              [
+                1
+              ]
+            ],
+            [
+              2,
+              [
+                0
+              ]
+            ]
+          ]
+        ],
+        "precision": 4,
+        "punctured": true,
+        "result": 239,
+        "row_modulus": 2
+      },
+      {
+        "constant_control": true,
+        "denominators": [],
+        "invoice": {
+          "coefficient_degree": 2,
+          "max_degree_budget": 0,
+          "queries": 1,
+          "relative_columns": 1,
+          "summation_width": 2
+        },
+        "numerators": [],
+        "precision": 3,
+        "result": 4
+      },
+      {
+        "constant_control": true,
+        "denominators": [
+          [
+            0,
+            [
+              [
+                2,
+                [
+                  0
+                ]
+              ]
+            ]
+          ]
+        ],
+        "invoice": {
+          "adjugate_factors": 1,
+          "coefficient_degree": 2,
+          "denominator_factors": 1,
+          "max_degree_budget": 0,
+          "norm_factors": 2,
+          "queries": 4,
+          "relative_columns": 1,
+          "summation_width": 2
+        },
+        "numerators": [],
+        "precision": 3,
+        "result": 0
+      }
+    ],
+    "direct_assignments": 56,
+    "literal_frobenius_factor_comparisons": 512,
+    "queries": 18
+  },
+  "scope": "Implemented collected total unit inverses and packed residue systems; unchanged summation variables and precision, charged extension/degree; no complete factoring gain.",
+  "source_sha256": {
+    "tools/check_precision_rational_carries.py": "d9fe4b0b15ee7e0099c891967de1a61a44440cdfeaf5c76c44d5590ca4f26b2f",
+    "tools/check_teichmuller_cyclic_carries.py": "fd2dbc89319864dbf7de4b38bf38633bb4e8fe2ee0af1cef0515b3c1f07c648b",
+    "tools/precision_rational_carries.py": "22df4587179495c8f5079ef16c7aaa41c5d574ae2e509d4c0da64868ca747580",
+    "tools/teichmuller_cyclic_carries.py": "dd79f4fc588d3caf1249439a05ffc37a9e10d3d52de9723d3fa0a10a7d7557d1"
+  }
+}

@@ -1742,8 +1742,8 @@
   ],
   "query_sha256": "ea586c9cb4a9b46bcf5cc9cd612a72c6ca3713e25a575d135f5266339846f27b",
   "source_sha256": {
-    "tools/teichmuller_packed_systems.py": "181b140c0c823d39486fd0b8f421f5035fbc176871d4f7cd24bbd7fb3ee8469a",
-    "tools/check_teichmuller_packed_systems.py": "00829fa6b98390b44191a20f0cd01c3427a514876292f9efd171d3806311165e",
+    "tools/precision_rational_carries.py": "22df4587179495c8f5079ef16c7aaa41c5d574ae2e509d4c0da64868ca747580",
+    "tools/check_teichmuller_packed_systems.py": "971a8b79833c5b2fe22aee0ec31e540a7dce16ba2c779976062bd1aa4fd81492",
     "tools/teichmuller_cyclic_carries.py": "dd79f4fc588d3caf1249439a05ffc37a9e10d3d52de9723d3fa0a10a7d7557d1"
   },
   "factoring_exponent": "1/2; unchanged"

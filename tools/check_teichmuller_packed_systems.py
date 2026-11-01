@@ -9,7 +9,7 @@ from unittest.mock import patch
 
 from teichmuller_cyclic_carries import UnramifiedRing, polynomial_sum
 from check_teichmuller_cyclic_carries import POLYNOMIALS
-import teichmuller_packed_systems as backend
+import precision_rational_carries as backend
 
 ROOT = Path(__file__).resolve().parents[1]
 RECEIPT = ROOT/'evidence/teichmuller-packed-system-controls.json'
@@ -98,9 +98,11 @@ def run():
                     queries.append(dict(row_degrees=row_degrees, carry_bounds=carry_bounds))
                     return polynomial_sum(R, w, t, v, factors, nonzero)
                 with patch.object(backend, 'polynomial_sum', side_effect=acquire):
-                    actual = backend.packed_system_root_count(ring, width, variables, equations, mask)
+                    actual, invoice = backend.packed_system_count(ring, width, variables, equations, mask)
                 assert actual == expected % (1 << precision), (name, precision, mask, actual, expected)
                 assert len(queries) <= precision+1
+                assert invoice['queries'] == len(queries) and invoice['max_initial_carry'] <= bound
+                assert invoice['variables'] == variables and invoice['precision'] == precision
                 if precision > width*variables:
                     assert actual == expected
                     counts['exact_integer_queries'] += 1
@@ -123,12 +125,12 @@ def run():
     rejected = []
     for width, variables, equations, name in invalid:
         try:
-            backend.packed_system_root_count(ring, width, variables, equations)
+            backend.packed_system_count(ring, width, variables, equations)
         except ValueError:
             rejected.append(name)
         else:
             raise AssertionError(name)
-    names = ['tools/teichmuller_packed_systems.py', 'tools/check_teichmuller_packed_systems.py',
+    names = ['tools/precision_rational_carries.py', 'tools/check_teichmuller_packed_systems.py',
              'tools/teichmuller_cyclic_carries.py']
     return dict(scope='Acquired coefficient-extension packing for residue systems; no extra summation variables or division precision. Supplied ring degree and carry budget charged; no integer-word compiler.',
                 counts=counts, rejected=rejected, controls=records, query_sha256=digest.hexdigest(),

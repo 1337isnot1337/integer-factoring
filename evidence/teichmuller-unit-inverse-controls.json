@@ -44,7 +44,7 @@
     "nonunit_values": 467,
     "field_reductions": 60,
     "conjugate_evaluations": 3240,
-    "carry_queries": 324
+    "carry_queries": 468
   },
   "branches": [
     {
@@ -142,8 +142,8 @@
   "query_sha256": "1a14f14450489e39e86df821e1c5551f6c149b455982c47d33530cd6f02e6ca2",
   "source_sha256": {
     "tools/teichmuller_cyclic_carries.py": "dd79f4fc588d3caf1249439a05ffc37a9e10d3d52de9723d3fa0a10a7d7557d1",
-    "tools/teichmuller_unit_inverses.py": "ef8f785a6c491776dcc96b2735e8cb79eb9d14591c82ddd37e732c83fd4a60d2",
-    "tools/check_teichmuller_unit_inverses.py": "26c39b5ca789a6f3dfb277f037fc067e2f8ba4fc0e5ffd7884850a1215533a3c",
+    "tools/precision_rational_carries.py": "22df4587179495c8f5079ef16c7aaa41c5d574ae2e509d4c0da64868ca747580",
+    "tools/check_teichmuller_unit_inverses.py": "209b4a5c78dfa27e9d554e0c86d02cd789bfaeda3e98a0a7cb04d49740a44f7e",
     "tools/check_teichmuller_cyclic_carries.py": "fd2dbc89319864dbf7de4b38bf38633bb4e8fe2ee0af1cef0515b3c1f07c648b",
     "tools/joint_frobenius_carries.py": "a383d3db131fce1e932b23dddde55c2c747c5bb117823d2e6c686e26135c75b8"
   },

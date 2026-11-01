@@ -899,7 +899,72 @@ recorded in its separate receipt. The existing companion supplies the
 collected identity and smaller inverse polynomial; this extension acquires
 their actual carry queries. Current main `d4c3fad` was integrated without
 conflict at `ed83f94`, and `make verify-docs` passed for 1,130 Markdown
-files. A new full run at clean frozen `ed83f94` is in progress; no full
-PASS is claimed for it here. These are author implementation checks and
+files. The [full inverse receipt](../evidence/teichmuller-inverse-full-verification.json)
+now records an exit-zero default-plus-37-focused run at clean frozen
+`ed83f945d4defec3dcf17c0b8dfd60854492ed09`, tree
+`d28bc45b823eb985472e377c9dfb85cebe67e7b3`, in 823.66 seconds.
+It retains 386 Python command blocks, 66 unit tests, five crossing tests
+and 1,130 Markdown files. Later receipt/docs changes and the packed-system
+implementation are outside that exact pin. These are author implementation checks and
 ordinary proofs, with no independent mathematical review, new Lean work,
 integer-word compiler or stronger factoring bound.
+## PR71 backend and implemented inverse/system companions
+
+PR71 source `b9cd96f1f767cd71c8bad123fdb9e1d450bd5f92` is retained
+by merge `3d20c83`. Its ordinary moment/carry argument, norm fixed-ring
+argument and entry points were inspected; the focused backend, indicator
+and documentation checks pass. The original 384 polynomial queries,
+7,060 assignments and residue-count controls remain source-pinned to that
+backend. This is integration, not independent mathematical acceptance.
+
+The [new compiler](../tools/precision_rational_carries.py) implements
+collected total unit inverses and coefficient-extension packing of residue
+systems. At coefficient degree m*w, m ordinary equations retain v variables
+and precision h, with input budget `(2h-1)*m*w*delta`; supplied field models
+and coefficient embeddings are required or must be separately acquired.
+The [receipt](../evidence/precision-rational-carry-controls.json) compares
+18 rational-sum controls, 512 pointwise Frobenius transforms and 35 packed
+system controls with literal evaluation. Constants, nonunits, punctured
+domains, relative-column rotation, subfield coefficients and exact-count
+precision are included. The inherited additive-character compiler is
+preserved. The complete integer arithmetic representation and a stronger
+factoring score remain open. No Lean is included.
+
+The later PR74 integration consolidates the concurrent unit-inverse module
+into `tools/precision_rational_carries.py` from `2a1daeb`; the duplicate
+module is removed. The additional complete-small-ring, proper-subfield,
+eight-denominator and precision-one controls now call that canonical
+compiler and inspect its actual carry acquisitions and returned invoice.
+They pass with 180 rational queries, 468 carry calls and the same direct
+values. The older `ed83f94` full replay is preserved as an exact historical
+source check and does not cover this consolidation. The short README and
+concurrent separator work from `ebfd7e5` are retained. No stronger score
+or independent mathematical review is inferred.
+
+## Refined packed-system acquisition and residue coefficients
+
+PR76's final scope extends the canonical compiler rather than retaining a
+second implementation. A coefficient need only have its residue in the
+summation subfield; its higher digits may lie outside the corresponding
+subring. The field-basis packing proof uses precisely that residue condition.
+The implementation checks it and retains the existing basic-irreducible
+representation and coefficient-embedding assumptions.
+
+For degree D, summation width w and relative degree a=D/w, each norm
+moment has row degree and initial carry at most a*j*delta. The existing
+carry evaluator already computes that rotated bound. The canonical
+compiler now reports the resulting `max_initial_carry`, and the ordinary
+invoice is `(h*a*delta+2)^O(v)` times the stated polynomial bit overhead.
+No variables or precision are hidden in the coefficient extension.
+
+The [additional receipt](../evidence/teichmuller-packed-system-controls.json)
+records 92 systems against 501 direct assignments, 274 acquired carry
+queries, 248 tag combinations and 34 queries at enough precision for
+integer recovery. Five invalid-interface controls are rejected. These
+controls inspect actual row tables and carry budgets, including mixed
+punctured domains and non-subfield higher coefficient digits. The older
+compiler and inverse-control receipts were regenerated against the same
+canonical source. The old full run at `777b48d` was deliberately interrupted
+for consolidation; no full PASS follows from it. Earlier full pins remain
+historical checks. No native integer-query representation, stronger score,
+new Lean or independent mathematical review is supplied.
