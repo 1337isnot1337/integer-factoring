@@ -119,6 +119,13 @@ entries, 2,829 polynomial Bézout identities and 607 independent infinity
 minors. It also checks the full coefficient identity `C_e(z)E=F_theta(z)`.
 No complete Smith-profile window or numerical optimizer is used.
 
+A fresh full replay at exact `acc5a4e36305b03fdff6f7d1e12a0eb7fdad6737`
+passed the default gate and nineteen focused targets: 370 Python command
+blocks, 66 unit tests, five crossing tests and links in 1,102 Markdown files,
+in 924.17 seconds. The frozen checkout stayed clean. The
+[full receipt](../evidence/fused-endpoint-full-verification.json) pins the
+command and log hash. Later source additions are outside that full-run pin.
+
 The [compressed proof packet](../evidence/fused-q12-endpoint-block-cover.json.xz)
 retains all witnesses, and the [receipt](../evidence/fused-q12-endpoint-block-cover-controls.json)
 pins the source files and coverage. To regenerate both:
