@@ -2821,6 +2821,10 @@ verify-hecke-all-places:
 verify-hecke-all-places-full:
 	python3 tools/check_hecke_all_algebraic_places.py --alphabet 9
 
+.PHONY: verify-pencil-endpoint-moments
+verify-pencil-endpoint-moments:
+	python3 tools/check_pencil_endpoint_moments.py
+
 .PHONY: verify-pencil-principal-alphabets
 verify-pencil-principal-alphabets:
 	python3 tools/check_pencil_principal_alphabets.py
