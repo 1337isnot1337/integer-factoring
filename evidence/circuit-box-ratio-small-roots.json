@@ -1,0 +1,305 @@
+{
+  "complete_examples": [
+    {
+      "factor": 257,
+      "input_bits": 17,
+      "lattice_queries": 64,
+      "maximum_lattice_dimension": 7,
+      "number": 67591,
+      "residue_queries": 512,
+      "sturm_queries": 140
+    },
+    {
+      "factor": 269,
+      "input_bits": 19,
+      "lattice_queries": 64,
+      "maximum_lattice_dimension": 10,
+      "number": 271421,
+      "residue_queries": 512,
+      "sturm_queries": 145
+    }
+  ],
+  "complete_examples_included": true,
+  "counts": {
+    "independent_short_polynomial_certificates": 4,
+    "literal_dyadic_residue_factor_lists": 48,
+    "literal_integer_root_lists": 800,
+    "repeated_and_rational_root_controls": 120,
+    "selected_parameter_inequalities": 160,
+    "smallest_prime_factor_controls": 1998,
+    "universal_parameter_inequalities": 97299
+  },
+  "huge_interval_root_isolation": {
+    "interval_endpoint_bits": 301,
+    "polynomial_degree": 8,
+    "roots": [
+      1,
+      115792089237316195423570985008687907853269984665640564039457584007913129639936
+    ],
+    "sturm_queries": 859,
+    "visited_intervals": 1715
+  },
+  "large_local_controls": [
+    {
+      "dyadic_exponent": 12,
+      "factorization": {
+        "3": 8,
+        "5": 6
+      },
+      "guard_bits": 2,
+      "independent_divisor_candidates": 63,
+      "input_bits": 27,
+      "interval_length_bits": 13,
+      "negative_query": {
+        "dimension": 14,
+        "factors": [],
+        "lattice_reductions": 1291,
+        "lattice_swaps": 607,
+        "precision": 9,
+        "root_polynomial_degree": 11,
+        "sturm_queries": 2,
+        "visited_intervals": 1,
+        "weighted_l1_norm_bits": 72
+      },
+      "negative_residue_factors": [],
+      "number": 102515625,
+      "ratio_precision": 9,
+      "recovered_factors": [
+        6561
+      ],
+      "residue": 417,
+      "root_isolation": {
+        "roots": [
+          12
+        ],
+        "sturm_queries": 6,
+        "visited_intervals": 9
+      },
+      "short_polynomial": {
+        "dimension": 14,
+        "lattice_combination": [
+          2205443090123910363955840062972665452,
+          -56743061059981575643404007322761181601,
+          656964918656846530689668732794576281371,
+          -4507417810724144592737966183195381621662,
+          20294706270303170810589119524123899324681,
+          -62658633754662184381758737470406839989191,
+          80606082981648282713744237064102149624862,
+          -899108557966174515099004445826550,
+          8461945758867158027731382,
+          -60677690099883482,
+          253807616,
+          0,
+          0,
+          0
+        ],
+        "lattice_reductions": 1108,
+        "lattice_swaps": 524,
+        "linear_constant": 39844941,
+        "multiplicity": 6,
+        "polynomial": [
+          20330978032549728792,
+          25855390797693363522,
+          976912333620670917,
+          -151971803776437480,
+          -7248329765377326,
+          -269503505686467,
+          -14300487351108,
+          -999360837688,
+          84559013450,
+          6809340454,
+          253807616
+        ],
+        "root_bound": 16,
+        "vanishing_threshold": 4722366482869645213696,
+        "weighted_l1_norm": 3682567926597448248120
+      }
+    },
+    {
+      "dyadic_exponent": 38,
+      "factorization": {
+        "3": 24,
+        "5": 16
+      },
+      "guard_bits": 8,
+      "independent_divisor_candidates": 425,
+      "input_bits": 76,
+      "interval_length_bits": 39,
+      "negative_query": {
+        "dimension": 5,
+        "factors": [],
+        "lattice_reductions": 114,
+        "lattice_swaps": 86,
+        "precision": 27,
+        "root_polynomial_degree": 3,
+        "sturm_queries": 13,
+        "visited_intervals": 23,
+        "weighted_l1_norm_bits": 76
+      },
+      "negative_residue_factors": [],
+      "number": 43095327221832275390625,
+      "ratio_precision": 27,
+      "recovered_factors": [
+        282429536481
+      ],
+      "residue": 35436769,
+      "root_isolation": {
+        "roots": [
+          2104
+        ],
+        "sturm_queries": 14,
+        "visited_intervals": 25
+      },
+      "short_polynomial": {
+        "dimension": 5,
+        "lattice_combination": [
+          -13725419250840373998461364806000,
+          104577993613199430314167692849293,
+          -177068976882967015381003590282089,
+          5217659466,
+          0
+        ],
+        "lattice_reductions": 111,
+        "lattice_swaps": 84,
+        "linear_constant": 16968238157051759443448,
+        "multiplicity": 2,
+        "polynomial": [
+          -7679850935544840357656,
+          5219499045408384445,
+          -756880892524553,
+          5217659466
+        ],
+        "root_bound": 4096,
+        "vanishing_threshold": 75557863725914323419136,
+        "weighted_l1_norm": 42115828073984951211800
+      }
+    },
+    {
+      "dyadic_exponent": 95,
+      "factorization": {
+        "3": 60,
+        "5": 40
+      },
+      "guard_bits": 16,
+      "independent_divisor_candidates": 2501,
+      "input_bits": 188,
+      "interval_length_bits": 96,
+      "negative_query": {
+        "dimension": 5,
+        "factors": [],
+        "lattice_reductions": 250,
+        "lattice_swaps": 174,
+        "precision": 63,
+        "root_polynomial_degree": 4,
+        "sturm_queries": 2,
+        "visited_intervals": 1,
+        "weighted_l1_norm_bits": 190
+      },
+      "negative_residue_factors": [],
+      "number": 385545338533267599944287514526877203024923801422119140625,
+      "ratio_precision": 63,
+      "recovered_factors": [
+        42391158275216203514294433201
+      ],
+      "residue": 5687386616266618289,
+      "root_isolation": {
+        "roots": [
+          4596058589
+        ],
+        "sturm_queries": 35,
+        "visited_intervals": 67
+      },
+      "short_polynomial": {
+        "dimension": 5,
+        "lattice_combination": [
+          80487523504402157998245175112082104203543373721918958613293602263333828948652833297217776133877084102757987518511,
+          650061986547323685098772931141555449880712423178237399598117065345938326655265145112040026304170650040632986573484,
+          984424125523178967152416239997003788295804117340847368666040042394030200839808959826936200513956401019288057433420,
+          3437017530691129251434358444743701922063957540755060306544,
+          9
+        ],
+        "lattice_reductions": 266,
+        "lattice_swaps": 182,
+        "linear_constant": -190945418371729402857464358041330086316314629544762918592,
+        "multiplicity": 2,
+        "polynomial": [
+          246002834308181495379439077058187292497875720419378506255,
+          -70407109001803904787089894948113096341715337364,
+          4774588870493548228276575394957063500,
+          -239631629705791050672228112,
+          9
+        ],
+        "root_bound": 8589934592,
+        "vanishing_threshold": 1569275433846670190958947355801916604025588861116008628224,
+        "weighted_l1_norm": 1354982360865304683108733650352252259333793179649261480463
+      }
+    },
+    {
+      "dyadic_exponent": 126,
+      "factorization": {
+        "3": 80,
+        "5": 55
+      },
+      "guard_bits": 16,
+      "independent_divisor_candidates": 4536,
+      "input_bits": 255,
+      "interval_length_bits": 127,
+      "negative_query": {
+        "dimension": 5,
+        "factors": [],
+        "lattice_reductions": 404,
+        "lattice_swaps": 264,
+        "precision": 80,
+        "root_polynomial_degree": 4,
+        "sturm_queries": 48,
+        "visited_intervals": 93,
+        "weighted_l1_norm_bits": 252
+      },
+      "negative_residue_factors": [],
+      "number": 41025191414674734101698308554424326377862985992805988644249737262725830078125,
+      "ratio_precision": 80,
+      "recovered_factors": [
+        147808829414345923316083210206383297601
+      ],
+      "residue": 768495747529901302469697,
+      "root_isolation": {
+        "roots": [
+          122264598055704
+        ],
+        "sturm_queries": 49,
+        "visited_intervals": 95
+      },
+      "short_polynomial": {
+        "dimension": 5,
+        "lattice_combination": [
+          -310320686138569619162107736816510740434866939769395763418272210837477275404458933159413161544627810832705566137484410923285517983561196906920182481668980541259099,
+          6663809949583266675425084407136785220207043914065725438817976177326708666721223900661716748943799785950873293784816970578102084144154246835227213401601225596893341,
+          -26830931493438932820361639473981959851381723538064769083400822838207355094707855326638144971954790408316008920591652502267094747365855358663306324491021931322262222,
+          2340700024645388650419741425570344947587981501624507214752544130875065958023448177893068,
+          -153150011025
+        ],
+        "lattice_reductions": 416,
+        "lattice_swaps": 270,
+        "linear_constant": 7641853921457752798812576597300133780999123834782326667563522975054855330097,
+        "multiplicity": 2,
+        "polynomial": [
+          750196477279830934348487486413056099952711096928846538972575074143313406952,
+          -12325856247211709662108243944939732878332004902906607513888631,
+          108393867952143770648730603443780658481369638745,
+          -472465976159917829544822950745782,
+          -153150011025
+        ],
+        "root_bound": 140737488355328,
+        "vanishing_threshold": 7237005577332262213973186563042994240829374041602535252466099000494570602496,
+        "weighted_l1_norm": 5948911252505083630902288875605997955301546296993372806495732381542613593064
+      }
+    }
+  ],
+  "proved_search_cost": "2**(n/4)*poly(n) time and polynomial bit space; classical bound, no repository score increase",
+  "seed": 2026110164283,
+  "source_sha256": {
+    "tools/check_circuit_box_ratio_small_roots.py": "2cc3a221f742b2f4b0df064b5d9263162ca47f83dc3ee39906ce585ad7a2b0e5",
+    "tools/circuit_box_ratio_small_roots.py": "c1e058f037a8114c4707425355870f9a44c367121f2568ca3ca23f6979226948"
+  },
+  "status": "passed"
+}

@@ -2631,3 +2631,7 @@ verify-three-row-hecke-full:
 .PHONY: verify-oriented-power-112
 verify-oriented-power-112:
 	python3 tools/check_optimized_oriented_fresh_run.py --replay evidence/optimized-oriented-power-112.json.xz
+
+.PHONY: verify-circuit-box-ratio-small-roots
+verify-circuit-box-ratio-small-roots:
+	python3 tools/check_circuit_box_ratio_small_roots.py --output /tmp/circuit-box-ratio-small-roots-verify.json
