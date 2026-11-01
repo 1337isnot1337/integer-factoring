@@ -127,6 +127,23 @@ make verify-regularized-transpose-words
 python3 tools/screen_regularized_transpose_words.py --manifest evidence/regularized-transpose-word-pilot-manifest.json --output /path/word-pilot.json
 ```
 
+## Completed pilot at `6c3f2fb`
+
+The [complete attempt archive](../evidence/regularized-transpose-word-pilot-complete.json.xz)
+retains all eight inputs, their complete unit profiles and all sixteen
+free-height attempts. There were 1,503 successful complete free queries,
+zero rejected queries, and 167.27 seconds elapsed. No optimizer converged:
+six attempts reached the iteration limit and ten stopped at their
+per-trial time caps. These are partial bounded fits, not global minima.
+
+The best bare balanced rate was `0.9481585912598616`. The best free-height
+balanced support was `1.3072725501422655`, and the best free-angle support
+was `1.0499573746311477`; both supports exceed one. None improves the
+existing tensor frontier or the score. The leading-rank construction is
+valid, but the complete profiles in this pilot do not supply the needed
+pressure. A longer word search is not justified by these leading ranks
+alone; a further mechanism must improve higher jets relative to degree.
+
 Credit: the existing transpose-channel/cofactor language, F4 arithmetic,
 complete rectangular Smith backend, Gibbs/asymmetric pressure and
 normalized-gap heuristic are reused. The contribution is this literal
