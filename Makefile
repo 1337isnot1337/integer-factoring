@@ -2667,3 +2667,7 @@ verify-sparse-projected-graph:
 .PHONY: verify-two-pass-oriented-basis
 verify-two-pass-oriented-basis:
 	python3 tools/check_circuit_box_oriented_batch.py --output /tmp/two-pass-oriented-replay.json
+
+.PHONY: verify-tensor-literal-moving-frames
+verify-tensor-literal-moving-frames:
+	python3 tools/check_tensor_literal_moving_frames.py --output /tmp/tensor-moving-frame-replay.json

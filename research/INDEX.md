@@ -1,5 +1,7 @@
 # Research index
 
+- [Literal Laurent frames and completed searches](tensor-weighted-laurent-frame-search.md): complete binary/F16 censuses, larger finished profiles, explicit clearing costs, and independent raw-tensor controls.
+
 - [Executable two-pass oriented construction](circuit-box-oriented-batch-controls.md): unitary preprocessing, raw-difference comparison, sparse output charges, and independent ideal controls.
 
 - [Small internal pivots](small-pivot-integer-row-selection.md): arbitrary pivot-column exactness, retained original relations, and paired 96/112 component measurements.
